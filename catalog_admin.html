@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMdM Catalog Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #868686; font-family: 'Montserrat', sans-serif; }
+        svg { border: 1px solid #ccc; }
+        .node { cursor: pointer; }
+        .hidden { display: none; }
+        text { font-size: 12px; font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+        #footer {
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 18pt;
+            color: #f2f2e6;
+        }
+        #buttonBar {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        #addManufacturer {
+            background-color: #333;
+            color: white;
+        }
+        #editSelected {
+            background-color: #ccc;
+            color: black;
+        }
+        #editSelected.active {
+            background-color: #333;
+            color: white;
+        }
+        #save {
+            background-color: #ccc;
+            color: black;
+        }
+        #save.dirty {
+            background-color: red;
+            color: yellow;
+        }
+        dialog {
+            border: none;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+            background: #f2f2e6;
+        }
+        dialog form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        dialog input, dialog textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        dialog button {
+            align-self: flex-end;
+            margin-top: 10px;
+            gap: 5px;
+        }
+        .delete-btn {
+            background-color: red;
+            color: white;
+        }
+        .add-btn {
+            background-color: green;
+            color: white;
+        }
+        .confirm-btn {
+            background-color: blue;
+            color: white;
+        }
+        .cancel-btn {
+            background-color: #ccc;
+            color: black;
+        }
+        .selected {
+            stroke: black;
+            stroke-width: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="buttonBar">
+        <button id="addManufacturer">Add Manufacturer</button>
+        <button id="editSelected">Edit Selected Node</button>
+        <button id="save">Save</button>
+    </div>
+    <svg width="1000" height="1000" id="catalogSvg">
+        <g id="mainGroup" transform="translate(500, 500)">
+            <!-- Central Group -->
+            <g id="centralGroup">
+                <circle class="node" cx="0" cy="0" r="40" fill="#362e6a" id="mmdmNode" />
+                <image xlink:href="./assets/catalog_logo.png" x="-35" y="-16" width="70" height="22" />
+            </g>
+
+            <!-- Path Lines Group -->
+            <g id="pathLines"></g>
+
+            <!-- Manufacturer Ring (initially visible) -->
+            <g id="manufacturers"></g>
+
+            <!-- Cylinders Ring (Hidden initially) -->
+            <g id="cylinders" class="hidden"></g>
+
+            <!-- Models Ring (Hidden initially) -->
+            <g id="models" class="hidden"></g>
+        </g>
+    </svg>
+    <div id="footer">© 2025 Meccanismi Marittimi delle Marche. Tutti i diritti riservati.</div>
+
+    <!-- Dialogs -->
+    <dialog id="addManufacturerDialog">
+        <form>
+            <h3>Adding a New Manufacturer...</h3>
+            <label>Country: <input type="text" id="addCountry" required></label>
+            <label>Name: <input type="text" id="addName" required></label>
+            <div>
+                <button type="button" class="cancel-btn" onclick="closeDialog('addManufacturerDialog')">Cancel</button>
+                <button type="submit" class="confirm-btn">Confirm</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="editDialog">
+        <form>
+            <h3 id="editTitle">Editing...</h3>
+            <button type="button" class="delete-btn" id="deleteBtn" onclick="showConfirmDelete()">Delete</button>
+            <div id="editActions"></div>
+            <div>
+                <button type="button" class="cancel-btn" onclick="closeDialog('editDialog')">Cancel</button>
+                <button type="submit" class="confirm-btn">Confirm</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="confirmDeleteDialog">
+        <h3 id="confirmTitle">Delete?</h3>
+        <div>
+            <button type="button" class="cancel-btn" onclick="closeDialog('confirmDeleteDialog')">Cancel</button>
+            <button type="button" class="delete-btn" id="confirmDeleteBtn">Confirm</button>
+        </div>
+    </dialog>
+
+    <dialog id="detailDialog">
+        <form>
+            <h3 id="detailTitle">Add Detail...</h3>
+            <label id="detailLabel1">Field 1: <input type="text" id="detailInput1" required></label>
+            <label id="detailLabel2" style="display: none;">Field 2: <input type="text" id="detailInput2"></label>
+            <div>
+                <button type="button" class="cancel-btn" onclick="closeDialog('detailDialog')">Cancel</button>
+                <button type="submit" class="confirm-btn">Confirm</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script type="module" src="./js/main_admin.js"></script>
+</body>
+</html>

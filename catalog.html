@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMdM Catalog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #868686; }
+        svg { border: 1px solid #ccc; }
+        .node { cursor: pointer; } /* No transition for instantaneous changes */
+        .hidden { display: none; }
+        text { font-size: 12px; font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+        #footer {
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18pt;
+            color: #f2f2e6;
+        }
+    </style>
+</head>
+<body>
+    <svg width="1000" height="1000" id="catalogSvg">
+        <g id="mainGroup" transform="translate(500, 500)">
+            <!-- Central Group -->
+            <g id="centralGroup">
+                <circle class="node" cx="0" cy="0" r="40" fill="#362e6a" id="mmdmNode" />
+                <image xlink:href="./assets/catalog_logo.png" x="-35" y="-16" width="70" height="22" />
+            </g>
+
+            <!-- Path Lines Group -->
+            <g id="pathLines"></g>
+
+            <!-- Manufacturer Ring (initially visible) -->
+            <g id="manufacturers"></g>
+
+            <!-- Cylinders Ring (Hidden initially) -->
+            <g id="cylinders" class="hidden"></g>
+
+            <!-- Models Ring (Hidden initially) -->
+            <g id="models" class="hidden"></g>
+        </g>
+    </svg>
+    <div id="footer">© 2025 Meccanismi Marittimi delle Marche. Tutti i diritti riservati.</div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

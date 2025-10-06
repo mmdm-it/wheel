@@ -1,0 +1,2873 @@
+{
+    "MMdM": {
+        "countries": {
+            "Corea del Sud": {
+                "manufacturers": {
+                    "Daewoo": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "daew6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew6.1oem1",
+                                            "mmdm_models": [
+                                                "daew6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "daew6.1oem2",
+                                            "mmdm_models": [
+                                                "daew6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "daew6.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew6.2oem",
+                                            "mmdm_models": [
+                                                "daew6.2mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "daew6.3",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew6.3oem1",
+                                            "mmdm_models": [
+                                                "daew6.3mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "daew6.3oem2",
+                                            "mmdm_models": [
+                                                "daew6.3mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "daew6.4",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew6.4oem",
+                                            "mmdm_models": [
+                                                "daew6.4mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "daew8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew8.1oem1",
+                                            "mmdm_models": [
+                                                "daew8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "daew8.1oem2",
+                                            "mmdm_models": [
+                                                "daew8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "daew8.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew8.2oem",
+                                            "mmdm_models": [
+                                                "daew8.2mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "daew8.3",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew8.3oem",
+                                            "mmdm_models": [
+                                                "daew8.3mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "12": [
+                                {
+                                    "manufacturer_engine_model": "daew12.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew12.1oem",
+                                            "mmdm_models": [
+                                                "daew12.1mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "daew12.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew12.2oem",
+                                            "mmdm_models": [
+                                                "daew12.2mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "daew12.3",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew12.3oem1",
+                                            "mmdm_models": [
+                                                "daew.3mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "daew12.3oem2",
+                                            "mmdm_models": [
+                                                "daew.3mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "daew12.4",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew12.4oem",
+                                            "mmdm_models": [
+                                                "daew12.4mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "daew12.5",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew12.5oem",
+                                            "mmdm_models": [
+                                                "daew12.5mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "daew12.6",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew12.6oem1",
+                                            "mmdm_models": [
+                                                "daew.6mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "daew12.6oem2",
+                                            "mmdm_models": [
+                                                "daew.6mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "daew12.7",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "daew12.7oem",
+                                            "mmdm_models": [
+                                                "daew12.7mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "Finlandia": {
+                "manufacturers": {
+                    "Sisu": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "sisu4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "sisu4.1oem1",
+                                            "mmdm_models": [
+                                                "sisu4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "sisu4.1oem2",
+                                            "mmdm_models": [
+                                                "sisu4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "sisu4.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "sisu4.2oem",
+                                            "mmdm_models": [
+                                                "sisu4.2mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "sisu6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "sisu6.1oem1",
+                                            "mmdm_models": [
+                                                "sisu6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "sisu6.1oem2",
+                                            "mmdm_models": [
+                                                "sisu6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "sisu6.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "sisu6.2oem",
+                                            "mmdm_models": [
+                                                "sisu6.2mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "sisu6.3",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "sisu6.3oem",
+                                            "mmdm_models": [
+                                                "sisu6.3mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "sisu8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "sisu8.1oem1",
+                                            "mmdm_models": [
+                                                "sisu8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "sisu8.1oem2",
+                                            "mmdm_models": [
+                                                "sisu8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "sisu8.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "sisu8.2oem",
+                                            "mmdm_models": [
+                                                "sisu8.2mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Wärtsilä": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "wärt6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "wärt6.1oem",
+                                            "mmdm_models": [
+                                                "wärt6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "wärt6.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "wärt6.2oem1",
+                                            "mmdm_models": [
+                                                "wärt6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "wärt6.2oem2",
+                                            "mmdm_models": [
+                                                "wärt6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "wärt8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "wärt8.1oem",
+                                            "mmdm_models": [
+                                                "wärt8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "wärt8.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "wärt8.2oem1",
+                                            "mmdm_models": [
+                                                "wärt8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "wärt8.2oem2",
+                                            "mmdm_models": [
+                                                "wärt8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "12": [
+                                {
+                                    "manufacturer_engine_model": "wärt12.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "wärt12.1oem",
+                                            "mmdm_models": [
+                                                "wärt12.1mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "wärt12.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "wärt12.2oem",
+                                            "mmdm_models": [
+                                                "wärt12.2mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "wärt12.3",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "wärt12.3oem1",
+                                            "mmdm_models": [
+                                                "wärt.3mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "wärt12.3oem2",
+                                            "mmdm_models": [
+                                                "wärt.3mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "16": [
+                                {
+                                    "manufacturer_engine_model": "wärt16.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "wärt16.1oem1",
+                                            "mmdm_models": [
+                                                "wärt6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "wärt16.1oem2",
+                                            "mmdm_models": [
+                                                "wärt6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "Francia": {
+                "manufacturers": {}
+            },
+            "Germania": {
+                "manufacturers": {
+                    "Deutz": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "deut4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "deut4.1oem1",
+                                            "mmdm_models": [
+                                                "deut4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "deut4.1oem2",
+                                            "mmdm_models": [
+                                                "deut4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "deut4.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "deut4.2oem",
+                                            "mmdm_models": [
+                                                "deut4.2mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "MAN Diesel & Turbo": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "madt6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "madt6.1oem1",
+                                            "mmdm_models": [
+                                                "madt6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "madt6.1oem2",
+                                            "mmdm_models": [
+                                                "madt6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "madt6.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "madt6.2oem1",
+                                            "mmdm_models": [
+                                                "madt6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "madt6.2oem2",
+                                            "mmdm_models": [
+                                                "madt6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "madt6.3",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "madt6.3oem",
+                                            "mmdm_models": [
+                                                "madt6.3mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "madt8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "madt8.1oem1",
+                                            "mmdm_models": [
+                                                "madt8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "madt8.1oem2",
+                                            "mmdm_models": [
+                                                "madt8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "madt8.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "madt8.2oem",
+                                            "mmdm_models": [
+                                                "madt8.2mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "12": [
+                                {
+                                    "manufacturer_engine_model": "madt12.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "madt12.1oem1",
+                                            "mmdm_models": [
+                                                "madt.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "madt12.1oem2",
+                                            "mmdm_models": [
+                                                "madt.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "madt12.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "madt12.2oem1",
+                                            "mmdm_models": [
+                                                "madt.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "madt12.2oem2",
+                                            "mmdm_models": [
+                                                "madt.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "16": [
+                                {
+                                    "manufacturer_engine_model": "madt16.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "madt16.1oem1",
+                                            "mmdm_models": [
+                                                "madt6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "madt16.1oem2",
+                                            "mmdm_models": [
+                                                "madt6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "madt16.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "madt16.2oem1",
+                                            "mmdm_models": [
+                                                "madt6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "madt16.2oem2",
+                                            "mmdm_models": [
+                                                "madt6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Mercedes": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "merc4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "merc4.1oem1",
+                                            "mmdm_models": [
+                                                "merc4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "merc4.1oem2",
+                                            "mmdm_models": [
+                                                "merc4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "merc4.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "merc4.2oem",
+                                            "mmdm_models": [
+                                                "merc4.2mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "merc6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "merc6.1oem1",
+                                            "mmdm_models": [
+                                                "merc6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "merc6.1oem2",
+                                            "mmdm_models": [
+                                                "merc6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "merc6.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "merc6.2oem",
+                                            "mmdm_models": [
+                                                "merc6.2mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "merc8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "merc8.1oem",
+                                            "mmdm_models": [
+                                                "merc8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "MTU": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "mtu6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mtu6.1oem",
+                                            "mmdm_models": [
+                                                "mtu6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "mtu8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mtu8.1oem1",
+                                            "mmdm_models": [
+                                                "mtu8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "mtu8.1oem2",
+                                            "mmdm_models": [
+                                                "mtu8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "mtu8.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mtu8.2oem",
+                                            "mmdm_models": [
+                                                "mtu8.2mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "12": [
+                                {
+                                    "manufacturer_engine_model": "mtu12.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mtu12.1oem",
+                                            "mmdm_models": [
+                                                "mtu12.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "16": [
+                                {
+                                    "manufacturer_engine_model": "mtu16.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mtu16.1oem",
+                                            "mmdm_models": [
+                                                "mtu16.1mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "mtu16.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mtu16.2oem1",
+                                            "mmdm_models": [
+                                                "mtu6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "mtu16.2oem2",
+                                            "mmdm_models": [
+                                                "mtu6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "Giappone": {
+                "manufacturers": {
+                    "Hino": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "hino4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "hino4.1oem1",
+                                            "mmdm_models": [
+                                                "hino4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "hino4.1oem2",
+                                            "mmdm_models": [
+                                                "hino4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "hino4.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "hino4.2oem1",
+                                            "mmdm_models": [
+                                                "hino4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "hino4.2oem2",
+                                            "mmdm_models": [
+                                                "hino4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "hino6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "hino6.1oem",
+                                            "mmdm_models": [
+                                                "hino6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "hino8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "hino8.1oem",
+                                            "mmdm_models": [
+                                                "hino8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Isuzu": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "isuz6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "isuz6.1oem",
+                                            "mmdm_models": [
+                                                "isuz6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "isuz6.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "isuz6.2oem",
+                                            "mmdm_models": [
+                                                "isuz6.2mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Komatsu": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "koma4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "koma4.1oem1",
+                                            "mmdm_models": [
+                                                "koma4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "koma4.1oem2",
+                                            "mmdm_models": [
+                                                "koma4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "koma6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "koma6.1oem",
+                                            "mmdm_models": [
+                                                "koma6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "koma8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "koma8.1oem",
+                                            "mmdm_models": [
+                                                "koma8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Kubota": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "kubo6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kubo6.1oem1",
+                                            "mmdm_models": [
+                                                "kubo6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "kubo6.1oem2",
+                                            "mmdm_models": [
+                                                "kubo6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Mitsubishi": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "mits4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mits4.1oem",
+                                            "mmdm_models": [
+                                                "mits4.1mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "mits4.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mits4.2oem1",
+                                            "mmdm_models": [
+                                                "mits4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "mits4.2oem2",
+                                            "mmdm_models": [
+                                                "mits4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "mits6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mits6.1oem1",
+                                            "mmdm_models": [
+                                                "mits6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "mits6.1oem2",
+                                            "mmdm_models": [
+                                                "mits6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "mits8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mits8.1oem",
+                                            "mmdm_models": [
+                                                "mits8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Nissan": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "niss4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "niss4.1oem",
+                                            "mmdm_models": [
+                                                "niss4.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "Italia": {
+                "manufacturers": {
+                    "Isotta Fraschini": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "isfr6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "isfr6.1oem",
+                                            "mmdm_models": [
+                                                "isfr6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "isfr8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "isfr8.1oem1",
+                                            "mmdm_models": [
+                                                "isfr8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "isfr8.1oem2",
+                                            "mmdm_models": [
+                                                "isfr8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "12": [
+                                {
+                                    "manufacturer_engine_model": "isfr12.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "isfr12.1oem1",
+                                            "mmdm_models": [
+                                                "isfr.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "isfr12.1oem2",
+                                            "mmdm_models": [
+                                                "isfr.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "16": [
+                                {
+                                    "manufacturer_engine_model": "isfr16.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "isfr16.1oem1",
+                                            "mmdm_models": [
+                                                "isfr6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "isfr16.1oem2",
+                                            "mmdm_models": [
+                                                "isfr6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Iveco": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "ivec4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ivec4.1oem",
+                                            "mmdm_models": [
+                                                "ivec4.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "ivec6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ivec6.1oem1",
+                                            "mmdm_models": [
+                                                "ivec6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "ivec6.1oem2",
+                                            "mmdm_models": [
+                                                "ivec6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "Spagna": {
+                "manufacturers": {
+                    "Guascor": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "guas6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "guas6.1oem1",
+                                            "mmdm_models": [
+                                                "guas6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "guas6.1oem2",
+                                            "mmdm_models": [
+                                                "guas6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "guas8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "guas8.1oem",
+                                            "mmdm_models": [
+                                                "guas8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "12": [
+                                {
+                                    "manufacturer_engine_model": "guas12.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "guas12.1oem",
+                                            "mmdm_models": [
+                                                "guas12.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "Sudafrica": {
+                "manufacturers": {
+                    "Kay Industries": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "kain4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kain4.1oem",
+                                            "mmdm_models": [
+                                                "kain4.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "kain6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kain6.1oem1",
+                                            "mmdm_models": [
+                                                "kain6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "kain6.1oem2",
+                                            "mmdm_models": [
+                                                "kain6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "Svezia": {
+                "manufacturers": {
+                    "Volvo Penta": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "vope4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "vope4.1oem1",
+                                            "mmdm_models": [
+                                                "vope4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "vope4.1oem2",
+                                            "mmdm_models": [
+                                                "vope4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "vope6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "vope6.1oem1",
+                                            "mmdm_models": [
+                                                "vope6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "vope6.1oem2",
+                                            "mmdm_models": [
+                                                "vope6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "vope8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "vope8.1oem",
+                                            "mmdm_models": [
+                                                "vope8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "UK": {
+                "manufacturers": {
+                    "Lister": {
+                        "cylinders": {
+                            "2": [
+                                {
+                                    "manufacturer_engine_model": "list2.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "list2.1oem1",
+                                            "mmdm_models": [
+                                                "list.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "list2.1oem2",
+                                            "mmdm_models": [
+                                                "list.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "list4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "list4.1oem1",
+                                            "mmdm_models": [
+                                                "list4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "list4.1oem2",
+                                            "mmdm_models": [
+                                                "list4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "list6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "list6.1oem",
+                                            "mmdm_models": [
+                                                "list6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Perkins": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "perk4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "perk4.1oem",
+                                            "mmdm_models": [
+                                                "perk4.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "perk6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "perk6.1oem",
+                                            "mmdm_models": [
+                                                "perk6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Rolls-Royce": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "roro6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "roro6.1oem1",
+                                            "mmdm_models": [
+                                                "roro6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "roro6.1oem2",
+                                            "mmdm_models": [
+                                                "roro6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "roro8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "roro8.1oem1",
+                                            "mmdm_models": [
+                                                "roro8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "roro8.1oem2",
+                                            "mmdm_models": [
+                                                "roro8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "12": [
+                                {
+                                    "manufacturer_engine_model": "roro12.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "roro12.1oem",
+                                            "mmdm_models": [
+                                                "roro12.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "USA": {
+                "manufacturers": {
+                    "ALCO": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "alco6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "alco6.1oem",
+                                            "mmdm_models": [
+                                                "alco6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "alco8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "alco8.1oem1",
+                                            "mmdm_models": [
+                                                "alco8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "alco8.1oem2",
+                                            "mmdm_models": [
+                                                "alco8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "12": [
+                                {
+                                    "manufacturer_engine_model": "alco12.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "alco12.1oem",
+                                            "mmdm_models": [
+                                                "alco12.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Allis Chalmers": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "alch6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "alch6.1oem",
+                                            "mmdm_models": [
+                                                "alch6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Caterpillar": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "cate4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "cate4.1oem1",
+                                            "mmdm_models": [
+                                                "cate4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "cate4.1oem2",
+                                            "mmdm_models": [
+                                                "cate4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "cate6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "cate6.1oem",
+                                            "mmdm_models": [
+                                                "cate6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "cate8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "cate8.1oem",
+                                            "mmdm_models": [
+                                                "cate8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Chrysler": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "chry6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "chry6.1oem",
+                                            "mmdm_models": [
+                                                "chry6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "chry8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "chry8.1oem",
+                                            "mmdm_models": [
+                                                "chry8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Climax Engineering": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "clen4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "clen4.1oem",
+                                            "mmdm_models": [
+                                                "clen4.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "clen6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "clen6.1oem",
+                                            "mmdm_models": [
+                                                "clen6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Crusader": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "crus6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "crus6.1oem",
+                                            "mmdm_models": [
+                                                "crus6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "crus8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "crus8.1oem1",
+                                            "mmdm_models": [
+                                                "crus8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "crus8.1oem2",
+                                            "mmdm_models": [
+                                                "crus8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Cummins": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "cumm6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "cumm6.1oem",
+                                            "mmdm_models": [
+                                                "cumm6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Detroit": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "detr6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "detr6.1oem1",
+                                            "mmdm_models": [
+                                                "detr6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "detr6.1oem2",
+                                            "mmdm_models": [
+                                                "detr6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Fairbanks Morse": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "famo6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "famo6.1oem",
+                                            "mmdm_models": [
+                                                "famo6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "famo8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "famo8.1oem",
+                                            "mmdm_models": [
+                                                "famo8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "12": [
+                                {
+                                    "manufacturer_engine_model": "famo12.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "famo12.1oem",
+                                            "mmdm_models": [
+                                                "famo12.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Ford": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "ford4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ford4.1oem",
+                                            "mmdm_models": [
+                                                "ford4.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "ford6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ford6.1oem1",
+                                            "mmdm_models": [
+                                                "ford6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "ford6.1oem2",
+                                            "mmdm_models": [
+                                                "ford6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "ford6.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ford6.2oem1",
+                                            "mmdm_models": [
+                                                "ford6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "ford6.2oem2",
+                                            "mmdm_models": [
+                                                "ford6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "ford6.3",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ford6.3oem",
+                                            "mmdm_models": [
+                                                "ford6.3mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "ford6.4",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ford6.4oem1",
+                                            "mmdm_models": [
+                                                "ford6.4mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "ford6.4oem2",
+                                            "mmdm_models": [
+                                                "ford6.4mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "ford6.5",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ford6.5oem1",
+                                            "mmdm_models": [
+                                                "ford6.5mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "ford6.5oem2",
+                                            "mmdm_models": [
+                                                "ford6.5mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "ford6.6",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ford6.6oem",
+                                            "mmdm_models": [
+                                                "ford6.6mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "ford6.7",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ford6.7oem",
+                                            "mmdm_models": [
+                                                "ford6.7mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "ford8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ford8.1oem1",
+                                            "mmdm_models": [
+                                                "ford8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "ford8.1oem2",
+                                            "mmdm_models": [
+                                                "ford8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "ford8.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ford8.2oem1",
+                                            "mmdm_models": [
+                                                "ford8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "ford8.2oem2",
+                                            "mmdm_models": [
+                                                "ford8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "ford8.3",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "ford8.3oem1",
+                                            "mmdm_models": [
+                                                "ford8.3mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "ford8.3oem2",
+                                            "mmdm_models": [
+                                                "ford8.3mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "GM": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "gemo6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "gemo6.1oem1",
+                                            "mmdm_models": [
+                                                "gemo6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "gemo6.1oem2",
+                                            "mmdm_models": [
+                                                "gemo6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "gemo8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "gemo8.1oem1",
+                                            "mmdm_models": [
+                                                "gemo8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "gemo8.1oem2",
+                                            "mmdm_models": [
+                                                "gemo8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Hercules": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "herc4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "herc4.1oem1",
+                                            "mmdm_models": [
+                                                "herc4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "herc4.1oem2",
+                                            "mmdm_models": [
+                                                "herc4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "herc6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "herc6.1oem",
+                                            "mmdm_models": [
+                                                "herc6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Indmar": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "indm6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "indm6.1oem1",
+                                            "mmdm_models": [
+                                                "indm6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "indm6.1oem2",
+                                            "mmdm_models": [
+                                                "indm6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "indm8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "indm8.1oem",
+                                            "mmdm_models": [
+                                                "indm8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "International": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "inte6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "inte6.1oem",
+                                            "mmdm_models": [
+                                                "inte6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "inte8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "inte8.1oem",
+                                            "mmdm_models": [
+                                                "inte8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "John Deere": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "jode4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "jode4.1oem1",
+                                            "mmdm_models": [
+                                                "jode4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "jode4.1oem2",
+                                            "mmdm_models": [
+                                                "jode4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Kohler": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "kohl4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.1oem",
+                                            "mmdm_models": [
+                                                "kohl4.1mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "kohl4.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.2oem1",
+                                            "mmdm_models": [
+                                                "kohl4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.2oem2",
+                                            "mmdm_models": [
+                                                "kohl4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "kohl4.3",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.3oem1",
+                                            "mmdm_models": [
+                                                "kohl4.3mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.3oem2",
+                                            "mmdm_models": [
+                                                "kohl4.3mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "kohl4.4",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.4oem",
+                                            "mmdm_models": [
+                                                "kohl4.4mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "kohl4.5",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.5oem",
+                                            "mmdm_models": [
+                                                "kohl4.5mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "kohl4.6",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.6oem1",
+                                            "mmdm_models": [
+                                                "kohl4.6mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.6oem2",
+                                            "mmdm_models": [
+                                                "kohl4.6mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "kohl4.7",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.7oem1",
+                                            "mmdm_models": [
+                                                "kohl4.7mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.7oem2",
+                                            "mmdm_models": [
+                                                "kohl4.7mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "kohl4.8",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.8oem1",
+                                            "mmdm_models": [
+                                                "kohl4.8mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "kohl4.8oem2",
+                                            "mmdm_models": [
+                                                "kohl4.8mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "kohl6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kohl6.1oem",
+                                            "mmdm_models": [
+                                                "kohl6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "kohl6.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "kohl6.2oem1",
+                                            "mmdm_models": [
+                                                "kohl6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "kohl6.2oem2",
+                                            "mmdm_models": [
+                                                "kohl6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Lehman": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "lehm4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "lehm4.1oem",
+                                            "mmdm_models": [
+                                                "lehm4.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "lehm6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "lehm6.1oem",
+                                            "mmdm_models": [
+                                                "lehm6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Liberty": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "libe6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "libe6.1oem1",
+                                            "mmdm_models": [
+                                                "libe6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "libe6.1oem2",
+                                            "mmdm_models": [
+                                                "libe6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "libe8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "libe8.1oem1",
+                                            "mmdm_models": [
+                                                "libe8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "libe8.1oem2",
+                                            "mmdm_models": [
+                                                "libe8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Lockwood-Ash": {
+                        "cylinders": {
+                            "1": [
+                                {
+                                    "manufacturer_engine_model": "loas1.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas1.1oem1",
+                                            "mmdm_models": [
+                                                "loas.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "loas1.1oem2",
+                                            "mmdm_models": [
+                                                "loas.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas1.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas1.2oem",
+                                            "mmdm_models": [
+                                                "loas1.2mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas1.3",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas1.3oem1",
+                                            "mmdm_models": [
+                                                "loas.3mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "loas1.3oem2",
+                                            "mmdm_models": [
+                                                "loas.3mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas1.4",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas1.4oem",
+                                            "mmdm_models": [
+                                                "loas1.4mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas1.5",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas1.5oem1",
+                                            "mmdm_models": [
+                                                "loas.5mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "loas1.5oem2",
+                                            "mmdm_models": [
+                                                "loas.5mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas1.6",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas1.6oem1",
+                                            "mmdm_models": [
+                                                "loas.6mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "loas1.6oem2",
+                                            "mmdm_models": [
+                                                "loas.6mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "2": [
+                                {
+                                    "manufacturer_engine_model": "loas2.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas2.1oem",
+                                            "mmdm_models": [
+                                                "loas2.1mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas2.2",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas2.2oem1",
+                                            "mmdm_models": [
+                                                "loas.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "loas2.2oem2",
+                                            "mmdm_models": [
+                                                "loas.mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas2.3",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas2.3oem1",
+                                            "mmdm_models": [
+                                                "loas.3mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "loas2.3oem2",
+                                            "mmdm_models": [
+                                                "loas.3mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas2.4",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas2.4oem",
+                                            "mmdm_models": [
+                                                "loas2.4mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas2.5",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas2.5oem",
+                                            "mmdm_models": [
+                                                "loas2.5mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas2.6",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas2.6oem1",
+                                            "mmdm_models": [
+                                                "loas.6mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "loas2.6oem2",
+                                            "mmdm_models": [
+                                                "loas.6mm2"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas2.7",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas2.7oem",
+                                            "mmdm_models": [
+                                                "loas2.7mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas2.8",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas2.8oem",
+                                            "mmdm_models": [
+                                                "loas2.8mm"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "manufacturer_engine_model": "loas2.9",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "loas2.9oem",
+                                            "mmdm_models": [
+                                                "loas2.9mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Lugger": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "lugg6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "lugg6.1oem",
+                                            "mmdm_models": [
+                                                "lugg6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Mack": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "mack6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mack6.1oem1",
+                                            "mmdm_models": [
+                                                "mack6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "mack6.1oem2",
+                                            "mmdm_models": [
+                                                "mack6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "mack8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mack8.1oem",
+                                            "mmdm_models": [
+                                                "mack8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Mercury Marine": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "mema6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mema6.1oem1",
+                                            "mmdm_models": [
+                                                "mema6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "mema6.1oem2",
+                                            "mmdm_models": [
+                                                "mema6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "mema8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "mema8.1oem",
+                                            "mmdm_models": [
+                                                "mema8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Onan": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "onan4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "onan4.1oem",
+                                            "mmdm_models": [
+                                                "onan4.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "onan6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "onan6.1oem1",
+                                            "mmdm_models": [
+                                                "onan6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "onan6.1oem2",
+                                            "mmdm_models": [
+                                                "onan6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Palmer": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "palm4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "palm4.1oem",
+                                            "mmdm_models": [
+                                                "palm4.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "palm6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "palm6.1oem1",
+                                            "mmdm_models": [
+                                                "palm6.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "palm6.1oem2",
+                                            "mmdm_models": [
+                                                "palm6.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "palm8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "palm8.1oem1",
+                                            "mmdm_models": [
+                                                "palm8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "palm8.1oem2",
+                                            "mmdm_models": [
+                                                "palm8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Superior": {
+                        "cylinders": {
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "supe6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "supe6.1oem",
+                                            "mmdm_models": [
+                                                "supe6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "supe8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "supe8.1oem1",
+                                            "mmdm_models": [
+                                                "supe8.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "supe8.1oem2",
+                                            "mmdm_models": [
+                                                "supe8.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "12": [
+                                {
+                                    "manufacturer_engine_model": "supe12.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "supe12.1oem",
+                                            "mmdm_models": [
+                                                "supe12.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Waukesha": {
+                        "cylinders": {
+                            "8": [
+                                {
+                                    "manufacturer_engine_model": "wauk8.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "wauk8.1oem",
+                                            "mmdm_models": [
+                                                "wauk8.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Westerbeke": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "west4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "west4.1oem1",
+                                            "mmdm_models": [
+                                                "west4.mm"
+                                            ]
+                                        },
+                                        {
+                                            "manufacturer_manifold_number": "west4.1oem2",
+                                            "mmdm_models": [
+                                                "west4.mm2"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "west6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "west6.1oem",
+                                            "mmdm_models": [
+                                                "west6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "Wisconsin": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "wisc4.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "wisc4.1oem",
+                                            "mmdm_models": [
+                                                "wisc4.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "6": [
+                                {
+                                    "manufacturer_engine_model": "wisc6.1",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "wisc6.1oem",
+                                            "mmdm_models": [
+                                                "wisc6.1mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "URSS": {
+                "manufacturers": {
+                    "a": {
+                        "cylinders": {
+                            "4": [
+                                {
+                                    "manufacturer_engine_model": "a4",
+                                    "manifold_alternatives": [
+                                        {
+                                            "manufacturer_manifold_number": "a4oem",
+                                            "mmdm_models": [
+                                                "a4mm"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
