@@ -17,8 +17,6 @@ let modelsGroupRef = null;
 let manufacturersGroupRef = null;
 let mainGroupRef = null;
 let isMobileRef = null;
-let showModelInfoRef = null;
-let updateModelInfoRef = null;
 
 const HIT_PADDING = CONFIG.HIT_PADDING;
 const UNSELECTED_RADIUS = CONFIG.UNSELECTED_RADIUS;
@@ -55,8 +53,7 @@ function addHitListeners(hitCircle, nodeGroup, type, name, angle, isSelected) {
     if (activeType === type && isInActivePath(type, keyParts)) {
       return;
     }
-    const isSameCylinder = (type === 'model' && activeType === 'model' && activePath.slice(0,3).join('/') === keyParts.slice(0,3).join('/'));
-    if (activeType === 'model' && !isSameCylinder) {
+    if (activeType === 'model') {
       revertCentral(centralGroupRef, () => {});
     }
     activeType = type;
@@ -64,13 +61,6 @@ function addHitListeners(hitCircle, nodeGroup, type, name, angle, isSelected) {
     resetView(false, type, name);
     renderNextLevel(type, name, angle);
     renderPathLinesWrapper();
-    if (type === 'model') {
-      if (isSameCylinder) {
-        updateModelInfoRef(name);
-      } else {
-        showModelInfoRef(name);
-      }
-    }
   });
 }
 
@@ -161,7 +151,7 @@ function renderPathLinesWrapper() {
 }
 
 // Init interactions
-export function initInteractions(svg, mainGroup, centralGroup, pathLinesGroup, cylindersGroup, modelsGroup, manufacturersGroup, isMobile, showModelInfo, updateModelInfo) {
+export function initInteractions(svg, mainGroup, centralGroup, pathLinesGroup, cylindersGroup, modelsGroup, manufacturersGroup, isMobile) {
   centralGroupRef = centralGroup;
   pathLinesGroupRef = pathLinesGroup;
   cylindersGroupRef = cylindersGroup;
@@ -169,10 +159,6 @@ export function initInteractions(svg, mainGroup, centralGroup, pathLinesGroup, c
   manufacturersGroupRef = manufacturersGroup;
   mainGroupRef = mainGroup;
   isMobileRef = isMobile;
-  showModelInfoRef = showModelInfo;
-  updateModelInfoRef = updateModelInfo;
-
-  console.log('Interactions initialized');
 
   document.getElementById('mmdmNode').addEventListener('click', () => {
     if (activeType === 'model') {
