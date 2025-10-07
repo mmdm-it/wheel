@@ -133,13 +133,13 @@
 
     <!-- Dialogs -->
     <dialog id="addManufacturerDialog">
-        <form>
+        <form id="addManufacturerForm">
             <h3>Adding a New Manufacturer...</h3>
             <label>Country: <input type="text" id="addCountry" required></label>
             <label>Name: <input type="text" id="addName" required></label>
             <div>
                 <button type="button" class="cancel-btn" onclick="closeDialog('addManufacturerDialog')">Cancel</button>
-                <button type="submit" class="confirm-btn">Confirm</button>
+                <button type="button" class="confirm-btn" id="addManufacturerConfirm">Confirm</button>
             </div>
         </form>
     </dialog>
