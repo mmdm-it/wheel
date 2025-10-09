@@ -5,315 +5,6 @@
         "manufacturers": {
           "Daewoo": {
             "cylinders": {
-              "6": [
-                {
-                  "manufacturer_engine_model": "daew6.1",
-                  "manifold_alternatives": [
-                    {
-                      "manufacturer_manifold_number": "daew6.1oem1",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew6.mm",
-                          "description": "High-performance replacement manifold for daew6.mm.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew6.mm-1.jpg",
-                            "./assets/daew6.mm-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    },
-                    {
-                      "manufacturer_manifold_number": "daew6.1oem2",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew6.mm2",
-                          "description": "High-performance replacement manifold for daew6.mm2.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew6.mm2-1.jpg",
-                            "./assets/daew6.mm2-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "manufacturer_engine_model": "daew6.2",
-                  "manifold_alternatives": [
-                    {
-                      "manufacturer_manifold_number": "daew6.2oem",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew6.2mm",
-                          "description": "High-performance replacement manifold for daew6.2mm.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew6.2mm-1.jpg",
-                            "./assets/daew6.2mm-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "manufacturer_engine_model": "daew6.3",
-                  "manifold_alternatives": [
-                    {
-                      "manufacturer_manifold_number": "daew6.3oem1",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew6.3mm",
-                          "description": "High-performance replacement manifold for daew6.3mm.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew6.3mm-1.jpg",
-                            "./assets/daew6.3mm-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    },
-                    {
-                      "manufacturer_manifold_number": "daew6.3oem2",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew6.3mm2",
-                          "description": "High-performance replacement manifold for daew6.3mm2.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew6.3mm2-1.jpg",
-                            "./assets/daew6.3mm2-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "manufacturer_engine_model": "daew6.4",
-                  "manifold_alternatives": [
-                    {
-                      "manufacturer_manifold_number": "daew6.4oem",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew6.4mm",
-                          "description": "High-performance replacement manifold for daew6.4mm.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew6.4mm-1.jpg",
-                            "./assets/daew6.4mm-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "8": [
-                {
-                  "manufacturer_engine_model": "daew8.1",
-                  "manifold_alternatives": [
-                    {
-                      "manufacturer_manifold_number": "daew8.1oem1",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew8.mm",
-                          "description": "High-performance replacement manifold for daew8.mm.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew8.mm-1.jpg",
-                            "./assets/daew8.mm-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    },
-                    {
-                      "manufacturer_manifold_number": "daew8.1oem2",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew8.mm2",
-                          "description": "High-performance replacement manifold for daew8.mm2.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew8.mm2-1.jpg",
-                            "./assets/daew8.mm2-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "manufacturer_engine_model": "daew8.2",
-                  "manifold_alternatives": [
-                    {
-                      "manufacturer_manifold_number": "daew8.2oem",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew8.2mm",
-                          "description": "High-performance replacement manifold for daew8.2mm.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew8.2mm-1.jpg",
-                            "./assets/daew8.2mm-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "manufacturer_engine_model": "daew8.3",
-                  "manifold_alternatives": [
-                    {
-                      "manufacturer_manifold_number": "daew8.3oem",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew8.3mm",
-                          "description": "High-performance replacement manifold for daew8.3mm.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew8.3mm-1.jpg",
-                            "./assets/daew8.3mm-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
               "12": [
                 {
                   "manufacturer_engine_model": "daew12.1",
@@ -378,220 +69,6 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "manufacturer_engine_model": "daew12.3",
-                  "manifold_alternatives": [
-                    {
-                      "manufacturer_manifold_number": "daew12.3oem1",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew12.3mm",
-                          "description": "High-performance replacement manifold for daew.3mm.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew.3mm-1.jpg",
-                            "./assets/daew.3mm-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    },
-                    {
-                      "manufacturer_manifold_number": "daew12.3oem2",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew12.3mm2",
-                          "description": "High-performance replacement manifold for daew.3mm2.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew.3mm2-1.jpg",
-                            "./assets/daew.3mm2-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "manufacturer_engine_model": "daew12.4",
-                  "manifold_alternatives": [
-                    {
-                      "manufacturer_manifold_number": "daew12.4oem",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew12.4mm",
-                          "description": "High-performance replacement manifold for daew12.4mm.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew12.4mm-1.jpg",
-                            "./assets/daew12.4mm-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "manufacturer_engine_model": "daew12.5",
-                  "manifold_alternatives": [
-                    {
-                      "manufacturer_manifold_number": "daew12.5oem",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew12.5mm",
-                          "description": "High-performance replacement manifold for daew12.5mm.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew12.5mm-1.jpg",
-                            "./assets/daew12.5mm-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "manufacturer_engine_model": "daew12.6",
-                  "manifold_alternatives": [
-                    {
-                      "manufacturer_manifold_number": "daew12.6oem1",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew12.6mm",
-                          "description": "High-performance replacement manifold for daew.6mm.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew.6mm-1.jpg",
-                            "./assets/daew.6mm-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    },
-                    {
-                      "manufacturer_manifold_number": "daew12.6oem2",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew12.6mm2",
-                          "description": "High-performance replacement manifold for daew.6mm2.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew.6mm2-1.jpg",
-                            "./assets/daew.6mm2-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "manufacturer_engine_model": "daew12.7",
-                  "manifold_alternatives": [
-                    {
-                      "manufacturer_manifold_number": "daew12.7oem",
-                      "oem_price": 1500,
-                      "mmdm_models": [
-                        {
-                          "model": "daew12.7mm",
-                          "description": "High-performance replacement manifold for daew12.7mm.",
-                          "price": 1200,
-                          "specifications": {
-                            "material": "Cast Iron",
-                            "weight": "25kg",
-                            "warranty": "2 years",
-                            "dimensions": {
-                              "height": "20cm",
-                              "width": "30cm",
-                              "length": "50cm"
-                            }
-                          },
-                          "photos": [
-                            "./assets/daew12.7mm-1.jpg",
-                            "./assets/daew12.7mm-2.jpg"
-                          ],
-                          "year_introduced": null,
-                          "year_discontinued": null
-                        }
-                      ]
-                    }
-                  ]
                 }
               ]
             },
@@ -600,21 +77,21 @@
           }
         }
       },
-            "USA": {
+      "Finlandia": {
         "manufacturers": {
-          "Lockwood-Ash": {
+          "Sisu": {
             "cylinders": {
               "4": [
                 {
-                  "manufacturer_engine_model": "a4",
+                  "manufacturer_engine_model": "sisu4.1",
                   "manifold_alternatives": [
                     {
-                      "manufacturer_manifold_number": "a4oem",
+                      "manufacturer_manifold_number": "sisu4.1oem1",
                       "oem_price": 1500,
                       "mmdm_models": [
                         {
-                          "model": "a4mm",
-                          "description": "High-performance replacement manifold for a4mm.",
+                          "model": "sisu4.mm",
+                          "description": "High-performance replacement manifold for sisu4.mm.",
                           "price": 1200,
                           "specifications": {
                             "material": "Cast Iron",
@@ -627,8 +104,285 @@
                             }
                           },
                           "photos": [
-                            "./assets/a4mm-1.jpg",
-                            "./assets/a4mm-2.jpg"
+                            "./assets/sisu4.mm-1.jpg",
+                            "./assets/sisu4.mm-2.jpg"
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
+                        }
+                      ]
+                    },
+                    {
+                      "manufacturer_manifold_number": "sisu4.1oem2",
+                      "oem_price": 1500,
+                      "mmdm_models": [
+                        {
+                          "model": "sisu4.mm2",
+                          "description": "High-performance replacement manifold for sisu4.mm2.",
+                          "price": 1200,
+                          "specifications": {
+                            "material": "Cast Iron",
+                            "weight": "25kg",
+                            "warranty": "2 years",
+                            "dimensions": {
+                              "height": "20cm",
+                              "width": "30cm",
+                              "length": "50cm"
+                            }
+                          },
+                          "photos": [
+                            "./assets/sisu4.mm2-1.jpg",
+                            "./assets/sisu4.mm2-2.jpg"
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "manufacturer_engine_model": "sisu4.2",
+                  "manifold_alternatives": [
+                    {
+                      "manufacturer_manifold_number": "sisu4.2oem",
+                      "oem_price": 1500,
+                      "mmdm_models": [
+                        {
+                          "model": "sisu4.2mm",
+                          "description": "High-performance replacement manifold for sisu4.2mm.",
+                          "price": 1200,
+                          "specifications": {
+                            "material": "Cast Iron",
+                            "weight": "25kg",
+                            "warranty": "2 years",
+                            "dimensions": {
+                              "height": "20cm",
+                              "width": "30cm",
+                              "length": "50cm"
+                            }
+                          },
+                          "photos": [
+                            "./assets/sisu4.2mm-1.jpg",
+                            "./assets/sisu4.2mm-2.jpg"
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "6": [
+                {
+                  "manufacturer_engine_model": "sisu6.1",
+                  "manifold_alternatives": [
+                    {
+                      "manufacturer_manifold_number": "sisu6.1oem1",
+                      "oem_price": 1500,
+                      "mmdm_models": [
+                        {
+                          "model": "sisu6.mm",
+                          "description": "High-performance replacement manifold for sisu6.mm.",
+                          "price": 1200,
+                          "specifications": {
+                            "material": "Cast Iron",
+                            "weight": "25kg",
+                            "warranty": "2 years",
+                            "dimensions": {
+                              "height": "20cm",
+                              "width": "30cm",
+                              "length": "50cm"
+                            }
+                          },
+                          "photos": [
+                            "./assets/sisu6.mm-1.jpg",
+                            "./assets/sisu6.mm-2.jpg"
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
+                        }
+                      ]
+                    },
+                    {
+                      "manufacturer_manifold_number": "sisu6.1oem2",
+                      "oem_price": 1500,
+                      "mmdm_models": [
+                        {
+                          "model": "sisu6.mm2",
+                          "description": "High-performance replacement manifold for sisu6.mm2.",
+                          "price": 1200,
+                          "specifications": {
+                            "material": "Cast Iron",
+                            "weight": "25kg",
+                            "warranty": "2 years",
+                            "dimensions": {
+                              "height": "20cm",
+                              "width": "30cm",
+                              "length": "50cm"
+                            }
+                          },
+                          "photos": [
+                            "./assets/sisu6.mm2-1.jpg",
+                            "./assets/sisu6.mm2-2.jpg"
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "manufacturer_engine_model": "sisu6.2",
+                  "manifold_alternatives": [
+                    {
+                      "manufacturer_manifold_number": "sisu6.2oem",
+                      "oem_price": 1500,
+                      "mmdm_models": [
+                        {
+                          "model": "sisu6.2mm",
+                          "description": "High-performance replacement manifold for sisu6.2mm.",
+                          "price": 1200,
+                          "specifications": {
+                            "material": "Cast Iron",
+                            "weight": "25kg",
+                            "warranty": "2 years",
+                            "dimensions": {
+                              "height": "20cm",
+                              "width": "30cm",
+                              "length": "50cm"
+                            }
+                          },
+                          "photos": [
+                            "./assets/sisu6.2mm-1.jpg",
+                            "./assets/sisu6.2mm-2.jpg"
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "manufacturer_engine_model": "sisu6.3",
+                  "manifold_alternatives": [
+                    {
+                      "manufacturer_manifold_number": "sisu6.3oem",
+                      "oem_price": 1500,
+                      "mmdm_models": [
+                        {
+                          "model": "sisu6.3mm",
+                          "description": "High-performance replacement manifold for sisu6.3mm.",
+                          "price": 1200,
+                          "specifications": {
+                            "material": "Cast Iron",
+                            "weight": "25kg",
+                            "warranty": "2 years",
+                            "dimensions": {
+                              "height": "20cm",
+                              "width": "30cm",
+                              "length": "50cm"
+                            }
+                          },
+                          "photos": [
+                            "./assets/sisu6.3mm-1.jpg",
+                            "./assets/sisu6.3mm-2.jpg"
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "8": [
+                {
+                  "manufacturer_engine_model": "sisu8.1",
+                  "manifold_alternatives": [
+                    {
+                      "manufacturer_manifold_number": "sisu8.1oem1",
+                      "oem_price": 1500,
+                      "mmdm_models": [
+                        {
+                          "model": "sisu8.mm",
+                          "description": "High-performance replacement manifold for sisu8.mm.",
+                          "price": 1200,
+                          "specifications": {
+                            "material": "Cast Iron",
+                            "weight": "25kg",
+                            "warranty": "2 years",
+                            "dimensions": {
+                              "height": "20cm",
+                              "width": "30cm",
+                              "length": "50cm"
+                            }
+                          },
+                          "photos": [
+                            "./assets/sisu8.mm-1.jpg",
+                            "./assets/sisu8.mm-2.jpg"
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
+                        }
+                      ]
+                    },
+                    {
+                      "manufacturer_manifold_number": "sisu8.1oem2",
+                      "oem_price": 1500,
+                      "mmdm_models": [
+                        {
+                          "model": "sisu8.mm2",
+                          "description": "High-performance replacement manifold for sisu8.mm2.",
+                          "price": 1200,
+                          "specifications": {
+                            "material": "Cast Iron",
+                            "weight": "25kg",
+                            "warranty": "2 years",
+                            "dimensions": {
+                              "height": "20cm",
+                              "width": "30cm",
+                              "length": "50cm"
+                            }
+                          },
+                          "photos": [
+                            "./assets/sisu8.mm2-1.jpg",
+                            "./assets/sisu8.mm2-2.jpg"
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "manufacturer_engine_model": "sisu8.2",
+                  "manifold_alternatives": [
+                    {
+                      "manufacturer_manifold_number": "sisu8.2oem",
+                      "oem_price": 1500,
+                      "mmdm_models": [
+                        {
+                          "model": "sisu8.2mm",
+                          "description": "High-performance replacement manifold for sisu8.2mm.",
+                          "price": 1200,
+                          "specifications": {
+                            "material": "Cast Iron",
+                            "weight": "25kg",
+                            "warranty": "2 years",
+                            "dimensions": {
+                              "height": "20cm",
+                              "width": "30cm",
+                              "length": "50cm"
+                            }
+                          },
+                          "photos": [
+                            "./assets/sisu8.2mm-1.jpg",
+                            "./assets/sisu8.2mm-2.jpg"
                           ],
                           "year_introduced": null,
                           "year_discontinued": null
@@ -639,7 +393,7 @@
                 }
               ]
             },
-            "year_founded": null,
+            "year_founded": 1942,
             "year_dissolved": null
           }
         }
