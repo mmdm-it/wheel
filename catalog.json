@@ -30,7 +30,9 @@
                           "photos": [
                             "./assets/daew6.mm-1.jpg",
                             "./assets/daew6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -55,7 +57,9 @@
                           "photos": [
                             "./assets/daew6.mm2-1.jpg",
                             "./assets/daew6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -85,7 +89,9 @@
                           "photos": [
                             "./assets/daew6.2mm-1.jpg",
                             "./assets/daew6.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -115,7 +121,9 @@
                           "photos": [
                             "./assets/daew6.3mm-1.jpg",
                             "./assets/daew6.3mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -140,7 +148,9 @@
                           "photos": [
                             "./assets/daew6.3mm2-1.jpg",
                             "./assets/daew6.3mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -170,7 +180,9 @@
                           "photos": [
                             "./assets/daew6.4mm-1.jpg",
                             "./assets/daew6.4mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -202,7 +214,9 @@
                           "photos": [
                             "./assets/daew8.mm-1.jpg",
                             "./assets/daew8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -227,7 +241,9 @@
                           "photos": [
                             "./assets/daew8.mm2-1.jpg",
                             "./assets/daew8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -257,7 +273,9 @@
                           "photos": [
                             "./assets/daew8.2mm-1.jpg",
                             "./assets/daew8.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -287,7 +305,9 @@
                           "photos": [
                             "./assets/daew8.3mm-1.jpg",
                             "./assets/daew8.3mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -319,7 +339,9 @@
                           "photos": [
                             "./assets/daew12.1mm-1.jpg",
                             "./assets/daew12.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -349,7 +371,9 @@
                           "photos": [
                             "./assets/daew12.2mm-1.jpg",
                             "./assets/daew12.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -363,7 +387,7 @@
                       "oem_price": 1500,
                       "mmdm_models": [
                         {
-                          "model": "daew.3mm",
+                          "model": "daew12.3mm",
                           "description": "High-performance replacement manifold for daew.3mm.",
                           "price": 1200,
                           "specifications": {
@@ -379,7 +403,9 @@
                           "photos": [
                             "./assets/daew.3mm-1.jpg",
                             "./assets/daew.3mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -388,7 +414,7 @@
                       "oem_price": 1500,
                       "mmdm_models": [
                         {
-                          "model": "daew.3mm2",
+                          "model": "daew12.3mm2",
                           "description": "High-performance replacement manifold for daew.3mm2.",
                           "price": 1200,
                           "specifications": {
@@ -404,7 +430,9 @@
                           "photos": [
                             "./assets/daew.3mm2-1.jpg",
                             "./assets/daew.3mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -434,7 +462,9 @@
                           "photos": [
                             "./assets/daew12.4mm-1.jpg",
                             "./assets/daew12.4mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -464,7 +494,9 @@
                           "photos": [
                             "./assets/daew12.5mm-1.jpg",
                             "./assets/daew12.5mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -478,7 +510,7 @@
                       "oem_price": 1500,
                       "mmdm_models": [
                         {
-                          "model": "daew.6mm",
+                          "model": "daew12.6mm",
                           "description": "High-performance replacement manifold for daew.6mm.",
                           "price": 1200,
                           "specifications": {
@@ -494,7 +526,9 @@
                           "photos": [
                             "./assets/daew.6mm-1.jpg",
                             "./assets/daew.6mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -503,7 +537,7 @@
                       "oem_price": 1500,
                       "mmdm_models": [
                         {
-                          "model": "daew.6mm2",
+                          "model": "daew12.6mm2",
                           "description": "High-performance replacement manifold for daew.6mm2.",
                           "price": 1200,
                           "specifications": {
@@ -519,7 +553,9 @@
                           "photos": [
                             "./assets/daew.6mm2-1.jpg",
                             "./assets/daew.6mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -549,14 +585,18 @@
                           "photos": [
                             "./assets/daew12.7mm-1.jpg",
                             "./assets/daew12.7mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1967,
+            "year_dissolved": 1999
           }
         }
       },
@@ -589,7 +629,9 @@
                           "photos": [
                             "./assets/sisu4.mm-1.jpg",
                             "./assets/sisu4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -614,7 +656,9 @@
                           "photos": [
                             "./assets/sisu4.mm2-1.jpg",
                             "./assets/sisu4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -644,7 +688,9 @@
                           "photos": [
                             "./assets/sisu4.2mm-1.jpg",
                             "./assets/sisu4.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -676,7 +722,9 @@
                           "photos": [
                             "./assets/sisu6.mm-1.jpg",
                             "./assets/sisu6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -701,7 +749,9 @@
                           "photos": [
                             "./assets/sisu6.mm2-1.jpg",
                             "./assets/sisu6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -731,7 +781,9 @@
                           "photos": [
                             "./assets/sisu6.2mm-1.jpg",
                             "./assets/sisu6.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -761,7 +813,9 @@
                           "photos": [
                             "./assets/sisu6.3mm-1.jpg",
                             "./assets/sisu6.3mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -793,7 +847,9 @@
                           "photos": [
                             "./assets/sisu8.mm-1.jpg",
                             "./assets/sisu8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -818,7 +874,9 @@
                           "photos": [
                             "./assets/sisu8.mm2-1.jpg",
                             "./assets/sisu8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -848,14 +906,18 @@
                           "photos": [
                             "./assets/sisu8.2mm-1.jpg",
                             "./assets/sisu8.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1942,
+            "year_dissolved": null
           },
           "Wärtsilä": {
             "cylinders": {
@@ -884,7 +946,9 @@
                           "photos": [
                             "./assets/wärt6.1mm-1.jpg",
                             "./assets/wärt6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -914,7 +978,9 @@
                           "photos": [
                             "./assets/wärt6.mm-1.jpg",
                             "./assets/wärt6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -939,7 +1005,9 @@
                           "photos": [
                             "./assets/wärt6.mm2-1.jpg",
                             "./assets/wärt6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -971,7 +1039,9 @@
                           "photos": [
                             "./assets/wärt8.1mm-1.jpg",
                             "./assets/wärt8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1001,7 +1071,9 @@
                           "photos": [
                             "./assets/wärt8.mm-1.jpg",
                             "./assets/wärt8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1026,7 +1098,9 @@
                           "photos": [
                             "./assets/wärt8.mm2-1.jpg",
                             "./assets/wärt8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1058,7 +1132,9 @@
                           "photos": [
                             "./assets/wärt12.1mm-1.jpg",
                             "./assets/wärt12.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1088,7 +1164,9 @@
                           "photos": [
                             "./assets/wärt12.2mm-1.jpg",
                             "./assets/wärt12.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1118,7 +1196,9 @@
                           "photos": [
                             "./assets/wärt.3mm-1.jpg",
                             "./assets/wärt.3mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1143,7 +1223,9 @@
                           "photos": [
                             "./assets/wärt.3mm2-1.jpg",
                             "./assets/wärt.3mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1175,7 +1257,9 @@
                           "photos": [
                             "./assets/wärt6.mm-1.jpg",
                             "./assets/wärt6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1200,14 +1284,18 @@
                           "photos": [
                             "./assets/wärt6.mm2-1.jpg",
                             "./assets/wärt6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1834,
+            "year_dissolved": null
           }
         }
       },
@@ -1243,7 +1331,9 @@
                           "photos": [
                             "./assets/deut4.mm-1.jpg",
                             "./assets/deut4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1268,7 +1358,9 @@
                           "photos": [
                             "./assets/deut4.mm2-1.jpg",
                             "./assets/deut4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1298,14 +1390,18 @@
                           "photos": [
                             "./assets/deut4.2mm-1.jpg",
                             "./assets/deut4.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1864,
+            "year_dissolved": null
           },
           "MAN Diesel & Turbo": {
             "cylinders": {
@@ -1334,7 +1430,9 @@
                           "photos": [
                             "./assets/madt6.mm-1.jpg",
                             "./assets/madt6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1359,7 +1457,9 @@
                           "photos": [
                             "./assets/madt6.mm2-1.jpg",
                             "./assets/madt6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1389,7 +1489,9 @@
                           "photos": [
                             "./assets/madt6.mm-1.jpg",
                             "./assets/madt6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1414,7 +1516,9 @@
                           "photos": [
                             "./assets/madt6.mm2-1.jpg",
                             "./assets/madt6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1444,7 +1548,9 @@
                           "photos": [
                             "./assets/madt6.3mm-1.jpg",
                             "./assets/madt6.3mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1476,7 +1582,9 @@
                           "photos": [
                             "./assets/madt8.mm-1.jpg",
                             "./assets/madt8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1501,7 +1609,9 @@
                           "photos": [
                             "./assets/madt8.mm2-1.jpg",
                             "./assets/madt8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1531,7 +1641,9 @@
                           "photos": [
                             "./assets/madt8.2mm-1.jpg",
                             "./assets/madt8.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1563,7 +1675,9 @@
                           "photos": [
                             "./assets/madt.mm-1.jpg",
                             "./assets/madt.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1588,7 +1702,9 @@
                           "photos": [
                             "./assets/madt.mm2-1.jpg",
                             "./assets/madt.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1618,7 +1734,9 @@
                           "photos": [
                             "./assets/madt.mm-1.jpg",
                             "./assets/madt.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1643,7 +1761,9 @@
                           "photos": [
                             "./assets/madt.mm2-1.jpg",
                             "./assets/madt.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1675,7 +1795,9 @@
                           "photos": [
                             "./assets/madt6.mm-1.jpg",
                             "./assets/madt6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1700,7 +1822,9 @@
                           "photos": [
                             "./assets/madt6.mm2-1.jpg",
                             "./assets/madt6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1730,7 +1854,9 @@
                           "photos": [
                             "./assets/madt6.mm-1.jpg",
                             "./assets/madt6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1755,14 +1881,18 @@
                           "photos": [
                             "./assets/madt6.mm2-1.jpg",
                             "./assets/madt6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1758,
+            "year_dissolved": null
           },
           "Mercedes": {
             "cylinders": {
@@ -1791,7 +1921,9 @@
                           "photos": [
                             "./assets/merc4.mm-1.jpg",
                             "./assets/merc4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1816,7 +1948,9 @@
                           "photos": [
                             "./assets/merc4.mm2-1.jpg",
                             "./assets/merc4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1846,7 +1980,9 @@
                           "photos": [
                             "./assets/merc4.2mm-1.jpg",
                             "./assets/merc4.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1878,7 +2014,9 @@
                           "photos": [
                             "./assets/merc6.mm-1.jpg",
                             "./assets/merc6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -1903,7 +2041,9 @@
                           "photos": [
                             "./assets/merc6.mm2-1.jpg",
                             "./assets/merc6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1933,7 +2073,9 @@
                           "photos": [
                             "./assets/merc6.2mm-1.jpg",
                             "./assets/merc6.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -1965,14 +2107,18 @@
                           "photos": [
                             "./assets/merc8.1mm-1.jpg",
                             "./assets/merc8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1886,
+            "year_dissolved": null
           },
           "MTU": {
             "cylinders": {
@@ -2001,7 +2147,9 @@
                           "photos": [
                             "./assets/mtu6.1mm-1.jpg",
                             "./assets/mtu6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2033,7 +2181,9 @@
                           "photos": [
                             "./assets/mtu8.mm-1.jpg",
                             "./assets/mtu8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -2058,7 +2208,9 @@
                           "photos": [
                             "./assets/mtu8.mm2-1.jpg",
                             "./assets/mtu8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2088,7 +2240,9 @@
                           "photos": [
                             "./assets/mtu8.2mm-1.jpg",
                             "./assets/mtu8.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2120,7 +2274,9 @@
                           "photos": [
                             "./assets/mtu12.1mm-1.jpg",
                             "./assets/mtu12.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2152,7 +2308,9 @@
                           "photos": [
                             "./assets/mtu16.1mm-1.jpg",
                             "./assets/mtu16.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2182,7 +2340,9 @@
                           "photos": [
                             "./assets/mtu6.mm-1.jpg",
                             "./assets/mtu6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -2207,14 +2367,18 @@
                           "photos": [
                             "./assets/mtu6.mm2-1.jpg",
                             "./assets/mtu6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1909,
+            "year_dissolved": null
           }
         }
       },
@@ -2247,7 +2411,9 @@
                           "photos": [
                             "./assets/hino4.mm-1.jpg",
                             "./assets/hino4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -2272,7 +2438,9 @@
                           "photos": [
                             "./assets/hino4.mm2-1.jpg",
                             "./assets/hino4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2302,7 +2470,9 @@
                           "photos": [
                             "./assets/hino4.mm-1.jpg",
                             "./assets/hino4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -2327,7 +2497,9 @@
                           "photos": [
                             "./assets/hino4.mm2-1.jpg",
                             "./assets/hino4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2359,7 +2531,9 @@
                           "photos": [
                             "./assets/hino6.1mm-1.jpg",
                             "./assets/hino6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2391,14 +2565,18 @@
                           "photos": [
                             "./assets/hino8.1mm-1.jpg",
                             "./assets/hino8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1942,
+            "year_dissolved": null
           },
           "Isuzu": {
             "cylinders": {
@@ -2427,7 +2605,9 @@
                           "photos": [
                             "./assets/isuz6.1mm-1.jpg",
                             "./assets/isuz6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2457,14 +2637,18 @@
                           "photos": [
                             "./assets/isuz6.2mm-1.jpg",
                             "./assets/isuz6.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1916,
+            "year_dissolved": null
           },
           "Komatsu": {
             "cylinders": {
@@ -2493,7 +2677,9 @@
                           "photos": [
                             "./assets/koma4.mm-1.jpg",
                             "./assets/koma4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -2518,7 +2704,9 @@
                           "photos": [
                             "./assets/koma4.mm2-1.jpg",
                             "./assets/koma4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2550,7 +2738,9 @@
                           "photos": [
                             "./assets/koma6.1mm-1.jpg",
                             "./assets/koma6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2582,14 +2772,18 @@
                           "photos": [
                             "./assets/koma8.1mm-1.jpg",
                             "./assets/koma8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1921,
+            "year_dissolved": null
           },
           "Kubota": {
             "cylinders": {
@@ -2618,7 +2812,9 @@
                           "photos": [
                             "./assets/kubo6.mm-1.jpg",
                             "./assets/kubo6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -2643,14 +2839,18 @@
                           "photos": [
                             "./assets/kubo6.mm2-1.jpg",
                             "./assets/kubo6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1890,
+            "year_dissolved": null
           },
           "Mitsubishi": {
             "cylinders": {
@@ -2679,7 +2879,9 @@
                           "photos": [
                             "./assets/mits4.1mm-1.jpg",
                             "./assets/mits4.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2709,7 +2911,9 @@
                           "photos": [
                             "./assets/mits4.mm-1.jpg",
                             "./assets/mits4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -2734,7 +2938,9 @@
                           "photos": [
                             "./assets/mits4.mm2-1.jpg",
                             "./assets/mits4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2766,7 +2972,9 @@
                           "photos": [
                             "./assets/mits6.mm-1.jpg",
                             "./assets/mits6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -2791,7 +2999,9 @@
                           "photos": [
                             "./assets/mits6.mm2-1.jpg",
                             "./assets/mits6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2823,14 +3033,18 @@
                           "photos": [
                             "./assets/mits8.1mm-1.jpg",
                             "./assets/mits8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1884,
+            "year_dissolved": null
           },
           "Nissan": {
             "cylinders": {
@@ -2859,14 +3073,18 @@
                           "photos": [
                             "./assets/niss4.1mm-1.jpg",
                             "./assets/niss4.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1933,
+            "year_dissolved": null
           }
         }
       },
@@ -2899,7 +3117,9 @@
                           "photos": [
                             "./assets/isfr6.1mm-1.jpg",
                             "./assets/isfr6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2931,7 +3151,9 @@
                           "photos": [
                             "./assets/isfr8.mm-1.jpg",
                             "./assets/isfr8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -2956,7 +3178,9 @@
                           "photos": [
                             "./assets/isfr8.mm2-1.jpg",
                             "./assets/isfr8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -2988,7 +3212,9 @@
                           "photos": [
                             "./assets/isfr.mm-1.jpg",
                             "./assets/isfr.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -3013,7 +3239,9 @@
                           "photos": [
                             "./assets/isfr.mm2-1.jpg",
                             "./assets/isfr.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3045,7 +3273,9 @@
                           "photos": [
                             "./assets/isfr6.mm-1.jpg",
                             "./assets/isfr6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -3070,14 +3300,18 @@
                           "photos": [
                             "./assets/isfr6.mm2-1.jpg",
                             "./assets/isfr6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1900,
+            "year_dissolved": 1955
           },
           "Iveco": {
             "cylinders": {
@@ -3106,7 +3340,9 @@
                           "photos": [
                             "./assets/ivec4.1mm-1.jpg",
                             "./assets/ivec4.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3138,7 +3374,9 @@
                           "photos": [
                             "./assets/ivec6.mm-1.jpg",
                             "./assets/ivec6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -3163,14 +3401,18 @@
                           "photos": [
                             "./assets/ivec6.mm2-1.jpg",
                             "./assets/ivec6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1975,
+            "year_dissolved": null
           }
         }
       },
@@ -3203,7 +3445,9 @@
                           "photos": [
                             "./assets/guas6.mm-1.jpg",
                             "./assets/guas6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -3228,7 +3472,9 @@
                           "photos": [
                             "./assets/guas6.mm2-1.jpg",
                             "./assets/guas6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3260,7 +3506,9 @@
                           "photos": [
                             "./assets/guas8.1mm-1.jpg",
                             "./assets/guas8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3292,14 +3540,18 @@
                           "photos": [
                             "./assets/guas12.1mm-1.jpg",
                             "./assets/guas12.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1966,
+            "year_dissolved": null
           }
         }
       },
@@ -3332,7 +3584,9 @@
                           "photos": [
                             "./assets/kain4.1mm-1.jpg",
                             "./assets/kain4.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3364,7 +3618,9 @@
                           "photos": [
                             "./assets/kain6.mm-1.jpg",
                             "./assets/kain6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -3389,14 +3645,18 @@
                           "photos": [
                             "./assets/kain6.mm2-1.jpg",
                             "./assets/kain6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1981,
+            "year_dissolved": null
           }
         }
       },
@@ -3429,7 +3689,9 @@
                           "photos": [
                             "./assets/vope4.mm-1.jpg",
                             "./assets/vope4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -3454,7 +3716,9 @@
                           "photos": [
                             "./assets/vope4.mm2-1.jpg",
                             "./assets/vope4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3486,7 +3750,9 @@
                           "photos": [
                             "./assets/vope6.mm-1.jpg",
                             "./assets/vope6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -3511,7 +3777,9 @@
                           "photos": [
                             "./assets/vope6.mm2-1.jpg",
                             "./assets/vope6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3543,14 +3811,18 @@
                           "photos": [
                             "./assets/vope8.1mm-1.jpg",
                             "./assets/vope8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1907,
+            "year_dissolved": null
           }
         }
       },
@@ -3583,7 +3855,9 @@
                           "photos": [
                             "./assets/list.mm-1.jpg",
                             "./assets/list.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -3608,7 +3882,9 @@
                           "photos": [
                             "./assets/list.mm2-1.jpg",
                             "./assets/list.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3640,7 +3916,9 @@
                           "photos": [
                             "./assets/list4.mm-1.jpg",
                             "./assets/list4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -3665,7 +3943,9 @@
                           "photos": [
                             "./assets/list4.mm2-1.jpg",
                             "./assets/list4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3697,14 +3977,18 @@
                           "photos": [
                             "./assets/list6.1mm-1.jpg",
                             "./assets/list6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1867,
+            "year_dissolved": null
           },
           "Perkins": {
             "cylinders": {
@@ -3733,7 +4017,9 @@
                           "photos": [
                             "./assets/perk4.1mm-1.jpg",
                             "./assets/perk4.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3765,14 +4051,18 @@
                           "photos": [
                             "./assets/perk6.1mm-1.jpg",
                             "./assets/perk6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1932,
+            "year_dissolved": null
           },
           "Rolls-Royce": {
             "cylinders": {
@@ -3801,7 +4091,9 @@
                           "photos": [
                             "./assets/roro6.mm-1.jpg",
                             "./assets/roro6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -3826,7 +4118,9 @@
                           "photos": [
                             "./assets/roro6.mm2-1.jpg",
                             "./assets/roro6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3858,7 +4152,9 @@
                           "photos": [
                             "./assets/roro8.mm-1.jpg",
                             "./assets/roro8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -3883,7 +4179,9 @@
                           "photos": [
                             "./assets/roro8.mm2-1.jpg",
                             "./assets/roro8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3915,14 +4213,18 @@
                           "photos": [
                             "./assets/roro12.1mm-1.jpg",
                             "./assets/roro12.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1904,
+            "year_dissolved": null
           }
         }
       },
@@ -3955,7 +4257,9 @@
                           "photos": [
                             "./assets/alco6.1mm-1.jpg",
                             "./assets/alco6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -3987,7 +4291,9 @@
                           "photos": [
                             "./assets/alco8.mm-1.jpg",
                             "./assets/alco8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -4012,7 +4318,9 @@
                           "photos": [
                             "./assets/alco8.mm2-1.jpg",
                             "./assets/alco8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4044,14 +4352,18 @@
                           "photos": [
                             "./assets/alco12.1mm-1.jpg",
                             "./assets/alco12.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1901,
+            "year_dissolved": 1969
           },
           "Allis Chalmers": {
             "cylinders": {
@@ -4080,14 +4392,18 @@
                           "photos": [
                             "./assets/alch6.1mm-1.jpg",
                             "./assets/alch6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1901,
+            "year_dissolved": 1999
           },
           "Caterpillar": {
             "cylinders": {
@@ -4116,7 +4432,9 @@
                           "photos": [
                             "./assets/cate4.mm-1.jpg",
                             "./assets/cate4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -4141,7 +4459,9 @@
                           "photos": [
                             "./assets/cate4.mm2-1.jpg",
                             "./assets/cate4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4173,7 +4493,9 @@
                           "photos": [
                             "./assets/cate6.1mm-1.jpg",
                             "./assets/cate6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4205,14 +4527,18 @@
                           "photos": [
                             "./assets/cate8.1mm-1.jpg",
                             "./assets/cate8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1925,
+            "year_dissolved": null
           },
           "Chrysler": {
             "cylinders": {
@@ -4241,7 +4567,9 @@
                           "photos": [
                             "./assets/chry6.1mm-1.jpg",
                             "./assets/chry6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4273,14 +4601,18 @@
                           "photos": [
                             "./assets/chry8.1mm-1.jpg",
                             "./assets/chry8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1925,
+            "year_dissolved": null
           },
           "Climax Engineering": {
             "cylinders": {
@@ -4309,7 +4641,9 @@
                           "photos": [
                             "./assets/clen4.1mm-1.jpg",
                             "./assets/clen4.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4341,14 +4675,18 @@
                           "photos": [
                             "./assets/clen6.1mm-1.jpg",
                             "./assets/clen6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1900,
+            "year_dissolved": 1928
           },
           "Crusader": {
             "cylinders": {
@@ -4377,7 +4715,9 @@
                           "photos": [
                             "./assets/crus6.1mm-1.jpg",
                             "./assets/crus6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4409,7 +4749,9 @@
                           "photos": [
                             "./assets/crus8.mm-1.jpg",
                             "./assets/crus8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -4434,14 +4776,18 @@
                           "photos": [
                             "./assets/crus8.mm2-1.jpg",
                             "./assets/crus8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1955,
+            "year_dissolved": null
           },
           "Cummins": {
             "cylinders": {
@@ -4470,14 +4816,18 @@
                           "photos": [
                             "./assets/cumm6.1mm-1.jpg",
                             "./assets/cumm6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1919,
+            "year_dissolved": null
           },
           "Detroit": {
             "cylinders": {
@@ -4506,7 +4856,9 @@
                           "photos": [
                             "./assets/detr6.mm-1.jpg",
                             "./assets/detr6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -4531,14 +4883,18 @@
                           "photos": [
                             "./assets/detr6.mm2-1.jpg",
                             "./assets/detr6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1938,
+            "year_dissolved": null
           },
           "Fairbanks Morse": {
             "cylinders": {
@@ -4567,7 +4923,9 @@
                           "photos": [
                             "./assets/famo6.1mm-1.jpg",
                             "./assets/famo6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4599,7 +4957,9 @@
                           "photos": [
                             "./assets/famo8.1mm-1.jpg",
                             "./assets/famo8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4631,14 +4991,18 @@
                           "photos": [
                             "./assets/famo12.1mm-1.jpg",
                             "./assets/famo12.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1823,
+            "year_dissolved": null
           },
           "Ford": {
             "cylinders": {
@@ -4673,7 +5037,9 @@
                           "photos": [
                             "./assets/ford4.1mm-1.jpg",
                             "./assets/ford4.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4706,7 +5072,9 @@
                           "photos": [
                             "./assets/ford6.mm-1.jpg",
                             "./assets/ford6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -4731,7 +5099,9 @@
                           "photos": [
                             "./assets/ford6.mm2-1.jpg",
                             "./assets/ford6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4761,7 +5131,9 @@
                           "photos": [
                             "./assets/ford6.mm-1.jpg",
                             "./assets/ford6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -4786,7 +5158,9 @@
                           "photos": [
                             "./assets/ford6.mm2-1.jpg",
                             "./assets/ford6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4816,7 +5190,9 @@
                           "photos": [
                             "./assets/ford6.3mm-1.jpg",
                             "./assets/ford6.3mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4846,7 +5222,9 @@
                           "photos": [
                             "./assets/ford6.4mm-1.jpg",
                             "./assets/ford6.4mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -4871,7 +5249,9 @@
                           "photos": [
                             "./assets/ford6.4mm2-1.jpg",
                             "./assets/ford6.4mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4901,7 +5281,9 @@
                           "photos": [
                             "./assets/ford6.5mm-1.jpg",
                             "./assets/ford6.5mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -4926,7 +5308,9 @@
                           "photos": [
                             "./assets/ford6.5mm2-1.jpg",
                             "./assets/ford6.5mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4956,7 +5340,9 @@
                           "photos": [
                             "./assets/ford6.6mm-1.jpg",
                             "./assets/ford6.6mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -4986,7 +5372,9 @@
                           "photos": [
                             "./assets/ford6.7mm-1.jpg",
                             "./assets/ford6.7mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5018,7 +5406,9 @@
                           "photos": [
                             "./assets/ford8.mm-1.jpg",
                             "./assets/ford8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5043,7 +5433,9 @@
                           "photos": [
                             "./assets/ford8.mm2-1.jpg",
                             "./assets/ford8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5073,7 +5465,9 @@
                           "photos": [
                             "./assets/ford8.mm-1.jpg",
                             "./assets/ford8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5098,7 +5492,9 @@
                           "photos": [
                             "./assets/ford8.mm2-1.jpg",
                             "./assets/ford8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5128,7 +5524,9 @@
                           "photos": [
                             "./assets/ford8.3mm-1.jpg",
                             "./assets/ford8.3mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5153,7 +5551,9 @@
                           "photos": [
                             "./assets/ford8.3mm2-1.jpg",
                             "./assets/ford8.3mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5162,7 +5562,9 @@
               ],
               "10": [],
               "12": []
-            }
+            },
+            "year_founded": 1903,
+            "year_dissolved": null
           },
           "GM": {
             "cylinders": {
@@ -5191,7 +5593,9 @@
                           "photos": [
                             "./assets/gemo6.mm-1.jpg",
                             "./assets/gemo6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5216,7 +5620,9 @@
                           "photos": [
                             "./assets/gemo6.mm2-1.jpg",
                             "./assets/gemo6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5248,7 +5654,9 @@
                           "photos": [
                             "./assets/gemo8.mm-1.jpg",
                             "./assets/gemo8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5273,14 +5681,18 @@
                           "photos": [
                             "./assets/gemo8.mm2-1.jpg",
                             "./assets/gemo8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1908,
+            "year_dissolved": null
           },
           "Hercules": {
             "cylinders": {
@@ -5309,7 +5721,9 @@
                           "photos": [
                             "./assets/herc4.mm-1.jpg",
                             "./assets/herc4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5334,7 +5748,9 @@
                           "photos": [
                             "./assets/herc4.mm2-1.jpg",
                             "./assets/herc4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5366,14 +5782,18 @@
                           "photos": [
                             "./assets/herc6.1mm-1.jpg",
                             "./assets/herc6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1915,
+            "year_dissolved": 1999
           },
           "Indmar": {
             "cylinders": {
@@ -5402,7 +5822,9 @@
                           "photos": [
                             "./assets/indm6.mm-1.jpg",
                             "./assets/indm6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5427,7 +5849,9 @@
                           "photos": [
                             "./assets/indm6.mm2-1.jpg",
                             "./assets/indm6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5459,14 +5883,18 @@
                           "photos": [
                             "./assets/indm8.1mm-1.jpg",
                             "./assets/indm8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1971,
+            "year_dissolved": null
           },
           "International": {
             "cylinders": {
@@ -5495,7 +5923,9 @@
                           "photos": [
                             "./assets/inte6.1mm-1.jpg",
                             "./assets/inte6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5527,14 +5957,18 @@
                           "photos": [
                             "./assets/inte8.1mm-1.jpg",
                             "./assets/inte8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1902,
+            "year_dissolved": 1985
           },
           "John Deere": {
             "cylinders": {
@@ -5563,7 +5997,9 @@
                           "photos": [
                             "./assets/jode4.mm-1.jpg",
                             "./assets/jode4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5588,14 +6024,18 @@
                           "photos": [
                             "./assets/jode4.mm2-1.jpg",
                             "./assets/jode4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1837,
+            "year_dissolved": null
           },
           "Kohler": {
             "cylinders": {
@@ -5624,7 +6064,9 @@
                           "photos": [
                             "./assets/kohl4.1mm-1.jpg",
                             "./assets/kohl4.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5654,7 +6096,9 @@
                           "photos": [
                             "./assets/kohl4.mm-1.jpg",
                             "./assets/kohl4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5679,7 +6123,9 @@
                           "photos": [
                             "./assets/kohl4.mm2-1.jpg",
                             "./assets/kohl4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5709,7 +6155,9 @@
                           "photos": [
                             "./assets/kohl4.3mm-1.jpg",
                             "./assets/kohl4.3mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5734,7 +6182,9 @@
                           "photos": [
                             "./assets/kohl4.3mm2-1.jpg",
                             "./assets/kohl4.3mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5764,7 +6214,9 @@
                           "photos": [
                             "./assets/kohl4.4mm-1.jpg",
                             "./assets/kohl4.4mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5794,7 +6246,9 @@
                           "photos": [
                             "./assets/kohl4.5mm-1.jpg",
                             "./assets/kohl4.5mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5824,7 +6278,9 @@
                           "photos": [
                             "./assets/kohl4.6mm-1.jpg",
                             "./assets/kohl4.6mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5849,7 +6305,9 @@
                           "photos": [
                             "./assets/kohl4.6mm2-1.jpg",
                             "./assets/kohl4.6mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5879,7 +6337,9 @@
                           "photos": [
                             "./assets/kohl4.7mm-1.jpg",
                             "./assets/kohl4.7mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5904,7 +6364,9 @@
                           "photos": [
                             "./assets/kohl4.7mm2-1.jpg",
                             "./assets/kohl4.7mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5934,7 +6396,9 @@
                           "photos": [
                             "./assets/kohl4.8mm-1.jpg",
                             "./assets/kohl4.8mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -5959,7 +6423,9 @@
                           "photos": [
                             "./assets/kohl4.8mm2-1.jpg",
                             "./assets/kohl4.8mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -5991,7 +6457,9 @@
                           "photos": [
                             "./assets/kohl6.1mm-1.jpg",
                             "./assets/kohl6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6021,7 +6489,9 @@
                           "photos": [
                             "./assets/kohl6.mm-1.jpg",
                             "./assets/kohl6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -6046,14 +6516,18 @@
                           "photos": [
                             "./assets/kohl6.mm2-1.jpg",
                             "./assets/kohl6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1873,
+            "year_dissolved": null
           },
           "Lehman": {
             "cylinders": {
@@ -6082,7 +6556,9 @@
                           "photos": [
                             "./assets/lehm4.1mm-1.jpg",
                             "./assets/lehm4.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6114,14 +6590,18 @@
                           "photos": [
                             "./assets/lehm6.1mm-1.jpg",
                             "./assets/lehm6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1931,
+            "year_dissolved": 1997
           },
           "Liberty": {
             "cylinders": {
@@ -6150,7 +6630,9 @@
                           "photos": [
                             "./assets/libe6.mm-1.jpg",
                             "./assets/libe6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -6175,7 +6657,9 @@
                           "photos": [
                             "./assets/libe6.mm2-1.jpg",
                             "./assets/libe6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6207,7 +6691,9 @@
                           "photos": [
                             "./assets/libe8.mm-1.jpg",
                             "./assets/libe8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -6232,14 +6718,18 @@
                           "photos": [
                             "./assets/libe8.mm2-1.jpg",
                             "./assets/libe8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1917,
+            "year_dissolved": 1919
           },
           "Lockwood-Ash": {
             "cylinders": {
@@ -6268,7 +6758,9 @@
                           "photos": [
                             "./assets/loas.mm-1.jpg",
                             "./assets/loas.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -6293,7 +6785,9 @@
                           "photos": [
                             "./assets/loas.mm2-1.jpg",
                             "./assets/loas.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6323,7 +6817,9 @@
                           "photos": [
                             "./assets/loas1.2mm-1.jpg",
                             "./assets/loas1.2mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6353,7 +6849,9 @@
                           "photos": [
                             "./assets/loas.3mm-1.jpg",
                             "./assets/loas.3mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -6378,7 +6876,9 @@
                           "photos": [
                             "./assets/loas.3mm2-1.jpg",
                             "./assets/loas.3mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6408,7 +6908,9 @@
                           "photos": [
                             "./assets/loas1.4mm-1.jpg",
                             "./assets/loas1.4mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6438,7 +6940,9 @@
                           "photos": [
                             "./assets/loas.5mm-1.jpg",
                             "./assets/loas.5mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -6463,7 +6967,9 @@
                           "photos": [
                             "./assets/loas.5mm2-1.jpg",
                             "./assets/loas.5mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6493,7 +6999,9 @@
                           "photos": [
                             "./assets/loas.6mm-1.jpg",
                             "./assets/loas.6mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -6518,7 +7026,9 @@
                           "photos": [
                             "./assets/loas.6mm2-1.jpg",
                             "./assets/loas.6mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6550,7 +7060,9 @@
                           "photos": [
                             "./assets/loas2.1mm-1.jpg",
                             "./assets/loas2.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6580,7 +7092,9 @@
                           "photos": [
                             "./assets/loas.mm-1.jpg",
                             "./assets/loas.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -6605,7 +7119,9 @@
                           "photos": [
                             "./assets/loas.mm2-1.jpg",
                             "./assets/loas.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6635,7 +7151,9 @@
                           "photos": [
                             "./assets/loas.3mm-1.jpg",
                             "./assets/loas.3mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -6660,7 +7178,9 @@
                           "photos": [
                             "./assets/loas.3mm2-1.jpg",
                             "./assets/loas.3mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6690,7 +7210,9 @@
                           "photos": [
                             "./assets/loas2.4mm-1.jpg",
                             "./assets/loas2.4mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6720,7 +7242,9 @@
                           "photos": [
                             "./assets/loas2.5mm-1.jpg",
                             "./assets/loas2.5mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6750,7 +7274,9 @@
                           "photos": [
                             "./assets/loas.6mm-1.jpg",
                             "./assets/loas.6mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -6775,7 +7301,9 @@
                           "photos": [
                             "./assets/loas.6mm2-1.jpg",
                             "./assets/loas.6mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6805,7 +7333,9 @@
                           "photos": [
                             "./assets/loas2.7mm-1.jpg",
                             "./assets/loas2.7mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6835,7 +7365,9 @@
                           "photos": [
                             "./assets/loas2.8mm-1.jpg",
                             "./assets/loas2.8mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6865,14 +7397,18 @@
                           "photos": [
                             "./assets/loas2.9mm-1.jpg",
                             "./assets/loas2.9mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1906,
+            "year_dissolved": 1929
           },
           "Lugger": {
             "cylinders": {
@@ -6901,14 +7437,18 @@
                           "photos": [
                             "./assets/lugg6.1mm-1.jpg",
                             "./assets/lugg6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1975,
+            "year_dissolved": null
           },
           "Mack": {
             "cylinders": {
@@ -6937,7 +7477,9 @@
                           "photos": [
                             "./assets/mack6.mm-1.jpg",
                             "./assets/mack6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -6962,7 +7504,9 @@
                           "photos": [
                             "./assets/mack6.mm2-1.jpg",
                             "./assets/mack6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -6994,14 +7538,18 @@
                           "photos": [
                             "./assets/mack8.1mm-1.jpg",
                             "./assets/mack8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1900,
+            "year_dissolved": null
           },
           "Mercury Marine": {
             "cylinders": {
@@ -7030,7 +7578,9 @@
                           "photos": [
                             "./assets/mema6.mm-1.jpg",
                             "./assets/mema6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -7055,7 +7605,9 @@
                           "photos": [
                             "./assets/mema6.mm2-1.jpg",
                             "./assets/mema6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -7087,14 +7639,18 @@
                           "photos": [
                             "./assets/mema8.1mm-1.jpg",
                             "./assets/mema8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1939,
+            "year_dissolved": null
           },
           "Onan": {
             "cylinders": {
@@ -7123,7 +7679,9 @@
                           "photos": [
                             "./assets/onan4.1mm-1.jpg",
                             "./assets/onan4.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -7155,7 +7713,9 @@
                           "photos": [
                             "./assets/onan6.mm-1.jpg",
                             "./assets/onan6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -7180,14 +7740,18 @@
                           "photos": [
                             "./assets/onan6.mm2-1.jpg",
                             "./assets/onan6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1920,
+            "year_dissolved": null
           },
           "Palmer": {
             "cylinders": {
@@ -7216,7 +7780,9 @@
                           "photos": [
                             "./assets/palm4.1mm-1.jpg",
                             "./assets/palm4.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -7248,7 +7814,9 @@
                           "photos": [
                             "./assets/palm6.mm-1.jpg",
                             "./assets/palm6.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -7273,7 +7841,9 @@
                           "photos": [
                             "./assets/palm6.mm2-1.jpg",
                             "./assets/palm6.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -7305,7 +7875,9 @@
                           "photos": [
                             "./assets/palm8.mm-1.jpg",
                             "./assets/palm8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -7330,14 +7902,18 @@
                           "photos": [
                             "./assets/palm8.mm2-1.jpg",
                             "./assets/palm8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1906,
+            "year_dissolved": null
           },
           "Superior": {
             "cylinders": {
@@ -7366,7 +7942,9 @@
                           "photos": [
                             "./assets/supe6.1mm-1.jpg",
                             "./assets/supe6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -7398,7 +7976,9 @@
                           "photos": [
                             "./assets/supe8.mm-1.jpg",
                             "./assets/supe8.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -7423,7 +8003,9 @@
                           "photos": [
                             "./assets/supe8.mm2-1.jpg",
                             "./assets/supe8.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -7455,14 +8037,18 @@
                           "photos": [
                             "./assets/supe12.1mm-1.jpg",
                             "./assets/supe12.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1889,
+            "year_dissolved": null
           },
           "Waukesha": {
             "cylinders": {
@@ -7491,14 +8077,18 @@
                           "photos": [
                             "./assets/wauk8.1mm-1.jpg",
                             "./assets/wauk8.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1906,
+            "year_dissolved": null
           },
           "Westerbeke": {
             "cylinders": {
@@ -7527,7 +8117,9 @@
                           "photos": [
                             "./assets/west4.mm-1.jpg",
                             "./assets/west4.mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     },
@@ -7552,7 +8144,9 @@
                           "photos": [
                             "./assets/west4.mm2-1.jpg",
                             "./assets/west4.mm2-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -7584,14 +8178,18 @@
                           "photos": [
                             "./assets/west6.1mm-1.jpg",
                             "./assets/west6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1937,
+            "year_dissolved": null
           },
           "Wisconsin": {
             "cylinders": {
@@ -7620,7 +8218,9 @@
                           "photos": [
                             "./assets/wisc4.1mm-1.jpg",
                             "./assets/wisc4.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
@@ -7652,14 +8252,18 @@
                           "photos": [
                             "./assets/wisc6.1mm-1.jpg",
                             "./assets/wisc6.1mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": 1909,
+            "year_dissolved": 2018
           }
         }
       },
@@ -7692,14 +8296,18 @@
                           "photos": [
                             "./assets/a4mm-1.jpg",
                             "./assets/a4mm-2.jpg"
-                          ]
+                          ],
+                          "year_introduced": null,
+                          "year_discontinued": null
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
+            },
+            "year_founded": null,
+            "year_dissolved": null
           }
         }
       }
