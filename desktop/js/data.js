@@ -30,16 +30,25 @@ export function getData() {
 }
 
 /**
- * Return all manufacturers from all countries (sorted Z→A)
+ * Return all manufacturers from specified market or all markets (sorted Z→A)
  */
-export function getAllManufacturers(data = catalogData) {
-  if (!data || !data.MMdM) return [];
+export function getAllManufacturers(data = catalogData, market = null) {
+  if (!data || !data.MMdM || !data.MMdM.markets) return [];
 
   const manufacturers = [];
 
-  for (const [country, cObj] of Object.entries(data.MMdM.countries || {})) {
-    for (const mName of Object.keys(cObj.manufacturers || {})) {
-      manufacturers.push({ name: mName, country });
+  const marketsToScan = market ? [market] : Object.keys(data.MMdM.markets);
+  for (const mkt of marketsToScan) {
+    const marketData = data.MMdM.markets[mkt];
+    if (!marketData || !marketData.countries) continue;
+    for (const [country, cObj] of Object.entries(marketData.countries)) {
+      for (const mName of Object.keys(cObj.manufacturers || {})) {
+        manufacturers.push({ 
+          name: mName, 
+          country, 
+          market: mkt 
+        });
+      }
     }
   }
 
@@ -49,9 +58,9 @@ export function getAllManufacturers(data = catalogData) {
 /**
  * Compute cylinder angle for layout
  */
-export function getCylinderAngle(country, manufacturer, cylinder, manufacturerAngle, data = catalogData) {
+export function getCylinderAngle(market, country, manufacturer, cylinder, manufacturerAngle, data = catalogData) {
   try {
-    const cylinders = Object.keys(data.MMdM.countries[country].manufacturers[manufacturer].cylinders || {})
+    const cylinders = Object.keys(data.MMdM.markets[market]?.countries[country]?.manufacturers[manufacturer]?.cylinders || {})
       .sort((a, b) => parseInt(a) - parseInt(b));
     const idx = cylinders.indexOf(cylinder);
     if (idx === -1) return manufacturerAngle;
@@ -66,10 +75,10 @@ export function getCylinderAngle(country, manufacturer, cylinder, manufacturerAn
 /**
  * Compute model angle for layout
  */
-export function getModelAngle(country, manufacturer, cylinder, model, cylinderAngle, data = catalogData) {
+export function getModelAngle(market, country, manufacturer, cylinder, model, cylinderAngle, data = catalogData) {
   try {
-    const models = data.MMdM.countries[country].manufacturers[manufacturer].cylinders[cylinder] || [];
-    const idx = models.findIndex(m => m.manufacturer_engine_model === model);
+    const models = data.MMdM.markets[market]?.countries[country]?.manufacturers[manufacturer]?.cylinders[cylinder] || [];
+    const idx = models.findIndex(m => m.engine_model === model);
     if (idx === -1) return cylinderAngle;
 
     const spread = models.length > 1 ? Math.PI / 18 : 0;

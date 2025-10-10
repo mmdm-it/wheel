@@ -14,23 +14,35 @@ const cylindersGroup = document.getElementById('cylinders');
 const modelsGroup = document.getElementById('models');
 const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 
+// Market buttons
+const europeBtn = document.getElementById('europeAsia');
+const americaBtn = document.getElementById('northSouthAmerica');
+let activeMarket = null;
+
 // Globals
-window.addToCart = function(mmdmModel) {
-  console.log('Added to cart:', mmdmModel);
-  alert(`Added ${mmdmModel.model} to cart! Price: $${mmdmModel.price}`);
+window.addToCart = function(mmdmManifoldData) {
+  console.log('Added to cart:', mmdmManifoldData);
+  alert(`Added ${mmdmManifoldData.model} to cart! Price: $${mmdmManifoldData.price}`);
 };
 
-// showModelInfo (with stroke add)
+// showModelInfo (updated for new structure)
 function showModelInfo(modelFullKey) {
   const data = getData();
   if (!data) return;
   const parts = modelFullKey.split('/');
-  const country = parts[0], manuf = parts[1], cyl = parts[2], model = parts[3];
-  const engineObj = data.MMdM.countries[country].manufacturers[manuf].cylinders[cyl].find(m => m.manufacturer_engine_model === model);
-  if (!engineObj || !engineObj.manifold_alternatives || engineObj.manifold_alternatives.length === 0 || 
-      !engineObj.manifold_alternatives[0].mmdm_models || engineObj.manifold_alternatives[0].mmdm_models.length === 0) return;
-  const alternative = engineObj.manifold_alternatives[0];
-  const mmdmModel = alternative.mmdm_models[0];
+  if (parts.length < 5) return; // Expect market/country/manuf/cyl/engine_model
+  const market = parts[0], country = parts[1], manuf = parts[2], cyl = parts[3], engine_model = parts[4];
+  const engineObj = data.MMdM.markets[market]?.countries[country]?.manufacturers[manuf]?.cylinders[cyl]?.find(e => e.engine_model === engine_model);
+  if (!engineObj || !engineObj.manifold_alternatives) return;
+
+  // Find MMdM alternative
+  const mmdmAlt = engineObj.manifold_alternatives.find(a => a.type === 'mmdm');
+  if (!mmdmAlt || !mmdmAlt.mmdm_manifold) return;
+  const mmdmManifold = mmdmAlt.mmdm_manifold;
+
+  // Find OEM alternative for price (first one)
+  const oemAlt = engineObj.manifold_alternatives.find(a => a.type === 'oem');
+  const oemPrice = oemAlt ? oemAlt.price : null;
 
   const existingFo = centralGroup.querySelector('foreignObject');
   if (existingFo) existingFo.remove();
@@ -50,26 +62,30 @@ function showModelInfo(modelFullKey) {
   const descDiv = document.createElement('div');
   descDiv.id = 'desc';
   descDiv.style.cssText = 'opacity: 0; transition: opacity 0.3s ease-in-out;';
-  descDiv.innerHTML = `MMdM: ${mmdmModel.model}<br>${mmdmModel.description}`;
+  descDiv.innerHTML = `MMdM: ${mmdmAlt.part_number}<br>${mmdmManifold.description}`;
   containerDiv.appendChild(descDiv);
 
   const oemPriceDiv = document.createElement('div');
   oemPriceDiv.id = 'oemPrice';
   oemPriceDiv.style.cssText = 'opacity: 0; transition: opacity 0.3s ease-in-out; margin-top: 10px;';
-  oemPriceDiv.innerHTML = `OEM Price: $${alternative.oem_price}`;
+  if (oemPrice) {
+    oemPriceDiv.innerHTML = `OEM Price: $${oemPrice}`;
+  } else {
+    oemPriceDiv.innerHTML = 'OEM Price: N/A';
+  }
   containerDiv.appendChild(oemPriceDiv);
 
   const priceDiv = document.createElement('div');
   priceDiv.id = 'price';
   priceDiv.style.cssText = 'opacity: 0; transition: opacity 0.3s ease-in-out; margin-top: 10px;';
-  priceDiv.innerHTML = `MMdM Price: $${mmdmModel.price}`;
+  priceDiv.innerHTML = `MMdM Price: $${mmdmAlt.price}`;
   containerDiv.appendChild(priceDiv);
 
   const photoDiv = document.createElement('div');
   photoDiv.id = 'photo';
   photoDiv.style.cssText = 'opacity: 0; transition: opacity 0.3s ease-in-out; margin-top: 10px; max-height: 100px; overflow: hidden;';
-  if (mmdmModel.photos && mmdmModel.photos.length > 0) {
-    photoDiv.innerHTML = `<img src="${mmdmModel.photos[0]}" style="max-width:100%; height:auto; border-radius: 5px;">`;
+  if (mmdmManifold.photos && mmdmManifold.photos.length > 0) {
+    photoDiv.innerHTML = `<img src="${mmdmManifold.photos[0]}" style="max-width:100%; height:auto; border-radius: 5px;">`;
   } else {
     photoDiv.innerHTML = 'Photo not available.';
   }
@@ -79,7 +95,7 @@ function showModelInfo(modelFullKey) {
   specsDiv.id = 'specs';
   specsDiv.style.cssText = 'opacity: 0; transition: opacity 0.3s ease-in-out; margin-top: 10px; text-align: left; font-size: 10px;';
   let specsHtml = '<ul style="margin: 0; padding-left: 20px;">';
-  const specs = mmdmModel.specifications;
+  const specs = mmdmManifold.specifications;
   specsHtml += `<li>Material: ${specs.material}</li>`;
   specsHtml += `<li>Weight: ${specs.weight}</li>`;
   specsHtml += `<li>Warranty: ${specs.warranty}</li>`;
@@ -95,7 +111,14 @@ function showModelInfo(modelFullKey) {
   const linkDiv = document.createElement('div');
   linkDiv.id = 'link';
   linkDiv.style.cssText = 'position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); opacity: 0; transition: opacity 0.3s ease-in-out;';
-  linkDiv.innerHTML = `<a href="#" style="color: #f1b800; text-decoration: underline;" onclick="addToCart(${JSON.stringify(mmdmModel)}); return false;">Add to Cart</a>`;
+  const cartData = {
+    model: mmdmAlt.part_number,
+    price: mmdmAlt.price,
+    description: mmdmManifold.description,
+    specifications: mmdmManifold.specifications,
+    photos: mmdmManifold.photos
+  };
+  linkDiv.innerHTML = `<a href="#" style="color: #f1b800; text-decoration: underline;" onclick="addToCart(${JSON.stringify(cartData)}); return false;">Add to Cart</a>`;
   containerDiv.appendChild(linkDiv);
 
   fo.appendChild(containerDiv);
@@ -108,12 +131,17 @@ function updateModelInfo(modelFullKey) {
   const data = getData();
   if (!data) return;
   const parts = modelFullKey.split('/');
-  const country = parts[0], manuf = parts[1], cyl = parts[2], model = parts[3];
-  const engineObj = data.MMdM.countries[country].manufacturers[manuf].cylinders[cyl].find(m => m.manufacturer_engine_model === model);
-  if (!engineObj || !engineObj.manifold_alternatives || engineObj.manifold_alternatives.length === 0 || 
-      !engineObj.manifold_alternatives[0].mmdm_models || engineObj.manifold_alternatives[0].mmdm_models.length === 0) return;
-  const alternative = engineObj.manifold_alternatives[0];
-  const mmdmModel = alternative.mmdm_models[0];
+  if (parts.length < 5) return;
+  const market = parts[0], country = parts[1], manuf = parts[2], cyl = parts[3], engine_model = parts[4];
+  const engineObj = data.MMdM.markets[market]?.countries[country]?.manufacturers[manuf]?.cylinders[cyl]?.find(e => e.engine_model === engine_model);
+  if (!engineObj || !engineObj.manifold_alternatives) return;
+
+  const mmdmAlt = engineObj.manifold_alternatives.find(a => a.type === 'mmdm');
+  if (!mmdmAlt || !mmdmAlt.mmdm_manifold) return;
+  const mmdmManifold = mmdmAlt.mmdm_manifold;
+
+  const oemAlt = engineObj.manifold_alternatives.find(a => a.type === 'oem');
+  const oemPrice = oemAlt ? oemAlt.price : null;
 
   const containerDiv = centralGroup.querySelector('div');
   if (!containerDiv) return;
@@ -128,19 +156,21 @@ function updateModelInfo(modelFullKey) {
   if (!descDiv || !priceDiv || !linkDiv) return;
 
   fadeOutContent(containerDiv, () => {
-    descDiv.innerHTML = `MMdM: ${mmdmModel.model}<br>${mmdmModel.description}`;
-    if (oemPriceDiv) oemPriceDiv.innerHTML = `OEM Price: $${alternative.oem_price}`;
-    priceDiv.innerHTML = `MMdM Price: $${mmdmModel.price}`;
+    descDiv.innerHTML = `MMdM: ${mmdmAlt.part_number}<br>${mmdmManifold.description}`;
+    if (oemPriceDiv) {
+      oemPriceDiv.innerHTML = oemPrice ? `OEM Price: $${oemPrice}` : 'OEM Price: N/A';
+    }
+    priceDiv.innerHTML = `MMdM Price: $${mmdmAlt.price}`;
     if (photoDiv) {
-      if (mmdmModel.photos && mmdmModel.photos.length > 0) {
-        photoDiv.innerHTML = `<img src="${mmdmModel.photos[0]}" style="max-width:100%; height:auto; border-radius: 5px;">`;
+      if (mmdmManifold.photos && mmdmManifold.photos.length > 0) {
+        photoDiv.innerHTML = `<img src="${mmdmManifold.photos[0]}" style="max-width:100%; height:auto; border-radius: 5px;">`;
       } else {
         photoDiv.innerHTML = 'Photo not available.';
       }
     }
     if (specsDiv) {
       let specsHtml = '<ul style="margin: 0; padding-left: 20px;">';
-      const specs = mmdmModel.specifications;
+      const specs = mmdmManifold.specifications;
       specsHtml += `<li>Material: ${specs.material}</li>`;
       specsHtml += `<li>Weight: ${specs.weight}</li>`;
       specsHtml += `<li>Warranty: ${specs.warranty}</li>`;
@@ -152,17 +182,23 @@ function updateModelInfo(modelFullKey) {
       specsHtml += '</ul>';
       specsDiv.innerHTML = specsHtml;
     }
-    linkDiv.innerHTML = `<a href="#" style="color: #f1b800; text-decoration: underline;" onclick="addToCart(${JSON.stringify(mmdmModel)}); return false;">Add to Cart</a>`;
+    const cartData = {
+      model: mmdmAlt.part_number,
+      price: mmdmAlt.price,
+      description: mmdmManifold.description,
+      specifications: mmdmManifold.specifications,
+      photos: mmdmManifold.photos
+    };
+    linkDiv.innerHTML = `<a href="#" style="color: #f1b800; text-decoration: underline;" onclick="addToCart(${JSON.stringify(cartData)}); return false;">Add to Cart</a>`;
 
     stageInContent(containerDiv);
   });
 }
 
-// Initial render
+// Initial render (no initial manufacturers, wait for market selection)
 function initialRender(interactions) {
-  console.log('Initial render firing');
-  const addHitListeners = interactions.addHitListeners;
-  renderAllManufacturers(manufacturersGroup, manufacturerAngles, activePath, isInActivePath, addHitListeners);
+  // Empty initially
+  manufacturersGroup.innerHTML = '';
 }
 
 // Init
@@ -170,6 +206,59 @@ console.log('Initializing visualization');
 loadData().then(() => {
   const interactions = initInteractions(svg, mainGroup, centralGroup, pathLinesGroup, cylindersGroup, modelsGroup, manufacturersGroup, isMobile, showModelInfo, updateModelInfo);
   initialRender(interactions);
+
+  // Market button events (click to select market persistently)
+  europeBtn.addEventListener('click', () => {
+    if (activeMarket === 'Europe & Asia') return; // Already active
+    activeMarket = 'Europe & Asia';
+    europeBtn.classList.add('active');
+    americaBtn.classList.remove('active');
+    renderManufacturersForMarket('Europe & Asia', interactions);
+  });
+
+  americaBtn.addEventListener('click', () => {
+    if (activeMarket === 'North & South America') return; // Already active
+    activeMarket = 'North & South America';
+    americaBtn.classList.add('active');
+    europeBtn.classList.remove('active');
+    renderManufacturersForMarket('North & South America', interactions);
+  });
+
 }).catch(err => {
   console.error('Init failed:', err);
 });
+
+// Function to render manufacturers for a specific market (updated to use interactions)
+function renderManufacturersForMarket(market, interactions) {
+  // Clear existing
+  manufacturersGroup.innerHTML = '';
+
+  const data = getData();
+  if (!data || !data.MMdM.markets[market]) {
+    console.warn(`No data for market: ${market}`);
+    return;
+  }
+
+  // Collect manufacturers with full keys
+  const marketManufs = [];
+  const marketData = data.MMdM.markets[market];
+  for (const country in marketData.countries) {
+    for (const manuf in marketData.countries[country].manufacturers) {
+      const fullKey = `${market}/${country}/${manuf}`;
+      marketManufs.push({
+        key: fullKey,
+        label: manuf,
+        country: country,
+        manufacturer: manuf
+      });
+    }
+  }
+
+  if (marketManufs.length === 0) {
+    console.warn(`No manufacturers in market: ${market}`);
+    return;
+  }
+
+  const addHitListeners = interactions.addHitListeners;
+  renderAllManufacturers(manufacturersGroup, manufacturerAngles, activePath, isInActivePath, addHitListeners, marketManufs);
+}

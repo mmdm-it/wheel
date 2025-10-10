@@ -1,0 +1,105 @@
+{
+  "MMdM": {
+    "markets": {
+      "Europe & Asia": {
+        "countries": {
+          "ExampleCountry": {
+            "manufacturers": {
+              "ExampleManufacturer": {
+                "year_founded": 1900,
+                "year_dissolved": null,
+                "cylinders": {
+                  "8": [
+                    {
+                      "engine_model": "exampleEngineModel",
+                      "year_introduced": 1932,
+                      "year_discontinued": 1936,
+                      "manifold_alternatives": [
+                        {
+                          "type": "oem",
+                          "brand": "ExampleManufacturer",
+                          "oem_manifold": "oem-cast-variant",
+                          "price": 1500,
+                          "notes": "Cast iron OEM variant"
+                        },
+                        {
+                          "type": "oem",
+                          "brand": "ExampleManufacturer",
+                          "oem_manifold": "oem-stainless-variant",
+                          "price": 2000,
+                          "notes": "Stainless steel OEM variant"
+                        },
+                        {
+                          "type": "mmdm",
+                          "brand": "MMdM",
+                          "part_number": "mmdm-example-1",
+                          "price": 1200,
+                          "mmdm_manifold": {
+                            "description": "High-performance replacement manifold.",
+                            "specifications": {
+                              "material": "Cast Iron",
+                              "weight": "25kg",
+                              "warranty": "2 years",
+                              "dimensions": {
+                                "height": "20cm",
+                                "width": "30cm",
+                                "length": "50cm"
+                              }
+                            },
+                            "photos": [
+                              "./assets/example-1.jpg",
+                              "./assets/example-2.jpg"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "third_party",
+                          "brand": "ThirdPartyCo",
+                          "part_number": "third-456",
+                          "price": 1100,
+                          "rebrand_type": "third_party_rebrands_mmdm",
+                          "specifications": {
+                            "material": "Cast Iron",
+                            "weight": "25kg",
+                            "warranty": "1 year",
+                            "dimensions": {
+                              "height": "20cm",
+                              "width": "30cm",
+                              "length": "50cm"
+                            }
+                          },
+                          "notes": "Rebranded MMdM (inherits specs)"
+                        },
+                        {
+                          "type": "third_party",
+                          "brand": "AnotherVendor",
+                          "part_number": "vendor-789",
+                          "price": 1300,
+                          "rebrand_type": "mmdm_sells_third_party",
+                          "specifications": {
+                            "material": "Stainless Steel",
+                            "weight": "22kg",
+                            "warranty": "3 years",
+                            "dimensions": {
+                              "height": "20cm",
+                              "width": "30cm",
+                              "length": "50cm"
+                            }
+                          },
+                          "notes": "Independent third-party, sold by MMdM"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "North & South America": {
+        "countries": {}
+      }
+    }
+  }
+}
