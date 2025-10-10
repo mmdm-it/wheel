@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMdM Catalog</title>
+    <style>
+        body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f5e8c7; }
+        svg { border: 1px solid #ccc; }
+        .node { cursor: pointer; } /* No transition for instantaneous changes */
+        .hidden { display: none; }
+        text { font-size: 12px; }
+    </style>
+</head>
+<body>
+    <svg width="1000" height="1000" id="catalogSvg">
+        <g id="mainGroup" transform="translate(500, 500)">
+            <!-- Central Node (MMdM) -->
+            <circle class="node" cx="0" cy="0" r="25" fill="gray" id="mmdmNode" />
+            <text x="0" y="0" text-anchor="middle" dy="0.3em" fill="black">MMdM</text>
+
+            <!-- Country Ring -->
+            <g id="countries"></g>
+
+            <!-- Manufacturer Ring (Hidden initially) -->
+            <g id="manufacturers" class="hidden"></g>
+
+            <!-- Cylinders Ring (Hidden initially) -->
+            <g id="cylinders" class="hidden"></g>
+
+            <!-- Models Ring (Hidden initially) -->
+            <g id="models" class="hidden"></g>
+
+            <!-- Manifolds Ring (Hidden initially) -->
+            <g id="manifolds" class="hidden"></g>
+        </g>
+    </svg>
+    <script>
+        const svg = document.getElementById('catalogSvg');
+        const mainGroup = document.getElementById('mainGroup');
+        const countriesGroup = document.getElementById('countries');
+        const manufacturersGroup = document.getElementById('manufacturers');
+        const cylindersGroup = document.getElementById('cylinders');
+        const modelsGroup = document.getElementById('models');
+        const manifoldsGroup = document.getElementById('manifolds');
+        let activeNode = null;
+        let activeType = null;
+        let activePath = []; // Track the active path (e.g., ['USA', 'Caterpillar', '6'])
+        let data = null;
+        const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+
+        // Load JSON data
+        async function loadData() {
+            try {
+                const response = await fetch('./catalog.json');
+                data = await response.json();
+                console.log('Loaded data:', JSON.stringify(data, null, 2));
+                renderCountries();
+            } catch (error) {
+                console.error('Error loading catalog.json:', error);
+                alert('Failed to load catalog data. Please check the file path.');
+            }
+        }
+
+        // Render country nodes (75px ring)
+        function renderCountries(selectedCountry = null) {
+            console.log('Rendering countries, selected:', selectedCountry);
+            countriesGroup.innerHTML = '';
+            const countries = Object.keys(data.MMdM.countries);
+            countries.forEach((country, index) => {
+                const isSelected = country === selectedCountry && activeType === 'country';
+                const radius = 75; // Fixed 75px for position
+                const angle = (index / countries.length) * 2 * Math.PI;
+                const x = radius * Math.cos(angle);
+                const y = radius * Math.sin(angle);
+                const g = document.createElementNS("http://www.w3.org/2000/svg", 'g');
+                g.classList.add('country');
+                g.setAttribute('transform', `translate(${x}, ${y})`);
+                g.innerHTML = `
+                    <circle class="node" cx="0" cy="0" r="${isSelected ? 30 : 15}" fill="${getColor('country', country)}" />
+                    <text x="0" y="0" text-anchor="middle" dy="0.3em" fill="black">${country}</text>
+                `;
+                countriesGroup.appendChild(g);
+                addNodeListeners(g, 'country', country, angle, isSelected);
+            });
+        }
+
+        // Render manufacturer nodes (150px ring)
+        function renderManufacturers(country, countryAngle, selectedManufacturer = null) {
+            console.log('Rendering manufacturers for', country, 'selected:', selectedManufacturer);
+            manufacturersGroup.innerHTML = '';
+            const manufacturers = Object.keys(data.MMdM.countries[country].manufacturers);
+            const angleSpread = manufacturers.length > 1 ? Math.PI / 12 : 0; // 15° spread for multiple nodes
+            manufacturers.forEach((manufacturer, index) => {
+                const isSelected = manufacturer === selectedManufacturer && activeType === 'manufacturer';
+                const radius = 150; // Fixed 150px for position
+                const angle = countryAngle + (index - (manufacturers.length - 1) / 2) * angleSpread;
+                const x = radius * Math.cos(angle);
+                const y = radius * Math.sin(angle);
+                const textColor = manufacturer === 'Deutz' ? 'white' : 'black'; // White text for Deutz
+                const g = document.createElementNS("http://www.w3.org/2000/svg", 'g');
+                g.classList.add('manufacturer');
+                g.setAttribute('transform', `translate(${x}, ${y})`);
+                g.innerHTML = `
+                    <circle class="node" cx="0" cy="0" r="${isSelected ? 30 : 12}" fill="${getColor('manufacturer', manufacturer)}" />
+                    <text x="0" y="0" text-anchor="middle" dy="0.3em" fill="${textColor}">${manufacturer}</text>
+                `;
+                manufacturersGroup.appendChild(g);
+                addNodeListeners(g, 'manufacturer', `${country}/${manufacturer}`, angle, isSelected);
+            });
+        }
+
+        // Render cylinder nodes (225px ring)
+        function renderCylinders(country, manufacturer, manufacturerAngle, selectedCylinder = null) {
+            console.log('Rendering cylinders for', country, manufacturer, 'selected:', selectedCylinder);
+            cylindersGroup.innerHTML = '';
+            const cylinders = data.MMdM.countries[country].manufacturers[manufacturer]?.cylinders;
+            if (!cylinders) {
+                console.error(`No cylinders found for ${manufacturer} in ${country}`);
+                return;
+            }
+            const cylinderKeys = Object.keys(cylinders);
+            const angleSpread = cylinderKeys.length > 1 ? Math.PI / 12 : 0; // 15° spread for multiple nodes
+            cylinderKeys.forEach((cylinder, index) => {
+                const isSelected = cylinder === selectedCylinder && activeType === 'cylinder';
+                const radius = 225; // Fixed 225px for position
+                const angle = manufacturerAngle + (index - (cylinderKeys.length - 1) / 2) * angleSpread;
+                const x = radius * Math.cos(angle);
+                const y = radius * Math.sin(angle);
+                const g = document.createElementNS("http://www.w3.org/2000/svg", 'g');
+                g.classList.add('cylinder');
+                g.setAttribute('transform', `translate(${x}, ${y})`);
+                g.innerHTML = `
+                    <circle class="node" cx="0" cy="0" r="${isSelected ? 30 : 10}" fill="${getColor('cylinder', cylinder)}" />
+                    <text x="0" y="0" text-anchor="middle" dy="0.3em" fill="black">${cylinder}</text>
+                `;
+                cylindersGroup.appendChild(g);
+                addNodeListeners(g, 'cylinder', `${country}/${manufacturer}/${cylinder}`, angle, isSelected);
+            });
+        }
+
+        // Render model nodes (300px ring)
+        function renderModels(country, manufacturer, cylinder, cylinderAngle, selectedModel = null) {
+            console.log('Rendering models for', country, manufacturer, cylinder, 'selected:', selectedModel);
+            modelsGroup.innerHTML = '';
+            const models = data.MMdM.countries[country].manufacturers[manufacturer].cylinders[cylinder];
+            if (!models) {
+                console.error(`No models found for ${cylinder} in ${manufacturer}, ${country}`);
+                return;
+            }
+            const angleSpread = models.length > 1 ? Math.PI / 12 : 0; // 15° spread for multiple nodes
+            models.forEach((model, index) => {
+                const isSelected = model.model === selectedModel && activeType === 'model';
+                const radius = 300; // Fixed 300px for position
+                const angle = cylinderAngle + (index - (models.length - 1) / 2) * angleSpread;
+                const x = radius * Math.cos(angle);
+                const y = radius * Math.sin(angle);
+                const g = document.createElementNS("http://www.w3.org/2000/svg", 'g');
+                g.classList.add('model');
+                g.setAttribute('transform', `translate(${x}, ${y})`);
+                g.setAttribute('data-angle', angle); // Store angle for consistency
+                g.innerHTML = `
+                    <circle class="node" cx="0" cy="0" r="${isSelected ? 30 : 8}" fill="${getColor('model', model.model)}" />
+                    <text x="0" y="0" text-anchor="middle" dy="0.3em" fill="black">${model.model}</text>
+                `;
+                modelsGroup.appendChild(g);
+                addNodeListeners(g, 'model', `${country}/${manufacturer}/${cylinder}/${model.model}`, angle, isSelected);
+            });
+        }
+
+        // Render manifold nodes (375px ring)
+        function renderManifolds(country, manufacturer, cylinder, model, modelAngle) {
+            console.log('Rendering manifold for', country, manufacturer, cylinder, model, 'angle:', modelAngle);
+            manifoldsGroup.innerHTML = '';
+            const models = data.MMdM.countries[country].manufacturers[manufacturer].cylinders[cylinder];
+            const manifold = models.find(m => m.model === model)?.manifold;
+            if (!manifold) {
+                console.error(`No manifold found for ${model} in ${cylinder}, ${manufacturer}, ${country}`);
+                return;
+            }
+            const radius = 375; // Fixed 375px for position
+            const angle = modelAngle; // Align with parent model
+            const x = radius * Math.cos(angle);
+            const y = radius * Math.sin(angle);
+            const g = document.createElementNS("http://www.w3.org/2000/svg", 'g');
+            g.classList.add('manifold');
+            g.setAttribute('transform', `translate(${x}, ${y})`);
+            g.innerHTML = `
+                <circle class="node" cx="0" cy="0" r="6" fill="${getColor('manifold', manifold)}" />
+                <text x="0" y="0" text-anchor="middle" dy="0.3em" fill="black">${manifold}</text>
+            `;
+            manifoldsGroup.appendChild(g);
+        }
+
+        // Add event listeners to nodes
+        function addNodeListeners(node, type, name, angle, isSelected) {
+            const eventType = isMobile ? 'click' : 'mouseover';
+            node.addEventListener(eventType, () => {
+                if (activeNode === node && activeType === type && isSelected) {
+                    console.log(`Node ${type}: ${name} already active, skipping`);
+                    return;
+                }
+                console.log(`Activating ${type}: ${name} at angle ${angle}`);
+                activeNode = node;
+                activeType = type;
+                activePath = name.split('/'); // Update active path
+                resetView(false, type, name);
+                renderNextLevel(type, name, angle);
+            });
+        }
+
+        // Render next level based on current node
+        function renderNextLevel(type, name, angle) {
+            console.log(`Rendering next level for ${type}: ${name}`);
+            const country = name.split('/')[0];
+            const countryAngle = getCountryAngle(country);
+            if (type === 'country') {
+                manufacturersGroup.classList.remove('hidden');
+                console.log('Showing manufacturers group');
+                renderCountries(activePath[0]);
+                renderManufacturers(name, countryAngle);
+            } else if (type === 'manufacturer') {
+                cylindersGroup.classList.remove('hidden');
+                console.log('Showing cylinders group');
+                renderCountries(activePath[0]);
+                renderManufacturers(name.split('/')[0], countryAngle, activePath[1]);
+                renderCylinders(name.split('/')[0], name.split('/')[1], angle);
+            } else if (type === 'cylinder') {
+                modelsGroup.classList.remove('hidden');
+                console.log('Showing models group');
+                renderCountries(activePath[0]);
+                renderManufacturers(name.split('/')[0], countryAngle, activePath[1]);
+                renderCylinders(name.split('/')[0], name.split('/')[1], getManufacturerAngle(name.split('/')[0], name.split('/')[1], countryAngle), activePath[2]);
+                renderModels(name.split('/')[0], name.split('/')[1], name.split('/')[2], angle, activePath[3]);
+            } else if (type === 'model') {
+                manifoldsGroup.classList.remove('hidden');
+                console.log('Showing manifolds group');
+                renderCountries(activePath[0]);
+                renderManufacturers(name.split('/')[0], countryAngle, activePath[1]);
+                renderCylinders(name.split('/')[0], name.split('/')[1], getManufacturerAngle(name.split('/')[0], name.split('/')[1], countryAngle), activePath[2]);
+                renderModels(name.split('/')[0], name.split('/')[1], name.split('/')[2], angle, activePath[3]);
+                renderManifolds(name.split('/')[0], name.split('/')[1], name.split('/')[2], name.split('/')[3], angle);
+            }
+        }
+
+        // Helper functions to calculate angles
+        function getCountryAngle(country) {
+            const countries = Object.keys(data.MMdM.countries);
+            const index = countries.indexOf(country);
+            return (index / countries.length) * 2 * Math.PI;
+        }
+
+        function getManufacturerAngle(country, manufacturer, countryAngle) {
+            const manufacturers = Object.keys(data.MMdM.countries[country].manufacturers);
+            const index = manufacturers.indexOf(manufacturer);
+            const angleSpread = manufacturers.length > 1 ? Math.PI / 12 : 0;
+            return countryAngle + (index - (manufacturers.length - 1) / 2) * angleSpread;
+        }
+
+        function getCylinderAngle(country, manufacturer, cylinder, manufacturerAngle) {
+            const cylinders = Object.keys(data.MMdM.countries[country].manufacturers[manufacturer].cylinders);
+            const index = cylinders.indexOf(cylinder);
+            const angleSpread = cylinders.length > 1 ? Math.PI / 12 : 0;
+            return manufacturerAngle + (index - (cylinders.length - 1) / 2) * angleSpread;
+        }
+
+        function getModelAngle(country, manufacturer, cylinder, model, cylinderAngle) {
+            const models = data.MMdM.countries[country].manufacturers[manufacturer].cylinders[cylinder];
+            const index = models.findIndex(m => m.model === model);
+            const angleSpread = models.length > 1 ? Math.PI / 12 : 0;
+            return cylinderAngle + (index - (models.length - 1) / 2) * angleSpread;
+        }
+
+        // Reset view to MMdM
+        function resetView(clearActive = true, nextType = null, nextName = null) {
+            console.log('Resetting view, clearActive:', clearActive, 'nextType:', nextType, 'nextName:', nextName);
+            mainGroup.setAttribute('transform', 'translate(500, 500)');
+            countriesGroup.innerHTML = '';
+            manufacturersGroup.innerHTML = '';
+            cylindersGroup.innerHTML = '';
+            modelsGroup.innerHTML = '';
+            manifoldsGroup.innerHTML = '';
+            manufacturersGroup.classList.add('hidden');
+            cylindersGroup.classList.add('hidden');
+            modelsGroup.classList.add('hidden');
+            manifoldsGroup.classList.add('hidden');
+            if (clearActive) {
+                activeNode = null;
+                activeType = null;
+                activePath = [];
+            }
+            if (nextType === 'country') {
+                renderCountries(nextName);
+            } else if (nextType === 'manufacturer') {
+                const country = nextName.split('/')[0];
+                const selectedManufacturer = nextName.split('/')[1];
+                const countryAngle = getCountryAngle(country);
+                renderCountries(country);
+                manufacturersGroup.classList.remove('hidden');
+                renderManufacturers(country, countryAngle, selectedManufacturer);
+            } else if (nextType === 'cylinder') {
+                const country = nextName.split('/')[0];
+                const manufacturer = nextName.split('/')[1];
+                const selectedCylinder = nextName.split('/')[2];
+                const countryAngle = getCountryAngle(country);
+                const manufacturerAngle = getManufacturerAngle(country, manufacturer, countryAngle);
+                renderCountries(country);
+                manufacturersGroup.classList.remove('hidden');
+                renderManufacturers(country, countryAngle, manufacturer);
+                cylindersGroup.classList.remove('hidden');
+                renderCylinders(country, manufacturer, manufacturerAngle, selectedCylinder);
+            } else if (nextType === 'model') {
+                const country = nextName.split('/')[0];
+                const manufacturer = nextName.split('/')[1];
+                const cylinder = nextName.split('/')[2];
+                const selectedModel = nextName.split('/')[3];
+                const countryAngle = getCountryAngle(country);
+                const manufacturerAngle = getManufacturerAngle(country, manufacturer, countryAngle);
+                const cylinderAngle = getCylinderAngle(country, manufacturer, cylinder, manufacturerAngle);
+                renderCountries(country);
+                manufacturersGroup.classList.remove('hidden');
+                renderManufacturers(country, countryAngle, manufacturer);
+                cylindersGroup.classList.remove('hidden');
+                renderCylinders(country, manufacturer, manufacturerAngle, cylinder);
+                modelsGroup.classList.remove('hidden');
+                renderModels(country, manufacturer, cylinder, cylinderAngle, selectedModel);
+            }
+        }
+
+        // Color function for hierarchy levels
+        function getColor(type, name) {
+            const colors = {
+                country: { USA: 'lightblue', Japan: 'lightgreen', Germany: 'lightcoral', default: 'lightgray' },
+                manufacturer: { Caterpillar: 'lightyellow', Cummins: 'lightpink', Isuzu: 'lightcyan', Deutz: 'lightpurple', default: 'lightgray' },
+                cylinder: { '4': 'lightgray', '6': 'lightsteelblue', '8': 'lightgoldenrodyellow', default: 'lightgray' },
+                model: { default: 'lightblue' },
+                manifold: { default: 'lightgreen' }
+            };
+            return colors[type][name] || colors[type].default || 'lightgray';
+        }
+
+        // Add reset on MMdM click
+        document.getElementById('mmdmNode').addEventListener('click', () => {
+            console.log('Resetting to MMdM view');
+            resetView(true);
+            renderCountries();
+        });
+
+        // Handle mouseout (desktop only) with delay
+        if (!isMobile) {
+            let timeout;
+            svg.addEventListener('mouseout', (e) => {
+                if (!svg.contains(e.relatedTarget)) {
+                    console.log('Mouseout triggered');
+                    clearTimeout(timeout);
+                    timeout = setTimeout(() => {
+                        console.log('Mouseout reset executed');
+                        resetView(true);
+                        renderCountries();
+                    }, 300);
+                }
+            });
+            svg.addEventListener('mouseover', () => {
+                console.log('Mouseover SVG, clearing timeout');
+                clearTimeout(timeout);
+            });
+        }
+
+        // Initialize
+        console.log('Initializing visualization');
+        loadData();
+    </script>
+</body>
+</html>

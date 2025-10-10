@@ -3,19 +3,26 @@ import { CONFIG, getColor } from './config.js';
 import { getData, getAllManufacturers } from './data.js';
 
 // Render all manufacturer nodes
-export function renderAllManufacturers(manufacturersGroup, manufacturerAngles, activePath, isInActivePath, addHitListeners, adminMode = false) {
-  console.log('Rendering all manufacturers');
+export function renderAllManufacturers(manufacturersGroup, manufacturerAngles, activePath, isInActivePath, addHitListeners, manufacturersList = null, adminMode = false) {
+  console.log('Rendering all manufacturers', manufacturersList ? 'from list' : 'from data');
   const data = getData();
   if (!data) return;
   manufacturersGroup.innerHTML = '';
-  const allManufacturers = getAllManufacturers(data);
+  let allManufacturers = manufacturersList || getAllManufacturers(data);
   const angleSpread = CONFIG.MANUFACTURER_ANGLE_SPREAD;
   const centerAngle = CONFIG.CENTER_ANGLE;
   allManufacturers.forEach((item, index) => {
-    const manufacturer = item.name;
-    const country = item.country;
-    const manufacturerKey = `${country}/${manufacturer}`;
-    const keyParts = [country, manufacturer];
+    let manufacturer, country, manufacturerKey;
+    if (manufacturersList) {
+      manufacturer = item.label;
+      country = item.country;
+      manufacturerKey = item.key; // Full key including market
+    } else {
+      manufacturer = item.name;
+      country = item.country;
+      manufacturerKey = `${country}/${manufacturer}`;
+    }
+    const keyParts = manufacturerKey.split('/'); // [market, country, manufacturer] or [country, manufacturer]
     const isSelected = isInActivePath('manufacturer', keyParts);
     const baseRadius = CONFIG.RADII.manufacturers;
     const angle = centerAngle + (index - (allManufacturers.length - 1) / 2) * angleSpread;
@@ -76,20 +83,20 @@ export function renderAllManufacturers(manufacturersGroup, manufacturerAngles, a
 }
 
 // Render cylinder nodes
-export function renderCylinders(cylindersGroup, country, manufacturer, manufacturerAngle, activePath, cylinderAngles, isInActivePath, addHitListeners, adminMode = false) {
-  console.log('Rendering cylinders for', country, manufacturer);
+export function renderCylinders(cylindersGroup, market, country, manufacturer, manufacturerAngle, activePath, cylinderAngles, isInActivePath, addHitListeners, adminMode = false) {
+  console.log('Rendering cylinders for', market, country, manufacturer);
   const data = getData();
   if (!data) return;
   cylindersGroup.innerHTML = '';
-  const cylinders = data.MMdM.countries[country].manufacturers[manufacturer]?.cylinders;
+  const cylinders = data.MMdM.markets[market]?.countries[country]?.manufacturers[manufacturer]?.cylinders;
   if (!cylinders) {
-    console.error(`No cylinders found for ${manufacturer} in ${country}`);
+    console.error(`No cylinders found for ${manufacturer} in ${country}, ${market}`);
     return;
   }
   const cylinderKeys = Object.keys(cylinders).sort((a, b) => parseInt(a) - parseInt(b));
   const angleSpread = cylinderKeys.length > 1 ? CONFIG.CYLINDER_ANGLE_SPREAD : 0;
   cylinderKeys.forEach((cylinder, index) => {
-    const keyParts = [country, manufacturer, cylinder];
+    const keyParts = [market, country, manufacturer, cylinder];
     const isSelected = isInActivePath('cylinder', keyParts);
     const baseRadius = CONFIG.RADII.cylinders;
     const angle = manufacturerAngle + (index - (cylinderKeys.length - 1) / 2) * angleSpread;
@@ -103,7 +110,7 @@ export function renderCylinders(cylindersGroup, country, manufacturer, manufactu
     if (Math.cos(angle) < 0) {
       rotation += 180;
     }
-    const cylinderKey = `${country}/${manufacturer}/${cylinder}`;
+    const cylinderKey = `${market}/${country}/${manufacturer}/${cylinder}`;
     if (cylinderAngles[cylinderKey] === undefined) {
       cylinderAngles[cylinderKey] = angle;
     }
@@ -155,23 +162,23 @@ export function renderCylinders(cylindersGroup, country, manufacturer, manufactu
 }
 
 // Render model nodes
-export function renderModels(modelsGroup, country, manufacturer, cylinder, cylinderAngle, activePath, modelAngles, isInActivePath, addHitListeners, adminMode = false) {
-  console.log('Rendering models for', country, manufacturer, cylinder);
+export function renderModels(modelsGroup, market, country, manufacturer, cylinder, cylinderAngle, activePath, modelAngles, isInActivePath, addHitListeners, adminMode = false) {
+  console.log('Rendering models for', market, country, manufacturer, cylinder);
   const data = getData();
   if (!data) return;
   modelsGroup.innerHTML = '';
-  const models = data.MMdM.countries[country].manufacturers[manufacturer].cylinders[cylinder];
+  const models = data.MMdM.markets[market]?.countries[country]?.manufacturers[manufacturer]?.cylinders[cylinder];
   if (!models) {
-    console.error(`No models found for ${cylinder} in ${manufacturer}, ${country}`);
+    console.error(`No models found for ${cylinder} in ${manufacturer}, ${country}, ${market}`);
     return;
   }
   const angleSpread = models.length > 1 ? CONFIG.MODEL_ANGLE_SPREAD : 0;
   models.forEach((model, index) => {
-    const modelName = model.manufacturer_engine_model;
-    const keyParts = [country, manufacturer, cylinder, modelName];
+    const modelName = model.engine_model;
+    const keyParts = [market, country, manufacturer, cylinder, modelName];
     const isSelected = isInActivePath('model', keyParts);
     const baseRadius = CONFIG.RADII.models;
-    const modelKey = `${country}/${manufacturer}/${cylinder}/${modelName}`;
+    const modelKey = `${market}/${country}/${manufacturer}/${cylinder}/${modelName}`;
     let angle;
     if (modelAngles[modelKey] !== undefined) {
       angle = modelAngles[modelKey];
@@ -248,16 +255,19 @@ export function renderPathLines(pathLinesGroup, activePath, manufacturerAngles, 
 
   let prevX, prevY;
 
-  if (activePath.length >= 2) {
-    const manufacturerKey = `${activePath[0]}/${activePath[1]}`;
-    const manAngle = getManufacturerAngle(activePath[0], activePath[1]);
+  if (activePath.length >= 3) { // Now min 3 for manufacturer: market/country/manuf
+    const manufacturerKey = `${activePath[0]}/${activePath[1]}/${activePath[2]}`;
+    const manAngle = getManufacturerAngle(activePath[0], activePath[1], activePath[2]);
     const manRadius = CONFIG.RADII.manufacturers;
     prevX = manRadius * Math.cos(manAngle);
     prevY = manRadius * Math.sin(manAngle);
+  } else {
+    return; // No path yet
   }
 
-  if (activePath.length >= 3) {
-    const cylinderAngle = cylinderAngles[`${activePath[0]}/${activePath[1]}/${activePath[2]}`] || getCylinderAngle(activePath[0], activePath[1], activePath[2], getManufacturerAngle(activePath[0], activePath[1]), data);
+  if (activePath.length >= 4) {
+    const cylinderKey = `${activePath[0]}/${activePath[1]}/${activePath[2]}/${activePath[3]}`;
+    const cylinderAngle = cylinderAngles[cylinderKey] || getCylinderAngle(activePath[0], activePath[1], activePath[2], activePath[3], getManufacturerAngle(activePath[0], activePath[1], activePath[2]), data);
     const cylRadius = CONFIG.RADII.cylinders;
     const cylX = cylRadius * Math.cos(cylinderAngle);
     const cylY = cylRadius * Math.sin(cylinderAngle);
@@ -273,10 +283,10 @@ export function renderPathLines(pathLinesGroup, activePath, manufacturerAngles, 
     prevY = cylY;
   }
 
-  if (activePath.length >= 4) {
-    const modelKey = `${activePath[0]}/${activePath[1]}/${activePath[2]}/${activePath[3]}`;
-    const cylinderAngle = cylinderAngles[`${activePath[0]}/${activePath[1]}/${activePath[2]}`] || getCylinderAngle(activePath[0], activePath[1], activePath[2], getManufacturerAngle(activePath[0], activePath[1]), data);
-    const modelAngle = modelAngles[modelKey] || getModelAngle(activePath[0], activePath[1], activePath[2], activePath[3], cylinderAngle, data);
+  if (activePath.length >= 5) {
+    const modelKey = `${activePath[0]}/${activePath[1]}/${activePath[2]}/${activePath[3]}/${activePath[4]}`;
+    const cylinderAngle = cylinderAngles[`${activePath[0]}/${activePath[1]}/${activePath[2]}/${activePath[3]}`] || getCylinderAngle(activePath[0], activePath[1], activePath[2], activePath[3], getManufacturerAngle(activePath[0], activePath[1], activePath[2]), data);
+    const modelAngle = modelAngles[modelKey] || getModelAngle(activePath[0], activePath[1], activePath[2], activePath[3], activePath[4], cylinderAngle, data);
     const modelRadius = CONFIG.RADII.models;
     const modelX = modelRadius * Math.cos(modelAngle);
     const modelY = modelRadius * Math.sin(modelAngle);
@@ -291,14 +301,16 @@ export function renderPathLines(pathLinesGroup, activePath, manufacturerAngles, 
   }
 
   // Fan lines
-  if (activePath.length === 2) {
-    const country = activePath[0];
-    const manufacturer = activePath[1];
-    const manAngle = getManufacturerAngle(country, manufacturer);
-    const cylinders = Object.keys(data.MMdM.countries[country].manufacturers[manufacturer].cylinders || {}).sort((a, b) => parseInt(a) - parseInt(b));
+  if (activePath.length === 3) { // Manufacturer selected
+    const market = activePath[0];
+    const country = activePath[1];
+    const manufacturer = activePath[2];
+    const manAngle = getManufacturerAngle(market, country, manufacturer);
+    const marketData = data.MMdM.markets[market];
+    const cylinders = Object.keys(marketData?.countries[country]?.manufacturers[manufacturer]?.cylinders || {}).sort((a, b) => parseInt(a) - parseInt(b));
     const cylRingRadius = CONFIG.RADII.cylinders;
     cylinders.forEach((cylinder) => {
-      const cylinderAngle = getCylinderAngle(country, manufacturer, cylinder, manAngle, data);
+      const cylinderAngle = getCylinderAngle(market, country, manufacturer, cylinder, manAngle, data);
       const cylX = cylRingRadius * Math.cos(cylinderAngle);
       const cylY = cylRingRadius * Math.sin(cylinderAngle);
       const line = document.createElementNS(CONFIG.NS, 'line');
@@ -310,16 +322,19 @@ export function renderPathLines(pathLinesGroup, activePath, manufacturerAngles, 
       line.setAttribute('stroke-width', '1');
       pathLinesGroup.appendChild(line);
     });
-  } else if (activePath.length === 3) {
-    const country = activePath[0];
-    const manufacturer = activePath[1];
-    const cylinder = activePath[2];
-    const cylAngle = cylinderAngles[`${country}/${manufacturer}/${cylinder}`] || getCylinderAngle(country, manufacturer, cylinder, getManufacturerAngle(country, manufacturer), data);
-    const modelsData = data.MMdM.countries[country].manufacturers[manufacturer].cylinders[cylinder];
+  } else if (activePath.length === 4) { // Cylinder selected
+    const market = activePath[0];
+    const country = activePath[1];
+    const manufacturer = activePath[2];
+    const cylinder = activePath[3];
+    const cylAngle = cylinderAngles[`${market}/${country}/${manufacturer}/${cylinder}`] || getCylinderAngle(market, country, manufacturer, cylinder, getManufacturerAngle(market, country, manufacturer), data);
+    const marketData = data.MMdM.markets[market];
+    const modelsData = marketData?.countries[country]?.manufacturers[manufacturer]?.cylinders[cylinder];
     if (modelsData && modelsData.length > 0) {
       const angleSpread = modelsData.length > 1 ? CONFIG.MODEL_ANGLE_SPREAD : 0;
       const modelRingRadius = CONFIG.RADII.models;
       modelsData.forEach((modelObj, index) => {
+        const modelName = modelObj.engine_model;
         const modelAngle = cylAngle + (index - (modelsData.length - 1) / 2) * angleSpread;
         const modelX = modelRingRadius * Math.cos(modelAngle);
         const modelY = modelRingRadius * Math.sin(modelAngle);
