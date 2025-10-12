@@ -183,6 +183,8 @@ def add_data(catalog, last_entered):
                 }
             },
             "photos": [],
+            "photo_count": 0,
+            "has_photos": False,
             "notes": "",
             "availability": "in_stock",
             "stock_level": 0,
@@ -237,6 +239,9 @@ def add_data(catalog, last_entered):
                     new_alt["photos"] = source_alt["photos"].copy()
                     new_alt["stock_level"] = source_alt["stock_level"]
                     new_alt["lead_time"] = source_alt["lead_time"]
+                    # Update photo metadata if inheriting
+                    new_alt["photo_count"] = source_alt.get("photo_count", len(source_alt["photos"]))
+                    new_alt["has_photos"] = source_alt.get("has_photos", bool(source_alt["photos"]))
                     print("Inherited successfully.")
                 else:
                     print("Source not found; proceeding with defaults.")
@@ -287,6 +292,8 @@ def add_data(catalog, last_entered):
             last_photo = photo_input
         
         new_alt["photos"] = photos
+        new_alt["photo_count"] = len(photos)
+        new_alt["has_photos"] = bool(photos)
         
         # Notes (universal)
         notes = input("Enter notes (optional): ").strip()

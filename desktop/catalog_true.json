@@ -1,0 +1,140 @@
+{
+    "MMdM": {
+        "markets": {
+            "Europe & Asia": {
+                "countries": {
+                    "Germany": {
+                        "manufacturers": {
+                            "AEG": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "MAN": {
+                                "year_founded": 1758,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "5": null,
+                                    "6": null,
+                                    "8": null,
+                                    "9": null,
+                                    "12": null,
+                                    "14": null
+                                }
+                            },
+                            "MTU": {
+                                "year_founded": 1909,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "8": null,
+                                    "12": null,
+                                    "16": null
+                                }
+                            }
+                        }
+                    },
+                    "Japan": {
+                        "manufacturers": {
+                            "Mitsubishi": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Niigata": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Yanmar": {
+                                "year_founded": 1912,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "2": null,
+                                    "3": null,
+                                    "4": null
+                                }
+                            }
+                        }
+                    },
+                    "Sweden": {
+                        "manufacturers": {
+                            "Volvo Penta": {
+                                "year_founded": 1907,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": null,
+                                    "6": null,
+                                    "8": null
+                                }
+                            }
+                        }
+                    },
+                    "Finland": {
+                        "manufacturers": {
+                            "Sisu": {
+                                "year_founded": 1931,
+                                "year_dissolved": 1994,
+                                "cylinders": {
+                                    "3": null,
+                                    "4": null,
+                                    "6": null
+                                }
+                            },
+                            "Wärtsilä": {
+                                "year_founded": 1834,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": null,
+                                    "6": null,
+                                    "8": null,
+                                    "9": null,
+                                    "12": null,
+                                    "16": null
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "North & South America": {
+                "countries": {
+                    "USA": {
+                        "manufacturers": {
+                            "Caterpillar": {
+                                "year_founded": 1925,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": null,
+                                    "6": null,
+                                    "8": null,
+                                    "12": null,
+                                    "16": null
+                                }
+                            },
+                            "Cummins": {
+                                "year_founded": 1919,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "6": null,
+                                    "8": null,
+                                    "12": null
+                                }
+                            },
+                            "Detroit Diesel": {
+                                "year_founded": 1938,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "6": null,
+                                    "8": null,
+                                    "12": null,
+                                    "16": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
