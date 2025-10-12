@@ -2,6 +2,8 @@ import json
 import os
 import readline
 import sys
+from datetime import date
+import uuid  # For generating unique IDs
 
 # Path to the JSON file
 JSON_FILE = "catalog.json"
@@ -18,6 +20,10 @@ def load_catalog():
 def save_catalog(catalog):
     with open(JSON_FILE, 'w') as f:
         json.dump(catalog, f, indent=4)
+
+# Generate a unique ID for alternatives
+def generate_alt_id():
+    return f"alt_{str(uuid.uuid4())[:8]}"
 
 # Completer function generator
 def completer(options):
@@ -41,6 +47,11 @@ def get_input(prompt, last_entered, key, completer_maker=None):
         readline.parse_and_bind('tab: complete')
     
     value = input(full_prompt).strip()
+    if completer_maker:
+        def dummy_complete(text, state):
+            return None
+        readline.set_completer(dummy_complete)
+    
     if not value and last_value:
         value = last_value
     last_entered[key] = value
@@ -124,7 +135,6 @@ def add_data(catalog, last_entered):
     if existing_engine:
         print(f"Engine model {engine_model} already exists. Adding to its alternatives.")
         manifold_alts = existing_engine["manifold_alternatives"]
-        # Update years if needed, but for simplicity, assume set once
     else:
         year_intro_str = get_input("Enter year introduced for engine (integer or blank for null)", last_entered, 'year_introduced')
         year_intro = int(year_intro_str) if year_intro_str else None
@@ -156,106 +166,159 @@ def add_data(catalog, last_entered):
             print("Invalid type.")
             continue
         
-        new_alt = {"type": alt_type}
+        new_alt = {
+            "id": generate_alt_id(),
+            "type": alt_type,
+            "price": 0,
+            "rebranded_from": "",
+            "rebranded_as": "",
+            "specifications": {
+                "material": "",
+                "weight": "",
+                "warranty": "",
+                "dimensions": {
+                    "height": "",
+                    "width": "",
+                    "length": ""
+                }
+            },
+            "photos": [],
+            "notes": "",
+            "availability": "in_stock",
+            "stock_level": 0,
+            "min_stock_threshold": None,
+            "lead_time": "",
+            "last_updated": date.today().isoformat()
+        }
         
+        # Type-specific basics
         if alt_type == 'oem':
             new_alt["brand"] = get_input("Enter brand (default: manufacturer)", last_entered, 'oem_brand')
             if not new_alt["brand"]:
                 new_alt["brand"] = manufacturer
-            new_alt["oem_manifold"] = get_input("Enter OEM manifold number", last_entered, 'oem_manifold')
-            price_str = get_input("Enter price (integer)", last_entered, 'oem_price')
-            new_alt["price"] = int(price_str) if price_str else 0
-            notes = input("Enter notes (optional): ").strip()
-            if notes:
-                new_alt["notes"] = notes
+            new_alt["part_number"] = get_input("Enter OEM manifold number", last_entered, 'oem_manifold')
         elif alt_type == 'mmdm':
             new_alt["brand"] = "MMdM"
             new_alt["part_number"] = get_input("Enter MMdM part number", last_entered, 'mmdm_part_number')
-            price_str = get_input("Enter price (integer)", last_entered, 'mmdm_price')
-            new_alt["price"] = int(price_str) if price_str else 0
-            # MMdM manifold details
-            description = get_input("Enter description", last_entered, 'description')
-            material = get_input("Enter material", last_entered, 'material')
-            weight = get_input("Enter weight (e.g., 25kg)", last_entered, 'weight')
-            warranty = get_input("Enter warranty (e.g., 2 years)", last_entered, 'warranty')
-            height = get_input("Enter height (e.g., 20cm)", last_entered, 'height')
-            width = get_input("Enter width (e.g., 30cm)", last_entered, 'width')
-            length = get_input("Enter length (e.g., 50cm)", last_entered, 'length')
-            # Photos
-            photos = []
-            last_photo = last_entered.get('photo', '')
-            while True:
-                photo_prompt = "Enter photo path (or leave blank to finish)"
-                if last_photo:
-                    photo_prompt += f" (default: '{last_photo}')"
-                photo = input(f"{photo_prompt}: ").strip()
-                if not photo:
-                    if photos:
-                        break
-                    else:
-                        photo = last_photo
-                        if not photo:
-                            break
-                photos.append(photo)
-                last_entered['photo'] = photo
-                last_photo = photo
-            new_alt["mmdm_manifold"] = {
-                "description": description,
-                "specifications": {
-                    "material": material,
-                    "weight": weight,
-                    "warranty": warranty,
-                    "dimensions": {
-                        "height": height,
-                        "width": width,
-                        "length": length
-                    }
-                },
-                "photos": photos
-            }
         elif alt_type == 'third_party':
             new_alt["brand"] = get_input("Enter third-party brand", last_entered, 'third_brand')
             new_alt["part_number"] = get_input("Enter part number", last_entered, 'third_part_number')
-            price_str = get_input("Enter price (integer)", last_entered, 'third_price')
-            new_alt["price"] = int(price_str) if price_str else 0
-            rebrand_options = ['none', 'mmdm_sells_third_party', 'third_party_rebrands_mmdm']
-            def rebrand_completer_maker():
-                return completer(rebrand_options)
-            rebrand_type = get_input("Enter rebrand type (none/mmdm_sells_third_party/third_party_rebrands_mmdm, tab to complete)", last_entered, 'rebrand_type', rebrand_completer_maker)
-            if rebrand_type not in rebrand_options:
-                rebrand_type = 'none'
-            new_alt["rebrand_type"] = rebrand_type
-            # Specs (always prompt, but note if rebrand)
-            if rebrand_type != 'none':
-                inherit = input(f"Auto-inherit specs from linked MMdM? (y/n): ").strip().lower()
-                if inherit == 'y':
-                    # For simplicity, assume user knows and skips prompts; in real, would need to select linked mmdm
-                    print("Specs inherited (prompts skipped).")
-                    new_alt["specifications"] = {}  # Placeholder; link in UI
-                else:
-                    # Fall through to prompts
-                    pass
-            material = get_input("Enter material", last_entered, 'third_material')
-            weight = get_input("Enter weight (e.g., 25kg)", last_entered, 'third_weight')
-            warranty = get_input("Enter warranty (e.g., 2 years)", last_entered, 'third_warranty')
-            height = get_input("Enter height (e.g., 20cm)", last_entered, 'third_height')
-            width = get_input("Enter width (e.g., 30cm)", last_entered, 'third_width')
-            length = get_input("Enter length (e.g., 50cm)", last_entered, 'third_length')
-            new_alt["specifications"] = {
-                "material": material,
-                "weight": weight,
-                "warranty": warranty,
-                "dimensions": {
-                    "height": height,
-                    "width": width,
-                    "length": length
-                }
-            }
-            notes = input("Enter notes (optional): ").strip()
-            if notes:
-                new_alt["notes"] = notes
         
-        # Check cap: e.g., no more than 6 third_party total (simplified)
+        # Price (universal)
+        price_str = get_input("Enter price (integer)", last_entered, f'{alt_type}_price')
+        new_alt["price"] = int(price_str) if price_str else 0
+        
+        # Rebrand cross-references
+        rebrand_from = get_input("Rebranded from (alt ID or part number, or blank)", last_entered, 'rebrand_from')
+        new_alt["rebranded_from"] = rebrand_from if rebrand_from else ""
+        
+        rebrand_as = get_input("Rebranded as (alt ID or part number, or blank)", last_entered, 'rebrand_as')
+        new_alt["rebranded_as"] = rebrand_as if rebrand_as else ""
+        
+        # Inherit if rebrand
+        if new_alt["rebranded_from"]:
+            inherit = input("Inherit specs/photos/stock/lead_time from source? (y/n): ").strip().lower()
+            if inherit == 'y':
+                # Simplified: assume user provides source alt_idx for copy; in full, search by ID/part
+                source_idx_str = input("Enter index of source alt in list (or ID/part to search): ").strip()
+                source_alt = None
+                if source_idx_str.isdigit():
+                    source_idx = int(source_idx_str)
+                    if 0 <= source_idx < len(manifold_alts):
+                        source_alt = manifold_alts[source_idx]
+                else:
+                    # Search by ID or part
+                    for alt in manifold_alts:
+                        if alt["id"] == source_idx_str or alt["part_number"] == source_idx_str:
+                            source_alt = alt
+                            break
+                if source_alt:
+                    new_alt["specifications"] = source_alt["specifications"].copy()
+                    new_alt["photos"] = source_alt["photos"].copy()
+                    new_alt["stock_level"] = source_alt["stock_level"]
+                    new_alt["lead_time"] = source_alt["lead_time"]
+                    print("Inherited successfully.")
+                else:
+                    print("Source not found; proceeding with defaults.")
+        
+        # Specifications (universal)
+        material = get_input("Enter material", last_entered, f'{alt_type}_material')
+        new_alt["specifications"]["material"] = material
+        
+        weight = get_input("Enter weight (e.g., 25kg)", last_entered, f'{alt_type}_weight')
+        new_alt["specifications"]["weight"] = weight
+        
+        warranty = get_input("Enter warranty (e.g., 2 years)", last_entered, f'{alt_type}_warranty')
+        new_alt["specifications"]["warranty"] = warranty
+        
+        height = get_input("Enter height (e.g., 20cm)", last_entered, f'{alt_type}_height')
+        new_alt["specifications"]["dimensions"]["height"] = height
+        
+        width = get_input("Enter width (e.g., 30cm)", last_entered, f'{alt_type}_width')
+        new_alt["specifications"]["dimensions"]["width"] = width
+        
+        length = get_input("Enter length (e.g., 50cm)", last_entered, f'{alt_type}_length')
+        new_alt["specifications"]["dimensions"]["length"] = length
+        
+        # Photos (universal, loop with smart prepend)
+        def dummy_complete(text, state):
+            return None
+        readline.set_completer(dummy_complete)
+        photos = []
+        last_photo = last_entered.get('photo', '')
+        while True:
+            current_dir = os.path.dirname(last_photo) if last_photo else ''
+            dir_hint = f" (current dir: {current_dir})" if current_dir else ""
+            photo_prompt = f"Enter photo path{dir_hint} (or leave blank to finish)"
+            photo_input = input(f"{photo_prompt}: ").strip()
+            if not photo_input:
+                if photos:
+                    break
+                else:
+                    if last_photo:
+                        photos.append(last_photo)
+                        last_entered['photo'] = last_photo
+                    break
+            # If input doesn't start with / or . and there's a current_dir, prepend it
+            if photo_input and not (photo_input.startswith('/') or photo_input.startswith('.')) and current_dir:
+                photo_input = os.path.join(current_dir, photo_input)
+            photos.append(photo_input)
+            last_entered['photo'] = photo_input
+            last_photo = photo_input
+        
+        new_alt["photos"] = photos
+        
+        # Notes (universal)
+        notes = input("Enter notes (optional): ").strip()
+        if notes:
+            new_alt["notes"] = notes
+        
+        # Availability/Stock/Threshold (universal)
+        availability_options = ['in_stock', 'low_stock', 'out_of_stock', 'pre_order', 'discontinued']
+        def avail_completer_maker():
+            return completer(availability_options)
+        new_alt["availability"] = get_input("Enter availability (tab to complete)", last_entered, 'availability', avail_completer_maker)
+        
+        stock_str = get_input("Enter stock level (integer, 0 for none)", last_entered, 'stock_level')
+        new_alt["stock_level"] = int(stock_str) if stock_str else 0
+        
+        if new_alt["stock_level"] > 0:
+            threshold_str = get_input("Enter min stock threshold (optional integer)", last_entered, 'min_stock_threshold')
+            new_alt["min_stock_threshold"] = int(threshold_str) if threshold_str else None
+        else:
+            new_alt["min_stock_threshold"] = None
+        
+        # Lead time (universal)
+        new_alt["lead_time"] = get_input("Enter lead time (e.g., '1-3 days')", last_entered, 'lead_time')
+        if not new_alt["lead_time"]:
+            if alt_type == 'oem':
+                new_alt["lead_time"] = "Immediate"
+            elif alt_type == 'mmdm':
+                new_alt["lead_time"] = "1 week"
+            else:
+                new_alt["lead_time"] = "2 weeks"
+        
+        # Check cap for third_party
         third_count = sum(1 for alt in manifold_alts if alt["type"] == "third_party")
         if alt_type == "third_party" and third_count >= 6:
             print("Max 6 third-party alternatives reached. Skipping add.")
@@ -265,7 +328,7 @@ def add_data(catalog, last_entered):
     
     print("Data added successfully.")
 
-# Main interactive function to delete data
+# Main interactive function to delete data (updated minimally for new structure)
 def delete_data(catalog):
     markets = catalog["MMdM"]["markets"]
     
@@ -280,6 +343,9 @@ def delete_data(catalog):
     readline.set_completer(actual_completer)
     readline.parse_and_bind('tab: complete')
     market = input("Select market to delete from (tab to complete): ").strip()
+    def dummy_complete(text, state):
+        return None
+    readline.set_completer(dummy_complete)
     if market not in markets:
         print("Market not found.")
         return
@@ -313,6 +379,7 @@ def delete_data(catalog):
     readline.set_completer(actual_completer)
     readline.parse_and_bind('tab: complete')
     country = input("Select country (tab to complete): ").strip()
+    readline.set_completer(dummy_complete)
     if country not in countries:
         print("Country not found.")
         return
@@ -346,6 +413,7 @@ def delete_data(catalog):
     readline.set_completer(actual_completer)
     readline.parse_and_bind('tab: complete')
     manufacturer = input("Select manufacturer (tab to complete): ").strip()
+    readline.set_completer(dummy_complete)
     if manufacturer not in manufacturers:
         print("Manufacturer not found.")
         return
@@ -379,6 +447,7 @@ def delete_data(catalog):
     readline.set_completer(actual_completer)
     readline.parse_and_bind('tab: complete')
     cylinder = input("Select cylinder count (tab to complete): ").strip()
+    readline.set_completer(dummy_complete)
     if cylinder not in cylinders:
         print("Cylinder count not found.")
         return
@@ -413,6 +482,7 @@ def delete_data(catalog):
     readline.set_completer(actual_completer)
     readline.parse_and_bind('tab: complete')
     engine_model = input("Select engine model (tab to complete): ").strip()
+    readline.set_completer(dummy_complete)
     engine_idx = next((i for i, eng in enumerate(engine_list) if eng["engine_model"] == engine_model), None)
     if engine_idx is None:
         print("Engine model not found.")
@@ -441,10 +511,12 @@ def delete_data(catalog):
         return
     
     # Step 6: Select Manifold alternative
-    # List them briefly
+    # List them briefly (updated for new fields, with .get() for legacy compatibility)
     print("Available alternatives:")
     for i, alt in enumerate(manifold_alts):
-        print(f"{i}: {alt['type']} - {alt.get('brand', 'N/A')} {alt.get('oem_manifold', alt.get('part_number', 'N/A'))}")
+        avail = alt.get('availability', 'unknown')
+        stock = alt.get('stock_level', 0)
+        print(f"{i}: {alt['type']} - {alt.get('brand', 'N/A')} {alt.get('part_number', 'N/A')} (Avail: {avail}, Stock: {stock})")
     
     alt_str = input("Select by index (e.g., 0) or describe (type/brand): ").strip()
     try:
@@ -481,6 +553,7 @@ def delete_data(catalog):
 def main():
     catalog = load_catalog()
     last_entered = {}
+    print("Note: This updated script uses a unified structure for alternatives. Existing data may need manual migration.")
     while True:
         print("\nOptions:")
         print("1. Add data")

@@ -1,0 +1,62 @@
+{
+    "MMdM": {
+        "markets": {
+            "Europe & Asia": {
+                "countries": {
+                    "Finland": {
+                        "manufacturers": {
+                            "Sisu": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "8": [
+                                        {
+                                            "engine_model": "v8",
+                                            "year_introduced": null,
+                                            "year_discontinued": null,
+                                            "manifold_alternatives": [
+                                                {
+                                                    "id": "alt_e3c55b1a",
+                                                    "type": "oem",
+                                                    "price": 0,
+                                                    "rebranded_from": "",
+                                                    "rebranded_as": "",
+                                                    "specifications": {
+                                                        "material": "",
+                                                        "weight": "",
+                                                        "warranty": "",
+                                                        "dimensions": {
+                                                            "height": "",
+                                                            "width": "",
+                                                            "length": ""
+                                                        }
+                                                    },
+                                                    "photos": [
+                                                        "/photo/w/",
+                                                        "/photo/w/ee.jpg",
+                                                        "/photo/w/eeii.jpg"
+                                                    ],
+                                                    "notes": "",
+                                                    "availability": "",
+                                                    "stock_level": 0,
+                                                    "min_stock_threshold": null,
+                                                    "lead_time": "Immediate",
+                                                    "last_updated": "2025-10-10",
+                                                    "brand": "Sisu",
+                                                    "part_number": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "North & South America": {
+                "countries": {}
+            }
+        }
+    }
+}
