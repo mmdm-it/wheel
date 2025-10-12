@@ -133,13 +133,9 @@ function showModelInfo(modelFullKey) {
     const market = parts[0], country = parts[1], manuf = parts[2], cyl = parts[3], model = parts[4];
     const engineObj = data.MMdM.markets[market].countries[country].manufacturers[manuf].cylinders[cyl].find(m => m.engine_model === model);
     if (!engineObj) return;
-
-    const mmdmAlt = engineObj.manifold_alternatives.find(alt => alt.type === "mmdm");
-    if (!mmdmAlt) return;
-
-    const mmdmModel = mmdmAlt.part_number;
-    const price = mmdmAlt.price;
-    const description = mmdmAlt.description;
+    // For now, since manifold_alternatives is WIP, use engine_model as placeholder
+    const mmdmModel = engineObj.engine_model;
+    const price = 1200; // Placeholder
 
     // Remove any existing foreignObject
     const existingFo = centralGroup.querySelector('foreignObject');
@@ -202,7 +198,8 @@ function showModelInfo(modelFullKey) {
             const descDiv = document.createElement('div');
             descDiv.id = 'desc';
             descDiv.style.cssText = 'opacity: 0; transition: opacity 0.3s ease-in-out;';
-            descDiv.innerHTML = `MMdM: ${mmdmModel}<br>${description}`;
+            descDiv.innerHTML = `MMdM: ${mmdmModel}
+High-performance replacement.`;
             containerDiv.appendChild(descDiv);
 
             // Price div

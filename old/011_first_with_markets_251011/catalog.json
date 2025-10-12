@@ -18,8 +18,7 @@
                                                 {
                                                     "id": "alt_da343dbd",
                                                     "type": "mmdm",
-                                                    "price": 800,
-                                                    "description": "Our best replacement manifold of carbon steel",
+                                                    "price": 1200,
                                                     "rebranded_from": "",
                                                     "rebranded_as": "",
                                                     "specifications": {
@@ -46,49 +45,6 @@
                                                     "last_updated": "2025-10-12",
                                                     "brand": "MMdM",
                                                     "part_number": "54397a"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "engine_model": "MR504LW5",
-                                            "year_introduced": null,
-                                            "year_discontinued": null,
-                                            "manifold_alternatives": []
-                                        }
-                                    ],
-                                    "6": [
-                                        {
-                                            "engine_model": "MR506LW2",
-                                            "year_introduced": null,
-                                            "year_discontinued": null,
-                                            "manifold_alternatives": [
-                                                {
-                                                    "id": "alt_7d0f8321",
-                                                    "type": "mmdm",
-                                                    "price": 12,
-                                                    "rebranded_from": "",
-                                                    "rebranded_as": "",
-                                                    "specifications": {
-                                                        "material": "",
-                                                        "weight": "",
-                                                        "warranty": "",
-                                                        "dimensions": {
-                                                            "height": "",
-                                                            "width": "",
-                                                            "length": ""
-                                                        }
-                                                    },
-                                                    "photos": [],
-                                                    "photo_count": 0,
-                                                    "has_photos": false,
-                                                    "notes": "",
-                                                    "availability": "",
-                                                    "stock_level": 0,
-                                                    "min_stock_threshold": null,
-                                                    "lead_time": "1 week",
-                                                    "last_updated": "2025-10-12",
-                                                    "brand": "MMdM",
-                                                    "part_number": "eu"
                                                 }
                                             ]
                                         }

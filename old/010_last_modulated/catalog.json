@@ -1,0 +1,127 @@
+{
+    "MMdM": {
+        "markets": {
+            "Europe & Asia": {
+                "countries": {
+                    "Italy": {
+                        "manufacturers": {
+                            "Ferrari": {
+                                "year_founded": 1934,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "12": [
+                                        {
+                                            "engine_model": "x12m",
+                                            "year_introduced": 1972,
+                                            "year_discontinued": null,
+                                            "manifold_alternatives": []
+                                        }
+                                    ]
+                                }
+                            },
+                            "Isotta Fraschini": {
+                                "year_founded": 1904,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "8": [
+                                        {
+                                            "engine_model": "2408",
+                                            "year_introduced": 1972,
+                                            "year_discontinued": null,
+                                            "manifold_alternatives": [
+                                                {
+                                                    "type": "oem",
+                                                    "brand": "Isotta Fraschini",
+                                                    "oem_manifold": "2408man",
+                                                    "price": 2
+                                                },
+                                                {
+                                                    "type": "mmdm",
+                                                    "brand": "MMdM",
+                                                    "part_number": "",
+                                                    "price": 0,
+                                                    "mmdm_manifold": {
+                                                        "description": "",
+                                                        "specifications": {
+                                                            "material": "",
+                                                            "weight": "",
+                                                            "warranty": "",
+                                                            "dimensions": {
+                                                                "height": "",
+                                                                "width": "",
+                                                                "length": ""
+                                                            }
+                                                        },
+                                                        "photos": []
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "North & South America": {
+                "countries": {
+                    "USA": {
+                        "manufacturers": {
+                            "Ford": {
+                                "year_founded": 1903,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "8": [
+                                        {
+                                            "engine_model": "360 FE",
+                                            "year_introduced": 1958,
+                                            "year_discontinued": 1978,
+                                            "manifold_alternatives": []
+                                        },
+                                        {
+                                            "engine_model": "390 FE",
+                                            "year_introduced": 1958,
+                                            "year_discontinued": 1978,
+                                            "manifold_alternatives": []
+                                        },
+                                        {
+                                            "engine_model": "221 Flathead",
+                                            "year_introduced": 1932,
+                                            "year_discontinued": 1936,
+                                            "manifold_alternatives": []
+                                        },
+                                        {
+                                            "engine_model": "239 Flathead",
+                                            "year_introduced": 1939,
+                                            "year_discontinued": 1953,
+                                            "manifold_alternatives": []
+                                        },
+                                        {
+                                            "engine_model": "136 Flathead",
+                                            "year_introduced": 1937,
+                                            "year_discontinued": 1941,
+                                            "manifold_alternatives": []
+                                        },
+                                        {
+                                            "engine_model": "255 Flathead",
+                                            "year_introduced": 1948,
+                                            "year_discontinued": 1953,
+                                            "manifold_alternatives": []
+                                        },
+                                        {
+                                            "engine_model": "337 Flathead",
+                                            "year_introduced": 1949,
+                                            "year_discontinued": 1951,
+                                            "manifold_alternatives": []
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
