@@ -170,6 +170,7 @@ def add_data(catalog, last_entered):
             "id": generate_alt_id(),
             "type": alt_type,
             "price": 0,
+            "description": "",
             "rebranded_from": "",
             "rebranded_as": "",
             "specifications": {
@@ -209,6 +210,13 @@ def add_data(catalog, last_entered):
         # Price (universal)
         price_str = get_input("Enter price (integer)", last_entered, f'{alt_type}_price')
         new_alt["price"] = int(price_str) if price_str else 0
+        
+        # Description (universal, optional)
+        description = get_input("Enter description (optional)", last_entered, f'{alt_type}_description')
+        if description:
+            new_alt["description"] = description
+        else:
+            del new_alt["description"]  # Omit if empty
         
         # Rebrand cross-references
         rebrand_from = get_input("Rebranded from (alt ID or part number, or blank)", last_entered, 'rebrand_from')
