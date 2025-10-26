@@ -7,11 +7,132 @@
                         "manufacturers": {
                             "VM Motori": {
                                 "cylinders": {
-                                    "4":[
+                                    "4": [
                                         {
                                             "engine_model": "3054",
                                             "year_introduced": null,
                                             "year_discontinued": null
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "Germany": {
+                        "manufacturers": {
+                            "BMW": {
+                                "year_founded": "1933",
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": [
+                                        {
+                                            "engine_model": "bmw4",
+                                            "year_discontinued": null
+                                        },
+                                        {
+                                            "engine_model": "bmw4a",
+                                            "year_discontinued": null
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "UK": {
+                        "manufacturers": {
+                            "Rolls Royce": {
+                                "year_founded": "1010",
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "16": [
+                                        {
+                                            "engine_model": "rr16",
+                                            "year_discontinued": null
+                                        },
+                                        {
+                                            "engine_model": "rr16a",
+                                            "year_discontinued": null
+                                        },
+                                        {
+                                            "engine_model": "rr16b",
+                                            "year_discontinued": null
+                                        }
+                                    ],
+                                    "12": [
+                                        {
+                                            "engine_model": "rr12a",
+                                            "year_discontinued": null
+                                        },
+                                        {
+                                            "engine_model": "rr12b",
+                                            "year_discontinued": null
+                                        },
+                                        {
+                                            "engine_model": "rr12c",
+                                            "year_discontinued": null
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "Spain": {
+                        "manufacturers": {
+                            "Guascor": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "6": [
+                                        {
+                                            "engine_model": "ga6",
+                                            "year_introduced": null,
+                                            "year_discontinued": null,
+                                            "media": {
+                                                "photos": [],
+                                                "videos": []
+                                            },
+                                            "manifold_alternatives": [
+                                                {
+                                                    "id": "alt_140ae70f",
+                                                    "type": "mmdm",
+                                                    "price": 300.0,
+                                                    "brand": "MMDM",
+                                                    "part_number": "aeoeu",
+                                                    "description": "good",
+                                                    "rebranded_from": "",
+                                                    "rebranded_as": "",
+                                                    "specifications": {
+                                                        "material": "Carbon",
+                                                        "weight": "45",
+                                                        "warranty": "3",
+                                                        "dimensions": {
+                                                            "height": "",
+                                                            "width": "",
+                                                            "length": ""
+                                                        }
+                                                    },
+                                                    "notes": "",
+                                                    "availability": "in_stock",
+                                                    "stock_level": 4,
+                                                    "min_stock_threshold": null,
+                                                    "lead_time": "1",
+                                                    "last_updated": "2025-10-26",
+                                                    "media": {
+                                                        "photos": [
+                                                            {
+                                                                "path": "/home/eueu.jpg",
+                                                                "caption": "",
+                                                                "date_taken": "2025-10-26",
+                                                                "tags": [
+                                                                    ""
+                                                                ],
+                                                                "photographer": ""
+                                                            }
+                                                        ],
+                                                        "videos": []
+                                                    }
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -218,6 +339,133 @@
                                             "year_discontinued": null
                                         }
                                     ]
+                                }
+                            },
+                            "Lockwood-Ash": {
+                                "year_founded": "1915",
+                                "year_dissolved": "1926",
+                                "cylinders": {
+                                    "1": [
+                                        {
+                                            "engine_model": "la1",
+                                            "year_discontinued": "1926"
+                                        }
+                                    ],
+                                    "2": [
+                                        {
+                                            "engine_model": "la2",
+                                            "year_discontinued": "1926"
+                                        }
+                                    ]
+                                }
+                            },
+                            "GM": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "8": [
+                                        {
+                                            "engine_model": "gm88",
+                                            "year_introduced": null,
+                                            "year_discontinued": null,
+                                            "media": {
+                                                "photos": [],
+                                                "videos": []
+                                            },
+                                            "manifold_alternatives": [
+                                                {
+                                                    "id": "alt_4d90f96b",
+                                                    "type": "oem",
+                                                    "price": 33.0,
+                                                    "brand": "gm",
+                                                    "part_number": "aeu",
+                                                    "description": "great",
+                                                    "rebranded_from": "",
+                                                    "rebranded_as": "",
+                                                    "specifications": {
+                                                        "material": "carbon",
+                                                        "weight": "3",
+                                                        "warranty": "4",
+                                                        "dimensions": {
+                                                            "height": "5",
+                                                            "width": "6",
+                                                            "length": "7"
+                                                        }
+                                                    },
+                                                    "notes": "ll",
+                                                    "availability": "in_stock",
+                                                    "stock_level": 3,
+                                                    "min_stock_threshold": null,
+                                                    "lead_time": "3",
+                                                    "last_updated": "2025-10-26",
+                                                    "media": {
+                                                        "photos": [],
+                                                        "videos": []
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            "Cummins": {
+                                "year_founded": 188,
+                                "year_dissolved": 11,
+                                "cylinders": {
+                                    "6": [
+                                        {
+                                            "engine_model": "cmo6",
+                                            "year_introduced": null,
+                                            "year_discontinued": null,
+                                            "media": {
+                                                "photos": [],
+                                                "videos": []
+                                            },
+                                            "manifold_alternatives": [
+                                                {
+                                                    "id": "alt_f39fccd0",
+                                                    "type": "mmdm",
+                                                    "price": 345.0,
+                                                    "brand": "mmdm",
+                                                    "part_number": "aoeu",
+                                                    "description": "aeoiai",
+                                                    "rebranded_from": "",
+                                                    "rebranded_as": "",
+                                                    "specifications": {
+                                                        "material": "steel",
+                                                        "weight": "4",
+                                                        "warranty": "5",
+                                                        "dimensions": {
+                                                            "height": "6",
+                                                            "width": "7",
+                                                            "length": "8"
+                                                        }
+                                                    },
+                                                    "notes": "aei",
+                                                    "availability": "in_stock",
+                                                    "stock_level": 5,
+                                                    "min_stock_threshold": "3",
+                                                    "lead_time": "2",
+                                                    "last_updated": "2025-10-26",
+                                                    "media": {
+                                                        "photos": [],
+                                                        "videos": []
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "Canada": {
+                        "manufacturers": {
+                            "cc": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "e4": []
                                 }
                             }
                         }

@@ -136,11 +136,11 @@ function showModelInfo(modelFullKey) {
     // Target values
     let endRadius = 150;
     let endX = -120;
-    let endY = -200;
+    let endY = -150;
     let endW = 240;
     let endH = 75; // Approximate 240 * (126/400) ≈ 75.6
 
-    let duration = 2000; // ms, slowed down for debugging
+    let duration = 500; // ms, slowed down for debugging
     let startTime = performance.now();
 
     console.log('Animation start');
