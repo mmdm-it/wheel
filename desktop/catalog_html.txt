@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMdM Catalog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <svg width="1000" height="1000" id="catalogSvg">
+        <g id="mainGroup" transform="translate(500, 325)">
+            <!-- Central Group -->
+            <g id="centralGroup">
+                <circle class="node" cx="0" cy="0" r="40" fill="#362e6a" id="mmdmNode" />
+                <image xlink:href="./assets/catalog_logo.png" x="-70" y="-32" width="140" height="44" />
+            </g>
+
+        <!-- Markets Group (initially visible) -->
+        <g id="markets"></g>
+
+    <!-- Path Lines Group -->
+    <g id="pathLines"></g>
+
+    <!-- Manufacturer Ring (hidden initially) -->
+    <g id="manufacturers" class="hidden"></g>
+
+    <!-- Cylinders Ring (Hidden initially) -->
+    <g id="cylinders" class="hidden"></g>
+
+    <!-- Models Ring (Hidden initially) -->
+    <g id="models" class="hidden"></g>
+</g></svg>
+<script src="catalog.js"></script>
+</body></html>

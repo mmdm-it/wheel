@@ -1,62 +1,31 @@
 {
     "MMdM": {
         "markets": {
-            "Europe & Asia": {
+            "americhe": {
                 "countries": {
-                    "Italy": {
+                    "USA": {
                         "manufacturers": {
-                            "VM Motori": {
-                                "year_founded": 1947,
+                            "Allis Chalmers": {
+                                "year_founded": null,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "4": [
+                                    "6": [
                                         {
-                                            "engine_model": "MR504LW3",
+                                            "engine_model": "25000",
                                             "year_introduced": null,
                                             "year_discontinued": null,
                                             "manifold_alternatives": [
                                                 {
-                                                    "id": "alt_da343dbd",
-                                                    "type": "mmdm",
-                                                    "price": 800,
-                                                    "description": "Our best replacement manifold of carbon steel",
+                                                    "id": "alt_f0404e2c",
+                                                    "type": "third_party",
+                                                    "price": 500,
+                                                    "description": "Water Cooled Exhaust Manifold",
                                                     "rebranded_from": "",
                                                     "rebranded_as": "",
                                                     "specifications": {
                                                         "material": "Carbon Steel",
-                                                        "weight": "18kg",
-                                                        "warranty": "2",
-                                                        "dimensions": {
-                                                            "height": "20cm",
-                                                            "width": "30cm",
-                                                            "length": "50cm"
-                                                        }
-                                                    },
-                                                    "photos": [
-                                                        "/photos/vm_motori/54397a/54397a_front.png",
-                                                        "/photos/vm_motori/54397a/54397a_back.png"
-                                                    ],
-                                                    "photo_count": 2,
-                                                    "has_photos": true,
-                                                    "notes": "Includes gasket",
-                                                    "availability": "in_stock",
-                                                    "stock_level": 8,
-                                                    "min_stock_threshold": null,
-                                                    "lead_time": "2 days",
-                                                    "last_updated": "2025-10-12",
-                                                    "brand": "MMdM",
-                                                    "part_number": "54397a"
-                                                },
-                                                {
-                                                    "id": "alt_43319bde",
-                                                    "type": "oem",
-                                                    "price": 900,
-                                                    "rebranded_from": "",
-                                                    "rebranded_as": "",
-                                                    "specifications": {
-                                                        "material": "Carbon Steel",
-                                                        "weight": "",
-                                                        "warranty": "",
+                                                        "weight": "25",
+                                                        "warranty": "1",
                                                         "dimensions": {
                                                             "height": "",
                                                             "width": "",
@@ -70,15 +39,16 @@
                                                     "availability": "",
                                                     "stock_level": 0,
                                                     "min_stock_threshold": null,
-                                                    "lead_time": "Immediate",
-                                                    "last_updated": "2025-10-12",
-                                                    "brand": "VM Motori",
-                                                    "part_number": "23"
+                                                    "lead_time": "2 weeks",
+                                                    "last_updated": "2025-10-13",
+                                                    "brand": "MESA",
+                                                    "part_number": "811"
                                                 },
                                                 {
-                                                    "id": "alt_b695c3f4",
-                                                    "type": "third_party",
-                                                    "price": 1500,
+                                                    "id": "alt_787a81fd",
+                                                    "type": "oem",
+                                                    "price": 45,
+                                                    "description": "factory",
                                                     "rebranded_from": "",
                                                     "rebranded_as": "",
                                                     "specifications": {
@@ -98,20 +68,20 @@
                                                     "availability": "",
                                                     "stock_level": 0,
                                                     "min_stock_threshold": null,
-                                                    "lead_time": "2 weeks",
-                                                    "last_updated": "2025-10-12",
-                                                    "brand": "MESA",
-                                                    "part_number": "44"
+                                                    "lead_time": "Immediate",
+                                                    "last_updated": "2025-10-14",
+                                                    "brand": "Allis Chalmers",
+                                                    "part_number": "45"
                                                 },
                                                 {
-                                                    "id": "alt_3dc34d08",
-                                                    "type": "third_party",
-                                                    "price": 23,
-                                                    "description": "Fairhope's finest...",
+                                                    "id": "alt_1f9e7607",
+                                                    "type": "mmdm",
+                                                    "price": 66,
+                                                    "description": "good",
                                                     "rebranded_from": "",
                                                     "rebranded_as": "",
                                                     "specifications": {
-                                                        "material": "ss",
+                                                        "material": "",
                                                         "weight": "",
                                                         "warranty": "",
                                                         "dimensions": {
@@ -127,10 +97,10 @@
                                                     "availability": "",
                                                     "stock_level": 0,
                                                     "min_stock_threshold": null,
-                                                    "lead_time": "2 weeks",
-                                                    "last_updated": "2025-10-12",
-                                                    "brand": "MESA",
-                                                    "part_number": "eu"
+                                                    "lead_time": "1 week",
+                                                    "last_updated": "2025-10-14",
+                                                    "brand": "MMdM",
+                                                    "part_number": "M366"
                                                 }
                                             ]
                                         }
@@ -141,7 +111,7 @@
                     }
                 }
             },
-            "North & South America": {
+            "eurasia": {
                 "countries": {}
             }
         }

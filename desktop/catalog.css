@@ -3,3 +3,17 @@ svg { border: none; }
 .node { cursor: pointer; } /* No transition for instantaneous changes */
 .hidden { display: none; }
 text { font-size: 12px; font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+.marketGroup image {
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.marketGroup.inactive image {
+    opacity: 0.4;
+    transform: scale(0.6);
+}
+
+.marketGroup.active image {
+    transform: scale(1.1);
+}
