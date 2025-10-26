@@ -27,76 +27,87 @@ window.addToCart = function(model) {
 // Load JSON data
 async function loadData() {
     try {
-        const res = await fetch('./catalog.json');
-        data = await res.json();
-        console.log('Data loaded', data);
-        // Render markets immediately with no delay/animation
+        const response = await fetch('./catalog.json');
+        data = await response.json();
+        console.log('Loaded data:', JSON.stringify(data, null, 2));
         renderMarkets();
-        // keep any other initialization here if needed
+        // Start the market image sequence
+        setTimeout(() => {
+            const eurasiaG = document.getElementById('market-eurasia');
+            if (eurasiaG) {
+                console.log('Showing Eurasia 1');
+                eurasiaG.style.opacity = '1';
+            }
+        }, 1500);
+        setTimeout(() => {
+            const eurasiaImg = document.getElementById('market-image-eurasia');
+            if (eurasiaImg) {
+                console.log('Changing to Eurasia 2');
+                eurasiaImg.setAttribute('href', './assets/motori_dell\'eurasia_2.png');
+            }
+        }, 2500);
+        setTimeout(() => {
+            const americasG = document.getElementById('market-americas');
+            if (americasG) {
+                console.log('Showing Americas 1');
+                americasG.style.opacity = '1';
+            }
+        }, 3500);
+        setTimeout(() => {
+            const americasImg = document.getElementById('market-image-americas');
+            if (americasImg) {
+                console.log('Changing to Americas 2');
+                americasImg.setAttribute('href', './assets/motori_delle_americhe_2.png');
+            }
+        }, 4500);
     } catch (error) {
-        console.error('Failed to load data', error);
+        console.error('Error loading catalog.json:', error);
+        alert('Failed to load catalog data. Please check the file path.');
     }
 }
 
 // Render markets as images above central
 function renderMarkets() {
     marketsGroup.innerHTML = '';
-    if (!data || !data.MMdM || !data.MMdM.markets) return;
     const markets = Object.keys(data.MMdM.markets);
-    const spacing = 520; // horizontal spacing between market buttons
-    const yPos = -80;   // vertical position above center
-    const startX = -((markets.length - 1) * spacing) / 2;
-
     markets.forEach((market, index) => {
-        const x = startX + index * spacing;
+        const isEurasia = market === 'Europe & Asia';
+        const marketId = isEurasia ? 'eurasia' : 'americas';
+        const width = isEurasia ? 241 : 172;
+        const height = isEurasia ? 48 : 75;
+        const initialHref = isEurasia ? './assets/motori_dell\'eurasia_1.png' : './assets/motori_delle_americhe_1.png';
+        const x = (index - (markets.length - 1) / 2) * 300;
+        const y = -100;
         const g = document.createElementNS(ns, 'g');
-        g.setAttribute('transform', `translate(${x}, ${yPos})`);
-        g.setAttribute('class', 'marketGroup');
-
-        // Single image per market (place your single image files under ./assets/markets/)
+        g.setAttribute('transform', `translate(${x}, ${y})`);
+        g.setAttribute('id', `market-${marketId}`);
+        g.style.opacity = '0';
         const img = document.createElementNS(ns, 'image');
-        img.setAttributeNS('http://www.w3.org/1999/xlink', 'href', `./assets/markets/${market}.png`);
-        img.setAttribute('x', -180);
-        img.setAttribute('y', -20);
-        img.setAttribute('width', 315);
-        img.setAttribute('height', 103);
-        img.style.cursor = 'pointer';
+        img.setAttribute('href', initialHref);
+        img.setAttribute('x', (-width / 2).toString());
+        img.setAttribute('y', (-height / 2).toString());
+        img.setAttribute('width', width.toString());
+        img.setAttribute('height', height.toString());
+        img.setAttribute('id', `market-image-${marketId}`);
         g.appendChild(img);
+        marketsGroup.appendChild(g);
 
-
-        // Insert into DOM
-        // Update interaction handlers to keep markets visible
-        g.addEventListener('mouseover', () => {
-            // First remove all classes from all markets
-            document.querySelectorAll('.marketGroup').forEach(group => {
-                group.classList.remove('active', 'inactive');
-                // Force a reflow to ensure transitions work
-                void group.offsetWidth;
-                group.classList.add('inactive');
-            });
-            
-            // Then set active on current market
-            g.classList.remove('inactive');
-            // Force a reflow to ensure transitions work
-            void g.offsetWidth;
-            g.classList.add('active');
-            
+        // Add listener to img
+        img.addEventListener('mouseover', () => {
+            if (activeType === 'market' && activePath[0] === market) {
+                console.log(`Market ${market} already active, skipping`);
+                return;
+            }
+            console.log(`Activating market: ${market}`);
+            if (activeType === 'model') {
+                revertCentral();
+            }
             activeType = 'market';
             activePath = [market];
-            renderNextLevel('market', market, Math.PI / 2);
+            resetView(false);
+            renderNextLevel('market', market, 0);
             renderPathLines();
         });
-
-        g.addEventListener('mouseout', () => {
-            // Only reset if not in active path
-            if (!activePath.includes(market)) {
-                g.classList.remove('active', 'inactive');
-                // Force a reflow
-                void g.offsetWidth;
-            }
-        });
-
-        marketsGroup.appendChild(g);
     });
 }
 
@@ -591,6 +602,13 @@ function renderNextLevel(type, name, angle) {
         const modelKey = name;
         const modelAngle = modelAngles[modelKey] || angle;
         renderModels(market, country, manufacturer, cylinder, storedCylinderAngle, model);
+    }
+
+    // Control markets visibility: hide when models are revealed
+    if (type === 'cylinder' || type === 'model') {
+        marketsGroup.classList.add('hidden');
+    } else {
+        marketsGroup.classList.remove('hidden');
     }
 }
 
