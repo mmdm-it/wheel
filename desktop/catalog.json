@@ -4,8 +4,18 @@
             "eurasia": {
                 "countries": {
                     "Italy": {
-                        "VM Motori": {
-                            "cylinders": {}
+                        "manufacturers": {
+                            "VM Motori": {
+                                "cylinders": {
+                                    "4":[
+                                        {
+                                            "engine_model": "3054",
+                                            "year_introduced": null,
+                                            "year_discontinued": null
+                                        }
+                                    ]
+                                }
+                            }
                         }
                     }
                 }
