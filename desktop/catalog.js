@@ -222,7 +222,7 @@ function showModelInfo(modelFullKey) {
 function revertCentral() {
     centralGroup.innerHTML = `
         <circle class="node" cx="0" cy="0" r="40" fill="#362e6a" id="mmdmNode" />
-        <image href="./assets/catalog_logo.png" x="-70" y="-32" width="140" height="44" />
+        <image href="./assets/catalog_logo.png" x="-70" y="-28" width="140" height="44" />
     `;
     document.getElementById('mmdmNode').addEventListener('click', () => {
         console.log('Resetting to MMdM view');
@@ -544,11 +544,19 @@ function addHitListeners(hitCircle, nodeGroup, type, name, angle, isSelected) {
 function renderNextLevel(type, name, angle) {
     console.log(`Rendering next level for ${type}: ${name}`);
     const parts = name.split('/');
+    
+    // First, hide all rings except markets
+    cylindersGroup.classList.add('hidden');
+    modelsGroup.classList.add('hidden');
+    
     if (type === 'market') {
         const market = parts[0];
         manufacturersGroup.classList.remove('hidden');
         console.log('Showing manufacturers group');
         renderManufacturers(market);
+        // Clear other rings
+        cylindersGroup.innerHTML = '';
+        modelsGroup.innerHTML = '';
     } else if (type === 'manufacturer') {
         const market = parts[0];
         const country = parts[1];
