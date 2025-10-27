@@ -1,4 +1,4 @@
-body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #868686; }
+body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #868686; position: relative; } /* enable absolute positioning context */
 svg { border: none; }
 .node { cursor: pointer; } /* No transition for instantaneous changes */
 .hidden { display: none; }
@@ -16,4 +16,17 @@ text { font-size: 12px; font-family: 'Montserrat', sans-serif; text-transform: u
 
 .marketGroup.active image {
     transform: scale(1.1);
+}
+
+#copyright {
+    position: absolute;
+    top: calc(100vh + 800px); /* requires scrolling to see */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #f2f2e6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    opacity: 0.85;
+    pointer-events: none;
 }
