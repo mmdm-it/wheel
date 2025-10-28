@@ -1,0 +1,86 @@
+/* Mobile-specific styles */
+body { 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    min-height: 100vh; 
+    background-color: #868686; 
+    position: relative;
+    overflow-x: hidden;
+}
+
+svg { 
+    border: none; 
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.node { 
+    cursor: pointer; 
+}
+
+.hidden { 
+    display: none; 
+}
+
+text { 
+    font-size: 10px; 
+    font-family: 'Montserrat', sans-serif; 
+    text-transform: uppercase; 
+}
+
+/* Market group transitions */
+.marketGroup image {
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Only inactive markets change - get smaller and opaque */
+.marketGroup.inactive image {
+    opacity: 0.4;
+    transform: scale(0.6);
+}
+
+/* Active markets stay at normal size */
+.marketGroup.active image {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Center MMdM node transitions */
+#centralGroup {
+    transition: opacity 0.3s ease;
+}
+
+#centralGroup.inactive {
+    opacity: 0.4;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #f2f2e6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+    text {
+        font-size: 8px;
+    }
+    
+    #copyright {
+        font-size: 10px;
+        bottom: 10px;
+    }
+}
