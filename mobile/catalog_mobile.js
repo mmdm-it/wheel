@@ -173,6 +173,9 @@ function handleMarketSelection(market, g) {
         centralGroup.classList.add('inactive');
     }
     
+    // Add timestamp for testing purposes
+    addTimestampToCenter();
+    
     // Visual feedback for selection - only unselected markets change
     const marketGroups = document.querySelectorAll('.marketGroup');
     marketGroups.forEach(group => {
@@ -246,32 +249,75 @@ function renderManufacturerArc(market) {
     window.currentManufacturers = manufacturers;
     window.currentMarket = market;
     
-    // Calculate initial rotation offset to center Lyon
-    const lyonIndex = manufacturers.findIndex(m => m.key === 'Lyon');
-    console.log('Lyon index:', lyonIndex);
+    // Use desktop-style centering: center the middle manufacturer (by index) at Southwest (135°)
+    const angleStep = Math.PI / 42;
+    const centerAngle = Math.PI * 0.75; // 135° = Southwest (4:30 o'clock position)
     
-    if (lyonIndex !== -1) {
-        // Calculate what offset would center Lyon
-        const angleStep = Math.PI / 42;
-        const totalArcSpan = (manufacturers.length - 1) * angleStep;
-        const diagonalAngle = Math.PI * 1.25;
-        const baseStartAngle = diagonalAngle - (totalArcSpan / 2);
-        
-        // To center Lyon: baseStartAngle + offset + (lyonIndex * angleStep) = diagonalAngle
-        // Therefore: offset = diagonalAngle - baseStartAngle - (lyonIndex * angleStep)
-        arcRotationOffset = diagonalAngle - baseStartAngle - (lyonIndex * angleStep);
-        console.log('Setting initial rotation offset to center Lyon:', arcRotationOffset * 180 / Math.PI + '°');
-    } else {
-        // If Lyon not found, start at 0
-        arcRotationOffset = 0;
-        console.log('Lyon not found, starting at rotation offset 0');
-    }
+    // Simple centering like desktop: middle manufacturer at center angle
+    const middleIndex = Math.floor((manufacturers.length - 1) / 2);
+    const middleManufacturer = manufacturers[middleIndex];
+    
+    console.log('Centering manufacturer at index:', middleIndex, 'of', manufacturers.length, 'manufacturers');
+    console.log('Centered manufacturer:', middleManufacturer?.key);
+    
+    // Calculate rotation offset to place the middle manufacturer at centerAngle
+    // Following desktop formula: angle = centerAngle + (index - middle) * angleStep
+    // For middle manufacturer: centerAngle = centerAngle + (middleIndex - middle) * angleStep = centerAngle
+    // So we want: baseStartAngle + offset + (middleIndex * angleStep) = centerAngle
+    // Therefore: offset = centerAngle - baseStartAngle - (middleIndex * angleStep)
+    const totalArcSpan = (manufacturers.length - 1) * angleStep;
+    const baseStartAngle = centerAngle - (totalArcSpan / 2);
+    arcRotationOffset = 0; // With properbaseStartAngle, no offset needed for simple centering
+    
+    console.log('Setting rotation to center middle manufacturer at Southwest (135°):', centerAngle * 180 / Math.PI + '°');
     
     // Set up touch events for rotation
     setupRotationControls();
     
     // Initial render
     updateManufacturerPositions();
+}
+
+// Calculate arc parameters using simple dimension-based formula
+function calculateArcParameters() {
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    
+    // Determine longer and shorter dimensions
+    const longSide = Math.max(viewportWidth, viewportHeight);
+    const shortSide = Math.min(viewportWidth, viewportHeight);
+    const isPortrait = viewportHeight > viewportWidth;
+    
+    // Radius = length of longer screen dimension
+    const radius = longSide;
+    
+    // Calculate center coordinates - always positive (northeast quadrant)
+    let centerX, centerY;
+    
+    if (isPortrait) {
+        // Portrait mode: x = longSide - shortSide/2, y = longSide/2
+        centerX = longSide - (shortSide / 2);
+        centerY = longSide / 2;
+    } else {
+        // Landscape mode: x = longSide/2, y = longSide - shortSide/2
+        centerX = longSide / 2;
+        centerY = longSide - (shortSide / 2);
+    }
+    
+    console.log('=== ARC PARAMETERS DEBUG ===');
+    console.log('Viewport:', viewportWidth, 'x', viewportHeight);
+    console.log('Long/Short sides:', longSide, '/', shortSide);
+    console.log('Orientation:', isPortrait ? 'portrait' : 'landscape');
+    console.log('Calculated center:', centerX, ',', centerY);
+    console.log('Calculated radius:', radius);
+    console.log('Expected for iPhone SE portrait: center=(480,334), radius=667');
+    console.log('==============================');
+    
+    return {
+        centerX: centerX,
+        centerY: centerY,
+        radius: radius
+    };
 }
 
 // Update manufacturer positions based on current rotation
@@ -283,21 +329,14 @@ function updateManufacturerPositions() {
     
     const manufacturers = window.currentManufacturers;
     
-    // Arc parameters - match desktop spacing
-    const arcRadius = 500;
+    // Arc parameters - calculate dynamic radius and spacing
     const angleStep = Math.PI / 42; // Match desktop manufacturer spacing (4.3°)
-    const totalArcSpan = (manufacturers.length - 1) * angleStep;
     
-    // Center the arc around the diagonal (from upper-left to lower-right)
-    const diagonalAngle = Math.PI * 1.25; // 225 degrees (center of diagonal)
-    const baseStartAngle = diagonalAngle - (totalArcSpan / 2);
+    // Center angle for mobile: Southwest (135°) like desktop uses South (90°)
+    const centerAngle = Math.PI * 0.75; // 135 degrees (Southwest)
     
-    // Apply rotation offset
-    const startAngle = baseStartAngle + arcRotationOffset;
-    
-    // Arc center coordinates
-    const arcCenterX = window.innerWidth * -0.8;
-    const arcCenterY = 250;
+    // Apply rotation offset to the center angle
+    const adjustedCenterAngle = centerAngle + arcRotationOffset;
     
     // Clear and rebuild manufacturer nodes
     manufacturersGroup.innerHTML = '';
@@ -305,16 +344,26 @@ function updateManufacturerPositions() {
     let centerMostIndex = -1;
     let minDistanceToCenter = Infinity;
     
+    // Calculate dynamic arc parameters based on viewport and target coordinates
+    const arcParams = calculateArcParameters();
+    
     manufacturers.forEach((manufacturer, index) => {
-        const angle = startAngle + (index * angleStep);
+        // Use desktop-style angle calculation: centerAngle + (index - middle) * angleStep
+        const angle = adjustedCenterAngle + (index - (manufacturers.length - 1) / 2) * angleStep;
         
-        // Calculate position relative to arc center
-        const arcX = Math.cos(angle) * arcRadius;
-        const arcY = Math.sin(angle) * arcRadius;
+        // Calculate position on screen relative to center (0,0)
+        // Use a fixed radius that works well for mobile screens
+        const radius = 200; // Smaller than desktop's 375 for mobile screens
+        const x = Math.cos(angle) * radius;
+        const y = Math.sin(angle) * radius;
         
-        // Translate from arc center to screen center (mainGroup origin)
-        const x = arcX - arcCenterX;
-        const y = arcY - arcCenterY;
+        // Debug log for first manufacturer only
+        if (index === 0) {
+            console.log('First manufacturer position debug:');
+            console.log('  Angle:', angle * 180 / Math.PI, '°');
+            console.log('  Radius:', radius);
+            console.log('  Final position (screen-relative):', x, ',', y);
+        }
         
         // Calculate distance to screen center for selection
         const distanceToCenter = Math.sqrt(x * x + y * y);
@@ -532,7 +581,7 @@ function handleTouchEnd(e) {
     }
 }
 
-// Replace the calculateRotationLimits function with this debug version
+// Calculate rotation limits using desktop-style approach
 function calculateRotationLimits() {
     if (!window.currentManufacturers || window.currentManufacturers.length === 0) {
         return { min: -Infinity, max: Infinity };
@@ -540,30 +589,23 @@ function calculateRotationLimits() {
     
     const manufacturers = window.currentManufacturers;
     const angleStep = Math.PI / 42;
-    const totalArcSpan = (manufacturers.length - 1) * angleStep;
-    const diagonalAngle = Math.PI * 1.25;
-    const baseStartAngle = diagonalAngle - (totalArcSpan / 2);
+    const centerAngle = Math.PI * 0.75; // Southwest (135°)
     
-    console.log('=== ROTATION LIMITS DEBUG ===');
-    console.log('Manufacturers (sorted Z-A):', manufacturers.map(m => m.key));
-    console.log('Total manufacturers:', manufacturers.length);
-    console.log('First manufacturer (index 0):', manufacturers[0].key);
-    console.log('Last manufacturer (index ' + (manufacturers.length - 1) + '):', manufacturers[manufacturers.length - 1].key);
+    // Calculate how much we can rotate in each direction
+    // Maximum rotation should center the first manufacturer (index 0)
+    // Minimum rotation should center the last manufacturer (index length-1)
     
-    // Let's calculate what offset would center EACH manufacturer and see the pattern
-    manufacturers.forEach((manufacturer, index) => {
-        const targetOffset = diagonalAngle - baseStartAngle - (index * angleStep);
-        console.log(`Manufacturer ${index} (${manufacturer.key}): targetOffset = ${targetOffset * 180 / Math.PI}°`);
-    });
+    // When arcRotationOffset = 0, middle manufacturer is centered
+    // To center first manufacturer: we need to rotate by -(middleIndex * angleStep)
+    // To center last manufacturer: we need to rotate by +((length-1-middleIndex) * angleStep)
     
-    // The limits should be the offsets for the first and last manufacturers
-    const maxOffset = diagonalAngle - baseStartAngle - (0 * angleStep);
-    const minOffset = diagonalAngle - baseStartAngle - ((manufacturers.length - 1) * angleStep);
+    const middleIndex = (manufacturers.length - 1) / 2;
+    const maxOffset = -(0 - middleIndex) * angleStep; // Center first manufacturer
+    const minOffset = -((manufacturers.length - 1) - middleIndex) * angleStep; // Center last manufacturer
     
-    console.log('Calculated limits:');
-    console.log('maxOffset (for ' + manufacturers[0].key + '):', maxOffset * 180 / Math.PI + '°');
-    console.log('minOffset (for ' + manufacturers[manufacturers.length - 1].key + '):', minOffset * 180 / Math.PI + '°');
-    console.log('=== END DEBUG ===');
+    console.log('Rotation limits for', manufacturers.length, 'manufacturers:');
+    console.log('maxOffset (for first manufacturer', manufacturers[0].key + '):', maxOffset * 180 / Math.PI + '°');
+    console.log('minOffset (for last manufacturer', manufacturers[manufacturers.length - 1].key + '):', minOffset * 180 / Math.PI + '°');
     
     return {
         min: minOffset,
@@ -604,37 +646,36 @@ function startMomentumAnimation() {
     animationId = requestAnimationFrame(animate);
 }
 
-// Replace the snapToNearestManufacturer function with this corrected version
+// Snap to nearest manufacturer using desktop-style approach
 function snapToNearestManufacturer() {
     if (!window.currentManufacturers) return;
     
     const manufacturers = window.currentManufacturers;
     const angleStep = Math.PI / 42;
-    const totalArcSpan = (manufacturers.length - 1) * angleStep;
-    const diagonalAngle = Math.PI * 1.25;
-    const baseStartAngle = diagonalAngle - (totalArcSpan / 2);
+    const middleIndex = (manufacturers.length - 1) / 2;
     
     // Find which manufacturer should be centered based on current rotation
     let bestIndex = 0;
-    let bestOffset = arcRotationOffset;
     let minDistanceFromCurrent = Infinity;
     
     manufacturers.forEach((manufacturer, index) => {
-        // To center manufacturer at index i, we need the angle to equal diagonalAngle:
-        // baseStartAngle + offset + (index * angleStep) = diagonalAngle
-        // Therefore: offset = diagonalAngle - baseStartAngle - (index * angleStep)
-        const targetOffset = diagonalAngle - baseStartAngle - (index * angleStep);
+        // To center manufacturer at index i:
+        // We want: centerAngle + offset + (index - middle) * angleStep = centerAngle + (0 - middle) * angleStep
+        // Therefore: offset = -(index - middle) * angleStep = (middle - index) * angleStep
+        const targetOffset = (middleIndex - index) * angleStep;
         
         const distanceFromCurrent = Math.abs(targetOffset - arcRotationOffset);
         
         if (distanceFromCurrent < minDistanceFromCurrent) {
             minDistanceFromCurrent = distanceFromCurrent;
             bestIndex = index;
-            bestOffset = targetOffset;
         }
     });
     
-    // Now check if this offset is within our calculated limits
+    // Calculate the target offset for the best manufacturer
+    let bestOffset = (middleIndex - bestIndex) * angleStep;
+    
+    // Check if this offset is within our calculated limits
     const limits = calculateRotationLimits();
     
     // If the best offset is outside limits, clamp it
@@ -644,7 +685,7 @@ function snapToNearestManufacturer() {
         bestOffset = limits.max;
     }
     
-    console.log('Snapping to manufacturer:', manufacturers[bestIndex].key, 'with offset:', bestOffset * 180 / Math.PI + '°', 'limits:', limits);
+    console.log('Snapping to manufacturer at index', bestIndex, '(' + manufacturers[bestIndex].key + ') with offset:', bestOffset * 180 / Math.PI + '°');
     
     // Animate to the position
     animateToOffset(bestOffset);
@@ -673,6 +714,32 @@ function animateToOffset(targetOffset) {
     }
     
     animationId = requestAnimationFrame(animate);
+}
+
+// Add timestamp for testing purposes
+function addTimestampToCenter() {
+    // Remove any existing timestamp
+    const existingTimestamp = document.getElementById('mobileTimestamp');
+    if (existingTimestamp) {
+        existingTimestamp.remove();
+    }
+    
+    // Create timestamp text with fixed save time
+    const timestampElement = document.createElementNS(ns, 'text');
+    timestampElement.setAttribute('id', 'mobileTimestamp');
+    timestampElement.setAttribute('x', '0');
+    timestampElement.setAttribute('y', '80'); // Below the MMdM logo
+    timestampElement.setAttribute('text-anchor', 'middle');
+    timestampElement.setAttribute('fill', '#f2f2e6');
+    timestampElement.setAttribute('font-size', '14px');
+    timestampElement.setAttribute('font-family', 'Montserrat, sans-serif');
+    timestampElement.setAttribute('font-weight', 'bold');
+    timestampElement.textContent = 'Updated: Oct 28, 4:45 PM';
+    
+    // Add to central group
+    if (centralGroup) {
+        centralGroup.appendChild(timestampElement);
+    }
 }
 
 // Initialize mobile version
