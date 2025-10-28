@@ -1,8 +1,32 @@
-body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #868686; position: relative; } /* enable absolute positioning context */
-svg { border: none; }
-.node { cursor: pointer; } /* No transition for instantaneous changes */
-.hidden { display: none; }
-text { font-size: 12px; font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+body { 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-color: #868686; /* Ensure gray background */
+    position: relative; 
+}
+
+svg { 
+    border: none; 
+}
+
+.node { 
+    cursor: pointer; 
+}
+
+.hidden { 
+    display: none; 
+}
+
+text { 
+    font-size: 12px; 
+    font-family: 'Montserrat', sans-serif; 
+    text-transform: uppercase; 
+}
+
 .marketGroup image {
     transition: all 0.3s ease;
     opacity: 1;
@@ -20,7 +44,7 @@ text { font-size: 12px; font-family: 'Montserrat', sans-serif; text-transform: u
 
 #copyright {
     position: absolute;
-    top: calc(100vh + 800px); /* requires scrolling to see */
+    bottom: 20px; /* Fixed from the extreme positioning */
     left: 0;
     width: 100%;
     text-align: center;
