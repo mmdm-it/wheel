@@ -106,8 +106,8 @@ function renderMarkets() {
     
     // Position markets in corners: upper-right and lower-left
     const positions = [
-        { x: 150, y: -150 }, // upper-right
-        { x: -150, y: 150 }  // lower-left
+        { x: 75, y: -220 }, // upper-right
+        { x: -75, y: 220 }  // lower-left
     ];
     
     markets.forEach((market, index) => {
@@ -125,21 +125,21 @@ function renderMarkets() {
         img.setAttribute('href', url);
         img.setAttributeNS('http://www.w3.org/1999/xlink', 'href', url);
         
-        // Smaller images for mobile
-        img.setAttribute('x', -60);
-        img.setAttribute('y', -20);
-        img.setAttribute('width', 120);
-        img.setAttribute('height', 40);
+        // Reduced to 3/4 size - now 270x90
+        img.setAttribute('x', -135);  // Changed from -180
+        img.setAttribute('y', -45);   // Changed from -60
+        img.setAttribute('width', 270);  // Changed from 360
+        img.setAttribute('height', 90);  // Changed from 120
         img.style.cursor = 'pointer';
         g.appendChild(img);
 
-        // Larger hit area for touch
+        // Larger hit area for touch - also reduced to 3/4 size
         const hitArea = document.createElementNS(ns, 'rect');
         hitArea.setAttribute('class', 'marketHitArea');
-        hitArea.setAttribute('x', -60);
-        hitArea.setAttribute('y', -20);
-        hitArea.setAttribute('width', 120);
-        hitArea.setAttribute('height', 40);
+        hitArea.setAttribute('x', -135);  // Changed from -180
+        hitArea.setAttribute('y', -45);   // Changed from -60
+        hitArea.setAttribute('width', 270);  // Changed from 360
+        hitArea.setAttribute('height', 90);  // Changed from 120
         hitArea.setAttribute('fill', 'transparent');
         hitArea.style.cursor = 'pointer';
         g.appendChild(hitArea);
@@ -240,12 +240,32 @@ function renderManufacturerArc(market) {
     // Sort manufacturers like desktop (Z-A)
     manufacturers.sort((a, b) => b.key.localeCompare(a.key));
     
+    console.log('Sorted manufacturers:', manufacturers.map(m => m.key));
+    
     // Store manufacturers for rotation
     window.currentManufacturers = manufacturers;
     window.currentMarket = market;
     
-    // Reset rotation offset
-    arcRotationOffset = 0;
+    // Calculate initial rotation offset to center Lyon
+    const lyonIndex = manufacturers.findIndex(m => m.key === 'Lyon');
+    console.log('Lyon index:', lyonIndex);
+    
+    if (lyonIndex !== -1) {
+        // Calculate what offset would center Lyon
+        const angleStep = Math.PI / 42;
+        const totalArcSpan = (manufacturers.length - 1) * angleStep;
+        const diagonalAngle = Math.PI * 1.25;
+        const baseStartAngle = diagonalAngle - (totalArcSpan / 2);
+        
+        // To center Lyon: baseStartAngle + offset + (lyonIndex * angleStep) = diagonalAngle
+        // Therefore: offset = diagonalAngle - baseStartAngle - (lyonIndex * angleStep)
+        arcRotationOffset = diagonalAngle - baseStartAngle - (lyonIndex * angleStep);
+        console.log('Setting initial rotation offset to center Lyon:', arcRotationOffset * 180 / Math.PI + '°');
+    } else {
+        // If Lyon not found, start at 0
+        arcRotationOffset = 0;
+        console.log('Lyon not found, starting at rotation offset 0');
+    }
     
     // Set up touch events for rotation
     setupRotationControls();
@@ -260,8 +280,6 @@ function updateManufacturerPositions() {
         console.log('Cannot update positions - missing data or elements');
         return;
     }
-    
-    console.log('Updating manufacturer positions with rotation offset:', arcRotationOffset);
     
     const manufacturers = window.currentManufacturers;
     
@@ -353,12 +371,12 @@ function updateManufacturerPositions() {
         manufacturersGroup.appendChild(g);
     });
     
-    // Update active path with centermost manufacturer
+    // Update active path with centermost manufacturer and LOG it
     if (centerMostIndex >= 0) {
         const selectedManufacturer = manufacturers[centerMostIndex];
         activePath = [window.currentMarket, selectedManufacturer.country, selectedManufacturer.key];
         activeType = 'manufacturer';
-        console.log('Mobile: Center manufacturer:', selectedManufacturer.key);
+        console.log('CENTERED MANUFACTURER: Index', centerMostIndex, 'Name:', selectedManufacturer.key, 'Rotation:', arcRotationOffset * 180 / Math.PI + '°');
     }
 }
 
@@ -452,19 +470,41 @@ function handleTouchMove(e) {
     const currentX = touch.clientX;
     const currentY = touch.clientY;
     
-    // Calculate movement along the arc (horizontal movement primarily)
+    // Calculate movement in both directions
     const deltaX = currentX - lastTouchX;
+    const deltaY = currentY - lastTouchY;
     
-    console.log('Delta X:', deltaX);
+    console.log('Delta X:', deltaX, 'Delta Y:', deltaY);
     
-    // Convert horizontal movement to rotation
-    const rotationDelta = deltaX * ROTATION_SENSITIVITY;
-    arcRotationOffset += rotationDelta;
+    // Convert movement to rotation
+    // Horizontal: left swipe = counter-clockwise (negative)
+    // Vertical: down swipe = counter-clockwise (negative)
+    const horizontalRotation = -deltaX * ROTATION_SENSITIVITY;
+    const verticalRotation = -deltaY * ROTATION_SENSITIVITY;
+    
+    // Combine both movements
+    const rotationDelta = horizontalRotation + verticalRotation;
+    const newRotationOffset = arcRotationOffset + rotationDelta;
+    
+    // Calculate rotation limits to prevent extreme manufacturers from going past center
+    const rotationLimits = calculateRotationLimits();
+    
+    // Apply limits
+    if (newRotationOffset < rotationLimits.min) {
+        console.log('Hit minimum rotation limit');
+        arcRotationOffset = rotationLimits.min;
+        rotationVelocity = 0; // Stop momentum at boundary
+    } else if (newRotationOffset > rotationLimits.max) {
+        console.log('Hit maximum rotation limit');
+        arcRotationOffset = rotationLimits.max;
+        rotationVelocity = 0; // Stop momentum at boundary
+    } else {
+        arcRotationOffset = newRotationOffset;
+        // Store velocity for momentum only if not hitting boundaries
+        rotationVelocity = rotationDelta;
+    }
     
     console.log('New rotation offset:', arcRotationOffset);
-    
-    // Store velocity for momentum
-    rotationVelocity = rotationDelta;
     
     // Update positions
     updateManufacturerPositions();
@@ -474,27 +514,64 @@ function handleTouchMove(e) {
     lastTouchY = currentY;
 }
 
-// Handle touch end for rotation
+// Add this function after handleTouchMove
 function handleTouchEnd(e) {
-    console.log('Touch end, was dragging:', isDragging);
+    console.log('Touch end, starting momentum or snap');
     e.preventDefault();
-    
-    if (!isDragging) return;
     
     isDragging = false;
     
-    // Start momentum animation if there's significant velocity
+    // If there's significant velocity, start momentum animation
     if (Math.abs(rotationVelocity) > MIN_VELOCITY) {
-        console.log('Starting momentum animation with velocity:', rotationVelocity);
+        console.log('Starting momentum with velocity:', rotationVelocity);
         startMomentumAnimation();
     } else {
-        console.log('No momentum, snapping to nearest');
-        // Snap to nearest manufacturer
+        // Otherwise, snap to nearest manufacturer
+        console.log('Snapping to nearest manufacturer');
         snapToNearestManufacturer();
     }
 }
 
-// Momentum animation for smooth coasting
+// Replace the calculateRotationLimits function with this debug version
+function calculateRotationLimits() {
+    if (!window.currentManufacturers || window.currentManufacturers.length === 0) {
+        return { min: -Infinity, max: Infinity };
+    }
+    
+    const manufacturers = window.currentManufacturers;
+    const angleStep = Math.PI / 42;
+    const totalArcSpan = (manufacturers.length - 1) * angleStep;
+    const diagonalAngle = Math.PI * 1.25;
+    const baseStartAngle = diagonalAngle - (totalArcSpan / 2);
+    
+    console.log('=== ROTATION LIMITS DEBUG ===');
+    console.log('Manufacturers (sorted Z-A):', manufacturers.map(m => m.key));
+    console.log('Total manufacturers:', manufacturers.length);
+    console.log('First manufacturer (index 0):', manufacturers[0].key);
+    console.log('Last manufacturer (index ' + (manufacturers.length - 1) + '):', manufacturers[manufacturers.length - 1].key);
+    
+    // Let's calculate what offset would center EACH manufacturer and see the pattern
+    manufacturers.forEach((manufacturer, index) => {
+        const targetOffset = diagonalAngle - baseStartAngle - (index * angleStep);
+        console.log(`Manufacturer ${index} (${manufacturer.key}): targetOffset = ${targetOffset * 180 / Math.PI}°`);
+    });
+    
+    // The limits should be the offsets for the first and last manufacturers
+    const maxOffset = diagonalAngle - baseStartAngle - (0 * angleStep);
+    const minOffset = diagonalAngle - baseStartAngle - ((manufacturers.length - 1) * angleStep);
+    
+    console.log('Calculated limits:');
+    console.log('maxOffset (for ' + manufacturers[0].key + '):', maxOffset * 180 / Math.PI + '°');
+    console.log('minOffset (for ' + manufacturers[manufacturers.length - 1].key + '):', minOffset * 180 / Math.PI + '°');
+    console.log('=== END DEBUG ===');
+    
+    return {
+        min: minOffset,
+        max: maxOffset
+    };
+}
+
+// Update momentum animation to respect limits
 function startMomentumAnimation() {
     function animate() {
         if (Math.abs(rotationVelocity) < MIN_VELOCITY) {
@@ -502,7 +579,21 @@ function startMomentumAnimation() {
             return;
         }
         
-        arcRotationOffset += rotationVelocity;
+        const newOffset = arcRotationOffset + rotationVelocity;
+        const limits = calculateRotationLimits();
+        
+        // Check boundaries and stop momentum if hit
+        if (newOffset < limits.min) {
+            arcRotationOffset = limits.min;
+            snapToNearestManufacturer();
+            return;
+        } else if (newOffset > limits.max) {
+            arcRotationOffset = limits.max;
+            snapToNearestManufacturer();
+            return;
+        }
+        
+        arcRotationOffset = newOffset;
         rotationVelocity *= DECELERATION;
         
         updateManufacturerPositions();
@@ -513,7 +604,7 @@ function startMomentumAnimation() {
     animationId = requestAnimationFrame(animate);
 }
 
-// Snap to the nearest manufacturer position
+// Replace the snapToNearestManufacturer function with this corrected version
 function snapToNearestManufacturer() {
     if (!window.currentManufacturers) return;
     
@@ -523,34 +614,39 @@ function snapToNearestManufacturer() {
     const diagonalAngle = Math.PI * 1.25;
     const baseStartAngle = diagonalAngle - (totalArcSpan / 2);
     
-    // Find the manufacturer that should be closest to center
+    // Find which manufacturer should be centered based on current rotation
     let bestIndex = 0;
     let bestOffset = arcRotationOffset;
-    let minDistance = Infinity;
+    let minDistanceFromCurrent = Infinity;
     
     manufacturers.forEach((manufacturer, index) => {
-        const targetAngle = baseStartAngle + (index * angleStep);
-        const targetOffset = targetAngle - (baseStartAngle + arcRotationOffset);
+        // To center manufacturer at index i, we need the angle to equal diagonalAngle:
+        // baseStartAngle + offset + (index * angleStep) = diagonalAngle
+        // Therefore: offset = diagonalAngle - baseStartAngle - (index * angleStep)
+        const targetOffset = diagonalAngle - baseStartAngle - (index * angleStep);
         
-        // Calculate what offset would center this manufacturer
-        const desiredOffset = arcRotationOffset - targetOffset;
+        const distanceFromCurrent = Math.abs(targetOffset - arcRotationOffset);
         
-        // Calculate distance this manufacturer would be from center with this offset
-        const testAngle = baseStartAngle + desiredOffset + (index * angleStep);
-        const arcX = Math.cos(testAngle) * 500;
-        const arcY = Math.sin(testAngle) * 500;
-        const x = arcX - (window.innerWidth * -0.8);
-        const y = arcY - 250;
-        const distance = Math.sqrt(x * x + y * y);
-        
-        if (distance < minDistance) {
-            minDistance = distance;
+        if (distanceFromCurrent < minDistanceFromCurrent) {
+            minDistanceFromCurrent = distanceFromCurrent;
             bestIndex = index;
-            bestOffset = desiredOffset;
+            bestOffset = targetOffset;
         }
     });
     
-    // Animate to the best position
+    // Now check if this offset is within our calculated limits
+    const limits = calculateRotationLimits();
+    
+    // If the best offset is outside limits, clamp it
+    if (bestOffset < limits.min) {
+        bestOffset = limits.min;
+    } else if (bestOffset > limits.max) {
+        bestOffset = limits.max;
+    }
+    
+    console.log('Snapping to manufacturer:', manufacturers[bestIndex].key, 'with offset:', bestOffset * 180 / Math.PI + '°', 'limits:', limits);
+    
+    // Animate to the position
     animateToOffset(bestOffset);
 }
 
