@@ -129,6 +129,13 @@ class TouchRotationHandler {
         const animate = () => {
             this.velocity *= MOBILE_CONFIG.ROTATION.DECELERATION;
             
+            // Check for detent snapping when velocity is low but not yet stopped
+            if (Math.abs(this.velocity) < MOBILE_CONFIG.ROTATION.DETENT_VELOCITY) {
+                this.stopAnimation();
+                this.snapToNearest();
+                return;
+            }
+            
             if (Math.abs(this.velocity) < MOBILE_CONFIG.ROTATION.MIN_VELOCITY) {
                 this.stopAnimation();
                 this.snapToNearest();

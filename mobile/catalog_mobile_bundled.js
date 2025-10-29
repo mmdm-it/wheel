@@ -26,7 +26,8 @@ const MOBILE_CONFIG = {
         SENSITIVITY: 0.003,
         DECELERATION: 0.95,
         MIN_VELOCITY: 0.001,
-        SNAP_THRESHOLD: 0.05
+        SNAP_THRESHOLD: 0.05,
+        DETENT_VELOCITY: 0.005  // Higher threshold for detent snapping
     },
     
     // Angle constants - mobile arc-based system
@@ -292,6 +293,13 @@ class TouchRotationHandler {
     startMomentumAnimation() {
         const animate = () => {
             this.velocity *= MOBILE_CONFIG.ROTATION.DECELERATION;
+            
+            // Check for detent snapping when velocity is low but not yet stopped
+            if (Math.abs(this.velocity) < MOBILE_CONFIG.ROTATION.DETENT_VELOCITY) {
+                this.stopAnimation();
+                this.snapToNearest();
+                return;
+            }
             
             if (Math.abs(this.velocity) < MOBILE_CONFIG.ROTATION.MIN_VELOCITY) {
                 this.stopAnimation();
@@ -597,6 +605,9 @@ class MobileRenderer {
         // Add timestamp for testing
         this.addTimestampToCenter();
         
+        // Add selection point indicator
+        this.addSelectionPointIndicator();
+        
         // Get manufacturers for this market
         this.currentManufacturers = this.dataManager.getManufacturers(market);
         
@@ -685,20 +696,56 @@ class MobileRenderer {
             // Get or create manufacturer element
             let element = this.manufacturerElements.get(manufacturer.key);
             if (!element) {
-                element = this.createManufacturerElement(manufacturer, position, angle);
+                element = this.createManufacturerElement(manufacturer, position, angle, false);
                 manufacturersGroup.appendChild(element);
                 this.manufacturerElements.set(manufacturer.key, element);
-            } else {
-                this.updateManufacturerElement(element, position, angle);
             }
         });
         
-        // Update active path with centermost manufacturer
-        if (centerMostIndex >= 0) {
-            const centerManufacturer = manufacturers[centerMostIndex];
-            this.activePath = [centerManufacturer.market, centerManufacturer.country, centerManufacturer.name];
-            Logger.debug('Centermost manufacturer:', centerManufacturer.name);
+        // Update selection state for all manufacturers
+        // Only select manufacturer that is exactly at the CENTER_ANGLE position
+        const selectedIndex = this.getSelectedManufacturerIndex(rotationOffset, manufacturers.length);
+        
+        manufacturers.forEach((manufacturer, index) => {
+            const element = this.manufacturerElements.get(manufacturer.key);
+            if (element) {
+                const isSelected = (index === selectedIndex);
+                const angle = adjustedCenterAngle + (index - (manufacturers.length - 1) / 2) * angleStep;
+                const position = this.calculateManufacturerPosition(angle, arcParams);
+                this.updateManufacturerElement(element, position, angle, isSelected);
+            }
+        });
+        
+        // Update active path with selected manufacturer
+        if (selectedIndex >= 0 && selectedIndex < manufacturers.length) {
+            const selectedManufacturer = manufacturers[selectedIndex];
+            this.activePath = [selectedManufacturer.market, selectedManufacturer.country, selectedManufacturer.name];
+            Logger.debug('Selected manufacturer:', selectedManufacturer.name);
         }
+    }
+    
+    getSelectedManufacturerIndex(rotationOffset, manufacturerCount) {
+        if (manufacturerCount === 0) return -1;
+        
+        const angleStep = MOBILE_CONFIG.ANGLES.MANUFACTURER_SPREAD;
+        const middleIndex = (manufacturerCount - 1) / 2;
+        
+        // Calculate which manufacturer index should be at the CENTER_ANGLE position
+        // For a manufacturer at index i to be at CENTER_ANGLE:
+        // CENTER_ANGLE + rotationOffset + (i - middleIndex) * angleStep = CENTER_ANGLE
+        // Therefore: i = middleIndex - (rotationOffset / angleStep)
+        const exactIndex = middleIndex - (rotationOffset / angleStep);
+        const roundedIndex = Math.round(exactIndex);
+        
+        // Only select if the manufacturer is very close to the exact position (detent threshold)
+        const detentThreshold = 0.15; // Allow small deviation for selection
+        const deviation = Math.abs(exactIndex - roundedIndex);
+        
+        if (deviation <= detentThreshold && roundedIndex >= 0 && roundedIndex < manufacturerCount) {
+            return roundedIndex;
+        }
+        
+        return -1; // No manufacturer selected if not close enough to detent position
     }
     
     calculateManufacturerPosition(angle, arcParams) {
@@ -718,7 +765,7 @@ class MobileRenderer {
         return position;
     }
     
-    createManufacturerElement(manufacturer, position, angle) {
+    createManufacturerElement(manufacturer, position, angle, isSelected = false) {
         const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
         g.classList.add('manufacturer');
         g.setAttribute('transform', `translate(${position.x}, ${position.y})`);
@@ -727,8 +774,15 @@ class MobileRenderer {
         circle.setAttribute('class', 'node');
         circle.setAttribute('cx', '0');
         circle.setAttribute('cy', '0');
-        circle.setAttribute('r', MOBILE_CONFIG.RADIUS.UNSELECTED);
+        circle.setAttribute('r', isSelected ? MOBILE_CONFIG.RADIUS.SELECTED : MOBILE_CONFIG.RADIUS.UNSELECTED);
         circle.setAttribute('fill', this.getColor('manufacturer', manufacturer.name));
+        
+        if (isSelected) {
+            circle.setAttribute('stroke', 'black');
+            circle.setAttribute('stroke-width', '2');
+            g.classList.add('selected');
+        }
+        
         g.appendChild(circle);
         
         const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
@@ -738,10 +792,25 @@ class MobileRenderer {
         return g;
     }
     
-    updateManufacturerElement(element, position, angle) {
+    updateManufacturerElement(element, position, angle, isSelected = false) {
         element.setAttribute('transform', `translate(${position.x}, ${position.y})`);
         
+        const circle = element.querySelector('circle');
         const text = element.querySelector('text');
+        
+        // Update selection state
+        if (isSelected) {
+            circle.setAttribute('r', MOBILE_CONFIG.RADIUS.SELECTED);
+            circle.setAttribute('stroke', 'black');
+            circle.setAttribute('stroke-width', '2');
+            element.classList.add('selected');
+        } else {
+            circle.setAttribute('r', MOBILE_CONFIG.RADIUS.UNSELECTED);
+            circle.removeAttribute('stroke');
+            circle.removeAttribute('stroke-width');
+            element.classList.remove('selected');
+        }
+        
         if (text) {
             this.updateManufacturerText(text, angle, text.textContent);
         }
@@ -785,6 +854,38 @@ class MobileRenderer {
         timestamp.textContent = new Date().toLocaleTimeString();
         
         this.elements.centralGroup.appendChild(timestamp);
+    }
+    
+    addSelectionPointIndicator() {
+        // Remove any existing selection indicator
+        const existingIndicator = document.getElementById('selectionIndicator');
+        if (existingIndicator) {
+            existingIndicator.remove();
+        }
+        
+        // Calculate position for selection point (135° from center)
+        const viewport = this.viewport.getViewportInfo();
+        const arcParams = this.viewport.getArcParameters();
+        const centerAngle = MOBILE_CONFIG.ANGLES.CENTER_ANGLE;
+        
+        const indicatorDistance = 40; // Distance from center
+        const indicatorX = indicatorDistance * Math.cos(centerAngle);
+        const indicatorY = indicatorDistance * Math.sin(centerAngle);
+        
+        // Create selection point indicator
+        const indicator = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
+        indicator.setAttribute('id', 'selectionIndicator');
+        indicator.setAttribute('transform', `translate(${indicatorX}, ${indicatorY})`);
+        
+        // Small triangle pointing outward
+        const triangle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'polygon');
+        triangle.setAttribute('points', '0,-6 -4,2 4,2');
+        triangle.setAttribute('fill', '#f2f2e6');
+        triangle.setAttribute('opacity', '0.8');
+        triangle.setAttribute('transform', `rotate(${centerAngle * 180 / Math.PI + 90})`);
+        indicator.appendChild(triangle);
+        
+        this.elements.centralGroup.appendChild(indicator);
     }
     
     getColor(type, name) {
@@ -996,12 +1097,23 @@ class MobileCatalogApp {
         
         const angleStep = MOBILE_CONFIG.ANGLES.MANUFACTURER_SPREAD;
         const middleIndex = (manufacturers.length - 1) / 2;
+        const centerAngle = MOBILE_CONFIG.ANGLES.CENTER_ANGLE; // 135° (Southwest)
         
-        // Rotation limits to center first and last manufacturers
-        const maxOffset = -(0 - middleIndex) * angleStep;
-        const minOffset = -((manufacturers.length - 1) - middleIndex) * angleStep;
+        // Calculate rotation limits so first/last manufacturers stop at CENTER_ANGLE (135°)
+        // When rotationOffset = 0, middle manufacturer is at centerAngle
+        // For first manufacturer (index 0) to be at centerAngle:
+        // centerAngle + offset + (0 - middleIndex) * angleStep = centerAngle
+        // Therefore: offset = -(0 - middleIndex) * angleStep = middleIndex * angleStep
+        const maxOffset = middleIndex * angleStep;
         
-        Logger.debug(`Rotation limits: min=${minOffset * 180 / Math.PI}°, max=${maxOffset * 180 / Math.PI}°`);
+        // For last manufacturer (index length-1) to be at centerAngle:
+        // centerAngle + offset + ((length-1) - middleIndex) * angleStep = centerAngle  
+        // Therefore: offset = -((length-1) - middleIndex) * angleStep = -middleIndex * angleStep
+        const minOffset = -middleIndex * angleStep;
+        
+        Logger.debug(`Rotation limits for ${manufacturers.length} manufacturers:`);
+        Logger.debug(`maxOffset (first manufacturer at 135°): ${maxOffset * 180 / Math.PI}°`);
+        Logger.debug(`minOffset (last manufacturer at 135°): ${minOffset * 180 / Math.PI}°`);
         
         return { min: minOffset, max: maxOffset };
     }

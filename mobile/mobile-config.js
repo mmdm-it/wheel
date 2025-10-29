@@ -22,7 +22,8 @@ const MOBILE_CONFIG = {
         SENSITIVITY: 0.003,
         DECELERATION: 0.95,
         MIN_VELOCITY: 0.001,
-        SNAP_THRESHOLD: 0.05
+        SNAP_THRESHOLD: 0.05,
+        DETENT_VELOCITY: 0.005  // Higher threshold for detent snapping
     },
     
     // Angle constants - mobile arc-based system
