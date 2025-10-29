@@ -1,47 +1,11 @@
 /**
- * Mobile version of MMdM Catalog
- * Updated: October 28, 2025
- * 
- * IMPROVEMENTS IMPLEMENTED:
- * 
- * 1. Modular Class Structure:
- *    - ViewportManager: Handles responsive calculations and caching
- *    - TouchRotationHandler: Manages touch interactions with momentum
- *    - DataManager: Robust data loading with error handling and validation
- *    - MobileRenderer: Efficient DOM manipulation with element caching
- *    - MobileCatalogApp: Main coordinator class with error boundaries
- * 
- * 2. Configuration Management:
- *    - MOBILE_CONFIG: Centralized constants for easy maintenance
- *    - No more magic numbers scattered throughout code
- * 
- * 3. Error Handling:
- *    - Graceful degradation for data loading failures
- *    - Retry mechanisms with exponential backoff
- *    - User-friendly error states with recovery options
- *    - Global error catching for unhandled exceptions
- * 
- * 4. Performance Optimizations:
- *    - Element caching to minimize DOM queries
- *    - Position caching for viewport calculations
- *    - Efficient event handling with proper cleanup
- *    - Reduced DOM manipulation frequency
- * 
- * 5. Development Tools:
- *    - Logger class with conditional debug output
- *    - Enable debugging via: localStorage.setItem('debugMobile', 'true')
- *    - URL parameter support: ?debug=1
- *    - Comprehensive logging throughout the application
- * 
- * USAGE:
- * - The application auto-initializes when DOM is ready
- * - All functionality is encapsulated in class instances
- * - Memory leaks prevented through proper event cleanup
- * - Responsive design handles orientation changes gracefully
+ * Mobile Catalog - Bundled Version
+ * All modules combined for browser compatibility without module system
  */
 
 /**
- * Configuration object for all mobile catalog constants
+ * Mobile Catalog Configuration
+ * Centralized configuration constants for the mobile catalog system
  */
 const MOBILE_CONFIG = {
     // SVG namespace
@@ -83,7 +47,8 @@ const MOBILE_CONFIG = {
 };
 
 /**
- * Logger utility for conditional debug output
+ * Mobile Catalog Logger
+ * Conditional logging utility for debugging and error handling
  */
 class Logger {
     static debug(...args) {
@@ -550,28 +515,65 @@ class MobileRenderer {
         const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
         g.setAttribute('transform', `translate(${position.x}, ${position.y})`);
         g.setAttribute('class', 'marketGroup');
+        g.setAttribute('data-market', market);
+
+        // Create multi-line Italian text for markets
+        const textGroup = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
+        textGroup.setAttribute('class', 'marketText');
+        textGroup.style.cursor = 'pointer';
         
-        // Market text (replacing images for mobile)
-        const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        text.setAttribute('class', 'marketText');
-        text.setAttribute('text-anchor', 'middle');
-        text.setAttribute('dy', '0.35em');
-        text.textContent = market.toUpperCase();
-        g.appendChild(text);
+        // Define Italian text for each market
+        let textLines = [];
+        if (market === 'eurasia') {
+            textLines = ['MOTORI', "DELL'EURASIA"];
+        } else if (market === 'americhe') {
+            textLines = ['MOTORI', 'DELLE', 'AMERICHE'];
+        } else {
+            textLines = [market.toUpperCase()]; // fallback
+        }
         
-        // Hit area
-        const hitArea = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
+        // Create each line of text
+        const lineHeight = 52;
+        const startY = -(textLines.length - 1) * lineHeight / 2;
+        
+        textLines.forEach((line, index) => {
+            const textElement = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
+            textElement.setAttribute('x', 0);
+            textElement.setAttribute('y', startY + (index * lineHeight));
+            textElement.setAttribute('text-anchor', 'middle');
+            textElement.setAttribute('dominant-baseline', 'central');
+            textElement.setAttribute('font-family', 'Montserrat, sans-serif');
+            textElement.setAttribute('font-size', '48px');
+            textElement.setAttribute('font-weight', '700');
+            textElement.setAttribute('fill', 'black');
+            textElement.textContent = line;
+            textGroup.appendChild(textElement);
+        });
+        
+        g.appendChild(textGroup);
+
+        // Hit area around multi-line text for touch
+        const hitArea = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'rect');
         hitArea.setAttribute('class', 'marketHitArea');
-        hitArea.setAttribute('cx', '0');
-        hitArea.setAttribute('cy', '0');
-        hitArea.setAttribute('r', '60');
+        hitArea.setAttribute('x', -100);
+        hitArea.setAttribute('y', market === 'americhe' ? -50 : -35);
+        hitArea.setAttribute('width', 200);
+        hitArea.setAttribute('height', market === 'americhe' ? 100 : 70);
         hitArea.setAttribute('fill', 'transparent');
         hitArea.style.cursor = 'pointer';
         g.appendChild(hitArea);
+
+        // Touch events for mobile
+        hitArea.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            this.handleMarketSelection(market, g);
+        });
         
-        // Event handling
-        hitArea.addEventListener('click', () => this.handleMarketSelection(market, g));
-        
+        hitArea.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.handleMarketSelection(market, g);
+        });
+
         return g;
     }
     
@@ -605,6 +607,11 @@ class MobileRenderer {
         
         // Show manufacturer ring and set up rotation
         this.showManufacturerRing();
+        
+        // Set up touch rotation via the app
+        if (window.mobileCatalogApp) {
+            window.mobileCatalogApp.setupTouchRotation(this.currentManufacturers);
+        }
     }
     
     updateMarketVisuals(selectedElement) {
@@ -648,7 +655,7 @@ class MobileRenderer {
         
         if (!manufacturers.length) return;
         
-        // Clear if this is the first render
+        // Clear if this is the first render  
         if (manufacturersGroup.children.length === 0) {
             this.manufacturerElements.clear();
             this.positionCache.clear();
@@ -825,10 +832,6 @@ class MobileRenderer {
         Logger.debug('Renderer reset');
     }
 }
-
-// Mobile-specific market rendering (corners positioning)
-
-
 
 /**
  * Main application class that coordinates all components
@@ -1065,9 +1068,6 @@ class MobileCatalogApp {
     }
 }
 
-// Global app instance
-let mobileCatalogApp = null;
-
 /**
  * Initialize the mobile catalog application
  */
@@ -1075,8 +1075,8 @@ async function initMobileCatalog() {
     try {
         Logger.debug('Starting mobile catalog initialization...');
         
-        mobileCatalogApp = new MobileCatalogApp();
-        await mobileCatalogApp.init();
+        window.mobileCatalogApp = new MobileCatalogApp();
+        await window.mobileCatalogApp.init();
         
         // Set up global error handling
         window.addEventListener('error', (event) => {
@@ -1092,112 +1092,7 @@ async function initMobileCatalog() {
     }
 }
 
-// Enhanced renderer with multi-line Italian text support
-MobileRenderer.prototype.createMarketElement = function(market, position) {
-    const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-    g.setAttribute('transform', `translate(${position.x}, ${position.y})`);
-    g.setAttribute('class', 'marketGroup');
-    g.setAttribute('data-market', market);
-
-    // Create multi-line Italian text for markets
-    const textGroup = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-    textGroup.setAttribute('class', 'marketText');
-    textGroup.style.cursor = 'pointer';
-    
-    // Define Italian text for each market
-    let textLines = [];
-    if (market === 'eurasia') {
-        textLines = ['MOTORI', "DELL'EURASIA"];
-    } else if (market === 'americhe') {
-        textLines = ['MOTORI', 'DELLE', 'AMERICHE'];
-    } else {
-        textLines = [market.toUpperCase()]; // fallback
-    }
-    
-    // Create each line of text
-    const lineHeight = 52;
-    const startY = -(textLines.length - 1) * lineHeight / 2;
-    
-    textLines.forEach((line, index) => {
-        const textElement = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        textElement.setAttribute('x', 0);
-        textElement.setAttribute('y', startY + (index * lineHeight));
-        textElement.setAttribute('text-anchor', 'middle');
-        textElement.setAttribute('dominant-baseline', 'central');
-        textElement.setAttribute('font-family', 'Montserrat, sans-serif');
-        textElement.setAttribute('font-size', '48px');
-        textElement.setAttribute('font-weight', '700');
-        textElement.setAttribute('fill', 'black');
-        textElement.textContent = line;
-        textGroup.appendChild(textElement);
-    });
-    
-    g.appendChild(textGroup);
-
-    // Hit area around multi-line text for touch
-    const hitArea = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'rect');
-    hitArea.setAttribute('class', 'marketHitArea');
-    hitArea.setAttribute('x', -100);
-    hitArea.setAttribute('y', market === 'americhe' ? -50 : -35);
-    hitArea.setAttribute('width', 200);
-    hitArea.setAttribute('height', market === 'americhe' ? 100 : 70);
-    hitArea.setAttribute('fill', 'transparent');
-    hitArea.style.cursor = 'pointer';
-    g.appendChild(hitArea);
-
-    // Touch events for mobile
-    hitArea.addEventListener('touchstart', (e) => {
-        e.preventDefault();
-        this.handleMarketSelection(market, g);
-    });
-    
-    hitArea.addEventListener('click', (e) => {
-        e.preventDefault();
-        this.handleMarketSelection(market, g);
-    });
-
-    return g;
-};
-
-// Enhanced market selection with touch rotation setup
-MobileRenderer.prototype.handleMarketSelection = function(market, marketElement) {
-    if (this.selectedMarket === market) {
-        Logger.debug('Market already selected:', market);
-        return;
-    }
-    
-    Logger.debug('Market selected:', market);
-    this.selectedMarket = market;
-    this.activeType = 'market';
-    this.activePath = [market];
-    
-    // Update market visuals
-    this.updateMarketVisuals(marketElement);
-    
-    // Update center node
-    this.updateCenterNodeState(true);
-    
-    // Add timestamp for testing
-    this.addTimestampToCenter();
-    
-    // Get manufacturers for this market
-    this.currentManufacturers = this.dataManager.getManufacturers(market);
-    
-    if (this.currentManufacturers.length === 0) {
-        Logger.warn('No manufacturers found for market:', market);
-        return;
-    }
-    
-    // Show manufacturer ring and set up rotation
-    this.showManufacturerRing();
-    
-    // Set up touch rotation via the app
-    if (mobileCatalogApp) {
-        mobileCatalogApp.setupTouchRotation(this.currentManufacturers);
-    }
-};
-
-// Wait for DOM to be ready before initializing
+// Initialize when DOM is ready
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initMobileCatalog);
 } else {

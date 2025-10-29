@@ -32,23 +32,32 @@ text {
     text-transform: uppercase; 
 }
 
-/* Market group transitions */
-.marketGroup image {
+/* Market group transitions - updated for text */
+.marketGroup .marketText {
     transition: all 0.3s ease;
     opacity: 1;
     transform: scale(1);
 }
 
 /* Only inactive markets change - get smaller and opaque */
-.marketGroup.inactive image {
+.marketGroup.inactive .marketText {
     opacity: 0.4;
     transform: scale(0.6);
 }
 
 /* Active markets stay at normal size */
-.marketGroup.active image {
+.marketGroup.active .marketText {
     opacity: 1;
     transform: scale(1);
+}
+
+/* Market text styling */
+.marketText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    fill: black;
+    text-transform: uppercase;
+    font-size: 48px;
 }
 
 /* Center MMdM node transitions */
