@@ -32,6 +32,29 @@ text {
     text-transform: uppercase; 
 }
 
+/* Manufacturer selection styles */
+.manufacturer.selected .node {
+    transition: all 0.2s ease;
+    filter: drop-shadow(0 0 3px rgba(0,0,0,0.3));
+}
+
+.manufacturer .node {
+    transition: all 0.2s ease;
+}
+
+.manufacturer.selected text {
+    font-weight: bold;
+    opacity: 1;
+    font-size: 12px;
+    fill: black;
+}
+
+.manufacturer text {
+    opacity: 0.8;
+    transition: all 0.2s ease;
+    font-size: 10px;
+}
+
 /* Market group transitions - updated for text */
 .marketGroup .marketText {
     transition: all 0.3s ease;

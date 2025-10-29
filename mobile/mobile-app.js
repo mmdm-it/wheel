@@ -173,12 +173,23 @@ class MobileCatalogApp {
         
         const angleStep = MOBILE_CONFIG.ANGLES.MANUFACTURER_SPREAD;
         const middleIndex = (manufacturers.length - 1) / 2;
+        const centerAngle = MOBILE_CONFIG.ANGLES.CENTER_ANGLE; // 135° (Southwest)
         
-        // Rotation limits to center first and last manufacturers
-        const maxOffset = -(0 - middleIndex) * angleStep;
-        const minOffset = -((manufacturers.length - 1) - middleIndex) * angleStep;
+        // Calculate rotation limits so first/last manufacturers stop at CENTER_ANGLE (135°)
+        // When rotationOffset = 0, middle manufacturer is at centerAngle
+        // For first manufacturer (index 0) to be at centerAngle:
+        // centerAngle + offset + (0 - middleIndex) * angleStep = centerAngle
+        // Therefore: offset = -(0 - middleIndex) * angleStep = middleIndex * angleStep
+        const maxOffset = middleIndex * angleStep;
         
-        Logger.debug(`Rotation limits: min=${minOffset * 180 / Math.PI}°, max=${maxOffset * 180 / Math.PI}°`);
+        // For last manufacturer (index length-1) to be at centerAngle:
+        // centerAngle + offset + ((length-1) - middleIndex) * angleStep = centerAngle  
+        // Therefore: offset = -((length-1) - middleIndex) * angleStep = -middleIndex * angleStep
+        const minOffset = -middleIndex * angleStep;
+        
+        Logger.debug(`Rotation limits for ${manufacturers.length} manufacturers:`);
+        Logger.debug(`maxOffset (first manufacturer at 135°): ${maxOffset * 180 / Math.PI}°`);
+        Logger.debug(`minOffset (last manufacturer at 135°): ${minOffset * 180 / Math.PI}°`);
         
         return { min: minOffset, max: maxOffset };
     }

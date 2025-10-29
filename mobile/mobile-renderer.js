@@ -218,20 +218,56 @@ class MobileRenderer {
             // Get or create manufacturer element
             let element = this.manufacturerElements.get(manufacturer.key);
             if (!element) {
-                element = this.createManufacturerElement(manufacturer, position, angle);
+                element = this.createManufacturerElement(manufacturer, position, angle, false);
                 manufacturersGroup.appendChild(element);
                 this.manufacturerElements.set(manufacturer.key, element);
-            } else {
-                this.updateManufacturerElement(element, position, angle);
             }
         });
         
-        // Update active path with centermost manufacturer
-        if (centerMostIndex >= 0) {
-            const centerManufacturer = manufacturers[centerMostIndex];
-            this.activePath = [centerManufacturer.market, centerManufacturer.country, centerManufacturer.name];
-            Logger.debug('Centermost manufacturer:', centerManufacturer.name);
+        // Update selection state for all manufacturers
+        // Only select manufacturer that is exactly at the CENTER_ANGLE position
+        const selectedIndex = this.getSelectedManufacturerIndex(rotationOffset, manufacturers.length);
+        
+        manufacturers.forEach((manufacturer, index) => {
+            const element = this.manufacturerElements.get(manufacturer.key);
+            if (element) {
+                const isSelected = (index === selectedIndex);
+                const angle = adjustedCenterAngle + (index - (manufacturers.length - 1) / 2) * angleStep;
+                const position = this.calculateManufacturerPosition(angle, arcParams);
+                this.updateManufacturerElement(element, position, angle, isSelected);
+            }
+        });
+        
+        // Update active path with selected manufacturer
+        if (selectedIndex >= 0 && selectedIndex < manufacturers.length) {
+            const selectedManufacturer = manufacturers[selectedIndex];
+            this.activePath = [selectedManufacturer.market, selectedManufacturer.country, selectedManufacturer.name];
+            Logger.debug('Selected manufacturer:', selectedManufacturer.name);
         }
+    }
+    
+    getSelectedManufacturerIndex(rotationOffset, manufacturerCount) {
+        if (manufacturerCount === 0) return -1;
+        
+        const angleStep = MOBILE_CONFIG.ANGLES.MANUFACTURER_SPREAD;
+        const middleIndex = (manufacturerCount - 1) / 2;
+        
+        // Calculate which manufacturer index should be at the CENTER_ANGLE position
+        // For a manufacturer at index i to be at CENTER_ANGLE:
+        // CENTER_ANGLE + rotationOffset + (i - middleIndex) * angleStep = CENTER_ANGLE
+        // Therefore: i = middleIndex - (rotationOffset / angleStep)
+        const exactIndex = middleIndex - (rotationOffset / angleStep);
+        const roundedIndex = Math.round(exactIndex);
+        
+        // Only select if the manufacturer is very close to the exact position (detent threshold)
+        const detentThreshold = 0.15; // Allow small deviation for selection
+        const deviation = Math.abs(exactIndex - roundedIndex);
+        
+        if (deviation <= detentThreshold && roundedIndex >= 0 && roundedIndex < manufacturerCount) {
+            return roundedIndex;
+        }
+        
+        return -1; // No manufacturer selected if not close enough to detent position
     }
     
     calculateManufacturerPosition(angle, arcParams) {
@@ -251,7 +287,7 @@ class MobileRenderer {
         return position;
     }
     
-    createManufacturerElement(manufacturer, position, angle) {
+    createManufacturerElement(manufacturer, position, angle, isSelected = false) {
         const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
         g.classList.add('manufacturer');
         g.setAttribute('transform', `translate(${position.x}, ${position.y})`);
@@ -260,8 +296,15 @@ class MobileRenderer {
         circle.setAttribute('class', 'node');
         circle.setAttribute('cx', '0');
         circle.setAttribute('cy', '0');
-        circle.setAttribute('r', MOBILE_CONFIG.RADIUS.UNSELECTED);
+        circle.setAttribute('r', isSelected ? MOBILE_CONFIG.RADIUS.SELECTED : MOBILE_CONFIG.RADIUS.UNSELECTED);
         circle.setAttribute('fill', this.getColor('manufacturer', manufacturer.name));
+        
+        if (isSelected) {
+            circle.setAttribute('stroke', 'black');
+            circle.setAttribute('stroke-width', '2');
+            g.classList.add('selected');
+        }
+        
         g.appendChild(circle);
         
         const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
@@ -271,10 +314,25 @@ class MobileRenderer {
         return g;
     }
     
-    updateManufacturerElement(element, position, angle) {
+    updateManufacturerElement(element, position, angle, isSelected = false) {
         element.setAttribute('transform', `translate(${position.x}, ${position.y})`);
         
+        const circle = element.querySelector('circle');
         const text = element.querySelector('text');
+        
+        // Update selection state
+        if (isSelected) {
+            circle.setAttribute('r', MOBILE_CONFIG.RADIUS.SELECTED);
+            circle.setAttribute('stroke', 'black');
+            circle.setAttribute('stroke-width', '2');
+            element.classList.add('selected');
+        } else {
+            circle.setAttribute('r', MOBILE_CONFIG.RADIUS.UNSELECTED);
+            circle.removeAttribute('stroke');
+            circle.removeAttribute('stroke-width');
+            element.classList.remove('selected');
+        }
+        
         if (text) {
             this.updateManufacturerText(text, angle, text.textContent);
         }
