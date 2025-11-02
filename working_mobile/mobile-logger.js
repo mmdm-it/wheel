@@ -14,11 +14,6 @@ class Logger {
         }
     }
     
-    static info(...args) {
-        // Info messages are always shown (like error/warn)
-        console.info('[MobileCatalog INFO]', ...args);
-    }
-    
     static error(...args) {
         console.error('[MobileCatalog ERROR]', ...args);
     }

@@ -38,37 +38,37 @@ text {
 }
 
 /* Focus item selection styles */
-.manufacturer.selected .node {
+.focus-item.selected .node {
     transition: all 0.2s ease;
     filter: drop-shadow(0 0 3px rgba(0,0,0,0.3));
 }
 
-.manufacturer .node {
+.focus-item .node {
     transition: all 0.2s ease;
 }
 
-.manufacturer.selected text {
+.focus-item.selected text {
     font-weight: bold !important;
     opacity: 1 !important;
-    font-size: 20px !important;
+    font-size: 22px !important;
     fill: black !important;
 }
 
-.manufacturer text {
+.focus-item text {
     opacity: 0.8;
     transition: all 0.2s ease;
     font-size: 15px;
 }
 
-/* Additional specific rule for selected manufacturer text */
-g.manufacturer.selected text {
-    font-size: 20px !important;
+/* Additional specific rule for selected focus item text */
+g.focus-item.selected text {
+    font-size: 22px !important;
     font-weight: bold !important;
 }
 
 /* Even more specific rule */
-#focusRing g.manufacturer.selected text {
-    font-size: 20px !important;
+#focusRing g.focus-item.selected text {
+    font-size: 22px !important;
     font-weight: bold !important;
 }
 
@@ -146,26 +146,25 @@ g.manufacturer.selected text {
     position: absolute;
     bottom: 30px;
     left: 20px;
-    background-color: transparent;
-    color: black;
+    background-color: rgba(54, 46, 106, 0.9);
+    color: #f2f2e6;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    text-transform: uppercase;
     padding: 12px 18px;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: none;
-    box-shadow: none;
+    border: 1px solid rgba(241, 184, 0, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
 
 #parentButton:hover {
-    background-color: transparent;
-    color: black;
+    background-color: rgba(54, 46, 106, 1);
+    border-color: rgba(241, 184, 0, 0.6);
     transform: translateY(-2px);
-    box-shadow: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 #parentButton.hidden {

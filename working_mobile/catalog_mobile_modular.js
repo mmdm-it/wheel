@@ -13,13 +13,17 @@
  * DO NOT create new bundled files - modern browsers support native modules.
  */
 
-// Import new 9-module architecture
+// Import all modules
 import { MOBILE_CONFIG } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
-import { MobileCatalogApp, initMobileCatalog } from './mobile-app.js';
+import { ViewportManager } from './mobile-viewport.js';
+import { TouchRotationHandler } from './mobile-touch.js';
+import { DataManager } from './mobile-data.js';
+import { MobileRenderer } from './mobile-renderer.js';
+import { MobileCatalogApp, initMobileCatalog, extendMobileRenderer } from './mobile-app.js';
 
-// Note: Old modules (mobile-viewport.js, mobile-touch.js, mobile-renderer.js) 
-// have been replaced by the new architecture in mobile-app.js
+// Apply renderer extensions for enhanced functionality
+extendMobileRenderer();
 
 // Initialize when DOM is ready
 if (document.readyState === 'loading') {
@@ -33,6 +37,10 @@ if (document.readyState === 'loading') {
 export {
     MOBILE_CONFIG,
     Logger,
+    ViewportManager,
+    TouchRotationHandler,
+    DataManager,
+    MobileRenderer,
     MobileCatalogApp,
     initMobileCatalog
 };
