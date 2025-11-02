@@ -517,11 +517,44 @@
                                 "year_founded": 1925,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "4": {},
-                                    "6": {},
-                                    "8": {},
-                                    "12": {},
-                                    "16": {}
+                                    "4": [
+                                        {"engine_model": "3054", "year_introduced": 1990, "year_discontinued": null, "family": "3000 Series", "in_a_family": true},
+                                        {"engine_model": "3056", "year_introduced": 1992, "year_discontinued": null, "family": "3000 Series", "in_a_family": true},
+                                        {"engine_model": "C4.4", "year_introduced": 2004, "year_discontinued": null, "family": "C Series", "in_a_family": true},
+                                        {"engine_model": "C6.6", "year_introduced": 2006, "year_discontinued": null, "family": "C Series", "in_a_family": true}
+                                    ],
+                                    "6": [
+                                        {"engine_model": "3306", "year_introduced": 1973, "year_discontinued": 2010, "family": "3300 Series", "in_a_family": true},
+                                        {"engine_model": "C7", "year_introduced": 2003, "year_discontinued": null, "family": "C Series", "in_a_family": true},
+                                        {"engine_model": "C9", "year_introduced": 2003, "year_discontinued": null, "family": "C Series", "in_a_family": true},
+                                        {"engine_model": "C13", "year_introduced": 2007, "year_discontinued": null, "family": "C Series", "in_a_family": true},
+                                        {"engine_model": "C15", "year_introduced": 1999, "year_discontinued": 2010, "family": "C Series", "in_a_family": true},
+                                        {"engine_model": "C18", "year_introduced": 2007, "year_discontinued": null, "family": "C Series", "in_a_family": true},
+                                        {"engine_model": "6C", "year_introduced": 1985, "year_discontinued": 2005, "family": "6C Series", "in_a_family": true},
+                                        {"engine_model": "6CT", "year_introduced": 1988, "year_discontinued": 2010, "family": "6C Series", "in_a_family": true}
+                                    ],
+                                    "8": [
+                                        {"engine_model": "3208", "year_introduced": 1975, "year_discontinued": 1999, "family": "3200 Series", "in_a_family": true},
+                                        {"engine_model": "3208T", "year_introduced": 1981, "year_discontinued": 1999, "family": "3200 Series", "in_a_family": true},
+                                        {"engine_model": "C32", "year_introduced": 2010, "year_discontinued": null, "family": "C Series", "in_a_family": true},
+                                        {"engine_model": "V504M", "year_introduced": 1970, "year_discontinued": 1990, "family": "V Series", "in_a_family": true},
+                                        {"engine_model": "V555M", "year_introduced": 1975, "year_discontinued": 1995, "family": "V Series", "in_a_family": true},
+                                        {"engine_model": "V903M", "year_introduced": 1980, "year_discontinued": 2000, "family": "V Series", "in_a_family": true}
+                                    ],
+                                    "12": [
+                                        {"engine_model": "D379", "year_introduced": 1965, "year_discontinued": 1985, "family": "D Series", "in_a_family": true},
+                                        {"engine_model": "D398", "year_introduced": 1968, "year_discontinued": 1990, "family": "D Series", "in_a_family": true},
+                                        {"engine_model": "D399", "year_introduced": 1972, "year_discontinued": 1995, "family": "D Series", "in_a_family": true},
+                                        {"engine_model": "3412", "year_introduced": 1979, "year_discontinued": 2006, "family": "3400 Series", "in_a_family": true},
+                                        {"engine_model": "3412C", "year_introduced": 1988, "year_discontinued": 2010, "family": "3400 Series", "in_a_family": true},
+                                        {"engine_model": "C32", "year_introduced": 2010, "year_discontinued": null, "family": "C Series", "in_a_family": true}
+                                    ],
+                                    "16": [
+                                        {"engine_model": "3516", "year_introduced": 1982, "year_discontinued": 2008, "family": "3500 Series", "in_a_family": true},
+                                        {"engine_model": "3516B", "year_introduced": 1995, "year_discontinued": 2012, "family": "3500 Series", "in_a_family": true},
+                                        {"engine_model": "3516C", "year_introduced": 2008, "year_discontinued": null, "family": "3500 Series", "in_a_family": true},
+                                        {"engine_model": "C175-16", "year_introduced": 2018, "year_discontinued": null, "family": "C Series", "in_a_family": true}
+                                    ]
                                 }
                             },
                             "Cummins": {
@@ -538,9 +571,44 @@
                                 "year_founded": 1903,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "4": {},
-                                    "6": {},
-                                    "8": {}
+                                    "4": [
+                                        {"engine_model": "Model A 200.5 CID", "year_introduced": 1927, "year_discontinued": 1931, "family": "Model A", "in_a_family": true},
+                                        {"engine_model": "200 CID Kent", "year_introduced": 1965, "year_discontinued": 1980, "family": "Kent", "in_a_family": true},
+                                        {"engine_model": "2.0L CVH", "year_introduced": 1980, "year_discontinued": 1995, "family": "CVH", "in_a_family": true},
+                                        {"engine_model": "2.3L Lima", "year_introduced": 1974, "year_discontinued": 1997, "family": "Lima", "in_a_family": true},
+                                        {"engine_model": "2.3L HSC", "year_introduced": 1984, "year_discontinued": 1994, "family": "HSC", "in_a_family": true}
+                                    ],
+                                    "6": [
+                                        {"engine_model": "226 CID Flathead I6", "year_introduced": 1941, "year_discontinued": 1951, "family": "Flathead Six", "in_a_family": true},
+                                        {"engine_model": "254 CID Flathead I6", "year_introduced": 1948, "year_discontinued": 1953, "family": "Flathead Six", "in_a_family": true},
+                                        {"engine_model": "200 CID I6", "year_introduced": 1965, "year_discontinued": 1983, "family": "Falcon Six", "in_a_family": true},
+                                        {"engine_model": "250 CID I6", "year_introduced": 1969, "year_discontinued": 1996, "family": "Falcon Six", "in_a_family": true},
+                                        {"engine_model": "300 CID I6", "year_introduced": 1965, "year_discontinued": 1996, "family": "Truck Six", "in_a_family": true},
+                                        {"engine_model": "2.9L Cologne V6", "year_introduced": 1986, "year_discontinued": 2001, "family": "Cologne", "in_a_family": true},
+                                        {"engine_model": "3.0L Vulcan V6", "year_introduced": 1986, "year_discontinued": 2008, "family": "Vulcan", "in_a_family": true},
+                                        {"engine_model": "4.0L Cologne V6", "year_introduced": 1991, "year_discontinued": 2011, "family": "Cologne", "in_a_family": true},
+                                        {"engine_model": "3.8L Essex V6", "year_introduced": 1982, "year_discontinued": 2008, "family": "Essex", "in_a_family": true}
+                                    ],
+                                    "8": [
+                                        {"engine_model": "221 CID Flathead V8", "year_introduced": 1932, "year_discontinued": 1953, "family": "Flathead", "in_a_family": true},
+                                        {"engine_model": "239 CID Flathead V8", "year_introduced": 1939, "year_discontinued": 1953, "family": "Flathead", "in_a_family": true},
+                                        {"engine_model": "255 CID Flathead V8", "year_introduced": 1949, "year_discontinued": 1953, "family": "Flathead", "in_a_family": true},
+                                        {"engine_model": "260 Windsor", "year_introduced": 1962, "year_discontinued": 1982, "family": "Windsor", "in_a_family": true},
+                                        {"engine_model": "289 Windsor", "year_introduced": 1963, "year_discontinued": 1968, "family": "Windsor", "in_a_family": true},
+                                        {"engine_model": "302 Windsor", "year_introduced": 1968, "year_discontinued": 2000, "family": "Windsor", "in_a_family": true},
+                                        {"engine_model": "351W Windsor", "year_introduced": 1969, "year_discontinued": 2000, "family": "Windsor", "in_a_family": true},
+                                        {"engine_model": "332 FE", "year_introduced": 1958, "year_discontinued": 1964, "family": "FE", "in_a_family": true},
+                                        {"engine_model": "352 FE", "year_introduced": 1958, "year_discontinued": 1976, "family": "FE", "in_a_family": true},
+                                        {"engine_model": "390 FE", "year_introduced": 1961, "year_discontinued": 1976, "family": "FE", "in_a_family": true},
+                                        {"engine_model": "427 FE", "year_introduced": 1963, "year_discontinued": 1968, "family": "FE", "in_a_family": true},
+                                        {"engine_model": "428 FE", "year_introduced": 1966, "year_discontinued": 1970, "family": "FE", "in_a_family": true},
+                                        {"engine_model": "351C Cleveland", "year_introduced": 1970, "year_discontinued": 1982, "family": "Cleveland", "in_a_family": true},
+                                        {"engine_model": "400 Cleveland", "year_introduced": 1971, "year_discontinued": 1982, "family": "Cleveland", "in_a_family": true},
+                                        {"engine_model": "351M Cleveland", "year_introduced": 1975, "year_discontinued": 1982, "family": "Cleveland", "in_a_family": true},
+                                        {"engine_model": "4.6L Modular", "year_introduced": 1991, "year_discontinued": null, "family": "Modular", "in_a_family": true},
+                                        {"engine_model": "5.0L Coyote", "year_introduced": 2011, "year_discontinued": null, "family": "Modular", "in_a_family": true},
+                                        {"engine_model": "5.4L Triton", "year_introduced": 1997, "year_discontinued": 2010, "family": "Modular", "in_a_family": true}
+                                    ]
                                 }
                             },
                             "General Motors": {
@@ -700,8 +768,13 @@
                                 "year_founded": 1902,
                                 "year_dissolved": 1956,
                                 "cylinders": {
-                                    "1": {},
-                                    "2": {}
+                                    "1": [
+                                        {"engine_model": "Model F", "year_introduced": 1905, "year_discontinued": 1926, "family": "Other", "in_a_family": false}
+                                    ],
+                                    "2": [
+                                        {"engine_model": "Model C", "year_introduced": 1905, "year_discontinued": 1926, "family": "Other", "in_a_family": false},
+                                        {"engine_model": "Model E", "year_introduced": 1905, "year_discontinued": 1926, "family": "Other", "in_a_family": false}
+                                    ]
                                 }
                             },
                             "Nadler": {
