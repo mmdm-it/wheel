@@ -62,25 +62,38 @@
                                 "year_dissolved": null,
                                 "cylinders": {}
                             },
-                            "Iveco Aifo": {
+                            "Iveco": {
                                 "year_founded": 1975,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {},
+                                    "8": {}
+                                }
                             },
                             "FPT Industrial": {
                                 "year_founded": 2013,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {}
+                                }
                             },
                             "Selva Marine": {
                                 "year_founded": 1954,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Aifo": {
                                 "year_founded": 1955,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {}
+                                }
                             },
                             "Motori Lombardini": {
                                 "year_founded": 1933,
@@ -91,6 +104,14 @@
                                 "year_founded": 1966,
                                 "year_dissolved": null,
                                 "cylinders": {}
+                            },
+                            "Lancia Marine": {
+                                "year_founded": 1906,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {}
+                                }
                             }
                         }
                     },
@@ -106,10 +127,15 @@
                                 "year_dissolved": null,
                                 "cylinders": {}
                             },
-                            "Mercedes": {
+                            "Mercedes-Benz": {
                                 "year_founded": 1926,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {},
+                                    "8": {},
+                                    "12": {}
+                                }
                             },
                             "BMW Marine": {
                                 "year_founded": 1916,
@@ -121,10 +147,14 @@
                                 "year_dissolved": null,
                                 "cylinders": {}
                             },
-                            "Hatz": {
-                                "year_founded": 1880,
+                            "Fiat": {
+                                "year_founded": 1899,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {},
+                                    "8": {}
+                                }
                             },
                             "Kubota Germany": {
                                 "year_founded": 1968,
@@ -135,6 +165,14 @@
                                 "year_founded": 1864,
                                 "year_dissolved": null,
                                 "cylinders": {}
+                            },
+                            "Volkswagen Marine": {
+                                "year_founded": 1937,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {}
+                                }
                             }
                         }
                     },
@@ -159,6 +197,14 @@
                                 "year_founded": 1904,
                                 "year_dissolved": null,
                                 "cylinders": {}
+                            },
+                            "Renault Marine": {
+                                "year_founded": 1899,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {}
+                                }
                             }
                         }
                     },
@@ -176,7 +222,11 @@
                             "Perkins": {
                                 "year_founded": 1932,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "3": {},
+                                    "4": {},
+                                    "6": {}
+                                }
                             },
                             "Lister Petter": {
                                 "year_founded": 1867,
@@ -191,7 +241,11 @@
                             "Rolls-Royce": {
                                 "year_founded": 1904,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "6": {},
+                                    "8": {},
+                                    "12": {}
+                                }
                             },
                             "Kelvin Diesels": {
                                 "year_founded": 1904,
@@ -212,6 +266,16 @@
                                 "year_founded": 1893,
                                 "year_dissolved": 1967,
                                 "cylinders": {}
+                            },
+                            "Napier": {
+                                "year_founded": 1808,
+                                "year_dissolved": 1986,
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {},
+                                    "6": {}
+                                }
                             }
                         }
                     },
@@ -220,12 +284,22 @@
                             "Volvo Penta": {
                                 "year_founded": 1907,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "3": {},
+                                    "4": {},
+                                    "5": {},
+                                    "6": {},
+                                    "8": {}
+                                }
                             },
                             "Scania": {
                                 "year_founded": 1891,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {},
+                                    "8": {}
+                                }
                             }
                         }
                     },
@@ -275,7 +349,14 @@
                             "Yanmar": {
                                 "year_founded": 1912,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "3": {},
+                                    "4": {},
+                                    "6": {},
+                                    "8": {}
+                                }
                             },
                             "Isuzu": {
                                 "year_founded": 1916,
@@ -290,12 +371,21 @@
                             "Mitsubishi": {
                                 "year_founded": 1870,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {},
+                                    "8": {}
+                                }
                             },
                             "Kubota": {
                                 "year_founded": 1890,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "3": {},
+                                    "4": {}
+                                }
                             },
                             "Nissan": {
                                 "year_founded": 1933,
@@ -346,6 +436,11 @@
                                 "year_founded": 1896,
                                 "year_dissolved": null,
                                 "cylinders": {}
+                            },
+                            "Mazda Marine": {
+                                "year_founded": 1920,
+                                "year_dissolved": null,
+                                "cylinders": {}
                             }
                         }
                     },
@@ -365,10 +460,16 @@
                     },
                     "Russia": {
                         "manufacturers": {
-                            "ZMZ": {
-                                "year_founded": 1958,
+                            "MAN": {
+                                "year_founded": 1758,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {},
+                                    "8": {},
+                                    "12": {},
+                                    "16": {}
+                                }
                             },
                             "TMZ": {
                                 "year_founded": 1941,
@@ -415,22 +516,41 @@
                             "Caterpillar": {
                                 "year_founded": 1925,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {},
+                                    "8": {},
+                                    "12": {},
+                                    "16": {}
+                                }
                             },
                             "Cummins": {
                                 "year_founded": 1919,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {},
+                                    "8": {},
+                                    "12": {}
+                                }
                             },
                             "Ford": {
                                 "year_founded": 1903,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {},
+                                    "8": {}
+                                }
                             },
                             "General Motors": {
                                 "year_founded": 1908,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "4": {},
+                                    "6": {},
+                                    "8": {}
+                                }
                             },
                             "MerCruiser": {
                                 "year_founded": 1961,
@@ -573,6 +693,45 @@
                             },
                             "Indmar": {
                                 "year_founded": 1946,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Lockwood-Ash": {
+                                "year_founded": 1902,
+                                "year_dissolved": 1956,
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {}
+                                }
+                            },
+                            "Nadler": {
+                                "year_founded": 1920,
+                                "year_dissolved": 1975,
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {}
+                                }
+                            },
+                            "Scripps": {
+                                "year_founded": 1914,
+                                "year_dissolved": 1942,
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
+                            },
+                            "Kermath": {
+                                "year_founded": 1918,
+                                "year_dissolved": 1962,
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
+                            },
+                            "Hacker-Craft": {
+                                "year_founded": 1908,
                                 "year_dissolved": null,
                                 "cylinders": {}
                             }

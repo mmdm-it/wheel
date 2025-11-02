@@ -32,6 +32,12 @@ class MobileRenderer {
         // Settling state for smooth cylinder display
         this.isRotating = false;
         this.settleTimeout = null;
+        
+        // Sprocket chain viewport state
+        this.allFocusItems = []; // Complete linear chain of all manufacturers
+        this.chainPosition = 0; // Current position in the linear chain (0-based)
+        this.visibleStartIndex = 0; // First visible manufacturer index
+        this.visibleEndIndex = 0; // Last visible manufacturer index
     }
     
     async initialize() {
@@ -266,7 +272,12 @@ class MobileRenderer {
         // Create magnifier at correct position when focus items are shown
         this.createMagnifier();
         
-        // Calculate initial rotation to center nearest focus item
+        // Initialize viewport filtering state
+        this.allFocusItems = this.currentFocusItems; // Set the complete list for filtering
+        
+        Logger.debug(`Viewport filtering initialized: ${this.allFocusItems.length} total manufacturers`);
+        
+        // Calculate initial rotation to center nearest focus item (original logic)
         const initialOffset = this.calculateInitialRotationOffset();
         Logger.debug(`Using initial rotation offset: ${initialOffset} radians (${initialOffset * 180 / Math.PI}°)`);
         
@@ -305,9 +316,10 @@ class MobileRenderer {
     
     updateFocusRingPositions(rotationOffset) {
         const focusRingGroup = this.elements.focusRingGroup;
-        const focusItems = this.currentFocusItems;
         
-        if (!focusItems.length) return;
+        // For sprocket chain: use all focus items but apply viewport filtering during rendering
+        const allFocusItems = this.allFocusItems.length > 0 ? this.allFocusItems : this.currentFocusItems;
+        if (!allFocusItems.length) return;
         
         // Validate rotationOffset
         if (isNaN(rotationOffset)) {
@@ -315,83 +327,64 @@ class MobileRenderer {
             rotationOffset = 0; // Safe fallback
         }
         
-        // Clear if this is the first render  
-        if (focusRingGroup.children.length === 0) {
-            this.focusElements.clear();
-            this.positionCache.clear();
-        }
+        // Clear existing elements
+        focusRingGroup.innerHTML = '';
+        this.focusElements.clear();
         
-        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        // Use original angle calculation logic 
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD; // Keep original 4.3° spacing
         const centerAngle = this.viewport.getCenterAngle();
+        const adjustedCenterAngle = centerAngle + rotationOffset;
         
         // Validate centerAngle
-        if (isNaN(centerAngle)) {
-            Logger.error(`Invalid centerAngle: ${centerAngle}`);
+        if (isNaN(centerAngle) || isNaN(adjustedCenterAngle)) {
+            Logger.error(`Invalid angles: centerAngle=${centerAngle}, adjustedCenterAngle=${adjustedCenterAngle}`);
             return;
         }
         
-        const adjustedCenterAngle = centerAngle + rotationOffset;
-        
         // Calculate arc parameters
         const arcParams = this.viewport.getArcParameters();
-        let centerMostIndex = -1;
-        let minAngleDifference = Infinity;
-        const targetAngle = this.viewport.getCenterAngle();
+        let selectedFocusItem = null;
+        let selectedIndex = -1;
         
-        focusItems.forEach((focusItem, index) => {
-            const angle = adjustedCenterAngle + (index - (focusItems.length - 1) / 2) * angleStep;
+        // Process all manufacturers but only render those in viewport window
+        allFocusItems.forEach((focusItem, index) => {
+            // Calculate angle using original logic
+            const angle = adjustedCenterAngle + (index - (allFocusItems.length - 1) / 2) * angleStep;
             
             // Validate calculated angle
             if (isNaN(angle)) {
-                Logger.error(`Invalid angle calculation: adjustedCenterAngle=${adjustedCenterAngle}, index=${index}, focusItems.length=${focusItems.length}, angleStep=${angleStep}`);
-                return; // Skip this focus item
+                Logger.error(`Invalid calculated angle for focus item ${index}: ${angle}`);
+                return;
             }
             
-            const position = this.calculateFocusPosition(angle, arcParams);
+            // Check if this manufacturer should be visible (viewport filter)
+            const angleDiff = Math.abs(angle - centerAngle);
+            const maxViewportAngle = MOBILE_CONFIG.VIEWPORT.VIEWPORT_ARC / 2;
             
-            // Track centermost manufacturer
-            const angleDiff = Math.abs(angle - targetAngle);
-            if (angleDiff < minAngleDifference) {
-                minAngleDifference = angleDiff;
-                centerMostIndex = index;
-            }
-            
-            // Get or create focus element
-            let element = this.focusElements.get(focusItem.key);
-            if (!element) {
-                element = this.createFocusElement(focusItem, position, angle, false);
-                focusRingGroup.appendChild(element);
-                this.focusElements.set(focusItem.key, element);
-            }
-        });
-        
-        // Find selected focus item first
-        const selectedIndex = this.getSelectedFocusIndex(rotationOffset, focusItems.length);
-        
-        // Update all focus item positions and scaling
-        focusItems.forEach((focusItem, index) => {
-            const element = this.focusElements.get(focusItem.key);
-            if (element) {
-                const angle = adjustedCenterAngle + (index - (focusItems.length - 1) / 2) * angleStep;
+            if (angleDiff <= maxViewportAngle) {
+                // This manufacturer is in the viewport - render it
+                const position = this.calculateFocusPosition(angle, arcParams);
                 
-                // Validate calculated angle
-                if (isNaN(angle)) {
-                    Logger.error(`Invalid angle in update loop: adjustedCenterAngle=${adjustedCenterAngle}, index=${index}, focusItems.length=${focusItems.length}, angleStep=${angleStep}`);
-                    return; // Skip this focus item
+                // Check if selected (centered) - should match snapping range
+                const isSelected = angleDiff < (angleStep * 0.5); // ~2.15° - matches snapping threshold
+                if (isSelected) {
+                    selectedFocusItem = focusItem;
+                    selectedIndex = index;
                 }
                 
-                const position = this.calculateFocusPosition(angle, arcParams);
-                const isSelected = (index === selectedIndex);
-                this.updateFocusElement(element, position, angle, isSelected);
+                // Create focus element
+                const element = this.createFocusElement(focusItem, position, angle, isSelected);
+                this.focusElements.set(focusItem.key, element);
+                focusRingGroup.appendChild(element);
             }
         });
         
         // Position magnifying ring at the calculated center angle
         this.positionMagnifyingRing();
         
-        // Update active path with selected focus item
-        if (selectedIndex >= 0 && selectedIndex < focusItems.length) {
-            const selectedFocusItem = focusItems[selectedIndex];
+        // Update active path with selected focus item  
+        if (selectedIndex >= 0 && selectedFocusItem) {
             this.activePath = [selectedFocusItem.market, selectedFocusItem.country, selectedFocusItem.name];
             
             // Mark as rotating and defer cylinder display
@@ -415,7 +408,7 @@ class MobileRenderer {
             this.settleTimeout = setTimeout(() => {
                 this.isRotating = false;
                 if (this.selectedManufacturer && this.selectedManufacturer.key === selectedFocusItem.key) {
-                    const angle = this.viewport.getCenterAngle() + rotationOffset + (selectedIndex - (focusItems.length - 1) / 2) * angleStep;
+                    const angle = adjustedCenterAngle + (selectedIndex - (allFocusItems.length - 1) / 2) * angleStep;
                     Logger.debug('Focus item settled:', selectedFocusItem.name, 'showing child ring');
                     this.showCylinderRing(selectedFocusItem.market, selectedFocusItem.country, selectedFocusItem.name, angle);
                 }
@@ -455,6 +448,8 @@ class MobileRenderer {
         return -1; // No focus item selected if not close enough to detent position
     }
     
+
+    
     calculateFocusPosition(angle, arcParams) {
         // Validate inputs
         if (isNaN(angle) || !arcParams || isNaN(arcParams.centerX) || isNaN(arcParams.centerY) || isNaN(arcParams.radius)) {
@@ -493,14 +488,14 @@ class MobileRenderer {
         circle.setAttribute('class', 'node');
         circle.setAttribute('cx', '0');
         circle.setAttribute('cy', '0');
-        circle.setAttribute('r', isSelected ? MOBILE_CONFIG.RADIUS.SELECTED : MOBILE_CONFIG.RADIUS.UNSELECTED);
+        circle.setAttribute('r', isSelected ? MOBILE_CONFIG.RADIUS.MAGNIFIED : MOBILE_CONFIG.RADIUS.UNSELECTED);
         circle.setAttribute('fill', this.getColor('manufacturer', manufacturer.name));
         
         if (isSelected) {
-            circle.setAttribute('stroke', 'black');
-            circle.setAttribute('stroke-width', '2');
             g.classList.add('selected');
         }
+        
+        // No strokes on focus nodes - clean styling
         
         g.appendChild(circle);
         
