@@ -3,824 +3,406 @@
         "markets": {
             "eurasia": {
                 "countries": {
-                    "Italy": {
+                    "Italia": {
                         "manufacturers": {
                             "VM Motori": {
-                                "cylinders": {
-                                    "4": [
-                                        {
-                                            "engine_model": "3054",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        }
-                                    ]
-                                }
-                            },
-                            "Amsterdam": {
-                                "year_founded": null,
+                                "year_founded": 1947,
                                 "year_dissolved": null,
                                 "cylinders": {
                                     "4": [
-                                        {"engine_model": "A4-100", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "A4-200", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "A4-300", "year_introduced": null, "year_discontinued": null}
+                                        {"engine_model": "HR 494", "year_introduced": null, "year_discontinued": null},
+                                        {"engine_model": "HR 692", "year_introduced": null, "year_discontinued": null}
                                     ],
                                     "6": [
-                                        {"engine_model": "A6-100", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "A6-200", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "A6-300", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "A6-400", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "A6-500", "year_introduced": null, "year_discontinued": null}
+                                        {"engine_model": "HR 394", "year_introduced": null, "year_discontinued": null},
+                                        {"engine_model": "HR 496", "year_introduced": null, "year_discontinued": null}
                                     ]
                                 }
                             },
-                            "Berlin": {
-                                "year_founded": null,
+                            "Isotta Fraschini": {
+                                "year_founded": 1900,
                                 "year_dissolved": null,
                                 "cylinders": {
                                     "6": [
-                                        {"engine_model": "B6-Alpha", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "B6-Beta", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "B6-Gamma", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "B6-Delta", "year_introduced": null, "year_discontinued": null}
+                                        {"engine_model": "ID36 SR", "year_introduced": null, "year_discontinued": null},
+                                        {"engine_model": "ID36 SR4", "year_introduced": null, "year_discontinued": null}
                                     ],
                                     "8": [
-                                        {"engine_model": "B8-Pro", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "B8-Max", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "B8-Ultra", "year_introduced": null, "year_discontinued": null}
+                                        {"engine_model": "ID36 SS", "year_introduced": null, "year_discontinued": null},
+                                        {"engine_model": "V1708", "year_introduced": null, "year_discontinued": null}
                                     ],
                                     "12": [
-                                        {"engine_model": "B12-Power", "year_introduced": null, "year_discontinued": null}
+                                        {"engine_model": "ID36 SSR", "year_introduced": null, "year_discontinued": null},
+                                        {"engine_model": "V1712", "year_introduced": null, "year_discontinued": null}
                                     ]
                                 }
                             },
-                            "Cannes": {
-                                "year_founded": null,
+                            "Lombardini": {
+                                "year_founded": 1922,
                                 "year_dissolved": null,
                                 "cylinders": {
+                                    "1": [
+                                        {"engine_model": "LDW 702", "year_introduced": null, "year_discontinued": null},
+                                        {"engine_model": "LDW 1003", "year_introduced": null, "year_discontinued": null}
+                                    ],
+                                    "2": [
+                                        {"engine_model": "LDW 1204", "year_introduced": null, "year_discontinued": null},
+                                        {"engine_model": "LDW 1404", "year_introduced": null, "year_discontinued": null}
+                                    ],
+                                    "3": [
+                                        {"engine_model": "LDW 2204", "year_introduced": null, "year_discontinued": null}
+                                    ],
                                     "4": [
-                                        {"engine_model": "C4-S1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "C4-S2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "C4-S3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "C4-S4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "C4-S5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "C4-S6", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "C4-S7", "year_introduced": null, "year_discontinued": null}
+                                        {"engine_model": "LDW 2004", "year_introduced": null, "year_discontinued": null}
                                     ]
                                 }
                             },
-                            "Dublin": {
-                                "year_founded": null,
+                            "Ruggerini": {
+                                "year_founded": 1919,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "6": [
-                                        {"engine_model": "D6-X1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "D6-X2", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "D8-X1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "D8-X2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "D8-X3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "D8-X4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "D8-X5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "D8-X6", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
+                                "cylinders": {}
                             },
-                            "Edinburgh": {
-                                "year_founded": null,
+                            "Iveco Aifo": {
+                                "year_founded": 1975,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "E4-T100", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "E4-T200", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "E4-T300", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "E4-T400", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "E4-T500", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "E4-T600", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "E4-T700", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "E4-T800", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "E6-T100", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "E6-T200", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "E8-T100", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
+                                "cylinders": {}
                             },
-                            "Florence": {
-                                "year_founded": null,
+                            "FPT Industrial": {
+                                "year_founded": 2013,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "12": [
-                                        {"engine_model": "F12-V1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "F12-V2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "F12-V3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "F12-V4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "F12-V5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "F12-V6", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "F12-V7", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "F12-V8", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "F12-V9", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "F12-V10", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
+                                "cylinders": {}
                             },
-                            "Geneva": {
-                                "year_founded": null,
+                            "Selva Marine": {
+                                "year_founded": 1954,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "G4-M1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "G4-M2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "G4-M3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "G4-M4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "G4-M5", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "G6-M1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "G6-M2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "G6-M3", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
+                                "cylinders": {}
                             },
-                            "Hamburg": {
-                                "year_founded": null,
+                            "Aifo": {
+                                "year_founded": 1955,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "6": [
-                                        {"engine_model": "H6-P1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "H6-P2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "H6-P3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "H6-P4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "H6-P5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "H6-P6", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "H8-P1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "H8-P2", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "12": [
-                                        {"engine_model": "H12-P1", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
+                                "cylinders": {}
                             },
-                            "Istanbul": {
-                                "year_founded": null,
+                            "Motori Lombardini": {
+                                "year_founded": 1933,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "I4-R100", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "I4-R200", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "I4-R300", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "I4-R400", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "I6-R100", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "I6-R200", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "I6-R300", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "I8-R100", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "I8-R200", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
+                                "cylinders": {}
                             },
-                            "Lisbon": {
-                                "year_founded": null,
+                            "Admiral": {
+                                "year_founded": 1966,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "L4-Z1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "L4-Z2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "L4-Z3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "L4-Z4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "L4-Z5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "L4-Z6", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "L4-Z7", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "L4-Z8", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "L4-Z9", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Madrid": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "6": [
-                                        {"engine_model": "M6-Q1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "M6-Q2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "M6-Q3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "M6-Q4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "M6-Q5", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "M8-Q1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "M8-Q2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "M8-Q3", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Milan": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "MI4-A", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MI4-B", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "MI6-A", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MI6-B", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MI6-C", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MI6-D", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "MI8-A", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "12": [
-                                        {"engine_model": "MI12-A", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MI12-B", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Munich": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "MU4-1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MU4-2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MU4-3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MU4-4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MU4-5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MU4-6", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "MU6-1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MU6-2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MU6-3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MU6-4", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Naples": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "8": [
-                                        {"engine_model": "N8-TX1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "N8-TX2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "N8-TX3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "N8-TX4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "N8-TX5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "N8-TX6", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "N8-TX7", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Oslo": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "O4-K1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "O4-K2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "O4-K3", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "O6-K1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "O6-K2", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "O8-K1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "O8-K2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "O8-K3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "O8-K4", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Paris": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "P4-E100", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "P4-E200", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "P4-E300", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "P4-E400", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "P4-E500", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "P6-E100", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "P6-E200", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "P6-E300", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "12": [
-                                        {"engine_model": "P12-E100", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "P12-E200", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Prague": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "PR4-1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "PR4-2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "PR4-3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "PR4-4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "PR4-5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "PR4-6", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "PR4-7", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "PR4-8", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Rome": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "6": [
-                                        {"engine_model": "R6-I1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "R6-I2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "R6-I3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "R6-I4", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "R8-I1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "R8-I2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "R8-I3", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Rotterdam": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "RT4-N1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "RT4-N2", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "RT6-N1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "RT6-N2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "RT6-N3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "RT6-N4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "RT6-N5", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "RT8-N1", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "12": [
-                                        {"engine_model": "RT12-N1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "RT12-N2", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Stockholm": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "ST4-W1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "ST4-W2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "ST4-W3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "ST4-W4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "ST4-W5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "ST4-W6", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Turin": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "6": [
-                                        {"engine_model": "TU6-F1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "TU6-F2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "TU6-F3", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "TU8-F1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "TU8-F2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "TU8-F3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "TU8-F4", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "12": [
-                                        {"engine_model": "TU12-F1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "TU12-F2", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Valencia": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "V4-S100", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "V4-S200", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "V4-S300", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "V4-S400", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "V4-S500", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "V4-S600", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "V4-S700", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "V4-S800", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "V4-S900", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "V6-S100", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Venice": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "8": [
-                                        {"engine_model": "VE8-L1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "VE8-L2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "VE8-L3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "VE8-L4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "VE8-L5", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Vienna": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "VI4-A1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "VI4-A2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "VI4-A3", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "VI6-A1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "VI6-A2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "VI6-A3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "VI6-A4", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Warsaw": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "W4-P1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "W4-P2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "W4-P3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "W4-P4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "W4-P5", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "W8-P1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "W8-P2", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "12": [
-                                        {"engine_model": "W12-P1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "W12-P2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "W12-P3", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Zagreb": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "6": [
-                                        {"engine_model": "Z6-C1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "Z6-C2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "Z6-C3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "Z6-C4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "Z6-C5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "Z6-C6", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Zurich": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "ZU4-H1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "ZU4-H2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "ZU4-H3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "ZU4-H4", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "ZU6-H1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "ZU6-H2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "ZU6-H3", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "ZU8-H1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "ZU8-H2", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Athens": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "AT4-G1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "AT4-G2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "AT4-G3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "AT4-G4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "AT4-G5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "AT4-G6", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "AT4-G7", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Barcelona": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "6": [
-                                        {"engine_model": "BA6-T1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BA6-T2", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "BA8-T1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BA8-T2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BA8-T3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BA8-T4", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Brussels": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "BR4-B1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BR4-B2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BR4-B3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BR4-B4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BR4-B5", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "BR6-B1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BR6-B2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BR6-B3", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "12": [
-                                        {"engine_model": "BR12-B1", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Budapest": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "BU4-H1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BU4-H2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BU4-H3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BU4-H4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BU4-H5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BU4-H6", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BU4-H7", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BU4-H8", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "BU6-H1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "BU6-H2", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Copenhagen": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "6": [
-                                        {"engine_model": "CO6-D1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "CO6-D2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "CO6-D3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "CO6-D4", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "CO8-D1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "CO8-D2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "CO8-D3", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "12": [
-                                        {"engine_model": "CO12-D1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "CO12-D2", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Frankfurt": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "FR4-1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "FR4-2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "FR4-3", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "FR6-1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "FR6-2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "FR6-3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "FR6-4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "FR6-5", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Helsinki": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "8": [
-                                        {"engine_model": "HE8-F1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "HE8-F2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "HE8-F3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "HE8-F4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "HE8-F5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "HE8-F6", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Kyiv": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "KY4-U1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "KY4-U2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "KY4-U3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "KY4-U4", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "6": [
-                                        {"engine_model": "KY6-U1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "KY6-U2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "KY6-U3", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "KY8-U1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "KY8-U2", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Lyon": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {"engine_model": "LY4-F1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "LY4-F2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "LY4-F3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "LY4-F4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "LY4-F5", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "LY4-F6", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "LY4-F7", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
-                            },
-                            "Marseille": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "6": [
-                                        {"engine_model": "MA6-F1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MA6-F2", "year_introduced": null, "year_discontinued": null}
-                                    ],
-                                    "8": [
-                                        {"engine_model": "MA8-F1", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MA8-F2", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MA8-F3", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MA8-F4", "year_introduced": null, "year_discontinued": null},
-                                        {"engine_model": "MA8-F5", "year_introduced": null, "year_discontinued": null}
-                                    ]
-                                }
+                                "cylinders": {}
                             }
                         }
                     },
-                    "Germany": {
+                    "Germania": {
                         "manufacturers": {
-                            "BMW": {
-                                "year_founded": "1933",
+                            "MTU": {
+                                "year_founded": 1909,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {
-                                            "engine_model": "bmw4",
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "bmw4a",
-                                            "year_discontinued": null
-                                        }
-                                    ]
-                                }
+                                "cylinders": {}
+                            },
+                            "Deutz": {
+                                "year_founded": 1864,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Mercedes": {
+                                "year_founded": 1926,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "BMW Marine": {
+                                "year_founded": 1916,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "MAN Diesel": {
+                                "year_founded": 1758,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Hatz": {
+                                "year_founded": 1880,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Kubota Germany": {
+                                "year_founded": 1968,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Steyr Motors": {
+                                "year_founded": 1864,
+                                "year_dissolved": null,
+                                "cylinders": {}
                             }
                         }
                     },
-                    "UK": {
+                    "Francia": {
                         "manufacturers": {
-                            "Rolls Royce": {
-                                "year_founded": "1010",
+                            "Baudouin": {
+                                "year_founded": 1918,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "16": [
-                                        {
-                                            "engine_model": "rr16",
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "rr16a",
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "rr16b",
-                                            "year_discontinued": null
-                                        }
-                                    ],
-                                    "12": [
-                                        {
-                                            "engine_model": "rr12a",
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "rr12b",
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "rr12c",
-                                            "year_discontinued": null
-                                        }
-                                    ]
-                                }
+                                "cylinders": {}
+                            },
+                            "Nanni": {
+                                "year_founded": 1958,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Solé Diesel": {
+                                "year_founded": 1916,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Bukh": {
+                                "year_founded": 1904,
+                                "year_dissolved": null,
+                                "cylinders": {}
                             }
                         }
                     },
-                    "Spain": {
+                    "Olanda": {
                         "manufacturers": {
-                            "Guascor": {
+                            "Vetus": {
+                                "year_founded": 1964,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            }
+                        }
+                    },
+                    "Regno Unito": {
+                        "manufacturers": {
+                            "Perkins": {
+                                "year_founded": 1932,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Lister Petter": {
+                                "year_founded": 1867,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Gardner": {
+                                "year_founded": 1868,
+                                "year_dissolved": 1994,
+                                "cylinders": {}
+                            },
+                            "Rolls-Royce": {
+                                "year_founded": 1904,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Kelvin Diesels": {
+                                "year_founded": 1904,
+                                "year_dissolved": 1984,
+                                "cylinders": {}
+                            },
+                            "Thornycroft": {
+                                "year_founded": 1864,
+                                "year_dissolved": 1977,
+                                "cylinders": {}
+                            },
+                            "Dorman": {
+                                "year_founded": 1877,
+                                "year_dissolved": 1979,
+                                "cylinders": {}
+                            },
+                            "Enfield": {
+                                "year_founded": 1893,
+                                "year_dissolved": 1967,
+                                "cylinders": {}
+                            }
+                        }
+                    },
+                    "Svezia": {
+                        "manufacturers": {
+                            "Volvo Penta": {
+                                "year_founded": 1907,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Scania": {
+                                "year_founded": 1891,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            }
+                        }
+                    },
+                    "Svizzera": {
+                        "manufacturers": {
+                            "Sulzer": {
+                                "year_founded": 1834,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            }
+                        }
+                    },
+                    "Finlandia": {
+                        "manufacturers": {
+                            "Wärtsilä": {
+                                "year_founded": 1834,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Sisu": {
+                                "year_founded": 1931,
+                                "year_dissolved": 2011,
+                                "cylinders": {}
+                            }
+                        }
+                    },
+                    "Norvegia": {
+                        "manufacturers": {
+                            "Bergen Engines": {
+                                "year_founded": 1946,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            }
+                        }
+                    },
+                    "Danimarca": {
+                        "manufacturers": {
+                            "Burmeister & Wain": {
+                                "year_founded": 1846,
+                                "year_dissolved": 1980,
+                                "cylinders": {}
+                            }
+                        }
+                    },
+                    "Giappone": {
+                        "manufacturers": {
+                            "Yanmar": {
+                                "year_founded": 1912,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Isuzu": {
+                                "year_founded": 1916,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Hino": {
+                                "year_founded": 1942,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Mitsubishi": {
+                                "year_founded": 1870,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Kubota": {
+                                "year_founded": 1890,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Nissan": {
+                                "year_founded": 1933,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Komatsu": {
+                                "year_founded": 1921,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Kawasaki": {
+                                "year_founded": 1896,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Suzuki": {
+                                "year_founded": 1909,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Toyota": {
+                                "year_founded": 1937,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Yamaha": {
+                                "year_founded": 1955,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Daihatsu": {
+                                "year_founded": 1907,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Honda Marine": {
+                                "year_founded": 1946,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "IHI": {
+                                "year_founded": 1853,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Niigata": {
+                                "year_founded": 1896,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            }
+                        }
+                    },
+                    "Corea del Sud": {
+                        "manufacturers": {
+                            "Daewoo": {
+                                "year_founded": 1967,
+                                "year_dissolved": 1999,
+                                "cylinders": {}
+                            },
+                            "Hyundai": {
+                                "year_founded": 1967,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            }
+                        }
+                    },
+                    "Russia": {
+                        "manufacturers": {
+                            "ZMZ": {
+                                "year_founded": 1958,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "TMZ": {
+                                "year_founded": 1941,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Zvezda": {
+                                "year_founded": 1954,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Russkiy Dizel": {
+                                "year_founded": 1900,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            }
+                        }
+                    },
+                    "Australia": {
+                        "manufacturers": {
+                            "Stuart Marine": {
                                 "year_founded": null,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "6": [
-                                        {
-                                            "engine_model": "ga6",
-                                            "year_introduced": null,
-                                            "year_discontinued": null,
-                                            "media": {
-                                                "photos": [],
-                                                "videos": []
-                                            },
-                                            "manifold_alternatives": [
-                                                {
-                                                    "id": "alt_140ae70f",
-                                                    "type": "mmdm",
-                                                    "price": 300.0,
-                                                    "brand": "MMDM",
-                                                    "part_number": "aeoeu",
-                                                    "description": "good",
-                                                    "rebranded_from": "",
-                                                    "rebranded_as": "",
-                                                    "specifications": {
-                                                        "material": "Carbon",
-                                                        "weight": "45",
-                                                        "warranty": "3",
-                                                        "dimensions": {
-                                                            "height": "",
-                                                            "width": "",
-                                                            "length": ""
-                                                        }
-                                                    },
-                                                    "notes": "",
-                                                    "availability": "in_stock",
-                                                    "stock_level": 4,
-                                                    "min_stock_threshold": null,
-                                                    "lead_time": "1",
-                                                    "last_updated": "2025-10-26",
-                                                    "media": {
-                                                        "photos": [
-                                                            {
-                                                                "path": "/home/eueu.jpg",
-                                                                "caption": "",
-                                                                "date_taken": "2025-10-26",
-                                                                "tags": [
-                                                                    ""
-                                                                ],
-                                                                "photographer": ""
-                                                            }
-                                                        ],
-                                                        "videos": []
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
+                                "cylinders": {}
+                            },
+                            "Vire Marine": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Blaxland-Chapman": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {}
                             }
                         }
                     }
@@ -828,389 +410,171 @@
             },
             "americhe": {
                 "countries": {
-                    "USA": {
+                    "Stati Uniti": {
                         "manufacturers": {
                             "Caterpillar": {
-                                "year_founded": null,
+                                "year_founded": 1925,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "4": [
-                                        {
-                                            "engine_model": "3054",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "3304",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        }
-                                    ],
-                                    "6": [
-                                        {
-                                            "engine_model": "3056",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "3116",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "3126",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "3306",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "3406",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "C12",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "C18",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "C6.6",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "C9",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D13000",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D333",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D334",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D337",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D342",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D343",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D353",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "G342",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        }
-                                    ],
-                                    "8": [
-                                        {
-                                            "engine_model": "3160",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "3208",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "3408",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "3508",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "CG137-8",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D346",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D379",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        }
-                                    ],
-                                    "12": [
-                                        {
-                                            "engine_model": "3412",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "3512",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "5202",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "C32",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "CG137-12",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D348",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D397",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D398",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        }
-                                    ],
-                                    "16": [
-                                        {
-                                            "engine_model": "3516",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "D399",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        }
-                                    ]
-                                }
-                            },
-                            "Lockwood-Ash": {
-                                "year_founded": "1915",
-                                "year_dissolved": "1926",
-                                "cylinders": {
-                                    "1": [
-                                        {
-                                            "engine_model": "la1",
-                                            "year_discontinued": "1926"
-                                        }
-                                    ],
-                                    "2": [
-                                        {
-                                            "engine_model": "la2",
-                                            "year_discontinued": "1926"
-                                        }
-                                    ]
-                                }
-                            },
-                            "GM": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "8": [
-                                        {
-                                            "engine_model": "gm88",
-                                            "year_introduced": null,
-                                            "year_discontinued": null,
-                                            "media": {
-                                                "photos": [],
-                                                "videos": []
-                                            },
-                                            "manifold_alternatives": [
-                                                {
-                                                    "id": "alt_4d90f96b",
-                                                    "type": "oem",
-                                                    "price": 33.0,
-                                                    "brand": "gm",
-                                                    "part_number": "aeu",
-                                                    "description": "great",
-                                                    "rebranded_from": "",
-                                                    "rebranded_as": "",
-                                                    "specifications": {
-                                                        "material": "carbon",
-                                                        "weight": "3",
-                                                        "warranty": "4",
-                                                        "dimensions": {
-                                                            "height": "5",
-                                                            "width": "6",
-                                                            "length": "7"
-                                                        }
-                                                    },
-                                                    "notes": "ll",
-                                                    "availability": "in_stock",
-                                                    "stock_level": 3,
-                                                    "min_stock_threshold": null,
-                                                    "lead_time": "3",
-                                                    "last_updated": "2025-10-26",
-                                                    "media": {
-                                                        "photos": [],
-                                                        "videos": []
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
+                                "cylinders": {}
                             },
                             "Cummins": {
-                                "year_founded": 188,
-                                "year_dissolved": 11,
-                                "cylinders": {
-                                    "6": [
-                                        {
-                                            "engine_model": "cmo6",
-                                            "year_introduced": null,
-                                            "year_discontinued": null,
-                                            "media": {
-                                                "photos": [],
-                                                "videos": []
-                                            },
-                                            "manifold_alternatives": [
-                                                {
-                                                    "id": "alt_f39fccd0",
-                                                    "type": "mmdm",
-                                                    "price": 345.0,
-                                                    "brand": "mmdm",
-                                                    "part_number": "aoeu",
-                                                    "description": "aeoiai",
-                                                    "rebranded_from": "",
-                                                    "rebranded_as": "",
-                                                    "specifications": {
-                                                        "material": "steel",
-                                                        "weight": "4",
-                                                        "warranty": "5",
-                                                        "dimensions": {
-                                                            "height": "6",
-                                                            "width": "7",
-                                                            "length": "8"
-                                                        }
-                                                    },
-                                                    "notes": "aei",
-                                                    "availability": "in_stock",
-                                                    "stock_level": 5,
-                                                    "min_stock_threshold": "3",
-                                                    "lead_time": "2",
-                                                    "last_updated": "2025-10-26",
-                                                    "media": {
-                                                        "photos": [],
-                                                        "videos": []
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
+                                "year_founded": 1919,
+                                "year_dissolved": null,
+                                "cylinders": {}
                             },
                             "Ford": {
                                 "year_founded": 1903,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "8": [
-                                        {
-                                            "engine_model": "Flathead 260",
-                                            "year_introduced": 1932,
-                                            "year_discontinued": null,
-                                            "media": {
-                                                "photos": [],
-                                                "videos": []
-                                            },
-                                            "manifold_alternatives": [
-                                                {
-                                                    "id": "alt_54b2cddb",
-                                                    "type": "mmdm",
-                                                    "price": 34.0,
-                                                    "brand": "mmdm",
-                                                    "part_number": "aoei",
-                                                    "description": "v8",
-                                                    "rebranded_from": "",
-                                                    "rebranded_as": "",
-                                                    "specifications": {
-                                                        "material": "steel",
-                                                        "weight": "3",
-                                                        "warranty": "4",
-                                                        "dimensions": {
-                                                            "height": "4",
-                                                            "width": "4",
-                                                            "length": "4"
-                                                        }
-                                                    },
-                                                    "notes": "",
-                                                    "availability": "in_stock",
-                                                    "stock_level": 3,
-                                                    "min_stock_threshold": null,
-                                                    "lead_time": "2",
-                                                    "last_updated": "2025-10-26",
-                                                    "media": {
-                                                        "photos": [],
-                                                        "videos": []
-                                                    }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "engine_model": "Flathead 310",
-                                            "year_introduced": null,
-                                            "year_discontinued": null,
-                                            "media": {
-                                                "photos": [],
-                                                "videos": []
-                                            },
-                                            "manifold_alternatives": []
-                                        }
-                                    ]
-                                }
+                                "cylinders": {}
+                            },
+                            "General Motors": {
+                                "year_founded": 1908,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "MerCruiser": {
+                                "year_founded": 1961,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Palmer Brothers": {
+                                "year_founded": 1896,
+                                "year_dissolved": 1938,
+                                "cylinders": {}
+                            },
+                            "Gray Marine": {
+                                "year_founded": 1906,
+                                "year_dissolved": 1946,
+                                "cylinders": {}
+                            },
+                            "Lathrop": {
+                                "year_founded": 1896,
+                                "year_dissolved": 1925,
+                                "cylinders": {}
+                            },
+                            "Mianus": {
+                                "year_founded": 1900,
+                                "year_dissolved": 1916,
+                                "cylinders": {}
+                            },
+                            "Detroit Diesel": {
+                                "year_founded": 1938,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Kohler": {
+                                "year_founded": 1873,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Westerbeke": {
+                                "year_founded": 1937,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "John Deere": {
+                                "year_founded": 1837,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Waukesha": {
+                                "year_founded": 1906,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Wisconsin": {
+                                "year_founded": 1910,
+                                "year_dissolved": 1986,
+                                "cylinders": {}
+                            },
+                            "Onan": {
+                                "year_founded": 1920,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Hercules": {
+                                "year_founded": 1915,
+                                "year_dissolved": 1999,
+                                "cylinders": {}
+                            },
+                            "Fairbanks Morse": {
+                                "year_founded": 1893,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Superior": {
+                                "year_founded": 1908,
+                                "year_dissolved": 1972,
+                                "cylinders": {}
+                            },
+                            "Lehman": {
+                                "year_founded": 1946,
+                                "year_dissolved": 2008,
+                                "cylinders": {}
+                            },
+                            "Lugger": {
+                                "year_founded": 1987,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Liberty": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Chrysler": {
+                                "year_founded": 1925,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Hall-Scott": {
+                                "year_founded": 1910,
+                                "year_dissolved": 1974,
+                                "cylinders": {}
+                            },
+                            "Alco": {
+                                "year_founded": 1901,
+                                "year_dissolved": 1969,
+                                "cylinders": {}
+                            },
+                            "Cooper Industries": {
+                                "year_founded": 1833,
+                                "year_dissolved": null,
+                                "cylinders": {}
                             }
                         }
                     },
                     "Canada": {
                         "manufacturers": {
-                            "cc": {
-                                "year_founded": null,
+                            "Cooper Industries": {
+                                "year_founded": 1833,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                    "e4": []
-                                }
+                                "cylinders": {}
+                            },
+                            "Marathon": {
+                                "year_founded": 1888,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Briggs & Stratton": {
+                                "year_founded": 1908,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Universal": {
+                                "year_founded": 1963,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Mercruiser": {
+                                "year_founded": 1961,
+                                "year_dissolved": null,
+                                "cylinders": {}
+                            },
+                            "Indmar": {
+                                "year_founded": 1946,
+                                "year_dissolved": null,
+                                "cylinders": {}
                             }
                         }
                     }

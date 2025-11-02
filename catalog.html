@@ -25,19 +25,26 @@
             <!-- Path Lines Group -->
             <g id="pathLines"></g>
 
-            <!-- Manufacturer Ring (hidden initially) -->
-            <g id="manufacturers" class="hidden"></g>
+            <!-- Focus Ring (hidden initially) -->
+            <g id="focusRing" class="hidden"></g>
 
-            <!-- Cylinders Ring (Hidden initially) -->
-            <g id="cylinders" class="hidden"></g>
+            <!-- Child Ring (hidden initially) -->
+            <g id="childRing" class="hidden"></g>
 
-            <!-- Models Ring (Hidden initially) -->
+            <!-- Model Ring (hidden initially) -->
             <g id="models" class="hidden"></g>
         </g>
     </svg>
+    <div id="parentButton" class="hidden">
+        <span id="parentText">Parent</span>
+    </div>
     <div id="copyright">© 2025 Meccanismi Marittimi delle Marche. Tutti i diritti riservati.</div>
 
     <script>
+    // IMPORTANT: Mobile version uses native ES6 modules (no bundling needed)
+    // The bundled version has been retired and backed up as catalog_mobile_bundled_bak.js
+    // All development should be done in the individual mobile/*.js module files
+    
     // Screen detection and conditional loading
     function isMobile() {
         return window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -54,7 +61,8 @@
         
         if (isMobile()) {
             cssLink.href = './mobile/catalog_mobile.css';
-            script.src = './mobile/catalog_mobile_bundled.js';
+            script.src = './mobile/catalog_mobile_modular.js';
+            script.type = 'module';  // Native ES6 modules for mobile
         } else {
             cssLink.href = './desktop/catalog.css';
             script.src = './desktop/catalog.js';

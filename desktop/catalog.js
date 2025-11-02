@@ -4,8 +4,8 @@ const mainGroup = document.getElementById('mainGroup');
 const centralGroup = document.getElementById('centralGroup');
 const marketsGroup = document.getElementById('markets');
 const pathLinesGroup = document.getElementById('pathLines');
-const manufacturersGroup = document.getElementById('manufacturers');
-const cylindersGroup = document.getElementById('cylinders');
+const focusRingGroup = document.getElementById('focusRing');
+const childRingGroup = document.getElementById('childRing');
 const modelsGroup = document.getElementById('models');
 let activeType = null;
 let activePath = []; // Track the active path (e.g., ['eurasia', 'Italy', 'VM Motori', '4', '3054'])
@@ -334,10 +334,10 @@ function isInActivePath(type, keyParts) {
     }
 }
 
-// Render manufacturers for a specific market (375px ring)
-function renderManufacturers(market, selectedManufacturerKey = null) {
-    console.log('Rendering manufacturers for market', market, 'selected:', selectedManufacturerKey);
-    manufacturersGroup.innerHTML = '';
+// Render focus ring items for a specific market (375px ring)
+function renderFocusRing(market, selectedFocusKey = null) {
+    console.log('Rendering focus ring for market', market, 'selected:', selectedFocusKey);
+    focusRingGroup.innerHTML = '';
     const countries = data.MMdM.markets[market].countries;
     const allManufacturers = [];
     Object.keys(countries).forEach(country => {
@@ -408,7 +408,7 @@ function renderManufacturers(market, selectedManufacturerKey = null) {
             }, sweepIndex * delayPerNode);
         }
         
-        manufacturersGroup.appendChild(g);
+        focusRingGroup.appendChild(g);
         addHitListeners(hitCircle, g, 'manufacturer', manufacturerKey, angle, isSelected);
     });
 }
@@ -419,10 +419,10 @@ function getManufacturerAngle(market, country, manufacturer) {
     return manufacturerAngles[manufacturerKey] || Math.PI / 2;
 }
 
-// Render cylinder nodes (280px ring)
-function renderCylinders(market, country, manufacturer, manufacturerAngle, selectedCylinder = null) {
-    console.log('Rendering cylinders for', market, country, manufacturer, 'selected:', selectedCylinder);
-    cylindersGroup.innerHTML = '';
+// Render child ring nodes (280px ring)
+function renderChildRing(market, country, manufacturer, manufacturerAngle, selectedChild = null) {
+    console.log('Rendering child ring for', market, country, manufacturer, 'selected:', selectedChild);
+    childRingGroup.innerHTML = '';
     const cylinders = data.MMdM.markets[market].countries[country].manufacturers[manufacturer]?.cylinders;
     if (!cylinders) {
         console.error(`No cylinders found for ${manufacturer} in ${country}, ${market}`);
@@ -465,7 +465,7 @@ function renderCylinders(market, country, manufacturer, manufacturerAngle, selec
         hitCircle.setAttribute('fill', 'transparent');
         hitCircle.setAttribute('stroke', 'none');
         g.appendChild(hitCircle);
-        cylindersGroup.appendChild(g);
+        childRingGroup.appendChild(g);
         addHitListeners(hitCircle, g, 'cylinder', cylinderKey, angle, isSelected);
     });
 }
@@ -651,42 +651,42 @@ function addHitListeners(hitCircle, nodeGroup, type, name, angle, isSelected) {
 // Render next level based on current node - FIXED
 function renderNextLevel(type, name, angle) {
     if (type === 'market') {
-        manufacturersGroup.classList.remove('hidden');
-        cylindersGroup.classList.add('hidden');
+        focusRingGroup.classList.remove('hidden');
+        childRingGroup.classList.add('hidden');
         modelsGroup.classList.add('hidden');
-        renderManufacturers(name, null);
+        renderFocusRing(name, null);
         return;
     }
 
     if (type === 'manufacturer') {
         const parts = name.split('/');
-        manufacturersGroup.classList.remove('hidden');
-        cylindersGroup.classList.remove('hidden');
+        focusRingGroup.classList.remove('hidden');
+        childRingGroup.classList.remove('hidden');
         modelsGroup.classList.add('hidden');
-        renderManufacturers(parts[0], name);
-        renderCylinders(parts[0], parts[1], parts[2], angle, null);
+        renderFocusRing(parts[0], name);
+        renderChildRing(parts[0], parts[1], parts[2], angle, null);
         return;
     }
 
     if (type === 'cylinder') {
         const parts = name.split('/');
-        manufacturersGroup.classList.remove('hidden');
-        cylindersGroup.classList.remove('hidden');
+        focusRingGroup.classList.remove('hidden');
+        childRingGroup.classList.remove('hidden');
         modelsGroup.classList.remove('hidden');
-        renderManufacturers(parts[0], `${parts[0]}/${parts[1]}/${parts[2]}`);
-        renderCylinders(parts[0], parts[1], parts[2], getManufacturerAngle(parts[0], parts[1], parts[2]), name);
+        renderFocusRing(parts[0], `${parts[0]}/${parts[1]}/${parts[2]}`);
+        renderChildRing(parts[0], parts[1], parts[2], getManufacturerAngle(parts[0], parts[1], parts[2]), name);
         renderModels(parts[0], parts[1], parts[2], parts[3], angle, null);
         return;
     }
 
     if (type === 'model') {
         const parts = name.split('/');
-        manufacturersGroup.classList.remove('hidden');
-        cylindersGroup.classList.remove('hidden');
+        focusRingGroup.classList.remove('hidden');
+        childRingGroup.classList.remove('hidden');
         modelsGroup.classList.remove('hidden');
         renderManufacturers(parts[0], `${parts[0]}/${parts[1]}/${parts[2]}`);
         const cylKey = `${parts[0]}/${parts[1]}/${parts[2]}/${parts[3]}`;
-        renderCylinders(parts[0], parts[1], parts[2], getManufacturerAngle(parts[0], parts[1], parts[2]), cylKey);
+        renderChildRing(parts[0], parts[1], parts[2], getManufacturerAngle(parts[0], parts[1], parts[2]), cylKey);
         renderModels(parts[0], parts[1], parts[2], parts[3], cylinderAngles[cylKey], name);
         return;
     }
@@ -712,8 +712,8 @@ function resetView(clearActive = true) {
         selectedMarket = null; // allow markets to be re-selected after reset
         renderMarkets();
     }
-    manufacturersGroup.classList.add('hidden');
-    cylindersGroup.classList.add('hidden');
+    focusRingGroup.classList.add('hidden');
+    childRingGroup.classList.add('hidden');
     modelsGroup.classList.add('hidden');
     pathLinesGroup.innerHTML = '';
     if (clearActive) {

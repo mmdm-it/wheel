@@ -12,9 +12,13 @@ const MOBILE_CONFIG = {
     RADIUS: {
         UNSELECTED: 10,
         SELECTED: 18,
-        MANUFACTURER_RING: 375,
-        CYLINDER_RING: 280,
-        MODEL_RING: 180
+        MAGNIFIED: 22,  // 25% larger than selected (18 * 1.25 = 22.5 ≈ 22)
+        FOCUS_RING: 375,
+        CHILD_RING: 280,
+        MODEL_RING: 180,
+        CHILD_NODE: 10,  // Same as UNSELECTED
+        MODEL_NODE: 10,    // Same as UNSELECTED
+        MAGNIFIER: 22  // Renamed from MAGNIFYING_RING - same as magnified node radius
     },
     
     // Animation constants
@@ -26,18 +30,22 @@ const MOBILE_CONFIG = {
         DETENT_VELOCITY: 0.005  // Higher threshold for detent snapping
     },
     
+    // Timing constants
+    TIMING: {
+        CYLINDER_SETTLE_DELAY: 300  // ms to wait after rotation stops before showing cylinders
+    },
+    
     // Angle constants - mobile arc-based system
     ANGLES: {
-        MANUFACTURER_SPREAD: Math.PI / 42, // 4.3°
-        CYLINDER_SPREAD: Math.PI / 18,     // 10°
-        MODEL_SPREAD: Math.PI / 18,        // 10°
-        CENTER_ANGLE: Math.PI * 0.75       // 135° (Southwest) - for arc system
+        FOCUS_SPREAD: Math.PI / 42, // 4.3° - renamed from MANUFACTURER_SPREAD
+        CHILD_SPREAD: Math.PI / 40,     // 4.5° - renamed from CYLINDER_SPREAD
+        MODEL_SPREAD: Math.PI / 18         // 10°
     },
     
     // Viewport constants
     VIEWPORT: {
         MARKET_OFFSET: {
-            HORIZONTAL: 0.30,
+            HORIZONTAL: 0.20,  // Match bundled version
             VERTICAL: 0.35
         }
     }

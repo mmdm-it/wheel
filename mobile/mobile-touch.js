@@ -122,7 +122,25 @@ class TouchRotationHandler {
     }
     
     constrainRotation(offset) {
-        return Math.max(this.rotationLimits.min, Math.min(this.rotationLimits.max, offset));
+        // Validate inputs
+        if (isNaN(offset)) {
+            Logger.error(`Invalid offset to constrain: ${offset}`);
+            return 0; // Safe fallback
+        }
+        if (isNaN(this.rotationLimits.min) || isNaN(this.rotationLimits.max)) {
+            Logger.error(`Invalid rotation limits: min=${this.rotationLimits.min}, max=${this.rotationLimits.max}`);
+            return offset; // Return unconstrained if limits are invalid
+        }
+        
+        const constrained = Math.max(this.rotationLimits.min, Math.min(this.rotationLimits.max, offset));
+        
+        // Validate result
+        if (isNaN(constrained)) {
+            Logger.error(`Constraint calculation produced NaN: offset=${offset}, min=${this.rotationLimits.min}, max=${this.rotationLimits.max}`);
+            return 0; // Safe fallback
+        }
+        
+        return constrained;
     }
     
     startMomentumAnimation() {
@@ -169,6 +187,11 @@ class TouchRotationHandler {
         if (this.animationId) {
             cancelAnimationFrame(this.animationId);
             this.animationId = null;
+            
+            // Notify that rotation has completely stopped
+            if (this.onRotationEnd) {
+                this.onRotationEnd(this.rotationOffset);
+            }
         }
     }
     

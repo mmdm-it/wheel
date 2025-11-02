@@ -35,8 +35,8 @@ class MobileCatalogApp {
             // Initialize renderer (includes DOM element setup)
             await this.renderer.initialize();
             
-            // Render initial state
-            this.renderer.renderMarkets();
+            // Skip market selection - directly show all manufacturers
+            this.showAllFocusItems();
             
             // Set up resize handling
             this.setupResizeHandling();
@@ -129,22 +129,15 @@ class MobileCatalogApp {
                 this.renderer.elements.mainGroup
             );
             
-            // Re-render markets with new positions
-            this.renderer.renderMarkets();
-            
-            // If we have manufacturers showing, update their positions
-            if (this.renderer.currentManufacturers.length > 0) {
-                this.renderer.updateManufacturerPositions(
-                    this.touchHandler ? this.touchHandler.rotationOffset : 0
-                );
-            }
+            // Handle viewport changes (repositions magnifying ring and updates manufacturers)
+            this.renderer.handleViewportChange();
             
         } catch (error) {
             Logger.error('Error handling resize:', error);
         }
     }
     
-    setupTouchRotation(manufacturers) {
+    setupTouchRotation(focusItems) {
         // Clean up existing touch handler
         if (this.touchHandler) {
             this.touchHandler.deactivate();
@@ -152,13 +145,19 @@ class MobileCatalogApp {
         
         // Create new touch handler
         this.touchHandler = new TouchRotationHandler(
-            (offset) => this.renderer.updateManufacturerPositions(offset),
+            (offset) => this.renderer.updateFocusRingPositions(offset),
             (offset) => this.handleRotationEnd(offset)
         );
         
         // Calculate rotation limits
-        const limits = this.calculateRotationLimits(manufacturers);
+        const limits = this.calculateRotationLimits(focusItems);
         this.touchHandler.setRotationLimits(limits.min, limits.max);
+        
+        // Set initial rotation offset if renderer has calculated one
+        if (this.renderer.initialRotationOffset !== undefined) {
+            this.touchHandler.rotationOffset = this.renderer.initialRotationOffset;
+            Logger.debug(`Set initial touch rotation offset: ${this.renderer.initialRotationOffset * 180 / Math.PI}°`);
+        }
         
         // Activate touch handling
         this.touchHandler.activate();
@@ -166,16 +165,50 @@ class MobileCatalogApp {
         Logger.debug('Touch rotation setup complete');
     }
     
-    calculateRotationLimits(manufacturers) {
-        if (!manufacturers.length) {
+    showAllFocusItems() {
+        // Hide market selection interface
+        const marketsGroup = this.renderer.elements.marketsGroup;
+        if (marketsGroup) {
+            marketsGroup.classList.add('hidden');
+        }
+        
+        // Get all manufacturers from all markets (currently the focus items are manufacturers)
+        const allFocusItems = this.dataManager.getAllManufacturers();
+        Logger.debug(`Loaded ${allFocusItems.length} focus items from all markets`);
+        
+        if (allFocusItems.length === 0) {
+            Logger.warn('No focus items found in any market');
+            return;
+        }
+        
+        // Set current focus items and show them
+        this.renderer.currentFocusItems = allFocusItems;
+        this.renderer.showFocusRing();
+        
+        // Set up touch rotation
+        this.setupTouchRotation(allFocusItems);
+    }
+    
+    calculateRotationLimits(focusItems) {
+        if (!focusItems.length) {
             return { min: -Infinity, max: Infinity };
         }
         
-        const angleStep = MOBILE_CONFIG.ANGLES.MANUFACTURER_SPREAD;
-        const middleIndex = (manufacturers.length - 1) / 2;
-        const centerAngle = MOBILE_CONFIG.ANGLES.CENTER_ANGLE; // 135° (Southwest)
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const middleIndex = (focusItems.length - 1) / 2;
+        const centerAngle = this.viewport.getCenterAngle(); // Dynamic angle pointing to screen center
         
-        // Calculate rotation limits so first/last manufacturers stop at CENTER_ANGLE (135°)
+        // Validate inputs
+        if (isNaN(angleStep)) {
+            Logger.error(`Invalid angleStep in rotation limits: ${angleStep}`);
+            return { min: -Infinity, max: Infinity };
+        }
+        if (isNaN(centerAngle)) {
+            Logger.error(`Invalid centerAngle in rotation limits: ${centerAngle}`);
+            return { min: -Infinity, max: Infinity };
+        }
+        
+        // Calculate rotation limits so first/last manufacturers stop at the dynamic center angle
         // When rotationOffset = 0, middle manufacturer is at centerAngle
         // For first manufacturer (index 0) to be at centerAngle:
         // centerAngle + offset + (0 - middleIndex) * angleStep = centerAngle
@@ -187,38 +220,82 @@ class MobileCatalogApp {
         // Therefore: offset = -((length-1) - middleIndex) * angleStep = -middleIndex * angleStep
         const minOffset = -middleIndex * angleStep;
         
-        Logger.debug(`Rotation limits for ${manufacturers.length} manufacturers:`);
-        Logger.debug(`maxOffset (first manufacturer at 135°): ${maxOffset * 180 / Math.PI}°`);
-        Logger.debug(`minOffset (last manufacturer at 135°): ${minOffset * 180 / Math.PI}°`);
+        // Validate calculated limits
+        if (isNaN(maxOffset) || isNaN(minOffset)) {
+            Logger.error(`Invalid rotation limits calculated: min=${minOffset}, max=${maxOffset}, middleIndex=${middleIndex}, angleStep=${angleStep}`);
+            return { min: -Infinity, max: Infinity };
+        }
+        
+        Logger.debug(`Rotation limits for ${focusItems.length} focus items:`);
+        Logger.debug(`maxOffset (first focus item at center): ${maxOffset * 180 / Math.PI}°`);
+        Logger.debug(`minOffset (last focus item at center): ${minOffset * 180 / Math.PI}°`);
         
         return { min: minOffset, max: maxOffset };
     }
     
     handleRotationEnd(offset) {
-        // Snap to nearest manufacturer
-        if (!this.renderer.currentManufacturers.length) return;
+        // Notify renderer that rotation has ended - triggers cylinder display
+        this.renderer.onRotationEnd();
         
-        const manufacturers = this.renderer.currentManufacturers;
-        const angleStep = MOBILE_CONFIG.ANGLES.MANUFACTURER_SPREAD;
-        const middleIndex = (manufacturers.length - 1) / 2;
+        // Validate input offset
+        if (isNaN(offset)) {
+            Logger.error(`Invalid offset in handleRotationEnd: ${offset}`);
+            return;
+        }
         
-        // Find the manufacturer that should be centered with this offset
-        const targetIndex = Math.round(-offset / angleStep + middleIndex);
-        const clampedIndex = Math.max(0, Math.min(manufacturers.length - 1, targetIndex));
+        // Snap to nearest focus item
+        if (!this.renderer.currentFocusItems.length) return;
+        
+        const focusItems = this.renderer.currentFocusItems;
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const middleIndex = (focusItems.length - 1) / 2;
+        
+        // Validate angleStep
+        if (isNaN(angleStep)) {
+            Logger.error(`Invalid angleStep: ${angleStep}`);
+            return;
+        }
+        
+        // Find the focus item that should be centered with this offset
+        const targetIndex = Math.round(middleIndex - (offset / angleStep));
+        const clampedIndex = Math.max(0, Math.min(focusItems.length - 1, targetIndex));
         
         // Calculate the exact offset needed to center this manufacturer
         const targetOffset = -(clampedIndex - middleIndex) * angleStep;
         
+        // Validate calculated targetOffset
+        if (isNaN(targetOffset)) {
+            Logger.error(`Invalid targetOffset calculation: clampedIndex=${clampedIndex}, middleIndex=${middleIndex}, angleStep=${angleStep}`);
+            return;
+        }
+        
         // Animate to the target offset
         this.animateRotationTo(targetOffset);
         
-        Logger.debug(`Snapping to manufacturer ${clampedIndex}: ${manufacturers[clampedIndex].name}`);
+        // Safe logging with bounds checking
+        if (focusItems[clampedIndex] && focusItems[clampedIndex].name) {
+            Logger.debug(`Snapping to focus item ${clampedIndex}: ${focusItems[clampedIndex].name}`);
+        } else {
+            Logger.debug(`Snapping to focus item index ${clampedIndex} (name unavailable)`);
+        }
     }
     
     animateRotationTo(targetOffset) {
         if (!this.touchHandler) return;
         
         const startOffset = this.touchHandler.rotationOffset;
+        
+        // Validate inputs
+        if (isNaN(targetOffset)) {
+            Logger.error(`Invalid targetOffset for animation: ${targetOffset}`);
+            return;
+        }
+        if (isNaN(startOffset)) {
+            Logger.error(`Invalid startOffset for animation: ${startOffset}`);
+            this.touchHandler.rotationOffset = 0; // Reset to safe value
+            return;
+        }
+        
         const deltaOffset = targetOffset - startOffset;
         const duration = 300;
         const startTime = performance.now();
@@ -231,8 +308,14 @@ class MobileCatalogApp {
             const easedProgress = 1 - Math.pow(1 - progress, 3);
             const currentOffset = startOffset + deltaOffset * easedProgress;
             
+            // Validate calculated offset
+            if (isNaN(currentOffset)) {
+                Logger.error(`Animation produced NaN offset: startOffset=${startOffset}, deltaOffset=${deltaOffset}, easedProgress=${easedProgress}`);
+                return; // Stop animation
+            }
+            
             this.touchHandler.rotationOffset = currentOffset;
-            this.renderer.updateManufacturerPositions(currentOffset);
+            this.renderer.updateFocusRingPositions(currentOffset);
             
             if (progress < 1) {
                 requestAnimationFrame(animate);
@@ -386,7 +469,7 @@ function extendMobileRenderer() {
         
         // Set up touch rotation via the app
         if (mobileCatalogApp) {
-            mobileCatalogApp.setupTouchRotation(this.currentManufacturers);
+            mobileCatalogApp.setupTouchRotation(this.currentFocusItems);
         }
     };
 }
