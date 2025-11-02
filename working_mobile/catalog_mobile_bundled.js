@@ -1,15 +1,4 @@
 /**
- * ⚠️  RETIRED BACKUP FILE - DO NOT USE ⚠️
- * 
- * This file is a backup of the old bundled system (retired October 29, 2025)
- * 
- * ACTIVE SYSTEM: Native ES6 modules in mobile-*.js files
- * ENTRY POINT: catalog_mobile_modular.js
- * 
- * This bundled version is kept for historical reference only.
- * All development should be done in the individual module files.
- * 
- * Original description:
  * Mobile Catalog - Bundled Version
  * All modules combined for browser compatibility without module system
  */
@@ -29,9 +18,7 @@ const MOBILE_CONFIG = {
         SELECTED: 18,
         MANUFACTURER_RING: 375,
         CYLINDER_RING: 280,
-        MODEL_RING: 180,
-        CYLINDER_NODE: 10,  // Same as UNSELECTED
-        MODEL_NODE: 10     // Same as UNSELECTED
+        MODEL_RING: 180
     },
     
     // Animation constants
@@ -297,7 +284,6 @@ class TouchRotationHandler {
         if (newOffset !== this.rotationOffset) {
             this.rotationOffset = newOffset;
             this.velocity = rotationDelta; // Store for momentum
-            Logger.debug('Touch rotation - offset:', this.rotationOffset, 'delta:', rotationDelta);
             this.onRotationChange(this.rotationOffset);
         }
         
@@ -470,60 +456,6 @@ class DataManager {
         
         return manufacturers.sort((a, b) => b.name.localeCompare(a.name));
     }
-    
-    getCylinders(market, country, manufacturer) {
-        Logger.debug('Getting cylinders for:', market, country, manufacturer);
-        
-        if (!this.data || !this.data.MMdM.markets[market] || 
-            !this.data.MMdM.markets[market].countries[country] ||
-            !this.data.MMdM.markets[market].countries[country].manufacturers[manufacturer]) {
-            Logger.warn('Data path not found for cylinders');
-            return [];
-        }
-        
-        const cylinders = this.data.MMdM.markets[market].countries[country].manufacturers[manufacturer].cylinders;
-        if (!cylinders) {
-            Logger.warn('No cylinders found in data structure');
-            return [];
-        }
-        
-        const cylinderKeys = Object.keys(cylinders);
-        Logger.debug('Found cylinder keys:', cylinderKeys);
-        
-        return cylinderKeys
-            .sort((a, b) => parseInt(a) - parseInt(b))
-            .map(cylinder => ({
-                name: cylinder,
-                market: market,
-                country: country,
-                manufacturer: manufacturer,
-                key: `${market}/${country}/${manufacturer}/${cylinder}`,
-                data: cylinders[cylinder]
-            }));
-    }
-    
-    getModels(market, country, manufacturer, cylinder) {
-        if (!this.data || !this.data.MMdM.markets[market] || 
-            !this.data.MMdM.markets[market].countries[country] ||
-            !this.data.MMdM.markets[market].countries[country].manufacturers[manufacturer] ||
-            !this.data.MMdM.markets[market].countries[country].manufacturers[manufacturer].cylinders[cylinder]) {
-            return [];
-        }
-        
-        const models = this.data.MMdM.markets[market].countries[country].manufacturers[manufacturer].cylinders[cylinder];
-        if (!Array.isArray(models)) return [];
-        
-        return models.map((model, index) => ({
-            name: model.engine_model,
-            market: market,
-            country: country,
-            manufacturer: manufacturer,
-            cylinder: cylinder,
-            key: `${market}/${country}/${manufacturer}/${cylinder}/${model.engine_model}`,
-            data: model,
-            index: index
-        }));
-    }
 }
 
 // Mock add to cart function
@@ -550,7 +482,6 @@ class MobileRenderer {
         
         // State
         this.selectedMarket = null;
-        this.selectedManufacturer = null;
         this.currentManufacturers = [];
         this.activePath = [];
         this.activeType = null;
@@ -668,11 +599,11 @@ class MobileRenderer {
         hitArea.style.cursor = 'pointer';
         g.appendChild(hitArea);
 
-        // Touch events for mobile - use passive listener for better performance
+        // Touch events for mobile
         hitArea.addEventListener('touchstart', (e) => {
-            // Let touch events be passive for better performance
+            e.preventDefault();
             this.handleMarketSelection(market, g);
-        }, { passive: true });
+        });
         
         hitArea.addEventListener('click', (e) => {
             e.preventDefault();
@@ -799,7 +730,6 @@ class MobileRenderer {
         // Update selection state for all manufacturers
         // Only select manufacturer that is exactly at the CENTER_ANGLE position
         const selectedIndex = this.getSelectedManufacturerIndex(rotationOffset, manufacturers.length);
-        Logger.debug('updateManufacturerPositions called, selectedIndex:', selectedIndex, 'total manufacturers:', manufacturers.length);
         
         manufacturers.forEach((manufacturer, index) => {
             const element = this.manufacturerElements.get(manufacturer.key);
@@ -808,18 +738,6 @@ class MobileRenderer {
                 const angle = adjustedCenterAngle + (index - (manufacturers.length - 1) / 2) * angleStep;
                 const position = this.calculateManufacturerPosition(angle, arcParams);
                 this.updateManufacturerElement(element, position, angle, isSelected);
-                
-                // Show cylinders when this manufacturer is selected
-                if (isSelected) {
-                    Logger.debug('Manufacturer selected:', manufacturer.name, 'at angle:', angle * 180 / Math.PI, '°');
-                    this.showCylinderRing(manufacturer.market, manufacturer.country, manufacturer.name, angle);
-                    this.selectedManufacturer = manufacturer;
-                } else if (this.selectedManufacturer && this.selectedManufacturer.key === manufacturer.key) {
-                    // Hide cylinders when manufacturer is deselected
-                    this.elements.cylindersGroup.classList.add('hidden');
-                    this.elements.modelsGroup.classList.add('hidden');
-                    this.selectedManufacturer = null;
-                }
             }
         });
         
@@ -845,9 +763,8 @@ class MobileRenderer {
         const roundedIndex = Math.round(exactIndex);
         
         // Only select if the manufacturer is very close to the exact position (detent threshold)
-        const detentThreshold = 0.5; // Increased threshold for easier selection
+        const detentThreshold = 0.15; // Allow small deviation for selection
         const deviation = Math.abs(exactIndex - roundedIndex);
-        Logger.debug('Selection check - exactIndex:', exactIndex, 'roundedIndex:', roundedIndex, 'deviation:', deviation, 'threshold:', detentThreshold);
         
         if (deviation <= detentThreshold && roundedIndex >= 0 && roundedIndex < manufacturerCount) {
             return roundedIndex;
@@ -980,13 +897,8 @@ class MobileRenderer {
         }
     }
     
-    getColorForType(type) {
-        return this.getColor(type, '');
-    }
-    
     reset() {
         this.selectedMarket = null;
-        this.selectedManufacturer = null;
         this.currentManufacturers = [];
         this.activePath = [];
         this.activeType = null;
@@ -1014,367 +926,6 @@ class MobileRenderer {
         }
         
         Logger.debug('Renderer reset');
-    }
-    
-    showCylinderRing(market, country, manufacturer, manufacturerAngle) {
-        Logger.debug('Showing cylinder ring for', manufacturer);
-        
-        // Get cylinders for this manufacturer
-        const cylinders = this.dataManager.getCylinders(market, country, manufacturer);
-        
-        if (cylinders.length === 0) {
-            Logger.warn('No cylinders found for', manufacturer);
-            return;
-        }
-        
-        // Clear existing cylinders
-        this.elements.cylindersGroup.innerHTML = '';
-        this.elements.cylindersGroup.classList.remove('hidden');
-        Logger.debug('Cylinder group visible, classList:', this.elements.cylindersGroup.classList.toString());
-        
-        // Log the arc parameters for debugging
-        const arcParams = this.viewport.getArcParameters();
-        Logger.debug('Arc parameters for cylinder positioning:', arcParams);
-        Logger.debug('Cylinder ring will be at radius:', arcParams.radius * 0.5, 'centered at:', arcParams.centerX, arcParams.centerY);
-        
-        // Check SVG viewport dimensions
-        const svg = this.elements.svg;
-        Logger.debug('SVG dimensions - width:', svg.getAttribute('width'), 'height:', svg.getAttribute('height'));
-        Logger.debug('SVG viewBox:', svg.getAttribute('viewBox'));
-        
-        // Calculate cylinder positions around the manufacturer angle
-        const angleStep = MOBILE_CONFIG.ANGLES.CYLINDER_SPREAD;
-        const startAngle = manufacturerAngle - (cylinders.length - 1) * angleStep / 2;
-        Logger.debug('Cylinder positioning - angleStep:', angleStep * 180 / Math.PI, '° startAngle:', startAngle * 180 / Math.PI, '°');
-        
-        cylinders.forEach((cylinder, index) => {
-            const angle = startAngle + index * angleStep;
-            Logger.debug('Creating cylinder', cylinder.name, 'at angle:', angle * 180 / Math.PI, '°');
-            const cylinderElement = this.createCylinderElement(cylinder, angle);
-            this.elements.cylindersGroup.appendChild(cylinderElement);
-            Logger.debug('Cylinder element created and appended:', cylinderElement);
-        });
-    }
-    
-    createCylinderElement(cylinder, angle) {
-        const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-        g.setAttribute('class', 'cylinder');
-        g.setAttribute('data-cylinder', cylinder.name);
-        g.setAttribute('data-key', cylinder.key);
-        
-        // Calculate position on cylinder ring (50% of manufacturer ring radius - well within viewport)
-        const arcParams = this.viewport.getArcParameters();
-        const manufacturerRadius = arcParams.radius;
-        const radius = manufacturerRadius * 0.5;  // Half the manufacturer ring radius to stay within viewport
-        const x = arcParams.centerX + radius * Math.cos(angle);
-        const y = arcParams.centerY + radius * Math.sin(angle);
-        
-        Logger.debug('Cylinder positioning - manufacturerRadius:', manufacturerRadius, 'cylinderRadius:', radius, 'x:', x, 'y:', y, 'angle:', angle * 180 / Math.PI, '°');
-        g.setAttribute('transform', `translate(${x}, ${y})`);
-        
-        // Create circle node
-        const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
-        circle.setAttribute('r', MOBILE_CONFIG.RADIUS.UNSELECTED);
-        circle.setAttribute('fill', this.getColorForType('cylinder'));
-        circle.setAttribute('stroke', 'black');
-        circle.setAttribute('stroke-width', '1');
-        
-        g.appendChild(circle);
-        
-        // Create text label
-        const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        this.updateCylinderText(text, angle, cylinder.name);
-        g.appendChild(text);
-        
-        // Add click handler
-        g.style.cursor = 'pointer';
-        g.addEventListener('click', (e) => {
-            e.stopPropagation();
-            this.handleCylinderSelection(cylinder);
-        });
-        
-        // Debug: Log the final element attributes
-        Logger.debug('Created cylinder element:');
-        Logger.debug('- Transform:', g.getAttribute('transform'));
-        Logger.debug('- Circle radius:', circle.getAttribute('r'));
-        Logger.debug('- Circle fill:', circle.getAttribute('fill'));
-        Logger.debug('- Circle position: relative to transform');
-        
-        return g;
-    }
-    
-    updateCylinderText(textElement, angle, content) {
-        const radius = MOBILE_CONFIG.RADIUS.CYLINDER_NODE;
-        const offset = -(radius + 3);
-        const textX = offset * Math.cos(angle);
-        const textY = offset * Math.sin(angle);
-        let rotation = angle * 180 / Math.PI;
-        let textAnchor = Math.cos(angle) >= 0 ? 'start' : 'end';
-        
-        if (Math.cos(angle) < 0) {
-            rotation += 180;
-        }
-        
-        textElement.setAttribute('x', textX);
-        textElement.setAttribute('y', textY);
-        textElement.setAttribute('dy', '0.3em');
-        textElement.setAttribute('text-anchor', textAnchor);
-        textElement.setAttribute('transform', `rotate(${rotation}, ${textX}, ${textY})`);
-        textElement.setAttribute('fill', 'black');
-        textElement.setAttribute('font-size', '12px');
-        textElement.textContent = content;
-    }
-    
-    handleCylinderSelection(cylinder) {
-        Logger.debug('Cylinder selected:', cylinder.name);
-        
-        // Update active path
-        this.activePath = [cylinder.market, cylinder.country, cylinder.manufacturer, cylinder.name];
-        this.activeType = 'cylinder';
-        
-        // Show models for this cylinder
-        this.showModelRing(cylinder.market, cylinder.country, cylinder.manufacturer, cylinder.name);
-        
-        // Update visual states
-        this.updateCylinderVisuals(cylinder.key);
-        
-        // Render path lines
-        this.renderPathLines();
-    }
-    
-    updateCylinderVisuals(selectedKey) {
-        const cylinders = this.elements.cylindersGroup.querySelectorAll('.cylinder');
-        
-        cylinders.forEach(cylinder => {
-            const key = cylinder.getAttribute('data-key');
-            const circle = cylinder.querySelector('circle');
-            
-            if (key === selectedKey) {
-                circle.setAttribute('r', MOBILE_CONFIG.RADIUS.CYLINDER_NODE + 2);
-                circle.setAttribute('stroke-width', '2');
-                cylinder.classList.add('selected');
-            } else {
-                circle.setAttribute('r', MOBILE_CONFIG.RADIUS.CYLINDER_NODE);
-                circle.setAttribute('stroke-width', '1');
-                cylinder.classList.remove('selected');
-            }
-        });
-    }
-    
-    renderPathLines() {
-        // Clear existing path lines
-        this.elements.pathLinesGroup.innerHTML = '';
-        
-        if (this.activePath.length < 3) return; // Need at least market/country/manufacturer
-        
-        let prevX, prevY;
-        
-        // Get manufacturer position (selected manufacturer)
-        if (this.selectedManufacturer && this.activePath.length >= 3) {
-            const selectedElement = this.manufacturerElements.get(this.selectedManufacturer.key);
-            if (selectedElement) {
-                const transform = selectedElement.getAttribute('transform');
-                const match = transform.match(/translate\(([^,]+),\s*([^)]+)\)/);
-                if (match) {
-                    prevX = parseFloat(match[1]);
-                    prevY = parseFloat(match[2]);
-                }
-            }
-        }
-        
-        // Draw lines from manufacturer to cylinders
-        if (this.activePath.length >= 4 && prevX !== undefined && prevY !== undefined) {
-            const cylinders = this.elements.cylindersGroup.querySelectorAll('.cylinder');
-            
-            cylinders.forEach(cylinderElement => {
-                const transform = cylinderElement.getAttribute('transform');
-                const match = transform.match(/translate\(([^,]+),\s*([^)]+)\)/);
-                if (match) {
-                    const cylX = parseFloat(match[1]);
-                    const cylY = parseFloat(match[2]);
-                    
-                    this.createPathLine(prevX, prevY, cylX, cylY, 'manufacturer-cylinder');
-                }
-            });
-        }
-        
-        // Draw lines from selected cylinder to its models
-        if (this.activePath.length >= 5) {
-            const selectedCylinder = this.elements.cylindersGroup.querySelector('.cylinder.selected');
-            if (selectedCylinder) {
-                const transform = selectedCylinder.getAttribute('transform');
-                const match = transform.match(/translate\(([^,]+),\s*([^)]+)\)/);
-                if (match) {
-                    const cylX = parseFloat(match[1]);
-                    const cylY = parseFloat(match[2]);
-                    
-                    const models = this.elements.modelsGroup.querySelectorAll('.model');
-                    models.forEach(modelElement => {
-                        const modelTransform = modelElement.getAttribute('transform');
-                        const modelMatch = modelTransform.match(/translate\(([^,]+),\s*([^)]+)\)/);
-                        if (modelMatch) {
-                            const modelX = parseFloat(modelMatch[1]);
-                            const modelY = parseFloat(modelMatch[2]);
-                            
-                            this.createPathLine(cylX, cylY, modelX, modelY, 'cylinder-model');
-                        }
-                    });
-                }
-            }
-        }
-    }
-    
-    createPathLine(x1, y1, x2, y2, lineClass) {
-        const line = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'line');
-        line.setAttribute('x1', x1.toString());
-        line.setAttribute('y1', y1.toString());
-        line.setAttribute('x2', x2.toString());
-        line.setAttribute('y2', y2.toString());
-        line.setAttribute('stroke', 'black');
-        line.setAttribute('stroke-width', '1');
-        line.setAttribute('opacity', '0.6');
-        line.setAttribute('class', lineClass);
-        
-        this.elements.pathLinesGroup.appendChild(line);
-    }
-    
-    showModelRing(market, country, manufacturer, cylinder) {
-        Logger.debug('Showing model ring for cylinder', cylinder);
-        
-        // Get models for this cylinder
-        const models = this.dataManager.getModels(market, country, manufacturer, cylinder);
-        
-        if (models.length === 0) {
-            Logger.warn('No models found for cylinder', cylinder);
-            return;
-        }
-        
-        // Clear existing models
-        this.elements.modelsGroup.innerHTML = '';
-        this.elements.modelsGroup.classList.remove('hidden');
-        
-        // Find the selected cylinder's angle
-        const selectedCylinder = this.elements.cylindersGroup.querySelector('.cylinder.selected');
-        let cylinderAngle = 0;
-        
-        if (selectedCylinder) {
-            const cylinderKey = selectedCylinder.getAttribute('data-key');
-            // Extract angle from transform or calculate from position
-            const transform = selectedCylinder.getAttribute('transform');
-            const match = transform.match(/translate\(([^,]+),\s*([^)]+)\)/);
-            if (match) {
-                const x = parseFloat(match[1]);
-                const y = parseFloat(match[2]);
-                cylinderAngle = Math.atan2(y, x);
-            }
-        }
-        
-        // Calculate model positions around the cylinder angle
-        const angleStep = MOBILE_CONFIG.ANGLES.MODEL_SPREAD;
-        const startAngle = cylinderAngle - (models.length - 1) * angleStep / 2;
-        
-        models.forEach((model, index) => {
-            const angle = startAngle + index * angleStep;
-            const modelElement = this.createModelElement(model, angle);
-            this.elements.modelsGroup.appendChild(modelElement);
-        });
-    }
-    
-    createModelElement(model, angle) {
-        const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-        g.setAttribute('class', 'model');
-        g.setAttribute('data-model', model.name);
-        g.setAttribute('data-key', model.key);
-        
-        // Calculate position on model ring (15% of manufacturer ring radius - innermost ring)
-        const arcParams = this.viewport.getArcParameters();
-        const manufacturerRadius = arcParams.radius;
-        const radius = manufacturerRadius * 0.15;  // Very small innermost ring, guaranteed within viewport
-        const x = arcParams.centerX + radius * Math.cos(angle);
-        const y = arcParams.centerY + radius * Math.sin(angle);
-        
-        g.setAttribute('transform', `translate(${x}, ${y})`);
-        
-        // Create circle node
-        const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
-        circle.setAttribute('r', MOBILE_CONFIG.RADIUS.UNSELECTED);
-        circle.setAttribute('fill', this.getColorForType('model'));
-        circle.setAttribute('stroke', 'black');
-        circle.setAttribute('stroke-width', '1');
-        
-        g.appendChild(circle);
-        
-        // Create text label
-        const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        this.updateModelText(text, angle, model.name);
-        g.appendChild(text);
-        
-        // Add click handler
-        g.style.cursor = 'pointer';
-        g.addEventListener('click', (e) => {
-            e.stopPropagation();
-            this.handleModelSelection(model);
-        });
-        
-        return g;
-    }
-    
-    updateModelText(textElement, angle, content) {
-        const radius = MOBILE_CONFIG.RADIUS.MODEL_NODE;
-        const offset = -(radius + 2);
-        const textX = offset * Math.cos(angle);
-        const textY = offset * Math.sin(angle);
-        let rotation = angle * 180 / Math.PI;
-        let textAnchor = Math.cos(angle) >= 0 ? 'start' : 'end';
-        
-        if (Math.cos(angle) < 0) {
-            rotation += 180;
-        }
-        
-        textElement.setAttribute('x', textX);
-        textElement.setAttribute('y', textY);
-        textElement.setAttribute('dy', '0.3em');
-        textElement.setAttribute('text-anchor', textAnchor);
-        textElement.setAttribute('transform', `rotate(${rotation}, ${textX}, ${textY})`);
-        textElement.setAttribute('fill', 'black');
-        textElement.setAttribute('font-size', '10px');
-        textElement.textContent = content;
-    }
-    
-    handleModelSelection(model) {
-        Logger.debug('Model selected:', model.name);
-        
-        // Update active path
-        this.activePath = [model.market, model.country, model.manufacturer, model.cylinder, model.name];
-        this.activeType = 'model';
-        
-        // Update visual states
-        this.updateModelVisuals(model.key);
-        
-        // Render path lines
-        this.renderPathLines();
-        
-        // Could trigger model details display here
-        Logger.debug('Model data:', model.data);
-    }
-    
-    updateModelVisuals(selectedKey) {
-        const models = this.elements.modelsGroup.querySelectorAll('.model');
-        
-        models.forEach(model => {
-            const key = model.getAttribute('data-key');
-            const circle = model.querySelector('circle');
-            
-            if (key === selectedKey) {
-                circle.setAttribute('r', MOBILE_CONFIG.RADIUS.SELECTED);
-                circle.setAttribute('stroke-width', '2');
-                model.classList.add('selected');
-            } else {
-                circle.setAttribute('r', MOBILE_CONFIG.RADIUS.UNSELECTED);
-                circle.setAttribute('stroke-width', '1');
-                model.classList.remove('selected');
-            }
-        });
     }
 }
 
@@ -1411,12 +962,6 @@ class MobileCatalogApp {
             
             this.initialized = true;
             Logger.debug('Mobile catalog initialized successfully');
-            console.log('[MobileCatalog FORCE] === DEBUG MODE TEST - This should always show ===');
-            console.log('[MobileCatalog FORCE] Debug enabled:', window.DEBUG_MOBILE || localStorage.getItem('debugMobile') === 'true');
-            
-            // Force enable debugging for testing
-            window.DEBUG_MOBILE = true;
-            console.log('[MobileCatalog FORCE] Debug mode force-enabled for testing');
             
         } catch (error) {
             this.handleInitError(error);

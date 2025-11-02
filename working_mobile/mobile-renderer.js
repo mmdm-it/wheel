@@ -500,7 +500,7 @@ class MobileRenderer {
         g.appendChild(circle);
         
         const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        this.updateManufacturerText(text, angle, manufacturer.name, isSelected);
+        this.updateManufacturerText(text, angle, manufacturer.name, false);
         g.appendChild(text);
         
         return g;
@@ -549,9 +549,9 @@ class MobileRenderer {
         const radius = MOBILE_CONFIG.RADIUS.UNSELECTED;
         let offset = -(radius + 5);
         
-        // For selected manufacturers, shift text further outward (40px more to the right)
+        // For selected manufacturers, shift text much further away from center (to the right)
         if (isSelected) {
-            offset = -(radius + 50); // Move text 40px more outward from the current 10px offset
+            offset = -(radius + 40); // Move text much further outward from the node
         }
         
         const textX = offset * Math.cos(angle);
