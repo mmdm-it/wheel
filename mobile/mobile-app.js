@@ -143,7 +143,7 @@ class MobileCatalogApp {
             this.touchHandler.deactivate();
         }
         
-        // Create new touch handler
+        // Create new touch handler (revert to original)
         this.touchHandler = new TouchRotationHandler(
             (offset) => this.renderer.updateFocusRingPositions(offset),
             (offset) => this.handleRotationEnd(offset)
@@ -190,47 +190,19 @@ class MobileCatalogApp {
     }
     
     calculateRotationLimits(focusItems) {
+        // For viewport filtering approach, use generous but bounded limits
         if (!focusItems.length) {
             return { min: -Infinity, max: Infinity };
         }
         
-        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-        const middleIndex = (focusItems.length - 1) / 2;
-        const centerAngle = this.viewport.getCenterAngle(); // Dynamic angle pointing to screen center
+        // Calculate limits based on actual manufacturer count
+        // With 104 manufacturers at 4.3° spacing = 447.2° total arc
+        // Need ±223.6° minimum, use ±250° for comfortable buffer
+        const maxRotation = Math.PI * 1.39; // 250° in each direction
         
-        // Validate inputs
-        if (isNaN(angleStep)) {
-            Logger.error(`Invalid angleStep in rotation limits: ${angleStep}`);
-            return { min: -Infinity, max: Infinity };
-        }
-        if (isNaN(centerAngle)) {
-            Logger.error(`Invalid centerAngle in rotation limits: ${centerAngle}`);
-            return { min: -Infinity, max: Infinity };
-        }
+        Logger.debug(`Viewport filtering rotation limits: ±${maxRotation * 180 / Math.PI}°`);
         
-        // Calculate rotation limits so first/last manufacturers stop at the dynamic center angle
-        // When rotationOffset = 0, middle manufacturer is at centerAngle
-        // For first manufacturer (index 0) to be at centerAngle:
-        // centerAngle + offset + (0 - middleIndex) * angleStep = centerAngle
-        // Therefore: offset = -(0 - middleIndex) * angleStep = middleIndex * angleStep
-        const maxOffset = middleIndex * angleStep;
-        
-        // For last manufacturer (index length-1) to be at centerAngle:
-        // centerAngle + offset + ((length-1) - middleIndex) * angleStep = centerAngle  
-        // Therefore: offset = -((length-1) - middleIndex) * angleStep = -middleIndex * angleStep
-        const minOffset = -middleIndex * angleStep;
-        
-        // Validate calculated limits
-        if (isNaN(maxOffset) || isNaN(minOffset)) {
-            Logger.error(`Invalid rotation limits calculated: min=${minOffset}, max=${maxOffset}, middleIndex=${middleIndex}, angleStep=${angleStep}`);
-            return { min: -Infinity, max: Infinity };
-        }
-        
-        Logger.debug(`Rotation limits for ${focusItems.length} focus items:`);
-        Logger.debug(`maxOffset (first focus item at center): ${maxOffset * 180 / Math.PI}°`);
-        Logger.debug(`minOffset (last focus item at center): ${minOffset * 180 / Math.PI}°`);
-        
-        return { min: minOffset, max: maxOffset };
+        return { min: -maxRotation, max: maxRotation };
     }
     
     handleRotationEnd(offset) {
@@ -243,11 +215,11 @@ class MobileCatalogApp {
             return;
         }
         
-        // Snap to nearest focus item
-        if (!this.renderer.currentFocusItems.length) return;
+        // Snap to nearest focus item (restore original snapping behavior)
+        if (!this.renderer.allFocusItems.length) return;
         
-        const focusItems = this.renderer.currentFocusItems;
         const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const focusItems = this.renderer.allFocusItems;
         const middleIndex = (focusItems.length - 1) / 2;
         
         // Validate angleStep
@@ -263,14 +235,18 @@ class MobileCatalogApp {
         // Calculate the exact offset needed to center this manufacturer
         const targetOffset = -(clampedIndex - middleIndex) * angleStep;
         
+        // Apply rotation limits (match the limits from calculateRotationLimits)
+        const maxRotation = Math.PI * 1.39; // 250° - same as calculateRotationLimits
+        const finalOffset = Math.max(-maxRotation, Math.min(maxRotation, targetOffset));
+        
         // Validate calculated targetOffset
-        if (isNaN(targetOffset)) {
+        if (isNaN(finalOffset)) {
             Logger.error(`Invalid targetOffset calculation: clampedIndex=${clampedIndex}, middleIndex=${middleIndex}, angleStep=${angleStep}`);
             return;
         }
         
-        // Animate to the target offset
-        this.animateRotationTo(targetOffset);
+        // Animate to the target offset (snap behavior)
+        this.animateRotationTo(finalOffset);
         
         // Safe logging with bounds checking
         if (focusItems[clampedIndex] && focusItems[clampedIndex].name) {

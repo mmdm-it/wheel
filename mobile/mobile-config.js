@@ -23,7 +23,7 @@ const MOBILE_CONFIG = {
     
     // Animation constants
     ROTATION: {
-        SENSITIVITY: 0.003,
+        SENSITIVITY: 0.0044,  // Increased for 2.5-swipe full traversal (was 0.003)
         DECELERATION: 0.95,
         MIN_VELOCITY: 0.001,
         SNAP_THRESHOLD: 0.05,
@@ -47,7 +47,12 @@ const MOBILE_CONFIG = {
         MARKET_OFFSET: {
             HORIZONTAL: 0.20,  // Match bundled version
             VERTICAL: 0.35
-        }
+        },
+        // Sprocket chain viewport window parameters
+        MAX_VISIBLE_ITEMS: 11, // Maximum manufacturers visible in focus ring at once (reduced to original range)
+        VIEWPORT_ARC: Math.PI * 0.6, // 108° total arc for visible manufacturers 
+        CHAIN_POSITION_START: 0, // Linear position 0 = first manufacturer
+        CHAIN_BUFFER: 0 // No buffer - only show exact visible items
     }
 };
 
