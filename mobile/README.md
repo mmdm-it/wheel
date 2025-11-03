@@ -1,4 +1,88 @@
-# Mobile Catalog - Modular Architecture
+# MMdM Marine Engine Catalog - Mobile Interface
+
+## 🏢 About MMdM
+
+**Meccanismi Marittimi delle Marche** is an Italian company based in Fano (PU) that manufactures and sells water-cooled exhaust manifolds for marine engines. This catalog serves as both a comprehensive marine engine encyclopedia and the primary sales interface for MMdM's exhaust systems.
+
+## 🎯 Interface Philosophy
+
+This catalog uses a revolutionary **arc-based navigation system** designed around the natural movement of the human thumb. Unlike traditional vertical scrolling interfaces, the radial design feels intuitive and engaging on mobile devices.
+
+**"The more I test and use this interface, the more unnatural traditional scrolling feels."** - The arc follows how thumbs naturally move, creating a more ergonomic browsing experience.
+
+## 🗂️ Data Hierarchy & Family Logic
+
+The catalog organizes marine engine data in a 6-level hierarchy:
+
+```
+Markets → Countries → Manufacturers → Cylinders → Families → Engine Models
+```
+
+### **Family Adoption Rule**
+**"If any engine in a cylinder count has a family, ALL engines get assigned to families."**
+
+- **Natural Families**: Well-known groupings (e.g., Ford Flathead, Ford FE)
+- **Orphan Adoption**: Standalone engines become `family: "Other", in_a_family: true`
+- **No Engine Left Behind**: This ensures consistent navigation patterns
+
+## 🎮 Navigation Zones (nzones)
+
+The interface consists of **four distinct navigation zones** where data migrates as users drill deeper:
+
+### **1. Parent Button** (Bottom Left)
+- **Function**: Back navigation and context display
+- **Content**: Shows the previous level (Country → Manufacturer → Cylinder → Family)
+- **Exception**: Countries never appear here (info-only during manufacturer browsing)
+
+### **2. Focus Ring** (Main Arc, Top-Left to Bottom-Right)
+- **Function**: Primary browsing and selection
+- **Interaction**: Touch rotation to browse items
+- **Visual**: Magnifying ring highlights the centered item
+- **Content**: Currently active data level
+
+### **3. Child Pyramid** (Upper Right Corner)
+- **Function**: Preview of next level down
+- **Layout**: Three concentric arcs (10→9→6 nodes)
+- **Interaction**: Click to drill down to next level
+
+### **4. Details Arc** (Upper Right Corner - Final Level)
+- **Function**: Product information and commerce
+- **Appearance**: Blue arc covering entire upper-right viewport
+- **Content**: Model details, aftermarket manifolds, prices, photos, videos
+- **Interaction**: Focus Ring rotation updates Details Arc content
+
+## 🌊 Data Migration Flow
+
+Data "flows" through the navigation zones like a pipeline:
+
+### **Initial Load**
+- **Parent Button**: Country name
+- **Focus Ring**: Manufacturers
+- **Child Pyramid**: Cylinder counts
+
+### **After Cylinder Selection**
+- **Parent Button**: Selected manufacturer (country disappears)
+- **Focus Ring**: Selected cylinder's families/models
+- **Child Pyramid**: Next level data
+
+### **After Family Selection**
+- **Parent Button**: Selected family
+- **Focus Ring**: Engine models in that family
+- **Child Pyramid**: Becomes Details Arc
+
+### **Final State**
+- **Parent Button**: Selected model family
+- **Focus Ring**: Individual engine models
+- **Details Arc**: Commerce and technical information
+
+## 🚀 Broader Applications
+
+This navigation pattern has potential for many hierarchical data domains:
+
+- **Genealogy**: Generations → Families → Individuals → Details
+- **Entertainment**: Genres → Years → Actors → Movie Details  
+- **Music**: Genres → Decades → Artists → Albums → Track Details
+- **E-commerce**: Categories → Brands → Products → Specifications
 
 ## ⚠️ IMPORTANT: NO BUNDLING REQUIRED
 
