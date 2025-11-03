@@ -65,24 +65,45 @@ class TouchRotationHandler {
     handleTouchStart(e) {
         if (!this.shouldHandleTouch(e)) return;
         
-        e.preventDefault();
-        this.isDragging = true;
+        // Don't prevent default immediately - let clicks work
+        // Only prevent default when we detect actual dragging
+        this.isDragging = false; // Start as false, will become true on first move
         this.velocity = 0;
+        this.startTouch = { x: e.touches[0].clientX, y: e.touches[0].clientY };
         
         const touch = e.touches[0];
         this.lastTouch = { x: touch.clientX, y: touch.clientY };
         
         this.stopAnimation();
-        Logger.debug('Touch rotation started');
+        Logger.debug('Touch rotation prepared');
     }
     
     handleTouchMove(e) {
-        if (!this.isDragging || e.touches.length !== 1) return;
+        if (e.touches.length !== 1) return;
         
-        e.preventDefault();
         const touch = e.touches[0];
         const deltaX = touch.clientX - this.lastTouch.x;
         const deltaY = touch.clientY - this.lastTouch.y;
+        
+        // Check if this is the first move and if movement is significant enough to start dragging
+        if (!this.isDragging) {
+            const totalDeltaX = touch.clientX - this.startTouch.x;
+            const totalDeltaY = touch.clientY - this.startTouch.y;
+            const totalMovement = Math.sqrt(totalDeltaX * totalDeltaX + totalDeltaY * totalDeltaY);
+            
+            // Only start dragging if movement exceeds threshold (prevents accidental drags during taps)
+            if (totalMovement > 10) { // 10px threshold
+                this.isDragging = true;
+                e.preventDefault(); // Now prevent default since we're dragging
+                Logger.debug('Touch rotation started (dragging detected)');
+            } else {
+                // Not enough movement yet, don't prevent default (allow clicks)
+                this.lastTouch = { x: touch.clientX, y: touch.clientY };
+                return;
+            }
+        } else {
+            e.preventDefault(); // Continue preventing default during drag
+        }
         
         // Convert movement to rotation
         const rotationDelta = -(deltaX + deltaY) * MOBILE_CONFIG.ROTATION.SENSITIVITY;
@@ -98,27 +119,47 @@ class TouchRotationHandler {
     }
     
     handleTouchEnd(e) {
-        if (!this.isDragging) return;
-        
-        e.preventDefault();
+        const wasDragging = this.isDragging;
         this.isDragging = false;
         
+        if (!wasDragging) {
+            // This was just a tap, not a drag - don't prevent default, let click events fire
+            Logger.debug('Touch ended (tap detected, allowing click events)');
+            return;
+        }
+        
+        e.preventDefault();
         Logger.debug('Touch rotation ended, velocity:', this.velocity);
         
         if (Math.abs(this.velocity) > MOBILE_CONFIG.ROTATION.MIN_VELOCITY) {
             this.startMomentumAnimation();
         } else {
-            this.snapToNearest();
+            this.onRotationEnd(this.rotationOffset);
         }
     }
     
     shouldHandleTouch(e) {
         if (e.touches.length !== 1) return false;
         
-        // Check if touch is on a market button
+        // Check if touch is on an interactive element that should handle its own clicks
         const touch = e.touches[0];
         const element = document.elementFromPoint(touch.clientX, touch.clientY);
-        return !(element && (element.classList.contains('marketHitArea') || element.closest('.marketGroup')));
+        
+        // Don't handle touch if it's on:
+        // - Market buttons
+        // - Child Pyramid items (they need to handle their own clicks)
+        // - Parent button
+        if (element && (
+            element.classList.contains('marketHitArea') || 
+            element.closest('.marketGroup') ||
+            element.classList.contains('hit-zone') ||
+            element.closest('.child-pyramid-item') ||
+            element.closest('#parentButton')
+        )) {
+            return false;
+        }
+        
+        return true;
     }
     
     constrainRotation(offset) {

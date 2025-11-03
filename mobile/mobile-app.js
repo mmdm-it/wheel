@@ -38,13 +38,14 @@ class MobileCatalogApp {
             // Skip market selection - directly show all manufacturers
             this.showAllFocusItems();
 
-            // Set up resize handling
-            this.setupResizeHandling();
+        // Set up resize handling
+        this.setupResizeHandling();
+        
+        // Set up parent button click handler for nzone navigation
+        this.setupParentButtonHandler();
 
-            this.initialized = true;
-            Logger.debug('Mobile catalog initialized successfully');
-
-        } catch (error) {
+        this.initialized = true;
+        Logger.debug('Mobile catalog initialized successfully');        } catch (error) {
             this.handleInitError(error);
         }
     }
@@ -299,6 +300,106 @@ class MobileCatalogApp {
         };
 
         requestAnimationFrame(animate);
+    }
+
+    setupParentButtonHandler() {
+        const parentButton = document.getElementById('parentButton');
+        if (!parentButton) {
+            Logger.warn('Parent button not found in DOM');
+            return;
+        }
+        
+        // Add click handler for parent button nzone navigation
+        parentButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            this.handleParentButtonClick();
+        });
+        
+        Logger.debug('Parent button click handler initialized');
+    }
+    
+    handleParentButtonClick() {
+        Logger.debug('🔼 Parent button clicked - implementing nzone migration');
+        
+        // NZONE MIGRATION: Focus Ring → Parent Button (move DOWN)
+        // This moves the current focus item DOWN from Focus Ring to become a Child Pyramid item
+        
+        if (!this.renderer.selectedFocusItem) {
+            Logger.warn('No focus item selected for parent navigation');
+            return;
+        }
+        
+        const currentFocus = this.renderer.selectedFocusItem;
+        Logger.debug('🔼 Moving focus item DOWN:', currentFocus.name);
+        
+        // 1. Determine what should be the new Focus Ring based on current level
+        if (currentFocus.cylinderCount !== undefined) {
+            // Currently focused on Cylinder → Move to Manufacturer level
+            Logger.debug('🔼 Cylinder → Manufacturer navigation');
+            
+            // Get all cylinders for this manufacturer (becomes new Focus Ring)
+            const cylinders = this.dataManager.getCylinders(
+                currentFocus.market, 
+                currentFocus.country, 
+                currentFocus.manufacturer
+            );
+            
+            // Update Focus Ring with cylinders
+            this.renderer.currentFocusItems = cylinders;
+            this.renderer.selectedFocusItem = {
+                name: currentFocus.manufacturer,
+                country: currentFocus.country,
+                market: currentFocus.market,
+                key: `${currentFocus.market}/${currentFocus.country}/${currentFocus.manufacturer}`
+            };
+            
+            // Update Parent Button to show Country
+            this.renderer.updateParentButton({
+                name: currentFocus.country,
+                country: currentFocus.market, // Parent of country is market
+                market: currentFocus.market
+            });
+            
+            // Hide current Child Pyramid (families/models)
+            this.renderer.elements.childRingGroup.classList.add('hidden');
+            
+            // Update Focus Ring display
+            this.renderer.updateFocusRingPositions(0);
+            
+            // Show manufacturer's cylinders in Child Pyramid
+            setTimeout(() => {
+                this.renderer.showChildPyramid(cylinders, 'cylinders');
+            }, 200);
+            
+        } else if (currentFocus.manufacturer !== undefined) {
+            // Currently focused on Manufacturer → Move to All Manufacturers level
+            Logger.debug('🔼 Manufacturer → All Manufacturers navigation');
+            
+            // Get all manufacturers (becomes new Focus Ring)
+            const allManufacturers = this.dataManager.getAllManufacturers();
+            
+            // Update Focus Ring with all manufacturers
+            this.renderer.currentFocusItems = allManufacturers;
+            this.renderer.selectedFocusItem = null; // No single manufacturer selected
+            
+            // Hide Parent Button (at top level)
+            this.renderer.hideParentButton();
+            
+            // Hide Child Pyramid
+            this.renderer.elements.childRingGroup.classList.add('hidden');
+            
+            // Update Focus Ring display
+            this.renderer.updateFocusRingPositions(0);
+            
+            // Re-setup touch rotation for all manufacturers
+            this.setupTouchRotation(allManufacturers);
+            
+        } else {
+            Logger.debug('🔼 Already at top level - no parent navigation available');
+        }
+        
+        Logger.debug('🔼 Parent button navigation complete');
     }
 
     reset() {

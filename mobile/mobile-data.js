@@ -112,34 +112,77 @@ class DataManager {
     }
 
     getCylinders(market, country, manufacturer) {
-        Logger.debug('Getting cylinders for:', market, country, manufacturer);
-
-        if (!this.data || !this.data.MMdM.markets[market] ||
-            !this.data.MMdM.markets[market].countries[country] ||
-            !this.data.MMdM.markets[market].countries[country].manufacturers[manufacturer]) {
-            Logger.warn('Data path not found for cylinders');
+        if (!this.data.MMdM?.markets?.[market]?.countries?.[country]?.manufacturers?.[manufacturer]?.cylinders) {
+            Logger.warn(`No cylinders found for ${market}/${country}/${manufacturer}`);
             return [];
         }
 
-        const cylinders = this.data.MMdM.markets[market].countries[country].manufacturers[manufacturer].cylinders;
-        if (!cylinders) {
-            Logger.warn('No cylinders found in data structure');
-            return [];
-        }
+        const cylinderData = this.data.MMdM.markets[market].countries[country].manufacturers[manufacturer].cylinders;
+        const cylinders = [];
 
-        const cylinderKeys = Object.keys(cylinders);
-        Logger.debug('Found cylinder keys:', cylinderKeys);
-
-        return cylinderKeys
-            .sort((a, b) => parseInt(a) - parseInt(b))
-            .map(cylinder => ({
-                name: cylinder,
+        // Convert cylinder counts to objects
+        Object.keys(cylinderData).forEach(cylinderCount => {
+            cylinders.push({
+                name: `${cylinderCount} Cylinders`,
+                cylinderCount: parseInt(cylinderCount),
                 market: market,
                 country: country,
                 manufacturer: manufacturer,
-                key: `${market}/${country}/${manufacturer}/${cylinder}`,
-                data: cylinders[cylinder]
-            }));
+                key: `${market}/${country}/${manufacturer}/${cylinderCount}`,
+                data: cylinderData[cylinderCount]
+            });
+        });
+
+        // Sort by cylinder count (descending - High to Low)
+        cylinders.sort((a, b) => b.cylinderCount - a.cylinderCount);
+        
+        Logger.debug(`Found ${cylinders.length} cylinder types for ${manufacturer}:`, cylinders.map(c => c.name));
+        return cylinders;
+    }
+
+    getFamilies(market, country, manufacturer, cylinderCount) {
+        Logger.debug(`Getting families for ${market}/${country}/${manufacturer}/${cylinderCount}`);
+        
+        const models = this.getModels(market, country, manufacturer, cylinderCount);
+        if (models.length === 0) {
+            Logger.warn(`No models found for ${manufacturer} ${cylinderCount} cylinders`);
+            return [];
+        }
+        
+        // Group models by engine family (extract from engine_model name)
+        const familyMap = new Map();
+        
+        models.forEach(model => {
+            // Try to extract family from engine model name
+            // Common patterns: "ABC-123", "XYZ 456", "DEF_789"
+            let familyName = model.name;
+            
+            // Extract base family name (before numbers or special chars)
+            const familyMatch = model.name.match(/^([A-Za-z]+)/);
+            if (familyMatch) {
+                familyName = familyMatch[1];
+            }
+            
+            if (!familyMap.has(familyName)) {
+                familyMap.set(familyName, {
+                    name: `${familyName} Family`,
+                    familyCode: familyName,
+                    market: market,
+                    country: country,
+                    manufacturer: manufacturer,
+                    cylinderCount: cylinderCount,
+                    key: `${market}/${country}/${manufacturer}/${cylinderCount}/${familyName}`,
+                    models: []
+                });
+            }
+            
+            familyMap.get(familyName).models.push(model);
+        });
+        
+        const families = Array.from(familyMap.values());
+        Logger.debug(`Found ${families.length} families:`, families.map(f => `${f.name} (${f.models.length} models)`));
+        
+        return families;
     }
 
     getModels(market, country, manufacturer, cylinder) {
@@ -163,6 +206,17 @@ class DataManager {
             data: model,
             index: index
         }));
+    }
+    
+    getModelsByFamily(market, country, manufacturer, cylinderCount, familyName) {
+        const allModels = this.getModels(market, country, manufacturer, cylinderCount);
+        
+        // Filter models that belong to this family
+        return allModels.filter(model => {
+            const familyMatch = model.name.match(/^([A-Za-z]+)/);
+            const modelFamily = familyMatch ? familyMatch[1] : model.name;
+            return modelFamily === familyName || model.name.startsWith(familyName);
+        });
     }
 }
 
