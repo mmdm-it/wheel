@@ -154,11 +154,14 @@ class TouchRotationHandler {
             element.closest('.marketGroup') ||
             element.classList.contains('hit-zone') ||
             element.closest('.child-pyramid-item') ||
-            element.closest('#parentButton')
+            element.closest('#parentButton') ||
+            (element.tagName === 'text' && element.closest('.child-pyramid-item'))
         )) {
+            console.log('🔺 Touch handler EXCLUDING element:', element.tagName, element.className || 'no-class');
             return false;
         }
         
+        console.log('🔺 Touch handler ACCEPTING element:', element?.className, element?.tagName);
         return true;
     }
     

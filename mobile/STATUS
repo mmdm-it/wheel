@@ -67,6 +67,36 @@ The focus ring is NOT a circle or "hose reel" - it's an arc functioning as a spr
 - Cylinder count extraction and sorting
 - Market→Country→Manufacturer→Cylinder→Engine Model hierarchy
 - Dynamic data loading and caching
+## Family Logic & Orphan Adoption
+
+The catalog implements a sophisticated family/orphan system:
+
+### Family vs Pseudo-Family Architecture
+- **True Families**: Manufacturers like Ford have real family groupings (6.8L, 7.3L families)
+  Uses `in_a_family: true` flag and `family` field in engine data
+- **Pseudo Families**: Manufacturers like Lockwood-Ash appear to have families but engines are actually orphans
+  Uses `in_a_family: false` to skip family layer navigation
+
+### Orphan Adoption System
+- Engines with `in_a_family: false` are considered orphans
+- getFamilies() creates an "Other" family to adopt orphans when no true families exist
+- getModelsByFamily() filters orphans into the "Other" family for mixed manufacturers
+- Provides consistent UX while respecting data structure differences
+
+### Navigation Flow Impact
+- Ford path: Manufacturer → Family → Models (3 levels)
+- Lockwood-Ash path: Manufacturer → Models (2 levels, skips family)
+- Mixed case: True families + "Other" orphan family
+
+### Implementation Status
+- ✅ Family detection with in_a_family flag checking
+- ✅ Orphan adoption into "Other" family
+- ✅ Child Pyramid click handlers with family logic
+- ✅ getModelsByFamily updated for orphan filtering
+- ✅ Correct nzone navigation flow (Cylinder → Focus Ring, Families → Child Pyramid)
+- ✅ Proper navigation levels: Manufacturer → Cylinders → Families → Models
+- ✅ Fixed focus ring rendering timing issue (setup touch rotation before updating positions)
+- 🔄 Testing complete navigation flow
 
 ### CURRENT FUNCTIONALITY
 
@@ -75,7 +105,10 @@ The focus ring is NOT a circle or "hose reel" - it's an arc functioning as a spr
 2. **Focus Ring**: 104 manufacturers displayed in rotatable arc with touch controls
 3. **Child Pyramid**: Cylinder counts (1-19) displayed in three concentric arcs
 4. **Navigation Flow**: Market selection → Manufacturer focus → Cylinder pyramid display
-5. **Visual Polish**: Consistent yellow theming, rotated text, optimized positioning
+5. **Nzone Migration**: Cylinder clicks successfully migrate to Focus Ring with proper state updates
+6. **Parent Button Navigation**: Back navigation working with proper Child Pyramid display
+7. **Null Safety**: Robust handling of manufacturers with no family layer (shows models directly)
+8. **Visual Polish**: Consistent yellow theming, rotated text, optimized positioning
 
 **Data Integration:**
 - Lockwood-Ash: 19 cylinder counts (1-19) for testing Child Pyramid capacity
@@ -101,22 +134,28 @@ The focus ring is NOT a circle or "hose reel" - it's an arc functioning as a spr
 ### TO-DO LIST
 
 **🚧 HIGH PRIORITY**
-1. **Click Handling**: Implement click/tap handlers for Child Pyramid nodes
-   - Navigate to cylinder detail view
+1. **Nzone Migration Module**: Extract generalized migration logic into mobile-migrations.js
+   - Handle all nzone transitions (Cylinder→Focus, Family→Focus, Model→Focus)
+   - Smooth animations for ring transitions
+   - State management for navigation history
+
+2. **Click Handling**: Complete click/tap handlers for all pyramid types
+   - Family pyramid navigation (when families exist)
+   - Model pyramid navigation
    - Update URL state for deep linking
 
-2. **Data Pipeline Integration**: Complete the navigation flow
+3. **Data Pipeline Integration**: Complete the navigation flow
    - Cylinder → Engine Family selection
    - Engine Family → Engine Model selection
    - Model detail view implementation
 
-3. **Performance Optimization**: 
+4. **Performance Optimization**: 
    - Implement viewport culling for off-screen elements
    - Add requestAnimationFrame for smooth animations
    - Optimize DOM manipulation during rotation
 
 **🔧 MEDIUM PRIORITY**
-4. **Touch Interaction Enhancement**:
+5. **Touch Interaction Enhancement**:
    - Add haptic feedback for selections
    - Implement pinch-to-zoom functionality
    - Add swipe gestures for navigation
@@ -187,13 +226,14 @@ The focus ring is NOT a circle or "hose reel" - it's an arc functioning as a spr
 ```
 mobile/
 ├── mobile-app.js           - Main controller
-├── mobile-config.js        - Configuration
-├── mobile-data.js          - Data management  
-├── mobile-logger.js        - Debug logging
-├── mobile-renderer.js      - SVG rendering ⭐ (most recent changes)
-├── mobile-touch.js         - Touch handling
-├── mobile-viewport.js      - Viewport calculations
-├── catalog_mobile_modular.js - Module coordination
+├── mobile-childpyramid.js  - Child Pyramid module ⭐ (new - extracted from renderer)
+├── mobile-config.js        - Centralized configuration constants
+├── mobile-data.js          - Data loading and hierarchy management
+├── mobile-logger.js        - Debug logging system
+├── mobile-renderer.js      - SVG rendering and UI state management (refactored)
+├── mobile-touch.js         - Touch interaction handling
+├── mobile-viewport.js      - Viewport calculations and positioning
+├── catalog_mobile_modular.js - Module initialization and coordination
 └── STATUS                  - This file
 ```
 
@@ -221,7 +261,7 @@ mobile/
 
 ---
 
-**Last Major Update**: Child Pyramid implementation with rotated text and yellow theming
-**Next Priority**: Click handling and navigation flow completion
-**Code Stability**: High (core features working reliably)
+**Last Major Update**: Fixed parent button navigation - now properly calls childPyramid.showChildPyramid() for back navigation
+**Next Priority**: Implement mobile-migrations.js module for generalized nzone transitions
+**Code Stability**: High (Child Pyramid module working with 19 dynamic nodes, null safety and parent navigation implemented)
 **Documentation**: This STATUS file (comprehensive)

@@ -8,6 +8,7 @@
 
 import { MOBILE_CONFIG } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
+import { MobileChildPyramid } from './mobile-childpyramid.js';
 
 /**
  * Efficient renderer that minimizes DOM manipulation
@@ -16,6 +17,9 @@ class MobileRenderer {
     constructor(viewportManager, dataManager) {
         this.viewport = viewportManager;
         this.dataManager = dataManager;
+        
+        // Initialize Child Pyramid module
+        this.childPyramid = new MobileChildPyramid(viewportManager, dataManager, this);
         
         // DOM element caches
         this.elements = {};
@@ -73,6 +77,9 @@ class MobileRenderer {
         if (this.currentFocusItems.length > 0) {
             this.updateFocusRingPositions(0);
         }
+        
+        // Notify child pyramid of viewport changes
+        this.childPyramid.handleViewportChange();
     }
     
     async initializeElements() {
@@ -121,6 +128,9 @@ class MobileRenderer {
             this.elements.mainGroup.appendChild(childRing);
             this.elements.childRingGroup = childRing;
         }
+        
+        // Initialize Child Pyramid module with the DOM element
+        this.childPyramid.initialize(this.elements.childRingGroup);
         
         if (missing.length > 0) {
             Logger.error('Missing DOM elements:', missing);
@@ -206,7 +216,7 @@ class MobileRenderer {
                 focusItem.cylinderCount,
                 focusItem.familyCode
             );
-            this.showChildPyramid(models, 'models');
+            this.childPyramid.showChildPyramid(models, 'models');
             
         } else if (focusItem.cylinderCount !== undefined) {
             // Focus item is a Cylinder count → show Families in Child Pyramid  
@@ -217,7 +227,31 @@ class MobileRenderer {
                 focusItem.manufacturer,
                 focusItem.cylinderCount
             );
-            this.showChildPyramid(families, 'families');
+            
+            if (families === null) {
+                // No family layer - show models directly in Child Pyramid
+                Logger.debug('🔺 No families for', focusItem.name, '- showing models in Child Pyramid');
+                
+                const models = this.dataManager.getModels(focusItem.market, focusItem.country, focusItem.manufacturer, focusItem.cylinderCount);
+                
+                setTimeout(() => {
+                    if (models.length > 0) {
+                        this.childPyramid.showChildPyramid(models, 'models');
+                        Logger.debug('🔺 Showing', models.length, 'models in Child Pyramid (no family layer)');
+                    } else {
+                        Logger.warn('🔺 No models found for cylinder:', focusItem.name);
+                    }
+                }, 300);
+                
+            } else {
+                // Show families in Child Pyramid
+                Logger.debug('🔺 Found', families.length, 'families for', focusItem.name, '- showing in Child Pyramid');
+                
+                setTimeout(() => {
+                    this.childPyramid.showChildPyramid(families, 'families');
+                    Logger.debug('🔺 Showing', families.length, 'families in Child Pyramid');
+                }, 300);
+            }
             
         } else if (focusItem.manufacturer || focusItem.name) {
             // Focus item is a Manufacturer → show Cylinders in Child Pyramid
@@ -228,7 +262,7 @@ class MobileRenderer {
                 focusItem.country,
                 manufacturerName
             );
-            this.showChildPyramid(cylinders, 'cylinders');
+            this.childPyramid.showChildPyramid(cylinders, 'cylinders');
             
         } else {
             Logger.warn('Unable to determine focus item type for:', focusItem);
@@ -474,7 +508,18 @@ class MobileRenderer {
             this.selectedFocusItem = selectedFocusItem;
             
             // Update parent button
-            this.updateParentButton(selectedFocusItem);
+            let parentName = null;
+            if (selectedFocusItem.cylinderCount && selectedFocusItem.familyCode) {
+                // Family level - parent is cylinder
+                parentName = `${selectedFocusItem.cylinderCount} Cylinders`;
+            } else if (selectedFocusItem.cylinderCount) {
+                // Cylinder level - parent is manufacturer
+                parentName = selectedFocusItem.manufacturer;
+            } else {
+                // Manufacturer level - parent is country
+                parentName = selectedFocusItem.country;
+            }
+            this.updateParentButton(parentName);
             
             // Clear any existing settle timeout
             if (this.settleTimeout) {
@@ -756,332 +801,7 @@ class MobileRenderer {
         }
         
         // Use Child Pyramid for cylinders
-        this.showChildPyramid(cylinders, 'cylinders');
-    }
-    
-    showChildPyramid(items, itemType) {
-        Logger.debug(`🔺 Showing child pyramid with ${items.length} ${itemType}`);
-        
-        // Sort items based on type
-        const sortedItems = this.sortChildPyramidItems(items, itemType);
-        Logger.debug(`🔺 Sorted items:`, sortedItems.map(item => item.name));
-        
-        // Clear and show child ring group
-        this.elements.childRingGroup.innerHTML = '';
-        this.elements.childRingGroup.classList.remove('hidden');
-        
-        // FORCE visibility for debugging
-        this.elements.childRingGroup.style.display = 'block';
-        this.elements.childRingGroup.style.visibility = 'visible';
-        this.elements.childRingGroup.style.opacity = '1';
-        
-        Logger.debug(`🔺 childRingGroup visibility forced - classList: ${this.elements.childRingGroup.classList.toString()}`);
-        Logger.debug(`🔺 childRingGroup parent:`, this.elements.childRingGroup.parentElement?.id);
-        Logger.debug(`🔺 childRingGroup in DOM:`, document.contains(this.elements.childRingGroup));
-        
-        // Create pyramid arcs
-        this.createChildPyramidArcs(sortedItems);
-        Logger.debug(`🔺 Child pyramid created successfully`);
-    }
-    
-    sortChildPyramidItems(items, itemType) {
-        const sorted = [...items];
-        
-        switch(itemType) {
-            case 'cylinders':
-                // Sort numerically (High to Low)
-                return sorted.sort((a, b) => parseInt(b.name) - parseInt(a.name));
-            
-            case 'families':
-                // Sort chronologically (assuming families have a date field or use alphabetical as proxy)
-                return sorted.sort((a, b) => a.name.localeCompare(b.name));
-            
-            case 'models':
-                // Sort by displacement (assuming models have displacement data)
-                return sorted.sort((a, b) => {
-                    const dispA = parseFloat(a.data?.displacement || a.name.match(/[\d.]+/)?.[0] || 0);
-                    const dispB = parseFloat(b.data?.displacement || b.name.match(/[\d.]+/)?.[0] || 0);
-                    return dispA - dispB;
-                });
-            
-            default:
-                return sorted;
-        }
-    }
-    
-    createChildPyramidArcs(items) {
-        const arcParams = this.viewport.getArcParameters();
-        const focusRingRadius = arcParams.radius; // Use actual focus ring radius
-        
-        // Define the three pyramid arcs as percentages of the FOCUS RING radius
-        const pyramidArcs = [
-            { name: 'chpyr_85', radius: focusRingRadius * 0.90, maxNodes: 8 }, // 90% of focus ring
-            { name: 'chpyr_70', radius: focusRingRadius * 0.80, maxNodes: 7 }, // 80% of focus ring
-            { name: 'chpyr_55', radius: focusRingRadius * 0.70, maxNodes: 4 }  // 70% of focus ring
-        ];
-        
-        Logger.debug(`🔺 Focus ring radius: ${focusRingRadius}px`);
-        
-        // Use the SAME center as the focus ring
-        const pyramidCenterX = arcParams.centerX;
-        const pyramidCenterY = arcParams.centerY;
-        
-        Logger.debug(`🔺 Viewport: ${viewport.width}x${viewport.height}`);
-        Logger.debug(`🔺 Pyramid center in SVG coords: (${pyramidCenterX}, ${pyramidCenterY})`);
-        Logger.debug(`🔺 Focus ring center: (${arcParams.centerX}, ${arcParams.centerY}), radius: ${arcParams.radius}`);
-        
-        // Distribute items across arcs (sequential fill)
-        let itemIndex = 0;
-        
-        pyramidArcs.forEach(arc => {
-            const arcItems = items.slice(itemIndex, itemIndex + arc.maxNodes);
-            Logger.debug(`🔺 Processing ${arc.name}: ${arcItems.length} items (slice ${itemIndex} to ${itemIndex + arc.maxNodes})`);
-            Logger.debug(`🔺 ${arc.name} gets items:`, arcItems.map(item => item.name));
-            if (arcItems.length > 0) {
-                this.createPyramidArc(arc, arcItems, pyramidCenterX, pyramidCenterY);
-                itemIndex += arcItems.length;
-            } else {
-                Logger.debug(`🔺 No items for ${arc.name} - skipping`);
-            }
-        });
-        
-        // Verify elements were actually added to DOM
-        const totalElements = this.elements.childRingGroup.children.length;
-        Logger.debug(`🔺 Total elements in childRingGroup after creation: ${totalElements}`);
-        Logger.debug(`🔺 childRingGroup HTML:`, this.elements.childRingGroup.outerHTML.substring(0, 200) + '...');
-    }
-    
-    createPyramidArc(arcConfig, items, centerX, centerY) {
-        const angleStep = 8 * Math.PI / 180; // 8 degrees for all arcs
-        
-        // Set specific starting angles for each arc (optimized for portrait viewport)
-        let startAngleDegrees;
-        switch(arcConfig.name) {
-            case 'chpyr_85': startAngleDegrees = 122; break; // 401° = 41°
-            case 'chpyr_70': startAngleDegrees = 126; break; // 397° = 37°
-            case 'chpyr_55': startAngleDegrees = 142; break; // 401° = 41°
-            default: startAngleDegrees = 266 + 180 - 45; break;
-        }
-        const startAngle = startAngleDegrees * Math.PI / 180; // Convert to radians
-        
-        Logger.debug(`🔺 Creating ${arcConfig.name} arc: radius=${arcConfig.radius}px, center=(${centerX}, ${centerY}), ${items.length} items`);
-        Logger.debug(`🔺 ${arcConfig.name} start angle: ${startAngleDegrees}° (${(startAngle * 180 / Math.PI).toFixed(1)}° in radians)`);
-        
-        items.forEach((item, index) => {
-            const angle = startAngle + index * angleStep;
-            const x = centerX + arcConfig.radius * Math.cos(angle);
-            const y = centerY + arcConfig.radius * Math.sin(angle);
-            
-            if (arcConfig.name === 'chpyr_85') {
-                Logger.debug(`🔺 ${arcConfig.name} item ${index}: "${item.name}" at angle ${(angle * 180 / Math.PI).toFixed(1)}° → (${x.toFixed(1)}, ${y.toFixed(1)})`);
-            }
-            
-            const element = this.createChildPyramidElement(item, x, y, arcConfig.name, angle);
-            this.elements.childRingGroup.appendChild(element);
-            
-            // Verify element was actually appended
-            Logger.debug(`🔺 Appended element to childRingGroup. Total children now: ${this.elements.childRingGroup.children.length}`);
-        });
-    }
-    
-    createChildPyramidElement(item, x, y, arcName, angle) {
-        const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-        g.classList.add('child-pyramid-item', arcName);
-        g.setAttribute('data-key', item.key);
-        g.setAttribute('data-item', JSON.stringify({
-            name: item.name,
-            cylinderCount: item.cylinderCount,
-            market: item.market,
-            country: item.country,
-            manufacturer: item.manufacturer,
-            key: item.key
-        }));
-        
-        // Create generous hit zone (invisible circle 1.5x larger than visual node)
-        const hitRadius = MOBILE_CONFIG.RADIUS.CHILD_NODE * 1.5;
-        const hitZone = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
-        hitZone.setAttribute('cx', x);
-        hitZone.setAttribute('cy', y);
-        hitZone.setAttribute('r', hitRadius);
-        hitZone.setAttribute('fill', 'transparent');
-        hitZone.setAttribute('stroke', 'none');
-        hitZone.classList.add('hit-zone');
-        hitZone.style.cursor = 'pointer';
-        
-        // Create visual circle with same color as focus ring
-        const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
-        circle.setAttribute('cx', x);
-        circle.setAttribute('cy', y);
-        circle.setAttribute('r', MOBILE_CONFIG.RADIUS.CHILD_NODE);
-        circle.setAttribute('fill', '#f1b800'); // Same yellow as focus ring
-        circle.classList.add('node');
-        
-        Logger.debug(`🔺 Created ${arcName} element "${item.name}" at (${x}, ${y}) with visual radius ${MOBILE_CONFIG.RADIUS.CHILD_NODE} and hit radius ${hitRadius}`);
-        
-        // Create text - extract just the number from "X Cylinders"
-        const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        const numberOnly = item.name.replace(' Cylinders', ''); // Remove "Cylinders"
-        text.textContent = numberOnly;
-        
-        // Calculate text rotation (same logic as focus ring text)
-        const textX = x;
-        const textY = y + 4;
-        let rotation = angle * 180 / Math.PI;
-        let textAnchor = 'middle';
-        
-        if (Math.cos(angle) < 0) {
-            rotation += 180;
-        }
-        
-        text.setAttribute('x', textX);
-        text.setAttribute('y', textY);
-        text.setAttribute('text-anchor', textAnchor);
-        text.setAttribute('fill', 'black');
-        text.setAttribute('transform', `rotate(${rotation}, ${textX}, ${textY})`);
-        
-        // Append in correct order: hit zone first (behind), then visual elements
-        g.appendChild(hitZone);
-        g.appendChild(circle);
-        g.appendChild(text);
-        
-        // Add generous click handler to the hit zone
-        hitZone.addEventListener('click', (e) => {
-            e.stopPropagation();
-            Logger.debug('🔺 Hit zone clicked for:', item.name);
-            this.handleChildPyramidClick(item, e);
-        });
-        
-        // Also add click handler to visual elements as backup
-        circle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            Logger.debug('🔺 Circle clicked for:', item.name);
-            this.handleChildPyramidClick(item, e);
-        });
-        
-        // Add touch handlers as additional backup for mobile
-        hitZone.addEventListener('touchend', (e) => {
-            // Only handle if this was a tap, not the end of a drag
-            if (e.changedTouches.length === 1) {
-                e.preventDefault();
-                e.stopPropagation();
-                Logger.debug('🔺 Hit zone touched for:', item.name);
-                this.handleChildPyramidClick(item, e);
-            }
-        });
-        
-        // Verify element structure
-        Logger.debug(`🔺 Created element structure: g(${g.children.length} children) -> hitZone(r=${hitRadius}) + circle(${circle.getAttribute('cx')},${circle.getAttribute('cy')}) + text`);
-        
-        return g;
-    }
-    
-    handleChildPyramidClick(item, event) {
-        Logger.debug('🔺 Child pyramid item clicked:', item.name, 'implementing nzone migration');
-        
-        // NZONE MIGRATION: Child Pyramid → Focus Ring
-        // This moves the clicked item UP to become the new focus in the Focus Ring
-        
-        // 1. Update the navigation state - this item becomes the new focus
-        this.activePath = [item.market, item.country, item.manufacturer, item.name];
-        this.activeType = 'cylinder';
-        this.selectedFocusItem = {
-            name: item.name,
-            cylinderCount: item.cylinderCount,
-            market: item.market,
-            country: item.country,
-            manufacturer: item.manufacturer,
-            key: item.key
-        };
-        
-        Logger.debug('🔺 Updated navigation state:', this.activePath);
-        
-        // 2. Get families for this cylinder count (new Focus Ring data)
-        const families = this.dataManager.getFamilies(item.market, item.country, item.manufacturer, item.cylinderCount);
-        
-        Logger.debug('🔺 Found', families.length, 'families for', item.name);
-        
-        // 3. Update Focus Ring with families (cylinder families become new focus items)
-        this.currentFocusItems = families;
-        
-        // 4. Hide current Child Pyramid
-        this.elements.childRingGroup.classList.add('hidden');
-        
-        // 5. Update Focus Ring with new family data
-        this.updateFocusRingPositions(0); // Reset rotation to center
-        
-        // 6. Update Parent Button to show cylinder as parent
-        this.updateParentButton({
-            name: item.name,
-            country: item.manufacturer, // Parent is now the manufacturer
-            market: item.market
-        });
-        
-        // 7. Get first family's models for new Child Pyramid
-        if (families.length > 0) {
-            // Auto-select first family and show its models in Child Pyramid
-            const firstFamily = families[0];
-            const models = this.dataManager.getModelsByFamily(
-                item.market, 
-                item.country, 
-                item.manufacturer, 
-                item.cylinderCount, 
-                firstFamily.familyCode
-            );
-            
-            Logger.debug('🔺 Auto-showing', models.length, 'models for first family:', firstFamily.name);
-            
-            // Show models in Child Pyramid
-            if (models.length > 0) {
-                setTimeout(() => {
-                    this.showChildPyramid(models, 'models');
-                }, 300); // Small delay for smooth transition
-            } else {
-                Logger.warn('🔺 No models found for family:', firstFamily.name);
-            }
-        }
-        
-        Logger.debug('🔺 Nzone migration complete: Cylinder moved UP to Focus Ring, Families loaded, Models shown in Child Pyramid');
-    }
-    
-    // Generate mock families data (until DataManager is extended)
-    generateMockFamilies(cylinderItem) {
-        const familyCount = Math.min(5, Math.max(2, Math.floor(Math.random() * 4) + 2));
-        const families = [];
-        
-        for (let i = 1; i <= familyCount; i++) {
-            families.push({
-                name: `Family ${i}`,
-                market: cylinderItem.market,
-                country: cylinderItem.country,
-                manufacturer: cylinderItem.manufacturer,
-                cylinderCount: cylinderItem.cylinderCount,
-                key: `${cylinderItem.key}/family-${i}`
-            });
-        }
-        
-        Logger.debug('🔺 Generated mock families:', families.map(f => f.name));
-        return families;
-    }
-    
-    // Generate mock models data (until DataManager is extended)
-    generateMockModels(familyItem) {
-        const modelCount = Math.min(8, Math.max(3, Math.floor(Math.random() * 6) + 3));
-        const models = [];
-        
-        for (let i = 1; i <= modelCount; i++) {
-            models.push({
-                name: `Model ${familyItem.name.split(' ')[1]}-${i}`,
-                family: familyItem.name,
-                market: familyItem.market,
-                country: familyItem.country,
-                manufacturer: familyItem.manufacturer,
-                cylinderCount: familyItem.cylinderCount,
-                key: `${familyItem.key}/model-${i}`
-            });
-        }
-        
-        Logger.debug('🔺 Generated mock models:', models.map(m => m.name));
-        return models;
+        this.childPyramid.showChildPyramid(cylinders, 'cylinders');
     }
     
     renderFanLines(manufacturerAngle, cylinderStartAngle, cylinderCount, angleStep) {
@@ -1477,16 +1197,16 @@ class MobileRenderer {
         });
     }
     
-    updateParentButton(manufacturer) {
+    updateParentButton(parentName) {
         const parentButton = document.getElementById('parentButton');
         const parentText = document.getElementById('parentText');
         
-        if (manufacturer && manufacturer.country) {
-            // Show button and set text to parent country
-            parentText.textContent = manufacturer.country;
+        if (parentName) {
+            // Show button and set text to parent name
+            parentText.textContent = parentName;
             parentButton.classList.remove('hidden');
         } else {
-            // Hide button if no manufacturer selected
+            // Hide button if no parent
             parentButton.classList.add('hidden');
         }
     }
@@ -1494,6 +1214,174 @@ class MobileRenderer {
     hideParentButton() {
         const parentButton = document.getElementById('parentButton');
         parentButton.classList.add('hidden');
+    }
+    
+    /**
+     * Handle Child Pyramid item clicks (nzone migration)
+     */
+    handleChildPyramidClick(item, event) {
+        console.log('🔺🔺🔺 HANDLE CHILD PYRAMID CLICK CALLED!', item.name);
+        Logger.debug('🔺 Child pyramid item clicked:', item.name, 'implementing nzone migration OUT');
+        
+        // NZONE MIGRATION: Child Pyramid → Focus Ring
+        // This moves the clicked item OUT to become the new focus in the Focus Ring
+        
+        // Detect what type of item was clicked based on its properties
+        const isFamily = item.familyCode !== undefined;
+        const isCylinder = item.cylinderCount !== undefined && !isFamily;
+        
+        if (isCylinder) {
+            // CYLINDER CLICK HANDLER
+            Logger.debug('🔺 Cylinder clicked:', item.name);
+            
+            // 1. Update the navigation state - this item becomes the new focus
+            this.activePath = [item.market, item.country, item.manufacturer, item.name];
+            this.activeType = 'cylinder';
+            this.selectedFocusItem = {
+                name: item.name,
+                cylinderCount: item.cylinderCount,
+                market: item.market,
+                country: item.country,
+                manufacturer: item.manufacturer,
+                key: item.key
+            };
+            
+            // 2. Move all cylinders to Focus Ring, clicked cylinder becomes selected
+            const allCylinders = this.dataManager.getCylinders(item.market, item.country, item.manufacturer);
+            this.currentFocusItems = allCylinders;
+            this.allFocusItems = allCylinders;
+            
+            // 3. Hide current Child Pyramid temporarily
+            this.elements.childRingGroup.classList.add('hidden');
+            
+            // 4. Set up touch rotation FIRST (this creates the touch handler)
+            if (window.mobileCatalogApp) {
+                window.mobileCatalogApp.setupTouchRotation(allCylinders);
+                Logger.debug('🔺 Touch rotation re-setup for', allCylinders.length, 'cylinders');
+            }
+            
+            // 5. Now set the rotation offset to center the clicked cylinder and update Focus Ring
+            const clickedIndex = allCylinders.findIndex(cyl => cyl.cylinderCount === item.cylinderCount);
+            const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+            const middleIndex = (allCylinders.length - 1) / 2;
+            const centerOffset = -(clickedIndex - middleIndex) * angleStep;
+            
+            // Set the touch handler's rotation offset directly
+            if (window.mobileCatalogApp && window.mobileCatalogApp.touchHandler) {
+                window.mobileCatalogApp.touchHandler.rotationOffset = centerOffset;
+            }
+            
+            // Update Focus Ring with cylinders - clicked cylinder should be centered
+            this.updateFocusRingPositions(centerOffset);
+            
+            Logger.debug('🔺 Focus Ring updated with', allCylinders.length, 'cylinders, selected:', item.name);
+            
+            // 6. Update Parent Button to show manufacturer as parent
+            this.updateParentButton(item.manufacturer);
+            
+            // 7. Get families for this cylinder count and show in Child Pyramid
+            const families = this.dataManager.getFamilies(item.market, item.country, item.manufacturer, item.cylinderCount);
+            
+            if (families === null) {
+                // No family layer - show models directly in Child Pyramid
+                Logger.debug('🔺 No families for', item.name, '- showing models in Child Pyramid');
+                
+                const models = this.dataManager.getModels(item.market, item.country, item.manufacturer, item.cylinderCount);
+                
+                setTimeout(() => {
+                    if (models.length > 0) {
+                        this.childPyramid.showChildPyramid(models, 'models');
+                        Logger.debug('🔺 Showing', models.length, 'models in Child Pyramid (no family layer)');
+                    } else {
+                        Logger.warn('🔺 No models found for cylinder:', item.name);
+                    }
+                }, 300);
+                
+            } else {
+                // Show families in Child Pyramid
+                Logger.debug('🔺 Found', families.length, 'families for', item.name, '- showing in Child Pyramid');
+                
+                setTimeout(() => {
+                    this.childPyramid.showChildPyramid(families, 'families');
+                    Logger.debug('🔺 Showing', families.length, 'families in Child Pyramid');
+                }, 300);
+            }
+            
+            Logger.debug('🔺 Cylinder nzone migration complete');
+            
+        } else if (isFamily) {
+            // FAMILY CLICK HANDLER
+            Logger.debug('🔺 Family clicked:', item.name);
+            
+            // 1. Update the navigation state - this family becomes the new focus
+            this.activePath = [item.market, item.country, item.manufacturer, item.cylinderCount, item.name];
+            this.activeType = 'family';
+            this.selectedFocusItem = {
+                name: item.name,
+                familyCode: item.familyCode,
+                cylinderCount: item.cylinderCount,
+                market: item.market,
+                country: item.country,
+                manufacturer: item.manufacturer,
+                key: item.key
+            };
+            
+            // 2. Move all families for this cylinder to Focus Ring, clicked family becomes selected
+            const allFamilies = this.dataManager.getFamilies(item.market, item.country, item.manufacturer, item.cylinderCount);
+            this.currentFocusItems = allFamilies;
+            this.allFocusItems = allFamilies;
+            
+            // 3. Hide current Child Pyramid temporarily
+            this.elements.childRingGroup.classList.add('hidden');
+            
+            // 4. Set up touch rotation FIRST (this creates the touch handler)
+            if (window.mobileCatalogApp) {
+                window.mobileCatalogApp.setupTouchRotation(allFamilies);
+                Logger.debug('🔺 Touch rotation re-setup for', allFamilies.length, 'families');
+            }
+            
+            // 5. Now set the rotation offset to center the clicked family and update Focus Ring
+            const clickedIndex = allFamilies.findIndex(fam => fam.familyCode === item.familyCode);
+            const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+            const middleIndex = (allFamilies.length - 1) / 2;
+            const centerOffset = -(clickedIndex - middleIndex) * angleStep;
+            
+            // Set the touch handler's rotation offset directly
+            if (window.mobileCatalogApp && window.mobileCatalogApp.touchHandler) {
+                window.mobileCatalogApp.touchHandler.rotationOffset = centerOffset;
+            }
+            
+            // Update Focus Ring with families - clicked family should be centered
+            this.updateFocusRingPositions(centerOffset);
+            
+            Logger.debug('🔺 Focus Ring updated with', allFamilies.length, 'families, selected:', item.name);
+            
+            // 6. Update Parent Button to show cylinder as parent
+            this.updateParentButton(`${item.cylinderCount} Cylinders`);
+            
+            // 7. Get models for this family and show in Child Pyramid
+            const models = this.dataManager.getModelsByFamily(
+                item.market, 
+                item.country, 
+                item.manufacturer, 
+                item.cylinderCount, 
+                item.familyCode
+            );
+            
+            setTimeout(() => {
+                if (models.length > 0) {
+                    this.childPyramid.showChildPyramid(models, 'models');
+                    Logger.debug('🔺 Showing', models.length, 'models in Child Pyramid for family:', item.name);
+                } else {
+                    Logger.warn('🔺 No models found for family:', item.name);
+                }
+            }, 300);
+            
+            Logger.debug('🔺 Family nzone migration complete');
+            
+        } else {
+            Logger.warn('🔺 Unknown item type clicked:', item);
+        }
     }
 }
 
