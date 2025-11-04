@@ -149,38 +149,66 @@ class DataManager {
             return [];
         }
         
-        // Group models by engine family (extract from engine_model name)
+        // Check if ANY engine in this cylinder count is in a family
+        const hasAnyFamilyEngines = models.some(model => model.data.in_a_family === true);
+        
+        if (!hasAnyFamilyEngines) {
+            // All engines have in_a_family: false - this is a pseudo family layer, skip it
+            Logger.debug(`All engines in ${manufacturer} ${cylinderCount}-cylinder have in_a_family=false - skipping family layer`);
+            return null; // Returning null indicates "skip family layer"
+        }
+        
+        // At least one engine is in a family - create family groupings with orphan adoption
+        Logger.debug(`Family layer detected for ${manufacturer} ${cylinderCount}-cylinder - implementing orphan adoption`);
+        
         const familyMap = new Map();
+        const orphanModels = [];
         
         models.forEach(model => {
-            // Try to extract family from engine model name
-            // Common patterns: "ABC-123", "XYZ 456", "DEF_789"
-            let familyName = model.name;
-            
-            // Extract base family name (before numbers or special chars)
-            const familyMatch = model.name.match(/^([A-Za-z]+)/);
-            if (familyMatch) {
-                familyName = familyMatch[1];
+            if (model.data.in_a_family === true && model.data.family) {
+                // This model belongs to a real family
+                const familyName = model.data.family;
+                
+                if (!familyMap.has(familyName)) {
+                    familyMap.set(familyName, {
+                        name: familyName,
+                        familyCode: familyName,
+                        market: market,
+                        country: country,
+                        manufacturer: manufacturer,
+                        cylinderCount: cylinderCount,
+                        key: `${market}/${country}/${manufacturer}/${cylinderCount}/${familyName}`,
+                        models: [],
+                        isOrphanFamily: false
+                    });
+                }
+                
+                familyMap.get(familyName).models.push(model);
+            } else {
+                // This model is an orphan - needs adoption
+                orphanModels.push(model);
             }
-            
-            if (!familyMap.has(familyName)) {
-                familyMap.set(familyName, {
-                    name: `${familyName} Family`,
-                    familyCode: familyName,
-                    market: market,
-                    country: country,
-                    manufacturer: manufacturer,
-                    cylinderCount: cylinderCount,
-                    key: `${market}/${country}/${manufacturer}/${cylinderCount}/${familyName}`,
-                    models: []
-                });
-            }
-            
-            familyMap.get(familyName).models.push(model);
         });
         
+        // Adopt orphan models into "Other" family
+        if (orphanModels.length > 0) {
+            familyMap.set('Other', {
+                name: 'Other',
+                familyCode: 'Other',
+                market: market,
+                country: country,
+                manufacturer: manufacturer,
+                cylinderCount: cylinderCount,
+                key: `${market}/${country}/${manufacturer}/${cylinderCount}/Other`,
+                models: orphanModels,
+                isOrphanFamily: true
+            });
+            
+            Logger.debug(`Adopted ${orphanModels.length} orphan engines into "Other" family`);
+        }
+        
         const families = Array.from(familyMap.values());
-        Logger.debug(`Found ${families.length} families:`, families.map(f => `${f.name} (${f.models.length} models)`));
+        Logger.debug(`Found ${families.length} families:`, families.map(f => `${f.name} (${f.models.length} models)${f.isOrphanFamily ? ' [ORPHAN FAMILY]' : ''}`));
         
         return families;
     }
@@ -211,11 +239,14 @@ class DataManager {
     getModelsByFamily(market, country, manufacturer, cylinderCount, familyName) {
         const allModels = this.getModels(market, country, manufacturer, cylinderCount);
         
-        // Filter models that belong to this family
+        if (familyName === 'Other') {
+            // Return orphan models (those with in_a_family: false)
+            return allModels.filter(model => model.data.in_a_family !== true);
+        }
+        
+        // Filter models that belong to the specified family
         return allModels.filter(model => {
-            const familyMatch = model.name.match(/^([A-Za-z]+)/);
-            const modelFamily = familyMatch ? familyMatch[1] : model.name;
-            return modelFamily === familyName || model.name.startsWith(familyName);
+            return model.data.in_a_family === true && model.data.family === familyName;
         });
     }
 }

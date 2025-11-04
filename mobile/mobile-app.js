@@ -320,10 +320,10 @@ class MobileCatalogApp {
     }
     
     handleParentButtonClick() {
-        Logger.debug('🔼 Parent button clicked - implementing nzone migration');
+        Logger.debug('🔼 Parent button clicked - implementing nzone migration IN');
         
-        // NZONE MIGRATION: Focus Ring → Parent Button (move DOWN)
-        // This moves the current focus item DOWN from Focus Ring to become a Child Pyramid item
+        // NZONE MIGRATION: Parent Button → Focus Ring (move IN)
+        // This moves the parent level IN to become the new focus in the Focus Ring
         
         if (!this.renderer.selectedFocusItem) {
             Logger.warn('No focus item selected for parent navigation');
@@ -331,12 +331,12 @@ class MobileCatalogApp {
         }
         
         const currentFocus = this.renderer.selectedFocusItem;
-        Logger.debug('🔼 Moving focus item DOWN:', currentFocus.name);
+        Logger.debug('🔼 Moving parent level IN for focus item:', currentFocus.name);
         
         // 1. Determine what should be the new Focus Ring based on current level
-        if (currentFocus.cylinderCount !== undefined) {
-            // Currently focused on Cylinder → Move to Manufacturer level
-            Logger.debug('🔼 Cylinder → Manufacturer navigation');
+        if (currentFocus.familyCode !== undefined) {
+            // Currently focused on Family → Move Cylinder level IN
+            Logger.debug('🔼 Family → Cylinder navigation');
             
             // Get all cylinders for this manufacturer (becomes new Focus Ring)
             const cylinders = this.dataManager.getCylinders(
@@ -348,6 +348,38 @@ class MobileCatalogApp {
             // Update Focus Ring with cylinders
             this.renderer.currentFocusItems = cylinders;
             this.renderer.selectedFocusItem = {
+                name: `${currentFocus.cylinderCount} Cylinders`,
+                cylinderCount: currentFocus.cylinderCount,
+                country: currentFocus.country,
+                manufacturer: currentFocus.manufacturer,
+                market: currentFocus.market,
+                key: `${currentFocus.market}/${currentFocus.country}/${currentFocus.manufacturer}/${currentFocus.cylinderCount}`
+            };
+            
+            // Update Parent Button to show Manufacturer
+            this.renderer.updateParentButton(currentFocus.manufacturer);
+            
+            // Hide current Child Pyramid (models)
+            this.renderer.elements.childRingGroup.classList.add('hidden');
+            
+            // Update Focus Ring display
+            this.renderer.updateFocusRingPositions(0);
+            
+            // Show cylinder's families in Child Pyramid
+            setTimeout(() => {
+                this.renderer.childPyramid.showChildPyramid(cylinders, 'cylinders');
+            }, 200);
+            
+        } else if (currentFocus.cylinderCount !== undefined) {
+            // Currently focused on Cylinder → Move Manufacturer level IN
+            Logger.debug('🔼 Cylinder → Manufacturer navigation');
+            
+            // Get all manufacturers for this country (becomes new Focus Ring)
+            const manufacturers = this.dataManager.getManufacturers(currentFocus.market, currentFocus.country);
+            
+            // Update Focus Ring with manufacturers
+            this.renderer.currentFocusItems = manufacturers;
+            this.renderer.selectedFocusItem = {
                 name: currentFocus.manufacturer,
                 country: currentFocus.country,
                 market: currentFocus.market,
@@ -355,11 +387,7 @@ class MobileCatalogApp {
             };
             
             // Update Parent Button to show Country
-            this.renderer.updateParentButton({
-                name: currentFocus.country,
-                country: currentFocus.market, // Parent of country is market
-                market: currentFocus.market
-            });
+            this.renderer.updateParentButton(currentFocus.country);
             
             // Hide current Child Pyramid (families/models)
             this.renderer.elements.childRingGroup.classList.add('hidden');
@@ -369,11 +397,16 @@ class MobileCatalogApp {
             
             // Show manufacturer's cylinders in Child Pyramid
             setTimeout(() => {
-                this.renderer.showChildPyramid(cylinders, 'cylinders');
+                const cylinders = this.dataManager.getCylinders(
+                    currentFocus.market, 
+                    currentFocus.country, 
+                    currentFocus.manufacturer
+                );
+                this.renderer.childPyramid.showChildPyramid(cylinders, 'cylinders');
             }, 200);
             
         } else if (currentFocus.manufacturer !== undefined) {
-            // Currently focused on Manufacturer → Move to All Manufacturers level
+            // Currently focused on Manufacturer → Move All Manufacturers level IN
             Logger.debug('🔼 Manufacturer → All Manufacturers navigation');
             
             // Get all manufacturers (becomes new Focus Ring)
@@ -428,6 +461,9 @@ async function initMobileCatalog() {
 
         mobileCatalogApp = new MobileCatalogApp();
         await mobileCatalogApp.init();
+
+        // Make app globally available
+        window.mobileCatalogApp = mobileCatalogApp;
 
         // Set up global error handling
         window.addEventListener('error', (event) => {
