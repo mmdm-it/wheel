@@ -191,17 +191,21 @@ class MobileCatalogApp {
     }
 
     calculateRotationLimits(focusItems) {
-        // For viewport filtering approach, use generous but bounded limits
+        // For viewport filtering approach, calculate limits based on actual item count
         if (!focusItems.length) {
             return { min: -Infinity, max: Infinity };
         }
 
-        // Calculate limits based on actual manufacturer count
-        // With 104 manufacturers at 4.3° spacing = 447.2° total arc
-        // Need ±223.6° minimum, use ±250° for comfortable buffer
-        const maxRotation = Math.PI * 1.39; // 250° in each direction
+        // Calculate total arc needed for all items
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const totalArc = (focusItems.length - 1) * angleStep; // Total span from first to last item
+        const halfArc = totalArc / 2;
 
-        Logger.debug(`Viewport filtering rotation limits: ±${maxRotation * 180 / Math.PI}°`);
+        // Add buffer for comfortable rotation (25% extra on each side)
+        const buffer = halfArc * 0.25;
+        const maxRotation = halfArc + buffer;
+
+        Logger.debug(`Calculated rotation limits: ${focusItems.length} items × ${angleStep * 180 / Math.PI}° spacing = ${totalArc * 180 / Math.PI}° total arc, limits ±${maxRotation * 180 / Math.PI}°`);
 
         return { min: -maxRotation, max: maxRotation };
     }
@@ -237,8 +241,8 @@ class MobileCatalogApp {
         const targetOffset = -(clampedIndex - middleIndex) * angleStep;
 
         // Apply rotation limits (match the limits from calculateRotationLimits)
-        const maxRotation = Math.PI * 1.39; // 250° - same as calculateRotationLimits
-        const finalOffset = Math.max(-maxRotation, Math.min(maxRotation, targetOffset));
+        const limits = this.calculateRotationLimits(focusItems);
+        const finalOffset = Math.max(limits.min, Math.min(limits.max, targetOffset));
 
         // Validate calculated targetOffset
         if (isNaN(finalOffset)) {
@@ -333,106 +337,56 @@ class MobileCatalogApp {
         const currentFocus = this.renderer.selectedFocusItem;
         Logger.debug('🔼 Moving parent level IN for focus item:', currentFocus.name);
         
-        // 1. Determine what should be the new Focus Ring based on current level
-        if (currentFocus.familyCode !== undefined) {
-            // Currently focused on Family → Move Cylinder level IN
-            Logger.debug('🔼 Family → Cylinder navigation');
-            
-            // Get all cylinders for this manufacturer (becomes new Focus Ring)
-            const cylinders = this.dataManager.getCylinders(
-                currentFocus.market, 
-                currentFocus.country, 
-                currentFocus.manufacturer
-            );
-            
-            // Update Focus Ring with cylinders
-            this.renderer.currentFocusItems = cylinders;
-            this.renderer.selectedFocusItem = {
-                name: `${currentFocus.cylinderCount} Cylinders`,
-                cylinderCount: currentFocus.cylinderCount,
-                country: currentFocus.country,
-                manufacturer: currentFocus.manufacturer,
-                market: currentFocus.market,
-                key: `${currentFocus.market}/${currentFocus.country}/${currentFocus.manufacturer}/${currentFocus.cylinderCount}`
-            };
-            
-            // Update Parent Button to show Manufacturer
-            this.renderer.updateParentButton(currentFocus.manufacturer);
-            
-            // Hide current Child Pyramid (models)
-            this.renderer.elements.childRingGroup.classList.add('hidden');
-            
-            // Update Focus Ring display
-            this.renderer.updateFocusRingPositions(0);
-            
-            // Show cylinder's families in Child Pyramid
-            setTimeout(() => {
-                this.renderer.childPyramid.showChildPyramid(cylinders, 'cylinders');
-            }, 200);
-            
-        } else if (currentFocus.cylinderCount !== undefined) {
-            // Currently focused on Cylinder → Move Manufacturer level IN
-            Logger.debug('🔼 Cylinder → Manufacturer navigation');
-            
-            // Get all manufacturers for this country (becomes new Focus Ring)
-            const manufacturers = this.dataManager.getManufacturers(currentFocus.market, currentFocus.country);
-            
-            // Update Focus Ring with manufacturers
-            this.renderer.currentFocusItems = manufacturers;
-            this.renderer.selectedFocusItem = {
-                name: currentFocus.manufacturer,
-                country: currentFocus.country,
-                market: currentFocus.market,
-                key: `${currentFocus.market}/${currentFocus.country}/${currentFocus.manufacturer}`
-            };
-            
-            // Update Parent Button to show Country
-            this.renderer.updateParentButton(currentFocus.country);
-            
-            // Hide current Child Pyramid (families/models)
-            this.renderer.elements.childRingGroup.classList.add('hidden');
-            
-            // Update Focus Ring display
-            this.renderer.updateFocusRingPositions(0);
-            
-            // Show manufacturer's cylinders in Child Pyramid
-            setTimeout(() => {
-                const cylinders = this.dataManager.getCylinders(
-                    currentFocus.market, 
-                    currentFocus.country, 
-                    currentFocus.manufacturer
-                );
-                this.renderer.childPyramid.showChildPyramid(cylinders, 'cylinders');
-            }, 200);
-            
-        } else if (currentFocus.manufacturer !== undefined) {
-            // Currently focused on Manufacturer → Move All Manufacturers level IN
-            Logger.debug('🔼 Manufacturer → All Manufacturers navigation');
-            
-            // Get all manufacturers (becomes new Focus Ring)
-            const allManufacturers = this.dataManager.getAllManufacturers();
-            
-            // Update Focus Ring with all manufacturers
-            this.renderer.currentFocusItems = allManufacturers;
-            this.renderer.selectedFocusItem = null; // No single manufacturer selected
-            
-            // Hide Parent Button (at top level)
-            this.renderer.hideParentButton();
-            
-            // Hide Child Pyramid
-            this.renderer.elements.childRingGroup.classList.add('hidden');
-            
-            // Update Focus Ring display
-            this.renderer.updateFocusRingPositions(0);
-            
-            // Re-setup touch rotation for all manufacturers
-            this.setupTouchRotation(allManufacturers);
-            
-        } else {
-            Logger.debug('🔼 Already at top level - no parent navigation available');
+        // Get the current hierarchy level of the selected item
+        const currentLevel = this.renderer.getItemHierarchyLevel(currentFocus);
+        if (!currentLevel) {
+            Logger.warn('🔼 Could not determine hierarchy level for current focus item');
+            return;
         }
         
-        Logger.debug('🔼 Parent button navigation complete');
+        // If we're navigating back from model level, collapse the Detail Sector
+        if (currentLevel === 'model') {
+            this.renderer.collapseDetailSector();
+        }
+        
+        // Get the parent level
+        const parentLevel = this.renderer.getPreviousHierarchyLevel(currentLevel);
+        if (!parentLevel) {
+            Logger.debug('🔼 Already at top level - no parent navigation available');
+            return;
+        }
+        
+        Logger.debug(`🔼 Navigating from ${currentLevel} to ${parentLevel} level`);
+        
+        // Build parent item from current focus item
+        const parentItem = this.renderer.buildParentItemFromChild(currentFocus, parentLevel);
+        
+        // Get all siblings at the current level (they become the new Focus Ring)
+        const siblings = this.renderer.getChildItemsForLevel(parentItem, currentLevel);
+        
+        if (siblings.length === 0) {
+            Logger.warn(`🔼 No siblings found at ${currentLevel} level for parent navigation`);
+            return;
+        }
+        
+        // Update Focus Ring with siblings
+        this.renderer.currentFocusItems = siblings;
+        this.renderer.selectedFocusItem = null; // No single item selected in the new focus ring
+        
+        // Update Parent Button to show the parent level name
+        const parentName = this.renderer.getParentNameForLevel(currentFocus, parentLevel);
+        this.renderer.updateParentButton(parentName);
+        
+        // Hide current Child Pyramid
+        this.renderer.elements.childRingGroup.classList.add('hidden');
+        
+        // Update Focus Ring display
+        this.renderer.updateFocusRingPositions(0);
+        
+        // Re-setup touch rotation for the new focus items
+        this.setupTouchRotation(siblings);
+        
+        Logger.debug(`🔼 Parent navigation complete - Focus Ring now shows ${siblings.length} ${currentLevel}s`);
     }
 
     reset() {

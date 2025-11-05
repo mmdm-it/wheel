@@ -189,84 +189,136 @@ class MobileRenderer {
     }
     
     buildActivePath(focusItem) {
-        // Build appropriate active path based on item properties
+        // Build active path based on the item's hierarchy properties
         const path = [];
-        if (focusItem.market) path.push(focusItem.market);
-        if (focusItem.country) path.push(focusItem.country);
-        if (focusItem.manufacturer) path.push(focusItem.manufacturer);
-        if (focusItem.cylinderCount !== undefined) path.push(`${focusItem.cylinderCount} Cylinders`);
-        if (focusItem.familyCode) path.push(focusItem.name);
-        else if (focusItem.name && !path.includes(focusItem.name)) path.push(focusItem.name);
-        
+        const levelNames = this.getHierarchyLevelNames();
+
+        // Add each level's value if it exists on the item
+        for (const levelName of levelNames) {
+            let value = null;
+
+            // Map level names to item properties
+            switch (levelName) {
+                case 'market':
+                    value = focusItem.market;
+                    break;
+                case 'country':
+                    value = focusItem.country;
+                    break;
+            case 'manufacturer':
+                value = focusItem.manufacturer || focusItem.name;
+                break;
+                case 'cylinder':
+                    value = focusItem.cylinderCount ? `${focusItem.cylinderCount} Cylinders` : null;
+                    break;
+                case 'family':
+                    value = focusItem.familyCode || focusItem.name;
+                    break;
+                case 'model':
+                    value = focusItem.engine_model;
+                    break;
+            }
+
+            if (value) {
+                path.push(value);
+            }
+        }
+
         this.activePath = path;
         Logger.debug('Built active path:', path);
     }
     
     showChildContentForFocusItem(focusItem, angle) {
-        Logger.debug('Showing child content for focus item:', focusItem.name, 'type detection...');
-        
-        // Determine focus item type and show appropriate child content
-        if (focusItem.familyCode) {
-            // Focus item is a Family → show Models in Child Pyramid
-            Logger.debug('Focus item is Family, showing models');
-            const models = this.dataManager.getModelsByFamily(
-                focusItem.market,
-                focusItem.country, 
-                focusItem.manufacturer,
-                focusItem.cylinderCount,
-                focusItem.familyCode
-            );
-            this.childPyramid.showChildPyramid(models, 'models');
-            
-        } else if (focusItem.cylinderCount !== undefined) {
-            // Focus item is a Cylinder count → show Families in Child Pyramid  
-            Logger.debug('Focus item is Cylinder, showing families');
-            const families = this.dataManager.getFamilies(
-                focusItem.market,
-                focusItem.country,
-                focusItem.manufacturer,
-                focusItem.cylinderCount
-            );
-            
-            if (families === null) {
-                // No family layer - show models directly in Child Pyramid
-                Logger.debug('🔺 No families for', focusItem.name, '- showing models in Child Pyramid');
-                
-                const models = this.dataManager.getModels(focusItem.market, focusItem.country, focusItem.manufacturer, focusItem.cylinderCount);
-                
-                setTimeout(() => {
-                    if (models.length > 0) {
-                        this.childPyramid.showChildPyramid(models, 'models');
-                        Logger.debug('🔺 Showing', models.length, 'models in Child Pyramid (no family layer)');
-                    } else {
-                        Logger.warn('🔺 No models found for cylinder:', focusItem.name);
-                    }
-                }, 300);
-                
-            } else {
-                // Show families in Child Pyramid
-                Logger.debug('🔺 Found', families.length, 'families for', focusItem.name, '- showing in Child Pyramid');
-                
-                setTimeout(() => {
-                    this.childPyramid.showChildPyramid(families, 'families');
-                    Logger.debug('🔺 Showing', families.length, 'families in Child Pyramid');
-                }, 300);
-            }
-            
-        } else if (focusItem.manufacturer || focusItem.name) {
-            // Focus item is a Manufacturer → show Cylinders in Child Pyramid
-            Logger.debug('Focus item is Manufacturer, showing cylinders');
-            const manufacturerName = focusItem.manufacturer || focusItem.name;
-            const cylinders = this.dataManager.getCylinders(
-                focusItem.market,
-                focusItem.country,
-                manufacturerName
-            );
-            this.childPyramid.showChildPyramid(cylinders, 'cylinders');
-            
-        } else {
-            Logger.warn('Unable to determine focus item type for:', focusItem);
+        Logger.debug('Showing child content for focus item:', focusItem.name);
+
+        // Determine the hierarchy level of the focus item
+        const currentLevel = this.getItemHierarchyLevel(focusItem);
+        if (!currentLevel) {
+            Logger.warn('Could not determine hierarchy level for focus item:', focusItem);
+            return;
         }
+
+        // Get the next hierarchy level, skipping empty levels
+        let nextLevel = this.getNextHierarchyLevel(currentLevel);
+        let childItems = [];
+        let itemType = '';
+
+        // Loop through hierarchy levels until we find one with items or reach the end
+        while (nextLevel) {
+            Logger.debug(`Focus item is at level '${currentLevel}', checking '${nextLevel}' items`);
+
+            // Get child items based on the next level type
+            childItems = this.getChildItemsForLevel(focusItem, nextLevel);
+            
+            if (childItems && childItems.length > 0) {
+                // Found items at this level
+                itemType = nextLevel === 'model' ? 'models' : nextLevel === 'family' ? 'families' : nextLevel + 's';
+                Logger.debug(`Found ${childItems.length} ${itemType} for ${currentLevel}: ${focusItem.name}`);
+                break;
+            } else {
+                // No items at this level, try the next one
+                Logger.debug(`No ${nextLevel} items found for ${currentLevel}: ${focusItem.name}, skipping to next level`);
+                nextLevel = this.getNextHierarchyLevel(nextLevel);
+            }
+        }
+
+        if (!nextLevel || !childItems || childItems.length === 0) {
+            Logger.debug('No child items found at any level - this is a leaf node');
+            return;
+        }
+
+        // Show child items in Child Pyramid
+        this.childPyramid.showChildPyramid(childItems, itemType);
+    }
+
+    /**
+     * Get child items for a specific hierarchy level
+     */
+    getChildItemsForLevel(parentItem, childLevel) {
+        // Use the actual data access methods based on the parent item's level and desired child level
+        const parentLevel = this.getItemHierarchyLevel(parentItem);
+
+        switch (childLevel) {
+            case 'manufacturer':
+                // From market level, get manufacturers
+                if (parentLevel === 'market') {
+                    return this.dataManager.getManufacturers(parentItem.market);
+                }
+                break;
+            case 'cylinder':
+                // From manufacturer level, get cylinders
+                if (parentLevel === 'manufacturer') {
+                    return this.dataManager.getCylinders(parentItem.market, parentItem.country, parentItem.manufacturer || parentItem.name);
+                }
+                break;
+            case 'family':
+                // From cylinder level, get families
+                if (parentLevel === 'cylinder') {
+                    return this.dataManager.getFamilies(parentItem.market, parentItem.country, parentItem.manufacturer || parentItem.name, parentItem.cylinderCount.toString());
+                }
+                break;
+            case 'model':
+                // From cylinder level (no families) or family level, get models
+                if (parentLevel === 'cylinder') {
+                    // Check if we have families first
+                    const families = this.dataManager.getFamilies(parentItem.market, parentItem.country, parentItem.manufacturer, parentItem.cylinderCount.toString());
+                    if (families && families.length > 0) {
+                        // If families exist, we shouldn't get models directly from cylinder
+                        // Instead, the families will be shown first
+                        return [];
+                    } else {
+                        // No families - get models directly
+                        return this.dataManager.getModels(parentItem.market, parentItem.country, parentItem.manufacturer || parentItem.name, parentItem.cylinderCount.toString());
+                    }
+                } else if (parentLevel === 'family') {
+                    // From family level, get models for that family
+                    return this.dataManager.getModelsByFamily(parentItem.market, parentItem.country, parentItem.manufacturer, parentItem.cylinderCount.toString(), parentItem.familyCode);
+                }
+                break;
+        }
+
+        Logger.warn(`Cannot get ${childLevel} items for ${parentLevel} parent:`, parentItem);
+        return [];
     }
     
     renderMarkets() {
@@ -300,12 +352,12 @@ class MobileRenderer {
         g.setAttribute('transform', `translate(${position.x}, ${position.y})`);
         g.setAttribute('class', 'marketGroup');
         
-        // Market text (replacing images for mobile)
+        // Market text with configurable formatting
         const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
         text.setAttribute('class', 'marketText');
         text.setAttribute('text-anchor', 'middle');
         text.setAttribute('dy', '0.35em');
-        text.textContent = market.toUpperCase();
+        text.textContent = this.formatText(market, 'market');
         g.appendChild(text);
         
         // Hit area
@@ -329,29 +381,35 @@ class MobileRenderer {
             Logger.debug('Market already selected:', market);
             return;
         }
-        
+
         Logger.debug('Market selected:', market);
         this.selectedMarket = market;
         this.activeType = 'market';
         this.activePath = [market];
-        
+
         // Update market visuals
         this.updateMarketVisuals(marketElement);
-        
+
         // Update center node
         this.updateCenterNodeState(true);
-        
+
         // Add timestamp for testing
         this.addTimestampToCenter();
-        
-        // Get focus items for this market
-        this.currentFocusItems = this.dataManager.getManufacturers(market);
-        
+
+        // Get child items for the first hierarchy level (typically countries)
+        const firstLevel = this.getHierarchyLevelNames()[0];
+        const nextLevel = this.getNextHierarchyLevel(firstLevel);
+        if (nextLevel) {
+            this.currentFocusItems = this.getChildItemsForLevel({ market }, nextLevel);
+        } else {
+            this.currentFocusItems = [];
+        }
+
         if (this.currentFocusItems.length === 0) {
             Logger.warn('No focus items found for market:', market);
             return;
         }
-        
+
         // Show focus ring and set up rotation
         this.showFocusRing();
     }
@@ -507,29 +565,18 @@ class MobileRenderer {
             this.isRotating = true;
             this.selectedFocusItem = selectedFocusItem;
             
-            // Update parent button
-            let parentName = null;
-            if (selectedFocusItem.cylinderCount && selectedFocusItem.familyCode) {
-                // Family level - parent is cylinder
-                parentName = `${selectedFocusItem.cylinderCount} Cylinders`;
-            } else if (selectedFocusItem.cylinderCount) {
-                // Cylinder level - parent is manufacturer
-                parentName = selectedFocusItem.manufacturer;
-            } else {
-                // Manufacturer level - parent is country
-                parentName = selectedFocusItem.country;
-            }
-            this.updateParentButton(parentName);
-            
             // Clear any existing settle timeout
             if (this.settleTimeout) {
                 clearTimeout(this.settleTimeout);
-            }
-            
-            // Hide child ring immediately during rotation to prevent strobing
+            }            // Hide child ring immediately during rotation to prevent strobing
             this.elements.childRingGroup.classList.add('hidden');
             this.elements.modelsGroup.classList.add('hidden');
             this.clearFanLines();
+            
+            // Update Parent Button to show the parent level name
+            const parentLevel = this.getPreviousHierarchyLevel(this.getItemHierarchyLevel(selectedFocusItem));
+            const parentName = parentLevel ? this.getParentNameForLevel(selectedFocusItem, parentLevel) : null;
+            this.updateParentButton(parentName);
             
             // Set timeout to show appropriate child content after settling
             this.settleTimeout = setTimeout(() => {
@@ -673,25 +720,38 @@ class MobileRenderer {
             return;
         }
         
-        const radius = MOBILE_CONFIG.RADIUS.UNSELECTED;
-        let offset = -(radius + 5);
+        // Check if this is a cylinder for special centering logic
+        const isCylinder = content.match(/^(\d+) Cylinders?$/);
         
-        // For selected manufacturers, shift text further outward (40px more to the right)
-        if (isSelected) {
-            offset = -(radius + 50); // Move text 40px more outward from the current 10px offset
-        }
+        let textX, textY, textAnchor;
         
-        const textX = offset * Math.cos(angle);
-        const textY = offset * Math.sin(angle);
-        let rotation = angle * 180 / Math.PI;
-        
-        // For selected manufacturers, use 'end' anchor so text block ends near the node
-        let textAnchor;
-        if (isSelected) {
-            textAnchor = 'end';
+        if (isCylinder) {
+            // Center cylinder text over the node
+            textX = 0;
+            textY = 0;
+            textAnchor = 'middle';
         } else {
-            textAnchor = Math.cos(angle) >= 0 ? 'start' : 'end';
+            // Standard positioning for other items
+            const radius = MOBILE_CONFIG.RADIUS.UNSELECTED;
+            let offset = -(radius + 5);
+            
+            // For selected manufacturers, shift text further outward (40px more to the right)
+            if (isSelected) {
+                offset = -(radius + 50); // Move text 40px more outward from the current 10px offset
+            }
+            
+            textX = offset * Math.cos(angle);
+            textY = offset * Math.sin(angle);
+            
+            // For selected manufacturers, use 'end' anchor so text block ends near the node
+            if (isSelected) {
+                textAnchor = 'end';
+            } else {
+                textAnchor = Math.cos(angle) >= 0 ? 'start' : 'end';
+            }
         }
+        
+        let rotation = angle * 180 / Math.PI;
         
         if (Math.cos(angle) < 0) {
             rotation += 180;
@@ -715,7 +775,20 @@ class MobileRenderer {
         textElement.removeAttribute('font-size');
         textElement.removeAttribute('font-weight');
         
-        textElement.textContent = content;
+        // Special formatting for cylinders in Focus Ring
+        let displayText = content;
+        if (isCylinder) {
+            const cylinderNumber = isCylinder[1];
+            if (isSelected) {
+                // Selected cylinder (in magnifier): show "X CIL"
+                displayText = `${cylinderNumber} CIL`;
+            } else {
+                // Non-selected cylinders: show just the number
+                displayText = cylinderNumber;
+            }
+        }
+        
+        textElement.textContent = displayText;
     }
     
     addTimestampToCenter() {
@@ -738,21 +811,111 @@ class MobileRenderer {
     }
     
     getColor(type, name) {
-        // Simple color mapping - could be enhanced
-        switch (type) {
-            case 'manufacturer':
-                return '#f1b800';
-            case 'cylinder':
-                return '#f1b800';
-            case 'model':
-                return '#f1b800';
-            default:
-                return '#f1b800';
-        }
+        // Get color from display configuration
+        const levelConfig = this.dataManager.getHierarchyLevelConfig(type);
+        return levelConfig?.color || '#f1b800'; // Default to yellow if not configured
     }
     
     getColorForType(type) {
         return this.getColor(type, '');
+    }
+    
+    /**
+     * Get the hierarchy levels configuration
+     */
+    getHierarchyLevels() {
+        return this.dataManager.getDisplayConfig()?.hierarchy_levels || {};
+    }
+
+    /**
+     * Get the ordered list of hierarchy level names
+     */
+    getHierarchyLevelNames() {
+        const levels = this.getHierarchyLevels();
+        return Object.keys(levels);
+    }
+
+    /**
+     * Get the depth/level index for a given level name
+     */
+    getHierarchyLevelDepth(levelName) {
+        const levelNames = this.getHierarchyLevelNames();
+        return levelNames.indexOf(levelName);
+    }
+
+    /**
+     * Determine what hierarchy level an item belongs to based on its properties
+     */
+    getItemHierarchyLevel(item) {
+        const levels = this.getHierarchyLevels();
+        const levelNames = this.getHierarchyLevelNames();
+        
+        // Check levels from most specific to least specific to ensure correct matching
+        // Reverse the order: model, family, cylinder, manufacturer, country, market
+        const reversedLevelNames = [...levelNames].reverse();
+        
+        for (const levelName of reversedLevelNames) {
+            if (this.itemMatchesLevel(item, levelName)) {
+                return levelName;
+            }
+        }
+        
+        Logger.warn('Could not determine hierarchy level for item:', item);
+        return null;
+    }
+
+    /**
+     * Check if an item matches a specific hierarchy level
+     */
+    itemMatchesLevel(item, levelName) {
+        // More precise level detection based on the defining characteristics of each level
+        switch (levelName) {
+            case 'market':
+                // Market level: has market, no country
+                return item.market && !item.country;
+            case 'country':
+                // Country level: has market + country, no manufacturer/name
+                return item.market && item.country && !item.manufacturer && !item.name;
+            case 'manufacturer':
+                // Manufacturer level: has market + country + (manufacturer or name), no cylinderCount, no cylinder string
+                return item.market && item.country && (item.manufacturer || item.name) && item.cylinderCount === undefined && item.cylinder === undefined;
+            case 'cylinder':
+                // Cylinder level: has cylinderCount (number), no cylinder string, no familyCode
+                return item.cylinderCount !== undefined && item.cylinder === undefined && !item.familyCode;
+            case 'family':
+                // Family level: has familyCode
+                return item.familyCode !== undefined;
+            case 'model':
+                // Model level: has cylinder (string) - this is the distinguishing feature
+                // Models have 'cylinder' (string) not 'cylinderCount' (number)
+                return item.cylinder !== undefined;
+            default:
+                return false;
+        }
+    }
+
+    /**
+     * Get the next hierarchy level name
+     */
+    getNextHierarchyLevel(currentLevelName) {
+        const levelNames = this.getHierarchyLevelNames();
+        const currentIndex = levelNames.indexOf(currentLevelName);
+        if (currentIndex >= 0 && currentIndex < levelNames.length - 1) {
+            return levelNames[currentIndex + 1];
+        }
+        return null;
+    }
+
+    /**
+     * Get the previous hierarchy level name
+     */
+    getPreviousHierarchyLevel(currentLevelName) {
+        const levelNames = this.getHierarchyLevelNames();
+        const currentIndex = levelNames.indexOf(currentLevelName);
+        if (currentIndex > 0) {
+            return levelNames[currentIndex - 1];
+        }
+        return null;
     }
     
     reset() {
@@ -764,6 +927,9 @@ class MobileRenderer {
         this.activeType = null;
         this.manufacturerElements.clear();
         this.positionCache.clear();
+        
+        // Collapse Detail Sector
+        this.collapseDetailSector();
         
         // Hide rings
         this.elements.focusRingGroup.classList.add('hidden');
@@ -1222,166 +1388,243 @@ class MobileRenderer {
     handleChildPyramidClick(item, event) {
         console.log('🔺🔺🔺 HANDLE CHILD PYRAMID CLICK CALLED!', item.name);
         Logger.debug('🔺 Child pyramid item clicked:', item.name, 'implementing nzone migration OUT');
-        
+
         // NZONE MIGRATION: Child Pyramid → Focus Ring
         // This moves the clicked item OUT to become the new focus in the Focus Ring
-        
-        // Detect what type of item was clicked based on its properties
-        const isFamily = item.familyCode !== undefined;
-        const isCylinder = item.cylinderCount !== undefined && !isFamily;
-        
-        if (isCylinder) {
-            // CYLINDER CLICK HANDLER
-            Logger.debug('🔺 Cylinder clicked:', item.name);
-            
-            // 1. Update the navigation state - this item becomes the new focus
-            this.activePath = [item.market, item.country, item.manufacturer, item.name];
-            this.activeType = 'cylinder';
-            this.selectedFocusItem = {
-                name: item.name,
-                cylinderCount: item.cylinderCount,
+
+        // Determine the hierarchy level of the clicked item
+        const itemLevel = this.getItemHierarchyLevel(item);
+        if (!itemLevel) {
+            Logger.warn('🔺 Could not determine hierarchy level for clicked item:', item);
+            return;
+        }
+
+        Logger.debug(`🔺 ${itemLevel} clicked:`, item.name);
+
+        // 1. Update the navigation state - this item becomes the new focus
+        this.buildActivePath(item);
+        this.activeType = itemLevel;
+        this.selectedFocusItem = { ...item };
+
+        // 2. Get all siblings at the same level and move them to Focus Ring
+        let parentItem;
+        let parentLevel;
+        if (itemLevel === 'cylinder') {
+            // For cylinders, get the manufacturer from the active path
+            parentItem = {
                 market: item.market,
                 country: item.country,
-                manufacturer: item.manufacturer,
-                key: item.key
+                manufacturer: this.activePath[2] // manufacturer is at index 2 in [market, country, manufacturer, ...]
             };
-            
-            // 2. Move all cylinders to Focus Ring, clicked cylinder becomes selected
-            const allCylinders = this.dataManager.getCylinders(item.market, item.country, item.manufacturer);
-            this.currentFocusItems = allCylinders;
-            this.allFocusItems = allCylinders;
-            
-            // 3. Hide current Child Pyramid temporarily
-            this.elements.childRingGroup.classList.add('hidden');
-            
-            // 4. Set up touch rotation FIRST (this creates the touch handler)
-            if (window.mobileCatalogApp) {
-                window.mobileCatalogApp.setupTouchRotation(allCylinders);
-                Logger.debug('🔺 Touch rotation re-setup for', allCylinders.length, 'cylinders');
-            }
-            
-            // 5. Now set the rotation offset to center the clicked cylinder and update Focus Ring
-            const clickedIndex = allCylinders.findIndex(cyl => cyl.cylinderCount === item.cylinderCount);
-            const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-            const middleIndex = (allCylinders.length - 1) / 2;
-            const centerOffset = -(clickedIndex - middleIndex) * angleStep;
-            
-            // Set the touch handler's rotation offset directly
-            if (window.mobileCatalogApp && window.mobileCatalogApp.touchHandler) {
-                window.mobileCatalogApp.touchHandler.rotationOffset = centerOffset;
-            }
-            
-            // Update Focus Ring with cylinders - clicked cylinder should be centered
-            this.updateFocusRingPositions(centerOffset);
-            
-            Logger.debug('🔺 Focus Ring updated with', allCylinders.length, 'cylinders, selected:', item.name);
-            
-            // 6. Update Parent Button to show manufacturer as parent
-            this.updateParentButton(item.manufacturer);
-            
-            // 7. Get families for this cylinder count and show in Child Pyramid
-            const families = this.dataManager.getFamilies(item.market, item.country, item.manufacturer, item.cylinderCount);
-            
-            if (families === null) {
-                // No family layer - show models directly in Child Pyramid
-                Logger.debug('🔺 No families for', item.name, '- showing models in Child Pyramid');
-                
-                const models = this.dataManager.getModels(item.market, item.country, item.manufacturer, item.cylinderCount);
-                
+            parentLevel = 'manufacturer';
+        } else {
+            parentLevel = this.getPreviousHierarchyLevel(itemLevel);
+            parentItem = this.buildParentItemFromChild(item, parentLevel);
+        }
+        const allSiblings = this.getChildItemsForLevel(parentItem, itemLevel);
+
+        this.currentFocusItems = allSiblings;
+        this.allFocusItems = allSiblings;
+
+        // 3. Clear current Child Pyramid immediately to remove cylinder nodes
+        this.elements.childRingGroup.innerHTML = '';
+        this.elements.childRingGroup.classList.add('hidden');
+
+        // 4. Set up touch rotation FIRST (this creates the touch handler)
+        if (window.mobileCatalogApp) {
+            window.mobileCatalogApp.setupTouchRotation(allSiblings);
+            Logger.debug('🔺 Touch rotation re-setup for', allSiblings.length, itemLevel + 's');
+        }
+
+        // 5. Find the clicked item in the siblings and center it
+        const clickedIndex = this.findItemIndexInArray(item, allSiblings, itemLevel);
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const middleIndex = (allSiblings.length - 1) / 2;
+        const centerOffset = -(clickedIndex - middleIndex) * angleStep;
+
+        // Set the touch handler's rotation offset directly
+        if (window.mobileCatalogApp && window.mobileCatalogApp.touchHandler) {
+            window.mobileCatalogApp.touchHandler.rotationOffset = centerOffset;
+        }
+
+        // Update Focus Ring with siblings - clicked item should be centered
+        this.updateFocusRingPositions(centerOffset);
+
+        Logger.debug(`🔺 Focus Ring updated with ${allSiblings.length} ${itemLevel}s, selected:`, item.name);
+
+        // 8. If a model was selected, expand the blue circle to create the Detail Sector
+        if (itemLevel === 'model') {
+            this.expandDetailSector();
+        } else {
+            this.collapseDetailSector();
+        }
+
+        // 6. Update Parent Button to show the parent level
+        const parentName = this.getParentNameForLevel(item, parentLevel);
+        this.updateParentButton(parentName);
+
+        // 7. Get children for the next level and show in Child Pyramid
+        // Skip this for models since they show the Detail Sector instead
+        if (itemLevel !== 'model') {
+            const nextLevel = this.getNextHierarchyLevel(itemLevel);
+            if (nextLevel) {
+                const childItems = this.getChildItemsForLevel(item, nextLevel);
+
                 setTimeout(() => {
-                    if (models.length > 0) {
-                        this.childPyramid.showChildPyramid(models, 'models');
-                        Logger.debug('🔺 Showing', models.length, 'models in Child Pyramid (no family layer)');
+                    if (childItems && childItems.length > 0) {
+                        const itemType = nextLevel === 'model' ? 'models' : nextLevel === 'family' ? 'families' : nextLevel + 's';
+                        this.childPyramid.showChildPyramid(childItems, itemType);
+                        Logger.debug(`🔺 Showing ${childItems.length} ${itemType} in Child Pyramid for ${itemLevel}:`, item.name);
                     } else {
-                        Logger.warn('🔺 No models found for cylinder:', item.name);
+                        Logger.warn(`🔺 No ${nextLevel}s found for ${itemLevel}:`, item.name);
                     }
                 }, 300);
-                
-            } else {
-                // Show families in Child Pyramid
-                Logger.debug('🔺 Found', families.length, 'families for', item.name, '- showing in Child Pyramid');
-                
-                setTimeout(() => {
-                    this.childPyramid.showChildPyramid(families, 'families');
-                    Logger.debug('🔺 Showing', families.length, 'families in Child Pyramid');
-                }, 300);
             }
-            
-            Logger.debug('🔺 Cylinder nzone migration complete');
-            
-        } else if (isFamily) {
-            // FAMILY CLICK HANDLER
-            Logger.debug('🔺 Family clicked:', item.name);
-            
-            // 1. Update the navigation state - this family becomes the new focus
-            this.activePath = [item.market, item.country, item.manufacturer, item.cylinderCount, item.name];
-            this.activeType = 'family';
-            this.selectedFocusItem = {
-                name: item.name,
-                familyCode: item.familyCode,
-                cylinderCount: item.cylinderCount,
-                market: item.market,
-                country: item.country,
-                manufacturer: item.manufacturer,
-                key: item.key
-            };
-            
-            // 2. Move all families for this cylinder to Focus Ring, clicked family becomes selected
-            const allFamilies = this.dataManager.getFamilies(item.market, item.country, item.manufacturer, item.cylinderCount);
-            this.currentFocusItems = allFamilies;
-            this.allFocusItems = allFamilies;
-            
-            // 3. Hide current Child Pyramid temporarily
-            this.elements.childRingGroup.classList.add('hidden');
-            
-            // 4. Set up touch rotation FIRST (this creates the touch handler)
-            if (window.mobileCatalogApp) {
-                window.mobileCatalogApp.setupTouchRotation(allFamilies);
-                Logger.debug('🔺 Touch rotation re-setup for', allFamilies.length, 'families');
-            }
-            
-            // 5. Now set the rotation offset to center the clicked family and update Focus Ring
-            const clickedIndex = allFamilies.findIndex(fam => fam.familyCode === item.familyCode);
-            const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-            const middleIndex = (allFamilies.length - 1) / 2;
-            const centerOffset = -(clickedIndex - middleIndex) * angleStep;
-            
-            // Set the touch handler's rotation offset directly
-            if (window.mobileCatalogApp && window.mobileCatalogApp.touchHandler) {
-                window.mobileCatalogApp.touchHandler.rotationOffset = centerOffset;
-            }
-            
-            // Update Focus Ring with families - clicked family should be centered
-            this.updateFocusRingPositions(centerOffset);
-            
-            Logger.debug('🔺 Focus Ring updated with', allFamilies.length, 'families, selected:', item.name);
-            
-            // 6. Update Parent Button to show cylinder as parent
-            this.updateParentButton(`${item.cylinderCount} Cylinders`);
-            
-            // 7. Get models for this family and show in Child Pyramid
-            const models = this.dataManager.getModelsByFamily(
-                item.market, 
-                item.country, 
-                item.manufacturer, 
-                item.cylinderCount, 
-                item.familyCode
-            );
-            
-            setTimeout(() => {
-                if (models.length > 0) {
-                    this.childPyramid.showChildPyramid(models, 'models');
-                    Logger.debug('🔺 Showing', models.length, 'models in Child Pyramid for family:', item.name);
-                } else {
-                    Logger.warn('🔺 No models found for family:', item.name);
-                }
-            }, 300);
-            
-            Logger.debug('🔺 Family nzone migration complete');
-            
         } else {
-            Logger.warn('🔺 Unknown item type clicked:', item);
+            // For models, hide the Child Pyramid since Detail Sector is shown
+            setTimeout(() => {
+                this.elements.childRingGroup.innerHTML = '';
+                this.elements.childRingGroup.classList.add('hidden');
+                Logger.debug('🔺 Detail Sector shown - Child Pyramid hidden for model:', item.name);
+            }, 300);
         }
+
+        Logger.debug(`🔺 ${itemLevel} nzone migration complete`);
+    }
+
+    /**
+     * Get the display name for a parent level
+     */
+    getParentNameForLevel(item, parentLevel) {
+        switch (parentLevel) {
+            case 'market':
+                return item.market;
+            case 'country':
+                return item.country;
+            case 'manufacturer':
+                return item.manufacturer || item.name;
+            case 'cylinder':
+                // Models have 'cylinder' (string), cylinders have 'cylinderCount' (number)
+                if (item.cylinder !== undefined) {
+                    return `${item.cylinder} Cylinders`;
+                } else if (item.cylinderCount !== undefined) {
+                    return `${item.cylinderCount} Cylinders`;
+                }
+                return 'Cylinders';
+            case 'family':
+                return item.familyCode;
+            default:
+                return parentLevel;
+        }
+    }
+
+    /**
+     * Build a parent item from a child item for navigation purposes
+     */
+    buildParentItemFromChild(childItem, parentLevel) {
+        const parentItem = {};
+
+        // Copy all properties up to the parent level
+        const levelNames = this.getHierarchyLevelNames();
+        const parentIndex = levelNames.indexOf(parentLevel);
+
+        for (let i = 0; i <= parentIndex; i++) {
+            const levelName = levelNames[i];
+            switch (levelName) {
+                case 'market':
+                    parentItem.market = childItem.market;
+                    break;
+                case 'country':
+                    parentItem.country = childItem.country;
+                    break;
+                case 'manufacturer':
+                    parentItem.manufacturer = childItem.manufacturer || childItem.name;
+                    break;
+                case 'cylinder':
+                    // Models have 'cylinder' (string), cylinders have 'cylinderCount' (number)
+                    if (childItem.cylinder !== undefined) {
+                        parentItem.cylinderCount = parseInt(childItem.cylinder);
+                    } else if (childItem.cylinderCount !== undefined) {
+                        parentItem.cylinderCount = childItem.cylinderCount;
+                    }
+                    break;
+                case 'family':
+                    parentItem.familyCode = childItem.familyCode;
+                    break;
+            }
+        }
+
+        return parentItem;
+    }
+
+    /**
+     * Find the index of an item in an array based on level-specific matching
+     */
+    findItemIndexInArray(item, array, level) {
+        return array.findIndex(sibling => {
+            switch (level) {
+                case 'market':
+                    return sibling.market === item.market;
+                case 'country':
+                    return sibling.country === item.country;
+                case 'manufacturer':
+                    return sibling.manufacturer === item.manufacturer || sibling.name === item.name;
+                case 'cylinder':
+                    return sibling.cylinderCount === item.cylinderCount;
+                case 'family':
+                    return sibling.familyCode === item.familyCode;
+                case 'model':
+                    // Models are matched by their name (which is the engine_model)
+                    return sibling.name === item.name;
+                default:
+                    return false;
+            }
+        });
+    }
+
+    /**
+     * Expand the blue circle to create the Detail Sector when a model is selected
+     */
+    expandDetailSector() {
+        const arcParams = this.viewport.getArcParameters();
+        const centralGroup = this.elements.centralGroup;
+        const circle = centralGroup.querySelector('circle');
+        
+        // Position the central group at the focus ring center
+        centralGroup.setAttribute('transform', `translate(${arcParams.centerX}, ${arcParams.centerY})`);
+        
+        // Set circle radius to 90% of focus ring radius
+        const detailRadius = arcParams.radius * 0.9;
+        circle.setAttribute('r', detailRadius);
+        
+        // Add detail sector class for additional styling
+        centralGroup.classList.add('detail-sector');
+        
+        Logger.debug(`Detail Sector expanded: center=(${arcParams.centerX}, ${arcParams.centerY}), radius=${detailRadius}`);
+    }
+
+    /**
+     * Collapse the Detail Sector when navigating away from model level
+     */
+    collapseDetailSector() {
+        const centralGroup = this.elements.centralGroup;
+        const circle = centralGroup.querySelector('circle');
+        
+        // Calculate actual pixel values for viewport-based positioning
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const xPos = viewportWidth * 0.4; // 40vw
+        const yPos = -viewportHeight * 0.45; // -45vh
+        const radius = Math.min(viewportWidth * 0.1, viewportHeight * 0.1); // min(10vw, 10vh)
+        
+        // Reset to original positioning and size
+        centralGroup.setAttribute('transform', `translate(${xPos}, ${yPos})`);
+        circle.setAttribute('r', radius);
+        
+        // Remove detail sector class
+        centralGroup.classList.remove('detail-sector');
+        
+        Logger.debug('Detail Sector collapsed');
     }
 }
 

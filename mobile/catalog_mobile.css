@@ -113,8 +113,8 @@ g.manufacturer.selected text {
 #centralGroup {
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 1 !important; /* Always fully opaque */
-    /* Corrected positioning accounting for SVG scaling - moved higher */
-    transform: translate(calc(25vw), calc(-28vw)) !important;
+    /* Position in upper right corner with 30px buffer */
+    transform: translate(calc(40vw), calc(-45vh)) !important;
     transform-origin: center center;
 }
 
@@ -125,20 +125,19 @@ g.manufacturer.selected text {
 /* Set central elements to 30% opacity and scale dynamically */
 #centralGroup circle {
     opacity: 0.3 !important;
-    /* Scale circle proportionally with image */
-    transform: scale(calc(30vw / 140));
-    transform-origin: center center;
+    /* Dynamic radius: 10% of the short side of viewport */
+    r: min(10vw, 10vh) !important;
 }
 
 #centralGroup image {
     opacity: 0.3 !important;
-    /* Scale to 45% of screen width in portrait mode (30% * 1.5 = 45%) */
+    /* Scale to 45% of screen width in portrait mode */
     width: 45vw !important;
-    /* Maintain aspect ratio: original is 400x127, so height = width * (127/400) */
-    height: calc(45vw * 0.3175) !important;
-    /* Center the image on its anchor point */
+    /* Correct aspect ratio: original is 140x44, so height = width * (44/140) */
+    height: calc(45vw * 0.3142857) !important;
+    /* Center the image on the circle center (0,0) */
     x: calc(-22.5vw) !important;
-    y: calc(-22.5vw * 0.3175 / 2) !important;
+    y: calc(-22.5vw * 0.3142857 / 2) !important;
 }
 
 /* Parent button styling */
@@ -204,28 +203,28 @@ g.manufacturer.selected text {
 /* Landscape mode adjustments for logo positioning */
 @media (max-height: 480px) and (orientation: landscape) {
     #centralGroup {
-        /* Corrected landscape positioning accounting for SVG scaling and centering */
-        transform: translate(calc(33vw), calc(-13vw)) !important;
+        /* Position in upper right corner for landscape */
+        transform: translate(calc(45vw), calc(-40vh)) !important;
     }
     
     #centralGroup image {
         /* In landscape, scale based on viewport height instead of width - increased by 50% */
         width: 37.5vh !important;
-        height: calc(37.5vh * 0.3175) !important;
+        height: calc(37.5vh * 0.3142857) !important;
         x: calc(-18.75vh) !important;
-        y: calc(-18.75vh * 0.3175 / 2) !important;
+        y: calc(-18.75vh * 0.3142857 / 2) !important;
     }
     
     #centralGroup circle {
-        /* Scale circle proportionally in landscape */
-        transform: scale(calc(25vh / 140));
+        /* Dynamic radius for landscape: 10% of short side */
+        r: min(10vw, 10vh) !important;
     }
 }
 
 /* Portrait mode - ensure proper scaling and positioning */
 @media (orientation: portrait) {
     #centralGroup {
-        /* Corrected positioning for portrait mode - moved higher */
-        transform: translate(calc(25vw), calc(-28vw)) !important;
+        /* Position in upper right corner for portrait */
+        transform: translate(calc(40vw), calc(-45vh)) !important;
     }
 }
