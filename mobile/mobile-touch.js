@@ -21,6 +21,10 @@ class TouchRotationHandler {
         this.lastTouch = { x: 0, y: 0 };
         this.animationId = null;
         
+        // Dynamic rotation state
+        this.gestureDistance = 0;
+        this.lastTimeStamp = 0;
+        
         // Bound handlers for cleanup
         this.boundHandlers = {
             touchStart: this.handleTouchStart.bind(this),
@@ -71,6 +75,10 @@ class TouchRotationHandler {
         this.velocity = 0;
         this.startTouch = { x: e.touches[0].clientX, y: e.touches[0].clientY };
         
+        // Reset dynamic rotation tracking
+        this.gestureDistance = 0;
+        this.lastTimeStamp = e.timeStamp || performance.now();
+        
         const touch = e.touches[0];
         this.lastTouch = { x: touch.clientX, y: touch.clientY };
         
@@ -84,6 +92,8 @@ class TouchRotationHandler {
         const touch = e.touches[0];
         const deltaX = touch.clientX - this.lastTouch.x;
         const deltaY = touch.clientY - this.lastTouch.y;
+        const currentTime = e.timeStamp || performance.now();
+        const timeDelta = currentTime - this.lastTimeStamp;
         
         // Check if this is the first move and if movement is significant enough to start dragging
         if (!this.isDragging) {
@@ -99,23 +109,53 @@ class TouchRotationHandler {
             } else {
                 // Not enough movement yet, don't prevent default (allow clicks)
                 this.lastTouch = { x: touch.clientX, y: touch.clientY };
+                this.lastTimeStamp = currentTime;
                 return;
             }
         } else {
             e.preventDefault(); // Continue preventing default during drag
         }
         
-        // Convert movement to rotation
-        const rotationDelta = -(deltaX + deltaY) * MOBILE_CONFIG.ROTATION.SENSITIVITY;
+        // Accumulate gesture distance for scaling
+        this.gestureDistance += Math.abs(deltaX) + Math.abs(deltaY);
+        
+        // Calculate instantaneous velocity (pixels per millisecond)
+        const instantaneousVelocity = timeDelta > 0 ? Math.sqrt(deltaX * deltaX + deltaY * deltaY) / timeDelta : 0;
+        
+        // Apply hybrid scaling: combine distance and velocity
+        let scaleFactor = 1.0;
+        
+        // Distance-based scaling (for large gestures)
+        const distanceScale = this.gestureDistance > 100 
+            ? Math.min(Math.pow(this.gestureDistance / 100, 1.2), 30)
+            : 1.0;
+        
+        // Velocity-based scaling (for fast swipes)
+        const velocityScale = instantaneousVelocity > 2 
+            ? Math.min(instantaneousVelocity / 2, 15)
+            : 1.0;
+        
+        // Use the higher of the two scales
+        scaleFactor = Math.max(distanceScale, velocityScale);
+        
+        // Convert movement to rotation with dynamic scaling
+        const baseRotationDelta = -(deltaX + deltaY) * MOBILE_CONFIG.ROTATION.SENSITIVITY;
+        const rotationDelta = baseRotationDelta * scaleFactor;
+        
         const newOffset = this.constrainRotation(this.rotationOffset + rotationDelta);
         
         if (newOffset !== this.rotationOffset) {
             this.rotationOffset = newOffset;
-            this.velocity = rotationDelta; // Store for momentum
+            this.velocity = rotationDelta; // Store scaled velocity for momentum
             this.onRotationChange(this.rotationOffset);
+            
+            if (scaleFactor > 1.0) {
+                Logger.debug(`Dynamic rotation: distance=${this.gestureDistance.toFixed(0)}px, velocity=${instantaneousVelocity.toFixed(2)}, scale=${scaleFactor.toFixed(1)}x`);
+            }
         }
         
         this.lastTouch = { x: touch.clientX, y: touch.clientY };
+        this.lastTimeStamp = currentTime;
     }
     
     handleTouchEnd(e) {
@@ -243,6 +283,8 @@ class TouchRotationHandler {
         this.rotationOffset = 0;
         this.isDragging = false;
         this.velocity = 0;
+        this.gestureDistance = 0;
+        this.lastTimeStamp = 0;
         this.stopAnimation();
     }
 }

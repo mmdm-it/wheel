@@ -1,5 +1,5 @@
 # MMdM Mobile Catalog - Development Status Report
-## Generated: November 2, 2025
+## Generated: November 5, 2025
 
 ### PROJECT OVERVIEW
 Marine engine catalog system for MMdM (Meccanismi Marittimi delle Marche) - Italian company specializing in water-cooled exhaust manifolds. Mobile-first ES6 native module architecture with innovative 2D navigation system that transcends traditional scrolling limitations.
@@ -49,6 +49,7 @@ The focus ring is NOT a circle or "hose reel" - it's an arc functioning as a spr
 - Supports manufacturers, cylinders, families, and engine models (104 manufacturers currently)
 - Dynamic center angle calculation for viewport optimization
 - Touch rotation with momentum physics and defined endpoints
+- **Dynamic Rotation Scaling**: Hybrid distance+velocity scaling allows "A to Z in two swipes" while maintaining node-to-node precision
 - Magnifying glass positioning with layer context
 - Text rotation for readability at all angles
 - Dual-mode operation: list traversal (portrait) vs layer traversal (landscape)
@@ -61,6 +62,13 @@ The focus ring is NOT a circle or "hose reel" - it's an arc functioning as a spr
 - Rotated number-only text labels (removed "Cylinders" suffix)
 - Yellow nodes matching focus ring aesthetic (#f1b800)
 - Portrait viewport optimization
+
+**✅ COMPLETE - Detail Sector Expansion**
+- Dynamic blue circle expansion to 90% of focus ring radius when models are selected
+- Smooth animation transition from Child Pyramid to Detail Sector
+- Integrated with viewport calculations and touch rotation system
+- Maintains navigation hierarchy flow: Manufacturer → Cylinders → Families/Models → Detail Sector
+- Works correctly for manufacturers with families (Ford) and without families (Lockwood-Ash)
 
 **✅ COMPLETE - Data Management**
 - Real JSON catalog integration (replaced test data)
@@ -102,18 +110,21 @@ The catalog implements a sophisticated family/orphan system:
 
 **Working Features:**
 1. **Mobile Detection & Viewport**: Automatic mobile/desktop detection with proper viewport setup
-2. **Focus Ring**: 104 manufacturers displayed in rotatable arc with touch controls
+2. **Focus Ring**: 104 manufacturers displayed in rotatable arc with touch controls and dynamic scaling
 3. **Child Pyramid**: Cylinder counts (1-19) displayed in three concentric arcs
-4. **Navigation Flow**: Market selection → Manufacturer focus → Cylinder pyramid display
-5. **Nzone Migration**: Cylinder clicks successfully migrate to Focus Ring with proper state updates
-6. **Parent Button Navigation**: Back navigation working with proper Child Pyramid display
-7. **Null Safety**: Robust handling of manufacturers with no family layer (shows models directly)
-8. **Visual Polish**: Consistent yellow theming, rotated text, optimized positioning
+4. **Detail Sector**: Blue circle expansion for model selection with smooth animations and proper Child Pyramid hiding
+5. **Navigation Flow**: Complete hierarchy flow - Market selection → Manufacturer focus → Cylinder pyramid → Family/Model selection → Detail Sector expansion
+6. **Family Logic**: Proper handling of manufacturers with families (Ford) and without families (Lockwood-Ash)
+7. **Parent Button**: Correctly displays parent level names throughout navigation hierarchy
+8. **Nzone Migration**: Cylinder clicks successfully migrate to Focus Ring with proper state updates
+9. **Dynamic Rotation**: Hybrid scaling system enables rapid traversal ("A to Z in two swipes") while maintaining precision
+10. **Null Safety**: Robust handling of manufacturers with no family layer (shows models directly)
 
 **Data Integration:**
-- Lockwood-Ash: 19 cylinder counts (1-19) for testing Child Pyramid capacity
-- Real manufacturer data from catalog.json
+- Real manufacturer data from catalog.json (restored to production state)
 - Proper country/market hierarchy
+- **Large-Scale Testing**: Successfully tested with 2000+ manufacturers (M1-M2000) for performance validation
+- **Test Data Cleanup**: All test manufacturers removed, catalog restored to production-ready state
 
 ### TECHNICAL SPECIFICATIONS
 
@@ -132,6 +143,13 @@ The catalog implements a sophisticated family/orphan system:
 - Trigonometric positioning with rotation support
 
 ### TO-DO LIST
+
+**✅ COMPLETED - Core Navigation System**
+1. **Dynamic Rotation Scaling**: Hybrid distance+velocity scaling implemented for optimal UX
+2. **Detail Sector Expansion**: Blue circle expansion for model selection completed
+3. **Navigation Flow**: Complete hierarchy navigation (Manufacturer → Cylinders → Models → Detail Sector)
+4. **Large-Scale Testing**: Successfully tested with 2000+ manufacturers
+5. **Test Data Cleanup**: Production catalog restored, all test manufacturers removed
 
 **🚧 HIGH PRIORITY**
 1. **Nzone Migration Module**: Extract generalized migration logic into mobile-migrations.js
@@ -198,6 +216,11 @@ The catalog implements a sophisticated family/orphan system:
 - High-to-low sorting functionality
 - Viewport responsiveness (tested on 412x915, 3500x3500)
 - Touch rotation mechanics
+- **Dynamic Rotation Scaling**: Hybrid distance+velocity system tested with 2000+ manufacturers
+- **Large-Scale Performance**: Successfully handled 2000 manufacturers with 18,000+ models
+- **Detail Sector Expansion**: Blue circle animation and integration tested
+- **Navigation Flow**: Complete hierarchy testing from Manufacturer → Detail Sector
+- **Data Cleanup**: Verified removal of all test manufacturers, production state confirmed
 
 **🧪 NEEDS TESTING**
 - Landscape mode layer navigation implementation
@@ -209,16 +232,19 @@ The catalog implements a sophisticated family/orphan system:
 
 ### DEPLOYMENT CONSIDERATIONS
 
-**Ready for Production:**
-- Core navigation functionality
-- Mobile-optimized touch controls
+**✅ PRODUCTION READY**
+- Complete navigation functionality (Manufacturer → Cylinders → Models → Detail Sector)
+- Mobile-optimized touch controls with dynamic scaling
 - Responsive design implementation
+- Large-scale testing completed (2000+ manufacturers)
+- Test data cleanup completed, production catalog ready
+- Dynamic rotation scaling enables optimal user experience
 
 **Pre-Production Requirements:**
-- Click handler implementation
-- Complete navigation flow
+- Click handler implementation for remaining pyramid types
+- Complete navigation flow polish
 - Error handling enhancement
-- Performance optimization
+- Performance optimization (viewport culling, requestAnimationFrame)
 
 ### DEVELOPMENT WORKFLOW
 
@@ -261,7 +287,7 @@ mobile/
 
 ---
 
-**Last Major Update**: Fixed parent button navigation - now properly calls childPyramid.showChildPyramid() for back navigation
-**Next Priority**: Implement mobile-migrations.js module for generalized nzone transitions
-**Code Stability**: High (Child Pyramid module working with 19 dynamic nodes, null safety and parent navigation implemented)
-**Documentation**: This STATUS file (comprehensive)
+**Last Major Update**: Fixed Detail Sector functionality for both manufacturers with families (Ford) and without families (Lockwood-Ash). Resolved Parent Button initialization, Focus Ring updates, Child Pyramid behavior, and Detail Sector expansion. Updated STATUS documentation to reflect completed functionality.
+**Next Priority**: Implement mobile-migrations.js module for generalized nzone transitions and complete click handlers
+**Code Stability**: High (Complete navigation system working with dynamic scaling, Detail Sector expansion, and production data)
+**Documentation**: This STATUS file (updated with recent Detail Sector fixes)

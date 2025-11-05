@@ -195,20 +195,19 @@ class MobileChildPyramid {
         hitZone.classList.add('hit-zone');
         hitZone.style.cursor = 'pointer';
         
-        // Create visual circle with same color as focus ring
+        // Create visual circle with configurable color
         const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
         circle.setAttribute('cx', x);
         circle.setAttribute('cy', y);
         circle.setAttribute('r', MOBILE_CONFIG.RADIUS.CHILD_NODE);
-        circle.setAttribute('fill', '#f1b800'); // Same yellow as focus ring
+        circle.setAttribute('fill', this.getItemColor(item)); // Use configurable color
         circle.classList.add('node');
         
         Logger.debug(`🔺 Created ${arcName} element "${item.name}" at (${x}, ${y}) with visual radius ${MOBILE_CONFIG.RADIUS.CHILD_NODE} and hit radius ${hitRadius}`);
         
-        // Create text - extract just the number from "X Cylinders"
+        // Create text with configurable formatting
         const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        const numberOnly = item.name.replace(' Cylinders', ''); // Remove "Cylinders"
-        text.textContent = numberOnly;
+        text.textContent = this.formatItemText(item);
         
         // Calculate text rotation (same logic as focus ring text)
         const textX = x;
@@ -317,6 +316,77 @@ class MobileChildPyramid {
             // This would trigger a re-layout if items are currently displayed
             Logger.debug('Child Pyramid viewport change detected - re-layout needed');
         }
+    }
+    
+    /**
+     * Get configurable color for an item based on its type
+     */
+    getItemColor(item) {
+        // Determine item type from properties
+        let levelType = 'model'; // Default
+        
+        if (item.cylinderCount !== undefined) {
+            levelType = 'cylinder';
+        } else if (item.familyCode !== undefined) {
+            levelType = 'family';
+        } else if (item.manufacturer) {
+            levelType = 'manufacturer';
+        } else if (item.country) {
+            levelType = 'country';
+        } else if (item.market) {
+            levelType = 'market';
+        }
+        
+        // Get color from display config
+        const levelConfig = this.dataManager.getHierarchyLevelConfig(levelType);
+        return levelConfig?.color || '#f1b800'; // Default to yellow
+    }
+    
+    /**
+     * Format item text based on configurable rules
+     */
+    formatItemText(item) {
+        // Determine item type from properties
+        let levelType = 'model'; // Default
+        
+        if (item.cylinderCount !== undefined) {
+            levelType = 'cylinder';
+        } else if (item.familyCode !== undefined) {
+            levelType = 'family';
+        } else if (item.manufacturer) {
+            levelType = 'manufacturer';
+        } else if (item.country) {
+            levelType = 'country';
+        } else if (item.market) {
+            levelType = 'market';
+        }
+        
+        // Get text format from display config
+        const levelConfig = this.dataManager.getHierarchyLevelConfig(levelType);
+        const textFormat = levelConfig?.text_format || 'title_case';
+        
+        let formattedText = item.name;
+        
+        switch (textFormat) {
+            case 'uppercase':
+                formattedText = formattedText.toUpperCase();
+                break;
+            case 'lowercase':
+                formattedText = formattedText.toLowerCase();
+                break;
+            case 'title_case':
+                formattedText = formattedText.replace(/\b\w/g, l => l.toUpperCase());
+                break;
+            case 'append_cylinders':
+                // Remove " Cylinders" suffix if present (for cylinder display)
+                formattedText = formattedText.replace(' Cylinders', '');
+                break;
+            default:
+                // No transformation
+                break;
+        }
+        
+        return formattedText;
     }
 }
 

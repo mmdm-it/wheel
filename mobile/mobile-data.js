@@ -58,6 +58,23 @@ class DataManager {
         return data && data.MMdM && data.MMdM.markets && typeof data.MMdM.markets === 'object';
     }
 
+    getDisplayConfig() {
+        return this.data?.MMdM?.display_config || null;
+    }
+
+    getHierarchyLevelConfig(levelType) {
+        const displayConfig = this.getDisplayConfig();
+        return displayConfig?.hierarchy_levels?.[levelType] || null;
+    }
+
+    getUILimits() {
+        const displayConfig = this.getDisplayConfig();
+        return displayConfig?.ui_limits || {
+            focus_ring_max_depth: 6,
+            parent_button_min_depth: 1
+        };
+    }
+
     getData() {
         return this.data;
     }
