@@ -310,10 +310,7 @@ function revertCentral() {
 
     centralGroup.innerHTML = `
         <circle class="node" cx="0" cy="0" r="40" fill="#362e6a" id="mmdmNode" />
-        <image href="./assets/catalog_logo.png" x="-70" y="-28" width="140" height="44" />
     `;
-    const centerImg = centralGroup.querySelector('image');
-    centerImg.setAttributeNS('http://www.w3.org/1999/xlink', 'href', './assets/catalog_logo.png');
 }
 
 // Check if a node is part of the active path
