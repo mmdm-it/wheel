@@ -10,37 +10,64 @@
                     "text_format": "uppercase",
                     "color": "#f1b800",
                     "positioning": "center",
-                    "display_name": "Market"
+                    "display_name": "Market",
+                    "sort_type": "alphabetical",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none"
                 },
                 "country": {
                     "text_format": "title_case",
                     "color": "#f1b800",
                     "positioning": "arc",
-                    "display_name": "Country"
+                    "display_name": "Country",
+                    "sort_type": "alphabetical",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none"
                 },
                 "manufacturer": {
                     "text_format": "title_case",
                     "color": "#f1b800",
                     "positioning": "arc",
-                    "display_name": "Manufacturer"
+                    "display_name": "Manufacturer",
+                    "sort_type": "alphabetical",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none",
+                    "aggregates_across": "country"
                 },
                 "cylinder": {
-                    "text_format": "append_cylinders",
+                    "text_format": "append_suffix",
                     "color": "#f1b800",
                     "positioning": "arc",
-                    "display_name": "Cylinders"
+                    "display_name": "Cylinders",
+                    "sort_type": "numeric_desc",
+                    "focus_text_position": "centered",
+                    "focus_text_transform": "number_only_or_cil",
+                    "is_numeric": true,
+                    "use_code_property": false
                 },
                 "family": {
                     "text_format": "title_case",
                     "color": "#f1b800",
                     "positioning": "arc",
-                    "display_name": "Family"
+                    "display_name": "Family",
+                    "sort_type": "alphabetical",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none",
+                    "is_numeric": false,
+                    "use_code_property": true,
+                    "is_virtual": true,
+                    "virtual_grouping_property": "family",
+                    "virtual_membership_property": "in_a_family",
+                    "virtual_orphan_group_name": "Other"
                 },
                 "model": {
                     "text_format": "title_case",
                     "color": "#f1b800",
                     "positioning": "arc",
-                    "display_name": "Model"
+                    "display_name": "Model",
+                    "sort_type": "alphabetical",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none"
                 }
             }
         },

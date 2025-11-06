@@ -1,8 +1,4 @@
-# MMdM Marine Engine Catalog - Mobile Interface
-
-## 🏢 About MMdM
-
-**Meccanismi Marittimi delle Marche** is an Italian company based in Fano (PU) that manufactures and sells water-cooled exhaust manifolds for marine engines. This catalog serves as both a comprehensive marine engine encyclopedia and the primary sales interface for MMdM's exhaust systems.
+# Universal Hierarchical Catalog - Mobile Interface
 
 ## 🎯 Interface Philosophy
 
@@ -10,20 +6,20 @@ This catalog uses a revolutionary **arc-based navigation system** designed aroun
 
 **"The more I test and use this interface, the more unnatural traditional scrolling feels."** - The arc follows how thumbs naturally move, creating a more ergonomic browsing experience.
 
-## 🗂️ Data Hierarchy & Family Logic
+## 🗂️ Data Hierarchy
 
-The catalog organizes marine engine data in a 6-level hierarchy:
+The catalog organizes hierarchical data with flexible level support. Example 6-level hierarchy:
 
 ```
-Markets → Countries → Manufacturers → Cylinders → Families → Engine Models
+Markets → Countries → Organizations → Categories → Groups → Items
 ```
 
-### **Family Adoption Rule**
-**"If any engine in a cylinder count has a family, ALL engines get assigned to families."**
+### **Virtual Level Adoption Rule**
+**"If any item in a parent level has virtual groupings, ALL items can be assigned to groups."**
 
-- **Natural Families**: Well-known groupings (e.g., Ford Flathead, Ford FE)
-- **Orphan Adoption**: Standalone engines become `family: "Other", in_a_family: true`
-- **No Engine Left Behind**: This ensures consistent navigation patterns
+- **Natural Groups**: Well-known groupings (e.g., product families, categories)
+- **Orphan Adoption**: Standalone items become `group: "Other", in_a_group: true`
+- **No Item Left Behind**: This ensures consistent navigation patterns
 
 ## 🎮 Navigation Zones (nzones)
 
@@ -31,8 +27,8 @@ The interface consists of **four distinct navigation zones** where data migrates
 
 ### **1. Parent Button** (Bottom Left)
 - **Function**: Back navigation and context display
-- **Content**: Shows the previous level (Country → Manufacturer → Cylinder → Family)
-- **Exception**: Countries never appear here (info-only during manufacturer browsing)
+- **Content**: Shows the previous level in the hierarchy
+- **Exception**: Top-level items may not appear here (info-only during browsing)
 
 ### **2. Focus Ring** (Main Arc, Top-Left to Bottom-Right)
 - **Function**: Primary browsing and selection
@@ -46,9 +42,9 @@ The interface consists of **four distinct navigation zones** where data migrates
 - **Interaction**: Click to drill down to next level
 
 ### **4. Details Arc** (Upper Right Corner - Final Level)
-- **Function**: Product information and commerce
+- **Function**: Item information and actions
 - **Appearance**: Blue arc covering entire upper-right viewport
-- **Content**: Model details, aftermarket manifolds, prices, photos, videos
+- **Content**: Item details, specifications, media
 - **Interaction**: Focus Ring rotation updates Details Arc content
 
 ## 🌊 Data Migration Flow
@@ -56,33 +52,35 @@ The interface consists of **four distinct navigation zones** where data migrates
 Data "flows" through the navigation zones like a pipeline:
 
 ### **Initial Load**
-- **Parent Button**: Country name
-- **Focus Ring**: Manufacturers
-- **Child Pyramid**: Cylinder counts
+- **Parent Button**: Top-level context
+- **Focus Ring**: Primary items
+- **Child Pyramid**: Category counts
 
-### **After Cylinder Selection**
-- **Parent Button**: Selected manufacturer (country disappears)
-- **Focus Ring**: Selected cylinder's families/models
+### **After Category Selection**
+- **Parent Button**: Selected item (top-level context disappears)
+- **Focus Ring**: Selected category's groups/items
 - **Child Pyramid**: Next level data
 
-### **After Family Selection**
-- **Parent Button**: Selected family
-- **Focus Ring**: Engine models in that family
+### **After Group Selection**
+- **Parent Button**: Selected group
+- **Focus Ring**: Items in that group
 - **Child Pyramid**: Becomes Details Arc
 
 ### **Final State**
-- **Parent Button**: Selected model family
-- **Focus Ring**: Individual engine models
-- **Details Arc**: Commerce and technical information
+- **Parent Button**: Selected item group
+- **Focus Ring**: Individual items
+- **Details Arc**: Information and actions
 
 ## 🚀 Broader Applications
 
-This navigation pattern has potential for many hierarchical data domains:
+This navigation pattern works for any hierarchical data domain:
 
 - **Genealogy**: Generations → Families → Individuals → Details
 - **Entertainment**: Genres → Years → Actors → Movie Details  
 - **Music**: Genres → Decades → Artists → Albums → Track Details
 - **E-commerce**: Categories → Brands → Products → Specifications
+- **Marine Engines**: Markets → Countries → Manufacturers → Cylinders → Families → Models
+- **Catholic Church**: Hierarchy → Diocese → Parish → Ministry → Member
 
 ## ⚠️ IMPORTANT: NO BUNDLING REQUIRED
 
@@ -114,8 +112,9 @@ This mobile catalog system uses **native ES6 modules** and does NOT require any 
 
 #### **🗂️ mobile-data.js** - Data Management
 - JSON data loading and caching
-- Manufacturer/cylinder/model extraction
+- Universal hierarchy navigation
 - Data validation and error handling
+- Virtual level and aggregation support
 
 #### **🖼️ mobile-renderer.js** - Rendering Engine
 - SVG DOM manipulation
@@ -153,10 +152,11 @@ This mobile catalog system uses **native ES6 modules** and does NOT require any 
 - Viewport-based rendering (only visible items)
 - Smart error handling and recovery
 
-### **4. Marine Industry Focus**
-- Multi-market support (Europe, Americas)
-- Hierarchical navigation: Manufacturers → Cylinders → Models
-- Italian localization and marine engine manufacturers
+### **4. Universal Architecture**
+- Configuration-driven hierarchy levels
+- Virtual level support with orphan adoption
+- Aggregated level support across intermediate collections
+- Metadata-based navigation (JSON configuration)
 
 ## 🛠️ Development Workflow
 
@@ -237,10 +237,10 @@ NEW ARCHITECTURE (9 modules):
 
 ## 🎨 Visual Feature Preview
 
-- **Manufacturer Level**: Blue theme, larger fonts, wide spacing
-- **Family Level**: Purple theme, family grouping indicators  
-- **Engine Level**: Green theme, detailed metadata display
+- **Level 1**: Blue theme, larger fonts, wide spacing
+- **Level 2**: Purple theme, grouping indicators  
+- **Level 3**: Green theme, detailed metadata display
 - **Smooth Transitions**: Zoom-in/zoom-out between levels
 - **Accessibility**: High contrast, reduced motion, large touch targets
 
-The new architecture provides a **solid foundation** for rich, responsive, and accessible mobile catalog navigation with comprehensive engine family support.
+The architecture provides a **solid foundation** for rich, responsive, and accessible mobile catalog navigation with comprehensive hierarchical data support.

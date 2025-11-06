@@ -35,7 +35,7 @@ class MobileCatalogApp {
             // Initialize renderer (includes DOM element setup)
             await this.renderer.initialize();
 
-            // Skip market selection - directly show all manufacturers
+            // Skip top-level selection - directly show all focus items
             this.showAllFocusItems();
 
         // Set up resize handling
@@ -130,7 +130,7 @@ class MobileCatalogApp {
                 this.renderer.elements.mainGroup
             );
 
-            // Handle viewport changes (repositions magnifying ring and updates manufacturers)
+            // Handle viewport changes (repositions magnifying ring and updates focus items)
             this.renderer.handleViewportChange();
 
         } catch (error) {
@@ -167,18 +167,18 @@ class MobileCatalogApp {
     }
 
     showAllFocusItems() {
-        // Hide market selection interface
-        const marketsGroup = this.renderer.elements.marketsGroup;
-        if (marketsGroup) {
-            marketsGroup.classList.add('hidden');
+        // Hide top-level selection interface
+        const topLevelGroup = this.renderer.elements.topLevelGroup;
+        if (topLevelGroup) {
+            topLevelGroup.classList.add('hidden');
         }
 
-        // Get all manufacturers from all markets (currently the focus items are manufacturers)
+        // Get all focus items from the first hierarchy level
         const allFocusItems = this.dataManager.getAllManufacturers();
-        Logger.debug(`Loaded ${allFocusItems.length} focus items from all markets`);
+        Logger.debug(`Loaded ${allFocusItems.length} focus items from all top-level groups`);
 
         if (allFocusItems.length === 0) {
-            Logger.warn('No focus items found in any market');
+            Logger.warn('No focus items found in any top-level group');
             return;
         }
 
@@ -211,7 +211,7 @@ class MobileCatalogApp {
     }
 
     handleRotationEnd(offset) {
-        // Notify renderer that rotation has ended - triggers cylinder display
+        // Notify renderer that rotation has ended - triggers child item display
         this.renderer.onRotationEnd();
 
         // Validate input offset
@@ -237,7 +237,7 @@ class MobileCatalogApp {
         const targetIndex = Math.round(middleIndex - (offset / angleStep));
         const clampedIndex = Math.max(0, Math.min(focusItems.length - 1, targetIndex));
 
-        // Calculate the exact offset needed to center this manufacturer
+        // Calculate the exact offset needed to center this focus item
         const targetOffset = -(clampedIndex - middleIndex) * angleStep;
 
         // Apply rotation limits (match the limits from calculateRotationLimits)
@@ -344,7 +344,7 @@ class MobileCatalogApp {
             return;
         }
         
-        // If we're navigating back from model level, collapse the Detail Sector
+        // If we're navigating back from leaf item level, collapse the Detail Sector
         if (currentLevel === 'model') {
             this.renderer.collapseDetailSector();
         }
@@ -433,112 +433,4 @@ async function initMobileCatalog() {
     }
 }
 
-// Enhanced renderer extensions for Italian multi-line text support
-function extendMobileRenderer() {
-    // Enhanced market creation with multi-line Italian text support
-    MobileRenderer.prototype.createMarketElement = function(market, position) {
-        const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-        g.setAttribute('transform', `translate(${position.x}, ${position.y})`);
-        g.setAttribute('class', 'marketGroup');
-        g.setAttribute('data-market', market);
-
-        // Create multi-line Italian text for markets
-        const textGroup = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-        textGroup.setAttribute('class', 'marketText');
-        textGroup.style.cursor = 'pointer';
-
-        // Define Italian text for each market
-        let textLines = [];
-        if (market === 'eurasia') {
-            textLines = ['MOTORI', "DELL'EURASIA"];
-        } else if (market === 'americhe') {
-            textLines = ['MOTORI', 'DELLE', 'AMERICHE'];
-        } else {
-            textLines = [market.toUpperCase()]; // fallback
-        }
-
-        // Create each line of text
-        const lineHeight = 52;
-        const startY = -(textLines.length - 1) * lineHeight / 2;
-
-        textLines.forEach((line, index) => {
-            const textElement = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-            textElement.setAttribute('x', 0);
-            textElement.setAttribute('y', startY + (index * lineHeight));
-            textElement.setAttribute('text-anchor', 'middle');
-            textElement.setAttribute('dominant-baseline', 'central');
-            textElement.setAttribute('font-family', 'Montserrat, sans-serif');
-            textElement.setAttribute('font-size', '48px');
-            textElement.setAttribute('font-weight', '700');
-            textElement.setAttribute('fill', 'black');
-            textElement.textContent = line;
-            textGroup.appendChild(textElement);
-        });
-
-        g.appendChild(textGroup);
-
-        // Hit area around multi-line text for touch
-        const hitArea = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'rect');
-        hitArea.setAttribute('class', 'marketHitArea');
-        hitArea.setAttribute('x', -100);
-        hitArea.setAttribute('y', market === 'americhe' ? -50 : -35);
-        hitArea.setAttribute('width', 200);
-        hitArea.setAttribute('height', market === 'americhe' ? 100 : 70);
-        hitArea.setAttribute('fill', 'transparent');
-        hitArea.style.cursor = 'pointer';
-        g.appendChild(hitArea);
-
-        // Touch events for mobile
-        hitArea.addEventListener('touchstart', (e) => {
-            e.preventDefault();
-            this.handleMarketSelection(market, g);
-        });
-
-        hitArea.addEventListener('click', (e) => {
-            e.preventDefault();
-            this.handleMarketSelection(market, g);
-        });
-
-        return g;
-    };
-
-    // Enhanced market selection with touch rotation setup
-    MobileRenderer.prototype.handleMarketSelection = function(market, marketElement) {
-        if (this.selectedMarket === market) {
-            Logger.debug('Market already selected:', market);
-            return;
-        }
-
-        Logger.debug('Market selected:', market);
-        this.selectedMarket = market;
-        this.activeType = 'market';
-        this.activePath = [market];
-
-        // Update market visuals
-        this.updateMarketVisuals(marketElement);
-
-        // Update center node
-        this.updateCenterNodeState(true);
-
-        // Add timestamp for testing
-        this.addTimestampToCenter();
-
-        // Get manufacturers for this market
-        this.currentManufacturers = this.dataManager.getManufacturers(market);
-
-        if (this.currentManufacturers.length === 0) {
-            Logger.warn('No manufacturers found for market:', market);
-            return;
-        }
-
-        // Show manufacturer ring and set up rotation
-        this.showManufacturerRing();
-
-        // Set up touch rotation via the app
-        if (mobileCatalogApp) {
-            mobileCatalogApp.setupTouchRotation(this.currentFocusItems);
-        }
-    };
-}
-
-export { MobileCatalogApp, initMobileCatalog, extendMobileRenderer, mobileCatalogApp };
+export { MobileCatalogApp, initMobileCatalog, mobileCatalogApp };

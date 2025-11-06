@@ -27,21 +27,21 @@ class MobileRenderer {
         this.positionCache = new Map();
         
         // State
-        this.selectedMarket = null;
+        this.selectedTopLevel = null;
         this.selectedFocusItem = null;
         this.currentFocusItems = [];
         this.activePath = [];
         this.activeType = null;
         
-        // Settling state for smooth cylinder display
+        // Settling state for smooth child item display
         this.isRotating = false;
         this.settleTimeout = null;
         
         // Sprocket chain viewport state
-        this.allFocusItems = []; // Complete linear chain of all manufacturers
+        this.allFocusItems = []; // Complete linear chain of all focus items
         this.chainPosition = 0; // Current position in the linear chain (0-based)
-        this.visibleStartIndex = 0; // First visible manufacturer index
-        this.visibleEndIndex = 0; // Last visible manufacturer index
+        this.visibleStartIndex = 0; // First visible focus item index
+        this.visibleEndIndex = 0; // Last visible focus item index
     }
     
     async initialize() {
@@ -84,8 +84,8 @@ class MobileRenderer {
     
     async initializeElements() {
         const requiredElements = [
-            'catalogSvg', 'mainGroup', 'centralGroup', 'markets', 
-            'pathLines', 'focusRing', 'models'
+            'catalogSvg', 'mainGroup', 'centralGroup', 'topLevel', 
+            'pathLines', 'focusRing', 'detailItems'
         ];
         
         const optionalElements = [
@@ -102,11 +102,11 @@ class MobileRenderer {
                 const key = id === 'catalogSvg' ? 'svg' : 
                            id === 'mainGroup' ? 'mainGroup' :
                            id === 'centralGroup' ? 'centralGroup' :
-                           id === 'markets' ? 'marketsGroup' :
+                           id === 'topLevel' ? 'topLevelGroup' :
                            id === 'pathLines' ? 'pathLinesGroup' :
                            id === 'focusRing' ? 'focusRingGroup' :
                            id === 'childRing' ? 'childRingGroup' :
-                           id === 'models' ? 'modelsGroup' :
+                           id === 'detailItems' ? 'detailItemsGroup' :
                            id + 'Group';
                 this.elements[key] = element;
             } else {
@@ -189,43 +189,9 @@ class MobileRenderer {
     }
     
     buildActivePath(focusItem) {
-        // Build active path based on the item's hierarchy properties
-        const path = [];
-        const levelNames = this.getHierarchyLevelNames();
-
-        // Add each level's value if it exists on the item
-        for (const levelName of levelNames) {
-            let value = null;
-
-            // Map level names to item properties
-            switch (levelName) {
-                case 'market':
-                    value = focusItem.market;
-                    break;
-                case 'country':
-                    value = focusItem.country;
-                    break;
-            case 'manufacturer':
-                value = focusItem.manufacturer || focusItem.name;
-                break;
-                case 'cylinder':
-                    value = focusItem.cylinderCount ? `${focusItem.cylinderCount} Cylinders` : null;
-                    break;
-                case 'family':
-                    value = focusItem.familyCode || focusItem.name;
-                    break;
-                case 'model':
-                    value = focusItem.engine_model;
-                    break;
-            }
-
-            if (value) {
-                path.push(value);
-            }
-        }
-
-        this.activePath = path;
-        Logger.debug('Built active path:', path);
+        // Pure universal: Use metadata __path property
+        this.activePath = focusItem.__path || [];
+        Logger.debug('Built active path:', this.activePath);
     }
     
     showChildContentForFocusItem(focusItem, angle) {
@@ -238,34 +204,25 @@ class MobileRenderer {
             return;
         }
 
-        // Get the next hierarchy level, skipping empty levels
-        let nextLevel = this.getNextHierarchyLevel(currentLevel);
-        let childItems = [];
-        let itemType = '';
-
-        // Loop through hierarchy levels until we find one with items or reach the end
-        while (nextLevel) {
-            Logger.debug(`Focus item is at level '${currentLevel}', checking '${nextLevel}' items`);
-
-            // Get child items based on the next level type
-            childItems = this.getChildItemsForLevel(focusItem, nextLevel);
-            
-            if (childItems && childItems.length > 0) {
-                // Found items at this level
-                itemType = nextLevel === 'model' ? 'models' : nextLevel === 'family' ? 'families' : nextLevel + 's';
-                Logger.debug(`Found ${childItems.length} ${itemType} for ${currentLevel}: ${focusItem.name}`);
-                break;
-            } else {
-                // No items at this level, try the next one
-                Logger.debug(`No ${nextLevel} items found for ${currentLevel}: ${focusItem.name}, skipping to next level`);
-                nextLevel = this.getNextHierarchyLevel(nextLevel);
-            }
-        }
-
-        if (!nextLevel || !childItems || childItems.length === 0) {
-            Logger.debug('No child items found at any level - this is a leaf node');
+        // Get the immediate next hierarchy level (universal navigation requires immediate children)
+        const nextLevel = this.getNextHierarchyLevel(currentLevel);
+        if (!nextLevel) {
+            Logger.debug('No next level - this is a leaf node');
             return;
         }
+
+        Logger.debug(`Focus item is at level '${currentLevel}', getting '${nextLevel}' items`);
+
+        // Get child items at the immediate next level
+        const childItems = this.getChildItemsForLevel(focusItem, nextLevel);
+        
+        if (!childItems || childItems.length === 0) {
+            Logger.debug(`No ${nextLevel} items found for ${currentLevel}: ${focusItem.name} - this is a leaf node`);
+            return;
+        }
+
+        const itemType = nextLevel === 'model' ? 'models' : nextLevel === 'family' ? 'families' : nextLevel + 's';
+        Logger.debug(`Found ${childItems.length} ${itemType} for ${currentLevel}: ${focusItem.name}`);
 
         // Show child items in Child Pyramid
         this.childPyramid.showChildPyramid(childItems, itemType);
@@ -275,157 +232,9 @@ class MobileRenderer {
      * Get child items for a specific hierarchy level
      */
     getChildItemsForLevel(parentItem, childLevel) {
-        // Use the actual data access methods based on the parent item's level and desired child level
-        const parentLevel = this.getItemHierarchyLevel(parentItem);
-
-        switch (childLevel) {
-            case 'manufacturer':
-                // From market level, get manufacturers
-                if (parentLevel === 'market') {
-                    return this.dataManager.getManufacturers(parentItem.market);
-                }
-                break;
-            case 'cylinder':
-                // From manufacturer level, get cylinders
-                if (parentLevel === 'manufacturer') {
-                    return this.dataManager.getCylinders(parentItem.market, parentItem.country, parentItem.manufacturer || parentItem.name);
-                }
-                break;
-            case 'family':
-                // From cylinder level, get families
-                if (parentLevel === 'cylinder') {
-                    return this.dataManager.getFamilies(parentItem.market, parentItem.country, parentItem.manufacturer || parentItem.name, parentItem.cylinderCount.toString());
-                }
-                break;
-            case 'model':
-                // From cylinder level (no families) or family level, get models
-                if (parentLevel === 'cylinder') {
-                    // Check if we have families first
-                    const families = this.dataManager.getFamilies(parentItem.market, parentItem.country, parentItem.manufacturer, parentItem.cylinderCount.toString());
-                    if (families && families.length > 0) {
-                        // If families exist, we shouldn't get models directly from cylinder
-                        // Instead, the families will be shown first
-                        return [];
-                    } else {
-                        // No families - get models directly
-                        return this.dataManager.getModels(parentItem.market, parentItem.country, parentItem.manufacturer || parentItem.name, parentItem.cylinderCount.toString());
-                    }
-                } else if (parentLevel === 'family') {
-                    // From family level, get models for that family
-                    return this.dataManager.getModelsByFamily(parentItem.market, parentItem.country, parentItem.manufacturer, parentItem.cylinderCount.toString(), parentItem.familyCode);
-                }
-                break;
-        }
-
-        Logger.warn(`Cannot get ${childLevel} items for ${parentLevel} parent:`, parentItem);
-        return [];
-    }
-    
-    renderMarkets() {
-        const marketsGroup = this.elements.marketsGroup;
-        marketsGroup.innerHTML = '';
-        
-        const markets = this.dataManager.getMarkets();
-        if (markets.length === 0) {
-            Logger.warn('No markets found to render');
-            return;
-        }
-        
-        const positions = this.viewport.getMarketPositions();
-        
-        markets.forEach((market, index) => {
-            if (index >= positions.length) {
-                Logger.warn(`No position defined for market ${index}: ${market}`);
-                return;
-            }
-            
-            const position = positions[index];
-            const marketGroup = this.createMarketElement(market, position);
-            marketsGroup.appendChild(marketGroup);
-        });
-        
-        Logger.debug('Markets rendered:', markets.length);
-    }
-    
-    createMarketElement(market, position) {
-        const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-        g.setAttribute('transform', `translate(${position.x}, ${position.y})`);
-        g.setAttribute('class', 'marketGroup');
-        
-        // Market text with configurable formatting
-        const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        text.setAttribute('class', 'marketText');
-        text.setAttribute('text-anchor', 'middle');
-        text.setAttribute('dy', '0.35em');
-        text.textContent = this.formatText(market, 'market');
-        g.appendChild(text);
-        
-        // Hit area
-        const hitArea = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
-        hitArea.setAttribute('class', 'marketHitArea');
-        hitArea.setAttribute('cx', '0');
-        hitArea.setAttribute('cy', '0');
-        hitArea.setAttribute('r', '60');
-        hitArea.setAttribute('fill', 'transparent');
-        hitArea.style.cursor = 'pointer';
-        g.appendChild(hitArea);
-        
-        // Event handling
-        hitArea.addEventListener('click', () => this.handleMarketSelection(market, g));
-        
-        return g;
-    }
-    
-    handleMarketSelection(market, marketElement) {
-        if (this.selectedMarket === market) {
-            Logger.debug('Market already selected:', market);
-            return;
-        }
-
-        Logger.debug('Market selected:', market);
-        this.selectedMarket = market;
-        this.activeType = 'market';
-        this.activePath = [market];
-
-        // Update market visuals
-        this.updateMarketVisuals(marketElement);
-
-        // Update center node
-        this.updateCenterNodeState(true);
-
-        // Add timestamp for testing
-        this.addTimestampToCenter();
-
-        // Get child items for the first hierarchy level (typically countries)
-        const firstLevel = this.getHierarchyLevelNames()[0];
-        const nextLevel = this.getNextHierarchyLevel(firstLevel);
-        if (nextLevel) {
-            this.currentFocusItems = this.getChildItemsForLevel({ market }, nextLevel);
-        } else {
-            this.currentFocusItems = [];
-        }
-
-        if (this.currentFocusItems.length === 0) {
-            Logger.warn('No focus items found for market:', market);
-            return;
-        }
-
-        // Show focus ring and set up rotation
-        this.showFocusRing();
-    }
-    
-    updateMarketVisuals(selectedElement) {
-        const marketGroups = document.querySelectorAll('.marketGroup');
-        
-        marketGroups.forEach(group => {
-            if (group === selectedElement) {
-                group.classList.add('active');
-                group.classList.remove('inactive');
-            } else {
-                group.classList.add('inactive');
-                group.classList.remove('active');
-            }
-        });
+        // Pure universal: Use DataManager's universal navigation method
+        const childLevelName = childLevel;
+        return this.dataManager.getItemsAtLevel(parentItem, childLevelName) || [];
     }
     
     updateCenterNodeState(inactive) {
@@ -448,7 +257,7 @@ class MobileRenderer {
         // Initialize viewport filtering state
         this.allFocusItems = this.currentFocusItems; // Set the complete list for filtering
         
-        Logger.debug(`Viewport filtering initialized: ${this.allFocusItems.length} total manufacturers`);
+        Logger.debug(`Viewport filtering initialized: ${this.allFocusItems.length} total focus items`);
         
         // Calculate initial rotation to center nearest focus item (original logic)
         const initialOffset = this.calculateInitialRotationOffset();
@@ -478,7 +287,7 @@ class MobileRenderer {
         
         // Calculate offset needed to center this focus item
         // When rotationOffset = 0: focus item at index i has angle: centerAngle + (i - middleIndex) * angleStep
-        // To center manufacturer at targetIndex: angle should be centerAngle
+        // To center focus item at targetIndex: angle should be centerAngle
         // So: centerAngle + offset + (targetIndex - middleIndex) * angleStep = centerAngle
         // Therefore: offset = -(targetIndex - middleIndex) * angleStep
         const offset = -(targetIndex - middleIndex) * angleStep;
@@ -520,7 +329,7 @@ class MobileRenderer {
         let selectedFocusItem = null;
         let selectedIndex = -1;
         
-        // Process all manufacturers but only render those in viewport window
+        // Process all focus items but only render those in viewport window
         allFocusItems.forEach((focusItem, index) => {
             // Calculate angle using original logic
             const angle = adjustedCenterAngle + (index - (allFocusItems.length - 1) / 2) * angleStep;
@@ -531,12 +340,12 @@ class MobileRenderer {
                 return;
             }
             
-            // Check if this manufacturer should be visible (viewport filter)
+            // Check if this focus item should be visible (viewport filter)
             const angleDiff = Math.abs(angle - centerAngle);
             const maxViewportAngle = MOBILE_CONFIG.VIEWPORT.VIEWPORT_ARC / 2;
             
             if (angleDiff <= maxViewportAngle) {
-                // This manufacturer is in the viewport - render it
+                // This focus item is in the viewport - render it
                 const position = this.calculateFocusPosition(angle, arcParams);
                 
                 // Check if selected (centered) - should match snapping range
@@ -570,7 +379,7 @@ class MobileRenderer {
                 clearTimeout(this.settleTimeout);
             }            // Hide child ring immediately during rotation to prevent strobing
             this.elements.childRingGroup.classList.add('hidden');
-            this.elements.modelsGroup.classList.add('hidden');
+            this.elements.detailItemsGroup.classList.add('hidden');
             this.clearFanLines();
             
             // Update Parent Button to show the parent level name
@@ -586,12 +395,12 @@ class MobileRenderer {
                     Logger.debug('Focus item settled:', selectedFocusItem.name, 'showing child content');
                     this.showChildContentForFocusItem(selectedFocusItem, angle);
                 }
-            }, MOBILE_CONFIG.TIMING.CYLINDER_SETTLE_DELAY);
+            }, MOBILE_CONFIG.TIMING.FOCUS_ITEM_SETTLE_DELAY);
             
         } else if (this.selectedFocusItem) {
             // Hide child ring when no focus item is selected
             this.elements.childRingGroup.classList.add('hidden');
-            this.elements.modelsGroup.classList.add('hidden');
+            this.elements.detailItemsGroup.classList.add('hidden');
             this.clearFanLines();
             this.selectedFocusItem = null;
             this.hideParentButton();
@@ -653,9 +462,9 @@ class MobileRenderer {
         return position;
     }
     
-    createFocusElement(manufacturer, position, angle, isSelected = false) {
+    createFocusElement(focusItem, position, angle, isSelected = false) {
         const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-        g.classList.add('manufacturer');
+        g.classList.add('focusItem');
         g.setAttribute('transform', `translate(${position.x}, ${position.y})`);
         
         const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
@@ -663,7 +472,7 @@ class MobileRenderer {
         circle.setAttribute('cx', '0');
         circle.setAttribute('cy', '0');
         circle.setAttribute('r', isSelected ? MOBILE_CONFIG.RADIUS.MAGNIFIED : MOBILE_CONFIG.RADIUS.UNSELECTED);
-        circle.setAttribute('fill', this.getColor('manufacturer', manufacturer.name));
+        circle.setAttribute('fill', this.getColor('focusItem', focusItem.name));
         
         if (isSelected) {
             g.classList.add('selected');
@@ -674,7 +483,7 @@ class MobileRenderer {
         g.appendChild(circle);
         
         const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        this.updateManufacturerText(text, angle, manufacturer.name, isSelected);
+        this.updateFocusItemText(text, angle, focusItem, isSelected);
         g.appendChild(text);
         
         return g;
@@ -703,47 +512,50 @@ class MobileRenderer {
         // Apply selected class based on selection state
         if (isSelected) {
             element.classList.add('selected');
-            Logger.debug(`Applied selected class to manufacturer: ${element.querySelector('text')?.textContent}`);
+            Logger.debug(`Applied selected class to focus item: ${element.querySelector('text')?.textContent}`);
         } else {
             element.classList.remove('selected');
         }
         
         if (text) {
-            this.updateManufacturerText(text, angle, text.textContent, isSelected);
+            this.updateFocusItemText(text, angle, { name: text.textContent, __level: 'focusItem' }, isSelected);
         }
     }
     
-    updateManufacturerText(textElement, angle, content, isSelected = false) {
+    updateFocusItemText(textElement, angle, item, isSelected = false) {
         // Validate angle to prevent NaN errors
         if (isNaN(angle)) {
             Logger.error(`Invalid text angle: ${angle}`);
             return;
         }
         
-        // Check if this is a cylinder for special centering logic
-        const isCylinder = content.match(/^(\d+) Cylinders?$/);
+        // Get configuration for this item's level (pure universal)
+        const itemLevel = item.__level || 'focusItem';
+        const levelConfig = this.dataManager.getHierarchyLevelConfig(itemLevel);
+        const textPosition = levelConfig?.focus_text_position || 'radial';
+        const textTransform = levelConfig?.focus_text_transform || 'none';
         
         let textX, textY, textAnchor;
         
-        if (isCylinder) {
-            // Center cylinder text over the node
+        if (textPosition === 'centered') {
+            // Center text over the node
             textX = 0;
             textY = 0;
             textAnchor = 'middle';
         } else {
-            // Standard positioning for other items
+            // Standard radial positioning for other items
             const radius = MOBILE_CONFIG.RADIUS.UNSELECTED;
             let offset = -(radius + 5);
             
-            // For selected manufacturers, shift text further outward (40px more to the right)
+            // For selected items, shift text further outward
             if (isSelected) {
-                offset = -(radius + 50); // Move text 40px more outward from the current 10px offset
+                offset = -(radius + 50);
             }
             
             textX = offset * Math.cos(angle);
             textY = offset * Math.sin(angle);
             
-            // For selected manufacturers, use 'end' anchor so text block ends near the node
+            // For selected items, use 'end' anchor so text block ends near the node
             if (isSelected) {
                 textAnchor = 'end';
             } else {
@@ -771,20 +583,17 @@ class MobileRenderer {
         textElement.setAttribute('fill', 'black');
         
         // Let CSS handle font sizing and weight through the 'selected' class
-        // Remove any inline font styles to allow CSS to take precedence
         textElement.removeAttribute('font-size');
         textElement.removeAttribute('font-weight');
         
-        // Special formatting for cylinders in Focus Ring
-        let displayText = content;
-        if (isCylinder) {
-            const cylinderNumber = isCylinder[1];
-            if (isSelected) {
-                // Selected cylinder (in magnifier): show "X CIL"
-                displayText = `${cylinderNumber} CIL`;
-            } else {
-                // Non-selected cylinders: show just the number
-                displayText = cylinderNumber;
+        // Apply text transformation based on configuration (pure universal)
+        let displayText = item.name;
+        if (textTransform === 'number_only_or_cil') {
+            // Extract numeric part and optionally append CIL when selected
+            const match = item.name.match(/^(\d+)/);
+            if (match) {
+                const number = match[1];
+                displayText = isSelected ? `${number} CIL` : number;
             }
         }
         
@@ -847,51 +656,8 @@ class MobileRenderer {
      * Determine what hierarchy level an item belongs to based on its properties
      */
     getItemHierarchyLevel(item) {
-        const levels = this.getHierarchyLevels();
-        const levelNames = this.getHierarchyLevelNames();
-        
-        // Check levels from most specific to least specific to ensure correct matching
-        // Reverse the order: model, family, cylinder, manufacturer, country, market
-        const reversedLevelNames = [...levelNames].reverse();
-        
-        for (const levelName of reversedLevelNames) {
-            if (this.itemMatchesLevel(item, levelName)) {
-                return levelName;
-            }
-        }
-        
-        Logger.warn('Could not determine hierarchy level for item:', item);
-        return null;
-    }
-
-    /**
-     * Check if an item matches a specific hierarchy level
-     */
-    itemMatchesLevel(item, levelName) {
-        // More precise level detection based on the defining characteristics of each level
-        switch (levelName) {
-            case 'market':
-                // Market level: has market, no country
-                return item.market && !item.country;
-            case 'country':
-                // Country level: has market + country, no manufacturer/name
-                return item.market && item.country && !item.manufacturer && !item.name;
-            case 'manufacturer':
-                // Manufacturer level: has market + country + (manufacturer or name), no cylinderCount, no cylinder string
-                return item.market && item.country && (item.manufacturer || item.name) && item.cylinderCount === undefined && item.cylinder === undefined;
-            case 'cylinder':
-                // Cylinder level: has cylinderCount (number), no cylinder string, no familyCode
-                return item.cylinderCount !== undefined && item.cylinder === undefined && !item.familyCode;
-            case 'family':
-                // Family level: has familyCode
-                return item.familyCode !== undefined;
-            case 'model':
-                // Model level: has cylinder (string) - this is the distinguishing feature
-                // Models have 'cylinder' (string) not 'cylinderCount' (number)
-                return item.cylinder !== undefined;
-            default:
-                return false;
-        }
+        // Pure universal: Use metadata __level property
+        return item.__level || null;
     }
 
     /**
@@ -919,13 +685,13 @@ class MobileRenderer {
     }
     
     reset() {
-        this.selectedMarket = null;
-        this.selectedManufacturer = null;
+        this.selectedTopLevel = null;
+        this.selectedFocusItem = null;
         this.hideParentButton();
         this.currentFocusItems = [];
         this.activePath = [];
         this.activeType = null;
-        this.manufacturerElements.clear();
+        this.focusItemElements.clear();
         this.positionCache.clear();
         
         // Collapse Detail Sector
@@ -934,12 +700,12 @@ class MobileRenderer {
         // Hide rings
         this.elements.focusRingGroup.classList.add('hidden');
         this.elements.childRingGroup.classList.add('hidden');
-        this.elements.modelsGroup.classList.add('hidden');
+        this.elements.detailItemsGroup.classList.add('hidden');
         this.clearFanLines();
         
-        // Reset market visuals
-        const marketGroups = document.querySelectorAll('.marketGroup');
-        marketGroups.forEach(group => {
+        // Reset top level visuals
+        const levelGroups = document.querySelectorAll('.levelGroup');
+        levelGroups.forEach(group => {
             group.classList.remove('active', 'inactive');
         });
         
@@ -955,412 +721,8 @@ class MobileRenderer {
         Logger.debug('Renderer reset');
     }
     
-    showCylinderRing(market, country, manufacturer, manufacturerAngle) {
-        Logger.debug('Showing cylinder ring for', manufacturer);
-        
-        // Get cylinders for this manufacturer
-        const cylinders = this.dataManager.getCylinders(market, country, manufacturer);
-        
-        if (cylinders.length === 0) {
-            Logger.warn('No cylinders found for', manufacturer);
-            return;
-        }
-        
-        // Use Child Pyramid for cylinders
-        this.childPyramid.showChildPyramid(cylinders, 'cylinders');
-    }
-    
-    renderFanLines(manufacturerAngle, cylinderStartAngle, cylinderCount, angleStep) {
-        // Clear existing fan lines
-        this.elements.pathLinesGroup.innerHTML = '';
-        
-        if (cylinderCount === 0) return;
-        
-        // Get arc parameters for positioning calculations
-        const arcParams = this.viewport.getArcParameters();
-        
-        // Calculate manufacturer position (on manufacturer ring)
-        const manufacturerRadius = arcParams.radius; // Manufacturer ring radius
-        const manufacturerNodeRadius = MOBILE_CONFIG.RADIUS.MAGNIFIED; // 22px
-        
-        // Calculate cylinder ring radius (85% of manufacturer radius - matches actual positioning)
-        const cylinderRadius = manufacturerRadius * 0.85;
-        const cylinderNodeRadius = MOBILE_CONFIG.RADIUS.CHILD_NODE; // 10px
-        
-        // Draw lines from magnifier edge to child edge (fanning outward from magnifier)
-        for (let i = 0; i < cylinderCount; i++) {
-            const cylinderAngle = cylinderStartAngle + i * angleStep;
-            
-            // Calculate manufacturer position and edge point toward cylinder
-            const manufacturerCenterX = arcParams.centerX + manufacturerRadius * Math.cos(manufacturerAngle);
-            const manufacturerCenterY = arcParams.centerY + manufacturerRadius * Math.sin(manufacturerAngle);
-            
-            // Calculate cylinder position and edge point toward manufacturer
-            const cylinderCenterX = arcParams.centerX + cylinderRadius * Math.cos(cylinderAngle);
-            const cylinderCenterY = arcParams.centerY + cylinderRadius * Math.sin(cylinderAngle);
-            
-            // Calculate direction from manufacturer to cylinder
-            const dx = cylinderCenterX - manufacturerCenterX;
-            const dy = cylinderCenterY - manufacturerCenterY;
-            const distance = Math.sqrt(dx * dx + dy * dy);
-            
-            if (distance === 0) continue; // Skip if positions are identical
-            
-            // Normalize direction vector
-            const dirX = dx / distance;
-            const dirY = dy / distance;
-            
-                        // Calculate start point (magnifier edge toward child)
-            const startX = manufacturerCenterX + dirX * manufacturerNodeRadius;
-            const startY = manufacturerCenterY + dirY * manufacturerNodeRadius;
-            
-            // Calculate end point (child edge toward magnifier)
-            const endX = cylinderCenterX - dirX * cylinderNodeRadius;
-            const endY = cylinderCenterY - dirY * cylinderNodeRadius;
-            
-            // Create line element
-            const line = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'line');
-            line.setAttribute('x1', startX);
-            line.setAttribute('y1', startY);
-            line.setAttribute('x2', endX);
-            line.setAttribute('y2', endY);
-            line.setAttribute('stroke', 'black');
-            line.setAttribute('stroke-width', '1');
-            line.setAttribute('opacity', '0.6');
-            
-            this.elements.pathLinesGroup.appendChild(line);
-        }
-        
-        Logger.debug(`Rendered ${cylinderCount} fan lines from manufacturer at ${manufacturerAngle * 180 / Math.PI}°`);
-    }
-    
     clearFanLines() {
         this.elements.pathLinesGroup.innerHTML = '';
-    }
-    
-    createCylinderElement(cylinder, angle) {
-        const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-        g.setAttribute('class', 'cylinder');
-        g.setAttribute('data-cylinder', cylinder.name);
-        g.setAttribute('data-key', cylinder.key);
-        
-        // Calculate position on cylinder ring (85% of manufacturer ring radius)
-        const arcParams = this.viewport.getArcParameters();
-        const manufacturerRadius = arcParams.radius;
-        const radius = manufacturerRadius * 0.85;  // 85% of manufacturer ring radius for optimal visibility
-        const x = arcParams.centerX + radius * Math.cos(angle);
-        const y = arcParams.centerY + radius * Math.sin(angle);
-        
-        Logger.debug('Cylinder positioning - manufacturerRadius:', manufacturerRadius, 'cylinderRadius:', radius, 'x:', x, 'y:', y, 'angle:', angle * 180 / Math.PI, '°');
-        g.setAttribute('transform', `translate(${x}, ${y})`);
-        
-        // Create circle node
-        const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
-        circle.setAttribute('r', MOBILE_CONFIG.RADIUS.UNSELECTED);
-        circle.setAttribute('fill', this.getColorForType('cylinder'));
-        circle.setAttribute('stroke', 'black');
-        circle.setAttribute('stroke-width', '1');
-        
-        g.appendChild(circle);
-        
-        // Create text label
-        const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        this.updateCylinderText(text, angle, cylinder.name);
-        g.appendChild(text);
-        
-        // Add click handler
-        g.style.cursor = 'pointer';
-        g.addEventListener('click', (e) => {
-            e.stopPropagation();
-            this.handleCylinderSelection(cylinder);
-        });
-        
-        // Debug: Log the final element attributes
-        Logger.debug('Created cylinder element:');
-        Logger.debug('- Transform:', g.getAttribute('transform'));
-        Logger.debug('- Circle radius:', circle.getAttribute('r'));
-        Logger.debug('- Circle fill:', circle.getAttribute('fill'));
-        Logger.debug('- Circle position: relative to transform');
-        
-        return g;
-    }
-    
-    updateCylinderText(textElement, angle, content) {
-        const radius = MOBILE_CONFIG.RADIUS.CYLINDER_NODE;
-        const offset = -(radius + 3);
-        
-        // Position text at center of node (0, 0) for centered alignment
-        const textX = 0;
-        const textY = 0;
-        let rotation = angle * 180 / Math.PI;
-        
-        // Center the text regardless of angle
-        let textAnchor = 'middle';
-        
-        if (Math.cos(angle) < 0) {
-            rotation += 180;
-        }
-        
-        textElement.setAttribute('x', textX);
-        textElement.setAttribute('y', textY);
-        textElement.setAttribute('dy', '0.3em');
-        textElement.setAttribute('text-anchor', textAnchor);
-        textElement.setAttribute('transform', `rotate(${rotation}, ${textX}, ${textY})`);
-        textElement.setAttribute('fill', 'black');
-        textElement.setAttribute('font-size', '18px');
-        textElement.textContent = content;
-    }
-    
-    handleCylinderSelection(cylinder) {
-        Logger.debug('Cylinder selected:', cylinder.name);
-        
-        // Update active path
-        this.activePath = [cylinder.market, cylinder.country, cylinder.manufacturer, cylinder.name];
-        this.activeType = 'cylinder';
-        
-        // Show models for this cylinder
-        this.showModelRing(cylinder.market, cylinder.country, cylinder.manufacturer, cylinder.name);
-        
-        // Update visual states
-        this.updateCylinderVisuals(cylinder.key);
-        
-        // Render path lines
-        this.renderPathLines();
-    }
-    
-    updateCylinderVisuals(selectedKey) {
-        const cylinders = this.elements.childRingGroup.querySelectorAll('.cylinder');
-        
-        cylinders.forEach(cylinder => {
-            const key = cylinder.getAttribute('data-key');
-            const circle = cylinder.querySelector('circle');
-            
-            if (key === selectedKey) {
-                circle.setAttribute('r', MOBILE_CONFIG.RADIUS.CYLINDER_NODE + 2);
-                circle.setAttribute('stroke-width', '2');
-                cylinder.classList.add('selected');
-            } else {
-                circle.setAttribute('r', MOBILE_CONFIG.RADIUS.CYLINDER_NODE);
-                circle.setAttribute('stroke-width', '1');
-                cylinder.classList.remove('selected');
-            }
-        });
-    }
-    
-    renderPathLines() {
-        // Clear existing path lines
-        this.elements.pathLinesGroup.innerHTML = '';
-        
-        if (this.activePath.length < 3) return; // Need at least market/country/manufacturer
-        
-        let prevX, prevY;
-        
-        // Get manufacturer position (selected manufacturer)
-        if (this.selectedManufacturer && this.activePath.length >= 3) {
-            const selectedElement = this.manufacturerElements.get(this.selectedManufacturer.key);
-            if (selectedElement) {
-                const transform = selectedElement.getAttribute('transform');
-                const match = transform.match(/translate\(([^,]+),\s*([^)]+)\)/);
-                if (match) {
-                    prevX = parseFloat(match[1]);
-                    prevY = parseFloat(match[2]);
-                }
-            }
-        }
-        
-        // Draw lines from focus item to child ring items
-        if (this.activePath.length >= 4 && prevX !== undefined && prevY !== undefined) {
-            const cylinders = this.elements.childRingGroup.querySelectorAll('.cylinder');
-            
-            cylinders.forEach(cylinderElement => {
-                const transform = cylinderElement.getAttribute('transform');
-                const match = transform.match(/translate\(([^,]+),\s*([^)]+)\)/);
-                if (match) {
-                    const cylX = parseFloat(match[1]);
-                    const cylY = parseFloat(match[2]);
-                    
-                    this.createPathLine(prevX, prevY, cylX, cylY, 'manufacturer-cylinder');
-                }
-            });
-        }
-        
-        // Draw lines from selected child ring item to its models
-        if (this.activePath.length >= 5) {
-            const selectedCylinder = this.elements.childRingGroup.querySelector('.cylinder.selected');
-            if (selectedCylinder) {
-                const transform = selectedCylinder.getAttribute('transform');
-                const match = transform.match(/translate\(([^,]+),\s*([^)]+)\)/);
-                if (match) {
-                    const cylX = parseFloat(match[1]);
-                    const cylY = parseFloat(match[2]);
-                    
-                    const models = this.elements.modelsGroup.querySelectorAll('.model');
-                    models.forEach(modelElement => {
-                        const modelTransform = modelElement.getAttribute('transform');
-                        const modelMatch = modelTransform.match(/translate\(([^,]+),\s*([^)]+)\)/);
-                        if (modelMatch) {
-                            const modelX = parseFloat(modelMatch[1]);
-                            const modelY = parseFloat(modelMatch[2]);
-                            
-                            this.createPathLine(cylX, cylY, modelX, modelY, 'cylinder-model');
-                        }
-                    });
-                }
-            }
-        }
-    }
-    
-    createPathLine(x1, y1, x2, y2, lineClass) {
-        const line = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'line');
-        line.setAttribute('x1', x1.toString());
-        line.setAttribute('y1', y1.toString());
-        line.setAttribute('x2', x2.toString());
-        line.setAttribute('y2', y2.toString());
-        line.setAttribute('stroke', 'black');
-        line.setAttribute('stroke-width', '1');
-        line.setAttribute('opacity', '0.6');
-        line.setAttribute('class', lineClass);
-        
-        this.elements.pathLinesGroup.appendChild(line);
-    }
-    
-    showModelRing(market, country, manufacturer, cylinder) {
-        Logger.debug('Showing model ring for cylinder', cylinder);
-        
-        // Get models for this cylinder
-        const models = this.dataManager.getModels(market, country, manufacturer, cylinder);
-        
-        if (models.length === 0) {
-            Logger.warn('No models found for cylinder', cylinder);
-            return;
-        }
-        
-        // Clear existing models
-        this.elements.modelsGroup.innerHTML = '';
-        this.elements.modelsGroup.classList.remove('hidden');
-        
-        // Find the selected child ring item's angle
-        const selectedCylinder = this.elements.childRingGroup.querySelector('.cylinder.selected');
-        let cylinderAngle = 0;
-        
-        if (selectedCylinder) {
-            const cylinderKey = selectedCylinder.getAttribute('data-key');
-            // Extract angle from transform or calculate from position
-            const transform = selectedCylinder.getAttribute('transform');
-            const match = transform.match(/translate\(([^,]+),\s*([^)]+)\)/);
-            if (match) {
-                const x = parseFloat(match[1]);
-                const y = parseFloat(match[2]);
-                cylinderAngle = Math.atan2(y, x);
-            }
-        }
-        
-        // Calculate model positions around the cylinder angle
-        const angleStep = MOBILE_CONFIG.ANGLES.MODEL_SPREAD;
-        const startAngle = cylinderAngle - (models.length - 1) * angleStep / 2;
-        
-        models.forEach((model, index) => {
-            const angle = startAngle + index * angleStep;
-            const modelElement = this.createModelElement(model, angle);
-            this.elements.modelsGroup.appendChild(modelElement);
-        });
-    }
-    
-    createModelElement(model, angle) {
-        const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-        g.setAttribute('class', 'model');
-        g.setAttribute('data-model', model.name);
-        g.setAttribute('data-key', model.key);
-        
-        // Calculate position on model ring (15% of manufacturer ring radius - innermost ring)
-        const arcParams = this.viewport.getArcParameters();
-        const manufacturerRadius = arcParams.radius;
-        const radius = manufacturerRadius * 0.15;  // Very small innermost ring, guaranteed within viewport
-        const x = arcParams.centerX + radius * Math.cos(angle);
-        const y = arcParams.centerY + radius * Math.sin(angle);
-        
-        g.setAttribute('transform', `translate(${x}, ${y})`);
-        
-        // Create circle node
-        const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
-        circle.setAttribute('r', MOBILE_CONFIG.RADIUS.UNSELECTED);
-        circle.setAttribute('fill', this.getColorForType('model'));
-        circle.setAttribute('stroke', 'black');
-        circle.setAttribute('stroke-width', '1');
-        
-        g.appendChild(circle);
-        
-        // Create text label
-        const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        this.updateModelText(text, angle, model.name);
-        g.appendChild(text);
-        
-        // Add click handler
-        g.style.cursor = 'pointer';
-        g.addEventListener('click', (e) => {
-            e.stopPropagation();
-            this.handleModelSelection(model);
-        });
-        
-        return g;
-    }
-    
-    updateModelText(textElement, angle, content) {
-        const radius = MOBILE_CONFIG.RADIUS.MODEL_NODE;
-        const offset = -(radius + 2);
-        const textX = offset * Math.cos(angle);
-        const textY = offset * Math.sin(angle);
-        let rotation = angle * 180 / Math.PI;
-        let textAnchor = Math.cos(angle) >= 0 ? 'start' : 'end';
-        
-        if (Math.cos(angle) < 0) {
-            rotation += 180;
-        }
-        
-        textElement.setAttribute('x', textX);
-        textElement.setAttribute('y', textY);
-        textElement.setAttribute('dy', '0.3em');
-        textElement.setAttribute('text-anchor', textAnchor);
-        textElement.setAttribute('transform', `rotate(${rotation}, ${textX}, ${textY})`);
-        textElement.setAttribute('fill', 'black');
-        textElement.setAttribute('font-size', '15px');
-        textElement.textContent = content;
-    }
-    
-    handleModelSelection(model) {
-        Logger.debug('Model selected:', model.name);
-        
-        // Update active path
-        this.activePath = [model.market, model.country, model.manufacturer, model.cylinder, model.name];
-        this.activeType = 'model';
-        
-        // Update visual states
-        this.updateModelVisuals(model.key);
-        
-        // Render path lines
-        this.renderPathLines();
-        
-        // Could trigger model details display here
-        Logger.debug('Model data:', model.data);
-    }
-    
-    updateModelVisuals(selectedKey) {
-        const models = this.elements.modelsGroup.querySelectorAll('.model');
-        
-        models.forEach(model => {
-            const key = model.getAttribute('data-key');
-            const circle = model.querySelector('circle');
-            
-            if (key === selectedKey) {
-                circle.setAttribute('r', MOBILE_CONFIG.RADIUS.SELECTED);
-                circle.setAttribute('stroke-width', '2');
-                model.classList.add('selected');
-            } else {
-                circle.setAttribute('r', MOBILE_CONFIG.RADIUS.UNSELECTED);
-                circle.setAttribute('stroke-width', '1');
-                model.classList.remove('selected');
-            }
-        });
     }
     
     updateParentButton(parentName) {
@@ -1407,26 +769,14 @@ class MobileRenderer {
         this.selectedFocusItem = { ...item };
 
         // 2. Get all siblings at the same level and move them to Focus Ring
-        let parentItem;
-        let parentLevel;
-        if (itemLevel === 'cylinder') {
-            // For cylinders, get the manufacturer from the active path
-            parentItem = {
-                market: item.market,
-                country: item.country,
-                manufacturer: this.activePath[2] // manufacturer is at index 2 in [market, country, manufacturer, ...]
-            };
-            parentLevel = 'manufacturer';
-        } else {
-            parentLevel = this.getPreviousHierarchyLevel(itemLevel);
-            parentItem = this.buildParentItemFromChild(item, parentLevel);
-        }
+        const parentLevel = this.getPreviousHierarchyLevel(itemLevel);
+        const parentItem = this.buildParentItemFromChild(item, parentLevel);
         const allSiblings = this.getChildItemsForLevel(parentItem, itemLevel);
 
         this.currentFocusItems = allSiblings;
         this.allFocusItems = allSiblings;
 
-        // 3. Clear current Child Pyramid immediately to remove cylinder nodes
+        // 3. Clear current Child Pyramid immediately to remove child item nodes
         this.elements.childRingGroup.innerHTML = '';
         this.elements.childRingGroup.classList.add('hidden');
 
@@ -1452,7 +802,7 @@ class MobileRenderer {
 
         Logger.debug(`🔺 Focus Ring updated with ${allSiblings.length} ${itemLevel}s, selected:`, item.name);
 
-        // 8. If a model was selected, expand the blue circle to create the Detail Sector
+        // 8. If a leaf item was selected, expand the blue circle to create the Detail Sector
         if (itemLevel === 'model') {
             this.expandDetailSector();
         } else {
@@ -1464,7 +814,7 @@ class MobileRenderer {
         this.updateParentButton(parentName);
 
         // 7. Get children for the next level and show in Child Pyramid
-        // Skip this for models since they show the Detail Sector instead
+        // Skip this for leaf items since they show the Detail Sector instead
         if (itemLevel !== 'model') {
             const nextLevel = this.getNextHierarchyLevel(itemLevel);
             if (nextLevel) {
@@ -1476,16 +826,17 @@ class MobileRenderer {
                         this.childPyramid.showChildPyramid(childItems, itemType);
                         Logger.debug(`🔺 Showing ${childItems.length} ${itemType} in Child Pyramid for ${itemLevel}:`, item.name);
                     } else {
-                        Logger.warn(`🔺 No ${nextLevel}s found for ${itemLevel}:`, item.name);
+                        const itemTypePlural = nextLevel === 'family' ? 'families' : nextLevel + 's';
+                        Logger.warn(`🔺 No ${itemTypePlural} found for ${itemLevel}:`, item.name);
                     }
                 }, 300);
             }
         } else {
-            // For models, hide the Child Pyramid since Detail Sector is shown
+            // For leaf items, hide the Child Pyramid since Detail Sector is shown
             setTimeout(() => {
                 this.elements.childRingGroup.innerHTML = '';
                 this.elements.childRingGroup.classList.add('hidden');
-                Logger.debug('🔺 Detail Sector shown - Child Pyramid hidden for model:', item.name);
+                Logger.debug('🔺 Detail Sector shown - Child Pyramid hidden for leaf item:', item.name);
             }, 300);
         }
 
@@ -1496,61 +847,63 @@ class MobileRenderer {
      * Get the display name for a parent level
      */
     getParentNameForLevel(item, parentLevel) {
-        switch (parentLevel) {
-            case 'market':
-                return item.market;
-            case 'country':
-                return item.country;
-            case 'manufacturer':
-                return item.manufacturer || item.name;
-            case 'cylinder':
-                // Models have 'cylinder' (string), cylinders have 'cylinderCount' (number)
-                if (item.cylinder !== undefined) {
-                    return `${item.cylinder} Cylinders`;
-                } else if (item.cylinderCount !== undefined) {
-                    return `${item.cylinderCount} Cylinders`;
-                }
-                return 'Cylinders';
-            case 'family':
-                return item.familyCode;
-            default:
-                return parentLevel;
+        if (!item.__path || item.__path.length === 0) {
+            return parentLevel;
         }
+        const levelNames = this.getHierarchyLevelNames();
+        const parentIndex = levelNames.indexOf(parentLevel);
+        return item.__path[parentIndex] || parentLevel;
     }
 
     /**
      * Build a parent item from a child item for navigation purposes
      */
     buildParentItemFromChild(childItem, parentLevel) {
-        const parentItem = {};
+        if (!childItem.__path) {
+            Logger.warn('buildParentItemFromChild: Child item missing __path metadata');
+            return {};
+        }
 
-        // Copy all properties up to the parent level
         const levelNames = this.getHierarchyLevelNames();
         const parentIndex = levelNames.indexOf(parentLevel);
+        if (parentIndex === -1) {
+            Logger.warn(`buildParentItemFromChild: Unknown parent level "${parentLevel}"`);
+            return {};
+        }
 
+        // Build parent item from the path slice up to parentLevel
+        const parentItem = {
+            __level: parentLevel,
+            __levelDepth: parentIndex,
+            __path: childItem.__path.slice(0, parentIndex + 1),
+            __isLeaf: false
+        };
+
+        // Reconstruct actual data properties from __path for legacy method compatibility
+        // TODO: Remove this once getItemsAtLevel is refactored to use only metadata
         for (let i = 0; i <= parentIndex; i++) {
             const levelName = levelNames[i];
-            switch (levelName) {
-                case 'market':
-                    parentItem.market = childItem.market;
-                    break;
-                case 'country':
-                    parentItem.country = childItem.country;
-                    break;
-                case 'manufacturer':
-                    parentItem.manufacturer = childItem.manufacturer || childItem.name;
-                    break;
-                case 'cylinder':
-                    // Models have 'cylinder' (string), cylinders have 'cylinderCount' (number)
-                    if (childItem.cylinder !== undefined) {
-                        parentItem.cylinderCount = parseInt(childItem.cylinder);
-                    } else if (childItem.cylinderCount !== undefined) {
-                        parentItem.cylinderCount = childItem.cylinderCount;
-                    }
-                    break;
-                case 'family':
-                    parentItem.familyCode = childItem.familyCode;
-                    break;
+            const pathValue = childItem.__path[i];
+            
+            // Generic property mapping - property name matches level name
+            parentItem[levelName] = pathValue;
+            
+            // Additional property aliases for legacy compatibility
+            if (levelName === 'manufacturer') {
+                parentItem.name = pathValue; // Some methods check .name
+            }
+            
+            // Handle numeric conversions for count-based levels
+            const levelConfig = this.dataManager.getHierarchyLevelConfig(levelName);
+            if (levelConfig?.is_numeric) {
+                const countProperty = levelName + 'Count';
+                parentItem[countProperty] = parseInt(pathValue);
+            }
+            
+            // Handle code-based properties
+            if (levelConfig?.use_code_property) {
+                const codeProperty = levelName + 'Code';
+                parentItem[codeProperty] = pathValue;
             }
         }
 
@@ -1561,29 +914,11 @@ class MobileRenderer {
      * Find the index of an item in an array based on level-specific matching
      */
     findItemIndexInArray(item, array, level) {
-        return array.findIndex(sibling => {
-            switch (level) {
-                case 'market':
-                    return sibling.market === item.market;
-                case 'country':
-                    return sibling.country === item.country;
-                case 'manufacturer':
-                    return sibling.manufacturer === item.manufacturer || sibling.name === item.name;
-                case 'cylinder':
-                    return sibling.cylinderCount === item.cylinderCount;
-                case 'family':
-                    return sibling.familyCode === item.familyCode;
-                case 'model':
-                    // Models are matched by their name (which is the engine_model)
-                    return sibling.name === item.name;
-                default:
-                    return false;
-            }
-        });
+        return array.findIndex(sibling => sibling.key === item.key);
     }
 
     /**
-     * Expand the blue circle to create the Detail Sector when a model is selected
+     * Expand the blue circle to create the Detail Sector when a leaf item is selected
      */
     expandDetailSector() {
         const arcParams = this.viewport.getArcParameters();
@@ -1604,7 +939,7 @@ class MobileRenderer {
     }
 
     /**
-     * Collapse the Detail Sector when navigating away from model level
+     * Collapse the Detail Sector when navigating away from leaf item level
      */
     collapseDetailSector() {
         const centralGroup = this.elements.centralGroup;

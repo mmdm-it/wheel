@@ -13,10 +13,9 @@ const MOBILE_CONFIG = {
         SELECTED: 18,
         MAGNIFIED: 22,  // 25% larger than selected (18 * 1.25 = 22.5 ≈ 22)
         CHILD_RING: 280,
-        MODEL_RING: 180,
+        DETAIL_RING: 180,
         CHILD_NODE: 10,  // Same as UNSELECTED
-        CYLINDER_NODE: 10,  // Same as UNSELECTED
-        MODEL_NODE: 10,    // Same as UNSELECTED
+        DETAIL_NODE: 10,    // Same as UNSELECTED
         MAGNIFIER: 22  // Renamed from MAGNIFYING_RING - same as magnified node radius
     },
     
@@ -30,25 +29,25 @@ const MOBILE_CONFIG = {
     
     // Timing constants
     TIMING: {
-        CYLINDER_SETTLE_DELAY: 300  // ms to wait after rotation stops before showing cylinders
+        FOCUS_ITEM_SETTLE_DELAY: 300  // ms to wait after rotation stops before showing child items
     },
     
     // Angle constants - mobile arc-based system
     ANGLES: {
-        FOCUS_SPREAD: Math.PI / 42, // 4.3° - renamed from MANUFACTURER_SPREAD
-        CHILD_SPREAD: Math.PI / 40,     // 4.5° - renamed from CYLINDER_SPREAD
-        MODEL_SPREAD: Math.PI / 18         // 10°
+        FOCUS_SPREAD: Math.PI / 42, // 4.3° - spacing between focus ring items
+        CHILD_SPREAD: Math.PI / 40,     // 4.5°
+        DETAIL_SPREAD: Math.PI / 18         // 10°
     },
     
     // Viewport constants
     VIEWPORT: {
-        MARKET_OFFSET: {
+        TOP_LEVEL_OFFSET: {
             HORIZONTAL: 0.20,  // Match bundled version
             VERTICAL: 0.35
         },
         // Sprocket chain viewport window parameters
-        MAX_VISIBLE_ITEMS: 11, // Maximum manufacturers visible in focus ring at once (reduced to original range)
-        VIEWPORT_ARC: Math.PI * 0.6 // 108° total arc for visible manufacturers
+        MAX_VISIBLE_ITEMS: 11, // Maximum focus items visible in focus ring at once (reduced to original range)
+        VIEWPORT_ARC: Math.PI * 0.6 // 108° total arc for visible focus items
     }
 };
 

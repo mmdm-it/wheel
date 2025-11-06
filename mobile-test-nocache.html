@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Catalog - Cache Buster Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: #f5f5f0;
+            overflow: hidden;
+        }
+        
+        #catalogContainer {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        
+        #catalogSvg {
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, #ffffff 0%, #f0f0f0 100%);
+        }
+    </style>
+</head>
+<body>
+    <div id="catalogContainer">
+        <svg id="catalogSvg" viewBox="0 0 400 400">
+            <g id="mainGroup">
+                <g id="centralGroup"></g>
+                <g id="topLevel"></g>
+                <g id="pathLines"></g>
+                <g id="focusRing"></g>
+                <g id="detailItems"></g>
+            </g>
+        </svg>
+    </div>
+
+    <script type="module">
+        // Cache buster - force fresh load with timestamp
+        const cacheBuster = new Date().getTime();
+        const { initMobileCatalog, mobileCatalogApp } = await import(`./mobile/mobile-app.js?v=${cacheBuster}`);
+        
+        // Initialize the app
+        async function init() {
+            try {
+                console.log('Cache buster version:', cacheBuster);
+                await initMobileCatalog();
+                console.log('Initialization complete');
+                
+            } catch (error) {
+                console.error('Failed to initialize:', error);
+            }
+        }
+        
+        // Start initialization
+        init();
+    </script>
+</body>
+</html>

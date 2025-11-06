@@ -1,27 +1,27 @@
-# MMdM Mobile Catalog - Development Status Report
+# Universal Hierarchical Catalog - Development Status Report
 ## Generated: November 5, 2025
 
 ### PROJECT OVERVIEW
-Marine engine catalog system for MMdM (Meccanismi Marittimi delle Marche) - Italian company specializing in water-cooled exhaust manifolds. Mobile-first ES6 native module architecture with innovative 2D navigation system that transcends traditional scrolling limitations.
+Universal catalog system with innovative 2D navigation for hierarchical data. Mobile-first ES6 native module architecture transcends traditional scrolling limitations. Supports any data domain through JSON configuration.
 
 ### NAVIGATION PHILOSOPHY - REVOLUTIONARY 2D DESIGN
 **Superior to Traditional Scrolling:**
 Traditional interfaces limit users to 1-dimensional interaction (vertical scrolling). This system implements true 2-dimensional navigation:
 
 **Portrait Mode - Dual-Axis Navigation:**
-- **Focus Ring (Arc)**: Traverses infinite lists horizontally - manufacturers, cylinders, families, engine models
+- **Focus Ring (Arc)**: Traverses infinite lists horizontally - items at any configured hierarchy level
 - **Parent Button**: Moves backward through finite hierarchical layers (left in conceptual space)  
 - **Child Pyramid**: Moves forward through finite hierarchical layers (right in conceptual space)
 
 **Landscape Mode - Digital Table of Contents:**
-- **Focus Ring**: Traverses finite hierarchical layers - Countries → Manufacturers → Cylinders → Families (offset) → Engine Models
+- **Focus Ring**: Traverses finite hierarchical layers through all configured levels
 - **Upper Right Display**: Shows description of current layer node under magnifier
 - **Simplified Navigation**: Single mechanism eliminates Parent/Child complexity
 
 **The Focus Ring - Sprocket Gear Concept:**
 The focus ring is NOT a circle or "hose reel" - it's an arc functioning as a sprocket gear. Data forms a sprocket chain extending linearly with defined start/end points. The gear stops when first/last nodes reach the magnifier. This chain could theoretically be infinite, allowing traversal of unlimited data sets while maintaining spatial orientation.
 
-**Note**: Countries are excluded from ring traversal by design - users navigate TO countries but not THROUGH country lists.
+**Note**: Top-level items (e.g., regions, markets) are excluded from ring traversal by design - users navigate TO these items but not THROUGH their lists.
 
 ### ARCHITECTURE STATUS
 **✅ COMPLETE - Core System**
@@ -46,7 +46,7 @@ The focus ring is NOT a circle or "hose reel" - it's an arc functioning as a spr
 
 **✅ COMPLETE - Focus Ring Navigation**
 - Arc-based sprocket gear system for infinite list traversal
-- Supports manufacturers, cylinders, families, and engine models (104 manufacturers currently)
+- Supports any hierarchical level configured in JSON
 - Dynamic center angle calculation for viewport optimization
 - Touch rotation with momentum physics and defined endpoints
 - **Dynamic Rotation Scaling**: Hybrid distance+velocity scaling allows "A to Z in two swipes" while maintaining node-to-node precision
@@ -57,74 +57,83 @@ The focus ring is NOT a circle or "hose reel" - it's an arc functioning as a spr
 **✅ COMPLETE - Child Pyramid Navigation**
 - Three concentric arcs: chpyr_85 (90% radius), chpyr_70 (80% radius), chpyr_55 (70% radius)
 - Sequential filling: 8+7+4 = 19 total capacity
-- High-to-Low sorting (largest cylinder counts first)
+- Configurable sorting (numeric, alphabetical, custom)
 - Fixed positioning angles: chpyr_85@122°, chpyr_70@118°, chpyr_55@122°
-- Rotated number-only text labels (removed "Cylinders" suffix)
-- Yellow nodes matching focus ring aesthetic (#f1b800)
+- Dynamic text labels based on level configuration
+- Configurable node colors matching focus ring aesthetic
 - Portrait viewport optimization
 
 **✅ COMPLETE - Detail Sector Expansion**
-- Dynamic blue circle expansion to 90% of focus ring radius when models are selected
+- Dynamic blue circle expansion to 90% of focus ring radius when leaf items are selected
 - Smooth animation transition from Child Pyramid to Detail Sector
 - Integrated with viewport calculations and touch rotation system
-- Maintains navigation hierarchy flow: Manufacturer → Cylinders → Families/Models → Detail Sector
-- Works correctly for manufacturers with families (Ford) and without families (Lockwood-Ash)
+- Maintains navigation hierarchy flow through all configured levels
+- Works correctly for items with virtual groups and without
 
 **✅ COMPLETE - Data Management**
-- Real JSON catalog integration (replaced test data)
-- Cylinder count extraction and sorting
-- Market→Country→Manufacturer→Cylinder→Engine Model hierarchy
+- Real JSON catalog integration
+- Universal hierarchy navigation (any number of levels)
+- Configuration-driven level behavior
+- Virtual level support with orphan adoption
+- Aggregated level support across intermediate collections
 - Dynamic data loading and caching
-## Family Logic & Orphan Adoption
 
-The catalog implements a sophisticated family/orphan system:
+**✅ COMPLETE - Universal Architecture**
+- Zero domain-specific code in data layer
+- 100% JSON configuration-driven
+- Virtual levels with configurable grouping
+- Aggregated levels across intermediate collections
+- Irregular plural support (country→countries, family→families)
+- Metadata-based navigation system
+## Virtual Level Logic & Orphan Adoption
 
-### Family vs Pseudo-Family Architecture
-- **True Families**: Manufacturers like Ford have real family groupings (6.8L, 7.3L families)
-  Uses `in_a_family: true` flag and `family` field in engine data
-- **Pseudo Families**: Manufacturers like Lockwood-Ash appear to have families but engines are actually orphans
-  Uses `in_a_family: false` to skip family layer navigation
+The catalog implements a sophisticated virtual level system:
+
+### Virtual vs Real Level Architecture
+- **Real Levels**: Data exists in JSON structure at a specific hierarchy depth
+- **Virtual Levels**: Computed groupings from child data (e.g., grouping items by property)
+  Uses `is_virtual: true` flag with `virtual_grouping_property` and `virtual_membership_property`
+- **Aggregated Levels**: Combine items across intermediate collections
+  Uses `aggregates_across` configuration to specify intermediate level
 
 ### Orphan Adoption System
-- Engines with `in_a_family: false` are considered orphans
-- getFamilies() creates an "Other" family to adopt orphans when no true families exist
-- getModelsByFamily() filters orphans into the "Other" family for mixed manufacturers
+- Items with `in_a_group: false` (or similar membership flag) are considered orphans
+- Virtual level creation adopts orphans into a configurable group (e.g., "Other")
 - Provides consistent UX while respecting data structure differences
 
 ### Navigation Flow Impact
-- Ford path: Manufacturer → Family → Models (3 levels)
-- Lockwood-Ash path: Manufacturer → Models (2 levels, skips family)
-- Mixed case: True families + "Other" orphan family
+- Items with virtual groups: Parent → Virtual Group → Children (3 levels)
+- Items without virtual groups: Parent → Children (2 levels, skips virtual)
+- Mixed case: Real groups + Orphan group
 
 ### Implementation Status
-- ✅ Family detection with in_a_family flag checking
-- ✅ Orphan adoption into "Other" family
-- ✅ Child Pyramid click handlers with family logic
-- ✅ getModelsByFamily updated for orphan filtering
-- ✅ Correct nzone navigation flow (Cylinder → Focus Ring, Families → Child Pyramid)
-- ✅ Proper navigation levels: Manufacturer → Cylinders → Families → Models
-- ✅ Fixed focus ring rendering timing issue (setup touch rotation before updating positions)
-- 🔄 Testing complete navigation flow
+- ✅ Virtual level detection with configuration-driven checking
+- ✅ Orphan adoption into configurable group name
+- ✅ Child Pyramid click handlers with virtual level logic
+- ✅ Universal getItemsAtLevel() for all navigation
+- ✅ Proper navigation flow through any hierarchy depth
+- ✅ Configuration-driven irregular plurals
 
 ### CURRENT FUNCTIONALITY
 
 **Working Features:**
 1. **Mobile Detection & Viewport**: Automatic mobile/desktop detection with proper viewport setup
-2. **Focus Ring**: 104 manufacturers displayed in rotatable arc with touch controls and dynamic scaling
-3. **Child Pyramid**: Cylinder counts (1-19) displayed in three concentric arcs
-4. **Detail Sector**: Blue circle expansion for model selection with smooth animations and proper Child Pyramid hiding
-5. **Navigation Flow**: Complete hierarchy flow - Market selection → Manufacturer focus → Cylinder pyramid → Family/Model selection → Detail Sector expansion
-6. **Family Logic**: Proper handling of manufacturers with families (Ford) and without families (Lockwood-Ash)
+2. **Focus Ring**: Unlimited items displayed in rotatable arc with touch controls and dynamic scaling
+3. **Child Pyramid**: Category/numeric counts displayed in three concentric arcs
+4. **Detail Sector**: Blue circle expansion for item selection with smooth animations and proper Child Pyramid hiding
+5. **Navigation Flow**: Complete hierarchy flow through any configured levels
+6. **Virtual Level Logic**: Proper handling of virtual groupings with orphan adoption
 7. **Parent Button**: Correctly displays parent level names throughout navigation hierarchy
-8. **Nzone Migration**: Cylinder clicks successfully migrate to Focus Ring with proper state updates
-9. **Dynamic Rotation**: Hybrid scaling system enables rapid traversal ("A to Z in two swipes") while maintaining precision
-10. **Null Safety**: Robust handling of manufacturers with no family layer (shows models directly)
+8. **Nzone Migration**: Category clicks successfully migrate to Focus Ring with proper state updates
+9. **Dynamic Rotation**: Hybrid scaling system enables rapid traversal while maintaining precision
+10. **Null Safety**: Robust handling of items with or without virtual levels (shows children directly)
+11. **Universal Architecture**: Zero domain-specific code, 100% configuration-driven
 
 **Data Integration:**
-- Real manufacturer data from catalog.json (restored to production state)
-- Proper country/market hierarchy
-- **Large-Scale Testing**: Successfully tested with 2000+ manufacturers (M1-M2000) for performance validation
-- **Test Data Cleanup**: All test manufacturers removed, catalog restored to production-ready state
+- Real catalog data from catalog.json
+- Universal hierarchy configuration
+- **Large-Scale Testing**: Successfully tested with 2000+ items for performance validation
+- **Configuration-Driven**: All level behaviors defined in JSON metadata
 
 ### TECHNICAL SPECIFICATIONS
 
@@ -133,8 +142,8 @@ The catalog implements a sophisticated family/orphan system:
 - Node Capacity: 8, 7, 4 nodes per arc (19 total)
 - Angular Spacing: 8° between all nodes
 - Starting Angles: Optimized for portrait viewport (122°, 118°, 122°)
-- Sorting: Descending cylinder count (19→1)
-- Visual: Yellow nodes (#f1b800), rotated number labels
+- Sorting: Configurable (numeric_desc, numeric_asc, alphabetical)
+- Visual: Configurable node colors, rotated text labels
 
 **Coordinate System:**
 - SVG-based with dynamic center calculation
@@ -146,26 +155,26 @@ The catalog implements a sophisticated family/orphan system:
 
 **✅ COMPLETED - Core Navigation System**
 1. **Dynamic Rotation Scaling**: Hybrid distance+velocity scaling implemented for optimal UX
-2. **Detail Sector Expansion**: Blue circle expansion for model selection completed
-3. **Navigation Flow**: Complete hierarchy navigation (Manufacturer → Cylinders → Models → Detail Sector)
-4. **Large-Scale Testing**: Successfully tested with 2000+ manufacturers
-5. **Test Data Cleanup**: Production catalog restored, all test manufacturers removed
+2. **Detail Sector Expansion**: Blue circle expansion for item selection completed
+3. **Navigation Flow**: Complete hierarchy navigation through any configured levels
+4. **Large-Scale Testing**: Successfully tested with 2000+ items
+5. **Universal Architecture**: Zero domain-specific code, 100% configuration-driven
 
 **🚧 HIGH PRIORITY**
 1. **Nzone Migration Module**: Extract generalized migration logic into mobile-migrations.js
-   - Handle all nzone transitions (Cylinder→Focus, Family→Focus, Model→Focus)
+   - Handle all nzone transitions (Category→Focus, Group→Focus, Item→Focus)
    - Smooth animations for ring transitions
    - State management for navigation history
 
 2. **Click Handling**: Complete click/tap handlers for all pyramid types
-   - Family pyramid navigation (when families exist)
-   - Model pyramid navigation
+   - Virtual group navigation (when groups exist)
+   - Item navigation
    - Update URL state for deep linking
 
 3. **Data Pipeline Integration**: Complete the navigation flow
-   - Cylinder → Engine Family selection
-   - Engine Family → Engine Model selection
-   - Model detail view implementation
+   - Category → Group selection
+   - Group → Item selection
+   - Item detail view implementation
 
 4. **Performance Optimization**: 
    - Implement viewport culling for off-screen elements
@@ -212,15 +221,15 @@ The catalog implements a sophisticated family/orphan system:
 
 **✅ TESTED**
 - Child Pyramid positioning and text rotation
-- Text rotation and number extraction
-- High-to-low sorting functionality
+- Text rotation and label extraction
+- Configurable sorting functionality
 - Viewport responsiveness (tested on 412x915, 3500x3500)
 - Touch rotation mechanics
-- **Dynamic Rotation Scaling**: Hybrid distance+velocity system tested with 2000+ manufacturers
-- **Large-Scale Performance**: Successfully handled 2000 manufacturers with 18,000+ models
+- **Dynamic Rotation Scaling**: Hybrid distance+velocity system tested with 2000+ items
+- **Large-Scale Performance**: Successfully handled 2000 top-level items with 18,000+ child items
 - **Detail Sector Expansion**: Blue circle animation and integration tested
-- **Navigation Flow**: Complete hierarchy testing from Manufacturer → Detail Sector
-- **Data Cleanup**: Verified removal of all test manufacturers, production state confirmed
+- **Navigation Flow**: Complete hierarchy testing through all configured levels
+- **Data Cleanup**: Verified removal of all test data, production state confirmed
 
 **🧪 NEEDS TESTING**
 - Landscape mode layer navigation implementation
@@ -233,12 +242,13 @@ The catalog implements a sophisticated family/orphan system:
 ### DEPLOYMENT CONSIDERATIONS
 
 **✅ PRODUCTION READY**
-- Complete navigation functionality (Manufacturer → Cylinders → Models → Detail Sector)
+- Complete navigation functionality through all configured hierarchy levels
 - Mobile-optimized touch controls with dynamic scaling
 - Responsive design implementation
-- Large-scale testing completed (2000+ manufacturers)
+- Large-scale testing completed (2000+ items)
 - Test data cleanup completed, production catalog ready
 - Dynamic rotation scaling enables optimal user experience
+- Universal architecture supports any hierarchical data domain
 
 **Pre-Production Requirements:**
 - Click handler implementation for remaining pyramid types
@@ -267,13 +277,13 @@ mobile/
 - Child Pyramid logic: mobile-renderer.js lines 700-900
 - Positioning calculations: mobile-viewport.js lines 40-60
 - Touch controls: mobile-touch.js (complete)
-- Data hierarchy: mobile-data.js lines 110-140
+- Universal hierarchy: mobile-data.js (100% domain-agnostic)
 
 ### FUTURE ENHANCEMENTS
 
 **Potential Features:**
 3. **Landscape Mode Implementation**: Digital table of contents functionality
-   - Layer navigation ring (Countries → Manufacturers → Cylinders → Families → Models)
+   - Layer navigation ring through all configured levels
    - Upper right layer description display
    - Simplified single-mechanism navigation
 
@@ -287,7 +297,7 @@ mobile/
 
 ---
 
-**Last Major Update**: Fixed Detail Sector functionality for both manufacturers with families (Ford) and without families (Lockwood-Ash). Resolved Parent Button initialization, Focus Ring updates, Child Pyramid behavior, and Detail Sector expansion. Updated STATUS documentation to reflect completed functionality.
+**Last Major Update**: Universal refactoring complete - zero domain-specific code in mobile-data.js. All hierarchy navigation now 100% configuration-driven through catalog.json metadata. System ready for any hierarchical data domain (Catholic Church, genealogy, e-commerce, etc.) with zero code changes.
 **Next Priority**: Implement mobile-migrations.js module for generalized nzone transitions and complete click handlers
-**Code Stability**: High (Complete navigation system working with dynamic scaling, Detail Sector expansion, and production data)
-**Documentation**: This STATUS file (updated with recent Detail Sector fixes)
+**Code Stability**: High (Complete navigation system working with dynamic scaling, Detail Sector expansion, and universal architecture)
+**Documentation**: README and STATUS updated to reflect universal capabilities

@@ -1,6 +1,6 @@
 /**
  * Mobile Child Pyramid Module
- * Handles the concentric arc display for cylinders, families, and models
+ * Handles the concentric arc display for hierarchical child items
  * 
  * This module manages the dynamic positioning and interaction of the Child Pyramid,
  * which displays hierarchical data in three concentric arcs with responsive layout.
@@ -74,27 +74,43 @@ class MobileChildPyramid {
      * Sort items for Child Pyramid display
      */
     sortChildPyramidItems(items, itemType) {
+        if (!items || items.length === 0) {
+            return items;
+        }
+
+        // Pure universal approach: Use metadata to determine sort behavior
+        const firstItem = items[0];
+        if (!firstItem.__level) {
+            Logger.warn('Items missing __level metadata, returning unsorted');
+            return items;
+        }
+
+        const levelConfig = this.dataManager.getHierarchyLevelConfig(firstItem.__level);
+        const sortType = levelConfig?.sort_type || 'alphabetical';
+
         const sorted = [...items];
         
-        switch(itemType) {
-            case 'cylinders':
-                // Sort numerically (High to Low)
-                return sorted.sort((a, b) => parseInt(b.name) - parseInt(a.name));
-            
-            case 'families':
-                // Sort chronologically (assuming families have a date field or use alphabetical as proxy)
-                return sorted.sort((a, b) => a.name.localeCompare(b.name));
-            
-            case 'models':
-                // Sort by displacement (assuming models have displacement data)
+        switch(sortType) {
+            case 'numeric_desc':
+                // Sort numerically descending (e.g., "12" > "9" > "6")
                 return sorted.sort((a, b) => {
-                    const dispA = parseFloat(a.data?.displacement || a.name.match(/[\d.]+/)?.[0] || 0);
-                    const dispB = parseFloat(b.data?.displacement || b.name.match(/[\d.]+/)?.[0] || 0);
-                    return dispA - dispB;
+                    const numA = parseFloat(a.name);
+                    const numB = parseFloat(b.name);
+                    return numB - numA;
                 });
             
+            case 'numeric_asc':
+                // Sort numerically ascending
+                return sorted.sort((a, b) => {
+                    const numA = parseFloat(a.name);
+                    const numB = parseFloat(b.name);
+                    return numA - numB;
+                });
+            
+            case 'alphabetical':
             default:
-                return sorted;
+                // Sort alphabetically
+                return sorted.sort((a, b) => a.name.localeCompare(b.name));
         }
     }
     
@@ -175,14 +191,17 @@ class MobileChildPyramid {
         const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
         g.classList.add('child-pyramid-item', arcName);
         g.setAttribute('data-key', item.key);
-        g.setAttribute('data-item', JSON.stringify({
+        
+        // Store essential item data - pure metadata approach
+        const itemData = {
             name: item.name,
-            cylinderCount: item.cylinderCount,
-            market: item.market,
-            country: item.country,
-            manufacturer: item.manufacturer,
-            key: item.key
-        }));
+            key: item.key,
+            __level: item.__level,
+            __levelDepth: item.__levelDepth,
+            __path: item.__path
+        };
+        
+        g.setAttribute('data-item', JSON.stringify(itemData));
         
         // Create generous hit zone (invisible circle 1.5x larger than visual node)
         const hitRadius = MOBILE_CONFIG.RADIUS.CHILD_NODE * 1.5;
@@ -322,23 +341,8 @@ class MobileChildPyramid {
      * Get configurable color for an item based on its type
      */
     getItemColor(item) {
-        // Determine item type from properties
-        let levelType = 'model'; // Default
-        
-        if (item.cylinderCount !== undefined) {
-            levelType = 'cylinder';
-        } else if (item.familyCode !== undefined) {
-            levelType = 'family';
-        } else if (item.manufacturer) {
-            levelType = 'manufacturer';
-        } else if (item.country) {
-            levelType = 'country';
-        } else if (item.market) {
-            levelType = 'market';
-        }
-        
-        // Get color from display config
-        const levelConfig = this.dataManager.getHierarchyLevelConfig(levelType);
+        // Pure metadata-based approach
+        const levelConfig = this.dataManager.getHierarchyLevelConfig(item.__level);
         return levelConfig?.color || '#f1b800'; // Default to yellow
     }
     
@@ -346,28 +350,19 @@ class MobileChildPyramid {
      * Format item text based on configurable rules
      */
     formatItemText(item) {
-        // Determine item type from properties
-        let levelType = 'model'; // Default
-        
-        if (item.cylinderCount !== undefined) {
-            levelType = 'cylinder';
-        } else if (item.familyCode !== undefined) {
-            levelType = 'family';
-        } else if (item.manufacturer) {
-            levelType = 'manufacturer';
-        } else if (item.country) {
-            levelType = 'country';
-        } else if (item.market) {
-            levelType = 'market';
-        }
-        
-        // Get text format from display config
-        const levelConfig = this.dataManager.getHierarchyLevelConfig(levelType);
+        // Pure metadata-based approach
+        const levelConfig = this.dataManager.getHierarchyLevelConfig(item.__level);
         const textFormat = levelConfig?.text_format || 'title_case';
+        return this.applyTextFormat(item.name, textFormat);
+    }
+
+    /**
+     * Apply text formatting rules
+     */
+    applyTextFormat(text, format) {
+        let formattedText = text;
         
-        let formattedText = item.name;
-        
-        switch (textFormat) {
+        switch (format) {
             case 'uppercase':
                 formattedText = formattedText.toUpperCase();
                 break;
@@ -377,9 +372,9 @@ class MobileChildPyramid {
             case 'title_case':
                 formattedText = formattedText.replace(/\b\w/g, l => l.toUpperCase());
                 break;
-            case 'append_cylinders':
-                // Remove " Cylinders" suffix if present (for cylinder display)
-                formattedText = formattedText.replace(' Cylinders', '');
+            case 'append_suffix':
+                // Remove unit suffix if present (e.g., " Items", " Units")
+                formattedText = formattedText.replace(/\s+\w+s?$/, '');
                 break;
             default:
                 // No transformation

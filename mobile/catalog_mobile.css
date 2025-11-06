@@ -26,8 +26,8 @@ svg {
     display: none; 
 }
 
-/* Hide market selection in mobile version */
-#markets {
+/* Hide top-level selection in mobile version */
+#topLevel {
     display: none !important;
 }
 
@@ -38,61 +38,61 @@ text {
 }
 
 /* Focus item selection styles */
-.manufacturer.selected .node {
+.focusItem.selected .node {
     transition: all 0.2s ease;
     filter: drop-shadow(0 0 3px rgba(0,0,0,0.3));
 }
 
-.manufacturer .node {
+.focusItem .node {
     transition: all 0.2s ease;
 }
 
-.manufacturer.selected text {
+.focusItem.selected text {
     font-weight: bold !important;
     opacity: 1 !important;
     font-size: 20px !important;
     fill: black !important;
 }
 
-.manufacturer text {
+.focusItem text {
     opacity: 0.8;
     transition: all 0.2s ease;
     font-size: 15px;
 }
 
-/* Additional specific rule for selected manufacturer text */
-g.manufacturer.selected text {
+/* Additional specific rule for selected focus item text */
+g.focusItem.selected text {
     font-size: 20px !important;
     font-weight: bold !important;
 }
 
 /* Even more specific rule */
-#focusRing g.manufacturer.selected text {
+#focusRing g.focusItem.selected text {
     font-size: 20px !important;
     font-weight: bold !important;
 }
 
-/* Market group transitions - updated for text */
-.marketGroup .marketText {
+/* Level group transitions - updated for text */
+.levelGroup .levelText {
     transition: all 0.3s ease;
     opacity: 1;
     transform: scale(1);
 }
 
-/* Only inactive markets change - get smaller and opaque */
-.marketGroup.inactive .marketText {
+/* Only inactive level groups change - get smaller and opaque */
+.levelGroup.inactive .levelText {
     opacity: 0.4;
     transform: scale(0.6);
 }
 
-/* Active markets stay at normal size */
-.marketGroup.active .marketText {
+/* Active level groups stay at normal size */
+.levelGroup.active .levelText {
     opacity: 1;
     transform: scale(1);
 }
 
-/* Market text styling */
-.marketText text {
+/* Level group text styling */
+.levelText text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     fill: black;
@@ -186,11 +186,11 @@ g.manufacturer.selected text {
 
 /* Mobile-specific adjustments */
 @media (max-width: 480px) {
-    text:not(.marketText):not(.marketText text) {
+    text:not(.levelText):not(.levelText text) {
         font-size: 12px;
     }
     
-    .marketText text {
+    .levelText text {
         font-size: 22px !important;
     }
     
