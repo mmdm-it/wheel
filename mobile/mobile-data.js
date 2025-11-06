@@ -59,17 +59,17 @@ class DataManager {
     }
 
     getDisplayConfig() {
-        return this.data?.MMdM?.display_config || null;
+        return this.data && this.data.MMdM && this.data.MMdM.display_config || null;
     }
 
     getHierarchyLevelConfig(levelType) {
         const displayConfig = this.getDisplayConfig();
-        return displayConfig?.hierarchy_levels?.[levelType] || null;
+        return displayConfig && displayConfig.hierarchy_levels && displayConfig.hierarchy_levels[levelType] || null;
     }
 
     getUILimits() {
         const displayConfig = this.getDisplayConfig();
-        return displayConfig?.ui_limits || {
+        return displayConfig && displayConfig.ui_limits || {
             focus_ring_max_depth: 6,
             parent_button_min_depth: 1
         };
@@ -80,7 +80,7 @@ class DataManager {
      */
     getHierarchyLevelNames() {
         const displayConfig = this.getDisplayConfig();
-        if (!displayConfig?.hierarchy_levels) return [];
+        if (!displayConfig || !displayConfig.hierarchy_levels) return [];
         return Object.keys(displayConfig.hierarchy_levels);
     }
 
@@ -153,11 +153,11 @@ class DataManager {
             
             if (i === 0) {
                 dataLocation = dataLocation[pathSegment];
-                if (dataLocation?.countries) {
+                if (dataLocation && dataLocation.countries) {
                     dataLocation = dataLocation.countries;
                 }
             } else {
-                dataLocation = dataLocation?.[pathSegment];
+                dataLocation = dataLocation && dataLocation[pathSegment];
                 if (!dataLocation) {
                     Logger.warn(`getVirtualLevelItems: path segment '${pathSegment}' not found`);
                     return [];
@@ -183,7 +183,7 @@ class DataManager {
         } else {
             // Try to find the child collection
             const childCollectionName = this.getPluralPropertyName(dataLevelName);
-            rawData = dataLocation?.[childCollectionName];
+            rawData = dataLocation && dataLocation[childCollectionName];
         }
         
         if (!rawData || !Array.isArray(rawData)) {
@@ -297,7 +297,7 @@ class DataManager {
         
         // Get the intermediate level collection
         const intermediateCollectionName = this.getPluralPropertyName(intermediateLevelName);
-        const intermediateCollection = parentLocation?.[intermediateCollectionName];
+        const intermediateCollection = parentLocation && parentLocation[intermediateCollectionName];
         
         if (!intermediateCollection || typeof intermediateCollection !== 'object') {
             Logger.warn(`getAggregatedLevelItems: No ${intermediateCollectionName} found`);
@@ -309,7 +309,7 @@ class DataManager {
         
         Object.keys(intermediateCollection).forEach(intermediateName => {
             const intermediateData = intermediateCollection[intermediateName];
-            const aggregatedData = intermediateData?.[aggregatedCollectionName];
+            const aggregatedData = intermediateData && intermediateData[aggregatedCollectionName];
             
             if (aggregatedData && typeof aggregatedData === 'object') {
                 Object.keys(aggregatedData).forEach(itemName => {
@@ -350,11 +350,11 @@ class DataManager {
             
             if (i === 0) {
                 dataLocation = dataLocation[pathSegment];
-                if (dataLocation?.countries) {
+                if (dataLocation && dataLocation.countries) {
                     dataLocation = dataLocation.countries;
                 }
             } else {
-                dataLocation = dataLocation?.[pathSegment];
+                dataLocation = dataLocation && dataLocation[pathSegment];
                 if (!dataLocation) {
                     Logger.warn(`getItemsFromVirtualParent: path segment '${pathSegment}' not found`);
                     return [];
@@ -377,7 +377,7 @@ class DataManager {
             rawData = dataLocation;
         } else {
             const childCollectionName = this.getPluralPropertyName(childLevelName);
-            rawData = dataLocation?.[childCollectionName];
+            rawData = dataLocation && dataLocation[childCollectionName];
         }
         
         if (!rawData || !Array.isArray(rawData)) {
@@ -428,7 +428,7 @@ class DataManager {
         const skippedLevelName = levelNames[parentDepth + 1];
         const skippedLevelConfig = this.getHierarchyLevelConfig(skippedLevelName);
         
-        return skippedLevelConfig?.is_virtual === true;
+        return skippedLevelConfig && skippedLevelConfig.is_virtual === true;
     }
 
     /**
@@ -449,18 +449,18 @@ class DataManager {
         const childLevelConfig = this.getHierarchyLevelConfig(childLevelName);
 
         // Check if child level is virtual
-        if (childLevelConfig?.is_virtual) {
+        if (childLevelConfig && childLevelConfig.is_virtual) {
             return this.getVirtualLevelItems(parentItem, childLevelName, childLevelConfig);
         }
 
         // Check if child level aggregates across an intermediate level
-        if (childLevelConfig?.aggregates_across) {
+        if (childLevelConfig && childLevelConfig.aggregates_across) {
             return this.getAggregatedLevelItems(parentItem, childLevelName, childLevelConfig);
         }
 
         // Check if this is requesting child items from a virtual level parent
         const parentLevelConfig = this.getHierarchyLevelConfig(parentLevelName);
-        if (parentLevelConfig?.is_virtual) {
+        if (parentLevelConfig && parentLevelConfig.is_virtual) {
             return this.getItemsFromVirtualParent(parentItem, childLevelName, parentLevelConfig);
         }
         
@@ -495,7 +495,7 @@ class DataManager {
             } else {
                 // For subsequent levels, we're already at the parent collection
                 // Navigate to the specific item
-                dataLocation = dataLocation?.[pathSegment];
+                dataLocation = dataLocation && dataLocation[pathSegment];
                 if (!dataLocation) {
                     Logger.warn(`getItemsAtLevel: '${pathSegment}' not found at level ${currentLevelName}`);
                     return [];
@@ -515,7 +515,7 @@ class DataManager {
 
         // Now dataLocation is at the parent item, we need to get its children
         const childCollectionName = this.getPluralPropertyName(childLevelName);
-        const childrenData = dataLocation?.[childCollectionName];
+        const childrenData = dataLocation && dataLocation[childCollectionName];
         
         if (!childrenData) {
             Logger.warn(`getItemsAtLevel: could not find '${childCollectionName}' property for ${childLevelName}`);
@@ -572,7 +572,7 @@ class DataManager {
             // This is an object with keys as item names
             Object.keys(dataLocation).forEach(itemKey => {
                 const childData = dataLocation[itemKey];
-                const isNumeric = levelConfig?.is_numeric || false;
+                const isNumeric = levelConfig && levelConfig.is_numeric || false;
                 
                 // Create item with appropriate properties
                 const item = {

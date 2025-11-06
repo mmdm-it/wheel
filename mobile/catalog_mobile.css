@@ -228,3 +228,15 @@ g.focusItem.selected text {
         transform: translate(calc(40vw), calc(-45vh)) !important;
     }
 }
+
+/* Detail Sector expansion overrides */
+#centralGroup.detail-sector {
+    /* Allow JavaScript to control transform when in Detail Sector mode */
+    transform: none !important;
+}
+
+#centralGroup.detail-sector circle {
+    /* Allow JavaScript to control radius and make fully opaque when in Detail Sector mode */
+    r: inherit !important;
+    opacity: 1 !important;
+}

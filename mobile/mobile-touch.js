@@ -201,7 +201,7 @@ class TouchRotationHandler {
             return false;
         }
         
-        console.log('🔺 Touch handler ACCEPTING element:', element?.className, element?.tagName);
+        console.log('🔺 Touch handler ACCEPTING element:', element && element.className, element && element.tagName);
         return true;
     }
     

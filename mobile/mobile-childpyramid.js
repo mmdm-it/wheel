@@ -62,7 +62,7 @@ class MobileChildPyramid {
         this.childRingGroup.style.opacity = '1';
         
         Logger.debug(`🔺 childRingGroup visibility forced - classList: ${this.childRingGroup.classList.toString()}`);
-        Logger.debug(`🔺 childRingGroup parent:`, this.childRingGroup.parentElement?.id);
+        Logger.debug(`🔺 childRingGroup parent:`, this.childRingGroup.parentElement && this.childRingGroup.parentElement.id);
         Logger.debug(`🔺 childRingGroup in DOM:`, document.contains(this.childRingGroup));
         
         // Create pyramid arcs
@@ -86,7 +86,7 @@ class MobileChildPyramid {
         }
 
         const levelConfig = this.dataManager.getHierarchyLevelConfig(firstItem.__level);
-        const sortType = levelConfig?.sort_type || 'alphabetical';
+        const sortType = levelConfig && levelConfig.sort_type || 'alphabetical';
 
         const sorted = [...items];
         
@@ -343,7 +343,7 @@ class MobileChildPyramid {
     getItemColor(item) {
         // Pure metadata-based approach
         const levelConfig = this.dataManager.getHierarchyLevelConfig(item.__level);
-        return levelConfig?.color || '#f1b800'; // Default to yellow
+        return levelConfig && levelConfig.color || '#f1b800'; // Default to yellow
     }
     
     /**
@@ -352,7 +352,7 @@ class MobileChildPyramid {
     formatItemText(item) {
         // Pure metadata-based approach
         const levelConfig = this.dataManager.getHierarchyLevelConfig(item.__level);
-        const textFormat = levelConfig?.text_format || 'title_case';
+        const textFormat = levelConfig && levelConfig.text_format || 'title_case';
         return this.applyTextFormat(item.name, textFormat);
     }
 

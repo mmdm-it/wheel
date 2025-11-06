@@ -47,6 +47,10 @@ class MobileRenderer {
     async initialize() {
         await this.initializeElements();
         this.viewport.adjustSVGForMobile(this.elements.svg, this.elements.mainGroup);
+        
+        // Create blue circle at upper right corner for Detail Sector animation
+        this.createDetailSectorCircle();
+        
         return true;
     }
     
@@ -225,6 +229,7 @@ class MobileRenderer {
         Logger.debug(`Found ${childItems.length} ${itemType} for ${currentLevel}: ${focusItem.name}`);
 
         // Show child items in Child Pyramid
+        Logger.debug('🔺 SHOWING Child Pyramid with', childItems.length, itemType, 'for focus item:', focusItem.name);
         this.childPyramid.showChildPyramid(childItems, itemType);
     }
 
@@ -309,6 +314,24 @@ class MobileRenderer {
             rotationOffset = 0; // Safe fallback
         }
         
+        // Track rotation changes - hide Child Pyramid immediately when rotation offset changes
+        const isRotating = this.lastRotationOffset !== undefined && Math.abs(rotationOffset - this.lastRotationOffset) > 0.001;
+        if (isRotating) {
+            Logger.debug('🔄 ROTATION DETECTED: offset changed from', this.lastRotationOffset.toFixed(3), 'to', rotationOffset.toFixed(3));
+            Logger.debug('🔄 Child Pyramid children count BEFORE hiding:', this.elements.childRingGroup.children.length);
+            
+            // FORCE hide Child Pyramid - multiple methods to ensure it works
+            this.elements.childRingGroup.classList.add('hidden');
+            this.elements.childRingGroup.style.display = 'none';
+            this.elements.childRingGroup.style.visibility = 'hidden';
+            this.elements.childRingGroup.innerHTML = ''; // Clear content entirely
+            
+            this.elements.detailItemsGroup.classList.add('hidden');
+            this.clearFanLines();
+            Logger.debug('🔄 Child Pyramid children count AFTER clearing:', this.elements.childRingGroup.children.length);
+        }
+        this.lastRotationOffset = rotationOffset;
+        
         // Clear existing elements
         focusRingGroup.innerHTML = '';
         this.focusElements.clear();
@@ -353,6 +376,7 @@ class MobileRenderer {
                 if (isSelected) {
                     selectedFocusItem = focusItem;
                     selectedIndex = index;
+                    Logger.debug('🎯 SELECTED during rotation:', focusItem.name, 'angleDiff:', angleDiff.toFixed(3), 'threshold:', (angleStep * 0.5).toFixed(3));
                 }
                 
                 // Create focus element
@@ -378,6 +402,7 @@ class MobileRenderer {
             if (this.settleTimeout) {
                 clearTimeout(this.settleTimeout);
             }            // Hide child ring immediately during rotation to prevent strobing
+            Logger.debug('🔄 ROTATION: Focus item selected but rotating - hiding Child Pyramid during rotation');
             this.elements.childRingGroup.classList.add('hidden');
             this.elements.detailItemsGroup.classList.add('hidden');
             this.clearFanLines();
@@ -389,16 +414,20 @@ class MobileRenderer {
             
             // Set timeout to show appropriate child content after settling
             this.settleTimeout = setTimeout(() => {
+                Logger.debug('⏰ TIMEOUT FIRED: isRotating=', this.isRotating, 'selectedFocusItem=', this.selectedFocusItem && this.selectedFocusItem.name, 'expectedItem=', selectedFocusItem.name);
                 this.isRotating = false;
                 if (this.selectedFocusItem && this.selectedFocusItem.key === selectedFocusItem.key) {
                     const angle = adjustedCenterAngle + (selectedIndex - (allFocusItems.length - 1) / 2) * angleStep;
-                    Logger.debug('Focus item settled:', selectedFocusItem.name, 'showing child content');
+                    Logger.debug('✅ Focus item settled:', selectedFocusItem.name, 'showing child content');
                     this.showChildContentForFocusItem(selectedFocusItem, angle);
+                } else {
+                    Logger.debug('❌ Timeout fired but item changed - not showing child content');
                 }
             }, MOBILE_CONFIG.TIMING.FOCUS_ITEM_SETTLE_DELAY);
             
-        } else if (this.selectedFocusItem) {
-            // Hide child ring when no focus item is selected
+        } else {
+            // Hide child ring immediately when no focus item is selected (during rotation)
+            Logger.debug('🔄 ROTATION: No focus item selected - hiding Child Pyramid immediately');
             this.elements.childRingGroup.classList.add('hidden');
             this.elements.detailItemsGroup.classList.add('hidden');
             this.clearFanLines();
@@ -512,7 +541,8 @@ class MobileRenderer {
         // Apply selected class based on selection state
         if (isSelected) {
             element.classList.add('selected');
-            Logger.debug(`Applied selected class to focus item: ${element.querySelector('text')?.textContent}`);
+            const textElement = element.querySelector('text');
+            Logger.debug(`Applied selected class to focus item: ${textElement && textElement.textContent}`);
         } else {
             element.classList.remove('selected');
         }
@@ -532,8 +562,8 @@ class MobileRenderer {
         // Get configuration for this item's level (pure universal)
         const itemLevel = item.__level || 'focusItem';
         const levelConfig = this.dataManager.getHierarchyLevelConfig(itemLevel);
-        const textPosition = levelConfig?.focus_text_position || 'radial';
-        const textTransform = levelConfig?.focus_text_transform || 'none';
+        const textPosition = levelConfig && levelConfig.focus_text_position || 'radial';
+        const textTransform = levelConfig && levelConfig.focus_text_transform || 'none';
         
         let textX, textY, textAnchor;
         
@@ -622,7 +652,7 @@ class MobileRenderer {
     getColor(type, name) {
         // Get color from display configuration
         const levelConfig = this.dataManager.getHierarchyLevelConfig(type);
-        return levelConfig?.color || '#f1b800'; // Default to yellow if not configured
+        return levelConfig && levelConfig.color || '#f1b800'; // Default to yellow if not configured
     }
     
     getColorForType(type) {
@@ -633,7 +663,8 @@ class MobileRenderer {
      * Get the hierarchy levels configuration
      */
     getHierarchyLevels() {
-        return this.dataManager.getDisplayConfig()?.hierarchy_levels || {};
+        const displayConfig = this.dataManager.getDisplayConfig();
+        return displayConfig && displayConfig.hierarchy_levels || {};
     }
 
     /**
@@ -761,7 +792,7 @@ class MobileRenderer {
             return;
         }
 
-        Logger.debug(`🔺 ${itemLevel} clicked:`, item.name);
+        Logger.debug(`🔺 ${itemLevel} clicked:`, item.name, 'Full item:', item);
 
         // 1. Update the navigation state - this item becomes the new focus
         this.buildActivePath(item);
@@ -803,10 +834,10 @@ class MobileRenderer {
         Logger.debug(`🔺 Focus Ring updated with ${allSiblings.length} ${itemLevel}s, selected:`, item.name);
 
         // 8. If a leaf item was selected, expand the blue circle to create the Detail Sector
+        Logger.debug('🔵 DETAIL SECTOR CHECK: itemLevel =', itemLevel, 'item.__isLeaf =', item.__isLeaf);
         if (itemLevel === 'model') {
+            Logger.debug('🔵 EXPANDING Detail Sector for model:', item.name);
             this.expandDetailSector();
-        } else {
-            this.collapseDetailSector();
         }
 
         // 6. Update Parent Button to show the parent level
@@ -895,13 +926,13 @@ class MobileRenderer {
             
             // Handle numeric conversions for count-based levels
             const levelConfig = this.dataManager.getHierarchyLevelConfig(levelName);
-            if (levelConfig?.is_numeric) {
+            if (levelConfig && levelConfig.is_numeric) {
                 const countProperty = levelName + 'Count';
                 parentItem[countProperty] = parseInt(pathValue);
             }
             
             // Handle code-based properties
-            if (levelConfig?.use_code_property) {
+            if (levelConfig && levelConfig.use_code_property) {
                 const codeProperty = levelName + 'Code';
                 parentItem[codeProperty] = pathValue;
             }
@@ -918,48 +949,376 @@ class MobileRenderer {
     }
 
     /**
-     * Expand the blue circle to create the Detail Sector when a leaf item is selected
+     * Expand the Detail Sector when a leaf item is selected
+     * Animates the blue circle from upper right to focus ring center
      */
     expandDetailSector() {
+        Logger.debug('🔵 expandDetailSector() called - animating blue circle and logo');
         const arcParams = this.viewport.getArcParameters();
-        const centralGroup = this.elements.centralGroup;
-        const circle = centralGroup.querySelector('circle');
         
-        // Position the central group at the focus ring center
-        centralGroup.setAttribute('transform', `translate(${arcParams.centerX}, ${arcParams.centerY})`);
+        const detailCircle = document.getElementById('detailSectorCircle');
+        const detailLogo = document.getElementById('detailSectorLogo');
         
-        // Set circle radius to 90% of focus ring radius
-        const detailRadius = arcParams.radius * 0.9;
-        circle.setAttribute('r', detailRadius);
+        if (!detailCircle || !detailLogo) {
+            Logger.error('🔵 Detail Sector elements not found for expansion');
+            return;
+        }
         
-        // Add detail sector class for additional styling
-        centralGroup.classList.add('detail-sector');
+        // Calculate circle START position (upper right corner)
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const shorterSide = Math.min(viewportWidth, viewportHeight);
+        const margin = shorterSide * 0.03;
+        const startRadius = shorterSide * 0.12;
         
-        Logger.debug(`Detail Sector expanded: center=(${arcParams.centerX}, ${arcParams.centerY}), radius=${detailRadius}`);
+        // Calculate logo dimensions for proper positioning
+        const logoScaleFactor = 1.8;
+        const startLogoWidth = startRadius * 2 * logoScaleFactor;
+        const logoAspectRatio = 154 / 134;
+        const startLogoHeight = startLogoWidth / logoAspectRatio;
+        const logoHalfWidth = startLogoWidth / 2;
+        
+        // Circle START position
+        const circleStartX = (viewportWidth / 2) - logoHalfWidth - margin;
+        const circleStartY = -(viewportHeight / 2) + startRadius + margin;
+        
+        // Logo START position (top-left corner for image element)
+        const logoStartX = circleStartX - (startLogoWidth / 2);
+        const logoStartY = circleStartY - (startLogoHeight / 2);
+        
+        // Calculate circle END position (focus ring center)
+        const circleEndX = arcParams.centerX;
+        const circleEndY = arcParams.centerY;
+        const endRadius = arcParams.radius * 0.98;
+        
+        // Calculate logo END position (centered horizontally, same top buffer)
+        const logoEndState = this.getDetailSectorLogoEndState();
+        
+        // Opacity animation values
+        const startOpacity = 0.5;
+        const endOpacity = 1.0;
+        
+        // Animate to END state
+        const duration = 600; // ms
+        const startTime = performance.now();
+        
+        const animate = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Easing function (ease-in-out)
+            const eased = progress < 0.5
+                ? 2 * progress * progress
+                : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+            
+            // Interpolate circle position, radius, and opacity
+            const currentCircleX = circleStartX + (circleEndX - circleStartX) * eased;
+            const currentCircleY = circleStartY + (circleEndY - circleStartY) * eased;
+            const currentRadius = startRadius + (endRadius - startRadius) * eased;
+            const currentOpacity = startOpacity + (endOpacity - startOpacity) * eased;
+            
+            // Interpolate logo position and size
+            const currentLogoX = logoStartX + (logoEndState.x - logoStartX) * eased;
+            const currentLogoY = logoStartY + (logoEndState.y - logoStartY) * eased;
+            const currentLogoWidth = startLogoWidth + (logoEndState.width - startLogoWidth) * eased;
+            const currentLogoHeight = startLogoHeight + (logoEndState.height - startLogoHeight) * eased;
+            
+            // Apply animated values to circle
+            detailCircle.setAttribute('cx', currentCircleX);
+            detailCircle.setAttribute('cy', currentCircleY);
+            detailCircle.setAttribute('r', currentRadius);
+            detailCircle.setAttribute('opacity', currentOpacity);
+            
+            // Apply animated values to logo
+            detailLogo.setAttribute('x', currentLogoX);
+            detailLogo.setAttribute('y', currentLogoY);
+            detailLogo.setAttribute('width', currentLogoWidth);
+            detailLogo.setAttribute('height', currentLogoHeight);
+            detailLogo.setAttribute('opacity', currentOpacity);
+            
+            // Continue animation or finish
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                // Ensure exact END state for circle
+                detailCircle.setAttribute('cx', circleEndX);
+                detailCircle.setAttribute('cy', circleEndY);
+                detailCircle.setAttribute('r', endRadius);
+                detailCircle.setAttribute('opacity', '1.0'); // END state: 100% opacity
+                
+                // Ensure exact END state for logo
+                detailLogo.setAttribute('x', logoEndState.x);
+                detailLogo.setAttribute('y', logoEndState.y);
+                detailLogo.setAttribute('width', logoEndState.width);
+                detailLogo.setAttribute('height', logoEndState.height);
+                detailLogo.setAttribute('opacity', '1.0'); // END state: 100% opacity
+                
+                Logger.debug(`🔵 Detail Sector animation COMPLETE - END STATE reached`);
+                Logger.debug(`   Circle: (${circleEndX}, ${circleEndY}) r=${endRadius}px`);
+                Logger.debug(`   Logo: (${logoEndState.x}, ${logoEndState.y}) ${logoEndState.width}x${logoEndState.height}px`);
+            }
+        };
+        
+        // Start animation
+        requestAnimationFrame(animate);
+        
+        Logger.debug(`🔵 Detail Sector animation STARTED`);
+        Logger.debug(`   Circle FROM: (${circleStartX.toFixed(1)}, ${circleStartY.toFixed(1)}) r=${startRadius.toFixed(1)}`);
+        Logger.debug(`   Circle TO: (${circleEndX.toFixed(1)}, ${circleEndY.toFixed(1)}) r=${endRadius.toFixed(1)}`);
+        Logger.debug(`   Logo FROM: ${startLogoWidth.toFixed(1)}x${startLogoHeight.toFixed(1)} TO: ${logoEndState.width}x${logoEndState.height}`);
     }
 
     /**
-     * Collapse the Detail Sector when navigating away from leaf item level
+     * Collapse the Detail Sector when navigating away from leaf item
+     * Animates from focus ring center back to upper right corner
      */
     collapseDetailSector() {
-        const centralGroup = this.elements.centralGroup;
-        const circle = centralGroup.querySelector('circle');
+        const detailCircle = document.getElementById('detailSectorCircle');
+        const detailLogo = document.getElementById('detailSectorLogo');
         
-        // Calculate actual pixel values for viewport-based positioning
+        if (!detailCircle || !detailLogo) {
+            return;
+        }
+        
+        // Check if circle is already collapsed
+        const currentRadius = parseFloat(detailCircle.getAttribute('r'));
+        const vWidth = window.innerWidth;
+        const vHeight = window.innerHeight;
+        const shorter = Math.min(vWidth, vHeight);
+        const collapsedRadius = shorter * 0.12;
+        
+        if (Math.abs(currentRadius - collapsedRadius) < 10) {
+            Logger.debug('🔵 Detail Sector already collapsed - skipping animation');
+            return;
+        }
+        
+        // Get circle START state (expanded at focus ring center)
+        const arcParams = this.viewport.getArcParameters();
+        const circleStartX = arcParams.centerX;
+        const circleStartY = arcParams.centerY;
+        const startRadius = arcParams.radius * 0.98;
+        
+        // Get logo START state (centered horizontally, at top)
+        const logoStartState = this.getDetailSectorLogoEndState();
+        
+        // Calculate circle END state (upper right corner)
         const viewportWidth = window.innerWidth;
         const viewportHeight = window.innerHeight;
-        const xPos = viewportWidth * 0.4; // 40vw
-        const yPos = -viewportHeight * 0.45; // -45vh
-        const radius = Math.min(viewportWidth * 0.1, viewportHeight * 0.1); // min(10vw, 10vh)
+        const shorterSide = Math.min(viewportWidth, viewportHeight);
+        const margin = shorterSide * 0.03;
+        const endRadius = shorterSide * 0.12;
         
-        // Reset to original positioning and size
-        centralGroup.setAttribute('transform', `translate(${xPos}, ${yPos})`);
+        // Calculate logo dimensions for END state
+        const logoScaleFactor = 1.8;
+        const endLogoWidth = endRadius * 2 * logoScaleFactor;
+        const logoAspectRatio = 154 / 134;
+        const endLogoHeight = endLogoWidth / logoAspectRatio;
+        const logoHalfWidth = endLogoWidth / 2;
+        
+        // Circle END position
+        const circleEndX = (viewportWidth / 2) - logoHalfWidth - margin;
+        const circleEndY = -(viewportHeight / 2) + endRadius + margin;
+        
+        // Logo END position (top-left corner for image element)
+        const logoEndX = circleEndX - (endLogoWidth / 2);
+        const logoEndY = circleEndY - (endLogoHeight / 2);
+        
+        // Opacity animation values
+        const startOpacity = 1.0;
+        const endOpacity = 0.5;
+        
+        // Animate back to collapsed state
+        const duration = 600; // ms
+        const startTime = performance.now();
+        
+        const animate = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Easing function (ease-in-out)
+            const eased = progress < 0.5
+                ? 2 * progress * progress
+                : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+            
+            // Interpolate circle position, radius, and opacity
+            const currentCircleX = circleStartX + (circleEndX - circleStartX) * eased;
+            const currentCircleY = circleStartY + (circleEndY - circleStartY) * eased;
+            const currentRadius = startRadius + (endRadius - startRadius) * eased;
+            const currentOpacity = startOpacity + (endOpacity - startOpacity) * eased;
+            
+            // Interpolate logo position and size
+            const currentLogoX = logoStartState.x + (logoEndX - logoStartState.x) * eased;
+            const currentLogoY = logoStartState.y + (logoEndY - logoStartState.y) * eased;
+            const currentLogoWidth = logoStartState.width + (endLogoWidth - logoStartState.width) * eased;
+            const currentLogoHeight = logoStartState.height + (endLogoHeight - logoStartState.height) * eased;
+            
+            // Apply animated values to circle
+            detailCircle.setAttribute('cx', currentCircleX);
+            detailCircle.setAttribute('cy', currentCircleY);
+            detailCircle.setAttribute('r', currentRadius);
+            detailCircle.setAttribute('opacity', currentOpacity);
+            
+            // Apply animated values to logo
+            detailLogo.setAttribute('x', currentLogoX);
+            detailLogo.setAttribute('y', currentLogoY);
+            detailLogo.setAttribute('width', currentLogoWidth);
+            detailLogo.setAttribute('height', currentLogoHeight);
+            detailLogo.setAttribute('opacity', currentOpacity);
+            
+            // Continue animation or finish
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                // Ensure exact collapsed state for circle
+                detailCircle.setAttribute('cx', circleEndX);
+                detailCircle.setAttribute('cy', circleEndY);
+                detailCircle.setAttribute('r', endRadius);
+                detailCircle.setAttribute('opacity', '0.5'); // START state: 50% opacity
+                
+                // Ensure exact collapsed state for logo
+                detailLogo.setAttribute('x', logoEndX);
+                detailLogo.setAttribute('y', logoEndY);
+                detailLogo.setAttribute('width', endLogoWidth);
+                detailLogo.setAttribute('height', endLogoHeight);
+                detailLogo.setAttribute('opacity', '0.5'); // START state: 50% opacity
+                
+                Logger.debug(`🔵 Detail Sector collapse COMPLETE`);
+                Logger.debug(`   Circle: (${circleEndX.toFixed(1)}, ${circleEndY.toFixed(1)}) r=${endRadius.toFixed(1)}`);
+                Logger.debug(`   Logo: ${endLogoWidth.toFixed(1)}x${endLogoHeight.toFixed(1)}`);
+            }
+        };
+        
+        // Start animation
+        requestAnimationFrame(animate);
+        
+        Logger.debug(`🔵 Detail Sector collapse STARTED`);
+        Logger.debug(`   Circle FROM: (${circleStartX.toFixed(1)}, ${circleStartY.toFixed(1)}) r=${startRadius.toFixed(1)}`);
+        Logger.debug(`   Circle TO: (${circleEndX.toFixed(1)}, ${circleEndY.toFixed(1)}) r=${endRadius.toFixed(1)}`);
+        Logger.debug(`   Logo FROM: ${logoStartState.width}x${logoStartState.height} TO: ${endLogoWidth.toFixed(1)}x${endLogoHeight.toFixed(1)}`);
+    }
+    
+    /**
+     * Create the Detail Sector circle at upper right corner
+     * This circle animates to the focus ring center when a leaf item is selected
+     */
+    createDetailSectorCircle() {
+        // Calculate radius as 12% of the shorter viewport dimension
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const shorterSide = Math.min(viewportWidth, viewportHeight);
+        const radius = shorterSide * 0.12;
+        
+        // Calculate logo dimensions (needed for proper positioning)
+        const logoScaleFactor = 1.8;
+        const logoWidth = radius * 2 * logoScaleFactor;
+        const logoHalfWidth = logoWidth / 2;
+        
+        // Calculate margin as 3% of shorter side for proportional spacing
+        const margin = shorterSide * 0.03;
+        
+        // Position in upper right corner (origin at screen center)
+        // Use logo half-width for right edge calculation since logo is wider than circle
+        const cx = (viewportWidth / 2) - logoHalfWidth - margin;
+        const cy = -(viewportHeight / 2) + radius + margin;
+        
+        // Create Detail Sector circle
+        const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
+        circle.setAttribute('id', 'detailSectorCircle');
+        circle.setAttribute('cx', cx);
+        circle.setAttribute('cy', cy);
         circle.setAttribute('r', radius);
+        circle.setAttribute('fill', '#362e6a'); // MMdM blue
+        circle.setAttribute('stroke', 'black');
+        circle.setAttribute('stroke-width', '1');
+        circle.setAttribute('opacity', '0.5'); // START state: 50% opacity
         
-        // Remove detail sector class
-        centralGroup.classList.remove('detail-sector');
+        // Add to main group
+        this.elements.mainGroup.appendChild(circle);
         
-        Logger.debug('Detail Sector collapsed');
+        Logger.debug(`🔵 Detail Sector circle created at (${cx.toFixed(1)}, ${cy.toFixed(1)}) with ${radius.toFixed(1)}px radius`);
+        
+        // Create Detail Sector logo
+        this.createDetailSectorLogo();
+    }
+    
+    /**
+     * Create the catalog logo positioned over the Detail Sector circle
+     * Logo is centered at the same position as the circle
+     */
+    createDetailSectorLogo() {
+        // Calculate the same position as Detail Sector circle
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const shorterSide = Math.min(viewportWidth, viewportHeight);
+        const radius = shorterSide * 0.12;
+        
+        // Scale logo relative to circle radius
+        // Logo aspect ratio: 154:134 = ~1.149:1
+        const logoAspectRatio = 154 / 134;
+        const logoScaleFactor = 1.8; // Logo width = 180% of circle diameter (3.6× radius)
+        const logoWidth = radius * 2 * logoScaleFactor;
+        const logoHeight = logoWidth / logoAspectRatio;
+        const logoHalfWidth = logoWidth / 2;
+        
+        // Calculate margin as 3% of shorter side for proportional spacing
+        const margin = shorterSide * 0.03;
+        
+        // Position in upper right corner (origin at screen center)
+        // Use logo half-width for right edge calculation
+        const cx = (viewportWidth / 2) - logoHalfWidth - margin;
+        const cy = -(viewportHeight / 2) + radius + margin;
+        
+        // Calculate top-left position to center logo over circle center
+        const x = cx - (logoWidth / 2);
+        const y = cy - (logoHeight / 2);
+        
+        // Create logo image element
+        const logo = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'image');
+        logo.setAttribute('id', 'detailSectorLogo');
+        logo.setAttributeNS('http://www.w3.org/1999/xlink', 'href', 'assets/catalog_logo.png');
+        logo.setAttribute('x', x);
+        logo.setAttribute('y', y);
+        logo.setAttribute('width', logoWidth);
+        logo.setAttribute('height', logoHeight);
+        logo.setAttribute('opacity', '0.5'); // START state: 50% opacity
+        
+        // Add to main group
+        this.elements.mainGroup.appendChild(logo);
+        
+        Logger.debug(`🔵 Detail Sector logo created at (${x.toFixed(1)}, ${y.toFixed(1)}) with size ${logoWidth.toFixed(1)}x${logoHeight.toFixed(1)} (${logoScaleFactor * 100}% of circle diameter)`);
+    }
+    
+    /**
+     * Calculate END state position and size for Detail Sector logo
+     * Returns logo dimensions and position for expanded state
+     */
+    getDetailSectorLogoEndState() {
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const shorterSide = Math.min(viewportWidth, viewportHeight);
+        const radius = shorterSide * 0.12;
+        const margin = shorterSide * 0.03;
+        
+        // Logo dimensions at 100% scale (actual image size)
+        const logoWidth = 154;
+        const logoHeight = 134;
+        
+        // Position: centered horizontally, top buffer same as START state circle
+        const endCenterX = 0; // Centered on screen (origin at screen center)
+        const endCenterY = -(viewportHeight / 2) + radius + margin; // Same top buffer as circle
+        
+        // Calculate top-left position for SVG image element
+        const endX = endCenterX - (logoWidth / 2);
+        const endY = endCenterY - (logoHeight / 2);
+        
+        return {
+            x: endX,
+            y: endY,
+            width: logoWidth,
+            height: logoHeight,
+            centerX: endCenterX,
+            centerY: endCenterY
+        };
     }
 }
 
