@@ -186,12 +186,12 @@ class TouchRotationHandler {
         const element = document.elementFromPoint(touch.clientX, touch.clientY);
         
         // Don't handle touch if it's on:
-        // - Market buttons
+        // - Top-level selection buttons
         // - Child Pyramid items (they need to handle their own clicks)
         // - Parent button
         if (element && (
-            element.classList.contains('marketHitArea') || 
-            element.closest('.marketGroup') ||
+            element.classList.contains('topLevelHitArea') || 
+            element.closest('.levelGroup') ||
             element.classList.contains('hit-zone') ||
             element.closest('.child-pyramid-item') ||
             element.closest('#parentButton') ||

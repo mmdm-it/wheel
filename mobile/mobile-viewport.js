@@ -110,7 +110,7 @@ class ViewportManager {
     
     getMarketPositions() {
         const viewport = this.getViewportInfo();
-        const { HORIZONTAL, VERTICAL } = MOBILE_CONFIG.VIEWPORT.MARKET_OFFSET;
+        const { HORIZONTAL, VERTICAL } = MOBILE_CONFIG.VIEWPORT.TOP_LEVEL_OFFSET;
         
         return [
             {
@@ -138,8 +138,8 @@ class ViewportManager {
         const centerAngle = this.getCenterAngle();
         const arcParams = this.getArcParameters();
         
-        // Position the magnifying ring using the SAME coordinate system as manufacturers
-        // This ensures it's on the actual manufacturer ring
+        // Position the magnifying ring using the SAME coordinate system as focus items
+        // This ensures it's on the actual focus ring
         const x = arcParams.centerX + arcParams.radius * Math.cos(centerAngle);
         const y = arcParams.centerY + arcParams.radius * Math.sin(centerAngle);
         

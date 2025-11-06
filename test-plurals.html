@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Plurals</title>
+</head>
+<body>
+    <h1>Testing getPluralPropertyName</h1>
+    <pre id="output"></pre>
+    
+    <script type="module">
+        // Force fresh import with timestamp
+        const timestamp = Date.now();
+        const { DataManager } = await import(`./mobile/mobile-data.js?v=${timestamp}`);
+        
+        const dm = new DataManager();
+        const output = document.getElementById('output');
+        
+        // Test the pluralization
+        const tests = [
+            'country',
+            'family',
+            'manufacturer',
+            'cylinder',
+            'model'
+        ];
+        
+        let result = `Cache buster: ${timestamp}\n\n`;
+        
+        tests.forEach(word => {
+            const plural = dm.getPluralPropertyName(word);
+            result += `${word} → ${plural}\n`;
+        });
+        
+        output.textContent = result;
+        console.log(result);
+    </script>
+</body>
+</html>

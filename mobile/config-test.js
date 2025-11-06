@@ -27,7 +27,7 @@ async function testConfigurationSystem() {
         console.assert(uiLimits.parent_button_min_depth === 1, 'parent_button_min_depth should be 1');
 
         console.log('Testing getHierarchyLevelConfig() for all levels...');
-        const levels = ['market', 'country', 'manufacturer', 'cylinder', 'family', 'model'];
+        const levels = dataManager.getHierarchyLevels();
         for (const level of levels) {
             const config = dataManager.getHierarchyLevelConfig(level);
             console.assert(config, `Configuration for ${level} should exist`);
@@ -43,7 +43,7 @@ async function testConfigurationSystem() {
         // Test that the system can handle different configurations
         console.log('Testing configuration flexibility...');
 
-        // Simulate changing configuration (in real usage, this would be done in catalog.json)
+        // Simulate changing configuration (in real usage, this would be done in mmdm_catalog.json)
         const testConfig = {
             ui_limits: { focus_ring_max_depth: 4, parent_button_min_depth: 2 },
             hierarchy_levels: {
