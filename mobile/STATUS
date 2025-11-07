@@ -1,5 +1,5 @@
 # Wheel - Universal Hierarchical Data Navigation System
-## Development Status Report - Generated: November 5, 2025
+## Development Status Report - Last Updated: November 7, 2025
 
 ### PROJECT OVERVIEW
 **Wheel** is a revolutionary universal data navigation system with innovative 2D interface for hierarchical data. Mobile-first ES6 native module architecture transcends traditional scrolling limitations through arc-based "sprocket gear" navigation. Supports any data domain through JSON configuration - ready for deployment across e-commerce, medical equipment, government databases, and more.
@@ -10,8 +10,8 @@ Traditional interfaces limit users to 1-dimensional interaction (vertical scroll
 
 **Portrait Mode - Dual-Axis Navigation:**
 - **Focus Ring (Arc)**: Traverses infinite lists rotationally (CW/CCW) - items at any configured hierarchy level
-- **Parent Button**: Migrates nodes OUT from Focus Ring through finite hierarchical layers (radially outward from center)  
-- **Child Pyramid**: Migrates nodes IN to Focus Ring through finite hierarchical layers (radially inward toward center)
+- **Parent Button**: Migrates nodes OUT from Focus Ring through finite hierarchical layers (radially outward from rotation center)  
+- **Child Pyramid**: Migrates nodes IN to Focus Ring through finite hierarchical layers (radially inward toward rotation center)
 
 **Landscape Mode - Digital Table of Contents:**
 - **Focus Ring**: Traverses finite hierarchical layers through all configured levels
@@ -21,10 +21,15 @@ Traditional interfaces limit users to 1-dimensional interaction (vertical scroll
 **The Focus Ring - Sprocket Gear Concept:**
 The focus ring is NOT a circle or "hose reel" - it's an arc functioning as a sprocket gear. Data forms a sprocket chain extending linearly with defined start/end points. The gear rotates CW/CCW until first/last nodes reach the magnifier, then stops. This chain could theoretically be infinite, allowing rotational traversal of unlimited data sets while maintaining spatial orientation.
 
-**Nzone Migration Terminology:**
+**Spatial Model & Terminology:**
+For complete spatial definitions, coordinate systems, and positioning rules, see **[DESIGNSPEC.md](DESIGNSPEC.md)**
+
+**Key Terminology (see DESIGNSPEC for full details):**
 - **OUT Migration**: Nodes move OUT from Focus Ring to Parent Button (radially outward from rotation center)
 - **IN Migration**: Nodes move IN from Child Pyramid to Focus Ring (radially inward toward rotation center)
 - **Rotational Navigation**: CW/CCW movement within the Focus Ring sprocket system
+- **Clock Positions**: 6 o'clock (180°), 9 o'clock (270°), 3 o'clock (90°), etc.
+- **Off-Screen Zone**: 0° - 90° quadrant (12:00 → 3:00) - never position elements here
 
 **Note**: Top-level items (e.g., regions, markets) are excluded from rotational traversal by design - users navigate TO these items but not THROUGH their lists rotationally.
 
@@ -186,26 +191,32 @@ The catalog implements a sophisticated virtual level system:
 7. **Virtual Level System**: Dynamic grouping, orphan adoption, configuration-driven behavior
 8. **Marine Catalog Integration**: Real production data for water-cooled exhaust manifolds
 
-**🎯 IMMEDIATE PRIORITIES (Android App Launch)**
-1. **Detail Sector Content Module**: Create mobile-detailsector.js for displaying catalog information *(100% complete)*
-   - Show product descriptions, prices, alternatives, media, links within expanded circle
-   - Coordinate with animation completion timing
-   - Implement content display within Detail Sector area
+**🎯 IMMEDIATE PRIORITIES**
 
-2. **Child Pyramid Click Handling**: Complete nzone migration for all pyramid item types *(80% complete)*
-   - Virtual group navigation fully implemented
-   - Item detail selection partially implemented
-   - Leaf item handling with Detail Sector transition working
+**Priority 1: Focus Ring Positioning Fix** *(ACTIVE)*
+- **Issue**: First sorted item (e.g., Genesis book #1) appears in middle of visible arc instead of at arc start (9 o'clock)
+- **Location**: `mobile-renderer.js` → `updateFocusRingPositions()`
+- **Current**: Algorithm centers middle item at magnifier angle
+- **Required**: Offset calculation to place array[0] at 270° (9 o'clock), distribute remaining items clockwise
+- **Impact**: Critical for sequential navigation UX (Bible books, alphabetical lists)
+- **Reference**: See DESIGNSPEC.md Section 4.1 for positioning rules
 
-3. **Marine Catalog Polish**: Final UX refinements for production deployment *(90% complete)*
-   - Fine-tune manifold family groupings
-   - Optimize text formatting for engine model names
-   - Validate all manufacturer data completeness
+**Priority 2: Multi-Volume System** *(95% complete)*
+- ✅ Volume discovery and selector UI working
+- ✅ Both volumes (MMdM + Gutenberg) load and navigate correctly
+- ⚠️ Book ordering via book_number property (Pentateuch only, need remaining 61 books numbered)
+- ⚠️ Bible content population (only Genesis has full verse content)
 
-4. **Performance Optimization**: Production-ready optimizations *(70% complete)*
-   - Viewport culling already implemented and tested
-   - RequestAnimationFrame integration complete
-   - DOM manipulation already optimized
+**Priority 3: Detail Sector Content** *(100% complete)*
+- ✅ mobile-detailsector.js module created and integrated
+- ✅ Product information display within expanded circle
+- ✅ Synchronized logo and circle animations
+- ✅ ES5 compatibility for older devices
+
+**Priority 4: Child Pyramid Navigation** *(80% complete)*
+- ✅ Virtual group navigation fully implemented
+- ✅ Leaf item handling with Detail Sector transition working
+- ⚠️ Item detail selection partially implemented
 
 **� ANDROID APP DEVELOPMENT (Next Phase)**
 4. **WebView Integration**: Package as Android app
@@ -234,6 +245,14 @@ The catalog implements a sophisticated virtual level system:
 
 ### KNOWN ISSUES
 
+**🐛 ACTIVE BUG - Focus Ring Positioning**
+- **Issue**: First sorted item appears in middle of visible arc instead of at start (9 o'clock)
+- **Example**: Genesis (book_number: 1) appears around 7:30-8:00 position instead of 9:00
+- **Root Cause**: Current algorithm centers middle item at magnifier angle
+- **Impact**: Confusing for sequential navigation (alphabetical lists, numbered sequences)
+- **Location**: `mobile-renderer.js` → `updateFocusRingPositions()`
+- **Status**: INVESTIGATING - See DESIGNSPEC.md Section 4.1 for positioning requirements
+
 **🐛 MINOR BUGS**
 - Forced reflow warnings in console (performance impact minimal)
 - Undefined viewport dimensions in some debug logs (cosmetic only)
@@ -242,7 +261,8 @@ The catalog implements a sophisticated virtual level system:
 - Position caching could be more sophisticated
 - Some magic numbers should be moved to config
 - Event cleanup on component destruction needed
-- **Detail Sector Content**: Need to implement content display module (mobile-detailsector.js)
+- Bible volume needs book_number property for remaining 61 books (currently only Pentateuch)
+- Bible volume content population (only Genesis has full verse data)
 
 ### TESTING STATUS
 
@@ -303,21 +323,36 @@ The catalog implements a sophisticated virtual level system:
 **🏗️ Modular ES6 Architecture (Zero Build Process)**
 ```
 wheel/
-├── wheel.html                      - Entry point with adaptive loading
-├── mmdm_catalog.json              - Production marine manifold data
 ├── mobile/
+│   ├── DESIGNSPEC.md              - Spatial model, terminology, coordinate systems (NEW)
+│   ├── STATUS                     - Development progress and roadmap (this file)
+│   ├── README.md                  - Module architecture documentation
 │   ├── catalog_mobile_modular.js  - Entry point & module coordination
-│   ├── mobile-app.js              - Main controller with error handling (320 lines)
+│   ├── mobile-app.js              - Main controller with error handling (566 lines)
 │   ├── mobile-config.js           - Configuration constants & UI parameters (65 lines)
-│   ├── mobile-data.js             - Universal data manager (100% domain-agnostic, 450 lines)
+│   ├── mobile-data.js             - Universal data manager (100% domain-agnostic, 898 lines)
 │   ├── mobile-logger.js           - Conditional debug logging (25 lines)
-│   ├── mobile-renderer.js         - SVG rendering & navigation flow (965 lines)
+│   ├── mobile-renderer.js         - SVG rendering & navigation flow (1661 lines)
 │   ├── mobile-touch.js            - Advanced touch interaction (280 lines)
 │   ├── mobile-viewport.js         - Responsive viewport calculations (130 lines)
 │   ├── mobile-childpyramid.js     - Child Pyramid module (290 lines)
-│   └── STATUS                     - This comprehensive status file
+│   └── mobile-detailsector.js     - Detail Sector content display (NEW, 200+ lines)
+├── wheel.html                     - Entry point with adaptive loading
+├── mmdm_catalog.json              - Marine diesel manifold production database
+├── gutenberg.json                 - Gutenberg Bible (Vulgate Latin) volume (NEW)
 └── desktop/                       - Desktop version (legacy, mobile-focused project)
 ```
+
+**📚 Documentation Structure**
+- **DESIGNSPEC.md**: Authoritative spatial model, coordinate systems, terminology standards
+  - Prevents positioning errors (off-screen elements)
+  - Defines clock position reference system
+  - Documents Cartesian vs Polar coordinate usage
+  - Establishes directional terminology (OUT/IN, CW/CCW)
+  
+- **STATUS** (this file): Development progress, feature completion, roadmap
+  
+- **README.md**: Module architecture, data flow, integration patterns
 
 **🔧 Development Workflow Benefits**
 - **Native ES6 Modules**: No bundling, webpack, or build process required
@@ -330,9 +365,10 @@ wheel/
 **🎯 Key Implementation Details**
 - **Universal Data Navigation**: mobile-data.js handles any JSON hierarchy structure
 - **Advanced Touch Physics**: mobile-touch.js implements momentum, scaling, bounds checking
-- **Viewport Mathematics**: mobile-viewport.js universal arc positioning for any aspect ratio
+- **Viewport Mathematics**: mobile-viewport.js universal arc positioning for any aspect ratio (see DESIGNSPEC.md Section 3.2)
 - **Child Pyramid System**: mobile-childpyramid.js three-arc concentric display with click handling
 - **SVG Rendering**: mobile-renderer.js manages 2000+ element performance with viewport filtering
+- **Coordinate Systems**: Hybrid Cartesian/Polar usage documented in DESIGNSPEC.md Section 3
 
 ### PLATFORM EXPANSION ROADMAP
 
@@ -373,13 +409,33 @@ wheel/
 **Code Maturity**: High - comprehensive error handling, performance optimization, universal architecture
 **Documentation**: Complete technical specification with business strategy integration
 
-**Latest Updates (November 6, 2025):**
-- ✅ **Detail Sector Content Module Implemented**: Created mobile-detailsector.js with product information display within expanded circle
-- ✅ **Detail Sector Logo Opacity Adjusted**: Changed catalog_logo.png opacity from 15% to 10% at END of animation
-- ✅ **Focus Ring Rotation Speed Adjusted**: Reduced sensitivity and scaling for 104 manufacturer nodes (base sensitivity 0.0032, max scaling 8x distance/6x velocity)
-- ✅ **Detail Sector Animation Complete**: Synchronized logo and circle expand/collapse with dynamic sizing
-- ✅ **Logo Rotation Direction Fixed**: Corrected counterclockwise rotation during Detail Sector expansion (changed from +180 to -180 degrees)
-- ✅ **ES5 Compatibility Fixed**: All optional chaining replaced with && operators for older devices
+**Latest Updates (November 7, 2025):**
+- ✅ **DESIGNSPEC.md Created**: Comprehensive spatial model, coordinate system, and terminology documentation
+  - Clock position reference system (6:00 → 9:00 visible arc)
+  - Off-screen zone definition (0° - 90° quadrant to avoid)
+  - Cartesian vs Polar coordinate usage by module
+  - Directional terminology standards (OUT/IN, CW/CCW)
+  - Angle conversion reference tables
+  - Common positioning error prevention
+  
+- ✅ **Multi-Volume System**: Complete volume discovery, selection, and loading
+  - Volume selector UI with rotation and selection
+  - Both MMdM and Gutenberg volumes working
+  - Universal data navigation supports both domains
+  
+- ✅ **Book Ordering System**: Explicit book_number property with sort_property configuration
+  - Pentateuch books numbered 1-5
+  - Sort system enhanced to support custom property sorting
+  - Remaining 61 Bible books need numbering (pending)
+  
+- 🔄 **Focus Ring Positioning**: Identified issue with first item placement
+  - Currently centers middle item at magnifier angle
+  - Should place first item (array[0]) at 9 o'clock (270°)
+  - Requires algorithm adjustment in updateFocusRingPositions()
+
+**Previous Updates (November 6, 2025):**
+- ✅ **Detail Sector Content Module**: Created mobile-detailsector.js with product information display
+- ✅ **Detail Sector Animation**: Synchronized logo and circle expand/collapse with dynamic sizing
+- ✅ **ES5 Compatibility**: All optional chaining replaced with && operators
 - ✅ **Logo Animation**: 18% growth during expand, proper positioning with top buffer alignment
-- ✅ **Test Infrastructure**: Added test logos for END state positioning and sizing validation
-- 🎯 **Next Priority**: Implement Detail Sector content display module
+- ✅ **Focus Ring Rotation Speed**: Adjusted for 104 manufacturer nodes (base sensitivity 0.0032)

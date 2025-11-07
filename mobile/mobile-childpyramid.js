@@ -21,11 +21,15 @@ class MobileChildPyramid {
         // DOM element cache
         this.childRingGroup = null;
         
+        // Cache for node positions (used by fan lines)
+        this.nodePositions = [];
+        
         // Pyramid arc configuration - all relative to focus ring radius
+        // Fill order: chpyr_70 (middle), chpyr_55 (inner), chpyr_85 (outer)
         this.pyramidArcs = [
-            { name: 'chpyr_85', radiusRatio: 0.90, maxNodes: 8, startAngleDegrees: 122 },
-            { name: 'chpyr_70', radiusRatio: 0.80, maxNodes: 7, startAngleDegrees: 126 },
-            { name: 'chpyr_55', radiusRatio: 0.70, maxNodes: 4, startAngleDegrees: 142 }
+            { name: 'chpyr_70', radiusRatio: 0.75, maxNodes: 7 },
+            { name: 'chpyr_55', radiusRatio: 0.65, maxNodes: 4 },
+            { name: 'chpyr_85', radiusRatio: 0.85, maxNodes: 8 }
         ];
     }
     
@@ -52,21 +56,17 @@ class MobileChildPyramid {
         const sortedItems = this.sortChildPyramidItems(items, itemType);
         Logger.debug(`🔺 Sorted items:`, sortedItems.map(item => item.name));
         
-        // Clear and show child ring group
+        // Clear child ring group and reset caches
         this.childRingGroup.innerHTML = '';
+        this.nodePositions = [];
         this.childRingGroup.classList.remove('hidden');
-        
-        // FORCE visibility for debugging
-        this.childRingGroup.style.display = 'block';
-        this.childRingGroup.style.visibility = 'visible';
-        this.childRingGroup.style.opacity = '1';
-        
-        Logger.debug(`🔺 childRingGroup visibility forced - classList: ${this.childRingGroup.classList.toString()}`);
-        Logger.debug(`🔺 childRingGroup parent:`, this.childRingGroup.parentElement && this.childRingGroup.parentElement.id);
-        Logger.debug(`🔺 childRingGroup in DOM:`, document.contains(this.childRingGroup));
         
         // Create pyramid arcs
         this.createChildPyramidArcs(sortedItems);
+        
+        // Draw fan lines from magnifier to each pyramid node
+        this.createFanLines();
+        
         Logger.debug(`🔺 Child pyramid created successfully`);
     }
     
@@ -127,61 +127,87 @@ class MobileChildPyramid {
         const pyramidCenterX = arcParams.centerX;
         const pyramidCenterY = arcParams.centerY;
         
-        const viewportInfo = this.viewport.getViewportInfo();
-        Logger.debug(`🔺 Viewport: ${viewportInfo.width}x${viewportInfo.height}`);
-        Logger.debug(`🔺 Pyramid center in SVG coords: (${pyramidCenterX}, ${pyramidCenterY})`);
-        Logger.debug(`🔺 Focus ring center: (${arcParams.centerX}, ${arcParams.centerY}), radius: ${arcParams.radius}`);
+        // Calculate magnifier angle once (used by all arcs)
+        const magnifierAngle = this.viewport.getCenterAngle();
+        
+        Logger.debug(`🔺 Pyramid center: (${pyramidCenterX}, ${pyramidCenterY}), magnifier angle: ${(magnifierAngle * 180 / Math.PI).toFixed(1)}°`);
         
         // Distribute items across arcs (sequential fill)
         let itemIndex = 0;
         
         this.pyramidArcs.forEach(arc => {
-            // Calculate actual radius based on focus ring radius
-            arc.actualRadius = focusRingRadius * arc.radiusRatio;
+            // Calculate actual radius (don't mutate config)
+            const actualRadius = focusRingRadius * arc.radiusRatio;
             
             const arcItems = items.slice(itemIndex, itemIndex + arc.maxNodes);
-            Logger.debug(`🔺 Processing ${arc.name}: ${arcItems.length} items (slice ${itemIndex} to ${itemIndex + arc.maxNodes})`);
-            Logger.debug(`🔺 ${arc.name} gets items:`, arcItems.map(item => item.name));
+            Logger.debug(`🔺 Processing ${arc.name}: ${arcItems.length} items`);
             if (arcItems.length > 0) {
-                this.createPyramidArc(arc, arcItems, pyramidCenterX, pyramidCenterY);
+                this.createPyramidArc(arc, arcItems, pyramidCenterX, pyramidCenterY, actualRadius, magnifierAngle);
                 itemIndex += arcItems.length;
-            } else {
-                Logger.debug(`🔺 No items for ${arc.name} - skipping`);
             }
         });
         
-        // Verify elements were actually added to DOM
-        const totalElements = this.childRingGroup.children.length;
-        Logger.debug(`🔺 Total elements in childRingGroup after creation: ${totalElements}`);
-        Logger.debug(`🔺 childRingGroup HTML:`, this.childRingGroup.outerHTML.substring(0, 200) + '...');
+        Logger.debug(`🔺 Created ${this.childRingGroup.children.length} pyramid nodes`);
     }
     
     /**
      * Create a single pyramid arc
+     * Items are placed from center outward to the ends of the arc
+     * Arc is centered on the magnifier angle (half nodes above, half below)
      */
-    createPyramidArc(arcConfig, items, centerX, centerY) {
+    createPyramidArc(arcConfig, items, centerX, centerY, actualRadius, magnifierAngle) {
         const angleStep = 8 * Math.PI / 180; // 8 degrees for all arcs
         
-        const startAngle = arcConfig.startAngleDegrees * Math.PI / 180; // Convert to radians
+        // Calculate start angle so arc is centered on magnifier
+        // For odd count: middle node at magnifier angle
+        // For even count: magnifier angle is between two middle nodes
+        const startAngle = magnifierAngle - ((items.length - 1) / 2) * angleStep;
         
-        Logger.debug(`🔺 Creating ${arcConfig.name} arc: radius=${arcConfig.actualRadius}px, center=(${centerX}, ${centerY}), ${items.length} items`);
-        Logger.debug(`🔺 ${arcConfig.name} start angle: ${arcConfig.startAngleDegrees}° (${(startAngle * 180 / Math.PI).toFixed(1)}° in radians)`);
+        Logger.debug(`🔺 Creating ${arcConfig.name} arc: radius=${actualRadius}px, ${items.length} items, start angle: ${(startAngle * 180 / Math.PI).toFixed(1)}°`);
+        
+        // Calculate center-outward placement order
+        const placementOrder = this.getCenterOutwardOrder(items.length);
         
         items.forEach((item, index) => {
-            const angle = startAngle + index * angleStep;
-            const x = centerX + arcConfig.actualRadius * Math.cos(angle);
-            const y = centerY + arcConfig.actualRadius * Math.sin(angle);
+            // Use placement order to position from center outward
+            const positionIndex = placementOrder[index];
+            const angle = startAngle + positionIndex * angleStep;
+            const x = centerX + actualRadius * Math.cos(angle);
+            const y = centerY + actualRadius * Math.sin(angle);
             
-            if (arcConfig.name === 'chpyr_85') {
-                Logger.debug(`🔺 ${arcConfig.name} item ${index}: "${item.name}" at angle ${(angle * 180 / Math.PI).toFixed(1)}° → (${x.toFixed(1)}, ${y.toFixed(1)})`);
-            }
+            // Cache node position for fan lines
+            this.nodePositions.push({ x, y });
             
             const element = this.createChildPyramidElement(item, x, y, arcConfig.name, angle);
             this.childRingGroup.appendChild(element);
-            
-            // Verify element was actually appended
-            Logger.debug(`🔺 Appended element to childRingGroup. Total children now: ${this.childRingGroup.children.length}`);
         });
+    }
+    
+    /**
+     * Calculate center-outward placement order
+     * Returns array of position indices that fill from center outward
+     * Example: for 7 nodes -> [3, 4, 2, 5, 1, 6, 0] (middle first, then alternating)
+     */
+    getCenterOutwardOrder(count) {
+        const order = [];
+        const middle = Math.floor(count / 2);
+        
+        // Start with the middle position
+        order.push(middle);
+        
+        // Alternate between right and left of center
+        for (let offset = 1; offset <= middle; offset++) {
+            // Add position to the right of center
+            if (middle + offset < count) {
+                order.push(middle + offset);
+            }
+            // Add position to the left of center
+            if (middle - offset >= 0) {
+                order.push(middle - offset);
+            }
+        }
+        
+        return order;
     }
     
     /**
@@ -219,10 +245,8 @@ class MobileChildPyramid {
         circle.setAttribute('cx', x);
         circle.setAttribute('cy', y);
         circle.setAttribute('r', MOBILE_CONFIG.RADIUS.CHILD_NODE);
-        circle.setAttribute('fill', this.getItemColor(item)); // Use configurable color
+        circle.setAttribute('fill', this.getItemColor(item));
         circle.classList.add('node');
-        
-        Logger.debug(`🔺 Created ${arcName} element "${item.name}" at (${x}, ${y}) with visual radius ${MOBILE_CONFIG.RADIUS.CHILD_NODE} and hit radius ${hitRadius}`);
         
         // Create text with configurable formatting
         const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
@@ -249,59 +273,23 @@ class MobileChildPyramid {
         g.appendChild(text);
         g.appendChild(hitZone);
         
-        // Add generous click handler to the hit zone
+        // Single event handler on hit zone (most efficient approach)
         hitZone.addEventListener('click', (e) => {
-            console.log('🔺🔺🔺 HIT ZONE CLICKED!', item.name);
             e.stopPropagation();
-            Logger.debug('🔺 Hit zone clicked for:', item.name);
+            Logger.debug(`🔺 Child Pyramid item clicked: ${item.name}`);
             this.handleChildPyramidClick(item, e);
         });
         
-        // Also add click handler to visual elements as backup
-        circle.addEventListener('click', (e) => {
-            console.log('🔺🔺🔺 CIRCLE CLICKED!', item.name);
-            e.stopPropagation();
-            Logger.debug('🔺 Circle clicked for:', item.name);
-            this.handleChildPyramidClick(item, e);
-        });
-        
-        // Also add click handler to text element since it's on top
-        text.addEventListener('click', (e) => {
-            console.log('🔺🔺🔺 TEXT CLICKED!', item.name);
-            e.stopPropagation();
-            Logger.debug('🔺 Text clicked for:', item.name);
-            this.handleChildPyramidClick(item, e);
-        });
-        
-        // Add touch handlers as additional backup for mobile
-        hitZone.addEventListener('touchstart', (e) => {
-            console.log('🔺🔺🔺 HIT ZONE TOUCHED START!', item.name);
-        });
-        
+        // Touch handler for mobile devices
         hitZone.addEventListener('touchend', (e) => {
-            console.log('🔺🔺🔺 HIT ZONE TOUCHED END!', item.name);
             // Only handle if this was a tap, not the end of a drag
             if (e.changedTouches.length === 1) {
                 e.preventDefault();
                 e.stopPropagation();
-                Logger.debug('🔺 Hit zone touched for:', item.name);
+                Logger.debug(`🔺 Child Pyramid item touched: ${item.name}`);
                 this.handleChildPyramidClick(item, e);
             }
         });
-        
-        // Add touch handlers to text as well
-        text.addEventListener('touchend', (e) => {
-            console.log('🔺🔺🔺 TEXT TOUCHED END!', item.name);
-            if (e.changedTouches.length === 1) {
-                e.preventDefault();
-                e.stopPropagation();
-                Logger.debug('🔺 Text touched for:', item.name);
-                this.handleChildPyramidClick(item, e);
-            }
-        });
-        
-        // Verify element structure
-        Logger.debug(`🔺 Created element structure: g(${g.children.length} children) -> hitZone(r=${hitRadius}) + circle(${circle.getAttribute('cx')},${circle.getAttribute('cy')}) + text`);
         
         return g;
     }
@@ -310,11 +298,49 @@ class MobileChildPyramid {
      * Handle Child Pyramid item clicks (nzone migration)
      */
     handleChildPyramidClick(item, event) {
-        console.log('🔺🔺🔺 HANDLE CHILD PYRAMID CLICK CALLED!', item.name);
-        Logger.debug('🔺 Child pyramid item clicked:', item.name, 'implementing nzone migration');
+        Logger.debug(`🔺 Child pyramid item clicked: ${item.name}, initiating nzone migration`);
         
         // Delegate to renderer for migration logic
         this.renderer.handleChildPyramidClick(item, event);
+    }
+    
+    /**
+     * Create fan lines from magnifier to each Child Pyramid node
+     * Uses cached node positions instead of DOM queries for better performance
+     */
+    createFanLines() {
+        // Get magnifier position
+        const magnifierPos = this.viewport.getMagnifyingRingPosition();
+        const magnifierX = magnifierPos.x;
+        const magnifierY = magnifierPos.y;
+        
+        Logger.debug(`🔺 Creating fan lines from magnifier at (${magnifierX.toFixed(1)}, ${magnifierY.toFixed(1)})`);
+        
+        // Get pathLinesGroup from renderer
+        const pathLinesGroup = this.renderer.elements.pathLinesGroup;
+        if (!pathLinesGroup) {
+            Logger.error('pathLinesGroup not found in renderer');
+            return;
+        }
+        
+        // Clear existing lines
+        pathLinesGroup.innerHTML = '';
+        
+        // Draw lines using cached node positions
+        this.nodePositions.forEach(pos => {
+            const line = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'line');
+            line.setAttribute('x1', magnifierX.toString());
+            line.setAttribute('y1', magnifierY.toString());
+            line.setAttribute('x2', pos.x.toString());
+            line.setAttribute('y2', pos.y.toString());
+            line.setAttribute('stroke', 'black');
+            line.setAttribute('stroke-width', '1');
+            line.classList.add('fan-line');
+            
+            pathLinesGroup.appendChild(line);
+        });
+        
+        Logger.debug(`🔺 Created ${this.nodePositions.length} fan lines`);
     }
     
     /**
@@ -324,17 +350,12 @@ class MobileChildPyramid {
         if (this.childRingGroup) {
             this.childRingGroup.classList.add('hidden');
         }
-    }
-    
-    /**
-     * Update pyramid layout for viewport changes
-     */
-    handleViewportChange() {
-        // Recalculate positions if currently visible
-        if (this.childRingGroup && !this.childRingGroup.classList.contains('hidden')) {
-            // This would trigger a re-layout if items are currently displayed
-            Logger.debug('Child Pyramid viewport change detected - re-layout needed');
+        
+        // Clear fan lines and cached positions
+        if (this.renderer && this.renderer.elements && this.renderer.elements.pathLinesGroup) {
+            this.renderer.elements.pathLinesGroup.innerHTML = '';
         }
+        this.nodePositions = [];
     }
     
     /**
