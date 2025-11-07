@@ -21,7 +21,7 @@ const MOBILE_CONFIG = {
     
     // Animation constants
     ROTATION: {
-        SENSITIVITY: 0.0044,  // Increased for 2.5-swipe full traversal (was 0.003)
+        SENSITIVITY: 0.0032,  // Reduced for 104 manufacturer nodes (was 0.0044 for 2000 nodes)
         DECELERATION: 0.95,
         MIN_VELOCITY: 0.001,
         DETENT_VELOCITY: 0.005  // Higher threshold for detent snapping

@@ -29,7 +29,7 @@ let selectedMarket = null; // lock selected market until reset
 // Load JSON data
 async function loadData() {
     try {
-        const res = await fetch('./catalog.json');
+        const res = await fetch('./mmdm_catalog.json');
         data = await res.json();
         console.log('Data loaded', data);
         renderMarkets();

@@ -127,12 +127,12 @@ class TouchRotationHandler {
         
         // Distance-based scaling (for large gestures)
         const distanceScale = this.gestureDistance > 100 
-            ? Math.min(Math.pow(this.gestureDistance / 100, 1.2), 30)
+            ? Math.min(Math.pow(this.gestureDistance / 100, 1.2), 8)
             : 1.0;
         
         // Velocity-based scaling (for fast swipes)
         const velocityScale = instantaneousVelocity > 2 
-            ? Math.min(instantaneousVelocity / 2, 15)
+            ? Math.min(instantaneousVelocity / 2, 6)
             : 1.0;
         
         // Use the higher of the two scales

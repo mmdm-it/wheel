@@ -9,6 +9,7 @@
 import { MOBILE_CONFIG } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
 import { MobileChildPyramid } from './mobile-childpyramid.js';
+import { MobileDetailSector } from './mobile-detailsector.js';
 
 /**
  * Efficient renderer that minimizes DOM manipulation
@@ -20,6 +21,9 @@ class MobileRenderer {
         
         // Initialize Child Pyramid module
         this.childPyramid = new MobileChildPyramid(viewportManager, dataManager, this);
+        
+        // Initialize Detail Sector module
+        this.detailSector = new MobileDetailSector(viewportManager, dataManager, this);
         
         // DOM element caches
         this.elements = {};
@@ -84,6 +88,9 @@ class MobileRenderer {
         
         // Notify child pyramid of viewport changes
         this.childPyramid.handleViewportChange();
+        
+        // Notify detail sector of viewport changes
+        this.detailSector.handleViewportChange();
     }
     
     async initializeElements() {
@@ -135,6 +142,9 @@ class MobileRenderer {
         
         // Initialize Child Pyramid module with the DOM element
         this.childPyramid.initialize(this.elements.childRingGroup);
+        
+        // Initialize Detail Sector module with the DOM element
+        this.detailSector.initialize(this.elements.detailItemsGroup);
         
         if (missing.length > 0) {
             Logger.error('Missing DOM elements:', missing);
@@ -749,6 +759,9 @@ class MobileRenderer {
             timestamp.remove();
         }
         
+        // Reset detail sector
+        this.detailSector.reset();
+        
         Logger.debug('Renderer reset');
     }
     
@@ -996,7 +1009,13 @@ class MobileRenderer {
         
         // Opacity animation values
         const startOpacity = 0.5;
-        const endOpacity = 1.0;
+        const circleEndOpacity = 1.0;
+        const logoEndOpacity = 0.10;
+        
+        // Rotation animation values
+        const startRotation = 0; // Initial logo has no rotation
+        const magnifierAngle = this.viewport.getCenterAngle();
+        const endRotation = (magnifierAngle * 180 / Math.PI) - 180; // Match test logo rotation (CCW)
         
         // Animate to END state
         const duration = 600; // ms
@@ -1015,26 +1034,33 @@ class MobileRenderer {
             const currentCircleX = circleStartX + (circleEndX - circleStartX) * eased;
             const currentCircleY = circleStartY + (circleEndY - circleStartY) * eased;
             const currentRadius = startRadius + (endRadius - startRadius) * eased;
-            const currentOpacity = startOpacity + (endOpacity - startOpacity) * eased;
+            const currentCircleOpacity = startOpacity + (circleEndOpacity - startOpacity) * eased;
             
             // Interpolate logo position and size
             const currentLogoX = logoStartX + (logoEndState.x - logoStartX) * eased;
             const currentLogoY = logoStartY + (logoEndState.y - logoStartY) * eased;
             const currentLogoWidth = startLogoWidth + (logoEndState.width - startLogoWidth) * eased;
             const currentLogoHeight = startLogoHeight + (logoEndState.height - startLogoHeight) * eased;
+            const currentLogoOpacity = startOpacity + (logoEndOpacity - startOpacity) * eased;
+            const currentRotation = startRotation + (endRotation - startRotation) * eased;
             
             // Apply animated values to circle
             detailCircle.setAttribute('cx', currentCircleX);
             detailCircle.setAttribute('cy', currentCircleY);
             detailCircle.setAttribute('r', currentRadius);
-            detailCircle.setAttribute('opacity', currentOpacity);
+            detailCircle.setAttribute('opacity', currentCircleOpacity);
             
             // Apply animated values to logo
             detailLogo.setAttribute('x', currentLogoX);
             detailLogo.setAttribute('y', currentLogoY);
             detailLogo.setAttribute('width', currentLogoWidth);
             detailLogo.setAttribute('height', currentLogoHeight);
-            detailLogo.setAttribute('opacity', currentOpacity);
+            detailLogo.setAttribute('opacity', currentLogoOpacity);
+            
+            // Apply rotation transform with current center as rotation point
+            const currentCenterX = currentLogoX + currentLogoWidth / 2;
+            const currentCenterY = currentLogoY + currentLogoHeight / 2;
+            detailLogo.setAttribute('transform', `rotate(${currentRotation}, ${currentCenterX}, ${currentCenterY})`);
             
             // Continue animation or finish
             if (progress < 1) {
@@ -1051,11 +1077,29 @@ class MobileRenderer {
                 detailLogo.setAttribute('y', logoEndState.y);
                 detailLogo.setAttribute('width', logoEndState.width);
                 detailLogo.setAttribute('height', logoEndState.height);
-                detailLogo.setAttribute('opacity', '1.0'); // END state: 100% opacity
+                detailLogo.setAttribute('opacity', '0.10'); // END state: 10% opacity
+                
+                // Apply rotation to match test logo
+                const magnifierAngle = this.viewport.getCenterAngle();
+                const rotationDegrees = (magnifierAngle * 180 / Math.PI) - 180;
+                detailLogo.setAttribute('transform', `rotate(${rotationDegrees}, ${logoEndState.centerX}, ${logoEndState.centerY})`);
+                
+                // Calculate top buffer for debug logging
+                const logoTopEdge = logoEndState.y;
+                const screenTop = -(window.innerHeight / 2);
+                const topBuffer = logoTopEdge - screenTop;
                 
                 Logger.debug(`🔵 Detail Sector animation COMPLETE - END STATE reached`);
                 Logger.debug(`   Circle: (${circleEndX}, ${circleEndY}) r=${endRadius}px`);
                 Logger.debug(`   Logo: (${logoEndState.x}, ${logoEndState.y}) ${logoEndState.width}x${logoEndState.height}px`);
+                Logger.debug(`   Logo top edge: ${logoTopEdge.toFixed(1)}, Screen top: ${screenTop.toFixed(1)}`);
+                Logger.debug(`   Logo top buffer from screen edge: ${topBuffer.toFixed(1)}px`);
+                
+                // Show detail content for the selected item
+                if (this.selectedFocusItem) {
+                    Logger.debug('📋 Displaying detail content for selected item:', this.selectedFocusItem.name);
+                    this.detailSector.showDetailContent(this.selectedFocusItem);
+                }
             }
         };
         
@@ -1079,6 +1123,9 @@ class MobileRenderer {
         if (!detailCircle || !detailLogo) {
             return;
         }
+        
+        // Hide detail content immediately when starting collapse
+        this.detailSector.hideDetailContent();
         
         // Check if circle is already collapsed
         const currentRadius = parseFloat(detailCircle.getAttribute('r'));
@@ -1235,7 +1282,13 @@ class MobileRenderer {
         // Add to main group
         this.elements.mainGroup.appendChild(circle);
         
+        // Calculate top buffer for debug logging
+        const circleTopEdge = cy - radius;
+        const topBuffer = circleTopEdge - (-(viewportHeight / 2));
+        
         Logger.debug(`🔵 Detail Sector circle created at (${cx.toFixed(1)}, ${cy.toFixed(1)}) with ${radius.toFixed(1)}px radius`);
+        Logger.debug(`   Circle top edge: ${circleTopEdge.toFixed(1)}, Screen top: ${(-(viewportHeight/2)).toFixed(1)}`);
+        Logger.debug(`   Circle top buffer from screen edge: ${topBuffer.toFixed(1)}px (margin: ${margin.toFixed(1)}px)`);
         
         // Create Detail Sector logo
         this.createDetailSectorLogo();
@@ -1288,36 +1341,49 @@ class MobileRenderer {
         Logger.debug(`🔵 Detail Sector logo created at (${x.toFixed(1)}, ${y.toFixed(1)}) with size ${logoWidth.toFixed(1)}x${logoHeight.toFixed(1)} (${logoScaleFactor * 100}% of circle diameter)`);
     }
     
+
+    
     /**
      * Calculate END state position and size for Detail Sector logo
      * Returns logo dimensions and position for expanded state
+     * Uses same calculation as test logo for consistency
      */
     getDetailSectorLogoEndState() {
-        const viewportWidth = window.innerWidth;
-        const viewportHeight = window.innerHeight;
-        const shorterSide = Math.min(viewportWidth, viewportHeight);
-        const radius = shorterSide * 0.12;
-        const margin = shorterSide * 0.03;
+        // Get Focus Ring parameters (same as test logo)
+        const arcParams = this.viewport.getArcParameters();
+        const focusRingRadius = arcParams.radius;
         
-        // Logo dimensions at 100% scale (actual image size)
-        const logoWidth = 154;
-        const logoHeight = 134;
+        // Get magnifier angle (same as test logo)
+        const magnifierAngle = this.viewport.getCenterAngle();
         
-        // Position: centered horizontally, top buffer same as START state circle
-        const endCenterX = 0; // Centered on screen (origin at screen center)
-        const endCenterY = -(viewportHeight / 2) + radius + margin; // Same top buffer as circle
+        // Logo dimensions: 100% of Focus Ring radius for width (same as test logo)
+        const logoAspectRatio = 154 / 134; // Original aspect ratio
+        const logoWidth = focusRingRadius * 1.0;
+        const logoHeight = logoWidth / logoAspectRatio;
         
-        // Calculate top-left position for SVG image element
-        const endX = endCenterX - (logoWidth / 2);
-        const endY = endCenterY - (logoHeight / 2);
+        // Position center of logo along magnifier angle at -35% of Focus Ring radius (same as test logo)
+        const logoCenterRadius = focusRingRadius * -0.35;
+        const logoCenterX = logoCenterRadius * Math.cos(magnifierAngle);
+        const logoCenterY = logoCenterRadius * Math.sin(magnifierAngle);
+        
+        // Position logo so its center is at the calculated point
+        const endX = logoCenterX - (logoWidth / 2);
+        const endY = logoCenterY - (logoHeight / 2);
+        
+        // Debug calculation
+        Logger.debug(`🔵 getDetailSectorLogoEndState() calculation (matching test logo):`);
+        Logger.debug(`   Focus Ring radius: ${focusRingRadius.toFixed(1)}`);
+        Logger.debug(`   Logo center at (${logoCenterX.toFixed(1)}, ${logoCenterY.toFixed(1)}) (-35% of radius)`);
+        Logger.debug(`   Logo size: ${logoWidth.toFixed(1)}x${logoHeight.toFixed(1)} (100% of radius)`);
+        Logger.debug(`   Logo position: (${endX.toFixed(1)}, ${endY.toFixed(1)})`);
         
         return {
             x: endX,
             y: endY,
             width: logoWidth,
             height: logoHeight,
-            centerX: endCenterX,
-            centerY: endCenterY
+            centerX: logoCenterX,
+            centerY: logoCenterY
         };
     }
 }
