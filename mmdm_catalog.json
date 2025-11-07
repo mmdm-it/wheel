@@ -1,6 +1,10 @@
 {
     "MMdM": {
         "display_config": {
+            "wheel_volume_version": "1.0",
+            "volume_type": "wheel_hierarchical",
+            "volume_name": "Marine Diesel Manifold Volume",
+            "volume_description": "Water-Cooled Exhaust Manifolds Database",
             "ui_limits": {
                 "focus_ring_max_depth": 6,
                 "parent_button_min_depth": 1
@@ -29,7 +33,7 @@
                     "color": "#f1b800",
                     "positioning": "arc",
                     "display_name": "Manufacturer",
-                    "sort_type": "alphabetical",
+                    "sort_type": "alphabetical_reverse",
                     "focus_text_position": "radial",
                     "focus_text_transform": "none",
                     "aggregates_across": "country"

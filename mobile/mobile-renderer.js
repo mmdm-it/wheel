@@ -2,7 +2,7 @@
  * Mobile Catalog Renderer
  * Efficient renderer that minimizes DOM manipulation for mobile performance
  * 
- * This is part of the modular mobile catalog system.
+ * This is part of the modular mobile volume system.
  * Edit this file directly - no bundling required.
  */
 
@@ -324,21 +324,15 @@ class MobileRenderer {
             rotationOffset = 0; // Safe fallback
         }
         
-        // Track rotation changes - hide Child Pyramid immediately when rotation offset changes
+        // Track rotation changes - hide Child Pyramid during rotation
         const isRotating = this.lastRotationOffset !== undefined && Math.abs(rotationOffset - this.lastRotationOffset) > 0.001;
         if (isRotating) {
-            Logger.debug('🔄 ROTATION DETECTED: offset changed from', this.lastRotationOffset.toFixed(3), 'to', rotationOffset.toFixed(3));
-            Logger.debug('🔄 Child Pyramid children count BEFORE hiding:', this.elements.childRingGroup.children.length);
+            Logger.debug('🔄 Rotation detected - hiding Child Pyramid temporarily');
             
-            // FORCE hide Child Pyramid - multiple methods to ensure it works
+            // Hide Child Pyramid and fan lines during rotation
             this.elements.childRingGroup.classList.add('hidden');
-            this.elements.childRingGroup.style.display = 'none';
-            this.elements.childRingGroup.style.visibility = 'hidden';
-            this.elements.childRingGroup.innerHTML = ''; // Clear content entirely
-            
             this.elements.detailItemsGroup.classList.add('hidden');
             this.clearFanLines();
-            Logger.debug('🔄 Child Pyramid children count AFTER clearing:', this.elements.childRingGroup.children.length);
         }
         this.lastRotationOffset = rotationOffset;
         
@@ -660,6 +654,11 @@ class MobileRenderer {
     }
     
     getColor(type, name) {
+        // Special handling for volume selector
+        if (type === 'volume_selector') {
+            return '#362e6a'; // MMdM blue for volume selector
+        }
+        
         // Get color from display configuration
         const levelConfig = this.dataManager.getHierarchyLevelConfig(type);
         return levelConfig && levelConfig.color || '#f1b800'; // Default to yellow if not configured
@@ -824,27 +823,33 @@ class MobileRenderer {
         this.elements.childRingGroup.innerHTML = '';
         this.elements.childRingGroup.classList.add('hidden');
 
-        // 4. Set up touch rotation FIRST (this creates the touch handler)
-        if (window.mobileCatalogApp) {
-            window.mobileCatalogApp.setupTouchRotation(allSiblings);
-            Logger.debug('🔺 Touch rotation re-setup for', allSiblings.length, itemLevel + 's');
-        }
-
-        // 5. Find the clicked item in the siblings and center it
+        // 4. Find the clicked item in the siblings and calculate the center offset FIRST
         const clickedIndex = this.findItemIndexInArray(item, allSiblings, itemLevel);
         const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
         const middleIndex = (allSiblings.length - 1) / 2;
         const centerOffset = -(clickedIndex - middleIndex) * angleStep;
+        
+        Logger.debug(`🔺 Calculated centerOffset for ${item.name}: clickedIndex=${clickedIndex}, middleIndex=${middleIndex}, centerOffset=${centerOffset.toFixed(3)}`);
 
-        // Set the touch handler's rotation offset directly
-        if (window.mobileCatalogApp && window.mobileCatalogApp.touchHandler) {
-            window.mobileCatalogApp.touchHandler.rotationOffset = centerOffset;
+        // 5. Set up touch rotation with the correct offset
+        if (window.mobileCatalogApp) {
+            window.mobileCatalogApp.setupTouchRotation(allSiblings);
+            Logger.debug('🔺 Touch rotation re-setup for', allSiblings.length, itemLevel + 's');
+            
+            // CRITICAL: Set the rotation offset AFTER setupTouchRotation to override its default
+            if (window.mobileCatalogApp.touchHandler) {
+                window.mobileCatalogApp.touchHandler.rotationOffset = centerOffset;
+                Logger.debug('🔺 Set touch handler rotationOffset to', centerOffset.toFixed(3));
+            }
         }
+        
+        // Also update lastRotationOffset to prevent rotation detection
+        this.lastRotationOffset = centerOffset;
 
         // Update Focus Ring with siblings - clicked item should be centered
         this.updateFocusRingPositions(centerOffset);
 
-        Logger.debug(`🔺 Focus Ring updated with ${allSiblings.length} ${itemLevel}s, selected:`, item.name);
+        Logger.debug(`🔺 Focus Ring updated with ${allSiblings.length} ${itemLevel}s, selected:`, item.name, 'centerOffset:', centerOffset.toFixed(3));
 
         // 8. If a leaf item was selected, expand the blue circle to create the Detail Sector
         Logger.debug('🔵 DETAIL SECTOR CHECK: itemLevel =', itemLevel, 'item.__isLeaf =', item.__isLeaf);
@@ -958,7 +963,15 @@ class MobileRenderer {
      * Find the index of an item in an array based on level-specific matching
      */
     findItemIndexInArray(item, array, level) {
-        return array.findIndex(sibling => sibling.key === item.key);
+        const index = array.findIndex(sibling => sibling.key === item.key);
+        
+        if (index === -1) {
+            Logger.warn(`🔺 findItemIndexInArray: Item key "${item.key}" not found in array of ${array.length} items`);
+            Logger.warn(`🔺 Item keys in array:`, array.map(s => s.key));
+            Logger.warn(`🔺 Searching for item:`, item);
+        }
+        
+        return index;
     }
 
     /**
@@ -1279,8 +1292,16 @@ class MobileRenderer {
         circle.setAttribute('stroke-width', '1');
         circle.setAttribute('opacity', '0.5'); // START state: 50% opacity
         
-        // Add to main group
-        this.elements.mainGroup.appendChild(circle);
+        // Insert BEFORE detailItems group so text appears on top
+        const detailItemsGroup = this.elements.detailItemsGroup;
+        if (detailItemsGroup && detailItemsGroup.parentNode) {
+            detailItemsGroup.parentNode.insertBefore(circle, detailItemsGroup);
+            Logger.debug(`🔵 Detail Sector circle inserted BEFORE detailItems group`);
+        } else {
+            // Fallback: append to main group
+            this.elements.mainGroup.appendChild(circle);
+            Logger.warn(`🔵 detailItems group not found, appending circle to mainGroup`);
+        }
         
         // Calculate top buffer for debug logging
         const circleTopEdge = cy - radius;
@@ -1295,7 +1316,7 @@ class MobileRenderer {
     }
     
     /**
-     * Create the catalog logo positioned over the Detail Sector circle
+     * Create the volume logo positioned over the Detail Sector circle
      * Logo is centered at the same position as the circle
      */
     createDetailSectorLogo() {
@@ -1340,7 +1361,255 @@ class MobileRenderer {
         
         Logger.debug(`🔵 Detail Sector logo created at (${x.toFixed(1)}, ${y.toFixed(1)}) with size ${logoWidth.toFixed(1)}x${logoHeight.toFixed(1)} (${logoScaleFactor * 100}% of circle diameter)`);
     }
-    
+
+    /**
+     * VOLUME SELECTOR MODE
+     * Show the volume selector interface
+     */
+    showVolumeSelector(volumes, onSelectCallback) {
+        Logger.debug('📖 Showing volume selector with', volumes.length, 'volumes');
+        
+        this.volumeSelectionCallback = onSelectCallback;
+        this.volumeItems = volumes.map((volume, index) => ({
+            name: volume.name,
+            description: volume.description,
+            filename: volume.filename,
+            __volumeData: volume,
+            __index: index
+        }));
+        
+        // 1. Expand Detail Sector with message
+        this.showVolumeSelectorMessage();
+        
+        // 2. Show volumes in Focus Ring
+        this.showVolumesInFocusRing();
+        
+        // 3. Show "Explore" button
+        this.showExploreButton();
+        
+        Logger.debug('📖 Volume selector UI displayed');
+    }
+
+    /**
+     * Show "What would you like to see?" message in expanded Detail Sector
+     */
+    showVolumeSelectorMessage() {
+        const detailCircle = document.getElementById('detailSectorCircle');
+        const detailLogo = document.getElementById('detailSectorLogo');
+        
+        if (!detailCircle || !detailLogo) {
+            Logger.error('Detail Sector elements not found');
+            return;
+        }
+        
+        // Calculate expanded state
+        const arcParams = this.viewport.getArcParameters();
+        const endRadius = arcParams.radius * 0.98;
+        const endX = arcParams.centerX;
+        const endY = arcParams.centerY;
+        
+        // Move circle to expanded state (center of focus ring)
+        detailCircle.setAttribute('cx', endX);
+        detailCircle.setAttribute('cy', endY);
+        detailCircle.setAttribute('r', endRadius);
+        detailCircle.setAttribute('opacity', '1.0');
+        
+        // Position logo
+        const logoEndState = this.getDetailSectorLogoEndState();
+        detailLogo.setAttribute('x', logoEndState.x);
+        detailLogo.setAttribute('y', logoEndState.y);
+        detailLogo.setAttribute('width', logoEndState.width);
+        detailLogo.setAttribute('height', logoEndState.height);
+        detailLogo.setAttribute('opacity', '0.10');
+        
+        // Create message text
+        const messageGroup = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
+        messageGroup.setAttribute('id', 'catalogSelectorMessage');
+        
+        const message = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
+        message.setAttribute('x', endX);
+        message.setAttribute('y', endY);
+        message.setAttribute('text-anchor', 'middle');
+        message.setAttribute('dominant-baseline', 'middle');
+        message.setAttribute('fill', '#f1b800');
+        message.setAttribute('font-family', 'Montserrat, sans-serif');
+        message.setAttribute('font-size', '24');
+        message.setAttribute('font-weight', '700');
+        message.textContent = 'What would you like to see?';
+        
+        messageGroup.appendChild(message);
+        this.elements.mainGroup.appendChild(messageGroup);
+        
+        Logger.debug('📖 Catalog selector message displayed in Detail Sector');
+    }
+
+    /**
+     * Show available volumes in the Focus Ring
+     */
+    showVolumesInFocusRing() {
+        const focusRingGroup = this.elements.focusRingGroup;
+        if (!focusRingGroup) {
+            Logger.error('Focus ring group not found');
+            return;
+        }
+        
+        // Clear any existing focus items
+        while (focusRingGroup.firstChild) {
+            focusRingGroup.removeChild(focusRingGroup.firstChild);
+        }
+        
+        // Show focus ring
+        focusRingGroup.classList.remove('hidden');
+        
+        // Position volume items in focus ring
+        this.updateVolumeSelectorPositions(0);
+        
+        // Add click handlers to volume items
+        this.addVolumeClickHandlers();
+        
+        Logger.debug('📖 Volumes displayed in Focus Ring');
+    }
+
+    /**
+     * Update positions of volumes in the Focus Ring
+     */
+    updateVolumeSelectorPositions(rotationOffset) {
+        const focusRingGroup = this.elements.focusRingGroup;
+        if (!focusRingGroup) return;
+        
+        // Clear existing elements
+        while (focusRingGroup.firstChild) {
+            focusRingGroup.removeChild(focusRingGroup.firstChild);
+        }
+        
+        const arcParams = this.viewport.getArcParameters();
+        const centerAngle = this.viewport.getCenterAngle();
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        
+        const middleIndex = (this.volumeItems.length - 1) / 2;
+        
+        this.volumeItems.forEach((volume, index) => {
+            const offsetFromMiddle = index - middleIndex;
+            const itemAngle = centerAngle + (offsetFromMiddle * angleStep) + rotationOffset;
+            
+            // Position on arc
+            const x = arcParams.centerX + arcParams.radius * Math.cos(itemAngle);
+            const y = arcParams.centerY + arcParams.radius * Math.sin(itemAngle);
+            
+            // Check if this volume is centered (selected)
+            const isCentered = Math.abs(offsetFromMiddle * angleStep + rotationOffset) < angleStep / 2;
+            
+            // Create a proper focus node element using the existing method
+            const volumeFocusItem = {
+                name: volume.name,
+                __level: 'volume_selector',
+                __volumeData: volume,
+                __index: index
+            };
+            
+            const focusElement = this.createFocusElement(
+                volumeFocusItem,
+                { x, y },
+                itemAngle,
+                isCentered
+            );
+            
+            // Add volume-specific attributes
+            focusElement.setAttribute('data-volume-index', index);
+            focusElement.classList.add('volume-selector-item');
+            focusElement.style.cursor = 'pointer';
+            
+            focusRingGroup.appendChild(focusElement);
+        });
+        
+        Logger.debug(`📖 Updated ${this.volumeItems.length} volume positions`);
+    }
+
+    /**
+     * Add click handlers to volume items
+     */
+    addVolumeClickHandlers() {
+        const focusRingGroup = this.elements.focusRingGroup;
+        if (!focusRingGroup) return;
+        
+        focusRingGroup.addEventListener('click', (e) => {
+            // Find the volume item group (might click on circle or text inside it)
+            let target = e.target;
+            while (target && !target.classList.contains('volume-selector-item')) {
+                target = target.parentElement;
+                if (target === focusRingGroup) break; // Reached top without finding item
+            }
+            
+            if (target && target.classList.contains('volume-selector-item')) {
+                const index = parseInt(target.getAttribute('data-volume-index'));
+                const volume = this.volumeItems[index];
+                Logger.debug(`📖 Volume selected: ${volume.name}`);
+                
+                if (this.volumeSelectionCallback && volume.__volumeData) {
+                    this.volumeSelectionCallback(volume.__volumeData);
+                }
+            }
+        });
+    }
+
+    /**
+     * Show "Explore" button in Parent Button position
+     */
+    showExploreButton() {
+        const parentButton = document.getElementById('parentButton');
+        if (!parentButton) {
+            Logger.error('Parent button not found');
+            return;
+        }
+        
+        const parentText = document.getElementById('parentText');
+        if (parentText) {
+            parentText.textContent = 'Explore';
+        }
+        
+        parentButton.classList.remove('hidden');
+        
+        // Make button trigger volume selection when clicked
+        parentButton.setAttribute('data-volume-selector-mode', 'true');
+        
+        Logger.debug('📖 Explore button displayed');
+    }
+
+    /**
+     * Transition from catalog selector to normal navigation
+     */
+    async transitionFromVolumeSelector() {
+        Logger.debug('📖 Transitioning from volume selector to normal navigation');
+        
+        // 1. Remove volume selector message
+        const messageGroup = document.getElementById('catalogSelectorMessage');
+        if (messageGroup) {
+            messageGroup.remove();
+        }
+        
+        // 2. Collapse Detail Sector
+        this.collapseDetailSector();
+        
+        // 3. Clear Focus Ring (will be repopulated with actual volume data)
+        const focusRingGroup = this.elements.focusRingGroup;
+        if (focusRingGroup) {
+            while (focusRingGroup.firstChild) {
+                focusRingGroup.removeChild(focusRingGroup.firstChild);
+            }
+        }
+        
+        // 4. Hide Parent Button temporarily (will be shown by normal navigation)
+        const parentButton = document.getElementById('parentButton');
+        if (parentButton) {
+            parentButton.classList.add('hidden');
+            parentButton.removeAttribute('data-volume-selector-mode');
+        }
+        
+        // 5. Clear fan lines (will be drawn by normal navigation)
+        this.clearFanLines();
+        
+        Logger.debug('📖 Transition complete - ready for normal navigation');
+    }
 
     
     /**

@@ -1,5 +1,5 @@
 /**
- * Mobile Catalog Data Manager
+ * Mobile Volume Data Manager
  * Manages data loading with error handling and caching
  */
 
@@ -13,53 +13,153 @@ class DataManager {
         this.data = null;
         this.loading = false;
         this.loadPromise = null;
+        this.currentVolumePath = null;
+        this.availableVolumes = [];
+        this.rootDataKey = null; // e.g., 'MMdM' or 'Gutenberg_Bible'
     }
 
-    async load() {
-        if (this.data) return this.data;
-        if (this.loadPromise) return this.loadPromise;
-
-        this.loadPromise = this.performLoad();
-        return this.loadPromise;
+    /**
+     * Discover available Wheel volumes in the directory
+     */
+    async discoverVolumes() {
+        Logger.debug('🔍 Discovering available Wheel volumes...');
+        
+        // List of potential volume files to check
+        const candidateFiles = [
+            'mmdm_catalog.json',
+            'gutenberg.json'
+            // Future volumes will be added here:
+            // 'shakespeare.json',
+            // 'sears_catalog.json',
+            // 'britannica.json'
+        ];
+        
+        const volumes = [];
+        
+        for (const filename of candidateFiles) {
+            try {
+                Logger.debug(`🔍 Checking ${filename}...`);
+                const response = await fetch(`./${filename}`);
+                
+                if (!response.ok) {
+                    Logger.debug(`⏭️  ${filename} not found (${response.status})`);
+                    continue;
+                }
+                
+                const data = await response.json();
+                
+                // Check for Wheel volume identification keys
+                const rootKey = Object.keys(data)[0];
+                const rootData = data[rootKey];
+                
+                Logger.debug(`📋 Examining ${filename} root key: ${rootKey}`);
+                
+                if (rootData &&
+                    rootData.display_config &&
+                    rootData.display_config.volume_type === 'wheel_hierarchical' &&
+                    rootData.display_config.wheel_volume_version) {
+                    
+                    volumes.push({
+                        filename: filename,
+                        name: rootData.display_config.volume_name || filename,
+                        description: rootData.display_config.volume_description || '',
+                        version: rootData.display_config.wheel_volume_version,
+                        rootKey: rootKey
+                    });
+                    
+                    Logger.debug(`✅ Found valid Wheel volume: ${rootData.display_config.volume_name}`);
+                } else {
+                    Logger.debug(`⏭️  ${filename} missing required Wheel volume keys`);
+                }
+            } catch (error) {
+                // File doesn't exist or isn't valid JSON - skip it
+                Logger.debug(`⏭️  Error checking ${filename}: ${error.message}`);
+            }
+        }
+        
+        this.availableVolumes = volumes;
+        Logger.debug(`🔍 Discovery complete: ${volumes.length} Wheel volume(s) found`);
+        
+        if (volumes.length > 0) {
+            volumes.forEach(vol => {
+                Logger.debug(`   - ${vol.name} (${vol.filename})`);
+            });
+        }
+        
+        return volumes;
     }
 
-    async performLoad() {
-        if (this.loading) return this.data;
-
+    async loadVolume(filename) {
         this.loading = true;
-        Logger.debug('Loading catalog data...');
-
+        Logger.debug(`📂 Loading volume: ${filename}`);
+        
         try {
-            const response = await fetch('./mmdm_catalog.json');
-
+            const response = await fetch(`./${filename}`);
+            
             if (!response.ok) {
                 throw new Error(`HTTP ${response.status}: ${response.statusText}`);
             }
-
+            
             this.data = await response.json();
-
+            
+            // Determine root data key (e.g., 'MMdM', 'Gutenberg_Bible')
+            this.rootDataKey = Object.keys(this.data)[0];
+            
             if (!this.validateData(this.data)) {
                 throw new Error('Invalid data structure received');
             }
-
-            Logger.debug('Data loaded successfully', this.data);
+            
+            this.currentVolumePath = filename;
+            Logger.debug(`✅ Volume loaded successfully: ${filename}`);
             return this.data;
-
+            
         } catch (error) {
-            Logger.error('Failed to load data:', error);
+            Logger.error(`❌ Failed to load volume ${filename}:`, error);
             this.data = null;
-            throw new Error(`Unable to load catalog data: ${error.message}`);
+            throw new Error(`Unable to load volume: ${error.message}`);
         } finally {
             this.loading = false;
         }
     }
 
+    async load() {
+        // Legacy support - load default volume if no volume selector is used
+        if (this.data) return this.data;
+        if (this.loadPromise) return this.loadPromise;
+
+        this.loadPromise = this.loadVolume('mmdm_catalog.json');
+        return this.loadPromise;
+    }
+
+    async performLoad() {
+        // Deprecated - use loadCatalog() instead
+        return this.loadCatalog('mmdm_catalog.json');
+    }
+
     validateData(data) {
-        return data && data.MMdM && data.MMdM.markets && typeof data.MMdM.markets === 'object';
+        if (!data || !this.rootDataKey) return false;
+        
+        const rootData = data[this.rootDataKey];
+        if (!rootData || !rootData.display_config) return false;
+        
+        // Validate Wheel volume structure
+        if (rootData.display_config.volume_type !== 'wheel_hierarchical') return false;
+        if (!rootData.display_config.wheel_volume_version) return false;
+        
+        // Get the first data collection (markets, testaments, etc.)
+        const levelNames = Object.keys(rootData.display_config.hierarchy_levels || {});
+        if (levelNames.length === 0) return false;
+        
+        const firstLevelPlural = this.getPluralPropertyName(levelNames[0]);
+        const firstLevelData = rootData[firstLevelPlural];
+        
+        return firstLevelData && typeof firstLevelData === 'object';
     }
 
     getDisplayConfig() {
-        return this.data && this.data.MMdM && this.data.MMdM.display_config || null;
+        if (!this.data || !this.rootDataKey) return null;
+        const rootData = this.data[this.rootDataKey];
+        return rootData && rootData.display_config || null;
     }
 
     getHierarchyLevelConfig(levelType) {
@@ -96,38 +196,81 @@ class DataManager {
         return this.data;
     }
 
+    getTopLevelCollectionName() {
+        if (!this.rootDataKey) return null;
+        const levelNames = this.getHierarchyLevelNames();
+        if (levelNames.length === 0) return null;
+        return this.getPluralPropertyName(levelNames[0]);
+    }
+
+    getTopLevelCollection() {
+        if (!this.data || !this.rootDataKey) return {};
+        const rootData = this.data[this.rootDataKey];
+        const collectionName = this.getTopLevelCollectionName();
+        return rootData && rootData[collectionName] || {};
+    }
+
     getMarkets() {
-        return this.data ? Object.keys(this.data.MMdM.markets) : [];
+        // Legacy method - now returns keys from top-level collection
+        const topLevel = this.getTopLevelCollection();
+        return Object.keys(topLevel);
     }
 
     /**
-     * Get all first-level items from all top-level groups (used for initial display)
-     * This is a convenience method that aggregates first-level items across all top-level groups
+     * UNIVERSAL METHOD: Get all initial focus items for display
+     * Gets the THIRD level items aggregated across the first two hierarchy levels
+     * (e.g., manufacturers from markets+countries, books from testaments+sections)
      */
-    getAllManufacturers() {
-        if (!this.data || !this.data.MMdM.markets) return [];
+    getAllInitialFocusItems() {
+        if (!this.data || !this.rootDataKey) return [];
 
-        const markets = this.getMarkets();
-        const allFirstLevelItems = [];
+        const topLevelNames = this.getMarkets();
+        const levelNames = this.getHierarchyLevelNames();
+        
+        if (levelNames.length < 3) {
+            Logger.warn('getAllInitialFocusItems: Need at least 3 hierarchy levels');
+            return [];
+        }
+        
+        const topLevelName = levelNames[0]; // e.g., 'market' or 'testament'
+        const secondLevelName = levelNames[1]; // e.g., 'country' or 'section'
+        const thirdLevelName = levelNames[2]; // e.g., 'manufacturer' or 'book'
 
-        // Get first-level items from each top-level group
-        markets.forEach(marketName => {
-            const marketItem = {
-                name: marketName,
-                market: marketName,
-                key: marketName,
-                __level: 'market',
+        const allThirdLevelItems = [];
+        const thirdLevelConfig = this.getHierarchyLevelConfig(thirdLevelName);
+
+        // Get third-level items from each top-level group
+        topLevelNames.forEach(topLevelKey => {
+            // Create top-level item
+            const topLevelItem = {
+                name: topLevelKey,
+                [topLevelName]: topLevelKey,
+                key: topLevelKey,
+                __level: topLevelName,
                 __levelDepth: 0,
                 __isLeaf: false,
-                __path: [marketName]
+                __path: [topLevelKey]
             };
 
-            const manufacturers = this.getItemsAtLevel(marketItem, 'manufacturer');
-            allFirstLevelItems.push(...manufacturers);
+            // If third level is aggregated, get items directly from top-level (it will handle aggregation)
+            // Otherwise, traverse through second level
+            if (thirdLevelConfig && thirdLevelConfig.aggregates_across) {
+                const thirdLevelItems = this.getItemsAtLevel(topLevelItem, thirdLevelName);
+                allThirdLevelItems.push(...thirdLevelItems);
+            } else {
+                // Get second-level items (e.g., countries)
+                const secondLevelItems = this.getItemsAtLevel(topLevelItem, secondLevelName);
+                
+                // For each second-level item, get third-level items (e.g., manufacturers)
+                secondLevelItems.forEach(secondLevelItem => {
+                    const thirdLevelItems = this.getItemsAtLevel(secondLevelItem, thirdLevelName);
+                    allThirdLevelItems.push(...thirdLevelItems);
+                });
+            }
         });
 
-        // Sort reverse alphabetically by item name (Z to A)
-        return allFirstLevelItems.sort((a, b) => b.name.localeCompare(a.name));
+        // Apply sorting based on third level configuration
+        return this.sortItems(allThirdLevelItems, thirdLevelConfig);
     }
 
     /**
@@ -146,15 +289,19 @@ class DataManager {
         }
         
         // Navigate to the parent location - the raw data should be directly accessible from parent
-        let dataLocation = this.data.MMdM.markets;
+        let dataLocation = this.getTopLevelCollection();
         for (let i = 0; i < parentItem.__path.length; i++) {
             const pathSegment = parentItem.__path[i];
             const currentLevelName = levelNames[i];
             
             if (i === 0) {
                 dataLocation = dataLocation[pathSegment];
-                if (dataLocation && dataLocation.countries) {
-                    dataLocation = dataLocation.countries;
+                if (dataLocation) {
+                    // Check for second-level collection (countries, books, etc.)
+                    const secondLevelPlural = this.getPluralPropertyName(levelNames[1]);
+                    if (dataLocation[secondLevelPlural]) {
+                        dataLocation = dataLocation[secondLevelPlural];
+                    }
                 }
             } else {
                 dataLocation = dataLocation && dataLocation[pathSegment];
@@ -186,8 +333,19 @@ class DataManager {
             rawData = dataLocation && dataLocation[childCollectionName];
         }
         
-        if (!rawData || !Array.isArray(rawData)) {
-            Logger.warn(`getVirtualLevelItems: No array data found for ${dataLevelName} level`);
+        // Handle both arrays and objects with numeric/string keys
+        let dataArray;
+        if (Array.isArray(rawData)) {
+            dataArray = rawData;
+        } else if (rawData && typeof rawData === 'object') {
+            // Convert object to array of values (for chapters, verses stored as objects)
+            dataArray = Object.keys(rawData).map(key => ({
+                ...rawData[key],
+                name: key,
+                __originalKey: key
+            }));
+        } else {
+            Logger.warn(`getVirtualLevelItems: No data found for ${dataLevelName} level`);
             return [];
         }
         
@@ -197,23 +355,23 @@ class DataManager {
         const orphanGroupName = virtualLevelConfig.virtual_orphan_group_name || 'Other';
         
         // Check if any items actually belong to virtual groups
-        const hasGroupedItems = rawData.some(item => item[membershipProperty] === true);
+        const hasGroupedItems = dataArray.some(item => item[membershipProperty] === true);
         
         if (!hasGroupedItems) {
             // No items are grouped - return raw data items directly as next level
-            Logger.debug(`getVirtualLevelItems: No grouped items found, returning ${rawData.length} items from ${dataLevelName} level`);
+            Logger.debug(`getVirtualLevelItems: No grouped items found, returning ${dataArray.length} items from ${dataLevelName} level`);
             const dataLevelDepth = this.getHierarchyLevelDepth(dataLevelName);
             
-            return rawData.map((item, index) => ({
-                name: item.engine_model || item.name || `${dataLevelName}-${index}`,
+            return dataArray.map((item, index) => ({
+                name: item.engine_model || item.name || item.__originalKey || `${dataLevelName}-${index}`,
                 ...this.extractParentProperties(parentItem),
-                key: `${parentItem.key}/${item.engine_model || item.name || index}`,
+                key: `${parentItem.key}/${item.engine_model || item.name || item.__originalKey || index}`,
                 data: item,
                 index: index,
                 __level: dataLevelName,
                 __levelDepth: dataLevelDepth,
                 __isLeaf: true,
-                __path: [...parentItem.__path, item.engine_model || item.name || index]
+                __path: [...parentItem.__path, item.engine_model || item.name || item.__originalKey || index]
             }));
         }
         
@@ -221,7 +379,7 @@ class DataManager {
         const groupMap = new Map();
         const orphanItems = [];
         
-        rawData.forEach(item => {
+        dataArray.forEach(item => {
             if (item[membershipProperty] === true && item[groupingProperty]) {
                 const groupName = item[groupingProperty];
                 
@@ -289,20 +447,33 @@ class DataManager {
         const levelDepth = this.getHierarchyLevelDepth(aggregatedLevelName);
         const items = [];
         
+        Logger.debug(`getAggregatedLevelItems: parent=${parentItem.name}, level=${aggregatedLevelName}, aggregates_across=${intermediateLevelName}`);
+        
         // Navigate to parent location in JSON
-        let parentLocation = this.data.MMdM.markets;
-        if (parentItem.__level === 'market') {
+        let parentLocation = this.getTopLevelCollection();
+        const levelNames = this.getHierarchyLevelNames();
+        const topLevelName = levelNames[0];
+        
+        Logger.debug(`getAggregatedLevelItems: topLevelName=${topLevelName}, parentLevel=${parentItem.__level}`);
+        
+        if (parentItem.__level === topLevelName) {
             parentLocation = parentLocation[parentItem.name];
+            Logger.debug(`getAggregatedLevelItems: navigated to parent location, keys=${Object.keys(parentLocation||{})}`);
         }
         
         // Get the intermediate level collection
         const intermediateCollectionName = this.getPluralPropertyName(intermediateLevelName);
+        Logger.debug(`getAggregatedLevelItems: looking for ${intermediateCollectionName} in parent location`);
+        
         const intermediateCollection = parentLocation && parentLocation[intermediateCollectionName];
         
         if (!intermediateCollection || typeof intermediateCollection !== 'object') {
-            Logger.warn(`getAggregatedLevelItems: No ${intermediateCollectionName} found`);
+            Logger.warn(`getAggregatedLevelItems: No ${intermediateCollectionName} found at parent location`);
+            Logger.debug(`getAggregatedLevelItems: parentLocation keys: ${parentLocation ? Object.keys(parentLocation) : 'null'}`);
             return [];
         }
+        
+        Logger.debug(`getAggregatedLevelItems: found ${Object.keys(intermediateCollection).length} intermediate items`);
         
         // Iterate through intermediate level and collect aggregated items
         const aggregatedCollectionName = this.getPluralPropertyName(aggregatedLevelName);
@@ -327,6 +498,8 @@ class DataManager {
             }
         });
         
+        Logger.debug(`getAggregatedLevelItems: collected ${items.length} aggregated items`);
+        
         // Sort based on configuration
         return this.sortItems(items, aggregatedLevelConfig);
     }
@@ -342,7 +515,7 @@ class DataManager {
         
         // Navigate to the raw data location (one level above virtual parent in path)
         const pathToData = virtualParentItem.__path.slice(0, -1); // Remove virtual group name
-        let dataLocation = this.data.MMdM.markets;
+        let dataLocation = this.getTopLevelCollection();
         
         for (let i = 0; i < pathToData.length; i++) {
             const pathSegment = pathToData[i];
@@ -350,8 +523,12 @@ class DataManager {
             
             if (i === 0) {
                 dataLocation = dataLocation[pathSegment];
-                if (dataLocation && dataLocation.countries) {
-                    dataLocation = dataLocation.countries;
+                if (dataLocation) {
+                    // Check for second-level collection
+                    const secondLevelPlural = this.getPluralPropertyName(levelNames[1]);
+                    if (dataLocation[secondLevelPlural]) {
+                        dataLocation = dataLocation[secondLevelPlural];
+                    }
                 }
             } else {
                 dataLocation = dataLocation && dataLocation[pathSegment];
@@ -474,7 +651,8 @@ class DataManager {
         }
 
         // Navigate to the data location using the parent's path
-        let dataLocation = this.data.MMdM.markets;
+        let dataLocation = this.getTopLevelCollection();
+        let alreadyInChildCollection = false; // Track if we're already in the target child collection
         
         // Build the path through the JSON structure
         for (let i = 0; i < parentItem.__path.length; i++) {
@@ -488,9 +666,17 @@ class DataManager {
                     Logger.warn(`getItemsAtLevel: top-level group '${pathSegment}' not found`);
                     return [];
                 }
-                // Top-level groups have a 'countries' property
-                if (dataLocation.countries) {
-                    dataLocation = dataLocation.countries;
+                // Top-level groups may have a second-level collection property
+                const secondLevelPlural = this.getPluralPropertyName(levelNames[1]);
+                if (dataLocation[secondLevelPlural]) {
+                    // If the requested child level IS the second level, we're done navigating
+                    if (childLevelName === levelNames[1]) {
+                        dataLocation = dataLocation[secondLevelPlural];
+                        alreadyInChildCollection = true;
+                    } else {
+                        // Otherwise, navigate into it for further traversal
+                        dataLocation = dataLocation[secondLevelPlural];
+                    }
                 }
             } else {
                 // For subsequent levels, we're already at the parent collection
@@ -513,11 +699,20 @@ class DataManager {
             }
         }
 
-        // Now dataLocation is at the parent item, we need to get its children
-        const childCollectionName = this.getPluralPropertyName(childLevelName);
-        const childrenData = dataLocation && dataLocation[childCollectionName];
+        // Now dataLocation is at the parent item (or already in child collection if alreadyInChildCollection)
+        let childrenData;
+        
+        if (alreadyInChildCollection) {
+            // We're already in the child collection, use it directly
+            childrenData = dataLocation;
+        } else {
+            // Navigate to child collection from parent item
+            const childCollectionName = this.getPluralPropertyName(childLevelName);
+            childrenData = dataLocation && dataLocation[childCollectionName];
+        }
         
         if (!childrenData) {
+            const childCollectionName = this.getPluralPropertyName(childLevelName);
             Logger.warn(`getItemsAtLevel: could not find '${childCollectionName}' property for ${childLevelName}`);
             return [];
         }
@@ -530,10 +725,23 @@ class DataManager {
      * Get plural property name for a level (e.g., 'category' → 'categories')
      */
     getPluralPropertyName(levelName) {
-        // Handle irregular plurals
+        // Handle irregular plurals - now checking display_config for custom mappings
+        const displayConfig = this.getDisplayConfig();
+        const levelConfig = displayConfig && displayConfig.hierarchy_levels && displayConfig.hierarchy_levels[levelName];
+        
+        // Check if level config specifies a custom plural
+        if (levelConfig && levelConfig.plural_property_name) {
+            return levelConfig.plural_property_name;
+        }
+        
+        // Built-in irregular plurals
         const irregularPlurals = {
             'country': 'countries',
-            'family': 'families'
+            'family': 'families',
+            'section': 'sections',
+            'chapter_group': 'chapter_groups',
+            'verse_group': 'verse_groups',
+            'testament': 'testaments'
         };
         
         if (irregularPlurals[levelName]) {
@@ -650,21 +858,30 @@ class DataManager {
         }
 
         const sorted = [...items];
+        const sortProperty = levelConfig.sort_property || 'name';
         
         switch(levelConfig.sort_type) {
             case 'numeric_desc':
                 return sorted.sort((a, b) => {
-                    const numA = parseFloat(a.name);
-                    const numB = parseFloat(b.name);
+                    const numA = parseFloat(a.data?.[sortProperty] ?? a[sortProperty] ?? a.name);
+                    const numB = parseFloat(b.data?.[sortProperty] ?? b[sortProperty] ?? b.name);
                     return numB - numA;
                 });
             
             case 'numeric_asc':
                 return sorted.sort((a, b) => {
-                    const numA = parseFloat(a.name);
-                    const numB = parseFloat(b.name);
+                    const numA = parseFloat(a.data?.[sortProperty] ?? a[sortProperty] ?? a.name);
+                    const numB = parseFloat(b.data?.[sortProperty] ?? b[sortProperty] ?? b.name);
                     return numA - numB;
                 });
+            
+            case 'alphabetical_reverse':
+                return sorted.sort((a, b) => b.name.localeCompare(a.name));
+            
+            case 'natural':
+            case 'original':
+                // Preserve original order from JSON - no sorting
+                return items;
             
             case 'alphabetical':
             default:

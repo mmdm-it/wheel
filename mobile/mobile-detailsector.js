@@ -99,23 +99,44 @@ class MobileDetailSector {
         const contentCenterX = circleCenterX;
         const contentCenterY = circleCenterY;
 
-        // Create background circle for content area (optional visual separation)
-        const backgroundCircle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
-        backgroundCircle.setAttribute('cx', contentCenterX);
-        backgroundCircle.setAttribute('cy', contentCenterY);
-        backgroundCircle.setAttribute('r', contentRadius);
-        backgroundCircle.setAttribute('fill', 'rgba(255, 255, 255, 0.05)'); // Very subtle background
-        backgroundCircle.setAttribute('stroke', 'rgba(255, 255, 255, 0.1)');
-        backgroundCircle.setAttribute('stroke-width', '1');
-        contentGroup.appendChild(backgroundCircle);
-
+        // Add the poem at viewport center (0, 0)
+        const poemLines = [
+            "IN THE ELDER DAYS OF ART,",
+            "BUILDERS WROUGHT WITH GREATEST CARE,",
+            "EACH MINUTE AND UNSEEN PART,",
+            "FOR THE GODS SEE EVERYWHERE."
+        ];
+        
+        const poemLineHeight = 22;
+        const totalPoemHeight = poemLines.length * poemLineHeight;
+        const poemStartY = -(totalPoemHeight / 2) + 11; // Center vertically around y=0, +11 to adjust baseline
+        
+        Logger.debug(`📋 Rendering poem at viewport center (0, 0)`);
+        
+        poemLines.forEach((line, index) => {
+            const yPos = poemStartY + (index * poemLineHeight);
+            const poemText = this.createTextElement(
+                line,
+                0, // x = 0 (viewport center)
+                yPos,
+                'middle',
+                '16px',
+                '#ffd700', // Bright gold color for visibility
+                'italic'
+            );
+            poemText.setAttribute('font-family', 'serif'); // Add serif font for classic look
+            poemText.setAttribute('font-weight', 'bold'); // Make it bold for visibility
+            contentGroup.appendChild(poemText);
+            Logger.debug(`📋 Poem line ${index + 1}: "${line}" at (0, ${yPos.toFixed(1)})`);
+        });
+        
         // Create title text
         const titleText = this.createTextElement(
             item.name,
             contentCenterX,
-            contentCenterY - contentRadius * 0.35,
+            contentCenterY - contentRadius * 0.15,
             'middle',
-            '16px',
+            '18px',
             '#ffffff',
             'bold'
         );
@@ -201,7 +222,15 @@ class MobileDetailSector {
         textElement.setAttribute('text-anchor', anchor);
         textElement.setAttribute('font-size', fontSize);
         textElement.setAttribute('fill', color);
-        textElement.setAttribute('font-weight', weight);
+        
+        // Handle font-weight and font-style
+        if (weight === 'italic') {
+            textElement.setAttribute('font-style', 'italic');
+            textElement.setAttribute('font-weight', 'normal');
+        } else {
+            textElement.setAttribute('font-weight', weight);
+        }
+        
         textElement.textContent = text;
         return textElement;
     }

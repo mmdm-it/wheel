@@ -1,5 +1,5 @@
 /**
- * Mobile Catalog Application
+ * Mobile Volume Application
  * Main coordinator class and initialization logic
  */
 
@@ -23,31 +23,137 @@ class MobileCatalogApp {
         this.initialized = false;
         this.retryCount = 0;
         this.maxRetries = 3;
+        this.volumeSelectorMode = true; // Start in volume selector mode
+        this.selectedVolume = null;
     }
 
     async init() {
         try {
-            Logger.debug('Starting mobile catalog initialization...');
-
-            // Load data first
-            await this.dataManager.load();
+            Logger.debug('Starting mobile volume initialization...');
 
             // Initialize renderer (includes DOM element setup)
             await this.renderer.initialize();
 
-            // Skip top-level selection - directly show all focus items
-            this.showAllFocusItems();
+            // Set up resize handling early
+            this.setupResizeHandling();
+            
+            // Set up parent button handler early (works for both volume selector and normal navigation)
+            this.setupParentButtonHandler();
 
-        // Set up resize handling
-        this.setupResizeHandling();
-        
-        // Set up parent button click handler for nzone navigation
-        this.setupParentButtonHandler();
+            // Discover available volumes
+            const volumes = await this.dataManager.discoverVolumes();
+            
+            if (volumes.length === 0) {
+                throw new Error('No valid Wheel volumes found');
+            }
+            
+            if (volumes.length === 1) {
+                // Only one volume - load it directly
+                Logger.debug('Single volume found - loading directly');
+                await this.loadSelectedVolume(volumes[0]);
+            } else {
+                // Multiple volumes - show volume selector
+                Logger.debug(`${volumes.length} volumes found - showing selector`);
+                this.showVolumeSelector(volumes);
+            }
 
-        this.initialized = true;
-        Logger.debug('Mobile catalog initialized successfully');        } catch (error) {
+            this.initialized = true;
+            Logger.debug('Mobile volume initialized successfully');
+        } catch (error) {
             this.handleInitError(error);
         }
+    }
+
+    /**
+     * Show the volume selector interface
+     */
+    showVolumeSelector(volumes) {
+        this.volumeSelectorMode = true;
+        
+        // Initialize centered volume to middle position
+        this.centeredVolumeIndex = Math.floor((volumes.length - 1) / 2);
+        
+        // Show volume selector UI (Detail Sector + Focus Ring + Parent Button)
+        this.renderer.showVolumeSelector(volumes, (selectedVolume) => {
+            this.loadSelectedVolume(selectedVolume);
+        });
+        
+        // Set up touch rotation for volume selection
+        this.setupVolumeSelectorTouch(volumes);
+    }
+
+    /**
+     * Load the selected volume and transition to normal navigation
+     */
+    async loadSelectedVolume(volume) {
+        try {
+            Logger.debug(`📂 Loading selected volume: ${volume.name}`);
+            this.selectedVolume = volume;
+            
+            // Load the volume data
+            await this.dataManager.loadVolume(volume.filename);
+            
+            // Exit volume selector mode
+            this.volumeSelectorMode = false;
+            
+            // Transition from volume selector to normal navigation
+            await this.renderer.transitionFromVolumeSelector();
+            
+            // Show all focus items for the loaded volume
+            this.showAllFocusItems();
+            
+        } catch (error) {
+            Logger.error('Failed to load selected volume:', error);
+            alert(`Failed to load ${volume.name}. Please try another volume.`);
+        }
+    }
+
+    /**
+     * Set up touch rotation for volume selector
+     */
+    setupVolumeSelectorTouch(volumes) {
+        // Clean up existing touch handler
+        if (this.touchHandler) {
+            this.touchHandler.deactivate();
+        }
+
+        // Create touch handler for volume rotation
+        this.touchHandler = new TouchRotationHandler(
+            (offset) => this.renderer.updateVolumeSelectorPositions(offset),
+            (offset) => this.handleVolumeSelectorRotationEnd(offset)
+        );
+
+        // Calculate rotation limits for volume count
+        const limits = this.calculateRotationLimits({ length: volumes.length });
+        this.touchHandler.setRotationLimits(limits.min, limits.max);
+
+        // Activate touch handling
+        this.touchHandler.activate();
+
+        Logger.debug('Volume selector touch rotation setup complete');
+    }
+
+    handleVolumeSelectorRotationEnd(offset) {
+        // Snap to nearest volume
+        const volumes = this.dataManager.availableVolumes;
+        if (!volumes.length) return;
+
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const middleIndex = (volumes.length - 1) / 2;
+
+        const targetIndex = Math.round(middleIndex - (offset / angleStep));
+        const clampedIndex = Math.max(0, Math.min(volumes.length - 1, targetIndex));
+
+        const targetOffset = -(clampedIndex - middleIndex) * angleStep;
+        const limits = this.calculateRotationLimits({ length: volumes.length });
+        const finalOffset = Math.max(limits.min, Math.min(limits.max, targetOffset));
+
+        this.animateRotationTo(finalOffset);
+
+        // Store the currently centered volume index
+        this.centeredVolumeIndex = clampedIndex;
+
+        Logger.debug(`Snapping to volume ${clampedIndex}: ${volumes[clampedIndex].name}`);
     }
 
     handleInitError(error) {
@@ -85,7 +191,7 @@ class MobileCatalogApp {
         `;
         errorDiv.innerHTML = `
             <h3>Catalog Error</h3>
-            <p>Unable to load the catalog. Please refresh the page.</p>
+            <p>Unable to load the volume. Please refresh the page.</p>
             <button onclick="location.reload()" style="
                 background: #f1b800;
                 border: none;
@@ -173,8 +279,8 @@ class MobileCatalogApp {
             topLevelGroup.classList.add('hidden');
         }
 
-        // Get all focus items from the first hierarchy level
-        const allFocusItems = this.dataManager.getAllManufacturers();
+        // Get all focus items from the third hierarchy level
+        const allFocusItems = this.dataManager.getAllInitialFocusItems();
         Logger.debug(`Loaded ${allFocusItems.length} focus items from all top-level groups`);
 
         if (allFocusItems.length === 0) {
@@ -313,14 +419,38 @@ class MobileCatalogApp {
             return;
         }
         
-        // Add click handler for parent button nzone navigation
+        // Add click handler for parent button
         parentButton.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            this.handleParentButtonClick();
+            
+            // Check if in volume selector mode
+            if (parentButton.getAttribute('data-volume-selector-mode') === 'true') {
+                this.handleExploreButtonClick();
+            } else {
+                this.handleParentButtonClick();
+            }
         });
         
         Logger.debug('Parent button click handler initialized');
+    }
+    
+    handleExploreButtonClick() {
+        Logger.debug('📖 Explore button clicked in volume selector');
+        
+        // Find the centered volume (tracked by rotation handler)
+        const volumes = this.dataManager.availableVolumes;
+        if (!volumes.length) return;
+        
+        // Use the stored centered volume index, or default to middle
+        const centerIndex = this.centeredVolumeIndex !== undefined 
+            ? this.centeredVolumeIndex 
+            : Math.floor((volumes.length - 1) / 2);
+        
+        const selectedVolume = volumes[centerIndex];
+        
+        Logger.debug(`📖 Loading centered volume: ${selectedVolume.name} (index ${centerIndex})`);
+        this.loadSelectedVolume(selectedVolume);
     }
     
     handleParentButtonClick() {
@@ -390,7 +520,7 @@ class MobileCatalogApp {
     }
 
     reset() {
-        Logger.debug('Resetting mobile catalog');
+        Logger.debug('Resetting mobile volume');
 
         // Deactivate touch handling
         if (this.touchHandler) {
@@ -407,11 +537,11 @@ class MobileCatalogApp {
 let mobileCatalogApp = null;
 
 /**
- * Initialize the mobile catalog application
+ * Initialize the mobile volume application
  */
 async function initMobileCatalog() {
     try {
-        Logger.debug('Starting mobile catalog initialization...');
+        Logger.debug('Starting mobile volume initialization...');
 
         mobileCatalogApp = new MobileCatalogApp();
         await mobileCatalogApp.init();
@@ -429,7 +559,7 @@ async function initMobileCatalog() {
         });
 
     } catch (error) {
-        Logger.error('Failed to initialize mobile catalog:', error);
+        Logger.error('Failed to initialize mobile volume:', error);
     }
 }
 
