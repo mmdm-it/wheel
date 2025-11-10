@@ -980,11 +980,22 @@ class DataManager {
             const sortA = a.data?.sort_number ?? a.sort_number;
             const sortB = b.data?.sort_number ?? b.sort_number;
             
+            // Both have sort_number: use numeric ordering
             if (sortA !== undefined && sortB !== undefined) {
                 return sortA - sortB;  // Use explicit Publisher-assigned ordering
             }
             
-            // Focus Ring alphabetical: Z to A (higher angles = visual top)
+            // Only A has sort_number: A comes first
+            if (sortA !== undefined && sortB === undefined) {
+                return -1;
+            }
+            
+            // Only B has sort_number: B comes first
+            if (sortA === undefined && sortB !== undefined) {
+                return 1;
+            }
+            
+            // Neither has sort_number: Focus Ring alphabetical Z to A (higher angles = visual top)
             // This matches human reading expectations where "first" items appear at visual top
             return b.name.localeCompare(a.name);  // Reverse alphabetical for Focus Ring
         });

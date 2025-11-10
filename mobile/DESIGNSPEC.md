@@ -352,24 +352,51 @@ const angle_270 = Math.PI * 1.5; // 270° = 12 o'clock
 
 ## 4. VISUAL POSITIONING RULES
 
-### 4.1 Focus Ring Item Distribution
+### 4.1 Focus Ring Coordinate System - COUNTERINTUITIVE ANGLES
 
-#### Current Implementation (ISSUE)
-- **Algorithm**: Items evenly distributed across arc
-- **Center**: Middle item centered at magnifier angle
-- **Problem**: First item (e.g., Genesis) appears in middle of visible range
+#### Critical Understanding: Focus Ring "Top" vs "Bottom"
 
-#### Desired Behavior (TO BE IMPLEMENTED)
-- **Algorithm**: Items evenly distributed across arc
-- **Start**: First item positioned at magnifier
-- **Progression**: Subsequent items follow counter-clockwise from start
+**The Focus Ring coordinate system is COUNTERINTUITIVE** and requires careful attention:
 
+- **"Top" of Focus Ring**: Items with GREATER angles (closer to 180° - 9 o'clock)
+- **"Bottom" of Focus Ring**: Items with SMALLER angles (further from 180° - toward 6 o'clock)
+
+**Sorting Order (Top to Bottom):**
+```
+Genesis (sort_number: 1)     ← 178° (GREATER angle = "top")
+Exodus (sort_number: 2)      ← 175° 
+Leviticus (sort_number: 3)   ← 172°
+Numbers (sort_number: 4)     ← 169°
+Deuteronomy (sort_number: 5) ← 166° (SMALLER angle = "bottom")
+```
+
+**Why This Matters:**
+- **Sorted items** appear first (have sort_number property)
+- **First sorted items** should appear at GREATER angles (visual "top")
+- **Visual progression** flows from greater angles to smaller angles
+- **Alphabetical fallback** for unsorted items uses Z-to-A order to maintain this flow
+
+**Implementation Rule**: When positioning sorted items, the first item (lowest sort_number) gets the GREATEST angle in the visible range.
+
+#### Focus Ring Item Distribution
+
+##### Current Implementation (CORRECTED)
+- **Algorithm**: Items evenly distributed across arc with sort_number priority
+- **Sorted Items**: Positioned at arc top (greater angles, closer to 180°)
+- **Unsorted Items**: Fall back to Z-to-A alphabetical, positioned at smaller angles
+- **Center**: Magnifier at dynamic center angle (typically ~145°)
+
+##### Positioning Logic (mobile-renderer.js)
+- **File**: `mobile-renderer.js`
+- **Method**: `calculateInitialRotationOffset()`
+- **Arc Top Positioning**: Sorted items positioned at `maxViewportAngle - smallMargin`
+- **Visual Flow**: First sorted item at greatest angle, progressing to smaller angles
 
 #### Implementation Location
 - **File**: `mobile-renderer.js`
 - **Method**: `updateFocusRingPositions()`
-- **Current**: Centers middle index at center angle
-- **Required**: Offset calculation to place index[0] at 180°
+- **Current**: Uses calculateInitialRotationOffset to position sorted items at arc top
+- **Status**: Implemented and working correctly
 
 ---
 

@@ -209,60 +209,70 @@
                     "Libri_Historici_et_Novellae_Biblicae": {
                         "books": {
                             "Liber_Iosue": {
+                                "sort_number": 6,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Liber_Iudicum": {
+                                "sort_number": 7,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Liber_Ruth": {
+                                "sort_number": 8,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Liber_Primus_Samuelis": {
+                                "sort_number": 9,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Liber_Secundus_Samuelis": {
+                                "sort_number": 10,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Liber_Regum_Tertius": {
+                                "sort_number": 11,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Liber_Regum_Quartus": {
+                                "sort_number": 12,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Liber_Tobiae": {
+                                "sort_number": 13,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Liber_Iudith": {
+                                "sort_number": 14,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Liber_Esther": {
+                                "sort_number": 15,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
@@ -273,12 +283,14 @@
                     "Libri_Sapientiae": {
                         "books": {
                             "Liber_Iob": {
+                                "sort_number": 16,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Liber_Psalmorum": {
+                                "sort_number": 17,
                                 "chapter_groups": {
                                     "Liber_I": {},
                                     "Liber_II": {},
@@ -291,30 +303,35 @@
                                 "verses": {}
                             },
                             "Liber_Proverbiorum": {
+                                "sort_number": 18,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Ecclesiastes": {
+                                "sort_number": 19,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Canticum_Canticorum_Salomonis": {
+                                "sort_number": 20,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Liber_Sapientiae": {
+                                "sort_number": 21,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Ecclesiasticus": {
+                                "sort_number": 22,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
@@ -325,108 +342,126 @@
                     "Libri_Prophetici": {
                         "books": {
                             "Prophetia_Isaiae": {
+                                "sort_number": 23,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Ieremiae": {
+                                "sort_number": 24,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Threni": {
+                                "sort_number": 25,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Baruch": {
+                                "sort_number": 26,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Ezechielis": {
+                                "sort_number": 27,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Danielis": {
+                                "sort_number": 28,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Osee": {
+                                "sort_number": 29,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Ioel": {
+                                "sort_number": 30,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Amos": {
+                                "sort_number": 31,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Abdiae": {
+                                "sort_number": 32,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Ionae": {
+                                "sort_number": 33,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Michaeae": {
+                                "sort_number": 34,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Nahum": {
+                                "sort_number": 35,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Habacuc": {
+                                "sort_number": 36,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Sophoniae": {
+                                "sort_number": 37,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Aggaei": {
+                                "sort_number": 38,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Zachariae": {
+                                "sort_number": 39,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Prophetia_Malachiae": {
+                                "sort_number": 40,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
@@ -441,24 +476,28 @@
                     "Evangelia": {
                         "books": {
                             "Sanctum_Iesu_Christi_Evangelium_Secundum_Matthaeum": {
+                                "sort_number": 41,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Sanctum_Iesu_Christi_Evangelium_Secundum_Marcum": {
+                                "sort_number": 42,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Sanctum_Iesu_Christi_Evangelium_Secundum_Lucam": {
+                                "sort_number": 43,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Sanctum_Iesu_Christi_Evangelium_Secundum_Ioannem": {
+                                "sort_number": 44,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
@@ -469,6 +508,7 @@
                     "Actus_Apostolorum": {
                         "books": {
                             "Actus_Apostolorum": {
+                                "sort_number": 45,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
@@ -479,126 +519,147 @@
                     "Epistolae": {
                         "books": {
                             "Epistola_Beati_Pauli_Apostoli_Ad_Romanos": {
+                                "sort_number": 46,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Corinthios_Prima": {
+                                "sort_number": 47,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Corinthios_Secunda": {
+                                "sort_number": 48,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Galatas": {
+                                "sort_number": 49,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Ephesios": {
+                                "sort_number": 50,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Philippenses": {
+                                "sort_number": 51,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Colossenses": {
+                                "sort_number": 52,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Thessalonicenses_Prima": {
+                                "sort_number": 53,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Thessalonicenses_Secunda": {
+                                "sort_number": 54,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Timotheum_Prima": {
+                                "sort_number": 55,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Timotheum_Secunda": {
+                                "sort_number": 56,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Titum": {
+                                "sort_number": 57,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Philemonem": {
+                                "sort_number": 58,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Pauli_Apostoli_Ad_Hebraeos": {
+                                "sort_number": 59,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Catholica_Beati_Iacobi_Apostoli": {
+                                "sort_number": 60,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Petri_Apostoli_Prima": {
+                                "sort_number": 61,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Petri_Apostoli_Secunda": {
+                                "sort_number": 62,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Ioannis_Apostoli_Prima": {
+                                "sort_number": 63,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Ioannis_Apostoli_Secunda": {
+                                "sort_number": 64,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Beati_Ioannis_Apostoli_Tertia": {
+                                "sort_number": 65,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
                             "Epistola_Catholica_Beati_Iudae_Apostoli": {
+                                "sort_number": 66,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
@@ -609,6 +670,7 @@
                     "Apocalypsis": {
                         "books": {
                             "Apocalypsis_Beati_Ioannis_Apostoli": {
+                                "sort_number": 67,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},

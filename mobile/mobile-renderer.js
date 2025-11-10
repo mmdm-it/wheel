@@ -297,14 +297,14 @@ class MobileRenderer {
         );
         
         if (hasSortNumbers) {
-            // For sorted items (like Bible books), position first item at arc start
-            // Arc start is at higher angle (visual top), so we need positive offset
-            // to move first item (index 0) from center toward higher angles
+            // For sorted items (like Bible books), position first item at arc top
+            // Arc top is at highest angle (visual top), so we need positive offset
+            // to move first item (index 0) from center toward highest visible angle
             const maxViewportAngle = MOBILE_CONFIG.VIEWPORT.VIEWPORT_ARC / 2;
-            const arcStartOffset = maxViewportAngle - (angleStep * 2); // Position near arc start with some margin
+            const arcTopOffset = maxViewportAngle - (angleStep * 1); // Position at arc top with small margin
             
-            Logger.debug(`Sorted items (${this.currentFocusItems.length}): positioning at arc start, offset = ${arcStartOffset * 180 / Math.PI}°`);
-            return arcStartOffset;
+            Logger.debug(`Sorted items (${this.currentFocusItems.length}): positioning at arc top, offset = ${arcTopOffset * 180 / Math.PI}°`);
+            return arcTopOffset;
         }
         
         // For unsorted items, use original centering logic
