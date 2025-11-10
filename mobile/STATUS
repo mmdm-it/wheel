@@ -116,29 +116,48 @@ For complete spatial definitions, coordinate systems, and positioning rules, see
 - Portrait/landscape detection with automatic re-layout
 - Dual-perspective coordinate storage (Hub polar, Nuc Cartesian)
 - Robust error handling for viewport edge cases
-## Virtual Level Logic & Orphan Adoption
+## Pseudo Parent Level System (`rpp_` Architecture)
 
-The catalog implements a sophisticated virtual level system:
+The catalog implements a revolutionary pseudo parent level system using curatorial prefix triggers:
 
-### Virtual vs Real Level Architecture
+### Pseudo Parent Architecture
 - **Real Levels**: Data exists in JSON structure at a specific hierarchy depth
-- **Virtual Levels**: Computed groupings from child data (e.g., grouping items by property)
-  Uses `is_virtual: true` flag with `virtual_grouping_property` and `virtual_membership_property`
-- **Aggregated Levels**: Combine items across intermediate collections
-  Uses `aggregates_across` configuration to specify intermediate level
+- **Pseudo Parent Levels**: Dynamically created levels triggered by `rpp_` (requires pseudo parent) prefix
+- **Universal Trigger**: Any data item can trigger pseudo parent creation using `rpp_propertyname: true`
+- **Direction**: Pseudo parents are always positioned OUT (above) the triggering data level
+
+### Universal Trigger System (`rpp_` Prefix)
+- **Pattern**: `rpp_levelname: true` in data item triggers creation of "levelname" pseudo parent
+- **Domain Agnostic**: Works for any property name (family, venue_type, political_era, certification, etc.)
+- **Nested Support**: Pseudo parents can have their own pseudo parents for unlimited depth
+- **Constraint**: Top levels (markets, testaments) and leaf levels (models, verses) cannot create pseudo parents
 
 ### Orphan Adoption System
-- Items with `in_a_group: false` (or similar membership flag) are considered orphans
-- Virtual level creation adopts orphans into a configurable group (e.g., "Other")
+- Items without `rpp_` trigger are considered orphans
+- Orphans are adopted into configurable group name (e.g., "Pending Approval", "Uncategorized", "Studio Only")
 - Provides consistent UX while respecting data structure differences
+- Orphan group name defined in `pseudo_orphan_group` configuration
 
-### Navigation Flow Impact
-- Items with virtual groups: Parent → Virtual Group → Children (3 levels)
-- Items without virtual groups: Parent → Children (2 levels, skips virtual)
-- Mixed case: Real groups + Orphan group
+### Navigation Flow Examples
+**Simple Pseudo Parent:**
+```
+Market → Country → Manufacturer → Cylinder → [family] → Model
+                                    ↑           ↑
+                                  real     pseudo parent
+                                          (triggered by model)
+```
+
+**Nested Pseudo Parents:**
+```  
+Artist → Decade → [venue_type] → [recording_session] → Song
+           ↑           ↑               ↑
+         real     pseudo         pseudo parent
+                 parent          (nested)
+```
 
 ### Implementation Status
-- ✅ Virtual level detection with configuration-driven checking
+- ⚠️ **PENDING**: `rpp_` prefix trigger system implementation
+- ✅ Virtual level detection with configuration-driven checking  
 - ✅ Orphan adoption into configurable group name
 - ✅ Child Pyramid click handlers with virtual level logic
 - ✅ Universal getItemsAtLevel() for all navigation
@@ -265,6 +284,8 @@ The catalog implements a sophisticated virtual level system:
 - Undefined viewport dimensions in some debug logs (cosmetic only)
 
 **⚠️ TECHNICAL DEBT**
+- **CRITICAL: Domain-specific language in mobile-renderer.js**: Hardcoded references to 'model', 'family', 'families', 'models' throughout renderer code violates universal architecture principle
+- **CRITICAL: Pseudo parent level system needed**: Current virtual level system requires `rpp_` (requires pseudo parent) prefix architecture to eliminate domain-specific triggers and enable universal nested pseudo levels
 - Position caching could be more sophisticated
 - Some magic numbers should be moved to config
 - Event cleanup on component destruction needed
@@ -417,6 +438,14 @@ wheel/
 **Documentation**: Complete technical specification with business strategy integration
 
 **Latest Updates (November 10, 2025):**
+- ✅ **Pseudo Parent Level System Designed**: Revolutionary `rpp_` (requires pseudo parent) prefix architecture for universal dynamic hierarchy creation
+  - **Universal Trigger Pattern**: `rpp_propertyname: true` creates pseudo parent levels dynamically
+  - **Domain Agnostic**: Works for any data domain (marine families, music venues, medical certifications, political eras)
+  - **Nested Support**: Pseudo parents can have their own pseudo parents for unlimited depth
+  - **Orphan Adoption**: Configurable orphan groups with positive naming (e.g., "Pending Approval")
+  - **Navigation Direction**: Pseudo parents positioned OUT (above) triggering data level
+  - **Implementation Priority**: Critical for eliminating domain-specific code in mobile-renderer.js
+  
 - ✅ **Universal Sorting System Completed**: Revolutionary sort_number priority with curatorial judgment integration
   - **Universal sort_number Priority**: Enhanced sortItems() method to prioritize sort_number over alphabetical sorting
   - **Curatorial Judgment Architecture**: Implemented rcj_ prefix for curatorial judgment fields (e.g., rcj_sort_number)
