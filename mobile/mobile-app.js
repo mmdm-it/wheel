@@ -454,69 +454,116 @@ class MobileCatalogApp {
     }
     
     handleParentButtonClick() {
-        Logger.debug('🔼 Parent button clicked - implementing nzone migration IN');
-        
-        // NZONE MIGRATION: Parent Button → Focus Ring (move IN)
-        // This moves the parent level IN to become the new focus in the Focus Ring
-        
+        Logger.debug('🔼 Parent button clicked - migrating OUT toward root');
+
         if (!this.renderer.selectedFocusItem) {
             Logger.warn('No focus item selected for parent navigation');
             return;
         }
-        
+
         const currentFocus = this.renderer.selectedFocusItem;
-        Logger.debug('🔼 Moving parent level IN for focus item:', currentFocus.name);
-        
-        // Get the current hierarchy level of the selected item
         const currentLevel = this.renderer.getItemHierarchyLevel(currentFocus);
         if (!currentLevel) {
             Logger.warn('🔼 Could not determine hierarchy level for current focus item');
             return;
         }
-        
-        // If we're navigating back from leaf item level, collapse the Detail Sector
-        if (currentLevel === 'model') {
+
+        if (this.renderer.isLeafItem(currentFocus)) {
             this.renderer.collapseDetailSector();
         }
-        
-        // Get the parent level
+
         const parentLevel = this.renderer.getPreviousHierarchyLevel(currentLevel);
         if (!parentLevel) {
             Logger.debug('🔼 Already at top level - no parent navigation available');
+            this.renderer.updateParentButton(null);
             return;
         }
-        
-        Logger.debug(`🔼 Navigating from ${currentLevel} to ${parentLevel} level`);
-        
-        // Build parent item from current focus item
+
+        Logger.debug(`🔼 Navigating from ${currentLevel} to parent level ${parentLevel}`);
+
         const parentItem = this.renderer.buildParentItemFromChild(currentFocus, parentLevel);
-        
-        // Get all siblings at the current level (they become the new Focus Ring)
-        const siblings = this.renderer.getChildItemsForLevel(parentItem, currentLevel);
-        
-        if (siblings.length === 0) {
-            Logger.warn(`🔼 No siblings found at ${currentLevel} level for parent navigation`);
+        if (!parentItem || !parentItem.key) {
+            Logger.warn('🔼 Unable to build parent item from current focus selection');
             return;
         }
-        
-        // Update Focus Ring with siblings
-        this.renderer.currentFocusItems = siblings;
-        this.renderer.selectedFocusItem = null; // No single item selected in the new focus ring
-        
-        // Update Parent Button to show the parent level name
-        const parentName = this.renderer.getParentNameForLevel(currentFocus, parentLevel);
-        this.renderer.updateParentButton(parentName);
-        
-        // Hide current Child Pyramid
-        this.renderer.elements.childRingGroup.classList.add('hidden');
-        
-        // Update Focus Ring display
-        this.renderer.updateFocusRingPositions(0);
-        
-        // Re-setup touch rotation for the new focus items
-        this.setupTouchRotation(siblings);
-        
-        Logger.debug(`🔼 Parent navigation complete - Focus Ring now shows ${siblings.length} ${currentLevel}s`);
+
+        const grandParentLevel = this.renderer.getPreviousHierarchyLevel(parentLevel);
+        let parentSiblings = [];
+
+        if (grandParentLevel) {
+            const grandParentItem = this.renderer.buildParentItemFromChild(parentItem, grandParentLevel);
+            parentSiblings = this.renderer.getChildItemsForLevel(grandParentItem, parentLevel) || [];
+        } else if (typeof this.renderer.getTopLevelItems === 'function') {
+            parentSiblings = this.renderer.getTopLevelItems();
+        }
+
+        if (!parentSiblings.length) {
+            Logger.warn(`🔼 No items found at parent level '${parentLevel}' for parent navigation`);
+            return;
+        }
+
+        const selectedParent = parentSiblings.find(item => item.key === parentItem.key) || parentSiblings[0];
+        if (!selectedParent) {
+            Logger.warn('🔼 Parent level item not found among siblings');
+            return;
+        }
+
+        Logger.debug(`🔼 Parent siblings count: ${parentSiblings.length}, selected parent: ${selectedParent.name || selectedParent.key}`);
+
+        this.renderer.currentFocusItems = parentSiblings;
+        this.renderer.allFocusItems = parentSiblings;
+
+        const parentIndex = this.renderer.findItemIndexInArray(selectedParent, parentSiblings, parentLevel);
+        if (parentIndex === -1) {
+            Logger.warn('🔼 Could not locate selected parent in siblings array; defaulting to first position');
+        }
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const middleIndex = (parentSiblings.length - 1) / 2;
+        const centerOffset = parentIndex >= 0 ? -(parentIndex - middleIndex) * angleStep : 0;
+
+        Logger.debug(`🔼 Parent index: ${parentIndex}, centerOffset: ${centerOffset}`);
+
+        if (this.renderer.elements.childRingGroup) {
+            this.renderer.elements.childRingGroup.classList.add('hidden');
+        }
+        this.renderer.clearFanLines();
+
+        this.setupTouchRotation(parentSiblings);
+        if (this.touchHandler) {
+            this.touchHandler.rotationOffset = centerOffset;
+        }
+
+        if (this.renderer.settleTimeout) {
+            clearTimeout(this.renderer.settleTimeout);
+            this.renderer.settleTimeout = null;
+        }
+
+        this.renderer.updateFocusRingPositions(centerOffset);
+        if (this.renderer.settleTimeout) {
+            clearTimeout(this.renderer.settleTimeout);
+            this.renderer.settleTimeout = null;
+        }
+        this.renderer.lastRotationOffset = centerOffset;
+        this.renderer.selectedFocusItem = selectedParent;
+        this.renderer.activeType = parentLevel;
+        this.renderer.buildActivePath(selectedParent);
+        this.renderer.isRotating = false;
+
+        const centerAngle = this.renderer.viewport.getCenterAngle();
+        const adjustedCenterAngle = centerAngle + centerOffset;
+        const selectedAngle = parentIndex >= 0
+            ? adjustedCenterAngle + (parentIndex - middleIndex) * angleStep
+            : adjustedCenterAngle;
+
+        this.renderer.showChildContentForFocusItem(selectedParent, selectedAngle);
+
+        const grandParentName = grandParentLevel
+            ? this.renderer.getParentNameForLevel(selectedParent, grandParentLevel)
+            : null;
+        Logger.debug(`🔼 Updating Parent Button label to: ${grandParentName || 'none'} (grandparent level: ${grandParentLevel || 'top'})`);
+        this.renderer.updateParentButton(grandParentName);
+
+        Logger.debug(`🔼 Parent navigation complete - Focus Ring now shows ${parentSiblings.length} ${parentLevel}s`);
     }
 
     reset() {

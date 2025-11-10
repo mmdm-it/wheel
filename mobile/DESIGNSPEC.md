@@ -561,22 +561,157 @@ When reviewing positioning code:
 
 ---
 
-## 8. IMPLEMENTATION PRIORITIES
+## 8. PSEUDO PARENT LEVEL SYSTEM
 
-### 8.1 Current Issue: Focus Ring Positioning
-**Problem**: First sorted item appears in middle of visible arc instead of at 9 o'clock edge
+### 8.1 Universal Pseudo Parent Architecture
 
-**Location**: `mobile-renderer.js` → `updateFocusRingPositions()`
+The Wheel system implements a revolutionary **pseudo parent level system** using curatorial prefix triggers that enable universal, domain-agnostic dynamic hierarchy creation.
+
+#### Core Concept
+**Pseudo parents are dynamically created levels that sit "above" (OUT from Hub) the data level containing the trigger.** They provide organizational structure without requiring pre-defined JSON hierarchy changes.
+
+#### Universal Trigger Pattern: `rpp_` Prefix
+```json
+{
+  "model": "LADA_Niva_4x4_1977",
+  "political_era": "Soviet",
+  "rpp_political_era": true,        // 🔥 Triggers "political_era" pseudo parent
+  "fuel_type": "Gasoline", 
+  "rpp_fuel_type": true             // 🔥 Triggers "fuel_type" pseudo parent
+}
+```
+
+#### Navigation Flow Creation
+**Before Trigger:** `Manufacturer → Engine → Model`  
+**After Trigger:** `Manufacturer → Engine → [political_era] → [fuel_type] → Model`
+
+### 8.2 Universal Algorithm (Domain-Agnostic)
+
+#### Pseudo Parent Detection
+```javascript
+getParentHierarchyLevel(currentLevel, childItem) {
+  const currentLevelConfig = this.getHierarchyLevelConfig(currentLevel);
+  
+  // Check for pseudo parent triggers
+  if (currentLevelConfig.supports_pseudo_parents) {
+    for (const pseudoParent of currentLevelConfig.supports_pseudo_parents) {
+      const triggerProperty = `rpp_${pseudoParent}`;
+      if (childItem[triggerProperty] === true) {
+        return pseudoParent;  // Create pseudo parent level
+      }
+    }
+  }
+  
+  // Standard hierarchy progression
+  const levelNames = this.getHierarchyLevelNames();
+  const currentIndex = levelNames.indexOf(currentLevel);
+  return currentIndex > 0 ? levelNames[currentIndex - 1] : null;
+}
+```
+
+### 8.3 Configuration Architecture
+
+#### Hierarchy Level Configuration
+```json
+"hierarchy_levels": {
+  "cylinder": {
+    "sort_type": "numeric_desc",
+    "supports_pseudo_parents": ["family", "fuel_type"]
+  },
+  "family": {
+    "is_pseudo_parent": true,
+    "pseudo_trigger_prefix": "rpp_",
+    "pseudo_orphan_group": "Pending Approval",
+    "supports_pseudo_parents": ["fuel_type"]  // Nested pseudo parents
+  },
+  "fuel_type": {
+    "is_pseudo_parent": true,
+    "pseudo_trigger_prefix": "rpp_",
+    "pseudo_orphan_group": "Mixed Fuel"
+  }
+}
+```
+
+### 8.4 Cross-Domain Examples
+
+#### Marine Engines
+```json
+"8": [
+  {
+    "model": "X8LG",
+    "family": "Lightning_Series",
+    "rpp_family": true,
+    "fuel_type": "Gas",
+    "rpp_fuel_type": true
+  }
+]
+```
+
+#### Music Catalog
+```json
+"1960s": [
+  {
+    "song": "Paint_It_Black", 
+    "venue_type": "Studio",
+    "rpp_venue_type": true,
+    "recording_session": "Olympic_Studios",
+    "rpp_recording_session": true
+  }
+]
+```
+
+#### Medical Equipment
+```json
+"Cardiac": [
+  {
+    "device": "Stethoscope_Model_X",
+    "certification": "FDA_Approved", 
+    "rpp_certification": true,
+    "specialization": "Pediatric",
+    "rpp_specialization": true
+  }
+]
+```
+
+### 8.5 Orphan Adoption System
+
+#### Orphan Classification
+Items without `rpp_trigger: true` are considered orphans and adopted into configurable groups:
+
+**Examples:**
+- **"Pending Approval"**: Items awaiting curatorial classification
+- **"Uncategorized"**: General catch-all group
+- **"Studio Only"**: Domain-specific orphan group (music)
+- **"Legacy Models"**: Historical items without modern classification
+
+#### Benefits
+1. **Universal Pattern**: Works across any data domain
+2. **Curatorial Workflow**: Supports content management processes  
+3. **Data Consistency**: Maintains navigation structure regardless of data completeness
+4. **Non-Dickensian**: Positive naming avoids stigmatizing uncategorized items
+
+### 8.6 Implementation Status
+
+**Current State:** Architecture defined, implementation pending  
+**Priority:** Critical for eliminating domain-specific code in mobile-renderer.js  
+**Complexity:** Medium - requires navigation flow refactoring  
+**Impact:** Enables true universal data domain support
+
+## 9. IMPLEMENTATION PRIORITIES
+
+### 9.1 Immediate: Pseudo Parent System Implementation
+**Problem**: Domain-specific code in mobile-renderer.js prevents universal deployment
 
 **Solution Required**:
-1. Calculate offset to place array[0] at 270° (9 o'clock)
-2. Distribute remaining items clockwise from that position
-3. Maintain even spacing across arc
-4. Test with different item counts and aspect ratios
+1. Implement `rpp_` prefix detection in mobile-data.js
+2. Add pseudo parent configuration support
+3. Update navigation flow in mobile-renderer.js
+4. Remove hardcoded 'model', 'family' references
+5. Test with marine, Bible, and music catalogs
 
-### 8.2 Documentation Maintenance
+### 9.2 Documentation Maintenance
 - Update this DESIGNSPEC when adding new components
-- Document any new coordinate system interactions
+- Document any new coordinate system interactions  
 - Add positioning rules for new navigation zones
 - Maintain angle reference table accuracy
 

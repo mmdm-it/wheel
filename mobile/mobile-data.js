@@ -555,49 +555,86 @@ class DataManager {
         const intermediateLevelName = aggregatedLevelConfig.aggregates_across;
         const levelDepth = this.getHierarchyLevelDepth(aggregatedLevelName);
         const items = [];
-        
-        Logger.debug(`getAggregatedLevelItems: parent=${parentItem.name}, level=${aggregatedLevelName}, aggregates_across=${intermediateLevelName}`);
-        
-        // Navigate to parent location in JSON
-        let parentLocation = this.getTopLevelCollection();
-        const levelNames = this.getHierarchyLevelNames();
-        const topLevelName = levelNames[0];
-        
-        Logger.debug(`getAggregatedLevelItems: topLevelName=${topLevelName}, parentLevel=${parentItem.__level}`);
-        
-        if (parentItem.__level === topLevelName) {
-            parentLocation = parentLocation[parentItem.name];
-            Logger.debug(`getAggregatedLevelItems: navigated to parent location, keys=${Object.keys(parentLocation||{})}`);
+
+        const parentLabel = parentItem.name || parentItem.key || 'unknown';
+        Logger.debug(`getAggregatedLevelItems: parent=${parentLabel}, level=${aggregatedLevelName}, aggregates_across=${intermediateLevelName}`);
+
+        const parentLocation = this.getDataLocationForItem(parentItem);
+        if (!parentLocation) {
+            Logger.warn('getAggregatedLevelItems: Unable to resolve parent location for aggregated retrieval');
+            return [];
         }
-        
-        // Get the intermediate level collection
+
+        const aggregatedCollectionName = this.getPluralPropertyName(aggregatedLevelName);
         const intermediateCollectionName = this.getPluralPropertyName(intermediateLevelName);
-        Logger.debug(`getAggregatedLevelItems: looking for ${intermediateCollectionName} in parent location`);
-        
-        const intermediateCollection = parentLocation && parentLocation[intermediateCollectionName];
-        
+
+        if (parentItem.__level === intermediateLevelName) {
+            const aggregatedCollection = parentLocation[aggregatedCollectionName];
+
+            if (!aggregatedCollection || typeof aggregatedCollection !== 'object') {
+                Logger.warn(`getAggregatedLevelItems: No ${aggregatedCollectionName} found for ${parentLabel}`);
+                return [];
+            }
+
+            if (Array.isArray(aggregatedCollection)) {
+                aggregatedCollection.forEach((entry, index) => {
+                    const itemName = entry && entry.name ? entry.name : `${aggregatedLevelName}-${index}`;
+                    items.push({
+                        name: itemName,
+                        [intermediateLevelName]: parentItem.name || parentItem[intermediateLevelName],
+                        ...this.extractParentProperties(parentItem),
+                        key: `${parentItem.key}/${itemName}`,
+                        data: entry,
+                        __level: aggregatedLevelName,
+                        __levelDepth: levelDepth,
+                        __isLeaf: false,
+                        __path: [...parentItem.__path, itemName]
+                    });
+                });
+            } else {
+                Object.keys(aggregatedCollection).forEach(itemName => {
+                    const entry = aggregatedCollection[itemName];
+                    items.push({
+                        name: entry && entry.display_name ? entry.display_name : itemName,
+                        [intermediateLevelName]: parentItem.name || parentItem[intermediateLevelName],
+                        ...this.extractParentProperties(parentItem),
+                        key: `${parentItem.key}/${itemName}`,
+                        data: entry,
+                        __level: aggregatedLevelName,
+                        __levelDepth: levelDepth,
+                        __isLeaf: false,
+                        __path: [...parentItem.__path, itemName]
+                    });
+                });
+            }
+
+            Logger.debug(`getAggregatedLevelItems: collected ${items.length} aggregated items from intermediate parent ${parentLabel}`);
+            return this.sortItems(items, aggregatedLevelConfig);
+        }
+
+        const intermediateCollection = parentLocation[intermediateCollectionName];
+
         if (!intermediateCollection || typeof intermediateCollection !== 'object') {
             Logger.warn(`getAggregatedLevelItems: No ${intermediateCollectionName} found at parent location`);
             Logger.debug(`getAggregatedLevelItems: parentLocation keys: ${parentLocation ? Object.keys(parentLocation) : 'null'}`);
             return [];
         }
-        
+
         Logger.debug(`getAggregatedLevelItems: found ${Object.keys(intermediateCollection).length} intermediate items`);
-        
-        // Iterate through intermediate level and collect aggregated items
-        const aggregatedCollectionName = this.getPluralPropertyName(aggregatedLevelName);
-        
+
         Object.keys(intermediateCollection).forEach(intermediateName => {
             const intermediateData = intermediateCollection[intermediateName];
             const aggregatedData = intermediateData && intermediateData[aggregatedCollectionName];
-            
+
             if (aggregatedData && typeof aggregatedData === 'object') {
                 Object.keys(aggregatedData).forEach(itemName => {
+                    const entry = aggregatedData[itemName];
                     items.push({
-                        name: itemName,
+                        name: entry && entry.display_name ? entry.display_name : itemName,
                         [intermediateLevelName]: intermediateName,
                         ...this.extractParentProperties(parentItem),
                         key: `${parentItem.key}/${intermediateName}/${itemName}`,
+                        data: entry,
                         __level: aggregatedLevelName,
                         __levelDepth: levelDepth,
                         __isLeaf: false,
@@ -606,10 +643,9 @@ class DataManager {
                 });
             }
         });
-        
+
         Logger.debug(`getAggregatedLevelItems: collected ${items.length} aggregated items`);
-        
-        // Sort based on configuration
+
         return this.sortItems(items, aggregatedLevelConfig);
     }
 
@@ -1009,6 +1045,63 @@ class DataManager {
         }
         
         return result;
+    }
+
+    getDataLocationForItem(item) {
+        if (!item || !item.__path || !item.__path.length) {
+            return null;
+        }
+
+        const levelNames = this.getHierarchyLevelNames();
+        let dataLocation = this.getTopLevelCollection();
+
+        for (let i = 0; i < item.__path.length; i++) {
+            const pathSegment = item.__path[i];
+            const currentLevelName = levelNames[i];
+
+            if (i === 0) {
+                dataLocation = dataLocation[pathSegment];
+                if (!dataLocation) {
+                    Logger.warn(`getDataLocationForItem: top-level segment '${pathSegment}' not found`);
+                    return null;
+                }
+
+                if (item.__path.length > 1) {
+                    const nextLevelName = levelNames[1];
+                    const childCollectionName = this.getPluralPropertyName(nextLevelName);
+                    if (dataLocation && dataLocation[childCollectionName]) {
+                        dataLocation = dataLocation[childCollectionName];
+                    }
+                }
+            } else {
+                if (Array.isArray(dataLocation)) {
+                    const numericIndex = parseInt(pathSegment, 10);
+                    if (!isNaN(numericIndex) && dataLocation[numericIndex]) {
+                        dataLocation = dataLocation[numericIndex];
+                    } else {
+                        Logger.warn(`getDataLocationForItem: numeric segment '${pathSegment}' not found in array`);
+                        return null;
+                    }
+                } else {
+                    dataLocation = dataLocation && dataLocation[pathSegment];
+                }
+
+                if (!dataLocation) {
+                    Logger.warn(`getDataLocationForItem: segment '${pathSegment}' not found at level ${currentLevelName}`);
+                    return null;
+                }
+
+                if (i < item.__path.length - 1) {
+                    const nextLevelName = levelNames[i + 1];
+                    const childCollectionName = this.getPluralPropertyName(nextLevelName);
+                    if (dataLocation && dataLocation[childCollectionName]) {
+                        dataLocation = dataLocation[childCollectionName];
+                    }
+                }
+            }
+        }
+
+        return dataLocation;
     }
 }
 

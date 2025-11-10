@@ -23,6 +23,8 @@ class MobileChildPyramid {
         
         // Cache for node positions (used by fan lines)
         this.nodePositions = [];
+    this.currentItems = [];
+    this.currentItemType = '';
         
         // Pyramid arc configuration - all relative to focus ring radius
         // Fill order: chpyr_70 (middle), chpyr_55 (inner), chpyr_85 (outer)
@@ -51,6 +53,8 @@ class MobileChildPyramid {
         }
         
         Logger.debug(`🔺 Showing child pyramid with ${items.length} ${itemType}`);
+    this.currentItems = [...items];
+    this.currentItemType = itemType;
         
         // Sort items based on type
         const sortedItems = this.sortChildPyramidItems(items, itemType);
@@ -356,6 +360,22 @@ class MobileChildPyramid {
             this.renderer.elements.pathLinesGroup.innerHTML = '';
         }
         this.nodePositions = [];
+        this.currentItems = [];
+        this.currentItemType = '';
+    }
+
+    handleViewportChange() {
+        if (!this.childRingGroup || this.childRingGroup.classList.contains('hidden')) {
+            return;
+        }
+
+        if (!this.currentItems || this.currentItems.length === 0) {
+            return;
+        }
+
+        Logger.debug('🔺 Viewport change detected - re-rendering Child Pyramid');
+        // Re-render using stored items to adapt to new viewport dimensions
+        this.showChildPyramid([...this.currentItems], this.currentItemType || 'items');
     }
     
     /**

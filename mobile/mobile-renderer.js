@@ -30,6 +30,8 @@ class MobileRenderer {
         this.elements = {};
         this.focusElements = new Map();
         this.positionCache = new Map();
+    this.leafStateCache = new Map(); // Cache leaf determinations per item
+    this.detailSectorAnimating = false;
         
         // State
         this.selectedTopLevel = null;
@@ -222,7 +224,9 @@ class MobileRenderer {
         // Get the immediate next hierarchy level (universal navigation requires immediate children)
         const nextLevel = this.getNextHierarchyLevel(currentLevel);
         if (!nextLevel) {
-            Logger.debug('No next level - this is a leaf node');
+            Logger.debug('No next level detected for', focusItem.name, '- treating as leaf');
+            this.leafStateCache.set(this.getLeafCacheKey(focusItem, null), true);
+            this.handleLeafFocusSelection(focusItem);
             return;
         }
 
@@ -232,11 +236,15 @@ class MobileRenderer {
         const childItems = this.getChildItemsForLevel(focusItem, nextLevel);
         
         if (!childItems || childItems.length === 0) {
-            Logger.debug(`No ${nextLevel} items found for ${currentLevel}: ${focusItem.name} - this is a leaf node`);
+            Logger.debug(`No ${nextLevel} items found for ${currentLevel}: ${focusItem.name} - treating as leaf`);
+            this.leafStateCache.set(this.getLeafCacheKey(focusItem, nextLevel), true);
+            this.handleLeafFocusSelection(focusItem);
             return;
         }
 
-        const itemType = nextLevel === 'model' ? 'models' : nextLevel === 'family' ? 'families' : nextLevel + 's';
+        this.leafStateCache.set(this.getLeafCacheKey(focusItem, nextLevel), false);
+
+        const itemType = this.getLevelPluralLabel(nextLevel);
         Logger.debug(`Found ${childItems.length} ${itemType} for ${currentLevel}: ${focusItem.name}`);
 
         // Show child items in Child Pyramid
@@ -251,6 +259,149 @@ class MobileRenderer {
         // Pure universal: Use DataManager's universal navigation method
         const childLevelName = childLevel;
         return this.dataManager.getItemsAtLevel(parentItem, childLevelName) || [];
+    }
+
+    getTopLevelItems() {
+        const levelNames = this.getHierarchyLevelNames();
+        if (!levelNames.length) {
+            return [];
+        }
+
+        const topLevelName = levelNames[0];
+        const topLevelCollection = this.dataManager.getTopLevelCollection();
+        if (!topLevelCollection || typeof topLevelCollection !== 'object') {
+            return [];
+        }
+
+        const levelConfig = this.dataManager.getHierarchyLevelConfig(topLevelName);
+
+        const items = Object.keys(topLevelCollection).map(key => {
+            const entry = topLevelCollection[key];
+            const displayName = (entry && (entry.display_name || entry.name)) || key;
+
+            return {
+                name: displayName,
+                key: key,
+                data: entry,
+                __level: topLevelName,
+                __levelDepth: 0,
+                __isLeaf: false,
+                __path: [key],
+                [topLevelName]: key
+            };
+        });
+
+        if (typeof this.dataManager.sortItems === 'function') {
+            return this.dataManager.sortItems(items, levelConfig);
+        }
+
+        return items;
+    }
+
+    getLevelPluralLabel(levelName) {
+        if (!levelName) {
+            return '';
+        }
+
+        // Prefer plural naming from hierarchy config when available
+        const levelConfig = this.dataManager.getHierarchyLevelConfig(levelName);
+        if (levelConfig && levelConfig.plural_display_name) {
+            return levelConfig.plural_display_name;
+        }
+
+        // Use data manager's plural property name when exposed
+        if (typeof this.dataManager.getPluralPropertyName === 'function') {
+            return this.dataManager.getPluralPropertyName(levelName);
+        }
+
+        // Fallback simple pluralization with basic irregulars
+        const irregulars = {
+            family: 'families',
+            country: 'countries',
+            category: 'categories'
+        };
+
+        if (irregulars[levelName]) {
+            return irregulars[levelName];
+        }
+
+        return `${levelName}s`;
+    }
+
+    getLeafCacheKey(item, nextLevel) {
+        const itemKey = item && (item.key || item.name || 'unknown');
+        return nextLevel ? `${itemKey}::${nextLevel}` : `${itemKey}::terminal`;
+    }
+
+    isLeafItem(item) {
+        if (!item) {
+            return false;
+        }
+
+        if (item.__isLeaf === true) {
+            return true;
+        }
+
+        if (item.__isLeaf === false) {
+            return false;
+        }
+
+        const currentLevel = this.getItemHierarchyLevel(item);
+        if (!currentLevel) {
+            return false;
+        }
+
+        const nextLevel = this.getNextHierarchyLevel(currentLevel);
+        if (!nextLevel) {
+            this.leafStateCache.set(this.getLeafCacheKey(item, null), true);
+            item.__isLeaf = true;
+            return true;
+        }
+
+        const cacheKey = this.getLeafCacheKey(item, nextLevel);
+        if (this.leafStateCache.has(cacheKey)) {
+            const cached = this.leafStateCache.get(cacheKey);
+            item.__isLeaf = cached;
+            return cached;
+        }
+
+        const childItems = this.getChildItemsForLevel(item, nextLevel);
+        const isLeaf = !childItems || childItems.length === 0;
+        this.leafStateCache.set(cacheKey, isLeaf);
+        item.__isLeaf = isLeaf;
+        return isLeaf;
+    }
+
+    handleLeafFocusSelection(focusItem) {
+        if (!focusItem) {
+            return;
+        }
+
+        Logger.debug('Leaf focus item selected:', focusItem.name);
+
+        // Hide child visuals when no children exist
+        if (this.elements.childRingGroup) {
+            this.elements.childRingGroup.classList.add('hidden');
+        }
+        this.clearFanLines();
+
+        // Update current selection state
+    this.selectedFocusItem = { ...focusItem };
+
+        const itemLevel = this.getItemHierarchyLevel(focusItem);
+        const parentLevel = itemLevel ? this.getPreviousHierarchyLevel(itemLevel) : null;
+        const parentName = parentLevel ? this.getParentNameForLevel(focusItem, parentLevel) : null;
+        this.updateParentButton(parentName);
+
+        if (!this.detailSector) {
+            return;
+        }
+
+        if (this.detailSector.isVisible) {
+            this.detailSector.showDetailContent(focusItem);
+        } else if (!this.detailSectorAnimating) {
+            this.expandDetailSector();
+        }
     }
     
     updateCenterNodeState(inactive) {
@@ -802,8 +953,10 @@ class MobileRenderer {
         this.currentFocusItems = [];
         this.activePath = [];
         this.activeType = null;
-        this.focusItemElements.clear();
+        this.focusElements.clear();
         this.positionCache.clear();
+        this.leafStateCache.clear();
+    this.detailSectorAnimating = false;
         
         // Collapse Detail Sector
         this.collapseDetailSector();
@@ -931,9 +1084,25 @@ class MobileRenderer {
 
         // 8. If a leaf item was selected, expand the blue circle to create the Detail Sector
         Logger.debug('🔵 DETAIL SECTOR CHECK: itemLevel =', itemLevel, 'item.__isLeaf =', item.__isLeaf);
-        if (itemLevel === 'model') {
-            Logger.debug('🔵 EXPANDING Detail Sector for model:', item.name);
-            this.expandDetailSector();
+
+        const nextLevel = this.getNextHierarchyLevel(itemLevel);
+        let childItems = null;
+        let isLeaf = false;
+
+        if (!nextLevel) {
+            isLeaf = true;
+            this.leafStateCache.set(this.getLeafCacheKey(item, null), true);
+        } else {
+            childItems = this.getChildItemsForLevel(item, nextLevel);
+            isLeaf = !childItems || childItems.length === 0;
+            this.leafStateCache.set(this.getLeafCacheKey(item, nextLevel), isLeaf);
+        }
+
+        item.__isLeaf = isLeaf;
+
+        if (isLeaf) {
+            Logger.debug('🔵 Leaf item detected - routing to Detail Sector handler:', item.name);
+            this.handleLeafFocusSelection(item);
         }
 
         // 6. Update Parent Button to show the parent level
@@ -942,22 +1111,18 @@ class MobileRenderer {
 
         // 7. Get children for the next level and show in Child Pyramid
         // Skip this for leaf items since they show the Detail Sector instead
-        if (itemLevel !== 'model') {
-            const nextLevel = this.getNextHierarchyLevel(itemLevel);
-            if (nextLevel) {
-                const childItems = this.getChildItemsForLevel(item, nextLevel);
+        if (!isLeaf && nextLevel) {
+            const itemType = this.getLevelPluralLabel(nextLevel);
+            const itemsToShow = childItems || [];
 
-                setTimeout(() => {
-                    if (childItems && childItems.length > 0) {
-                        const itemType = nextLevel === 'model' ? 'models' : nextLevel === 'family' ? 'families' : nextLevel + 's';
-                        this.childPyramid.showChildPyramid(childItems, itemType);
-                        Logger.debug(`🔺 Showing ${childItems.length} ${itemType} in Child Pyramid for ${itemLevel}:`, item.name);
-                    } else {
-                        const itemTypePlural = nextLevel === 'family' ? 'families' : nextLevel + 's';
-                        Logger.warn(`🔺 No ${itemTypePlural} found for ${itemLevel}:`, item.name);
-                    }
-                }, 300);
-            }
+            setTimeout(() => {
+                if (itemsToShow.length > 0) {
+                    this.childPyramid.showChildPyramid(itemsToShow, itemType);
+                    Logger.debug(`🔺 Showing ${itemsToShow.length} ${itemType} in Child Pyramid for ${itemLevel}:`, item.name);
+                } else {
+                    Logger.warn(`🔺 No ${itemType} found for ${itemLevel}:`, item.name);
+                }
+            }, 300);
         } else {
             // For leaf items, hide the Child Pyramid since Detail Sector is shown
             setTimeout(() => {
@@ -1017,8 +1182,8 @@ class MobileRenderer {
             parentItem[levelName] = pathValue;
             
             // Additional property aliases for legacy compatibility
-            if (levelName === 'manufacturer') {
-                parentItem.name = pathValue; // Some methods check .name
+            if (levelName === parentLevel && !parentItem.name) {
+                parentItem.name = pathValue;
             }
             
             // Handle numeric conversions for count-based levels
@@ -1033,6 +1198,10 @@ class MobileRenderer {
                 const codeProperty = levelName + 'Code';
                 parentItem[codeProperty] = pathValue;
             }
+        }
+
+        if (!parentItem.name) {
+            parentItem.name = childItem.__path[parentIndex];
         }
 
         return parentItem;
@@ -1059,6 +1228,7 @@ class MobileRenderer {
      */
     expandDetailSector() {
         Logger.debug('🔵 expandDetailSector() called - animating blue circle and logo');
+        this.detailSectorAnimating = true;
         const arcParams = this.viewport.getArcParameters();
         
         const detailCircle = document.getElementById('detailSectorCircle');
@@ -1066,6 +1236,7 @@ class MobileRenderer {
         
         if (!detailCircle || !detailLogo) {
             Logger.error('🔵 Detail Sector elements not found for expansion');
+            this.detailSectorAnimating = false;
             return;
         }
         
@@ -1192,6 +1363,8 @@ class MobileRenderer {
                     Logger.debug('📋 Displaying detail content for selected item:', this.selectedFocusItem.name);
                     this.detailSector.showDetailContent(this.selectedFocusItem);
                 }
+
+                this.detailSectorAnimating = false;
             }
         };
         
@@ -1215,6 +1388,8 @@ class MobileRenderer {
         if (!detailCircle || !detailLogo) {
             return;
         }
+
+        this.detailSectorAnimating = true;
         
         // Hide detail content immediately when starting collapse
         this.detailSector.hideDetailContent();
@@ -1228,6 +1403,7 @@ class MobileRenderer {
         
         if (Math.abs(currentRadius - collapsedRadius) < 10) {
             Logger.debug('🔵 Detail Sector already collapsed - skipping animation');
+            this.detailSectorAnimating = false;
             return;
         }
         
@@ -1324,6 +1500,8 @@ class MobileRenderer {
                 Logger.debug(`🔵 Detail Sector collapse COMPLETE`);
                 Logger.debug(`   Circle: (${circleEndX.toFixed(1)}, ${circleEndY.toFixed(1)}) r=${endRadius.toFixed(1)}`);
                 Logger.debug(`   Logo: ${endLogoWidth.toFixed(1)}x${endLogoHeight.toFixed(1)}`);
+
+                this.detailSectorAnimating = false;
             }
         };
         
