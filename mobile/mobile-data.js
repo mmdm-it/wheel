@@ -4,6 +4,7 @@
  */
 
 import { Logger } from './mobile-logger.js';
+import { CoordinateSystem, HubNucCoordinate } from './mobile-coordinates.js';
 
 /**
  * Manages data loading with error handling and caching
@@ -16,6 +17,105 @@ class DataManager {
         this.currentVolumePath = null;
         this.availableVolumes = [];
         this.rootDataKey = null; // e.g., 'MMdM' or 'Gutenberg_Bible'
+        
+        // Phase 4 Consolidation: Bilingual coordinate storage
+        this.coordinateCache = new Map(); // Item key -> HubNucCoordinate
+        this.coordinateMetadata = new Map(); // Level -> coordinate stats
+    }
+
+    /**
+     * Phase 4 Consolidation: Store bilingual coordinates for items
+     * Enables efficient coordinate retrieval and analysis
+     */
+    storeItemCoordinates(items, viewport, angleCallback) {
+        if (!items || !viewport || typeof angleCallback !== 'function') {
+            Logger.warn('storeItemCoordinates: Invalid parameters');
+            return;
+        }
+
+        // Set up coordinate system with current viewport
+        CoordinateSystem.setViewport({
+            LSd: Math.max(viewport.width, viewport.height),
+            SSd: Math.min(viewport.width, viewport.height)
+        });
+
+        let storedCount = 0;
+        const levelName = items.length > 0 ? items[0].__level : 'unknown';
+
+        items.forEach((item, index) => {
+            try {
+                // Get angle for this item (from positioning logic)
+                const angle = angleCallback(item, index);
+                
+                if (typeof angle === 'number' && !isNaN(angle)) {
+                    // Create bilingual coordinate with focus ring radius
+                    const arcParams = viewport.getArcParameters ? viewport.getArcParameters() : 
+                                     { radius: Math.max(viewport.width, viewport.height) };
+                    
+                    const hubCoord = HubNucCoordinate.fromPolar(angle, arcParams.radius);
+                    this.coordinateCache.set(item.key, hubCoord);
+                    storedCount++;
+                }
+            } catch (error) {
+                Logger.warn(`Failed to store coordinates for item ${item.key}:`, error);
+            }
+        });
+
+        // Update metadata
+        this.coordinateMetadata.set(levelName, {
+            itemCount: items.length,
+            storedCount,
+            timestamp: Date.now(),
+            viewport: { width: viewport.width, height: viewport.height }
+        });
+
+        Logger.debug(`Stored bilingual coordinates: ${storedCount}/${items.length} items at level ${levelName}`);
+    }
+
+    /**
+     * Phase 4 Consolidation: Retrieve stored bilingual coordinates
+     */
+    getItemCoordinates(itemKey) {
+        return this.coordinateCache.get(itemKey) || null;
+    }
+
+    /**
+     * Phase 4 Consolidation: Get coordinate statistics
+     */
+    getCoordinateStats() {
+        const stats = {
+            totalCached: this.coordinateCache.size,
+            levelStats: {}
+        };
+
+        for (const [level, metadata] of this.coordinateMetadata) {
+            stats.levelStats[level] = metadata;
+        }
+
+        return stats;
+    }
+
+    /**
+     * Phase 4 Consolidation: Clear coordinate cache
+     */
+    clearCoordinateCache(levelName = null) {
+        if (levelName) {
+            // Clear specific level
+            let cleared = 0;
+            for (const [key, coord] of this.coordinateCache) {
+                // Would need item reference to check level - simplified approach
+                this.coordinateCache.delete(key);
+                cleared++;
+            }
+            this.coordinateMetadata.delete(levelName);
+            Logger.debug(`Cleared ${cleared} coordinates for level ${levelName}`);
+        } else {
+            // Clear all
+            const totalCleared = this.coordinateCache.size;
+            this.coordinateCache.clear();
+            this.coordinateMetadata.clear();
+            Logger.debug(`Cleared all ${totalCleared} cached coordinates`);
+        }
     }
 
     /**
@@ -384,7 +484,7 @@ class DataManager {
                 const groupName = item[groupingProperty];
                 
                 if (!groupMap.has(groupName)) {
-                    groupMap.set(groupName, {
+                    const group = {
                         name: groupName,
                         [virtualLevelConfig.use_code_property ? `${virtualLevelName}Code` : '']: groupName,
                         ...this.extractParentProperties(parentItem),
@@ -395,11 +495,19 @@ class DataManager {
                         __levelDepth: virtualLevelDepth,
                         __isLeaf: false,
                         __path: [...parentItem.__path, groupName]
-                    });
+                    };
+                    
+                    // Add sort_number from curatorial judgment field if present
+                    const rcjSortProperty = `rcj_${groupingProperty}_sort_number`;
+                    if (item[rcjSortProperty] !== undefined) {
+                        group.sort_number = item[rcjSortProperty];
+                    }
+                    
+                    groupMap.set(groupName, group);
                     
                     // Remove empty property if use_code_property is false
                     if (!virtualLevelConfig.use_code_property) {
-                        delete groupMap.get(groupName)[''];
+                        delete group[''];
                     }
                 }
                 
@@ -435,7 +543,8 @@ class DataManager {
         const groups = Array.from(groupMap.values());
         Logger.debug(`getVirtualLevelItems: Found ${groups.length} ${virtualLevelName} groups`);
         
-        return groups;
+        // Apply universal sorting to virtual groups
+        return this.sortItems(groups, virtualLevelConfig);
     }
 
     /**
@@ -853,40 +962,42 @@ class DataManager {
      * Sort items based on level configuration
      */
     sortItems(items, levelConfig) {
-        if (!levelConfig || !levelConfig.sort_type) {
-            return items;
-        }
-
         const sorted = [...items];
-        const sortProperty = levelConfig.sort_property || 'name';
         
-        switch(levelConfig.sort_type) {
-            case 'numeric_desc':
-                return sorted.sort((a, b) => {
-                    const numA = parseFloat(a.data?.[sortProperty] ?? a[sortProperty] ?? a.name);
-                    const numB = parseFloat(b.data?.[sortProperty] ?? b[sortProperty] ?? b.name);
-                    return numB - numA;
-                });
-            
-            case 'numeric_asc':
-                return sorted.sort((a, b) => {
-                    const numA = parseFloat(a.data?.[sortProperty] ?? a[sortProperty] ?? a.name);
-                    const numB = parseFloat(b.data?.[sortProperty] ?? b[sortProperty] ?? b.name);
-                    return numA - numB;
-                });
-            
-            case 'alphabetical_reverse':
-                return sorted.sort((a, b) => b.name.localeCompare(a.name));
-            
-            case 'natural':
-            case 'original':
-                // Preserve original order from JSON - no sorting
-                return items;
-            
-            case 'alphabetical':
-            default:
-                return sorted.sort((a, b) => a.name.localeCompare(b.name));
+        // Only log for Bible books (items with "Liber_" prefix)
+        const isBibleBooks = items.length > 0 && items[0].name?.startsWith('Liber_');
+        
+        if (isBibleBooks) {
+            Logger.debug(`📚 BIBLE BOOKS - BEFORE sorting (${items.length} items):`);
+            items.forEach((item, idx) => {
+                const sortNum = item.data?.sort_number ?? item.sort_number ?? 'none';
+                Logger.debug(`  [${idx}] ${item.name} (sort_number: ${sortNum})`);
+            });
         }
+        
+        // Universal sorting: sort_number overrides alphabetical when present
+        const result = sorted.sort((a, b) => {
+            const sortA = a.data?.sort_number ?? a.sort_number;
+            const sortB = b.data?.sort_number ?? b.sort_number;
+            
+            if (sortA !== undefined && sortB !== undefined) {
+                return sortA - sortB;  // Use explicit Publisher-assigned ordering
+            }
+            
+            // Focus Ring alphabetical: Z to A (higher angles = visual top)
+            // This matches human reading expectations where "first" items appear at visual top
+            return b.name.localeCompare(a.name);  // Reverse alphabetical for Focus Ring
+        });
+        
+        if (isBibleBooks) {
+            Logger.debug(`📚 BIBLE BOOKS - AFTER sorting (${result.length} items):`);
+            result.forEach((item, idx) => {
+                const sortNum = item.data?.sort_number ?? item.sort_number ?? 'none';
+                Logger.debug(`  [${idx}] ${item.name} (sort_number: ${sortNum})`);
+            });
+        }
+        
+        return result;
     }
 }
 

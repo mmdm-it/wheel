@@ -25,8 +25,11 @@ The focus ring is NOT a circle or "hose reel" - it's an arc functioning as a spr
 For complete spatial definitions, coordinate systems, and positioning rules, see **[DESIGNSPEC.md](DESIGNSPEC.md)**
 
 **Key Terminology (see DESIGNSPEC for full details):**
-- **OUT Migration**: Nodes move OUT from Focus Ring to Parent Button (radially outward from rotation center)
-- **IN Migration**: Nodes move IN from Child Pyramid to Focus Ring (radially inward toward rotation center)
+- **Hub**: Off-screen rotational center using polar coordinates (angle, distance)
+- **Nuc**: On-screen rendering center (nucleus) at SVG origin (0,0) using Cartesian coordinates
+- **Reference Direction**: 0° = East = Right = 3 o'clock (both coordinate systems)
+- **OUT Migration**: Nodes move OUT from Focus Ring to Parent Button (radially outward from Hub)
+- **IN Migration**: Nodes move IN from Child Pyramid to Focus Ring (radially inward toward Hub)
 - **Rotational Navigation**: CW/CCW movement within the Focus Ring sprocket system
 - **Clock Positions**: 6 o'clock (180°), 9 o'clock (270°), 3 o'clock (90°), etc.
 - **Off-Screen Zone**: 0° - 90° quadrant (12:00 → 3:00) - never position elements here
@@ -50,7 +53,7 @@ For complete spatial definitions, coordinate systems, and positioning rules, see
 - **mobile-logger.js** - Conditional debug logging system
 - **mobile-renderer.js** - SVG rendering, UI state management, and navigation flow
 - **mobile-touch.js** - Advanced touch interaction with momentum physics and dynamic scaling
-- **mobile-viewport.js** - Responsive viewport calculations with universal arc positioning
+- **mobile-viewport.js** - Responsive viewport calculations with Hub/Nuc positioning using constitutional formula
 - **mobile-childpyramid.js** - Child Pyramid module with three-arc concentric display
 
 ### MAJOR FEATURES STATUS
@@ -58,7 +61,7 @@ For complete spatial definitions, coordinate systems, and positioning rules, see
 **✅ COMPLETE - Focus Ring Navigation (Sprocket Gear System)**
 - Arc-based sprocket gear system for infinite list traversal with defined endpoints
 - Universal hierarchical level support through JSON configuration
-- Dynamic center angle calculation for optimal viewport positioning
+- - **Dynamic center angle calculation from Hub to Nuc for optimal positioning**
 - Advanced CW/CCW rotation with momentum physics and bounds checking
 - **Dynamic Rotation Scaling**: Hybrid distance+velocity scaling enables "A to Z in two CW/CCW swipes" while maintaining precision
 - Magnifying ring positioning at calculated dynamic center angle
@@ -106,11 +109,12 @@ For complete spatial definitions, coordinate systems, and positioning rules, see
 - Support for both rotational drag and tap interactions with proper event delegation
 
 **✅ COMPLETE - Responsive Viewport System**
-- Universal arc positioning formula works on any device aspect ratio
-- Dynamic center calculation for optimal magnifying ring placement
+- Universal Hub/Nuc positioning formula works on any device aspect ratio
+- Dynamic center angle calculation from Hub to Nuc for optimal magnifying ring placement
+- Constitutional formula: hubX = LSd - SSd/2, hubY = -(LSd/2) for portrait mode
 - Comprehensive caching system for performance optimization
 - Portrait/landscape detection with automatic re-layout
-- SVG coordinate system management with proper scaling
+- Dual-perspective coordinate storage (Hub polar, Nuc Cartesian)
 - Robust error handling for viewport edge cases
 ## Virtual Level Logic & Orphan Adoption
 
@@ -144,7 +148,7 @@ The catalog implements a sophisticated virtual level system:
 ### CURRENT FUNCTIONALITY ANALYSIS
 
 **🎯 Production-Ready Core Features:**
-1. **Complete Navigation System**: Full hierarchy traversal through rotational Focus Ring and radial IN/OUT nzone migration
+1. **Complete Navigation System**: Full hierarchy traversal through rotational Focus Ring and radial IN/OUT migration using Hub/Nuc coordinate systems
 2. **Universal Data Pipeline**: Handles Marine manifold catalog (4 markets, 18 countries, 45+ manufacturers, 2000+ models)
 3. **Advanced Touch Controls**: Professional-grade CW/CCW rotation with momentum, scaling, and precision snapping
 4. **Responsive Design**: Universal viewport calculations work on any mobile device aspect ratio
@@ -411,9 +415,12 @@ wheel/
 
 **Latest Updates (November 7, 2025):**
 - ✅ **DESIGNSPEC.md Created**: Comprehensive spatial model, coordinate system, and terminology documentation
+  - **Hub and Nuc Terminology**: Hub (off-screen polar center) and Nuc (on-screen Cartesian center)  
+  - **Constitutional Formula**: hubX = LSd - SSd/2, hubY = -(LSd/2) for portrait mode
+  - **Reference Direction**: 0° = East = Right = 3 o'clock (both coordinate systems)
   - Clock position reference system (6:00 → 9:00 visible arc)
   - Off-screen zone definition (0° - 90° quadrant to avoid)
-  - Cartesian vs Polar coordinate usage by module
+  - Dual-perspective coordinate relationships (Hub polar, Nuc Cartesian)
   - Directional terminology standards (OUT/IN, CW/CCW)
   - Angle conversion reference tables
   - Common positioning error prevention
@@ -432,6 +439,15 @@ wheel/
   - Currently centers middle item at magnifier angle
   - Should place first item (array[0]) at 9 o'clock (270°)
   - Requires algorithm adjustment in updateFocusRingPositions()
+
+- 🔄 **Phase 1 Consolidation - Bilingual Coordinate System**: ACTIVE
+  - **Created**: mobile-coordinates.js with HubNucCoordinate and CoordinateSystem classes
+  - **Integrated**: ES6 module exports and bilingual coordinate methods in mobile-viewport.js
+  - **Completed**: getMagnifyingRingPositionBilingual() demonstration method with lazy coordinate calculation
+  - **Created**: viewport-bilingual-test.js with comprehensive position comparison testing
+  - **Architecture**: Dual Hub/Nuc coordinate storage with constitutional formula integration
+  - **Next Phase**: Test integration in browser, then extend to mobile-renderer.js and mobile-touch.js
+  - **Goal**: Eliminate coordinate system confusion while preserving interface feel and performance
 
 **Previous Updates (November 6, 2025):**
 - ✅ **Detail Sector Content Module**: Created mobile-detailsector.js with product information display

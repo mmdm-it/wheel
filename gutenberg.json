@@ -96,6 +96,7 @@
                         "books": {
                             "Liber_Genesis": {
                                 "book_number": 1,
+                                "sort_number": 1,
                                 "chapters": {
                                     "1": {
                                         "verses": {
@@ -149,6 +150,7 @@
                             },
                             "Liber_Exodus": {
                                 "book_number": 2,
+                                "sort_number": 2,
                                 "chapters": {
                                     "1": {
                                         "verses": {
@@ -162,6 +164,7 @@
                             },
                             "Liber_Leviticus": {
                                 "book_number": 3,
+                                "sort_number": 3,
                                 "chapters": {
                                     "1": {
                                         "verses": {
@@ -175,6 +178,7 @@
                             },
                             "Liber_Numeri": {
                                 "book_number": 4,
+                                "sort_number": 4,
                                 "chapters": {
                                     "1": {
                                         "verses": {
@@ -188,6 +192,7 @@
                             },
                             "Liber_Deuteronomii": {
                                 "book_number": 5,
+                                "sort_number": 5,
                                 "chapters": {
                                     "1": {
                                         "verses": {

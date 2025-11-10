@@ -10,6 +10,7 @@ import { MOBILE_CONFIG } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
 import { MobileChildPyramid } from './mobile-childpyramid.js';
 import { MobileDetailSector } from './mobile-detailsector.js';
+import { CoordinateSystem, HubNucCoordinate } from './mobile-coordinates.js';
 
 /**
  * Efficient renderer that minimizes DOM manipulation
@@ -290,6 +291,23 @@ class MobileRenderer {
         const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
         const middleIndex = (this.currentFocusItems.length - 1) / 2;
         
+        // Check if items have sort_number (indicating curated order)
+        const hasSortNumbers = this.currentFocusItems.some(item => 
+            (item.data?.sort_number !== undefined) || (item.sort_number !== undefined)
+        );
+        
+        if (hasSortNumbers) {
+            // For sorted items (like Bible books), position first item at arc start
+            // Arc start is at higher angle (visual top), so we need positive offset
+            // to move first item (index 0) from center toward higher angles
+            const maxViewportAngle = MOBILE_CONFIG.VIEWPORT.VIEWPORT_ARC / 2;
+            const arcStartOffset = maxViewportAngle - (angleStep * 2); // Position near arc start with some margin
+            
+            Logger.debug(`Sorted items (${this.currentFocusItems.length}): positioning at arc start, offset = ${arcStartOffset * 180 / Math.PI}°`);
+            return arcStartOffset;
+        }
+        
+        // For unsorted items, use original centering logic
         // For odd number of focus items, middle focus item is already centered
         if (this.currentFocusItems.length % 2 === 1) {
             return 0;
@@ -301,10 +319,6 @@ class MobileRenderer {
         const targetIndex = Math.floor(middleIndex);
         
         // Calculate offset needed to center this focus item
-        // When rotationOffset = 0: focus item at index i has angle: centerAngle + (i - middleIndex) * angleStep
-        // To center focus item at targetIndex: angle should be centerAngle
-        // So: centerAngle + offset + (targetIndex - middleIndex) * angleStep = centerAngle
-        // Therefore: offset = -(targetIndex - middleIndex) * angleStep
         const offset = -(targetIndex - middleIndex) * angleStep;
         
         Logger.debug(`Even focus items (${this.currentFocusItems.length}): centering index ${targetIndex}, offset = ${offset * 180 / Math.PI}°`);
@@ -356,10 +370,27 @@ class MobileRenderer {
         let selectedFocusItem = null;
         let selectedIndex = -1;
         
+        // Only log for Bible books
+        const isBibleBooks = allFocusItems.length > 0 && allFocusItems[0].name?.startsWith('Liber_');
+        
+        if (isBibleBooks) {
+            Logger.debug(`📚 BIBLE BOOKS - Focus items order (${allFocusItems.length} items):`);
+            allFocusItems.forEach((item, idx) => {
+                const sortNum = item.data?.sort_number ?? item.sort_number ?? 'none';
+                Logger.debug(`  [${idx}] ${item.name} (sort_number: ${sortNum})`);
+            });
+            Logger.debug(`🎯 Center angle: ${(centerAngle * 180 / Math.PI).toFixed(1)}°, Rotation offset: ${(rotationOffset * 180 / Math.PI).toFixed(1)}°`);
+            Logger.debug(`🎯 Adjusted center angle: ${(adjustedCenterAngle * 180 / Math.PI).toFixed(1)}°`);
+        }
+
         // Process all focus items but only render those in viewport window
         allFocusItems.forEach((focusItem, index) => {
             // Calculate angle using original logic
             const angle = adjustedCenterAngle + (index - (allFocusItems.length - 1) / 2) * angleStep;
+            
+            if (isBibleBooks) {
+                Logger.debug(`📐 Item [${index}] ${focusItem.name}: angle = ${(angle * 180 / Math.PI).toFixed(1)}°`);
+            }
             
             // Validate calculated angle
             if (isNaN(angle)) {
@@ -493,6 +524,46 @@ class MobileRenderer {
         this.positionCache.set(key, position);
         
         return position;
+    }
+    
+    // Phase 2 Consolidation: Bilingual coordinate positioning method
+    // Uses bilingual coordinate system while preserving exact positioning behavior
+    calculateFocusPositionBilingual(angle, arcParams) {
+        // Validate inputs - same as original method
+        if (isNaN(angle) || !arcParams || isNaN(arcParams.centerX) || isNaN(arcParams.centerY) || isNaN(arcParams.radius)) {
+            Logger.error(`Invalid bilingual position calculation inputs: angle=${angle}, arcParams=${JSON.stringify(arcParams)}`);
+            return { x: 0, y: 0, angle: 0 }; // Safe fallback
+        }
+        
+        // Setup coordinate system with current viewport
+        const viewport = this.viewport.getViewportInfo();
+        CoordinateSystem.setViewport({
+            LSd: Math.max(viewport.width, viewport.height),
+            SSd: Math.min(viewport.width, viewport.height)
+        });
+        
+        // Create Hub coordinate using polar representation
+        const hubCoord = HubNucCoordinate.fromPolar(angle, arcParams.radius);
+        
+        // Get Nuc coordinates (calculated lazily using constitutional formula)
+        const x = hubCoord.nucX;
+        const y = hubCoord.nucY;
+        
+        // Validate calculated position - same as original method
+        if (isNaN(x) || isNaN(y)) {
+            Logger.error(`Bilingual calculated NaN position: angle=${angle}, radius=${arcParams.radius}, x=${x}, y=${y}`);
+            return { x: 0, y: 0, angle: 0 }; // Safe fallback
+        }
+        
+        Logger.debug(`Bilingual focus position: Hub(${angle * 180 / Math.PI}°, r=${arcParams.radius}) -> Nuc(${x.toFixed(1)}, ${y.toFixed(1)})`);
+        
+        return { 
+            x, 
+            y, 
+            angle,
+            // Include coordinate representation for debugging
+            hubCoord 
+        };
     }
     
     createFocusElement(focusItem, position, angle, isSelected = false) {
@@ -813,8 +884,15 @@ class MobileRenderer {
 
         // 2. Get all siblings at the same level and move them to Focus Ring
         const parentLevel = this.getPreviousHierarchyLevel(itemLevel);
+        
+        // Build the correct parent item from the clicked item's path
+        // This ensures we get the right parent even if selectedFocusItem is at wrong level
         const parentItem = this.buildParentItemFromChild(item, parentLevel);
+        
+        // Get all siblings by asking for children of the parent at the clicked item's level
         const allSiblings = this.getChildItemsForLevel(parentItem, itemLevel);
+        
+        Logger.debug(`🔺 Getting siblings: parent="${parentItem.name}" (${parentLevel}), childLevel="${itemLevel}", found ${allSiblings.length} siblings`);
 
         this.currentFocusItems = allSiblings;
         this.allFocusItems = allSiblings;
@@ -925,7 +1003,8 @@ class MobileRenderer {
             __level: parentLevel,
             __levelDepth: parentIndex,
             __path: childItem.__path.slice(0, parentIndex + 1),
-            __isLeaf: false
+            __isLeaf: false,
+            key: childItem.__path.slice(0, parentIndex + 1).join('/')
         };
 
         // Reconstruct actual data properties from __path for legacy method compatibility
