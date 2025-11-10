@@ -5,6 +5,7 @@
 
 import { MOBILE_CONFIG } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
+import { CoordinateSystem, HubNucCoordinate } from './mobile-coordinates.js';
 
 /**
  * Handles touch rotation with momentum and snapping
@@ -156,6 +157,55 @@ class TouchRotationHandler {
         
         this.lastTouch = { x: touch.clientX, y: touch.clientY };
         this.lastTimeStamp = currentTime;
+    }
+    
+    // Phase 3 Consolidation: Bilingual coordinate touch calculation method
+    // Provides enhanced touch analysis using Hub/Nuc coordinate system
+    calculateTouchRotationBilingual(touchStartX, touchStartY, touchCurrentX, touchCurrentY, viewport) {
+        try {
+            // Set up coordinate system with current viewport
+            CoordinateSystem.setViewport({
+                LSd: Math.max(viewport.width, viewport.height),
+                SSd: Math.min(viewport.width, viewport.height)
+            });
+            
+            // Convert screen coordinates to SVG coordinates (relative to viewport center)
+            const svgStartX = touchStartX - viewport.center.x;
+            const svgStartY = touchStartY - viewport.center.y;
+            const svgCurrentX = touchCurrentX - viewport.center.x;
+            const svgCurrentY = touchCurrentY - viewport.center.y;
+            
+            // Create Nuc coordinates (screen-based Cartesian)
+            const startNucCoord = HubNucCoordinate.fromNuc(svgStartX, svgStartY);
+            const currentNucCoord = HubNucCoordinate.fromNuc(svgCurrentX, svgCurrentY);
+            
+            // Calculate angular movement using Hub coordinate system
+            const startAngle = startNucCoord.angle;
+            const currentAngle = currentNucCoord.angle;
+            
+            // Calculate angular delta (handling wrap-around)
+            let angleDelta = currentAngle - startAngle;
+            if (angleDelta > Math.PI) angleDelta -= 2 * Math.PI;
+            if (angleDelta < -Math.PI) angleDelta += 2 * Math.PI;
+            
+            // Calculate linear movement for comparison with existing method
+            const linearDelta = (touchCurrentX - touchStartX) + (touchCurrentY - touchStartY);
+            
+            Logger.debug(`Bilingual touch analysis: angular=${angleDelta.toFixed(4)}rad (${(angleDelta * 180 / Math.PI).toFixed(1)}°), linear=${linearDelta.toFixed(1)}px`);
+            
+            return {
+                angleDelta,
+                linearDelta,
+                startCoord: startNucCoord,
+                currentCoord: currentNucCoord,
+                // For future: could use angular delta for more sophisticated rotation
+                recommendedRotationDelta: angleDelta * 0.5 // Example scaling
+            };
+            
+        } catch (error) {
+            Logger.error('Bilingual touch calculation failed:', error);
+            return null;
+        }
     }
     
     handleTouchEnd(e) {

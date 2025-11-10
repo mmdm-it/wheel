@@ -5,6 +5,7 @@
 
 import { MOBILE_CONFIG } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
+import { CoordinateSystem, HubNucCoordinate } from './mobile-coordinates.js';
 
 /**
  * Manages viewport calculations and responsive behavior
@@ -145,6 +146,37 @@ class ViewportManager {
         
         Logger.debug(`Magnifying ring positioned at angle ${centerAngle * 180 / Math.PI}°: (${x.toFixed(1)}, ${y.toFixed(1)}) using arc center (${arcParams.centerX}, ${arcParams.centerY}) radius ${arcParams.radius}`);
         return { x, y, angle: centerAngle };
+    }
+    
+    // Phase 1 Consolidation: Bilingual coordinate method demonstration
+    // Uses new coordinate system while preserving existing interface behavior
+    getMagnifyingRingPositionBilingual() {
+        const centerAngle = this.getCenterAngle();
+        const arcParams = this.getArcParameters();
+        
+        // Set up coordinate system with current viewport
+        const viewport = this.getViewportInfo();
+        CoordinateSystem.setViewport({
+            LSd: Math.max(viewport.width, viewport.height),
+            SSd: Math.min(viewport.width, viewport.height)
+        });
+        
+        // Create hub coordinate (polar) at focus ring using same radius as existing method
+        const hubCoord = HubNucCoordinate.fromPolar(centerAngle, arcParams.radius);
+        
+        // Get Nuc coordinates (will be calculated lazily)
+        const nucX = hubCoord.nucX;
+        const nucY = hubCoord.nucY;
+        
+        Logger.debug(`Bilingual magnifying ring: Hub(${centerAngle * 180 / Math.PI}°, r=${arcParams.radius}) -> Nuc(${nucX.toFixed(1)}, ${nucY.toFixed(1)})`);
+        
+        return { 
+            x: nucX, 
+            y: nucY, 
+            angle: centerAngle,
+            // Include both coordinate representations for debugging
+            hubCoord
+        };
     }
 }
 
