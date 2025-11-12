@@ -41,7 +41,8 @@ text {
 #versionText {
     font-size: 22px !important;
     font-weight: 600 !important;
-    fill: #333333 !important;
+    fill: #ffffff !important;
+    fill-opacity: 1.0 !important;
     opacity: 1.0 !important;
     text-transform: none !important;
 }
