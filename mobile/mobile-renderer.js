@@ -940,9 +940,24 @@ class MobileRenderer {
     getPreviousHierarchyLevel(currentLevelName) {
         const levelNames = this.getHierarchyLevelNames();
         const currentIndex = levelNames.indexOf(currentLevelName);
-        if (currentIndex > 0) {
-            return levelNames[currentIndex - 1];
+        
+        if (currentIndex <= 0) {
+            return null;
         }
+        
+        // Walk backwards through hierarchy, skipping virtual levels
+        for (let i = currentIndex - 1; i >= 0; i--) {
+            const candidateLevel = levelNames[i];
+            const levelConfig = this.data.getHierarchyLevelConfig(candidateLevel);
+            
+            // Skip virtual levels (those with virtual_grouping)
+            if (!levelConfig || !levelConfig.virtual_grouping) {
+                return candidateLevel;
+            }
+            
+            Logger.debug(`🔼 Skipping virtual level: ${candidateLevel}`);
+        }
+        
         return null;
     }
     
