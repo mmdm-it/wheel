@@ -3,6 +3,15 @@
  * Centralized configuration constants for the mobile catalog system
  */
 
+const VERSION = {
+    semantic: '0.5.5',      // major.minor.patch
+    buildDate: '251112',    // YYMMDD
+    buildNumber: '003',     // Sequential build number for the day
+    display() {
+        return `v${this.semantic}-b${this.buildDate}.${this.buildNumber}`;
+    }
+};
+
 const MOBILE_CONFIG = {
     // SVG namespace
     SVG_NS: "http://www.w3.org/2000/svg",
@@ -51,4 +60,4 @@ const MOBILE_CONFIG = {
     }
 };
 
-export { MOBILE_CONFIG };
+export { MOBILE_CONFIG, VERSION };

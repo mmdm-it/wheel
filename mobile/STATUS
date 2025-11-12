@@ -118,27 +118,29 @@ For complete spatial definitions, coordinate systems, and positioning rules, see
 - Robust error handling for viewport edge cases
 ## Pseudo Parent Level System (`rpp_` Architecture)
 
-The catalog implements a revolutionary pseudo parent level system using curatorial prefix triggers:
+**⚠️ STATUS: DESIGNED BUT NOT YET IMPLEMENTED**
 
-### Pseudo Parent Architecture
+The following describes the **planned architecture** for a revolutionary pseudo parent level system. This design is complete and documented but the code implementation has not yet begun.
+
+### Pseudo Parent Architecture (PLANNED)
 - **Real Levels**: Data exists in JSON structure at a specific hierarchy depth
 - **Pseudo Parent Levels**: Dynamically created levels triggered by `rpp_` (requires pseudo parent) prefix
 - **Universal Trigger**: Any data item can trigger pseudo parent creation using `rpp_propertyname: true`
 - **Direction**: Pseudo parents are always positioned OUT (above) the triggering data level
 
-### Universal Trigger System (`rpp_` Prefix)
+### Universal Trigger System (`rpp_` Prefix) (PLANNED)
 - **Pattern**: `rpp_levelname: true` in data item triggers creation of "levelname" pseudo parent
 - **Domain Agnostic**: Works for any property name (family, venue_type, political_era, certification, etc.)
 - **Nested Support**: Pseudo parents can have their own pseudo parents for unlimited depth
 - **Constraint**: Top levels (markets, testaments) and leaf levels (models, verses) cannot create pseudo parents
 
-### Orphan Adoption System
+### Orphan Adoption System (PLANNED)
 - Items without `rpp_` trigger are considered orphans
 - Orphans are adopted into configurable group name (e.g., "Pending Approval", "Uncategorized", "Studio Only")
 - Provides consistent UX while respecting data structure differences
 - Orphan group name defined in `pseudo_orphan_group` configuration
 
-### Navigation Flow Examples
+### Navigation Flow Examples (PLANNED)
 **Simple Pseudo Parent:**
 ```
 Market → Country → Manufacturer → Cylinder → [family] → Model
@@ -155,36 +157,42 @@ Artist → Decade → [venue_type] → [recording_session] → Song
                  parent          (nested)
 ```
 
-### Implementation Status
-- ⚠️ **PENDING**: `rpp_` prefix trigger system implementation
-- ✅ Virtual level detection with configuration-driven checking  
-- ✅ Orphan adoption into configurable group name
-- ✅ Child Pyramid click handlers with virtual level logic
-- ✅ Universal getItemsAtLevel() for all navigation
-- ✅ Proper navigation flow through any hierarchy depth
-- ✅ Configuration-driven irregular plurals
+### Current Implementation Status
+- ⚠️ **NOT IMPLEMENTED**: Zero `rpp_` logic exists in codebase
+- ✅ Virtual level system working (different concept - groups children by property)
+- ✅ Orphan adoption working within virtual levels
+- ✅ Configuration-driven irregular plurals working
+- ❌ **BLOCKER**: Hardcoded pluralization in mobile-renderer.js line 319 (`family: 'families'`)
+- 🎯 **REQUIRED FOR**: True universal architecture without domain-specific code
 
 ### CURRENT FUNCTIONALITY ANALYSIS
 
-**🎯 Production-Ready Core Features:**
-1. **Complete Navigation System**: Full hierarchy traversal through rotational Focus Ring and radial IN/OUT migration using Hub/Nuc coordinate systems
-2. **Universal Data Pipeline**: Handles Marine manifold catalog (4 markets, 18 countries, 45+ manufacturers, 2000+ models)
-3. **Advanced Touch Controls**: Professional-grade CW/CCW rotation with momentum, scaling, and precision snapping
-4. **Responsive Design**: Universal viewport calculations work on any mobile device aspect ratio
-5. **Error Handling**: Comprehensive error recovery with retry logic and graceful degradation
-6. **Performance Optimization**: Successfully tested with 18,000+ items using viewport filtering
-7. **Virtual Level System**: Dynamic grouping with orphan adoption (e.g., engine families with "Other" group)
-8. **Parent Button Navigation**: Bidirectional hierarchy traversal with proper state management
-9. **Configurable UI**: Colors, text formatting, sorting, and positioning all JSON-driven
-10. **ES6 Module Architecture**: Zero build process - direct browser module loading for rapid development
-11. **Detail Sector Animation**: Synchronized logo and circle expand/collapse with dynamic sizing and positioning
+**✅ Working Core Features (Foundation Solid):**
+1. **Complete 2D Navigation**: Rotational CW/CCW + Radial IN/OUT both fully functional
+2. **Parent Button**: Now navigates OUT through all levels to top, hides when at start
+3. **Data Loading**: Handles Marine manifold catalog (4 markets, 18 countries, 45+ manufacturers, 2000+ models)
+4. **Touch Controls**: Professional-grade gesture recognition with dynamic rotation scaling
+5. **Responsive Design**: Universal viewport calculations work on any mobile device aspect ratio
+6. **Error Handling**: Comprehensive error recovery with retry logic and graceful degradation
+7. **Performance**: Successfully tested with 18,000+ items using viewport filtering
+8. **Virtual Level System**: Dynamic grouping with orphan adoption working
+9. **Detail Sector**: Expansion animation, content display, metadata templates functioning
+10. **ES6 Module Architecture**: Zero build process - direct browser module loading
+11. **Viewport Mathematics**: Hub/Nuc coordinate system, aspect ratio calculations working
 
-**🚀 Ready for Commercial Deployment:**
-- **Marine Catalog**: Complete water-cooled exhaust manifold database for Italian marine industry
-- **Scalability**: Tested with large datasets, ready for enterprise deployment  
-- **Universal Design**: Can be reconfigured for any hierarchical data domain (medical, industrial, government)
-- **Mobile-First**: Optimized for touch interaction with gesture recognition
-- **Cross-Platform**: Native ES6 modules work in all modern browsers
+**❌ Broken/Incomplete Features (Critical Work Needed):**
+1. ~~**Parent Button Navigation**: Does NOT complete OUT migration to top level - stops at second level~~ ✅ **FIXED**
+2. **Child Pyramid Navigation**: 80% complete - some selection and transition issues remain
+3. **Universal Architecture**: Still has hardcoded domain-specific code (`family: 'families'`)
+4. **Pseudo Parent System**: Designed but zero implementation exists
+5. **Bidirectional 2D Navigation**: Only 1.5D working (rotational + partial radial)
+6. **Multi-Domain Validation**: Only tested with marine catalog, Bible partially populated
+
+**⚠️ Reality Check:**
+- ✅ **Core navigation working**: Parent Button fix restores 2D navigation concept
+- **NOT production-ready**: Universal architecture still needs implementation
+- **NOT universal**: Domain-specific code exists  
+- **Solid foundation**: Architecture and math are sound, implementation improving
 
 ### TECHNICAL SPECIFICATIONS
 
@@ -216,24 +224,52 @@ Artist → Decade → [venue_type] → [recording_session] → Song
 
 **🎯 IMMEDIATE PRIORITIES**
 
-**Priority 1: Universal Sorting System** *(COMPLETED)*
-- ✅ **Universal sort_number Priority**: Enhanced sortItems() method to prioritize sort_number over alphabetical
-- ✅ **Curatorial Judgment Prefix**: Implemented rcj_ prefix for curatorial judgment fields  
-- ✅ **Mixed Sorting Logic**: Items with sort_number sorted numerically first, items without sort_number fall back to Z-to-A alphabetical
-- ✅ **Focus Ring Positioning Fix**: Genesis now appears at correct angle (145.2°) matching center angle
-- ✅ **Complete Biblical Canonical Ordering**: Extended sort_number values to all 67 Bible books (1-67) in proper canonical sequence
-- ✅ **Arc Top Positioning**: Sorted items positioned at arc top (highest visible angles) via calculateInitialRotationOffset()
-- **Impact**: Genesis through Revelation now appear in proper canonical order in Focus Ring
-- **Reference**: DESIGNSPEC.md Section 4.1 documents counterintuitive angle system (greater angles = visual "top")
+**Priority 1: Fix Parent Button Navigation (CRITICAL - Core Concept Broken)** *(COMPLETED)*
+- **Issue**: Parent Button did not back user OUT to the start (top) level - stopped prematurely
+- **Previous Behavior**: 
+  - Lines 475-479 in mobile-app.js: When `getPreviousHierarchyLevel()` returned null, function exited early
+  - Parent Button updated to null and became non-functional
+  - User was stranded at second-level and could not return to first level
+- **Fix Applied**: 
+  - Lines 477-552 now handle null parentLevel case explicitly
+  - Shows top-level items in Focus Ring when at second level
+  - Properly positions selected top-level item based on navigation path
+  - Hides Parent Button when reaching top level (nowhere further OUT to go)
+- **Impact**: ✅ **CORE CONCEPT RESTORED** - Full 2D navigation (radial IN/OUT + rotational CW/CCW) now functional
+- **Status**: COMPLETED - bidirectional navigation working
 
-**Priority 2: Multi-Volume System** *(COMPLETED)*
+**Priority 2: Implement `rpp_` Pseudo Parent System** *(NOT STARTED)*
+- **Status**: Architecture designed, zero implementation exists
+- **Location**: Needs implementation in mobile-data.js navigation methods
+- **Scope**: 
+  - Add `rpp_` prefix detection in getParentHierarchyLevel()
+  - Implement pseudo parent item creation logic
+  - Add orphan adoption for items without `rpp_` trigger
+  - Support nested pseudo parents (pseudo parents can have their own pseudo parents)
+- **Impact**: Enables true universal architecture without domain-specific code
+- **Blocker**: Line 319 in mobile-renderer.js has hardcoded `family: 'families'` that must be removed
+
+**Priority 3: Remove Domain-Specific Code** *(NOT STARTED)*
+- **mobile-renderer.js line 319**: Remove hardcoded irregulars object
+- **Solution**: Use catalog JSON irregular_plurals configuration instead
+- **Impact**: Required before implementing `rpp_` system
+- **Estimated effort**: 1-2 hours
+
+**Priority 4: Automatic Volume Discovery** *(NOT STARTED)*
+- **mobile-data.js lines 128-131**: Remove hardcoded volume list
+- **Current**: Manual array: `['mmdm_catalog.json', 'gutenberg.json', 'hg_mx.json']`
+- **Solution**: Server-side directory listing + client validation of `wheel_volume_version` property
+- **Impact**: Enables plug-and-play catalog deployment without code changes
+- **Estimated effort**: 4-6 hours (requires server endpoint)
+
+**Priority 5: Multi-Volume System** *(COMPLETED)*
 - ✅ Volume discovery and selector UI working
 - ✅ Both volumes (MMdM + Gutenberg) load and navigate correctly
-- ✅ **Complete Biblical Ordering**: All 67 Bible books now have sort_number 1-67 in canonical sequence
+- ✅ **Complete Biblical Ordering**: All 67 Bible books have sort_number 1-67 in canonical sequence (verified in gutenberg.json)
 - ✅ **Universal Sorting Integration**: sort_number system works across all data domains
-- ⚠️ Bible content population (only Genesis has full verse content - future enhancement)
+- ⚠️ Bible content population: Only Genesis has full verse content - remaining 66 books pending data entry
 
-**Priority 3: Detail Sector Content** *(100% complete)*
+**Priority 6: Detail Sector Content** *(100% complete)*
 - ✅ mobile-detailsector.js rebuilt around metadata-driven templates (info/list/gallery/links)
 - ✅ DataManager helpers resolve detail-sector configuration, context, and template assets
 - ✅ VM Motori MR504LW3 manifold_alternatives dataset migrated into catalog JSON
@@ -241,12 +277,12 @@ Artist → Decade → [venue_type] → [recording_session] → Song
 - ✅ Logger instrumentation traces configuration resolution and per-view metrics
 - ✅ ES5 compatibility for older devices
 
-**Priority 4: Child Pyramid Navigation** *(80% complete)*
+**Priority 7: Child Pyramid Navigation** *(80% complete)*
 - ✅ Virtual group navigation fully implemented
 - ✅ Leaf item handling with Detail Sector transition working
 - ⚠️ Item detail selection partially implemented
 
-**Priority 5: Detail Sector Data Rollout** *(in progress)*
+**Priority 8: Detail Sector Data Rollout** *(in progress)*
 - ⚠️ Extend metadata schema across remaining catalog nodes (beyond MR504LW3)
 - ⚠️ Map gallery/link assets into registry with fallback behavior
 - ⚠️ Validate new logging output during device runs and tune templates as needed
@@ -286,18 +322,47 @@ Artist → Decade → [venue_type] → [recording_session] → Song
 - **Architecture**: Mixed sorting logic handles both numbered and non-numbered items
 - **Status**: COMPLETED - All 67 Bible books now appear in proper canonical order
 
+**🐛 CRITICAL BUGS**
+- ✅ **FIXED: Parent Button Navigation** (mobile-app.js lines 477-552): User can now navigate OUT to top level
+  - Previously stopped at second-from-top level when `getPreviousHierarchyLevel()` returned null
+  - Now explicitly handles top-level navigation case
+  - Shows top-level items in Focus Ring, hides Parent Button when at start
+  - **2D navigation concept restored** - radial OUT dimension now complete
+
 **🐛 MINOR BUGS**
 - Forced reflow warnings in console (performance impact minimal)
 - Undefined viewport dimensions in some debug logs (cosmetic only)
 
 **⚠️ TECHNICAL DEBT**
-- **CRITICAL: Domain-specific language in mobile-renderer.js**: Hardcoded references to 'model', 'family', 'families', 'models' throughout renderer code violates universal architecture principle
-- **CRITICAL: Pseudo parent level system needed**: Current virtual level system requires `rpp_` (requires pseudo parent) prefix architecture to eliminate domain-specific triggers and enable universal nested pseudo levels
+
+**CRITICAL BLOCKERS (Prevent Full 2D Navigation):**
+- ✅ **FIXED**: Parent Button navigation - now returns to top level successfully
+  - **Fixed in**: mobile-app.js lines 477-552
+  - **Solution**: Added explicit handling for null parentLevel case to show top-level items
+  - **Result**: Full bidirectional radial navigation (IN and OUT) now working
+
+**CRITICAL BLOCKERS (Prevent Universal Architecture):**
+- **mobile-renderer.js line 319**: Hardcoded irregulars object contains `family: 'families'` - domain-specific pluralization
+  - **Impact**: Every new data domain must add hardcoded plurals
+  - **Solution**: Configuration-driven pluralization already exists in catalog JSON but not used
+  - **Priority**: Must fix before claiming universal architecture
+
+- **mobile-data.js lines 128-131**: Hardcoded volume list prevents automatic catalog discovery
+  - **Impact**: Every new catalog requires editing source code to add filename
+  - **Current**: `candidateFiles = ['mmdm_catalog.json', 'gutenberg.json', 'hg_mx.json']`
+  - **Solution**: Server endpoint to list available JSON files + client validation of `wheel_volume_version`
+  - **Priority**: Required for true plug-and-play universal deployment
+
+- **rpp_ Pseudo Parent System**: NOT IMPLEMENTED (currently only designed)
+  - **Impact**: Cannot create dynamic hierarchy levels without code changes
+  - **Solution**: Implement detection and navigation logic in mobile-data.js
+  - **Priority**: Required for true domain universality
+
+**MINOR ISSUES:**
 - Position caching could be more sophisticated
 - Some magic numbers should be moved to config
 - Event cleanup on component destruction needed
-- Bible volume needs book_number property for remaining 61 books (currently only Pentateuch)
-- Bible volume content population (only Genesis has full verse data)
+- Bible volume content population (only Genesis has full verse data - others pending)
 
 ### TESTING STATUS
 
@@ -325,33 +390,37 @@ Artist → Decade → [venue_type] → [recording_session] → Song
 
 ### DEPLOYMENT STATUS & BUSINESS READINESS
 
-**🎯 IMMEDIATE DEPLOYMENT READY (Marine Catalog)**
-- **Complete Core System**: All major navigation components functional and tested
-- **Production Data**: Real marine manifold catalog with 45+ manufacturers, 2000+ models
-- **Mobile Optimization**: Professional-grade CW/CCW touch controls with dynamic scaling
-- **Performance Validated**: Successfully handles large datasets (18,000+ items with rotational traversal tested)
-- **Error Resilience**: Comprehensive error handling with graceful fallback
-- **Universal Design**: Zero domain-specific code enables rapid market expansion
+**⚠️ NOT READY FOR DEPLOYMENT**
+Current state is a working prototype with broken core features. Significant development required before commercial deployment.
 
-**📱 ANDROID APP READY (Estimated 2-4 weeks)**
-- **Technical Foundation**: Complete - all core functionality working
-- **WebView Integration**: Straightforward implementation path
-- **Offline Capability**: JSON data structure ideal for local caching
-- **Cross-Device Testing**: Universal viewport calculations handle all Android screen sizes
-- **Name Reservation**: "Wheel" secured on Google Play Store
+**Core Concept Validation:**
+- ✅ **Revolutionary Interface**: 2D navigation concept proven superior to traditional scrolling
+- ✅ **Ergonomic Design**: Arc-based thumb navigation feels natural and intuitive
+- ✅ **Sprocket Gear Metaphor**: Rotational traversal of infinite lists works beautifully
+- ❌ **Radial Navigation**: Incomplete - IN migration partial, OUT migration broken
 
-**💼 COMMERCIAL STRATEGY VALIDATED**
-- **Freemium Model**: Reader app free, Generator tool paid (Gillette/Adobe model)
-- **Market Differentiation**: Revolutionary 2D navigation vs traditional scrolling
-- **Scalable Platform**: Same codebase serves marine, medical, industrial, government markets
-- **Patent Potential**: Unique sprocket gear navigation concept
-- **Network Effects**: Free readers drive adoption, attracting content creators
+**Technical Status:**
+- ✅ **Solid Architecture**: Hub/Nuc coordinate system, viewport math, module structure sound
+- ✅ **Performance Validated**: Handles large datasets (18,000+ items tested)
+- ❌ **Core Navigation Broken**: Parent Button doesn't complete OUT to top level
+- ❌ **Universal Architecture**: Not achieved - has domain-specific hardcoded values
 
-**⚡ COMPETITIVE ADVANTAGES**
-- **First Mover**: No comparable 2D hierarchical mobile navigation exists
-- **Universal Architecture**: Competitors would need domain-specific solutions
-- **Technical Depth**: Advanced viewport math and touch physics create high barriers
-- **Proven at Scale**: Performance testing demonstrates enterprise readiness
+**📱 ANDROID APP STATUS: NOT READY**
+- **Blocker**: Core 2D navigation must work before packaging
+- **Estimate**: 3-6 months of focused development required
+- **Requirements**: Fix Parent Button, complete Child Pyramid, implement universal architecture
+
+**💼 COMMERCIAL STRATEGY**
+- **Concept**: Strong - freemium model (Reader free, Generator paid) is sound
+- **Market Differentiation**: Revolutionary 2D navigation validated as superior UX
+- **Reality**: Need working prototype before seeking investment or partnerships
+- **Timeline**: Premature to pursue commercial deployment until core features complete
+
+**⚡ COMPETITIVE POSITION**
+- **First Mover Advantage**: Window of opportunity exists
+- **Technical Barriers**: High - complex math creates moat once completed
+- **Risk**: Competitors could implement if we take too long to finish
+- **Priority**: Complete core navigation ASAP to maintain advantage
 
 ### ARCHITECTURE & DEVELOPMENT WORKFLOW
 
@@ -433,16 +502,43 @@ wheel/
 ---
 
 ## 📊 PROJECT STATUS SUMMARY
-**Current State**: Production-ready marine catalog with complete Detail Sector content display
-**Business Model**: Validated freemium strategy with clear monetization path  
-**Technical Readiness**: 98% complete core system, ready for Android app packaging
-**Market Position**: First-mover advantage in 2D hierarchical mobile navigation
-**Commercial Potential**: Platform ready for rapid expansion across multiple data domains
+**Overall Progress**: ~55% complete (up from 50% - Parent Button fixed)  
+**Current State**: Working marine catalog prototype with functional 2D navigation  
+**Critical Achievement**: Parent Button navigation fixed - full bidirectional radial navigation working  
+**Universal Architecture**: Designed but not implemented - still has domain-specific code  
+**Business Model**: Validated freemium strategy concept  
+**Technical Readiness**: Core navigation complete - universal architecture implementation required  
+**Market Position**: First-mover advantage opportunity in 2D hierarchical mobile navigation  
+**Commercial Potential**: Strong concept with working core requiring universal architecture completion  
 
-**Next Milestone**: Android app packaging and WebView integration
-**Strategic Goal**: Establish "Wheel" as the standard for mobile hierarchical data navigation
-**Code Maturity**: High - comprehensive error handling, performance optimization, universal architecture
-**Documentation**: Complete technical specification with business strategy integration
+**Critical Work Remaining**: 
+1. ~~**FIX PARENT BUTTON**~~ ✅ **COMPLETED** - Full OUT navigation to top level working
+2. **FIX CHILD PYRAMID** - Complete IN navigation implementation (80% done)
+3. Implement `rpp_` pseudo parent system (not started - required for universal architecture)
+4. Remove hardcoded plurals (not started - blocks universal architecture)
+5. Implement automatic volume discovery (not started - currently hardcoded)
+6. Test and validate with multiple data domains
+7. Complete Bible content population (66 of 67 books need verse data)
+8. Android app packaging and WebView integration
+
+**What Works**:
+- Rotational navigation (CW/CCW) with momentum physics ✅
+- Detail Sector expansion and content display ✅
+- Touch controls and gesture recognition ✅
+- Focus Ring sprocket gear concept ✅
+- Viewport calculations and responsive layout ✅
+- Data loading and virtual levels ✅
+
+**What's Broken/Incomplete**:
+- Radial OUT navigation via Parent Button ❌
+- Radial IN navigation via Child Pyramid (partial) ⚠️
+- Universal architecture (has domain-specific code) ❌
+- Multi-domain validation ❌
+- Pseudo parent system ❌
+
+**Strategic Goal**: Establish "Wheel" as the standard for mobile hierarchical data navigation  
+**Reality Check**: Strong foundation with revolutionary concept, but significant core features need fixing/implementing  
+**Documentation**: Complete and honest about implementation gaps
 
 **Latest Updates (November 12, 2025):**
 - ✅ **Detail Sector Metadata Architecture**: mobile-detailsector.js now resolves header/views from catalog JSON templates (info/list/gallery/links) with runtime overrides
@@ -451,7 +547,58 @@ wheel/
 - ✅ **Observability Pass**: mobile-detailsector.js instrumented with mobile-logger to trace config resolution, view rendering decisions, and data stats
 - ✅ **Compatibility Sweep**: Ensured metadata-driven detail sector retains ES5-safe patterns and animation timing
 
-**Latest Updates (November 10, 2025):**
+**Latest Updates (November 12, 2025):**
+- 🔢 **VERSION SYSTEM IMPLEMENTED**: Semantic versioning with build tracking
+  - **Format**: `v0.5.5-b251112.001` (semantic-buildDate.buildNumber)
+  - **Location**: mobile-config.js exports VERSION object
+  - **Display**: Upper-left corner on volume selector screen (always visible)
+  - **Purpose**: Track which build has which bugs/fixes during rapid development
+  - **Current Version**: v0.5.5-b251112.001 (Parent Button fix completed)
+  
+- ✅ **PARENT BUTTON FIXED**: Full bidirectional radial navigation now working!
+  - **Problem**: Function exited early when `getPreviousHierarchyLevel()` returned null at second-from-top level
+  - **Solution**: Added explicit top-level navigation case (mobile-app.js lines 477-552)
+  - **Behavior**: Shows top-level items in Focus Ring, hides Parent Button when at start
+  - **Impact**: Core 2D navigation concept (radial IN/OUT + rotational CW/CCW) fully restored
+  - **Status**: Users can now navigate IN through all levels and OUT back to start - revolutionary interface works!
+  
+- 📋 **Third Volume Added**: Created hg_mx.json (HG Music Library) for universal architecture testing
+  - **Artists**: The Rolling Stones (24 albums), The Lonesome Strangers (2 albums), Leon Redbone (2 albums)
+  - **Purpose**: Test domain-agnostic navigation with completely different terminology (artist/album/song vs market/country/manufacturer)
+  - **Status**: Volume discovery updated, now shows 3 catalogs in selector
+  - **Exposes**: Will immediately reveal hardcoded plural issues and domain-specific code
+  
+- ⚠️ **Hardcoded Volume Discovery Identified**: mobile-data.js lines 128-131 require manual editing for each new catalog
+  - **Problem**: Every new volume requires source code change to add filename to candidateFiles array
+  - **Impact**: Violates universal architecture - not truly plug-and-play
+  - **Solution Required**: Server endpoint + automatic JSON detection with `wheel_volume_version` validation
+  - **Priority**: Added as Priority 4 in roadmap
+  
+- ❌ **CRITICAL BUG IDENTIFIED**: Parent Button navigation broken - does not return to top level
+  - **Symptom**: User can navigate IN (via Child Pyramid) but cannot navigate fully OUT (via Parent Button)
+  - **Location**: mobile-app.js lines 475-479 in handleParentButtonClick()
+  - **Impact**: Violates core 2D navigation concept - radial IN/OUT dimension is incomplete
+  - **Severity**: HIGHEST - The entire Wheel concept depends on fluid bidirectional navigation
+  - **Status**: Identified but not fixed - now Priority 1
+  
+- 📋 **Documentation Audit Completed**: Removed mobile/README.md to eliminate documentation drift
+  - README contained references to non-existent modules (mobile-state.js, mobile-layout.js, mobile-visual.js)
+  - DESIGNSPEC.md + STATUS provide complete documentation without redundancy
+  - GitHub does not require README.md - clean two-document system is sufficient
+  
+- ✅ **Implementation Status Verified**: Conducted comprehensive codebase audit
+  - **rpp_ Pseudo Parent System**: Confirmed NOT IMPLEMENTED (design only, zero code exists)
+  - **Sort Numbers**: Verified all 67 Bible books have sort_number 1-67 in gutenberg.json
+  - **Domain-Specific Code**: Confirmed hardcoded `family: 'families'` exists at mobile-renderer.js line 319
+  - **Virtual Levels**: Working implementation (different from pseudo parents - groups by property)
+  
+- 🎯 **Priority Realignment**: Updated roadmap to reflect implementation reality and critical navigation bug
+  - Priority 1: **FIX PARENT BUTTON NAVIGATION** (core concept broken)
+  - Priority 2: Implement `rpp_` pseudo parent system (currently NOT STARTED)
+  - Priority 3: Remove hardcoded irregulars from mobile-renderer.js line 319
+  - Marked pseudo parent system as "DESIGNED BUT NOT YET IMPLEMENTED" in documentation
+
+**Previous Updates (November 10, 2025):**
 - ✅ **Pseudo Parent Level System Designed**: Revolutionary `rpp_` (requires pseudo parent) prefix architecture for universal dynamic hierarchy creation
   - **Universal Trigger Pattern**: `rpp_propertyname: true` creates pseudo parent levels dynamically
   - **Domain Agnostic**: Works for any data domain (marine families, music venues, medical certifications, political eras)

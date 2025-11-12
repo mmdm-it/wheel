@@ -6,7 +6,7 @@
  * Edit this file directly - no bundling required.
  */
 
-import { MOBILE_CONFIG } from './mobile-config.js';
+import { MOBILE_CONFIG, VERSION } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
 import { MobileChildPyramid } from './mobile-childpyramid.js';
 import { MobileDetailSector } from './mobile-detailsector.js';
@@ -1695,9 +1695,27 @@ class MobileRenderer {
         message.textContent = 'What would you like to see?';
         
         messageGroup.appendChild(message);
+        
+        // Add version number in upper-right corner
+        const versionText = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
+        versionText.setAttribute('id', 'versionText');
+        const viewport = this.viewport.getViewportInfo();
+        versionText.setAttribute('x', (viewport.width / 2) - 15);
+        versionText.setAttribute('y', -(viewport.height / 2) + 25);
+        versionText.setAttribute('text-anchor', 'end');
+        versionText.setAttribute('dominant-baseline', 'hanging');
+        versionText.setAttribute('fill', '#333333');
+        versionText.setAttribute('font-family', 'Montserrat, sans-serif');
+        versionText.setAttribute('font-size', '22');
+        versionText.setAttribute('font-weight', '600');
+        versionText.setAttribute('opacity', '1.0');
+        versionText.textContent = VERSION.display();
+        
+        messageGroup.appendChild(versionText);
         this.elements.mainGroup.appendChild(messageGroup);
         
         Logger.debug('📖 Catalog selector message displayed in Detail Sector');
+        Logger.debug(`📋 Version: ${VERSION.display()}`);
     }
 
     /**
