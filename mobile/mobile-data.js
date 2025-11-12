@@ -127,7 +127,8 @@ class DataManager {
         // List of potential volume files to check
         const candidateFiles = [
             'mmdm_catalog.json',
-            'gutenberg.json'
+            'gutenberg.json',
+            'hg_mx.json'
             // Future volumes will be added here:
             // 'shakespeare.json',
             // 'sears_catalog.json',

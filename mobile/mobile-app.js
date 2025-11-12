@@ -473,9 +473,71 @@ class MobileCatalogApp {
         }
 
         const parentLevel = this.renderer.getPreviousHierarchyLevel(currentLevel);
+        
+        // If no parent level exists, we're at second-from-top level
+        // Navigate to top level (the start point)
         if (!parentLevel) {
-            Logger.debug('🔼 Already at top level - no parent navigation available');
+            Logger.debug('🔼 At second level - navigating OUT to top level');
+            
+            // Get top level items
+            const topLevelItems = this.renderer.getTopLevelItems();
+            if (!topLevelItems || !topLevelItems.length) {
+                Logger.warn('🔼 No top level items available');
+                this.renderer.updateParentButton(null);
+                return;
+            }
+            
+            // Find which top-level item is the parent of current focus
+            const topLevelParentKey = currentFocus.__path && currentFocus.__path.length > 0 
+                ? currentFocus.__path[0] 
+                : null;
+            
+            const selectedTopLevel = topLevelParentKey 
+                ? topLevelItems.find(item => item.key === topLevelParentKey) || topLevelItems[0]
+                : topLevelItems[0];
+            
+            Logger.debug(`🔼 Showing top level: ${topLevelItems.length} items, selected: ${selectedTopLevel.name || selectedTopLevel.key}`);
+            
+            // Update Focus Ring with top level items
+            this.renderer.currentFocusItems = topLevelItems;
+            this.renderer.allFocusItems = topLevelItems;
+            
+            const topLevelIndex = this.renderer.findItemIndexInArray(selectedTopLevel, topLevelItems, this.renderer.getHierarchyLevelNames()[0]);
+            const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+            const middleIndex = (topLevelItems.length - 1) / 2;
+            const centerOffset = topLevelIndex >= 0 ? -(topLevelIndex - middleIndex) * angleStep : 0;
+            
+            Logger.debug(`🔼 Top level index: ${topLevelIndex}, centerOffset: ${centerOffset}`);
+            
+            // Hide child pyramid
+            if (this.renderer.elements.childRingGroup) {
+                this.renderer.elements.childRingGroup.classList.add('hidden');
+            }
+            this.renderer.clearFanLines();
+            
+            // Setup rotation for top level
+            this.setupTouchRotation(topLevelItems);
+            if (this.touchHandler) {
+                this.touchHandler.rotationOffset = centerOffset;
+            }
+            
+            // Update display
+            if (this.renderer.settleTimeout) {
+                clearTimeout(this.renderer.settleTimeout);
+                this.renderer.settleTimeout = null;
+            }
+            
+            this.renderer.updateFocusRingPositions(centerOffset);
+            this.renderer.lastRotationOffset = centerOffset;
+            this.renderer.selectedFocusItem = selectedTopLevel;
+            this.renderer.activeType = this.renderer.getHierarchyLevelNames()[0];
+            this.renderer.buildActivePath(selectedTopLevel);
+            this.renderer.isRotating = false;
+            
+            // At top level, hide parent button
             this.renderer.updateParentButton(null);
+            
+            Logger.debug(`🔼 Reached top level - Parent Button hidden, showing ${topLevelItems.length} top-level items`);
             return;
         }
 

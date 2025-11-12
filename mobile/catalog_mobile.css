@@ -37,6 +37,15 @@ text {
     text-transform: uppercase; 
 }
 
+/* Version text override */
+#versionText {
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    fill: #333333 !important;
+    opacity: 1.0 !important;
+    text-transform: none !important;
+}
+
 /* Focus item selection styles */
 .focusItem.selected .node {
     transition: all 0.2s ease;

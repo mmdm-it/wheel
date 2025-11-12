@@ -1,0 +1,759 @@
+{
+    "HG_Music": {
+        "display_config": {
+            "wheel_volume_version": "1.0",
+            "volume_type": "wheel_hierarchical",
+            "volume_name": "HG Music Library",
+            "volume_description": "Test music catalog for universal architecture validation",
+            "ui_limits": {
+                "focus_ring_max_depth": 3,
+                "parent_button_min_depth": 1
+            },
+            "hierarchy_levels": {
+                "artist": {
+                    "text_format": "title_case",
+                    "color": "#9b59b6",
+                    "positioning": "arc",
+                    "display_name": "Artist",
+                    "sort_type": "alphabetical",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none",
+                    "enable_rotation": true,
+                    "irregular_plural": "artists"
+                },
+                "album": {
+                    "text_format": "title_case",
+                    "color": "#3498db",
+                    "positioning": "arc",
+                    "display_name": "Album",
+                    "sort_type": "alphabetical",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none",
+                    "enable_rotation": true,
+                    "irregular_plural": "albums"
+                },
+                "song": {
+                    "text_format": "title_case",
+                    "color": "#e74c3c",
+                    "positioning": "arc",
+                    "display_name": "Song",
+                    "sort_type": "alphabetical",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none",
+                    "enable_rotation": true,
+                    "irregular_plural": "songs",
+                    "detail_sector": {
+                        "header_template": "{{ name }}",
+                        "subtitle_template": "{{ album }} - {{ artist }}",
+                        "views": {
+                            "info": {
+                                "body_template": "{{ year }} • {{ duration }} • {{ genre }}",
+                                "fields": [
+                                    {
+                                        "label": "Track",
+                                        "value_template": "{{ track_number }}"
+                                    },
+                                    {
+                                        "label": "Composer",
+                                        "value_template": "{{ composer }}"
+                                    },
+                                    {
+                                        "label": "Label",
+                                        "value_template": "{{ label }}"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "artists": {
+            "The_Rolling_Stones": {
+                "albums": {
+                    "The_Rolling_Stones": {
+                        "year": 1964,
+                        "songs": {
+                            "Route_66": {
+                                "track_number": 1,
+                                "duration": "2:20",
+                                "composer": "Bobby Troup",
+                                "genre": "Rock & Roll",
+                                "year": 1964,
+                                "label": "Decca Records"
+                            },
+                            "Not_Fade_Away": {
+                                "track_number": 5,
+                                "duration": "1:48",
+                                "composer": "Buddy Holly/Norman Petty",
+                                "genre": "Rock & Roll",
+                                "year": 1964,
+                                "label": "Decca Records",
+                                "data": {
+                                    "chart_position": "#3 UK"
+                                }
+                            }
+                        }
+                    },
+                    "The_Rolling_Stones_No_2": {
+                        "year": 1965,
+                        "songs": {
+                            "Time_Is_on_My_Side": {
+                                "track_number": 7,
+                                "duration": "2:50",
+                                "composer": "Jerry Ragovoy",
+                                "genre": "Rock",
+                                "year": 1965,
+                                "label": "Decca Records",
+                                "data": {
+                                    "chart_position": "#6 US"
+                                }
+                            }
+                        }
+                    },
+                    "Out_of_Our_Heads": {
+                        "year": 1965,
+                        "songs": {
+                            "Satisfaction": {
+                                "track_number": 1,
+                                "duration": "3:44",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1965,
+                                "label": "Decca Records",
+                                "data": {
+                                    "chart_position": "#1 US/UK"
+                                }
+                            },
+                            "The_Last_Time": {
+                                "track_number": 2,
+                                "duration": "3:42",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1965,
+                                "label": "Decca Records",
+                                "data": {
+                                    "chart_position": "#1 UK"
+                                }
+                            }
+                        }
+                    },
+                    "Aftermath": {
+                        "year": 1966,
+                        "songs": {
+                            "Paint_It_Black": {
+                                "track_number": 2,
+                                "duration": "3:44",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1966,
+                                "label": "Decca Records",
+                                "data": {
+                                    "chart_position": "#1 US/UK"
+                                }
+                            },
+                            "Under_My_Thumb": {
+                                "track_number": 4,
+                                "duration": "3:41",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1966,
+                                "label": "Decca Records"
+                            }
+                        }
+                    },
+                    "Between_the_Buttons": {
+                        "year": 1967,
+                        "songs": {
+                            "Lets_Spend_the_Night_Together": {
+                                "track_number": 1,
+                                "duration": "3:37",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1967,
+                                "label": "Decca Records",
+                                "data": {
+                                    "chart_position": "#3 US"
+                                }
+                            },
+                            "Ruby_Tuesday": {
+                                "track_number": 2,
+                                "duration": "3:17",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1967,
+                                "label": "Decca Records",
+                                "data": {
+                                    "chart_position": "#1 US"
+                                }
+                            }
+                        }
+                    },
+                    "Their_Satanic_Majesties_Request": {
+                        "year": 1967,
+                        "songs": {
+                            "She's_a_Rainbow": {
+                                "track_number": 4,
+                                "duration": "4:35",
+                                "composer": "Jagger-Richards",
+                                "genre": "Psychedelic Rock",
+                                "year": 1967,
+                                "label": "Decca Records"
+                            },
+                            "2000_Light_Years_from_Home": {
+                                "track_number": 5,
+                                "duration": "4:45",
+                                "composer": "Jagger-Richards",
+                                "genre": "Psychedelic Rock",
+                                "year": 1967,
+                                "label": "Decca Records"
+                            }
+                        }
+                    },
+                    "Beggars_Banquet": {
+                        "year": 1968,
+                        "songs": {
+                            "Sympathy_for_the_Devil": {
+                                "track_number": 1,
+                                "duration": "6:18",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1968,
+                                "label": "Decca Records"
+                            },
+                            "Street_Fighting_Man": {
+                                "track_number": 10,
+                                "duration": "3:16",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1968,
+                                "label": "Decca Records",
+                                "data": {
+                                    "chart_position": "#48 US"
+                                }
+                            }
+                        }
+                    },
+                    "Let_It_Bleed": {
+                        "year": 1969,
+                        "songs": {
+                            "Gimme_Shelter": {
+                                "track_number": 1,
+                                "duration": "4:31",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1969,
+                                "label": "Decca Records"
+                            },
+                            "You_Cant_Always_Get_What_You_Want": {
+                                "track_number": 10,
+                                "duration": "7:30",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1969,
+                                "label": "Decca Records"
+                            },
+                            "Midnight_Rambler": {
+                                "track_number": 6,
+                                "duration": "6:53",
+                                "composer": "Jagger-Richards",
+                                "genre": "Blues Rock",
+                                "year": 1969,
+                                "label": "Decca Records"
+                            }
+                        }
+                    },
+                    "Sticky_Fingers": {
+                        "year": 1971,
+                        "songs": {
+                            "Brown_Sugar": {
+                                "track_number": 1,
+                                "duration": "3:50",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1971,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#1 US"
+                                }
+                            },
+                            "Wild_Horses": {
+                                "track_number": 2,
+                                "duration": "5:44",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1971,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#28 US"
+                                }
+                            },
+                            "Cant_You_Hear_Me_Knocking": {
+                                "track_number": 3,
+                                "duration": "7:16",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1971,
+                                "label": "Rolling Stones Records"
+                            }
+                        }
+                    },
+                    "Exile_on_Main_St": {
+                        "year": 1972,
+                        "songs": {
+                            "Rocks_Off": {
+                                "track_number": 1,
+                                "duration": "4:32",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1972,
+                                "label": "Rolling Stones Records"
+                            },
+                            "Tumbling_Dice": {
+                                "track_number": 5,
+                                "duration": "3:45",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1972,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#7 US"
+                                }
+                            },
+                            "Happy": {
+                                "track_number": 3,
+                                "duration": "3:04",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1972,
+                                "label": "Rolling Stones Records"
+                            }
+                        }
+                    },
+                    "Goats_Head_Soup": {
+                        "year": 1973,
+                        "songs": {
+                            "Angie": {
+                                "track_number": 1,
+                                "duration": "4:32",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1973,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#1 US"
+                                }
+                            },
+                            "Doo_Doo_Doo_Doo_Doo": {
+                                "track_number": 4,
+                                "duration": "5:00",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1973,
+                                "label": "Rolling Stones Records"
+                            }
+                        }
+                    },
+                    "It's_Only_Rock_n_Roll": {
+                        "year": 1974,
+                        "songs": {
+                            "It's_Only_Rock_n_Roll": {
+                                "track_number": 1,
+                                "duration": "5:08",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1974,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#16 US"
+                                }
+                            },
+                            "Ain't_Too_Proud_to_Beg": {
+                                "track_number": 5,
+                                "duration": "3:34",
+                                "composer": "Norman Whitfield/Eddie Holland",
+                                "genre": "Rock",
+                                "year": 1974,
+                                "label": "Rolling Stones Records"
+                            }
+                        }
+                    },
+                    "Black_and_Blue": {
+                        "year": 1976,
+                        "songs": {
+                            "Hot_Stuff": {
+                                "track_number": 2,
+                                "duration": "5:21",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1976,
+                                "label": "Rolling Stones Records"
+                            },
+                            "Fool_to_Cry": {
+                                "track_number": 3,
+                                "duration": "5:04",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1976,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#10 US"
+                                }
+                            }
+                        }
+                    },
+                    "Some_Girls": {
+                        "year": 1978,
+                        "songs": {
+                            "Miss_You": {
+                                "track_number": 1,
+                                "duration": "4:48",
+                                "composer": "Jagger-Richards",
+                                "genre": "Disco Rock",
+                                "year": 1978,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#1 US"
+                                }
+                            },
+                            "Beast_of_Burden": {
+                                "track_number": 6,
+                                "duration": "4:25",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1978,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#8 US"
+                                }
+                            },
+                            "Shattered": {
+                                "track_number": 10,
+                                "duration": "3:47",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1978,
+                                "label": "Rolling Stones Records"
+                            }
+                        }
+                    },
+                    "Emotional_Rescue": {
+                        "year": 1980,
+                        "songs": {
+                            "Emotional_Rescue": {
+                                "track_number": 1,
+                                "duration": "5:39",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1980,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#3 US"
+                                }
+                            },
+                            "She's_So_Cold": {
+                                "track_number": 6,
+                                "duration": "4:12",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1980,
+                                "label": "Rolling Stones Records"
+                            }
+                        }
+                    },
+                    "Tattoo_You": {
+                        "year": 1981,
+                        "songs": {
+                            "Start_Me_Up": {
+                                "track_number": 1,
+                                "duration": "3:33",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1981,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#2 US"
+                                }
+                            },
+                            "Waiting_on_a_Friend": {
+                                "track_number": 5,
+                                "duration": "4:34",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1981,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#13 US"
+                                }
+                            }
+                        }
+                    },
+                    "Undercover": {
+                        "year": 1983,
+                        "songs": {
+                            "Undercover_of_the_Night": {
+                                "track_number": 1,
+                                "duration": "4:32",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1983,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#9 US"
+                                }
+                            }
+                        }
+                    },
+                    "Dirty_Work": {
+                        "year": 1986,
+                        "songs": {
+                            "Harlem_Shuffle": {
+                                "track_number": 1,
+                                "duration": "3:43",
+                                "composer": "Bob & Earl",
+                                "genre": "Rock",
+                                "year": 1986,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#5 US"
+                                }
+                            }
+                        }
+                    },
+                    "Steel_Wheels": {
+                        "year": 1989,
+                        "songs": {
+                            "Mixed_Emotions": {
+                                "track_number": 1,
+                                "duration": "4:39",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1989,
+                                "label": "Rolling Stones Records",
+                                "data": {
+                                    "chart_position": "#5 US"
+                                }
+                            },
+                            "Rock_and_a_Hard_Place": {
+                                "track_number": 2,
+                                "duration": "4:09",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1989,
+                                "label": "Rolling Stones Records"
+                            }
+                        }
+                    },
+                    "Voodoo_Lounge": {
+                        "year": 1994,
+                        "songs": {
+                            "Love_Is_Strong": {
+                                "track_number": 1,
+                                "duration": "3:46",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1994,
+                                "label": "Virgin Records",
+                                "data": {
+                                    "chart_position": "#14 US"
+                                }
+                            },
+                            "You_Got_Me_Rocking": {
+                                "track_number": 2,
+                                "duration": "3:35",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1994,
+                                "label": "Virgin Records"
+                            }
+                        }
+                    },
+                    "Bridges_to_Babylon": {
+                        "year": 1997,
+                        "songs": {
+                            "Anybody_Seen_My_Baby": {
+                                "track_number": 2,
+                                "duration": "4:32",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1997,
+                                "label": "Virgin Records",
+                                "data": {
+                                    "chart_position": "#22 US"
+                                }
+                            },
+                            "Saint_of_Me": {
+                                "track_number": 4,
+                                "duration": "5:15",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 1997,
+                                "label": "Virgin Records"
+                            }
+                        }
+                    },
+                    "A_Bigger_Bang": {
+                        "year": 2005,
+                        "songs": {
+                            "Rough_Justice": {
+                                "track_number": 1,
+                                "duration": "3:12",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 2005,
+                                "label": "Virgin Records"
+                            },
+                            "Streets_of_Love": {
+                                "track_number": 5,
+                                "duration": "5:09",
+                                "composer": "Jagger-Richards",
+                                "genre": "Rock",
+                                "year": 2005,
+                                "label": "Virgin Records"
+                            }
+                        }
+                    },
+                    "Blue_and_Lonesome": {
+                        "year": 2016,
+                        "songs": {
+                            "Just_Your_Fool": {
+                                "track_number": 1,
+                                "duration": "2:48",
+                                "composer": "Buddy Johnson",
+                                "genre": "Blues",
+                                "year": 2016,
+                                "label": "Interscope Records"
+                            },
+                            "Ride_Em_On_Down": {
+                                "track_number": 2,
+                                "duration": "2:54",
+                                "composer": "Eddie Taylor",
+                                "genre": "Blues",
+                                "year": 2016,
+                                "label": "Interscope Records"
+                            }
+                        }
+                    }
+                }
+            },
+            "The_Lonesome_Strangers": {
+                "albums": {
+                    "The_Lonesome_Strangers": {
+                        "year": 1989,
+                        "songs": {
+                            "Goodbye_Lonesome_Hello_Baby_Doll": {
+                                "track_number": 1,
+                                "duration": "3:12",
+                                "composer": "Jeff Rymes",
+                                "genre": "Country Rock",
+                                "year": 1989,
+                                "label": "Hightone Records",
+                                "data": {
+                                    "chart_position": "Independent release"
+                                }
+                            },
+                            "Mouth_Full_of_Sad": {
+                                "track_number": 4,
+                                "duration": "3:45",
+                                "composer": "Jeff Rymes",
+                                "genre": "Country Rock",
+                                "year": 1989,
+                                "label": "Hightone Records",
+                                "data": {
+                                    "chart_position": "Independent release"
+                                }
+                            }
+                        }
+                    },
+                    "Landlocked": {
+                        "year": 1991,
+                        "songs": {
+                            "Call_of_the_Wild": {
+                                "track_number": 2,
+                                "duration": "3:28",
+                                "composer": "Jeff Rymes",
+                                "genre": "Country Rock",
+                                "year": 1991,
+                                "label": "Hightone Records",
+                                "data": {
+                                    "chart_position": "Independent release"
+                                }
+                            },
+                            "Born_Running": {
+                                "track_number": 5,
+                                "duration": "4:01",
+                                "composer": "Jeff Rymes",
+                                "genre": "Country Rock",
+                                "year": 1991,
+                                "label": "Hightone Records",
+                                "data": {
+                                    "chart_position": "Independent release"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Leon_Redbone": {
+                "albums": {
+                    "On_the_Track": {
+                        "year": 1975,
+                        "songs": {
+                            "Diddy_Wa_Diddy": {
+                                "track_number": 1,
+                                "duration": "2:48",
+                                "composer": "Traditional",
+                                "genre": "Jazz/Vaudeville",
+                                "year": 1975,
+                                "label": "Warner Bros Records",
+                                "data": {
+                                    "chart_position": "Album track"
+                                }
+                            },
+                            "Ain't_Misbehavin": {
+                                "track_number": 4,
+                                "duration": "3:15",
+                                "composer": "Fats Waller",
+                                "genre": "Jazz/Vaudeville",
+                                "year": 1975,
+                                "label": "Warner Bros Records",
+                                "data": {
+                                    "chart_position": "Album track",
+                                    "notes": "Traditional jazz standard"
+                                }
+                            }
+                        }
+                    },
+                    "Double_Time": {
+                        "year": 1977,
+                        "songs": {
+                            "Big_Time_Woman": {
+                                "track_number": 2,
+                                "duration": "3:32",
+                                "composer": "Traditional",
+                                "genre": "Jazz/Vaudeville",
+                                "year": 1977,
+                                "label": "Warner Bros Records",
+                                "data": {
+                                    "chart_position": "Album track"
+                                }
+                            },
+                            "Shine_On_Harvest_Moon": {
+                                "track_number": 6,
+                                "duration": "2:58",
+                                "composer": "Nora Bayes/Jack Norworth",
+                                "genre": "Jazz/Vaudeville",
+                                "year": 1977,
+                                "label": "Warner Bros Records",
+                                "data": {
+                                    "chart_position": "Album track",
+                                    "notes": "1908 Tin Pan Alley classic"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

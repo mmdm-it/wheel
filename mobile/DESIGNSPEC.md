@@ -739,7 +739,27 @@ Items without `rpp_trigger: true` are considered orphans and adopted into config
 4. Remove hardcoded 'model', 'family' references
 5. Test with marine, Bible, and music catalogs
 
-### 9.2 Documentation Maintenance
+### 9.2 Critical: Automatic Volume Discovery
+**Problem**: Volume list hardcoded in mobile-data.js line 128-131 prevents automatic catalog detection
+
+**Current Implementation**: 
+```javascript
+const candidateFiles = [
+    'mmdm_catalog.json',
+    'gutenberg.json',
+    'hg_mx.json'  // Must be manually added for each new volume
+];
+```
+
+**Required Solution**: Automatic detection of Wheel-compatible JSON files
+- Server endpoint that lists available `.json` files in catalog directory
+- Client-side validation of `wheel_volume_version` property in JSON
+- Dynamic volume discovery without code changes
+- Enables true plug-and-play catalog deployment
+
+**Impact**: Currently every new catalog requires editing mobile-data.js source code, violating universal architecture principle
+
+### 9.3 Documentation Maintenance
 - Update this DESIGNSPEC when adding new components
 - Document any new coordinate system interactions  
 - Add positioning rules for new navigation zones
