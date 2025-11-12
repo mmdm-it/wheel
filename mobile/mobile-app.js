@@ -456,6 +456,9 @@ class MobileCatalogApp {
     handleParentButtonClick() {
         Logger.debug('🔼 Parent button clicked - migrating OUT toward root');
 
+        // Always collapse Detail Sector first to reset state and reveal Child Pyramid
+        this.renderer.collapseDetailSector();
+
         if (!this.renderer.selectedFocusItem) {
             Logger.warn('No focus item selected for parent navigation');
             return;

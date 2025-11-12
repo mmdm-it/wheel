@@ -1442,6 +1442,12 @@ class MobileRenderer {
         const startOpacity = 1.0;
         const endOpacity = 0.5;
         
+        // Rotation animation values - get current rotation from transform attribute
+        const currentTransform = detailLogo.getAttribute('transform') || '';
+        const rotateMatch = currentTransform.match(/rotate\(([^,]+)/);
+        const startRotation = rotateMatch ? parseFloat(rotateMatch[1]) : 0;
+        const endRotation = 0; // Back to START state (no rotation)
+        
         // Animate back to collapsed state
         const duration = 600; // ms
         const startTime = performance.now();
@@ -1466,6 +1472,7 @@ class MobileRenderer {
             const currentLogoY = logoStartState.y + (logoEndY - logoStartState.y) * eased;
             const currentLogoWidth = logoStartState.width + (endLogoWidth - logoStartState.width) * eased;
             const currentLogoHeight = logoStartState.height + (endLogoHeight - logoStartState.height) * eased;
+            const currentRotation = startRotation + (endRotation - startRotation) * eased;
             
             // Apply animated values to circle
             detailCircle.setAttribute('cx', currentCircleX);
@@ -1479,6 +1486,11 @@ class MobileRenderer {
             detailLogo.setAttribute('width', currentLogoWidth);
             detailLogo.setAttribute('height', currentLogoHeight);
             detailLogo.setAttribute('opacity', currentOpacity);
+            
+            // Apply rotation transform with current center as rotation point
+            const currentCenterX = currentLogoX + currentLogoWidth / 2;
+            const currentCenterY = currentLogoY + currentLogoHeight / 2;
+            detailLogo.setAttribute('transform', `rotate(${currentRotation}, ${currentCenterX}, ${currentCenterY})`);
             
             // Continue animation or finish
             if (progress < 1) {
@@ -1496,6 +1508,7 @@ class MobileRenderer {
                 detailLogo.setAttribute('width', endLogoWidth);
                 detailLogo.setAttribute('height', endLogoHeight);
                 detailLogo.setAttribute('opacity', '0.5'); // START state: 50% opacity
+                detailLogo.setAttribute('transform', 'rotate(0)'); // START state: no rotation
                 
                 Logger.debug(`🔵 Detail Sector collapse COMPLETE`);
                 Logger.debug(`   Circle: (${circleEndX.toFixed(1)}, ${circleEndY.toFixed(1)}) r=${endRadius.toFixed(1)}`);
@@ -1839,7 +1852,7 @@ class MobileRenderer {
         
         const parentText = document.getElementById('parentText');
         if (parentText) {
-            parentText.textContent = 'Explore';
+            parentText.textContent = 'SI';
         }
         
         parentButton.classList.remove('hidden');
