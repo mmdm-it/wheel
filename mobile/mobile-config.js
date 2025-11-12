@@ -4,11 +4,9 @@
  */
 
 const VERSION = {
-    semantic: '0.5.5',      // major.minor.patch
-    buildDate: '251112',    // YYMMDD
-    buildNumber: '003',     // Sequential build number for the day
+    semantic: '0.5.8',      // major.minor.patch
     display() {
-        return `v${this.semantic}-b${this.buildDate}.${this.buildNumber}`;
+        return `v${this.semantic}`;
     }
 };
 

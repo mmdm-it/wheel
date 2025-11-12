@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Bump Version (Patch)",
+            "type": "shell",
+            "command": "bash",
+            "args": ["bump-version.sh"],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Bump Version (Minor)",
+            "type": "shell",
+            "command": "bash",
+            "args": ["bump-version.sh", "minor"],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Bump Version (Major)",
+            "type": "shell",
+            "command": "bash",
+            "args": ["bump-version.sh", "major"],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        }
+    ]
+}
