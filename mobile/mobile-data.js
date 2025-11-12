@@ -276,6 +276,173 @@ class DataManager {
     }
 
     /**
+     * Retrieve merged detail sector configuration for a specific item
+     */
+    getDetailSectorConfigForItem(item) {
+        if (!item) {
+            return null;
+        }
+
+        const displayConfig = this.getDisplayConfig() || {};
+        const baseConfig = displayConfig.detail_sector || {};
+        const levelConfig = this.getHierarchyLevelConfig(item.__level) || {};
+        const levelDetail = levelConfig.detail_sector || {};
+        const itemDetail = (item.data && item.data.detail_sector) || item.detail_sector || {};
+
+        return this.mergeDetailSectorConfigs(baseConfig, levelDetail, itemDetail);
+    }
+
+    /**
+     * Build a rendering context for template resolution
+     */
+    getDetailSectorContext(item) {
+        if (!item) {
+            return {};
+        }
+
+        const context = {
+            name: item.name,
+            level: item.__level,
+            key: item.key,
+            path: item.__path,
+            data: item.data || {},
+            display_config: this.getDisplayConfig() || {}
+        };
+
+        Object.keys(item).forEach(key => {
+            if (key.startsWith('__')) {
+                return;
+            }
+            if (key === 'data' || key === 'detail_sector') {
+                return;
+            }
+            context[key] = item[key];
+        });
+
+        return context;
+    }
+
+    /**
+     * Merge detail sector config layers with predictable overrides
+     */
+    mergeDetailSectorConfigs(...configs) {
+        const merged = {
+            mode: null,
+            default_image: null,
+            header: null,
+            views: []
+        };
+
+        const viewOrder = [];
+        const viewIndexById = new Map();
+
+        configs.forEach(config => {
+            if (!config) {
+                return;
+            }
+
+            if (config.mode !== undefined) {
+                merged.mode = config.mode;
+            }
+
+            if (config.default_image !== undefined) {
+                merged.default_image = config.default_image;
+            }
+
+            if (config.header !== undefined) {
+                merged.header = config.header;
+            }
+
+            if (Array.isArray(config.views)) {
+                config.views.forEach(view => {
+                    if (!view) {
+                        return;
+                    }
+
+                    if (!view.id) {
+                        viewOrder.push(view);
+                        return;
+                    }
+
+                    if (viewIndexById.has(view.id)) {
+                        const index = viewIndexById.get(view.id);
+                        viewOrder[index] = view;
+                    } else {
+                        viewIndexById.set(view.id, viewOrder.length);
+                        viewOrder.push(view);
+                    }
+                });
+            }
+        });
+
+        merged.views = viewOrder;
+        return merged;
+    }
+
+    /**
+     * Resolve a dotted path within a context object
+     */
+    resolveDetailPath(path, context) {
+        if (!path || !context) {
+            return undefined;
+        }
+
+        return path.split('.').reduce((accumulator, segment) => {
+            if (accumulator === undefined || accumulator === null) {
+                return undefined;
+            }
+
+            const trimmed = segment.trim();
+
+            if (!trimmed) {
+                return accumulator;
+            }
+
+            if (trimmed.endsWith(']')) {
+                const bracketIndex = trimmed.indexOf('[');
+                if (bracketIndex === -1) {
+                    return accumulator[trimmed];
+                }
+
+                const property = trimmed.slice(0, bracketIndex);
+                const indexValue = trimmed.slice(bracketIndex + 1, trimmed.length - 1);
+                const numericIndex = parseInt(indexValue, 10);
+
+                const target = property ? accumulator[property] : accumulator;
+
+                if (!Array.isArray(target)) {
+                    return undefined;
+                }
+
+                if (isNaN(numericIndex)) {
+                    return undefined;
+                }
+
+                return target[numericIndex];
+            }
+
+            return accumulator[trimmed];
+        }, context);
+    }
+
+    /**
+     * Interpolate template placeholders using context data
+     */
+    resolveDetailTemplate(template, context) {
+        if (typeof template !== 'string' || !template.includes('{{')) {
+            return template || '';
+        }
+
+        return template.replace(/{{\s*([^}]+)\s*}}/g, (_match, token) => {
+            const value = this.resolveDetailPath(token, context);
+            if (value === undefined || value === null) {
+                return '';
+            }
+            return String(value);
+        });
+    }
+
+    /**
      * Get the ordered list of hierarchy level names
      */
     getHierarchyLevelNames() {

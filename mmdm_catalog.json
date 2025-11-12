@@ -9,6 +9,10 @@
                 "focus_ring_max_depth": 6,
                 "parent_button_min_depth": 1
             },
+            "detail_sector": {
+                "mode": "product_browser",
+                "default_image": "catalog_logo"
+            },
             "hierarchy_levels": {
                 "market": {
                     "text_format": "uppercase",
@@ -36,7 +40,31 @@
                     "sort_type": "alphabetical_reverse",
                     "focus_text_position": "radial",
                     "focus_text_transform": "none",
-                    "aggregates_across": "country"
+                    "aggregates_across": "country",
+                    "detail_sector": {
+                        "header": {
+                            "title_template": "{{name}}",
+                            "subtitle_template": "{{market}} · {{country}}"
+                        },
+                        "views": [
+                            {
+                                "id": "manufacturer_overview",
+                                "type": "info",
+                                "title_template": "{{name}}",
+                                "subtitle_template": "Founded {{year_founded}}",
+                                "fields": [
+                                    {
+                                        "label": "Founded",
+                                        "value_template": "{{year_founded}}"
+                                    },
+                                    {
+                                        "label": "Dissolved",
+                                        "value_template": "{{year_dissolved}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
                 },
                 "cylinder": {
                     "text_format": "append_suffix",
@@ -47,7 +75,27 @@
                     "focus_text_position": "centered",
                     "focus_text_transform": "number_only_or_cil",
                     "is_numeric": true,
-                    "use_code_property": false
+                    "use_code_property": false,
+                    "detail_sector": {
+                        "views": [
+                            {
+                                "id": "cylinder_summary",
+                                "type": "info",
+                                "title_template": "{{manufacturer}}",
+                                "subtitle_template": "{{cylinderCount}} Cylinders",
+                                "fields": [
+                                    {
+                                        "label": "Market",
+                                        "value_template": "{{market}}"
+                                    },
+                                    {
+                                        "label": "Country",
+                                        "value_template": "{{country}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
                 },
                 "family": {
                     "text_format": "title_case",
@@ -71,7 +119,62 @@
                     "display_name": "Model",
                     "sort_type": "alphabetical",
                     "focus_text_position": "radial",
-                    "focus_text_transform": "none"
+                    "focus_text_transform": "none",
+                    "detail_sector": {
+                        "header": {
+                            "title_template": "{{data.engine_model}}",
+                            "subtitle_template": "{{manufacturer}} · {{country}}"
+                        },
+                        "views": [
+                            {
+                                "id": "model_overview",
+                                "type": "info",
+                                "title_template": "{{data.engine_model}}",
+                                "subtitle_template": "Cylinder Count: {{cylinderCount}}",
+                                "body_template": "Introduced {{data.year_introduced}} · Discontinued {{data.year_discontinued}}",
+                                "fields": [
+                                    {
+                                        "label": "Family",
+                                        "value_template": "{{data.family}}"
+                                    },
+                                    {
+                                        "label": "Manufacturer",
+                                        "value_template": "{{manufacturer}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "manifold_alternatives",
+                                "type": "list",
+                                "title": "Manifold Alternatives",
+                                "items_field": "data.manifold_alternatives",
+                                "empty_state": "No manifold alternatives available.",
+                                "item": {
+                                    "primary_template": "{{brand}} {{part_number}}",
+                                    "secondary_template": "{{description}}",
+                                    "meta_template": "${{price}}",
+                                    "badge_template": "{{availability}}"
+                                }
+                            },
+                            {
+                                "id": "manifold_gallery",
+                                "type": "gallery",
+                                "title": "Gallery",
+                                "items_field": "data.manifold_alternatives",
+                                "image_field": "photos",
+                                "caption_template": "{{brand}} {{part_number}}"
+                            },
+                            {
+                                "id": "manifold_links",
+                                "type": "links",
+                                "title": "Resources",
+                                "items_field": "data.manifold_alternatives",
+                                "url_field": "specifications.link",
+                                "label_template": "{{brand}} {{part_number}}",
+                                "description_template": "Lead time: {{lead_time}}"
+                            }
+                        ]
+                    }
                 }
             }
         },
@@ -85,6 +188,130 @@
                                 "year_dissolved": null,
                                 "cylinders": {
                                     "4": [
+                                        {
+                                            "engine_model": "MR504LW3",
+                                            "year_introduced": null,
+                                            "year_discontinued": null,
+                                            "manifold_alternatives": [
+                                                {
+                                                    "id": "alt_da343dbd",
+                                                    "type": "mmdm",
+                                                    "price": 800,
+                                                    "description": "Our best replacement manifold of carbon steel",
+                                                    "rebranded_from": "",
+                                                    "rebranded_as": "",
+                                                    "specifications": {
+                                                        "material": "Carbon Steel",
+                                                        "weight": "18kg",
+                                                        "warranty": "2",
+                                                        "dimensions": {
+                                                            "height": "20cm",
+                                                            "width": "30cm",
+                                                            "length": "50cm"
+                                                        }
+                                                    },
+                                                    "photos": [
+                                                        "/photos/vm_motori/54397a/54397a_front.png",
+                                                        "/photos/vm_motori/54397a/54397a_back.png"
+                                                    ],
+                                                    "photo_count": 2,
+                                                    "has_photos": true,
+                                                    "notes": "Includes gasket",
+                                                    "availability": "in_stock",
+                                                    "stock_level": 8,
+                                                    "min_stock_threshold": null,
+                                                    "lead_time": "2 days",
+                                                    "last_updated": "2025-10-12",
+                                                    "brand": "MMdM",
+                                                    "part_number": "54397a"
+                                                },
+                                                {
+                                                    "id": "alt_43319bde",
+                                                    "type": "oem",
+                                                    "price": 900,
+                                                    "rebranded_from": "",
+                                                    "rebranded_as": "",
+                                                    "specifications": {
+                                                        "material": "Carbon Steel",
+                                                        "weight": "",
+                                                        "warranty": "",
+                                                        "dimensions": {
+                                                            "height": "",
+                                                            "width": "",
+                                                            "length": ""
+                                                        }
+                                                    },
+                                                    "photos": [],
+                                                    "photo_count": 0,
+                                                    "has_photos": false,
+                                                    "notes": "",
+                                                    "availability": "",
+                                                    "stock_level": 0,
+                                                    "min_stock_threshold": null,
+                                                    "lead_time": "Immediate",
+                                                    "last_updated": "2025-10-12",
+                                                    "brand": "VM Motori",
+                                                    "part_number": "23"
+                                                },
+                                                {
+                                                    "id": "alt_b695c3f4",
+                                                    "type": "third_party",
+                                                    "price": 1500,
+                                                    "rebranded_from": "",
+                                                    "rebranded_as": "",
+                                                    "specifications": {
+                                                        "material": "",
+                                                        "weight": "",
+                                                        "warranty": "",
+                                                        "dimensions": {
+                                                            "height": "",
+                                                            "width": "",
+                                                            "length": ""
+                                                        }
+                                                    },
+                                                    "photos": [],
+                                                    "photo_count": 0,
+                                                    "has_photos": false,
+                                                    "notes": "",
+                                                    "availability": "",
+                                                    "stock_level": 0,
+                                                    "min_stock_threshold": null,
+                                                    "lead_time": "2 weeks",
+                                                    "last_updated": "2025-10-12",
+                                                    "brand": "MESA",
+                                                    "part_number": "44"
+                                                },
+                                                {
+                                                    "id": "alt_3dc34d08",
+                                                    "type": "third_party",
+                                                    "price": 23,
+                                                    "description": "Fairhope's finest...",
+                                                    "rebranded_from": "",
+                                                    "rebranded_as": "",
+                                                    "specifications": {
+                                                        "material": "ss",
+                                                        "weight": "",
+                                                        "warranty": "",
+                                                        "dimensions": {
+                                                            "height": "",
+                                                            "width": "",
+                                                            "length": ""
+                                                        }
+                                                    },
+                                                    "photos": [],
+                                                    "photo_count": 0,
+                                                    "has_photos": false,
+                                                    "notes": "",
+                                                    "availability": "",
+                                                    "stock_level": 0,
+                                                    "min_stock_threshold": null,
+                                                    "lead_time": "2 weeks",
+                                                    "last_updated": "2025-10-12",
+                                                    "brand": "MESA",
+                                                    "part_number": "eu"
+                                                }
+                                            ]
+                                        },
                                         {
                                             "engine_model": "HR 494",
                                             "year_introduced": null,
@@ -199,7 +426,11 @@
                             "Ruggerini": {
                                 "year_founded": 1919,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Iveco": {
                                 "year_founded": 1975,
@@ -237,7 +468,11 @@
                             "Motori Lombardini": {
                                 "year_founded": 1933,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Admiral": {
                                 "year_founded": 1966,
@@ -308,7 +543,11 @@
                             "MTU": {
                                 "year_founded": 1909,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Deutz": {
                                 "year_founded": 1864,
@@ -328,12 +567,20 @@
                             "BMW Marine": {
                                 "year_founded": 1916,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "MAN Diesel": {
                                 "year_founded": 1758,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Fiat": {
                                 "year_founded": 1899,
@@ -347,7 +594,11 @@
                             "Kubota Germany": {
                                 "year_founded": 1968,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Steyr Motors": {
                                 "year_founded": 1864,
@@ -369,12 +620,20 @@
                             "Baudouin": {
                                 "year_founded": 1918,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Nanni": {
                                 "year_founded": 1958,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Sol\u00e9 Diesel": {
                                 "year_founded": 1916,
@@ -384,7 +643,11 @@
                             "Bukh": {
                                 "year_founded": 1904,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Renault Marine": {
                                 "year_founded": 1899,
@@ -401,7 +664,11 @@
                             "Vetus": {
                                 "year_founded": 1964,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             }
                         }
                     },
@@ -419,7 +686,11 @@
                             "Lister Petter": {
                                 "year_founded": 1867,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Gardner": {
                                 "year_founded": 1868,
@@ -438,7 +709,11 @@
                             "Kelvin Diesels": {
                                 "year_founded": 1904,
                                 "year_dissolved": 1984,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Thornycroft": {
                                 "year_founded": 1864,
@@ -448,7 +723,11 @@
                             "Dorman": {
                                 "year_founded": 1877,
                                 "year_dissolved": 1979,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Enfield": {
                                 "year_founded": 1893,
@@ -496,7 +775,11 @@
                             "Sulzer": {
                                 "year_founded": 1834,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             }
                         }
                     },
@@ -505,7 +788,11 @@
                             "W\u00e4rtsil\u00e4": {
                                 "year_founded": 1834,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Sisu": {
                                 "year_founded": 1931,
@@ -519,7 +806,11 @@
                             "Bergen Engines": {
                                 "year_founded": 1946,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             }
                         }
                     },
@@ -528,7 +819,11 @@
                             "Burmeister & Wain": {
                                 "year_founded": 1846,
                                 "year_dissolved": 1980,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             }
                         }
                     },
@@ -549,7 +844,11 @@
                             "Isuzu": {
                                 "year_founded": 1916,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Hino": {
                                 "year_founded": 1942,
@@ -578,57 +877,101 @@
                             "Nissan": {
                                 "year_founded": 1933,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Komatsu": {
                                 "year_founded": 1921,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Kawasaki": {
                                 "year_founded": 1896,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Suzuki": {
                                 "year_founded": 1909,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Toyota": {
                                 "year_founded": 1937,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Yamaha": {
                                 "year_founded": 1955,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Daihatsu": {
                                 "year_founded": 1907,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Honda Marine": {
                                 "year_founded": 1946,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "IHI": {
                                 "year_founded": 1853,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Niigata": {
                                 "year_founded": 1896,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Mazda Marine": {
                                 "year_founded": 1920,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             }
                         }
                     },
@@ -637,12 +980,20 @@
                             "Daewoo": {
                                 "year_founded": 1967,
                                 "year_dissolved": 1999,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Hyundai": {
                                 "year_founded": 1967,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             }
                         }
                     },
@@ -662,7 +1013,11 @@
                             "TMZ": {
                                 "year_founded": 1941,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Zvezda": {
                                 "year_founded": 1954,
@@ -705,7 +1060,11 @@
                             "Russkiy Dizel": {
                                 "year_founded": 1900,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             }
                         }
                     },
@@ -714,17 +1073,29 @@
                             "Stuart Marine": {
                                 "year_founded": null,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Vire Marine": {
                                 "year_founded": null,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Blaxland-Chapman": {
                                 "year_founded": null,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             }
                         }
                     }
@@ -1207,112 +1578,200 @@
                             "MerCruiser": {
                                 "year_founded": 1961,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Palmer Brothers": {
                                 "year_founded": 1896,
                                 "year_dissolved": 1938,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Gray Marine": {
                                 "year_founded": 1906,
                                 "year_dissolved": 1946,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Lathrop": {
                                 "year_founded": 1896,
                                 "year_dissolved": 1925,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Mianus": {
                                 "year_founded": 1900,
                                 "year_dissolved": 1916,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Detroit Diesel": {
                                 "year_founded": 1938,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Kohler": {
                                 "year_founded": 1873,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Westerbeke": {
                                 "year_founded": 1937,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "John Deere": {
                                 "year_founded": 1837,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Waukesha": {
                                 "year_founded": 1906,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Wisconsin": {
                                 "year_founded": 1910,
                                 "year_dissolved": 1986,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Onan": {
                                 "year_founded": 1920,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Hercules": {
                                 "year_founded": 1915,
                                 "year_dissolved": 1999,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Fairbanks Morse": {
                                 "year_founded": 1893,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Superior": {
                                 "year_founded": 1908,
                                 "year_dissolved": 1972,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Lehman": {
                                 "year_founded": 1946,
                                 "year_dissolved": 2008,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Lugger": {
                                 "year_founded": 1987,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Liberty": {
                                 "year_founded": null,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Chrysler": {
                                 "year_founded": 1925,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Hall-Scott": {
                                 "year_founded": 1910,
                                 "year_dissolved": 1974,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Alco": {
                                 "year_founded": 1901,
                                 "year_dissolved": 1969,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Cooper Industries": {
                                 "year_founded": 1833,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             }
                         }
                     },
@@ -1321,32 +1780,56 @@
                             "Cooper Industries": {
                                 "year_founded": 1833,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Marathon": {
                                 "year_founded": 1888,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Briggs & Stratton": {
                                 "year_founded": 1908,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Universal": {
                                 "year_founded": 1963,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Mercruiser": {
                                 "year_founded": 1961,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Indmar": {
                                 "year_founded": 1946,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             },
                             "Lockwood-Ash": {
                                 "year_founded": 1902,
@@ -1554,7 +2037,11 @@
                             "Hacker-Craft": {
                                 "year_founded": 1908,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {
+                                    "1": {},
+                                    "2": {},
+                                    "4": {}
+                                }
                             }
                         }
                     }

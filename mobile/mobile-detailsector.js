@@ -83,133 +83,403 @@ class MobileDetailSector {
             return;
         }
 
-        // Get the expanded circle parameters for positioning
-        const arcParams = this.viewport.getArcParameters();
-        const circleCenterX = arcParams.centerX;
-        const circleCenterY = arcParams.centerY;
-        const circleRadius = arcParams.radius * 0.98; // Same as expanded circle
+        this.detailItemsGroup.innerHTML = '';
 
-        // Create a group for the detail content
+        const arcParams = this.viewport.getArcParameters();
+        const circleRadius = arcParams.radius * 0.98;
+
         const contentGroup = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
         contentGroup.setAttribute('class', 'detail-content');
+        contentGroup.setAttribute('transform', `translate(${arcParams.centerX} ${arcParams.centerY})`);
 
-        // Position content within the circle area
-        // Use a smaller area to leave margins
-        const contentRadius = circleRadius * 0.85;
-        const contentCenterX = circleCenterX;
-        const contentCenterY = circleCenterY;
+        const contentRadius = circleRadius * 0.82;
+        const detailConfig = this.dataManager.getDetailSectorConfigForItem(item);
+        const detailContext = this.dataManager.getDetailSectorContext(item);
 
-        // Add the poem at viewport center (0, 0)
-        const poemLines = [
-            "IN THE ELDER DAYS OF ART,",
-            "BUILDERS WROUGHT WITH GREATEST CARE,",
-            "EACH MINUTE AND UNSEEN PART,",
-            "FOR THE GODS SEE EVERYWHERE."
-        ];
-        
-        const poemLineHeight = 22;
-        const totalPoemHeight = poemLines.length * poemLineHeight;
-        const poemStartY = -(totalPoemHeight / 2) + 11; // Center vertically around y=0, +11 to adjust baseline
-        
-        Logger.debug(`📋 Rendering poem at viewport center (0, 0)`);
-        
-        poemLines.forEach((line, index) => {
-            const yPos = poemStartY + (index * poemLineHeight);
-            const poemText = this.createTextElement(
-                line,
-                0, // x = 0 (viewport center)
-                yPos,
-                'middle',
-                '16px',
-                '#ffd700', // Bright gold color for visibility
-                'italic'
-            );
-            poemText.setAttribute('font-family', 'serif'); // Add serif font for classic look
-            poemText.setAttribute('font-weight', 'bold'); // Make it bold for visibility
-            contentGroup.appendChild(poemText);
-            Logger.debug(`📋 Poem line ${index + 1}: "${line}" at (0, ${yPos.toFixed(1)})`);
+        Logger.debug('📋 DetailSector: resolved config for item', {
+            itemKey: item.key,
+            level: item.__level,
+            hasHeader: Boolean(detailConfig && detailConfig.header),
+            viewCount: detailConfig && detailConfig.views ? detailConfig.views.length : 0
         });
-        
-        // Create title text
-        const titleText = this.createTextElement(
-            item.name,
-            contentCenterX,
-            contentCenterY - contentRadius * 0.15,
-            'middle',
-            '18px',
-            '#ffffff',
-            'bold'
-        );
-        contentGroup.appendChild(titleText);
 
-        // Get item details from the data structure
-        const itemDetails = this.extractItemDetails(item);
-
-        // Create description text if available
-        if (itemDetails.description) {
-            const descText = this.createTextElement(
-                itemDetails.description,
-                contentCenterX,
-                contentCenterY - contentRadius * 0.15,
-                'middle',
-                '12px',
-                '#cccccc'
-            );
-            descText.setAttribute('textLength', contentRadius * 1.5); // Allow text wrapping
-            descText.setAttribute('lengthAdjust', 'spacingAndGlyphs');
-            contentGroup.appendChild(descText);
+        if (!detailConfig || (!detailConfig.header && (!detailConfig.views || detailConfig.views.length === 0))) {
+            this.renderLegacyFallback(contentGroup, item, contentRadius);
+            this.detailItemsGroup.appendChild(contentGroup);
+            return;
         }
 
-        // Create specifications list
-        const specsY = contentCenterY - contentRadius * 0.05;
-        const specs = this.createSpecificationsList(itemDetails, contentCenterX, specsY, contentRadius);
-        specs.forEach(spec => contentGroup.appendChild(spec));
+        let currentY = -contentRadius + 36;
+        currentY = this.renderHeader(detailConfig.header, detailContext, contentGroup, currentY);
 
-        // Create pricing information if available
-        if (itemDetails.price) {
-            const priceText = this.createTextElement(
-                `Price: ${itemDetails.price}`,
-                contentCenterX,
-                contentCenterY + contentRadius * 0.15,
-                'middle',
-                '14px',
-                '#ffff00',
-                'bold'
-            );
-            contentGroup.appendChild(priceText);
+        (detailConfig.views || []).forEach(view => {
+            currentY = this.renderView(view, detailContext, contentGroup, currentY, contentRadius);
+        });
+
+        this.detailItemsGroup.appendChild(contentGroup);
+    }
+
+    renderHeader(headerConfig, context, contentGroup, currentY) {
+        const fallbackTitle = context.name || '';
+
+        if (!headerConfig && fallbackTitle) {
+            const title = this.createTextElement(fallbackTitle, 0, currentY, 'middle', '22px', '#ffffff', 'bold');
+            contentGroup.appendChild(title);
+            return currentY + 32;
         }
 
-        // Create alternatives section if available
-        if (itemDetails.alternatives && itemDetails.alternatives.length > 0) {
-            const altY = contentCenterY + contentRadius * 0.25;
-            const altTitle = this.createTextElement(
-                'Alternatives:',
-                contentCenterX,
-                altY,
-                'middle',
-                '12px',
-                '#ffffff',
-                'bold'
-            );
-            contentGroup.appendChild(altTitle);
+        if (!headerConfig) {
+            return currentY;
+        }
 
-            itemDetails.alternatives.slice(0, 3).forEach((alt, index) => {
-                const altText = this.createTextElement(
-                    `• ${alt}`,
-                    contentCenterX,
-                    altY + 20 + (index * 15),
-                    'middle',
-                    '11px',
-                    '#cccccc'
-                );
-                contentGroup.appendChild(altText);
+        const titleTemplate = headerConfig.title_template || headerConfig.title || fallbackTitle;
+        const subtitleTemplate = headerConfig.subtitle_template || headerConfig.subtitle;
+
+        const resolvedTitle = this.dataManager.resolveDetailTemplate(titleTemplate, context) || fallbackTitle;
+        const resolvedSubtitle = this.dataManager.resolveDetailTemplate(subtitleTemplate, context);
+
+        if (resolvedTitle) {
+            const title = this.createTextElement(resolvedTitle, 0, currentY, 'middle', '22px', '#ffffff', 'bold');
+            contentGroup.appendChild(title);
+            currentY += 30;
+        }
+
+        if (resolvedSubtitle) {
+            const subtitle = this.createTextElement(resolvedSubtitle, 0, currentY, 'middle', '14px', '#d0d0d0');
+            contentGroup.appendChild(subtitle);
+            currentY += 22;
+        }
+
+        return currentY;
+    }
+
+    renderView(viewConfig, context, contentGroup, currentY, contentRadius) {
+        if (!viewConfig || viewConfig.hidden === true) {
+            return currentY;
+        }
+
+        const viewType = (viewConfig.type || 'info').toLowerCase();
+
+        Logger.debug('📋 DetailSector: rendering view', {
+            id: viewConfig.id || '(anonymous)',
+            type: viewType
+        });
+
+        switch (viewType) {
+            case 'info':
+                return this.renderInfoView(viewConfig, context, contentGroup, currentY);
+            case 'list':
+                return this.renderListView(viewConfig, context, contentGroup, currentY);
+            case 'gallery':
+                return this.renderGalleryView(viewConfig, context, contentGroup, currentY);
+            case 'links':
+                return this.renderLinksView(viewConfig, context, contentGroup, currentY);
+            default:
+                Logger.debug(`📋 Unsupported detail view type: ${viewConfig.type}`);
+                return currentY;
+        }
+    }
+
+    renderInfoView(viewConfig, context, contentGroup, currentY) {
+        const titleTemplate = viewConfig.title_template || viewConfig.title;
+        const subtitleTemplate = viewConfig.subtitle_template || viewConfig.subtitle;
+        const bodyTemplate = viewConfig.body_template || viewConfig.body;
+
+        const title = this.dataManager.resolveDetailTemplate(titleTemplate, context);
+        const subtitle = this.dataManager.resolveDetailTemplate(subtitleTemplate, context);
+        const body = this.dataManager.resolveDetailTemplate(bodyTemplate, context);
+
+        if (title) {
+            const titleElement = this.createTextElement(title, 0, currentY, 'middle', '18px', '#ffffff', 'bold');
+            contentGroup.appendChild(titleElement);
+            currentY += 24;
+        }
+
+        if (subtitle) {
+            const subtitleElement = this.createTextElement(subtitle, 0, currentY, 'middle', '13px', '#d0d0d0');
+            contentGroup.appendChild(subtitleElement);
+            currentY += 20;
+        }
+
+        if (body) {
+            const lines = this.wrapText(body, 42);
+            lines.forEach(line => {
+                const bodyElement = this.createTextElement(line, 0, currentY, 'middle', '12px', '#c0c0c0');
+                contentGroup.appendChild(bodyElement);
+                currentY += 16;
             });
         }
 
-        // Add the content group to the detail items group
-        this.detailItemsGroup.appendChild(contentGroup);
+        const fields = Array.isArray(viewConfig.fields) ? viewConfig.fields : [];
 
-        Logger.debug(`📋 Detail content rendered for ${item.name} with ${specs.length} specifications`);
+        fields.forEach(field => {
+            const labelTemplate = field.label_template || field.label;
+            const valueTemplate = field.value_template || field.value;
+
+            const label = this.dataManager.resolveDetailTemplate(labelTemplate, context);
+            const value = this.dataManager.resolveDetailTemplate(valueTemplate, context);
+
+            if (!label && !value) {
+                return;
+            }
+
+            const combined = label && value ? `${label}: ${value}` : (label || value);
+            const fieldElement = this.createTextElement(combined, 0, currentY, 'middle', '12px', '#b0b0b0');
+            contentGroup.appendChild(fieldElement);
+            currentY += 16;
+        });
+
+        return currentY + 12;
+    }
+
+    renderListView(viewConfig, context, contentGroup, currentY) {
+        const title = this.dataManager.resolveDetailTemplate(viewConfig.title_template || viewConfig.title, context);
+        const items = this.getViewItems(viewConfig, context);
+
+        Logger.debug('📋 DetailSector: list view data', {
+            id: viewConfig.id || '(anonymous)',
+            totalItems: items.length
+        });
+
+        if (title) {
+            const titleElement = this.createTextElement(title, 0, currentY, 'middle', '16px', '#ffffff', 'bold');
+            contentGroup.appendChild(titleElement);
+            currentY += 22;
+        }
+
+        if (!items.length) {
+            const emptyMessage = this.dataManager.resolveDetailTemplate(viewConfig.empty_state, context) || 'No data available.';
+            const emptyElement = this.createTextElement(emptyMessage, 0, currentY, 'middle', '12px', '#888888');
+            contentGroup.appendChild(emptyElement);
+            return currentY + 20;
+        }
+
+        items.slice(0, viewConfig.max_items || 4).forEach(item => {
+            const itemContext = this.combineContext(context, item);
+
+            const primary = this.dataManager.resolveDetailTemplate(viewConfig.item?.primary_template, itemContext) || '';
+            const secondary = this.dataManager.resolveDetailTemplate(viewConfig.item?.secondary_template, itemContext) || '';
+            const meta = this.dataManager.resolveDetailTemplate(viewConfig.item?.meta_template, itemContext) || '';
+            const badge = this.dataManager.resolveDetailTemplate(viewConfig.item?.badge_template, itemContext) || '';
+
+            const primaryText = primary ? `• ${primary}` : null;
+            if (primaryText) {
+                const primaryElement = this.createTextElement(primaryText, 0, currentY, 'middle', '12px', '#ffffff');
+                contentGroup.appendChild(primaryElement);
+                currentY += 16;
+            }
+
+            if (secondary) {
+                const secondaryElement = this.createTextElement(secondary, 0, currentY, 'middle', '11px', '#cccccc');
+                contentGroup.appendChild(secondaryElement);
+                currentY += 15;
+            }
+
+            if (meta || badge) {
+                const summary = [meta, badge].filter(Boolean).join(' · ');
+                if (summary) {
+                    const summaryElement = this.createTextElement(summary, 0, currentY, 'middle', '10px', '#9fd2ff');
+                    contentGroup.appendChild(summaryElement);
+                    currentY += 14;
+                }
+            }
+
+            currentY += 6;
+        });
+
+        return currentY + 12;
+    }
+
+    renderGalleryView(viewConfig, context, contentGroup, currentY) {
+        const title = this.dataManager.resolveDetailTemplate(viewConfig.title_template || viewConfig.title, context);
+        const items = this.getViewItems(viewConfig, context);
+
+        Logger.debug('📋 DetailSector: gallery view data', {
+            id: viewConfig.id || '(anonymous)',
+            totalItems: items.length
+        });
+
+        if (title) {
+            const titleElement = this.createTextElement(title, 0, currentY, 'middle', '16px', '#ffffff', 'bold');
+            contentGroup.appendChild(titleElement);
+            currentY += 22;
+        }
+
+        if (!items.length) {
+            return this.renderEmptyState(viewConfig, context, contentGroup, currentY);
+        }
+
+        items.slice(0, viewConfig.max_items || 6).forEach(item => {
+            const itemContext = this.combineContext(context, item);
+            const caption = this.dataManager.resolveDetailTemplate(viewConfig.caption_template, itemContext);
+            const images = this.normalizeToArray(this.dataManager.resolveDetailPath(viewConfig.image_field || 'images', itemContext));
+
+            const descriptor = images.length ? `${images.length} photo${images.length === 1 ? '' : 's'}` : 'No imagery';
+            const summary = caption ? `${caption} · ${descriptor}` : descriptor;
+
+            const entry = this.createTextElement(`🖼️ ${summary}`, 0, currentY, 'middle', '11px', '#dcdcdc');
+            contentGroup.appendChild(entry);
+            currentY += 16;
+        });
+
+        return currentY + 12;
+    }
+
+    renderLinksView(viewConfig, context, contentGroup, currentY) {
+        const title = this.dataManager.resolveDetailTemplate(viewConfig.title_template || viewConfig.title, context);
+        const items = this.getViewItems(viewConfig, context);
+
+        Logger.debug('📋 DetailSector: links view data', {
+            id: viewConfig.id || '(anonymous)',
+            totalItems: items.length
+        });
+
+        if (title) {
+            const titleElement = this.createTextElement(title, 0, currentY, 'middle', '16px', '#ffffff', 'bold');
+            contentGroup.appendChild(titleElement);
+            currentY += 22;
+        }
+
+        if (!items.length) {
+            return this.renderEmptyState(viewConfig, context, contentGroup, currentY);
+        }
+
+        items.slice(0, viewConfig.max_items || 5).forEach(item => {
+            const itemContext = this.combineContext(context, item);
+            const label = this.dataManager.resolveDetailTemplate(viewConfig.label_template, itemContext);
+            const description = this.dataManager.resolveDetailTemplate(viewConfig.description_template, itemContext);
+            const url = this.dataManager.resolveDetailPath(viewConfig.url_field, itemContext) || this.dataManager.resolveDetailTemplate(viewConfig.url_template, itemContext);
+
+            const labelElement = this.createTextElement(label || url || 'Link', 0, currentY, 'middle', '12px', '#9fd2ff');
+            contentGroup.appendChild(labelElement);
+            currentY += 15;
+
+            if (description) {
+                const descriptionElement = this.createTextElement(description, 0, currentY, 'middle', '11px', '#cccccc');
+                contentGroup.appendChild(descriptionElement);
+                currentY += 15;
+            }
+
+            if (url) {
+                const urlElement = this.createTextElement(url, 0, currentY, 'middle', '10px', '#7ab8ff');
+                contentGroup.appendChild(urlElement);
+                currentY += 14;
+            }
+
+            currentY += 6;
+        });
+
+        return currentY + 12;
+    }
+
+    renderEmptyState(viewConfig, context, contentGroup, currentY) {
+        const emptyMessage = this.dataManager.resolveDetailTemplate(viewConfig.empty_state, context) || 'No data available.';
+        const emptyElement = this.createTextElement(emptyMessage, 0, currentY, 'middle', '12px', '#888888');
+        contentGroup.appendChild(emptyElement);
+        return currentY + 20;
+    }
+
+    getViewItems(viewConfig, context) {
+        if (!viewConfig || !viewConfig.items_field) {
+            return [];
+        }
+
+        const rawItems = this.dataManager.resolveDetailPath(viewConfig.items_field, context);
+
+        if (!rawItems) {
+            return [];
+        }
+
+        if (Array.isArray(rawItems)) {
+            return rawItems;
+        }
+
+        if (typeof rawItems === 'object') {
+            return Object.values(rawItems);
+        }
+
+        return [];
+    }
+
+    normalizeToArray(value) {
+        if (!value) {
+            return [];
+        }
+        if (Array.isArray(value)) {
+            return value;
+        }
+        return [value];
+    }
+
+    combineContext(baseContext, item) {
+        if (item && typeof item === 'object') {
+            return { ...baseContext, ...item };
+        }
+        return { ...baseContext, value: item };
+    }
+
+    wrapText(value, maxChars = 40) {
+        if (!value) {
+            return [];
+        }
+
+        const words = String(value).split(/\s+/);
+        const lines = [];
+        let currentLine = '';
+
+        words.forEach(word => {
+            const candidate = currentLine ? `${currentLine} ${word}` : word;
+            if (candidate.length > maxChars && currentLine) {
+                lines.push(currentLine);
+                currentLine = word;
+            } else {
+                currentLine = candidate;
+            }
+        });
+
+        if (currentLine) {
+            lines.push(currentLine);
+        }
+
+        return lines;
+    }
+
+    renderLegacyFallback(contentGroup, item, contentRadius) {
+        const startY = -contentRadius + 36;
+        let currentY = startY;
+
+        const title = this.createTextElement(item.name || 'Detail', 0, currentY, 'middle', '20px', '#ffffff', 'bold');
+        contentGroup.appendChild(title);
+        currentY += 28;
+
+        const itemDetails = this.extractItemDetails(item);
+
+        if (itemDetails.description) {
+            this.wrapText(itemDetails.description, 42).forEach(line => {
+                const desc = this.createTextElement(line, 0, currentY, 'middle', '12px', '#cccccc');
+                contentGroup.appendChild(desc);
+                currentY += 16;
+            });
+        }
+
+        const specs = this.createSpecificationsList(itemDetails, 0, currentY, contentRadius);
+        specs.forEach(spec => {
+            contentGroup.appendChild(spec);
+        });
+        if (specs.length) {
+            currentY += specs.length * 16;
+        }
+
+        if (itemDetails.alternatives && itemDetails.alternatives.length > 0) {
+            currentY += 20;
+            const altTitle = this.createTextElement('Alternatives:', 0, currentY, 'middle', '12px', '#ffffff', 'bold');
+            contentGroup.appendChild(altTitle);
+
+            itemDetails.alternatives.slice(0, 3).forEach((alt, index) => {
+                const altText = this.createTextElement(`• ${alt}`, 0, currentY + 18 + (index * 16), 'middle', '11px', '#cccccc');
+                contentGroup.appendChild(altText);
+            });
+        }
     }
 
     /**

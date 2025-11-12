@@ -454,6 +454,34 @@ const centerAngle = Math.atan2(vectorY, vectorX);  // 0° = East = Right = 3 o'c
 
 **Critical**: All rotational positioning uses this dynamic angle, not hardcoded 225°
 
+### 4.4 Detail Sector Metadata Layout
+
+The detail sector now renders entirely from catalog metadata, replacing former hardcoded content. Layout decisions remain anchored to the Hub/Nuc spatial model while templates drive text and media.
+
+#### Configuration Sources
+- **Hierarchy-Level Overrides**: `hierarchy_levels[*].detail_sector` supplies header templates and per-view definitions (info/list/gallery/links)
+- **Item-Level Data**: Leaf nodes provide `data` payloads that hydrate view templates via Handlebars-style `{{ }}` interpolation
+- **Default Fallbacks**: Volume-level detail sector config applies when a hierarchy level omits overrides
+
+#### Rendering Flow (mobile-detailsector.js)
+1. **Config Resolution**: DataManager delivers merged configuration (volume defaults + level overrides + item overrides)
+2. **Context Assembly**: Base context includes taxonomy fields (market, country, manufacturer, etc.) and item `data`
+3. **View Iteration**: Renderer walks each configured view block and delegates to specialized renderers
+4. **SVG Placement**: Renderers convert templated strings into SVG text/images positioned relative to the Hub-centric detail circle
+5. **Diagnostics**: mobile-logger traces config selection, resolved template data, and per-view item counts
+
+#### Supported View Types
+- **info**: Header, subtitle, optional body, and labeled field list
+- **list**: Repeating bullet rows with primary/secondary/meta/badge templates
+- **gallery**: Image tiles sourced from resolved asset paths (pending registry integration)
+- **links**: Action list with label/description templates and resolved URLs
+
+#### Spatial Considerations
+- Renderers share vertical flow: header block → padding → view stack
+- Text wrapping honors `wrapText()` constraints (default 40 characters per line)
+- Gallery/link layouts reserve gutters to prevent overlap with circle boundary
+- Legacy fallback remains for items without configuration, preserving older layout rules
+
 ---
 
 ## 5. COMMON POSITIONING ERRORS
@@ -506,6 +534,7 @@ Before implementing new visual features:
 - [ ] Use viewport.getCenterAngle() for dynamic positioning
 - [ ] Convert radians↔degrees appropriately
 - [ ] Test on device with different aspect ratio
+- [ ] Confirm detail sector view definitions exist for target hierarchy level or volume fallback
 
 ### 6.2 Debugging Positioning Issues
 
@@ -515,6 +544,7 @@ Logger.debug(`Angle: ${angle} rad = ${angle * 180/Math.PI}°`);
 Logger.debug(`Position: (${x}, ${y}) from Hub (${hubX}, ${hubY})`);
 Logger.debug(`Visible range: ${startAngle * 180/Math.PI}° → ${endAngle * 180/Math.PI}°`);
 Logger.debug(`Viewport aspect: ${viewportWidth}×${viewportHeight} = ${viewportWidth/viewportHeight}:1`);
+Logger.debug('📋 DetailSector: resolved config', { itemId, viewIds });
 ```
 
 ### 6.3 Code Review Questions
@@ -746,5 +776,5 @@ Items without `rpp_trigger: true` are considered orphans and adopted into config
 ---
 
 **Document Version**: 1.0  
-**Last Updated**: November 7, 2025  
+**Last Updated**: November 12, 2025  
 **Related**: STATUS, README.md, mobile-viewport.js, mobile-renderer.js
