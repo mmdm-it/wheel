@@ -54,7 +54,7 @@ class MobileRendererModernized {
         const angleStep = Math.PI / 24; // From config
         
         const angles = focusItems.map((_, index) => 
-            adjustedMagnifierAngle + (index - middleIndex) * angleStep
+            adjustedMagnifierAngle + (middleIndex - index) * angleStep
         );
         
         // BATCH CONVERT - Much more efficient!

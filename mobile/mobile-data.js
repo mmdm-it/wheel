@@ -1197,51 +1197,37 @@ class DataManager {
     sortItems(items, levelConfig) {
         const sorted = [...items];
         
-        // Only log for Bible books (items with "Liber_" prefix)
-        const isBibleBooks = items.length > 0 && items[0].name?.startsWith('Liber_');
+        sorted.forEach((item, idx) => {
+            if (item.__sortFallbackIndex === undefined) {
+                Object.defineProperty(item, '__sortFallbackIndex', {
+                    value: idx,
+                    enumerable: false,
+                    writable: true
+                });
+            }
+        });
         
-        if (isBibleBooks) {
-            Logger.debug(`📚 BIBLE BOOKS - BEFORE sorting (${items.length} items):`);
-            items.forEach((item, idx) => {
-                const sortNum = item.data?.sort_number ?? item.sort_number ?? 'none';
-                Logger.debug(`  [${idx}] ${item.name} (sort_number: ${sortNum})`);
-            });
-        }
-        
-        // Universal sorting: sort_number overrides alphabetical when present
-        const result = sorted.sort((a, b) => {
+        return sorted.sort((a, b) => {
             const sortA = a.data?.sort_number ?? a.sort_number;
             const sortB = b.data?.sort_number ?? b.sort_number;
             
-            // Both have sort_number: use numeric ordering
             if (sortA !== undefined && sortB !== undefined) {
-                return sortA - sortB;  // Use explicit Publisher-assigned ordering
+                if (sortA !== sortB) {
+                    return sortA - sortB;
+                }
+                return a.__sortFallbackIndex - b.__sortFallbackIndex;
             }
             
-            // Only A has sort_number: A comes first
-            if (sortA !== undefined && sortB === undefined) {
+            if (sortA !== undefined) {
                 return -1;
             }
             
-            // Only B has sort_number: B comes first
-            if (sortA === undefined && sortB !== undefined) {
+            if (sortB !== undefined) {
                 return 1;
             }
             
-            // Neither has sort_number: Focus Ring alphabetical Z to A (higher angles = visual top)
-            // This matches human reading expectations where "first" items appear at visual top
-            return b.name.localeCompare(a.name);  // Reverse alphabetical for Focus Ring
+            return a.__sortFallbackIndex - b.__sortFallbackIndex;
         });
-        
-        if (isBibleBooks) {
-            Logger.debug(`📚 BIBLE BOOKS - AFTER sorting (${result.length} items):`);
-            result.forEach((item, idx) => {
-                const sortNum = item.data?.sort_number ?? item.sort_number ?? 'none';
-                Logger.debug(`  [${idx}] ${item.name} (sort_number: ${sortNum})`);
-            });
-        }
-        
-        return result;
     }
 
     getDataLocationForItem(item) {

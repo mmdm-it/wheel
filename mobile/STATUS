@@ -130,9 +130,13 @@ The following describes the **planned architecture** for a revolutionary pseudo 
 - **Direction**: Pseudo parents are always positioned OUT (above) the triggering data level
 
 ### Universal Trigger System (`rpp_` Prefix) (PLANNED)
-- **Pattern**: `rpp_levelname: true` in data item triggers creation of "levelname" pseudo parent
+- **Pattern**: `rpp_propertyname: true` creates pseudo parent levels dynamically
 - **Domain Agnostic**: Works for any property name (family, venue_type, political_era, certification, etc.)
 - **Nested Support**: Pseudo parents can have their own pseudo parents for unlimited depth
+  - `rpp_` = pseudo parent (1st degree above triggering item)
+  - `rpgp_` = pseudo grandparent (2nd degree above triggering item)  
+  - `rpggp_` = pseudo great-grandparent (3rd degree above triggering item)
+  - Pattern continues for unlimited nesting depth
 - **Constraint**: Top levels (markets, testaments) and leaf levels (models, verses) cannot create pseudo parents
 
 ### Orphan Adoption System (PLANNED)
@@ -150,13 +154,22 @@ Market → Country → Manufacturer → Cylinder → [family] → Model
                                           (triggered by model)
 ```
 
-**Nested Pseudo Parents:**
-```  
-Artist → Decade → [venue_type] → [recording_session] → Song
-           ↑           ↑               ↑
-         real     pseudo         pseudo parent
-                 parent          (nested)
+**Nested Pseudo Parents (Marine Catalog Requirement):**
 ```
+Manufacturer → Cylinder Count → [Family] → [Sub-Family] → Model
+           ↑           ↑           ↑           ↑
+         real     pseudo      pseudo      pseudo parent
+                 parent      grandparent  (rpgp_ prefix)
+                             (rpp_ prefix)
+```
+
+**Real-World Marine Examples:**
+- **Ford Modular Family**: 8-cylinder → Modular (rpp_family) → Triton (rpgp_subfamily) → 5.4L V8
+- **Ford Coyote Sub-Family**: 8-cylinder → Modular (rpp_family) → Coyote (rpgp_subfamily) → 5.0L V8  
+- **Ford Godzilla Family**: 8-cylinder → Godzilla (rpp_family) → N/A → 7.3L V8
+- **MerCruiser Small Block**: 8-cylinder → Small Block (rpp_family) → Gen IV (rpgp_subfamily) → 6.2L V8
+- **Detroit Diesel Series**: 6-cylinder → Series 71 (rpp_family) → N/A → 6-71
+- **Packard (No Family)**: 12-cylinder → N/A → N/A → Liberty 12 (orphan adoption)
 
 ### Current Implementation Status
 - ⚠️ **NOT IMPLEMENTED**: Zero `rpp_` logic exists in codebase
@@ -164,6 +177,7 @@ Artist → Decade → [venue_type] → [recording_session] → Song
 - ✅ Orphan adoption working within virtual levels
 - ✅ Configuration-driven irregular plurals working
 - ❌ **BLOCKER**: Hardcoded pluralization in mobile-renderer.js line 319 (`family: 'families'`)
+- 🎯 **CRITICAL FOR MARINE CATALOG**: Nested pseudo parents required for Family → Sub-Family hierarchies
 - 🎯 **REQUIRED FOR**: True universal architecture without domain-specific code
 
 ### CURRENT FUNCTIONALITY ANALYSIS
@@ -213,6 +227,41 @@ Artist → Decade → [venue_type] → [recording_session] → Song
 
 ### DEVELOPMENT ROADMAP
 
+#### Version Milestones to 1.0.0
+
+**0.6.0 - Pseudo Parent System Implementation** *(CRITICAL FOUNDATION)*
+- Implement `rpp_` prefix detection and pseudo parent creation logic
+- Support nested pseudo parents (rpp_, rpgp_, rpggp_) for Family → Sub-Family hierarchies
+- Add orphan adoption system for items without pseudo parent triggers
+- Enable marine catalog to properly represent engine family relationships (Ford Modular→Triton/Coyote, etc.)
+- Remove hardcoded domain-specific code (family: 'families' in mobile-renderer.js)
+
+**0.7.0 - Complete Navigation Architecture**
+- Finish Child Pyramid navigation (80% complete) with pseudo parent integration
+- Ensure smooth navigation between nzones in all catalogs (marine, Bible, music)
+- Focus Ring sorting correct across all data types including pseudo parents
+- Child Pyramid layout and sorting working with dynamic hierarchies
+
+**0.8.0 - Universal Detail Sector**
+- Detail Sector complete in every iteration with pseudo parent support
+- Template system working across all catalog types (marine products, Bible text, music audio)
+- Metadata-driven content display for all data domains
+- Proper handling of pseudo parent context in detail views
+
+**0.9.0 - Visual and Media Enhancement**
+- Unique color schemes and image files for every iteration
+- Dynamic scaling of fonts and nodes for different device resolutions/aspect ratios
+- Media support in at least two iterations (audio in music, images/video in manifold catalog)
+- Responsive design optimization across all catalogs
+
+**1.0.0 - Production-Ready Data and Testing**
+- Complete JSONs for every iteration with proper pseudo parent structures
+- At least six complete Rolling Stones albums in music player with full metadata
+- Entire Gutenberg Bible with all 67 books populated
+- At least one complete engine type with manifold alternatives in marine catalog
+- Comprehensive cross-catalog testing and performance validation
+- Universal architecture fully implemented (no domain-specific code remaining)
+
 **✅ COMPLETED - Production Core (95% Complete)**
 1. **Complete Navigation System**: Focus Ring, Child Pyramid, Detail Sector, Parent Button - all working
 2. **Universal Data Architecture**: Zero domain-specific code, handles any hierarchical JSON structure
@@ -239,15 +288,20 @@ Artist → Decade → [venue_type] → [recording_session] → Song
 - **Impact**: ✅ **CORE CONCEPT RESTORED** - Full 2D navigation (radial IN/OUT + rotational CW/CCW) now functional
 - **Status**: COMPLETED - bidirectional navigation working
 
-**Priority 2: Implement `rpp_` Pseudo Parent System** *(NOT STARTED)*
+**Priority 2: Implement `rpp_` Pseudo Parent System** *(NOT STARTED - CRITICAL FOR MARINE CATALOG)*
 - **Status**: Architecture designed, zero implementation exists
 - **Location**: Needs implementation in mobile-data.js navigation methods
 - **Scope**: 
   - Add `rpp_` prefix detection in getParentHierarchyLevel()
   - Implement pseudo parent item creation logic
   - Add orphan adoption for items without `rpp_` trigger
-  - Support nested pseudo parents (pseudo parents can have their own pseudo parents)
-- **Impact**: Enables true universal architecture without domain-specific code
+  - Support nested pseudo parents (rpp_, rpgp_, rpggp_) for unlimited depth
+- **Real-World Requirement**: Marine catalog needs Family → Sub-Family hierarchy (e.g., Modular → Triton/Coyote)
+  - Ford 8-cylinder engines: Modular family → Triton/Coyote sub-families
+  - Packard 12-cylinder: No family/sub-family (orphan adoption needed)
+  - Detroit Diesel 6-cylinder: Series 71 family, no sub-family
+  - MerCruiser 8-cylinder: Small Block family → Gen IV sub-family
+- **Impact**: Required for true universal architecture without domain-specific code
 - **Blocker**: Line 319 in mobile-renderer.js has hardcoded `family: 'families'` that must be removed
 
 **Priority 3: Remove Domain-Specific Code** *(COMPLETED)*
@@ -506,19 +560,20 @@ wheel/
 ---
 
 ## 📊 PROJECT STATUS SUMMARY
-**Overall Progress**: ~55% complete (up from 50% - Parent Button fixed)  
-**Current State**: Working marine catalog prototype with functional 2D navigation  
+**Overall Progress**: ~50% complete (up from 55% - critical architecture gap identified)  
+**Current State**: Working marine catalog prototype with functional 2D navigation, but missing pseudo parent system for proper data representation  
 **Critical Achievement**: Parent Button navigation fixed - full bidirectional radial navigation working  
-**Universal Architecture**: Designed but not implemented - still has domain-specific code  
+**Critical Gap Identified**: Nested pseudo parent system required for marine catalog Family→Sub-Family hierarchies  
+**Universal Architecture**: Design complete but implementation missing - pseudo parents required for true universality  
 **Business Model**: Validated freemium strategy concept  
-**Technical Readiness**: Core navigation complete - universal architecture implementation required  
+**Technical Readiness**: Core navigation complete - pseudo parent implementation required for production marine catalog  
 **Market Position**: First-mover advantage opportunity in 2D hierarchical mobile navigation  
-**Commercial Potential**: Strong concept with working core requiring universal architecture completion  
+**Commercial Potential**: Strong concept with working core requiring pseudo parent completion  
 
 **Critical Work Remaining**: 
 1. ~~**FIX PARENT BUTTON**~~ ✅ **COMPLETED** - Full OUT navigation to top level working
-2. **FIX CHILD PYRAMID** - Complete IN navigation implementation (80% done)
-3. Implement `rpp_` pseudo parent system (not started - required for universal architecture)
+2. **IMPLEMENT PSEUDO PARENT SYSTEM** - Nested rpp_ support for Family→Sub-Family hierarchies (CRITICAL for marine catalog)
+3. **FIX CHILD PYRAMID** - Complete IN navigation implementation (80% done)
 4. Remove hardcoded plurals (not started - blocks universal architecture)
 5. Implement automatic volume discovery (not started - currently hardcoded)
 6. Test and validate with multiple data domains
@@ -534,22 +589,25 @@ wheel/
 - Data loading and virtual levels ✅
 
 **What's Broken/Incomplete**:
+- Pseudo parent system (required for marine catalog) ❌
 - Radial IN navigation via Child Pyramid (partial) ⚠️
-- Universal architecture (has domain-specific code) ❌
+- Universal architecture (missing pseudo parents) ❌
 - Multi-domain validation ❌
-- Pseudo parent system ❌
 
 **Strategic Goal**: Establish "Wheel" as the standard for mobile hierarchical data navigation  
 **Reality Check**: Strong foundation with revolutionary concept, but significant core features need fixing/implementing  
 **Documentation**: Complete and honest about implementation gaps
 
 **Latest Updates (November 15, 2025):**
-- ✅ **Hardcoded Dependencies Removed**: mobile-data.js refactored to eliminate domain-specific code
-  - **discoverVolumes()**: Removed hardcoded candidateFiles array, added TODO for server directory listing
-  - **getPluralPropertyName()**: Now uses display_config.irregular_plurals from catalog JSON instead of hardcoded object
-  - **extractParentProperties()**: Removed hardcoded domain property array ['market', 'country', 'manufacturer']
-  - **Impact**: True universal architecture achieved - system now configuration-driven without domain assumptions
-  - **Testing**: Browser-based test created and validated functionality works correctly
+- ✅ **FOCUS RING LODESTAR FIXED**: Magnifier now stays anchored while sort_number + JSON order map directly to descending Hub angles
+  - **Behavior**: Reversed angle math so first curated item receives highest visible angle; removed residual alphabetical fallbacks
+  - **Impact**: Genesis → Ruth ordering now matches DESIGNSPEC arc-top guidance without rotating the magnifier reference frame
+  - **Version**: Bumped to v0.5.20 to capture this patch-level geometry correction
+- ✅ **CRITICAL ARCHITECTURE GAP IDENTIFIED**: Nested pseudo parent system required for marine catalog
+  - **Real-World Requirement**: Family → Sub-Family hierarchies (Ford Modular→Triton/Coyote, MerCruiser Small Block→Gen IV)
+  - **Impact**: Without pseudo parents, marine catalog cannot represent engine family relationships properly
+  - **Status**: Design exists but zero implementation - elevated to Priority 2
+  - **Version**: Bumped to v0.5.19 to reflect this critical finding
 - 🎧 **Detail Sector Audio Fallback Implemented**: iOS-safe playback for music catalog
   - **Detection**: mobile-detailsector.js now checks for SVG foreignObject support (iOS Safari, DuckDuckGo, macOS touch mode)
   - **Fallback UX**: Displays "Play Audio Sample" link that opens a bottom-sheet overlay with native HTML `<audio>` controls

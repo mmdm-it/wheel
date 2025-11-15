@@ -200,7 +200,8 @@ class MobileRenderer {
             if (selectedIndex >= 0) {
                 const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
                 const centerAngle = this.viewport.getCenterAngle();
-                const angle = centerAngle + (selectedIndex - (this.currentFocusItems.length - 1) / 2) * angleStep;
+                const middleIndex = (this.currentFocusItems.length - 1) / 2;
+                const angle = centerAngle + (middleIndex - selectedIndex) * angleStep;
                 this.showChildContentForFocusItem(this.selectedFocusItem, angle);
             }
         }
@@ -457,10 +458,11 @@ class MobileRenderer {
             // Arc top is at highest angle (visual top), so we need positive offset
             // to move first item (index 0) from center toward highest visible angle
             const maxViewportAngle = MOBILE_CONFIG.VIEWPORT.VIEWPORT_ARC / 2;
-            const arcTopOffset = maxViewportAngle - (angleStep * 1); // Position at arc top with small margin
-            
-            Logger.debug(`Sorted items (${this.currentFocusItems.length}): positioning at arc top, offset = ${arcTopOffset * 180 / Math.PI}°`);
-            return arcTopOffset;
+            const arcTopTarget = maxViewportAngle - angleStep; // Maintain small visual margin
+            const offset = arcTopTarget - (middleIndex * angleStep);
+
+            Logger.debug(`Sorted items (${this.currentFocusItems.length}): positioning at arc top, offset = ${offset * 180 / Math.PI}°`);
+            return offset;
         }
         
         // For unsorted items, use original centering logic
@@ -475,7 +477,7 @@ class MobileRenderer {
         const targetIndex = Math.floor(middleIndex);
         
         // Calculate offset needed to center this focus item
-        const offset = -(targetIndex - middleIndex) * angleStep;
+        const offset = (targetIndex - middleIndex) * angleStep;
         
         Logger.debug(`Even focus items (${this.currentFocusItems.length}): centering index ${targetIndex}, offset = ${offset * 180 / Math.PI}°`);
         return offset;
@@ -510,10 +512,11 @@ class MobileRenderer {
         focusRingGroup.innerHTML = '';
         this.focusElements.clear();
         
-        // Use original angle calculation logic 
+        // Use updated angle calculation logic to maintain JSON order
         const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD; // Keep original 4.3° spacing
         const centerAngle = this.viewport.getCenterAngle();
         const adjustedCenterAngle = centerAngle + rotationOffset;
+        const middleIndex = (allFocusItems.length - 1) / 2;
         
         // Validate centerAngle
         if (isNaN(centerAngle) || isNaN(adjustedCenterAngle)) {
@@ -542,7 +545,7 @@ class MobileRenderer {
         // Process all focus items but only render those in viewport window
         allFocusItems.forEach((focusItem, index) => {
             // Calculate angle using original logic
-            const angle = adjustedCenterAngle + (index - (allFocusItems.length - 1) / 2) * angleStep;
+            const angle = adjustedCenterAngle + (middleIndex - index) * angleStep;
             
             if (isBibleBooks) {
                 Logger.debug(`📐 Item [${index}] ${focusItem.name}: angle = ${(angle * 180 / Math.PI).toFixed(1)}°`);
@@ -608,7 +611,7 @@ class MobileRenderer {
                 Logger.debug('⏰ TIMEOUT FIRED: isRotating=', this.isRotating, 'selectedFocusItem=', this.selectedFocusItem && this.selectedFocusItem.name, 'expectedItem=', selectedFocusItem.name);
                 this.isRotating = false;
                 if (this.selectedFocusItem && this.selectedFocusItem.key === selectedFocusItem.key) {
-                    const angle = adjustedCenterAngle + (selectedIndex - (allFocusItems.length - 1) / 2) * angleStep;
+                    const angle = adjustedCenterAngle + (middleIndex - selectedIndex) * angleStep;
                     Logger.debug('✅ Focus item settled:', selectedFocusItem.name, 'showing child content');
                     this.showChildContentForFocusItem(selectedFocusItem, angle);
                 } else {
@@ -635,9 +638,9 @@ class MobileRenderer {
         
         // Calculate which focus item index should be at the dynamic center angle position
         // For a focus item at index i to be at center angle:
-        // centerAngle + rotationOffset + (i - middleIndex) * angleStep = centerAngle
-        // Therefore: i = middleIndex - (rotationOffset / angleStep)
-        const exactIndex = middleIndex - (rotationOffset / angleStep);
+        // centerAngle + rotationOffset + (middleIndex - i) * angleStep = centerAngle
+        // Therefore: i = middleIndex + (rotationOffset / angleStep)
+        const exactIndex = middleIndex + (rotationOffset / angleStep);
         const roundedIndex = Math.round(exactIndex);
         
         // Only select if the focus item is very close to the exact position (detent threshold)
@@ -1830,7 +1833,7 @@ class MobileRenderer {
         const middleIndex = (this.volumeItems.length - 1) / 2;
         
         this.volumeItems.forEach((volume, index) => {
-            const offsetFromMiddle = index - middleIndex;
+            const offsetFromMiddle = middleIndex - index;
             const itemAngle = centerAngle + (offsetFromMiddle * angleStep) + rotationOffset;
             
             // Position on arc
