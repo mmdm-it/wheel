@@ -305,24 +305,19 @@ class MobileRenderer {
 
         // Prefer plural naming from hierarchy config when available
         const levelConfig = this.dataManager.getHierarchyLevelConfig(levelName);
-        if (levelConfig && levelConfig.plural_display_name) {
-            return levelConfig.plural_display_name;
+        if (levelConfig) {
+            if (levelConfig.plural_display_name) {
+                return levelConfig.plural_display_name;
+            }
+
+            if (levelConfig.irregular_plural) {
+                return levelConfig.irregular_plural;
+            }
         }
 
         // Use data manager's plural property name when exposed
         if (typeof this.dataManager.getPluralPropertyName === 'function') {
             return this.dataManager.getPluralPropertyName(levelName);
-        }
-
-        // Fallback simple pluralization with basic irregulars
-        const irregulars = {
-            family: 'families',
-            country: 'countries',
-            category: 'categories'
-        };
-
-        if (irregulars[levelName]) {
-            return irregulars[levelName];
         }
 
         return `${levelName}s`;
@@ -948,10 +943,10 @@ class MobileRenderer {
         // Walk backwards through hierarchy, skipping virtual levels
         for (let i = currentIndex - 1; i >= 0; i--) {
             const candidateLevel = levelNames[i];
-            const levelConfig = this.data.getHierarchyLevelConfig(candidateLevel);
+            const levelConfig = this.dataManager.getHierarchyLevelConfig(candidateLevel);
             
-            // Skip virtual levels (those with virtual_grouping)
-            if (!levelConfig || !levelConfig.virtual_grouping) {
+            // Skip virtual levels (those with is_virtual: true)
+            if (!levelConfig || !levelConfig.is_virtual) {
                 return candidateLevel;
             }
             
@@ -1577,15 +1572,17 @@ class MobileRenderer {
         circle.setAttribute('stroke-width', '1');
         circle.setAttribute('opacity', '0.5'); // START state: 50% opacity
         
-        // Insert BEFORE detailItems group so text appears on top
-        const detailItemsGroup = this.elements.detailItemsGroup;
-        if (detailItemsGroup && detailItemsGroup.parentNode) {
-            detailItemsGroup.parentNode.insertBefore(circle, detailItemsGroup);
-            Logger.debug(`🔵 Detail Sector circle inserted BEFORE detailItems group`);
+        // Insert at the BEGINNING of mainGroup so all other elements appear on top
+        const mainGroup = this.elements.mainGroup;
+        if (mainGroup && mainGroup.firstChild) {
+            mainGroup.insertBefore(circle, mainGroup.firstChild);
+            Logger.debug(`🔵 Detail Sector circle inserted at BEGINNING of mainGroup (below all other elements)`);
+        } else if (mainGroup) {
+            mainGroup.appendChild(circle);
+            Logger.debug(`🔵 Detail Sector circle appended to empty mainGroup`);
         } else {
-            // Fallback: append to main group
-            this.elements.mainGroup.appendChild(circle);
-            Logger.warn(`🔵 detailItems group not found, appending circle to mainGroup`);
+            Logger.error(`🔵 mainGroup not found - cannot insert Detail Sector circle`);
+            return;
         }
         
         // Calculate top buffer for debug logging
@@ -1631,20 +1628,51 @@ class MobileRenderer {
         const x = cx - (logoWidth / 2);
         const y = cy - (logoHeight / 2);
         
-        // Create logo image element
-        const logo = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'image');
-        logo.setAttribute('id', 'detailSectorLogo');
-        logo.setAttributeNS('http://www.w3.org/1999/xlink', 'href', 'assets/catalog_logo.png');
-        logo.setAttribute('x', x);
-        logo.setAttribute('y', y);
-        logo.setAttribute('width', logoWidth);
-        logo.setAttribute('height', logoHeight);
-        logo.setAttribute('opacity', '0.5'); // START state: 50% opacity
+        // Get configured logo path from catalog configuration
+        const displayConfig = this.dataManager.getDisplayConfig();
+        const detailSectorConfig = displayConfig && displayConfig.detail_sector;
+        const logoBasePath = detailSectorConfig && detailSectorConfig.logo_base_path;
+        const defaultImage = detailSectorConfig && detailSectorConfig.default_image;
         
-        // Add to main group
-        this.elements.mainGroup.appendChild(logo);
-        
-        Logger.debug(`🔵 Detail Sector logo created at (${x.toFixed(1)}, ${y.toFixed(1)}) with size ${logoWidth.toFixed(1)}x${logoHeight.toFixed(1)} (${logoScaleFactor * 100}% of circle diameter)`);
+        // Check if logo is configured
+        if (logoBasePath && defaultImage) {
+            // Logo is configured - create image element
+            const logoPath = logoBasePath + defaultImage + '.png';
+            
+            const logo = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'image');
+            logo.setAttribute('id', 'detailSectorLogo');
+            logo.setAttributeNS('http://www.w3.org/1999/xlink', 'href', logoPath);
+            logo.setAttribute('x', x);
+            logo.setAttribute('y', y);
+            logo.setAttribute('width', logoWidth);
+            logo.setAttribute('height', logoHeight);
+            logo.setAttribute('opacity', '0.5'); // START state: 50% opacity
+            
+            // Add to main group
+            this.elements.mainGroup.appendChild(logo);
+            
+            Logger.debug(`🔵 Detail Sector logo created at (${x.toFixed(1)}, ${y.toFixed(1)}) with size ${logoWidth.toFixed(1)}x${logoHeight.toFixed(1)} (${logoScaleFactor * 100}% of circle diameter)`);
+            Logger.debug(`🔵 Logo path: ${logoPath}`);
+        } else {
+            // No logo configured - create text element with "Choose an Image"
+            const textElement = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
+            textElement.setAttribute('id', 'detailSectorLogo');
+            textElement.setAttribute('x', cx);
+            textElement.setAttribute('y', cy);
+            textElement.setAttribute('text-anchor', 'middle');
+            textElement.setAttribute('dominant-baseline', 'middle');
+            textElement.setAttribute('fill', '#666666');
+            textElement.setAttribute('font-family', 'Montserrat, sans-serif');
+            textElement.setAttribute('font-size', '16');
+            textElement.setAttribute('font-weight', '500');
+            textElement.setAttribute('opacity', '0.5'); // START state: 50% opacity
+            textElement.textContent = 'Choose an Image';
+            
+            // Add to main group
+            this.elements.mainGroup.appendChild(textElement);
+            
+            Logger.debug(`🔵 Detail Sector text created at (${cx.toFixed(1)}, ${cy.toFixed(1)}) - no logo configured`);
+        }
     }
 
     /**

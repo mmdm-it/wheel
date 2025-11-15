@@ -98,7 +98,115 @@ The Wheel interface operates within a **portrait-oriented mobile viewport** divi
 
 ---
 
-## 2. TERMINOLOGY STANDARDS
+## 8. DETAIL SECTOR CONTENT RENDERING
+
+### 8.1 Content Positioning System
+
+**Coordinate System**: Detail Sector content uses Hub-based Cartesian coordinates
+- **contentGroup Transform**: `translate(hubX, hubY)` positions group at Hub center
+- **Child Element Coordinates**: All positioned relative to Hub (0, 0)
+- **Vertical Flow**: Content positioned vertically using `currentY` accumulator
+- **Horizontal Centering**: x=0 represents center of Detail Sector circle
+
+### 8.2 Content Types and Positioning
+
+#### Text Elements (Info Views)
+- **Position**: x=0 (centered), y=currentY
+- **Alignment**: text-anchor="middle" for horizontal centering
+- **Vertical Spacing**: Each element increments currentY by height + margin
+- **Font Sizes**: Configurable via view templates (typically 12-22px)
+
+#### Audio Player (HTML5 in foreignObject)
+- **Element Type**: foreignObject wrapping HTML5 audio element
+- **Width**: 280px (playerWidth constant)
+- **Height**: 40px (playerHeight constant)
+- **X Position**: -playerWidth / 2 (centers player at x=0)
+- **Y Position**: currentY (vertical flow position)
+- **Spacing**: Returns currentY + playerHeight + 12 (adds bottom margin)
+
+**Audio Player Implementation Details:**
+- **Technology**: SVG foreignObject embedding HTML5 `<audio controls>` element when the browser supports it
+- **Styling**: Semi-transparent background (rgba(255,255,255,0.1)), 4px border-radius
+- **Audio Source**: Configurable base_path + audio_file property from item data
+- **Data Pipeline**: audio_file property flattened from item.data into detail context
+- **Browser Support**: iOS Safari/DuckDuckGo do not fully support interactive controls inside SVG foreignObject. The system auto-detects this case and renders a tappable "Play Audio Sample" link that opens a native HTML overlay sheet with the audio element, metadata, and close control. The overlay uses standard DOM outside the SVG to guarantee playback on iPhone/iPad.
+
+#### List Views
+- **Title**: x=0, y=currentY, bold 16px
+- **Items**: x=0, sequential y positions with 16px spacing
+- **Empty State**: Centered message when no items available
+
+### 8.3 View Configuration Architecture
+
+**Views Array Structure**: Detail sector views defined as array in catalog JSON
+```json
+"views": [
+    {
+        "id": "audio_player",
+        "type": "audio",
+        "audio_file_property": "audio_file",
+        "audio_base_path": "assets/mx/"
+    },
+    {
+        "id": "info",
+        "type": "info",
+        "fields": [...]
+    }
+]
+```
+
+**Critical Implementation Details:**
+- Views MUST be array with id properties (not object with keys)
+- Array iteration required for proper rendering order
+- View types: "audio", "info", "list", "gallery", "links"
+- Each view type has specific rendering method in mobile-detailsector.js
+
+### 8.4 Content Flow Control
+
+**Vertical Flow Algorithm:**
+1. Start at currentY = 100 (below Hub center, in visible area)
+2. Render header (if configured)
+3. Iterate through views array sequentially
+4. Each renderView() returns updated currentY position
+5. Next view starts at returned currentY value
+
+**Position Calculation Example (Audio Player):**
+- contentGroup translated to (hubX, hubY) = (479.5, -333.5)
+- Audio player at x=-140, y=100 (relative to Hub)
+- Absolute screen position: x = 479.5 + (-140) = 339.5
+- For 375px wide screen, center = 187.5, so player offset from center ≠ 0
+- **Note**: x=0 is Hub center, NOT screen center - different coordinate systems
+
+**Why Simple Centering Works:**
+- contentGroup transform positions coordinate origin at Hub
+- All text uses text-anchor="middle" at x=0
+- foreignObject at x = -playerWidth/2 aligns with text centering
+- Consistent visual alignment across all content types
+
+### 8.5 Data Context for Content Rendering
+
+**Context Object Structure**: Flattened combination of item properties and item.data properties
+```javascript
+// Created in mobile-data.js getDetailSectorContext()
+context = {
+    name: item.name,
+    key: item.key,
+    color: item.color,
+    // ... all item properties
+    audio_file: item.data.audio_file,  // Flattened from item.data
+    year: item.data.year,               // Flattened from item.data
+    // ... all item.data properties
+}
+```
+
+**Template Resolution**: mobile-data.js resolveDetailTemplate() replaces {property} placeholders
+- Example: "{name} ({year})" → "Far Away Eyes (1978)"
+- Works with any property in flattened context
+- Supports nested access for complex data structures
+
+---
+
+## 9. KNOWN ARCHITECTURE ISSUES
 
 ### 2.1 Direction Terminology
 
@@ -795,6 +903,7 @@ const candidateFiles = [
 
 ---
 
-**Document Version**: 1.0  
-**Last Updated**: November 12, 2025  
-**Related**: STATUS, README.md, mobile-viewport.js, mobile-renderer.js
+**Document Version**: 1.1  
+**Last Updated**: November 12, 2025 - Added Section 8: Detail Sector Content Rendering (Audio Player Implementation)  
+**Related**: STATUS, README.md, mobile-viewport.js, mobile-renderer.js, mobile-detailsector.js
+

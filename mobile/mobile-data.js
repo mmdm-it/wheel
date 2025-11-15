@@ -120,24 +120,24 @@ class DataManager {
 
     /**
      * Discover available Wheel volumes in the directory
+     * Scans for JSON files and validates them as Wheel volumes
      */
     async discoverVolumes() {
         Logger.debug('🔍 Discovering available Wheel volumes...');
         
-        // List of potential volume files to check
-        const candidateFiles = [
+        // Get list of JSON files from server (to be implemented)
+        // For now, we'll scan common volume filenames
+        const commonVolumeFiles = [
             'mmdm_catalog.json',
-            'gutenberg.json',
+            'gutenberg.json', 
             'hg_mx.json'
-            // Future volumes will be added here:
-            // 'shakespeare.json',
-            // 'sears_catalog.json',
-            // 'britannica.json'
         ];
         
         const volumes = [];
         
-        for (const filename of candidateFiles) {
+        // TODO: Replace with server directory listing API
+        // This will enable true plug-and-play volume discovery
+        for (const filename of commonVolumeFiles) {
             try {
                 Logger.debug(`🔍 Checking ${filename}...`);
                 const response = await fetch(`./${filename}`);
@@ -310,6 +310,7 @@ class DataManager {
             display_config: this.getDisplayConfig() || {}
         };
 
+        // Copy top-level properties from item
         Object.keys(item).forEach(key => {
             if (key.startsWith('__')) {
                 return;
@@ -319,6 +320,23 @@ class DataManager {
             }
             context[key] = item[key];
         });
+
+        // Also copy properties from item.data (where audio_file, year, etc. are stored)
+        if (item.data && typeof item.data === 'object') {
+            Object.keys(item.data).forEach(key => {
+                // Don't overwrite existing context properties
+                if (context[key] === undefined) {
+                    context[key] = item.data[key];
+                }
+            });
+        }
+
+        // Add hierarchical context (artist, album) for songs
+        if (item.__level === 'song' && item.__path && item.__path.length >= 3) {
+            context.artist = item.__path[0]; // First level is artist
+            context.album = item.__path[1];  // Second level is album
+            Logger.debug('📋 Added hierarchical context for song:', { artist: context.artist, album: context.album, path: item.__path });
+        }
 
         return context;
     }
@@ -1036,29 +1054,20 @@ class DataManager {
 
     /**
      * Get plural property name for a level (e.g., 'category' → 'categories')
+     * Uses configuration-driven irregular plurals from catalog JSON
      */
     getPluralPropertyName(levelName) {
-        // Handle irregular plurals - now checking display_config for custom mappings
+        // Check if level config specifies a custom plural
         const displayConfig = this.getDisplayConfig();
         const levelConfig = displayConfig && displayConfig.hierarchy_levels && displayConfig.hierarchy_levels[levelName];
         
-        // Check if level config specifies a custom plural
         if (levelConfig && levelConfig.plural_property_name) {
             return levelConfig.plural_property_name;
         }
         
-        // Built-in irregular plurals
-        const irregularPlurals = {
-            'country': 'countries',
-            'family': 'families',
-            'section': 'sections',
-            'chapter_group': 'chapter_groups',
-            'verse_group': 'verse_groups',
-            'testament': 'testaments'
-        };
-        
-        if (irregularPlurals[levelName]) {
-            return irregularPlurals[levelName];
+        // Check for irregular plurals in display_config
+        if (displayConfig && displayConfig.irregular_plurals && displayConfig.irregular_plurals[levelName]) {
+            return displayConfig.irregular_plurals[levelName];
         }
         
         // Simple pluralization - add 's' (works for most levels)
@@ -1145,14 +1154,7 @@ class DataManager {
             props[parentItem.__level] = parentItem.name;
         }
 
-        // Copy hierarchy properties if they exist (market, country, manufacturer from our data structure)
-        ['market', 'country', 'manufacturer'].forEach(prop => {
-            if (parentItem[prop] !== undefined) {
-                props[prop] = parentItem[prop];
-            }
-        });
-
-        // Also copy numeric properties like levelCount
+        // Copy numeric properties like levelCount
         Object.keys(parentItem).forEach(key => {
             if (key.endsWith('Count')) {
                 props[key] = parentItem[key];

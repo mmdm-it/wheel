@@ -25,6 +25,9 @@ class MobileDetailSector {
         // Current state
         this.currentItem = null;
         this.isVisible = false;
+        this.supportsSVGForeignObject = this.detectForeignObjectSupport();
+        Logger.debug('📋 DetailSector: foreignObject support detected', { supported: this.supportsSVGForeignObject });
+        this.activeAudioOverlay = null;
     }
 
     /**
@@ -68,6 +71,8 @@ class MobileDetailSector {
         this.currentItem = null;
         this.isVisible = false;
 
+        this.closeAudioOverlay();
+
         if (this.detailItemsGroup) {
             this.detailItemsGroup.innerHTML = '';
             this.detailItemsGroup.classList.add('hidden');
@@ -86,34 +91,59 @@ class MobileDetailSector {
         this.detailItemsGroup.innerHTML = '';
 
         const arcParams = this.viewport.getArcParameters();
-        const circleRadius = arcParams.radius * 0.98;
+        const hubCenterX = (arcParams && typeof arcParams.centerX === 'number') ? arcParams.centerX : 0;
+        const hubCenterY = (arcParams && typeof arcParams.centerY === 'number') ? arcParams.centerY : 0;
+        const magnifierPosition = this.viewport.getMagnifyingRingPosition ? this.viewport.getMagnifyingRingPosition() : null;
+        const focusAnchorX = magnifierPosition && typeof magnifierPosition.x === 'number'
+            ? magnifierPosition.x
+            : 0;
+        const circleRadius = (arcParams && typeof arcParams.radius === 'number' ? arcParams.radius : 0) * 0.98;
+
+        // Use viewport center instead of arc center for content positioning
+        const viewportInfo = this.viewport.getViewportInfo();
+        const viewportCenterX = viewportInfo.center.x;
+        const viewportCenterY = viewportInfo.center.y;
 
         const contentGroup = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
         contentGroup.setAttribute('class', 'detail-content');
-        contentGroup.setAttribute('transform', `translate(${arcParams.centerX} ${arcParams.centerY})`);
+        contentGroup.setAttribute('transform', `translate(0, 0)`); // Position at SVG origin (screen center)
+
+        // Offset inner group toward the on-screen focus anchor so content stays within the visible arc
+        const contentInnerGroup = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
+        contentInnerGroup.setAttribute('class', 'detail-content-inner');
+        const innerOffsetX = 0; // Center content at viewport center instead of offsetting to magnifier
+        contentInnerGroup.setAttribute('transform', `translate(${innerOffsetX} 0)`);
+        contentGroup.appendChild(contentInnerGroup);
 
         const contentRadius = circleRadius * 0.82;
         const detailConfig = this.dataManager.getDetailSectorConfigForItem(item);
         const detailContext = this.dataManager.getDetailSectorContext(item);
 
+        Logger.debug('📋 DetailSector: content rendering context', {
+            itemName: detailContext.name,
+            level: detailContext.level,
+            viewCount: detailConfig.views.length
+        });
+
         Logger.debug('📋 DetailSector: resolved config for item', {
-            itemKey: item.key,
-            level: item.__level,
-            hasHeader: Boolean(detailConfig && detailConfig.header),
-            viewCount: detailConfig && detailConfig.views ? detailConfig.views.length : 0
+            itemName: detailContext.name,
+            mode: detailConfig.mode,
+            viewCount: detailConfig.views.length
         });
 
         if (!detailConfig || (!detailConfig.header && (!detailConfig.views || detailConfig.views.length === 0))) {
-            this.renderLegacyFallback(contentGroup, item, contentRadius);
+            this.renderLegacyFallback(contentInnerGroup, item, contentRadius);
             this.detailItemsGroup.appendChild(contentGroup);
             return;
         }
 
-        let currentY = -contentRadius + 36;
-        currentY = this.renderHeader(detailConfig.header, detailContext, contentGroup, currentY);
+        // Start content near the top of the visible screen area
+        // Position content in upper area of viewport for better visibility
+        let currentY = -250; // Start 250px above screen center (higher up in viewport)
+        currentY = this.renderHeader(detailConfig.header, detailContext, contentInnerGroup, currentY);
 
         (detailConfig.views || []).forEach(view => {
-            currentY = this.renderView(view, detailContext, contentGroup, currentY, contentRadius);
+            currentY = this.renderView(view, detailContext, contentInnerGroup, currentY, contentRadius, arcParams);
         });
 
         this.detailItemsGroup.appendChild(contentGroup);
@@ -123,7 +153,7 @@ class MobileDetailSector {
         const fallbackTitle = context.name || '';
 
         if (!headerConfig && fallbackTitle) {
-            const title = this.createTextElement(fallbackTitle, 0, currentY, 'middle', '22px', '#ffffff', 'bold');
+            const title = this.createTextElement(fallbackTitle, 180, currentY, 'end', '22px', '#ffffff', 'bold');
             contentGroup.appendChild(title);
             return currentY + 32;
         }
@@ -139,13 +169,13 @@ class MobileDetailSector {
         const resolvedSubtitle = this.dataManager.resolveDetailTemplate(subtitleTemplate, context);
 
         if (resolvedTitle) {
-            const title = this.createTextElement(resolvedTitle, 0, currentY, 'middle', '22px', '#ffffff', 'bold');
+            const title = this.createTextElement(resolvedTitle, 180, currentY, 'end', '22px', '#ffffff', 'bold');
             contentGroup.appendChild(title);
             currentY += 30;
         }
 
         if (resolvedSubtitle) {
-            const subtitle = this.createTextElement(resolvedSubtitle, 0, currentY, 'middle', '14px', '#d0d0d0');
+            const subtitle = this.createTextElement(resolvedSubtitle, 180, currentY, 'end', '14px', '#d0d0d0');
             contentGroup.appendChild(subtitle);
             currentY += 22;
         }
@@ -153,7 +183,7 @@ class MobileDetailSector {
         return currentY;
     }
 
-    renderView(viewConfig, context, contentGroup, currentY, contentRadius) {
+    renderView(viewConfig, context, contentGroup, currentY, contentRadius, arcParams) {
         if (!viewConfig || viewConfig.hidden === true) {
             return currentY;
         }
@@ -166,6 +196,8 @@ class MobileDetailSector {
         });
 
         switch (viewType) {
+            case 'audio':
+                return this.renderAudioView(viewConfig, context, contentGroup, currentY, arcParams);
             case 'info':
                 return this.renderInfoView(viewConfig, context, contentGroup, currentY);
             case 'list':
@@ -180,6 +212,96 @@ class MobileDetailSector {
         }
     }
 
+    renderAudioView(viewConfig, context, contentGroup, currentY, arcParams) {
+        Logger.debug('🎵 renderAudioView called', { viewConfig, contextKeys: Object.keys(context) });
+        
+        const audioFileProperty = viewConfig.audio_file_property || 'audio_file';
+        const basePath = viewConfig.audio_base_path || '';
+        
+        // Get the audio file path from the context (flattened item properties)
+        const audioFileName = context[audioFileProperty];
+        
+        Logger.debug('🎵 AudioView: rendering for item', {
+            itemName: context.name,
+            audioFileProperty,
+            audioFileName,
+            basePath,
+            supportsForeignObject: this.supportsSVGForeignObject
+        });
+        
+        if (!audioFileName) {
+            Logger.debug('🎵 AudioView: no audio file found, skipping');
+            return currentY;
+        }
+        
+        const audioPath = basePath + audioFileName;
+        Logger.debug('🎵 AudioView: audio path resolved', { audioPath });
+
+        if (!this.supportsSVGForeignObject) {
+            Logger.debug('🎵 AudioView: foreignObject not supported, using fallback overlay');
+            return this.renderAudioFallback(contentGroup, context, currentY, audioPath);
+        }
+        
+        // Create HTML5 audio player wrapped in foreignObject
+        const playerWidth = 280;
+        const playerHeight = 40;
+        
+        // Position player centered (x=0 is the center due to contentGroup positioning)
+        const playerX = -playerWidth / 2; // Center horizontally
+        
+        const foreignObject = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject');
+        foreignObject.setAttribute('x', playerX);
+        foreignObject.setAttribute('y', currentY);
+        foreignObject.setAttribute('width', playerWidth);
+        foreignObject.setAttribute('height', playerHeight);
+        
+        const audioHTML = `
+            <audio controls style="width: 100%; background: rgba(255,255,255,0.1); border-radius: 4px;" preload="metadata">
+                <source src="${audioPath}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        `;
+        
+        foreignObject.innerHTML = audioHTML;
+        contentGroup.appendChild(foreignObject);
+        
+        Logger.debug('🎵 AudioView: HTML5 audio player created and added to DOM');
+        
+        // Add error handling to the audio element
+        setTimeout(() => {
+            const audioElement = foreignObject.querySelector('audio');
+            if (audioElement) {
+                audioElement.addEventListener('error', (e) => {
+                    Logger.error('🎵 AudioView: audio element error', {
+                        error: e,
+                        audioPath,
+                        networkState: audioElement.networkState,
+                        readyState: audioElement.readyState,
+                        errorCode: audioElement.error?.code
+                    });
+                });
+                
+                audioElement.addEventListener('loadstart', () => {
+                    Logger.debug('🎵 AudioView: audio load started');
+                });
+                
+                audioElement.addEventListener('canplay', () => {
+                    Logger.debug('🎵 AudioView: audio can play');
+                });
+                
+                audioElement.addEventListener('play', () => {
+                    Logger.debug('🎵 AudioView: audio started playing');
+                });
+                
+                Logger.debug('🎵 AudioView: audio event listeners attached');
+            } else {
+                Logger.error('🎵 AudioView: audio element not found after creation');
+            }
+        }, 100);
+        
+        return currentY + playerHeight + 12;
+    }
+
     renderInfoView(viewConfig, context, contentGroup, currentY) {
         const titleTemplate = viewConfig.title_template || viewConfig.title;
         const subtitleTemplate = viewConfig.subtitle_template || viewConfig.subtitle;
@@ -190,13 +312,13 @@ class MobileDetailSector {
         const body = this.dataManager.resolveDetailTemplate(bodyTemplate, context);
 
         if (title) {
-            const titleElement = this.createTextElement(title, 0, currentY, 'middle', '18px', '#ffffff', 'bold');
+            const titleElement = this.createTextElement(title, 180, currentY, 'end', '18px', '#ffffff', 'bold');
             contentGroup.appendChild(titleElement);
             currentY += 24;
         }
 
         if (subtitle) {
-            const subtitleElement = this.createTextElement(subtitle, 0, currentY, 'middle', '13px', '#d0d0d0');
+            const subtitleElement = this.createTextElement(subtitle, 180, currentY, 'end', '13px', '#d0d0d0');
             contentGroup.appendChild(subtitleElement);
             currentY += 20;
         }
@@ -204,7 +326,7 @@ class MobileDetailSector {
         if (body) {
             const lines = this.wrapText(body, 42);
             lines.forEach(line => {
-                const bodyElement = this.createTextElement(line, 0, currentY, 'middle', '12px', '#c0c0c0');
+                const bodyElement = this.createTextElement(line, 180, currentY, 'end', '12px', '#c0c0c0');
                 contentGroup.appendChild(bodyElement);
                 currentY += 16;
             });
@@ -224,7 +346,7 @@ class MobileDetailSector {
             }
 
             const combined = label && value ? `${label}: ${value}` : (label || value);
-            const fieldElement = this.createTextElement(combined, 0, currentY, 'middle', '12px', '#b0b0b0');
+            const fieldElement = this.createTextElement(combined, 180, currentY, 'end', '12px', '#b0b0b0');
             contentGroup.appendChild(fieldElement);
             currentY += 16;
         });
@@ -236,20 +358,15 @@ class MobileDetailSector {
         const title = this.dataManager.resolveDetailTemplate(viewConfig.title_template || viewConfig.title, context);
         const items = this.getViewItems(viewConfig, context);
 
-        Logger.debug('📋 DetailSector: list view data', {
-            id: viewConfig.id || '(anonymous)',
-            totalItems: items.length
-        });
-
         if (title) {
-            const titleElement = this.createTextElement(title, 0, currentY, 'middle', '16px', '#ffffff', 'bold');
+            const titleElement = this.createTextElement(title, 180, currentY, 'end', '16px', '#ffffff', 'bold');
             contentGroup.appendChild(titleElement);
             currentY += 22;
         }
 
         if (!items.length) {
             const emptyMessage = this.dataManager.resolveDetailTemplate(viewConfig.empty_state, context) || 'No data available.';
-            const emptyElement = this.createTextElement(emptyMessage, 0, currentY, 'middle', '12px', '#888888');
+            const emptyElement = this.createTextElement(emptyMessage, 180, currentY, 'end', '12px', '#888888');
             contentGroup.appendChild(emptyElement);
             return currentY + 20;
         }
@@ -264,13 +381,13 @@ class MobileDetailSector {
 
             const primaryText = primary ? `• ${primary}` : null;
             if (primaryText) {
-                const primaryElement = this.createTextElement(primaryText, 0, currentY, 'middle', '12px', '#ffffff');
+                const primaryElement = this.createTextElement(primaryText, 180, currentY, 'end', '12px', '#ffffff');
                 contentGroup.appendChild(primaryElement);
                 currentY += 16;
             }
 
             if (secondary) {
-                const secondaryElement = this.createTextElement(secondary, 0, currentY, 'middle', '11px', '#cccccc');
+                const secondaryElement = this.createTextElement(secondary, 180, currentY, 'end', '11px', '#cccccc');
                 contentGroup.appendChild(secondaryElement);
                 currentY += 15;
             }
@@ -278,7 +395,7 @@ class MobileDetailSector {
             if (meta || badge) {
                 const summary = [meta, badge].filter(Boolean).join(' · ');
                 if (summary) {
-                    const summaryElement = this.createTextElement(summary, 0, currentY, 'middle', '10px', '#9fd2ff');
+                    const summaryElement = this.createTextElement(summary, 180, currentY, 'end', '10px', '#9fd2ff');
                     contentGroup.appendChild(summaryElement);
                     currentY += 14;
                 }
@@ -294,13 +411,8 @@ class MobileDetailSector {
         const title = this.dataManager.resolveDetailTemplate(viewConfig.title_template || viewConfig.title, context);
         const items = this.getViewItems(viewConfig, context);
 
-        Logger.debug('📋 DetailSector: gallery view data', {
-            id: viewConfig.id || '(anonymous)',
-            totalItems: items.length
-        });
-
         if (title) {
-            const titleElement = this.createTextElement(title, 0, currentY, 'middle', '16px', '#ffffff', 'bold');
+            const titleElement = this.createTextElement(title, 180, currentY, 'end', '16px', '#ffffff', 'bold');
             contentGroup.appendChild(titleElement);
             currentY += 22;
         }
@@ -317,7 +429,7 @@ class MobileDetailSector {
             const descriptor = images.length ? `${images.length} photo${images.length === 1 ? '' : 's'}` : 'No imagery';
             const summary = caption ? `${caption} · ${descriptor}` : descriptor;
 
-            const entry = this.createTextElement(`🖼️ ${summary}`, 0, currentY, 'middle', '11px', '#dcdcdc');
+            const entry = this.createTextElement(`🖼️ ${summary}`, 180, currentY, 'end', '11px', '#dcdcdc');
             contentGroup.appendChild(entry);
             currentY += 16;
         });
@@ -329,13 +441,8 @@ class MobileDetailSector {
         const title = this.dataManager.resolveDetailTemplate(viewConfig.title_template || viewConfig.title, context);
         const items = this.getViewItems(viewConfig, context);
 
-        Logger.debug('📋 DetailSector: links view data', {
-            id: viewConfig.id || '(anonymous)',
-            totalItems: items.length
-        });
-
         if (title) {
-            const titleElement = this.createTextElement(title, 0, currentY, 'middle', '16px', '#ffffff', 'bold');
+            const titleElement = this.createTextElement(title, 180, currentY, 'end', '16px', '#ffffff', 'bold');
             contentGroup.appendChild(titleElement);
             currentY += 22;
         }
@@ -350,18 +457,18 @@ class MobileDetailSector {
             const description = this.dataManager.resolveDetailTemplate(viewConfig.description_template, itemContext);
             const url = this.dataManager.resolveDetailPath(viewConfig.url_field, itemContext) || this.dataManager.resolveDetailTemplate(viewConfig.url_template, itemContext);
 
-            const labelElement = this.createTextElement(label || url || 'Link', 0, currentY, 'middle', '12px', '#9fd2ff');
+            const labelElement = this.createTextElement(label || url || 'Link', 180, currentY, 'end', '12px', '#9fd2ff');
             contentGroup.appendChild(labelElement);
             currentY += 15;
 
             if (description) {
-                const descriptionElement = this.createTextElement(description, 0, currentY, 'middle', '11px', '#cccccc');
+                const descriptionElement = this.createTextElement(description, 180, currentY, 'end', '11px', '#cccccc');
                 contentGroup.appendChild(descriptionElement);
                 currentY += 15;
             }
 
             if (url) {
-                const urlElement = this.createTextElement(url, 0, currentY, 'middle', '10px', '#7ab8ff');
+                const urlElement = this.createTextElement(url, 180, currentY, 'end', '10px', '#7ab8ff');
                 contentGroup.appendChild(urlElement);
                 currentY += 14;
             }
@@ -374,7 +481,7 @@ class MobileDetailSector {
 
     renderEmptyState(viewConfig, context, contentGroup, currentY) {
         const emptyMessage = this.dataManager.resolveDetailTemplate(viewConfig.empty_state, context) || 'No data available.';
-        const emptyElement = this.createTextElement(emptyMessage, 0, currentY, 'middle', '12px', '#888888');
+        const emptyElement = this.createTextElement(emptyMessage, 180, currentY, 'end', '12px', '#888888');
         contentGroup.appendChild(emptyElement);
         return currentY + 20;
     }
@@ -448,7 +555,7 @@ class MobileDetailSector {
         const startY = -contentRadius + 36;
         let currentY = startY;
 
-        const title = this.createTextElement(item.name || 'Detail', 0, currentY, 'middle', '20px', '#ffffff', 'bold');
+        const title = this.createTextElement(item.name || 'Detail', 180, currentY, 'end', '20px', '#ffffff', 'bold');
         contentGroup.appendChild(title);
         currentY += 28;
 
@@ -456,7 +563,7 @@ class MobileDetailSector {
 
         if (itemDetails.description) {
             this.wrapText(itemDetails.description, 42).forEach(line => {
-                const desc = this.createTextElement(line, 0, currentY, 'middle', '12px', '#cccccc');
+                const desc = this.createTextElement(line, 180, currentY, 'end', '12px', '#cccccc');
                 contentGroup.appendChild(desc);
                 currentY += 16;
             });
@@ -472,11 +579,11 @@ class MobileDetailSector {
 
         if (itemDetails.alternatives && itemDetails.alternatives.length > 0) {
             currentY += 20;
-            const altTitle = this.createTextElement('Alternatives:', 0, currentY, 'middle', '12px', '#ffffff', 'bold');
+            const altTitle = this.createTextElement('Alternatives:', 180, currentY, 'end', '12px', '#ffffff', 'bold');
             contentGroup.appendChild(altTitle);
 
             itemDetails.alternatives.slice(0, 3).forEach((alt, index) => {
-                const altText = this.createTextElement(`• ${alt}`, 0, currentY + 18 + (index * 16), 'middle', '11px', '#cccccc');
+                const altText = this.createTextElement(`• ${alt}`, 180, currentY + 18 + (index * 16), 'end', '11px', '#cccccc');
                 contentGroup.appendChild(altText);
             });
         }
@@ -582,9 +689,9 @@ class MobileDetailSector {
 
             const specText = this.createTextElement(
                 truncatedSpec,
-                centerX,
+                180, // Right-aligned
                 startY + (index * lineHeight),
-                'middle',
+                'end', // Right anchor
                 '11px',
                 '#bbbbbb'
             );
@@ -611,6 +718,157 @@ class MobileDetailSector {
     reset() {
         this.hideDetailContent();
         Logger.debug('MobileDetailSector reset');
+    }
+
+    detectForeignObjectSupport() {
+        if (typeof window === 'undefined' || typeof navigator === 'undefined') {
+            return true;
+        }
+
+        const ua = navigator.userAgent || '';
+        const isIOS = /iPad|iPhone|iPod/.test(ua);
+
+        if (isIOS) {
+            Logger.debug('📋 DetailSector: foreignObject unavailable on this platform (iOS detection)');
+            return false;
+        }
+
+        try {
+            const testFO = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'foreignObject');
+            return !!testFO;
+        } catch (error) {
+            Logger.debug('📋 DetailSector: foreignObject creation failed', error);
+            return false;
+        }
+    }
+
+    renderAudioFallback(contentGroup, context, currentY, audioPath) {
+        const itemName = context && (context.name || context.title || 'Audio');
+
+        const playText = this.createTextElement('🎧 Play Audio Sample', 180, currentY + 18, 'end', '14px', '#9fd2ff', 'bold');
+        playText.setAttribute('style', 'cursor: pointer;');
+        playText.addEventListener('click', () => {
+            this.openAudioOverlay(audioPath, itemName, context);
+        });
+        contentGroup.appendChild(playText);
+
+        const hintText = this.createTextElement('Tap to open player', 180, currentY + 38, 'end', '11px', '#c0c0c0');
+        contentGroup.appendChild(hintText);
+
+        return currentY + 52;
+    }
+
+    openAudioOverlay(audioPath, itemName, context) {
+        if (!audioPath) {
+            return;
+        }
+
+        this.closeAudioOverlay();
+
+        const overlay = document.createElement('div');
+        overlay.className = 'detail-audio-overlay';
+
+        const sheet = document.createElement('div');
+        sheet.className = 'detail-audio-sheet';
+
+        const header = document.createElement('div');
+        header.className = 'detail-audio-header';
+
+        const title = document.createElement('h3');
+        title.textContent = itemName || 'Audio Sample';
+        header.appendChild(title);
+
+        const closeButton = document.createElement('button');
+        closeButton.className = 'detail-audio-close';
+        closeButton.type = 'button';
+        closeButton.textContent = 'Close';
+        closeButton.addEventListener('click', () => this.closeAudioOverlay());
+        header.appendChild(closeButton);
+
+        const audio = document.createElement('audio');
+        audio.setAttribute('controls', '');
+        audio.setAttribute('preload', 'metadata');
+
+        const source = document.createElement('source');
+        source.src = audioPath;
+        source.type = 'audio/mpeg';
+        audio.appendChild(source);
+
+        // Add debugging event listeners
+        audio.addEventListener('error', (e) => {
+            Logger.error('🎵 AudioView: audio element error', {
+                error: e,
+                audioPath,
+                networkState: audio.networkState,
+                readyState: audio.readyState,
+                errorCode: audio.error?.code,
+                errorMessage: audio.error?.message
+            });
+        });
+
+        audio.addEventListener('loadstart', () => {
+            Logger.debug('🎵 AudioView: audio load started', { audioPath });
+        });
+
+        audio.addEventListener('canplay', () => {
+            Logger.debug('🎵 AudioView: audio can play', { audioPath });
+        });
+
+        audio.addEventListener('play', () => {
+            Logger.debug('🎵 AudioView: audio started playing', { audioPath });
+        });
+
+        audio.addEventListener('pause', () => {
+            Logger.debug('🎵 AudioView: audio paused', { audioPath });
+        });
+
+        audio.addEventListener('ended', () => {
+            Logger.debug('🎵 AudioView: audio ended', { audioPath });
+            this.closeAudioOverlay();
+        });
+
+        audio.addEventListener('stalled', () => {
+            Logger.warn('🎵 AudioView: audio stalled', { audioPath });
+        });
+
+        audio.addEventListener('waiting', () => {
+            Logger.debug('🎵 AudioView: audio waiting/buffering', { audioPath });
+        });
+
+        const meta = document.createElement('p');
+        meta.className = 'detail-audio-meta';
+        const album = context && context.album ? context.album : null;
+        const artist = context && context.artist ? context.artist : null;
+        Logger.debug('🎵 Audio overlay metadata:', { album, artist, contextKeys: Object.keys(context) });
+        if (album || artist) {
+            meta.textContent = [album, artist].filter(Boolean).join(' • ');
+        } else {
+            meta.textContent = 'Tap play to listen.';
+        }
+
+        sheet.appendChild(header);
+        sheet.appendChild(audio);
+        sheet.appendChild(meta);
+
+        overlay.appendChild(sheet);
+
+        overlay.addEventListener('click', event => {
+            if (event.target === overlay) {
+                this.closeAudioOverlay();
+            }
+        });
+
+        document.body.appendChild(overlay);
+        this.activeAudioOverlay = overlay;
+    }
+
+    closeAudioOverlay() {
+        if (this.activeAudioOverlay) {
+            if (this.activeAudioOverlay.parentNode) {
+                this.activeAudioOverlay.parentNode.removeChild(this.activeAudioOverlay);
+            }
+            this.activeAudioOverlay = null;
+        }
     }
 }
 

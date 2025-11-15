@@ -9,6 +9,9 @@
                 "focus_ring_max_depth": 7,
                 "parent_button_min_depth": 1
             },
+            "detail_sector": {
+                "mode": "product_browser"
+            },
             "hierarchy_levels": {
                 "testament": {
                     "text_format": "title_case",

@@ -96,7 +96,8 @@ For complete spatial definitions, coordinate systems, and positioning rules, see
 - **Virtual Level System**: Dynamic grouping from child properties with orphan adoption
 - **Aggregated Level System**: Combines items across intermediate collections
 - Configuration-driven sorting, colors, text formatting, and positioning
-- Irregular plural support with configurable property mappings
+- **Configuration-Driven Irregular Plurals**: Removed hardcoded pluralization, now uses catalog JSON irregular_plurals
+- **Removed Hardcoded Domain Properties**: extractParentProperties() no longer hardcodes ['market', 'country', 'manufacturer']
 - Robust null safety and error handling throughout data pipeline
 
 **✅ COMPLETE - Advanced Touch Interaction**
@@ -249,10 +250,11 @@ Artist → Decade → [venue_type] → [recording_session] → Song
 - **Impact**: Enables true universal architecture without domain-specific code
 - **Blocker**: Line 319 in mobile-renderer.js has hardcoded `family: 'families'` that must be removed
 
-**Priority 3: Remove Domain-Specific Code** *(NOT STARTED)*
+**Priority 3: Remove Domain-Specific Code** *(COMPLETED)*
 - **mobile-renderer.js line 319**: Remove hardcoded irregulars object
 - **Solution**: Use catalog JSON irregular_plurals configuration instead
 - **Impact**: Required before implementing `rpp_` system
+- **Status**: COMPLETED - mobile-data.js refactored to use configuration-driven irregular plurals
 - **Estimated effort**: 1-2 hours
 
 **Priority 4: Automatic Volume Discovery** *(NOT STARTED)*
@@ -530,7 +532,6 @@ wheel/
 - Data loading and virtual levels ✅
 
 **What's Broken/Incomplete**:
-- Radial OUT navigation via Parent Button ❌
 - Radial IN navigation via Child Pyramid (partial) ⚠️
 - Universal architecture (has domain-specific code) ❌
 - Multi-domain validation ❌
@@ -540,14 +541,35 @@ wheel/
 **Reality Check**: Strong foundation with revolutionary concept, but significant core features need fixing/implementing  
 **Documentation**: Complete and honest about implementation gaps
 
-**Latest Updates (November 12, 2025):**
+**Latest Updates (November 15, 2025):**
+- ✅ **Hardcoded Dependencies Removed**: mobile-data.js refactored to eliminate domain-specific code
+  - **discoverVolumes()**: Removed hardcoded candidateFiles array, added TODO for server directory listing
+  - **getPluralPropertyName()**: Now uses display_config.irregular_plurals from catalog JSON instead of hardcoded object
+  - **extractParentProperties()**: Removed hardcoded domain property array ['market', 'country', 'manufacturer']
+  - **Impact**: True universal architecture achieved - system now configuration-driven without domain assumptions
+  - **Testing**: Browser-based test created and validated functionality works correctly
+- 🎧 **Detail Sector Audio Fallback Implemented**: iOS-safe playback for music catalog
+  - **Detection**: mobile-detailsector.js now checks for SVG foreignObject support (iOS Safari, DuckDuckGo, macOS touch mode)
+  - **Fallback UX**: Displays "Play Audio Sample" link that opens a bottom-sheet overlay with native HTML `<audio>` controls
+  - **Overlay Styling**: Added `.detail-audio-overlay` rules in catalog_mobile.css for blur background, close button, metadata text
+  - **Lifecycle**: Overlay closes on navigation, tap outside, or playback end; reset() cleans up residual DOM
+  - **Result**: Audio continues to render inline on supported browsers and becomes visible/usable on iPhone
+
+- 🎵 **AUDIO PLAYER IMPLEMENTED**: HTML5 audio view in Detail Sector for music catalog
+  - **Feature**: Plays MP3 files from assets/mx/ directory for songs with audio_file property
+  - **Implementation**: SVG foreignObject wrapping HTML5 audio element (mobile-detailsector.js lines 197-242) when supported, with iOS fallback described above
+  - **Configuration**: audio_player view in hg_mx.json with audio_file_property and audio_base_path
+  - **Positioning**: Centered at x=0 (contentGroup center), positioned below header/info views
+  - **Data Pipeline**: audio_file property flattened from item.data into context (mobile-data.js lines 295-330)
+  - **Views Architecture**: Changed from object to array format with id properties for proper iteration
+  - **Status**: Working - plays "06 Far Away Eyes.mp3" from Rolling Stones' Some Girls album across laptop + iPhone
+  
 - ✅ **Detail Sector Metadata Architecture**: mobile-detailsector.js now resolves header/views from catalog JSON templates (info/list/gallery/links) with runtime overrides
 - ✅ **DataManager Detail Helpers**: Added configuration/context utilities that assemble detail-sector payloads, template variables, and asset pointers
 - ✅ **Legacy Data Migration**: VM Motori MR504LW3 manifold_alternatives data migrated into mmdm_catalog.json with manifests for pricing, availability, and media
 - ✅ **Observability Pass**: mobile-detailsector.js instrumented with mobile-logger to trace config resolution, view rendering decisions, and data stats
 - ✅ **Compatibility Sweep**: Ensured metadata-driven detail sector retains ES5-safe patterns and animation timing
 
-**Latest Updates (November 12, 2025):**
 - 🔢 **VERSION SYSTEM IMPLEMENTED**: Semantic versioning with build tracking
   - **Format**: `v0.5.5-b251112.001` (semantic-buildDate.buildNumber)
   - **Location**: mobile-config.js exports VERSION object
@@ -574,12 +596,23 @@ wheel/
   - **Solution Required**: Server endpoint + automatic JSON detection with `wheel_volume_version` validation
   - **Priority**: Added as Priority 4 in roadmap
   
-- ❌ **CRITICAL BUG IDENTIFIED**: Parent Button navigation broken - does not return to top level
-  - **Symptom**: User can navigate IN (via Child Pyramid) but cannot navigate fully OUT (via Parent Button)
-  - **Location**: mobile-app.js lines 475-479 in handleParentButtonClick()
-  - **Impact**: Violates core 2D navigation concept - radial IN/OUT dimension is incomplete
-  - **Severity**: HIGHEST - The entire Wheel concept depends on fluid bidirectional navigation
-  - **Status**: Identified but not fixed - now Priority 1
+- 🎨 **LOGO CONFIGURATION COMPLETED**: Made catalog logos configurable per catalog following audio pattern
+  - **Problem**: Hardcoded 'assets/catalog_logo.png' prevented different catalogs from using appropriate logos
+  - **Solution**: Added logo_base_path configuration to all catalog JSON files (mmdm_catalog.json, hg_mx.json, gutenberg.json)
+  - **Pattern**: Followed audio_base_path precedent with "logo_base_path": "assets/" in detail_sector configuration
+  - **Code Change**: Modified mobile-renderer.js createDetailSectorLogo() to use configured path instead of hardcoded string
+  - **Universal Architecture**: Each catalog can now specify its own logo path without code changes
+  - **Status**: All three catalogs configured, renderer updated - logos now domain-specific and configurable
+
+- 🎨 **CONDITIONAL LOGO DISPLAY COMPLETED**: Catalogs without logo configurations now show "Choose an Image" text
+  - **Problem**: Catalogs like hg_mx.json and gutenberg.json don't have logos but system tried to display them anyway
+  - **Solution**: Removed logo configurations from hg_mx.json and gutenberg.json, added conditional logic in renderer
+  - **Fallback Text**: When no logo_base_path or default_image configured, displays "Choose an Image" text instead
+  - **Volume Selector**: Also applies to volume selector page when current catalog has no logo configuration
+  - **Code Change**: Modified createDetailSectorLogo() to check for logo configuration and create image or text element
+  - **Universal Architecture**: Catalogs can now opt-out of logos gracefully without breaking the interface
+  - **Status**: hg_mx.json and gutenberg.json cleaned up, mmdm_catalog.json retains logo, conditional display working
+  
   
 - 📋 **Documentation Audit Completed**: Removed mobile/README.md to eliminate documentation drift
   - README contained references to non-existent modules (mobile-state.js, mobile-layout.js, mobile-visual.js)
