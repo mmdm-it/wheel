@@ -121,6 +121,7 @@ class DataManager {
     /**
      * Discover available Wheel volumes in the directory
      * Scans for JSON files and validates them as Wheel volumes
+     * @returns {Promise<Array>} Array of discovered volume objects with metadata
      */
     async discoverVolumes() {
         Logger.debug('🔍 Discovering available Wheel volumes...');
@@ -190,6 +191,12 @@ class DataManager {
         return volumes;
     }
 
+    /**
+     * Load a specific Wheel volume by filename
+     * @param {string} filename - Name of the JSON file to load (e.g., 'mmdm_catalog.json')
+     * @returns {Promise<Object>} The loaded volume data structure
+     * @throws {Error} If volume cannot be loaded or is invalid
+     */
     async loadVolume(filename) {
         this.loading = true;
         Logger.debug(`📂 Loading volume: ${filename}`);
@@ -278,6 +285,9 @@ class DataManager {
 
     /**
      * Retrieve merged detail sector configuration for a specific item
+     * Combines volume defaults, hierarchy-level overrides, and item-level overrides
+     * @param {Object} item - Item to get detail sector config for
+     * @returns {Object|null} Merged configuration object or null if no config found
      */
     getDetailSectorConfigForItem(item) {
         if (!item) {
@@ -295,6 +305,9 @@ class DataManager {
 
     /**
      * Build a rendering context for template resolution
+     * Flattens item properties and data for template interpolation
+     * @param {Object} item - Item to build context for
+     * @returns {Object} Context object with flattened properties for templating
      */
     getDetailSectorContext(item) {
         if (!item) {
@@ -446,6 +459,10 @@ class DataManager {
 
     /**
      * Interpolate template placeholders using context data
+     * Supports {{property}} and {{object.property}} syntax
+     * @param {string} template - Template string with {{placeholders}}
+     * @param {Object} context - Context object with property values
+     * @returns {string} Resolved template with placeholders replaced
      */
     resolveDetailTemplate(template, context) {
         if (typeof template !== 'string' || !template.includes('{{')) {
@@ -496,8 +513,8 @@ class DataManager {
         return rootData && rootData[collectionName] || {};
     }
 
-    getMarkets() {
-        // Legacy method - now returns keys from top-level collection
+    getTopLevelKeys() {
+        // Generic method - returns keys from top-level collection
         const topLevel = this.getTopLevelCollection();
         return Object.keys(topLevel);
     }
@@ -505,12 +522,13 @@ class DataManager {
     /**
      * UNIVERSAL METHOD: Get all initial focus items for display
      * Gets the THIRD level items aggregated across the first two hierarchy levels
-     * (e.g., manufacturers from markets+countries, books from testaments+sections)
+     * (e.g., items from groups+subgroups)
+     * @returns {Array} Array of third-level items ready for focus ring display
      */
     getAllInitialFocusItems() {
         if (!this.data || !this.rootDataKey) return [];
 
-        const topLevelNames = this.getMarkets();
+        const topLevelNames = this.getTopLevelKeys();
         const levelNames = this.getHierarchyLevelNames();
         
         if (levelNames.length < 3) {
@@ -518,9 +536,9 @@ class DataManager {
             return [];
         }
         
-        const topLevelName = levelNames[0]; // e.g., 'market' or 'testament'
-        const secondLevelName = levelNames[1]; // e.g., 'country' or 'section'
-        const thirdLevelName = levelNames[2]; // e.g., 'manufacturer' or 'book'
+        const topLevelName = levelNames[0]; // e.g., 'group1'
+        const secondLevelName = levelNames[1]; // e.g., 'group2'
+        const thirdLevelName = levelNames[2]; // e.g., 'item'
 
         const allThirdLevelItems = [];
         const thirdLevelConfig = this.getHierarchyLevelConfig(thirdLevelName);
@@ -544,10 +562,10 @@ class DataManager {
                 const thirdLevelItems = this.getItemsAtLevel(topLevelItem, thirdLevelName);
                 allThirdLevelItems.push(...thirdLevelItems);
             } else {
-                // Get second-level items (e.g., countries)
+                // Get second-level items
                 const secondLevelItems = this.getItemsAtLevel(topLevelItem, secondLevelName);
                 
-                // For each second-level item, get third-level items (e.g., manufacturers)
+                // For each second-level item, get third-level items
                 secondLevelItems.forEach(secondLevelItem => {
                     const thirdLevelItems = this.getItemsAtLevel(secondLevelItem, thirdLevelName);
                     allThirdLevelItems.push(...thirdLevelItems);
@@ -583,17 +601,23 @@ class DataManager {
             if (i === 0) {
                 dataLocation = dataLocation[pathSegment];
                 if (dataLocation) {
-                    // Check for second-level collection (countries, books, etc.)
+                    // Check for second-level collection
                     const secondLevelPlural = this.getPluralPropertyName(levelNames[1]);
                     if (dataLocation[secondLevelPlural]) {
                         dataLocation = dataLocation[secondLevelPlural];
                     }
                 }
             } else {
+                let currentLocation = dataLocation;
                 dataLocation = dataLocation && dataLocation[pathSegment];
                 if (!dataLocation) {
-                    Logger.warn(`getVirtualLevelItems: path segment '${pathSegment}' not found`);
-                    return [];
+                    // Fallback: try navigating through the collection for the parent level
+                    const collectionName = this.getPluralPropertyName(parentItem.__level);
+                    dataLocation = currentLocation && currentLocation[collectionName] && currentLocation[collectionName][pathSegment];
+                    if (!dataLocation) {
+                        Logger.warn(`getVirtualLevelItems: path segment '${pathSegment}' not found`);
+                        return [];
+                    }
                 }
                 if (i < parentItem.__path.length - 1) {
                     const nextLevelName = levelNames[i + 1];
@@ -608,15 +632,11 @@ class DataManager {
         // The data location now points to the parent item
         // For numeric levels with virtual groups, dataLocation is the specific numeric item
         // which may directly contain the child array (not in a separate collection property)
-        let rawData;
+        let rawData = dataLocation;
         
-        if (Array.isArray(dataLocation)) {
-            // dataLocation is already the array (direct parent-to-child array)
-            rawData = dataLocation;
-        } else {
-            // Try to find the child collection
-            const childCollectionName = this.getPluralPropertyName(dataLevelName);
-            rawData = dataLocation && dataLocation[childCollectionName];
+        const childCollectionName = this.getPluralPropertyName(dataLevelName);
+        if (rawData && rawData[childCollectionName]) {
+            rawData = rawData[childCollectionName];
         }
         
         // Handle both arrays and objects with numeric/string keys
@@ -943,6 +963,9 @@ class DataManager {
      * UNIVERSAL HIERARCHY METHOD
      * Get items at a specific level depth given a parent item
      * This is the domain-agnostic navigation method that dynamically navigates JSON
+     * @param {Object} parentItem - Parent item with __level and __path metadata
+     * @param {string} childLevelName - Name of the child level to retrieve items from
+     * @returns {Array} Array of child items with metadata (__level, __path, etc.)
      */
     getItemsAtLevel(parentItem, childLevelName) {
         if (!parentItem || !childLevelName) {
@@ -1070,8 +1093,12 @@ class DataManager {
             return displayConfig.irregular_plurals[levelName];
         }
         
-        // Simple pluralization - add 's' (works for most levels)
-        return levelName + 's';
+        // Simple pluralization - handle common cases
+        if (levelName.endsWith('y')) {
+            return levelName.slice(0, -1) + 'ies';
+        } else {
+            return levelName + 's';
+        }
     }
 
     /**

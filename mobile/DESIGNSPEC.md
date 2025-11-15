@@ -6,7 +6,9 @@ This specification defines the spatial model, terminology standards, and coordin
 
 ---
 
-## 1. SPATIAL MODEL - THE VIEWPORT
+## Part I: Code Implementation
+
+### 1. SPATIAL MODEL - THE VIEWPORT
 
 ### 1.1 Visual Space Definition
 
@@ -98,175 +100,9 @@ The Wheel interface operates within a **portrait-oriented mobile viewport** divi
 
 ---
 
-## 8. DETAIL SECTOR CONTENT RENDERING
+### 2. COORDINATE SYSTEMS
 
-### 8.1 Content Positioning System
-
-**Coordinate System**: Detail Sector content uses Hub-based Cartesian coordinates
-- **contentGroup Transform**: `translate(hubX, hubY)` positions group at Hub center
-- **Child Element Coordinates**: All positioned relative to Hub (0, 0)
-- **Vertical Flow**: Content positioned vertically using `currentY` accumulator
-- **Horizontal Centering**: x=0 represents center of Detail Sector circle
-
-### 8.2 Content Types and Positioning
-
-#### Text Elements (Info Views)
-- **Position**: x=0 (centered), y=currentY
-- **Alignment**: text-anchor="middle" for horizontal centering
-- **Vertical Spacing**: Each element increments currentY by height + margin
-- **Font Sizes**: Configurable via view templates (typically 12-22px)
-
-#### Audio Player (HTML5 in foreignObject)
-- **Element Type**: foreignObject wrapping HTML5 audio element
-- **Width**: 280px (playerWidth constant)
-- **Height**: 40px (playerHeight constant)
-- **X Position**: -playerWidth / 2 (centers player at x=0)
-- **Y Position**: currentY (vertical flow position)
-- **Spacing**: Returns currentY + playerHeight + 12 (adds bottom margin)
-
-**Audio Player Implementation Details:**
-- **Technology**: SVG foreignObject embedding HTML5 `<audio controls>` element when the browser supports it
-- **Styling**: Semi-transparent background (rgba(255,255,255,0.1)), 4px border-radius
-- **Audio Source**: Configurable base_path + audio_file property from item data
-- **Data Pipeline**: audio_file property flattened from item.data into detail context
-- **Browser Support**: iOS Safari/DuckDuckGo do not fully support interactive controls inside SVG foreignObject. The system auto-detects this case and renders a tappable "Play Audio Sample" link that opens a native HTML overlay sheet with the audio element, metadata, and close control. The overlay uses standard DOM outside the SVG to guarantee playback on iPhone/iPad.
-
-#### List Views
-- **Title**: x=0, y=currentY, bold 16px
-- **Items**: x=0, sequential y positions with 16px spacing
-- **Empty State**: Centered message when no items available
-
-### 8.3 View Configuration Architecture
-
-**Views Array Structure**: Detail sector views defined as array in catalog JSON
-```json
-"views": [
-    {
-        "id": "audio_player",
-        "type": "audio",
-        "audio_file_property": "audio_file",
-        "audio_base_path": "assets/mx/"
-    },
-    {
-        "id": "info",
-        "type": "info",
-        "fields": [...]
-    }
-]
-```
-
-**Critical Implementation Details:**
-- Views MUST be array with id properties (not object with keys)
-- Array iteration required for proper rendering order
-- View types: "audio", "info", "list", "gallery", "links"
-- Each view type has specific rendering method in mobile-detailsector.js
-
-### 8.4 Content Flow Control
-
-**Vertical Flow Algorithm:**
-1. Start at currentY = 100 (below Hub center, in visible area)
-2. Render header (if configured)
-3. Iterate through views array sequentially
-4. Each renderView() returns updated currentY position
-5. Next view starts at returned currentY value
-
-**Position Calculation Example (Audio Player):**
-- contentGroup translated to (hubX, hubY) = (479.5, -333.5)
-- Audio player at x=-140, y=100 (relative to Hub)
-- Absolute screen position: x = 479.5 + (-140) = 339.5
-- For 375px wide screen, center = 187.5, so player offset from center ≠ 0
-- **Note**: x=0 is Hub center, NOT screen center - different coordinate systems
-
-**Why Simple Centering Works:**
-- contentGroup transform positions coordinate origin at Hub
-- All text uses text-anchor="middle" at x=0
-- foreignObject at x = -playerWidth/2 aligns with text centering
-- Consistent visual alignment across all content types
-
-### 8.5 Data Context for Content Rendering
-
-**Context Object Structure**: Flattened combination of item properties and item.data properties
-```javascript
-// Created in mobile-data.js getDetailSectorContext()
-context = {
-    name: item.name,
-    key: item.key,
-    color: item.color,
-    // ... all item properties
-    audio_file: item.data.audio_file,  // Flattened from item.data
-    year: item.data.year,               // Flattened from item.data
-    // ... all item.data properties
-}
-```
-
-**Template Resolution**: mobile-data.js resolveDetailTemplate() replaces {property} placeholders
-- Example: "{name} ({year})" → "Far Away Eyes (1978)"
-- Works with any property in flattened context
-- Supports nested access for complex data structures
-
----
-
-## 9. KNOWN ARCHITECTURE ISSUES
-
-### 2.1 Direction Terminology
-
-#### CORRECT: Radial Directional Terms
-- **OUT**: Movement from Focus Ring toward Parent Button (hierarchy ascending)
-- **IN**: Movement from Child Pyramid toward Focus Ring (hierarchy descending)
-- **CW** (Clockwise): Rotation increasing angle (6→9→12→3→6)
-- **CCW** (Counter-Clockwise): Rotation decreasing angle (6→3→12→9→6)
-
-#### INCORRECT: Avoid These Terms
-- ❌ **UP** - Ambiguous (screen up ≠ hierarchy up)
-- ❌ **DOWN** - Ambiguous (screen down ≠ hierarchy down)
-- ❌ **TOP** - Use specific clock position (e.g., "12 o'clock" or "9 o'clock")
-- ❌ **BOTTOM** - Use "6 o'clock" instead
-- ❌ **LEFT/RIGHT** - Use "9 o'clock" / "3 o'clock" instead
-
-#### Examples of Correct Usage
-```javascript
-// ✅ CORRECT
-migrateNodeOUT();  // Navigate to parent
-migrateNodeIN();   // Navigate to child
-rotateCW();        // Rotate clockwise
-positionAt270();   // Position at 9 o'clock
-
-// ❌ INCORRECT  
-moveUp();          // Ambiguous
-navigateDown();    // Ambiguous
-positionAtTop();   // Which top?
-```
-
----
-
-### 2.2 Component Terminology
-
-#### Navigation Components
-- **Focus Ring**: The arc-based sprocket gear for rotational traversal. The only nzone that responds to swipes by scrolling.
-- **Child Pyramid**: Three-arc concentric display field of nodes for IN migration. ONly responds to clicks.
-- **Parent Button**: Single button for OUT migration. Only responds to clicks.
-- **Detail Sector**: Expanded circle for leaf item display. May or may not contain links. Only responds to clicks.
-- **Magnifier**: Visual indicator at dynamic center angle of Focus Ring
-
-#### Hierarchy Terms
-- **Level**: A configured depth in the hierarchy (testament, book, chapter, verse)
-- **Item**: A data node at any level
-- **Leaf**: Terminal item with no children (displays in Detail Sector)
-- **Virtual Level**: Computed grouping level (e.g., chapter_group, verse_group)
-- **Aggregated Level**: Items combined across intermediate collections
-
-#### Spatial Terms
-- **nzone**: Spatial zone allocated to specific component (Focus Ring nzone, Pyramid nzone)
-- **Arc**: Curved path of positioned items
-- **Center Angle**: Dynamic angle where magnifier appears
-- **Visible Range**: Portion of arc within viewport
-- **Nuc**: The nucleus - SVG origin (0, 0) at center of viewport
-
----
-
-## 3. COORDINATE SYSTEMS
-
-### 3.1 Constitutional Definition of Hub and Nuc
+### 2.1 Constitutional Definition of Hub and Nuc
 
 The **Hub** is the calculated rotational center of the Focus Ring, positioned off-screen outside the visible viewport. The **Nuc** (nucleus) is the rendering center of the viewport at SVG origin (0, 0).
 
@@ -318,7 +154,7 @@ const angle = Math.atan2(-hubY, -hubX);                 // Angle from Hub to Nuc
 - **Focus Ring radius**: Always equals LSd (ensuring proper geometry)
 - **Reference direction**: 0° = East = Right = 3 o'clock (both systems)
 
-### 3.2 Nuc-Based SVG Coordinate System (Primary)
+### 2.2 Nuc-Based SVG Coordinate System (Primary)
 
 #### Origin and Axes
 ```
@@ -367,7 +203,7 @@ const y = hubY + radius * Math.sin(angleRadians);  // 0° = East = Right = 3 o'c
 
 ---
 
-### 3.3 Hub-Based Polar Coordinate System (Secondary)
+### 2.3 Hub-Based Polar Coordinate System (Secondary)
 
 #### Definition
 ```
@@ -427,7 +263,7 @@ const angle_270 = Math.PI * 1.5; // 270° = 12 o'clock
 
 ---
 
-### 3.4 System Interactions (Hybrid Usage)
+### 2.4 System Interactions (Hybrid Usage)
 
 #### Focus Ring Positioning Flow
 1. **mobile-viewport.js** (Hub-based Polar)
@@ -458,9 +294,9 @@ const angle_270 = Math.PI * 1.5; // 270° = 12 o'clock
 
 ---
 
-## 4. VISUAL POSITIONING RULES
+### 3. VISUAL POSITIONING RULES
 
-### 4.1 Focus Ring Coordinate System - COUNTERINTUITIVE ANGLES
+### 3.1 Focus Ring Coordinate System - COUNTERINTUITIVE ANGLES
 
 #### Critical Understanding: Focus Ring "Top" vs "Bottom"
 
@@ -508,7 +344,7 @@ Deuteronomy (sort_number: 5) ← 166° (SMALLER angle = "bottom")
 
 ---
 
-### 4.2 Child Pyramid Item Distribution
+### 3.2 Child Pyramid Item Distribution
 
 #### Geometric Challenge: Right Triangle with Arc Hypotenuse
 
@@ -542,7 +378,7 @@ The Child Pyramid represents the most complex spatial zone in the Wheel navigati
 
 ---
 
-### 4.3 Magnifier Dynamic Positioning
+### 3.3 Magnifier Dynamic Positioning
 
 The magnifier position is **NOT FIXED** - it adjusts based on aspect ratio:
 
@@ -562,7 +398,7 @@ const centerAngle = Math.atan2(vectorY, vectorX);  // 0° = East = Right = 3 o'c
 
 **Critical**: All rotational positioning uses this dynamic angle, not hardcoded 225°
 
-### 4.4 Detail Sector Metadata Layout
+### 3.4 Detail Sector Metadata Layout
 
 The detail sector now renders entirely from catalog metadata, replacing former hardcoded content. Layout decisions remain anchored to the Hub/Nuc spatial model while templates drive text and media.
 
@@ -592,9 +428,9 @@ The detail sector now renders entirely from catalog metadata, replacing former h
 
 ---
 
-## 5. COMMON POSITIONING ERRORS
+### 4. COMMON POSITIONING ERRORS
 
-### 5.1 Off-Screen Placement
+### 4.1 Off-Screen Placement
 **Symptom**: Elements invisible, appear "missing"
 
 **Causes:**
@@ -606,7 +442,7 @@ The detail sector now renders entirely from catalog metadata, replacing former h
 
 ---
 
-### 5.2 Angle System Confusion
+### 4.2 Angle System Confusion
 **Symptom**: Elements rotated 90° from expected position
 
 **Causes:**
@@ -618,7 +454,7 @@ The detail sector now renders entirely from catalog metadata, replacing former h
 
 ---
 
-### 5.3 Coordinate System Mixing
+### 4.3 Coordinate System Mixing
 **Symptom**: Elements positioned incorrectly by sqrt(2) or similar factor
 
 **Causes:**
@@ -630,9 +466,9 @@ The detail sector now renders entirely from catalog metadata, replacing former h
 
 ---
 
-## 6. DEVELOPMENT GUIDELINES
+### 5. DEVELOPMENT GUIDELINES
 
-### 6.1 New Feature Checklist
+### 5.1 New Feature Checklist
 
 Before implementing new visual features:
 
@@ -644,7 +480,7 @@ Before implementing new visual features:
 - [ ] Test on device with different aspect ratio
 - [ ] Confirm detail sector view definitions exist for target hierarchy level or volume fallback
 
-### 6.2 Debugging Positioning Issues
+### 5.2 Debugging Positioning Issues
 
 ```javascript
 // Add these logs to troubleshoot positioning
@@ -655,7 +491,7 @@ Logger.debug(`Viewport aspect: ${viewportWidth}×${viewportHeight} = ${viewportW
 Logger.debug('📋 DetailSector: resolved config', { itemId, viewIds });
 ```
 
-### 6.3 Code Review Questions
+### 5.3 Code Review Questions
 
 When reviewing positioning code:
 
@@ -668,9 +504,9 @@ When reviewing positioning code:
 
 ---
 
-## 7. REFERENCE TABLES
+### 6. REFERENCE TABLES
 
-### 7.1 Angle Reference Chart (From Hub Perspective)
+### 6.1 Angle Reference Chart (From Hub Perspective)
 
 | Clock | Hub Angle | Radians | Screen Position | Visibility | Zone |
 |-------|-----------|---------|-----------------|------------|------|
@@ -685,7 +521,7 @@ When reviewing positioning code:
 
 **KEY RULE**: Visible range varies by aspect ratio, always ending at 180° (9 o'clock)
 
-### 7.2 Component Position Summary (From Hub Perspective)
+### 6.2 Component Position Summary (From Hub Perspective)
 
 | Component | Clock Range | Hub Angle Range | Visibility | Coordinate System |
 |-----------|-------------|-----------------|------------|-------------------|
@@ -699,16 +535,308 @@ When reviewing positioning code:
 
 ---
 
-## 8. PSEUDO PARENT LEVEL SYSTEM
+### 7. TERMINOLOGY STANDARDS
 
-### 8.1 Universal Pseudo Parent Architecture
+#### CORRECT: Radial Directional Terms
+- **OUT**: Movement from Focus Ring toward Parent Button (hierarchy ascending)
+- **IN**: Movement from Child Pyramid toward Focus Ring (hierarchy descending)
+- **CW** (Clockwise): Rotation increasing angle (6→9→12→3→6)
+- **CCW** (Counter-Clockwise): Rotation decreasing angle (6→3→12→9→6)
+
+#### INCORRECT: Avoid These Terms
+- ❌ **UP** - Ambiguous (screen up ≠ hierarchy up)
+- ❌ **DOWN** - Ambiguous (screen down ≠ hierarchy down)
+- ❌ **TOP** - Use specific clock position (e.g., "12 o'clock" or "9 o'clock")
+- ❌ **BOTTOM** - Use "6 o'clock" instead
+- ❌ **LEFT/RIGHT** - Use "9 o'clock" / "3 o'clock" instead
+
+#### Examples of Correct Usage
+```javascript
+// ✅ CORRECT
+migrateNodeOUT();  // Navigate to parent
+migrateNodeIN();   // Navigate to child
+rotateCW();        // Rotate clockwise
+positionAt270();   // Position at 9 o'clock
+
+// ❌ INCORRECT  
+moveUp();          // Ambiguous
+navigateDown();    // Ambiguous
+positionAtTop();   // Which top?
+```
+
+#### Navigation Components
+- **Focus Ring**: The arc-based sprocket gear for rotational traversal. The only nzone that responds to swipes by scrolling.
+- **Child Pyramid**: Three-arc concentric display field of nodes for IN migration. ONly responds to clicks.
+- **Parent Button**: Single button for OUT migration. Only responds to clicks.
+- **Detail Sector**: Expanded circle for leaf item display. May or may not contain links. Only responds to clicks.
+- **Magnifier**: Visual indicator at dynamic center angle of Focus Ring
+
+#### Hierarchy Terms
+- **Level**: A configured depth in the hierarchy (testament, book, chapter, verse)
+- **Item**: A data node at any level
+- **Leaf**: Terminal item with no children (displays in Detail Sector)
+- **Virtual Level**: Computed grouping level (e.g., chapter_group, verse_group)
+- **Aggregated Level**: Items combined across intermediate collections
+
+#### Spatial Terms
+- **nzone**: Spatial zone allocated to specific component (Focus Ring nzone, Pyramid nzone)
+- **Arc**: Curved path of positioned items
+- **Center Angle**: Dynamic angle where magnifier appears
+- **Visible Range**: Portion of arc within viewport
+- **Nuc**: The nucleus - SVG origin (0, 0) at center of viewport
+
+---
+
+### 8. IMPLEMENTATION PRIORITIES
+
+### 8.1 Immediate: Pseudo Parent System Implementation
+**Problem**: Domain-specific code in mobile-renderer.js prevents universal deployment
+
+**Solution Required**:
+1. Implement `rpp_` prefix detection in mobile-data.js
+2. Add pseudo parent configuration support
+3. Update navigation flow in mobile-renderer.js
+4. Remove hardcoded 'model', 'family' references
+5. Test with marine, Bible, and music catalogs
+
+### 8.2 Critical: Automatic Volume Discovery
+**Problem**: Volume list hardcoded in mobile-data.js line 128-131 prevents automatic catalog detection
+
+**Current Implementation**: 
+```javascript
+const candidateFiles = [
+    'mmdm_catalog.json',
+    'gutenberg.json',
+    'hg_mx.json'  // Must be manually added for each new volume
+];
+```
+
+**Required Solution**: Automatic detection of Wheel-compatible JSON files
+- Server endpoint that lists available `.json` files in catalog directory
+- Client-side validation of `wheel_volume_version` property in JSON
+- Dynamic volume discovery without code changes
+- Enables true plug-and-play catalog deployment
+
+**Impact**: Currently every new catalog requires editing mobile-data.js source code, violating universal architecture principle
+
+### 8.3 Documentation Maintenance
+- Update this DESIGNSPEC when adding new components
+- Document any new coordinate system interactions  
+- Add positioning rules for new navigation zones
+- Maintain angle reference table accuracy
+
+---
+
+## Part II: JSON Configuration
+
+### 1.1 Visual Space Definition
+
+The Wheel interface operates within a **portrait-oriented mobile viewport** divided into distinct spatial zones:
+
+#### Clock Position Reference System
+- **12 o'clock**: Top of viewport (270°)
+- **3 o'clock**: Right edge (0°) 
+- **6 o'clock**: Bottom of viewport (90°)
+- **9 o'clock**: Left edge (180°)
+- **Rotation**: Clockwise (CW) moves from 12→3→6→9→12
+
+#### Visible Navigation Zones
+
+#### Off-Screen Zones (NEVER VISIBLE)
+**As measured from Hub (0° = horizontal right):**
+- **180° - 270° - 0°**: Area above the screen = NEVER VISIBLE
+- **0° - 90°**: Area to the right of screen = NEVER VISIBLE
+
+#### On-Screen Zone (VISIBLE) - Aspect Ratio Dependent
+**Theoretical Maximum: 90° - 180° (6 o'clock → 9 o'clock)**
+- **Square Device (1:1)**: Full 90° - 180° range visible
+- **Portrait Devices**: Partial range visible, typically from 110° - 180° to 130° - 180°
+- **Tall Portrait**: Even narrower range (e.g., 140° - 180° on very tall devices)
+- Focus Ring arc exists within the visible portion of this range
+- All interactive elements MUST be positioned within the visible range
+- **CRITICAL RULE**: Visible range shrinks as aspect ratio becomes more portrait
+
+---
+
+### 1.2 Navigation Zone Allocations
+
+#### Focus Ring Arc
+**Hub-Based Zone: Variable range ending at 180° (→ 9 o'clock)**
+- **Square Device (1:1)**: Full 90° - 180° range visible (90° arc)
+- **Typical Portrait (2.2:1)**: ~120° - 180° range visible (~60° arc)
+- **Tall Portrait (2.5:1)**: ~135° - 180° range visible (~45° arc)
+- **Ultra-Tall (10:1)**: ~160° - 180° range visible (~20° arc)
+- **Purpose**: Rotational traversal of items at current hierarchy level
+- **Magnifier Position**: Dynamic center angle calculated by viewport
+- **Visual Metaphor**: Sprocket gear with chain extending beyond visible arc
+- **Arc Always Ends**: At 180° (9 o'clock), regardless of where it starts
+
+#### Child Pyramid Zone  
+**Hub-Based Zone: Positioned radially inward from Focus Ring**
+- **Arc Range**: Three concentric arcs at smaller radius than Focus Ring
+- **Angular Positions**: Share same angular range as visible Focus Ring
+- **Aspect Ratio Impact**: Child Pyramid visibility follows Focus Ring visibility
+- **Purpose**: Radial IN migration for child nodes
+- **Capacity**: 19 total nodes (8 + 7 + 4)
+- **Spacing**: 8° between nodes
+- **Note**: Not positioned at different angles, but at different radii
+
+#### Parent Button Zone
+**Nuc-Based Position: Lower-left corner of viewport**
+- **Coordinate System**: Fixed Cartesian position relative to Nuc
+- **Purpose**: Radial OUT migration to parent level
+- **Visual**: Single circular button
+- **State**: Hidden or visible based on JSON data (depth-dependent)
+
+#### Detail Sector Zone
+**Expands to fill**: Centered on Hub position, replaces Child Pyramid Zone
+- **Radius**: 95% of focus ring radius when expanded
+- **Purpose**: Display leaf item details (text, images, data)
+- **Animation**: Smooth expansion from Focus Ring magnifier position
+- **Content**: Positioned using Hub as center origin
+
+---
+
+### 1.3 Aspect Ratio Impact
+
+#### Square Viewport (1:1 - Theoretical)
+- Focus Ring: Full 90° arc visible (90° → 180°)
+- All navigation zones fit within visible space
+- Used for calculations and as reference model
+
+#### Portrait Viewport (Typical Mobile)
+**Examples:**
+- **Z Fold 5** (~2.4:1): Focus Ring ~60° visible (~120° → 180°)
+- **iPhone** (~2.2:1): Focus Ring ~65° visible (~115° → 180°)
+- **Tall Android** (~2.5:1): Focus Ring ~55° visible (~125° → 180°)
+
+**Effect**: Narrower aspect ratios compress visible Focus Ring arc, but arc ALWAYS ends at 9 o'clock (180°)
+
+#### Landscape Viewport (Future Implementation)
+- Not currently implemented for navigation
+- Will use different visual model (layer traversal)
+- Will reuse underlying data navigation system
+
+---
+
+## Part II: JSON Configuration
+
+### 1. DETAIL SECTOR CONTENT RENDERING
+
+**Coordinate System**: Detail Sector content uses Hub-based Cartesian coordinates
+- **contentGroup Transform**: `translate(hubX, hubY)` positions group at Hub center
+- **Child Element Coordinates**: All positioned relative to Hub (0, 0)
+- **Vertical Flow**: Content positioned vertically using `currentY` accumulator
+- **Horizontal Centering**: x=0 represents center of Detail Sector circle
+
+#### Content Types and Positioning
+
+##### Text Elements (Info Views)
+- **Position**: x=0 (centered), y=currentY
+- **Alignment**: text-anchor="middle" for horizontal centering
+- **Vertical Spacing**: Each element increments currentY by height + margin
+- **Font Sizes**: Configurable via view templates (typically 12-22px)
+
+##### Audio Player (HTML5 in foreignObject)
+- **Element Type**: foreignObject wrapping HTML5 audio element
+- **Width**: 280px (playerWidth constant)
+- **Height**: 40px (playerHeight constant)
+- **X Position**: -playerWidth / 2 (centers player at x=0)
+- **Y Position**: currentY (vertical flow position)
+- **Spacing**: Returns currentY + playerHeight + 12 (adds bottom margin)
+
+**Audio Player Implementation Details:**
+- **Technology**: SVG foreignObject embedding HTML5 `<audio controls>` element when the browser supports it
+- **Styling**: Semi-transparent background (rgba(255,255,255,0.1)), 4px border-radius
+- **Audio Source**: Configurable base_path + audio_file property from item data
+- **Data Pipeline**: audio_file property flattened from item.data into detail context
+- **Browser Support**: iOS Safari/DuckDuckGo do not fully support interactive controls inside SVG foreignObject. The system auto-detects this case and renders a tappable "Play Audio Sample" link that opens a native HTML overlay sheet with the audio element, metadata, and close control. The overlay uses standard DOM outside the SVG to guarantee playback on iPhone/iPad.
+
+##### List Views
+- **Title**: x=0, y=currentY, bold 16px
+- **Items**: x=0, sequential y positions with 16px spacing
+- **Empty State**: Centered message when no items available
+
+#### View Configuration Architecture
+
+**Views Array Structure**: Detail sector views defined as array in catalog JSON
+```json
+"views": [
+    {
+        "id": "audio_player",
+        "type": "audio",
+        "audio_file_property": "audio_file",
+        "audio_base_path": "assets/mx/"
+    },
+    {
+        "id": "info",
+        "type": "info",
+        "fields": [...]
+    }
+]
+```
+
+**Critical Implementation Details:**
+- Views MUST be array with id properties (not object with keys)
+- Array iteration required for proper rendering order
+- View types: "audio", "info", "list", "gallery", "links"
+- Each view type has specific rendering method in mobile-detailsector.js
+
+#### Content Flow Control
+
+**Vertical Flow Algorithm:**
+1. Start at currentY = 100 (below Hub center, in visible area)
+2. Render header (if configured)
+3. Iterate through views array sequentially
+4. Each renderView() returns updated currentY position
+5. Next view starts at returned currentY value
+
+**Position Calculation Example (Audio Player):**
+- contentGroup translated to (hubX, hubY) = (479.5, -333.5)
+- Audio player at x=-140, y=100 (relative to Hub)
+- Absolute screen position: x = 479.5 + (-140) = 339.5
+- For 375px wide screen, center = 187.5, so player offset from center ≠ 0
+- **Note**: x=0 is Hub center, NOT screen center - different coordinate systems
+
+**Why Simple Centering Works:**
+- contentGroup transform positions coordinate origin at Hub
+- All text uses text-anchor="middle" at x=0
+- foreignObject at x = -playerWidth/2 aligns with text centering
+- Consistent visual alignment across all content types
+
+#### Data Context for Content Rendering
+
+**Context Object Structure**: Flattened combination of item properties and item.data properties
+```javascript
+// Created in mobile-data.js getDetailSectorContext()
+context = {
+    name: item.name,
+    key: item.key,
+    color: item.color,
+    // ... all item properties
+    audio_file: item.data.audio_file,  // Flattened from item.data
+    year: item.data.year,               // Flattened from item.data
+    // ... all item.data properties
+}
+```
+
+**Template Resolution**: mobile-data.js resolveDetailTemplate() replaces {property} placeholders
+- Example: "{name} ({year})" → "Far Away Eyes (1978)"
+- Works with any property in flattened context
+- Supports nested access for complex data structures
+
+---
+
+### 2. PSEUDO PARENT LEVEL SYSTEM
+
+#### Universal Pseudo Parent Architecture
 
 The Wheel system implements a revolutionary **pseudo parent level system** using curatorial prefix triggers that enable universal, domain-agnostic dynamic hierarchy creation.
 
-#### Core Concept
+##### Core Concept
 **Pseudo parents are dynamically created levels that sit "above" (OUT from Hub) the data level containing the trigger.** They provide organizational structure without requiring pre-defined JSON hierarchy changes.
 
-#### Universal Trigger Pattern: `rpp_` Prefix
+##### Universal Trigger Pattern: `rpp_` Prefix
 ```json
 {
   "model": "LADA_Niva_4x4_1977",
@@ -719,13 +847,13 @@ The Wheel system implements a revolutionary **pseudo parent level system** using
 }
 ```
 
-#### Navigation Flow Creation
+##### Navigation Flow Creation
 **Before Trigger:** `Manufacturer → Engine → Model`  
 **After Trigger:** `Manufacturer → Engine → [political_era] → [fuel_type] → Model`
 
-### 8.2 Universal Algorithm (Domain-Agnostic)
+#### Universal Algorithm (Domain-Agnostic)
 
-#### Pseudo Parent Detection
+##### Pseudo Parent Detection
 ```javascript
 getParentHierarchyLevel(currentLevel, childItem) {
   const currentLevelConfig = this.getHierarchyLevelConfig(currentLevel);
@@ -747,9 +875,9 @@ getParentHierarchyLevel(currentLevel, childItem) {
 }
 ```
 
-### 8.3 Configuration Architecture
+#### Configuration Architecture
 
-#### Hierarchy Level Configuration
+##### Hierarchy Level Configuration
 ```json
 "hierarchy_levels": {
   "cylinder": {
@@ -770,9 +898,9 @@ getParentHierarchyLevel(currentLevel, childItem) {
 }
 ```
 
-### 8.4 Cross-Domain Examples
+#### Cross-Domain Examples
 
-#### Marine Engines
+##### Marine Engines
 ```json
 "8": [
   {
@@ -785,7 +913,7 @@ getParentHierarchyLevel(currentLevel, childItem) {
 ]
 ```
 
-#### Music Catalog
+##### Music Catalog
 ```json
 "1960s": [
   {
@@ -798,7 +926,7 @@ getParentHierarchyLevel(currentLevel, childItem) {
 ]
 ```
 
-#### Medical Equipment
+##### Medical Equipment
 ```json
 "Cardiac": [
   {
@@ -811,9 +939,9 @@ getParentHierarchyLevel(currentLevel, childItem) {
 ]
 ```
 
-### 8.5 Orphan Adoption System
+#### Orphan Adoption System
 
-#### Orphan Classification
+##### Orphan Classification
 Items without `rpp_trigger: true` are considered orphans and adopted into configurable groups:
 
 **Examples:**
@@ -822,60 +950,22 @@ Items without `rpp_trigger: true` are considered orphans and adopted into config
 - **"Studio Only"**: Domain-specific orphan group (music)
 - **"Legacy Models"**: Historical items without modern classification
 
-#### Benefits
+##### Benefits
 1. **Universal Pattern**: Works across any data domain
 2. **Curatorial Workflow**: Supports content management processes  
 3. **Data Consistency**: Maintains navigation structure regardless of data completeness
 4. **Non-Dickensian**: Positive naming avoids stigmatizing uncategorized items
 
-### 8.6 Implementation Status
+#### Implementation Status
 
 **Current State:** Architecture defined, implementation pending  
 **Priority:** Critical for eliminating domain-specific code in mobile-renderer.js  
 **Complexity:** Medium - requires navigation flow refactoring  
 **Impact:** Enables true universal data domain support
 
-## 9. IMPLEMENTATION PRIORITIES
-
-### 9.1 Immediate: Pseudo Parent System Implementation
-**Problem**: Domain-specific code in mobile-renderer.js prevents universal deployment
-
-**Solution Required**:
-1. Implement `rpp_` prefix detection in mobile-data.js
-2. Add pseudo parent configuration support
-3. Update navigation flow in mobile-renderer.js
-4. Remove hardcoded 'model', 'family' references
-5. Test with marine, Bible, and music catalogs
-
-### 9.2 Critical: Automatic Volume Discovery
-**Problem**: Volume list hardcoded in mobile-data.js line 128-131 prevents automatic catalog detection
-
-**Current Implementation**: 
-```javascript
-const candidateFiles = [
-    'mmdm_catalog.json',
-    'gutenberg.json',
-    'hg_mx.json'  // Must be manually added for each new volume
-];
-```
-
-**Required Solution**: Automatic detection of Wheel-compatible JSON files
-- Server endpoint that lists available `.json` files in catalog directory
-- Client-side validation of `wheel_volume_version` property in JSON
-- Dynamic volume discovery without code changes
-- Enables true plug-and-play catalog deployment
-
-**Impact**: Currently every new catalog requires editing mobile-data.js source code, violating universal architecture principle
-
-### 9.3 Documentation Maintenance
-- Update this DESIGNSPEC when adding new components
-- Document any new coordinate system interactions  
-- Add positioning rules for new navigation zones
-- Maintain angle reference table accuracy
-
 ---
 
-## GLOSSARY
+### GLOSSARY
 
 **Arc Parameters Object**: Data structure from viewport containing Hub coordinates (hubX, hubY), radius, startAngle, endAngle, centerAngle
 
@@ -889,7 +979,7 @@ const candidateFiles = [
 
 **Nuc**: The nucleus - the rendering center at SVG origin (0, 0) in the viewport. Uses Cartesian perspective.
 
-**nzone**: Spatial zone allocated to a navigation component (Focus Ring nzone, Pyramid nzone, etc.)
+**nzone**: Spatial zone allocated to a specific navigation component (Focus Ring nzone, Pyramid nzone)
 
 **Off-Screen Zone**: The 0° - 90° quadrant (12:00 → 3:00) that is invisible on mobile devices
 
@@ -901,9 +991,7 @@ const candidateFiles = [
 
 **Visible Range**: The portion of the Focus Ring arc actually displayed in viewport (aspect-ratio dependent)
 
----
-
-**Document Version**: 1.1  
-**Last Updated**: November 12, 2025 - Added Section 8: Detail Sector Content Rendering (Audio Player Implementation)  
+**Document Version**: 1.2  
+**Last Updated**: November 15, 2025 - Split into Part I (Code Implementation) and Part II (JSON Configuration)  
 **Related**: STATUS, README.md, mobile-viewport.js, mobile-renderer.js, mobile-detailsector.js
 

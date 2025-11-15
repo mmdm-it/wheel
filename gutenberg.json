@@ -10,7 +10,9 @@
                 "parent_button_min_depth": 1
             },
             "detail_sector": {
-                "mode": "product_browser"
+                "mode": "product_browser",
+                "logo_base_path": "assets/",
+                "default_image": "gutenberg_logo"
             },
             "hierarchy_levels": {
                 "testament": {

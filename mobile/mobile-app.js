@@ -96,8 +96,13 @@ class MobileCatalogApp {
             // Exit volume selector mode
             this.volumeSelectorMode = false;
             
-            // Transition from volume selector to normal navigation
-            await this.renderer.transitionFromVolumeSelector();
+            // Update logo to show catalog logo (works for both single volume and volume selector cases)
+            this.renderer.updateDetailSectorLogo();
+            
+            // Transition from volume selector to normal navigation (if coming from volume selector)
+            if (this.renderer.volumeSelectionCallback) {
+                await this.renderer.transitionFromVolumeSelector();
+            }
             
             // Show all focus items for the loaded volume
             this.showAllFocusItems();
@@ -280,12 +285,19 @@ class MobileCatalogApp {
         }
 
         // Get all focus items from the third hierarchy level
-        const allFocusItems = this.dataManager.getAllInitialFocusItems();
+        let allFocusItems = this.dataManager.getAllInitialFocusItems();
         Logger.debug(`Loaded ${allFocusItems.length} focus items from all top-level groups`);
 
         if (allFocusItems.length === 0) {
             Logger.warn('No focus items found in any top-level group');
             return;
+        }
+
+        // On mobile devices, limit large datasets to prevent performance issues
+        const isMobile = window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile && allFocusItems.length > 100) {
+            allFocusItems = allFocusItems.slice(0, 100);
+            Logger.debug(`Limited focus items to 100 for mobile performance (was ${allFocusItems.length})`);
         }
 
         // Set current focus items and show them

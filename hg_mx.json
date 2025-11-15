@@ -5,9 +5,10 @@
             "volume_type": "wheel_hierarchical",
             "volume_name": "HG Music Library",
             "volume_description": "Test music catalog for universal architecture validation",
-            "ui_limits": {
-                "focus_ring_max_depth": 3,
-                "parent_button_min_depth": 1
+            "detail_sector": {
+                "mode": "product_browser",
+                "logo_base_path": "assets/",
+                "default_image": "hg_logo"
             },
             "hierarchy_levels": {
                 "artist": {

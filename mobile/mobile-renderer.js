@@ -56,6 +56,7 @@ class MobileRenderer {
         this.viewport.adjustSVGForMobile(this.elements.svg, this.elements.mainGroup);
         
         // Create blue circle at upper right corner for Detail Sector animation
+        // Always create for volume selector, restrict visibility for non-MMDM volumes
         this.createDetailSectorCircle();
         
         return true;
@@ -392,10 +393,19 @@ class MobileRenderer {
             return;
         }
 
-        if (this.detailSector.isVisible) {
+        // Check if Detail Sector expansion is allowed for this volume
+        const displayConfig = this.dataManager.getDisplayConfig();
+        const isMMDM = displayConfig && displayConfig.volume_name === 'Marine Diesel Manifold Volume';
+        
+        if (isMMDM) {
+            if (this.detailSector.isVisible) {
+                this.detailSector.showDetailContent(focusItem);
+            } else if (!this.detailSectorAnimating) {
+                this.expandDetailSector();
+            }
+        } else {
+            // For non-MMDM volumes, show detail content directly without expanding the circle
             this.detailSector.showDetailContent(focusItem);
-        } else if (!this.detailSectorAnimating) {
-            this.expandDetailSector();
         }
     }
     
@@ -1939,10 +1949,48 @@ class MobileRenderer {
         // 5. Clear fan lines (will be drawn by normal navigation)
         this.clearFanLines();
         
+        // 6. Update logo to show catalog logo instead of "Choose an Image"
+        this.updateDetailSectorLogo();
+        
+        // 7. Remove Detail Sector elements for non-MMDM volumes
+        const displayConfig = this.dataManager.getDisplayConfig();
+        if (!displayConfig || displayConfig.volume_name !== 'Marine Diesel Manifold Volume') {
+            const detailCircle = document.getElementById('detailSectorCircle');
+            const detailLogo = document.getElementById('detailSectorLogo');
+            if (detailCircle) {
+                detailCircle.remove();
+                Logger.debug('🔵 Detail Sector circle removed for non-MMDM volume');
+            }
+            if (detailLogo) {
+                detailLogo.remove();
+                Logger.debug('🔵 Detail Sector logo removed for non-MMDM volume');
+            }
+        }
+        
         Logger.debug('📖 Transition complete - ready for normal navigation');
     }
 
     
+    /**
+     * Update the Detail Sector logo after volume loading
+     * Replaces the "Choose an Image" text with the actual catalog logo
+     */
+    updateDetailSectorLogo() {
+        const existingLogo = document.getElementById('detailSectorLogo');
+        if (!existingLogo) {
+            Logger.warn('updateDetailSectorLogo: No existing logo element found');
+            return;
+        }
+        
+        // Remove existing logo
+        existingLogo.remove();
+        
+        // Create new logo based on current volume configuration
+        this.createDetailSectorLogo();
+        
+        Logger.debug('🔵 Detail Sector logo updated for loaded volume');
+    }
+
     /**
      * Calculate END state position and size for Detail Sector logo
      * Returns logo dimensions and position for expanded state
