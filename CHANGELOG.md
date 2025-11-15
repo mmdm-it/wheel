@@ -20,7 +20,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Parent button navigation now correctly returns to top level
 - Improved touch interaction responsiveness
 
-## [1.0.0] - 2025-11-15
+## [0.5.20] - 2025-11-15
+
+### Fixed
+- Focus ring hub-angle math now assigns higher angles to earlier sort_number entries while keeping the magnifier anchored
+- Touch snapping, rotation offsets, and volume selector alignment updated to reflect the corrected angle orientation
+
+### Documentation
+- STATUS and README now reference v0.5.20 with notes on the magnifier fix
+
+## [0.5.19] - 2025-11-15
+
+### Added
+- **Critical Architecture Gap Identified**: Nested pseudo parent system required for marine catalog Family → Sub-Family hierarchies
+- **Real-World Requirements Documented**: Ford Modular→Triton/Coyote, MerCruiser Small Block→Gen IV, Detroit Diesel Series 71 examples
+- **Implementation Priority Elevated**: Pseudo parent system moved to Priority 2 (was lower priority)
+
+### Changed
+- Updated STATUS.md with marine catalog pseudo parent requirements
+- Added nested pseudo parent examples and real-world data structures
+
+### Removed
+- **1.0.0 release entry** - Degraded due to critical pseudo parent system gap preventing true universal architecture
 
 ### Added
 - **Universal hierarchical data navigation system**

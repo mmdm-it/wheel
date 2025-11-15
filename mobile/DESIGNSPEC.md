@@ -577,6 +577,22 @@ positionAtTop();   // Which top?
 - **Leaf**: Terminal item with no children (displays in Detail Sector)
 - **Virtual Level**: Computed grouping level (e.g., chapter_group, verse_group)
 - **Aggregated Level**: Items combined across intermediate collections
+- **Pseudo Parent Level**: Dynamically created hierarchy level triggered by `rpp_` prefix
+- **rpp_ Prefix**: Universal trigger for pseudo parent creation (e.g., `rpp_family: true`)
+- **rpgp_ Prefix**: Pseudo grandparent trigger (2nd degree above triggering item)
+- **rpggp_ Prefix**: Pseudo great-grandparent trigger (3rd degree above triggering item)
+- **Orphan Adoption**: System that groups items without pseudo parent triggers into configurable categories
+- **Pseudo Orphan Group**: Configurable group name for uncategorized items (e.g., "Pending Approval", "Uncategorized")
+
+#### Pseudo Parent System Terms
+- **Pseudo Parent Architecture**: Revolutionary system for dynamic hierarchy creation using curatorial prefix triggers
+- **Universal Trigger Pattern**: `rpp_propertyname: true` creates pseudo parent levels dynamically for any data domain
+- **Domain Agnostic**: Works for marine engines (family), music (venue_type), medical equipment (certification), etc.
+- **Nested Pseudo Parents**: Pseudo parents can trigger their own pseudo parents for unlimited depth (rpp_ → rpgp_ → rpggp_)
+- **Navigation Direction**: Pseudo parents positioned OUT (above) the triggering data level in hierarchy
+- **Real vs Pseudo Levels**: Real levels exist in JSON structure; pseudo levels created dynamically by triggers
+- **Orphan Items**: Data items without `rpp_` trigger properties that require adoption into groups
+- **Curatorial Workflow**: Content management process using pseudo parents for organization without JSON changes
 
 #### Spatial Terms
 - **nzone**: Spatial zone allocated to specific component (Focus Ring nzone, Pyramid nzone)

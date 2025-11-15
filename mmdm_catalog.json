@@ -116,6 +116,21 @@
                     "virtual_membership_property": "in_a_family",
                     "virtual_orphan_group_name": "Other"
                 },
+                "subfamily": {
+                    "text_format": "title_case",
+                    "color": "#f1b800",
+                    "positioning": "arc",
+                    "display_name": "Sub-Family",
+                    "sort_type": "alphabetical",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none",
+                    "is_numeric": false,
+                    "use_code_property": true,
+                    "is_virtual": true,
+                    "virtual_grouping_property": "subfamily",
+                    "virtual_membership_property": "rpp_subfamily",
+                    "virtual_orphan_group_name": "No Sub-Family"
+                },
                 "model": {
                     "text_format": "title_case",
                     "color": "#f1b800",
@@ -1558,14 +1573,38 @@
                                             "year_introduced": 2011,
                                             "year_discontinued": null,
                                             "family": "Modular",
-                                            "in_a_family": true
+                                            "subfamily": "Coyote",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "rpp_subfamily": true,
+                                            "data": {
+                                                "key_notes": "DOHC evolution of the Modular architecture (introduced 2011); high-revving design for Mustangs/F-150s; variants include Gen 1–4 with direct injection."
+                                            }
                                         },
                                         {
                                             "engine_model": "5.4L Triton",
                                             "year_introduced": 1997,
                                             "year_discontinued": 2010,
                                             "family": "Modular",
-                                            "in_a_family": true
+                                            "subfamily": "Triton",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "rpp_subfamily": true,
+                                            "data": {
+                                                "key_notes": "SOHC V8 from the Modular family; truck-oriented with 3-valve heads and variable cam timing; used in F-Series and Expedition."
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "7.3L Godzilla",
+                                            "year_introduced": 2020,
+                                            "year_discontinued": null,
+                                            "family": "Godzilla",
+                                            "subfamily": null,
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "data": {
+                                                "key_notes": "Standalone pushrod (cam-in-block) family (introduced 2020) for heavy-duty trucks like Super Duty; replaces older V10s; iron block, 430–450 hp stock."
+                                            }
                                         }
                                     ]
                                 }
@@ -1583,9 +1622,41 @@
                                 "year_founded": 1961,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {},
-                                    "2": {},
-                                    "4": {}
+                                    "8": [
+                                        {
+                                            "engine_model": "6.2L",
+                                            "year_introduced": 2014,
+                                            "year_discontinued": null,
+                                            "family": "Small Block",
+                                            "subfamily": "Gen IV",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "rpp_subfamily": true,
+                                            "data": {
+                                                "key_notes": "Marinized version of GM's LS-series V8; purpose-modified for sterndrive and inboard boats; introduced around 2014; 300–430 hp."
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "Detroit Diesel": {
+                                "year_founded": 1938,
+                                "year_dissolved": null,
+                                "cylinders": {
+                                    "6": [
+                                        {
+                                            "engine_model": "6-71",
+                                            "year_introduced": 1940,
+                                            "year_discontinued": null,
+                                            "family": "Series 71",
+                                            "subfamily": null,
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "data": {
+                                                "key_notes": "Two-stroke diesel engine adapted for marine use; widely used in commercial vessels since the 1940s; 165–230 hp in marine configs."
+                                            }
+                                        }
+                                    ]
                                 }
                             },
                             "Palmer Brothers": {
@@ -1624,13 +1695,61 @@
                                     "4": {}
                                 }
                             },
-                            "Detroit Diesel": {
-                                "year_founded": 1938,
+                            "Packard": {
+                                "year_founded": 1899,
+                                "year_dissolved": 1958,
+                                "cylinders": {
+                                    "12": [
+                                        {
+                                            "engine_model": "Liberty 12",
+                                            "year_introduced": 1917,
+                                            "year_discontinued": 1919,
+                                            "family": null,
+                                            "subfamily": null,
+                                            "in_a_family": false,
+                                            "data": {
+                                                "key_notes": "Licensed Rolls-Royce Eagle derivative; water-cooled SOHC V12; primary U.S. producer (~13,000 built); used in WWI aircraft."
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "Hispano-Suiza": {
+                                "year_founded": 1904,
+                                "year_dissolved": 1968,
+                                "cylinders": {
+                                    "8": [
+                                        {
+                                            "engine_model": "8A",
+                                            "year_introduced": 1914,
+                                            "year_discontinued": 1918,
+                                            "family": null,
+                                            "subfamily": null,
+                                            "in_a_family": false,
+                                            "data": {
+                                                "key_notes": "Early 20th-century water-cooled SOHC V8 aircraft engine (introduced 1914); ~150 hp; widely used in WWI fighters like the SPAD S.VII."
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "Allison": {
+                                "year_founded": 1907,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {},
-                                    "2": {},
-                                    "4": {}
+                                    "12": [
+                                        {
+                                            "engine_model": "V-1710",
+                                            "year_introduced": 1937,
+                                            "year_discontinued": 1949,
+                                            "family": null,
+                                            "subfamily": null,
+                                            "in_a_family": false,
+                                            "data": {
+                                                "key_notes": "WWII-era liquid-cooled V12 (introduced 1937); up to 1,475 hp in turbocharged variants; powered U.S. fighters like the P-38 Lightning."
+                                            }
+                                        }
+                                    ]
                                 }
                             },
                             "Kohler": {
@@ -1754,9 +1873,19 @@
                                 "year_founded": 1910,
                                 "year_dissolved": 1974,
                                 "cylinders": {
-                                    "1": {},
-                                    "2": {},
-                                    "4": {}
+                                    "12": [
+                                        {
+                                            "engine_model": "Defender",
+                                            "year_introduced": 1930,
+                                            "year_discontinued": 1940,
+                                            "family": null,
+                                            "subfamily": null,
+                                            "in_a_family": false,
+                                            "data": {
+                                                "key_notes": "Purpose-built V12 gasoline engine (circa 1930s–1940s) for marine use; used in WWII rescue boats and patrol craft; up to 650 hp in supercharged variants."
+                                            }
+                                        }
+                                    ]
                                 }
                             },
                             "Alco": {

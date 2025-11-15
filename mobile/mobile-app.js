@@ -146,10 +146,10 @@ class MobileCatalogApp {
         const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
         const middleIndex = (volumes.length - 1) / 2;
 
-        const targetIndex = Math.round(middleIndex - (offset / angleStep));
+        const targetIndex = Math.round(middleIndex + (offset / angleStep));
         const clampedIndex = Math.max(0, Math.min(volumes.length - 1, targetIndex));
 
-        const targetOffset = -(clampedIndex - middleIndex) * angleStep;
+        const targetOffset = (clampedIndex - middleIndex) * angleStep;
         const limits = this.calculateRotationLimits({ length: volumes.length });
         const finalOffset = Math.max(limits.min, Math.min(limits.max, targetOffset));
 
@@ -352,11 +352,11 @@ class MobileCatalogApp {
         }
 
         // Find the focus item that should be centered with this offset
-        const targetIndex = Math.round(middleIndex - (offset / angleStep));
+        const targetIndex = Math.round(middleIndex + (offset / angleStep));
         const clampedIndex = Math.max(0, Math.min(focusItems.length - 1, targetIndex));
 
         // Calculate the exact offset needed to center this focus item
-        const targetOffset = -(clampedIndex - middleIndex) * angleStep;
+        const targetOffset = (clampedIndex - middleIndex) * angleStep;
 
         // Apply rotation limits (match the limits from calculateRotationLimits)
         const limits = this.calculateRotationLimits(focusItems);
@@ -520,7 +520,7 @@ class MobileCatalogApp {
             const topLevelIndex = this.renderer.findItemIndexInArray(selectedTopLevel, topLevelItems, this.renderer.getHierarchyLevelNames()[0]);
             const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
             const middleIndex = (topLevelItems.length - 1) / 2;
-            const centerOffset = topLevelIndex >= 0 ? -(topLevelIndex - middleIndex) * angleStep : 0;
+            const centerOffset = topLevelIndex >= 0 ? (topLevelIndex - middleIndex) * angleStep : 0;
             
             Logger.debug(`🔼 Top level index: ${topLevelIndex}, centerOffset: ${centerOffset}`);
             
@@ -596,7 +596,7 @@ class MobileCatalogApp {
         }
         const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
         const middleIndex = (parentSiblings.length - 1) / 2;
-        const centerOffset = parentIndex >= 0 ? -(parentIndex - middleIndex) * angleStep : 0;
+        const centerOffset = parentIndex >= 0 ? (parentIndex - middleIndex) * angleStep : 0;
 
         Logger.debug(`🔼 Parent index: ${parentIndex}, centerOffset: ${centerOffset}`);
 
@@ -629,7 +629,7 @@ class MobileCatalogApp {
         const centerAngle = this.renderer.viewport.getCenterAngle();
         const adjustedCenterAngle = centerAngle + centerOffset;
         const selectedAngle = parentIndex >= 0
-            ? adjustedCenterAngle + (parentIndex - middleIndex) * angleStep
+            ? adjustedCenterAngle + (middleIndex - parentIndex) * angleStep
             : adjustedCenterAngle;
 
         this.renderer.showChildContentForFocusItem(selectedParent, selectedAngle);
