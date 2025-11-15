@@ -80,6 +80,7 @@
                     "focus_text_transform": "number_only_or_cil",
                     "is_numeric": true,
                     "use_code_property": false,
+                    "supports_pseudo_parents": ["family"],
                     "detail_sector": {
                         "views": [
                             {
@@ -111,10 +112,11 @@
                     "focus_text_transform": "none",
                     "is_numeric": false,
                     "use_code_property": true,
-                    "is_virtual": true,
-                    "virtual_grouping_property": "family",
-                    "virtual_membership_property": "in_a_family",
-                    "virtual_orphan_group_name": "Other"
+                    "is_pseudo_parent": true,
+                    "pseudo_trigger_prefix": "rpp_",
+                    "pseudo_value_property": "family",
+                    "pseudo_orphan_group": "Other Families",
+                    "supports_pseudo_parents": ["subfamily"]
                 },
                 "subfamily": {
                     "text_format": "title_case",
@@ -126,10 +128,10 @@
                     "focus_text_transform": "none",
                     "is_numeric": false,
                     "use_code_property": true,
-                    "is_virtual": true,
-                    "virtual_grouping_property": "subfamily",
-                    "virtual_membership_property": "rpp_subfamily",
-                    "virtual_orphan_group_name": "No Sub-Family"
+                    "is_pseudo_parent": true,
+                    "pseudo_trigger_prefix": "rpp_",
+                    "pseudo_value_property": "subfamily",
+                    "pseudo_orphan_group": "No Sub-Family"
                 },
                 "model": {
                     "text_format": "title_case",

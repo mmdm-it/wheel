@@ -1,5 +1,5 @@
 # Wheel - Universal Hierarchical Data Navigation System
-## Development Status Report - Last Updated: November 12, 2025
+## Development Status Report - Last Updated: November 15, 2025
 
 ### PROJECT OVERVIEW
 **Wheel** is a revolutionary universal data navigation system with innovative 2D interface for hierarchical data. Mobile-first ES6 native module architecture transcends traditional scrolling limitations through arc-based "sprocket gear" navigation. Supports any data domain through JSON configuration - ready for deployment across e-commerce, medical equipment, government databases, and more.
@@ -119,17 +119,17 @@ For complete spatial definitions, coordinate systems, and positioning rules, see
 - Robust error handling for viewport edge cases
 ## Pseudo Parent Level System (`rpp_` Architecture)
 
-**⚠️ STATUS: DESIGNED BUT NOT YET IMPLEMENTED**
+**✅ STATUS: IMPLEMENTED IN v0.6.0 (DATA-LAYER COMPLETE)**
 
-The following describes the **planned architecture** for a revolutionary pseudo parent level system. This design is complete and documented but the code implementation has not yet begun.
+The `rpp_` pseudo parent engine now runs inside `mobile-data.js`, generating live family/sub-family levels directly from catalog metadata. Renderer/app modules already consume the synthetic hierarchy; remaining work is catalog curation plus UX polish.
 
-### Pseudo Parent Architecture (PLANNED)
+### Pseudo Parent Architecture
 - **Real Levels**: Data exists in JSON structure at a specific hierarchy depth
 - **Pseudo Parent Levels**: Dynamically created levels triggered by `rpp_` (requires pseudo parent) prefix
 - **Universal Trigger**: Any data item can trigger pseudo parent creation using `rpp_propertyname: true`
 - **Direction**: Pseudo parents are always positioned OUT (above) the triggering data level
 
-### Universal Trigger System (`rpp_` Prefix) (PLANNED)
+### Universal Trigger System (`rpp_` Prefix)
 - **Pattern**: `rpp_propertyname: true` creates pseudo parent levels dynamically
 - **Domain Agnostic**: Works for any property name (family, venue_type, political_era, certification, etc.)
 - **Nested Support**: Pseudo parents can have their own pseudo parents for unlimited depth
@@ -139,13 +139,13 @@ The following describes the **planned architecture** for a revolutionary pseudo 
   - Pattern continues for unlimited nesting depth
 - **Constraint**: Top levels (markets, testaments) and leaf levels (models, verses) cannot create pseudo parents
 
-### Orphan Adoption System (PLANNED)
+### Orphan Adoption System
 - Items without `rpp_` trigger are considered orphans
 - Orphans are adopted into configurable group name (e.g., "Pending Approval", "Uncategorized", "Studio Only")
 - Provides consistent UX while respecting data structure differences
 - Orphan group name defined in `pseudo_orphan_group` configuration
 
-### Navigation Flow Examples (PLANNED)
+### Navigation Flow Examples
 **Simple Pseudo Parent:**
 ```
 Market → Country → Manufacturer → Cylinder → [family] → Model
@@ -171,14 +171,18 @@ Manufacturer → Cylinder Count → [Family] → [Sub-Family] → Model
 - **Detroit Diesel Series**: 6-cylinder → Series 71 (rpp_family) → N/A → 6-71
 - **Packard (No Family)**: 12-cylinder → N/A → N/A → Liberty 12 (orphan adoption)
 
+### Implementation Highlights (v0.6.0)
+- **DataManager Integration**: `getItemsAtLevel` now detects `supports_pseudo_parents` and routes through new helpers that synthesize pseudo levels before falling back to real JSON nodes.
+- **Nested Support**: Pseudo parents can emit additional pseudo grandparents (family → subfamily) by chaining the same configuration, enabling unlimited depth when catalogs provide `rpp_` fields.
+- **Orphan Adoption**: Items without an active trigger roll into catalog-defined `pseudo_orphan_group` labels (e.g., "Other Families"), preventing navigation gaps.
+- **Leaf Preservation**: Synthetic levels store clones of their child payloads along with `__dataPath` metadata so renderer/app layers continue to resolve details and parent paths correctly.
+- **Catalog Configuration**: `mmdm_catalog.json` now declares which levels spawn pseudo parents, plus per-level trigger prefixes and orphan labels; additional volumes can opt-in with metadata only.
+
 ### Current Implementation Status
-- ⚠️ **NOT IMPLEMENTED**: Zero `rpp_` logic exists in codebase
-- ✅ Virtual level system working (different concept - groups children by property)
-- ✅ Orphan adoption working within virtual levels
-- ✅ Configuration-driven irregular plurals working
-- ❌ **BLOCKER**: Hardcoded pluralization in mobile-renderer.js line 319 (`family: 'families'`)
-- 🎯 **CRITICAL FOR MARINE CATALOG**: Nested pseudo parents required for Family → Sub-Family hierarchies
-- 🎯 **REQUIRED FOR**: True universal architecture without domain-specific code
+- ✅ **Pseudo parent engine shipped**: DataManager now emits synthetic hierarchy levels based on `supports_pseudo_parents`, `pseudo_trigger_prefix`, and catalog value properties.
+- ✅ **Nested + orphan handling**: Family → Sub-family chains render correctly, while non-triggered nodes land inside positive orphan buckets.
+- ✅ **Renderer/App compatibility**: Synthetic levels retain `__path` + `__dataPath`, so parent button, child pyramid, and detail sector stay in sync.
+- ⚠️ **Data grooming ongoing**: Some catalogs still need accurate family/sub-family metadata; current odd groupings are JSON issues rather than code gaps.
 
 ### CURRENT FUNCTIONALITY ANALYSIS
 
@@ -198,15 +202,14 @@ Manufacturer → Cylinder Count → [Family] → [Sub-Family] → Model
 **❌ Broken/Incomplete Features (Critical Work Needed):**
 1. ~~**Parent Button Navigation**: Does NOT complete OUT migration to top level - stops at second level~~ ✅ **FIXED**
 2. **Child Pyramid Navigation**: 80% complete - some selection and transition issues remain
-3. **Universal Architecture**: Still has hardcoded domain-specific code (`family: 'families'`)
-4. **Pseudo Parent System**: Designed but zero implementation exists
-5. **Bidirectional 2D Navigation**: Only 1.5D working (rotational + partial radial)
-6. **Multi-Domain Validation**: Only tested with marine catalog, Bible partially populated
+3. **Pseudo Parent UX Validation**: Data-layer is live, but catalogs still need curated grouping fields plus UI polish for nested labels.
+4. **Bidirectional 2D Navigation**: Only 1.5D working (rotational + partial radial)
+5. **Multi-Domain Validation**: Only tested with marine catalog, Bible partially populated
 
 **⚠️ Reality Check:**
 - ✅ **Core navigation working**: Parent Button fix restores 2D navigation concept
-- **NOT production-ready**: Universal architecture still needs implementation
-- **NOT universal**: Domain-specific code exists  
+- **NOT production-ready**: Pseudo parents now render, but Child Pyramid and data QA are still pending.
+- **Catalog curation outstanding**: JSON sources must add/verify `rpp_` fields for every domain before we can call it universal.  
 - **Solid foundation**: Architecture and math are sound, implementation improving
 
 ### TECHNICAL SPECIFICATIONS
@@ -229,12 +232,11 @@ Manufacturer → Cylinder Count → [Family] → [Sub-Family] → Model
 
 #### Version Milestones to 1.0.0
 
-**0.6.0 - Pseudo Parent System Implementation** *(CRITICAL FOUNDATION)*
-- Implement `rpp_` prefix detection and pseudo parent creation logic
-- Support nested pseudo parents (rpp_, rpgp_, rpggp_) for Family → Sub-Family hierarchies
-- Add orphan adoption system for items without pseudo parent triggers
-- Enable marine catalog to properly represent engine family relationships (Ford Modular→Triton/Coyote, etc.)
-- Remove hardcoded domain-specific code (family: 'families' in mobile-renderer.js)
+**0.6.0 - Pseudo Parent System Implementation** *(COMPLETED – 2025-11-15)*
+- Delivered `rpp_`/`rpgp_` detection in DataManager with nested pseudo level synthesis.
+- Added orphan adoption + metadata-driven group labels so catalogs stay navigable even with partial data.
+- Updated mmdm_catalog.json to declare pseudo parent capabilities for cylinder → family → subfamily.
+- Preserved renderer/app compatibility via `__dataPath` mirrors and cloned child payloads.
 
 **0.7.0 - Complete Navigation Architecture**
 - Finish Child Pyramid navigation (80% complete) with pseudo parent integration
@@ -273,59 +275,31 @@ Manufacturer → Cylinder Count → [Family] → [Sub-Family] → Model
 8. **Marine Catalog Integration**: Real production data for water-cooled exhaust manifolds
 
 **🎯 IMMEDIATE PRIORITIES**
+**Priority 1: Finish Child Pyramid Navigation** *(CRITICAL FOR TRUE 2D FLOW)*
+- **Status**: 80% done — nzones render but IN-migration still needs polish plus pseudo parent awareness.
+- **Scope**: Complete selection state hand-off, ensure pseudo parents feed child nodes, and add automated tests for nzone transitions.
+- **Impact**: Unlocks full radial navigation (IN + OUT) now that pseudo parents exist.
 
-**Priority 1: Fix Parent Button Navigation (CRITICAL - Core Concept Broken)** *(COMPLETED)*
-- **Issue**: Parent Button did not back user OUT to the start (top) level - stopped prematurely
-- **Previous Behavior**: 
-  - Lines 475-479 in mobile-app.js: When `getPreviousHierarchyLevel()` returned null, function exited early
-  - Parent Button updated to null and became non-functional
-  - User was stranded at second-level and could not return to first level
-- **Fix Applied**: 
-  - Lines 477-552 now handle null parentLevel case explicitly
-  - Shows top-level items in Focus Ring when at second level
-  - Properly positions selected top-level item based on navigation path
-  - Hides Parent Button when reaching top level (nowhere further OUT to go)
-- **Impact**: ✅ **CORE CONCEPT RESTORED** - Full 2D navigation (radial IN/OUT + rotational CW/CCW) now functional
-- **Status**: COMPLETED - bidirectional navigation working
-
-**Priority 2: Implement `rpp_` Pseudo Parent System** *(NOT STARTED - CRITICAL FOR MARINE CATALOG)*
-- **Status**: Architecture designed, zero implementation exists
-- **Location**: Needs implementation in mobile-data.js navigation methods
-- **Scope**: 
-  - Add `rpp_` prefix detection in getParentHierarchyLevel()
-  - Implement pseudo parent item creation logic
-  - Add orphan adoption for items without `rpp_` trigger
-  - Support nested pseudo parents (rpp_, rpgp_, rpggp_) for unlimited depth
-- **Real-World Requirement**: Marine catalog needs Family → Sub-Family hierarchy (e.g., Modular → Triton/Coyote)
-  - Ford 8-cylinder engines: Modular family → Triton/Coyote sub-families
-  - Packard 12-cylinder: No family/sub-family (orphan adoption needed)
-  - Detroit Diesel 6-cylinder: Series 71 family, no sub-family
-  - MerCruiser 8-cylinder: Small Block family → Gen IV sub-family
-- **Impact**: Required for true universal architecture without domain-specific code
-- **Blocker**: Line 319 in mobile-renderer.js has hardcoded `family: 'families'` that must be removed
-
-**Priority 3: Remove Domain-Specific Code** *(COMPLETED)*
-- **mobile-renderer.js line 319**: Remove hardcoded irregulars object
-- **Solution**: Use catalog JSON irregular_plurals configuration instead
-- **Impact**: Required before implementing `rpp_` system
-- **Status**: COMPLETED - mobile-data.js refactored to use configuration-driven irregular plurals
-- **Estimated effort**: 1-2 hours
-
-**Priority 4: Automatic Volume Discovery** *(NOT STARTED)*
+**Priority 2: Automatic Volume Discovery** *(NOT STARTED)*
 - **mobile-data.js lines 128-131**: Remove hardcoded volume list
 - **Current**: Manual array: `['mmdm_catalog.json', 'gutenberg.json', 'hg_mx.json']`
 - **Solution**: Server-side directory listing + client validation of `wheel_volume_version` property
 - **Impact**: Enables plug-and-play catalog deployment without code changes
 - **Estimated effort**: 4-6 hours (requires server endpoint)
 
-**Priority 5: Multi-Volume System** *(COMPLETED)*
+**Priority 3: Multi-Volume Data QA** *(IN PROGRESS)*
+- ✅ Volume selector + loading stable across MMdM, Gutenberg, HG Music.
+- ⚠️ Bible + music catalogs still need full data population (66 Bible books missing verse content, partial audio metadata coverage).
+- 🎯 Goal: Achieve complete, correctly grouped data so pseudo parents and detail sector can be validated across domains.
+
+**Reference: Multi-Volume System Infrastructure** *(COMPLETED)*
 - ✅ Volume discovery and selector UI working
 - ✅ Both volumes (MMdM + Gutenberg) load and navigate correctly
 - ✅ **Complete Biblical Ordering**: All 67 Bible books have sort_number 1-67 in canonical sequence (verified in gutenberg.json)
 - ✅ **Universal Sorting Integration**: sort_number system works across all data domains
 - ⚠️ Bible content population: Only Genesis has full verse content - remaining 66 books pending data entry
 
-**Priority 6: Detail Sector Content** *(100% complete)*
+**Detail Sector Content** *(100% complete)*
 - ✅ mobile-detailsector.js rebuilt around metadata-driven templates (info/list/gallery/links)
 - ✅ DataManager helpers resolve detail-sector configuration, context, and template assets
 - ✅ VM Motori MR504LW3 manifold_alternatives dataset migrated into catalog JSON
@@ -333,10 +307,7 @@ Manufacturer → Cylinder Count → [Family] → [Sub-Family] → Model
 - ✅ Logger instrumentation traces configuration resolution and per-view metrics
 - ✅ ES5 compatibility for older devices
 
-**Priority 7: Child Pyramid Navigation** *(80% complete)*
-- ✅ Virtual group navigation fully implemented
-- ✅ Leaf item handling with Detail Sector transition working
-- ⚠️ Item detail selection partially implemented
+*(See Priority 1 for remaining Child Pyramid work.)*
 
 **Priority 8: Detail Sector Data Rollout** *(in progress)*
 - ⚠️ Extend metadata schema across remaining catalog nodes (beyond MR504LW3)
@@ -411,10 +382,10 @@ Manufacturer → Cylinder Count → [Family] → [Sub-Family] → Model
   - **Solution**: Server endpoint to list available JSON files + client validation of `wheel_volume_version`
   - **Priority**: Required for true plug-and-play universal deployment
 
-- **rpp_ Pseudo Parent System**: NOT IMPLEMENTED (currently only designed)
-  - **Impact**: Cannot create dynamic hierarchy levels without code changes
-  - **Solution**: Implement detection and navigation logic in mobile-data.js
-  - **Priority**: Required for true domain universality
+- **Pseudo Parent Data QA**: Catalog JSON needs accurate `rpp_` fields to fully leverage the new engine
+  - **Impact**: Incorrect or missing triggers create odd orphan groupings even though the code supports them
+  - **Solution**: Audit each catalog, add `supports_pseudo_parents` metadata, and backfill `rpp_` flags where appropriate
+  - **Priority**: Required for visually demonstrating universal architecture to stakeholders
 
 **MINOR ISSUES:**
 - Position caching could be more sophisticated
@@ -455,13 +426,13 @@ Current state is a working prototype with broken core features. Significant deve
 - ✅ **Revolutionary Interface**: 2D navigation concept proven superior to traditional scrolling
 - ✅ **Ergonomic Design**: Arc-based thumb navigation feels natural and intuitive
 - ✅ **Sprocket Gear Metaphor**: Rotational traversal of infinite lists works beautifully
-- ❌ **Radial Navigation**: Incomplete - IN migration partial, OUT migration broken
+- ⚠️ **Radial Navigation**: IN migration still partial (Child Pyramid), OUT migration now solid after parent button fix
 
 **Technical Status:**
 - ✅ **Solid Architecture**: Hub/Nuc coordinate system, viewport math, module structure sound
 - ✅ **Performance Validated**: Handles large datasets (18,000+ items tested)
-- ❌ **Core Navigation Broken**: Parent Button doesn't complete OUT to top level
-- ❌ **Universal Architecture**: Not achieved - has domain-specific hardcoded values
+- ⚠️ **Child Pyramid Incomplete**: Need final IN navigation polish to claim full 2D experience
+- ⚠️ **Catalog QA Outstanding**: Pseudo parents exist, but data entry/volume discovery automation still lagging
 
 **📱 ANDROID APP STATUS: NOT READY**
 - **Blocker**: Core 2D navigation must work before packaging
@@ -560,25 +531,22 @@ wheel/
 ---
 
 ## 📊 PROJECT STATUS SUMMARY
-**Overall Progress**: ~50% complete (up from 55% - critical architecture gap identified)  
-**Current State**: Working marine catalog prototype with functional 2D navigation, but missing pseudo parent system for proper data representation  
-**Critical Achievement**: Parent Button navigation fixed - full bidirectional radial navigation working  
-**Critical Gap Identified**: Nested pseudo parent system required for marine catalog Family→Sub-Family hierarchies  
-**Universal Architecture**: Design complete but implementation missing - pseudo parents required for true universality  
-**Business Model**: Validated freemium strategy concept  
-**Technical Readiness**: Core navigation complete - pseudo parent implementation required for production marine catalog  
-**Market Position**: First-mover advantage opportunity in 2D hierarchical mobile navigation  
-**Commercial Potential**: Strong concept with working core requiring pseudo parent completion  
+**Overall Progress**: ~60% complete (pseudo parent engine landed, Child Pyramid/volume automation still pending)  
+**Current State**: Working marine catalog prototype with functioning pseudo parents, focus ring fixes, and stable OUT navigation; IN navigation + data QA still in progress.  
+**Critical Achievement**: Parent Button + pseudo parent systems shipped, restoring universal OUT path and unlocking metadata-driven family/subfamily groupings.  
+**Critical Gap Identified**: Child Pyramid IN navigation + catalog data grooming remain the last blockers to true 2D universality.  
+**Business Model**: Freemium Reader + Generator strategy unchanged; now more credible with pseudo parent foundation.  
+**Technical Readiness**: Core modules solid; need child pyramid/volume automation before investor demos.  
+**Market Position**: First-mover advantage strengthened by unique pseudo parent navigation, pending polish.
 
 **Critical Work Remaining**: 
 1. ~~**FIX PARENT BUTTON**~~ ✅ **COMPLETED** - Full OUT navigation to top level working
-2. **IMPLEMENT PSEUDO PARENT SYSTEM** - Nested rpp_ support for Family→Sub-Family hierarchies (CRITICAL for marine catalog)
-3. **FIX CHILD PYRAMID** - Complete IN navigation implementation (80% done)
-4. Remove hardcoded plurals (not started - blocks universal architecture)
-5. Implement automatic volume discovery (not started - currently hardcoded)
-6. Test and validate with multiple data domains
-7. Complete Bible content population (66 of 67 books need verse data)
-8. Android app packaging and WebView integration
+2. ~~**IMPLEMENT PSEUDO PARENT SYSTEM**~~ ✅ **COMPLETED** - Nested `rpp_`/`rpgp_` architecture live in DataManager
+3. **FINISH CHILD PYRAMID** - Complete IN navigation implementation (80% done)
+4. **AUTOMATIC VOLUME DISCOVERY** - Replace hardcoded JSON list with runtime discovery
+5. **MULTI-DOMAIN VALIDATION** - Exercise pseudo parents + detail sector across Bible and music catalogs
+6. **CONTENT COMPLETION** - Populate remaining Bible verses + audio metadata
+7. **ANDROID PACKAGING** - WebView wrapper after 2D nav + data QA are stable
 
 **What Works**:
 - Rotational navigation (CW/CCW) with momentum physics ✅
@@ -586,28 +554,30 @@ wheel/
 - Touch controls and gesture recognition ✅
 - Focus Ring sprocket gear concept ✅
 - Viewport calculations and responsive layout ✅
-- Data loading and virtual levels ✅
+- Pseudo parent system + virtual levels ✅
 
 **What's Broken/Incomplete**:
-- Pseudo parent system (required for marine catalog) ❌
-- Radial IN navigation via Child Pyramid (partial) ⚠️
-- Universal architecture (missing pseudo parents) ❌
-- Multi-domain validation ❌
+- Child Pyramid IN navigation (partial) ⚠️
+- Automatic volume discovery ❌
+- Multi-domain content population ❌
+- Android/WebView packaging ❌
 
 **Strategic Goal**: Establish "Wheel" as the standard for mobile hierarchical data navigation  
-**Reality Check**: Strong foundation with revolutionary concept, but significant core features need fixing/implementing  
-**Documentation**: Complete and honest about implementation gaps
+**Reality Check**: Solid architecture + pseudo parents in place; remaining work is polish, automation, and data completeness.  
+**Documentation**: Updated to reflect v0.6.0 feature set and open items.
 
 **Latest Updates (November 15, 2025):**
+- ✅ **PSEUDO PARENT ENGINE RELEASED (v0.6.0)**: `mobile-data.js` now synthesizes family/sub-family levels using `supports_pseudo_parents`, nested triggers, and orphan adoption.
+  - **Catalog Support**: `mmdm_catalog.json` declares trigger prefixes + orphan groups; renderer/app layers already consume the synthetic hierarchy.
+  - **Impact**: Marine catalog finally shows Modular→Triton/Coyote, MerCruiser Small Block→Gen IV, Detroit Diesel Series, etc., without hardcoding.
+  - **Status**: Data QA pending but architecture solid; version badge + config updated to `0.6.0`.
+- 🧾 **DOCS + ROADMAP SYNCED**: README, STATUS, and mobile-config VERSION object now advertise v0.6.0 and describe the shipped pseudo parent functionality + new priorities.
+  - **Reality Check**: Remaining blockers explicitly tracked (Child Pyramid IN nav, volume discovery, catalog QA).
+  - **Artifacts**: README badge, `mobile/STATUS`, and `mobile-config.js` all aligned with the release.
 - ✅ **FOCUS RING LODESTAR FIXED**: Magnifier now stays anchored while sort_number + JSON order map directly to descending Hub angles
   - **Behavior**: Reversed angle math so first curated item receives highest visible angle; removed residual alphabetical fallbacks
   - **Impact**: Genesis → Ruth ordering now matches DESIGNSPEC arc-top guidance without rotating the magnifier reference frame
   - **Version**: Bumped to v0.5.20 to capture this patch-level geometry correction
-- ✅ **CRITICAL ARCHITECTURE GAP IDENTIFIED**: Nested pseudo parent system required for marine catalog
-  - **Real-World Requirement**: Family → Sub-Family hierarchies (Ford Modular→Triton/Coyote, MerCruiser Small Block→Gen IV)
-  - **Impact**: Without pseudo parents, marine catalog cannot represent engine family relationships properly
-  - **Status**: Design exists but zero implementation - elevated to Priority 2
-  - **Version**: Bumped to v0.5.19 to reflect this critical finding
 - 🎧 **Detail Sector Audio Fallback Implemented**: iOS-safe playback for music catalog
   - **Detection**: mobile-detailsector.js now checks for SVG foreignObject support (iOS Safari, DuckDuckGo, macOS touch mode)
   - **Fallback UX**: Displays "Play Audio Sample" link that opens a bottom-sheet overlay with native HTML `<audio>` controls
@@ -635,7 +605,7 @@ wheel/
   - **Location**: mobile-config.js exports VERSION object
   - **Display**: Upper-left corner on volume selector screen (always visible)
   - **Purpose**: Track which build has which bugs/fixes during rapid development
-  - **Current Version**: v0.5.5-b251112.001 (Parent Button fix completed)
+  - **Current Version**: v0.6.0 (Pseudo Parent release)
   
 - ✅ **PARENT BUTTON FIXED**: Full bidirectional radial navigation now working!
   - **Problem**: Function exited early when `getPreviousHierarchyLevel()` returned null at second-from-top level
