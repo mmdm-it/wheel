@@ -978,6 +978,17 @@ class DataManager {
         const parentLevelDepth = parentItem.__levelDepth;
         const childLevelDepth = this.getHierarchyLevelDepth(childLevelName);
         const childLevelConfig = this.getHierarchyLevelConfig(childLevelName);
+        const parentLevelConfig = this.getHierarchyLevelConfig(parentLevelName);
+        const dataPath = parentItem.__dataPath || parentItem.__path || [];
+
+        // Handle pseudo parent navigation before any structural validation
+        if (parentItem.__isPseudoParent) {
+            return this.getItemsFromPseudoParent(parentItem, childLevelName, childLevelConfig);
+        }
+
+        if (this.levelSupportsPseudoChild(parentLevelName, childLevelName)) {
+            return this.getPseudoParentItems(parentItem, childLevelName, childLevelConfig);
+        }
 
         // Check if child level is virtual
         if (childLevelConfig && childLevelConfig.is_virtual) {
@@ -990,7 +1001,6 @@ class DataManager {
         }
 
         // Check if this is requesting child items from a virtual level parent
-        const parentLevelConfig = this.getHierarchyLevelConfig(parentLevelName);
         if (parentLevelConfig && parentLevelConfig.is_virtual) {
             return this.getItemsFromVirtualParent(parentItem, childLevelName, parentLevelConfig);
         }
@@ -1009,8 +1019,8 @@ class DataManager {
         let alreadyInChildCollection = false; // Track if we're already in the target child collection
         
         // Build the path through the JSON structure
-        for (let i = 0; i < parentItem.__path.length; i++) {
-            const pathSegment = parentItem.__path[i];
+        for (let i = 0; i < dataPath.length; i++) {
+            const pathSegment = dataPath[i];
             const currentLevelName = levelNames[i];
             
             if (i === 0) {
@@ -1043,7 +1053,7 @@ class DataManager {
                 
                 // Then navigate to the child collection for the next iteration
                 // (except on the last iteration, where we want to stay at the parent item)
-                if (i < parentItem.__path.length - 1) {
+                if (i < dataPath.length - 1) {
                     const nextLevelName = levelNames[i + 1];
                     const childCollectionName = this.getPluralPropertyName(nextLevelName);
                     if (dataLocation[childCollectionName]) {
@@ -1099,6 +1109,240 @@ class DataManager {
         } else {
             return levelName + 's';
         }
+    }
+
+    levelSupportsPseudoChild(parentLevelName, childLevelName) {
+        if (!parentLevelName || !childLevelName) {
+            return false;
+        }
+
+        const parentConfig = this.getHierarchyLevelConfig(parentLevelName);
+        if (!parentConfig || !Array.isArray(parentConfig.supports_pseudo_parents)) {
+            return false;
+        }
+
+        return parentConfig.supports_pseudo_parents.includes(childLevelName);
+    }
+
+    isPseudoLevel(levelName) {
+        const config = this.getHierarchyLevelConfig(levelName);
+        return !!(config && config.is_pseudo_parent);
+    }
+
+    getPseudoTriggerPrefix(config) {
+        if (config && config.pseudo_trigger_prefix) {
+            return config.pseudo_trigger_prefix;
+        }
+        return 'rpp_';
+    }
+
+    getPseudoTerminalLevel(levelName) {
+        const levelNames = this.getHierarchyLevelNames();
+        const startIndex = levelNames.indexOf(levelName);
+        if (startIndex === -1) {
+            return null;
+        }
+
+        for (let i = startIndex + 1; i < levelNames.length; i++) {
+            const candidate = levelNames[i];
+            if (!this.isPseudoLevel(candidate)) {
+                return candidate;
+            }
+        }
+
+        return null;
+    }
+
+    getItemProperty(item, propertyName) {
+        if (!item || !propertyName) {
+            return undefined;
+        }
+
+        if (item[propertyName] !== undefined) {
+            return item[propertyName];
+        }
+
+        if (item.data && item.data[propertyName] !== undefined) {
+            return item.data[propertyName];
+        }
+
+        return undefined;
+    }
+
+    filterItemsByPseudoFilters(items, filters) {
+        if (!filters || !Object.keys(filters).length) {
+            return items;
+        }
+
+        return items.filter(item => {
+            return Object.entries(filters).every(([levelName, expectedValue]) => {
+                if (expectedValue === null || expectedValue === undefined) {
+                    return true;
+                }
+                const actualValue = this.getItemProperty(item, levelName);
+                return actualValue === expectedValue;
+            });
+        });
+    }
+
+    cloneLeafForPseudo(baseItem, pseudoPath) {
+        const clone = { ...baseItem };
+        const safePseudoPath = Array.isArray(pseudoPath) ? [...pseudoPath] : [];
+        const leafName = baseItem.name || baseItem.key || 'item';
+        clone.__path = [...safePseudoPath, leafName];
+        const dataPath = baseItem.__dataPath || baseItem.__path || [];
+        clone.__dataPath = Array.isArray(dataPath) ? [...dataPath] : [];
+        clone.key = clone.__path.join('/');
+        clone.__isLeaf = true;
+        return clone;
+    }
+
+    clonePseudoItems(items) {
+        return items.map(item => ({
+            ...item,
+            __path: Array.isArray(item.__path) ? [...item.__path] : [],
+            __dataPath: item.__dataPath ? [...item.__dataPath] : undefined
+        }));
+    }
+
+    getPseudoSourceItems(parentItem, terminalLevelName) {
+        if (parentItem.__isPseudoParent && Array.isArray(parentItem.__pseudoSourceItems)) {
+            return this.clonePseudoItems(parentItem.__pseudoSourceItems);
+        }
+
+        const parentData = this.getDataLocationForItem(parentItem);
+        if (!parentData) {
+            Logger.warn('getPseudoSourceItems: Unable to resolve parent data location');
+            return [];
+        }
+
+        let rawData;
+        if (Array.isArray(parentData)) {
+            rawData = parentData;
+        } else {
+            const collectionName = this.getPluralPropertyName(terminalLevelName);
+            rawData = parentData[collectionName];
+        }
+
+        if (!rawData) {
+            Logger.warn(`getPseudoSourceItems: No raw data found for terminal level ${terminalLevelName}`);
+            return [];
+        }
+
+        return this.extractChildItems(rawData, terminalLevelName, parentItem);
+    }
+
+    buildPseudoParentItem(parentItem, pseudoLevelName, groupName, baseItems, terminalLevelName, pseudoConfig, isOrphan = false) {
+        const pseudoPath = [...(parentItem.__path || []), groupName];
+        const childClones = baseItems.map(item => this.cloneLeafForPseudo(item, pseudoPath));
+
+        return {
+            name: groupName,
+            key: pseudoPath.join('/'),
+            __level: pseudoLevelName,
+            __levelDepth: this.getHierarchyLevelDepth(pseudoLevelName),
+            __isLeaf: false,
+            __path: pseudoPath,
+            __dataPath: parentItem.__dataPath || parentItem.__path,
+            __isPseudoParent: true,
+            __pseudoLevel: pseudoLevelName,
+            __pseudoTerminalLevel: terminalLevelName,
+            __pseudoSourceItems: childClones,
+            __pseudoFilters: {
+                ...(parentItem.__pseudoFilters || {}),
+                [pseudoLevelName]: isOrphan ? null : groupName
+            },
+            __pseudoIsOrphanGroup: isOrphan,
+            data: {
+                is_pseudo_parent: true,
+                group_label: groupName,
+                child_count: childClones.length,
+                is_orphan: isOrphan
+            }
+        };
+    }
+
+    getPseudoParentItems(parentItem, pseudoLevelName, pseudoConfig) {
+        if (!pseudoConfig) {
+            Logger.warn(`getPseudoParentItems: Missing config for level ${pseudoLevelName}`);
+            return [];
+        }
+
+        const terminalLevelName = this.getPseudoTerminalLevel(pseudoLevelName);
+        if (!terminalLevelName) {
+            Logger.warn(`getPseudoParentItems: Unable to determine terminal level for ${pseudoLevelName}`);
+            return [];
+        }
+
+        const sourceItems = this.getPseudoSourceItems(parentItem, terminalLevelName);
+        if (!sourceItems.length) {
+            return [];
+        }
+
+        const filteredItems = this.filterItemsByPseudoFilters(sourceItems, parentItem.__pseudoFilters || {});
+        if (!filteredItems.length) {
+            return [];
+        }
+
+        const triggerPrefix = this.getPseudoTriggerPrefix(pseudoConfig);
+        const triggerProperty = `${triggerPrefix}${pseudoLevelName}`;
+        const valueProperty = pseudoConfig.pseudo_value_property || pseudoLevelName;
+        const orphanGroupName = pseudoConfig.pseudo_orphan_group || `Uncategorized ${pseudoLevelName}`;
+
+        const groupMap = new Map();
+        const orphanItems = [];
+
+        filteredItems.forEach(item => {
+            const isTriggered = this.getItemProperty(item, triggerProperty) === true;
+            const groupValue = this.getItemProperty(item, valueProperty);
+
+            if (isTriggered && groupValue) {
+                if (!groupMap.has(groupValue)) {
+                    groupMap.set(groupValue, []);
+                }
+                groupMap.get(groupValue).push(item);
+            } else {
+                orphanItems.push(item);
+            }
+        });
+
+        const pseudoItems = [];
+        groupMap.forEach((items, groupName) => {
+            pseudoItems.push(
+                this.buildPseudoParentItem(parentItem, pseudoLevelName, groupName, items, terminalLevelName, pseudoConfig, false)
+            );
+        });
+
+        if (orphanItems.length) {
+            pseudoItems.push(
+                this.buildPseudoParentItem(parentItem, pseudoLevelName, orphanGroupName, orphanItems, terminalLevelName, pseudoConfig, true)
+            );
+        }
+
+        return this.sortItems(pseudoItems, pseudoConfig);
+    }
+
+    getItemsFromPseudoParent(parentItem, childLevelName, childLevelConfig) {
+        if (!parentItem.__isPseudoParent) {
+            return [];
+        }
+
+        const parentConfig = this.getHierarchyLevelConfig(parentItem.__level);
+        const supportsNestedPseudo = parentConfig && Array.isArray(parentConfig.supports_pseudo_parents)
+            ? parentConfig.supports_pseudo_parents.includes(childLevelName)
+            : false;
+
+        if (supportsNestedPseudo) {
+            return this.getPseudoParentItems(parentItem, childLevelName, childLevelConfig);
+        }
+
+        if (childLevelName === parentItem.__pseudoTerminalLevel) {
+            const leafItems = this.clonePseudoItems(parentItem.__pseudoSourceItems || []);
+            return this.sortItems(leafItems, childLevelConfig);
+        }
+
+        Logger.warn(`getItemsFromPseudoParent: ${parentItem.__level} cannot provide ${childLevelName}`);
+        return [];
     }
 
     /**
@@ -1231,15 +1475,16 @@ class DataManager {
     }
 
     getDataLocationForItem(item) {
-        if (!item || !item.__path || !item.__path.length) {
+        const pathToTraverse = item && (item.__dataPath || item.__path);
+        if (!item || !pathToTraverse || !pathToTraverse.length) {
             return null;
         }
 
         const levelNames = this.getHierarchyLevelNames();
         let dataLocation = this.getTopLevelCollection();
 
-        for (let i = 0; i < item.__path.length; i++) {
-            const pathSegment = item.__path[i];
+        for (let i = 0; i < pathToTraverse.length; i++) {
+            const pathSegment = pathToTraverse[i];
             const currentLevelName = levelNames[i];
 
             if (i === 0) {
@@ -1249,7 +1494,7 @@ class DataManager {
                     return null;
                 }
 
-                if (item.__path.length > 1) {
+                if (pathToTraverse.length > 1) {
                     const nextLevelName = levelNames[1];
                     const childCollectionName = this.getPluralPropertyName(nextLevelName);
                     if (dataLocation && dataLocation[childCollectionName]) {
@@ -1274,7 +1519,7 @@ class DataManager {
                     return null;
                 }
 
-                if (i < item.__path.length - 1) {
+                if (i < pathToTraverse.length - 1) {
                     const nextLevelName = levelNames[i + 1];
                     const childCollectionName = this.getPluralPropertyName(nextLevelName);
                     if (dataLocation && dataLocation[childCollectionName]) {
