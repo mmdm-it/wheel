@@ -45,8 +45,15 @@
                     "detail_sector": {
                         "header_template": "{{ name }}",
                         "subtitle_template": "{{ album }} - {{ artist }}",
-                        "views": {
-                            "info": {
+                        "views": [
+                            {
+                                "id": "audio_player",
+                                "type": "audio",
+                                "audio_file_property": "audio_file",
+                                "audio_base_path": "assets/mx/"
+                            },
+                            {
+                                "id": "info",
                                 "body_template": "{{ year }} • {{ duration }} • {{ genre }}",
                                 "fields": [
                                     {
@@ -63,7 +70,7 @@
                                     }
                                 ]
                             }
-                        }
+                        ]
                     }
                 }
             }
@@ -434,6 +441,15 @@
                                 "genre": "Rock",
                                 "year": 1978,
                                 "label": "Rolling Stones Records"
+                            },
+                            "Far_Away_Eyes": {
+                                "track_number": 6,
+                                "duration": "4:24",
+                                "composer": "Jagger-Richards",
+                                "genre": "Country Rock",
+                                "year": 1978,
+                                "label": "Rolling Stones Records",
+                                "audio_file": "06 Far Away Eyes.mp3"
                             }
                         }
                     },

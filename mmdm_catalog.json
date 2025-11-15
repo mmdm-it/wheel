@@ -11,7 +11,8 @@
             },
             "detail_sector": {
                 "mode": "product_browser",
-                "default_image": "catalog_logo"
+                "default_image": "catalog_logo",
+                "logo_base_path": "assets/"
             },
             "hierarchy_levels": {
                 "market": {
