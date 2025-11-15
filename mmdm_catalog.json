@@ -14,6 +14,9 @@
                 "default_image": "catalog_logo",
                 "logo_base_path": "assets/"
             },
+            "irregular_plurals": {
+                "country": "countries"
+            },
             "hierarchy_levels": {
                 "market": {
                     "text_format": "uppercase",

@@ -344,10 +344,12 @@ Artist → Decade → [venue_type] → [recording_session] → Song
   - **Result**: Full bidirectional radial navigation (IN and OUT) now working
 
 **CRITICAL BLOCKERS (Prevent Universal Architecture):**
-- **mobile-renderer.js line 319**: Hardcoded irregulars object contains `family: 'families'` - domain-specific pluralization
-  - **Impact**: Every new data domain must add hardcoded plurals
-  - **Solution**: Configuration-driven pluralization already exists in catalog JSON but not used
-  - **Priority**: Must fix before claiming universal architecture
+- **mobile-data.js getMarkets() method name**: Domain-specific naming despite generic implementation
+  - **Issue**: Method returns keys from top-level collection (universal) but named "getMarkets" (marine-specific)
+  - **Impact**: Violates agnostic architecture principles - method name reveals domain assumptions
+  - **Solution**: Rename to `getTopLevelKeys()` or `getRootCollectionKeys()` for domain neutrality
+  - **Priority**: High - prevents claiming true universal architecture
+  - **Scope**: Rename method and update all callers (getAllInitialFocusItems uses it)
 
 - **mobile-data.js lines 128-131**: Hardcoded volume list prevents automatic catalog discovery
   - **Impact**: Every new catalog requires editing source code to add filename
@@ -612,6 +614,14 @@ wheel/
   - **Code Change**: Modified createDetailSectorLogo() to check for logo configuration and create image or text element
   - **Universal Architecture**: Catalogs can now opt-out of logos gracefully without breaking the interface
   - **Status**: hg_mx.json and gutenberg.json cleaned up, mmdm_catalog.json retains logo, conditional display working
+
+- 🔧 **IRREGULAR PLURALS CONFIGURATION COMPLETED**: Fixed pluralization issue for 'country' -> 'countries'
+  - **Problem**: System was looking for 'countrys' property but JSON uses 'countries' (irregular plural)
+  - **Root Cause**: Default pluralization logic only adds 's', doesn't handle irregular plurals like country->countries
+  - **Solution**: Added "country": "countries" to irregular_plurals configuration in mmdm_catalog.json display_config
+  - **Impact**: Fixes aggregated manufacturer retrieval across countries in hierarchical navigation
+  - **Universal Architecture**: irregular_plurals config allows handling of English irregular plural forms
+  - **Status**: Aggregation logic now correctly finds 'countries' property for manufacturer aggregation
   
   
 - 📋 **Documentation Audit Completed**: Removed mobile/README.md to eliminate documentation drift
