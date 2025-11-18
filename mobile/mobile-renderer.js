@@ -273,6 +273,19 @@ class MobileRenderer {
         const itemType = this.getLevelPluralLabel(cacheLevel);
         Logger.debug(`Found ${childItems.length} ${itemType} for ${currentLevel}: ${focusItem.name}`);
 
+        // Update Parent Button for non-leaf items
+        const itemLevel = this.getItemHierarchyLevel(focusItem);
+        const parentLevel = itemLevel ? this.getPreviousHierarchyLevel(itemLevel) : null;
+        const parentName = parentLevel ? this.getParentNameForLevel(focusItem, parentLevel) : null;
+        Logger.debug(`🔼 Parent Button update: itemLevel=${itemLevel}, parentLevel=${parentLevel}, parentName=${parentName}, path=${JSON.stringify(focusItem.__path)}`);
+        this.updateParentButton(parentName);
+
+        // Collapse Detail Sector when showing Child Pyramid (non-leaf items)
+        if (this.detailSector && this.detailSector.isVisible) {
+            Logger.debug('🔵 Collapsing Detail Sector - Child Pyramid visible');
+            this.collapseDetailSector();
+        }
+
         // Show child items in Child Pyramid
         Logger.debug('🔺 SHOWING Child Pyramid with', childItems.length, itemType, 'for focus item:', focusItem.name);
         this.childPyramid.showChildPyramid(childItems, itemType);
@@ -281,10 +294,77 @@ class MobileRenderer {
     /**
      * Get child items for a specific hierarchy level
      */
+    /**
+     * Display a critical user-visible error for missing sort_number
+     */
+    showSortNumberError(items, context) {
+        const itemsWithoutSort = items.filter(item => {
+            const sortNum = item.data?.sort_number ?? item.sort_number;
+            return sortNum === undefined || sortNum === null;
+        });
+
+        if (itemsWithoutSort.length === 0) return false;
+
+        const errorDiv = document.createElement('div');
+        errorDiv.style.cssText = `
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #ff3333;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            z-index: 10000;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            max-width: 80%;
+        `;
+        
+        const itemList = itemsWithoutSort.map(item => 
+            `• ${item.name || item.key} (level: ${item.__level || 'unknown'})`
+        ).join('<br>');
+        
+        errorDiv.innerHTML = `
+            <div style="font-size: 24px; margin-bottom: 15px;">⚠️ ERROR - Sort Number Missing</div>
+            <div style="font-size: 16px; margin-bottom: 10px;">${context}</div>
+            <div style="font-size: 14px; text-align: left; margin-top: 15px;">${itemList}</div>
+            <div style="font-size: 12px; margin-top: 20px; opacity: 0.9;">Items cannot be displayed without sort_number</div>
+        `;
+        
+        document.body.appendChild(errorDiv);
+        Logger.error(`❌ CRITICAL: ${itemsWithoutSort.length} items missing sort_number in ${context}`);
+        itemsWithoutSort.forEach(item => {
+            Logger.error(`   Missing sort_number: ${item.name || item.key} (${item.__level})`);
+        });
+        
+        return true;
+    }
+
+    /**
+     * Validate that all items have sort_numbers - returns filtered list
+     */
+    validateSortNumbers(items, context) {
+        if (!items || items.length === 0) return items;
+
+        const hasError = this.showSortNumberError(items, context);
+        if (hasError) {
+            // Return empty array - do not render items without sort_numbers
+            return [];
+        }
+
+        return items;
+    }
+
     getChildItemsForLevel(parentItem, childLevel) {
         // Pure universal: Use DataManager's universal navigation method
         const childLevelName = childLevel;
-        return this.dataManager.getItemsAtLevel(parentItem, childLevelName) || [];
+        const items = this.dataManager.getItemsAtLevel(parentItem, childLevelName) || [];
+        
+        // Validate sort_numbers before returning
+        return this.validateSortNumbers(items, `${childLevelName} under ${parentItem.name}`);
     }
 
     resolveChildLevel(parentItem, startingLevel) {
@@ -347,11 +427,13 @@ class MobileRenderer {
             };
         });
 
+        let sortedItems = items;
         if (typeof this.dataManager.sortItems === 'function') {
-            return this.dataManager.sortItems(items, levelConfig);
+            sortedItems = this.dataManager.sortItems(items, levelConfig);
         }
 
-        return items;
+        // Validate sort_numbers for top level items
+        return this.validateSortNumbers(sortedItems, `Top level ${topLevelName}`);
     }
 
     getLevelPluralLabel(levelName) {
@@ -442,6 +524,7 @@ class MobileRenderer {
         const itemLevel = this.getItemHierarchyLevel(focusItem);
         const parentLevel = itemLevel ? this.getPreviousHierarchyLevel(itemLevel) : null;
         const parentName = parentLevel ? this.getParentNameForLevel(focusItem, parentLevel) : null;
+        Logger.debug(`🔼 Parent Button update (leaf): itemLevel=${itemLevel}, parentLevel=${parentLevel}, parentName=${parentName}, path=${JSON.stringify(focusItem.__path)}`);
         this.updateParentButton(parentName);
 
         if (!this.detailSector) {
@@ -450,7 +533,7 @@ class MobileRenderer {
 
         // Check if Detail Sector expansion is allowed for this volume
         const displayConfig = this.dataManager.getDisplayConfig();
-        const isMMDM = displayConfig && displayConfig.volume_name === 'Marine Diesel Manifold Volume';
+        const isMMDM = displayConfig && displayConfig.volume_name === 'MMdM Catalog';
         
         if (isMMDM) {
             if (this.detailSector.isVisible) {
@@ -502,38 +585,54 @@ class MobileRenderer {
         const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
         const middleIndex = (this.currentFocusItems.length - 1) / 2;
         
-        // Check if items have sort_number (indicating curated order)
-        const hasSortNumbers = this.currentFocusItems.some(item => 
-            (item.data?.sort_number !== undefined) || (item.sort_number !== undefined)
-        );
+        // Get startup configuration from volume - use correct property path
+        const rootData = this.dataManager.data?.[this.dataManager.rootDataKey];
+        const startupConfig = rootData?.display_config?.focus_ring_startup;
         
-        if (hasSortNumbers) {
-            // For sorted items (like Bible books), position first item at arc top
-            // Arc top is at highest angle (visual top), so we need positive offset
-            // to move first item (index 0) from center toward highest visible angle
-            const maxViewportAngle = MOBILE_CONFIG.VIEWPORT.VIEWPORT_ARC / 2;
-            const arcTopTarget = maxViewportAngle - angleStep; // Maintain small visual margin
-            const offset = arcTopTarget - (middleIndex * angleStep);
-
-            this.focusRingDebug(`Sorted items (${this.currentFocusItems.length}): positioning at arc top, offset = ${offset * 180 / Math.PI}°`);
+        Logger.info(`🎯 calculateInitialRotationOffset: ${this.currentFocusItems.length} focus items, middleIndex=${middleIndex}`);
+        Logger.info(`🎯 Config: ${JSON.stringify(startupConfig)}`);
+        
+        // Debug: Log first 10 items with their sort_numbers
+        Logger.info(`🎯 First 10 focus items:`);
+        this.currentFocusItems.slice(0, 10).forEach((item, idx) => {
+            const sortNum = item.data?.sort_number ?? item.sort_number;
+            Logger.info(`   [${idx}] ${item.name} (sort_number: ${sortNum})`);
+        });
+        
+        if (startupConfig && startupConfig.initial_magnified_item !== undefined) {
+            // Find item with specified sort_number
+            const targetSortNumber = startupConfig.initial_magnified_item;
+            const targetIndex = this.currentFocusItems.findIndex(item => {
+                const itemSortNumber = item.data?.sort_number ?? item.sort_number;
+                return itemSortNumber === targetSortNumber;
+            });
+            
+            Logger.info(`🎯 Looking for sort_number ${targetSortNumber}, found at index: ${targetIndex}`);
+            
+            if (targetIndex === -1) {
+                const availableSortNumbers = this.currentFocusItems
+                    .map(item => item.data?.sort_number ?? item.sort_number)
+                    .filter(n => n !== undefined)
+                    .sort((a, b) => a - b)
+                    .join(', ');
+                Logger.error(`❌ STARTUP ERROR: initial_magnified_item ${targetSortNumber} not found`);
+                Logger.error(`   Available sort_numbers: ${availableSortNumbers}`);
+                // Fallback to first item
+                const offset = (0 - middleIndex) * angleStep;
+                Logger.warn(`   Falling back to first item (index 0), offset = ${offset * 180 / Math.PI}°`);
+                return offset;
+            }
+            
+            // Calculate offset to center the target item under magnifier
+            const offset = (targetIndex - middleIndex) * angleStep;
+            Logger.info(`🎯 Startup: Magnifying item at sort_number ${targetSortNumber} (index ${targetIndex}), offset = ${offset * 180 / Math.PI}°`);
+            Logger.info(`🎯 Item name: ${this.currentFocusItems[targetIndex].name}`);
             return offset;
         }
         
-        // For unsorted items, use original centering logic
-        // For odd number of focus items, middle focus item is already centered
-        if (this.currentFocusItems.length % 2 === 1) {
-            return 0;
-        }
-        
-        // For even number of focus items, we need to snap to the nearest focus item
-        // The center falls between two focus items at indices floor(middleIndex) and ceil(middleIndex)
-        // We'll snap to the lower index focus item (more intuitive)
-        const targetIndex = Math.floor(middleIndex);
-        
-        // Calculate offset needed to center this focus item
-        const offset = (targetIndex - middleIndex) * angleStep;
-        
-        this.focusRingDebug(`Even focus items (${this.currentFocusItems.length}): centering index ${targetIndex}, offset = ${offset * 180 / Math.PI}°`);
+        // Fallback: no configuration specified
+        Logger.warn(`⚠️ No focus_ring_startup configuration found - using first item`);
+        const offset = (0 - middleIndex) * angleStep;
         return offset;
     }
     
@@ -600,6 +699,12 @@ class MobileRenderer {
 
         // Process all focus items but only render those in viewport window
         allFocusItems.forEach((focusItem, index) => {
+            // Validate sort_number
+            const sortNumber = focusItem.data?.sort_number ?? focusItem.sort_number;
+            if (sortNumber === undefined || sortNumber === null) {
+                Logger.error(`❌ RUNTIME ERROR: Item "${focusItem.name}" at index ${index} missing sort_number`);
+            }
+            
             // Calculate angle using original logic
             const angle = adjustedCenterAngle + (middleIndex - index) * angleStep;
             
@@ -1088,13 +1193,43 @@ class MobileRenderer {
         const parentButton = document.getElementById('parentButton');
         const parentText = document.getElementById('parentText');
         
+        console.log('🔼🔼 updateParentButton CALLED:', {
+            parentName,
+            buttonExists: !!parentButton,
+            textExists: !!parentText,
+            buttonClasses: parentButton?.className,
+            buttonDisplay: parentButton?.style.display
+        });
+        
         if (parentName) {
+            // Check if we're at top navigation level - use correct property path
+            const rootData = this.dataManager.data?.[this.dataManager.rootDataKey];
+            const startupConfig = rootData?.display_config?.focus_ring_startup;
+            const topNavLevel = startupConfig?.top_navigation_level;
+            const currentLevel = this.activeType;
+            const isAtTopLevel = topNavLevel && currentLevel === topNavLevel;
+            
             // Show button and set text to parent name
             parentText.textContent = parentName;
             parentButton.classList.remove('hidden');
+            // Clear any inline display style that might be hiding the button
+            parentButton.style.display = '';
+            
+            // Enable or disable based on level
+            if (isAtTopLevel) {
+                parentButton.classList.add('disabled');
+                parentButton.setAttribute('data-disabled', 'true');
+                console.log('🔼🔼 Button SHOWN but DISABLED at top level:', currentLevel);
+            } else {
+                parentButton.classList.remove('disabled');
+                parentButton.removeAttribute('data-disabled');
+                console.log('🔼🔼 Button SHOWN and ENABLED - classes after:', parentButton.className, 'display:', parentButton.style.display);
+            }
         } else {
             // Hide button if no parent
             parentButton.classList.add('hidden');
+            parentButton.removeAttribute('data-disabled');
+            console.log('🔼🔼 Button HIDDEN');
         }
     }
     
@@ -1139,8 +1274,15 @@ class MobileRenderer {
         
         Logger.debug(`🔺 Getting siblings: parent="${parentItem.name}" (${parentLevel}), childLevel="${itemLevel}", found ${allSiblings.length} siblings`);
 
-        this.currentFocusItems = allSiblings;
-        this.allFocusItems = allSiblings;
+        // Validate sort_numbers before setting focus items
+        const validatedSiblings = this.validateSortNumbers(allSiblings, `Focus Ring siblings at ${itemLevel}`);
+        if (validatedSiblings.length === 0) {
+            Logger.error('🔺 Cannot display Focus Ring - no valid items with sort_numbers');
+            return;
+        }
+
+        this.currentFocusItems = validatedSiblings;
+        this.allFocusItems = validatedSiblings;
 
         // 3. Clear current Child Pyramid immediately to remove child item nodes
         this.elements.childRingGroup.innerHTML = '';

@@ -232,6 +232,13 @@ Manufacturer → Cylinder Count → [Family] → [Sub-Family] → Model
 
 #### Version Milestones to 1.0.0
 
+**0.6.3 - Data Consistency & Sort Validation** *(COMPLETED – 2025-11-18)*
+- Added comprehensive sort_number validation across all navigation levels
+- Implemented context-aware leaf sorting (track_number, verse_number, alphabetical)
+- Completed manufacturer data restructuring (Admiral, Allison, Caterpillar + 70 others)
+- User-facing error messages for missing sort_numbers prevent silent failures
+- Three-layer validation: DataManager, MobileRenderer, MobileChildPyramid
+
 **0.6.0 - Pseudo Parent System Implementation** *(COMPLETED – 2025-11-15)*
 - Delivered `rpp_`/`rpgp_` detection in DataManager with nested pseudo level synthesis.
 - Added orphan adoption + metadata-driven group labels so catalogs stay navigable even with partial data.
@@ -605,7 +612,7 @@ wheel/
   - **Location**: mobile-config.js exports VERSION object
   - **Display**: Upper-left corner on volume selector screen (always visible)
   - **Purpose**: Track which build has which bugs/fixes during rapid development
-  - **Current Version**: v0.6.0 (Pseudo Parent release)
+  - **Current Version**: v0.6.3 (Data Consistency release)
   
 - ✅ **PARENT BUTTON FIXED**: Full bidirectional radial navigation now working!
   - **Problem**: Function exited early when `getPreviousHierarchyLevel()` returned null at second-from-top level

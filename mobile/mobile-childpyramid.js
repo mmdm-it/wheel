@@ -52,6 +52,20 @@ class MobileChildPyramid {
             return;
         }
         
+        // Validate sort_numbers - this should never fail if renderer validation worked
+        const itemsWithoutSort = items.filter(item => {
+            const sortNum = item.data?.sort_number ?? item.sort_number;
+            return sortNum === undefined || sortNum === null;
+        });
+        
+        if (itemsWithoutSort.length > 0) {
+            Logger.error(`🔺 CRITICAL: Child Pyramid received ${itemsWithoutSort.length} items without sort_numbers`);
+            itemsWithoutSort.forEach(item => {
+                Logger.error(`   Missing sort_number: ${item.name || item.key}`);
+            });
+            return; // Do not render
+        }
+        
         Logger.debug(`🔺 Showing child pyramid with ${items.length} ${itemType}`);
     this.currentItems = [...items];
     this.currentItemType = itemType;

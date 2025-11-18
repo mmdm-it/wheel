@@ -440,6 +440,12 @@ class MobileCatalogApp {
             e.preventDefault();
             e.stopPropagation();
             
+            // Check if button is disabled
+            if (parentButton.getAttribute('data-disabled') === 'true') {
+                Logger.debug('🔼 Parent button click ignored - at top navigation level');
+                return;
+            }
+            
             // Check if in volume selector mode
             if (parentButton.getAttribute('data-volume-selector-mode') === 'true') {
                 this.handleExploreButtonClick();

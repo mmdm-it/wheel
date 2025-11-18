@@ -5,6 +5,11 @@
             "volume_type": "wheel_hierarchical",
             "volume_name": "HG Music Library",
             "volume_description": "Test music catalog for universal architecture validation",
+            "leaf_level": "song",
+            "focus_ring_startup": {
+                "initial_magnified_item": 1,
+                "top_navigation_level": "artist"
+            },
             "detail_sector": {
                 "mode": "product_browser",
                 "logo_base_path": "assets/",

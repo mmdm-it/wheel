@@ -1568,6 +1568,73 @@ class DataManager {
      * Sort items based on level configuration
      */
     sortItems(items, levelConfig) {
+        if (!items || items.length === 0) return items;
+
+        // Check if this is the leaf level (explicit configuration)
+        const displayConfig = this.getDisplayConfig();
+        const leafLevel = displayConfig?.leaf_level;
+        const currentLevel = items[0]?.__level;
+        const isLeafLevel = leafLevel && currentLevel === leafLevel;
+
+        // For NON-LEAF levels: sort_number is MANDATORY
+        if (!isLeafLevel) {
+            const itemsWithoutSort = items.filter(item => {
+                const sortNum = item.data?.sort_number ?? item.sort_number;
+                return sortNum === undefined || sortNum === null;
+            });
+
+            if (itemsWithoutSort.length > 0) {
+                // Display critical error to user
+                const errorDiv = document.createElement('div');
+                errorDiv.style.cssText = `
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: #ff3333;
+                    color: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    z-index: 10000;
+                    text-align: center;
+                    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+                    max-width: 80%;
+                `;
+                
+                const levelName = levelConfig?.display_name || 'items';
+                const itemList = itemsWithoutSort.slice(0, 5).map(item => 
+                    `• ${item.name || item.key}`
+                ).join('<br>');
+                const moreCount = itemsWithoutSort.length > 5 ? `<br>...and ${itemsWithoutSort.length - 5} more` : '';
+                
+                errorDiv.innerHTML = `
+                    <div style="font-size: 24px; margin-bottom: 15px;">⚠️ ERROR - Sort Number Missing</div>
+                    <div style="font-size: 16px; margin-bottom: 10px;">Navigation level: ${levelName}</div>
+                    <div style="font-size: 14px; text-align: left; margin-top: 15px;">${itemList}${moreCount}</div>
+                    <div style="font-size: 12px; margin-top: 20px; opacity: 0.9;">Navigation items require sort_number</div>
+                `;
+                
+                document.body.appendChild(errorDiv);
+                
+                Logger.error(`❌ CRITICAL: ${itemsWithoutSort.length} navigation items missing sort_number at level ${currentLevel}`);
+                itemsWithoutSort.forEach(item => {
+                    Logger.error(`   Missing sort_number: ${item.name || item.key}`);
+                });
+                
+                // Return empty array - refuse to sort navigation items without sort_numbers
+                return [];
+            }
+        }
+
+        // For LEAF levels: use context-aware sorting
+        if (isLeafLevel) {
+            Logger.debug(`🍃 Leaf level detected: ${currentLevel} - using context-aware sorting`);
+            return this.sortLeafItems(items, levelConfig);
+        }
+
+        // Navigation level with sort_numbers - proceed with standard sorting
         const sorted = [...items];
         
         sorted.forEach((item, idx) => {
@@ -1584,19 +1651,57 @@ class DataManager {
             const sortA = a.data?.sort_number ?? a.sort_number;
             const sortB = b.data?.sort_number ?? b.sort_number;
             
-            if (sortA !== undefined && sortB !== undefined) {
-                if (sortA !== sortB) {
-                    return sortA - sortB;
+            if (sortA !== sortB) {
+                return sortA - sortB;
+            }
+            return a.__sortFallbackIndex - b.__sortFallbackIndex;
+        });
+    }
+
+    sortLeafItems(items, levelConfig) {
+        // Context-aware sorting for leaf items (models, songs, verses)
+        const sorted = [...items];
+        
+        // Preserve original index for stable sorting
+        sorted.forEach((item, idx) => {
+            if (item.__sortFallbackIndex === undefined) {
+                Object.defineProperty(item, '__sortFallbackIndex', {
+                    value: idx,
+                    enumerable: false,
+                    writable: true
+                });
+            }
+        });
+
+        return sorted.sort((a, b) => {
+            // Check for track_number (songs in album context)
+            const trackA = a.data?.track_number ?? a.track_number;
+            const trackB = b.data?.track_number ?? b.track_number;
+            
+            if (trackA !== undefined && trackB !== undefined) {
+                if (trackA !== trackB) {
+                    return trackA - trackB;
                 }
                 return a.__sortFallbackIndex - b.__sortFallbackIndex;
             }
+
+            // Check for verse_number (Bible verses in chapter context)
+            const verseA = a.data?.verse_number ?? a.verse_number;
+            const verseB = b.data?.verse_number ?? b.verse_number;
             
-            if (sortA !== undefined) {
-                return -1;
+            if (verseA !== undefined && verseB !== undefined) {
+                if (verseA !== verseB) {
+                    return verseA - verseB;
+                }
+                return a.__sortFallbackIndex - b.__sortFallbackIndex;
             }
+
+            // Fallback: alphabetical by name (for aggregated views or models)
+            const nameA = (a.name || a.key || '').toString().toLowerCase();
+            const nameB = (b.name || b.key || '').toString().toLowerCase();
             
-            if (sortB !== undefined) {
-                return 1;
+            if (nameA !== nameB) {
+                return nameA.localeCompare(nameB);
             }
             
             return a.__sortFallbackIndex - b.__sortFallbackIndex;
