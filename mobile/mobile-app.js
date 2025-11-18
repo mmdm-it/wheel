@@ -31,14 +31,22 @@ class MobileCatalogApp {
         try {
             Logger.debug('Starting mobile volume initialization...');
 
-            // Initialize renderer (includes DOM element setup)
-            await this.renderer.initialize();
-
-            // Set up resize handling early
-            this.setupResizeHandling();
+            // Check URL for direct volume loading
+            const urlParams = new URLSearchParams(window.location.search);
+            const volumeParam = urlParams.get('volume');
             
-            // Set up parent button handler early (works for both volume selector and normal navigation)
-            this.setupParentButtonHandler();
+            if (volumeParam) {
+                // Direct load from URL parameter
+                Logger.debug(`Loading volume from URL parameter: ${volumeParam}`);
+                await this.renderer.initialize();
+                this.setupResizeHandling();
+                this.setupParentButtonHandler();
+                await this.dataManager.loadVolume(volumeParam);
+                this.volumeSelectorMode = false;
+                this.showAllFocusItems();
+                this.initialized = true;
+                return;
+            }
 
             // Discover available volumes
             const volumes = await this.dataManager.discoverVolumes();
@@ -50,11 +58,14 @@ class MobileCatalogApp {
             if (volumes.length === 1) {
                 // Only one volume - load it directly
                 Logger.debug('Single volume found - loading directly');
+                await this.renderer.initialize();
+                this.setupResizeHandling();
+                this.setupParentButtonHandler();
                 await this.loadSelectedVolume(volumes[0]);
             } else {
-                // Multiple volumes - show volume selector
+                // Multiple volumes - show simple HTML selector
                 Logger.debug(`${volumes.length} volumes found - showing selector`);
-                this.showVolumeSelector(volumes);
+                this.showSimpleVolumeSelector(volumes);
             }
 
             this.initialized = true;
@@ -65,21 +76,74 @@ class MobileCatalogApp {
     }
 
     /**
-     * Show the volume selector interface
+     * Show simple HTML volume selector (dev only)
      */
-    showVolumeSelector(volumes) {
+    showSimpleVolumeSelector(volumes) {
         this.volumeSelectorMode = true;
         
-        // Initialize centered volume to middle position
-        this.centeredVolumeIndex = Math.floor((volumes.length - 1) / 2);
+        // Hide SVG and parent button
+        const svg = document.getElementById('catalogSvg');
+        const parentButton = document.getElementById('parentButton');
+        const copyright = document.getElementById('copyright');
         
-        // Show volume selector UI (Detail Sector + Focus Ring + Parent Button)
-        this.renderer.showVolumeSelector(volumes, (selectedVolume) => {
-            this.loadSelectedVolume(selectedVolume);
+        if (svg) svg.style.display = 'none';
+        if (parentButton) parentButton.style.display = 'none';
+        if (copyright) copyright.style.display = 'none';
+        
+        // Create simple HTML selector
+        const selectorDiv = document.createElement('div');
+        selectorDiv.id = 'volumeSelector';
+        selectorDiv.style.cssText = 'font-family: monospace; padding: 20px; max-width: 600px; margin: 0 auto;';
+        
+        let html = '<h1 style="font-size: 18px; margin-bottom: 10px;">Wheel Volume Loader (Dev Only)</h1>';
+        html += '<p style="color: #666; font-size: 12px; margin-bottom: 20px;">Select a catalog to load:</p>';
+        html += '<ul style="list-style: none; padding: 0;">';
+        
+        volumes.forEach((volume, index) => {
+            html += `<li style="margin-bottom: 10px;">`;
+            html += `<a href="#" data-volume-index="${index}" style="display: block; padding: 10px; background: #f0f0f0; text-decoration: none; color: #333; border-radius: 4px;">`;
+            html += `<strong>${volume.name}</strong><br>`;
+            html += `<span style="font-size: 11px; color: #666;">${volume.filename}</span>`;
+            html += `</a></li>`;
         });
         
-        // Set up touch rotation for volume selection
-        this.setupVolumeSelectorTouch(volumes);
+        html += '</ul>';
+        html += `<p style="color: gray; font-size: 11px; margin-top: 20px;">`;
+        html += `Version: ${this.getVersion()} | `;
+        html += `<span id="volume-count">${volumes.length}</span> volume(s) detected</p>`;
+        html += '<p style="color: #999; font-size: 10px; margin-top: 10px;">Tip: Bookmark with ?volume=filename.json to skip this screen</p>';
+        
+        selectorDiv.innerHTML = html;
+        document.body.appendChild(selectorDiv);
+        
+        // Add click handlers
+        selectorDiv.querySelectorAll('a[data-volume-index]').forEach(link => {
+            link.addEventListener('click', async (e) => {
+                e.preventDefault();
+                const index = parseInt(link.getAttribute('data-volume-index'));
+                const volume = volumes[index];
+                
+                // Remove selector
+                selectorDiv.remove();
+                
+                // Show SVG and initialize
+                if (svg) svg.style.display = 'block';
+                if (copyright) copyright.style.display = 'block';
+                
+                await this.renderer.initialize();
+                this.setupResizeHandling();
+                this.setupParentButtonHandler();
+                await this.loadSelectedVolume(volume);
+            });
+        });
+    }
+
+    getVersion() {
+        try {
+            return MOBILE_CONFIG.VERSION ? MOBILE_CONFIG.VERSION.display() : 'unknown';
+        } catch (e) {
+            return 'unknown';
+        }
     }
 
     /**
@@ -96,13 +160,8 @@ class MobileCatalogApp {
             // Exit volume selector mode
             this.volumeSelectorMode = false;
             
-            // Update logo to show catalog logo (works for both single volume and volume selector cases)
+            // Update logo to show catalog logo
             this.renderer.updateDetailSectorLogo();
-            
-            // Transition from volume selector to normal navigation (if coming from volume selector)
-            if (this.renderer.volumeSelectionCallback) {
-                await this.renderer.transitionFromVolumeSelector();
-            }
             
             // Show all focus items for the loaded volume
             this.showAllFocusItems();
@@ -111,54 +170,6 @@ class MobileCatalogApp {
             Logger.error('Failed to load selected volume:', error);
             alert(`Failed to load ${volume.name}. Please try another volume.`);
         }
-    }
-
-    /**
-     * Set up touch rotation for volume selector
-     */
-    setupVolumeSelectorTouch(volumes) {
-        // Clean up existing touch handler
-        if (this.touchHandler) {
-            this.touchHandler.deactivate();
-        }
-
-        // Create touch handler for volume rotation
-        this.touchHandler = new TouchRotationHandler(
-            (offset) => this.renderer.updateVolumeSelectorPositions(offset),
-            (offset) => this.handleVolumeSelectorRotationEnd(offset)
-        );
-
-        // Calculate rotation limits for volume count
-        const limits = this.calculateRotationLimits({ length: volumes.length });
-        this.touchHandler.setRotationLimits(limits.min, limits.max);
-
-        // Activate touch handling
-        this.touchHandler.activate();
-
-        Logger.debug('Volume selector touch rotation setup complete');
-    }
-
-    handleVolumeSelectorRotationEnd(offset) {
-        // Snap to nearest volume
-        const volumes = this.dataManager.availableVolumes;
-        if (!volumes.length) return;
-
-        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-        const middleIndex = (volumes.length - 1) / 2;
-
-        const targetIndex = Math.round(middleIndex + (offset / angleStep));
-        const clampedIndex = Math.max(0, Math.min(volumes.length - 1, targetIndex));
-
-        const targetOffset = (clampedIndex - middleIndex) * angleStep;
-        const limits = this.calculateRotationLimits({ length: volumes.length });
-        const finalOffset = Math.max(limits.min, Math.min(limits.max, targetOffset));
-
-        this.animateRotationTo(finalOffset);
-
-        // Store the currently centered volume index
-        this.centeredVolumeIndex = clampedIndex;
-
-        Logger.debug(`Snapping to volume ${clampedIndex}: ${volumes[clampedIndex].name}`);
     }
 
     handleInitError(error) {
