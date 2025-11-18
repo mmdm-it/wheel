@@ -80,7 +80,9 @@
                     "focus_text_transform": "number_only_or_cil",
                     "is_numeric": true,
                     "use_code_property": false,
-                    "supports_pseudo_parents": ["family"],
+                    "supports_pseudo_parents": [
+                        "family"
+                    ],
                     "detail_sector": {
                         "views": [
                             {
@@ -116,7 +118,9 @@
                     "pseudo_trigger_prefix": "rpp_",
                     "pseudo_value_property": "family",
                     "pseudo_orphan_group": "Other Families",
-                    "supports_pseudo_parents": ["subfamily"]
+                    "supports_pseudo_parents": [
+                        "subfamily"
+                    ]
                 },
                 "subfamily": {
                     "text_format": "title_case",
@@ -356,7 +360,8 @@
                                             "year_discontinued": null
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 97
                             },
                             "Isotta Fraschini": {
                                 "year_founded": 1900,
@@ -398,7 +403,8 @@
                                             "year_discontinued": null
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 38
                             },
                             "Lombardini": {
                                 "year_founded": 1922,
@@ -442,7 +448,8 @@
                                             "year_discontinued": null
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 55
                             },
                             "Ruggerini": {
                                 "year_founded": 1919,
@@ -451,7 +458,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 79
                             },
                             "Iveco": {
                                 "year_founded": 1975,
@@ -460,7 +468,8 @@
                                     "4": {},
                                     "6": {},
                                     "8": {}
-                                }
+                                },
+                                "sort_number": 40
                             },
                             "FPT Industrial": {
                                 "year_founded": 2013,
@@ -468,7 +477,8 @@
                                 "cylinders": {
                                     "4": {},
                                     "6": {}
-                                }
+                                },
+                                "sort_number": 25
                             },
                             "Selva Marine": {
                                 "year_founded": 1954,
@@ -476,7 +486,8 @@
                                 "cylinders": {
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 83
                             },
                             "Aifo": {
                                 "year_founded": 1955,
@@ -484,7 +495,8 @@
                                 "cylinders": {
                                     "4": {},
                                     "6": {}
-                                }
+                                },
+                                "sort_number": 2
                             },
                             "Motori Lombardini": {
                                 "year_founded": 1933,
@@ -493,7 +505,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 66
                             },
                             "Admiral": {
                                 "year_founded": 1966,
@@ -547,7 +560,8 @@
                                             "in_a_family": true
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 1
                             },
                             "Lancia Marine": {
                                 "year_founded": 1906,
@@ -555,7 +569,8 @@
                                 "cylinders": {
                                     "4": {},
                                     "6": {}
-                                }
+                                },
+                                "sort_number": 49
                             }
                         }
                     },
@@ -568,12 +583,14 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 67
                             },
                             "Deutz": {
                                 "year_founded": 1864,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {},
+                                "sort_number": 19
                             },
                             "Mercedes-Benz": {
                                 "year_founded": 1926,
@@ -583,7 +600,8 @@
                                     "6": {},
                                     "8": {},
                                     "12": {}
-                                }
+                                },
+                                "sort_number": 61
                             },
                             "BMW Marine": {
                                 "year_founded": 1916,
@@ -592,7 +610,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 8
                             },
                             "MAN Diesel": {
                                 "year_founded": 1758,
@@ -601,7 +620,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 58
                             },
                             "Fiat": {
                                 "year_founded": 1899,
@@ -610,7 +630,8 @@
                                     "4": {},
                                     "6": {},
                                     "8": {}
-                                }
+                                },
+                                "sort_number": 23
                             },
                             "Kubota Germany": {
                                 "year_founded": 1968,
@@ -619,12 +640,14 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 48
                             },
                             "Steyr Motors": {
                                 "year_founded": 1864,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {},
+                                "sort_number": 86
                             },
                             "Volkswagen Marine": {
                                 "year_founded": 1937,
@@ -632,7 +655,8 @@
                                 "cylinders": {
                                     "4": {},
                                     "6": {}
-                                }
+                                },
+                                "sort_number": 98
                             }
                         }
                     },
@@ -645,7 +669,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 5
                             },
                             "Nanni": {
                                 "year_founded": 1958,
@@ -654,12 +679,14 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 69
                             },
-                            "Sol\u00e9 Diesel": {
+                            "Solé Diesel": {
                                 "year_founded": 1916,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {},
+                                "sort_number": 85
                             },
                             "Bukh": {
                                 "year_founded": 1904,
@@ -668,7 +695,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 10
                             },
                             "Renault Marine": {
                                 "year_founded": 1899,
@@ -676,7 +704,8 @@
                                 "cylinders": {
                                     "4": {},
                                     "6": {}
-                                }
+                                },
+                                "sort_number": 77
                             }
                         }
                     },
@@ -689,7 +718,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 95
                             }
                         }
                     },
@@ -702,7 +732,8 @@
                                     "3": {},
                                     "4": {},
                                     "6": {}
-                                }
+                                },
+                                "sort_number": 76
                             },
                             "Lister Petter": {
                                 "year_founded": 1867,
@@ -711,12 +742,14 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 53
                             },
                             "Gardner": {
                                 "year_founded": 1868,
                                 "year_dissolved": 1994,
-                                "cylinders": {}
+                                "cylinders": {},
+                                "sort_number": 26
                             },
                             "Rolls-Royce": {
                                 "year_founded": 1904,
@@ -725,7 +758,8 @@
                                     "6": {},
                                     "8": {},
                                     "12": {}
-                                }
+                                },
+                                "sort_number": 78
                             },
                             "Kelvin Diesels": {
                                 "year_founded": 1904,
@@ -734,12 +768,14 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 43
                             },
                             "Thornycroft": {
                                 "year_founded": 1864,
                                 "year_dissolved": 1977,
-                                "cylinders": {}
+                                "cylinders": {},
+                                "sort_number": 91
                             },
                             "Dorman": {
                                 "year_founded": 1877,
@@ -748,12 +784,14 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 20
                             },
                             "Enfield": {
                                 "year_founded": 1893,
                                 "year_dissolved": 1967,
-                                "cylinders": {}
+                                "cylinders": {},
+                                "sort_number": 21
                             },
                             "Napier": {
                                 "year_founded": 1808,
@@ -763,7 +801,8 @@
                                     "2": {},
                                     "4": {},
                                     "6": {}
-                                }
+                                },
+                                "sort_number": 70
                             }
                         }
                     },
@@ -778,7 +817,8 @@
                                     "5": {},
                                     "6": {},
                                     "8": {}
-                                }
+                                },
+                                "sort_number": 99
                             },
                             "Scania": {
                                 "year_founded": 1891,
@@ -787,7 +827,8 @@
                                     "4": {},
                                     "6": {},
                                     "8": {}
-                                }
+                                },
+                                "sort_number": 81
                             }
                         }
                     },
@@ -800,25 +841,28 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 88
                             }
                         }
                     },
                     "Finlandia": {
                         "manufacturers": {
-                            "W\u00e4rtsil\u00e4": {
+                            "Wärtsilä": {
                                 "year_founded": 1834,
                                 "year_dissolved": null,
                                 "cylinders": {
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 103
                             },
                             "Sisu": {
                                 "year_founded": 1931,
                                 "year_dissolved": 2011,
-                                "cylinders": {}
+                                "cylinders": {},
+                                "sort_number": 84
                             }
                         }
                     },
@@ -831,7 +875,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 6
                             }
                         }
                     },
@@ -844,7 +889,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 11
                             }
                         }
                     },
@@ -860,7 +906,8 @@
                                     "4": {},
                                     "6": {},
                                     "8": {}
-                                }
+                                },
+                                "sort_number": 105
                             },
                             "Isuzu": {
                                 "year_founded": 1916,
@@ -869,12 +916,14 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 39
                             },
                             "Hino": {
                                 "year_founded": 1942,
                                 "year_dissolved": null,
-                                "cylinders": {}
+                                "cylinders": {},
+                                "sort_number": 32
                             },
                             "Mitsubishi": {
                                 "year_founded": 1870,
@@ -883,7 +932,8 @@
                                     "4": {},
                                     "6": {},
                                     "8": {}
-                                }
+                                },
+                                "sort_number": 65
                             },
                             "Kubota": {
                                 "year_founded": 1890,
@@ -893,7 +943,8 @@
                                     "2": {},
                                     "3": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 47
                             },
                             "Nissan": {
                                 "year_founded": 1933,
@@ -902,7 +953,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 72
                             },
                             "Komatsu": {
                                 "year_founded": 1921,
@@ -911,7 +963,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 46
                             },
                             "Kawasaki": {
                                 "year_founded": 1896,
@@ -920,7 +973,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 42
                             },
                             "Suzuki": {
                                 "year_founded": 1909,
@@ -929,7 +983,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 90
                             },
                             "Toyota": {
                                 "year_founded": 1937,
@@ -938,7 +993,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 93
                             },
                             "Yamaha": {
                                 "year_founded": 1955,
@@ -947,7 +1003,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 104
                             },
                             "Daihatsu": {
                                 "year_founded": 1907,
@@ -956,7 +1013,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 17
                             },
                             "Honda Marine": {
                                 "year_founded": 1946,
@@ -965,7 +1023,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 34
                             },
                             "IHI": {
                                 "year_founded": 1853,
@@ -974,7 +1033,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 36
                             },
                             "Niigata": {
                                 "year_founded": 1896,
@@ -983,7 +1043,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 71
                             },
                             "Mazda Marine": {
                                 "year_founded": 1920,
@@ -992,7 +1053,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 60
                             }
                         }
                     },
@@ -1005,7 +1067,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 16
                             },
                             "Hyundai": {
                                 "year_founded": 1967,
@@ -1014,7 +1077,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 35
                             }
                         }
                     },
@@ -1029,7 +1093,8 @@
                                     "8": {},
                                     "12": {},
                                     "16": {}
-                                }
+                                },
+                                "sort_number": 57
                             },
                             "TMZ": {
                                 "year_founded": 1941,
@@ -1038,7 +1103,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 92
                             },
                             "Zvezda": {
                                 "year_founded": 1954,
@@ -1076,7 +1142,8 @@
                                             "in_a_family": true
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 106
                             },
                             "Russkiy Dizel": {
                                 "year_founded": 1900,
@@ -1085,7 +1152,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 80
                             }
                         }
                     },
@@ -1098,7 +1166,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 87
                             },
                             "Vire Marine": {
                                 "year_founded": null,
@@ -1107,7 +1176,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 96
                             },
                             "Blaxland-Chapman": {
                                 "year_founded": null,
@@ -1116,7 +1186,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 7
                             }
                         }
                     }
@@ -1339,7 +1410,8 @@
                                             "in_a_family": true
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 12
                             },
                             "Cummins": {
                                 "year_founded": 1919,
@@ -1349,7 +1421,8 @@
                                     "6": {},
                                     "8": {},
                                     "12": {}
-                                }
+                                },
+                                "sort_number": 15
                             },
                             "Ford": {
                                 "year_founded": 1903,
@@ -1609,7 +1682,8 @@
                                             }
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 24
                             },
                             "General Motors": {
                                 "year_founded": 1908,
@@ -1618,7 +1692,8 @@
                                     "4": {},
                                     "6": {},
                                     "8": {}
-                                }
+                                },
+                                "sort_number": 27
                             },
                             "MerCruiser": {
                                 "year_founded": 1961,
@@ -1639,7 +1714,8 @@
                                             }
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 63
                             },
                             "Detroit Diesel": {
                                 "year_founded": 1938,
@@ -1659,7 +1735,8 @@
                                             }
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 18
                             },
                             "Palmer Brothers": {
                                 "year_founded": 1896,
@@ -1668,7 +1745,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 75
                             },
                             "Gray Marine": {
                                 "year_founded": 1906,
@@ -1677,7 +1755,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 28
                             },
                             "Lathrop": {
                                 "year_founded": 1896,
@@ -1686,7 +1765,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 50
                             },
                             "Mianus": {
                                 "year_founded": 1900,
@@ -1695,7 +1775,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 64
                             },
                             "Packard": {
                                 "year_founded": 1899,
@@ -1714,7 +1795,8 @@
                                             }
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 74
                             },
                             "Hispano-Suiza": {
                                 "year_founded": 1904,
@@ -1733,7 +1815,8 @@
                                             }
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 33
                             },
                             "Allison": {
                                 "year_founded": 1907,
@@ -1752,7 +1835,8 @@
                                             }
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 4
                             },
                             "Kohler": {
                                 "year_founded": 1873,
@@ -1761,7 +1845,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 45
                             },
                             "Westerbeke": {
                                 "year_founded": 1937,
@@ -1770,7 +1855,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 101
                             },
                             "John Deere": {
                                 "year_founded": 1837,
@@ -1779,7 +1865,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 41
                             },
                             "Waukesha": {
                                 "year_founded": 1906,
@@ -1788,7 +1875,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 100
                             },
                             "Wisconsin": {
                                 "year_founded": 1910,
@@ -1797,7 +1885,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 102
                             },
                             "Onan": {
                                 "year_founded": 1920,
@@ -1806,7 +1895,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 73
                             },
                             "Hercules": {
                                 "year_founded": 1915,
@@ -1815,7 +1905,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 31
                             },
                             "Fairbanks Morse": {
                                 "year_founded": 1893,
@@ -1824,7 +1915,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 22
                             },
                             "Superior": {
                                 "year_founded": 1908,
@@ -1833,7 +1925,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 89
                             },
                             "Lehman": {
                                 "year_founded": 1946,
@@ -1842,7 +1935,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 51
                             },
                             "Lugger": {
                                 "year_founded": 1987,
@@ -1851,7 +1945,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 56
                             },
                             "Liberty": {
                                 "year_founded": null,
@@ -1860,7 +1955,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 52
                             },
                             "Chrysler": {
                                 "year_founded": 1925,
@@ -1869,7 +1965,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 13
                             },
                             "Hall-Scott": {
                                 "year_founded": 1910,
@@ -1888,7 +1985,8 @@
                                             }
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 30
                             },
                             "Alco": {
                                 "year_founded": 1901,
@@ -1897,7 +1995,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 3
                             },
                             "Cooper Industries": {
                                 "year_founded": 1833,
@@ -1906,7 +2005,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 14
                             }
                         }
                     },
@@ -1919,7 +2019,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 14
                             },
                             "Marathon": {
                                 "year_founded": 1888,
@@ -1928,7 +2029,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 59
                             },
                             "Briggs & Stratton": {
                                 "year_founded": 1908,
@@ -1937,7 +2039,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 9
                             },
                             "Universal": {
                                 "year_founded": 1963,
@@ -1946,7 +2049,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 94
                             },
                             "Mercruiser": {
                                 "year_founded": 1961,
@@ -1955,7 +2059,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 62
                             },
                             "Indmar": {
                                 "year_founded": 1946,
@@ -1964,7 +2069,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 37
                             },
                             "Lockwood-Ash": {
                                 "year_founded": 1902,
@@ -2141,7 +2247,8 @@
                                             "in_a_family": false
                                         }
                                     ]
-                                }
+                                },
+                                "sort_number": 54
                             },
                             "Nadler": {
                                 "year_founded": 1920,
@@ -2149,7 +2256,8 @@
                                 "cylinders": {
                                     "1": {},
                                     "2": {}
-                                }
+                                },
+                                "sort_number": 68
                             },
                             "Scripps": {
                                 "year_founded": 1914,
@@ -2158,7 +2266,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 82
                             },
                             "Kermath": {
                                 "year_founded": 1918,
@@ -2167,7 +2276,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 44
                             },
                             "Hacker-Craft": {
                                 "year_founded": 1908,
@@ -2176,7 +2286,8 @@
                                     "1": {},
                                     "2": {},
                                     "4": {}
-                                }
+                                },
+                                "sort_number": 29
                             }
                         }
                     }

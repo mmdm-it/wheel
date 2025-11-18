@@ -304,13 +304,6 @@ class MobileCatalogApp {
             return;
         }
 
-        // On mobile devices, limit large datasets to prevent performance issues
-        const isMobile = window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        if (isMobile && allFocusItems.length > 100) {
-            allFocusItems = allFocusItems.slice(0, 100);
-            Logger.debug(`Limited focus items to 100 for mobile performance (was ${allFocusItems.length})`);
-        }
-
         // Set current focus items and show them
         this.renderer.currentFocusItems = allFocusItems;
         this.renderer.showFocusRing();
