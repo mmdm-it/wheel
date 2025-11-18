@@ -165,6 +165,7 @@ Logger.error()  // Always visible
 | Feature | Documented Status | Actual Status | Match? |
 |---------|------------------|---------------|---------|
 | Pseudo Parents | ✅ Complete v0.6.0 | ✅ Implemented | ✅ YES |
+| Data Validation | ✅ Complete v0.6.3 | ✅ Implemented | ✅ YES |
 | getMarkets() → getTopLevelKeys() | ❌ Critical Blocker | ✅ Fixed | ✅ YES |
 | Parent Button Navigation | ✅ Fixed v0.5.x | ✅ Working | ✅ YES |
 | Focus Ring Debug Gating | ✅ Recent | ✅ Implemented | ✅ YES |
@@ -251,6 +252,7 @@ Logger.error()  // Always visible
 
 The codebase largely matches documentation with high fidelity. Key achievements:
 - Pseudo parent system is genuinely implemented (v0.6.0 claim is valid)
+- Data validation system ensures sort_number integrity (v0.6.3 improvements)
 - Critical domain-specific naming has been fixed
 - Debug/trace infrastructure is production-quality
 

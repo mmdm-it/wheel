@@ -3,8 +3,13 @@
         "display_config": {
             "wheel_volume_version": "1.0",
             "volume_type": "wheel_hierarchical",
-            "volume_name": "Gutenberg Bible (Vulgate)",
-            "volume_description": "The Holy Bible - Vulgate Latin Edition",
+            "volume_name": "Gutenberg Bible",
+            "volume_description": "Complete Protestant Bible for testing hierarchical navigation",
+            "leaf_level": "verse",
+            "focus_ring_startup": {
+                "initial_magnified_item": 1,
+                "top_navigation_level": "testament"
+            },
             "ui_limits": {
                 "focus_ring_max_depth": 7,
                 "parent_button_min_depth": 1

@@ -266,5 +266,5 @@ JSDoc comments in all `mobile/*.js` files. Key modules:
 
 ---
 
-**Version**: 0.6.0
-**Last Updated**: November 15, 2025
+**Version**: 0.6.3
+**Last Updated**: November 18, 2025

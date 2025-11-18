@@ -177,6 +177,10 @@ g.focusItem.selected text {
     box-shadow: none;
 }
 
+#parentButton.disabled {
+    opacity: 0.4;
+}
+
 #parentButton.hidden {
     display: none;
 }

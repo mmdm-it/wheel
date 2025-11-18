@@ -7,6 +7,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.3] - 2025-11-18
+
+### Added
+- **Data Consistency Validation**: Comprehensive sort_number validation for all navigation items
+  - User-facing error messages for missing sort_numbers at navigation levels
+  - Validation passes in DataManager, MobileRenderer, and MobileChildPyramid
+  - Prevents rendering of items without required sort metadata
+- **Context-Aware Leaf Sorting**: Intelligent leaf-level sorting based on context
+  - Track numbers for songs in album context
+  - Verse numbers for Bible verses in chapter context
+  - Alphabetical fallback for aggregated views
+
+### Changed
+- **Sort Number System**: Enforces sort_number requirement for all navigation levels
+  - Navigation items (non-leaf): Mandatory sort_number validation with user error display
+  - Leaf items (models, songs, verses): Context-aware sorting with multiple strategies
+  - Improved data quality through strict validation at multiple checkpoints
+- **Data Structure Updates**: Completed manufacturer cylinder count restructuring
+  - Admiral, Allison, Caterpillar: Cylinder counts now use standard {sort_number, models: []} format
+  - ~70 additional manufacturers: Empty cylinders converted to {sort_number} format
+  - Consistent data structure across all 106 manufacturers in MMdM catalog
+
+### Fixed
+- Eliminated silent sorting failures for items missing sort_numbers
+- Prevented display of unsorted navigation items that could break user experience
+- Resolved structural inconsistencies in cylinder count data across manufacturers
+
+### Technical Details
+- Sort validation occurs in three layers: data loading, rendering, and display
+- Error messages appear as prominent red overlays with affected item details
+- Leaf-level sorting intelligently adapts to available metadata (track_number, verse_number, name)
+
 ### Added
 - CONTRIBUTING.md with comprehensive developer guidelines
 - Expanded README.md with setup instructions and architecture overview
