@@ -21,6 +21,60 @@ class DataManager {
         // Phase 4 Consolidation: Bilingual coordinate storage
         this.coordinateCache = new Map(); // Item key -> HubNucCoordinate
         this.coordinateMetadata = new Map(); // Level -> coordinate stats
+
+        // Targeted tracing (default: Lockwood-Ash)
+        this.traceManufacturerTarget = 'Lockwood-Ash';
+    }
+
+    getActiveTraceTarget() {
+        if (typeof window !== 'undefined') {
+            const runtimeOverride = window.DEBUG_MANUFACTURER_TRACE;
+            if (typeof runtimeOverride === 'string') {
+                const trimmed = runtimeOverride.trim();
+                if (trimmed.length === 0) {
+                    return null;
+                }
+                return trimmed;
+            }
+        }
+        return this.traceManufacturerTarget;
+    }
+
+    shouldTraceManufacturer(item) {
+        const target = this.getActiveTraceTarget();
+        if (!target || !item) {
+            return false;
+        }
+
+        const normalizedTarget = target.toLowerCase();
+        const candidates = [];
+
+        if (item.manufacturer) {
+            candidates.push(item.manufacturer);
+        }
+
+        if (item.name) {
+            candidates.push(item.name);
+        }
+
+        if (Array.isArray(item.__path)) {
+            candidates.push(...item.__path);
+        }
+
+        return candidates.some(value => typeof value === 'string' && value.toLowerCase().includes(normalizedTarget));
+    }
+
+    traceManufacturer(item, message, extraContext = null) {
+        if (!this.shouldTraceManufacturer(item)) {
+            return;
+        }
+
+        const prefix = this.getActiveTraceTarget() || 'Manufacturer';
+        if (extraContext !== null) {
+            Logger.info(`[Trace:${prefix}] ${message}`, extraContext);
+        } else {
+            Logger.info(`[Trace:${prefix}] ${message}`);
+        }
     }
 
     /**
@@ -950,13 +1004,30 @@ class DataManager {
     canSkipVirtualLevel(parentLevelName, childLevelName, levelNames) {
         const parentDepth = levelNames.indexOf(parentLevelName);
         const childDepth = levelNames.indexOf(childLevelName);
-        
-        if (childDepth !== parentDepth + 2) return false; // Not skipping exactly one level
-        
-        const skippedLevelName = levelNames[parentDepth + 1];
-        const skippedLevelConfig = this.getHierarchyLevelConfig(skippedLevelName);
-        
-        return skippedLevelConfig && skippedLevelConfig.is_virtual === true;
+
+        if (parentDepth === -1 || childDepth === -1) {
+            return false;
+        }
+
+        if (childDepth <= parentDepth + 1) {
+            return false;
+        }
+
+        for (let i = parentDepth + 1; i < childDepth; i++) {
+            const skippedLevelName = levelNames[i];
+            const skippedLevelConfig = this.getHierarchyLevelConfig(skippedLevelName);
+            if (!skippedLevelConfig) {
+                return false;
+            }
+
+            const isVirtual = skippedLevelConfig.is_virtual === true;
+            const isPseudo = skippedLevelConfig.is_pseudo_parent === true;
+            if (!isVirtual && !isPseudo) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     /**
@@ -976,10 +1047,16 @@ class DataManager {
         const levelNames = this.getHierarchyLevelNames();
         const parentLevelName = parentItem.__level;
         const parentLevelDepth = parentItem.__levelDepth;
-        const childLevelDepth = this.getHierarchyLevelDepth(childLevelName);
-        const childLevelConfig = this.getHierarchyLevelConfig(childLevelName);
+        let childLevelDepth = this.getHierarchyLevelDepth(childLevelName);
+        let childLevelConfig = this.getHierarchyLevelConfig(childLevelName);
         const parentLevelConfig = this.getHierarchyLevelConfig(parentLevelName);
         const dataPath = parentItem.__dataPath || parentItem.__path || [];
+
+        this.traceManufacturer(parentItem, `getItemsAtLevel request: ${parentLevelName} → ${childLevelName}`, {
+            parentLevel: parentLevelName,
+            childLevel: childLevelName,
+            path: Array.isArray(dataPath) ? [...dataPath] : []
+        });
 
         // Handle pseudo parent navigation before any structural validation
         if (parentItem.__isPseudoParent) {
@@ -987,7 +1064,23 @@ class DataManager {
         }
 
         if (this.levelSupportsPseudoChild(parentLevelName, childLevelName)) {
-            return this.getPseudoParentItems(parentItem, childLevelName, childLevelConfig);
+            const pseudoItems = this.getPseudoParentItems(parentItem, childLevelName, childLevelConfig);
+            if (pseudoItems && pseudoItems.length) {
+                return pseudoItems;
+            }
+
+            const terminalLevelName = this.getPseudoTerminalLevel(childLevelName);
+            if (terminalLevelName && terminalLevelName !== childLevelName) {
+                const previousLevelName = childLevelName;
+                Logger.debug(`getItemsAtLevel: No pseudo ${previousLevelName} nodes; falling back to ${terminalLevelName}`);
+                this.traceManufacturer(parentItem, `Pseudo level empty → falling back to ${terminalLevelName}`, {
+                    requestedLevel: previousLevelName,
+                    terminalLevel: terminalLevelName
+                });
+                childLevelName = terminalLevelName;
+                childLevelConfig = this.getHierarchyLevelConfig(childLevelName);
+                childLevelDepth = this.getHierarchyLevelDepth(childLevelName);
+            }
         }
 
         // Check if child level is virtual
@@ -1007,11 +1100,24 @@ class DataManager {
         
         // Special exception: Allow skipping empty virtual levels
         const allowSkipVirtual = this.canSkipVirtualLevel(parentLevelName, childLevelName, levelNames);
+        const isImmediateChild = childLevelDepth === parentLevelDepth + 1;
         
-        // Validate that child level immediately follows parent level (unless skipping virtual)
-        if (!allowSkipVirtual && childLevelDepth !== parentLevelDepth + 1) {
-            Logger.warn(`getItemsAtLevel: ${childLevelName} is not the immediate child of ${parentLevelName}`);
-            return [];
+        if (!isImmediateChild) {
+            if (!allowSkipVirtual) {
+                Logger.warn(`getItemsAtLevel: ${childLevelName} is not the immediate child of ${parentLevelName}`);
+                this.traceManufacturer(parentItem, `Rejected non-immediate level ${childLevelName}`, {
+                    parentLevel: parentLevelName,
+                    childLevel: childLevelName,
+                    parentDepth: parentLevelDepth,
+                    childDepth: childLevelDepth
+                });
+                return [];
+            }
+
+            this.traceManufacturer(parentItem, `Skipping virtual/pseudo levels between ${parentLevelName} and ${childLevelName}`, {
+                parentDepth: parentLevelDepth,
+                childDepth: childLevelDepth
+            });
         }
 
         // Navigate to the data location using the parent's path
@@ -1028,6 +1134,10 @@ class DataManager {
                 dataLocation = dataLocation[pathSegment];
                 if (!dataLocation) {
                     Logger.warn(`getItemsAtLevel: top-level group '${pathSegment}' not found`);
+                    this.traceManufacturer(parentItem, `Missing top-level segment '${pathSegment}'`, {
+                        level: currentLevelName,
+                        path: dataPath
+                    });
                     return [];
                 }
                 // Top-level groups may have a second-level collection property
@@ -1048,6 +1158,9 @@ class DataManager {
                 dataLocation = dataLocation && dataLocation[pathSegment];
                 if (!dataLocation) {
                     Logger.warn(`getItemsAtLevel: '${pathSegment}' not found at level ${currentLevelName}`);
+                    this.traceManufacturer(parentItem, `Path segment '${pathSegment}' missing at level ${currentLevelName}`, {
+                        path: dataPath
+                    });
                     return [];
                 }
                 
@@ -1078,11 +1191,18 @@ class DataManager {
         if (!childrenData) {
             const childCollectionName = this.getPluralPropertyName(childLevelName);
             Logger.warn(`getItemsAtLevel: could not find '${childCollectionName}' property for ${childLevelName}`);
+            this.traceManufacturer(parentItem, `Missing child collection '${childCollectionName}' for ${childLevelName}`, {
+                parentPath: dataPath
+            });
             return [];
         }
 
         // Get the child items from this location
-        return this.extractChildItems(childrenData, childLevelName, parentItem);
+        const childItems = this.extractChildItems(childrenData, childLevelName, parentItem);
+        this.traceManufacturer(parentItem, `Resolved ${childItems.length} ${childLevelName} item(s)`, {
+            sampleNames: childItems.slice(0, 3).map(item => item.name)
+        });
+        return childItems;
     }
 
     /**
@@ -1306,6 +1426,10 @@ class DataManager {
             }
         });
 
+        if (!groupMap.size) {
+            return [];
+        }
+
         const pseudoItems = [];
         groupMap.forEach((items, groupName) => {
             pseudoItems.push(
@@ -1353,6 +1477,8 @@ class DataManager {
         const levelConfig = this.getHierarchyLevelConfig(childLevelName);
         const items = [];
 
+        const hierarchyNames = this.getHierarchyLevelNames();
+
         if (Array.isArray(dataLocation)) {
             // This is an array of leaf items (final level in hierarchy)
             dataLocation.forEach((itemData, index) => {
@@ -1374,6 +1500,8 @@ class DataManager {
             Object.keys(dataLocation).forEach(itemKey => {
                 const childData = dataLocation[itemKey];
                 const isNumeric = levelConfig && levelConfig.is_numeric || false;
+                const hasFurtherLevels = childLevelDepth < hierarchyNames.length - 1;
+                const childIsArray = Array.isArray(childData);
                 
                 // Create item with appropriate properties
                 const item = {
@@ -1382,7 +1510,8 @@ class DataManager {
                     key: `${parentItem.key}/${itemKey}`,
                     __level: childLevelName,
                     __levelDepth: childLevelDepth,
-                    __isLeaf: Array.isArray(childData), // Leaf if child is array
+                    // Treat arrays as parents when deeper levels still exist so Child Pyramid can show actual leaf nodes
+                    __isLeaf: childIsArray ? !hasFurtherLevels : false,
                     __path: [...parentItem.__path, itemKey]
                 };
 
@@ -1393,7 +1522,7 @@ class DataManager {
                     item[propertyName] = parseInt(itemKey);
                 }
                 // Store child data if it's not an array (arrays are leaf items, handled separately)
-                if (!Array.isArray(childData)) {
+                if (!childIsArray) {
                     item.data = childData;
                 }
 

@@ -49,6 +49,30 @@ class MobileRenderer {
         this.chainPosition = 0; // Current position in the linear chain (0-based)
         this.visibleStartIndex = 0; // First visible focus item index
         this.visibleEndIndex = 0; // Last visible focus item index
+        this.forceImmediateFocusSettlement = false; // Skip rotation delay for programmatic focus moves
+
+        // Debug controls
+        this.focusRingDebugFlag = this.computeFocusRingDebugFlag();
+    }
+
+    computeFocusRingDebugFlag() {
+        if (typeof window === 'undefined') {
+            return false;
+        }
+
+        try {
+            const persisted = localStorage.getItem('debugFocusRing') === 'true';
+            const queryFlag = new URLSearchParams(window.location.search).get('debugFocusRing') === '1';
+            return persisted || queryFlag;
+        } catch (error) {
+            return false;
+        }
+    }
+
+    focusRingDebug(...args) {
+        if ((typeof window !== 'undefined' && window.DEBUG_FOCUS_RING) || this.focusRingDebugFlag) {
+            Logger.debug(...args);
+        }
     }
     
     async initialize() {
@@ -81,7 +105,7 @@ class MobileRenderer {
         ring.setAttribute('stroke-width', '1');
         ring.setAttribute('opacity', '0.8');
         
-        Logger.debug(`Magnifier positioned at (${position.x.toFixed(1)}, ${position.y.toFixed(1)}) with radius ${MOBILE_CONFIG.RADIUS.MAGNIFIER}`);
+        this.focusRingDebug(`Magnifier positioned at (${position.x.toFixed(1)}, ${position.y.toFixed(1)}) with radius ${MOBILE_CONFIG.RADIUS.MAGNIFIER}`);
     }
     
     handleViewportChange() {
@@ -195,7 +219,7 @@ class MobileRenderer {
         // Trigger immediate settling for the currently selected focus item
         this.isRotating = false;
         if (this.selectedFocusItem) {
-            Logger.debug('Rotation ended, showing children for settled focus item:', this.selectedFocusItem.name);
+            this.focusRingDebug('Rotation ended, showing children for settled focus item:', this.selectedFocusItem.name);
             const selectedIndex = this.currentFocusItems.findIndex(m => m.key === this.selectedFocusItem.key);
             if (selectedIndex >= 0) {
                 const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
@@ -210,7 +234,7 @@ class MobileRenderer {
     buildActivePath(focusItem) {
         // Pure universal: Use metadata __path property
         this.activePath = focusItem.__path || [];
-        Logger.debug('Built active path:', this.activePath);
+        this.focusRingDebug('Built active path:', this.activePath);
     }
     
     showChildContentForFocusItem(focusItem, angle) {
@@ -232,21 +256,21 @@ class MobileRenderer {
             return;
         }
 
-        Logger.debug(`Focus item is at level '${currentLevel}', getting '${nextLevel}' items`);
+        const { level: resolvedLevel, items: childItems } = this.resolveChildLevel(focusItem, nextLevel);
+        const cacheLevel = resolvedLevel || nextLevel;
 
-        // Get child items at the immediate next level
-        const childItems = this.getChildItemsForLevel(focusItem, nextLevel);
+        Logger.debug(`Focus item is at level '${currentLevel}', requested '${nextLevel}', resolved to '${cacheLevel}'`);
         
         if (!childItems || childItems.length === 0) {
-            Logger.debug(`No ${nextLevel} items found for ${currentLevel}: ${focusItem.name} - treating as leaf`);
-            this.leafStateCache.set(this.getLeafCacheKey(focusItem, nextLevel), true);
+            Logger.debug(`No child items found for ${currentLevel}: ${focusItem.name} - treating as leaf`);
+            this.leafStateCache.set(this.getLeafCacheKey(focusItem, cacheLevel), true);
             this.handleLeafFocusSelection(focusItem);
             return;
         }
 
-        this.leafStateCache.set(this.getLeafCacheKey(focusItem, nextLevel), false);
+        this.leafStateCache.set(this.getLeafCacheKey(focusItem, cacheLevel), false);
 
-        const itemType = this.getLevelPluralLabel(nextLevel);
+        const itemType = this.getLevelPluralLabel(cacheLevel);
         Logger.debug(`Found ${childItems.length} ${itemType} for ${currentLevel}: ${focusItem.name}`);
 
         // Show child items in Child Pyramid
@@ -261,6 +285,36 @@ class MobileRenderer {
         // Pure universal: Use DataManager's universal navigation method
         const childLevelName = childLevel;
         return this.dataManager.getItemsAtLevel(parentItem, childLevelName) || [];
+    }
+
+    resolveChildLevel(parentItem, startingLevel) {
+        if (!startingLevel) {
+            return { level: null, items: [] };
+        }
+
+        const visited = new Set();
+        let levelName = startingLevel;
+
+        while (levelName && !visited.has(levelName)) {
+            visited.add(levelName);
+
+            const childItems = this.getChildItemsForLevel(parentItem, levelName);
+            if (childItems && childItems.length) {
+                return { level: levelName, items: childItems };
+            }
+
+            const isPseudo = typeof this.dataManager.isPseudoLevel === 'function'
+                ? this.dataManager.isPseudoLevel(levelName)
+                : false;
+
+            if (!isPseudo) {
+                break;
+            }
+
+            levelName = this.getNextHierarchyLevel(levelName);
+        }
+
+        return { level: levelName, items: [] };
     }
 
     getTopLevelItems() {
@@ -461,7 +515,7 @@ class MobileRenderer {
             const arcTopTarget = maxViewportAngle - angleStep; // Maintain small visual margin
             const offset = arcTopTarget - (middleIndex * angleStep);
 
-            Logger.debug(`Sorted items (${this.currentFocusItems.length}): positioning at arc top, offset = ${offset * 180 / Math.PI}°`);
+            this.focusRingDebug(`Sorted items (${this.currentFocusItems.length}): positioning at arc top, offset = ${offset * 180 / Math.PI}°`);
             return offset;
         }
         
@@ -479,7 +533,7 @@ class MobileRenderer {
         // Calculate offset needed to center this focus item
         const offset = (targetIndex - middleIndex) * angleStep;
         
-        Logger.debug(`Even focus items (${this.currentFocusItems.length}): centering index ${targetIndex}, offset = ${offset * 180 / Math.PI}°`);
+        this.focusRingDebug(`Even focus items (${this.currentFocusItems.length}): centering index ${targetIndex}, offset = ${offset * 180 / Math.PI}°`);
         return offset;
     }
     
@@ -497,9 +551,11 @@ class MobileRenderer {
         }
         
         // Track rotation changes - hide Child Pyramid during rotation
-        const isRotating = this.lastRotationOffset !== undefined && Math.abs(rotationOffset - this.lastRotationOffset) > 0.001;
+        const programmaticFocus = this.forceImmediateFocusSettlement === true;
+        const rotationTriggered = this.lastRotationOffset !== undefined && Math.abs(rotationOffset - this.lastRotationOffset) > 0.001;
+        const isRotating = !programmaticFocus && rotationTriggered;
         if (isRotating) {
-            Logger.debug('🔄 Rotation detected - hiding Child Pyramid temporarily');
+            this.focusRingDebug('🔄 Rotation detected - hiding Child Pyramid temporarily');
             
             // Hide Child Pyramid and fan lines during rotation
             this.elements.childRingGroup.classList.add('hidden');
@@ -533,13 +589,13 @@ class MobileRenderer {
         const isBibleBooks = allFocusItems.length > 0 && allFocusItems[0].name?.startsWith('Liber_');
         
         if (isBibleBooks) {
-            Logger.debug(`📚 BIBLE BOOKS - Focus items order (${allFocusItems.length} items):`);
+            this.focusRingDebug(`📚 BIBLE BOOKS - Focus items order (${allFocusItems.length} items):`);
             allFocusItems.forEach((item, idx) => {
                 const sortNum = item.data?.sort_number ?? item.sort_number ?? 'none';
-                Logger.debug(`  [${idx}] ${item.name} (sort_number: ${sortNum})`);
+                this.focusRingDebug(`  [${idx}] ${item.name} (sort_number: ${sortNum})`);
             });
-            Logger.debug(`🎯 Center angle: ${(centerAngle * 180 / Math.PI).toFixed(1)}°, Rotation offset: ${(rotationOffset * 180 / Math.PI).toFixed(1)}°`);
-            Logger.debug(`🎯 Adjusted center angle: ${(adjustedCenterAngle * 180 / Math.PI).toFixed(1)}°`);
+            this.focusRingDebug(`🎯 Center angle: ${(centerAngle * 180 / Math.PI).toFixed(1)}°, Rotation offset: ${(rotationOffset * 180 / Math.PI).toFixed(1)}°`);
+            this.focusRingDebug(`🎯 Adjusted center angle: ${(adjustedCenterAngle * 180 / Math.PI).toFixed(1)}°`);
         }
 
         // Process all focus items but only render those in viewport window
@@ -548,7 +604,7 @@ class MobileRenderer {
             const angle = adjustedCenterAngle + (middleIndex - index) * angleStep;
             
             if (isBibleBooks) {
-                Logger.debug(`📐 Item [${index}] ${focusItem.name}: angle = ${(angle * 180 / Math.PI).toFixed(1)}°`);
+                this.focusRingDebug(`📐 Item [${index}] ${focusItem.name}: angle = ${(angle * 180 / Math.PI).toFixed(1)}°`);
             }
             
             // Validate calculated angle
@@ -570,7 +626,7 @@ class MobileRenderer {
                 if (isSelected) {
                     selectedFocusItem = focusItem;
                     selectedIndex = index;
-                    Logger.debug('🎯 SELECTED during rotation:', focusItem.name, 'angleDiff:', angleDiff.toFixed(3), 'threshold:', (angleStep * 0.5).toFixed(3));
+                    this.focusRingDebug('🎯 SELECTED during rotation:', focusItem.name, 'angleDiff:', angleDiff.toFixed(3), 'threshold:', (angleStep * 0.5).toFixed(3));
                 }
                 
                 // Create focus element
@@ -588,40 +644,53 @@ class MobileRenderer {
             // Build appropriate active path based on item type
             this.buildActivePath(selectedFocusItem);
             
-            // Mark as rotating and defer child display
-            this.isRotating = true;
             this.selectedFocusItem = selectedFocusItem;
-            
-            // Clear any existing settle timeout
-            if (this.settleTimeout) {
-                clearTimeout(this.settleTimeout);
-            }            // Hide child ring immediately during rotation to prevent strobing
-            Logger.debug('🔄 ROTATION: Focus item selected but rotating - hiding Child Pyramid during rotation');
-            this.elements.childRingGroup.classList.add('hidden');
-            this.elements.detailItemsGroup.classList.add('hidden');
-            this.clearFanLines();
-            
-            // Update Parent Button to show the parent level name
             const parentLevel = this.getPreviousHierarchyLevel(this.getItemHierarchyLevel(selectedFocusItem));
             const parentName = parentLevel ? this.getParentNameForLevel(selectedFocusItem, parentLevel) : null;
             this.updateParentButton(parentName);
-            
-            // Set timeout to show appropriate child content after settling
-            this.settleTimeout = setTimeout(() => {
-                Logger.debug('⏰ TIMEOUT FIRED: isRotating=', this.isRotating, 'selectedFocusItem=', this.selectedFocusItem && this.selectedFocusItem.name, 'expectedItem=', selectedFocusItem.name);
+
+            const angle = adjustedCenterAngle + (middleIndex - selectedIndex) * angleStep;
+
+            if (this.forceImmediateFocusSettlement) {
+                this.focusRingDebug('🔺 Immediate focus settlement triggered - showing child content without rotation delay');
                 this.isRotating = false;
-                if (this.selectedFocusItem && this.selectedFocusItem.key === selectedFocusItem.key) {
-                    const angle = adjustedCenterAngle + (middleIndex - selectedIndex) * angleStep;
-                    Logger.debug('✅ Focus item settled:', selectedFocusItem.name, 'showing child content');
-                    this.showChildContentForFocusItem(selectedFocusItem, angle);
-                } else {
-                    Logger.debug('❌ Timeout fired but item changed - not showing child content');
+                if (this.settleTimeout) {
+                    clearTimeout(this.settleTimeout);
                 }
-            }, MOBILE_CONFIG.TIMING.FOCUS_ITEM_SETTLE_DELAY);
+                this.elements.detailItemsGroup.classList.add('hidden');
+                this.clearFanLines();
+                this.showChildContentForFocusItem(selectedFocusItem, angle);
+            } else {
+                // Mark as rotating and defer child display
+                this.isRotating = true;
+
+                // Clear any existing settle timeout
+                if (this.settleTimeout) {
+                    clearTimeout(this.settleTimeout);
+                }
+
+                // Hide child ring immediately during rotation to prevent strobing
+                this.focusRingDebug('🔄 ROTATION: Focus item selected but rotating - hiding Child Pyramid during rotation');
+                this.elements.childRingGroup.classList.add('hidden');
+                this.elements.detailItemsGroup.classList.add('hidden');
+                this.clearFanLines();
+
+                // Set timeout to show appropriate child content after settling
+                this.settleTimeout = setTimeout(() => {
+                    this.focusRingDebug('⏰ TIMEOUT FIRED: isRotating=', this.isRotating, 'selectedFocusItem=', this.selectedFocusItem && this.selectedFocusItem.name, 'expectedItem=', selectedFocusItem.name);
+                    this.isRotating = false;
+                    if (this.selectedFocusItem && this.selectedFocusItem.key === selectedFocusItem.key) {
+                        this.focusRingDebug('✅ Focus item settled:', selectedFocusItem.name, 'showing child content');
+                        this.showChildContentForFocusItem(selectedFocusItem, angle);
+                    } else {
+                        this.focusRingDebug('❌ Timeout fired but item changed - not showing child content');
+                    }
+                }, MOBILE_CONFIG.TIMING.FOCUS_ITEM_SETTLE_DELAY);
+            }
             
         } else {
             // Hide child ring immediately when no focus item is selected (during rotation)
-            Logger.debug('🔄 ROTATION: No focus item selected - hiding Child Pyramid immediately');
+            this.focusRingDebug('🔄 ROTATION: No focus item selected - hiding Child Pyramid immediately');
             this.elements.childRingGroup.classList.add('hidden');
             this.elements.detailItemsGroup.classList.add('hidden');
             this.clearFanLines();
@@ -1101,61 +1170,15 @@ class MobileRenderer {
         this.lastRotationOffset = centerOffset;
 
         // Update Focus Ring with siblings - clicked item should be centered
-        this.updateFocusRingPositions(centerOffset);
-
-        Logger.debug(`🔺 Focus Ring updated with ${allSiblings.length} ${itemLevel}s, selected:`, item.name, 'centerOffset:', centerOffset.toFixed(3));
-
-        // 8. If a leaf item was selected, expand the blue circle to create the Detail Sector
-        Logger.debug('🔵 DETAIL SECTOR CHECK: itemLevel =', itemLevel, 'item.__isLeaf =', item.__isLeaf);
-
-        const nextLevel = this.getNextHierarchyLevel(itemLevel);
-        let childItems = null;
-        let isLeaf = false;
-
-        if (!nextLevel) {
-            isLeaf = true;
-            this.leafStateCache.set(this.getLeafCacheKey(item, null), true);
-        } else {
-            childItems = this.getChildItemsForLevel(item, nextLevel);
-            isLeaf = !childItems || childItems.length === 0;
-            this.leafStateCache.set(this.getLeafCacheKey(item, nextLevel), isLeaf);
+        this.forceImmediateFocusSettlement = true;
+        try {
+            this.updateFocusRingPositions(centerOffset);
+        } finally {
+            this.forceImmediateFocusSettlement = false;
         }
 
-        item.__isLeaf = isLeaf;
-
-        if (isLeaf) {
-            Logger.debug('🔵 Leaf item detected - routing to Detail Sector handler:', item.name);
-            this.handleLeafFocusSelection(item);
-        }
-
-        // 6. Update Parent Button to show the parent level
-        const parentName = this.getParentNameForLevel(item, parentLevel);
-        this.updateParentButton(parentName);
-
-        // 7. Get children for the next level and show in Child Pyramid
-        // Skip this for leaf items since they show the Detail Sector instead
-        if (!isLeaf && nextLevel) {
-            const itemType = this.getLevelPluralLabel(nextLevel);
-            const itemsToShow = childItems || [];
-
-            setTimeout(() => {
-                if (itemsToShow.length > 0) {
-                    this.childPyramid.showChildPyramid(itemsToShow, itemType);
-                    Logger.debug(`🔺 Showing ${itemsToShow.length} ${itemType} in Child Pyramid for ${itemLevel}:`, item.name);
-                } else {
-                    Logger.warn(`🔺 No ${itemType} found for ${itemLevel}:`, item.name);
-                }
-            }, 300);
-        } else {
-            // For leaf items, hide the Child Pyramid since Detail Sector is shown
-            setTimeout(() => {
-                this.elements.childRingGroup.innerHTML = '';
-                this.elements.childRingGroup.classList.add('hidden');
-                Logger.debug('🔺 Detail Sector shown - Child Pyramid hidden for leaf item:', item.name);
-            }, 300);
-        }
-
-        Logger.debug(`🔺 ${itemLevel} nzone migration complete`);
+        Logger.debug(`🔺 Immediate focus settlement complete for ${itemLevel} ${item.name}`);
+        return;
     }
 
     /**
@@ -1686,291 +1709,6 @@ class MobileRenderer {
             
             Logger.debug(`🔵 Detail Sector text created at (${cx.toFixed(1)}, ${cy.toFixed(1)}) - no logo configured`);
         }
-    }
-
-    /**
-     * VOLUME SELECTOR MODE
-     * Show the volume selector interface
-     */
-    showVolumeSelector(volumes, onSelectCallback) {
-        Logger.debug('📖 Showing volume selector with', volumes.length, 'volumes');
-        
-        this.volumeSelectionCallback = onSelectCallback;
-        this.volumeItems = volumes.map((volume, index) => ({
-            name: volume.name,
-            description: volume.description,
-            filename: volume.filename,
-            __volumeData: volume,
-            __index: index
-        }));
-        
-        // 1. Expand Detail Sector with message
-        this.showVolumeSelectorMessage();
-        
-        // 2. Show volumes in Focus Ring
-        this.showVolumesInFocusRing();
-        
-        // 3. Show "Explore" button
-        this.showExploreButton();
-        
-        Logger.debug('📖 Volume selector UI displayed');
-    }
-
-    /**
-     * Show "What would you like to see?" message in expanded Detail Sector
-     */
-    showVolumeSelectorMessage() {
-        const detailCircle = document.getElementById('detailSectorCircle');
-        const detailLogo = document.getElementById('detailSectorLogo');
-        
-        if (!detailCircle || !detailLogo) {
-            Logger.error('Detail Sector elements not found');
-            return;
-        }
-        
-        // Calculate expanded state
-        const arcParams = this.viewport.getArcParameters();
-        const endRadius = arcParams.radius * 0.98;
-        const endX = arcParams.centerX;
-        const endY = arcParams.centerY;
-        
-        // Move circle to expanded state (center of focus ring)
-        detailCircle.setAttribute('cx', endX);
-        detailCircle.setAttribute('cy', endY);
-        detailCircle.setAttribute('r', endRadius);
-        detailCircle.setAttribute('opacity', '1.0');
-        
-        // Position logo
-        const logoEndState = this.getDetailSectorLogoEndState();
-        detailLogo.setAttribute('x', logoEndState.x);
-        detailLogo.setAttribute('y', logoEndState.y);
-        detailLogo.setAttribute('width', logoEndState.width);
-        detailLogo.setAttribute('height', logoEndState.height);
-        detailLogo.setAttribute('opacity', '0.10');
-        
-        // Create message text
-        const messageGroup = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-        messageGroup.setAttribute('id', 'catalogSelectorMessage');
-        
-        const message = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        message.setAttribute('x', endX);
-        message.setAttribute('y', endY);
-        message.setAttribute('text-anchor', 'middle');
-        message.setAttribute('dominant-baseline', 'middle');
-        message.setAttribute('fill', '#f1b800');
-        message.setAttribute('font-family', 'Montserrat, sans-serif');
-        message.setAttribute('font-size', '24');
-        message.setAttribute('font-weight', '700');
-        message.textContent = 'What would you like to see?';
-        
-        messageGroup.appendChild(message);
-        
-        // Add version number in upper-right corner
-        const versionText = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        versionText.setAttribute('id', 'versionText');
-        const viewport = this.viewport.getViewportInfo();
-        versionText.setAttribute('x', (viewport.width / 2) - 15);
-        versionText.setAttribute('y', -(viewport.height / 2) + 25);
-        versionText.setAttribute('text-anchor', 'end');
-        versionText.setAttribute('dominant-baseline', 'hanging');
-        versionText.setAttribute('fill', '#333333');
-        versionText.setAttribute('font-family', 'Montserrat, sans-serif');
-        versionText.setAttribute('font-size', '22');
-        versionText.setAttribute('font-weight', '600');
-        versionText.setAttribute('opacity', '1.0');
-        versionText.textContent = VERSION.display();
-        
-        messageGroup.appendChild(versionText);
-        this.elements.mainGroup.appendChild(messageGroup);
-        
-        Logger.debug('📖 Catalog selector message displayed in Detail Sector');
-        Logger.debug(`📋 Version: ${VERSION.display()}`);
-    }
-
-    /**
-     * Show available volumes in the Focus Ring
-     */
-    showVolumesInFocusRing() {
-        const focusRingGroup = this.elements.focusRingGroup;
-        if (!focusRingGroup) {
-            Logger.error('Focus ring group not found');
-            return;
-        }
-        
-        // Clear any existing focus items
-        while (focusRingGroup.firstChild) {
-            focusRingGroup.removeChild(focusRingGroup.firstChild);
-        }
-        
-        // Show focus ring
-        focusRingGroup.classList.remove('hidden');
-        
-        // Position volume items in focus ring
-        this.updateVolumeSelectorPositions(0);
-        
-        // Add click handlers to volume items
-        this.addVolumeClickHandlers();
-        
-        Logger.debug('📖 Volumes displayed in Focus Ring');
-    }
-
-    /**
-     * Update positions of volumes in the Focus Ring
-     */
-    updateVolumeSelectorPositions(rotationOffset) {
-        const focusRingGroup = this.elements.focusRingGroup;
-        if (!focusRingGroup) return;
-        
-        // Clear existing elements
-        while (focusRingGroup.firstChild) {
-            focusRingGroup.removeChild(focusRingGroup.firstChild);
-        }
-        
-        const arcParams = this.viewport.getArcParameters();
-        const centerAngle = this.viewport.getCenterAngle();
-        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-        
-        const middleIndex = (this.volumeItems.length - 1) / 2;
-        
-        this.volumeItems.forEach((volume, index) => {
-            const offsetFromMiddle = middleIndex - index;
-            const itemAngle = centerAngle + (offsetFromMiddle * angleStep) + rotationOffset;
-            
-            // Position on arc
-            const x = arcParams.centerX + arcParams.radius * Math.cos(itemAngle);
-            const y = arcParams.centerY + arcParams.radius * Math.sin(itemAngle);
-            
-            // Check if this volume is centered (selected)
-            const isCentered = Math.abs(offsetFromMiddle * angleStep + rotationOffset) < angleStep / 2;
-            
-            // Create a proper focus node element using the existing method
-            const volumeFocusItem = {
-                name: volume.name,
-                __level: 'volume_selector',
-                __volumeData: volume,
-                __index: index
-            };
-            
-            const focusElement = this.createFocusElement(
-                volumeFocusItem,
-                { x, y },
-                itemAngle,
-                isCentered
-            );
-            
-            // Add volume-specific attributes
-            focusElement.setAttribute('data-volume-index', index);
-            focusElement.classList.add('volume-selector-item');
-            focusElement.style.cursor = 'pointer';
-            
-            focusRingGroup.appendChild(focusElement);
-        });
-        
-        Logger.debug(`📖 Updated ${this.volumeItems.length} volume positions`);
-    }
-
-    /**
-     * Add click handlers to volume items
-     */
-    addVolumeClickHandlers() {
-        const focusRingGroup = this.elements.focusRingGroup;
-        if (!focusRingGroup) return;
-        
-        focusRingGroup.addEventListener('click', (e) => {
-            // Find the volume item group (might click on circle or text inside it)
-            let target = e.target;
-            while (target && !target.classList.contains('volume-selector-item')) {
-                target = target.parentElement;
-                if (target === focusRingGroup) break; // Reached top without finding item
-            }
-            
-            if (target && target.classList.contains('volume-selector-item')) {
-                const index = parseInt(target.getAttribute('data-volume-index'));
-                const volume = this.volumeItems[index];
-                Logger.debug(`📖 Volume selected: ${volume.name}`);
-                
-                if (this.volumeSelectionCallback && volume.__volumeData) {
-                    this.volumeSelectionCallback(volume.__volumeData);
-                }
-            }
-        });
-    }
-
-    /**
-     * Show "Explore" button in Parent Button position
-     */
-    showExploreButton() {
-        const parentButton = document.getElementById('parentButton');
-        if (!parentButton) {
-            Logger.error('Parent button not found');
-            return;
-        }
-        
-        const parentText = document.getElementById('parentText');
-        if (parentText) {
-            parentText.textContent = 'SI';
-        }
-        
-        parentButton.classList.remove('hidden');
-        
-        // Make button trigger volume selection when clicked
-        parentButton.setAttribute('data-volume-selector-mode', 'true');
-        
-        Logger.debug('📖 Explore button displayed');
-    }
-
-    /**
-     * Transition from catalog selector to normal navigation
-     */
-    async transitionFromVolumeSelector() {
-        Logger.debug('📖 Transitioning from volume selector to normal navigation');
-        
-        // 1. Remove volume selector message
-        const messageGroup = document.getElementById('catalogSelectorMessage');
-        if (messageGroup) {
-            messageGroup.remove();
-        }
-        
-        // 2. Collapse Detail Sector
-        this.collapseDetailSector();
-        
-        // 3. Clear Focus Ring (will be repopulated with actual volume data)
-        const focusRingGroup = this.elements.focusRingGroup;
-        if (focusRingGroup) {
-            while (focusRingGroup.firstChild) {
-                focusRingGroup.removeChild(focusRingGroup.firstChild);
-            }
-        }
-        
-        // 4. Hide Parent Button temporarily (will be shown by normal navigation)
-        const parentButton = document.getElementById('parentButton');
-        if (parentButton) {
-            parentButton.classList.add('hidden');
-            parentButton.removeAttribute('data-volume-selector-mode');
-        }
-        
-        // 5. Clear fan lines (will be drawn by normal navigation)
-        this.clearFanLines();
-        
-        // 6. Update logo to show catalog logo instead of "Choose an Image"
-        this.updateDetailSectorLogo();
-        
-        // 7. Remove Detail Sector elements for non-MMDM volumes
-        const displayConfig = this.dataManager.getDisplayConfig();
-        if (!displayConfig || displayConfig.volume_name !== 'Marine Diesel Manifold Volume') {
-            const detailCircle = document.getElementById('detailSectorCircle');
-            const detailLogo = document.getElementById('detailSectorLogo');
-            if (detailCircle) {
-                detailCircle.remove();
-                Logger.debug('🔵 Detail Sector circle removed for non-MMDM volume');
-            }
-            if (detailLogo) {
-                detailLogo.remove();
-                Logger.debug('🔵 Detail Sector logo removed for non-MMDM volume');
-            }
-        }
-        
-        Logger.debug('📖 Transition complete - ready for normal navigation');
     }
 
     
