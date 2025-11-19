@@ -1,4 +1,5 @@
 # Wheel - Universal Hierarchical Data Navigation System
+**Version 0.6.4** | November 19, 2025
 
 > A revolutionary 2D navigation interface for hierarchical data. Mobile-first ES6 architecture supporting any data domain through JSON configuration.
 

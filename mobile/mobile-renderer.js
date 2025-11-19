@@ -273,6 +273,10 @@ class MobileRenderer {
         const itemType = this.getLevelPluralLabel(cacheLevel);
         Logger.debug(`Found ${childItems.length} ${itemType} for ${currentLevel}: ${focusItem.name}`);
 
+        // Set the active type to the current focus item's level
+        this.activeType = currentLevel;
+        this.selectedFocusItem = focusItem;
+        
         // Update Parent Button for non-leaf items
         const itemLevel = this.getItemHierarchyLevel(focusItem);
         const parentLevel = itemLevel ? this.getPreviousHierarchyLevel(itemLevel) : null;
@@ -298,6 +302,12 @@ class MobileRenderer {
      * Display a critical user-visible error for missing sort_number
      */
     showSortNumberError(items, context) {
+        // Countries are never displayed as a list (only in Parent Button)
+        // so they don't need sort_numbers
+        if (items.length > 0 && items[0].__level === 'country') {
+            return false;
+        }
+        
         const itemsWithoutSort = items.filter(item => {
             const sortNum = item.data?.sort_number ?? item.sort_number;
             return sortNum === undefined || sortNum === null;
@@ -323,6 +333,21 @@ class MobileRenderer {
             max-width: 80%;
         `;
         
+        // Extract parent context from first item's path
+        const firstItem = itemsWithoutSort[0];
+        let parentInfo = '';
+        if (firstItem.__path && firstItem.__path.length > 0) {
+            // Get parent names from path (exclude the item itself)
+            const parentNames = firstItem.__path.slice(0, -1).map(segment => {
+                // Handle both string segments and object segments
+                if (typeof segment === 'string') return segment;
+                return segment.name || segment.key || segment;
+            });
+            if (parentNames.length > 0) {
+                parentInfo = `<div style="font-size: 14px; margin-top: 10px; opacity: 0.9;">Parent: ${parentNames.join(' → ')}</div>`;
+            }
+        }
+        
         const itemList = itemsWithoutSort.map(item => 
             `• ${item.name || item.key} (level: ${item.__level || 'unknown'})`
         ).join('<br>');
@@ -330,6 +355,7 @@ class MobileRenderer {
         errorDiv.innerHTML = `
             <div style="font-size: 24px; margin-bottom: 15px;">⚠️ ERROR - Sort Number Missing</div>
             <div style="font-size: 16px; margin-bottom: 10px;">${context}</div>
+            ${parentInfo}
             <div style="font-size: 14px; text-align: left; margin-top: 15px;">${itemList}</div>
             <div style="font-size: 12px; margin-top: 20px; opacity: 0.9;">Items cannot be displayed without sort_number</div>
         `;
@@ -519,9 +545,12 @@ class MobileRenderer {
         this.clearFanLines();
 
         // Update current selection state
-    this.selectedFocusItem = { ...focusItem };
+        this.selectedFocusItem = { ...focusItem };
 
+        // Set the active type to the current focus item's level
         const itemLevel = this.getItemHierarchyLevel(focusItem);
+        this.activeType = itemLevel;
+        
         const parentLevel = itemLevel ? this.getPreviousHierarchyLevel(itemLevel) : null;
         const parentName = parentLevel ? this.getParentNameForLevel(focusItem, parentLevel) : null;
         Logger.debug(`🔼 Parent Button update (leaf): itemLevel=${itemLevel}, parentLevel=${parentLevel}, parentName=${parentName}, path=${JSON.stringify(focusItem.__path)}`);
@@ -531,20 +560,26 @@ class MobileRenderer {
             return;
         }
 
-        // Check if Detail Sector expansion is allowed for this volume
+        // Check if this is actually at the leaf level (not just childless)
         const displayConfig = this.dataManager.getDisplayConfig();
+        const leafLevel = displayConfig?.leaf_level;
+        const isActualLeaf = leafLevel && itemLevel === leafLevel;
+        
+        // Only expand Detail Sector for actual leaf items (e.g., models)
+        // Don't expand for childless non-leaf items (e.g., cylinder counts without models)
         const isMMDM = displayConfig && displayConfig.volume_name === 'MMdM Catalog';
         
-        if (isMMDM) {
+        if (isMMDM && isActualLeaf) {
             if (this.detailSector.isVisible) {
                 this.detailSector.showDetailContent(focusItem);
             } else if (!this.detailSectorAnimating) {
                 this.expandDetailSector();
             }
-        } else {
+        } else if (!isMMDM && isActualLeaf) {
             // For non-MMDM volumes, show detail content directly without expanding the circle
             this.detailSector.showDetailContent(focusItem);
         }
+        // For childless non-leaf items, don't show Detail Sector at all
     }
     
     updateCenterNodeState(inactive) {
@@ -731,6 +766,7 @@ class MobileRenderer {
                 if (isSelected) {
                     selectedFocusItem = focusItem;
                     selectedIndex = index;
+                    console.log(`🎯🎯🎯 ITEM SELECTED AT CENTER: [${index}] ${focusItem.name}, angleDiff=${angleDiff.toFixed(3)}°, rotationOffset=${(rotationOffset * 180 / Math.PI).toFixed(1)}°`);
                     this.focusRingDebug('🎯 SELECTED during rotation:', focusItem.name, 'angleDiff:', angleDiff.toFixed(3), 'threshold:', (angleStep * 0.5).toFixed(3));
                 }
                 
@@ -1272,6 +1308,9 @@ class MobileRenderer {
         // Get all siblings by asking for children of the parent at the clicked item's level
         const allSiblings = this.getChildItemsForLevel(parentItem, itemLevel);
         
+        console.log(`🔺🔍 SIBLINGS ARRAY (${allSiblings.length} items):`, allSiblings.map((s, i) => `[${i}]${s.name}(key:${s.key})`).join(', '));
+        console.log(`🔺🔍 CLICKED ITEM: name="${item.name}", key="${item.key}"`);
+        
         Logger.debug(`🔺 Getting siblings: parent="${parentItem.name}" (${parentLevel}), childLevel="${itemLevel}", found ${allSiblings.length} siblings`);
 
         // Validate sort_numbers before setting focus items
@@ -1292,7 +1331,10 @@ class MobileRenderer {
         const clickedIndex = this.findItemIndexInArray(item, allSiblings, itemLevel);
         const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
         const middleIndex = (allSiblings.length - 1) / 2;
-        const centerOffset = -(clickedIndex - middleIndex) * angleStep;
+        // FIX: Use positive offset to match the (middleIndex - index) formula in updateFocusRingPositions
+        // If clicked item is at higher index (e.g., 14), we need positive offset to shift base angle UP
+        // so that (middleIndex - 14) becomes less negative, bringing item 14 closer to center
+        const centerOffset = (clickedIndex - middleIndex) * angleStep;
         
         Logger.debug(`🔺 Calculated centerOffset for ${item.name}: clickedIndex=${clickedIndex}, middleIndex=${middleIndex}, centerOffset=${centerOffset.toFixed(3)}`);
 
@@ -1399,7 +1441,9 @@ class MobileRenderer {
      * Find the index of an item in an array based on level-specific matching
      */
     findItemIndexInArray(item, array, level) {
+        console.log(`🔺🔍 SEARCHING FOR: key="${item.key}" in array of ${array.length} items`);
         const index = array.findIndex(sibling => sibling.key === item.key);
+        console.log(`🔺🔍 FOUND AT INDEX: ${index} (${index >= 0 ? array[index].name : 'NOT FOUND'})`);
         
         if (index === -1) {
             Logger.warn(`🔺 findItemIndexInArray: Item key "${item.key}" not found in array of ${array.length} items`);
