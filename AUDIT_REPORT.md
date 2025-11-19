@@ -1,5 +1,6 @@
 # Code Audit Report
-## Date: November 18, 2025
+## Date: November 19, 2025
+## Version: 0.6.4
 ## Audited Against: DESIGNSPEC.md and STATUS
 
 ---

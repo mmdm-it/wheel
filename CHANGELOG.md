@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.4] - 2025-11-19
+
+### Fixed
+- **Child Pyramid Click Detection**: Corrected inverted rotation offset calculation that caused wrong items to appear in magnifier
+  - Clicking on cylinder "15" now correctly brings "15 Cylinders" to magnifier (previously brought "5 Cylinders")
+  - Fixed centerOffset formula sign to match `(middleIndex - index)` angle calculation in updateFocusRingPositions
+  - Changed from `-(clickedIndex - middleIndex)` to `(clickedIndex - middleIndex)` for proper coordination
+  - Items clicked in Child Pyramid now correctly migrate to Focus Ring center position
+
+### Changed
+- **Child Pyramid Sorting**: Aligned with DataManager sorting to ensure consistent item order
+  - Child Pyramid now sorts by sort_number ascending (matching Focus Ring siblings array)
+  - Removed sort_type config interpretation (numeric_desc) that caused descending sort mismatch
+  - Visual Child Pyramid order now matches array indices used for click detection
+
+### Added
+- **Lockwood-Ash Model Sort Numbers**: Added sort_number: 1 to all 19 Lockwood-Ash test engine models
+  - Leaf-level models now have required sort_numbers for navigation consistency
+  - Each cylinder count (1-19) has single model with sort_number: 1
+
+### Technical Details
+- Child Pyramid click detection now uses matching sort order with Focus Ring array
+- Rotation offset calculation coordinates properly with angle positioning formula
+- Diagnostic logging added to trace click detection and item selection process
+
 ## [0.6.3] - 2025-11-18
 
 ### Added

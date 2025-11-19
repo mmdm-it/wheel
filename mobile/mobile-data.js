@@ -1576,8 +1576,12 @@ class DataManager {
         const currentLevel = items[0]?.__level;
         const isLeafLevel = leafLevel && currentLevel === leafLevel;
 
-        // For NON-LEAF levels: sort_number is MANDATORY
-        if (!isLeafLevel) {
+        // Countries are never displayed as a list (only in Parent Button)
+        // so they don't need sort_numbers or sorting
+        const isCountryLevel = currentLevel === 'country';
+        
+        // For NON-LEAF levels (except countries): sort_number is MANDATORY
+        if (!isLeafLevel && !isCountryLevel) {
             const itemsWithoutSort = items.filter(item => {
                 const sortNum = item.data?.sort_number ?? item.sort_number;
                 return sortNum === undefined || sortNum === null;
@@ -1604,6 +1608,22 @@ class DataManager {
                 `;
                 
                 const levelName = levelConfig?.display_name || 'items';
+                
+                // Extract parent context from first item's path
+                const firstItem = itemsWithoutSort[0];
+                let parentContext = '';
+                if (firstItem.__path && firstItem.__path.length > 0) {
+                    // Get parent names from path (exclude the item itself)
+                    const parentNames = firstItem.__path.slice(0, -1).map(segment => {
+                        // Handle both string segments and object segments
+                        if (typeof segment === 'string') return segment;
+                        return segment.name || segment.key || segment;
+                    });
+                    if (parentNames.length > 0) {
+                        parentContext = ` under ${parentNames.join(' → ')}`;
+                    }
+                }
+                
                 const itemList = itemsWithoutSort.slice(0, 5).map(item => 
                     `• ${item.name || item.key}`
                 ).join('<br>');
@@ -1611,7 +1631,7 @@ class DataManager {
                 
                 errorDiv.innerHTML = `
                     <div style="font-size: 24px; margin-bottom: 15px;">⚠️ ERROR - Sort Number Missing</div>
-                    <div style="font-size: 16px; margin-bottom: 10px;">Navigation level: ${levelName}</div>
+                    <div style="font-size: 16px; margin-bottom: 10px;">Navigation level: ${levelName}${parentContext}</div>
                     <div style="font-size: 14px; text-align: left; margin-top: 15px;">${itemList}${moreCount}</div>
                     <div style="font-size: 12px; margin-top: 20px; opacity: 0.9;">Navigation items require sort_number</div>
                 `;
@@ -1632,6 +1652,11 @@ class DataManager {
         if (isLeafLevel) {
             Logger.debug(`🍃 Leaf level detected: ${currentLevel} - using context-aware sorting`);
             return this.sortLeafItems(items, levelConfig);
+        }
+
+        // Countries are never displayed as a list - return as-is without sorting
+        if (isCountryLevel) {
+            return items;
         }
 
         // Navigation level with sort_numbers - proceed with standard sorting

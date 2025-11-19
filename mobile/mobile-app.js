@@ -493,6 +493,14 @@ class MobileCatalogApp {
             return;
         }
 
+        // Check if we're at the top navigation level - if so, don't navigate up
+        const displayConfig = this.dataManager.getDisplayConfig();
+        const topNavLevel = displayConfig?.focus_ring_startup?.top_navigation_level;
+        if (topNavLevel && currentLevel === topNavLevel) {
+            Logger.debug(`🔼 Already at top navigation level (${topNavLevel}) - Parent Button should not navigate up`);
+            return;
+        }
+
         if (this.renderer.isLeafItem(currentFocus)) {
             this.renderer.collapseDetailSector();
         }

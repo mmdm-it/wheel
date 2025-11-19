@@ -72,7 +72,10 @@ class MobileChildPyramid {
         
         // Sort items based on type
         const sortedItems = this.sortChildPyramidItems(items, itemType);
-        Logger.debug(`🔺 Sorted items:`, sortedItems.map(item => item.name));
+        console.log(`🔺 CHILD PYRAMID SORTED ORDER:`, sortedItems.map(item => {
+            const sortNum = item.data?.sort_number ?? item.sort_number;
+            return `${item.name}(sort:${sortNum})`;
+        }).join(', '));
         
         // Clear child ring group and reset caches
         this.childRingGroup.innerHTML = '';
@@ -90,6 +93,8 @@ class MobileChildPyramid {
     
     /**
      * Sort items for Child Pyramid display
+     * CRITICAL: Must match the sorting used by DataManager to ensure consistency
+     * between Child Pyramid display and Focus Ring siblings array
      */
     sortChildPyramidItems(items, itemType) {
         if (!items || items.length === 0) {
@@ -104,32 +109,32 @@ class MobileChildPyramid {
         }
 
         const levelConfig = this.dataManager.getHierarchyLevelConfig(firstItem.__level);
-        const sortType = levelConfig && levelConfig.sort_type || 'alphabetical';
-
+        
+        // ALWAYS use sort_number for navigation levels (consistent with DataManager)
+        // The sort_type config property is IGNORED - it was causing descending sort
+        // which didn't match the Focus Ring siblings array (always ascending by sort_number)
         const sorted = [...items];
         
-        switch(sortType) {
-            case 'numeric_desc':
-                // Sort numerically descending (e.g., "12" > "9" > "6")
-                return sorted.sort((a, b) => {
-                    const numA = parseFloat(a.name);
-                    const numB = parseFloat(b.name);
-                    return numB - numA;
+        // Preserve original index for stable sorting (same as DataManager)
+        sorted.forEach((item, idx) => {
+            if (item.__sortFallbackIndex === undefined) {
+                Object.defineProperty(item, '__sortFallbackIndex', {
+                    value: idx,
+                    enumerable: false,
+                    writable: true
                 });
+            }
+        });
+        
+        return sorted.sort((a, b) => {
+            const sortA = a.data?.sort_number ?? a.sort_number ?? 0;
+            const sortB = b.data?.sort_number ?? b.sort_number ?? 0;
             
-            case 'numeric_asc':
-                // Sort numerically ascending
-                return sorted.sort((a, b) => {
-                    const numA = parseFloat(a.name);
-                    const numB = parseFloat(b.name);
-                    return numA - numB;
-                });
-            
-            case 'alphabetical':
-            default:
-                // Sort alphabetically
-                return sorted.sort((a, b) => a.name.localeCompare(b.name));
-        }
+            if (sortA !== sortB) {
+                return sortA - sortB; // ASCENDING by sort_number
+            }
+            return a.__sortFallbackIndex - b.__sortFallbackIndex;
+        });
     }
     
     /**
@@ -185,6 +190,7 @@ class MobileChildPyramid {
         
         // Calculate center-outward placement order
         const placementOrder = this.getCenterOutwardOrder(items.length);
+        console.log(`🔺 PLACEMENT ORDER for ${items.length} items:`, placementOrder);
         
         items.forEach((item, index) => {
             // Use placement order to position from center outward
@@ -192,6 +198,9 @@ class MobileChildPyramid {
             const angle = startAngle + positionIndex * angleStep;
             const x = centerX + actualRadius * Math.cos(angle);
             const y = centerY + actualRadius * Math.sin(angle);
+            
+            const sortNum = item.data?.sort_number ?? item.sort_number;
+            console.log(`🔺 PLACING: ${item.name}(sort:${sortNum}) at arrayIndex=${index}, visualPosition=${positionIndex}, angle=${(angle*180/Math.PI).toFixed(1)}°`);
             
             // Cache node position for fan lines
             this.nodePositions.push({ x, y });
@@ -294,7 +303,8 @@ class MobileChildPyramid {
         // Single event handler on hit zone (most efficient approach)
         hitZone.addEventListener('click', (e) => {
             e.stopPropagation();
-            Logger.debug(`🔺 Child Pyramid item clicked: ${item.name}`);
+            const sortNum = item.data?.sort_number ?? item.sort_number;
+            console.log(`🔺🔺🔺 CHILD PYRAMID CLICK DETECTED: "${item.name}" (sort_number: ${sortNum})`);
             this.handleChildPyramidClick(item, e);
         });
         

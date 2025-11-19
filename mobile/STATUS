@@ -232,6 +232,13 @@ Manufacturer → Cylinder Count → [Family] → [Sub-Family] → Model
 
 #### Version Milestones to 1.0.0
 
+**0.6.4 - Child Pyramid Navigation Fix** *(COMPLETED – 2025-11-19)*
+- Fixed inverted Child Pyramid click detection causing wrong items to appear in magnifier
+- Aligned Child Pyramid sorting with DataManager (ascending by sort_number)
+- Corrected rotation offset calculation to match angle positioning formula
+- Added sort_numbers to Lockwood-Ash models (19 test engines)
+- Child Pyramid items now correctly migrate to Focus Ring center when clicked
+
 **0.6.3 - Data Consistency & Sort Validation** *(COMPLETED – 2025-11-18)*
 - Added comprehensive sort_number validation across all navigation levels
 - Implemented context-aware leaf sorting (track_number, verse_number, alphabetical)
@@ -573,7 +580,15 @@ wheel/
 **Reality Check**: Solid architecture + pseudo parents in place; remaining work is polish, automation, and data completeness.  
 **Documentation**: Updated to reflect v0.6.0 feature set and open items.
 
-**Latest Updates (November 15, 2025):**
+**Latest Updates (November 19, 2025):**
+- ✅ **CHILD PYRAMID CLICK DETECTION FIXED (v0.6.4)**: Corrected inverted rotation offset that caused wrong items to center
+  - **Problem**: Clicking cylinder "15" brought "5" to magnifier due to sign error in centerOffset calculation
+  - **Solution**: Changed centerOffset formula from `-(clickedIndex - middleIndex)` to `(clickedIndex - middleIndex)`
+  - **Impact**: Child Pyramid navigation now works correctly - clicked items properly migrate to Focus Ring center
+  - **Sorting Fix**: Child Pyramid now sorts ascending like Focus Ring siblings array (removed numeric_desc interpretation)
+- ✅ **LOCKWOOD-ASH MODELS**: Added sort_number: 1 to all 19 test engine models for leaf-level navigation consistency
+
+**Previous Updates (November 15, 2025):**
 - ✅ **PSEUDO PARENT ENGINE RELEASED (v0.6.0)**: `mobile-data.js` now synthesizes family/sub-family levels using `supports_pseudo_parents`, nested triggers, and orphan adoption.
   - **Catalog Support**: `mmdm_catalog.json` declares trigger prefixes + orphan groups; renderer/app layers already consume the synthetic hierarchy.
   - **Impact**: Marine catalog finally shows Modular→Triton/Coyote, MerCruiser Small Block→Gen IV, Detroit Diesel Series, etc., without hardcoding.
