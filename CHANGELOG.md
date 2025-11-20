@@ -7,15 +7,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Planned
+- Split architecture Phase 2: Dual loader implementation (v0.7.0)
+- Child Pyramid IN navigation completion
+- Multi-domain validation across all three volumes
+
+## [0.6.6] - 2025-11-20
+
 ### Added
+- **Parent Button Visual Enhancement**: Yellow node indicator behind text
+  - 20px yellow circle positioned behind parent button text
+  - Matches visual language of Focus Ring and Child Pyramid nodes (all navigation = yellow circles)
+  - Shows/hides in sync with parent button state
+  - Provides unified navigation affordance across UI
+- **Granular Logging System**: 6-level log control (NONE, ERROR, WARN, INFO, DEBUG, VERBOSE)
+  - Default level: WARN (quiet - only errors/warnings)
+  - URL control: `?loglevel=3` for info, `?loglevel=4` for debug, `?loglevel=5` for verbose loops
+  - Reduced console noise from 110+ messages to ~10 at default level
+  - Legacy `?debug=1` flag disabled (use `?loglevel=4` instead)
+- **Defensive Publication**: Established prior art for innovations
+  - Created DEFENSIVE_PUBLICATION.md (8,600+ words documenting Hub/Nuc system, pseudo parents, etc.)
+  - Repository made public: github.com/mmdm-it/wheel
+  - Zenodo integration configured for DOI assignment
+  - Repository description: "Catalogo ricambi marini e molto altro" (stealth mode strategy)
 - **JSON Schema Versioning System**: Formal versioning for JSON volume structure
   - Added `volume_schema_version` (semantic versioning for structure)
   - Added `volume_data_version` (date-based versioning for content)
   - Added `structure_type` field ("monolithic" or "split")
   - All three volumes now explicitly versioned as 1.0.0 (monolithic)
   - Created SCHEMA_CHANGELOG.md documenting migration path to v2.0.0 (split architecture)
+  - Created SPLIT_ARCHITECTURE_PLAN.md with 6-phase implementation roadmap
   - DataManager now logs schema/data/structure info on volume load
   - Preparation for Phase 2: split JSON architecture (manufacturer/book/artist files)
+
+### Changed
+- Archived obsolete documentation to archive/ folder
+  - AUDIT_REPORT.md (historical v0.6.4 snapshot)
+  - REFACTOR_SUMMARY.md (completed refactoring narrative)
+- Updated all version references across documentation to 0.6.6
+- Repository renamed from `catalog` to `wheel` on GitHub
+- Consolidated documentation to essential files only
+
+### Fixed
+- Console logging excessive output (110+ messages reduced to ~10)
 
 ## [0.6.5] - 2025-11-20
 

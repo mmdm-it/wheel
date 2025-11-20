@@ -1251,6 +1251,12 @@ class MobileRenderer {
             // Clear any inline display style that might be hiding the button
             parentButton.style.display = '';
             
+            // Show parent node circle (always visible when button is visible)
+            const parentNodeCircle = document.getElementById('parentNodeCircle');
+            if (parentNodeCircle) {
+                parentNodeCircle.classList.remove('hidden');
+            }
+            
             // Enable or disable based on level
             if (isAtTopLevel) {
                 parentButton.classList.add('disabled');
@@ -1261,10 +1267,61 @@ class MobileRenderer {
                 parentButton.removeAttribute('data-disabled');
                 console.log('🔼🔼 Button SHOWN and ENABLED - classes after:', parentButton.className, 'display:', parentButton.style.display);
             }
+            
+            // Log parent button component positions after they're visible
+            setTimeout(() => {
+                const circle = document.getElementById('parentNodeCircle');
+                const buttonRect = parentButton.getBoundingClientRect();
+                const textRect = parentText.getBoundingClientRect();
+                const circleRect = circle?.getBoundingClientRect();
+                
+                console.log('🟡 Parent Button Layout (after visible):');
+                console.log('   Button Container:', {
+                    left: buttonRect.left.toFixed(1),
+                    bottom: (window.innerHeight - buttonRect.bottom).toFixed(1),
+                    width: buttonRect.width.toFixed(1),
+                    height: buttonRect.height.toFixed(1),
+                    display: parentButton.style.display,
+                    classes: parentButton.className
+                });
+                console.log('   Text:', {
+                    content: parentText.textContent,
+                    width: textRect.width.toFixed(1),
+                    height: textRect.height.toFixed(1),
+                    left: textRect.left.toFixed(1),
+                    bottom: (window.innerHeight - textRect.bottom).toFixed(1),
+                    centerX: (textRect.left + textRect.width / 2).toFixed(1)
+                });
+                if (circle) {
+                    const circleStyle = window.getComputedStyle(circle);
+                    console.log('   Circle:', {
+                        exists: !!circleRect,
+                        width: circleRect?.width || 0,
+                        height: circleRect?.height || 0,
+                        left: circleRect ? circleRect.left.toFixed(1) : '0',
+                        bottom: circleRect ? (window.innerHeight - circleRect.bottom).toFixed(1) : '0',
+                        centerX: circleRect ? (circleRect.left + circleRect.width / 2).toFixed(1) : '0',
+                        display: circleStyle.display,
+                        visibility: circleStyle.visibility,
+                        opacity: circleStyle.opacity,
+                        classes: circle.className,
+                        parent: circle.parentElement?.id
+                    });
+                } else {
+                    console.log('   Circle: NOT FOUND IN DOM');
+                }
+            }, 10);
         } else {
             // Hide button if no parent
             parentButton.classList.add('hidden');
             parentButton.removeAttribute('data-disabled');
+            
+            // Hide parent node circle
+            const parentNodeCircle = document.getElementById('parentNodeCircle');
+            if (parentNodeCircle) {
+                parentNodeCircle.classList.add('hidden');
+            }
+            
             console.log('🔼🔼 Button HIDDEN');
         }
     }
@@ -1272,6 +1329,11 @@ class MobileRenderer {
     hideParentButton() {
         const parentButton = document.getElementById('parentButton');
         parentButton.classList.add('hidden');
+        
+        const parentNodeCircle = document.getElementById('parentNodeCircle');
+        if (parentNodeCircle) {
+            parentNodeCircle.classList.add('hidden');
+        }
     }
     
     /**

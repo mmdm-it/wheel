@@ -168,6 +168,29 @@ g.focusItem.selected text {
     border: none;
     box-shadow: none;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+#parentButton #parentNodeCircle {
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+    min-height: 20px !important;
+    max-width: 20px !important;
+    max-height: 20px !important;
+    display: block !important;
+    flex-shrink: 0;
+    order: 2;
+    margin-top: -10px;
+}
+
+#parentButton #parentText {
+    order: 1;
+    position: relative;
+    z-index: 1;
 }
 
 #parentButton:hover {

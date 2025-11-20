@@ -34,8 +34,48 @@
         </g>
     </svg>
     <div id="parentButton" class="hidden">
+        <svg id="parentNodeCircle" class="parent-node" width="20" height="20" viewBox="0 0 20 20">
+            <circle cx="10" cy="10" r="10" fill="#f1b800" />
+        </svg>
         <span id="parentText">Parent</span>
     </div>
+    <script>
+        // Log parent node circle dimensions for debugging
+        setTimeout(() => {
+            const circle = document.getElementById('parentNodeCircle');
+            const button = document.getElementById('parentButton');
+            const text = document.getElementById('parentText');
+            
+            if (circle && button && text) {
+                const circleRect = circle.getBoundingClientRect();
+                const buttonRect = button.getBoundingClientRect();
+                const textRect = text.getBoundingClientRect();
+                
+                console.log('🟡 Parent Button Components:');
+                console.log('   Circle:', {
+                    width: circleRect.width,
+                    height: circleRect.height,
+                    left: circleRect.left,
+                    bottom: window.innerHeight - circleRect.bottom,
+                    centerX: circleRect.left + circleRect.width / 2
+                });
+                console.log('   Text:', {
+                    content: text.textContent,
+                    width: textRect.width,
+                    height: textRect.height,
+                    left: textRect.left,
+                    bottom: window.innerHeight - textRect.bottom,
+                    centerX: textRect.left + textRect.width / 2
+                });
+                console.log('   Button Container:', {
+                    left: buttonRect.left,
+                    bottom: window.innerHeight - buttonRect.bottom,
+                    width: buttonRect.width,
+                    height: buttonRect.height
+                });
+            }
+        }, 100);
+    </script>
     <div id="copyright">© 2025 Meccanismi Marittimi delle Marche. Tutti i diritti riservati.</div>
 
     <script>

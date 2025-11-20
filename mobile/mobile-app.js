@@ -84,9 +84,11 @@ class MobileCatalogApp {
         // Hide SVG and parent button
         const svg = document.getElementById('catalogSvg');
         const parentButton = document.getElementById('parentButton');
+        const parentNodeCircle = document.getElementById('parentNodeCircle');
         
         if (svg) svg.style.display = 'none';
         if (parentButton) parentButton.style.display = 'none';
+        if (parentNodeCircle) parentNodeCircle.style.display = 'none';
         
         // Create simple HTML selector
         const selectorDiv = document.createElement('div');
