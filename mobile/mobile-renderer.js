@@ -1228,13 +1228,17 @@ class MobileRenderer {
     updateParentButton(parentName) {
         const parentButton = document.getElementById('parentButton');
         const parentText = document.getElementById('parentText');
+        const parentNodeCircle = document.getElementById('parentNodeCircle');
         
         console.log('🔼🔼 updateParentButton CALLED:', {
             parentName,
             buttonExists: !!parentButton,
             textExists: !!parentText,
+            circleExists: !!parentNodeCircle,
+            circleClasses: parentNodeCircle?.className,
             buttonClasses: parentButton?.className,
-            buttonDisplay: parentButton?.style.display
+            buttonDisplay: parentButton?.style.display,
+            timestamp: performance.now().toFixed(2)
         });
         
         if (parentName) {
@@ -1245,27 +1249,60 @@ class MobileRenderer {
             const currentLevel = this.activeType;
             const isAtTopLevel = topNavLevel && currentLevel === topNavLevel;
             
+            // During initial load, currentLevel may be null - treat as top level to prevent circle flash
+            const shouldHideCircle = isAtTopLevel || currentLevel === null;
+            
+            console.log('🔼🔼 Parent button state check:', {
+                topNavLevel,
+                currentLevel,
+                isAtTopLevel,
+                shouldHideCircle,
+                willShowCircle: !shouldHideCircle,
+                timestamp: performance.now().toFixed(2)
+            });
+            
             // Show button and set text to parent name
             parentText.textContent = parentName;
             parentButton.classList.remove('hidden');
             // Clear any inline display style that might be hiding the button
             parentButton.style.display = '';
             
-            // Show parent node circle (always visible when button is visible)
-            const parentNodeCircle = document.getElementById('parentNodeCircle');
-            if (parentNodeCircle) {
-                parentNodeCircle.classList.remove('hidden');
-            }
-            
-            // Enable or disable based on level
+            // Enable or disable based on level (do this BEFORE showing circle)
             if (isAtTopLevel) {
                 parentButton.classList.add('disabled');
                 parentButton.setAttribute('data-disabled', 'true');
-                console.log('🔼🔼 Button SHOWN but DISABLED at top level:', currentLevel);
+                console.log('🔼🔼 Button SHOWN but DISABLED at top level:', currentLevel, 'timestamp:', performance.now().toFixed(2));
             } else {
                 parentButton.classList.remove('disabled');
                 parentButton.removeAttribute('data-disabled');
-                console.log('🔼🔼 Button SHOWN and ENABLED - classes after:', parentButton.className, 'display:', parentButton.style.display);
+                console.log('🔼🔼 Button SHOWN and ENABLED - classes after:', parentButton.className, 'display:', parentButton.style.display, 'timestamp:', performance.now().toFixed(2));
+            }
+            
+            // Show parent node circle ONLY if not disabled AND currentLevel is set
+            // (CSS will hide it if disabled, but we also manage it explicitly to prevent flash)
+            if (parentNodeCircle) {
+                console.log('🟡 Circle manipulation:', {
+                    isAtTopLevel,
+                    currentLevel,
+                    shouldHideCircle,
+                    action: shouldHideCircle ? 'HIDING' : 'SHOWING',
+                    beforeClasses: Array.from(parentNodeCircle.classList),
+                    beforeDisplay: window.getComputedStyle(parentNodeCircle).display,
+                    timestamp: performance.now().toFixed(2)
+                });
+                
+                if (shouldHideCircle) {
+                    parentNodeCircle.classList.add('hidden');
+                } else {
+                    parentNodeCircle.classList.remove('hidden');
+                }
+                
+                console.log('🟡 Circle after manipulation:', {
+                    afterClasses: Array.from(parentNodeCircle.classList),
+                    computedDisplay: window.getComputedStyle(parentNodeCircle).display,
+                    hasHiddenClass: parentNodeCircle.classList.contains('hidden'),
+                    timestamp: performance.now().toFixed(2)
+                });
             }
             
             // Log parent button component positions after they're visible

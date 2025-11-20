@@ -1,8 +1,15 @@
 # Wheel Design Specification
 ## Spatial Model, Terminology, and Coordinate Systems
+**Version 0.6.7**
 
 ### Document Purpose
 This specification defines the spatial model, terminology standards, and coordinate system conventions for the Wheel navigation system. It serves as the authoritative reference to prevent positioning errors and terminology confusion during development.
+
+### Visual Affordance System
+The interface uses a consistent visual logic to indicate interactivity:
+- **Interactive elements** (1px black stroke): Child Pyramid nodes, Magnifier, Parent Button circle
+- **Reference elements** (no stroke): Focus Ring nodes outside magnifier
+- **Rule**: Stroke presence indicates clickability; absence indicates informational purpose only
 
 ---
 

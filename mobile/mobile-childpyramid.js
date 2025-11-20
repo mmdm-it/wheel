@@ -273,6 +273,8 @@ class MobileChildPyramid {
         circle.setAttribute('cy', y);
         circle.setAttribute('r', MOBILE_CONFIG.RADIUS.CHILD_NODE);
         circle.setAttribute('fill', this.getItemColor(item));
+        circle.setAttribute('stroke', 'black');
+        circle.setAttribute('stroke-width', '1');
         circle.classList.add('node');
         
         // Create text with configurable formatting
