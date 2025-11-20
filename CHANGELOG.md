@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **JSON Schema Versioning System**: Formal versioning for JSON volume structure
+  - Added `volume_schema_version` (semantic versioning for structure)
+  - Added `volume_data_version` (date-based versioning for content)
+  - Added `structure_type` field ("monolithic" or "split")
+  - All three volumes now explicitly versioned as 1.0.0 (monolithic)
+  - Created SCHEMA_CHANGELOG.md documenting migration path to v2.0.0 (split architecture)
+  - DataManager now logs schema/data/structure info on volume load
+  - Preparation for Phase 2: split JSON architecture (manufacturer/book/artist files)
+
+## [0.6.5] - 2025-11-20
+
+### Fixed
+- **Volume Selector Version Display**: Fixed version not displaying on start page
+  - Corrected import to include VERSION from mobile-config.js
+  - Changed background to gray (#868686) matching body
+  - Changed text colors to black for visibility
+  - Removed "x volumes detected" redundant text
+  - Removed tip about bookmarking
+  - Copyright now visible on start page (was being hidden)
+
+### Changed
+- **Italian Translation**: Volume selector UI now in Italian
+  - "Wheel Volume Loader (Dev Only)" → "Caricatore di Volumi Wheel (Solo Dev)"
+  - "Select Volume:" → "Seleziona Volume:"
+  - "Version:" → "Versione:"
+  - Volume names remain in English
+
 ## [0.6.4] - 2025-11-19
 
 ### Fixed

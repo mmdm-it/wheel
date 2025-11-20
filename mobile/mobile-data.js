@@ -215,11 +215,20 @@ class DataManager {
                     rootData.display_config.volume_type === 'wheel_hierarchical' &&
                     rootData.display_config.wheel_volume_version) {
                     
+                    const schemaVersion = rootData.display_config.volume_schema_version || '1.0.0';
+                    const dataVersion = rootData.display_config.volume_data_version || 'unknown';
+                    const structureType = rootData.display_config.structure_type || 'monolithic';
+                    
+                    Logger.info(`📦 Volume schema: ${schemaVersion} | data: ${dataVersion} | structure: ${structureType}`);
+                    
                     volumes.push({
                         filename: filename,
                         name: rootData.display_config.volume_name || filename,
                         description: rootData.display_config.volume_description || '',
                         version: rootData.display_config.wheel_volume_version,
+                        schemaVersion: schemaVersion,
+                        dataVersion: dataVersion,
+                        structureType: structureType,
                         rootKey: rootKey
                     });
                     
@@ -269,6 +278,21 @@ class DataManager {
             
             if (!this.validateData(this.data)) {
                 throw new Error('Invalid data structure received');
+            }
+            
+            // Log schema information
+            const displayConfig = this.getDisplayConfig();
+            if (displayConfig) {
+                const schemaVersion = displayConfig.volume_schema_version || '1.0.0';
+                const dataVersion = displayConfig.volume_data_version || 'unknown';
+                const structureType = displayConfig.structure_type || 'monolithic';
+                
+                Logger.info(`📦 Loaded volume schema: ${schemaVersion} | data: ${dataVersion} | structure: ${structureType}`);
+                
+                // Check if structure type is supported
+                if (structureType === 'split') {
+                    Logger.warn(`⚠️  Split structure detected - not yet implemented. Falling back to monolithic loader.`);
+                }
             }
             
             this.currentVolumePath = filename;
