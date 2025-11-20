@@ -13,7 +13,7 @@ Thank you for your interest in contributing to Wheel! This document provides gui
 
 1. **Fork and clone the repository:**
    ```bash
-   git clone https://github.com/your-username/wheel.git
+   git clone https://github.com/mmdm-it/wheel.git
    cd wheel
    ```
 

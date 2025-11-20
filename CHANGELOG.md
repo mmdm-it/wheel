@@ -29,7 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Created DEFENSIVE_PUBLICATION.md (8,600+ words documenting Hub/Nuc system, pseudo parents, etc.)
   - Repository made public: github.com/mmdm-it/wheel
   - Zenodo integration configured for DOI assignment
-  - Repository description: "Catalogo ricambi marini e molto altro" (stealth mode strategy)
+  - Repository description: "Catalogo ricambi marini e molto altro" (generic Italian description for discretion; innovation details disclosed in formal defensive publication document)
 - **JSON Schema Versioning System**: Formal versioning for JSON volume structure
   - Added `volume_schema_version` (semantic versioning for structure)
   - Added `volume_data_version` (date-based versioning for content)
@@ -74,6 +74,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - **Child Pyramid Click Detection**: Corrected inverted rotation offset calculation that caused wrong items to appear in magnifier
   - Clicking on cylinder "15" now correctly brings "15 Cylinders" to magnifier (previously brought "5 Cylinders")
+- **Detail Sector Expansion**: Dynamic blue circle expansion to 98% of focus ring radius for leaf item selection
   - Fixed centerOffset formula sign to match `(middleIndex - index)` angle calculation in updateFocusRingPositions
   - Changed from `-(clickedIndex - middleIndex)` to `(clickedIndex - middleIndex)` for proper coordination
   - Items clicked in Child Pyramid now correctly migrate to Focus Ring center position
@@ -160,7 +161,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added nested pseudo parent examples and real-world data structures
 
 ### Removed
-- **1.0.0 release entry** - Degraded due to critical pseudo parent system gap preventing true universal architecture
+- **1.0.0 release** - POSTPONED to allow completion of split architecture system (Phase 6, target Jan 2026). Pseudo parent system gap has since been resolved in v0.6.0.
 
 ### Added
 - **Universal hierarchical data navigation system**
