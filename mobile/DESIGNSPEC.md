@@ -25,7 +25,8 @@ The Wheel interface operates within a **portrait-oriented mobile viewport** divi
 
 #### Off-Screen Zones (NEVER VISIBLE)
 **As measured from Hub (0° = horizontal right):**
-- **180° - 270° - 0°**: Area above the screen = NEVER VISIBLE
+- **180° → 270° → 0° (wrapping)**: Area above and to the right of screen = NEVER VISIBLE
+  - Continuous range from 180° through 270° to 0° (passing through top of circle)
 - **0° - 90°**: Area to the right of screen = NEVER VISIBLE
 
 #### On-Screen Zone (VISIBLE) - Aspect Ratio Dependent
@@ -71,7 +72,7 @@ The Wheel interface operates within a **portrait-oriented mobile viewport** divi
 
 #### Detail Sector Zone
 **Expands to fill**: Centered on Hub position, replaces Child Pyramid Zone
-- **Radius**: 95% of focus ring radius when expanded
+- **Radius**: 98% of focus ring radius when expanded (0.98 multiplier)
 - **Purpose**: Display leaf item details (text, images, data)
 - **Animation**: Smooth expansion from Focus Ring magnifier position
 - **Content**: Positioned using Hub as center origin
@@ -88,7 +89,7 @@ The Wheel interface operates within a **portrait-oriented mobile viewport** divi
 #### Portrait Viewport (Typical Mobile)
 **Examples:**
 - **Z Fold 5** (~2.4:1): Focus Ring ~60° visible (~120° → 180°)
-- **iPhone** (~2.2:1): Focus Ring ~65° visible (~115° → 180°)
+- **iPhone (~2.2:1): Focus Ring ~60° visible (~120° → 180°)
 - **Tall Android** (~2.5:1): Focus Ring ~55° visible (~125° → 180°)
 
 **Effect**: Narrower aspect ratios compress visible Focus Ring arc, but arc ALWAYS ends at 9 o'clock (180°)
@@ -133,6 +134,23 @@ hubY = -(LSd / 2);
 Where:
 - **LSd** = Long Side dimension (Math.max(viewport.width, viewport.height))
 - **SSd** = Short Side dimension (Math.min(viewport.width, viewport.height))
+
+#### Off-Screen Positioning
+The formula positions the Hub based on aspect ratio:
+- **Square viewport (1:1)**: Hub at extreme upper-right corner of screen
+  - hubX = SSd/2 (right edge), hubY = -SSd/2 (top edge)
+  - Example: 500×500 → Hub at (250, -250) = upper-right corner, barely on-screen
+- **Portrait viewports (height > width)**: Hub moves OFF-SCREEN RIGHT, stays aligned with TOP edge
+  - hubX = height - (width/2), hubY = -(height/2)
+  - Y-coordinate stays at top edge: hubY = -(viewport height/2)
+  - X-coordinate moves progressively off-screen right as height increases
+  - Example: 375×667 phone → Hub at (479.5, -333.5), off-screen to the right
+- **Landscape viewports (width > height)**: Hub moves OFF-SCREEN UP, stays aligned with RIGHT edge
+  - hubX = width/2, hubY = -(width - height/2)
+  - X-coordinate stays at right edge: hubX = viewport width/2
+  - Y-coordinate moves progressively off-screen up as width increases
+  - Example: 667×375 phone → Hub at (333.5, -479.5), off-screen above
+- **Conclusion**: From square corner position, portrait extends Hub off-screen horizontally (right), landscape extends Hub off-screen vertically (up)
 
 #### Dual Perspective Storage
 Both coordinate relationships are stored and used:
@@ -289,7 +307,7 @@ const angle_270 = Math.PI * 1.5; // 270° = 12 o'clock
 #### Detail Sector Positioning Flow
 1. **mobile-detailsector.js** (Hub-Centered Cartesian)
    - Uses Hub coordinates as the circle center
-   - Content positioned within 95% of Focus Ring radius
+   - Content positioned within 98% of Focus Ring radius (0.98 multiplier)
    - All text and elements positioned relative to Hub origin
 
 ---
@@ -660,7 +678,8 @@ The Wheel interface operates within a **portrait-oriented mobile viewport** divi
 
 #### Off-Screen Zones (NEVER VISIBLE)
 **As measured from Hub (0° = horizontal right):**
-- **180° - 270° - 0°**: Area above the screen = NEVER VISIBLE
+- **180° → 270° → 0° (wrapping)**: Area above and to the right of screen = NEVER VISIBLE
+  - Continuous range from 180° through 270° to 0° (passing through top of circle)
 - **0° - 90°**: Area to the right of screen = NEVER VISIBLE
 
 #### On-Screen Zone (VISIBLE) - Aspect Ratio Dependent
@@ -706,7 +725,7 @@ The Wheel interface operates within a **portrait-oriented mobile viewport** divi
 
 #### Detail Sector Zone
 **Expands to fill**: Centered on Hub position, replaces Child Pyramid Zone
-- **Radius**: 95% of focus ring radius when expanded
+- **Radius**: 98% of focus ring radius when expanded (0.98 multiplier)
 - **Purpose**: Display leaf item details (text, images, data)
 - **Animation**: Smooth expansion from Focus Ring magnifier position
 - **Content**: Positioned using Hub as center origin
@@ -723,7 +742,7 @@ The Wheel interface operates within a **portrait-oriented mobile viewport** divi
 #### Portrait Viewport (Typical Mobile)
 **Examples:**
 - **Z Fold 5** (~2.4:1): Focus Ring ~60° visible (~120° → 180°)
-- **iPhone** (~2.2:1): Focus Ring ~65° visible (~115° → 180°)
+- **iPhone (~2.2:1): Focus Ring ~60° visible (~120° → 180°)
 - **Tall Android** (~2.5:1): Focus Ring ~55° visible (~125° → 180°)
 
 **Effect**: Narrower aspect ratios compress visible Focus Ring arc, but arc ALWAYS ends at 9 o'clock (180°)
