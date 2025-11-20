@@ -1,5 +1,5 @@
 # Wheel - Universal Hierarchical Data Navigation System
-## Development Status Report - Last Updated: November 15, 2025
+## Development Status Report - Last Updated: November 20, 2025
 
 ### PROJECT OVERVIEW
 **Wheel** is a revolutionary universal data navigation system with innovative 2D interface for hierarchical data. Mobile-first ES6 native module architecture transcends traditional scrolling limitations through arc-based "sprocket gear" navigation. Supports any data domain through JSON configuration - ready for deployment across e-commerce, medical equipment, government databases, and more.
@@ -545,22 +545,23 @@ wheel/
 ---
 
 ## 📊 PROJECT STATUS SUMMARY
-**Overall Progress**: ~60% complete (pseudo parent engine landed, Child Pyramid/volume automation still pending)  
-**Current State**: Working marine catalog prototype with functioning pseudo parents, focus ring fixes, and stable OUT navigation; IN navigation + data QA still in progress.  
-**Critical Achievement**: Parent Button + pseudo parent systems shipped, restoring universal OUT path and unlocking metadata-driven family/subfamily groupings.  
-**Critical Gap Identified**: Child Pyramid IN navigation + catalog data grooming remain the last blockers to true 2D universality.  
-**Business Model**: Freemium Reader + Generator strategy unchanged; now more credible with pseudo parent foundation.  
-**Technical Readiness**: Core modules solid; need child pyramid/volume automation before investor demos.  
-**Market Position**: First-mover advantage strengthened by unique pseudo parent navigation, pending polish.
+**Overall Progress**: ~65% complete (JSON versioning system in place, split architecture planned)  
+**Current Version**: v0.6.6  
+**Current State**: Working marine catalog prototype with functioning pseudo parents, focus ring, stable OUT navigation, JSON versioning system deployed  
+**Critical Achievement**: JSON schema versioning system (v1.0.0) deployed; migration path to split architecture (v2.0.0) documented  
+**Critical Gap**: Child Pyramid IN navigation + catalog data grooming remain blockers to true 2D universality  
+**Business Model**: Freemium Reader + Generator strategy unchanged  
+**Technical Readiness**: Core modules solid; JSON versioning enables phased migration to split files  
+**Market Position**: First-mover advantage maintained; split architecture provides scalability foundation  
 
 **Critical Work Remaining**: 
 1. ~~**FIX PARENT BUTTON**~~ ✅ **COMPLETED** - Full OUT navigation to top level working
 2. ~~**IMPLEMENT PSEUDO PARENT SYSTEM**~~ ✅ **COMPLETED** - Nested `rpp_`/`rpgp_` architecture live in DataManager
 3. **FINISH CHILD PYRAMID** - Complete IN navigation implementation (80% done)
-4. **AUTOMATIC VOLUME DISCOVERY** - Replace hardcoded JSON list with runtime discovery
-5. **MULTI-DOMAIN VALIDATION** - Exercise pseudo parents + detail sector across Bible and music catalogs
-6. **CONTENT COMPLETION** - Populate remaining Bible verses + audio metadata
-7. **ANDROID PACKAGING** - WebView wrapper after 2D nav + data QA are stable
+4. ~~**JSON SCHEMA VERSIONING**~~ ✅ **COMPLETED** - v1.0.0 deployed, v2.0.0 migration path documented
+5. **IMPLEMENT SPLIT ARCHITECTURE** - Phase 2-6 of migration plan (see SPLIT_ARCHITECTURE_PLAN.md)
+6. **MULTI-DOMAIN VALIDATION** - Exercise pseudo parents + detail sector across Bible and music catalogs
+7. **CONTENT COMPLETION** - Populate remaining Bible verses + audio metadata
 
 **What Works**:
 - Rotational navigation (CW/CCW) with momentum physics ✅
@@ -569,18 +570,45 @@ wheel/
 - Focus Ring sprocket gear concept ✅
 - Viewport calculations and responsive layout ✅
 - Pseudo parent system + virtual levels ✅
+- JSON schema versioning system ✅
+- Volume selector with Italian UI ✅
 
 **What's Broken/Incomplete**:
 - Child Pyramid IN navigation (partial) ⚠️
-- Automatic volume discovery ❌
+- Split JSON architecture (planned, Phase 2-6) ❌
 - Multi-domain content population ❌
-- Android/WebView packaging ❌
 
 **Strategic Goal**: Establish "Wheel" as the standard for mobile hierarchical data navigation  
-**Reality Check**: Solid architecture + pseudo parents in place; remaining work is polish, automation, and data completeness.  
-**Documentation**: Updated to reflect v0.6.0 feature set and open items.
+**Reality Check**: Solid architecture + versioning system in place; split architecture will enable true scalability  
+**Documentation**: Consolidated to essential files; obsolete docs archived  
 
-**Latest Updates (November 19, 2025):**
+**Latest Updates (November 20, 2025):**
+- ✅ **JSON SCHEMA VERSIONING SYSTEM DEPLOYED**: Formal versioning for volume structure and content
+  - Added `volume_schema_version: "1.0.0"` to all three volumes (semantic versioning for structure)
+  - Added `volume_data_version: "2025.11.20"` (date-based versioning for content updates)
+  - Added `structure_type: "monolithic"` field (enables detection of split vs monolithic)
+  - DataManager now logs schema/data/structure on volume load
+  - Created SCHEMA_CHANGELOG.md documenting v1.0.0 → v2.0.0 migration path
+  - Created SPLIT_ARCHITECTURE_PLAN.md with 6-phase implementation roadmap
+  - Version bumped to v0.6.6
+  - **Impact**: Enables safe migration to manufacturer-level split files without breaking compatibility
+
+- ✅ **DOCUMENTATION CONSOLIDATION**: Removed obsolete/redundant documentation
+  - Archived AUDIT_REPORT.md (historical, v0.6.4 snapshot)
+  - Archived REFACTOR_SUMMARY.md (historical refactoring narrative, now complete)
+  - Updated all remaining docs to v0.6.6 with consistent dates
+  - Consolidated version references across README, STATUS, SCHEMA_CHANGELOG
+  - **Result**: Clean, maintainable documentation focused on current state and future plans
+
+- ✅ **VOLUME SELECTOR UI IMPROVEMENTS**: Italian translation and visual refinements
+  - Translated UI to Italian: "Caricatore di Volumi Wheel", "Seleziona Volume", "Versione"
+  - Fixed version display (was not visible due to missing import)
+  - Changed background to gray (#868686) matching body, volume buttons white
+  - Changed text colors to black for proper contrast
+  - Copyright now visible (was being hidden)
+  - Removed redundant "x volumes detected" text
+
+**Previous Updates (November 19, 2025):**
 - ✅ **CHILD PYRAMID CLICK DETECTION FIXED (v0.6.4)**: Corrected inverted rotation offset that caused wrong items to center
   - **Problem**: Clicking cylinder "15" brought "5" to magnifier due to sign error in centerOffset calculation
   - **Solution**: Changed centerOffset formula from `-(clickedIndex - middleIndex)` to `(clickedIndex - middleIndex)`

@@ -2,6 +2,9 @@
     "MMdM": {
         "display_config": {
             "wheel_volume_version": "1.0",
+            "volume_schema_version": "1.0.0",
+            "volume_data_version": "2025.11.20",
+            "structure_type": "monolithic",
             "volume_type": "wheel_hierarchical",
             "volume_name": "MMdM Catalog",
             "volume_description": "Water-Cooled Exhaust Manifolds Database",
