@@ -3,7 +3,7 @@
  * Main coordinator class and initialization logic
  */
 
-import { MOBILE_CONFIG } from './mobile-config.js';
+import { MOBILE_CONFIG, VERSION } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
 import { ViewportManager } from './mobile-viewport.js';
 import { TouchRotationHandler } from './mobile-touch.js';
@@ -84,37 +84,44 @@ class MobileCatalogApp {
         // Hide SVG and parent button
         const svg = document.getElementById('catalogSvg');
         const parentButton = document.getElementById('parentButton');
-        const copyright = document.getElementById('copyright');
         
         if (svg) svg.style.display = 'none';
         if (parentButton) parentButton.style.display = 'none';
-        if (copyright) copyright.style.display = 'none';
         
         // Create simple HTML selector
         const selectorDiv = document.createElement('div');
         selectorDiv.id = 'volumeSelector';
-        selectorDiv.style.cssText = 'font-family: monospace; padding: 20px; max-width: 600px; margin: 0 auto;';
+        selectorDiv.style.cssText = 'font-family: monospace; padding: 20px; max-width: 600px; margin: 0 auto; position: relative; z-index: 9999; background: #868686;';
         
-        let html = '<h1 style="font-size: 18px; margin-bottom: 10px;">Wheel Volume Loader (Dev Only)</h1>';
-        html += '<p style="color: #666; font-size: 12px; margin-bottom: 20px;">Select a catalog to load:</p>';
+        const versionString = this.getVersion();
+        Logger.debug(`🔢 Version string: ${versionString}`);
+        
+        let html = '<h1 style="font-size: 18px; margin-bottom: 10px; color: black;">Caricatore di Volumi Wheel (Solo Dev)</h1>';
+        html += '<p style="color: black; font-size: 12px; margin-bottom: 20px;">Seleziona Volume:</p>';
         html += '<ul style="list-style: none; padding: 0;">';
         
         volumes.forEach((volume, index) => {
             html += `<li style="margin-bottom: 10px;">`;
-            html += `<a href="#" data-volume-index="${index}" style="display: block; padding: 10px; background: #f0f0f0; text-decoration: none; color: #333; border-radius: 4px;">`;
+            html += `<a href="#" data-volume-index="${index}" style="display: block; padding: 10px; background: white; text-decoration: none; color: #333; border-radius: 4px;">`;
             html += `<strong>${volume.name}</strong><br>`;
             html += `<span style="font-size: 11px; color: #666;">${volume.filename}</span>`;
             html += `</a></li>`;
         });
         
         html += '</ul>';
-        html += `<p style="color: gray; font-size: 11px; margin-top: 20px;">`;
-        html += `Version: ${this.getVersion()} | `;
-        html += `<span id="volume-count">${volumes.length}</span> volume(s) detected</p>`;
-        html += '<p style="color: #999; font-size: 10px; margin-top: 10px;">Tip: Bookmark with ?volume=filename.json to skip this screen</p>';
+        
+        Logger.debug(`🔢 About to add version paragraph with: ${versionString}`);
+        html += `<p style="color: black; font-size: 11px; margin-top: 20px;">`;
+        html += `Versione: ${versionString}</p>`;
+        
+        Logger.debug(`🔢 Full HTML length: ${html.length}`);
+        Logger.debug(`🔢 HTML snippet (last 200 chars): ${html.slice(-200)}`);
         
         selectorDiv.innerHTML = html;
+        Logger.debug(`🔢 selectorDiv innerHTML set, length: ${selectorDiv.innerHTML.length}`);
+        
         document.body.appendChild(selectorDiv);
+        Logger.debug(`🔢 selectorDiv appended to body`);
         
         // Add click handlers
         selectorDiv.querySelectorAll('a[data-volume-index]').forEach(link => {
@@ -140,8 +147,12 @@ class MobileCatalogApp {
 
     getVersion() {
         try {
-            return MOBILE_CONFIG.VERSION ? MOBILE_CONFIG.VERSION.display() : 'unknown';
+            Logger.debug('🔢 Getting version, VERSION object:', VERSION);
+            const result = VERSION ? VERSION.display() : 'unknown';
+            Logger.debug('🔢 Version result:', result);
+            return result;
         } catch (e) {
+            Logger.error('🔢 Error getting version:', e);
             return 'unknown';
         }
     }

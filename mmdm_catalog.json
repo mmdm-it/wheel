@@ -7,7 +7,7 @@
             "volume_description": "Water-Cooled Exhaust Manifolds Database",
             "leaf_level": "model",
             "focus_ring_startup": {
-            "initial_magnified_item": 54,
+            "initial_magnified_item": 24,
                 "top_navigation_level": "manufacturer"
             },
             "ui_limits": {
@@ -121,7 +121,19 @@
                     "pseudo_orphan_group": "Other Families",
                     "supports_pseudo_parents": [
                         "subfamily"
-                    ]
+                    ],
+                    "pseudo_parent_sort": {
+                        "Flathead": 1,
+                        "Windsor": 4,
+                        "FE": 8,
+                        "Cleveland": 13,
+                        "Modular": 16,
+                        "Godzilla": 19,
+                        "385": 20,
+                        "Boss": 29,
+                        "M500 Series": 30,
+                        "M600 Series": 31
+                    }
                 },
                 "subfamily": {
                     "text_format": "title_case",
@@ -135,7 +147,16 @@
                     "is_pseudo_parent": true,
                     "pseudo_trigger_prefix": "rpp_",
                     "pseudo_value_property": "subfamily",
-                    "pseudo_orphan_group": "No Sub-Family"
+                    "pseudo_orphan_group": "No Sub-Family",
+                    "pseudo_parent_sort": {
+                        "Coyote": 1,
+                        "Triton": 2,
+                        "Triton V10": 3,
+                        "Voodoo": 4,
+                        "Predator": 5,
+                        "Boss": 6,
+                        "Nano": 7
+                    }
                 },
                 "model": {
                     "text_format": "title_case",
@@ -1151,14 +1172,16 @@
                                                 "year_introduced": 1954,
                                                 "year_discontinued": null,
                                                 "family": "M500 Series",
-                                                "in_a_family": true
+                                                "in_a_family": false,
+                                                "sort_number": 1
                                             },
                                             {
                                                 "engine_model": "Zvezda M527",
                                                 "year_introduced": 1960,
                                                 "year_discontinued": null,
                                                 "family": "M500 Series",
-                                                "in_a_family": true
+                                                "in_a_family": false,
+                                                "sort_number": 2
                                             }
                                         ]
                                     },
@@ -1170,14 +1193,16 @@
                                                 "year_introduced": 1954,
                                                 "year_discontinued": null,
                                                 "family": "M600 Series",
-                                                "in_a_family": true
+                                                "in_a_family": false,
+                                                "sort_number": 1
                                             },
                                             {
                                                 "engine_model": "Zvezda M650",
                                                 "year_introduced": 1970,
                                                 "year_discontinued": null,
                                                 "family": "M600 Series",
-                                                "in_a_family": true
+                                                "in_a_family": false,
+                                                "sort_number": 2
                                             }
                                         ]
                                     }
@@ -1490,35 +1515,128 @@
                                             "year_introduced": 1927,
                                             "year_discontinued": 1931,
                                             "family": "Model A",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 1
                                         },
                                         {
                                             "engine_model": "200 CID Kent",
                                             "year_introduced": 1965,
                                             "year_discontinued": 1980,
                                             "family": "Kent",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 2
                                         },
                                         {
                                             "engine_model": "2.0L CVH",
                                             "year_introduced": 1980,
                                             "year_discontinued": 1995,
                                             "family": "CVH",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 3
                                         },
                                         {
                                             "engine_model": "2.3L Lima",
                                             "year_introduced": 1974,
                                             "year_discontinued": 1997,
                                             "family": "Lima",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 4
                                         },
                                         {
                                             "engine_model": "2.3L HSC",
                                             "year_introduced": 1984,
                                             "year_discontinued": 1994,
                                             "family": "HSC",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "sort_number": 1
+                                        },
+                                        {
+                                            "engine_model": "2.0L Zetec",
+                                            "year_introduced": 1992,
+                                            "year_discontinued": 2004,
+                                            "family": "Zetec",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 2,
+                                            "data": {
+                                                "displacement_l": 2.0,
+                                                "configuration": "I4",
+                                                "valvetrain": "DOHC",
+                                                "max_power_hp": 130,
+                                                "key_notes": "High-revving DOHC I4; Escort ZX2 and Focus; popular marine generator base"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "2.0L Duratec HE",
+                                            "year_introduced": 2000,
+                                            "year_discontinued": null,
+                                            "family": "Duratec I4",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 3,
+                                            "data": {
+                                                "displacement_l": 2.0,
+                                                "configuration": "I4",
+                                                "valvetrain": "DOHC",
+                                                "source": "Mazda L-series collaboration",
+                                                "key_notes": "High-efficiency DOHC I4; Mazda-Ford joint development; Focus and Mondeo"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "2.3L Duratec 23",
+                                            "year_introduced": 2005,
+                                            "year_discontinued": null,
+                                            "family": "Duratec I4",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 4,
+                                            "data": {
+                                                "displacement_l": 2.3,
+                                                "configuration": "I4",
+                                                "valvetrain": "DOHC",
+                                                "max_power_hp": 160,
+                                                "key_notes": "Larger Duratec variant; Mazda 3/6, Ranger; marine auxiliary power"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "1.6L EcoBoost I4",
+                                            "year_introduced": 2009,
+                                            "year_discontinued": null,
+                                            "family": "EcoBoost I4",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 5,
+                                            "data": {
+                                                "displacement_l": 1.6,
+                                                "configuration": "I4",
+                                                "valvetrain": "DOHC",
+                                                "turbocharged": true,
+                                                "direct_injection": true,
+                                                "max_power_hp": 197,
+                                                "key_notes": "First EcoBoost I4; direct injection with turbo; compact high-output"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "2.0L EcoBoost I4",
+                                            "year_introduced": 2009,
+                                            "year_discontinued": null,
+                                            "family": "EcoBoost I4",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 6,
+                                            "data": {
+                                                "displacement_l": 2.0,
+                                                "configuration": "I4",
+                                                "turbocharged": true,
+                                                "direct_injection": true,
+                                                "max_power_hp": 252,
+                                                "max_torque_nm": 366,
+                                                "key_notes": "High-output turbo I4; Mustang EcoBoost and Focus RS; marine performance"
+                                            }
                                         }
                                     ]},
                                     "6": {
@@ -1529,63 +1647,169 @@
                                             "year_introduced": 1941,
                                             "year_discontinued": 1951,
                                             "family": "Flathead Six",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 1
                                         },
                                         {
                                             "engine_model": "254 CID Flathead I6",
                                             "year_introduced": 1948,
                                             "year_discontinued": 1953,
                                             "family": "Flathead Six",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 2
                                         },
                                         {
                                             "engine_model": "200 CID I6",
                                             "year_introduced": 1965,
                                             "year_discontinued": 1983,
                                             "family": "Falcon Six",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 3
                                         },
                                         {
                                             "engine_model": "250 CID I6",
                                             "year_introduced": 1969,
                                             "year_discontinued": 1996,
                                             "family": "Falcon Six",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 4
                                         },
                                         {
                                             "engine_model": "300 CID I6",
                                             "year_introduced": 1965,
                                             "year_discontinued": 1996,
                                             "family": "Truck Six",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 5
                                         },
                                         {
                                             "engine_model": "2.9L Cologne V6",
                                             "year_introduced": 1986,
                                             "year_discontinued": 2001,
                                             "family": "Cologne",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 6
                                         },
                                         {
                                             "engine_model": "3.0L Vulcan V6",
                                             "year_introduced": 1986,
                                             "year_discontinued": 2008,
                                             "family": "Vulcan",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 7
                                         },
                                         {
                                             "engine_model": "4.0L Cologne V6",
                                             "year_introduced": 1991,
                                             "year_discontinued": 2011,
                                             "family": "Cologne",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 8
                                         },
                                         {
                                             "engine_model": "3.8L Essex V6",
                                             "year_introduced": 1982,
                                             "year_discontinued": 2008,
                                             "family": "Essex",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 9
+                                        },
+                                        {
+                                            "engine_model": "3.0L SHO V6",
+                                            "year_introduced": 1989,
+                                            "year_discontinued": 1995,
+                                            "family": "SHO",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 2,
+                                            "data": {
+                                                "displacement_l": 3.0,
+                                                "configuration": "V6",
+                                                "valvetrain": "DOHC",
+                                                "max_power_hp": 220,
+                                                "max_rpm": 7000,
+                                                "key_notes": "Yamaha-designed DOHC V6; Taurus SHO; high-revving performance; marine racing applications"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "3.5L Duratec 35 (Cyclone)",
+                                            "year_introduced": 2006,
+                                            "year_discontinued": null,
+                                            "family": "Cyclone",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 3,
+                                            "data": {
+                                                "displacement_l": 3.5,
+                                                "configuration": "V6",
+                                                "valvetrain": "DOHC",
+                                                "angle_deg": 60,
+                                                "max_power_hp": 290,
+                                                "key_notes": "Aluminum DOHC 60° V6; Ti-VCT variable timing; F-150 and Explorer; modern marine V6"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "3.7L Duratec 37 (Cyclone)",
+                                            "year_introduced": 2007,
+                                            "year_discontinued": null,
+                                            "family": "Cyclone",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 4,
+                                            "data": {
+                                                "displacement_l": 3.7,
+                                                "configuration": "V6",
+                                                "valvetrain": "DOHC",
+                                                "max_power_hp": 305,
+                                                "key_notes": "Larger Cyclone for Mustang and F-150; high-output naturally aspirated V6"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "2.7L EcoBoost V6",
+                                            "year_introduced": 2015,
+                                            "year_discontinued": null,
+                                            "family": "EcoBoost V6",
+                                            "subfamily": "Nano",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "rpp_subfamily": true,
+                                            "sort_number": 5,
+                                            "data": {
+                                                "displacement_l": 2.7,
+                                                "configuration": "V6",
+                                                "turbocharged": true,
+                                                "twin_turbo": true,
+                                                "max_power_hp": 325,
+                                                "max_torque_nm": 542,
+                                                "key_notes": "Compact twin-turbo V6; 'Nano' for size efficiency; F-150 and Edge"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "3.5L EcoBoost V6",
+                                            "year_introduced": 2009,
+                                            "year_discontinued": null,
+                                            "family": "EcoBoost V6",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 6,
+                                            "data": {
+                                                "displacement_l": 3.5,
+                                                "configuration": "V6",
+                                                "turbocharged": true,
+                                                "twin_turbo": true,
+                                                "max_power_hp": 450,
+                                                "max_torque_nm": 691,
+                                                "key_notes": "High-output twin-turbo V6; F-150 Raptor and GT; marine performance applications"
+                                            }
                                         }
                                     ]},
                                     "8": {
@@ -1596,112 +1820,144 @@
                                             "year_introduced": 1932,
                                             "year_discontinued": 1953,
                                             "family": "Flathead",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 1
                                         },
                                         {
                                             "engine_model": "239",
                                             "year_introduced": 1939,
                                             "year_discontinued": 1953,
                                             "family": "Flathead",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 2
                                         },
                                         {
                                             "engine_model": "255",
                                             "year_introduced": 1949,
                                             "year_discontinued": 1953,
                                             "family": "Flathead",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 3
                                         },
                                         {
                                             "engine_model": "260",
                                             "year_introduced": 1962,
                                             "year_discontinued": 1982,
                                             "family": "Windsor",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 4
                                         },
                                         {
                                             "engine_model": "289",
                                             "year_introduced": 1963,
                                             "year_discontinued": 1968,
                                             "family": "Windsor",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 5
                                         },
                                         {
                                             "engine_model": "302",
                                             "year_introduced": 1968,
                                             "year_discontinued": 2000,
                                             "family": "Windsor",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 6
                                         },
                                         {
                                             "engine_model": "351W",
                                             "year_introduced": 1969,
                                             "year_discontinued": 2000,
                                             "family": "Windsor",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 7
                                         },
                                         {
                                             "engine_model": "332",
                                             "year_introduced": 1958,
                                             "year_discontinued": 1964,
                                             "family": "FE",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 8
                                         },
                                         {
                                             "engine_model": "352",
                                             "year_introduced": 1958,
                                             "year_discontinued": 1976,
                                             "family": "FE",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 9
                                         },
                                         {
                                             "engine_model": "390",
                                             "year_introduced": 1961,
                                             "year_discontinued": 1976,
                                             "family": "FE",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 10
                                         },
                                         {
                                             "engine_model": "427",
                                             "year_introduced": 1963,
                                             "year_discontinued": 1968,
                                             "family": "FE",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 11
                                         },
                                         {
                                             "engine_model": "428",
                                             "year_introduced": 1966,
                                             "year_discontinued": 1970,
                                             "family": "FE",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 12
                                         },
                                         {
                                             "engine_model": "351",
                                             "year_introduced": 1970,
                                             "year_discontinued": 1982,
                                             "family": "Cleveland",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 13
                                         },
                                         {
                                             "engine_model": "400",
                                             "year_introduced": 1971,
                                             "year_discontinued": 1982,
                                             "family": "Cleveland",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 14
                                         },
                                         {
                                             "engine_model": "351M",
                                             "year_introduced": 1975,
                                             "year_discontinued": 1982,
                                             "family": "Cleveland",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 15
                                         },
                                         {
                                             "engine_model": "4.6L Modular",
                                             "year_introduced": 1991,
                                             "year_discontinued": null,
                                             "family": "Modular",
-                                            "in_a_family": true
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 16
                                         },
                                         {
                                             "engine_model": "5.0L Coyote",
@@ -1712,6 +1968,7 @@
                                             "in_a_family": true,
                                             "rpp_family": true,
                                             "rpp_subfamily": true,
+                                            "sort_number": 17,
                                             "data": {
                                                 "key_notes": "DOHC evolution of the Modular architecture (introduced 2011); high-revving design for Mustangs/F-150s; variants include Gen 1–4 with direct injection."
                                             }
@@ -1725,6 +1982,7 @@
                                             "in_a_family": true,
                                             "rpp_family": true,
                                             "rpp_subfamily": true,
+                                            "sort_number": 18,
                                             "data": {
                                                 "key_notes": "SOHC V8 from the Modular family; truck-oriented with 3-valve heads and variable cam timing; used in F-Series and Expedition."
                                             }
@@ -1737,8 +1995,189 @@
                                             "subfamily": null,
                                             "in_a_family": true,
                                             "rpp_family": true,
+                                            "sort_number": 19,
                                             "data": {
                                                 "key_notes": "Standalone pushrod (cam-in-block) family (introduced 2020) for heavy-duty trucks like Super Duty; replaces older V10s; iron block, 430–450 hp stock."
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "429",
+                                            "year_introduced": 1968,
+                                            "year_discontinued": 1997,
+                                            "family": "385",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 1,
+                                            "data": {
+                                                "displacement_cid": 429,
+                                                "displacement_l": 7.0,
+                                                "configuration": "V8",
+                                                "valvetrain": "OHV",
+                                                "max_power_hp": 360,
+                                                "key_notes": "Ford big-block 385 series; truck and performance applications; popular marine conversion"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "Boss 429",
+                                            "year_introduced": 1969,
+                                            "year_discontinued": 1970,
+                                            "family": "385",
+                                            "subfamily": "Boss",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "rpp_subfamily": true,
+                                            "sort_number": 2,
+                                            "data": {
+                                                "displacement_cid": 429,
+                                                "displacement_l": 7.0,
+                                                "max_power_hp": 375,
+                                                "key_notes": "Semi-hemi heads; NASCAR homologation special; Mustang Boss 429 only; extremely rare"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "460",
+                                            "year_introduced": 1968,
+                                            "year_discontinued": 1997,
+                                            "family": "385",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 3,
+                                            "data": {
+                                                "displacement_cid": 460,
+                                                "displacement_l": 7.5,
+                                                "configuration": "V8",
+                                                "max_power_hp": 245,
+                                                "key_notes": "Largest 385 series; F-Series and RV applications; extensive marine use"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "4.6L Modular SOHC",
+                                            "year_introduced": 1991,
+                                            "year_discontinued": 2014,
+                                            "family": "Modular",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 4,
+                                            "data": {
+                                                "displacement_l": 4.6,
+                                                "configuration": "V8",
+                                                "valvetrain": "SOHC",
+                                                "max_power_hp": 260,
+                                                "key_notes": "Original Modular V8; 2-valve SOHC for Crown Victoria/Town Car; marine generator applications"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "4.6L Modular DOHC",
+                                            "year_introduced": 1993,
+                                            "year_discontinued": 2010,
+                                            "family": "Modular",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 5,
+                                            "data": {
+                                                "displacement_l": 4.6,
+                                                "valvetrain": "DOHC",
+                                                "max_power_hp": 320,
+                                                "key_notes": "4-valve DOHC variant; Mustang Cobra and Mach 1; high-performance marine conversions"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "5.4L Triton 3-Valve",
+                                            "year_introduced": 2004,
+                                            "year_discontinued": 2010,
+                                            "family": "Modular",
+                                            "subfamily": "Triton",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "rpp_subfamily": true,
+                                            "sort_number": 6,
+                                            "data": {
+                                                "displacement_l": 5.4,
+                                                "valvetrain": "SOHC",
+                                                "valves_per_cylinder": 3,
+                                                "variable_timing": true,
+                                                "max_power_hp": 310,
+                                                "key_notes": "3-valve SOHC with VCT; F-150 and Expedition; improved marine reliability"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "5.2L Voodoo",
+                                            "year_introduced": 2016,
+                                            "year_discontinued": 2020,
+                                            "family": "Modular",
+                                            "subfamily": "Voodoo",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "rpp_subfamily": true,
+                                            "sort_number": 7,
+                                            "data": {
+                                                "displacement_l": 5.2,
+                                                "valvetrain": "DOHC",
+                                                "flat_plane_crank": true,
+                                                "max_power_hp": 526,
+                                                "max_rpm": 8250,
+                                                "key_notes": "Flat-plane crank DOHC V8; Shelby GT350/350R; exotic high-revving design"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "5.2L Predator",
+                                            "year_introduced": 2020,
+                                            "year_discontinued": 2022,
+                                            "family": "Modular",
+                                            "subfamily": "Predator",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "rpp_subfamily": true,
+                                            "sort_number": 8,
+                                            "data": {
+                                                "displacement_l": 5.2,
+                                                "valvetrain": "DOHC",
+                                                "supercharged": true,
+                                                "max_power_hp": 760,
+                                                "max_torque_nm": 847,
+                                                "key_notes": "Supercharged DOHC V8; Shelby GT500 and F-150 Raptor R; extreme power output"
+                                            }
+                                        },
+                                        {
+                                            "engine_model": "6.2L Boss",
+                                            "year_introduced": 2010,
+                                            "year_discontinued": 2022,
+                                            "family": "Boss",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "sort_number": 9,
+                                            "data": {
+                                                "displacement_l": 6.2,
+                                                "displacement_cid": 379,
+                                                "configuration": "V8",
+                                                "valvetrain": "SOHC",
+                                                "max_power_hp": 430,
+                                                "key_notes": "Modern heavy-duty SOHC V8; F-Series Super Duty; not related to Boss 429"
+                                            }
+                                        }
+                                    ]},
+                                    "10": {
+                                        "sort_number": 4,
+                                        "models": [
+                                        {
+                                            "engine_model": "6.8L Triton V10",
+                                            "year_introduced": 1997,
+                                            "year_discontinued": 2021,
+                                            "family": "Modular",
+                                            "subfamily": "Triton V10",
+                                            "in_a_family": true,
+                                            "rpp_family": true,
+                                            "rpp_subfamily": true,
+                                            "sort_number": 1,
+                                            "data": {
+                                                "displacement_l": 6.8,
+                                                "displacement_cid": 415,
+                                                "configuration": "V10",
+                                                "valvetrain": "SOHC",
+                                                "angle_deg": 90,
+                                                "max_power_hp": 362,
+                                                "max_torque_nm": 637,
+                                                "key_notes": "SOHC 90° V10; derived from Modular V8; F-Series Super Duty and RV; heavy marine duty"
                                             }
                                         }
                                     ]}

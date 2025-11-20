@@ -1352,11 +1352,11 @@ class DataManager {
         return this.extractChildItems(rawData, terminalLevelName, parentItem);
     }
 
-    buildPseudoParentItem(parentItem, pseudoLevelName, groupName, baseItems, terminalLevelName, pseudoConfig, isOrphan = false) {
+    buildPseudoParentItem(parentItem, pseudoLevelName, groupName, baseItems, terminalLevelName, pseudoConfig, isOrphan = false, sortNumber = undefined) {
         const pseudoPath = [...(parentItem.__path || []), groupName];
         const childClones = baseItems.map(item => this.cloneLeafForPseudo(item, pseudoPath));
 
-        return {
+        const pseudoItem = {
             name: groupName,
             key: pseudoPath.join('/'),
             __level: pseudoLevelName,
@@ -1380,6 +1380,13 @@ class DataManager {
                 is_orphan: isOrphan
             }
         };
+
+        // Add sort_number if provided (authored in configuration)
+        if (sortNumber !== undefined) {
+            pseudoItem.data.sort_number = sortNumber;
+        }
+
+        return pseudoItem;
     }
 
     getPseudoParentItems(parentItem, pseudoLevelName, pseudoConfig) {
@@ -1430,10 +1437,14 @@ class DataManager {
             return [];
         }
 
+        // Get pseudo_parent_sort configuration for this level
+        const sortLookup = pseudoConfig?.pseudo_parent_sort || {};
+
         const pseudoItems = [];
         groupMap.forEach((items, groupName) => {
+            const sortNumber = sortLookup[groupName]; // Look up authored sort_number
             pseudoItems.push(
-                this.buildPseudoParentItem(parentItem, pseudoLevelName, groupName, items, terminalLevelName, pseudoConfig, false)
+                this.buildPseudoParentItem(parentItem, pseudoLevelName, groupName, items, terminalLevelName, pseudoConfig, false, sortNumber)
             );
         });
 

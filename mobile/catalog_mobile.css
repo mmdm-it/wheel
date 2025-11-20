@@ -191,7 +191,7 @@ g.focusItem.selected text {
     left: 0;
     width: 100%;
     text-align: center;
-    color: #f2f2e6;
+    color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     opacity: 0.85;
