@@ -12,6 +12,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Child Pyramid IN navigation completion
 - Multi-domain validation across all three volumes
 
+## [0.6.7] - 2025-11-20
+
+### Added
+- **Visual Affordance System**: Consistent 1px black stroke indicates interactivity
+  - **Clickable elements** (with stroke): Child Pyramid nodes, Magnifier, Parent Button circle
+  - **Reference elements** (no stroke): Focus Ring nodes outside magnifier
+  - Clear visual logic: stroke = interactive, no stroke = informational only
+  - Unified interaction language across all navigation components
+
+### Changed
+- Removed opacity from Magnifier (was 0.8, now fully opaque)
+- Removed opacity from copyright text (was 0.85, now fully opaque)
+- Logo remains at 0.3 opacity as designed
+
 ## [0.6.6] - 2025-11-20
 
 ### Added

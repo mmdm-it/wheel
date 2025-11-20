@@ -23,7 +23,7 @@ svg {
 }
 
 .hidden { 
-    display: none; 
+    display: none !important;
 }
 
 /* Hide top-level selection in mobile version */
@@ -115,7 +115,6 @@ g.focusItem.selected text {
     stroke: black;
     stroke-width: 1;
     fill: none;
-    opacity: 0.8;
     pointer-events: none; /* Don't interfere with touch events */
 }
 
@@ -184,7 +183,11 @@ g.focusItem.selected text {
     display: block !important;
     flex-shrink: 0;
     order: 2;
-    margin-top: -10px;
+    margin-top: -18px; /* Center 20px circle behind 16px text (20px total height with line-height) */
+}
+
+#parentButton #parentNodeCircle.hidden {
+    display: none !important;
 }
 
 #parentButton #parentText {
@@ -201,7 +204,11 @@ g.focusItem.selected text {
 }
 
 #parentButton.disabled {
-    opacity: 0.4;
+    /* Visual cue: hide yellow circle when disabled */
+}
+
+#parentButton.disabled #parentNodeCircle {
+    display: none !important;
 }
 
 #parentButton.hidden {
@@ -217,7 +224,6 @@ g.focusItem.selected text {
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
-    opacity: 0.85;
     pointer-events: none;
 }
 
