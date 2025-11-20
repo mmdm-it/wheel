@@ -1302,7 +1302,6 @@ class MobileRenderer {
         const parentLevel = this.getPreviousHierarchyLevel(itemLevel);
         
         // Build the correct parent item from the clicked item's path
-        // This ensures we get the right parent even if selectedFocusItem is at wrong level
         const parentItem = this.buildParentItemFromChild(item, parentLevel);
         
         // Get all siblings by asking for children of the parent at the clicked item's level
@@ -1326,6 +1325,51 @@ class MobileRenderer {
         // 3. Clear current Child Pyramid immediately to remove child item nodes
         this.elements.childRingGroup.innerHTML = '';
         this.elements.childRingGroup.classList.add('hidden');
+
+        // 4. Check if this is a leaf item (model with no children)
+        if (this.isLeafItem(item)) {
+            Logger.debug('🔺 Leaf item clicked:', item.name, '- moving siblings to Focus Ring and displaying in Detail Sector');
+            
+            // Find the clicked item in siblings and calculate center offset
+            const clickedIndex = this.findItemIndexInArray(item, allSiblings, itemLevel);
+            const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+            const middleIndex = (allSiblings.length - 1) / 2;
+            const centerOffset = (clickedIndex - middleIndex) * angleStep;
+            
+            Logger.debug(`🔺 Calculated centerOffset for leaf ${item.name}: clickedIndex=${clickedIndex}, middleIndex=${middleIndex}, centerOffset=${centerOffset.toFixed(3)}`);
+
+            // Set up touch rotation with the correct offset
+            if (window.mobileCatalogApp) {
+                window.mobileCatalogApp.setupTouchRotation(allSiblings);
+                Logger.debug('🔺 Touch rotation re-setup for', allSiblings.length, itemLevel + 's');
+                
+                if (window.mobileCatalogApp.touchHandler) {
+                    window.mobileCatalogApp.touchHandler.rotationOffset = centerOffset;
+                    Logger.debug('🔺 Set touch handler rotationOffset to', centerOffset.toFixed(3));
+                }
+            }
+            
+            this.lastRotationOffset = centerOffset;
+
+            // Update Focus Ring with siblings - clicked item should be centered
+            this.forceImmediateFocusSettlement = true;
+            try {
+                this.updateFocusRingPositions(centerOffset);
+            } finally {
+                this.forceImmediateFocusSettlement = false;
+            }
+            
+            // Handle as leaf item - display in Detail Sector
+            this.handleLeafFocusSelection(item);
+            
+            // Update parent button
+            this.updateParentButton();
+            
+            Logger.debug(`🔺 Immediate focus settlement complete for leaf ${itemLevel} ${item.name}`);
+            return;
+        }
+
+        // Non-leaf item handling: continue with regular nzone migration
 
         // 4. Find the clicked item in the siblings and calculate the center offset FIRST
         const clickedIndex = this.findItemIndexInArray(item, allSiblings, itemLevel);
