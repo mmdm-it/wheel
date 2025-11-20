@@ -123,7 +123,7 @@ class DataManager {
             viewport: { width: viewport.width, height: viewport.height }
         });
 
-        Logger.debug(`Stored bilingual coordinates: ${storedCount}/${items.length} items at level ${levelName}`);
+        Logger.verbose(`Stored bilingual coordinates: ${storedCount}/${items.length} items at level ${levelName}`);
     }
 
     /**
@@ -194,11 +194,9 @@ class DataManager {
         // This will enable true plug-and-play volume discovery
         for (const filename of commonVolumeFiles) {
             try {
-                Logger.debug(`🔍 Checking ${filename}...`);
                 const response = await fetch(`./${filename}`);
                 
                 if (!response.ok) {
-                    Logger.debug(`⏭️  ${filename} not found (${response.status})`);
                     continue;
                 }
                 
@@ -207,8 +205,6 @@ class DataManager {
                 // Check for Wheel volume identification keys
                 const rootKey = Object.keys(data)[0];
                 const rootData = data[rootKey];
-                
-                Logger.debug(`📋 Examining ${filename} root key: ${rootKey}`);
                 
                 if (rootData &&
                     rootData.display_config &&
@@ -243,11 +239,11 @@ class DataManager {
         }
         
         this.availableVolumes = volumes;
-        Logger.debug(`🔍 Discovery complete: ${volumes.length} Wheel volume(s) found`);
+        Logger.info(`🔍 Discovery complete: ${volumes.length} Wheel volume(s) found`);
         
         if (volumes.length > 0) {
             volumes.forEach(vol => {
-                Logger.debug(`   - ${vol.name} (${vol.filename})`);
+                Logger.verbose(`   - ${vol.name} (${vol.filename})`);
             });
         }
         
@@ -296,7 +292,7 @@ class DataManager {
             }
             
             this.currentVolumePath = filename;
-            Logger.debug(`✅ Volume loaded successfully: ${filename}`);
+            Logger.info(`✅ Volume loaded successfully: ${filename}`);
             return this.data;
             
         } catch (error) {
@@ -426,7 +422,7 @@ class DataManager {
         if (item.__level === 'song' && item.__path && item.__path.length >= 3) {
             context.artist = item.__path[0]; // First level is artist
             context.album = item.__path[1];  // Second level is album
-            Logger.debug('📋 Added hierarchical context for song:', { artist: context.artist, album: context.album, path: item.__path });
+            Logger.verbose('📋 Added hierarchical context for song:', { artist: context.artist, album: context.album, path: item.__path });
         }
 
         return context;
