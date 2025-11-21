@@ -12,6 +12,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Child Pyramid IN navigation completion
 - Multi-domain validation across all three volumes
 
+## [0.6.9] - 2025-11-21
+
+### Added
+- **Parent Button Contextual Breadcrumb**: Shows hierarchical context instead of bare parent name
+  - At manufacturer level: Shows country only (e.g., "STATI UNITI")
+  - At cylinder level: Shows manufacturer only (e.g., "FORD")
+  - Below cylinder: Shows manufacturer + pluralized parent (e.g., "FORD 8'S", "FORD FLATHEAD'S")
+  - Handles missing hierarchy levels (e.g., Flathead has no subfamily, shows family as parent)
+  - Pluralization: Numeric levels get apostrophe-s ("8'S"), word levels get apostrophe-s ("FLATHEAD'S")
+  - Manufacturer never pluralized in breadcrumb display
+- **Volume Selector Metadata**: JSON schema and data versions now visible in volume selection
+  - Each volume button displays: Schema version and Data version
+  - Format: "Schema: X.X.X | Data: X.X.X" below filename
+  - Aids version tracking during multi-volume development
+
+### Changed
+- **Parent Button Breadcrumb Logic**: Uses actual path position instead of hierarchy assumptions
+  - Calculates parent from `item.__path[length - 2]` for accuracy
+  - Handles hierarchies with skipped levels (no subfamily, etc.)
+  - Three-tier display logic based on parent position relative to top_navigation_level
+
+### Fixed
+- **Parent Button Opacity**: Removed opacity reduction when disabled at top level
+  - Button stays fully opaque at all times (was 0.5 opacity)
+  - Only yellow circle hidden to indicate inactive state
+  - Added `pointer-events: none` to disabled class instead of opacity change
+
 ## [0.6.8] - 2025-11-21
 
 ### Changed
