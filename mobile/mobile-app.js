@@ -106,7 +106,8 @@ class MobileCatalogApp {
             html += `<li style="margin-bottom: 10px;">`;
             html += `<a href="#" data-volume-index="${index}" style="display: block; padding: 10px; background: white; text-decoration: none; color: #333; border-radius: 4px;">`;
             html += `<strong>${volume.name}</strong><br>`;
-            html += `<span style="font-size: 11px; color: #666;">${volume.filename}</span>`;
+            html += `<span style="font-size: 11px; color: #666;">${volume.filename}</span><br>`;
+            html += `<span style="font-size: 10px; color: #999;">Schema: ${volume.schemaVersion} | Data: ${volume.dataVersion}</span>`;
             html += `</a></li>`;
         });
         
@@ -612,6 +613,72 @@ class MobileCatalogApp {
         }
 
         Logger.debug(`🔼 Navigating from ${currentLevel} to parent level ${parentLevel}`);
+
+        // Special case: If navigating TO the top navigation level, show all top-level items
+        if (topNavLevel && parentLevel === topNavLevel) {
+            Logger.debug(`🔼 Navigating to top navigation level (${topNavLevel}) - showing all items`);
+            
+            const topLevelItems = this.dataManager.getAllInitialFocusItems();
+            if (!topLevelItems || !topLevelItems.length) {
+                Logger.warn('🔼 No top level items available');
+                this.renderer.updateParentButton(null);
+                return;
+            }
+            
+            // Find which top-level item should be selected (the ancestor in path)
+            const topLevelParentKey = currentFocus.__path && currentFocus.__path.length > 0 
+                ? currentFocus.__path[0] 
+                : null;
+            
+            const selectedTopLevel = topLevelParentKey 
+                ? topLevelItems.find(item => item.key === topLevelParentKey) || topLevelItems[0]
+                : topLevelItems[0];
+            
+            Logger.debug(`🔼 Showing all top level: ${topLevelItems.length} items, selected: ${selectedTopLevel.name || selectedTopLevel.key}`);
+            
+            // Update Focus Ring with all top level items
+            this.renderer.currentFocusItems = topLevelItems;
+            this.renderer.allFocusItems = topLevelItems;
+            
+            const topLevelIndex = this.renderer.findItemIndexInArray(selectedTopLevel, topLevelItems, topNavLevel);
+            const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+            const middleIndex = (topLevelItems.length - 1) / 2;
+            const centerOffset = topLevelIndex >= 0 ? (topLevelIndex - middleIndex) * angleStep : 0;
+            
+            Logger.debug(`🔼 Top level index: ${topLevelIndex}, centerOffset: ${centerOffset}`);
+            
+            // Hide child pyramid
+            if (this.renderer.elements.childRingGroup) {
+                this.renderer.elements.childRingGroup.classList.add('hidden');
+            }
+            this.renderer.clearFanLines();
+            
+            // Setup rotation for top level
+            this.setupTouchRotation(topLevelItems);
+            if (this.touchHandler) {
+                this.touchHandler.rotationOffset = centerOffset;
+            }
+            
+            // Update display
+            if (this.renderer.settleTimeout) {
+                clearTimeout(this.renderer.settleTimeout);
+                this.renderer.settleTimeout = null;
+            }
+            
+            this.renderer.updateFocusRingPositions(centerOffset);
+            this.renderer.lastRotationOffset = centerOffset;
+            this.renderer.selectedFocusItem = selectedTopLevel;
+            this.renderer.activeType = topNavLevel;
+            this.renderer.buildActivePath(selectedTopLevel);
+            this.renderer.isRotating = false;
+            
+            // At top level, hide parent button (will be re-shown as disabled)
+            const parentName = this.renderer.getParentNameForLevel(selectedTopLevel, topNavLevel);
+            this.renderer.updateParentButton(parentName);
+            
+            Logger.debug(`🔼 Reached top navigation level - showing ${topLevelItems.length} manufacturers`);
+            return;
+        }
 
         const parentItem = this.renderer.buildParentItemFromChild(currentFocus, parentLevel);
         if (!parentItem || !parentItem.key) {

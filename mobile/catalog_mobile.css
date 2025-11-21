@@ -160,8 +160,8 @@ g.focusItem.selected text {
 }
 
 #parentButtonGroup.disabled {
-    opacity: 0.5;
     cursor: not-allowed;
+    pointer-events: none;
 }
 
 #parentButtonGroup #parentNodeCircle {

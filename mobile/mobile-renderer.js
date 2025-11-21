@@ -1649,17 +1649,117 @@ class MobileRenderer {
 
     /**
      * Get the display name for a parent level
+     * Builds contextual breadcrumb from top navigation level through parent level
      */
     getParentNameForLevel(item, parentLevel) {
+        console.log('=== getParentNameForLevel START ===');
+        console.log('Input item.__path:', item.__path);
+        console.log('Input parentLevel:', parentLevel);
+        
         if (!item.__path || item.__path.length === 0) {
+            console.log('No __path found, returning parentLevel:', parentLevel);
+            console.log('=== getParentNameForLevel END ===\n');
             return parentLevel;
         }
-        // The parent is always the second-to-last element in the path
-        // (path represents actual navigation hierarchy, not all possible levels)
-        if (item.__path.length >= 2) {
-            return item.__path[item.__path.length - 2];
+        
+        // Get top navigation level configuration
+        const rootData = this.dataManager.data?.[this.dataManager.rootDataKey];
+        const startupConfig = rootData?.display_config?.focus_ring_startup;
+        const topNavLevel = startupConfig?.top_navigation_level;
+        console.log('Top navigation level from config:', topNavLevel);
+        
+        if (!topNavLevel) {
+            // Fallback to simple parent name if no top nav level configured
+            console.log('No topNavLevel configured, using fallback');
+            if (item.__path.length >= 2) {
+                const fallback = item.__path[item.__path.length - 2];
+                console.log('Returning fallback:', fallback);
+                console.log('=== getParentNameForLevel END ===\n');
+                return fallback;
+            }
+            console.log('Returning parentLevel:', parentLevel);
+            console.log('=== getParentNameForLevel END ===\n');
+            return parentLevel;
         }
-        return parentLevel;
+        
+        // Get hierarchy information
+        const levelNames = this.getHierarchyLevelNames();
+        const topNavDepth = levelNames.indexOf(topNavLevel);
+        const parentDepth = levelNames.indexOf(parentLevel);
+        console.log('levelNames:', levelNames);
+        console.log('topNavDepth:', topNavDepth, '(level:', topNavLevel + ')');
+        console.log('parentDepth:', parentDepth, '(level:', parentLevel + ')');
+        
+        if (topNavDepth === -1 || parentDepth === -1) {
+            // Fallback if levels not found in hierarchy
+            console.log('Levels not found in hierarchy, using fallback');
+            if (item.__path.length >= 2) {
+                const fallback = item.__path[item.__path.length - 2];
+                console.log('Returning fallback:', fallback);
+                console.log('=== getParentNameForLevel END ===\n');
+                return fallback;
+            }
+            console.log('Returning parentLevel:', parentLevel);
+            console.log('=== getParentNameForLevel END ===\n');
+            return parentLevel;
+        }
+        
+        // Build contextual breadcrumb: always show manufacturer, then immediate parent (if different)
+        const contextSegments = [];
+        console.log('Building context segments - topNavDepth:', topNavDepth, 'parentDepth:', parentDepth);
+        console.log('Item __path length:', item.__path.length);
+        
+        // Determine actual parent from path (handles skipped hierarchy levels)
+        const actualParentIndex = item.__path.length - 2;
+        const actualParentSegment = actualParentIndex >= 0 ? item.__path[actualParentIndex] : null;
+        
+        console.log('  Actual parent at index', actualParentIndex + ':', actualParentSegment);
+        console.log('  Comparing actualParentIndex', actualParentIndex, 'with topNavDepth', topNavDepth);
+        
+        // Case 1: Parent is ABOVE top navigation level (e.g., country above manufacturer)
+        // Show only the parent name, singular
+        if (actualParentIndex < topNavDepth) {
+            console.log('  Parent is ABOVE top nav level - showing parent only (singular):', actualParentSegment);
+            if (actualParentSegment) {
+                contextSegments.push(actualParentSegment);
+            }
+        }
+        // Case 2: Parent IS the top navigation level (e.g., at manufacturer, parent is manufacturer)
+        // Show only manufacturer, singular
+        else if (actualParentIndex === topNavDepth) {
+            const manufacturerSegment = item.__path[topNavDepth];
+            console.log('  Parent IS top nav level - showing manufacturer only (singular):', manufacturerSegment);
+            contextSegments.push(manufacturerSegment);
+        }
+        // Case 3: Parent is BELOW top navigation level (e.g., cylinder, family, etc.)
+        // Show manufacturer + parent (pluralized)
+        else if (actualParentIndex > topNavDepth) {
+            // Add manufacturer first
+            const manufacturerSegment = item.__path[topNavDepth];
+            console.log('  [' + topNavDepth + '] Adding manufacturer:', manufacturerSegment, '(never pluralized)');
+            contextSegments.push(manufacturerSegment);
+            
+            // Add actual parent (pluralized)
+            if (actualParentSegment) {
+                const levelName = levelNames[actualParentIndex] || parentLevel;
+                const levelConfig = this.dataManager.getHierarchyLevelConfig(levelName);
+                
+                // Pluralize based on level type
+                const pluralized = levelConfig?.is_numeric 
+                    ? actualParentSegment + "'s"  // Numbers: "8" → "8's"
+                    : actualParentSegment + "'s"; // Words: "Flathead" → "Flathead's"
+                
+                console.log('  [' + actualParentIndex + '] Adding parent:', actualParentSegment, '→', pluralized, '| levelName:', levelName, '| is_numeric:', levelConfig?.is_numeric);
+                contextSegments.push(pluralized);
+            }
+        }
+        
+        // Join segments with space and convert to uppercase
+        const result = contextSegments.join(' ').toUpperCase();
+        console.log('Context segments:', contextSegments);
+        console.log('Final breadcrumb:', result);
+        console.log('=== getParentNameForLevel END ===\n');
+        return result;
     }
 
     /**
