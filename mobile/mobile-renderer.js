@@ -124,7 +124,7 @@ class MobileRenderer {
     async initializeElements() {
         const requiredElements = [
             'catalogSvg', 'mainGroup', 'centralGroup', 'topLevel', 
-            'pathLines', 'focusRing', 'detailItems'
+            'pathLinesGroup', 'focusRing', 'detailItems'
         ];
         
         const optionalElements = [
@@ -142,7 +142,7 @@ class MobileRenderer {
                            id === 'mainGroup' ? 'mainGroup' :
                            id === 'centralGroup' ? 'centralGroup' :
                            id === 'topLevel' ? 'topLevelGroup' :
-                           id === 'pathLines' ? 'pathLinesGroup' :
+                           id === 'pathLinesGroup' ? 'pathLinesGroup' :
                            id === 'focusRing' ? 'focusRingGroup' :
                            id === 'childRing' ? 'childRingGroup' :
                            id === 'detailItems' ? 'detailItemsGroup' :
@@ -292,6 +292,7 @@ class MobileRenderer {
 
         // Show child items in Child Pyramid
         Logger.debug('🔺 SHOWING Child Pyramid with', childItems.length, itemType, 'for focus item:', focusItem.name);
+        this.currentChildItems = childItems; // Cache for sibling retrieval when child is clicked
         this.childPyramid.showChildPyramid(childItems, itemType);
     }
 
@@ -302,10 +303,13 @@ class MobileRenderer {
      * Display a critical user-visible error for missing sort_number
      */
     showSortNumberError(items, context) {
-        // Countries are never displayed as a list (only in Parent Button)
-        // so they don't need sort_numbers
-        if (items.length > 0 && items[0].__level === 'country') {
-            return false;
+        // Check if this level should skip sort validation
+        const levelName = items.length > 0 ? items[0].__level : null;
+        if (levelName) {
+            const levelConfig = this.dataManager.getHierarchyLevelConfig(levelName);
+            if (levelConfig?.skip_sort_validation === true) {
+                return false;
+            }
         }
         
         const itemsWithoutSort = items.filter(item => {
@@ -1226,30 +1230,27 @@ class MobileRenderer {
     }
     
     updateParentButton(parentName) {
-        const parentButton = document.getElementById('parentButton');
+        const parentButtonGroup = document.getElementById('parentButtonGroup');
         const parentText = document.getElementById('parentText');
         const parentNodeCircle = document.getElementById('parentNodeCircle');
         
         console.log('🔼🔼 updateParentButton CALLED:', {
             parentName,
-            buttonExists: !!parentButton,
+            groupExists: !!parentButtonGroup,
             textExists: !!parentText,
             circleExists: !!parentNodeCircle,
-            circleClasses: parentNodeCircle?.className,
-            buttonClasses: parentButton?.className,
-            buttonDisplay: parentButton?.style.display,
             timestamp: performance.now().toFixed(2)
         });
         
         if (parentName) {
-            // Check if we're at top navigation level - use correct property path
+            // Check if we're at top navigation level
             const rootData = this.dataManager.data?.[this.dataManager.rootDataKey];
             const startupConfig = rootData?.display_config?.focus_ring_startup;
             const topNavLevel = startupConfig?.top_navigation_level;
             const currentLevel = this.activeType;
             const isAtTopLevel = topNavLevel && currentLevel === topNavLevel;
             
-            // During initial load, currentLevel may be null - treat as top level to prevent circle flash
+            // During initial load, currentLevel may be null - treat as top level
             const shouldHideCircle = isAtTopLevel || currentLevel === null;
             
             console.log('🔼🔼 Parent button state check:', {
@@ -1257,119 +1258,239 @@ class MobileRenderer {
                 currentLevel,
                 isAtTopLevel,
                 shouldHideCircle,
-                willShowCircle: !shouldHideCircle,
                 timestamp: performance.now().toFixed(2)
             });
             
-            // Show button and set text to parent name
+            // Get viewport dimensions for Nuc positioning
+            const viewport = this.viewport.getViewportInfo();
+            const SSd = Math.min(viewport.width, viewport.height);
+            const LSd = Math.max(viewport.width, viewport.height);
+            
+            // Position Parent Button in Nuc coordinates (bottom-left area)
+            const parentButtonNuc = {
+                x: -SSd/2 + 50,  // 50px from left edge
+                y: LSd/2 - 50     // 50px from bottom edge
+            };
+            
+            console.log('🔼🔼 Parent Button Nuc position:', {
+                nucX: parentButtonNuc.x.toFixed(2),
+                nucY: parentButtonNuc.y.toFixed(2),
+                SSd, LSd
+            });
+            
+            // Position the group
+            parentButtonGroup.setAttribute('transform', `translate(${parentButtonNuc.x}, ${parentButtonNuc.y})`);
+            
+            // Update text
             parentText.textContent = parentName;
-            parentButton.classList.remove('hidden');
-            // Clear any inline display style that might be hiding the button
-            parentButton.style.display = '';
+            // Position text to the right of circle
+            parentText.setAttribute('x', '15');
+            parentText.setAttribute('y', '0');
             
-            // Enable or disable based on level (do this BEFORE showing circle)
-            if (isAtTopLevel) {
-                parentButton.classList.add('disabled');
-                parentButton.setAttribute('data-disabled', 'true');
-                console.log('🔼🔼 Button SHOWN but DISABLED at top level:', currentLevel, 'timestamp:', performance.now().toFixed(2));
-            } else {
-                parentButton.classList.remove('disabled');
-                parentButton.removeAttribute('data-disabled');
-                console.log('🔼🔼 Button SHOWN and ENABLED - classes after:', parentButton.className, 'display:', parentButton.style.display, 'timestamp:', performance.now().toFixed(2));
-            }
-            
-            // Show parent node circle ONLY if not disabled AND currentLevel is set
-            // (CSS will hide it if disabled, but we also manage it explicitly to prevent flash)
-            if (parentNodeCircle) {
-                console.log('🟡 Circle manipulation:', {
-                    isAtTopLevel,
-                    currentLevel,
-                    shouldHideCircle,
-                    action: shouldHideCircle ? 'HIDING' : 'SHOWING',
-                    beforeClasses: Array.from(parentNodeCircle.classList),
-                    beforeDisplay: window.getComputedStyle(parentNodeCircle).display,
-                    timestamp: performance.now().toFixed(2)
-                });
-                
-                if (shouldHideCircle) {
-                    parentNodeCircle.classList.add('hidden');
-                } else {
-                    parentNodeCircle.classList.remove('hidden');
-                }
-                
-                console.log('🟡 Circle after manipulation:', {
-                    afterClasses: Array.from(parentNodeCircle.classList),
-                    computedDisplay: window.getComputedStyle(parentNodeCircle).display,
-                    hasHiddenClass: parentNodeCircle.classList.contains('hidden'),
-                    timestamp: performance.now().toFixed(2)
-                });
-            }
-            
-            // Log parent button component positions after they're visible
+            // Get text bbox and position circle at text center
             setTimeout(() => {
-                const circle = document.getElementById('parentNodeCircle');
-                const buttonRect = parentButton.getBoundingClientRect();
+                const textBBox = parentText.getBBox();
+                const circleCx = textBBox.x + textBBox.width / 2;
+                parentNodeCircle.setAttribute('cx', circleCx);
+                parentNodeCircle.setAttribute('cy', '0');
+                console.log('🟡 Circle positioned at text center:', {
+                    textX: textBBox.x.toFixed(2),
+                    textWidth: textBBox.width.toFixed(2),
+                    circleCx: circleCx.toFixed(2)
+                });
+            }, 0);
+            
+            // Show button group
+            parentButtonGroup.classList.remove('hidden');
+            // Force display to be visible (override any lingering CSS)
+            parentButtonGroup.style.display = '';
+            
+            // Enable or disable based on level
+            if (isAtTopLevel) {
+                parentButtonGroup.classList.add('disabled');
+                parentButtonGroup.setAttribute('data-disabled', 'true');
+                console.log('🔼🔼 Button SHOWN but DISABLED at top level:', currentLevel);
+            } else {
+                parentButtonGroup.classList.remove('disabled');
+                parentButtonGroup.removeAttribute('data-disabled');
+                console.log('🔼🔼 Button SHOWN and ENABLED');
+            }
+            
+            // Show/hide circle
+            if (shouldHideCircle) {
+                parentNodeCircle.classList.add('hidden');
+                parentNodeCircle.style.display = 'none';
+                this.clearParentLine();
+            } else {
+                parentNodeCircle.classList.remove('hidden');
+                parentNodeCircle.style.display = '';
+                // Draw line from circle to magnifier
+                setTimeout(() => this.drawParentLine(parentButtonNuc), 20);
+            }
+            
+            // Debug: Log actual DOM state after updates
+            setTimeout(() => {
+                const groupRect = parentButtonGroup.getBoundingClientRect();
+                const circleRect = parentNodeCircle.getBoundingClientRect();
                 const textRect = parentText.getBoundingClientRect();
-                const circleRect = circle?.getBoundingClientRect();
-                
-                console.log('🟡 Parent Button Layout (after visible):');
-                console.log('   Button Container:', {
-                    left: buttonRect.left.toFixed(1),
-                    bottom: (window.innerHeight - buttonRect.bottom).toFixed(1),
-                    width: buttonRect.width.toFixed(1),
-                    height: buttonRect.height.toFixed(1),
-                    display: parentButton.style.display,
-                    classes: parentButton.className
+                const groupStyle = window.getComputedStyle(parentButtonGroup);
+                const circleStyle = window.getComputedStyle(parentNodeCircle);
+                const textStyle = window.getComputedStyle(parentText);
+                console.log('🔍 Parent Button DOM state:', {
+                    groupClasses: parentButtonGroup.classList.toString(),
+                    groupDisplay: groupStyle.display,
+                    groupVisibility: groupStyle.visibility,
+                    groupOpacity: groupStyle.opacity,
+                    groupTransform: parentButtonGroup.getAttribute('transform'),
+                    groupRect: { x: groupRect.x.toFixed(1), y: groupRect.y.toFixed(1), width: groupRect.width.toFixed(1), height: groupRect.height.toFixed(1) },
+                    circleClasses: parentNodeCircle.classList.toString(),
+                    circleDisplay: circleStyle.display,
+                    circleVisibility: circleStyle.visibility,
+                    circleCx: parentNodeCircle.getAttribute('cx'),
+                    circleCy: parentNodeCircle.getAttribute('cy'),
+                    circleR: parentNodeCircle.getAttribute('r'),
+                    circleRect: { x: circleRect.x.toFixed(1), y: circleRect.y.toFixed(1), width: circleRect.width.toFixed(1), height: circleRect.height.toFixed(1) },
+                    textContent: parentText.textContent,
+                    textClasses: parentText.classList.toString(),
+                    textDisplay: textStyle.display,
+                    textVisibility: textStyle.visibility,
+                    textFill: textStyle.fill || parentText.getAttribute('fill'),
+                    textX: parentText.getAttribute('x'),
+                    textY: parentText.getAttribute('y'),
+                    textRect: { x: textRect.x.toFixed(1), y: textRect.y.toFixed(1), width: textRect.width.toFixed(1), height: textRect.height.toFixed(1) }
                 });
-                console.log('   Text:', {
-                    content: parentText.textContent,
-                    width: textRect.width.toFixed(1),
-                    height: textRect.height.toFixed(1),
-                    left: textRect.left.toFixed(1),
-                    bottom: (window.innerHeight - textRect.bottom).toFixed(1),
-                    centerX: (textRect.left + textRect.width / 2).toFixed(1)
-                });
-                if (circle) {
-                    const circleStyle = window.getComputedStyle(circle);
-                    console.log('   Circle:', {
-                        exists: !!circleRect,
-                        width: circleRect?.width || 0,
-                        height: circleRect?.height || 0,
-                        left: circleRect ? circleRect.left.toFixed(1) : '0',
-                        bottom: circleRect ? (window.innerHeight - circleRect.bottom).toFixed(1) : '0',
-                        centerX: circleRect ? (circleRect.left + circleRect.width / 2).toFixed(1) : '0',
-                        display: circleStyle.display,
-                        visibility: circleStyle.visibility,
-                        opacity: circleStyle.opacity,
-                        classes: circle.className,
-                        parent: circle.parentElement?.id
-                    });
-                } else {
-                    console.log('   Circle: NOT FOUND IN DOM');
-                }
-            }, 10);
+            }, 50);
         } else {
             // Hide button if no parent
-            parentButton.classList.add('hidden');
-            parentButton.removeAttribute('data-disabled');
+            parentButtonGroup.classList.add('hidden');
+            parentButtonGroup.style.display = 'none';
+            parentButtonGroup.removeAttribute('data-disabled');
             
-            // Hide parent node circle
-            const parentNodeCircle = document.getElementById('parentNodeCircle');
             if (parentNodeCircle) {
                 parentNodeCircle.classList.add('hidden');
+                parentNodeCircle.style.display = 'none';
             }
+            this.clearParentLine();
             
             console.log('🔼🔼 Button HIDDEN');
         }
     }
     
     hideParentButton() {
-        const parentButton = document.getElementById('parentButton');
-        parentButton.classList.add('hidden');
+        const parentButtonGroup = document.getElementById('parentButtonGroup');
+        if (!parentButtonGroup) return;
+        
+        parentButtonGroup.classList.add('hidden');
+        parentButtonGroup.style.display = 'none';
         
         const parentNodeCircle = document.getElementById('parentNodeCircle');
         if (parentNodeCircle) {
             parentNodeCircle.classList.add('hidden');
+            parentNodeCircle.style.display = 'none';
+        }
+        
+        // Hide parent line
+        this.clearParentLine();
+    }
+    
+    /**
+     * Draw line from Parent Button circle to magnifier (similar to fan lines)
+     */
+    drawParentLine(parentButtonNuc) {
+        console.log('🔵🔵 drawParentLine START:', {
+            parentButtonNuc,
+            timestamp: performance.now().toFixed(2)
+        });
+        
+        // Clear any existing line
+        this.clearParentLine();
+        
+        // Get magnifier position (already in SVG coordinates, same as mainGroup)
+        const magnifierPos = this.viewport.getMagnifyingRingPosition();
+        if (!magnifierPos) {
+            console.warn('⚠️ drawParentLine: No magnifier position available');
+            return;
+        }
+        
+        // Magnifier is already positioned in the same SVG coordinate space as mainGroup
+        // Parent Button is positioned with transform in Nuc coordinates
+        // Both are in the same SVG space, so we can draw directly
+        
+        console.log('🔵 Magnifier position (SVG):', {
+            x: magnifierPos.x.toFixed(2),
+            y: magnifierPos.y.toFixed(2),
+            angle: ((magnifierPos.angle * 180 / Math.PI) % 360).toFixed(1) + '°'
+        });
+        
+        console.log('🔵 Parent Button position (Nuc/transform):', {
+            x: parentButtonNuc.x.toFixed(2),
+            y: parentButtonNuc.y.toFixed(2)
+        });
+        
+        // Get text element to calculate its width
+        const parentText = document.getElementById('parentText');
+        const textBBox = parentText.getBBox();
+        const textCenterX = textBBox.x + textBBox.width / 2;
+        
+        // Line endpoint: center of text relative to group origin
+        const lineEndX = parentButtonNuc.x + textCenterX;
+        const lineEndY = parentButtonNuc.y;  // Text is at y=0 in group
+        
+        console.log('🔵 Text bbox:', {
+            x: textBBox.x.toFixed(2),
+            width: textBBox.width.toFixed(2),
+            centerOffset: textCenterX.toFixed(2),
+            lineEndX: lineEndX.toFixed(2),
+            lineEndY: lineEndY.toFixed(2)
+        });
+        
+        // Calculate distance
+        const dx = magnifierPos.x - lineEndX;
+        const dy = magnifierPos.y - lineEndY;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        
+        console.log('🔵 Line geometry:', {
+            dx: dx.toFixed(2),
+            dy: dy.toFixed(2),
+            distance: distance.toFixed(2)
+        });
+        
+        // Create line element
+        const pathLinesGroup = this.elements.pathLinesGroup;
+        if (!pathLinesGroup) {
+            console.warn('⚠️ drawParentLine: pathLinesGroup not found');
+            return;
+        }
+        
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('class', 'parent-line');
+        line.setAttribute('x1', lineEndX);
+        line.setAttribute('y1', lineEndY);
+        line.setAttribute('x2', magnifierPos.x);
+        line.setAttribute('y2', magnifierPos.y);
+        line.setAttribute('stroke', 'black');
+        line.setAttribute('stroke-width', '1');
+        
+        pathLinesGroup.appendChild(line);
+        
+        console.log('🔵🔵 drawParentLine COMPLETE:', {
+            lineCreated: true,
+            lineInDOM: !!document.querySelector('.parent-line'),
+            parentLinesGroupChildren: pathLinesGroup.children.length,
+            timestamp: performance.now().toFixed(2)
+        });
+    }
+    
+    /**
+     * Clear the parent line
+     */
+    clearParentLine() {
+        const pathLinesGroup = this.elements.pathLinesGroup;
+        if (!pathLinesGroup) return;
+        
+        const existingLine = pathLinesGroup.querySelector('.parent-line');
+        if (existingLine) {
+            existingLine.remove();
         }
     }
     
@@ -1397,19 +1518,39 @@ class MobileRenderer {
         this.activeType = itemLevel;
         this.selectedFocusItem = { ...item };
 
-        // 2. Get all siblings at the same level and move them to Focus Ring
-        const parentLevel = this.getPreviousHierarchyLevel(itemLevel);
+        // 2. Get all siblings at the same level
+        // For Child Pyramid clicks, siblings are the other items currently in Child Pyramid
+        let allSiblings = this.currentChildItems || [];
         
-        // Build the correct parent item from the clicked item's path
-        const parentItem = this.buildParentItemFromChild(item, parentLevel);
-        
-        // Get all siblings by asking for children of the parent at the clicked item's level
-        const allSiblings = this.getChildItemsForLevel(parentItem, itemLevel);
+        // If no child items cached, fall back to querying
+        if (allSiblings.length === 0) {
+            // Special handling for LEAF items with pseudo parents
+            if (item.__hasPseudoParent && !item.__isPseudoParent) {
+                // For leaf items under pseudo parents, siblings are in the pseudo parent's source items
+                const pseudoParentName = item.__path[item.__path.length - 2];
+                const pseudoParent = this.currentFocusItems?.find(p => 
+                    p.__isPseudoParent && p.name === pseudoParentName
+                );
+                
+                if (pseudoParent && pseudoParent.__pseudoSourceItems) {
+                    allSiblings = pseudoParent.__pseudoSourceItems;
+                    Logger.debug(`🔺 Got ${allSiblings.length} siblings from pseudo parent "${pseudoParentName}" in focus ring`);
+                } else {
+                    Logger.error(`🔺 Could not find pseudo parent "${pseudoParentName}" in current focus ring`);
+                    allSiblings = [];
+                }
+            } else {
+                // Normal navigation - get siblings from parent (includes pseudo parents themselves)
+                const parentLevel = this.getPreviousHierarchyLevel(itemLevel);
+                const parentItem = this.buildParentItemFromChild(item, parentLevel);
+                allSiblings = this.getChildItemsForLevel(parentItem, itemLevel);
+            }
+        }
         
         console.log(`🔺🔍 SIBLINGS ARRAY (${allSiblings.length} items):`, allSiblings.map((s, i) => `[${i}]${s.name}(key:${s.key})`).join(', '));
         console.log(`🔺🔍 CLICKED ITEM: name="${item.name}", key="${item.key}"`);
         
-        Logger.debug(`🔺 Getting siblings: parent="${parentItem.name}" (${parentLevel}), childLevel="${itemLevel}", found ${allSiblings.length} siblings`);
+        Logger.debug(`🔺 Getting siblings for "${item.name}" at level ${itemLevel}, found ${allSiblings.length} siblings`);
 
         // Validate sort_numbers before setting focus items
         const validatedSiblings = this.validateSortNumbers(allSiblings, `Focus Ring siblings at ${itemLevel}`);
@@ -1459,10 +1600,8 @@ class MobileRenderer {
             }
             
             // Handle as leaf item - display in Detail Sector
+            // (handleLeafFocusSelection already updates the parent button)
             this.handleLeafFocusSelection(item);
-            
-            // Update parent button
-            this.updateParentButton();
             
             Logger.debug(`🔺 Immediate focus settlement complete for leaf ${itemLevel} ${item.name}`);
             return;
@@ -1515,9 +1654,12 @@ class MobileRenderer {
         if (!item.__path || item.__path.length === 0) {
             return parentLevel;
         }
-        const levelNames = this.getHierarchyLevelNames();
-        const parentIndex = levelNames.indexOf(parentLevel);
-        return item.__path[parentIndex] || parentLevel;
+        // The parent is always the second-to-last element in the path
+        // (path represents actual navigation hierarchy, not all possible levels)
+        if (item.__path.length >= 2) {
+            return item.__path[item.__path.length - 2];
+        }
+        return parentLevel;
     }
 
     /**

@@ -12,6 +12,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Child Pyramid IN navigation completion
 - Multi-domain validation across all three volumes
 
+## [0.6.8] - 2025-11-21
+
+### Changed
+- **Parent Button SVG Migration**: Moved from HTML/CSS to SVG coordinate system
+  - Migrated `<div id="parentButton">` to `<g id="parentButtonGroup">` within mainGroup SVG
+  - Positioned using Nuc coordinates (Cartesian system with origin at viewport center)
+  - Circle now dynamically positioned at text center for proper alignment
+  - Explicit `display` style management fixes visibility issues
+- **Parent Button Line Enhancement**: Line from magnifier now ends at text center
+  - Calculates text bounding box to determine center point
+  - Line endpoint adjusted from group origin to actual text center
+  - Improved visual connection between magnifier and parent button
+
+### Fixed
+- **Coordinate System Consistency**: Resolved off-screen rendering issues
+  - Fixed `pathLinesGroup` element ID mismatch (was `pathLines` in HTML, `pathLinesGroup` in code)
+  - Removed coordinate transformation errors from mixing Screen/SVG/Hub/Nuc systems
+  - Parent Button line now uses consistent SVG coordinate space
+- **Parent Button Visibility**: Fixed `display: none` persisting after class removal
+  - Added explicit `style.display = ''` when showing elements
+  - Added explicit `style.display = 'none'` when hiding elements
+  - Circle visibility properly managed with both class and inline style
+- **hideParentButton Reference Error**: Fixed null pointer exception
+  - Updated `hideParentButton()` to reference `parentButtonGroup` instead of deleted `parentButton`
+  - Added null checking to prevent crashes during rotation
+  - Prevents Focus Ring rotation limit errors
+
 ## [0.6.7] - 2025-11-20
 
 ### Added

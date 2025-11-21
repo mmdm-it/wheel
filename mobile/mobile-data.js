@@ -1334,6 +1334,7 @@ class DataManager {
         clone.__dataPath = Array.isArray(dataPath) ? [...dataPath] : [];
         clone.key = clone.__path.join('/');
         clone.__isLeaf = true;
+        clone.__hasPseudoParent = true; // Mark that this item has a pseudo parent
         return clone;
     }
 
@@ -1403,6 +1404,7 @@ class DataManager {
 
         // Add sort_number if provided (authored in configuration)
         if (sortNumber !== undefined) {
+            pseudoItem.sort_number = sortNumber;
             pseudoItem.data.sort_number = sortNumber;
         }
 
@@ -1469,8 +1471,9 @@ class DataManager {
         });
 
         if (orphanItems.length) {
+            // Orphan group gets sort_number = 9999 to always appear last
             pseudoItems.push(
-                this.buildPseudoParentItem(parentItem, pseudoLevelName, orphanGroupName, orphanItems, terminalLevelName, pseudoConfig, true)
+                this.buildPseudoParentItem(parentItem, pseudoLevelName, orphanGroupName, orphanItems, terminalLevelName, pseudoConfig, true, 9999)
             );
         }
 
@@ -1493,6 +1496,11 @@ class DataManager {
 
         if (childLevelName === parentItem.__pseudoTerminalLevel) {
             const leafItems = this.clonePseudoItems(parentItem.__pseudoSourceItems || []);
+            Logger.debug(`📋 Returning ${leafItems.length} leaf items from pseudo parent "${parentItem.name}"`);
+            leafItems.forEach((item, idx) => {
+                const sortNum = item.data?.sort_number ?? item.sort_number;
+                Logger.debug(`   [${idx}] ${item.name || item.key}: sort_number=${sortNum}, __level=${item.__level}`);
+            });
             return this.sortItems(leafItems, childLevelConfig);
         }
 
@@ -1607,12 +1615,11 @@ class DataManager {
         const currentLevel = items[0]?.__level;
         const isLeafLevel = leafLevel && currentLevel === leafLevel;
 
-        // Countries are never displayed as a list (only in Parent Button)
-        // so they don't need sort_numbers or sorting
-        const isCountryLevel = currentLevel === 'country';
+        // Check if this level should skip sort validation (configured in hierarchy_levels)
+        const skipValidation = levelConfig?.skip_sort_validation === true;
         
-        // For NON-LEAF levels (except countries): sort_number is MANDATORY
-        if (!isLeafLevel && !isCountryLevel) {
+        // For NON-LEAF levels: sort_number is MANDATORY (unless explicitly skipped)
+        if (!isLeafLevel && !skipValidation) {
             const itemsWithoutSort = items.filter(item => {
                 const sortNum = item.data?.sort_number ?? item.sort_number;
                 return sortNum === undefined || sortNum === null;
@@ -1685,8 +1692,8 @@ class DataManager {
             return this.sortLeafItems(items, levelConfig);
         }
 
-        // Countries are never displayed as a list - return as-is without sorting
-        if (isCountryLevel) {
+        // If skip_sort_validation is set, return as-is without sorting
+        if (skipValidation) {
             return items;
         }
 

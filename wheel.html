@@ -21,7 +21,7 @@
             <g id="topLevel"></g>
 
             <!-- Path Lines Group -->
-            <g id="pathLines"></g>
+            <g id="pathLinesGroup"></g>
 
             <!-- Focus Ring (hidden initially) -->
             <g id="focusRing" class="hidden"></g>
@@ -31,14 +31,14 @@
 
             <!-- Detail Items Ring (hidden initially) -->
             <g id="detailItems" class="hidden"></g>
+            
+            <!-- Parent Button Group (in SVG, Nuc-positioned) - Last for z-ordering -->
+            <g id="parentButtonGroup" class="hidden">
+                <circle id="parentNodeCircle" cx="0" cy="0" r="10" fill="#f1b800" stroke="black" stroke-width="1" />
+                <text id="parentText" class="parent-text" x="15" y="0" text-anchor="start" dominant-baseline="middle" fill="black" font-size="16" font-weight="600">Parent</text>
+            </g>
         </g>
     </svg>
-    <div id="parentButton" class="hidden">
-        <svg id="parentNodeCircle" class="parent-node hidden" width="20" height="20" viewBox="0 0 20 20">
-            <circle cx="10" cy="10" r="10" fill="#f1b800" stroke="black" stroke-width="1" />
-        </svg>
-        <span id="parentText">Parent</span>
-    </div>
     <script>
         // Log parent node circle dimensions for debugging
         setTimeout(() => {

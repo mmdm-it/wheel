@@ -76,18 +76,18 @@ class MobileCatalogApp {
     }
 
     /**
-     * Show simple HTML volume selector (dev only)
+     * Volume selector for development mode
      */
     showSimpleVolumeSelector(volumes) {
         this.volumeSelectorMode = true;
         
         // Hide SVG and parent button
         const svg = document.getElementById('catalogSvg');
-        const parentButton = document.getElementById('parentButton');
+        const parentButtonGroup = document.getElementById('parentButtonGroup');
         const parentNodeCircle = document.getElementById('parentNodeCircle');
         
         if (svg) svg.style.display = 'none';
-        if (parentButton) parentButton.style.display = 'none';
+        if (parentButtonGroup) parentButtonGroup.style.display = 'none';
         if (parentNodeCircle) parentNodeCircle.style.display = 'none';
         
         // Create simple HTML selector
@@ -442,25 +442,25 @@ class MobileCatalogApp {
     }
 
     setupParentButtonHandler() {
-        const parentButton = document.getElementById('parentButton');
-        if (!parentButton) {
-            Logger.warn('Parent button not found in DOM');
+        const parentButtonGroup = document.getElementById('parentButtonGroup');
+        if (!parentButtonGroup) {
+            Logger.warn('Parent button group not found in DOM');
             return;
         }
         
         // Add click handler for parent button
-        parentButton.addEventListener('click', (e) => {
+        parentButtonGroup.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
             
             // Check if button is disabled
-            if (parentButton.getAttribute('data-disabled') === 'true') {
+            if (parentButtonGroup.getAttribute('data-disabled') === 'true') {
                 Logger.debug('🔼 Parent button click ignored - at top navigation level');
                 return;
             }
             
             // Check if in volume selector mode
-            if (parentButton.getAttribute('data-volume-selector-mode') === 'true') {
+            if (parentButtonGroup.getAttribute('data-volume-selector-mode') === 'true') {
                 this.handleExploreButtonClick();
             } else {
                 this.handleParentButtonClick();
@@ -495,16 +495,20 @@ class MobileCatalogApp {
         this.renderer.collapseDetailSector();
 
         if (!this.renderer.selectedFocusItem) {
-            Logger.warn('No focus item selected for parent navigation');
+            Logger.warn('🔼❌ No focus item selected for parent navigation');
             return;
         }
+
+        Logger.debug(`🔼✓ Current selectedFocusItem: ${this.renderer.selectedFocusItem.name}, key: ${this.renderer.selectedFocusItem.key}`);
 
         const currentFocus = this.renderer.selectedFocusItem;
         const currentLevel = this.renderer.getItemHierarchyLevel(currentFocus);
         if (!currentLevel) {
-            Logger.warn('🔼 Could not determine hierarchy level for current focus item');
+            Logger.warn('🔼❌ Could not determine hierarchy level for current focus item');
             return;
         }
+
+        Logger.debug(`🔼✓ Current level: ${currentLevel}`);
 
         // Check if we're at the top navigation level - if so, don't navigate up
         const displayConfig = this.dataManager.getDisplayConfig();
@@ -515,10 +519,30 @@ class MobileCatalogApp {
         }
 
         if (this.renderer.isLeafItem(currentFocus)) {
-            this.renderer.collapseDetailSector();
+            Logger.debug('🔼 Is leaf item - Detail Sector already collapsed');
         }
 
-        const parentLevel = this.renderer.getPreviousHierarchyLevel(currentLevel);
+        // For items with __path metadata, use the actual parent level from __path
+        // (this handles cases where hierarchy levels are skipped, e.g., Lockwood-Ash has no family/subfamily)
+        let parentLevel;
+        
+        if (currentFocus.__path && currentFocus.__path.length >= 2) {
+            // The parent is at __path.length - 2 (second-to-last in path)
+            // Map this back to the hierarchy level name
+            const levelNames = this.renderer.getHierarchyLevelNames();
+            const parentDepth = currentFocus.__path.length - 2; // 0-indexed depth of parent
+            
+            if (parentDepth >= 0 && parentDepth < levelNames.length) {
+                parentLevel = levelNames[parentDepth];
+                Logger.debug(`🔼 Using actual parent from __path: depth ${parentDepth} (${currentFocus.__path[parentDepth]}), level ${parentLevel}`);
+            }
+        }
+        
+        // Fallback to getPreviousHierarchyLevel if __path not available
+        if (!parentLevel) {
+            Logger.debug('🔼 No __path found, using getPreviousHierarchyLevel');
+            parentLevel = this.renderer.getPreviousHierarchyLevel(currentLevel);
+        }
         
         // If no parent level exists, we're at second-from-top level
         // Navigate to top level (the start point)
