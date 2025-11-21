@@ -397,6 +397,7 @@ After Split:
 - [ ] Cache strategy effective
 - [ ] Code maintainability improved
 - [ ] Documentation complete
+- [ ] **Logo animation logic moved from mobile-renderer.js to mobile-detailsector.js** (Better separation of concerns - Detail Sector should own its logo behavior)
 
 ---
 

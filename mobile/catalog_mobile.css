@@ -149,70 +149,39 @@ g.focusItem.selected text {
     y: calc(-22.5vw * 0.3142857 / 2) !important;
 }
 
-/* Parent button styling */
-#parentButton {
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
-    background-color: transparent;
-    color: black;
+/* Parent button SVG styling */
+#parentButtonGroup {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#parentButtonGroup.hidden {
+    display: none;
+}
+
+#parentButtonGroup.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#parentButtonGroup #parentNodeCircle {
+    transition: opacity 0.3s ease;
+}
+
+#parentButtonGroup #parentNodeCircle.hidden {
+    display: none;
+}
+
+#parentButtonGroup #parentText {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 12px 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-    box-shadow: none;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
+    fill: black;
 }
 
-#parentButton #parentNodeCircle {
-    width: 20px !important;
-    height: 20px !important;
-    min-width: 20px !important;
-    min-height: 20px !important;
-    max-width: 20px !important;
-    max-height: 20px !important;
-    display: block !important;
-    flex-shrink: 0;
-    order: 2;
-    margin-top: -18px; /* Center 20px circle behind 16px text (20px total height with line-height) */
-}
-
-#parentButton #parentNodeCircle.hidden {
-    display: none !important;
-}
-
-#parentButton #parentText {
-    order: 1;
-    position: relative;
-    z-index: 1;
-}
-
-#parentButton:hover {
-    background-color: transparent;
-    color: black;
-    transform: translateY(-2px);
-    box-shadow: none;
-}
-
-#parentButton.disabled {
-    /* Visual cue: hide yellow circle when disabled */
-}
-
-#parentButton.disabled #parentNodeCircle {
-    display: none !important;
-}
-
-#parentButton.hidden {
-    display: none;
+#parentButtonGroup:not(.disabled):hover {
+    opacity: 0.8;
 }
 
 #copyright {
