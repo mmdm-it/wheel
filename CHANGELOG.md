@@ -10,6 +10,14 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Split architecture Phase 2: Dual loader implementation
 - Multi-volume validation
 
+## [0.8.2] - 2025-11-24
+
+### Fixed
+- Detail Sector now expands during Child Pyramid animation for all leaf items
+- Fixed leaf item detection for hierarchies with object-type leaf data (e.g., Bible verses)
+- `__isLeaf` property now correctly set based on hierarchy depth, not just data type
+- Removed incorrect assumption that only array-type data can be leaves
+
 ## [0.8.1] - 2025-11-24
 
 ### Fixed

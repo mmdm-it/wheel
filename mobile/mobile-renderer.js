@@ -1855,6 +1855,7 @@ class MobileRenderer {
         
         // Check if clicked item is a leaf - if so, start Detail Sector expansion immediately
         const isLeaf = this.isLeafItem(item);
+        
         if (isLeaf) {
             Logger.debug('🔺 Leaf item detected - starting Detail Sector expansion during animation');
             const displayConfig = this.dataManager.getDisplayConfig();
