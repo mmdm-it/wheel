@@ -2,7 +2,7 @@
 
 A mobile-first hierarchical data browser with novel rotational touch navigation. Navigate deep tree structures intuitively using circular gestures.
 
-**Version 0.7.0** | November 2025
+**Version 0.8.0** | November 2025
 
 ## Demo Applications
 
@@ -27,7 +27,7 @@ Traditional hierarchical navigation (breadcrumbs, back buttons, folder trees) be
 
 ## 🚀 Help Wanted
 
-**Wheel is ~65% complete and needs collaborators to ship v1.0.**
+**Wheel is ~70% complete and needs collaborators to ship v1.0.**
 
 We're looking for:
 
@@ -90,8 +90,10 @@ We're looking for:
 ## Features
 
 - **Rotational navigation**: Swipe left/right to rotate through items at current level
+- **Animated transitions**: Smooth nzone migration with 600ms animations when navigating levels
 - **Hierarchical browsing**: Tap to navigate deeper, use parent button to go back
-- **Touch-optimized**: Designed for mobile with momentum physics
+- **Touch-optimized**: Designed for mobile with momentum physics and gesture detection
+- **Error auto-dismiss**: Error messages automatically clear on user interaction (rotation)
 - **Large datasets**: Handles 2000+ items with viewport filtering
 - **No build process**: Direct ES6 module loading in modern browsers
 
@@ -110,17 +112,19 @@ We're looking for:
 
 ## Status
 
-**Current state**: Working prototype (~65% complete)
+**Current state**: Working prototype (~70% complete)
 
 **What works:**
 - Rotational navigation with touch gestures and momentum
-- Multi-level hierarchy browsing
-- Detail view expansion
+- Multi-level hierarchy browsing with animated nzone migration
+- Detail view expansion (Detail Sector)
 - Multiple catalog/dataset support
 - Viewport filtering for large datasets
+- Error handling with auto-dismiss on rotation
+- Parent Button contextual breadcrumbs
 
 **In progress:**
-- Child pyramid navigation refinement
+- Outward navigation (leaf to parent levels)
 - Performance optimization
 - Android packaging
 - Comprehensive device testing
@@ -167,4 +171,4 @@ Contributions welcome! See issues labeled **"good first issue"** for starting po
 
 ---
 
-**Version 0.7.0** | November 2025
+**Version 0.8.0** | November 2025
