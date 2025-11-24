@@ -1560,8 +1560,8 @@ class DataManager {
                     key: `${parentItem.key}/${itemKey}`,
                     __level: childLevelName,
                     __levelDepth: childLevelDepth,
-                    // Treat arrays as parents when deeper levels still exist so Child Pyramid can show actual leaf nodes
-                    __isLeaf: childIsArray ? !hasFurtherLevels : false,
+                    // Item is a leaf if we're at the last hierarchy level OR if it's an array with no further levels
+                    __isLeaf: !hasFurtherLevels || (childIsArray && !hasFurtherLevels),
                     __path: [...parentItem.__path, itemKey]
                 };
 
