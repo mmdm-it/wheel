@@ -8,8 +8,30 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 - Split architecture Phase 2: Dual loader implementation
-- Child Pyramid navigation completion
 - Multi-volume validation
+
+## [0.8.0] - 2025-11-23
+
+### Added
+- Animated nzone migration: Child Pyramid nodes smoothly animate to Focus Ring positions
+- Magnifier node animates to Parent Button position during outward navigation
+- Parent Button fades off-screen during nzone migration
+- Focus Ring background band (wallpaper) remains visible during animation
+- Error overlay removal on Focus Ring rotation (auto-dismiss on user interaction)
+- Animation state blocking prevents race conditions with touch events
+
+### Changed
+- Child Pyramid click now triggers full animation sequence before state updates
+- All sibling nodes animate simultaneously with individual radius transitions
+- Clicked node enlarges to magnified size during animation
+- Reduced console logging in getParentNameForLevel (~50 logs removed)
+- Error divs in mobile-data.js now use 'sort-number-error' class for removal
+- Animation duration: 600ms ease-in-out for smooth visual transitions
+
+### Fixed
+- Sort number error messages now properly dismissed when rotating Focus Ring
+- Error div removal logs show context snippet for verification
+- Animation prevents duplicate Child Pyramid rendering during transitions
 
 ## [0.7.1] - 2025-11-23
 

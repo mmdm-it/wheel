@@ -1,6 +1,6 @@
 # Wheel Design Specification
 ## Spatial Model, Terminology, and Coordinate Systems
-**Version 0.7.0**
+**Version 0.8.0**
 
 ### Document Purpose
 This specification defines the spatial model, terminology standards, and coordinate system conventions for the Wheel navigation system. It serves as the authoritative reference to prevent positioning errors and terminology confusion during development.

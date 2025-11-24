@@ -1639,6 +1639,7 @@ class DataManager {
             if (itemsWithoutSort.length > 0) {
                 // Display critical error to user
                 const errorDiv = document.createElement('div');
+                errorDiv.className = 'sort-number-error';
                 errorDiv.style.cssText = `
                     position: fixed;
                     top: 50%;

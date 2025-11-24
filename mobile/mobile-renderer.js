@@ -35,6 +35,7 @@ class MobileRenderer {
         this.positionCache = new Map();
     this.leafStateCache = new Map(); // Cache leaf determinations per item
     this.detailSectorAnimating = false;
+    this.isAnimating = false; // Block clicks during node migration animations
         
         // State
         this.selectedTopLevel = null;
@@ -446,6 +447,7 @@ class MobileRenderer {
         if (itemsWithoutSort.length === 0) return false;
 
         const errorDiv = document.createElement('div');
+        errorDiv.className = 'sort-number-error';
         errorDiv.style.cssText = `
             position: fixed;
             top: 50%;
@@ -491,6 +493,14 @@ class MobileRenderer {
         `;
         
         document.body.appendChild(errorDiv);
+        
+        console.log('🚨 ERROR DIV CREATED:', {
+            className: errorDiv.className,
+            inDOM: document.body.contains(errorDiv),
+            allErrorDivs: document.querySelectorAll('.sort-number-error').length,
+            timestamp: performance.now().toFixed(2)
+        });
+        
         Logger.error(`❌ CRITICAL: ${itemsWithoutSort.length} items missing sort_number in ${context}`);
         itemsWithoutSort.forEach(item => {
             Logger.error(`   Missing sort_number: ${item.name || item.key} (${item.__level})`);
@@ -878,13 +888,26 @@ class MobileRenderer {
         // Don't hide Child Pyramid if we're within the protection period after immediate settlement
         const isProtected = this.protectedRotationOffset !== undefined && Math.abs(rotationOffset - this.protectedRotationOffset) < 0.01;
         const isRotating = !programmaticFocus && !isProtected && rotationTriggered;
+        
         if (isRotating) {
+            const errorDivCount = document.querySelectorAll('.sort-number-error').length;
+            if (errorDivCount > 0) {
+                console.log('🔄 ROTATION DETECTED - Removing error divs:', errorDivCount);
+            }
             this.focusRingDebug('🔄 Rotation detected - hiding Child Pyramid temporarily');
             
             // Hide Child Pyramid and fan lines during rotation
             this.elements.childRingGroup.classList.add('hidden');
             this.elements.detailItemsGroup.classList.add('hidden');
             this.clearFanLines();
+            
+            // Remove any sort number error messages
+            const errorDivs = document.querySelectorAll('.sort-number-error');
+            
+            errorDivs.forEach(div => {
+                console.log('🗑️ Removing error div:', div.textContent.substring(0, 50));
+                div.remove();
+            });
         }
         this.lastRotationOffset = rotationOffset;
         
@@ -1433,144 +1456,12 @@ class MobileRenderer {
     }
     
     /**
-     * Animate text migration from Magnifier to Parent Button
-     * @param {string} text - The text to animate
-     * @param {Function} onComplete - Callback when animation completes
+     * Update Parent Button text and position
      */
-    animateTextMigration(text, onComplete) {
-        // Get start position (Magnifier)
-        const magnifierPos = this.viewport.getMagnifyingRingPosition();
-        
-        // Get end position (Parent Button)
-        const viewport = this.viewport.getViewportInfo();
-        const LSd = Math.max(viewport.width, viewport.height);
-        const arcParams = this.viewport.getArcParameters();
-        const parentButtonAngle = 135 * Math.PI / 180;
-        const parentButtonRadius = 0.9 * LSd * Math.SQRT2;
-        const parentButtonPos = {
-            x: arcParams.centerX + parentButtonRadius * Math.cos(parentButtonAngle) + 15, // Add 15px offset for text position
-            y: arcParams.centerY + parentButtonRadius * Math.sin(parentButtonAngle)
-        };
-        
-        // Calculate start rotation (text along radius at Magnifier position)
-        const magnifierAngle = magnifierPos.angle; // Already in radians
-        let startRotation = magnifierAngle * 180 / Math.PI;
-        if (Math.cos(magnifierAngle) < 0) {
-            startRotation += 180;
-        }
-        
-        // End rotation at Parent Button is 0° (horizontal text)
-        const endRotation = 0;
-        
-        // Calculate rotation change, choosing shortest path
-        let rotationChange = endRotation - startRotation;
-        if (rotationChange > 180) rotationChange -= 360;
-        if (rotationChange < -180) rotationChange += 360;
-        
-        // Create temporary animated text element
-        const animText = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        animText.textContent = text;
-        animText.setAttribute('x', magnifierPos.x);
-        animText.setAttribute('y', magnifierPos.y);
-        animText.setAttribute('text-anchor', 'middle');
-        animText.setAttribute('dominant-baseline', 'middle');
-        animText.setAttribute('fill', 'black');
-        animText.setAttribute('font-size', '20');
-        animText.setAttribute('font-weight', 'bold');
-        animText.setAttribute('transform', `rotate(${startRotation}, ${magnifierPos.x}, ${magnifierPos.y})`);
-        animText.style.transition = 'transform 2000ms ease-in-out';
-        animText.style.pointerEvents = 'none';
-        
-        this.elements.mainGroup.appendChild(animText);
-        
-        console.log('🎬 Text animation:', {
-            text,
-            magnifierAngle: (magnifierAngle * 180 / Math.PI).toFixed(1) + '°',
-            startRotation: startRotation.toFixed(1) + '°',
-            endRotation: endRotation + '°',
-            rotationChange: rotationChange.toFixed(1) + '°',
-            from: `(${magnifierPos.x.toFixed(1)}, ${magnifierPos.y.toFixed(1)})`,
-            to: `(${parentButtonPos.x.toFixed(1)}, ${parentButtonPos.y.toFixed(1)})`
-        });
-        
-        // Trigger animation on next frame
-        requestAnimationFrame(() => {
-            const deltaX = parentButtonPos.x - magnifierPos.x;
-            const deltaY = parentButtonPos.y - magnifierPos.y;
-            
-            // Move to final position with final rotation (0° = horizontal)
-            // The text needs to translate AND rotate to 0°
-            animText.setAttribute('transform', `translate(${deltaX}, ${deltaY}) rotate(${endRotation}, ${parentButtonPos.x}, ${parentButtonPos.y})`);
-            
-            // Call onComplete just before animation finishes to show real text
-            setTimeout(() => {
-                if (onComplete) onComplete();
-            }, 1900); // 100ms before animation ends
-            
-            // Clean up animated text after animation completes
-            setTimeout(() => {
-                animText.remove();
-            }, 2000);
-        });
-    }
-    
-    /**
-     * Animate old Parent Button text falling away
-     * @param {string} text - The text to animate away
-     */
-    animateParentButtonTextFallAway(text) {
-        const parentButtonGroup = document.getElementById('parentButtonGroup');
-        if (!parentButtonGroup) return;
-        
-        // Get current Parent Button position
-        const transform = parentButtonGroup.getAttribute('transform');
-        const match = transform.match(/translate\(([-\d.]+),\s*([-\d.]+)\)/);
-        if (!match) return;
-        
-        const startX = parseFloat(match[1]);
-        const startY = parseFloat(match[2]);
-        
-        // Create temporary animated text element
-        const animText = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        animText.textContent = text;
-        animText.setAttribute('class', 'parent-text');
-        animText.setAttribute('x', startX + 15); // Offset from circle
-        animText.setAttribute('y', startY);
-        animText.setAttribute('text-anchor', 'start');
-        animText.setAttribute('dominant-baseline', 'middle');
-        animText.setAttribute('transform', `rotate(-45, ${startX + 15}, ${startY})`);
-        animText.style.transition = 'all 2000ms ease-in-out';
-        animText.style.pointerEvents = 'none';
-        
-        this.elements.mainGroup.appendChild(animText);
-        
-        // Trigger animation on next frame - move straight down (90°) and rotate
-        requestAnimationFrame(() => {
-            const viewport = this.viewport.getViewportInfo();
-            const fallDistance = viewport.height; // Fall off screen
-            
-            animText.style.transform = `translate(0, ${fallDistance}px) rotate(45deg)`; // +45° rotation while falling
-            animText.style.opacity = '0';
-            
-            // Clean up after animation
-            setTimeout(() => {
-                animText.remove();
-            }, 2000);
-        });
-    }
-    
     updateParentButton(parentName, skipAnimation = false) {
         const parentButtonGroup = document.getElementById('parentButtonGroup');
         const parentText = document.getElementById('parentText');
         const parentNodeCircle = document.getElementById('parentNodeCircle');
-        
-        console.log('🔼🔼 updateParentButton CALLED:', {
-            parentName,
-            groupExists: !!parentButtonGroup,
-            textExists: !!parentText,
-            circleExists: !!parentNodeCircle,
-            timestamp: performance.now().toFixed(2)
-        });
         
         if (parentName) {
             // Check if we're at top navigation level
@@ -1582,14 +1473,6 @@ class MobileRenderer {
             
             // During initial load, currentLevel may be null - treat as top level
             const shouldHideCircle = isAtTopLevel || currentLevel === null;
-            
-            console.log('🔼🔼 Parent button state check:', {
-                topNavLevel,
-                currentLevel,
-                isAtTopLevel,
-                shouldHideCircle,
-                timestamp: performance.now().toFixed(2)
-            });
             
             // Get viewport dimensions and Hub center for fixed positioning
             const viewport = this.viewport.getViewportInfo();
@@ -1617,20 +1500,16 @@ class MobileRenderer {
             };
             
             // Text offset relative to circle center
+            // Important: Both text and circle are on the same 135° radius line from Hub,
+            // so the offset should maintain the same angle (textOffsetY should equal textOffsetX for 135°)
             const textOffsetX = textStartNuc.x - parentButtonNuc.x;
             const textOffsetY = textStartNuc.y - parentButtonNuc.y;
             
-            console.log('🔼🔼 Parent Button fixed position:', {
-                angle: '135°',
-                circleRadius: parentButtonCircleRadius.toFixed(2),
-                textRadius: parentButtonTextRadius.toFixed(2),
-                circleNucX: parentButtonNuc.x.toFixed(2),
-                circleNucY: parentButtonNuc.y.toFixed(2),
-                textOffsetX: textOffsetX.toFixed(2),
-                textOffsetY: textOffsetY.toFixed(2),
-                hubCenter: `(${arcParams.centerX.toFixed(2)}, ${arcParams.centerY.toFixed(2)})`,
-                SSd, LSd
-            });
+            // Verify: At 135°, sin and cos are equal, so offsets should be equal
+            // textOffsetX = textOffsetY = (textRadius - circleRadius) * cos(135°)
+            //             = (0.95 - 0.90) * LSd * √2 * cos(135°)
+            //             = 0.05 * LSd * √2 * (-√2/2)
+            //             = -0.05 * LSd
             
             // Position the group
             parentButtonGroup.setAttribute('transform', `translate(${parentButtonNuc.x}, ${parentButtonNuc.y})`);
@@ -1655,14 +1534,6 @@ class MobileRenderer {
             
             // DEBUG: Draw X at viewport center (Nuc origin = 0,0 in mainGroup coordinates)
             const xSize = 10;
-            
-            console.log('❌ Viewport Center Debug:', {
-                viewportWidth: viewport.width,
-                viewportHeight: viewport.height,
-                viewportCenter: `(${viewport.width / 2}, ${viewport.height / 2})`,
-                mainGroupTransform: this.elements.mainGroup.getAttribute('transform'),
-                xDrawnAt: '(0, 0) in mainGroup = Nuc origin'
-            });
             
             const debugX1 = document.getElementById('debugX1');
             if (debugX1) debugX1.remove();
@@ -1689,27 +1560,8 @@ class MobileRenderer {
             x2.setAttribute('stroke-width', '2');
             this.elements.mainGroup.appendChild(x2);
             
-            // Handle text animation if requested
-            if (!skipAnimation) {
-                const oldText = parentText.textContent;
-                
-                // If there's old text and it's different, animate it falling away
-                if (oldText && oldText !== parentName) {
-                    this.animateParentButtonTextFallAway(oldText);
-                    
-                    // Animate new text from Magnifier to Parent Button
-                    this.animateTextMigration(parentName, () => {
-                        // After animation completes, update the real text
-                        parentText.textContent = parentName;
-                    });
-                } else {
-                    // No old text or same text, just update directly
-                    parentText.textContent = parentName;
-                }
-            } else {
-                // Skip animation, update directly
-                parentText.textContent = parentName;
-            }
+            // Update text directly without animation
+            parentText.textContent = parentName;
             
             // Position text at calculated offset from circle
             parentText.setAttribute('x', textOffsetX.toFixed(2));
@@ -1721,18 +1573,14 @@ class MobileRenderer {
             if (Math.cos(135 * Math.PI / 180) < 0) {
                 parentTextRotation += 180; // Results in 315°
             }
-            parentText.setAttribute('transform', `rotate(${parentTextRotation}, 15, 0)`);
+            // Rotate around the text's actual position, not a fixed point
+            parentText.setAttribute('transform', `rotate(${parentTextRotation}, ${textOffsetX.toFixed(2)}, ${textOffsetY.toFixed(2)})`);
             
             // Position circle at fixed origin (0,0) relative to group transform
             // Circle radius from config
             parentNodeCircle.setAttribute('cx', '0');
             parentNodeCircle.setAttribute('cy', '0');
             parentNodeCircle.setAttribute('r', MOBILE_CONFIG.RADIUS.PARENT_BUTTON);
-            console.log('🟡 Parent Button circle at group origin:', {
-                cx: '0',
-                cy: '0',
-                radius: MOBILE_CONFIG.RADIUS.PARENT_BUTTON
-            });
             
             // Show button group
             parentButtonGroup.classList.remove('hidden');
@@ -1743,11 +1591,9 @@ class MobileRenderer {
             if (isAtTopLevel) {
                 parentButtonGroup.classList.add('disabled');
                 parentButtonGroup.setAttribute('data-disabled', 'true');
-                console.log('🔼🔼 Button SHOWN but DISABLED at top level:', currentLevel);
             } else {
                 parentButtonGroup.classList.remove('disabled');
                 parentButtonGroup.removeAttribute('data-disabled');
-                console.log('🔼🔼 Button SHOWN and ENABLED');
             }
             
             // Show/hide circle
@@ -1761,39 +1607,6 @@ class MobileRenderer {
                 // Draw line from circle to magnifier
                 setTimeout(() => this.drawParentLine(parentButtonNuc), 20);
             }
-            
-            // Debug: Log actual DOM state after updates
-            setTimeout(() => {
-                const groupRect = parentButtonGroup.getBoundingClientRect();
-                const circleRect = parentNodeCircle.getBoundingClientRect();
-                const textRect = parentText.getBoundingClientRect();
-                const groupStyle = window.getComputedStyle(parentButtonGroup);
-                const circleStyle = window.getComputedStyle(parentNodeCircle);
-                const textStyle = window.getComputedStyle(parentText);
-                console.log('🔍 Parent Button DOM state:', {
-                    groupClasses: parentButtonGroup.classList.toString(),
-                    groupDisplay: groupStyle.display,
-                    groupVisibility: groupStyle.visibility,
-                    groupOpacity: groupStyle.opacity,
-                    groupTransform: parentButtonGroup.getAttribute('transform'),
-                    groupRect: { x: groupRect.x.toFixed(1), y: groupRect.y.toFixed(1), width: groupRect.width.toFixed(1), height: groupRect.height.toFixed(1) },
-                    circleClasses: parentNodeCircle.classList.toString(),
-                    circleDisplay: circleStyle.display,
-                    circleVisibility: circleStyle.visibility,
-                    circleCx: parentNodeCircle.getAttribute('cx'),
-                    circleCy: parentNodeCircle.getAttribute('cy'),
-                    circleR: parentNodeCircle.getAttribute('r'),
-                    circleRect: { x: circleRect.x.toFixed(1), y: circleRect.y.toFixed(1), width: circleRect.width.toFixed(1), height: circleRect.height.toFixed(1) },
-                    textContent: parentText.textContent,
-                    textClasses: parentText.classList.toString(),
-                    textDisplay: textStyle.display,
-                    textVisibility: textStyle.visibility,
-                    textFill: textStyle.fill || parentText.getAttribute('fill'),
-                    textX: parentText.getAttribute('x'),
-                    textY: parentText.getAttribute('y'),
-                    textRect: { x: textRect.x.toFixed(1), y: textRect.y.toFixed(1), width: textRect.width.toFixed(1), height: textRect.height.toFixed(1) }
-                });
-            }, 50);
         } else {
             // Hide button if no parent
             parentButtonGroup.classList.add('hidden');
@@ -1805,8 +1618,6 @@ class MobileRenderer {
                 parentNodeCircle.style.display = 'none';
             }
             this.clearParentLine();
-            
-            console.log('🔼🔼 Button HIDDEN');
         }
     }
     
@@ -1925,17 +1736,457 @@ class MobileRenderer {
     }
     
     /**
+     * Animate a Child Pyramid node to the Magnifier position
+     * @param {SVGElement} nodeGroup - The SVG group element containing the node
+     * @param {Object} startPos - Starting position {x, y}
+     * @param {Object} endPos - Ending position {x, y, angle}
+     * @param {Function} onComplete - Callback when animation completes
+     */
+    animateNodeToMagnifier(nodeGroup, startPos, endPos, onComplete) {
+        Logger.debug('🎬 Starting node animation to Magnifier', startPos, endPos);
+        
+        // Clone the node group for animation
+        const animatedNode = nodeGroup.cloneNode(true);
+        animatedNode.classList.add('animating-node');
+        
+        // Calculate starting rotation from original node
+        const originalCircle = nodeGroup.querySelector('.node');
+        const startX = parseFloat(originalCircle.getAttribute('cx'));
+        const startY = parseFloat(originalCircle.getAttribute('cy'));
+        
+        // Calculate angle from center for starting rotation
+        const magnifierPos = this.viewport.getMagnifyingRingPosition();
+        const dx = startX - magnifierPos.x;
+        const dy = startY - magnifierPos.y;
+        const startAngle = Math.atan2(dy, dx);
+        let startRotation = startAngle * 180 / Math.PI;
+        if (Math.cos(startAngle) < 0) {
+            startRotation += 180;
+        }
+        
+        // Calculate end rotation (same logic as focus ring items)
+        let endRotation = endPos.angle * 180 / Math.PI;
+        if (Math.cos(endPos.angle) < 0) {
+            endRotation += 180;
+        }
+        
+        // Append animated node to main group (above everything)
+        const mainGroup = document.getElementById('mainGroup');
+        mainGroup.appendChild(animatedNode);
+        
+        // Calculate translation needed
+        const translateX = endPos.x - startX;
+        const translateY = endPos.y - startY;
+        const rotationDelta = endRotation - startRotation;
+        
+        Logger.debug(`🎬 Animation params: translate(${translateX.toFixed(1)}, ${translateY.toFixed(1)}) rotate ${rotationDelta.toFixed(1)}°`);
+        
+        // Apply starting state
+        animatedNode.style.transformOrigin = `${startX}px ${startY}px`;
+        animatedNode.style.transform = 'translate(0, 0) rotate(0deg)';
+        animatedNode.style.transition = 'none';
+        
+        // Force reflow
+        animatedNode.getBoundingClientRect();
+        
+        // Apply animation
+        setTimeout(() => {
+            animatedNode.style.transition = 'transform 600ms ease-in-out';
+            animatedNode.style.transform = `translate(${translateX}px, ${translateY}px) rotate(${rotationDelta}deg)`;
+            
+            // Clean up when animation completes
+            setTimeout(() => {
+                animatedNode.remove();
+                Logger.debug('🎬 Animation complete, node removed');
+                if (onComplete) onComplete();
+            }, 600);
+        }, 10);
+    }
+
+    /**
      * Handle Child Pyramid item clicks (nzone migration)
      */
     handleChildPyramidClick(item, event) {
+        // Block clicks during animation
+        if (this.isAnimating) {
+            Logger.debug('🔺 Click blocked - animation in progress');
+            return;
+        }
+        
         console.log('🔺🔺🔺 HANDLE CHILD PYRAMID CLICK CALLED!', item.name);
         Logger.debug('🔺 Child pyramid item clicked:', item.name, 'implementing nzone migration OUT');
+
+        // Set animation flag to block further clicks
+        this.isAnimating = true;
 
         // Immediately disable touch handling to prevent race conditions with touch events
         if (window.mobileCatalogApp && window.mobileCatalogApp.touchHandler) {
             window.mobileCatalogApp.touchHandler.tempDisabled = true;
         }
+        
+        // Capture all Child Pyramid node positions before clearing
+        const allChildNodes = Array.from(this.elements.childRingGroup.querySelectorAll('.child-pyramid-item'));
+        const nodePositions = allChildNodes.map(node => {
+            const circle = node.querySelector('.node');
+            const dataItem = JSON.parse(node.getAttribute('data-item'));
+            return {
+                node: node,
+                key: dataItem.key,
+                startX: parseFloat(circle.getAttribute('cx')),
+                startY: parseFloat(circle.getAttribute('cy'))
+            };
+        });
+        
+        Logger.debug(`🎬 Captured ${nodePositions.length} Child Pyramid nodes for animation`);
+        
+        // Clear Child Pyramid and fan lines immediately to prevent duplicates during animation
+        this.elements.childRingGroup.innerHTML = '';
+        this.elements.childRingGroup.classList.add('hidden');
+        this.clearFanLines();
+        
+        // Clear Focus Ring nodes but preserve the background band (wallpaper)
+        const focusRingGroup = this.elements.focusRingGroup;
+        const background = focusRingGroup.querySelector('#focusRingBackground');
+        focusRingGroup.innerHTML = '';
+        if (background) {
+            focusRingGroup.appendChild(background);
+        }
+        // Don't hide the focusRingGroup - keep it visible to show the background band
+        
+        // Check if clicked item is a leaf - if so, start Detail Sector expansion immediately
+        const isLeaf = this.isLeafItem(item);
+        if (isLeaf) {
+            Logger.debug('🔺 Leaf item detected - starting Detail Sector expansion during animation');
+            const displayConfig = this.dataManager.getDisplayConfig();
+            const leafLevel = displayConfig?.leaf_level;
+            const itemLevel = this.getItemHierarchyLevel(item);
+            const isActualLeaf = leafLevel && itemLevel === leafLevel;
+            
+            if (isActualLeaf && !this.detailSectorAnimating) {
+                this.expandDetailSector();
+            }
+        }
+        
+        // Animate Magnifier node (current focus) to Parent Button and Parent Button off-screen
+        this.animateMagnifierToParentButton(item);
+        
+        // Start animation for all nodes, then continue with state updates
+        this.animateSiblingsToFocusRing(item, nodePositions, () => {
+            // Animation complete - now show the real focus ring
+            this.isAnimating = false;
+            this.continueChildPyramidClick(item);
+        });
+    }
+    
+    /**
+     * Animate the current Magnifier node to Parent Button and Parent Button off-screen
+     * @param {Object} clickedItem - The item that was clicked (will become new magnifier)
+     */
+    animateMagnifierToParentButton(clickedItem) {
+        // Get current magnified item (parent of clicked item)
+        const currentMagnifiedItem = this.selectedFocusItem;
+        if (!currentMagnifiedItem) {
+            Logger.debug('🎬 No current magnified item to animate');
+            return;
+        }
+        
+        // Get the actual Magnifier ring element and hide it during animation
+        const magnifierRing = document.getElementById('magnifier');
+        if (magnifierRing) {
+            magnifierRing.style.display = 'none';
+        }
+        
+        // Get Magnifier position (start)
+        const magnifierPos = this.viewport.getMagnifyingRingPosition();
+        const startX = magnifierPos.x;
+        const startY = magnifierPos.y;
+        const startAngle = magnifierPos.angle;
+        
+        console.log('🎬 Magnifier animation START:', {
+            startX: startX.toFixed(2),
+            startY: startY.toFixed(2),
+            startAngle: (startAngle * 180 / Math.PI).toFixed(1) + '°'
+        });
+        
+        // Get Parent Button position (end)
+        const viewport = this.viewport.getViewportInfo();
+        const LSd = Math.max(viewport.width, viewport.height);
+        const arcParams = this.viewport.getArcParameters();
+        const parentButtonAngle = 135 * Math.PI / 180;
+        const parentButtonCircleRadius = 0.9 * LSd * Math.SQRT2;
+        
+        const endX = arcParams.centerX + parentButtonCircleRadius * Math.cos(parentButtonAngle);
+        const endY = arcParams.centerY + parentButtonCircleRadius * Math.sin(parentButtonAngle);
+        
+        console.log('🎬 Magnifier animation END:', {
+            endX: endX.toFixed(2),
+            endY: endY.toFixed(2),
+            distance: Math.sqrt((endX - startX)**2 + (endY - startY)**2).toFixed(2)
+        });
+        
+        // Create animated node for current magnifier using CSS transforms
+        const mainGroup = document.getElementById('mainGroup');
+        const animatedMagnifier = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
+        animatedMagnifier.classList.add('animating-magnifier');
+        
+        // Create circle (filled node) - positioned absolutely
+        const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
+        circle.setAttribute('cx', startX);
+        circle.setAttribute('cy', startY);
+        circle.setAttribute('r', MOBILE_CONFIG.RADIUS.MAGNIFIED);
+        circle.setAttribute('fill', this.getColor(currentMagnifiedItem.__level, currentMagnifiedItem.name));
+        circle.setAttribute('stroke', 'black');
+        circle.setAttribute('stroke-width', '1');
+        
+        // Create Magnifier ring (black stroke circle) - positioned absolutely
+        const magnifierRingClone = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
+        magnifierRingClone.setAttribute('cx', startX);
+        magnifierRingClone.setAttribute('cy', startY);
+        magnifierRingClone.setAttribute('r', MOBILE_CONFIG.RADIUS.MAGNIFIER);
+        magnifierRingClone.setAttribute('fill', 'none');
+        magnifierRingClone.setAttribute('stroke', 'black');
+        magnifierRingClone.setAttribute('stroke-width', '1');
+        magnifierRingClone.setAttribute('opacity', '0.8');
+        
+        // Create text - positioned absolutely
+        const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
+        const textOffset = -(MOBILE_CONFIG.RADIUS.MAGNIFIED + 50);
+        const textX = startX + textOffset * Math.cos(startAngle);
+        const textY = startY + textOffset * Math.sin(startAngle);
+        let textRotation = startAngle * 180 / Math.PI;
+        if (Math.cos(startAngle) < 0) textRotation += 180;
+        
+        text.setAttribute('x', textX);
+        text.setAttribute('y', textY);
+        text.setAttribute('dy', '0.3em');
+        text.setAttribute('text-anchor', 'end');
+        text.setAttribute('transform', `rotate(${textRotation}, ${textX}, ${textY})`);
+        text.setAttribute('fill', 'black');
+        text.textContent = currentMagnifiedItem.name;
+        
+        animatedMagnifier.appendChild(circle);
+        animatedMagnifier.appendChild(magnifierRingClone);
+        animatedMagnifier.appendChild(text);
+        mainGroup.appendChild(animatedMagnifier);
+        
+        console.log('🎬 Animated magnifier group created:', {
+            circleCount: animatedMagnifier.querySelectorAll('circle').length,
+            circlePositions: Array.from(animatedMagnifier.querySelectorAll('circle')).map(c => 
+                `cx=${c.getAttribute('cx')} cy=${c.getAttribute('cy')} r=${c.getAttribute('r')}`
+            )
+        });
+        
+        // Calculate animation parameters
+        const translateX = endX - startX;
+        const translateY = endY - startY;
+        
+        // Calculate text rotation to match Parent Button angle
+        let endTextRotation = parentButtonAngle * 180 / Math.PI;
+        if (Math.cos(parentButtonAngle) < 0) endTextRotation += 180;
+        let rotationDelta = endTextRotation - textRotation;
+        while (rotationDelta > 180) rotationDelta -= 360;
+        while (rotationDelta < -180) rotationDelta += 360;
+        
+        Logger.debug(`🎬 Magnifier → Parent Button: translate(${translateX.toFixed(1)}, ${translateY.toFixed(1)}) rotate ${rotationDelta.toFixed(1)}°`);
+        
+        // Apply starting state
+        animatedMagnifier.style.transformOrigin = `${startX}px ${startY}px`;
+        animatedMagnifier.style.transform = 'translate(0, 0)';
+        animatedMagnifier.style.transition = 'none';
+        
+        // Force reflow
+        animatedMagnifier.getBoundingClientRect();
+        
+        // Start animation
+        setTimeout(() => {
+            console.log('🎬 Starting magnifier animation with CSS transform');
+            animatedMagnifier.style.transition = 'transform 600ms ease-in-out, opacity 600ms ease-in-out';
+            animatedMagnifier.style.transform = `translate(${translateX}px, ${translateY}px)`;
+            animatedMagnifier.style.opacity = '0.5';
+            
+            // Clean up
+            setTimeout(() => {
+                console.log('🎬 Magnifier animation complete, removing element');
+                animatedMagnifier.remove();
+                if (magnifierRing) {
+                    magnifierRing.style.display = '';
+                }
+                Logger.debug('🎬 Magnifier animation complete');
+            }, 600);
+        }, 10);
+        
+        // Animate Parent Button off-screen
+        const parentButtonGroup = document.getElementById('parentButtonGroup');
+        if (parentButtonGroup && !parentButtonGroup.classList.contains('hidden')) {
+            Logger.debug('🎬 Animating Parent Button off-screen');
+            
+            parentButtonGroup.style.transition = 'transform 600ms ease-in-out, opacity 600ms ease-in-out';
+            parentButtonGroup.style.opacity = '0';
+            
+            // Move off-screen (further along 135° angle)
+            const offScreenDistance = LSd * 0.5;
+            const currentTransform = parentButtonGroup.getAttribute('transform');
+            const translateMatch = currentTransform && currentTransform.match(/translate\(([-\d.]+),\s*([-\d.]+)\)/);
+            
+            if (translateMatch) {
+                const currentX = parseFloat(translateMatch[1]);
+                const currentY = parseFloat(translateMatch[2]);
+                const newX = currentX + offScreenDistance * Math.cos(parentButtonAngle);
+                const newY = currentY + offScreenDistance * Math.sin(parentButtonAngle);
+                
+                parentButtonGroup.setAttribute('transform', `translate(${newX}, ${newY})`);
+            }
+            
+            // Reset after animation
+            setTimeout(() => {
+                parentButtonGroup.style.transition = '';
+                parentButtonGroup.style.opacity = '';
+                parentButtonGroup.classList.add('hidden');
+            }, 600);
+        }
+    }
+    
+    /**
+     * Animate all sibling nodes from Child Pyramid to Focus Ring positions
+     * @param {Object} clickedItem - The item that was clicked
+     * @param {Array} nodePositions - Array of {node, key, startX, startY} for all Child Pyramid nodes
+     * @param {Function} onComplete - Callback when all animations complete
+     */
+    animateSiblingsToFocusRing(clickedItem, nodePositions, onComplete) {
+        Logger.debug('🎬 Starting sibling migration animation');
+        
+        // Get siblings array to determine Focus Ring positions
+        const allSiblings = this.currentChildItems || [];
+        if (allSiblings.length === 0) {
+            Logger.warn('No siblings found for animation');
+            if (onComplete) onComplete();
+            return;
+        }
+        
+        // Calculate Focus Ring parameters
+        const clickedIndex = this.findItemIndexInArray(clickedItem, allSiblings, clickedItem.__level);
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const middleIndex = (allSiblings.length - 1) / 2;
+        const centerOffset = (clickedIndex - middleIndex) * angleStep;
+        
+        const centerAngle = this.viewport.getCenterAngle();
+        const adjustedCenterAngle = centerAngle + centerOffset;
+        const arcParams = this.viewport.getArcParameters();
+        
+        Logger.debug(`🎬 Focus Ring params: clickedIndex=${clickedIndex}, centerOffset=${(centerOffset * 180 / Math.PI).toFixed(1)}°`);
+        
+        const mainGroup = document.getElementById('mainGroup');
+        const animatedNodes = [];
+        
+        // Create animated clones for each sibling
+        nodePositions.forEach(nodePos => {
+            // Find this node's item in siblings array
+            const siblingIndex = allSiblings.findIndex(sib => sib.key === nodePos.key);
+            if (siblingIndex === -1) {
+                Logger.warn(`Node ${nodePos.key} not found in siblings array`);
+                return;
+            }
+            
+            const siblingItem = allSiblings[siblingIndex];
+            
+            // Calculate Focus Ring position for this sibling
+            const angle = adjustedCenterAngle + (middleIndex - siblingIndex) * angleStep;
+            const endPos = this.calculateFocusPosition(angle, arcParams);
+            endPos.angle = angle;
+            
+            // Clone the node for animation
+            const animatedNode = nodePos.node.cloneNode(true);
+            animatedNode.classList.add('animating-node');
+            mainGroup.appendChild(animatedNode);
+            
+            // Get the text element's existing rotation (Child Pyramid text is pre-rotated)
+            const textElement = animatedNode.querySelector('text');
+            let textStartRotation = 0;
+            if (textElement) {
+                const transformAttr = textElement.getAttribute('transform');
+                const rotateMatch = transformAttr && transformAttr.match(/rotate\(([-\d.]+)/);
+                if (rotateMatch) {
+                    textStartRotation = parseFloat(rotateMatch[1]);
+                }
+            }
+            
+            // Calculate end rotation for Focus Ring (same logic as updateFocusItemText)
+            let textEndRotation = angle * 180 / Math.PI;
+            if (Math.cos(angle) < 0) {
+                textEndRotation += 180;
+            }
+            
+            // Calculate the rotation delta for the text (not the whole group)
+            let textRotationDelta = textEndRotation - textStartRotation;
+            
+            // Normalize to [-180, 180] range to take shortest path
+            while (textRotationDelta > 180) textRotationDelta -= 360;
+            while (textRotationDelta < -180) textRotationDelta += 360;
+            
+            const translateX = endPos.x - nodePos.startX;
+            const translateY = endPos.y - nodePos.startY;
+            
+            // Determine if this is the clicked node (will be centered at Magnifier)
+            const isClickedNode = siblingItem.key === clickedItem.key;
+            
+            Logger.debug(`🎬 Node ${siblingItem.name}: translate(${translateX.toFixed(1)}, ${translateY.toFixed(1)}) rotate ${textRotationDelta.toFixed(1)}° ${isClickedNode ? '[CLICKED - will magnify]' : ''}`);
+            
+            // Get circle element for radius animation
+            const circleElement = animatedNode.querySelector('.node');
+            const startRadius = circleElement ? parseFloat(circleElement.getAttribute('r')) : MOBILE_CONFIG.RADIUS.CHILD_NODE;
+            const endRadius = isClickedNode ? MOBILE_CONFIG.RADIUS.MAGNIFIED : MOBILE_CONFIG.RADIUS.UNSELECTED;
+            
+            // Apply starting state
+            animatedNode.style.transformOrigin = `${nodePos.startX}px ${nodePos.startY}px`;
+            animatedNode.style.transform = 'translate(0, 0) rotate(0deg)';
+            animatedNode.style.transition = 'none';
+            
+            // Store animation data
+            animatedNodes.push({
+                node: animatedNode,
+                circle: circleElement,
+                translateX,
+                translateY,
+                rotationDelta: textRotationDelta,
+                startRadius,
+                endRadius
+            });
+        });
+        
+        // Force reflow
+        if (animatedNodes.length > 0) {
+            animatedNodes[0].node.getBoundingClientRect();
+        }
+        
+        // Start all animations simultaneously
+        setTimeout(() => {
+            animatedNodes.forEach(anim => {
+                anim.node.style.transition = 'transform 600ms ease-in-out';
+                anim.node.style.transform = `translate(${anim.translateX}px, ${anim.translateY}px) rotate(${anim.rotationDelta}deg)`;
+                
+                // Animate circle radius if needed
+                if (anim.circle && anim.startRadius !== anim.endRadius) {
+                    anim.circle.style.transition = 'r 600ms ease-in-out';
+                    anim.circle.setAttribute('r', anim.endRadius);
+                }
+            });
+            
+            // Clean up when animation completes
+            setTimeout(() => {
+                animatedNodes.forEach(anim => anim.node.remove());
+                Logger.debug('🎬 All sibling animations complete');
+                if (onComplete) onComplete();
+            }, 600);
+        }, 10);
 
+    }
+    
+    /**
+     * Continue with Child Pyramid click logic after animation completes
+     */
+    continueChildPyramidClick(item) {
+        Logger.debug('🔺 Continuing child pyramid click after animation:', item.name);
+        
         // NZONE MIGRATION: Child Pyramid → Focus Ring
         // This moves the clicked item OUT to become the new focus in the Focus Ring
 
@@ -1997,7 +2248,7 @@ class MobileRenderer {
         this.currentFocusItems = validatedSiblings;
         this.allFocusItems = validatedSiblings;
 
-        // 3. Clear current Child Pyramid immediately to remove child item nodes
+        // 3. Clear current Child Pyramid (already cleared before animation)
         this.elements.childRingGroup.innerHTML = '';
         this.elements.childRingGroup.classList.add('hidden');
 
@@ -2026,9 +2277,11 @@ class MobileRenderer {
             
             this.lastRotationOffset = centerOffset;
 
-            // Update Focus Ring with siblings - clicked item should be centered
+            // Show Focus Ring with siblings - clicked item should be centered
             this.forceImmediateFocusSettlement = true;
             try {
+                this.showFocusRing();
+                // Immediately update with correct offset
                 this.updateFocusRingPositions(centerOffset);
             } finally {
                 this.forceImmediateFocusSettlement = false;
@@ -2094,33 +2347,19 @@ class MobileRenderer {
         // Update Focus Ring with siblings - clicked item should be centered
         this.forceImmediateFocusSettlement = true;
         try {
+            this.showFocusRing();
+            // Immediately update with correct offset
             this.updateFocusRingPositions(centerOffset);
-            // Protect Child Pyramid from being hidden by subsequent rotation detection
-            // Store the offset to prevent false rotation detection during animation settling
+            
+            // Protect this rotation position from triggering Child Pyramid hide
             this.protectedRotationOffset = centerOffset;
             setTimeout(() => {
                 this.protectedRotationOffset = undefined;
-            }, 3000); // 3 second grace period to allow animation to fully settle
+            }, 100);
             
-            // CRITICAL: Explicitly show child content for the clicked item
-            // updateFocusRingPositions might not detect it as selected due to rounding errors
-            console.log('🔺🔺 Checking if should show child content:', {
-                hasSelectedFocusItem: !!this.selectedFocusItem,
-                selectedKey: this.selectedFocusItem?.key,
-                itemKey: item.key,
-                keysMatch: this.selectedFocusItem?.key === item.key
-            });
-            if (this.selectedFocusItem && this.selectedFocusItem.key === item.key) {
-                const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-                const centerAngle = this.viewport.getCenterAngle();
-                const middleIndex = (allSiblings.length - 1) / 2;
-                const angle = centerAngle + centerOffset + (middleIndex - clickedIndex) * angleStep;
-                console.log('🔺🔺 Explicitly showing child content after immediate settlement for:', item.name);
-                Logger.debug('🔺 Explicitly showing child content after immediate settlement');
-                this.showChildContentForFocusItem(this.selectedFocusItem, angle);
-            } else {
-                console.log('🔺🔺 SKIPPING child content display - condition failed');
-            }
+            // Show child content for the newly selected focus item (non-leaf)
+            const magnifierPos = this.viewport.getMagnifyingRingPosition();
+            this.showChildContentForFocusItem(item, magnifierPos.angle);
         } finally {
             this.forceImmediateFocusSettlement = false;
         }
@@ -2134,13 +2373,7 @@ class MobileRenderer {
      * Builds contextual breadcrumb from top navigation level through parent level
      */
     getParentNameForLevel(item, parentLevel) {
-        console.log('=== getParentNameForLevel START ===');
-        console.log('Input item.__path:', item.__path);
-        console.log('Input parentLevel:', parentLevel);
-        
         if (!item.__path || item.__path.length === 0) {
-            console.log('No __path found, returning parentLevel:', parentLevel);
-            console.log('=== getParentNameForLevel END ===\n');
             return parentLevel;
         }
         
@@ -2149,33 +2382,20 @@ class MobileRenderer {
         const startupConfig = rootData?.display_config?.focus_ring_startup;
         const topNavLevel = startupConfig?.top_navigation_level;
         const parentButtonStyle = startupConfig?.parent_button_style || 'cumulative';
-        console.log('Top navigation level from config:', topNavLevel);
-        console.log('Parent button style:', parentButtonStyle);
         
         // If simple style, just return the immediate parent name
         if (parentButtonStyle === 'simple') {
             if (item.__path.length >= 2) {
-                const simpleName = item.__path[item.__path.length - 2].toUpperCase();
-                console.log('Simple parent button style - returning:', simpleName);
-                console.log('=== getParentNameForLevel END ===\n');
-                return simpleName;
+                return item.__path[item.__path.length - 2].toUpperCase();
             }
-            console.log('Simple style but no parent in path, returning parentLevel:', parentLevel);
-            console.log('=== getParentNameForLevel END ===\n');
             return parentLevel;
         }
         
         if (!topNavLevel) {
             // Fallback to simple parent name if no top nav level configured
-            console.log('No topNavLevel configured, using fallback');
             if (item.__path.length >= 2) {
-                const fallback = item.__path[item.__path.length - 2];
-                console.log('Returning fallback:', fallback);
-                console.log('=== getParentNameForLevel END ===\n');
-                return fallback;
+                return item.__path[item.__path.length - 2];
             }
-            console.log('Returning parentLevel:', parentLevel);
-            console.log('=== getParentNameForLevel END ===\n');
             return parentLevel;
         }
         
@@ -2183,40 +2403,25 @@ class MobileRenderer {
         const levelNames = this.getHierarchyLevelNames();
         const topNavDepth = levelNames.indexOf(topNavLevel);
         const parentDepth = levelNames.indexOf(parentLevel);
-        console.log('levelNames:', levelNames);
-        console.log('topNavDepth:', topNavDepth, '(level:', topNavLevel + ')');
-        console.log('parentDepth:', parentDepth, '(level:', parentLevel + ')');
         
         if (topNavDepth === -1 || parentDepth === -1) {
             // Fallback if levels not found in hierarchy
-            console.log('Levels not found in hierarchy, using fallback');
             if (item.__path.length >= 2) {
-                const fallback = item.__path[item.__path.length - 2];
-                console.log('Returning fallback:', fallback);
-                console.log('=== getParentNameForLevel END ===\n');
-                return fallback;
+                return item.__path[item.__path.length - 2];
             }
-            console.log('Returning parentLevel:', parentLevel);
-            console.log('=== getParentNameForLevel END ===\n');
             return parentLevel;
         }
         
         // Build contextual breadcrumb: always show manufacturer, then immediate parent (if different)
         const contextSegments = [];
-        console.log('Building context segments - topNavDepth:', topNavDepth, 'parentDepth:', parentDepth);
-        console.log('Item __path length:', item.__path.length);
         
         // Determine actual parent from path (handles skipped hierarchy levels)
         const actualParentIndex = item.__path.length - 2;
         const actualParentSegment = actualParentIndex >= 0 ? item.__path[actualParentIndex] : null;
         
-        console.log('  Actual parent at index', actualParentIndex + ':', actualParentSegment);
-        console.log('  Comparing actualParentIndex', actualParentIndex, 'with topNavDepth', topNavDepth);
-        
         // Case 1: Parent is ABOVE top navigation level (e.g., country above manufacturer)
         // Show only the parent name, singular
         if (actualParentIndex < topNavDepth) {
-            console.log('  Parent is ABOVE top nav level - showing parent only (singular):', actualParentSegment);
             if (actualParentSegment) {
                 contextSegments.push(actualParentSegment);
             }
@@ -2225,7 +2430,6 @@ class MobileRenderer {
         // Show only manufacturer, singular
         else if (actualParentIndex === topNavDepth) {
             const manufacturerSegment = item.__path[topNavDepth];
-            console.log('  Parent IS top nav level - showing manufacturer only (singular):', manufacturerSegment);
             contextSegments.push(manufacturerSegment);
         }
         // Case 3: Parent is BELOW top navigation level (e.g., cylinder, family, etc.)
@@ -2233,7 +2437,6 @@ class MobileRenderer {
         else if (actualParentIndex > topNavDepth) {
             // Add manufacturer first
             const manufacturerSegment = item.__path[topNavDepth];
-            console.log('  [' + topNavDepth + '] Adding manufacturer:', manufacturerSegment, '(never pluralized)');
             contextSegments.push(manufacturerSegment);
             
             // Add actual parent (pluralized)
@@ -2246,17 +2449,12 @@ class MobileRenderer {
                     ? actualParentSegment + "'s"  // Numbers: "8" → "8's"
                     : actualParentSegment + "'s"; // Words: "Flathead" → "Flathead's"
                 
-                console.log('  [' + actualParentIndex + '] Adding parent:', actualParentSegment, '→', pluralized, '| levelName:', levelName, '| is_numeric:', levelConfig?.is_numeric);
                 contextSegments.push(pluralized);
             }
         }
         
         // Join segments with space and convert to uppercase
-        const result = contextSegments.join(' ').toUpperCase();
-        console.log('Context segments:', contextSegments);
-        console.log('Final breadcrumb:', result);
-        console.log('=== getParentNameForLevel END ===\n');
-        return result;
+        return contextSegments.join(' ').toUpperCase();
     }
 
     /**
