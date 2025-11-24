@@ -10,6 +10,14 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Split architecture Phase 2: Dual loader implementation
 - Multi-volume validation
 
+## [0.8.1] - 2025-11-24
+
+### Fixed
+- Parent Button OUT migration now correctly positions parent item in Magnifier
+- Fixed extraction of parent name from `__path` array using hierarchy depth
+- Parent lookup now searches by `item.name` instead of `item.key` for correct matching
+- Diagnostic logging added to track OUT migration parent selection
+
 ## [0.8.0] - 2025-11-23
 
 ### Added

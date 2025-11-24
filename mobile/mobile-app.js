@@ -595,13 +595,22 @@ class MobileCatalogApp {
             }
             
             // Find which top-level item is the parent of current focus
-            const topLevelParentKey = currentFocus.__path && currentFocus.__path.length > 0 
+            // The top level is at depth 0 in the hierarchy, so extract __path[0]
+            const topLevelParentName = currentFocus.__path && currentFocus.__path.length > 0 
                 ? currentFocus.__path[0] 
                 : null;
             
-            const selectedTopLevel = topLevelParentKey 
-                ? topLevelItems.find(item => item.key === topLevelParentKey) || topLevelItems[0]
+            console.log('🔼🔍 OUT MIGRATION DIAGNOSIS:');
+            console.log('  Current focus item:', currentFocus.name, '| key:', currentFocus.key);
+            console.log('  Current focus __path:', currentFocus.__path);
+            console.log('  Extracted parent name from __path[0]:', topLevelParentName);
+            console.log('  Top level items (first 5):', topLevelItems.slice(0, 5).map(i => `${i.name}(${i.key}, sort:${i.sort_number})`));
+            
+            const selectedTopLevel = topLevelParentName 
+                ? topLevelItems.find(item => item.name === topLevelParentName) || topLevelItems[0]
                 : topLevelItems[0];
+            
+            console.log('  Selected top level item:', selectedTopLevel.name, '| key:', selectedTopLevel.key, '| sort_number:', selectedTopLevel.sort_number);
             
             Logger.debug(`🔼 Showing top level: ${topLevelItems.length} items, selected: ${selectedTopLevel.name || selectedTopLevel.key}`);
             
@@ -613,6 +622,9 @@ class MobileCatalogApp {
             const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
             const middleIndex = (topLevelItems.length - 1) / 2;
             const centerOffset = topLevelIndex >= 0 ? (topLevelIndex - middleIndex) * angleStep : 0;
+            
+            console.log('  Found index in array:', topLevelIndex, '| middleIndex:', middleIndex, '| centerOffset:', centerOffset);
+            console.log('🔼🔍 END DIAGNOSIS\n');
             
             Logger.debug(`🔼 Top level index: ${topLevelIndex}, centerOffset: ${centerOffset}`);
             
@@ -662,13 +674,26 @@ class MobileCatalogApp {
             }
             
             // Find which top-level item should be selected (the ancestor in path)
-            const topLevelParentKey = currentFocus.__path && currentFocus.__path.length > 0 
-                ? currentFocus.__path[0] 
+            // Need to extract the name at the correct depth in the hierarchy
+            const levelNames = this.renderer.getHierarchyLevelNames();
+            const topNavDepth = levelNames.indexOf(topNavLevel);
+            
+            const topLevelParentName = currentFocus.__path && currentFocus.__path.length > topNavDepth
+                ? currentFocus.__path[topNavDepth]
                 : null;
             
-            const selectedTopLevel = topLevelParentKey 
-                ? topLevelItems.find(item => item.key === topLevelParentKey) || topLevelItems[0]
+            console.log('🔼🔍 OUT MIGRATION TO TOP NAV LEVEL DIAGNOSIS:');
+            console.log('  Current focus item:', currentFocus.name, '| key:', currentFocus.key);
+            console.log('  Current focus __path:', currentFocus.__path);
+            console.log('  Top nav level:', topNavLevel, '| depth:', topNavDepth);
+            console.log('  Extracted parent name from __path[' + topNavDepth + ']:', topLevelParentName);
+            console.log('  Top level items (first 5):', topLevelItems.slice(0, 5).map(i => `${i.name}(${i.key}, sort:${i.sort_number})`));
+            
+            const selectedTopLevel = topLevelParentName 
+                ? topLevelItems.find(item => item.name === topLevelParentName) || topLevelItems[0]
                 : topLevelItems[0];
+            
+            console.log('  Selected top level item:', selectedTopLevel.name, '| key:', selectedTopLevel.key, '| sort_number:', selectedTopLevel.sort_number);
             
             Logger.debug(`🔼 Showing all top level: ${topLevelItems.length} items, selected: ${selectedTopLevel.name || selectedTopLevel.key}`);
             
@@ -680,6 +705,9 @@ class MobileCatalogApp {
             const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
             const middleIndex = (topLevelItems.length - 1) / 2;
             const centerOffset = topLevelIndex >= 0 ? (topLevelIndex - middleIndex) * angleStep : 0;
+            
+            console.log('  Found index in array:', topLevelIndex, '| middleIndex:', middleIndex, '| centerOffset:', centerOffset);
+            console.log('🔼🔍 END DIAGNOSIS\n');
             
             Logger.debug(`🔼 Top level index: ${topLevelIndex}, centerOffset: ${centerOffset}`);
             
