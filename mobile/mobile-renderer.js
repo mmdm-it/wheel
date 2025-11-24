@@ -6,6 +6,9 @@
  * Edit this file directly - no bundling required.
  */
 
+// Debug flag - set to false to disable verbose console logging
+const DEBUG_VERBOSE = false;
+
 import { MOBILE_CONFIG, VERSION } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
 import { MobileChildPyramid } from './mobile-childpyramid.js';
@@ -79,9 +82,8 @@ class MobileRenderer {
         await this.initializeElements();
         this.viewport.adjustSVGForMobile(this.elements.svg, this.elements.mainGroup);
         
-        // Create blue circle at upper right corner for Detail Sector animation
-        // Always create for volume selector, restrict visibility for non-MMDM volumes
-        this.createDetailSectorCircle();
+        // Note: Detail Sector circle will be created after volume loads
+        // (when config is available to check hide_circle setting)
         
         return true;
     }
@@ -104,6 +106,18 @@ class MobileRenderer {
         ring.setAttribute('stroke', 'black');
         ring.setAttribute('stroke-width', '1');
         ring.setAttribute('opacity', '0.8');
+        
+        // Log Magnifier position and current selected item text
+        const selectedItem = this.selectedFocusItem;
+        console.log('🔍 === MAGNIFIER AT LOAD ===');
+        console.log('🔍 Magnifier position:', { x: position.x.toFixed(1), y: position.y.toFixed(1), radius: MOBILE_CONFIG.RADIUS.MAGNIFIER });
+        console.log('🔍 Magnifier angle (from viewport):', (position.angle * 180 / Math.PI).toFixed(1) + '°');
+        if (selectedItem) {
+            console.log('🔍 Selected item text:', selectedItem.name);
+            console.log('🔍 Selected item rotation:', '0° (text is horizontal at Magnifier)');
+        } else {
+            console.log('🔍 No selected item yet');
+        }
         
         this.focusRingDebug(`Magnifier positioned at (${position.x.toFixed(1)}, ${position.y.toFixed(1)}) with radius ${MOBILE_CONFIG.RADIUS.MAGNIFIER}`);
     }
@@ -195,6 +209,56 @@ class MobileRenderer {
         // Create new magnifier
         const ring = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
         ring.setAttribute('id', 'magnifier');
+        ring.style.cursor = 'pointer';
+        ring.style.pointerEvents = 'all'; // Ensure it receives touch events
+        
+        console.log('✨ Magnifier created with click handler');
+        
+        // Add click handler to advance Focus Ring by one node
+        let touchStartPos = null;
+        let touchStartTime = null;
+        
+        ring.addEventListener('touchstart', (e) => {
+            console.log('✨ Magnifier TOUCHSTART');
+            touchStartPos = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+            touchStartTime = performance.now();
+        }, { passive: true });
+        
+        ring.addEventListener('touchend', (e) => {
+            console.log('✨ Magnifier TOUCHEND');
+            if (!touchStartPos) return;
+            
+            const touch = e.changedTouches[0];
+            const dx = touch.clientX - touchStartPos.x;
+            const dy = touch.clientY - touchStartPos.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            const duration = performance.now() - touchStartTime;
+            
+            Logger.debug('🔍 Magnifier touchend:', {
+                distance: distance.toFixed(2),
+                duration: duration.toFixed(2),
+                willTrigger: distance < 10 && duration < 300
+            });
+            
+            // Only trigger if touch didn't move much (click, not swipe) and was quick
+            if (distance < 10 && duration < 300) {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log('✨✨✨ MAGNIFIER TAP - advancing Focus Ring');
+                this.advanceFocusRing();
+            } else {
+                console.log('✨ Magnifier touch too long or moved too much:', { distance, duration });
+            }
+            touchStartPos = null;
+            touchStartTime = null;
+        });
+        
+        ring.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            Logger.debug('🔍 Magnifier click detected - calling advanceFocusRing');
+            this.advanceFocusRing();
+        });
         
         // Add to main group (NOT to focus ring group, so it stays visible)
         this.elements.mainGroup.appendChild(ring);
@@ -205,10 +269,66 @@ class MobileRenderer {
         // Position it
         this.positionMagnifyingRing();
         
-        Logger.debug('Magnifier created and positioned');
+        Logger.debug('Magnifier created and positioned with click handler');
         
         return ring;
     }
+    
+    /**
+     * Advance Focus Ring by one node clockwise (increase sort_number by 1)
+     * Triggered by clicking the magnifier
+     */
+    advanceFocusRing() {
+        Logger.debug('🔍🔍🔍 advanceFocusRing CALLED');
+        
+        if (!this.currentFocusItems || this.currentFocusItems.length === 0) {
+            Logger.warn('🔍 No focus items to advance');
+            return;
+        }
+        
+        Logger.debug('🔍 Current focus items:', this.currentFocusItems.length);
+        
+        // Get current selected index
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const middleIndex = (this.currentFocusItems.length - 1) / 2;
+        const currentRotationOffset = window.mobileCatalogApp?.touchHandler?.rotationOffset || 0;
+        const currentIndex = this.getSelectedFocusIndex(currentRotationOffset, this.currentFocusItems.length);
+        
+        Logger.debug('🔍 Selection state:', {
+            angleStep,
+            middleIndex,
+            currentRotationOffset: currentRotationOffset.toFixed(3),
+            currentIndex
+        });
+        
+        if (currentIndex < 0) {
+            Logger.warn('🔍 No item currently selected at center');
+            return;
+        }
+        
+        const currentItem = this.currentFocusItems[currentIndex];
+        Logger.debug('🔍 Current item:', currentItem.name);
+        
+        // Calculate next index (wrap around to 0 if at end)
+        const nextIndex = (currentIndex + 1) % this.currentFocusItems.length;
+        const nextItem = this.currentFocusItems[nextIndex];
+        
+        // Calculate rotation offset needed to center the next item
+        const targetOffset = (nextIndex - middleIndex) * angleStep;
+        
+        Logger.debug(`🔍🎯 Magnifier clicked: advancing from [${currentIndex}] ${currentItem.name} to [${nextIndex}] ${nextItem.name}`);
+        Logger.debug(`🔍🎯 Offset: ${currentRotationOffset.toFixed(3)} → ${targetOffset.toFixed(3)}`);
+        
+        // Animate to target position
+        if (window.mobileCatalogApp) {
+            Logger.debug('🔍 Calling animateRotationTo with targetOffset:', targetOffset.toFixed(3));
+            window.mobileCatalogApp.animateRotationTo(targetOffset);
+        } else {
+            Logger.error('🔍 window.mobileCatalogApp not found!');
+        }
+    }
+    
+
     
     onRotationEnd() {
         // Called when touch rotation has completely stopped
@@ -238,10 +358,12 @@ class MobileRenderer {
     }
     
     showChildContentForFocusItem(focusItem, angle) {
+        if (DEBUG_VERBOSE) console.log('📦📦📦 showChildContentForFocusItem CALLED:', focusItem.name, 'path:', focusItem.__path);
         Logger.debug('Showing child content for focus item:', focusItem.name);
 
         // Determine the hierarchy level of the focus item
         const currentLevel = this.getItemHierarchyLevel(focusItem);
+        console.log('📦 Current level:', currentLevel);
         if (!currentLevel) {
             Logger.warn('Could not determine hierarchy level for focus item:', focusItem);
             return;
@@ -249,6 +371,7 @@ class MobileRenderer {
 
         // Get the immediate next hierarchy level (universal navigation requires immediate children)
         const nextLevel = this.getNextHierarchyLevel(currentLevel);
+        console.log('📦 Next level:', nextLevel);
         if (!nextLevel) {
             Logger.debug('No next level detected for', focusItem.name, '- treating as leaf');
             this.leafStateCache.set(this.getLeafCacheKey(focusItem, null), true);
@@ -259,9 +382,11 @@ class MobileRenderer {
         const { level: resolvedLevel, items: childItems } = this.resolveChildLevel(focusItem, nextLevel);
         const cacheLevel = resolvedLevel || nextLevel;
 
+        console.log(`📦 Resolved level: '${cacheLevel}', child items:`, childItems?.length);
         Logger.debug(`Focus item is at level '${currentLevel}', requested '${nextLevel}', resolved to '${cacheLevel}'`);
         
         if (!childItems || childItems.length === 0) {
+            console.log(`📦 NO CHILD ITEMS - treating as leaf`);
             Logger.debug(`No child items found for ${currentLevel}: ${focusItem.name} - treating as leaf`);
             this.leafStateCache.set(this.getLeafCacheKey(focusItem, cacheLevel), true);
             this.handleLeafFocusSelection(focusItem);
@@ -271,6 +396,7 @@ class MobileRenderer {
         this.leafStateCache.set(this.getLeafCacheKey(focusItem, cacheLevel), false);
 
         const itemType = this.getLevelPluralLabel(cacheLevel);
+        console.log(`📦 Found ${childItems.length} ${itemType}, calling showChildPyramid`);
         Logger.debug(`Found ${childItems.length} ${itemType} for ${currentLevel}: ${focusItem.name}`);
 
         // Set the active type to the current focus item's level
@@ -282,7 +408,7 @@ class MobileRenderer {
         const parentLevel = itemLevel ? this.getPreviousHierarchyLevel(itemLevel) : null;
         const parentName = parentLevel ? this.getParentNameForLevel(focusItem, parentLevel) : null;
         Logger.debug(`🔼 Parent Button update: itemLevel=${itemLevel}, parentLevel=${parentLevel}, parentName=${parentName}, path=${JSON.stringify(focusItem.__path)}`);
-        this.updateParentButton(parentName);
+        this.updateParentButton(parentName, true); // Skip animation during rotation
 
         // Collapse Detail Sector when showing Child Pyramid (non-leaf items)
         if (this.detailSector && this.detailSector.isVisible) {
@@ -558,7 +684,7 @@ class MobileRenderer {
         const parentLevel = itemLevel ? this.getPreviousHierarchyLevel(itemLevel) : null;
         const parentName = parentLevel ? this.getParentNameForLevel(focusItem, parentLevel) : null;
         Logger.debug(`🔼 Parent Button update (leaf): itemLevel=${itemLevel}, parentLevel=${parentLevel}, parentName=${parentName}, path=${JSON.stringify(focusItem.__path)}`);
-        this.updateParentButton(parentName);
+        this.updateParentButton(parentName, true); // Skip animation during rotation
 
         if (!this.detailSector) {
             return;
@@ -569,19 +695,16 @@ class MobileRenderer {
         const leafLevel = displayConfig?.leaf_level;
         const isActualLeaf = leafLevel && itemLevel === leafLevel;
         
-        // Only expand Detail Sector for actual leaf items (e.g., models)
+        // Only expand Detail Sector for actual leaf items (e.g., models, verses)
         // Don't expand for childless non-leaf items (e.g., cylinder counts without models)
         const isMMDM = displayConfig && displayConfig.volume_name === 'MMdM Catalog';
         
-        if (isMMDM && isActualLeaf) {
+        if (isActualLeaf) {
             if (this.detailSector.isVisible) {
                 this.detailSector.showDetailContent(focusItem);
             } else if (!this.detailSectorAnimating) {
                 this.expandDetailSector();
             }
-        } else if (!isMMDM && isActualLeaf) {
-            // For non-MMDM volumes, show detail content directly without expanding the circle
-            this.detailSector.showDetailContent(focusItem);
         }
         // For childless non-leaf items, don't show Detail Sector at all
     }
@@ -600,6 +723,9 @@ class MobileRenderer {
         focusRingGroup.classList.remove('hidden');
         focusRingGroup.innerHTML = '';
         
+        // Create Focus Ring background band (visual nzone differentiation)
+        this.createFocusRingBackground();
+        
         // Create magnifier at correct position when focus items are shown
         this.createMagnifier();
         
@@ -616,6 +742,64 @@ class MobileRenderer {
         
         // Store the initial offset for the touch handler
         this.initialRotationOffset = initialOffset;
+    }
+    
+    /**
+     * Create white background band for Focus Ring nzone
+     * Creates a curved band from 95% to 105% of Focus Ring radius
+     */
+    createFocusRingBackground() {
+        console.log('🎨 === CREATING FOCUS RING CENTERLINE ===');
+        
+        const arcParams = this.viewport.getArcParameters();
+        console.log('🎨 arcParams:', arcParams);
+        
+        // Draw white band between 98% and 102% of Focus Ring radius
+        const hubX = arcParams.centerX;
+        const hubY = arcParams.centerY;
+        const innerRadius = arcParams.radius * 0.98;  // 98% of Focus Ring radius
+        const outerRadius = arcParams.radius * 1.02;  // 102% of Focus Ring radius
+        
+        console.log(`🎨 Hub: (${hubX}, ${hubY})`);
+        console.log(`🎨 Inner radius (98%): ${innerRadius}`);
+        console.log(`🎨 Outer radius (102%): ${outerRadius}`);
+        
+        // Insert at beginning so nodes appear on top
+        const focusRingGroup = this.elements.focusRingGroup;
+        
+        // Create annular ring (donut) filled with white
+        const pathData = [
+            // Outer circle (clockwise)
+            `M ${hubX + outerRadius} ${hubY}`,
+            `A ${outerRadius} ${outerRadius} 0 1 1 ${hubX - outerRadius} ${hubY}`,
+            `A ${outerRadius} ${outerRadius} 0 1 1 ${hubX + outerRadius} ${hubY}`,
+            // Inner circle (counter-clockwise to create hole)
+            `M ${hubX + innerRadius} ${hubY}`,
+            `A ${innerRadius} ${innerRadius} 0 1 0 ${hubX - innerRadius} ${hubY}`,
+            `A ${innerRadius} ${innerRadius} 0 1 0 ${hubX + innerRadius} ${hubY}`,
+            `Z`
+        ].join(' ');
+        
+        const path = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'path');
+        path.setAttribute('d', pathData);
+        path.setAttribute('fill', '#7a7979ff');  // Slightly darker gray than background
+        path.setAttribute('fill-rule', 'evenodd');
+        path.setAttribute('id', 'focusRingBackground');
+        
+        console.log('🎨 White band created');
+        
+        if (focusRingGroup.firstChild) {
+            focusRingGroup.insertBefore(path, focusRingGroup.firstChild);
+            console.log('🎨 Inserted before first child');
+        } else {
+            focusRingGroup.appendChild(path);
+            console.log('🎨 Appended to empty group');
+        }
+        
+        console.log('🎨 focusRingGroup children after:', focusRingGroup.children.length);
+        console.log('🎨 === WHITE BAND COMPLETE ===');
+        
+        Logger.debug('Focus Ring darker gray background band created (98% to 102%)');
     }
     
     calculateInitialRotationOffset() {
@@ -691,7 +875,9 @@ class MobileRenderer {
         // Track rotation changes - hide Child Pyramid during rotation
         const programmaticFocus = this.forceImmediateFocusSettlement === true;
         const rotationTriggered = this.lastRotationOffset !== undefined && Math.abs(rotationOffset - this.lastRotationOffset) > 0.001;
-        const isRotating = !programmaticFocus && rotationTriggered;
+        // Don't hide Child Pyramid if we're within the protection period after immediate settlement
+        const isProtected = this.protectedRotationOffset !== undefined && Math.abs(rotationOffset - this.protectedRotationOffset) < 0.01;
+        const isRotating = !programmaticFocus && !isProtected && rotationTriggered;
         if (isRotating) {
             this.focusRingDebug('🔄 Rotation detected - hiding Child Pyramid temporarily');
             
@@ -702,8 +888,10 @@ class MobileRenderer {
         }
         this.lastRotationOffset = rotationOffset;
         
-        // Clear existing elements
+        // Clear existing elements but preserve the background band
+        const background = focusRingGroup.querySelector('#focusRingBackground');
         focusRingGroup.innerHTML = '';
+        if (background) focusRingGroup.appendChild(background);
         this.focusElements.clear();
         
         // Use updated angle calculation logic to maintain JSON order
@@ -792,7 +980,7 @@ class MobileRenderer {
             this.selectedFocusItem = selectedFocusItem;
             const parentLevel = this.getPreviousHierarchyLevel(this.getItemHierarchyLevel(selectedFocusItem));
             const parentName = parentLevel ? this.getParentNameForLevel(selectedFocusItem, parentLevel) : null;
-            this.updateParentButton(parentName);
+            this.updateParentButton(parentName, true); // Skip animation during rotation
 
             const angle = adjustedCenterAngle + (middleIndex - selectedIndex) * angleStep;
 
@@ -1097,6 +1285,20 @@ class MobileRenderer {
         this.elements.centralGroup.appendChild(timestamp);
     }
     
+    /**
+     * Get the color scheme from display_config
+     */
+    getColorScheme() {
+        const displayConfig = this.dataManager.getDisplayConfig();
+        return displayConfig && displayConfig.color_scheme || {
+            background: '#868686',
+            nodes: '#f1b800',
+            detail_sector: '#362e6a',
+            text_primary: '#000000',
+            text_secondary: '#ffffff'
+        };
+    }
+
     getColor(type, name) {
         // Special handling for volume selector
         if (type === 'volume_selector') {
@@ -1105,7 +1307,8 @@ class MobileRenderer {
         
         // Get color from display configuration
         const levelConfig = this.dataManager.getHierarchyLevelConfig(type);
-        return levelConfig && levelConfig.color || '#f1b800'; // Default to yellow if not configured
+        const colorScheme = this.getColorScheme();
+        return levelConfig && levelConfig.color || colorScheme.nodes;
     }
     
     getColorForType(type) {
@@ -1229,7 +1432,134 @@ class MobileRenderer {
         this.elements.pathLinesGroup.innerHTML = '';
     }
     
-    updateParentButton(parentName) {
+    /**
+     * Animate text migration from Magnifier to Parent Button
+     * @param {string} text - The text to animate
+     * @param {Function} onComplete - Callback when animation completes
+     */
+    animateTextMigration(text, onComplete) {
+        // Get start position (Magnifier)
+        const magnifierPos = this.viewport.getMagnifyingRingPosition();
+        
+        // Get end position (Parent Button)
+        const viewport = this.viewport.getViewportInfo();
+        const LSd = Math.max(viewport.width, viewport.height);
+        const arcParams = this.viewport.getArcParameters();
+        const parentButtonAngle = 135 * Math.PI / 180;
+        const parentButtonRadius = 0.9 * LSd * Math.SQRT2;
+        const parentButtonPos = {
+            x: arcParams.centerX + parentButtonRadius * Math.cos(parentButtonAngle) + 15, // Add 15px offset for text position
+            y: arcParams.centerY + parentButtonRadius * Math.sin(parentButtonAngle)
+        };
+        
+        // Calculate start rotation (text along radius at Magnifier position)
+        const magnifierAngle = magnifierPos.angle; // Already in radians
+        let startRotation = magnifierAngle * 180 / Math.PI;
+        if (Math.cos(magnifierAngle) < 0) {
+            startRotation += 180;
+        }
+        
+        // End rotation at Parent Button is 0° (horizontal text)
+        const endRotation = 0;
+        
+        // Calculate rotation change, choosing shortest path
+        let rotationChange = endRotation - startRotation;
+        if (rotationChange > 180) rotationChange -= 360;
+        if (rotationChange < -180) rotationChange += 360;
+        
+        // Create temporary animated text element
+        const animText = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
+        animText.textContent = text;
+        animText.setAttribute('x', magnifierPos.x);
+        animText.setAttribute('y', magnifierPos.y);
+        animText.setAttribute('text-anchor', 'middle');
+        animText.setAttribute('dominant-baseline', 'middle');
+        animText.setAttribute('fill', 'black');
+        animText.setAttribute('font-size', '20');
+        animText.setAttribute('font-weight', 'bold');
+        animText.setAttribute('transform', `rotate(${startRotation}, ${magnifierPos.x}, ${magnifierPos.y})`);
+        animText.style.transition = 'transform 2000ms ease-in-out';
+        animText.style.pointerEvents = 'none';
+        
+        this.elements.mainGroup.appendChild(animText);
+        
+        console.log('🎬 Text animation:', {
+            text,
+            magnifierAngle: (magnifierAngle * 180 / Math.PI).toFixed(1) + '°',
+            startRotation: startRotation.toFixed(1) + '°',
+            endRotation: endRotation + '°',
+            rotationChange: rotationChange.toFixed(1) + '°',
+            from: `(${magnifierPos.x.toFixed(1)}, ${magnifierPos.y.toFixed(1)})`,
+            to: `(${parentButtonPos.x.toFixed(1)}, ${parentButtonPos.y.toFixed(1)})`
+        });
+        
+        // Trigger animation on next frame
+        requestAnimationFrame(() => {
+            const deltaX = parentButtonPos.x - magnifierPos.x;
+            const deltaY = parentButtonPos.y - magnifierPos.y;
+            
+            // Move to final position with final rotation (0° = horizontal)
+            // The text needs to translate AND rotate to 0°
+            animText.setAttribute('transform', `translate(${deltaX}, ${deltaY}) rotate(${endRotation}, ${parentButtonPos.x}, ${parentButtonPos.y})`);
+            
+            // Call onComplete just before animation finishes to show real text
+            setTimeout(() => {
+                if (onComplete) onComplete();
+            }, 1900); // 100ms before animation ends
+            
+            // Clean up animated text after animation completes
+            setTimeout(() => {
+                animText.remove();
+            }, 2000);
+        });
+    }
+    
+    /**
+     * Animate old Parent Button text falling away
+     * @param {string} text - The text to animate away
+     */
+    animateParentButtonTextFallAway(text) {
+        const parentButtonGroup = document.getElementById('parentButtonGroup');
+        if (!parentButtonGroup) return;
+        
+        // Get current Parent Button position
+        const transform = parentButtonGroup.getAttribute('transform');
+        const match = transform.match(/translate\(([-\d.]+),\s*([-\d.]+)\)/);
+        if (!match) return;
+        
+        const startX = parseFloat(match[1]);
+        const startY = parseFloat(match[2]);
+        
+        // Create temporary animated text element
+        const animText = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
+        animText.textContent = text;
+        animText.setAttribute('class', 'parent-text');
+        animText.setAttribute('x', startX + 15); // Offset from circle
+        animText.setAttribute('y', startY);
+        animText.setAttribute('text-anchor', 'start');
+        animText.setAttribute('dominant-baseline', 'middle');
+        animText.setAttribute('transform', `rotate(-45, ${startX + 15}, ${startY})`);
+        animText.style.transition = 'all 2000ms ease-in-out';
+        animText.style.pointerEvents = 'none';
+        
+        this.elements.mainGroup.appendChild(animText);
+        
+        // Trigger animation on next frame - move straight down (90°) and rotate
+        requestAnimationFrame(() => {
+            const viewport = this.viewport.getViewportInfo();
+            const fallDistance = viewport.height; // Fall off screen
+            
+            animText.style.transform = `translate(0, ${fallDistance}px) rotate(45deg)`; // +45° rotation while falling
+            animText.style.opacity = '0';
+            
+            // Clean up after animation
+            setTimeout(() => {
+                animText.remove();
+            }, 2000);
+        });
+    }
+    
+    updateParentButton(parentName, skipAnimation = false) {
         const parentButtonGroup = document.getElementById('parentButtonGroup');
         const parentText = document.getElementById('parentText');
         const parentNodeCircle = document.getElementById('parentNodeCircle');
@@ -1261,44 +1591,148 @@ class MobileRenderer {
                 timestamp: performance.now().toFixed(2)
             });
             
-            // Get viewport dimensions for Nuc positioning
+            // Get viewport dimensions and Hub center for fixed positioning
             const viewport = this.viewport.getViewportInfo();
             const SSd = Math.min(viewport.width, viewport.height);
             const LSd = Math.max(viewport.width, viewport.height);
+            const arcParams = this.viewport.getArcParameters();
             
-            // Position Parent Button in Nuc coordinates (bottom-left area)
+            // Fixed Parent Button circle position in Hub polar coordinates:
+            // Circle: Radius 0.9 × LSd × sqrt(2) from Hub center at 135°
+            // Text: Starts at radius 0.95 × LSd × sqrt(2) from Hub center at 135°
+            const parentButtonAngle = 135 * Math.PI / 180;  // Convert to radians
+            const parentButtonCircleRadius = 0.9 * LSd * Math.SQRT2;
+            const parentButtonTextRadius = 0.95 * LSd * Math.SQRT2;
+            
+            // Convert circle position from Hub polar to SVG Cartesian (Nuc coordinates)
             const parentButtonNuc = {
-                x: -SSd/2 + 50,  // 50px from left edge
-                y: LSd/2 - 50     // 50px from bottom edge
+                x: arcParams.centerX + parentButtonCircleRadius * Math.cos(parentButtonAngle),
+                y: arcParams.centerY + parentButtonCircleRadius * Math.sin(parentButtonAngle)
             };
             
-            console.log('🔼🔼 Parent Button Nuc position:', {
-                nucX: parentButtonNuc.x.toFixed(2),
-                nucY: parentButtonNuc.y.toFixed(2),
+            // Calculate text start position in Hub coordinates
+            const textStartNuc = {
+                x: arcParams.centerX + parentButtonTextRadius * Math.cos(parentButtonAngle),
+                y: arcParams.centerY + parentButtonTextRadius * Math.sin(parentButtonAngle)
+            };
+            
+            // Text offset relative to circle center
+            const textOffsetX = textStartNuc.x - parentButtonNuc.x;
+            const textOffsetY = textStartNuc.y - parentButtonNuc.y;
+            
+            console.log('🔼🔼 Parent Button fixed position:', {
+                angle: '135°',
+                circleRadius: parentButtonCircleRadius.toFixed(2),
+                textRadius: parentButtonTextRadius.toFixed(2),
+                circleNucX: parentButtonNuc.x.toFixed(2),
+                circleNucY: parentButtonNuc.y.toFixed(2),
+                textOffsetX: textOffsetX.toFixed(2),
+                textOffsetY: textOffsetY.toFixed(2),
+                hubCenter: `(${arcParams.centerX.toFixed(2)}, ${arcParams.centerY.toFixed(2)})`,
                 SSd, LSd
             });
             
             // Position the group
             parentButtonGroup.setAttribute('transform', `translate(${parentButtonNuc.x}, ${parentButtonNuc.y})`);
             
-            // Update text
-            parentText.textContent = parentName;
-            // Position text to the right of circle
-            parentText.setAttribute('x', '15');
-            parentText.setAttribute('y', '0');
+            // DEBUG: Draw line from Hub center at 135° for LSd * 2
+            const debugLine = document.getElementById('debugLine135');
+            if (debugLine) {
+                debugLine.remove();
+            }
+            const line = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'line');
+            line.setAttribute('id', 'debugLine135');
+            line.setAttribute('x1', arcParams.centerX);
+            line.setAttribute('y1', arcParams.centerY);
+            const lineLength = LSd * 2;
+            const lineEndX = arcParams.centerX + lineLength * Math.cos(parentButtonAngle);
+            const lineEndY = arcParams.centerY + lineLength * Math.sin(parentButtonAngle);
+            line.setAttribute('x2', lineEndX);
+            line.setAttribute('y2', lineEndY);
+            line.setAttribute('stroke', 'lime');
+            line.setAttribute('stroke-width', '1');
+            this.elements.mainGroup.appendChild(line);
             
-            // Get text bbox and position circle at text center
-            setTimeout(() => {
-                const textBBox = parentText.getBBox();
-                const circleCx = textBBox.x + textBBox.width / 2;
-                parentNodeCircle.setAttribute('cx', circleCx);
-                parentNodeCircle.setAttribute('cy', '0');
-                console.log('🟡 Circle positioned at text center:', {
-                    textX: textBBox.x.toFixed(2),
-                    textWidth: textBBox.width.toFixed(2),
-                    circleCx: circleCx.toFixed(2)
-                });
-            }, 0);
+            // DEBUG: Draw X at viewport center (Nuc origin = 0,0 in mainGroup coordinates)
+            const xSize = 10;
+            
+            console.log('❌ Viewport Center Debug:', {
+                viewportWidth: viewport.width,
+                viewportHeight: viewport.height,
+                viewportCenter: `(${viewport.width / 2}, ${viewport.height / 2})`,
+                mainGroupTransform: this.elements.mainGroup.getAttribute('transform'),
+                xDrawnAt: '(0, 0) in mainGroup = Nuc origin'
+            });
+            
+            const debugX1 = document.getElementById('debugX1');
+            if (debugX1) debugX1.remove();
+            const debugX2 = document.getElementById('debugX2');
+            if (debugX2) debugX2.remove();
+            
+            const x1 = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'line');
+            x1.setAttribute('id', 'debugX1');
+            x1.setAttribute('x1', -xSize);
+            x1.setAttribute('y1', -xSize);
+            x1.setAttribute('x2', xSize);
+            x1.setAttribute('y2', xSize);
+            x1.setAttribute('stroke', 'lime');
+            x1.setAttribute('stroke-width', '2');
+            this.elements.mainGroup.appendChild(x1);
+            
+            const x2 = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'line');
+            x2.setAttribute('id', 'debugX2');
+            x2.setAttribute('x1', -xSize);
+            x2.setAttribute('y1', xSize);
+            x2.setAttribute('x2', xSize);
+            x2.setAttribute('y2', -xSize);
+            x2.setAttribute('stroke', 'lime');
+            x2.setAttribute('stroke-width', '2');
+            this.elements.mainGroup.appendChild(x2);
+            
+            // Handle text animation if requested
+            if (!skipAnimation) {
+                const oldText = parentText.textContent;
+                
+                // If there's old text and it's different, animate it falling away
+                if (oldText && oldText !== parentName) {
+                    this.animateParentButtonTextFallAway(oldText);
+                    
+                    // Animate new text from Magnifier to Parent Button
+                    this.animateTextMigration(parentName, () => {
+                        // After animation completes, update the real text
+                        parentText.textContent = parentName;
+                    });
+                } else {
+                    // No old text or same text, just update directly
+                    parentText.textContent = parentName;
+                }
+            } else {
+                // Skip animation, update directly
+                parentText.textContent = parentName;
+            }
+            
+            // Position text at calculated offset from circle
+            parentText.setAttribute('x', textOffsetX.toFixed(2));
+            parentText.setAttribute('y', textOffsetY.toFixed(2));
+            
+            // Rotate text to align with Parent Button angle (135°)
+            // Using same rotation logic as Focus Ring items
+            let parentTextRotation = 135;
+            if (Math.cos(135 * Math.PI / 180) < 0) {
+                parentTextRotation += 180; // Results in 315°
+            }
+            parentText.setAttribute('transform', `rotate(${parentTextRotation}, 15, 0)`);
+            
+            // Position circle at fixed origin (0,0) relative to group transform
+            // Circle radius from config
+            parentNodeCircle.setAttribute('cx', '0');
+            parentNodeCircle.setAttribute('cy', '0');
+            parentNodeCircle.setAttribute('r', MOBILE_CONFIG.RADIUS.PARENT_BUTTON);
+            console.log('🟡 Parent Button circle at group origin:', {
+                cx: '0',
+                cy: '0',
+                radius: MOBILE_CONFIG.RADIUS.PARENT_BUTTON
+            });
             
             // Show button group
             parentButtonGroup.classList.remove('hidden');
@@ -1427,21 +1861,17 @@ class MobileRenderer {
             y: parentButtonNuc.y.toFixed(2)
         });
         
-        // Get text element to calculate its width
-        const parentText = document.getElementById('parentText');
-        const textBBox = parentText.getBBox();
-        const textCenterX = textBBox.x + textBBox.width / 2;
+        // Line connects the two circles: Parent Button circle and Magnifier circle
+        // Parent Button circle is at the group origin (0,0) in group coordinates
+        // So in SVG space, it's at parentButtonNuc (x, y)
+        const lineEndX = parentButtonNuc.x;
+        const lineEndY = parentButtonNuc.y;
         
-        // Line endpoint: center of text relative to group origin
-        const lineEndX = parentButtonNuc.x + textCenterX;
-        const lineEndY = parentButtonNuc.y;  // Text is at y=0 in group
-        
-        console.log('🔵 Text bbox:', {
-            x: textBBox.x.toFixed(2),
-            width: textBBox.width.toFixed(2),
-            centerOffset: textCenterX.toFixed(2),
-            lineEndX: lineEndX.toFixed(2),
-            lineEndY: lineEndY.toFixed(2)
+        console.log('🔵 Circle-to-circle connection:', {
+            parentCircleX: lineEndX.toFixed(2),
+            parentCircleY: lineEndY.toFixed(2),
+            magnifierX: magnifierPos.x.toFixed(2),
+            magnifierY: magnifierPos.y.toFixed(2)
         });
         
         // Calculate distance
@@ -1500,6 +1930,11 @@ class MobileRenderer {
     handleChildPyramidClick(item, event) {
         console.log('🔺🔺🔺 HANDLE CHILD PYRAMID CLICK CALLED!', item.name);
         Logger.debug('🔺 Child pyramid item clicked:', item.name, 'implementing nzone migration OUT');
+
+        // Immediately disable touch handling to prevent race conditions with touch events
+        if (window.mobileCatalogApp && window.mobileCatalogApp.touchHandler) {
+            window.mobileCatalogApp.touchHandler.tempDisabled = true;
+        }
 
         // NZONE MIGRATION: Child Pyramid → Focus Ring
         // This moves the clicked item OUT to become the new focus in the Focus Ring
@@ -1627,7 +2062,15 @@ class MobileRenderer {
             
             // CRITICAL: Set the rotation offset AFTER setupTouchRotation to override its default
             if (window.mobileCatalogApp.touchHandler) {
+                // Stop any ongoing inertial animation to prevent it from interfering
+                window.mobileCatalogApp.touchHandler.stopAnimation();
                 window.mobileCatalogApp.touchHandler.rotationOffset = centerOffset;
+                // Re-enable touch handling after cooldown period
+                setTimeout(() => {
+                    if (window.mobileCatalogApp.touchHandler) {
+                        window.mobileCatalogApp.touchHandler.tempDisabled = false;
+                    }
+                }, 500); // 500ms cooldown
                 Logger.debug('🔺 Set touch handler rotationOffset to', centerOffset.toFixed(3));
             }
         }
@@ -1635,10 +2078,49 @@ class MobileRenderer {
         // Also update lastRotationOffset to prevent rotation detection
         this.lastRotationOffset = centerOffset;
 
+        // CRITICAL: Set selectedFocusItem BEFORE conditional check
+        // This ensures showChildContentForFocusItem has the correct context
+        this.selectedFocusItem = item;
+        this.activeType = itemLevel;
+        
+        // Animate text migration from Magnifier (old focus) to Parent Button (new parent)
+        // Get the new parent name that will appear in Parent Button
+        const parentLevel = this.getPreviousHierarchyLevel(itemLevel);
+        const newParentName = parentLevel ? this.getParentNameForLevel(item, parentLevel) : null;
+        if (newParentName) {
+            this.updateParentButton(newParentName, false); // Trigger animation
+        }
+
         // Update Focus Ring with siblings - clicked item should be centered
         this.forceImmediateFocusSettlement = true;
         try {
             this.updateFocusRingPositions(centerOffset);
+            // Protect Child Pyramid from being hidden by subsequent rotation detection
+            // Store the offset to prevent false rotation detection during animation settling
+            this.protectedRotationOffset = centerOffset;
+            setTimeout(() => {
+                this.protectedRotationOffset = undefined;
+            }, 3000); // 3 second grace period to allow animation to fully settle
+            
+            // CRITICAL: Explicitly show child content for the clicked item
+            // updateFocusRingPositions might not detect it as selected due to rounding errors
+            console.log('🔺🔺 Checking if should show child content:', {
+                hasSelectedFocusItem: !!this.selectedFocusItem,
+                selectedKey: this.selectedFocusItem?.key,
+                itemKey: item.key,
+                keysMatch: this.selectedFocusItem?.key === item.key
+            });
+            if (this.selectedFocusItem && this.selectedFocusItem.key === item.key) {
+                const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+                const centerAngle = this.viewport.getCenterAngle();
+                const middleIndex = (allSiblings.length - 1) / 2;
+                const angle = centerAngle + centerOffset + (middleIndex - clickedIndex) * angleStep;
+                console.log('🔺🔺 Explicitly showing child content after immediate settlement for:', item.name);
+                Logger.debug('🔺 Explicitly showing child content after immediate settlement');
+                this.showChildContentForFocusItem(this.selectedFocusItem, angle);
+            } else {
+                console.log('🔺🔺 SKIPPING child content display - condition failed');
+            }
         } finally {
             this.forceImmediateFocusSettlement = false;
         }
@@ -1666,7 +2148,22 @@ class MobileRenderer {
         const rootData = this.dataManager.data?.[this.dataManager.rootDataKey];
         const startupConfig = rootData?.display_config?.focus_ring_startup;
         const topNavLevel = startupConfig?.top_navigation_level;
+        const parentButtonStyle = startupConfig?.parent_button_style || 'cumulative';
         console.log('Top navigation level from config:', topNavLevel);
+        console.log('Parent button style:', parentButtonStyle);
+        
+        // If simple style, just return the immediate parent name
+        if (parentButtonStyle === 'simple') {
+            if (item.__path.length >= 2) {
+                const simpleName = item.__path[item.__path.length - 2].toUpperCase();
+                console.log('Simple parent button style - returning:', simpleName);
+                console.log('=== getParentNameForLevel END ===\n');
+                return simpleName;
+            }
+            console.log('Simple style but no parent in path, returning parentLevel:', parentLevel);
+            console.log('=== getParentNameForLevel END ===\n');
+            return parentLevel;
+        }
         
         if (!topNavLevel) {
             // Fallback to simple parent name if no top nav level configured
@@ -1844,17 +2341,30 @@ class MobileRenderer {
      * Animates the blue circle from upper right to focus ring center
      */
     expandDetailSector() {
-        Logger.debug('🔵 expandDetailSector() called - animating blue circle and logo');
+        Logger.debug('🔵 expandDetailSector() called - animating circle and logo');
         this.detailSectorAnimating = true;
         const arcParams = this.viewport.getArcParameters();
         
         const detailCircle = document.getElementById('detailSectorCircle');
         const detailLogo = document.getElementById('detailSectorLogo');
         
-        if (!detailCircle || !detailLogo) {
+        // Check if circle should be hidden for this volume
+        const displayConfig = this.dataManager.getDisplayConfig();
+        const hideCircle = displayConfig?.detail_sector?.hide_circle;
+        
+        if (!detailLogo || (!detailCircle && !hideCircle)) {
             Logger.error('🔵 Detail Sector elements not found for expansion');
             this.detailSectorAnimating = false;
             return;
+        }
+        
+        // Get color and opacity from display config (only if circle exists)
+        const detailColor = displayConfig?.color_scheme?.detail_sector;
+        const detailOpacity = displayConfig?.color_scheme?.detail_sector_opacity || '1.0';
+        
+        // Only change color if explicitly set in config and circle exists
+        if (detailCircle && detailColor) {
+            detailCircle.setAttribute('fill', detailColor);
         }
         
         // Calculate circle START position (upper right corner)
@@ -1889,7 +2399,7 @@ class MobileRenderer {
         
         // Opacity animation values
         const startOpacity = 0.5;
-        const circleEndOpacity = 1.0;
+        const circleEndOpacity = parseFloat(detailOpacity); // Use config value for end opacity
         const logoEndOpacity = 0.10;
         
         // Rotation animation values
@@ -1924,11 +2434,13 @@ class MobileRenderer {
             const currentLogoOpacity = startOpacity + (logoEndOpacity - startOpacity) * eased;
             const currentRotation = startRotation + (endRotation - startRotation) * eased;
             
-            // Apply animated values to circle
-            detailCircle.setAttribute('cx', currentCircleX);
-            detailCircle.setAttribute('cy', currentCircleY);
-            detailCircle.setAttribute('r', currentRadius);
-            detailCircle.setAttribute('opacity', currentCircleOpacity);
+            // Apply animated values to circle (if it exists)
+            if (detailCircle) {
+                detailCircle.setAttribute('cx', currentCircleX);
+                detailCircle.setAttribute('cy', currentCircleY);
+                detailCircle.setAttribute('r', currentRadius);
+                detailCircle.setAttribute('opacity', currentCircleOpacity);
+            }
             
             // Apply animated values to logo
             detailLogo.setAttribute('x', currentLogoX);
@@ -1946,11 +2458,13 @@ class MobileRenderer {
             if (progress < 1) {
                 requestAnimationFrame(animate);
             } else {
-                // Ensure exact END state for circle
-                detailCircle.setAttribute('cx', circleEndX);
-                detailCircle.setAttribute('cy', circleEndY);
-                detailCircle.setAttribute('r', endRadius);
-                detailCircle.setAttribute('opacity', '1.0'); // END state: 100% opacity
+                // Ensure exact END state for circle (if it exists)
+                if (detailCircle) {
+                    detailCircle.setAttribute('cx', circleEndX);
+                    detailCircle.setAttribute('cy', circleEndY);
+                    detailCircle.setAttribute('r', endRadius);
+                    detailCircle.setAttribute('opacity', detailOpacity); // END state: configurable opacity
+                }
                 
                 // Ensure exact END state for logo
                 detailLogo.setAttribute('x', logoEndState.x);
@@ -2091,11 +2605,13 @@ class MobileRenderer {
             const currentLogoHeight = logoStartState.height + (endLogoHeight - logoStartState.height) * eased;
             const currentRotation = startRotation + (endRotation - startRotation) * eased;
             
-            // Apply animated values to circle
-            detailCircle.setAttribute('cx', currentCircleX);
-            detailCircle.setAttribute('cy', currentCircleY);
-            detailCircle.setAttribute('r', currentRadius);
-            detailCircle.setAttribute('opacity', currentOpacity);
+            // Apply animated values to circle (if it exists)
+            if (detailCircle) {
+                detailCircle.setAttribute('cx', currentCircleX);
+                detailCircle.setAttribute('cy', currentCircleY);
+                detailCircle.setAttribute('r', currentRadius);
+                detailCircle.setAttribute('opacity', currentOpacity);
+            }
             
             // Apply animated values to logo
             detailLogo.setAttribute('x', currentLogoX);
@@ -2113,11 +2629,13 @@ class MobileRenderer {
             if (progress < 1) {
                 requestAnimationFrame(animate);
             } else {
-                // Ensure exact collapsed state for circle
-                detailCircle.setAttribute('cx', circleEndX);
-                detailCircle.setAttribute('cy', circleEndY);
-                detailCircle.setAttribute('r', endRadius);
-                detailCircle.setAttribute('opacity', '0.5'); // START state: 50% opacity
+                // Ensure exact collapsed state for circle (if it exists)
+                if (detailCircle) {
+                    detailCircle.setAttribute('cx', circleEndX);
+                    detailCircle.setAttribute('cy', circleEndY);
+                    detailCircle.setAttribute('r', endRadius);
+                    detailCircle.setAttribute('opacity', '0.5'); // START state: 50% opacity
+                }
                 
                 // Ensure exact collapsed state for logo
                 detailLogo.setAttribute('x', logoEndX);
@@ -2149,6 +2667,29 @@ class MobileRenderer {
      * This circle animates to the focus ring center when a leaf item is selected
      */
     createDetailSectorCircle() {
+        // Check if circle should be hidden for this volume
+        const displayConfig = this.dataManager.getDisplayConfig();
+        const hideCircle = displayConfig?.detail_sector?.hide_circle;
+        
+        console.log('🔵🔵🔵 createDetailSectorCircle called');
+        console.log('🔵🔵🔵 displayConfig:', displayConfig);
+        console.log('🔵🔵🔵 detail_sector:', displayConfig?.detail_sector);
+        console.log('🔵🔵🔵 hide_circle:', hideCircle);
+        
+        if (hideCircle) {
+            Logger.debug('🔵 Detail Sector circle disabled by config (hide_circle: true)');
+            // Remove any existing circle from previous volume
+            const existingCircle = document.getElementById('detailSectorCircle');
+            console.log('🔵🔵🔵 Existing circle found:', !!existingCircle);
+            if (existingCircle) {
+                existingCircle.remove();
+                Logger.debug('🔵 Removed existing Detail Sector circle');
+            }
+            return;
+        }
+        
+        console.log('🔵🔵🔵 Proceeding to create circle (hide_circle is false or undefined)');
+        
         // Calculate radius as 12% of the shorter viewport dimension
         const viewportWidth = window.innerWidth;
         const viewportHeight = window.innerHeight;
@@ -2209,6 +2750,8 @@ class MobileRenderer {
      * Logo is centered at the same position as the circle
      */
     createDetailSectorLogo() {
+        console.log('🖼️🖼️🖼️ createDetailSectorLogo called');
+        
         // Calculate the same position as Detail Sector circle
         const viewportWidth = window.innerWidth;
         const viewportHeight = window.innerHeight;
@@ -2241,6 +2784,8 @@ class MobileRenderer {
         const logoBasePath = detailSectorConfig && detailSectorConfig.logo_base_path;
         const defaultImage = detailSectorConfig && detailSectorConfig.default_image;
         
+        console.log('🖼️🖼️🖼️ Logo config:', { displayConfig, detailSectorConfig, logoBasePath, defaultImage });
+        
         // Check if logo is configured
         if (logoBasePath && defaultImage) {
             // Logo is configured - create image element
@@ -2254,6 +2799,7 @@ class MobileRenderer {
             logo.setAttribute('width', logoWidth);
             logo.setAttribute('height', logoHeight);
             logo.setAttribute('opacity', '0.5'); // START state: 50% opacity
+            logo.style.pointerEvents = 'none'; // Allow clicks to pass through to magnifier
             
             // Add to main group
             this.elements.mainGroup.appendChild(logo);
@@ -2269,6 +2815,7 @@ class MobileRenderer {
             textElement.setAttribute('text-anchor', 'middle');
             textElement.setAttribute('dominant-baseline', 'middle');
             textElement.setAttribute('fill', '#666666');
+            textElement.style.pointerEvents = 'none'; // Allow clicks to pass through to magnifier
             textElement.setAttribute('font-family', 'Montserrat, sans-serif');
             textElement.setAttribute('font-size', '16');
             textElement.setAttribute('font-weight', '500');
@@ -2289,13 +2836,11 @@ class MobileRenderer {
      */
     updateDetailSectorLogo() {
         const existingLogo = document.getElementById('detailSectorLogo');
-        if (!existingLogo) {
-            Logger.warn('updateDetailSectorLogo: No existing logo element found');
-            return;
+        if (existingLogo) {
+            // Remove existing logo from previous volume
+            existingLogo.remove();
+            Logger.debug('🔵 Removed existing Detail Sector logo');
         }
-        
-        // Remove existing logo
-        existingLogo.remove();
         
         // Create new logo based on current volume configuration
         this.createDetailSectorLogo();

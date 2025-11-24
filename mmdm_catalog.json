@@ -562,7 +562,8 @@
                                                 "year_introduced": 1966,
                                                 "year_discontinued": null,
                                                 "family": "100 Series",
-                                                "in_a_family": true
+                                                "in_a_family": true,
+                                                "sort_number": 1
                                             }
                                         ]
                                     },
@@ -574,21 +575,24 @@
                                                 "year_introduced": 1966,
                                                 "year_discontinued": null,
                                                 "family": "200 Series",
-                                                "in_a_family": true
+                                                "in_a_family": true,
+                                                "sort_number": 1
                                             },
                                             {
                                                 "engine_model": "Admiral 4-250",
                                                 "year_introduced": 1970,
                                                 "year_discontinued": null,
                                                 "family": "200 Series",
-                                                "in_a_family": true
+                                                "in_a_family": true,
+                                                "sort_number": 2
                                             },
                                             {
                                                 "engine_model": "EX4-1000",
                                                 "year_introduced": null,
                                                 "year_discontinued": null,
                                                 "family": null,
-                                                "in_a_family": false
+                                                "in_a_family": false,
+                                                "sort_number": 3
                                             }
                                         ]
                                     },
@@ -600,14 +604,16 @@
                                                 "year_introduced": 1966,
                                                 "year_discontinued": null,
                                                 "family": "400 Series",
-                                                "in_a_family": true
+                                                "in_a_family": true,
+                                                "sort_number": 1
                                             },
                                             {
                                                 "engine_model": "Admiral 8-450",
                                                 "year_introduced": 1975,
                                                 "year_discontinued": null,
                                                 "family": "400 Series",
-                                                "in_a_family": true
+                                                "in_a_family": true,
+                                                "sort_number": 2
                                             }
                                         ]
                                     }

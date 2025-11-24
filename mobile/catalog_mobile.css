@@ -65,7 +65,7 @@ text {
 }
 
 .focusItem text {
-    opacity: 0.8;
+    opacity: 1;
     transition: all 0.2s ease;
     font-size: 15px;
 }
@@ -152,7 +152,7 @@ g.focusItem.selected text {
 /* Parent button SVG styling */
 #parentButtonGroup {
     cursor: pointer;
-    transition: opacity 0.3s ease;
+    /* No opacity transition - keep button solid during navigation */
 }
 
 #parentButtonGroup.hidden {
@@ -165,7 +165,7 @@ g.focusItem.selected text {
 }
 
 #parentButtonGroup #parentNodeCircle {
-    transition: opacity 0.3s ease;
+    opacity: 1 !important;  /* Always solid, never transparent */
 }
 
 #parentButtonGroup #parentNodeCircle.hidden {
@@ -180,8 +180,18 @@ g.focusItem.selected text {
     fill: black;
 }
 
+/* Keep button fully opaque - no hover/active fade */
 #parentButtonGroup:not(.disabled):hover {
-    opacity: 0.8;
+    cursor: pointer;
+}
+
+#parentButtonGroup:not(.disabled):active {
+    cursor: pointer;
+}
+
+/* Circle must always remain solid */
+#parentButtonGroup #parentNodeCircle {
+    opacity: 1 !important;
 }
 
 #copyright {
@@ -198,8 +208,12 @@ g.focusItem.selected text {
 
 /* Mobile-specific adjustments */
 @media (max-width: 480px) {
-    text:not(.levelText):not(.levelText text) {
+    text:not(.levelText):not(.levelText text):not(.gutenberg-verse-text) {
         font-size: 12px;
+    }
+    
+    .gutenberg-verse-text {
+        font-size: 36px !important;
     }
     
     .levelText text {

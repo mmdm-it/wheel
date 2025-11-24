@@ -3,6 +3,9 @@
  * Manages touch interactions with momentum and bounds
  */
 
+// Debug flag - set to false to disable verbose console logging
+const DEBUG_VERBOSE = false;
+
 import { MOBILE_CONFIG } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
 import { CoordinateSystem, HubNucCoordinate } from './mobile-coordinates.js';
@@ -69,6 +72,11 @@ class TouchRotationHandler {
     
     handleTouchStart(e) {
         if (!this.shouldHandleTouch(e)) return;
+        // Skip if temporarily disabled (e.g., during immediate settlement)
+        if (this.tempDisabled) {
+            Logger.debug('Touch handling temporarily disabled');
+            return;
+        }
         
         // Don't prevent default immediately - let clicks work
         // Only prevent default when we detect actual dragging
@@ -239,19 +247,29 @@ class TouchRotationHandler {
         // - Top-level selection buttons
         // - Child Pyramid items (they need to handle their own clicks)
         // - Parent button
+        // - Magnifier (has its own click handler for advancing Focus Ring)
+        // - Detail Sector logo (should pass through to magnifier)
+        // - Detail Sector content (text, any element in detailItems group)
+        const classAttr = element.getAttribute('class') || '';
         if (element && (
             element.classList.contains('topLevelHitArea') || 
             element.closest('.levelGroup') ||
             element.classList.contains('hit-zone') ||
             element.closest('.child-pyramid-item') ||
             element.closest('#parentButton') ||
-            (element.tagName === 'text' && element.closest('.child-pyramid-item'))
+            element.id === 'magnifier' ||
+            element.id === 'detailSectorLogo' ||
+            element.closest('#detailItems') ||
+            classAttr.includes('detail-content') ||
+            classAttr.includes('gutenberg-verse-text') ||
+            (element.tagName === 'text' && element.closest('.child-pyramid-item')) ||
+            (element.tagName === 'text' && element.closest('#detailItems'))
         )) {
-            console.log('🔺 Touch handler EXCLUDING element:', element.tagName, element.className || 'no-class');
+            if (DEBUG_VERBOSE) console.log('🔺 Touch handler EXCLUDING element:', element.tagName, element.id || classAttr || 'no-class');
             return false;
         }
         
-        console.log('🔺 Touch handler ACCEPTING element:', element && element.className, element && element.tagName);
+        if (DEBUG_VERBOSE) console.log('🔺 Touch handler ACCEPTING element:', element && element.className, element && element.tagName);
         return true;
     }
     

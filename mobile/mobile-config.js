@@ -4,7 +4,7 @@
  */
 
 const VERSION = {
-    semantic: '0.6.9',      // major.minor.patch
+    semantic: '0.7.1',      // major.minor.patch
     display() {
         return `v${this.semantic}`;
     }
@@ -23,7 +23,8 @@ const MOBILE_CONFIG = {
         DETAIL_RING: 180,
         CHILD_NODE: 10,  // Same as UNSELECTED
         DETAIL_NODE: 10,    // Same as UNSELECTED
-        MAGNIFIER: 22  // Renamed from MAGNIFYING_RING - same as magnified node radius
+        MAGNIFIER: 22,  // Renamed from MAGNIFYING_RING - same as magnified node radius
+        PARENT_BUTTON: 22  // Same as MAGNIFIER - fixed position circle
     },
     
     // Animation constants

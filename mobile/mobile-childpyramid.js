@@ -6,6 +6,9 @@
  * which displays hierarchical data in three concentric arcs with responsive layout.
  */
 
+// Debug flag - set to false to disable verbose console logging
+const DEBUG_VERBOSE = false;
+
 import { MOBILE_CONFIG } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
 
@@ -72,7 +75,7 @@ class MobileChildPyramid {
         
         // Sort items based on type
         const sortedItems = this.sortChildPyramidItems(items, itemType);
-        console.log(`🔺 CHILD PYRAMID SORTED ORDER:`, sortedItems.map(item => {
+        if (DEBUG_VERBOSE) console.log(`🔺 CHILD PYRAMID SORTED ORDER:`, sortedItems.map(item => {
             const sortNum = item.data?.sort_number ?? item.sort_number;
             return `${item.name}(sort:${sortNum})`;
         }).join(', '));
@@ -190,7 +193,7 @@ class MobileChildPyramid {
         
         // Calculate center-outward placement order
         const placementOrder = this.getCenterOutwardOrder(items.length);
-        console.log(`🔺 PLACEMENT ORDER for ${items.length} items:`, placementOrder);
+        if (DEBUG_VERBOSE) console.log(`🔺 PLACEMENT ORDER for ${items.length} items:`, placementOrder);
         
         items.forEach((item, index) => {
             // Use placement order to position from center outward
@@ -200,7 +203,7 @@ class MobileChildPyramid {
             const y = centerY + actualRadius * Math.sin(angle);
             
             const sortNum = item.data?.sort_number ?? item.sort_number;
-            console.log(`🔺 PLACING: ${item.name}(sort:${sortNum}) at arrayIndex=${index}, visualPosition=${positionIndex}, angle=${(angle*180/Math.PI).toFixed(1)}°`);
+            if (DEBUG_VERBOSE) console.log(`🔺 PLACING: ${item.name}(sort:${sortNum}) at arrayIndex=${index}, visualPosition=${positionIndex}, angle=${(angle*180/Math.PI).toFixed(1)}°`);
             
             // Cache node position for fan lines
             this.nodePositions.push({ x, y });
@@ -410,7 +413,8 @@ class MobileChildPyramid {
     getItemColor(item) {
         // Pure metadata-based approach
         const levelConfig = this.dataManager.getHierarchyLevelConfig(item.__level);
-        return levelConfig && levelConfig.color || '#f1b800'; // Default to yellow
+        const colorScheme = this.renderer.getColorScheme();
+        return levelConfig && levelConfig.color || colorScheme.nodes;
     }
     
     /**
