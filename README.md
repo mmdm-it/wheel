@@ -1,271 +1,170 @@
-# Wheel - Universal Hierarchical Data Navigation System
-**Version 0.6.6** | November 20, 2025
+# Wheel
 
-> A revolutionary 2D navigation interface for hierarchical data. Mobile-first ES6 architecture supporting any data domain through JSON configuration.
+A mobile-first hierarchical data browser with novel rotational touch navigation. Navigate deep tree structures intuitively using circular gestures.
 
-## 🚀 Quick Start
+**Version 0.7.0** | November 2025
 
-### Prerequisites
-- Modern web browser with ES6 module support (Chrome 61+, Firefox 60+, Safari 10.1+, Edge 16+)
-- Local web server (for development)
+## Demo Applications
 
-### Running the Application
+Wheel works with any hierarchical data. Current demos include:
+
+- **📖 Bible Browser** (Gutenberg Vulgate 1455 + KJV) - Books → Chapters → Verses
+- **🔧 Marine Parts Catalog** - Manufacturers → Models → Systems → Parts (2000+ models)
+- **🎵 Music Library** - Artists → Albums → Tracks
+- **💬 Social Feed** - Categories → Threads → Posts
+
+[**Live demo**](https://howellgibbens.com/mmdm/wheel/wheel.html) | See it in action with real data
+
+## Why Wheel?
+
+Traditional hierarchical navigation (breadcrumbs, back buttons, folder trees) becomes clunky on mobile. Wheel uses rotational gestures and radial layout to make deep navigation feel natural and fast.
+
+**Key features:**
+- **Rotational navigation**: Swipe left/right to rotate through items at current level
+- **Touch-optimized**: Designed for mobile with momentum physics
+- **Large datasets**: Handles thousands of items with viewport filtering
+- **No build process**: Direct ES6 module loading in modern browsers
+
+## 🚀 Help Wanted
+
+**Wheel is ~65% complete and needs collaborators to ship v1.0.**
+
+We're looking for:
+
+### Android Developer (High Priority)
+**Time commitment:** 5-10 hours/week for 6-8 weeks  
+**What you'll do:**
+- Create WebView wrapper for existing JavaScript/HTML Wheel
+- Handle Android packaging and permissions
+- Integrate native features (storage, sharing)
+- Prepare for Google Play submission
+
+**What you get:** Co-author credit on Play Store, portfolio piece showcasing novel UX
+
+### Data Engineer (High Priority)
+**Time commitment:** 10-15 hours over 2-3 weeks (sprint-based)  
+**What you'll do:**
+- Design hierarchical JSON schema for various datasets
+- Transform Bible data (Gutenberg Vulgate + KJV) into schema format
+- Create data validation pipeline
+- Document schema for other data types
+
+**What you get:** Interesting data architecture problem, open source credit
+
+### QA/Tester (Medium Priority)
+**Time commitment:** 3-5 hours/week during testing sprints  
+**What you'll do:**
+- Manual testing across Android devices and OS versions
+- Document bugs and edge cases
+- Verify navigation accuracy across different datasets
+
+**What you get:** QA portfolio item, early access to unique app
+
+### How to Contribute
+
+1. **Star this repo** to show interest
+2. **Open an issue** introducing yourself and which role interests you
+3. **Check "good first issue"** labels for easy starting points
+4. **Join discussions** - see GitHub Discussions for planning
+
+**This is volunteer/open source** - no payment currently, but full credit and attribution guaranteed. Early contributors will be recognized if commercial success follows.
+
+## Quick Start
 
 1. **Start a local server:**
    ```bash
-   # Using Python (if available)
    python -m http.server 8000
-
-   # Using Node.js (if available)
-   npx serve .
-
-   # Or use any static file server
+   # or: npx serve .
    ```
 
 2. **Open in browser:**
-   - `http://localhost:8000/wheel.html`
-
-3. **Test different catalogs:**
-   - Mobile: Opens automatically on mobile devices
-   - Desktop: Opens engine catalog directly
-   - Force mobile on desktop: `http://localhost:8000/wheel.html?forceMobile=true`
-
-4. **Live testing:**
-   - Production URL: `https://howellgibbens.com/mmdm/wheel/wheel.html`
-   - Use for testing beyond responsive pane in browser dev tools
-
-## 📋 Table of Contents
-
-- [Architecture](#architecture)
-- [Data Catalogs](#data-catalogs)
-- [Development](#development)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
-
-## 🏗️ Architecture
-
-### Core Concept
-Wheel implements **true 2D navigation** transcending traditional scrolling limitations:
-
-- **Rotational Navigation**: Arc-based "sprocket gear" traversal (CW/CCW)
-- **Radial Navigation**: Hierarchical migration (IN/OUT through data levels)
-- **Structured Data**: Requires specific JSON formatting with metadata for navigation
-
-### Key Components
-
-#### Mobile Version (`mobile/`)
-- **ES6 Native Modules** (zero build process required)
-- **SVG-based rendering** with dynamic viewport calculations
-- **Touch-optimized** with momentum physics
-- **Responsive design** (portrait/landscape detection)
-
-#### Desktop Version (`desktop/`)
-- **Traditional script loading** for broader browser compatibility
-- **Legacy fallback** for older browsers
-
-### Module Structure
-```
-mobile/
-├── catalog_mobile_modular.js    # Entry point & coordination
-├── mobile-app.js               # Main application controller
-├── mobile-config.js            # Configuration constants
-├── mobile-data.js              # Universal data management
-├── mobile-logger.js            # Debug logging system
-├── mobile-renderer.js          # SVG rendering & navigation
-├── mobile-touch.js             # Touch interaction & physics
-├── mobile-viewport.js          # Responsive calculations
-├── mobile-childpyramid.js      # Child navigation display
-└── mobile-detailsector.js      # Content detail display
-```
-
-## 📊 Data Catalogs
-
-### Supported Formats
-The system requires hierarchical JSON with specific formatting metadata. Current standalone catalogs:
-
-#### Marine Engine Catalog (`mmdm_catalog.json`)
-- **4 Markets** → **18 Countries** → **45+ Manufacturers** → **2000+ Models**
-- Complete marine diesel engine specifications
-- Used for production deployment
-
-#### Music Library (`hg_mx.json`)
-- Artist → Album → Track hierarchy
-- Audio playback integration
-- Demo catalog for multimedia content
-
-#### Gutenberg Bible (`gutenberg.json`)
-- Testament → Book → Chapter → Verse
-- Canonical ordering (Genesis through Revelation)
-- Text-only content with navigation
-
-### Creating New Catalogs
-1. Define hierarchy in JSON with required `hierarchy_levels` configuration
-2. Add `wheel_volume_version` property for auto-discovery
-3. Include formatting metadata for detail sector display
-4. Each catalog version is standalone (Music, Bible, Manifolds, future TBD)
-4. Test with `forceMobile=true` for volume selector access
-
-## 💻 Development
-
-### Environment Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone <repository-url>
-   cd wheel
+   ```
+   http://localhost:8000/wheel.html?forceMobile=true
    ```
 
-2. **Start development server:**
-   ```bash
-   # Python 3
-   python -m http.server 8000
-
-   # Node.js alternative
-   npm install -g serve
-   serve . -p 8000
+3. **Live demo:**
+   ```
+   https://howellgibbens.com/mmdm/wheel/wheel.html
    ```
 
-3. **Open development URL:**
-   - Local: `http://localhost:8000/wheel.html?forceMobile=true`
-   - Live testing: `https://howellgibbens.com/mmdm/wheel/wheel.html?forceMobile=true`
+## Features
 
-### Development Workflow
+- **Rotational navigation**: Swipe left/right to rotate through items at current level
+- **Hierarchical browsing**: Tap to navigate deeper, use parent button to go back
+- **Touch-optimized**: Designed for mobile with momentum physics
+- **Large datasets**: Handles 2000+ items with viewport filtering
+- **No build process**: Direct ES6 module loading in modern browsers
 
-#### Code Organization
-- **Mobile-first**: All new features developed in `mobile/` directory
-- **ES6 Modules**: Direct browser loading, no bundling required
-- **Hot reload**: Changes visible immediately on browser refresh
-- **Debug logging**: Comprehensive logging via `mobile-logger.js`
+## Documentation
 
-#### Key Development Files
-- **DESIGNSPEC.md**: Technical specification and coordinate systems
-- **STATUS**: Development roadmap and current status
-- **REFACTOR_SUMMARY.md**: Architecture evolution documentation
+- **[SETUP.md](SETUP.md)** - Installation and local development
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - Technical overview and module structure
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines and testing checklist
+- **[CHANGELOG.md](CHANGELOG.md)** - Version history
 
-#### Adding New Features
-1. Implement in appropriate `mobile/` module
-2. Update `DESIGNSPEC.md` if changing spatial model
-3. Test on multiple devices/aspect ratios
-4. Update STATUS with feature completion
+## Browser Support
 
-### Browser Compatibility
-- **Target**: Modern mobile browsers (iOS Safari, Chrome Mobile)
-- **Fallback**: Desktop version for older browsers
-- **Testing**: Use browser dev tools device emulation
+- Chrome 61+, Firefox 60+, Safari 10.1+, Edge 16+
+- Primarily designed for mobile touchscreens
+- Desktop works with `?forceMobile=true` parameter
 
-## 🧪 Testing
+## Status
 
-### Manual Testing Checklist
+**Current state**: Working prototype (~65% complete)
 
-#### Navigation Testing
-- [ ] All hierarchy levels navigate correctly
-- [ ] Parent button returns to top level
-- [ ] Child pyramid shows available sub-items
-- [ ] Detail sector displays correctly
+**What works:**
+- Rotational navigation with touch gestures and momentum
+- Multi-level hierarchy browsing
+- Detail view expansion
+- Multiple catalog/dataset support
+- Viewport filtering for large datasets
 
-#### Device Testing
-- [ ] Portrait mode (primary target)
-- [ ] Landscape mode (table of contents)
-- [ ] Different aspect ratios (tall phones, tablets)
-- [ ] Touch interactions (swipe, tap, momentum)
+**In progress:**
+- Child pyramid navigation refinement
+- Performance optimization
+- Android packaging
+- Comprehensive device testing
 
-#### Content Testing
-- [ ] Audio playback (music catalog)
-- [ ] Image display (gallery views)
-- [ ] Text formatting (info views)
-- [ ] Link handling (external URLs)
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
-### Performance Testing
-- Test with large catalogs (2000+ items)
-- Monitor memory usage during extended use
-- Verify smooth 60fps animation on target devices
+## Creating Your Own Datasets
 
-### Automated Testing
-Currently manual testing only. Future enhancement could include:
-- Unit tests for data parsing
-- Integration tests for navigation flow
-- Performance benchmarks
+Wheel works with any hierarchical JSON data. Basic structure:
 
-## 🚀 Deployment
+```json
+{
+  "YourDataset": {
+    "display_config": {
+      "hierarchy_levels": {
+        "level1": { "color": "#FF6B6B" },
+        "level2": { "color": "#4ECDC4" }
+      }
+    },
+    "data": { /* your nested data */ }
+  }
+}
+```
 
-### Production Requirements
-- **Web server** supporting static files
-- **HTTPS** recommended for modern browser features
-- **CDN** optional for assets (`assets/` directory)
+See `mmdm_catalog.json` (parts catalog) or `gutenberg.json` (Bible) for complete examples.
 
-### Build Process
-No build process required! ES6 modules load directly in modern browsers.
+## Contributing
 
-### Deployment Steps
-1. Upload all files to web server
-2. Ensure `wheel.html` is accessible
-3. Test catalog loading from different standalone versions
-4. Verify audio/image assets load correctly
+Contributions welcome! See issues labeled **"good first issue"** for starting points, or the **Help Wanted** section above for priority needs.
 
-### Environment Configuration
-- **Development**: Local server with `forceMobile=true`
-- **Staging**: Test server with production data
-- **Production**: Live server at `https://howellgibbens.com/mmdm/wheel/`
+**Before contributing:**
+- Read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines
+- Check existing issues to avoid duplicate work
+- Test on real mobile devices when possible
 
-## 🤝 Contributing
-
-### Getting Started
-1. Read this README completely
-2. Review `DESIGNSPEC.md` for technical architecture
-3. Check `STATUS` for current development priorities
-4. Set up local development environment
-
-### Development Guidelines
-- **Mobile-first**: All features must work on mobile
-- **Performance**: Maintain 60fps on target devices
-- **Compatibility**: Test across iOS Safari, Chrome Mobile, Firefox Mobile
-- **Documentation**: Update relevant docs for any changes
-
-### Code Style
-- **ES6 Modules**: Use modern JavaScript features
-- **Async/Await**: For any asynchronous operations
-- **Error Handling**: Comprehensive try/catch blocks
-- **Logging**: Use `mobile-logger.js` for debug output
-
-### Pull Request Process
-1. Create feature branch from `main`
-2. Implement changes with tests
-3. Update documentation as needed
-4. Submit PR with clear description
-5. Wait for review and approval
-
-## 📚 Documentation
-
-### Technical Documentation
-- **[DESIGNSPEC.md](mobile/DESIGNSPEC.md)**: Complete technical specification
-- **[STATUS](mobile/STATUS)**: Development status and roadmap
-- **[REFACTOR_SUMMARY.md](REFACTOR_SUMMARY.md)**: Architecture evolution
-
-### API Documentation
-JSDoc comments in all `mobile/*.js` files. Key modules:
-- `mobile-data.js`: Data access and navigation methods
-- `mobile-renderer.js`: Rendering and UI update methods
-- `mobile-app.js`: Application lifecycle methods
-
-## 📄 License
+## License
 
 © 2025 Meccanismi Marittimi delle Marche. All rights reserved.
 
-## 🆘 Support
+## Contact
 
-### Common Issues
-- **Mobile view not appearing**: Add `?forceMobile=true` to URL
-- **Audio not playing**: Check browser audio permissions
-- **Performance issues**: Test on actual mobile device (not emulator)
-
-### Getting Help
-- Check existing documentation first
-- Review STATUS file for known issues
-- Test with different catalogs to isolate problems
+- **Issues**: Use GitHub Issues for bug reports and feature requests
+- **Repository**: https://github.com/mmdm-it/wheel
 
 ---
 
-**Version**: 0.6.6
-**Last Updated**: November 20, 2025
+**Version 0.7.0** | November 2025

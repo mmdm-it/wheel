@@ -1,66 +1,67 @@
 # Changelog
 
-All notable changes to **Wheel** will be documented in this file.
+All notable changes to Wheel will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+Format based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-### Planned
-- Split architecture Phase 2: Dual loader implementation (v0.7.0)
-- Child Pyramid IN navigation completion
-- Multi-domain validation across all three volumes
+- Split architecture Phase 2: Dual loader implementation
+- Child Pyramid navigation completion
+- Multi-volume validation
+
+## [0.7.1] - 2025-11-23
+
+### Changed
+- Parent Button text positioning now dynamically calculated from Hub polar coordinates
+- Parent Button text starts at radius 0.95 × LSd × √2 (vs circle at 0.9 × LSd × √2)
+- Text rotation calculated using same logic as Focus Ring text (radial orientation)
+- Text offset calculated as difference between text start position and circle center
+
+### Fixed
+- Text migration animation now fully opaque throughout (no opacity transitions)
+- Animation rotation correctly interpolates from Magnifier radial angle to horizontal
+- Animation end position aligned with real Parent Button text position
+- Coordinate system consistency: debug X marker now correctly drawn at Nuc origin (0,0)
+
+## [0.7.0] - 2025-11-21
+
+### Added
+- Magnifier click advances Focus Ring by one item clockwise
+- Touch detection distinguishes taps from swipes (< 10px movement, < 300ms)
+- Gutenberg Bible verse display with 36px font size
+- Debug logging control (DEBUG_VERBOSE flag)
+
+### Changed
+- Detail Sector pointer-events set to 'none' to allow magnifier clicks
+- Touch handler exclusions for Detail Sector elements
+- Reduced console log spam (3000+ to ~10 messages)
 
 ## [0.6.9] - 2025-11-21
 
 ### Added
-- **Parent Button Contextual Breadcrumb**: Shows hierarchical context instead of bare parent name
-  - At manufacturer level: Shows country only (e.g., "STATI UNITI")
-  - At cylinder level: Shows manufacturer only (e.g., "FORD")
-  - Below cylinder: Shows manufacturer + pluralized parent (e.g., "FORD 8'S", "FORD FLATHEAD'S")
-  - Handles missing hierarchy levels (e.g., Flathead has no subfamily, shows family as parent)
-  - Pluralization: Numeric levels get apostrophe-s ("8'S"), word levels get apostrophe-s ("FLATHEAD'S")
-  - Manufacturer never pluralized in breadcrumb display
-- **Volume Selector Metadata**: JSON schema and data versions now visible in volume selection
-  - Each volume button displays: Schema version and Data version
-  - Format: "Schema: X.X.X | Data: X.X.X" below filename
-  - Aids version tracking during multi-volume development
+- Parent Button contextual breadcrumb showing hierarchical context
+- Volume selector displays JSON schema and data versions
 
 ### Changed
-- **Parent Button Breadcrumb Logic**: Uses actual path position instead of hierarchy assumptions
-  - Calculates parent from `item.__path[length - 2]` for accuracy
-  - Handles hierarchies with skipped levels (no subfamily, etc.)
-  - Three-tier display logic based on parent position relative to top_navigation_level
+- Parent Button breadcrumb logic uses actual path position
+- Handles hierarchies with skipped levels
 
 ### Fixed
-- **Parent Button Opacity**: Removed opacity reduction when disabled at top level
-  - Button stays fully opaque at all times (was 0.5 opacity)
-  - Only yellow circle hidden to indicate inactive state
-  - Added `pointer-events: none` to disabled class instead of opacity change
+- Parent Button opacity now stays at 1.0 when disabled
+- Uses pointer-events: none instead of opacity reduction
 
 ## [0.6.8] - 2025-11-21
 
 ### Changed
-- **Parent Button SVG Migration**: Moved from HTML/CSS to SVG coordinate system
-  - Migrated `<div id="parentButton">` to `<g id="parentButtonGroup">` within mainGroup SVG
-  - Positioned using Nuc coordinates (Cartesian system with origin at viewport center)
-  - Circle now dynamically positioned at text center for proper alignment
-  - Explicit `display` style management fixes visibility issues
-- **Parent Button Line Enhancement**: Line from magnifier now ends at text center
-  - Calculates text bounding box to determine center point
-  - Line endpoint adjusted from group origin to actual text center
-  - Improved visual connection between magnifier and parent button
+- Parent Button migrated from HTML/CSS to SVG coordinate system
+- Parent Button line now ends at text center
 
 ### Fixed
-- **Coordinate System Consistency**: Resolved off-screen rendering issues
-  - Fixed `pathLinesGroup` element ID mismatch (was `pathLines` in HTML, `pathLinesGroup` in code)
-  - Removed coordinate transformation errors from mixing Screen/SVG/Hub/Nuc systems
-  - Parent Button line now uses consistent SVG coordinate space
-- **Parent Button Visibility**: Fixed `display: none` persisting after class removal
-  - Added explicit `style.display = ''` when showing elements
-  - Added explicit `style.display = 'none'` when hiding elements
-  - Circle visibility properly managed with both class and inline style
+- Coordinate system consistency (pathLinesGroup ID mismatch)
+- Parent Button visibility (display: none persisting)
+- Off-screen rendering issues
 - **hideParentButton Reference Error**: Fixed null pointer exception
   - Updated `hideParentButton()` to reference `parentButtonGroup` instead of deleted `parentButton`
   - Added null checking to prevent crashes during rotation
@@ -111,178 +112,97 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Archived obsolete documentation to archive/ folder
   - AUDIT_REPORT.md (historical v0.6.4 snapshot)
-  - REFACTOR_SUMMARY.md (completed refactoring narrative)
-- Updated all version references across documentation to 0.6.6
-- Repository renamed from `catalog` to `wheel` on GitHub
-- Consolidated documentation to essential files only
+## [0.6.7] - 2025-11-20
+
+### Added
+- Visual affordance system: 1px black stroke indicates clickable elements
+- Clickable: Child Pyramid nodes, Magnifier, Parent Button
+- Non-clickable: Focus Ring nodes (informational only)
+
+### Changed
+- Removed opacity from Magnifier and copyright text
+- Logo remains at 0.3 opacity
+
+## [0.6.6] - 2025-11-20
+
+### Added
+- Parent Button yellow node indicator (20px circle)
+- Granular logging system (6 levels: NONE to VERBOSE)
+- JSON schema versioning system (volume_schema_version, volume_data_version)
+- SCHEMA_CHANGELOG.md and SPLIT_ARCHITECTURE_PLAN.md
+
+### Changed
+- Default log level: WARN (reduced from verbose)
+- URL control: ?loglevel=4 for debug (legacy ?debug=1 disabled)
+- Repository renamed from 'catalog' to 'wheel'
+- Archived AUDIT_REPORT.md and REFACTOR_SUMMARY.md
 
 ### Fixed
-- Console logging excessive output (110+ messages reduced to ~10)
+- Console logging reduced from 110+ to ~10 messages
 
 ## [0.6.5] - 2025-11-20
 
 ### Fixed
-- **Volume Selector Version Display**: Fixed version not displaying on start page
-  - Corrected import to include VERSION from mobile-config.js
-  - Changed background to gray (#868686) matching body
-  - Changed text colors to black for visibility
-  - Removed "x volumes detected" redundant text
-  - Removed tip about bookmarking
-  - Copyright now visible on start page (was being hidden)
+- Volume selector version display now working
+- Background changed to gray, text to black for visibility
+- Copyright now visible on start page
 
 ### Changed
-- **Italian Translation**: Volume selector UI now in Italian
-  - "Wheel Volume Loader (Dev Only)" → "Caricatore di Volumi Wheel (Solo Dev)"
-  - "Select Volume:" → "Seleziona Volume:"
-  - "Version:" → "Versione:"
-  - Volume names remain in English
+- Volume selector UI translated to Italian
 
 ## [0.6.4] - 2025-11-19
 
 ### Fixed
-- **Child Pyramid Click Detection**: Corrected inverted rotation offset calculation that caused wrong items to appear in magnifier
-  - Clicking on cylinder "15" now correctly brings "15 Cylinders" to magnifier (previously brought "5 Cylinders")
-- **Detail Sector Expansion**: Dynamic blue circle expansion to 98% of focus ring radius for leaf item selection
-  - Fixed centerOffset formula sign to match `(middleIndex - index)` angle calculation in updateFocusRingPositions
-  - Changed from `-(clickedIndex - middleIndex)` to `(clickedIndex - middleIndex)` for proper coordination
-  - Items clicked in Child Pyramid now correctly migrate to Focus Ring center position
+- Child Pyramid click detection (inverted rotation offset)
+- Detail Sector expansion (blue circle now 98% of focus ring radius)
+- Clicked items now correctly migrate to Focus Ring center
 
 ### Changed
-- **Child Pyramid Sorting**: Aligned with DataManager sorting to ensure consistent item order
-  - Child Pyramid now sorts by sort_number ascending (matching Focus Ring siblings array)
-  - Removed sort_type config interpretation (numeric_desc) that caused descending sort mismatch
-  - Visual Child Pyramid order now matches array indices used for click detection
+- Child Pyramid sorting aligned with DataManager (ascending sort_number)
 
 ### Added
-- **Lockwood-Ash Model Sort Numbers**: Added sort_number: 1 to all 19 Lockwood-Ash test engine models
-  - Leaf-level models now have required sort_numbers for navigation consistency
-  - Each cylinder count (1-19) has single model with sort_number: 1
-
-### Technical Details
-- Child Pyramid click detection now uses matching sort order with Focus Ring array
-- Rotation offset calculation coordinates properly with angle positioning formula
-- Diagnostic logging added to trace click detection and item selection process
+- sort_number property to Lockwood-Ash test models
 
 ## [0.6.3] - 2025-11-18
 
 ### Added
-- **Data Consistency Validation**: Comprehensive sort_number validation for all navigation items
-  - User-facing error messages for missing sort_numbers at navigation levels
-  - Validation passes in DataManager, MobileRenderer, and MobileChildPyramid
-  - Prevents rendering of items without required sort metadata
-- **Context-Aware Leaf Sorting**: Intelligent leaf-level sorting based on context
-  - Track numbers for songs in album context
-  - Verse numbers for Bible verses in chapter context
-  - Alphabetical fallback for aggregated views
+- Comprehensive sort_number validation for navigation items
+- Context-aware leaf sorting (tracks, verses, alphabetical fallback)
+- CONTRIBUTING.md
 
 ### Changed
-- **Sort Number System**: Enforces sort_number requirement for all navigation levels
-  - Navigation items (non-leaf): Mandatory sort_number validation with user error display
-  - Leaf items (models, songs, verses): Context-aware sorting with multiple strategies
-  - Improved data quality through strict validation at multiple checkpoints
-- **Data Structure Updates**: Completed manufacturer cylinder count restructuring
-  - Admiral, Allison, Caterpillar: Cylinder counts now use standard {sort_number, models: []} format
-  - ~70 additional manufacturers: Empty cylinders converted to {sort_number} format
-  - Consistent data structure across all 106 manufacturers in MMdM catalog
+- Enforced sort_number for all navigation levels
+- Completed manufacturer cylinder count restructuring
 
 ### Fixed
-- Eliminated silent sorting failures for items missing sort_numbers
-- Prevented display of unsorted navigation items that could break user experience
-- Resolved structural inconsistencies in cylinder count data across manufacturers
-
-### Technical Details
-- Sort validation occurs in three layers: data loading, rendering, and display
-- Error messages appear as prominent red overlays with affected item details
-- Leaf-level sorting intelligently adapts to available metadata (track_number, verse_number, name)
-
-### Added
-- CONTRIBUTING.md with comprehensive developer guidelines
-- Expanded README.md with setup instructions and architecture overview
-- JSDoc documentation framework for API methods
-
-### Changed
-- Reorganized DESIGNSPEC.md into Part I (Code) and Part II (JSON Configuration)
-- Updated README.md with modern documentation structure
-
-### Fixed
-- Parent button navigation now correctly returns to top level
-- Improved touch interaction responsiveness
+- Silent sorting failures eliminated
+- Parent button navigation to top level
+- Structural inconsistencies in cylinder data
 
 ## [0.5.20] - 2025-11-15
 
 ### Fixed
-- Focus ring hub-angle math now assigns higher angles to earlier sort_number entries while keeping the magnifier anchored
-- Touch snapping, rotation offsets, and volume selector alignment updated to reflect the corrected angle orientation
-
-### Documentation
-- STATUS and README now reference v0.5.20 with notes on the magnifier fix
+- Focus ring angle assignment (higher angles for earlier sort_number)
+- Touch snapping and rotation offsets updated
 
 ## [0.5.19] - 2025-11-15
 
 ### Added
-- **Critical Architecture Gap Identified**: Nested pseudo parent system required for marine catalog Family → Sub-Family hierarchies
-- **Real-World Requirements Documented**: Ford Modular→Triton/Coyote, MerCruiser Small Block→Gen IV, Detroit Diesel Series 71 examples
-- **Implementation Priority Elevated**: Pseudo parent system moved to Priority 2 (was lower priority)
+- Initial hierarchical navigation system
+- Multi-catalog support with volume selector
+- Audio playback for music catalog
+- Touch-optimized controls with momentum physics
 
-### Changed
-- Updated STATUS.md with marine catalog pseudo parent requirements
-- Added nested pseudo parent examples and real-world data structures
-
-### Removed
-- **1.0.0 release** - POSTPONED to allow completion of split architecture system (Phase 6, target Jan 2026). Pseudo parent system gap has since been resolved in v0.6.0.
-
-### Added
-- **Universal hierarchical data navigation system**
-- **2D navigation interface** with rotational and radial movement
-- **Mobile-first ES6 module architecture**
-- **SVG-based rendering** with dynamic viewport calculations
-- **Touch-optimized controls** with momentum physics
-- **Multi-catalog support** with volume selector
-- **Audio playback integration** for music catalog
-- **Responsive design** (portrait/landscape detection)
-- **Comprehensive logging system** for debugging
-
-### Supported Catalogs
-- **Marine Engine Catalog** (`mmdm_catalog.json`) - 2000+ marine diesel models
-- **Music Library** (`hg_mx.json`) - Artist/Album/Track with audio
-- **Gutenberg Bible** (`gutenberg.json`) - Complete Latin Vulgate text
-
-### Technical Features
-- **Zero build process** - Direct ES6 module loading
-- **Universal data architecture** - Works with any JSON hierarchy
-- **Pseudo-parent level system** for dynamic hierarchies
-- **Detail sector templating** with metadata-driven content
-- **Child pyramid navigation** with configurable sorting
-- **Coordinate system mathematics** (Hub/Nuc polar/Cartesian)
-- **Performance optimized** for 2000+ items
-
-### Documentation
-- **DESIGNSPEC.md** - Complete technical specification
-- **STATUS** - Development roadmap and current status
-- **REFACTOR_SUMMARY.md** - Architecture evolution documentation
+### Technical
+- ES6 native modules (zero build process)
+- SVG-based rendering
+- Hub/Nuc coordinate system
+- Performance optimized for 2000+ items
 
 ---
-
-## Types of Changes
-- `Added` for new features
-- `Changed` for changes in existing functionality
-- `Deprecated` for soon-to-be removed features
-- `Removed` for now removed features
-- `Fixed` for any bug fixes
-- `Security` in case of vulnerabilities
 
 ## Versioning
-This project uses [Semantic Versioning](https://semver.org/):
 
-- **MAJOR** version for incompatible API changes
-- **MINOR** version for backwards-compatible functionality additions
-- **PATCH** version for backwards-compatible bug fixes
-
----
-
-**Legend:**
-- 🚀 New feature
-- 🐛 Bug fix
-- 📚 Documentation
-- 🔧 Maintenance
-- 💥 Breaking change
+- **MAJOR** version: Incompatible API changes
+- **MINOR** version: New features, backwards-compatible
+- **PATCH** version: Bug fixes, backwards-compatible

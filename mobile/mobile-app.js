@@ -171,6 +171,12 @@ class MobileCatalogApp {
             // Load the volume data
             await this.dataManager.loadVolume(volume.filename);
             
+            // Create Detail Sector circle after data is loaded (so config is available)
+            this.renderer.createDetailSectorCircle();
+            
+            // Apply color scheme from the volume
+            this.applyColorScheme();
+            
             // Exit volume selector mode
             this.volumeSelectorMode = false;
             
@@ -184,6 +190,24 @@ class MobileCatalogApp {
             Logger.error('Failed to load selected volume:', error);
             alert(`Failed to load ${volume.name}. Please try another volume.`);
         }
+    }
+
+    /**
+     * Apply the color scheme from the loaded volume
+     */
+    applyColorScheme() {
+        const colorScheme = this.renderer.getColorScheme();
+        
+        // Apply background color
+        document.body.style.backgroundColor = colorScheme.background;
+        
+        // Update Parent Button circle color
+        const parentNodeCircle = document.getElementById('parentNodeCircle');
+        if (parentNodeCircle) {
+            parentNodeCircle.setAttribute('fill', colorScheme.nodes);
+        }
+        
+        Logger.debug('🎨 Applied color scheme:', colorScheme);
     }
 
     handleInitError(error) {
@@ -491,6 +515,18 @@ class MobileCatalogApp {
     
     handleParentButtonClick() {
         Logger.debug('🔼 Parent button clicked - migrating OUT toward root');
+        
+        // Log circle state before any operations
+        const parentNodeCircle = document.getElementById('parentNodeCircle');
+        if (parentNodeCircle) {
+            const circleStyle = window.getComputedStyle(parentNodeCircle);
+            console.log('🔼🔼🔼 BEFORE Parent Button click - Circle state:', {
+                opacity: parentNodeCircle.getAttribute('opacity'),
+                computedOpacity: circleStyle.opacity,
+                fill: parentNodeCircle.getAttribute('fill'),
+                classes: parentNodeCircle.classList.toString()
+            });
+        }
 
         // Always collapse Detail Sector first to reset state and reveal Child Pyramid
         this.renderer.collapseDetailSector();

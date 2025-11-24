@@ -1,0 +1,386 @@
+{
+    "Fairhope": {
+        "display_config": {
+            "wheel_volume_version": "1.0",
+            "volume_schema_version": "1.0.0",
+            "volume_data_version": "2025.11.23",
+            "structure_type": "monolithic",
+            "volume_type": "wheel_hierarchical",
+            "volume_name": "Fairhope App",
+            "volume_description": "Social media without endless scrolling",
+            "leaf_level": "post",
+            "focus_ring_startup": {
+                "initial_magnified_item": 0,
+                "parent_button_style": "simple"
+            },
+            "ui_limits": {
+                "focus_ring_max_depth": 4,
+                "parent_button_min_depth": 1
+            },
+            "detail_sector": {
+                "mode": "product_browser",
+                "logo_base_path": "assets/",
+                "default_image": "fairhope_logo",
+                "hide_circle": true
+            },
+            "color_scheme": {
+                "background": "#e8f4f8",
+                "nodes": "#4a90a4",
+                "detail_sector": "#362e6a",
+                "detail_sector_opacity": "0.5",
+                "text_primary": "#000000",
+                "text_secondary": "#ffffff"
+            },
+            "irregular_plurals": {
+                "day": "days"
+            },
+            "hierarchy_levels": {
+                "year": {
+                    "text_format": "number_only",
+                    "color": "#4a90a4",
+                    "positioning": "center",
+                    "display_name": "Year",
+                    "sort_type": "numeric_desc",
+                    "focus_text_position": "centered",
+                    "focus_text_transform": "none",
+                    "is_numeric": true,
+                    "enable_rotation": false
+                },
+                "month": {
+                    "text_format": "title_case",
+                    "color": "#4a90a4",
+                    "positioning": "arc",
+                    "display_name": "Month",
+                    "sort_type": "custom",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none"
+                },
+                "day": {
+                    "text_format": "number_only",
+                    "color": "#4a90a4",
+                    "positioning": "arc",
+                    "display_name": "Day",
+                    "sort_type": "numeric_asc",
+                    "focus_text_position": "centered",
+                    "focus_text_transform": "number_only",
+                    "is_numeric": true
+                },
+                "post": {
+                    "text_format": "title_case",
+                    "color": "#4a90a4",
+                    "positioning": "arc",
+                    "display_name": "Post",
+                    "sort_type": "numeric_asc",
+                    "sort_property": "timestamp",
+                    "focus_text_position": "radial",
+                    "focus_text_transform": "none",
+                    "detail_sector": {
+                        "mode": "text_display",
+                        "views": [
+                            {
+                                "id": "post_content",
+                                "type": "info",
+                                "body": [
+                                    "{{author}}",
+                                    "{{timestamp}}",
+                                    "",
+                                    "{{content}}"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "years": {
+            "2024": {
+                "sort_number": 2,
+                "months": {
+                    "October": {
+                        "sort_number": 10,
+                        "days": {
+                            "15": {
+                                "sort_number": 15,
+                                "posts": {
+                                    "post_1": {
+                                        "name": "Fall Colors",
+                                        "author": "Sarah Mitchell",
+                                        "timestamp": "2024-10-15T08:30:00Z",
+                                        "content": "The fall colors are starting to show around town. The oaks by the bay are turning beautiful shades of amber.",
+                                        "sort_number": 1
+                                    },
+                                    "post_2": {
+                                        "name": "Pumpkin Spice",
+                                        "author": "Tom Anderson",
+                                        "timestamp": "2024-10-15T11:00:00Z",
+                                        "content": "Finally cool enough for pumpkin spice lattes! Fall has arrived in Fairhope. 🎃",
+                                        "sort_number": 2
+                                    }
+                                }
+                            },
+                            "28": {
+                                "sort_number": 28,
+                                "posts": {
+                                    "post_1": {
+                                        "name": "Halloween Prep",
+                                        "author": "Victoria Lopez",
+                                        "timestamp": "2024-10-28T16:00:00Z",
+                                        "content": "Getting the house ready for trick-or-treaters! Our neighborhood goes all out for Halloween.",
+                                        "sort_number": 1
+                                    },
+                                    "post_2": {
+                                        "name": "Costume Contest",
+                                        "author": "William Harris",
+                                        "timestamp": "2024-10-28T19:30:00Z",
+                                        "content": "The downtown costume contest was a blast! So many creative costumes this year.",
+                                        "sort_number": 2
+                                    },
+                                    "post_3": {
+                                        "name": "Spooky Season",
+                                        "author": "Ava Thompson",
+                                        "timestamp": "2024-10-28T21:00:00Z",
+                                        "content": "Best Halloween ever! The pier was transformed into a haunted walk. Amazing community effort!",
+                                        "sort_number": 3
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "November": {
+                        "sort_number": 11,
+                        "days": {
+                            "10": {
+                                "sort_number": 10,
+                                "posts": {
+                                    "post_1": {
+                                        "name": "Veterans Day",
+                                        "author": "Oliver King",
+                                        "timestamp": "2024-11-10T10:00:00Z",
+                                        "content": "Attended the Veterans Day ceremony at the park. Grateful for all who served. 🇺🇸",
+                                        "sort_number": 1
+                                    },
+                                    "post_2": {
+                                        "name": "Community Service",
+                                        "author": "Sophie Turner",
+                                        "timestamp": "2024-11-10T14:00:00Z",
+                                        "content": "Volunteering at the community center today. It feels good to give back to this wonderful town.",
+                                        "sort_number": 2
+                                    }
+                                }
+                            },
+                            "28": {
+                                "sort_number": 28,
+                                "posts": {
+                                    "post_1": {
+                                        "name": "Thanksgiving Eve",
+                                        "author": "Ryan Clark",
+                                        "timestamp": "2024-11-28T09:00:00Z",
+                                        "content": "Picking up fresh ingredients for tomorrow's feast. The local market has everything we need!",
+                                        "sort_number": 1
+                                    },
+                                    "post_2": {
+                                        "name": "Turkey Day Prep",
+                                        "author": "Emma Rodriguez",
+                                        "timestamp": "2024-11-28T15:30:00Z",
+                                        "content": "Baking pies for tomorrow! The house smells amazing. Pecan, apple, and pumpkin. 🥧",
+                                        "sort_number": 2
+                                    },
+                                    "post_3": {
+                                        "name": "Grateful Hearts",
+                                        "author": "Lucas Martinez",
+                                        "timestamp": "2024-11-28T18:00:00Z",
+                                        "content": "Reflecting on all the things I'm thankful for. This community tops the list. Happy Thanksgiving everyone!",
+                                        "sort_number": 3
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "December": {
+                        "sort_number": 12,
+                        "days": {
+                            "20": {
+                                "sort_number": 20,
+                                "posts": {
+                                    "post_1": {
+                                        "name": "Holiday Concert",
+                                        "author": "Mia Walker",
+                                        "timestamp": "2024-12-20T19:00:00Z",
+                                        "content": "The holiday concert at the civic center was beautiful! The choir sounded like angels. 🎄",
+                                        "sort_number": 1
+                                    },
+                                    "post_2": {
+                                        "name": "Last Minute Shopping",
+                                        "author": "Ethan Scott",
+                                        "timestamp": "2024-12-20T14:00:00Z",
+                                        "content": "Wrapping up the last of my holiday shopping. The boutiques on Section Street have such unique gifts!",
+                                        "sort_number": 2
+                                    }
+                                }
+                            },
+                            "25": {
+                                "sort_number": 25,
+                                "posts": {
+                                    "post_1": {
+                                        "name": "Merry Christmas",
+                                        "author": "Charlotte Green",
+                                        "timestamp": "2024-12-25T09:00:00Z",
+                                        "content": "Merry Christmas from Fairhope! Grateful for family, friends, and this beautiful community. 🎁",
+                                        "sort_number": 1
+                                    },
+                                    "post_2": {
+                                        "name": "Christmas Breakfast",
+                                        "author": "James Hill",
+                                        "timestamp": "2024-12-25T10:30:00Z",
+                                        "content": "Family tradition: Christmas breakfast at the pier watching the boats. Doesn't get better than this!",
+                                        "sort_number": 2
+                                    },
+                                    "post_3": {
+                                        "name": "Holiday Blessings",
+                                        "author": "Olivia Adams",
+                                        "timestamp": "2024-12-25T16:00:00Z",
+                                        "content": "What a wonderful Christmas day! The weather was perfect for a walk on the beach. Feeling blessed.",
+                                        "sort_number": 3
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "2025": {
+                "sort_number": 1,
+                "months": {
+                    "November": {
+                        "sort_number": 11,
+                        "days": {
+                            "20": {
+                                "sort_number": 20,
+                                "posts": {
+                                    "post_1": {
+                                        "name": "Morning Coffee",
+                                        "author": "Alice Johnson",
+                                        "timestamp": "2025-11-20T08:15:00Z",
+                                        "content": "Perfect morning for a walk by the bay. The water is so calm today. #fairhope #morning",
+                                        "sort_number": 1
+                                    },
+                                    "post_2": {
+                                        "name": "Lunch at the Pier",
+                                        "author": "Bob Smith",
+                                        "timestamp": "2025-11-20T12:30:00Z",
+                                        "content": "Best seafood in town! Fresh catch of the day. Highly recommend the grilled snapper.",
+                                        "sort_number": 2
+                                    },
+                                    "post_3": {
+                                        "name": "Sunset Views",
+                                        "author": "Carol Davis",
+                                        "timestamp": "2025-11-20T17:45:00Z",
+                                        "content": "Another beautiful Fairhope sunset. Never gets old. 🌅",
+                                        "sort_number": 3
+                                    }
+                                }
+                            },
+                            "21": {
+                                "sort_number": 21,
+                                "posts": {
+                                    "post_1": {
+                                        "name": "Farmer's Market",
+                                        "author": "David Lee",
+                                        "timestamp": "2025-11-21T09:00:00Z",
+                                        "content": "Great finds at the farmer's market today! Fresh produce and homemade jams. Support local!",
+                                        "sort_number": 1
+                                    },
+                                    "post_2": {
+                                        "name": "Art Walk",
+                                        "author": "Emma Wilson",
+                                        "timestamp": "2025-11-21T14:20:00Z",
+                                        "content": "The downtown art walk is amazing this month. So many talented local artists showcasing their work.",
+                                        "sort_number": 2
+                                    },
+                                    "post_3": {
+                                        "name": "Evening Stroll",
+                                        "author": "Frank Martinez",
+                                        "timestamp": "2025-11-21T18:30:00Z",
+                                        "content": "Taking an evening walk through the historic district. The architecture here is timeless.",
+                                        "sort_number": 3
+                                    },
+                                    "post_4": {
+                                        "name": "Live Music",
+                                        "author": "Grace Taylor",
+                                        "timestamp": "2025-11-21T20:00:00Z",
+                                        "content": "Amazing live music at the coffee shop tonight! Great local band playing blues and jazz.",
+                                        "sort_number": 4
+                                    }
+                                }
+                            },
+                            "22": {
+                                "sort_number": 22,
+                                "posts": {
+                                    "post_1": {
+                                        "name": "Morning Run",
+                                        "author": "Henry Chen",
+                                        "timestamp": "2025-11-22T07:00:00Z",
+                                        "content": "5-mile run along the waterfront. Perfect weather for exercising outdoors!",
+                                        "sort_number": 1
+                                    },
+                                    "post_2": {
+                                        "name": "Brunch Spot",
+                                        "author": "Isabel Garcia",
+                                        "timestamp": "2025-11-22T10:45:00Z",
+                                        "content": "Found a new brunch spot downtown. Their avocado toast and mimosas are incredible!",
+                                        "sort_number": 2
+                                    },
+                                    "post_3": {
+                                        "name": "Bookstore Find",
+                                        "author": "Jack Robinson",
+                                        "timestamp": "2025-11-22T13:15:00Z",
+                                        "content": "Spent the afternoon browsing at Page & Palette. Picked up some great reads for the weekend.",
+                                        "sort_number": 3
+                                    },
+                                    "post_4": {
+                                        "name": "Beach Day",
+                                        "author": "Karen White",
+                                        "timestamp": "2025-11-22T15:30:00Z",
+                                        "content": "Perfect beach day! The temperature is just right and the water is crystal clear.",
+                                        "sort_number": 4
+                                    },
+                                    "post_5": {
+                                        "name": "Dinner Plans",
+                                        "author": "Liam Brown",
+                                        "timestamp": "2025-11-22T19:00:00Z",
+                                        "content": "Trying the new Italian restaurant tonight. The pasta is homemade and absolutely delicious!",
+                                        "sort_number": 5
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "December": {
+                        "sort_number": 12,
+                        "days": {
+                            "1": {
+                                "sort_number": 1,
+                                "posts": {
+                                    "post_1": {
+                                        "name": "Holiday Decorations",
+                                        "author": "Mary Johnson",
+                                        "timestamp": "2025-12-01T10:00:00Z",
+                                        "content": "Downtown is all decorated for the holidays! The lights along the pier are magical. ✨",
+                                        "sort_number": 1
+                                    },
+                                    "post_2": {
+                                        "name": "Christmas Shopping",
+                                        "author": "Nathan Davis",
+                                        "timestamp": "2025-12-01T14:30:00Z",
+                                        "content": "Starting my holiday shopping at the local boutiques. So many unique gifts to choose from!",
+                                        "sort_number": 2
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

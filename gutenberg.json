@@ -3,7 +3,7 @@
         "display_config": {
             "wheel_volume_version": "1.0",
             "volume_schema_version": "1.0.0",
-            "volume_data_version": "2025.11.20",
+            "volume_data_version": "2025.11.21",
             "structure_type": "monolithic",
             "volume_type": "wheel_hierarchical",
             "volume_name": "Gutenberg Bible",
@@ -11,7 +11,8 @@
             "leaf_level": "verse",
             "focus_ring_startup": {
                 "initial_magnified_item": 1,
-                "top_navigation_level": "testament"
+                "top_navigation_level": "testament",
+                "parent_button_style": "simple"
             },
             "ui_limits": {
                 "focus_ring_max_depth": 7,
@@ -22,10 +23,18 @@
                 "logo_base_path": "assets/",
                 "default_image": "gutenberg_logo"
             },
+            "color_scheme": {
+                "background": "#d4a574",
+                "nodes": "#8b6f47",
+                "detail_sector": "#362e6a",
+                "detail_sector_opacity": "0.5",
+                "text_primary": "#000000",
+                "text_secondary": "#ffffff"
+            },
             "hierarchy_levels": {
                 "testament": {
                     "text_format": "title_case",
-                    "color": "#8b4513",
+                    "color": "#8b6f47",
                     "positioning": "center",
                     "display_name": "Testament",
                     "sort_type": "alphabetical",
@@ -35,7 +44,7 @@
                 },
                 "section": {
                     "text_format": "title_case",
-                    "color": "#8b4513",
+                    "color": "#8b6f47",
                     "positioning": "arc",
                     "display_name": "Section",
                     "sort_type": "alphabetical",
@@ -44,7 +53,7 @@
                 },
                 "book": {
                     "text_format": "title_case",
-                    "color": "#8b4513",
+                    "color": "#8b6f47",
                     "positioning": "arc",
                     "display_name": "Book",
                     "sort_type": "numeric_asc",
@@ -52,22 +61,9 @@
                     "focus_text_position": "radial",
                     "focus_text_transform": "none"
                 },
-                "chapter_group": {
-                    "text_format": "title_case",
-                    "color": "#8b4513",
-                    "positioning": "arc",
-                    "display_name": "Chapter Group",
-                    "sort_type": "alphabetical",
-                    "focus_text_position": "radial",
-                    "focus_text_transform": "none",
-                    "is_virtual": true,
-                    "virtual_grouping_property": "group",
-                    "virtual_membership_property": "has_group",
-                    "virtual_orphan_group_name": "Other Chapters"
-                },
                 "chapter": {
                     "text_format": "append_suffix",
-                    "color": "#8b4513",
+                    "color": "#8b6f47",
                     "positioning": "arc",
                     "display_name": "Chapter",
                     "sort_type": "numeric_asc",
@@ -76,29 +72,35 @@
                     "is_numeric": true,
                     "use_code_property": false
                 },
-                "verse_group": {
-                    "text_format": "title_case",
-                    "color": "#8b4513",
-                    "positioning": "arc",
-                    "display_name": "Verse Group",
-                    "sort_type": "alphabetical",
-                    "focus_text_position": "radial",
-                    "focus_text_transform": "none",
-                    "is_virtual": true,
-                    "virtual_grouping_property": "group",
-                    "virtual_membership_property": "has_group",
-                    "virtual_orphan_group_name": "Other Verses"
-                },
                 "verse": {
                     "text_format": "append_suffix",
-                    "color": "#8b4513",
+                    "color": "#8b6f47",
                     "positioning": "arc",
                     "display_name": "Verse",
                     "sort_type": "numeric_asc",
                     "focus_text_position": "centered",
                     "focus_text_transform": "number_only",
                     "is_numeric": true,
-                    "use_code_property": false
+                    "use_code_property": false,
+                    "detail_sector": {
+                        "mode": "text_display",
+                        "views": [
+                            {
+                                "id": "latin_text",
+                                "type": "info",
+                                "body": [
+                                    "{{text}}"
+                                ]
+                            },
+                            {
+                                "id": "english_translation",
+                                "type": "info",
+                                "body": [
+                                    "{{translation}}"
+                                ]
+                            }
+                        ]
+                    }
                 }
             }
         },
@@ -107,7 +109,7 @@
                 "sections": {
                     "Pentateuchus": {
                         "books": {
-                            "Liber_Genesis": {
+                            "GENE": {
                                 "book_number": 1,
                                 "sort_number": 1,
                                 "chapters": {
@@ -115,53 +117,262 @@
                                         "verses": {
                                             "1": {
                                                 "text": "In principio creavit Deus caelum et terram.",
-                                                "translation": "In the beginning God created the heavens and the earth."
+                                                "translation": "In the beginning God created the heavens and the earth.",
+                                                "sort_number": 1,
+                                                "name": "Verse 1"
                                             },
                                             "2": {
                                                 "text": "Terra autem erat inanis et vacua, et tenebrae erant super faciem abyssi; et Spiritus Dei ferebatur super aquas.",
-                                                "translation": "And the earth was without form and void, and darkness was upon the face of the deep; and the Spirit of God moved upon the face of the waters."
+                                                "translation": "And the earth was without form and void, and darkness was upon the face of the deep; and the Spirit of God moved upon the face of the waters.",
+                                                "sort_number": 2,
+                                                "name": "Verse 2"
                                             },
                                             "3": {
                                                 "text": "Dixitque Deus: 'Fiat lux.' Et facta est lux.",
-                                                "translation": "And God said: Let there be light. And there was light."
+                                                "translation": "And God said: Let there be light. And there was light.",
+                                                "sort_number": 3,
+                                                "name": "Verse 3"
                                             },
                                             "4": {
                                                 "text": "Et vidit Deus lucem quod esset bona; et divisit lucem a tenebris.",
-                                                "translation": "And God saw the light that it was good; and He divided the light from the darkness."
+                                                "translation": "And God saw the light that it was good; and He divided the light from the darkness.",
+                                                "sort_number": 4,
+                                                "name": "Verse 4"
                                             },
                                             "5": {
                                                 "text": "Appellavitque lucem diem, et tenebras noctem; factumque est vespere et mane, dies unus.",
-                                                "translation": "And He called the light Day, and the darkness He called Night; and there was evening and morning, one day."
+                                                "translation": "And He called the light Day, and the darkness He called Night; and there was evening and morning, one day.",
+                                                "sort_number": 5,
+                                                "name": "Verse 5"
                                             }
-                                        }
+                                        },
+                                        "sort_number": 1
                                     },
                                     "2": {
                                         "verses": {
                                             "1": {
                                                 "text": "Igitur perfecti sunt caeli et terra, et omnis ornatus eorum.",
-                                                "translation": "So the heavens and the earth were finished, and all the furniture of them."
+                                                "translation": "So the heavens and the earth were finished, and all the furniture of them.",
+                                                "sort_number": 1,
+                                                "name": "Verse 1"
                                             },
                                             "2": {
                                                 "text": "Complevitque Deus die septimo opus suum quod fecerat; et requievit die septimo ab universo opere quod patrarat.",
-                                                "translation": "And on the seventh day God ended his work which he had made: and he rested on the seventh day from all his work which he had done."
+                                                "translation": "And on the seventh day God ended his work which he had made: and he rested on the seventh day from all his work which he had done.",
+                                                "sort_number": 2,
+                                                "name": "Verse 2"
                                             },
                                             "3": {
                                                 "text": "Et benedixit diei septimo, et sanctificavit illum, quia in ipso cessaverat ab omni opere suo quod creavit Deus ut faceret.",
-                                                "translation": "And he blessed the seventh day, and sanctified it: because in it he had rested from all his work which God created and made."
+                                                "translation": "And he blessed the seventh day, and sanctified it: because in it he had rested from all his work which God created and made.",
+                                                "sort_number": 3,
+                                                "name": "Verse 3"
                                             }
-                                        }
+                                        },
+                                        "sort_number": 2
                                     },
                                     "3": {
                                         "verses": {
                                             "1": {
                                                 "text": "Sed et serpens erat callidior cunctis animantibus terrae quae fecerat Dominus Deus.",
-                                                "translation": "Now the serpent was more subtle than any of the beasts of the earth which the Lord God had made."
+                                                "translation": "Now the serpent was more subtle than any of the beasts of the earth which the Lord God had made.",
+                                                "sort_number": 1,
+                                                "name": "Verse 1"
                                             }
-                                        }
+                                        },
+                                        "sort_number": 3
+                                    },
+                                    "4": {
+                                        "verses": {},
+                                        "sort_number": 4
+                                    },
+                                    "5": {
+                                        "verses": {},
+                                        "sort_number": 5
+                                    },
+                                    "6": {
+                                        "verses": {},
+                                        "sort_number": 6
+                                    },
+                                    "7": {
+                                        "verses": {},
+                                        "sort_number": 7
+                                    },
+                                    "8": {
+                                        "verses": {},
+                                        "sort_number": 8
+                                    },
+                                    "9": {
+                                        "verses": {},
+                                        "sort_number": 9
+                                    },
+                                    "10": {
+                                        "verses": {},
+                                        "sort_number": 10
+                                    },
+                                    "11": {
+                                        "verses": {},
+                                        "sort_number": 11
+                                    },
+                                    "12": {
+                                        "verses": {},
+                                        "sort_number": 12
+                                    },
+                                    "13": {
+                                        "verses": {},
+                                        "sort_number": 13
+                                    },
+                                    "14": {
+                                        "verses": {},
+                                        "sort_number": 14
+                                    },
+                                    "15": {
+                                        "verses": {},
+                                        "sort_number": 15
+                                    },
+                                    "16": {
+                                        "verses": {},
+                                        "sort_number": 16
+                                    },
+                                    "17": {
+                                        "verses": {},
+                                        "sort_number": 17
+                                    },
+                                    "18": {
+                                        "verses": {},
+                                        "sort_number": 18
+                                    },
+                                    "19": {
+                                        "verses": {},
+                                        "sort_number": 19
+                                    },
+                                    "20": {
+                                        "verses": {},
+                                        "sort_number": 20
+                                    },
+                                    "21": {
+                                        "verses": {},
+                                        "sort_number": 21
+                                    },
+                                    "22": {
+                                        "verses": {},
+                                        "sort_number": 22
+                                    },
+                                    "23": {
+                                        "verses": {},
+                                        "sort_number": 23
+                                    },
+                                    "24": {
+                                        "verses": {},
+                                        "sort_number": 24
+                                    },
+                                    "25": {
+                                        "verses": {},
+                                        "sort_number": 25
+                                    },
+                                    "26": {
+                                        "verses": {},
+                                        "sort_number": 26
+                                    },
+                                    "27": {
+                                        "verses": {},
+                                        "sort_number": 27
+                                    },
+                                    "28": {
+                                        "verses": {},
+                                        "sort_number": 28
+                                    },
+                                    "29": {
+                                        "verses": {},
+                                        "sort_number": 29
+                                    },
+                                    "30": {
+                                        "verses": {},
+                                        "sort_number": 30
+                                    },
+                                    "31": {
+                                        "verses": {},
+                                        "sort_number": 31
+                                    },
+                                    "32": {
+                                        "verses": {},
+                                        "sort_number": 32
+                                    },
+                                    "33": {
+                                        "verses": {},
+                                        "sort_number": 33
+                                    },
+                                    "34": {
+                                        "verses": {},
+                                        "sort_number": 34
+                                    },
+                                    "35": {
+                                        "verses": {},
+                                        "sort_number": 35
+                                    },
+                                    "36": {
+                                        "verses": {},
+                                        "sort_number": 36
+                                    },
+                                    "37": {
+                                        "verses": {},
+                                        "sort_number": 37
+                                    },
+                                    "38": {
+                                        "verses": {},
+                                        "sort_number": 38
+                                    },
+                                    "39": {
+                                        "verses": {},
+                                        "sort_number": 39
+                                    },
+                                    "40": {
+                                        "verses": {},
+                                        "sort_number": 40
+                                    },
+                                    "41": {
+                                        "verses": {},
+                                        "sort_number": 41
+                                    },
+                                    "42": {
+                                        "verses": {},
+                                        "sort_number": 42
+                                    },
+                                    "43": {
+                                        "verses": {},
+                                        "sort_number": 43
+                                    },
+                                    "44": {
+                                        "verses": {},
+                                        "sort_number": 44
+                                    },
+                                    "45": {
+                                        "verses": {},
+                                        "sort_number": 45
+                                    },
+                                    "46": {
+                                        "verses": {},
+                                        "sort_number": 46
+                                    },
+                                    "47": {
+                                        "verses": {},
+                                        "sort_number": 47
+                                    },
+                                    "48": {
+                                        "verses": {},
+                                        "sort_number": 48
+                                    },
+                                    "49": {
+                                        "verses": {},
+                                        "sort_number": 49
+                                    },
+                                    "50": {
+                                        "verses": {},
+                                        "sort_number": 50
                                     }
                                 }
                             },
-                            "Liber_Exodus": {
+                            "EXO": {
                                 "book_number": 2,
                                 "sort_number": 2,
                                 "chapters": {
@@ -169,13 +380,16 @@
                                         "verses": {
                                             "1": {
                                                 "text": "Haec sunt nomina filiorum Israel qui ingressi sunt in Aegyptum cum Iacob; singuli cum domibus suis introierunt.",
-                                                "translation": "These are the names of the children of Israel, that went into Egypt with Jacob: they went in, every man with his household."
+                                                "translation": "These are the names of the children of Israel, that went into Egypt with Jacob: they went in, every man with his household.",
+                                                "sort_number": 1,
+                                                "name": "Verse 1"
                                             }
-                                        }
+                                        },
+                                        "sort_number": 1
                                     }
                                 }
                             },
-                            "Liber_Leviticus": {
+                            "LEVI": {
                                 "book_number": 3,
                                 "sort_number": 3,
                                 "chapters": {
@@ -183,13 +397,16 @@
                                         "verses": {
                                             "1": {
                                                 "text": "Vocavit autem Moysen, et locutus est ei Dominus de tabernaculo testimonii, dicens.",
-                                                "translation": "And the Lord called Moses, and spoke to him from the tabernacle of the testimony, saying."
+                                                "translation": "And the Lord called Moses, and spoke to him from the tabernacle of the testimony, saying.",
+                                                "sort_number": 1,
+                                                "name": "Verse 1"
                                             }
-                                        }
+                                        },
+                                        "sort_number": 1
                                     }
                                 }
                             },
-                            "Liber_Numeri": {
+                            "NUME": {
                                 "book_number": 4,
                                 "sort_number": 4,
                                 "chapters": {
@@ -197,13 +414,16 @@
                                         "verses": {
                                             "1": {
                                                 "text": "Locutusque est Dominus ad Moysen in deserto Sinai in tabernaculo foederis, prima die mensis secundi, anno altero egressionis eorum ex Aegypto, dicens.",
-                                                "translation": "And the Lord spoke to Moses in the desert of Sinai in the tabernacle of the covenant, the first day of the second month, the second year of their going out of Egypt, saying."
+                                                "translation": "And the Lord spoke to Moses in the desert of Sinai in the tabernacle of the covenant, the first day of the second month, the second year of their going out of Egypt, saying.",
+                                                "sort_number": 1,
+                                                "name": "Verse 1"
                                             }
-                                        }
+                                        },
+                                        "sort_number": 1
                                     }
                                 }
                             },
-                            "Liber_Deuteronomii": {
+                            "DEUT": {
                                 "book_number": 5,
                                 "sort_number": 5,
                                 "chapters": {
@@ -211,98 +431,103 @@
                                         "verses": {
                                             "1": {
                                                 "text": "Haec sunt verba quae locutus est Moyses ad omnem Israel trans Iordanem in solitudine campestri, contra Mare Rubrum, inter Pharan et Tophel et Laban et Haseroth, ubi auri est plurimum.",
-                                                "translation": "These are the words, which Moses spoke to all Israel beyond the Jordan, in the plain wilderness, over against the Red Sea, between Pharan and Tophel and Laban and Haseroth, where there is very much gold."
+                                                "translation": "These are the words, which Moses spoke to all Israel beyond the Jordan, in the plain wilderness, over against the Red Sea, between Pharan and Tophel and Laban and Haseroth, where there is very much gold.",
+                                                "sort_number": 1,
+                                                "name": "Verse 1"
                                             }
-                                        }
+                                        },
+                                        "sort_number": 1
                                     }
                                 }
                             }
-                        }
+                        },
+                        "sort_number": 1
                     },
                     "Libri_Historici_et_Novellae_Biblicae": {
                         "books": {
-                            "Liber_Iosue": {
+                            "IOSU": {
                                 "sort_number": 6,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Liber_Iudicum": {
+                            "IUDI": {
                                 "sort_number": 7,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Liber_Ruth": {
+                            "RUTH": {
                                 "sort_number": 8,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Liber_Primus_Samuelis": {
+                            "I_SAM": {
                                 "sort_number": 9,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Liber_Secundus_Samuelis": {
+                            "II_SAM": {
                                 "sort_number": 10,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Liber_Regum_Tertius": {
+                            "III_REG": {
                                 "sort_number": 11,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Liber_Regum_Quartus": {
+                            "IV_REG": {
                                 "sort_number": 12,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Liber_Tobiae": {
+                            "TOBI": {
                                 "sort_number": 13,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Liber_Iudith": {
+                            "IUDITH": {
                                 "sort_number": 14,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Liber_Esther": {
+                            "ESTH": {
                                 "sort_number": 15,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             }
-                        }
+                        },
+                        "sort_number": 2
                     },
                     "Libri_Sapientiae": {
                         "books": {
-                            "Liber_Iob": {
+                            "IOB": {
                                 "sort_number": 16,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Liber_Psalmorum": {
+                            "PSAL": {
                                 "sort_number": 17,
                                 "chapter_groups": {
                                     "Liber_I": {},
@@ -315,383 +540,391 @@
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Liber_Proverbiorum": {
+                            "PROV": {
                                 "sort_number": 18,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Ecclesiastes": {
+                            "ECCLE": {
                                 "sort_number": 19,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Canticum_Canticorum_Salomonis": {
+                            "CANT": {
                                 "sort_number": 20,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Liber_Sapientiae": {
+                            "SAPI": {
                                 "sort_number": 21,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Ecclesiasticus": {
+                            "ECCLU": {
                                 "sort_number": 22,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             }
-                        }
+                        },
+                        "sort_number": 3
                     },
                     "Libri_Prophetici": {
                         "books": {
-                            "Prophetia_Isaiae": {
+                            "ISA": {
                                 "sort_number": 23,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Ieremiae": {
+                            "IERE": {
                                 "sort_number": 24,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Threni": {
+                            "LAME": {
                                 "sort_number": 25,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Baruch": {
+                            "BARU": {
                                 "sort_number": 26,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Ezechielis": {
+                            "EZE": {
                                 "sort_number": 27,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Danielis": {
+                            "DAN": {
                                 "sort_number": 28,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Osee": {
+                            "OSE": {
                                 "sort_number": 29,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Ioel": {
+                            "IOEL": {
                                 "sort_number": 30,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Amos": {
+                            "AMO": {
                                 "sort_number": 31,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Abdiae": {
+                            "ABDI": {
                                 "sort_number": 32,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Ionae": {
+                            "IONA": {
                                 "sort_number": 33,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Michaeae": {
+                            "MICH": {
                                 "sort_number": 34,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Nahum": {
+                            "NAHU": {
                                 "sort_number": 35,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Habacuc": {
+                            "HAB": {
                                 "sort_number": 36,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Sophoniae": {
+                            "SOPH": {
                                 "sort_number": 37,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Aggaei": {
+                            "AGGE": {
                                 "sort_number": 38,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Zachariae": {
+                            "ZACH": {
                                 "sort_number": 39,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Prophetia_Malachiae": {
+                            "MALA": {
                                 "sort_number": 40,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             }
-                        }
+                        },
+                        "sort_number": 4
                     }
-                }
+                },
+                "sort_number": 1
             },
             "Novum_Testamentum": {
                 "sections": {
                     "Evangelia": {
                         "books": {
-                            "Sanctum_Iesu_Christi_Evangelium_Secundum_Matthaeum": {
+                            "MATHE": {
                                 "sort_number": 41,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Sanctum_Iesu_Christi_Evangelium_Secundum_Marcum": {
+                            "MARC": {
                                 "sort_number": 42,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Sanctum_Iesu_Christi_Evangelium_Secundum_Lucam": {
+                            "LUCA": {
                                 "sort_number": 43,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Sanctum_Iesu_Christi_Evangelium_Secundum_Ioannem": {
+                            "IOHA": {
                                 "sort_number": 44,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             }
-                        }
+                        },
+                        "sort_number": 1
                     },
                     "Actus_Apostolorum": {
                         "books": {
-                            "Actus_Apostolorum": {
+                            "ACTU": {
                                 "sort_number": 45,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             }
-                        }
+                        },
+                        "sort_number": 999
                     },
                     "Epistolae": {
                         "books": {
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Romanos": {
+                            "ROM": {
                                 "sort_number": 46,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Corinthios_Prima": {
+                            "I_COR": {
                                 "sort_number": 47,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Corinthios_Secunda": {
+                            "II_COR": {
                                 "sort_number": 48,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Galatas": {
+                            "GALA": {
                                 "sort_number": 49,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Ephesios": {
+                            "EPHE": {
                                 "sort_number": 50,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Philippenses": {
+                            "PHILI": {
                                 "sort_number": 51,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Colossenses": {
+                            "COLO": {
                                 "sort_number": 52,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Thessalonicenses_Prima": {
+                            "I_THES": {
                                 "sort_number": 53,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Thessalonicenses_Secunda": {
+                            "II_THES": {
                                 "sort_number": 54,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Timotheum_Prima": {
+                            "I_TIMO": {
                                 "sort_number": 55,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Timotheum_Secunda": {
+                            "II_TIMO": {
                                 "sort_number": 56,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Titum": {
+                            "TITU": {
                                 "sort_number": 57,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Philemonem": {
+                            "PHILE": {
                                 "sort_number": 58,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Pauli_Apostoli_Ad_Hebraeos": {
+                            "HEBR": {
                                 "sort_number": 59,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Catholica_Beati_Iacobi_Apostoli": {
+                            "IACO": {
                                 "sort_number": 60,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Petri_Apostoli_Prima": {
+                            "I_PETR": {
                                 "sort_number": 61,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Petri_Apostoli_Secunda": {
+                            "II_PETR": {
                                 "sort_number": 62,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Ioannis_Apostoli_Prima": {
+                            "I_IOHA": {
                                 "sort_number": 63,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Ioannis_Apostoli_Secunda": {
+                            "II_IOHA": {
                                 "sort_number": 64,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Beati_Ioannis_Apostoli_Tertia": {
+                            "III_IOHA": {
                                 "sort_number": 65,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             },
-                            "Epistola_Catholica_Beati_Iudae_Apostoli": {
+                            "IUDA": {
                                 "sort_number": 66,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             }
-                        }
+                        },
+                        "sort_number": 999
                     },
                     "Apocalypsis": {
                         "books": {
-                            "Apocalypsis_Beati_Ioannis_Apostoli": {
+                            "APOC": {
                                 "sort_number": 67,
                                 "chapter_groups": {},
                                 "chapters": {},
                                 "verse_groups": {},
                                 "verses": {}
                             }
-                        }
+                        },
+                        "sort_number": 999
                     }
-                }
+                },
+                "sort_number": 2
             }
         }
     }

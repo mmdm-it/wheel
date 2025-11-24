@@ -107,6 +107,7 @@ class MobileDetailSector {
         const contentGroup = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
         contentGroup.setAttribute('class', 'detail-content');
         contentGroup.setAttribute('transform', `translate(0, 0)`); // Position at SVG origin (screen center)
+        contentGroup.style.pointerEvents = 'none'; // Allow clicks to pass through to magnifier below
 
         // Offset inner group toward the on-screen focus anchor so content stays within the visible arc
         const contentInnerGroup = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
@@ -153,7 +154,7 @@ class MobileDetailSector {
         const fallbackTitle = context.name || '';
 
         if (!headerConfig && fallbackTitle) {
-            const title = this.createTextElement(fallbackTitle, 180, currentY, 'end', '22px', '#ffffff', 'bold');
+            const title = this.createTextElement(fallbackTitle, 180, currentY, 'end', '22px', '#000000', 'bold');
             contentGroup.appendChild(title);
             return currentY + 32;
         }
@@ -169,13 +170,13 @@ class MobileDetailSector {
         const resolvedSubtitle = this.dataManager.resolveDetailTemplate(subtitleTemplate, context);
 
         if (resolvedTitle) {
-            const title = this.createTextElement(resolvedTitle, 180, currentY, 'end', '22px', '#ffffff', 'bold');
+            const title = this.createTextElement(resolvedTitle, 180, currentY, 'end', '22px', '#000000', 'bold');
             contentGroup.appendChild(title);
             currentY += 30;
         }
 
         if (resolvedSubtitle) {
-            const subtitle = this.createTextElement(resolvedSubtitle, 180, currentY, 'end', '14px', '#d0d0d0');
+            const subtitle = this.createTextElement(resolvedSubtitle, 180, currentY, 'end', '14px', '#333333');
             contentGroup.appendChild(subtitle);
             currentY += 22;
         }
@@ -309,26 +310,46 @@ class MobileDetailSector {
 
         const title = this.dataManager.resolveDetailTemplate(titleTemplate, context);
         const subtitle = this.dataManager.resolveDetailTemplate(subtitleTemplate, context);
-        const body = this.dataManager.resolveDetailTemplate(bodyTemplate, context);
+        
+        // Handle body as array or string
+        let body = null;
+        if (Array.isArray(bodyTemplate)) {
+            // Resolve each template in the array and join with newlines
+            const resolvedLines = bodyTemplate
+                .map(template => this.dataManager.resolveDetailTemplate(template, context))
+                .filter(line => line); // Remove empty lines
+            body = resolvedLines.join('\n');
+        } else {
+            body = this.dataManager.resolveDetailTemplate(bodyTemplate, context);
+        }
 
         if (title) {
-            const titleElement = this.createTextElement(title, 180, currentY, 'end', '18px', '#ffffff', 'bold');
+            const titleElement = this.createTextElement(title, 180, currentY, 'end', '18px', '#000000', 'bold');
             contentGroup.appendChild(titleElement);
             currentY += 24;
         }
 
         if (subtitle) {
-            const subtitleElement = this.createTextElement(subtitle, 180, currentY, 'end', '13px', '#d0d0d0');
+            const subtitleElement = this.createTextElement(subtitle, 180, currentY, 'end', '13px', '#333333');
             contentGroup.appendChild(subtitleElement);
             currentY += 20;
         }
 
         if (body) {
             const lines = this.wrapText(body, 42);
+            // Use larger font (36px = 300% of 12px) for Gutenberg Bible verses
+            const displayConfig = this.dataManager.getDisplayConfig();
+            const isGutenberg = displayConfig?.volume_name === 'Gutenberg Bible';
+            const fontSize = isGutenberg ? '36px' : '12px';
+            const lineHeight = isGutenberg ? 48 : 16;
+            
             lines.forEach(line => {
-                const bodyElement = this.createTextElement(line, 180, currentY, 'end', '12px', '#c0c0c0');
+                const bodyElement = this.createTextElement(line, 180, currentY, 'end', fontSize, '#333333');
+                if (isGutenberg) {
+                    bodyElement.setAttribute('class', 'gutenberg-verse-text');
+                }
                 contentGroup.appendChild(bodyElement);
-                currentY += 16;
+                currentY += lineHeight;
             });
         }
 
@@ -346,7 +367,7 @@ class MobileDetailSector {
             }
 
             const combined = label && value ? `${label}: ${value}` : (label || value);
-            const fieldElement = this.createTextElement(combined, 180, currentY, 'end', '12px', '#b0b0b0');
+            const fieldElement = this.createTextElement(combined, 180, currentY, 'end', '12px', '#444444');
             contentGroup.appendChild(fieldElement);
             currentY += 16;
         });
@@ -359,14 +380,14 @@ class MobileDetailSector {
         const items = this.getViewItems(viewConfig, context);
 
         if (title) {
-            const titleElement = this.createTextElement(title, 180, currentY, 'end', '16px', '#ffffff', 'bold');
+            const titleElement = this.createTextElement(title, 180, currentY, 'end', '16px', '#000000', 'bold');
             contentGroup.appendChild(titleElement);
             currentY += 22;
         }
 
         if (!items.length) {
             const emptyMessage = this.dataManager.resolveDetailTemplate(viewConfig.empty_state, context) || 'No data available.';
-            const emptyElement = this.createTextElement(emptyMessage, 180, currentY, 'end', '12px', '#888888');
+            const emptyElement = this.createTextElement(emptyMessage, 180, currentY, 'end', '12px', '#666666');
             contentGroup.appendChild(emptyElement);
             return currentY + 20;
         }
@@ -381,13 +402,13 @@ class MobileDetailSector {
 
             const primaryText = primary ? `• ${primary}` : null;
             if (primaryText) {
-                const primaryElement = this.createTextElement(primaryText, 180, currentY, 'end', '12px', '#ffffff');
+                const primaryElement = this.createTextElement(primaryText, 180, currentY, 'end', '12px', '#000000');
                 contentGroup.appendChild(primaryElement);
                 currentY += 16;
             }
 
             if (secondary) {
-                const secondaryElement = this.createTextElement(secondary, 180, currentY, 'end', '11px', '#cccccc');
+                const secondaryElement = this.createTextElement(secondary, 180, currentY, 'end', '11px', '#444444');
                 contentGroup.appendChild(secondaryElement);
                 currentY += 15;
             }

@@ -1,245 +1,147 @@
 # Contributing to Wheel
 
-Thank you for your interest in contributing to Wheel! This document provides guidelines and information for contributors.
+We welcome contributions! This project needs testing, feedback, and code improvements.
 
-## 🚀 Getting Started
+## Getting Started
 
-### Prerequisites
-- Node.js 16+ or Python 3+ (for local development server)
-- Modern web browser (Chrome 90+, Firefox 88+, Safari 14+)
-- Git
+See [SETUP.md](SETUP.md) for installation instructions.
 
-### Development Setup
-
-1. **Fork and clone the repository:**
-   ```bash
-   git clone https://github.com/mmdm-it/wheel.git
-   cd wheel
-   ```
-
-2. **Start development server:**
-   ```bash
-   # Using Python
-   python -m http.server 8000
-
-   # Or using Node.js
-   npx serve . -p 8000
-   ```
-
-3. **Open in browser:**
-   - Development: `http://localhost:8000/wheel.html?forceMobile=true`
-   - Test different catalogs and device sizes
-
-4. **Verify setup:**
-   - Volume selector should appear
-   - Navigation should work smoothly
-   - No console errors
-
-## 📋 Development Workflow
-
-### Branching Strategy
-- `main`: Production-ready code
-- `feature/*`: New features
-- `bugfix/*`: Bug fixes
-- `docs/*`: Documentation updates
-
-### Commit Guidelines
-- Use clear, descriptive commit messages
-- Reference issue numbers when applicable
-- Keep commits focused on single changes
-
-### Pull Request Process
-1. **Create feature branch:**
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-2. **Make changes and test:**
-   - Test on multiple browsers/devices
-   - Run manual testing checklist
-   - Ensure no regressions
-
-3. **Update documentation:**
-   - Update relevant docs for API changes
-   - Add JSDoc comments for new functions
-   - Update STATUS if changing functionality
-
-4. **Submit PR:**
-   - Clear title and description
-   - Reference related issues
-   - Request review from maintainers
-
-## 🏗️ Architecture Guidelines
-
-### Code Organization
-- **Mobile-first**: All features must work on mobile devices
-- **ES6 Modules**: Use modern JavaScript, no bundling required
-- **Separation of concerns**: Each module has single responsibility
-- **Error handling**: Comprehensive try/catch and graceful degradation
-
-### Key Principles
-- **Performance**: Maintain 60fps on target mobile devices
-- **Accessibility**: Consider touch targets and screen reader support
-- **Compatibility**: Test across iOS Safari, Chrome Mobile, Firefox Mobile
-- **Maintainability**: Clear code with comprehensive documentation
-
-### Module Structure
-```
-mobile/
-├── catalog_mobile_modular.js    # Entry point - keep minimal
-├── mobile-app.js               # Application lifecycle
-├── mobile-config.js            # Constants only
-├── mobile-data.js              # Data access layer
-├── mobile-logger.js            # Logging utilities
-├── mobile-renderer.js          # UI rendering
-├── mobile-touch.js             # User interaction
-├── mobile-viewport.js          # Layout calculations
-├── mobile-childpyramid.js      # Child navigation
-└── mobile-detailsector.js      # Content display
+Quick setup:
+```bash
+git clone https://github.com/mmdm-it/wheel.git
+cd wheel
+python -m http.server 8000
+# Open http://localhost:8000/wheel.html?forceMobile=true
 ```
 
-## 📝 Coding Standards
+## How to Contribute
 
-### JavaScript Style
-- **ES6+ features**: Use const/let, arrow functions, async/await
-- **Descriptive names**: `getUserData()` not `getData()`
-- **Single responsibility**: Functions should do one thing well
-- **Error handling**: Use try/catch with meaningful error messages
+### Reporting Bugs
 
-### Documentation
-- **JSDoc comments**: For all public functions
-- **Inline comments**: For complex logic
-- **README updates**: For new features or setup changes
+**Before submitting:**
+- Check existing issues
+- Test on latest version
+- Try with `?loglevel=4` for debug info
 
-### Example JSDoc
+**Bug report should include:**
+- Browser and device (e.g., "Chrome Mobile on Pixel 6")
+- Steps to reproduce
+- Expected vs. actual behavior
+- Console errors if any
+- Screenshots if visual issue
+
+### Suggesting Features
+
+Open an issue with:
+- Clear description of the feature
+- Use case: what problem does it solve?
+- Expected behavior
+- Any implementation ideas (optional)
+
+### Code Contributions
+
+1. **Find or create an issue** to discuss the change
+2. **Fork the repository**
+3. **Create a branch**: `git checkout -b fix-rotation-bug`
+4. **Make your changes:**
+   - Keep changes focused
+   - Test on mobile device (not just DevTools)
+   - Add comments for complex logic
+5. **Test thoroughly** (see checklist below)
+6. **Commit**: `git commit -m "Fix rotation wraparound at 360°"`
+7. **Push**: `git push origin fix-rotation-bug`
+8. **Open Pull Request** with clear description
+
+## Testing Checklist
+
+Before submitting PR, test:
+
+**Navigation:**
+- [ ] Swipe rotates Focus Ring smoothly
+- [ ] Tapping item navigates deeper
+- [ ] Parent button returns to previous level
+- [ ] Can navigate through all hierarchy levels
+- [ ] Rotation wraps around (end to start)
+
+**Device Testing:**
+- [ ] Works on actual mobile device (not just DevTools)
+- [ ] Touch gestures feel responsive
+- [ ] No console errors
+- [ ] Smooth 60fps animation
+
+**Edge Cases:**
+- [ ] Works with small datasets (< 10 items)
+- [ ] Works with large datasets (100+ items)
+- [ ] Handles missing data gracefully
+- [ ] Portrait and landscape orientation
+
+## Code Style
+
+**Keep it simple:**
+- ES6 syntax (const/let, arrow functions, async/await)
+- Descriptive function/variable names
+- Comments for non-obvious logic
+- One function = one purpose
+
+**Error handling:**
+```javascript
+try {
+    // Your code
+} catch (error) {
+    Logger.error('What failed:', error);
+    // Graceful fallback
+}
+```
+
+**Add JSDoc for public functions:**
 ```javascript
 /**
- * Gets items at specified hierarchy level
- * @param {Object} parentItem - Parent item with metadata
- * @param {string} childLevelName - Name of child level to retrieve
- * @returns {Array|null} Array of child items or null if level skipped
+ * Rotates the focus ring by specified angle
+ * @param {number} degrees - Rotation angle in degrees
+ * @returns {boolean} True if rotation succeeded
  */
-function getItemsAtLevel(parentItem, childLevelName) {
-    // Implementation
+function rotate(degrees) {
+    // ...
 }
 ```
 
-## 🧪 Testing Requirements
+## Areas Where We Need Help
 
-### Manual Testing Checklist
-Before submitting PR, verify:
+**High Priority:**
+- Testing on various Android devices (we're iOS-heavy currently)
+- Performance optimization for older devices
+- Accessibility improvements (keyboard navigation, screen readers)
+- Documentation examples and tutorials
 
-#### Navigation
-- [ ] All hierarchy levels navigate correctly
-- [ ] Parent button works (returns to top)
-- [ ] Child pyramid displays properly
-- [ ] Detail sector shows content
+**Feature Development:**
+- Complete Child Pyramid navigation (partially implemented)
+- Landscape mode improvements
+- Automated testing framework
+- Better error messages
 
-#### Devices
-- [ ] Portrait mode (primary)
-- [ ] Landscape mode
-- [ ] Different aspect ratios
-- [ ] Touch interactions
+**Content Creation:**
+- Try Wheel with your own data
+- Report what works and what doesn't
+- Suggest improvements to JSON format
 
-#### Content
-- [ ] Audio playback (if applicable)
-- [ ] Image loading
-- [ ] Text formatting
-- [ ] External links
+**Design:**
+- UX feedback on gesture interactions
+- Visual polish and consistency
+- Mobile-specific improvements
 
-### Performance
-- [ ] Smooth 60fps animation
-- [ ] No memory leaks
-- [ ] Works with 2000+ items
+## Questions?
 
-## 📊 Adding New Catalogs
+- **GitHub Issues**: For bugs and feature requests
+- **GitHub Discussions**: For questions and general discussion
+- **Documentation**: See [ARCHITECTURE.md](ARCHITECTURE.md) for technical details
 
-### JSON Structure Requirements
-```json
-{
-  "wheel_volume_version": "1.0",
-  "hierarchy_levels": {
-    "level1": { "color": "#color", "sort_type": "alpha" },
-    "level2": { "color": "#color", "sort_type": "numeric" }
-  },
-  "data": {
-    "level1_items": [...]
-  }
-}
-```
+## Code of Conduct
 
-### Testing New Catalogs
-1. Add JSON file to root directory
-2. Test with `?forceMobile=true`
-3. Verify navigation through all levels
-4. Check detail sector display
+- Be respectful and constructive
+- Focus on the problem, not the person
+- Welcome newcomers
+- Give credit where due
 
-## 🚨 Issue Reporting
+---
 
-### Bug Reports
-- Use GitHub Issues with "bug" label
-- Include browser/device information
-- Provide steps to reproduce
-- Attach screenshots if visual issue
-
-### Feature Requests
-- Use GitHub Issues with "enhancement" label
-- Describe use case and benefits
-- Consider implementation complexity
-
-### Questions
-- Check documentation first (README, DESIGNSPEC.md, STATUS)
-- Use GitHub Discussions for questions
-- Search existing issues
-
-## 📚 Documentation Updates
-
-### When to Update Docs
-- New features or functionality
-- API changes
-- Setup or deployment changes
-- Breaking changes
-
-### Documentation Files
-- **README.md**: Setup, usage, architecture overview
-- **DESIGNSPEC.md**: Technical specifications
-- **STATUS**: Development status
-- **CHANGELOG.md**: Version history
-
-## 🎯 Code Review Process
-
-### Review Checklist
-- [ ] Code follows style guidelines
-- [ ] Functions have JSDoc comments
-- [ ] Error handling is appropriate
-- [ ] Performance considerations addressed
-- [ ] Tests pass (manual testing)
-- [ ] Documentation updated
-- [ ] No console errors or warnings
-
-### Review Comments
-- Be constructive and specific
-- Suggest improvements, don't just criticize
-- Reference coding standards when applicable
-
-## 📞 Getting Help
-
-### Resources
-- **README.md**: Complete setup and usage guide
-- **DESIGNSPEC.md**: Technical architecture details
-- **STATUS**: Current development status
-- **REFACTOR_SUMMARY.md**: Architecture evolution
-
-### Communication
-- **Issues**: Bug reports and feature requests
-- **Discussions**: General questions and ideas
-- **Pull Requests**: Code contributions
-
-## 🙏 Recognition
-
-Contributors will be:
-- Listed in CHANGELOG.md
-- Acknowledged in release notes
-- Invited to future development discussions
-
-Thank you for contributing to Wheel! 🎉
+Thank you for helping make Wheel better!

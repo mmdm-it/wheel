@@ -1,16 +1,16 @@
 # DEFENSIVE PUBLICATION: WHEEL NAVIGATION SYSTEM
 
-**Publication Date**: November 20, 2025  
+**Publication Date**: November 21, 2025  
 **Inventor/Author**: MMdM (Motori Marini di Montagna), Fano (PU), Italy  
 **Repository**: https://github.com/mmdm-it/wheel  
-**Version**: 0.6.6  
+**Version**: 0.7.0  
 **Purpose**: Establish prior art for rotational hierarchical navigation system
 
 ---
 
 ## ABSTRACT
 
-This document discloses a novel mobile-first user interface system for navigating deep hierarchical data structures using rotational gestures. The system employs a unique coordinate system (Hub/Nuc) based on a constitutional formula, combined with a pseudo parent architecture that enables dynamic metadata-driven regrouping of hierarchical content. The invention addresses the fundamental problem of browsing large datasets (1000+ items across 4+ levels) on mobile touchscreen devices where traditional tree views and nested menus fail due to screen size constraints and poor gesture affordances.
+This document discloses a novel mobile-first user interface system for navigating deep hierarchical data structures using rotational gestures and click-based advancement. The system employs a unique coordinate system (Hub/Nuc) based on a constitutional formula, combined with a pseudo parent architecture that enables dynamic metadata-driven regrouping of hierarchical content. The invention addresses the fundamental problem of browsing large datasets (1000+ items across 4+ levels) on mobile touchscreen devices where traditional tree views, nested menus, and infinite scroll interfaces fail due to screen size constraints and poor gesture affordances.
 
 **Key Innovations**:
 1. Hub/Nuc coordinate system with constitutional formula for viewport state management
@@ -18,6 +18,8 @@ This document discloses a novel mobile-first user interface system for navigatin
 3. Rotational gesture navigation with momentum physics
 4. Detail sector architecture preserving navigational context during content display
 5. Focus ring sprocket gear interface metaphor
+6. **Magnifier click advancement**: Single-tap clockwise navigation eliminating scroll fatigue
+7. **Bounded content presentation**: Hierarchical limits replace infinite scrolling
 
 ---
 
@@ -32,6 +34,8 @@ Existing mobile hierarchical navigation systems suffer from:
 - **Zoomable interfaces**: Require precise pinch gestures, disorienting at depth, no natural "out" path
 - **Search-centric approaches**: Assume user knows target, prevent exploratory browsing
 - **Carousel pickers**: Limited to single-level flat lists, no hierarchy support
+- **Infinite scroll feeds**: Create addictive engagement loops, scroll fatigue, loss of position context
+- **Swipe-only navigation**: Repetitive gesture strain, imprecise control, momentum overshoot
 
 ### 1.2 Unmet Need
 
@@ -41,6 +45,8 @@ No existing system enables efficient **browsing** (as opposed to searching) of h
 - Mobile touchscreen as primary interface
 - Preservation of navigational context during content viewing
 - Support for multiple classification paths (family → subfamily vs. manufacturer → model)
+- **Bounded navigation**: Natural start/end points preventing endless scrolling
+- **Low-friction advancement**: Single tap replaces repetitive swipe gestures
 
 ---
 
@@ -487,7 +493,60 @@ volumes/
 
 **Applicable to**: Video libraries, podcast archives, photo collections
 
-### 11.4 Future Applications
+### 11.4 Social Media: Eliminating Infinite Scroll
+
+**Traditional Social Media Problems**:
+- **Infinite scroll feeds**: Create addictive engagement loops where users lose hours without realizing
+- **Loss of temporal context**: Scrolling removes sense of time (which day am I viewing?)
+- **No natural boundaries**: Feeds extend indefinitely, creating "scroll fatigue" and FOMO
+- **Swipe repetition**: Navigating stories requires repetitive swipe gestures (Instagram Stories, Snapchat)
+- **Algorithmic control**: Users have little agency over navigation path
+
+**Wheel Social Media Architecture**:
+
+**Hierarchy Structure**:
+```
+YEARS → MONTHS → DAYS → POSTS
+```
+
+**User Experience Flow**:
+1. **Today's Date in Magnifier**: App loads with today's date focused (e.g., "November 21")
+2. **Month's Dates in Focus Ring**: Current month's dates populate the ring (November 1-30)
+3. **Parent Button Shows Month**: "November 2025" visible as current context
+4. **Child Pyramid Shows Today's Posts**: Visual overview of today's content (friends' posts/photos as thumbnails)
+5. **Tap Post to Navigate IN**: Selected post moves to Magnifier, other posts to Focus Ring
+6. **Detail Sector Expands**: Shows photo/text content for magnified post
+7. **Magnifier Click Advances**: Single tap rotates to next post (eliminates swipe repetition)
+8. **Bounded Navigation**: Focus Ring contains only today's posts (clear start/end)
+9. **User Choice to Explore**: Tap OUT to return to date selection, choose different day
+10. **Temporal Context Preserved**: Always know which date/month you're viewing
+
+**Key Advantages**:
+
+- **Bounded content sets**: Each day's posts form a complete, finite set (no infinite scroll)
+- **Click advancement > swipe**: Single tap on magnifier advances to next post—smooth and elegant compared to repetitive swiping
+- **Temporal awareness**: Date always visible in Magnifier or Parent Button
+- **User agency**: Choice to explore other days/months, not pushed by algorithm
+- **Natural stopping points**: End of day's posts = clear boundary, prevents mindless scrolling
+- **Context preservation**: Hierarchical position clear (Year → Month → Day → Post)
+- **Gesture efficiency**: Vertical scrolling eliminated, replaced with rotational navigation and single taps
+- **Reduced scroll fatigue**: Bounded sets with explicit end points vs. endless algorithmic feed
+- **Comparison view**: Rotate Focus Ring while Detail Sector open to compare multiple posts
+
+**User Testimonial**:
+> "Vertical scrolling feels like walking compared to Wheel's riding a bike."
+
+**Applicable to**: Facebook, Instagram, Reddit, Twitter/X, LinkedIn, any feed-based social platform
+
+**Implementation Notes**:
+- Magnifier click advancement (v0.7.0) specifically designed for post-to-post navigation
+- Focus Ring provides visual overview of bounded set (day's posts)
+- Detail Sector expands over magnifier without losing navigation context
+- Parent/Child pyramid navigation enables temporal exploration (days/months/years)
+
+---
+
+### 11.5 Future Applications
 
 - **E-commerce**: Department → Category → Subcategory → Product
 - **File systems**: Folder hierarchy navigation
@@ -825,8 +884,8 @@ Enables browsing paths:
 
 ---
 
-**Document Version**: 1.0  
-**Publication Date**: November 20, 2025  
-**Last Updated**: November 20, 2025  
+**Document Version**: 1.1  
+**Publication Date**: November 21, 2025  
+**Last Updated**: November 21, 2025  
 **Status**: Published  
 **DOI**: (To be assigned by Zenodo upon release archival)

@@ -185,7 +185,8 @@ class DataManager {
         const commonVolumeFiles = [
             'mmdm_catalog.json',
             'gutenberg.json', 
-            'hg_mx.json'
+            'hg_mx.json',
+            'fairhope.json'
         ];
         
         const volumes = [];
@@ -1542,9 +1543,19 @@ class DataManager {
                 const hasFurtherLevels = childLevelDepth < hierarchyNames.length - 1;
                 const childIsArray = Array.isArray(childData);
                 
+                // Determine display name: use explicit name from data, or construct from key
+                let displayName;
+                if (childData && typeof childData === 'object' && childData.name) {
+                    displayName = childData.name;
+                } else if (isNumeric) {
+                    displayName = `${itemKey} ${levelConfig.display_name}`;
+                } else {
+                    displayName = itemKey;
+                }
+                
                 // Create item with appropriate properties
                 const item = {
-                    name: isNumeric ? `${itemKey} ${levelConfig.display_name}` : itemKey,
+                    name: displayName,
                     ...this.extractParentProperties(parentItem),
                     key: `${parentItem.key}/${itemKey}`,
                     __level: childLevelName,
