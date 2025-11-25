@@ -109,6 +109,136 @@ The Wheel interface operates within a **portrait-oriented mobile viewport** divi
 
 ---
 
+### 1.4 Nzone Migration Animations
+
+#### Overview
+Navigation between hierarchy levels uses **nzone migration** - animated transitions between spatial zones (Focus Ring ↔ Child Pyramid, Parent Button ↔ Magnifier). Animations provide spatial continuity and visual feedback during hierarchical traversal.
+
+#### IN Migration (Descending Hierarchy: Parent → Children)
+**Trigger**: Child Pyramid node click  
+**Duration**: 600ms total  
+**Flow**: Child Pyramid → Focus Ring (with Detail Sector expansion for leaf items)
+
+**Animation Sequence:**
+1. **Magnifier Migration (0-600ms)**
+   - Current magnified item (parent) animates from Magnifier to Parent Button position
+   - Simultaneous fade-out during travel
+   - Parent Button fades off-screen if moving beyond configured `parent_button_min_depth`
+
+2. **Sibling Migration (0-600ms, parallel)**
+   - All Child Pyramid nodes (siblings of clicked item) animate to Focus Ring positions
+   - Each node travels along calculated path from pyramid arc to focus arc
+   - CSS transform-based animation for smooth motion
+   - Focus Ring background band (wallpaper) remains visible during animation
+
+3. **Detail Sector Expansion (0-600ms, parallel - leaf items only)**
+   - Triggered immediately on leaf item detection (`isLeafItem() === true`)
+   - Animates from collapsed state (upper-right corner) to expanded state (Hub center)
+   - Circle: radius 0.12×shorter_side → 0.98×focus_radius
+   - Logo: scales and rotates to match magnifier angle
+   - Opacity: 0.5 → configured detail_sector_opacity
+   - Content display triggers after animation completes
+
+**State Management:**
+- `isAnimating` flag blocks all user input during 600ms
+- `detailSectorAnimating` flag prevents duplicate expansions
+- Focus Ring rebuilt with clicked item's siblings after animation completes
+
+**Edge Cases:**
+- **Single child**: Still animates to Focus Ring (no siblings to migrate)
+- **Leaf item**: Detail Sector expands during animation
+- **Non-leaf item**: Detail Sector remains collapsed
+
+---
+
+#### OUT Migration (Ascending Hierarchy: Children → Parent)
+**Trigger**: Parent Button click  
+**Duration**: 600ms total (300ms + 300ms phases)  
+**Flow**: Parent Button → Magnifier → Focus Ring sweep
+
+**Animation Sequence:**
+
+**Phase 1: Parent Button to Magnifier (0-300ms)**
+- Parent Button item animates to Magnifier position
+- Single node migration along calculated path
+- CSS transform-based animation
+
+**Phase 2: Sibling Sweep (300-600ms)**
+- Parent's siblings populate Focus Ring in sequential sweep
+- **Sweep Origin**: Magnifier position (where Parent Button item landed)
+- **Sweep Direction**: 
+  - **Bi-directional**: If Magnifier item is in middle of ring (sort_number 2 to n-1)
+    - Nodes appear clockwise AND counterclockwise from origin simultaneously
+    - Two sweep "fronts" move in opposite directions
+  - **Uni-directional**: If Magnifier item is at ring boundary
+    - sort_number = 1: Sweep only clockwise
+    - sort_number = last: Sweep only counterclockwise
+- **Animation**: Nodes instantly pop visible (opacity 0→1) as sweep reaches their position
+- **Timing**: Staggered based on angular distance from Magnifier
+- **Legacy**: Based on original desktop version's manufacturer ring sweep
+
+**Phase 3: Detail Sector Collapse (0-600ms, parallel)**
+- Starts immediately on Parent Button click (if Detail Sector is expanded)
+- Runs full 600ms in parallel with both migration phases
+- Animates from expanded state (Hub center) to collapsed state (upper-right corner)
+- Circle: radius 0.98×focus_radius → 0.12×shorter_side
+- Logo: scales down and removes rotation
+- Opacity: configured detail_sector_opacity → 0.5
+- Content hidden immediately before collapse animation starts
+
+**State Management:**
+- `isAnimating` flag blocks all user input during full 600ms
+- `detailSectorAnimating` flag prevents duplicate collapses
+- Focus Ring rebuilt with parent's siblings after Phase 1 completes (300ms)
+- Sweep animation populates visible nodes during Phase 2 (300-600ms)
+
+**Edge Cases:**
+- **Only child (no siblings)**: 300ms Parent Button → Magnifier, skip Phase 2 sweep
+- **First position**: 300ms migration + 300ms one-directional sweep (clockwise only)
+- **Last position**: 300ms migration + 300ms one-directional sweep (counterclockwise only)
+- **Middle position**: 300ms migration + 300ms bi-directional sweep
+- **Detail Sector collapsed**: Skip collapse animation, only perform migration
+
+**Sweep Algorithm:**
+```javascript
+// Simplified sweep logic
+const magnifierIndex = findItemIndex(parentButtonItem, siblings);
+const isFirst = magnifierIndex === 0;
+const isLast = magnifierIndex === siblings.length - 1;
+
+if (!isFirst && !isLast) {
+    // Bi-directional sweep from magnifier position
+    sweepClockwise(magnifierIndex, siblings.length - 1);
+    sweepCounterClockwise(magnifierIndex - 1, 0);
+} else if (isFirst) {
+    // Uni-directional clockwise from position 0
+    sweepClockwise(0, siblings.length - 1);
+} else if (isLast) {
+    // Uni-directional counterclockwise from last position
+    sweepCounterClockwise(siblings.length - 1, 0);
+}
+```
+
+---
+
+### 1.5 Animation Timing Standards
+
+**Universal Duration**: 600ms for all nzone migrations
+- **IN migration**: Single 600ms phase for all animations
+- **OUT migration**: Split into 300ms + 300ms phases
+
+**Easing Function**: Ease-in-out (quadratic)
+```javascript
+const eased = progress < 0.5
+    ? 2 * progress * progress
+    : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+```
+
+**Frame Rate**: `requestAnimationFrame` for smooth 60fps
+**State Blocking**: All user input blocked during animations via `isAnimating` flag
+
+---
+
 ### 2. COORDINATE SYSTEMS
 
 ### 2.1 Constitutional Definition of Hub and Nuc
