@@ -271,8 +271,7 @@ class MobileRenderer {
             if (distance < 10 && duration < 300) {
                 e.preventDefault();
                 e.stopPropagation();
-                console.log('✨✨✨ MAGNIFIER TAP - advancing Focus Ring');
-                this.advanceFocusRing();
+                console.log('✨ MAGNIFIER TAP - no action (clicks on unselected nodes move them to center)');
             } else {
                 console.log('✨ Magnifier touch too long or moved too much:', { distance, duration });
             }
@@ -280,11 +279,11 @@ class MobileRenderer {
             touchStartTime = null;
         });
         
+        // Magnifier click disabled - clicking unselected nodes brings them to center
         ring.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            Logger.debug('🔍 Magnifier click detected - calling advanceFocusRing');
-            this.advanceFocusRing();
+            Logger.debug('🔍 Magnifier clicked - no action (clicks on unselected nodes move them to center)');
         });
         
         // Add to main group (NOT to focus ring group, so it stays visible)
@@ -301,6 +300,44 @@ class MobileRenderer {
         return ring;
     }
     
+    /**
+     * Bring a specific focus node to center (magnifier position)
+     * Triggered by clicking an unselected focus node
+     */
+    bringFocusNodeToCenter(focusItem) {
+        Logger.debug('🎯🎯🎯 bringFocusNodeToCenter CALLED');
+        Logger.debug('🎯 Target item:', focusItem.name);
+        
+        if (!this.currentFocusItems || this.currentFocusItems.length === 0) {
+            Logger.warn('🎯 No focus items available');
+            return;
+        }
+        
+        // Find the index of the clicked item
+        const targetIndex = this.currentFocusItems.findIndex(item => item.key === focusItem.key);
+        
+        if (targetIndex < 0) {
+            Logger.warn('🎯 Clicked item not found in current focus items');
+            return;
+        }
+        
+        Logger.debug('🎯 Target index:', targetIndex);
+        
+        // Calculate rotation offset needed to center this item
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const middleIndex = (this.currentFocusItems.length - 1) / 2;
+        const targetOffset = (targetIndex - middleIndex) * angleStep;
+        
+        Logger.debug(`🎯 Centering [${targetIndex}] ${focusItem.name} with offset: ${targetOffset.toFixed(3)}`);
+        
+        // Animate to target position
+        if (window.mobileCatalogApp) {
+            window.mobileCatalogApp.animateRotationTo(targetOffset);
+        } else {
+            Logger.error('🎯 window.mobileCatalogApp not found!');
+        }
+    }
+
     /**
      * Advance Focus Ring by one node clockwise (increase sort_number by 1)
      * Triggered by clicking the magnifier
@@ -1179,6 +1216,7 @@ class MobileRenderer {
         const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
         g.classList.add('focusItem');
         g.setAttribute('transform', `translate(${position.x}, ${position.y})`);
+        g.setAttribute('data-focus-key', focusItem.key);
         
         const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
         circle.setAttribute('class', 'node');
@@ -1189,6 +1227,15 @@ class MobileRenderer {
         
         if (isSelected) {
             g.classList.add('selected');
+        } else {
+            // Add click handler only to unselected nodes
+            g.style.cursor = 'pointer';
+            g.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                Logger.debug(`🎯 Focus node clicked: ${focusItem.name}`);
+                this.bringFocusNodeToCenter(focusItem);
+            });
         }
         
         // No strokes on focus nodes - clean styling

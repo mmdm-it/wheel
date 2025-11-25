@@ -98,6 +98,10 @@ class TouchRotationHandler {
     handleTouchMove(e) {
         if (e.touches.length !== 1) return;
         
+        // Defensive: if touch tracking not initialized (touchStart was skipped), ignore this move
+        if (!this.lastTouch || this.lastTouch.x === undefined) return;
+        if (!this.startTouch || this.startTouch.x === undefined) return;
+        
         const touch = e.touches[0];
         const deltaX = touch.clientX - this.lastTouch.x;
         const deltaY = touch.clientY - this.lastTouch.y;
@@ -254,7 +258,7 @@ class TouchRotationHandler {
         if (element && (
             element.classList.contains('topLevelHitArea') || 
             element.closest('.levelGroup') ||
-            element.classList.contains('hit-zone') ||
+            element.classList.contains('child-pyramid-node') ||
             element.closest('.child-pyramid-item') ||
             element.closest('#parentButton') ||
             element.id === 'magnifier' ||
