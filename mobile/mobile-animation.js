@@ -102,7 +102,16 @@ class MobileAnimation {
      * @param {Object} clickedItem - The item that was clicked (will become new magnifier)
      * @param {Object} currentMagnifiedItem - The current item at magnifier (parent of clicked)
      */
+    /**
+     * Stage 3: Animate Magnifier to Parent Button (IN)
+     * Animates current Magnifier content to Parent Button position during IN migration
+     * Also includes Stage 5: animating old Parent Button off-screen
+     */
     animateMagnifierToParentButton(clickedItem, currentMagnifiedItem) {
+        console.log('🎬🎬🎬 Stage 3 + Stage 5: Magnifier → Parent Button (IN migration)');
+        console.log('🎬 Clicked item:', clickedItem?.name);
+        console.log('🎬 Current magnified item:', currentMagnifiedItem?.name);
+        
         if (!currentMagnifiedItem) {
             Logger.debug('🎬 No current magnified item to animate');
             return;
@@ -224,15 +233,23 @@ class MobileAnimation {
             }, 600);
         }, 10);
         
-        // Animate Parent Button off-screen
+        // Stage 5: Animate Parent Button off-screen (during IN migration)
+        console.log('🎬 Stage 5: Checking for Parent Button to animate off-screen');
         const parentButtonGroup = document.getElementById('parentButtonGroup');
-        if (parentButtonGroup && !parentButtonGroup.classList.contains('hidden')) {
+        if (!parentButtonGroup) {
+            console.log('🎬 Stage 5: Parent Button group not found');
+        } else if (parentButtonGroup.classList.contains('hidden')) {
+            console.log('🎬 Stage 5: Parent Button is hidden, skipping off-screen animation');
+        } else {
+            console.log('🎬 Stage 5: Animating Parent Button off-screen');
+            const currentTransform = parentButtonGroup.getAttribute('transform');
+            console.log('🎬 Stage 5: Current transform:', currentTransform);
+            
             parentButtonGroup.style.transition = 'transform 600ms ease-in-out, opacity 600ms ease-in-out';
             parentButtonGroup.style.opacity = '0';
             
             // Move off-screen (further along 135° angle)
             const offScreenDistance = LSd * 0.5;
-            const currentTransform = parentButtonGroup.getAttribute('transform');
             const translateMatch = currentTransform && currentTransform.match(/translate\(([-\d.]+),\s*([-\d.]+)\)/);
             
             if (translateMatch) {
@@ -241,7 +258,10 @@ class MobileAnimation {
                 const newX = currentX + offScreenDistance * Math.cos(parentButtonAngle);
                 const newY = currentY + offScreenDistance * Math.sin(parentButtonAngle);
                 
+                console.log('🎬 Stage 5: Moving from', `(${currentX.toFixed(1)}, ${currentY.toFixed(1)})`, 'to', `(${newX.toFixed(1)}, ${newY.toFixed(1)})`);
                 parentButtonGroup.setAttribute('transform', `translate(${newX}, ${newY})`);
+            } else {
+                console.log('🎬 Stage 5: Could not parse transform, skipping position animation');
             }
             
             // Reset after animation
@@ -249,6 +269,7 @@ class MobileAnimation {
                 parentButtonGroup.style.transition = '';
                 parentButtonGroup.style.opacity = '';
                 parentButtonGroup.classList.add('hidden');
+                console.log('🎬 Stage 5: Animation complete, Parent Button hidden');
             }, 600);
         }
     }

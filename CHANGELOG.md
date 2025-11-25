@@ -10,6 +10,23 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Split architecture Phase 2: Dual loader implementation
 - Multi-volume validation
 
+## [0.8.12] - 2025-11-25
+
+### Changed
+- **Focus Ring Selection Method**: Changed how focus nodes are selected
+  - Magnifier clicks now do nothing (previously advanced ring by one node clockwise)
+  - Clicking any unselected focus node brings that node to the magnifier position
+  - Swiping behavior unchanged - still rotates ring smoothly in either direction
+  - Unselected nodes show pointer cursor for visual feedback
+  - Only unselected nodes are clickable; selected/magnified node at center is not clickable
+
+### Technical Notes
+- Removed `advanceFocusRing()` call from magnifier click handler
+- Added `bringFocusNodeToCenter(focusItem)` method for direct node selection
+- Focus node groups now include `data-focus-key` attribute for identification
+- Click handlers added only to unselected nodes during `createFocusElement()`
+- Selected node has no click handler since it's already centered
+
 ## [0.8.11] - 2025-11-25
 
 ### Added
