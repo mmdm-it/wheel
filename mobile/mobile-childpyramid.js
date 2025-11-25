@@ -50,6 +50,13 @@ class MobileChildPyramid {
      * Show Child Pyramid with given items
      */
     showChildPyramid(items, itemType) {
+        console.log('🔷🎯 showChildPyramid() START');
+        console.log('🔷  items count:', items?.length || 0);
+        console.log('🔷  itemType:', itemType);
+        console.log('🔷🔍 BEFORE rendering:');
+        console.log('  childRingGroup children:', this.childRingGroup?.children.length || 0);
+        console.log('  childRingGroup hidden:', this.childRingGroup?.classList.contains('hidden'));
+        
         if (!items || items.length === 0) {
             Logger.warn(`🔺 No items provided for child pyramid (${itemType})`);
             return;
@@ -81,15 +88,23 @@ class MobileChildPyramid {
         }).join(', '));
         
         // Clear child ring group and reset caches
+        console.log('🔷🧹 Clearing childRingGroup innerHTML');
         this.childRingGroup.innerHTML = '';
         this.nodePositions = [];
+        console.log('🔷✅ About to remove hidden class');
         this.childRingGroup.classList.remove('hidden');
+        console.log('🔷✅ Hidden class removed - childRingGroup should be visible');
         
         // Create pyramid arcs
         this.createChildPyramidArcs(sortedItems);
         
         // Draw fan lines from magnifier to each pyramid node
         this.createFanLines();
+        
+        console.log('🔷🔍 AFTER rendering:');
+        console.log('  childRingGroup children:', this.childRingGroup?.children.length || 0);
+        console.log('  childRingGroup hidden:', this.childRingGroup?.classList.contains('hidden'));
+        console.log('🔷🎯 showChildPyramid() END');
         
         Logger.debug(`🔺 Child pyramid created successfully`);
     }
@@ -380,8 +395,12 @@ class MobileChildPyramid {
      * Hide the Child Pyramid
      */
     hide() {
+        console.log('🔷🚫 hide() CALLED');
+        console.log('🔷🔍 Stack trace:', new Error().stack);
+        
         if (this.childRingGroup) {
             this.childRingGroup.classList.add('hidden');
+            console.log('🔷🚫 Hidden class added to childRingGroup');
         }
         
         // Clear fan lines and cached positions

@@ -2338,12 +2338,20 @@ class MobileRenderer {
             // Clean up when animation completes - remove nodes to allow fresh Child Pyramid rendering
             setTimeout(() => {
                 console.log('🎬 OUT animation complete - removing animated nodes');
+                console.log('🎬🔍 BEFORE removing animated nodes:');
+                console.log('  childRingGroup children:', this.elements.childRingGroup?.children.length || 0);
+                console.log('  childRingGroup hidden:', this.elements.childRingGroup?.classList.contains('hidden'));
                 
                 // Remove the animated nodes - they block new Child Pyramid content
-                animatedNodes.forEach(anim => {
-                    console.log('🎬🗑️ Removing animated node:', anim.node.getAttribute('data-item'));
+                animatedNodes.forEach((anim, index) => {
+                    const itemName = anim.node.getAttribute('data-item') || `node-${index}`;
+                    console.log(`🎬🗑️ Removing animated node[${index}]: ${itemName}`);
                     anim.node.remove();
                 });
+                
+                console.log('🎬🔍 AFTER removing animated nodes:');
+                console.log('  childRingGroup children:', this.elements.childRingGroup?.children.length || 0);
+                console.log('  childRingGroup hidden:', this.elements.childRingGroup?.classList.contains('hidden'));
                 
                 this.lastAnimatedNodes = null; // Clear saved nodes reference
                 Logger.debug('🎬 OUT migration animation complete, nodes removed');
