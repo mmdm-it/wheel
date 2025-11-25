@@ -10,6 +10,27 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Split architecture Phase 2: Dual loader implementation
 - Multi-volume validation
 
+## [0.8.11] - 2025-11-25
+
+### Added
+- **Stage 4 Animation**: Parent Button → Magnifier OUT migration animation
+  - Animates Parent Button content to Magnifier position when navigating back to parent level
+  - Reverses Stage 3 transformations: 16px/weight 600 → 20px/bold text, 315° → Magnifier angle rotation
+  - Text and circle move from Parent Button (135°, 0.9 × LSd × √2) to Magnifier (viewport center angle, focus ring radius)
+  - 600ms ease-in-out animation with smooth position, size, weight, and rotation interpolation
+  - Integrated into all three Parent Button click paths: simple top level, top nav level, and general parent navigation
+
+### Changed
+- Parent Button click now triggers Stage 4 animation before Stage 2 (Focus Ring → Child Pyramid)
+- OUT migration now executes both Stage 4 (Parent Button → Magnifier) and Stage 2 (Focus Ring → Child Pyramid) simultaneously
+
+### Technical Notes
+- Stage 4 function: `animateParentButtonToMagnifier(parentItem)` in mobile-animation.js
+- Called via `this.renderer.animation.animateParentButtonToMagnifier()` in mobile-app.js
+- Three integration points: line ~665 (simple path), ~777 (top nav path), ~896 (general path)
+- Both Stage 2 and Stage 4 animations run in parallel during 600ms OUT migration
+- Hides actual Parent Button group during animation, restores after completion
+
 ## [0.8.10] - 2025-11-25
 
 ### Changed

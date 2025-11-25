@@ -252,6 +252,134 @@ class MobileAnimation {
             }, 600);
         }
     }
+
+    /**
+     * Stage 4: Animate Parent Button to Magnifier (OUT)
+     * Reverse of Stage 3 - moves Parent Button content to become new Magnifier content
+     * Used during OUT migration when navigating toward top level
+     */
+    animateParentButtonToMagnifier(parentItem) {
+        if (!parentItem) {
+            Logger.debug('🎬 No parent item to animate');
+            return;
+        }
+        
+        // Get start position (Parent Button)
+        const viewport = this.viewport.getViewportInfo();
+        const LSd = Math.max(viewport.width, viewport.height);
+        const arcParams = this.viewport.getArcParameters();
+        const parentButtonAngle = 135 * Math.PI / 180;
+        const parentButtonRadius = 0.9 * LSd * Math.SQRT2;
+        const startX = arcParams.centerX + parentButtonRadius * Math.cos(parentButtonAngle);
+        const startY = arcParams.centerY + parentButtonRadius * Math.sin(parentButtonAngle);
+        
+        // Get end position (Magnifier)
+        const magnifierPos = this.viewport.getMagnifyingRingPosition();
+        const endX = magnifierPos.x;
+        const endY = magnifierPos.y;
+        const endAngle = magnifierPos.angle;
+        
+        // Calculate rotations
+        let startRotation = 135;
+        if (Math.cos(parentButtonAngle) < 0) startRotation += 180; // 315°
+        
+        let endRotation = endAngle * 180 / Math.PI;
+        if (Math.cos(endAngle) < 0) endRotation += 180;
+        
+        // Create animated group
+        const mainGroup = document.getElementById('mainGroup');
+        const animatedGroup = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
+        animatedGroup.classList.add('animating-parent-button');
+        
+        // Create circle
+        const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
+        circle.setAttribute('cx', startX);
+        circle.setAttribute('cy', startY);
+        circle.setAttribute('r', MOBILE_CONFIG.RADIUS.PARENT_BUTTON);
+        circle.setAttribute('fill', this.renderer.getColor(parentItem.__level, parentItem.name));
+        circle.setAttribute('stroke', 'black');
+        circle.setAttribute('stroke-width', '1');
+        
+        // Create text - centered over circle
+        const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
+        text.setAttribute('x', startX);
+        text.setAttribute('y', startY);
+        text.setAttribute('dy', '0.3em');
+        text.setAttribute('text-anchor', 'middle');
+        text.setAttribute('transform', `rotate(${startRotation}, ${startX}, ${startY})`);
+        text.setAttribute('fill', 'black');
+        text.style.fontSize = '16px';
+        text.style.fontWeight = '600';
+        text.textContent = parentItem.name;
+        
+        animatedGroup.appendChild(circle);
+        animatedGroup.appendChild(text);
+        mainGroup.appendChild(animatedGroup);
+        
+        // Hide the actual Parent Button during animation
+        const parentButtonGroup = document.getElementById('parentButtonGroup');
+        if (parentButtonGroup) {
+            parentButtonGroup.style.display = 'none';
+        }
+        
+        // Force reflow
+        animatedGroup.getBoundingClientRect();
+        
+        // Start animation
+        setTimeout(() => {
+            // Animate circle via CSS transition
+            circle.style.transition = 'cx 600ms ease-in-out, cy 600ms ease-in-out';
+            circle.setAttribute('cx', endX);
+            circle.setAttribute('cy', endY);
+            
+            // Animate text position, size, weight, and rotation
+            const startTime = performance.now();
+            const duration = 600;
+            
+            const animateText = (currentTime) => {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeProgress = progress < 0.5 
+                    ? 2 * progress * progress 
+                    : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+                
+                // Interpolate position
+                const currentX = startX + (endX - startX) * easeProgress;
+                const currentY = startY + (endY - startY) * easeProgress;
+                text.setAttribute('x', currentX);
+                text.setAttribute('y', currentY);
+                
+                // Interpolate size (16px -> 20px)
+                const currentSize = 16 + (20 - 16) * easeProgress;
+                text.style.fontSize = currentSize.toFixed(2) + 'px';
+                
+                // Interpolate rotation
+                const currentRotation = startRotation + (endRotation - startRotation) * easeProgress;
+                text.setAttribute('transform', `rotate(${currentRotation.toFixed(2)}, ${currentX}, ${currentY})`);
+                
+                if (progress < 1) {
+                    requestAnimationFrame(animateText);
+                } else {
+                    // Final state
+                    text.setAttribute('x', endX);
+                    text.setAttribute('y', endY);
+                    text.style.fontSize = '20px';
+                    text.style.fontWeight = 'bold';
+                    text.setAttribute('transform', `rotate(${endRotation}, ${endX}, ${endY})`);
+                }
+            };
+            
+            requestAnimationFrame(animateText);
+            
+            // Clean up after animation
+            setTimeout(() => {
+                animatedGroup.remove();
+                if (parentButtonGroup) {
+                    parentButtonGroup.style.display = '';
+                }
+            }, 600);
+        }, 10);
+    }
     
     /**
      * Animate all sibling nodes from Child Pyramid to Focus Ring positions
