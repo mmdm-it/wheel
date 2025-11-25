@@ -10,6 +10,20 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Split architecture Phase 2: Dual loader implementation
 - Multi-volume validation
 
+## [0.8.3] - 2025-11-24
+
+### Changed
+- Refactored OUT animation to match IN animation architecture
+- OUT animation now reuses saved `lastAnimatedNodes` from IN animation
+- Simplified animation logic: resets CSS transform to `translate(0, 0) rotate(0deg)` instead of calculating reverse deltas
+- Animation now follows working reference implementation pattern from howellgibbens.com
+
+### Technical Notes
+- IN animation: applies CSS transforms to nodes at Child Pyramid positions
+- OUT animation: resets CSS transforms to return nodes to original positions
+- Nodes persist between animations with `opacity: 0` for seamless reversal
+- Known issue: OUT animation still has positioning bugs requiring further investigation
+
 ## [0.8.2] - 2025-11-24
 
 ### Fixed

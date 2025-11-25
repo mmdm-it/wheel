@@ -516,6 +516,34 @@ class MobileCatalogApp {
     handleParentButtonClick() {
         Logger.debug('🔼 Parent button clicked - migrating OUT toward root');
         
+        // CRITICAL: Capture Focus Ring DOM nodes at the VERY START before any operations
+        // Focus Ring nodes have class 'focusItem', not 'nzone-circle'
+        const focusRingNodes = this.renderer.elements.focusRingGroup.querySelectorAll('.focusItem');
+        const currentFocusItems = [...this.renderer.currentFocusItems];
+        console.log('🔼🔼🔼 CAPTURED at start:', focusRingNodes.length, 'DOM nodes,', currentFocusItems.length, 'data items');
+        
+        // Clone the DOM nodes immediately for later animation
+        const clonedNodes = Array.from(focusRingNodes).map((node, index) => {
+            const transform = node.getAttribute('transform');
+            const circle = node.querySelector('circle');
+            const text = node.querySelector('text');
+            const radius = circle ? circle.getAttribute('r') : 'N/A';
+            const textTransform = text ? text.getAttribute('transform') : 'N/A';
+            
+            console.log(`🔼📸 Clone[${index}] ${currentFocusItems[index]?.name || 'unknown'}:`);
+            console.log(`    transform="${transform}"`);
+            console.log(`    radius=${radius}`);
+            console.log(`    textTransform="${textTransform}"`);
+            
+            return {
+                clone: node.cloneNode(true),
+                transform: transform,
+                itemKey: currentFocusItems[index]?.key,
+                itemName: currentFocusItems[index]?.name
+            };
+        });
+        console.log('🔼🔼🔼 CLONED:', clonedNodes.length, 'nodes with full metadata');
+        
         // Log circle state before any operations
         const parentNodeCircle = document.getElementById('parentNodeCircle');
         if (parentNodeCircle) {
@@ -697,6 +725,10 @@ class MobileCatalogApp {
             
             Logger.debug(`🔼 Showing all top level: ${topLevelItems.length} items, selected: ${selectedTopLevel.name || selectedTopLevel.key}`);
             
+            // Capture current Focus Ring items BEFORE updating state
+            const currentFocusRingItems = [...this.renderer.currentFocusItems];
+            console.log('🔼🔼 CAPTURED for OUT animation (top nav):', currentFocusRingItems.length, 'items');
+            
             // Update Focus Ring with all top level items
             this.renderer.currentFocusItems = topLevelItems;
             this.renderer.allFocusItems = topLevelItems;
@@ -711,14 +743,50 @@ class MobileCatalogApp {
             
             Logger.debug(`🔼 Top level index: ${topLevelIndex}, centerOffset: ${centerOffset}`);
             
-            // Hide child pyramid
-            if (this.renderer.elements.childRingGroup) {
-                this.renderer.elements.childRingGroup.classList.add('hidden');
-            }
-            this.renderer.clearFanLines();
+            // Show the Child Pyramid for the parent level BEFORE OUT animation
+            // This ensures the underlying nodes are in place when animated clones disappear
+            console.log('🔼🔼 Showing Child Pyramid for parent level BEFORE OUT animation');
+            const parentSiblings = topLevelItems; // All manufacturers at top level
+            const selectedParent = selectedTopLevel; // The parent manufacturer (Lockwood-Ash)
             
-            // Setup rotation for top level
-            this.setupTouchRotation(topLevelItems);
+            // Get the cylinders for the selected manufacturer to show in Child Pyramid
+            const childLevel = this.renderer.getNextHierarchyLevel(topNavLevel); // 'cylinder'
+            const childItems = this.renderer.getChildItemsForLevel(selectedParent, childLevel);
+            console.log('🔼🔼 Child items for Child Pyramid:', childItems?.length || 0, childLevel);
+            
+            if (childItems && childItems.length > 0) {
+                this.renderer.childPyramid.showChildPyramid(childItems, selectedParent); // Show cylinders
+                console.log('🔼🔼 Child Pyramid now showing', childItems.length, 'items');
+            }
+            
+            // Check current Child Pyramid state
+            const childPyramidVisible = this.renderer.elements.childRingGroup && !this.renderer.elements.childRingGroup.classList.contains('hidden');
+            const childPyramidNodeCount = this.renderer.elements.childRingGroup?.querySelectorAll('.nzone-circle').length || 0;
+            console.log('🔼🔼 BEFORE OUT animation:');
+            console.log('  Child Pyramid visible:', childPyramidVisible);
+            console.log('  Child Pyramid node count:', childPyramidNodeCount);
+            
+            // OUT MIGRATION ANIMATION for top nav level
+            console.log('🔼🔼 STARTING OUT ANIMATION (top nav)');
+            this.isAnimating = true;
+            
+            this.renderer.animateFocusRingToChildPyramid(currentFocusRingItems, clonedNodes, () => {
+                console.log('🔼🔼 OUT animation complete (top nav)');
+                
+                // Check Child Pyramid state after OUT animation
+                const childPyramidStillVisible = this.renderer.elements.childRingGroup && !this.renderer.elements.childRingGroup.classList.contains('hidden');
+                const childPyramidNodesAfter = this.renderer.elements.childRingGroup?.querySelectorAll('.nzone-circle').length || 0;
+                console.log('🔼📸 AFTER OUT animation:');
+                console.log('  Child Pyramid visible:', childPyramidStillVisible);
+                console.log('  Child Pyramid node count:', childPyramidNodesAfter);
+                console.log('🔼📸 Animated nodes removed, Focus Ring will appear');
+                
+                // DON'T hide child pyramid - let it stay visible so nodes appear to settle
+                // The Child Pyramid will be updated when navigating again
+                this.renderer.clearFanLines();
+            
+                // Setup rotation for top level
+                this.setupTouchRotation(topLevelItems);
             if (this.touchHandler) {
                 this.touchHandler.rotationOffset = centerOffset;
             }
@@ -729,18 +797,22 @@ class MobileCatalogApp {
                 this.renderer.settleTimeout = null;
             }
             
+            console.log('🔼🔼 About to call updateFocusRingPositions - NEW NODES WILL APPEAR');
             this.renderer.updateFocusRingPositions(centerOffset);
+            console.log('🔼🔼 updateFocusRingPositions complete');
             this.renderer.lastRotationOffset = centerOffset;
             this.renderer.selectedFocusItem = selectedTopLevel;
             this.renderer.activeType = topNavLevel;
             this.renderer.buildActivePath(selectedTopLevel);
             this.renderer.isRotating = false;
             
-            // At top level, hide parent button (will be re-shown as disabled)
-            const parentName = this.renderer.getParentNameForLevel(selectedTopLevel, topNavLevel);
-            this.renderer.updateParentButton(parentName);
-            
-            Logger.debug(`🔼 Reached top navigation level - showing ${topLevelItems.length} manufacturers`);
+                // At top level, hide parent button (will be re-shown as disabled)
+                const parentName = this.renderer.getParentNameForLevel(selectedTopLevel, topNavLevel);
+                this.renderer.updateParentButton(parentName);
+                
+                this.isAnimating = false;
+                Logger.debug(`🔼 Reached top navigation level - showing ${topLevelItems.length} manufacturers`);
+            });
             return;
         }
 
@@ -773,6 +845,11 @@ class MobileCatalogApp {
 
         Logger.debug(`🔼 Parent siblings count: ${parentSiblings.length}, selected parent: ${selectedParent.name || selectedParent.key}`);
 
+        // Capture current Focus Ring items BEFORE updating state
+        const currentFocusRingItems = [...this.renderer.currentFocusItems];
+        console.log('🔼🔼 CAPTURED for OUT animation (general parent nav):', currentFocusRingItems.length, 'items');
+
+        // Update Focus Ring with parent level items
         this.renderer.currentFocusItems = parentSiblings;
         this.renderer.allFocusItems = parentSiblings;
 
@@ -786,47 +863,68 @@ class MobileCatalogApp {
 
         Logger.debug(`🔼 Parent index: ${parentIndex}, centerOffset: ${centerOffset}`);
 
-        if (this.renderer.elements.childRingGroup) {
-            this.renderer.elements.childRingGroup.classList.add('hidden');
-        }
-        this.renderer.clearFanLines();
-
-        this.setupTouchRotation(parentSiblings);
-        if (this.touchHandler) {
-            this.touchHandler.rotationOffset = centerOffset;
-        }
-
-        if (this.renderer.settleTimeout) {
-            clearTimeout(this.renderer.settleTimeout);
-            this.renderer.settleTimeout = null;
+        // Show the Child Pyramid for the parent level BEFORE OUT animation
+        console.log('🔼🔼 Showing Child Pyramid for parent level BEFORE OUT animation');
+        const childLevel = this.renderer.getNextHierarchyLevel(parentLevel);
+        const childItems = this.renderer.getChildItemsForLevel(selectedParent, childLevel);
+        console.log('🔼🔼 Child items for Child Pyramid:', childItems?.length || 0, childLevel);
+        
+        if (childItems && childItems.length > 0) {
+            this.renderer.childPyramid.showChildPyramid(childItems, selectedParent);
+            console.log('🔼🔼 Child Pyramid now showing', childItems.length, 'items');
         }
 
-        this.renderer.updateFocusRingPositions(centerOffset);
-        if (this.renderer.settleTimeout) {
-            clearTimeout(this.renderer.settleTimeout);
-            this.renderer.settleTimeout = null;
-        }
-        this.renderer.lastRotationOffset = centerOffset;
-        this.renderer.selectedFocusItem = selectedParent;
-        this.renderer.activeType = parentLevel;
-        this.renderer.buildActivePath(selectedParent);
-        this.renderer.isRotating = false;
+        // OUT MIGRATION ANIMATION
+        console.log('🔼🔼 STARTING OUT ANIMATION (general parent nav)');
+        this.isAnimating = true;
 
-        const centerAngle = this.renderer.viewport.getCenterAngle();
-        const adjustedCenterAngle = centerAngle + centerOffset;
-        const selectedAngle = parentIndex >= 0
-            ? adjustedCenterAngle + (middleIndex - parentIndex) * angleStep
-            : adjustedCenterAngle;
+        this.renderer.animateFocusRingToChildPyramid(currentFocusRingItems, clonedNodes, () => {
+            console.log('🔼🔼 OUT animation complete (general parent nav)');
 
-        this.renderer.showChildContentForFocusItem(selectedParent, selectedAngle);
+            // Don't hide child pyramid - let it stay visible
+            this.renderer.clearFanLines();
 
-        const grandParentName = grandParentLevel
-            ? this.renderer.getParentNameForLevel(selectedParent, grandParentLevel)
-            : null;
-        Logger.debug(`🔼 Updating Parent Button label to: ${grandParentName || 'none'} (grandparent level: ${grandParentLevel || 'top'})`);
-        this.renderer.updateParentButton(grandParentName);
+            this.setupTouchRotation(parentSiblings);
+            if (this.touchHandler) {
+                this.touchHandler.rotationOffset = centerOffset;
+            }
 
-        Logger.debug(`🔼 Parent navigation complete - Focus Ring now shows ${parentSiblings.length} ${parentLevel}s`);
+            if (this.renderer.settleTimeout) {
+                clearTimeout(this.renderer.settleTimeout);
+                this.renderer.settleTimeout = null;
+            }
+
+            console.log('🔼🔼 About to call updateFocusRingPositions - NEW NODES WILL APPEAR');
+            this.renderer.updateFocusRingPositions(centerOffset);
+            console.log('🔼🔼 updateFocusRingPositions complete');
+            
+            if (this.renderer.settleTimeout) {
+                clearTimeout(this.renderer.settleTimeout);
+                this.renderer.settleTimeout = null;
+            }
+            this.renderer.lastRotationOffset = centerOffset;
+            this.renderer.selectedFocusItem = selectedParent;
+            this.renderer.activeType = parentLevel;
+            this.renderer.buildActivePath(selectedParent);
+            this.renderer.isRotating = false;
+
+            const centerAngle = this.renderer.viewport.getCenterAngle();
+            const adjustedCenterAngle = centerAngle + centerOffset;
+            const selectedAngle = parentIndex >= 0
+                ? adjustedCenterAngle + (middleIndex - parentIndex) * angleStep
+                : adjustedCenterAngle;
+
+            this.renderer.showChildContentForFocusItem(selectedParent, selectedAngle);
+
+            const grandParentName = grandParentLevel
+                ? this.renderer.getParentNameForLevel(selectedParent, grandParentLevel)
+                : null;
+            Logger.debug(`🔼 Updating Parent Button label to: ${grandParentName || 'none'} (grandparent level: ${grandParentLevel || 'top'})`);
+            this.renderer.updateParentButton(grandParentName);
+
+            this.isAnimating = false;
+            Logger.debug(`🔼 Parent navigation complete - Focus Ring now shows ${parentSiblings.length} ${parentLevel}s`);
+        });
     }
 
     reset() {

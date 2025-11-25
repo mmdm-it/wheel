@@ -37,6 +37,9 @@ class MobileRenderer {
     this.detailSectorAnimating = false;
     this.isAnimating = false; // Block clicks during node migration animations
         
+        // Store animated nodes for OUT migration reuse
+        this.lastAnimatedNodes = null;
+        
         // State
         this.selectedTopLevel = null;
         this.selectedFocusItem = null;
@@ -57,6 +60,7 @@ class MobileRenderer {
 
         // Debug controls
         this.focusRingDebugFlag = this.computeFocusRingDebugFlag();
+        this.loopInOutDebugFlag = this.computeLoopInOutDebugFlag();
     }
 
     computeFocusRingDebugFlag() {
@@ -67,6 +71,24 @@ class MobileRenderer {
         try {
             const persisted = localStorage.getItem('debugFocusRing') === 'true';
             const queryFlag = new URLSearchParams(window.location.search).get('debugFocusRing') === '1';
+            return persisted || queryFlag;
+        } catch (error) {
+            return false;
+        }
+    }
+
+    computeLoopInOutDebugFlag() {
+        if (typeof window === 'undefined') {
+            return false;
+        }
+
+        try {
+            if (window.DEBUG_LOOP_INOUT === true) {
+                return true;
+            }
+
+            const persisted = localStorage.getItem('debugLoopInOut') === 'true';
+            const queryFlag = new URLSearchParams(window.location.search).get('loopInOut') === '1';
             return persisted || queryFlag;
         } catch (error) {
             return false;
@@ -479,7 +501,6 @@ class MobileRenderer {
                 parentInfo = `<div style="font-size: 14px; margin-top: 10px; opacity: 0.9;">Parent: ${parentNames.join(' → ')}</div>`;
             }
         }
-        
         const itemList = itemsWithoutSort.map(item => 
             `• ${item.name || item.key} (level: ${item.__level || 'unknown'})`
         ).join('<br>');
@@ -2150,7 +2171,8 @@ class MobileRenderer {
                 translateY,
                 rotationDelta: textRotationDelta,
                 startRadius,
-                endRadius
+                endRadius,
+                itemName: siblingItem.name  // For logging
             });
         });
         
@@ -2159,27 +2181,176 @@ class MobileRenderer {
             animatedNodes[0].node.getBoundingClientRect();
         }
         
-        // Start all animations simultaneously
+        // Save animated nodes for potential OUT animation reuse
+        this.lastAnimatedNodes = animatedNodes;
+        console.log('🎬 Saved', animatedNodes.length, 'animated nodes for potential OUT reuse');
+        console.log('🎬⏰ IN animation setup complete at timestamp:', performance.now().toFixed(2), 'ms');
+        
+        const finalizeAnimatedNodes = () => {
+            animatedNodes.forEach((anim, index) => {
+                const computedTransform = window.getComputedStyle(anim.node).transform;
+                console.log(`🎬🏁 IN[${index}] ${anim.itemName || 'unknown'} final computed transform: ${computedTransform}`);
+                anim.node.style.opacity = '0';
+            });
+            console.log('🎬 IN animation END: Child Pyramid → Focus Ring');
+            console.log('🎬⏰ Timestamp:', performance.now().toFixed(2), 'ms');
+            if (onComplete) onComplete();
+        };
+
+        const handlePostAnimation = () => {
+            if (this.loopInOutDebugFlag) {
+                this.runInOutInDebugLoop(animatedNodes, finalizeAnimatedNodes);
+            } else {
+                finalizeAnimatedNodes();
+            }
+        };
+
+        // Start all animations - simple IN without demonstration loop
         setTimeout(() => {
+            console.log('🎬 IN animation START: Child Pyramid → Focus Ring');
             animatedNodes.forEach(anim => {
                 anim.node.style.transition = 'transform 600ms ease-in-out';
                 anim.node.style.transform = `translate(${anim.translateX}px, ${anim.translateY}px) rotate(${anim.rotationDelta}deg)`;
                 
-                // Animate circle radius if needed
+                // Animate circle radius
                 if (anim.circle && anim.startRadius !== anim.endRadius) {
                     anim.circle.style.transition = 'r 600ms ease-in-out';
                     anim.circle.setAttribute('r', anim.endRadius);
                 }
             });
             
-            // Clean up when animation completes
+            // Do NOT remove nodes - keep them for potential OUT animation
+            setTimeout(handlePostAnimation, 600);
+        }, 10);
+
+    }
+
+    runInOutInDebugLoop(animatedNodes, done) {
+        if (!animatedNodes || animatedNodes.length === 0) {
+            done();
+            return;
+        }
+
+        console.log('🎬 LOOP playback initiated (Child Pyramid ↔ Focus Ring)');
+
+        const phases = [
+            {
+                label: 'OUT (loop)',
+                transformFn: () => 'translate(0px, 0px) rotate(0deg)',
+                radiusProp: 'startRadius'
+            },
+            {
+                label: 'IN (loop)',
+                transformFn: (anim) => `translate(${anim.translateX}px, ${anim.translateY}px) rotate(${anim.rotationDelta}deg)`,
+                radiusProp: 'endRadius'
+            }
+        ];
+
+        let phaseIndex = 0;
+
+        const startPhase = () => {
+            if (phaseIndex >= phases.length) {
+                animatedNodes.forEach(anim => {
+                    anim.node.style.opacity = '0';
+                });
+                console.log('🎬 LOOP sequence complete (IN/OUT/IN)');
+                done();
+                return;
+            }
+
+            const phase = phases[phaseIndex];
+            console.log(`🎬 LOOP animation START: ${phase.label}`);
+            animatedNodes.forEach(anim => {
+                anim.node.style.opacity = '1';
+                anim.node.style.transition = 'transform 600ms ease-in-out';
+                anim.node.style.transform = phase.transformFn(anim);
+                const radiusValue = anim[phase.radiusProp];
+                if (anim.circle && typeof radiusValue === 'number') {
+                    anim.circle.style.transition = 'r 600ms ease-in-out';
+                    anim.circle.setAttribute('r', radiusValue);
+                }
+            });
+
             setTimeout(() => {
-                animatedNodes.forEach(anim => anim.node.remove());
-                Logger.debug('🎬 All sibling animations complete');
+                console.log(`🎬 LOOP animation END: ${phase.label}`);
+                phaseIndex += 1;
+                startPhase();
+            }, 600);
+        };
+
+        // Ensure nodes remain visible for playback
+        animatedNodes.forEach(anim => {
+            anim.node.style.opacity = '1';
+        });
+
+        startPhase();
+    }
+
+    /**
+     * OUT MIGRATION: Animate Focus Ring nodes to Child Pyramid positions
+     * This is the reverse of animateSiblingsToFocusRing
+     * Used when Parent Button is clicked to navigate OUT to parent level
+     * 
+     * @param {Array} focusItems - Current items in Focus Ring (data)
+     * @param {Array} clonedNodes - Pre-cloned DOM nodes with transform info
+     * @param {Function} onComplete - Callback after animation completes
+     */
+    animateFocusRingToChildPyramid(focusItems, clonedNodes, onComplete) {
+        console.log('🎬🎬🎬 OUT MIGRATION FUNCTION CALLED');
+        console.log('🎬 focusItems:', focusItems?.length);
+        console.log('🎬 lastAnimatedNodes:', this.lastAnimatedNodes?.length);
+        Logger.debug('🎬 Starting OUT migration: Focus Ring → Child Pyramid');
+        
+        if (!focusItems || focusItems.length === 0) {
+            console.log('🎬❌ No focus items for OUT animation');
+            Logger.warn('No focus items for OUT animation');
+            if (onComplete) onComplete();
+            return;
+        }
+        
+        // Use saved animated nodes from IN animation
+        if (!this.lastAnimatedNodes || this.lastAnimatedNodes.length === 0) {
+            console.log('🎬❌ No saved animated nodes for OUT animation');
+            Logger.warn('No saved animated nodes for OUT animation');
+            if (onComplete) onComplete();
+            return;
+        }
+        
+        const animatedNodes = this.lastAnimatedNodes;
+        console.log('🎬✓ Reusing', animatedNodes.length, 'saved animated nodes');
+        
+        // Make nodes visible and animate back to Child Pyramid (reverse of IN animation)
+        setTimeout(() => {
+            console.log('🎬 Starting OUT animation - animating to origin (0, 0)');
+            animatedNodes.forEach(anim => {
+                // Make visible first
+                anim.node.style.opacity = '1';
+                anim.node.style.transition = 'transform 600ms ease-in-out, opacity 0ms';
+                anim.node.style.transform = `translate(0, 0) rotate(0deg)`;
+                
+                // Animate circle radius back to Child Pyramid size
+                if (anim.circle && anim.startRadius !== anim.endRadius) {
+                    anim.circle.style.transition = 'r 600ms ease-in-out';
+                    anim.circle.setAttribute('r', anim.startRadius);
+                }
+            });
+            
+            // Clean up when animation completes - DON'T remove nodes, they ARE the Child Pyramid now
+            setTimeout(() => {
+                console.log('🎬 OUT animation complete - nodes remain as Child Pyramid');
+                // Remove animation transitions so nodes stay in place
+                animatedNodes.forEach(anim => {
+                    anim.node.style.transition = 'none';
+                    if (anim.circle) {
+                        anim.circle.style.transition = 'none';
+                    }
+                });
+                this.lastAnimatedNodes = null; // Clear saved nodes reference
+                Logger.debug('🎬 OUT migration animation complete');
+                console.log('🎬 OUT animation complete, nodes remain in DOM');
                 if (onComplete) onComplete();
             }, 600);
         }, 10);
-
     }
     
     /**

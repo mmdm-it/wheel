@@ -112,6 +112,44 @@ This formula ensures Hub position adapts to any viewport aspect ratio while main
 - Appears for leaf items (no children)
 - Navigation remains visible while expanded
 
+## Nzone Migration Animations
+
+### IN Animation (Child Pyramid → Focus Ring)
+When a child item is clicked:
+1. All sibling nodes are cloned from Child Pyramid
+2. CSS transforms applied: `translate(translateX, translateY) rotate(rotationDelta)`
+3. Circles animate radius from `CHILD_NODE` to `MAGNIFIED` or `UNSELECTED`
+4. Nodes saved to `lastAnimatedNodes` with `opacity: 0` for reuse
+5. Duration: 600ms ease-in-out
+
+### OUT Animation (Focus Ring → Child Pyramid)
+When Parent Button is clicked:
+1. Reuses saved `lastAnimatedNodes` from IN animation
+2. CSS transforms reset: `translate(0, 0) rotate(0deg)`
+3. Returns nodes to original SVG `transform` attribute positions
+4. Circles animate radius back to `CHILD_NODE` size
+5. Nodes remain in DOM as Child Pyramid (no removal)
+6. Duration: 600ms ease-in-out
+
+### Animation Architecture
+- **SVG Positions**: Set via `transform` attribute on `<g>` elements
+- **CSS Transforms**: Applied via `style.transform` for animation
+- **Transform Origin**: Set to node's SVG position for rotation around self
+- **State Persistence**: Animated nodes stay in DOM between IN/OUT for seamless reversal
+- **Coordinate System**: All calculations in SVG viewport coordinates (origin at center)
+
+### Technical Implementation
+```javascript
+// IN: Apply CSS transform from Child Pyramid position
+node.style.transformOrigin = `${startX}px ${startY}px`;
+node.style.transform = `translate(${deltaX}px, ${deltaY}px) rotate(${rotationDeg}deg)`;
+
+// OUT: Reset CSS transform to return to original position
+node.style.transform = `translate(0, 0) rotate(0deg)`;
+```
+
+The elegance: OUT animation simply "undoes" the CSS transform, returning nodes to their SVG attribute positions without complex coordinate math.
+
 ## Data Format
 
 Catalogs are JSON files with this structure:
