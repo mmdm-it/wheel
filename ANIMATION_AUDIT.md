@@ -1,6 +1,6 @@
 # Animation System Audit
 **Date**: November 25, 2025  
-**Version**: v0.8.9  
+**Version**: v0.8.11  
 **Status**: ✅ **REFACTORED** - Animation module created and integrated
 
 ---
@@ -21,7 +21,8 @@ class MobileAnimation {
     
     // Core animations
     animateNodeToMagnifier(nodeGroup, startPos, endPos, onComplete)
-    animateMagnifierToParentButton(clickedItem, currentMagnifiedItem)
+    animateMagnifierToParentButton(clickedItem, currentMagnifiedItem)  // Stage 3: Magnifier → Parent Button (IN)
+    animateParentButtonToMagnifier(parentItem)  // Stage 4: Parent Button → Magnifier (OUT)
     animateSiblingsToFocusRing(clickedItem, nodePositions, allSiblings, onComplete)
     animateFocusRingToChildPyramid(focusItems, focusRingGroup, magnifierElement, onComplete)
     
@@ -124,6 +125,49 @@ animateMagnifierToParentButton(clickedItem)
 - This was the animation user saw and wanted removed
 - Creates visual confusion (Magnifier → wrong destination)
 - **Recommendation**: Remove or modify to animate to clicked item's Focus Ring destination
+- **UPDATE v0.8.10**: Simplified to direct position interpolation, zero-offset text centered over circles
+- **UPDATE v0.8.11**: Stage 4 reverse animation now implemented for OUT migration
+
+---
+
+### 2b. `animateParentButtonToMagnifier()` (Stage 4 - OUT Migration)
+**Purpose**: Animate Parent Button content to Magnifier position during OUT migration  
+**Status**: ✅ **ACTIVE - NEW (v0.8.11)**
+
+**Code Location**: mobile-animation.js Lines ~256-390 (135 lines)
+
+**Function Signature**:
+```javascript
+animateParentButtonToMagnifier(parentItem)
+```
+
+**Called By**:
+- `mobile-app.js` line ~665: Parent Button click (simple path to top level)
+- `mobile-app.js` line ~777: Parent Button click (top nav level path)  
+- `mobile-app.js` line ~896: Parent Button click (general parent navigation path)
+- Triggered during OUT migration (Parent Button click, away from hub, toward top level)
+- Runs in parallel with Stage 2 (animateFocusRingToChildPyramid)
+
+**What It Does**:
+1. **Reverses Stage 3 animation**
+2. Starts at Parent Button position (135°, 0.9 × LSd × √2 from hub)
+3. Ends at Magnifier position (viewport center angle, focus ring radius)
+4. Text transforms (reverse of Stage 3):
+   - Position: Parent Button → Magnifier
+   - Size: 16px → 20px
+   - Weight: 600 → bold
+   - Rotation: 315° → Magnifier angle
+5. Circle: 22px radius, animates via CSS transition (600ms ease-in-out)
+6. Text: animates via requestAnimationFrame for smooth interpolation
+7. Hides actual Parent Button group during animation
+8. Cleanup: removes animated group, restores Parent Button display after completion
+
+**Design Philosophy**:
+- Perfect reverse of Stage 3 (same positions, opposite direction)
+- Zero-offset text positioning (centered over circles)
+- Direct position interpolation (no group transforms)
+- Coordinates with Stage 2 for complete OUT migration visual
+- 600ms ease-in-out matches all other animation stages
 
 ---
 
@@ -177,8 +221,11 @@ animateFocusRingToChildPyramid(focusItems, clonedNodes, onComplete)
 ```
 
 **Called By**:
-- `mobile-renderer.js` line ~1815-1850: Parent Button click handler
-- Triggered when navigating back UP the hierarchy
+- `mobile-app.js` line ~665: Parent Button click (simple path to top level)
+- `mobile-app.js` line ~777: Parent Button click (top nav level path)
+- `mobile-app.js` line ~896: Parent Button click (general parent navigation path)
+- Triggered during OUT migration (Parent Button click, moving away from hub toward top level)
+- Always called alongside Stage 4 animation (animateParentButtonToMagnifier)
 
 **What It Does**:
 1. Pops most recent entry from `animatedNodesStack` (LIFO)

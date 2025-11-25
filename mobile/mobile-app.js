@@ -575,11 +575,11 @@ class MobileCatalogApp {
 
         Logger.debug(`🔼✓ Current level: ${currentLevel}`);
 
-        // Check if we're at the top navigation level - if so, don't navigate up
+        // Check if we're at the top navigation level - if so, don't allow OUT migration
         const displayConfig = this.dataManager.getDisplayConfig();
         const topNavLevel = displayConfig?.focus_ring_startup?.top_navigation_level;
         if (topNavLevel && currentLevel === topNavLevel) {
-            Logger.debug(`🔼 Already at top navigation level (${topNavLevel}) - Parent Button should not navigate up`);
+            Logger.debug(`🔼 Already at top navigation level (${topNavLevel}) - Parent Button should not trigger OUT migration`);
             return;
         }
 
@@ -656,35 +656,63 @@ class MobileCatalogApp {
             
             Logger.debug(`🔼 Top level index: ${topLevelIndex}, centerOffset: ${centerOffset}`);
             
-            // Hide child pyramid
-            if (this.renderer.elements.childRingGroup) {
-                this.renderer.elements.childRingGroup.classList.add('hidden');
-            }
+            console.log('🔼🔼 CAPTURED for OUT animation (top nav):', clonedNodes.length, 'items');
+            
+            // OUT MIGRATION ANIMATION for top nav level (Stage 2 + Stage 4)
+            console.log('🔼🔼 STARTING OUT ANIMATION (top nav)');
+            
+            // Stage 4: Animate Parent Button content to Magnifier (OUT migration)
+            const parentItem = currentFocus.__path && currentFocus.__path.length > 0 
+                ? { name: currentFocus.__path[0] }
+                : { name: 'Parent' };
+            this.renderer.animation.animateParentButtonToMagnifier(parentItem);
+            
+            // Hide current Child Pyramid before OUT animation (prevents duplicate display)
+            this.renderer.childPyramid.hide();
             this.renderer.clearFanLines();
             
-            // Setup rotation for top level
-            this.setupTouchRotation(topLevelItems);
-            if (this.touchHandler) {
-                this.touchHandler.rotationOffset = centerOffset;
-            }
+            this.isAnimating = true;
             
-            // Update display
-            if (this.renderer.settleTimeout) {
-                clearTimeout(this.renderer.settleTimeout);
-                this.renderer.settleTimeout = null;
-            }
+            // Stage 2: Animate Focus Ring to Child Pyramid (OUT migration)
+            this.renderer.animateFocusRingToChildPyramid(currentFocusItems, clonedNodes, () => {
+                console.log('🔼🔼 OUT animation complete (top nav)');
+                console.log('🔼🔼 Child Pyramid will be shown by updateFocusRingPositions()');
+                
+                // Clear fan lines during transition
+                this.renderer.clearFanLines();
             
-            this.renderer.updateFocusRingPositions(centerOffset);
-            this.renderer.lastRotationOffset = centerOffset;
-            this.renderer.selectedFocusItem = selectedTopLevel;
-            this.renderer.activeType = this.renderer.getHierarchyLevelNames()[0];
-            this.renderer.buildActivePath(selectedTopLevel);
-            this.renderer.isRotating = false;
-            
-            // At top level, hide parent button
-            this.renderer.updateParentButton(null);
-            
-            Logger.debug(`🔼 Reached top level - Parent Button hidden, showing ${topLevelItems.length} top-level items`);
+                // Setup rotation for top level
+                this.setupTouchRotation(topLevelItems);
+                if (this.touchHandler) {
+                    this.touchHandler.rotationOffset = centerOffset;
+                }
+                
+                // Update display
+                if (this.renderer.settleTimeout) {
+                    clearTimeout(this.renderer.settleTimeout);
+                    this.renderer.settleTimeout = null;
+                }
+                
+                console.log('🔼🔼 About to call updateFocusRingPositions - NEW NODES WILL APPEAR');
+                // Set lastRotationOffset BEFORE updateFocusRingPositions
+                this.renderer.lastRotationOffset = centerOffset;
+                // Force immediate settlement
+                this.renderer.forceImmediateFocusSettlement = true;
+                this.renderer.updateFocusRingPositions(centerOffset);
+                this.renderer.forceImmediateFocusSettlement = false;
+                console.log('🔼🔼 updateFocusRingPositions complete');
+                
+                this.renderer.selectedFocusItem = selectedTopLevel;
+                this.renderer.activeType = this.renderer.getHierarchyLevelNames()[0];
+                this.renderer.buildActivePath(selectedTopLevel);
+                this.renderer.isRotating = false;
+                this.isAnimating = false;
+                
+                // At top level, hide parent button
+                this.renderer.updateParentButton(null);
+                
+                Logger.debug(`🔼 Reached top level - Parent Button hidden, showing ${topLevelItems.length} top-level items`);
+            });
             return;
         }
 
@@ -743,8 +771,12 @@ class MobileCatalogApp {
             
             Logger.debug(`🔼 Top level index: ${topLevelIndex}, centerOffset: ${centerOffset}`);
             
-            // OUT MIGRATION ANIMATION for top nav level
+            // OUT MIGRATION ANIMATION for top nav level (Stage 2 + Stage 4)
             console.log('🔼🔼 STARTING OUT ANIMATION (top nav)');
+            
+            // Stage 4: Animate Parent Button content to Magnifier (OUT migration)
+            const parentItem = this.renderer.buildParentItemFromChild(currentFocus, parentLevel);
+            this.renderer.animation.animateParentButtonToMagnifier(parentItem);
             
             // Hide current Child Pyramid before OUT animation (prevents duplicate display)
             this.renderer.childPyramid.hide();
@@ -752,6 +784,7 @@ class MobileCatalogApp {
             
             this.isAnimating = true;
             
+            // Stage 2: Animate Focus Ring to Child Pyramid (OUT migration)
             this.renderer.animateFocusRingToChildPyramid(currentFocusRingItems, clonedNodes, () => {
                 console.log('🔼🔼 OUT animation complete (top nav)');
                 
@@ -855,10 +888,15 @@ class MobileCatalogApp {
         const childItems = this.renderer.getChildItemsForLevel(selectedParent, childLevel);
         console.log('🔼🔼 Child items for Child Pyramid:', childItems?.length || 0, childLevel);
 
-        // OUT MIGRATION ANIMATION
+        // OUT MIGRATION ANIMATION (Stage 2 + Stage 4)
         console.log('🔼🔼 STARTING OUT ANIMATION (general parent nav)');
         this.isAnimating = true;
 
+        // Stage 4: Animate Parent Button content to Magnifier (OUT migration)
+        const parentItemForAnimation = this.renderer.buildParentItemFromChild(currentFocus, parentLevel);
+        this.renderer.animation.animateParentButtonToMagnifier(parentItemForAnimation);
+
+        // Stage 2: Animate Focus Ring to Child Pyramid (OUT migration)
         this.renderer.animateFocusRingToChildPyramid(currentFocusRingItems, clonedNodes, () => {
             console.log('🔼🔼 OUT animation complete (general parent nav)');
 
