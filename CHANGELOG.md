@@ -10,6 +10,19 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Split architecture Phase 2: Dual loader implementation
 - Multi-volume validation
 
+## [0.8.4] - 2025-11-24
+
+### Fixed
+- OUT animation now removes animated nodes after completion
+- Child Pyramid properly updates when rotating Focus Ring after OUT migration
+- Fixed animated nodes blocking clicks and obscuring fresh Child Pyramid content
+- Child Pyramid now renders correctly for newly selected Focus Ring items after navigation
+
+### Technical Notes
+- Animated nodes from OUT animation are now cleaned up after serving their visual purpose
+- Allows normal Child Pyramid rendering system to take over with fresh content
+- Resolves issue where old Child Pyramid nodes persisted and blocked new content
+
 ## [0.8.3] - 2025-11-24
 
 ### Changed
