@@ -2335,19 +2335,20 @@ class MobileRenderer {
                 }
             });
             
-            // Clean up when animation completes - DON'T remove nodes, they ARE the Child Pyramid now
+            // Clean up when animation completes - remove nodes to allow fresh Child Pyramid rendering
             setTimeout(() => {
-                console.log('🎬 OUT animation complete - nodes remain as Child Pyramid');
-                // Remove animation transitions so nodes stay in place
+                console.log('🎬 OUT animation complete - removing animated nodes');
+                
+                // Remove the animated nodes - they block new Child Pyramid content
                 animatedNodes.forEach(anim => {
-                    anim.node.style.transition = 'none';
-                    if (anim.circle) {
-                        anim.circle.style.transition = 'none';
-                    }
+                    console.log('🎬🗑️ Removing animated node:', anim.node.getAttribute('data-item'));
+                    anim.node.remove();
                 });
+                
                 this.lastAnimatedNodes = null; // Clear saved nodes reference
-                Logger.debug('🎬 OUT migration animation complete');
-                console.log('🎬 OUT animation complete, nodes remain in DOM');
+                Logger.debug('🎬 OUT migration animation complete, nodes removed');
+                console.log('🎬 OUT animation complete, animated nodes removed from DOM');
+                console.log('🎬 Child Pyramid can now render fresh content for selected Focus Ring item');
                 if (onComplete) onComplete();
             }, 600);
         }, 10);
