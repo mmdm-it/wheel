@@ -11,6 +11,7 @@ const DEBUG_VERBOSE = false;
 
 import { MOBILE_CONFIG, VERSION } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
+import { MobileAnimation } from './mobile-animation.js';
 import { MobileChildPyramid } from './mobile-childpyramid.js';
 import { MobileDetailSector } from './mobile-detailsector.js';
 import { CoordinateSystem, HubNucCoordinate } from './mobile-coordinates.js';
@@ -22,6 +23,9 @@ class MobileRenderer {
     constructor(viewportManager, dataManager) {
         this.viewport = viewportManager;
         this.dataManager = dataManager;
+        
+        // Initialize Animation module
+        this.animation = new MobileAnimation(viewportManager, dataManager, this);
         
         // Initialize Child Pyramid module
         this.childPyramid = new MobileChildPyramid(viewportManager, dataManager, this);
@@ -36,9 +40,6 @@ class MobileRenderer {
     this.leafStateCache = new Map(); // Cache leaf determinations per item
     this.detailSectorAnimating = false;
     this.isAnimating = false; // Block clicks during node migration animations
-        
-        // Store animated nodes for OUT migration reuse - stack per hierarchy level
-        this.animatedNodesStack = []; // Array of {level, nodes} objects
         
         // State
         this.selectedTopLevel = null;
@@ -129,6 +130,9 @@ class MobileRenderer {
         ring.setAttribute('stroke', 'black');
         ring.setAttribute('stroke-width', '1');
         ring.setAttribute('opacity', '0.8');
+        
+        // Restore visibility if hidden during animation
+        ring.style.opacity = '';
         
         // Log Magnifier position and current selected item text
         const selectedItem = this.selectedFocusItem;
@@ -1257,17 +1261,17 @@ class MobileRenderer {
             const radius = MOBILE_CONFIG.RADIUS.UNSELECTED;
             let offset = -(radius + 5);
             
-            // For selected items, shift text further outward
+            // For selected items, NO offset - text at same position as circle
             if (isSelected) {
-                offset = -(radius + 50);
+                offset = 0;
             }
             
             textX = offset * Math.cos(angle);
             textY = offset * Math.sin(angle);
             
-            // For selected items, use 'end' anchor so text block ends near the node
+            // For selected items, use 'middle' anchor so text is centered over the circle
             if (isSelected) {
-                textAnchor = 'end';
+                textAnchor = 'middle';
             } else {
                 textAnchor = Math.cos(angle) >= 0 ? 'start' : 'end';
             }
@@ -1308,6 +1312,12 @@ class MobileRenderer {
         }
         
         textElement.textContent = displayText;
+        
+        // Log text size for Magnifier (selected focus item)
+        if (isSelected) {
+            // CSS sets font-size via .focusItem.selected text rule (20px bold)
+            console.log('📏 MAGNIFIER TEXT SIZE:', '20px (CSS)', 'weight: bold (CSS)', 'item:', item.name);
+        }
     }
     
     addTimestampToCenter() {
@@ -1503,10 +1513,9 @@ class MobileRenderer {
             
             // Fixed Parent Button circle position in Hub polar coordinates:
             // Circle: Radius 0.9 × LSd × sqrt(2) from Hub center at 135°
-            // Text: Starts at radius 0.95 × LSd × sqrt(2) from Hub center at 135°
+            // Text: Same radius as circle - centered over it
             const parentButtonAngle = 135 * Math.PI / 180;  // Convert to radians
             const parentButtonCircleRadius = 0.9 * LSd * Math.SQRT2;
-            const parentButtonTextRadius = 0.95 * LSd * Math.SQRT2;
             
             // Convert circle position from Hub polar to SVG Cartesian (Nuc coordinates)
             const parentButtonNuc = {
@@ -1514,23 +1523,9 @@ class MobileRenderer {
                 y: arcParams.centerY + parentButtonCircleRadius * Math.sin(parentButtonAngle)
             };
             
-            // Calculate text start position in Hub coordinates
-            const textStartNuc = {
-                x: arcParams.centerX + parentButtonTextRadius * Math.cos(parentButtonAngle),
-                y: arcParams.centerY + parentButtonTextRadius * Math.sin(parentButtonAngle)
-            };
-            
-            // Text offset relative to circle center
-            // Important: Both text and circle are on the same 135° radius line from Hub,
-            // so the offset should maintain the same angle (textOffsetY should equal textOffsetX for 135°)
-            const textOffsetX = textStartNuc.x - parentButtonNuc.x;
-            const textOffsetY = textStartNuc.y - parentButtonNuc.y;
-            
-            // Verify: At 135°, sin and cos are equal, so offsets should be equal
-            // textOffsetX = textOffsetY = (textRadius - circleRadius) * cos(135°)
-            //             = (0.95 - 0.90) * LSd * √2 * cos(135°)
-            //             = 0.05 * LSd * √2 * (-√2/2)
-            //             = -0.05 * LSd
+            // Text at same position as circle (centered over it)
+            const textOffsetX = 0;
+            const textOffsetY = 0;
             
             // Position the group
             parentButtonGroup.setAttribute('transform', `translate(${parentButtonNuc.x}, ${parentButtonNuc.y})`);
@@ -1581,21 +1576,21 @@ class MobileRenderer {
             x2.setAttribute('stroke-width', '2');
             this.elements.mainGroup.appendChild(x2);
             
-            // Update text directly without animation
+            // Update text
             parentText.textContent = parentName;
-            
-            // Position text at calculated offset from circle
             parentText.setAttribute('x', textOffsetX.toFixed(2));
             parentText.setAttribute('y', textOffsetY.toFixed(2));
+            parentText.setAttribute('text-anchor', 'middle');  // Center text over circle
             
             // Rotate text to align with Parent Button angle (135°)
-            // Using same rotation logic as Focus Ring items
             let parentTextRotation = 135;
             if (Math.cos(135 * Math.PI / 180) < 0) {
                 parentTextRotation += 180; // Results in 315°
             }
-            // Rotate around the text's actual position, not a fixed point
             parentText.setAttribute('transform', `rotate(${parentTextRotation}, ${textOffsetX.toFixed(2)}, ${textOffsetY.toFixed(2)})`);
+            
+            // Log Parent Button text size (set by CSS #parentButtonGroup #parentText rule)
+            console.log('📏 PARENT BUTTON TEXT SIZE:', '16px (CSS)', 'weight: 600 (CSS)', 'text:', parentName);
             
             // Position circle at fixed origin (0,0) relative to group transform
             // Circle radius from config
@@ -1612,22 +1607,35 @@ class MobileRenderer {
             if (isAtTopLevel) {
                 parentButtonGroup.classList.add('disabled');
                 parentButtonGroup.setAttribute('data-disabled', 'true');
+                // Hide text when disabled
+                parentText.style.display = 'none';
             } else {
                 parentButtonGroup.classList.remove('disabled');
                 parentButtonGroup.removeAttribute('data-disabled');
+                // Show text when active
+                parentText.style.display = '';
             }
             
-            // Show/hide circle
+            // Show/hide circle and line together
             if (shouldHideCircle) {
                 parentNodeCircle.classList.add('hidden');
                 parentNodeCircle.style.display = 'none';
+                // Clear line when circle is hidden
                 this.clearParentLine();
+                console.log('🟡 Circle HIDDEN (at top level) - line cleared');
             } else {
                 parentNodeCircle.classList.remove('hidden');
                 parentNodeCircle.style.display = '';
-                // Draw line from circle to magnifier
+                // Draw line from circle to magnifier only when circle is visible
                 setTimeout(() => this.drawParentLine(parentButtonNuc), 20);
+                console.log('🟡 Circle VISIBLE - line will be drawn');
             }
+            
+            console.log('🟡🟡🟡 PARENT BUTTON FINAL STATE:');
+            console.log('  Group visible:', !parentButtonGroup.classList.contains('hidden'));
+            console.log('  Circle visible:', !parentNodeCircle.classList.contains('hidden'));
+            console.log('  Text visible:', parentText.style.display !== 'none');
+            console.log('  Disabled:', parentButtonGroup.classList.contains('disabled'));
         } else {
             // Hide button if no parent
             parentButtonGroup.classList.add('hidden');
@@ -1638,7 +1646,12 @@ class MobileRenderer {
                 parentNodeCircle.classList.add('hidden');
                 parentNodeCircle.style.display = 'none';
             }
+            if (parentText) {
+                parentText.style.display = 'none';
+            }
             this.clearParentLine();
+            
+            console.log('🟡🟡🟡 PARENT BUTTON: No parent - completely hidden');
         }
     }
     
@@ -1667,6 +1680,13 @@ class MobileRenderer {
             parentButtonNuc,
             timestamp: performance.now().toFixed(2)
         });
+        
+        // Check if Parent Button circle is visible before drawing line
+        const parentNodeCircle = document.getElementById('parentNodeCircle');
+        if (!parentNodeCircle || parentNodeCircle.classList.contains('hidden') || parentNodeCircle.style.display === 'none') {
+            console.log('🔵🔵 drawParentLine ABORTED: Parent Button circle not visible');
+            return;
+        }
         
         // Clear any existing line
         this.clearParentLine();
@@ -1758,70 +1778,10 @@ class MobileRenderer {
     
     /**
      * Animate a Child Pyramid node to the Magnifier position
-     * @param {SVGElement} nodeGroup - The SVG group element containing the node
-     * @param {Object} startPos - Starting position {x, y}
-     * @param {Object} endPos - Ending position {x, y, angle}
-     * @param {Function} onComplete - Callback when animation completes
+     * Delegates to animation module
      */
     animateNodeToMagnifier(nodeGroup, startPos, endPos, onComplete) {
-        Logger.debug('🎬 Starting node animation to Magnifier', startPos, endPos);
-        
-        // Clone the node group for animation
-        const animatedNode = nodeGroup.cloneNode(true);
-        animatedNode.classList.add('animating-node');
-        
-        // Calculate starting rotation from original node
-        const originalCircle = nodeGroup.querySelector('.node');
-        const startX = parseFloat(originalCircle.getAttribute('cx'));
-        const startY = parseFloat(originalCircle.getAttribute('cy'));
-        
-        // Calculate angle from center for starting rotation
-        const magnifierPos = this.viewport.getMagnifyingRingPosition();
-        const dx = startX - magnifierPos.x;
-        const dy = startY - magnifierPos.y;
-        const startAngle = Math.atan2(dy, dx);
-        let startRotation = startAngle * 180 / Math.PI;
-        if (Math.cos(startAngle) < 0) {
-            startRotation += 180;
-        }
-        
-        // Calculate end rotation (same logic as focus ring items)
-        let endRotation = endPos.angle * 180 / Math.PI;
-        if (Math.cos(endPos.angle) < 0) {
-            endRotation += 180;
-        }
-        
-        // Append animated node to main group (above everything)
-        const mainGroup = document.getElementById('mainGroup');
-        mainGroup.appendChild(animatedNode);
-        
-        // Calculate translation needed
-        const translateX = endPos.x - startX;
-        const translateY = endPos.y - startY;
-        const rotationDelta = endRotation - startRotation;
-        
-        Logger.debug(`🎬 Animation params: translate(${translateX.toFixed(1)}, ${translateY.toFixed(1)}) rotate ${rotationDelta.toFixed(1)}°`);
-        
-        // Apply starting state
-        animatedNode.style.transformOrigin = `${startX}px ${startY}px`;
-        animatedNode.style.transform = 'translate(0, 0) rotate(0deg)';
-        animatedNode.style.transition = 'none';
-        
-        // Force reflow
-        animatedNode.getBoundingClientRect();
-        
-        // Apply animation
-        setTimeout(() => {
-            animatedNode.style.transition = 'transform 600ms ease-in-out';
-            animatedNode.style.transform = `translate(${translateX}px, ${translateY}px) rotate(${rotationDelta}deg)`;
-            
-            // Clean up when animation completes
-            setTimeout(() => {
-                animatedNode.remove();
-                Logger.debug('🎬 Animation complete, node removed');
-                if (onComplete) onComplete();
-            }, 600);
-        }, 10);
+        this.animation.animateNodeToMagnifier(nodeGroup, startPos, endPos, onComplete);
     }
 
     /**
@@ -1890,10 +1850,11 @@ class MobileRenderer {
         }
         
         // Animate Magnifier node (current focus) to Parent Button and Parent Button off-screen
-        this.animateMagnifierToParentButton(item);
+        this.animation.animateMagnifierToParentButton(item, this.selectedFocusItem);
         
         // Start animation for all nodes, then continue with state updates
-        this.animateSiblingsToFocusRing(item, nodePositions, () => {
+        const allSiblings = this.currentChildItems || [];
+        this.animation.animateSiblingsToFocusRing(item, nodePositions, allSiblings, () => {
             // Animation complete - now show the real focus ring
             this.isAnimating = false;
             this.continueChildPyramidClick(item);
@@ -1901,171 +1862,11 @@ class MobileRenderer {
     }
     
     /**
-     * Animate the current Magnifier node to Parent Button and Parent Button off-screen
-     * @param {Object} clickedItem - The item that was clicked (will become new magnifier)
+     * Animate the current Magnifier node to Parent Button position
+     * Delegates to animation module
      */
     animateMagnifierToParentButton(clickedItem) {
-        // Get current magnified item (parent of clicked item)
-        const currentMagnifiedItem = this.selectedFocusItem;
-        if (!currentMagnifiedItem) {
-            Logger.debug('🎬 No current magnified item to animate');
-            return;
-        }
-        
-        // Get the actual Magnifier ring element and hide it during animation
-        const magnifierRing = document.getElementById('magnifier');
-        if (magnifierRing) {
-            magnifierRing.style.display = 'none';
-        }
-        
-        // Get Magnifier position (start)
-        const magnifierPos = this.viewport.getMagnifyingRingPosition();
-        const startX = magnifierPos.x;
-        const startY = magnifierPos.y;
-        const startAngle = magnifierPos.angle;
-        
-        console.log('🎬 Magnifier animation START:', {
-            startX: startX.toFixed(2),
-            startY: startY.toFixed(2),
-            startAngle: (startAngle * 180 / Math.PI).toFixed(1) + '°'
-        });
-        
-        // Get Parent Button position (end)
-        const viewport = this.viewport.getViewportInfo();
-        const LSd = Math.max(viewport.width, viewport.height);
-        const arcParams = this.viewport.getArcParameters();
-        const parentButtonAngle = 135 * Math.PI / 180;
-        const parentButtonCircleRadius = 0.9 * LSd * Math.SQRT2;
-        
-        const endX = arcParams.centerX + parentButtonCircleRadius * Math.cos(parentButtonAngle);
-        const endY = arcParams.centerY + parentButtonCircleRadius * Math.sin(parentButtonAngle);
-        
-        console.log('🎬 Magnifier animation END:', {
-            endX: endX.toFixed(2),
-            endY: endY.toFixed(2),
-            distance: Math.sqrt((endX - startX)**2 + (endY - startY)**2).toFixed(2)
-        });
-        
-        // Create animated node for current magnifier using CSS transforms
-        const mainGroup = document.getElementById('mainGroup');
-        const animatedMagnifier = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-        animatedMagnifier.classList.add('animating-magnifier');
-        
-        // Create circle (filled node) - positioned absolutely
-        const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
-        circle.setAttribute('cx', startX);
-        circle.setAttribute('cy', startY);
-        circle.setAttribute('r', MOBILE_CONFIG.RADIUS.MAGNIFIED);
-        circle.setAttribute('fill', this.getColor(currentMagnifiedItem.__level, currentMagnifiedItem.name));
-        circle.setAttribute('stroke', 'black');
-        circle.setAttribute('stroke-width', '1');
-        
-        // Create Magnifier ring (black stroke circle) - positioned absolutely
-        const magnifierRingClone = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
-        magnifierRingClone.setAttribute('cx', startX);
-        magnifierRingClone.setAttribute('cy', startY);
-        magnifierRingClone.setAttribute('r', MOBILE_CONFIG.RADIUS.MAGNIFIER);
-        magnifierRingClone.setAttribute('fill', 'none');
-        magnifierRingClone.setAttribute('stroke', 'black');
-        magnifierRingClone.setAttribute('stroke-width', '1');
-        magnifierRingClone.setAttribute('opacity', '0.8');
-        
-        // Create text - positioned absolutely
-        const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        const textOffset = -(MOBILE_CONFIG.RADIUS.MAGNIFIED + 50);
-        const textX = startX + textOffset * Math.cos(startAngle);
-        const textY = startY + textOffset * Math.sin(startAngle);
-        let textRotation = startAngle * 180 / Math.PI;
-        if (Math.cos(startAngle) < 0) textRotation += 180;
-        
-        text.setAttribute('x', textX);
-        text.setAttribute('y', textY);
-        text.setAttribute('dy', '0.3em');
-        text.setAttribute('text-anchor', 'end');
-        text.setAttribute('transform', `rotate(${textRotation}, ${textX}, ${textY})`);
-        text.setAttribute('fill', 'black');
-        text.textContent = currentMagnifiedItem.name;
-        
-        animatedMagnifier.appendChild(circle);
-        animatedMagnifier.appendChild(magnifierRingClone);
-        animatedMagnifier.appendChild(text);
-        mainGroup.appendChild(animatedMagnifier);
-        
-        console.log('🎬 Animated magnifier group created:', {
-            circleCount: animatedMagnifier.querySelectorAll('circle').length,
-            circlePositions: Array.from(animatedMagnifier.querySelectorAll('circle')).map(c => 
-                `cx=${c.getAttribute('cx')} cy=${c.getAttribute('cy')} r=${c.getAttribute('r')}`
-            )
-        });
-        
-        // Calculate animation parameters
-        const translateX = endX - startX;
-        const translateY = endY - startY;
-        
-        // Calculate text rotation to match Parent Button angle
-        let endTextRotation = parentButtonAngle * 180 / Math.PI;
-        if (Math.cos(parentButtonAngle) < 0) endTextRotation += 180;
-        let rotationDelta = endTextRotation - textRotation;
-        while (rotationDelta > 180) rotationDelta -= 360;
-        while (rotationDelta < -180) rotationDelta += 360;
-        
-        Logger.debug(`🎬 Magnifier → Parent Button: translate(${translateX.toFixed(1)}, ${translateY.toFixed(1)}) rotate ${rotationDelta.toFixed(1)}°`);
-        
-        // Apply starting state
-        animatedMagnifier.style.transformOrigin = `${startX}px ${startY}px`;
-        animatedMagnifier.style.transform = 'translate(0, 0)';
-        animatedMagnifier.style.transition = 'none';
-        
-        // Force reflow
-        animatedMagnifier.getBoundingClientRect();
-        
-        // Start animation
-        setTimeout(() => {
-            console.log('🎬 Starting magnifier animation with CSS transform');
-            animatedMagnifier.style.transition = 'transform 600ms ease-in-out, opacity 600ms ease-in-out';
-            animatedMagnifier.style.transform = `translate(${translateX}px, ${translateY}px)`;
-            animatedMagnifier.style.opacity = '0.5';
-            
-            // Clean up
-            setTimeout(() => {
-                console.log('🎬 Magnifier animation complete, removing element');
-                animatedMagnifier.remove();
-                if (magnifierRing) {
-                    magnifierRing.style.display = '';
-                }
-                Logger.debug('🎬 Magnifier animation complete');
-            }, 600);
-        }, 10);
-        
-        // Animate Parent Button off-screen
-        const parentButtonGroup = document.getElementById('parentButtonGroup');
-        if (parentButtonGroup && !parentButtonGroup.classList.contains('hidden')) {
-            Logger.debug('🎬 Animating Parent Button off-screen');
-            
-            parentButtonGroup.style.transition = 'transform 600ms ease-in-out, opacity 600ms ease-in-out';
-            parentButtonGroup.style.opacity = '0';
-            
-            // Move off-screen (further along 135° angle)
-            const offScreenDistance = LSd * 0.5;
-            const currentTransform = parentButtonGroup.getAttribute('transform');
-            const translateMatch = currentTransform && currentTransform.match(/translate\(([-\d.]+),\s*([-\d.]+)\)/);
-            
-            if (translateMatch) {
-                const currentX = parseFloat(translateMatch[1]);
-                const currentY = parseFloat(translateMatch[2]);
-                const newX = currentX + offScreenDistance * Math.cos(parentButtonAngle);
-                const newY = currentY + offScreenDistance * Math.sin(parentButtonAngle);
-                
-                parentButtonGroup.setAttribute('transform', `translate(${newX}, ${newY})`);
-            }
-            
-            // Reset after animation
-            setTimeout(() => {
-                parentButtonGroup.style.transition = '';
-                parentButtonGroup.style.opacity = '';
-                parentButtonGroup.classList.add('hidden');
-            }, 600);
-        }
+        this.animation.animateMagnifierToParentButton(clickedItem, this.selectedFocusItem);
     }
     
     /**
@@ -2075,219 +1876,12 @@ class MobileRenderer {
      * @param {Function} onComplete - Callback when all animations complete
      */
     animateSiblingsToFocusRing(clickedItem, nodePositions, onComplete) {
-        Logger.debug('🎬 Starting sibling migration animation');
-        
-        // Get siblings array to determine Focus Ring positions
         const allSiblings = this.currentChildItems || [];
-        if (allSiblings.length === 0) {
-            Logger.warn('No siblings found for animation');
-            if (onComplete) onComplete();
-            return;
-        }
-        
-        // Calculate Focus Ring parameters
-        const clickedIndex = this.findItemIndexInArray(clickedItem, allSiblings, clickedItem.__level);
-        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-        const middleIndex = (allSiblings.length - 1) / 2;
-        const centerOffset = (clickedIndex - middleIndex) * angleStep;
-        
-        const centerAngle = this.viewport.getCenterAngle();
-        const adjustedCenterAngle = centerAngle + centerOffset;
-        const arcParams = this.viewport.getArcParameters();
-        
-        Logger.debug(`🎬 Focus Ring params: clickedIndex=${clickedIndex}, centerOffset=${(centerOffset * 180 / Math.PI).toFixed(1)}°`);
-        
-        const mainGroup = document.getElementById('mainGroup');
-        const animatedNodes = [];
-        
-        // Create animated clones for each sibling
-        nodePositions.forEach(nodePos => {
-            // Find this node's item in siblings array
-            const siblingIndex = allSiblings.findIndex(sib => sib.key === nodePos.key);
-            if (siblingIndex === -1) {
-                Logger.warn(`Node ${nodePos.key} not found in siblings array`);
-                return;
-            }
-            
-            const siblingItem = allSiblings[siblingIndex];
-            
-            // Calculate Focus Ring position for this sibling
-            const angle = adjustedCenterAngle + (middleIndex - siblingIndex) * angleStep;
-            const endPos = this.calculateFocusPosition(angle, arcParams);
-            endPos.angle = angle;
-            
-            // Clone the node for animation
-            const animatedNode = nodePos.node.cloneNode(true);
-            animatedNode.classList.add('animating-node');
-            mainGroup.appendChild(animatedNode);
-            
-            // Get the text element's existing rotation (Child Pyramid text is pre-rotated)
-            const textElement = animatedNode.querySelector('text');
-            let textStartRotation = 0;
-            if (textElement) {
-                const transformAttr = textElement.getAttribute('transform');
-                const rotateMatch = transformAttr && transformAttr.match(/rotate\(([-\d.]+)/);
-                if (rotateMatch) {
-                    textStartRotation = parseFloat(rotateMatch[1]);
-                }
-            }
-            
-            // Calculate end rotation for Focus Ring (same logic as updateFocusItemText)
-            let textEndRotation = angle * 180 / Math.PI;
-            if (Math.cos(angle) < 0) {
-                textEndRotation += 180;
-            }
-            
-            // Calculate the rotation delta for the text (not the whole group)
-            let textRotationDelta = textEndRotation - textStartRotation;
-            
-            // Normalize to [-180, 180] range to take shortest path
-            while (textRotationDelta > 180) textRotationDelta -= 360;
-            while (textRotationDelta < -180) textRotationDelta += 360;
-            
-            const translateX = endPos.x - nodePos.startX;
-            const translateY = endPos.y - nodePos.startY;
-            
-            // Determine if this is the clicked node (will be centered at Magnifier)
-            const isClickedNode = siblingItem.key === clickedItem.key;
-            
-            Logger.debug(`🎬 Node ${siblingItem.name}: translate(${translateX.toFixed(1)}, ${translateY.toFixed(1)}) rotate ${textRotationDelta.toFixed(1)}° ${isClickedNode ? '[CLICKED - will magnify]' : ''}`);
-            
-            // Get circle element for radius animation
-            const circleElement = animatedNode.querySelector('.node');
-            const startRadius = circleElement ? parseFloat(circleElement.getAttribute('r')) : MOBILE_CONFIG.RADIUS.CHILD_NODE;
-            const endRadius = isClickedNode ? MOBILE_CONFIG.RADIUS.MAGNIFIED : MOBILE_CONFIG.RADIUS.UNSELECTED;
-            
-            // Apply starting state
-            animatedNode.style.transformOrigin = `${nodePos.startX}px ${nodePos.startY}px`;
-            animatedNode.style.transform = 'translate(0, 0) rotate(0deg)';
-            animatedNode.style.transition = 'none';
-            
-            // Store animation data
-            animatedNodes.push({
-                node: animatedNode,
-                circle: circleElement,
-                translateX,
-                translateY,
-                rotationDelta: textRotationDelta,
-                startRadius,
-                endRadius,
-                itemName: siblingItem.name  // For logging
-            });
-        });
-        
-        // Force reflow
-        if (animatedNodes.length > 0) {
-            animatedNodes[0].node.getBoundingClientRect();
-        }
-        
-        // Save animated nodes for potential OUT animation reuse - push to stack
-        const currentLevel = allSiblings[0]?.__level || 'unknown';
-        this.animatedNodesStack.push({
-            level: currentLevel,
-            nodes: animatedNodes
-        });
-        console.log(`🎬 Saved ${animatedNodes.length} animated nodes for level "${currentLevel}" (stack depth: ${this.animatedNodesStack.length})`);
-        console.log('🎬⏰ IN animation setup complete at timestamp:', performance.now().toFixed(2), 'ms');
-        
-        const finalizeAnimatedNodes = () => {
-            animatedNodes.forEach((anim, index) => {
-                const computedTransform = window.getComputedStyle(anim.node).transform;
-                console.log(`🎬🏁 IN[${index}] ${anim.itemName || 'unknown'} final computed transform: ${computedTransform}`);
-                anim.node.style.opacity = '0';
-            });
-            console.log('🎬 IN animation END: Child Pyramid → Focus Ring');
-            console.log('🎬⏰ Timestamp:', performance.now().toFixed(2), 'ms');
-            if (onComplete) onComplete();
-        };
-
-        const handlePostAnimation = () => {
-            if (this.loopInOutDebugFlag) {
-                this.runInOutInDebugLoop(animatedNodes, finalizeAnimatedNodes);
-            } else {
-                finalizeAnimatedNodes();
-            }
-        };
-
-        // Start all animations - simple IN without demonstration loop
-        setTimeout(() => {
-            console.log('🎬 IN animation START: Child Pyramid → Focus Ring');
-            animatedNodes.forEach(anim => {
-                anim.node.style.transition = 'transform 600ms ease-in-out';
-                anim.node.style.transform = `translate(${anim.translateX}px, ${anim.translateY}px) rotate(${anim.rotationDelta}deg)`;
-                
-                // Animate circle radius
-                if (anim.circle && anim.startRadius !== anim.endRadius) {
-                    anim.circle.style.transition = 'r 600ms ease-in-out';
-                    anim.circle.setAttribute('r', anim.endRadius);
-                }
-            });
-            
-            // Do NOT remove nodes - keep them for potential OUT animation
-            setTimeout(handlePostAnimation, 600);
-        }, 10);
-
+        this.animation.animateSiblingsToFocusRing(clickedItem, nodePositions, allSiblings, onComplete);
     }
 
     runInOutInDebugLoop(animatedNodes, done) {
-        if (!animatedNodes || animatedNodes.length === 0) {
-            done();
-            return;
-        }
-
-        console.log('🎬 LOOP playback initiated (Child Pyramid ↔ Focus Ring)');
-
-        const phases = [
-            {
-                label: 'OUT (loop)',
-                transformFn: () => 'translate(0px, 0px) rotate(0deg)',
-                radiusProp: 'startRadius'
-            },
-            {
-                label: 'IN (loop)',
-                transformFn: (anim) => `translate(${anim.translateX}px, ${anim.translateY}px) rotate(${anim.rotationDelta}deg)`,
-                radiusProp: 'endRadius'
-            }
-        ];
-
-        let phaseIndex = 0;
-
-        const startPhase = () => {
-            if (phaseIndex >= phases.length) {
-                animatedNodes.forEach(anim => {
-                    anim.node.style.opacity = '0';
-                });
-                console.log('🎬 LOOP sequence complete (IN/OUT/IN)');
-                done();
-                return;
-            }
-
-            const phase = phases[phaseIndex];
-            console.log(`🎬 LOOP animation START: ${phase.label}`);
-            animatedNodes.forEach(anim => {
-                anim.node.style.opacity = '1';
-                anim.node.style.transition = 'transform 600ms ease-in-out';
-                anim.node.style.transform = phase.transformFn(anim);
-                const radiusValue = anim[phase.radiusProp];
-                if (anim.circle && typeof radiusValue === 'number') {
-                    anim.circle.style.transition = 'r 600ms ease-in-out';
-                    anim.circle.setAttribute('r', radiusValue);
-                }
-            });
-
-            setTimeout(() => {
-                console.log(`🎬 LOOP animation END: ${phase.label}`);
-                phaseIndex += 1;
-                startPhase();
-            }, 600);
-        };
-
-        // Ensure nodes remain visible for playback
-        animatedNodes.forEach(anim => {
-            anim.node.style.opacity = '1';
-        });
-
-        startPhase();
+        this.animation.runInOutInDebugLoop(animatedNodes, done);
     }
 
     /**
@@ -2300,71 +1894,12 @@ class MobileRenderer {
      * @param {Function} onComplete - Callback after animation completes
      */
     animateFocusRingToChildPyramid(focusItems, clonedNodes, onComplete) {
-        console.log('🎬🎬🎬 OUT MIGRATION FUNCTION CALLED');
-        console.log('🎬 focusItems:', focusItems?.length);
-        console.log('🎬 animatedNodesStack depth:', this.animatedNodesStack.length);
-        Logger.debug('🎬 Starting OUT migration: Focus Ring → Child Pyramid');
-        
-        if (!focusItems || focusItems.length === 0) {
-            console.log('🎬❌ No focus items for OUT animation');
-            Logger.warn('No focus items for OUT animation');
-            if (onComplete) onComplete();
-            return;
-        }
-        
-        // Pop the most recent animated nodes from stack (LIFO - last in, first out)
-        if (this.animatedNodesStack.length === 0) {
-            console.log('🎬❌ No saved animated nodes in stack for OUT animation');
-            Logger.warn('No saved animated nodes for OUT animation');
-            if (onComplete) onComplete();
-            return;
-        }
-        
-        const stackEntry = this.animatedNodesStack.pop();
-        const animatedNodes = stackEntry.nodes;
-        console.log(`🎬✓ Popped ${animatedNodes.length} animated nodes from level "${stackEntry.level}" (remaining stack depth: ${this.animatedNodesStack.length})`);
-        
-        // Make nodes visible and animate back to Child Pyramid (reverse of IN animation)
-        setTimeout(() => {
-            console.log('🎬 Starting OUT animation - animating to origin (0, 0)');
-            animatedNodes.forEach(anim => {
-                // Make visible first
-                anim.node.style.opacity = '1';
-                anim.node.style.transition = 'transform 600ms ease-in-out, opacity 0ms';
-                anim.node.style.transform = `translate(0, 0) rotate(0deg)`;
-                
-                // Animate circle radius back to Child Pyramid size
-                if (anim.circle && anim.startRadius !== anim.endRadius) {
-                    anim.circle.style.transition = 'r 600ms ease-in-out';
-                    anim.circle.setAttribute('r', anim.startRadius);
-                }
-            });
-            
-            // Clean up when animation completes - remove nodes to allow fresh Child Pyramid rendering
-            setTimeout(() => {
-                console.log('🎬 OUT animation complete - removing animated nodes');
-                console.log('🎬🔍 BEFORE removing animated nodes:');
-                console.log('  childRingGroup children:', this.elements.childRingGroup?.children.length || 0);
-                console.log('  childRingGroup hidden:', this.elements.childRingGroup?.classList.contains('hidden'));
-                
-                // Remove the animated nodes - they block new Child Pyramid content
-                animatedNodes.forEach((anim, index) => {
-                    const itemName = anim.node.getAttribute('data-item') || `node-${index}`;
-                    console.log(`🎬🗑️ Removing animated node[${index}]: ${itemName}`);
-                    anim.node.remove();
-                });
-                
-                console.log('🎬🔍 AFTER removing animated nodes:');
-                console.log('  childRingGroup children:', this.elements.childRingGroup?.children.length || 0);
-                console.log('  childRingGroup hidden:', this.elements.childRingGroup?.classList.contains('hidden'));
-                
-                // Nodes are now removed from stack, no need to clear lastAnimatedNodes
-                Logger.debug('🎬 OUT migration animation complete, nodes removed');
-                console.log('🎬 OUT animation complete, animated nodes removed from DOM');
-                console.log('🎬 Child Pyramid can now render fresh content for selected Focus Ring item');
-                if (onComplete) onComplete();
-            }, 600);
-        }, 10);
+        this.animation.animateFocusRingToChildPyramid(
+            focusItems,
+            this.elements.focusRingGroup,
+            this.elements.magnifier,
+            onComplete
+        );
     }
     
     /**

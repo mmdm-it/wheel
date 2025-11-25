@@ -10,6 +10,43 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Split architecture Phase 2: Dual loader implementation
 - Multi-volume validation
 
+## [0.8.10] - 2025-11-25
+
+### Changed
+- **Text Positioning Simplification**: Magnifier and Parent Button text now both centered over their circles with zero offset
+  - Magnifier selected text: `text-anchor='middle'`, positioned at circle center (no offset)
+  - Parent Button text: `text-anchor='middle'`, positioned at circle center (0.9 × LSd × √2 from hub at 135°)
+  - Eliminates previous 72px and 47px offsets for cleaner, more maintainable positioning
+- **Stage 3 Animation Refactor**: Simplified Magnifier → Parent Button animation
+  - Text and circle both start at Magnifier position, end at Parent Button position
+  - Smooth interpolation of position, size (20→16px), weight (bold→600), and rotation
+  - No group transforms or complex offset calculations needed
+  - Text stays centered over circle throughout entire animation
+
+### Technical Notes
+- Focus ring selected item text now uses `offset = 0` instead of `-(radius + 50)`
+- Parent Button text calculation simplified from dual-radius approach to single position with zero offset
+- Animation creates single group with circle and text, both animating from start to end coordinates
+- Text anchor consistency: both Magnifier and Parent Button use 'middle' for selected/active text
+
+## [0.8.9] - 2025-11-25
+
+### Fixed
+- Parent Button text now shows only when button is active (clickable), hidden when disabled at top level
+- Parent Button line to Magnifier only visible when button circle is visible
+- OUT animation visual cleanup: Focus Ring nodes and Magnifier stroke now hidden during animation (gray band remains visible)
+
+### Changed
+- Parent Button displays parent name text when navigating to sub-levels
+- Parent Button line drawing includes visibility guard to prevent line when circle hidden
+
+### Technical Notes
+- Parent Button text positioned at radius 0.95 × LSd × √2, rotated to align with 135° angle
+- Text visibility controlled by `display: none` when button disabled (at top level)
+- OUT animation now hides Focus Ring node elements (opacity: 0) while preserving background band (#focusRingBackground)
+- Magnifier stroke hidden via `style.opacity = '0'` during OUT animation, restored by `positionMagnifyingRing()`
+- Unified visual pattern: clean transition with only animated clones visible during migration
+
 ## [0.8.8] - 2025-11-24
 
 ### Fixed
