@@ -10,6 +10,44 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Split architecture Phase 2: Dual loader implementation
 - Multi-volume validation
 
+## [0.8.8] - 2025-11-24
+
+### Fixed
+- Hide existing Child Pyramid before OUT animation (top nav path)
+- Prevents "TEST ENGINE 10" family node from appearing alongside animated cylinder nodes
+- Now both navigation paths use same pattern: hide old Child Pyramid → OUT animation → show new Child Pyramid
+
+### Technical Notes
+- Issue: Child Pyramid at family level ("TEST ENGINE 10") remained visible during OUT animation back to manufacturer level
+- This created duplicate display: family-level Child Pyramid + animating cylinder nodes → manufacturer cylinders
+- Solution: Call `hideChildPyramid()` before starting OUT animation
+- Unified pattern ensures clean visual transition without overlap
+
+## [0.8.7] - 2025-11-24
+
+### Fixed
+- Eliminated duplicate Child Pyramid display after Parent Button OUT animation (top nav path)
+- Removed redundant `showChildPyramid()` call - now handled exclusively by `updateFocusRingPositions()`
+
+### Technical Notes
+- Issue: Child Pyramid displayed twice - once manually after OUT animation, once by `updateFocusRingPositions()`
+- Solution: Rely solely on `updateFocusRingPositions()` with `forceImmediateFocusSettlement` flag
+- Unified Child Pyramid display pattern: OUT animation cleanup → `updateFocusRingPositions()` → automatic Child Pyramid rendering
+- Eliminates visual flicker and duplicate nodes during navigation
+
+## [0.8.6] - 2025-11-24
+
+### Fixed
+- OUT animation now works correctly at all hierarchy levels
+- Replaced single `lastAnimatedNodes` with `animatedNodesStack` to maintain animation state per level
+- Stack-based (LIFO) architecture properly handles multi-level navigation IN→IN→OUT→OUT
+
+### Technical Notes
+- Issue: Single `lastAnimatedNodes` reference was overwritten on each IN animation
+- Solution: Stack of `{level, nodes}` objects - push on IN, pop on OUT
+- Each hierarchy level now maintains its own animated nodes for proper reversal
+- Enables correct OUT animations regardless of how deep you've navigated
+
 ## [0.8.5] - 2025-11-24
 
 ### Fixed
