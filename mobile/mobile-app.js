@@ -743,43 +743,21 @@ class MobileCatalogApp {
             
             Logger.debug(`🔼 Top level index: ${topLevelIndex}, centerOffset: ${centerOffset}`);
             
-            // Prepare Child Pyramid data for display AFTER animation
-            console.log('🔼🔼 Preparing Child Pyramid data for display AFTER OUT animation');
-            const selectedParent = selectedTopLevel; // The parent manufacturer (Lockwood-Ash)
-            
-            // Get the cylinders for the selected manufacturer to show in Child Pyramid
-            const childLevel = this.renderer.getNextHierarchyLevel(topNavLevel); // 'cylinder'
-            const childItems = this.renderer.getChildItemsForLevel(selectedParent, childLevel);
-            console.log('🔼🔼 Prepared child items for Child Pyramid:', childItems?.length || 0, childLevel);
-            
-            // Check current Child Pyramid state BEFORE animation
-            const childPyramidVisible = this.renderer.elements.childRingGroup && !this.renderer.elements.childRingGroup.classList.contains('hidden');
-            const childPyramidNodeCount = this.renderer.elements.childRingGroup?.querySelectorAll('.nzone-circle').length || 0;
-            console.log('🔼🔼 BEFORE OUT animation:');
-            console.log('  Child Pyramid visible:', childPyramidVisible);
-            console.log('  Child Pyramid node count:', childPyramidNodeCount);
-            
             // OUT MIGRATION ANIMATION for top nav level
             console.log('🔼🔼 STARTING OUT ANIMATION (top nav)');
+            
+            // Hide current Child Pyramid before OUT animation (prevents duplicate display)
+            this.renderer.childPyramid.hide();
+            this.renderer.clearFanLines();
+            
             this.isAnimating = true;
             
             this.renderer.animateFocusRingToChildPyramid(currentFocusRingItems, clonedNodes, () => {
                 console.log('🔼🔼 OUT animation complete (top nav)');
                 
-                // NOW show the Child Pyramid AFTER animation completes
-                if (childItems && childItems.length > 0) {
-                    console.log('🔼🔼 NOW showing Child Pyramid AFTER OUT animation complete');
-                    this.renderer.childPyramid.showChildPyramid(childItems, selectedParent);
-                    console.log('🔼🔼 Child Pyramid now showing', childItems.length, 'items');
-                }
-                
-                // Check Child Pyramid state after OUT animation
-                const childPyramidStillVisible = this.renderer.elements.childRingGroup && !this.renderer.elements.childRingGroup.classList.contains('hidden');
-                const childPyramidNodesAfter = this.renderer.elements.childRingGroup?.querySelectorAll('.nzone-circle').length || 0;
-                console.log('🔼📸 AFTER OUT animation:');
-                console.log('  Child Pyramid visible:', childPyramidStillVisible);
-                console.log('  Child Pyramid node count:', childPyramidNodesAfter);
-                console.log('🔼📸 Fresh Child Pyramid displayed after animation');
+                // DO NOT manually call showChildPyramid() here - updateFocusRingPositions() will handle it
+                // with forceImmediateFocusSettlement flag ensuring immediate display
+                console.log('🔼🔼 Child Pyramid will be shown by updateFocusRingPositions()');
                 
                 // Clear fan lines during transition
                 this.renderer.clearFanLines();
@@ -866,16 +844,16 @@ class MobileCatalogApp {
 
         Logger.debug(`🔼 Parent index: ${parentIndex}, centerOffset: ${centerOffset}`);
 
-        // Show the Child Pyramid for the parent level BEFORE OUT animation
-        console.log('🔼🔼 Showing Child Pyramid for parent level BEFORE OUT animation');
+        // Hide current Child Pyramid before OUT animation to prevent duplicates
+        console.log('🔼🔼 Hiding current Child Pyramid before OUT animation');
+        this.renderer.elements.childRingGroup.classList.add('hidden');
+        this.renderer.clearFanLines();
+
+        // Prepare the Child Pyramid data for the parent level (will show AFTER animation)
+        console.log('🔼🔼 Preparing Child Pyramid for parent level (to show after OUT animation)');
         const childLevel = this.renderer.getNextHierarchyLevel(parentLevel);
         const childItems = this.renderer.getChildItemsForLevel(selectedParent, childLevel);
         console.log('🔼🔼 Child items for Child Pyramid:', childItems?.length || 0, childLevel);
-        
-        if (childItems && childItems.length > 0) {
-            this.renderer.childPyramid.showChildPyramid(childItems, selectedParent);
-            console.log('🔼🔼 Child Pyramid now showing', childItems.length, 'items');
-        }
 
         // OUT MIGRATION ANIMATION
         console.log('🔼🔼 STARTING OUT ANIMATION (general parent nav)');
@@ -884,7 +862,14 @@ class MobileCatalogApp {
         this.renderer.animateFocusRingToChildPyramid(currentFocusRingItems, clonedNodes, () => {
             console.log('🔼🔼 OUT animation complete (general parent nav)');
 
-            // Don't hide child pyramid - let it stay visible
+            // NOW show the Child Pyramid for the parent level AFTER OUT animation
+            if (childItems && childItems.length > 0) {
+                console.log('🔼🔼 NOW showing Child Pyramid AFTER OUT animation');
+                this.renderer.childPyramid.showChildPyramid(childItems, selectedParent);
+                console.log('🔼🔼 Child Pyramid now showing', childItems.length, 'items');
+            }
+
+            // Clear fan lines (will be redrawn by showChildContentForFocusItem)
             this.renderer.clearFanLines();
 
             this.setupTouchRotation(parentSiblings);

@@ -142,7 +142,8 @@ When Parent Button is clicked:
 - **SVG Positions**: Set via `transform` attribute on `<g>` elements
 - **CSS Transforms**: Applied via `style.transform` for animation
 - **Transform Origin**: Set to node's SVG position for rotation around self
-- **State Persistence**: Animated nodes stay in DOM between IN/OUT for seamless reversal
+- **State Persistence**: Animated nodes stored in stack per hierarchy level for multi-level navigation
+- **Stack Management**: Push `{level, nodes}` on IN animation, pop on OUT animation (LIFO)
 - **Coordinate System**: All calculations in SVG viewport coordinates (origin at center)
 
 ### Technical Implementation

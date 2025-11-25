@@ -37,8 +37,8 @@ class MobileRenderer {
     this.detailSectorAnimating = false;
     this.isAnimating = false; // Block clicks during node migration animations
         
-        // Store animated nodes for OUT migration reuse
-        this.lastAnimatedNodes = null;
+        // Store animated nodes for OUT migration reuse - stack per hierarchy level
+        this.animatedNodesStack = []; // Array of {level, nodes} objects
         
         // State
         this.selectedTopLevel = null;
@@ -2181,9 +2181,13 @@ class MobileRenderer {
             animatedNodes[0].node.getBoundingClientRect();
         }
         
-        // Save animated nodes for potential OUT animation reuse
-        this.lastAnimatedNodes = animatedNodes;
-        console.log('🎬 Saved', animatedNodes.length, 'animated nodes for potential OUT reuse');
+        // Save animated nodes for potential OUT animation reuse - push to stack
+        const currentLevel = allSiblings[0]?.__level || 'unknown';
+        this.animatedNodesStack.push({
+            level: currentLevel,
+            nodes: animatedNodes
+        });
+        console.log(`🎬 Saved ${animatedNodes.length} animated nodes for level "${currentLevel}" (stack depth: ${this.animatedNodesStack.length})`);
         console.log('🎬⏰ IN animation setup complete at timestamp:', performance.now().toFixed(2), 'ms');
         
         const finalizeAnimatedNodes = () => {
@@ -2298,7 +2302,7 @@ class MobileRenderer {
     animateFocusRingToChildPyramid(focusItems, clonedNodes, onComplete) {
         console.log('🎬🎬🎬 OUT MIGRATION FUNCTION CALLED');
         console.log('🎬 focusItems:', focusItems?.length);
-        console.log('🎬 lastAnimatedNodes:', this.lastAnimatedNodes?.length);
+        console.log('🎬 animatedNodesStack depth:', this.animatedNodesStack.length);
         Logger.debug('🎬 Starting OUT migration: Focus Ring → Child Pyramid');
         
         if (!focusItems || focusItems.length === 0) {
@@ -2308,16 +2312,17 @@ class MobileRenderer {
             return;
         }
         
-        // Use saved animated nodes from IN animation
-        if (!this.lastAnimatedNodes || this.lastAnimatedNodes.length === 0) {
-            console.log('🎬❌ No saved animated nodes for OUT animation');
+        // Pop the most recent animated nodes from stack (LIFO - last in, first out)
+        if (this.animatedNodesStack.length === 0) {
+            console.log('🎬❌ No saved animated nodes in stack for OUT animation');
             Logger.warn('No saved animated nodes for OUT animation');
             if (onComplete) onComplete();
             return;
         }
         
-        const animatedNodes = this.lastAnimatedNodes;
-        console.log('🎬✓ Reusing', animatedNodes.length, 'saved animated nodes');
+        const stackEntry = this.animatedNodesStack.pop();
+        const animatedNodes = stackEntry.nodes;
+        console.log(`🎬✓ Popped ${animatedNodes.length} animated nodes from level "${stackEntry.level}" (remaining stack depth: ${this.animatedNodesStack.length})`);
         
         // Make nodes visible and animate back to Child Pyramid (reverse of IN animation)
         setTimeout(() => {
@@ -2353,7 +2358,7 @@ class MobileRenderer {
                 console.log('  childRingGroup children:', this.elements.childRingGroup?.children.length || 0);
                 console.log('  childRingGroup hidden:', this.elements.childRingGroup?.classList.contains('hidden'));
                 
-                this.lastAnimatedNodes = null; // Clear saved nodes reference
+                // Nodes are now removed from stack, no need to clear lastAnimatedNodes
                 Logger.debug('🎬 OUT migration animation complete, nodes removed');
                 console.log('🎬 OUT animation complete, animated nodes removed from DOM');
                 console.log('🎬 Child Pyramid can now render fresh content for selected Focus Ring item');
