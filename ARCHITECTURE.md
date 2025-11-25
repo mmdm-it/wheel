@@ -128,8 +128,15 @@ When Parent Button is clicked:
 2. CSS transforms reset: `translate(0, 0) rotate(0deg)`
 3. Returns nodes to original SVG `transform` attribute positions
 4. Circles animate radius back to `CHILD_NODE` size
-5. Nodes remain in DOM as Child Pyramid (no removal)
-6. Duration: 600ms ease-in-out
+5. Animated nodes removed after 600ms animation completes
+6. Fresh Child Pyramid rendered for selected Focus Ring item
+7. Duration: 600ms ease-in-out
+
+**Parent Button Navigation**:
+- `forceImmediateFocusSettlement` flag prevents rotation delay
+- `lastRotationOffset` pre-set to avoid triggering rotation detection
+- Child Pyramid remains visible throughout OUT → Focus Ring update sequence
+- Prevents flash/disappearance during navigation transitions
 
 ### Animation Architecture
 - **SVG Positions**: Set via `transform` attribute on `<g>` elements

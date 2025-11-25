@@ -743,23 +743,16 @@ class MobileCatalogApp {
             
             Logger.debug(`🔼 Top level index: ${topLevelIndex}, centerOffset: ${centerOffset}`);
             
-            // Show the Child Pyramid for the parent level BEFORE OUT animation
-            // This ensures the underlying nodes are in place when animated clones disappear
-            console.log('🔼🔼 Showing Child Pyramid for parent level BEFORE OUT animation');
-            const parentSiblings = topLevelItems; // All manufacturers at top level
+            // Prepare Child Pyramid data for display AFTER animation
+            console.log('🔼🔼 Preparing Child Pyramid data for display AFTER OUT animation');
             const selectedParent = selectedTopLevel; // The parent manufacturer (Lockwood-Ash)
             
             // Get the cylinders for the selected manufacturer to show in Child Pyramid
             const childLevel = this.renderer.getNextHierarchyLevel(topNavLevel); // 'cylinder'
             const childItems = this.renderer.getChildItemsForLevel(selectedParent, childLevel);
-            console.log('🔼🔼 Child items for Child Pyramid:', childItems?.length || 0, childLevel);
+            console.log('🔼🔼 Prepared child items for Child Pyramid:', childItems?.length || 0, childLevel);
             
-            if (childItems && childItems.length > 0) {
-                this.renderer.childPyramid.showChildPyramid(childItems, selectedParent); // Show cylinders
-                console.log('🔼🔼 Child Pyramid now showing', childItems.length, 'items');
-            }
-            
-            // Check current Child Pyramid state
+            // Check current Child Pyramid state BEFORE animation
             const childPyramidVisible = this.renderer.elements.childRingGroup && !this.renderer.elements.childRingGroup.classList.contains('hidden');
             const childPyramidNodeCount = this.renderer.elements.childRingGroup?.querySelectorAll('.nzone-circle').length || 0;
             console.log('🔼🔼 BEFORE OUT animation:');
@@ -773,16 +766,22 @@ class MobileCatalogApp {
             this.renderer.animateFocusRingToChildPyramid(currentFocusRingItems, clonedNodes, () => {
                 console.log('🔼🔼 OUT animation complete (top nav)');
                 
+                // NOW show the Child Pyramid AFTER animation completes
+                if (childItems && childItems.length > 0) {
+                    console.log('🔼🔼 NOW showing Child Pyramid AFTER OUT animation complete');
+                    this.renderer.childPyramid.showChildPyramid(childItems, selectedParent);
+                    console.log('🔼🔼 Child Pyramid now showing', childItems.length, 'items');
+                }
+                
                 // Check Child Pyramid state after OUT animation
                 const childPyramidStillVisible = this.renderer.elements.childRingGroup && !this.renderer.elements.childRingGroup.classList.contains('hidden');
                 const childPyramidNodesAfter = this.renderer.elements.childRingGroup?.querySelectorAll('.nzone-circle').length || 0;
                 console.log('🔼📸 AFTER OUT animation:');
                 console.log('  Child Pyramid visible:', childPyramidStillVisible);
                 console.log('  Child Pyramid node count:', childPyramidNodesAfter);
-                console.log('🔼📸 Animated nodes removed, Focus Ring will appear');
+                console.log('🔼📸 Fresh Child Pyramid displayed after animation');
                 
-                // DON'T hide child pyramid - let it stay visible so nodes appear to settle
-                // The Child Pyramid will be updated when navigating again
+                // Clear fan lines during transition
                 this.renderer.clearFanLines();
             
                 // Setup rotation for top level
@@ -798,9 +797,13 @@ class MobileCatalogApp {
             }
             
             console.log('🔼🔼 About to call updateFocusRingPositions - NEW NODES WILL APPEAR');
-            this.renderer.updateFocusRingPositions(centerOffset);
-            console.log('🔼🔼 updateFocusRingPositions complete');
+            // Set lastRotationOffset BEFORE updateFocusRingPositions to prevent Child Pyramid hiding
             this.renderer.lastRotationOffset = centerOffset;
+            // Force immediate settlement to prevent Child Pyramid hiding during updateFocusRingPositions
+            this.renderer.forceImmediateFocusSettlement = true;
+            this.renderer.updateFocusRingPositions(centerOffset);
+            this.renderer.forceImmediateFocusSettlement = false; // Reset flag
+            console.log('🔼🔼 updateFocusRingPositions complete');
             this.renderer.selectedFocusItem = selectedTopLevel;
             this.renderer.activeType = topNavLevel;
             this.renderer.buildActivePath(selectedTopLevel);

@@ -452,44 +452,56 @@
                                 "year_founded": 1922,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": [
-                                        {
-                                            "engine_model": "LDW 702",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "LDW 1003",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        }
-                                    ],
-                                    "2": [
-                                        {
-                                            "engine_model": "LDW 1204",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        },
-                                        {
-                                            "engine_model": "LDW 1404",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        }
-                                    ],
-                                    "3": [
-                                        {
-                                            "engine_model": "LDW 2204",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        }
-                                    ],
-                                    "4": [
-                                        {
-                                            "engine_model": "LDW 2004",
-                                            "year_introduced": null,
-                                            "year_discontinued": null
-                                        }
-                                    ]
+                                    "1": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "engine_model": "LDW 702",
+                                                "year_introduced": null,
+                                                "year_discontinued": null
+                                            },
+                                            {
+                                                "engine_model": "LDW 1003",
+                                                "year_introduced": null,
+                                                "year_discontinued": null
+                                            }
+                                        ]
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": [
+                                            {
+                                                "engine_model": "LDW 1204",
+                                                "year_introduced": null,
+                                                "year_discontinued": null
+                                            },
+                                            {
+                                                "engine_model": "LDW 1404",
+                                                "year_introduced": null,
+                                                "year_discontinued": null
+                                            }
+                                        ]
+                                    },
+                                    "3": {
+                                        "sort_number": 3,
+                                        "models": [
+                                            {
+                                                "engine_model": "LDW 2204",
+                                                "year_introduced": null,
+                                                "year_discontinued": null
+                                            }
+                                        ]
+                                    },
+                                    "4": {
+                                        "sort_number": 4,
+                                        "models": [
+                                            {
+                                                "engine_model": "LDW 2004",
+                                                "year_introduced": null,
+                                                "year_discontinued": null
+                                            }
+                                        ]
+                                    }
                                 },
                                 "sort_number": 55
                             },

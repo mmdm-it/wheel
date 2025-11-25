@@ -10,6 +10,18 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Split architecture Phase 2: Dual loader implementation
 - Multi-volume validation
 
+## [0.8.5] - 2025-11-24
+
+### Fixed
+- Child Pyramid no longer flashes/disappears during Parent Button OUT animation
+- Fixed rotation detection preventing Child Pyramid display after OUT animation completes
+- Set `forceImmediateFocusSettlement` flag to bypass rotation delay during Parent Button navigation
+
+### Technical Notes
+- Issue: `updateFocusRingPositions` was treating Parent Button navigation as user rotation
+- Solution: Set `lastRotationOffset` and `forceImmediateFocusSettlement` before calling `updateFocusRingPositions`
+- Child Pyramid now remains continuously visible during OUT animation → Focus Ring update sequence
+
 ## [0.8.4] - 2025-11-24
 
 ### Fixed
