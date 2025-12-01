@@ -23,17 +23,20 @@
             <!-- Path Lines Group -->
             <g id="pathLinesGroup"></g>
 
-            <!-- Focus Ring (hidden initially) -->
-            <g id="focusRing" class="hidden"></g>
-
             <!-- Child Ring (hidden initially) -->
             <g id="childRing" class="hidden"></g>
 
             <!-- Detail Items Ring (hidden initially) -->
             <g id="detailItems" class="hidden"></g>
             
-            <!-- Parent Button Group (in SVG, Nuc-positioned) - Last for z-ordering -->
+            <!-- Parent Button Group (in SVG, Nuc-positioned) -->
             <g id="parentButtonGroup" class="hidden">
+                <circle id="parentNodeCircle" cx="0" cy="0" r="10" fill="#3a3a3a" stroke="black" stroke-width="1" />
+                <text id="parentText" class="parent-text" x="15" y="0" text-anchor="start" dominant-baseline="middle" fill="black" font-size="16" font-weight="600">Parent</text>
+            </g>
+
+            <!-- Focus Ring (hidden initially) - LAST for z-ordering so it's clickable -->
+            <g id="focusRing" class="hidden">
                 <circle id="parentNodeCircle" cx="0" cy="0" r="10" fill="#3a3a3a" stroke="black" stroke-width="1" />
                 <text id="parentText" class="parent-text" x="15" y="0" text-anchor="start" dominant-baseline="middle" fill="black" font-size="16" font-weight="600">Parent</text>
             </g>
