@@ -123,9 +123,19 @@ g.focusItem.selected text {
     pointer-events: none;
 }
 
-/* But allow clicks on individual child pyramid items */
+/* Allow clicks only on actual rendered geometry, not the entire group */
 #childRing .child-pyramid-item {
-    pointer-events: auto;
+    pointer-events: none;
+}
+
+#childRing .child-pyramid-item .node,
+#childRing .child-pyramid-item text,
+#childRing .child-pyramid-item path {
+    pointer-events: visiblePainted;
+}
+
+#childRing .child-pyramid-item .hit-zone {
+    pointer-events: all;
 }
 
 /* Center MMdM node repositioned to top right corner */
@@ -162,6 +172,7 @@ g.focusItem.selected text {
 /* Parent button SVG styling */
 #parentButtonGroup {
     cursor: pointer;
+    pointer-events: visiblePainted;
     /* No opacity transition - keep button solid during navigation */
 }
 
@@ -188,6 +199,7 @@ g.focusItem.selected text {
     font-weight: 600;
     text-transform: uppercase;
     fill: black;
+    pointer-events: none; /* Guard: prevent text box from swallowing focus-ring clicks */
 }
 
 /* Keep button fully opaque - no hover/active fade */

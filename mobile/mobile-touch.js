@@ -46,7 +46,9 @@ class TouchRotationHandler {
         Logger.debug('Activating touch rotation controls');
         Object.entries(this.boundHandlers).forEach(([event, handler]) => {
             const eventName = event.replace(/([A-Z])/g, c => c.toLowerCase());
-            document.addEventListener(eventName, handler, { passive: false });
+            // Use passive listeners for touchstart (doesn't prevent default), non-passive for move/end (may prevent default during drag)
+            const passive = event === 'touchStart';
+            document.addEventListener(eventName, handler, { passive });
         });
         
         this.isActive = true;
@@ -247,6 +249,9 @@ class TouchRotationHandler {
         const touch = e.touches[0];
         const element = document.elementFromPoint(touch.clientX, touch.clientY);
         
+        // Return true if touch is on empty space (no element)
+        if (!element) return true;
+        
         // Don't handle touch if it's on:
         // - Top-level selection buttons
         // - Child Pyramid items (they need to handle their own clicks)
@@ -260,7 +265,7 @@ class TouchRotationHandler {
             element.closest('.levelGroup') ||
             element.classList.contains('child-pyramid-node') ||
             element.closest('.child-pyramid-item') ||
-            element.closest('#parentButton') ||
+            element.closest('#parentButtonGroup') ||
             element.id === 'magnifier' ||
             element.id === 'detailSectorLogo' ||
             element.closest('#detailItems') ||

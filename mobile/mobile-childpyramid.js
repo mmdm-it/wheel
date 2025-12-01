@@ -315,14 +315,11 @@ class MobileChildPyramid {
         
         // Touch handler for mobile devices
         hitZone.addEventListener('touchend', (e) => {
-            // Only handle if this was a tap, not the end of a drag
             if (e.changedTouches.length === 1) {
-                e.preventDefault();
-                e.stopPropagation();
                 Logger.debug(`🔺 Child Pyramid item touched: ${item.name}`);
                 this.handleChildPyramidClick(item, e);
             }
-        });
+        }, { passive: true });
         
         return g;
     }

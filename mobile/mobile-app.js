@@ -41,9 +41,15 @@ class MobileCatalogApp {
                 await this.renderer.initialize();
                 this.setupResizeHandling();
                 this.setupParentButtonHandler();
-                await this.dataManager.loadVolume(volumeParam);
-                this.volumeSelectorMode = false;
-                this.showAllFocusItems();
+                
+                // Create volume object for loadSelectedVolume
+                const volumeInfo = {
+                    filename: volumeParam,
+                    name: volumeParam.replace('.json', ''),
+                    schemaVersion: 'unknown',
+                    dataVersion: 'unknown'
+                };
+                await this.loadSelectedVolume(volumeInfo);
                 this.initialized = true;
                 return;
             }
@@ -83,6 +89,7 @@ class MobileCatalogApp {
         
         // Hide SVG and parent button
         const svg = document.getElementById('catalogSvg');
+        const copyright = document.getElementById('copyright');
         const parentButtonGroup = document.getElementById('parentButtonGroup');
         const parentNodeCircle = document.getElementById('parentNodeCircle');
         
@@ -422,9 +429,14 @@ class MobileCatalogApp {
     }
 
     animateRotationTo(targetOffset) {
-        if (!this.touchHandler) return;
+        console.log('🎯🚀 animateRotationTo START', { targetOffset });
+        if (!this.touchHandler) {
+            console.log('🎯❌ No touchHandler - aborting animation');
+            return;
+        }
 
         const startOffset = this.touchHandler.rotationOffset;
+        console.log('🎯📍 Animation params:', { startOffset, targetOffset, delta: targetOffset - startOffset });
 
         // Validate inputs
         if (isNaN(targetOffset)) {
@@ -460,6 +472,11 @@ class MobileCatalogApp {
 
             if (progress < 1) {
                 requestAnimationFrame(animate);
+            } else {
+                // Animation complete - trigger Child Pyramid update
+                console.log('🎯✅ animateRotationTo COMPLETE - calling triggerFocusSettlement');
+                Logger.debug('🎯 animateRotationTo complete - triggering settle for Child Pyramid');
+                this.renderer.triggerFocusSettlement();
             }
         };
 

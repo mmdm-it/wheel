@@ -40,6 +40,8 @@ class MobileRenderer {
     this.leafStateCache = new Map(); // Cache leaf determinations per item
     this.detailSectorAnimating = false;
     this.isAnimating = false; // Block clicks during node migration animations
+        this.parentButtonDebugAttached = false; // Guard repeated listener attachment
+        this.focusRingDebugAttached = false; // Guard repeated listener attachment
         
         // State
         this.selectedTopLevel = null;
@@ -277,7 +279,7 @@ class MobileRenderer {
             }
             touchStartPos = null;
             touchStartTime = null;
-        });
+        }, { passive: false });
         
         // Magnifier click disabled - clicking unselected nodes brings them to center
         ring.addEventListener('click', (e) => {
@@ -305,6 +307,10 @@ class MobileRenderer {
      * Triggered by clicking an unselected focus node
      */
     bringFocusNodeToCenter(focusItem) {
+        console.log('🎯🎯🎯 bringFocusNodeToCenter CALLED');
+        console.log(`🎯🔍 SEARCH: Looking for item name="${focusItem.name}" key="${focusItem.key}"`);
+        console.log(`🎯🔍 SEARCH: currentFocusItems array has ${this.currentFocusItems.length} items`);
+        
         Logger.debug('🎯🎯🎯 bringFocusNodeToCenter CALLED');
         Logger.debug('🎯 Target item:', focusItem.name);
         
@@ -314,9 +320,16 @@ class MobileRenderer {
         }
         
         // Find the index of the clicked item
-        const targetIndex = this.currentFocusItems.findIndex(item => item.key === focusItem.key);
+        console.log(`🎯🔍 SEARCH: Searching for key="${focusItem.key}" in array...`);
+        const targetIndex = this.currentFocusItems.findIndex(item => {
+            console.log(`  🎯🔍 Comparing with item name="${item.name}" key="${item.key}" match=${item.key === focusItem.key}`);
+            return item.key === focusItem.key;
+        });
+        
+        console.log(`🎯🔍 SEARCH: Result targetIndex=${targetIndex}`);
         
         if (targetIndex < 0) {
+            console.log(`🎯❌ SEARCH FAILED: Item not found in currentFocusItems`);
             Logger.warn('🎯 Clicked item not found in current focus items');
             return;
         }
@@ -328,6 +341,7 @@ class MobileRenderer {
         const middleIndex = (this.currentFocusItems.length - 1) / 2;
         const targetOffset = (targetIndex - middleIndex) * angleStep;
         
+        console.log(`🎯✅ ANIMATE: Will center [${targetIndex}] "${focusItem.name}" with offset: ${targetOffset.toFixed(3)}`);
         Logger.debug(`🎯 Centering [${targetIndex}] ${focusItem.name} with offset: ${targetOffset.toFixed(3)}`);
         
         // Animate to target position
@@ -791,9 +805,11 @@ class MobileRenderer {
     }
     
     showFocusRing() {
+        console.log('🎯🎪 showFocusRing CALLED');
         const focusRingGroup = this.elements.focusRingGroup;
         focusRingGroup.classList.remove('hidden');
         focusRingGroup.innerHTML = '';
+        this.attachFocusRingDebugLogging(focusRingGroup);
         
         // Create Focus Ring background band (visual nzone differentiation)
         this.createFocusRingBackground();
@@ -873,6 +889,40 @@ class MobileRenderer {
         
         Logger.debug('Focus Ring darker gray background band created (98% to 102%)');
     }
+
+    attachFocusRingDebugLogging(focusRingGroup) {
+        if (this.focusRingDebugAttached || !focusRingGroup) {
+            return;
+        }
+
+        const logEvent = (event) => {
+            const target = event.target;
+            const classes = target?.getAttribute('class') || 'none';
+            const tagName = target?.tagName || 'unknown';
+            let pointerEvents = 'n/a';
+            try {
+                pointerEvents = window.getComputedStyle(target).pointerEvents;
+            } catch (error) {
+                // Ignore failures on SVG elements without computed style
+            }
+
+            console.log('🎯📡 FOCUS RING EVENT', {
+                type: event.type,
+                tagName,
+                classes,
+                pointerEvents,
+                timestamp: performance.now().toFixed(2)
+            });
+        };
+
+        const focusDebugOptions = { capture: true, passive: true };
+        ['mousedown', 'mouseup', 'click', 'touchstart', 'touchend'].forEach(type => {
+            focusRingGroup.addEventListener(type, logEvent, focusDebugOptions);
+        });
+
+        this.focusRingDebugAttached = true;
+        console.log('🎯📡 Focus Ring debug listeners attached');
+    }
     
     calculateInitialRotationOffset() {
         if (!this.currentFocusItems.length) return 0;
@@ -932,6 +982,9 @@ class MobileRenderer {
     }
     
     updateFocusRingPositions(rotationOffset) {
+        console.log(`🎯🔄 updateFocusRingPositions CALLED with rotationOffset=${rotationOffset?.toFixed(3) || 'undefined'}`);
+        console.log(`🎯🔄 At start: currentFocusItems=${this.currentFocusItems?.length || 0}, allFocusItems=${this.allFocusItems?.length || 0}`);
+        
         const focusRingGroup = this.elements.focusRingGroup;
         
         // For sprocket chain: use all focus items but apply viewport filtering during rendering
@@ -1117,6 +1170,66 @@ class MobileRenderer {
         }
     }
     
+    /**
+     * Manually trigger focus settlement to show Child Pyramid for centered item
+     * Called after programmatic rotation animations complete
+     */
+    triggerFocusSettlement() {
+        console.log('🎯🎯🎯 triggerFocusSettlement CALLED');
+        Logger.debug('🎯 triggerFocusSettlement CALLED');
+        
+        // Mark as no longer rotating
+        this.isRotating = false;
+        console.log('🎯 Set isRotating = false');
+        
+        // Clear any pending settle timeout
+        if (this.settleTimeout) {
+            clearTimeout(this.settleTimeout);
+            this.settleTimeout = null;
+            console.log('🎯 Cleared pending settle timeout');
+        }
+        
+        // Get the currently selected focus item
+        if (!this.selectedFocusItem) {
+            console.log('🎯❌ No selected focus item to settle');
+            Logger.warn('🎯 No selected focus item to settle');
+            return;
+        }
+        
+        console.log('🎯 Selected focus item:', this.selectedFocusItem.name);
+        
+        // Calculate the angle for the selected item
+        const allFocusItems = this.allFocusItems.length > 0 ? this.allFocusItems : this.currentFocusItems;
+        const selectedIndex = allFocusItems.findIndex(item => item.key === this.selectedFocusItem.key);
+        
+        if (selectedIndex < 0) {
+            console.log('🎯❌ Selected focus item not found in focus items list');
+            Logger.warn('🎯 Selected focus item not found in focus items list');
+            return;
+        }
+        
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const centerAngle = this.viewport.getCenterAngle();
+        const rotationOffset = window.mobileCatalogApp?.touchHandler?.rotationOffset || 0;
+        const adjustedCenterAngle = centerAngle + rotationOffset;
+        const middleIndex = (allFocusItems.length - 1) / 2;
+        const angle = adjustedCenterAngle + (middleIndex - selectedIndex) * angleStep;
+        
+        console.log('🎯 Calling showChildContentForFocusItem for:', this.selectedFocusItem.name);
+        Logger.debug(`🎯 Settling on: ${this.selectedFocusItem.name} at index ${selectedIndex}`);
+        this.showChildContentForFocusItem(this.selectedFocusItem, angle);
+        
+        // CRITICAL FIX: Update lastRotationOffset to current rotation before refreshing positions
+        // This ensures the focus ring is refreshed with the correct centering offset
+        const currentRotationOffset = window.mobileCatalogApp?.touchHandler?.rotationOffset || 0;
+        this.lastRotationOffset = currentRotationOffset;
+        
+        // CRITICAL FIX: Refresh focus ring positions after IN migration to attach click handlers
+        // This ensures click handlers are properly attached after animation completes
+        console.log('🎯🔄 Refreshing focus ring positions after settlement');
+        this.updateFocusRingPositions(currentRotationOffset);
+    }
+    
     getSelectedFocusIndex(rotationOffset, focusCount) {
         if (focusCount === 0) return -1;
         
@@ -1218,6 +1331,8 @@ class MobileRenderer {
         g.setAttribute('transform', `translate(${position.x}, ${position.y})`);
         g.setAttribute('data-focus-key', focusItem.key);
         
+        console.log(`🎯📝 CREATE: Element for "${focusItem.name}" key="${focusItem.key}" isSelected=${isSelected}`);
+        
         const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
         circle.setAttribute('class', 'node');
         circle.setAttribute('cx', '0');
@@ -1229,12 +1344,40 @@ class MobileRenderer {
             g.classList.add('selected');
         } else {
             // Add click handler only to unselected nodes
-            g.style.cursor = 'pointer';
+            console.log(`🎯📝 HANDLER: Adding click handler for "${focusItem.name}" key="${focusItem.key}"`);
+            
+            // Add mousedown/touchstart to debug if events reach the element at all
+            g.addEventListener('mousedown', (e) => {
+                console.log(`🎯👆 MOUSEDOWN on "${focusItem.name}" key="${focusItem.key}"`);
+            });
+            g.addEventListener('touchstart', (e) => {
+                console.log(`🎯👆 TOUCHSTART on "${focusItem.name}" key="${focusItem.key}"`);
+            });
+            
             g.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
-                Logger.debug(`🎯 Focus node clicked: ${focusItem.name}`);
-                this.bringFocusNodeToCenter(focusItem);
+                
+                // Look up the item fresh from currentFocusItems using the stored key
+                const clickedKey = g.getAttribute('data-focus-key');
+                console.log(`🎯🔥 CLICK: Handler fired! clickedKey="${clickedKey}"`);
+                console.log(`🎯🔥 CLICK: this.currentFocusItems has ${this.currentFocusItems?.length || 0} items`);
+                console.log(`🎯🔥 CLICK: this.allFocusItems has ${this.allFocusItems?.length || 0} items`);
+                console.log(`🎯🔥 CLICK: currentFocusItems:`, 
+                    this.currentFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
+                console.log(`🎯🔥 CLICK: allFocusItems:`, 
+                    this.allFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
+                
+                const currentItem = this.currentFocusItems?.find(item => item.key === clickedKey);
+                
+                if (currentItem) {
+                    console.log(`🎯✅ CLICK: Found item "${currentItem.name}"`);
+                    Logger.debug(`🎯 Focus node clicked: ${currentItem.name}`);
+                    this.bringFocusNodeToCenter(currentItem);
+                } else {
+                    console.log(`🎯❌ CLICK: Key "${clickedKey}" NOT FOUND in currentFocusItems`);
+                    Logger.warn(`🎯 Clicked node key ${clickedKey} not found in current focus items`);
+                }
             });
         }
         
@@ -1540,6 +1683,14 @@ class MobileRenderer {
         const parentButtonGroup = document.getElementById('parentButtonGroup');
         const parentText = document.getElementById('parentText');
         const parentNodeCircle = document.getElementById('parentNodeCircle');
+        this.attachParentButtonDebugLogging(parentButtonGroup);
+
+        if (parentButtonGroup) {
+            parentButtonGroup.style.pointerEvents = 'visiblePainted';
+        }
+        if (parentText) {
+            parentText.style.pointerEvents = 'none';
+        }
         
         if (parentName) {
             // Check if we're at top navigation level
@@ -1577,52 +1728,6 @@ class MobileRenderer {
             // Position the group
             parentButtonGroup.setAttribute('transform', `translate(${parentButtonNuc.x}, ${parentButtonNuc.y})`);
             
-            // DEBUG: Draw line from Hub center at 135° for LSd * 2
-            const debugLine = document.getElementById('debugLine135');
-            if (debugLine) {
-                debugLine.remove();
-            }
-            const line = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'line');
-            line.setAttribute('id', 'debugLine135');
-            line.setAttribute('x1', arcParams.centerX);
-            line.setAttribute('y1', arcParams.centerY);
-            const lineLength = LSd * 2;
-            const lineEndX = arcParams.centerX + lineLength * Math.cos(parentButtonAngle);
-            const lineEndY = arcParams.centerY + lineLength * Math.sin(parentButtonAngle);
-            line.setAttribute('x2', lineEndX);
-            line.setAttribute('y2', lineEndY);
-            line.setAttribute('stroke', 'lime');
-            line.setAttribute('stroke-width', '1');
-            this.elements.mainGroup.appendChild(line);
-            
-            // DEBUG: Draw X at viewport center (Nuc origin = 0,0 in mainGroup coordinates)
-            const xSize = 10;
-            
-            const debugX1 = document.getElementById('debugX1');
-            if (debugX1) debugX1.remove();
-            const debugX2 = document.getElementById('debugX2');
-            if (debugX2) debugX2.remove();
-            
-            const x1 = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'line');
-            x1.setAttribute('id', 'debugX1');
-            x1.setAttribute('x1', -xSize);
-            x1.setAttribute('y1', -xSize);
-            x1.setAttribute('x2', xSize);
-            x1.setAttribute('y2', xSize);
-            x1.setAttribute('stroke', 'lime');
-            x1.setAttribute('stroke-width', '2');
-            this.elements.mainGroup.appendChild(x1);
-            
-            const x2 = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'line');
-            x2.setAttribute('id', 'debugX2');
-            x2.setAttribute('x1', -xSize);
-            x2.setAttribute('y1', xSize);
-            x2.setAttribute('x2', xSize);
-            x2.setAttribute('y2', -xSize);
-            x2.setAttribute('stroke', 'lime');
-            x2.setAttribute('stroke-width', '2');
-            this.elements.mainGroup.appendChild(x2);
-            
             // Update text
             parentText.textContent = parentName;
             parentText.setAttribute('x', textOffsetX.toFixed(2));
@@ -1656,11 +1761,13 @@ class MobileRenderer {
                 parentButtonGroup.setAttribute('data-disabled', 'true');
                 // Hide text when disabled
                 parentText.style.display = 'none';
+                parentButtonGroup.style.pointerEvents = 'none';
             } else {
                 parentButtonGroup.classList.remove('disabled');
                 parentButtonGroup.removeAttribute('data-disabled');
                 // Show text when active
                 parentText.style.display = '';
+                parentButtonGroup.style.pointerEvents = 'visiblePainted';
             }
             
             // Show/hide circle and line together
@@ -1688,6 +1795,7 @@ class MobileRenderer {
             parentButtonGroup.classList.add('hidden');
             parentButtonGroup.style.display = 'none';
             parentButtonGroup.removeAttribute('data-disabled');
+            parentButtonGroup.style.pointerEvents = 'none';
             
             if (parentNodeCircle) {
                 parentNodeCircle.classList.add('hidden');
@@ -1700,6 +1808,58 @@ class MobileRenderer {
             
             console.log('🟡🟡🟡 PARENT BUTTON: No parent - completely hidden');
         }
+    }
+
+    attachParentButtonDebugLogging(parentButtonGroup) {
+        if (this.parentButtonDebugAttached || !parentButtonGroup) {
+            return;
+        }
+
+        const circle = document.getElementById('parentNodeCircle');
+        const text = document.getElementById('parentText');
+
+        const logEvent = (sourceLabel) => (event) => {
+            const target = event.target;
+            const classes = target?.getAttribute('class') || 'none';
+            let rectInfo = null;
+            if (target?.getBoundingClientRect) {
+                const rect = target.getBoundingClientRect();
+                rectInfo = {
+                    width: rect.width.toFixed(2),
+                    height: rect.height.toFixed(2),
+                    left: rect.left.toFixed(2),
+                    top: rect.top.toFixed(2)
+                };
+            }
+
+            console.log(`🟡📡 ${sourceLabel} EVENT`, {
+                type: event.type,
+                targetTag: target?.tagName || 'unknown',
+                classes,
+                rect: rectInfo,
+                timestamp: performance.now().toFixed(2)
+            });
+        };
+
+        const parentDebugOptions = { capture: true, passive: true };
+        ['mousedown', 'mouseup', 'click', 'touchstart', 'touchend'].forEach(type => {
+            parentButtonGroup.addEventListener(type, logEvent('parentButtonGroup'), parentDebugOptions);
+        });
+
+        if (circle) {
+            ['mousedown', 'mouseup', 'click', 'touchstart', 'touchend'].forEach(type => {
+                circle.addEventListener(type, logEvent('parentNodeCircle'), parentDebugOptions);
+            });
+        }
+
+        if (text) {
+            ['mousedown', 'mouseup', 'click', 'touchstart', 'touchend'].forEach(type => {
+                text.addEventListener(type, logEvent('parentText'), parentDebugOptions);
+            });
+        }
+
+        this.parentButtonDebugAttached = true;
+        console.log('🟡📡 Parent Button debug listeners attached');
     }
     
     hideParentButton() {
@@ -2015,6 +2175,8 @@ class MobileRenderer {
 
         this.currentFocusItems = validatedSiblings;
         this.allFocusItems = validatedSiblings;
+        
+        console.log(`🎯🔄 SET currentFocusItems: ${validatedSiblings.length} items set:`, validatedSiblings.map(item => `"${item.name}"(key=${item.key})`).join(', '));
 
         // 3. Clear current Child Pyramid (already cleared before animation)
         this.elements.childRingGroup.innerHTML = '';
