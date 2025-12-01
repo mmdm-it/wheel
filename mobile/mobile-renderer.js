@@ -822,14 +822,22 @@ class MobileRenderer {
         
         Logger.debug(`Viewport filtering initialized: ${this.allFocusItems.length} total focus items`);
         
-        // Calculate initial rotation to center nearest focus item (original logic)
-        const initialOffset = this.calculateInitialRotationOffset();
-        Logger.debug(`Using initial rotation offset: ${initialOffset} radians (${initialOffset * 180 / Math.PI}°)`);
-        
-        this.updateFocusRingPositions(initialOffset);
-        
-        // Store the initial offset for the touch handler
-        this.initialRotationOffset = initialOffset;
+        // BUGFIX: Only calculate initial rotation offset on first load (not during navigation)
+        // During navigation, the calling code (continueChildPyramidClick) already calculated
+        // the correct centerOffset and will call updateFocusRingPositions() after this returns
+        if (!this.forceImmediateFocusSettlement) {
+            // Initial app load - use startup config to determine which item to magnify
+            const initialOffset = this.calculateInitialRotationOffset();
+            Logger.debug(`Using initial rotation offset: ${initialOffset} radians (${initialOffset * 180 / Math.PI}°)`);
+            
+            this.updateFocusRingPositions(initialOffset);
+            
+            // Store the initial offset for the touch handler
+            this.initialRotationOffset = initialOffset;
+        } else {
+            // Navigation - skip calculation, caller will position the ring
+            Logger.debug('🎯 Skipping calculateInitialRotationOffset (forceImmediateFocusSettlement=true)');
+        }
     }
     
     /**
