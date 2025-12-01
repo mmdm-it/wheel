@@ -1227,15 +1227,11 @@ class MobileRenderer {
         Logger.debug(`🎯 Settling on: ${this.selectedFocusItem.name} at index ${selectedIndex}`);
         this.showChildContentForFocusItem(this.selectedFocusItem, angle);
         
-        // CRITICAL FIX: Update lastRotationOffset to current rotation before refreshing positions
-        // This ensures the focus ring is refreshed with the correct centering offset
-        const currentRotationOffset = window.mobileCatalogApp?.touchHandler?.rotationOffset || 0;
-        this.lastRotationOffset = currentRotationOffset;
-        
-        // CRITICAL FIX: Refresh focus ring positions after IN migration to attach click handlers
-        // This ensures click handlers are properly attached after animation completes
-        console.log('🎯🔄 Refreshing focus ring positions after settlement');
-        this.updateFocusRingPositions(currentRotationOffset);
+        // BUGFIX: Removed redundant updateFocusRingPositions() call
+        // The focus ring was already positioned correctly with click handlers attached
+        // during handleChildPyramidClick() before this settlement function was called.
+        // Calling it again here was causing a race condition where DOM elements were
+        // being recreated while still settling from the animation, breaking click handlers.
     }
     
     getSelectedFocusIndex(rotationOffset, focusCount) {
