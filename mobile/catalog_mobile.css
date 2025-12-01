@@ -26,6 +26,11 @@ svg {
     display: none !important;
 }
 
+/* Animated clones during IN/OUT migration - invisible and non-blocking */
+.animating-node {
+    pointer-events: none;
+}
+
 /* Hide top-level selection in mobile version */
 #topLevel {
     display: none !important;
