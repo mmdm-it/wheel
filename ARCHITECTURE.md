@@ -18,8 +18,10 @@ mobile/
 ├── mobile-data.js              # Data loading and navigation
 ├── mobile-logger.js            # Debug logging system
 ├── mobile-renderer.js          # SVG rendering and UI updates
+├── mobile-animation.js         # Animation system (IN/OUT migrations)
 ├── mobile-touch.js             # Touch event handling
 ├── mobile-viewport.js          # Viewport calculations
+├── mobile-coordinates.js       # Coordinate system (Hub/Nuc)
 ├── mobile-childpyramid.js      # Child item preview display
 └── mobile-detailsector.js      # Content detail view
 ```
@@ -37,6 +39,18 @@ mobile/
 - Updates positions based on rotation angle
 - Manages Focus Ring, Child Pyramid, Parent Button
 - Handles UI state transitions
+
+**mobile-animation.js**
+- Manages all nzone migration animations (600ms transitions)
+- IN animations (Child Pyramid → Focus Ring)
+- OUT animations (Focus Ring → Child Pyramid)
+- Animation stack for smooth reversals (LIFO)
+- Magnifier and Parent Button position animations
+
+**mobile-coordinates.js**
+- Bilingual coordinate system (Hub polar / Nuc cartesian)
+- Coordinate transformations and conversions
+- Coordinate caching for performance
 
 **mobile-touch.js**
 - Processes touch events (start, move, end)
@@ -349,7 +363,7 @@ A desktop version exists in `desktop/` directory but uses an older JSON format a
 - Landscape mode improvements
 
 ### Known Technical Debt
-- Large renderer module (1600+ lines)
+- Large renderer module (recently refactored with animation extraction)
 - Some hardcoded domain assumptions
 - Manual volume discovery
 - Limited error recovery
