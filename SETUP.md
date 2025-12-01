@@ -24,6 +24,8 @@ git clone https://github.com/mmdm-it/wheel.git
 cd wheel
 ```
 
+**Note for Contributors:** Active development is on ext4 filesystem (`/media/howell/dev_workspace/mmdm/website/wheel`). A backup exists on FAT32 PHOTOS volume but should not be used for development. Always verify your working directory before committing.
+
 ### 2. Start a Local Server
 
 **Option A: Python (recommended)**
