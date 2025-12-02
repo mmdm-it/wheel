@@ -42,6 +42,7 @@ class MobileRenderer {
     this.isAnimating = false; // Block clicks during node migration animations
         this.parentButtonDebugAttached = false; // Guard repeated listener attachment
         this.focusRingDebugAttached = false; // Guard repeated listener attachment
+        this.showDetailSectorBoundsFlag = false; // Toggle for Detail Sector bounds diagnostic
         
         // State
         this.selectedTopLevel = null;
@@ -111,7 +112,47 @@ class MobileRenderer {
         // Note: Detail Sector circle will be created after volume loads
         // (when config is available to check hide_circle setting)
         
+        // Setup copyright click handler for diagnostic toggle
+        this.setupCopyrightDiagnosticToggle();
+        
         return true;
+    }
+    
+    /**
+     * Setup click handler on copyright notice to toggle Detail Sector bounds diagnostic
+     * Click the copyright to show/hide the lime green boundary visualization
+     */
+    setupCopyrightDiagnosticToggle() {
+        const copyright = document.getElementById('copyright');
+        if (!copyright) {
+            Logger.debug('Copyright element not found - diagnostic toggle not available');
+            return;
+        }
+        
+        copyright.style.cursor = 'pointer';
+        copyright.addEventListener('click', () => {
+            this.showDetailSectorBoundsFlag = !this.showDetailSectorBoundsFlag;
+            
+            if (this.showDetailSectorBoundsFlag) {
+                this.showDetailSectorBounds();
+                console.log('📐 Detail Sector bounds: ON');
+            } else {
+                this.hideDetailSectorBounds();
+                console.log('📐 Detail Sector bounds: OFF');
+            }
+        });
+        
+        Logger.debug('Copyright diagnostic toggle initialized - click to show/hide Detail Sector bounds');
+    }
+    
+    /**
+     * Hide the Detail Sector bounds diagnostic overlay
+     */
+    hideDetailSectorBounds() {
+        const existing = document.getElementById('detailSectorBoundsDiag');
+        if (existing) {
+            existing.remove();
+        }
     }
     
     positionMagnifyingRing() {
