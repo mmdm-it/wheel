@@ -247,7 +247,8 @@ g.focusItem.selected text {
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
-    pointer-events: none;
+    pointer-events: auto;
+    cursor: pointer;
 }
 
 /* Mobile-specific adjustments */

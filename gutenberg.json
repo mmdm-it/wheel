@@ -91,13 +91,6 @@
                                 "body": [
                                     "{{text}}"
                                 ]
-                            },
-                            {
-                                "id": "english_translation",
-                                "type": "info",
-                                "body": [
-                                    "{{translation}}"
-                                ]
                             }
                         ]
                     }

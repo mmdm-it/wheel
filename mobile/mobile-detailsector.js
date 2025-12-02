@@ -39,6 +39,74 @@ class MobileDetailSector {
     }
 
     /**
+     * Calculate the usable content bounds for the Detail Sector
+     * Returns the bounding box within the Focus Ring arc, with margins
+     */
+    getContentBounds() {
+        const viewport = this.viewport.getViewportInfo();
+        const arcParams = this.viewport.getArcParameters();
+        
+        // Viewport bounds in SVG coordinates (origin at center)
+        const halfWidth = viewport.width / 2;
+        const halfHeight = viewport.height / 2;
+        const topY = -halfHeight;
+        const rightX = halfWidth;
+        const bottomY = halfHeight;
+        const leftX = -halfWidth;
+        
+        // Focus Ring parameters
+        const ringCenterX = arcParams.centerX;
+        const ringCenterY = arcParams.centerY;
+        const ringRadius = arcParams.radius;
+        
+        // Inner edge of Focus Ring band with margin (96% to back off from 98% edge)
+        const innerRadius = ringRadius * 0.96;
+        
+        // Dynamic margins based on shorter side (SSd) - 3% of shorter side
+        const SSd = viewport.SSd;
+        const marginPercent = 0.03;
+        const topMargin = SSd * marginPercent;
+        const rightMargin = SSd * marginPercent;
+        
+        // Apply margins to viewport bounds
+        const effectiveTopY = topY + topMargin;
+        const effectiveRightX = rightX - rightMargin;
+        
+        // Find intersection of arc with effective top edge
+        const dyTop = effectiveTopY - ringCenterY;
+        const discTop = innerRadius * innerRadius - dyTop * dyTop;
+        let arcLeftAtTop = leftX;
+        if (discTop >= 0) {
+            const sqrtTop = Math.sqrt(discTop);
+            arcLeftAtTop = Math.max(leftX, ringCenterX - sqrtTop);
+        }
+        
+        // Find intersection of arc with effective right edge
+        const dxRight = effectiveRightX - ringCenterX;
+        const discRight = innerRadius * innerRadius - dxRight * dxRight;
+        let arcTopAtRight = effectiveTopY;
+        if (discRight >= 0) {
+            const sqrtRight = Math.sqrt(discRight);
+            arcTopAtRight = Math.max(effectiveTopY, ringCenterY - sqrtRight);
+        }
+        
+        return {
+            // Usable rectangle (conservative estimate inside the arc)
+            topY: effectiveTopY,
+            bottomY: bottomY,
+            leftX: arcLeftAtTop, // Left edge constrained by arc at top
+            rightX: effectiveRightX,
+            // Raw values for advanced positioning
+            arcCenterX: ringCenterX,
+            arcCenterY: ringCenterY,
+            arcRadius: innerRadius,
+            viewportWidth: viewport.width,
+            viewportHeight: viewport.height,
+            SSd: SSd
+        };
+    }
+
+    /**
      * Show detail content for a selected item
      * Called after the Detail Sector expansion animation completes
      */
@@ -152,6 +220,13 @@ class MobileDetailSector {
 
     renderHeader(headerConfig, context, contentGroup, currentY) {
         const fallbackTitle = context.name || '';
+        
+        // Skip header for Gutenberg Bible verses (verse number shown in Focus Ring)
+        const displayConfig = this.dataManager.getDisplayConfig();
+        const isGutenbergVerse = displayConfig?.volume_name === 'Gutenberg Bible' && context.level === 'verse';
+        if (isGutenbergVerse) {
+            return currentY;
+        }
 
         if (!headerConfig && fallbackTitle) {
             const title = this.createTextElement(fallbackTitle, 180, currentY, 'end', '22px', '#000000', 'bold');
@@ -336,21 +411,25 @@ class MobileDetailSector {
         }
 
         if (body) {
-            const lines = this.wrapText(body, 42);
             // Use larger font (36px = 300% of 12px) for Gutenberg Bible verses
             const displayConfig = this.dataManager.getDisplayConfig();
             const isGutenberg = displayConfig?.volume_name === 'Gutenberg Bible';
-            const fontSize = isGutenberg ? '36px' : '12px';
-            const lineHeight = isGutenberg ? 48 : 16;
             
-            lines.forEach(line => {
-                const bodyElement = this.createTextElement(line, 180, currentY, 'end', fontSize, '#333333');
-                if (isGutenberg) {
-                    bodyElement.setAttribute('class', 'gutenberg-verse-text');
-                }
-                contentGroup.appendChild(bodyElement);
-                currentY += lineHeight;
-            });
+            if (isGutenberg) {
+                // Use dynamic bounds-based positioning for Bible verses
+                currentY = this.renderGutenbergVerse(body, contentGroup, currentY);
+            } else {
+                // Standard rendering for other volumes
+                const lines = this.wrapText(body, 42);
+                const fontSize = '12px';
+                const lineHeight = 16;
+                
+                lines.forEach(line => {
+                    const bodyElement = this.createTextElement(line, 180, currentY, 'end', fontSize, '#333333');
+                    contentGroup.appendChild(bodyElement);
+                    currentY += lineHeight;
+                });
+            }
         }
 
         const fields = Array.isArray(viewConfig.fields) ? viewConfig.fields : [];
@@ -608,6 +687,55 @@ class MobileDetailSector {
                 contentGroup.appendChild(altText);
             });
         }
+    }
+
+    /**
+     * Render Gutenberg Bible verse text within the Detail Sector bounds
+     * Positions text in the upper-right area, right-aligned against the arc boundary
+     */
+    renderGutenbergVerse(body, contentGroup, startY) {
+        const bounds = this.getContentBounds();
+        
+        // Calculate available width for text (from arc edge to right margin)
+        // Use 80% of right edge X to stay well inside the arc
+        const textRightX = bounds.rightX * 0.85;
+        
+        // Estimate character width for 24px font (roughly 0.6 * fontSize)
+        const fontSize = 24;
+        const charWidth = fontSize * 0.55;
+        const availableWidth = textRightX - bounds.leftX - 20; // 20px padding from arc
+        const maxCharsPerLine = Math.floor(availableWidth / charWidth);
+        
+        // Wrap text to fit available width
+        const lines = this.wrapText(body, Math.max(20, maxCharsPerLine));
+        const lineHeight = fontSize * 1.4; // 1.4x line height
+        
+        // Start position - use bounds top with some padding
+        let currentY = bounds.topY + 40; // 40px down from effective top
+        
+        Logger.debug('📖 Gutenberg verse rendering:', {
+            bounds: { topY: bounds.topY, rightX: bounds.rightX, leftX: bounds.leftX },
+            textRightX,
+            availableWidth,
+            maxCharsPerLine,
+            lineCount: lines.length
+        });
+        
+        lines.forEach(line => {
+            const textElement = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
+            textElement.setAttribute('x', textRightX);
+            textElement.setAttribute('y', currentY);
+            textElement.setAttribute('text-anchor', 'end'); // Right-aligned
+            textElement.setAttribute('font-size', `${fontSize}px`);
+            textElement.setAttribute('fill', '#1a1a1a'); // Near-black for readability
+            textElement.setAttribute('font-family', "'Palatino Linotype', 'Book Antiqua', Palatino, serif");
+            textElement.setAttribute('class', 'gutenberg-verse-text');
+            textElement.textContent = line;
+            contentGroup.appendChild(textElement);
+            currentY += lineHeight;
+        });
+        
+        return currentY + 12; // Return position after verse
     }
 
     /**
