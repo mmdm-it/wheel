@@ -1,4 +1,12 @@
 /* Mobile-specific styles */
+
+/* Disable pull-to-refresh and overscroll effects */
+html {
+    overscroll-behavior: none;
+    overflow: hidden;
+    height: 100%;
+}
+
 body { 
     margin: 0; 
     padding: 0; 
@@ -6,9 +14,11 @@ body {
     justify-content: center; 
     align-items: flex-start; 
     min-height: 100vh; 
+    height: 100%;
     background-color: #868686; 
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
+    overscroll-behavior: none;
     /* Disable tap highlight on mobile browsers */
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
@@ -19,6 +29,8 @@ svg {
     width: 100vw;
     height: 100vh;
     max-width: 100%;
+    /* Prevent browser from handling touch gestures on the SVG */
+    touch-action: none;
 }
 
 .node { 
