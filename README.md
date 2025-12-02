@@ -2,7 +2,7 @@
 
 A mobile-first hierarchical data browser with novel rotational touch navigation. Navigate deep tree structures intuitively using circular gestures.
 
-**Version 0.8.14** | December 2025
+**Version 0.8.39** | December 2025
 
 ## Demo Applications
 
@@ -112,22 +112,23 @@ We're looking for:
 
 ## Status
 
-**Current state**: Working prototype (~70% complete)
+**Current state**: Working prototype (~75% complete)
 
 **What works:**
 - Rotational navigation with touch gestures and momentum
 - Multi-level hierarchy browsing with animated nzone migration
-- Detail view expansion (Detail Sector)
+- Detail Sector with arc-aware text layout (Gutenberg Bible verses)
+- Dynamic font sizing relative to viewport (SSd-based)
 - Multiple catalog/dataset support
 - Viewport filtering for large datasets
 - Error handling with auto-dismiss on rotation
 - Parent Button contextual breadcrumbs
 
 **In progress:**
-- Outward navigation (leaf to parent levels)
 - Performance optimization
 - Android packaging
 - Comprehensive device testing
+- Additional volume types
 
 See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
@@ -171,4 +172,4 @@ Contributions welcome! See issues labeled **"good first issue"** for starting po
 
 ---
 
-**Version 0.8.14** | December 2025
+**Version 0.8.39** | December 2025
