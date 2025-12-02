@@ -10,6 +10,35 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Split architecture Phase 2: Dual loader implementation
 - Multi-volume validation
 
+## [0.8.39] - 2025-12-02
+
+### Added
+- **Detail Sector Gutenberg Rendering**: Stable baseline for Bible verse text display
+  - Dynamic font sizing: 5% of SSd (shorter side dimension), clamped 16-42px
+  - Arc-based left margins via `buildLineTable()` - text flows along Focus Ring arc boundary
+  - Per-line width calculation respects curved edge for natural text wrapping
+  - Works correctly for short verses (Genesis 1:1) and long verses (Esther 8:9)
+  - Latin text only (Vulgate 1455)
+
+### Technical Notes
+- `renderGutenbergVerse()` uses `buildLineTable()` + `wrapTextWithLineTable()` for arc-aware layout
+- Each line's left margin calculated from arc intersection at that Y position
+- SSd-relative sizing ensures consistent appearance across viewport sizes
+- Right-aligned text with Palatino serif font family
+- **STABLE BASELINE** - User-approved version for verse rendering
+
+## [0.8.32] - 2025-12-01
+
+### Added
+- Dynamic line positioning with per-line arc-based left margins
+- `buildLineTable()` function for computing line positions and widths
+- `wrapTextWithLineTable()` for variable-width text wrapping
+- Detail Sector bounds diagnostic toggle (click copyright to show/hide)
+
+### Changed
+- Gutenberg verse rendering uses arc-aware text layout
+- Line widths vary based on arc intersection at each Y position
+
 ## [0.8.12] - 2025-11-25
 
 ### Changed

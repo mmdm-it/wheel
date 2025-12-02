@@ -23,7 +23,7 @@ mobile/
 ├── mobile-viewport.js          # Viewport calculations
 ├── mobile-coordinates.js       # Coordinate system (Hub/Nuc)
 ├── mobile-childpyramid.js      # Child item preview display
-└── mobile-detailsector.js      # Content detail view
+└── mobile-detailsector.js      # Content detail view (Gutenberg verse rendering)
 ```
 
 ### Module Responsibilities
@@ -68,6 +68,20 @@ mobile/
 - Coordinates all modules
 - Handles navigation flow (IN/OUT/rotate)
 - Manages application state
+- Error handling and recovery
+
+**mobile-childpyramid.js**
+- Renders child item preview nodes in concentric arcs
+- Manages Child Pyramid visibility and transitions
+- Handles child item click events for IN navigation
+
+**mobile-detailsector.js**
+- Displays detailed content for leaf items
+- Gutenberg Bible verse rendering with arc-aware layout
+- Dynamic font sizing (SSd-relative)
+- `buildLineTable()`: Computes per-line positions and widths based on arc intersection
+- `wrapTextWithLineTable()`: Variable-width text wrapping for curved boundaries
+- `getContentBounds()`: Calculates usable content area within Focus Ring arc
 - Error handling and recovery
 
 ## Coordinate Systems
