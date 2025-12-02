@@ -692,31 +692,53 @@ class MobileDetailSector {
     /**
      * Render Gutenberg Bible verse text within the Detail Sector bounds
      * Positions text in the upper-right area, right-aligned against the arc boundary
+     * Font size scales dynamically based on viewport dimensions
      */
     renderGutenbergVerse(body, contentGroup, startY) {
         const bounds = this.getContentBounds();
         
         // Calculate available width for text (from arc edge to right margin)
-        // Use 80% of right edge X to stay well inside the arc
+        // Use 85% of right edge X to stay well inside the arc
         const textRightX = bounds.rightX * 0.85;
-        
-        // Estimate character width for 24px font (roughly 0.6 * fontSize)
-        const fontSize = 24;
-        const charWidth = fontSize * 0.55;
         const availableWidth = textRightX - bounds.leftX - 20; // 20px padding from arc
+        
+        // Calculate available height (from top margin to ~60% down the viewport)
+        const availableHeight = bounds.viewportHeight * 0.5;
+        
+        // Dynamic font size based on shorter side (SSd) and aspect ratio
+        // Base: ~4.7% of SSd, adjusted for aspect ratio (1/3 larger than original 3.5%)
+        const aspectRatio = bounds.viewportWidth / bounds.viewportHeight;
+        let fontSizePercent = 0.047; // 4.7% of SSd as base
+        
+        // Adjust for extreme aspect ratios
+        if (aspectRatio > 1.5) {
+            // Wide/landscape: slightly smaller font
+            fontSizePercent = 0.040;
+        } else if (aspectRatio < 0.6) {
+            // Tall/narrow portrait: slightly larger font
+            fontSizePercent = 0.053;
+        }
+        
+        const fontSize = Math.round(bounds.SSd * fontSizePercent);
+        const clampedFontSize = Math.max(16, Math.min(42, fontSize)); // Clamp between 16-42px
+        
+        const charWidth = clampedFontSize * 0.55;
         const maxCharsPerLine = Math.floor(availableWidth / charWidth);
         
         // Wrap text to fit available width
-        const lines = this.wrapText(body, Math.max(20, maxCharsPerLine));
-        const lineHeight = fontSize * 1.4; // 1.4x line height
+        const lines = this.wrapText(body, Math.max(15, maxCharsPerLine));
+        const lineHeight = clampedFontSize * 1.4; // 1.4x line height
         
-        // Start position - use bounds top with some padding
-        let currentY = bounds.topY + 40; // 40px down from effective top
+        // Start position - use bounds top with padding proportional to font size
+        let currentY = bounds.topY + (clampedFontSize * 1.5);
         
-        Logger.debug('📖 Gutenberg verse rendering:', {
-            bounds: { topY: bounds.topY, rightX: bounds.rightX, leftX: bounds.leftX },
-            textRightX,
-            availableWidth,
+        // Always log to console for debugging
+        console.log('📖 GUTENBERG VERSE:', {
+            SSd: bounds.SSd,
+            aspectRatio: aspectRatio.toFixed(2),
+            fontSizePercent,
+            rawFontSize: fontSize,
+            clampedFontSize,
             maxCharsPerLine,
             lineCount: lines.length
         });
@@ -726,7 +748,7 @@ class MobileDetailSector {
             textElement.setAttribute('x', textRightX);
             textElement.setAttribute('y', currentY);
             textElement.setAttribute('text-anchor', 'end'); // Right-aligned
-            textElement.setAttribute('font-size', `${fontSize}px`);
+            textElement.setAttribute('font-size', `${clampedFontSize}px`);
             textElement.setAttribute('fill', '#1a1a1a'); // Near-black for readability
             textElement.setAttribute('font-family', "'Palatino Linotype', 'Book Antiqua', Palatino, serif");
             textElement.setAttribute('class', 'gutenberg-verse-text');
