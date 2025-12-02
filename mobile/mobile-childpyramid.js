@@ -73,6 +73,12 @@ class MobileChildPyramid {
     this.currentItems = [...items];
     this.currentItemType = itemType;
         
+        // PERFORMANCE: Disabled diagnostic during normal use - uncomment for design work
+        // Show Detail Sector bounds diagnostic (temporary for design work)
+        // if (this.renderer && this.renderer.showDetailSectorBounds) {
+        //     this.renderer.showDetailSectorBounds();
+        // }
+        
         // Sort items based on type
         const sortedItems = this.sortChildPyramidItems(items, itemType);
         if (DEBUG_VERBOSE) console.log(`🔺 CHILD PYRAMID SORTED ORDER:`, sortedItems.map(item => {
