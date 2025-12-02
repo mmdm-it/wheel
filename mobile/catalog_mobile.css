@@ -257,10 +257,6 @@ g.focusItem.selected text {
         font-size: 12px;
     }
     
-    .gutenberg-verse-text {
-        font-size: 36px !important;
-    }
-    
     .levelText text {
         font-size: 22px !important;
     }
