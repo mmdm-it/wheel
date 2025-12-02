@@ -436,12 +436,23 @@ class MobileRenderer {
     }
     
     showChildContentForFocusItem(focusItem, angle) {
+        // PERFORMANCE: Debounce - skip if we've shown content for same item recently
+        const itemKey = focusItem.key || focusItem.name;
+        if (this._lastChildContentItem === itemKey && 
+            this._lastChildContentTime && 
+            performance.now() - this._lastChildContentTime < 50) {
+            // Skip redundant call
+            return;
+        }
+        this._lastChildContentItem = itemKey;
+        this._lastChildContentTime = performance.now();
+        
         if (DEBUG_VERBOSE) console.log('📦📦📦 showChildContentForFocusItem CALLED:', focusItem.name, 'path:', focusItem.__path);
         Logger.debug('Showing child content for focus item:', focusItem.name);
 
         // Determine the hierarchy level of the focus item
         const currentLevel = this.getItemHierarchyLevel(focusItem);
-        console.log('📦 Current level:', currentLevel);
+        if (DEBUG_VERBOSE) console.log('📦 Current level:', currentLevel);
         if (!currentLevel) {
             Logger.warn('Could not determine hierarchy level for focus item:', focusItem);
             return;
@@ -449,7 +460,7 @@ class MobileRenderer {
 
         // Get the immediate next hierarchy level (universal navigation requires immediate children)
         const nextLevel = this.getNextHierarchyLevel(currentLevel);
-        console.log('📦 Next level:', nextLevel);
+        if (DEBUG_VERBOSE) console.log('📦 Next level:', nextLevel);
         if (!nextLevel) {
             Logger.debug('No next level detected for', focusItem.name, '- treating as leaf');
             this.leafStateCache.set(this.getLeafCacheKey(focusItem, null), true);
@@ -460,11 +471,11 @@ class MobileRenderer {
         const { level: resolvedLevel, items: childItems } = this.resolveChildLevel(focusItem, nextLevel);
         const cacheLevel = resolvedLevel || nextLevel;
 
-        console.log(`📦 Resolved level: '${cacheLevel}', child items:`, childItems?.length);
+        if (DEBUG_VERBOSE) console.log(`📦 Resolved level: '${cacheLevel}', child items:`, childItems?.length);
         Logger.debug(`Focus item is at level '${currentLevel}', requested '${nextLevel}', resolved to '${cacheLevel}'`);
         
         if (!childItems || childItems.length === 0) {
-            console.log(`📦 NO CHILD ITEMS - treating as leaf`);
+            if (DEBUG_VERBOSE) console.log(`📦 NO CHILD ITEMS - treating as leaf`);
             Logger.debug(`No child items found for ${currentLevel}: ${focusItem.name} - treating as leaf`);
             this.leafStateCache.set(this.getLeafCacheKey(focusItem, cacheLevel), true);
             this.handleLeafFocusSelection(focusItem);
@@ -474,7 +485,7 @@ class MobileRenderer {
         this.leafStateCache.set(this.getLeafCacheKey(focusItem, cacheLevel), false);
 
         const itemType = this.getLevelPluralLabel(cacheLevel);
-        console.log(`📦 Found ${childItems.length} ${itemType}, calling showChildPyramid`);
+        if (DEBUG_VERBOSE) console.log(`📦 Found ${childItems.length} ${itemType}, calling showChildPyramid`);
         Logger.debug(`Found ${childItems.length} ${itemType} for ${currentLevel}: ${focusItem.name}`);
 
         // Set the active type to the current focus item's level
@@ -990,8 +1001,11 @@ class MobileRenderer {
     }
     
     updateFocusRingPositions(rotationOffset) {
-        console.log(`🎯🔄 updateFocusRingPositions CALLED with rotationOffset=${rotationOffset?.toFixed(3) || 'undefined'}`);
-        console.log(`🎯🔄 At start: currentFocusItems=${this.currentFocusItems?.length || 0}, allFocusItems=${this.allFocusItems?.length || 0}`);
+        // PERFORMANCE: Reduce verbose logging during animation frames
+        if (DEBUG_VERBOSE) {
+            console.log(`🎯🔄 updateFocusRingPositions CALLED with rotationOffset=${rotationOffset?.toFixed(3) || 'undefined'}`);
+            console.log(`🎯🔄 At start: currentFocusItems=${this.currentFocusItems?.length || 0}, allFocusItems=${this.allFocusItems?.length || 0}`);
+        }
         
         const focusRingGroup = this.elements.focusRingGroup;
         
@@ -1034,10 +1048,21 @@ class MobileRenderer {
         }
         this.lastRotationOffset = rotationOffset;
         
-        // Clear existing elements but preserve the background band
-        const background = focusRingGroup.querySelector('#focusRingBackground');
-        focusRingGroup.innerHTML = '';
-        if (background) focusRingGroup.appendChild(background);
+        // PERFORMANCE OPTIMIZATION: Check if focus items changed - only rebuild if needed
+        const focusItemsKey = allFocusItems.map(item => item.key).join('|');
+        const focusItemsChanged = this._lastFocusItemsKey !== focusItemsKey;
+        this._lastFocusItemsKey = focusItemsKey;
+        
+        // Only clear and rebuild DOM if focus items changed
+        if (focusItemsChanged) {
+            // Clear existing elements but preserve the background band
+            const background = focusRingGroup.querySelector('#focusRingBackground');
+            focusRingGroup.innerHTML = '';
+            if (background) focusRingGroup.appendChild(background);
+            this.focusElements.clear();
+        } else {
+            // Reuse existing elements - just update positions
+        }
         this.focusElements.clear();
         
         // Use updated angle calculation logic to maintain JSON order
@@ -1071,6 +1096,9 @@ class MobileRenderer {
         }
 
         // Process all focus items but only render those in viewport window
+        // Track which keys are currently visible for cleanup
+        const visibleKeys = new Set();
+        
         allFocusItems.forEach((focusItem, index) => {
             // Validate sort_number
             const sortNumber = focusItem.data?.sort_number ?? focusItem.sort_number;
@@ -1096,6 +1124,8 @@ class MobileRenderer {
             const maxViewportAngle = MOBILE_CONFIG.VIEWPORT.VIEWPORT_ARC / 2;
             
             if (angleDiff <= maxViewportAngle) {
+                visibleKeys.add(focusItem.key);
+                
                 // This focus item is in the viewport - render it
                 const position = this.calculateFocusPosition(angle, arcParams);
                 
@@ -1104,16 +1134,35 @@ class MobileRenderer {
                 if (isSelected) {
                     selectedFocusItem = focusItem;
                     selectedIndex = index;
-                    console.log(`🎯🎯🎯 ITEM SELECTED AT CENTER: [${index}] ${focusItem.name}, angleDiff=${angleDiff.toFixed(3)}°, rotationOffset=${(rotationOffset * 180 / Math.PI).toFixed(1)}°`);
+                    if (DEBUG_VERBOSE) {
+                        console.log(`🎯🎯🎯 ITEM SELECTED AT CENTER: [${index}] ${focusItem.name}, angleDiff=${angleDiff.toFixed(3)}°, rotationOffset=${(rotationOffset * 180 / Math.PI).toFixed(1)}°`);
+                    }
                     this.focusRingDebug('🎯 SELECTED during rotation:', focusItem.name, 'angleDiff:', angleDiff.toFixed(3), 'threshold:', (angleStep * 0.5).toFixed(3));
                 }
                 
-                // Create focus element
-                const element = this.createFocusElement(focusItem, position, angle, isSelected);
-                this.focusElements.set(focusItem.key, element);
-                focusRingGroup.appendChild(element);
+                // PERFORMANCE: Reuse existing elements if focus items haven't changed
+                const existingElement = this.focusElements.get(focusItem.key);
+                if (!focusItemsChanged && existingElement) {
+                    // Update existing element position and selection state
+                    this.updateFocusElement(existingElement, position, angle, isSelected);
+                } else {
+                    // Create new focus element
+                    const element = this.createFocusElement(focusItem, position, angle, isSelected);
+                    this.focusElements.set(focusItem.key, element);
+                    focusRingGroup.appendChild(element);
+                }
             }
         });
+        
+        // PERFORMANCE: Remove elements that are no longer visible
+        if (!focusItemsChanged) {
+            for (const [key, element] of this.focusElements) {
+                if (!visibleKeys.has(key)) {
+                    element.remove();
+                    this.focusElements.delete(key);
+                }
+            }
+        }
         
         // Position magnifying ring at the calculated center angle
         this.positionMagnifyingRing();
@@ -1348,15 +1397,17 @@ class MobileRenderer {
             g.classList.add('selected');
         } else {
             // Add click handler only to unselected nodes
-            console.log(`🎯📝 HANDLER: Adding click handler for "${focusItem.name}" key="${focusItem.key}"`);
+            if (DEBUG_VERBOSE) {
+                console.log(`🎯📝 HANDLER: Adding click handler for "${focusItem.name}" key="${focusItem.key}"`);
+            }
             
-            // Add mousedown/touchstart to debug if events reach the element at all
+            // PERFORMANCE: Use passive event listeners for touch/mouse events that don't preventDefault
             g.addEventListener('mousedown', (e) => {
-                console.log(`🎯👆 MOUSEDOWN on "${focusItem.name}" key="${focusItem.key}"`);
-            });
+                if (DEBUG_VERBOSE) console.log(`🎯👆 MOUSEDOWN on "${focusItem.name}" key="${focusItem.key}"`);
+            }, { passive: true });
             g.addEventListener('touchstart', (e) => {
-                console.log(`🎯👆 TOUCHSTART on "${focusItem.name}" key="${focusItem.key}"`);
-            });
+                if (DEBUG_VERBOSE) console.log(`🎯👆 TOUCHSTART on "${focusItem.name}" key="${focusItem.key}"`);
+            }, { passive: true });
             
             g.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -1364,18 +1415,20 @@ class MobileRenderer {
                 
                 // Look up the item fresh from currentFocusItems using the stored key
                 const clickedKey = g.getAttribute('data-focus-key');
-                console.log(`🎯🔥 CLICK: Handler fired! clickedKey="${clickedKey}"`);
-                console.log(`🎯🔥 CLICK: this.currentFocusItems has ${this.currentFocusItems?.length || 0} items`);
-                console.log(`🎯🔥 CLICK: this.allFocusItems has ${this.allFocusItems?.length || 0} items`);
-                console.log(`🎯🔥 CLICK: currentFocusItems:`, 
-                    this.currentFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
-                console.log(`🎯🔥 CLICK: allFocusItems:`, 
-                    this.allFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
+                if (DEBUG_VERBOSE) {
+                    console.log(`🎯🔥 CLICK: Handler fired! clickedKey="${clickedKey}"`);
+                    console.log(`🎯🔥 CLICK: this.currentFocusItems has ${this.currentFocusItems?.length || 0} items`);
+                    console.log(`🎯🔥 CLICK: this.allFocusItems has ${this.allFocusItems?.length || 0} items`);
+                    console.log(`🎯🔥 CLICK: currentFocusItems:`, 
+                        this.currentFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
+                    console.log(`🎯🔥 CLICK: allFocusItems:`, 
+                        this.allFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
+                }
                 
                 const currentItem = this.currentFocusItems?.find(item => item.key === clickedKey);
                 
                 if (currentItem) {
-                    console.log(`🎯✅ CLICK: Found item "${currentItem.name}"`);
+                    if (DEBUG_VERBOSE) console.log(`🎯✅ CLICK: Found item "${currentItem.name}"`);
                     Logger.debug(`🎯 Focus node clicked: ${currentItem.name}`);
                     this.bringFocusNodeToCenter(currentItem);
                 } else {
@@ -1885,17 +1938,31 @@ class MobileRenderer {
     
     /**
      * Draw line from Parent Button circle to magnifier (similar to fan lines)
+     * PERFORMANCE: Debounced to prevent multiple redundant calls
      */
     drawParentLine(parentButtonNuc) {
-        console.log('🔵🔵 drawParentLine START:', {
-            parentButtonNuc,
-            timestamp: performance.now().toFixed(2)
-        });
+        // PERFORMANCE: Debounce - skip if we've drawn recently with same position
+        const positionKey = `${parentButtonNuc.x.toFixed(1)}_${parentButtonNuc.y.toFixed(1)}`;
+        if (this._lastParentLinePosition === positionKey && 
+            this._lastParentLineTime && 
+            performance.now() - this._lastParentLineTime < 100) {
+            // Skip redundant call
+            return;
+        }
+        this._lastParentLinePosition = positionKey;
+        this._lastParentLineTime = performance.now();
+        
+        if (DEBUG_VERBOSE) {
+            console.log('🔵🔵 drawParentLine START:', {
+                parentButtonNuc,
+                timestamp: performance.now().toFixed(2)
+            });
+        }
         
         // Check if Parent Button circle is visible before drawing line
         const parentNodeCircle = document.getElementById('parentNodeCircle');
         if (!parentNodeCircle || parentNodeCircle.classList.contains('hidden') || parentNodeCircle.style.display === 'none') {
-            console.log('🔵🔵 drawParentLine ABORTED: Parent Button circle not visible');
+            if (DEBUG_VERBOSE) console.log('🔵🔵 drawParentLine ABORTED: Parent Button circle not visible');
             return;
         }
         
@@ -1913,16 +1980,18 @@ class MobileRenderer {
         // Parent Button is positioned with transform in Nuc coordinates
         // Both are in the same SVG space, so we can draw directly
         
-        console.log('🔵 Magnifier position (SVG):', {
-            x: magnifierPos.x.toFixed(2),
-            y: magnifierPos.y.toFixed(2),
-            angle: ((magnifierPos.angle * 180 / Math.PI) % 360).toFixed(1) + '°'
-        });
-        
-        console.log('🔵 Parent Button position (Nuc/transform):', {
-            x: parentButtonNuc.x.toFixed(2),
-            y: parentButtonNuc.y.toFixed(2)
-        });
+        if (DEBUG_VERBOSE) {
+            console.log('🔵 Magnifier position (SVG):', {
+                x: magnifierPos.x.toFixed(2),
+                y: magnifierPos.y.toFixed(2),
+                angle: ((magnifierPos.angle * 180 / Math.PI) % 360).toFixed(1) + '°'
+            });
+            
+            console.log('🔵 Parent Button position (Nuc/transform):', {
+                x: parentButtonNuc.x.toFixed(2),
+                y: parentButtonNuc.y.toFixed(2)
+            });
+        }
         
         // Line connects the two circles: Parent Button circle and Magnifier circle
         // Parent Button circle is at the group origin (0,0) in group coordinates
@@ -1930,23 +1999,27 @@ class MobileRenderer {
         const lineEndX = parentButtonNuc.x;
         const lineEndY = parentButtonNuc.y;
         
-        console.log('🔵 Circle-to-circle connection:', {
-            parentCircleX: lineEndX.toFixed(2),
-            parentCircleY: lineEndY.toFixed(2),
-            magnifierX: magnifierPos.x.toFixed(2),
-            magnifierY: magnifierPos.y.toFixed(2)
-        });
+        if (DEBUG_VERBOSE) {
+            console.log('🔵 Circle-to-circle connection:', {
+                parentCircleX: lineEndX.toFixed(2),
+                parentCircleY: lineEndY.toFixed(2),
+                magnifierX: magnifierPos.x.toFixed(2),
+                magnifierY: magnifierPos.y.toFixed(2)
+            });
+        }
         
         // Calculate distance
         const dx = magnifierPos.x - lineEndX;
         const dy = magnifierPos.y - lineEndY;
         const distance = Math.sqrt(dx * dx + dy * dy);
         
-        console.log('🔵 Line geometry:', {
-            dx: dx.toFixed(2),
-            dy: dy.toFixed(2),
-            distance: distance.toFixed(2)
-        });
+        if (DEBUG_VERBOSE) {
+            console.log('🔵 Line geometry:', {
+                dx: dx.toFixed(2),
+                dy: dy.toFixed(2),
+                distance: distance.toFixed(2)
+            });
+        }
         
         // Create line element
         const pathLinesGroup = this.elements.pathLinesGroup;
@@ -1966,12 +2039,14 @@ class MobileRenderer {
         
         pathLinesGroup.appendChild(line);
         
-        console.log('🔵🔵 drawParentLine COMPLETE:', {
-            lineCreated: true,
-            lineInDOM: !!document.querySelector('.parent-line'),
-            parentLinesGroupChildren: pathLinesGroup.children.length,
-            timestamp: performance.now().toFixed(2)
-        });
+        if (DEBUG_VERBOSE) {
+            console.log('🔵🔵 drawParentLine COMPLETE:', {
+                lineCreated: true,
+                lineInDOM: !!document.querySelector('.parent-line'),
+                parentLinesGroupChildren: pathLinesGroup.children.length,
+                timestamp: performance.now().toFixed(2)
+            });
+        }
     }
     
     /**
@@ -3022,6 +3097,219 @@ class MobileRenderer {
             centerX: logoCenterX,
             centerY: logoCenterY
         };
+    }
+    
+    /**
+     * DIAGNOSTIC: Visualize the Detail Sector bounding area
+     * Shows the usable content region bounded by:
+     * - Inner arc of Focus Ring
+     * - Top edge of viewport
+     * - Right edge of viewport
+     * 
+     * Call this method to see the actual available space for Detail Sector content
+     */
+    showDetailSectorBounds() {
+        console.log('📐📐📐 showDetailSectorBounds() called');
+        
+        const SVG_NS = MOBILE_CONFIG.SVG_NS;
+        const mainGroup = this.elements.mainGroup;
+        
+        console.log('📐📐📐 mainGroup:', mainGroup);
+        
+        if (!mainGroup) {
+            console.error('📐📐📐 Cannot show Detail Sector bounds - mainGroup not found');
+            Logger.error('Cannot show Detail Sector bounds - mainGroup not found');
+            return;
+        }
+        
+        // Remove any existing diagnostic elements
+        const existing = document.getElementById('detailSectorBoundsDiag');
+        console.log('📐📐📐 existing diagnostic:', existing);
+        if (existing) existing.remove();
+        
+        const diagGroup = document.createElementNS(SVG_NS, 'g');
+        diagGroup.setAttribute('id', 'detailSectorBoundsDiag');
+        
+        // Get viewport and arc parameters
+        const viewport = this.viewport.getViewportInfo();
+        const arcParams = this.viewport.getArcParameters();
+        
+        console.log('📐📐📐 viewport:', viewport);
+        console.log('📐📐📐 arcParams:', arcParams);
+        
+        // Viewport bounds in SVG coordinates (origin at center)
+        const halfWidth = viewport.width / 2;
+        const halfHeight = viewport.height / 2;
+        const topY = -halfHeight;
+        const rightX = halfWidth;
+        const bottomY = halfHeight;
+        const leftX = -halfWidth;
+        
+        // Focus Ring parameters
+        const ringCenterX = arcParams.centerX;
+        const ringCenterY = arcParams.centerY;
+        const ringRadius = arcParams.radius;
+        
+        // Calculate the inner edge of the Focus Ring band with margin
+        // Using 96% to back off from the 98% inner edge of the Focus Ring band
+        const innerRadius = ringRadius * 0.96;
+        
+        // Dynamic margins based on shorter side (SSd) - same approach as Detail Sector circle
+        const SSd = viewport.SSd;
+        const marginPercent = 0.03; // 3% of shorter side
+        const topMargin = SSd * marginPercent;
+        const rightMargin = SSd * marginPercent;
+        
+        console.log('📐📐📐 Calculating intersections...');
+        console.log('📐📐📐 Ring center:', ringCenterX, ringCenterY, 'innerRadius:', innerRadius);
+        console.log('📐📐📐 Viewport bounds: top=', topY, 'bottom=', bottomY, 'left=', leftX, 'right=', rightX);
+        console.log('📐📐📐 Margins: top=', topMargin, 'right=', rightMargin, '(3% of SSd:', SSd, ')');
+        
+        // Apply margins to viewport bounds
+        const effectiveTopY = topY + topMargin;
+        const effectiveRightX = rightX - rightMargin;
+        
+        // Find ALL intersection points of the inner Focus Ring arc with EFFECTIVE viewport edges
+        const intersections = [];
+        
+        // Check EFFECTIVE TOP edge (y = effectiveTopY)
+        const dyTop = effectiveTopY - ringCenterY;
+        const discTop = innerRadius * innerRadius - dyTop * dyTop;
+        if (discTop >= 0) {
+            const sqrtTop = Math.sqrt(discTop);
+            const x1 = ringCenterX - sqrtTop;
+            const x2 = ringCenterX + sqrtTop;
+            if (x1 >= leftX && x1 <= effectiveRightX) intersections.push({x: x1, y: effectiveTopY, edge: 'top'});
+            if (x2 >= leftX && x2 <= effectiveRightX && x2 !== x1) intersections.push({x: x2, y: effectiveTopY, edge: 'top'});
+        }
+        
+        // Check BOTTOM edge (y = bottomY) - no margin on bottom
+        const dyBottom = bottomY - ringCenterY;
+        const discBottom = innerRadius * innerRadius - dyBottom * dyBottom;
+        if (discBottom >= 0) {
+            const sqrtBottom = Math.sqrt(discBottom);
+            const x1 = ringCenterX - sqrtBottom;
+            const x2 = ringCenterX + sqrtBottom;
+            if (x1 >= leftX && x1 <= effectiveRightX) intersections.push({x: x1, y: bottomY, edge: 'bottom'});
+            if (x2 >= leftX && x2 <= effectiveRightX && x2 !== x1) intersections.push({x: x2, y: bottomY, edge: 'bottom'});
+        }
+        
+        // Check LEFT edge (x = leftX) - no margin on left
+        const dxLeft = leftX - ringCenterX;
+        const discLeft = innerRadius * innerRadius - dxLeft * dxLeft;
+        if (discLeft >= 0) {
+            const sqrtLeft = Math.sqrt(discLeft);
+            const y1 = ringCenterY - sqrtLeft;
+            const y2 = ringCenterY + sqrtLeft;
+            if (y1 >= effectiveTopY && y1 <= bottomY) intersections.push({x: leftX, y: y1, edge: 'left'});
+            if (y2 >= effectiveTopY && y2 <= bottomY && y2 !== y1) intersections.push({x: leftX, y: y2, edge: 'left'});
+        }
+        
+        // Check EFFECTIVE RIGHT edge (x = effectiveRightX)
+        const dxRight = effectiveRightX - ringCenterX;
+        const discRight = innerRadius * innerRadius - dxRight * dxRight;
+        if (discRight >= 0) {
+            const sqrtRight = Math.sqrt(discRight);
+            const y1 = ringCenterY - sqrtRight;
+            const y2 = ringCenterY + sqrtRight;
+            if (y1 >= effectiveTopY && y1 <= bottomY) intersections.push({x: effectiveRightX, y: y1, edge: 'right'});
+            if (y2 >= effectiveTopY && y2 <= bottomY && y2 !== y1) intersections.push({x: effectiveRightX, y: y2, edge: 'right'});
+        }
+        
+        console.log('📐📐📐 All intersections:', intersections);
+        
+        // Draw the Focus Ring arc (inner edge with margin) 
+        const arcPath = document.createElementNS(SVG_NS, 'circle');
+        arcPath.setAttribute('cx', ringCenterX);
+        arcPath.setAttribute('cy', ringCenterY);
+        arcPath.setAttribute('r', innerRadius);
+        arcPath.setAttribute('fill', 'none');
+        arcPath.setAttribute('stroke', 'lime');
+        arcPath.setAttribute('stroke-width', '2');
+        arcPath.setAttribute('stroke-dasharray', '8,4');
+        diagGroup.appendChild(arcPath);
+        
+        // Draw EFFECTIVE content boundary (with margins applied)
+        const effectiveRect = document.createElementNS(SVG_NS, 'rect');
+        effectiveRect.setAttribute('x', leftX);
+        effectiveRect.setAttribute('y', effectiveTopY);
+        effectiveRect.setAttribute('width', effectiveRightX - leftX);
+        effectiveRect.setAttribute('height', bottomY - effectiveTopY);
+        effectiveRect.setAttribute('fill', 'none');
+        effectiveRect.setAttribute('stroke', 'lime');
+        effectiveRect.setAttribute('stroke-width', '2');
+        diagGroup.appendChild(effectiveRect);
+        
+        // Mark ring center with an X
+        const centerMarkerSize = 15;
+        const centerX1 = document.createElementNS(SVG_NS, 'line');
+        centerX1.setAttribute('x1', ringCenterX - centerMarkerSize);
+        centerX1.setAttribute('y1', ringCenterY - centerMarkerSize);
+        centerX1.setAttribute('x2', ringCenterX + centerMarkerSize);
+        centerX1.setAttribute('y2', ringCenterY + centerMarkerSize);
+        centerX1.setAttribute('stroke', 'lime');
+        centerX1.setAttribute('stroke-width', '2');
+        diagGroup.appendChild(centerX1);
+        
+        const centerX2 = document.createElementNS(SVG_NS, 'line');
+        centerX2.setAttribute('x1', ringCenterX - centerMarkerSize);
+        centerX2.setAttribute('y1', ringCenterY + centerMarkerSize);
+        centerX2.setAttribute('x2', ringCenterX + centerMarkerSize);
+        centerX2.setAttribute('y2', ringCenterY - centerMarkerSize);
+        centerX2.setAttribute('stroke', 'lime');
+        centerX2.setAttribute('stroke-width', '2');
+        diagGroup.appendChild(centerX2);
+        
+        // Mark all intersection points
+        intersections.forEach((pt, i) => {
+            const marker = document.createElementNS(SVG_NS, 'circle');
+            marker.setAttribute('cx', pt.x);
+            marker.setAttribute('cy', pt.y);
+            marker.setAttribute('r', 6);
+            marker.setAttribute('fill', 'lime');
+            diagGroup.appendChild(marker);
+            
+            const label = document.createElementNS(SVG_NS, 'text');
+            label.setAttribute('x', pt.x + 10);
+            label.setAttribute('y', pt.y + 5);
+            label.setAttribute('fill', 'lime');
+            label.setAttribute('font-size', '12px');
+            label.setAttribute('font-family', 'monospace');
+            label.textContent = `${pt.edge}(${pt.x.toFixed(0)},${pt.y.toFixed(0)})`;
+            diagGroup.appendChild(label);
+        });
+        
+        // Add label for ring center
+        const centerLabel = document.createElementNS(SVG_NS, 'text');
+        centerLabel.setAttribute('x', ringCenterX + 20);
+        centerLabel.setAttribute('y', ringCenterY + 5);
+        centerLabel.setAttribute('fill', 'lime');
+        centerLabel.setAttribute('font-size', '12px');
+        centerLabel.setAttribute('font-family', 'monospace');
+        centerLabel.textContent = `CENTER(${ringCenterX.toFixed(0)},${ringCenterY.toFixed(0)})`;
+        diagGroup.appendChild(centerLabel);
+        
+        mainGroup.appendChild(diagGroup);
+        console.log('📐📐📐 Diagnostic group appended to mainGroup');
+        
+        Logger.info('📐 Detail Sector bounds diagnostic displayed (lime green outline)');
+        
+        return {
+            viewport: {topY, bottomY, leftX, rightX},
+            ring: {centerX: ringCenterX, centerY: ringCenterY, innerRadius},
+            intersections
+        };
+    }
+    
+    /**
+     * Hide the Detail Sector bounds diagnostic
+     */
+    hideDetailSectorBounds() {
+        const existing = document.getElementById('detailSectorBoundsDiag');
+        if (existing) {
+            existing.remove();
+            Logger.info('📐 Detail Sector bounds diagnostic hidden');
+        }
     }
 }
 
