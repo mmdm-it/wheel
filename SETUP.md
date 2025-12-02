@@ -94,6 +94,62 @@ https://howellgibbens.com/mmdm/wheel/wheel.html
 
 Example: `http://localhost:8000/wheel.html?forceMobile=true&loglevel=4`
 
+## Deploying to Production Server
+
+A sync script is provided to push local changes to the live server at howellgibbens.com.
+
+### Prerequisites
+
+- SSH access configured (see below)
+- SSH key authorized on Namecheap hosting
+
+### SSH Setup (One-time)
+
+1. Generate SSH key (if not already done):
+   ```bash
+   ssh-keygen -t ed25519 -C "your@email.com" -f ~/.ssh/namecheap_key
+   ```
+
+2. Add to `~/.ssh/config`:
+   ```
+   Host namecheap
+       HostName server300.web-hosting.com
+       User howeyzfe
+       Port 21098
+       IdentityFile ~/.ssh/namecheap_key
+   ```
+
+3. Import public key in cPanel → SSH Access → Manage SSH Keys → Import
+
+4. **Authorize** the key after importing
+
+5. Enable SSH in cPanel → Exclusive for Namecheap Customers → Manage Shell → Toggle ON
+
+### Syncing to Server
+
+**Preview changes (dry run):**
+```bash
+./sync-to-server.sh --dry-run
+```
+
+**Push to production:**
+```bash
+./sync-to-server.sh
+```
+
+The script:
+- Uses rsync for efficient incremental transfers
+- Excludes `.git`, `old/`, `archive/`, and script files
+- Only transfers changed files
+
+### Typical Workflow
+
+1. Make changes locally
+2. Test at `http://localhost:8000/wheel.html?forceMobile=true`
+3. Bump version: Run VS Code task "Bump Version (Patch)"
+4. Sync: `./sync-to-server.sh`
+5. Verify at https://howellgibbens.com/mmdm/wheel/wheel.html
+
 ## Common Issues
 
 ### "Failed to load module" errors
