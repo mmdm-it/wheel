@@ -690,74 +690,152 @@ class MobileDetailSector {
     }
 
     /**
+     * Build a table of line positions with per-line available width
+     * Each line's left boundary is calculated from the arc intersection at that Y position
+     * @param {Object} bounds - Content bounds from getContentBounds()
+     * @param {number} fontSize - Font size for line height calculation
+     * @param {number} maxLines - Maximum number of lines to compute
+     * @returns {Array} Array of {y, leftX, rightX, availableWidth, maxChars}
+     */
+    buildLineTable(bounds, fontSize, maxLines = 20) {
+        const lineHeight = fontSize * 1.4;
+        const charWidth = fontSize * 0.55;
+        const startY = bounds.topY + (fontSize * 1.5);
+        const rightX = bounds.rightX - (bounds.SSd * 0.025); // 2.5% SSd padding from right
+        
+        const lineTable = [];
+        
+        for (let i = 0; i < maxLines; i++) {
+            const y = startY + (i * lineHeight);
+            
+            // Stop if we've gone past the usable vertical area
+            if (y > bounds.bottomY - fontSize) break;
+            
+            // Calculate arc intersection at this Y position
+            // Arc equation: (x - centerX)² + (y - centerY)² = radius²
+            // Solve for x: x = centerX - sqrt(radius² - (y - centerY)²)
+            const dy = y - bounds.arcCenterY;
+            const discriminant = bounds.arcRadius * bounds.arcRadius - dy * dy;
+            
+            let leftX;
+            if (discriminant >= 0) {
+                // Arc intersects this horizontal line
+                const sqrtDisc = Math.sqrt(discriminant);
+                leftX = bounds.arcCenterX - sqrtDisc;
+                // Add small padding from arc (2.5% of SSd)
+                leftX += bounds.SSd * 0.025;
+            } else {
+                // Y is outside arc range - use viewport left edge
+                leftX = -bounds.viewportWidth / 2 + (bounds.SSd * 0.03);
+            }
+            
+            const availableWidth = rightX - leftX;
+            const maxChars = Math.max(10, Math.floor(availableWidth / charWidth));
+            
+            lineTable.push({
+                y,
+                leftX,
+                rightX,
+                availableWidth,
+                maxChars
+            });
+        }
+        
+        return lineTable;
+    }
+
+    /**
+     * Word-wrap text using per-line character limits from line table
+     * Returns array of {text, lineIndex} for each wrapped line
+     */
+    wrapTextWithLineTable(text, lineTable) {
+        if (!text || !lineTable.length) return [];
+        
+        const words = String(text).split(/\s+/);
+        const wrappedLines = [];
+        let lineIndex = 0;
+        let currentLine = '';
+        
+        for (const word of words) {
+            if (lineIndex >= lineTable.length) {
+                // No more lines available - truncate
+                break;
+            }
+            
+            const maxChars = lineTable[lineIndex].maxChars;
+            const candidate = currentLine ? `${currentLine} ${word}` : word;
+            
+            if (candidate.length > maxChars && currentLine) {
+                // Current line is full - save it and start new line
+                wrappedLines.push({ text: currentLine, lineIndex });
+                lineIndex++;
+                currentLine = word;
+                
+                // Check if single word exceeds next line's limit
+                if (lineIndex < lineTable.length && word.length > lineTable[lineIndex].maxChars) {
+                    // Word too long - truncate it
+                    currentLine = word.substring(0, lineTable[lineIndex].maxChars - 3) + '...';
+                }
+            } else {
+                currentLine = candidate;
+            }
+        }
+        
+        // Don't forget the last line
+        if (currentLine && lineIndex < lineTable.length) {
+            wrappedLines.push({ text: currentLine, lineIndex });
+        }
+        
+        return wrappedLines;
+    }
+
+    /**
      * Render Gutenberg Bible verse text within the Detail Sector bounds
-     * Positions text in the upper-right area, right-aligned against the arc boundary
+     * Text flows along the arc boundary with per-line width calculation
      * Font size scales dynamically based on viewport dimensions
      */
     renderGutenbergVerse(body, contentGroup, startY) {
         const bounds = this.getContentBounds();
         
-        // Calculate available width for text (from arc edge to right margin)
-        // Use 85% of right edge X to stay well inside the arc
-        const textRightX = bounds.rightX * 0.85;
-        const availableWidth = textRightX - bounds.leftX - 20; // 20px padding from arc
-        
-        // Calculate available height (from top margin to ~60% down the viewport)
-        const availableHeight = bounds.viewportHeight * 0.5;
-        
-        // Dynamic font size based on shorter side (SSd) and aspect ratio
-        // Base: ~4.7% of SSd, adjusted for aspect ratio (1/3 larger than original 3.5%)
-        const aspectRatio = bounds.viewportWidth / bounds.viewportHeight;
-        let fontSizePercent = 0.047; // 4.7% of SSd as base
-        
-        // Adjust for extreme aspect ratios
-        if (aspectRatio > 1.5) {
-            // Wide/landscape: slightly smaller font
-            fontSizePercent = 0.040;
-        } else if (aspectRatio < 0.6) {
-            // Tall/narrow portrait: slightly larger font
-            fontSizePercent = 0.053;
-        }
-        
+        // Dynamic font size based on shorter side (SSd) only - no aspect ratio adjustment
+        const fontSizePercent = 0.05; // 5% of SSd
         const fontSize = Math.round(bounds.SSd * fontSizePercent);
-        const clampedFontSize = Math.max(16, Math.min(42, fontSize)); // Clamp between 16-42px
+        const clampedFontSize = Math.max(16, Math.min(42, fontSize));
         
-        const charWidth = clampedFontSize * 0.55;
-        const maxCharsPerLine = Math.floor(availableWidth / charWidth);
+        // Build line position table with per-line arc-based left margins
+        const lineTable = this.buildLineTable(bounds, clampedFontSize);
         
-        // Wrap text to fit available width
-        const lines = this.wrapText(body, Math.max(15, maxCharsPerLine));
-        const lineHeight = clampedFontSize * 1.4; // 1.4x line height
+        // Wrap text using per-line character limits
+        const wrappedLines = this.wrapTextWithLineTable(body, lineTable);
         
-        // Start position - use bounds top with padding proportional to font size
-        let currentY = bounds.topY + (clampedFontSize * 1.5);
-        
-        // Always log to console for debugging
         console.log('📖 GUTENBERG VERSE:', {
             SSd: bounds.SSd,
-            aspectRatio: aspectRatio.toFixed(2),
-            fontSizePercent,
-            rawFontSize: fontSize,
-            clampedFontSize,
-            maxCharsPerLine,
-            lineCount: lines.length
+            fontSize: clampedFontSize,
+            lineTableSize: lineTable.length,
+            wrappedLineCount: wrappedLines.length,
+            lineWidths: lineTable.slice(0, 5).map(l => l.maxChars)
         });
         
-        lines.forEach(line => {
+        // Render each line at its calculated position
+        wrappedLines.forEach(({ text, lineIndex }) => {
+            const lineInfo = lineTable[lineIndex];
+            
             const textElement = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-            textElement.setAttribute('x', textRightX);
-            textElement.setAttribute('y', currentY);
+            textElement.setAttribute('x', lineInfo.rightX);
+            textElement.setAttribute('y', lineInfo.y);
             textElement.setAttribute('text-anchor', 'end'); // Right-aligned
-            textElement.setAttribute('font-size', `${clampedFontSize}px`);
-            textElement.setAttribute('fill', '#1a1a1a'); // Near-black for readability
+            textElement.setAttribute('font-size', clampedFontSize);
+            textElement.setAttribute('fill', '#1a1a1a');
             textElement.setAttribute('font-family', "'Palatino Linotype', 'Book Antiqua', Palatino, serif");
             textElement.setAttribute('class', 'gutenberg-verse-text');
-            textElement.textContent = line;
+            textElement.textContent = text;
             contentGroup.appendChild(textElement);
-            currentY += lineHeight;
         });
         
-        return currentY + 12; // Return position after verse
+        // Return Y position after last line
+        const lastLineIndex = wrappedLines.length > 0 ? wrappedLines[wrappedLines.length - 1].lineIndex : 0;
+        const lineHeight = clampedFontSize * 1.4;
+        return lineTable.length > 0 ? lineTable[lastLineIndex].y + lineHeight : startY;
     }
 
     /**
