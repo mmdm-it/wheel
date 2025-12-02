@@ -9,6 +9,9 @@ body {
     background-color: #868686; 
     position: relative;
     overflow-x: hidden;
+    /* Disable tap highlight on mobile browsers */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 
 svg { 
@@ -19,7 +22,9 @@ svg {
 }
 
 .node { 
-    cursor: pointer; 
+    cursor: pointer;
+    /* Disable tap highlight on nodes */
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hidden { 
