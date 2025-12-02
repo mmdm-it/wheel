@@ -1053,16 +1053,15 @@ class MobileRenderer {
         const focusItemsChanged = this._lastFocusItemsKey !== focusItemsKey;
         this._lastFocusItemsKey = focusItemsKey;
         
-        // Only clear and rebuild DOM if focus items changed
-        if (focusItemsChanged) {
-            // Clear existing elements but preserve the background band
-            const background = focusRingGroup.querySelector('#focusRingBackground');
-            focusRingGroup.innerHTML = '';
-            if (background) focusRingGroup.appendChild(background);
-            this.focusElements.clear();
-        } else {
-            // Reuse existing elements - just update positions
-        }
+        // Always clear and rebuild during rotation to prevent ghosting
+        // The optimization is for static state (same items, same position) only
+        const shouldRebuild = focusItemsChanged || isRotating || rotationTriggered;
+        
+        // Clear existing elements but preserve the background band
+        const background = focusRingGroup.querySelector('#focusRingBackground');
+        focusRingGroup.innerHTML = '';
+        if (background) focusRingGroup.appendChild(background);
+        this.focusElements.clear();
         this.focusElements.clear();
         
         // Use updated angle calculation logic to maintain JSON order
@@ -1096,9 +1095,6 @@ class MobileRenderer {
         }
 
         // Process all focus items but only render those in viewport window
-        // Track which keys are currently visible for cleanup
-        const visibleKeys = new Set();
-        
         allFocusItems.forEach((focusItem, index) => {
             // Validate sort_number
             const sortNumber = focusItem.data?.sort_number ?? focusItem.sort_number;
@@ -1124,8 +1120,6 @@ class MobileRenderer {
             const maxViewportAngle = MOBILE_CONFIG.VIEWPORT.VIEWPORT_ARC / 2;
             
             if (angleDiff <= maxViewportAngle) {
-                visibleKeys.add(focusItem.key);
-                
                 // This focus item is in the viewport - render it
                 const position = this.calculateFocusPosition(angle, arcParams);
                 
@@ -1140,29 +1134,12 @@ class MobileRenderer {
                     this.focusRingDebug('🎯 SELECTED during rotation:', focusItem.name, 'angleDiff:', angleDiff.toFixed(3), 'threshold:', (angleStep * 0.5).toFixed(3));
                 }
                 
-                // PERFORMANCE: Reuse existing elements if focus items haven't changed
-                const existingElement = this.focusElements.get(focusItem.key);
-                if (!focusItemsChanged && existingElement) {
-                    // Update existing element position and selection state
-                    this.updateFocusElement(existingElement, position, angle, isSelected);
-                } else {
-                    // Create new focus element
-                    const element = this.createFocusElement(focusItem, position, angle, isSelected);
-                    this.focusElements.set(focusItem.key, element);
-                    focusRingGroup.appendChild(element);
-                }
+                // Create focus element (cleared at start of each frame)
+                const element = this.createFocusElement(focusItem, position, angle, isSelected);
+                this.focusElements.set(focusItem.key, element);
+                focusRingGroup.appendChild(element);
             }
         });
-        
-        // PERFORMANCE: Remove elements that are no longer visible
-        if (!focusItemsChanged) {
-            for (const [key, element] of this.focusElements) {
-                if (!visibleKeys.has(key)) {
-                    element.remove();
-                    this.focusElements.delete(key);
-                }
-            }
-        }
         
         // Position magnifying ring at the calculated center angle
         this.positionMagnifyingRing();
