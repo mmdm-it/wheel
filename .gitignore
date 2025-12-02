@@ -3,3 +3,12 @@ TODO.md
 
 # Deployment credentials
 .deploy-config
+git_token
+test-ftp.sh
+sync-to-server.sh
+
+# SSH keys (should never be committed)
+*.pem
+*.key
+id_rsa*
+namecheap_key*
