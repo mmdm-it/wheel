@@ -1749,6 +1749,17 @@ class DataManager {
         });
 
         return sorted.sort((a, b) => {
+            // Check for sort_number first (universal explicit sort order)
+            const sortA = a.data?.sort_number ?? a.sort_number;
+            const sortB = b.data?.sort_number ?? b.sort_number;
+            
+            if (sortA !== undefined && sortB !== undefined) {
+                if (sortA !== sortB) {
+                    return sortA - sortB;
+                }
+                return a.__sortFallbackIndex - b.__sortFallbackIndex;
+            }
+            
             // Check for track_number (songs in album context)
             const trackA = a.data?.track_number ?? a.track_number;
             const trackB = b.data?.track_number ?? b.track_number;
