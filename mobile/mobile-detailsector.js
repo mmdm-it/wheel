@@ -700,8 +700,8 @@ class MobileDetailSector {
      */
     buildLineTable(bounds, fontSize, maxLines = 20) {
         const lineHeight = fontSize * 1.4;
-        // Use larger estimate to avoid overflow - 0.75 works better for variable-width text
-        const charWidth = fontSize * 0.75;
+        // Adjust charWidth to control text wrapping density
+        const charWidth = fontSize * 0.55;
         const startY = bounds.topY + (fontSize * 1.5);
         const rightX = bounds.rightX - (bounds.SSd * 0.05); // 5% SSd padding from right (was 2.5%)
         
