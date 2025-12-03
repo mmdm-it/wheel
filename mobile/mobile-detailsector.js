@@ -418,7 +418,9 @@ class MobileDetailSector {
             
             if (isGutenberg) {
                 // Use dynamic bounds-based positioning for Bible verses
-                currentY = this.renderGutenbergVerse(body, contentGroup, currentY);
+                // Pass word_count for two-tier font sizing
+                const wordCount = context.word_count || 0;
+                currentY = this.renderGutenbergVerse(body, contentGroup, currentY, wordCount);
             } else {
                 // Standard rendering for other volumes
                 const lines = this.wrapText(body, 42);
@@ -696,14 +698,15 @@ class MobileDetailSector {
      * @param {Object} bounds - Content bounds from getContentBounds()
      * @param {number} fontSize - Font size for line height calculation
      * @param {number} maxLines - Maximum number of lines to compute
+     * @param {number} charWidthRatio - Character width as ratio of fontSize (0.45 for large, 0.35 for small)
      * @returns {Array} Array of {y, leftX, rightX, availableWidth, maxChars}
      */
-    buildLineTable(bounds, fontSize, maxLines = 20) {
+    buildLineTable(bounds, fontSize, maxLines = 20, charWidthRatio = 0.45) {
         const lineHeight = fontSize * 1.4;
-        // Adjust charWidth to control text wrapping density
-        const charWidth = fontSize * 0.55;
+        // charWidth ratio varies by font tier: 0.45 for 30px, 0.35 for 22px
+        const charWidth = fontSize * charWidthRatio;
         const startY = bounds.topY + (fontSize * 1.5);
-        const rightX = bounds.rightX - (bounds.SSd * 0.05); // 5% SSd padding from right (was 2.5%)
+        const rightX = bounds.rightX - (bounds.SSd * 0.05); // 5% SSd padding from right
         
         const lineTable = [];
         
@@ -724,8 +727,8 @@ class MobileDetailSector {
                 // Arc intersects this horizontal line
                 const sqrtDisc = Math.sqrt(discriminant);
                 leftX = bounds.arcCenterX - sqrtDisc;
-                // Add slight padding so text sits just inside the arc
-                leftX += bounds.SSd * 0.01;
+                // Add padding so text sits inside the arc
+                leftX += bounds.SSd * 0.03;
             } else {
                 // Y is outside arc range - use viewport left edge
                 leftX = -bounds.viewportWidth / 2 + (bounds.SSd * 0.03);
@@ -794,34 +797,35 @@ class MobileDetailSector {
     /**
      * Render Gutenberg Bible verse text within the Detail Sector bounds
      * Text flows along the arc boundary with per-line width calculation
-     * Font size scales dynamically based on viewport dimensions
+     * Two-tier font sizing: 30px for short verses (≤30 words), 22px for long verses (31+ words)
      */
-    renderGutenbergVerse(body, contentGroup, startY) {
+    renderGutenbergVerse(body, contentGroup, startY, wordCount = 0) {
         const bounds = this.getContentBounds();
         
-        // Fixed font size for debugging layout issues
-        const fontSize = 30; // 50% larger (was 20px)
+        // Two-tier font sizing based on word count
+        // Big Font tier: 1-30 words = 30px, charWidth 0.45
+        // Small Font tier: 31+ words = 22px, charWidth 0.35
+        const isShortVerse = wordCount <= 30;
+        const fontSize = isShortVerse ? 30 : 22;
+        const charWidthRatio = isShortVerse ? 0.45 : 0.35;
         
         // Build line position table with per-line arc-based left margins
-        const lineTable = this.buildLineTable(bounds, fontSize);
+        const lineTable = this.buildLineTable(bounds, fontSize, 20, charWidthRatio);
         
         // Wrap text using per-line character limits
         const wrappedLines = this.wrapTextWithLineTable(body, lineTable);
         
         console.log('📖 GUTENBERG VERSE:', {
-            SSd: bounds.SSd,
+            wordCount: wordCount,
+            tier: isShortVerse ? 'BIG (≤30 words)' : 'SMALL (31+ words)',
             fontSize: fontSize,
-            arcCenterX: bounds.arcCenterX,
-            arcCenterY: bounds.arcCenterY,
-            arcRadius: bounds.arcRadius,
+            charWidthRatio: charWidthRatio,
+            SSd: bounds.SSd,
             lineTableSize: lineTable.length,
-            wrappedLineCount: wrappedLines.length,
-            lineWidths: lineTable.slice(0, 5).map(l => l.maxChars),
-            firstLineLeftX: lineTable[0]?.leftX?.toFixed(1),
-            lastLineLeftX: lineTable[lineTable.length-1]?.leftX?.toFixed(1)
+            wrappedLineCount: wrappedLines.length
         });
         
-        // Render each line at its calculated position - LEFT ALIGNED for debugging
+        // Render each line at its calculated position - LEFT ALIGNED
         wrappedLines.forEach(({ text, lineIndex }, idx) => {
             const lineInfo = lineTable[lineIndex];
             
@@ -830,10 +834,10 @@ class MobileDetailSector {
             textElement.setAttribute('x', lineInfo.leftX);
             textElement.setAttribute('y', lineInfo.y);
             textElement.setAttribute('text-anchor', 'start');
-            textElement.setAttribute('font-size', fontSize);
             textElement.setAttribute('fill', '#1a1a1a');
-            textElement.setAttribute('font-family', "'EB Garamond', Georgia, serif");
             textElement.setAttribute('class', 'gutenberg-verse-text');
+            // Use inline style attribute to override all CSS rules
+            textElement.setAttribute('style', `font-size: ${fontSize}px !important; font-family: 'EB Garamond', Georgia, serif !important;`);
             textElement.textContent = text;
             contentGroup.appendChild(textElement);
             

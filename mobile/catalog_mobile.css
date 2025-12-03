@@ -60,10 +60,12 @@ text {
 }
 
 /* Gutenberg verse text - EB Garamond for historical Bible aesthetic */
-.gutenberg-verse-text {
+/* font-size controlled by JavaScript two-tier system (30px or 22px based on word count) */
+/* Use unset to let the SVG font-size attribute take effect */
+text.gutenberg-verse-text {
     font-family: 'EB Garamond', Georgia, serif !important;
     text-transform: none !important;
-    font-size: 30px !important;
+    font-size: unset !important;
 }
 
 /* Version text override */
