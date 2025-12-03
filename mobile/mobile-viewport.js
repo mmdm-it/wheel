@@ -46,17 +46,21 @@ class ViewportManager {
         // Calculate ring center directly to avoid circular dependency
         const viewport = this.getViewportInfo();
         
+        // Corner-to-corner arc formula (same logic as getArcParameters)
+        const LSd = viewport.LSd;
+        const SSd = viewport.SSd;
+        const radius = SSd / 2 + (LSd * LSd) / (2 * SSd);
+        
         let ringCenterX, ringCenterY;
         
-        // Ring center position based on orientation (same logic as getArcParameters)
         if (viewport.isPortrait) {
-            // Portrait: x = LSd - SSd/2, y = -(LSd/2)
-            ringCenterX = viewport.LSd - viewport.SSd / 2;
-            ringCenterY = -(viewport.LSd / 2);
+            // Portrait: Hub at (Radius - SSd/2, -LSd/2)
+            ringCenterX = radius - SSd / 2;
+            ringCenterY = -(LSd / 2);
         } else {
-            // Landscape: x = LSd/2, y = -(LSd - SSd/2)
-            ringCenterX = viewport.LSd / 2;
-            ringCenterY = -(viewport.LSd - viewport.SSd / 2);
+            // Landscape: Hub at (LSd/2, -(Radius - SSd/2))
+            ringCenterX = LSd / 2;
+            ringCenterY = -(radius - SSd / 2);
         }
         
         // Vector from ring center to screen center (0,0)
@@ -78,25 +82,29 @@ class ViewportManager {
             return this.cache.get(cacheKey);
         }
         
-        // Universal arc parameters formula for any device aspect ratio
-        // LSd = Long Side, SSd = Short Side
+        // Corner-to-corner arc formula
+        // Arc enters at upper-left corner, exits at lower-right corner
+        // Using "Radius from Chord Length and Arc Height" formula:
+        // R = h/2 + c²/(8h) where h = SSd (arc height), c = 2*LSd (chord length)
         const LSd = viewport.LSd;
         const SSd = viewport.SSd;
         
-        // Ring radius is always LSd
-        const radius = LSd;
+        // Radius: R = SSd/2 + (2*LSd)² / (8*SSd) = SSd/2 + LSd²/(2*SSd)
+        const radius = SSd / 2 + (LSd * LSd) / (2 * SSd);
         
-        // Ring center position based on orientation
+        // Hub position based on orientation
         let centerX, centerY;
         
         if (viewport.isPortrait) {
-            // Portrait: x = LSd - SSd/2, y = -(LSd/2)
-            centerX = LSd - SSd / 2;
+            // Portrait: Hub at (Radius - SSd/2, -LSd/2)
+            // Arc passes through (-SSd/2, -LSd/2) and (+SSd/2, +LSd/2)
+            centerX = radius - SSd / 2;
             centerY = -(LSd / 2);
         } else {
-            // Landscape: x = LSd/2, y = -(LSd - SSd/2)
+            // Landscape: Mirror - Hub at (LSd/2, -(Radius - SSd/2))
+            // Arc passes through (-LSd/2, -SSd/2) and (+LSd/2, +SSd/2)
             centerX = LSd / 2;
-            centerY = -(LSd - SSd / 2);
+            centerY = -(radius - SSd / 2);
         }
         
         const params = { centerX, centerY, radius, viewport };
@@ -104,7 +112,7 @@ class ViewportManager {
         
         Logger.debug('Arc parameters calculated for', viewport.width, 'x', viewport.height + ':', {
             centerX, centerY, radius,
-            'Expected for iPhone SE': 'center=(480, 333.5), radius=667'
+            'Expected for iPhone SE': 'center=(593.19, -333.5), radius=780.69'
         });
         return params;
     }
