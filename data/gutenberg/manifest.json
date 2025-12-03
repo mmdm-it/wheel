@@ -1,0 +1,1320 @@
+{
+  "Gutenberg_Bible": {
+    "display_config": {
+      "wheel_volume_version": "1.0",
+      "volume_schema_version": "2.0.0",
+      "volume_data_version": "2025.12.03",
+      "structure_type": "split",
+      "volume_type": "wheel_hierarchical",
+      "volume_name": "Gutenberg Bible",
+      "volume_description": "Complete Protestant Bible for testing hierarchical navigation",
+      "leaf_level": "verse",
+      "focus_ring_startup": {
+        "initial_magnified_item": 1,
+        "top_navigation_level": "testament",
+        "parent_button_style": "simple"
+      },
+      "ui_limits": {
+        "focus_ring_max_depth": 7,
+        "parent_button_min_depth": 1
+      },
+      "detail_sector": {
+        "mode": "product_browser",
+        "logo_base_path": "assets/",
+        "default_image": "gutenberg_logo"
+      },
+      "color_scheme": {
+        "background": "#d4a574",
+        "nodes": "#8b6f47",
+        "detail_sector": "#362e6a",
+        "detail_sector_opacity": "0.5",
+        "text_primary": "#000000",
+        "text_secondary": "#ffffff"
+      },
+      "hierarchy_levels": {
+        "testament": {
+          "text_format": "title_case",
+          "color": "#8b6f47",
+          "positioning": "center",
+          "display_name": "Testament",
+          "sort_type": "alphabetical",
+          "focus_text_position": "radial",
+          "focus_text_transform": "none",
+          "enable_rotation": false
+        },
+        "section": {
+          "text_format": "title_case",
+          "color": "#8b6f47",
+          "positioning": "arc",
+          "display_name": "Section",
+          "sort_type": "alphabetical",
+          "focus_text_position": "radial",
+          "focus_text_transform": "none"
+        },
+        "book": {
+          "text_format": "title_case",
+          "color": "#8b6f47",
+          "positioning": "arc",
+          "display_name": "Book",
+          "sort_type": "numeric_asc",
+          "sort_property": "book_number",
+          "focus_text_position": "radial",
+          "focus_text_transform": "none"
+        },
+        "chapter": {
+          "text_format": "append_suffix",
+          "color": "#8b6f47",
+          "positioning": "arc",
+          "display_name": "Chapter",
+          "sort_type": "numeric_asc",
+          "focus_text_position": "centered",
+          "focus_text_transform": "number_only",
+          "is_numeric": true,
+          "use_code_property": false
+        },
+        "verse": {
+          "text_format": "append_suffix",
+          "color": "#8b6f47",
+          "positioning": "arc",
+          "display_name": "Verse",
+          "sort_type": "numeric_asc",
+          "focus_text_position": "centered",
+          "focus_text_transform": "number_only",
+          "is_numeric": true,
+          "use_code_property": false,
+          "detail_sector": {
+            "mode": "text_display",
+            "views": [
+              {
+                "id": "latin_text",
+                "type": "info",
+                "body": [
+                  "{{text}}"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "testaments": {
+      "Vetus_Testamentum": {
+        "name": "Old Testament",
+        "sort_number": 1,
+        "sections": {
+          "Pentateuchus": {
+            "name": "Pentateuchus",
+            "book_keys": [
+              "GENE",
+              "EXO",
+              "LEVI",
+              "NUME",
+              "DEUT"
+            ],
+            "books": {
+              "GENE": {
+                "book_key": "GENE",
+                "book_name": "GENE",
+                "sort_number": 1,
+                "_external_file": "data/gutenberg/books/GENE.json",
+                "_loaded": false
+              },
+              "EXO": {
+                "book_key": "EXO",
+                "book_name": "EXO",
+                "sort_number": 2,
+                "_external_file": "data/gutenberg/books/EXO.json",
+                "_loaded": false
+              },
+              "LEVI": {
+                "book_key": "LEVI",
+                "book_name": "LEVI",
+                "sort_number": 3,
+                "_external_file": "data/gutenberg/books/LEVI.json",
+                "_loaded": false
+              },
+              "NUME": {
+                "book_key": "NUME",
+                "book_name": "NUME",
+                "sort_number": 4,
+                "_external_file": "data/gutenberg/books/NUME.json",
+                "_loaded": false
+              },
+              "DEUT": {
+                "book_key": "DEUT",
+                "book_name": "DEUT",
+                "sort_number": 5,
+                "_external_file": "data/gutenberg/books/DEUT.json",
+                "_loaded": false
+              }
+            },
+            "sort_number": 1
+          },
+          "Libri_Historici_et_Novellae_Biblicae": {
+            "name": "Libri Historici et Novellae Biblicae",
+            "book_keys": [
+              "IOSU",
+              "IUDI",
+              "RUTH",
+              "I_SAM",
+              "II_SAM",
+              "III_REG",
+              "IV_REG",
+              "TOBI",
+              "IUDITH",
+              "ESTH"
+            ],
+            "books": {
+              "IOSU": {
+                "book_key": "IOSU",
+                "book_name": "IOSU",
+                "sort_number": 6,
+                "_external_file": "data/gutenberg/books/IOSU.json",
+                "_loaded": false
+              },
+              "IUDI": {
+                "book_key": "IUDI",
+                "book_name": "IUDI",
+                "sort_number": 7,
+                "_external_file": "data/gutenberg/books/IUDI.json",
+                "_loaded": false
+              },
+              "RUTH": {
+                "book_key": "RUTH",
+                "book_name": "RUTH",
+                "sort_number": 8,
+                "_external_file": "data/gutenberg/books/RUTH.json",
+                "_loaded": false
+              },
+              "I_SAM": {
+                "book_key": "I_SAM",
+                "book_name": "I_SAM",
+                "sort_number": 9,
+                "_external_file": "data/gutenberg/books/I_SAM.json",
+                "_loaded": false
+              },
+              "II_SAM": {
+                "book_key": "II_SAM",
+                "book_name": "II_SAM",
+                "sort_number": 10,
+                "_external_file": "data/gutenberg/books/II_SAM.json",
+                "_loaded": false
+              },
+              "III_REG": {
+                "book_key": "III_REG",
+                "book_name": "III_REG",
+                "sort_number": 11,
+                "_external_file": "data/gutenberg/books/III_REG.json",
+                "_loaded": false
+              },
+              "IV_REG": {
+                "book_key": "IV_REG",
+                "book_name": "IV_REG",
+                "sort_number": 12,
+                "_external_file": "data/gutenberg/books/IV_REG.json",
+                "_loaded": false
+              },
+              "TOBI": {
+                "book_key": "TOBI",
+                "book_name": "TOBI",
+                "sort_number": 13,
+                "_external_file": "data/gutenberg/books/TOBI.json",
+                "_loaded": false
+              },
+              "IUDITH": {
+                "book_key": "IUDITH",
+                "book_name": "IUDITH",
+                "sort_number": 14,
+                "_external_file": "data/gutenberg/books/IUDITH.json",
+                "_loaded": false
+              },
+              "ESTH": {
+                "book_key": "ESTH",
+                "book_name": "ESTH",
+                "sort_number": 15,
+                "_external_file": "data/gutenberg/books/ESTH.json",
+                "_loaded": false
+              }
+            },
+            "sort_number": 2
+          },
+          "Libri_Sapientiae": {
+            "name": "Libri Sapientiae",
+            "book_keys": [
+              "IOB",
+              "PSAL",
+              "PROV",
+              "ECCLE",
+              "CANT",
+              "SAPI",
+              "ECCLU"
+            ],
+            "books": {
+              "IOB": {
+                "book_key": "IOB",
+                "book_name": "IOB",
+                "sort_number": 16,
+                "_external_file": "data/gutenberg/books/IOB.json",
+                "_loaded": false
+              },
+              "PSAL": {
+                "book_key": "PSAL",
+                "book_name": "PSAL",
+                "sort_number": 17,
+                "_external_file": "data/gutenberg/books/PSAL.json",
+                "_loaded": false
+              },
+              "PROV": {
+                "book_key": "PROV",
+                "book_name": "PROV",
+                "sort_number": 18,
+                "_external_file": "data/gutenberg/books/PROV.json",
+                "_loaded": false
+              },
+              "ECCLE": {
+                "book_key": "ECCLE",
+                "book_name": "ECCLE",
+                "sort_number": 19,
+                "_external_file": "data/gutenberg/books/ECCLE.json",
+                "_loaded": false
+              },
+              "CANT": {
+                "book_key": "CANT",
+                "book_name": "CANT",
+                "sort_number": 20,
+                "_external_file": "data/gutenberg/books/CANT.json",
+                "_loaded": false
+              },
+              "SAPI": {
+                "book_key": "SAPI",
+                "book_name": "SAPI",
+                "sort_number": 21,
+                "_external_file": "data/gutenberg/books/SAPI.json",
+                "_loaded": false
+              },
+              "ECCLU": {
+                "book_key": "ECCLU",
+                "book_name": "ECCLU",
+                "sort_number": 22,
+                "_external_file": "data/gutenberg/books/ECCLU.json",
+                "_loaded": false
+              }
+            },
+            "sort_number": 3
+          },
+          "Libri_Prophetici": {
+            "name": "Libri Prophetici",
+            "book_keys": [
+              "ISA",
+              "IERE",
+              "LAME",
+              "BARU",
+              "EZE",
+              "DAN",
+              "OSE",
+              "IOEL",
+              "AMO",
+              "ABDI",
+              "IONA",
+              "MICH",
+              "NAHU",
+              "HAB",
+              "SOPH",
+              "AGGE",
+              "ZACH",
+              "MALA"
+            ],
+            "books": {
+              "ISA": {
+                "book_key": "ISA",
+                "book_name": "ISA",
+                "sort_number": 23,
+                "_external_file": "data/gutenberg/books/ISA.json",
+                "_loaded": false
+              },
+              "IERE": {
+                "book_key": "IERE",
+                "book_name": "IERE",
+                "sort_number": 24,
+                "_external_file": "data/gutenberg/books/IERE.json",
+                "_loaded": false
+              },
+              "LAME": {
+                "book_key": "LAME",
+                "book_name": "LAME",
+                "sort_number": 25,
+                "_external_file": "data/gutenberg/books/LAME.json",
+                "_loaded": false
+              },
+              "BARU": {
+                "book_key": "BARU",
+                "book_name": "BARU",
+                "sort_number": 26,
+                "_external_file": "data/gutenberg/books/BARU.json",
+                "_loaded": false
+              },
+              "EZE": {
+                "book_key": "EZE",
+                "book_name": "EZE",
+                "sort_number": 27,
+                "_external_file": "data/gutenberg/books/EZE.json",
+                "_loaded": false
+              },
+              "DAN": {
+                "book_key": "DAN",
+                "book_name": "DAN",
+                "sort_number": 28,
+                "_external_file": "data/gutenberg/books/DAN.json",
+                "_loaded": false
+              },
+              "OSE": {
+                "book_key": "OSE",
+                "book_name": "OSE",
+                "sort_number": 29,
+                "_external_file": "data/gutenberg/books/OSE.json",
+                "_loaded": false
+              },
+              "IOEL": {
+                "book_key": "IOEL",
+                "book_name": "IOEL",
+                "sort_number": 30,
+                "_external_file": "data/gutenberg/books/IOEL.json",
+                "_loaded": false
+              },
+              "AMO": {
+                "book_key": "AMO",
+                "book_name": "AMO",
+                "sort_number": 31,
+                "_external_file": "data/gutenberg/books/AMO.json",
+                "_loaded": false
+              },
+              "ABDI": {
+                "book_key": "ABDI",
+                "book_name": "ABDI",
+                "sort_number": 32,
+                "_external_file": "data/gutenberg/books/ABDI.json",
+                "_loaded": false
+              },
+              "IONA": {
+                "book_key": "IONA",
+                "book_name": "IONA",
+                "sort_number": 33,
+                "_external_file": "data/gutenberg/books/IONA.json",
+                "_loaded": false
+              },
+              "MICH": {
+                "book_key": "MICH",
+                "book_name": "MICH",
+                "sort_number": 34,
+                "_external_file": "data/gutenberg/books/MICH.json",
+                "_loaded": false
+              },
+              "NAHU": {
+                "book_key": "NAHU",
+                "book_name": "NAHU",
+                "sort_number": 35,
+                "_external_file": "data/gutenberg/books/NAHU.json",
+                "_loaded": false
+              },
+              "HAB": {
+                "book_key": "HAB",
+                "book_name": "HAB",
+                "sort_number": 36,
+                "_external_file": "data/gutenberg/books/HAB.json",
+                "_loaded": false
+              },
+              "SOPH": {
+                "book_key": "SOPH",
+                "book_name": "SOPH",
+                "sort_number": 37,
+                "_external_file": "data/gutenberg/books/SOPH.json",
+                "_loaded": false
+              },
+              "AGGE": {
+                "book_key": "AGGE",
+                "book_name": "AGGE",
+                "sort_number": 38,
+                "_external_file": "data/gutenberg/books/AGGE.json",
+                "_loaded": false
+              },
+              "ZACH": {
+                "book_key": "ZACH",
+                "book_name": "ZACH",
+                "sort_number": 39,
+                "_external_file": "data/gutenberg/books/ZACH.json",
+                "_loaded": false
+              },
+              "MALA": {
+                "book_key": "MALA",
+                "book_name": "MALA",
+                "sort_number": 40,
+                "_external_file": "data/gutenberg/books/MALA.json",
+                "_loaded": false
+              }
+            },
+            "sort_number": 4
+          }
+        }
+      },
+      "Novum_Testamentum": {
+        "name": "New Testament",
+        "sort_number": 2,
+        "sections": {
+          "Evangelia": {
+            "name": "Evangelia",
+            "book_keys": [
+              "MATHE",
+              "MARC",
+              "LUCA",
+              "IOHA"
+            ],
+            "books": {
+              "MATHE": {
+                "book_key": "MATHE",
+                "book_name": "MATHE",
+                "sort_number": 41,
+                "_external_file": "data/gutenberg/books/MATHE.json",
+                "_loaded": false
+              },
+              "MARC": {
+                "book_key": "MARC",
+                "book_name": "MARC",
+                "sort_number": 42,
+                "_external_file": "data/gutenberg/books/MARC.json",
+                "_loaded": false
+              },
+              "LUCA": {
+                "book_key": "LUCA",
+                "book_name": "LUCA",
+                "sort_number": 43,
+                "_external_file": "data/gutenberg/books/LUCA.json",
+                "_loaded": false
+              },
+              "IOHA": {
+                "book_key": "IOHA",
+                "book_name": "IOHA",
+                "sort_number": 44,
+                "_external_file": "data/gutenberg/books/IOHA.json",
+                "_loaded": false
+              }
+            },
+            "sort_number": 1
+          },
+          "Actus_Apostolorum": {
+            "name": "Actus Apostolorum",
+            "book_keys": [
+              "ACTU"
+            ],
+            "books": {
+              "ACTU": {
+                "book_key": "ACTU",
+                "book_name": "ACTU",
+                "sort_number": 45,
+                "_external_file": "data/gutenberg/books/ACTU.json",
+                "_loaded": false
+              }
+            },
+            "sort_number": 2
+          },
+          "Epistolae": {
+            "name": "Epistolae",
+            "book_keys": [
+              "ROM",
+              "I_COR",
+              "II_COR",
+              "GALA",
+              "EPHE",
+              "PHILI",
+              "COLO",
+              "I_THES",
+              "II_THES",
+              "I_TIMO",
+              "II_TIMO",
+              "TITU",
+              "PHILE",
+              "HEBR",
+              "IACO",
+              "I_PETR",
+              "II_PETR",
+              "I_IOHA",
+              "II_IOHA",
+              "III_IOHA",
+              "IUDA"
+            ],
+            "books": {
+              "ROM": {
+                "book_key": "ROM",
+                "book_name": "ROM",
+                "sort_number": 46,
+                "_external_file": "data/gutenberg/books/ROM.json",
+                "_loaded": false
+              },
+              "I_COR": {
+                "book_key": "I_COR",
+                "book_name": "I_COR",
+                "sort_number": 47,
+                "_external_file": "data/gutenberg/books/I_COR.json",
+                "_loaded": false
+              },
+              "II_COR": {
+                "book_key": "II_COR",
+                "book_name": "II_COR",
+                "sort_number": 48,
+                "_external_file": "data/gutenberg/books/II_COR.json",
+                "_loaded": false
+              },
+              "GALA": {
+                "book_key": "GALA",
+                "book_name": "GALA",
+                "sort_number": 49,
+                "_external_file": "data/gutenberg/books/GALA.json",
+                "_loaded": false
+              },
+              "EPHE": {
+                "book_key": "EPHE",
+                "book_name": "EPHE",
+                "sort_number": 50,
+                "_external_file": "data/gutenberg/books/EPHE.json",
+                "_loaded": false
+              },
+              "PHILI": {
+                "book_key": "PHILI",
+                "book_name": "PHILI",
+                "sort_number": 51,
+                "_external_file": "data/gutenberg/books/PHILI.json",
+                "_loaded": false
+              },
+              "COLO": {
+                "book_key": "COLO",
+                "book_name": "COLO",
+                "sort_number": 52,
+                "_external_file": "data/gutenberg/books/COLO.json",
+                "_loaded": false
+              },
+              "I_THES": {
+                "book_key": "I_THES",
+                "book_name": "I_THES",
+                "sort_number": 53,
+                "_external_file": "data/gutenberg/books/I_THES.json",
+                "_loaded": false
+              },
+              "II_THES": {
+                "book_key": "II_THES",
+                "book_name": "II_THES",
+                "sort_number": 54,
+                "_external_file": "data/gutenberg/books/II_THES.json",
+                "_loaded": false
+              },
+              "I_TIMO": {
+                "book_key": "I_TIMO",
+                "book_name": "I_TIMO",
+                "sort_number": 55,
+                "_external_file": "data/gutenberg/books/I_TIMO.json",
+                "_loaded": false
+              },
+              "II_TIMO": {
+                "book_key": "II_TIMO",
+                "book_name": "II_TIMO",
+                "sort_number": 56,
+                "_external_file": "data/gutenberg/books/II_TIMO.json",
+                "_loaded": false
+              },
+              "TITU": {
+                "book_key": "TITU",
+                "book_name": "TITU",
+                "sort_number": 57,
+                "_external_file": "data/gutenberg/books/TITU.json",
+                "_loaded": false
+              },
+              "PHILE": {
+                "book_key": "PHILE",
+                "book_name": "PHILE",
+                "sort_number": 58,
+                "_external_file": "data/gutenberg/books/PHILE.json",
+                "_loaded": false
+              },
+              "HEBR": {
+                "book_key": "HEBR",
+                "book_name": "HEBR",
+                "sort_number": 59,
+                "_external_file": "data/gutenberg/books/HEBR.json",
+                "_loaded": false
+              },
+              "IACO": {
+                "book_key": "IACO",
+                "book_name": "IACO",
+                "sort_number": 60,
+                "_external_file": "data/gutenberg/books/IACO.json",
+                "_loaded": false
+              },
+              "I_PETR": {
+                "book_key": "I_PETR",
+                "book_name": "I_PETR",
+                "sort_number": 61,
+                "_external_file": "data/gutenberg/books/I_PETR.json",
+                "_loaded": false
+              },
+              "II_PETR": {
+                "book_key": "II_PETR",
+                "book_name": "II_PETR",
+                "sort_number": 62,
+                "_external_file": "data/gutenberg/books/II_PETR.json",
+                "_loaded": false
+              },
+              "I_IOHA": {
+                "book_key": "I_IOHA",
+                "book_name": "I_IOHA",
+                "sort_number": 63,
+                "_external_file": "data/gutenberg/books/I_IOHA.json",
+                "_loaded": false
+              },
+              "II_IOHA": {
+                "book_key": "II_IOHA",
+                "book_name": "II_IOHA",
+                "sort_number": 64,
+                "_external_file": "data/gutenberg/books/II_IOHA.json",
+                "_loaded": false
+              },
+              "III_IOHA": {
+                "book_key": "III_IOHA",
+                "book_name": "III_IOHA",
+                "sort_number": 65,
+                "_external_file": "data/gutenberg/books/III_IOHA.json",
+                "_loaded": false
+              },
+              "IUDA": {
+                "book_key": "IUDA",
+                "book_name": "IUDA",
+                "sort_number": 66,
+                "_external_file": "data/gutenberg/books/IUDA.json",
+                "_loaded": false
+              }
+            },
+            "sort_number": 3
+          },
+          "Apocalypsis": {
+            "name": "Apocalypsis",
+            "book_keys": [
+              "APOC"
+            ],
+            "books": {
+              "APOC": {
+                "book_key": "APOC",
+                "book_name": "APOC",
+                "sort_number": 67,
+                "_external_file": "data/gutenberg/books/APOC.json",
+                "_loaded": false
+              }
+            },
+            "sort_number": 4
+          }
+        }
+      }
+    },
+    "books": {
+      "GENE": {
+        "path": "books/GENE.json",
+        "name": "GENE",
+        "testament": "Vetus_Testamentum",
+        "section": "Pentateuchus",
+        "sort_number": 1,
+        "chapters": 50,
+        "verses": 1533
+      },
+      "EXO": {
+        "path": "books/EXO.json",
+        "name": "EXO",
+        "testament": "Vetus_Testamentum",
+        "section": "Pentateuchus",
+        "sort_number": 2,
+        "chapters": 1,
+        "verses": 1
+      },
+      "LEVI": {
+        "path": "books/LEVI.json",
+        "name": "LEVI",
+        "testament": "Vetus_Testamentum",
+        "section": "Pentateuchus",
+        "sort_number": 3,
+        "chapters": 1,
+        "verses": 1
+      },
+      "NUME": {
+        "path": "books/NUME.json",
+        "name": "NUME",
+        "testament": "Vetus_Testamentum",
+        "section": "Pentateuchus",
+        "sort_number": 4,
+        "chapters": 1,
+        "verses": 1
+      },
+      "DEUT": {
+        "path": "books/DEUT.json",
+        "name": "DEUT",
+        "testament": "Vetus_Testamentum",
+        "section": "Pentateuchus",
+        "sort_number": 5,
+        "chapters": 1,
+        "verses": 1
+      },
+      "IOSU": {
+        "path": "books/IOSU.json",
+        "name": "IOSU",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Historici_et_Novellae_Biblicae",
+        "sort_number": 6,
+        "chapters": 0,
+        "verses": 0
+      },
+      "IUDI": {
+        "path": "books/IUDI.json",
+        "name": "IUDI",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Historici_et_Novellae_Biblicae",
+        "sort_number": 7,
+        "chapters": 0,
+        "verses": 0
+      },
+      "RUTH": {
+        "path": "books/RUTH.json",
+        "name": "RUTH",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Historici_et_Novellae_Biblicae",
+        "sort_number": 8,
+        "chapters": 0,
+        "verses": 0
+      },
+      "I_SAM": {
+        "path": "books/I_SAM.json",
+        "name": "I_SAM",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Historici_et_Novellae_Biblicae",
+        "sort_number": 9,
+        "chapters": 0,
+        "verses": 0
+      },
+      "II_SAM": {
+        "path": "books/II_SAM.json",
+        "name": "II_SAM",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Historici_et_Novellae_Biblicae",
+        "sort_number": 10,
+        "chapters": 0,
+        "verses": 0
+      },
+      "III_REG": {
+        "path": "books/III_REG.json",
+        "name": "III_REG",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Historici_et_Novellae_Biblicae",
+        "sort_number": 11,
+        "chapters": 0,
+        "verses": 0
+      },
+      "IV_REG": {
+        "path": "books/IV_REG.json",
+        "name": "IV_REG",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Historici_et_Novellae_Biblicae",
+        "sort_number": 12,
+        "chapters": 0,
+        "verses": 0
+      },
+      "TOBI": {
+        "path": "books/TOBI.json",
+        "name": "TOBI",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Historici_et_Novellae_Biblicae",
+        "sort_number": 13,
+        "chapters": 0,
+        "verses": 0
+      },
+      "IUDITH": {
+        "path": "books/IUDITH.json",
+        "name": "IUDITH",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Historici_et_Novellae_Biblicae",
+        "sort_number": 14,
+        "chapters": 0,
+        "verses": 0
+      },
+      "ESTH": {
+        "path": "books/ESTH.json",
+        "name": "ESTH",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Historici_et_Novellae_Biblicae",
+        "sort_number": 15,
+        "chapters": 16,
+        "verses": 17
+      },
+      "IOB": {
+        "path": "books/IOB.json",
+        "name": "IOB",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Sapientiae",
+        "sort_number": 16,
+        "chapters": 0,
+        "verses": 0
+      },
+      "PSAL": {
+        "path": "books/PSAL.json",
+        "name": "PSAL",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Sapientiae",
+        "sort_number": 17,
+        "chapters": 0,
+        "verses": 0
+      },
+      "PROV": {
+        "path": "books/PROV.json",
+        "name": "PROV",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Sapientiae",
+        "sort_number": 18,
+        "chapters": 0,
+        "verses": 0
+      },
+      "ECCLE": {
+        "path": "books/ECCLE.json",
+        "name": "ECCLE",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Sapientiae",
+        "sort_number": 19,
+        "chapters": 0,
+        "verses": 0
+      },
+      "CANT": {
+        "path": "books/CANT.json",
+        "name": "CANT",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Sapientiae",
+        "sort_number": 20,
+        "chapters": 0,
+        "verses": 0
+      },
+      "SAPI": {
+        "path": "books/SAPI.json",
+        "name": "SAPI",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Sapientiae",
+        "sort_number": 21,
+        "chapters": 0,
+        "verses": 0
+      },
+      "ECCLU": {
+        "path": "books/ECCLU.json",
+        "name": "ECCLU",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Sapientiae",
+        "sort_number": 22,
+        "chapters": 0,
+        "verses": 0
+      },
+      "ISA": {
+        "path": "books/ISA.json",
+        "name": "ISA",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 23,
+        "chapters": 0,
+        "verses": 0
+      },
+      "IERE": {
+        "path": "books/IERE.json",
+        "name": "IERE",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 24,
+        "chapters": 0,
+        "verses": 0
+      },
+      "LAME": {
+        "path": "books/LAME.json",
+        "name": "LAME",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 25,
+        "chapters": 0,
+        "verses": 0
+      },
+      "BARU": {
+        "path": "books/BARU.json",
+        "name": "BARU",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 26,
+        "chapters": 0,
+        "verses": 0
+      },
+      "EZE": {
+        "path": "books/EZE.json",
+        "name": "EZE",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 27,
+        "chapters": 0,
+        "verses": 0
+      },
+      "DAN": {
+        "path": "books/DAN.json",
+        "name": "DAN",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 28,
+        "chapters": 0,
+        "verses": 0
+      },
+      "OSE": {
+        "path": "books/OSE.json",
+        "name": "OSE",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 29,
+        "chapters": 0,
+        "verses": 0
+      },
+      "IOEL": {
+        "path": "books/IOEL.json",
+        "name": "IOEL",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 30,
+        "chapters": 0,
+        "verses": 0
+      },
+      "AMO": {
+        "path": "books/AMO.json",
+        "name": "AMO",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 31,
+        "chapters": 0,
+        "verses": 0
+      },
+      "ABDI": {
+        "path": "books/ABDI.json",
+        "name": "ABDI",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 32,
+        "chapters": 0,
+        "verses": 0
+      },
+      "IONA": {
+        "path": "books/IONA.json",
+        "name": "IONA",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 33,
+        "chapters": 0,
+        "verses": 0
+      },
+      "MICH": {
+        "path": "books/MICH.json",
+        "name": "MICH",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 34,
+        "chapters": 0,
+        "verses": 0
+      },
+      "NAHU": {
+        "path": "books/NAHU.json",
+        "name": "NAHU",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 35,
+        "chapters": 0,
+        "verses": 0
+      },
+      "HAB": {
+        "path": "books/HAB.json",
+        "name": "HAB",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 36,
+        "chapters": 0,
+        "verses": 0
+      },
+      "SOPH": {
+        "path": "books/SOPH.json",
+        "name": "SOPH",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 37,
+        "chapters": 0,
+        "verses": 0
+      },
+      "AGGE": {
+        "path": "books/AGGE.json",
+        "name": "AGGE",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 38,
+        "chapters": 0,
+        "verses": 0
+      },
+      "ZACH": {
+        "path": "books/ZACH.json",
+        "name": "ZACH",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 39,
+        "chapters": 0,
+        "verses": 0
+      },
+      "MALA": {
+        "path": "books/MALA.json",
+        "name": "MALA",
+        "testament": "Vetus_Testamentum",
+        "section": "Libri_Prophetici",
+        "sort_number": 40,
+        "chapters": 0,
+        "verses": 0
+      },
+      "MATHE": {
+        "path": "books/MATHE.json",
+        "name": "MATHE",
+        "testament": "Novum_Testamentum",
+        "section": "Evangelia",
+        "sort_number": 41,
+        "chapters": 0,
+        "verses": 0
+      },
+      "MARC": {
+        "path": "books/MARC.json",
+        "name": "MARC",
+        "testament": "Novum_Testamentum",
+        "section": "Evangelia",
+        "sort_number": 42,
+        "chapters": 0,
+        "verses": 0
+      },
+      "LUCA": {
+        "path": "books/LUCA.json",
+        "name": "LUCA",
+        "testament": "Novum_Testamentum",
+        "section": "Evangelia",
+        "sort_number": 43,
+        "chapters": 0,
+        "verses": 0
+      },
+      "IOHA": {
+        "path": "books/IOHA.json",
+        "name": "IOHA",
+        "testament": "Novum_Testamentum",
+        "section": "Evangelia",
+        "sort_number": 44,
+        "chapters": 0,
+        "verses": 0
+      },
+      "ACTU": {
+        "path": "books/ACTU.json",
+        "name": "ACTU",
+        "testament": "Novum_Testamentum",
+        "section": "Actus_Apostolorum",
+        "sort_number": 45,
+        "chapters": 0,
+        "verses": 0
+      },
+      "ROM": {
+        "path": "books/ROM.json",
+        "name": "ROM",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 46,
+        "chapters": 0,
+        "verses": 0
+      },
+      "I_COR": {
+        "path": "books/I_COR.json",
+        "name": "I_COR",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 47,
+        "chapters": 0,
+        "verses": 0
+      },
+      "II_COR": {
+        "path": "books/II_COR.json",
+        "name": "II_COR",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 48,
+        "chapters": 0,
+        "verses": 0
+      },
+      "GALA": {
+        "path": "books/GALA.json",
+        "name": "GALA",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 49,
+        "chapters": 0,
+        "verses": 0
+      },
+      "EPHE": {
+        "path": "books/EPHE.json",
+        "name": "EPHE",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 50,
+        "chapters": 0,
+        "verses": 0
+      },
+      "PHILI": {
+        "path": "books/PHILI.json",
+        "name": "PHILI",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 51,
+        "chapters": 0,
+        "verses": 0
+      },
+      "COLO": {
+        "path": "books/COLO.json",
+        "name": "COLO",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 52,
+        "chapters": 0,
+        "verses": 0
+      },
+      "I_THES": {
+        "path": "books/I_THES.json",
+        "name": "I_THES",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 53,
+        "chapters": 0,
+        "verses": 0
+      },
+      "II_THES": {
+        "path": "books/II_THES.json",
+        "name": "II_THES",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 54,
+        "chapters": 0,
+        "verses": 0
+      },
+      "I_TIMO": {
+        "path": "books/I_TIMO.json",
+        "name": "I_TIMO",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 55,
+        "chapters": 0,
+        "verses": 0
+      },
+      "II_TIMO": {
+        "path": "books/II_TIMO.json",
+        "name": "II_TIMO",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 56,
+        "chapters": 0,
+        "verses": 0
+      },
+      "TITU": {
+        "path": "books/TITU.json",
+        "name": "TITU",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 57,
+        "chapters": 0,
+        "verses": 0
+      },
+      "PHILE": {
+        "path": "books/PHILE.json",
+        "name": "PHILE",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 58,
+        "chapters": 0,
+        "verses": 0
+      },
+      "HEBR": {
+        "path": "books/HEBR.json",
+        "name": "HEBR",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 59,
+        "chapters": 0,
+        "verses": 0
+      },
+      "IACO": {
+        "path": "books/IACO.json",
+        "name": "IACO",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 60,
+        "chapters": 0,
+        "verses": 0
+      },
+      "I_PETR": {
+        "path": "books/I_PETR.json",
+        "name": "I_PETR",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 61,
+        "chapters": 0,
+        "verses": 0
+      },
+      "II_PETR": {
+        "path": "books/II_PETR.json",
+        "name": "II_PETR",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 62,
+        "chapters": 0,
+        "verses": 0
+      },
+      "I_IOHA": {
+        "path": "books/I_IOHA.json",
+        "name": "I_IOHA",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 63,
+        "chapters": 0,
+        "verses": 0
+      },
+      "II_IOHA": {
+        "path": "books/II_IOHA.json",
+        "name": "II_IOHA",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 64,
+        "chapters": 0,
+        "verses": 0
+      },
+      "III_IOHA": {
+        "path": "books/III_IOHA.json",
+        "name": "III_IOHA",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 65,
+        "chapters": 0,
+        "verses": 0
+      },
+      "IUDA": {
+        "path": "books/IUDA.json",
+        "name": "IUDA",
+        "testament": "Novum_Testamentum",
+        "section": "Epistolae",
+        "sort_number": 66,
+        "chapters": 0,
+        "verses": 0
+      },
+      "APOC": {
+        "path": "books/APOC.json",
+        "name": "APOC",
+        "testament": "Novum_Testamentum",
+        "section": "Apocalypsis",
+        "sort_number": 67,
+        "chapters": 0,
+        "verses": 0
+      }
+    }
+  }
+}

@@ -18,6 +18,10 @@ class DataManager {
         this.availableVolumes = [];
         this.rootDataKey = null; // e.g., 'MMdM' or 'Gutenberg_Bible'
         
+        // Split structure support: Track loaded external files
+        this.loadedExternalFiles = new Set();
+        this.externalFileLoadingPromises = new Map(); // Prevent duplicate loads
+        
         // Phase 4 Consolidation: Bilingual coordinate storage
         this.coordinateCache = new Map(); // Item key -> HubNucCoordinate
         this.coordinateMetadata = new Map(); // Level -> coordinate stats
@@ -189,11 +193,68 @@ class DataManager {
             'fairhope.json'
         ];
         
-        const volumes = [];
+        // Also check for split manifests (these take precedence)
+        const splitManifests = [
+            { manifest: 'data/gutenberg/manifest.json', volumeId: 'gutenberg' }
+        ];
         
-        // TODO: Replace with server directory listing API
-        // This will enable true plug-and-play volume discovery
+        const volumes = [];
+        const addedVolumeIds = new Set();
+        
+        // First, check for split manifests (they take precedence)
+        for (const { manifest, volumeId } of splitManifests) {
+            try {
+                const response = await fetch(`./${manifest}`);
+                
+                if (!response.ok) {
+                    continue;
+                }
+                
+                const data = await response.json();
+                const rootKey = Object.keys(data)[0];
+                const rootData = data[rootKey];
+                
+                if (rootData &&
+                    rootData.display_config &&
+                    rootData.display_config.volume_type === 'wheel_hierarchical' &&
+                    rootData.display_config.structure_type === 'split') {
+                    
+                    const schemaVersion = rootData.display_config.volume_schema_version || '1.0.0';
+                    const dataVersion = rootData.display_config.volume_data_version || 'unknown';
+                    
+                    Logger.info(`📦 Split volume discovered: ${rootData.display_config.volume_name}`);
+                    Logger.info(`   Schema: ${schemaVersion} | Data: ${dataVersion}`);
+                    
+                    volumes.push({
+                        filename: manifest,
+                        name: rootData.display_config.volume_name || volumeId,
+                        description: rootData.display_config.volume_description || '',
+                        version: rootData.display_config.wheel_volume_version,
+                        schemaVersion: schemaVersion,
+                        dataVersion: dataVersion,
+                        structureType: 'split',
+                        rootKey: rootKey
+                    });
+                    
+                    addedVolumeIds.add(volumeId);
+                    Logger.debug(`✅ Found split volume: ${rootData.display_config.volume_name}`);
+                }
+            } catch (error) {
+                Logger.debug(`⏭️  Error checking split manifest ${manifest}: ${error.message}`);
+            }
+        }
+        
+        // Then check monolithic volumes (skip if split version already found)
         for (const filename of commonVolumeFiles) {
+            // Extract volume ID from filename (e.g., 'gutenberg.json' -> 'gutenberg')
+            const volumeId = filename.replace('.json', '');
+            
+            // Skip if split version already discovered
+            if (addedVolumeIds.has(volumeId)) {
+                Logger.debug(`⏭️  Skipping ${filename} - split version already loaded`);
+                continue;
+            }
+            
             try {
                 const response = await fetch(`./${filename}`);
                 
@@ -244,7 +305,7 @@ class DataManager {
         
         if (volumes.length > 0) {
             volumes.forEach(vol => {
-                Logger.verbose(`   - ${vol.name} (${vol.filename})`);
+                Logger.verbose(`   - ${vol.name} (${vol.filename}) [${vol.structureType}]`);
             });
         }
         
@@ -288,7 +349,7 @@ class DataManager {
                 
                 // Check if structure type is supported
                 if (structureType === 'split') {
-                    Logger.warn(`⚠️  Split structure detected - not yet implemented. Falling back to monolithic loader.`);
+                    Logger.info(`📂 Split structure detected - lazy loading enabled for external book files`);
                 }
             }
             
@@ -303,6 +364,153 @@ class DataManager {
         } finally {
             this.loading = false;
         }
+    }
+
+    /**
+     * Check if current volume uses split structure with lazy loading
+     * @returns {boolean} True if volume uses split structure
+     */
+    isSplitStructure() {
+        const displayConfig = this.getDisplayConfig();
+        return displayConfig && displayConfig.structure_type === 'split';
+    }
+
+    /**
+     * Load external file data and merge into the main data structure
+     * Used for split volumes where books/sections are stored in separate files
+     * @param {string} externalFilePath - Path to the external JSON file
+     * @param {Object} targetLocation - Location in data structure to merge into
+     * @returns {Promise<Object>} The loaded data
+     */
+    async loadExternalFile(externalFilePath, targetLocation) {
+        // Check if already loaded
+        if (this.loadedExternalFiles.has(externalFilePath)) {
+            Logger.debug(`📦 External file already loaded: ${externalFilePath}`);
+            return targetLocation;
+        }
+        
+        // Check if load is already in progress
+        if (this.externalFileLoadingPromises.has(externalFilePath)) {
+            Logger.debug(`⏳ Waiting for in-progress load: ${externalFilePath}`);
+            return this.externalFileLoadingPromises.get(externalFilePath);
+        }
+        
+        // Start loading
+        const loadPromise = this._performExternalFileLoad(externalFilePath, targetLocation);
+        this.externalFileLoadingPromises.set(externalFilePath, loadPromise);
+        
+        try {
+            const result = await loadPromise;
+            return result;
+        } finally {
+            this.externalFileLoadingPromises.delete(externalFilePath);
+        }
+    }
+
+    async _performExternalFileLoad(externalFilePath, targetLocation) {
+        Logger.info(`📥 Lazy loading external file: ${externalFilePath}`);
+        
+        try {
+            const response = await fetch(`./${externalFilePath}`);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+            
+            const externalData = await response.json();
+            
+            // Merge external data into target location
+            // For book files, this means adding chapters data
+            if (externalData.chapters) {
+                targetLocation.chapters = externalData.chapters;
+                targetLocation._loaded = true;
+                Logger.info(`✅ Loaded ${Object.keys(externalData.chapters).length} chapters from ${externalFilePath}`);
+            } else {
+                // Generic merge - copy all properties except metadata
+                Object.keys(externalData).forEach(key => {
+                    if (!key.startsWith('_')) {
+                        targetLocation[key] = externalData[key];
+                    }
+                });
+                targetLocation._loaded = true;
+                Logger.info(`✅ Loaded external file: ${externalFilePath}`);
+            }
+            
+            this.loadedExternalFiles.add(externalFilePath);
+            return targetLocation;
+            
+        } catch (error) {
+            Logger.error(`❌ Failed to load external file ${externalFilePath}:`, error);
+            throw error;
+        }
+    }
+
+    /**
+     * Ensure book data is loaded before accessing its children (chapters)
+     * @param {Object} bookItem - The book item that may need loading
+     * @returns {Promise<boolean>} True if book is ready (already loaded or successfully loaded)
+     */
+    async ensureBookLoaded(bookItem) {
+        if (!this.isSplitStructure()) {
+            return true; // Monolithic structure - already loaded
+        }
+        
+        // Navigate to the book in the data structure
+        const bookData = this.getBookDataLocation(bookItem);
+        
+        if (!bookData) {
+            Logger.warn(`ensureBookLoaded: Could not find book data for ${bookItem.name}`);
+            return false;
+        }
+        
+        // Check if book needs loading
+        if (bookData._loaded === true) {
+            return true; // Already loaded
+        }
+        
+        if (!bookData._external_file) {
+            Logger.debug(`ensureBookLoaded: Book ${bookItem.name} has no external file reference`);
+            return true; // No external file - already has data
+        }
+        
+        // Load the external file
+        try {
+            await this.loadExternalFile(bookData._external_file, bookData);
+            return true;
+        } catch (error) {
+            Logger.error(`Failed to load book ${bookItem.name}:`, error);
+            return false;
+        }
+    }
+
+    /**
+     * Get the actual data location for a book item
+     * @param {Object} bookItem - Book item with __path metadata
+     * @returns {Object|null} The book data object in the loaded data structure
+     */
+    getBookDataLocation(bookItem) {
+        if (!bookItem || !bookItem.__path || bookItem.__path.length < 3) {
+            return null;
+        }
+        
+        const [testament, section, book] = bookItem.__path;
+        const rootData = this.data && this.data[this.rootDataKey];
+        
+        if (!rootData || !rootData.testaments) {
+            return null;
+        }
+        
+        const testamentData = rootData.testaments[testament];
+        if (!testamentData || !testamentData.sections) {
+            return null;
+        }
+        
+        const sectionData = testamentData.sections[section];
+        if (!sectionData || !sectionData.books) {
+            return null;
+        }
+        
+        return sectionData.books[book];
     }
 
     async load() {
@@ -1207,6 +1415,24 @@ class DataManager {
             // Navigate to child collection from parent item
             const childCollectionName = this.getPluralPropertyName(childLevelName);
             childrenData = dataLocation && dataLocation[childCollectionName];
+            
+            // Split structure support: Check if data needs lazy loading
+            if (!childrenData && this.isSplitStructure() && dataLocation && dataLocation._external_file) {
+                // Data needs to be loaded from external file
+                Logger.info(`📥 Split structure: ${childCollectionName} needs lazy loading from ${dataLocation._external_file}`);
+                
+                // Mark that lazy loading is needed but not yet loaded
+                // Return empty array - the caller should trigger async load
+                this._pendingLazyLoad = {
+                    parentItem: parentItem,
+                    childLevelName: childLevelName,
+                    externalFile: dataLocation._external_file,
+                    targetLocation: dataLocation
+                };
+                
+                // Return empty for now - UI should detect and trigger async load
+                return [];
+            }
         }
         
         if (!childrenData) {

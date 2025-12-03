@@ -1,0 +1,7527 @@
+{
+  "book_key": "EXO",
+  "book_name": "EXO",
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "sort_number": 2,
+  "chapters": {
+    "1": {
+      "chapter_number": 1,
+      "sort_number": 1,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 1:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 1:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 1:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 1:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 1:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 1:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 1:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 1:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 1:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 1:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 1:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 1:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 1:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 1:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 1:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 1:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 1:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 1:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 1:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 1:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 1:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 1:22]",
+          "word_count": 5
+        }
+      }
+    },
+    "2": {
+      "chapter_number": 2,
+      "sort_number": 2,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 2:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 2:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 2:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 2:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 2:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 2:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 2:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 2:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 2:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 2:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 2:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 2:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 2:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 2:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 2:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 2:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 2:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 2:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 2:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 2:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 2:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 2:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 2:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 2:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 2:25]",
+          "word_count": 5
+        }
+      }
+    },
+    "3": {
+      "chapter_number": 3,
+      "sort_number": 3,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 3:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 3:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 3:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 3:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 3:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 3:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 3:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 3:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 3:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 3:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 3:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 3:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 3:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 3:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 3:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 3:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 3:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 3:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 3:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 3:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 3:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 3:22]",
+          "word_count": 5
+        }
+      }
+    },
+    "4": {
+      "chapter_number": 4,
+      "sort_number": 4,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 4:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 4:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 4:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 4:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 4:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 4:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 4:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 4:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 4:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 4:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 4:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 4:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 4:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 4:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 4:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 4:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 4:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 4:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 4:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 4:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 4:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 4:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 4:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 4:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 4:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 4:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 4:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 4:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 4:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 4:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 4:31]",
+          "word_count": 5
+        }
+      }
+    },
+    "5": {
+      "chapter_number": 5,
+      "sort_number": 5,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 5:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 5:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 5:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 5:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 5:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 5:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 5:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 5:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 5:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 5:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 5:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 5:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 5:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 5:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 5:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 5:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 5:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 5:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 5:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 5:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 5:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 5:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 5:23]",
+          "word_count": 5
+        }
+      }
+    },
+    "6": {
+      "chapter_number": 6,
+      "sort_number": 6,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 6:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 6:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 6:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 6:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 6:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 6:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 6:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 6:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 6:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 6:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 6:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 6:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 6:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 6:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 6:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 6:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 6:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 6:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 6:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 6:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 6:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 6:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 6:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 6:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 6:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 6:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 6:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 6:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 6:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 6:30]",
+          "word_count": 5
+        }
+      }
+    },
+    "7": {
+      "chapter_number": 7,
+      "sort_number": 7,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 7:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 7:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 7:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 7:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 7:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 7:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 7:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 7:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 7:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 7:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 7:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 7:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 7:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 7:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 7:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 7:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 7:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 7:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 7:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 7:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 7:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 7:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 7:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 7:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 7:25]",
+          "word_count": 5
+        }
+      }
+    },
+    "8": {
+      "chapter_number": 8,
+      "sort_number": 8,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 8:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 8:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 8:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 8:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 8:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 8:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 8:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 8:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 8:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 8:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 8:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 8:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 8:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 8:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 8:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 8:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 8:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 8:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 8:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 8:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 8:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 8:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 8:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 8:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 8:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 8:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 8:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 8:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 8:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 8:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 8:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 8:32]",
+          "word_count": 5
+        }
+      }
+    },
+    "9": {
+      "chapter_number": 9,
+      "sort_number": 9,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 9:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 9:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 9:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 9:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 9:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 9:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 9:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 9:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 9:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 9:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 9:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 9:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 9:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 9:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 9:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 9:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 9:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 9:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 9:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 9:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 9:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 9:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 9:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 9:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 9:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 9:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 9:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 9:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 9:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 9:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 9:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 9:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 9:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 9:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 9:35]",
+          "word_count": 5
+        }
+      }
+    },
+    "10": {
+      "chapter_number": 10,
+      "sort_number": 10,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 10:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 10:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 10:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 10:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 10:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 10:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 10:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 10:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 10:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 10:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 10:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 10:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 10:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 10:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 10:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 10:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 10:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 10:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 10:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 10:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 10:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 10:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 10:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 10:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 10:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 10:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 10:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 10:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 10:29]",
+          "word_count": 5
+        }
+      }
+    },
+    "11": {
+      "chapter_number": 11,
+      "sort_number": 11,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 11:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 11:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 11:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 11:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 11:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 11:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 11:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 11:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 11:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 11:10]",
+          "word_count": 5
+        }
+      }
+    },
+    "12": {
+      "chapter_number": 12,
+      "sort_number": 12,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 12:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 12:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 12:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 12:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 12:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 12:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 12:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 12:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 12:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 12:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 12:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 12:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 12:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 12:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 12:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 12:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 12:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 12:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 12:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 12:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 12:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 12:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 12:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 12:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 12:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 12:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 12:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 12:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 12:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 12:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 12:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 12:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 12:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 12:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 12:35]",
+          "word_count": 5
+        },
+        "36": {
+          "verse_number": 36,
+          "sort_number": 36,
+          "text": "[EXO 12:36]",
+          "word_count": 5
+        },
+        "37": {
+          "verse_number": 37,
+          "sort_number": 37,
+          "text": "[EXO 12:37]",
+          "word_count": 5
+        },
+        "38": {
+          "verse_number": 38,
+          "sort_number": 38,
+          "text": "[EXO 12:38]",
+          "word_count": 5
+        },
+        "39": {
+          "verse_number": 39,
+          "sort_number": 39,
+          "text": "[EXO 12:39]",
+          "word_count": 5
+        },
+        "40": {
+          "verse_number": 40,
+          "sort_number": 40,
+          "text": "[EXO 12:40]",
+          "word_count": 5
+        },
+        "41": {
+          "verse_number": 41,
+          "sort_number": 41,
+          "text": "[EXO 12:41]",
+          "word_count": 5
+        },
+        "42": {
+          "verse_number": 42,
+          "sort_number": 42,
+          "text": "[EXO 12:42]",
+          "word_count": 5
+        },
+        "43": {
+          "verse_number": 43,
+          "sort_number": 43,
+          "text": "[EXO 12:43]",
+          "word_count": 5
+        },
+        "44": {
+          "verse_number": 44,
+          "sort_number": 44,
+          "text": "[EXO 12:44]",
+          "word_count": 5
+        },
+        "45": {
+          "verse_number": 45,
+          "sort_number": 45,
+          "text": "[EXO 12:45]",
+          "word_count": 5
+        },
+        "46": {
+          "verse_number": 46,
+          "sort_number": 46,
+          "text": "[EXO 12:46]",
+          "word_count": 5
+        },
+        "47": {
+          "verse_number": 47,
+          "sort_number": 47,
+          "text": "[EXO 12:47]",
+          "word_count": 5
+        },
+        "48": {
+          "verse_number": 48,
+          "sort_number": 48,
+          "text": "[EXO 12:48]",
+          "word_count": 5
+        },
+        "49": {
+          "verse_number": 49,
+          "sort_number": 49,
+          "text": "[EXO 12:49]",
+          "word_count": 5
+        },
+        "50": {
+          "verse_number": 50,
+          "sort_number": 50,
+          "text": "[EXO 12:50]",
+          "word_count": 5
+        },
+        "51": {
+          "verse_number": 51,
+          "sort_number": 51,
+          "text": "[EXO 12:51]",
+          "word_count": 5
+        }
+      }
+    },
+    "13": {
+      "chapter_number": 13,
+      "sort_number": 13,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 13:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 13:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 13:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 13:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 13:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 13:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 13:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 13:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 13:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 13:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 13:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 13:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 13:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 13:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 13:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 13:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 13:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 13:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 13:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 13:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 13:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 13:22]",
+          "word_count": 5
+        }
+      }
+    },
+    "14": {
+      "chapter_number": 14,
+      "sort_number": 14,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 14:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 14:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 14:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 14:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 14:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 14:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 14:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 14:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 14:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 14:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 14:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 14:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 14:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 14:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 14:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 14:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 14:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 14:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 14:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 14:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 14:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 14:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 14:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 14:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 14:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 14:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 14:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 14:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 14:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 14:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 14:31]",
+          "word_count": 5
+        }
+      }
+    },
+    "15": {
+      "chapter_number": 15,
+      "sort_number": 15,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 15:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 15:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 15:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 15:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 15:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 15:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 15:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 15:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 15:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 15:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 15:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 15:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 15:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 15:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 15:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 15:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 15:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 15:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 15:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 15:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 15:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 15:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 15:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 15:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 15:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 15:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 15:27]",
+          "word_count": 5
+        }
+      }
+    },
+    "16": {
+      "chapter_number": 16,
+      "sort_number": 16,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 16:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 16:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 16:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 16:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 16:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 16:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 16:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 16:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 16:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 16:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 16:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 16:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 16:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 16:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 16:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 16:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 16:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 16:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 16:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 16:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 16:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 16:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 16:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 16:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 16:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 16:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 16:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 16:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 16:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 16:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 16:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 16:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 16:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 16:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 16:35]",
+          "word_count": 5
+        },
+        "36": {
+          "verse_number": 36,
+          "sort_number": 36,
+          "text": "[EXO 16:36]",
+          "word_count": 5
+        }
+      }
+    },
+    "17": {
+      "chapter_number": 17,
+      "sort_number": 17,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 17:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 17:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 17:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 17:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 17:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 17:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 17:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 17:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 17:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 17:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 17:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 17:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 17:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 17:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 17:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 17:16]",
+          "word_count": 5
+        }
+      }
+    },
+    "18": {
+      "chapter_number": 18,
+      "sort_number": 18,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 18:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 18:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 18:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 18:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 18:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 18:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 18:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 18:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 18:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 18:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 18:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 18:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 18:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 18:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 18:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 18:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 18:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 18:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 18:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 18:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 18:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 18:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 18:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 18:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 18:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 18:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 18:27]",
+          "word_count": 5
+        }
+      }
+    },
+    "19": {
+      "chapter_number": 19,
+      "sort_number": 19,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 19:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 19:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 19:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 19:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 19:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 19:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 19:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 19:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 19:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 19:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 19:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 19:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 19:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 19:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 19:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 19:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 19:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 19:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 19:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 19:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 19:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 19:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 19:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 19:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 19:25]",
+          "word_count": 5
+        }
+      }
+    },
+    "20": {
+      "chapter_number": 20,
+      "sort_number": 20,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 20:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 20:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 20:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 20:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 20:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 20:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 20:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 20:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 20:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 20:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 20:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 20:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 20:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 20:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 20:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 20:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 20:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 20:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 20:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 20:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 20:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 20:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 20:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 20:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 20:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 20:26]",
+          "word_count": 5
+        }
+      }
+    },
+    "21": {
+      "chapter_number": 21,
+      "sort_number": 21,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 21:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 21:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 21:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 21:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 21:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 21:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 21:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 21:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 21:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 21:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 21:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 21:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 21:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 21:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 21:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 21:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 21:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 21:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 21:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 21:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 21:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 21:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 21:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 21:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 21:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 21:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 21:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 21:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 21:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 21:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 21:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 21:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 21:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 21:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 21:35]",
+          "word_count": 5
+        },
+        "36": {
+          "verse_number": 36,
+          "sort_number": 36,
+          "text": "[EXO 21:36]",
+          "word_count": 5
+        }
+      }
+    },
+    "22": {
+      "chapter_number": 22,
+      "sort_number": 22,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 22:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 22:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 22:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 22:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 22:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 22:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 22:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 22:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 22:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 22:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 22:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 22:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 22:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 22:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 22:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 22:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 22:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 22:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 22:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 22:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 22:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 22:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 22:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 22:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 22:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 22:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 22:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 22:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 22:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 22:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 22:31]",
+          "word_count": 5
+        }
+      }
+    },
+    "23": {
+      "chapter_number": 23,
+      "sort_number": 23,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 23:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 23:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 23:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 23:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 23:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 23:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 23:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 23:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 23:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 23:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 23:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 23:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 23:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 23:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 23:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 23:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 23:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 23:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 23:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 23:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 23:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 23:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 23:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 23:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 23:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 23:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 23:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 23:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 23:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 23:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 23:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 23:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 23:33]",
+          "word_count": 5
+        }
+      }
+    },
+    "24": {
+      "chapter_number": 24,
+      "sort_number": 24,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 24:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 24:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 24:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 24:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 24:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 24:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 24:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 24:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 24:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 24:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 24:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 24:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 24:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 24:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 24:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 24:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 24:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 24:18]",
+          "word_count": 5
+        }
+      }
+    },
+    "25": {
+      "chapter_number": 25,
+      "sort_number": 25,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 25:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 25:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 25:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 25:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 25:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 25:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 25:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 25:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 25:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 25:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 25:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 25:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 25:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 25:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 25:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 25:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 25:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 25:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 25:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 25:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 25:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 25:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 25:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 25:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 25:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 25:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 25:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 25:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 25:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 25:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 25:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 25:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 25:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 25:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 25:35]",
+          "word_count": 5
+        },
+        "36": {
+          "verse_number": 36,
+          "sort_number": 36,
+          "text": "[EXO 25:36]",
+          "word_count": 5
+        },
+        "37": {
+          "verse_number": 37,
+          "sort_number": 37,
+          "text": "[EXO 25:37]",
+          "word_count": 5
+        },
+        "38": {
+          "verse_number": 38,
+          "sort_number": 38,
+          "text": "[EXO 25:38]",
+          "word_count": 5
+        },
+        "39": {
+          "verse_number": 39,
+          "sort_number": 39,
+          "text": "[EXO 25:39]",
+          "word_count": 5
+        },
+        "40": {
+          "verse_number": 40,
+          "sort_number": 40,
+          "text": "[EXO 25:40]",
+          "word_count": 5
+        }
+      }
+    },
+    "26": {
+      "chapter_number": 26,
+      "sort_number": 26,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 26:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 26:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 26:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 26:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 26:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 26:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 26:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 26:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 26:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 26:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 26:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 26:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 26:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 26:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 26:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 26:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 26:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 26:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 26:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 26:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 26:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 26:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 26:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 26:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 26:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 26:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 26:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 26:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 26:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 26:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 26:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 26:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 26:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 26:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 26:35]",
+          "word_count": 5
+        },
+        "36": {
+          "verse_number": 36,
+          "sort_number": 36,
+          "text": "[EXO 26:36]",
+          "word_count": 5
+        },
+        "37": {
+          "verse_number": 37,
+          "sort_number": 37,
+          "text": "[EXO 26:37]",
+          "word_count": 5
+        }
+      }
+    },
+    "27": {
+      "chapter_number": 27,
+      "sort_number": 27,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 27:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 27:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 27:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 27:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 27:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 27:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 27:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 27:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 27:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 27:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 27:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 27:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 27:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 27:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 27:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 27:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 27:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 27:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 27:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 27:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 27:21]",
+          "word_count": 5
+        }
+      }
+    },
+    "28": {
+      "chapter_number": 28,
+      "sort_number": 28,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 28:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 28:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 28:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 28:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 28:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 28:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 28:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 28:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 28:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 28:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 28:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 28:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 28:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 28:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 28:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 28:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 28:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 28:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 28:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 28:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 28:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 28:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 28:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 28:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 28:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 28:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 28:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 28:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 28:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 28:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 28:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 28:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 28:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 28:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 28:35]",
+          "word_count": 5
+        },
+        "36": {
+          "verse_number": 36,
+          "sort_number": 36,
+          "text": "[EXO 28:36]",
+          "word_count": 5
+        },
+        "37": {
+          "verse_number": 37,
+          "sort_number": 37,
+          "text": "[EXO 28:37]",
+          "word_count": 5
+        },
+        "38": {
+          "verse_number": 38,
+          "sort_number": 38,
+          "text": "[EXO 28:38]",
+          "word_count": 5
+        },
+        "39": {
+          "verse_number": 39,
+          "sort_number": 39,
+          "text": "[EXO 28:39]",
+          "word_count": 5
+        },
+        "40": {
+          "verse_number": 40,
+          "sort_number": 40,
+          "text": "[EXO 28:40]",
+          "word_count": 5
+        },
+        "41": {
+          "verse_number": 41,
+          "sort_number": 41,
+          "text": "[EXO 28:41]",
+          "word_count": 5
+        },
+        "42": {
+          "verse_number": 42,
+          "sort_number": 42,
+          "text": "[EXO 28:42]",
+          "word_count": 5
+        },
+        "43": {
+          "verse_number": 43,
+          "sort_number": 43,
+          "text": "[EXO 28:43]",
+          "word_count": 5
+        }
+      }
+    },
+    "29": {
+      "chapter_number": 29,
+      "sort_number": 29,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 29:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 29:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 29:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 29:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 29:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 29:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 29:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 29:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 29:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 29:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 29:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 29:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 29:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 29:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 29:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 29:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 29:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 29:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 29:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 29:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 29:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 29:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 29:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 29:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 29:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 29:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 29:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 29:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 29:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 29:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 29:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 29:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 29:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 29:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 29:35]",
+          "word_count": 5
+        },
+        "36": {
+          "verse_number": 36,
+          "sort_number": 36,
+          "text": "[EXO 29:36]",
+          "word_count": 5
+        },
+        "37": {
+          "verse_number": 37,
+          "sort_number": 37,
+          "text": "[EXO 29:37]",
+          "word_count": 5
+        },
+        "38": {
+          "verse_number": 38,
+          "sort_number": 38,
+          "text": "[EXO 29:38]",
+          "word_count": 5
+        },
+        "39": {
+          "verse_number": 39,
+          "sort_number": 39,
+          "text": "[EXO 29:39]",
+          "word_count": 5
+        },
+        "40": {
+          "verse_number": 40,
+          "sort_number": 40,
+          "text": "[EXO 29:40]",
+          "word_count": 5
+        },
+        "41": {
+          "verse_number": 41,
+          "sort_number": 41,
+          "text": "[EXO 29:41]",
+          "word_count": 5
+        },
+        "42": {
+          "verse_number": 42,
+          "sort_number": 42,
+          "text": "[EXO 29:42]",
+          "word_count": 5
+        },
+        "43": {
+          "verse_number": 43,
+          "sort_number": 43,
+          "text": "[EXO 29:43]",
+          "word_count": 5
+        },
+        "44": {
+          "verse_number": 44,
+          "sort_number": 44,
+          "text": "[EXO 29:44]",
+          "word_count": 5
+        },
+        "45": {
+          "verse_number": 45,
+          "sort_number": 45,
+          "text": "[EXO 29:45]",
+          "word_count": 5
+        },
+        "46": {
+          "verse_number": 46,
+          "sort_number": 46,
+          "text": "[EXO 29:46]",
+          "word_count": 5
+        }
+      }
+    },
+    "30": {
+      "chapter_number": 30,
+      "sort_number": 30,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 30:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 30:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 30:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 30:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 30:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 30:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 30:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 30:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 30:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 30:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 30:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 30:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 30:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 30:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 30:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 30:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 30:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 30:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 30:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 30:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 30:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 30:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 30:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 30:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 30:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 30:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 30:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 30:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 30:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 30:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 30:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 30:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 30:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 30:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 30:35]",
+          "word_count": 5
+        },
+        "36": {
+          "verse_number": 36,
+          "sort_number": 36,
+          "text": "[EXO 30:36]",
+          "word_count": 5
+        },
+        "37": {
+          "verse_number": 37,
+          "sort_number": 37,
+          "text": "[EXO 30:37]",
+          "word_count": 5
+        },
+        "38": {
+          "verse_number": 38,
+          "sort_number": 38,
+          "text": "[EXO 30:38]",
+          "word_count": 5
+        }
+      }
+    },
+    "31": {
+      "chapter_number": 31,
+      "sort_number": 31,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 31:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 31:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 31:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 31:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 31:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 31:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 31:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 31:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 31:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 31:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 31:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 31:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 31:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 31:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 31:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 31:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 31:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 31:18]",
+          "word_count": 5
+        }
+      }
+    },
+    "32": {
+      "chapter_number": 32,
+      "sort_number": 32,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 32:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 32:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 32:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 32:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 32:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 32:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 32:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 32:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 32:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 32:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 32:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 32:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 32:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 32:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 32:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 32:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 32:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 32:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 32:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 32:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 32:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 32:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 32:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 32:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 32:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 32:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 32:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 32:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 32:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 32:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 32:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 32:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 32:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 32:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 32:35]",
+          "word_count": 5
+        }
+      }
+    },
+    "33": {
+      "chapter_number": 33,
+      "sort_number": 33,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 33:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 33:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 33:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 33:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 33:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 33:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 33:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 33:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 33:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 33:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 33:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 33:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 33:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 33:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 33:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 33:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 33:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 33:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 33:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 33:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 33:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 33:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 33:23]",
+          "word_count": 5
+        }
+      }
+    },
+    "34": {
+      "chapter_number": 34,
+      "sort_number": 34,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 34:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 34:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 34:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 34:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 34:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 34:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 34:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 34:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 34:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 34:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 34:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 34:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 34:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 34:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 34:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 34:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 34:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 34:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 34:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 34:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 34:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 34:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 34:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 34:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 34:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 34:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 34:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 34:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 34:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 34:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 34:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 34:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 34:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 34:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 34:35]",
+          "word_count": 5
+        }
+      }
+    },
+    "35": {
+      "chapter_number": 35,
+      "sort_number": 35,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 35:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 35:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 35:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 35:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 35:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 35:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 35:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 35:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 35:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 35:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 35:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 35:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 35:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 35:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 35:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 35:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 35:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 35:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 35:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 35:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 35:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 35:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 35:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 35:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 35:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 35:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 35:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 35:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 35:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 35:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 35:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 35:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 35:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 35:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 35:35]",
+          "word_count": 5
+        }
+      }
+    },
+    "36": {
+      "chapter_number": 36,
+      "sort_number": 36,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 36:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 36:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 36:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 36:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 36:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 36:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 36:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 36:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 36:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 36:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 36:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 36:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 36:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 36:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 36:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 36:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 36:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 36:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 36:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 36:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 36:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 36:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 36:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 36:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 36:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 36:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 36:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 36:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 36:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 36:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 36:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 36:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 36:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 36:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 36:35]",
+          "word_count": 5
+        },
+        "36": {
+          "verse_number": 36,
+          "sort_number": 36,
+          "text": "[EXO 36:36]",
+          "word_count": 5
+        },
+        "37": {
+          "verse_number": 37,
+          "sort_number": 37,
+          "text": "[EXO 36:37]",
+          "word_count": 5
+        },
+        "38": {
+          "verse_number": 38,
+          "sort_number": 38,
+          "text": "[EXO 36:38]",
+          "word_count": 5
+        }
+      }
+    },
+    "37": {
+      "chapter_number": 37,
+      "sort_number": 37,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 37:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 37:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 37:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 37:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 37:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 37:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 37:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 37:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 37:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 37:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 37:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 37:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 37:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 37:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 37:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 37:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 37:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 37:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 37:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 37:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 37:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 37:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 37:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 37:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 37:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 37:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 37:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 37:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 37:29]",
+          "word_count": 5
+        }
+      }
+    },
+    "38": {
+      "chapter_number": 38,
+      "sort_number": 38,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 38:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 38:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 38:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 38:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 38:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 38:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 38:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 38:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 38:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 38:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 38:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 38:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 38:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 38:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 38:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 38:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 38:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 38:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 38:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 38:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 38:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 38:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 38:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 38:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 38:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 38:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 38:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 38:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 38:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 38:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 38:31]",
+          "word_count": 5
+        }
+      }
+    },
+    "39": {
+      "chapter_number": 39,
+      "sort_number": 39,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 39:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 39:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 39:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 39:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 39:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 39:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 39:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 39:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 39:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 39:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 39:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 39:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 39:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 39:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 39:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 39:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 39:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 39:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 39:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 39:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 39:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 39:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 39:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 39:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 39:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 39:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 39:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 39:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 39:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 39:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 39:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 39:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 39:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 39:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 39:35]",
+          "word_count": 5
+        },
+        "36": {
+          "verse_number": 36,
+          "sort_number": 36,
+          "text": "[EXO 39:36]",
+          "word_count": 5
+        },
+        "37": {
+          "verse_number": 37,
+          "sort_number": 37,
+          "text": "[EXO 39:37]",
+          "word_count": 5
+        },
+        "38": {
+          "verse_number": 38,
+          "sort_number": 38,
+          "text": "[EXO 39:38]",
+          "word_count": 5
+        },
+        "39": {
+          "verse_number": 39,
+          "sort_number": 39,
+          "text": "[EXO 39:39]",
+          "word_count": 5
+        },
+        "40": {
+          "verse_number": 40,
+          "sort_number": 40,
+          "text": "[EXO 39:40]",
+          "word_count": 5
+        },
+        "41": {
+          "verse_number": 41,
+          "sort_number": 41,
+          "text": "[EXO 39:41]",
+          "word_count": 5
+        },
+        "42": {
+          "verse_number": 42,
+          "sort_number": 42,
+          "text": "[EXO 39:42]",
+          "word_count": 5
+        },
+        "43": {
+          "verse_number": 43,
+          "sort_number": 43,
+          "text": "[EXO 39:43]",
+          "word_count": 5
+        }
+      }
+    },
+    "40": {
+      "chapter_number": 40,
+      "sort_number": 40,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[EXO 40:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[EXO 40:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[EXO 40:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[EXO 40:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[EXO 40:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[EXO 40:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[EXO 40:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[EXO 40:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[EXO 40:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[EXO 40:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[EXO 40:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[EXO 40:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[EXO 40:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[EXO 40:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[EXO 40:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[EXO 40:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[EXO 40:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[EXO 40:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[EXO 40:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[EXO 40:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[EXO 40:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[EXO 40:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[EXO 40:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[EXO 40:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[EXO 40:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[EXO 40:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[EXO 40:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[EXO 40:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[EXO 40:29]",
+          "word_count": 5
+        },
+        "30": {
+          "verse_number": 30,
+          "sort_number": 30,
+          "text": "[EXO 40:30]",
+          "word_count": 5
+        },
+        "31": {
+          "verse_number": 31,
+          "sort_number": 31,
+          "text": "[EXO 40:31]",
+          "word_count": 5
+        },
+        "32": {
+          "verse_number": 32,
+          "sort_number": 32,
+          "text": "[EXO 40:32]",
+          "word_count": 5
+        },
+        "33": {
+          "verse_number": 33,
+          "sort_number": 33,
+          "text": "[EXO 40:33]",
+          "word_count": 5
+        },
+        "34": {
+          "verse_number": 34,
+          "sort_number": 34,
+          "text": "[EXO 40:34]",
+          "word_count": 5
+        },
+        "35": {
+          "verse_number": 35,
+          "sort_number": 35,
+          "text": "[EXO 40:35]",
+          "word_count": 5
+        },
+        "36": {
+          "verse_number": 36,
+          "sort_number": 36,
+          "text": "[EXO 40:36]",
+          "word_count": 5
+        },
+        "37": {
+          "verse_number": 37,
+          "sort_number": 37,
+          "text": "[EXO 40:37]",
+          "word_count": 5
+        },
+        "38": {
+          "verse_number": 38,
+          "sort_number": 38,
+          "text": "[EXO 40:38]",
+          "word_count": 5
+        }
+      }
+    }
+  }
+}

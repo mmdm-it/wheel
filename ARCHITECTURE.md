@@ -391,16 +391,86 @@ A desktop version exists in `desktop/` directory but uses an older JSON format a
 
 ## Future Architecture
 
-### Planned Improvements
-- Split JSON architecture (lazy-load by entity)
-- Automated testing framework
-- Accessibility enhancements (keyboard, screen readers)
-- Landscape mode improvements
+### Phase 1: Split JSON Files (Next)
+
+Replace monolithic JSON with per-book files and manifest:
+
+```
+/data/
+  gutenberg/
+    manifest.json           # Volume metadata + book index
+    books/
+      GENE.json             # Genesis - lazy loaded
+      EXO.json              # Exodus
+      ...
+```
+
+**Manifest Schema:**
+```json
+{
+  "volume_name": "Gutenberg Bible",
+  "display_config": { /* moved from book files */ },
+  "books": {
+    "GENE": { 
+      "path": "books/GENE.json", 
+      "name": "Genesis",
+      "chapters": 50, 
+      "verses": 1533 
+    }
+  }
+}
+```
+
+**Benefits:**
+- Faster initial load (only manifest + first book)
+- Memory efficiency (unload unused books)
+- Easier content updates (per-book files)
+- Enables offline caching (IndexedDB per book)
+
+### Phase 2: Remove Domain-Specific Code
+
+Current state: JS/CSS contains "gutenberg" references that should be configuration.
+
+**Move to JSON display_config:**
+```json
+{
+  "fonts": {
+    "display": "Montserrat, sans-serif",
+    "text": "EB Garamond, Georgia, serif"
+  },
+  "text_tiers": [
+    { "max_words": 30, "font_size": 30, "char_width_ratio": 0.45 },
+    { "max_words": null, "font_size": 22, "char_width_ratio": 0.35 }
+  ],
+  "detail_sector": {
+    "render_mode": "verse_text",
+    "margins": { "left": 0.03, "right": 0.05 }
+  }
+}
+```
+
+**Replace in JS:**
+```javascript
+// Before
+const isGutenberg = displayConfig?.volume_name === 'Gutenberg Bible';
+
+// After  
+const renderMode = displayConfig?.detail_sector?.render_mode || 'default';
+```
+
+### Phase 3: Code Cleanup
+
+- Remove dead code (unused functions, commented blocks)
+- Consolidate duplicate logic
+- Standardize naming conventions
+- Extract magic numbers to config
+- Performance profiling and optimization
 
 ### Known Technical Debt
 - Large renderer module (recently refactored with animation extraction)
-- Some hardcoded domain assumptions
+- Some hardcoded domain assumptions (gutenberg checks)
 - Manual volume discovery
 - Limited error recovery
+- CSS `!important` overrides for font sizing
 
 See [CHANGELOG.md](CHANGELOG.md) for version history and [CONTRIBUTING.md](CONTRIBUTING.md) for how to help.

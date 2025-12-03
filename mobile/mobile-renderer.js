@@ -509,6 +509,39 @@ class MobileRenderer {
             return;
         }
 
+        // Check if we need lazy loading (split volume, book level getting chapters)
+        if (this.dataManager.isSplitStructure() && currentLevel === 'book' && nextLevel === 'chapter') {
+            // Use async version for lazy loading
+            this._showChildContentForFocusItemAsync(focusItem, angle, currentLevel, nextLevel);
+            return;
+        }
+
+        // Synchronous path for monolithic volumes
+        this._showChildContentSync(focusItem, angle, currentLevel, nextLevel);
+    }
+
+    /**
+     * Async helper for showChildContentForFocusItem - handles lazy loading
+     */
+    async _showChildContentForFocusItemAsync(focusItem, angle, currentLevel, nextLevel) {
+        Logger.info(`📥 Lazy loading chapters for book: ${focusItem.name}`);
+        
+        // Ensure book data is loaded
+        const loaded = await this.dataManager.ensureBookLoaded(focusItem);
+        if (!loaded) {
+            Logger.error(`Failed to load book data for ${focusItem.name}`);
+            this.handleLeafFocusSelection(focusItem);
+            return;
+        }
+        
+        // Now continue with sync path since data is loaded
+        this._showChildContentSync(focusItem, angle, currentLevel, nextLevel);
+    }
+
+    /**
+     * Synchronous helper for showChildContentForFocusItem
+     */
+    _showChildContentSync(focusItem, angle, currentLevel, nextLevel) {
         const { level: resolvedLevel, items: childItems } = this.resolveChildLevel(focusItem, nextLevel);
         const cacheLevel = resolvedLevel || nextLevel;
 
@@ -661,6 +694,33 @@ class MobileRenderer {
         return this.validateSortNumbers(items, `${childLevelName} under ${parentItem.name}`);
     }
 
+    /**
+     * Async version of getChildItemsForLevel that supports lazy loading
+     * Used for split volumes where data may need to be fetched
+     */
+    async getChildItemsForLevelAsync(parentItem, childLevel) {
+        const childLevelName = childLevel;
+        
+        // Check if lazy loading is needed (for split volumes)
+        if (this.dataManager.isSplitStructure()) {
+            // For books getting chapters, ensure book data is loaded first
+            const parentLevel = parentItem.__level;
+            if (parentLevel === 'book' && childLevelName === 'chapter') {
+                const loaded = await this.dataManager.ensureBookLoaded(parentItem);
+                if (!loaded) {
+                    console.error(`Failed to load book data for ${parentItem.name}`);
+                    return [];
+                }
+            }
+        }
+        
+        // Now get items (data should be available)
+        const items = this.dataManager.getItemsAtLevel(parentItem, childLevelName) || [];
+        
+        // Validate sort_numbers before returning
+        return this.validateSortNumbers(items, `${childLevelName} under ${parentItem.name}`);
+    }
+
     resolveChildLevel(parentItem, startingLevel) {
         if (!startingLevel) {
             return { level: null, items: [] };
@@ -673,6 +733,41 @@ class MobileRenderer {
             visited.add(levelName);
 
             const childItems = this.getChildItemsForLevel(parentItem, levelName);
+            if (childItems && childItems.length) {
+                return { level: levelName, items: childItems };
+            }
+
+            const isPseudo = typeof this.dataManager.isPseudoLevel === 'function'
+                ? this.dataManager.isPseudoLevel(levelName)
+                : false;
+
+            if (!isPseudo) {
+                break;
+            }
+
+            levelName = this.getNextHierarchyLevel(levelName);
+        }
+
+        return { level: levelName, items: [] };
+    }
+
+    /**
+     * Async version of resolveChildLevel that supports lazy loading
+     * Used for split volumes where data may need to be fetched
+     */
+    async resolveChildLevelAsync(parentItem, startingLevel) {
+        if (!startingLevel) {
+            return { level: null, items: [] };
+        }
+
+        const visited = new Set();
+        let levelName = startingLevel;
+
+        while (levelName && !visited.has(levelName)) {
+            visited.add(levelName);
+
+            // Use async version for lazy loading support
+            const childItems = await this.getChildItemsForLevelAsync(parentItem, levelName);
             if (childItems && childItems.length) {
                 return { level: levelName, items: childItems };
             }
