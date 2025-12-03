@@ -59,10 +59,10 @@ text {
     text-transform: uppercase; 
 }
 
-/* Gutenberg verse text - EB Garamond for historical Bible aesthetic */
+/* Detail body text - configurable font for text-heavy content */
 /* font-size controlled by JavaScript two-tier system (30px or 22px based on word count) */
 /* Use unset to let the SVG font-size attribute take effect */
-text.gutenberg-verse-text {
+text.detail-body-text {
     font-family: 'EB Garamond', Georgia, serif !important;
     text-transform: none !important;
     font-size: unset !important;
@@ -169,7 +169,7 @@ g.focusItem.selected text {
     pointer-events: all;
 }
 
-/* Center MMdM node repositioned to top right corner */
+/* Center node repositioned to top right corner */
 #centralGroup {
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 1 !important; /* Always fully opaque */
@@ -262,7 +262,7 @@ g.focusItem.selected text {
 
 /* Mobile-specific adjustments */
 @media (max-width: 480px) {
-    text:not(.levelText):not(.levelText text):not(.gutenberg-verse-text) {
+    text:not(.levelText):not(.levelText text):not(.detail-body-text) {
         font-size: 12px;
     }
     

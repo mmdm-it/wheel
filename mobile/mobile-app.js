@@ -842,7 +842,7 @@ class MobileCatalogApp {
                 this.renderer.updateParentButton(parentName);
                 
                 this.isAnimating = false;
-                Logger.debug(`🔼 Reached top navigation level - showing ${topLevelItems.length} manufacturers`);
+                Logger.debug(`🔼 Reached top navigation level - showing ${topLevelItems.length} items`);
             });
             return;
         }

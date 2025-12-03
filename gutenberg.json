@@ -84,6 +84,7 @@
                     "use_code_property": false,
                     "detail_sector": {
                         "mode": "text_display",
+                        "skip_header": true,
                         "views": [
                             {
                                 "id": "latin_text",

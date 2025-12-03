@@ -930,7 +930,6 @@ class MobileRenderer {
         
         // Only expand Detail Sector for actual leaf items (e.g., models, verses)
         // Don't expand for childless non-leaf items (e.g., cylinder counts without models)
-        const isMMDM = displayConfig && displayConfig.volume_name === 'MMdM Catalog';
         
         if (isActualLeaf) {
             if (this.detailSector.isVisible) {
@@ -2546,32 +2545,32 @@ class MobileRenderer {
             return parentLevel;
         }
         
-        // Build contextual breadcrumb: always show manufacturer, then immediate parent (if different)
+        // Build contextual breadcrumb: always show top ancestor, then immediate parent (if different)
         const contextSegments = [];
         
         // Determine actual parent from path (handles skipped hierarchy levels)
         const actualParentIndex = item.__path.length - 2;
         const actualParentSegment = actualParentIndex >= 0 ? item.__path[actualParentIndex] : null;
         
-        // Case 1: Parent is ABOVE top navigation level (e.g., country above manufacturer)
+        // Case 1: Parent is ABOVE top navigation level
         // Show only the parent name, singular
         if (actualParentIndex < topNavDepth) {
             if (actualParentSegment) {
                 contextSegments.push(actualParentSegment);
             }
         }
-        // Case 2: Parent IS the top navigation level (e.g., at manufacturer, parent is manufacturer)
-        // Show only manufacturer, singular
+        // Case 2: Parent IS the top navigation level
+        // Show only top ancestor, singular
         else if (actualParentIndex === topNavDepth) {
-            const manufacturerSegment = item.__path[topNavDepth];
-            contextSegments.push(manufacturerSegment);
+            const topAncestorSegment = item.__path[topNavDepth];
+            contextSegments.push(topAncestorSegment);
         }
-        // Case 3: Parent is BELOW top navigation level (e.g., cylinder, family, etc.)
-        // Show manufacturer + parent (pluralized)
+        // Case 3: Parent is BELOW top navigation level
+        // Show top ancestor + parent (pluralized)
         else if (actualParentIndex > topNavDepth) {
-            // Add manufacturer first
-            const manufacturerSegment = item.__path[topNavDepth];
-            contextSegments.push(manufacturerSegment);
+            // Add top ancestor first
+            const topAncestorSegment = item.__path[topNavDepth];
+            contextSegments.push(topAncestorSegment);
             
             // Add actual parent (pluralized)
             if (actualParentSegment) {
