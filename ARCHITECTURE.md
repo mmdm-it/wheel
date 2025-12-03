@@ -110,12 +110,33 @@ Just as the viewport has only one center (Nuc), the program knows only one rotat
 3. **All positioning derives from their relationship** - Every element position is calculated from Hub, then rendered relative to Nuc
 
 **Hub Position Formula (portrait mode):**
+
+The Hub position and Focus Ring radius use a **corner-to-corner arc formula**. The arc enters the viewport at the upper-left corner and exits at the lower-right corner.
+
 ```javascript
-hubX = longSide - (shortSide / 2)
-hubY = -(longSide / 2)
+// Focus Ring Radius: Using "Radius from Chord and Arc Height" formula
+// Arc height (sagitta) = SSd, Chord length = 2 × LSd
+// R = SSd/2 + LSd²/(2×SSd)
+const radius = SSd / 2 + (LSd * LSd) / (2 * SSd);
+
+// Hub Position (portrait mode):
+// X = Radius - SSd/2
+// Y = -LSd/2
+const hubX = radius - (SSd / 2);
+const hubY = -(LSd / 2);
 ```
 
-This formula ensures Hub position adapts to any viewport aspect ratio while maintaining proper arc geometry.
+**Example for iPhone SE (375 × 667):**
+- SSd = 375, LSd = 667
+- Radius = 187.5 + 444889/750 = **780.69 px**
+- Hub = (593.19, -333.5)
+
+The arc passes exactly through corners (-187.5, -333.5) and (+187.5, +333.5).
+
+**Focus Ring Band:**
+- Inner edge: 99% of radius
+- Outer edge: 101% of radius
+- Text margin arc: 98% of radius (1% padding inside Focus Ring)
 
 ## Navigation Model
 

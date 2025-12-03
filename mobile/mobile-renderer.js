@@ -902,15 +902,15 @@ class MobileRenderer {
         const arcParams = this.viewport.getArcParameters();
         console.log('🎨 arcParams:', arcParams);
         
-        // Draw white band between 98% and 102% of Focus Ring radius
+        // Draw band between 99% and 101% of Focus Ring radius (narrower for larger radius)
         const hubX = arcParams.centerX;
         const hubY = arcParams.centerY;
-        const innerRadius = arcParams.radius * 0.98;  // 98% of Focus Ring radius
-        const outerRadius = arcParams.radius * 1.02;  // 102% of Focus Ring radius
+        const innerRadius = arcParams.radius * 0.99;  // 99% of Focus Ring radius
+        const outerRadius = arcParams.radius * 1.01;  // 101% of Focus Ring radius
         
         console.log(`🎨 Hub: (${hubX}, ${hubY})`);
-        console.log(`🎨 Inner radius (98%): ${innerRadius}`);
-        console.log(`🎨 Outer radius (102%): ${outerRadius}`);
+        console.log(`🎨 Inner radius (99%): ${innerRadius}`);
+        console.log(`🎨 Outer radius (101%): ${outerRadius}`);
         
         // Insert at beginning so nodes appear on top
         const focusRingGroup = this.elements.focusRingGroup;
@@ -1785,10 +1785,11 @@ class MobileRenderer {
             const arcParams = this.viewport.getArcParameters();
             
             // Fixed Parent Button circle position in Hub polar coordinates:
-            // Circle: Radius 0.9 × LSd × sqrt(2) from Hub center at 135°
-            // Text: Same radius as circle - centered over it
-            const parentButtonAngle = 135 * Math.PI / 180;  // Convert to radians
-            const parentButtonCircleRadius = 0.9 * LSd * Math.SQRT2;
+            // Angle: 180° - arctan(LSd/R) - points toward upper-left corner entry
+            // Distance: 0.9 × sqrt(LSd² + R²) - along the corner diagonal
+            const R = arcParams.radius;
+            const parentButtonAngle = Math.PI - Math.atan(LSd / R);  // 180° - arctan(LSd/R)
+            const parentButtonCircleRadius = 0.9 * Math.sqrt(LSd * LSd + R * R);
             
             // Convert circle position from Hub polar to SVG Cartesian (Nuc coordinates)
             const parentButtonNuc = {
@@ -1809,10 +1810,10 @@ class MobileRenderer {
             parentText.setAttribute('y', textOffsetY.toFixed(2));
             parentText.setAttribute('text-anchor', 'middle');  // Center text over circle
             
-            // Rotate text to align with Parent Button angle (135°)
-            let parentTextRotation = 135;
-            if (Math.cos(135 * Math.PI / 180) < 0) {
-                parentTextRotation += 180; // Results in 315°
+            // Rotate text to align with Parent Button angle
+            let parentTextRotation = parentButtonAngle * 180 / Math.PI;
+            if (Math.cos(parentButtonAngle) < 0) {
+                parentTextRotation += 180;
             }
             parentText.setAttribute('transform', `rotate(${parentTextRotation}, ${textOffsetX.toFixed(2)}, ${textOffsetY.toFixed(2)})`);
             
@@ -3168,9 +3169,9 @@ class MobileRenderer {
         const ringCenterY = arcParams.centerY;
         const ringRadius = arcParams.radius;
         
-        // Calculate the inner edge of the Focus Ring band with margin
-        // Using 96% to back off from the 98% inner edge of the Focus Ring band
-        const innerRadius = ringRadius * 0.96;
+        // Calculate the text margin arc inside the Focus Ring band
+        // Using 98% to provide margin from the 99% inner edge of the Focus Ring band
+        const innerRadius = ringRadius * 0.98;
         
         // Dynamic margins based on shorter side (SSd) - same approach as Detail Sector circle
         const SSd = viewport.SSd;

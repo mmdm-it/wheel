@@ -59,8 +59,9 @@ class MobileDetailSector {
         const ringCenterY = arcParams.centerY;
         const ringRadius = arcParams.radius;
         
-        // Inner edge of Focus Ring band with margin (96% to back off from 98% edge)
-        const innerRadius = ringRadius * 0.96;
+        // Focus Ring band is drawn at 99%-101% of radius
+        // Text margin should be inside the inner edge (98% for margin)
+        const innerRadius = ringRadius * 0.98;
         
         // Dynamic margins based on shorter side (SSd) - 3% of shorter side
         const SSd = viewport.SSd;
@@ -722,8 +723,8 @@ class MobileDetailSector {
                 // Arc intersects this horizontal line
                 const sqrtDisc = Math.sqrt(discriminant);
                 leftX = bounds.arcCenterX - sqrtDisc;
-                // Add small padding from arc (2.5% of SSd)
-                leftX += bounds.SSd * 0.025;
+                // No padding - text should align exactly with arc for debugging
+                leftX += bounds.SSd * 0.00;
             } else {
                 // Y is outside arc range - use viewport left edge
                 leftX = -bounds.viewportWidth / 2 + (bounds.SSd * 0.03);
@@ -797,23 +798,26 @@ class MobileDetailSector {
     renderGutenbergVerse(body, contentGroup, startY) {
         const bounds = this.getContentBounds();
         
-        // Dynamic font size based on shorter side (SSd) only - no aspect ratio adjustment
-        const fontSizePercent = 0.05; // 5% of SSd
-        const fontSize = Math.round(bounds.SSd * fontSizePercent);
-        const clampedFontSize = Math.max(16, Math.min(42, fontSize));
+        // Fixed font size for debugging layout issues
+        const fontSize = 20; // Fixed 20px while debugging alignment/margins/spacing
         
         // Build line position table with per-line arc-based left margins
-        const lineTable = this.buildLineTable(bounds, clampedFontSize);
+        const lineTable = this.buildLineTable(bounds, fontSize);
         
         // Wrap text using per-line character limits
         const wrappedLines = this.wrapTextWithLineTable(body, lineTable);
         
         console.log('📖 GUTENBERG VERSE:', {
             SSd: bounds.SSd,
-            fontSize: clampedFontSize,
+            fontSize: fontSize,
+            arcCenterX: bounds.arcCenterX,
+            arcCenterY: bounds.arcCenterY,
+            arcRadius: bounds.arcRadius,
             lineTableSize: lineTable.length,
             wrappedLineCount: wrappedLines.length,
-            lineWidths: lineTable.slice(0, 5).map(l => l.maxChars)
+            lineWidths: lineTable.slice(0, 5).map(l => l.maxChars),
+            firstLineLeftX: lineTable[0]?.leftX?.toFixed(1),
+            lastLineLeftX: lineTable[lineTable.length-1]?.leftX?.toFixed(1)
         });
         
         // Render each line at its calculated position
@@ -824,7 +828,7 @@ class MobileDetailSector {
             textElement.setAttribute('x', lineInfo.rightX);
             textElement.setAttribute('y', lineInfo.y);
             textElement.setAttribute('text-anchor', 'end'); // Right-aligned
-            textElement.setAttribute('font-size', clampedFontSize);
+            textElement.setAttribute('font-size', fontSize);
             textElement.setAttribute('fill', '#1a1a1a');
             textElement.setAttribute('font-family', "'Palatino Linotype', 'Book Antiqua', Palatino, serif");
             textElement.setAttribute('class', 'gutenberg-verse-text');
@@ -834,7 +838,7 @@ class MobileDetailSector {
         
         // Return Y position after last line
         const lastLineIndex = wrappedLines.length > 0 ? wrappedLines[wrappedLines.length - 1].lineIndex : 0;
-        const lineHeight = clampedFontSize * 1.4;
+        const lineHeight = fontSize * 1.4;
         return lineTable.length > 0 ? lineTable[lastLineIndex].y + lineHeight : startY;
     }
 

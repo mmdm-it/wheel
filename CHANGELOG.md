@@ -10,6 +10,24 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Split architecture Phase 2: Dual loader implementation
 - Multi-volume validation
 
+## [0.8.54] - 2025-12-02
+
+### Changed
+- **Corner-to-Corner Arc Formula**: Major geometry update for Focus Ring
+  - Arc now enters viewport at upper-left corner, exits at lower-right corner
+  - New radius formula: R = SSd/2 + LSd²/(2×SSd) (from chord/sagitta geometry)
+  - New Hub X formula: Radius - SSd/2 (Hub Y unchanged at -LSd/2)
+  - Focus Ring band narrowed: 99%-101% of radius (was 98%-102%)
+  - Text margin arc at 98% of radius (1% inside Focus Ring)
+  - Parent Button angle: 180° - arctan(LSd/R)
+  - Parent Button distance: 0.9 × sqrt(LSd² + R²)
+
+### Technical Notes
+- iPhone SE (375×667): Radius = 780.69px, Hub = (593.19, -333.5)
+- Arc passes through exact corners: (-SSd/2, -LSd/2) to (+SSd/2, +LSd/2)
+- All arc-dependent code uses `getArcParameters()` as single source of truth
+- Updated: mobile-viewport.js, mobile-renderer.js, mobile-animation.js, mobile-detailsector.js
+
 ## [0.8.39] - 2025-12-02
 
 ### Added

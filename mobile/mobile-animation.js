@@ -133,8 +133,10 @@ class MobileAnimation {
         const viewport = this.viewport.getViewportInfo();
         const LSd = Math.max(viewport.width, viewport.height);
         const arcParams = this.viewport.getArcParameters();
-        const parentButtonAngle = 135 * Math.PI / 180;
-        const parentButtonRadius = 0.9 * LSd * Math.SQRT2;
+        const R = arcParams.radius;
+        // Angle: 180° - arctan(LSd/R), Distance: 0.9 × sqrt(LSd² + R²)
+        const parentButtonAngle = Math.PI - Math.atan(LSd / R);
+        const parentButtonRadius = 0.9 * Math.sqrt(LSd * LSd + R * R);
         const endX = arcParams.centerX + parentButtonRadius * Math.cos(parentButtonAngle);
         const endY = arcParams.centerY + parentButtonRadius * Math.sin(parentButtonAngle);
         
@@ -142,8 +144,8 @@ class MobileAnimation {
         let startRotation = startAngle * 180 / Math.PI;
         if (Math.cos(startAngle) < 0) startRotation += 180;
         
-        let endRotation = 135;
-        if (Math.cos(parentButtonAngle) < 0) endRotation += 180; // Results in 315°
+        let endRotation = parentButtonAngle * 180 / Math.PI;
+        if (Math.cos(parentButtonAngle) < 0) endRotation += 180;
         
         // Create animated group
         const mainGroup = document.getElementById('mainGroup');
