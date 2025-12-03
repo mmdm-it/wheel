@@ -59,6 +59,12 @@ text {
     text-transform: uppercase; 
 }
 
+/* Gutenberg verse text - monospace for debugging */
+.gutenberg-verse-text {
+    font-family: 'Courier New', Courier, monospace !important;
+    text-transform: none !important;
+}
+
 /* Version text override */
 #versionText {
     font-size: 22px !important;

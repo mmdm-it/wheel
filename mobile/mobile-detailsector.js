@@ -700,9 +700,10 @@ class MobileDetailSector {
      */
     buildLineTable(bounds, fontSize, maxLines = 20) {
         const lineHeight = fontSize * 1.4;
-        const charWidth = fontSize * 0.55;
+        // Use larger estimate to avoid overflow - 0.75 works better for variable-width text
+        const charWidth = fontSize * 0.75;
         const startY = bounds.topY + (fontSize * 1.5);
-        const rightX = bounds.rightX - (bounds.SSd * 0.025); // 2.5% SSd padding from right
+        const rightX = bounds.rightX - (bounds.SSd * 0.05); // 5% SSd padding from right (was 2.5%)
         
         const lineTable = [];
         
@@ -820,20 +821,24 @@ class MobileDetailSector {
             lastLineLeftX: lineTable[lineTable.length-1]?.leftX?.toFixed(1)
         });
         
-        // Render each line at its calculated position
-        wrappedLines.forEach(({ text, lineIndex }) => {
+        // Render each line at its calculated position - LEFT ALIGNED for debugging
+        wrappedLines.forEach(({ text, lineIndex }, idx) => {
             const lineInfo = lineTable[lineIndex];
             
+            // Create a text element for the line
             const textElement = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-            textElement.setAttribute('x', lineInfo.rightX);
+            textElement.setAttribute('x', lineInfo.leftX);
             textElement.setAttribute('y', lineInfo.y);
-            textElement.setAttribute('text-anchor', 'end'); // Right-aligned
+            textElement.setAttribute('text-anchor', 'start');
             textElement.setAttribute('font-size', fontSize);
             textElement.setAttribute('fill', '#1a1a1a');
-            textElement.setAttribute('font-family', "'Palatino Linotype', 'Book Antiqua', Palatino, serif");
+            textElement.setAttribute('font-family', "'Courier New', Courier, monospace");
             textElement.setAttribute('class', 'gutenberg-verse-text');
             textElement.textContent = text;
             contentGroup.appendChild(textElement);
+            
+            // Debug: log chars vs maxChars
+            console.log(`📏 Line ${lineIndex}: chars=${text.length}, maxChars=${lineInfo.maxChars}, available=${lineInfo.availableWidth.toFixed(0)}`);
         });
         
         // Return Y position after last line
