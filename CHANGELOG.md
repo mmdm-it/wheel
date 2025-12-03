@@ -7,8 +7,86 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-- Split architecture Phase 2: Dual loader implementation
-- Multi-volume validation
+- Phase 2: Remove domain-specific code from JS/CSS
+- Phase 3: General code cleanup and optimization
+
+## [0.8.92] - 2025-12-03
+
+### Added
+- **Split JSON Architecture (Phase 1)**: Large volumes now support lazy loading
+  - Created `data/gutenberg/manifest.json` with display_config and book index
+  - Created `data/gutenberg/books/` directory with 67 individual book files
+  - Genesis (GENE.json) fully populated with 50 chapters, 1,533 verses
+  - Other books have placeholder structure ready for content
+
+### Changed
+- **Volume Discovery**: Split manifests now prioritized over monolithic files
+  - Discovery checks for `data/{volume}/manifest.json` first
+  - Falls back to `{volume}.json` if no split manifest found
+  - Console logs show structure type (split/monolithic)
+- **Lazy Loading**: Book data loaded on-demand when navigating
+  - `ensureBookLoaded()` method fetches external book files
+  - `getBookDataLocation()` navigates to book in data structure
+  - Async loading path in renderer for book→chapter navigation
+  - `_external_file` reference in manifest triggers lazy load
+
+### Technical Notes
+- Split structure uses `structure_type: "split"` in display_config
+- Books in manifest have `_external_file` path and `_loaded` flag
+- Loaded book data merged into manifest structure for seamless navigation
+- `isSplitStructure()` helper added to DataManager
+
+## [0.8.88] - 2025-12-03
+
+### Added
+- **Genesis Complete**: All 1,533 verses across 50 chapters added to gutenberg.json
+- Existing Latin text preserved (Genesis 1:1-5, 2:1-3, 3:1)
+
+### Changed
+- Updated volume_data_version to 2025.12.03
+
+## [0.8.87] - 2025-12-03
+
+### Fixed
+- **Font Size Override**: Inline style attribute with `!important` now properly overrides CSS
+- Detail Sector text finally renders at correct font size for both tiers
+
+### Technical Notes
+- Changed from `textElement.style.fontSize` to `textElement.setAttribute('style', ...)`
+- CSS `text { font-size: 15px }` was overriding SVG presentation attributes
+- Inline style with `!important` has highest specificity
+
+## [0.8.84] - 2025-12-03
+
+### Added
+- **Two-Tier Font Sizing**: Detail Sector text size based on verse word count
+  - Big Font tier: ≤30 words → 30px font, charWidth ratio 0.45
+  - Small Font tier: 31+ words → 22px font, charWidth ratio 0.35
+- `word_count` field added to all verse entries in JSON
+
+### Changed
+- `renderGutenbergVerse()` now accepts wordCount parameter
+- `buildLineTable()` now accepts charWidthRatio parameter
+- Removed CSS font-size rule from `.gutenberg-verse-text` (JS controls sizing)
+
+### Technical Notes
+- Word count read from `context.word_count` in detail sector rendering
+- Console log shows tier selection for debugging
+
+## [0.8.79] - 2025-12-03
+
+### Changed
+- **Font Stack Finalized**:
+  - Display font: Montserrat (Parent Button, Child Pyramid, Magnifier, UI)
+  - Text font: EB Garamond (Gutenberg Bible verses in Detail Sector)
+- Added EB Garamond to Google Fonts import (regular, medium, semibold, italic)
+
+## [0.8.76] - 2025-12-03
+
+### Changed
+- Detail Sector charWidth reduced to 0.45 for better line filling with EB Garamond
+- Left margin padding increased to 3% SSd from arc edge
+- Right margin padding at 5% SSd from viewport edge
 
 ## [0.8.54] - 2025-12-02
 
