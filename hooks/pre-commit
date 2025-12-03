@@ -1,0 +1,79 @@
+#!/bin/bash
+#
+# Pre-commit hook for Wheel
+# Checks for domain-specific code patterns that should not be committed.
+#
+# Install: cp hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+#
+
+echo "🔍 Checking for domain-specific code patterns..."
+
+# Get list of staged JS files
+STAGED_JS_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.js$' | grep -v 'node_modules' | grep -v 'old/' | grep -v 'archive/')
+
+if [ -z "$STAGED_JS_FILES" ]; then
+    echo "✅ No JS files staged for commit"
+    exit 0
+fi
+
+ERRORS_FOUND=0
+
+# Check for domain-specific patterns
+check_pattern() {
+    local pattern="$1"
+    local description="$2"
+    local exclude_pattern="$3"
+    
+    for file in $STAGED_JS_FILES; do
+        if [ -f "$file" ]; then
+            # Check file content, excluding comments and certain exceptions
+            if [ -n "$exclude_pattern" ]; then
+                matches=$(grep -n -E "$pattern" "$file" | grep -v "^\s*//" | grep -v "$exclude_pattern")
+            else
+                matches=$(grep -n -E "$pattern" "$file" | grep -v "^\s*//")
+            fi
+            
+            if [ -n "$matches" ]; then
+                echo ""
+                echo "⚠️  $description in $file:"
+                echo "$matches"
+                ERRORS_FOUND=1
+            fi
+        fi
+    done
+}
+
+# Domain-specific term checks
+check_pattern "volume_name\s*===\s*['\"]" "volume_name === check found (use config flags instead)"
+check_pattern "\bmanufacturer\b" "Hardcoded 'manufacturer' reference" "getItemDisplayName|// compat"
+check_pattern "\.engine_model\b" "Direct engine_model access (use getItemDisplayName())" "getItemDisplayName"
+check_pattern "\bartist\b.*=.*context\." "Hardcoded 'artist' context access" "ancestor"
+check_pattern "\balbum\b.*=.*context\." "Hardcoded 'album' context access" "ancestor"
+check_pattern "gutenberg-verse-text" "Old CSS class name (use 'detail-body-text')"
+
+# Check for hardcoded volume filenames in non-discovery code
+for file in $STAGED_JS_FILES; do
+    if [ -f "$file" ] && [[ "$file" != *"mobile-data.js" ]]; then
+        if grep -q -E "mmdm_catalog\.json|gutenberg\.json|fairhope\.json|hg_mx\.json" "$file"; then
+            echo ""
+            echo "⚠️  Hardcoded volume filename in $file (should use volume discovery)"
+            grep -n -E "mmdm_catalog\.json|gutenberg\.json|fairhope\.json|hg_mx\.json" "$file"
+            ERRORS_FOUND=1
+        fi
+    fi
+done
+
+echo ""
+
+if [ $ERRORS_FOUND -eq 1 ]; then
+    echo "❌ Domain-specific code patterns detected!"
+    echo ""
+    echo "Please fix the issues above before committing."
+    echo "See DOMAIN_AUDIT.md for guidelines on volume-agnostic coding."
+    echo ""
+    echo "To bypass this check (not recommended): git commit --no-verify"
+    exit 1
+else
+    echo "✅ No domain-specific code patterns found"
+    exit 0
+fi
