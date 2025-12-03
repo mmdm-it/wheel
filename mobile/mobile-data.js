@@ -6,6 +6,11 @@
 import { Logger } from './mobile-logger.js';
 import { CoordinateSystem, HubNucCoordinate } from './mobile-coordinates.js';
 
+// IndexedDB constants
+const IDB_NAME = 'WheelVolumeCache';
+const IDB_VERSION = 1;
+const IDB_STORE = 'externalFiles';
+
 /**
  * Manages data loading with error handling and caching
  */
@@ -21,6 +26,10 @@ class DataManager {
         // Split structure support: Track loaded external files
         this.loadedExternalFiles = new Set();
         this.externalFileLoadingPromises = new Map(); // Prevent duplicate loads
+        
+        // IndexedDB cache for persistent storage across sessions
+        this.idbCache = null;
+        this.idbReady = this._initIndexedDB();
         
         // Phase 4 Consolidation: Bilingual coordinate storage
         this.coordinateCache = new Map(); // Item key -> HubNucCoordinate
@@ -79,6 +88,127 @@ class DataManager {
             Logger.info(`[Trace:${prefix}] ${message}`, extraContext);
         } else {
             Logger.info(`[Trace:${prefix}] ${message}`);
+        }
+    }
+
+    /**
+     * Initialize IndexedDB for persistent caching of external files
+     * @returns {Promise<IDBDatabase|null>}
+     */
+    async _initIndexedDB() {
+        if (typeof indexedDB === 'undefined') {
+            Logger.debug('💾 IndexedDB not available - using memory cache only');
+            return null;
+        }
+
+        return new Promise((resolve) => {
+            try {
+                const request = indexedDB.open(IDB_NAME, IDB_VERSION);
+
+                request.onerror = () => {
+                    Logger.warn('💾 IndexedDB open failed - using memory cache only');
+                    resolve(null);
+                };
+
+                request.onsuccess = (event) => {
+                    this.idbCache = event.target.result;
+                    Logger.debug('💾 IndexedDB cache initialized');
+                    resolve(this.idbCache);
+                };
+
+                request.onupgradeneeded = (event) => {
+                    const db = event.target.result;
+                    if (!db.objectStoreNames.contains(IDB_STORE)) {
+                        const store = db.createObjectStore(IDB_STORE, { keyPath: 'path' });
+                        store.createIndex('timestamp', 'timestamp', { unique: false });
+                        Logger.debug('💾 IndexedDB store created');
+                    }
+                };
+            } catch (error) {
+                Logger.warn('💾 IndexedDB init error:', error);
+                resolve(null);
+            }
+        });
+    }
+
+    /**
+     * Get cached external file from IndexedDB
+     * @param {string} filePath - Path to the external file
+     * @returns {Promise<Object|null>} Cached data or null
+     */
+    async _getCachedFile(filePath) {
+        await this.idbReady;
+        if (!this.idbCache) return null;
+
+        return new Promise((resolve) => {
+            try {
+                const tx = this.idbCache.transaction(IDB_STORE, 'readonly');
+                const store = tx.objectStore(IDB_STORE);
+                const request = store.get(filePath);
+
+                request.onsuccess = () => {
+                    const result = request.result;
+                    if (result) {
+                        Logger.debug(`💾 Cache hit: ${filePath}`);
+                        resolve(result.data);
+                    } else {
+                        resolve(null);
+                    }
+                };
+
+                request.onerror = () => {
+                    Logger.debug(`💾 Cache read error for ${filePath}`);
+                    resolve(null);
+                };
+            } catch (error) {
+                Logger.debug('💾 Cache read exception:', error);
+                resolve(null);
+            }
+        });
+    }
+
+    /**
+     * Store external file in IndexedDB cache
+     * @param {string} filePath - Path to the external file
+     * @param {Object} data - Data to cache
+     */
+    async _setCachedFile(filePath, data) {
+        await this.idbReady;
+        if (!this.idbCache) return;
+
+        try {
+            const tx = this.idbCache.transaction(IDB_STORE, 'readwrite');
+            const store = tx.objectStore(IDB_STORE);
+            store.put({
+                path: filePath,
+                data: data,
+                timestamp: Date.now()
+            });
+            Logger.debug(`💾 Cached: ${filePath}`);
+        } catch (error) {
+            Logger.debug('💾 Cache write error:', error);
+        }
+    }
+
+    /**
+     * Clear all cached external files from IndexedDB
+     * Useful for forcing fresh data reload
+     */
+    async clearCache() {
+        // Clear memory cache
+        this.loadedExternalFiles.clear();
+        
+        // Clear IndexedDB cache
+        await this.idbReady;
+        if (!this.idbCache) return;
+
+        try {
+            const tx = this.idbCache.transaction(IDB_STORE, 'readwrite');
+            const store = tx.objectStore(IDB_STORE);
+            store.clear();
+            Logger.info('💾 Cache cleared');
+        } catch (error) {
+            Logger.warn('💾 Cache clear error:', error);
         }
     }
 
@@ -441,13 +571,26 @@ class DataManager {
         Logger.info(`📥 Lazy loading external file: ${externalFilePath}`);
         
         try {
-            const response = await fetch(`./${externalFilePath}`);
+            // Check IndexedDB cache first
+            const cachedData = await this._getCachedFile(externalFilePath);
+            let externalData;
             
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            if (cachedData) {
+                Logger.info(`💾 Using cached data for: ${externalFilePath}`);
+                externalData = cachedData;
+            } else {
+                // Fetch from network
+                const response = await fetch(`./${externalFilePath}`);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                externalData = await response.json();
+                
+                // Cache for future use
+                await this._setCachedFile(externalFilePath, externalData);
             }
-            
-            const externalData = await response.json();
             
             // Merge external data into target location
             // For book files, this means adding chapters data
