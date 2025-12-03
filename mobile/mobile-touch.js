@@ -270,7 +270,7 @@ class TouchRotationHandler {
             element.id === 'detailSectorLogo' ||
             element.closest('#detailItems') ||
             classAttr.includes('detail-content') ||
-            classAttr.includes('gutenberg-verse-text') ||
+            classAttr.includes('detail-body-text') ||
             (element.tagName === 'text' && element.closest('.child-pyramid-item')) ||
             (element.tagName === 'text' && element.closest('#detailItems'))
         )) {

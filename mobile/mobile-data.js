@@ -26,13 +26,13 @@ class DataManager {
         this.coordinateCache = new Map(); // Item key -> HubNucCoordinate
         this.coordinateMetadata = new Map(); // Level -> coordinate stats
 
-        // Targeted tracing (default: Lockwood-Ash)
-        this.traceManufacturerTarget = 'Lockwood-Ash';
+        // Targeted item tracing (trace items matching this path/name)
+        this.traceItemTarget = 'Lockwood-Ash';
     }
 
     getActiveTraceTarget() {
         if (typeof window !== 'undefined') {
-            const runtimeOverride = window.DEBUG_MANUFACTURER_TRACE;
+            const runtimeOverride = window.DEBUG_ITEM_TRACE;
             if (typeof runtimeOverride === 'string') {
                 const trimmed = runtimeOverride.trim();
                 if (trimmed.length === 0) {
@@ -41,10 +41,10 @@ class DataManager {
                 return trimmed;
             }
         }
-        return this.traceManufacturerTarget;
+        return this.traceItemTarget;
     }
 
-    shouldTraceManufacturer(item) {
+    shouldTraceItem(item) {
         const target = this.getActiveTraceTarget();
         if (!target || !item) {
             return false;
@@ -53,8 +53,9 @@ class DataManager {
         const normalizedTarget = target.toLowerCase();
         const candidates = [];
 
-        if (item.manufacturer) {
-            candidates.push(item.manufacturer);
+        // Check top-level ancestor (first path segment)
+        if (Array.isArray(item.__path) && item.__path.length > 0) {
+            candidates.push(item.__path[0]);
         }
 
         if (item.name) {
@@ -68,17 +69,30 @@ class DataManager {
         return candidates.some(value => typeof value === 'string' && value.toLowerCase().includes(normalizedTarget));
     }
 
-    traceManufacturer(item, message, extraContext = null) {
-        if (!this.shouldTraceManufacturer(item)) {
+    traceItem(item, message, extraContext = null) {
+        if (!this.shouldTraceItem(item)) {
             return;
         }
 
-        const prefix = this.getActiveTraceTarget() || 'Manufacturer';
+        const prefix = this.getActiveTraceTarget() || 'Item';
         if (extraContext !== null) {
             Logger.info(`[Trace:${prefix}] ${message}`, extraContext);
         } else {
             Logger.info(`[Trace:${prefix}] ${message}`);
         }
+    }
+
+    /**
+     * Get the display name for an item, checking multiple possible property names.
+     * This provides backwards compatibility with volumes using domain-specific naming.
+     * @param {Object} item - The data item
+     * @param {string} fallback - Fallback if no name found
+     * @returns {string} The display name
+     */
+    getItemDisplayName(item, fallback = 'Unnamed') {
+        if (!item) return fallback;
+        // Check common name properties in order of preference
+        return item.name || item.engine_model || item.title || item.__originalKey || fallback;
     }
 
     /**
@@ -184,14 +198,30 @@ class DataManager {
     async discoverVolumes() {
         Logger.debug('🔍 Discovering available Wheel volumes...');
         
-        // Get list of JSON files from server (to be implemented)
-        // For now, we'll scan common volume filenames
-        const commonVolumeFiles = [
-            'mmdm_catalog.json',
-            'gutenberg.json', 
-            'hg_mx.json',
-            'fairhope.json'
-        ];
+        // Try to load volume index if available
+        let volumeFiles = [];
+        try {
+            const indexResponse = await fetch('./volumes.json');
+            if (indexResponse.ok) {
+                const index = await indexResponse.json();
+                volumeFiles = index.volumes || [];
+                Logger.debug('📋 Loaded volume index:', volumeFiles);
+            }
+        } catch (error) {
+            Logger.debug('📋 No volume index found, scanning common locations');
+        }
+        
+        // If no index, scan common volume file patterns
+        if (volumeFiles.length === 0) {
+            // Scan for any .json files that might be volumes
+            // These are just common patterns - the validation below will reject non-volumes
+            volumeFiles = [
+                'mmdm_catalog.json',
+                'gutenberg.json', 
+                'hg_mx.json',
+                'fairhope.json'
+            ];
+        }
         
         // Also check for split manifests (these take precedence)
         const splitManifests = [
@@ -245,7 +275,7 @@ class DataManager {
         }
         
         // Then check monolithic volumes (skip if split version already found)
-        for (const filename of commonVolumeFiles) {
+        for (const filename of volumeFiles) {
             // Extract volume ID from filename (e.g., 'gutenberg.json' -> 'gutenberg')
             const volumeId = filename.replace('.json', '');
             
@@ -518,13 +548,16 @@ class DataManager {
         if (this.data) return this.data;
         if (this.loadPromise) return this.loadPromise;
 
-        this.loadPromise = this.loadVolume('mmdm_catalog.json');
+        // Discover volumes and load the first one
+        await this.discoverVolumes();
+        const defaultVolume = this.availableVolumes?.[0]?.filename || 'mmdm_catalog.json';
+        this.loadPromise = this.loadVolume(defaultVolume);
         return this.loadPromise;
     }
 
     async performLoad() {
-        // Deprecated - use loadCatalog() instead
-        return this.loadCatalog('mmdm_catalog.json');
+        // Deprecated - use load() instead
+        return this.load();
     }
 
     validateData(data) {
@@ -627,11 +660,19 @@ class DataManager {
             });
         }
 
-        // Add hierarchical context (artist, album) for songs
-        if (item.__level === 'song' && item.__path && item.__path.length >= 3) {
-            context.artist = item.__path[0]; // First level is artist
-            context.album = item.__path[1];  // Second level is album
-            Logger.verbose('📋 Added hierarchical context for song:', { artist: context.artist, album: context.album, path: item.__path });
+        // Add hierarchical ancestor labels (generic - works for any volume)
+        // Maps path positions to ancestor1, ancestor2, etc.
+        if (item.__path && item.__path.length >= 2) {
+            const levelNames = this.getHierarchyLevelNames();
+            item.__path.forEach((segment, index) => {
+                if (index < item.__path.length - 1) { // Skip the current item
+                    const levelName = levelNames[index] || `ancestor${index + 1}`;
+                    // Add both generic and level-specific keys
+                    context[`ancestor${index + 1}`] = segment;
+                    context[levelName] = segment;
+                }
+            });
+            Logger.verbose('📋 Added hierarchical context:', { path: item.__path, ancestors: item.__path.slice(0, -1) });
         }
 
         return context;
@@ -951,17 +992,20 @@ class DataManager {
             Logger.debug(`getVirtualLevelItems: No grouped items found, returning ${dataArray.length} items from ${dataLevelName} level`);
             const dataLevelDepth = this.getHierarchyLevelDepth(dataLevelName);
             
-            return dataArray.map((item, index) => ({
-                name: item.engine_model || item.name || item.__originalKey || `${dataLevelName}-${index}`,
-                ...this.extractParentProperties(parentItem),
-                key: `${parentItem.key}/${item.engine_model || item.name || item.__originalKey || index}`,
-                data: item,
-                index: index,
-                __level: dataLevelName,
-                __levelDepth: dataLevelDepth,
-                __isLeaf: true,
-                __path: [...parentItem.__path, item.engine_model || item.name || item.__originalKey || index]
-            }));
+            return dataArray.map((item, index) => {
+                const itemName = this.getItemDisplayName(item, `${dataLevelName}-${index}`);
+                return {
+                    name: itemName,
+                    ...this.extractParentProperties(parentItem),
+                    key: `${parentItem.key}/${itemName}`,
+                    data: item,
+                    index: index,
+                    __level: dataLevelName,
+                    __levelDepth: dataLevelDepth,
+                    __isLeaf: true,
+                    __path: [...parentItem.__path, itemName]
+                };
+            });
         }
         
         // Create virtual groups
@@ -1212,17 +1256,20 @@ class DataManager {
         
         // Convert to item objects
         const levelConfig = this.getHierarchyLevelConfig(childLevelName);
-        const items = filteredData.map((item, index) => ({
-            name: item.engine_model || item.name || `${childLevelName}-${index}`,
-            ...this.extractParentProperties(virtualParentItem),
-            key: `${virtualParentItem.key}/${item.engine_model || item.name || index}`,
-            data: item,
-            index: index,
-            __level: childLevelName,
-            __levelDepth: childLevelDepth,
-            __isLeaf: true,
-            __path: [...virtualParentItem.__path, item.engine_model || item.name || index]
-        }));
+        const items = filteredData.map((item, index) => {
+            const itemName = this.getItemDisplayName(item, `${childLevelName}-${index}`);
+            return {
+                name: itemName,
+                ...this.extractParentProperties(virtualParentItem),
+                key: `${virtualParentItem.key}/${itemName}`,
+                data: item,
+                index: index,
+                __level: childLevelName,
+                __levelDepth: childLevelDepth,
+                __isLeaf: true,
+                __path: [...virtualParentItem.__path, itemName]
+            };
+        });
         
         return this.sortItems(items, levelConfig);
     }
@@ -1281,7 +1328,7 @@ class DataManager {
         const parentLevelConfig = this.getHierarchyLevelConfig(parentLevelName);
         const dataPath = parentItem.__dataPath || parentItem.__path || [];
 
-        this.traceManufacturer(parentItem, `getItemsAtLevel request: ${parentLevelName} → ${childLevelName}`, {
+        this.traceItem(parentItem, `getItemsAtLevel request: ${parentLevelName} → ${childLevelName}`, {
             parentLevel: parentLevelName,
             childLevel: childLevelName,
             path: Array.isArray(dataPath) ? [...dataPath] : []
@@ -1302,7 +1349,7 @@ class DataManager {
             if (terminalLevelName && terminalLevelName !== childLevelName) {
                 const previousLevelName = childLevelName;
                 Logger.debug(`getItemsAtLevel: No pseudo ${previousLevelName} nodes; falling back to ${terminalLevelName}`);
-                this.traceManufacturer(parentItem, `Pseudo level empty → falling back to ${terminalLevelName}`, {
+                this.traceItem(parentItem, `Pseudo level empty → falling back to ${terminalLevelName}`, {
                     requestedLevel: previousLevelName,
                     terminalLevel: terminalLevelName
                 });
@@ -1334,7 +1381,7 @@ class DataManager {
         if (!isImmediateChild) {
             if (!allowSkipVirtual) {
                 Logger.warn(`getItemsAtLevel: ${childLevelName} is not the immediate child of ${parentLevelName}`);
-                this.traceManufacturer(parentItem, `Rejected non-immediate level ${childLevelName}`, {
+                this.traceItem(parentItem, `Rejected non-immediate level ${childLevelName}`, {
                     parentLevel: parentLevelName,
                     childLevel: childLevelName,
                     parentDepth: parentLevelDepth,
@@ -1343,7 +1390,7 @@ class DataManager {
                 return [];
             }
 
-            this.traceManufacturer(parentItem, `Skipping virtual/pseudo levels between ${parentLevelName} and ${childLevelName}`, {
+            this.traceItem(parentItem, `Skipping virtual/pseudo levels between ${parentLevelName} and ${childLevelName}`, {
                 parentDepth: parentLevelDepth,
                 childDepth: childLevelDepth
             });
@@ -1363,7 +1410,7 @@ class DataManager {
                 dataLocation = dataLocation[pathSegment];
                 if (!dataLocation) {
                     Logger.warn(`getItemsAtLevel: top-level group '${pathSegment}' not found`);
-                    this.traceManufacturer(parentItem, `Missing top-level segment '${pathSegment}'`, {
+                    this.traceItem(parentItem, `Missing top-level segment '${pathSegment}'`, {
                         level: currentLevelName,
                         path: dataPath
                     });
@@ -1387,7 +1434,7 @@ class DataManager {
                 dataLocation = dataLocation && dataLocation[pathSegment];
                 if (!dataLocation) {
                     Logger.warn(`getItemsAtLevel: '${pathSegment}' not found at level ${currentLevelName}`);
-                    this.traceManufacturer(parentItem, `Path segment '${pathSegment}' missing at level ${currentLevelName}`, {
+                    this.traceItem(parentItem, `Path segment '${pathSegment}' missing at level ${currentLevelName}`, {
                         path: dataPath
                     });
                     return [];
@@ -1438,7 +1485,7 @@ class DataManager {
         if (!childrenData) {
             const childCollectionName = this.getPluralPropertyName(childLevelName);
             Logger.warn(`getItemsAtLevel: could not find '${childCollectionName}' property for ${childLevelName}`);
-            this.traceManufacturer(parentItem, `Missing child collection '${childCollectionName}' for ${childLevelName}`, {
+            this.traceItem(parentItem, `Missing child collection '${childCollectionName}' for ${childLevelName}`, {
                 parentPath: dataPath
             });
             return [];
@@ -1446,7 +1493,7 @@ class DataManager {
 
         // Get the child items from this location
         const childItems = this.extractChildItems(childrenData, childLevelName, parentItem);
-        this.traceManufacturer(parentItem, `Resolved ${childItems.length} ${childLevelName} item(s)`, {
+        this.traceItem(parentItem, `Resolved ${childItems.length} ${childLevelName} item(s)`, {
             sampleNames: childItems.slice(0, 3).map(item => item.name)
         });
         return childItems;
@@ -1748,7 +1795,7 @@ class DataManager {
         if (Array.isArray(dataLocation)) {
             // This is an array of leaf items (final level in hierarchy)
             dataLocation.forEach((itemData, index) => {
-                const itemName = itemData.engine_model;
+                const itemName = this.getItemDisplayName(itemData, `item-${index}`);
                 items.push({
                     name: itemName,
                     ...this.extractParentProperties(parentItem),

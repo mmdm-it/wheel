@@ -222,10 +222,11 @@ class MobileDetailSector {
     renderHeader(headerConfig, context, contentGroup, currentY) {
         const fallbackTitle = context.name || '';
         
-        // Skip header for Gutenberg Bible verses (verse number shown in Focus Ring)
+        // Skip header if level config says so (e.g., verse number shown in Focus Ring)
         const displayConfig = this.dataManager.getDisplayConfig();
-        const isGutenbergVerse = displayConfig?.volume_name === 'Gutenberg Bible' && context.level === 'verse';
-        if (isGutenbergVerse) {
+        const levelConfig = displayConfig?.hierarchy_levels?.[context.level];
+        const skipHeader = levelConfig?.detail_sector?.skip_header === true;
+        if (skipHeader) {
             return currentY;
         }
 
@@ -412,12 +413,13 @@ class MobileDetailSector {
         }
 
         if (body) {
-            // Use larger font (36px = 300% of 12px) for Gutenberg Bible verses
+            // Check if this level uses text_display mode for larger text rendering
             const displayConfig = this.dataManager.getDisplayConfig();
-            const isGutenberg = displayConfig?.volume_name === 'Gutenberg Bible';
+            const levelConfig = displayConfig?.hierarchy_levels?.[context.level];
+            const useTextDisplay = levelConfig?.detail_sector?.mode === 'text_display';
             
-            if (isGutenberg) {
-                // Use dynamic bounds-based positioning for Bible verses
+            if (useTextDisplay) {
+                // Use dynamic bounds-based positioning for text content
                 // Pass word_count for two-tier font sizing
                 const wordCount = context.word_count || 0;
                 currentY = this.renderGutenbergVerse(body, contentGroup, currentY, wordCount);
@@ -835,7 +837,7 @@ class MobileDetailSector {
             textElement.setAttribute('y', lineInfo.y);
             textElement.setAttribute('text-anchor', 'start');
             textElement.setAttribute('fill', '#1a1a1a');
-            textElement.setAttribute('class', 'gutenberg-verse-text');
+            textElement.setAttribute('class', 'detail-body-text');
             // Use inline style attribute to override all CSS rules
             textElement.setAttribute('style', `font-size: ${fontSize}px !important; font-family: 'EB Garamond', Georgia, serif !important;`);
             textElement.textContent = text;
@@ -926,7 +928,7 @@ class MobileDetailSector {
 
         // If no specifications found, try to extract from other fields
         if (details.specifications.length === 0) {
-            const possibleSpecFields = ['model', 'type', 'category', 'manufacturer'];
+            const possibleSpecFields = ['model', 'type', 'category', 'brand', 'name'];
             possibleSpecFields.forEach(field => {
                 if (item[field] && typeof item[field] === 'string') {
                     details.specifications.push(`${field.charAt(0).toUpperCase() + field.slice(1)}: ${item[field]}`);
@@ -1099,11 +1101,15 @@ class MobileDetailSector {
 
         const meta = document.createElement('p');
         meta.className = 'detail-audio-meta';
-        const album = context && context.album ? context.album : null;
-        const artist = context && context.artist ? context.artist : null;
-        Logger.debug('🎵 Audio overlay metadata:', { album, artist, contextKeys: Object.keys(context) });
-        if (album || artist) {
-            meta.textContent = [album, artist].filter(Boolean).join(' • ');
+        // Build ancestor breadcrumb from generic ancestor properties
+        const ancestorLabels = [];
+        for (let i = 1; i <= 3; i++) {
+            const ancestor = context[`ancestor${i}`];
+            if (ancestor) ancestorLabels.push(ancestor);
+        }
+        Logger.debug('🎵 Audio overlay metadata:', { ancestorLabels, contextKeys: Object.keys(context) });
+        if (ancestorLabels.length > 0) {
+            meta.textContent = ancestorLabels.join(' • ');
         } else {
             meta.textContent = 'Tap play to listen.';
         }
