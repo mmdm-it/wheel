@@ -59,10 +59,11 @@ text {
     text-transform: uppercase; 
 }
 
-/* Gutenberg verse text - monospace for debugging */
+/* Gutenberg verse text - EB Garamond for historical Bible aesthetic */
 .gutenberg-verse-text {
-    font-family: 'Courier New', Courier, monospace !important;
+    font-family: 'EB Garamond', Georgia, serif !important;
     text-transform: none !important;
+    font-size: 30px !important;
 }
 
 /* Version text override */

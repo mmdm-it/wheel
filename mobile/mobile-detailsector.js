@@ -724,8 +724,8 @@ class MobileDetailSector {
                 // Arc intersects this horizontal line
                 const sqrtDisc = Math.sqrt(discriminant);
                 leftX = bounds.arcCenterX - sqrtDisc;
-                // No padding - text should align exactly with arc for debugging
-                leftX += bounds.SSd * 0.00;
+                // Add slight padding so text sits just inside the arc
+                leftX += bounds.SSd * 0.01;
             } else {
                 // Y is outside arc range - use viewport left edge
                 leftX = -bounds.viewportWidth / 2 + (bounds.SSd * 0.03);
@@ -800,7 +800,7 @@ class MobileDetailSector {
         const bounds = this.getContentBounds();
         
         // Fixed font size for debugging layout issues
-        const fontSize = 20; // Fixed 20px while debugging alignment/margins/spacing
+        const fontSize = 30; // 50% larger (was 20px)
         
         // Build line position table with per-line arc-based left margins
         const lineTable = this.buildLineTable(bounds, fontSize);
@@ -832,7 +832,7 @@ class MobileDetailSector {
             textElement.setAttribute('text-anchor', 'start');
             textElement.setAttribute('font-size', fontSize);
             textElement.setAttribute('fill', '#1a1a1a');
-            textElement.setAttribute('font-family', "'Courier New', Courier, monospace");
+            textElement.setAttribute('font-family', "'EB Garamond', Georgia, serif");
             textElement.setAttribute('class', 'gutenberg-verse-text');
             textElement.textContent = text;
             contentGroup.appendChild(textElement);
