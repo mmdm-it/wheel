@@ -83,6 +83,65 @@ Before submitting PR, test:
 - Comments for non-obvious logic
 - One function = one purpose
 
+## Volume-Agnostic Coding
+
+Wheel is designed to work with ANY hierarchical data, not just specific volumes like MMdM or Gutenberg. Follow these guidelines to keep the codebase domain-agnostic:
+
+### ❌ DON'T: Use domain-specific terms in code
+
+```javascript
+// BAD - hardcoded volume-specific logic
+if (volume_name === 'Gutenberg Bible') {
+    skipHeader = true;
+}
+
+// BAD - domain-specific property access
+const name = item.manufacturer || item.engine_model;
+
+// BAD - hardcoded hierarchy level names
+if (item.__level === 'song') {
+    context.artist = item.__path[0];
+}
+```
+
+### ✅ DO: Use config-driven patterns
+
+```javascript
+// GOOD - use config flags
+const levelConfig = displayConfig?.hierarchy_levels?.[context.level];
+const skipHeader = levelConfig?.detail_sector?.skip_header === true;
+
+// GOOD - use the getItemDisplayName() helper
+const name = this.getItemDisplayName(item, 'Unnamed');
+
+// GOOD - use generic ancestor numbering
+item.__path.forEach((segment, index) => {
+    context[`ancestor${index + 1}`] = segment;
+});
+```
+
+### Config Flags Reference
+
+| Flag | Location | Purpose |
+|------|----------|---------|
+| `detail_sector.mode` | hierarchy_levels.{level} | `"text_display"` for large text rendering |
+| `detail_sector.skip_header` | hierarchy_levels.{level} | Skip redundant header |
+| `is_numeric` | hierarchy_levels.{level} | Numeric level (chapters, verses) |
+| `leaf_level` | display_config | Terminal hierarchy level |
+
+### Pre-commit Hook
+
+Install the pre-commit hook to catch domain-specific code before commit:
+
+```bash
+cp hooks/pre-commit .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+See [DOMAIN_AUDIT.md](DOMAIN_AUDIT.md) for complete guidelines.
+
+---
+
 **Error handling:**
 ```javascript
 try {

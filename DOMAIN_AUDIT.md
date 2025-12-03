@@ -165,10 +165,10 @@ Identify and remove all domain-specific language from the Wheel codebase to make
 3. Add `detail_sector.skip_header` option ✅
 4. Make font choices config-driven ✅ (via CSS class)
 
-### Phase 2C: Add Safeguards
-1. Add ESLint rule for domain-specific terms ⏳ TODO
-2. Pre-commit hook to check for violations ⏳ TODO
-3. Document abstraction guidelines ⏳ TODO
+### Phase 2C: Add Safeguards ✅ COMPLETE (v0.8.98)
+1. Add ESLint rule for domain-specific terms ✅ (`.eslintrc.js`)
+2. Pre-commit hook to check for violations ✅ (`hooks/pre-commit`)
+3. Document abstraction guidelines ✅ (added to `CONTRIBUTING.md`)
 
 ---
 
