@@ -4,5 +4,2562 @@
   "testament": "Novum_Testamentum",
   "section": "Apocalypsis",
   "sort_number": 67,
-  "chapters": {}
+  "chapters": {
+    "1": {
+      "chapter_number": 1,
+      "sort_number": 1,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 1:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 1:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 1:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 1:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 1:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 1:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 1:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 1:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 1:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 1:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 1:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 1:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 1:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 1:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 1:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 1:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 1:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 1:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[APOC 1:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[APOC 1:20]",
+          "word_count": 5
+        }
+      }
+    },
+    "2": {
+      "chapter_number": 2,
+      "sort_number": 2,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 2:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 2:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 2:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 2:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 2:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 2:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 2:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 2:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 2:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 2:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 2:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 2:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 2:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 2:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 2:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 2:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 2:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 2:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[APOC 2:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[APOC 2:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[APOC 2:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[APOC 2:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[APOC 2:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[APOC 2:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[APOC 2:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[APOC 2:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[APOC 2:27]",
+          "word_count": 5
+        },
+        "28": {
+          "verse_number": 28,
+          "sort_number": 28,
+          "text": "[APOC 2:28]",
+          "word_count": 5
+        },
+        "29": {
+          "verse_number": 29,
+          "sort_number": 29,
+          "text": "[APOC 2:29]",
+          "word_count": 5
+        }
+      }
+    },
+    "3": {
+      "chapter_number": 3,
+      "sort_number": 3,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 3:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 3:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 3:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 3:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 3:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 3:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 3:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 3:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 3:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 3:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 3:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 3:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 3:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 3:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 3:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 3:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 3:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 3:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[APOC 3:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[APOC 3:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[APOC 3:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[APOC 3:22]",
+          "word_count": 5
+        }
+      }
+    },
+    "4": {
+      "chapter_number": 4,
+      "sort_number": 4,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 4:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 4:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 4:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 4:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 4:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 4:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 4:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 4:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 4:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 4:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 4:11]",
+          "word_count": 5
+        }
+      }
+    },
+    "5": {
+      "chapter_number": 5,
+      "sort_number": 5,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 5:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 5:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 5:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 5:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 5:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 5:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 5:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 5:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 5:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 5:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 5:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 5:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 5:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 5:14]",
+          "word_count": 5
+        }
+      }
+    },
+    "6": {
+      "chapter_number": 6,
+      "sort_number": 6,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 6:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 6:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 6:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 6:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 6:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 6:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 6:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 6:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 6:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 6:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 6:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 6:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 6:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 6:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 6:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 6:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 6:17]",
+          "word_count": 5
+        }
+      }
+    },
+    "7": {
+      "chapter_number": 7,
+      "sort_number": 7,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 7:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 7:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 7:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 7:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 7:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 7:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 7:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 7:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 7:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 7:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 7:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 7:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 7:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 7:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 7:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 7:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 7:17]",
+          "word_count": 5
+        }
+      }
+    },
+    "8": {
+      "chapter_number": 8,
+      "sort_number": 8,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 8:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 8:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 8:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 8:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 8:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 8:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 8:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 8:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 8:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 8:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 8:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 8:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 8:13]",
+          "word_count": 5
+        }
+      }
+    },
+    "9": {
+      "chapter_number": 9,
+      "sort_number": 9,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 9:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 9:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 9:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 9:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 9:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 9:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 9:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 9:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 9:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 9:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 9:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 9:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 9:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 9:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 9:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 9:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 9:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 9:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[APOC 9:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[APOC 9:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[APOC 9:21]",
+          "word_count": 5
+        }
+      }
+    },
+    "10": {
+      "chapter_number": 10,
+      "sort_number": 10,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 10:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 10:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 10:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 10:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 10:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 10:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 10:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 10:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 10:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 10:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 10:11]",
+          "word_count": 5
+        }
+      }
+    },
+    "11": {
+      "chapter_number": 11,
+      "sort_number": 11,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 11:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 11:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 11:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 11:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 11:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 11:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 11:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 11:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 11:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 11:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 11:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 11:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 11:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 11:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 11:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 11:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 11:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 11:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[APOC 11:19]",
+          "word_count": 5
+        }
+      }
+    },
+    "12": {
+      "chapter_number": 12,
+      "sort_number": 12,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 12:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 12:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 12:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 12:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 12:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 12:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 12:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 12:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 12:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 12:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 12:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 12:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 12:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 12:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 12:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 12:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 12:17]",
+          "word_count": 5
+        }
+      }
+    },
+    "13": {
+      "chapter_number": 13,
+      "sort_number": 13,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 13:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 13:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 13:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 13:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 13:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 13:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 13:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 13:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 13:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 13:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 13:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 13:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 13:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 13:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 13:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 13:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 13:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 13:18]",
+          "word_count": 5
+        }
+      }
+    },
+    "14": {
+      "chapter_number": 14,
+      "sort_number": 14,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 14:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 14:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 14:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 14:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 14:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 14:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 14:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 14:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 14:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 14:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 14:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 14:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 14:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 14:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 14:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 14:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 14:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 14:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[APOC 14:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[APOC 14:20]",
+          "word_count": 5
+        }
+      }
+    },
+    "15": {
+      "chapter_number": 15,
+      "sort_number": 15,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 15:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 15:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 15:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 15:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 15:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 15:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 15:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 15:8]",
+          "word_count": 5
+        }
+      }
+    },
+    "16": {
+      "chapter_number": 16,
+      "sort_number": 16,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 16:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 16:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 16:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 16:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 16:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 16:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 16:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 16:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 16:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 16:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 16:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 16:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 16:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 16:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 16:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 16:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 16:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 16:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[APOC 16:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[APOC 16:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[APOC 16:21]",
+          "word_count": 5
+        }
+      }
+    },
+    "17": {
+      "chapter_number": 17,
+      "sort_number": 17,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 17:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 17:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 17:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 17:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 17:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 17:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 17:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 17:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 17:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 17:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 17:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 17:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 17:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 17:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 17:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 17:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 17:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 17:18]",
+          "word_count": 5
+        }
+      }
+    },
+    "18": {
+      "chapter_number": 18,
+      "sort_number": 18,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 18:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 18:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 18:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 18:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 18:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 18:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 18:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 18:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 18:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 18:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 18:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 18:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 18:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 18:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 18:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 18:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 18:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 18:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[APOC 18:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[APOC 18:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[APOC 18:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[APOC 18:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[APOC 18:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[APOC 18:24]",
+          "word_count": 5
+        }
+      }
+    },
+    "19": {
+      "chapter_number": 19,
+      "sort_number": 19,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 19:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 19:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 19:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 19:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 19:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 19:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 19:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 19:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 19:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 19:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 19:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 19:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 19:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 19:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 19:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 19:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 19:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 19:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[APOC 19:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[APOC 19:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[APOC 19:21]",
+          "word_count": 5
+        }
+      }
+    },
+    "20": {
+      "chapter_number": 20,
+      "sort_number": 20,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 20:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 20:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 20:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 20:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 20:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 20:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 20:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 20:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 20:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 20:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 20:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 20:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 20:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 20:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 20:15]",
+          "word_count": 5
+        }
+      }
+    },
+    "21": {
+      "chapter_number": 21,
+      "sort_number": 21,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 21:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 21:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 21:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 21:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 21:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 21:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 21:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 21:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 21:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 21:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 21:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 21:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 21:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 21:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 21:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 21:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 21:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 21:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[APOC 21:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[APOC 21:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[APOC 21:21]",
+          "word_count": 5
+        },
+        "22": {
+          "verse_number": 22,
+          "sort_number": 22,
+          "text": "[APOC 21:22]",
+          "word_count": 5
+        },
+        "23": {
+          "verse_number": 23,
+          "sort_number": 23,
+          "text": "[APOC 21:23]",
+          "word_count": 5
+        },
+        "24": {
+          "verse_number": 24,
+          "sort_number": 24,
+          "text": "[APOC 21:24]",
+          "word_count": 5
+        },
+        "25": {
+          "verse_number": 25,
+          "sort_number": 25,
+          "text": "[APOC 21:25]",
+          "word_count": 5
+        },
+        "26": {
+          "verse_number": 26,
+          "sort_number": 26,
+          "text": "[APOC 21:26]",
+          "word_count": 5
+        },
+        "27": {
+          "verse_number": 27,
+          "sort_number": 27,
+          "text": "[APOC 21:27]",
+          "word_count": 5
+        }
+      }
+    },
+    "22": {
+      "chapter_number": 22,
+      "sort_number": 22,
+      "verses": {
+        "1": {
+          "verse_number": 1,
+          "sort_number": 1,
+          "text": "[APOC 22:1]",
+          "word_count": 5
+        },
+        "2": {
+          "verse_number": 2,
+          "sort_number": 2,
+          "text": "[APOC 22:2]",
+          "word_count": 5
+        },
+        "3": {
+          "verse_number": 3,
+          "sort_number": 3,
+          "text": "[APOC 22:3]",
+          "word_count": 5
+        },
+        "4": {
+          "verse_number": 4,
+          "sort_number": 4,
+          "text": "[APOC 22:4]",
+          "word_count": 5
+        },
+        "5": {
+          "verse_number": 5,
+          "sort_number": 5,
+          "text": "[APOC 22:5]",
+          "word_count": 5
+        },
+        "6": {
+          "verse_number": 6,
+          "sort_number": 6,
+          "text": "[APOC 22:6]",
+          "word_count": 5
+        },
+        "7": {
+          "verse_number": 7,
+          "sort_number": 7,
+          "text": "[APOC 22:7]",
+          "word_count": 5
+        },
+        "8": {
+          "verse_number": 8,
+          "sort_number": 8,
+          "text": "[APOC 22:8]",
+          "word_count": 5
+        },
+        "9": {
+          "verse_number": 9,
+          "sort_number": 9,
+          "text": "[APOC 22:9]",
+          "word_count": 5
+        },
+        "10": {
+          "verse_number": 10,
+          "sort_number": 10,
+          "text": "[APOC 22:10]",
+          "word_count": 5
+        },
+        "11": {
+          "verse_number": 11,
+          "sort_number": 11,
+          "text": "[APOC 22:11]",
+          "word_count": 5
+        },
+        "12": {
+          "verse_number": 12,
+          "sort_number": 12,
+          "text": "[APOC 22:12]",
+          "word_count": 5
+        },
+        "13": {
+          "verse_number": 13,
+          "sort_number": 13,
+          "text": "[APOC 22:13]",
+          "word_count": 5
+        },
+        "14": {
+          "verse_number": 14,
+          "sort_number": 14,
+          "text": "[APOC 22:14]",
+          "word_count": 5
+        },
+        "15": {
+          "verse_number": 15,
+          "sort_number": 15,
+          "text": "[APOC 22:15]",
+          "word_count": 5
+        },
+        "16": {
+          "verse_number": 16,
+          "sort_number": 16,
+          "text": "[APOC 22:16]",
+          "word_count": 5
+        },
+        "17": {
+          "verse_number": 17,
+          "sort_number": 17,
+          "text": "[APOC 22:17]",
+          "word_count": 5
+        },
+        "18": {
+          "verse_number": 18,
+          "sort_number": 18,
+          "text": "[APOC 22:18]",
+          "word_count": 5
+        },
+        "19": {
+          "verse_number": 19,
+          "sort_number": 19,
+          "text": "[APOC 22:19]",
+          "word_count": 5
+        },
+        "20": {
+          "verse_number": 20,
+          "sort_number": 20,
+          "text": "[APOC 22:20]",
+          "word_count": 5
+        },
+        "21": {
+          "verse_number": 21,
+          "sort_number": 21,
+          "text": "[APOC 22:21]",
+          "word_count": 5
+        }
+      }
+    }
+  }
 }
