@@ -1574,6 +1574,17 @@ class MobileRenderer {
                 const number = match[1];
                 displayText = isSelected ? `${number} CIL` : number;
             }
+        } else if (textTransform === 'number_only') {
+            // Show just the number for unselected, prepend display_name when selected
+            const match = item.name.match(/^(\d+)/);
+            if (match) {
+                const number = match[1];
+                if (isSelected && levelConfig && levelConfig.display_name) {
+                    displayText = `${levelConfig.display_name} ${number}`;
+                } else {
+                    displayText = number;
+                }
+            }
         }
         
         textElement.textContent = displayText;
@@ -2618,7 +2629,7 @@ class MobileRenderer {
         // Calculate circle END position (focus ring center)
         const circleEndX = arcParams.centerX;
         const circleEndY = arcParams.centerY;
-        const endRadius = arcParams.radius * 0.98;
+        const endRadius = arcParams.radius * 0.99;  // Match Focus Ring inner edge
         
         // Calculate logo END position (centered horizontally, same top buffer)
         const logoEndState = this.getDetailSectorLogoEndState();
