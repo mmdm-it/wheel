@@ -190,21 +190,27 @@ python -m http.server 8080
 wheel/
 ├── wheel.html              # Entry point
 ├── mobile/                 # Mobile implementation (ES6 modules)
-│   ├── catalog_mobile_modular.js
-│   ├── mobile-app.js
-│   ├── mobile-config.js
-│   ├── mobile-data.js
-│   ├── mobile-logger.js
-│   ├── mobile-renderer.js
-│   ├── mobile-touch.js
-│   ├── mobile-viewport.js
-│   ├── mobile-childpyramid.js
-│   └── mobile-detailsector.js
+│   ├── catalog_mobile_modular.js  # Module loader entry point
+│   ├── mobile-app.js              # Application controller
+│   ├── mobile-animation.js        # Nzone migration animations
+│   ├── mobile-childpyramid.js     # Child item preview display
+│   ├── mobile-config.js           # Constants and configuration
+│   ├── mobile-coordinates.js      # Hub/Nuc coordinate system
+│   ├── mobile-data.js             # Data loading and navigation
+│   ├── mobile-detailsector.js     # Content detail view
+│   ├── mobile-logger.js           # Debug logging system
+│   ├── mobile-renderer.js         # SVG rendering and UI
+│   ├── mobile-touch.js            # Touch event handling
+│   └── mobile-viewport.js         # Viewport calculations
+├── data/                   # Split volume data (lazy-loaded)
+│   └── gutenberg/          # Gutenberg Bible
+│       ├── manifest.json   # Volume metadata + book index
+│       └── books/          # Individual book files (67)
 ├── desktop/                # Desktop version (legacy)
 ├── assets/                 # Images, audio, etc.
-├── mmdm_catalog.json      # Marine catalog data
-├── gutenberg.json         # Bible data
-└── hg_mx.json             # Music library data
+├── mmdm_catalog.json       # Marine catalog data
+├── gutenberg.json          # Bible data (monolithic, deprecated)
+└── hg_mx.json              # Music library data
 ```
 
 ## Next Steps
