@@ -2,7 +2,7 @@
 
 A mobile-first hierarchical data browser with novel rotational touch navigation. Navigate deep tree structures intuitively using circular gestures.
 
-**Version 0.8.39** | December 2025
+**Version 0.8.102** | December 2025
 
 ## Demo Applications
 
@@ -93,6 +93,8 @@ We're looking for:
 - **Animated transitions**: Smooth nzone migration with 600ms animations when navigating levels
 - **Hierarchical browsing**: Tap to navigate deeper, use parent button to go back
 - **Touch-optimized**: Designed for mobile with momentum physics and gesture detection
+- **Translation toggle**: Switch between translations (e.g., Latin/English for Gutenberg Bible)
+- **Split JSON architecture**: Lazy-load large volumes with per-book files and IndexedDB caching
 - **Error auto-dismiss**: Error messages automatically clear on user interaction (rotation)
 - **Large datasets**: Handles 2000+ items with viewport filtering
 - **No build process**: Direct ES6 module loading in modern browsers
@@ -172,4 +174,4 @@ Contributions welcome! See issues labeled **"good first issue"** for starting po
 
 ---
 
-**Version 0.8.39** | December 2025
+**Version 0.8.102** | December 2025

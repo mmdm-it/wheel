@@ -10,15 +10,15 @@
       "volume_description": "Complete Protestant Bible for testing hierarchical navigation",
       "leaf_level": "verse",
       "translations": {
-        "available": ["lat", "eng"],
+        "available": ["lat", "heb"],
         "default": "lat",
         "labels": {
           "lat": "LATIN",
-          "eng": "ENGLISH"
+          "heb": "עברית"
         },
         "text_properties": {
           "lat": "text",
-          "eng": "translation"
+          "heb": "hebrew"
         }
       },
       "focus_ring_startup": {

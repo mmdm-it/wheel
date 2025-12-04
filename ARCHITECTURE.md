@@ -389,11 +389,11 @@ A desktop version exists in `desktop/` directory but uses an older JSON format a
 
 ---
 
-## Future Architecture
+## Current Architecture: Split JSON + Caching
 
-### Phase 1: Split JSON Files (Next)
+### Split JSON Files (Phase 1 - Complete)
 
-Replace monolithic JSON with per-book files and manifest:
+Large volumes use per-book files with a manifest for lazy loading:
 
 ```
 /data/
@@ -402,17 +402,18 @@ Replace monolithic JSON with per-book files and manifest:
     books/
       GENE.json             # Genesis - lazy loaded
       EXO.json              # Exodus
-      ...
+      ...                   # 67 books total
 ```
 
 **Manifest Schema:**
 ```json
 {
   "volume_name": "Gutenberg Bible",
-  "display_config": { /* moved from book files */ },
+  "structure_type": "split",
+  "display_config": { /* volume configuration */ },
   "books": {
     "GENE": { 
-      "path": "books/GENE.json", 
+      "_external_file": "books/GENE.json", 
       "name": "Genesis",
       "chapters": 50, 
       "verses": 1533 
@@ -425,13 +426,30 @@ Replace monolithic JSON with per-book files and manifest:
 - Faster initial load (only manifest + first book)
 - Memory efficiency (unload unused books)
 - Easier content updates (per-book files)
-- Enables offline caching (IndexedDB per book)
+- Offline caching via IndexedDB
 
-### Phase 2: Remove Domain-Specific Code
+### IndexedDB Caching Layer
 
-Current state: JS/CSS contains "gutenberg" references that should be configuration.
+Book files are cached in IndexedDB (`WheelVolumeCache`) for persistence across sessions:
+- Cache checked before network fetch
+- Automatic cache hit/miss logging
+- Survives browser restarts
 
-**Move to JSON display_config:**
+---
+
+## Future Architecture
+
+### Phase 3: Code Cleanup (Next)
+
+- Remove dead code and unused functions
+- Consolidate duplicate logic
+- Performance profiling and optimization
+
+### Domain-Specific Code Removal (Phase 2 - Complete)
+
+All domain-specific references removed from JS/CSS. Configuration-driven approach:
+
+**display_config flags:**
 ```json
 {
   "fonts": {
@@ -457,14 +475,6 @@ const isGutenberg = displayConfig?.volume_name === 'Gutenberg Bible';
 // After  
 const renderMode = displayConfig?.detail_sector?.render_mode || 'default';
 ```
-
-### Phase 3: Code Cleanup
-
-- Remove dead code (unused functions, commented blocks)
-- Consolidate duplicate logic
-- Standardize naming conventions
-- Extract magic numbers to config
-- Performance profiling and optimization
 
 ### Known Technical Debt
 - Large renderer module (recently refactored with animation extraction)
