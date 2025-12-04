@@ -149,6 +149,34 @@ class MobileDetailSector {
     }
 
     /**
+     * Apply translation selection to context
+     * Maps the selected translation's text property to 'text' for template resolution
+     * E.g., if English is selected and text_properties.eng = 'translation',
+     * then context.text becomes context.translation's value
+     */
+    applyTranslationToContext(context) {
+        if (!this.renderer) return context;
+        
+        const textProperty = this.renderer.getTranslationTextProperty();
+        if (!textProperty || textProperty === 'text') {
+            // Default property, no remapping needed
+            return context;
+        }
+        
+        // Create a copy with the translated text mapped to 'text'
+        const translatedContext = { ...context };
+        if (context[textProperty] !== undefined) {
+            translatedContext.text = context[textProperty];
+            Logger.verbose('📖 Applied translation:', { 
+                property: textProperty, 
+                originalText: context.text?.substring?.(0, 50),
+                translatedText: context[textProperty]?.substring?.(0, 50)
+            });
+        }
+        return translatedContext;
+    }
+
+    /**
      * Render the detailed content for an item
      */
     renderDetailContent(item) {
@@ -385,19 +413,22 @@ class MobileDetailSector {
         const subtitleTemplate = viewConfig.subtitle_template || viewConfig.subtitle;
         const bodyTemplate = viewConfig.body_template || viewConfig.body;
 
-        const title = this.dataManager.resolveDetailTemplate(titleTemplate, context);
-        const subtitle = this.dataManager.resolveDetailTemplate(subtitleTemplate, context);
+        // Apply translation selection: override 'text' with selected translation's property
+        const translationContext = this.applyTranslationToContext(context);
+
+        const title = this.dataManager.resolveDetailTemplate(titleTemplate, translationContext);
+        const subtitle = this.dataManager.resolveDetailTemplate(subtitleTemplate, translationContext);
         
         // Handle body as array or string
         let body = null;
         if (Array.isArray(bodyTemplate)) {
             // Resolve each template in the array and join with newlines
             const resolvedLines = bodyTemplate
-                .map(template => this.dataManager.resolveDetailTemplate(template, context))
+                .map(template => this.dataManager.resolveDetailTemplate(template, translationContext))
                 .filter(line => line); // Remove empty lines
             body = resolvedLines.join('\n');
         } else {
-            body = this.dataManager.resolveDetailTemplate(bodyTemplate, context);
+            body = this.dataManager.resolveDetailTemplate(bodyTemplate, translationContext);
         }
 
         if (title) {

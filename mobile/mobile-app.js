@@ -181,6 +181,11 @@ class MobileCatalogApp {
             // Create Detail Sector circle after data is loaded (so config is available)
             this.renderer.createDetailSectorCircle();
             
+            // Initialize translation button after data is loaded (so translations config is available)
+            console.log('🌐🌐🌐 About to call initializeTranslationButton');
+            this.renderer.initializeTranslationButton();
+            console.log('🌐🌐🌐 initializeTranslationButton returned');
+            
             // Apply color scheme from the volume
             this.applyColorScheme();
             

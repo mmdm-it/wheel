@@ -62,6 +62,10 @@ class MobileRenderer {
         this.visibleEndIndex = 0; // Last visible focus item index
         this.forceImmediateFocusSettlement = false; // Skip rotation delay for programmatic focus moves
 
+        // Translation state
+        this.currentTranslation = null; // Will be set from display_config.translations.default
+        this.translationsConfig = null; // Cache translations config
+
         // Debug controls
         this.focusRingDebugFlag = this.computeFocusRingDebugFlag();
         this.loopInOutDebugFlag = this.computeLoopInOutDebugFlag();
@@ -212,7 +216,8 @@ class MobileRenderer {
         ];
         
         const optionalElements = [
-            'childRing'  // Will be created dynamically if needed
+            'childRing',  // Will be created dynamically if needed
+            'translationButtonGroup'  // Translation toggle button
         ];
         
         const elementIds = [...requiredElements, ...optionalElements];
@@ -257,6 +262,9 @@ class MobileRenderer {
         
         // Initialize Detail Sector module with the DOM element
         this.detailSector.initialize(this.elements.detailItemsGroup);
+        
+        // Note: Translation button initialization moved to mobile-app.js loadSelectedVolume()
+        // because it requires display_config which isn't available until data is loaded
         
         if (missing.length > 0) {
             Logger.error('Missing DOM elements:', missing);
@@ -343,6 +351,128 @@ class MobileRenderer {
         return ring;
     }
     
+    /**
+     * Initialize translation button if translations are configured
+     */
+    initializeTranslationButton() {
+        console.log('🌐 initializeTranslationButton() called');
+        
+        const displayConfig = this.dataManager.getDisplayConfig();
+        console.log('🌐 displayConfig:', displayConfig ? 'exists' : 'null');
+        
+        const translations = displayConfig?.translations;
+        console.log('🌐 translations config:', JSON.stringify(translations));
+        
+        if (!translations || !translations.available || translations.available.length < 2) {
+            console.log('🌐 No translations configured or only one language - hiding button');
+            return;
+        }
+        
+        this.translationsConfig = translations;
+        this.currentTranslation = translations.default || translations.available[0];
+        console.log(`🌐 Current translation set to: ${this.currentTranslation}`);
+        
+        const buttonGroup = document.getElementById('translationButtonGroup');
+        const buttonText = document.getElementById('translationText');
+        console.log(`🌐 Button elements found: group=${!!buttonGroup}, text=${!!buttonText}`);
+        
+        if (!buttonGroup || !buttonText) {
+            console.warn('🌐 Translation button elements not found in DOM');
+            return;
+        }
+        
+        this.elements.translationButtonGroup = buttonGroup;
+        this.elements.translationText = buttonText;
+        
+        // Set initial label
+        const label = translations.labels?.[this.currentTranslation] || this.currentTranslation.toUpperCase();
+        buttonText.textContent = label;
+        
+        // Position the button at bottom center
+        this.positionTranslationButton();
+        
+        // Add click handler to cycle through translations
+        buttonGroup.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            this.cycleTranslation();
+        });
+        
+        // Show the button
+        buttonGroup.classList.remove('hidden');
+        buttonGroup.style.display = '';  // Ensure not hidden by inline style
+        
+        console.log(`🌐 Button hidden class after remove: ${buttonGroup.classList.contains('hidden')}`);
+        console.log(`🌐 Button classList: ${buttonGroup.classList}`);
+        console.log(`🌐 Button transform: ${buttonGroup.getAttribute('transform')}`);
+        
+        Logger.info(`🌐 Translation button initialized: ${label}`);
+    }
+    
+    /**
+     * Position translation button at bottom center of viewport
+     */
+    positionTranslationButton() {
+        const buttonGroup = this.elements.translationButtonGroup;
+        if (!buttonGroup) return;
+        
+        const viewport = this.viewport.getViewportInfo();
+        const SSd = Math.min(viewport.width, viewport.height);
+        
+        // SVG origin is at center (0,0), so bottom center is:
+        // x = 0 (horizontal center)
+        // y = positive value toward bottom edge
+        const x = 0;
+        const y = (viewport.height / 2) - (SSd * 0.12);  // 12% up from bottom edge (clear copyright)
+        
+        console.log(`🌐 Translation button position: (${x}, ${y}), viewport: ${viewport.width}x${viewport.height}`);
+        
+        buttonGroup.setAttribute('transform', `translate(${x}, ${y})`);
+    }
+    
+    /**
+     * Cycle to next translation
+     */
+    cycleTranslation() {
+        if (!this.translationsConfig) return;
+        
+        const available = this.translationsConfig.available;
+        const currentIndex = available.indexOf(this.currentTranslation);
+        const nextIndex = (currentIndex + 1) % available.length;
+        
+        this.currentTranslation = available[nextIndex];
+        
+        // Update button label
+        const label = this.translationsConfig.labels?.[this.currentTranslation] || this.currentTranslation.toUpperCase();
+        if (this.elements.translationText) {
+            this.elements.translationText.textContent = label;
+        }
+        
+        Logger.info(`🌐 Translation changed to: ${label}`);
+        
+        // Refresh detail sector if visible
+        if (this.detailSector.isVisible && this.selectedFocusItem) {
+            this.detailSector.showDetailContent(this.selectedFocusItem);
+        }
+    }
+    
+    /**
+     * Get current translation code (e.g., 'lat', 'eng')
+     */
+    getCurrentTranslation() {
+        return this.currentTranslation || 'lat';
+    }
+    
+    /**
+     * Get the text property name for current translation
+     */
+    getTranslationTextProperty() {
+        if (!this.translationsConfig?.text_properties) {
+            return 'text'; // Default fallback
+        }
+        return this.translationsConfig.text_properties[this.currentTranslation] || 'text';
+    }
+
     /**
      * Bring a specific focus node to center (magnifier position)
      * Triggered by clicking an unselected focus node

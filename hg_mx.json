@@ -3,7 +3,7 @@
         "display_config": {
             "wheel_volume_version": "1.0",
             "volume_schema_version": "1.0.0",
-            "volume_data_version": "2025.11.20",
+            "volume_data_version": "2025.12.03",
             "structure_type": "monolithic",
             "volume_type": "wheel_hierarchical",
             "volume_name": "HG Music Library",
@@ -63,7 +63,7 @@
                             },
                             {
                                 "id": "info",
-                                "body_template": "{{ year }} • {{ duration }} • {{ genre }}",
+                                "body_template": "{{ year }} \u2022 {{ duration }} \u2022 {{ genre }}",
                                 "fields": [
                                     {
                                         "label": "Track",
@@ -96,7 +96,9 @@
                                 "composer": "Bobby Troup",
                                 "genre": "Rock & Roll",
                                 "year": 1964,
-                                "label": "Decca Records"
+                                "label": "Decca Records",
+                                "sort_number": 1,
+                                "name": "Route 66"
                             },
                             "Not_Fade_Away": {
                                 "track_number": 5,
@@ -107,9 +109,13 @@
                                 "label": "Decca Records",
                                 "data": {
                                     "chart_position": "#3 UK"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "Not Fade Away"
                             }
-                        }
+                        },
+                        "sort_number": 1,
+                        "name": "The Rolling Stones"
                     },
                     "The_Rolling_Stones_No_2": {
                         "year": 1965,
@@ -123,9 +129,13 @@
                                 "label": "Decca Records",
                                 "data": {
                                     "chart_position": "#6 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Time Is on My Side"
                             }
-                        }
+                        },
+                        "sort_number": 2,
+                        "name": "The Rolling Stones No 2"
                     },
                     "Out_of_Our_Heads": {
                         "year": 1965,
@@ -139,7 +149,9 @@
                                 "label": "Decca Records",
                                 "data": {
                                     "chart_position": "#1 US/UK"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Satisfaction"
                             },
                             "The_Last_Time": {
                                 "track_number": 2,
@@ -150,9 +162,13 @@
                                 "label": "Decca Records",
                                 "data": {
                                     "chart_position": "#1 UK"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "The Last Time"
                             }
-                        }
+                        },
+                        "sort_number": 3,
+                        "name": "Out of Our Heads"
                     },
                     "Aftermath": {
                         "year": 1966,
@@ -166,7 +182,9 @@
                                 "label": "Decca Records",
                                 "data": {
                                     "chart_position": "#1 US/UK"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Paint It Black"
                             },
                             "Under_My_Thumb": {
                                 "track_number": 4,
@@ -174,9 +192,13 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1966,
-                                "label": "Decca Records"
+                                "label": "Decca Records",
+                                "sort_number": 2,
+                                "name": "Under My Thumb"
                             }
-                        }
+                        },
+                        "sort_number": 4,
+                        "name": "Aftermath"
                     },
                     "Between_the_Buttons": {
                         "year": 1967,
@@ -190,7 +212,9 @@
                                 "label": "Decca Records",
                                 "data": {
                                     "chart_position": "#3 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Lets Spend the Night Together"
                             },
                             "Ruby_Tuesday": {
                                 "track_number": 2,
@@ -201,9 +225,13 @@
                                 "label": "Decca Records",
                                 "data": {
                                     "chart_position": "#1 US"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "Ruby Tuesday"
                             }
-                        }
+                        },
+                        "sort_number": 5,
+                        "name": "Between the Buttons"
                     },
                     "Their_Satanic_Majesties_Request": {
                         "year": 1967,
@@ -214,7 +242,9 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Psychedelic Rock",
                                 "year": 1967,
-                                "label": "Decca Records"
+                                "label": "Decca Records",
+                                "sort_number": 1,
+                                "name": "She's a Rainbow"
                             },
                             "2000_Light_Years_from_Home": {
                                 "track_number": 5,
@@ -222,9 +252,13 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Psychedelic Rock",
                                 "year": 1967,
-                                "label": "Decca Records"
+                                "label": "Decca Records",
+                                "sort_number": 2,
+                                "name": "2000 Light Years from Home"
                             }
-                        }
+                        },
+                        "sort_number": 6,
+                        "name": "Their Satanic Majesties Request"
                     },
                     "Beggars_Banquet": {
                         "year": 1968,
@@ -235,7 +269,9 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1968,
-                                "label": "Decca Records"
+                                "label": "Decca Records",
+                                "sort_number": 1,
+                                "name": "Sympathy for the Devil"
                             },
                             "Street_Fighting_Man": {
                                 "track_number": 10,
@@ -246,9 +282,13 @@
                                 "label": "Decca Records",
                                 "data": {
                                     "chart_position": "#48 US"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "Street Fighting Man"
                             }
-                        }
+                        },
+                        "sort_number": 7,
+                        "name": "Beggars Banquet"
                     },
                     "Let_It_Bleed": {
                         "year": 1969,
@@ -259,7 +299,9 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1969,
-                                "label": "Decca Records"
+                                "label": "Decca Records",
+                                "sort_number": 1,
+                                "name": "Gimme Shelter"
                             },
                             "You_Cant_Always_Get_What_You_Want": {
                                 "track_number": 10,
@@ -267,7 +309,9 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1969,
-                                "label": "Decca Records"
+                                "label": "Decca Records",
+                                "sort_number": 2,
+                                "name": "You Cant Always Get What You Want"
                             },
                             "Midnight_Rambler": {
                                 "track_number": 6,
@@ -275,9 +319,13 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Blues Rock",
                                 "year": 1969,
-                                "label": "Decca Records"
+                                "label": "Decca Records",
+                                "sort_number": 3,
+                                "name": "Midnight Rambler"
                             }
-                        }
+                        },
+                        "sort_number": 8,
+                        "name": "Let It Bleed"
                     },
                     "Sticky_Fingers": {
                         "year": 1971,
@@ -291,7 +339,9 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#1 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Brown Sugar"
                             },
                             "Wild_Horses": {
                                 "track_number": 2,
@@ -302,7 +352,9 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#28 US"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "Wild Horses"
                             },
                             "Cant_You_Hear_Me_Knocking": {
                                 "track_number": 3,
@@ -310,9 +362,13 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1971,
-                                "label": "Rolling Stones Records"
+                                "label": "Rolling Stones Records",
+                                "sort_number": 3,
+                                "name": "Cant You Hear Me Knocking"
                             }
-                        }
+                        },
+                        "sort_number": 9,
+                        "name": "Sticky Fingers"
                     },
                     "Exile_on_Main_St": {
                         "year": 1972,
@@ -323,7 +379,9 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1972,
-                                "label": "Rolling Stones Records"
+                                "label": "Rolling Stones Records",
+                                "sort_number": 1,
+                                "name": "Rocks Off"
                             },
                             "Tumbling_Dice": {
                                 "track_number": 5,
@@ -334,7 +392,9 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#7 US"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "Tumbling Dice"
                             },
                             "Happy": {
                                 "track_number": 3,
@@ -342,9 +402,13 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1972,
-                                "label": "Rolling Stones Records"
+                                "label": "Rolling Stones Records",
+                                "sort_number": 3,
+                                "name": "Happy"
                             }
-                        }
+                        },
+                        "sort_number": 10,
+                        "name": "Exile on Main St"
                     },
                     "Goats_Head_Soup": {
                         "year": 1973,
@@ -358,7 +422,9 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#1 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Angie"
                             },
                             "Doo_Doo_Doo_Doo_Doo": {
                                 "track_number": 4,
@@ -366,9 +432,13 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1973,
-                                "label": "Rolling Stones Records"
+                                "label": "Rolling Stones Records",
+                                "sort_number": 2,
+                                "name": "Doo Doo Doo Doo Doo"
                             }
-                        }
+                        },
+                        "sort_number": 11,
+                        "name": "Goats Head Soup"
                     },
                     "It's_Only_Rock_n_Roll": {
                         "year": 1974,
@@ -382,7 +452,9 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#16 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "It's Only Rock n Roll"
                             },
                             "Ain't_Too_Proud_to_Beg": {
                                 "track_number": 5,
@@ -390,9 +462,13 @@
                                 "composer": "Norman Whitfield/Eddie Holland",
                                 "genre": "Rock",
                                 "year": 1974,
-                                "label": "Rolling Stones Records"
+                                "label": "Rolling Stones Records",
+                                "sort_number": 2,
+                                "name": "Ain't Too Proud to Beg"
                             }
-                        }
+                        },
+                        "sort_number": 12,
+                        "name": "It's Only Rock n Roll"
                     },
                     "Black_and_Blue": {
                         "year": 1976,
@@ -403,7 +479,9 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1976,
-                                "label": "Rolling Stones Records"
+                                "label": "Rolling Stones Records",
+                                "sort_number": 1,
+                                "name": "Hot Stuff"
                             },
                             "Fool_to_Cry": {
                                 "track_number": 3,
@@ -414,9 +492,13 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#10 US"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "Fool to Cry"
                             }
-                        }
+                        },
+                        "sort_number": 13,
+                        "name": "Black and Blue"
                     },
                     "Some_Girls": {
                         "year": 1978,
@@ -430,7 +512,9 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#1 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Miss You"
                             },
                             "Beast_of_Burden": {
                                 "track_number": 6,
@@ -441,7 +525,9 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#8 US"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "Beast of Burden"
                             },
                             "Shattered": {
                                 "track_number": 10,
@@ -449,7 +535,9 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1978,
-                                "label": "Rolling Stones Records"
+                                "label": "Rolling Stones Records",
+                                "sort_number": 3,
+                                "name": "Shattered"
                             },
                             "Far_Away_Eyes": {
                                 "track_number": 6,
@@ -458,9 +546,13 @@
                                 "genre": "Country Rock",
                                 "year": 1978,
                                 "label": "Rolling Stones Records",
-                                "audio_file": "06 Far Away Eyes.mp3"
+                                "audio_file": "06 Far Away Eyes.mp3",
+                                "sort_number": 4,
+                                "name": "Far Away Eyes"
                             }
-                        }
+                        },
+                        "sort_number": 14,
+                        "name": "Some Girls"
                     },
                     "Emotional_Rescue": {
                         "year": 1980,
@@ -474,7 +566,9 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#3 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Emotional Rescue"
                             },
                             "She's_So_Cold": {
                                 "track_number": 6,
@@ -482,9 +576,13 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1980,
-                                "label": "Rolling Stones Records"
+                                "label": "Rolling Stones Records",
+                                "sort_number": 2,
+                                "name": "She's So Cold"
                             }
-                        }
+                        },
+                        "sort_number": 15,
+                        "name": "Emotional Rescue"
                     },
                     "Tattoo_You": {
                         "year": 1981,
@@ -498,7 +596,9 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#2 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Start Me Up"
                             },
                             "Waiting_on_a_Friend": {
                                 "track_number": 5,
@@ -509,9 +609,13 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#13 US"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "Waiting on a Friend"
                             }
-                        }
+                        },
+                        "sort_number": 16,
+                        "name": "Tattoo You"
                     },
                     "Undercover": {
                         "year": 1983,
@@ -525,9 +629,13 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#9 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Undercover of the Night"
                             }
-                        }
+                        },
+                        "sort_number": 17,
+                        "name": "Undercover"
                     },
                     "Dirty_Work": {
                         "year": 1986,
@@ -541,9 +649,13 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#5 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Harlem Shuffle"
                             }
-                        }
+                        },
+                        "sort_number": 18,
+                        "name": "Dirty Work"
                     },
                     "Steel_Wheels": {
                         "year": 1989,
@@ -557,7 +669,9 @@
                                 "label": "Rolling Stones Records",
                                 "data": {
                                     "chart_position": "#5 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Mixed Emotions"
                             },
                             "Rock_and_a_Hard_Place": {
                                 "track_number": 2,
@@ -565,9 +679,13 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1989,
-                                "label": "Rolling Stones Records"
+                                "label": "Rolling Stones Records",
+                                "sort_number": 2,
+                                "name": "Rock and a Hard Place"
                             }
-                        }
+                        },
+                        "sort_number": 19,
+                        "name": "Steel Wheels"
                     },
                     "Voodoo_Lounge": {
                         "year": 1994,
@@ -581,7 +699,9 @@
                                 "label": "Virgin Records",
                                 "data": {
                                     "chart_position": "#14 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Love Is Strong"
                             },
                             "You_Got_Me_Rocking": {
                                 "track_number": 2,
@@ -589,9 +709,13 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1994,
-                                "label": "Virgin Records"
+                                "label": "Virgin Records",
+                                "sort_number": 2,
+                                "name": "You Got Me Rocking"
                             }
-                        }
+                        },
+                        "sort_number": 20,
+                        "name": "Voodoo Lounge"
                     },
                     "Bridges_to_Babylon": {
                         "year": 1997,
@@ -605,7 +729,9 @@
                                 "label": "Virgin Records",
                                 "data": {
                                     "chart_position": "#22 US"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Anybody Seen My Baby"
                             },
                             "Saint_of_Me": {
                                 "track_number": 4,
@@ -613,9 +739,13 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 1997,
-                                "label": "Virgin Records"
+                                "label": "Virgin Records",
+                                "sort_number": 2,
+                                "name": "Saint of Me"
                             }
-                        }
+                        },
+                        "sort_number": 21,
+                        "name": "Bridges to Babylon"
                     },
                     "A_Bigger_Bang": {
                         "year": 2005,
@@ -626,7 +756,9 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 2005,
-                                "label": "Virgin Records"
+                                "label": "Virgin Records",
+                                "sort_number": 1,
+                                "name": "Rough Justice"
                             },
                             "Streets_of_Love": {
                                 "track_number": 5,
@@ -634,9 +766,13 @@
                                 "composer": "Jagger-Richards",
                                 "genre": "Rock",
                                 "year": 2005,
-                                "label": "Virgin Records"
+                                "label": "Virgin Records",
+                                "sort_number": 2,
+                                "name": "Streets of Love"
                             }
-                        }
+                        },
+                        "sort_number": 22,
+                        "name": "A Bigger Bang"
                     },
                     "Blue_and_Lonesome": {
                         "year": 2016,
@@ -647,7 +783,9 @@
                                 "composer": "Buddy Johnson",
                                 "genre": "Blues",
                                 "year": 2016,
-                                "label": "Interscope Records"
+                                "label": "Interscope Records",
+                                "sort_number": 1,
+                                "name": "Just Your Fool"
                             },
                             "Ride_Em_On_Down": {
                                 "track_number": 2,
@@ -655,11 +793,17 @@
                                 "composer": "Eddie Taylor",
                                 "genre": "Blues",
                                 "year": 2016,
-                                "label": "Interscope Records"
+                                "label": "Interscope Records",
+                                "sort_number": 2,
+                                "name": "Ride Em On Down"
                             }
-                        }
+                        },
+                        "sort_number": 23,
+                        "name": "Blue and Lonesome"
                     }
-                }
+                },
+                "sort_number": 1,
+                "name": "The Rolling Stones"
             },
             "The_Lonesome_Strangers": {
                 "albums": {
@@ -675,7 +819,9 @@
                                 "label": "Hightone Records",
                                 "data": {
                                     "chart_position": "Independent release"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Goodbye Lonesome Hello Baby Doll"
                             },
                             "Mouth_Full_of_Sad": {
                                 "track_number": 4,
@@ -686,9 +832,13 @@
                                 "label": "Hightone Records",
                                 "data": {
                                     "chart_position": "Independent release"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "Mouth Full of Sad"
                             }
-                        }
+                        },
+                        "sort_number": 1,
+                        "name": "The Lonesome Strangers"
                     },
                     "Landlocked": {
                         "year": 1991,
@@ -702,7 +852,9 @@
                                 "label": "Hightone Records",
                                 "data": {
                                     "chart_position": "Independent release"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Call of the Wild"
                             },
                             "Born_Running": {
                                 "track_number": 5,
@@ -713,11 +865,17 @@
                                 "label": "Hightone Records",
                                 "data": {
                                     "chart_position": "Independent release"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "Born Running"
                             }
-                        }
+                        },
+                        "sort_number": 2,
+                        "name": "Landlocked"
                     }
-                }
+                },
+                "sort_number": 2,
+                "name": "The Lonesome Strangers"
             },
             "Leon_Redbone": {
                 "albums": {
@@ -733,7 +891,9 @@
                                 "label": "Warner Bros Records",
                                 "data": {
                                     "chart_position": "Album track"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Diddy Wa Diddy"
                             },
                             "Ain't_Misbehavin": {
                                 "track_number": 4,
@@ -745,9 +905,13 @@
                                 "data": {
                                     "chart_position": "Album track",
                                     "notes": "Traditional jazz standard"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "Ain't Misbehavin"
                             }
-                        }
+                        },
+                        "sort_number": 1,
+                        "name": "On the Track"
                     },
                     "Double_Time": {
                         "year": 1977,
@@ -761,7 +925,9 @@
                                 "label": "Warner Bros Records",
                                 "data": {
                                     "chart_position": "Album track"
-                                }
+                                },
+                                "sort_number": 1,
+                                "name": "Big Time Woman"
                             },
                             "Shine_On_Harvest_Moon": {
                                 "track_number": 6,
@@ -773,11 +939,17 @@
                                 "data": {
                                     "chart_position": "Album track",
                                     "notes": "1908 Tin Pan Alley classic"
-                                }
+                                },
+                                "sort_number": 2,
+                                "name": "Shine On Harvest Moon"
                             }
-                        }
+                        },
+                        "sort_number": 2,
+                        "name": "Double Time"
                     }
-                }
+                },
+                "sort_number": 3,
+                "name": "Leon Redbone"
             }
         }
     }
