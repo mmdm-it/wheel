@@ -1322,12 +1322,11 @@ class MobileRenderer {
         // The optimization is for static state (same items, same position) only
         const shouldRebuild = focusItemsChanged || isRotating || rotationTriggered;
         
-        // Clear existing elements but preserve the background band
+        // Ensure background band stays in DOM; we'll diff visible nodes instead of clearing all
         const background = focusRingGroup.querySelector('#focusRingBackground');
-        focusRingGroup.innerHTML = '';
-        if (background) focusRingGroup.appendChild(background);
-        this.focusElements.clear();
-        this.focusElements.clear();
+        if (background && !background.parentNode) {
+            focusRingGroup.appendChild(background);
+        }
         
         // Use updated angle calculation logic to maintain JSON order
         const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD; // Keep original 4.3° spacing
@@ -1359,7 +1358,10 @@ class MobileRenderer {
             this.focusRingDebug(`🎯 Adjusted center angle: ${(adjustedCenterAngle * 180 / Math.PI).toFixed(1)}°`);
         }
 
-        // Process all focus items but only render those in viewport window
+        // Process all focus items but only render those in viewport window (with small buffer)
+        const visibleEntries = [];
+        const viewportBuffer = angleStep * 2; // keep a small buffer to reduce pop-in
+
         allFocusItems.forEach((focusItem, index) => {
             // Validate sort_number
             const sortNumber = focusItem.data?.sort_number ?? focusItem.sort_number;
@@ -1384,12 +1386,9 @@ class MobileRenderer {
             const angleDiff = Math.abs(angle - centerAngle);
             const maxViewportAngle = MOBILE_CONFIG.VIEWPORT.VIEWPORT_ARC / 2;
             
-            if (angleDiff <= maxViewportAngle) {
-                // This focus item is in the viewport - render it
+            if (angleDiff <= maxViewportAngle + viewportBuffer) {
                 const position = this.calculateFocusPosition(angle, arcParams);
-                
-                // Check if selected (centered) - should match snapping range
-                const isSelected = angleDiff < (angleStep * 0.5); // ~2.15° - matches snapping threshold
+                const isSelected = angleDiff < (angleStep * 0.5);
                 if (isSelected) {
                     selectedFocusItem = focusItem;
                     selectedIndex = index;
@@ -1398,13 +1397,47 @@ class MobileRenderer {
                     }
                     this.focusRingDebug('🎯 SELECTED during rotation:', focusItem.name, 'angleDiff:', angleDiff.toFixed(3), 'threshold:', (angleStep * 0.5).toFixed(3));
                 }
-                
-                // Create focus element (cleared at start of each frame)
-                const element = this.createFocusElement(focusItem, position, angle, isSelected);
+
+                visibleEntries.push({
+                    focusItem,
+                    position,
+                    angle,
+                    isSelected
+                });
+            }
+        });
+
+        // Diff DOM: remove nodes that scrolled out of view
+        const visibleKeys = new Set(visibleEntries.map(entry => entry.focusItem.key));
+        for (const [key, element] of this.focusElements.entries()) {
+            if (!visibleKeys.has(key)) {
+                element.remove();
+                this.focusElements.delete(key);
+            }
+        }
+
+        // Render/update visible nodes in order
+        visibleEntries.forEach(entry => {
+            const { focusItem, position, angle, isSelected } = entry;
+            let element = this.focusElements.get(focusItem.key);
+            if (element) {
+                this.updateFocusElement(element, position, angle, isSelected);
+            } else {
+                element = this.createFocusElement(focusItem, position, angle, isSelected);
                 this.focusElements.set(focusItem.key, element);
+            }
+            if (element.parentNode !== focusRingGroup) {
+                focusRingGroup.appendChild(element);
+            } else if (element.nextSibling && element.nextSibling.id === 'focusRingBackground') {
+                // Keep background as first child if present
                 focusRingGroup.appendChild(element);
             }
         });
+
+        // Ensure background stays behind nodes
+        if (background && focusRingGroup.firstChild !== background) {
+            focusRingGroup.insertBefore(background, focusRingGroup.firstChild);
+        }
         
         // Position magnifying ring at the calculated center angle
         this.positionMagnifyingRing();
