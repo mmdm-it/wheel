@@ -233,6 +233,30 @@ g.focusItem.selected text {
     pointer-events: none; /* Guard: prevent text box from swallowing focus-ring clicks */
 }
 
+/* Translation Toggle Button */
+#translationButtonGroup {
+    cursor: pointer;
+    pointer-events: visiblePainted;
+}
+
+#translationButtonGroup #translationText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    fill: #000000;  /* Black text for visibility debugging */
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+#translationButtonGroup:hover #translationText {
+    opacity: 1;
+}
+
+#translationButtonGroup:active #translationText {
+    opacity: 0.6;
+}
+
 /* Keep button fully opaque - no hover/active fade */
 #parentButtonGroup:not(.disabled):hover {
     cursor: pointer;

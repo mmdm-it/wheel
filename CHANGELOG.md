@@ -10,6 +10,42 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Phase 2: Remove domain-specific code from JS/CSS
 - Phase 3: General code cleanup and optimization
 
+## [0.8.100] - 2025-12-03
+
+### Added
+- **Translation Toggle Button**: New UI control for switching between translations
+  - Text-only button at bottom center of viewport (next to Parent Button)
+  - Displays current translation name (e.g., "LATIN", "ENGLISH")
+  - Cycles through available translations on tap
+  - Re-renders detail sector content with selected translation
+- **Translations Configuration**: New manifest.json config block
+  - `translations.available`: Array of translation codes (e.g., ['lat', 'eng'])
+  - `translations.default`: Default translation to use
+  - `translations.labels`: Display labels for each translation
+  - `translations.text_properties`: Maps translation codes to verse properties
+
+### Changed
+- Detail sector now uses `applyTranslationToContext()` for translation-aware rendering
+- Verse templates ({{text}}) resolve to selected translation's property
+
+### Technical Notes
+- Gutenberg verse data has `text` (Latin) and `translation` (English) properties
+- `getTranslationTextProperty()` returns correct property for current translation
+- Translation button visibility controlled by translations config presence
+
+## [0.8.99] - 2025-12-03
+
+### Added
+- **IndexedDB Caching Layer**: Persistent cache for split volume book files
+  - IDB_NAME='WheelVolumeCache' stores external JSON files
+  - Survives browser sessions for faster subsequent loads
+  - Automatic cache hit/miss logging
+
+### Changed
+- Split volume lazy loading now checks IndexedDB before network fetch
+- Updated hg_mx.json with sort_number and name fields
+- Updated volume_data_version to 2025.12.03
+
 ## [0.8.92] - 2025-12-03
 
 ### Added
