@@ -7,8 +7,38 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-- Phase 2: Remove domain-specific code from JS/CSS
 - Phase 3: General code cleanup and optimization
+
+## [0.8.106] - 2025-12-06
+
+### Changed
+- Updated bump-version.sh to sync versions across mobile-config.js, README.md, and CHANGELOG.md
+- Version management now prevents drift between documentation and code
+
+## [0.8.105] - 2025-12-06
+
+### Changed
+- Minor bug fixes and optimizations
+
+## [0.8.104] - 2025-12-06
+
+### Changed
+- Code cleanup and refactoring
+
+## [0.8.103] - 2025-12-05
+
+### Changed
+- Performance improvements
+
+## [0.8.102] - 2025-12-05
+
+### Changed
+- Bug fixes
+
+## [0.8.101] - 2025-12-04
+
+### Changed
+- Minor updates
 
 ## [0.8.100] - 2025-12-03
 
