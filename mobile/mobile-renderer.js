@@ -850,6 +850,7 @@ class MobileRenderer {
     /**
      * Get cousin items for Focus Ring display - all items at the same level
      * across all parent groups, with gaps between sibling groups
+     * IMPORTANT: Only includes current parent and subsequent parents (no wrap-around)
      * @param {Object} item - The current item
      * @param {string} itemLevel - The level of the current item
      * @returns {Array} Array of items with null gaps between sibling groups
@@ -869,18 +870,31 @@ class MobileRenderer {
             return this.getChildItemsForLevel(parentItem, itemLevel);
         }
         
-        // Build grandparent item from current item
+        // Build parent and grandparent items from current item
+        const parentItem = this.buildParentItemFromChild(item, parentLevel);
         const grandparentItem = this.buildParentItemFromChild(item, grandparentLevel);
         
         // Get all parents (uncles/aunts) at the parent level under the grandparent
         const allParents = this.getChildItemsForLevel(grandparentItem, parentLevel);
         
-        Logger.debug(`🎯👥 Cousin navigation: ${itemLevel} across ${allParents.length} ${parentLevel}s under ${grandparentItem.name}`);
+        // Find the index of the current parent in the list
+        const currentParentIndex = allParents.findIndex(p => p.key === parentItem.key);
+        
+        if (currentParentIndex === -1) {
+            Logger.warn(`🎯👥 Could not find current parent ${parentItem.name} in parent list - using all parents`);
+        }
+        
+        // Only include parents from current parent forward (no wrap-around)
+        const parentsToInclude = currentParentIndex >= 0 
+            ? allParents.slice(currentParentIndex) 
+            : allParents;
+        
+        Logger.debug(`🎯👥 Cousin navigation: ${itemLevel} across ${parentsToInclude.length}/${allParents.length} ${parentLevel}s starting from ${parentItem.name}`);
         
         // Collect all cousins with gaps
         const cousinsWithGaps = [];
         
-        allParents.forEach((parent, parentIndex) => {
+        parentsToInclude.forEach((parent, parentIndex) => {
             // Get siblings under this parent
             const siblings = this.getChildItemsForLevel(parent, itemLevel);
             
@@ -890,7 +904,7 @@ class MobileRenderer {
             cousinsWithGaps.push(...siblings);
             
             // Add 2 gaps after each sibling group (except the last one)
-            if (parentIndex < allParents.length - 1) {
+            if (parentIndex < parentsToInclude.length - 1) {
                 cousinsWithGaps.push(null, null); // Two gap entries
             }
         });
