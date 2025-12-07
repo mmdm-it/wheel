@@ -1523,6 +1523,41 @@ class MobileRenderer {
         // Position magnifying ring at the calculated center angle
         this.positionMagnifyingRing();
         
+        // COUSIN NAVIGATION FIX: If no item was selected (gap at center), find nearest non-gap item
+        if (selectedIndex === -1 && allFocusItems.length > 0) {
+            // Calculate which index should be at center based on angles
+            const centerIndexFloat = middleIndex - (rotationOffset / angleStep);
+            const centerIndexRounded = Math.round(centerIndexFloat);
+            
+            // Search outward from center position to find nearest non-gap item
+            let searchRadius = 0;
+            const maxSearch = allFocusItems.length;
+            
+            while (searchRadius < maxSearch && selectedFocusItem === null) {
+                // Check items at increasing distances from center
+                const checkIndices = [];
+                if (searchRadius === 0) {
+                    checkIndices.push(centerIndexRounded);
+                } else {
+                    checkIndices.push(centerIndexRounded + searchRadius);
+                    checkIndices.push(centerIndexRounded - searchRadius);
+                }
+                
+                for (const checkIndex of checkIndices) {
+                    if (checkIndex >= 0 && checkIndex < allFocusItems.length) {
+                        const candidate = allFocusItems[checkIndex];
+                        if (candidate !== null) {
+                            selectedFocusItem = candidate;
+                            selectedIndex = checkIndex;
+                            Logger.debug(`🎯 Gap at center - selected nearest item: [${selectedIndex}] ${selectedFocusItem.name}`);
+                            break;
+                        }
+                    }
+                }
+                searchRadius++;
+            }
+        }
+        
         // Update active path with selected focus item  
         if (selectedIndex >= 0 && selectedFocusItem) {
             // Build appropriate active path based on item type
