@@ -9,6 +9,11 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.8.109] - 2025-12-06
+
+### Changed
+- Refactor to language code properties and 9-language translation support
+
 ## [0.8.108] - 2025-12-06
 
 ### Changed
