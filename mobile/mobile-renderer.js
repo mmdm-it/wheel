@@ -456,8 +456,8 @@ class MobileRenderer {
         }
         
         // Refresh Focus Ring to update Magnifier labels (Chapter/Verse translations)
-        if (this.centerRotationOffset !== undefined) {
-            this.updateFocusRingPositions(this.centerRotationOffset);
+        if (this.lastRotationOffset !== undefined) {
+            this.updateFocusRingPositions(this.lastRotationOffset);
         }
     }
     
