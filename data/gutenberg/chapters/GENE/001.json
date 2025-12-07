@@ -1,0 +1,215 @@
+{
+  "chapter_id": "GENE_001",
+  "chapter_key": "1",
+  "chapter_number": 1,
+  "sort_number": 1,
+  "name": "1",
+  "book_key": "GENE",
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verse_count": 31,
+  "verses": {
+    "1": {
+      "latin": "In principio creavit Deus caelum et terram.",
+      "english": "In the beginning God created the heavens and the earth.",
+      "hebrew": "בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ׃",
+      "greek": "Ἐν ἀρχῇ ἐποίησεν ὁ θεὸς τὸν οὐρανὸν καὶ τὴν γῆν.",
+      "french": "Au commencement, Dieu créa le ciel et la terre.",
+      "spanish": "En el principio creó Dios los cielos y la tierra.",
+      "italian": "In principio Dio creò il cielo e la terra.",
+      "portuguese": "No princípio, criou Deus os céus e a terra.",
+      "russian": "В начале сотворил Бог небо и землю.",
+      "sort_number": 1,
+      "name": "1",
+      "word_count": 7
+    },
+    "2": {
+      "latin": "Terra autem erat inanis et vacua, et tenebrae erant super faciem abyssi; et Spiritus Dei ferebatur super aquas.",
+      "english": "And the earth was without form and void, and darkness was upon the face of the deep; and the Spirit of God moved upon the face of the waters.",
+      "hebrew": "וְהָאָרֶץ הָיְתָה תֹהוּ וָבֹהוּ וְחֹשֶׁךְ עַל־פְּנֵי תְהוֹם וְרוּחַ אֱלֹהִים מְרַחֶפֶת עַל־פְּנֵי הַמָּיִם׃",
+      "sort_number": 2,
+      "name": "2",
+      "word_count": 18
+    },
+    "3": {
+      "latin": "Dixitque Deus: 'Fiat lux.' Et facta est lux.",
+      "english": "And God said: Let there be light. And there was light.",
+      "hebrew": "וַיֹּאמֶר אֱלֹהִים יְהִי אוֹר וַיְהִי־אוֹר׃",
+      "sort_number": 3,
+      "name": "3",
+      "word_count": 8
+    },
+    "4": {
+      "latin": "Et vidit Deus lucem quod esset bona; et divisit lucem a tenebris.",
+      "english": "And God saw the light that it was good; and He divided the light from the darkness.",
+      "hebrew": "וַיַּרְא אֱלֹהִים אֶת־הָאוֹר כִּי־טוֹב וַיַּבְדֵּל אֱלֹהִים בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ׃",
+      "sort_number": 4,
+      "name": "4",
+      "word_count": 12
+    },
+    "5": {
+      "latin": "Appellavitque lucem diem, et tenebras noctem; factumque est vespere et mane, dies unus.",
+      "english": "And He called the light Day, and the darkness He called Night; and there was evening and morning, one day.",
+      "hebrew": "וַיִּקְרָא אֱלֹהִים לָאוֹר יוֹם וְלַחֹשֶׁךְ קָרָא לָיְלָה וַיְהִי־עֶרֶב וַיְהִי־בֹקֶר יוֹם אֶחָד׃",
+      "sort_number": 5,
+      "name": "5",
+      "word_count": 13
+    },
+    "6": {
+      "sort_number": 6,
+      "name": "6",
+      "latin": "",
+      "word_count": 0
+    },
+    "7": {
+      "sort_number": 7,
+      "name": "7",
+      "latin": "",
+      "word_count": 0
+    },
+    "8": {
+      "sort_number": 8,
+      "name": "8",
+      "latin": "",
+      "word_count": 0
+    },
+    "9": {
+      "sort_number": 9,
+      "name": "9",
+      "latin": "",
+      "word_count": 0
+    },
+    "10": {
+      "sort_number": 10,
+      "name": "10",
+      "latin": "",
+      "word_count": 0
+    },
+    "11": {
+      "sort_number": 11,
+      "name": "11",
+      "latin": "",
+      "word_count": 0
+    },
+    "12": {
+      "sort_number": 12,
+      "name": "12",
+      "latin": "",
+      "word_count": 0
+    },
+    "13": {
+      "sort_number": 13,
+      "name": "13",
+      "latin": "",
+      "word_count": 0
+    },
+    "14": {
+      "sort_number": 14,
+      "name": "14",
+      "latin": "",
+      "word_count": 0
+    },
+    "15": {
+      "sort_number": 15,
+      "name": "15",
+      "latin": "",
+      "word_count": 0
+    },
+    "16": {
+      "sort_number": 16,
+      "name": "16",
+      "latin": "",
+      "word_count": 0
+    },
+    "17": {
+      "sort_number": 17,
+      "name": "17",
+      "latin": "",
+      "word_count": 0
+    },
+    "18": {
+      "sort_number": 18,
+      "name": "18",
+      "latin": "",
+      "word_count": 0
+    },
+    "19": {
+      "sort_number": 19,
+      "name": "19",
+      "latin": "",
+      "word_count": 0
+    },
+    "20": {
+      "sort_number": 20,
+      "name": "20",
+      "latin": "",
+      "word_count": 0
+    },
+    "21": {
+      "sort_number": 21,
+      "name": "21",
+      "latin": "",
+      "word_count": 0
+    },
+    "22": {
+      "sort_number": 22,
+      "name": "22",
+      "latin": "",
+      "word_count": 0
+    },
+    "23": {
+      "sort_number": 23,
+      "name": "23",
+      "latin": "",
+      "word_count": 0
+    },
+    "24": {
+      "sort_number": 24,
+      "name": "24",
+      "latin": "",
+      "word_count": 0
+    },
+    "25": {
+      "sort_number": 25,
+      "name": "25",
+      "latin": "",
+      "word_count": 0
+    },
+    "26": {
+      "sort_number": 26,
+      "name": "26",
+      "latin": "",
+      "word_count": 0
+    },
+    "27": {
+      "sort_number": 27,
+      "name": "27",
+      "latin": "",
+      "word_count": 0
+    },
+    "28": {
+      "sort_number": 28,
+      "name": "28",
+      "latin": "",
+      "word_count": 0
+    },
+    "29": {
+      "sort_number": 29,
+      "name": "29",
+      "latin": "",
+      "word_count": 0
+    },
+    "30": {
+      "sort_number": 30,
+      "name": "30",
+      "latin": "",
+      "word_count": 0
+    },
+    "31": {
+      "sort_number": 31,
+      "name": "31",
+      "latin": "",
+      "word_count": 0
+    }
+  }
+}

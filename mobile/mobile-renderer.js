@@ -149,16 +149,6 @@ class MobileRenderer {
         Logger.debug('Copyright diagnostic toggle initialized - click to show/hide Detail Sector bounds');
     }
     
-    /**
-     * Hide the Detail Sector bounds diagnostic overlay
-     */
-    hideDetailSectorBounds() {
-        const existing = document.getElementById('detailSectorBoundsDiag');
-        if (existing) {
-            existing.remove();
-        }
-    }
-    
     positionMagnifyingRing() {
         const ring = this.elements.magnifier;
         if (!ring) {
@@ -201,6 +191,9 @@ class MobileRenderer {
         if (this.currentFocusItems.length > 0) {
             this.updateFocusRingPositions(0);
         }
+
+        // Reposition translation toggle if present (orientation/resize)
+        this.positionTranslationButton();
         
         // Notify child pyramid of viewport changes
         this.childPyramid.handleViewportChange();
@@ -669,12 +662,19 @@ class MobileRenderer {
             return;
         }
 
+        // Check if we need lazy loading for chapters (chapter-level split, chapter getting verses)
+        if (this.dataManager.isChapterSplitStructure() && currentLevel === 'chapter' && nextLevel === 'verse') {
+            // Use async version for lazy loading
+            this._showChildContentForChapterAsync(focusItem, angle, currentLevel, nextLevel);
+            return;
+        }
+
         // Synchronous path for monolithic volumes
         this._showChildContentSync(focusItem, angle, currentLevel, nextLevel);
     }
 
     /**
-     * Async helper for showChildContentForFocusItem - handles lazy loading
+     * Async helper for showChildContentForFocusItem - handles lazy loading of books
      */
     async _showChildContentForFocusItemAsync(focusItem, angle, currentLevel, nextLevel) {
         Logger.info(`📥 Lazy loading chapters for book: ${focusItem.name}`);
@@ -683,6 +683,24 @@ class MobileRenderer {
         const loaded = await this.dataManager.ensureBookLoaded(focusItem);
         if (!loaded) {
             Logger.error(`Failed to load book data for ${focusItem.name}`);
+            this.handleLeafFocusSelection(focusItem);
+            return;
+        }
+        
+        // Now continue with sync path since data is loaded
+        this._showChildContentSync(focusItem, angle, currentLevel, nextLevel);
+    }
+
+    /**
+     * Async helper for showChildContentForFocusItem - handles lazy loading of chapters
+     */
+    async _showChildContentForChapterAsync(focusItem, angle, currentLevel, nextLevel) {
+        Logger.info(`📥 Lazy loading verses for chapter: ${focusItem.name}`);
+        
+        // Ensure chapter data is loaded
+        const loaded = await this.dataManager.ensureChapterLoaded(focusItem);
+        if (!loaded) {
+            Logger.error(`Failed to load chapter data for ${focusItem.name}`);
             this.handleLeafFocusSelection(focusItem);
             return;
         }
@@ -782,29 +800,61 @@ class MobileRenderer {
         
         // Extract parent context from first item's path
         const firstItem = itemsWithoutSort[0];
-        let parentInfo = '';
+        const parentNames = [];
         if (firstItem.__path && firstItem.__path.length > 0) {
             // Get parent names from path (exclude the item itself)
-            const parentNames = firstItem.__path.slice(0, -1).map(segment => {
-                // Handle both string segments and object segments
-                if (typeof segment === 'string') return segment;
-                return segment.name || segment.key || segment;
+            firstItem.__path.slice(0, -1).forEach(segment => {
+                if (typeof segment === 'string') {
+                    parentNames.push(segment);
+                } else if (segment && (segment.name || segment.key)) {
+                    parentNames.push(segment.name || segment.key);
+                }
             });
-            if (parentNames.length > 0) {
-                parentInfo = `<div style="font-size: 14px; margin-top: 10px; opacity: 0.9;">Parent: ${parentNames.join(' → ')}</div>`;
-            }
         }
-        const itemList = itemsWithoutSort.map(item => 
-            `• ${item.name || item.key} (level: ${item.__level || 'unknown'})`
-        ).join('<br>');
         
-        errorDiv.innerHTML = `
-            <div style="font-size: 24px; margin-bottom: 15px;">⚠️ ERROR - Sort Number Missing</div>
-            <div style="font-size: 16px; margin-bottom: 10px;">${context}</div>
-            ${parentInfo}
-            <div style="font-size: 14px; text-align: left; margin-top: 15px;">${itemList}</div>
-            <div style="font-size: 12px; margin-top: 20px; opacity: 0.9;">Items cannot be displayed without sort_number</div>
-        `;
+        // Build DOM elements with textContent to avoid HTML injection from catalog data
+        const titleEl = document.createElement('div');
+        titleEl.style.fontSize = '24px';
+        titleEl.style.marginBottom = '15px';
+        titleEl.textContent = '⚠️ ERROR - Sort Number Missing';
+
+        const contextEl = document.createElement('div');
+        contextEl.style.fontSize = '16px';
+        contextEl.style.marginBottom = '10px';
+        contextEl.textContent = context;
+
+        const parentInfoEl = document.createElement('div');
+        parentInfoEl.style.fontSize = '14px';
+        parentInfoEl.style.marginTop = '10px';
+        parentInfoEl.style.opacity = '0.9';
+        if (parentNames.length > 0) {
+            parentInfoEl.textContent = `Parent: ${parentNames.join(' → ')}`;
+        }
+
+        const listEl = document.createElement('ul');
+        listEl.style.fontSize = '14px';
+        listEl.style.textAlign = 'left';
+        listEl.style.marginTop = '15px';
+        listEl.style.paddingLeft = '20px';
+        itemsWithoutSort.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name || item.key} (level: ${item.__level || 'unknown'})`;
+            listEl.appendChild(li);
+        });
+
+        const footerEl = document.createElement('div');
+        footerEl.style.fontSize = '12px';
+        footerEl.style.marginTop = '20px';
+        footerEl.style.opacity = '0.9';
+        footerEl.textContent = 'Items cannot be displayed without sort_number';
+
+        errorDiv.appendChild(titleEl);
+        errorDiv.appendChild(contextEl);
+        if (parentNames.length > 0) {
+            errorDiv.appendChild(parentInfoEl);
+        }
+        errorDiv.appendChild(listEl);
+        errorDiv.appendChild(footerEl);
         
         document.body.appendChild(errorDiv);
         
@@ -929,6 +979,14 @@ class MobileRenderer {
                 const loaded = await this.dataManager.ensureBookLoaded(parentItem);
                 if (!loaded) {
                     console.error(`Failed to load book data for ${parentItem.name}`);
+                    return [];
+                }
+            }
+            // For chapters getting verses (chapter-level split), ensure chapter data is loaded first
+            if (parentLevel === 'chapter' && childLevelName === 'verse' && this.dataManager.isChapterSplitStructure()) {
+                const loaded = await this.dataManager.ensureChapterLoaded(parentItem);
+                if (!loaded) {
+                    console.error(`Failed to load chapter data for ${parentItem.name}`);
                     return [];
                 }
             }
@@ -1951,17 +2009,26 @@ class MobileRenderer {
         textElement.removeAttribute('font-weight');
         
         // Apply text transformation based on configuration (pure universal)
-        let displayText = item.name;
+        // Prefer translated display name when available
+        const translationProp = typeof this.getTranslationTextProperty === 'function'
+            ? this.getTranslationTextProperty()
+            : null;
+        const translated = translationProp
+            ? (item[translationProp] || item.data?.[translationProp] || item.translations?.[translationProp])
+            : null;
+        const baseName = translated || item.name;
+
+        let displayText = baseName;
         if (textTransform === 'number_only_or_cil') {
             // Extract numeric part and optionally append CIL when selected
-            const match = item.name.match(/^(\d+)/);
+            const match = baseName && baseName.match(/^(\d+)/);
             if (match) {
                 const number = match[1];
                 displayText = isSelected ? `${number} CIL` : number;
             }
         } else if (textTransform === 'number_only') {
             // Show just the number for unselected, prepend display_name when selected
-            const match = item.name.match(/^(\d+)/);
+            const match = baseName && baseName.match(/^(\d+)/);
             if (match) {
                 const number = match[1];
                 if (isSelected && levelConfig) {
@@ -2563,6 +2630,9 @@ class MobileRenderer {
         this.animation.animateSiblingsToFocusRing(item, nodePositions, allSiblings, () => {
             // Animation complete - now show the real focus ring
             this.isAnimating = false;
+            if (window.mobileCatalogApp && window.mobileCatalogApp.touchHandler) {
+                window.mobileCatalogApp.touchHandler.tempDisabled = false;
+            }
             this.continueChildPyramidClick(item);
         });
     }
@@ -2736,12 +2806,6 @@ class MobileRenderer {
                 // Stop any ongoing inertial animation to prevent it from interfering
                 window.mobileCatalogApp.touchHandler.stopAnimation();
                 window.mobileCatalogApp.touchHandler.rotationOffset = centerOffset;
-                // Re-enable touch handling after cooldown period
-                setTimeout(() => {
-                    if (window.mobileCatalogApp.touchHandler) {
-                        window.mobileCatalogApp.touchHandler.tempDisabled = false;
-                    }
-                }, 500); // 500ms cooldown
                 Logger.debug('🔺 Set touch handler rotationOffset to', centerOffset.toFixed(3));
             }
         }
@@ -2821,6 +2885,14 @@ class MobileRenderer {
         const levelNames = this.getHierarchyLevelNames();
         const topNavDepth = levelNames.indexOf(topNavLevel);
         const parentDepth = levelNames.indexOf(parentLevel);
+
+        const normalizeSegment = (segment) => {
+            if (typeof segment === 'string') return segment;
+            if (segment && typeof segment === 'object') {
+                return segment.name || segment.key || String(segment);
+            }
+            return segment === undefined || segment === null ? '' : String(segment);
+        };
         
         if (topNavDepth === -1 || parentDepth === -1) {
             // Fallback if levels not found in hierarchy
@@ -2841,20 +2913,20 @@ class MobileRenderer {
         // Show only the parent name, singular
         if (actualParentIndex < topNavDepth) {
             if (actualParentSegment) {
-                contextSegments.push(actualParentSegment);
+                contextSegments.push(normalizeSegment(actualParentSegment));
             }
         }
         // Case 2: Parent IS the top navigation level
         // Show only top ancestor, singular
         else if (actualParentIndex === topNavDepth) {
-            const topAncestorSegment = item.__path[topNavDepth];
+            const topAncestorSegment = normalizeSegment(item.__path[topNavDepth]);
             contextSegments.push(topAncestorSegment);
         }
         // Case 3: Parent is BELOW top navigation level
         // Show top ancestor + parent (pluralized)
         else if (actualParentIndex > topNavDepth) {
             // Add top ancestor first
-            const topAncestorSegment = item.__path[topNavDepth];
+            const topAncestorSegment = normalizeSegment(item.__path[topNavDepth]);
             contextSegments.push(topAncestorSegment);
             
             // Add actual parent (pluralized)
@@ -2863,9 +2935,10 @@ class MobileRenderer {
                 const levelConfig = this.dataManager.getHierarchyLevelConfig(levelName);
                 
                 // Pluralize based on level type
+                const normalizedParent = normalizeSegment(actualParentSegment);
                 const pluralized = levelConfig?.is_numeric 
-                    ? actualParentSegment + "'s"  // Numbers: "8" → "8's"
-                    : actualParentSegment + "'s"; // Words: "Flathead" → "Flathead's"
+                    ? normalizedParent + "'s"  // Numbers: "8" → "8's"
+                    : normalizedParent + "'s"; // Words: "Flathead" → "Flathead's"
                 
                 contextSegments.push(pluralized);
             }

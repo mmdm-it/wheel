@@ -1,0 +1,37 @@
+{
+  "chapter_id": "PSAL_123",
+  "chapter_key": "123",
+  "chapter_number": 123,
+  "sort_number": 123,
+  "name": "123",
+  "book_key": "PSAL",
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verse_count": 4,
+  "verses": {
+    "1": {
+      "verse_number": 1,
+      "sort_number": 1,
+      "text": "[PSAL 123:1]",
+      "word_count": 5
+    },
+    "2": {
+      "verse_number": 2,
+      "sort_number": 2,
+      "text": "[PSAL 123:2]",
+      "word_count": 5
+    },
+    "3": {
+      "verse_number": 3,
+      "sort_number": 3,
+      "text": "[PSAL 123:3]",
+      "word_count": 5
+    },
+    "4": {
+      "verse_number": 4,
+      "sort_number": 4,
+      "text": "[PSAL 123:4]",
+      "word_count": 5
+    }
+  }
+}

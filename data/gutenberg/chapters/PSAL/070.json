@@ -1,0 +1,43 @@
+{
+  "chapter_id": "PSAL_070",
+  "chapter_key": "70",
+  "chapter_number": 70,
+  "sort_number": 70,
+  "name": "70",
+  "book_key": "PSAL",
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verse_count": 5,
+  "verses": {
+    "1": {
+      "verse_number": 1,
+      "sort_number": 1,
+      "text": "[PSAL 70:1]",
+      "word_count": 5
+    },
+    "2": {
+      "verse_number": 2,
+      "sort_number": 2,
+      "text": "[PSAL 70:2]",
+      "word_count": 5
+    },
+    "3": {
+      "verse_number": 3,
+      "sort_number": 3,
+      "text": "[PSAL 70:3]",
+      "word_count": 5
+    },
+    "4": {
+      "verse_number": 4,
+      "sort_number": 4,
+      "text": "[PSAL 70:4]",
+      "word_count": 5
+    },
+    "5": {
+      "verse_number": 5,
+      "sort_number": 5,
+      "text": "[PSAL 70:5]",
+      "word_count": 5
+    }
+  }
+}

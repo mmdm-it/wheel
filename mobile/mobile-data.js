@@ -345,9 +345,9 @@ class DataManager {
         if (volumeFiles.length === 0) {
             // Scan for any .json files that might be volumes
             // These are just common patterns - the validation below will reject non-volumes
+            // Note: gutenberg.json removed - now uses split chapters in data/gutenberg/manifest.json
             volumeFiles = [
                 'mmdm_catalog.json',
-                'gutenberg.json', 
                 'hg_mx.json',
                 'fairhope.json'
             ];
@@ -377,13 +377,14 @@ class DataManager {
                 if (rootData &&
                     rootData.display_config &&
                     rootData.display_config.volume_type === 'wheel_hierarchical' &&
-                    rootData.display_config.structure_type === 'split') {
+                    (rootData.display_config.structure_type === 'split' || rootData.display_config.structure_type === 'split_chapters')) {
                     
                     const schemaVersion = rootData.display_config.volume_schema_version || '1.0.0';
                     const dataVersion = rootData.display_config.volume_data_version || 'unknown';
+                    const structureType = rootData.display_config.structure_type;
                     
                     Logger.info(`📦 Split volume discovered: ${rootData.display_config.volume_name}`);
-                    Logger.info(`   Schema: ${schemaVersion} | Data: ${dataVersion}`);
+                    Logger.info(`   Schema: ${schemaVersion} | Data: ${dataVersion} | Structure: ${structureType}`);
                     
                     volumes.push({
                         filename: manifest,
@@ -392,7 +393,7 @@ class DataManager {
                         version: rootData.display_config.wheel_volume_version,
                         schemaVersion: schemaVersion,
                         dataVersion: dataVersion,
-                        structureType: 'split',
+                        structureType: structureType,
                         rootKey: rootKey
                     });
                     
@@ -510,6 +511,8 @@ class DataManager {
                 // Check if structure type is supported
                 if (structureType === 'split') {
                     Logger.info(`📂 Split structure detected - lazy loading enabled for external book files`);
+                } else if (structureType === 'split_chapters') {
+                    Logger.info(`📂 Chapter-level split structure detected - lazy loading enabled for external chapter files`);
                 }
             }
             
@@ -532,7 +535,17 @@ class DataManager {
      */
     isSplitStructure() {
         const displayConfig = this.getDisplayConfig();
-        return displayConfig && displayConfig.structure_type === 'split';
+        const structureType = displayConfig && displayConfig.structure_type;
+        return structureType === 'split' || structureType === 'split_chapters';
+    }
+
+    /**
+     * Check if current volume uses chapter-level split structure
+     * @returns {boolean} True if volume uses chapter-level split structure
+     */
+    isChapterSplitStructure() {
+        const displayConfig = this.getDisplayConfig();
+        return displayConfig && displayConfig.structure_type === 'split_chapters';
     }
 
     /**
@@ -594,10 +607,15 @@ class DataManager {
             
             // Merge external data into target location
             // For book files, this means adding chapters data
+            // For chapter files (split_chapters), this means adding verses data
             if (externalData.chapters) {
                 targetLocation.chapters = externalData.chapters;
                 targetLocation._loaded = true;
                 Logger.info(`✅ Loaded ${Object.keys(externalData.chapters).length} chapters from ${externalFilePath}`);
+            } else if (externalData.verses) {
+                targetLocation.verses = externalData.verses;
+                targetLocation._loaded = true;
+                Logger.info(`✅ Loaded ${Object.keys(externalData.verses).length} verses from ${externalFilePath}`);
             } else {
                 // Generic merge - copy all properties except metadata
                 Object.keys(externalData).forEach(key => {
@@ -684,6 +702,79 @@ class DataManager {
         }
         
         return sectionData.books[book];
+    }
+
+    /**
+     * Ensure chapter data is loaded before accessing its children (verses)
+     * @param {Object} chapterItem - The chapter item that may need loading
+     * @returns {Promise<boolean>} True if chapter is ready (already loaded or successfully loaded)
+     */
+    async ensureChapterLoaded(chapterItem) {
+        if (!this.isChapterSplitStructure()) {
+            return true; // Not a chapter-split structure
+        }
+        
+        // Navigate to the chapter in the data structure
+        const chapterData = this.getChapterDataLocation(chapterItem);
+        
+        if (!chapterData) {
+            Logger.warn(`ensureChapterLoaded: Could not find chapter data for ${chapterItem.name}`);
+            return false;
+        }
+        
+        // Check if chapter needs loading
+        if (chapterData._loaded === true) {
+            return true; // Already loaded
+        }
+        
+        if (!chapterData._external_file) {
+            Logger.debug(`ensureChapterLoaded: Chapter ${chapterItem.name} has no external file reference`);
+            return true; // No external file - already has data
+        }
+        
+        // Load the external file
+        try {
+            await this.loadExternalFile(chapterData._external_file, chapterData);
+            return true;
+        } catch (error) {
+            Logger.error(`Failed to load chapter ${chapterItem.name}:`, error);
+            return false;
+        }
+    }
+
+    /**
+     * Get the actual data location for a chapter item
+     * @param {Object} chapterItem - Chapter item with __path metadata
+     * @returns {Object|null} The chapter data object in the loaded data structure
+     */
+    getChapterDataLocation(chapterItem) {
+        if (!chapterItem || !chapterItem.__path || chapterItem.__path.length < 4) {
+            return null;
+        }
+        
+        const [testament, section, book, chapter] = chapterItem.__path;
+        const rootData = this.data && this.data[this.rootDataKey];
+        
+        if (!rootData || !rootData.testaments) {
+            return null;
+        }
+        
+        const testamentData = rootData.testaments[testament];
+        if (!testamentData || !testamentData.sections) {
+            return null;
+        }
+        
+        const sectionData = testamentData.sections[section];
+        if (!sectionData || !sectionData.books) {
+            return null;
+        }
+        
+        const bookData = sectionData.books[book];
+        if (!bookData || !bookData.chapters) {
+            return null;
+        }
+        
+        return bookData.chapters[chapter];
     }
 
     async load() {

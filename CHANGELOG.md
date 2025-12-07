@@ -9,6 +9,16 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.8.114] - 2025-12-07
+
+### Changed
+- Implement chapter-level split architecture with 1,215 chapter files
+
+## [0.8.113] - 2025-12-07
+
+### Changed
+- Implement chapter-level split architecture with 1,215 chapter files
+
 ## [0.8.112] - 2025-12-06
 
 ### Changed
