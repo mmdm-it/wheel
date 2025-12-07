@@ -1786,14 +1786,9 @@ class MobileRenderer {
             textY = 0;
             textAnchor = 'middle';
         } else {
-            // Standard radial positioning for other items
-            const radius = MOBILE_CONFIG.RADIUS.UNSELECTED;
-            let offset = -(radius + 5);
-            
-            // For selected items, NO offset - text at same position as circle
-            if (isSelected) {
-                offset = 0;
-            }
+            // Radial positioning - center text over circles for all items
+            // No offset needed - text positioned at same coordinates as circle center
+            const offset = 0;
             
             textX = offset * Math.cos(angle);
             textY = offset * Math.sin(angle);
