@@ -151,15 +151,19 @@ class MobileDetailSector {
     /**
      * Apply translation selection to context
      * Maps the selected translation's text property to 'text' for template resolution
-     * E.g., if English is selected and text_properties.eng = 'translation',
-     * then context.text becomes context.translation's value
+     * Now uses language codes directly (e.g., 'latin', 'english', 'hebrew')
      */
     applyTranslationToContext(context) {
         if (!this.renderer) return context;
         
         const textProperty = this.renderer.getTranslationTextProperty();
-        if (!textProperty || textProperty === 'text') {
-            // Default property, no remapping needed
+        if (!textProperty || textProperty === 'latin') {
+            // Latin is the default, check if we should use it as-is or map
+            if (context.latin !== undefined) {
+                const translatedContext = { ...context };
+                translatedContext.text = context.latin;
+                return translatedContext;
+            }
             return context;
         }
         
@@ -169,7 +173,7 @@ class MobileDetailSector {
             translatedContext.text = context[textProperty];
             Logger.verbose('📖 Applied translation:', { 
                 property: textProperty, 
-                originalText: context.text?.substring?.(0, 50),
+                originalText: context.latin?.substring?.(0, 50),
                 translatedText: context[textProperty]?.substring?.(0, 50)
             });
         }

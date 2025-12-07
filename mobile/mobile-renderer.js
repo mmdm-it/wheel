@@ -465,12 +465,12 @@ class MobileRenderer {
     
     /**
      * Get the text property name for current translation
+     * Now uses language codes directly (e.g., 'latin', 'english', 'hebrew')
      */
     getTranslationTextProperty() {
-        if (!this.translationsConfig?.text_properties) {
-            return 'text'; // Default fallback
-        }
-        return this.translationsConfig.text_properties[this.currentTranslation] || 'text';
+        // Return current translation language code directly
+        // (e.g., 'latin', 'english', 'hebrew', 'greek', 'french', etc.)
+        return this.currentTranslation || 'latin';
     }
 
     /**
