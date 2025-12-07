@@ -6,7 +6,7 @@ Documentation of source materials for the Biblia Catholica multilingual Bible.
 
 | Code | Language | Status | Source | Notes |
 |------|----------|--------|--------|-------|
-| hebrew | עברית (Hebrew) | Partial | TBD | Old Testament only |
+| hebrew | עברית (Hebrew) | Decided | Westminster Leningrad Codex | 39 protocanonical OT books only; hidden for deuterocanonicals and NT |
 | greek | Ελληνικά (Greek) | Partial | TBD | Septuagint (OT) + Byzantine/NA (NT) |
 | latin | Latina (Latin) | Complete | Vulgate | Primary text, complete |
 | english | English | Partial | KJV/Douay-Rheims | Public domain |
@@ -19,8 +19,12 @@ Documentation of source materials for the Biblia Catholica multilingual Bible.
 ## Source Candidates
 
 ### Hebrew (Old Testament)
-- **Westminster Leningrad Codex** - Public domain, standard Masoretic text
-- **Biblia Hebraica Stuttgartensia** - Academic standard (check licensing)
+- ✅ **Westminster Leningrad Codex (WLC)** - Public domain, standard Masoretic text
+  - 39 protocanonical OT books only
+  - Deuterocanonicals (Tobit, Judith, Wisdom, Sirach, Baruch, 1-2 Maccabees) have no Hebrew original
+  - NT has no Hebrew original
+  - For these books, עברית option is hidden from UI
+- ~~Biblia Hebraica Stuttgartensia~~ - Same base text as WLC, licensing complex
 
 ### Greek
 - **Septuagint (LXX)** - Old Testament, Rahlfs edition (public domain)

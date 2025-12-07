@@ -695,10 +695,12 @@ class MobileRenderer {
      * Async helper for showChildContentForFocusItem - handles lazy loading of chapters
      */
     async _showChildContentForChapterAsync(focusItem, angle, currentLevel, nextLevel) {
+        console.log(`🔍 DEBUG _showChildContentForChapterAsync: chapter=${focusItem.name}, path=${JSON.stringify(focusItem.__path)}`);
         Logger.info(`📥 Lazy loading verses for chapter: ${focusItem.name}`);
         
         // Ensure chapter data is loaded
         const loaded = await this.dataManager.ensureChapterLoaded(focusItem);
+        console.log(`🔍 DEBUG ensureChapterLoaded returned: ${loaded}`);
         if (!loaded) {
             Logger.error(`Failed to load chapter data for ${focusItem.name}`);
             this.handleLeafFocusSelection(focusItem);

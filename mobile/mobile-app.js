@@ -1004,6 +1004,12 @@ async function initMobileCatalog() {
 
         // Make app globally available
         window.mobileCatalogApp = mobileCatalogApp;
+        
+        // Expose cache clear function for debugging
+        window.clearWheelCache = async () => {
+            await mobileCatalogApp.dataManager.clearCache();
+            console.log('✅ Cache cleared. Reload the page to fetch fresh data.');
+        };
 
         // Set up global error handling
         window.addEventListener('error', (event) => {

@@ -581,6 +581,7 @@ class DataManager {
     }
 
     async _performExternalFileLoad(externalFilePath, targetLocation) {
+        console.log(`🔍 DEBUG _performExternalFileLoad: path=${externalFilePath}`);
         Logger.info(`📥 Lazy loading external file: ${externalFilePath}`);
         
         try {
@@ -589,9 +590,11 @@ class DataManager {
             let externalData;
             
             if (cachedData) {
+                console.log(`🔍 DEBUG: Using CACHED data for ${externalFilePath}`);
                 Logger.info(`💾 Using cached data for: ${externalFilePath}`);
                 externalData = cachedData;
             } else {
+                console.log(`🔍 DEBUG: FETCHING from network: ${externalFilePath}`);
                 // Fetch from network
                 const response = await fetch(`./${externalFilePath}`);
                 
@@ -600,6 +603,7 @@ class DataManager {
                 }
                 
                 externalData = await response.json();
+                console.log(`🔍 DEBUG: Fetched data, verses keys:`, externalData.verses ? Object.keys(externalData.verses).slice(0, 5) : 'no verses');
                 
                 // Cache for future use
                 await this._setCachedFile(externalFilePath, externalData);
@@ -615,6 +619,8 @@ class DataManager {
             } else if (externalData.verses) {
                 targetLocation.verses = externalData.verses;
                 targetLocation._loaded = true;
+                console.log(`🔍 DEBUG: Merged ${Object.keys(externalData.verses).length} verses into targetLocation`);
+                console.log(`🔍 DEBUG: Sample verse 6:`, JSON.stringify(externalData.verses['6']).substring(0, 200));
                 Logger.info(`✅ Loaded ${Object.keys(externalData.verses).length} verses from ${externalFilePath}`);
             } else {
                 // Generic merge - copy all properties except metadata

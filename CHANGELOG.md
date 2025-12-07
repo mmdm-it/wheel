@@ -9,6 +9,17 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.8.117] - 2025-12-07
+
+### Added
+- Add complete Latin Vulgate text for Genesis 1 (all 31 verses)
+- Add Hebrew WLC text for Genesis 1 from Westminster Leningrad Codex
+- Add `clearWheelCache()` console helper for cache management
+
+### Changed
+- Remove obsolete book-level JSON files (replaced by chapter-level split)
+- Recalculate word counts for Genesis 1 verses
+
 ## [0.8.116] - 2025-12-07
 
 ### Fixed

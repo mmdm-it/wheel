@@ -154,6 +154,14 @@ class MobileDetailSector {
      * Now uses language codes directly (e.g., 'latin', 'english', 'hebrew')
      */
     applyTranslationToContext(context) {
+        console.log('🔍 DEBUG applyTranslationToContext - context:', {
+            name: context?.name,
+            hasLatin: !!context?.latin,
+            hasHebrew: !!context?.hebrew,
+            latinPreview: context?.latin?.substring?.(0, 50),
+            hebrewPreview: context?.hebrew?.substring?.(0, 30),
+            word_count: context?.word_count
+        });
         if (!this.renderer) return context;
         
         const textProperty = this.renderer.getTranslationTextProperty();
