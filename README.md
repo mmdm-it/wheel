@@ -2,7 +2,7 @@
 
 A mobile-first hierarchical data browser with novel rotational touch navigation. Navigate deep tree structures intuitively using circular gestures.
 
-**Version 0.8.107** | December 2025
+**Version 0.8.108** | December 2025
 
 ## Demo Applications
 
@@ -174,4 +174,4 @@ Contributions welcome! See issues labeled **"good first issue"** for starting po
 
 ---
 
-**Version 0.8.107** | December 2025
+**Version 0.8.108** | December 2025

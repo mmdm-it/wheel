@@ -9,6 +9,11 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.8.108] - 2025-12-06
+
+### Changed
+- Complete Focus Ring text centering - remove radial offset for all items
+
 ## [0.8.107] - 2025-12-06
 
 ### Changed
