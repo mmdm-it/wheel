@@ -9,6 +9,11 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.8.111] - 2025-12-06
+
+### Changed
+- Implement cousin navigation in Focus Ring with visual gaps
+
 ## [0.8.110] - 2025-12-06
 
 ### Changed
