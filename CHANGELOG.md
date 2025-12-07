@@ -9,6 +9,11 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.8.112] - 2025-12-06
+
+### Changed
+- Fix cousin navigation wrap-around and gap selection issues
+
 ## [0.8.111] - 2025-12-06
 
 ### Changed
