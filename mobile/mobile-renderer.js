@@ -2009,12 +2009,16 @@ class MobileRenderer {
         textElement.removeAttribute('font-weight');
         
         // Apply text transformation based on configuration (pure universal)
-        // Prefer translated display name when available
-        const translationProp = typeof this.getTranslationTextProperty === 'function'
+        // Prefer translated display name when available, BUT NOT for numeric items
+        // (verses have their content in language properties, not their display name)
+        const isNumericLevel = levelConfig && levelConfig.is_numeric;
+        const translationProp = (!isNumericLevel && typeof this.getTranslationTextProperty === 'function')
             ? this.getTranslationTextProperty()
             : null;
+        // Only look for translated names on non-numeric items (books, sections, etc.)
+        // For numeric items (chapters, verses), the language property contains content, not the name
         const translated = translationProp
-            ? (item[translationProp] || item.data?.[translationProp] || item.translations?.[translationProp])
+            ? (item.translations?.[translationProp])  // Only check translations object, not item root
             : null;
         const baseName = translated || item.name;
 

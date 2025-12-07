@@ -9,6 +9,16 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.8.116] - 2025-12-07
+
+### Fixed
+- Fix verse text appearing on Focus Ring nodes instead of verse numbers
+
+## [0.8.115] - 2025-12-07
+
+### Added
+- Add unique chapter_id field to all chapter files (e.g., "GENE_001")
+
 ## [0.8.114] - 2025-12-07
 
 ### Changed

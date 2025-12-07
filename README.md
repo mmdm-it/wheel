@@ -2,13 +2,19 @@
 
 A mobile-first hierarchical data browser with novel rotational touch navigation. Navigate deep tree structures intuitively using circular gestures.
 
-**Version 0.8.114** | December 2025
+**Version 0.8.116** | December 2025
+
+## Biblia Catholica
+
+**Coming December 2025**: [bibliacatholica.org](https://bibliacatholica.org) - The complete Catholic Bible (73 books) in 9 languages, navigated through Wheel's rotational interface.
+
+Languages: Hebrew · Greek · Latin · English · French · Spanish · Italian · Portuguese · Russian
 
 ## Demo Applications
 
 Wheel works with any hierarchical data. Current demos include:
 
-- **📖 Bible Browser** (Gutenberg Vulgate 1455 + KJV) - Books → Chapters → Verses
+- **📖 Biblia Catholica** (Complete Catholic Bible in 9 languages) - Books → Chapters → Verses
 - **🔧 Marine Parts Catalog** - Manufacturers → Models → Systems → Parts (2000+ models)
 - **🎵 Music Library** - Artists → Albums → Tracks
 - **💬 Social Feed** - Categories → Threads → Posts
@@ -174,4 +180,4 @@ Contributions welcome! See issues labeled **"good first issue"** for starting po
 
 ---
 
-**Version 0.8.114** | December 2025
+**Version 0.8.116** | December 2025
