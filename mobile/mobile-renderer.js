@@ -474,6 +474,24 @@ class MobileRenderer {
     }
 
     /**
+     * Get the translated display name for a hierarchy level
+     * @param {Object} levelConfig - The hierarchy level configuration
+     * @returns {string} The translated display name or default display_name
+     */
+    getTranslatedDisplayName(levelConfig) {
+        if (!levelConfig) return '';
+        
+        // Try to get the translated version first
+        const translatedKey = `display_name_${this.currentTranslation}`;
+        if (levelConfig[translatedKey]) {
+            return levelConfig[translatedKey];
+        }
+        
+        // Fall back to default display_name
+        return levelConfig.display_name || '';
+    }
+
+    /**
      * Bring a specific focus node to center (magnifier position)
      * Triggered by clicking an unselected focus node
      */
@@ -1834,8 +1852,13 @@ class MobileRenderer {
             const match = item.name.match(/^(\d+)/);
             if (match) {
                 const number = match[1];
-                if (isSelected && levelConfig && levelConfig.display_name) {
-                    displayText = `${levelConfig.display_name} ${number}`;
+                if (isSelected && levelConfig) {
+                    const translatedDisplayName = this.getTranslatedDisplayName(levelConfig);
+                    if (translatedDisplayName) {
+                        displayText = `${translatedDisplayName} ${number}`;
+                    } else {
+                        displayText = number;
+                    }
                 } else {
                     displayText = number;
                 }
