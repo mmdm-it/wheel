@@ -454,6 +454,11 @@ class MobileRenderer {
         if (this.detailSector.isVisible && this.selectedFocusItem) {
             this.detailSector.showDetailContent(this.selectedFocusItem);
         }
+        
+        // Refresh Focus Ring to update Magnifier labels (Chapter/Verse translations)
+        if (this.centerRotationOffset !== undefined) {
+            this.updateFocusRingPositions(this.centerRotationOffset);
+        }
     }
     
     /**
