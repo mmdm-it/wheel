@@ -1658,6 +1658,7 @@ class MobileRenderer {
         g.classList.add('focusItem');
         g.setAttribute('transform', `translate(${position.x}, ${position.y})`);
         g.setAttribute('data-focus-key', focusItem.key);
+        g._focusItem = focusItem;  // Store full item reference for text updates
         
         console.log(`🎯📝 CREATE: Element for "${focusItem.name}" key="${focusItem.key}" isSelected=${isSelected}`);
         
@@ -1754,7 +1755,13 @@ class MobileRenderer {
         }
         
         if (text) {
-            this.updateFocusItemText(text, angle, { name: text.textContent, __level: 'focusItem' }, isSelected);
+            const storedItem = element._focusItem;
+            if (storedItem) {
+                this.updateFocusItemText(text, angle, storedItem, isSelected);
+            } else {
+                // Fallback for legacy elements without stored item
+                this.updateFocusItemText(text, angle, { name: text.textContent, __level: 'focusItem' }, isSelected);
+            }
         }
     }
     
@@ -1791,12 +1798,8 @@ class MobileRenderer {
             textX = offset * Math.cos(angle);
             textY = offset * Math.sin(angle);
             
-            // For selected items, use 'middle' anchor so text is centered over the circle
-            if (isSelected) {
-                textAnchor = 'middle';
-            } else {
-                textAnchor = Math.cos(angle) >= 0 ? 'start' : 'end';
-            }
+            // Center all text over circles for consistent positioning
+            textAnchor = 'middle';
         }
         
         let rotation = angle * 180 / Math.PI;
