@@ -848,6 +848,59 @@ class MobileRenderer {
     }
 
     /**
+     * Get cousin items for Focus Ring display - all items at the same level
+     * across all parent groups, with gaps between sibling groups
+     * @param {Object} item - The current item
+     * @param {string} itemLevel - The level of the current item
+     * @returns {Array} Array of items with null gaps between sibling groups
+     */
+    getCousinItemsForLevel(item, itemLevel) {
+        // Get the grandparent level (two levels up)
+        const parentLevel = this.getPreviousHierarchyLevel(itemLevel);
+        if (!parentLevel) {
+            Logger.warn('No parent level found for cousin navigation');
+            return this.getChildItemsForLevel(this.buildParentItemFromChild(item, parentLevel), itemLevel);
+        }
+        
+        const grandparentLevel = this.getPreviousHierarchyLevel(parentLevel);
+        if (!grandparentLevel) {
+            Logger.warn('No grandparent level found for cousin navigation - falling back to sibling navigation');
+            const parentItem = this.buildParentItemFromChild(item, parentLevel);
+            return this.getChildItemsForLevel(parentItem, itemLevel);
+        }
+        
+        // Build grandparent item from current item
+        const grandparentItem = this.buildParentItemFromChild(item, grandparentLevel);
+        
+        // Get all parents (uncles/aunts) at the parent level under the grandparent
+        const allParents = this.getChildItemsForLevel(grandparentItem, parentLevel);
+        
+        Logger.debug(`🎯👥 Cousin navigation: ${itemLevel} across ${allParents.length} ${parentLevel}s under ${grandparentItem.name}`);
+        
+        // Collect all cousins with gaps
+        const cousinsWithGaps = [];
+        
+        allParents.forEach((parent, parentIndex) => {
+            // Get siblings under this parent
+            const siblings = this.getChildItemsForLevel(parent, itemLevel);
+            
+            Logger.debug(`  ${parentLevel} "${parent.name}": ${siblings.length} ${itemLevel}s`);
+            
+            // Add all siblings
+            cousinsWithGaps.push(...siblings);
+            
+            // Add 2 gaps after each sibling group (except the last one)
+            if (parentIndex < allParents.length - 1) {
+                cousinsWithGaps.push(null, null); // Two gap entries
+            }
+        });
+        
+        Logger.debug(`🎯👥 Total cousin items: ${cousinsWithGaps.filter(x => x !== null).length} + ${cousinsWithGaps.filter(x => x === null).length} gaps = ${cousinsWithGaps.length} total`);
+        
+        return cousinsWithGaps;
+    }
+
+    /**
      * Async version of getChildItemsForLevel that supports lazy loading
      * Used for split volumes where data may need to be fetched
      */
@@ -1337,7 +1390,7 @@ class MobileRenderer {
         this.lastRotationOffset = rotationOffset;
         
         // PERFORMANCE OPTIMIZATION: Check if focus items changed - only rebuild if needed
-        const focusItemsKey = allFocusItems.map(item => item.key).join('|');
+        const focusItemsKey = allFocusItems.map(item => item === null ? 'GAP' : item.key).join('|');
         const focusItemsChanged = this._lastFocusItemsKey !== focusItemsKey;
         this._lastFocusItemsKey = focusItemsKey;
         
@@ -1386,6 +1439,11 @@ class MobileRenderer {
         const viewportBuffer = angleStep * 2; // keep a small buffer to reduce pop-in
 
         allFocusItems.forEach((focusItem, index) => {
+            // Skip gap entries (null values used for visual separation between cousin groups)
+            if (focusItem === null) {
+                return; // Don't render anything for gaps
+            }
+            
             // Validate sort_number
             const sortNumber = focusItem.data?.sort_number ?? focusItem.sort_number;
             if (sortNumber === undefined || sortNumber === null) {
@@ -2525,50 +2583,39 @@ class MobileRenderer {
         this.selectedFocusItem = { ...item };
 
         // 2. Get all siblings at the same level
-        // For Child Pyramid clicks, siblings are the other items currently in Child Pyramid
-        let allSiblings = this.currentChildItems || [];
+        // COUSIN NAVIGATION: Get all items at this level across all parents (with gaps)
+        let allSiblings = [];
         
-        // If no child items cached, fall back to querying
-        if (allSiblings.length === 0) {
-            // Special handling for LEAF items with pseudo parents
-            if (item.__hasPseudoParent && !item.__isPseudoParent) {
-                // For leaf items under pseudo parents, siblings are in the pseudo parent's source items
-                const pseudoParentName = item.__path[item.__path.length - 2];
-                const pseudoParent = this.currentFocusItems?.find(p => 
-                    p.__isPseudoParent && p.name === pseudoParentName
-                );
-                
-                if (pseudoParent && pseudoParent.__pseudoSourceItems) {
-                    allSiblings = pseudoParent.__pseudoSourceItems;
-                    Logger.debug(`🔺 Got ${allSiblings.length} siblings from pseudo parent "${pseudoParentName}" in focus ring`);
-                } else {
-                    Logger.error(`🔺 Could not find pseudo parent "${pseudoParentName}" in current focus ring`);
-                    allSiblings = [];
-                }
-            } else {
-                // Normal navigation - get siblings from parent (includes pseudo parents themselves)
-                const parentLevel = this.getPreviousHierarchyLevel(itemLevel);
-                const parentItem = this.buildParentItemFromChild(item, parentLevel);
-                allSiblings = this.getChildItemsForLevel(parentItem, itemLevel);
-            }
+        // For Child Pyramid clicks, siblings are the other items currently in Child Pyramid
+        // But we want to expand to cousin navigation
+        if (this.currentChildItems && this.currentChildItems.length > 0) {
+            // We have cached child items, but we want cousins instead
+            Logger.debug(`🔺 Expanding from ${this.currentChildItems.length} siblings to cousin navigation`);
         }
         
-        console.log(`🔺🔍 SIBLINGS ARRAY (${allSiblings.length} items):`, allSiblings.map((s, i) => `[${i}]${s.name}(key:${s.key})`).join(', '));
+        // Use cousin navigation for Focus Ring
+        allSiblings = this.getCousinItemsForLevel(item, itemLevel);
+        
+        console.log(`🔺🔍 COUSINS ARRAY (${allSiblings.length} items including gaps):`, allSiblings.map((s, i) => s ? `[${i}]${s.name}(key:${s.key})` : `[${i}]GAP`).join(', '));
         console.log(`🔺🔍 CLICKED ITEM: name="${item.name}", key="${item.key}"`);
         
-        Logger.debug(`🔺 Getting siblings for "${item.name}" at level ${itemLevel}, found ${allSiblings.length} siblings`);
+        Logger.debug(`🔺 Getting cousins for "${item.name}" at level ${itemLevel}, found ${allSiblings.length} items (including gaps)`);
 
-        // Validate sort_numbers before setting focus items
-        const validatedSiblings = this.validateSortNumbers(allSiblings, `Focus Ring siblings at ${itemLevel}`);
-        if (validatedSiblings.length === 0) {
+        // Validate sort_numbers for non-null items only
+        const nonNullItems = allSiblings.filter(s => s !== null);
+        const validatedNonNull = this.validateSortNumbers(nonNullItems, `Focus Ring cousins at ${itemLevel}`);
+        if (validatedNonNull.length === 0) {
             Logger.error('🔺 Cannot display Focus Ring - no valid items with sort_numbers');
             return;
         }
-
-        this.currentFocusItems = validatedSiblings;
-        this.allFocusItems = validatedSiblings;
         
-        console.log(`🎯🔄 SET currentFocusItems: ${validatedSiblings.length} items set:`, validatedSiblings.map(item => `"${item.name}"(key=${item.key})`).join(', '));
+        // Rebuild array with gaps in original positions
+        const validatedWithGaps = allSiblings.map(s => s === null ? null : s);
+
+        this.currentFocusItems = validatedWithGaps;
+        this.allFocusItems = validatedWithGaps;
+        
+        console.log(`🎯🔄 SET currentFocusItems: ${validatedWithGaps.length} items set (${nonNullItems.length} real + ${validatedWithGaps.length - nonNullItems.length} gaps)`);
 
         // 3. Clear current Child Pyramid (already cleared before animation)
         this.elements.childRingGroup.innerHTML = '';
@@ -2843,13 +2890,13 @@ class MobileRenderer {
      * Find the index of an item in an array based on level-specific matching
      */
     findItemIndexInArray(item, array, level) {
-        console.log(`🔺🔍 SEARCHING FOR: key="${item.key}" in array of ${array.length} items`);
-        const index = array.findIndex(sibling => sibling.key === item.key);
+        console.log(`🔺🔍 SEARCHING FOR: key="${item.key}" in array of ${array.length} items (including gaps)`);
+        const index = array.findIndex(sibling => sibling !== null && sibling.key === item.key);
         console.log(`🔺🔍 FOUND AT INDEX: ${index} (${index >= 0 ? array[index].name : 'NOT FOUND'})`);
         
         if (index === -1) {
             Logger.warn(`🔺 findItemIndexInArray: Item key "${item.key}" not found in array of ${array.length} items`);
-            Logger.warn(`🔺 Item keys in array:`, array.map(s => s.key));
+            Logger.warn(`🔺 Item keys in array:`, array.filter(s => s !== null).map(s => s.key));
             Logger.warn(`🔺 Searching for item:`, item);
         }
         
