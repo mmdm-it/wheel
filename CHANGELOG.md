@@ -9,6 +9,11 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.8.107] - 2025-12-06
+
+### Changed
+- Fix Focus Ring text centering and prefix attachment bug
+
 ## [0.8.106] - 2025-12-06
 
 ### Changed
