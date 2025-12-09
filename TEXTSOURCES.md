@@ -2,127 +2,154 @@
 
 Documentation of source materials for the Biblia Catholica multilingual Bible.
 
-## Target Languages (9)
+## Downloaded Sources (in `/sources/` directory)
 
-| Code | Language | Status | Source | Notes |
-|------|----------|--------|--------|-------|
-| hebrew | עברית (Hebrew) | Decided | Westminster Leningrad Codex | 39 protocanonical OT books only; hidden for deuterocanonicals and NT |
-| greek | Ελληνικά (Greek) | Partial | TBD | Septuagint (OT) + Byzantine/NA (NT) |
-| latin | Latina (Latin) | Complete | Vulgate | Primary text, complete |
-| english | English | Partial | KJV/Douay-Rheims | Public domain |
-| french | Français | TBD | TBD | |
-| spanish | Español | TBD | TBD | |
-| italian | Italiano | TBD | TBD | |
-| portuguese | Português | TBD | TBD | |
-| russian | Русский | TBD | TBD | Synodal Translation? |
+All source files are stored locally in the `sources/` directory (gitignored due to size).
 
-## Source Candidates
+### Summary Table
 
-### Hebrew (Old Testament)
-- ✅ **Westminster Leningrad Codex (WLC)** - Public domain, standard Masoretic text
-  - 39 protocanonical OT books only
-  - Deuterocanonicals (Tobit, Judith, Wisdom, Sirach, Baruch, 1-2 Maccabees) have no Hebrew original
-  - NT has no Hebrew original
-  - For these books, עברית option is hidden from UI
-- ~~Biblia Hebraica Stuttgartensia~~ - Same base text as WLC, licensing complex
+| Language | Source | Files | Size | Format | Status |
+|----------|--------|-------|------|--------|--------|
+| Hebrew | Westminster Leningrad Codex | 40 | 28 MB | XML | ✅ Downloaded |
+| Greek OT | Septuagint (Swete) | 120 | 52 MB | TXT | ✅ Downloaded |
+| Greek NT | Byzantine Robinson-Pierpont | 144 | 25 MB | CSV | ✅ Downloaded |
+| Latin | Clementine Vulgate | 146 | 11 MB | LAT | ✅ Downloaded |
+| French | néo-Crampon Libre | 73 | 21 MB | USFM | ✅ Downloaded |
+| Spanish | Libro del Pueblo de Dios (Vatican) | 1,348 | 16 MB | HTML | ✅ Downloaded |
+| English | NAB (Vatican) | 1,411 | 19 MB | HTML | ✅ Downloaded |
+| Italian | Vatican Italian | 1,330 | 12 MB | HTML | ✅ Downloaded |
+| Chinese | Vatican PDFs | 75 | 27 MB | PDF | ✅ Downloaded |
+| Russian | Synodal 77-book (bible.by) | 77 | 4.2 MB | TXT | ✅ Downloaded |
+| Portuguese | Bíblia Ave-Maria | - | - | - | ⏳ Pending permission |
 
-### Greek
-- **Septuagint (LXX)** - Old Testament, Rahlfs edition (public domain)
-- **SBLGNT** - New Testament, Society of Biblical Literature Greek NT (free with attribution)
-- **Byzantine Majority Text** - Public domain
+### Directory Structure
 
-### Latin
-- ✅ **Clementine Vulgate** - Currently implemented, public domain
+```
+sources/
+├── hebrew/
+│   └── wlc/                    # Westminster Leningrad Codex (40 XML files)
+├── greek/
+│   ├── septuagint/             # Septuagint Swete edition (120 TXT files)
+│   └── byzantine-nt/           # Robinson-Pierpont Byzantine NT (144 CSV files)
+├── latin/
+│   └── clementine/             # Clementine Vulgate (146 LAT files)
+├── french/
+│   └── neo-crampon/            # néo-Crampon Libre (73 USFM files)
+├── spanish/
+│   └── libro-pueblo-dios/      # Vatican's Libro del Pueblo de Dios (1,348 HTML)
+├── english/
+│   └── nab-vatican/            # NAB from Vatican website (1,411 HTML files)
+├── italian/
+│   └── vatican/                # Vatican Italian Bible (1,330 HTML files)
+├── chinese/
+│   └── vatican/                # Vatican Chinese Bible PDFs (75 files)
+└── russian/
+    ├── synodal/                # eBible.org Synodal (66 books, Protestant)
+    └── synodal-77books/        # bible.by Synodal (77 books with deuterocanonicals)
+```
 
-### English
-- **Douay-Rheims** (1899) - Catholic, public domain
-- **KJV** (1611) - Protestant but widely recognized, public domain
-- **Challoner revision** - Catholic revision of Douay-Rheims
+## Source Details
 
-### French
-- **Louis Segond** (1910) - Protestant, public domain
-- **Bible de Jérusalem** - Catholic (check licensing)
+### Hebrew - Westminster Leningrad Codex (WLC)
+- **URL**: https://tanach.us/
+- **License**: Public Domain
+- **Coverage**: 39 protocanonical OT books only
+- **Format**: XML with cantillation marks
+- **Notes**: Deuterocanonicals and NT have no Hebrew original - Hebrew option hidden for these
 
-### Spanish
-- **Reina-Valera** (1909) - Public domain
-- **Biblia de Navarra** - Catholic (check licensing)
+### Greek - Septuagint (Swete)
+- **URL**: https://github.com/sleeptillseven/LXX.swทำte
+- **License**: Public Domain
+- **Coverage**: Complete OT including deuterocanonicals
+- **Format**: Plain text files per chapter
 
-### Italian
-- **Riveduta** (1927) - Public domain
-- **CEI** - Catholic (modern, likely copyrighted)
+### Greek NT - Byzantine Robinson-Pierpont
+- **URL**: https://github.com/byztxt/byzantine-majority-text
+- **License**: Public Domain
+- **Coverage**: Complete New Testament (27 books)
+- **Format**: CSV with Strong's numbers
 
-### Portuguese
-- **Almeida** - Public domain versions available
-- **Ave Maria** - Catholic (check licensing)
+### Latin - Clementine Vulgate
+- **URL**: https://github.com/latinspoken/Clementine-Vulgate
+- **License**: Public Domain
+- **Coverage**: Complete 73-book Catholic Bible
+- **Format**: LAT text files
 
-### Russian
-- **Synodal Translation** (1876) - Orthodox, public domain
+### French - néo-Crampon Libre
+- **URL**: https://github.com/lfrancoi/bible-french-neo-crampon
+- **License**: CC0 1.0 (Public Domain)
+- **Coverage**: 73 books (Catholic canon)
+- **Format**: USFM (Unified Standard Format Markers)
+- **Notes**: Based on 1923 Crampon revision
+
+### Spanish - Libro del Pueblo de Dios (Vatican)
+- **URL**: https://www.vatican.va/archive/ESL0506/_INDEX.HTM
+- **License**: Vatican official translation
+- **Coverage**: Complete Catholic Bible (73 books)
+- **Format**: HTML (chapter per file)
+
+### English - NAB (Vatican)
+- **URL**: https://www.vatican.va/archive/ENG0839/_INDEX.HTM
+- **License**: USCCB (New American Bible)
+- **Coverage**: Complete Catholic Bible (73 books)
+- **Format**: HTML (chapter per file)
+
+### Italian - Vatican Italian
+- **URL**: https://www.vatican.va/archive/ITA0001/_INDEX.HTM
+- **License**: Vatican official translation
+- **Coverage**: Complete Catholic Bible (73 books)
+- **Format**: HTML (chapter per file)
+
+### Chinese - Vatican PDFs
+- **URL**: https://www.vatican.va/chinese/index.html
+- **License**: Vatican official
+- **Coverage**: Complete Catholic Bible
+- **Format**: PDF (requires OCR/text extraction)
+- **Notes**: Need to extract text from PDFs for processing
+
+### Russian - Synodal Translation (77 books)
+- **URL**: https://bible.by/download/
+- **License**: Public Domain
+- **Coverage**: 77 books including all deuterocanonicals
+- **Format**: TXT (one file per book)
+- **Files include**:
+  - All 39 OT canonical books
+  - All 11 deuterocanonical books (Tobit, Judith, Wisdom, Sirach, Baruch, Letter of Jeremiah, 1-3 Maccabees, 2-3 Esdras)
+  - All 27 NT books
+
+### Portuguese - Pending
+- **Candidate**: Bíblia Sagrada Ave-Maria
+- **Publisher**: Editora Ave-Maria (Claretian Missionaries)
+- **Status**: Contact required for permission
+- **Contact**: WhatsApp +55 11 97334-7405, avemaria.com.br
 
 ## Catholic Bible Structure
 
 The Catholic Bible includes 73 books (vs 66 Protestant):
 
-### Deuterocanonical Books (7)
-These books are already included in our structure:
-- Tobit (TOBI)
-- Judith (IUDITH)
-- 1 Maccabees (I_MAC) - TBD
-- 2 Maccabees (II_MAC) - TBD
-- Wisdom (SAPI)
-- Sirach/Ecclesiasticus (ECCLU)
-- Baruch (BARU)
+### Deuterocanonical Books (7+)
+- **Tobit** (TOBI) - Complete story
+- **Judith** (IUDITH) - Complete story
+- **Wisdom** (SAPI) - 19 chapters
+- **Sirach/Ecclesiasticus** (ECCLU) - 51 chapters
+- **Baruch** (BARU) - 6 chapters (includes Letter of Jeremiah in some traditions)
+- **1 Maccabees** (I_MAC) - 16 chapters
+- **2 Maccabees** (II_MAC) - 15 chapters
 
-### Extended Chapters
-- Esther (Greek additions)
-- Daniel (Greek additions: Susanna, Bel and the Dragon)
+### Extended Sections
+- **Esther** - Greek additions (chapters 10-16 in some numberings)
+- **Daniel** - Greek additions:
+  - Susanna (Daniel 13)
+  - Bel and the Dragon (Daniel 14)
+  - Prayer of Azariah and Song of Three Children
 
-## Data Sources
+## Processing Pipeline (TODO)
 
-### Online Repositories
-- **Sacred-Texts.com** - Various public domain translations
-- **Bible Gateway** - Reference (not for scraping)
-- **Unbound Bible** - Biola University, various translations
-- **CCEL** - Christian Classics Ethereal Library
-- **Perseus Digital Library** - Greek texts
-
-### API Sources
-- **API.Bible** - Requires registration, check terms
-- **Bible.org** - NET Bible API
-
-## Processing Notes
-
-### Data Format
-Each verse should have all 9 language properties:
-```json
-{
-  "1": {
-    "hebrew": "בְּרֵאשִׁית...",
-    "greek": "Ἐν ἀρχῇ...",
-    "latin": "In principio...",
-    "english": "In the beginning...",
-    "french": "Au commencement...",
-    "spanish": "En el principio...",
-    "italian": "In principio...",
-    "portuguese": "No princípio...",
-    "russian": "В начале...",
-    "sort_number": 1,
-    "name": "1",
-    "word_count": 10
-  }
-}
-```
-
-### Word Count
-- Calculate based on primary display language (latin for now)
-- Used for font size tier selection in Detail Sector
-
-## Progress Tracking
-
-| Book | hebrew | greek | latin | english | french | spanish | italian | portuguese | russian |
-|------|--------|-------|-------|---------|--------|---------|---------|------------|---------|
-| Genesis | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Exodus | - | - | ✅ | - | - | - | - | - | - |
-| ... | | | | | | | | | |
+1. **Parse** - Convert each format to standardized JSON
+2. **Align** - Match verses across translations
+3. **Validate** - Verify book/chapter/verse coverage
+4. **Merge** - Combine into chapter-level JSON files
+5. **Index** - Generate manifest with verse counts
 
 ---
 
