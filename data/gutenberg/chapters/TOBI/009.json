@@ -1,49 +1,69 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "TOBI_009",
-  "chapter_key": "9",
-  "chapter_number": 9,
-  "sort_number": 9,
-  "name": "9",
   "book_key": "TOBI",
+  "sequence": 9,
+  "chapter_in": {
+    "MT": 9,
+    "VUL": 9,
+    "LXX": 9
+  },
   "testament": "Vetus_Testamentum",
   "section": "Libri_Historici_et_Novellae_Biblicae",
-  "verse_count": 6,
   "verses": {
     "1": {
-      "verse_number": 1,
-      "sort_number": 1,
-      "text": "[TOBI 9:1]",
-      "word_count": 5
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {}
     },
     "2": {
-      "verse_number": 2,
-      "sort_number": 2,
-      "text": "[TOBI 9:2]",
-      "word_count": 5
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {}
     },
     "3": {
-      "verse_number": 3,
-      "sort_number": 3,
-      "text": "[TOBI 9:3]",
-      "word_count": 5
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {}
     },
     "4": {
-      "verse_number": 4,
-      "sort_number": 4,
-      "text": "[TOBI 9:4]",
-      "word_count": 5
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {}
     },
     "5": {
-      "verse_number": 5,
-      "sort_number": 5,
-      "text": "[TOBI 9:5]",
-      "word_count": 5
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {}
     },
     "6": {
-      "verse_number": 6,
-      "sort_number": 6,
-      "text": "[TOBI 9:6]",
-      "word_count": 5
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {}
     }
   }
 }

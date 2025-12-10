@@ -1,213 +1,315 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "GENE_012",
-  "chapter_key": "12",
-  "chapter_number": 12,
-  "sort_number": 12,
-  "name": "12",
   "book_key": "GENE",
+  "sequence": 12,
+  "chapter_in": {
+    "MT": 12,
+    "VUL": 12,
+    "LXX": 12
+  },
   "testament": "Vetus_Testamentum",
   "section": "Pentateuchus",
-  "verse_count": 20,
   "verses": {
     "1": {
-      "sort_number": 1,
-      "name": "1",
-      "latin": "Dixit autem Dominus ad Abram: Egredere de terra tua, et de cognatione tua, et de domo patris tui, et veni in terram quam monstrabo tibi.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֤אמֶר יְהוָה֙ אֶל אַבְרָ֔ם לֶךְ לְךָ֛ מֵאַרְצְךָ֥ וּמִמּֽוֹלַדְתְּךָ֖ וּמִבֵּ֣ית אָבִ֑יךָ אֶל הָאָ֖רֶץ אֲשֶׁ֥ר אַרְאֶֽךָּ׃",
-      "russian": "И сказал Господь Авраму: пойди из земли твоей, от родства твоего и из дома отца твоего [и иди] в землю, которую Я укажу тебе;",
-      "greek": "Καὶ εἶπεν Κύριος τῷ Ἀβράμ Ἔξελθε ἐκ τῆς γῆς σου καὶ ἐκ τῆς συγγενείας σου καὶ ἐκ τοῦ οἴκου τοῦ πατρός σου, εἰς τὴν γῆν ἣν ἄν σοι δείξω.",
-      "english": "About that time Judah parted from his brothers and pitched his tent near a certain Adullamite named Hirah."
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַיֹּ֤אמֶר יְהוָה֙ אֶל אַבְרָ֔ם לֶךְ לְךָ֛ מֵאַרְצְךָ֥ וּמִמּֽוֹלַדְתְּךָ֖ וּמִבֵּ֣ית אָבִ֑יךָ אֶל הָאָ֖רֶץ אֲשֶׁ֥ר אַרְאֶֽךָּ׃",
+        "VUL": "Dixit autem Dominus ad Abram: Egredere de terra tua, et de cognatione tua, et de domo patris tui, et veni in terram quam monstrabo tibi.",
+        "LXX": "Καὶ εἶπεν Κύριος τῷ Ἀβράμ Ἔξελθε ἐκ τῆς γῆς σου καὶ ἐκ τῆς συγγενείας σου καὶ ἐκ τοῦ οἴκου τοῦ πατρός σου, εἰς τὴν γῆν ἣν ἄν σοι δείξω.",
+        "NAB": "About that time Judah parted from his brothers and pitched his tent near a certain Adullamite named Hirah.",
+        "SYN": "И сказал Господь Авраму: пойди из земли твоей, от родства твоего и из дома отца твоего [и иди] в землю, которую Я укажу тебе;"
+      }
     },
     "2": {
-      "sort_number": 2,
-      "name": "2",
-      "latin": "Faciamque te in gentem magnam, et benedicam tibi, et magnificabo nomen tuum, erisque benedictus.",
-      "word_count": 0,
-      "hebrew": "וְאֶֽעֶשְׂךָ֙ לְג֣וֹי גָּד֔וֹל וַאֲבָ֣רֶכְךָ֔ וַאֲגַדְּלָ֖ה שְׁמֶ֑ךָ וֶהְיֵ֖ה בְּרָכָֽה׃",
-      "russian": "и Я произведу от тебя великий народ, и благословлю тебя, и возвеличу имя твое, и будешь ты в благословение;",
-      "greek": "καὶ ποιήσω σε εἰς ἔθνος μέγα καὶ εὐλογήσω σε καὶ μεγαλυνῶ τὸ ὄνομά σου, καὶ ἔσῃ εὐλογητός·",
-      "english": "There he met the daughter of a Canaanite named Shua, married her, and had relations with her."
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְאֶֽעֶשְׂךָ֙ לְג֣וֹי גָּד֔וֹל וַאֲבָ֣רֶכְךָ֔ וַאֲגַדְּלָ֖ה שְׁמֶ֑ךָ וֶהְיֵ֖ה בְּרָכָֽה׃",
+        "VUL": "Faciamque te in gentem magnam, et benedicam tibi, et magnificabo nomen tuum, erisque benedictus.",
+        "LXX": "καὶ ποιήσω σε εἰς ἔθνος μέγα καὶ εὐλογήσω σε καὶ μεγαλυνῶ τὸ ὄνομά σου, καὶ ἔσῃ εὐλογητός·",
+        "NAB": "There he met the daughter of a Canaanite named Shua, married her, and had relations with her.",
+        "SYN": "и Я произведу от тебя великий народ, и благословлю тебя, и возвеличу имя твое, и будешь ты в благословение;"
+      }
     },
     "3": {
-      "sort_number": 3,
-      "name": "3",
-      "latin": "Benedicam benedicentibus tibi, et maledicam maledicentibus tibi, atque in te benedicentur universæ cognationes terræ.",
-      "word_count": 0,
-      "hebrew": "וַאֲבָֽרֲכָה֙ מְבָ֣רְכֶ֔יךָ וּמְקַלֶּלְךָ֖ אָאֹ֑ר וְנִבְרְכ֣וּ בְךָ֔ כֹּ֖ל מִשְׁפְּחֹ֥ת הָאֲדָמָֽה׃",
-      "russian": "Я благословлю благословляющих тебя, и злословящих тебя прокляну; и благословятся в тебе все племена земные.",
-      "greek": "καὶ εὐλογήσω τοὺς εὐλογοῦντάς σε, καὶ τοὺς καταρωμένους σε καταράσομαι, καὶ εὐλογηθήσονται ἐν σοὶ πᾶσαι αἱ φυλαὶ τῆς γῆς.",
-      "english": "She conceived and bore a son, whom she named Er."
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַאֲבָֽרֲכָה֙ מְבָ֣רְכֶ֔יךָ וּמְקַלֶּלְךָ֖ אָאֹ֑ר וְנִבְרְכ֣וּ בְךָ֔ כֹּ֖ל מִשְׁפְּחֹ֥ת הָאֲדָמָֽה׃",
+        "VUL": "Benedicam benedicentibus tibi, et maledicam maledicentibus tibi, atque in te benedicentur universæ cognationes terræ.",
+        "LXX": "καὶ εὐλογήσω τοὺς εὐλογοῦντάς σε, καὶ τοὺς καταρωμένους σε καταράσομαι, καὶ εὐλογηθήσονται ἐν σοὶ πᾶσαι αἱ φυλαὶ τῆς γῆς.",
+        "NAB": "She conceived and bore a son, whom she named Er.",
+        "SYN": "Я благословлю благословляющих тебя, и злословящих тебя прокляну; и благословятся в тебе все племена земные."
+      }
     },
     "4": {
-      "sort_number": 4,
-      "name": "4",
-      "latin": "Egressus est itaque Abram sicut præceperat ei Dominus, et ivit cum eo Lot: septuaginta quinque annorum erat Abram cum egrederetur de Haran.",
-      "word_count": 0,
-      "hebrew": "וַיֵּ֣לֶךְ אַבְרָ֗ם כַּאֲשֶׁ֨ר דִּבֶּ֤ר אֵלָיו֙ יְהוָ֔ה וַיֵּ֥לֶךְ אִתּ֖וֹ ל֑וֹט וְאַבְרָ֗ם בֶּן חָמֵ֤שׁ שָׁנִים֙ וְשִׁבְעִ֣ים שָׁנָ֔ה בְּצֵאת֖וֹ מֵחָרָֽן׃",
-      "russian": "И пошел Аврам, как сказал ему Господь; и с ним пошел Лот. Аврам был семидесяти пяти лет, когда вышел из Харрана.",
-      "greek": "καὶ ἐπορεύθη Ἀβρὰμ καθάπερ ἐλάλησεν αὐτῷ Κύριος, καὶ ᾤχετο μετ’ αὐτοῦ Λώτ· Ἀβρὰμ δὲ ἦν ἐτῶν ἑβδομήκοντα πέντε ὅτε ἐξῆλθεν ἐκ Χαρράν.",
-      "english": "Again she conceived and bore a son, whom she named Onan."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַיֵּ֣לֶךְ אַבְרָ֗ם כַּאֲשֶׁ֨ר דִּבֶּ֤ר אֵלָיו֙ יְהוָ֔ה וַיֵּ֥לֶךְ אִתּ֖וֹ ל֑וֹט וְאַבְרָ֗ם בֶּן חָמֵ֤שׁ שָׁנִים֙ וְשִׁבְעִ֣ים שָׁנָ֔ה בְּצֵאת֖וֹ מֵחָרָֽן׃",
+        "VUL": "Egressus est itaque Abram sicut præceperat ei Dominus, et ivit cum eo Lot: septuaginta quinque annorum erat Abram cum egrederetur de Haran.",
+        "LXX": "καὶ ἐπορεύθη Ἀβρὰμ καθάπερ ἐλάλησεν αὐτῷ Κύριος, καὶ ᾤχετο μετ’ αὐτοῦ Λώτ· Ἀβρὰμ δὲ ἦν ἐτῶν ἑβδομήκοντα πέντε ὅτε ἐξῆλθεν ἐκ Χαρράν.",
+        "NAB": "Again she conceived and bore a son, whom she named Onan.",
+        "SYN": "И пошел Аврам, как сказал ему Господь; и с ним пошел Лот. Аврам был семидесяти пяти лет, когда вышел из Харрана."
+      }
     },
     "5": {
-      "sort_number": 5,
-      "name": "5",
-      "latin": "Tulitque Sarai uxorem suam, et Lot filium fratris sui, universamque substantiam quam possederant, et animas quas fecerant in Haran: et egressi sunt ut irent in terram Chanaan. Cumque venissent in eam,",
-      "word_count": 0,
-      "hebrew": "וַיִּקַּ֣ח אַבְרָם֩ אֶת שָׂרַ֨י אִשְׁתּ֜וֹ וְאֶת ל֣וֹט בֶּן אָחִ֗יו וְאֶת כָּל רְכוּשָׁם֙ אֲשֶׁ֣ר רָכָ֔שׁוּ וְאֶת הַנֶּ֖פֶשׁ אֲשֶׁר עָשׂ֣וּ בְחָרָ֑ן וַיֵּצְא֗וּ לָלֶ֨כֶת֙ אַ֣רְצָה כְּנַ֔עַן וַיָּבֹ֖אוּ אַ֥רְצָה כְּנָֽעַן׃",
-      "russian": "И взял Аврам с собою Сару, жену свою, Лота, сына брата своего, и все имение, которое они приобрели, и всех людей, которых они имели в Харране; и вышли, чтобы идти в землю Ханаанскую; и пришли в землю Ханаанскую.",
-      "greek": "καὶ ἔλαβεν Ἀβρὰμ τὴν Σαρὰ γυναῖκα αὐτοῦ καὶ τὸν Λὼτ υἱὸν τοῦ ἀδελφοῦ αὐτοῦ καὶ πάντα τὰ ὑπάρχοντα αὐτῶν ὅσα ἐκτήσαντο καὶ πᾶσαν ψυχὴν ἣν ἐκτήσαντο ἐκ Χαρράν, καὶ ἐξήλθοσαν πορευθῆναι εἰς γῆν Χανάαν· καὶ ἦλθον εἰς γῆν Χανάαν.",
-      "english": "Then she bore still another son, whom she named Shelah. They were in Chezib when he was born."
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַיִּקַּ֣ח אַבְרָם֩ אֶת שָׂרַ֨י אִשְׁתּ֜וֹ וְאֶת ל֣וֹט בֶּן אָחִ֗יו וְאֶת כָּל רְכוּשָׁם֙ אֲשֶׁ֣ר רָכָ֔שׁוּ וְאֶת הַנֶּ֖פֶשׁ אֲשֶׁר עָשׂ֣וּ בְחָרָ֑ן וַיֵּצְא֗וּ לָלֶ֨כֶת֙ אַ֣רְצָה כְּנַ֔עַן וַיָּבֹ֖אוּ אַ֥רְצָה כְּנָֽעַן׃",
+        "VUL": "Tulitque Sarai uxorem suam, et Lot filium fratris sui, universamque substantiam quam possederant, et animas quas fecerant in Haran: et egressi sunt ut irent in terram Chanaan. Cumque venissent in eam,",
+        "LXX": "καὶ ἔλαβεν Ἀβρὰμ τὴν Σαρὰ γυναῖκα αὐτοῦ καὶ τὸν Λὼτ υἱὸν τοῦ ἀδελφοῦ αὐτοῦ καὶ πάντα τὰ ὑπάρχοντα αὐτῶν ὅσα ἐκτήσαντο καὶ πᾶσαν ψυχὴν ἣν ἐκτήσαντο ἐκ Χαρράν, καὶ ἐξήλθοσαν πορευθῆναι εἰς γῆν Χανάαν· καὶ ἦλθον εἰς γῆν Χανάαν.",
+        "NAB": "Then she bore still another son, whom she named Shelah. They were in Chezib when he was born.",
+        "SYN": "И взял Аврам с собою Сару, жену свою, Лота, сына брата своего, и все имение, которое они приобрели, и всех людей, которых они имели в Харране; и вышли, чтобы идти в землю Ханаанскую; и пришли в землю Ханаанскую."
+      }
     },
     "6": {
-      "sort_number": 6,
-      "name": "6",
-      "latin": "pertransivit Abram terram usque ad locum Sichem, usque ad convallem illustrem: Chananæus autem tunc erat in terra.",
-      "word_count": 0,
-      "hebrew": "וַיַּעֲבֹ֤ר אַבְרָם֙ בָּאָ֔רֶץ עַ֚ד מְק֣וֹם שְׁכֶ֔ם עַ֖ד אֵל֣וֹן מוֹרֶ֑ה וְהַֽכְּנַעֲנִ֖י אָ֥ז בָּאָֽרֶץ׃",
-      "russian": "И прошел Аврам по земле сей [по длине ее] до места Сихема, до дубравы Море. В этой земле тогда [жили] Хананеи.",
-      "greek": "καὶ διώδευσεν Ἀβρὰμ εἰς τὸ μῆκος αὐτῆς ἕως τοῦ τόπου Συχέμ, ἐπὶ τὴν δρῦν τὴν ὑψηλήν· οἱ δὲ Χαναναῖοι τότε κατῴκουν τὴν γῆν.",
-      "english": "Judah got a wife named Tamar for his first-born, Er."
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַיַּעֲבֹ֤ר אַבְרָם֙ בָּאָ֔רֶץ עַ֚ד מְק֣וֹם שְׁכֶ֔ם עַ֖ד אֵל֣וֹן מוֹרֶ֑ה וְהַֽכְּנַעֲנִ֖י אָ֥ז בָּאָֽרֶץ׃",
+        "VUL": "pertransivit Abram terram usque ad locum Sichem, usque ad convallem illustrem: Chananæus autem tunc erat in terra.",
+        "LXX": "καὶ διώδευσεν Ἀβρὰμ εἰς τὸ μῆκος αὐτῆς ἕως τοῦ τόπου Συχέμ, ἐπὶ τὴν δρῦν τὴν ὑψηλήν· οἱ δὲ Χαναναῖοι τότε κατῴκουν τὴν γῆν.",
+        "NAB": "Judah got a wife named Tamar for his first-born, Er.",
+        "SYN": "И прошел Аврам по земле сей [по длине ее] до места Сихема, до дубравы Море. В этой земле тогда [жили] Хананеи."
+      }
     },
     "7": {
-      "sort_number": 7,
-      "name": "7",
-      "latin": "Apparuit autem Dominus Abram, et dixit ei: Semini tuo dabo terram hanc. Qui ædificavit ibi altare Domino, qui apparuerat ei.",
-      "word_count": 0,
-      "hebrew": "וַיֵּרָ֤א יְהוָה֙ אֶל אַבְרָ֔ם וַיֹּ֕אמֶר לְזַ֨רְעֲךָ֔ אֶתֵּ֖ן אֶת הָאָ֣רֶץ הַזֹּ֑את וַיִּ֤בֶן שָׁם֙ מִזְבֵּ֔חַ לַיהוָ֖ה הַנִּרְאֶ֥ה אֵלָֽיו׃",
-      "russian": "И явился Господь Авраму и сказал [ему]: потомству твоему отдам Я землю сию. И создал там [Аврам] жертвенник Господу, Который явился ему.",
-      "greek": "καὶ ὤφθη Κύριος τῷ Ἀβρὰμ καὶ εἶπεν αὐτῷ Τῷ σπέρματί σου δώσω τὴν γῆν ταύτην· καὶ ᾠκοδόμησεν ἐκεῖ Ἀβρὰμ θυσιαστήριον Κυρίῳ τῷ ὀφθέντι αὐτῷ.",
-      "english": "But Er, Judah's first-born, greatly offended the LORD; so the LORD took his life."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַיֵּרָ֤א יְהוָה֙ אֶל אַבְרָ֔ם וַיֹּ֕אמֶר לְזַ֨רְעֲךָ֔ אֶתֵּ֖ן אֶת הָאָ֣רֶץ הַזֹּ֑את וַיִּ֤בֶן שָׁם֙ מִזְבֵּ֔חַ לַיהוָ֖ה הַנִּרְאֶ֥ה אֵלָֽיו׃",
+        "VUL": "Apparuit autem Dominus Abram, et dixit ei: Semini tuo dabo terram hanc. Qui ædificavit ibi altare Domino, qui apparuerat ei.",
+        "LXX": "καὶ ὤφθη Κύριος τῷ Ἀβρὰμ καὶ εἶπεν αὐτῷ Τῷ σπέρματί σου δώσω τὴν γῆν ταύτην· καὶ ᾠκοδόμησεν ἐκεῖ Ἀβρὰμ θυσιαστήριον Κυρίῳ τῷ ὀφθέντι αὐτῷ.",
+        "NAB": "But Er, Judah's first-born, greatly offended the LORD; so the LORD took his life.",
+        "SYN": "И явился Господь Авраму и сказал [ему]: потомству твоему отдам Я землю сию. И создал там [Аврам] жертвенник Господу, Который явился ему."
+      }
     },
     "8": {
-      "sort_number": 8,
-      "name": "8",
-      "latin": "Et inde transgrediens ad montem, qui erat contra orientem Bethel, tetendit ibi tabernaculum suum, ab occidente habens Bethel, et ab oriente Hai: ædificavit quoque ibi altare Domino, et invocavit nomen ejus.",
-      "word_count": 0,
-      "hebrew": "וַיַּעְתֵּ֨ק מִשָּׁ֜ם הָהָ֗רָה מִקֶּ֛דֶם לְבֵֽית אֵ֖ל וַיֵּ֣ט אָהֳלֹ֑ה בֵּֽית אֵ֤ל מִיָּם֙ וְהָעַ֣י מִקֶּ֔דֶם וַיִּֽבֶן שָׁ֤ם מִזְבֵּ֨חַ֙ לַֽיהוָ֔ה וַיִּקְרָ֖א בְּשֵׁ֥ם יְהוָֽה׃",
-      "russian": "Оттуда двинулся он к горе, на восток от Вефиля; и поставил шатер свой так, что от него Вефиль был на запад, а Гай на восток; и создал там жертвенник Господу и призвал имя Господа [явившегося ему].",
-      "greek": "καὶ ἀπέστη ἐκεῖθεν εἰς τὸ ὄρος κατ’ ἀνατολὰς Βαιθήλ, καὶ ἔστησεν ἐκεῖ τὴν σκηνὴν αὐτοῦ ἐν Βαιθὴλ κατὰ θάλασσαν καὶ Ἁγγαὶ κατ’ ἀνατολάς· καὶ ᾠκοδόμησεν ἐκεῖ θυσιαστήριον τῷ κυρίῳ καὶ ἐπεκαλέσατο ἐπὶ τῷ ὀνόματι Κυρίου.",
-      "english": "Then Judah said to Onan, \"Unite with your brother's widow, in fulfillment of your duty as brother-in-law, and thus preserve your brother's line.\""
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַיַּעְתֵּ֨ק מִשָּׁ֜ם הָהָ֗רָה מִקֶּ֛דֶם לְבֵֽית אֵ֖ל וַיֵּ֣ט אָהֳלֹ֑ה בֵּֽית אֵ֤ל מִיָּם֙ וְהָעַ֣י מִקֶּ֔דֶם וַיִּֽבֶן שָׁ֤ם מִזְבֵּ֨חַ֙ לַֽיהוָ֔ה וַיִּקְרָ֖א בְּשֵׁ֥ם יְהוָֽה׃",
+        "VUL": "Et inde transgrediens ad montem, qui erat contra orientem Bethel, tetendit ibi tabernaculum suum, ab occidente habens Bethel, et ab oriente Hai: ædificavit quoque ibi altare Domino, et invocavit nomen ejus.",
+        "LXX": "καὶ ἀπέστη ἐκεῖθεν εἰς τὸ ὄρος κατ’ ἀνατολὰς Βαιθήλ, καὶ ἔστησεν ἐκεῖ τὴν σκηνὴν αὐτοῦ ἐν Βαιθὴλ κατὰ θάλασσαν καὶ Ἁγγαὶ κατ’ ἀνατολάς· καὶ ᾠκοδόμησεν ἐκεῖ θυσιαστήριον τῷ κυρίῳ καὶ ἐπεκαλέσατο ἐπὶ τῷ ὀνόματι Κυρίου.",
+        "NAB": "Then Judah said to Onan, \"Unite with your brother's widow, in fulfillment of your duty as brother-in-law, and thus preserve your brother's line.\"",
+        "SYN": "Оттуда двинулся он к горе, на восток от Вефиля; и поставил шатер свой так, что от него Вефиль был на запад, а Гай на восток; и создал там жертвенник Господу и призвал имя Господа [явившегося ему]."
+      }
     },
     "9": {
-      "sort_number": 9,
-      "name": "9",
-      "latin": "Perrexitque Abram vadens, et ultra progrediens ad meridiem.",
-      "word_count": 0,
-      "hebrew": "וַיִּסַּ֣ע אַבְרָ֔ם הָל֥וֹךְ וְנָס֖וֹעַ הַנֶּֽגְבָּה׃",
-      "russian": "И поднялся Аврам и продолжал идти к югу.",
-      "greek": "καὶ ἀπῆρεν Ἀβρὰμ καὶ πορευθεὶς ἐστρατοπέδευσεν ἐν τῇ ἐρήμῳ.",
-      "english": "Onan, however, knew that the descendants would not be counted as his; so whenever he had relations with his brother's widow, he wasted his seed on the ground, to avoid contributing offspring for his brother."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַיִּסַּ֣ע אַבְרָ֔ם הָל֥וֹךְ וְנָס֖וֹעַ הַנֶּֽגְבָּה׃",
+        "VUL": "Perrexitque Abram vadens, et ultra progrediens ad meridiem.",
+        "LXX": "καὶ ἀπῆρεν Ἀβρὰμ καὶ πορευθεὶς ἐστρατοπέδευσεν ἐν τῇ ἐρήμῳ.",
+        "NAB": "Onan, however, knew that the descendants would not be counted as his; so whenever he had relations with his brother's widow, he wasted his seed on the ground, to avoid contributing offspring for his brother.",
+        "SYN": "И поднялся Аврам и продолжал идти к югу."
+      }
     },
     "10": {
-      "sort_number": 10,
-      "name": "10",
-      "latin": "Facta est autem fames in terra: descenditque Abram in Ægyptum, ut peregrinaretur ibi: prævaluerat enim fames in terra.",
-      "word_count": 0,
-      "hebrew": "וַיְהִ֥י רָעָ֖ב בָּאָ֑רֶץ וַיֵּ֨רֶד אַבְרָ֤ם מִצְרַ֨יְמָה֙ לָג֣וּר שָׁ֔ם כִּֽי כָבֵ֥ד הָרָעָ֖ב בָּאָֽרֶץ׃",
-      "russian": "И был голод в той земле. И сошел Аврам в Египет, пожить там, потому что усилился голод в земле той.",
-      "greek": "Καὶ ἐγένετο λιμὸς ἐπὶ τῆς γῆς· καὶ κατέβη Ἀβρὰμ εἰς Αἴγυπτον παροικῆσαι ἐκεῖ, ὅτι ἐνίσχυσεν ὁ λιμὸς ἐπὶ τῆς γῆς.",
-      "english": "What he did greatly offended the LORD, and the LORD took his life too."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַיְהִ֥י רָעָ֖ב בָּאָ֑רֶץ וַיֵּ֨רֶד אַבְרָ֤ם מִצְרַ֨יְמָה֙ לָג֣וּר שָׁ֔ם כִּֽי כָבֵ֥ד הָרָעָ֖ב בָּאָֽרֶץ׃",
+        "VUL": "Facta est autem fames in terra: descenditque Abram in Ægyptum, ut peregrinaretur ibi: prævaluerat enim fames in terra.",
+        "LXX": "Καὶ ἐγένετο λιμὸς ἐπὶ τῆς γῆς· καὶ κατέβη Ἀβρὰμ εἰς Αἴγυπτον παροικῆσαι ἐκεῖ, ὅτι ἐνίσχυσεν ὁ λιμὸς ἐπὶ τῆς γῆς.",
+        "NAB": "What he did greatly offended the LORD, and the LORD took his life too.",
+        "SYN": "И был голод в той земле. И сошел Аврам в Египет, пожить там, потому что усилился голод в земле той."
+      }
     },
     "11": {
-      "sort_number": 11,
-      "name": "11",
-      "latin": "Cumque prope esset ut ingrederetur Ægyptum, dixit Sarai uxori suæ: Novi quod pulchra sis mulier:",
-      "word_count": 0,
-      "hebrew": "וַיְהִ֕י כַּאֲשֶׁ֥ר הִקְרִ֖יב לָב֣וֹא מִצְרָ֑יְמָה וַיֹּ֨אמֶר֙ אֶל שָׂרַ֣י אִשְׁתּ֔וֹ הִנֵּה נָ֣א יָדַ֔עְתִּי כִּ֛י אִשָּׁ֥ה יְפַת מַרְאֶ֖ה אָֽתְּ׃",
-      "russian": "Когда же он приближался к Египту, то сказал Саре, жене своей: вот, я знаю, что ты женщина, прекрасная видом;",
-      "greek": "ἐγένετο δὲ ἡνίκα ἤγγισεν Ἀβρὰμ εἰσελθεῖν εἰς Αἴγυπτον, εἶπεν Ἀβρὰμ Σάρᾳ τῇ γυναικὶ αὐτοῦ ⸆ Γινώσκω ἐγὼ ὅτι γυνὴ εὐπρόσωπος εἶ·",
-      "english": "Thereupon Judah said to his daughter-in-law Tamar, \"Stay as a widow in your father's house until my son Shelah grows up\" - for he feared that Shelah also might die like his brothers. So Tamar went to live in her father's house."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַיְהִ֕י כַּאֲשֶׁ֥ר הִקְרִ֖יב לָב֣וֹא מִצְרָ֑יְמָה וַיֹּ֨אמֶר֙ אֶל שָׂרַ֣י אִשְׁתּ֔וֹ הִנֵּה נָ֣א יָדַ֔עְתִּי כִּ֛י אִשָּׁ֥ה יְפַת מַרְאֶ֖ה אָֽתְּ׃",
+        "VUL": "Cumque prope esset ut ingrederetur Ægyptum, dixit Sarai uxori suæ: Novi quod pulchra sis mulier:",
+        "LXX": "ἐγένετο δὲ ἡνίκα ἤγγισεν Ἀβρὰμ εἰσελθεῖν εἰς Αἴγυπτον, εἶπεν Ἀβρὰμ Σάρᾳ τῇ γυναικὶ αὐτοῦ ⸆ Γινώσκω ἐγὼ ὅτι γυνὴ εὐπρόσωπος εἶ·",
+        "NAB": "Thereupon Judah said to his daughter-in-law Tamar, \"Stay as a widow in your father's house until my son Shelah grows up\" - for he feared that Shelah also might die like his brothers. So Tamar went to live in her father's house.",
+        "SYN": "Когда же он приближался к Египту, то сказал Саре, жене своей: вот, я знаю, что ты женщина, прекрасная видом;"
+      }
     },
     "12": {
-      "sort_number": 12,
-      "name": "12",
-      "latin": "et quod cum viderint te Ægyptii, dicturi sunt: Uxor ipsius est: et interficient me, et te reservabunt.",
-      "word_count": 0,
-      "hebrew": "וְהָיָ֗ה כִּֽי יִרְא֤וּ אֹתָךְ֙ הַמִּצְרִ֔ים וְאָמְר֖וּ אִשְׁתּ֣וֹ זֹ֑את וְהָרְג֥וּ אֹתִ֖י וְאֹתָ֥ךְ יְחַיּֽוּ׃",
-      "russian": "и когда Египтяне увидят тебя, то скажут: это жена его; и убьют меня, а тебя оставят в живых;",
-      "greek": "ἔσται οὖν ὡς ἂν ἴδωσίν σε οἱ Αἰγύπτιοι, ἐροῦσιν ὅτι Γυνὴ αὐτοῦ ἐστὶν αὐτή· καὶ ἀποκτενοῦσίν με, σὲ δὲ περιποιήσονται.",
-      "english": "Years passed, and Judah's wife, the daughter of Shua, died. After Judah completed the period of mourning, he went up to Timnah for the shearing of his sheep, in company with his friend Hirah the Adullamite."
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְהָיָ֗ה כִּֽי יִרְא֤וּ אֹתָךְ֙ הַמִּצְרִ֔ים וְאָמְר֖וּ אִשְׁתּ֣וֹ זֹ֑את וְהָרְג֥וּ אֹתִ֖י וְאֹתָ֥ךְ יְחַיּֽוּ׃",
+        "VUL": "et quod cum viderint te Ægyptii, dicturi sunt: Uxor ipsius est: et interficient me, et te reservabunt.",
+        "LXX": "ἔσται οὖν ὡς ἂν ἴδωσίν σε οἱ Αἰγύπτιοι, ἐροῦσιν ὅτι Γυνὴ αὐτοῦ ἐστὶν αὐτή· καὶ ἀποκτενοῦσίν με, σὲ δὲ περιποιήσονται.",
+        "NAB": "Years passed, and Judah's wife, the daughter of Shua, died. After Judah completed the period of mourning, he went up to Timnah for the shearing of his sheep, in company with his friend Hirah the Adullamite.",
+        "SYN": "и когда Египтяне увидят тебя, то скажут: это жена его; и убьют меня, а тебя оставят в живых;"
+      }
     },
     "13": {
-      "sort_number": 13,
-      "name": "13",
-      "latin": "Dic ergo, obsecro te, quod soror mea sis: ut bene sit mihi propter te, et vivat anima mea ob gratiam tui.",
-      "word_count": 0,
-      "hebrew": "אִמְרִי נָ֖א אֲחֹ֣תִי אָ֑תְּ לְמַ֨עַן֙ יִֽיטַב לִ֣י בַעֲבוּרֵ֔ךְ וְחָיְתָ֥ה נַפְשִׁ֖י בִּגְלָלֵֽךְ׃",
-      "russian": "скажи же, что ты мне сестра, дабы мне хорошо было ради тебя, и дабы жива была душа моя чрез тебя.",
-      "greek": "εἰπὸν οὖν ὅτι Ἀδελφὴ αὐτοῦ εἰμί, ὅπως ἂν εὖ μοι γένηται διὰ σέ, καὶ ζήσεται ἡ ψυχή μου ἕνεκεν σοῦ.",
-      "english": "When Tamar was told that her father-in-law was on his way up to Timnah to shear his sheep,"
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "אִמְרִי נָ֖א אֲחֹ֣תִי אָ֑תְּ לְמַ֨עַן֙ יִֽיטַב לִ֣י בַעֲבוּרֵ֔ךְ וְחָיְתָ֥ה נַפְשִׁ֖י בִּגְלָלֵֽךְ׃",
+        "VUL": "Dic ergo, obsecro te, quod soror mea sis: ut bene sit mihi propter te, et vivat anima mea ob gratiam tui.",
+        "LXX": "εἰπὸν οὖν ὅτι Ἀδελφὴ αὐτοῦ εἰμί, ὅπως ἂν εὖ μοι γένηται διὰ σέ, καὶ ζήσεται ἡ ψυχή μου ἕνεκεν σοῦ.",
+        "NAB": "When Tamar was told that her father-in-law was on his way up to Timnah to shear his sheep,",
+        "SYN": "скажи же, что ты мне сестра, дабы мне хорошо было ради тебя, и дабы жива была душа моя чрез тебя."
+      }
     },
     "14": {
-      "sort_number": 14,
-      "name": "14",
-      "latin": "Cum itaque ingressus esset Abram Ægyptum, viderunt Ægyptii mulierem quod esset pulchra nimis.",
-      "word_count": 0,
-      "hebrew": "וַיְהִ֕י כְּב֥וֹא אַבְרָ֖ם מִצְרָ֑יְמָה וַיִּרְא֤וּ הַמִּצְרִים֙ אֶת הָ֣אִשָּׁ֔ה כִּֽי יָפָ֥ה הִ֖וא מְאֹֽד׃",
-      "russian": "И было, когда пришел Аврам в Египет, Египтяне увидели, что она женщина весьма красивая;",
-      "greek": "ἐγένετο δὲ ἡνίκα εἰσῆλθεν Ἀβρὰμ εἰς Αἴγυπτον, ἰδόντες οἱ Αἰγύπτιοι τὴν γυναῖκα αὐτοῦ ὅτι καλὴ ἦν σφόδρα,",
-      "english": "she took off her widow's garb, veiled her face by covering herself with a shawl, and sat down at the entrance to Enaim, which is on the way to Timnah; for she was aware that, although Shelah was now grown up, she had not been given to him in marriage."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַיְהִ֕י כְּב֥וֹא אַבְרָ֖ם מִצְרָ֑יְמָה וַיִּרְא֤וּ הַמִּצְרִים֙ אֶת הָ֣אִשָּׁ֔ה כִּֽי יָפָ֥ה הִ֖וא מְאֹֽד׃",
+        "VUL": "Cum itaque ingressus esset Abram Ægyptum, viderunt Ægyptii mulierem quod esset pulchra nimis.",
+        "LXX": "ἐγένετο δὲ ἡνίκα εἰσῆλθεν Ἀβρὰμ εἰς Αἴγυπτον, ἰδόντες οἱ Αἰγύπτιοι τὴν γυναῖκα αὐτοῦ ὅτι καλὴ ἦν σφόδρα,",
+        "NAB": "she took off her widow's garb, veiled her face by covering herself with a shawl, and sat down at the entrance to Enaim, which is on the way to Timnah; for she was aware that, although Shelah was now grown up, she had not been given to him in marriage.",
+        "SYN": "И было, когда пришел Аврам в Египет, Египтяне увидели, что она женщина весьма красивая;"
+      }
     },
     "15": {
-      "sort_number": 15,
-      "name": "15",
-      "latin": "Et nuntiaverunt principes Pharaoni, et laudaverunt eam apud illum: et sublata est mulier in domum Pharaonis.",
-      "word_count": 0,
-      "hebrew": "וַיִּרְא֤וּ אֹתָהּ֙ שָׂרֵ֣י פַרְעֹ֔ה וַיְהַֽלְל֥וּ אֹתָ֖הּ אֶל פַּרְעֹ֑ה וַתֻּקַּ֥ח הָאִשָּׁ֖ה בֵּ֥ית פַּרְעֹֽה׃",
-      "russian": "увидели ее и вельможи фараоновы и похвалили ее фараону; и взята была она в дом фараонов.",
-      "greek": "καὶ ἴδον αὐτὴν οἱ ἄρχοντες Φαραὼ καὶ ἐπῄνεσαν αὐτὴν πρὸς Φαραὼ καὶ εἰσήγαγον αὐτὴν πρὸς Φαραώ.",
-      "english": "When Judah saw her, he mistook her for a harlot, since she had covered her face."
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַיִּרְא֤וּ אֹתָהּ֙ שָׂרֵ֣י פַרְעֹ֔ה וַיְהַֽלְל֥וּ אֹתָ֖הּ אֶל פַּרְעֹ֑ה וַתֻּקַּ֥ח הָאִשָּׁ֖ה בֵּ֥ית פַּרְעֹֽה׃",
+        "VUL": "Et nuntiaverunt principes Pharaoni, et laudaverunt eam apud illum: et sublata est mulier in domum Pharaonis.",
+        "LXX": "καὶ ἴδον αὐτὴν οἱ ἄρχοντες Φαραὼ καὶ ἐπῄνεσαν αὐτὴν πρὸς Φαραὼ καὶ εἰσήγαγον αὐτὴν πρὸς Φαραώ.",
+        "NAB": "When Judah saw her, he mistook her for a harlot, since she had covered her face.",
+        "SYN": "увидели ее и вельможи фараоновы и похвалили ее фараону; и взята была она в дом фараонов."
+      }
     },
     "16": {
-      "sort_number": 16,
-      "name": "16",
-      "latin": "Abram vero bene usi sunt propter illam: fueruntque ei oves et boves et asini, et servi et famulæ, et asinæ et cameli.",
-      "word_count": 0,
-      "hebrew": "וּלְאַבְרָ֥ם הֵיטִ֖יב בַּעֲבוּרָ֑הּ וַֽיְהִי ל֤וֹ צֹאן וּבָקָר֙ וַחֲמֹרִ֔ים וַעֲבָדִים֙ וּשְׁפָחֹ֔ת וַאֲתֹנֹ֖ת וּגְמַלִּֽים׃",
-      "russian": "И Авраму хорошо было ради ее; и был у него мелкий и крупный скот и ослы, и рабы и рабыни, и лошаки и верблюды.",
-      "greek": "καὶ τῷ Ἀβρὰμ εὖ ἐχρήσαντο δι’ αὐτήν, καὶ ἐγένοντο αὐτῷ πρόβατα καὶ μόσχοι καὶ ὄνοι, παῖδες καὶ παιδίσκαι, ἡμίονοι καὶ κάμηλοι.",
-      "english": "So he went over to her at the roadside, and not realizing that she was his daughter-in-law, he said, \"Come, let me have intercourse with you.\" She replied, \"What will you pay me for letting you have intercourse with me?\""
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וּלְאַבְרָ֥ם הֵיטִ֖יב בַּעֲבוּרָ֑הּ וַֽיְהִי ל֤וֹ צֹאן וּבָקָר֙ וַחֲמֹרִ֔ים וַעֲבָדִים֙ וּשְׁפָחֹ֔ת וַאֲתֹנֹ֖ת וּגְמַלִּֽים׃",
+        "VUL": "Abram vero bene usi sunt propter illam: fueruntque ei oves et boves et asini, et servi et famulæ, et asinæ et cameli.",
+        "LXX": "καὶ τῷ Ἀβρὰμ εὖ ἐχρήσαντο δι’ αὐτήν, καὶ ἐγένοντο αὐτῷ πρόβατα καὶ μόσχοι καὶ ὄνοι, παῖδες καὶ παιδίσκαι, ἡμίονοι καὶ κάμηλοι.",
+        "NAB": "So he went over to her at the roadside, and not realizing that she was his daughter-in-law, he said, \"Come, let me have intercourse with you.\" She replied, \"What will you pay me for letting you have intercourse with me?\"",
+        "SYN": "И Авраму хорошо было ради ее; и был у него мелкий и крупный скот и ослы, и рабы и рабыни, и лошаки и верблюды."
+      }
     },
     "17": {
-      "sort_number": 17,
-      "name": "17",
-      "latin": "Flagellavit autem Dominus Pharaonem plagis maximis, et domum ejus, propter Sarai uxorem Abram.",
-      "word_count": 0,
-      "hebrew": "וַיְנַגַּ֨ע יְהוָ֧ה אֶת פַּרְעֹ֛ה נְגָעִ֥ים גְּדֹלִ֖ים וְאֶת בֵּית֑וֹ עַל דְּבַ֥ר שָׂרַ֖י אֵ֥שֶׁת אַבְרָֽם׃",
-      "russian": "Но Господь поразил тяжкими ударами фараона и дом его за Сару, жену Аврамову.",
-      "greek": "καὶ ἤτασεν ὁ θεὸς τὸν Φαραὼ ἐτασμοῖς μεγάλοις καὶ πονηροῖς καὶ τὸν οἶκον αὐτοῦ περὶ Σάρας τῆς γυναικὸς Ἀβράμ.",
-      "english": "He answered, \"I will send you a kid from the flock.\" \"Very well,\" she said, \"provided you leave a pledge until you send it.\""
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַיְנַגַּ֨ע יְהוָ֧ה אֶת פַּרְעֹ֛ה נְגָעִ֥ים גְּדֹלִ֖ים וְאֶת בֵּית֑וֹ עַל דְּבַ֥ר שָׂרַ֖י אֵ֥שֶׁת אַבְרָֽם׃",
+        "VUL": "Flagellavit autem Dominus Pharaonem plagis maximis, et domum ejus, propter Sarai uxorem Abram.",
+        "LXX": "καὶ ἤτασεν ὁ θεὸς τὸν Φαραὼ ἐτασμοῖς μεγάλοις καὶ πονηροῖς καὶ τὸν οἶκον αὐτοῦ περὶ Σάρας τῆς γυναικὸς Ἀβράμ.",
+        "NAB": "He answered, \"I will send you a kid from the flock.\" \"Very well,\" she said, \"provided you leave a pledge until you send it.\"",
+        "SYN": "Но Господь поразил тяжкими ударами фараона и дом его за Сару, жену Аврамову."
+      }
     },
     "18": {
-      "sort_number": 18,
-      "name": "18",
-      "latin": "Vocavitque Pharao Abram, et dixit ei: Quidnam est hoc quod fecisti mihi ? quare non indicasti quod uxor tua esset ?",
-      "word_count": 0,
-      "hebrew": "וַיִּקְרָ֤א פַרְעֹה֙ לְאַבְרָ֔ם וַיֹּ֕אמֶר מַה זֹּ֖את עָשִׂ֣יתָ לִּ֑י לָ֚מָּה לֹא הִגַּ֣דְתָּ לִּ֔י כִּ֥י אִשְׁתְּךָ֖ הִֽוא׃",
-      "russian": "И призвал фараон Аврама и сказал: что ты это сделал со мною? для чего не сказал мне, что она жена твоя?",
-      "greek": "καλέσας δὲ Φαραὼ τὸν Ἀβρὰμ εἶπεν Τί τοῦτο ἐποίησάς μοι, ὅτι οὐκ ἀπήγγειλάς μοι ὅτι γυνή σού ἐστιν;",
-      "english": "Judah asked, \"What pledge am I to give to you?\" She answered, \"Your seal and cord, and the staff you carry.\" So he gave them to her and had intercourse with her, and she conceived by him."
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַיִּקְרָ֤א פַרְעֹה֙ לְאַבְרָ֔ם וַיֹּ֕אמֶר מַה זֹּ֖את עָשִׂ֣יתָ לִּ֑י לָ֚מָּה לֹא הִגַּ֣דְתָּ לִּ֔י כִּ֥י אִשְׁתְּךָ֖ הִֽוא׃",
+        "VUL": "Vocavitque Pharao Abram, et dixit ei: Quidnam est hoc quod fecisti mihi ? quare non indicasti quod uxor tua esset ?",
+        "LXX": "καλέσας δὲ Φαραὼ τὸν Ἀβρὰμ εἶπεν Τί τοῦτο ἐποίησάς μοι, ὅτι οὐκ ἀπήγγειλάς μοι ὅτι γυνή σού ἐστιν;",
+        "NAB": "Judah asked, \"What pledge am I to give to you?\" She answered, \"Your seal and cord, and the staff you carry.\" So he gave them to her and had intercourse with her, and she conceived by him.",
+        "SYN": "И призвал фараон Аврама и сказал: что ты это сделал со мною? для чего не сказал мне, что она жена твоя?"
+      }
     },
     "19": {
-      "sort_number": 19,
-      "name": "19",
-      "latin": "quam ob causam dixisti esse sororem tuam, ut tollerem eam mihi in uxorem ? Nunc igitur ecce conjux tua, accipe eam, et vade.",
-      "word_count": 0,
-      "hebrew": "לָמָ֤ה אָמַ֨רְתָּ֙ אֲחֹ֣תִי הִ֔וא וָאֶקַּ֥ח אֹתָ֛הּ לִ֖י לְאִשָּׁ֑ה וְעַתָּ֕ה הִנֵּ֥ה אִשְׁתְּךָ֖ קַ֥ח וָלֵֽךְ׃",
-      "russian": "для чего ты сказал: она сестра моя? и я взял было ее себе в жену. И теперь вот жена твоя; возьми [ее] и пойди.",
-      "greek": "ἵνα τί εἶπας ὅτι Ἀδελφή μού ἐστιν; καὶ ἔλαβον αὐτὴν ἐμαυτῷ εἰς γυναῖκα. καὶ νῦν ἰδοὺ ἡ γυνή σου ἐναντίον σου· λαβὼν ἀπότρεχε.",
-      "english": "When she went away, she took off her shawl and put on her widow's garb again."
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "לָמָ֤ה אָמַ֨רְתָּ֙ אֲחֹ֣תִי הִ֔וא וָאֶקַּ֥ח אֹתָ֛הּ לִ֖י לְאִשָּׁ֑ה וְעַתָּ֕ה הִנֵּ֥ה אִשְׁתְּךָ֖ קַ֥ח וָלֵֽךְ׃",
+        "VUL": "quam ob causam dixisti esse sororem tuam, ut tollerem eam mihi in uxorem ? Nunc igitur ecce conjux tua, accipe eam, et vade.",
+        "LXX": "ἵνα τί εἶπας ὅτι Ἀδελφή μού ἐστιν; καὶ ἔλαβον αὐτὴν ἐμαυτῷ εἰς γυναῖκα. καὶ νῦν ἰδοὺ ἡ γυνή σου ἐναντίον σου· λαβὼν ἀπότρεχε.",
+        "NAB": "When she went away, she took off her shawl and put on her widow's garb again.",
+        "SYN": "для чего ты сказал: она сестра моя? и я взял было ее себе в жену. И теперь вот жена твоя; возьми [ее] и пойди."
+      }
     },
     "20": {
-      "sort_number": 20,
-      "name": "20",
-      "latin": "Præcepitque Pharao super Abram viris: et deduxerunt eum, et uxorem illius, et omnia quæ habebat.",
-      "word_count": 0,
-      "hebrew": "וַיְצַ֥ו עָלָ֛יו פַּרְעֹ֖ה אֲנָשִׁ֑ים וַֽיְשַׁלְּח֥וּ אֹת֛וֹ וְאֶת אִשְׁתּ֖וֹ וְאֶת כָּל אֲשֶׁר לֽוֹ׃",
-      "russian": "И дал о нем фараон повеление людям, и проводили его, и жену его, и все, что у него было, [и Лота с ним].",
-      "greek": "καὶ ἐνετείλατο Φαραὼ ἀνδράσιν περὶ Ἀβράμ, συνπροπέμψαι αὐτὸν καὶ τὴν γυναῖκα αὐτοῦ καὶ πάντα ὅσα ἦν αὐτῷ, καὶ Λὼτ μετ’ αὐτοῦ.",
-      "english": "Judah sent the kid by his friend the Adullamite to recover the pledge from the woman; but he could not find her."
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַיְצַ֥ו עָלָ֛יו פַּרְעֹ֖ה אֲנָשִׁ֑ים וַֽיְשַׁלְּח֥וּ אֹת֛וֹ וְאֶת אִשְׁתּ֖וֹ וְאֶת כָּל אֲשֶׁר לֽוֹ׃",
+        "VUL": "Præcepitque Pharao super Abram viris: et deduxerunt eum, et uxorem illius, et omnia quæ habebat.",
+        "LXX": "καὶ ἐνετείλατο Φαραὼ ἀνδράσιν περὶ Ἀβράμ, συνπροπέμψαι αὐτὸν καὶ τὴν γυναῖκα αὐτοῦ καὶ πάντα ὅσα ἦν αὐτῷ, καὶ Λὼτ μετ’ αὐτοῦ.",
+        "NAB": "Judah sent the kid by his friend the Adullamite to recover the pledge from the woman; but he could not find her.",
+        "SYN": "И дал о нем фараон повеление людям, и проводили его, и жену его, и все, что у него было, [и Лота с ним]."
+      }
     }
   }
 }

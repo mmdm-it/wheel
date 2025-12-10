@@ -1,364 +1,561 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "MATHE_015",
-  "chapter_key": "15",
-  "chapter_number": 15,
-  "sort_number": 15,
-  "name": "15",
   "book_key": "MATHE",
+  "sequence": 15,
+  "chapter_in": {
+    "MT": 15,
+    "VUL": 15,
+    "LXX": 15
+  },
   "testament": "Novum_Testamentum",
   "section": "Evangelia",
-  "verse_count": 39,
   "verses": {
     "1": {
-      "verse_number": 1,
-      "sort_number": 1,
-      "text": "[MATHE 15:1]",
-      "word_count": 5,
-      "russian": "Тогда приходят к Иисусу Иерусалимские книжники и фарисеи и говорят:",
-      "greek": "Τότε προσέρχονται τῷ Ἰησοῦ οἱ ἀπὸ Ἱεροσολύμων γραμματεῖς καὶ Φαρισαῖοι, λέγοντες,",
-      "latin": "Tunc accesserunt ad eum ab Jerosolymis scribæ et pharisæi, dicentes:"
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "Tunc accesserunt ad eum ab Jerosolymis scribæ et pharisæi, dicentes:",
+        "LXX": "Τότε προσέρχονται τῷ Ἰησοῦ οἱ ἀπὸ Ἱεροσολύμων γραμματεῖς καὶ Φαρισαῖοι, λέγοντες,",
+        "SYN": "Тогда приходят к Иисусу Иерусалимские книжники и фарисеи и говорят:",
+        "BYZ": "Τότε προσέρχονται τῷ Ἰησοῦ οἱ ἀπὸ Ἱεροσολύμων γραμματεῖς καὶ Φαρισαῖοι, λέγοντες,"
+      }
     },
     "2": {
-      "verse_number": 2,
-      "sort_number": 2,
-      "text": "[MATHE 15:2]",
-      "word_count": 5,
-      "russian": "зачем ученики Твои преступают предание старцев? ибо не умывают рук своих, когда едят хлеб.",
-      "greek": "Διὰ τί οἱ μαθηταί σου παραβαίνουσιν τὴν παράδοσιν τῶν πρεσβυτέρων; Οὐ γὰρ νίπτονται τὰς χεῖρας αὐτῶν, ὅταν ἄρτον ἐσθίωσιν.",
-      "latin": "Quare discipuli tui transgrediuntur traditionem seniorum ? non enim lavant manus suas cum panem manducant."
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "Quare discipuli tui transgrediuntur traditionem seniorum ? non enim lavant manus suas cum panem manducant.",
+        "LXX": "Διὰ τί οἱ μαθηταί σου παραβαίνουσιν τὴν παράδοσιν τῶν πρεσβυτέρων; Οὐ γὰρ νίπτονται τὰς χεῖρας αὐτῶν, ὅταν ἄρτον ἐσθίωσιν.",
+        "SYN": "зачем ученики Твои преступают предание старцев? ибо не умывают рук своих, когда едят хлеб.",
+        "BYZ": "Διὰ τί οἱ μαθηταί σου παραβαίνουσιν τὴν παράδοσιν τῶν πρεσβυτέρων; Οὐ γὰρ νίπτονται τὰς χεῖρας αὐτῶν, ὅταν ἄρτον ἐσθίωσιν."
+      }
     },
     "3": {
-      "verse_number": 3,
-      "sort_number": 3,
-      "text": "[MATHE 15:3]",
-      "word_count": 5,
-      "russian": "Он же сказал им в ответ: зачем и вы преступаете заповедь Божию ради предания вашего?",
-      "greek": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς, Διὰ τί καὶ ὑμεῖς παραβαίνετε τὴν ἐντολὴν τοῦ θεοῦ διὰ τὴν παράδοσιν ὑμῶν;",
-      "latin": "Ipse autem respondens ait illis: Quare et vos transgredimini mandatum Dei propter traditionem vestram ? Nam Deus dixit:"
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "Ipse autem respondens ait illis: Quare et vos transgredimini mandatum Dei propter traditionem vestram ? Nam Deus dixit:",
+        "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς, Διὰ τί καὶ ὑμεῖς παραβαίνετε τὴν ἐντολὴν τοῦ θεοῦ διὰ τὴν παράδοσιν ὑμῶν;",
+        "SYN": "Он же сказал им в ответ: зачем и вы преступаете заповедь Божию ради предания вашего?",
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς, Διὰ τί καὶ ὑμεῖς παραβαίνετε τὴν ἐντολὴν τοῦ θεοῦ διὰ τὴν παράδοσιν ὑμῶν;"
+      }
     },
     "4": {
-      "verse_number": 4,
-      "sort_number": 4,
-      "text": "[MATHE 15:4]",
-      "word_count": 5,
-      "russian": "Ибо Бог заповедал: почитай отца и мать; и: злословящий отца или мать смертью да умрет.",
-      "greek": "Ὁ γὰρ θεὸς ἐνετείλατο, λέγων, Τίμα τὸν πατέρα καὶ τὴν μητέρα· καί, Ὁ κακολογῶν πατέρα ἢ μητέρα θανάτῳ τελευτάτω·",
-      "latin": "Honora patrem, et matrem: et, Qui maledixerit patri, vel matri, morte moriatur."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "Honora patrem, et matrem: et, Qui maledixerit patri, vel matri, morte moriatur.",
+        "LXX": "Ὁ γὰρ θεὸς ἐνετείλατο, λέγων, Τίμα τὸν πατέρα καὶ τὴν μητέρα· καί, Ὁ κακολογῶν πατέρα ἢ μητέρα θανάτῳ τελευτάτω·",
+        "SYN": "Ибо Бог заповедал: почитай отца и мать; и: злословящий отца или мать смертью да умрет.",
+        "BYZ": "Ὁ γὰρ θεὸς ἐνετείλατο, λέγων, Τίμα τὸν πατέρα καὶ τὴν μητέρα· καί, Ὁ κακολογῶν πατέρα ἢ μητέρα θανάτῳ τελευτάτω·"
+      }
     },
     "5": {
-      "verse_number": 5,
-      "sort_number": 5,
-      "text": "[MATHE 15:5]",
-      "word_count": 5,
-      "russian": "А вы говорите: если кто скажет отцу или матери: дар Богу то, чем бы ты от меня пользовался,",
-      "greek": "ὑμεῖς δὲ λέγετε, Ὃς ἂν εἴπῃ τῷ πατρὶ ἢ τῇ μητρί, Δῶρον, ὃ ἐὰν ἐξ ἐμοῦ ὠφεληθῇς, καὶ οὐ μὴ τιμήσῃ τὸν πατέρα αὐτοῦ ἢ τὴν μητέρα αὐτοῦ·",
-      "latin": "Vos autem dicitis: Quicumque dixerit patri, vel matri: Munus, quodcumque est ex me, tibi proderit:"
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Vos autem dicitis: Quicumque dixerit patri, vel matri: Munus, quodcumque est ex me, tibi proderit:",
+        "LXX": "ὑμεῖς δὲ λέγετε, Ὃς ἂν εἴπῃ τῷ πατρὶ ἢ τῇ μητρί, Δῶρον, ὃ ἐὰν ἐξ ἐμοῦ ὠφεληθῇς, καὶ οὐ μὴ τιμήσῃ τὸν πατέρα αὐτοῦ ἢ τὴν μητέρα αὐτοῦ·",
+        "SYN": "А вы говорите: если кто скажет отцу или матери: дар Богу то, чем бы ты от меня пользовался,",
+        "BYZ": "ὑμεῖς δὲ λέγετε, Ὃς ἂν εἴπῃ τῷ πατρὶ ἢ τῇ μητρί, Δῶρον, ὃ ἐὰν ἐξ ἐμοῦ ὠφεληθῇς, καὶ οὐ μὴ τιμήσῃ τὸν πατέρα αὐτοῦ ἢ τὴν μητέρα αὐτοῦ·"
+      }
     },
     "6": {
-      "verse_number": 6,
-      "sort_number": 6,
-      "text": "[MATHE 15:6]",
-      "word_count": 5,
-      "russian": "тот может и не почтить отца своего или мать свою; таким образом вы устранили заповедь Божию преданием вашим.",
-      "greek": "καὶ ἠκυρώσατε τὴν ἐντολὴν τοῦ θεοῦ διὰ τὴν παράδοσιν ὑμῶν·",
-      "latin": "et non honorificabit patrem suum, aut matrem suam: et irritum fecistis mandatum Dei propter traditionem vestram."
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "et non honorificabit patrem suum, aut matrem suam: et irritum fecistis mandatum Dei propter traditionem vestram.",
+        "LXX": "καὶ ἠκυρώσατε τὴν ἐντολὴν τοῦ θεοῦ διὰ τὴν παράδοσιν ὑμῶν·",
+        "SYN": "тот может и не почтить отца своего или мать свою; таким образом вы устранили заповедь Божию преданием вашим.",
+        "BYZ": "καὶ ἠκυρώσατε τὴν ἐντολὴν τοῦ θεοῦ διὰ τὴν παράδοσιν ὑμῶν·"
+      }
     },
     "7": {
-      "verse_number": 7,
-      "sort_number": 7,
-      "text": "[MATHE 15:7]",
-      "word_count": 5,
-      "russian": "Лицемеры! хорошо пророчествовал о вас Исаия, говоря:",
-      "greek": "ὑποκριταί, καλῶς προεφήτευσεν περὶ ὑμῶν Ἠσαΐας, λέγων,",
-      "latin": "Hypocritæ, bene prophetavit de vobis Isaias, dicens:"
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Hypocritæ, bene prophetavit de vobis Isaias, dicens:",
+        "LXX": "ὑποκριταί, καλῶς προεφήτευσεν περὶ ὑμῶν Ἠσαΐας, λέγων,",
+        "SYN": "Лицемеры! хорошо пророчествовал о вас Исаия, говоря:",
+        "BYZ": "ὑποκριταί, καλῶς προεφήτευσεν περὶ ὑμῶν Ἠσαΐας, λέγων,"
+      }
     },
     "8": {
-      "verse_number": 8,
-      "sort_number": 8,
-      "text": "[MATHE 15:8]",
-      "word_count": 5,
-      "russian": "приближаются ко Мне люди сии устами своими, и чтут Меня языком, сердце же их далеко отстоит от Меня;",
-      "greek": "Ἐγγίζει μοι ὁ λαὸς οὗτος τῷ στόματι αὐτῶν, καὶ τοῖς χείλεσίν με τιμᾷ, ἡ δὲ καρδία αὐτῶν πόρρω ἀπέχει ἀπ’ ἐμοῦ.",
-      "latin": "[Populus hic labiis me honorat:/ cor autem eorum longe est a me./"
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "[Populus hic labiis me honorat:/ cor autem eorum longe est a me./",
+        "LXX": "Ἐγγίζει μοι ὁ λαὸς οὗτος τῷ στόματι αὐτῶν, καὶ τοῖς χείλεσίν με τιμᾷ, ἡ δὲ καρδία αὐτῶν πόρρω ἀπέχει ἀπ’ ἐμοῦ.",
+        "SYN": "приближаются ко Мне люди сии устами своими, и чтут Меня языком, сердце же их далеко отстоит от Меня;",
+        "BYZ": "Ἐγγίζει μοι ὁ λαὸς οὗτος τῷ στόματι αὐτῶν, καὶ τοῖς χείλεσίν με τιμᾷ, ἡ δὲ καρδία αὐτῶν πόρρω ἀπέχει ἀπ’ ἐμοῦ."
+      }
     },
     "9": {
-      "verse_number": 9,
-      "sort_number": 9,
-      "text": "[MATHE 15:9]",
-      "word_count": 5,
-      "russian": "но тщетно чтут Меня, уча учениям, заповедям человеческим.",
-      "greek": "Μάτην δὲ σέβονταί με, διδάσκοντες διδασκαλίας ἐντάλματα ἀνθρώπων.",
-      "latin": "Sine causa autem colunt me,/ docentes doctrinas et mandata hominum.]"
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "Sine causa autem colunt me,/ docentes doctrinas et mandata hominum.]",
+        "LXX": "Μάτην δὲ σέβονταί με, διδάσκοντες διδασκαλίας ἐντάλματα ἀνθρώπων.",
+        "SYN": "но тщетно чтут Меня, уча учениям, заповедям человеческим.",
+        "BYZ": "Μάτην δὲ σέβονταί με, διδάσκοντες διδασκαλίας ἐντάλματα ἀνθρώπων."
+      }
     },
     "10": {
-      "verse_number": 10,
-      "sort_number": 10,
-      "text": "[MATHE 15:10]",
-      "word_count": 5,
-      "russian": "И, призвав народ, сказал им: слушайте и разумейте!",
-      "greek": "Καὶ προσκαλεσάμενος τὸν ὄχλον, εἶπεν αὐτοῖς, Ἀκούετε καὶ συνίετε.",
-      "latin": "Et convocatis ad se turbis, dixit eis: Audite, et intelligite."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Et convocatis ad se turbis, dixit eis: Audite, et intelligite.",
+        "LXX": "Καὶ προσκαλεσάμενος τὸν ὄχλον, εἶπεν αὐτοῖς, Ἀκούετε καὶ συνίετε.",
+        "SYN": "И, призвав народ, сказал им: слушайте и разумейте!",
+        "BYZ": "Καὶ προσκαλεσάμενος τὸν ὄχλον, εἶπεν αὐτοῖς, Ἀκούετε καὶ συνίετε."
+      }
     },
     "11": {
-      "verse_number": 11,
-      "sort_number": 11,
-      "text": "[MATHE 15:11]",
-      "word_count": 5,
-      "russian": "не то, что входит в уста, оскверняет человека, но то, что выходит из уст, оскверняет человека.",
-      "greek": "Οὐ τὸ εἰσερχόμενον εἰς τὸ στόμα κοινοῖ τὸν ἄνθρωπον· ἀλλὰ τὸ ἐκπορευόμενον ἐκ τοῦ στόματος, τοῦτο κοινοῖ τὸν ἄνθρωπον.",
-      "latin": "Non quod intrat in os, coinquinat hominem: sed quod procedit ex ore, hoc coinquinat hominem."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Non quod intrat in os, coinquinat hominem: sed quod procedit ex ore, hoc coinquinat hominem.",
+        "LXX": "Οὐ τὸ εἰσερχόμενον εἰς τὸ στόμα κοινοῖ τὸν ἄνθρωπον· ἀλλὰ τὸ ἐκπορευόμενον ἐκ τοῦ στόματος, τοῦτο κοινοῖ τὸν ἄνθρωπον.",
+        "SYN": "не то, что входит в уста, оскверняет человека, но то, что выходит из уст, оскверняет человека.",
+        "BYZ": "Οὐ τὸ εἰσερχόμενον εἰς τὸ στόμα κοινοῖ τὸν ἄνθρωπον· ἀλλὰ τὸ ἐκπορευόμενον ἐκ τοῦ στόματος, τοῦτο κοινοῖ τὸν ἄνθρωπον."
+      }
     },
     "12": {
-      "verse_number": 12,
-      "sort_number": 12,
-      "text": "[MATHE 15:12]",
-      "word_count": 5,
-      "russian": "Тогда ученики Его, приступив, сказали Ему: знаешь ли, что фарисеи, услышав слово сие, соблазнились?",
-      "greek": "Τότε προσελθόντες οἱ μαθηταὶ αὐτοῦ εἶπον αὐτῷ, Οἶδας ὅτι οἱ Φαρισαῖοι ἀκούσαντες τὸν λόγον ἐσκανδαλίσθησαν;",
-      "latin": "Tunc accedentes discipuli ejus, dixerunt ei: Scis quia pharisæi audito verbo hoc, scandalizati sunt ?"
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "Tunc accedentes discipuli ejus, dixerunt ei: Scis quia pharisæi audito verbo hoc, scandalizati sunt ?",
+        "LXX": "Τότε προσελθόντες οἱ μαθηταὶ αὐτοῦ εἶπον αὐτῷ, Οἶδας ὅτι οἱ Φαρισαῖοι ἀκούσαντες τὸν λόγον ἐσκανδαλίσθησαν;",
+        "SYN": "Тогда ученики Его, приступив, сказали Ему: знаешь ли, что фарисеи, услышав слово сие, соблазнились?",
+        "BYZ": "Τότε προσελθόντες οἱ μαθηταὶ αὐτοῦ εἶπον αὐτῷ, Οἶδας ὅτι οἱ Φαρισαῖοι ἀκούσαντες τὸν λόγον ἐσκανδαλίσθησαν;"
+      }
     },
     "13": {
-      "verse_number": 13,
-      "sort_number": 13,
-      "text": "[MATHE 15:13]",
-      "word_count": 5,
-      "russian": "Он же сказал в ответ: всякое растение, которое не Отец Мой Небесный насадил, искоренится;",
-      "greek": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Πᾶσα φυτεία, ἣν οὐκ ἐφύτευσεν ὁ πατήρ μου ὁ οὐράνιος, ἐκριζωθήσεται.",
-      "latin": "At ille respondens ait: Omnis plantatio, quam non plantavit Pater meus cælestis, eradicabitur."
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "At ille respondens ait: Omnis plantatio, quam non plantavit Pater meus cælestis, eradicabitur.",
+        "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Πᾶσα φυτεία, ἣν οὐκ ἐφύτευσεν ὁ πατήρ μου ὁ οὐράνιος, ἐκριζωθήσεται.",
+        "SYN": "Он же сказал в ответ: всякое растение, которое не Отец Мой Небесный насадил, искоренится;",
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Πᾶσα φυτεία, ἣν οὐκ ἐφύτευσεν ὁ πατήρ μου ὁ οὐράνιος, ἐκριζωθήσεται."
+      }
     },
     "14": {
-      "verse_number": 14,
-      "sort_number": 14,
-      "text": "[MATHE 15:14]",
-      "word_count": 5,
-      "russian": "оставьте их: они -- слепые вожди слепых; а если слепой ведет слепого, то оба упадут в яму.",
-      "greek": "Ἄφετε αὐτούς· ὁδηγοί εἰσιν τυφλοὶ τυφλῶν· τυφλὸς δὲ τυφλὸν ἐὰν ὁδηγῇ, ἀμφότεροι εἰς βόθυνον πεσοῦνται.",
-      "latin": "Sinite illos: cæci sunt, et duces cæcorum ; cæcus autem si cæco ducatum præstet, ambo in foveam cadunt."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Sinite illos: cæci sunt, et duces cæcorum ; cæcus autem si cæco ducatum præstet, ambo in foveam cadunt.",
+        "LXX": "Ἄφετε αὐτούς· ὁδηγοί εἰσιν τυφλοὶ τυφλῶν· τυφλὸς δὲ τυφλὸν ἐὰν ὁδηγῇ, ἀμφότεροι εἰς βόθυνον πεσοῦνται.",
+        "SYN": "оставьте их: они -- слепые вожди слепых; а если слепой ведет слепого, то оба упадут в яму.",
+        "BYZ": "Ἄφετε αὐτούς· ὁδηγοί εἰσιν τυφλοὶ τυφλῶν· τυφλὸς δὲ τυφλὸν ἐὰν ὁδηγῇ, ἀμφότεροι εἰς βόθυνον πεσοῦνται."
+      }
     },
     "15": {
-      "verse_number": 15,
-      "sort_number": 15,
-      "text": "[MATHE 15:15]",
-      "word_count": 5,
-      "russian": "Петр же, отвечая, сказал Ему: изъясни нам притчу сию.",
-      "greek": "Ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ, Φράσον ἡμῖν τὴν παραβολὴν ταύτην.",
-      "latin": "Respondens autem Petrus dixit ei: Edissere nobis parabolam istam."
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Respondens autem Petrus dixit ei: Edissere nobis parabolam istam.",
+        "LXX": "Ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ, Φράσον ἡμῖν τὴν παραβολὴν ταύτην.",
+        "SYN": "Петр же, отвечая, сказал Ему: изъясни нам притчу сию.",
+        "BYZ": "Ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ, Φράσον ἡμῖν τὴν παραβολὴν ταύτην."
+      }
     },
     "16": {
-      "verse_number": 16,
-      "sort_number": 16,
-      "text": "[MATHE 15:16]",
-      "word_count": 5,
-      "russian": "Иисус сказал: неужели и вы еще не разумеете?",
-      "greek": "Ὁ δὲ Ἰησοῦς εἶπεν, Ἀκμὴν καὶ ὑμεῖς ἀσύνετοί ἐστε;",
-      "latin": "At ille dixit: Adhuc et vos sine intellectu estis ?"
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "At ille dixit: Adhuc et vos sine intellectu estis ?",
+        "LXX": "Ὁ δὲ Ἰησοῦς εἶπεν, Ἀκμὴν καὶ ὑμεῖς ἀσύνετοί ἐστε;",
+        "SYN": "Иисус сказал: неужели и вы еще не разумеете?",
+        "BYZ": "Ὁ δὲ Ἰησοῦς εἶπεν, Ἀκμὴν καὶ ὑμεῖς ἀσύνετοί ἐστε;"
+      }
     },
     "17": {
-      "verse_number": 17,
-      "sort_number": 17,
-      "text": "[MATHE 15:17]",
-      "word_count": 5,
-      "russian": "еще ли не понимаете, что все, входящее в уста, проходит в чрево и извергается вон?",
-      "greek": "Οὔπω νοεῖτε ὅτι πᾶν τὸ εἰσπορευόμενον εἰς τὸ στόμα εἰς τὴν κοιλίαν χωρεῖ, καὶ εἰς ἀφεδρῶνα ἐκβάλλεται;",
-      "latin": "Non intelligitis quia omne quod in os intrat, in ventrem vadit, et in secessum emittitur ?"
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Non intelligitis quia omne quod in os intrat, in ventrem vadit, et in secessum emittitur ?",
+        "LXX": "Οὔπω νοεῖτε ὅτι πᾶν τὸ εἰσπορευόμενον εἰς τὸ στόμα εἰς τὴν κοιλίαν χωρεῖ, καὶ εἰς ἀφεδρῶνα ἐκβάλλεται;",
+        "SYN": "еще ли не понимаете, что все, входящее в уста, проходит в чрево и извергается вон?",
+        "BYZ": "Οὔπω νοεῖτε ὅτι πᾶν τὸ εἰσπορευόμενον εἰς τὸ στόμα εἰς τὴν κοιλίαν χωρεῖ, καὶ εἰς ἀφεδρῶνα ἐκβάλλεται;"
+      }
     },
     "18": {
-      "verse_number": 18,
-      "sort_number": 18,
-      "text": "[MATHE 15:18]",
-      "word_count": 5,
-      "russian": "а исходящее из уст -- из сердца исходит -- сие оскверняет человека,",
-      "greek": "Τὰ δὲ ἐκπορευόμενα ἐκ τοῦ στόματος ἐκ τῆς καρδίας ἐξέρχεται, κἀκεῖνα κοινοῖ τὸν ἄνθρωπον.",
-      "latin": "Quæ autem procedunt de ore, de corde exeunt, et ea coinquinant hominem:"
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Quæ autem procedunt de ore, de corde exeunt, et ea coinquinant hominem:",
+        "LXX": "Τὰ δὲ ἐκπορευόμενα ἐκ τοῦ στόματος ἐκ τῆς καρδίας ἐξέρχεται, κἀκεῖνα κοινοῖ τὸν ἄνθρωπον.",
+        "SYN": "а исходящее из уст -- из сердца исходит -- сие оскверняет человека,",
+        "BYZ": "Τὰ δὲ ἐκπορευόμενα ἐκ τοῦ στόματος ἐκ τῆς καρδίας ἐξέρχεται, κἀκεῖνα κοινοῖ τὸν ἄνθρωπον."
+      }
     },
     "19": {
-      "verse_number": 19,
-      "sort_number": 19,
-      "text": "[MATHE 15:19]",
-      "word_count": 5,
-      "russian": "ибо из сердца исходят злые помыслы, убийства, прелюбодеяния, любодеяния, кражи, лжесвидетельства, хуления --",
-      "greek": "Ἐκ γὰρ τῆς καρδίας ἐξέρχονται διαλογισμοὶ πονηροί, φόνοι, μοιχεῖαι, πορνεῖαι, κλοπαί, ψευδομαρτυρίαι, βλασφημίαι·",
-      "latin": "de corde enim exeunt cogitationes malæ, homicidia, adulteria, fornicationes, furta, falsa testimonia, blasphemiæ:"
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "de corde enim exeunt cogitationes malæ, homicidia, adulteria, fornicationes, furta, falsa testimonia, blasphemiæ:",
+        "LXX": "Ἐκ γὰρ τῆς καρδίας ἐξέρχονται διαλογισμοὶ πονηροί, φόνοι, μοιχεῖαι, πορνεῖαι, κλοπαί, ψευδομαρτυρίαι, βλασφημίαι·",
+        "SYN": "ибо из сердца исходят злые помыслы, убийства, прелюбодеяния, любодеяния, кражи, лжесвидетельства, хуления --",
+        "BYZ": "Ἐκ γὰρ τῆς καρδίας ἐξέρχονται διαλογισμοὶ πονηροί, φόνοι, μοιχεῖαι, πορνεῖαι, κλοπαί, ψευδομαρτυρίαι, βλασφημίαι·"
+      }
     },
     "20": {
-      "verse_number": 20,
-      "sort_number": 20,
-      "text": "[MATHE 15:20]",
-      "word_count": 5,
-      "russian": "это оскверняет человека; а есть неумытыми руками -- не оскверняет человека.",
-      "greek": "ταῦτά ἐστιν τὰ κοινοῦντα τὸν ἄνθρωπον· τὸ δὲ ἀνίπτοις χερσὶν φαγεῖν οὐ κοινοῖ τὸν ἄνθρωπον.",
-      "latin": "hæc sunt, quæ coinquinant hominem. Non lotis autem manibus manducare, non coinquinat hominem."
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "hæc sunt, quæ coinquinant hominem. Non lotis autem manibus manducare, non coinquinat hominem.",
+        "LXX": "ταῦτά ἐστιν τὰ κοινοῦντα τὸν ἄνθρωπον· τὸ δὲ ἀνίπτοις χερσὶν φαγεῖν οὐ κοινοῖ τὸν ἄνθρωπον.",
+        "SYN": "это оскверняет человека; а есть неумытыми руками -- не оскверняет человека.",
+        "BYZ": "ταῦτά ἐστιν τὰ κοινοῦντα τὸν ἄνθρωπον· τὸ δὲ ἀνίπτοις χερσὶν φαγεῖν οὐ κοινοῖ τὸν ἄνθρωπον."
+      }
     },
     "21": {
-      "verse_number": 21,
-      "sort_number": 21,
-      "text": "[MATHE 15:21]",
-      "word_count": 5,
-      "russian": "И, выйдя оттуда, Иисус удалился в страны Тирские и Сидонские.",
-      "greek": "Καὶ ἐξελθὼν ἐκεῖθεν ὁ Ἰησοῦς ἀνεχώρησεν εἰς τὰ μέρη Τύρου καὶ Σιδῶνος.",
-      "latin": "Et egressus inde Jesus secessit in partes Tyri et Sidonis."
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Et egressus inde Jesus secessit in partes Tyri et Sidonis.",
+        "LXX": "Καὶ ἐξελθὼν ἐκεῖθεν ὁ Ἰησοῦς ἀνεχώρησεν εἰς τὰ μέρη Τύρου καὶ Σιδῶνος.",
+        "SYN": "И, выйдя оттуда, Иисус удалился в страны Тирские и Сидонские.",
+        "BYZ": "Καὶ ἐξελθὼν ἐκεῖθεν ὁ Ἰησοῦς ἀνεχώρησεν εἰς τὰ μέρη Τύρου καὶ Σιδῶνος."
+      }
     },
     "22": {
-      "verse_number": 22,
-      "sort_number": 22,
-      "text": "[MATHE 15:22]",
-      "word_count": 5,
-      "russian": "И вот, женщина Хананеянка, выйдя из тех мест, кричала Ему: помилуй меня, Господи, сын Давидов, дочь моя жестоко беснуется.",
-      "greek": "Καὶ ἰδού, γυνὴ Χαναναία ἀπὸ τῶν ὁρίων ἐκείνων ἐξελθοῦσα ἐκραύγασεν αὐτῷ, λέγουσα, Ἐλέησόν με, κύριε, υἱὲ Δαυίδ· ἡ θυγάτηρ μου κακῶς δαιμονίζεται.",
-      "latin": "Et ecce mulier chananæa a finibus illis egressa clamavit, dicens ei: Miserere mei, Domine fili David: filia mea male a dæmonio vexatur."
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Et ecce mulier chananæa a finibus illis egressa clamavit, dicens ei: Miserere mei, Domine fili David: filia mea male a dæmonio vexatur.",
+        "LXX": "Καὶ ἰδού, γυνὴ Χαναναία ἀπὸ τῶν ὁρίων ἐκείνων ἐξελθοῦσα ἐκραύγασεν αὐτῷ, λέγουσα, Ἐλέησόν με, κύριε, υἱὲ Δαυίδ· ἡ θυγάτηρ μου κακῶς δαιμονίζεται.",
+        "SYN": "И вот, женщина Хананеянка, выйдя из тех мест, кричала Ему: помилуй меня, Господи, сын Давидов, дочь моя жестоко беснуется.",
+        "BYZ": "Καὶ ἰδού, γυνὴ Χαναναία ἀπὸ τῶν ὁρίων ἐκείνων ἐξελθοῦσα ἐκραύγασεν αὐτῷ, λέγουσα, Ἐλέησόν με, κύριε, υἱὲ Δαυίδ· ἡ θυγάτηρ μου κακῶς δαιμονίζεται."
+      }
     },
     "23": {
-      "verse_number": 23,
-      "sort_number": 23,
-      "text": "[MATHE 15:23]",
-      "word_count": 5,
-      "russian": "Но Он не отвечал ей ни слова. И ученики Его, приступив, просили Его: отпусти ее, потому что кричит за нами.",
-      "greek": "Ὁ δὲ οὐκ ἀπεκρίθη αὐτῇ λόγον. Καὶ προσελθόντες οἱ μαθηταὶ αὐτοῦ ἠρώτων αὐτόν, λέγοντες, Ἀπόλυσον αὐτήν, ὅτι κράζει ὄπισθεν ἡμῶν.",
-      "latin": "Qui non respondit ei verbum. Et accedentes discipuli ejus rogabant eum dicentes: Dimitte eam: quia clamat post nos."
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "Qui non respondit ei verbum. Et accedentes discipuli ejus rogabant eum dicentes: Dimitte eam: quia clamat post nos.",
+        "LXX": "Ὁ δὲ οὐκ ἀπεκρίθη αὐτῇ λόγον. Καὶ προσελθόντες οἱ μαθηταὶ αὐτοῦ ἠρώτων αὐτόν, λέγοντες, Ἀπόλυσον αὐτήν, ὅτι κράζει ὄπισθεν ἡμῶν.",
+        "SYN": "Но Он не отвечал ей ни слова. И ученики Его, приступив, просили Его: отпусти ее, потому что кричит за нами.",
+        "BYZ": "Ὁ δὲ οὐκ ἀπεκρίθη αὐτῇ λόγον. Καὶ προσελθόντες οἱ μαθηταὶ αὐτοῦ ἠρώτων αὐτόν, λέγοντες, Ἀπόλυσον αὐτήν, ὅτι κράζει ὄπισθεν ἡμῶν."
+      }
     },
     "24": {
-      "verse_number": 24,
-      "sort_number": 24,
-      "text": "[MATHE 15:24]",
-      "word_count": 5,
-      "russian": "Он же сказал в ответ: Я послан только к погибшим овцам дома Израилева.",
-      "greek": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Οὐκ ἀπεστάλην εἰ μὴ εἰς τὰ πρόβατα τὰ ἀπολωλότα οἴκου Ἰσραήλ.",
-      "latin": "Ipse autem respondens ait: Non sum missus nisi ad oves, quæ perierunt domus Israël."
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Ipse autem respondens ait: Non sum missus nisi ad oves, quæ perierunt domus Israël.",
+        "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Οὐκ ἀπεστάλην εἰ μὴ εἰς τὰ πρόβατα τὰ ἀπολωλότα οἴκου Ἰσραήλ.",
+        "SYN": "Он же сказал в ответ: Я послан только к погибшим овцам дома Израилева.",
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Οὐκ ἀπεστάλην εἰ μὴ εἰς τὰ πρόβατα τὰ ἀπολωλότα οἴκου Ἰσραήλ."
+      }
     },
     "25": {
-      "verse_number": 25,
-      "sort_number": 25,
-      "text": "[MATHE 15:25]",
-      "word_count": 5,
-      "russian": "А она, подойдя, кланялась Ему и говорила: Господи! помоги мне.",
-      "greek": "Ἡ δὲ ἐλθοῦσα προσεκύνησεν αὐτῷ λέγουσα, Κύριε, βοήθει μοι.",
-      "latin": "At illa venit, et adoravit eum, dicens: Domine, adjuva me."
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "At illa venit, et adoravit eum, dicens: Domine, adjuva me.",
+        "LXX": "Ἡ δὲ ἐλθοῦσα προσεκύνησεν αὐτῷ λέγουσα, Κύριε, βοήθει μοι.",
+        "SYN": "А она, подойдя, кланялась Ему и говорила: Господи! помоги мне.",
+        "BYZ": "Ἡ δὲ ἐλθοῦσα προσεκύνησεν αὐτῷ λέγουσα, Κύριε, βοήθει μοι."
+      }
     },
     "26": {
-      "verse_number": 26,
-      "sort_number": 26,
-      "text": "[MATHE 15:26]",
-      "word_count": 5,
-      "russian": "Он же сказал в ответ: нехорошо взять хлеб у детей и бросить псам.",
-      "greek": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Οὐκ ἔστιν καλὸν λαβεῖν τὸν ἄρτον τῶν τέκνων καὶ βαλεῖν τοῖς κυναρίοις.",
-      "latin": "Qui respondens ait: Non est bonum sumere panem filiorum, et mittere canibus."
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Qui respondens ait: Non est bonum sumere panem filiorum, et mittere canibus.",
+        "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Οὐκ ἔστιν καλὸν λαβεῖν τὸν ἄρτον τῶν τέκνων καὶ βαλεῖν τοῖς κυναρίοις.",
+        "SYN": "Он же сказал в ответ: нехорошо взять хлеб у детей и бросить псам.",
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Οὐκ ἔστιν καλὸν λαβεῖν τὸν ἄρτον τῶν τέκνων καὶ βαλεῖν τοῖς κυναρίοις."
+      }
     },
     "27": {
-      "verse_number": 27,
-      "sort_number": 27,
-      "text": "[MATHE 15:27]",
-      "word_count": 5,
-      "russian": "Она сказала: так, Господи! но и псы едят крохи, которые падают со стола господ их.",
-      "greek": "Ἡ δὲ εἶπεν, Ναί, κύριε· καὶ γὰρ τὰ κυνάρια ἐσθίει ἀπὸ τῶν ψιχίων τῶν πιπτόντων ἀπὸ τῆς τραπέζης τῶν κυρίων αὐτῶν.",
-      "latin": "At illa dixit: Etiam Domine: nam et catelli edunt de micis quæ cadunt de mensa dominorum suorum."
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "At illa dixit: Etiam Domine: nam et catelli edunt de micis quæ cadunt de mensa dominorum suorum.",
+        "LXX": "Ἡ δὲ εἶπεν, Ναί, κύριε· καὶ γὰρ τὰ κυνάρια ἐσθίει ἀπὸ τῶν ψιχίων τῶν πιπτόντων ἀπὸ τῆς τραπέζης τῶν κυρίων αὐτῶν.",
+        "SYN": "Она сказала: так, Господи! но и псы едят крохи, которые падают со стола господ их.",
+        "BYZ": "Ἡ δὲ εἶπεν, Ναί, κύριε· καὶ γὰρ τὰ κυνάρια ἐσθίει ἀπὸ τῶν ψιχίων τῶν πιπτόντων ἀπὸ τῆς τραπέζης τῶν κυρίων αὐτῶν."
+      }
     },
     "28": {
-      "verse_number": 28,
-      "sort_number": 28,
-      "text": "[MATHE 15:28]",
-      "word_count": 5,
-      "russian": "Тогда Иисус сказал ей в ответ: о, женщина! велика вера твоя; да будет тебе по желанию твоему. И исцелилась дочь ее в тот час.",
-      "greek": "Τότε ἀποκριθεὶς ὁ Ἰησοῦς εἶπεν αὐτῇ, Ὦ γύναι, μεγάλη σου ἡ πίστις· γενηθήτω σοι ὡς θέλεις. Καὶ ἰάθη ἡ θυγάτηρ αὐτῆς ἀπὸ τῆς ὥρας ἐκείνης.",
-      "latin": "Tunc respondens Jesus, ait illi: O mulier, magna est fides tua: fiat tibi sicut vis. Et sanata est filia ejus ex illa hora."
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "Tunc respondens Jesus, ait illi: O mulier, magna est fides tua: fiat tibi sicut vis. Et sanata est filia ejus ex illa hora.",
+        "LXX": "Τότε ἀποκριθεὶς ὁ Ἰησοῦς εἶπεν αὐτῇ, Ὦ γύναι, μεγάλη σου ἡ πίστις· γενηθήτω σοι ὡς θέλεις. Καὶ ἰάθη ἡ θυγάτηρ αὐτῆς ἀπὸ τῆς ὥρας ἐκείνης.",
+        "SYN": "Тогда Иисус сказал ей в ответ: о, женщина! велика вера твоя; да будет тебе по желанию твоему. И исцелилась дочь ее в тот час.",
+        "BYZ": "Τότε ἀποκριθεὶς ὁ Ἰησοῦς εἶπεν αὐτῇ, Ὦ γύναι, μεγάλη σου ἡ πίστις· γενηθήτω σοι ὡς θέλεις. Καὶ ἰάθη ἡ θυγάτηρ αὐτῆς ἀπὸ τῆς ὥρας ἐκείνης."
+      }
     },
     "29": {
-      "verse_number": 29,
-      "sort_number": 29,
-      "text": "[MATHE 15:29]",
-      "word_count": 5,
-      "russian": "Перейдя оттуда, пришел Иисус к морю Галилейскому и, взойдя на гору, сел там.",
-      "greek": "Καὶ μεταβὰς ἐκεῖθεν ὁ Ἰησοῦς ἦλθεν παρὰ τὴν θάλασσαν τῆς Γαλιλαίας· καὶ ἀναβὰς εἰς τὸ ὄρος ἐκάθητο ἐκεῖ.",
-      "latin": "Et cum transisset inde Jesus, venit secus mare Galilææ: et ascendens in montem, sedebat ibi."
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "Et cum transisset inde Jesus, venit secus mare Galilææ: et ascendens in montem, sedebat ibi.",
+        "LXX": "Καὶ μεταβὰς ἐκεῖθεν ὁ Ἰησοῦς ἦλθεν παρὰ τὴν θάλασσαν τῆς Γαλιλαίας· καὶ ἀναβὰς εἰς τὸ ὄρος ἐκάθητο ἐκεῖ.",
+        "SYN": "Перейдя оттуда, пришел Иисус к морю Галилейскому и, взойдя на гору, сел там.",
+        "BYZ": "Καὶ μεταβὰς ἐκεῖθεν ὁ Ἰησοῦς ἦλθεν παρὰ τὴν θάλασσαν τῆς Γαλιλαίας· καὶ ἀναβὰς εἰς τὸ ὄρος ἐκάθητο ἐκεῖ."
+      }
     },
     "30": {
-      "verse_number": 30,
-      "sort_number": 30,
-      "text": "[MATHE 15:30]",
-      "word_count": 5,
-      "russian": "И приступило к Нему множество народа, имея с собою хромых, слепых, немых, увечных и иных многих, и повергли их к ногам Иисусовым; и Он исцелил их;",
-      "greek": "Καὶ προσῆλθον αὐτῷ ὄχλοι πολλοί, ἔχοντες μεθ’ ἑαυτῶν χωλούς, τυφλούς, κωφούς, κυλλούς, καὶ ἑτέρους πολλούς, καὶ ἔρριψαν αὐτοὺς παρὰ τοὺς πόδας τοῦ Ἰησοῦ καὶ ἐθεράπευσεν αὐτούς·",
-      "latin": "Et accesserunt ad eum turbæ multæ, habentes secum mutos, cæcos, claudos, debiles, et alios multos: et projecerunt eos ad pedes ejus, et curavit eos,"
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "Et accesserunt ad eum turbæ multæ, habentes secum mutos, cæcos, claudos, debiles, et alios multos: et projecerunt eos ad pedes ejus, et curavit eos,",
+        "LXX": "Καὶ προσῆλθον αὐτῷ ὄχλοι πολλοί, ἔχοντες μεθ’ ἑαυτῶν χωλούς, τυφλούς, κωφούς, κυλλούς, καὶ ἑτέρους πολλούς, καὶ ἔρριψαν αὐτοὺς παρὰ τοὺς πόδας τοῦ Ἰησοῦ καὶ ἐθεράπευσεν αὐτούς·",
+        "SYN": "И приступило к Нему множество народа, имея с собою хромых, слепых, немых, увечных и иных многих, и повергли их к ногам Иисусовым; и Он исцелил их;",
+        "BYZ": "Καὶ προσῆλθον αὐτῷ ὄχλοι πολλοί, ἔχοντες μεθ’ ἑαυτῶν χωλούς, τυφλούς, κωφούς, κυλλούς, καὶ ἑτέρους πολλούς, καὶ ἔρριψαν αὐτοὺς παρὰ τοὺς πόδας τοῦ Ἰησοῦ καὶ ἐθεράπευσεν αὐτούς·"
+      }
     },
     "31": {
-      "verse_number": 31,
-      "sort_number": 31,
-      "text": "[MATHE 15:31]",
-      "word_count": 5,
-      "russian": "так что народ дивился, видя немых говорящими, увечных здоровыми, хромых ходящими и слепых видящими; и прославлял Бога Израилева.",
-      "greek": "ὥστε τοὺς ὄχλους θαυμάσαι, βλέποντας κωφοὺς λαλοῦντας, κυλλοὺς ὑγιεῖς, χωλοὺς περιπατοῦντας, καὶ τυφλοὺς βλέποντας· καὶ ἐδόξασαν τὸν θεὸν Ἰσραήλ.",
-      "latin": "ita ut turbæ mirarentur, videntes mutos loquentes, claudos ambulantes, cæcos videntes: et magnificabant Deum Israël."
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "ita ut turbæ mirarentur, videntes mutos loquentes, claudos ambulantes, cæcos videntes: et magnificabant Deum Israël.",
+        "LXX": "ὥστε τοὺς ὄχλους θαυμάσαι, βλέποντας κωφοὺς λαλοῦντας, κυλλοὺς ὑγιεῖς, χωλοὺς περιπατοῦντας, καὶ τυφλοὺς βλέποντας· καὶ ἐδόξασαν τὸν θεὸν Ἰσραήλ.",
+        "SYN": "так что народ дивился, видя немых говорящими, увечных здоровыми, хромых ходящими и слепых видящими; и прославлял Бога Израилева.",
+        "BYZ": "ὥστε τοὺς ὄχλους θαυμάσαι, βλέποντας κωφοὺς λαλοῦντας, κυλλοὺς ὑγιεῖς, χωλοὺς περιπατοῦντας, καὶ τυφλοὺς βλέποντας· καὶ ἐδόξασαν τὸν θεὸν Ἰσραήλ."
+      }
     },
     "32": {
-      "verse_number": 32,
-      "sort_number": 32,
-      "text": "[MATHE 15:32]",
-      "word_count": 5,
-      "russian": "Иисус же, призвав учеников Своих, сказал им: жаль Мне народа, что уже три дня находятся при Мне, и нечего им есть; отпустить же их неевшими не хочу, чтобы не ослабели в дороге.",
-      "greek": "Ὁ δὲ Ἰησοῦς προσκαλεσάμενος τοὺς μαθητὰς αὐτοῦ εἶπεν, Σπλαγχνίζομαι ἐπὶ τὸν ὄχλον, ὅτι ἤδη ἡμέραι τρεῖς προσμένουσίν μοι, καὶ οὐκ ἔχουσιν τί φάγωσιν· καὶ ἀπολῦσαι αὐτοὺς νήστεις οὐ θέλω, μήποτε ἐκλυθῶσιν ἐν τῇ ὁδῷ.",
-      "latin": "Jesus autem, convocatis discipulis suis, dixit: Misereor turbæ, quia triduo jam perseverant mecum, et non habent quod manducent: et dimittere eos jejunos nolo, ne deficiant in via."
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "Jesus autem, convocatis discipulis suis, dixit: Misereor turbæ, quia triduo jam perseverant mecum, et non habent quod manducent: et dimittere eos jejunos nolo, ne deficiant in via.",
+        "LXX": "Ὁ δὲ Ἰησοῦς προσκαλεσάμενος τοὺς μαθητὰς αὐτοῦ εἶπεν, Σπλαγχνίζομαι ἐπὶ τὸν ὄχλον, ὅτι ἤδη ἡμέραι τρεῖς προσμένουσίν μοι, καὶ οὐκ ἔχουσιν τί φάγωσιν· καὶ ἀπολῦσαι αὐτοὺς νήστεις οὐ θέλω, μήποτε ἐκλυθῶσιν ἐν τῇ ὁδῷ.",
+        "SYN": "Иисус же, призвав учеников Своих, сказал им: жаль Мне народа, что уже три дня находятся при Мне, и нечего им есть; отпустить же их неевшими не хочу, чтобы не ослабели в дороге.",
+        "BYZ": "Ὁ δὲ Ἰησοῦς προσκαλεσάμενος τοὺς μαθητὰς αὐτοῦ εἶπεν, Σπλαγχνίζομαι ἐπὶ τὸν ὄχλον, ὅτι ἤδη ἡμέραι τρεῖς προσμένουσίν μοι, καὶ οὐκ ἔχουσιν τί φάγωσιν· καὶ ἀπολῦσαι αὐτοὺς νήστεις οὐ θέλω, μήποτε ἐκλυθῶσιν ἐν τῇ ὁδῷ."
+      }
     },
     "33": {
-      "verse_number": 33,
-      "sort_number": 33,
-      "text": "[MATHE 15:33]",
-      "word_count": 5,
-      "russian": "И говорят Ему ученики Его: откуда нам взять в пустыне столько хлебов, чтобы накормить столько народа?",
-      "greek": "Καὶ λέγουσιν αὐτῷ οἱ μαθηταὶ αὐτοῦ, Πόθεν ἡμῖν ἐν ἐρημίᾳ ἄρτοι τοσοῦτοι, ὥστε χορτάσαι ὄχλον τοσοῦτον;",
-      "latin": "Et dicunt ei discipuli: Unde ergo nobis in deserto panes tantos, ut saturemus turbam tantam ?"
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "Et dicunt ei discipuli: Unde ergo nobis in deserto panes tantos, ut saturemus turbam tantam ?",
+        "LXX": "Καὶ λέγουσιν αὐτῷ οἱ μαθηταὶ αὐτοῦ, Πόθεν ἡμῖν ἐν ἐρημίᾳ ἄρτοι τοσοῦτοι, ὥστε χορτάσαι ὄχλον τοσοῦτον;",
+        "SYN": "И говорят Ему ученики Его: откуда нам взять в пустыне столько хлебов, чтобы накормить столько народа?",
+        "BYZ": "Καὶ λέγουσιν αὐτῷ οἱ μαθηταὶ αὐτοῦ, Πόθεν ἡμῖν ἐν ἐρημίᾳ ἄρτοι τοσοῦτοι, ὥστε χορτάσαι ὄχλον τοσοῦτον;"
+      }
     },
     "34": {
-      "verse_number": 34,
-      "sort_number": 34,
-      "text": "[MATHE 15:34]",
-      "word_count": 5,
-      "russian": "Говорит им Иисус: сколько у вас хлебов? Они же сказали: семь, и немного рыбок.",
-      "greek": "Καὶ λέγει αὐτοῖς ὁ Ἰησοῦς, Πόσους ἄρτους ἔχετε; Οἱ δὲ εἶπον, Ἑπτά, καὶ ὀλίγα ἰχθύδια.",
-      "latin": "Et ait illis Jesus: Quot habetis panes ? At illi dixerunt: Septem, et paucos pisciculos."
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Et ait illis Jesus: Quot habetis panes ? At illi dixerunt: Septem, et paucos pisciculos.",
+        "LXX": "Καὶ λέγει αὐτοῖς ὁ Ἰησοῦς, Πόσους ἄρτους ἔχετε; Οἱ δὲ εἶπον, Ἑπτά, καὶ ὀλίγα ἰχθύδια.",
+        "SYN": "Говорит им Иисус: сколько у вас хлебов? Они же сказали: семь, и немного рыбок.",
+        "BYZ": "Καὶ λέγει αὐτοῖς ὁ Ἰησοῦς, Πόσους ἄρτους ἔχετε; Οἱ δὲ εἶπον, Ἑπτά, καὶ ὀλίγα ἰχθύδια."
+      }
     },
     "35": {
-      "verse_number": 35,
-      "sort_number": 35,
-      "text": "[MATHE 15:35]",
-      "word_count": 5,
-      "russian": "Тогда велел народу возлечь на землю.",
-      "greek": "Καὶ ἐκέλευσεν τοῖς ὄχλοις ἀναπεσεῖν ἐπὶ τὴν γῆν·",
-      "latin": "Et præcepit turbæ ut discumberent super terram."
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "VUL": "Et præcepit turbæ ut discumberent super terram.",
+        "LXX": "Καὶ ἐκέλευσεν τοῖς ὄχλοις ἀναπεσεῖν ἐπὶ τὴν γῆν·",
+        "SYN": "Тогда велел народу возлечь на землю.",
+        "BYZ": "Καὶ ἐκέλευσεν τοῖς ὄχλοις ἀναπεσεῖν ἐπὶ τὴν γῆν·"
+      }
     },
     "36": {
-      "verse_number": 36,
-      "sort_number": 36,
-      "text": "[MATHE 15:36]",
-      "word_count": 5,
-      "russian": "И, взяв семь хлебов и рыбы, воздал благодарение, преломил и дал ученикам Своим, а ученики народу.",
-      "greek": "καὶ λαβὼν τοὺς ἑπτὰ ἄρτους καὶ τοὺς ἰχθύας, εὐχαριστήσας ἔκλασεν, καὶ ἔδωκεν τοῖς μαθηταῖς αὐτοῦ, οἱ δὲ μαθηταὶ τῷ ὄχλῳ.",
-      "latin": "Et accipiens septem panes, et pisces, et gratias agens, fregit, et dedit discipulis suis, et discipuli dederunt populo."
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "VUL": "Et accipiens septem panes, et pisces, et gratias agens, fregit, et dedit discipulis suis, et discipuli dederunt populo.",
+        "LXX": "καὶ λαβὼν τοὺς ἑπτὰ ἄρτους καὶ τοὺς ἰχθύας, εὐχαριστήσας ἔκλασεν, καὶ ἔδωκεν τοῖς μαθηταῖς αὐτοῦ, οἱ δὲ μαθηταὶ τῷ ὄχλῳ.",
+        "SYN": "И, взяв семь хлебов и рыбы, воздал благодарение, преломил и дал ученикам Своим, а ученики народу.",
+        "BYZ": "καὶ λαβὼν τοὺς ἑπτὰ ἄρτους καὶ τοὺς ἰχθύας, εὐχαριστήσας ἔκλασεν, καὶ ἔδωκεν τοῖς μαθηταῖς αὐτοῦ, οἱ δὲ μαθηταὶ τῷ ὄχλῳ."
+      }
     },
     "37": {
-      "verse_number": 37,
-      "sort_number": 37,
-      "text": "[MATHE 15:37]",
-      "word_count": 5,
-      "russian": "И ели все и насытились; и набрали оставшихся кусков семь корзин полных,",
-      "greek": "Καὶ ἔφαγον πάντες καὶ ἐχορτάσθησαν· καὶ ἦραν τὸ περισσεῦον τῶν κλασμάτων, ἑπτὰ σπυρίδας πλήρεις.",
-      "latin": "Et comederunt omnes, et saturati sunt. Et quod superfuit de fragmentis, tulerunt septem sportas plenas."
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "VUL": "Et comederunt omnes, et saturati sunt. Et quod superfuit de fragmentis, tulerunt septem sportas plenas.",
+        "LXX": "Καὶ ἔφαγον πάντες καὶ ἐχορτάσθησαν· καὶ ἦραν τὸ περισσεῦον τῶν κλασμάτων, ἑπτὰ σπυρίδας πλήρεις.",
+        "SYN": "И ели все и насытились; и набрали оставшихся кусков семь корзин полных,",
+        "BYZ": "Καὶ ἔφαγον πάντες καὶ ἐχορτάσθησαν· καὶ ἦραν τὸ περισσεῦον τῶν κλασμάτων, ἑπτὰ σπυρίδας πλήρεις."
+      }
     },
     "38": {
-      "verse_number": 38,
-      "sort_number": 38,
-      "text": "[MATHE 15:38]",
-      "word_count": 5,
-      "russian": "а евших было четыре тысячи человек, кроме женщин и детей.",
-      "greek": "Οἱ δὲ ἐσθίοντες ἦσαν τετρακισχίλιοι ἄνδρες, χωρὶς γυναικῶν καὶ παιδίων.",
-      "latin": "Erant autem qui manducaverunt quatuor millia hominum, extra parvulos et mulieres."
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "VUL": "Erant autem qui manducaverunt quatuor millia hominum, extra parvulos et mulieres.",
+        "LXX": "Οἱ δὲ ἐσθίοντες ἦσαν τετρακισχίλιοι ἄνδρες, χωρὶς γυναικῶν καὶ παιδίων.",
+        "SYN": "а евших было четыре тысячи человек, кроме женщин и детей.",
+        "BYZ": "Οἱ δὲ ἐσθίοντες ἦσαν τετρακισχίλιοι ἄνδρες, χωρὶς γυναικῶν καὶ παιδίων."
+      }
     },
     "39": {
-      "verse_number": 39,
-      "sort_number": 39,
-      "text": "[MATHE 15:39]",
-      "word_count": 5,
-      "russian": "И, отпустив народ, Он вошел в лодку и прибыл в пределы Магдалинские.",
-      "greek": "Καὶ ἀπολύσας τοὺς ὄχλους ἐνέβη εἰς τὸ πλοῖον, καὶ ἦλθεν εἰς τὰ ὅρια Μαγδαλά.",
-      "latin": "Et, dimissa turba, ascendit in naviculam: et venit in fines Magedan."
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "VUL": "Et, dimissa turba, ascendit in naviculam: et venit in fines Magedan.",
+        "LXX": "Καὶ ἀπολύσας τοὺς ὄχλους ἐνέβη εἰς τὸ πλοῖον, καὶ ἦλθεν εἰς τὰ ὅρια Μαγδαλά.",
+        "SYN": "И, отпустив народ, Он вошел в лодку и прибыл в пределы Магдалинские.",
+        "BYZ": "Καὶ ἀπολύσας τοὺς ὄχλους ἐνέβη εἰς τὸ πλοῖον, καὶ ἦλθεν εἰς τὰ ὅρια Μαγδαλά."
+      }
     }
   }
 }

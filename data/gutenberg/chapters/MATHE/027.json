@@ -1,607 +1,939 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "MATHE_027",
-  "chapter_key": "27",
-  "chapter_number": 27,
-  "sort_number": 27,
-  "name": "27",
   "book_key": "MATHE",
+  "sequence": 27,
+  "chapter_in": {
+    "MT": 27,
+    "VUL": 27,
+    "LXX": 27
+  },
   "testament": "Novum_Testamentum",
   "section": "Evangelia",
-  "verse_count": 66,
   "verses": {
     "1": {
-      "verse_number": 1,
-      "sort_number": 1,
-      "text": "[MATHE 27:1]",
-      "word_count": 5,
-      "russian": "Когда же настало утро, все первосвященники и старейшины народа имели совещание об Иисусе, чтобы предать Его смерти;",
-      "greek": "Πρωΐας δὲ γενομένης, συμβούλιον ἔλαβον πάντες οἱ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ κατὰ τοῦ Ἰησοῦ, ὥστε θανατῶσαι αὐτόν·",
-      "latin": "Mane autem facto, consilium inierunt omnes principes sacerdotum et seniores populi adversus Jesum, ut eum morti traderent."
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "Mane autem facto, consilium inierunt omnes principes sacerdotum et seniores populi adversus Jesum, ut eum morti traderent.",
+        "LXX": "Πρωΐας δὲ γενομένης, συμβούλιον ἔλαβον πάντες οἱ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ κατὰ τοῦ Ἰησοῦ, ὥστε θανατῶσαι αὐτόν·",
+        "SYN": "Когда же настало утро, все первосвященники и старейшины народа имели совещание об Иисусе, чтобы предать Его смерти;",
+        "BYZ": "Πρωΐας δὲ γενομένης, συμβούλιον ἔλαβον πάντες οἱ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ κατὰ τοῦ Ἰησοῦ, ὥστε θανατῶσαι αὐτόν·"
+      }
     },
     "2": {
-      "verse_number": 2,
-      "sort_number": 2,
-      "text": "[MATHE 27:2]",
-      "word_count": 5,
-      "russian": "и, связав Его, отвели и предали Его Понтию Пилату, правителю.",
-      "greek": "καὶ δήσαντες αὐτὸν ἀπήγαγον καὶ παρέδωκαν αὐτὸν Ποντίῳ Πιλάτῳ τῷ ἡγεμόνι.",
-      "latin": "Et vinctum adduxerunt eum, et tradiderunt Pontio Pilato præsidi."
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "Et vinctum adduxerunt eum, et tradiderunt Pontio Pilato præsidi.",
+        "LXX": "καὶ δήσαντες αὐτὸν ἀπήγαγον καὶ παρέδωκαν αὐτὸν Ποντίῳ Πιλάτῳ τῷ ἡγεμόνι.",
+        "SYN": "и, связав Его, отвели и предали Его Понтию Пилату, правителю.",
+        "BYZ": "καὶ δήσαντες αὐτὸν ἀπήγαγον καὶ παρέδωκαν αὐτὸν Ποντίῳ Πιλάτῳ τῷ ἡγεμόνι."
+      }
     },
     "3": {
-      "verse_number": 3,
-      "sort_number": 3,
-      "text": "[MATHE 27:3]",
-      "word_count": 5,
-      "russian": "Тогда Иуда, предавший Его, увидев, что Он осужден, и, раскаявшись, возвратил тридцать сребренников первосвященникам и старейшинам,",
-      "greek": "Τότε ἰδὼν Ἰούδας ὁ παραδιδοὺς αὐτὸν ὅτι κατεκρίθη, μεταμεληθεὶς ἀπέστρεψεν τὰ τριάκοντα ἀργύρια τοῖς ἀρχιερεῦσιν καὶ τοῖς πρεσβυτέροις,",
-      "latin": "Tunc videns Judas, qui eum tradidit, quod damnatus esset, pnitentia ductus, retulit triginta argenteos principibus sacerdotum, et senioribus,"
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "Tunc videns Judas, qui eum tradidit, quod damnatus esset, pnitentia ductus, retulit triginta argenteos principibus sacerdotum, et senioribus,",
+        "LXX": "Τότε ἰδὼν Ἰούδας ὁ παραδιδοὺς αὐτὸν ὅτι κατεκρίθη, μεταμεληθεὶς ἀπέστρεψεν τὰ τριάκοντα ἀργύρια τοῖς ἀρχιερεῦσιν καὶ τοῖς πρεσβυτέροις,",
+        "SYN": "Тогда Иуда, предавший Его, увидев, что Он осужден, и, раскаявшись, возвратил тридцать сребренников первосвященникам и старейшинам,",
+        "BYZ": "Τότε ἰδὼν Ἰούδας ὁ παραδιδοὺς αὐτὸν ὅτι κατεκρίθη, μεταμεληθεὶς ἀπέστρεψεν τὰ τριάκοντα ἀργύρια τοῖς ἀρχιερεῦσιν καὶ τοῖς πρεσβυτέροις,"
+      }
     },
     "4": {
-      "verse_number": 4,
-      "sort_number": 4,
-      "text": "[MATHE 27:4]",
-      "word_count": 5,
-      "russian": "говоря: согрешил я, предав кровь невинную. Они же сказали ему: что нам до того? смотри сам.",
-      "greek": "λέγων, Ἥμαρτον παραδοὺς αἷμα ἀθῷον. Οἱ δὲ εἶπον, Τί πρὸς ἡμᾶς; Σὺ ὄψει.",
-      "latin": "dicens: Peccavi, tradens sanguinem justum. At illi dixerunt: Quid ad nos ? tu videris."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "dicens: Peccavi, tradens sanguinem justum. At illi dixerunt: Quid ad nos ? tu videris.",
+        "LXX": "λέγων, Ἥμαρτον παραδοὺς αἷμα ἀθῷον. Οἱ δὲ εἶπον, Τί πρὸς ἡμᾶς; Σὺ ὄψει.",
+        "SYN": "говоря: согрешил я, предав кровь невинную. Они же сказали ему: что нам до того? смотри сам.",
+        "BYZ": "λέγων, Ἥμαρτον παραδοὺς αἷμα ἀθῷον. Οἱ δὲ εἶπον, Τί πρὸς ἡμᾶς; Σὺ ὄψει."
+      }
     },
     "5": {
-      "verse_number": 5,
-      "sort_number": 5,
-      "text": "[MATHE 27:5]",
-      "word_count": 5,
-      "russian": "И, бросив сребренники в храме, он вышел, пошел и удавился.",
-      "greek": "Καὶ ῥίψας τὰ ἀργύρια ἐν τῷ ναῷ, ἀνεχώρησεν· καὶ ἀπελθὼν ἀπήγξατο.",
-      "latin": "Et projectis argenteis in templo, recessit: et abiens laqueo se suspendit."
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Et projectis argenteis in templo, recessit: et abiens laqueo se suspendit.",
+        "LXX": "Καὶ ῥίψας τὰ ἀργύρια ἐν τῷ ναῷ, ἀνεχώρησεν· καὶ ἀπελθὼν ἀπήγξατο.",
+        "SYN": "И, бросив сребренники в храме, он вышел, пошел и удавился.",
+        "BYZ": "Καὶ ῥίψας τὰ ἀργύρια ἐν τῷ ναῷ, ἀνεχώρησεν· καὶ ἀπελθὼν ἀπήγξατο."
+      }
     },
     "6": {
-      "verse_number": 6,
-      "sort_number": 6,
-      "text": "[MATHE 27:6]",
-      "word_count": 5,
-      "russian": "Первосвященники, взяв сребренники, сказали: непозволительно положить их в сокровищницу церковную, потому что это цена крови.",
-      "greek": "Οἱ δὲ ἀρχιερεῖς λαβόντες τὰ ἀργύρια εἶπον, Οὐκ ἔξεστιν βαλεῖν αὐτὰ εἰς τὸν κορβανᾶν, ἐπεὶ τιμὴ αἵματός ἐστιν.",
-      "latin": "Principes autem sacerdotum, acceptis argenteis, dixerunt: Non licet eos mittere in corbonam: quia pretium sanguinis est."
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "Principes autem sacerdotum, acceptis argenteis, dixerunt: Non licet eos mittere in corbonam: quia pretium sanguinis est.",
+        "LXX": "Οἱ δὲ ἀρχιερεῖς λαβόντες τὰ ἀργύρια εἶπον, Οὐκ ἔξεστιν βαλεῖν αὐτὰ εἰς τὸν κορβανᾶν, ἐπεὶ τιμὴ αἵματός ἐστιν.",
+        "SYN": "Первосвященники, взяв сребренники, сказали: непозволительно положить их в сокровищницу церковную, потому что это цена крови.",
+        "BYZ": "Οἱ δὲ ἀρχιερεῖς λαβόντες τὰ ἀργύρια εἶπον, Οὐκ ἔξεστιν βαλεῖν αὐτὰ εἰς τὸν κορβανᾶν, ἐπεὶ τιμὴ αἵματός ἐστιν."
+      }
     },
     "7": {
-      "verse_number": 7,
-      "sort_number": 7,
-      "text": "[MATHE 27:7]",
-      "word_count": 5,
-      "russian": "Сделав же совещание, купили на них землю горшечника, для погребения странников;",
-      "greek": "Συμβούλιον δὲ λαβόντες ἠγόρασαν ἐξ αὐτῶν τὸν ἀγρὸν τοῦ κεραμέως, εἰς ταφὴν τοῖς ξένοις.",
-      "latin": "Consilio autem inito, emerunt ex illis agrum figuli, in sepulturam peregrinorum."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Consilio autem inito, emerunt ex illis agrum figuli, in sepulturam peregrinorum.",
+        "LXX": "Συμβούλιον δὲ λαβόντες ἠγόρασαν ἐξ αὐτῶν τὸν ἀγρὸν τοῦ κεραμέως, εἰς ταφὴν τοῖς ξένοις.",
+        "SYN": "Сделав же совещание, купили на них землю горшечника, для погребения странников;",
+        "BYZ": "Συμβούλιον δὲ λαβόντες ἠγόρασαν ἐξ αὐτῶν τὸν ἀγρὸν τοῦ κεραμέως, εἰς ταφὴν τοῖς ξένοις."
+      }
     },
     "8": {
-      "verse_number": 8,
-      "sort_number": 8,
-      "text": "[MATHE 27:8]",
-      "word_count": 5,
-      "russian": "посему и называется земля та \"землею крови\" до сего дня.",
-      "greek": "Διὸ ἐκλήθη ὁ ἀγρὸς ἐκεῖνος Ἀγρὸς Αἵματος, ἕως τῆς σήμερον.",
-      "latin": "Propter hoc vocatus est ager ille, Haceldama, hoc est, Ager sanguinis, usque in hodiernum diem."
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Propter hoc vocatus est ager ille, Haceldama, hoc est, Ager sanguinis, usque in hodiernum diem.",
+        "LXX": "Διὸ ἐκλήθη ὁ ἀγρὸς ἐκεῖνος Ἀγρὸς Αἵματος, ἕως τῆς σήμερον.",
+        "SYN": "посему и называется земля та \"землею крови\" до сего дня.",
+        "BYZ": "Διὸ ἐκλήθη ὁ ἀγρὸς ἐκεῖνος Ἀγρὸς Αἵματος, ἕως τῆς σήμερον."
+      }
     },
     "9": {
-      "verse_number": 9,
-      "sort_number": 9,
-      "text": "[MATHE 27:9]",
-      "word_count": 5,
-      "russian": "Тогда сбылось реченное через пророка Иеремию, который говорит: и взяли тридцать сребренников, цену Оцененного, Которого оценили сыны Израиля,",
-      "greek": "Τότε ἐπληρώθη τὸ ῥηθὲν διὰ Ἰερεμίου τοῦ προφήτου, λέγοντος, Καὶ ἔλαβον τὰ τριάκοντα ἀργύρια, τὴν τιμὴν τοῦ τετιμημένου, ὃν ἐτιμήσαντο ἀπὸ υἱῶν Ἰσραήλ·",
-      "latin": "Tunc impletum est quod dictum est per Jeremiam prophetam, dicentem: Et acceperunt triginta argenteos pretium appretiati, quem appretiaverunt a filiis Israël:"
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "Tunc impletum est quod dictum est per Jeremiam prophetam, dicentem: Et acceperunt triginta argenteos pretium appretiati, quem appretiaverunt a filiis Israël:",
+        "LXX": "Τότε ἐπληρώθη τὸ ῥηθὲν διὰ Ἰερεμίου τοῦ προφήτου, λέγοντος, Καὶ ἔλαβον τὰ τριάκοντα ἀργύρια, τὴν τιμὴν τοῦ τετιμημένου, ὃν ἐτιμήσαντο ἀπὸ υἱῶν Ἰσραήλ·",
+        "SYN": "Тогда сбылось реченное через пророка Иеремию, который говорит: и взяли тридцать сребренников, цену Оцененного, Которого оценили сыны Израиля,",
+        "BYZ": "Τότε ἐπληρώθη τὸ ῥηθὲν διὰ Ἰερεμίου τοῦ προφήτου, λέγοντος, Καὶ ἔλαβον τὰ τριάκοντα ἀργύρια, τὴν τιμὴν τοῦ τετιμημένου, ὃν ἐτιμήσαντο ἀπὸ υἱῶν Ἰσραήλ·"
+      }
     },
     "10": {
-      "verse_number": 10,
-      "sort_number": 10,
-      "text": "[MATHE 27:10]",
-      "word_count": 5,
-      "russian": "и дали их за землю горшечника, как сказал мне Господь.",
-      "greek": "καὶ ἔδωκαν αὐτὰ εἰς τὸν ἀγρὸν τοῦ κεραμέως, καθὰ συνέταξέν μοι κύριος.",
-      "latin": "et dederunt eos in agrum figuli, sicut constituit mihi Dominus."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "et dederunt eos in agrum figuli, sicut constituit mihi Dominus.",
+        "LXX": "καὶ ἔδωκαν αὐτὰ εἰς τὸν ἀγρὸν τοῦ κεραμέως, καθὰ συνέταξέν μοι κύριος.",
+        "SYN": "и дали их за землю горшечника, как сказал мне Господь.",
+        "BYZ": "καὶ ἔδωκαν αὐτὰ εἰς τὸν ἀγρὸν τοῦ κεραμέως, καθὰ συνέταξέν μοι κύριος."
+      }
     },
     "11": {
-      "verse_number": 11,
-      "sort_number": 11,
-      "text": "[MATHE 27:11]",
-      "word_count": 5,
-      "russian": "Иисус же стал пред правителем. И спросил Его правитель: Ты Царь Иудейский? Иисус сказал ему: ты говоришь.",
-      "greek": "Ὁ δὲ Ἰησοῦς ἔστη ἔμπροσθεν τοῦ ἡγεμόνος· καὶ ἐπηρώτησεν αὐτὸν ὁ ἡγεμών, λέγων, Σὺ εἶ ὁ βασιλεὺς τῶν Ἰουδαίων; Ὁ δὲ Ἰησοῦς ἔφη αὐτῷ, Σὺ λέγεις.",
-      "latin": "Jesus autem stetit ante præsidem, et interrogavit eum præses, dicens: Tu es rex Judæorum ? Dicit illi Jesus: Tu dicis."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Jesus autem stetit ante præsidem, et interrogavit eum præses, dicens: Tu es rex Judæorum ? Dicit illi Jesus: Tu dicis.",
+        "LXX": "Ὁ δὲ Ἰησοῦς ἔστη ἔμπροσθεν τοῦ ἡγεμόνος· καὶ ἐπηρώτησεν αὐτὸν ὁ ἡγεμών, λέγων, Σὺ εἶ ὁ βασιλεὺς τῶν Ἰουδαίων; Ὁ δὲ Ἰησοῦς ἔφη αὐτῷ, Σὺ λέγεις.",
+        "SYN": "Иисус же стал пред правителем. И спросил Его правитель: Ты Царь Иудейский? Иисус сказал ему: ты говоришь.",
+        "BYZ": "Ὁ δὲ Ἰησοῦς ἔστη ἔμπροσθεν τοῦ ἡγεμόνος· καὶ ἐπηρώτησεν αὐτὸν ὁ ἡγεμών, λέγων, Σὺ εἶ ὁ βασιλεὺς τῶν Ἰουδαίων; Ὁ δὲ Ἰησοῦς ἔφη αὐτῷ, Σὺ λέγεις."
+      }
     },
     "12": {
-      "verse_number": 12,
-      "sort_number": 12,
-      "text": "[MATHE 27:12]",
-      "word_count": 5,
-      "russian": "И когда обвиняли Его первосвященники и старейшины, Он ничего не отвечал.",
-      "greek": "Καὶ ἐν τῷ κατηγορεῖσθαι αὐτὸν ὑπὸ τῶν ἀρχιερέων καὶ τῶν πρεσβυτέρων, οὐδὲν ἀπεκρίνατο.",
-      "latin": "Et cum accusaretur a principibus sacerdotum et senioribus, nihil respondit."
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "Et cum accusaretur a principibus sacerdotum et senioribus, nihil respondit.",
+        "LXX": "Καὶ ἐν τῷ κατηγορεῖσθαι αὐτὸν ὑπὸ τῶν ἀρχιερέων καὶ τῶν πρεσβυτέρων, οὐδὲν ἀπεκρίνατο.",
+        "SYN": "И когда обвиняли Его первосвященники и старейшины, Он ничего не отвечал.",
+        "BYZ": "Καὶ ἐν τῷ κατηγορεῖσθαι αὐτὸν ὑπὸ τῶν ἀρχιερέων καὶ τῶν πρεσβυτέρων, οὐδὲν ἀπεκρίνατο."
+      }
     },
     "13": {
-      "verse_number": 13,
-      "sort_number": 13,
-      "text": "[MATHE 27:13]",
-      "word_count": 5,
-      "russian": "Тогда говорит Ему Пилат: не слышишь, сколько свидетельствуют против Тебя?",
-      "greek": "Τότε λέγει αὐτῷ ὁ Πιλάτος, Οὐκ ἀκούεις πόσα σου καταμαρτυροῦσιν;",
-      "latin": "Tunc dicit illi Pilatus: Non audis quanta adversum te dicunt testimonia ?"
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "Tunc dicit illi Pilatus: Non audis quanta adversum te dicunt testimonia ?",
+        "LXX": "Τότε λέγει αὐτῷ ὁ Πιλάτος, Οὐκ ἀκούεις πόσα σου καταμαρτυροῦσιν;",
+        "SYN": "Тогда говорит Ему Пилат: не слышишь, сколько свидетельствуют против Тебя?",
+        "BYZ": "Τότε λέγει αὐτῷ ὁ Πιλάτος, Οὐκ ἀκούεις πόσα σου καταμαρτυροῦσιν;"
+      }
     },
     "14": {
-      "verse_number": 14,
-      "sort_number": 14,
-      "text": "[MATHE 27:14]",
-      "word_count": 5,
-      "russian": "И не отвечал ему ни на одно слово, так что правитель весьма дивился.",
-      "greek": "Καὶ οὐκ ἀπεκρίθη αὐτῷ πρὸς οὐδὲ ἓν ῥῆμα, ὥστε θαυμάζειν τὸν ἡγεμόνα λίαν.",
-      "latin": "Et non respondit ei ad ullum verbum, ita ut miraretur præses vehementer."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Et non respondit ei ad ullum verbum, ita ut miraretur præses vehementer.",
+        "LXX": "Καὶ οὐκ ἀπεκρίθη αὐτῷ πρὸς οὐδὲ ἓν ῥῆμα, ὥστε θαυμάζειν τὸν ἡγεμόνα λίαν.",
+        "SYN": "И не отвечал ему ни на одно слово, так что правитель весьма дивился.",
+        "BYZ": "Καὶ οὐκ ἀπεκρίθη αὐτῷ πρὸς οὐδὲ ἓν ῥῆμα, ὥστε θαυμάζειν τὸν ἡγεμόνα λίαν."
+      }
     },
     "15": {
-      "verse_number": 15,
-      "sort_number": 15,
-      "text": "[MATHE 27:15]",
-      "word_count": 5,
-      "russian": "На праздник же Пасхи правитель имел обычай отпускать народу одного узника, которого хотели.",
-      "greek": "Κατὰ δὲ ἑορτὴν εἰώθει ὁ ἡγεμὼν ἀπολύειν ἕνα τῷ ὄχλῳ δέσμιον, ὃν ἤθελον.",
-      "latin": "Per diem autem solemnem consueverat præses populo dimittere unum vinctum, quem voluissent:"
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Per diem autem solemnem consueverat præses populo dimittere unum vinctum, quem voluissent:",
+        "LXX": "Κατὰ δὲ ἑορτὴν εἰώθει ὁ ἡγεμὼν ἀπολύειν ἕνα τῷ ὄχλῳ δέσμιον, ὃν ἤθελον.",
+        "SYN": "На праздник же Пасхи правитель имел обычай отпускать народу одного узника, которого хотели.",
+        "BYZ": "Κατὰ δὲ ἑορτὴν εἰώθει ὁ ἡγεμὼν ἀπολύειν ἕνα τῷ ὄχλῳ δέσμιον, ὃν ἤθελον."
+      }
     },
     "16": {
-      "verse_number": 16,
-      "sort_number": 16,
-      "text": "[MATHE 27:16]",
-      "word_count": 5,
-      "russian": "Был тогда у них известный узник, называемый Варавва;",
-      "greek": "Εἶχον δὲ τότε δέσμιον ἐπίσημον, λεγόμενον Βαραββᾶν.",
-      "latin": "habebat autem tunc vinctum insignem, qui dicebatur Barabbas."
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "habebat autem tunc vinctum insignem, qui dicebatur Barabbas.",
+        "LXX": "Εἶχον δὲ τότε δέσμιον ἐπίσημον, λεγόμενον Βαραββᾶν.",
+        "SYN": "Был тогда у них известный узник, называемый Варавва;",
+        "BYZ": "Εἶχον δὲ τότε δέσμιον ἐπίσημον, λεγόμενον Βαραββᾶν."
+      }
     },
     "17": {
-      "verse_number": 17,
-      "sort_number": 17,
-      "text": "[MATHE 27:17]",
-      "word_count": 5,
-      "russian": "итак, когда собрались они, сказал им Пилат: кого хотите, чтобы я отпустил вам: Варавву, или Иисуса, называемого Христом?",
-      "greek": "Συνηγμένων οὖν αὐτῶν, εἶπεν αὐτοῖς ὁ Πιλάτος, Τίνα θέλετε ἀπολύσω ὑμῖν; Βαραββᾶν, ἢ Ἰησοῦν τὸν λεγόμενον χριστόν;",
-      "latin": "Congregatis ergo illis, dixit Pilatus: Quem vultis dimittam vobis: Barabbam, an Jesum, qui dicitur Christus ?"
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Congregatis ergo illis, dixit Pilatus: Quem vultis dimittam vobis: Barabbam, an Jesum, qui dicitur Christus ?",
+        "LXX": "Συνηγμένων οὖν αὐτῶν, εἶπεν αὐτοῖς ὁ Πιλάτος, Τίνα θέλετε ἀπολύσω ὑμῖν; Βαραββᾶν, ἢ Ἰησοῦν τὸν λεγόμενον χριστόν;",
+        "SYN": "итак, когда собрались они, сказал им Пилат: кого хотите, чтобы я отпустил вам: Варавву, или Иисуса, называемого Христом?",
+        "BYZ": "Συνηγμένων οὖν αὐτῶν, εἶπεν αὐτοῖς ὁ Πιλάτος, Τίνα θέλετε ἀπολύσω ὑμῖν; Βαραββᾶν, ἢ Ἰησοῦν τὸν λεγόμενον χριστόν;"
+      }
     },
     "18": {
-      "verse_number": 18,
-      "sort_number": 18,
-      "text": "[MATHE 27:18]",
-      "word_count": 5,
-      "russian": "ибо знал, что предали Его из зависти.",
-      "greek": "ᾜδει γὰρ ὅτι διὰ φθόνον παρέδωκαν αὐτόν.",
-      "latin": "Sciebat enim quod per invidiam tradidissent eum."
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Sciebat enim quod per invidiam tradidissent eum.",
+        "LXX": "ᾜδει γὰρ ὅτι διὰ φθόνον παρέδωκαν αὐτόν.",
+        "SYN": "ибо знал, что предали Его из зависти.",
+        "BYZ": "ᾜδει γὰρ ὅτι διὰ φθόνον παρέδωκαν αὐτόν."
+      }
     },
     "19": {
-      "verse_number": 19,
-      "sort_number": 19,
-      "text": "[MATHE 27:19]",
-      "word_count": 5,
-      "russian": "Между тем, как сидел он на судейском месте, жена его послала ему сказать: не делай ничего Праведнику Тому, потому что я ныне во сне много пострадала за Него.",
-      "greek": "Καθημένου δὲ αὐτοῦ ἐπὶ τοῦ βήματος, ἀπέστειλεν πρὸς αὐτὸν ἡ γυνὴ αὐτοῦ, λέγουσα, Μηδέν σοι καὶ τῷ δικαίῳ ἐκείνῳ· πολλὰ γὰρ ἔπαθον σήμερον κατ’ ὄναρ δι’ αὐτόν.",
-      "latin": "Sedente autem illo pro tribunali, misit ad eum uxor ejus, dicens: Nihil tibi, et justo illi: multa enim passa sum hodie per visum propter eum."
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "Sedente autem illo pro tribunali, misit ad eum uxor ejus, dicens: Nihil tibi, et justo illi: multa enim passa sum hodie per visum propter eum.",
+        "LXX": "Καθημένου δὲ αὐτοῦ ἐπὶ τοῦ βήματος, ἀπέστειλεν πρὸς αὐτὸν ἡ γυνὴ αὐτοῦ, λέγουσα, Μηδέν σοι καὶ τῷ δικαίῳ ἐκείνῳ· πολλὰ γὰρ ἔπαθον σήμερον κατ’ ὄναρ δι’ αὐτόν.",
+        "SYN": "Между тем, как сидел он на судейском месте, жена его послала ему сказать: не делай ничего Праведнику Тому, потому что я ныне во сне много пострадала за Него.",
+        "BYZ": "Καθημένου δὲ αὐτοῦ ἐπὶ τοῦ βήματος, ἀπέστειλεν πρὸς αὐτὸν ἡ γυνὴ αὐτοῦ, λέγουσα, Μηδέν σοι καὶ τῷ δικαίῳ ἐκείνῳ· πολλὰ γὰρ ἔπαθον σήμερον κατ’ ὄναρ δι’ αὐτόν."
+      }
     },
     "20": {
-      "verse_number": 20,
-      "sort_number": 20,
-      "text": "[MATHE 27:20]",
-      "word_count": 5,
-      "russian": "Но первосвященники и старейшины возбудили народ просить Варавву, а Иисуса погубить.",
-      "greek": "Οἱ δὲ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι ἔπεισαν τοὺς ὄχλους ἵνα αἰτήσωνται τὸν Βαραββᾶν, τὸν δὲ Ἰησοῦν ἀπολέσωσιν.",
-      "latin": "Principes autem sacerdotum et seniores persuaserunt populis ut peterent Barabbam, Jesum vero perderent."
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "Principes autem sacerdotum et seniores persuaserunt populis ut peterent Barabbam, Jesum vero perderent.",
+        "LXX": "Οἱ δὲ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι ἔπεισαν τοὺς ὄχλους ἵνα αἰτήσωνται τὸν Βαραββᾶν, τὸν δὲ Ἰησοῦν ἀπολέσωσιν.",
+        "SYN": "Но первосвященники и старейшины возбудили народ просить Варавву, а Иисуса погубить.",
+        "BYZ": "Οἱ δὲ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι ἔπεισαν τοὺς ὄχλους ἵνα αἰτήσωνται τὸν Βαραββᾶν, τὸν δὲ Ἰησοῦν ἀπολέσωσιν."
+      }
     },
     "21": {
-      "verse_number": 21,
-      "sort_number": 21,
-      "text": "[MATHE 27:21]",
-      "word_count": 5,
-      "russian": "Тогда правитель спросил их: кого из двух хотите, чтобы я отпустил вам? Они сказали: Варавву.",
-      "greek": "Ἀποκριθεὶς δὲ ὁ ἡγεμὼν εἶπεν αὐτοῖς, Τίνα θέλετε ἀπὸ τῶν δύο ἀπολύσω ὑμῖν; Οἱ δὲ εἶπον, Βαραββᾶν.",
-      "latin": "Respondens autem præses, ait illis: Quem vultis vobis de duobus dimitti ? At illi dixerunt: Barabbam."
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Respondens autem præses, ait illis: Quem vultis vobis de duobus dimitti ? At illi dixerunt: Barabbam.",
+        "LXX": "Ἀποκριθεὶς δὲ ὁ ἡγεμὼν εἶπεν αὐτοῖς, Τίνα θέλετε ἀπὸ τῶν δύο ἀπολύσω ὑμῖν; Οἱ δὲ εἶπον, Βαραββᾶν.",
+        "SYN": "Тогда правитель спросил их: кого из двух хотите, чтобы я отпустил вам? Они сказали: Варавву.",
+        "BYZ": "Ἀποκριθεὶς δὲ ὁ ἡγεμὼν εἶπεν αὐτοῖς, Τίνα θέλετε ἀπὸ τῶν δύο ἀπολύσω ὑμῖν; Οἱ δὲ εἶπον, Βαραββᾶν."
+      }
     },
     "22": {
-      "verse_number": 22,
-      "sort_number": 22,
-      "text": "[MATHE 27:22]",
-      "word_count": 5,
-      "russian": "Пилат говорит им: что же я сделаю Иисусу, называемому Христом? Говорят ему все: да будет распят.",
-      "greek": "Λέγει αὐτοῖς ὁ Πιλάτος, Τί οὖν ποιήσω Ἰησοῦν τὸν λεγόμενον χριστόν; Λέγουσιν αὐτῷ πάντες, Σταυρωθήτω.",
-      "latin": "Dicit illis Pilatus: Quid igitur faciam de Jesu, qui dicitur Christus ?"
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Dicit illis Pilatus: Quid igitur faciam de Jesu, qui dicitur Christus ?",
+        "LXX": "Λέγει αὐτοῖς ὁ Πιλάτος, Τί οὖν ποιήσω Ἰησοῦν τὸν λεγόμενον χριστόν; Λέγουσιν αὐτῷ πάντες, Σταυρωθήτω.",
+        "SYN": "Пилат говорит им: что же я сделаю Иисусу, называемому Христом? Говорят ему все: да будет распят.",
+        "BYZ": "Λέγει αὐτοῖς ὁ Πιλάτος, Τί οὖν ποιήσω Ἰησοῦν τὸν λεγόμενον χριστόν; Λέγουσιν αὐτῷ πάντες, Σταυρωθήτω."
+      }
     },
     "23": {
-      "verse_number": 23,
-      "sort_number": 23,
-      "text": "[MATHE 27:23]",
-      "word_count": 5,
-      "russian": "Правитель сказал: какое же зло сделал Он? Но они еще сильнее кричали: да будет распят.",
-      "greek": "Ὁ δὲ ἡγεμὼν ἔφη, Τί γὰρ κακὸν ἐποίησεν; Οἱ δὲ περισσῶς ἔκραζον, λέγοντες, Σταυρωθήτω.",
-      "latin": "Dicunt omnes: Crucifigatur. Ait illis præses: Quid enim mali fecit ? At illi magis clamabant dicentes: Crucifigatur."
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "Dicunt omnes: Crucifigatur. Ait illis præses: Quid enim mali fecit ? At illi magis clamabant dicentes: Crucifigatur.",
+        "LXX": "Ὁ δὲ ἡγεμὼν ἔφη, Τί γὰρ κακὸν ἐποίησεν; Οἱ δὲ περισσῶς ἔκραζον, λέγοντες, Σταυρωθήτω.",
+        "SYN": "Правитель сказал: какое же зло сделал Он? Но они еще сильнее кричали: да будет распят.",
+        "BYZ": "Ὁ δὲ ἡγεμὼν ἔφη, Τί γὰρ κακὸν ἐποίησεν; Οἱ δὲ περισσῶς ἔκραζον, λέγοντες, Σταυρωθήτω."
+      }
     },
     "24": {
-      "verse_number": 24,
-      "sort_number": 24,
-      "text": "[MATHE 27:24]",
-      "word_count": 5,
-      "russian": "Пилат, видя, что ничто не помогает, но смятение увеличивается, взял воды и умыл руки перед народом, и сказал: невиновен я в крови Праведника Сего; смотрите вы.",
-      "greek": "Ἰδὼν δὲ ὁ Πιλάτος ὅτι οὐδὲν ὠφελεῖ, ἀλλὰ μᾶλλον θόρυβος γίνεται, λαβὼν ὕδωρ, ἀπενίψατο τὰς χεῖρας ἀπέναντι τοῦ ὄχλου, λέγων, Ἀθῷός εἰμι ἀπὸ τοῦ αἵματος τοῦ δικαίου τούτου· ὑμεῖς ὄψεσθε.",
-      "latin": "Videns autem Pilatus quia nihil proficeret, sed magis tumultus fieret: accepta aqua, lavit manus coram populo, dicens: Innocens ego sum a sanguine justi hujus: vos videritis."
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Videns autem Pilatus quia nihil proficeret, sed magis tumultus fieret: accepta aqua, lavit manus coram populo, dicens: Innocens ego sum a sanguine justi hujus: vos videritis.",
+        "LXX": "Ἰδὼν δὲ ὁ Πιλάτος ὅτι οὐδὲν ὠφελεῖ, ἀλλὰ μᾶλλον θόρυβος γίνεται, λαβὼν ὕδωρ, ἀπενίψατο τὰς χεῖρας ἀπέναντι τοῦ ὄχλου, λέγων, Ἀθῷός εἰμι ἀπὸ τοῦ αἵματος τοῦ δικαίου τούτου· ὑμεῖς ὄψεσθε.",
+        "SYN": "Пилат, видя, что ничто не помогает, но смятение увеличивается, взял воды и умыл руки перед народом, и сказал: невиновен я в крови Праведника Сего; смотрите вы.",
+        "BYZ": "Ἰδὼν δὲ ὁ Πιλάτος ὅτι οὐδὲν ὠφελεῖ, ἀλλὰ μᾶλλον θόρυβος γίνεται, λαβὼν ὕδωρ, ἀπενίψατο τὰς χεῖρας ἀπέναντι τοῦ ὄχλου, λέγων, Ἀθῷός εἰμι ἀπὸ τοῦ αἵματος τοῦ δικαίου τούτου· ὑμεῖς ὄψεσθε."
+      }
     },
     "25": {
-      "verse_number": 25,
-      "sort_number": 25,
-      "text": "[MATHE 27:25]",
-      "word_count": 5,
-      "russian": "И, отвечая, весь народ сказал: кровь Его на нас и на детях наших.",
-      "greek": "Καὶ ἀποκριθεὶς πᾶς ὁ λαὸς εἶπεν, Τὸ αἷμα αὐτοῦ ἐφ’ ἡμᾶς καὶ ἐπὶ τὰ τέκνα ἡμῶν.",
-      "latin": "Et respondens universus populus, dixit: Sanguis ejus super nos, et super filios nostros."
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "Et respondens universus populus, dixit: Sanguis ejus super nos, et super filios nostros.",
+        "LXX": "Καὶ ἀποκριθεὶς πᾶς ὁ λαὸς εἶπεν, Τὸ αἷμα αὐτοῦ ἐφ’ ἡμᾶς καὶ ἐπὶ τὰ τέκνα ἡμῶν.",
+        "SYN": "И, отвечая, весь народ сказал: кровь Его на нас и на детях наших.",
+        "BYZ": "Καὶ ἀποκριθεὶς πᾶς ὁ λαὸς εἶπεν, Τὸ αἷμα αὐτοῦ ἐφ’ ἡμᾶς καὶ ἐπὶ τὰ τέκνα ἡμῶν."
+      }
     },
     "26": {
-      "verse_number": 26,
-      "sort_number": 26,
-      "text": "[MATHE 27:26]",
-      "word_count": 5,
-      "russian": "Тогда отпустил им Варавву, а Иисуса, бив, предал на распятие.",
-      "greek": "Τότε ἀπέλυσεν αὐτοῖς τὸν Βαραββᾶν· τὸν δὲ Ἰησοῦν φραγελλώσας παρέδωκεν ἵνα σταυρωθῇ.",
-      "latin": "Tunc dimisit illis Barabbam: Jesum autem flagellatum tradidit eis ut crucifigeretur."
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Tunc dimisit illis Barabbam: Jesum autem flagellatum tradidit eis ut crucifigeretur.",
+        "LXX": "Τότε ἀπέλυσεν αὐτοῖς τὸν Βαραββᾶν· τὸν δὲ Ἰησοῦν φραγελλώσας παρέδωκεν ἵνα σταυρωθῇ.",
+        "SYN": "Тогда отпустил им Варавву, а Иисуса, бив, предал на распятие.",
+        "BYZ": "Τότε ἀπέλυσεν αὐτοῖς τὸν Βαραββᾶν· τὸν δὲ Ἰησοῦν φραγελλώσας παρέδωκεν ἵνα σταυρωθῇ."
+      }
     },
     "27": {
-      "verse_number": 27,
-      "sort_number": 27,
-      "text": "[MATHE 27:27]",
-      "word_count": 5,
-      "russian": "Тогда воины правителя, взяв Иисуса в преторию, собрали на Него весь полк",
-      "greek": "Τότε οἱ στρατιῶται τοῦ ἡγεμόνος, παραλαβόντες τὸν Ἰησοῦν εἰς τὸ πραιτώριον, συνήγαγον ἐπ’ αὐτὸν ὅλην τὴν σπεῖραν·",
-      "latin": "Tunc milites præsidis suscipientes Jesum in prætorium, congregaverunt ad eum universam cohortem:"
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "Tunc milites præsidis suscipientes Jesum in prætorium, congregaverunt ad eum universam cohortem:",
+        "LXX": "Τότε οἱ στρατιῶται τοῦ ἡγεμόνος, παραλαβόντες τὸν Ἰησοῦν εἰς τὸ πραιτώριον, συνήγαγον ἐπ’ αὐτὸν ὅλην τὴν σπεῖραν·",
+        "SYN": "Тогда воины правителя, взяв Иисуса в преторию, собрали на Него весь полк",
+        "BYZ": "Τότε οἱ στρατιῶται τοῦ ἡγεμόνος, παραλαβόντες τὸν Ἰησοῦν εἰς τὸ πραιτώριον, συνήγαγον ἐπ’ αὐτὸν ὅλην τὴν σπεῖραν·"
+      }
     },
     "28": {
-      "verse_number": 28,
-      "sort_number": 28,
-      "text": "[MATHE 27:28]",
-      "word_count": 5,
-      "russian": "и, раздев Его, надели на Него багряницу;",
-      "greek": "καὶ ἐκδύσαντες αὐτόν, περιέθηκαν αὐτῷ χλαμύδα κοκκίνην.",
-      "latin": "et exuentes eum, chlamydem coccineam circumdederunt ei,"
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "et exuentes eum, chlamydem coccineam circumdederunt ei,",
+        "LXX": "καὶ ἐκδύσαντες αὐτόν, περιέθηκαν αὐτῷ χλαμύδα κοκκίνην.",
+        "SYN": "и, раздев Его, надели на Него багряницу;",
+        "BYZ": "καὶ ἐκδύσαντες αὐτόν, περιέθηκαν αὐτῷ χλαμύδα κοκκίνην."
+      }
     },
     "29": {
-      "verse_number": 29,
-      "sort_number": 29,
-      "text": "[MATHE 27:29]",
-      "word_count": 5,
-      "russian": "и, сплетши венец из терна, возложили Ему на голову и дали Ему в правую руку трость; и, становясь пред Ним на колени, насмехались над Ним, говоря: радуйся, Царь Иудейский!",
-      "greek": "Καὶ πλέξαντες στέφανον ἐξ ἀκανθῶν, ἐπέθηκαν ἐπὶ τὴν κεφαλὴν αὐτοῦ, καὶ κάλαμον ἐπὶ τὴν δεξιὰν αὐτοῦ· καὶ γονυπετήσαντες ἔμπροσθεν αὐτοῦ ἐνέπαιζον αὐτῷ, λέγοντες, Χαῖρε, ὁ βασιλεὺς τῶν Ἰουδαίων·",
-      "latin": "et plectentes coronam de spinis, posuerunt super caput ejus, et arundinem in dextera ejus. Et genu flexo ante eum, illudebant ei, dicentes: Ave rex Judæorum."
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "et plectentes coronam de spinis, posuerunt super caput ejus, et arundinem in dextera ejus. Et genu flexo ante eum, illudebant ei, dicentes: Ave rex Judæorum.",
+        "LXX": "Καὶ πλέξαντες στέφανον ἐξ ἀκανθῶν, ἐπέθηκαν ἐπὶ τὴν κεφαλὴν αὐτοῦ, καὶ κάλαμον ἐπὶ τὴν δεξιὰν αὐτοῦ· καὶ γονυπετήσαντες ἔμπροσθεν αὐτοῦ ἐνέπαιζον αὐτῷ, λέγοντες, Χαῖρε, ὁ βασιλεὺς τῶν Ἰουδαίων·",
+        "SYN": "и, сплетши венец из терна, возложили Ему на голову и дали Ему в правую руку трость; и, становясь пред Ним на колени, насмехались над Ним, говоря: радуйся, Царь Иудейский!",
+        "BYZ": "Καὶ πλέξαντες στέφανον ἐξ ἀκανθῶν, ἐπέθηκαν ἐπὶ τὴν κεφαλὴν αὐτοῦ, καὶ κάλαμον ἐπὶ τὴν δεξιὰν αὐτοῦ· καὶ γονυπετήσαντες ἔμπροσθεν αὐτοῦ ἐνέπαιζον αὐτῷ, λέγοντες, Χαῖρε, ὁ βασιλεὺς τῶν Ἰουδαίων·"
+      }
     },
     "30": {
-      "verse_number": 30,
-      "sort_number": 30,
-      "text": "[MATHE 27:30]",
-      "word_count": 5,
-      "russian": "и плевали на Него и, взяв трость, били Его по голове.",
-      "greek": "καὶ ἐμπτύσαντες εἰς αὐτόν, ἔλαβον τὸν κάλαμον, καὶ ἔτυπτον εἰς τὴν κεφαλὴν αὐτοῦ.",
-      "latin": "Et exspuentes in eum, acceperunt arundinem, et percutiebant caput ejus."
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "Et exspuentes in eum, acceperunt arundinem, et percutiebant caput ejus.",
+        "LXX": "καὶ ἐμπτύσαντες εἰς αὐτόν, ἔλαβον τὸν κάλαμον, καὶ ἔτυπτον εἰς τὴν κεφαλὴν αὐτοῦ.",
+        "SYN": "и плевали на Него и, взяв трость, били Его по голове.",
+        "BYZ": "καὶ ἐμπτύσαντες εἰς αὐτόν, ἔλαβον τὸν κάλαμον, καὶ ἔτυπτον εἰς τὴν κεφαλὴν αὐτοῦ."
+      }
     },
     "31": {
-      "verse_number": 31,
-      "sort_number": 31,
-      "text": "[MATHE 27:31]",
-      "word_count": 5,
-      "russian": "И когда насмеялись над Ним, сняли с Него багряницу, и одели Его в одежды Его, и повели Его на распятие.",
-      "greek": "Καὶ ὅτε ἐνέπαιξαν αὐτῷ, ἐξέδυσαν αὐτὸν τὴν χλαμύδα, καὶ ἐνέδυσαν αὐτὸν τὰ ἱμάτια αὐτοῦ, καὶ ἀπήγαγον αὐτὸν εἰς τὸ σταυρῶσαι.",
-      "latin": "Et postquam illuserunt ei, exuerunt eum chlamyde, et induerunt eum vestimentis ejus, et duxerunt eum ut crucifigerent."
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "Et postquam illuserunt ei, exuerunt eum chlamyde, et induerunt eum vestimentis ejus, et duxerunt eum ut crucifigerent.",
+        "LXX": "Καὶ ὅτε ἐνέπαιξαν αὐτῷ, ἐξέδυσαν αὐτὸν τὴν χλαμύδα, καὶ ἐνέδυσαν αὐτὸν τὰ ἱμάτια αὐτοῦ, καὶ ἀπήγαγον αὐτὸν εἰς τὸ σταυρῶσαι.",
+        "SYN": "И когда насмеялись над Ним, сняли с Него багряницу, и одели Его в одежды Его, и повели Его на распятие.",
+        "BYZ": "Καὶ ὅτε ἐνέπαιξαν αὐτῷ, ἐξέδυσαν αὐτὸν τὴν χλαμύδα, καὶ ἐνέδυσαν αὐτὸν τὰ ἱμάτια αὐτοῦ, καὶ ἀπήγαγον αὐτὸν εἰς τὸ σταυρῶσαι."
+      }
     },
     "32": {
-      "verse_number": 32,
-      "sort_number": 32,
-      "text": "[MATHE 27:32]",
-      "word_count": 5,
-      "russian": "Выходя, они встретили одного Киринеянина, по имени Симона; сего заставили нести крест Его.",
-      "greek": "Ἐξερχόμενοι δὲ εὗρον ἄνθρωπον Κυρηναῖον, ὀνόματι Σίμωνα· τοῦτον ἠγγάρευσαν ἵνα ἄρῃ τὸν σταυρὸν αὐτοῦ.",
-      "latin": "Exeuntes autem invenerunt hominem Cyrenæum, nomine Simonem: hunc angariaverunt ut tolleret crucem ejus."
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "Exeuntes autem invenerunt hominem Cyrenæum, nomine Simonem: hunc angariaverunt ut tolleret crucem ejus.",
+        "LXX": "Ἐξερχόμενοι δὲ εὗρον ἄνθρωπον Κυρηναῖον, ὀνόματι Σίμωνα· τοῦτον ἠγγάρευσαν ἵνα ἄρῃ τὸν σταυρὸν αὐτοῦ.",
+        "SYN": "Выходя, они встретили одного Киринеянина, по имени Симона; сего заставили нести крест Его.",
+        "BYZ": "Ἐξερχόμενοι δὲ εὗρον ἄνθρωπον Κυρηναῖον, ὀνόματι Σίμωνα· τοῦτον ἠγγάρευσαν ἵνα ἄρῃ τὸν σταυρὸν αὐτοῦ."
+      }
     },
     "33": {
-      "verse_number": 33,
-      "sort_number": 33,
-      "text": "[MATHE 27:33]",
-      "word_count": 5,
-      "russian": "И, придя на место, называемое Голгофа, что значит: Лобное место,",
-      "greek": "Καὶ ἐλθόντες εἰς τόπον λεγόμενον Γολγοθᾶ, ὅ ἐστιν λεγόμενος Κρανίου Τόπος,",
-      "latin": "Et venerunt in locum qui dicitur Golgotha, quod est Calvariæ locus."
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "Et venerunt in locum qui dicitur Golgotha, quod est Calvariæ locus.",
+        "LXX": "Καὶ ἐλθόντες εἰς τόπον λεγόμενον Γολγοθᾶ, ὅ ἐστιν λεγόμενος Κρανίου Τόπος,",
+        "SYN": "И, придя на место, называемое Голгофа, что значит: Лобное место,",
+        "BYZ": "Καὶ ἐλθόντες εἰς τόπον λεγόμενον Γολγοθᾶ, ὅ ἐστιν λεγόμενος Κρανίου Τόπος,"
+      }
     },
     "34": {
-      "verse_number": 34,
-      "sort_number": 34,
-      "text": "[MATHE 27:34]",
-      "word_count": 5,
-      "russian": "дали Ему пить уксуса, смешанного с желчью; и, отведав, не хотел пить.",
-      "greek": "ἔδωκαν αὐτῷ πιεῖν ὄξος μετὰ χολῆς μεμιγμένον· καὶ γευσάμενος οὐκ ἤθελεν πιεῖν.",
-      "latin": "Et dederunt ei vinum bibere cum felle mistum. Et cum gustasset, noluit bibere."
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Et dederunt ei vinum bibere cum felle mistum. Et cum gustasset, noluit bibere.",
+        "LXX": "ἔδωκαν αὐτῷ πιεῖν ὄξος μετὰ χολῆς μεμιγμένον· καὶ γευσάμενος οὐκ ἤθελεν πιεῖν.",
+        "SYN": "дали Ему пить уксуса, смешанного с желчью; и, отведав, не хотел пить.",
+        "BYZ": "ἔδωκαν αὐτῷ πιεῖν ὄξος μετὰ χολῆς μεμιγμένον· καὶ γευσάμενος οὐκ ἤθελεν πιεῖν."
+      }
     },
     "35": {
-      "verse_number": 35,
-      "sort_number": 35,
-      "text": "[MATHE 27:35]",
-      "word_count": 5,
-      "russian": "Распявшие же Его делили одежды Его, бросая жребий;",
-      "greek": "Σταυρώσαντες δὲ αὐτόν, διεμερίσαντο τὰ ἱμάτια αὐτοῦ, βάλλοντες κλῆρον.",
-      "latin": "Postquam autem crucifixerunt eum, diviserunt vestimenta ejus, sortem mittentes: ut impleretur quod dictum est per prophetam dicentem: Diviserunt sibi vestimenta mea, et super vestem meam miserunt sortem."
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "VUL": "Postquam autem crucifixerunt eum, diviserunt vestimenta ejus, sortem mittentes: ut impleretur quod dictum est per prophetam dicentem: Diviserunt sibi vestimenta mea, et super vestem meam miserunt sortem.",
+        "LXX": "Σταυρώσαντες δὲ αὐτόν, διεμερίσαντο τὰ ἱμάτια αὐτοῦ, βάλλοντες κλῆρον.",
+        "SYN": "Распявшие же Его делили одежды Его, бросая жребий;",
+        "BYZ": "Σταυρώσαντες δὲ αὐτόν, διεμερίσαντο τὰ ἱμάτια αὐτοῦ, βάλλοντες κλῆρον."
+      }
     },
     "36": {
-      "verse_number": 36,
-      "sort_number": 36,
-      "text": "[MATHE 27:36]",
-      "word_count": 5,
-      "russian": "и, сидя, стерегли Его там;",
-      "greek": "Καὶ καθήμενοι ἐτήρουν αὐτὸν ἐκεῖ.",
-      "latin": "Et sedentes servabant eum."
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "VUL": "Et sedentes servabant eum.",
+        "LXX": "Καὶ καθήμενοι ἐτήρουν αὐτὸν ἐκεῖ.",
+        "SYN": "и, сидя, стерегли Его там;",
+        "BYZ": "Καὶ καθήμενοι ἐτήρουν αὐτὸν ἐκεῖ."
+      }
     },
     "37": {
-      "verse_number": 37,
-      "sort_number": 37,
-      "text": "[MATHE 27:37]",
-      "word_count": 5,
-      "russian": "и поставили над головою Его надпись, означающую вину Его: Сей есть Иисус, Царь Иудейский.",
-      "greek": "Καὶ ἐπέθηκαν ἐπάνω τῆς κεφαλῆς αὐτοῦ τὴν αἰτίαν αὐτοῦ γεγραμμένην, Οὗτός ἐστιν Ἰησοῦς ὁ βασιλεὺς τῶν Ἰουδαίων.",
-      "latin": "Et imposuerunt super caput ejus causam ipsius scriptam: Hic est Jesus rex Judæorum."
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "VUL": "Et imposuerunt super caput ejus causam ipsius scriptam: Hic est Jesus rex Judæorum.",
+        "LXX": "Καὶ ἐπέθηκαν ἐπάνω τῆς κεφαλῆς αὐτοῦ τὴν αἰτίαν αὐτοῦ γεγραμμένην, Οὗτός ἐστιν Ἰησοῦς ὁ βασιλεὺς τῶν Ἰουδαίων.",
+        "SYN": "и поставили над головою Его надпись, означающую вину Его: Сей есть Иисус, Царь Иудейский.",
+        "BYZ": "Καὶ ἐπέθηκαν ἐπάνω τῆς κεφαλῆς αὐτοῦ τὴν αἰτίαν αὐτοῦ γεγραμμένην, Οὗτός ἐστιν Ἰησοῦς ὁ βασιλεὺς τῶν Ἰουδαίων."
+      }
     },
     "38": {
-      "verse_number": 38,
-      "sort_number": 38,
-      "text": "[MATHE 27:38]",
-      "word_count": 5,
-      "russian": "Тогда распяты с Ним два разбойника: один по правую сторону, а другой по левую.",
-      "greek": "Τότε σταυροῦνται σὺν αὐτῷ δύο λῃσταί, εἷς ἐκ δεξιῶν καὶ εἷς ἐξ εὐωνύμων.",
-      "latin": "Tunc crucifixi sunt cum eo duo latrones: unus a dextris, et unus a sinistris."
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "VUL": "Tunc crucifixi sunt cum eo duo latrones: unus a dextris, et unus a sinistris.",
+        "LXX": "Τότε σταυροῦνται σὺν αὐτῷ δύο λῃσταί, εἷς ἐκ δεξιῶν καὶ εἷς ἐξ εὐωνύμων.",
+        "SYN": "Тогда распяты с Ним два разбойника: один по правую сторону, а другой по левую.",
+        "BYZ": "Τότε σταυροῦνται σὺν αὐτῷ δύο λῃσταί, εἷς ἐκ δεξιῶν καὶ εἷς ἐξ εὐωνύμων."
+      }
     },
     "39": {
-      "verse_number": 39,
-      "sort_number": 39,
-      "text": "[MATHE 27:39]",
-      "word_count": 5,
-      "russian": "Проходящие же злословили Его, кивая головами своими",
-      "greek": "Οἱ δὲ παραπορευόμενοι ἐβλασφήμουν αὐτόν, κινοῦντες τὰς κεφαλὰς αὐτῶν,",
-      "latin": "Prætereuntes autem blasphemabant eum moventes capita sua,"
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "VUL": "Prætereuntes autem blasphemabant eum moventes capita sua,",
+        "LXX": "Οἱ δὲ παραπορευόμενοι ἐβλασφήμουν αὐτόν, κινοῦντες τὰς κεφαλὰς αὐτῶν,",
+        "SYN": "Проходящие же злословили Его, кивая головами своими",
+        "BYZ": "Οἱ δὲ παραπορευόμενοι ἐβλασφήμουν αὐτόν, κινοῦντες τὰς κεφαλὰς αὐτῶν,"
+      }
     },
     "40": {
-      "verse_number": 40,
-      "sort_number": 40,
-      "text": "[MATHE 27:40]",
-      "word_count": 5,
-      "russian": "и говоря: Разрушающий храм и в три дня Созидающий! спаси Себя Самого; если Ты Сын Божий, сойди с креста.",
-      "greek": "καὶ λέγοντες, Ὁ καταλύων τὸν ναὸν καὶ ἐν τρισὶν ἡμέραις οἰκοδομῶν, σῶσον σεαυτόν· εἰ υἱὸς εἶ τοῦ θεοῦ, κατάβηθι ἀπὸ τοῦ σταυροῦ.",
-      "latin": "et dicentes: Vah ! qui destruis templum Dei, et in triduo illud reædificas: salva temetipsum: si Filius Dei es, descende de cruce."
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "VUL": "et dicentes: Vah ! qui destruis templum Dei, et in triduo illud reædificas: salva temetipsum: si Filius Dei es, descende de cruce.",
+        "LXX": "καὶ λέγοντες, Ὁ καταλύων τὸν ναὸν καὶ ἐν τρισὶν ἡμέραις οἰκοδομῶν, σῶσον σεαυτόν· εἰ υἱὸς εἶ τοῦ θεοῦ, κατάβηθι ἀπὸ τοῦ σταυροῦ.",
+        "SYN": "и говоря: Разрушающий храм и в три дня Созидающий! спаси Себя Самого; если Ты Сын Божий, сойди с креста.",
+        "BYZ": "καὶ λέγοντες, Ὁ καταλύων τὸν ναὸν καὶ ἐν τρισὶν ἡμέραις οἰκοδομῶν, σῶσον σεαυτόν· εἰ υἱὸς εἶ τοῦ θεοῦ, κατάβηθι ἀπὸ τοῦ σταυροῦ."
+      }
     },
     "41": {
-      "verse_number": 41,
-      "sort_number": 41,
-      "text": "[MATHE 27:41]",
-      "word_count": 5,
-      "russian": "Подобно и первосвященники с книжниками и старейшинами и фарисеями, насмехаясь, говорили:",
-      "greek": "Ὁμοίως δὲ καὶ οἱ ἀρχιερεῖς ἐμπαίζοντες μετὰ τῶν γραμματέων καὶ πρεσβυτέρων καὶ Φαρισαίων ἔλεγον,",
-      "latin": "Similiter et principes sacerdotum illudentes cum scribis et senioribus dicebant:"
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "VUL": "Similiter et principes sacerdotum illudentes cum scribis et senioribus dicebant:",
+        "LXX": "Ὁμοίως δὲ καὶ οἱ ἀρχιερεῖς ἐμπαίζοντες μετὰ τῶν γραμματέων καὶ πρεσβυτέρων καὶ Φαρισαίων ἔλεγον,",
+        "SYN": "Подобно и первосвященники с книжниками и старейшинами и фарисеями, насмехаясь, говорили:",
+        "BYZ": "Ὁμοίως δὲ καὶ οἱ ἀρχιερεῖς ἐμπαίζοντες μετὰ τῶν γραμματέων καὶ πρεσβυτέρων καὶ Φαρισαίων ἔλεγον,"
+      }
     },
     "42": {
-      "verse_number": 42,
-      "sort_number": 42,
-      "text": "[MATHE 27:42]",
-      "word_count": 5,
-      "russian": "других спасал, а Себя Самого не может спасти; если Он Царь Израилев, пусть теперь сойдет с креста, и уверуем в Него;",
-      "greek": "Ἄλλους ἔσωσεν, ἑαυτὸν οὐ δύναται σῶσαι. Εἰ βασιλεὺς Ἰσραήλ ἐστιν, καταβάτω νῦν ἀπὸ τοῦ σταυροῦ, καὶ πιστεύσομεν ἐπ’ αὐτῷ.",
-      "latin": "Alios salvos fecit, seipsum non potest salvum facere: si rex Israël est, descendat nunc de cruce, et credimus ei:"
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "VUL": "Alios salvos fecit, seipsum non potest salvum facere: si rex Israël est, descendat nunc de cruce, et credimus ei:",
+        "LXX": "Ἄλλους ἔσωσεν, ἑαυτὸν οὐ δύναται σῶσαι. Εἰ βασιλεὺς Ἰσραήλ ἐστιν, καταβάτω νῦν ἀπὸ τοῦ σταυροῦ, καὶ πιστεύσομεν ἐπ’ αὐτῷ.",
+        "SYN": "других спасал, а Себя Самого не может спасти; если Он Царь Израилев, пусть теперь сойдет с креста, и уверуем в Него;",
+        "BYZ": "Ἄλλους ἔσωσεν, ἑαυτὸν οὐ δύναται σῶσαι. Εἰ βασιλεὺς Ἰσραήλ ἐστιν, καταβάτω νῦν ἀπὸ τοῦ σταυροῦ, καὶ πιστεύσομεν ἐπ’ αὐτῷ."
+      }
     },
     "43": {
-      "verse_number": 43,
-      "sort_number": 43,
-      "text": "[MATHE 27:43]",
-      "word_count": 5,
-      "russian": "уповал на Бога; пусть теперь избавит Его, если Он угоден Ему. Ибо Он сказал: Я Божий Сын.",
-      "greek": "Πέποιθεν ἐπὶ τὸν θεόν· ῥυσάσθω νῦν αὐτόν, εἰ θέλει αὐτόν. Εἶπεν γὰρ ὅτι θεοῦ εἰμι υἱός.",
-      "latin": "confidit in Deo: liberet nunc, si vult eum: dixit enim: Quia Filius Dei sum."
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "VUL": "confidit in Deo: liberet nunc, si vult eum: dixit enim: Quia Filius Dei sum.",
+        "LXX": "Πέποιθεν ἐπὶ τὸν θεόν· ῥυσάσθω νῦν αὐτόν, εἰ θέλει αὐτόν. Εἶπεν γὰρ ὅτι θεοῦ εἰμι υἱός.",
+        "SYN": "уповал на Бога; пусть теперь избавит Его, если Он угоден Ему. Ибо Он сказал: Я Божий Сын.",
+        "BYZ": "Πέποιθεν ἐπὶ τὸν θεόν· ῥυσάσθω νῦν αὐτόν, εἰ θέλει αὐτόν. Εἶπεν γὰρ ὅτι θεοῦ εἰμι υἱός."
+      }
     },
     "44": {
-      "verse_number": 44,
-      "sort_number": 44,
-      "text": "[MATHE 27:44]",
-      "word_count": 5,
-      "russian": "Также и разбойники, распятые с Ним, поносили Его.",
-      "greek": "Τὸ δ’ αὐτὸ καὶ οἱ λῃσταὶ οἱ συσταυρωθέντες αὐτῷ ὠνείδιζον αὐτόν.",
-      "latin": "Idipsum autem et latrones, qui crucifixi erant cum eo, improperabant ei."
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "VUL": "Idipsum autem et latrones, qui crucifixi erant cum eo, improperabant ei.",
+        "LXX": "Τὸ δ’ αὐτὸ καὶ οἱ λῃσταὶ οἱ συσταυρωθέντες αὐτῷ ὠνείδιζον αὐτόν.",
+        "SYN": "Также и разбойники, распятые с Ним, поносили Его.",
+        "BYZ": "Τὸ δ’ αὐτὸ καὶ οἱ λῃσταὶ οἱ συσταυρωθέντες αὐτῷ ὠνείδιζον αὐτόν."
+      }
     },
     "45": {
-      "verse_number": 45,
-      "sort_number": 45,
-      "text": "[MATHE 27:45]",
-      "word_count": 5,
-      "russian": "От шестого же часа тьма была по всей земле до часа девятого;",
-      "greek": "Ἀπὸ δὲ ἕκτης ὥρας σκότος ἐγένετο ἐπὶ πᾶσαν τὴν γῆν ἕως ὥρας ἐνάτης.",
-      "latin": "A sexta autem hora tenebræ factæ sunt super universam terram usque ad horam nonam."
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "VUL": "A sexta autem hora tenebræ factæ sunt super universam terram usque ad horam nonam.",
+        "LXX": "Ἀπὸ δὲ ἕκτης ὥρας σκότος ἐγένετο ἐπὶ πᾶσαν τὴν γῆν ἕως ὥρας ἐνάτης.",
+        "SYN": "От шестого же часа тьма была по всей земле до часа девятого;",
+        "BYZ": "Ἀπὸ δὲ ἕκτης ὥρας σκότος ἐγένετο ἐπὶ πᾶσαν τὴν γῆν ἕως ὥρας ἐνάτης."
+      }
     },
     "46": {
-      "verse_number": 46,
-      "sort_number": 46,
-      "text": "[MATHE 27:46]",
-      "word_count": 5,
-      "russian": "а около девятого часа возопил Иисус громким голосом: Или, Или! лама савахфани? то есть: Боже Мой, Боже Мой! для чего Ты Меня оставил?",
-      "greek": "Περὶ δὲ τὴν ἐνάτην ὥραν ἀνεβόησεν ὁ Ἰησοῦς φωνῇ μεγάλῃ, λέγων, Ἠλί, Ἠλί, λιμὰ σαβαχθανί; Τοῦτ’ ἔστιν, Θεέ μου, Θεέ μου, ἵνα τί με ἐγκατέλιπες;",
-      "latin": "Et circa horam nonam clamavit Jesus voce magna, dicens: Eli, Eli, lamma sabacthani ? hoc est: Deus meus, Deus meus, ut quid dereliquisti me ?"
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "VUL": "Et circa horam nonam clamavit Jesus voce magna, dicens: Eli, Eli, lamma sabacthani ? hoc est: Deus meus, Deus meus, ut quid dereliquisti me ?",
+        "LXX": "Περὶ δὲ τὴν ἐνάτην ὥραν ἀνεβόησεν ὁ Ἰησοῦς φωνῇ μεγάλῃ, λέγων, Ἠλί, Ἠλί, λιμὰ σαβαχθανί; Τοῦτ’ ἔστιν, Θεέ μου, Θεέ μου, ἵνα τί με ἐγκατέλιπες;",
+        "SYN": "а около девятого часа возопил Иисус громким голосом: Или, Или! лама савахфани? то есть: Боже Мой, Боже Мой! для чего Ты Меня оставил?",
+        "BYZ": "Περὶ δὲ τὴν ἐνάτην ὥραν ἀνεβόησεν ὁ Ἰησοῦς φωνῇ μεγάλῃ, λέγων, Ἠλί, Ἠλί, λιμὰ σαβαχθανί; Τοῦτ’ ἔστιν, Θεέ μου, Θεέ μου, ἵνα τί με ἐγκατέλιπες;"
+      }
     },
     "47": {
-      "verse_number": 47,
-      "sort_number": 47,
-      "text": "[MATHE 27:47]",
-      "word_count": 5,
-      "russian": "Некоторые из стоявших там, слыша это, говорили: Илию зовет Он.",
-      "greek": "Τινὲς δὲ τῶν ἐκεῖ ἑστώτων ἀκούσαντες ἔλεγον ὅτι Ἠλίαν φωνεῖ οὗτος.",
-      "latin": "Quidam autem illic stantes, et audientes, dicebant: Eliam vocat iste."
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "VUL": "Quidam autem illic stantes, et audientes, dicebant: Eliam vocat iste.",
+        "LXX": "Τινὲς δὲ τῶν ἐκεῖ ἑστώτων ἀκούσαντες ἔλεγον ὅτι Ἠλίαν φωνεῖ οὗτος.",
+        "SYN": "Некоторые из стоявших там, слыша это, говорили: Илию зовет Он.",
+        "BYZ": "Τινὲς δὲ τῶν ἐκεῖ ἑστώτων ἀκούσαντες ἔλεγον ὅτι Ἠλίαν φωνεῖ οὗτος."
+      }
     },
     "48": {
-      "verse_number": 48,
-      "sort_number": 48,
-      "text": "[MATHE 27:48]",
-      "word_count": 5,
-      "russian": "И тотчас побежал один из них, взял губку, наполнил уксусом и, наложив на трость, давал Ему пить;",
-      "greek": "Καὶ εὐθέως δραμὼν εἷς ἐξ αὐτῶν, καὶ λαβὼν σπόγγον, πλήσας τε ὄξους, καὶ περιθεὶς καλάμῳ, ἐπότιζεν αὐτόν.",
-      "latin": "Et continuo currens unus ex eis, acceptam spongiam implevit aceto, et imposuit arundini, et dabat ei bibere."
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "VUL": "Et continuo currens unus ex eis, acceptam spongiam implevit aceto, et imposuit arundini, et dabat ei bibere.",
+        "LXX": "Καὶ εὐθέως δραμὼν εἷς ἐξ αὐτῶν, καὶ λαβὼν σπόγγον, πλήσας τε ὄξους, καὶ περιθεὶς καλάμῳ, ἐπότιζεν αὐτόν.",
+        "SYN": "И тотчас побежал один из них, взял губку, наполнил уксусом и, наложив на трость, давал Ему пить;",
+        "BYZ": "Καὶ εὐθέως δραμὼν εἷς ἐξ αὐτῶν, καὶ λαβὼν σπόγγον, πλήσας τε ὄξους, καὶ περιθεὶς καλάμῳ, ἐπότιζεν αὐτόν."
+      }
     },
     "49": {
-      "verse_number": 49,
-      "sort_number": 49,
-      "text": "[MATHE 27:49]",
-      "word_count": 5,
-      "russian": "а другие говорили: постой, посмотрим, придет ли Илия спасти Его.",
-      "greek": "Οἱ δὲ λοιποὶ ἔλεγον, Ἄφες, ἴδωμεν εἰ ἔρχεται Ἠλίας σώσων αὐτόν.",
-      "latin": "Ceteri vero dicebant: Sine, videamus an veniat Elias liberans eum."
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "VUL": "Ceteri vero dicebant: Sine, videamus an veniat Elias liberans eum.",
+        "LXX": "Οἱ δὲ λοιποὶ ἔλεγον, Ἄφες, ἴδωμεν εἰ ἔρχεται Ἠλίας σώσων αὐτόν.",
+        "SYN": "а другие говорили: постой, посмотрим, придет ли Илия спасти Его.",
+        "BYZ": "Οἱ δὲ λοιποὶ ἔλεγον, Ἄφες, ἴδωμεν εἰ ἔρχεται Ἠλίας σώσων αὐτόν."
+      }
     },
     "50": {
-      "verse_number": 50,
-      "sort_number": 50,
-      "text": "[MATHE 27:50]",
-      "word_count": 5,
-      "russian": "Иисус же, опять возопив громким голосом, испустил дух.",
-      "greek": "Ὁ δὲ Ἰησοῦς πάλιν κράξας φωνῇ μεγάλῃ ἀφῆκεν τὸ πνεῦμα.",
-      "latin": "Jesus autem iterum clamans voce magna, emisit spiritum."
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "VUL": "Jesus autem iterum clamans voce magna, emisit spiritum.",
+        "LXX": "Ὁ δὲ Ἰησοῦς πάλιν κράξας φωνῇ μεγάλῃ ἀφῆκεν τὸ πνεῦμα.",
+        "SYN": "Иисус же, опять возопив громким голосом, испустил дух.",
+        "BYZ": "Ὁ δὲ Ἰησοῦς πάλιν κράξας φωνῇ μεγάλῃ ἀφῆκεν τὸ πνεῦμα."
+      }
     },
     "51": {
-      "verse_number": 51,
-      "sort_number": 51,
-      "text": "[MATHE 27:51]",
-      "word_count": 5,
-      "russian": "И вот, завеса в храме раздралась надвое, сверху донизу; и земля потряслась; и камни расселись;",
-      "greek": "Καὶ ἰδού, τὸ καταπέτασμα τοῦ ναοῦ ἐσχίσθη εἰς δύο ἀπὸ ἄνωθεν ἕως κάτω· καὶ ἡ γῆ ἐσείσθη· καὶ αἱ πέτραι ἐσχίσθησαν·",
-      "latin": "Et ecce velum templi scissum est in duas partes a summo usque deorsum: et terra mota est, et petræ scissæ sunt,"
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "VUL": "Et ecce velum templi scissum est in duas partes a summo usque deorsum: et terra mota est, et petræ scissæ sunt,",
+        "LXX": "Καὶ ἰδού, τὸ καταπέτασμα τοῦ ναοῦ ἐσχίσθη εἰς δύο ἀπὸ ἄνωθεν ἕως κάτω· καὶ ἡ γῆ ἐσείσθη· καὶ αἱ πέτραι ἐσχίσθησαν·",
+        "SYN": "И вот, завеса в храме раздралась надвое, сверху донизу; и земля потряслась; и камни расселись;",
+        "BYZ": "Καὶ ἰδού, τὸ καταπέτασμα τοῦ ναοῦ ἐσχίσθη εἰς δύο ἀπὸ ἄνωθεν ἕως κάτω· καὶ ἡ γῆ ἐσείσθη· καὶ αἱ πέτραι ἐσχίσθησαν·"
+      }
     },
     "52": {
-      "verse_number": 52,
-      "sort_number": 52,
-      "text": "[MATHE 27:52]",
-      "word_count": 5,
-      "russian": "и гробы отверзлись; и многие тела усопших святых воскресли",
-      "greek": "καὶ τὰ μνημεῖα ἀνεῴχθησαν· καὶ πολλὰ σώματα τῶν κεκοιμημένων ἁγίων ἠγέρθη·",
-      "latin": "et monumenta aperta sunt: et multa corpora sanctorum, qui dormierant, surrexerunt."
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "VUL": "et monumenta aperta sunt: et multa corpora sanctorum, qui dormierant, surrexerunt.",
+        "LXX": "καὶ τὰ μνημεῖα ἀνεῴχθησαν· καὶ πολλὰ σώματα τῶν κεκοιμημένων ἁγίων ἠγέρθη·",
+        "SYN": "и гробы отверзлись; и многие тела усопших святых воскресли",
+        "BYZ": "καὶ τὰ μνημεῖα ἀνεῴχθησαν· καὶ πολλὰ σώματα τῶν κεκοιμημένων ἁγίων ἠγέρθη·"
+      }
     },
     "53": {
-      "verse_number": 53,
-      "sort_number": 53,
-      "text": "[MATHE 27:53]",
-      "word_count": 5,
-      "russian": "и, выйдя из гробов по воскресении Его, вошли во святый град и явились многим.",
-      "greek": "καὶ ἐξελθόντες ἐκ τῶν μνημείων μετὰ τὴν ἔγερσιν αὐτοῦ εἰσῆλθον εἰς τὴν ἁγίαν πόλιν, καὶ ἐνεφανίσθησαν πολλοῖς.",
-      "latin": "Et exeuntes de monumentis post resurrectionem ejus, venerunt in sanctam civitatem, et apparuerunt multis."
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "VUL": "Et exeuntes de monumentis post resurrectionem ejus, venerunt in sanctam civitatem, et apparuerunt multis.",
+        "LXX": "καὶ ἐξελθόντες ἐκ τῶν μνημείων μετὰ τὴν ἔγερσιν αὐτοῦ εἰσῆλθον εἰς τὴν ἁγίαν πόλιν, καὶ ἐνεφανίσθησαν πολλοῖς.",
+        "SYN": "и, выйдя из гробов по воскресении Его, вошли во святый град и явились многим.",
+        "BYZ": "καὶ ἐξελθόντες ἐκ τῶν μνημείων μετὰ τὴν ἔγερσιν αὐτοῦ εἰσῆλθον εἰς τὴν ἁγίαν πόλιν, καὶ ἐνεφανίσθησαν πολλοῖς."
+      }
     },
     "54": {
-      "verse_number": 54,
-      "sort_number": 54,
-      "text": "[MATHE 27:54]",
-      "word_count": 5,
-      "russian": "Сотник же и те, которые с ним стерегли Иисуса, видя землетрясение и все бывшее, устрашились весьма и говорили: воистину Он был Сын Божий.",
-      "greek": "Ὁ δὲ ἑκατόνταρχος καὶ οἱ μετ’ αὐτοῦ τηροῦντες τὸν Ἰησοῦν, ἰδόντες τὸν σεισμὸν καὶ τὰ γενόμενα, ἐφοβήθησαν σφόδρα, λέγοντες, Ἀληθῶς θεοῦ υἱὸς ἦν οὗτος.",
-      "latin": "Centurio autem, et qui cum eo erant, custodientes Jesum, viso terræmotu, et his quæ fiebant, timuerunt valde, dicentes: Vere Filius Dei erat iste."
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "VUL": "Centurio autem, et qui cum eo erant, custodientes Jesum, viso terræmotu, et his quæ fiebant, timuerunt valde, dicentes: Vere Filius Dei erat iste.",
+        "LXX": "Ὁ δὲ ἑκατόνταρχος καὶ οἱ μετ’ αὐτοῦ τηροῦντες τὸν Ἰησοῦν, ἰδόντες τὸν σεισμὸν καὶ τὰ γενόμενα, ἐφοβήθησαν σφόδρα, λέγοντες, Ἀληθῶς θεοῦ υἱὸς ἦν οὗτος.",
+        "SYN": "Сотник же и те, которые с ним стерегли Иисуса, видя землетрясение и все бывшее, устрашились весьма и говорили: воистину Он был Сын Божий.",
+        "BYZ": "Ὁ δὲ ἑκατόνταρχος καὶ οἱ μετ’ αὐτοῦ τηροῦντες τὸν Ἰησοῦν, ἰδόντες τὸν σεισμὸν καὶ τὰ γενόμενα, ἐφοβήθησαν σφόδρα, λέγοντες, Ἀληθῶς θεοῦ υἱὸς ἦν οὗτος."
+      }
     },
     "55": {
-      "verse_number": 55,
-      "sort_number": 55,
-      "text": "[MATHE 27:55]",
-      "word_count": 5,
-      "russian": "Там были также и смотрели издали многие женщины, которые следовали за Иисусом из Галилеи, служа Ему;",
-      "greek": "Ἦσαν δὲ ἐκεῖ γυναῖκες πολλαὶ ἀπὸ μακρόθεν θεωροῦσαι, αἵτινες ἠκολούθησαν τῷ Ἰησοῦ ἀπὸ τῆς Γαλιλαίας, διακονοῦσαι αὐτῷ,",
-      "latin": "Erant autem ibi mulieres multæ a longe, quæ secutæ erant Jesum a Galilæa, ministrantes ei:"
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "VUL": "Erant autem ibi mulieres multæ a longe, quæ secutæ erant Jesum a Galilæa, ministrantes ei:",
+        "LXX": "Ἦσαν δὲ ἐκεῖ γυναῖκες πολλαὶ ἀπὸ μακρόθεν θεωροῦσαι, αἵτινες ἠκολούθησαν τῷ Ἰησοῦ ἀπὸ τῆς Γαλιλαίας, διακονοῦσαι αὐτῷ,",
+        "SYN": "Там были также и смотрели издали многие женщины, которые следовали за Иисусом из Галилеи, служа Ему;",
+        "BYZ": "Ἦσαν δὲ ἐκεῖ γυναῖκες πολλαὶ ἀπὸ μακρόθεν θεωροῦσαι, αἵτινες ἠκολούθησαν τῷ Ἰησοῦ ἀπὸ τῆς Γαλιλαίας, διακονοῦσαι αὐτῷ,"
+      }
     },
     "56": {
-      "verse_number": 56,
-      "sort_number": 56,
-      "text": "[MATHE 27:56]",
-      "word_count": 5,
-      "russian": "между ними были Мария Магдалина и Мария, мать Иакова и Иосии, и мать сыновей Зеведеевых.",
-      "greek": "ἐν αἷς ἦν Μαρία ἡ Μαγδαληνή, καὶ Μαρία ἡ τοῦ Ἰακώβου καὶ Ἰωσῆ μήτηρ, καὶ ἡ μήτηρ τῶν υἱῶν Ζεβεδαίου.",
-      "latin": "inter quas erat Maria Magdalene, et Maria Jacobi, et Joseph mater, et mater filiorum Zebedæi."
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "VUL": "inter quas erat Maria Magdalene, et Maria Jacobi, et Joseph mater, et mater filiorum Zebedæi.",
+        "LXX": "ἐν αἷς ἦν Μαρία ἡ Μαγδαληνή, καὶ Μαρία ἡ τοῦ Ἰακώβου καὶ Ἰωσῆ μήτηρ, καὶ ἡ μήτηρ τῶν υἱῶν Ζεβεδαίου.",
+        "SYN": "между ними были Мария Магдалина и Мария, мать Иакова и Иосии, и мать сыновей Зеведеевых.",
+        "BYZ": "ἐν αἷς ἦν Μαρία ἡ Μαγδαληνή, καὶ Μαρία ἡ τοῦ Ἰακώβου καὶ Ἰωσῆ μήτηρ, καὶ ἡ μήτηρ τῶν υἱῶν Ζεβεδαίου."
+      }
     },
     "57": {
-      "verse_number": 57,
-      "sort_number": 57,
-      "text": "[MATHE 27:57]",
-      "word_count": 5,
-      "russian": "Когда же настал вечер, пришел богатый человек из Аримафеи, именем Иосиф, который также учился у Иисуса;",
-      "greek": "Ὀψίας δὲ γενομένης, ἦλθεν ἄνθρωπος πλούσιος ἀπὸ Ἀριμαθαίας, τοὔνομα Ἰωσήφ, ὃς καὶ αὐτὸς ἐμαθήτευσεν τῷ Ἰησοῦ·",
-      "latin": "Cum autem sero factum esset, venit quidam homo dives ab Arimathæa, nomine Joseph, qui et ipse discipulus erat Jesu:"
+      "seq": 57,
+      "v_in": {
+        "MT": 57,
+        "VUL": 57,
+        "LXX": 57
+      },
+      "text": {
+        "VUL": "Cum autem sero factum esset, venit quidam homo dives ab Arimathæa, nomine Joseph, qui et ipse discipulus erat Jesu:",
+        "LXX": "Ὀψίας δὲ γενομένης, ἦλθεν ἄνθρωπος πλούσιος ἀπὸ Ἀριμαθαίας, τοὔνομα Ἰωσήφ, ὃς καὶ αὐτὸς ἐμαθήτευσεν τῷ Ἰησοῦ·",
+        "SYN": "Когда же настал вечер, пришел богатый человек из Аримафеи, именем Иосиф, который также учился у Иисуса;",
+        "BYZ": "Ὀψίας δὲ γενομένης, ἦλθεν ἄνθρωπος πλούσιος ἀπὸ Ἀριμαθαίας, τοὔνομα Ἰωσήφ, ὃς καὶ αὐτὸς ἐμαθήτευσεν τῷ Ἰησοῦ·"
+      }
     },
     "58": {
-      "verse_number": 58,
-      "sort_number": 58,
-      "text": "[MATHE 27:58]",
-      "word_count": 5,
-      "russian": "он, придя к Пилату, просил тела Иисусова. Тогда Пилат приказал отдать тело;",
-      "greek": "οὗτος προσελθὼν τῷ Πιλάτῳ, ᾐτήσατο τὸ σῶμα τοῦ Ἰησοῦ. Τότε ὁ Πιλάτος ἐκέλευσεν ἀποδοθῆναι τὸ σῶμα.",
-      "latin": "hic accessit ad Pilatum, et petiit corpus Jesu. Tunc Pilatus jussit reddi corpus."
+      "seq": 58,
+      "v_in": {
+        "MT": 58,
+        "VUL": 58,
+        "LXX": 58
+      },
+      "text": {
+        "VUL": "hic accessit ad Pilatum, et petiit corpus Jesu. Tunc Pilatus jussit reddi corpus.",
+        "LXX": "οὗτος προσελθὼν τῷ Πιλάτῳ, ᾐτήσατο τὸ σῶμα τοῦ Ἰησοῦ. Τότε ὁ Πιλάτος ἐκέλευσεν ἀποδοθῆναι τὸ σῶμα.",
+        "SYN": "он, придя к Пилату, просил тела Иисусова. Тогда Пилат приказал отдать тело;",
+        "BYZ": "οὗτος προσελθὼν τῷ Πιλάτῳ, ᾐτήσατο τὸ σῶμα τοῦ Ἰησοῦ. Τότε ὁ Πιλάτος ἐκέλευσεν ἀποδοθῆναι τὸ σῶμα."
+      }
     },
     "59": {
-      "verse_number": 59,
-      "sort_number": 59,
-      "text": "[MATHE 27:59]",
-      "word_count": 5,
-      "russian": "и, взяв тело, Иосиф обвил его чистою плащаницею",
-      "greek": "Καὶ λαβὼν τὸ σῶμα ὁ Ἰωσὴφ ἐνετύλιξεν αὐτὸ σινδόνι καθαρᾷ,",
-      "latin": "Et accepto corpore, Joseph involvit illud in sindone munda,"
+      "seq": 59,
+      "v_in": {
+        "MT": 59,
+        "VUL": 59,
+        "LXX": 59
+      },
+      "text": {
+        "VUL": "Et accepto corpore, Joseph involvit illud in sindone munda,",
+        "LXX": "Καὶ λαβὼν τὸ σῶμα ὁ Ἰωσὴφ ἐνετύλιξεν αὐτὸ σινδόνι καθαρᾷ,",
+        "SYN": "и, взяв тело, Иосиф обвил его чистою плащаницею",
+        "BYZ": "Καὶ λαβὼν τὸ σῶμα ὁ Ἰωσὴφ ἐνετύλιξεν αὐτὸ σινδόνι καθαρᾷ,"
+      }
     },
     "60": {
-      "verse_number": 60,
-      "sort_number": 60,
-      "text": "[MATHE 27:60]",
-      "word_count": 5,
-      "russian": "и положил его в новом своем гробе, который высек он в скале; и, привалив большой камень к двери гроба, удалился.",
-      "greek": "καὶ ἔθηκεν αὐτὸ ἐν τῷ καινῷ αὐτοῦ μνημείῳ, ὃ ἐλατόμησεν ἐν τῇ πέτρᾳ· καὶ προσκυλίσας λίθον μέγαν τῇ θύρᾳ τοῦ μνημείου, ἀπῆλθεν.",
-      "latin": "et posuit illud in monumento suo novo, quod exciderat in petra. Et advolvit saxum magnum ad ostium monumenti, et abiit."
+      "seq": 60,
+      "v_in": {
+        "MT": 60,
+        "VUL": 60,
+        "LXX": 60
+      },
+      "text": {
+        "VUL": "et posuit illud in monumento suo novo, quod exciderat in petra. Et advolvit saxum magnum ad ostium monumenti, et abiit.",
+        "LXX": "καὶ ἔθηκεν αὐτὸ ἐν τῷ καινῷ αὐτοῦ μνημείῳ, ὃ ἐλατόμησεν ἐν τῇ πέτρᾳ· καὶ προσκυλίσας λίθον μέγαν τῇ θύρᾳ τοῦ μνημείου, ἀπῆλθεν.",
+        "SYN": "и положил его в новом своем гробе, который высек он в скале; и, привалив большой камень к двери гроба, удалился.",
+        "BYZ": "καὶ ἔθηκεν αὐτὸ ἐν τῷ καινῷ αὐτοῦ μνημείῳ, ὃ ἐλατόμησεν ἐν τῇ πέτρᾳ· καὶ προσκυλίσας λίθον μέγαν τῇ θύρᾳ τοῦ μνημείου, ἀπῆλθεν."
+      }
     },
     "61": {
-      "verse_number": 61,
-      "sort_number": 61,
-      "text": "[MATHE 27:61]",
-      "word_count": 5,
-      "russian": "Была же там Мария Магдалина и другая Мария, которые сидели против гроба.",
-      "greek": "Ἦν δὲ ἐκεῖ Μαρία ἡ Μαγδαληνή, καὶ ἡ ἄλλη Μαρία, καθήμεναι ἀπέναντι τοῦ τάφου.",
-      "latin": "Erant autem ibi Maria Magdalene, et altera Maria, sedentes contra sepulchrum."
+      "seq": 61,
+      "v_in": {
+        "MT": 61,
+        "VUL": 61,
+        "LXX": 61
+      },
+      "text": {
+        "VUL": "Erant autem ibi Maria Magdalene, et altera Maria, sedentes contra sepulchrum.",
+        "LXX": "Ἦν δὲ ἐκεῖ Μαρία ἡ Μαγδαληνή, καὶ ἡ ἄλλη Μαρία, καθήμεναι ἀπέναντι τοῦ τάφου.",
+        "SYN": "Была же там Мария Магдалина и другая Мария, которые сидели против гроба.",
+        "BYZ": "Ἦν δὲ ἐκεῖ Μαρία ἡ Μαγδαληνή, καὶ ἡ ἄλλη Μαρία, καθήμεναι ἀπέναντι τοῦ τάφου."
+      }
     },
     "62": {
-      "verse_number": 62,
-      "sort_number": 62,
-      "text": "[MATHE 27:62]",
-      "word_count": 5,
-      "russian": "На другой день, который следует за пятницею, собрались первосвященники и фарисеи к Пилату",
-      "greek": "Τῇ δὲ ἐπαύριον, ἥτις ἐστὶν μετὰ τὴν Παρασκευήν, συνήχθησαν οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι πρὸς Πιλάτον,",
-      "latin": "Altera autem die, quæ est post Parasceven, convenerunt principes sacerdotum et pharisæi ad Pilatum,"
+      "seq": 62,
+      "v_in": {
+        "MT": 62,
+        "VUL": 62,
+        "LXX": 62
+      },
+      "text": {
+        "VUL": "Altera autem die, quæ est post Parasceven, convenerunt principes sacerdotum et pharisæi ad Pilatum,",
+        "LXX": "Τῇ δὲ ἐπαύριον, ἥτις ἐστὶν μετὰ τὴν Παρασκευήν, συνήχθησαν οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι πρὸς Πιλάτον,",
+        "SYN": "На другой день, который следует за пятницею, собрались первосвященники и фарисеи к Пилату",
+        "BYZ": "Τῇ δὲ ἐπαύριον, ἥτις ἐστὶν μετὰ τὴν Παρασκευήν, συνήχθησαν οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι πρὸς Πιλάτον,"
+      }
     },
     "63": {
-      "verse_number": 63,
-      "sort_number": 63,
-      "text": "[MATHE 27:63]",
-      "word_count": 5,
-      "russian": "и говорили: господин! Мы вспомнили, что обманщик тот, еще будучи в живых, сказал: после трех дней воскресну;",
-      "greek": "λέγοντες, Κύριε, ἐμνήσθημεν ὅτι ἐκεῖνος ὁ πλάνος εἶπεν ἔτι ζῶν, Μετὰ τρεῖς ἡμέρας ἐγείρομαι.",
-      "latin": "dicentes: Domine, recordati sumus, quia seductor ille dixit adhuc vivens: Post tres dies resurgam."
+      "seq": 63,
+      "v_in": {
+        "MT": 63,
+        "VUL": 63,
+        "LXX": 63
+      },
+      "text": {
+        "VUL": "dicentes: Domine, recordati sumus, quia seductor ille dixit adhuc vivens: Post tres dies resurgam.",
+        "LXX": "λέγοντες, Κύριε, ἐμνήσθημεν ὅτι ἐκεῖνος ὁ πλάνος εἶπεν ἔτι ζῶν, Μετὰ τρεῖς ἡμέρας ἐγείρομαι.",
+        "SYN": "и говорили: господин! Мы вспомнили, что обманщик тот, еще будучи в живых, сказал: после трех дней воскресну;",
+        "BYZ": "λέγοντες, Κύριε, ἐμνήσθημεν ὅτι ἐκεῖνος ὁ πλάνος εἶπεν ἔτι ζῶν, Μετὰ τρεῖς ἡμέρας ἐγείρομαι."
+      }
     },
     "64": {
-      "verse_number": 64,
-      "sort_number": 64,
-      "text": "[MATHE 27:64]",
-      "word_count": 5,
-      "russian": "итак прикажи охранять гроб до третьего дня, чтобы ученики Его, придя ночью, не украли Его и не сказали народу: воскрес из мертвых; и будет последний обман хуже первого.",
-      "greek": "Κέλευσον οὖν ἀσφαλισθῆναι τὸν τάφον ἕως τῆς τρίτης ἡμέρας· μήποτε ἐλθόντες οἱ μαθηταὶ αὐτοῦ νυκτὸς κλέψωσιν αὐτόν, καὶ εἴπωσιν τῷ λαῷ, Ἠγέρθη ἀπὸ τῶν νεκρῶν· καὶ ἔσται ἡ ἐσχάτη πλάνη χείρων τῆς πρώτης.",
-      "latin": "Jube ergo custodiri sepulchrum usque in diem tertium: ne forte veniant discipuli ejus, et furentur eum, et dicant plebi: Surrexit a mortuis: et erit novissimus error pejor priore."
+      "seq": 64,
+      "v_in": {
+        "MT": 64,
+        "VUL": 64,
+        "LXX": 64
+      },
+      "text": {
+        "VUL": "Jube ergo custodiri sepulchrum usque in diem tertium: ne forte veniant discipuli ejus, et furentur eum, et dicant plebi: Surrexit a mortuis: et erit novissimus error pejor priore.",
+        "LXX": "Κέλευσον οὖν ἀσφαλισθῆναι τὸν τάφον ἕως τῆς τρίτης ἡμέρας· μήποτε ἐλθόντες οἱ μαθηταὶ αὐτοῦ νυκτὸς κλέψωσιν αὐτόν, καὶ εἴπωσιν τῷ λαῷ, Ἠγέρθη ἀπὸ τῶν νεκρῶν· καὶ ἔσται ἡ ἐσχάτη πλάνη χείρων τῆς πρώτης.",
+        "SYN": "итак прикажи охранять гроб до третьего дня, чтобы ученики Его, придя ночью, не украли Его и не сказали народу: воскрес из мертвых; и будет последний обман хуже первого.",
+        "BYZ": "Κέλευσον οὖν ἀσφαλισθῆναι τὸν τάφον ἕως τῆς τρίτης ἡμέρας· μήποτε ἐλθόντες οἱ μαθηταὶ αὐτοῦ νυκτὸς κλέψωσιν αὐτόν, καὶ εἴπωσιν τῷ λαῷ, Ἠγέρθη ἀπὸ τῶν νεκρῶν· καὶ ἔσται ἡ ἐσχάτη πλάνη χείρων τῆς πρώτης."
+      }
     },
     "65": {
-      "verse_number": 65,
-      "sort_number": 65,
-      "text": "[MATHE 27:65]",
-      "word_count": 5,
-      "russian": "Пилат сказал им: имеете стражу; пойдите, охраняйте, как знаете.",
-      "greek": "Ἔφη δὲ αὐτοῖς ὁ Πιλάτος, Ἔχετε κουστωδίαν· ὑπάγετε, ἀσφαλίσασθε ὡς οἴδατε.",
-      "latin": "Ait illis Pilatus: Habetis custodiam, ite, custodite sicut scitis."
+      "seq": 65,
+      "v_in": {
+        "MT": 65,
+        "VUL": 65,
+        "LXX": 65
+      },
+      "text": {
+        "VUL": "Ait illis Pilatus: Habetis custodiam, ite, custodite sicut scitis.",
+        "LXX": "Ἔφη δὲ αὐτοῖς ὁ Πιλάτος, Ἔχετε κουστωδίαν· ὑπάγετε, ἀσφαλίσασθε ὡς οἴδατε.",
+        "SYN": "Пилат сказал им: имеете стражу; пойдите, охраняйте, как знаете.",
+        "BYZ": "Ἔφη δὲ αὐτοῖς ὁ Πιλάτος, Ἔχετε κουστωδίαν· ὑπάγετε, ἀσφαλίσασθε ὡς οἴδατε."
+      }
     },
     "66": {
-      "verse_number": 66,
-      "sort_number": 66,
-      "text": "[MATHE 27:66]",
-      "word_count": 5,
-      "russian": "Они пошли и поставили у гроба стражу, и приложили к камню печать.",
-      "greek": "Οἱ δὲ πορευθέντες ἠσφαλίσαντο τὸν τάφον, σφραγίσαντες τὸν λίθον, μετὰ τῆς κουστωδίας.",
-      "latin": "Illi autem abeuntes, munierunt sepulchrum, signantes lapidem, cum custodibus."
+      "seq": 66,
+      "v_in": {
+        "MT": 66,
+        "VUL": 66,
+        "LXX": 66
+      },
+      "text": {
+        "VUL": "Illi autem abeuntes, munierunt sepulchrum, signantes lapidem, cum custodibus.",
+        "LXX": "Οἱ δὲ πορευθέντες ἠσφαλίσαντο τὸν τάφον, σφραγίσαντες τὸν λίθον, μετὰ τῆς κουστωδίας.",
+        "SYN": "Они пошли и поставили у гроба стражу, и приложили к камню печать.",
+        "BYZ": "Οἱ δὲ πορευθέντες ἠσφαλίσαντο τὸν τάφον, σφραγίσαντες τὸν λίθον, μετὰ τῆς κουστωδίας."
+      }
     }
   }
 }

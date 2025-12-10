@@ -1,0 +1,327 @@
+{
+  "chapter_id": "GENE_001",
+  "chapter_key": "1",
+  "chapter_number": 1,
+  "sort_number": 1,
+  "name": "1",
+  "book_key": "GENE",
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verse_count": 31,
+  "verses": {
+    "1": {
+      "latin": "In principio creavit Deus cælum et terram.",
+      "english": "In the beginning, when God created the heavens and the earth,",
+      "hebrew": "בְּרֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים אֵ֥ת הַשָּׁמַ֖יִם וְאֵ֥ת הָאָֽרֶץ׃",
+      "greek": "ΕΝ ΑΡΧΗ ἐποίησεν ὁ θεὸς τὸν οὐρανὸν καὶ τὴν γῆν.",
+      "french": "Au commencement, Dieu créa le ciel et la terre.",
+      "spanish": "En el principio creó Dios los cielos y la tierra.",
+      "italian": "In principio Dio creò il cielo e la terra.",
+      "portuguese": "No princípio, criou Deus os céus e a terra.",
+      "russian": "В начале сотворил Бог небо и землю.",
+      "sort_number": 1,
+      "name": "1",
+      "word_count": 7
+    },
+    "2": {
+      "latin": "Terra autem erat inanis et vacua, et tenebræ erant super faciem abyssi: et spiritus Dei ferebatur super aquas.",
+      "english": "the earth was a formless wasteland, and darkness covered the abyss, while a mighty wind swept over the waters.",
+      "hebrew": "וְהָאָ֗רֶץ הָיְתָ֥ה תֹ֨הוּ֙ וָבֹ֔הוּ וְחֹ֖שֶׁךְ עַל פְּנֵ֣י תְה֑וֹם וְר֣וּחַ אֱלֹהִ֔ים מְרַחֶ֖פֶת עַל פְּנֵ֥י הַמָּֽיִם׃",
+      "sort_number": 2,
+      "name": "2",
+      "word_count": 18,
+      "russian": "Земля же была безвидна и пуста, и тьма над бездною, и Дух Божий носился над водою.",
+      "greek": "ἡ δὲ γῆ ἦν ἀόρατος καὶ ἀκατασκεύαστος, καὶ σκότος ἐπάνω τῆς ἀβύσσου· καὶ πνεῦμα θεοῦ ἐπεφέρετο ἐπάνω τοῦ ὕδατος."
+    },
+    "3": {
+      "latin": "Dixitque Deus: Fiat lux. Et facta est lux.",
+      "english": "Then God said, \"Let there be light,\" and there was light.",
+      "hebrew": "וַיֹּ֥אמֶר אֱלֹהִ֖ים יְהִ֣י א֑וֹר וַֽיְהִי אֽוֹר׃",
+      "sort_number": 3,
+      "name": "3",
+      "word_count": 8,
+      "russian": "И сказал Бог: да будет свет. И стал свет.",
+      "greek": "καὶ εἶπεν ὁ θεός Γενηθήτω φῶς· καὶ ἐγένετο φῶς."
+    },
+    "4": {
+      "latin": "Et vidit Deus lucem quod esset bona: et divisit lucem a tenebris.",
+      "english": "God saw how good the light was. God then separated the light from the darkness.",
+      "hebrew": "וַיַּ֧רְא אֱלֹהִ֛ים אֶת הָא֖וֹר כִּי ט֑וֹב וַיַּבְדֵּ֣ל אֱלֹהִ֔ים בֵּ֥ין הָא֖וֹר וּבֵ֥ין הַחֹֽשֶׁךְ׃",
+      "sort_number": 4,
+      "name": "4",
+      "word_count": 12,
+      "russian": "И увидел Бог свет, что он хорош, и отделил Бог свет от тьмы.",
+      "greek": "καὶ ἴδεν ὁ θεὸς τὸ φῶς ὅτι καλόν· καὶ διεχώρισεν ὁ θεὸς ἀνὰ μέσον τοῦ φωτὸς καὶ ἀνὰ μέσον τοῦ σκότους."
+    },
+    "5": {
+      "latin": "Appellavitque lucem Diem, et tenebras Noctem: factumque est vespere et mane, dies unus.",
+      "english": "God called the light \"day,\" and the darkness he called \"night.\" Thus evening came, and morning followed - the first day.",
+      "hebrew": "וַיִּקְרָ֨א אֱלֹהִ֤ים לָאוֹר֙ י֔וֹם וְלַחֹ֖שֶׁךְ קָ֣רָא לָ֑יְלָה וַֽיְהִי עֶ֥רֶב וַֽיְהִי בֹ֖קֶר י֥וֹם אֶחָֽד׃",
+      "sort_number": 5,
+      "name": "5",
+      "word_count": 13,
+      "russian": "И назвал Бог свет днем, а тьму ночью. И был вечер, и было утро: день один.",
+      "greek": "καὶ ἐκάλεσεν ὁ θεὸς τὸ φῶς ἡμέραν, καὶ τὸ σκότος ἐκάλεσεν νύκτα. καὶ ἐγένετο ἑσπέρα καὶ ἐγένετο πρωί, ἡμέρα μία."
+    },
+    "6": {
+      "sort_number": 6,
+      "name": "6",
+      "latin": "Dixit quoque Deus: Fiat firmamentum in medio aquarum: et dividat aquas ab aquis.",
+      "word_count": 13,
+      "hebrew": "וַיֹּ֣אמֶר אֱלֹהִ֔ים יְהִ֥י רָקִ֖יעַ בְּת֣וֹךְ הַמָּ֑יִם וִיהִ֣י מַבְדִּ֔יל בֵּ֥ין מַ֖יִם לָמָֽיִם׃",
+      "russian": "И сказал Бог: да будет твердь посреди воды, и да отделяет она воду от воды. [И стало так.]",
+      "greek": "Καὶ εἶπεν ὁ θεός Γενηθήτω στερέωμα ἐν μέσῳ τοῦ ὕδατος, καὶ ἔστω διαχωρίζον ἀνὰ μέσον ὕδατος καὶ ὕδατος· καὶ ἐγένετο οὕτως.",
+      "english": "Then God said, \"Let there be a dome in the middle of the waters, to separate one body of water from the other.\" And so it happened:"
+    },
+    "7": {
+      "sort_number": 7,
+      "name": "7",
+      "latin": "Et fecit Deus firmamentum, divisitque aquas, quæ erant sub firmamento, ab his, quæ erant super firmamentum. Et factum est ita.",
+      "word_count": 20,
+      "hebrew": "וַיַּ֣עַשׂ אֱלֹהִים֮ אֶת הָרָקִיעַ֒ וַיַּבְדֵּ֗ל בֵּ֤ין הַמַּ֨יִם֙ אֲשֶׁר֙ מִתַּ֣חַת לָרָקִ֔יעַ וּבֵ֣ין הַמַּ֔יִם אֲשֶׁ֖ר מֵעַ֣ל לָרָקִ֑יעַ וַֽיְהִי כֵֽן׃",
+      "russian": "И создал Бог твердь, и отделил воду, которая под твердью, от воды, которая над твердью. И стало так.",
+      "greek": "καὶ ἐποίησεν ὁ θεὸς τὸ στερέωμα· καὶ διεχώρισεν ὁ θεὸς ἀνὰ μέσον τοῦ ὕδατος ὃ ἦν ὑποκάτω τοῦ στερεώματος, καὶ ἀνὰ μέσον τοῦ ὕδατος τοῦ ἐπάνω τοῦ στερεώματος.",
+      "english": "God made the dome, and it separated the water above the dome from the water below it."
+    },
+    "8": {
+      "sort_number": 8,
+      "name": "8",
+      "latin": "Vocavitque Deus firmamentum, Cælum: et factum est vespere et mane, dies secundus.",
+      "word_count": 12,
+      "hebrew": "וַיִּקְרָ֧א אֱלֹהִ֛ים לָֽרָקִ֖יעַ שָׁמָ֑יִם וַֽיְהִי עֶ֥רֶב וַֽיְהִי בֹ֖קֶר י֥וֹם שֵׁנִֽי׃",
+      "russian": "И назвал Бог твердь небом. [И увидел Бог, что это хорошо.] И был вечер, и было утро: день второй.",
+      "greek": "καὶ ἐκάλεσεν ὁ θεὸς τὸ στερέωμα οὐρανόν· καὶ ἴδεν ὁ θεὸς ὅτι καλόν. καὶ ἐγένετο ἑσπέρα καὶ ἐγένετο πρωί, ἡμέρα δευτέρα.",
+      "english": "God called the dome \"the sky.\" Evening came, and morning followed - the second day."
+    },
+    "9": {
+      "sort_number": 9,
+      "name": "9",
+      "latin": "Dixit vero Deus: Congregentur aquæ, quæ sub cælo sunt, in locum unum: et appareat arida. Et factum est ita.",
+      "word_count": 19,
+      "hebrew": "וַיֹּ֣אמֶר אֱלֹהִ֗ים יִקָּו֨וּ הַמַּ֜יִם מִתַּ֤חַת הַשָּׁמַ֨יִם֙ אֶל מָק֣וֹם אֶחָ֔ד וְתֵרָאֶ֖ה הַיַּבָּשָׁ֑ה וַֽיְהִי כֵֽן׃",
+      "russian": "И сказал Бог: да соберется вода, которая под небом, в одно место, и да явится суша. И стало так. [И собралась вода под небом в свои места, и явилась суша.]",
+      "greek": "Καὶ εἶπεν ὁ θεός Συναχθήτω τὸ ὕδωρ τὸ ὑποκάτω τοῦ οὐρανοῦ εἰς συναγωγὴν μίαν, καὶ ὀφθήτω ἡ ξηρά· καὶ ἐγένετο οὕτως. καὶ συνήχθη τὸ ὕδωρ τὸ ὑποκάτω τοῦ οὐρανοῦ εἰς τὰς συναγωγὰς αὐτῶν, καὶ ὤφθη ἡ ξηρά.",
+      "english": "Then God said, \"Let the water under the sky be gathered into a single basin, so that the dry land may appear.\" And so it happened: the water under the sky was gathered into its basin, and the dry land appeared."
+    },
+    "10": {
+      "sort_number": 10,
+      "name": "10",
+      "latin": "Et vocavit Deus aridam Terram, congregationesque aquarum appellavit Maria. Et vidit Deus quod esset bonum.",
+      "word_count": 15,
+      "hebrew": "וַיִּקְרָ֨א אֱלֹהִ֤ים לַיַּבָּשָׁה֙ אֶ֔רֶץ וּלְמִקְוֵ֥ה הַמַּ֖יִם קָרָ֣א יַמִּ֑ים וַיַּ֥רְא אֱלֹהִ֖ים כִּי טֽוֹב׃",
+      "russian": "И назвал Бог сушу землею, а собрание вод назвал морями. И увидел Бог, что это хорошо.",
+      "greek": "καὶ ἐκάλεσεν ὁ θεὸς τὴν ξηρὰν γῆν, καὶ τὰ συστέματα τῶν ὑδάτων ἐκάλεσεν θαλάσσας· καὶ ἴδεν ὁ θεὸς ὅτι καλόν.",
+      "english": "God called the dry land \"the earth,\" and the basin of the water he called \"the sea.\" God saw how good it was."
+    },
+    "11": {
+      "sort_number": 11,
+      "name": "11",
+      "latin": "Et ait: Germinet terra herbam virentem, et facientem semen, et lignum pomiferum faciens fructum juxta genus suum, cujus semen in semetipso sit super terram. Et factum est ita.",
+      "word_count": 28,
+      "hebrew": "וַיֹּ֣אמֶר אֱלֹהִ֗ים תַּֽדְשֵׁ֤א הָאָ֨רֶץ֙ דֶּ֔שֶׁא עֵ֚שֶׂב מַזְרִ֣יעַ זֶ֔רַע עֵ֣ץ פְּרִ֞י עֹ֤שֶׂה פְּרִי֙ לְמִינ֔וֹ אֲשֶׁ֥ר זַרְעוֹ ב֖וֹ עַל הָאָ֑רֶץ וַֽיְהִי כֵֽן׃",
+      "russian": "И сказал Бог: да произрастит земля зелень, траву, сеющую семя [по роду и по подобию ее, и] дерево плодовитое, приносящее по роду своему плод, в котором семя его на земле. И стало так.",
+      "greek": "καὶ εἶπεν ὁ θεός Βλαστησάτω ἡ γῆ βοτάνην χόρτου, σπεῖρον σπέρμα κατὰ γένος καὶ καθ’ ὁμοιότητα, καὶ ξύλον κάρπιμον ποιοῦν καρπόν, οὗ τὸ σπέρμα αὐτοῦ ἐν αὐτῷ κατὰ γένος εἰς ὁμοιότητα ἐπὶ τῆς γῆς· καὶ ἐγένετο οὕτως.",
+      "english": "Then God said, \"Let the earth bring forth vegetation: every kind of plant that bears seed and every kind of fruit tree on earth that bears fruit with its seed in it.\" And so it happened:"
+    },
+    "12": {
+      "sort_number": 12,
+      "name": "12",
+      "latin": "Et protulit terra herbam virentem, et facientem semen juxta genus suum, lignumque faciens fructum, et habens unumquodque sementem secundum speciem suam. Et vidit Deus quod esset bonum.",
+      "word_count": 27,
+      "hebrew": "וַתּוֹצֵ֨א הָאָ֜רֶץ דֶּ֠שֶׁא עֵ֣שֶׂב מַזְרִ֤יעַ זֶ֨רַע֙ לְמִינֵ֔הוּ וְעֵ֧ץ עֹֽשֶׂה פְּרִ֛י אֲשֶׁ֥ר זַרְעוֹ ב֖וֹ לְמִינֵ֑הוּ וַיַּ֥רְא אֱלֹהִ֖ים כִּי טֽוֹב׃",
+      "russian": "И произвела земля зелень, траву, сеющую семя по роду [и по подобию] ее, и дерево [плодовитое], приносящее плод, в котором семя его по роду его [на земле]. И увидел Бог, что это хорошо.",
+      "greek": "καὶ ἐξήνεγκεν ἡ γῆ βοτάνην χόρτου, σπεῖρον σπέρμα κατὰ γένος καὶ καθ’ ὁμοιότητα, καὶ ξύλον κάρπιμον ποιοῦν καρπόν, οὗ τὸ σπέρμα αὐτοῦ ἐν αὐτῷ κατὰ γένος ἐπὶ τῆς γῆς. καὶ ἴδεν ὁ θεὸς ὅτι καλόν.",
+      "english": "the earth brought forth every kind of plant that bears seed and every kind of fruit tree on earth that bears fruit with its seed in it. God saw how good it was."
+    },
+    "13": {
+      "sort_number": 13,
+      "name": "13",
+      "latin": "Et factum est vespere et mane, dies tertius.",
+      "word_count": 8,
+      "hebrew": "וַֽיְהִי עֶ֥רֶב וַֽיְהִי בֹ֖קֶר י֥וֹם שְׁלִישִֽׁי׃",
+      "russian": "И был вечер, и было утро: день третий.",
+      "greek": "καὶ ἐγένετο ⸂⸆⸃ ἑσπέρα καὶ ἐγένετο πρωί, ἡμέρα τρίτη.",
+      "english": "Evening came, and morning followed - the third day."
+    },
+    "14": {
+      "sort_number": 14,
+      "name": "14",
+      "latin": "Dixit autem Deus: Fiant luminaria in firmamento cæli, et dividant diem ac noctem, et sint in signa et tempora, et dies et annos:",
+      "word_count": 23,
+      "hebrew": "וַיֹּ֣אמֶר אֱלֹהִ֗ים יְהִ֤י מְאֹרֹת֙ בִּרְקִ֣יעַ הַשָּׁמַ֔יִם לְהַבְדִּ֕יל בֵּ֥ין הַיּ֖וֹם וּבֵ֣ין הַלָּ֑יְלָה וְהָי֤וּ לְאֹתֹת֙ וּלְמ֣וֹעֲדִ֔ים וּלְיָמִ֖ים וְשָׁנִֽים׃",
+      "russian": "И сказал Бог: да будут светила на тверди небесной [для освещения земли и] для отделения дня от ночи, и для знамений, и времен, и дней, и годов;",
+      "greek": "Καὶ εἶπεν ὁ θεός Γενηθήτωσαν φωστῆρες ἐν τῷ στερεώματι τοῦ οὐρανοῦ εἰς φαῦσιν τῆς γῆς, καὶ ἄρχειν τῆς ἡμέρας καὶ τῆς νυκτὸς καὶ διαχωρίζειν ⸆ ἀνὰ μέσον τῆς ἡμέρας καὶ ἀνὰ μέσον τῆς νυκτός· καὶ ἔστωσαν εἰς σημεῖα καὶ εἰς καιροὺς καὶ εἰς ἡμέρας καὶ εἰς ἐνιαυτούς·",
+      "english": "Then God said: \"Let there be lights in the dome of the sky, to separate day from night. Let them mark the fixed times, the days and the years,"
+    },
+    "15": {
+      "sort_number": 15,
+      "name": "15",
+      "latin": "ut luceant in firmamento cæli, et illuminent terram. Et factum est ita.",
+      "word_count": 12,
+      "hebrew": "וְהָי֤וּ לִמְאוֹרֹת֙ בִּרְקִ֣יעַ הַשָּׁמַ֔יִם לְהָאִ֖יר עַל הָאָ֑רֶץ וַֽיְהִי כֵֽן׃",
+      "russian": "и да будут они светильниками на тверди небесной, чтобы светить на землю. И стало так.",
+      "greek": "καὶ ἔστωσαν εἰς φαῦσιν ἐν τῷ στερεώματι τοῦ οὐρανοῦ, ὥστε φαίνειν ἐπὶ τῆς γῆς. καὶ ἐγένετο οὕτως.",
+      "english": "and serve as luminaries in the dome of the sky, to shed light upon the earth.\" And so it happened:"
+    },
+    "16": {
+      "sort_number": 16,
+      "name": "16",
+      "latin": "Fecitque Deus duo luminaria magna: luminare majus, ut præesset diei: et luminare minus, ut præesset nocti: et stellas.",
+      "word_count": 18,
+      "hebrew": "וַיַּ֣עַשׂ אֱלֹהִ֔ים אֶת שְׁנֵ֥י הַמְּאֹרֹ֖ת הַגְּדֹלִ֑ים אֶת הַמָּא֤וֹר הַגָּדֹל֙ לְמֶמְשֶׁ֣לֶת הַיּ֔וֹם וְאֶת הַמָּא֤וֹר הַקָּטֹן֙ לְמֶמְשֶׁ֣לֶת הַלַּ֔יְלָה וְאֵ֖ת הַכּוֹכָבִֽים׃",
+      "russian": "И создал Бог два светила великие: светило большее, для управления днем, и светило меньшее, для управления ночью, и звезды;",
+      "greek": "καὶ ἐποίησεν ὁ θεὸς τοὺς δύο φωστῆρας τοὺς μεγάλους, τὸν φωστῆρα τὸν μέγαν εἰς ἀρχὰς τῆς ἡμέρας καὶ τὸν φωστῆρα τὸν ἐλάσσω εἰς ἀρχὰς τῆς νυκτός, καὶ τοὺς ἀστέρας.",
+      "english": "God made the two great lights, the greater one to govern the day, and the lesser one to govern the night; and he made the stars."
+    },
+    "17": {
+      "sort_number": 17,
+      "name": "17",
+      "latin": "Et posuit eas in firmamento cæli, ut lucerent super terram,",
+      "word_count": 10,
+      "hebrew": "וַיִּתֵּ֥ן אֹתָ֛ם אֱלֹהִ֖ים בִּרְקִ֣יעַ הַשָּׁמָ֑יִם לְהָאִ֖יר עַל הָאָֽרֶץ׃",
+      "russian": "и поставил их Бог на тверди небесной, чтобы светить на землю,",
+      "greek": "καὶ ἔθετο αὐτοὺς ὁ θεὸς ἐν τῷ στερεώματι τοῦ οὐρανοῦ, ὥστε φαίνειν ἐπὶ τῆς γῆς,",
+      "english": "God set them in the dome of the sky, to shed light upon the earth,"
+    },
+    "18": {
+      "sort_number": 18,
+      "name": "18",
+      "latin": "et præessent diei ac nocti, et dividerent lucem ac tenebras. Et vidit Deus quod esset bonum.",
+      "word_count": 16,
+      "hebrew": "וְלִמְשֹׁל֙ בַּיּ֣וֹם וּבַלַּ֔יְלָה וּֽלֲהַבְדִּ֔יל בֵּ֥ין הָא֖וֹר וּבֵ֣ין הַחֹ֑שֶׁךְ וַיַּ֥רְא אֱלֹהִ֖ים כִּי טֽוֹב׃",
+      "russian": "и управлять днем и ночью, и отделять свет от тьмы. И увидел Бог, что это хорошо.",
+      "greek": "καὶ ἄρχειν τῆς ἡμέρας καὶ τῆς νυκτός, καὶ διαχωρίζειν ἀνὰ μέσον τοῦ φωτὸς καὶ ἀνὰ μέσον τοῦ σκότους· καὶ ἴδεν ὁ θεὸς ὅτι καλόν.",
+      "english": "to govern the day and the night, and to separate the light from the darkness. God saw how good it was."
+    },
+    "19": {
+      "sort_number": 19,
+      "name": "19",
+      "latin": "Et factum est vespere et mane, dies quartus.",
+      "word_count": 8,
+      "hebrew": "וַֽיְהִי עֶ֥רֶב וַֽיְהִי בֹ֖קֶר י֥וֹם רְבִיעִֽי׃",
+      "russian": "И был вечер, и было утро: день четвёртый.",
+      "greek": "καὶ ἐγένετο ἑσπέρα καὶ ἐγένετο πρωί, ἡμέρα τετάρτη. ⸆",
+      "english": "Evening came, and morning followed - the fourth day."
+    },
+    "20": {
+      "sort_number": 20,
+      "name": "20",
+      "latin": "Dixit etiam Deus: Producant aquæ reptile animæ viventis, et volatile super terram sub firmamento cæli.",
+      "word_count": 15,
+      "hebrew": "וַיֹּ֣אמֶר אֱלֹהִ֔ים יִשְׁרְצ֣וּ הַמַּ֔יִם שֶׁ֖רֶץ נֶ֣פֶשׁ חַיָּ֑ה וְעוֹף֙ יְעוֹפֵ֣ף עַל הָאָ֔רֶץ עַל פְּנֵ֖י רְקִ֥יעַ הַשָּׁמָֽיִם׃",
+      "russian": "И сказал Бог: да произведет вода пресмыкающихся, душу живую; и птицы да полетят над землею, по тверди небесной. [И стало так.]",
+      "greek": "Καὶ εἶπεν ὁ θεός Ἐξαγαγέτω τὰ ὕδατα ἑρπετὰ ψυχῶν ζωσῶν καὶ πετεινὰ πετόμεν[α] ἐπὶ τῆς γῆς κατὰ τὸ στερέωμ[α τοῦ] οὐρανοῦ· καὶ ἐγένετο οὕτως.",
+      "english": "Then God said, \"Let the water teem with an abundance of living creatures, and on the earth let birds fly beneath the dome of the sky.\" And so it happened:"
+    },
+    "21": {
+      "sort_number": 21,
+      "name": "21",
+      "latin": "Creavitque Deus cete grandia, et omnem animam viventem atque motabilem, quam produxerant aquæ in species suas, et omne volatile secundum genus suum. Et vidit Deus quod esset bonum.",
+      "word_count": 28,
+      "hebrew": "וַיִּבְרָ֣א אֱלֹהִ֔ים אֶת הַתַּנִּינִ֖ם הַגְּדֹלִ֑ים וְאֵ֣ת כָּל נֶ֣פֶשׁ הַֽחַיָּ֣ה הָֽרֹמֶ֡שֶׂת אֲשֶׁר֩ שָׁרְצ֨וּ הַמַּ֜יִם לְמִֽינֵהֶ֗ם וְאֵ֨ת כָּל ע֤וֹף כָּנָף֙ לְמִינֵ֔הוּ וַיַּ֥רְא אֱלֹהִ֖ים כִּי טֽוֹב׃",
+      "russian": "И сотворил Бог рыб больших и всякую душу животных пресмыкающихся, которых произвела вода, по роду их, и всякую птицу пернатую по роду ее. И увидел Бог, что это хорошо.",
+      "greek": "καὶ ἐποίησεν ὁ θεὸς τὰ κήτη [τὰ με]γάλα καὶ πᾶσαν ψυχὴν [ζῴων ἑρπε]τῶν, ἃ ἐξήγαγεν [τὰ ὕδατα κατὰ γένη αὐτῶν], καὶ πᾶν πετεινὸν πτ[ερωτὸν] κατὰ γένος· καὶ ἴδεν ὁ [θεὸς ὅτι καλά].",
+      "english": "God created the great sea monsters and all kinds of swimming creatures with which the water teems, and all kinds of winged birds. God saw how good it was,"
+    },
+    "22": {
+      "sort_number": 22,
+      "name": "22",
+      "latin": "Benedixitque eis, dicens: Crescite, et multiplicamini, et replete aquas maris: avesque multiplicentur super terram.",
+      "word_count": 14,
+      "hebrew": "וַיְבָ֧רֶךְ אֹתָ֛ם אֱלֹהִ֖ים לֵאמֹ֑ר פְּר֣וּ וּרְב֗וּ וּמִלְא֤וּ אֶת הַמַּ֨יִם֙ בַּיַּמִּ֔ים וְהָע֖וֹף יִ֥רֶב בָּאָֽרֶץ׃",
+      "russian": "И благословил их Бог, говоря: плодитесь и размножайтесь, и наполняйте воды в морях, и птицы да размножаются на земле.",
+      "greek": "καὶ ηὐλόγησεν αὐτὰ ὁ θ[εὸς λέγων] Αὐξάνεσθε καὶ πληθ[ύνεσθε, καὶ] πληρώσατε τὰ ὕδατα [ἐν ταῖς θα]λάσσαις, καὶ τὰ πετε[ινὰ πληθυ]νέσθωσαν ἐπὶ τῆς [γῆς.",
+      "english": "and God blessed them, saying, \"Be fertile, multiply, and fill the water of the seas; and let the birds multiply on the earth.\""
+    },
+    "23": {
+      "sort_number": 23,
+      "name": "23",
+      "latin": "Et factum est vespere et mane, dies quintus.",
+      "word_count": 8,
+      "hebrew": "וַֽיְהִי עֶ֥רֶב וַֽיְהִי בֹ֖קֶר י֥וֹם חֲמִישִֽׁי׃",
+      "russian": "И был вечер, и было утро: день пятый.",
+      "greek": "καὶ ἐγέ]νετο ἑσπέρα καὶ ἐγ[ένετο πρωί], ἡμέρα πέμπτη.",
+      "english": "Evening came, and morning followed - the fifth day."
+    },
+    "24": {
+      "sort_number": 24,
+      "name": "24",
+      "latin": "Dixit quoque Deus: Producat terra animam viventem in genere suo, jumenta, et reptilia, et bestias terræ secundum species suas. Factumque est ita.",
+      "word_count": 22,
+      "hebrew": "וַיֹּ֣אמֶר אֱלֹהִ֗ים תּוֹצֵ֨א הָאָ֜רֶץ נֶ֤פֶשׁ חַיָּה֙ לְמִינָ֔הּ בְּהֵמָ֥ה וָרֶ֛מֶשׂ וְחַֽיְתוֹ אֶ֖רֶץ לְמִינָ֑הּ וַֽיְהִי כֵֽן׃",
+      "russian": "И сказал Бог: да произведет земля душу живую по роду ее, скотов, и гадов, и зверей земных по роду их. И стало так.",
+      "greek": "Καὶ εἶπεν ὁ θεός Ἐξαγαγ[έτω ἡ γῆ ψυχὴν] ζῶσαν κατὰ γένος, [τετράποδα] καὶ ἑρπετὰ καὶ θηρί[α τῆς γῆς κατὰ] γένος, καὶ ἐγένετο [οὕτως].",
+      "english": "Then God said, \"Let the earth bring forth all kinds of living creatures: cattle, creeping things, and wild animals of all kinds.\" And so it happened:"
+    },
+    "25": {
+      "sort_number": 25,
+      "name": "25",
+      "latin": "Et fecit Deus bestias terræ juxta species suas, et jumenta, et omne reptile terræ in genere suo. Et vidit Deus quod esset bonum,",
+      "word_count": 23,
+      "hebrew": "וַיַּ֣עַשׂ אֱלֹהִים֩ אֶת חַיַּ֨ת הָאָ֜רֶץ לְמִינָ֗הּ וְאֶת הַבְּהֵמָה֙ לְמִינָ֔הּ וְאֵ֛ת כָּל רֶ֥מֶשׂ הָֽאֲדָמָ֖ה לְמִינֵ֑הוּ וַיַּ֥רְא אֱלֹהִ֖ים כִּי טֽוֹב׃",
+      "russian": "И создал Бог зверей земных по роду их, и скот по роду его, и всех гадов земных по роду их. И увидел Бог, что это хорошо.",
+      "greek": "καὶ ἐποίησεν ὁ θεὸς τὰ [θηρία τῆς γῆς] κατὰ γένος καὶ τὰ κτ[ήνη κατὰ γέ]νος καὶ πάντα τὰ ἑρπ[ετὰ τῆς γῆς] κατὰ γένος αὐτῶν· καὶ ἴδεν ὁ θεὸς ὅτι καλά.",
+      "english": "God made all kinds of wild animals, all kinds of cattle, and all kinds of creeping things of the earth. God saw how good it was."
+    },
+    "26": {
+      "sort_number": 26,
+      "name": "26",
+      "latin": "et ait: Faciamus hominem ad imaginem et similitudinem nostram: et præsit piscibus maris, et volatilibus cæli, et bestiis, universæque terræ, omnique reptili, quod movetur in terra.",
+      "word_count": 26,
+      "hebrew": "וַיֹּ֣אמֶר אֱלֹהִ֔ים נַֽעֲשֶׂ֥ה אָדָ֛ם בְּצַלְמֵ֖נוּ כִּדְמוּתֵ֑נוּ וְיִרְדּוּ֩ בִדְגַ֨ת הַיָּ֜ם וּבְע֣וֹף הַשָּׁמַ֗יִם וּבַבְּהֵמָה֙ וּבְכָל הָאָ֔רֶץ וּבְכָל הָרֶ֖מֶשׂ הָֽרֹמֵ֥שׂ עַל הָאָֽרֶץ׃",
+      "russian": "И сказал Бог: сотворим человека по образу Нашему [и] по подобию Нашему, и да владычествуют они над рыбами морскими, и над птицами небесными, [и над зверями,] и над скотом, и над всею землею, и над всеми гадами, пресмыкающимися по земле.",
+      "greek": "⸂⸆⸃ καὶ εἶπεν ὁ θεός Ποιήσωμεν ἄνθρωπον κατ’ εἰκόνα ἡμετέραν καὶ καθ’ ὁμοίωσιν· καὶ ἀρχέτωσαν τῶν ἰχθύων τῆς θαλάσσης καὶ τῶν πετεινῶν τοῦ οὐρανοῦ καὶ τῶν κτηνῶν καὶ πάσης τῆς γῆς καὶ πάντων τῶν ἑρπετῶν τῶν ἑρπόντων ἐπὶ τῆς γῆς.",
+      "english": "Then God said: \"Let us make man in our image, after our likeness. Let them have dominion over the fish of the sea, the birds of the air, and the cattle, and over all the wild animals and all the creatures that crawl on the ground.\""
+    },
+    "27": {
+      "sort_number": 27,
+      "name": "27",
+      "latin": "Et creavit Deus hominem ad imaginem suam: ad imaginem Dei creavit illum, masculum et feminam creavit eos.",
+      "word_count": 17,
+      "hebrew": "וַיִּבְרָ֨א אֱלֹהִ֤ים אֶת הָֽאָדָם֙ בְּצַלְמ֔וֹ בְּצֶ֥לֶם אֱלֹהִ֖ים בָּרָ֣א אֹת֑וֹ זָכָ֥ר וּנְקֵבָ֖ה בָּרָ֥א אֹתָֽם׃",
+      "russian": "И сотворил Бог человека по образу Своему, по образу Божию сотворил его; мужчину и женщину сотворил их.",
+      "greek": "καὶ ἐποίησεν ὁ θεὸς τὸν ἄνθρωπον, κατ’ εἰκόνα θεοῦ ἐποίησεν αὐτόν· ἄρσεν καὶ θῆλυ ἐποίησεν αὐτούς.",
+      "english": "God created man in his image; in the divine image he created him; male and female he created them."
+    },
+    "28": {
+      "sort_number": 28,
+      "name": "28",
+      "latin": "Benedixitque illis Deus, et ait: Crescite et multiplicamini, et replete terram, et subjicite eam, et dominamini piscibus maris, et volatilibus cæli, et universis animantibus, quæ moventur super terram.",
+      "word_count": 28,
+      "hebrew": "וַיְבָ֣רֶךְ אֹתָם֮ אֱלֹהִים֒ וַיֹּ֨אמֶר לָהֶ֜ם אֱלֹהִ֗ים פְּר֥וּ וּרְב֛וּ וּמִלְא֥וּ אֶת הָאָ֖רֶץ וְכִבְשֻׁ֑הָ וּרְד֞וּ בִּדְגַ֤ת הַיָּם֙ וּבְע֣וֹף הַשָּׁמַ֔יִם וּבְכָל חַיָּ֖ה הָֽרֹמֶ֥שֶׂת עַל הָאָֽרֶץ׃",
+      "russian": "И благословил их Бог, и сказал им Бог: плодитесь и размножайтесь, и наполняйте землю, и обладайте ею, и владычествуйте над рыбами морскими [и над зверями,] и над птицами небесными, [и над всяким скотом, и над всею землею,] и над всяким животным, пресмыкающимся по земле.",
+      "greek": "καὶ ηὐλόγησεν αὐτοὺς ὁ θεὸς λέγων Αὐξάνεσθε καὶ πληθύνεσθε, καὶ πληρώσατε τὴν γῆν καὶ κατακυριεύσατε αὐτῆς, καὶ ἄρχετε τῶν ἰχθύων τῆς θαλάσσης καὶ τῶν πετεινῶν τοῦ οὐρανοῦ καὶ πάντων τῶν κτηνῶν καὶ πάσης τῆς γῆς καὶ πάντων τῶν ἑρπετῶν τῶν ἑρπόντων ἐπὶ τῆς γῆς.",
+      "english": "God blessed them, saying: \"Be fertile and multiply; fill the earth and subdue it. Have dominion over the fish of the sea, the birds of the air, and all the living things that move on the earth.\""
+    },
+    "29": {
+      "sort_number": 29,
+      "name": "29",
+      "latin": "Dixitque Deus: Ecce dedi vobis omnem herbam afferentem semen super terram, et universa ligna quæ habent in semetipsis sementem generis sui, ut sint vobis in escam:",
+      "word_count": 26,
+      "hebrew": "וַיֹּ֣אמֶר אֱלֹהִ֗ים הִנֵּה֩ נָתַ֨תִּי לָכֶ֜ם אֶת כָּל עֵ֣שֶׂב זֹרֵ֣עַ זֶ֗רַע אֲשֶׁר֙ עַל פְּנֵ֣י כָל הָאָ֔רֶץ וְאֶת כָּל הָעֵ֛ץ אֲשֶׁר בּ֥וֹ פְרִי עֵ֖ץ זֹרֵ֣עַ זָ֑רַע לָכֶ֥ם יִֽהְיֶ֖ה לְאָכְלָֽה׃",
+      "russian": "И сказал Бог: вот, Я дал вам всякую траву, сеющую семя, какая есть на всей земле, и всякое дерево, у которого плод древесный, сеющий семя; -- вам сие будет в пищу;",
+      "greek": "καὶ εἶπεν ὁ θεός Ἰδοὺ δέδωκα ὑμῖν πᾶν χόρτον σπόριμον σπεῖρον σπέρμα, ὅ ἐστιν ἐπάνω πάσης τῆς γῆς· καὶ πᾶν ξύλον, ὃ ἔχει ἐν ἑαυτῷ καρπὸν σπέρματος σπορίμου· [ὑ]μῖν ἔσται εἰς βρῶσιν,",
+      "english": "God also said: \"See, I give you every seed-bearing plant all over the earth and every tree that has seed-bearing fruit on it to be your food;"
+    },
+    "30": {
+      "sort_number": 30,
+      "name": "30",
+      "latin": "et cunctis animantibus terræ, omnique volucri cæli, et universis quæ moventur in terra, et in quibus est anima vivens, ut habeant ad vescendum. Et factum est ita.",
+      "word_count": 27,
+      "hebrew": "וּֽלְכָל חַיַּ֣ת הָ֠אָרֶץ וּלְכָל ע֨וֹף הַשָּׁמַ֜יִם וּלְכֹ֣ל רוֹמֵ֣שׂ עַל הָאָ֗רֶץ אֲשֶׁר בּוֹ֙ נֶ֣פֶשׁ חַיָּ֔ה אֶת כָּל יֶ֥רֶק עֵ֖שֶׂב לְאָכְלָ֑ה וַֽיְהִי כֵֽן׃",
+      "russian": "а всем зверям земным, и всем птицам небесным, и всякому [гаду,] пресмыкающемуся по земле, в котором душа живая, дал Я всю зелень травную в пищу. И стало так.",
+      "greek": "καὶ πᾶσι [τοῖ]ς θηρίοις τῆς γῆς καὶ πᾶσι [τοῖ]ς πετεινοῖς τοῦ οὐρανοῦ [καὶ π]αντὶ ἑρπετῷ τῷ ἕρπον[τι ἐπὶ τῆς] γῆς, ὃ ἔχει ἐν ἑαυτῷ [ψυχὴ]ν ζωῆς· καὶ πάντα χόρ[τον χλ]ωρὸν εἰς βρῶσιν. καὶ [ἐγένετ]ο οὕτως.",
+      "english": "and to all the animals of the land, all the birds of the air, and all the living creatures that crawl on the ground, I give all the green plants for food.\" And so it happened."
+    },
+    "31": {
+      "sort_number": 31,
+      "name": "31",
+      "latin": "Viditque Deus cuncta quæ fecerat, et erant valde bona. Et factum est vespere et mane, dies sextus.",
+      "word_count": 17,
+      "hebrew": "וַיַּ֤רְא אֱלֹהִים֙ אֶת כָּל אֲשֶׁ֣ר עָשָׂ֔ה וְהִנֵּה ט֖וֹב מְאֹ֑ד וַֽיְהִי עֶ֥רֶב וַֽיְהִי בֹ֖קֶר י֥וֹם הַשִּׁשִּֽׁי׃",
+      "russian": "И увидел Бог все, что Он создал, и вот, хорошо весьма. И был вечер, и было утро: день шестой.",
+      "greek": "[καὶ ἴδεν ὁ] θεὸς τὰ πάντα ὅσα ἐποίη[σεν, καὶ] ἰδοὺ καλὰ λίαν. καὶ ἐγέ[νετο ἑσ]πέρα καὶ ἐγένετο πρωί, [ἡμέρα ἕ]κτη. ⸆",
+      "english": "God looked at everything he had made, and he found it very good. Evening came, and morning followed - the sixth day."
+    }
+  }
+}

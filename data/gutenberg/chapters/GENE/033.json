@@ -1,213 +1,315 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "GENE_033",
-  "chapter_key": "33",
-  "chapter_number": 33,
-  "sort_number": 33,
-  "name": "33",
   "book_key": "GENE",
+  "sequence": 33,
+  "chapter_in": {
+    "MT": 33,
+    "VUL": 33,
+    "LXX": 33
+  },
   "testament": "Vetus_Testamentum",
   "section": "Pentateuchus",
-  "verse_count": 20,
   "verses": {
     "1": {
-      "sort_number": 1,
-      "name": "1",
-      "latin": "Elevans autem Jacob oculos suos, vidit venientem Esau, et cum eo quadringentos viros: divisitque filios Liæ et Rachel, ambarumque famularum:",
-      "word_count": 0,
-      "hebrew": "וַיִּשָּׂ֨א יַעֲקֹ֜ב עֵינָ֗יו וַיַּרְא֙ וְהִנֵּ֣ה עֵשָׂ֣ו בָּ֔א וְעִמּ֕וֹ אַרְבַּ֥ע מֵא֖וֹת אִ֑ישׁ וַיַּ֣חַץ אֶת הַיְלָדִ֗ים עַל לֵאָה֙ וְעַל רָחֵ֔ל וְעַ֖ל שְׁתֵּ֥י הַשְּׁפָחֽוֹת׃",
-      "russian": "Взглянул Иаков и увидел, и вот, идет Исав, [брат его,] и с ним четыреста человек. И разделил [Иаков] детей Лии, Рахили и двух служанок.",
-      "greek": "Ἀναβλέψας δὲ Ἰακὼβ ἴδεν, καὶ ἰδοὺ Ἠσαὺ ὁ ἀδελφὸς αὐτοῦ ἐρχόμενος, αὐτὸς καὶ τετρακόσιοι ἄνδρες μετ’ αὐτοῦ· καὶ ἐπιδιεῖλεν Ἰακὼβ τὰ παιδία ἐπὶ Λείαν καὶ ἐπὶ Ῥαχὴλ καὶ τὰς δύο παιδίσκας·",
-      "english": "The LORD said to Moses,"
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַיִּשָּׂ֨א יַעֲקֹ֜ב עֵינָ֗יו וַיַּרְא֙ וְהִנֵּ֣ה עֵשָׂ֣ו בָּ֔א וְעִמּ֕וֹ אַרְבַּ֥ע מֵא֖וֹת אִ֑ישׁ וַיַּ֣חַץ אֶת הַיְלָדִ֗ים עַל לֵאָה֙ וְעַל רָחֵ֔ל וְעַ֖ל שְׁתֵּ֥י הַשְּׁפָחֽוֹת׃",
+        "VUL": "Elevans autem Jacob oculos suos, vidit venientem Esau, et cum eo quadringentos viros: divisitque filios Liæ et Rachel, ambarumque famularum:",
+        "LXX": "Ἀναβλέψας δὲ Ἰακὼβ ἴδεν, καὶ ἰδοὺ Ἠσαὺ ὁ ἀδελφὸς αὐτοῦ ἐρχόμενος, αὐτὸς καὶ τετρακόσιοι ἄνδρες μετ’ αὐτοῦ· καὶ ἐπιδιεῖλεν Ἰακὼβ τὰ παιδία ἐπὶ Λείαν καὶ ἐπὶ Ῥαχὴλ καὶ τὰς δύο παιδίσκας·",
+        "NAB": "The LORD said to Moses,",
+        "SYN": "Взглянул Иаков и увидел, и вот, идет Исав, [брат его,] и с ним четыреста человек. И разделил [Иаков] детей Лии, Рахили и двух служанок."
+      }
     },
     "2": {
-      "sort_number": 2,
-      "name": "2",
-      "latin": "et posuit utramque ancillam, et liberos earum, in principio: Liam vero, et filios ejus, in secundo loco: Rachel autem et Joseph novissimos.",
-      "word_count": 0,
-      "hebrew": "וַיָּ֧שֶׂם אֶת הַשְּׁפָח֛וֹת וְאֶת יַלְדֵיהֶ֖ן רִֽאשֹׁנָ֑ה וְאֶת לֵאָ֤ה וִֽילָדֶ֨יהָ֙ אַחֲרֹנִ֔ים וְאֶת רָחֵ֥ל וְאֶת יוֹסֵ֖ף אַחֲרֹנִֽים׃",
-      "russian": "И поставил [двух] служанок и детей их впереди, Лию и детей ее за ними, а Рахиль и Иосифа позади.",
-      "greek": "καὶ ἐποίησεν τὰς δύο παιδίσκας καὶ τοὺς υἱοὺς αὐτῶν ἐν πρώτοις, καὶ Λείαν καὶ τὰ παιδία αὐτῆς ὀπίσω, καὶ Ῥαχὴλ καὶ Ἰωσὴφ ἐσχάτους.",
-      "english": "\"Speak to the whole Israelite community and tell them: Be holy, for I, the LORD your God, am holy."
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַיָּ֧שֶׂם אֶת הַשְּׁפָח֛וֹת וְאֶת יַלְדֵיהֶ֖ן רִֽאשֹׁנָ֑ה וְאֶת לֵאָ֤ה וִֽילָדֶ֨יהָ֙ אַחֲרֹנִ֔ים וְאֶת רָחֵ֥ל וְאֶת יוֹסֵ֖ף אַחֲרֹנִֽים׃",
+        "VUL": "et posuit utramque ancillam, et liberos earum, in principio: Liam vero, et filios ejus, in secundo loco: Rachel autem et Joseph novissimos.",
+        "LXX": "καὶ ἐποίησεν τὰς δύο παιδίσκας καὶ τοὺς υἱοὺς αὐτῶν ἐν πρώτοις, καὶ Λείαν καὶ τὰ παιδία αὐτῆς ὀπίσω, καὶ Ῥαχὴλ καὶ Ἰωσὴφ ἐσχάτους.",
+        "NAB": "\"Speak to the whole Israelite community and tell them: Be holy, for I, the LORD your God, am holy.",
+        "SYN": "И поставил [двух] служанок и детей их впереди, Лию и детей ее за ними, а Рахиль и Иосифа позади."
+      }
     },
     "3": {
-      "sort_number": 3,
-      "name": "3",
-      "latin": "Et ipse progrediens adoravit pronus in terram septies, donec appropinquaret frater ejus.",
-      "word_count": 0,
-      "hebrew": "וְה֖וּא עָבַ֣ר לִפְנֵיהֶ֑ם וַיִּשְׁתַּ֤חוּ אַ֨רְצָה֙ שֶׁ֣בַע פְּעָמִ֔ים עַד גִּשְׁתּ֖וֹ עַד אָחִֽיו׃",
-      "russian": "А сам пошел пред ними и поклонился до земли семь раз, подходя к брату своему.",
-      "greek": "αὐτὸς δὲ παρῆλθεν ἔμπροσθεν αὐτῶν· καὶ προσεκύνησεν ἐπὶ τὴν γῆν ἑπτάκις ἕως τοῦ ἐγγίσαι τοῦ ἀδελφοῦ αὐτοῦ.",
-      "english": "Revere your mother and father, and keep my sabbaths. I, the LORD, am your God."
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְה֖וּא עָבַ֣ר לִפְנֵיהֶ֑ם וַיִּשְׁתַּ֤חוּ אַ֨רְצָה֙ שֶׁ֣בַע פְּעָמִ֔ים עַד גִּשְׁתּ֖וֹ עַד אָחִֽיו׃",
+        "VUL": "Et ipse progrediens adoravit pronus in terram septies, donec appropinquaret frater ejus.",
+        "LXX": "αὐτὸς δὲ παρῆλθεν ἔμπροσθεν αὐτῶν· καὶ προσεκύνησεν ἐπὶ τὴν γῆν ἑπτάκις ἕως τοῦ ἐγγίσαι τοῦ ἀδελφοῦ αὐτοῦ.",
+        "NAB": "Revere your mother and father, and keep my sabbaths. I, the LORD, am your God.",
+        "SYN": "А сам пошел пред ними и поклонился до земли семь раз, подходя к брату своему."
+      }
     },
     "4": {
-      "sort_number": 4,
-      "name": "4",
-      "latin": "Currens itaque Esau obviam fratri suo, amplexatus est eum: stringensque collum ejus, et osculans flevit.",
-      "word_count": 0,
-      "hebrew": "וַיָּ֨רָץ עֵשָׂ֤ו לִקְרָאתוֹ֙ וַֽיְחַבְּקֵ֔הוּ וַיִּפֹּ֥ל עַל צַוָּארָ֖ו וַׄיִּׄשָּׁׄקֵ֑ׄהׄוּׄ וַיִּבְכּֽוּ׃",
-      "russian": "И побежал Исав к нему навстречу и обнял его, и пал на шею его и целовал его, и плакали [оба].",
-      "greek": "καὶ προσέδραμεν Ἠσαὺ εἰς συνάντησιν αὐτῷ, καὶ περιλαβὼν αὐτὸν ἐφίλησεν καὶ προσέπεσεν ἐπὶ τὸν τράχηλον αὐτοῦ· καὶ ἔκλαυσαν ἀμφότεροι.",
-      "english": "\"Do not turn aside to idols, nor make molten gods for yourselves. I, the LORD, am your God."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַיָּ֨רָץ עֵשָׂ֤ו לִקְרָאתוֹ֙ וַֽיְחַבְּקֵ֔הוּ וַיִּפֹּ֥ל עַל צַוָּארָ֖ו וַׄיִּׄשָּׁׄקֵ֑ׄהׄוּׄ וַיִּבְכּֽוּ׃",
+        "VUL": "Currens itaque Esau obviam fratri suo, amplexatus est eum: stringensque collum ejus, et osculans flevit.",
+        "LXX": "καὶ προσέδραμεν Ἠσαὺ εἰς συνάντησιν αὐτῷ, καὶ περιλαβὼν αὐτὸν ἐφίλησεν καὶ προσέπεσεν ἐπὶ τὸν τράχηλον αὐτοῦ· καὶ ἔκλαυσαν ἀμφότεροι.",
+        "NAB": "\"Do not turn aside to idols, nor make molten gods for yourselves. I, the LORD, am your God.",
+        "SYN": "И побежал Исав к нему навстречу и обнял его, и пал на шею его и целовал его, и плакали [оба]."
+      }
     },
     "5": {
-      "sort_number": 5,
-      "name": "5",
-      "latin": "Levatisque oculis, vidit mulieres et parvulos earum, et ait: Quid sibi volunt isti ? et si ad te pertinent ? Respondit: Parvuli sunt quos donavit mihi Deus servo tuo.",
-      "word_count": 0,
-      "hebrew": "וַיִּשָּׂ֣א אֶת עֵינָ֗יו וַיַּ֤רְא אֶת הַנָּשִׁים֙ וְאֶת הַיְלָדִ֔ים וַיֹּ֖אמֶר מִי אֵ֣לֶּה לָּ֑ךְ וַיֹּאמַ֕ר הַיְלָדִ֕ים אֲשֶׁר חָנַ֥ן אֱלֹהִ֖ים אֶת עַבְדֶּֽךָ׃",
-      "russian": "И взглянул [Исав] и увидел жен и детей и сказал: кто это у тебя? Иаков сказал: дети, которых Бог даровал рабу твоему.",
-      "greek": "καὶ ἀναβλέψας ἴδεν τὰς γυναῖκας καὶ τὰ παιδία, καὶ εἶπεν Τί ταῦτά σοί ἐστιν; ὁ δὲ εἶπεν Τὰ παιδία οἷς ἠλέησεν ὁ θεὸς τὸν παῖδά σου.",
-      "english": "\"When you sacrifice your peace offering to the LORD, if you wish it to be acceptable,"
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַיִּשָּׂ֣א אֶת עֵינָ֗יו וַיַּ֤רְא אֶת הַנָּשִׁים֙ וְאֶת הַיְלָדִ֔ים וַיֹּ֖אמֶר מִי אֵ֣לֶּה לָּ֑ךְ וַיֹּאמַ֕ר הַיְלָדִ֕ים אֲשֶׁר חָנַ֥ן אֱלֹהִ֖ים אֶת עַבְדֶּֽךָ׃",
+        "VUL": "Levatisque oculis, vidit mulieres et parvulos earum, et ait: Quid sibi volunt isti ? et si ad te pertinent ? Respondit: Parvuli sunt quos donavit mihi Deus servo tuo.",
+        "LXX": "καὶ ἀναβλέψας ἴδεν τὰς γυναῖκας καὶ τὰ παιδία, καὶ εἶπεν Τί ταῦτά σοί ἐστιν; ὁ δὲ εἶπεν Τὰ παιδία οἷς ἠλέησεν ὁ θεὸς τὸν παῖδά σου.",
+        "NAB": "\"When you sacrifice your peace offering to the LORD, if you wish it to be acceptable,",
+        "SYN": "И взглянул [Исав] и увидел жен и детей и сказал: кто это у тебя? Иаков сказал: дети, которых Бог даровал рабу твоему."
+      }
     },
     "6": {
-      "sort_number": 6,
-      "name": "6",
-      "latin": "Et appropinquantes ancillæ et filii earum, incurvati sunt.",
-      "word_count": 0,
-      "hebrew": "וַתִּגַּ֧שְׁןָ הַשְּׁפָח֛וֹת הֵ֥נָּה וְיַלְדֵיהֶ֖ן וַתִּֽשְׁתַּחֲוֶֽיןָ׃",
-      "russian": "И подошли служанки и дети их и поклонились;",
-      "greek": "καὶ προσήγγισαν αἱ παιδίσκαι καὶ τὰ παιδία αὐτῶν, καὶ προσεκύνησαν·",
-      "english": "it must be eaten on the very day of your sacrifice or on the following day. Whatever is left over until the third day shall be burned up in the fire."
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַתִּגַּ֧שְׁןָ הַשְּׁפָח֛וֹת הֵ֥נָּה וְיַלְדֵיהֶ֖ן וַתִּֽשְׁתַּחֲוֶֽיןָ׃",
+        "VUL": "Et appropinquantes ancillæ et filii earum, incurvati sunt.",
+        "LXX": "καὶ προσήγγισαν αἱ παιδίσκαι καὶ τὰ παιδία αὐτῶν, καὶ προσεκύνησαν·",
+        "NAB": "it must be eaten on the very day of your sacrifice or on the following day. Whatever is left over until the third day shall be burned up in the fire.",
+        "SYN": "И подошли служанки и дети их и поклонились;"
+      }
     },
     "7": {
-      "sort_number": 7,
-      "name": "7",
-      "latin": "Accessit quoque Lia cum pueris suis: et cum similiter adorassent, extremi Joseph et Rachel adoraverunt.",
-      "word_count": 0,
-      "hebrew": "וַתִּגַּ֧שׁ גַּם לֵאָ֛ה וִילָדֶ֖יהָ וַיִּֽשְׁתַּחֲו֑וּ וְאַחַ֗ר נִגַּ֥שׁ יוֹסֵ֛ף וְרָחֵ֖ל וַיִּֽשְׁתַּחֲוֽוּ׃",
-      "russian": "подошла и Лия и дети ее и поклонились; наконец подошли Иосиф и Рахиль и поклонились.",
-      "greek": "καὶ προσήγγισεν Λεία καὶ τὰ τέκνα αὐτῆς, καὶ προσεκύνησαν· καὶ μετὰ ταῦτα προσήγγισεν Ῥαχὴλ καὶ Ἰωσήφ, καὶ προσεκύνησαν.",
-      "english": "If any of it is eaten on the third day, the sacrifice will be unacceptable as refuse;"
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַתִּגַּ֧שׁ גַּם לֵאָ֛ה וִילָדֶ֖יהָ וַיִּֽשְׁתַּחֲו֑וּ וְאַחַ֗ר נִגַּ֥שׁ יוֹסֵ֛ף וְרָחֵ֖ל וַיִּֽשְׁתַּחֲוֽוּ׃",
+        "VUL": "Accessit quoque Lia cum pueris suis: et cum similiter adorassent, extremi Joseph et Rachel adoraverunt.",
+        "LXX": "καὶ προσήγγισεν Λεία καὶ τὰ τέκνα αὐτῆς, καὶ προσεκύνησαν· καὶ μετὰ ταῦτα προσήγγισεν Ῥαχὴλ καὶ Ἰωσήφ, καὶ προσεκύνησαν.",
+        "NAB": "If any of it is eaten on the third day, the sacrifice will be unacceptable as refuse;",
+        "SYN": "подошла и Лия и дети ее и поклонились; наконец подошли Иосиф и Рахиль и поклонились."
+      }
     },
     "8": {
-      "sort_number": 8,
-      "name": "8",
-      "latin": "Dixitque Esau: Quænam sunt istæ turmæ quas obviam habui ? Respondit: Ut invenirem gratiam coram domino meo.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֕אמֶר מִ֥י לְךָ֛ כָּל הַמַּחֲנֶ֥ה הַזֶּ֖ה אֲשֶׁ֣ר פָּגָ֑שְׁתִּי וַיֹּ֕אמֶר לִמְצֹא חֵ֖ן בְּעֵינֵ֥י אֲדֹנִֽי׃",
-      "russian": "И сказал Исав: для чего у тебя это множество, которое я встретил? И сказал Иаков: дабы [рабу твоему] приобрести благоволение в очах господина моего.",
-      "greek": "⸂⸆⸃ καὶ εἶπεν Τί ταῦτά σοί ἐστιν, πᾶσαι αἱ παρεμβολαὶ αὗται αἷς ἀπήντηκα; ὁ δὲ εἶπεν Ἵνα εὕρῃ ὁ παῖς σου χάριν ἐν ὀφθαλμοῖς σου, κύριε.",
-      "english": "whoever eats of it then shall pay the penalty for having profaned what is sacred to the LORD. Such a one shall be cut off from his people."
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַיֹּ֕אמֶר מִ֥י לְךָ֛ כָּל הַמַּחֲנֶ֥ה הַזֶּ֖ה אֲשֶׁ֣ר פָּגָ֑שְׁתִּי וַיֹּ֕אמֶר לִמְצֹא חֵ֖ן בְּעֵינֵ֥י אֲדֹנִֽי׃",
+        "VUL": "Dixitque Esau: Quænam sunt istæ turmæ quas obviam habui ? Respondit: Ut invenirem gratiam coram domino meo.",
+        "LXX": "⸂⸆⸃ καὶ εἶπεν Τί ταῦτά σοί ἐστιν, πᾶσαι αἱ παρεμβολαὶ αὗται αἷς ἀπήντηκα; ὁ δὲ εἶπεν Ἵνα εὕρῃ ὁ παῖς σου χάριν ἐν ὀφθαλμοῖς σου, κύριε.",
+        "NAB": "whoever eats of it then shall pay the penalty for having profaned what is sacred to the LORD. Such a one shall be cut off from his people.",
+        "SYN": "И сказал Исав: для чего у тебя это множество, которое я встретил? И сказал Иаков: дабы [рабу твоему] приобрести благоволение в очах господина моего."
+      }
     },
     "9": {
-      "sort_number": 9,
-      "name": "9",
-      "latin": "At ille ait: Habeo plurima, frater mi, sint tua tibi.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֥אמֶר עֵשָׂ֖ו יֶשׁ לִ֣י רָ֑ב אָחִ֕י יְהִ֥י לְךָ֖ אֲשֶׁר לָֽךְ׃",
-      "russian": "Исав сказал: у меня много, брат мой; пусть будет твое у тебя.",
-      "greek": "εἶπεν δὲ Ἠσαύ Ἔστιν μοι πολλά, ἀδελφέ· ἔστω σοι τὰ σά.",
-      "english": "\"When you reap the harvest of your land, you shall not be so thorough that you reap the field to its very edge, nor shall you glean the stray ears of grain."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַיֹּ֥אמֶר עֵשָׂ֖ו יֶשׁ לִ֣י רָ֑ב אָחִ֕י יְהִ֥י לְךָ֖ אֲשֶׁר לָֽךְ׃",
+        "VUL": "At ille ait: Habeo plurima, frater mi, sint tua tibi.",
+        "LXX": "εἶπεν δὲ Ἠσαύ Ἔστιν μοι πολλά, ἀδελφέ· ἔστω σοι τὰ σά.",
+        "NAB": "\"When you reap the harvest of your land, you shall not be so thorough that you reap the field to its very edge, nor shall you glean the stray ears of grain.",
+        "SYN": "Исав сказал: у меня много, брат мой; пусть будет твое у тебя."
+      }
     },
     "10": {
-      "sort_number": 10,
-      "name": "10",
-      "latin": "Dixitque Jacob: Noli ita, obsecro: sed si inveni gratiam in oculis tuis, accipe munusculum de manibus meis. Sic enim vidi faciem tuam, quasi viderim vultum Dei: esto mihi propitius,",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֣אמֶר יַעֲקֹ֗ב אַל נָא֙ אִם נָ֨א מָצָ֤אתִי חֵן֙ בְּעֵינֶ֔יךָ וְלָקַחְתָּ֥ מִנְחָתִ֖י מִיָּדִ֑י כִּ֣י עַל כֵּ֞ן רָאִ֣יתִי פָנֶ֗יךָ כִּרְאֹ֛ת פְּנֵ֥י אֱלֹהִ֖ים וַתִּרְצֵֽנִי׃",
-      "russian": "Иаков сказал: нет, если я приобрел благоволение в очах твоих, прими дар мой от руки моей, ибо я увидел лице твое, как бы кто увидел лице Божие, и ты был благосклонен ко мне;",
-      "greek": "εἶπεν δὲ Ἰακώβ Εἰ εὕρηκα χάριν ἐναντίον σου, δέξαι τὰ δῶρα διὰ τῶν ἐμῶν χειρῶν· ἕνεκεν τούτου ἴδον τὸ πρόσωπόν σου ὡς ἄν τις ἴδοι πρόσωπον θεοῦ, καὶ εὐδοκήσεις με·",
-      "english": "Likewise, you shall not pick your vineyard bare, nor gather up the grapes that have fallen. These things you shall leave for the poor and the alien. I, the LORD, am your God."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַיֹּ֣אמֶר יַעֲקֹ֗ב אַל נָא֙ אִם נָ֨א מָצָ֤אתִי חֵן֙ בְּעֵינֶ֔יךָ וְלָקַחְתָּ֥ מִנְחָתִ֖י מִיָּדִ֑י כִּ֣י עַל כֵּ֞ן רָאִ֣יתִי פָנֶ֗יךָ כִּרְאֹ֛ת פְּנֵ֥י אֱלֹהִ֖ים וַתִּרְצֵֽנִי׃",
+        "VUL": "Dixitque Jacob: Noli ita, obsecro: sed si inveni gratiam in oculis tuis, accipe munusculum de manibus meis. Sic enim vidi faciem tuam, quasi viderim vultum Dei: esto mihi propitius,",
+        "LXX": "εἶπεν δὲ Ἰακώβ Εἰ εὕρηκα χάριν ἐναντίον σου, δέξαι τὰ δῶρα διὰ τῶν ἐμῶν χειρῶν· ἕνεκεν τούτου ἴδον τὸ πρόσωπόν σου ὡς ἄν τις ἴδοι πρόσωπον θεοῦ, καὶ εὐδοκήσεις με·",
+        "NAB": "Likewise, you shall not pick your vineyard bare, nor gather up the grapes that have fallen. These things you shall leave for the poor and the alien. I, the LORD, am your God.",
+        "SYN": "Иаков сказал: нет, если я приобрел благоволение в очах твоих, прими дар мой от руки моей, ибо я увидел лице твое, как бы кто увидел лице Божие, и ты был благосклонен ко мне;"
+      }
     },
     "11": {
-      "sort_number": 11,
-      "name": "11",
-      "latin": "et suscipe benedictionem quam attuli tibi, et quam donavit mihi Deus tribuens omnia. Vix fratre compellente, suscipiens,",
-      "word_count": 0,
-      "hebrew": "קַח נָ֤א אֶת בִּרְכָתִי֙ אֲשֶׁ֣ר הֻבָ֣את לָ֔ךְ כִּֽי חַנַּ֥נִי אֱלֹהִ֖ים וְכִ֣י יֶשׁ לִי כֹ֑ל וַיִּפְצַר בּ֖וֹ וַיִּקָּֽח׃",
-      "russian": "прими благословение мое, которое я принес тебе, потому что Бог даровал мне, и есть у меня всё. И упросил его, и тот взял",
-      "greek": "λάβε τὰς εὐλογίας μου ἃς ἤνεγκά σοι, ὅτι ἠλέησέν με ὁ θεὸς καὶ ἔστιν μοι πάντα. καὶ ἐβιάσατο αὐτόν, καὶ ἔλαβεν.",
-      "english": "\"You shall not steal. You shall not lie or speak falsely to one another."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "קַח נָ֤א אֶת בִּרְכָתִי֙ אֲשֶׁ֣ר הֻבָ֣את לָ֔ךְ כִּֽי חַנַּ֥נִי אֱלֹהִ֖ים וְכִ֣י יֶשׁ לִי כֹ֑ל וַיִּפְצַר בּ֖וֹ וַיִּקָּֽח׃",
+        "VUL": "et suscipe benedictionem quam attuli tibi, et quam donavit mihi Deus tribuens omnia. Vix fratre compellente, suscipiens,",
+        "LXX": "λάβε τὰς εὐλογίας μου ἃς ἤνεγκά σοι, ὅτι ἠλέησέν με ὁ θεὸς καὶ ἔστιν μοι πάντα. καὶ ἐβιάσατο αὐτόν, καὶ ἔλαβεν.",
+        "NAB": "\"You shall not steal. You shall not lie or speak falsely to one another.",
+        "SYN": "прими благословение мое, которое я принес тебе, потому что Бог даровал мне, и есть у меня всё. И упросил его, и тот взял"
+      }
     },
     "12": {
-      "sort_number": 12,
-      "name": "12",
-      "latin": "ait: Gradiamur simul, eroque socius itineris tui.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֖אמֶר נִסְעָ֣ה וְנֵלֵ֑כָה וְאֵלְכָ֖ה לְנֶגְדֶּֽךָ׃",
-      "russian": "и сказал: поднимемся и пойдем; и я пойду пред тобою.",
-      "greek": "καὶ εἶπεν Ἀπάραντες πορευθῶμεν ἐπ’ εὐθεῖαν.",
-      "english": "You shall not swear falsely by my name, thus profaning the name of your God. I am the LORD."
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַיֹּ֖אמֶר נִסְעָ֣ה וְנֵלֵ֑כָה וְאֵלְכָ֖ה לְנֶגְדֶּֽךָ׃",
+        "VUL": "ait: Gradiamur simul, eroque socius itineris tui.",
+        "LXX": "καὶ εἶπεν Ἀπάραντες πορευθῶμεν ἐπ’ εὐθεῖαν.",
+        "NAB": "You shall not swear falsely by my name, thus profaning the name of your God. I am the LORD.",
+        "SYN": "и сказал: поднимемся и пойдем; и я пойду пред тобою."
+      }
     },
     "13": {
-      "sort_number": 13,
-      "name": "13",
-      "latin": "Dixitque Jacob: Nosti, domine mi, quod parvulos habeam teneros, et oves, et boves ftas mecum: quas si plus in ambulando fecero laborare, morientur una die cuncti greges.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֣אמֶר אֵלָ֗יו אֲדֹנִ֤י יֹדֵ֨עַ֙ כִּֽי הַיְלָדִ֣ים רַכִּ֔ים וְהַצֹּ֥אן וְהַבָּקָ֖ר עָל֣וֹת עָלָ֑י וּדְפָקוּם֙ י֣וֹם אֶחָ֔ד וָמֵ֖תוּ כָּל הַצֹּֽאן׃",
-      "russian": "Иаков сказал ему: господин мой знает, что дети нежны, а мелкий и крупный скот у меня дойный: если погнать его один день, то помрет весь скот;",
-      "greek": "εἶπεν δὲ αὐτῷ Ὁ κύριός μου γινώσκει ὅτι τὰ παιδία ἁπαλώτερα, καὶ τὰ πρόβατα καὶ αἱ βόες λοχεύονται ἐπ’ ἐμέ· ἐὰν οὖν καταδιώξω αὐτοὺς ἡμέραν μίαν, ἀποθανοῦνται πάντα τὰ κτήνη.",
-      "english": "\"You shall not defraud or rob your neighbor. You shall not withhold overnight the wages of your day laborer."
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַיֹּ֣אמֶר אֵלָ֗יו אֲדֹנִ֤י יֹדֵ֨עַ֙ כִּֽי הַיְלָדִ֣ים רַכִּ֔ים וְהַצֹּ֥אן וְהַבָּקָ֖ר עָל֣וֹת עָלָ֑י וּדְפָקוּם֙ י֣וֹם אֶחָ֔ד וָמֵ֖תוּ כָּל הַצֹּֽאן׃",
+        "VUL": "Dixitque Jacob: Nosti, domine mi, quod parvulos habeam teneros, et oves, et boves ftas mecum: quas si plus in ambulando fecero laborare, morientur una die cuncti greges.",
+        "LXX": "εἶπεν δὲ αὐτῷ Ὁ κύριός μου γινώσκει ὅτι τὰ παιδία ἁπαλώτερα, καὶ τὰ πρόβατα καὶ αἱ βόες λοχεύονται ἐπ’ ἐμέ· ἐὰν οὖν καταδιώξω αὐτοὺς ἡμέραν μίαν, ἀποθανοῦνται πάντα τὰ κτήνη.",
+        "NAB": "\"You shall not defraud or rob your neighbor. You shall not withhold overnight the wages of your day laborer.",
+        "SYN": "Иаков сказал ему: господин мой знает, что дети нежны, а мелкий и крупный скот у меня дойный: если погнать его один день, то помрет весь скот;"
+      }
     },
     "14": {
-      "sort_number": 14,
-      "name": "14",
-      "latin": "Præcedat dominus meus ante servum suum: et ego sequar paulatim vestigia ejus, sicut videro parvulos meos posse, donec veniam ad dominum meum in Seir.",
-      "word_count": 0,
-      "hebrew": "יַעֲבָר נָ֥א אֲדֹנִ֖י לִפְנֵ֣י עַבְדּ֑וֹ וַאֲנִ֞י אֶֽתְנָהֲלָ֣ה לְאִטִּ֗י לְרֶ֨גֶל הַמְּלָאכָ֤ה אֲשֶׁר לְפָנַי֙ וּלְרֶ֣גֶל הַיְלָדִ֔ים עַ֛ד אֲשֶׁר אָבֹ֥א אֶל אֲדֹנִ֖י שֵׂעִֽירָה׃",
-      "russian": "пусть господин мой пойдет впереди раба своего, а я пойду медленно, как пойдет скот, который предо мною, и как пойдут дети, и приду к господину моему в Сеир.",
-      "greek": "προελθάτω ὁ κύριός μου ἔμπροσθεν τοῦ παιδός· ἐγὼ δὲ ἐνισχύσω ἐν τῇ ὁδῷ κατὰ σχολὴν τῆς πορεύσεως τῆς ἐναντίον μου καὶ κατὰ πόδα τῶν παιδαρίων, ἕως τοῦ με ἐλθεῖν πρὸς τὸν κύριόν μου εἰς Σηείρ.",
-      "english": "You shall not curse the deaf, or put a stumbling block in front of the blind, but you shall fear your God. I am the LORD."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "יַעֲבָר נָ֥א אֲדֹנִ֖י לִפְנֵ֣י עַבְדּ֑וֹ וַאֲנִ֞י אֶֽתְנָהֲלָ֣ה לְאִטִּ֗י לְרֶ֨גֶל הַמְּלָאכָ֤ה אֲשֶׁר לְפָנַי֙ וּלְרֶ֣גֶל הַיְלָדִ֔ים עַ֛ד אֲשֶׁר אָבֹ֥א אֶל אֲדֹנִ֖י שֵׂעִֽירָה׃",
+        "VUL": "Præcedat dominus meus ante servum suum: et ego sequar paulatim vestigia ejus, sicut videro parvulos meos posse, donec veniam ad dominum meum in Seir.",
+        "LXX": "προελθάτω ὁ κύριός μου ἔμπροσθεν τοῦ παιδός· ἐγὼ δὲ ἐνισχύσω ἐν τῇ ὁδῷ κατὰ σχολὴν τῆς πορεύσεως τῆς ἐναντίον μου καὶ κατὰ πόδα τῶν παιδαρίων, ἕως τοῦ με ἐλθεῖν πρὸς τὸν κύριόν μου εἰς Σηείρ.",
+        "NAB": "You shall not curse the deaf, or put a stumbling block in front of the blind, but you shall fear your God. I am the LORD.",
+        "SYN": "пусть господин мой пойдет впереди раба своего, а я пойду медленно, как пойдет скот, который предо мною, и как пойдут дети, и приду к господину моему в Сеир."
+      }
     },
     "15": {
-      "sort_number": 15,
-      "name": "15",
-      "latin": "Respondit Esau: Oro te, ut de populo qui mecum est, saltem socii remaneant viæ tuæ. Non est, inquit, necesse: hoc uno tantum indigeo, ut inveniam gratiam in conspectu tuo, domine mi.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֣אמֶר עֵשָׂ֔ו אַצִּֽיגָה נָּ֣א עִמְּךָ֔ מִן הָעָ֖ם אֲשֶׁ֣ר אִתִּ֑י וַיֹּ֨אמֶר֙ לָ֣מָּה זֶּ֔ה אֶמְצָא חֵ֖ן בְּעֵינֵ֥י אֲדֹנִֽי׃",
-      "russian": "Исав сказал: оставлю я с тобою несколько из людей, которые при мне. Иаков сказал: к чему это? только бы мне приобрести благоволение в очах господина моего!",
-      "greek": "εἶπεν δὲ Ἠσαύ Καταλείψω μετὰ σοῦ ἀπὸ τοῦ λαοῦ τοῦ μετ’ ἐμοῦ. ὁ δὲ εἶπεν Ἵνα τί τοῦτο; ἱκανὸν ὅτι εὗρον χάριν ἐναντίον σου, κύριε.",
-      "english": "\"You shall not act dishonestly in rendering judgment. Show neither partiality to the weak nor deference to the mighty, but judge your fellow men justly."
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַיֹּ֣אמֶר עֵשָׂ֔ו אַצִּֽיגָה נָּ֣א עִמְּךָ֔ מִן הָעָ֖ם אֲשֶׁ֣ר אִתִּ֑י וַיֹּ֨אמֶר֙ לָ֣מָּה זֶּ֔ה אֶמְצָא חֵ֖ן בְּעֵינֵ֥י אֲדֹנִֽי׃",
+        "VUL": "Respondit Esau: Oro te, ut de populo qui mecum est, saltem socii remaneant viæ tuæ. Non est, inquit, necesse: hoc uno tantum indigeo, ut inveniam gratiam in conspectu tuo, domine mi.",
+        "LXX": "εἶπεν δὲ Ἠσαύ Καταλείψω μετὰ σοῦ ἀπὸ τοῦ λαοῦ τοῦ μετ’ ἐμοῦ. ὁ δὲ εἶπεν Ἵνα τί τοῦτο; ἱκανὸν ὅτι εὗρον χάριν ἐναντίον σου, κύριε.",
+        "NAB": "\"You shall not act dishonestly in rendering judgment. Show neither partiality to the weak nor deference to the mighty, but judge your fellow men justly.",
+        "SYN": "Исав сказал: оставлю я с тобою несколько из людей, которые при мне. Иаков сказал: к чему это? только бы мне приобрести благоволение в очах господина моего!"
+      }
     },
     "16": {
-      "sort_number": 16,
-      "name": "16",
-      "latin": "Reversus est itaque illo die Esau itinere quo venerat in Seir.",
-      "word_count": 0,
-      "hebrew": "וַיָּשָׁב֩ בַּיּ֨וֹם הַה֥וּא עֵשָׂ֛ו לְדַרְכּ֖וֹ שֵׂעִֽירָה׃",
-      "russian": "И возвратился Исав в тот же день путем своим в Сеир.",
-      "greek": "ἀπέστρεψεν δὲ Ἠσαὺ ἐν τῇ ἡμέρᾳ ἐκείνῃ εἰς τὴν ὁδὸν αὐτοῦ εἰς Σηείρ.",
-      "english": "You shall not go about spreading slander among your kinsmen; nor shall you stand by idly when your neighbor's life is at stake. I am the LORD."
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַיָּשָׁב֩ בַּיּ֨וֹם הַה֥וּא עֵשָׂ֛ו לְדַרְכּ֖וֹ שֵׂעִֽירָה׃",
+        "VUL": "Reversus est itaque illo die Esau itinere quo venerat in Seir.",
+        "LXX": "ἀπέστρεψεν δὲ Ἠσαὺ ἐν τῇ ἡμέρᾳ ἐκείνῃ εἰς τὴν ὁδὸν αὐτοῦ εἰς Σηείρ.",
+        "NAB": "You shall not go about spreading slander among your kinsmen; nor shall you stand by idly when your neighbor's life is at stake. I am the LORD.",
+        "SYN": "И возвратился Исав в тот же день путем своим в Сеир."
+      }
     },
     "17": {
-      "sort_number": 17,
-      "name": "17",
-      "latin": "Et Jacob venit in Socoth: ubi ædificata domo et fixis tentoriis appellavit nomen loci illius Socoth, id est, Tabernacula.",
-      "word_count": 0,
-      "hebrew": "וְיַעֲקֹב֙ נָסַ֣ע סֻכֹּ֔תָה וַיִּ֥בֶן ל֖וֹ בָּ֑יִת וּלְמִקְנֵ֨הוּ֙ עָשָׂ֣ה סֻכֹּ֔ת עַל כֵּ֛ן קָרָ֥א שֵׁם הַמָּק֖וֹם סֻכּֽוֹת׃",
-      "russian": "А Иаков двинулся в Сокхоф, и построил себе дом, и для скота своего сделал шалаши. От сего он нарек имя месту: Сокхоф.",
-      "greek": "καὶ Ἰακὼβ ἀπαίρει εἰς Σκηνάς· καὶ ἐποίησεν αὐτῷ ἐκεῖ οἰκίας, καὶ τοῖς κτήνεσιν αὐτοῦ ἐποίησεν σκηνάς· διὰ τοῦτο ἐκάλεσεν τὸ ὄνομα τοῦ τόπου ἐκείνου Σκηναί.",
-      "english": "\"You shall not bear hatred for your brother in your heart. Though you may have to reprove your fellow man, do not incur sin because of him."
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְיַעֲקֹב֙ נָסַ֣ע סֻכֹּ֔תָה וַיִּ֥בֶן ל֖וֹ בָּ֑יִת וּלְמִקְנֵ֨הוּ֙ עָשָׂ֣ה סֻכֹּ֔ת עַל כֵּ֛ן קָרָ֥א שֵׁם הַמָּק֖וֹם סֻכּֽוֹת׃",
+        "VUL": "Et Jacob venit in Socoth: ubi ædificata domo et fixis tentoriis appellavit nomen loci illius Socoth, id est, Tabernacula.",
+        "LXX": "καὶ Ἰακὼβ ἀπαίρει εἰς Σκηνάς· καὶ ἐποίησεν αὐτῷ ἐκεῖ οἰκίας, καὶ τοῖς κτήνεσιν αὐτοῦ ἐποίησεν σκηνάς· διὰ τοῦτο ἐκάλεσεν τὸ ὄνομα τοῦ τόπου ἐκείνου Σκηναί.",
+        "NAB": "\"You shall not bear hatred for your brother in your heart. Though you may have to reprove your fellow man, do not incur sin because of him.",
+        "SYN": "А Иаков двинулся в Сокхоф, и построил себе дом, и для скота своего сделал шалаши. От сего он нарек имя месту: Сокхоф."
+      }
     },
     "18": {
-      "sort_number": 18,
-      "name": "18",
-      "latin": "Transivitque in Salem urbem Sichimorum, quæ est in terra Chanaan, postquam reversus est de Mesopotamia Syriæ: et habitavit juxta oppidum.",
-      "word_count": 0,
-      "hebrew": "וַיָּבֹא֩ יַעֲקֹ֨ב שָׁלֵ֜ם עִ֣יר שְׁכֶ֗ם אֲשֶׁר֙ בְּאֶ֣רֶץ כְּנַ֔עַן בְּבֹא֖וֹ מִפַּדַּ֣ן אֲרָ֑ם וַיִּ֖חַן אֶת פְּנֵ֥י הָעִֽיר׃",
-      "russian": "Иаков, возвратившись из Месопотамии, благополучно пришел в город Сихем, который в земле Ханаанской, и расположился пред городом.",
-      "greek": "Καὶ ἦλθεν Ἰακὼβ εἰς Σαλὴμ πόλιν Σικίμων, ἥ ἐστιν ἐν γῇ Χανάαν, ὅτε ἦλθεν ἐκ τῆς Μεσοποταμίας Συρίας· καὶ παρενέβαλεν κατὰ πρόσωπον τῆς πόλεως.",
-      "english": "Take no revenge and cherish no grudge against your fellow countrymen. You shall love your neighbor as yourself. I am the LORD."
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַיָּבֹא֩ יַעֲקֹ֨ב שָׁלֵ֜ם עִ֣יר שְׁכֶ֗ם אֲשֶׁר֙ בְּאֶ֣רֶץ כְּנַ֔עַן בְּבֹא֖וֹ מִפַּדַּ֣ן אֲרָ֑ם וַיִּ֖חַן אֶת פְּנֵ֥י הָעִֽיר׃",
+        "VUL": "Transivitque in Salem urbem Sichimorum, quæ est in terra Chanaan, postquam reversus est de Mesopotamia Syriæ: et habitavit juxta oppidum.",
+        "LXX": "Καὶ ἦλθεν Ἰακὼβ εἰς Σαλὴμ πόλιν Σικίμων, ἥ ἐστιν ἐν γῇ Χανάαν, ὅτε ἦλθεν ἐκ τῆς Μεσοποταμίας Συρίας· καὶ παρενέβαλεν κατὰ πρόσωπον τῆς πόλεως.",
+        "NAB": "Take no revenge and cherish no grudge against your fellow countrymen. You shall love your neighbor as yourself. I am the LORD.",
+        "SYN": "Иаков, возвратившись из Месопотамии, благополучно пришел в город Сихем, который в земле Ханаанской, и расположился пред городом."
+      }
     },
     "19": {
-      "sort_number": 19,
-      "name": "19",
-      "latin": "Emitque partem agri, in qua fixerat tabernacula, a filiis Hemor patris Sichem centum agnis.",
-      "word_count": 0,
-      "hebrew": "וַיִּ֜קֶן אֶת חֶלְקַ֣ת הַשָּׂדֶ֗ה אֲשֶׁ֤ר נָֽטָה שָׁם֙ אָהֳל֔וֹ מִיַּ֥ד בְּנֵֽי חֲמ֖וֹר אֲבִ֣י שְׁכֶ֑ם בְּמֵאָ֖ה קְשִׂיטָֽה׃",
-      "russian": "И купил часть поля, на котором раскинул шатер свой, у сынов Еммора, отца Сихемова, за сто монет.",
-      "greek": "καὶ ἐκτήσατο τὴν μερίδα τοῦ ἀγροῦ, οὗ ἔστησεν ἐκεῖ τὴν σκηνὴν αὐτοῦ, παρὰ Ἐμμὼρ πατρὸς Συχὲμ ἑκατὸν ἀμνῶν·",
-      "english": "\"Keep my statutes: do not breed any of your domestic animals with others of a different species; do not sow a field of yours with two different kinds of seed; and do not put on a garment woven with two different kinds of thread."
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַיִּ֜קֶן אֶת חֶלְקַ֣ת הַשָּׂדֶ֗ה אֲשֶׁ֤ר נָֽטָה שָׁם֙ אָהֳל֔וֹ מִיַּ֥ד בְּנֵֽי חֲמ֖וֹר אֲבִ֣י שְׁכֶ֑ם בְּמֵאָ֖ה קְשִׂיטָֽה׃",
+        "VUL": "Emitque partem agri, in qua fixerat tabernacula, a filiis Hemor patris Sichem centum agnis.",
+        "LXX": "καὶ ἐκτήσατο τὴν μερίδα τοῦ ἀγροῦ, οὗ ἔστησεν ἐκεῖ τὴν σκηνὴν αὐτοῦ, παρὰ Ἐμμὼρ πατρὸς Συχὲμ ἑκατὸν ἀμνῶν·",
+        "NAB": "\"Keep my statutes: do not breed any of your domestic animals with others of a different species; do not sow a field of yours with two different kinds of seed; and do not put on a garment woven with two different kinds of thread.",
+        "SYN": "И купил часть поля, на котором раскинул шатер свой, у сынов Еммора, отца Сихемова, за сто монет."
+      }
     },
     "20": {
-      "sort_number": 20,
-      "name": "20",
-      "latin": "Et erecto ibi altari, invocavit super illud fortissimum Deum Israël.",
-      "word_count": 0,
-      "hebrew": "וַיַּצֶּב שָׁ֖ם מִזְבֵּ֑חַ וַיִּ֨קְרָא ל֔וֹ אֵ֖ל אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
-      "russian": "И поставил там жертвенник, и призвал имя Господа Бога Израилева.",
-      "greek": "καὶ ἔστησεν ἐκεῖ θυσιαστήριον καὶ ἐπεκαλέσατο τὸν θεὸν Ἰσραήλ.",
-      "english": "\"If a man has carnal relations with a female slave who has already been living with another man but has not yet been redeemed or given her freedom, they shall be punished but not put to death, because she is not free."
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַיַּצֶּב שָׁ֖ם מִזְבֵּ֑חַ וַיִּ֨קְרָא ל֔וֹ אֵ֖ל אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+        "VUL": "Et erecto ibi altari, invocavit super illud fortissimum Deum Israël.",
+        "LXX": "καὶ ἔστησεν ἐκεῖ θυσιαστήριον καὶ ἐπεκαλέσατο τὸν θεὸν Ἰσραήλ.",
+        "NAB": "\"If a man has carnal relations with a female slave who has already been living with another man but has not yet been redeemed or given her freedom, they shall be punished but not put to death, because she is not free.",
+        "SYN": "И поставил там жертвенник, и призвал имя Господа Бога Израилева."
+      }
     }
   }
 }

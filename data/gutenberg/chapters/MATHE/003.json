@@ -1,166 +1,253 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "MATHE_003",
-  "chapter_key": "3",
-  "chapter_number": 3,
-  "sort_number": 3,
-  "name": "3",
   "book_key": "MATHE",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
   "testament": "Novum_Testamentum",
   "section": "Evangelia",
-  "verse_count": 17,
   "verses": {
     "1": {
-      "verse_number": 1,
-      "sort_number": 1,
-      "text": "[MATHE 3:1]",
-      "word_count": 5,
-      "russian": "В те дни приходит Иоанн Креститель и проповедует в пустыне Иудейской",
-      "greek": "Ἐν δὲ ταῖς ἡμέραις ἐκείναις παραγίνεται Ἰωάννης ὁ βαπτιστής, κηρύσσων ἐν τῇ ἐρήμῳ τῆς Ἰουδαίας,",
-      "latin": "In diebus autem illis venit Joannes Baptista prædicans in deserto Judææ,"
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "In diebus autem illis venit Joannes Baptista prædicans in deserto Judææ,",
+        "LXX": "Ἐν δὲ ταῖς ἡμέραις ἐκείναις παραγίνεται Ἰωάννης ὁ βαπτιστής, κηρύσσων ἐν τῇ ἐρήμῳ τῆς Ἰουδαίας,",
+        "SYN": "В те дни приходит Иоанн Креститель и проповедует в пустыне Иудейской",
+        "BYZ": "Ἐν δὲ ταῖς ἡμέραις ἐκείναις παραγίνεται Ἰωάννης ὁ βαπτιστής, κηρύσσων ἐν τῇ ἐρήμῳ τῆς Ἰουδαίας,"
+      }
     },
     "2": {
-      "verse_number": 2,
-      "sort_number": 2,
-      "text": "[MATHE 3:2]",
-      "word_count": 5,
-      "russian": "и говорит: покайтесь, ибо приблизилось Царство Небесное.",
-      "greek": "καὶ λέγων, Μετανοεῖτε· ἤγγικεν γὰρ ἡ βασιλεία τῶν οὐρανῶν.",
-      "latin": "et dicens: Pnitentiam agite: appropinquavit enim regnum cælorum."
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "et dicens: Pnitentiam agite: appropinquavit enim regnum cælorum.",
+        "LXX": "καὶ λέγων, Μετανοεῖτε· ἤγγικεν γὰρ ἡ βασιλεία τῶν οὐρανῶν.",
+        "SYN": "и говорит: покайтесь, ибо приблизилось Царство Небесное.",
+        "BYZ": "καὶ λέγων, Μετανοεῖτε· ἤγγικεν γὰρ ἡ βασιλεία τῶν οὐρανῶν."
+      }
     },
     "3": {
-      "verse_number": 3,
-      "sort_number": 3,
-      "text": "[MATHE 3:3]",
-      "word_count": 5,
-      "russian": "Ибо он тот, о котором сказал пророк Исаия: глас вопиющего в пустыне: приготовьте путь Господу, прямыми сделайте стези Ему.",
-      "greek": "Οὗτος γάρ ἐστιν ὁ ῥηθεὶς ὑπὸ Ἠσαΐου τοῦ προφήτου, λέγοντος, Φωνὴ βοῶντος ἐν τῇ ἐρήμῳ, Ἑτοιμάσατε τὴν ὁδὸν κυρίου· εὐθείας ποιεῖτε τὰς τρίβους αὐτοῦ.",
-      "latin": "Hic est enim, qui dictus est per Isaiam prophetam dicentem: [Vox clamantis in deserto:/ Parate viam Domini ;/ rectas facite semitas ejus.]"
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "Hic est enim, qui dictus est per Isaiam prophetam dicentem: [Vox clamantis in deserto:/ Parate viam Domini ;/ rectas facite semitas ejus.]",
+        "LXX": "Οὗτος γάρ ἐστιν ὁ ῥηθεὶς ὑπὸ Ἠσαΐου τοῦ προφήτου, λέγοντος, Φωνὴ βοῶντος ἐν τῇ ἐρήμῳ, Ἑτοιμάσατε τὴν ὁδὸν κυρίου· εὐθείας ποιεῖτε τὰς τρίβους αὐτοῦ.",
+        "SYN": "Ибо он тот, о котором сказал пророк Исаия: глас вопиющего в пустыне: приготовьте путь Господу, прямыми сделайте стези Ему.",
+        "BYZ": "Οὗτος γάρ ἐστιν ὁ ῥηθεὶς ὑπὸ Ἠσαΐου τοῦ προφήτου, λέγοντος, Φωνὴ βοῶντος ἐν τῇ ἐρήμῳ, Ἑτοιμάσατε τὴν ὁδὸν κυρίου· εὐθείας ποιεῖτε τὰς τρίβους αὐτοῦ."
+      }
     },
     "4": {
-      "verse_number": 4,
-      "sort_number": 4,
-      "text": "[MATHE 3:4]",
-      "word_count": 5,
-      "russian": "Сам же Иоанн имел одежду из верблюжьего волоса и пояс кожаный на чреслах своих, а пищею его были акриды и дикий мед.",
-      "greek": "Αὐτὸς δὲ ὁ Ἰωάννης εἶχεν τὸ ἔνδυμα αὐτοῦ ἀπὸ τριχῶν καμήλου, καὶ ζώνην δερματίνην περὶ τὴν ὀσφὺν αὐτοῦ· ἡ δὲ τροφὴ αὐτοῦ ἦν ἀκρίδες καὶ μέλι ἄγριον.",
-      "latin": "Ipse autem Joannes habebat vestimentum de pilis camelorum, et zonam pelliceam circa lumbos suos: esca autem ejus erat locustæ, et mel silvestre."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "Ipse autem Joannes habebat vestimentum de pilis camelorum, et zonam pelliceam circa lumbos suos: esca autem ejus erat locustæ, et mel silvestre.",
+        "LXX": "Αὐτὸς δὲ ὁ Ἰωάννης εἶχεν τὸ ἔνδυμα αὐτοῦ ἀπὸ τριχῶν καμήλου, καὶ ζώνην δερματίνην περὶ τὴν ὀσφὺν αὐτοῦ· ἡ δὲ τροφὴ αὐτοῦ ἦν ἀκρίδες καὶ μέλι ἄγριον.",
+        "SYN": "Сам же Иоанн имел одежду из верблюжьего волоса и пояс кожаный на чреслах своих, а пищею его были акриды и дикий мед.",
+        "BYZ": "Αὐτὸς δὲ ὁ Ἰωάννης εἶχεν τὸ ἔνδυμα αὐτοῦ ἀπὸ τριχῶν καμήλου, καὶ ζώνην δερματίνην περὶ τὴν ὀσφὺν αὐτοῦ· ἡ δὲ τροφὴ αὐτοῦ ἦν ἀκρίδες καὶ μέλι ἄγριον."
+      }
     },
     "5": {
-      "verse_number": 5,
-      "sort_number": 5,
-      "text": "[MATHE 3:5]",
-      "word_count": 5,
-      "russian": "Тогда Иерусалим и вся Иудея и вся окрестность Иорданская выходили к нему",
-      "greek": "Τότε ἐξεπορεύετο πρὸς αὐτὸν Ἱεροσόλυμα καὶ πᾶσα ἡ Ἰουδαία καὶ πᾶσα ἡ περίχωρος τοῦ Ἰορδάνου·",
-      "latin": "Tunc exibat ad eum Jerosolyma, et omnis Judæa, et omnis regio circa Jordanem ;"
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Tunc exibat ad eum Jerosolyma, et omnis Judæa, et omnis regio circa Jordanem ;",
+        "LXX": "Τότε ἐξεπορεύετο πρὸς αὐτὸν Ἱεροσόλυμα καὶ πᾶσα ἡ Ἰουδαία καὶ πᾶσα ἡ περίχωρος τοῦ Ἰορδάνου·",
+        "SYN": "Тогда Иерусалим и вся Иудея и вся окрестность Иорданская выходили к нему",
+        "BYZ": "Τότε ἐξεπορεύετο πρὸς αὐτὸν Ἱεροσόλυμα καὶ πᾶσα ἡ Ἰουδαία καὶ πᾶσα ἡ περίχωρος τοῦ Ἰορδάνου·"
+      }
     },
     "6": {
-      "verse_number": 6,
-      "sort_number": 6,
-      "text": "[MATHE 3:6]",
-      "word_count": 5,
-      "russian": "и крестились от него в Иордане, исповедуя грехи свои.",
-      "greek": "καὶ ἐβαπτίζοντο ἐν τῷ Ἰορδάνῃ ὑπ’ αὐτοῦ, ἐξομολογούμενοι τὰς ἁμαρτίας αὐτῶν.",
-      "latin": "et baptizabantur ab eo in Jordane, confitentes peccata sua."
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "et baptizabantur ab eo in Jordane, confitentes peccata sua.",
+        "LXX": "καὶ ἐβαπτίζοντο ἐν τῷ Ἰορδάνῃ ὑπ’ αὐτοῦ, ἐξομολογούμενοι τὰς ἁμαρτίας αὐτῶν.",
+        "SYN": "и крестились от него в Иордане, исповедуя грехи свои.",
+        "BYZ": "καὶ ἐβαπτίζοντο ἐν τῷ Ἰορδάνῃ ὑπ’ αὐτοῦ, ἐξομολογούμενοι τὰς ἁμαρτίας αὐτῶν."
+      }
     },
     "7": {
-      "verse_number": 7,
-      "sort_number": 7,
-      "text": "[MATHE 3:7]",
-      "word_count": 5,
-      "russian": "Увидев же Иоанн многих фарисеев и саддукеев, идущих к нему креститься, сказал им: порождения ехиднины! кто внушил вам бежать от будущего гнева?",
-      "greek": "Ἰδὼν δὲ πολλοὺς τῶν Φαρισαίων καὶ Σαδδουκαίων ἐρχομένους ἐπὶ τὸ βάπτισμα αὐτοῦ, εἶπεν αὐτοῖς, Γεννήματα ἐχιδνῶν, τίς ὑπέδειξεν ὑμῖν φυγεῖν ἀπὸ τῆς μελλούσης ὀργῆς;",
-      "latin": "Videns autem multos pharisæorum, et sadducæorum, venientes ad baptismum suum, dixit eis: Progenies viperarum, quis demonstravit vobis fugere a ventura ira ?"
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Videns autem multos pharisæorum, et sadducæorum, venientes ad baptismum suum, dixit eis: Progenies viperarum, quis demonstravit vobis fugere a ventura ira ?",
+        "LXX": "Ἰδὼν δὲ πολλοὺς τῶν Φαρισαίων καὶ Σαδδουκαίων ἐρχομένους ἐπὶ τὸ βάπτισμα αὐτοῦ, εἶπεν αὐτοῖς, Γεννήματα ἐχιδνῶν, τίς ὑπέδειξεν ὑμῖν φυγεῖν ἀπὸ τῆς μελλούσης ὀργῆς;",
+        "SYN": "Увидев же Иоанн многих фарисеев и саддукеев, идущих к нему креститься, сказал им: порождения ехиднины! кто внушил вам бежать от будущего гнева?",
+        "BYZ": "Ἰδὼν δὲ πολλοὺς τῶν Φαρισαίων καὶ Σαδδουκαίων ἐρχομένους ἐπὶ τὸ βάπτισμα αὐτοῦ, εἶπεν αὐτοῖς, Γεννήματα ἐχιδνῶν, τίς ὑπέδειξεν ὑμῖν φυγεῖν ἀπὸ τῆς μελλούσης ὀργῆς;"
+      }
     },
     "8": {
-      "verse_number": 8,
-      "sort_number": 8,
-      "text": "[MATHE 3:8]",
-      "word_count": 5,
-      "russian": "сотворите же достойный плод покаяния",
-      "greek": "Ποιήσατε οὖν καρπὸν ἄξιον τῆς μετανοίας·",
-      "latin": "Facite ergo fructum dignum pnitentiæ."
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Facite ergo fructum dignum pnitentiæ.",
+        "LXX": "Ποιήσατε οὖν καρπὸν ἄξιον τῆς μετανοίας·",
+        "SYN": "сотворите же достойный плод покаяния",
+        "BYZ": "Ποιήσατε οὖν καρπὸν ἄξιον τῆς μετανοίας·"
+      }
     },
     "9": {
-      "verse_number": 9,
-      "sort_number": 9,
-      "text": "[MATHE 3:9]",
-      "word_count": 5,
-      "russian": "и не думайте говорить в себе: \"отец у нас Авраам\", ибо говорю вам, что Бог может из камней сих воздвигнуть детей Аврааму.",
-      "greek": "καὶ μὴ δόξητε λέγειν ἐν ἑαυτοῖς, Πατέρα ἔχομεν τὸν Ἀβραάμ· λέγω γὰρ ὑμῖν ὅτι δύναται ὁ θεὸς ἐκ τῶν λίθων τούτων ἐγεῖραι τέκνα τῷ Ἀβραάμ.",
-      "latin": "Et ne velitis dicere intra vos: Patrem habemus Abraham. Dico enim vobis quoniam potens est Deus de lapidibus istis suscitare filios Abrahæ."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "Et ne velitis dicere intra vos: Patrem habemus Abraham. Dico enim vobis quoniam potens est Deus de lapidibus istis suscitare filios Abrahæ.",
+        "LXX": "καὶ μὴ δόξητε λέγειν ἐν ἑαυτοῖς, Πατέρα ἔχομεν τὸν Ἀβραάμ· λέγω γὰρ ὑμῖν ὅτι δύναται ὁ θεὸς ἐκ τῶν λίθων τούτων ἐγεῖραι τέκνα τῷ Ἀβραάμ.",
+        "SYN": "и не думайте говорить в себе: \"отец у нас Авраам\", ибо говорю вам, что Бог может из камней сих воздвигнуть детей Аврааму.",
+        "BYZ": "καὶ μὴ δόξητε λέγειν ἐν ἑαυτοῖς, Πατέρα ἔχομεν τὸν Ἀβραάμ· λέγω γὰρ ὑμῖν ὅτι δύναται ὁ θεὸς ἐκ τῶν λίθων τούτων ἐγεῖραι τέκνα τῷ Ἀβραάμ."
+      }
     },
     "10": {
-      "verse_number": 10,
-      "sort_number": 10,
-      "text": "[MATHE 3:10]",
-      "word_count": 5,
-      "russian": "Уже и секира при корне дерев лежит: всякое дерево, не приносящее доброго плода, срубают и бросают в огонь.",
-      "greek": "Ἤδη δὲ καὶ ἡ ἀξίνη πρὸς τὴν ῥίζαν τῶν δένδρων κεῖται· πᾶν οὖν δένδρον μὴ ποιοῦν καρπὸν καλὸν ἐκκόπτεται καὶ εἰς πῦρ βάλλεται.",
-      "latin": "Jam enim securis ad radicem arborum posita est. Omnis ergo arbor, quæ non facit fructum bonum, excidetur, et in ignem mittetur."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Jam enim securis ad radicem arborum posita est. Omnis ergo arbor, quæ non facit fructum bonum, excidetur, et in ignem mittetur.",
+        "LXX": "Ἤδη δὲ καὶ ἡ ἀξίνη πρὸς τὴν ῥίζαν τῶν δένδρων κεῖται· πᾶν οὖν δένδρον μὴ ποιοῦν καρπὸν καλὸν ἐκκόπτεται καὶ εἰς πῦρ βάλλεται.",
+        "SYN": "Уже и секира при корне дерев лежит: всякое дерево, не приносящее доброго плода, срубают и бросают в огонь.",
+        "BYZ": "Ἤδη δὲ καὶ ἡ ἀξίνη πρὸς τὴν ῥίζαν τῶν δένδρων κεῖται· πᾶν οὖν δένδρον μὴ ποιοῦν καρπὸν καλὸν ἐκκόπτεται καὶ εἰς πῦρ βάλλεται."
+      }
     },
     "11": {
-      "verse_number": 11,
-      "sort_number": 11,
-      "text": "[MATHE 3:11]",
-      "word_count": 5,
-      "russian": "Я крещу вас в воде в покаяние, но Идущий за мною сильнее меня; я не достоин понести обувь Его; Он будет крестить вас Духом Святым и огнем;",
-      "greek": "Ἐγὼ μὲν βαπτίζω ὑμᾶς ἐν ὕδατι εἰς μετάνοιαν· ὁ δὲ ὀπίσω μου ἐρχόμενος ἰσχυρότερός μου ἐστίν, οὗ οὐκ εἰμὶ ἱκανὸς τὰ ὑποδήματα βαστάσαι· αὐτὸς ὑμᾶς βαπτίσει ἐν πνεύματι ἁγίῳ.",
-      "latin": "Ego quidem baptizo vos in aqua in pnitentiam: qui autem post me venturus est, fortior me est, cujus non sum dignus calceamenta portare: ipse vos baptizabit in Spiritu Sancto, et igni."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Ego quidem baptizo vos in aqua in pnitentiam: qui autem post me venturus est, fortior me est, cujus non sum dignus calceamenta portare: ipse vos baptizabit in Spiritu Sancto, et igni.",
+        "LXX": "Ἐγὼ μὲν βαπτίζω ὑμᾶς ἐν ὕδατι εἰς μετάνοιαν· ὁ δὲ ὀπίσω μου ἐρχόμενος ἰσχυρότερός μου ἐστίν, οὗ οὐκ εἰμὶ ἱκανὸς τὰ ὑποδήματα βαστάσαι· αὐτὸς ὑμᾶς βαπτίσει ἐν πνεύματι ἁγίῳ.",
+        "SYN": "Я крещу вас в воде в покаяние, но Идущий за мною сильнее меня; я не достоин понести обувь Его; Он будет крестить вас Духом Святым и огнем;",
+        "BYZ": "Ἐγὼ μὲν βαπτίζω ὑμᾶς ἐν ὕδατι εἰς μετάνοιαν· ὁ δὲ ὀπίσω μου ἐρχόμενος ἰσχυρότερός μου ἐστίν, οὗ οὐκ εἰμὶ ἱκανὸς τὰ ὑποδήματα βαστάσαι· αὐτὸς ὑμᾶς βαπτίσει ἐν πνεύματι ἁγίῳ."
+      }
     },
     "12": {
-      "verse_number": 12,
-      "sort_number": 12,
-      "text": "[MATHE 3:12]",
-      "word_count": 5,
-      "russian": "лопата Его в руке Его, и Он очистит гумно Свое и соберет пшеницу Свою в житницу, а солому сожжет огнем неугасимым.",
-      "greek": "Οὗ τὸ πτύον ἐν τῇ χειρὶ αὐτοῦ, καὶ διακαθαριεῖ τὴν ἅλωνα αὐτοῦ, καὶ συνάξει τὸν σῖτον αὐτοῦ εἰς τὴν ἀποθήκην, τὸ δὲ ἄχυρον κατακαύσει πυρὶ ἀσβέστῳ.",
-      "latin": "Cujus ventilabrum in manu sua: et permundabit aream suam: et congregabit triticum suum in horreum, paleas autem comburet igni inextinguibili."
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "Cujus ventilabrum in manu sua: et permundabit aream suam: et congregabit triticum suum in horreum, paleas autem comburet igni inextinguibili.",
+        "LXX": "Οὗ τὸ πτύον ἐν τῇ χειρὶ αὐτοῦ, καὶ διακαθαριεῖ τὴν ἅλωνα αὐτοῦ, καὶ συνάξει τὸν σῖτον αὐτοῦ εἰς τὴν ἀποθήκην, τὸ δὲ ἄχυρον κατακαύσει πυρὶ ἀσβέστῳ.",
+        "SYN": "лопата Его в руке Его, и Он очистит гумно Свое и соберет пшеницу Свою в житницу, а солому сожжет огнем неугасимым.",
+        "BYZ": "Οὗ τὸ πτύον ἐν τῇ χειρὶ αὐτοῦ, καὶ διακαθαριεῖ τὴν ἅλωνα αὐτοῦ, καὶ συνάξει τὸν σῖτον αὐτοῦ εἰς τὴν ἀποθήκην, τὸ δὲ ἄχυρον κατακαύσει πυρὶ ἀσβέστῳ."
+      }
     },
     "13": {
-      "verse_number": 13,
-      "sort_number": 13,
-      "text": "[MATHE 3:13]",
-      "word_count": 5,
-      "russian": "Тогда приходит Иисус из Галилеи на Иордан к Иоанну креститься от него.",
-      "greek": "Τότε παραγίνεται ὁ Ἰησοῦς ἀπὸ τῆς Γαλιλαίας ἐπὶ τὸν Ἰορδάνην πρὸς τὸν Ἰωάννην, τοῦ βαπτισθῆναι ὑπ’ αὐτοῦ.",
-      "latin": "Tunc venit Jesus a Galilæa in Jordanem ad Joannem, ut baptizaretur ab eo."
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "Tunc venit Jesus a Galilæa in Jordanem ad Joannem, ut baptizaretur ab eo.",
+        "LXX": "Τότε παραγίνεται ὁ Ἰησοῦς ἀπὸ τῆς Γαλιλαίας ἐπὶ τὸν Ἰορδάνην πρὸς τὸν Ἰωάννην, τοῦ βαπτισθῆναι ὑπ’ αὐτοῦ.",
+        "SYN": "Тогда приходит Иисус из Галилеи на Иордан к Иоанну креститься от него.",
+        "BYZ": "Τότε παραγίνεται ὁ Ἰησοῦς ἀπὸ τῆς Γαλιλαίας ἐπὶ τὸν Ἰορδάνην πρὸς τὸν Ἰωάννην, τοῦ βαπτισθῆναι ὑπ’ αὐτοῦ."
+      }
     },
     "14": {
-      "verse_number": 14,
-      "sort_number": 14,
-      "text": "[MATHE 3:14]",
-      "word_count": 5,
-      "russian": "Иоанн же удерживал Его и говорил: мне надобно креститься от Тебя, и Ты ли приходишь ко мне?",
-      "greek": "Ὁ δὲ Ἰωάννης διεκώλυεν αὐτόν, λέγων, Ἐγὼ χρείαν ἔχω ὑπὸ σοῦ βαπτισθῆναι, καὶ σὺ ἔρχῃ πρός με;",
-      "latin": "Joannes autem prohibebat eum, dicens: Ego a te debeo baptizari, et tu venis ad me ?"
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Joannes autem prohibebat eum, dicens: Ego a te debeo baptizari, et tu venis ad me ?",
+        "LXX": "Ὁ δὲ Ἰωάννης διεκώλυεν αὐτόν, λέγων, Ἐγὼ χρείαν ἔχω ὑπὸ σοῦ βαπτισθῆναι, καὶ σὺ ἔρχῃ πρός με;",
+        "SYN": "Иоанн же удерживал Его и говорил: мне надобно креститься от Тебя, и Ты ли приходишь ко мне?",
+        "BYZ": "Ὁ δὲ Ἰωάννης διεκώλυεν αὐτόν, λέγων, Ἐγὼ χρείαν ἔχω ὑπὸ σοῦ βαπτισθῆναι, καὶ σὺ ἔρχῃ πρός με;"
+      }
     },
     "15": {
-      "verse_number": 15,
-      "sort_number": 15,
-      "text": "[MATHE 3:15]",
-      "word_count": 5,
-      "russian": "Но Иисус сказал ему в ответ: оставь теперь, ибо так надлежит нам исполнить всякую правду. Тогда Иоанн допускает Его.",
-      "greek": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν πρὸς αὐτόν, Ἄφες ἄρτι· οὕτως γὰρ πρέπον ἐστὶν ἡμῖν πληρῶσαι πᾶσαν δικαιοσύνην. Τότε ἀφίησιν αὐτόν.",
-      "latin": "Respondens autem Jesus, dixit ei: Sine modo: sic enim decet nos implere omnem justitiam. Tunc dimisit eum."
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Respondens autem Jesus, dixit ei: Sine modo: sic enim decet nos implere omnem justitiam. Tunc dimisit eum.",
+        "LXX": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν πρὸς αὐτόν, Ἄφες ἄρτι· οὕτως γὰρ πρέπον ἐστὶν ἡμῖν πληρῶσαι πᾶσαν δικαιοσύνην. Τότε ἀφίησιν αὐτόν.",
+        "SYN": "Но Иисус сказал ему в ответ: оставь теперь, ибо так надлежит нам исполнить всякую правду. Тогда Иоанн допускает Его.",
+        "BYZ": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν πρὸς αὐτόν, Ἄφες ἄρτι· οὕτως γὰρ πρέπον ἐστὶν ἡμῖν πληρῶσαι πᾶσαν δικαιοσύνην. Τότε ἀφίησιν αὐτόν."
+      }
     },
     "16": {
-      "verse_number": 16,
-      "sort_number": 16,
-      "text": "[MATHE 3:16]",
-      "word_count": 5,
-      "russian": "И, крестившись, Иисус тотчас вышел из воды, -- и се, отверзлись Ему небеса, и увидел Иоанн Духа Божия, Который сходил, как голубь, и ниспускался на Него.",
-      "greek": "Καὶ βαπτισθεὶς ὁ Ἰησοῦς ἀνέβη εὐθὺς ἀπὸ τοῦ ὕδατος· καὶ ἰδού, ἀνεῴχθησαν αὐτῷ οἱ οὐρανοί, καὶ εἶδεν τὸ πνεῦμα τοῦ θεοῦ καταβαῖνον ὡσεὶ περιστερὰν καὶ ἐρχόμενον ἐπ’ αὐτόν.",
-      "latin": "Baptizatus autem Jesus, confestim ascendit de aqua, et ecce aperti sunt ei cæli: et vidit Spiritum Dei descendentem sicut columbam, et venientem super se."
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "Baptizatus autem Jesus, confestim ascendit de aqua, et ecce aperti sunt ei cæli: et vidit Spiritum Dei descendentem sicut columbam, et venientem super se.",
+        "LXX": "Καὶ βαπτισθεὶς ὁ Ἰησοῦς ἀνέβη εὐθὺς ἀπὸ τοῦ ὕδατος· καὶ ἰδού, ἀνεῴχθησαν αὐτῷ οἱ οὐρανοί, καὶ εἶδεν τὸ πνεῦμα τοῦ θεοῦ καταβαῖνον ὡσεὶ περιστερὰν καὶ ἐρχόμενον ἐπ’ αὐτόν.",
+        "SYN": "И, крестившись, Иисус тотчас вышел из воды, -- и се, отверзлись Ему небеса, и увидел Иоанн Духа Божия, Который сходил, как голубь, и ниспускался на Него.",
+        "BYZ": "Καὶ βαπτισθεὶς ὁ Ἰησοῦς ἀνέβη εὐθὺς ἀπὸ τοῦ ὕδατος· καὶ ἰδού, ἀνεῴχθησαν αὐτῷ οἱ οὐρανοί, καὶ εἶδεν τὸ πνεῦμα τοῦ θεοῦ καταβαῖνον ὡσεὶ περιστερὰν καὶ ἐρχόμενον ἐπ’ αὐτόν."
+      }
     },
     "17": {
-      "verse_number": 17,
-      "sort_number": 17,
-      "text": "[MATHE 3:17]",
-      "word_count": 5,
-      "russian": "И се, глас с небес глаголющий: Сей есть Сын Мой возлюбленный, в Котором Мое благоволение.",
-      "greek": "Καὶ ἰδού, φωνὴ ἐκ τῶν οὐρανῶν, λέγουσα, Οὗτός ἐστιν ὁ υἱός μου ὁ ἀγαπητός, ἐν ᾧ εὐδόκησα.",
-      "latin": "Et ecce vox de cælis dicens: Hic est Filius meus dilectus, in quo mihi complacui."
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Et ecce vox de cælis dicens: Hic est Filius meus dilectus, in quo mihi complacui.",
+        "LXX": "Καὶ ἰδού, φωνὴ ἐκ τῶν οὐρανῶν, λέγουσα, Οὗτός ἐστιν ὁ υἱός μου ὁ ἀγαπητός, ἐν ᾧ εὐδόκησα.",
+        "SYN": "И се, глас с небес глаголющий: Сей есть Сын Мой возлюбленный, в Котором Мое благоволение.",
+        "BYZ": "Καὶ ἰδού, φωνὴ ἐκ τῶν οὐρανῶν, λέγουσα, Οὗτός ἐστιν ὁ υἱός μου ὁ ἀγαπητός, ἐν ᾧ εὐδόκησα."
+      }
     }
   }
 }

@@ -1,151 +1,222 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "COLO_002",
-  "chapter_key": "2",
-  "chapter_number": 2,
-  "sort_number": 2,
-  "name": "2",
   "book_key": "COLO",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
   "testament": "Novum_Testamentum",
   "section": "Epistolae",
-  "verse_count": 23,
   "verses": {
     "1": {
-      "verse_number": 1,
-      "sort_number": 1,
-      "text": "[COLO 2:1]",
-      "word_count": 5
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {}
     },
     "2": {
-      "verse_number": 2,
-      "sort_number": 2,
-      "text": "[COLO 2:2]",
-      "word_count": 5
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {}
     },
     "3": {
-      "verse_number": 3,
-      "sort_number": 3,
-      "text": "[COLO 2:3]",
-      "word_count": 5
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {}
     },
     "4": {
-      "verse_number": 4,
-      "sort_number": 4,
-      "text": "[COLO 2:4]",
-      "word_count": 5
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {}
     },
     "5": {
-      "verse_number": 5,
-      "sort_number": 5,
-      "text": "[COLO 2:5]",
-      "word_count": 5
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {}
     },
     "6": {
-      "verse_number": 6,
-      "sort_number": 6,
-      "text": "[COLO 2:6]",
-      "word_count": 5
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {}
     },
     "7": {
-      "verse_number": 7,
-      "sort_number": 7,
-      "text": "[COLO 2:7]",
-      "word_count": 5
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {}
     },
     "8": {
-      "verse_number": 8,
-      "sort_number": 8,
-      "text": "[COLO 2:8]",
-      "word_count": 5
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {}
     },
     "9": {
-      "verse_number": 9,
-      "sort_number": 9,
-      "text": "[COLO 2:9]",
-      "word_count": 5
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {}
     },
     "10": {
-      "verse_number": 10,
-      "sort_number": 10,
-      "text": "[COLO 2:10]",
-      "word_count": 5
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {}
     },
     "11": {
-      "verse_number": 11,
-      "sort_number": 11,
-      "text": "[COLO 2:11]",
-      "word_count": 5
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {}
     },
     "12": {
-      "verse_number": 12,
-      "sort_number": 12,
-      "text": "[COLO 2:12]",
-      "word_count": 5
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {}
     },
     "13": {
-      "verse_number": 13,
-      "sort_number": 13,
-      "text": "[COLO 2:13]",
-      "word_count": 5
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {}
     },
     "14": {
-      "verse_number": 14,
-      "sort_number": 14,
-      "text": "[COLO 2:14]",
-      "word_count": 5
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {}
     },
     "15": {
-      "verse_number": 15,
-      "sort_number": 15,
-      "text": "[COLO 2:15]",
-      "word_count": 5
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {}
     },
     "16": {
-      "verse_number": 16,
-      "sort_number": 16,
-      "text": "[COLO 2:16]",
-      "word_count": 5
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {}
     },
     "17": {
-      "verse_number": 17,
-      "sort_number": 17,
-      "text": "[COLO 2:17]",
-      "word_count": 5
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {}
     },
     "18": {
-      "verse_number": 18,
-      "sort_number": 18,
-      "text": "[COLO 2:18]",
-      "word_count": 5
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {}
     },
     "19": {
-      "verse_number": 19,
-      "sort_number": 19,
-      "text": "[COLO 2:19]",
-      "word_count": 5
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {}
     },
     "20": {
-      "verse_number": 20,
-      "sort_number": 20,
-      "text": "[COLO 2:20]",
-      "word_count": 5
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {}
     },
     "21": {
-      "verse_number": 21,
-      "sort_number": 21,
-      "text": "[COLO 2:21]",
-      "word_count": 5
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {}
     },
     "22": {
-      "verse_number": 22,
-      "sort_number": 22,
-      "text": "[COLO 2:22]",
-      "word_count": 5
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {}
     },
     "23": {
-      "verse_number": 23,
-      "sort_number": 23,
-      "text": "[COLO 2:23]",
-      "word_count": 5
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {}
     }
   }
 }

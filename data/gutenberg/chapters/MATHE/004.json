@@ -1,238 +1,365 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "MATHE_004",
-  "chapter_key": "4",
-  "chapter_number": 4,
-  "sort_number": 4,
-  "name": "4",
   "book_key": "MATHE",
+  "sequence": 4,
+  "chapter_in": {
+    "MT": 4,
+    "VUL": 4,
+    "LXX": 4
+  },
   "testament": "Novum_Testamentum",
   "section": "Evangelia",
-  "verse_count": 25,
   "verses": {
     "1": {
-      "verse_number": 1,
-      "sort_number": 1,
-      "text": "[MATHE 4:1]",
-      "word_count": 5,
-      "russian": "Тогда Иисус возведен был Духом в пустыню, для искушения от диавола,",
-      "greek": "Τότε ὁ Ἰησοῦς ἀνήχθη εἰς τὴν ἔρημον ὑπὸ τοῦ πνεύματος, πειρασθῆναι ὑπὸ τοῦ διαβόλου.",
-      "latin": "Tunc Jesus ductus est in desertum a Spiritu, ut tentaretur a diabolo."
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "Tunc Jesus ductus est in desertum a Spiritu, ut tentaretur a diabolo.",
+        "LXX": "Τότε ὁ Ἰησοῦς ἀνήχθη εἰς τὴν ἔρημον ὑπὸ τοῦ πνεύματος, πειρασθῆναι ὑπὸ τοῦ διαβόλου.",
+        "SYN": "Тогда Иисус возведен был Духом в пустыню, для искушения от диавола,",
+        "BYZ": "Τότε ὁ Ἰησοῦς ἀνήχθη εἰς τὴν ἔρημον ὑπὸ τοῦ πνεύματος, πειρασθῆναι ὑπὸ τοῦ διαβόλου."
+      }
     },
     "2": {
-      "verse_number": 2,
-      "sort_number": 2,
-      "text": "[MATHE 4:2]",
-      "word_count": 5,
-      "russian": "и, постившись сорок дней и сорок ночей, напоследок взалкал.",
-      "greek": "Καὶ νηστεύσας ἡμέρας τεσσαράκοντα καὶ νύκτας τεσσαράκοντα, ὕστερον ἐπείνασεν.",
-      "latin": "Et cum jejunasset quadraginta diebus, et quadraginta noctibus, postea esuriit."
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "Et cum jejunasset quadraginta diebus, et quadraginta noctibus, postea esuriit.",
+        "LXX": "Καὶ νηστεύσας ἡμέρας τεσσαράκοντα καὶ νύκτας τεσσαράκοντα, ὕστερον ἐπείνασεν.",
+        "SYN": "и, постившись сорок дней и сорок ночей, напоследок взалкал.",
+        "BYZ": "Καὶ νηστεύσας ἡμέρας τεσσαράκοντα καὶ νύκτας τεσσαράκοντα, ὕστερον ἐπείνασεν."
+      }
     },
     "3": {
-      "verse_number": 3,
-      "sort_number": 3,
-      "text": "[MATHE 4:3]",
-      "word_count": 5,
-      "russian": "И приступил к Нему искуситель и сказал: если Ты Сын Божий, скажи, чтобы камни сии сделались хлебами.",
-      "greek": "Καὶ προσελθὼν αὐτῷ ὁ πειράζων εἶπεν, Εἰ υἱὸς εἶ τοῦ θεοῦ, εἰπὲ ἵνα οἱ λίθοι οὗτοι ἄρτοι γένωνται.",
-      "latin": "Et accedens tentator dixit ei: Si Filius Dei es, dic ut lapides isti panes fiant."
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "Et accedens tentator dixit ei: Si Filius Dei es, dic ut lapides isti panes fiant.",
+        "LXX": "Καὶ προσελθὼν αὐτῷ ὁ πειράζων εἶπεν, Εἰ υἱὸς εἶ τοῦ θεοῦ, εἰπὲ ἵνα οἱ λίθοι οὗτοι ἄρτοι γένωνται.",
+        "SYN": "И приступил к Нему искуситель и сказал: если Ты Сын Божий, скажи, чтобы камни сии сделались хлебами.",
+        "BYZ": "Καὶ προσελθὼν αὐτῷ ὁ πειράζων εἶπεν, Εἰ υἱὸς εἶ τοῦ θεοῦ, εἰπὲ ἵνα οἱ λίθοι οὗτοι ἄρτοι γένωνται."
+      }
     },
     "4": {
-      "verse_number": 4,
-      "sort_number": 4,
-      "text": "[MATHE 4:4]",
-      "word_count": 5,
-      "russian": "Он же сказал ему в ответ: написано: не хлебом одним будет жить человек, но всяким словом, исходящим из уст Божиих.",
-      "greek": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Γέγραπται, Οὐκ ἐπ’ ἄρτῳ μόνῳ ζήσεται ἄνθρωπος, ἀλλ’ ἐπὶ παντὶ ῥήματι ἐκπορευομένῳ διὰ στόματος θεοῦ.",
-      "latin": "Qui respondens dixit: Scriptum est: Non in solo pane vivit homo, sed in omni verbo, quod procedit de ore Dei."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "Qui respondens dixit: Scriptum est: Non in solo pane vivit homo, sed in omni verbo, quod procedit de ore Dei.",
+        "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Γέγραπται, Οὐκ ἐπ’ ἄρτῳ μόνῳ ζήσεται ἄνθρωπος, ἀλλ’ ἐπὶ παντὶ ῥήματι ἐκπορευομένῳ διὰ στόματος θεοῦ.",
+        "SYN": "Он же сказал ему в ответ: написано: не хлебом одним будет жить человек, но всяким словом, исходящим из уст Божиих.",
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Γέγραπται, Οὐκ ἐπ’ ἄρτῳ μόνῳ ζήσεται ἄνθρωπος, ἀλλ’ ἐπὶ παντὶ ῥήματι ἐκπορευομένῳ διὰ στόματος θεοῦ."
+      }
     },
     "5": {
-      "verse_number": 5,
-      "sort_number": 5,
-      "text": "[MATHE 4:5]",
-      "word_count": 5,
-      "russian": "Потом берет Его диавол в святой город и поставляет Его на крыле храма,",
-      "greek": "Τότε παραλαμβάνει αὐτὸν ὁ διάβολος εἰς τὴν ἁγίαν πόλιν, καὶ ἵστησιν αὐτὸν ἐπὶ τὸ πτερύγιον τοῦ ἱεροῦ,",
-      "latin": "Tunc assumpsit eum diabolus in sanctam civitatem, et statuit eum super pinnaculum templi,"
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Tunc assumpsit eum diabolus in sanctam civitatem, et statuit eum super pinnaculum templi,",
+        "LXX": "Τότε παραλαμβάνει αὐτὸν ὁ διάβολος εἰς τὴν ἁγίαν πόλιν, καὶ ἵστησιν αὐτὸν ἐπὶ τὸ πτερύγιον τοῦ ἱεροῦ,",
+        "SYN": "Потом берет Его диавол в святой город и поставляет Его на крыле храма,",
+        "BYZ": "Τότε παραλαμβάνει αὐτὸν ὁ διάβολος εἰς τὴν ἁγίαν πόλιν, καὶ ἵστησιν αὐτὸν ἐπὶ τὸ πτερύγιον τοῦ ἱεροῦ,"
+      }
     },
     "6": {
-      "verse_number": 6,
-      "sort_number": 6,
-      "text": "[MATHE 4:6]",
-      "word_count": 5,
-      "russian": "и говорит Ему: если Ты Сын Божий, бросься вниз, ибо написано: Ангелам Своим заповедает о Тебе, и на руках понесут Тебя, да не преткнешься о камень ногою Твоею.",
-      "greek": "καὶ λέγει αὐτῷ, Εἰ υἱὸς εἶ τοῦ θεοῦ, βάλε σεαυτὸν κάτω· γέγραπται γὰρ ὅτι Τοῖς ἀγγέλοις αὐτοῦ ἐντελεῖται περὶ σοῦ· καί, Ἐπὶ χειρῶν ἀροῦσίν σε, μήποτε προσκόψῃς πρὸς λίθον τὸν πόδα σοῦ.",
-      "latin": "et dixit ei: Si Filius Dei es, mitte te deorsum. Scriptum est enim: Quia angelis suis mandavit de te, et in manibus tollent te, ne forte offendas ad lapidem pedem tuum."
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "et dixit ei: Si Filius Dei es, mitte te deorsum. Scriptum est enim: Quia angelis suis mandavit de te, et in manibus tollent te, ne forte offendas ad lapidem pedem tuum.",
+        "LXX": "καὶ λέγει αὐτῷ, Εἰ υἱὸς εἶ τοῦ θεοῦ, βάλε σεαυτὸν κάτω· γέγραπται γὰρ ὅτι Τοῖς ἀγγέλοις αὐτοῦ ἐντελεῖται περὶ σοῦ· καί, Ἐπὶ χειρῶν ἀροῦσίν σε, μήποτε προσκόψῃς πρὸς λίθον τὸν πόδα σοῦ.",
+        "SYN": "и говорит Ему: если Ты Сын Божий, бросься вниз, ибо написано: Ангелам Своим заповедает о Тебе, и на руках понесут Тебя, да не преткнешься о камень ногою Твоею.",
+        "BYZ": "καὶ λέγει αὐτῷ, Εἰ υἱὸς εἶ τοῦ θεοῦ, βάλε σεαυτὸν κάτω· γέγραπται γὰρ ὅτι Τοῖς ἀγγέλοις αὐτοῦ ἐντελεῖται περὶ σοῦ· καί, Ἐπὶ χειρῶν ἀροῦσίν σε, μήποτε προσκόψῃς πρὸς λίθον τὸν πόδα σοῦ."
+      }
     },
     "7": {
-      "verse_number": 7,
-      "sort_number": 7,
-      "text": "[MATHE 4:7]",
-      "word_count": 5,
-      "russian": "Иисус сказал ему: написано также: не искушай Господа Бога твоего.",
-      "greek": "Ἔφη αὐτῷ ὁ Ἰησοῦς, Πάλιν γέγραπται, Οὐκ ἐκπειράσεις κύριον τὸν θεόν σου.",
-      "latin": "Ait illi Jesus: Rursum scriptum est: Non tentabis Dominum Deum tuum."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Ait illi Jesus: Rursum scriptum est: Non tentabis Dominum Deum tuum.",
+        "LXX": "Ἔφη αὐτῷ ὁ Ἰησοῦς, Πάλιν γέγραπται, Οὐκ ἐκπειράσεις κύριον τὸν θεόν σου.",
+        "SYN": "Иисус сказал ему: написано также: не искушай Господа Бога твоего.",
+        "BYZ": "Ἔφη αὐτῷ ὁ Ἰησοῦς, Πάλιν γέγραπται, Οὐκ ἐκπειράσεις κύριον τὸν θεόν σου."
+      }
     },
     "8": {
-      "verse_number": 8,
-      "sort_number": 8,
-      "text": "[MATHE 4:8]",
-      "word_count": 5,
-      "russian": "Опять берет Его диавол на весьма высокую гору и показывает Ему все царства мира и славу их,",
-      "greek": "Πάλιν παραλαμβάνει αὐτὸν ὁ διάβολος εἰς ὄρος ὑψηλὸν λίαν, καὶ δείκνυσιν αὐτῷ πάσας τὰς βασιλείας τοῦ κόσμου καὶ τὴν δόξαν αὐτῶν,",
-      "latin": "Iterum assumpsit eum diabolus in montem excelsum valde: et ostendit ei omnia regna mundi, et gloriam eorum,"
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Iterum assumpsit eum diabolus in montem excelsum valde: et ostendit ei omnia regna mundi, et gloriam eorum,",
+        "LXX": "Πάλιν παραλαμβάνει αὐτὸν ὁ διάβολος εἰς ὄρος ὑψηλὸν λίαν, καὶ δείκνυσιν αὐτῷ πάσας τὰς βασιλείας τοῦ κόσμου καὶ τὴν δόξαν αὐτῶν,",
+        "SYN": "Опять берет Его диавол на весьма высокую гору и показывает Ему все царства мира и славу их,",
+        "BYZ": "Πάλιν παραλαμβάνει αὐτὸν ὁ διάβολος εἰς ὄρος ὑψηλὸν λίαν, καὶ δείκνυσιν αὐτῷ πάσας τὰς βασιλείας τοῦ κόσμου καὶ τὴν δόξαν αὐτῶν,"
+      }
     },
     "9": {
-      "verse_number": 9,
-      "sort_number": 9,
-      "text": "[MATHE 4:9]",
-      "word_count": 5,
-      "russian": "и говорит Ему: все это дам Тебе, если, пав, поклонишься мне.",
-      "greek": "καὶ λέγει αὐτῷ, Ταῦτα πάντα σοι δώσω, ἐὰν πεσὼν προσκυνήσῃς μοι.",
-      "latin": "et dixit ei: Hæc omnia tibi dabo, si cadens adoraveris me."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "et dixit ei: Hæc omnia tibi dabo, si cadens adoraveris me.",
+        "LXX": "καὶ λέγει αὐτῷ, Ταῦτα πάντα σοι δώσω, ἐὰν πεσὼν προσκυνήσῃς μοι.",
+        "SYN": "и говорит Ему: все это дам Тебе, если, пав, поклонишься мне.",
+        "BYZ": "καὶ λέγει αὐτῷ, Ταῦτα πάντα σοι δώσω, ἐὰν πεσὼν προσκυνήσῃς μοι."
+      }
     },
     "10": {
-      "verse_number": 10,
-      "sort_number": 10,
-      "text": "[MATHE 4:10]",
-      "word_count": 5,
-      "russian": "Тогда Иисус говорит ему: отойди от Меня, сатана, ибо написано: Господу Богу твоему поклоняйся и Ему одному служи.",
-      "greek": "Τότε λέγει αὐτῷ ὁ Ἰησοῦς, Ὕπαγε ὀπίσω μου, Σατανᾶ· γέγραπται γάρ, Κύριον τὸν θεόν σου προσκυνήσεις, καὶ αὐτῷ μόνῳ λατρεύσεις.",
-      "latin": "Tunc dicit ei Jesus: Vade Satana: Scriptum est enim: Dominum Deum tuum adorabis, et illi soli servies."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Tunc dicit ei Jesus: Vade Satana: Scriptum est enim: Dominum Deum tuum adorabis, et illi soli servies.",
+        "LXX": "Τότε λέγει αὐτῷ ὁ Ἰησοῦς, Ὕπαγε ὀπίσω μου, Σατανᾶ· γέγραπται γάρ, Κύριον τὸν θεόν σου προσκυνήσεις, καὶ αὐτῷ μόνῳ λατρεύσεις.",
+        "SYN": "Тогда Иисус говорит ему: отойди от Меня, сатана, ибо написано: Господу Богу твоему поклоняйся и Ему одному служи.",
+        "BYZ": "Τότε λέγει αὐτῷ ὁ Ἰησοῦς, Ὕπαγε ὀπίσω μου, Σατανᾶ· γέγραπται γάρ, Κύριον τὸν θεόν σου προσκυνήσεις, καὶ αὐτῷ μόνῳ λατρεύσεις."
+      }
     },
     "11": {
-      "verse_number": 11,
-      "sort_number": 11,
-      "text": "[MATHE 4:11]",
-      "word_count": 5,
-      "russian": "Тогда оставляет Его диавол, и се, Ангелы приступили и служили Ему.",
-      "greek": "Τότε ἀφίησιν αὐτὸν ὁ διάβολος· καὶ ἰδού, ἄγγελοι προσῆλθον καὶ διηκόνουν αὐτῷ.",
-      "latin": "Tunc reliquit eum diabolus: et ecce angeli accesserunt, et ministrabant ei."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Tunc reliquit eum diabolus: et ecce angeli accesserunt, et ministrabant ei.",
+        "LXX": "Τότε ἀφίησιν αὐτὸν ὁ διάβολος· καὶ ἰδού, ἄγγελοι προσῆλθον καὶ διηκόνουν αὐτῷ.",
+        "SYN": "Тогда оставляет Его диавол, и се, Ангелы приступили и служили Ему.",
+        "BYZ": "Τότε ἀφίησιν αὐτὸν ὁ διάβολος· καὶ ἰδού, ἄγγελοι προσῆλθον καὶ διηκόνουν αὐτῷ."
+      }
     },
     "12": {
-      "verse_number": 12,
-      "sort_number": 12,
-      "text": "[MATHE 4:12]",
-      "word_count": 5,
-      "russian": "Услышав же Иисус, что Иоанн отдан под стражу, удалился в Галилею",
-      "greek": "Ἀκούσας δὲ ὁ Ἰησοῦς ὅτι Ἰωάννης παρεδόθη, ἀνεχώρησεν εἰς τὴν Γαλιλαίαν·",
-      "latin": "Cum autem audisset Jesus quod Joannes traditus esset, secessit in Galilæam:"
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "Cum autem audisset Jesus quod Joannes traditus esset, secessit in Galilæam:",
+        "LXX": "Ἀκούσας δὲ ὁ Ἰησοῦς ὅτι Ἰωάννης παρεδόθη, ἀνεχώρησεν εἰς τὴν Γαλιλαίαν·",
+        "SYN": "Услышав же Иисус, что Иоанн отдан под стражу, удалился в Галилею",
+        "BYZ": "Ἀκούσας δὲ ὁ Ἰησοῦς ὅτι Ἰωάννης παρεδόθη, ἀνεχώρησεν εἰς τὴν Γαλιλαίαν·"
+      }
     },
     "13": {
-      "verse_number": 13,
-      "sort_number": 13,
-      "text": "[MATHE 4:13]",
-      "word_count": 5,
-      "russian": "и, оставив Назарет, пришел и поселился в Капернауме приморском, в пределах Завулоновых и Неффалимовых,",
-      "greek": "καὶ καταλιπὼν τὴν Ναζαρέτ, ἐλθὼν κατῴκησεν εἰς Καπερναοὺμ τὴν παραθαλασσίαν, ἐν ὁρίοις Ζαβουλὼν καὶ Νεφθαλείμ·",
-      "latin": "et, relicta civitate Nazareth, venit, et habitavit in Capharnaum maritima, in finibus Zabulon et Nephthalim:"
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "et, relicta civitate Nazareth, venit, et habitavit in Capharnaum maritima, in finibus Zabulon et Nephthalim:",
+        "LXX": "καὶ καταλιπὼν τὴν Ναζαρέτ, ἐλθὼν κατῴκησεν εἰς Καπερναοὺμ τὴν παραθαλασσίαν, ἐν ὁρίοις Ζαβουλὼν καὶ Νεφθαλείμ·",
+        "SYN": "и, оставив Назарет, пришел и поселился в Капернауме приморском, в пределах Завулоновых и Неффалимовых,",
+        "BYZ": "καὶ καταλιπὼν τὴν Ναζαρέτ, ἐλθὼν κατῴκησεν εἰς Καπερναοὺμ τὴν παραθαλασσίαν, ἐν ὁρίοις Ζαβουλὼν καὶ Νεφθαλείμ·"
+      }
     },
     "14": {
-      "verse_number": 14,
-      "sort_number": 14,
-      "text": "[MATHE 4:14]",
-      "word_count": 5,
-      "russian": "да сбудется реченное через пророка Исаию, который говорит:",
-      "greek": "ἵνα πληρωθῇ τὸ ῥηθὲν διὰ Ἠσαΐου τοῦ προφήτου, λέγοντος,",
-      "latin": "ut adimpleretur quod dictum est per Isaiam prophetam:"
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "ut adimpleretur quod dictum est per Isaiam prophetam:",
+        "LXX": "ἵνα πληρωθῇ τὸ ῥηθὲν διὰ Ἠσαΐου τοῦ προφήτου, λέγοντος,",
+        "SYN": "да сбудется реченное через пророка Исаию, который говорит:",
+        "BYZ": "ἵνα πληρωθῇ τὸ ῥηθὲν διὰ Ἠσαΐου τοῦ προφήτου, λέγοντος,"
+      }
     },
     "15": {
-      "verse_number": 15,
-      "sort_number": 15,
-      "text": "[MATHE 4:15]",
-      "word_count": 5,
-      "russian": "земля Завулонова и земля Неффалимова, на пути приморском, за Иорданом, Галилея языческая,",
-      "greek": "Γῆ Ζαβουλὼν καὶ γῆ Νεφθαλείμ, ὁδὸν θαλάσσης, πέραν τοῦ Ἰορδάνου, Γαλιλαία τῶν ἐθνῶν,",
-      "latin": "[Terra Zabulon, et terra Nephthalim,/ via maris trans Jordanem,/ Galilæa gentium:/"
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "[Terra Zabulon, et terra Nephthalim,/ via maris trans Jordanem,/ Galilæa gentium:/",
+        "LXX": "Γῆ Ζαβουλὼν καὶ γῆ Νεφθαλείμ, ὁδὸν θαλάσσης, πέραν τοῦ Ἰορδάνου, Γαλιλαία τῶν ἐθνῶν,",
+        "SYN": "земля Завулонова и земля Неффалимова, на пути приморском, за Иорданом, Галилея языческая,",
+        "BYZ": "Γῆ Ζαβουλὼν καὶ γῆ Νεφθαλείμ, ὁδὸν θαλάσσης, πέραν τοῦ Ἰορδάνου, Γαλιλαία τῶν ἐθνῶν,"
+      }
     },
     "16": {
-      "verse_number": 16,
-      "sort_number": 16,
-      "text": "[MATHE 4:16]",
-      "word_count": 5,
-      "russian": "народ, сидящий во тьме, увидел свет великий, и сидящим в стране и тени смертной воссиял свет.",
-      "greek": "ὁ λαὸς ὁ καθήμενος ἐν σκότει εἶδεν φῶς μέγα, καὶ τοῖς καθημένοις ἐν χώρᾳ καὶ σκιᾷ θανάτου, φῶς ἀνέτειλεν αὐτοῖς.",
-      "latin": "populus, qui sedebat in tenebris,/ vidit lucem magnam:/ et sedentibus in regione umbræ mortis,/ lux orta est eis.]"
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "populus, qui sedebat in tenebris,/ vidit lucem magnam:/ et sedentibus in regione umbræ mortis,/ lux orta est eis.]",
+        "LXX": "ὁ λαὸς ὁ καθήμενος ἐν σκότει εἶδεν φῶς μέγα, καὶ τοῖς καθημένοις ἐν χώρᾳ καὶ σκιᾷ θανάτου, φῶς ἀνέτειλεν αὐτοῖς.",
+        "SYN": "народ, сидящий во тьме, увидел свет великий, и сидящим в стране и тени смертной воссиял свет.",
+        "BYZ": "ὁ λαὸς ὁ καθήμενος ἐν σκότει εἶδεν φῶς μέγα, καὶ τοῖς καθημένοις ἐν χώρᾳ καὶ σκιᾷ θανάτου, φῶς ἀνέτειλεν αὐτοῖς."
+      }
     },
     "17": {
-      "verse_number": 17,
-      "sort_number": 17,
-      "text": "[MATHE 4:17]",
-      "word_count": 5,
-      "russian": "С того времени Иисус начал проповедывать и говорить: покайтесь, ибо приблизилось Царство Небесное.",
-      "greek": "Ἀπὸ τότε ἤρξατο ὁ Ἰησοῦς κηρύσσειν καὶ λέγειν, Μετανοεῖτε· ἤγγικεν γὰρ ἡ βασιλεία τῶν οὐρανῶν.",
-      "latin": "Exinde cpit Jesus prædicare, et dicere: Pnitentiam agite: appropinquavit enim regnum cælorum."
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Exinde cpit Jesus prædicare, et dicere: Pnitentiam agite: appropinquavit enim regnum cælorum.",
+        "LXX": "Ἀπὸ τότε ἤρξατο ὁ Ἰησοῦς κηρύσσειν καὶ λέγειν, Μετανοεῖτε· ἤγγικεν γὰρ ἡ βασιλεία τῶν οὐρανῶν.",
+        "SYN": "С того времени Иисус начал проповедывать и говорить: покайтесь, ибо приблизилось Царство Небесное.",
+        "BYZ": "Ἀπὸ τότε ἤρξατο ὁ Ἰησοῦς κηρύσσειν καὶ λέγειν, Μετανοεῖτε· ἤγγικεν γὰρ ἡ βασιλεία τῶν οὐρανῶν."
+      }
     },
     "18": {
-      "verse_number": 18,
-      "sort_number": 18,
-      "text": "[MATHE 4:18]",
-      "word_count": 5,
-      "russian": "Проходя же близ моря Галилейского, Он увидел двух братьев: Симона, называемого Петром, и Андрея, брата его, закидывающих сети в море, ибо они были рыболовы,",
-      "greek": "Περιπατῶν δὲ παρὰ τὴν θάλασσαν τῆς Γαλιλαίας εἶδεν δύο ἀδελφούς, Σίμωνα τὸν λεγόμενον Πέτρον, καὶ Ἀνδρέαν τὸν ἀδελφὸν αὐτοῦ, βάλλοντας ἀμφίβληστρον εἰς τὴν θάλασσαν· ἦσαν γὰρ ἁλιεῖς.",
-      "latin": "Ambulans autem Jesus juxta mare Galilææ, vidit duos fratres, Simonem, qui vocatur Petrus, et Andream fratrem ejus, mittentes rete in mare (erant enim piscatores),"
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Ambulans autem Jesus juxta mare Galilææ, vidit duos fratres, Simonem, qui vocatur Petrus, et Andream fratrem ejus, mittentes rete in mare (erant enim piscatores),",
+        "LXX": "Περιπατῶν δὲ παρὰ τὴν θάλασσαν τῆς Γαλιλαίας εἶδεν δύο ἀδελφούς, Σίμωνα τὸν λεγόμενον Πέτρον, καὶ Ἀνδρέαν τὸν ἀδελφὸν αὐτοῦ, βάλλοντας ἀμφίβληστρον εἰς τὴν θάλασσαν· ἦσαν γὰρ ἁλιεῖς.",
+        "SYN": "Проходя же близ моря Галилейского, Он увидел двух братьев: Симона, называемого Петром, и Андрея, брата его, закидывающих сети в море, ибо они были рыболовы,",
+        "BYZ": "Περιπατῶν δὲ παρὰ τὴν θάλασσαν τῆς Γαλιλαίας εἶδεν δύο ἀδελφούς, Σίμωνα τὸν λεγόμενον Πέτρον, καὶ Ἀνδρέαν τὸν ἀδελφὸν αὐτοῦ, βάλλοντας ἀμφίβληστρον εἰς τὴν θάλασσαν· ἦσαν γὰρ ἁλιεῖς."
+      }
     },
     "19": {
-      "verse_number": 19,
-      "sort_number": 19,
-      "text": "[MATHE 4:19]",
-      "word_count": 5,
-      "russian": "и говорит им: идите за Мною, и Я сделаю вас ловцами человеков.",
-      "greek": "Καὶ λέγει αὐτοῖς, Δεῦτε ὀπίσω μου, καὶ ποιήσω ὑμᾶς ἁλιεῖς ἀνθρώπων.",
-      "latin": "et ait illis: Venite post me, et faciam vos fieri piscatores hominum."
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "et ait illis: Venite post me, et faciam vos fieri piscatores hominum.",
+        "LXX": "Καὶ λέγει αὐτοῖς, Δεῦτε ὀπίσω μου, καὶ ποιήσω ὑμᾶς ἁλιεῖς ἀνθρώπων.",
+        "SYN": "и говорит им: идите за Мною, и Я сделаю вас ловцами человеков.",
+        "BYZ": "Καὶ λέγει αὐτοῖς, Δεῦτε ὀπίσω μου, καὶ ποιήσω ὑμᾶς ἁλιεῖς ἀνθρώπων."
+      }
     },
     "20": {
-      "verse_number": 20,
-      "sort_number": 20,
-      "text": "[MATHE 4:20]",
-      "word_count": 5,
-      "russian": "И они тотчас, оставив сети, последовали за Ним.",
-      "greek": "Οἱ δὲ εὐθέως ἀφέντες τὰ δίκτυα ἠκολούθησαν αὐτῷ.",
-      "latin": "At illi continuo relictis retibus secuti sunt eum."
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "At illi continuo relictis retibus secuti sunt eum.",
+        "LXX": "Οἱ δὲ εὐθέως ἀφέντες τὰ δίκτυα ἠκολούθησαν αὐτῷ.",
+        "SYN": "И они тотчас, оставив сети, последовали за Ним.",
+        "BYZ": "Οἱ δὲ εὐθέως ἀφέντες τὰ δίκτυα ἠκολούθησαν αὐτῷ."
+      }
     },
     "21": {
-      "verse_number": 21,
-      "sort_number": 21,
-      "text": "[MATHE 4:21]",
-      "word_count": 5,
-      "russian": "Оттуда, идя далее, увидел Он других двух братьев, Иакова Зеведеева и Иоанна, брата его, в лодке с Зеведеем, отцом их, починивающих сети свои, и призвал их.",
-      "greek": "Καὶ προβὰς ἐκεῖθεν, εἶδεν ἄλλους δύο ἀδελφούς, Ἰάκωβον τὸν τοῦ Ζεβεδαίου καὶ Ἰωάννην τὸν ἀδελφὸν αὐτοῦ, ἐν τῷ πλοίῳ μετὰ Ζεβεδαίου τοῦ πατρὸς αὐτῶν, καταρτίζοντας τὰ δίκτυα αὐτῶν· καὶ ἐκάλεσεν αὐτούς.",
-      "latin": "Et procedens inde, vidit alios duos fratres, Jacobum Zebedæi, et Joannem fratrem ejus, in navi cum Zebedæo patre eorum, reficientes retia sua: et vocavit eos."
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Et procedens inde, vidit alios duos fratres, Jacobum Zebedæi, et Joannem fratrem ejus, in navi cum Zebedæo patre eorum, reficientes retia sua: et vocavit eos.",
+        "LXX": "Καὶ προβὰς ἐκεῖθεν, εἶδεν ἄλλους δύο ἀδελφούς, Ἰάκωβον τὸν τοῦ Ζεβεδαίου καὶ Ἰωάννην τὸν ἀδελφὸν αὐτοῦ, ἐν τῷ πλοίῳ μετὰ Ζεβεδαίου τοῦ πατρὸς αὐτῶν, καταρτίζοντας τὰ δίκτυα αὐτῶν· καὶ ἐκάλεσεν αὐτούς.",
+        "SYN": "Оттуда, идя далее, увидел Он других двух братьев, Иакова Зеведеева и Иоанна, брата его, в лодке с Зеведеем, отцом их, починивающих сети свои, и призвал их.",
+        "BYZ": "Καὶ προβὰς ἐκεῖθεν, εἶδεν ἄλλους δύο ἀδελφούς, Ἰάκωβον τὸν τοῦ Ζεβεδαίου καὶ Ἰωάννην τὸν ἀδελφὸν αὐτοῦ, ἐν τῷ πλοίῳ μετὰ Ζεβεδαίου τοῦ πατρὸς αὐτῶν, καταρτίζοντας τὰ δίκτυα αὐτῶν· καὶ ἐκάλεσεν αὐτούς."
+      }
     },
     "22": {
-      "verse_number": 22,
-      "sort_number": 22,
-      "text": "[MATHE 4:22]",
-      "word_count": 5,
-      "russian": "И они тотчас, оставив лодку и отца своего, последовали за Ним.",
-      "greek": "Οἱ δὲ εὐθέως ἀφέντες τὸ πλοῖον καὶ τὸν πατέρα αὐτῶν ἠκολούθησαν αὐτῷ.",
-      "latin": "Illi autem statim relictis retibus et patre, secuti sunt eum."
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Illi autem statim relictis retibus et patre, secuti sunt eum.",
+        "LXX": "Οἱ δὲ εὐθέως ἀφέντες τὸ πλοῖον καὶ τὸν πατέρα αὐτῶν ἠκολούθησαν αὐτῷ.",
+        "SYN": "И они тотчас, оставив лодку и отца своего, последовали за Ним.",
+        "BYZ": "Οἱ δὲ εὐθέως ἀφέντες τὸ πλοῖον καὶ τὸν πατέρα αὐτῶν ἠκολούθησαν αὐτῷ."
+      }
     },
     "23": {
-      "verse_number": 23,
-      "sort_number": 23,
-      "text": "[MATHE 4:23]",
-      "word_count": 5,
-      "russian": "И ходил Иисус по всей Галилее, уча в синагогах их и проповедуя Евангелие Царствия, и исцеляя всякую болезнь и всякую немощь в людях.",
-      "greek": "Καὶ περιῆγεν ὅλην τὴν Γαλιλαίαν ὁ Ἰησοῦς, διδάσκων ἐν ταῖς συναγωγαῖς αὐτῶν, καὶ κηρύσσων τὸ εὐαγγέλιον τῆς βασιλείας, καὶ θεραπεύων πᾶσαν νόσον καὶ πᾶσαν μαλακίαν ἐν τῷ λαῷ.",
-      "latin": "Et circuibat Jesus totam Galilæam, docens in synagogis eorum, et prædicans Evangelium regni: et sanans omnem languorem, et omnem infirmitatem in populo."
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "Et circuibat Jesus totam Galilæam, docens in synagogis eorum, et prædicans Evangelium regni: et sanans omnem languorem, et omnem infirmitatem in populo.",
+        "LXX": "Καὶ περιῆγεν ὅλην τὴν Γαλιλαίαν ὁ Ἰησοῦς, διδάσκων ἐν ταῖς συναγωγαῖς αὐτῶν, καὶ κηρύσσων τὸ εὐαγγέλιον τῆς βασιλείας, καὶ θεραπεύων πᾶσαν νόσον καὶ πᾶσαν μαλακίαν ἐν τῷ λαῷ.",
+        "SYN": "И ходил Иисус по всей Галилее, уча в синагогах их и проповедуя Евангелие Царствия, и исцеляя всякую болезнь и всякую немощь в людях.",
+        "BYZ": "Καὶ περιῆγεν ὅλην τὴν Γαλιλαίαν ὁ Ἰησοῦς, διδάσκων ἐν ταῖς συναγωγαῖς αὐτῶν, καὶ κηρύσσων τὸ εὐαγγέλιον τῆς βασιλείας, καὶ θεραπεύων πᾶσαν νόσον καὶ πᾶσαν μαλακίαν ἐν τῷ λαῷ."
+      }
     },
     "24": {
-      "verse_number": 24,
-      "sort_number": 24,
-      "text": "[MATHE 4:24]",
-      "word_count": 5,
-      "russian": "И прошел о Нем слух по всей Сирии; и приводили к Нему всех немощных, одержимых различными болезнями и припадками, и бесноватых, и лунатиков, и расслабленных, и Он исцелял их.",
-      "greek": "Καὶ ἀπῆλθεν ἡ ἀκοὴ αὐτοῦ εἰς ὅλην τὴν Συρίαν· καὶ προσήνεγκαν αὐτῷ πάντας τοὺς κακῶς ἔχοντας, ποικίλαις νόσοις καὶ βασάνοις συνεχομένους, καὶ δαιμονιζομένους, καὶ σεληνιαζομένους, καὶ παραλυτικούς· καὶ ἐθεράπευσεν αὐτούς.",
-      "latin": "Et abiit opinio ejus in totam Syriam, et obtulerunt ei omnes male habentes, variis languoribus, et tormentis comprehensos, et qui dæmonia habebant, et lunaticos, et paralyticos, et curavit eos:"
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Et abiit opinio ejus in totam Syriam, et obtulerunt ei omnes male habentes, variis languoribus, et tormentis comprehensos, et qui dæmonia habebant, et lunaticos, et paralyticos, et curavit eos:",
+        "LXX": "Καὶ ἀπῆλθεν ἡ ἀκοὴ αὐτοῦ εἰς ὅλην τὴν Συρίαν· καὶ προσήνεγκαν αὐτῷ πάντας τοὺς κακῶς ἔχοντας, ποικίλαις νόσοις καὶ βασάνοις συνεχομένους, καὶ δαιμονιζομένους, καὶ σεληνιαζομένους, καὶ παραλυτικούς· καὶ ἐθεράπευσεν αὐτούς.",
+        "SYN": "И прошел о Нем слух по всей Сирии; и приводили к Нему всех немощных, одержимых различными болезнями и припадками, и бесноватых, и лунатиков, и расслабленных, и Он исцелял их.",
+        "BYZ": "Καὶ ἀπῆλθεν ἡ ἀκοὴ αὐτοῦ εἰς ὅλην τὴν Συρίαν· καὶ προσήνεγκαν αὐτῷ πάντας τοὺς κακῶς ἔχοντας, ποικίλαις νόσοις καὶ βασάνοις συνεχομένους, καὶ δαιμονιζομένους, καὶ σεληνιαζομένους, καὶ παραλυτικούς· καὶ ἐθεράπευσεν αὐτούς."
+      }
     },
     "25": {
-      "verse_number": 25,
-      "sort_number": 25,
-      "text": "[MATHE 4:25]",
-      "word_count": 5,
-      "russian": "И следовало за Ним множество народа из Галилеи и Десятиградия, и Иерусалима, и Иудеи, и из-за Иордана.",
-      "greek": "Καὶ ἠκολούθησαν αὐτῷ ὄχλοι πολλοὶ ἀπὸ τῆς Γαλιλαίας καὶ Δεκαπόλεως καὶ Ἱεροσολύμων καὶ Ἰουδαίας καὶ πέραν τοῦ Ἰορδάνου.",
-      "latin": "et secutæ sunt eum turbæ multæ de Galilæa, et Decapoli, et de Jerosolymis, et de Judæa, et de trans Jordanem."
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "et secutæ sunt eum turbæ multæ de Galilæa, et Decapoli, et de Jerosolymis, et de Judæa, et de trans Jordanem.",
+        "LXX": "Καὶ ἠκολούθησαν αὐτῷ ὄχλοι πολλοὶ ἀπὸ τῆς Γαλιλαίας καὶ Δεκαπόλεως καὶ Ἱεροσολύμων καὶ Ἰουδαίας καὶ πέραν τοῦ Ἰορδάνου.",
+        "SYN": "И следовало за Ним множество народа из Галилеи и Десятиградия, и Иерусалима, и Иудеи, и из-за Иордана.",
+        "BYZ": "Καὶ ἠκολούθησαν αὐτῷ ὄχλοι πολλοὶ ἀπὸ τῆς Γαλιλαίας καὶ Δεκαπόλεως καὶ Ἱεροσολύμων καὶ Ἰουδαίας καὶ πέραν τοῦ Ἰορδάνου."
+      }
     }
   }
 }

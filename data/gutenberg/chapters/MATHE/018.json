@@ -1,328 +1,505 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "MATHE_018",
-  "chapter_key": "18",
-  "chapter_number": 18,
-  "sort_number": 18,
-  "name": "18",
   "book_key": "MATHE",
+  "sequence": 18,
+  "chapter_in": {
+    "MT": 18,
+    "VUL": 18,
+    "LXX": 18
+  },
   "testament": "Novum_Testamentum",
   "section": "Evangelia",
-  "verse_count": 35,
   "verses": {
     "1": {
-      "verse_number": 1,
-      "sort_number": 1,
-      "text": "[MATHE 18:1]",
-      "word_count": 5,
-      "russian": "В то время ученики приступили к Иисусу и сказали: кто больше в Царстве Небесном?",
-      "greek": "Ἐν ἐκείνῃ τῇ ὥρᾳ προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ, λέγοντες, Τίς ἄρα μείζων ἐστὶν ἐν τῇ βασιλείᾳ τῶν οὐρανῶν;",
-      "latin": "In illa hora accesserunt discipuli ad Jesum, dicentes: Quis, putas, major est in regno cælorum ?"
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "In illa hora accesserunt discipuli ad Jesum, dicentes: Quis, putas, major est in regno cælorum ?",
+        "LXX": "Ἐν ἐκείνῃ τῇ ὥρᾳ προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ, λέγοντες, Τίς ἄρα μείζων ἐστὶν ἐν τῇ βασιλείᾳ τῶν οὐρανῶν;",
+        "SYN": "В то время ученики приступили к Иисусу и сказали: кто больше в Царстве Небесном?",
+        "BYZ": "Ἐν ἐκείνῃ τῇ ὥρᾳ προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ, λέγοντες, Τίς ἄρα μείζων ἐστὶν ἐν τῇ βασιλείᾳ τῶν οὐρανῶν;"
+      }
     },
     "2": {
-      "verse_number": 2,
-      "sort_number": 2,
-      "text": "[MATHE 18:2]",
-      "word_count": 5,
-      "russian": "Иисус, призвав дитя, поставил его посреди них",
-      "greek": "Καὶ προσκαλεσάμενος ὁ Ἰησοῦς παιδίον ἔστησεν αὐτὸ ἐν μέσῳ αὐτῶν,",
-      "latin": "Et advocans Jesus parvulum, statuit eum in medio eorum,"
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "Et advocans Jesus parvulum, statuit eum in medio eorum,",
+        "LXX": "Καὶ προσκαλεσάμενος ὁ Ἰησοῦς παιδίον ἔστησεν αὐτὸ ἐν μέσῳ αὐτῶν,",
+        "SYN": "Иисус, призвав дитя, поставил его посреди них",
+        "BYZ": "Καὶ προσκαλεσάμενος ὁ Ἰησοῦς παιδίον ἔστησεν αὐτὸ ἐν μέσῳ αὐτῶν,"
+      }
     },
     "3": {
-      "verse_number": 3,
-      "sort_number": 3,
-      "text": "[MATHE 18:3]",
-      "word_count": 5,
-      "russian": "и сказал: истинно говорю вам, если не обратитесь и не будете как дети, не войдете в Царство Небесное;",
-      "greek": "καὶ εἶπεν, Ἀμὴν λέγω ὑμῖν, ἐὰν μὴ στραφῆτε καὶ γένησθε ὡς τὰ παιδία, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν.",
-      "latin": "et dixit: Amen dico vobis, nisi conversi fueritis, et efficiamini sicut parvuli, non intrabitis in regnum cælorum."
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "et dixit: Amen dico vobis, nisi conversi fueritis, et efficiamini sicut parvuli, non intrabitis in regnum cælorum.",
+        "LXX": "καὶ εἶπεν, Ἀμὴν λέγω ὑμῖν, ἐὰν μὴ στραφῆτε καὶ γένησθε ὡς τὰ παιδία, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν.",
+        "SYN": "и сказал: истинно говорю вам, если не обратитесь и не будете как дети, не войдете в Царство Небесное;",
+        "BYZ": "καὶ εἶπεν, Ἀμὴν λέγω ὑμῖν, ἐὰν μὴ στραφῆτε καὶ γένησθε ὡς τὰ παιδία, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν."
+      }
     },
     "4": {
-      "verse_number": 4,
-      "sort_number": 4,
-      "text": "[MATHE 18:4]",
-      "word_count": 5,
-      "russian": "итак, кто умалится, как это дитя, тот и больше в Царстве Небесном;",
-      "greek": "Ὅστις οὖν ταπεινώσει ἑαυτὸν ὡς τὸ παιδίον τοῦτο, οὗτός ἐστιν ὁ μείζων ἐν τῇ βασιλείᾳ τῶν οὐρανῶν.",
-      "latin": "Quicumque ergo humiliaverit se sicut parvulus iste, hic est major in regno cælorum."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "Quicumque ergo humiliaverit se sicut parvulus iste, hic est major in regno cælorum.",
+        "LXX": "Ὅστις οὖν ταπεινώσει ἑαυτὸν ὡς τὸ παιδίον τοῦτο, οὗτός ἐστιν ὁ μείζων ἐν τῇ βασιλείᾳ τῶν οὐρανῶν.",
+        "SYN": "итак, кто умалится, как это дитя, тот и больше в Царстве Небесном;",
+        "BYZ": "Ὅστις οὖν ταπεινώσει ἑαυτὸν ὡς τὸ παιδίον τοῦτο, οὗτός ἐστιν ὁ μείζων ἐν τῇ βασιλείᾳ τῶν οὐρανῶν."
+      }
     },
     "5": {
-      "verse_number": 5,
-      "sort_number": 5,
-      "text": "[MATHE 18:5]",
-      "word_count": 5,
-      "russian": "и кто примет одно такое дитя во имя Мое, тот Меня принимает;",
-      "greek": "Καὶ ὃς ἐὰν δέξηται παιδίον τοιοῦτον ἓν ἐπὶ τῷ ὀνόματί μου, ἐμὲ δέχεται·",
-      "latin": "Et qui susceperit unum parvulum talem in nomine meo, me suscipit:"
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Et qui susceperit unum parvulum talem in nomine meo, me suscipit:",
+        "LXX": "Καὶ ὃς ἐὰν δέξηται παιδίον τοιοῦτον ἓν ἐπὶ τῷ ὀνόματί μου, ἐμὲ δέχεται·",
+        "SYN": "и кто примет одно такое дитя во имя Мое, тот Меня принимает;",
+        "BYZ": "Καὶ ὃς ἐὰν δέξηται παιδίον τοιοῦτον ἓν ἐπὶ τῷ ὀνόματί μου, ἐμὲ δέχεται·"
+      }
     },
     "6": {
-      "verse_number": 6,
-      "sort_number": 6,
-      "text": "[MATHE 18:6]",
-      "word_count": 5,
-      "russian": "а кто соблазнит одного из малых сих, верующих в Меня, тому лучше было бы, если бы повесили ему мельничный жернов на шею и потопили его во глубине морской.",
-      "greek": "ὃς δ’ ἂν σκανδαλίσῃ ἕνα τῶν μικρῶν τούτων τῶν πιστευόντων εἰς ἐμέ, συμφέρει αὐτῷ ἵνα κρεμασθῇ μύλος ὀνικὸς εἰς τὸν τράχηλον αὐτοῦ, καὶ καταποντισθῇ ἐν τῷ πελάγει τῆς θαλάσσης.",
-      "latin": "qui autem scandalizaverit unum de pusillis istis, qui in me credunt, expedit ei ut suspendatur mola asinaria in collo ejus, et demergatur in profundum maris."
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "qui autem scandalizaverit unum de pusillis istis, qui in me credunt, expedit ei ut suspendatur mola asinaria in collo ejus, et demergatur in profundum maris.",
+        "LXX": "ὃς δ’ ἂν σκανδαλίσῃ ἕνα τῶν μικρῶν τούτων τῶν πιστευόντων εἰς ἐμέ, συμφέρει αὐτῷ ἵνα κρεμασθῇ μύλος ὀνικὸς εἰς τὸν τράχηλον αὐτοῦ, καὶ καταποντισθῇ ἐν τῷ πελάγει τῆς θαλάσσης.",
+        "SYN": "а кто соблазнит одного из малых сих, верующих в Меня, тому лучше было бы, если бы повесили ему мельничный жернов на шею и потопили его во глубине морской.",
+        "BYZ": "ὃς δ’ ἂν σκανδαλίσῃ ἕνα τῶν μικρῶν τούτων τῶν πιστευόντων εἰς ἐμέ, συμφέρει αὐτῷ ἵνα κρεμασθῇ μύλος ὀνικὸς εἰς τὸν τράχηλον αὐτοῦ, καὶ καταποντισθῇ ἐν τῷ πελάγει τῆς θαλάσσης."
+      }
     },
     "7": {
-      "verse_number": 7,
-      "sort_number": 7,
-      "text": "[MATHE 18:7]",
-      "word_count": 5,
-      "russian": "Горе миру от соблазнов, ибо надобно придти соблазнам; но горе тому человеку, через которого соблазн приходит.",
-      "greek": "Οὐαὶ τῷ κόσμῳ ἀπὸ τῶν σκανδάλων· ἀνάγκη γάρ ἐστιν ἐλθεῖν τὰ σκάνδαλα· πλὴν οὐαὶ τῷ ἀνθρώπῳ ἐκείνῳ, δι’ οὗ τὸ σκάνδαλον ἔρχεται.",
-      "latin": "Væ mundo a scandalis ! Necesse est enim ut veniant scandala: verumtamen væ homini illi, per quem scandalum venit."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Væ mundo a scandalis ! Necesse est enim ut veniant scandala: verumtamen væ homini illi, per quem scandalum venit.",
+        "LXX": "Οὐαὶ τῷ κόσμῳ ἀπὸ τῶν σκανδάλων· ἀνάγκη γάρ ἐστιν ἐλθεῖν τὰ σκάνδαλα· πλὴν οὐαὶ τῷ ἀνθρώπῳ ἐκείνῳ, δι’ οὗ τὸ σκάνδαλον ἔρχεται.",
+        "SYN": "Горе миру от соблазнов, ибо надобно придти соблазнам; но горе тому человеку, через которого соблазн приходит.",
+        "BYZ": "Οὐαὶ τῷ κόσμῳ ἀπὸ τῶν σκανδάλων· ἀνάγκη γάρ ἐστιν ἐλθεῖν τὰ σκάνδαλα· πλὴν οὐαὶ τῷ ἀνθρώπῳ ἐκείνῳ, δι’ οὗ τὸ σκάνδαλον ἔρχεται."
+      }
     },
     "8": {
-      "verse_number": 8,
-      "sort_number": 8,
-      "text": "[MATHE 18:8]",
-      "word_count": 5,
-      "russian": "Если же рука твоя или нога твоя соблазняет тебя, отсеки их и брось от себя: лучше тебе войти в жизнь без руки или без ноги, нежели с двумя руками и с двумя ногами быть ввержену в огонь вечный;",
-      "greek": "Εἰ δὲ ἡ χείρ σου ἢ ὁ πούς σου σκανδαλίζει σε, ἔκκοψον αὐτὰ καὶ βάλε ἀπὸ σοῦ· καλόν σοι ἐστὶν εἰσελθεῖν εἰς τὴν ζωὴν χωλὸν ἢ κυλλόν, ἢ δύο χεῖρας ἢ δύο πόδας ἔχοντα βληθῆναι εἰς τὸ πῦρ τὸ αἰώνιον.",
-      "latin": "Si autem manus tua, vel pes tuus scandalizat te, abscide eum, et projice abs te: bonum tibi est ad vitam ingredi debilem, vel claudum, quam duas manus vel duos pedes habentem mitti in ignem æternum."
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Si autem manus tua, vel pes tuus scandalizat te, abscide eum, et projice abs te: bonum tibi est ad vitam ingredi debilem, vel claudum, quam duas manus vel duos pedes habentem mitti in ignem æternum.",
+        "LXX": "Εἰ δὲ ἡ χείρ σου ἢ ὁ πούς σου σκανδαλίζει σε, ἔκκοψον αὐτὰ καὶ βάλε ἀπὸ σοῦ· καλόν σοι ἐστὶν εἰσελθεῖν εἰς τὴν ζωὴν χωλὸν ἢ κυλλόν, ἢ δύο χεῖρας ἢ δύο πόδας ἔχοντα βληθῆναι εἰς τὸ πῦρ τὸ αἰώνιον.",
+        "SYN": "Если же рука твоя или нога твоя соблазняет тебя, отсеки их и брось от себя: лучше тебе войти в жизнь без руки или без ноги, нежели с двумя руками и с двумя ногами быть ввержену в огонь вечный;",
+        "BYZ": "Εἰ δὲ ἡ χείρ σου ἢ ὁ πούς σου σκανδαλίζει σε, ἔκκοψον αὐτὰ καὶ βάλε ἀπὸ σοῦ· καλόν σοι ἐστὶν εἰσελθεῖν εἰς τὴν ζωὴν χωλὸν ἢ κυλλόν, ἢ δύο χεῖρας ἢ δύο πόδας ἔχοντα βληθῆναι εἰς τὸ πῦρ τὸ αἰώνιον."
+      }
     },
     "9": {
-      "verse_number": 9,
-      "sort_number": 9,
-      "text": "[MATHE 18:9]",
-      "word_count": 5,
-      "russian": "и если глаз твой соблазняет тебя, вырви его и брось от себя: лучше тебе с одним глазом войти в жизнь, нежели с двумя глазами быть ввержену в геенну огненную.",
-      "greek": "Καὶ εἰ ὁ ὀφθαλμός σου σκανδαλίζει σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ σοῦ· καλόν σοι ἐστὶν μονόφθαλμον εἰς τὴν ζωὴν εἰσελθεῖν, ἢ δύο ὀφθαλμοὺς ἔχοντα βληθῆναι εἰς τὴν γέενναν τοῦ πυρός.",
-      "latin": "Et si oculus tuus scandalizat te, erue eum, et projice abs te: bonum tibi est cum uno oculo in vitam intrare, quam duos oculos habentem mitti in gehennam ignis."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "Et si oculus tuus scandalizat te, erue eum, et projice abs te: bonum tibi est cum uno oculo in vitam intrare, quam duos oculos habentem mitti in gehennam ignis.",
+        "LXX": "Καὶ εἰ ὁ ὀφθαλμός σου σκανδαλίζει σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ σοῦ· καλόν σοι ἐστὶν μονόφθαλμον εἰς τὴν ζωὴν εἰσελθεῖν, ἢ δύο ὀφθαλμοὺς ἔχοντα βληθῆναι εἰς τὴν γέενναν τοῦ πυρός.",
+        "SYN": "и если глаз твой соблазняет тебя, вырви его и брось от себя: лучше тебе с одним глазом войти в жизнь, нежели с двумя глазами быть ввержену в геенну огненную.",
+        "BYZ": "Καὶ εἰ ὁ ὀφθαλμός σου σκανδαλίζει σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ σοῦ· καλόν σοι ἐστὶν μονόφθαλμον εἰς τὴν ζωὴν εἰσελθεῖν, ἢ δύο ὀφθαλμοὺς ἔχοντα βληθῆναι εἰς τὴν γέενναν τοῦ πυρός."
+      }
     },
     "10": {
-      "verse_number": 10,
-      "sort_number": 10,
-      "text": "[MATHE 18:10]",
-      "word_count": 5,
-      "russian": "Смотрите, не презирайте ни одного из малых сих; ибо говорю вам, что Ангелы их на небесах всегда видят лице Отца Моего Небесного.",
-      "greek": "Ὁρᾶτε μὴ καταφρονήσητε ἑνὸς τῶν μικρῶν τούτων, λέγω γὰρ ὑμῖν ὅτι οἱ ἄγγελοι αὐτῶν ἐν οὐρανοῖς διὰ παντὸς βλέπουσιν τὸ πρόσωπον τοῦ πατρός μου τοῦ ἐν οὐρανοῖς.",
-      "latin": "Videte ne contemnatis unum ex his pusillis: dico enim vobis, quia angeli eorum in cælis semper vident faciem Patris mei, qui in cælis est."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Videte ne contemnatis unum ex his pusillis: dico enim vobis, quia angeli eorum in cælis semper vident faciem Patris mei, qui in cælis est.",
+        "LXX": "Ὁρᾶτε μὴ καταφρονήσητε ἑνὸς τῶν μικρῶν τούτων, λέγω γὰρ ὑμῖν ὅτι οἱ ἄγγελοι αὐτῶν ἐν οὐρανοῖς διὰ παντὸς βλέπουσιν τὸ πρόσωπον τοῦ πατρός μου τοῦ ἐν οὐρανοῖς.",
+        "SYN": "Смотрите, не презирайте ни одного из малых сих; ибо говорю вам, что Ангелы их на небесах всегда видят лице Отца Моего Небесного.",
+        "BYZ": "Ὁρᾶτε μὴ καταφρονήσητε ἑνὸς τῶν μικρῶν τούτων, λέγω γὰρ ὑμῖν ὅτι οἱ ἄγγελοι αὐτῶν ἐν οὐρανοῖς διὰ παντὸς βλέπουσιν τὸ πρόσωπον τοῦ πατρός μου τοῦ ἐν οὐρανοῖς."
+      }
     },
     "11": {
-      "verse_number": 11,
-      "sort_number": 11,
-      "text": "[MATHE 18:11]",
-      "word_count": 5,
-      "russian": "Ибо Сын Человеческий пришел взыскать и спасти погибшее.",
-      "greek": "Ἦλθεν γὰρ ὁ υἱὸς τοῦ ἀνθρώπου σῶσαι τὸ ἀπολωλός.",
-      "latin": "Venit enim Filius hominis salvare quod perierat."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Venit enim Filius hominis salvare quod perierat.",
+        "LXX": "Ἦλθεν γὰρ ὁ υἱὸς τοῦ ἀνθρώπου σῶσαι τὸ ἀπολωλός.",
+        "SYN": "Ибо Сын Человеческий пришел взыскать и спасти погибшее.",
+        "BYZ": "Ἦλθεν γὰρ ὁ υἱὸς τοῦ ἀνθρώπου σῶσαι τὸ ἀπολωλός."
+      }
     },
     "12": {
-      "verse_number": 12,
-      "sort_number": 12,
-      "text": "[MATHE 18:12]",
-      "word_count": 5,
-      "russian": "Как вам кажется? Если бы у кого было сто овец, и одна из них заблудилась, то не оставит ли он девяносто девять в горах и не пойдет ли искать заблудившуюся?",
-      "greek": "Τί ὑμῖν δοκεῖ; Ἐὰν γένηταί τινι ἀνθρώπῳ ἑκατὸν πρόβατα, καὶ πλανηθῇ ἓν ἐξ αὐτῶν· οὐχὶ ἀφεὶς τὰ ἐνενήκοντα ἐννέα, ἐπὶ τὰ ὄρη πορευθεὶς ζητεῖ τὸ πλανώμενον;",
-      "latin": "Quid vobis videtur ? si fuerint alicui centum oves, et erravit una ex eis: nonne relinquit nonaginta novem in montibus, et vadit quærere eam quæ erravit ?"
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "Quid vobis videtur ? si fuerint alicui centum oves, et erravit una ex eis: nonne relinquit nonaginta novem in montibus, et vadit quærere eam quæ erravit ?",
+        "LXX": "Τί ὑμῖν δοκεῖ; Ἐὰν γένηταί τινι ἀνθρώπῳ ἑκατὸν πρόβατα, καὶ πλανηθῇ ἓν ἐξ αὐτῶν· οὐχὶ ἀφεὶς τὰ ἐνενήκοντα ἐννέα, ἐπὶ τὰ ὄρη πορευθεὶς ζητεῖ τὸ πλανώμενον;",
+        "SYN": "Как вам кажется? Если бы у кого было сто овец, и одна из них заблудилась, то не оставит ли он девяносто девять в горах и не пойдет ли искать заблудившуюся?",
+        "BYZ": "Τί ὑμῖν δοκεῖ; Ἐὰν γένηταί τινι ἀνθρώπῳ ἑκατὸν πρόβατα, καὶ πλανηθῇ ἓν ἐξ αὐτῶν· οὐχὶ ἀφεὶς τὰ ἐνενήκοντα ἐννέα, ἐπὶ τὰ ὄρη πορευθεὶς ζητεῖ τὸ πλανώμενον;"
+      }
     },
     "13": {
-      "verse_number": 13,
-      "sort_number": 13,
-      "text": "[MATHE 18:13]",
-      "word_count": 5,
-      "russian": "и если случится найти ее, то, истинно говорю вам, он радуется о ней более, нежели о девяноста девяти незаблудившихся.",
-      "greek": "Καὶ ἐὰν γένηται εὑρεῖν αὐτό, ἀμὴν λέγω ὑμῖν ὅτι χαίρει ἐπ’ αὐτῷ μᾶλλον, ἢ ἐπὶ τοῖς ἐνενήκοντα ἐννέα τοῖς μὴ πεπλανημένοις.",
-      "latin": "Et si contigerit ut inveniat eam: amen dico vobis, quia gaudet super eam magis quam super nonaginta novem, quæ non erraverunt."
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "Et si contigerit ut inveniat eam: amen dico vobis, quia gaudet super eam magis quam super nonaginta novem, quæ non erraverunt.",
+        "LXX": "Καὶ ἐὰν γένηται εὑρεῖν αὐτό, ἀμὴν λέγω ὑμῖν ὅτι χαίρει ἐπ’ αὐτῷ μᾶλλον, ἢ ἐπὶ τοῖς ἐνενήκοντα ἐννέα τοῖς μὴ πεπλανημένοις.",
+        "SYN": "и если случится найти ее, то, истинно говорю вам, он радуется о ней более, нежели о девяноста девяти незаблудившихся.",
+        "BYZ": "Καὶ ἐὰν γένηται εὑρεῖν αὐτό, ἀμὴν λέγω ὑμῖν ὅτι χαίρει ἐπ’ αὐτῷ μᾶλλον, ἢ ἐπὶ τοῖς ἐνενήκοντα ἐννέα τοῖς μὴ πεπλανημένοις."
+      }
     },
     "14": {
-      "verse_number": 14,
-      "sort_number": 14,
-      "text": "[MATHE 18:14]",
-      "word_count": 5,
-      "russian": "Так, нет воли Отца вашего Небесного, чтобы погиб один из малых сих.",
-      "greek": "Οὕτως οὐκ ἔστιν θέλημα ἔμπροσθεν τοῦ πατρὸς ὑμῶν τοῦ ἐν οὐρανοῖς, ἵνα ἀπόληται εἷς τῶν μικρῶν τούτων.",
-      "latin": "Sic non est voluntas ante Patrem vestrum, qui in cælis est, ut pereat unus de pusillis istis."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Sic non est voluntas ante Patrem vestrum, qui in cælis est, ut pereat unus de pusillis istis.",
+        "LXX": "Οὕτως οὐκ ἔστιν θέλημα ἔμπροσθεν τοῦ πατρὸς ὑμῶν τοῦ ἐν οὐρανοῖς, ἵνα ἀπόληται εἷς τῶν μικρῶν τούτων.",
+        "SYN": "Так, нет воли Отца вашего Небесного, чтобы погиб один из малых сих.",
+        "BYZ": "Οὕτως οὐκ ἔστιν θέλημα ἔμπροσθεν τοῦ πατρὸς ὑμῶν τοῦ ἐν οὐρανοῖς, ἵνα ἀπόληται εἷς τῶν μικρῶν τούτων."
+      }
     },
     "15": {
-      "verse_number": 15,
-      "sort_number": 15,
-      "text": "[MATHE 18:15]",
-      "word_count": 5,
-      "russian": "Если же согрешит против тебя брат твой, пойди и обличи его между тобою и им одним; если послушает тебя, то приобрел ты брата твоего;",
-      "greek": "Ἐὰν δὲ ἁμαρτήσῃ εἰς σὲ ὁ ἀδελφός σου, ὕπαγε καὶ ἔλεγξον αὐτὸν μεταξὺ σοῦ καὶ αὐτοῦ μόνου. Ἐάν σου ἀκούσῃ, ἐκέρδησας τὸν ἀδελφόν σου·",
-      "latin": "Si autem peccaverit in te frater tuus, vade, et corripe eum inter te, et ipsum solum: si te audierit, lucratus eris fratrem tuum."
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Si autem peccaverit in te frater tuus, vade, et corripe eum inter te, et ipsum solum: si te audierit, lucratus eris fratrem tuum.",
+        "LXX": "Ἐὰν δὲ ἁμαρτήσῃ εἰς σὲ ὁ ἀδελφός σου, ὕπαγε καὶ ἔλεγξον αὐτὸν μεταξὺ σοῦ καὶ αὐτοῦ μόνου. Ἐάν σου ἀκούσῃ, ἐκέρδησας τὸν ἀδελφόν σου·",
+        "SYN": "Если же согрешит против тебя брат твой, пойди и обличи его между тобою и им одним; если послушает тебя, то приобрел ты брата твоего;",
+        "BYZ": "Ἐὰν δὲ ἁμαρτήσῃ εἰς σὲ ὁ ἀδελφός σου, ὕπαγε καὶ ἔλεγξον αὐτὸν μεταξὺ σοῦ καὶ αὐτοῦ μόνου. Ἐάν σου ἀκούσῃ, ἐκέρδησας τὸν ἀδελφόν σου·"
+      }
     },
     "16": {
-      "verse_number": 16,
-      "sort_number": 16,
-      "text": "[MATHE 18:16]",
-      "word_count": 5,
-      "russian": "если же не послушает, возьми с собою еще одного или двух, дабы устами двух или трех свидетелей подтвердилось всякое слово;",
-      "greek": "ἐὰν δὲ μὴ ἀκούσῃ, παράλαβε μετὰ σοῦ ἔτι ἕνα ἢ δύο, ἵνα ἐπὶ στόματος δύο μαρτύρων ἢ τριῶν σταθῇ πᾶν ῥῆμα·",
-      "latin": "Si autem te non audierit, adhibe tecum adhuc unum, vel duos, ut in ore duorum, vel trium testium stet omne verbum."
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "Si autem te non audierit, adhibe tecum adhuc unum, vel duos, ut in ore duorum, vel trium testium stet omne verbum.",
+        "LXX": "ἐὰν δὲ μὴ ἀκούσῃ, παράλαβε μετὰ σοῦ ἔτι ἕνα ἢ δύο, ἵνα ἐπὶ στόματος δύο μαρτύρων ἢ τριῶν σταθῇ πᾶν ῥῆμα·",
+        "SYN": "если же не послушает, возьми с собою еще одного или двух, дабы устами двух или трех свидетелей подтвердилось всякое слово;",
+        "BYZ": "ἐὰν δὲ μὴ ἀκούσῃ, παράλαβε μετὰ σοῦ ἔτι ἕνα ἢ δύο, ἵνα ἐπὶ στόματος δύο μαρτύρων ἢ τριῶν σταθῇ πᾶν ῥῆμα·"
+      }
     },
     "17": {
-      "verse_number": 17,
-      "sort_number": 17,
-      "text": "[MATHE 18:17]",
-      "word_count": 5,
-      "russian": "если же не послушает их, скажи церкви; а если и церкви не послушает, то да будет он тебе, как язычник и мытарь.",
-      "greek": "ἐὰν δὲ παρακούσῃ αὐτῶν, εἰπὲ τῇ ἐκκλησίᾳ· ἐὰν δὲ καὶ τῆς ἐκκλησίας παρακούσῃ, ἔστω σοι ὥσπερ ὁ ἐθνικὸς καὶ ὁ τελώνης.",
-      "latin": "Quod si non audierit eos: dic ecclesiæ. Si autem ecclesiam non audierit, sit tibi sicut ethnicus et publicanus."
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Quod si non audierit eos: dic ecclesiæ. Si autem ecclesiam non audierit, sit tibi sicut ethnicus et publicanus.",
+        "LXX": "ἐὰν δὲ παρακούσῃ αὐτῶν, εἰπὲ τῇ ἐκκλησίᾳ· ἐὰν δὲ καὶ τῆς ἐκκλησίας παρακούσῃ, ἔστω σοι ὥσπερ ὁ ἐθνικὸς καὶ ὁ τελώνης.",
+        "SYN": "если же не послушает их, скажи церкви; а если и церкви не послушает, то да будет он тебе, как язычник и мытарь.",
+        "BYZ": "ἐὰν δὲ παρακούσῃ αὐτῶν, εἰπὲ τῇ ἐκκλησίᾳ· ἐὰν δὲ καὶ τῆς ἐκκλησίας παρακούσῃ, ἔστω σοι ὥσπερ ὁ ἐθνικὸς καὶ ὁ τελώνης."
+      }
     },
     "18": {
-      "verse_number": 18,
-      "sort_number": 18,
-      "text": "[MATHE 18:18]",
-      "word_count": 5,
-      "russian": "Истинно говорю вам: что вы свяжете на земле, то будет связано на небе; и что разрешите на земле, то будет разрешено на небе.",
-      "greek": "Ἀμὴν λέγω ὑμῖν, ὅσα ἐὰν δήσητε ἐπὶ τῆς γῆς, ἔσται δεδεμένα ἐν τῷ οὐρανῷ· καὶ ὅσα ἐὰν λύσητε ἐπὶ τῆς γῆς, ἔσται λελυμένα ἐν τῷ οὐρανῷ.",
-      "latin": "Amen dico vobis, quæcumque alligaveritis super terram, erunt ligata et in cælo: et quæcumque solveritis super terram, erunt soluta et in cælo."
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Amen dico vobis, quæcumque alligaveritis super terram, erunt ligata et in cælo: et quæcumque solveritis super terram, erunt soluta et in cælo.",
+        "LXX": "Ἀμὴν λέγω ὑμῖν, ὅσα ἐὰν δήσητε ἐπὶ τῆς γῆς, ἔσται δεδεμένα ἐν τῷ οὐρανῷ· καὶ ὅσα ἐὰν λύσητε ἐπὶ τῆς γῆς, ἔσται λελυμένα ἐν τῷ οὐρανῷ.",
+        "SYN": "Истинно говорю вам: что вы свяжете на земле, то будет связано на небе; и что разрешите на земле, то будет разрешено на небе.",
+        "BYZ": "Ἀμὴν λέγω ὑμῖν, ὅσα ἐὰν δήσητε ἐπὶ τῆς γῆς, ἔσται δεδεμένα ἐν τῷ οὐρανῷ· καὶ ὅσα ἐὰν λύσητε ἐπὶ τῆς γῆς, ἔσται λελυμένα ἐν τῷ οὐρανῷ."
+      }
     },
     "19": {
-      "verse_number": 19,
-      "sort_number": 19,
-      "text": "[MATHE 18:19]",
-      "word_count": 5,
-      "russian": "Истинно также говорю вам, что если двое из вас согласятся на земле просить о всяком деле, то, чего бы ни попросили, будет им от Отца Моего Небесного,",
-      "greek": "Πάλιν ἀμὴν λέγω ὑμῖν ὅτι ἐὰν δύο ὑμῶν συμφωνήσωσιν ἐπὶ τῆς γῆς περὶ παντὸς πράγματος οὗ ἐὰν αἰτήσωνται, γενήσεται αὐτοῖς παρὰ τοῦ πατρός μου τοῦ ἐν οὐρανοῖς.",
-      "latin": "Iterum dico vobis, quia si duo ex vobis consenserint super terram, de omni re quamcumque petierint, fiet illis a Patre meo, qui in cælis est."
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "Iterum dico vobis, quia si duo ex vobis consenserint super terram, de omni re quamcumque petierint, fiet illis a Patre meo, qui in cælis est.",
+        "LXX": "Πάλιν ἀμὴν λέγω ὑμῖν ὅτι ἐὰν δύο ὑμῶν συμφωνήσωσιν ἐπὶ τῆς γῆς περὶ παντὸς πράγματος οὗ ἐὰν αἰτήσωνται, γενήσεται αὐτοῖς παρὰ τοῦ πατρός μου τοῦ ἐν οὐρανοῖς.",
+        "SYN": "Истинно также говорю вам, что если двое из вас согласятся на земле просить о всяком деле, то, чего бы ни попросили, будет им от Отца Моего Небесного,",
+        "BYZ": "Πάλιν ἀμὴν λέγω ὑμῖν ὅτι ἐὰν δύο ὑμῶν συμφωνήσωσιν ἐπὶ τῆς γῆς περὶ παντὸς πράγματος οὗ ἐὰν αἰτήσωνται, γενήσεται αὐτοῖς παρὰ τοῦ πατρός μου τοῦ ἐν οὐρανοῖς."
+      }
     },
     "20": {
-      "verse_number": 20,
-      "sort_number": 20,
-      "text": "[MATHE 18:20]",
-      "word_count": 5,
-      "russian": "ибо, где двое или трое собраны во имя Мое, там Я посреди них.",
-      "greek": "Οὗ γάρ εἰσιν δύο ἢ τρεῖς συνηγμένοι εἰς τὸ ἐμὸν ὄνομα, ἐκεῖ εἰμὶ ἐν μέσῳ αὐτῶν.",
-      "latin": "Ubi enim sunt duo vel tres congregati in nomine meo, ibi sum in medio eorum."
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "Ubi enim sunt duo vel tres congregati in nomine meo, ibi sum in medio eorum.",
+        "LXX": "Οὗ γάρ εἰσιν δύο ἢ τρεῖς συνηγμένοι εἰς τὸ ἐμὸν ὄνομα, ἐκεῖ εἰμὶ ἐν μέσῳ αὐτῶν.",
+        "SYN": "ибо, где двое или трое собраны во имя Мое, там Я посреди них.",
+        "BYZ": "Οὗ γάρ εἰσιν δύο ἢ τρεῖς συνηγμένοι εἰς τὸ ἐμὸν ὄνομα, ἐκεῖ εἰμὶ ἐν μέσῳ αὐτῶν."
+      }
     },
     "21": {
-      "verse_number": 21,
-      "sort_number": 21,
-      "text": "[MATHE 18:21]",
-      "word_count": 5,
-      "russian": "Тогда Петр приступил к Нему и сказал: Господи! сколько раз прощать брату моему, согрешающему против меня? до семи ли раз?",
-      "greek": "Τότε προσελθὼν αὐτῷ ὁ Πέτρος εἶπεν, Κύριε, ποσάκις ἁμαρτήσει εἰς ἐμὲ ὁ ἀδελφός μου, καὶ ἀφήσω αὐτῷ; Ἕως ἑπτάκις;",
-      "latin": "Tunc accedens Petrus ad eum, dixit: Domine, quoties peccabit in me frater meus, et dimittam ei ? usque septies ?"
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Tunc accedens Petrus ad eum, dixit: Domine, quoties peccabit in me frater meus, et dimittam ei ? usque septies ?",
+        "LXX": "Τότε προσελθὼν αὐτῷ ὁ Πέτρος εἶπεν, Κύριε, ποσάκις ἁμαρτήσει εἰς ἐμὲ ὁ ἀδελφός μου, καὶ ἀφήσω αὐτῷ; Ἕως ἑπτάκις;",
+        "SYN": "Тогда Петр приступил к Нему и сказал: Господи! сколько раз прощать брату моему, согрешающему против меня? до семи ли раз?",
+        "BYZ": "Τότε προσελθὼν αὐτῷ ὁ Πέτρος εἶπεν, Κύριε, ποσάκις ἁμαρτήσει εἰς ἐμὲ ὁ ἀδελφός μου, καὶ ἀφήσω αὐτῷ; Ἕως ἑπτάκις;"
+      }
     },
     "22": {
-      "verse_number": 22,
-      "sort_number": 22,
-      "text": "[MATHE 18:22]",
-      "word_count": 5,
-      "russian": "Иисус говорит ему: не говорю тебе: до семи раз, но до седмижды семидесяти раз.",
-      "greek": "Λέγει αὐτῷ ὁ Ἰησοῦς, Οὐ λέγω σοι ἕως ἑπτάκις, ἀλλ’ ἕως ἑβδομηκοντάκις ἑπτά.",
-      "latin": "Dicit illi Jesus: Non dico tibi usque septies: sed usque septuagies septies."
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Dicit illi Jesus: Non dico tibi usque septies: sed usque septuagies septies.",
+        "LXX": "Λέγει αὐτῷ ὁ Ἰησοῦς, Οὐ λέγω σοι ἕως ἑπτάκις, ἀλλ’ ἕως ἑβδομηκοντάκις ἑπτά.",
+        "SYN": "Иисус говорит ему: не говорю тебе: до семи раз, но до седмижды семидесяти раз.",
+        "BYZ": "Λέγει αὐτῷ ὁ Ἰησοῦς, Οὐ λέγω σοι ἕως ἑπτάκις, ἀλλ’ ἕως ἑβδομηκοντάκις ἑπτά."
+      }
     },
     "23": {
-      "verse_number": 23,
-      "sort_number": 23,
-      "text": "[MATHE 18:23]",
-      "word_count": 5,
-      "russian": "Посему Царство Небесное подобно царю, который захотел сосчитаться с рабами своими;",
-      "greek": "Διὰ τοῦτο ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ, ὃς ἠθέλησεν συνᾶραι λόγον μετὰ τῶν δούλων αὐτοῦ.",
-      "latin": "Ideo assimilatum est regnum cælorum homini regi, qui voluit rationem ponere cum servis suis."
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "Ideo assimilatum est regnum cælorum homini regi, qui voluit rationem ponere cum servis suis.",
+        "LXX": "Διὰ τοῦτο ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ, ὃς ἠθέλησεν συνᾶραι λόγον μετὰ τῶν δούλων αὐτοῦ.",
+        "SYN": "Посему Царство Небесное подобно царю, который захотел сосчитаться с рабами своими;",
+        "BYZ": "Διὰ τοῦτο ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ, ὃς ἠθέλησεν συνᾶραι λόγον μετὰ τῶν δούλων αὐτοῦ."
+      }
     },
     "24": {
-      "verse_number": 24,
-      "sort_number": 24,
-      "text": "[MATHE 18:24]",
-      "word_count": 5,
-      "russian": "когда начал он считаться, приведен был к нему некто, который должен был ему десять тысяч талантов;",
-      "greek": "Ἀρξαμένου δὲ αὐτοῦ συναίρειν, προσηνέχθη αὐτῷ εἷς ὀφειλέτης μυρίων ταλάντων.",
-      "latin": "Et cum cpisset rationem ponere, oblatus est ei unus, qui debebat ei decem millia talenta."
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Et cum cpisset rationem ponere, oblatus est ei unus, qui debebat ei decem millia talenta.",
+        "LXX": "Ἀρξαμένου δὲ αὐτοῦ συναίρειν, προσηνέχθη αὐτῷ εἷς ὀφειλέτης μυρίων ταλάντων.",
+        "SYN": "когда начал он считаться, приведен был к нему некто, который должен был ему десять тысяч талантов;",
+        "BYZ": "Ἀρξαμένου δὲ αὐτοῦ συναίρειν, προσηνέχθη αὐτῷ εἷς ὀφειλέτης μυρίων ταλάντων."
+      }
     },
     "25": {
-      "verse_number": 25,
-      "sort_number": 25,
-      "text": "[MATHE 18:25]",
-      "word_count": 5,
-      "russian": "а как он не имел, чем заплатить, то государь его приказал продать его, и жену его, и детей, и все, что он имел, и заплатить;",
-      "greek": "Μὴ ἔχοντος δὲ αὐτοῦ ἀποδοῦναι ἐκέλευσεν αὐτὸν ὁ κύριος αὐτοῦ πραθῆναι, καὶ τὴν γυναῖκα αὐτοῦ καὶ τὰ τέκνα, καὶ πάντα ὅσα εἶχεν, καὶ ἀποδοθῆναι.",
-      "latin": "Cum autem non haberet unde redderet, jussit eum dominus ejus venundari, et uxorem ejus, et filios, et omnia quæ habebat, et reddi."
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "Cum autem non haberet unde redderet, jussit eum dominus ejus venundari, et uxorem ejus, et filios, et omnia quæ habebat, et reddi.",
+        "LXX": "Μὴ ἔχοντος δὲ αὐτοῦ ἀποδοῦναι ἐκέλευσεν αὐτὸν ὁ κύριος αὐτοῦ πραθῆναι, καὶ τὴν γυναῖκα αὐτοῦ καὶ τὰ τέκνα, καὶ πάντα ὅσα εἶχεν, καὶ ἀποδοθῆναι.",
+        "SYN": "а как он не имел, чем заплатить, то государь его приказал продать его, и жену его, и детей, и все, что он имел, и заплатить;",
+        "BYZ": "Μὴ ἔχοντος δὲ αὐτοῦ ἀποδοῦναι ἐκέλευσεν αὐτὸν ὁ κύριος αὐτοῦ πραθῆναι, καὶ τὴν γυναῖκα αὐτοῦ καὶ τὰ τέκνα, καὶ πάντα ὅσα εἶχεν, καὶ ἀποδοθῆναι."
+      }
     },
     "26": {
-      "verse_number": 26,
-      "sort_number": 26,
-      "text": "[MATHE 18:26]",
-      "word_count": 5,
-      "russian": "тогда раб тот пал, и, кланяясь ему, говорил: государь! потерпи на мне, и все тебе заплачу.",
-      "greek": "Πεσὼν οὖν ὁ δοῦλος προσεκύνει αὐτῷ, λέγων, Κύριε, μακροθύμησον ἐπ’ ἐμοί, καὶ πάντα σοι ἀποδώσω.",
-      "latin": "Procidens autem servus ille, orabat eum, dicens: Patientiam habe in me, et omnia reddam tibi."
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Procidens autem servus ille, orabat eum, dicens: Patientiam habe in me, et omnia reddam tibi.",
+        "LXX": "Πεσὼν οὖν ὁ δοῦλος προσεκύνει αὐτῷ, λέγων, Κύριε, μακροθύμησον ἐπ’ ἐμοί, καὶ πάντα σοι ἀποδώσω.",
+        "SYN": "тогда раб тот пал, и, кланяясь ему, говорил: государь! потерпи на мне, и все тебе заплачу.",
+        "BYZ": "Πεσὼν οὖν ὁ δοῦλος προσεκύνει αὐτῷ, λέγων, Κύριε, μακροθύμησον ἐπ’ ἐμοί, καὶ πάντα σοι ἀποδώσω."
+      }
     },
     "27": {
-      "verse_number": 27,
-      "sort_number": 27,
-      "text": "[MATHE 18:27]",
-      "word_count": 5,
-      "russian": "Государь, умилосердившись над рабом тем, отпустил его и долг простил ему.",
-      "greek": "Σπλαγχνισθεὶς δὲ ὁ κύριος τοῦ δούλου ἐκείνου ἀπέλυσεν αὐτόν, καὶ τὸ δάνειον ἀφῆκεν αὐτῷ.",
-      "latin": "Misertus autem dominus servi illius, dimisit eum, et debitum dimisit ei."
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "Misertus autem dominus servi illius, dimisit eum, et debitum dimisit ei.",
+        "LXX": "Σπλαγχνισθεὶς δὲ ὁ κύριος τοῦ δούλου ἐκείνου ἀπέλυσεν αὐτόν, καὶ τὸ δάνειον ἀφῆκεν αὐτῷ.",
+        "SYN": "Государь, умилосердившись над рабом тем, отпустил его и долг простил ему.",
+        "BYZ": "Σπλαγχνισθεὶς δὲ ὁ κύριος τοῦ δούλου ἐκείνου ἀπέλυσεν αὐτόν, καὶ τὸ δάνειον ἀφῆκεν αὐτῷ."
+      }
     },
     "28": {
-      "verse_number": 28,
-      "sort_number": 28,
-      "text": "[MATHE 18:28]",
-      "word_count": 5,
-      "russian": "Раб же тот, выйдя, нашел одного из товарищей своих, который должен был ему сто динариев, и, схватив его, душил, говоря: отдай мне, что должен.",
-      "greek": "Ἐξελθὼν δὲ ὁ δοῦλος ἐκεῖνος εὗρεν ἕνα τῶν συνδούλων αὐτοῦ, ὃς ὤφειλεν αὐτῷ ἑκατὸν δηνάρια, καὶ κρατήσας αὐτὸν ἔπνιγεν, λέγων, Ἀπόδος μοι εἴ τι ὀφείλεις.",
-      "latin": "Egressus autem servus ille invenit unum de conservis suis, qui debebat ei centum denarios: et tenens suffocavit eum, dicens: Redde quod debes."
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "Egressus autem servus ille invenit unum de conservis suis, qui debebat ei centum denarios: et tenens suffocavit eum, dicens: Redde quod debes.",
+        "LXX": "Ἐξελθὼν δὲ ὁ δοῦλος ἐκεῖνος εὗρεν ἕνα τῶν συνδούλων αὐτοῦ, ὃς ὤφειλεν αὐτῷ ἑκατὸν δηνάρια, καὶ κρατήσας αὐτὸν ἔπνιγεν, λέγων, Ἀπόδος μοι εἴ τι ὀφείλεις.",
+        "SYN": "Раб же тот, выйдя, нашел одного из товарищей своих, который должен был ему сто динариев, и, схватив его, душил, говоря: отдай мне, что должен.",
+        "BYZ": "Ἐξελθὼν δὲ ὁ δοῦλος ἐκεῖνος εὗρεν ἕνα τῶν συνδούλων αὐτοῦ, ὃς ὤφειλεν αὐτῷ ἑκατὸν δηνάρια, καὶ κρατήσας αὐτὸν ἔπνιγεν, λέγων, Ἀπόδος μοι εἴ τι ὀφείλεις."
+      }
     },
     "29": {
-      "verse_number": 29,
-      "sort_number": 29,
-      "text": "[MATHE 18:29]",
-      "word_count": 5,
-      "russian": "Тогда товарищ его пал к ногам его, умолял его и говорил: потерпи на мне, и все отдам тебе.",
-      "greek": "Πεσὼν οὖν ὁ σύνδουλος αὐτοῦ εἰς τοὺς πόδας αὐτοῦ παρεκάλει αὐτόν, λέγων, Μακροθύμησον ἐπ’ ἐμοί, καὶ ἀποδώσω σοι.",
-      "latin": "Et procidens conservus ejus, rogabat eum, dicens: Patientiam habe in me, et omnia reddam tibi."
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "Et procidens conservus ejus, rogabat eum, dicens: Patientiam habe in me, et omnia reddam tibi.",
+        "LXX": "Πεσὼν οὖν ὁ σύνδουλος αὐτοῦ εἰς τοὺς πόδας αὐτοῦ παρεκάλει αὐτόν, λέγων, Μακροθύμησον ἐπ’ ἐμοί, καὶ ἀποδώσω σοι.",
+        "SYN": "Тогда товарищ его пал к ногам его, умолял его и говорил: потерпи на мне, и все отдам тебе.",
+        "BYZ": "Πεσὼν οὖν ὁ σύνδουλος αὐτοῦ εἰς τοὺς πόδας αὐτοῦ παρεκάλει αὐτόν, λέγων, Μακροθύμησον ἐπ’ ἐμοί, καὶ ἀποδώσω σοι."
+      }
     },
     "30": {
-      "verse_number": 30,
-      "sort_number": 30,
-      "text": "[MATHE 18:30]",
-      "word_count": 5,
-      "russian": "Но тот не захотел, а пошел и посадил его в темницу, пока не отдаст долга.",
-      "greek": "Ὁ δὲ οὐκ ἤθελεν, ἀλλὰ ἀπελθὼν ἔβαλεν αὐτὸν εἰς φυλακήν, ἕως οὗ ἀποδῷ τὸ ὀφειλόμενον.",
-      "latin": "Ille autem noluit: sed abiit, et misit eum in carcerem donec redderet debitum."
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "Ille autem noluit: sed abiit, et misit eum in carcerem donec redderet debitum.",
+        "LXX": "Ὁ δὲ οὐκ ἤθελεν, ἀλλὰ ἀπελθὼν ἔβαλεν αὐτὸν εἰς φυλακήν, ἕως οὗ ἀποδῷ τὸ ὀφειλόμενον.",
+        "SYN": "Но тот не захотел, а пошел и посадил его в темницу, пока не отдаст долга.",
+        "BYZ": "Ὁ δὲ οὐκ ἤθελεν, ἀλλὰ ἀπελθὼν ἔβαλεν αὐτὸν εἰς φυλακήν, ἕως οὗ ἀποδῷ τὸ ὀφειλόμενον."
+      }
     },
     "31": {
-      "verse_number": 31,
-      "sort_number": 31,
-      "text": "[MATHE 18:31]",
-      "word_count": 5,
-      "russian": "Товарищи его, видев происшедшее, очень огорчились и, придя, рассказали государю своему все бывшее.",
-      "greek": "Ἰδόντες δὲ οἱ σύνδουλοι αὐτοῦ τὰ γενόμενα ἐλυπήθησαν σφόδρα· καὶ ἐλθόντες διεσάφησαν τῷ κυρίῳ ἑαυτῶν πάντα τὰ γενόμενα.",
-      "latin": "Videntes autem conservi ejus quæ fiebant, contristati sunt valde: et venerunt, et narraverunt domino suo omnia quæ facta fuerant."
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "Videntes autem conservi ejus quæ fiebant, contristati sunt valde: et venerunt, et narraverunt domino suo omnia quæ facta fuerant.",
+        "LXX": "Ἰδόντες δὲ οἱ σύνδουλοι αὐτοῦ τὰ γενόμενα ἐλυπήθησαν σφόδρα· καὶ ἐλθόντες διεσάφησαν τῷ κυρίῳ ἑαυτῶν πάντα τὰ γενόμενα.",
+        "SYN": "Товарищи его, видев происшедшее, очень огорчились и, придя, рассказали государю своему все бывшее.",
+        "BYZ": "Ἰδόντες δὲ οἱ σύνδουλοι αὐτοῦ τὰ γενόμενα ἐλυπήθησαν σφόδρα· καὶ ἐλθόντες διεσάφησαν τῷ κυρίῳ ἑαυτῶν πάντα τὰ γενόμενα."
+      }
     },
     "32": {
-      "verse_number": 32,
-      "sort_number": 32,
-      "text": "[MATHE 18:32]",
-      "word_count": 5,
-      "russian": "Тогда государь его призывает его и говорит: злой раб! весь долг тот я простил тебе, потому что ты упросил меня;",
-      "greek": "Τότε προσκαλεσάμενος αὐτὸν ὁ κύριος αὐτοῦ λέγει αὐτῷ, Δοῦλε πονηρέ, πᾶσαν τὴν ὀφειλὴν ἐκείνην ἀφῆκά σοι, ἐπεὶ παρεκάλεσάς με·",
-      "latin": "Tunc vocavit illum dominus suus: et ait illi: Serve nequam, omne debitum dimisi tibi quoniam rogasti me:"
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "Tunc vocavit illum dominus suus: et ait illi: Serve nequam, omne debitum dimisi tibi quoniam rogasti me:",
+        "LXX": "Τότε προσκαλεσάμενος αὐτὸν ὁ κύριος αὐτοῦ λέγει αὐτῷ, Δοῦλε πονηρέ, πᾶσαν τὴν ὀφειλὴν ἐκείνην ἀφῆκά σοι, ἐπεὶ παρεκάλεσάς με·",
+        "SYN": "Тогда государь его призывает его и говорит: злой раб! весь долг тот я простил тебе, потому что ты упросил меня;",
+        "BYZ": "Τότε προσκαλεσάμενος αὐτὸν ὁ κύριος αὐτοῦ λέγει αὐτῷ, Δοῦλε πονηρέ, πᾶσαν τὴν ὀφειλὴν ἐκείνην ἀφῆκά σοι, ἐπεὶ παρεκάλεσάς με·"
+      }
     },
     "33": {
-      "verse_number": 33,
-      "sort_number": 33,
-      "text": "[MATHE 18:33]",
-      "word_count": 5,
-      "russian": "не надлежало ли и тебе помиловать товарища твоего, как и я помиловал тебя?",
-      "greek": "οὐκ ἔδει καὶ σὲ ἐλεῆσαι τὸν σύνδουλόν σου, ὡς καὶ ἐγώ σε ἠλέησα;",
-      "latin": "nonne ergo oportuit et te misereri conservi tui, sicut et ego tui misertus sum ?"
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "nonne ergo oportuit et te misereri conservi tui, sicut et ego tui misertus sum ?",
+        "LXX": "οὐκ ἔδει καὶ σὲ ἐλεῆσαι τὸν σύνδουλόν σου, ὡς καὶ ἐγώ σε ἠλέησα;",
+        "SYN": "не надлежало ли и тебе помиловать товарища твоего, как и я помиловал тебя?",
+        "BYZ": "οὐκ ἔδει καὶ σὲ ἐλεῆσαι τὸν σύνδουλόν σου, ὡς καὶ ἐγώ σε ἠλέησα;"
+      }
     },
     "34": {
-      "verse_number": 34,
-      "sort_number": 34,
-      "text": "[MATHE 18:34]",
-      "word_count": 5,
-      "russian": "И, разгневавшись, государь его отдал его истязателям, пока не отдаст ему всего долга.",
-      "greek": "Καὶ ὀργισθεὶς ὁ κύριος αὐτοῦ παρέδωκεν αὐτὸν τοῖς βασανισταῖς, ἕως οὗ ἀποδῷ πᾶν τὸ ὀφειλόμενον αὐτῷ.",
-      "latin": "Et iratus dominus ejus tradidit eum tortoribus, quoadusque redderet universum debitum."
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Et iratus dominus ejus tradidit eum tortoribus, quoadusque redderet universum debitum.",
+        "LXX": "Καὶ ὀργισθεὶς ὁ κύριος αὐτοῦ παρέδωκεν αὐτὸν τοῖς βασανισταῖς, ἕως οὗ ἀποδῷ πᾶν τὸ ὀφειλόμενον αὐτῷ.",
+        "SYN": "И, разгневавшись, государь его отдал его истязателям, пока не отдаст ему всего долга.",
+        "BYZ": "Καὶ ὀργισθεὶς ὁ κύριος αὐτοῦ παρέδωκεν αὐτὸν τοῖς βασανισταῖς, ἕως οὗ ἀποδῷ πᾶν τὸ ὀφειλόμενον αὐτῷ."
+      }
     },
     "35": {
-      "verse_number": 35,
-      "sort_number": 35,
-      "text": "[MATHE 18:35]",
-      "word_count": 5,
-      "russian": "Так и Отец Мой Небесный поступит с вами, если не простит каждый из вас от сердца своего брату своему согрешений его.",
-      "greek": "Οὕτως καὶ ὁ πατήρ μου ὁ ἐπουράνιος ποιήσει ὑμῖν, ἐὰν μὴ ἀφῆτε ἕκαστος τῷ ἀδελφῷ αὐτοῦ ἀπὸ τῶν καρδιῶν ὑμῶν τὰ παραπτώματα αὐτῶν.",
-      "latin": "Sic et Pater meus cælestis faciet vobis, si non remiseritis unusquisque fratri suo de cordibus vestris."
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "VUL": "Sic et Pater meus cælestis faciet vobis, si non remiseritis unusquisque fratri suo de cordibus vestris.",
+        "LXX": "Οὕτως καὶ ὁ πατήρ μου ὁ ἐπουράνιος ποιήσει ὑμῖν, ἐὰν μὴ ἀφῆτε ἕκαστος τῷ ἀδελφῷ αὐτοῦ ἀπὸ τῶν καρδιῶν ὑμῶν τὰ παραπτώματα αὐτῶν.",
+        "SYN": "Так и Отец Мой Небесный поступит с вами, если не простит каждый из вас от сердца своего брату своему согрешений его.",
+        "BYZ": "Οὕτως καὶ ὁ πατήρ μου ὁ ἐπουράνιος ποιήσει ὑμῖν, ἐὰν μὴ ἀφῆτε ἕκαστος τῷ ἀδελφῷ αὐτοῦ ἀπὸ τῶν καρδιῶν ὑμῶν τὰ παραπτώματα αὐτῶν."
+      }
     }
   }
 }

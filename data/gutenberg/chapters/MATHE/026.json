@@ -1,688 +1,1065 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "MATHE_026",
-  "chapter_key": "26",
-  "chapter_number": 26,
-  "sort_number": 26,
-  "name": "26",
   "book_key": "MATHE",
+  "sequence": 26,
+  "chapter_in": {
+    "MT": 26,
+    "VUL": 26,
+    "LXX": 26
+  },
   "testament": "Novum_Testamentum",
   "section": "Evangelia",
-  "verse_count": 75,
   "verses": {
     "1": {
-      "verse_number": 1,
-      "sort_number": 1,
-      "text": "[MATHE 26:1]",
-      "word_count": 5,
-      "russian": "Когда Иисус окончил все слова сии, то сказал ученикам Своим:",
-      "greek": "Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς πάντας τοὺς λόγους τούτους, εἶπεν τοῖς μαθηταῖς αὐτοῦ,",
-      "latin": "Et factum est: cum consummasset Jesus sermones hos omnes, dixit discipulis suis:"
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "Et factum est: cum consummasset Jesus sermones hos omnes, dixit discipulis suis:",
+        "LXX": "Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς πάντας τοὺς λόγους τούτους, εἶπεν τοῖς μαθηταῖς αὐτοῦ,",
+        "SYN": "Когда Иисус окончил все слова сии, то сказал ученикам Своим:",
+        "BYZ": "Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς πάντας τοὺς λόγους τούτους, εἶπεν τοῖς μαθηταῖς αὐτοῦ,"
+      }
     },
     "2": {
-      "verse_number": 2,
-      "sort_number": 2,
-      "text": "[MATHE 26:2]",
-      "word_count": 5,
-      "russian": "вы знаете, что через два дня будет Пасха, и Сын Человеческий предан будет на распятие.",
-      "greek": "Οἴδατε ὅτι μετὰ δύο ἡμέρας τὸ Πάσχα γίνεται, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς τὸ σταυρωθῆναι.",
-      "latin": "Scitis quia post biduum Pascha fiet, et Filius hominis tradetur ut crucifigatur."
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "Scitis quia post biduum Pascha fiet, et Filius hominis tradetur ut crucifigatur.",
+        "LXX": "Οἴδατε ὅτι μετὰ δύο ἡμέρας τὸ Πάσχα γίνεται, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς τὸ σταυρωθῆναι.",
+        "SYN": "вы знаете, что через два дня будет Пасха, и Сын Человеческий предан будет на распятие.",
+        "BYZ": "Οἴδατε ὅτι μετὰ δύο ἡμέρας τὸ Πάσχα γίνεται, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς τὸ σταυρωθῆναι."
+      }
     },
     "3": {
-      "verse_number": 3,
-      "sort_number": 3,
-      "text": "[MATHE 26:3]",
-      "word_count": 5,
-      "russian": "Тогда собрались первосвященники и книжники и старейшины народа во двор первосвященника, по имени Каиафы,",
-      "greek": "Τότε συνήχθησαν οἱ ἀρχιερεῖς καὶ οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ εἰς τὴν αὐλὴν τοῦ ἀρχιερέως τοῦ λεγομένου Καϊάφα,",
-      "latin": "Tunc congregati sunt principes sacerdotum, et seniores populi, in atrium principis sacerdotum, qui dicebatur Caiphas:"
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "Tunc congregati sunt principes sacerdotum, et seniores populi, in atrium principis sacerdotum, qui dicebatur Caiphas:",
+        "LXX": "Τότε συνήχθησαν οἱ ἀρχιερεῖς καὶ οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ εἰς τὴν αὐλὴν τοῦ ἀρχιερέως τοῦ λεγομένου Καϊάφα,",
+        "SYN": "Тогда собрались первосвященники и книжники и старейшины народа во двор первосвященника, по имени Каиафы,",
+        "BYZ": "Τότε συνήχθησαν οἱ ἀρχιερεῖς καὶ οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ εἰς τὴν αὐλὴν τοῦ ἀρχιερέως τοῦ λεγομένου Καϊάφα,"
+      }
     },
     "4": {
-      "verse_number": 4,
-      "sort_number": 4,
-      "text": "[MATHE 26:4]",
-      "word_count": 5,
-      "russian": "и положили в совете взять Иисуса хитростью и убить;",
-      "greek": "καὶ συνεβουλεύσαντο ἵνα τὸν Ἰησοῦν δόλῳ κρατήσωσιν καὶ ἀποκτείνωσιν.",
-      "latin": "et consilium fecerunt ut Jesum dolo tenerent, et occiderent."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "et consilium fecerunt ut Jesum dolo tenerent, et occiderent.",
+        "LXX": "καὶ συνεβουλεύσαντο ἵνα τὸν Ἰησοῦν δόλῳ κρατήσωσιν καὶ ἀποκτείνωσιν.",
+        "SYN": "и положили в совете взять Иисуса хитростью и убить;",
+        "BYZ": "καὶ συνεβουλεύσαντο ἵνα τὸν Ἰησοῦν δόλῳ κρατήσωσιν καὶ ἀποκτείνωσιν."
+      }
     },
     "5": {
-      "verse_number": 5,
-      "sort_number": 5,
-      "text": "[MATHE 26:5]",
-      "word_count": 5,
-      "russian": "но говорили: только не в праздник, чтобы не сделалось возмущения в народе.",
-      "greek": "Ἔλεγον δέ, Μὴ ἐν τῇ ἑορτῇ, ἵνα μὴ θόρυβος γένηται ἐν τῷ λαῷ.",
-      "latin": "Dicebant autem: Non in die festo, ne forte tumultus fieret in populo."
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Dicebant autem: Non in die festo, ne forte tumultus fieret in populo.",
+        "LXX": "Ἔλεγον δέ, Μὴ ἐν τῇ ἑορτῇ, ἵνα μὴ θόρυβος γένηται ἐν τῷ λαῷ.",
+        "SYN": "но говорили: только не в праздник, чтобы не сделалось возмущения в народе.",
+        "BYZ": "Ἔλεγον δέ, Μὴ ἐν τῇ ἑορτῇ, ἵνα μὴ θόρυβος γένηται ἐν τῷ λαῷ."
+      }
     },
     "6": {
-      "verse_number": 6,
-      "sort_number": 6,
-      "text": "[MATHE 26:6]",
-      "word_count": 5,
-      "russian": "Когда же Иисус был в Вифании, в доме Симона прокаженного,",
-      "greek": "Τοῦ δὲ Ἰησοῦ γενομένου ἐν Βηθανίᾳ ἐν οἰκίᾳ Σίμωνος τοῦ λεπροῦ,",
-      "latin": "Cum autem Jesus esset in Bethania in domo Simonis leprosi,"
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "Cum autem Jesus esset in Bethania in domo Simonis leprosi,",
+        "LXX": "Τοῦ δὲ Ἰησοῦ γενομένου ἐν Βηθανίᾳ ἐν οἰκίᾳ Σίμωνος τοῦ λεπροῦ,",
+        "SYN": "Когда же Иисус был в Вифании, в доме Симона прокаженного,",
+        "BYZ": "Τοῦ δὲ Ἰησοῦ γενομένου ἐν Βηθανίᾳ ἐν οἰκίᾳ Σίμωνος τοῦ λεπροῦ,"
+      }
     },
     "7": {
-      "verse_number": 7,
-      "sort_number": 7,
-      "text": "[MATHE 26:7]",
-      "word_count": 5,
-      "russian": "приступила к Нему женщина с алавастровым сосудом мира драгоценного и возливала Ему возлежащему на голову.",
-      "greek": "προσῆλθεν αὐτῷ γυνὴ ἀλάβαστρον μύρου ἔχουσα βαρυτίμου, καὶ κατέχεεν ἐπὶ τὴν κεφαλὴν αὐτοῦ ἀνακειμένου.",
-      "latin": "accessit ad eum mulier habens alabastrum unguenti pretiosi, et effudit super caput ipsius recumbentis."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "accessit ad eum mulier habens alabastrum unguenti pretiosi, et effudit super caput ipsius recumbentis.",
+        "LXX": "προσῆλθεν αὐτῷ γυνὴ ἀλάβαστρον μύρου ἔχουσα βαρυτίμου, καὶ κατέχεεν ἐπὶ τὴν κεφαλὴν αὐτοῦ ἀνακειμένου.",
+        "SYN": "приступила к Нему женщина с алавастровым сосудом мира драгоценного и возливала Ему возлежащему на голову.",
+        "BYZ": "προσῆλθεν αὐτῷ γυνὴ ἀλάβαστρον μύρου ἔχουσα βαρυτίμου, καὶ κατέχεεν ἐπὶ τὴν κεφαλὴν αὐτοῦ ἀνακειμένου."
+      }
     },
     "8": {
-      "verse_number": 8,
-      "sort_number": 8,
-      "text": "[MATHE 26:8]",
-      "word_count": 5,
-      "russian": "Увидев это, ученики Его вознегодовали и говорили: к чему такая трата?",
-      "greek": "Ἰδόντες δὲ οἱ μαθηταὶ αὐτοῦ ἠγανάκτησαν, λέγοντες, Εἰς τί ἡ ἀπώλεια αὕτη;",
-      "latin": "Videntes autem discipuli, indignati sunt, dicentes: Ut quid perditio hæc ?"
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Videntes autem discipuli, indignati sunt, dicentes: Ut quid perditio hæc ?",
+        "LXX": "Ἰδόντες δὲ οἱ μαθηταὶ αὐτοῦ ἠγανάκτησαν, λέγοντες, Εἰς τί ἡ ἀπώλεια αὕτη;",
+        "SYN": "Увидев это, ученики Его вознегодовали и говорили: к чему такая трата?",
+        "BYZ": "Ἰδόντες δὲ οἱ μαθηταὶ αὐτοῦ ἠγανάκτησαν, λέγοντες, Εἰς τί ἡ ἀπώλεια αὕτη;"
+      }
     },
     "9": {
-      "verse_number": 9,
-      "sort_number": 9,
-      "text": "[MATHE 26:9]",
-      "word_count": 5,
-      "russian": "Ибо можно было бы продать это миро за большую цену и дать нищим.",
-      "greek": "Ἠδύνατο γὰρ τοῦτο τὸ μύρον πραθῆναι πολλοῦ, καὶ δοθῆναι πτωχοῖς.",
-      "latin": "potuit enim istud venundari multo, et dari pauperibus."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "potuit enim istud venundari multo, et dari pauperibus.",
+        "LXX": "Ἠδύνατο γὰρ τοῦτο τὸ μύρον πραθῆναι πολλοῦ, καὶ δοθῆναι πτωχοῖς.",
+        "SYN": "Ибо можно было бы продать это миро за большую цену и дать нищим.",
+        "BYZ": "Ἠδύνατο γὰρ τοῦτο τὸ μύρον πραθῆναι πολλοῦ, καὶ δοθῆναι πτωχοῖς."
+      }
     },
     "10": {
-      "verse_number": 10,
-      "sort_number": 10,
-      "text": "[MATHE 26:10]",
-      "word_count": 5,
-      "russian": "Но Иисус, уразумев сие, сказал им: что смущаете женщину? она доброе дело сделала для Меня:",
-      "greek": "Γνοὺς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς, Τί κόπους παρέχετε τῇ γυναικί; Ἔργον γὰρ καλὸν εἰργάσατο εἰς ἐμέ.",
-      "latin": "Sciens autem Jesus, ait illis: Quid molesti estis huic mulieri ? opus enim bonum operata est in me."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Sciens autem Jesus, ait illis: Quid molesti estis huic mulieri ? opus enim bonum operata est in me.",
+        "LXX": "Γνοὺς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς, Τί κόπους παρέχετε τῇ γυναικί; Ἔργον γὰρ καλὸν εἰργάσατο εἰς ἐμέ.",
+        "SYN": "Но Иисус, уразумев сие, сказал им: что смущаете женщину? она доброе дело сделала для Меня:",
+        "BYZ": "Γνοὺς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς, Τί κόπους παρέχετε τῇ γυναικί; Ἔργον γὰρ καλὸν εἰργάσατο εἰς ἐμέ."
+      }
     },
     "11": {
-      "verse_number": 11,
-      "sort_number": 11,
-      "text": "[MATHE 26:11]",
-      "word_count": 5,
-      "russian": "ибо нищих всегда имеете с собою, а Меня не всегда имеете;",
-      "greek": "Πάντοτε γὰρ τοὺς πτωχοὺς ἔχετε μεθ’ ἑαυτῶν, ἐμὲ δὲ οὐ πάντοτε ἔχετε.",
-      "latin": "Nam semper pauperes habetis vobiscum: me autem non semper habetis."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Nam semper pauperes habetis vobiscum: me autem non semper habetis.",
+        "LXX": "Πάντοτε γὰρ τοὺς πτωχοὺς ἔχετε μεθ’ ἑαυτῶν, ἐμὲ δὲ οὐ πάντοτε ἔχετε.",
+        "SYN": "ибо нищих всегда имеете с собою, а Меня не всегда имеете;",
+        "BYZ": "Πάντοτε γὰρ τοὺς πτωχοὺς ἔχετε μεθ’ ἑαυτῶν, ἐμὲ δὲ οὐ πάντοτε ἔχετε."
+      }
     },
     "12": {
-      "verse_number": 12,
-      "sort_number": 12,
-      "text": "[MATHE 26:12]",
-      "word_count": 5,
-      "russian": "возлив миро сие на тело Мое, она приготовила Меня к погребению;",
-      "greek": "Βαλοῦσα γὰρ αὕτη τὸ μύρον τοῦτο ἐπὶ τοῦ σώματός μου, πρὸς τὸ ἐνταφιάσαι με ἐποίησεν.",
-      "latin": "Mittens enim hæc unguentum hoc in corpus meum, ad sepeliendum me fecit."
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "Mittens enim hæc unguentum hoc in corpus meum, ad sepeliendum me fecit.",
+        "LXX": "Βαλοῦσα γὰρ αὕτη τὸ μύρον τοῦτο ἐπὶ τοῦ σώματός μου, πρὸς τὸ ἐνταφιάσαι με ἐποίησεν.",
+        "SYN": "возлив миро сие на тело Мое, она приготовила Меня к погребению;",
+        "BYZ": "Βαλοῦσα γὰρ αὕτη τὸ μύρον τοῦτο ἐπὶ τοῦ σώματός μου, πρὸς τὸ ἐνταφιάσαι με ἐποίησεν."
+      }
     },
     "13": {
-      "verse_number": 13,
-      "sort_number": 13,
-      "text": "[MATHE 26:13]",
-      "word_count": 5,
-      "russian": "истинно говорю вам: где ни будет проповедано Евангелие сие в целом мире, сказано будет в память ее и о том, что она сделала.",
-      "greek": "Ἀμὴν λέγω ὑμῖν, ὅπου ἐὰν κηρυχθῇ τὸ εὐαγγέλιον τοῦτο ἐν ὅλῳ τῷ κόσμῳ, λαληθήσεται καὶ ὃ ἐποίησεν αὕτη εἰς μνημόσυνον αὐτῆς.",
-      "latin": "Amen dico vobis, ubicumque prædicatum fuerit hoc Evangelium in toto mundo, dicetur et quod hæc fecit in memoriam ejus."
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "Amen dico vobis, ubicumque prædicatum fuerit hoc Evangelium in toto mundo, dicetur et quod hæc fecit in memoriam ejus.",
+        "LXX": "Ἀμὴν λέγω ὑμῖν, ὅπου ἐὰν κηρυχθῇ τὸ εὐαγγέλιον τοῦτο ἐν ὅλῳ τῷ κόσμῳ, λαληθήσεται καὶ ὃ ἐποίησεν αὕτη εἰς μνημόσυνον αὐτῆς.",
+        "SYN": "истинно говорю вам: где ни будет проповедано Евангелие сие в целом мире, сказано будет в память ее и о том, что она сделала.",
+        "BYZ": "Ἀμὴν λέγω ὑμῖν, ὅπου ἐὰν κηρυχθῇ τὸ εὐαγγέλιον τοῦτο ἐν ὅλῳ τῷ κόσμῳ, λαληθήσεται καὶ ὃ ἐποίησεν αὕτη εἰς μνημόσυνον αὐτῆς."
+      }
     },
     "14": {
-      "verse_number": 14,
-      "sort_number": 14,
-      "text": "[MATHE 26:14]",
-      "word_count": 5,
-      "russian": "Тогда один из двенадцати, называемый Иуда Искариот, пошел к первосвященникам",
-      "greek": "Τότε πορευθεὶς εἷς τῶν δώδεκα, ὁ λεγόμενος Ἰούδας Ἰσκαριώτης, πρὸς τοὺς ἀρχιερεῖς,",
-      "latin": "Tunc abiit unus de duodecim, qui dicebatur Judas Iscariotes, ad principes sacerdotum:"
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Tunc abiit unus de duodecim, qui dicebatur Judas Iscariotes, ad principes sacerdotum:",
+        "LXX": "Τότε πορευθεὶς εἷς τῶν δώδεκα, ὁ λεγόμενος Ἰούδας Ἰσκαριώτης, πρὸς τοὺς ἀρχιερεῖς,",
+        "SYN": "Тогда один из двенадцати, называемый Иуда Искариот, пошел к первосвященникам",
+        "BYZ": "Τότε πορευθεὶς εἷς τῶν δώδεκα, ὁ λεγόμενος Ἰούδας Ἰσκαριώτης, πρὸς τοὺς ἀρχιερεῖς,"
+      }
     },
     "15": {
-      "verse_number": 15,
-      "sort_number": 15,
-      "text": "[MATHE 26:15]",
-      "word_count": 5,
-      "russian": "и сказал: что вы дадите мне, и я вам предам Его? Они предложили ему тридцать сребренников;",
-      "greek": "εἶπεν, Τί θέλετέ μοι δοῦναι, κἀγὼ ὑμῖν παραδώσω αὐτόν; Οἱ δὲ ἔστησαν αὐτῷ τριάκοντα ἀργύρια,",
-      "latin": "et ait illis: Quid vultis mihi dare, et ego vobis eum tradam ? At illi constituerunt ei triginta argenteos."
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "et ait illis: Quid vultis mihi dare, et ego vobis eum tradam ? At illi constituerunt ei triginta argenteos.",
+        "LXX": "εἶπεν, Τί θέλετέ μοι δοῦναι, κἀγὼ ὑμῖν παραδώσω αὐτόν; Οἱ δὲ ἔστησαν αὐτῷ τριάκοντα ἀργύρια,",
+        "SYN": "и сказал: что вы дадите мне, и я вам предам Его? Они предложили ему тридцать сребренников;",
+        "BYZ": "εἶπεν, Τί θέλετέ μοι δοῦναι, κἀγὼ ὑμῖν παραδώσω αὐτόν; Οἱ δὲ ἔστησαν αὐτῷ τριάκοντα ἀργύρια,"
+      }
     },
     "16": {
-      "verse_number": 16,
-      "sort_number": 16,
-      "text": "[MATHE 26:16]",
-      "word_count": 5,
-      "russian": "и с того времени он искал удобного случая предать Его.",
-      "greek": "καὶ ἀπὸ τότε ἐζήτει εὐκαιρίαν ἵνα αὐτὸν παραδῷ.",
-      "latin": "Et exinde quærebat opportunitatem ut eum traderet."
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "Et exinde quærebat opportunitatem ut eum traderet.",
+        "LXX": "καὶ ἀπὸ τότε ἐζήτει εὐκαιρίαν ἵνα αὐτὸν παραδῷ.",
+        "SYN": "и с того времени он искал удобного случая предать Его.",
+        "BYZ": "καὶ ἀπὸ τότε ἐζήτει εὐκαιρίαν ἵνα αὐτὸν παραδῷ."
+      }
     },
     "17": {
-      "verse_number": 17,
-      "sort_number": 17,
-      "text": "[MATHE 26:17]",
-      "word_count": 5,
-      "russian": "В первый же день опресночный приступили ученики к Иисусу и сказали Ему: где велишь нам приготовить Тебе пасху?",
-      "greek": "Τῇ δὲ πρώτῃ τῶν ἀζύμων προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ, λέγοντες αὐτῷ, Ποῦ θέλεις ἑτοιμάσομέν σοι φαγεῖν τὸ Πάσχα;",
-      "latin": "Prima autem die azymorum accesserunt discipuli ad Jesum, dicentes: Ubi vis paremus tibi comedere Pascha ?"
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Prima autem die azymorum accesserunt discipuli ad Jesum, dicentes: Ubi vis paremus tibi comedere Pascha ?",
+        "LXX": "Τῇ δὲ πρώτῃ τῶν ἀζύμων προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ, λέγοντες αὐτῷ, Ποῦ θέλεις ἑτοιμάσομέν σοι φαγεῖν τὸ Πάσχα;",
+        "SYN": "В первый же день опресночный приступили ученики к Иисусу и сказали Ему: где велишь нам приготовить Тебе пасху?",
+        "BYZ": "Τῇ δὲ πρώτῃ τῶν ἀζύμων προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ, λέγοντες αὐτῷ, Ποῦ θέλεις ἑτοιμάσομέν σοι φαγεῖν τὸ Πάσχα;"
+      }
     },
     "18": {
-      "verse_number": 18,
-      "sort_number": 18,
-      "text": "[MATHE 26:18]",
-      "word_count": 5,
-      "russian": "Он сказал: пойдите в город к такому-то и скажите ему: Учитель говорит: время Мое близко; у тебя совершу пасху с учениками Моими.",
-      "greek": "Ὁ δὲ εἶπεν, Ὑπάγετε εἰς τὴν πόλιν πρὸς τὸν δεῖνα, καὶ εἴπατε αὐτῷ, Ὁ διδάσκαλος λέγει, Ὁ καιρός μου ἐγγύς ἐστιν· πρός σε ποιῶ τὸ Πάσχα μετὰ τῶν μαθητῶν μου.",
-      "latin": "At Jesus dixit: Ite in civitatem ad quemdam, et dicite ei: Magister dicit: Tempus meum prope est, apud te facio Pascha cum discipulis meis."
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "At Jesus dixit: Ite in civitatem ad quemdam, et dicite ei: Magister dicit: Tempus meum prope est, apud te facio Pascha cum discipulis meis.",
+        "LXX": "Ὁ δὲ εἶπεν, Ὑπάγετε εἰς τὴν πόλιν πρὸς τὸν δεῖνα, καὶ εἴπατε αὐτῷ, Ὁ διδάσκαλος λέγει, Ὁ καιρός μου ἐγγύς ἐστιν· πρός σε ποιῶ τὸ Πάσχα μετὰ τῶν μαθητῶν μου.",
+        "SYN": "Он сказал: пойдите в город к такому-то и скажите ему: Учитель говорит: время Мое близко; у тебя совершу пасху с учениками Моими.",
+        "BYZ": "Ὁ δὲ εἶπεν, Ὑπάγετε εἰς τὴν πόλιν πρὸς τὸν δεῖνα, καὶ εἴπατε αὐτῷ, Ὁ διδάσκαλος λέγει, Ὁ καιρός μου ἐγγύς ἐστιν· πρός σε ποιῶ τὸ Πάσχα μετὰ τῶν μαθητῶν μου."
+      }
     },
     "19": {
-      "verse_number": 19,
-      "sort_number": 19,
-      "text": "[MATHE 26:19]",
-      "word_count": 5,
-      "russian": "Ученики сделали, как повелел им Иисус, и приготовили пасху.",
-      "greek": "Καὶ ἐποίησαν οἱ μαθηταὶ ὡς συνέταξεν αὐτοῖς ὁ Ἰησοῦς, καὶ ἡτοίμασαν τὸ Πάσχα.",
-      "latin": "Et fecerunt discipuli sicut constituit illis Jesus, et paraverunt Pascha."
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "Et fecerunt discipuli sicut constituit illis Jesus, et paraverunt Pascha.",
+        "LXX": "Καὶ ἐποίησαν οἱ μαθηταὶ ὡς συνέταξεν αὐτοῖς ὁ Ἰησοῦς, καὶ ἡτοίμασαν τὸ Πάσχα.",
+        "SYN": "Ученики сделали, как повелел им Иисус, и приготовили пасху.",
+        "BYZ": "Καὶ ἐποίησαν οἱ μαθηταὶ ὡς συνέταξεν αὐτοῖς ὁ Ἰησοῦς, καὶ ἡτοίμασαν τὸ Πάσχα."
+      }
     },
     "20": {
-      "verse_number": 20,
-      "sort_number": 20,
-      "text": "[MATHE 26:20]",
-      "word_count": 5,
-      "russian": "Когда же настал вечер, Он возлег с двенадцатью учениками;",
-      "greek": "Ὀψίας δὲ γενομένης ἀνέκειτο μετὰ τῶν δώδεκα.",
-      "latin": "Vespere autem facto, discumbebat cum duodecim discipulis suis."
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "Vespere autem facto, discumbebat cum duodecim discipulis suis.",
+        "LXX": "Ὀψίας δὲ γενομένης ἀνέκειτο μετὰ τῶν δώδεκα.",
+        "SYN": "Когда же настал вечер, Он возлег с двенадцатью учениками;",
+        "BYZ": "Ὀψίας δὲ γενομένης ἀνέκειτο μετὰ τῶν δώδεκα."
+      }
     },
     "21": {
-      "verse_number": 21,
-      "sort_number": 21,
-      "text": "[MATHE 26:21]",
-      "word_count": 5,
-      "russian": "и когда они ели, сказал: истинно говорю вам, что один из вас предаст Меня.",
-      "greek": "Καὶ ἐσθιόντων αὐτῶν εἶπεν, Ἀμὴν λέγω ὑμῖν ὅτι εἷς ἐξ ὑμῶν παραδώσει με.",
-      "latin": "Et edentibus illis, dixit: Amen dico vobis, quia unus vestrum me traditurus est."
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Et edentibus illis, dixit: Amen dico vobis, quia unus vestrum me traditurus est.",
+        "LXX": "Καὶ ἐσθιόντων αὐτῶν εἶπεν, Ἀμὴν λέγω ὑμῖν ὅτι εἷς ἐξ ὑμῶν παραδώσει με.",
+        "SYN": "и когда они ели, сказал: истинно говорю вам, что один из вас предаст Меня.",
+        "BYZ": "Καὶ ἐσθιόντων αὐτῶν εἶπεν, Ἀμὴν λέγω ὑμῖν ὅτι εἷς ἐξ ὑμῶν παραδώσει με."
+      }
     },
     "22": {
-      "verse_number": 22,
-      "sort_number": 22,
-      "text": "[MATHE 26:22]",
-      "word_count": 5,
-      "russian": "Они весьма опечалились, и начали говорить Ему, каждый из них: не я ли, Господи?",
-      "greek": "Καὶ λυπούμενοι σφόδρα ἤρξαντο λέγειν αὐτῷ ἕκαστος αὐτῶν, Μήτι ἐγώ εἰμι, κύριε;",
-      "latin": "Et contristati valde, cperunt singuli dicere: Numquid ego sum Domine ?"
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Et contristati valde, cperunt singuli dicere: Numquid ego sum Domine ?",
+        "LXX": "Καὶ λυπούμενοι σφόδρα ἤρξαντο λέγειν αὐτῷ ἕκαστος αὐτῶν, Μήτι ἐγώ εἰμι, κύριε;",
+        "SYN": "Они весьма опечалились, и начали говорить Ему, каждый из них: не я ли, Господи?",
+        "BYZ": "Καὶ λυπούμενοι σφόδρα ἤρξαντο λέγειν αὐτῷ ἕκαστος αὐτῶν, Μήτι ἐγώ εἰμι, κύριε;"
+      }
     },
     "23": {
-      "verse_number": 23,
-      "sort_number": 23,
-      "text": "[MATHE 26:23]",
-      "word_count": 5,
-      "russian": "Он же сказал в ответ: опустивший со Мною руку в блюдо, этот предаст Меня;",
-      "greek": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Ὁ ἐμβάψας μετ’ ἐμοῦ ἐν τῷ τρυβλίῳ τὴν χεῖρα, οὗτός με παραδώσει.",
-      "latin": "At ipse respondens, ait: Qui intingit mecum manum in paropside, hic me tradet."
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "At ipse respondens, ait: Qui intingit mecum manum in paropside, hic me tradet.",
+        "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Ὁ ἐμβάψας μετ’ ἐμοῦ ἐν τῷ τρυβλίῳ τὴν χεῖρα, οὗτός με παραδώσει.",
+        "SYN": "Он же сказал в ответ: опустивший со Мною руку в блюдо, этот предаст Меня;",
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Ὁ ἐμβάψας μετ’ ἐμοῦ ἐν τῷ τρυβλίῳ τὴν χεῖρα, οὗτός με παραδώσει."
+      }
     },
     "24": {
-      "verse_number": 24,
-      "sort_number": 24,
-      "text": "[MATHE 26:24]",
-      "word_count": 5,
-      "russian": "впрочем Сын Человеческий идет, как писано о Нем, но горе тому человеку, которым Сын Человеческий предается: лучше было бы этому человеку не родиться.",
-      "greek": "Ὁ μὲν υἱὸς τοῦ ἀνθρώπου ὑπάγει, καθὼς γέγραπται περὶ αὐτοῦ· οὐαὶ δὲ τῷ ἀνθρώπῳ ἐκείνῳ δι’ οὗ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται· καλὸν ἦν αὐτῷ εἰ οὐκ ἐγεννήθη ὁ ἄνθρωπος ἐκεῖνος.",
-      "latin": "Filius quidem hominis vadit, sicut scriptum est de illo: væ autem homini illi, per quem Filius hominis tradetur ! bonum erat ei, si natus non fuisset homo ille."
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Filius quidem hominis vadit, sicut scriptum est de illo: væ autem homini illi, per quem Filius hominis tradetur ! bonum erat ei, si natus non fuisset homo ille.",
+        "LXX": "Ὁ μὲν υἱὸς τοῦ ἀνθρώπου ὑπάγει, καθὼς γέγραπται περὶ αὐτοῦ· οὐαὶ δὲ τῷ ἀνθρώπῳ ἐκείνῳ δι’ οὗ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται· καλὸν ἦν αὐτῷ εἰ οὐκ ἐγεννήθη ὁ ἄνθρωπος ἐκεῖνος.",
+        "SYN": "впрочем Сын Человеческий идет, как писано о Нем, но горе тому человеку, которым Сын Человеческий предается: лучше было бы этому человеку не родиться.",
+        "BYZ": "Ὁ μὲν υἱὸς τοῦ ἀνθρώπου ὑπάγει, καθὼς γέγραπται περὶ αὐτοῦ· οὐαὶ δὲ τῷ ἀνθρώπῳ ἐκείνῳ δι’ οὗ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται· καλὸν ἦν αὐτῷ εἰ οὐκ ἐγεννήθη ὁ ἄνθρωπος ἐκεῖνος."
+      }
     },
     "25": {
-      "verse_number": 25,
-      "sort_number": 25,
-      "text": "[MATHE 26:25]",
-      "word_count": 5,
-      "russian": "При сем и Иуда, предающий Его, сказал: не я ли, Равви? Иисус говорит ему: ты сказал.",
-      "greek": "Ἀποκριθεὶς δὲ Ἰούδας ὁ παραδιδοὺς αὐτὸν εἶπεν, Μήτι ἐγώ εἰμι, ῥαββί; Λέγει αὐτῷ, Σὺ εἶπας.",
-      "latin": "Respondens autem Judas, qui tradidit eum, dixit: Numquid ego sum Rabbi ? Ait illi: Tu dixisti."
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "Respondens autem Judas, qui tradidit eum, dixit: Numquid ego sum Rabbi ? Ait illi: Tu dixisti.",
+        "LXX": "Ἀποκριθεὶς δὲ Ἰούδας ὁ παραδιδοὺς αὐτὸν εἶπεν, Μήτι ἐγώ εἰμι, ῥαββί; Λέγει αὐτῷ, Σὺ εἶπας.",
+        "SYN": "При сем и Иуда, предающий Его, сказал: не я ли, Равви? Иисус говорит ему: ты сказал.",
+        "BYZ": "Ἀποκριθεὶς δὲ Ἰούδας ὁ παραδιδοὺς αὐτὸν εἶπεν, Μήτι ἐγώ εἰμι, ῥαββί; Λέγει αὐτῷ, Σὺ εἶπας."
+      }
     },
     "26": {
-      "verse_number": 26,
-      "sort_number": 26,
-      "text": "[MATHE 26:26]",
-      "word_count": 5,
-      "russian": "И когда они ели, Иисус взял хлеб и, благословив, преломил и, раздавая ученикам, сказал: приимите, ядите: сие есть Тело Мое.",
-      "greek": "Ἐσθιόντων δὲ αὐτῶν, λαβὼν ὁ Ἰησοῦς τὸν ἄρτον, καὶ εὐχαριστήσας ἔκλασεν καὶ ἐδίδου τοῖς μαθηταῖς, καὶ εἶπεν, Λάβετε, φάγετε· τοῦτό ἐστιν τὸ σῶμά μου.",
-      "latin": "Cnantibus autem eis, accepit Jesus panem, et benedixit, ac fregit, deditque discipulis suis, et ait: Accipite, et comedite: hoc est corpus meum."
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Cnantibus autem eis, accepit Jesus panem, et benedixit, ac fregit, deditque discipulis suis, et ait: Accipite, et comedite: hoc est corpus meum.",
+        "LXX": "Ἐσθιόντων δὲ αὐτῶν, λαβὼν ὁ Ἰησοῦς τὸν ἄρτον, καὶ εὐχαριστήσας ἔκλασεν καὶ ἐδίδου τοῖς μαθηταῖς, καὶ εἶπεν, Λάβετε, φάγετε· τοῦτό ἐστιν τὸ σῶμά μου.",
+        "SYN": "И когда они ели, Иисус взял хлеб и, благословив, преломил и, раздавая ученикам, сказал: приимите, ядите: сие есть Тело Мое.",
+        "BYZ": "Ἐσθιόντων δὲ αὐτῶν, λαβὼν ὁ Ἰησοῦς τὸν ἄρτον, καὶ εὐχαριστήσας ἔκλασεν καὶ ἐδίδου τοῖς μαθηταῖς, καὶ εἶπεν, Λάβετε, φάγετε· τοῦτό ἐστιν τὸ σῶμά μου."
+      }
     },
     "27": {
-      "verse_number": 27,
-      "sort_number": 27,
-      "text": "[MATHE 26:27]",
-      "word_count": 5,
-      "russian": "И, взяв чашу и благодарив, подал им и сказал: пейте из нее все,",
-      "greek": "Καὶ λαβὼν τὸ ποτήριον καὶ εὐχαριστήσας ἔδωκεν αὐτοῖς, λέγων, Πίετε ἐξ αὐτοῦ πάντες·",
-      "latin": "Et accipiens calicem, gratias egit: et dedit illis, dicens: Bibite ex hoc omnes."
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "Et accipiens calicem, gratias egit: et dedit illis, dicens: Bibite ex hoc omnes.",
+        "LXX": "Καὶ λαβὼν τὸ ποτήριον καὶ εὐχαριστήσας ἔδωκεν αὐτοῖς, λέγων, Πίετε ἐξ αὐτοῦ πάντες·",
+        "SYN": "И, взяв чашу и благодарив, подал им и сказал: пейте из нее все,",
+        "BYZ": "Καὶ λαβὼν τὸ ποτήριον καὶ εὐχαριστήσας ἔδωκεν αὐτοῖς, λέγων, Πίετε ἐξ αὐτοῦ πάντες·"
+      }
     },
     "28": {
-      "verse_number": 28,
-      "sort_number": 28,
-      "text": "[MATHE 26:28]",
-      "word_count": 5,
-      "russian": "ибо сие есть Кровь Моя Нового Завета, за многих изливаемая во оставление грехов.",
-      "greek": "τοῦτο γάρ ἐστιν τὸ αἷμά μου, τὸ τῆς καινῆς διαθήκης, τὸ περὶ πολλῶν ἐκχυνόμενον εἰς ἄφεσιν ἁμαρτιῶν.",
-      "latin": "Hic est enim sanguis meus novi testamenti, qui pro multis effundetur in remissionem peccatorum."
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "Hic est enim sanguis meus novi testamenti, qui pro multis effundetur in remissionem peccatorum.",
+        "LXX": "τοῦτο γάρ ἐστιν τὸ αἷμά μου, τὸ τῆς καινῆς διαθήκης, τὸ περὶ πολλῶν ἐκχυνόμενον εἰς ἄφεσιν ἁμαρτιῶν.",
+        "SYN": "ибо сие есть Кровь Моя Нового Завета, за многих изливаемая во оставление грехов.",
+        "BYZ": "τοῦτο γάρ ἐστιν τὸ αἷμά μου, τὸ τῆς καινῆς διαθήκης, τὸ περὶ πολλῶν ἐκχυνόμενον εἰς ἄφεσιν ἁμαρτιῶν."
+      }
     },
     "29": {
-      "verse_number": 29,
-      "sort_number": 29,
-      "text": "[MATHE 26:29]",
-      "word_count": 5,
-      "russian": "Сказываю же вам, что отныне не буду пить от плода сего виноградного до того дня, когда буду пить с вами новое вино в Царстве Отца Моего.",
-      "greek": "Λέγω δὲ ὑμῖν ὅτι οὐ μὴ πίω ἀπ’ ἄρτι ἐκ τούτου τοῦ γεννήματος τῆς ἀμπέλου, ἕως τῆς ἡμέρας ἐκείνης ὅταν αὐτὸ πίνω μεθ’ ὑμῶν καινὸν ἐν τῇ βασιλείᾳ τοῦ πατρός μου.",
-      "latin": "Dico autem vobis: non bibam amodo de hoc genimine vitis usque in diem illum, cum illud bibam vobiscum novum in regno Patris mei."
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "Dico autem vobis: non bibam amodo de hoc genimine vitis usque in diem illum, cum illud bibam vobiscum novum in regno Patris mei.",
+        "LXX": "Λέγω δὲ ὑμῖν ὅτι οὐ μὴ πίω ἀπ’ ἄρτι ἐκ τούτου τοῦ γεννήματος τῆς ἀμπέλου, ἕως τῆς ἡμέρας ἐκείνης ὅταν αὐτὸ πίνω μεθ’ ὑμῶν καινὸν ἐν τῇ βασιλείᾳ τοῦ πατρός μου.",
+        "SYN": "Сказываю же вам, что отныне не буду пить от плода сего виноградного до того дня, когда буду пить с вами новое вино в Царстве Отца Моего.",
+        "BYZ": "Λέγω δὲ ὑμῖν ὅτι οὐ μὴ πίω ἀπ’ ἄρτι ἐκ τούτου τοῦ γεννήματος τῆς ἀμπέλου, ἕως τῆς ἡμέρας ἐκείνης ὅταν αὐτὸ πίνω μεθ’ ὑμῶν καινὸν ἐν τῇ βασιλείᾳ τοῦ πατρός μου."
+      }
     },
     "30": {
-      "verse_number": 30,
-      "sort_number": 30,
-      "text": "[MATHE 26:30]",
-      "word_count": 5,
-      "russian": "И, воспев, пошли на гору Елеонскую.",
-      "greek": "Καὶ ὑμνήσαντες ἐξῆλθον εἰς τὸ ὄρος τῶν Ἐλαιῶν.",
-      "latin": "Et hymno dicto, exierunt in montem Oliveti."
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "Et hymno dicto, exierunt in montem Oliveti.",
+        "LXX": "Καὶ ὑμνήσαντες ἐξῆλθον εἰς τὸ ὄρος τῶν Ἐλαιῶν.",
+        "SYN": "И, воспев, пошли на гору Елеонскую.",
+        "BYZ": "Καὶ ὑμνήσαντες ἐξῆλθον εἰς τὸ ὄρος τῶν Ἐλαιῶν."
+      }
     },
     "31": {
-      "verse_number": 31,
-      "sort_number": 31,
-      "text": "[MATHE 26:31]",
-      "word_count": 5,
-      "russian": "Тогда говорит им Иисус: все вы соблазнитесь о Мне в эту ночь, ибо написано: поражу пастыря, и рассеются овцы стада;",
-      "greek": "Τότε λέγει αὐτοῖς ὁ Ἰησοῦς, Πάντες ὑμεῖς σκανδαλισθήσεσθε ἐν ἐμοὶ ἐν τῇ νυκτὶ ταύτῃ· γέγραπται γάρ, Πατάξω τὸν ποιμένα, καὶ διασκορπισθήσεται τὰ πρόβατα τῆς ποίμνης.",
-      "latin": "Tunc dicit illis Jesus: Omnes vos scandalum patiemini in me in ista nocte. Scriptum est enim: Percutiam pastorem, et dispergentur oves gregis."
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "Tunc dicit illis Jesus: Omnes vos scandalum patiemini in me in ista nocte. Scriptum est enim: Percutiam pastorem, et dispergentur oves gregis.",
+        "LXX": "Τότε λέγει αὐτοῖς ὁ Ἰησοῦς, Πάντες ὑμεῖς σκανδαλισθήσεσθε ἐν ἐμοὶ ἐν τῇ νυκτὶ ταύτῃ· γέγραπται γάρ, Πατάξω τὸν ποιμένα, καὶ διασκορπισθήσεται τὰ πρόβατα τῆς ποίμνης.",
+        "SYN": "Тогда говорит им Иисус: все вы соблазнитесь о Мне в эту ночь, ибо написано: поражу пастыря, и рассеются овцы стада;",
+        "BYZ": "Τότε λέγει αὐτοῖς ὁ Ἰησοῦς, Πάντες ὑμεῖς σκανδαλισθήσεσθε ἐν ἐμοὶ ἐν τῇ νυκτὶ ταύτῃ· γέγραπται γάρ, Πατάξω τὸν ποιμένα, καὶ διασκορπισθήσεται τὰ πρόβατα τῆς ποίμνης."
+      }
     },
     "32": {
-      "verse_number": 32,
-      "sort_number": 32,
-      "text": "[MATHE 26:32]",
-      "word_count": 5,
-      "russian": "по воскресении же Моем предварю вас в Галилее.",
-      "greek": "Μετὰ δὲ τὸ ἐγερθῆναί με, προάξω ὑμᾶς εἰς τὴν Γαλιλαίαν.",
-      "latin": "Postquam autem resurrexero, præcedam vos in Galilæam."
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "Postquam autem resurrexero, præcedam vos in Galilæam.",
+        "LXX": "Μετὰ δὲ τὸ ἐγερθῆναί με, προάξω ὑμᾶς εἰς τὴν Γαλιλαίαν.",
+        "SYN": "по воскресении же Моем предварю вас в Галилее.",
+        "BYZ": "Μετὰ δὲ τὸ ἐγερθῆναί με, προάξω ὑμᾶς εἰς τὴν Γαλιλαίαν."
+      }
     },
     "33": {
-      "verse_number": 33,
-      "sort_number": 33,
-      "text": "[MATHE 26:33]",
-      "word_count": 5,
-      "russian": "Петр сказал Ему в ответ: если и все соблазнятся о Тебе, я никогда не соблазнюсь.",
-      "greek": "Ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ, Εἰ πάντες σκανδαλισθήσονται ἐν σοί, ἐγὼ δὲ οὐδέποτε σκανδαλισθήσομαι.",
-      "latin": "Respondens autem Petrus, ait illi: Et si omnes scandalizati fuerint in te, ego numquam scandalizabor."
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "Respondens autem Petrus, ait illi: Et si omnes scandalizati fuerint in te, ego numquam scandalizabor.",
+        "LXX": "Ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ, Εἰ πάντες σκανδαλισθήσονται ἐν σοί, ἐγὼ δὲ οὐδέποτε σκανδαλισθήσομαι.",
+        "SYN": "Петр сказал Ему в ответ: если и все соблазнятся о Тебе, я никогда не соблазнюсь.",
+        "BYZ": "Ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ, Εἰ πάντες σκανδαλισθήσονται ἐν σοί, ἐγὼ δὲ οὐδέποτε σκανδαλισθήσομαι."
+      }
     },
     "34": {
-      "verse_number": 34,
-      "sort_number": 34,
-      "text": "[MATHE 26:34]",
-      "word_count": 5,
-      "russian": "Иисус сказал ему: истинно говорю тебе, что в эту ночь, прежде нежели пропоет петух, трижды отречешься от Меня.",
-      "greek": "Ἔφη αὐτῷ ὁ Ἰησοῦς, Ἀμὴν λέγω σοι ὅτι ἐν ταύτῃ τῇ νυκτί, πρὶν ἀλέκτορα φωνῆσαι, τρὶς ἀπαρνήσῃ με.",
-      "latin": "Ait illi Jesus: Amen dico tibi, quia in hac nocte, antequam gallus cantet, ter me negabis."
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Ait illi Jesus: Amen dico tibi, quia in hac nocte, antequam gallus cantet, ter me negabis.",
+        "LXX": "Ἔφη αὐτῷ ὁ Ἰησοῦς, Ἀμὴν λέγω σοι ὅτι ἐν ταύτῃ τῇ νυκτί, πρὶν ἀλέκτορα φωνῆσαι, τρὶς ἀπαρνήσῃ με.",
+        "SYN": "Иисус сказал ему: истинно говорю тебе, что в эту ночь, прежде нежели пропоет петух, трижды отречешься от Меня.",
+        "BYZ": "Ἔφη αὐτῷ ὁ Ἰησοῦς, Ἀμὴν λέγω σοι ὅτι ἐν ταύτῃ τῇ νυκτί, πρὶν ἀλέκτορα φωνῆσαι, τρὶς ἀπαρνήσῃ με."
+      }
     },
     "35": {
-      "verse_number": 35,
-      "sort_number": 35,
-      "text": "[MATHE 26:35]",
-      "word_count": 5,
-      "russian": "Говорит Ему Петр: хотя бы надлежало мне и умереть с Тобою, не отрекусь от Тебя. Подобное говорили и все ученики.",
-      "greek": "Λέγει αὐτῷ ὁ Πέτρος, Κἂν δέῃ με σὺν σοὶ ἀποθανεῖν, οὐ μή σε ἀπαρνήσωμαι. Ὁμοίως δὲ καὶ πάντες οἱ μαθηταὶ εἶπον.",
-      "latin": "Ait illi Petrus: Etiamsi oportuerit me mori tecum, non te negabo. Similiter et omnes discipuli dixerunt."
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "VUL": "Ait illi Petrus: Etiamsi oportuerit me mori tecum, non te negabo. Similiter et omnes discipuli dixerunt.",
+        "LXX": "Λέγει αὐτῷ ὁ Πέτρος, Κἂν δέῃ με σὺν σοὶ ἀποθανεῖν, οὐ μή σε ἀπαρνήσωμαι. Ὁμοίως δὲ καὶ πάντες οἱ μαθηταὶ εἶπον.",
+        "SYN": "Говорит Ему Петр: хотя бы надлежало мне и умереть с Тобою, не отрекусь от Тебя. Подобное говорили и все ученики.",
+        "BYZ": "Λέγει αὐτῷ ὁ Πέτρος, Κἂν δέῃ με σὺν σοὶ ἀποθανεῖν, οὐ μή σε ἀπαρνήσωμαι. Ὁμοίως δὲ καὶ πάντες οἱ μαθηταὶ εἶπον."
+      }
     },
     "36": {
-      "verse_number": 36,
-      "sort_number": 36,
-      "text": "[MATHE 26:36]",
-      "word_count": 5,
-      "russian": "Потом приходит с ними Иисус на место, называемое Гефсимания, и говорит ученикам: посидите тут, пока Я пойду, помолюсь там.",
-      "greek": "Τότε ἔρχεται μετ’ αὐτῶν ὁ Ἰησοῦς εἰς χωρίον λεγόμενον Γεθσημανῆ, καὶ λέγει τοῖς μαθηταῖς, Καθίσατε αὐτοῦ, ἕως οὗ ἀπελθὼν προσεύξωμαι ἐκεῖ.",
-      "latin": "Tunc venit Jesus cum illis in villam, quæ dicitur Gethsemani, et dixit discipulis suis: Sedete hic donec vadam illuc, et orem."
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "VUL": "Tunc venit Jesus cum illis in villam, quæ dicitur Gethsemani, et dixit discipulis suis: Sedete hic donec vadam illuc, et orem.",
+        "LXX": "Τότε ἔρχεται μετ’ αὐτῶν ὁ Ἰησοῦς εἰς χωρίον λεγόμενον Γεθσημανῆ, καὶ λέγει τοῖς μαθηταῖς, Καθίσατε αὐτοῦ, ἕως οὗ ἀπελθὼν προσεύξωμαι ἐκεῖ.",
+        "SYN": "Потом приходит с ними Иисус на место, называемое Гефсимания, и говорит ученикам: посидите тут, пока Я пойду, помолюсь там.",
+        "BYZ": "Τότε ἔρχεται μετ’ αὐτῶν ὁ Ἰησοῦς εἰς χωρίον λεγόμενον Γεθσημανῆ, καὶ λέγει τοῖς μαθηταῖς, Καθίσατε αὐτοῦ, ἕως οὗ ἀπελθὼν προσεύξωμαι ἐκεῖ."
+      }
     },
     "37": {
-      "verse_number": 37,
-      "sort_number": 37,
-      "text": "[MATHE 26:37]",
-      "word_count": 5,
-      "russian": "И, взяв с Собою Петра и обоих сыновей Зеведеевых, начал скорбеть и тосковать.",
-      "greek": "Καὶ παραλαβὼν τὸν Πέτρον καὶ τοὺς δύο υἱοὺς Ζεβεδαίου, ἤρξατο λυπεῖσθαι καὶ ἀδημονεῖν.",
-      "latin": "Et assumpto Petro, et duobus filiis Zebedæi, cpit contristari et mstus esse."
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "VUL": "Et assumpto Petro, et duobus filiis Zebedæi, cpit contristari et mstus esse.",
+        "LXX": "Καὶ παραλαβὼν τὸν Πέτρον καὶ τοὺς δύο υἱοὺς Ζεβεδαίου, ἤρξατο λυπεῖσθαι καὶ ἀδημονεῖν.",
+        "SYN": "И, взяв с Собою Петра и обоих сыновей Зеведеевых, начал скорбеть и тосковать.",
+        "BYZ": "Καὶ παραλαβὼν τὸν Πέτρον καὶ τοὺς δύο υἱοὺς Ζεβεδαίου, ἤρξατο λυπεῖσθαι καὶ ἀδημονεῖν."
+      }
     },
     "38": {
-      "verse_number": 38,
-      "sort_number": 38,
-      "text": "[MATHE 26:38]",
-      "word_count": 5,
-      "russian": "Тогда говорит им Иисус: душа Моя скорбит смертельно; побудьте здесь и бодрствуйте со Мною.",
-      "greek": "Τότε λέγει αὐτοῖς ὁ Ἰησοῦς, Περίλυπός ἐστιν ἡ ψυχή μου ἕως θανάτου· μείνατε ὧδε καὶ γρηγορεῖτε μετ’ ἐμοῦ.",
-      "latin": "Tunc ait illis: Tristis est anima mea usque ad mortem: sustinete hic, et vigilate mecum."
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "VUL": "Tunc ait illis: Tristis est anima mea usque ad mortem: sustinete hic, et vigilate mecum.",
+        "LXX": "Τότε λέγει αὐτοῖς ὁ Ἰησοῦς, Περίλυπός ἐστιν ἡ ψυχή μου ἕως θανάτου· μείνατε ὧδε καὶ γρηγορεῖτε μετ’ ἐμοῦ.",
+        "SYN": "Тогда говорит им Иисус: душа Моя скорбит смертельно; побудьте здесь и бодрствуйте со Мною.",
+        "BYZ": "Τότε λέγει αὐτοῖς ὁ Ἰησοῦς, Περίλυπός ἐστιν ἡ ψυχή μου ἕως θανάτου· μείνατε ὧδε καὶ γρηγορεῖτε μετ’ ἐμοῦ."
+      }
     },
     "39": {
-      "verse_number": 39,
-      "sort_number": 39,
-      "text": "[MATHE 26:39]",
-      "word_count": 5,
-      "russian": "И, отойдя немного, пал на лице Свое, молился и говорил: Отче Мой! если возможно, да минует Меня чаша сия; впрочем не как Я хочу, но как Ты.",
-      "greek": "Καὶ προσελθὼν μικρόν, ἔπεσεν ἐπὶ πρόσωπον αὐτοῦ προσευχόμενος καὶ λέγων, Πάτερ μου, εἰ δυνατόν ἐστιν, παρελθέτω ἀπ’ ἐμοῦ τὸ ποτήριον τοῦτο· πλὴν οὐχ ὡς ἐγὼ θέλω, ἀλλ’ ὡς σύ.",
-      "latin": "Et progressus pusillum, procidit in faciem suam, orans, et dicens: Pater mi, si possibile est, transeat a me calix iste: verumtamen non sicut ego volo, sed sicut tu."
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "VUL": "Et progressus pusillum, procidit in faciem suam, orans, et dicens: Pater mi, si possibile est, transeat a me calix iste: verumtamen non sicut ego volo, sed sicut tu.",
+        "LXX": "Καὶ προσελθὼν μικρόν, ἔπεσεν ἐπὶ πρόσωπον αὐτοῦ προσευχόμενος καὶ λέγων, Πάτερ μου, εἰ δυνατόν ἐστιν, παρελθέτω ἀπ’ ἐμοῦ τὸ ποτήριον τοῦτο· πλὴν οὐχ ὡς ἐγὼ θέλω, ἀλλ’ ὡς σύ.",
+        "SYN": "И, отойдя немного, пал на лице Свое, молился и говорил: Отче Мой! если возможно, да минует Меня чаша сия; впрочем не как Я хочу, но как Ты.",
+        "BYZ": "Καὶ προσελθὼν μικρόν, ἔπεσεν ἐπὶ πρόσωπον αὐτοῦ προσευχόμενος καὶ λέγων, Πάτερ μου, εἰ δυνατόν ἐστιν, παρελθέτω ἀπ’ ἐμοῦ τὸ ποτήριον τοῦτο· πλὴν οὐχ ὡς ἐγὼ θέλω, ἀλλ’ ὡς σύ."
+      }
     },
     "40": {
-      "verse_number": 40,
-      "sort_number": 40,
-      "text": "[MATHE 26:40]",
-      "word_count": 5,
-      "russian": "И приходит к ученикам и находит их спящими, и говорит Петру: так ли не могли вы один час бодрствовать со Мною?",
-      "greek": "Καὶ ἔρχεται πρὸς τοὺς μαθητὰς καὶ εὑρίσκει αὐτοὺς καθεύδοντας, καὶ λέγει τῷ Πέτρῳ, Οὕτως οὐκ ἰσχύσατε μίαν ὥραν γρηγορῆσαι μετ’ ἐμοῦ;",
-      "latin": "Et venit ad discipulos suos, et invenit eos dormientes, et dicit Petro: Sic non potuistis una hora vigilare mecum ?"
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "VUL": "Et venit ad discipulos suos, et invenit eos dormientes, et dicit Petro: Sic non potuistis una hora vigilare mecum ?",
+        "LXX": "Καὶ ἔρχεται πρὸς τοὺς μαθητὰς καὶ εὑρίσκει αὐτοὺς καθεύδοντας, καὶ λέγει τῷ Πέτρῳ, Οὕτως οὐκ ἰσχύσατε μίαν ὥραν γρηγορῆσαι μετ’ ἐμοῦ;",
+        "SYN": "И приходит к ученикам и находит их спящими, и говорит Петру: так ли не могли вы один час бодрствовать со Мною?",
+        "BYZ": "Καὶ ἔρχεται πρὸς τοὺς μαθητὰς καὶ εὑρίσκει αὐτοὺς καθεύδοντας, καὶ λέγει τῷ Πέτρῳ, Οὕτως οὐκ ἰσχύσατε μίαν ὥραν γρηγορῆσαι μετ’ ἐμοῦ;"
+      }
     },
     "41": {
-      "verse_number": 41,
-      "sort_number": 41,
-      "text": "[MATHE 26:41]",
-      "word_count": 5,
-      "russian": "бодрствуйте и молитесь, чтобы не впасть в искушение: дух бодр, плоть же немощна.",
-      "greek": "Γρηγορεῖτε καὶ προσεύχεσθε, ἵνα μὴ εἰσέλθητε εἰς πειρασμόν. Τὸ μὲν πνεῦμα πρόθυμον, ἡ δὲ σὰρξ ἀσθενής.",
-      "latin": "Vigilate, et orate ut non intretis in tentationem. Spiritus quidem promptus est, caro autem infirma."
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "VUL": "Vigilate, et orate ut non intretis in tentationem. Spiritus quidem promptus est, caro autem infirma.",
+        "LXX": "Γρηγορεῖτε καὶ προσεύχεσθε, ἵνα μὴ εἰσέλθητε εἰς πειρασμόν. Τὸ μὲν πνεῦμα πρόθυμον, ἡ δὲ σὰρξ ἀσθενής.",
+        "SYN": "бодрствуйте и молитесь, чтобы не впасть в искушение: дух бодр, плоть же немощна.",
+        "BYZ": "Γρηγορεῖτε καὶ προσεύχεσθε, ἵνα μὴ εἰσέλθητε εἰς πειρασμόν. Τὸ μὲν πνεῦμα πρόθυμον, ἡ δὲ σὰρξ ἀσθενής."
+      }
     },
     "42": {
-      "verse_number": 42,
-      "sort_number": 42,
-      "text": "[MATHE 26:42]",
-      "word_count": 5,
-      "russian": "Еще, отойдя в другой раз, молился, говоря: Отче Мой! если не может чаша сия миновать Меня, чтобы Мне не пить ее, да будет воля Твоя.",
-      "greek": "Πάλιν ἐκ δευτέρου ἀπελθὼν προσηύξατο, λέγων, Πάτερ μου, εἰ οὐ δύναται τοῦτο τὸ ποτήριον παρελθεῖν ἀπ’ ἐμοῦ, ἐὰν μὴ αὐτὸ πίω, γενηθήτω τὸ θέλημά σου.",
-      "latin": "Iterum secundo abiit, et oravit, dicens: Pater mi, si non potest hic calix transire nisi bibam illum, fiat voluntas tua."
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "VUL": "Iterum secundo abiit, et oravit, dicens: Pater mi, si non potest hic calix transire nisi bibam illum, fiat voluntas tua.",
+        "LXX": "Πάλιν ἐκ δευτέρου ἀπελθὼν προσηύξατο, λέγων, Πάτερ μου, εἰ οὐ δύναται τοῦτο τὸ ποτήριον παρελθεῖν ἀπ’ ἐμοῦ, ἐὰν μὴ αὐτὸ πίω, γενηθήτω τὸ θέλημά σου.",
+        "SYN": "Еще, отойдя в другой раз, молился, говоря: Отче Мой! если не может чаша сия миновать Меня, чтобы Мне не пить ее, да будет воля Твоя.",
+        "BYZ": "Πάλιν ἐκ δευτέρου ἀπελθὼν προσηύξατο, λέγων, Πάτερ μου, εἰ οὐ δύναται τοῦτο τὸ ποτήριον παρελθεῖν ἀπ’ ἐμοῦ, ἐὰν μὴ αὐτὸ πίω, γενηθήτω τὸ θέλημά σου."
+      }
     },
     "43": {
-      "verse_number": 43,
-      "sort_number": 43,
-      "text": "[MATHE 26:43]",
-      "word_count": 5,
-      "russian": "И, придя, находит их опять спящими, ибо у них глаза отяжелели.",
-      "greek": "Καὶ ἐλθὼν εὑρίσκει αὐτοὺς πάλιν καθεύδοντας· ἦσαν γὰρ αὐτῶν οἱ ὀφθαλμοὶ βεβαρημένοι.",
-      "latin": "Et venit iterum, et invenit eos dormientes: erant enim oculi eorum gravati."
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "VUL": "Et venit iterum, et invenit eos dormientes: erant enim oculi eorum gravati.",
+        "LXX": "Καὶ ἐλθὼν εὑρίσκει αὐτοὺς πάλιν καθεύδοντας· ἦσαν γὰρ αὐτῶν οἱ ὀφθαλμοὶ βεβαρημένοι.",
+        "SYN": "И, придя, находит их опять спящими, ибо у них глаза отяжелели.",
+        "BYZ": "Καὶ ἐλθὼν εὑρίσκει αὐτοὺς πάλιν καθεύδοντας· ἦσαν γὰρ αὐτῶν οἱ ὀφθαλμοὶ βεβαρημένοι."
+      }
     },
     "44": {
-      "verse_number": 44,
-      "sort_number": 44,
-      "text": "[MATHE 26:44]",
-      "word_count": 5,
-      "russian": "И, оставив их, отошел опять и помолился в третий раз, сказав то же слово.",
-      "greek": "Καὶ ἀφεὶς αὐτοὺς ἀπελθὼν πάλιν προσηύξατο ἐκ τρίτου, τὸν αὐτὸν λόγον εἰπών.",
-      "latin": "Et relictis illis, iterum abiit, et oravit tertio, eumdem sermonem dicens."
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "VUL": "Et relictis illis, iterum abiit, et oravit tertio, eumdem sermonem dicens.",
+        "LXX": "Καὶ ἀφεὶς αὐτοὺς ἀπελθὼν πάλιν προσηύξατο ἐκ τρίτου, τὸν αὐτὸν λόγον εἰπών.",
+        "SYN": "И, оставив их, отошел опять и помолился в третий раз, сказав то же слово.",
+        "BYZ": "Καὶ ἀφεὶς αὐτοὺς ἀπελθὼν πάλιν προσηύξατο ἐκ τρίτου, τὸν αὐτὸν λόγον εἰπών."
+      }
     },
     "45": {
-      "verse_number": 45,
-      "sort_number": 45,
-      "text": "[MATHE 26:45]",
-      "word_count": 5,
-      "russian": "Тогда приходит к ученикам Своим и говорит им: вы все еще спите и почиваете? вот, приблизился час, и Сын Человеческий предается в руки грешников;",
-      "greek": "Τότε ἔρχεται πρὸς τοὺς μαθητὰς αὐτοῦ, καὶ λέγει αὐτοῖς, Καθεύδετε τὸ λοιπὸν καὶ ἀναπαύεσθε. Ἰδού, ἤγγικεν ἡ ὥρα, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς χεῖρας ἁμαρτωλῶν.",
-      "latin": "Tunc venit ad discipulos suos, et dicit illis: Dormite jam, et requiescite: ecce appropinquavit hora, et Filius hominis tradetur in manus peccatorum."
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "VUL": "Tunc venit ad discipulos suos, et dicit illis: Dormite jam, et requiescite: ecce appropinquavit hora, et Filius hominis tradetur in manus peccatorum.",
+        "LXX": "Τότε ἔρχεται πρὸς τοὺς μαθητὰς αὐτοῦ, καὶ λέγει αὐτοῖς, Καθεύδετε τὸ λοιπὸν καὶ ἀναπαύεσθε. Ἰδού, ἤγγικεν ἡ ὥρα, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς χεῖρας ἁμαρτωλῶν.",
+        "SYN": "Тогда приходит к ученикам Своим и говорит им: вы все еще спите и почиваете? вот, приблизился час, и Сын Человеческий предается в руки грешников;",
+        "BYZ": "Τότε ἔρχεται πρὸς τοὺς μαθητὰς αὐτοῦ, καὶ λέγει αὐτοῖς, Καθεύδετε τὸ λοιπὸν καὶ ἀναπαύεσθε. Ἰδού, ἤγγικεν ἡ ὥρα, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς χεῖρας ἁμαρτωλῶν."
+      }
     },
     "46": {
-      "verse_number": 46,
-      "sort_number": 46,
-      "text": "[MATHE 26:46]",
-      "word_count": 5,
-      "russian": "встаньте, пойдем: вот, приблизился предающий Меня.",
-      "greek": "Ἐγείρεσθε, ἄγωμεν. Ἰδού, ἤγγικεν ὁ παραδιδούς με.",
-      "latin": "Surgite, eamus: ecce appropinquavit qui me tradet."
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "VUL": "Surgite, eamus: ecce appropinquavit qui me tradet.",
+        "LXX": "Ἐγείρεσθε, ἄγωμεν. Ἰδού, ἤγγικεν ὁ παραδιδούς με.",
+        "SYN": "встаньте, пойдем: вот, приблизился предающий Меня.",
+        "BYZ": "Ἐγείρεσθε, ἄγωμεν. Ἰδού, ἤγγικεν ὁ παραδιδούς με."
+      }
     },
     "47": {
-      "verse_number": 47,
-      "sort_number": 47,
-      "text": "[MATHE 26:47]",
-      "word_count": 5,
-      "russian": "И, когда еще говорил Он, вот Иуда, один из двенадцати, пришел, и с ним множество народа с мечами и кольями, от первосвященников и старейшин народных.",
-      "greek": "Καὶ ἔτι αὐτοῦ λαλοῦντος, ἰδού, Ἰούδας, εἷς τῶν δώδεκα, ἦλθεν καὶ μετ’ αὐτοῦ ὄχλος πολὺς μετὰ μαχαιρῶν καὶ ξύλων, ἀπὸ τῶν ἀρχιερέων καὶ πρεσβυτέρων τοῦ λαοῦ.",
-      "latin": "Adhuc eo loquente, ecce Judas unus de duodecim venit, et cum eo turba multa cum gladiis et fustibus, missi a principibus sacerdotum, et senioribus populi."
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "VUL": "Adhuc eo loquente, ecce Judas unus de duodecim venit, et cum eo turba multa cum gladiis et fustibus, missi a principibus sacerdotum, et senioribus populi.",
+        "LXX": "Καὶ ἔτι αὐτοῦ λαλοῦντος, ἰδού, Ἰούδας, εἷς τῶν δώδεκα, ἦλθεν καὶ μετ’ αὐτοῦ ὄχλος πολὺς μετὰ μαχαιρῶν καὶ ξύλων, ἀπὸ τῶν ἀρχιερέων καὶ πρεσβυτέρων τοῦ λαοῦ.",
+        "SYN": "И, когда еще говорил Он, вот Иуда, один из двенадцати, пришел, и с ним множество народа с мечами и кольями, от первосвященников и старейшин народных.",
+        "BYZ": "Καὶ ἔτι αὐτοῦ λαλοῦντος, ἰδού, Ἰούδας, εἷς τῶν δώδεκα, ἦλθεν καὶ μετ’ αὐτοῦ ὄχλος πολὺς μετὰ μαχαιρῶν καὶ ξύλων, ἀπὸ τῶν ἀρχιερέων καὶ πρεσβυτέρων τοῦ λαοῦ."
+      }
     },
     "48": {
-      "verse_number": 48,
-      "sort_number": 48,
-      "text": "[MATHE 26:48]",
-      "word_count": 5,
-      "russian": "Предающий же Его дал им знак, сказав: Кого я поцелую, Тот и есть, возьмите Его.",
-      "greek": "Ὁ δὲ παραδιδοὺς αὐτὸν ἔδωκεν αὐτοῖς σημεῖον, λέγων, Ὃν ἂν φιλήσω, αὐτός ἐστιν· κρατήσατε αὐτόν.",
-      "latin": "Qui autem tradidit eum, dedit illis signum, dicens: Quemcumque osculatus fuero, ipse est, tenete eum."
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "VUL": "Qui autem tradidit eum, dedit illis signum, dicens: Quemcumque osculatus fuero, ipse est, tenete eum.",
+        "LXX": "Ὁ δὲ παραδιδοὺς αὐτὸν ἔδωκεν αὐτοῖς σημεῖον, λέγων, Ὃν ἂν φιλήσω, αὐτός ἐστιν· κρατήσατε αὐτόν.",
+        "SYN": "Предающий же Его дал им знак, сказав: Кого я поцелую, Тот и есть, возьмите Его.",
+        "BYZ": "Ὁ δὲ παραδιδοὺς αὐτὸν ἔδωκεν αὐτοῖς σημεῖον, λέγων, Ὃν ἂν φιλήσω, αὐτός ἐστιν· κρατήσατε αὐτόν."
+      }
     },
     "49": {
-      "verse_number": 49,
-      "sort_number": 49,
-      "text": "[MATHE 26:49]",
-      "word_count": 5,
-      "russian": "И, тотчас подойдя к Иисусу, сказал: радуйся, Равви! И поцеловал Его.",
-      "greek": "Καὶ εὐθέως προσελθὼν τῷ Ἰησοῦ εἶπεν, Χαῖρε, ῥαββί· καὶ κατεφίλησεν αὐτόν.",
-      "latin": "Et confestim accedens ad Jesum, dixit: Ave Rabbi. Et osculatus est eum."
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "VUL": "Et confestim accedens ad Jesum, dixit: Ave Rabbi. Et osculatus est eum.",
+        "LXX": "Καὶ εὐθέως προσελθὼν τῷ Ἰησοῦ εἶπεν, Χαῖρε, ῥαββί· καὶ κατεφίλησεν αὐτόν.",
+        "SYN": "И, тотчас подойдя к Иисусу, сказал: радуйся, Равви! И поцеловал Его.",
+        "BYZ": "Καὶ εὐθέως προσελθὼν τῷ Ἰησοῦ εἶπεν, Χαῖρε, ῥαββί· καὶ κατεφίλησεν αὐτόν."
+      }
     },
     "50": {
-      "verse_number": 50,
-      "sort_number": 50,
-      "text": "[MATHE 26:50]",
-      "word_count": 5,
-      "russian": "Иисус же сказал ему: друг, для чего ты пришел? Тогда подошли и возложили руки на Иисуса, и взяли Его.",
-      "greek": "Ὁ δὲ Ἰησοῦς εἶπεν αὐτῷ, Ἑταῖρε, ἐφ’ ᾧ πάρει; Τότε προσελθόντες ἐπέβαλον τὰς χεῖρας ἐπὶ τὸν Ἰησοῦν, καὶ ἐκράτησαν αὐτόν.",
-      "latin": "Dixitque illi Jesus: Amice, ad quid venisti ? Tunc accesserunt, et manus injecerunt in Jesum, et tenuerunt eum."
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "VUL": "Dixitque illi Jesus: Amice, ad quid venisti ? Tunc accesserunt, et manus injecerunt in Jesum, et tenuerunt eum.",
+        "LXX": "Ὁ δὲ Ἰησοῦς εἶπεν αὐτῷ, Ἑταῖρε, ἐφ’ ᾧ πάρει; Τότε προσελθόντες ἐπέβαλον τὰς χεῖρας ἐπὶ τὸν Ἰησοῦν, καὶ ἐκράτησαν αὐτόν.",
+        "SYN": "Иисус же сказал ему: друг, для чего ты пришел? Тогда подошли и возложили руки на Иисуса, и взяли Его.",
+        "BYZ": "Ὁ δὲ Ἰησοῦς εἶπεν αὐτῷ, Ἑταῖρε, ἐφ’ ᾧ πάρει; Τότε προσελθόντες ἐπέβαλον τὰς χεῖρας ἐπὶ τὸν Ἰησοῦν, καὶ ἐκράτησαν αὐτόν."
+      }
     },
     "51": {
-      "verse_number": 51,
-      "sort_number": 51,
-      "text": "[MATHE 26:51]",
-      "word_count": 5,
-      "russian": "И вот, один из бывших с Иисусом, простерши руку, извлек меч свой и, ударив раба первосвященникова, отсек ему ухо.",
-      "greek": "Καὶ ἰδού, εἷς τῶν μετὰ Ἰησοῦ, ἐκτείνας τὴν χεῖρα, ἀπέσπασεν τὴν μάχαιραν αὐτοῦ, καὶ πατάξας τὸν δοῦλον τοῦ ἀρχιερέως ἀφεῖλεν αὐτοῦ τὸ ὠτίον.",
-      "latin": "Et ecce unus ex his qui erant cum Jesu, extendens manum, exemit gladium suum, et percutiens servum principis sacerdotum amputavit auriculam ejus."
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "VUL": "Et ecce unus ex his qui erant cum Jesu, extendens manum, exemit gladium suum, et percutiens servum principis sacerdotum amputavit auriculam ejus.",
+        "LXX": "Καὶ ἰδού, εἷς τῶν μετὰ Ἰησοῦ, ἐκτείνας τὴν χεῖρα, ἀπέσπασεν τὴν μάχαιραν αὐτοῦ, καὶ πατάξας τὸν δοῦλον τοῦ ἀρχιερέως ἀφεῖλεν αὐτοῦ τὸ ὠτίον.",
+        "SYN": "И вот, один из бывших с Иисусом, простерши руку, извлек меч свой и, ударив раба первосвященникова, отсек ему ухо.",
+        "BYZ": "Καὶ ἰδού, εἷς τῶν μετὰ Ἰησοῦ, ἐκτείνας τὴν χεῖρα, ἀπέσπασεν τὴν μάχαιραν αὐτοῦ, καὶ πατάξας τὸν δοῦλον τοῦ ἀρχιερέως ἀφεῖλεν αὐτοῦ τὸ ὠτίον."
+      }
     },
     "52": {
-      "verse_number": 52,
-      "sort_number": 52,
-      "text": "[MATHE 26:52]",
-      "word_count": 5,
-      "russian": "Тогда говорит ему Иисус: возврати меч твой в его место, ибо все, взявшие меч, мечом погибнут;",
-      "greek": "Τότε λέγει αὐτῷ ὁ Ἰησοῦς, Ἀπόστρεψόν σου τὴν μάχαιραν εἰς τὸν τόπον αὐτῆς· πάντες γὰρ οἱ λαβόντες μάχαιραν ἐν μαχαίρᾳ ἀποθανοῦνται.",
-      "latin": "Tunc ait illi Jesus: Converte gladium tuum in locum suum: omnes enim, qui acceperint gladium, gladio peribunt."
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "VUL": "Tunc ait illi Jesus: Converte gladium tuum in locum suum: omnes enim, qui acceperint gladium, gladio peribunt.",
+        "LXX": "Τότε λέγει αὐτῷ ὁ Ἰησοῦς, Ἀπόστρεψόν σου τὴν μάχαιραν εἰς τὸν τόπον αὐτῆς· πάντες γὰρ οἱ λαβόντες μάχαιραν ἐν μαχαίρᾳ ἀποθανοῦνται.",
+        "SYN": "Тогда говорит ему Иисус: возврати меч твой в его место, ибо все, взявшие меч, мечом погибнут;",
+        "BYZ": "Τότε λέγει αὐτῷ ὁ Ἰησοῦς, Ἀπόστρεψόν σου τὴν μάχαιραν εἰς τὸν τόπον αὐτῆς· πάντες γὰρ οἱ λαβόντες μάχαιραν ἐν μαχαίρᾳ ἀποθανοῦνται."
+      }
     },
     "53": {
-      "verse_number": 53,
-      "sort_number": 53,
-      "text": "[MATHE 26:53]",
-      "word_count": 5,
-      "russian": "или думаешь, что Я не могу теперь умолить Отца Моего, и Он представит Мне более, нежели двенадцать легионов Ангелов?",
-      "greek": "Ἢ δοκεῖς ὅτι οὐ δύναμαι ἄρτι παρακαλέσαι τὸν πατέρα μου, καὶ παραστήσει μοι πλείους ἢ δώδεκα λεγεῶνας ἀγγέλων;",
-      "latin": "An putas, quia non possum rogare patrem meum, et exhibebit mihi modo plusquam duodecim legiones angelorum ?"
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "VUL": "An putas, quia non possum rogare patrem meum, et exhibebit mihi modo plusquam duodecim legiones angelorum ?",
+        "LXX": "Ἢ δοκεῖς ὅτι οὐ δύναμαι ἄρτι παρακαλέσαι τὸν πατέρα μου, καὶ παραστήσει μοι πλείους ἢ δώδεκα λεγεῶνας ἀγγέλων;",
+        "SYN": "или думаешь, что Я не могу теперь умолить Отца Моего, и Он представит Мне более, нежели двенадцать легионов Ангелов?",
+        "BYZ": "Ἢ δοκεῖς ὅτι οὐ δύναμαι ἄρτι παρακαλέσαι τὸν πατέρα μου, καὶ παραστήσει μοι πλείους ἢ δώδεκα λεγεῶνας ἀγγέλων;"
+      }
     },
     "54": {
-      "verse_number": 54,
-      "sort_number": 54,
-      "text": "[MATHE 26:54]",
-      "word_count": 5,
-      "russian": "как же сбудутся Писания, что так должно быть?",
-      "greek": "Πῶς οὖν πληρωθῶσιν αἱ γραφαί, ὅτι οὕτως δεῖ γενέσθαι;",
-      "latin": "Quomodo ergo implebuntur Scripturæ, quia sic oportet fieri ?"
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "VUL": "Quomodo ergo implebuntur Scripturæ, quia sic oportet fieri ?",
+        "LXX": "Πῶς οὖν πληρωθῶσιν αἱ γραφαί, ὅτι οὕτως δεῖ γενέσθαι;",
+        "SYN": "как же сбудутся Писания, что так должно быть?",
+        "BYZ": "Πῶς οὖν πληρωθῶσιν αἱ γραφαί, ὅτι οὕτως δεῖ γενέσθαι;"
+      }
     },
     "55": {
-      "verse_number": 55,
-      "sort_number": 55,
-      "text": "[MATHE 26:55]",
-      "word_count": 5,
-      "russian": "В тот час сказал Иисус народу: как будто на разбойника вышли вы с мечами и кольями взять Меня; каждый день с вами сидел Я, уча в храме, и вы не брали Меня.",
-      "greek": "Ἐν ἐκείνῃ τῇ ὥρᾳ εἶπεν ὁ Ἰησοῦς τοῖς ὄχλοις, Ὡς ἐπὶ λῃστὴν ἐξήλθετε μετὰ μαχαιρῶν καὶ ξύλων συλλαβεῖν με; Καθ’ ἡμέραν πρὸς ὑμᾶς ἐκαθεζόμην διδάσκων ἐν τῷ ἱερῷ, καὶ οὐκ ἐκρατήσατέ με.",
-      "latin": "In illa hora dixit Jesus turbis: Tamquam ad latronem existis cum gladiis et fustibus comprehendere me: quotidie apud vos sedebam docens in templo, et non me tenuistis."
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "VUL": "In illa hora dixit Jesus turbis: Tamquam ad latronem existis cum gladiis et fustibus comprehendere me: quotidie apud vos sedebam docens in templo, et non me tenuistis.",
+        "LXX": "Ἐν ἐκείνῃ τῇ ὥρᾳ εἶπεν ὁ Ἰησοῦς τοῖς ὄχλοις, Ὡς ἐπὶ λῃστὴν ἐξήλθετε μετὰ μαχαιρῶν καὶ ξύλων συλλαβεῖν με; Καθ’ ἡμέραν πρὸς ὑμᾶς ἐκαθεζόμην διδάσκων ἐν τῷ ἱερῷ, καὶ οὐκ ἐκρατήσατέ με.",
+        "SYN": "В тот час сказал Иисус народу: как будто на разбойника вышли вы с мечами и кольями взять Меня; каждый день с вами сидел Я, уча в храме, и вы не брали Меня.",
+        "BYZ": "Ἐν ἐκείνῃ τῇ ὥρᾳ εἶπεν ὁ Ἰησοῦς τοῖς ὄχλοις, Ὡς ἐπὶ λῃστὴν ἐξήλθετε μετὰ μαχαιρῶν καὶ ξύλων συλλαβεῖν με; Καθ’ ἡμέραν πρὸς ὑμᾶς ἐκαθεζόμην διδάσκων ἐν τῷ ἱερῷ, καὶ οὐκ ἐκρατήσατέ με."
+      }
     },
     "56": {
-      "verse_number": 56,
-      "sort_number": 56,
-      "text": "[MATHE 26:56]",
-      "word_count": 5,
-      "russian": "Сие же все было, да сбудутся писания пророков. Тогда все ученики, оставив Его, бежали.",
-      "greek": "Τοῦτο δὲ ὅλον γέγονεν, ἵνα πληρωθῶσιν αἱ γραφαὶ τῶν προφητῶν. Τότε οἱ μαθηταὶ πάντες ἀφέντες αὐτὸν ἔφυγον.",
-      "latin": "Hoc autem totum factum est, ut adimplerentur Scripturæ prophetarum. Tunc discipuli omnes, relicto eo, fugerunt."
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "VUL": "Hoc autem totum factum est, ut adimplerentur Scripturæ prophetarum. Tunc discipuli omnes, relicto eo, fugerunt.",
+        "LXX": "Τοῦτο δὲ ὅλον γέγονεν, ἵνα πληρωθῶσιν αἱ γραφαὶ τῶν προφητῶν. Τότε οἱ μαθηταὶ πάντες ἀφέντες αὐτὸν ἔφυγον.",
+        "SYN": "Сие же все было, да сбудутся писания пророков. Тогда все ученики, оставив Его, бежали.",
+        "BYZ": "Τοῦτο δὲ ὅλον γέγονεν, ἵνα πληρωθῶσιν αἱ γραφαὶ τῶν προφητῶν. Τότε οἱ μαθηταὶ πάντες ἀφέντες αὐτὸν ἔφυγον."
+      }
     },
     "57": {
-      "verse_number": 57,
-      "sort_number": 57,
-      "text": "[MATHE 26:57]",
-      "word_count": 5,
-      "russian": "А взявшие Иисуса отвели Его к Каиафе первосвященнику, куда собрались книжники и старейшины.",
-      "greek": "Οἱ δὲ κρατήσαντες τὸν Ἰησοῦν ἀπήγαγον πρὸς Καϊάφαν τὸν ἀρχιερέα, ὅπου οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι συνήχθησαν.",
-      "latin": "At illi tenentes Jesum, duxerunt ad Caipham principem sacerdotum, ubi scribæ et seniores convenerant."
+      "seq": 57,
+      "v_in": {
+        "MT": 57,
+        "VUL": 57,
+        "LXX": 57
+      },
+      "text": {
+        "VUL": "At illi tenentes Jesum, duxerunt ad Caipham principem sacerdotum, ubi scribæ et seniores convenerant.",
+        "LXX": "Οἱ δὲ κρατήσαντες τὸν Ἰησοῦν ἀπήγαγον πρὸς Καϊάφαν τὸν ἀρχιερέα, ὅπου οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι συνήχθησαν.",
+        "SYN": "А взявшие Иисуса отвели Его к Каиафе первосвященнику, куда собрались книжники и старейшины.",
+        "BYZ": "Οἱ δὲ κρατήσαντες τὸν Ἰησοῦν ἀπήγαγον πρὸς Καϊάφαν τὸν ἀρχιερέα, ὅπου οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι συνήχθησαν."
+      }
     },
     "58": {
-      "verse_number": 58,
-      "sort_number": 58,
-      "text": "[MATHE 26:58]",
-      "word_count": 5,
-      "russian": "Петр же следовал за Ним издали, до двора первосвященникова; и, войдя внутрь, сел со служителями, чтобы видеть конец.",
-      "greek": "Ὁ δὲ Πέτρος ἠκολούθει αὐτῷ ἀπὸ μακρόθεν, ἕως τῆς αὐλῆς τοῦ ἀρχιερέως· καὶ εἰσελθὼν ἔσω ἐκάθητο μετὰ τῶν ὑπηρετῶν, ἰδεῖν τὸ τέλος.",
-      "latin": "Petrus autem sequebatur eum a longe, usque in atrium principis sacerdotum. Et ingressus intro, sedebat cum ministris, ut videret finem."
+      "seq": 58,
+      "v_in": {
+        "MT": 58,
+        "VUL": 58,
+        "LXX": 58
+      },
+      "text": {
+        "VUL": "Petrus autem sequebatur eum a longe, usque in atrium principis sacerdotum. Et ingressus intro, sedebat cum ministris, ut videret finem.",
+        "LXX": "Ὁ δὲ Πέτρος ἠκολούθει αὐτῷ ἀπὸ μακρόθεν, ἕως τῆς αὐλῆς τοῦ ἀρχιερέως· καὶ εἰσελθὼν ἔσω ἐκάθητο μετὰ τῶν ὑπηρετῶν, ἰδεῖν τὸ τέλος.",
+        "SYN": "Петр же следовал за Ним издали, до двора первосвященникова; и, войдя внутрь, сел со служителями, чтобы видеть конец.",
+        "BYZ": "Ὁ δὲ Πέτρος ἠκολούθει αὐτῷ ἀπὸ μακρόθεν, ἕως τῆς αὐλῆς τοῦ ἀρχιερέως· καὶ εἰσελθὼν ἔσω ἐκάθητο μετὰ τῶν ὑπηρετῶν, ἰδεῖν τὸ τέλος."
+      }
     },
     "59": {
-      "verse_number": 59,
-      "sort_number": 59,
-      "text": "[MATHE 26:59]",
-      "word_count": 5,
-      "russian": "Первосвященники и старейшины и весь синедрион искали лжесвидетельства против Иисуса, чтобы предать Его смерти,",
-      "greek": "Οἱ δὲ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι καὶ τὸ συνέδριον ὅλον ἐζήτουν ψευδομαρτυρίαν κατὰ τοῦ Ἰησοῦ, ὅπως θανατώσωσιν αὐτόν,",
-      "latin": "Principes autem sacerdotum, et omne concilium, quærebant falsum testimonium contra Jesum, ut eum morti traderent:"
+      "seq": 59,
+      "v_in": {
+        "MT": 59,
+        "VUL": 59,
+        "LXX": 59
+      },
+      "text": {
+        "VUL": "Principes autem sacerdotum, et omne concilium, quærebant falsum testimonium contra Jesum, ut eum morti traderent:",
+        "LXX": "Οἱ δὲ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι καὶ τὸ συνέδριον ὅλον ἐζήτουν ψευδομαρτυρίαν κατὰ τοῦ Ἰησοῦ, ὅπως θανατώσωσιν αὐτόν,",
+        "SYN": "Первосвященники и старейшины и весь синедрион искали лжесвидетельства против Иисуса, чтобы предать Его смерти,",
+        "BYZ": "Οἱ δὲ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι καὶ τὸ συνέδριον ὅλον ἐζήτουν ψευδομαρτυρίαν κατὰ τοῦ Ἰησοῦ, ὅπως θανατώσωσιν αὐτόν,"
+      }
     },
     "60": {
-      "verse_number": 60,
-      "sort_number": 60,
-      "text": "[MATHE 26:60]",
-      "word_count": 5,
-      "russian": "и не находили; и, хотя много лжесвидетелей приходило, не нашли. Но наконец пришли два лжесвидетеля",
-      "greek": "καὶ οὐχ εὗρον. Καὶ πολλῶν ψευδομαρτύρων προσελθόντων, οὐχ εὗρον.",
-      "latin": "et non invenerunt, cum multi falsi testes accessissent. Novissime autem venerunt duo falsi testes,"
+      "seq": 60,
+      "v_in": {
+        "MT": 60,
+        "VUL": 60,
+        "LXX": 60
+      },
+      "text": {
+        "VUL": "et non invenerunt, cum multi falsi testes accessissent. Novissime autem venerunt duo falsi testes,",
+        "LXX": "καὶ οὐχ εὗρον. Καὶ πολλῶν ψευδομαρτύρων προσελθόντων, οὐχ εὗρον.",
+        "SYN": "и не находили; и, хотя много лжесвидетелей приходило, не нашли. Но наконец пришли два лжесвидетеля",
+        "BYZ": "καὶ οὐχ εὗρον. Καὶ πολλῶν ψευδομαρτύρων προσελθόντων, οὐχ εὗρον."
+      }
     },
     "61": {
-      "verse_number": 61,
-      "sort_number": 61,
-      "text": "[MATHE 26:61]",
-      "word_count": 5,
-      "russian": "и сказали: Он говорил: могу разрушить храм Божий и в три дня создать его.",
-      "greek": "Ὕστερον δὲ προσελθόντες δύο ψευδομάρτυρες εἶπον, Οὗτος ἔφη, Δύναμαι καταλῦσαι τὸν ναὸν τοῦ θεοῦ, καὶ διὰ τριῶν ἡμερῶν οἰκοδομῆσαι αὐτόν.",
-      "latin": "et dixerunt: Hic dixit: Possum destruere templum Dei, et post triduum reædificare illud."
+      "seq": 61,
+      "v_in": {
+        "MT": 61,
+        "VUL": 61,
+        "LXX": 61
+      },
+      "text": {
+        "VUL": "et dixerunt: Hic dixit: Possum destruere templum Dei, et post triduum reædificare illud.",
+        "LXX": "Ὕστερον δὲ προσελθόντες δύο ψευδομάρτυρες εἶπον, Οὗτος ἔφη, Δύναμαι καταλῦσαι τὸν ναὸν τοῦ θεοῦ, καὶ διὰ τριῶν ἡμερῶν οἰκοδομῆσαι αὐτόν.",
+        "SYN": "и сказали: Он говорил: могу разрушить храм Божий и в три дня создать его.",
+        "BYZ": "Ὕστερον δὲ προσελθόντες δύο ψευδομάρτυρες εἶπον, Οὗτος ἔφη, Δύναμαι καταλῦσαι τὸν ναὸν τοῦ θεοῦ, καὶ διὰ τριῶν ἡμερῶν οἰκοδομῆσαι αὐτόν."
+      }
     },
     "62": {
-      "verse_number": 62,
-      "sort_number": 62,
-      "text": "[MATHE 26:62]",
-      "word_count": 5,
-      "russian": "И, встав, первосвященник сказал Ему: что же ничего не отвечаешь? что они против Тебя свидетельствуют?",
-      "greek": "Καὶ ἀναστὰς ὁ ἀρχιερεὺς εἶπεν αὐτῷ, Οὐδὲν ἀποκρίνῃ; Τί οὗτοί σου καταμαρτυροῦσιν;",
-      "latin": "Et surgens princeps sacerdotum, ait illi: Nihil respondes ad ea, quæ isti adversum te testificantur ?"
+      "seq": 62,
+      "v_in": {
+        "MT": 62,
+        "VUL": 62,
+        "LXX": 62
+      },
+      "text": {
+        "VUL": "Et surgens princeps sacerdotum, ait illi: Nihil respondes ad ea, quæ isti adversum te testificantur ?",
+        "LXX": "Καὶ ἀναστὰς ὁ ἀρχιερεὺς εἶπεν αὐτῷ, Οὐδὲν ἀποκρίνῃ; Τί οὗτοί σου καταμαρτυροῦσιν;",
+        "SYN": "И, встав, первосвященник сказал Ему: что же ничего не отвечаешь? что они против Тебя свидетельствуют?",
+        "BYZ": "Καὶ ἀναστὰς ὁ ἀρχιερεὺς εἶπεν αὐτῷ, Οὐδὲν ἀποκρίνῃ; Τί οὗτοί σου καταμαρτυροῦσιν;"
+      }
     },
     "63": {
-      "verse_number": 63,
-      "sort_number": 63,
-      "text": "[MATHE 26:63]",
-      "word_count": 5,
-      "russian": "Иисус молчал. И первосвященник сказал Ему: заклинаю Тебя Богом живым, скажи нам, Ты ли Христос, Сын Божий?",
-      "greek": "Ὁ δὲ Ἰησοῦς ἐσιώπα. Καὶ ἀποκριθεὶς ὁ ἀρχιερεὺς εἶπεν αὐτῷ, Ἐξορκίζω σε κατὰ τοῦ θεοῦ τοῦ ζῶντος, ἵνα ἡμῖν εἴπῃς εἰ σὺ εἶ ὁ χριστός, ὁ υἱὸς τοῦ θεοῦ.",
-      "latin": "Jesus autem tacebat. Et princeps sacerdotum ait illi: Adjuro te per Deum vivum, ut dicas nobis si tu es Christus Filius Dei."
+      "seq": 63,
+      "v_in": {
+        "MT": 63,
+        "VUL": 63,
+        "LXX": 63
+      },
+      "text": {
+        "VUL": "Jesus autem tacebat. Et princeps sacerdotum ait illi: Adjuro te per Deum vivum, ut dicas nobis si tu es Christus Filius Dei.",
+        "LXX": "Ὁ δὲ Ἰησοῦς ἐσιώπα. Καὶ ἀποκριθεὶς ὁ ἀρχιερεὺς εἶπεν αὐτῷ, Ἐξορκίζω σε κατὰ τοῦ θεοῦ τοῦ ζῶντος, ἵνα ἡμῖν εἴπῃς εἰ σὺ εἶ ὁ χριστός, ὁ υἱὸς τοῦ θεοῦ.",
+        "SYN": "Иисус молчал. И первосвященник сказал Ему: заклинаю Тебя Богом живым, скажи нам, Ты ли Христос, Сын Божий?",
+        "BYZ": "Ὁ δὲ Ἰησοῦς ἐσιώπα. Καὶ ἀποκριθεὶς ὁ ἀρχιερεὺς εἶπεν αὐτῷ, Ἐξορκίζω σε κατὰ τοῦ θεοῦ τοῦ ζῶντος, ἵνα ἡμῖν εἴπῃς εἰ σὺ εἶ ὁ χριστός, ὁ υἱὸς τοῦ θεοῦ."
+      }
     },
     "64": {
-      "verse_number": 64,
-      "sort_number": 64,
-      "text": "[MATHE 26:64]",
-      "word_count": 5,
-      "russian": "Иисус говорит ему: ты сказал; даже сказываю вам: отныне узрите Сына Человеческого, сидящего одесную силы и грядущего на облаках небесных.",
-      "greek": "Λέγει αὐτῷ ὁ Ἰησοῦς, Σὺ εἶπας. Πλὴν λέγω ὑμῖν, ἀπ’ ἄρτι ὄψεσθε τὸν υἱὸν τοῦ ἀνθρώπου καθήμενον ἐκ δεξιῶν τῆς δυνάμεως καὶ ἐρχόμενον ἐπὶ τῶν νεφελῶν τοῦ οὐρανοῦ.",
-      "latin": "Dicit illi Jesus: Tu dixisti. Verumtamen dico vobis, amodo videbitis Filium hominis sedentem a dextris virtutis Dei, et venientem in nubibus cæli."
+      "seq": 64,
+      "v_in": {
+        "MT": 64,
+        "VUL": 64,
+        "LXX": 64
+      },
+      "text": {
+        "VUL": "Dicit illi Jesus: Tu dixisti. Verumtamen dico vobis, amodo videbitis Filium hominis sedentem a dextris virtutis Dei, et venientem in nubibus cæli.",
+        "LXX": "Λέγει αὐτῷ ὁ Ἰησοῦς, Σὺ εἶπας. Πλὴν λέγω ὑμῖν, ἀπ’ ἄρτι ὄψεσθε τὸν υἱὸν τοῦ ἀνθρώπου καθήμενον ἐκ δεξιῶν τῆς δυνάμεως καὶ ἐρχόμενον ἐπὶ τῶν νεφελῶν τοῦ οὐρανοῦ.",
+        "SYN": "Иисус говорит ему: ты сказал; даже сказываю вам: отныне узрите Сына Человеческого, сидящего одесную силы и грядущего на облаках небесных.",
+        "BYZ": "Λέγει αὐτῷ ὁ Ἰησοῦς, Σὺ εἶπας. Πλὴν λέγω ὑμῖν, ἀπ’ ἄρτι ὄψεσθε τὸν υἱὸν τοῦ ἀνθρώπου καθήμενον ἐκ δεξιῶν τῆς δυνάμεως καὶ ἐρχόμενον ἐπὶ τῶν νεφελῶν τοῦ οὐρανοῦ."
+      }
     },
     "65": {
-      "verse_number": 65,
-      "sort_number": 65,
-      "text": "[MATHE 26:65]",
-      "word_count": 5,
-      "russian": "Тогда первосвященник разодрал одежды свои и сказал: Он богохульствует! на что еще нам свидетелей? вот, теперь вы слышали богохульство Его!",
-      "greek": "Τότε ὁ ἀρχιερεὺς διέρρηξεν τὰ ἱμάτια αὐτοῦ, λέγων ὅτι Ἐβλασφήμησεν· τί ἔτι χρείαν ἔχομεν μαρτύρων; Ἴδε, νῦν ἠκούσατε τὴν βλασφημίαν αὐτοῦ.",
-      "latin": "Tunc princeps sacerdotum scidit vestimenta sua, dicens: Blasphemavit: quid adhuc egemus testibus ? ecce nunc audistis blasphemiam:"
+      "seq": 65,
+      "v_in": {
+        "MT": 65,
+        "VUL": 65,
+        "LXX": 65
+      },
+      "text": {
+        "VUL": "Tunc princeps sacerdotum scidit vestimenta sua, dicens: Blasphemavit: quid adhuc egemus testibus ? ecce nunc audistis blasphemiam:",
+        "LXX": "Τότε ὁ ἀρχιερεὺς διέρρηξεν τὰ ἱμάτια αὐτοῦ, λέγων ὅτι Ἐβλασφήμησεν· τί ἔτι χρείαν ἔχομεν μαρτύρων; Ἴδε, νῦν ἠκούσατε τὴν βλασφημίαν αὐτοῦ.",
+        "SYN": "Тогда первосвященник разодрал одежды свои и сказал: Он богохульствует! на что еще нам свидетелей? вот, теперь вы слышали богохульство Его!",
+        "BYZ": "Τότε ὁ ἀρχιερεὺς διέρρηξεν τὰ ἱμάτια αὐτοῦ, λέγων ὅτι Ἐβλασφήμησεν· τί ἔτι χρείαν ἔχομεν μαρτύρων; Ἴδε, νῦν ἠκούσατε τὴν βλασφημίαν αὐτοῦ."
+      }
     },
     "66": {
-      "verse_number": 66,
-      "sort_number": 66,
-      "text": "[MATHE 26:66]",
-      "word_count": 5,
-      "russian": "как вам кажется? Они же сказали в ответ: повинен смерти.",
-      "greek": "Τί ὑμῖν δοκεῖ; Οἱ δὲ ἀποκριθέντες εἶπον, Ἔνοχος θανάτου ἐστίν.",
-      "latin": "quid vobis videtur ? At illi respondentes dixerunt: Reus est mortis."
+      "seq": 66,
+      "v_in": {
+        "MT": 66,
+        "VUL": 66,
+        "LXX": 66
+      },
+      "text": {
+        "VUL": "quid vobis videtur ? At illi respondentes dixerunt: Reus est mortis.",
+        "LXX": "Τί ὑμῖν δοκεῖ; Οἱ δὲ ἀποκριθέντες εἶπον, Ἔνοχος θανάτου ἐστίν.",
+        "SYN": "как вам кажется? Они же сказали в ответ: повинен смерти.",
+        "BYZ": "Τί ὑμῖν δοκεῖ; Οἱ δὲ ἀποκριθέντες εἶπον, Ἔνοχος θανάτου ἐστίν."
+      }
     },
     "67": {
-      "verse_number": 67,
-      "sort_number": 67,
-      "text": "[MATHE 26:67]",
-      "word_count": 5,
-      "russian": "Тогда плевали Ему в лице и заушали Его; другие же ударяли Его по ланитам",
-      "greek": "Τότε ἐνέπτυσαν εἰς τὸ πρόσωπον αὐτοῦ καὶ ἐκολάφισαν αὐτόν· οἱ δὲ ἐρράπισαν,",
-      "latin": "Tunc exspuerunt in faciem ejus, et colaphis eum ceciderunt, alii autem palmas in faciem ejus dederunt,"
+      "seq": 67,
+      "v_in": {
+        "MT": 67,
+        "VUL": 67,
+        "LXX": 67
+      },
+      "text": {
+        "VUL": "Tunc exspuerunt in faciem ejus, et colaphis eum ceciderunt, alii autem palmas in faciem ejus dederunt,",
+        "LXX": "Τότε ἐνέπτυσαν εἰς τὸ πρόσωπον αὐτοῦ καὶ ἐκολάφισαν αὐτόν· οἱ δὲ ἐρράπισαν,",
+        "SYN": "Тогда плевали Ему в лице и заушали Его; другие же ударяли Его по ланитам",
+        "BYZ": "Τότε ἐνέπτυσαν εἰς τὸ πρόσωπον αὐτοῦ καὶ ἐκολάφισαν αὐτόν· οἱ δὲ ἐρράπισαν,"
+      }
     },
     "68": {
-      "verse_number": 68,
-      "sort_number": 68,
-      "text": "[MATHE 26:68]",
-      "word_count": 5,
-      "russian": "и говорили: прореки нам, Христос, кто ударил Тебя?",
-      "greek": "λέγοντες, Προφήτευσον ἡμῖν, χριστέ. Τίς ἐστιν ὁ παίσας σε;",
-      "latin": "dicentes: Prophetiza nobis Christe, quis est qui te percussit ?"
+      "seq": 68,
+      "v_in": {
+        "MT": 68,
+        "VUL": 68,
+        "LXX": 68
+      },
+      "text": {
+        "VUL": "dicentes: Prophetiza nobis Christe, quis est qui te percussit ?",
+        "LXX": "λέγοντες, Προφήτευσον ἡμῖν, χριστέ. Τίς ἐστιν ὁ παίσας σε;",
+        "SYN": "и говорили: прореки нам, Христос, кто ударил Тебя?",
+        "BYZ": "λέγοντες, Προφήτευσον ἡμῖν, χριστέ. Τίς ἐστιν ὁ παίσας σε;"
+      }
     },
     "69": {
-      "verse_number": 69,
-      "sort_number": 69,
-      "text": "[MATHE 26:69]",
-      "word_count": 5,
-      "russian": "Петр же сидел вне на дворе. И подошла к нему одна служанка и сказала: и ты был с Иисусом Галилеянином.",
-      "greek": "Ὁ δὲ Πέτρος ἔξω ἐκάθητο ἐν τῇ αὐλῇ· καὶ προσῆλθεν αὐτῷ μία παιδίσκη, λέγουσα, Καὶ σὺ ἦσθα μετὰ Ἰησοῦ τοῦ Γαλιλαίου.",
-      "latin": "Petrus vero sedebat foris in atrio: et accessit ad eum una ancilla, dicens: Et tu cum Jesu Galilæo eras."
+      "seq": 69,
+      "v_in": {
+        "MT": 69,
+        "VUL": 69,
+        "LXX": 69
+      },
+      "text": {
+        "VUL": "Petrus vero sedebat foris in atrio: et accessit ad eum una ancilla, dicens: Et tu cum Jesu Galilæo eras.",
+        "LXX": "Ὁ δὲ Πέτρος ἔξω ἐκάθητο ἐν τῇ αὐλῇ· καὶ προσῆλθεν αὐτῷ μία παιδίσκη, λέγουσα, Καὶ σὺ ἦσθα μετὰ Ἰησοῦ τοῦ Γαλιλαίου.",
+        "SYN": "Петр же сидел вне на дворе. И подошла к нему одна служанка и сказала: и ты был с Иисусом Галилеянином.",
+        "BYZ": "Ὁ δὲ Πέτρος ἔξω ἐκάθητο ἐν τῇ αὐλῇ· καὶ προσῆλθεν αὐτῷ μία παιδίσκη, λέγουσα, Καὶ σὺ ἦσθα μετὰ Ἰησοῦ τοῦ Γαλιλαίου."
+      }
     },
     "70": {
-      "verse_number": 70,
-      "sort_number": 70,
-      "text": "[MATHE 26:70]",
-      "word_count": 5,
-      "russian": "Но он отрекся перед всеми, сказав: не знаю, что ты говоришь.",
-      "greek": "Ὁ δὲ ἠρνήσατο ἔμπροσθεν αὐτῶν πάντων, λέγων, Οὐκ οἶδα τί λέγεις.",
-      "latin": "At ille negavit coram omnibus, dicens: Nescio quid dicis."
+      "seq": 70,
+      "v_in": {
+        "MT": 70,
+        "VUL": 70,
+        "LXX": 70
+      },
+      "text": {
+        "VUL": "At ille negavit coram omnibus, dicens: Nescio quid dicis.",
+        "LXX": "Ὁ δὲ ἠρνήσατο ἔμπροσθεν αὐτῶν πάντων, λέγων, Οὐκ οἶδα τί λέγεις.",
+        "SYN": "Но он отрекся перед всеми, сказав: не знаю, что ты говоришь.",
+        "BYZ": "Ὁ δὲ ἠρνήσατο ἔμπροσθεν αὐτῶν πάντων, λέγων, Οὐκ οἶδα τί λέγεις."
+      }
     },
     "71": {
-      "verse_number": 71,
-      "sort_number": 71,
-      "text": "[MATHE 26:71]",
-      "word_count": 5,
-      "russian": "Когда же он выходил за ворота, увидела его другая, и говорит бывшим там: и этот был с Иисусом Назореем.",
-      "greek": "Ἐξελθόντα δὲ αὐτὸν εἰς τὸν πυλῶνα, εἶδεν αὐτὸν ἄλλη, καὶ λέγει αὐτοῖς ἐκεῖ, Καὶ οὗτος ἦν μετὰ Ἰησοῦ τοῦ Ναζωραίου.",
-      "latin": "Exeunte autem illo januam, vidit eum alia ancilla, et ait his qui erant ibi: Et hic erat cum Jesu Nazareno."
+      "seq": 71,
+      "v_in": {
+        "MT": 71,
+        "VUL": 71,
+        "LXX": 71
+      },
+      "text": {
+        "VUL": "Exeunte autem illo januam, vidit eum alia ancilla, et ait his qui erant ibi: Et hic erat cum Jesu Nazareno.",
+        "LXX": "Ἐξελθόντα δὲ αὐτὸν εἰς τὸν πυλῶνα, εἶδεν αὐτὸν ἄλλη, καὶ λέγει αὐτοῖς ἐκεῖ, Καὶ οὗτος ἦν μετὰ Ἰησοῦ τοῦ Ναζωραίου.",
+        "SYN": "Когда же он выходил за ворота, увидела его другая, и говорит бывшим там: и этот был с Иисусом Назореем.",
+        "BYZ": "Ἐξελθόντα δὲ αὐτὸν εἰς τὸν πυλῶνα, εἶδεν αὐτὸν ἄλλη, καὶ λέγει αὐτοῖς ἐκεῖ, Καὶ οὗτος ἦν μετὰ Ἰησοῦ τοῦ Ναζωραίου."
+      }
     },
     "72": {
-      "verse_number": 72,
-      "sort_number": 72,
-      "text": "[MATHE 26:72]",
-      "word_count": 5,
-      "russian": "И он опять отрекся с клятвою, что не знает Сего Человека.",
-      "greek": "Καὶ πάλιν ἠρνήσατο μεθ’ ὅρκου ὅτι Οὐκ οἶδα τὸν ἄνθρωπον.",
-      "latin": "Et iterum negavit cum juramento: Quia non novi hominem."
+      "seq": 72,
+      "v_in": {
+        "MT": 72,
+        "VUL": 72,
+        "LXX": 72
+      },
+      "text": {
+        "VUL": "Et iterum negavit cum juramento: Quia non novi hominem.",
+        "LXX": "Καὶ πάλιν ἠρνήσατο μεθ’ ὅρκου ὅτι Οὐκ οἶδα τὸν ἄνθρωπον.",
+        "SYN": "И он опять отрекся с клятвою, что не знает Сего Человека.",
+        "BYZ": "Καὶ πάλιν ἠρνήσατο μεθ’ ὅρκου ὅτι Οὐκ οἶδα τὸν ἄνθρωπον."
+      }
     },
     "73": {
-      "verse_number": 73,
-      "sort_number": 73,
-      "text": "[MATHE 26:73]",
-      "word_count": 5,
-      "russian": "Немного спустя подошли стоявшие там и сказали Петру: точно и ты из них, ибо и речь твоя обличает тебя.",
-      "greek": "Μετὰ μικρὸν δὲ προσελθόντες οἱ ἑστῶτες εἶπον τῷ Πέτρῳ, Ἀληθῶς καὶ σὺ ἐξ αὐτῶν εἶ· καὶ γὰρ ἡ λαλιά σου δῆλόν σε ποιεῖ.",
-      "latin": "Et post pusillum accesserunt qui stabant, et dixerunt Petro: Vere et tu ex illis es: nam et loquela tua manifestum te facit."
+      "seq": 73,
+      "v_in": {
+        "MT": 73,
+        "VUL": 73,
+        "LXX": 73
+      },
+      "text": {
+        "VUL": "Et post pusillum accesserunt qui stabant, et dixerunt Petro: Vere et tu ex illis es: nam et loquela tua manifestum te facit.",
+        "LXX": "Μετὰ μικρὸν δὲ προσελθόντες οἱ ἑστῶτες εἶπον τῷ Πέτρῳ, Ἀληθῶς καὶ σὺ ἐξ αὐτῶν εἶ· καὶ γὰρ ἡ λαλιά σου δῆλόν σε ποιεῖ.",
+        "SYN": "Немного спустя подошли стоявшие там и сказали Петру: точно и ты из них, ибо и речь твоя обличает тебя.",
+        "BYZ": "Μετὰ μικρὸν δὲ προσελθόντες οἱ ἑστῶτες εἶπον τῷ Πέτρῳ, Ἀληθῶς καὶ σὺ ἐξ αὐτῶν εἶ· καὶ γὰρ ἡ λαλιά σου δῆλόν σε ποιεῖ."
+      }
     },
     "74": {
-      "verse_number": 74,
-      "sort_number": 74,
-      "text": "[MATHE 26:74]",
-      "word_count": 5,
-      "russian": "Тогда он начал клясться и божиться, что не знает Сего Человека. И вдруг запел петух.",
-      "greek": "Τότε ἤρξατο καταθεματίζειν καὶ ὀμνύειν ὅτι Οὐκ οἶδα τὸν ἄνθρωπον. Καὶ εὐθέως ἀλέκτωρ ἐφώνησεν.",
-      "latin": "Tunc cpit detestari et jurare quia non novisset hominem. Et continuo gallus cantavit."
+      "seq": 74,
+      "v_in": {
+        "MT": 74,
+        "VUL": 74,
+        "LXX": 74
+      },
+      "text": {
+        "VUL": "Tunc cpit detestari et jurare quia non novisset hominem. Et continuo gallus cantavit.",
+        "LXX": "Τότε ἤρξατο καταθεματίζειν καὶ ὀμνύειν ὅτι Οὐκ οἶδα τὸν ἄνθρωπον. Καὶ εὐθέως ἀλέκτωρ ἐφώνησεν.",
+        "SYN": "Тогда он начал клясться и божиться, что не знает Сего Человека. И вдруг запел петух.",
+        "BYZ": "Τότε ἤρξατο καταθεματίζειν καὶ ὀμνύειν ὅτι Οὐκ οἶδα τὸν ἄνθρωπον. Καὶ εὐθέως ἀλέκτωρ ἐφώνησεν."
+      }
     },
     "75": {
-      "verse_number": 75,
-      "sort_number": 75,
-      "text": "[MATHE 26:75]",
-      "word_count": 5,
-      "russian": "И вспомнил Петр слово, сказанное ему Иисусом: прежде нежели пропоет петух, трижды отречешься от Меня. И выйдя вон, плакал горько.",
-      "greek": "Καὶ ἐμνήσθη ὁ Πέτρος τοῦ ῥήματος τοῦ Ἰησοῦ εἰρηκότος αὐτῷ ὅτι Πρὶν ἀλέκτορα φωνῆσαι, τρὶς ἀπαρνήσῃ με. Καὶ ἐξελθὼν ἔξω ἔκλαυσεν πικρῶς.",
-      "latin": "Et recordatus est Petrus verbi Jesu, quod dixerat: Priusquam gallus cantet, ter me negabis. Et egressus foras, flevit amare."
+      "seq": 75,
+      "v_in": {
+        "MT": 75,
+        "VUL": 75,
+        "LXX": 75
+      },
+      "text": {
+        "VUL": "Et recordatus est Petrus verbi Jesu, quod dixerat: Priusquam gallus cantet, ter me negabis. Et egressus foras, flevit amare.",
+        "LXX": "Καὶ ἐμνήσθη ὁ Πέτρος τοῦ ῥήματος τοῦ Ἰησοῦ εἰρηκότος αὐτῷ ὅτι Πρὶν ἀλέκτορα φωνῆσαι, τρὶς ἀπαρνήσῃ με. Καὶ ἐξελθὼν ἔξω ἔκλαυσεν πικρῶς.",
+        "SYN": "И вспомнил Петр слово, сказанное ему Иисусом: прежде нежели пропоет петух, трижды отречешься от Меня. И выйдя вон, плакал горько.",
+        "BYZ": "Καὶ ἐμνήσθη ὁ Πέτρος τοῦ ῥήματος τοῦ Ἰησοῦ εἰρηκότος αὐτῷ ὅτι Πρὶν ἀλέκτορα φωνῆσαι, τρὶς ἀπαρνήσῃ με. Καὶ ἐξελθὼν ἔξω ἔκλαυσεν πικρῶς."
+      }
     }
   }
 }

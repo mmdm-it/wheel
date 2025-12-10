@@ -1,535 +1,827 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "MATHE_013",
-  "chapter_key": "13",
-  "chapter_number": 13,
-  "sort_number": 13,
-  "name": "13",
   "book_key": "MATHE",
+  "sequence": 13,
+  "chapter_in": {
+    "MT": 13,
+    "VUL": 13,
+    "LXX": 13
+  },
   "testament": "Novum_Testamentum",
   "section": "Evangelia",
-  "verse_count": 58,
   "verses": {
     "1": {
-      "verse_number": 1,
-      "sort_number": 1,
-      "text": "[MATHE 13:1]",
-      "word_count": 5,
-      "russian": "Выйдя же в день тот из дома, Иисус сел у моря.",
-      "greek": "Ἐν δὲ τῇ ἡμέρᾳ ἐκείνῃ ἐξελθὼν ὁ Ἰησοῦς ἀπὸ τῆς οἰκίας ἐκάθητο παρὰ τὴν θάλασσαν.",
-      "latin": "In illo die exiens Jesus de domo, sedebat secus mare."
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "In illo die exiens Jesus de domo, sedebat secus mare.",
+        "LXX": "Ἐν δὲ τῇ ἡμέρᾳ ἐκείνῃ ἐξελθὼν ὁ Ἰησοῦς ἀπὸ τῆς οἰκίας ἐκάθητο παρὰ τὴν θάλασσαν.",
+        "SYN": "Выйдя же в день тот из дома, Иисус сел у моря.",
+        "BYZ": "Ἐν δὲ τῇ ἡμέρᾳ ἐκείνῃ ἐξελθὼν ὁ Ἰησοῦς ἀπὸ τῆς οἰκίας ἐκάθητο παρὰ τὴν θάλασσαν."
+      }
     },
     "2": {
-      "verse_number": 2,
-      "sort_number": 2,
-      "text": "[MATHE 13:2]",
-      "word_count": 5,
-      "russian": "И собралось к Нему множество народа, так что Он вошел в лодку и сел; а весь народ стоял на берегу.",
-      "greek": "Καὶ συνήχθησαν πρὸς αὐτὸν ὄχλοι πολλοί, ὥστε αὐτὸν εἰς τὸ πλοῖον ἐμβάντα καθῆσθαι· καὶ πᾶς ὁ ὄχλος ἐπὶ τὸν αἰγιαλὸν εἱστήκει.",
-      "latin": "Et congregatæ sunt ad eum turbæ multæ, ita ut naviculam ascendens sederet: et omnis turba stabat in littore,"
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "Et congregatæ sunt ad eum turbæ multæ, ita ut naviculam ascendens sederet: et omnis turba stabat in littore,",
+        "LXX": "Καὶ συνήχθησαν πρὸς αὐτὸν ὄχλοι πολλοί, ὥστε αὐτὸν εἰς τὸ πλοῖον ἐμβάντα καθῆσθαι· καὶ πᾶς ὁ ὄχλος ἐπὶ τὸν αἰγιαλὸν εἱστήκει.",
+        "SYN": "И собралось к Нему множество народа, так что Он вошел в лодку и сел; а весь народ стоял на берегу.",
+        "BYZ": "Καὶ συνήχθησαν πρὸς αὐτὸν ὄχλοι πολλοί, ὥστε αὐτὸν εἰς τὸ πλοῖον ἐμβάντα καθῆσθαι· καὶ πᾶς ὁ ὄχλος ἐπὶ τὸν αἰγιαλὸν εἱστήκει."
+      }
     },
     "3": {
-      "verse_number": 3,
-      "sort_number": 3,
-      "text": "[MATHE 13:3]",
-      "word_count": 5,
-      "russian": "И поучал их много притчами, говоря: вот, вышел сеятель сеять;",
-      "greek": "Καὶ ἐλάλησεν αὐτοῖς πολλὰ ἐν παραβολαῖς, λέγων, Ἰδού, ἐξῆλθεν ὁ σπείρων τοῦ σπείρειν.",
-      "latin": "et locutus est eis multa in parabolis, dicens: Ecce exiit qui seminat, seminare."
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "et locutus est eis multa in parabolis, dicens: Ecce exiit qui seminat, seminare.",
+        "LXX": "Καὶ ἐλάλησεν αὐτοῖς πολλὰ ἐν παραβολαῖς, λέγων, Ἰδού, ἐξῆλθεν ὁ σπείρων τοῦ σπείρειν.",
+        "SYN": "И поучал их много притчами, говоря: вот, вышел сеятель сеять;",
+        "BYZ": "Καὶ ἐλάλησεν αὐτοῖς πολλὰ ἐν παραβολαῖς, λέγων, Ἰδού, ἐξῆλθεν ὁ σπείρων τοῦ σπείρειν."
+      }
     },
     "4": {
-      "verse_number": 4,
-      "sort_number": 4,
-      "text": "[MATHE 13:4]",
-      "word_count": 5,
-      "russian": "и когда он сеял, иное упало при дороге, и налетели птицы и поклевали то;",
-      "greek": "Καὶ ἐν τῷ σπείρειν αὐτόν, ἃ μὲν ἔπεσεν παρὰ τὴν ὁδόν, καὶ ἦλθεν τὰ πετεινὰ καὶ κατέφαγεν αὐτά.",
-      "latin": "Et dum seminat, quædam ceciderunt secus viam, et venerunt volucres cæli, et comederunt ea."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "Et dum seminat, quædam ceciderunt secus viam, et venerunt volucres cæli, et comederunt ea.",
+        "LXX": "Καὶ ἐν τῷ σπείρειν αὐτόν, ἃ μὲν ἔπεσεν παρὰ τὴν ὁδόν, καὶ ἦλθεν τὰ πετεινὰ καὶ κατέφαγεν αὐτά.",
+        "SYN": "и когда он сеял, иное упало при дороге, и налетели птицы и поклевали то;",
+        "BYZ": "Καὶ ἐν τῷ σπείρειν αὐτόν, ἃ μὲν ἔπεσεν παρὰ τὴν ὁδόν, καὶ ἦλθεν τὰ πετεινὰ καὶ κατέφαγεν αὐτά."
+      }
     },
     "5": {
-      "verse_number": 5,
-      "sort_number": 5,
-      "text": "[MATHE 13:5]",
-      "word_count": 5,
-      "russian": "иное упало на места каменистые, где немного было земли, и скоро взошло, потому что земля была неглубока.",
-      "greek": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὰ πετρώδη, ὅπου οὐκ εἶχεν γῆν πολλήν· καὶ εὐθέως ἐξανέτειλεν, διὰ τὸ μὴ ἔχειν βάθος γῆς·",
-      "latin": "Alia autem ceciderunt in petrosa, ubi non habebant terram multam: et continuo exorta sunt, quia non habebant altitudinem terræ:"
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Alia autem ceciderunt in petrosa, ubi non habebant terram multam: et continuo exorta sunt, quia non habebant altitudinem terræ:",
+        "LXX": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὰ πετρώδη, ὅπου οὐκ εἶχεν γῆν πολλήν· καὶ εὐθέως ἐξανέτειλεν, διὰ τὸ μὴ ἔχειν βάθος γῆς·",
+        "SYN": "иное упало на места каменистые, где немного было земли, и скоро взошло, потому что земля была неглубока.",
+        "BYZ": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὰ πετρώδη, ὅπου οὐκ εἶχεν γῆν πολλήν· καὶ εὐθέως ἐξανέτειλεν, διὰ τὸ μὴ ἔχειν βάθος γῆς·"
+      }
     },
     "6": {
-      "verse_number": 6,
-      "sort_number": 6,
-      "text": "[MATHE 13:6]",
-      "word_count": 5,
-      "russian": "Когда же взошло солнце, увяло, и, как не имело корня, засохло;",
-      "greek": "ἡλίου δὲ ἀνατείλαντος ἐκαυματίσθη, καὶ διὰ τὸ μὴ ἔχειν ῥίζαν ἐξηράνθη.",
-      "latin": "sole autem orto æstuaverunt ; et quia non habebant radicem, aruerunt."
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "sole autem orto æstuaverunt ; et quia non habebant radicem, aruerunt.",
+        "LXX": "ἡλίου δὲ ἀνατείλαντος ἐκαυματίσθη, καὶ διὰ τὸ μὴ ἔχειν ῥίζαν ἐξηράνθη.",
+        "SYN": "Когда же взошло солнце, увяло, и, как не имело корня, засохло;",
+        "BYZ": "ἡλίου δὲ ἀνατείλαντος ἐκαυματίσθη, καὶ διὰ τὸ μὴ ἔχειν ῥίζαν ἐξηράνθη."
+      }
     },
     "7": {
-      "verse_number": 7,
-      "sort_number": 7,
-      "text": "[MATHE 13:7]",
-      "word_count": 5,
-      "russian": "иное упало в терние, и выросло терние и заглушило его;",
-      "greek": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὰς ἀκάνθας, καὶ ἀνέβησαν αἱ ἄκανθαι καὶ ἀπέπνιξαν αὐτά.",
-      "latin": "Alia autem ceciderunt in spinas: et creverunt spinæ, et suffocaverunt ea."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Alia autem ceciderunt in spinas: et creverunt spinæ, et suffocaverunt ea.",
+        "LXX": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὰς ἀκάνθας, καὶ ἀνέβησαν αἱ ἄκανθαι καὶ ἀπέπνιξαν αὐτά.",
+        "SYN": "иное упало в терние, и выросло терние и заглушило его;",
+        "BYZ": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὰς ἀκάνθας, καὶ ἀνέβησαν αἱ ἄκανθαι καὶ ἀπέπνιξαν αὐτά."
+      }
     },
     "8": {
-      "verse_number": 8,
-      "sort_number": 8,
-      "text": "[MATHE 13:8]",
-      "word_count": 5,
-      "russian": "иное упало на добрую землю и принесло плод: одно во сто крат, а другое в шестьдесят, иное же в тридцать.",
-      "greek": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὴν γῆν τὴν καλήν· καὶ ἐδίδου καρπόν, ὃ μὲν ἑκατόν, ὃ δὲ ἑξήκοντα, ὃ δὲ τριάκοντα.",
-      "latin": "Alia autem ceciderunt in terram bonam: et dabant fructum, aliud centesimum, aliud sexagesimum, aliud trigesimum."
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Alia autem ceciderunt in terram bonam: et dabant fructum, aliud centesimum, aliud sexagesimum, aliud trigesimum.",
+        "LXX": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὴν γῆν τὴν καλήν· καὶ ἐδίδου καρπόν, ὃ μὲν ἑκατόν, ὃ δὲ ἑξήκοντα, ὃ δὲ τριάκοντα.",
+        "SYN": "иное упало на добрую землю и принесло плод: одно во сто крат, а другое в шестьдесят, иное же в тридцать.",
+        "BYZ": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὴν γῆν τὴν καλήν· καὶ ἐδίδου καρπόν, ὃ μὲν ἑκατόν, ὃ δὲ ἑξήκοντα, ὃ δὲ τριάκοντα."
+      }
     },
     "9": {
-      "verse_number": 9,
-      "sort_number": 9,
-      "text": "[MATHE 13:9]",
-      "word_count": 5,
-      "russian": "Кто имеет уши слышать, да слышит!",
-      "greek": "Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω.",
-      "latin": "Qui habet aures audiendi, audiat."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "Qui habet aures audiendi, audiat.",
+        "LXX": "Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω.",
+        "SYN": "Кто имеет уши слышать, да слышит!",
+        "BYZ": "Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω."
+      }
     },
     "10": {
-      "verse_number": 10,
-      "sort_number": 10,
-      "text": "[MATHE 13:10]",
-      "word_count": 5,
-      "russian": "И, приступив, ученики сказали Ему: для чего притчами говоришь им?",
-      "greek": "Καὶ προσελθόντες οἱ μαθηταὶ εἶπον αὐτῷ, Διὰ τί ἐν παραβολαῖς λαλεῖς αὐτοῖς;",
-      "latin": "Et accedentes discipuli dixerunt ei: Quare in parabolis loqueris eis ?"
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Et accedentes discipuli dixerunt ei: Quare in parabolis loqueris eis ?",
+        "LXX": "Καὶ προσελθόντες οἱ μαθηταὶ εἶπον αὐτῷ, Διὰ τί ἐν παραβολαῖς λαλεῖς αὐτοῖς;",
+        "SYN": "И, приступив, ученики сказали Ему: для чего притчами говоришь им?",
+        "BYZ": "Καὶ προσελθόντες οἱ μαθηταὶ εἶπον αὐτῷ, Διὰ τί ἐν παραβολαῖς λαλεῖς αὐτοῖς;"
+      }
     },
     "11": {
-      "verse_number": 11,
-      "sort_number": 11,
-      "text": "[MATHE 13:11]",
-      "word_count": 5,
-      "russian": "Он сказал им в ответ: для того, что вам дано знать тайны Царствия Небесного, а им не дано,",
-      "greek": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς ὅτι Ὑμῖν δέδοται γνῶναι τὰ μυστήρια τῆς βασιλείας τῶν οὐρανῶν, ἐκείνοις δὲ οὐ δέδοται.",
-      "latin": "Qui respondens, ait illis: Quia vobis datum est nosse mysteria regni cælorum: illis autem non est datum."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Qui respondens, ait illis: Quia vobis datum est nosse mysteria regni cælorum: illis autem non est datum.",
+        "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς ὅτι Ὑμῖν δέδοται γνῶναι τὰ μυστήρια τῆς βασιλείας τῶν οὐρανῶν, ἐκείνοις δὲ οὐ δέδοται.",
+        "SYN": "Он сказал им в ответ: для того, что вам дано знать тайны Царствия Небесного, а им не дано,",
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς ὅτι Ὑμῖν δέδοται γνῶναι τὰ μυστήρια τῆς βασιλείας τῶν οὐρανῶν, ἐκείνοις δὲ οὐ δέδοται."
+      }
     },
     "12": {
-      "verse_number": 12,
-      "sort_number": 12,
-      "text": "[MATHE 13:12]",
-      "word_count": 5,
-      "russian": "ибо кто имеет, тому дано будет и приумножится, а кто не имеет, у того отнимется и то, что имеет;",
-      "greek": "Ὅστις γὰρ ἔχει, δοθήσεται αὐτῷ καὶ περισσευθήσεται· ὅστις δὲ οὐκ ἔχει, καὶ ὃ ἔχει ἀρθήσεται ἀπ’ αὐτοῦ.",
-      "latin": "Qui enim habet, dabitur ei, et abundabit: qui autem non habet, et quod habet auferetur ab eo."
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "Qui enim habet, dabitur ei, et abundabit: qui autem non habet, et quod habet auferetur ab eo.",
+        "LXX": "Ὅστις γὰρ ἔχει, δοθήσεται αὐτῷ καὶ περισσευθήσεται· ὅστις δὲ οὐκ ἔχει, καὶ ὃ ἔχει ἀρθήσεται ἀπ’ αὐτοῦ.",
+        "SYN": "ибо кто имеет, тому дано будет и приумножится, а кто не имеет, у того отнимется и то, что имеет;",
+        "BYZ": "Ὅστις γὰρ ἔχει, δοθήσεται αὐτῷ καὶ περισσευθήσεται· ὅστις δὲ οὐκ ἔχει, καὶ ὃ ἔχει ἀρθήσεται ἀπ’ αὐτοῦ."
+      }
     },
     "13": {
-      "verse_number": 13,
-      "sort_number": 13,
-      "text": "[MATHE 13:13]",
-      "word_count": 5,
-      "russian": "потому говорю им притчами, что они видя не видят, и слыша не слышат, и не разумеют;",
-      "greek": "Διὰ τοῦτο ἐν παραβολαῖς αὐτοῖς λαλῶ, ὅτι βλέποντες οὐ βλέπουσιν, καὶ ἀκούοντες οὐκ ἀκούουσιν, οὐδὲ συνιοῦσιν.",
-      "latin": "Ideo in parabolis loquor eis: quia videntes non vident, et audientes non audiunt, neque intelligunt."
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "Ideo in parabolis loquor eis: quia videntes non vident, et audientes non audiunt, neque intelligunt.",
+        "LXX": "Διὰ τοῦτο ἐν παραβολαῖς αὐτοῖς λαλῶ, ὅτι βλέποντες οὐ βλέπουσιν, καὶ ἀκούοντες οὐκ ἀκούουσιν, οὐδὲ συνιοῦσιν.",
+        "SYN": "потому говорю им притчами, что они видя не видят, и слыша не слышат, и не разумеют;",
+        "BYZ": "Διὰ τοῦτο ἐν παραβολαῖς αὐτοῖς λαλῶ, ὅτι βλέποντες οὐ βλέπουσιν, καὶ ἀκούοντες οὐκ ἀκούουσιν, οὐδὲ συνιοῦσιν."
+      }
     },
     "14": {
-      "verse_number": 14,
-      "sort_number": 14,
-      "text": "[MATHE 13:14]",
-      "word_count": 5,
-      "russian": "и сбывается над ними пророчество Исаии, которое говорит: слухом услышите -- и не уразумеете, и глазами смотреть будете -- и не увидите,",
-      "greek": "Καὶ ἀναπληροῦται αὐτοῖς ἡ προφητεία Ἠσαΐου, ἡ λέγουσα, Ἀκοῇ ἀκούσετε, καὶ οὐ μὴ συνῆτε· καὶ βλέποντες βλέψετε, καὶ οὐ μὴ ἴδητε.",
-      "latin": "Et adimpletur in eis prophetia Isaiæ, dicentis: [Auditu audietis, et non intelligetis:/ et videntes videbitis, et non videbitis./"
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Et adimpletur in eis prophetia Isaiæ, dicentis: [Auditu audietis, et non intelligetis:/ et videntes videbitis, et non videbitis./",
+        "LXX": "Καὶ ἀναπληροῦται αὐτοῖς ἡ προφητεία Ἠσαΐου, ἡ λέγουσα, Ἀκοῇ ἀκούσετε, καὶ οὐ μὴ συνῆτε· καὶ βλέποντες βλέψετε, καὶ οὐ μὴ ἴδητε.",
+        "SYN": "и сбывается над ними пророчество Исаии, которое говорит: слухом услышите -- и не уразумеете, и глазами смотреть будете -- и не увидите,",
+        "BYZ": "Καὶ ἀναπληροῦται αὐτοῖς ἡ προφητεία Ἠσαΐου, ἡ λέγουσα, Ἀκοῇ ἀκούσετε, καὶ οὐ μὴ συνῆτε· καὶ βλέποντες βλέψετε, καὶ οὐ μὴ ἴδητε."
+      }
     },
     "15": {
-      "verse_number": 15,
-      "sort_number": 15,
-      "text": "[MATHE 13:15]",
-      "word_count": 5,
-      "russian": "ибо огрубело сердце людей сих и ушами с трудом слышат, и глаза свои сомкнули, да не увидят глазами и не услышат ушами, и не уразумеют сердцем, и да не обратятся, чтобы Я исцелил их.",
-      "greek": "Ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου, καὶ τοῖς ὠσὶν βαρέως ἤκουσαν, καὶ τοὺς ὀφθαλμοὺς αὐτῶν ἐκάμμυσαν· μήποτε ἴδωσιν τοῖς ὀφθαλμοῖς, καὶ τοῖς ὠσὶν ἀκούσωσιν, καὶ τῇ καρδίᾳ συνῶσιν, καὶ ἐπιστρέψωσιν, καὶ ἰάσομαι αὐτούς.",
-      "latin": "Incrassatum est enim cor populi hujus,/ et auribus graviter audierunt,/ et oculos suos clauserunt:/ nequando videant oculis, et auribus audiant,/ et corde intelligant, et convertantur,/ et sanem eos.]"
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Incrassatum est enim cor populi hujus,/ et auribus graviter audierunt,/ et oculos suos clauserunt:/ nequando videant oculis, et auribus audiant,/ et corde intelligant, et convertantur,/ et sanem eos.]",
+        "LXX": "Ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου, καὶ τοῖς ὠσὶν βαρέως ἤκουσαν, καὶ τοὺς ὀφθαλμοὺς αὐτῶν ἐκάμμυσαν· μήποτε ἴδωσιν τοῖς ὀφθαλμοῖς, καὶ τοῖς ὠσὶν ἀκούσωσιν, καὶ τῇ καρδίᾳ συνῶσιν, καὶ ἐπιστρέψωσιν, καὶ ἰάσομαι αὐτούς.",
+        "SYN": "ибо огрубело сердце людей сих и ушами с трудом слышат, и глаза свои сомкнули, да не увидят глазами и не услышат ушами, и не уразумеют сердцем, и да не обратятся, чтобы Я исцелил их.",
+        "BYZ": "Ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου, καὶ τοῖς ὠσὶν βαρέως ἤκουσαν, καὶ τοὺς ὀφθαλμοὺς αὐτῶν ἐκάμμυσαν· μήποτε ἴδωσιν τοῖς ὀφθαλμοῖς, καὶ τοῖς ὠσὶν ἀκούσωσιν, καὶ τῇ καρδίᾳ συνῶσιν, καὶ ἐπιστρέψωσιν, καὶ ἰάσομαι αὐτούς."
+      }
     },
     "16": {
-      "verse_number": 16,
-      "sort_number": 16,
-      "text": "[MATHE 13:16]",
-      "word_count": 5,
-      "russian": "Ваши же блаженны очи, что видят, и уши ваши, что слышат,",
-      "greek": "Ὑμῶν δὲ μακάριοι οἱ ὀφθαλμοί, ὅτι βλέπουσιν· καὶ τὰ ὦτα ὑμῶν, ὅτι ἀκούει.",
-      "latin": "Vestri autem beati oculi quia vident, et aures vestræ quia audiunt."
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "Vestri autem beati oculi quia vident, et aures vestræ quia audiunt.",
+        "LXX": "Ὑμῶν δὲ μακάριοι οἱ ὀφθαλμοί, ὅτι βλέπουσιν· καὶ τὰ ὦτα ὑμῶν, ὅτι ἀκούει.",
+        "SYN": "Ваши же блаженны очи, что видят, и уши ваши, что слышат,",
+        "BYZ": "Ὑμῶν δὲ μακάριοι οἱ ὀφθαλμοί, ὅτι βλέπουσιν· καὶ τὰ ὦτα ὑμῶν, ὅτι ἀκούει."
+      }
     },
     "17": {
-      "verse_number": 17,
-      "sort_number": 17,
-      "text": "[MATHE 13:17]",
-      "word_count": 5,
-      "russian": "ибо истинно говорю вам, что многие пророки и праведники желали видеть, что вы видите, и не видели, и слышать, что вы слышите, и не слышали.",
-      "greek": "Ἀμὴν γὰρ λέγω ὑμῖν ὅτι πολλοὶ προφῆται καὶ δίκαιοι ἐπεθύμησαν ἰδεῖν ἃ βλέπετε, καὶ οὐκ εἶδον· καὶ ἀκοῦσαι ἃ ἀκούετε, καὶ οὐκ ἤκουσαν.",
-      "latin": "Amen quippe dico vobis, quia multi prophetæ et justi cupierunt videre quæ videtis, et non viderunt: et audire quæ auditis, et non audierunt."
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Amen quippe dico vobis, quia multi prophetæ et justi cupierunt videre quæ videtis, et non viderunt: et audire quæ auditis, et non audierunt.",
+        "LXX": "Ἀμὴν γὰρ λέγω ὑμῖν ὅτι πολλοὶ προφῆται καὶ δίκαιοι ἐπεθύμησαν ἰδεῖν ἃ βλέπετε, καὶ οὐκ εἶδον· καὶ ἀκοῦσαι ἃ ἀκούετε, καὶ οὐκ ἤκουσαν.",
+        "SYN": "ибо истинно говорю вам, что многие пророки и праведники желали видеть, что вы видите, и не видели, и слышать, что вы слышите, и не слышали.",
+        "BYZ": "Ἀμὴν γὰρ λέγω ὑμῖν ὅτι πολλοὶ προφῆται καὶ δίκαιοι ἐπεθύμησαν ἰδεῖν ἃ βλέπετε, καὶ οὐκ εἶδον· καὶ ἀκοῦσαι ἃ ἀκούετε, καὶ οὐκ ἤκουσαν."
+      }
     },
     "18": {
-      "verse_number": 18,
-      "sort_number": 18,
-      "text": "[MATHE 13:18]",
-      "word_count": 5,
-      "russian": "Вы же выслушайте значение притчи о сеятеле:",
-      "greek": "Ὑμεῖς οὖν ἀκούσατε τὴν παραβολὴν τοῦ σπείροντος.",
-      "latin": "Vos ergo audite parabolam seminantis."
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Vos ergo audite parabolam seminantis.",
+        "LXX": "Ὑμεῖς οὖν ἀκούσατε τὴν παραβολὴν τοῦ σπείροντος.",
+        "SYN": "Вы же выслушайте значение притчи о сеятеле:",
+        "BYZ": "Ὑμεῖς οὖν ἀκούσατε τὴν παραβολὴν τοῦ σπείροντος."
+      }
     },
     "19": {
-      "verse_number": 19,
-      "sort_number": 19,
-      "text": "[MATHE 13:19]",
-      "word_count": 5,
-      "russian": "ко всякому, слушающему слово о Царствии и не разумеющему, приходит лукавый и похищает посеянное в сердце его -- вот кого означает посеянное при дороге.",
-      "greek": "Παντὸς ἀκούοντος τὸν λόγον τῆς βασιλείας καὶ μὴ συνιέντος, ἔρχεται ὁ πονηρός, καὶ ἁρπάζει τὸ ἐσπαρμένον ἐν τῇ καρδίᾳ αὐτοῦ· οὗτός ἐστιν ὁ παρὰ τὴν ὁδὸν σπαρείς.",
-      "latin": "Omnis qui audit verbum regni, et non intelligit, venit malus, et rapit quod seminatum est in corde ejus: hic est qui secus viam seminatus est."
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "Omnis qui audit verbum regni, et non intelligit, venit malus, et rapit quod seminatum est in corde ejus: hic est qui secus viam seminatus est.",
+        "LXX": "Παντὸς ἀκούοντος τὸν λόγον τῆς βασιλείας καὶ μὴ συνιέντος, ἔρχεται ὁ πονηρός, καὶ ἁρπάζει τὸ ἐσπαρμένον ἐν τῇ καρδίᾳ αὐτοῦ· οὗτός ἐστιν ὁ παρὰ τὴν ὁδὸν σπαρείς.",
+        "SYN": "ко всякому, слушающему слово о Царствии и не разумеющему, приходит лукавый и похищает посеянное в сердце его -- вот кого означает посеянное при дороге.",
+        "BYZ": "Παντὸς ἀκούοντος τὸν λόγον τῆς βασιλείας καὶ μὴ συνιέντος, ἔρχεται ὁ πονηρός, καὶ ἁρπάζει τὸ ἐσπαρμένον ἐν τῇ καρδίᾳ αὐτοῦ· οὗτός ἐστιν ὁ παρὰ τὴν ὁδὸν σπαρείς."
+      }
     },
     "20": {
-      "verse_number": 20,
-      "sort_number": 20,
-      "text": "[MATHE 13:20]",
-      "word_count": 5,
-      "russian": "А посеянное на каменистых местах означает того, кто слышит слово и тотчас с радостью принимает его;",
-      "greek": "Ὁ δὲ ἐπὶ τὰ πετρώδη σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων, καὶ εὐθὺς μετὰ χαρᾶς λαμβάνων αὐτόν·",
-      "latin": "Qui autem super petrosa seminatus est, hic est qui verbum audit, et continuo cum gaudio accipit illud:"
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "Qui autem super petrosa seminatus est, hic est qui verbum audit, et continuo cum gaudio accipit illud:",
+        "LXX": "Ὁ δὲ ἐπὶ τὰ πετρώδη σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων, καὶ εὐθὺς μετὰ χαρᾶς λαμβάνων αὐτόν·",
+        "SYN": "А посеянное на каменистых местах означает того, кто слышит слово и тотчас с радостью принимает его;",
+        "BYZ": "Ὁ δὲ ἐπὶ τὰ πετρώδη σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων, καὶ εὐθὺς μετὰ χαρᾶς λαμβάνων αὐτόν·"
+      }
     },
     "21": {
-      "verse_number": 21,
-      "sort_number": 21,
-      "text": "[MATHE 13:21]",
-      "word_count": 5,
-      "russian": "но не имеет в себе корня и непостоянен: когда настанет скорбь или гонение за слово, тотчас соблазняется.",
-      "greek": "οὐκ ἔχει δὲ ῥίζαν ἐν ἑαυτῷ, ἀλλὰ πρόσκαιρός ἐστιν· γενομένης δὲ θλίψεως ἢ διωγμοῦ διὰ τὸν λόγον, εὐθὺς σκανδαλίζεται.",
-      "latin": "non habet autem in se radicem, sed est temporalis: facta autem tribulatione et persecutione propter verbum, continuo scandalizatur."
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "non habet autem in se radicem, sed est temporalis: facta autem tribulatione et persecutione propter verbum, continuo scandalizatur.",
+        "LXX": "οὐκ ἔχει δὲ ῥίζαν ἐν ἑαυτῷ, ἀλλὰ πρόσκαιρός ἐστιν· γενομένης δὲ θλίψεως ἢ διωγμοῦ διὰ τὸν λόγον, εὐθὺς σκανδαλίζεται.",
+        "SYN": "но не имеет в себе корня и непостоянен: когда настанет скорбь или гонение за слово, тотчас соблазняется.",
+        "BYZ": "οὐκ ἔχει δὲ ῥίζαν ἐν ἑαυτῷ, ἀλλὰ πρόσκαιρός ἐστιν· γενομένης δὲ θλίψεως ἢ διωγμοῦ διὰ τὸν λόγον, εὐθὺς σκανδαλίζεται."
+      }
     },
     "22": {
-      "verse_number": 22,
-      "sort_number": 22,
-      "text": "[MATHE 13:22]",
-      "word_count": 5,
-      "russian": "А посеянное в тернии означает того, кто слышит слово, но забота века сего и обольщение богатства заглушает слово, и оно бывает бесплодно.",
-      "greek": "Ὁ δὲ εἰς τὰς ἀκάνθας σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων, καὶ ἡ μέριμνα τοῦ αἰῶνος τούτου καὶ ἡ ἀπάτη τοῦ πλούτου συμπνίγει τὸν λόγον, καὶ ἄκαρπος γίνεται.",
-      "latin": "Qui autem seminatus est in spinis, hic est qui verbum audit, et sollicitudo sæculi istius, et fallacia divitiarum suffocat verbum, et sine fructu efficitur."
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Qui autem seminatus est in spinis, hic est qui verbum audit, et sollicitudo sæculi istius, et fallacia divitiarum suffocat verbum, et sine fructu efficitur.",
+        "LXX": "Ὁ δὲ εἰς τὰς ἀκάνθας σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων, καὶ ἡ μέριμνα τοῦ αἰῶνος τούτου καὶ ἡ ἀπάτη τοῦ πλούτου συμπνίγει τὸν λόγον, καὶ ἄκαρπος γίνεται.",
+        "SYN": "А посеянное в тернии означает того, кто слышит слово, но забота века сего и обольщение богатства заглушает слово, и оно бывает бесплодно.",
+        "BYZ": "Ὁ δὲ εἰς τὰς ἀκάνθας σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων, καὶ ἡ μέριμνα τοῦ αἰῶνος τούτου καὶ ἡ ἀπάτη τοῦ πλούτου συμπνίγει τὸν λόγον, καὶ ἄκαρπος γίνεται."
+      }
     },
     "23": {
-      "verse_number": 23,
-      "sort_number": 23,
-      "text": "[MATHE 13:23]",
-      "word_count": 5,
-      "russian": "Посеянное же на доброй земле означает слышащего слово и разумеющего, который и бывает плодоносен, так что иной приносит плод во сто крат, иной в шестьдесят, а иной в тридцать.",
-      "greek": "Ὁ δὲ ἐπὶ τὴν γῆν τὴν καλὴν σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων καὶ συνιών· ὃς δὴ καρποφορεῖ, καὶ ποιεῖ ὁ μὲν ἑκατόν, ὁ δὲ ἑξήκοντα, ὁ δὲ τριάκοντα.",
-      "latin": "Qui vero in terram bonam seminatus est, hic est qui audit verbum, et intelligit, et fructum affert, et facit aliud quidem centesimum, aliud autem sexagesimum, aliud vero trigesimum."
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "Qui vero in terram bonam seminatus est, hic est qui audit verbum, et intelligit, et fructum affert, et facit aliud quidem centesimum, aliud autem sexagesimum, aliud vero trigesimum.",
+        "LXX": "Ὁ δὲ ἐπὶ τὴν γῆν τὴν καλὴν σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων καὶ συνιών· ὃς δὴ καρποφορεῖ, καὶ ποιεῖ ὁ μὲν ἑκατόν, ὁ δὲ ἑξήκοντα, ὁ δὲ τριάκοντα.",
+        "SYN": "Посеянное же на доброй земле означает слышащего слово и разумеющего, который и бывает плодоносен, так что иной приносит плод во сто крат, иной в шестьдесят, а иной в тридцать.",
+        "BYZ": "Ὁ δὲ ἐπὶ τὴν γῆν τὴν καλὴν σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων καὶ συνιών· ὃς δὴ καρποφορεῖ, καὶ ποιεῖ ὁ μὲν ἑκατόν, ὁ δὲ ἑξήκοντα, ὁ δὲ τριάκοντα."
+      }
     },
     "24": {
-      "verse_number": 24,
-      "sort_number": 24,
-      "text": "[MATHE 13:24]",
-      "word_count": 5,
-      "russian": "Другую притчу предложил Он им, говоря: Царство Небесное подобно человеку, посеявшему доброе семя на поле своем;",
-      "greek": "Ἄλλην παραβολὴν παρέθηκεν αὐτοῖς, λέγων, Ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ σπείροντι καλὸν σπέρμα ἐν τῷ ἀγρῷ αὐτοῦ·",
-      "latin": "Aliam parabolam proposuit illis, dicens: Simile factum est regnum cælorum homini, qui seminavit bonum semen in agro suo:"
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Aliam parabolam proposuit illis, dicens: Simile factum est regnum cælorum homini, qui seminavit bonum semen in agro suo:",
+        "LXX": "Ἄλλην παραβολὴν παρέθηκεν αὐτοῖς, λέγων, Ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ σπείροντι καλὸν σπέρμα ἐν τῷ ἀγρῷ αὐτοῦ·",
+        "SYN": "Другую притчу предложил Он им, говоря: Царство Небесное подобно человеку, посеявшему доброе семя на поле своем;",
+        "BYZ": "Ἄλλην παραβολὴν παρέθηκεν αὐτοῖς, λέγων, Ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ σπείροντι καλὸν σπέρμα ἐν τῷ ἀγρῷ αὐτοῦ·"
+      }
     },
     "25": {
-      "verse_number": 25,
-      "sort_number": 25,
-      "text": "[MATHE 13:25]",
-      "word_count": 5,
-      "russian": "когда же люди спали, пришел враг его и посеял между пшеницею плевелы и ушел;",
-      "greek": "ἐν δὲ τῷ καθεύδειν τοὺς ἀνθρώπους, ἦλθεν αὐτοῦ ὁ ἐχθρὸς καὶ ἔσπειρεν ζιζάνια ἀνὰ μέσον τοῦ σίτου, καὶ ἀπῆλθεν.",
-      "latin": "cum autem dormirent homines, venit inimicus ejus, et superseminavit zizania in medio tritici, et abiit."
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "cum autem dormirent homines, venit inimicus ejus, et superseminavit zizania in medio tritici, et abiit.",
+        "LXX": "ἐν δὲ τῷ καθεύδειν τοὺς ἀνθρώπους, ἦλθεν αὐτοῦ ὁ ἐχθρὸς καὶ ἔσπειρεν ζιζάνια ἀνὰ μέσον τοῦ σίτου, καὶ ἀπῆλθεν.",
+        "SYN": "когда же люди спали, пришел враг его и посеял между пшеницею плевелы и ушел;",
+        "BYZ": "ἐν δὲ τῷ καθεύδειν τοὺς ἀνθρώπους, ἦλθεν αὐτοῦ ὁ ἐχθρὸς καὶ ἔσπειρεν ζιζάνια ἀνὰ μέσον τοῦ σίτου, καὶ ἀπῆλθεν."
+      }
     },
     "26": {
-      "verse_number": 26,
-      "sort_number": 26,
-      "text": "[MATHE 13:26]",
-      "word_count": 5,
-      "russian": "когда взошла зелень и показался плод, тогда явились и плевелы.",
-      "greek": "Ὅτε δὲ ἐβλάστησεν ὁ χόρτος καὶ καρπὸν ἐποίησεν, τότε ἐφάνη καὶ τὰ ζιζάνια.",
-      "latin": "Cum autem crevisset herba, et fructum fecisset, tunc apparuerunt et zizania."
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Cum autem crevisset herba, et fructum fecisset, tunc apparuerunt et zizania.",
+        "LXX": "Ὅτε δὲ ἐβλάστησεν ὁ χόρτος καὶ καρπὸν ἐποίησεν, τότε ἐφάνη καὶ τὰ ζιζάνια.",
+        "SYN": "когда взошла зелень и показался плод, тогда явились и плевелы.",
+        "BYZ": "Ὅτε δὲ ἐβλάστησεν ὁ χόρτος καὶ καρπὸν ἐποίησεν, τότε ἐφάνη καὶ τὰ ζιζάνια."
+      }
     },
     "27": {
-      "verse_number": 27,
-      "sort_number": 27,
-      "text": "[MATHE 13:27]",
-      "word_count": 5,
-      "russian": "Придя же, рабы домовладыки сказали ему: господин! не доброе ли семя сеял ты на поле твоем? откуда же на нем плевелы?",
-      "greek": "Προσελθόντες δὲ οἱ δοῦλοι τοῦ οἰκοδεσπότου εἶπον αὐτῷ, Κύριε, οὐχὶ καλὸν σπέρμα ἔσπειρας ἐν τῷ σῷ ἀγρῷ; Πόθεν οὖν ἔχει ζιζάνια;",
-      "latin": "Accedentes autem servi patrisfamilias, dixerunt ei: Domine, nonne bonum semen seminasti in agro tuo ? unde ergo habet zizania ?"
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "Accedentes autem servi patrisfamilias, dixerunt ei: Domine, nonne bonum semen seminasti in agro tuo ? unde ergo habet zizania ?",
+        "LXX": "Προσελθόντες δὲ οἱ δοῦλοι τοῦ οἰκοδεσπότου εἶπον αὐτῷ, Κύριε, οὐχὶ καλὸν σπέρμα ἔσπειρας ἐν τῷ σῷ ἀγρῷ; Πόθεν οὖν ἔχει ζιζάνια;",
+        "SYN": "Придя же, рабы домовладыки сказали ему: господин! не доброе ли семя сеял ты на поле твоем? откуда же на нем плевелы?",
+        "BYZ": "Προσελθόντες δὲ οἱ δοῦλοι τοῦ οἰκοδεσπότου εἶπον αὐτῷ, Κύριε, οὐχὶ καλὸν σπέρμα ἔσπειρας ἐν τῷ σῷ ἀγρῷ; Πόθεν οὖν ἔχει ζιζάνια;"
+      }
     },
     "28": {
-      "verse_number": 28,
-      "sort_number": 28,
-      "text": "[MATHE 13:28]",
-      "word_count": 5,
-      "russian": "Он же сказал им: враг человека сделал это. А рабы сказали ему: хочешь ли, мы пойдем, выберем их?",
-      "greek": "Ὁ δὲ ἔφη αὐτοῖς, Ἐχθρὸς ἄνθρωπος τοῦτο ἐποίησεν. Οἱ δὲ δοῦλοι εἶπον αὐτῷ, Θέλεις οὖν ἀπελθόντες συλλέξομεν αὐτά;",
-      "latin": "Et ait illis: Inimicus homo hoc fecit. Servi autem dixerunt ei: Vis, imus, et colligimus ea ?"
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "Et ait illis: Inimicus homo hoc fecit. Servi autem dixerunt ei: Vis, imus, et colligimus ea ?",
+        "LXX": "Ὁ δὲ ἔφη αὐτοῖς, Ἐχθρὸς ἄνθρωπος τοῦτο ἐποίησεν. Οἱ δὲ δοῦλοι εἶπον αὐτῷ, Θέλεις οὖν ἀπελθόντες συλλέξομεν αὐτά;",
+        "SYN": "Он же сказал им: враг человека сделал это. А рабы сказали ему: хочешь ли, мы пойдем, выберем их?",
+        "BYZ": "Ὁ δὲ ἔφη αὐτοῖς, Ἐχθρὸς ἄνθρωπος τοῦτο ἐποίησεν. Οἱ δὲ δοῦλοι εἶπον αὐτῷ, Θέλεις οὖν ἀπελθόντες συλλέξομεν αὐτά;"
+      }
     },
     "29": {
-      "verse_number": 29,
-      "sort_number": 29,
-      "text": "[MATHE 13:29]",
-      "word_count": 5,
-      "russian": "Но он сказал: нет, -- чтобы, выбирая плевелы, вы не выдергали вместе с ними пшеницы,",
-      "greek": "Ὁ δὲ ἔφη, Οὔ· μήποτε, συλλέγοντες τὰ ζιζάνια, ἐκριζώσητε ἅμα αὐτοῖς τὸν σῖτον.",
-      "latin": "Et ait: Non: ne forte colligentes zizania, eradicetis simul cum eis et triticum."
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "Et ait: Non: ne forte colligentes zizania, eradicetis simul cum eis et triticum.",
+        "LXX": "Ὁ δὲ ἔφη, Οὔ· μήποτε, συλλέγοντες τὰ ζιζάνια, ἐκριζώσητε ἅμα αὐτοῖς τὸν σῖτον.",
+        "SYN": "Но он сказал: нет, -- чтобы, выбирая плевелы, вы не выдергали вместе с ними пшеницы,",
+        "BYZ": "Ὁ δὲ ἔφη, Οὔ· μήποτε, συλλέγοντες τὰ ζιζάνια, ἐκριζώσητε ἅμα αὐτοῖς τὸν σῖτον."
+      }
     },
     "30": {
-      "verse_number": 30,
-      "sort_number": 30,
-      "text": "[MATHE 13:30]",
-      "word_count": 5,
-      "russian": "оставьте расти вместе то и другое до жатвы; и во время жатвы я скажу жнецам: соберите прежде плевелы и свяжите их в снопы, чтобы сжечь их, а пшеницу уберите в житницу мою.",
-      "greek": "Ἄφετε συναυξάνεσθαι ἀμφότερα μέχρι τοῦ θερισμοῦ· καὶ ἐν καιρῷ τοῦ θερισμοῦ ἐρῶ τοῖς θερισταῖς, Συλλέξατε πρῶτον τὰ ζιζάνια, καὶ δήσατε αὐτὰ εἰς δέσμας πρὸς τὸ κατακαῦσαι αὐτά· τὸν δὲ σῖτον συναγάγετε εἰς τὴν ἀποθήκην μου.",
-      "latin": "Sinite utraque crescere usque ad messem, et in tempore messis dicam messoribus: Colligite primum zizania, et alligate ea in fasciculos ad comburendum: triticum autem congregate in horreum meum."
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "Sinite utraque crescere usque ad messem, et in tempore messis dicam messoribus: Colligite primum zizania, et alligate ea in fasciculos ad comburendum: triticum autem congregate in horreum meum.",
+        "LXX": "Ἄφετε συναυξάνεσθαι ἀμφότερα μέχρι τοῦ θερισμοῦ· καὶ ἐν καιρῷ τοῦ θερισμοῦ ἐρῶ τοῖς θερισταῖς, Συλλέξατε πρῶτον τὰ ζιζάνια, καὶ δήσατε αὐτὰ εἰς δέσμας πρὸς τὸ κατακαῦσαι αὐτά· τὸν δὲ σῖτον συναγάγετε εἰς τὴν ἀποθήκην μου.",
+        "SYN": "оставьте расти вместе то и другое до жатвы; и во время жатвы я скажу жнецам: соберите прежде плевелы и свяжите их в снопы, чтобы сжечь их, а пшеницу уберите в житницу мою.",
+        "BYZ": "Ἄφετε συναυξάνεσθαι ἀμφότερα μέχρι τοῦ θερισμοῦ· καὶ ἐν καιρῷ τοῦ θερισμοῦ ἐρῶ τοῖς θερισταῖς, Συλλέξατε πρῶτον τὰ ζιζάνια, καὶ δήσατε αὐτὰ εἰς δέσμας πρὸς τὸ κατακαῦσαι αὐτά· τὸν δὲ σῖτον συναγάγετε εἰς τὴν ἀποθήκην μου."
+      }
     },
     "31": {
-      "verse_number": 31,
-      "sort_number": 31,
-      "text": "[MATHE 13:31]",
-      "word_count": 5,
-      "russian": "Иную притчу предложил Он им, говоря: Царство Небесное подобно зерну горчичному, которое человек взял и посеял на поле своем,",
-      "greek": "Ἄλλην παραβολὴν παρέθηκεν αὐτοῖς, λέγων, Ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν κόκκῳ σινάπεως, ὃν λαβὼν ἄνθρωπος ἔσπειρεν ἐν τῷ ἀγρῷ αὐτοῦ·",
-      "latin": "Aliam parabolam proposuit eis dicens: Simile est regnum cælorum grano sinapis, quod accipiens homo seminavit in agro suo:"
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "Aliam parabolam proposuit eis dicens: Simile est regnum cælorum grano sinapis, quod accipiens homo seminavit in agro suo:",
+        "LXX": "Ἄλλην παραβολὴν παρέθηκεν αὐτοῖς, λέγων, Ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν κόκκῳ σινάπεως, ὃν λαβὼν ἄνθρωπος ἔσπειρεν ἐν τῷ ἀγρῷ αὐτοῦ·",
+        "SYN": "Иную притчу предложил Он им, говоря: Царство Небесное подобно зерну горчичному, которое человек взял и посеял на поле своем,",
+        "BYZ": "Ἄλλην παραβολὴν παρέθηκεν αὐτοῖς, λέγων, Ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν κόκκῳ σινάπεως, ὃν λαβὼν ἄνθρωπος ἔσπειρεν ἐν τῷ ἀγρῷ αὐτοῦ·"
+      }
     },
     "32": {
-      "verse_number": 32,
-      "sort_number": 32,
-      "text": "[MATHE 13:32]",
-      "word_count": 5,
-      "russian": "которое, хотя меньше всех семян, но, когда вырастет, бывает больше всех злаков и становится деревом, так что прилетают птицы небесные и укрываются в ветвях его.",
-      "greek": "ὃ μικρότερον μέν ἐστιν πάντων τῶν σπερμάτων· ὅταν δὲ αὐξηθῇ, μεῖζον τῶν λαχάνων ἐστίν, καὶ γίνεται δένδρον, ὥστε ἐλθεῖν τὰ πετεινὰ τοῦ οὐρανοῦ καὶ κατασκηνοῦν ἐν τοῖς κλάδοις αὐτοῦ.",
-      "latin": "quod minimum quidem est omnibus seminibus: cum autem creverit, majus est omnibus oleribus, et fit arbor, ita ut volucres cæli veniant, et habitent in ramis ejus."
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "quod minimum quidem est omnibus seminibus: cum autem creverit, majus est omnibus oleribus, et fit arbor, ita ut volucres cæli veniant, et habitent in ramis ejus.",
+        "LXX": "ὃ μικρότερον μέν ἐστιν πάντων τῶν σπερμάτων· ὅταν δὲ αὐξηθῇ, μεῖζον τῶν λαχάνων ἐστίν, καὶ γίνεται δένδρον, ὥστε ἐλθεῖν τὰ πετεινὰ τοῦ οὐρανοῦ καὶ κατασκηνοῦν ἐν τοῖς κλάδοις αὐτοῦ.",
+        "SYN": "которое, хотя меньше всех семян, но, когда вырастет, бывает больше всех злаков и становится деревом, так что прилетают птицы небесные и укрываются в ветвях его.",
+        "BYZ": "ὃ μικρότερον μέν ἐστιν πάντων τῶν σπερμάτων· ὅταν δὲ αὐξηθῇ, μεῖζον τῶν λαχάνων ἐστίν, καὶ γίνεται δένδρον, ὥστε ἐλθεῖν τὰ πετεινὰ τοῦ οὐρανοῦ καὶ κατασκηνοῦν ἐν τοῖς κλάδοις αὐτοῦ."
+      }
     },
     "33": {
-      "verse_number": 33,
-      "sort_number": 33,
-      "text": "[MATHE 13:33]",
-      "word_count": 5,
-      "russian": "Иную притчу сказал Он им: Царство Небесное подобно закваске, которую женщина, взяв, положила в три меры муки, доколе не вскисло все.",
-      "greek": "Ἄλλην παραβολὴν ἐλάλησεν αὐτοῖς, Ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν ζύμῃ, ἣν λαβοῦσα γυνὴ ἔκρυψεν εἰς ἀλεύρου σάτα τρία, ἕως οὗ ἐζυμώθη ὅλον.",
-      "latin": "Aliam parabolam locutus est eis: Simile est regnum cælorum fermento, quod acceptum mulier abscondit in farinæ satis tribus, donec fermentatum est totum."
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "Aliam parabolam locutus est eis: Simile est regnum cælorum fermento, quod acceptum mulier abscondit in farinæ satis tribus, donec fermentatum est totum.",
+        "LXX": "Ἄλλην παραβολὴν ἐλάλησεν αὐτοῖς, Ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν ζύμῃ, ἣν λαβοῦσα γυνὴ ἔκρυψεν εἰς ἀλεύρου σάτα τρία, ἕως οὗ ἐζυμώθη ὅλον.",
+        "SYN": "Иную притчу сказал Он им: Царство Небесное подобно закваске, которую женщина, взяв, положила в три меры муки, доколе не вскисло все.",
+        "BYZ": "Ἄλλην παραβολὴν ἐλάλησεν αὐτοῖς, Ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν ζύμῃ, ἣν λαβοῦσα γυνὴ ἔκρυψεν εἰς ἀλεύρου σάτα τρία, ἕως οὗ ἐζυμώθη ὅλον."
+      }
     },
     "34": {
-      "verse_number": 34,
-      "sort_number": 34,
-      "text": "[MATHE 13:34]",
-      "word_count": 5,
-      "russian": "Все сие Иисус говорил народу притчами, и без притчи не говорил им,",
-      "greek": "Ταῦτα πάντα ἐλάλησεν ὁ Ἰησοῦς ἐν παραβολαῖς τοῖς ὄχλοις, καὶ χωρὶς παραβολῆς οὐκ ἐλάλει αὐτοῖς·",
-      "latin": "Hæc omnia locutus est Jesus in parabolis ad turbas: et sine parabolis non loquebatur eis:"
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Hæc omnia locutus est Jesus in parabolis ad turbas: et sine parabolis non loquebatur eis:",
+        "LXX": "Ταῦτα πάντα ἐλάλησεν ὁ Ἰησοῦς ἐν παραβολαῖς τοῖς ὄχλοις, καὶ χωρὶς παραβολῆς οὐκ ἐλάλει αὐτοῖς·",
+        "SYN": "Все сие Иисус говорил народу притчами, и без притчи не говорил им,",
+        "BYZ": "Ταῦτα πάντα ἐλάλησεν ὁ Ἰησοῦς ἐν παραβολαῖς τοῖς ὄχλοις, καὶ χωρὶς παραβολῆς οὐκ ἐλάλει αὐτοῖς·"
+      }
     },
     "35": {
-      "verse_number": 35,
-      "sort_number": 35,
-      "text": "[MATHE 13:35]",
-      "word_count": 5,
-      "russian": "да сбудется реченное через пророка, который говорит: отверзу в притчах уста Мои; изреку сокровенное от создания мира.",
-      "greek": "ὅπως πληρωθῇ τὸ ῥηθὲν διὰ τοῦ προφήτου, λέγοντος, Ἀνοίξω ἐν παραβολαῖς τὸ στόμα μου, ἐρεύξομαι κεκρυμμένα ἀπὸ καταβολῆς κόσμου.",
-      "latin": "ut impleretur quod dictum erat per prophetam dicentem: Aperiam in parabolis os meum ; eructabo abscondita a constitutione mundi."
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "VUL": "ut impleretur quod dictum erat per prophetam dicentem: Aperiam in parabolis os meum ; eructabo abscondita a constitutione mundi.",
+        "LXX": "ὅπως πληρωθῇ τὸ ῥηθὲν διὰ τοῦ προφήτου, λέγοντος, Ἀνοίξω ἐν παραβολαῖς τὸ στόμα μου, ἐρεύξομαι κεκρυμμένα ἀπὸ καταβολῆς κόσμου.",
+        "SYN": "да сбудется реченное через пророка, который говорит: отверзу в притчах уста Мои; изреку сокровенное от создания мира.",
+        "BYZ": "ὅπως πληρωθῇ τὸ ῥηθὲν διὰ τοῦ προφήτου, λέγοντος, Ἀνοίξω ἐν παραβολαῖς τὸ στόμα μου, ἐρεύξομαι κεκρυμμένα ἀπὸ καταβολῆς κόσμου."
+      }
     },
     "36": {
-      "verse_number": 36,
-      "sort_number": 36,
-      "text": "[MATHE 13:36]",
-      "word_count": 5,
-      "russian": "Тогда Иисус, отпустив народ, вошел в дом. И, приступив к Нему, ученики Его сказали: изъясни нам притчу о плевелах на поле.",
-      "greek": "Τότε ἀφεὶς τοὺς ὄχλους ἦλθεν εἰς τὴν οἰκίαν ὁ Ἰησοῦς· καὶ προσῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ, λέγοντες, Φράσον ἡμῖν τὴν παραβολὴν τῶν ζιζανίων τοῦ ἀγροῦ.",
-      "latin": "Tunc, dimissis turbis, venit in domum: et accesserunt ad eum discipuli ejus, dicentes: Edissere nobis parabolam zizaniorum agri."
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "VUL": "Tunc, dimissis turbis, venit in domum: et accesserunt ad eum discipuli ejus, dicentes: Edissere nobis parabolam zizaniorum agri.",
+        "LXX": "Τότε ἀφεὶς τοὺς ὄχλους ἦλθεν εἰς τὴν οἰκίαν ὁ Ἰησοῦς· καὶ προσῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ, λέγοντες, Φράσον ἡμῖν τὴν παραβολὴν τῶν ζιζανίων τοῦ ἀγροῦ.",
+        "SYN": "Тогда Иисус, отпустив народ, вошел в дом. И, приступив к Нему, ученики Его сказали: изъясни нам притчу о плевелах на поле.",
+        "BYZ": "Τότε ἀφεὶς τοὺς ὄχλους ἦλθεν εἰς τὴν οἰκίαν ὁ Ἰησοῦς· καὶ προσῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ, λέγοντες, Φράσον ἡμῖν τὴν παραβολὴν τῶν ζιζανίων τοῦ ἀγροῦ."
+      }
     },
     "37": {
-      "verse_number": 37,
-      "sort_number": 37,
-      "text": "[MATHE 13:37]",
-      "word_count": 5,
-      "russian": "Он же сказал им в ответ: сеющий доброе семя есть Сын Человеческий;",
-      "greek": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς, Ὁ σπείρων τὸ καλὸν σπέρμα ἐστὶν ὁ υἱὸς τοῦ ἀνθρώπου·",
-      "latin": "Qui respondens ait illis: Qui seminat bonum semen, est Filius hominis."
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "VUL": "Qui respondens ait illis: Qui seminat bonum semen, est Filius hominis.",
+        "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς, Ὁ σπείρων τὸ καλὸν σπέρμα ἐστὶν ὁ υἱὸς τοῦ ἀνθρώπου·",
+        "SYN": "Он же сказал им в ответ: сеющий доброе семя есть Сын Человеческий;",
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς, Ὁ σπείρων τὸ καλὸν σπέρμα ἐστὶν ὁ υἱὸς τοῦ ἀνθρώπου·"
+      }
     },
     "38": {
-      "verse_number": 38,
-      "sort_number": 38,
-      "text": "[MATHE 13:38]",
-      "word_count": 5,
-      "russian": "поле есть мир; доброе семя, это сыны Царствия, а плевелы -- сыны лукавого;",
-      "greek": "ὁ δὲ ἀγρός ἐστιν ὁ κόσμος· τὸ δὲ καλὸν σπέρμα, οὗτοί εἰσιν οἱ υἱοὶ τῆς βασιλείας· τὰ δὲ ζιζάνιά εἰσιν οἱ υἱοὶ τοῦ πονηροῦ·",
-      "latin": "Ager autem est mundus. Bonum vero semen, hi sunt filii regni. Zizania autem, filii sunt nequam."
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "VUL": "Ager autem est mundus. Bonum vero semen, hi sunt filii regni. Zizania autem, filii sunt nequam.",
+        "LXX": "ὁ δὲ ἀγρός ἐστιν ὁ κόσμος· τὸ δὲ καλὸν σπέρμα, οὗτοί εἰσιν οἱ υἱοὶ τῆς βασιλείας· τὰ δὲ ζιζάνιά εἰσιν οἱ υἱοὶ τοῦ πονηροῦ·",
+        "SYN": "поле есть мир; доброе семя, это сыны Царствия, а плевелы -- сыны лукавого;",
+        "BYZ": "ὁ δὲ ἀγρός ἐστιν ὁ κόσμος· τὸ δὲ καλὸν σπέρμα, οὗτοί εἰσιν οἱ υἱοὶ τῆς βασιλείας· τὰ δὲ ζιζάνιά εἰσιν οἱ υἱοὶ τοῦ πονηροῦ·"
+      }
     },
     "39": {
-      "verse_number": 39,
-      "sort_number": 39,
-      "text": "[MATHE 13:39]",
-      "word_count": 5,
-      "russian": "враг, посеявший их, есть диавол; жатва есть кончина века, а жнецы суть Ангелы.",
-      "greek": "ὁ δὲ ἐχθρὸς ὁ σπείρας αὐτά ἐστιν ὁ διάβολος· ὁ δὲ θερισμὸς συντέλεια τοῦ αἰῶνός ἐστιν· οἱ δὲ θερισταὶ ἄγγελοί εἰσιν.",
-      "latin": "Inimicus autem, qui seminavit ea, est diabolus. Messis vero, consummatio sæculi est. Messores autem, angeli sunt."
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "VUL": "Inimicus autem, qui seminavit ea, est diabolus. Messis vero, consummatio sæculi est. Messores autem, angeli sunt.",
+        "LXX": "ὁ δὲ ἐχθρὸς ὁ σπείρας αὐτά ἐστιν ὁ διάβολος· ὁ δὲ θερισμὸς συντέλεια τοῦ αἰῶνός ἐστιν· οἱ δὲ θερισταὶ ἄγγελοί εἰσιν.",
+        "SYN": "враг, посеявший их, есть диавол; жатва есть кончина века, а жнецы суть Ангелы.",
+        "BYZ": "ὁ δὲ ἐχθρὸς ὁ σπείρας αὐτά ἐστιν ὁ διάβολος· ὁ δὲ θερισμὸς συντέλεια τοῦ αἰῶνός ἐστιν· οἱ δὲ θερισταὶ ἄγγελοί εἰσιν."
+      }
     },
     "40": {
-      "verse_number": 40,
-      "sort_number": 40,
-      "text": "[MATHE 13:40]",
-      "word_count": 5,
-      "russian": "Посему как собирают плевелы и огнем сжигают, так будет при кончине века сего:",
-      "greek": "Ὥσπερ οὖν συλλέγεται τὰ ζιζάνια καὶ πυρὶ καίεται, οὕτως ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος τούτου.",
-      "latin": "Sicut ergo colliguntur zizania, et igni comburuntur: sic erit in consummatione sæculi."
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "VUL": "Sicut ergo colliguntur zizania, et igni comburuntur: sic erit in consummatione sæculi.",
+        "LXX": "Ὥσπερ οὖν συλλέγεται τὰ ζιζάνια καὶ πυρὶ καίεται, οὕτως ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος τούτου.",
+        "SYN": "Посему как собирают плевелы и огнем сжигают, так будет при кончине века сего:",
+        "BYZ": "Ὥσπερ οὖν συλλέγεται τὰ ζιζάνια καὶ πυρὶ καίεται, οὕτως ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος τούτου."
+      }
     },
     "41": {
-      "verse_number": 41,
-      "sort_number": 41,
-      "text": "[MATHE 13:41]",
-      "word_count": 5,
-      "russian": "пошлет Сын Человеческий Ангелов Своих, и соберут из Царства Его все соблазны и делающих беззаконие,",
-      "greek": "Ἀποστελεῖ ὁ υἱὸς τοῦ ἀνθρώπου τοὺς ἀγγέλους αὐτοῦ, καὶ συλλέξουσιν ἐκ τῆς βασιλείας αὐτοῦ πάντα τὰ σκάνδαλα καὶ τοὺς ποιοῦντας τὴν ἀνομίαν,",
-      "latin": "Mittet Filius hominis angelos suos, et colligent de regno ejus omnia scandala, et eos qui faciunt iniquitatem:"
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "VUL": "Mittet Filius hominis angelos suos, et colligent de regno ejus omnia scandala, et eos qui faciunt iniquitatem:",
+        "LXX": "Ἀποστελεῖ ὁ υἱὸς τοῦ ἀνθρώπου τοὺς ἀγγέλους αὐτοῦ, καὶ συλλέξουσιν ἐκ τῆς βασιλείας αὐτοῦ πάντα τὰ σκάνδαλα καὶ τοὺς ποιοῦντας τὴν ἀνομίαν,",
+        "SYN": "пошлет Сын Человеческий Ангелов Своих, и соберут из Царства Его все соблазны и делающих беззаконие,",
+        "BYZ": "Ἀποστελεῖ ὁ υἱὸς τοῦ ἀνθρώπου τοὺς ἀγγέλους αὐτοῦ, καὶ συλλέξουσιν ἐκ τῆς βασιλείας αὐτοῦ πάντα τὰ σκάνδαλα καὶ τοὺς ποιοῦντας τὴν ἀνομίαν,"
+      }
     },
     "42": {
-      "verse_number": 42,
-      "sort_number": 42,
-      "text": "[MATHE 13:42]",
-      "word_count": 5,
-      "russian": "и ввергнут их в печь огненную; там будет плач и скрежет зубов;",
-      "greek": "καὶ βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
-      "latin": "et mittent eos in caminum ignis. Ibi erit fletus et stridor dentium."
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "VUL": "et mittent eos in caminum ignis. Ibi erit fletus et stridor dentium.",
+        "LXX": "καὶ βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
+        "SYN": "и ввергнут их в печь огненную; там будет плач и скрежет зубов;",
+        "BYZ": "καὶ βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων."
+      }
     },
     "43": {
-      "verse_number": 43,
-      "sort_number": 43,
-      "text": "[MATHE 13:43]",
-      "word_count": 5,
-      "russian": "тогда праведники воссияют, как солнце, в Царстве Отца их. Кто имеет уши слышать, да слышит!",
-      "greek": "Τότε οἱ δίκαιοι ἐκλάμψουσιν ὡς ὁ ἥλιος ἐν τῇ βασιλείᾳ τοῦ πατρὸς αὐτῶν. Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω.",
-      "latin": "Tunc justi fulgebunt sicut sol in regno Patris eorum. Qui habet aures audiendi, audiat."
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "VUL": "Tunc justi fulgebunt sicut sol in regno Patris eorum. Qui habet aures audiendi, audiat.",
+        "LXX": "Τότε οἱ δίκαιοι ἐκλάμψουσιν ὡς ὁ ἥλιος ἐν τῇ βασιλείᾳ τοῦ πατρὸς αὐτῶν. Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω.",
+        "SYN": "тогда праведники воссияют, как солнце, в Царстве Отца их. Кто имеет уши слышать, да слышит!",
+        "BYZ": "Τότε οἱ δίκαιοι ἐκλάμψουσιν ὡς ὁ ἥλιος ἐν τῇ βασιλείᾳ τοῦ πατρὸς αὐτῶν. Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω."
+      }
     },
     "44": {
-      "verse_number": 44,
-      "sort_number": 44,
-      "text": "[MATHE 13:44]",
-      "word_count": 5,
-      "russian": "Еще подобно Царство Небесное сокровищу, скрытому на поле, которое, найдя, человек утаил, и от радости о нем идет и продает все, что имеет, и покупает поле то.",
-      "greek": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν θησαυρῷ κεκρυμμένῳ ἐν τῷ ἀγρῷ, ὃν εὑρὼν ἄνθρωπος ἔκρυψεν· καὶ ἀπὸ τῆς χαρᾶς αὐτοῦ ὑπάγει, καὶ πάντα ὅσα ἔχει πωλεῖ, καὶ ἀγοράζει τὸν ἀγρὸν ἐκεῖνον.",
-      "latin": "Simile est regnum cælorum thesauro abscondito in agro: quem qui invenit homo, abscondit, et præ gaudio illius vadit, et vendit universa quæ habet, et emit agrum illum."
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "VUL": "Simile est regnum cælorum thesauro abscondito in agro: quem qui invenit homo, abscondit, et præ gaudio illius vadit, et vendit universa quæ habet, et emit agrum illum.",
+        "LXX": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν θησαυρῷ κεκρυμμένῳ ἐν τῷ ἀγρῷ, ὃν εὑρὼν ἄνθρωπος ἔκρυψεν· καὶ ἀπὸ τῆς χαρᾶς αὐτοῦ ὑπάγει, καὶ πάντα ὅσα ἔχει πωλεῖ, καὶ ἀγοράζει τὸν ἀγρὸν ἐκεῖνον.",
+        "SYN": "Еще подобно Царство Небесное сокровищу, скрытому на поле, которое, найдя, человек утаил, и от радости о нем идет и продает все, что имеет, и покупает поле то.",
+        "BYZ": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν θησαυρῷ κεκρυμμένῳ ἐν τῷ ἀγρῷ, ὃν εὑρὼν ἄνθρωπος ἔκρυψεν· καὶ ἀπὸ τῆς χαρᾶς αὐτοῦ ὑπάγει, καὶ πάντα ὅσα ἔχει πωλεῖ, καὶ ἀγοράζει τὸν ἀγρὸν ἐκεῖνον."
+      }
     },
     "45": {
-      "verse_number": 45,
-      "sort_number": 45,
-      "text": "[MATHE 13:45]",
-      "word_count": 5,
-      "russian": "Еще подобно Царство Небесное купцу, ищущему хороших жемчужин,",
-      "greek": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ ἐμπόρῳ ζητοῦντι καλοὺς μαργαρίτας·",
-      "latin": "Iterum simile est regnum cælorum homini negotiatori, quærenti bonas margaritas."
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "VUL": "Iterum simile est regnum cælorum homini negotiatori, quærenti bonas margaritas.",
+        "LXX": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ ἐμπόρῳ ζητοῦντι καλοὺς μαργαρίτας·",
+        "SYN": "Еще подобно Царство Небесное купцу, ищущему хороших жемчужин,",
+        "BYZ": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ ἐμπόρῳ ζητοῦντι καλοὺς μαργαρίτας·"
+      }
     },
     "46": {
-      "verse_number": 46,
-      "sort_number": 46,
-      "text": "[MATHE 13:46]",
-      "word_count": 5,
-      "russian": "который, найдя одну драгоценную жемчужину, пошел и продал все, что имел, и купил ее.",
-      "greek": "ὃς εὑρὼν ἕνα πολύτιμον μαργαρίτην, ἀπελθὼν πέπρακεν πάντα ὅσα εἶχεν, καὶ ἠγόρασεν αὐτόν.",
-      "latin": "Inventa autem una pretiosa margarita, abiit, et vendidit omnia quæ habuit, et emit eam."
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "VUL": "Inventa autem una pretiosa margarita, abiit, et vendidit omnia quæ habuit, et emit eam.",
+        "LXX": "ὃς εὑρὼν ἕνα πολύτιμον μαργαρίτην, ἀπελθὼν πέπρακεν πάντα ὅσα εἶχεν, καὶ ἠγόρασεν αὐτόν.",
+        "SYN": "который, найдя одну драгоценную жемчужину, пошел и продал все, что имел, и купил ее.",
+        "BYZ": "ὃς εὑρὼν ἕνα πολύτιμον μαργαρίτην, ἀπελθὼν πέπρακεν πάντα ὅσα εἶχεν, καὶ ἠγόρασεν αὐτόν."
+      }
     },
     "47": {
-      "verse_number": 47,
-      "sort_number": 47,
-      "text": "[MATHE 13:47]",
-      "word_count": 5,
-      "russian": "Еще подобно Царство Небесное неводу, закинутому в море и захватившему рыб всякого рода,",
-      "greek": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν σαγήνῃ βληθείσῃ εἰς τὴν θάλασσαν, καὶ ἐκ παντὸς γένους συναγαγούσῃ·",
-      "latin": "Iterum simile est regnum cælorum sagenæ missæ in mare, et ex omni genere piscium congreganti."
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "VUL": "Iterum simile est regnum cælorum sagenæ missæ in mare, et ex omni genere piscium congreganti.",
+        "LXX": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν σαγήνῃ βληθείσῃ εἰς τὴν θάλασσαν, καὶ ἐκ παντὸς γένους συναγαγούσῃ·",
+        "SYN": "Еще подобно Царство Небесное неводу, закинутому в море и захватившему рыб всякого рода,",
+        "BYZ": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν σαγήνῃ βληθείσῃ εἰς τὴν θάλασσαν, καὶ ἐκ παντὸς γένους συναγαγούσῃ·"
+      }
     },
     "48": {
-      "verse_number": 48,
-      "sort_number": 48,
-      "text": "[MATHE 13:48]",
-      "word_count": 5,
-      "russian": "который, когда наполнился, вытащили на берег и, сев, хорошее собрали в сосуды, а худое выбросили вон.",
-      "greek": "ἥν, ὅτε ἐπληρώθη, ἀναβιβάσαντες ἐπὶ τὸν αἰγιαλόν, καὶ καθίσαντες, συνέλεξαν τὰ καλὰ εἰς ἀγγεῖα, τὰ δὲ σαπρὰ ἔξω ἔβαλον.",
-      "latin": "Quam, cum impleta esset, educentes, et secus littus sedentes, elegerunt bonos in vasa, malos autem foras miserunt."
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "VUL": "Quam, cum impleta esset, educentes, et secus littus sedentes, elegerunt bonos in vasa, malos autem foras miserunt.",
+        "LXX": "ἥν, ὅτε ἐπληρώθη, ἀναβιβάσαντες ἐπὶ τὸν αἰγιαλόν, καὶ καθίσαντες, συνέλεξαν τὰ καλὰ εἰς ἀγγεῖα, τὰ δὲ σαπρὰ ἔξω ἔβαλον.",
+        "SYN": "который, когда наполнился, вытащили на берег и, сев, хорошее собрали в сосуды, а худое выбросили вон.",
+        "BYZ": "ἥν, ὅτε ἐπληρώθη, ἀναβιβάσαντες ἐπὶ τὸν αἰγιαλόν, καὶ καθίσαντες, συνέλεξαν τὰ καλὰ εἰς ἀγγεῖα, τὰ δὲ σαπρὰ ἔξω ἔβαλον."
+      }
     },
     "49": {
-      "verse_number": 49,
-      "sort_number": 49,
-      "text": "[MATHE 13:49]",
-      "word_count": 5,
-      "russian": "Так будет при кончине века: изыдут Ангелы, и отделят злых из среды праведных,",
-      "greek": "Οὕτως ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος· ἐξελεύσονται οἱ ἄγγελοι, καὶ ἀφοριοῦσιν τοὺς πονηροὺς ἐκ μέσου τῶν δικαίων,",
-      "latin": "Sic erit in consummatione sæculi: exibunt angeli, et separabunt malos de medio justorum,"
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "VUL": "Sic erit in consummatione sæculi: exibunt angeli, et separabunt malos de medio justorum,",
+        "LXX": "Οὕτως ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος· ἐξελεύσονται οἱ ἄγγελοι, καὶ ἀφοριοῦσιν τοὺς πονηροὺς ἐκ μέσου τῶν δικαίων,",
+        "SYN": "Так будет при кончине века: изыдут Ангелы, и отделят злых из среды праведных,",
+        "BYZ": "Οὕτως ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος· ἐξελεύσονται οἱ ἄγγελοι, καὶ ἀφοριοῦσιν τοὺς πονηροὺς ἐκ μέσου τῶν δικαίων,"
+      }
     },
     "50": {
-      "verse_number": 50,
-      "sort_number": 50,
-      "text": "[MATHE 13:50]",
-      "word_count": 5,
-      "russian": "и ввергнут их в печь огненную: там будет плач и скрежет зубов.",
-      "greek": "καὶ βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
-      "latin": "et mittent eos in caminum ignis: ibi erit fletus, et stridor dentium."
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "VUL": "et mittent eos in caminum ignis: ibi erit fletus, et stridor dentium.",
+        "LXX": "καὶ βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
+        "SYN": "и ввергнут их в печь огненную: там будет плач и скрежет зубов.",
+        "BYZ": "καὶ βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων."
+      }
     },
     "51": {
-      "verse_number": 51,
-      "sort_number": 51,
-      "text": "[MATHE 13:51]",
-      "word_count": 5,
-      "russian": "И спросил их Иисус: поняли ли вы все это? Они говорят Ему: так, Господи!",
-      "greek": "Λέγει αὐτοῖς ὁ Ἰησοῦς, Συνήκατε ταῦτα πάντα; Λέγουσιν αὐτῷ, Ναί, κύριε.",
-      "latin": "Intellexistis hæc omnia ? Dicunt ei: Etiam."
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "VUL": "Intellexistis hæc omnia ? Dicunt ei: Etiam.",
+        "LXX": "Λέγει αὐτοῖς ὁ Ἰησοῦς, Συνήκατε ταῦτα πάντα; Λέγουσιν αὐτῷ, Ναί, κύριε.",
+        "SYN": "И спросил их Иисус: поняли ли вы все это? Они говорят Ему: так, Господи!",
+        "BYZ": "Λέγει αὐτοῖς ὁ Ἰησοῦς, Συνήκατε ταῦτα πάντα; Λέγουσιν αὐτῷ, Ναί, κύριε."
+      }
     },
     "52": {
-      "verse_number": 52,
-      "sort_number": 52,
-      "text": "[MATHE 13:52]",
-      "word_count": 5,
-      "russian": "Он же сказал им: поэтому всякий книжник, наученный Царству Небесному, подобен хозяину, который выносит из сокровищницы своей новое и старое.",
-      "greek": "Ὁ δὲ εἶπεν αὐτοῖς, Διὰ τοῦτο πᾶς γραμματεὺς μαθητευθεὶς εἰς τὴν βασιλείαν τῶν οὐρανῶν ὅμοιός ἐστιν ἀνθρώπῳ οἰκοδεσπότῃ, ὅστις ἐκβάλλει ἐκ τοῦ θησαυροῦ αὐτοῦ καινὰ καὶ παλαιά.",
-      "latin": "Ait illis: Ideo omnis scriba doctus in regno cælorum, similis est homini patrifamilias, qui profert de thesauro suo nova et vetera."
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "VUL": "Ait illis: Ideo omnis scriba doctus in regno cælorum, similis est homini patrifamilias, qui profert de thesauro suo nova et vetera.",
+        "LXX": "Ὁ δὲ εἶπεν αὐτοῖς, Διὰ τοῦτο πᾶς γραμματεὺς μαθητευθεὶς εἰς τὴν βασιλείαν τῶν οὐρανῶν ὅμοιός ἐστιν ἀνθρώπῳ οἰκοδεσπότῃ, ὅστις ἐκβάλλει ἐκ τοῦ θησαυροῦ αὐτοῦ καινὰ καὶ παλαιά.",
+        "SYN": "Он же сказал им: поэтому всякий книжник, наученный Царству Небесному, подобен хозяину, который выносит из сокровищницы своей новое и старое.",
+        "BYZ": "Ὁ δὲ εἶπεν αὐτοῖς, Διὰ τοῦτο πᾶς γραμματεὺς μαθητευθεὶς εἰς τὴν βασιλείαν τῶν οὐρανῶν ὅμοιός ἐστιν ἀνθρώπῳ οἰκοδεσπότῃ, ὅστις ἐκβάλλει ἐκ τοῦ θησαυροῦ αὐτοῦ καινὰ καὶ παλαιά."
+      }
     },
     "53": {
-      "verse_number": 53,
-      "sort_number": 53,
-      "text": "[MATHE 13:53]",
-      "word_count": 5,
-      "russian": "И, когда окончил Иисус притчи сии, пошел оттуда.",
-      "greek": "Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς τὰς παραβολὰς ταύτας, μετῆρεν ἐκεῖθεν·",
-      "latin": "Et factum est, cum consummasset Jesus parabolas istas, transiit inde."
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "VUL": "Et factum est, cum consummasset Jesus parabolas istas, transiit inde.",
+        "LXX": "Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς τὰς παραβολὰς ταύτας, μετῆρεν ἐκεῖθεν·",
+        "SYN": "И, когда окончил Иисус притчи сии, пошел оттуда.",
+        "BYZ": "Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς τὰς παραβολὰς ταύτας, μετῆρεν ἐκεῖθεν·"
+      }
     },
     "54": {
-      "verse_number": 54,
-      "sort_number": 54,
-      "text": "[MATHE 13:54]",
-      "word_count": 5,
-      "russian": "И, придя в отечество Свое, учил их в синагоге их, так что они изумлялись и говорили: откуда у Него такая премудрость и силы?",
-      "greek": "καὶ ἐλθὼν εἰς τὴν πατρίδα αὐτοῦ ἐδίδασκεν αὐτοὺς ἐν τῇ συναγωγῇ αὐτῶν, ὥστε ἐκπλήττεσθαι αὐτοὺς καὶ λέγειν, Πόθεν τούτῳ ἡ σοφία αὕτη καὶ αἱ δυνάμεις;",
-      "latin": "Et veniens in patriam suam, docebat eos in synagogis eorum, ita ut mirarentur, et dicerent: Unde huic sapientia hæc, et virtutes ?"
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "VUL": "Et veniens in patriam suam, docebat eos in synagogis eorum, ita ut mirarentur, et dicerent: Unde huic sapientia hæc, et virtutes ?",
+        "LXX": "καὶ ἐλθὼν εἰς τὴν πατρίδα αὐτοῦ ἐδίδασκεν αὐτοὺς ἐν τῇ συναγωγῇ αὐτῶν, ὥστε ἐκπλήττεσθαι αὐτοὺς καὶ λέγειν, Πόθεν τούτῳ ἡ σοφία αὕτη καὶ αἱ δυνάμεις;",
+        "SYN": "И, придя в отечество Свое, учил их в синагоге их, так что они изумлялись и говорили: откуда у Него такая премудрость и силы?",
+        "BYZ": "καὶ ἐλθὼν εἰς τὴν πατρίδα αὐτοῦ ἐδίδασκεν αὐτοὺς ἐν τῇ συναγωγῇ αὐτῶν, ὥστε ἐκπλήττεσθαι αὐτοὺς καὶ λέγειν, Πόθεν τούτῳ ἡ σοφία αὕτη καὶ αἱ δυνάμεις;"
+      }
     },
     "55": {
-      "verse_number": 55,
-      "sort_number": 55,
-      "text": "[MATHE 13:55]",
-      "word_count": 5,
-      "russian": "не плотников ли Он сын? не Его ли Мать называется Мария, и братья Его Иаков и Иосий, и Симон, и Иуда?",
-      "greek": "Οὐχ οὗτός ἐστιν ὁ τοῦ τέκτονος υἱός; Οὐχὶ ἡ μήτηρ αὐτοῦ λέγεται Μαριάμ, καὶ οἱ ἀδελφοὶ αὐτοῦ Ἰάκωβος καὶ Ἰωσῆς καὶ Σίμων καὶ Ἰούδας;",
-      "latin": "Nonne hic est fabri filius ? nonne mater ejus dicitur Maria, et fratres ejus, Jacobus, et Joseph, et Simon, et Judas ?"
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "VUL": "Nonne hic est fabri filius ? nonne mater ejus dicitur Maria, et fratres ejus, Jacobus, et Joseph, et Simon, et Judas ?",
+        "LXX": "Οὐχ οὗτός ἐστιν ὁ τοῦ τέκτονος υἱός; Οὐχὶ ἡ μήτηρ αὐτοῦ λέγεται Μαριάμ, καὶ οἱ ἀδελφοὶ αὐτοῦ Ἰάκωβος καὶ Ἰωσῆς καὶ Σίμων καὶ Ἰούδας;",
+        "SYN": "не плотников ли Он сын? не Его ли Мать называется Мария, и братья Его Иаков и Иосий, и Симон, и Иуда?",
+        "BYZ": "Οὐχ οὗτός ἐστιν ὁ τοῦ τέκτονος υἱός; Οὐχὶ ἡ μήτηρ αὐτοῦ λέγεται Μαριάμ, καὶ οἱ ἀδελφοὶ αὐτοῦ Ἰάκωβος καὶ Ἰωσῆς καὶ Σίμων καὶ Ἰούδας;"
+      }
     },
     "56": {
-      "verse_number": 56,
-      "sort_number": 56,
-      "text": "[MATHE 13:56]",
-      "word_count": 5,
-      "russian": "и сестры Его не все ли между нами? откуда же у Него все это?",
-      "greek": "Καὶ αἱ ἀδελφαὶ αὐτοῦ οὐχὶ πᾶσαι πρὸς ἡμᾶς εἰσίν; Πόθεν οὖν τούτῳ ταῦτα πάντα;",
-      "latin": "et sorores ejus, nonne omnes apud nos sunt ? unde ergo huic omnia ista ?"
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "VUL": "et sorores ejus, nonne omnes apud nos sunt ? unde ergo huic omnia ista ?",
+        "LXX": "Καὶ αἱ ἀδελφαὶ αὐτοῦ οὐχὶ πᾶσαι πρὸς ἡμᾶς εἰσίν; Πόθεν οὖν τούτῳ ταῦτα πάντα;",
+        "SYN": "и сестры Его не все ли между нами? откуда же у Него все это?",
+        "BYZ": "Καὶ αἱ ἀδελφαὶ αὐτοῦ οὐχὶ πᾶσαι πρὸς ἡμᾶς εἰσίν; Πόθεν οὖν τούτῳ ταῦτα πάντα;"
+      }
     },
     "57": {
-      "verse_number": 57,
-      "sort_number": 57,
-      "text": "[MATHE 13:57]",
-      "word_count": 5,
-      "russian": "И соблазнялись о Нем. Иисус же сказал им: не бывает пророк без чести, разве только в отечестве своем и в доме своем.",
-      "greek": "Καὶ ἐσκανδαλίζοντο ἐν αὐτῷ. Ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς, Οὐκ ἔστιν προφήτης ἄτιμος, εἰ μὴ ἐν τῇ πατρίδι αὐτοῦ καὶ ἐν τῇ οἰκίᾳ αὐτοῦ.",
-      "latin": "Et scandalizabantur in eo. Jesus autem dixit eis: Non est propheta sine honore, nisi in patria sua, et in domo sua."
+      "seq": 57,
+      "v_in": {
+        "MT": 57,
+        "VUL": 57,
+        "LXX": 57
+      },
+      "text": {
+        "VUL": "Et scandalizabantur in eo. Jesus autem dixit eis: Non est propheta sine honore, nisi in patria sua, et in domo sua.",
+        "LXX": "Καὶ ἐσκανδαλίζοντο ἐν αὐτῷ. Ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς, Οὐκ ἔστιν προφήτης ἄτιμος, εἰ μὴ ἐν τῇ πατρίδι αὐτοῦ καὶ ἐν τῇ οἰκίᾳ αὐτοῦ.",
+        "SYN": "И соблазнялись о Нем. Иисус же сказал им: не бывает пророк без чести, разве только в отечестве своем и в доме своем.",
+        "BYZ": "Καὶ ἐσκανδαλίζοντο ἐν αὐτῷ. Ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς, Οὐκ ἔστιν προφήτης ἄτιμος, εἰ μὴ ἐν τῇ πατρίδι αὐτοῦ καὶ ἐν τῇ οἰκίᾳ αὐτοῦ."
+      }
     },
     "58": {
-      "verse_number": 58,
-      "sort_number": 58,
-      "text": "[MATHE 13:58]",
-      "word_count": 5,
-      "russian": "И не совершил там многих чудес по неверию их.",
-      "greek": "Καὶ οὐκ ἐποίησεν ἐκεῖ δυνάμεις πολλάς, διὰ τὴν ἀπιστίαν αὐτῶν.",
-      "latin": "Et non fecit ibi virtutes multas propter incredulitatem illorum."
+      "seq": 58,
+      "v_in": {
+        "MT": 58,
+        "VUL": 58,
+        "LXX": 58
+      },
+      "text": {
+        "VUL": "Et non fecit ibi virtutes multas propter incredulitatem illorum.",
+        "LXX": "Καὶ οὐκ ἐποίησεν ἐκεῖ δυνάμεις πολλάς, διὰ τὴν ἀπιστίαν αὐτῶν.",
+        "SYN": "И не совершил там многих чудес по неверию их.",
+        "BYZ": "Καὶ οὐκ ἐποίησεν ἐκεῖ δυνάμεις πολλάς, διὰ τὴν ἀπιστίαν αὐτῶν."
+      }
     }
   }
 }

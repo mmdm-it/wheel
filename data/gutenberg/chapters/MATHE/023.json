@@ -1,364 +1,561 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "MATHE_023",
-  "chapter_key": "23",
-  "chapter_number": 23,
-  "sort_number": 23,
-  "name": "23",
   "book_key": "MATHE",
+  "sequence": 23,
+  "chapter_in": {
+    "MT": 23,
+    "VUL": 23,
+    "LXX": 23
+  },
   "testament": "Novum_Testamentum",
   "section": "Evangelia",
-  "verse_count": 39,
   "verses": {
     "1": {
-      "verse_number": 1,
-      "sort_number": 1,
-      "text": "[MATHE 23:1]",
-      "word_count": 5,
-      "russian": "Тогда Иисус начал говорить народу и ученикам Своим",
-      "greek": "Τότε ὁ Ἰησοῦς ἐλάλησεν τοῖς ὄχλοις καὶ τοῖς μαθηταῖς αὐτοῦ,",
-      "latin": "Tunc Jesus locutus est ad turbas, et ad discipulos suos,"
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "Tunc Jesus locutus est ad turbas, et ad discipulos suos,",
+        "LXX": "Τότε ὁ Ἰησοῦς ἐλάλησεν τοῖς ὄχλοις καὶ τοῖς μαθηταῖς αὐτοῦ,",
+        "SYN": "Тогда Иисус начал говорить народу и ученикам Своим",
+        "BYZ": "Τότε ὁ Ἰησοῦς ἐλάλησεν τοῖς ὄχλοις καὶ τοῖς μαθηταῖς αὐτοῦ,"
+      }
     },
     "2": {
-      "verse_number": 2,
-      "sort_number": 2,
-      "text": "[MATHE 23:2]",
-      "word_count": 5,
-      "russian": "и сказал: на Моисеевом седалище сели книжники и фарисеи;",
-      "greek": "λέγων, Ἐπὶ τῆς Μωσέως καθέδρας ἐκάθισαν οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι·",
-      "latin": "dicens: Super cathedram Moysi sederunt scribæ et pharisæi."
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "dicens: Super cathedram Moysi sederunt scribæ et pharisæi.",
+        "LXX": "λέγων, Ἐπὶ τῆς Μωσέως καθέδρας ἐκάθισαν οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι·",
+        "SYN": "и сказал: на Моисеевом седалище сели книжники и фарисеи;",
+        "BYZ": "λέγων, Ἐπὶ τῆς Μωσέως καθέδρας ἐκάθισαν οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι·"
+      }
     },
     "3": {
-      "verse_number": 3,
-      "sort_number": 3,
-      "text": "[MATHE 23:3]",
-      "word_count": 5,
-      "russian": "итак все, что они велят вам соблюдать, соблюдайте и делайте; по делам же их не поступайте, ибо они говорят, и не делают:",
-      "greek": "πάντα οὖν ὅσα ἐὰν εἴπωσιν ὑμῖν τηρεῖν, τηρεῖτε καὶ ποιεῖτε· κατὰ δὲ τὰ ἔργα αὐτῶν μὴ ποιεῖτε, λέγουσιν γὰρ καὶ οὐ ποιοῦσιν.",
-      "latin": "Omnia ergo quæcumque dixerint vobis, servate, et facite: secundum opera vero eorum nolite facere: dicunt enim, et non faciunt."
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "Omnia ergo quæcumque dixerint vobis, servate, et facite: secundum opera vero eorum nolite facere: dicunt enim, et non faciunt.",
+        "LXX": "πάντα οὖν ὅσα ἐὰν εἴπωσιν ὑμῖν τηρεῖν, τηρεῖτε καὶ ποιεῖτε· κατὰ δὲ τὰ ἔργα αὐτῶν μὴ ποιεῖτε, λέγουσιν γὰρ καὶ οὐ ποιοῦσιν.",
+        "SYN": "итак все, что они велят вам соблюдать, соблюдайте и делайте; по делам же их не поступайте, ибо они говорят, и не делают:",
+        "BYZ": "πάντα οὖν ὅσα ἐὰν εἴπωσιν ὑμῖν τηρεῖν, τηρεῖτε καὶ ποιεῖτε· κατὰ δὲ τὰ ἔργα αὐτῶν μὴ ποιεῖτε, λέγουσιν γὰρ καὶ οὐ ποιοῦσιν."
+      }
     },
     "4": {
-      "verse_number": 4,
-      "sort_number": 4,
-      "text": "[MATHE 23:4]",
-      "word_count": 5,
-      "russian": "связывают бремена тяжелые и неудобоносимые и возлагают на плечи людям, а сами не хотят и перстом двинуть их;",
-      "greek": "Δεσμεύουσιν γὰρ φορτία βαρέα καὶ δυσβάστακτα, καὶ ἐπιτιθέασιν ἐπὶ τοὺς ὤμους τῶν ἀνθρώπων, τῷ δὲ δακτύλῳ αὐτῶν οὐ θέλουσιν κινῆσαι αὐτά.",
-      "latin": "Alligant enim onera gravia, et importabilia, et imponunt in humeros hominum: digito autem suo nolunt ea movere."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "Alligant enim onera gravia, et importabilia, et imponunt in humeros hominum: digito autem suo nolunt ea movere.",
+        "LXX": "Δεσμεύουσιν γὰρ φορτία βαρέα καὶ δυσβάστακτα, καὶ ἐπιτιθέασιν ἐπὶ τοὺς ὤμους τῶν ἀνθρώπων, τῷ δὲ δακτύλῳ αὐτῶν οὐ θέλουσιν κινῆσαι αὐτά.",
+        "SYN": "связывают бремена тяжелые и неудобоносимые и возлагают на плечи людям, а сами не хотят и перстом двинуть их;",
+        "BYZ": "Δεσμεύουσιν γὰρ φορτία βαρέα καὶ δυσβάστακτα, καὶ ἐπιτιθέασιν ἐπὶ τοὺς ὤμους τῶν ἀνθρώπων, τῷ δὲ δακτύλῳ αὐτῶν οὐ θέλουσιν κινῆσαι αὐτά."
+      }
     },
     "5": {
-      "verse_number": 5,
-      "sort_number": 5,
-      "text": "[MATHE 23:5]",
-      "word_count": 5,
-      "russian": "все же дела свои делают с тем, чтобы видели их люди: расширяют хранилища свои и увеличивают воскрилия одежд своих;",
-      "greek": "Πάντα δὲ τὰ ἔργα αὐτῶν ποιοῦσιν πρὸς τὸ θεαθῆναι τοῖς ἀνθρώποις· πλατύνουσιν δὲ τὰ φυλακτήρια αὐτῶν, καὶ μεγαλύνουσιν τὰ κράσπεδα τῶν ἱματίων αὐτῶν·",
-      "latin": "Omnia vero opera sua faciunt ut videantur ab hominibus: dilatant enim phylacteria sua, et magnificant fimbrias."
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Omnia vero opera sua faciunt ut videantur ab hominibus: dilatant enim phylacteria sua, et magnificant fimbrias.",
+        "LXX": "Πάντα δὲ τὰ ἔργα αὐτῶν ποιοῦσιν πρὸς τὸ θεαθῆναι τοῖς ἀνθρώποις· πλατύνουσιν δὲ τὰ φυλακτήρια αὐτῶν, καὶ μεγαλύνουσιν τὰ κράσπεδα τῶν ἱματίων αὐτῶν·",
+        "SYN": "все же дела свои делают с тем, чтобы видели их люди: расширяют хранилища свои и увеличивают воскрилия одежд своих;",
+        "BYZ": "Πάντα δὲ τὰ ἔργα αὐτῶν ποιοῦσιν πρὸς τὸ θεαθῆναι τοῖς ἀνθρώποις· πλατύνουσιν δὲ τὰ φυλακτήρια αὐτῶν, καὶ μεγαλύνουσιν τὰ κράσπεδα τῶν ἱματίων αὐτῶν·"
+      }
     },
     "6": {
-      "verse_number": 6,
-      "sort_number": 6,
-      "text": "[MATHE 23:6]",
-      "word_count": 5,
-      "russian": "также любят предвозлежания на пиршествах и председания в синагогах",
-      "greek": "φιλοῦσίν τε τὴν πρωτοκλισίαν ἐν τοῖς δείπνοις, καὶ τὰς πρωτοκαθεδρίας ἐν ταῖς συναγωγαῖς,",
-      "latin": "Amant autem primos recubitus in cnis, et primas cathedras in synagogis,"
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "Amant autem primos recubitus in cnis, et primas cathedras in synagogis,",
+        "LXX": "φιλοῦσίν τε τὴν πρωτοκλισίαν ἐν τοῖς δείπνοις, καὶ τὰς πρωτοκαθεδρίας ἐν ταῖς συναγωγαῖς,",
+        "SYN": "также любят предвозлежания на пиршествах и председания в синагогах",
+        "BYZ": "φιλοῦσίν τε τὴν πρωτοκλισίαν ἐν τοῖς δείπνοις, καὶ τὰς πρωτοκαθεδρίας ἐν ταῖς συναγωγαῖς,"
+      }
     },
     "7": {
-      "verse_number": 7,
-      "sort_number": 7,
-      "text": "[MATHE 23:7]",
-      "word_count": 5,
-      "russian": "и приветствия в народных собраниях, и чтобы люди звали их: учитель! учитель!",
-      "greek": "καὶ τοὺς ἀσπασμοὺς ἐν ταῖς ἀγοραῖς, καὶ καλεῖσθαι ὑπὸ τῶν ἀνθρώπων, Ῥαββί, ῥαββί·",
-      "latin": "et salutationes in foro, et vocari ab hominibus Rabbi."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "et salutationes in foro, et vocari ab hominibus Rabbi.",
+        "LXX": "καὶ τοὺς ἀσπασμοὺς ἐν ταῖς ἀγοραῖς, καὶ καλεῖσθαι ὑπὸ τῶν ἀνθρώπων, Ῥαββί, ῥαββί·",
+        "SYN": "и приветствия в народных собраниях, и чтобы люди звали их: учитель! учитель!",
+        "BYZ": "καὶ τοὺς ἀσπασμοὺς ἐν ταῖς ἀγοραῖς, καὶ καλεῖσθαι ὑπὸ τῶν ἀνθρώπων, Ῥαββί, ῥαββί·"
+      }
     },
     "8": {
-      "verse_number": 8,
-      "sort_number": 8,
-      "text": "[MATHE 23:8]",
-      "word_count": 5,
-      "russian": "А вы не называйтесь учителями, ибо один у вас Учитель -- Христос, все же вы -- братья;",
-      "greek": "ὑμεῖς δὲ μὴ κληθῆτε Ῥαββί· εἷς γάρ ἐστιν ὑμῶν ὁ καθηγητής, ὁ χριστός· πάντες δὲ ὑμεῖς ἀδελφοί ἐστε.",
-      "latin": "Vos autem nolite vocari Rabbi: unus est enim magister vester, omnes autem vos fratres estis."
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Vos autem nolite vocari Rabbi: unus est enim magister vester, omnes autem vos fratres estis.",
+        "LXX": "ὑμεῖς δὲ μὴ κληθῆτε Ῥαββί· εἷς γάρ ἐστιν ὑμῶν ὁ καθηγητής, ὁ χριστός· πάντες δὲ ὑμεῖς ἀδελφοί ἐστε.",
+        "SYN": "А вы не называйтесь учителями, ибо один у вас Учитель -- Христос, все же вы -- братья;",
+        "BYZ": "ὑμεῖς δὲ μὴ κληθῆτε Ῥαββί· εἷς γάρ ἐστιν ὑμῶν ὁ καθηγητής, ὁ χριστός· πάντες δὲ ὑμεῖς ἀδελφοί ἐστε."
+      }
     },
     "9": {
-      "verse_number": 9,
-      "sort_number": 9,
-      "text": "[MATHE 23:9]",
-      "word_count": 5,
-      "russian": "и отцом себе не называйте никого на земле, ибо один у вас Отец, Который на небесах;",
-      "greek": "Καὶ πατέρα μὴ καλέσητε ὑμῶν ἐπὶ τῆς γῆς· εἷς γάρ ἐστιν ὁ πατὴρ ὑμῶν, ὁ ἐν τοῖς οὐρανοῖς.",
-      "latin": "Et patrem nolite vocare vobis super terram: unus est enim pater vester qui in cælis est."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "Et patrem nolite vocare vobis super terram: unus est enim pater vester qui in cælis est.",
+        "LXX": "Καὶ πατέρα μὴ καλέσητε ὑμῶν ἐπὶ τῆς γῆς· εἷς γάρ ἐστιν ὁ πατὴρ ὑμῶν, ὁ ἐν τοῖς οὐρανοῖς.",
+        "SYN": "и отцом себе не называйте никого на земле, ибо один у вас Отец, Который на небесах;",
+        "BYZ": "Καὶ πατέρα μὴ καλέσητε ὑμῶν ἐπὶ τῆς γῆς· εἷς γάρ ἐστιν ὁ πατὴρ ὑμῶν, ὁ ἐν τοῖς οὐρανοῖς."
+      }
     },
     "10": {
-      "verse_number": 10,
-      "sort_number": 10,
-      "text": "[MATHE 23:10]",
-      "word_count": 5,
-      "russian": "и не называйтесь наставниками, ибо один у вас Наставник -- Христос.",
-      "greek": "Μηδὲ κληθῆτε καθηγηταί· εἷς γὰρ ὑμῶν ἐστιν ὁ καθηγητής, ὁ χριστός.",
-      "latin": "Nec vocemini magistri: quia magister vester unus est, Christus."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Nec vocemini magistri: quia magister vester unus est, Christus.",
+        "LXX": "Μηδὲ κληθῆτε καθηγηταί· εἷς γὰρ ὑμῶν ἐστιν ὁ καθηγητής, ὁ χριστός.",
+        "SYN": "и не называйтесь наставниками, ибо один у вас Наставник -- Христос.",
+        "BYZ": "Μηδὲ κληθῆτε καθηγηταί· εἷς γὰρ ὑμῶν ἐστιν ὁ καθηγητής, ὁ χριστός."
+      }
     },
     "11": {
-      "verse_number": 11,
-      "sort_number": 11,
-      "text": "[MATHE 23:11]",
-      "word_count": 5,
-      "russian": "Больший из вас да будет вам слуга:",
-      "greek": "Ὁ δὲ μείζων ὑμῶν ἔσται ὑμῶν διάκονος.",
-      "latin": "Qui major est vestrum, erit minister vester."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Qui major est vestrum, erit minister vester.",
+        "LXX": "Ὁ δὲ μείζων ὑμῶν ἔσται ὑμῶν διάκονος.",
+        "SYN": "Больший из вас да будет вам слуга:",
+        "BYZ": "Ὁ δὲ μείζων ὑμῶν ἔσται ὑμῶν διάκονος."
+      }
     },
     "12": {
-      "verse_number": 12,
-      "sort_number": 12,
-      "text": "[MATHE 23:12]",
-      "word_count": 5,
-      "russian": "ибо, кто возвышает себя, тот унижен будет, а кто унижает себя, тот возвысится.",
-      "greek": "Ὅστις δὲ ὑψώσει ἑαυτόν, ταπεινωθήσεται· καὶ ὅστις ταπεινώσει ἑαυτόν, ὑψωθήσεται.",
-      "latin": "Qui autem se exaltaverit, humiliabitur: et qui se humiliaverit, exaltabitur."
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "Qui autem se exaltaverit, humiliabitur: et qui se humiliaverit, exaltabitur.",
+        "LXX": "Ὅστις δὲ ὑψώσει ἑαυτόν, ταπεινωθήσεται· καὶ ὅστις ταπεινώσει ἑαυτόν, ὑψωθήσεται.",
+        "SYN": "ибо, кто возвышает себя, тот унижен будет, а кто унижает себя, тот возвысится.",
+        "BYZ": "Ὅστις δὲ ὑψώσει ἑαυτόν, ταπεινωθήσεται· καὶ ὅστις ταπεινώσει ἑαυτόν, ὑψωθήσεται."
+      }
     },
     "13": {
-      "verse_number": 13,
-      "sort_number": 13,
-      "text": "[MATHE 23:13]",
-      "word_count": 5,
-      "russian": "Горе вам, книжники и фарисеи, лицемеры, что затворяете Царство Небесное человекам, ибо сами не входите и хотящих войти не допускаете.",
-      "greek": "Οὐαὶ δὲ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι κατεσθίετε τὰς οἰκίας τῶν χηρῶν, καὶ προφάσει μακρὰ προσευχόμενοι· διὰ τοῦτο λήψεσθε περισσότερον κρίμα.",
-      "latin": "Væ autem vobis scribæ et pharisæi hypocritæ, quia clauditis regnum cælorum ante homines ! vos enim non intratis, nec introëuntes sinitis intrare."
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "Væ autem vobis scribæ et pharisæi hypocritæ, quia clauditis regnum cælorum ante homines ! vos enim non intratis, nec introëuntes sinitis intrare.",
+        "LXX": "Οὐαὶ δὲ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι κατεσθίετε τὰς οἰκίας τῶν χηρῶν, καὶ προφάσει μακρὰ προσευχόμενοι· διὰ τοῦτο λήψεσθε περισσότερον κρίμα.",
+        "SYN": "Горе вам, книжники и фарисеи, лицемеры, что затворяете Царство Небесное человекам, ибо сами не входите и хотящих войти не допускаете.",
+        "BYZ": "Οὐαὶ δὲ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι κατεσθίετε τὰς οἰκίας τῶν χηρῶν, καὶ προφάσει μακρὰ προσευχόμενοι· διὰ τοῦτο λήψεσθε περισσότερον κρίμα."
+      }
     },
     "14": {
-      "verse_number": 14,
-      "sort_number": 14,
-      "text": "[MATHE 23:14]",
-      "word_count": 5,
-      "russian": "Горе вам, книжники и фарисеи, лицемеры, что поедаете домы вдов и лицемерно долго молитесь: за то примете тем большее осуждение.",
-      "greek": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι κλείετε τὴν βασιλείαν τῶν οὐρανῶν ἔμπροσθεν τῶν ἀνθρώπων· ὑμεῖς γὰρ οὐκ εἰσέρχεσθε, οὐδὲ τοὺς εἰσερχομένους ἀφίετε εἰσελθεῖν.",
-      "latin": "Væ vobis scribæ et pharisæi hypocritæ, quia comeditis domos viduarum, orationes longas orantes ! propter hoc amplius accipietis judicium."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Væ vobis scribæ et pharisæi hypocritæ, quia comeditis domos viduarum, orationes longas orantes ! propter hoc amplius accipietis judicium.",
+        "LXX": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι κλείετε τὴν βασιλείαν τῶν οὐρανῶν ἔμπροσθεν τῶν ἀνθρώπων· ὑμεῖς γὰρ οὐκ εἰσέρχεσθε, οὐδὲ τοὺς εἰσερχομένους ἀφίετε εἰσελθεῖν.",
+        "SYN": "Горе вам, книжники и фарисеи, лицемеры, что поедаете домы вдов и лицемерно долго молитесь: за то примете тем большее осуждение.",
+        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι κλείετε τὴν βασιλείαν τῶν οὐρανῶν ἔμπροσθεν τῶν ἀνθρώπων· ὑμεῖς γὰρ οὐκ εἰσέρχεσθε, οὐδὲ τοὺς εἰσερχομένους ἀφίετε εἰσελθεῖν."
+      }
     },
     "15": {
-      "verse_number": 15,
-      "sort_number": 15,
-      "text": "[MATHE 23:15]",
-      "word_count": 5,
-      "russian": "Горе вам, книжники и фарисеи, лицемеры, что обходите море и сушу, дабы обратить хотя одного; и когда это случится, делаете его сыном геенны, вдвое худшим вас.",
-      "greek": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι περιάγετε τὴν θάλασσαν καὶ τὴν ξηρὰν ποιῆσαι ἕνα προσήλυτον, καὶ ὅταν γένηται, ποιεῖτε αὐτὸν υἱὸν γεέννης διπλότερον ὑμῶν.",
-      "latin": "Væ vobis scribæ et pharisæi hypocritæ, quia circuitis mare, et aridam, ut faciatis unum proselytum, et cum fuerit factus, facitis eum filium gehennæ duplo quam vos."
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Væ vobis scribæ et pharisæi hypocritæ, quia circuitis mare, et aridam, ut faciatis unum proselytum, et cum fuerit factus, facitis eum filium gehennæ duplo quam vos.",
+        "LXX": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι περιάγετε τὴν θάλασσαν καὶ τὴν ξηρὰν ποιῆσαι ἕνα προσήλυτον, καὶ ὅταν γένηται, ποιεῖτε αὐτὸν υἱὸν γεέννης διπλότερον ὑμῶν.",
+        "SYN": "Горе вам, книжники и фарисеи, лицемеры, что обходите море и сушу, дабы обратить хотя одного; и когда это случится, делаете его сыном геенны, вдвое худшим вас.",
+        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι περιάγετε τὴν θάλασσαν καὶ τὴν ξηρὰν ποιῆσαι ἕνα προσήλυτον, καὶ ὅταν γένηται, ποιεῖτε αὐτὸν υἱὸν γεέννης διπλότερον ὑμῶν."
+      }
     },
     "16": {
-      "verse_number": 16,
-      "sort_number": 16,
-      "text": "[MATHE 23:16]",
-      "word_count": 5,
-      "russian": "Горе вам, вожди слепые, которые говорите: если кто поклянется храмом, то ничего, а если кто поклянется золотом храма, то повинен.",
-      "greek": "Οὐαὶ ὑμῖν, ὁδηγοὶ τυφλοί, οἱ λέγοντες, Ὃς ἂν ὀμόσῃ ἐν τῷ ναῷ, οὐδέν ἐστιν· ὃς δ’ ἂν ὀμόσῃ ἐν τῷ χρυσῷ τοῦ ναοῦ, ὀφείλει.",
-      "latin": "Væ vobis duces cæci, qui dicitis: Quicumque juraverit per templum, nihil est: qui autem juraverit in auro templi, debet."
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "Væ vobis duces cæci, qui dicitis: Quicumque juraverit per templum, nihil est: qui autem juraverit in auro templi, debet.",
+        "LXX": "Οὐαὶ ὑμῖν, ὁδηγοὶ τυφλοί, οἱ λέγοντες, Ὃς ἂν ὀμόσῃ ἐν τῷ ναῷ, οὐδέν ἐστιν· ὃς δ’ ἂν ὀμόσῃ ἐν τῷ χρυσῷ τοῦ ναοῦ, ὀφείλει.",
+        "SYN": "Горе вам, вожди слепые, которые говорите: если кто поклянется храмом, то ничего, а если кто поклянется золотом храма, то повинен.",
+        "BYZ": "Οὐαὶ ὑμῖν, ὁδηγοὶ τυφλοί, οἱ λέγοντες, Ὃς ἂν ὀμόσῃ ἐν τῷ ναῷ, οὐδέν ἐστιν· ὃς δ’ ἂν ὀμόσῃ ἐν τῷ χρυσῷ τοῦ ναοῦ, ὀφείλει."
+      }
     },
     "17": {
-      "verse_number": 17,
-      "sort_number": 17,
-      "text": "[MATHE 23:17]",
-      "word_count": 5,
-      "russian": "Безумные и слепые! что больше: золото, или храм, освящающий золото?",
-      "greek": "Μωροὶ καὶ τυφλοί· τίς γὰρ μείζων ἐστίν, ὁ χρυσός, ἢ ὁ ναὸς ὁ ἁγιάζων τὸν χρυσόν;",
-      "latin": "Stulti et cæci: quid enim majus est ? aurum, an templum, quod sanctificat aurum ?"
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Stulti et cæci: quid enim majus est ? aurum, an templum, quod sanctificat aurum ?",
+        "LXX": "Μωροὶ καὶ τυφλοί· τίς γὰρ μείζων ἐστίν, ὁ χρυσός, ἢ ὁ ναὸς ὁ ἁγιάζων τὸν χρυσόν;",
+        "SYN": "Безумные и слепые! что больше: золото, или храм, освящающий золото?",
+        "BYZ": "Μωροὶ καὶ τυφλοί· τίς γὰρ μείζων ἐστίν, ὁ χρυσός, ἢ ὁ ναὸς ὁ ἁγιάζων τὸν χρυσόν;"
+      }
     },
     "18": {
-      "verse_number": 18,
-      "sort_number": 18,
-      "text": "[MATHE 23:18]",
-      "word_count": 5,
-      "russian": "Также: если кто поклянется жертвенником, то ничего, если же кто поклянется даром, который на нем, то повинен.",
-      "greek": "Καί, Ὃς ἐὰν ὀμόσῃ ἐν τῷ θυσιαστηρίῳ, οὐδέν ἐστιν· ὃς δ’ ἂν ὀμόσῃ ἐν τῷ δώρῳ τῷ ἐπάνω αὐτοῦ, ὀφείλει.",
-      "latin": "Et quicumque juraverit in altari, nihil est: quicumque autem juraverit in dono, quod est super illud, debet."
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Et quicumque juraverit in altari, nihil est: quicumque autem juraverit in dono, quod est super illud, debet.",
+        "LXX": "Καί, Ὃς ἐὰν ὀμόσῃ ἐν τῷ θυσιαστηρίῳ, οὐδέν ἐστιν· ὃς δ’ ἂν ὀμόσῃ ἐν τῷ δώρῳ τῷ ἐπάνω αὐτοῦ, ὀφείλει.",
+        "SYN": "Также: если кто поклянется жертвенником, то ничего, если же кто поклянется даром, который на нем, то повинен.",
+        "BYZ": "Καί, Ὃς ἐὰν ὀμόσῃ ἐν τῷ θυσιαστηρίῳ, οὐδέν ἐστιν· ὃς δ’ ἂν ὀμόσῃ ἐν τῷ δώρῳ τῷ ἐπάνω αὐτοῦ, ὀφείλει."
+      }
     },
     "19": {
-      "verse_number": 19,
-      "sort_number": 19,
-      "text": "[MATHE 23:19]",
-      "word_count": 5,
-      "russian": "Безумные и слепые! что больше: дар, или жертвенник, освящающий дар?",
-      "greek": "Μωροὶ καὶ τυφλοί· τί γὰρ μεῖζον, τὸ δῶρον, ἢ τὸ θυσιαστήριον τὸ ἁγιάζον τὸ δῶρον;",
-      "latin": "Cæci: quid enim majus est, donum, an altare, quod sanctificat donum ?"
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "Cæci: quid enim majus est, donum, an altare, quod sanctificat donum ?",
+        "LXX": "Μωροὶ καὶ τυφλοί· τί γὰρ μεῖζον, τὸ δῶρον, ἢ τὸ θυσιαστήριον τὸ ἁγιάζον τὸ δῶρον;",
+        "SYN": "Безумные и слепые! что больше: дар, или жертвенник, освящающий дар?",
+        "BYZ": "Μωροὶ καὶ τυφλοί· τί γὰρ μεῖζον, τὸ δῶρον, ἢ τὸ θυσιαστήριον τὸ ἁγιάζον τὸ δῶρον;"
+      }
     },
     "20": {
-      "verse_number": 20,
-      "sort_number": 20,
-      "text": "[MATHE 23:20]",
-      "word_count": 5,
-      "russian": "Итак клянущийся жертвенником клянется им и всем, что на нем;",
-      "greek": "Ὁ οὖν ὀμόσας ἐν τῷ θυσιαστηρίῳ ὀμνύει ἐν αὐτῷ καὶ ἐν πᾶσιν τοῖς ἐπάνω αὐτοῦ·",
-      "latin": "Qui ergo jurat in altari, jurat in eo, et in omnibus quæ super illud sunt."
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "Qui ergo jurat in altari, jurat in eo, et in omnibus quæ super illud sunt.",
+        "LXX": "Ὁ οὖν ὀμόσας ἐν τῷ θυσιαστηρίῳ ὀμνύει ἐν αὐτῷ καὶ ἐν πᾶσιν τοῖς ἐπάνω αὐτοῦ·",
+        "SYN": "Итак клянущийся жертвенником клянется им и всем, что на нем;",
+        "BYZ": "Ὁ οὖν ὀμόσας ἐν τῷ θυσιαστηρίῳ ὀμνύει ἐν αὐτῷ καὶ ἐν πᾶσιν τοῖς ἐπάνω αὐτοῦ·"
+      }
     },
     "21": {
-      "verse_number": 21,
-      "sort_number": 21,
-      "text": "[MATHE 23:21]",
-      "word_count": 5,
-      "russian": "и клянущийся храмом клянется им и Живущим в нем;",
-      "greek": "καὶ ὁ ὀμόσας ἐν τῷ ναῷ ὀμνύει ἐν αὐτῷ καὶ ἐν τῷ κατοικήσαντι αὐτόν·",
-      "latin": "Et quicumque juraverit in templo, jurat in illo, et in eo qui habitat in ipso:"
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Et quicumque juraverit in templo, jurat in illo, et in eo qui habitat in ipso:",
+        "LXX": "καὶ ὁ ὀμόσας ἐν τῷ ναῷ ὀμνύει ἐν αὐτῷ καὶ ἐν τῷ κατοικήσαντι αὐτόν·",
+        "SYN": "и клянущийся храмом клянется им и Живущим в нем;",
+        "BYZ": "καὶ ὁ ὀμόσας ἐν τῷ ναῷ ὀμνύει ἐν αὐτῷ καὶ ἐν τῷ κατοικήσαντι αὐτόν·"
+      }
     },
     "22": {
-      "verse_number": 22,
-      "sort_number": 22,
-      "text": "[MATHE 23:22]",
-      "word_count": 5,
-      "russian": "и клянущийся небом клянется Престолом Божиим и Сидящим на нем.",
-      "greek": "καὶ ὁ ὀμόσας ἐν τῷ οὐρανῷ ὀμνύει ἐν τῷ θρόνῳ τοῦ θεοῦ καὶ ἐν τῷ καθημένῳ ἐπάνω αὐτοῦ.",
-      "latin": "et qui jurat in cælo, jurat in throno Dei, et in eo qui sedet super eum."
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "et qui jurat in cælo, jurat in throno Dei, et in eo qui sedet super eum.",
+        "LXX": "καὶ ὁ ὀμόσας ἐν τῷ οὐρανῷ ὀμνύει ἐν τῷ θρόνῳ τοῦ θεοῦ καὶ ἐν τῷ καθημένῳ ἐπάνω αὐτοῦ.",
+        "SYN": "и клянущийся небом клянется Престолом Божиим и Сидящим на нем.",
+        "BYZ": "καὶ ὁ ὀμόσας ἐν τῷ οὐρανῷ ὀμνύει ἐν τῷ θρόνῳ τοῦ θεοῦ καὶ ἐν τῷ καθημένῳ ἐπάνω αὐτοῦ."
+      }
     },
     "23": {
-      "verse_number": 23,
-      "sort_number": 23,
-      "text": "[MATHE 23:23]",
-      "word_count": 5,
-      "russian": "Горе вам, книжники и фарисеи, лицемеры, что даете десятину с мяты, аниса и тмина, и оставили важнейшее в законе: суд, милость и веру; сие надлежало делать, и того не оставлять.",
-      "greek": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι ἀποδεκατοῦτε τὸ ἡδύοσμον καὶ τὸ ἄνηθον καὶ τὸ κύμινον, καὶ ἀφήκατε τὰ βαρύτερα τοῦ νόμου, τὴν κρίσιν καὶ τὸν ἔλεον καὶ τὴν πίστιν· ταῦτα ἔδει ποιῆσαι, κἀκεῖνα μὴ ἀφιέναι.",
-      "latin": "Væ vobis scribæ et pharisæi hypocritæ, qui decimatis mentham, et anethum, et cyminum, et reliquistis quæ graviora sunt legis, judicium, et misericordiam, et fidem ! hæc oportuit facere, et illa non omittere."
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "Væ vobis scribæ et pharisæi hypocritæ, qui decimatis mentham, et anethum, et cyminum, et reliquistis quæ graviora sunt legis, judicium, et misericordiam, et fidem ! hæc oportuit facere, et illa non omittere.",
+        "LXX": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι ἀποδεκατοῦτε τὸ ἡδύοσμον καὶ τὸ ἄνηθον καὶ τὸ κύμινον, καὶ ἀφήκατε τὰ βαρύτερα τοῦ νόμου, τὴν κρίσιν καὶ τὸν ἔλεον καὶ τὴν πίστιν· ταῦτα ἔδει ποιῆσαι, κἀκεῖνα μὴ ἀφιέναι.",
+        "SYN": "Горе вам, книжники и фарисеи, лицемеры, что даете десятину с мяты, аниса и тмина, и оставили важнейшее в законе: суд, милость и веру; сие надлежало делать, и того не оставлять.",
+        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι ἀποδεκατοῦτε τὸ ἡδύοσμον καὶ τὸ ἄνηθον καὶ τὸ κύμινον, καὶ ἀφήκατε τὰ βαρύτερα τοῦ νόμου, τὴν κρίσιν καὶ τὸν ἔλεον καὶ τὴν πίστιν· ταῦτα ἔδει ποιῆσαι, κἀκεῖνα μὴ ἀφιέναι."
+      }
     },
     "24": {
-      "verse_number": 24,
-      "sort_number": 24,
-      "text": "[MATHE 23:24]",
-      "word_count": 5,
-      "russian": "Вожди слепые, оцеживающие комара, а верблюда поглощающие!",
-      "greek": "Ὁδηγοὶ τυφλοί, οἱ διϋλίζοντες τὸν κώνωπα, τὴν δὲ κάμηλον καταπίνοντες.",
-      "latin": "Duces cæci, excolantes culicem, camelum autem glutientes."
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Duces cæci, excolantes culicem, camelum autem glutientes.",
+        "LXX": "Ὁδηγοὶ τυφλοί, οἱ διϋλίζοντες τὸν κώνωπα, τὴν δὲ κάμηλον καταπίνοντες.",
+        "SYN": "Вожди слепые, оцеживающие комара, а верблюда поглощающие!",
+        "BYZ": "Ὁδηγοὶ τυφλοί, οἱ διϋλίζοντες τὸν κώνωπα, τὴν δὲ κάμηλον καταπίνοντες."
+      }
     },
     "25": {
-      "verse_number": 25,
-      "sort_number": 25,
-      "text": "[MATHE 23:25]",
-      "word_count": 5,
-      "russian": "Горе вам, книжники и фарисеи, лицемеры, что очищаете внешность чаши и блюда, между тем как внутри они полны хищения и неправды.",
-      "greek": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι καθαρίζετε τὸ ἔξωθεν τοῦ ποτηρίου καὶ τῆς παροψίδος, ἔσωθεν δὲ γέμουσιν ἐξ ἁρπαγῆς καὶ ἀδικίας.",
-      "latin": "Væ vobis scribæ et pharisæi hypocritæ, quia mundatis quod deforis est calicis et paropsidis ; intus autem pleni estis rapina et immunditia !"
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "Væ vobis scribæ et pharisæi hypocritæ, quia mundatis quod deforis est calicis et paropsidis ; intus autem pleni estis rapina et immunditia !",
+        "LXX": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι καθαρίζετε τὸ ἔξωθεν τοῦ ποτηρίου καὶ τῆς παροψίδος, ἔσωθεν δὲ γέμουσιν ἐξ ἁρπαγῆς καὶ ἀδικίας.",
+        "SYN": "Горе вам, книжники и фарисеи, лицемеры, что очищаете внешность чаши и блюда, между тем как внутри они полны хищения и неправды.",
+        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι καθαρίζετε τὸ ἔξωθεν τοῦ ποτηρίου καὶ τῆς παροψίδος, ἔσωθεν δὲ γέμουσιν ἐξ ἁρπαγῆς καὶ ἀδικίας."
+      }
     },
     "26": {
-      "verse_number": 26,
-      "sort_number": 26,
-      "text": "[MATHE 23:26]",
-      "word_count": 5,
-      "russian": "Фарисей слепой! очисти прежде внутренность чаши и блюда, чтобы чиста была и внешность их.",
-      "greek": "Φαρισαῖε τυφλέ, καθάρισον πρῶτον τὸ ἐντὸς τοῦ ποτηρίου καὶ τῆς παροψίδος, ἵνα γένηται καὶ τὸ ἐκτὸς αὐτῶν καθαρόν.",
-      "latin": "Pharisæe cæce, munda prius quod intus est calicis, et paropsidis, ut fiat id, quod deforis est, mundum."
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Pharisæe cæce, munda prius quod intus est calicis, et paropsidis, ut fiat id, quod deforis est, mundum.",
+        "LXX": "Φαρισαῖε τυφλέ, καθάρισον πρῶτον τὸ ἐντὸς τοῦ ποτηρίου καὶ τῆς παροψίδος, ἵνα γένηται καὶ τὸ ἐκτὸς αὐτῶν καθαρόν.",
+        "SYN": "Фарисей слепой! очисти прежде внутренность чаши и блюда, чтобы чиста была и внешность их.",
+        "BYZ": "Φαρισαῖε τυφλέ, καθάρισον πρῶτον τὸ ἐντὸς τοῦ ποτηρίου καὶ τῆς παροψίδος, ἵνα γένηται καὶ τὸ ἐκτὸς αὐτῶν καθαρόν."
+      }
     },
     "27": {
-      "verse_number": 27,
-      "sort_number": 27,
-      "text": "[MATHE 23:27]",
-      "word_count": 5,
-      "russian": "Горе вам, книжники и фарисеи, лицемеры, что уподобляетесь окрашенным гробам, которые снаружи кажутся красивыми, а внутри полны костей мертвых и всякой нечистоты;",
-      "greek": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι παρομοιάζετε τάφοις κεκονιαμένοις, οἵτινες ἔξωθεν μὲν φαίνονται ὡραῖοι, ἔσωθεν δὲ γέμουσιν ὀστέων νεκρῶν καὶ πάσης ἀκαθαρσίας.",
-      "latin": "Væ vobis scribæ et pharisæi hypocritæ, quia similes estis sepulchris dealbatis, quæ a foris parent hominibus speciosa, intus vero pleni sunt ossibus mortuorum, et omni spurcitia !"
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "Væ vobis scribæ et pharisæi hypocritæ, quia similes estis sepulchris dealbatis, quæ a foris parent hominibus speciosa, intus vero pleni sunt ossibus mortuorum, et omni spurcitia !",
+        "LXX": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι παρομοιάζετε τάφοις κεκονιαμένοις, οἵτινες ἔξωθεν μὲν φαίνονται ὡραῖοι, ἔσωθεν δὲ γέμουσιν ὀστέων νεκρῶν καὶ πάσης ἀκαθαρσίας.",
+        "SYN": "Горе вам, книжники и фарисеи, лицемеры, что уподобляетесь окрашенным гробам, которые снаружи кажутся красивыми, а внутри полны костей мертвых и всякой нечистоты;",
+        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι παρομοιάζετε τάφοις κεκονιαμένοις, οἵτινες ἔξωθεν μὲν φαίνονται ὡραῖοι, ἔσωθεν δὲ γέμουσιν ὀστέων νεκρῶν καὶ πάσης ἀκαθαρσίας."
+      }
     },
     "28": {
-      "verse_number": 28,
-      "sort_number": 28,
-      "text": "[MATHE 23:28]",
-      "word_count": 5,
-      "russian": "так и вы по наружности кажетесь людям праведными, а внутри исполнены лицемерия и беззакония.",
-      "greek": "Οὕτως καὶ ὑμεῖς ἔξωθεν μὲν φαίνεσθε τοῖς ἀνθρώποις δίκαιοι, ἔσωθεν δὲ μεστοί ἐστε ὑποκρίσεως καὶ ἀνομίας.",
-      "latin": "Sic et vos a foris quidem paretis hominibus justi: intus autem pleni estis hypocrisi et iniquitate."
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "Sic et vos a foris quidem paretis hominibus justi: intus autem pleni estis hypocrisi et iniquitate.",
+        "LXX": "Οὕτως καὶ ὑμεῖς ἔξωθεν μὲν φαίνεσθε τοῖς ἀνθρώποις δίκαιοι, ἔσωθεν δὲ μεστοί ἐστε ὑποκρίσεως καὶ ἀνομίας.",
+        "SYN": "так и вы по наружности кажетесь людям праведными, а внутри исполнены лицемерия и беззакония.",
+        "BYZ": "Οὕτως καὶ ὑμεῖς ἔξωθεν μὲν φαίνεσθε τοῖς ἀνθρώποις δίκαιοι, ἔσωθεν δὲ μεστοί ἐστε ὑποκρίσεως καὶ ἀνομίας."
+      }
     },
     "29": {
-      "verse_number": 29,
-      "sort_number": 29,
-      "text": "[MATHE 23:29]",
-      "word_count": 5,
-      "russian": "Горе вам, книжники и фарисеи, лицемеры, что строите гробницы пророкам и украшаете памятники праведников,",
-      "greek": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι οἰκοδομεῖτε τοὺς τάφους τῶν προφητῶν, καὶ κοσμεῖτε τὰ μνημεῖα τῶν δικαίων,",
-      "latin": "Væ vobis scribæ et pharisæi hypocritæ, qui ædificatis sepulchra prophetarum, et ornatis monumenta justorum,"
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "Væ vobis scribæ et pharisæi hypocritæ, qui ædificatis sepulchra prophetarum, et ornatis monumenta justorum,",
+        "LXX": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι οἰκοδομεῖτε τοὺς τάφους τῶν προφητῶν, καὶ κοσμεῖτε τὰ μνημεῖα τῶν δικαίων,",
+        "SYN": "Горе вам, книжники и фарисеи, лицемеры, что строите гробницы пророкам и украшаете памятники праведников,",
+        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι οἰκοδομεῖτε τοὺς τάφους τῶν προφητῶν, καὶ κοσμεῖτε τὰ μνημεῖα τῶν δικαίων,"
+      }
     },
     "30": {
-      "verse_number": 30,
-      "sort_number": 30,
-      "text": "[MATHE 23:30]",
-      "word_count": 5,
-      "russian": "и говорите: если бы мы были во дни отцов наших, то не были бы сообщниками их в пролитии крови пророков;",
-      "greek": "καὶ λέγετε, Εἰ ἦμεν ἐν ταῖς ἡμέραις τῶν πατέρων ἡμῶν, οὐκ ἂν ἦμεν κοινωνοὶ αὐτῶν ἐν τῷ αἵματι τῶν προφητῶν.",
-      "latin": "et dicitis: Si fuissemus in diebus patrum nostrorum, non essemus socii eorum in sanguine prophetarum !"
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "et dicitis: Si fuissemus in diebus patrum nostrorum, non essemus socii eorum in sanguine prophetarum !",
+        "LXX": "καὶ λέγετε, Εἰ ἦμεν ἐν ταῖς ἡμέραις τῶν πατέρων ἡμῶν, οὐκ ἂν ἦμεν κοινωνοὶ αὐτῶν ἐν τῷ αἵματι τῶν προφητῶν.",
+        "SYN": "и говорите: если бы мы были во дни отцов наших, то не были бы сообщниками их в пролитии крови пророков;",
+        "BYZ": "καὶ λέγετε, Εἰ ἦμεν ἐν ταῖς ἡμέραις τῶν πατέρων ἡμῶν, οὐκ ἂν ἦμεν κοινωνοὶ αὐτῶν ἐν τῷ αἵματι τῶν προφητῶν."
+      }
     },
     "31": {
-      "verse_number": 31,
-      "sort_number": 31,
-      "text": "[MATHE 23:31]",
-      "word_count": 5,
-      "russian": "таким образом вы сами против себя свидетельствуете, что вы сыновья тех, которые избили пророков;",
-      "greek": "Ὥστε μαρτυρεῖτε ἑαυτοῖς ὅτι υἱοί ἐστε τῶν φονευσάντων τοὺς προφήτας·",
-      "latin": "itaque testimonio estis vobismetipsis, quia filii estis eorum, qui prophetas occiderunt."
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "itaque testimonio estis vobismetipsis, quia filii estis eorum, qui prophetas occiderunt.",
+        "LXX": "Ὥστε μαρτυρεῖτε ἑαυτοῖς ὅτι υἱοί ἐστε τῶν φονευσάντων τοὺς προφήτας·",
+        "SYN": "таким образом вы сами против себя свидетельствуете, что вы сыновья тех, которые избили пророков;",
+        "BYZ": "Ὥστε μαρτυρεῖτε ἑαυτοῖς ὅτι υἱοί ἐστε τῶν φονευσάντων τοὺς προφήτας·"
+      }
     },
     "32": {
-      "verse_number": 32,
-      "sort_number": 32,
-      "text": "[MATHE 23:32]",
-      "word_count": 5,
-      "russian": "дополняйте же меру отцов ваших.",
-      "greek": "καὶ ὑμεῖς πληρώσατε τὸ μέτρον τῶν πατέρων ὑμῶν.",
-      "latin": "Et vos implete mensuram patrum vestrorum."
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "Et vos implete mensuram patrum vestrorum.",
+        "LXX": "καὶ ὑμεῖς πληρώσατε τὸ μέτρον τῶν πατέρων ὑμῶν.",
+        "SYN": "дополняйте же меру отцов ваших.",
+        "BYZ": "καὶ ὑμεῖς πληρώσατε τὸ μέτρον τῶν πατέρων ὑμῶν."
+      }
     },
     "33": {
-      "verse_number": 33,
-      "sort_number": 33,
-      "text": "[MATHE 23:33]",
-      "word_count": 5,
-      "russian": "Змии, порождения ехиднины! как убежите вы от осуждения в геенну?",
-      "greek": "Ὄφεις, γεννήματα ἐχιδνῶν, πῶς φύγητε ἀπὸ τῆς κρίσεως τῆς γεέννης;",
-      "latin": "Serpentes, genimina viperarum, quomodo fugietis a judicio gehennæ ?"
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "Serpentes, genimina viperarum, quomodo fugietis a judicio gehennæ ?",
+        "LXX": "Ὄφεις, γεννήματα ἐχιδνῶν, πῶς φύγητε ἀπὸ τῆς κρίσεως τῆς γεέννης;",
+        "SYN": "Змии, порождения ехиднины! как убежите вы от осуждения в геенну?",
+        "BYZ": "Ὄφεις, γεννήματα ἐχιδνῶν, πῶς φύγητε ἀπὸ τῆς κρίσεως τῆς γεέννης;"
+      }
     },
     "34": {
-      "verse_number": 34,
-      "sort_number": 34,
-      "text": "[MATHE 23:34]",
-      "word_count": 5,
-      "russian": "Посему, вот, Я посылаю к вам пророков, и мудрых, и книжников; и вы иных убьете и распнете, а иных будете бить в синагогах ваших и гнать из города в город;",
-      "greek": "Διὰ τοῦτο, ἰδού, ἐγὼ ἀποστέλλω πρὸς ὑμᾶς προφήτας καὶ σοφοὺς καὶ γραμματεῖς· καὶ ἐξ αὐτῶν ἀποκτενεῖτε καὶ σταυρώσετε, καὶ ἐξ αὐτῶν μαστιγώσετε ἐν ταῖς συναγωγαῖς ὑμῶν καὶ διώξετε ἀπὸ πόλεως εἰς πόλιν·",
-      "latin": "Ideo ecce ego mitto ad vos prophetas, et sapientes, et scribas, et ex illis occidetis, et crucifigetis, et ex eis flagellabitis in synagogis vestris, et persequemini de civitate in civitatem:"
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Ideo ecce ego mitto ad vos prophetas, et sapientes, et scribas, et ex illis occidetis, et crucifigetis, et ex eis flagellabitis in synagogis vestris, et persequemini de civitate in civitatem:",
+        "LXX": "Διὰ τοῦτο, ἰδού, ἐγὼ ἀποστέλλω πρὸς ὑμᾶς προφήτας καὶ σοφοὺς καὶ γραμματεῖς· καὶ ἐξ αὐτῶν ἀποκτενεῖτε καὶ σταυρώσετε, καὶ ἐξ αὐτῶν μαστιγώσετε ἐν ταῖς συναγωγαῖς ὑμῶν καὶ διώξετε ἀπὸ πόλεως εἰς πόλιν·",
+        "SYN": "Посему, вот, Я посылаю к вам пророков, и мудрых, и книжников; и вы иных убьете и распнете, а иных будете бить в синагогах ваших и гнать из города в город;",
+        "BYZ": "Διὰ τοῦτο, ἰδού, ἐγὼ ἀποστέλλω πρὸς ὑμᾶς προφήτας καὶ σοφοὺς καὶ γραμματεῖς· καὶ ἐξ αὐτῶν ἀποκτενεῖτε καὶ σταυρώσετε, καὶ ἐξ αὐτῶν μαστιγώσετε ἐν ταῖς συναγωγαῖς ὑμῶν καὶ διώξετε ἀπὸ πόλεως εἰς πόλιν·"
+      }
     },
     "35": {
-      "verse_number": 35,
-      "sort_number": 35,
-      "text": "[MATHE 23:35]",
-      "word_count": 5,
-      "russian": "да придет на вас вся кровь праведная, пролитая на земле, от крови Авеля праведного до крови Захарии, сына Варахиина, которого вы убили между храмом и жертвенником.",
-      "greek": "ὅπως ἔλθῃ ἐφ’ ὑμᾶς πᾶν αἷμα δίκαιον ἐκχυνόμενον ἐπὶ τῆς γῆς, ἀπὸ τοῦ αἵματος Ἄβελ τοῦ δικαίου ἕως τοῦ αἵματος Ζαχαρίου υἱοῦ Βαραχίου, ὃν ἐφονεύσατε μεταξὺ τοῦ ναοῦ καὶ τοῦ θυσιαστηρίου.",
-      "latin": "ut veniat super vos omnis sanguis justus, qui effusus est super terram, a sanguine Abel justi usque ad sanguinem Zachariæ, filii Barachiæ, quem occidistis inter templum et altare."
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "VUL": "ut veniat super vos omnis sanguis justus, qui effusus est super terram, a sanguine Abel justi usque ad sanguinem Zachariæ, filii Barachiæ, quem occidistis inter templum et altare.",
+        "LXX": "ὅπως ἔλθῃ ἐφ’ ὑμᾶς πᾶν αἷμα δίκαιον ἐκχυνόμενον ἐπὶ τῆς γῆς, ἀπὸ τοῦ αἵματος Ἄβελ τοῦ δικαίου ἕως τοῦ αἵματος Ζαχαρίου υἱοῦ Βαραχίου, ὃν ἐφονεύσατε μεταξὺ τοῦ ναοῦ καὶ τοῦ θυσιαστηρίου.",
+        "SYN": "да придет на вас вся кровь праведная, пролитая на земле, от крови Авеля праведного до крови Захарии, сына Варахиина, которого вы убили между храмом и жертвенником.",
+        "BYZ": "ὅπως ἔλθῃ ἐφ’ ὑμᾶς πᾶν αἷμα δίκαιον ἐκχυνόμενον ἐπὶ τῆς γῆς, ἀπὸ τοῦ αἵματος Ἄβελ τοῦ δικαίου ἕως τοῦ αἵματος Ζαχαρίου υἱοῦ Βαραχίου, ὃν ἐφονεύσατε μεταξὺ τοῦ ναοῦ καὶ τοῦ θυσιαστηρίου."
+      }
     },
     "36": {
-      "verse_number": 36,
-      "sort_number": 36,
-      "text": "[MATHE 23:36]",
-      "word_count": 5,
-      "russian": "Истинно говорю вам, что все сие придет на род сей.",
-      "greek": "Ἀμὴν λέγω ὑμῖν ὅτι ἥξει πάντα ταῦτα ἐπὶ τὴν γενεὰν ταύτην.",
-      "latin": "Amen dico vobis, venient hæc omnia super generationem istam."
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "VUL": "Amen dico vobis, venient hæc omnia super generationem istam.",
+        "LXX": "Ἀμὴν λέγω ὑμῖν ὅτι ἥξει πάντα ταῦτα ἐπὶ τὴν γενεὰν ταύτην.",
+        "SYN": "Истинно говорю вам, что все сие придет на род сей.",
+        "BYZ": "Ἀμὴν λέγω ὑμῖν ὅτι ἥξει πάντα ταῦτα ἐπὶ τὴν γενεὰν ταύτην."
+      }
     },
     "37": {
-      "verse_number": 37,
-      "sort_number": 37,
-      "text": "[MATHE 23:37]",
-      "word_count": 5,
-      "russian": "Иерусалим, Иерусалим, избивающий пророков и камнями побивающий посланных к тебе! сколько раз хотел Я собрать детей твоих, как птица собирает птенцов своих под крылья, и вы не захотели!",
-      "greek": "Ἱερουσαλήμ, Ἱερουσαλήμ, ἡ ἀποκτένουσα τοὺς προφήτας καὶ λιθοβολοῦσα τοὺς ἀπεσταλμένους πρὸς αὐτήν, ποσάκις ἠθέλησα ἐπισυναγαγεῖν τὰ τέκνα σου, ὃν τρόπον ἐπισυνάγει ὄρνις τὰ νοσσία ἑαυτῆς ὑπὸ τὰς πτέρυγας, καὶ οὐκ ἠθελήσατε.",
-      "latin": "Jerusalem, Jerusalem, quæ occidis prophetas, et lapidas eos, qui ad te missi sunt, quoties volui congregare filios tuos, quemadmodum gallina congregat pullos suos sub alas, et noluisti ?"
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "VUL": "Jerusalem, Jerusalem, quæ occidis prophetas, et lapidas eos, qui ad te missi sunt, quoties volui congregare filios tuos, quemadmodum gallina congregat pullos suos sub alas, et noluisti ?",
+        "LXX": "Ἱερουσαλήμ, Ἱερουσαλήμ, ἡ ἀποκτένουσα τοὺς προφήτας καὶ λιθοβολοῦσα τοὺς ἀπεσταλμένους πρὸς αὐτήν, ποσάκις ἠθέλησα ἐπισυναγαγεῖν τὰ τέκνα σου, ὃν τρόπον ἐπισυνάγει ὄρνις τὰ νοσσία ἑαυτῆς ὑπὸ τὰς πτέρυγας, καὶ οὐκ ἠθελήσατε.",
+        "SYN": "Иерусалим, Иерусалим, избивающий пророков и камнями побивающий посланных к тебе! сколько раз хотел Я собрать детей твоих, как птица собирает птенцов своих под крылья, и вы не захотели!",
+        "BYZ": "Ἱερουσαλήμ, Ἱερουσαλήμ, ἡ ἀποκτένουσα τοὺς προφήτας καὶ λιθοβολοῦσα τοὺς ἀπεσταλμένους πρὸς αὐτήν, ποσάκις ἠθέλησα ἐπισυναγαγεῖν τὰ τέκνα σου, ὃν τρόπον ἐπισυνάγει ὄρνις τὰ νοσσία ἑαυτῆς ὑπὸ τὰς πτέρυγας, καὶ οὐκ ἠθελήσατε."
+      }
     },
     "38": {
-      "verse_number": 38,
-      "sort_number": 38,
-      "text": "[MATHE 23:38]",
-      "word_count": 5,
-      "russian": "Се, оставляется вам дом ваш пуст.",
-      "greek": "Ἰδού, ἀφίεται ὑμῖν ὁ οἶκος ὑμῶν ἔρημος.",
-      "latin": "Ecce relinquetur vobis domus vestra deserta."
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "VUL": "Ecce relinquetur vobis domus vestra deserta.",
+        "LXX": "Ἰδού, ἀφίεται ὑμῖν ὁ οἶκος ὑμῶν ἔρημος.",
+        "SYN": "Се, оставляется вам дом ваш пуст.",
+        "BYZ": "Ἰδού, ἀφίεται ὑμῖν ὁ οἶκος ὑμῶν ἔρημος."
+      }
     },
     "39": {
-      "verse_number": 39,
-      "sort_number": 39,
-      "text": "[MATHE 23:39]",
-      "word_count": 5,
-      "russian": "Ибо сказываю вам: не увидите Меня отныне, доколе не воскликнете: благословен Грядый во имя Господне!",
-      "greek": "Λέγω γὰρ ὑμῖν, οὐ μή με ἴδητε ἀπ’ ἄρτι ἕως ἂν εἴπητε, Εὐλογημένος ὁ ἐρχόμενος ἐν ὀνόματι κυρίου.",
-      "latin": "Dico enim vobis, non me videbitis amodo, donec dicatis: Benedictus, qui venit in nomine Domini."
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "VUL": "Dico enim vobis, non me videbitis amodo, donec dicatis: Benedictus, qui venit in nomine Domini.",
+        "LXX": "Λέγω γὰρ ὑμῖν, οὐ μή με ἴδητε ἀπ’ ἄρτι ἕως ἂν εἴπητε, Εὐλογημένος ὁ ἐρχόμενος ἐν ὀνόματι κυρίου.",
+        "SYN": "Ибо сказываю вам: не увидите Меня отныне, доколе не воскликнете: благословен Грядый во имя Господне!",
+        "BYZ": "Λέγω γὰρ ὑμῖν, οὐ μή με ἴδητε ἀπ’ ἄρτι ἕως ἂν εἴπητε, Εὐλογημένος ὁ ἐρχόμενος ἐν ὀνόματι κυρίου."
+      }
     }
   }
 }

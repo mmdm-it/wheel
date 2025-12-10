@@ -1,323 +1,480 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "GENE_047",
-  "chapter_key": "47",
-  "chapter_number": 47,
-  "sort_number": 47,
-  "name": "47",
   "book_key": "GENE",
+  "sequence": 47,
+  "chapter_in": {
+    "MT": 47,
+    "VUL": 47,
+    "LXX": 47
+  },
   "testament": "Vetus_Testamentum",
   "section": "Pentateuchus",
-  "verse_count": 31,
   "verses": {
     "1": {
-      "sort_number": 1,
-      "name": "1",
-      "latin": "Ingressus ergo Joseph nuntiavit Pharaoni, dicens: Pater meus et fratres, oves eorum et armenta, et cuncta quæ possident, venerunt de terra Chanaan: et ecce consistunt in terra Gessen.",
-      "word_count": 0,
-      "hebrew": "וַיָּבֹ֣א יוֹסֵף֮ וַיַּגֵּ֣ד לְפַרְעֹה֒ וַיֹּ֗אמֶר אָבִ֨י וְאַחַ֜י וְצֹאנָ֤ם וּבְקָרָם֙ וְכָל אֲשֶׁ֣ר לָהֶ֔ם בָּ֖אוּ מֵאֶ֣רֶץ כְּנָ֑עַן וְהִנָּ֖ם בְּאֶ֥רֶץ גֹּֽשֶׁן׃",
-      "russian": "И пришел Иосиф и известил фараона и сказал: отец мой и братья мои, с мелким и крупным скотом своим и со всем, что у них, пришли из земли Ханаанской; и вот, они в земле Гесем.",
-      "greek": "Ἐλθὼν δὲ Ἰωσὴφ ἀπήγγειλεν τῷ Φαραὼ λέγων Ὁ πατὴρ καὶ οἱ ἀδελφοὶ καὶ τὰ κτήνη καὶ οἱ βόες αὐτῶν καὶ πάντα τὰ αὐτῶν ἦλθον ἐκ γῆς Χανάαν, καὶ ἰδού εἰσιν ἐν γῇ Γέσεμ.",
-      "english": "The LORD said to Moses,"
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַיָּבֹ֣א יוֹסֵף֮ וַיַּגֵּ֣ד לְפַרְעֹה֒ וַיֹּ֗אמֶר אָבִ֨י וְאַחַ֜י וְצֹאנָ֤ם וּבְקָרָם֙ וְכָל אֲשֶׁ֣ר לָהֶ֔ם בָּ֖אוּ מֵאֶ֣רֶץ כְּנָ֑עַן וְהִנָּ֖ם בְּאֶ֥רֶץ גֹּֽשֶׁן׃",
+        "VUL": "Ingressus ergo Joseph nuntiavit Pharaoni, dicens: Pater meus et fratres, oves eorum et armenta, et cuncta quæ possident, venerunt de terra Chanaan: et ecce consistunt in terra Gessen.",
+        "LXX": "Ἐλθὼν δὲ Ἰωσὴφ ἀπήγγειλεν τῷ Φαραὼ λέγων Ὁ πατὴρ καὶ οἱ ἀδελφοὶ καὶ τὰ κτήνη καὶ οἱ βόες αὐτῶν καὶ πάντα τὰ αὐτῶν ἦλθον ἐκ γῆς Χανάαν, καὶ ἰδού εἰσιν ἐν γῇ Γέσεμ.",
+        "NAB": "The LORD said to Moses,",
+        "SYN": "И пришел Иосиф и известил фараона и сказал: отец мой и братья мои, с мелким и крупным скотом своим и со всем, что у них, пришли из земли Ханаанской; и вот, они в земле Гесем."
+      }
     },
     "2": {
-      "sort_number": 2,
-      "name": "2",
-      "latin": "Extremos quoque fratrum suorum quinque viros constituit coram rege:",
-      "word_count": 0,
-      "hebrew": "וּמִקְצֵ֣ה אֶחָ֔יו לָקַ֖ח חֲמִשָּׁ֣ה אֲנָשִׁ֑ים וַיַּצִּגֵ֖ם לִפְנֵ֥י פַרְעֹֽה׃",
-      "russian": "И из братьев своих он взял пять человек и представил их фараону.",
-      "greek": "ἀπὸ δὲ τῶν ἀδελφῶν παρέλαβεν πέντε ἄνδρας καὶ ἔστησεν αὐτοὺς ἐναντίον Φαραώ.",
-      "english": "\"Avenge the Israelites on the Midianites, and then you shall be taken to your people.\""
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וּמִקְצֵ֣ה אֶחָ֔יו לָקַ֖ח חֲמִשָּׁ֣ה אֲנָשִׁ֑ים וַיַּצִּגֵ֖ם לִפְנֵ֥י פַרְעֹֽה׃",
+        "VUL": "Extremos quoque fratrum suorum quinque viros constituit coram rege:",
+        "LXX": "ἀπὸ δὲ τῶν ἀδελφῶν παρέλαβεν πέντε ἄνδρας καὶ ἔστησεν αὐτοὺς ἐναντίον Φαραώ.",
+        "NAB": "\"Avenge the Israelites on the Midianites, and then you shall be taken to your people.\"",
+        "SYN": "И из братьев своих он взял пять человек и представил их фараону."
+      }
     },
     "3": {
-      "sort_number": 3,
-      "name": "3",
-      "latin": "quos ille interrogavit: Quid habetis operis ? Responderunt: Pastores ovium sumus servi tui, et nos et patres nostri.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֧אמֶר פַּרְעֹ֛ה אֶל אֶחָ֖יו מַה מַּעֲשֵׂיכֶ֑ם וַיֹּאמְר֣וּ אֶל פַּרְעֹ֗ה רֹעֵ֥ה צֹאן֙ עֲבָדֶ֔יךָ גַּם אֲנַ֖חְנוּ גַּם אֲבוֹתֵֽינוּ׃",
-      "russian": "И сказал фараон братьям его: какое ваше занятие? Они сказали фараону: пастухи овец рабы твои, и мы и отцы наши.",
-      "greek": "καὶ εἶπεν Φαραὼ τοῖς ἀδελφοῖς Ἰωσήφ Τί τὸ ἔργον ὑμῶν; οἱ δὲ εἶπαν τῷ Φαραώ Ποιμένες προβάτων οἱ παῖδές σου, καὶ ἡμεῖς καὶ οἱ πατέρες ἡμῶν.",
-      "english": "So Moses told the people, \"Select men from your midst and arm them for war, to attack the Midianites and execute the LORD'S vengeance on them."
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַיֹּ֧אמֶר פַּרְעֹ֛ה אֶל אֶחָ֖יו מַה מַּעֲשֵׂיכֶ֑ם וַיֹּאמְר֣וּ אֶל פַּרְעֹ֗ה רֹעֵ֥ה צֹאן֙ עֲבָדֶ֔יךָ גַּם אֲנַ֖חְנוּ גַּם אֲבוֹתֵֽינוּ׃",
+        "VUL": "quos ille interrogavit: Quid habetis operis ? Responderunt: Pastores ovium sumus servi tui, et nos et patres nostri.",
+        "LXX": "καὶ εἶπεν Φαραὼ τοῖς ἀδελφοῖς Ἰωσήφ Τί τὸ ἔργον ὑμῶν; οἱ δὲ εἶπαν τῷ Φαραώ Ποιμένες προβάτων οἱ παῖδές σου, καὶ ἡμεῖς καὶ οἱ πατέρες ἡμῶν.",
+        "NAB": "So Moses told the people, \"Select men from your midst and arm them for war, to attack the Midianites and execute the LORD'S vengeance on them.",
+        "SYN": "И сказал фараон братьям его: какое ваше занятие? Они сказали фараону: пастухи овец рабы твои, и мы и отцы наши."
+      }
     },
     "4": {
-      "sort_number": 4,
-      "name": "4",
-      "latin": "Ad peregrinandum in terra tua venimus: quoniam non est herba gregibus servorum tuorum, ingravescente fame in terra Chanaan: petimusque ut esse nos jubeas servos tuos in terra Gessen.",
-      "word_count": 0,
-      "hebrew": "וַיֹּאמְר֣וּ אֶל פַּרְעֹ֗ה לָג֣וּר בָּאָרֶץ֮ בָּאנוּ֒ כִּי אֵ֣ין מִרְעֶ֗ה לַצֹּאן֙ אֲשֶׁ֣ר לַעֲבָדֶ֔יךָ כִּֽי כָבֵ֥ד הָרָעָ֖ב בְּאֶ֣רֶץ כְּנָ֑עַן וְעַתָּ֛ה יֵֽשְׁבוּ נָ֥א עֲבָדֶ֖יךָ בְּאֶ֥רֶץ גֹּֽשֶׁן׃",
-      "russian": "И сказали они фараону: мы пришли пожить в этой земле, потому что нет пажити для скота рабов твоих, ибо в земле Ханаанской сильный голод; итак позволь поселиться рабам твоим в земле Гесем.",
-      "greek": "εἶπαν δὲ τῷ Φαραώ Παροικεῖν ἐν τῇ γῇ ἥκαμεν· οὐ γάρ ἐστιν νομὴ τοῖς κτήνεσιν τῶν παίδων σου, ἐνίσχυσεν γὰρ ὁ λιμὸς ἐν γῇ Χανάαν· νῦν οὖν κατοικήσομεν ἐν γῇ Γέσεμ.",
-      "english": "From each of the tribes of Israel you shall send a band of one thousand men to war.\""
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַיֹּאמְר֣וּ אֶל פַּרְעֹ֗ה לָג֣וּר בָּאָרֶץ֮ בָּאנוּ֒ כִּי אֵ֣ין מִרְעֶ֗ה לַצֹּאן֙ אֲשֶׁ֣ר לַעֲבָדֶ֔יךָ כִּֽי כָבֵ֥ד הָרָעָ֖ב בְּאֶ֣רֶץ כְּנָ֑עַן וְעַתָּ֛ה יֵֽשְׁבוּ נָ֥א עֲבָדֶ֖יךָ בְּאֶ֥רֶץ גֹּֽשֶׁן׃",
+        "VUL": "Ad peregrinandum in terra tua venimus: quoniam non est herba gregibus servorum tuorum, ingravescente fame in terra Chanaan: petimusque ut esse nos jubeas servos tuos in terra Gessen.",
+        "LXX": "εἶπαν δὲ τῷ Φαραώ Παροικεῖν ἐν τῇ γῇ ἥκαμεν· οὐ γάρ ἐστιν νομὴ τοῖς κτήνεσιν τῶν παίδων σου, ἐνίσχυσεν γὰρ ὁ λιμὸς ἐν γῇ Χανάαν· νῦν οὖν κατοικήσομεν ἐν γῇ Γέσεμ.",
+        "NAB": "From each of the tribes of Israel you shall send a band of one thousand men to war.\"",
+        "SYN": "И сказали они фараону: мы пришли пожить в этой земле, потому что нет пажити для скота рабов твоих, ибо в земле Ханаанской сильный голод; итак позволь поселиться рабам твоим в земле Гесем."
+      }
     },
     "5": {
-      "sort_number": 5,
-      "name": "5",
-      "latin": "Dixit itaque rex ad Joseph: Pater tuus et fratres tui venerunt ad te.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֣אמֶר פַּרְעֹ֔ה אֶל יוֹסֵ֖ף לֵאמֹ֑ר אָבִ֥יךָ וְאַחֶ֖יךָ בָּ֥אוּ אֵלֶֽיךָ׃",
-      "russian": "И сказал фараон Иосифу: отец твой и братья твои пришли к тебе;",
-      "greek": "εἶπεν δὲ Φαραὼ τῷ Ἰωσήφ Κατοικείτωσαν ἐν γῇ Γέσεμ· εἰ δὲ ἐπίστῃ ὅτι εἰσὶν ἐν αὐτοῖς ἄνδρες δυνατοί, κατάστησον αὐτοὺς ἄρχοντας τῶν ἐμῶν κτηνῶν. ἦλθον δὲ εἰς Αἴγυπτον πρὸς Ἰωσὴφ Ἰακὼβ καὶ οἱ υἱοὶ αὐτοῦ· καὶ ἤκουσεν Φαραὼ βασιλεὺς Αἰγύπτου. καὶ εἶπεν Φαραὼ πρὸς Ἰωσὴφ λέγων Ὁ πατήρ σου καὶ οἱ ἀδελφοί σου ἥκασι πρὸς σέ·",
-      "english": "From the clans of Israel, therefore, a thousand men of each tribe were levied, so that there were twelve thousand men armed for war."
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַיֹּ֣אמֶר פַּרְעֹ֔ה אֶל יוֹסֵ֖ף לֵאמֹ֑ר אָבִ֥יךָ וְאַחֶ֖יךָ בָּ֥אוּ אֵלֶֽיךָ׃",
+        "VUL": "Dixit itaque rex ad Joseph: Pater tuus et fratres tui venerunt ad te.",
+        "LXX": "εἶπεν δὲ Φαραὼ τῷ Ἰωσήφ Κατοικείτωσαν ἐν γῇ Γέσεμ· εἰ δὲ ἐπίστῃ ὅτι εἰσὶν ἐν αὐτοῖς ἄνδρες δυνατοί, κατάστησον αὐτοὺς ἄρχοντας τῶν ἐμῶν κτηνῶν. ἦλθον δὲ εἰς Αἴγυπτον πρὸς Ἰωσὴφ Ἰακὼβ καὶ οἱ υἱοὶ αὐτοῦ· καὶ ἤκουσεν Φαραὼ βασιλεὺς Αἰγύπτου. καὶ εἶπεν Φαραὼ πρὸς Ἰωσὴφ λέγων Ὁ πατήρ σου καὶ οἱ ἀδελφοί σου ἥκασι πρὸς σέ·",
+        "NAB": "From the clans of Israel, therefore, a thousand men of each tribe were levied, so that there were twelve thousand men armed for war.",
+        "SYN": "И сказал фараон Иосифу: отец твой и братья твои пришли к тебе;"
+      }
     },
     "6": {
-      "sort_number": 6,
-      "name": "6",
-      "latin": "Terra Ægypti in conspectu tuo est: in optimo loco fac eos habitare, et trade eis terram Gessen. Quod si nosti in eis esse viros industrios, constitue illos magistros pecorum meorum.",
-      "word_count": 0,
-      "hebrew": "אֶ֤רֶץ מִצְרַ֨יִם֙ לְפָנֶ֣יךָ הִ֔וא בְּמֵיטַ֣ב הָאָ֔רֶץ הוֹשֵׁ֥ב אֶת אָבִ֖יךָ וְאֶת אַחֶ֑יךָ יֵשְׁבוּ֙ בְּאֶ֣רֶץ גֹּ֔שֶׁן וְאִם יָדַ֗עְתָּ וְיֶשׁ בָּם֙ אַנְשֵׁי חַ֔יִל וְשַׂמְתָּ֛ם שָׂרֵ֥י מִקְנֶ֖ה עַל אֲשֶׁר לִֽי׃",
-      "russian": "земля Египетская пред тобою; на лучшем месте земли посели отца твоего и братьев твоих; пусть живут они в земле Гесем; и если знаешь, что между ними есть способные люди, поставь их смотрителями над моим скотом.",
-      "greek": "ἰδοὺ ἡ γῆ Αἰγύπτου ἐναντίον σού ἐστιν· ἐν τῇ βελτίστῃ γῇ κατοίκισον τὸν πατέρα σου καὶ τοὺς ἀδελφούς σου.",
-      "english": "Moses sent them out on the campaign, a thousand from each tribe, with Phinehas, son of Eleazar, the priest for the campaign, who had with him the sacred vessels and the trumpets for sounding the alarm."
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אֶ֤רֶץ מִצְרַ֨יִם֙ לְפָנֶ֣יךָ הִ֔וא בְּמֵיטַ֣ב הָאָ֔רֶץ הוֹשֵׁ֥ב אֶת אָבִ֖יךָ וְאֶת אַחֶ֑יךָ יֵשְׁבוּ֙ בְּאֶ֣רֶץ גֹּ֔שֶׁן וְאִם יָדַ֗עְתָּ וְיֶשׁ בָּם֙ אַנְשֵׁי חַ֔יִל וְשַׂמְתָּ֛ם שָׂרֵ֥י מִקְנֶ֖ה עַל אֲשֶׁר לִֽי׃",
+        "VUL": "Terra Ægypti in conspectu tuo est: in optimo loco fac eos habitare, et trade eis terram Gessen. Quod si nosti in eis esse viros industrios, constitue illos magistros pecorum meorum.",
+        "LXX": "ἰδοὺ ἡ γῆ Αἰγύπτου ἐναντίον σού ἐστιν· ἐν τῇ βελτίστῃ γῇ κατοίκισον τὸν πατέρα σου καὶ τοὺς ἀδελφούς σου.",
+        "NAB": "Moses sent them out on the campaign, a thousand from each tribe, with Phinehas, son of Eleazar, the priest for the campaign, who had with him the sacred vessels and the trumpets for sounding the alarm.",
+        "SYN": "земля Египетская пред тобою; на лучшем месте земли посели отца твоего и братьев твоих; пусть живут они в земле Гесем; и если знаешь, что между ними есть способные люди, поставь их смотрителями над моим скотом."
+      }
     },
     "7": {
-      "sort_number": 7,
-      "name": "7",
-      "latin": "Post hæc introduxit Joseph patrem suum ad regem, et statuit eum coram eo: qui benedicens illi,",
-      "word_count": 0,
-      "hebrew": "וַיָּבֵ֤א יוֹסֵף֙ אֶת יַֽעֲקֹ֣ב אָבִ֔יו וַיַּֽעֲמִדֵ֖הוּ לִפְנֵ֣י פַרְעֹ֑ה וַיְבָ֥רֶךְ יַעֲקֹ֖ב אֶת פַּרְעֹֽה׃",
-      "russian": "И привел Иосиф Иакова, отца своего, и представил его фараону; и благословил Иаков фараона.",
-      "greek": "εἰσήγαγεν δὲ Ἰωσὴφ Ἰακὼβ τὸν πατέρα αὐτοῦ καὶ ἔστησεν αὐτὸν ἐναντίον Φαραώ· καὶ εὐλόγησεν Ἰακὼβ τὸν Φαραώ.",
-      "english": "They waged war against the Midianites, as the LORD had commanded Moses, and killed every male among them."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַיָּבֵ֤א יוֹסֵף֙ אֶת יַֽעֲקֹ֣ב אָבִ֔יו וַיַּֽעֲמִדֵ֖הוּ לִפְנֵ֣י פַרְעֹ֑ה וַיְבָ֥רֶךְ יַעֲקֹ֖ב אֶת פַּרְעֹֽה׃",
+        "VUL": "Post hæc introduxit Joseph patrem suum ad regem, et statuit eum coram eo: qui benedicens illi,",
+        "LXX": "εἰσήγαγεν δὲ Ἰωσὴφ Ἰακὼβ τὸν πατέρα αὐτοῦ καὶ ἔστησεν αὐτὸν ἐναντίον Φαραώ· καὶ εὐλόγησεν Ἰακὼβ τὸν Φαραώ.",
+        "NAB": "They waged war against the Midianites, as the LORD had commanded Moses, and killed every male among them.",
+        "SYN": "И привел Иосиф Иакова, отца своего, и представил его фараону; и благословил Иаков фараона."
+      }
     },
     "8": {
-      "sort_number": 8,
-      "name": "8",
-      "latin": "et interrogatus ab eo: Quot sunt dies annorum vitæ tuæ ?",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֥אמֶר פַּרְעֹ֖ה אֶֽל יַעֲקֹ֑ב כַּמָּ֕ה יְמֵ֖י שְׁנֵ֥י חַיֶּֽיךָ׃",
-      "russian": "Фараон сказал Иакову: сколько лет жизни твоей?",
-      "greek": "εἶπεν δὲ Φαραὼ τῷ Ἰακώβ Πόσα ἔτη ἡμερῶν τῆς ζωῆς σου;",
-      "english": "Besides those slain in battle, they killed the five Midianite kings: Evi, Rekem, Zur, Hur and Reba; and they also executed Balaam, son of Beor, with the sword."
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַיֹּ֥אמֶר פַּרְעֹ֖ה אֶֽל יַעֲקֹ֑ב כַּמָּ֕ה יְמֵ֖י שְׁנֵ֥י חַיֶּֽיךָ׃",
+        "VUL": "et interrogatus ab eo: Quot sunt dies annorum vitæ tuæ ?",
+        "LXX": "εἶπεν δὲ Φαραὼ τῷ Ἰακώβ Πόσα ἔτη ἡμερῶν τῆς ζωῆς σου;",
+        "NAB": "Besides those slain in battle, they killed the five Midianite kings: Evi, Rekem, Zur, Hur and Reba; and they also executed Balaam, son of Beor, with the sword.",
+        "SYN": "Фараон сказал Иакову: сколько лет жизни твоей?"
+      }
     },
     "9": {
-      "sort_number": 9,
-      "name": "9",
-      "latin": "respondit: Dies peregrinationis meæ centum triginta annorum sunt, parvi et mali, et non pervenerunt usque ad dies patrum meorum quibus peregrinati sunt.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֤אמֶר יַעֲקֹב֙ אֶל פַּרְעֹ֔ה יְמֵי֙ שְׁנֵ֣י מְגוּרַ֔י שְׁלֹשִׁ֥ים וּמְאַ֖ת שָׁנָ֑ה מְעַ֣ט וְרָעִ֗ים הָיוּ֙ יְמֵי֙ שְׁנֵ֣י חַיַּ֔י וְלֹ֣א הִשִּׂ֗יגוּ אֶת יְמֵי֙ שְׁנֵי֙ חַיֵּ֣י אֲבֹתַ֔י בִּימֵ֖י מְגוּרֵיהֶֽם׃",
-      "russian": "Иаков сказал фараону: дней странствования моего сто тридцать лет; малы и несчастны дни жизни моей и не достигли до лет жизни отцов моих во днях странствования их.",
-      "greek": "καὶ εἶπεν Ἰακὼβ τῷ Φαραώ Αἱ ἡμέραι τῶν ἐτῶν τῆς ζωῆς μου ἃς παροικῶ ἑκατὸν τριάκοντα ἔτη· μικραὶ καὶ πονηραὶ γεγόνασιν αἱ ἡμέραι τῶν ἐτῶν τῆς ζωῆς μου· οὐκ ἀφίκοντο εἰς τὰς ἡμέρας τῶν ἐτῶν τῆς ζωῆς τῶν πατέρων μου, ἃς ἡμέρας παρῴκησαν.",
-      "english": "But the Israelites kept the women of the Midianites with their little ones as captives, and all their herds and flocks and wealth as spoil,"
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַיֹּ֤אמֶר יַעֲקֹב֙ אֶל פַּרְעֹ֔ה יְמֵי֙ שְׁנֵ֣י מְגוּרַ֔י שְׁלֹשִׁ֥ים וּמְאַ֖ת שָׁנָ֑ה מְעַ֣ט וְרָעִ֗ים הָיוּ֙ יְמֵי֙ שְׁנֵ֣י חַיַּ֔י וְלֹ֣א הִשִּׂ֗יגוּ אֶת יְמֵי֙ שְׁנֵי֙ חַיֵּ֣י אֲבֹתַ֔י בִּימֵ֖י מְגוּרֵיהֶֽם׃",
+        "VUL": "respondit: Dies peregrinationis meæ centum triginta annorum sunt, parvi et mali, et non pervenerunt usque ad dies patrum meorum quibus peregrinati sunt.",
+        "LXX": "καὶ εἶπεν Ἰακὼβ τῷ Φαραώ Αἱ ἡμέραι τῶν ἐτῶν τῆς ζωῆς μου ἃς παροικῶ ἑκατὸν τριάκοντα ἔτη· μικραὶ καὶ πονηραὶ γεγόνασιν αἱ ἡμέραι τῶν ἐτῶν τῆς ζωῆς μου· οὐκ ἀφίκοντο εἰς τὰς ἡμέρας τῶν ἐτῶν τῆς ζωῆς τῶν πατέρων μου, ἃς ἡμέρας παρῴκησαν.",
+        "NAB": "But the Israelites kept the women of the Midianites with their little ones as captives, and all their herds and flocks and wealth as spoil,",
+        "SYN": "Иаков сказал фараону: дней странствования моего сто тридцать лет; малы и несчастны дни жизни моей и не достигли до лет жизни отцов моих во днях странствования их."
+      }
     },
     "10": {
-      "sort_number": 10,
-      "name": "10",
-      "latin": "Et benedicto rege, egressus est foras.",
-      "word_count": 0,
-      "hebrew": "וַיְבָ֥רֶךְ יַעֲקֹ֖ב אֶת פַּרְעֹ֑ה וַיֵּצֵ֖א מִלִּפְנֵ֥י פַרְעֹֽה׃",
-      "russian": "И благословил фараона Иаков и вышел от фараона.",
-      "greek": "καὶ εὐλογήσας Ἰακὼβ τὸν Φαραὼ ἐξῆλθεν ἀπ’ αὐτοῦ.",
-      "english": "while they set on fire all the towns where they had settled and all their encampments."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַיְבָ֥רֶךְ יַעֲקֹ֖ב אֶת פַּרְעֹ֑ה וַיֵּצֵ֖א מִלִּפְנֵ֥י פַרְעֹֽה׃",
+        "VUL": "Et benedicto rege, egressus est foras.",
+        "LXX": "καὶ εὐλογήσας Ἰακὼβ τὸν Φαραὼ ἐξῆλθεν ἀπ’ αὐτοῦ.",
+        "NAB": "while they set on fire all the towns where they had settled and all their encampments.",
+        "SYN": "И благословил фараона Иаков и вышел от фараона."
+      }
     },
     "11": {
-      "sort_number": 11,
-      "name": "11",
-      "latin": "Joseph vero patri et fratribus suis dedit possessionem in Ægypto in optimo terræ loco, Ramesses, ut præceperat Pharao.",
-      "word_count": 0,
-      "hebrew": "וַיּוֹשֵׁ֣ב יוֹסֵף֮ אֶת אָבִ֣יו וְאֶת אֶחָיו֒ וַיִּתֵּ֨ן לָהֶ֤ם אֲחֻזָּה֙ בְּאֶ֣רֶץ מִצְרַ֔יִם בְּמֵיטַ֥ב הָאָ֖רֶץ בְּאֶ֣רֶץ רַעְמְסֵ֑ס כַּאֲשֶׁ֖ר צִוָּ֥ה פַרְעֹֽה׃",
-      "russian": "И поселил Иосиф отца своего и братьев своих, и дал им владение в земле Египетской, в лучшей части земли, в земле Раамсес, как повелел фараон.",
-      "greek": "καὶ κατῴκισεν Ἰωσὴφ τὸν πατέρα καὶ τοὺς ἀδελφοὺς αὐτοῦ καὶ ἔδωκεν αὐτοῖς κατάσχεσιν ἐν γῇ Αἰγύπτου, ἐν τῇ βελτίστῃ γῇ, ἐν γῇ Ῥαμεσσή, καθὰ προσέταξεν Φαραώ.",
-      "english": "Then they took all the booty, with the people and beasts they had captured, and brought the captives, together with the spoils and booty,"
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַיּוֹשֵׁ֣ב יוֹסֵף֮ אֶת אָבִ֣יו וְאֶת אֶחָיו֒ וַיִּתֵּ֨ן לָהֶ֤ם אֲחֻזָּה֙ בְּאֶ֣רֶץ מִצְרַ֔יִם בְּמֵיטַ֥ב הָאָ֖רֶץ בְּאֶ֣רֶץ רַעְמְסֵ֑ס כַּאֲשֶׁ֖ר צִוָּ֥ה פַרְעֹֽה׃",
+        "VUL": "Joseph vero patri et fratribus suis dedit possessionem in Ægypto in optimo terræ loco, Ramesses, ut præceperat Pharao.",
+        "LXX": "καὶ κατῴκισεν Ἰωσὴφ τὸν πατέρα καὶ τοὺς ἀδελφοὺς αὐτοῦ καὶ ἔδωκεν αὐτοῖς κατάσχεσιν ἐν γῇ Αἰγύπτου, ἐν τῇ βελτίστῃ γῇ, ἐν γῇ Ῥαμεσσή, καθὰ προσέταξεν Φαραώ.",
+        "NAB": "Then they took all the booty, with the people and beasts they had captured, and brought the captives, together with the spoils and booty,",
+        "SYN": "И поселил Иосиф отца своего и братьев своих, и дал им владение в земле Египетской, в лучшей части земли, в земле Раамсес, как повелел фараон."
+      }
     },
     "12": {
-      "sort_number": 12,
-      "name": "12",
-      "latin": "Et alebat eos, omnemque domum patris sui, præbens cibaria singulis.",
-      "word_count": 0,
-      "hebrew": "וַיְכַלְכֵּ֤ל יוֹסֵף֙ אֶת אָבִ֣יו וְאֶת אֶחָ֔יו וְאֵ֖ת כָּל בֵּ֣ית אָבִ֑יו לֶ֖חֶם לְפִ֥י הַטָּֽף׃",
-      "russian": "И снабжал Иосиф отца своего и братьев своих и весь дом отца своего хлебом, по потребностям каждого семейства.",
-      "greek": "καὶ ἐσιτομέτρει Ἰωσὴφ τῷ πατρὶ αὐτοῦ καὶ τοῖς ἀδελφοῖς καὶ παντὶ τῷ οἴκῳ τοῦ πατρὸς αὐτοῦ σῖτον κατὰ σῶμα.",
-      "english": "to Moses and the priest Eleazar and to the Israelite community at their camp on the plains of Moab, along the Jericho stretch of the Jordan."
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַיְכַלְכֵּ֤ל יוֹסֵף֙ אֶת אָבִ֣יו וְאֶת אֶחָ֔יו וְאֵ֖ת כָּל בֵּ֣ית אָבִ֑יו לֶ֖חֶם לְפִ֥י הַטָּֽף׃",
+        "VUL": "Et alebat eos, omnemque domum patris sui, præbens cibaria singulis.",
+        "LXX": "καὶ ἐσιτομέτρει Ἰωσὴφ τῷ πατρὶ αὐτοῦ καὶ τοῖς ἀδελφοῖς καὶ παντὶ τῷ οἴκῳ τοῦ πατρὸς αὐτοῦ σῖτον κατὰ σῶμα.",
+        "NAB": "to Moses and the priest Eleazar and to the Israelite community at their camp on the plains of Moab, along the Jericho stretch of the Jordan.",
+        "SYN": "И снабжал Иосиф отца своего и братьев своих и весь дом отца своего хлебом, по потребностям каждого семейства."
+      }
     },
     "13": {
-      "sort_number": 13,
-      "name": "13",
-      "latin": "In toto enim orbe panis deerat, et oppresserat fames terram, maxime Ægypti et Chanaan.",
-      "word_count": 0,
-      "hebrew": "וְלֶ֤חֶם אֵין֙ בְּכָל הָאָ֔רֶץ כִּֽי כָבֵ֥ד הָרָעָ֖ב מְאֹ֑ד וַתֵּ֜לַהּ אֶ֤רֶץ מִצְרַ֨יִם֙ וְאֶ֣רֶץ כְּנַ֔עַן מִפְּנֵ֖י הָרָעָֽב׃",
-      "russian": "И не было хлеба по всей земле, потому что голод весьма усилился, и изнурены были от голода земля Египетская и земля Ханаанская.",
-      "greek": "Σῖτος δὲ οὐκ ἦν ἐν πάσῃ τῇ γῇ, ἐνίσχυσεν γὰρ ὁ λιμὸς σφόδρα· ἐξέλιπεν δὲ ἡ γῆ Αἰγύπτου καὶ ἡ γῆ Χανάαν ἀπὸ τοῦ λιμοῦ·",
-      "english": "When Moses and the priest Eleazar, with all the princes of the community, went outside the camp to meet them,"
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְלֶ֤חֶם אֵין֙ בְּכָל הָאָ֔רֶץ כִּֽי כָבֵ֥ד הָרָעָ֖ב מְאֹ֑ד וַתֵּ֜לַהּ אֶ֤רֶץ מִצְרַ֨יִם֙ וְאֶ֣רֶץ כְּנַ֔עַן מִפְּנֵ֖י הָרָעָֽב׃",
+        "VUL": "In toto enim orbe panis deerat, et oppresserat fames terram, maxime Ægypti et Chanaan.",
+        "LXX": "Σῖτος δὲ οὐκ ἦν ἐν πάσῃ τῇ γῇ, ἐνίσχυσεν γὰρ ὁ λιμὸς σφόδρα· ἐξέλιπεν δὲ ἡ γῆ Αἰγύπτου καὶ ἡ γῆ Χανάαν ἀπὸ τοῦ λιμοῦ·",
+        "NAB": "When Moses and the priest Eleazar, with all the princes of the community, went outside the camp to meet them,",
+        "SYN": "И не было хлеба по всей земле, потому что голод весьма усилился, и изнурены были от голода земля Египетская и земля Ханаанская."
+      }
     },
     "14": {
-      "sort_number": 14,
-      "name": "14",
-      "latin": "E quibus omnem pecuniam congregavit pro venditione frumenti, et intulit eam in ærarium regis.",
-      "word_count": 0,
-      "hebrew": "וַיְלַקֵּ֣ט יוֹסֵ֗ף אֶת כָּל הַכֶּ֨סֶף֙ הַנִּמְצָ֤א בְאֶֽרֶץ מִצְרַ֨יִם֙ וּבְאֶ֣רֶץ כְּנַ֔עַן בַּשֶּׁ֖בֶר אֲשֶׁר הֵ֣ם שֹׁבְרִ֑ים וַיָּבֵ֥א יוֹסֵ֛ף אֶת הַכֶּ֖סֶף בֵּ֥יתָה פַרְעֹֽה׃",
-      "russian": "Иосиф собрал все серебро, какое было в земле Египетской и в земле Ханаанской, за хлеб, который покупали, и внес Иосиф серебро в дом фараонов.",
-      "greek": "συνήγαγεν δὲ Ἰωσὴφ πᾶν τὸ ἀργύριον τὸ εὑρεθὲν ἐν γῇ Αἰγύπτου καὶ ἐν γῇ Χανάαν τοῦ σίτου ὃ ἠγόραζον, καὶ ἐσιτομέτρει αὐτοῖς· καὶ εἰσήνεγκεν Ἰωσὴφ πᾶν τὸ ἀργύριον εἰς τὸν οἶκον Φαραώ.",
-      "english": "Moses became angry with the officers of the army, the clan and company commanders, who were returning from combat."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַיְלַקֵּ֣ט יוֹסֵ֗ף אֶת כָּל הַכֶּ֨סֶף֙ הַנִּמְצָ֤א בְאֶֽרֶץ מִצְרַ֨יִם֙ וּבְאֶ֣רֶץ כְּנַ֔עַן בַּשֶּׁ֖בֶר אֲשֶׁר הֵ֣ם שֹׁבְרִ֑ים וַיָּבֵ֥א יוֹסֵ֛ף אֶת הַכֶּ֖סֶף בֵּ֥יתָה פַרְעֹֽה׃",
+        "VUL": "E quibus omnem pecuniam congregavit pro venditione frumenti, et intulit eam in ærarium regis.",
+        "LXX": "συνήγαγεν δὲ Ἰωσὴφ πᾶν τὸ ἀργύριον τὸ εὑρεθὲν ἐν γῇ Αἰγύπτου καὶ ἐν γῇ Χανάαν τοῦ σίτου ὃ ἠγόραζον, καὶ ἐσιτομέτρει αὐτοῖς· καὶ εἰσήνεγκεν Ἰωσὴφ πᾶν τὸ ἀργύριον εἰς τὸν οἶκον Φαραώ.",
+        "NAB": "Moses became angry with the officers of the army, the clan and company commanders, who were returning from combat.",
+        "SYN": "Иосиф собрал все серебро, какое было в земле Египетской и в земле Ханаанской, за хлеб, который покупали, и внес Иосиф серебро в дом фараонов."
+      }
     },
     "15": {
-      "sort_number": 15,
-      "name": "15",
-      "latin": "Cumque defecisset emptoribus pretium, venit cuncta Ægyptus ad Joseph, dicens: Da nobis panes: quare morimur coram te, deficiente pecunia ?",
-      "word_count": 0,
-      "hebrew": "וַיִּתֹּ֣ם הַכֶּ֗סֶף מֵאֶ֣רֶץ מִצְרַיִם֮ וּמֵאֶ֣רֶץ כְּנַעַן֒ וַיָּבֹאוּ֩ כָל מִצְרַ֨יִם אֶל יוֹסֵ֤ף לֵאמֹר֙ הָֽבָה לָּ֣נוּ לֶ֔חֶם וְלָ֥מָּה נָמ֖וּת נֶגְדֶּ֑ךָ כִּ֥י אָפֵ֖ס כָּֽסֶף׃",
-      "russian": "И серебро истощилось в земле Египетской и в земле Ханаанской. Все Египтяне пришли к Иосифу и говорили: дай нам хлеба; зачем нам умирать пред тобою, потому что серебро вышло у нас?",
-      "greek": "καὶ ἐξέλιπεν τὸ ἀργύριον πᾶν ἐκ γῆς Αἰγύπτου καὶ ἐκ γῆς Χανάαν· ἦλθον δὲ πάντες οἱ Αἰγύπτιοι πρὸς Ἰωσὴφ λέγοντες Δὸς ἡμῖν ἄρτους· καὶ ἵνα τί ἀποθνήσκομεν ἐναντίον σου; ἐκλέλοιπεν γὰρ τὸ ἀργύριον ἡμῶν.",
-      "english": "\"So you have spared all the women!\" he exclaimed."
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַיִּתֹּ֣ם הַכֶּ֗סֶף מֵאֶ֣רֶץ מִצְרַיִם֮ וּמֵאֶ֣רֶץ כְּנַעַן֒ וַיָּבֹאוּ֩ כָל מִצְרַ֨יִם אֶל יוֹסֵ֤ף לֵאמֹר֙ הָֽבָה לָּ֣נוּ לֶ֔חֶם וְלָ֥מָּה נָמ֖וּת נֶגְדֶּ֑ךָ כִּ֥י אָפֵ֖ס כָּֽסֶף׃",
+        "VUL": "Cumque defecisset emptoribus pretium, venit cuncta Ægyptus ad Joseph, dicens: Da nobis panes: quare morimur coram te, deficiente pecunia ?",
+        "LXX": "καὶ ἐξέλιπεν τὸ ἀργύριον πᾶν ἐκ γῆς Αἰγύπτου καὶ ἐκ γῆς Χανάαν· ἦλθον δὲ πάντες οἱ Αἰγύπτιοι πρὸς Ἰωσὴφ λέγοντες Δὸς ἡμῖν ἄρτους· καὶ ἵνα τί ἀποθνήσκομεν ἐναντίον σου; ἐκλέλοιπεν γὰρ τὸ ἀργύριον ἡμῶν.",
+        "NAB": "\"So you have spared all the women!\" he exclaimed.",
+        "SYN": "И серебро истощилось в земле Египетской и в земле Ханаанской. Все Египтяне пришли к Иосифу и говорили: дай нам хлеба; зачем нам умирать пред тобою, потому что серебро вышло у нас?"
+      }
     },
     "16": {
-      "sort_number": 16,
-      "name": "16",
-      "latin": "Quibus ille respondit: Adducite pecora vestra, et dabo vobis pro eis cibos, si pretium non habetis.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֤אמֶר יוֹסֵף֙ הָב֣וּ מִקְנֵיכֶ֔ם וְאֶתְּנָ֥ה לָכֶ֖ם בְּמִקְנֵיכֶ֑ם אִם אָפֵ֖ס כָּֽסֶף׃",
-      "russian": "Иосиф сказал: пригоняйте скот ваш, и я буду давать вам [хлеб] за скот ваш, если серебро вышло у вас.",
-      "greek": "εἶπεν δὲ αὐτοῖς Ἰωσήφ Φέρετε τὰ κτήνη ὑμῶν, καὶ δώσω ὑμῖν ἄρτους ἀντὶ τῶν κτηνῶν ὑμῶν, ⸂⸆⸃ εἰ ἐκλέλοιπεν τὸ ἀργύριον ὑμῶν.",
-      "english": "\"Why, they are the very ones who on Balaam's advice prompted the unfaithfulness of the Israelites toward the LORD in the Peor affair, which began the slaughter of the LORD'S community."
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַיֹּ֤אמֶר יוֹסֵף֙ הָב֣וּ מִקְנֵיכֶ֔ם וְאֶתְּנָ֥ה לָכֶ֖ם בְּמִקְנֵיכֶ֑ם אִם אָפֵ֖ס כָּֽסֶף׃",
+        "VUL": "Quibus ille respondit: Adducite pecora vestra, et dabo vobis pro eis cibos, si pretium non habetis.",
+        "LXX": "εἶπεν δὲ αὐτοῖς Ἰωσήφ Φέρετε τὰ κτήνη ὑμῶν, καὶ δώσω ὑμῖν ἄρτους ἀντὶ τῶν κτηνῶν ὑμῶν, ⸂⸆⸃ εἰ ἐκλέλοιπεν τὸ ἀργύριον ὑμῶν.",
+        "NAB": "\"Why, they are the very ones who on Balaam's advice prompted the unfaithfulness of the Israelites toward the LORD in the Peor affair, which began the slaughter of the LORD'S community.",
+        "SYN": "Иосиф сказал: пригоняйте скот ваш, и я буду давать вам [хлеб] за скот ваш, если серебро вышло у вас."
+      }
     },
     "17": {
-      "sort_number": 17,
-      "name": "17",
-      "latin": "Quæ cum adduxissent, dedit eis alimenta pro equis, et ovibus, et bobus, et asinis: sustentavitque eos illo anno pro commutatione pecorum.",
-      "word_count": 0,
-      "hebrew": "וַיָּבִ֣יאוּ אֶת מִקְנֵיהֶם֮ אֶל יוֹסֵף֒ וַיִּתֵּ֣ן לָהֶם֩ יוֹסֵ֨ף לֶ֜חֶם בַּסּוּסִ֗ים וּבְמִקְנֵ֥ה הַצֹּ֛אן וּבְמִקְנֵ֥ה הַבָּקָ֖ר וּבַחֲמֹרִ֑ים וַיְנַהֲלֵ֤ם בַּלֶּ֨חֶם֙ בְּכָל מִקְנֵהֶ֔ם בַּשָּׁנָ֖ה הַהִֽוא׃",
-      "russian": "И пригоняли они к Иосифу скот свой; и давал им Иосиф хлеб за лошадей, и за стада мелкого скота, и за стада крупного скота, и за ослов; и снабжал их хлебом в тот год за весь скот их.",
-      "greek": "ἤγαγον δὲ τὰ κτήνη πρὸς Ἰωσήφ, καὶ ἔδωκεν αὐτοῖς Ἰωσὴφ ἄρτους ἀντὶ τῶν ἵππων καὶ ἀντὶ τῶν προβάτων καὶ ἀντὶ τῶν βοῶν καὶ ἀντὶ τῶν ὄνων· καὶ ἐξέθρεψεν αὐτοὺς ἐν ἄρτοις ἀντὶ πάντων τῶν κτηνῶν αὐτῶν ἐν τῷ ἐνιαυτῷ ἐκείνῳ.",
-      "english": "Slay, therefore, every male child and every woman who has had intercourse with a man."
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַיָּבִ֣יאוּ אֶת מִקְנֵיהֶם֮ אֶל יוֹסֵף֒ וַיִּתֵּ֣ן לָהֶם֩ יוֹסֵ֨ף לֶ֜חֶם בַּסּוּסִ֗ים וּבְמִקְנֵ֥ה הַצֹּ֛אן וּבְמִקְנֵ֥ה הַבָּקָ֖ר וּבַחֲמֹרִ֑ים וַיְנַהֲלֵ֤ם בַּלֶּ֨חֶם֙ בְּכָל מִקְנֵהֶ֔ם בַּשָּׁנָ֖ה הַהִֽוא׃",
+        "VUL": "Quæ cum adduxissent, dedit eis alimenta pro equis, et ovibus, et bobus, et asinis: sustentavitque eos illo anno pro commutatione pecorum.",
+        "LXX": "ἤγαγον δὲ τὰ κτήνη πρὸς Ἰωσήφ, καὶ ἔδωκεν αὐτοῖς Ἰωσὴφ ἄρτους ἀντὶ τῶν ἵππων καὶ ἀντὶ τῶν προβάτων καὶ ἀντὶ τῶν βοῶν καὶ ἀντὶ τῶν ὄνων· καὶ ἐξέθρεψεν αὐτοὺς ἐν ἄρτοις ἀντὶ πάντων τῶν κτηνῶν αὐτῶν ἐν τῷ ἐνιαυτῷ ἐκείνῳ.",
+        "NAB": "Slay, therefore, every male child and every woman who has had intercourse with a man.",
+        "SYN": "И пригоняли они к Иосифу скот свой; и давал им Иосиф хлеб за лошадей, и за стада мелкого скота, и за стада крупного скота, и за ослов; и снабжал их хлебом в тот год за весь скот их."
+      }
     },
     "18": {
-      "sort_number": 18,
-      "name": "18",
-      "latin": "Venerunt quoque anno secundo, et dixerunt ei: Non celabimus dominum nostrum quod deficiente pecunia, pecora simul defecerunt: nec clam te est, quod absque corporibus et terra nihil habeamus.",
-      "word_count": 0,
-      "hebrew": "וַתִּתֹּם֮ הַשָּׁנָ֣ה הַהִוא֒ וַיָּבֹ֨אוּ אֵלָ֜יו בַּשָּׁנָ֣ה הַשֵּׁנִ֗ית וַיֹּ֤אמְרוּ לוֹ֙ לֹֽא נְכַחֵ֣ד מֵֽאֲדֹנִ֔י כִּ֚י אִם תַּ֣ם הַכֶּ֔סֶף וּמִקְנֵ֥ה הַבְּהֵמָ֖ה אֶל אֲדֹנִ֑י לֹ֤א נִשְׁאַר֙ לִפְנֵ֣י אֲדֹנִ֔י בִּלְתִּ֥י אִם גְּוִיָּתֵ֖נוּ וְאַדְמָתֵֽנוּ׃",
-      "russian": "И прошел этот год; и пришли к нему на другой год и сказали ему: не скроем от господина нашего, что серебро истощилось и стада скота нашего у господина нашего; ничего не осталось у нас пред господином нашим, кроме тел наших и земель наших;",
-      "greek": "ἐξῆλθεν δὲ τὸ ἔτος ἐκεῖνο, καὶ ἦλθαν πρὸς αὐτὸν ἐν τῷ ἔτει τῷ δευτέρῳ καὶ εἶπαν αὐτῷ Μή ποτε ἐκτριβῶμεν ἀπὸ τοῦ κυρίου ἡμῶν· εἰ γὰρ ἐκλέλοιπεν τὸ ἀργύριον ἡμῶν καὶ τὰ ὑπάρχοντα καὶ τὰ κτήνη πρὸς σὲ τὸν κύριον, καὶ οὐχ ὑπολείπεται ἡμῖν ἐναντίον τοῦ κυρίου ἀλλ’ ἢ τὸ ἴδιον σῶμα καὶ ἡ γῆ ἡμῶν.",
-      "english": "But you may spare and keep for yourselves all girls who had no intercourse with a man."
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַתִּתֹּם֮ הַשָּׁנָ֣ה הַהִוא֒ וַיָּבֹ֨אוּ אֵלָ֜יו בַּשָּׁנָ֣ה הַשֵּׁנִ֗ית וַיֹּ֤אמְרוּ לוֹ֙ לֹֽא נְכַחֵ֣ד מֵֽאֲדֹנִ֔י כִּ֚י אִם תַּ֣ם הַכֶּ֔סֶף וּמִקְנֵ֥ה הַבְּהֵמָ֖ה אֶל אֲדֹנִ֑י לֹ֤א נִשְׁאַר֙ לִפְנֵ֣י אֲדֹנִ֔י בִּלְתִּ֥י אִם גְּוִיָּתֵ֖נוּ וְאַדְמָתֵֽנוּ׃",
+        "VUL": "Venerunt quoque anno secundo, et dixerunt ei: Non celabimus dominum nostrum quod deficiente pecunia, pecora simul defecerunt: nec clam te est, quod absque corporibus et terra nihil habeamus.",
+        "LXX": "ἐξῆλθεν δὲ τὸ ἔτος ἐκεῖνο, καὶ ἦλθαν πρὸς αὐτὸν ἐν τῷ ἔτει τῷ δευτέρῳ καὶ εἶπαν αὐτῷ Μή ποτε ἐκτριβῶμεν ἀπὸ τοῦ κυρίου ἡμῶν· εἰ γὰρ ἐκλέλοιπεν τὸ ἀργύριον ἡμῶν καὶ τὰ ὑπάρχοντα καὶ τὰ κτήνη πρὸς σὲ τὸν κύριον, καὶ οὐχ ὑπολείπεται ἡμῖν ἐναντίον τοῦ κυρίου ἀλλ’ ἢ τὸ ἴδιον σῶμα καὶ ἡ γῆ ἡμῶν.",
+        "NAB": "But you may spare and keep for yourselves all girls who had no intercourse with a man.",
+        "SYN": "И прошел этот год; и пришли к нему на другой год и сказали ему: не скроем от господина нашего, что серебро истощилось и стада скота нашего у господина нашего; ничего не осталось у нас пред господином нашим, кроме тел наших и земель наших;"
+      }
     },
     "19": {
-      "sort_number": 19,
-      "name": "19",
-      "latin": "Cur ergo moriemur te vidente ? et nos et terra nostra tui erimus: eme nos in servitutem regiam, et præbe semina, ne pereunte cultore redigatur terra in solitudinem.",
-      "word_count": 0,
-      "hebrew": "לָ֧מָּה נָמ֣וּת לְעֵינֶ֗יךָ גַּם אֲנַ֨חְנוּ֙ גַּ֣ם אַדְמָתֵ֔נוּ קְנֵֽה אֹתָ֥נוּ וְאֶת אַדְמָתֵ֖נוּ בַּלָּ֑חֶם וְנִֽהְיֶ֞ה אֲנַ֤חְנוּ וְאַדְמָתֵ֨נוּ֙ עֲבָדִ֣ים לְפַרְעֹ֔ה וְתֶן זֶ֗רַע וְנִֽחְיֶה֙ וְלֹ֣א נָמ֔וּת וְהָאֲדָמָ֖ה לֹ֥א תֵשָֽׁם׃",
-      "russian": "для чего нам погибать в глазах твоих, и нам и землям нашим? купи нас и земли наши за хлеб, и мы с землями нашими будем рабами фараону, а ты дай нам семян, чтобы нам быть живыми и не умереть, и чтобы не опустела земля.",
-      "greek": "ἵνα μὴ ἀποθάνωμεν ἐναντίον σου καὶ ἡ γῆ ἐρημωθῇ, κτῆσαι ἡμᾶς καὶ τὴν γῆν ἡμῶν ἀντὶ ἄρτων, καὶ ἐσόμεθα ἡμεῖς καὶ ἡ γῆ ἡμῶν παῖδες Φαραώ· δὸς σπέρμα ἵνα σπείρωμεν καὶ μὴ ἀποθάνωμεν, καὶ ἡ γῆ ἐρημωθήσεται.",
-      "english": "\"Moreover, you shall stay outside the camp for seven days, and those of you who have slain anyone or touched anyone slain in battle shall purify yourselves on the third and on the seventh day. This applies both to you and to your captives."
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "לָ֧מָּה נָמ֣וּת לְעֵינֶ֗יךָ גַּם אֲנַ֨חְנוּ֙ גַּ֣ם אַדְמָתֵ֔נוּ קְנֵֽה אֹתָ֥נוּ וְאֶת אַדְמָתֵ֖נוּ בַּלָּ֑חֶם וְנִֽהְיֶ֞ה אֲנַ֤חְנוּ וְאַדְמָתֵ֨נוּ֙ עֲבָדִ֣ים לְפַרְעֹ֔ה וְתֶן זֶ֗רַע וְנִֽחְיֶה֙ וְלֹ֣א נָמ֔וּת וְהָאֲדָמָ֖ה לֹ֥א תֵשָֽׁם׃",
+        "VUL": "Cur ergo moriemur te vidente ? et nos et terra nostra tui erimus: eme nos in servitutem regiam, et præbe semina, ne pereunte cultore redigatur terra in solitudinem.",
+        "LXX": "ἵνα μὴ ἀποθάνωμεν ἐναντίον σου καὶ ἡ γῆ ἐρημωθῇ, κτῆσαι ἡμᾶς καὶ τὴν γῆν ἡμῶν ἀντὶ ἄρτων, καὶ ἐσόμεθα ἡμεῖς καὶ ἡ γῆ ἡμῶν παῖδες Φαραώ· δὸς σπέρμα ἵνα σπείρωμεν καὶ μὴ ἀποθάνωμεν, καὶ ἡ γῆ ἐρημωθήσεται.",
+        "NAB": "\"Moreover, you shall stay outside the camp for seven days, and those of you who have slain anyone or touched anyone slain in battle shall purify yourselves on the third and on the seventh day. This applies both to you and to your captives.",
+        "SYN": "для чего нам погибать в глазах твоих, и нам и землям нашим? купи нас и земли наши за хлеб, и мы с землями нашими будем рабами фараону, а ты дай нам семян, чтобы нам быть живыми и не умереть, и чтобы не опустела земля."
+      }
     },
     "20": {
-      "sort_number": 20,
-      "name": "20",
-      "latin": "Emit igitur Joseph omnem terram Ægypti, vendentibus singulis possessiones suas præ magnitudine famis. Subjecitque eam Pharaoni,",
-      "word_count": 0,
-      "hebrew": "וַיִּ֨קֶן יוֹסֵ֜ף אֶת כָּל אַדְמַ֤ת מִצְרַ֨יִם֙ לְפַרְעֹ֔ה כִּֽי מָכְר֤וּ מִצְרַ֨יִם֙ אִ֣ישׁ שָׂדֵ֔הוּ כִּֽי חָזַ֥ק עֲלֵהֶ֖ם הָרָעָ֑ב וַתְּהִ֥י הָאָ֖רֶץ לְפַרְעֹֽה׃",
-      "russian": "И купил Иосиф всю землю Египетскую для фараона, потому что продали Египтяне каждый свое поле, ибо голод одолевал их. И досталась земля фараону.",
-      "greek": "καὶ ἐκτήσατο Ἰωσὴφ πᾶσαν τὴν γῆν τῶν Αἰγυπτίων τῷ Φαραώ· ἀπέδοντο γὰρ οἱ Αἰγύπτιοι τὴν γῆν αὐτῶν τῷ Φαραώ, ἐπεκράτησεν γὰρ αὐτῶν ὁ λιμός· καὶ ἐγένετο ἡ γῆ Φαραώ,",
-      "english": "You shall also purify every article of cloth, leather, goats' hair, or wood.\""
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַיִּ֨קֶן יוֹסֵ֜ף אֶת כָּל אַדְמַ֤ת מִצְרַ֨יִם֙ לְפַרְעֹ֔ה כִּֽי מָכְר֤וּ מִצְרַ֨יִם֙ אִ֣ישׁ שָׂדֵ֔הוּ כִּֽי חָזַ֥ק עֲלֵהֶ֖ם הָרָעָ֑ב וַתְּהִ֥י הָאָ֖רֶץ לְפַרְעֹֽה׃",
+        "VUL": "Emit igitur Joseph omnem terram Ægypti, vendentibus singulis possessiones suas præ magnitudine famis. Subjecitque eam Pharaoni,",
+        "LXX": "καὶ ἐκτήσατο Ἰωσὴφ πᾶσαν τὴν γῆν τῶν Αἰγυπτίων τῷ Φαραώ· ἀπέδοντο γὰρ οἱ Αἰγύπτιοι τὴν γῆν αὐτῶν τῷ Φαραώ, ἐπεκράτησεν γὰρ αὐτῶν ὁ λιμός· καὶ ἐγένετο ἡ γῆ Φαραώ,",
+        "NAB": "You shall also purify every article of cloth, leather, goats' hair, or wood.\"",
+        "SYN": "И купил Иосиф всю землю Египетскую для фараона, потому что продали Египтяне каждый свое поле, ибо голод одолевал их. И досталась земля фараону."
+      }
     },
     "21": {
-      "sort_number": 21,
-      "name": "21",
-      "latin": "et cunctos populos ejus a novissimis terminis Ægypti usque ad extremos fines ejus,",
-      "word_count": 0,
-      "hebrew": "וְאֶ֨ת הָעָ֔ם הֶעֱבִ֥יר אֹת֖וֹ לֶעָרִ֑ים מִקְצֵ֥ה גְבוּל מִצְרַ֖יִם וְעַד קָצֵֽהוּ׃",
-      "russian": "И народ сделал он рабами от одного конца Египта до другого.",
-      "greek": "καὶ τὸν λαὸν κατεδουλώσατο αὐτῷ εἰς παῖδας, ἀπ’ ἄκρων ὁρίων Αἰγύπτου ἕως τῶν ἄκρων,",
-      "english": "Eleazar the priest told the soldiers who had returned from combat: \"This is what the law, as prescribed by the LORD to Moses, ordains:"
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְאֶ֨ת הָעָ֔ם הֶעֱבִ֥יר אֹת֖וֹ לֶעָרִ֑ים מִקְצֵ֥ה גְבוּל מִצְרַ֖יִם וְעַד קָצֵֽהוּ׃",
+        "VUL": "et cunctos populos ejus a novissimis terminis Ægypti usque ad extremos fines ejus,",
+        "LXX": "καὶ τὸν λαὸν κατεδουλώσατο αὐτῷ εἰς παῖδας, ἀπ’ ἄκρων ὁρίων Αἰγύπτου ἕως τῶν ἄκρων,",
+        "NAB": "Eleazar the priest told the soldiers who had returned from combat: \"This is what the law, as prescribed by the LORD to Moses, ordains:",
+        "SYN": "И народ сделал он рабами от одного конца Египта до другого."
+      }
     },
     "22": {
-      "sort_number": 22,
-      "name": "22",
-      "latin": "præter terram sacerdotum, quæ a rege tradita fuerat eis: quibus et statuta cibaria ex horreis publicis præbebantur, et idcirco non sunt compulsi vendere possessiones suas.",
-      "word_count": 0,
-      "hebrew": "רַ֛ק אַדְמַ֥ת הַכֹּהֲנִ֖ים לֹ֣א קָנָ֑ה כִּי֩ חֹ֨ק לַכֹּהֲנִ֜ים מֵאֵ֣ת פַּרְעֹ֗ה וְאָֽכְל֤וּ אֶת חֻקָּם֙ אֲשֶׁ֨ר נָתַ֤ן לָהֶם֙ פַּרְעֹ֔ה עַל כֵּ֕ן לֹ֥א מָכְר֖וּ אֶת אַדְמָתָֽם׃",
-      "russian": "Только земли жрецов не купил [Иосиф], ибо жрецам от фараона положен был участок, и они питались своим участком, который дал им фараон; посему и не продали земли своей.",
-      "greek": "χωρὶς τῆς γῆς τῶν ἱερέων μόνον· οὐκ ἐκτήσατο ταύτην Ἰωσήφ· ἐν δόσει γὰρ ἔδωκεν δόμα τοῖς ἱερεῦσιν Φαραώ, καὶ ἤσθιον τὴν δόσιν ἣν ἔδωκεν αὐτοῖς Φαραώ· διὰ τοῦτο οὐκ ἀπέδοντο τὴν γῆν αὐτῶν. ⸆",
-      "english": "Whatever can stand fire, such as gold, silver, bronze, iron, tin and lead,"
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "רַ֛ק אַדְמַ֥ת הַכֹּהֲנִ֖ים לֹ֣א קָנָ֑ה כִּי֩ חֹ֨ק לַכֹּהֲנִ֜ים מֵאֵ֣ת פַּרְעֹ֗ה וְאָֽכְל֤וּ אֶת חֻקָּם֙ אֲשֶׁ֨ר נָתַ֤ן לָהֶם֙ פַּרְעֹ֔ה עַל כֵּ֕ן לֹ֥א מָכְר֖וּ אֶת אַדְמָתָֽם׃",
+        "VUL": "præter terram sacerdotum, quæ a rege tradita fuerat eis: quibus et statuta cibaria ex horreis publicis præbebantur, et idcirco non sunt compulsi vendere possessiones suas.",
+        "LXX": "χωρὶς τῆς γῆς τῶν ἱερέων μόνον· οὐκ ἐκτήσατο ταύτην Ἰωσήφ· ἐν δόσει γὰρ ἔδωκεν δόμα τοῖς ἱερεῦσιν Φαραώ, καὶ ἤσθιον τὴν δόσιν ἣν ἔδωκεν αὐτοῖς Φαραώ· διὰ τοῦτο οὐκ ἀπέδοντο τὴν γῆν αὐτῶν. ⸆",
+        "NAB": "Whatever can stand fire, such as gold, silver, bronze, iron, tin and lead,",
+        "SYN": "Только земли жрецов не купил [Иосиф], ибо жрецам от фараона положен был участок, и они питались своим участком, который дал им фараон; посему и не продали земли своей."
+      }
     },
     "23": {
-      "sort_number": 23,
-      "name": "23",
-      "latin": "Dixit ergo Joseph ad populos: En ut cernitis, et vos et terram vestram Pharao possidet: accipite semina, et serite agros,",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֤אמֶר יוֹסֵף֙ אֶל הָעָ֔ם הֵן֩ קָנִ֨יתִי אֶתְכֶ֥ם הַיּ֛וֹם וְאֶת אַדְמַתְכֶ֖ם לְפַרְעֹ֑ה הֵֽא לָכֶ֣ם זֶ֔רַע וּזְרַעְתֶּ֖ם אֶת הָאֲדָמָֽה׃",
-      "russian": "И сказал Иосиф народу: вот, я купил теперь для фараона вас и землю вашу; вот вам семена, и засевайте землю;",
-      "greek": "εἶπεν δὲ Ἰωσὴφ πᾶσι τοῖς Αἰγυπτίοις Ἰδοὺ κέκτημαι ὑμᾶς καὶ τὴν γῆν ὑμῶν σήμερον τῷ Φαραώ, λάβετε αὑτοῖς σπέρμα καὶ σπείρατε τὴν γῆν·",
-      "english": "you shall put into the fire, that it may become clean; however, it must also be purified with lustral water. But whatever cannot stand fire you shall put into the water."
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַיֹּ֤אמֶר יוֹסֵף֙ אֶל הָעָ֔ם הֵן֩ קָנִ֨יתִי אֶתְכֶ֥ם הַיּ֛וֹם וְאֶת אַדְמַתְכֶ֖ם לְפַרְעֹ֑ה הֵֽא לָכֶ֣ם זֶ֔רַע וּזְרַעְתֶּ֖ם אֶת הָאֲדָמָֽה׃",
+        "VUL": "Dixit ergo Joseph ad populos: En ut cernitis, et vos et terram vestram Pharao possidet: accipite semina, et serite agros,",
+        "LXX": "εἶπεν δὲ Ἰωσὴφ πᾶσι τοῖς Αἰγυπτίοις Ἰδοὺ κέκτημαι ὑμᾶς καὶ τὴν γῆν ὑμῶν σήμερον τῷ Φαραώ, λάβετε αὑτοῖς σπέρμα καὶ σπείρατε τὴν γῆν·",
+        "NAB": "you shall put into the fire, that it may become clean; however, it must also be purified with lustral water. But whatever cannot stand fire you shall put into the water.",
+        "SYN": "И сказал Иосиф народу: вот, я купил теперь для фараона вас и землю вашу; вот вам семена, и засевайте землю;"
+      }
     },
     "24": {
-      "sort_number": 24,
-      "name": "24",
-      "latin": "ut fruges habere possitis. Quintam partem regi dabitis: quatuor reliquas permitto vobis in sementem, et in cibum familiis et liberis vestris.",
-      "word_count": 0,
-      "hebrew": "וְהָיָה֙ בַּתְּבוּאֹ֔ת וּנְתַתֶּ֥ם חֲמִישִׁ֖ית לְפַרְעֹ֑ה וְאַרְבַּ֣ע הַיָּדֹ֡ת יִהְיֶ֣ה לָכֶם֩ לְזֶ֨רַע הַשָּׂדֶ֧ה וּֽלְאָכְלְכֶ֛ם וְלַאֲשֶׁ֥ר בְּבָתֵּיכֶ֖ם וְלֶאֱכֹ֥ל לְטַפְּכֶֽם׃",
-      "russian": "когда будет жатва, давайте пятую часть фараону, а четыре части останутся вам на засеяние полей, на пропитание вам и тем, кто в домах ваших, и на пропитание детям вашим.",
-      "greek": "καὶ ἔσται τὰ γενήματα αὐτῆς, δώσετε τὸ πέμπτον μέρος τῷ Φαραώ· τὰ δὲ τέσσερα μέρη ἔσται ὑμῖν αὐτοῖς εἰς σπέρμα τῇ γῇ καὶ εἰς βρῶσιν ὑμῖν καὶ πᾶσιν τοῖς οἴκοις ὑμῶν.",
-      "english": "On the seventh day you shall wash your clothes, and then you will again be clean. After that you may enter the camp.\""
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְהָיָה֙ בַּתְּבוּאֹ֔ת וּנְתַתֶּ֥ם חֲמִישִׁ֖ית לְפַרְעֹ֑ה וְאַרְבַּ֣ע הַיָּדֹ֡ת יִהְיֶ֣ה לָכֶם֩ לְזֶ֨רַע הַשָּׂדֶ֧ה וּֽלְאָכְלְכֶ֛ם וְלַאֲשֶׁ֥ר בְּבָתֵּיכֶ֖ם וְלֶאֱכֹ֥ל לְטַפְּכֶֽם׃",
+        "VUL": "ut fruges habere possitis. Quintam partem regi dabitis: quatuor reliquas permitto vobis in sementem, et in cibum familiis et liberis vestris.",
+        "LXX": "καὶ ἔσται τὰ γενήματα αὐτῆς, δώσετε τὸ πέμπτον μέρος τῷ Φαραώ· τὰ δὲ τέσσερα μέρη ἔσται ὑμῖν αὐτοῖς εἰς σπέρμα τῇ γῇ καὶ εἰς βρῶσιν ὑμῖν καὶ πᾶσιν τοῖς οἴκοις ὑμῶν.",
+        "NAB": "On the seventh day you shall wash your clothes, and then you will again be clean. After that you may enter the camp.\"",
+        "SYN": "когда будет жатва, давайте пятую часть фараону, а четыре части останутся вам на засеяние полей, на пропитание вам и тем, кто в домах ваших, и на пропитание детям вашим."
+      }
     },
     "25": {
-      "sort_number": 25,
-      "name": "25",
-      "latin": "Qui responderunt: Salus nostra in manu tua est: respiciat nos tantum dominus noster, et læti serviemus regi.",
-      "word_count": 0,
-      "hebrew": "וַיֹּאמְר֖וּ הֶחֱיִתָ֑נוּ נִמְצָא חֵן֙ בְּעֵינֵ֣י אֲדֹנִ֔י וְהָיִ֥ינוּ עֲבָדִ֖ים לְפַרְעֹֽה׃",
-      "russian": "Они сказали: ты спас нам жизнь; да обретем милость в очах господина нашего и да будем рабами фараону.",
-      "greek": "καὶ εἶπαν Σέσωκας ἡμᾶς, εὕρομεν χάριν ἐναντίον τοῦ κυρίου ἡμῶν, καὶ ἐσόμεθα παῖδες Φαραώ.",
-      "english": "The LORD said to Moses:"
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַיֹּאמְר֖וּ הֶחֱיִתָ֑נוּ נִמְצָא חֵן֙ בְּעֵינֵ֣י אֲדֹנִ֔י וְהָיִ֥ינוּ עֲבָדִ֖ים לְפַרְעֹֽה׃",
+        "VUL": "Qui responderunt: Salus nostra in manu tua est: respiciat nos tantum dominus noster, et læti serviemus regi.",
+        "LXX": "καὶ εἶπαν Σέσωκας ἡμᾶς, εὕρομεν χάριν ἐναντίον τοῦ κυρίου ἡμῶν, καὶ ἐσόμεθα παῖδες Φαραώ.",
+        "NAB": "The LORD said to Moses:",
+        "SYN": "Они сказали: ты спас нам жизнь; да обретем милость в очах господина нашего и да будем рабами фараону."
+      }
     },
     "26": {
-      "sort_number": 26,
-      "name": "26",
-      "latin": "Ex eo tempore usque in præsentem diem, in universa terra Ægypti regibus quinta pars solvitur, et factum est quasi in legem, absque terra sacerdotali, quæ libera ab hac conditione fuit.",
-      "word_count": 0,
-      "hebrew": "וַיָּ֣שֶׂם אֹתָ֣הּ יוֹסֵ֡ף לְחֹק֩ עַד הַיּ֨וֹם הַזֶּ֜ה עַל אַדְמַ֥ת מִצְרַ֛יִם לְפַרְעֹ֖ה לַחֹ֑מֶשׁ רַ֞ק אַדְמַ֤ת הַכֹּֽהֲנִים֙ לְבַדָּ֔ם לֹ֥א הָיְתָ֖ה לְפַרְעֹֽה׃",
-      "russian": "И поставил Иосиф в закон земле Египетской, даже до сего дня: пятую часть давать фараону, исключая только землю жрецов, которая не принадлежала фараону.",
-      "greek": "καὶ ἔθετο αὐτοῖς Ἰωσὴφ εἰς πρόσταγμα ἕως τῆς ἡμέρας ταύτης ἐπὶ γῆν Αἰγύπτου τῷ Φαραὼ ἀποπεμπτοῦν, χωρὶς τῆς γῆς τῶν ἱερέων μόνον· οὐκ ἦν τῷ Φαραώ.",
-      "english": "\"With the help of the priest Eleazar and of the heads of the ancestral houses, count up all the human captives and the beasts that have been taken;"
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַיָּ֣שֶׂם אֹתָ֣הּ יוֹסֵ֡ף לְחֹק֩ עַד הַיּ֨וֹם הַזֶּ֜ה עַל אַדְמַ֥ת מִצְרַ֛יִם לְפַרְעֹ֖ה לַחֹ֑מֶשׁ רַ֞ק אַדְמַ֤ת הַכֹּֽהֲנִים֙ לְבַדָּ֔ם לֹ֥א הָיְתָ֖ה לְפַרְעֹֽה׃",
+        "VUL": "Ex eo tempore usque in præsentem diem, in universa terra Ægypti regibus quinta pars solvitur, et factum est quasi in legem, absque terra sacerdotali, quæ libera ab hac conditione fuit.",
+        "LXX": "καὶ ἔθετο αὐτοῖς Ἰωσὴφ εἰς πρόσταγμα ἕως τῆς ἡμέρας ταύτης ἐπὶ γῆν Αἰγύπτου τῷ Φαραὼ ἀποπεμπτοῦν, χωρὶς τῆς γῆς τῶν ἱερέων μόνον· οὐκ ἦν τῷ Φαραώ.",
+        "NAB": "\"With the help of the priest Eleazar and of the heads of the ancestral houses, count up all the human captives and the beasts that have been taken;",
+        "SYN": "И поставил Иосиф в закон земле Египетской, даже до сего дня: пятую часть давать фараону, исключая только землю жрецов, которая не принадлежала фараону."
+      }
     },
     "27": {
-      "sort_number": 27,
-      "name": "27",
-      "latin": "Habitavit ergo Israël in Ægypto, id est, in terra Gessen, et possedit eam: auctusque est, et multiplicatus nimis.",
-      "word_count": 0,
-      "hebrew": "וַיֵּ֧שֶׁב יִשְׂרָאֵ֛ל בְּאֶ֥רֶץ מִצְרַ֖יִם בְּאֶ֣רֶץ גֹּ֑שֶׁן וַיֵּאָחֲז֣וּ בָ֔הּ וַיִּפְר֥וּ וַיִּרְבּ֖וּ מְאֹֽד׃",
-      "russian": "И жил Израиль в земле Египетской, в земле Гесем, и владели они ею, и плодились, и весьма умножились.",
-      "greek": "κατῴκησεν δὲ Ἰσραὴλ ἐν γῇ Αἰγύπτῳ ἐπὶ τῆς γῆς Γέσεμ· καὶ ἐκληρονόμησαν ἐπ’ αὐτῆς, καὶ ἐπληθύνθησαν σφόδρα.",
-      "english": "then divide them evenly, giving half to those who took active part in the war by going out to combat, and half to the rest of the community."
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַיֵּ֧שֶׁב יִשְׂרָאֵ֛ל בְּאֶ֥רֶץ מִצְרַ֖יִם בְּאֶ֣רֶץ גֹּ֑שֶׁן וַיֵּאָחֲז֣וּ בָ֔הּ וַיִּפְר֥וּ וַיִּרְבּ֖וּ מְאֹֽד׃",
+        "VUL": "Habitavit ergo Israël in Ægypto, id est, in terra Gessen, et possedit eam: auctusque est, et multiplicatus nimis.",
+        "LXX": "κατῴκησεν δὲ Ἰσραὴλ ἐν γῇ Αἰγύπτῳ ἐπὶ τῆς γῆς Γέσεμ· καὶ ἐκληρονόμησαν ἐπ’ αὐτῆς, καὶ ἐπληθύνθησαν σφόδρα.",
+        "NAB": "then divide them evenly, giving half to those who took active part in the war by going out to combat, and half to the rest of the community.",
+        "SYN": "И жил Израиль в земле Египетской, в земле Гесем, и владели они ею, и плодились, и весьма умножились."
+      }
     },
     "28": {
-      "sort_number": 28,
-      "name": "28",
-      "latin": "Et vixit in ea decem et septem annis: factique sunt omnes dies vitæ illius, centum quadraginta septem annorum.",
-      "word_count": 0,
-      "hebrew": "וַיְחִ֤י יַעֲקֹב֙ בְּאֶ֣רֶץ מִצְרַ֔יִם שְׁבַ֥ע עֶשְׂרֵ֖ה שָׁנָ֑ה וַיְהִ֤י יְמֵֽי יַעֲקֹב֙ שְׁנֵ֣י חַיָּ֔יו שֶׁ֣בַע שָׁנִ֔ים וְאַרְבָּעִ֥ים וּמְאַ֖ת שָׁנָֽה׃",
-      "russian": "И жил Иаков в земле Египетской семнадцать лет; и было дней Иакова, годов жизни его, сто сорок семь лет.",
-      "greek": "Ἐπέζησεν δὲ Ἰακὼβ ἐν γῇ Αἰγύπτῳ ἔτη δέκα ἑπτά· ἐγένοντο δὲ αἱ ἡμέραι Ἰακὼβ ἐνιαυτῶν τῆς ζωῆς αὐτοῦ ἑκατὸν τεσσεράκοντα ἑπτὰ ἔτη.",
-      "english": "You shall levy a tax for the LORD on the warriors who went out to combat: one out of every five hundred persons, oxen, asses and sheep"
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַיְחִ֤י יַעֲקֹב֙ בְּאֶ֣רֶץ מִצְרַ֔יִם שְׁבַ֥ע עֶשְׂרֵ֖ה שָׁנָ֑ה וַיְהִ֤י יְמֵֽי יַעֲקֹב֙ שְׁנֵ֣י חַיָּ֔יו שֶׁ֣בַע שָׁנִ֔ים וְאַרְבָּעִ֥ים וּמְאַ֖ת שָׁנָֽה׃",
+        "VUL": "Et vixit in ea decem et septem annis: factique sunt omnes dies vitæ illius, centum quadraginta septem annorum.",
+        "LXX": "Ἐπέζησεν δὲ Ἰακὼβ ἐν γῇ Αἰγύπτῳ ἔτη δέκα ἑπτά· ἐγένοντο δὲ αἱ ἡμέραι Ἰακὼβ ἐνιαυτῶν τῆς ζωῆς αὐτοῦ ἑκατὸν τεσσεράκοντα ἑπτὰ ἔτη.",
+        "NAB": "You shall levy a tax for the LORD on the warriors who went out to combat: one out of every five hundred persons, oxen, asses and sheep",
+        "SYN": "И жил Иаков в земле Египетской семнадцать лет; и было дней Иакова, годов жизни его, сто сорок семь лет."
+      }
     },
     "29": {
-      "sort_number": 29,
-      "name": "29",
-      "latin": "Cumque appropinquare cerneret diem mortis suæ, vocavit filium suum Joseph, et dixit ad eum: Si inveni gratiam in conspectu tuo, pone manum tuam sub femore meo: et facies mihi misericordiam et veritatem, ut non sepelias me in Ægypto:",
-      "word_count": 0,
-      "hebrew": "וַיִּקְרְב֣וּ יְמֵֽי יִשְׂרָאֵ֘ל לָמוּת֒ וַיִּקְרָ֣א לִבְנ֣וֹ לְיוֹסֵ֗ף וַיֹּ֤אמֶר לוֹ֙ אִם נָ֨א מָצָ֤אתִי חֵן֙ בְּעֵינֶ֔יךָ שִֽׂים נָ֥א יָדְךָ֖ תַּ֣חַת יְרֵכִ֑י וְעָשִׂ֤יתָ עִמָּדִי֙ חֶ֣סֶד וֶאֱמֶ֔ת אַל נָ֥א תִקְבְּרֵ֖נִי בְּמִצְרָֽיִם׃",
-      "russian": "И пришло время Израилю умереть, и призвал он сына своего Иосифа и сказал ему: если я нашел благоволение в очах твоих, положи руку твою под стегно мое и клянись, что ты окажешь мне милость и правду, не похоронишь меня в Египте,",
-      "greek": "ἤγγισαν δὲ αἱ ἡμέραι Ἰσραὴλ ἀποθανεῖν, καὶ ἐκάλεσεν τὸν υἱὸν αὐτοῦ Ἰωσὴφ καὶ εἶπεν αὐτῷ Εἰ εὕρηκα χάριν ἐναντίον σου, ὑπόθες τὴν χεῖρά σου ὑπὸ τὸν μηρόν μου, καὶ ποιήσεις ἐπ’ ἐμὲ ἐλεημοσύνην καὶ ἀλήθειαν τοῦ μή με θάψαι ἐν Αἰγύπτῳ·",
-      "english": "in their half of the spoil you shall turn over to the priest Eleazar as a contribution to the LORD."
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַיִּקְרְב֣וּ יְמֵֽי יִשְׂרָאֵ֘ל לָמוּת֒ וַיִּקְרָ֣א לִבְנ֣וֹ לְיוֹסֵ֗ף וַיֹּ֤אמֶר לוֹ֙ אִם נָ֨א מָצָ֤אתִי חֵן֙ בְּעֵינֶ֔יךָ שִֽׂים נָ֥א יָדְךָ֖ תַּ֣חַת יְרֵכִ֑י וְעָשִׂ֤יתָ עִמָּדִי֙ חֶ֣סֶד וֶאֱמֶ֔ת אַל נָ֥א תִקְבְּרֵ֖נִי בְּמִצְרָֽיִם׃",
+        "VUL": "Cumque appropinquare cerneret diem mortis suæ, vocavit filium suum Joseph, et dixit ad eum: Si inveni gratiam in conspectu tuo, pone manum tuam sub femore meo: et facies mihi misericordiam et veritatem, ut non sepelias me in Ægypto:",
+        "LXX": "ἤγγισαν δὲ αἱ ἡμέραι Ἰσραὴλ ἀποθανεῖν, καὶ ἐκάλεσεν τὸν υἱὸν αὐτοῦ Ἰωσὴφ καὶ εἶπεν αὐτῷ Εἰ εὕρηκα χάριν ἐναντίον σου, ὑπόθες τὴν χεῖρά σου ὑπὸ τὸν μηρόν μου, καὶ ποιήσεις ἐπ’ ἐμὲ ἐλεημοσύνην καὶ ἀλήθειαν τοῦ μή με θάψαι ἐν Αἰγύπτῳ·",
+        "NAB": "in their half of the spoil you shall turn over to the priest Eleazar as a contribution to the LORD.",
+        "SYN": "И пришло время Израилю умереть, и призвал он сына своего Иосифа и сказал ему: если я нашел благоволение в очах твоих, положи руку твою под стегно мое и клянись, что ты окажешь мне милость и правду, не похоронишь меня в Египте,"
+      }
     },
     "30": {
-      "sort_number": 30,
-      "name": "30",
-      "latin": "sed dormiam cum patribus meis, et auferas me de terra hac, condasque in sepulchro majorum meorum. Cui respondit Joseph: Ego faciam quod jussisti.",
-      "word_count": 0,
-      "hebrew": "וְשָֽׁכַבְתִּי֙ עִם אֲבֹתַ֔י וּנְשָׂאתַ֨נִי֙ מִמִּצְרַ֔יִם וּקְבַרְתַּ֖נִי בִּקְבֻרָתָ֑ם וַיֹּאמַ֕ר אָנֹכִ֖י אֶֽעֱשֶׂ֥ה כִדְבָרֶֽךָ׃",
-      "russian": "дабы мне лечь с отцами моими; вынесешь меня из Египта и похоронишь меня в их гробнице. Иосиф сказал: сделаю по слову твоему.",
-      "greek": "ἀλλὰ κοιμηθήσομαι μετὰ τῶν πατέρων μου, καὶ ἀρεῖς με ἐξ Αἰγύπτου καὶ θάψεις με ἐν τῷ τάφῳ αὐτῶν. ὁ δὲ εἶπεν Ἐγὼ ποιήσω κατὰ τὸ ῥῆμά σου.",
-      "english": "From the Israelites' half you shall take one out of every fifty persons, and the same from the different beasts, oxen, asses and sheep, and give them to the Levites, who have charge of the LORD'S Dwelling.\""
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְשָֽׁכַבְתִּי֙ עִם אֲבֹתַ֔י וּנְשָׂאתַ֨נִי֙ מִמִּצְרַ֔יִם וּקְבַרְתַּ֖נִי בִּקְבֻרָתָ֑ם וַיֹּאמַ֕ר אָנֹכִ֖י אֶֽעֱשֶׂ֥ה כִדְבָרֶֽךָ׃",
+        "VUL": "sed dormiam cum patribus meis, et auferas me de terra hac, condasque in sepulchro majorum meorum. Cui respondit Joseph: Ego faciam quod jussisti.",
+        "LXX": "ἀλλὰ κοιμηθήσομαι μετὰ τῶν πατέρων μου, καὶ ἀρεῖς με ἐξ Αἰγύπτου καὶ θάψεις με ἐν τῷ τάφῳ αὐτῶν. ὁ δὲ εἶπεν Ἐγὼ ποιήσω κατὰ τὸ ῥῆμά σου.",
+        "NAB": "From the Israelites' half you shall take one out of every fifty persons, and the same from the different beasts, oxen, asses and sheep, and give them to the Levites, who have charge of the LORD'S Dwelling.\"",
+        "SYN": "дабы мне лечь с отцами моими; вынесешь меня из Египта и похоронишь меня в их гробнице. Иосиф сказал: сделаю по слову твоему."
+      }
     },
     "31": {
-      "sort_number": 31,
-      "name": "31",
-      "latin": "Et ille: Jura ergo, inquit, mihi. Quo jurante, adoravit Israël Deum, conversus ad lectuli caput.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֗אמֶר הִשָּֽׁבְעָה֙ לִ֔י וַיִּשָּׁבַ֖ע ל֑וֹ וַיִּשְׁתַּ֥חוּ יִשְׂרָאֵ֖ל עַל רֹ֥אשׁ הַמִּטָּֽה׃",
-      "russian": "И сказал: клянись мне. И клялся ему. И поклонился Израиль на возглавие постели.",
-      "greek": "εἶπεν δέ Ὄμοσόν μοι. καὶ ὤμοσεν αὐτῷ· καὶ προσεκύνησεν Ἰσραὴλ ἐπὶ τὸ ἄκρον τῆς ῥάβδου αὐτοῦ.",
-      "english": "So Moses and the priest Eleazar did this, as the LORD had commanded Moses."
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַיֹּ֗אמֶר הִשָּֽׁבְעָה֙ לִ֔י וַיִּשָּׁבַ֖ע ל֑וֹ וַיִּשְׁתַּ֥חוּ יִשְׂרָאֵ֖ל עַל רֹ֥אשׁ הַמִּטָּֽה׃",
+        "VUL": "Et ille: Jura ergo, inquit, mihi. Quo jurante, adoravit Israël Deum, conversus ad lectuli caput.",
+        "LXX": "εἶπεν δέ Ὄμοσόν μοι. καὶ ὤμοσεν αὐτῷ· καὶ προσεκύνησεν Ἰσραὴλ ἐπὶ τὸ ἄκρον τῆς ῥάβδου αὐτοῦ.",
+        "NAB": "So Moses and the priest Eleazar did this, as the LORD had commanded Moses.",
+        "SYN": "И сказал: клянись мне. И клялся ему. И поклонился Израиль на возглавие постели."
+      }
     }
   }
 }

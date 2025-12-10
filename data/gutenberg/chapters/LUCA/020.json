@@ -1,295 +1,438 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "LUCA_020",
-  "chapter_key": "20",
-  "chapter_number": 20,
-  "sort_number": 20,
-  "name": "20",
   "book_key": "LUCA",
+  "sequence": 20,
+  "chapter_in": {
+    "MT": 20,
+    "VUL": 20,
+    "LXX": 20
+  },
   "testament": "Novum_Testamentum",
   "section": "Evangelia",
-  "verse_count": 47,
   "verses": {
     "1": {
-      "verse_number": 1,
-      "sort_number": 1,
-      "text": "[LUCA 20:1]",
-      "word_count": 5
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {}
     },
     "2": {
-      "verse_number": 2,
-      "sort_number": 2,
-      "text": "[LUCA 20:2]",
-      "word_count": 5
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {}
     },
     "3": {
-      "verse_number": 3,
-      "sort_number": 3,
-      "text": "[LUCA 20:3]",
-      "word_count": 5
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {}
     },
     "4": {
-      "verse_number": 4,
-      "sort_number": 4,
-      "text": "[LUCA 20:4]",
-      "word_count": 5
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {}
     },
     "5": {
-      "verse_number": 5,
-      "sort_number": 5,
-      "text": "[LUCA 20:5]",
-      "word_count": 5
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {}
     },
     "6": {
-      "verse_number": 6,
-      "sort_number": 6,
-      "text": "[LUCA 20:6]",
-      "word_count": 5
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {}
     },
     "7": {
-      "verse_number": 7,
-      "sort_number": 7,
-      "text": "[LUCA 20:7]",
-      "word_count": 5
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {}
     },
     "8": {
-      "verse_number": 8,
-      "sort_number": 8,
-      "text": "[LUCA 20:8]",
-      "word_count": 5
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {}
     },
     "9": {
-      "verse_number": 9,
-      "sort_number": 9,
-      "text": "[LUCA 20:9]",
-      "word_count": 5
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {}
     },
     "10": {
-      "verse_number": 10,
-      "sort_number": 10,
-      "text": "[LUCA 20:10]",
-      "word_count": 5
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {}
     },
     "11": {
-      "verse_number": 11,
-      "sort_number": 11,
-      "text": "[LUCA 20:11]",
-      "word_count": 5
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {}
     },
     "12": {
-      "verse_number": 12,
-      "sort_number": 12,
-      "text": "[LUCA 20:12]",
-      "word_count": 5
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {}
     },
     "13": {
-      "verse_number": 13,
-      "sort_number": 13,
-      "text": "[LUCA 20:13]",
-      "word_count": 5
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {}
     },
     "14": {
-      "verse_number": 14,
-      "sort_number": 14,
-      "text": "[LUCA 20:14]",
-      "word_count": 5
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {}
     },
     "15": {
-      "verse_number": 15,
-      "sort_number": 15,
-      "text": "[LUCA 20:15]",
-      "word_count": 5
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {}
     },
     "16": {
-      "verse_number": 16,
-      "sort_number": 16,
-      "text": "[LUCA 20:16]",
-      "word_count": 5
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {}
     },
     "17": {
-      "verse_number": 17,
-      "sort_number": 17,
-      "text": "[LUCA 20:17]",
-      "word_count": 5
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {}
     },
     "18": {
-      "verse_number": 18,
-      "sort_number": 18,
-      "text": "[LUCA 20:18]",
-      "word_count": 5
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {}
     },
     "19": {
-      "verse_number": 19,
-      "sort_number": 19,
-      "text": "[LUCA 20:19]",
-      "word_count": 5
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {}
     },
     "20": {
-      "verse_number": 20,
-      "sort_number": 20,
-      "text": "[LUCA 20:20]",
-      "word_count": 5
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {}
     },
     "21": {
-      "verse_number": 21,
-      "sort_number": 21,
-      "text": "[LUCA 20:21]",
-      "word_count": 5
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {}
     },
     "22": {
-      "verse_number": 22,
-      "sort_number": 22,
-      "text": "[LUCA 20:22]",
-      "word_count": 5
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {}
     },
     "23": {
-      "verse_number": 23,
-      "sort_number": 23,
-      "text": "[LUCA 20:23]",
-      "word_count": 5
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {}
     },
     "24": {
-      "verse_number": 24,
-      "sort_number": 24,
-      "text": "[LUCA 20:24]",
-      "word_count": 5
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {}
     },
     "25": {
-      "verse_number": 25,
-      "sort_number": 25,
-      "text": "[LUCA 20:25]",
-      "word_count": 5
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {}
     },
     "26": {
-      "verse_number": 26,
-      "sort_number": 26,
-      "text": "[LUCA 20:26]",
-      "word_count": 5
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {}
     },
     "27": {
-      "verse_number": 27,
-      "sort_number": 27,
-      "text": "[LUCA 20:27]",
-      "word_count": 5
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {}
     },
     "28": {
-      "verse_number": 28,
-      "sort_number": 28,
-      "text": "[LUCA 20:28]",
-      "word_count": 5
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {}
     },
     "29": {
-      "verse_number": 29,
-      "sort_number": 29,
-      "text": "[LUCA 20:29]",
-      "word_count": 5
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {}
     },
     "30": {
-      "verse_number": 30,
-      "sort_number": 30,
-      "text": "[LUCA 20:30]",
-      "word_count": 5
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {}
     },
     "31": {
-      "verse_number": 31,
-      "sort_number": 31,
-      "text": "[LUCA 20:31]",
-      "word_count": 5
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {}
     },
     "32": {
-      "verse_number": 32,
-      "sort_number": 32,
-      "text": "[LUCA 20:32]",
-      "word_count": 5
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {}
     },
     "33": {
-      "verse_number": 33,
-      "sort_number": 33,
-      "text": "[LUCA 20:33]",
-      "word_count": 5
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {}
     },
     "34": {
-      "verse_number": 34,
-      "sort_number": 34,
-      "text": "[LUCA 20:34]",
-      "word_count": 5
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {}
     },
     "35": {
-      "verse_number": 35,
-      "sort_number": 35,
-      "text": "[LUCA 20:35]",
-      "word_count": 5
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {}
     },
     "36": {
-      "verse_number": 36,
-      "sort_number": 36,
-      "text": "[LUCA 20:36]",
-      "word_count": 5
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {}
     },
     "37": {
-      "verse_number": 37,
-      "sort_number": 37,
-      "text": "[LUCA 20:37]",
-      "word_count": 5
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {}
     },
     "38": {
-      "verse_number": 38,
-      "sort_number": 38,
-      "text": "[LUCA 20:38]",
-      "word_count": 5
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {}
     },
     "39": {
-      "verse_number": 39,
-      "sort_number": 39,
-      "text": "[LUCA 20:39]",
-      "word_count": 5
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {}
     },
     "40": {
-      "verse_number": 40,
-      "sort_number": 40,
-      "text": "[LUCA 20:40]",
-      "word_count": 5
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {}
     },
     "41": {
-      "verse_number": 41,
-      "sort_number": 41,
-      "text": "[LUCA 20:41]",
-      "word_count": 5
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {}
     },
     "42": {
-      "verse_number": 42,
-      "sort_number": 42,
-      "text": "[LUCA 20:42]",
-      "word_count": 5
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {}
     },
     "43": {
-      "verse_number": 43,
-      "sort_number": 43,
-      "text": "[LUCA 20:43]",
-      "word_count": 5
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {}
     },
     "44": {
-      "verse_number": 44,
-      "sort_number": 44,
-      "text": "[LUCA 20:44]",
-      "word_count": 5
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {}
     },
     "45": {
-      "verse_number": 45,
-      "sort_number": 45,
-      "text": "[LUCA 20:45]",
-      "word_count": 5
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {}
     },
     "46": {
-      "verse_number": 46,
-      "sort_number": 46,
-      "text": "[LUCA 20:46]",
-      "word_count": 5
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {}
     },
     "47": {
-      "verse_number": 47,
-      "sort_number": 47,
-      "text": "[LUCA 20:47]",
-      "word_count": 5
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {}
     }
   }
 }

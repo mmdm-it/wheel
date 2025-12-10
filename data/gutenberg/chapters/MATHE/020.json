@@ -1,319 +1,491 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "MATHE_020",
-  "chapter_key": "20",
-  "chapter_number": 20,
-  "sort_number": 20,
-  "name": "20",
   "book_key": "MATHE",
+  "sequence": 20,
+  "chapter_in": {
+    "MT": 20,
+    "VUL": 20,
+    "LXX": 20
+  },
   "testament": "Novum_Testamentum",
   "section": "Evangelia",
-  "verse_count": 34,
   "verses": {
     "1": {
-      "verse_number": 1,
-      "sort_number": 1,
-      "text": "[MATHE 20:1]",
-      "word_count": 5,
-      "russian": "Ибо Царство Небесное подобно хозяину дома, который вышел рано поутру нанять работников в виноградник свой",
-      "greek": "Ὁμοία γάρ ἐστιν ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ οἰκοδεσπότῃ, ὅστις ἐξῆλθεν ἅμα πρωῒ μισθώσασθαι ἐργάτας εἰς τὸν ἀμπελῶνα αὐτοῦ.",
-      "latin": "Simile est regnum cælorum homini patrifamilias, qui exiit primo mane conducere operarios in vineam suam."
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "VUL": "Simile est regnum cælorum homini patrifamilias, qui exiit primo mane conducere operarios in vineam suam.",
+        "LXX": "Ὁμοία γάρ ἐστιν ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ οἰκοδεσπότῃ, ὅστις ἐξῆλθεν ἅμα πρωῒ μισθώσασθαι ἐργάτας εἰς τὸν ἀμπελῶνα αὐτοῦ.",
+        "SYN": "Ибо Царство Небесное подобно хозяину дома, который вышел рано поутру нанять работников в виноградник свой",
+        "BYZ": "Ὁμοία γάρ ἐστιν ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ οἰκοδεσπότῃ, ὅστις ἐξῆλθεν ἅμα πρωῒ μισθώσασθαι ἐργάτας εἰς τὸν ἀμπελῶνα αὐτοῦ."
+      }
     },
     "2": {
-      "verse_number": 2,
-      "sort_number": 2,
-      "text": "[MATHE 20:2]",
-      "word_count": 5,
-      "russian": "и, договорившись с работниками по динарию на день, послал их в виноградник свой;",
-      "greek": "Καὶ συμφωνήσας μετὰ τῶν ἐργατῶν ἐκ δηναρίου τὴν ἡμέραν, ἀπέστειλεν αὐτοὺς εἰς τὸν ἀμπελῶνα αὐτοῦ.",
-      "latin": "Conventione autem facta cum operariis ex denario diurno, misit eos in vineam suam."
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "VUL": "Conventione autem facta cum operariis ex denario diurno, misit eos in vineam suam.",
+        "LXX": "Καὶ συμφωνήσας μετὰ τῶν ἐργατῶν ἐκ δηναρίου τὴν ἡμέραν, ἀπέστειλεν αὐτοὺς εἰς τὸν ἀμπελῶνα αὐτοῦ.",
+        "SYN": "и, договорившись с работниками по динарию на день, послал их в виноградник свой;",
+        "BYZ": "Καὶ συμφωνήσας μετὰ τῶν ἐργατῶν ἐκ δηναρίου τὴν ἡμέραν, ἀπέστειλεν αὐτοὺς εἰς τὸν ἀμπελῶνα αὐτοῦ."
+      }
     },
     "3": {
-      "verse_number": 3,
-      "sort_number": 3,
-      "text": "[MATHE 20:3]",
-      "word_count": 5,
-      "russian": "выйдя около третьего часа, он увидел других, стоящих на торжище праздно,",
-      "greek": "Καὶ ἐξελθὼν περὶ τρίτην ὥραν, εἶδεν ἄλλους ἑστῶτας ἐν τῇ ἀγορᾷ ἀργούς·",
-      "latin": "Et egressus circa horam tertiam, vidit alios stantes in foro otiosos,"
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "VUL": "Et egressus circa horam tertiam, vidit alios stantes in foro otiosos,",
+        "LXX": "Καὶ ἐξελθὼν περὶ τρίτην ὥραν, εἶδεν ἄλλους ἑστῶτας ἐν τῇ ἀγορᾷ ἀργούς·",
+        "SYN": "выйдя около третьего часа, он увидел других, стоящих на торжище праздно,",
+        "BYZ": "Καὶ ἐξελθὼν περὶ τρίτην ὥραν, εἶδεν ἄλλους ἑστῶτας ἐν τῇ ἀγορᾷ ἀργούς·"
+      }
     },
     "4": {
-      "verse_number": 4,
-      "sort_number": 4,
-      "text": "[MATHE 20:4]",
-      "word_count": 5,
-      "russian": "и им сказал: идите и вы в виноградник мой, и что следовать будет, дам вам. Они пошли.",
-      "greek": "καὶ ἐκείνοις εἶπεν, Ὑπάγετε καὶ ὑμεῖς εἰς τὸν ἀμπελῶνα, καὶ ὃ ἐὰν ᾖ δίκαιον δώσω ὑμῖν.",
-      "latin": "et dixit illis: Ite et vos in vineam meam, et quod justum fuerit dabo vobis."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "VUL": "et dixit illis: Ite et vos in vineam meam, et quod justum fuerit dabo vobis.",
+        "LXX": "καὶ ἐκείνοις εἶπεν, Ὑπάγετε καὶ ὑμεῖς εἰς τὸν ἀμπελῶνα, καὶ ὃ ἐὰν ᾖ δίκαιον δώσω ὑμῖν.",
+        "SYN": "и им сказал: идите и вы в виноградник мой, и что следовать будет, дам вам. Они пошли.",
+        "BYZ": "καὶ ἐκείνοις εἶπεν, Ὑπάγετε καὶ ὑμεῖς εἰς τὸν ἀμπελῶνα, καὶ ὃ ἐὰν ᾖ δίκαιον δώσω ὑμῖν."
+      }
     },
     "5": {
-      "verse_number": 5,
-      "sort_number": 5,
-      "text": "[MATHE 20:5]",
-      "word_count": 5,
-      "russian": "Опять выйдя около шестого и девятого часа, сделал то же.",
-      "greek": "Οἱ δὲ ἀπῆλθον. Πάλιν ἐξελθὼν περὶ ἕκτην καὶ ἐνάτην ὥραν, ἐποίησεν ὡσαύτως.",
-      "latin": "Illi autem abierunt. Iterum autem exiit circa sextam et nonam horam: et fecit similiter."
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Illi autem abierunt. Iterum autem exiit circa sextam et nonam horam: et fecit similiter.",
+        "LXX": "Οἱ δὲ ἀπῆλθον. Πάλιν ἐξελθὼν περὶ ἕκτην καὶ ἐνάτην ὥραν, ἐποίησεν ὡσαύτως.",
+        "SYN": "Опять выйдя около шестого и девятого часа, сделал то же.",
+        "BYZ": "Οἱ δὲ ἀπῆλθον. Πάλιν ἐξελθὼν περὶ ἕκτην καὶ ἐνάτην ὥραν, ἐποίησεν ὡσαύτως."
+      }
     },
     "6": {
-      "verse_number": 6,
-      "sort_number": 6,
-      "text": "[MATHE 20:6]",
-      "word_count": 5,
-      "russian": "Наконец, выйдя около одиннадцатого часа, он нашел других, стоящих праздно, и говорит им: что вы стоите здесь целый день праздно?",
-      "greek": "Περὶ δὲ τὴν ἑνδεκάτην ὥραν ἐξελθών, εὗρεν ἄλλους ἑστῶτας ἀργούς, καὶ λέγει αὐτοῖς, Τί ὧδε ἑστήκατε ὅλην τὴν ἡμέραν ἀργοί;",
-      "latin": "Circa undecimam vero exiit, et invenit alios stantes, et dicit illis: Quid hic statis tota die otiosi ?"
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "VUL": "Circa undecimam vero exiit, et invenit alios stantes, et dicit illis: Quid hic statis tota die otiosi ?",
+        "LXX": "Περὶ δὲ τὴν ἑνδεκάτην ὥραν ἐξελθών, εὗρεν ἄλλους ἑστῶτας ἀργούς, καὶ λέγει αὐτοῖς, Τί ὧδε ἑστήκατε ὅλην τὴν ἡμέραν ἀργοί;",
+        "SYN": "Наконец, выйдя около одиннадцатого часа, он нашел других, стоящих праздно, и говорит им: что вы стоите здесь целый день праздно?",
+        "BYZ": "Περὶ δὲ τὴν ἑνδεκάτην ὥραν ἐξελθών, εὗρεν ἄλλους ἑστῶτας ἀργούς, καὶ λέγει αὐτοῖς, Τί ὧδε ἑστήκατε ὅλην τὴν ἡμέραν ἀργοί;"
+      }
     },
     "7": {
-      "verse_number": 7,
-      "sort_number": 7,
-      "text": "[MATHE 20:7]",
-      "word_count": 5,
-      "russian": "Они говорят ему: никто нас не нанял. Он говорит им: идите и вы в виноградник мой, и что следовать будет, получите.",
-      "greek": "Λέγουσιν αὐτῷ, Ὅτι οὐδεὶς ἡμᾶς ἐμισθώσατο. Λέγει αὐτοῖς, Ὑπάγετε καὶ ὑμεῖς εἰς τὸν ἀμπελῶνα, καὶ ὃ ἐὰν ᾖ δίκαιον λήψεσθε.",
-      "latin": "Dicunt ei: Quia nemo nos conduxit. Dicit illis: Ite et vos in vineam meam."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "Dicunt ei: Quia nemo nos conduxit. Dicit illis: Ite et vos in vineam meam.",
+        "LXX": "Λέγουσιν αὐτῷ, Ὅτι οὐδεὶς ἡμᾶς ἐμισθώσατο. Λέγει αὐτοῖς, Ὑπάγετε καὶ ὑμεῖς εἰς τὸν ἀμπελῶνα, καὶ ὃ ἐὰν ᾖ δίκαιον λήψεσθε.",
+        "SYN": "Они говорят ему: никто нас не нанял. Он говорит им: идите и вы в виноградник мой, и что следовать будет, получите.",
+        "BYZ": "Λέγουσιν αὐτῷ, Ὅτι οὐδεὶς ἡμᾶς ἐμισθώσατο. Λέγει αὐτοῖς, Ὑπάγετε καὶ ὑμεῖς εἰς τὸν ἀμπελῶνα, καὶ ὃ ἐὰν ᾖ δίκαιον λήψεσθε."
+      }
     },
     "8": {
-      "verse_number": 8,
-      "sort_number": 8,
-      "text": "[MATHE 20:8]",
-      "word_count": 5,
-      "russian": "Когда же наступил вечер, говорит господин виноградника управителю своему: позови работников и отдай им плату, начав с последних до первых.",
-      "greek": "Ὀψίας δὲ γενομένης λέγει ὁ κύριος τοῦ ἀμπελῶνος τῷ ἐπιτρόπῳ αὐτοῦ, Κάλεσον τοὺς ἐργάτας, καὶ ἀπόδος αὐτοῖς τὸν μισθόν, ἀρξάμενος ἀπὸ τῶν ἐσχάτων ἕως τῶν πρώτων.",
-      "latin": "Cum sero autem factum esset, dicit dominus vineæ procuratori suo: Voca operarios, et redde illis mercedem incipiens a novissimis usque ad primos."
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "VUL": "Cum sero autem factum esset, dicit dominus vineæ procuratori suo: Voca operarios, et redde illis mercedem incipiens a novissimis usque ad primos.",
+        "LXX": "Ὀψίας δὲ γενομένης λέγει ὁ κύριος τοῦ ἀμπελῶνος τῷ ἐπιτρόπῳ αὐτοῦ, Κάλεσον τοὺς ἐργάτας, καὶ ἀπόδος αὐτοῖς τὸν μισθόν, ἀρξάμενος ἀπὸ τῶν ἐσχάτων ἕως τῶν πρώτων.",
+        "SYN": "Когда же наступил вечер, говорит господин виноградника управителю своему: позови работников и отдай им плату, начав с последних до первых.",
+        "BYZ": "Ὀψίας δὲ γενομένης λέγει ὁ κύριος τοῦ ἀμπελῶνος τῷ ἐπιτρόπῳ αὐτοῦ, Κάλεσον τοὺς ἐργάτας, καὶ ἀπόδος αὐτοῖς τὸν μισθόν, ἀρξάμενος ἀπὸ τῶν ἐσχάτων ἕως τῶν πρώτων."
+      }
     },
     "9": {
-      "verse_number": 9,
-      "sort_number": 9,
-      "text": "[MATHE 20:9]",
-      "word_count": 5,
-      "russian": "И пришедшие около одиннадцатого часа получили по динарию.",
-      "greek": "Καὶ ἐλθόντες οἱ περὶ τὴν ἑνδεκάτην ὥραν ἔλαβον ἀνὰ δηνάριον.",
-      "latin": "Cum venissent ergo qui circa undecimam horam venerant, acceperunt singulos denarios."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "VUL": "Cum venissent ergo qui circa undecimam horam venerant, acceperunt singulos denarios.",
+        "LXX": "Καὶ ἐλθόντες οἱ περὶ τὴν ἑνδεκάτην ὥραν ἔλαβον ἀνὰ δηνάριον.",
+        "SYN": "И пришедшие около одиннадцатого часа получили по динарию.",
+        "BYZ": "Καὶ ἐλθόντες οἱ περὶ τὴν ἑνδεκάτην ὥραν ἔλαβον ἀνὰ δηνάριον."
+      }
     },
     "10": {
-      "verse_number": 10,
-      "sort_number": 10,
-      "text": "[MATHE 20:10]",
-      "word_count": 5,
-      "russian": "Пришедшие же первыми думали, что они получат больше, но получили и они по динарию;",
-      "greek": "Ἐλθόντες δὲ οἱ πρῶτοι ἐνόμισαν ὅτι πλείονα λήψονται· καὶ ἔλαβον καὶ αὐτοὶ ἀνὰ δηνάριον.",
-      "latin": "Venientes autem et primi, arbitrati sunt quod plus essent accepturi: acceperunt autem et ipsi singulos denarios."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "VUL": "Venientes autem et primi, arbitrati sunt quod plus essent accepturi: acceperunt autem et ipsi singulos denarios.",
+        "LXX": "Ἐλθόντες δὲ οἱ πρῶτοι ἐνόμισαν ὅτι πλείονα λήψονται· καὶ ἔλαβον καὶ αὐτοὶ ἀνὰ δηνάριον.",
+        "SYN": "Пришедшие же первыми думали, что они получат больше, но получили и они по динарию;",
+        "BYZ": "Ἐλθόντες δὲ οἱ πρῶτοι ἐνόμισαν ὅτι πλείονα λήψονται· καὶ ἔλαβον καὶ αὐτοὶ ἀνὰ δηνάριον."
+      }
     },
     "11": {
-      "verse_number": 11,
-      "sort_number": 11,
-      "text": "[MATHE 20:11]",
-      "word_count": 5,
-      "russian": "и, получив, стали роптать на хозяина дома",
-      "greek": "Λαβόντες δὲ ἐγόγγυζον κατὰ τοῦ οἰκοδεσπότου,",
-      "latin": "Et accipientes murmurabant adversus patremfamilias,"
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "VUL": "Et accipientes murmurabant adversus patremfamilias,",
+        "LXX": "Λαβόντες δὲ ἐγόγγυζον κατὰ τοῦ οἰκοδεσπότου,",
+        "SYN": "и, получив, стали роптать на хозяина дома",
+        "BYZ": "Λαβόντες δὲ ἐγόγγυζον κατὰ τοῦ οἰκοδεσπότου,"
+      }
     },
     "12": {
-      "verse_number": 12,
-      "sort_number": 12,
-      "text": "[MATHE 20:12]",
-      "word_count": 5,
-      "russian": "и говорили: эти последние работали один час, и ты сравнял их с нами, перенесшими тягость дня и зной.",
-      "greek": "λέγοντες ὅτι Οὗτοι οἱ ἔσχατοι μίαν ὥραν ἐποίησαν, καὶ ἴσους ἡμῖν αὐτοὺς ἐποίησας, τοῖς βαστάσασιν τὸ βάρος τῆς ἡμέρας καὶ τὸν καύσωνα.",
-      "latin": "dicentes: Hi novissimi una hora fecerunt, et pares illos nobis fecisti, qui portavimus pondus diei, et æstus."
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "VUL": "dicentes: Hi novissimi una hora fecerunt, et pares illos nobis fecisti, qui portavimus pondus diei, et æstus.",
+        "LXX": "λέγοντες ὅτι Οὗτοι οἱ ἔσχατοι μίαν ὥραν ἐποίησαν, καὶ ἴσους ἡμῖν αὐτοὺς ἐποίησας, τοῖς βαστάσασιν τὸ βάρος τῆς ἡμέρας καὶ τὸν καύσωνα.",
+        "SYN": "и говорили: эти последние работали один час, и ты сравнял их с нами, перенесшими тягость дня и зной.",
+        "BYZ": "λέγοντες ὅτι Οὗτοι οἱ ἔσχατοι μίαν ὥραν ἐποίησαν, καὶ ἴσους ἡμῖν αὐτοὺς ἐποίησας, τοῖς βαστάσασιν τὸ βάρος τῆς ἡμέρας καὶ τὸν καύσωνα."
+      }
     },
     "13": {
-      "verse_number": 13,
-      "sort_number": 13,
-      "text": "[MATHE 20:13]",
-      "word_count": 5,
-      "russian": "Он же в ответ сказал одному из них: друг! я не обижаю тебя; не за динарий ли ты договорился со мною?",
-      "greek": "Ὁ δὲ ἀποκριθεὶς εἶπεν ἑνὶ αὐτῶν, Ἑταῖρε, οὐκ ἀδικῶ σε· οὐχὶ δηναρίου συνεφώνησάς μοι;",
-      "latin": "At ille respondens uni eorum, dixit: Amice, non facio tibi injuriam: nonne ex denario convenisti mecum ?"
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "VUL": "At ille respondens uni eorum, dixit: Amice, non facio tibi injuriam: nonne ex denario convenisti mecum ?",
+        "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν ἑνὶ αὐτῶν, Ἑταῖρε, οὐκ ἀδικῶ σε· οὐχὶ δηναρίου συνεφώνησάς μοι;",
+        "SYN": "Он же в ответ сказал одному из них: друг! я не обижаю тебя; не за динарий ли ты договорился со мною?",
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν ἑνὶ αὐτῶν, Ἑταῖρε, οὐκ ἀδικῶ σε· οὐχὶ δηναρίου συνεφώνησάς μοι;"
+      }
     },
     "14": {
-      "verse_number": 14,
-      "sort_number": 14,
-      "text": "[MATHE 20:14]",
-      "word_count": 5,
-      "russian": "возьми свое и пойди; я же хочу дать этому последнему то же, что и тебе;",
-      "greek": "Ἆρον τὸ σὸν καὶ ὕπαγε· θέλω δὲ τούτῳ τῷ ἐσχάτῳ δοῦναι ὡς καὶ σοί.",
-      "latin": "Tolle quod tuum est, et vade: volo autem et huic novissimo dare sicut et tibi."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "VUL": "Tolle quod tuum est, et vade: volo autem et huic novissimo dare sicut et tibi.",
+        "LXX": "Ἆρον τὸ σὸν καὶ ὕπαγε· θέλω δὲ τούτῳ τῷ ἐσχάτῳ δοῦναι ὡς καὶ σοί.",
+        "SYN": "возьми свое и пойди; я же хочу дать этому последнему то же, что и тебе;",
+        "BYZ": "Ἆρον τὸ σὸν καὶ ὕπαγε· θέλω δὲ τούτῳ τῷ ἐσχάτῳ δοῦναι ὡς καὶ σοί."
+      }
     },
     "15": {
-      "verse_number": 15,
-      "sort_number": 15,
-      "text": "[MATHE 20:15]",
-      "word_count": 5,
-      "russian": "разве я не властен в своем делать, что хочу? или глаз твой завистлив оттого, что я добр?",
-      "greek": "Ἢ οὐκ ἔξεστίν μοι ποιῆσαι ὃ θέλω ἐν τοῖς ἐμοῖς; Εἰ ὁ ὀφθαλμός σου πονηρός ἐστιν, ὅτι ἐγὼ ἀγαθός εἰμι;",
-      "latin": "Aut non licet mihi quod volo, facere ? an oculus tuus nequam est, quia ego bonus sum ?"
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "VUL": "Aut non licet mihi quod volo, facere ? an oculus tuus nequam est, quia ego bonus sum ?",
+        "LXX": "Ἢ οὐκ ἔξεστίν μοι ποιῆσαι ὃ θέλω ἐν τοῖς ἐμοῖς; Εἰ ὁ ὀφθαλμός σου πονηρός ἐστιν, ὅτι ἐγὼ ἀγαθός εἰμι;",
+        "SYN": "разве я не властен в своем делать, что хочу? или глаз твой завистлив оттого, что я добр?",
+        "BYZ": "Ἢ οὐκ ἔξεστίν μοι ποιῆσαι ὃ θέλω ἐν τοῖς ἐμοῖς; Εἰ ὁ ὀφθαλμός σου πονηρός ἐστιν, ὅτι ἐγὼ ἀγαθός εἰμι;"
+      }
     },
     "16": {
-      "verse_number": 16,
-      "sort_number": 16,
-      "text": "[MATHE 20:16]",
-      "word_count": 5,
-      "russian": "Так будут последние первыми, и первые последними, ибо много званых, а мало избранных.",
-      "greek": "Οὕτως ἔσονται οἱ ἔσχατοι πρῶτοι, καὶ οἱ πρῶτοι ἔσχατοι· πολλοὶ γάρ εἰσιν κλητοί, ὀλίγοι δὲ ἐκλεκτοί.",
-      "latin": "Sic erunt novissimi primi, et primi novissimi. Multi enim sunt vocati, pauci vero electi."
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "VUL": "Sic erunt novissimi primi, et primi novissimi. Multi enim sunt vocati, pauci vero electi.",
+        "LXX": "Οὕτως ἔσονται οἱ ἔσχατοι πρῶτοι, καὶ οἱ πρῶτοι ἔσχατοι· πολλοὶ γάρ εἰσιν κλητοί, ὀλίγοι δὲ ἐκλεκτοί.",
+        "SYN": "Так будут последние первыми, и первые последними, ибо много званых, а мало избранных.",
+        "BYZ": "Οὕτως ἔσονται οἱ ἔσχατοι πρῶτοι, καὶ οἱ πρῶτοι ἔσχατοι· πολλοὶ γάρ εἰσιν κλητοί, ὀλίγοι δὲ ἐκλεκτοί."
+      }
     },
     "17": {
-      "verse_number": 17,
-      "sort_number": 17,
-      "text": "[MATHE 20:17]",
-      "word_count": 5,
-      "russian": "И, восходя в Иерусалим, Иисус дорогою отозвал двенадцать учеников одних, и сказал им:",
-      "greek": "Καὶ ἀναβαίνων ὁ Ἰησοῦς εἰς Ἱεροσόλυμα παρέλαβεν τοὺς δώδεκα μαθητὰς κατ’ ἰδίαν ἐν τῇ ὁδῷ, καὶ εἶπεν αὐτοῖς,",
-      "latin": "Et ascendens Jesus Jerosolymam, assumpsit duodecim discipulos secreto, et ait illis:"
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "VUL": "Et ascendens Jesus Jerosolymam, assumpsit duodecim discipulos secreto, et ait illis:",
+        "LXX": "Καὶ ἀναβαίνων ὁ Ἰησοῦς εἰς Ἱεροσόλυμα παρέλαβεν τοὺς δώδεκα μαθητὰς κατ’ ἰδίαν ἐν τῇ ὁδῷ, καὶ εἶπεν αὐτοῖς,",
+        "SYN": "И, восходя в Иерусалим, Иисус дорогою отозвал двенадцать учеников одних, и сказал им:",
+        "BYZ": "Καὶ ἀναβαίνων ὁ Ἰησοῦς εἰς Ἱεροσόλυμα παρέλαβεν τοὺς δώδεκα μαθητὰς κατ’ ἰδίαν ἐν τῇ ὁδῷ, καὶ εἶπεν αὐτοῖς,"
+      }
     },
     "18": {
-      "verse_number": 18,
-      "sort_number": 18,
-      "text": "[MATHE 20:18]",
-      "word_count": 5,
-      "russian": "вот, мы восходим в Иерусалим, и Сын Человеческий предан будет первосвященникам и книжникам, и осудят Его на смерть;",
-      "greek": "Ἰδού, ἀναβαίνομεν εἰς Ἱεροσόλυμα, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδοθήσεται τοῖς ἀρχιερεῦσιν καὶ γραμματεῦσιν, καὶ κατακρινοῦσιν αὐτὸν θανάτῳ,",
-      "latin": "Ecce ascendimus Jerosolymam, et Filius hominis tradetur principibus sacerdotum, et scribis, et condemnabunt eum morte,"
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "VUL": "Ecce ascendimus Jerosolymam, et Filius hominis tradetur principibus sacerdotum, et scribis, et condemnabunt eum morte,",
+        "LXX": "Ἰδού, ἀναβαίνομεν εἰς Ἱεροσόλυμα, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδοθήσεται τοῖς ἀρχιερεῦσιν καὶ γραμματεῦσιν, καὶ κατακρινοῦσιν αὐτὸν θανάτῳ,",
+        "SYN": "вот, мы восходим в Иерусалим, и Сын Человеческий предан будет первосвященникам и книжникам, и осудят Его на смерть;",
+        "BYZ": "Ἰδού, ἀναβαίνομεν εἰς Ἱεροσόλυμα, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδοθήσεται τοῖς ἀρχιερεῦσιν καὶ γραμματεῦσιν, καὶ κατακρινοῦσιν αὐτὸν θανάτῳ,"
+      }
     },
     "19": {
-      "verse_number": 19,
-      "sort_number": 19,
-      "text": "[MATHE 20:19]",
-      "word_count": 5,
-      "russian": "и предадут Его язычникам на поругание и биение и распятие; и в третий день воскреснет.",
-      "greek": "καὶ παραδώσουσιν αὐτὸν τοῖς ἔθνεσιν εἰς τὸ ἐμπαῖξαι καὶ μαστιγῶσαι καὶ σταυρῶσαι· καὶ τῇ τρίτῃ ἡμέρᾳ ἀναστήσεται.",
-      "latin": "et tradent eum gentibus ad illudendum, et flagellandum, et crucifigendum, et tertia die resurget."
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "VUL": "et tradent eum gentibus ad illudendum, et flagellandum, et crucifigendum, et tertia die resurget.",
+        "LXX": "καὶ παραδώσουσιν αὐτὸν τοῖς ἔθνεσιν εἰς τὸ ἐμπαῖξαι καὶ μαστιγῶσαι καὶ σταυρῶσαι· καὶ τῇ τρίτῃ ἡμέρᾳ ἀναστήσεται.",
+        "SYN": "и предадут Его язычникам на поругание и биение и распятие; и в третий день воскреснет.",
+        "BYZ": "καὶ παραδώσουσιν αὐτὸν τοῖς ἔθνεσιν εἰς τὸ ἐμπαῖξαι καὶ μαστιγῶσαι καὶ σταυρῶσαι· καὶ τῇ τρίτῃ ἡμέρᾳ ἀναστήσεται."
+      }
     },
     "20": {
-      "verse_number": 20,
-      "sort_number": 20,
-      "text": "[MATHE 20:20]",
-      "word_count": 5,
-      "russian": "Тогда приступила к Нему мать сыновей Зеведеевых с сыновьями своими, кланяясь и чего-то прося у Него.",
-      "greek": "Τότε προσῆλθεν αὐτῷ ἡ μήτηρ τῶν υἱῶν Ζεβεδαίου μετὰ τῶν υἱῶν αὐτῆς, προσκυνοῦσα καὶ αἰτοῦσά τι παρ’ αὐτοῦ.",
-      "latin": "Tunc accessit ad eum mater filiorum Zebedæi cum filiis suis, adorans et petens aliquid ab eo."
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "VUL": "Tunc accessit ad eum mater filiorum Zebedæi cum filiis suis, adorans et petens aliquid ab eo.",
+        "LXX": "Τότε προσῆλθεν αὐτῷ ἡ μήτηρ τῶν υἱῶν Ζεβεδαίου μετὰ τῶν υἱῶν αὐτῆς, προσκυνοῦσα καὶ αἰτοῦσά τι παρ’ αὐτοῦ.",
+        "SYN": "Тогда приступила к Нему мать сыновей Зеведеевых с сыновьями своими, кланяясь и чего-то прося у Него.",
+        "BYZ": "Τότε προσῆλθεν αὐτῷ ἡ μήτηρ τῶν υἱῶν Ζεβεδαίου μετὰ τῶν υἱῶν αὐτῆς, προσκυνοῦσα καὶ αἰτοῦσά τι παρ’ αὐτοῦ."
+      }
     },
     "21": {
-      "verse_number": 21,
-      "sort_number": 21,
-      "text": "[MATHE 20:21]",
-      "word_count": 5,
-      "russian": "Он сказал ей: чего ты хочешь? Она говорит Ему: скажи, чтобы сии два сына мои сели у Тебя один по правую сторону, а другой по левую в Царстве Твоем.",
-      "greek": "Ὁ δὲ εἶπεν αὐτῇ, Τί θέλεις; Λέγει αὐτῷ, Εἰπὲ ἵνα καθίσωσιν οὗτοι οἱ δύο υἱοί μου, εἷς ἐκ δεξιῶν σου, καὶ εἷς ἐξ εὐωνύμων σου, ἐν τῇ βασιλείᾳ σου.",
-      "latin": "Qui dixit ei: Quid vis ? Ait illi: Dic ut sedeant hi duo filii mei, unus ad dexteram tuam, et unus ad sinistram in regno tuo."
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Qui dixit ei: Quid vis ? Ait illi: Dic ut sedeant hi duo filii mei, unus ad dexteram tuam, et unus ad sinistram in regno tuo.",
+        "LXX": "Ὁ δὲ εἶπεν αὐτῇ, Τί θέλεις; Λέγει αὐτῷ, Εἰπὲ ἵνα καθίσωσιν οὗτοι οἱ δύο υἱοί μου, εἷς ἐκ δεξιῶν σου, καὶ εἷς ἐξ εὐωνύμων σου, ἐν τῇ βασιλείᾳ σου.",
+        "SYN": "Он сказал ей: чего ты хочешь? Она говорит Ему: скажи, чтобы сии два сына мои сели у Тебя один по правую сторону, а другой по левую в Царстве Твоем.",
+        "BYZ": "Ὁ δὲ εἶπεν αὐτῇ, Τί θέλεις; Λέγει αὐτῷ, Εἰπὲ ἵνα καθίσωσιν οὗτοι οἱ δύο υἱοί μου, εἷς ἐκ δεξιῶν σου, καὶ εἷς ἐξ εὐωνύμων σου, ἐν τῇ βασιλείᾳ σου."
+      }
     },
     "22": {
-      "verse_number": 22,
-      "sort_number": 22,
-      "text": "[MATHE 20:22]",
-      "word_count": 5,
-      "russian": "Иисус сказал в ответ: не знаете, чего просите. Можете ли пить чашу, которую Я буду пить, или креститься крещением, которым Я крещусь? Они говорят Ему: можем.",
-      "greek": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν, Οὐκ οἴδατε τί αἰτεῖσθε. Δύνασθε πιεῖν τὸ ποτήριον ὃ ἐγὼ μέλλω πίνειν, ἢ τὸ βάπτισμα ὃ ἐγὼ βαπτίζομαι βαπτισθῆναι; Λέγουσιν αὐτῷ, Δυνάμεθα.",
-      "latin": "Respondens autem Jesus, dixit: Nescitis quid petatis. Potestis bibere calicem, quem ego bibiturus sum ? Dicunt ei: Possumus."
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "VUL": "Respondens autem Jesus, dixit: Nescitis quid petatis. Potestis bibere calicem, quem ego bibiturus sum ? Dicunt ei: Possumus.",
+        "LXX": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν, Οὐκ οἴδατε τί αἰτεῖσθε. Δύνασθε πιεῖν τὸ ποτήριον ὃ ἐγὼ μέλλω πίνειν, ἢ τὸ βάπτισμα ὃ ἐγὼ βαπτίζομαι βαπτισθῆναι; Λέγουσιν αὐτῷ, Δυνάμεθα.",
+        "SYN": "Иисус сказал в ответ: не знаете, чего просите. Можете ли пить чашу, которую Я буду пить, или креститься крещением, которым Я крещусь? Они говорят Ему: можем.",
+        "BYZ": "Ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν, Οὐκ οἴδατε τί αἰτεῖσθε. Δύνασθε πιεῖν τὸ ποτήριον ὃ ἐγὼ μέλλω πίνειν, ἢ τὸ βάπτισμα ὃ ἐγὼ βαπτίζομαι βαπτισθῆναι; Λέγουσιν αὐτῷ, Δυνάμεθα."
+      }
     },
     "23": {
-      "verse_number": 23,
-      "sort_number": 23,
-      "text": "[MATHE 20:23]",
-      "word_count": 5,
-      "russian": "И говорит им: чашу Мою будете пить, и крещением, которым Я крещусь, будете креститься, но дать сесть у Меня по правую сторону и по левую -- не от Меня зависит, но кому уготовано Отцем Моим.",
-      "greek": "Καὶ λέγει αὐτοῖς, Τὸ μὲν ποτήριόν μου πίεσθε, καὶ τὸ βάπτισμα ὃ ἐγὼ βαπτίζομαι βαπτισθήσεσθε· τὸ δὲ καθίσαι ἐκ δεξιῶν μου καὶ ἐξ εὐωνύμων μου οὐκ ἔστιν ἐμὸν δοῦναι, ἀλλ’ οἷς ἡτοίμασται ὑπὸ τοῦ πατρός μου.",
-      "latin": "Ait illis: Calicem quidem meum bibetis: sedere autem ad dexteram meam vel sinistram non est meum dare vobis, sed quibus paratum est a Patre meo."
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "VUL": "Ait illis: Calicem quidem meum bibetis: sedere autem ad dexteram meam vel sinistram non est meum dare vobis, sed quibus paratum est a Patre meo.",
+        "LXX": "Καὶ λέγει αὐτοῖς, Τὸ μὲν ποτήριόν μου πίεσθε, καὶ τὸ βάπτισμα ὃ ἐγὼ βαπτίζομαι βαπτισθήσεσθε· τὸ δὲ καθίσαι ἐκ δεξιῶν μου καὶ ἐξ εὐωνύμων μου οὐκ ἔστιν ἐμὸν δοῦναι, ἀλλ’ οἷς ἡτοίμασται ὑπὸ τοῦ πατρός μου.",
+        "SYN": "И говорит им: чашу Мою будете пить, и крещением, которым Я крещусь, будете креститься, но дать сесть у Меня по правую сторону и по левую -- не от Меня зависит, но кому уготовано Отцем Моим.",
+        "BYZ": "Καὶ λέγει αὐτοῖς, Τὸ μὲν ποτήριόν μου πίεσθε, καὶ τὸ βάπτισμα ὃ ἐγὼ βαπτίζομαι βαπτισθήσεσθε· τὸ δὲ καθίσαι ἐκ δεξιῶν μου καὶ ἐξ εὐωνύμων μου οὐκ ἔστιν ἐμὸν δοῦναι, ἀλλ’ οἷς ἡτοίμασται ὑπὸ τοῦ πατρός μου."
+      }
     },
     "24": {
-      "verse_number": 24,
-      "sort_number": 24,
-      "text": "[MATHE 20:24]",
-      "word_count": 5,
-      "russian": "Услышав сие, прочие десять учеников вознегодовали на двух братьев.",
-      "greek": "Καὶ ἀκούσαντες οἱ δέκα ἠγανάκτησαν περὶ τῶν δύο ἀδελφῶν.",
-      "latin": "Et audientes decem, indignati sunt de duobus fratribus."
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "VUL": "Et audientes decem, indignati sunt de duobus fratribus.",
+        "LXX": "Καὶ ἀκούσαντες οἱ δέκα ἠγανάκτησαν περὶ τῶν δύο ἀδελφῶν.",
+        "SYN": "Услышав сие, прочие десять учеников вознегодовали на двух братьев.",
+        "BYZ": "Καὶ ἀκούσαντες οἱ δέκα ἠγανάκτησαν περὶ τῶν δύο ἀδελφῶν."
+      }
     },
     "25": {
-      "verse_number": 25,
-      "sort_number": 25,
-      "text": "[MATHE 20:25]",
-      "word_count": 5,
-      "russian": "Иисус же, подозвав их, сказал: вы знаете, что князья народов господствуют над ними, и вельможи властвуют ими;",
-      "greek": "Ὁ δὲ Ἰησοῦς προσκαλεσάμενος αὐτοὺς εἶπεν, Οἴδατε ὅτι οἱ ἄρχοντες τῶν ἐθνῶν κατακυριεύουσιν αὐτῶν, καὶ οἱ μεγάλοι κατεξουσιάζουσιν αὐτῶν.",
-      "latin": "Jesus autem vocavit eos ad se, et ait: Scitis quia principes gentium dominantur eorum: et qui majores sunt, potestatem exercent in eos."
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "VUL": "Jesus autem vocavit eos ad se, et ait: Scitis quia principes gentium dominantur eorum: et qui majores sunt, potestatem exercent in eos.",
+        "LXX": "Ὁ δὲ Ἰησοῦς προσκαλεσάμενος αὐτοὺς εἶπεν, Οἴδατε ὅτι οἱ ἄρχοντες τῶν ἐθνῶν κατακυριεύουσιν αὐτῶν, καὶ οἱ μεγάλοι κατεξουσιάζουσιν αὐτῶν.",
+        "SYN": "Иисус же, подозвав их, сказал: вы знаете, что князья народов господствуют над ними, и вельможи властвуют ими;",
+        "BYZ": "Ὁ δὲ Ἰησοῦς προσκαλεσάμενος αὐτοὺς εἶπεν, Οἴδατε ὅτι οἱ ἄρχοντες τῶν ἐθνῶν κατακυριεύουσιν αὐτῶν, καὶ οἱ μεγάλοι κατεξουσιάζουσιν αὐτῶν."
+      }
     },
     "26": {
-      "verse_number": 26,
-      "sort_number": 26,
-      "text": "[MATHE 20:26]",
-      "word_count": 5,
-      "russian": "но между вами да не будет так: а кто хочет между вами быть большим, да будет вам слугою;",
-      "greek": "Οὐχ οὕτως δὲ ἔσται ἐν ὑμῖν· ἀλλ’ ὃς ἐὰν θέλῃ ἐν ὑμῖν μέγας γενέσθαι ἔσται ὑμῶν διάκονος·",
-      "latin": "Non ita erit inter vos: sed quicumque voluerit inter vos major fieri, sit vester minister:"
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Non ita erit inter vos: sed quicumque voluerit inter vos major fieri, sit vester minister:",
+        "LXX": "Οὐχ οὕτως δὲ ἔσται ἐν ὑμῖν· ἀλλ’ ὃς ἐὰν θέλῃ ἐν ὑμῖν μέγας γενέσθαι ἔσται ὑμῶν διάκονος·",
+        "SYN": "но между вами да не будет так: а кто хочет между вами быть большим, да будет вам слугою;",
+        "BYZ": "Οὐχ οὕτως δὲ ἔσται ἐν ὑμῖν· ἀλλ’ ὃς ἐὰν θέλῃ ἐν ὑμῖν μέγας γενέσθαι ἔσται ὑμῶν διάκονος·"
+      }
     },
     "27": {
-      "verse_number": 27,
-      "sort_number": 27,
-      "text": "[MATHE 20:27]",
-      "word_count": 5,
-      "russian": "и кто хочет между вами быть первым, да будет вам рабом;",
-      "greek": "καὶ ὃς ἐὰν θέλῃ ἐν ὑμῖν εἶναι πρῶτος, ἔστω ὑμῶν δοῦλος·",
-      "latin": "et qui voluerit inter vos primus esse, erit vester servus."
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "et qui voluerit inter vos primus esse, erit vester servus.",
+        "LXX": "καὶ ὃς ἐὰν θέλῃ ἐν ὑμῖν εἶναι πρῶτος, ἔστω ὑμῶν δοῦλος·",
+        "SYN": "и кто хочет между вами быть первым, да будет вам рабом;",
+        "BYZ": "καὶ ὃς ἐὰν θέλῃ ἐν ὑμῖν εἶναι πρῶτος, ἔστω ὑμῶν δοῦλος·"
+      }
     },
     "28": {
-      "verse_number": 28,
-      "sort_number": 28,
-      "text": "[MATHE 20:28]",
-      "word_count": 5,
-      "russian": "так как Сын Человеческий не для того пришел, чтобы Ему служили, но чтобы послужить и отдать душу Свою для искупления многих.",
-      "greek": "ὥσπερ ὁ υἱὸς τοῦ ἀνθρώπου οὐκ ἦλθεν διακονηθῆναι, ἀλλὰ διακονῆσαι, καὶ δοῦναι τὴν ψυχὴν αὐτοῦ λύτρον ἀντὶ πολλῶν.",
-      "latin": "Sicut Filius hominis non venit ministrari, sed ministrare, et dare animam suam redemptionem pro multis."
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "Sicut Filius hominis non venit ministrari, sed ministrare, et dare animam suam redemptionem pro multis.",
+        "LXX": "ὥσπερ ὁ υἱὸς τοῦ ἀνθρώπου οὐκ ἦλθεν διακονηθῆναι, ἀλλὰ διακονῆσαι, καὶ δοῦναι τὴν ψυχὴν αὐτοῦ λύτρον ἀντὶ πολλῶν.",
+        "SYN": "так как Сын Человеческий не для того пришел, чтобы Ему служили, но чтобы послужить и отдать душу Свою для искупления многих.",
+        "BYZ": "ὥσπερ ὁ υἱὸς τοῦ ἀνθρώπου οὐκ ἦλθεν διακονηθῆναι, ἀλλὰ διακονῆσαι, καὶ δοῦναι τὴν ψυχὴν αὐτοῦ λύτρον ἀντὶ πολλῶν."
+      }
     },
     "29": {
-      "verse_number": 29,
-      "sort_number": 29,
-      "text": "[MATHE 20:29]",
-      "word_count": 5,
-      "russian": "И когда выходили они из Иерихона, за Ним следовало множество народа.",
-      "greek": "Καὶ ἐκπορευομένων αὐτῶν ἀπὸ Ἰεριχώ, ἠκολούθησεν αὐτῷ ὄχλος πολύς.",
-      "latin": "Et egredientibus illis ab Jericho, secuta est eum turba multa,"
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "Et egredientibus illis ab Jericho, secuta est eum turba multa,",
+        "LXX": "Καὶ ἐκπορευομένων αὐτῶν ἀπὸ Ἰεριχώ, ἠκολούθησεν αὐτῷ ὄχλος πολύς.",
+        "SYN": "И когда выходили они из Иерихона, за Ним следовало множество народа.",
+        "BYZ": "Καὶ ἐκπορευομένων αὐτῶν ἀπὸ Ἰεριχώ, ἠκολούθησεν αὐτῷ ὄχλος πολύς."
+      }
     },
     "30": {
-      "verse_number": 30,
-      "sort_number": 30,
-      "text": "[MATHE 20:30]",
-      "word_count": 5,
-      "russian": "И вот, двое слепых, сидевшие у дороги, услышав, что Иисус идет мимо, начали кричать: помилуй нас, Господи, Сын Давидов!",
-      "greek": "Καὶ ἰδού, δύο τυφλοὶ καθήμενοι παρὰ τὴν ὁδόν, ἀκούσαντες ὅτι Ἰησοῦς παράγει, ἔκραξαν, λέγοντες, Ἐλέησον ἡμᾶς, κύριε, υἱὸς Δαυίδ.",
-      "latin": "et ecce duo cæci sedentes secus viam audierunt quia Jesus transiret: et clamaverunt, dicentes: Domine, miserere nostri, fili David."
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "et ecce duo cæci sedentes secus viam audierunt quia Jesus transiret: et clamaverunt, dicentes: Domine, miserere nostri, fili David.",
+        "LXX": "Καὶ ἰδού, δύο τυφλοὶ καθήμενοι παρὰ τὴν ὁδόν, ἀκούσαντες ὅτι Ἰησοῦς παράγει, ἔκραξαν, λέγοντες, Ἐλέησον ἡμᾶς, κύριε, υἱὸς Δαυίδ.",
+        "SYN": "И вот, двое слепых, сидевшие у дороги, услышав, что Иисус идет мимо, начали кричать: помилуй нас, Господи, Сын Давидов!",
+        "BYZ": "Καὶ ἰδού, δύο τυφλοὶ καθήμενοι παρὰ τὴν ὁδόν, ἀκούσαντες ὅτι Ἰησοῦς παράγει, ἔκραξαν, λέγοντες, Ἐλέησον ἡμᾶς, κύριε, υἱὸς Δαυίδ."
+      }
     },
     "31": {
-      "verse_number": 31,
-      "sort_number": 31,
-      "text": "[MATHE 20:31]",
-      "word_count": 5,
-      "russian": "Народ же заставлял их молчать; но они еще громче стали кричать: помилуй нас, Господи, Сын Давидов!",
-      "greek": "Ὁ δὲ ὄχλος ἐπετίμησεν αὐτοῖς ἵνα σιωπήσωσιν. Οἱ δὲ μεῖζον ἔκραζον, λέγοντες, Ἐλέησον ἡμᾶς, κύριε, υἱὸς Δαυίδ.",
-      "latin": "Turba autem increpabat eos ut tacerent. At illi magis clamabant, dicentes: Domine, miserere nostri, fili David."
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "Turba autem increpabat eos ut tacerent. At illi magis clamabant, dicentes: Domine, miserere nostri, fili David.",
+        "LXX": "Ὁ δὲ ὄχλος ἐπετίμησεν αὐτοῖς ἵνα σιωπήσωσιν. Οἱ δὲ μεῖζον ἔκραζον, λέγοντες, Ἐλέησον ἡμᾶς, κύριε, υἱὸς Δαυίδ.",
+        "SYN": "Народ же заставлял их молчать; но они еще громче стали кричать: помилуй нас, Господи, Сын Давидов!",
+        "BYZ": "Ὁ δὲ ὄχλος ἐπετίμησεν αὐτοῖς ἵνα σιωπήσωσιν. Οἱ δὲ μεῖζον ἔκραζον, λέγοντες, Ἐλέησον ἡμᾶς, κύριε, υἱὸς Δαυίδ."
+      }
     },
     "32": {
-      "verse_number": 32,
-      "sort_number": 32,
-      "text": "[MATHE 20:32]",
-      "word_count": 5,
-      "russian": "Иисус, остановившись, подозвал их и сказал: чего вы хотите от Меня?",
-      "greek": "Καὶ στὰς ὁ Ἰησοῦς ἐφώνησεν αὐτούς, καὶ εἶπεν, Τί θέλετε ποιήσω ὑμῖν;",
-      "latin": "Et stetit Jesus, et vocavit eos, et ait: Quid vultis ut faciam vobis ?"
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "VUL": "Et stetit Jesus, et vocavit eos, et ait: Quid vultis ut faciam vobis ?",
+        "LXX": "Καὶ στὰς ὁ Ἰησοῦς ἐφώνησεν αὐτούς, καὶ εἶπεν, Τί θέλετε ποιήσω ὑμῖν;",
+        "SYN": "Иисус, остановившись, подозвал их и сказал: чего вы хотите от Меня?",
+        "BYZ": "Καὶ στὰς ὁ Ἰησοῦς ἐφώνησεν αὐτούς, καὶ εἶπεν, Τί θέλετε ποιήσω ὑμῖν;"
+      }
     },
     "33": {
-      "verse_number": 33,
-      "sort_number": 33,
-      "text": "[MATHE 20:33]",
-      "word_count": 5,
-      "russian": "Они говорят Ему: Господи! чтобы открылись глаза наши.",
-      "greek": "Λέγουσιν αὐτῷ, Κύριε, ἵνα ἀνοιχθῶσιν ἡμῶν οἱ ὀφθαλμοί.",
-      "latin": "Dicunt illi: Domine, ut aperiantur oculi nostri."
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "VUL": "Dicunt illi: Domine, ut aperiantur oculi nostri.",
+        "LXX": "Λέγουσιν αὐτῷ, Κύριε, ἵνα ἀνοιχθῶσιν ἡμῶν οἱ ὀφθαλμοί.",
+        "SYN": "Они говорят Ему: Господи! чтобы открылись глаза наши.",
+        "BYZ": "Λέγουσιν αὐτῷ, Κύριε, ἵνα ἀνοιχθῶσιν ἡμῶν οἱ ὀφθαλμοί."
+      }
     },
     "34": {
-      "verse_number": 34,
-      "sort_number": 34,
-      "text": "[MATHE 20:34]",
-      "word_count": 5,
-      "russian": "Иисус же, умилосердившись, прикоснулся к глазам их; и тотчас прозрели глаза их, и они пошли за Ним.",
-      "greek": "Σπλαγχνισθεὶς δὲ ὁ Ἰησοῦς ἥψατο τῶν ὀφθαλμῶν αὐτῶν· καὶ εὐθέως ἀνέβλεψαν αὐτῶν οἱ ὀφθαλμοί, καὶ ἠκολούθησαν αὐτῷ.",
-      "latin": "Misertus autem eorum Jesus, tetigit oculos eorum. Et confestim viderunt, et secuti sunt eum."
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "VUL": "Misertus autem eorum Jesus, tetigit oculos eorum. Et confestim viderunt, et secuti sunt eum.",
+        "LXX": "Σπλαγχνισθεὶς δὲ ὁ Ἰησοῦς ἥψατο τῶν ὀφθαλμῶν αὐτῶν· καὶ εὐθέως ἀνέβλεψαν αὐτῶν οἱ ὀφθαλμοί, καὶ ἠκολούθησαν αὐτῷ.",
+        "SYN": "Иисус же, умилосердившись, прикоснулся к глазам их; и тотчас прозрели глаза их, и они пошли за Ним.",
+        "BYZ": "Σπλαγχνισθεὶς δὲ ὁ Ἰησοῦς ἥψατο τῶν ὀφθαλμῶν αὐτῶν· καὶ εὐθέως ἀνέβλεψαν αὐτῶν οἱ ὀφθαλμοί, καὶ ἠκολούθησαν αὐτῷ."
+      }
     }
   }
 }

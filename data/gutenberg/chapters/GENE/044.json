@@ -1,353 +1,525 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "GENE_044",
-  "chapter_key": "44",
-  "chapter_number": 44,
-  "sort_number": 44,
-  "name": "44",
   "book_key": "GENE",
+  "sequence": 44,
+  "chapter_in": {
+    "MT": 44,
+    "VUL": 44,
+    "LXX": 44
+  },
   "testament": "Vetus_Testamentum",
   "section": "Pentateuchus",
-  "verse_count": 34,
   "verses": {
     "1": {
-      "sort_number": 1,
-      "name": "1",
-      "latin": "Præcepit autem Joseph dispensatori domus suæ, dicens: Imple saccos eorum frumento, quantum possunt capere: et pone pecuniam singulorum in summitate sacci.",
-      "word_count": 0,
-      "hebrew": "וַיְצַ֞ו אֶת אֲשֶׁ֣ר עַל בֵּיתוֹ֮ לֵאמֹר֒ מַלֵּ֞א אֶת אַמְתְּחֹ֤ת הָֽאֲנָשִׁים֙ אֹ֔כֶל כַּאֲשֶׁ֥ר יוּכְל֖וּן שְׂאֵ֑ת וְשִׂ֥ים כֶּֽסֶף אִ֖ישׁ בְּפִ֥י אַמְתַּחְתּֽוֹ׃",
-      "russian": "И приказал [Иосиф] начальнику дома своего, говоря: наполни мешки этих людей пищею, сколько они могут нести, и серебро каждого положи в отверстие мешка его,",
-      "greek": "Καὶ ἐνετείλατο Ἰωσὴφ τῷ ὄντι ἐπὶ τῆς οἰκίας αὐτοῦ λέγων Πλήσατε τοὺς μαρσίππους τῶν ἀνθρώπων βρωμάτων ὅσα ἐὰν δύνωνται ἆραι, καὶ ἐμβάλατε ἑκάστου τὸ ἀργύριον ἐπὶ τοῦ στόματος τοῦ μαρσίππου αὐτοῦ·",
-      "english": "The LORD said to Moses,"
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַיְצַ֞ו אֶת אֲשֶׁ֣ר עַל בֵּיתוֹ֮ לֵאמֹר֒ מַלֵּ֞א אֶת אַמְתְּחֹ֤ת הָֽאֲנָשִׁים֙ אֹ֔כֶל כַּאֲשֶׁ֥ר יוּכְל֖וּן שְׂאֵ֑ת וְשִׂ֥ים כֶּֽסֶף אִ֖ישׁ בְּפִ֥י אַמְתַּחְתּֽוֹ׃",
+        "VUL": "Præcepit autem Joseph dispensatori domus suæ, dicens: Imple saccos eorum frumento, quantum possunt capere: et pone pecuniam singulorum in summitate sacci.",
+        "LXX": "Καὶ ἐνετείλατο Ἰωσὴφ τῷ ὄντι ἐπὶ τῆς οἰκίας αὐτοῦ λέγων Πλήσατε τοὺς μαρσίππους τῶν ἀνθρώπων βρωμάτων ὅσα ἐὰν δύνωνται ἆραι, καὶ ἐμβάλατε ἑκάστου τὸ ἀργύριον ἐπὶ τοῦ στόματος τοῦ μαρσίππου αὐτοῦ·",
+        "NAB": "The LORD said to Moses,",
+        "SYN": "И приказал [Иосиф] начальнику дома своего, говоря: наполни мешки этих людей пищею, сколько они могут нести, и серебро каждого положи в отверстие мешка его,"
+      }
     },
     "2": {
-      "sort_number": 2,
-      "name": "2",
-      "latin": "Scyphum autem meum argenteum, et pretium quod dedit tritici, pone in ore sacci junioris. Factumque est ita.",
-      "word_count": 0,
-      "hebrew": "וְאֶת גְּבִיעִ֞י גְּבִ֣יעַ הַכֶּ֗סֶף תָּשִׂים֙ בְּפִי֙ אַמְתַּ֣חַת הַקָּטֹ֔ן וְאֵ֖ת כֶּ֣סֶף שִׁבְר֑וֹ וַיַּ֕עַשׂ כִּדְבַ֥ר יוֹסֵ֖ף אֲשֶׁ֥ר דִּבֵּֽר׃",
-      "russian": "а чашу мою, чашу серебряную, положи в отверстие мешка к младшему вместе с серебром за купленный им хлеб. И сделал тот по слову Иосифа, которое сказал он.",
-      "greek": "καὶ τὸ κόνδυ μου τὸ ἀργυροῦν ἐμβάλατε εἰς τὸν μάρσιππον τοῦ νεωτέρου, καὶ τὴν τιμὴν τοῦ σίτου αὐτοῦ. ἐγενήθη δὲ κατὰ τὸ ῥῆμα Ἰωσὴφ καθὼς εἶπεν.",
-      "english": "\"Give the Israelites this commandment: At the times I have appointed, you shall be careful to present to me the food offerings that are offered to me as sweet-smelling oblations."
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְאֶת גְּבִיעִ֞י גְּבִ֣יעַ הַכֶּ֗סֶף תָּשִׂים֙ בְּפִי֙ אַמְתַּ֣חַת הַקָּטֹ֔ן וְאֵ֖ת כֶּ֣סֶף שִׁבְר֑וֹ וַיַּ֕עַשׂ כִּדְבַ֥ר יוֹסֵ֖ף אֲשֶׁ֥ר דִּבֵּֽר׃",
+        "VUL": "Scyphum autem meum argenteum, et pretium quod dedit tritici, pone in ore sacci junioris. Factumque est ita.",
+        "LXX": "καὶ τὸ κόνδυ μου τὸ ἀργυροῦν ἐμβάλατε εἰς τὸν μάρσιππον τοῦ νεωτέρου, καὶ τὴν τιμὴν τοῦ σίτου αὐτοῦ. ἐγενήθη δὲ κατὰ τὸ ῥῆμα Ἰωσὴφ καθὼς εἶπεν.",
+        "NAB": "\"Give the Israelites this commandment: At the times I have appointed, you shall be careful to present to me the food offerings that are offered to me as sweet-smelling oblations.",
+        "SYN": "а чашу мою, чашу серебряную, положи в отверстие мешка к младшему вместе с серебром за купленный им хлеб. И сделал тот по слову Иосифа, которое сказал он."
+      }
     },
     "3": {
-      "sort_number": 3,
-      "name": "3",
-      "latin": "Et orto mane, dimissi sunt cum asinis suis.",
-      "word_count": 0,
-      "hebrew": "הַבֹּ֖קֶר א֑וֹר וְהָאֲנָשִׁ֣ים שֻׁלְּח֔וּ הֵ֖מָּה וַחֲמֹרֵיהֶֽם׃",
-      "russian": "Утром, когда рассвело, эти люди были отпущены, они и ослы их.",
-      "greek": "τὸ πρωὶ διέφαυσεν καὶ οἱ ἄνθρωποι ἀπεστάλησαν, αὐτοὶ καὶ οἱ ὄνοι αὐτῶν.",
-      "english": "\"You shall tell them therefore: This is the oblation which you shall offer to the LORD: two unblemished yearling lambs each day as the established holocaust,"
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הַבֹּ֖קֶר א֑וֹר וְהָאֲנָשִׁ֣ים שֻׁלְּח֔וּ הֵ֖מָּה וַחֲמֹרֵיהֶֽם׃",
+        "VUL": "Et orto mane, dimissi sunt cum asinis suis.",
+        "LXX": "τὸ πρωὶ διέφαυσεν καὶ οἱ ἄνθρωποι ἀπεστάλησαν, αὐτοὶ καὶ οἱ ὄνοι αὐτῶν.",
+        "NAB": "\"You shall tell them therefore: This is the oblation which you shall offer to the LORD: two unblemished yearling lambs each day as the established holocaust,",
+        "SYN": "Утром, когда рассвело, эти люди были отпущены, они и ослы их."
+      }
     },
     "4": {
-      "sort_number": 4,
-      "name": "4",
-      "latin": "Jamque urbem exierant, et processerant paululum: tunc Joseph accersito dispensatore domus, Surge, inquit, et persequere viros: et apprehensis dicito: Quare reddidistis malum pro bono ?",
-      "word_count": 0,
-      "hebrew": "הֵ֠ם יָֽצְא֣וּ אֶת הָעִיר֮ לֹ֣א הִרְחִיקוּ֒ וְיוֹסֵ֤ף אָמַר֙ לַֽאֲשֶׁ֣ר עַל בֵּית֔וֹ ק֥וּם רְדֹ֖ף אַחֲרֵ֣י הָֽאֲנָשִׁ֑ים וְהִשַּׂגְתָּם֙ וְאָמַרְתָּ֣ אֲלֵהֶ֔ם לָ֛מָּה שִׁלַּמְתֶּ֥ם רָעָ֖ה תַּ֥חַת טוֹבָֽה׃",
-      "russian": "Еще не далеко отошли они от города, как Иосиф сказал начальнику дома своего: ступай, догоняй этих людей и, когда догонишь, скажи им: для чего вы заплатили злом за добро? [для чего украли у меня серебряную чашу?]",
-      "greek": "ἐξελθόντων δὲ αὐτῶν τὴν πόλιν οὐκ ἀπέσχον μακράν, καὶ Ἰωσὴφ εἶπεν τῷ ἐπὶ τῆς οἰκίας αὐτοῦ λέγων Ἀναστὰς ἐπιδίωξον ὀπίσω τῶν ἀνθρώπων, καὶ καταλήμψῃ αὐτοὺς καὶ ἐρεῖς αὐτοῖς Τί ὅτι ἀνταπεδώκατέ μοι πονηρὰ ἀντὶ καλῶν; ἵνα τί ἐκλέψατέ μου τὸ κόνδυ τὸ ἀργυροῦν;",
-      "english": "offering one lamb in the morning and the other during the evening twilight,"
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הֵ֠ם יָֽצְא֣וּ אֶת הָעִיר֮ לֹ֣א הִרְחִיקוּ֒ וְיוֹסֵ֤ף אָמַר֙ לַֽאֲשֶׁ֣ר עַל בֵּית֔וֹ ק֥וּם רְדֹ֖ף אַחֲרֵ֣י הָֽאֲנָשִׁ֑ים וְהִשַּׂגְתָּם֙ וְאָמַרְתָּ֣ אֲלֵהֶ֔ם לָ֛מָּה שִׁלַּמְתֶּ֥ם רָעָ֖ה תַּ֥חַת טוֹבָֽה׃",
+        "VUL": "Jamque urbem exierant, et processerant paululum: tunc Joseph accersito dispensatore domus, Surge, inquit, et persequere viros: et apprehensis dicito: Quare reddidistis malum pro bono ?",
+        "LXX": "ἐξελθόντων δὲ αὐτῶν τὴν πόλιν οὐκ ἀπέσχον μακράν, καὶ Ἰωσὴφ εἶπεν τῷ ἐπὶ τῆς οἰκίας αὐτοῦ λέγων Ἀναστὰς ἐπιδίωξον ὀπίσω τῶν ἀνθρώπων, καὶ καταλήμψῃ αὐτοὺς καὶ ἐρεῖς αὐτοῖς Τί ὅτι ἀνταπεδώκατέ μοι πονηρὰ ἀντὶ καλῶν; ἵνα τί ἐκλέψατέ μου τὸ κόνδυ τὸ ἀργυροῦν;",
+        "NAB": "offering one lamb in the morning and the other during the evening twilight,",
+        "SYN": "Еще не далеко отошли они от города, как Иосиф сказал начальнику дома своего: ступай, догоняй этих людей и, когда догонишь, скажи им: для чего вы заплатили злом за добро? [для чего украли у меня серебряную чашу?]"
+      }
     },
     "5": {
-      "sort_number": 5,
-      "name": "5",
-      "latin": "scyphus, quem furati estis, ipse est in quo bibit dominus meus, et in quo augurari solet: pessimam rem fecistis.",
-      "word_count": 0,
-      "hebrew": "הֲל֣וֹא זֶ֗ה אֲשֶׁ֨ר יִשְׁתֶּ֤ה אֲדֹנִי֙ בּ֔וֹ וְה֕וּא נַחֵ֥שׁ יְנַחֵ֖שׁ בּ֑וֹ הֲרֵעֹתֶ֖ם אֲשֶׁ֥ר עֲשִׂיתֶֽם׃",
-      "russian": "Не та ли это, из которой пьет господин мой и он гадает на ней? Худо это вы сделали.",
-      "greek": "οὐ τοῦτό ἐστιν ἐν ᾧ πίνει ὁ κύριός μου; αὐτὸς δὲ οἰωνισμῷ οἰωνίζεται ἐν αὐτῷ· πονηρὰ συντετέλεσθε ἃ πεποιήκατε.",
-      "english": "each with a cereal offering of one tenth of an ephah of fine flour mixed with a fourth of a hin of oil of crushed olives."
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הֲל֣וֹא זֶ֗ה אֲשֶׁ֨ר יִשְׁתֶּ֤ה אֲדֹנִי֙ בּ֔וֹ וְה֕וּא נַחֵ֥שׁ יְנַחֵ֖שׁ בּ֑וֹ הֲרֵעֹתֶ֖ם אֲשֶׁ֥ר עֲשִׂיתֶֽם׃",
+        "VUL": "scyphus, quem furati estis, ipse est in quo bibit dominus meus, et in quo augurari solet: pessimam rem fecistis.",
+        "LXX": "οὐ τοῦτό ἐστιν ἐν ᾧ πίνει ὁ κύριός μου; αὐτὸς δὲ οἰωνισμῷ οἰωνίζεται ἐν αὐτῷ· πονηρὰ συντετέλεσθε ἃ πεποιήκατε.",
+        "NAB": "each with a cereal offering of one tenth of an ephah of fine flour mixed with a fourth of a hin of oil of crushed olives.",
+        "SYN": "Не та ли это, из которой пьет господин мой и он гадает на ней? Худо это вы сделали."
+      }
     },
     "6": {
-      "sort_number": 6,
-      "name": "6",
-      "latin": "Fecit ille ut jusserat: et apprehensis per ordinem locutus est.",
-      "word_count": 0,
-      "hebrew": "וַֽיַּשִּׂגֵ֑ם וַיְדַבֵּ֣ר אֲלֵהֶ֔ם אֶת הַדְּבָרִ֖ים הָאֵֽלֶּה׃",
-      "russian": "Он догнал их и сказал им эти слова.",
-      "greek": "εὑρὼν δὲ αὐτοὺς εἶπεν αὐτοῖς κατὰ τὰ ῥήματα ταῦτα.",
-      "english": "This is the established holocaust that was offered at Mount Sinai as a sweet-smelling oblation to the LORD."
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַֽיַּשִּׂגֵ֑ם וַיְדַבֵּ֣ר אֲלֵהֶ֔ם אֶת הַדְּבָרִ֖ים הָאֵֽלֶּה׃",
+        "VUL": "Fecit ille ut jusserat: et apprehensis per ordinem locutus est.",
+        "LXX": "εὑρὼν δὲ αὐτοὺς εἶπεν αὐτοῖς κατὰ τὰ ῥήματα ταῦτα.",
+        "NAB": "This is the established holocaust that was offered at Mount Sinai as a sweet-smelling oblation to the LORD.",
+        "SYN": "Он догнал их и сказал им эти слова."
+      }
     },
     "7": {
-      "sort_number": 7,
-      "name": "7",
-      "latin": "Qui responderunt: Quare sic loquitur dominus noster, ut servi tui tantum flagitii commiserint ?",
-      "word_count": 0,
-      "hebrew": "וַיֹּאמְר֣וּ אֵלָ֔יו לָ֚מָּה יְדַבֵּ֣ר אֲדֹנִ֔י כַּדְּבָרִ֖ים הָאֵ֑לֶּה חָלִ֨ילָה֙ לַעֲבָדֶ֔יךָ מֵעֲשׂ֖וֹת כַּדָּבָ֥ר הַזֶּֽה׃",
-      "russian": "Они сказали ему: для чего господин наш говорит такие слова? Нет, рабы твои не сделают такого дела.",
-      "greek": "οἱ δὲ εἶπον αὐτῷ Ἵνα τί λαλεῖ ὁ κύριος κατὰ τὰ ῥήματα ταῦτα; μὴ γένοιτο τοῖς παισίν σου ποιῆσαι τὸ ῥῆμα τοῦτο.",
-      "english": "And as the libation for the first lamb, you shall pour out to the LORD in the sanctuary a fourth of a hin of wine."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַיֹּאמְר֣וּ אֵלָ֔יו לָ֚מָּה יְדַבֵּ֣ר אֲדֹנִ֔י כַּדְּבָרִ֖ים הָאֵ֑לֶּה חָלִ֨ילָה֙ לַעֲבָדֶ֔יךָ מֵעֲשׂ֖וֹת כַּדָּבָ֥ר הַזֶּֽה׃",
+        "VUL": "Qui responderunt: Quare sic loquitur dominus noster, ut servi tui tantum flagitii commiserint ?",
+        "LXX": "οἱ δὲ εἶπον αὐτῷ Ἵνα τί λαλεῖ ὁ κύριος κατὰ τὰ ῥήματα ταῦτα; μὴ γένοιτο τοῖς παισίν σου ποιῆσαι τὸ ῥῆμα τοῦτο.",
+        "NAB": "And as the libation for the first lamb, you shall pour out to the LORD in the sanctuary a fourth of a hin of wine.",
+        "SYN": "Они сказали ему: для чего господин наш говорит такие слова? Нет, рабы твои не сделают такого дела."
+      }
     },
     "8": {
-      "sort_number": 8,
-      "name": "8",
-      "latin": "pecuniam, quam invenimus in summitate saccorum, reportavimus ad te de terra Chanaan: et quomodo consequens est ut furati simus de domo domini tui aurum vel argentum ?",
-      "word_count": 0,
-      "hebrew": "הֵ֣ן כֶּ֗סֶף אֲשֶׁ֤ר מָצָ֨אנוּ֙ בְּפִ֣י אַמְתְּחֹתֵ֔ינוּ הֱשִׁיבֹ֥נוּ אֵלֶ֖יךָ מֵאֶ֣רֶץ כְּנָ֑עַן וְאֵ֗יךְ נִגְנֹב֙ מִבֵּ֣ית אֲדֹנֶ֔יךָ כֶּ֖סֶף א֥וֹ זָהָֽב׃",
-      "russian": "Вот, серебро, найденное нами в отверстии мешков наших, мы обратно принесли тебе из земли Ханаанской: как же нам украсть из дома господина твоего серебро или золото?",
-      "greek": "εἰ τὸ μὲν ἀργύριον ὃ εὕραμεν ἐν τοῖς μαρσίπποις ἡμῶν ἀπεστρέψαμεν πρὸς σὲ ἐκ γῆς Χανάαν, πῶς ἂν κλέψαιμεν ἐκ τοῦ οἴκου τοῦ κυρίου σου ἀργύριον ἢ χρυσίον;",
-      "english": "The other lamb, to be offered during the evening twilight, you shall offer with the same cereal offering and the same libation as in the morning, as a sweet-smelling oblation to the LORD."
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הֵ֣ן כֶּ֗סֶף אֲשֶׁ֤ר מָצָ֨אנוּ֙ בְּפִ֣י אַמְתְּחֹתֵ֔ינוּ הֱשִׁיבֹ֥נוּ אֵלֶ֖יךָ מֵאֶ֣רֶץ כְּנָ֑עַן וְאֵ֗יךְ נִגְנֹב֙ מִבֵּ֣ית אֲדֹנֶ֔יךָ כֶּ֖סֶף א֥וֹ זָהָֽב׃",
+        "VUL": "pecuniam, quam invenimus in summitate saccorum, reportavimus ad te de terra Chanaan: et quomodo consequens est ut furati simus de domo domini tui aurum vel argentum ?",
+        "LXX": "εἰ τὸ μὲν ἀργύριον ὃ εὕραμεν ἐν τοῖς μαρσίπποις ἡμῶν ἀπεστρέψαμεν πρὸς σὲ ἐκ γῆς Χανάαν, πῶς ἂν κλέψαιμεν ἐκ τοῦ οἴκου τοῦ κυρίου σου ἀργύριον ἢ χρυσίον;",
+        "NAB": "The other lamb, to be offered during the evening twilight, you shall offer with the same cereal offering and the same libation as in the morning, as a sweet-smelling oblation to the LORD.",
+        "SYN": "Вот, серебро, найденное нами в отверстии мешков наших, мы обратно принесли тебе из земли Ханаанской: как же нам украсть из дома господина твоего серебро или золото?"
+      }
     },
     "9": {
-      "sort_number": 9,
-      "name": "9",
-      "latin": "apud quemcumque fuerit inventum servorum tuorum quod quæris, moriatur, et nos erimus servi domini nostri.",
-      "word_count": 0,
-      "hebrew": "אֲשֶׁ֨ר יִמָּצֵ֥א אִתּ֛וֹ מֵעֲבָדֶ֖יךָ וָמֵ֑ת וְגַם אֲנַ֕חְנוּ נִֽהְיֶ֥ה לַֽאדֹנִ֖י לַעֲבָדִֽים׃",
-      "russian": "У кого из рабов твоих найдется [чаша], тому смерть, и мы будем рабами господину нашему.",
-      "greek": "παρ’ ᾧ ἂν εὑρεθῇ τὸ κόνδυ τῶν παίδων σου, ἀποθνησκέτω· καὶ ἡμεῖς δὲ ἐσόμεθα παῖδες τῷ κυρίῳ ἡμῶν.",
-      "english": "\"On the sabbath day you shall offer two unblemished yearling lambs, with their cereal offering, two tenths of an ephah of fine flour mixed with oil, and with their libations."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֨ר יִמָּצֵ֥א אִתּ֛וֹ מֵעֲבָדֶ֖יךָ וָמֵ֑ת וְגַם אֲנַ֕חְנוּ נִֽהְיֶ֥ה לַֽאדֹנִ֖י לַעֲבָדִֽים׃",
+        "VUL": "apud quemcumque fuerit inventum servorum tuorum quod quæris, moriatur, et nos erimus servi domini nostri.",
+        "LXX": "παρ’ ᾧ ἂν εὑρεθῇ τὸ κόνδυ τῶν παίδων σου, ἀποθνησκέτω· καὶ ἡμεῖς δὲ ἐσόμεθα παῖδες τῷ κυρίῳ ἡμῶν.",
+        "NAB": "\"On the sabbath day you shall offer two unblemished yearling lambs, with their cereal offering, two tenths of an ephah of fine flour mixed with oil, and with their libations.",
+        "SYN": "У кого из рабов твоих найдется [чаша], тому смерть, и мы будем рабами господину нашему."
+      }
     },
     "10": {
-      "sort_number": 10,
-      "name": "10",
-      "latin": "Qui dixit eis: Fiat juxta vestram sententiam: apud quemcumque fuerit inventum, ipse sit servus meus, vos autem eritis innoxii.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֕אמֶר גַּם עַתָּ֥ה כְדִבְרֵיכֶ֖ם כֶּן ה֑וּא אֲשֶׁ֨ר יִמָּצֵ֤א אִתּוֹ֙ יִהְיֶה לִּ֣י עָ֔בֶד וְאַתֶּ֖ם תִּהְי֥וּ נְקִיִּֽם׃",
-      "russian": "Он сказал: хорошо; как вы сказали, так пусть и будет: у кого найдется [чаша], тот будет мне рабом, а вы будете не виноваты.",
-      "greek": "ὁ δὲ εἶπεν Καὶ νῦν ὡς λέγετε, οὕτως ἔσται· ὁ ἄνθρωπος παρ’ ᾧ ἂν εὑρεθῇ τὸ κόνδυ, αὐτὸς ἔσται μου παῖς, ὑμεῖς δὲ ἔσεσθε καθαροί.",
-      "english": "Each sabbath there shall be the sabbath holocaust in addition to the established holocaust and its libation."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַיֹּ֕אמֶר גַּם עַתָּ֥ה כְדִבְרֵיכֶ֖ם כֶּן ה֑וּא אֲשֶׁ֨ר יִמָּצֵ֤א אִתּוֹ֙ יִהְיֶה לִּ֣י עָ֔בֶד וְאַתֶּ֖ם תִּהְי֥וּ נְקִיִּֽם׃",
+        "VUL": "Qui dixit eis: Fiat juxta vestram sententiam: apud quemcumque fuerit inventum, ipse sit servus meus, vos autem eritis innoxii.",
+        "LXX": "ὁ δὲ εἶπεν Καὶ νῦν ὡς λέγετε, οὕτως ἔσται· ὁ ἄνθρωπος παρ’ ᾧ ἂν εὑρεθῇ τὸ κόνδυ, αὐτὸς ἔσται μου παῖς, ὑμεῖς δὲ ἔσεσθε καθαροί.",
+        "NAB": "Each sabbath there shall be the sabbath holocaust in addition to the established holocaust and its libation.",
+        "SYN": "Он сказал: хорошо; как вы сказали, так пусть и будет: у кого найдется [чаша], тот будет мне рабом, а вы будете не виноваты."
+      }
     },
     "11": {
-      "sort_number": 11,
-      "name": "11",
-      "latin": "Itaque festinato deponentes in terram saccos, aperuerunt singuli.",
-      "word_count": 0,
-      "hebrew": "וַֽיְמַהֲר֗וּ וַיּוֹרִ֛דוּ אִ֥ישׁ אֶת אַמְתַּחְתּ֖וֹ אָ֑רְצָה וַֽיִּפְתְּח֖וּ אִ֥ישׁ אַמְתַּחְתּֽוֹ׃",
-      "russian": "Они поспешно спустили каждый свой мешок на землю и открыли каждый свой мешок.",
-      "greek": "καὶ ἔσπευσαν καὶ καθεῖλαν ἕκαστος τὸν μάρσιππον αὐτοῦ ἐπὶ τὴν γῆν, καὶ ἤνοιξεν ἕκαστος τὸν μάρσιππον αὐτοῦ.",
-      "english": "\"On the first of each month you shall offer as a holocaust to the LORD two bullocks, one ram, and seven unblemished yearling lambs,"
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַֽיְמַהֲר֗וּ וַיּוֹרִ֛דוּ אִ֥ישׁ אֶת אַמְתַּחְתּ֖וֹ אָ֑רְצָה וַֽיִּפְתְּח֖וּ אִ֥ישׁ אַמְתַּחְתּֽוֹ׃",
+        "VUL": "Itaque festinato deponentes in terram saccos, aperuerunt singuli.",
+        "LXX": "καὶ ἔσπευσαν καὶ καθεῖλαν ἕκαστος τὸν μάρσιππον αὐτοῦ ἐπὶ τὴν γῆν, καὶ ἤνοιξεν ἕκαστος τὸν μάρσιππον αὐτοῦ.",
+        "NAB": "\"On the first of each month you shall offer as a holocaust to the LORD two bullocks, one ram, and seven unblemished yearling lambs,",
+        "SYN": "Они поспешно спустили каждый свой мешок на землю и открыли каждый свой мешок."
+      }
     },
     "12": {
-      "sort_number": 12,
-      "name": "12",
-      "latin": "Quos scrutatus, incipiens a majore usque ad minimum, invenit scyphum in sacco Benjamin.",
-      "word_count": 0,
-      "hebrew": "וַיְחַפֵּ֕שׂ בַּגָּד֣וֹל הֵחֵ֔ל וּבַקָּטֹ֖ן כִּלָּ֑ה וַיִּמָּצֵא֙ הַגָּבִ֔יעַ בְּאַמְתַּ֖חַת בִּנְיָמִֽן׃",
-      "russian": "Он обыскал, начал со старшего и окончил младшим; и нашлась чаша в мешке Вениаминовом.",
-      "greek": "ἠρεύνα δὲ ἀπὸ τοῦ πρεσβυτέρου ἀρξάμενος ἕως ἦλθεν ἐπὶ τὸν νεώτερον, καὶ εὗρεν τὸ κόνδυ ἐν τῷ μαρσίππῳ τῷ Βενιαμείν.",
-      "english": "with three tenths of an ephah of fine flour mixed with oil as the cereal offering for each bullock, two tenths of an ephah of fine flour mixed with oil as the cereal offering for the ram,"
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַיְחַפֵּ֕שׂ בַּגָּד֣וֹל הֵחֵ֔ל וּבַקָּטֹ֖ן כִּלָּ֑ה וַיִּמָּצֵא֙ הַגָּבִ֔יעַ בְּאַמְתַּ֖חַת בִּנְיָמִֽן׃",
+        "VUL": "Quos scrutatus, incipiens a majore usque ad minimum, invenit scyphum in sacco Benjamin.",
+        "LXX": "ἠρεύνα δὲ ἀπὸ τοῦ πρεσβυτέρου ἀρξάμενος ἕως ἦλθεν ἐπὶ τὸν νεώτερον, καὶ εὗρεν τὸ κόνδυ ἐν τῷ μαρσίππῳ τῷ Βενιαμείν.",
+        "NAB": "with three tenths of an ephah of fine flour mixed with oil as the cereal offering for each bullock, two tenths of an ephah of fine flour mixed with oil as the cereal offering for the ram,",
+        "SYN": "Он обыскал, начал со старшего и окончил младшим; и нашлась чаша в мешке Вениаминовом."
+      }
     },
     "13": {
-      "sort_number": 13,
-      "name": "13",
-      "latin": "At illi, scissis vestibus, oneratisque rursum asinis, reversi sunt in oppidum.",
-      "word_count": 0,
-      "hebrew": "וַֽיִּקְרְע֖וּ שִׂמְלֹתָ֑ם וַֽיַּעֲמֹס֙ אִ֣ישׁ עַל חֲמֹר֔וֹ וַיָּשֻׁ֖בוּ הָעִֽירָה׃",
-      "russian": "И разодрали они одежды свои, и, возложив каждый на осла своего ношу, возвратились в город.",
-      "greek": "καὶ διέρρηξαν τὰ ἱμάτια αὐτῶν, καὶ ἐπέθηκαν ἕκαστος τὸν μάρσιππον αὐτοῦ ἐπὶ τὸν ὄνον αὐτοῦ, καὶ ἐπέστρεψαν εἰς τὴν πόλιν.",
-      "english": "and one tenth of an ephah of fine flour mixed with oil as the cereal offering for each lamb, that the holocaust may be a sweet-smelling oblation to the LORD."
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַֽיִּקְרְע֖וּ שִׂמְלֹתָ֑ם וַֽיַּעֲמֹס֙ אִ֣ישׁ עַל חֲמֹר֔וֹ וַיָּשֻׁ֖בוּ הָעִֽירָה׃",
+        "VUL": "At illi, scissis vestibus, oneratisque rursum asinis, reversi sunt in oppidum.",
+        "LXX": "καὶ διέρρηξαν τὰ ἱμάτια αὐτῶν, καὶ ἐπέθηκαν ἕκαστος τὸν μάρσιππον αὐτοῦ ἐπὶ τὸν ὄνον αὐτοῦ, καὶ ἐπέστρεψαν εἰς τὴν πόλιν.",
+        "NAB": "and one tenth of an ephah of fine flour mixed with oil as the cereal offering for each lamb, that the holocaust may be a sweet-smelling oblation to the LORD.",
+        "SYN": "И разодрали они одежды свои, и, возложив каждый на осла своего ношу, возвратились в город."
+      }
     },
     "14": {
-      "sort_number": 14,
-      "name": "14",
-      "latin": "Primusque Judas cum fratribus ingressus est ad Joseph (necdum enim de loco abierat) omnesque ante eum pariter in terram corruerunt.",
-      "word_count": 0,
-      "hebrew": "וַיָּבֹ֨א יְהוּדָ֤ה וְאֶחָיו֙ בֵּ֣יתָה יוֹסֵ֔ף וְה֖וּא עוֹדֶ֣נּוּ שָׁ֑ם וַיִּפְּל֥וּ לְפָנָ֖יו אָֽרְצָה׃",
-      "russian": "И пришли Иуда и братья его в дом Иосифа, который был еще дома, и пали пред ним на землю.",
-      "greek": "εἰσῆλθεν δὲ Ἰούδας καὶ οἱ ἀδελφοὶ αὐτοῦ πρὸς Ἰωσήφ, ἔτι αὐτοῦ ὄντος ἐκεῖ· καὶ ἔπεσον ἐναντίον αὐτοῦ ἐπὶ τὴν γῆν.",
-      "english": "Their libations shall be half a hin of wine for each bullock, a third of a hin for the ram, and a fourth of a hin for each lamb. This is the new moon holocaust for every new moon of the year."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַיָּבֹ֨א יְהוּדָ֤ה וְאֶחָיו֙ בֵּ֣יתָה יוֹסֵ֔ף וְה֖וּא עוֹדֶ֣נּוּ שָׁ֑ם וַיִּפְּל֥וּ לְפָנָ֖יו אָֽרְצָה׃",
+        "VUL": "Primusque Judas cum fratribus ingressus est ad Joseph (necdum enim de loco abierat) omnesque ante eum pariter in terram corruerunt.",
+        "LXX": "εἰσῆλθεν δὲ Ἰούδας καὶ οἱ ἀδελφοὶ αὐτοῦ πρὸς Ἰωσήφ, ἔτι αὐτοῦ ὄντος ἐκεῖ· καὶ ἔπεσον ἐναντίον αὐτοῦ ἐπὶ τὴν γῆν.",
+        "NAB": "Their libations shall be half a hin of wine for each bullock, a third of a hin for the ram, and a fourth of a hin for each lamb. This is the new moon holocaust for every new moon of the year.",
+        "SYN": "И пришли Иуда и братья его в дом Иосифа, который был еще дома, и пали пред ним на землю."
+      }
     },
     "15": {
-      "sort_number": 15,
-      "name": "15",
-      "latin": "Quibus ille ait: Cur sic agere voluistis ? an ignoratis quod non sit similis mei in augurandi scientia ?",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֤אמֶר לָהֶם֙ יוֹסֵ֔ף מָֽה הַמַּעֲשֶׂ֥ה הַזֶּ֖ה אֲשֶׁ֣ר עֲשִׂיתֶ֑ם הֲל֣וֹא יְדַעְתֶּ֔ם כִּֽי נַחֵ֧שׁ יְנַחֵ֛שׁ אִ֖ישׁ אֲשֶׁ֥ר כָּמֹֽנִי׃",
-      "russian": "Иосиф сказал им: что это вы сделали? разве вы не знали, что такой человек, как я, конечно угадает?",
-      "greek": "εἶπεν δὲ αὐτοῖς Ἰωσήφ Τί τὸ πρᾶγμα τοῦτο ἐποιήσατε; οὐκ οἴδατε ὅτι οἰωνισμῷ οἰωνιεῖται ἄνθρωπος οἷος ἐγώ;",
-      "english": "Moreover, one goat shall be sacrificed as a sin offering to the LORD. These are to be offered in addition to the established holocaust and its libation."
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַיֹּ֤אמֶר לָהֶם֙ יוֹסֵ֔ף מָֽה הַמַּעֲשֶׂ֥ה הַזֶּ֖ה אֲשֶׁ֣ר עֲשִׂיתֶ֑ם הֲל֣וֹא יְדַעְתֶּ֔ם כִּֽי נַחֵ֧שׁ יְנַחֵ֛שׁ אִ֖ישׁ אֲשֶׁ֥ר כָּמֹֽנִי׃",
+        "VUL": "Quibus ille ait: Cur sic agere voluistis ? an ignoratis quod non sit similis mei in augurandi scientia ?",
+        "LXX": "εἶπεν δὲ αὐτοῖς Ἰωσήφ Τί τὸ πρᾶγμα τοῦτο ἐποιήσατε; οὐκ οἴδατε ὅτι οἰωνισμῷ οἰωνιεῖται ἄνθρωπος οἷος ἐγώ;",
+        "NAB": "Moreover, one goat shall be sacrificed as a sin offering to the LORD. These are to be offered in addition to the established holocaust and its libation.",
+        "SYN": "Иосиф сказал им: что это вы сделали? разве вы не знали, что такой человек, как я, конечно угадает?"
+      }
     },
     "16": {
-      "sort_number": 16,
-      "name": "16",
-      "latin": "Cui Judas: Quid respondebimus, inquit, domino meo ? vel quid loquemur, aut juste poterimus obtendere ? Deus invenit iniquitatem servorum tuorum: en omnes servi sumus domini mei, et nos, et apud quem inventus est scyphus.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֣אמֶר יְהוּדָ֗ה מַה נֹּאמַר֙ לַֽאדֹנִ֔י מַה נְּדַבֵּ֖ר וּמַה נִּצְטַדָּ֑ק הָאֱלֹהִ֗ים מָצָא֙ אֶת עֲוֺ֣ן עֲבָדֶ֔יךָ הִנֶּנּ֤וּ עֲבָדִים֙ לַֽאדֹנִ֔י גַּם אֲנַ֕חְנוּ גַּ֛ם אֲשֶׁר נִמְצָ֥א הַגָּבִ֖יעַ בְּיָדֽוֹ׃",
-      "russian": "Иуда сказал: что нам сказать господину нашему? что говорить? чем оправдываться? Бог нашел неправду рабов твоих; вот, мы рабы господину нашему, и мы, и тот, в чьих руках нашлась чаша.",
-      "greek": "εἶπεν δὲ Ἰούδας Τί ἀντεροῦμεν τῷ κυρίῳ ἢ τί λαλήσωμεν ἢ τί δικαιωθῶμεν; ὁ δὲ θεὸς εὗρεν τὴν ἀδικίαν τῶν παίδων σου· ἰδού ἐσμεν οἰκέται τῷ κυρίῳ ἡμῶν, καὶ ἡμεῖς καὶ παρ’ ᾧ εὑρέθη τὸ κόνδυ.",
-      "english": "\"On the fourteenth day of the first month falls the Passover of the LORD,"
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַיֹּ֣אמֶר יְהוּדָ֗ה מַה נֹּאמַר֙ לַֽאדֹנִ֔י מַה נְּדַבֵּ֖ר וּמַה נִּצְטַדָּ֑ק הָאֱלֹהִ֗ים מָצָא֙ אֶת עֲוֺ֣ן עֲבָדֶ֔יךָ הִנֶּנּ֤וּ עֲבָדִים֙ לַֽאדֹנִ֔י גַּם אֲנַ֕חְנוּ גַּ֛ם אֲשֶׁר נִמְצָ֥א הַגָּבִ֖יעַ בְּיָדֽוֹ׃",
+        "VUL": "Cui Judas: Quid respondebimus, inquit, domino meo ? vel quid loquemur, aut juste poterimus obtendere ? Deus invenit iniquitatem servorum tuorum: en omnes servi sumus domini mei, et nos, et apud quem inventus est scyphus.",
+        "LXX": "εἶπεν δὲ Ἰούδας Τί ἀντεροῦμεν τῷ κυρίῳ ἢ τί λαλήσωμεν ἢ τί δικαιωθῶμεν; ὁ δὲ θεὸς εὗρεν τὴν ἀδικίαν τῶν παίδων σου· ἰδού ἐσμεν οἰκέται τῷ κυρίῳ ἡμῶν, καὶ ἡμεῖς καὶ παρ’ ᾧ εὑρέθη τὸ κόνδυ.",
+        "NAB": "\"On the fourteenth day of the first month falls the Passover of the LORD,",
+        "SYN": "Иуда сказал: что нам сказать господину нашему? что говорить? чем оправдываться? Бог нашел неправду рабов твоих; вот, мы рабы господину нашему, и мы, и тот, в чьих руках нашлась чаша."
+      }
     },
     "17": {
-      "sort_number": 17,
-      "name": "17",
-      "latin": "Respondit Joseph: Absit a me ut sic agam: qui furatus est scyphum, ipse sit servus meus: vos autem abite liberi ad patrem vestrum.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֕אמֶר חָלִ֣ילָה לִּ֔י מֵעֲשׂ֖וֹת זֹ֑את הָאִ֡ישׁ אֲשֶׁר֩ נִמְצָ֨א הַגָּבִ֜יעַ בְּיָד֗וֹ ה֚וּא יִהְיֶה לִּ֣י עָ֔בֶד וְאַתֶּ֕ם עֲל֥וּ לְשָׁל֖וֹם אֶל אֲבִיכֶֽם׃",
-      "russian": "Но [Иосиф] сказал: нет, я этого не сделаю; тот, в чьих руках нашлась чаша, будет мне рабом, а вы пойдите с миром к отцу вашему.",
-      "greek": "εἶπεν δὲ Ἰωσήφ Μή μοι γένοιτο ποιῆσαι τὸ ῥῆμα τοῦτο· ὁ ἄνθρωπος παρ’ ᾧ εὑρέθη τὸ κόνδυ, αὐτὸς ἔσται μου παῖς· ὑμεῖς δὲ ἀνάβητε μετὰ σωτηρίας πρὸς τὸν πατέρα ὑμῶν.",
-      "english": "and the fifteenth day of this month is the pilgrimage feast. For seven days unleavened bread is to be eaten."
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַיֹּ֕אמֶר חָלִ֣ילָה לִּ֔י מֵעֲשׂ֖וֹת זֹ֑את הָאִ֡ישׁ אֲשֶׁר֩ נִמְצָ֨א הַגָּבִ֜יעַ בְּיָד֗וֹ ה֚וּא יִהְיֶה לִּ֣י עָ֔בֶד וְאַתֶּ֕ם עֲל֥וּ לְשָׁל֖וֹם אֶל אֲבִיכֶֽם׃",
+        "VUL": "Respondit Joseph: Absit a me ut sic agam: qui furatus est scyphum, ipse sit servus meus: vos autem abite liberi ad patrem vestrum.",
+        "LXX": "εἶπεν δὲ Ἰωσήφ Μή μοι γένοιτο ποιῆσαι τὸ ῥῆμα τοῦτο· ὁ ἄνθρωπος παρ’ ᾧ εὑρέθη τὸ κόνδυ, αὐτὸς ἔσται μου παῖς· ὑμεῖς δὲ ἀνάβητε μετὰ σωτηρίας πρὸς τὸν πατέρα ὑμῶν.",
+        "NAB": "and the fifteenth day of this month is the pilgrimage feast. For seven days unleavened bread is to be eaten.",
+        "SYN": "Но [Иосиф] сказал: нет, я этого не сделаю; тот, в чьих руках нашлась чаша, будет мне рабом, а вы пойдите с миром к отцу вашему."
+      }
     },
     "18": {
-      "sort_number": 18,
-      "name": "18",
-      "latin": "Accedens autem propius Judas, confidenter ait: Oro, domine mi, loquatur servus tuus verbum in auribus tuis, et ne irascaris famulo tuo: tu es enim post Pharaonem",
-      "word_count": 0,
-      "hebrew": "וַיִּגַּ֨שׁ אֵלָ֜יו יְהוּדָ֗ה וַיֹּאמֶר֮ בִּ֣י אֲדֹנִי֒ יְדַבֶּר נָ֨א עַבְדְּךָ֤ דָבָר֙ בְּאָזְנֵ֣י אֲדֹנִ֔י וְאַל יִ֥חַר אַפְּךָ֖ בְּעַבְדֶּ֑ךָ כִּ֥י כָמ֖וֹךָ כְּפַרְעֹֽה׃",
-      "russian": "И подошел Иуда к нему и сказал: господин мой, позволь рабу твоему сказать слово в уши господина моего, и не прогневайся на раба твоего, ибо ты то же, что фараон.",
-      "greek": "Ἐγγίσας δὲ αὐτῷ Ἰούδας εἶπεν Δέομαι, κύριε· λαλησάτω ὁ παῖς σου ῥῆμα ἐναντίον σου, καὶ μὴ θυμωθῇς τῷ παιδί σου, ὅτι σὺ εἶ μετὰ Φαραώ.",
-      "english": "On the first of these days you shall hold a sacred assembly, and do no sort of work."
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַיִּגַּ֨שׁ אֵלָ֜יו יְהוּדָ֗ה וַיֹּאמֶר֮ בִּ֣י אֲדֹנִי֒ יְדַבֶּר נָ֨א עַבְדְּךָ֤ דָבָר֙ בְּאָזְנֵ֣י אֲדֹנִ֔י וְאַל יִ֥חַר אַפְּךָ֖ בְּעַבְדֶּ֑ךָ כִּ֥י כָמ֖וֹךָ כְּפַרְעֹֽה׃",
+        "VUL": "Accedens autem propius Judas, confidenter ait: Oro, domine mi, loquatur servus tuus verbum in auribus tuis, et ne irascaris famulo tuo: tu es enim post Pharaonem",
+        "LXX": "Ἐγγίσας δὲ αὐτῷ Ἰούδας εἶπεν Δέομαι, κύριε· λαλησάτω ὁ παῖς σου ῥῆμα ἐναντίον σου, καὶ μὴ θυμωθῇς τῷ παιδί σου, ὅτι σὺ εἶ μετὰ Φαραώ.",
+        "NAB": "On the first of these days you shall hold a sacred assembly, and do no sort of work.",
+        "SYN": "И подошел Иуда к нему и сказал: господин мой, позволь рабу твоему сказать слово в уши господина моего, и не прогневайся на раба твоего, ибо ты то же, что фараон."
+      }
     },
     "19": {
-      "sort_number": 19,
-      "name": "19",
-      "latin": "dominus meus. Interrogasti prius servos tuos: Habetis patrem aut fratrem ?",
-      "word_count": 0,
-      "hebrew": "אֲדֹנִ֣י שָׁאַ֔ל אֶת עֲבָדָ֖יו לֵאמֹ֑ר הֲיֵשׁ לָכֶ֥ם אָ֖ב אוֹ אָֽח׃",
-      "russian": "Господин мой спрашивал рабов своих, говоря: есть ли у вас отец или брат?",
-      "greek": "κύριε, σὺ ἠρώτησας τοὺς παῖδάς σου λέγων Εἰ ἔχετε πατέρα ἢ ἀδελφόν;",
-      "english": "As an oblation you shall offer a holocaust to the LORD, which shall consist of two bullocks, one ram, and seven yearling lambs that you are sure are unblemished,"
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "אֲדֹנִ֣י שָׁאַ֔ל אֶת עֲבָדָ֖יו לֵאמֹ֑ר הֲיֵשׁ לָכֶ֥ם אָ֖ב אוֹ אָֽח׃",
+        "VUL": "dominus meus. Interrogasti prius servos tuos: Habetis patrem aut fratrem ?",
+        "LXX": "κύριε, σὺ ἠρώτησας τοὺς παῖδάς σου λέγων Εἰ ἔχετε πατέρα ἢ ἀδελφόν;",
+        "NAB": "As an oblation you shall offer a holocaust to the LORD, which shall consist of two bullocks, one ram, and seven yearling lambs that you are sure are unblemished,",
+        "SYN": "Господин мой спрашивал рабов своих, говоря: есть ли у вас отец или брат?"
+      }
     },
     "20": {
-      "sort_number": 20,
-      "name": "20",
-      "latin": "et nos respondimus tibi domino meo: Est nobis pater senex, et puer parvulus, qui in senectute illius natus est: cujus uterinus frater mortuus est: et ipsum solum habet mater sua, pater vero tenere diligit eum.",
-      "word_count": 0,
-      "hebrew": "וַנֹּ֨אמֶר֙ אֶל אֲדֹנִ֔י יֶשׁ לָ֨נוּ֙ אָ֣ב זָקֵ֔ן וְיֶ֥לֶד זְקֻנִ֖ים קָטָ֑ן וְאָחִ֨יו מֵ֜ת וַיִּוָּתֵ֨ר ה֧וּא לְבַדּ֛וֹ לְאִמּ֖וֹ וְאָבִ֥יו אֲהֵבֽוֹ׃",
-      "russian": "Мы сказали господину нашему, что у нас есть отец престарелый, и [у него] младший сын, сын старости, которого брат умер, а он остался один от матери своей, и отец любит его.",
-      "greek": "καὶ εἴπαμεν τῷ κυρίῳ Ἔστιν ἡμῖν πατὴρ πρεσβύτερος, καὶ παιδίον νεώτερον γήρως αὐτῷ, καὶ ὁ ἀδελφὸς αὐτοῦ ἀπέθανεν, αὐτὸς δὲ μόνος ὑπελείφθη τῷ πατρὶ αὐτοῦ, ὁ δὲ πατὴρ αὐτὸν ἠγάπησεν.",
-      "english": "with their cereal offerings of fine flour mixed with oil; offering three tenths of an ephah for each bullock, two tenths for the ram,"
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַנֹּ֨אמֶר֙ אֶל אֲדֹנִ֔י יֶשׁ לָ֨נוּ֙ אָ֣ב זָקֵ֔ן וְיֶ֥לֶד זְקֻנִ֖ים קָטָ֑ן וְאָחִ֨יו מֵ֜ת וַיִּוָּתֵ֨ר ה֧וּא לְבַדּ֛וֹ לְאִמּ֖וֹ וְאָבִ֥יו אֲהֵבֽוֹ׃",
+        "VUL": "et nos respondimus tibi domino meo: Est nobis pater senex, et puer parvulus, qui in senectute illius natus est: cujus uterinus frater mortuus est: et ipsum solum habet mater sua, pater vero tenere diligit eum.",
+        "LXX": "καὶ εἴπαμεν τῷ κυρίῳ Ἔστιν ἡμῖν πατὴρ πρεσβύτερος, καὶ παιδίον νεώτερον γήρως αὐτῷ, καὶ ὁ ἀδελφὸς αὐτοῦ ἀπέθανεν, αὐτὸς δὲ μόνος ὑπελείφθη τῷ πατρὶ αὐτοῦ, ὁ δὲ πατὴρ αὐτὸν ἠγάπησεν.",
+        "NAB": "with their cereal offerings of fine flour mixed with oil; offering three tenths of an ephah for each bullock, two tenths for the ram,",
+        "SYN": "Мы сказали господину нашему, что у нас есть отец престарелый, и [у него] младший сын, сын старости, которого брат умер, а он остался один от матери своей, и отец любит его."
+      }
     },
     "21": {
-      "sort_number": 21,
-      "name": "21",
-      "latin": "Dixistique servis tuis: Adducite eum ad me, et ponam oculos meos super illum.",
-      "word_count": 0,
-      "hebrew": "וַתֹּ֨אמֶר֙ אֶל עֲבָדֶ֔יךָ הוֹרִדֻ֖הוּ אֵלָ֑י וְאָשִׂ֥ימָה עֵינִ֖י עָלָֽיו׃",
-      "russian": "Ты же сказал рабам твоим: приведите его ко мне, чтобы мне взглянуть на него.",
-      "greek": "εἶπας δὲ τοῖς παισίν σου ὅτι Καταγάγετε αὐτὸν πρὸς μέ, καὶ ἐπιμελοῦμαι αὐτοῦ.",
-      "english": "and one tenth for each of the seven lambs;"
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַתֹּ֨אמֶר֙ אֶל עֲבָדֶ֔יךָ הוֹרִדֻ֖הוּ אֵלָ֑י וְאָשִׂ֥ימָה עֵינִ֖י עָלָֽיו׃",
+        "VUL": "Dixistique servis tuis: Adducite eum ad me, et ponam oculos meos super illum.",
+        "LXX": "εἶπας δὲ τοῖς παισίν σου ὅτι Καταγάγετε αὐτὸν πρὸς μέ, καὶ ἐπιμελοῦμαι αὐτοῦ.",
+        "NAB": "and one tenth for each of the seven lambs;",
+        "SYN": "Ты же сказал рабам твоим: приведите его ко мне, чтобы мне взглянуть на него."
+      }
     },
     "22": {
-      "sort_number": 22,
-      "name": "22",
-      "latin": "Suggessimus domino meo: Non potest puer relinquere patrem suum: si enim illum dimiserit, morietur.",
-      "word_count": 0,
-      "hebrew": "וַנֹּ֨אמֶר֙ אֶל אֲדֹנִ֔י לֹא יוּכַ֥ל הַנַּ֖עַר לַעֲזֹ֣ב אֶת אָבִ֑יו וְעָזַ֥ב אֶת אָבִ֖יו וָמֵֽת׃",
-      "russian": "Мы сказали господину нашему: отрок не может оставить отца своего, и если он оставит отца своего, то сей умрет.",
-      "greek": "καὶ εἴπαμεν τῷ κυρίῳ Οὐ δυνήσεται τὸ παιδίον καταλιπεῖν τὸν πατέρα· ἐὰν δὲ καταλείπῃ τὸν πατέρα, ἀποθανεῖται.",
-      "english": "and offer one goat as a sin offering in atonement for yourselves."
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַנֹּ֨אמֶר֙ אֶל אֲדֹנִ֔י לֹא יוּכַ֥ל הַנַּ֖עַר לַעֲזֹ֣ב אֶת אָבִ֑יו וְעָזַ֥ב אֶת אָבִ֖יו וָמֵֽת׃",
+        "VUL": "Suggessimus domino meo: Non potest puer relinquere patrem suum: si enim illum dimiserit, morietur.",
+        "LXX": "καὶ εἴπαμεν τῷ κυρίῳ Οὐ δυνήσεται τὸ παιδίον καταλιπεῖν τὸν πατέρα· ἐὰν δὲ καταλείπῃ τὸν πατέρα, ἀποθανεῖται.",
+        "NAB": "and offer one goat as a sin offering in atonement for yourselves.",
+        "SYN": "Мы сказали господину нашему: отрок не может оставить отца своего, и если он оставит отца своего, то сей умрет."
+      }
     },
     "23": {
-      "sort_number": 23,
-      "name": "23",
-      "latin": "Et dixisti servis tuis: Nisi venerit frater vester minimus vobiscum, non videbitis amplius faciem meam.",
-      "word_count": 0,
-      "hebrew": "וַתֹּ֨אמֶר֙ אֶל עֲבָדֶ֔יךָ אִם לֹ֥א יֵרֵ֛ד אֲחִיכֶ֥ם הַקָּטֹ֖ן אִתְּכֶ֑ם לֹ֥א תֹסִפ֖וּן לִרְא֥וֹת פָּנָֽי׃",
-      "russian": "Но ты сказал рабам твоим: если не придет с вами меньший брат ваш, то вы более не являйтесь ко мне на лице.",
-      "greek": "σὺ δὲ εἶπας τοῖς παισίν σου Ἐὰν μὴ καταβῇ ὁ ἀδελφὸς ὑμῶν ὁ νεώτερος μεθ’ ὑμῶν, οὐ προσθήσεσθε ἔτι ἰδεῖν τὸ πρόσωπόν μου.",
-      "english": "These offerings you shall make in addition to the established morning holocaust:"
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַתֹּ֨אמֶר֙ אֶל עֲבָדֶ֔יךָ אִם לֹ֥א יֵרֵ֛ד אֲחִיכֶ֥ם הַקָּטֹ֖ן אִתְּכֶ֑ם לֹ֥א תֹסִפ֖וּן לִרְא֥וֹת פָּנָֽי׃",
+        "VUL": "Et dixisti servis tuis: Nisi venerit frater vester minimus vobiscum, non videbitis amplius faciem meam.",
+        "LXX": "σὺ δὲ εἶπας τοῖς παισίν σου Ἐὰν μὴ καταβῇ ὁ ἀδελφὸς ὑμῶν ὁ νεώτερος μεθ’ ὑμῶν, οὐ προσθήσεσθε ἔτι ἰδεῖν τὸ πρόσωπόν μου.",
+        "NAB": "These offerings you shall make in addition to the established morning holocaust:",
+        "SYN": "Но ты сказал рабам твоим: если не придет с вами меньший брат ваш, то вы более не являйтесь ко мне на лице."
+      }
     },
     "24": {
-      "sort_number": 24,
-      "name": "24",
-      "latin": "Cum ergo ascendissemus ad famulum tuum patrem nostrum, narravimus ei omnia quæ locutus est dominus meus.",
-      "word_count": 0,
-      "hebrew": "וַיְהִי֙ כִּ֣י עָלִ֔ינוּ אֶֽל עַבְדְּךָ֖ אָבִ֑י וַנַּ֨גֶּד ל֔וֹ אֵ֖ת דִּבְרֵ֥י אֲדֹנִֽי׃",
-      "russian": "Когда мы пришли к рабу твоему, отцу нашему, то пересказали ему слова господина моего.",
-      "greek": "ἐγένετο δὲ ἡνίκα ἀνέβημεν πρὸς τὸν παῖδά σου πατέρα δὲ ἡμῶν, ἀπηγγείλαμεν αὐτῷ τὰ ῥήματα τοῦ κυρίου.",
-      "english": "you shall make exactly the same offerings each day for seven days as food offerings, in addition to the established holocaust with its libation, for a sweet-smelling oblation to the LORD."
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַיְהִי֙ כִּ֣י עָלִ֔ינוּ אֶֽל עַבְדְּךָ֖ אָבִ֑י וַנַּ֨גֶּד ל֔וֹ אֵ֖ת דִּבְרֵ֥י אֲדֹנִֽי׃",
+        "VUL": "Cum ergo ascendissemus ad famulum tuum patrem nostrum, narravimus ei omnia quæ locutus est dominus meus.",
+        "LXX": "ἐγένετο δὲ ἡνίκα ἀνέβημεν πρὸς τὸν παῖδά σου πατέρα δὲ ἡμῶν, ἀπηγγείλαμεν αὐτῷ τὰ ῥήματα τοῦ κυρίου.",
+        "NAB": "you shall make exactly the same offerings each day for seven days as food offerings, in addition to the established holocaust with its libation, for a sweet-smelling oblation to the LORD.",
+        "SYN": "Когда мы пришли к рабу твоему, отцу нашему, то пересказали ему слова господина моего."
+      }
     },
     "25": {
-      "sort_number": 25,
-      "name": "25",
-      "latin": "Et dixit pater noster: Revertimini, et emite nobis parum tritici.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֖אמֶר אָבִ֑ינוּ שֻׁ֖בוּ שִׁבְרוּ לָ֥נוּ מְעַט אֹֽכֶל׃",
-      "russian": "И сказал отец наш: пойдите опять, купите нам немного пищи.",
-      "greek": "εἶπεν δὲ ἡμῖν ὁ πατὴρ ἡμῶν Βαδίσατε πάλιν, ἀγοράσατε ἡμῖν μικρὰ βρώματα.",
-      "english": "On the seventh day you shall hold a sacred assembly, and do no sort of work."
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַיֹּ֖אמֶר אָבִ֑ינוּ שֻׁ֖בוּ שִׁבְרוּ לָ֥נוּ מְעַט אֹֽכֶל׃",
+        "VUL": "Et dixit pater noster: Revertimini, et emite nobis parum tritici.",
+        "LXX": "εἶπεν δὲ ἡμῖν ὁ πατὴρ ἡμῶν Βαδίσατε πάλιν, ἀγοράσατε ἡμῖν μικρὰ βρώματα.",
+        "NAB": "On the seventh day you shall hold a sacred assembly, and do no sort of work.",
+        "SYN": "И сказал отец наш: пойдите опять, купите нам немного пищи."
+      }
     },
     "26": {
-      "sort_number": 26,
-      "name": "26",
-      "latin": "Cui diximus: Ire non possumus: si frater noster minimus descenderit nobiscum, proficiscemur simul: alioquin illo absente, non audemus videre faciem viri.",
-      "word_count": 0,
-      "hebrew": "וַנֹּ֕אמֶר לֹ֥א נוּכַ֖ל לָרֶ֑דֶת אִם יֵשׁ֩ אָחִ֨ינוּ הַקָּטֹ֤ן אִתָּ֨נוּ֙ וְיָרַ֔דְנוּ כִּי לֹ֣א נוּכַ֗ל לִרְאוֹת֙ פְּנֵ֣י הָאִ֔ישׁ וְאָחִ֥ינוּ הַקָּטֹ֖ן אֵינֶ֥נּוּ אִתָּֽנוּ׃",
-      "russian": "Мы сказали: нельзя нам идти; а если будет с нами меньший брат наш, то пойдем; потому что нельзя нам видеть лица того человека, если не будет с нами меньшого брата нашего.",
-      "greek": "ἡμεῖς δὲ εἴπαμεν Οὐ δυνησόμεθα καταβῆναι· ἀλλ’ εἰ μὲν ὁ ἀδελφὸς ἡμῶν ὁ νεώτερος καταβαίνει μεθ’ ἡμῶν, καταβησόμεθα· οὐ γὰρ δυνησόμεθα ἰδεῖν τὸ πρόσωπον τοῦ ἀνθρώπου, τοῦ ἀδελφοῦ τοῦ νεωτέρου μὴ ὄντος μεθ’ ἡμῶν.",
-      "english": "\"On the day of first fruits, on your feast of Weeks, when you present to the LORD the new cereal offering, you shall hold a sacred assembly, and do no sort of work."
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַנֹּ֕אמֶר לֹ֥א נוּכַ֖ל לָרֶ֑דֶת אִם יֵשׁ֩ אָחִ֨ינוּ הַקָּטֹ֤ן אִתָּ֨נוּ֙ וְיָרַ֔דְנוּ כִּי לֹ֣א נוּכַ֗ל לִרְאוֹת֙ פְּנֵ֣י הָאִ֔ישׁ וְאָחִ֥ינוּ הַקָּטֹ֖ן אֵינֶ֥נּוּ אִתָּֽנוּ׃",
+        "VUL": "Cui diximus: Ire non possumus: si frater noster minimus descenderit nobiscum, proficiscemur simul: alioquin illo absente, non audemus videre faciem viri.",
+        "LXX": "ἡμεῖς δὲ εἴπαμεν Οὐ δυνησόμεθα καταβῆναι· ἀλλ’ εἰ μὲν ὁ ἀδελφὸς ἡμῶν ὁ νεώτερος καταβαίνει μεθ’ ἡμῶν, καταβησόμεθα· οὐ γὰρ δυνησόμεθα ἰδεῖν τὸ πρόσωπον τοῦ ἀνθρώπου, τοῦ ἀδελφοῦ τοῦ νεωτέρου μὴ ὄντος μεθ’ ἡμῶν.",
+        "NAB": "\"On the day of first fruits, on your feast of Weeks, when you present to the LORD the new cereal offering, you shall hold a sacred assembly, and do no sort of work.",
+        "SYN": "Мы сказали: нельзя нам идти; а если будет с нами меньший брат наш, то пойдем; потому что нельзя нам видеть лица того человека, если не будет с нами меньшого брата нашего."
+      }
     },
     "27": {
-      "sort_number": 27,
-      "name": "27",
-      "latin": "Ad quæ ille respondit: Vos scitis quod duos genuerit mihi uxor mea.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֛אמֶר עַבְדְּךָ֥ אָבִ֖י אֵלֵ֑ינוּ אַתֶּ֣ם יְדַעְתֶּ֔ם כִּ֥י שְׁנַ֖יִם יָֽלְדָה לִּ֥י אִשְׁתִּֽי׃",
-      "russian": "И сказал нам раб твой, отец наш: вы знаете, что жена моя родила мне двух сынов;",
-      "greek": "εἶπεν δὲ ὁ παῖς σου ὁ πατὴρ ἡμῶν πρὸς ἡμᾶς Ὑμεῖς γινώσκετε ὅτι δύο ἔτεκέν μοι ἡ γυνή.",
-      "english": "You shall offer as a sweet-smelling holocaust to the LORD two bullocks, one ram, and seven yearling lambs that you are sure are unblemished,"
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַיֹּ֛אמֶר עַבְדְּךָ֥ אָבִ֖י אֵלֵ֑ינוּ אַתֶּ֣ם יְדַעְתֶּ֔ם כִּ֥י שְׁנַ֖יִם יָֽלְדָה לִּ֥י אִשְׁתִּֽי׃",
+        "VUL": "Ad quæ ille respondit: Vos scitis quod duos genuerit mihi uxor mea.",
+        "LXX": "εἶπεν δὲ ὁ παῖς σου ὁ πατὴρ ἡμῶν πρὸς ἡμᾶς Ὑμεῖς γινώσκετε ὅτι δύο ἔτεκέν μοι ἡ γυνή.",
+        "NAB": "You shall offer as a sweet-smelling holocaust to the LORD two bullocks, one ram, and seven yearling lambs that you are sure are unblemished,",
+        "SYN": "И сказал нам раб твой, отец наш: вы знаете, что жена моя родила мне двух сынов;"
+      }
     },
     "28": {
-      "sort_number": 28,
-      "name": "28",
-      "latin": "Egressus est unus, et dixistis: Bestia devoravit eum: et hucusque non comparet.",
-      "word_count": 0,
-      "hebrew": "וַיֵּצֵ֤א הָֽאֶחָד֙ מֵֽאִתִּ֔י וָאֹמַ֕ר אַ֖ךְ טָרֹ֣ף טֹרָ֑ף וְלֹ֥א רְאִיתִ֖יו עַד הֵֽנָּה׃",
-      "russian": "один пошел от меня, и я сказал: верно он растерзан; и я не видал его доныне;",
-      "greek": "καὶ ἐξῆλθεν ὁ εἷς ἀπ’ ἐμοῦ, καὶ εἴπατε Θηριόβρωτος γέγονεν, καὶ οὐκ ἴδον αὐτὸν ἔτι.",
-      "english": "with their cereal offerings of fine flour mixed with oil; offering three tenths of an ephah for each bullock, two tenths for the ram,"
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַיֵּצֵ֤א הָֽאֶחָד֙ מֵֽאִתִּ֔י וָאֹמַ֕ר אַ֖ךְ טָרֹ֣ף טֹרָ֑ף וְלֹ֥א רְאִיתִ֖יו עַד הֵֽנָּה׃",
+        "VUL": "Egressus est unus, et dixistis: Bestia devoravit eum: et hucusque non comparet.",
+        "LXX": "καὶ ἐξῆλθεν ὁ εἷς ἀπ’ ἐμοῦ, καὶ εἴπατε Θηριόβρωτος γέγονεν, καὶ οὐκ ἴδον αὐτὸν ἔτι.",
+        "NAB": "with their cereal offerings of fine flour mixed with oil; offering three tenths of an ephah for each bullock, two tenths for the ram,",
+        "SYN": "один пошел от меня, и я сказал: верно он растерзан; и я не видал его доныне;"
+      }
     },
     "29": {
-      "sort_number": 29,
-      "name": "29",
-      "latin": "Si tuleritis et istum, et aliquid ei in via contigerit, deducetis canos meos cum mrore ad inferos.",
-      "word_count": 0,
-      "hebrew": "וּלְקַחְתֶּ֧ם גַּם אֶת זֶ֛ה מֵעִ֥ם פָּנַ֖י וְקָרָ֣הוּ אָס֑וֹן וְהֽוֹרַדְתֶּ֧ם אֶת שֵׂיבָתִ֛י בְּרָעָ֖ה שְׁאֹֽלָה׃",
-      "russian": "если и сего возьмете от глаз моих, и случится с ним несчастье, то сведете вы седину мою с горестью во гроб.",
-      "greek": "ἐὰν οὖν λάβητε καὶ τοῦτον ἐκ προσώπου μου καὶ συμβῇ αὐτῷ μαλακία ἐν τῇ ὁδῷ καὶ κατάξετέ μου τὸ γῆρας μετὰ λύπης εἰς ᾅδου.",
-      "english": "and one tenth for each of the seven lambs."
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וּלְקַחְתֶּ֧ם גַּם אֶת זֶ֛ה מֵעִ֥ם פָּנַ֖י וְקָרָ֣הוּ אָס֑וֹן וְהֽוֹרַדְתֶּ֧ם אֶת שֵׂיבָתִ֛י בְּרָעָ֖ה שְׁאֹֽלָה׃",
+        "VUL": "Si tuleritis et istum, et aliquid ei in via contigerit, deducetis canos meos cum mrore ad inferos.",
+        "LXX": "ἐὰν οὖν λάβητε καὶ τοῦτον ἐκ προσώπου μου καὶ συμβῇ αὐτῷ μαλακία ἐν τῇ ὁδῷ καὶ κατάξετέ μου τὸ γῆρας μετὰ λύπης εἰς ᾅδου.",
+        "NAB": "and one tenth for each of the seven lambs.",
+        "SYN": "если и сего возьмете от глаз моих, и случится с ним несчастье, то сведете вы седину мою с горестью во гроб."
+      }
     },
     "30": {
-      "sort_number": 30,
-      "name": "30",
-      "latin": "Igitur si intravero ad servum tuum patrem nostrum, et puer defuerit (cum anima illius ex hujus anima pendeat),",
-      "word_count": 0,
-      "hebrew": "וְעַתָּ֗ה כְּבֹאִי֙ אֶל עַבְדְּךָ֣ אָבִ֔י וְהַנַּ֖עַר אֵינֶ֣נּוּ אִתָּ֑נוּ וְנַפְשׁ֖וֹ קְשׁוּרָ֥ה בְנַפְשֽׁוֹ׃",
-      "russian": "Теперь если я приду к рабу твоему, отцу нашему, и не будет с нами отрока, с душею которого связана душа его,",
-      "greek": "νῦν οὖν ἐὰν εἰσπορεύομαι πρὸς τὸν παῖδά σου πατέρα δὲ ἡμῶν, καὶ τὸ παιδάριον μὴ ᾖ μεθ’ ἡμῶν, ἡ δὲ ψυχὴ αὐτοῦ ἐκκρέμαται ἐκ τῆς τούτου ψυχῆς·",
-      "english": "Moreover, one goat shall be offered as a sin offering in atonement for yourselves."
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְעַתָּ֗ה כְּבֹאִי֙ אֶל עַבְדְּךָ֣ אָבִ֔י וְהַנַּ֖עַר אֵינֶ֣נּוּ אִתָּ֑נוּ וְנַפְשׁ֖וֹ קְשׁוּרָ֥ה בְנַפְשֽׁוֹ׃",
+        "VUL": "Igitur si intravero ad servum tuum patrem nostrum, et puer defuerit (cum anima illius ex hujus anima pendeat),",
+        "LXX": "νῦν οὖν ἐὰν εἰσπορεύομαι πρὸς τὸν παῖδά σου πατέρα δὲ ἡμῶν, καὶ τὸ παιδάριον μὴ ᾖ μεθ’ ἡμῶν, ἡ δὲ ψυχὴ αὐτοῦ ἐκκρέμαται ἐκ τῆς τούτου ψυχῆς·",
+        "NAB": "Moreover, one goat shall be offered as a sin offering in atonement for yourselves.",
+        "SYN": "Теперь если я приду к рабу твоему, отцу нашему, и не будет с нами отрока, с душею которого связана душа его,"
+      }
     },
     "31": {
-      "sort_number": 31,
-      "name": "31",
-      "latin": "videritque eum non esse nobiscum, morietur, et deducent famuli tui canos ejus cum dolore ad inferos.",
-      "word_count": 0,
-      "hebrew": "וְהָיָ֗ה כִּרְאוֹת֛וֹ כִּי אֵ֥ין הַנַּ֖עַר וָמֵ֑ת וְהוֹרִ֨ידוּ עֲבָדֶ֜יךָ אֶת שֵׂיבַ֨ת עַבְדְּךָ֥ אָבִ֛ינוּ בְּיָג֖וֹן שְׁאֹֽלָה׃",
-      "russian": "то он, увидев, что нет отрока, умрет; и сведут рабы твои седину раба твоего, отца нашего, с печалью во гроб.",
-      "greek": "καὶ ἔσται ἐν τῷ ἰδεῖν αὐτὸν μὴ ὂν τὸ παιδάριον μεθ’ ἡμῶν, τελευτήσει, καὶ κατάξουσιν οἱ παῖδές σου τὸ γῆρας τοῦ παιδός σου πατρὸς δὲ ἡμῶν μετ’ ὀδύνης εἰς ᾅδου.",
-      "english": "You shall make these offerings, together with their libations, in addition to the established holocaust with its cereal offering. 1 [3] The established holocaust: \"the tamid holocaust,\" the technical term for the daily sacrifice. 2 [5] Oil of crushed olives: this oil, made in a mortar, was purer and more expensive than oil extracted in the olive press. 3 [7] In the sanctuary: according to Sirach 50:15 it was at the base of the altar. 4 [11] On the first of each month: literally, \"at the new moons\"; beginning on the evening when the crescent of the new moon first appeared. 5 [16] On the fourteenth day: toward evening at the end of this day; cf Exodus 12:6, 18. 6 [26] The day of first fruits: a unique term for this feast, which is usually called \"the feast of Weeks\"; it was celebrated as a thanksgiving for the wheat harvest seven weeks after the barley harvest (Passover). In the time of Christ it was commonly known by the Greek word \"Pentecost,\" that is, \"fiftieth\" (day after the Passover); see note on Lev 23:16. Previous - Next Copyright &copy; Libreria Editrice Vaticana"
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְהָיָ֗ה כִּרְאוֹת֛וֹ כִּי אֵ֥ין הַנַּ֖עַר וָמֵ֑ת וְהוֹרִ֨ידוּ עֲבָדֶ֜יךָ אֶת שֵׂיבַ֨ת עַבְדְּךָ֥ אָבִ֛ינוּ בְּיָג֖וֹן שְׁאֹֽלָה׃",
+        "VUL": "videritque eum non esse nobiscum, morietur, et deducent famuli tui canos ejus cum dolore ad inferos.",
+        "LXX": "καὶ ἔσται ἐν τῷ ἰδεῖν αὐτὸν μὴ ὂν τὸ παιδάριον μεθ’ ἡμῶν, τελευτήσει, καὶ κατάξουσιν οἱ παῖδές σου τὸ γῆρας τοῦ παιδός σου πατρὸς δὲ ἡμῶν μετ’ ὀδύνης εἰς ᾅδου.",
+        "NAB": "You shall make these offerings, together with their libations, in addition to the established holocaust with its cereal offering. 1 [3] The established holocaust: \"the tamid holocaust,\" the technical term for the daily sacrifice. 2 [5] Oil of crushed olives: this oil, made in a mortar, was purer and more expensive than oil extracted in the olive press. 3 [7] In the sanctuary: according to Sirach 50:15 it was at the base of the altar. 4 [11] On the first of each month: literally, \"at the new moons\"; beginning on the evening when the crescent of the new moon first appeared. 5 [16] On the fourteenth day: toward evening at the end of this day; cf Exodus 12:6, 18. 6 [26] The day of first fruits: a unique term for this feast, which is usually called \"the feast of Weeks\"; it was celebrated as a thanksgiving for the wheat harvest seven weeks after the barley harvest (Passover). In the time of Christ it was commonly known by the Greek word \"Pentecost,\" that is, \"fiftieth\" (day after the Passover); see note on Lev 23:16. Previous - Next Copyright &copy; Libreria Editrice Vaticana",
+        "SYN": "то он, увидев, что нет отрока, умрет; и сведут рабы твои седину раба твоего, отца нашего, с печалью во гроб."
+      }
     },
     "32": {
-      "sort_number": 32,
-      "name": "32",
-      "latin": "Ego proprie servus tuus sim qui in meam hunc recepi fidem, et spopondi dicens: Nisi reduxero eum, peccati reus ero in patrem meum omni tempore.",
-      "word_count": 0,
-      "hebrew": "כִּ֤י עַבְדְּךָ֙ עָרַ֣ב אֶת הַנַּ֔עַר מֵעִ֥ם אָבִ֖י לֵאמֹ֑ר אִם לֹ֤א אֲבִיאֶ֨נּוּ֙ אֵלֶ֔יךָ וְחָטָ֥אתִי לְאָבִ֖י כָּל הַיָּמִֽים׃",
-      "russian": "Притом я, раб твой, взялся отвечать за отрока отцу моему, сказав: если не приведу его к тебе [и не поставлю его пред тобою], то останусь я виновным пред отцом моим во все дни жизни.",
-      "greek": "ὁ γὰρ παῖς σου ἐκδέδεκται τὸ παιδίον παρὰ τοῦ πατρὸς λέγων Ἐὰν μὴ ἀγάγω αὐτὸν πρὸς σὲ καὶ στήσω αὐτὸν ἐναντίον σου, ἡμαρτηκὼς ἔσομαι πρὸς τὸν πατέρα πάσας τὰς ἡμέρας.",
-      "english": "Besides, I, your servant, got the boy from his father by going surety for him, saying, 'If I fail to bring him back to you, father, you can hold it against me forever.'"
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "כִּ֤י עַבְדְּךָ֙ עָרַ֣ב אֶת הַנַּ֔עַר מֵעִ֥ם אָבִ֖י לֵאמֹ֑ר אִם לֹ֤א אֲבִיאֶ֨נּוּ֙ אֵלֶ֔יךָ וְחָטָ֥אתִי לְאָבִ֖י כָּל הַיָּמִֽים׃",
+        "VUL": "Ego proprie servus tuus sim qui in meam hunc recepi fidem, et spopondi dicens: Nisi reduxero eum, peccati reus ero in patrem meum omni tempore.",
+        "LXX": "ὁ γὰρ παῖς σου ἐκδέδεκται τὸ παιδίον παρὰ τοῦ πατρὸς λέγων Ἐὰν μὴ ἀγάγω αὐτὸν πρὸς σὲ καὶ στήσω αὐτὸν ἐναντίον σου, ἡμαρτηκὼς ἔσομαι πρὸς τὸν πατέρα πάσας τὰς ἡμέρας.",
+        "NAB": "Besides, I, your servant, got the boy from his father by going surety for him, saying, 'If I fail to bring him back to you, father, you can hold it against me forever.'",
+        "SYN": "Притом я, раб твой, взялся отвечать за отрока отцу моему, сказав: если не приведу его к тебе [и не поставлю его пред тобою], то останусь я виновным пред отцом моим во все дни жизни."
+      }
     },
     "33": {
-      "sort_number": 33,
-      "name": "33",
-      "latin": "Manebo itaque servus tuus pro puero in ministerio domini mei, et puer ascendat cum fratribus suis.",
-      "word_count": 0,
-      "hebrew": "וְעַתָּ֗ה יֵֽשֶׁב נָ֤א עַבְדְּךָ֙ תַּ֣חַת הַנַּ֔עַר עֶ֖בֶד לַֽאדֹנִ֑י וְהַנַּ֖עַר יַ֥עַל עִם אֶחָֽיו׃",
-      "russian": "Итак пусть я, раб твой, вместо отрока останусь рабом у господина моего, а отрок пусть идет с братьями своими:",
-      "greek": "νῦν οὖν παραμενῶ σοι παῖς ἀντὶ τοῦ παιδίου, οἰκέτης τοῦ κυρίου· τὸ δὲ παιδίον ἀναβήτω μετὰ τῶν ἀδελφῶν.",
-      "english": "Let me, your servant, therefore, remain in place of the boy as the slave of my lord, and let the boy go back with his brothers."
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְעַתָּ֗ה יֵֽשֶׁב נָ֤א עַבְדְּךָ֙ תַּ֣חַת הַנַּ֔עַר עֶ֖בֶד לַֽאדֹנִ֑י וְהַנַּ֖עַר יַ֥עַל עִם אֶחָֽיו׃",
+        "VUL": "Manebo itaque servus tuus pro puero in ministerio domini mei, et puer ascendat cum fratribus suis.",
+        "LXX": "νῦν οὖν παραμενῶ σοι παῖς ἀντὶ τοῦ παιδίου, οἰκέτης τοῦ κυρίου· τὸ δὲ παιδίον ἀναβήτω μετὰ τῶν ἀδελφῶν.",
+        "NAB": "Let me, your servant, therefore, remain in place of the boy as the slave of my lord, and let the boy go back with his brothers.",
+        "SYN": "Итак пусть я, раб твой, вместо отрока останусь рабом у господина моего, а отрок пусть идет с братьями своими:"
+      }
     },
     "34": {
-      "sort_number": 34,
-      "name": "34",
-      "latin": "Non enim possum redire ad patrem meum, absente puero: ne calamitatis, quæ oppressura est patrem meum, testis assistam.",
-      "word_count": 0,
-      "hebrew": "כִּי אֵיךְ֙ אֶֽעֱלֶ֣ה אֶל אָבִ֔י וְהַנַּ֖עַר אֵינֶ֣נּוּ אִתִּ֑י פֶּ֚ן אֶרְאֶ֣ה בָרָ֔ע אֲשֶׁ֥ר יִמְצָ֖א אֶת אָבִֽי׃",
-      "russian": "ибо как пойду я к отцу моему, когда отрока не будет со мною? я увидел бы бедствие, которое постигло бы отца моего.",
-      "greek": "πῶς γὰρ ἀναβήσομαι πρὸς τὸν πατέρα, τοῦ παιδίου μὴ ὄντος μεθ’ ἡμῶν; ἵνα μὴ ἴδω τὰ κακὰ ἃ εὑρήσει τὸν πατέρα μου.",
-      "english": "How could I go back to my father if the boy were not with me? I could not bear to see the anguish that would overcome my father.\" [1-2] Replacement of the money in the men's bags is probably a redactional addition here, taken from the Yahwist account of the first visit. It is only the goblet in Benjamin's bag, not any replaced money, that plays a part in the rest of the chapter."
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "כִּי אֵיךְ֙ אֶֽעֱלֶ֣ה אֶל אָבִ֔י וְהַנַּ֖עַר אֵינֶ֣נּוּ אִתִּ֑י פֶּ֚ן אֶרְאֶ֣ה בָרָ֔ע אֲשֶׁ֥ר יִמְצָ֖א אֶת אָבִֽי׃",
+        "VUL": "Non enim possum redire ad patrem meum, absente puero: ne calamitatis, quæ oppressura est patrem meum, testis assistam.",
+        "LXX": "πῶς γὰρ ἀναβήσομαι πρὸς τὸν πατέρα, τοῦ παιδίου μὴ ὄντος μεθ’ ἡμῶν; ἵνα μὴ ἴδω τὰ κακὰ ἃ εὑρήσει τὸν πατέρα μου.",
+        "NAB": "How could I go back to my father if the boy were not with me? I could not bear to see the anguish that would overcome my father.\" [1-2] Replacement of the money in the men's bags is probably a redactional addition here, taken from the Yahwist account of the first visit. It is only the goblet in Benjamin's bag, not any replaced money, that plays a part in the rest of the chapter.",
+        "SYN": "ибо как пойду я к отцу моему, когда отрока не будет со мною? я увидел бы бедствие, которое постигло бы отца моего."
+      }
     }
   }
 }

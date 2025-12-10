@@ -1,0 +1,220 @@
+{
+  "chapter_id": "MATHE_002",
+  "chapter_key": "2",
+  "chapter_number": 2,
+  "sort_number": 2,
+  "name": "2",
+  "book_key": "MATHE",
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verse_count": 23,
+  "verses": {
+    "1": {
+      "verse_number": 1,
+      "sort_number": 1,
+      "text": "[MATHE 2:1]",
+      "word_count": 5,
+      "russian": "Когда же Иисус родился в Вифлееме Иудейском во дни царя Ирода, пришли в Иерусалим волхвы с востока и говорят:",
+      "greek": "Τοῦ δὲ Ἰησοῦ γεννηθέντος ἐν Βηθλεὲμ τῆς Ἰουδαίας, ἐν ἡμέραις Ἡρῴδου τοῦ βασιλέως, ἰδού, μάγοι ἀπὸ ἀνατολῶν παρεγένοντο εἰς Ἱεροσόλυμα,",
+      "latin": "Cum ergo natus esset Jesus in Bethlehem Juda in diebus Herodis regis, ecce magi ab oriente venerunt Jerosolymam,"
+    },
+    "2": {
+      "verse_number": 2,
+      "sort_number": 2,
+      "text": "[MATHE 2:2]",
+      "word_count": 5,
+      "russian": "где родившийся Царь Иудейский? ибо мы видели звезду Его на востоке и пришли поклониться Ему.",
+      "greek": "λέγοντες, Ποῦ ἐστὶν ὁ τεχθεὶς βασιλεὺς τῶν Ἰουδαίων; Εἴδομεν γὰρ αὐτοῦ τὸν ἀστέρα ἐν τῇ ἀνατολῇ, καὶ ἤλθομεν προσκυνῆσαι αὐτῷ.",
+      "latin": "dicentes: Ubi est qui natus est rex Judæorum ? vidimus enim stellam ejus in oriente, et venimus adorare eum."
+    },
+    "3": {
+      "verse_number": 3,
+      "sort_number": 3,
+      "text": "[MATHE 2:3]",
+      "word_count": 5,
+      "russian": "Услышав это, Ирод царь встревожился, и весь Иерусалим с ним.",
+      "greek": "Ἀκούσας δὲ Ἡρῴδης ὁ βασιλεὺς ἐταράχθη, καὶ πᾶσα Ἱεροσόλυμα μετ’ αὐτοῦ·",
+      "latin": "Audiens autem Herodes rex, turbatus est, et omnis Jerosolyma cum illo."
+    },
+    "4": {
+      "verse_number": 4,
+      "sort_number": 4,
+      "text": "[MATHE 2:4]",
+      "word_count": 5,
+      "russian": "И, собрав всех первосвященников и книжников народных, спрашивал у них: где должно родиться Христу?",
+      "greek": "καὶ συναγαγὼν πάντας τοὺς ἀρχιερεῖς καὶ γραμματεῖς τοῦ λαοῦ, ἐπυνθάνετο παρ’ αὐτῶν ποῦ ὁ χριστὸς γεννᾶται.",
+      "latin": "Et congregans omnes principes sacerdotum, et scribas populi, sciscitabatur ab eis ubi Christus nasceretur."
+    },
+    "5": {
+      "verse_number": 5,
+      "sort_number": 5,
+      "text": "[MATHE 2:5]",
+      "word_count": 5,
+      "russian": "Они же сказали ему: в Вифлееме Иудейском, ибо так написано через пророка:",
+      "greek": "Οἱ δὲ εἶπον αὐτῷ, Ἐν Βηθλεὲμ τῆς Ἰουδαίας· οὕτως γὰρ γέγραπται διὰ τοῦ προφήτου,",
+      "latin": "At illi dixerunt: In Bethlehem Judæ: sic enim scriptum est per prophetam:"
+    },
+    "6": {
+      "verse_number": 6,
+      "sort_number": 6,
+      "text": "[MATHE 2:6]",
+      "word_count": 5,
+      "russian": "и ты, Вифлеем, земля Иудина, ничем не меньше воеводств Иудиных, ибо из тебя произойдет Вождь, Который упасет народ Мой, Израиля.",
+      "greek": "Καὶ σὺ Βηθλεέμ, γῆ Ἰούδα, οὐδαμῶς ἐλαχίστη εἶ ἐν τοῖς ἡγεμόσιν Ἰούδα· ἐκ σοῦ γὰρ ἐξελεύσεται ἡγούμενος, ὅστις ποιμανεῖ τὸν λαόν μου τὸν Ἰσραήλ.",
+      "latin": "[Et tu Bethlehem terra Juda,/ nequaquam minima es/ in principibus Juda:/ ex te enim exiet dux, qui regat populum meum Israël.]"
+    },
+    "7": {
+      "verse_number": 7,
+      "sort_number": 7,
+      "text": "[MATHE 2:7]",
+      "word_count": 5,
+      "russian": "Тогда Ирод, тайно призвав волхвов, выведал от них время появления звезды",
+      "greek": "Τότε Ἡρῴδης, λάθρᾳ καλέσας τοὺς μάγους, ἠκρίβωσεν παρ’ αὐτῶν τὸν χρόνον τοῦ φαινομένου ἀστέρος.",
+      "latin": "Tunc Herodes clam vocatis magis diligenter didicit ab eis tempus stellæ, quæ apparuit eis:"
+    },
+    "8": {
+      "verse_number": 8,
+      "sort_number": 8,
+      "text": "[MATHE 2:8]",
+      "word_count": 5,
+      "russian": "и, послав их в Вифлеем, сказал: пойдите, тщательно разведайте о Младенце и, когда найдете, известите меня, чтобы и мне пойти поклониться Ему.",
+      "greek": "Καὶ πέμψας αὐτοὺς εἰς Βηθλεὲμ εἶπεν, Πορευθέντες ἀκριβῶς ἐξετάσατε περὶ τοῦ παιδίου· ἐπὰν δὲ εὕρητε, ἀπαγγείλατέ μοι, ὅπως κἀγὼ ἐλθὼν προσκυνήσω αὐτῷ.",
+      "latin": "et mittens illos in Bethlehem, dixit: Ite, et interrogate diligenter de puero: et cum inveneritis, renuntiate mihi, ut et ego veniens adorem eum."
+    },
+    "9": {
+      "verse_number": 9,
+      "sort_number": 9,
+      "text": "[MATHE 2:9]",
+      "word_count": 5,
+      "russian": "Они, выслушав царя, пошли. [И] се, звезда, которую видели они на востоке, шла перед ними, как наконец пришла и остановилась над местом, где был Младенец.",
+      "greek": "Οἱ δὲ ἀκούσαντες τοῦ βασιλέως ἐπορεύθησαν· καὶ ἰδού, ὁ ἀστήρ, ὃν εἶδον ἐν τῇ ἀνατολῇ, προῆγεν αὐτούς, ἕως ἐλθὼν ἔστη ἐπάνω οὗ ἦν τὸ παιδίον.",
+      "latin": "Qui cum audissent regem, abierunt, et ecce stella, quam viderant in oriente, antecedebat eos, usque dum veniens staret supra, ubi erat puer."
+    },
+    "10": {
+      "verse_number": 10,
+      "sort_number": 10,
+      "text": "[MATHE 2:10]",
+      "word_count": 5,
+      "russian": "Увидев же звезду, они возрадовались радостью весьма великою,",
+      "greek": "Ἰδόντες δὲ τὸν ἀστέρα, ἐχάρησαν χαρὰν μεγάλην σφόδρα.",
+      "latin": "Videntes autem stellam gavisi sunt gaudio magno valde."
+    },
+    "11": {
+      "verse_number": 11,
+      "sort_number": 11,
+      "text": "[MATHE 2:11]",
+      "word_count": 5,
+      "russian": "и, войдя в дом, увидели Младенца с Мариею, Матерью Его, и, пав, поклонились Ему; и, открыв сокровища свои, принесли Ему дары: золото, ладан и смирну.",
+      "greek": "Καὶ ἐλθόντες εἰς τὴν οἰκίαν, εἶδον τὸ παιδίον μετὰ Μαρίας τῆς μητρὸς αὐτοῦ, καὶ πεσόντες προσεκύνησαν αὐτῷ, καὶ ἀνοίξαντες τοὺς θησαυροὺς αὐτῶν προσήνεγκαν αὐτῷ δῶρα, χρυσὸν καὶ λίβανον καὶ σμύρναν.",
+      "latin": "Et intrantes domum, invenerunt puerum cum Maria matre ejus, et procidentes adoraverunt eum: et apertis thesauris suis obtulerunt ei munera, aurum, thus, et myrrham."
+    },
+    "12": {
+      "verse_number": 12,
+      "sort_number": 12,
+      "text": "[MATHE 2:12]",
+      "word_count": 5,
+      "russian": "И, получив во сне откровение не возвращаться к Ироду, иным путем отошли в страну свою.",
+      "greek": "Καὶ χρηματισθέντες κατ’ ὄναρ μὴ ἀνακάμψαι πρὸς Ἡρῴδην, δι’ ἄλλης ὁδοῦ ἀνεχώρησαν εἰς τὴν χώραν αὐτῶν.",
+      "latin": "Et responso accepto in somnis ne redirent ad Herodem, per aliam viam reversi sunt in regionem suam."
+    },
+    "13": {
+      "verse_number": 13,
+      "sort_number": 13,
+      "text": "[MATHE 2:13]",
+      "word_count": 5,
+      "russian": "Когда же они отошли, -- се, Ангел Господень является во сне Иосифу и говорит: встань, возьми Младенца и Матерь Его и беги в Египет, и будь там, доколе не скажу тебе, ибо Ирод хочет искать Младенца, чтобы погубить Его.",
+      "greek": "Ἀναχωρησάντων δὲ αὐτῶν, ἰδού, ἄγγελος κυρίου φαίνεται κατ’ ὄναρ τῷ Ἰωσήφ, λέγων, Ἐγερθεὶς παράλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ, καὶ φεῦγε εἰς Αἴγυπτον, καὶ ἴσθι ἐκεῖ ἕως ἂν εἴπω σοί· μέλλει γὰρ Ἡρῴδης ζητεῖν τὸ παιδίον, τοῦ ἀπολέσαι αὐτό.",
+      "latin": "Qui cum recessissent, ecce angelus Domini apparuit in somnis Joseph, dicens: Surge, et accipe puerum, et matrem ejus, et fuge in Ægyptum, et esto ibi usque dum dicam tibi. Futurum est enim ut Herodes quærat puerum ad perdendum eum."
+    },
+    "14": {
+      "verse_number": 14,
+      "sort_number": 14,
+      "text": "[MATHE 2:14]",
+      "word_count": 5,
+      "russian": "Он встал, взял Младенца и Матерь Его ночью и пошел в Египет,",
+      "greek": "Ὁ δὲ ἐγερθεὶς παρέλαβεν τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ νυκτός, καὶ ἀνεχώρησεν εἰς Αἴγυπτον,",
+      "latin": "Qui consurgens accepit puerum et matrem ejus nocte, et secessit in Ægyptum:"
+    },
+    "15": {
+      "verse_number": 15,
+      "sort_number": 15,
+      "text": "[MATHE 2:15]",
+      "word_count": 5,
+      "russian": "и там был до смерти Ирода, да сбудется реченное Господом через пророка, который говорит: из Египта воззвал Я Сына Моего.",
+      "greek": "καὶ ἦν ἐκεῖ ἕως τῆς τελευτῆς Ἡρῴδου· ἵνα πληρωθῇ τὸ ῥηθὲν ὑπὸ τοῦ κυρίου διὰ τοῦ προφήτου, λέγοντος, Ἐξ Αἰγύπτου ἐκάλεσα τὸν υἱόν μου.",
+      "latin": "et erat ibi usque ad obitum Herodis: ut adimpleretur quod dictum est a Domino per prophetam dicentem: Ex Ægypto vocavi filium meum."
+    },
+    "16": {
+      "verse_number": 16,
+      "sort_number": 16,
+      "text": "[MATHE 2:16]",
+      "word_count": 5,
+      "russian": "Тогда Ирод, увидев себя осмеянным волхвами, весьма разгневался, и послал избить всех младенцев в Вифлееме и во всех пределах его, от двух лет и ниже, по времени, которое выведал от волхвов.",
+      "greek": "Τότε Ἡρῴδης, ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων, ἐθυμώθη λίαν, καὶ ἀποστείλας ἀνεῖλεν πάντας τοὺς παῖδας τοὺς ἐν Βηθλεὲμ καὶ ἐν πᾶσιν τοῖς ὁρίοις αὐτῆς, ἀπὸ διετοῦς καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν ἠκρίβωσεν παρὰ τῶν μάγων.",
+      "latin": "Tunc Herodes videns quoniam illusus esset a magis, iratus est valde, et mittens occidit omnes pueros, qui erant in Bethlehem, et in omnibus finibus ejus, a bimatu et infra secundum tempus, quod exquisierat a magis."
+    },
+    "17": {
+      "verse_number": 17,
+      "sort_number": 17,
+      "text": "[MATHE 2:17]",
+      "word_count": 5,
+      "russian": "Тогда сбылось реченное через пророка Иеремию, который говорит:",
+      "greek": "Τότε ἐπληρώθη τὸ ῥηθὲν ὑπὸ Ἰερεμίου τοῦ προφήτου, λέγοντος,",
+      "latin": "Tunc adimpletum est quod dictum est per Jeremiam prophetam dicentem:"
+    },
+    "18": {
+      "verse_number": 18,
+      "sort_number": 18,
+      "text": "[MATHE 2:18]",
+      "word_count": 5,
+      "russian": "глас в Раме слышен, плач и рыдание и вопль великий; Рахиль плачет о детях своих и не хочет утешиться, ибо их нет.",
+      "greek": "Φωνὴ ἐν Ῥαμᾶ ἠκούσθη, θρῆνος καὶ κλαυθμὸς καὶ ὀδυρμὸς πολύς, Ῥαχὴλ κλαίουσα τὰ τέκνα αὐτῆς, καὶ οὐκ ἤθελεν παρακληθῆναι, ὅτι οὐκ εἰσίν.",
+      "latin": "[Vox in Rama audita est/ ploratus, et ululatus multus:/ Rachel plorans filios suos,/ et noluit consolari, quia non sunt.]"
+    },
+    "19": {
+      "verse_number": 19,
+      "sort_number": 19,
+      "text": "[MATHE 2:19]",
+      "word_count": 5,
+      "russian": "По смерти же Ирода, -- се, Ангел Господень во сне является Иосифу в Египте",
+      "greek": "Τελευτήσαντος δὲ τοῦ Ἡρῴδου, ἰδού, ἄγγελος κυρίου κατ’ ὄναρ φαίνεται τῷ Ἰωσὴφ ἐν Αἰγύπτῳ,",
+      "latin": "Defuncto autem Herode, ecce angelus Domini apparuit in somnis Joseph in Ægypto,"
+    },
+    "20": {
+      "verse_number": 20,
+      "sort_number": 20,
+      "text": "[MATHE 2:20]",
+      "word_count": 5,
+      "russian": "и говорит: встань, возьми Младенца и Матерь Его и иди в землю Израилеву, ибо умерли искавшие души Младенца.",
+      "greek": "λέγων, Ἐγερθεὶς παράλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ, καὶ πορεύου εἰς γῆν Ἰσραήλ· τεθνήκασιν γὰρ οἱ ζητοῦντες τὴν ψυχὴν τοῦ παιδίου.",
+      "latin": "dicens: Surge, et accipe puerum, et matrem ejus, et vade in terram Israël: defuncti sunt enim qui quærebant animam pueri."
+    },
+    "21": {
+      "verse_number": 21,
+      "sort_number": 21,
+      "text": "[MATHE 2:21]",
+      "word_count": 5,
+      "russian": "Он встал, взял Младенца и Матерь Его и пришел в землю Израилеву.",
+      "greek": "Ὁ δὲ ἐγερθεὶς παρέλαβεν τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ, καὶ ἦλθεν εἰς γῆν Ἰσραήλ.",
+      "latin": "Qui consurgens, accepit puerum, et matrem ejus, et venit in terram Israël."
+    },
+    "22": {
+      "verse_number": 22,
+      "sort_number": 22,
+      "text": "[MATHE 2:22]",
+      "word_count": 5,
+      "russian": "Услышав же, что Архелай царствует в Иудее вместо Ирода, отца своего, убоялся туда идти; но, получив во сне откровение, пошел в пределы Галилейские",
+      "greek": "Ἀκούσας δὲ ὅτι Ἀρχέλαος βασιλεύει ἐπὶ τῆς Ἰουδαίας ἀντὶ Ἡρῴδου τοῦ πατρὸς αὐτοῦ, ἐφοβήθη ἐκεῖ ἀπελθεῖν· χρηματισθεὶς δὲ κατ’ ὄναρ, ἀνεχώρησεν εἰς τὰ μέρη τῆς Γαλιλαίας,",
+      "latin": "Audiens autem quod Archelaus regnaret in Judæa pro Herode patre suo, timuit illo ire: et admonitus in somnis, secessit in partes Galilææ."
+    },
+    "23": {
+      "verse_number": 23,
+      "sort_number": 23,
+      "text": "[MATHE 2:23]",
+      "word_count": 5,
+      "russian": "и, придя, поселился в городе, называемом Назарет, да сбудется реченное через пророков, что Он Назореем наречется.",
+      "greek": "καὶ ἐλθὼν κατῴκησεν εἰς πόλιν λεγομένην Ναζαρέτ· ὅπως πληρωθῇ τὸ ῥηθὲν διὰ τῶν προφητῶν, ὅτι Ναζωραῖος κληθήσεται.",
+      "latin": "Et veniens habitavit in civitate quæ vocatur Nazareth: ut adimpleretur quod dictum est per prophetas: Quoniam Nazaræus vocabitur."
+    }
+  }
+}

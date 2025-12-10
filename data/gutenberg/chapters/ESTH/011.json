@@ -1,12 +1,17 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "ESTH_011",
-  "chapter_key": "11",
-  "chapter_number": 11,
-  "sort_number": 11,
-  "name": "11",
   "book_key": "ESTH",
+  "sequence": 11,
+  "chapter_in": {
+    "VUL": 11,
+    "LXX": 11
+  },
   "testament": "Vetus_Testamentum",
   "section": "Libri_Historici_et_Novellae_Biblicae",
-  "verse_count": 0,
+  "exists_in": [
+    "VUL",
+    "LXX"
+  ],
   "verses": {}
 }

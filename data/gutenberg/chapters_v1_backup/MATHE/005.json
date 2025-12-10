@@ -1,0 +1,445 @@
+{
+  "chapter_id": "MATHE_005",
+  "chapter_key": "5",
+  "chapter_number": 5,
+  "sort_number": 5,
+  "name": "5",
+  "book_key": "MATHE",
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verse_count": 48,
+  "verses": {
+    "1": {
+      "verse_number": 1,
+      "sort_number": 1,
+      "text": "[MATHE 5:1]",
+      "word_count": 5,
+      "russian": "Увидев народ, Он взошел на гору; и, когда сел, приступили к Нему ученики Его.",
+      "greek": "Ἰδὼν δὲ τοὺς ὄχλους, ἀνέβη εἰς τὸ ὄρος· καὶ καθίσαντος αὐτοῦ, προσῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ·",
+      "latin": "Videns autem Jesus turbas, ascendit in montem, et cum sedisset, accesserunt ad eum discipuli ejus,"
+    },
+    "2": {
+      "verse_number": 2,
+      "sort_number": 2,
+      "text": "[MATHE 5:2]",
+      "word_count": 5,
+      "russian": "И Он, отверзши уста Свои, учил их, говоря:",
+      "greek": "καὶ ἀνοίξας τὸ στόμα αὐτοῦ, ἐδίδασκεν αὐτούς, λέγων,",
+      "latin": "et aperiens os suum docebat eos dicens:"
+    },
+    "3": {
+      "verse_number": 3,
+      "sort_number": 3,
+      "text": "[MATHE 5:3]",
+      "word_count": 5,
+      "russian": "Блаженны нищие духом, ибо их есть Царство Небесное.",
+      "greek": "Μακάριοι οἱ πτωχοὶ τῷ πνεύματι· ὅτι αὐτῶν ἐστιν ἡ βασιλεία τῶν οὐρανῶν.",
+      "latin": "Beati pauperes spiritu: quoniam ipsorum est regnum cælorum."
+    },
+    "4": {
+      "verse_number": 4,
+      "sort_number": 4,
+      "text": "[MATHE 5:4]",
+      "word_count": 5,
+      "russian": "Блаженны плачущие, ибо они утешатся.",
+      "greek": "Μακάριοι οἱ πενθοῦντες· ὅτι αὐτοὶ παρακληθήσονται.",
+      "latin": "Beati mites: quoniam ipsi possidebunt terram."
+    },
+    "5": {
+      "verse_number": 5,
+      "sort_number": 5,
+      "text": "[MATHE 5:5]",
+      "word_count": 5,
+      "russian": "Блаженны кроткие, ибо они наследуют землю.",
+      "greek": "Μακάριοι οἱ πρᾳεῖς· ὅτι αὐτοὶ κληρονομήσουσιν τὴν γῆν.",
+      "latin": "Beati qui lugent: quoniam ipsi consolabuntur."
+    },
+    "6": {
+      "verse_number": 6,
+      "sort_number": 6,
+      "text": "[MATHE 5:6]",
+      "word_count": 5,
+      "russian": "Блаженны алчущие и жаждущие правды, ибо они насытятся.",
+      "greek": "Μακάριοι οἱ πεινῶντες καὶ διψῶντες τὴν δικαιοσύνην· ὅτι αὐτοὶ χορτασθήσονται.",
+      "latin": "Beati qui esuriunt et sitiunt justitiam: quoniam ipsi saturabuntur."
+    },
+    "7": {
+      "verse_number": 7,
+      "sort_number": 7,
+      "text": "[MATHE 5:7]",
+      "word_count": 5,
+      "russian": "Блаженны милостивые, ибо они помилованы будут.",
+      "greek": "Μακάριοι οἱ ἐλεήμονες· ὅτι αὐτοὶ ἐλεηθήσονται.",
+      "latin": "Beati misericordes: quoniam ipsi misericordiam consequentur."
+    },
+    "8": {
+      "verse_number": 8,
+      "sort_number": 8,
+      "text": "[MATHE 5:8]",
+      "word_count": 5,
+      "russian": "Блаженны чистые сердцем, ибо они Бога узрят.",
+      "greek": "Μακάριοι οἱ καθαροὶ τῇ καρδίᾳ· ὅτι αὐτοὶ τὸν θεὸν ὄψονται.",
+      "latin": "Beati mundo corde: quoniam ipsi Deum videbunt."
+    },
+    "9": {
+      "verse_number": 9,
+      "sort_number": 9,
+      "text": "[MATHE 5:9]",
+      "word_count": 5,
+      "russian": "Блаженны миротворцы, ибо они будут наречены сынами Божиими.",
+      "greek": "Μακάριοι οἱ εἰρηνοποιοί· ὅτι αὐτοὶ υἱοὶ θεοῦ κληθήσονται.",
+      "latin": "Beati pacifici: quoniam filii Dei vocabuntur."
+    },
+    "10": {
+      "verse_number": 10,
+      "sort_number": 10,
+      "text": "[MATHE 5:10]",
+      "word_count": 5,
+      "russian": "Блаженны изгнанные за правду, ибо их есть Царство Небесное.",
+      "greek": "Μακάριοι οἱ δεδιωγμένοι ἕνεκεν δικαιοσύνης· ὅτι αὐτῶν ἐστιν ἡ βασιλεία τῶν οὐρανῶν.",
+      "latin": "Beati qui persecutionem patiuntur propter justitiam: quoniam ipsorum est regnum cælorum."
+    },
+    "11": {
+      "verse_number": 11,
+      "sort_number": 11,
+      "text": "[MATHE 5:11]",
+      "word_count": 5,
+      "russian": "Блаженны вы, когда будут поносить вас и гнать и всячески неправедно злословить за Меня.",
+      "greek": "Μακάριοί ἐστε, ὅταν ὀνειδίσωσιν ὑμᾶς καὶ διώξωσιν, καὶ εἴπωσιν πᾶν πονηρὸν ῥῆμα καθ’ ὑμῶν ψευδόμενοι, ἕνεκεν ἐμοῦ.",
+      "latin": "Beati estis cum maledixerint vobis, et persecuti vos fuerint, et dixerint omne malum adversum vos mentientes, propter me:"
+    },
+    "12": {
+      "verse_number": 12,
+      "sort_number": 12,
+      "text": "[MATHE 5:12]",
+      "word_count": 5,
+      "russian": "Радуйтесь и веселитесь, ибо велика ваша награда на небесах: так гнали и пророков, бывших прежде вас.",
+      "greek": "Χαίρετε καὶ ἀγαλλιᾶσθε, ὅτι ὁ μισθὸς ὑμῶν πολὺς ἐν τοῖς οὐρανοῖς· οὕτως γὰρ ἐδίωξαν τοὺς προφήτας τοὺς πρὸ ὑμῶν.",
+      "latin": "gaudete, et exsultate, quoniam merces vestra copiosa est in cælis. Sic enim persecuti sunt prophetas, qui fuerunt ante vos."
+    },
+    "13": {
+      "verse_number": 13,
+      "sort_number": 13,
+      "text": "[MATHE 5:13]",
+      "word_count": 5,
+      "russian": "Вы -- соль земли. Если же соль потеряет силу, то чем сделаешь ее соленою? Она уже ни к чему негодна, как разве выбросить ее вон на попрание людям.",
+      "greek": "Ὑμεῖς ἐστε τὸ ἅλας τῆς γῆς· ἐὰν δὲ τὸ ἅλας μωρανθῇ, ἐν τίνι ἁλισθήσεται; Εἰς οὐδὲν ἰσχύει ἔτι, εἰ μὴ βληθῆναι ἔξω καὶ καταπατεῖσθαι ὑπὸ τῶν ἀνθρώπων.",
+      "latin": "Vos estis sal terræ. Quod si sal evanuerit, in quo salietur ? ad nihilum valet ultra, nisi ut mittatur foras, et conculcetur ab hominibus."
+    },
+    "14": {
+      "verse_number": 14,
+      "sort_number": 14,
+      "text": "[MATHE 5:14]",
+      "word_count": 5,
+      "russian": "Вы -- свет мира. Не может укрыться город, стоящий на верху горы.",
+      "greek": "Ὑμεῖς ἐστε τὸ φῶς τοῦ κόσμου· οὐ δύναται πόλις κρυβῆναι ἐπάνω ὄρους κειμένη·",
+      "latin": "Vos estis lux mundi. Non potest civitas abscondi supra montem posita,"
+    },
+    "15": {
+      "verse_number": 15,
+      "sort_number": 15,
+      "text": "[MATHE 5:15]",
+      "word_count": 5,
+      "russian": "И, зажегши свечу, не ставят ее под сосудом, но на подсвечнике, и светит всем в доме.",
+      "greek": "οὐδὲ καίουσιν λύχνον καὶ τιθέασιν αὐτὸν ὑπὸ τὸν μόδιον, ἀλλ’ ἐπὶ τὴν λυχνίαν, καὶ λάμπει πᾶσιν τοῖς ἐν τῇ οἰκίᾳ.",
+      "latin": "neque accendunt lucernam, et ponunt eam sub modio, sed super candelabrum, ut luceat omnibus qui in domo sunt."
+    },
+    "16": {
+      "verse_number": 16,
+      "sort_number": 16,
+      "text": "[MATHE 5:16]",
+      "word_count": 5,
+      "russian": "Так да светит свет ваш пред людьми, чтобы они видели ваши добрые дела и прославляли Отца вашего Небесного.",
+      "greek": "Οὕτως λαμψάτω τὸ φῶς ὑμῶν ἔμπροσθεν τῶν ἀνθρώπων, ὅπως ἴδωσιν ὑμῶν τὰ καλὰ ἔργα, καὶ δοξάσωσιν τὸν πατέρα ὑμῶν τὸν ἐν τοῖς οὐρανοῖς.",
+      "latin": "Sic luceat lux vestra coram hominibus: ut videant opera vestra bona, et glorificent Patrem vestrum, qui in cælis est."
+    },
+    "17": {
+      "verse_number": 17,
+      "sort_number": 17,
+      "text": "[MATHE 5:17]",
+      "word_count": 5,
+      "russian": "Не думайте, что Я пришел нарушить закон или пророков: не нарушить пришел Я, но исполнить.",
+      "greek": "Μὴ νομίσητε ὅτι ἦλθον καταλῦσαι τὸν νόμον ἢ τοὺς προφήτας· οὐκ ἦλθον καταλῦσαι ἀλλὰ πληρῶσαι.",
+      "latin": "Nolite putare quoniam veni solvere legem aut prophetas: non veni solvere, sed adimplere."
+    },
+    "18": {
+      "verse_number": 18,
+      "sort_number": 18,
+      "text": "[MATHE 5:18]",
+      "word_count": 5,
+      "russian": "Ибо истинно говорю вам: доколе не прейдет небо и земля, ни одна иота или ни одна черта не прейдет из закона, пока не исполнится все.",
+      "greek": "Ἀμὴν γὰρ λέγω ὑμῖν, ἕως ἂν παρέλθῃ ὁ οὐρανὸς καὶ ἡ γῆ, ἰῶτα ἓν ἢ μία κεραία οὐ μὴ παρέλθῃ ἀπὸ τοῦ νόμου, ἕως ἂν πάντα γένηται.",
+      "latin": "Amen quippe dico vobis, donec transeat cælum et terra, jota unum aut unus apex non præteribit a lege, donec omnia fiant."
+    },
+    "19": {
+      "verse_number": 19,
+      "sort_number": 19,
+      "text": "[MATHE 5:19]",
+      "word_count": 5,
+      "russian": "Итак, кто нарушит одну из заповедей сих малейших и научит так людей, тот малейшим наречется в Царстве Небесном; а кто сотворит и научит, тот великим наречется в Царстве Небесном.",
+      "greek": "Ὃς ἐὰν οὖν λύσῃ μίαν τῶν ἐντολῶν τούτων τῶν ἐλαχίστων, καὶ διδάξῃ οὕτως τοὺς ἀνθρώπους, ἐλάχιστος κληθήσεται ἐν τῇ βασιλείᾳ τῶν οὐρανῶν· ὃς δ’ ἂν ποιήσῃ καὶ διδάξῃ, οὗτος μέγας κληθήσεται ἐν τῇ βασιλείᾳ τῶν οὐρανῶν.",
+      "latin": "Qui ergo solverit unum de mandatis istis minimis, et docuerit sic homines, minimus vocabitur in regno cælorum: qui autem fecerit et docuerit, hic magnus vocabitur in regno cælorum."
+    },
+    "20": {
+      "verse_number": 20,
+      "sort_number": 20,
+      "text": "[MATHE 5:20]",
+      "word_count": 5,
+      "russian": "Ибо, говорю вам, если праведность ваша не превзойдет праведности книжников и фарисеев, то вы не войдете в Царство Небесное.",
+      "greek": "Λέγω γὰρ ὑμῖν ὅτι ἐὰν μὴ περισσεύσῃ ἡ δικαιοσύνη ὑμῶν πλεῖον τῶν γραμματέων καὶ Φαρισαίων, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν.",
+      "latin": "Dico enim vobis, quia nisi abundaverit justitia vestra plus quam scribarum et pharisæorum, non intrabitis in regnum cælorum."
+    },
+    "21": {
+      "verse_number": 21,
+      "sort_number": 21,
+      "text": "[MATHE 5:21]",
+      "word_count": 5,
+      "russian": "Вы слышали, что сказано древним: не убивай, кто же убьет, подлежит суду.",
+      "greek": "Ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις, Οὐ φονεύσεις· ὃς δ’ ἂν φονεύσῃ, ἔνοχος ἔσται τῇ κρίσει·",
+      "latin": "Audistis quia dictum est antiquis: Non occides: qui autem occiderit, reus erit judicio."
+    },
+    "22": {
+      "verse_number": 22,
+      "sort_number": 22,
+      "text": "[MATHE 5:22]",
+      "word_count": 5,
+      "russian": "А Я говорю вам, что всякий, гневающийся на брата своего напрасно, подлежит суду; кто же скажет брату своему: \"рака\", подлежит синедриону; а кто скажет: \"безумный\", подлежит геенне огненной.",
+      "greek": "ἐγὼ δὲ λέγω ὑμῖν ὅτι πᾶς ὁ ὀργιζόμενος τῷ ἀδελφῷ αὐτοῦ εἰκῇ ἔνοχος ἔσται τῇ κρίσει· ὃς δ’ ἂν εἴπῃ τῷ ἀδελφῷ αὐτοῦ, Ῥακά, ἔνοχος ἔσται τῷ συνεδρίῳ· ὃς δ’ ἂν εἴπῃ, Μωρέ, ἔνοχος ἔσται εἰς τὴν γέενναν τοῦ πυρός.",
+      "latin": "Ego autem dico vobis: quia omnis qui irascitur fratri suo, reus erit judicio. Qui autem dixerit fratri suo, raca: reus erit concilio. Qui autem dixerit, fatue: reus erit gehennæ ignis."
+    },
+    "23": {
+      "verse_number": 23,
+      "sort_number": 23,
+      "text": "[MATHE 5:23]",
+      "word_count": 5,
+      "russian": "Итак, если ты принесешь дар твой к жертвеннику и там вспомнишь, что брат твой имеет что-нибудь против тебя,",
+      "greek": "Ἐὰν οὖν προσφέρῃς τὸ δῶρόν σου ἐπὶ τὸ θυσιαστήριον, καὶ ἐκεῖ μνησθῇς ὅτι ὁ ἀδελφός σου ἔχει τι κατὰ σοῦ,",
+      "latin": "Si ergo offers munus tuum ad altare, et ibi recordatus fueris quia frater tuus habet aliquid adversum te:"
+    },
+    "24": {
+      "verse_number": 24,
+      "sort_number": 24,
+      "text": "[MATHE 5:24]",
+      "word_count": 5,
+      "russian": "оставь там дар твой пред жертвенником, и пойди прежде примирись с братом твоим, и тогда приди и принеси дар твой.",
+      "greek": "ἄφες ἐκεῖ τὸ δῶρόν σου ἔμπροσθεν τοῦ θυσιαστηρίου, καὶ ὕπαγε, πρῶτον διαλλάγηθι τῷ ἀδελφῷ σου, καὶ τότε ἐλθὼν πρόσφερε τὸ δῶρόν σου.",
+      "latin": "relinque ibi munus tuum ante altare, et vade prius reconciliari fratri tuo: et tunc veniens offeres munus tuum."
+    },
+    "25": {
+      "verse_number": 25,
+      "sort_number": 25,
+      "text": "[MATHE 5:25]",
+      "word_count": 5,
+      "russian": "Мирись с соперником твоим скорее, пока ты еще на пути с ним, чтобы соперник не отдал тебя судье, а судья не отдал бы тебя слуге, и не ввергли бы тебя в темницу;",
+      "greek": "Ἴσθι εὐνοῶν τῷ ἀντιδίκῳ σου ταχύ, ἕως ὅτου εἶ ἐν τῇ ὁδῷ μετ’ αὐτοῦ, μήποτέ σε παραδῷ ὁ ἀντίδικος τῷ κριτῇ, καὶ ὁ κριτής σε παραδῷ τῷ ὑπηρέτῃ, καὶ εἰς φυλακὴν βληθήσῃ.",
+      "latin": "Esto consentiens adversario tuo cito dum es in via cum eo: ne forte tradat te adversarius judici, et judex tradat te ministro: et in carcerem mittaris."
+    },
+    "26": {
+      "verse_number": 26,
+      "sort_number": 26,
+      "text": "[MATHE 5:26]",
+      "word_count": 5,
+      "russian": "истинно говорю тебе: ты не выйдешь оттуда, пока не отдашь до последнего кодранта.",
+      "greek": "Ἀμὴν λέγω σοι, οὐ μὴ ἐξέλθῃς ἐκεῖθεν, ἕως ἂν ἀποδῷς τὸν ἔσχατον κοδράντην.",
+      "latin": "Amen dico tibi, non exies inde, donec reddas novissimum quadrantem."
+    },
+    "27": {
+      "verse_number": 27,
+      "sort_number": 27,
+      "text": "[MATHE 5:27]",
+      "word_count": 5,
+      "russian": "Вы слышали, что сказано древним: не прелюбодействуй.",
+      "greek": "Ἠκούσατε ὅτι ἐρρέθη, Οὐ μοιχεύσεις·",
+      "latin": "Audistis quia dictum est antiquis: Non mchaberis."
+    },
+    "28": {
+      "verse_number": 28,
+      "sort_number": 28,
+      "text": "[MATHE 5:28]",
+      "word_count": 5,
+      "russian": "А Я говорю вам, что всякий, кто смотрит на женщину с вожделением, уже прелюбодействовал с нею в сердце своем.",
+      "greek": "ἐγὼ δὲ λέγω ὑμῖν ὅτι πᾶς ὁ βλέπων γυναῖκα πρὸς τὸ ἐπιθυμῆσαι αὐτὴν ἤδη ἐμοίχευσεν αὐτὴν ἐν τῇ καρδίᾳ αὐτοῦ.",
+      "latin": "Ego autem dico vobis: quia omnis qui viderit mulierem ad concupiscendum eam, jam mchatus est eam in corde suo."
+    },
+    "29": {
+      "verse_number": 29,
+      "sort_number": 29,
+      "text": "[MATHE 5:29]",
+      "word_count": 5,
+      "russian": "Если же правый глаз твой соблазняет тебя, вырви его и брось от себя, ибо лучше для тебя, чтобы погиб один из членов твоих, а не все тело твое было ввержено в геенну.",
+      "greek": "Εἰ δὲ ὁ ὀφθαλμός σου ὁ δεξιὸς σκανδαλίζει σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ σοῦ· συμφέρει γάρ σοι ἵνα ἀπόληται ἓν τῶν μελῶν σου, καὶ μὴ ὅλον τὸ σῶμά σου βληθῇ εἰς γέενναν.",
+      "latin": "Quod si oculus tuus dexter scandalizat te, erue eum, et projice abs te: expedit enim tibi ut pereat unum membrorum tuorum, quam totum corpus tuum mittatur in gehennam."
+    },
+    "30": {
+      "verse_number": 30,
+      "sort_number": 30,
+      "text": "[MATHE 5:30]",
+      "word_count": 5,
+      "russian": "И если правая твоя рука соблазняет тебя, отсеки ее и брось от себя, ибо лучше для тебя, чтобы погиб один из членов твоих, а не все тело твое было ввержено в геенну.",
+      "greek": "Καὶ εἰ ἡ δεξιά σου χεὶρ σκανδαλίζει σε, ἔκκοψον αὐτὴν καὶ βάλε ἀπὸ σοῦ· συμφέρει γάρ σοι ἵνα ἀπόληται ἓν τῶν μελῶν σου, καὶ μὴ ὅλον τὸ σῶμά σου βληθῇ εἰς γέενναν.",
+      "latin": "Et si dextra manus tua scandalizat te, abscide eam, et projice abs te: expedit enim tibi ut pereat unum membrorum tuorum, quam totum corpus tuum eat in gehennam."
+    },
+    "31": {
+      "verse_number": 31,
+      "sort_number": 31,
+      "text": "[MATHE 5:31]",
+      "word_count": 5,
+      "russian": "Сказано также, что если кто разведется с женою своею, пусть даст ей разводную.",
+      "greek": "Ἐρρέθη δὲ ὅτι Ὃς ἂν ἀπολύσῃ τὴν γυναῖκα αὐτοῦ, δότω αὐτῇ ἀποστάσιον·",
+      "latin": "Dictum est autem: Quicumque dimiserit uxorem suam, det ei libellum repudii."
+    },
+    "32": {
+      "verse_number": 32,
+      "sort_number": 32,
+      "text": "[MATHE 5:32]",
+      "word_count": 5,
+      "russian": "А Я говорю вам: кто разводится с женою своею, кроме вины прелюбодеяния, тот подает ей повод прелюбодействовать; и кто женится на разведенной, тот прелюбодействует.",
+      "greek": "ἐγὼ δὲ λέγω ὑμῖν ὅτι ὃς ἂν ἀπολύσῃ τὴν γυναῖκα αὐτοῦ, παρεκτὸς λόγου πορνείας, ποιεῖ αὐτὴν μοιχᾶσθαι· καὶ ὃς ἐὰν ἀπολελυμένην γαμήσῃ μοιχᾶται.",
+      "latin": "Ego autem dico vobis: quia omnis qui dimiserit uxorem suam, excepta fornicationis causa, facit eam mchari: et qui dimissam duxerit, adulterat."
+    },
+    "33": {
+      "verse_number": 33,
+      "sort_number": 33,
+      "text": "[MATHE 5:33]",
+      "word_count": 5,
+      "russian": "Еще слышали вы, что сказано древним: не преступай клятвы, но исполняй пред Господом клятвы твои.",
+      "greek": "Πάλιν ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις, Οὐκ ἐπιορκήσεις, ἀποδώσεις δὲ τῷ κυρίῳ τοὺς ὅρκους σου·",
+      "latin": "Iterum audistis quia dictum est antiquis: Non perjurabis: reddes autem Domino juramenta tua."
+    },
+    "34": {
+      "verse_number": 34,
+      "sort_number": 34,
+      "text": "[MATHE 5:34]",
+      "word_count": 5,
+      "russian": "А Я говорю вам: не клянись вовсе: ни небом, потому что оно престол Божий;",
+      "greek": "ἐγὼ δὲ λέγω ὑμῖν μὴ ὀμόσαι ὅλως· μήτε ἐν τῷ οὐρανῷ, ὅτι θρόνος ἐστὶν τοῦ θεοῦ·",
+      "latin": "Ego autem dico vobis, non jurare omnino, neque per cælum, quia thronus Dei est:"
+    },
+    "35": {
+      "verse_number": 35,
+      "sort_number": 35,
+      "text": "[MATHE 5:35]",
+      "word_count": 5,
+      "russian": "ни землею, потому что она подножие ног Его; ни Иерусалимом, потому что он город великого Царя;",
+      "greek": "μήτε ἐν τῇ γῇ, ὅτι ὑποπόδιόν ἐστιν τῶν ποδῶν αὐτοῦ· μήτε εἰς Ἱεροσόλυμα, ὅτι πόλις ἐστὶν τοῦ μεγάλου βασιλέως·",
+      "latin": "neque per terram, quia scabellum est pedum ejus: neque per Jerosolymam, quia civitas est magni regis:"
+    },
+    "36": {
+      "verse_number": 36,
+      "sort_number": 36,
+      "text": "[MATHE 5:36]",
+      "word_count": 5,
+      "russian": "ни головою твоею не клянись, потому что не можешь ни одного волоса сделать белым или черным.",
+      "greek": "μήτε ἐν τῇ κεφαλῇ σου ὀμόσῃς, ὅτι οὐ δύνασαι μίαν τρίχα λευκὴν ἢ μέλαιναν ποιῆσαι.",
+      "latin": "neque per caput tuum juraveris, quia non potes unum capillum album facere, aut nigrum."
+    },
+    "37": {
+      "verse_number": 37,
+      "sort_number": 37,
+      "text": "[MATHE 5:37]",
+      "word_count": 5,
+      "russian": "Но да будет слово ваше: да, да; нет, нет; а что сверх этого, то от лукавого.",
+      "greek": "Ἔστω δὲ ὁ λόγος ὑμῶν, ναὶ ναί, οὒ οὔ· τὸ δὲ περισσὸν τούτων ἐκ τοῦ πονηροῦ ἐστιν.",
+      "latin": "Sit autem sermo vester, est, est: non, non: quod autem his abundantius est, a malo est."
+    },
+    "38": {
+      "verse_number": 38,
+      "sort_number": 38,
+      "text": "[MATHE 5:38]",
+      "word_count": 5,
+      "russian": "Вы слышали, что сказано: око за око и зуб за зуб.",
+      "greek": "Ἠκούσατε ὅτι ἐρρέθη, Ὀφθαλμὸν ἀντὶ ὀφθαλμοῦ, καὶ ὀδόντα ἀντὶ ὀδόντος·",
+      "latin": "Audistis quia dictum est: Oculum pro oculo, et dentem pro dente."
+    },
+    "39": {
+      "verse_number": 39,
+      "sort_number": 39,
+      "text": "[MATHE 5:39]",
+      "word_count": 5,
+      "russian": "А Я говорю вам: не противься злому. Но кто ударит тебя в правую щеку твою, обрати к нему и другую;",
+      "greek": "ἐγὼ δὲ λέγω ὑμῖν μὴ ἀντιστῆναι τῷ πονηρῷ· ἀλλ’ ὅστις σε ῥαπίσει ἐπὶ τὴν δεξιὰν σιαγόνα, στρέψον αὐτῷ καὶ τὴν ἄλλην·",
+      "latin": "Ego autem dico vobis, non resistere malo: sed si quis te percusserit in dexteram maxillam tuam, præbe illi et alteram:"
+    },
+    "40": {
+      "verse_number": 40,
+      "sort_number": 40,
+      "text": "[MATHE 5:40]",
+      "word_count": 5,
+      "russian": "и кто захочет судиться с тобою и взять у тебя рубашку, отдай ему и верхнюю одежду;",
+      "greek": "καὶ τῷ θέλοντί σοι κριθῆναι καὶ τὸν χιτῶνά σου λαβεῖν, ἄφες αὐτῷ καὶ τὸ ἱμάτιον·",
+      "latin": "et ei, qui vult tecum judicio contendere, et tunicam tuam tollere, dimitte ei et pallium:"
+    },
+    "41": {
+      "verse_number": 41,
+      "sort_number": 41,
+      "text": "[MATHE 5:41]",
+      "word_count": 5,
+      "russian": "и кто принудит тебя идти с ним одно поприще, иди с ним два.",
+      "greek": "καὶ ὅστις σε ἀγγαρεύσει μίλιον ἕν, ὕπαγε μετ’ αὐτοῦ δύο.",
+      "latin": "et quicumque te angariaverit mille passus, vade cum illo et alia duo."
+    },
+    "42": {
+      "verse_number": 42,
+      "sort_number": 42,
+      "text": "[MATHE 5:42]",
+      "word_count": 5,
+      "russian": "Просящему у тебя дай, и от хотящего занять у тебя не отвращайся.",
+      "greek": "Τῷ αἰτοῦντί σε δίδου· καὶ τὸν θέλοντα ἀπὸ σοῦ δανείσασθαι μὴ ἀποστραφῇς.",
+      "latin": "Qui petit a te, da ei: et volenti mutuari a te, ne avertaris."
+    },
+    "43": {
+      "verse_number": 43,
+      "sort_number": 43,
+      "text": "[MATHE 5:43]",
+      "word_count": 5,
+      "russian": "Вы слышали, что сказано: люби ближнего твоего и ненавидь врага твоего.",
+      "greek": "Ἠκούσατε ὅτι ἐρρέθη, Ἀγαπήσεις τὸν πλησίον σου, καὶ μισήσεις τὸν ἐχθρόν σου·",
+      "latin": "Audistis quia dictum est: Diliges proximum tuum, et odio habebis inimicum tuum."
+    },
+    "44": {
+      "verse_number": 44,
+      "sort_number": 44,
+      "text": "[MATHE 5:44]",
+      "word_count": 5,
+      "russian": "А Я говорю вам: любите врагов ваших, благословляйте проклинающих вас, благотворите ненавидящим вас и молитесь за обижающих вас и гонящих вас,",
+      "greek": "ἐγὼ δὲ λέγω ὑμῖν, Ἀγαπᾶτε τοὺς ἐχθροὺς ὑμῶν, εὐλογεῖτε τοὺς καταρωμένους ὑμᾶς, καλῶς ποιεῖτε τοῖς μισοῦσιν ὑμᾶς, καὶ προσεύχεσθε ὑπὲρ τῶν ἐπηρεαζόντων ὑμᾶς, καὶ διωκόντων ὑμᾶς·",
+      "latin": "Ego autem dico vobis: diligite inimicos vestros, benefacite his qui oderunt vos, et orate pro persequentibus et calumniantibus vos:"
+    },
+    "45": {
+      "verse_number": 45,
+      "sort_number": 45,
+      "text": "[MATHE 5:45]",
+      "word_count": 5,
+      "russian": "да будете сынами Отца вашего Небесного, ибо Он повелевает солнцу Своему восходить над злыми и добрыми и посылает дождь на праведных и неправедных.",
+      "greek": "ὅπως γένησθε υἱοὶ τοῦ πατρὸς ὑμῶν τοῦ ἐν τοῖς οὐρανοῖς, ὅτι τὸν ἥλιον αὐτοῦ ἀνατέλλει ἐπὶ πονηροὺς καὶ ἀγαθούς, καὶ βρέχει ἐπὶ δικαίους καὶ ἀδίκους.",
+      "latin": "ut sitis filii Patris vestri, qui in cælis est: qui solem suum oriri facit super bonos et malos: et pluit super justos et injustos."
+    },
+    "46": {
+      "verse_number": 46,
+      "sort_number": 46,
+      "text": "[MATHE 5:46]",
+      "word_count": 5,
+      "russian": "Ибо если вы будете любить любящих вас, какая вам награда? Не то же ли делают и мытари?",
+      "greek": "Ἐὰν γὰρ ἀγαπήσητε τοὺς ἀγαπῶντας ὑμᾶς, τίνα μισθὸν ἔχετε; Οὐχὶ καὶ οἱ τελῶναι τὸ αὐτὸ ποιοῦσιν;",
+      "latin": "Si enim diligitis eos qui vos diligunt, quam mercedem habebitis ? nonne et publicani hoc faciunt ?"
+    },
+    "47": {
+      "verse_number": 47,
+      "sort_number": 47,
+      "text": "[MATHE 5:47]",
+      "word_count": 5,
+      "russian": "И если вы приветствуете только братьев ваших, что особенного делаете? Не так же ли поступают и язычники?",
+      "greek": "Καὶ ἐὰν ἀσπάσησθε τοὺς φίλους ὑμῶν μόνον, τί περισσὸν ποιεῖτε; Οὐχὶ καὶ οἱ τελῶναι οὕτως ποιοῦσιν;",
+      "latin": "Et si salutaveritis fratres vestros tantum, quid amplius facitis ? nonne et ethnici hoc faciunt ?"
+    },
+    "48": {
+      "verse_number": 48,
+      "sort_number": 48,
+      "text": "[MATHE 5:48]",
+      "word_count": 5,
+      "russian": "Итак будьте совершенны, как совершен Отец ваш Небесный.",
+      "greek": "Ἔσεσθε οὖν ὑμεῖς τέλειοι, ὥσπερ ὁ πατὴρ ὑμῶν ὁ ἐν τοῖς οὐρανοῖς τέλειός ἐστιν.",
+      "latin": "Estote ergo vos perfecti, sicut et Pater vester cælestis perfectus est."
+    }
+  }
+}

@@ -205,7 +205,11 @@ wheel/
 ├── data/                   # Split volume data (lazy-loaded)
 │   └── gutenberg/          # Gutenberg Bible
 │       ├── manifest.json   # Volume metadata + book index
-│       └── books/          # Individual book files (67)
+│       ├── translations.json # Versification metadata
+│       └── chapters/       # Per-chapter files (1,215 across 67 books)
+│           ├── GENE/       # Genesis (50 chapters)
+│           ├── PSAL/       # Psalms (150 chapters)
+│           └── .../        # Other books
 ├── desktop/                # Desktop version (legacy)
 ├── assets/                 # Images, audio, etc.
 ├── mmdm_catalog.json       # Marine catalog data

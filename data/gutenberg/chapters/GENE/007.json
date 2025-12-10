@@ -1,253 +1,375 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "GENE_007",
-  "chapter_key": "7",
-  "chapter_number": 7,
-  "sort_number": 7,
-  "name": "7",
   "book_key": "GENE",
+  "sequence": 7,
+  "chapter_in": {
+    "MT": 7,
+    "VUL": 7,
+    "LXX": 7
+  },
   "testament": "Vetus_Testamentum",
   "section": "Pentateuchus",
-  "verse_count": 24,
   "verses": {
     "1": {
-      "sort_number": 1,
-      "name": "1",
-      "latin": "Dixitque Dominus ad eum: Ingredere tu et omnis domus tua in arcam: te enim vidi justum coram me in generatione hac.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֤אמֶר יְהוָה֙ לְנֹ֔חַ בֹּֽא אַתָּ֥ה וְכָל בֵּיתְךָ֖ אֶל הַתֵּבָ֑ה כִּֽי אֹתְךָ֥ רָאִ֛יתִי צַדִּ֥יק לְפָנַ֖י בַּדּ֥וֹר הַזֶּֽה׃",
-      "russian": "И сказал Господь [Бог] Ною: войди ты и все семейство твое в ковчег, ибо тебя увидел Я праведным предо Мною в роде сем;",
-      "greek": "⸂⸆⸃ Καὶ εἶπεν Κύριος ὁ θεὸς πρὸς Νῶε Εἴσελθε σὺ καὶ πᾶς ὁ οἶκός σου εἰς τὴν κιβωτόν, ὅτι σὲ ἴδον δίκαιον ἐναντίον μου ἐν τῇ γενεᾷ ταύτῃ.",
-      "english": "Then the LORD said to Noah: \"Go into the ark, you and all your household, for you alone in this age have I found to be truly just."
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַיֹּ֤אמֶר יְהוָה֙ לְנֹ֔חַ בֹּֽא אַתָּ֥ה וְכָל בֵּיתְךָ֖ אֶל הַתֵּבָ֑ה כִּֽי אֹתְךָ֥ רָאִ֛יתִי צַדִּ֥יק לְפָנַ֖י בַּדּ֥וֹר הַזֶּֽה׃",
+        "VUL": "Dixitque Dominus ad eum: Ingredere tu et omnis domus tua in arcam: te enim vidi justum coram me in generatione hac.",
+        "LXX": "⸂⸆⸃ Καὶ εἶπεν Κύριος ὁ θεὸς πρὸς Νῶε Εἴσελθε σὺ καὶ πᾶς ὁ οἶκός σου εἰς τὴν κιβωτόν, ὅτι σὲ ἴδον δίκαιον ἐναντίον μου ἐν τῇ γενεᾷ ταύτῃ.",
+        "NAB": "Then the LORD said to Noah: \"Go into the ark, you and all your household, for you alone in this age have I found to be truly just.",
+        "SYN": "И сказал Господь [Бог] Ною: войди ты и все семейство твое в ковчег, ибо тебя увидел Я праведным предо Мною в роде сем;"
+      }
     },
     "2": {
-      "sort_number": 2,
-      "name": "2",
-      "latin": "Ex omnibus animantibus mundis tolle septena et septena, masculum et feminam: de animantibus vero immundis duo et duo, masculum et feminam.",
-      "word_count": 0,
-      "hebrew": "מִכֹּ֣ל הַבְּהֵמָ֣ה הַטְּהוֹרָ֗ה תִּֽקַּח לְךָ֛ שִׁבְעָ֥ה שִׁבְעָ֖ה אִ֣ישׁ וְאִשְׁתּ֑וֹ וּמִן הַבְּהֵמָ֡ה אֲ֠שֶׁר לֹ֣א טְהֹרָ֥ה הִ֛וא שְׁנַ֖יִם אִ֥ישׁ וְאִשְׁתּֽוֹ׃",
-      "russian": "и всякого скота чистого возьми по семи, мужеского пола и женского, а из скота нечистого по два, мужеского пола и женского;",
-      "greek": "ἀπὸ δὲ τῶν κτηνῶν τῶν καθαρῶν εἰσάγαγε πρὸς σὲ ἑπτὰ ἑπτὰ ἄρσεν καὶ θῆλυ, ἀπὸ δὲ τῶν κτηνῶν τῶν μὴ καθαρῶν δύο δύο ἄρσεν καὶ θῆλυ·",
-      "english": "Of every clean animal, take with you seven pairs, a male and its mate; and of the unclean animals, one pair, a male and its mate;"
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "מִכֹּ֣ל הַבְּהֵמָ֣ה הַטְּהוֹרָ֗ה תִּֽקַּח לְךָ֛ שִׁבְעָ֥ה שִׁבְעָ֖ה אִ֣ישׁ וְאִשְׁתּ֑וֹ וּמִן הַבְּהֵמָ֡ה אֲ֠שֶׁר לֹ֣א טְהֹרָ֥ה הִ֛וא שְׁנַ֖יִם אִ֥ישׁ וְאִשְׁתּֽוֹ׃",
+        "VUL": "Ex omnibus animantibus mundis tolle septena et septena, masculum et feminam: de animantibus vero immundis duo et duo, masculum et feminam.",
+        "LXX": "ἀπὸ δὲ τῶν κτηνῶν τῶν καθαρῶν εἰσάγαγε πρὸς σὲ ἑπτὰ ἑπτὰ ἄρσεν καὶ θῆλυ, ἀπὸ δὲ τῶν κτηνῶν τῶν μὴ καθαρῶν δύο δύο ἄρσεν καὶ θῆλυ·",
+        "NAB": "Of every clean animal, take with you seven pairs, a male and its mate; and of the unclean animals, one pair, a male and its mate;",
+        "SYN": "и всякого скота чистого возьми по семи, мужеского пола и женского, а из скота нечистого по два, мужеского пола и женского;"
+      }
     },
     "3": {
-      "sort_number": 3,
-      "name": "3",
-      "latin": "Sed et de volatilibus cæli septena et septena, masculum et feminam: ut salvetur semen super faciem universæ terræ.",
-      "word_count": 0,
-      "hebrew": "גַּ֣ם מֵע֧וֹף הַשָּׁמַ֛יִם שִׁבְעָ֥ה שִׁבְעָ֖ה זָכָ֣ר וּנְקֵבָ֑ה לְחַיּ֥וֹת זֶ֖רַע עַל פְּנֵ֥י כָל הָאָֽרֶץ׃",
-      "russian": "также и из птиц небесных [чистых] по семи, мужеского пола и женского, [и из всех птиц нечистых по две, мужеского пола и женского,] чтобы сохранить племя для всей земли,",
-      "greek": "καὶ ἀπὸ τῶν πετεινῶν τοῦ οὐρανοῦ τῶν καθαρῶν ἑπτὰ ἑπτὰ ἄρσεν καὶ θῆλυ, καὶ ἀπὸ πάντων τῶν πετεινῶν τῶν μὴ καθαρῶν δύο δύο ἄρσεν καὶ θῆλυ, διαθρέψαι σπέρμα ἐπὶ πᾶσαν τὴν γῆν.",
-      "english": "likewise, of every clean bird of the air, seven pairs, a male and a female, and of all the unclean birds, one pair, a male and a female. Thus you will keep their issue alive over all the earth."
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "גַּ֣ם מֵע֧וֹף הַשָּׁמַ֛יִם שִׁבְעָ֥ה שִׁבְעָ֖ה זָכָ֣ר וּנְקֵבָ֑ה לְחַיּ֥וֹת זֶ֖רַע עַל פְּנֵ֥י כָל הָאָֽרֶץ׃",
+        "VUL": "Sed et de volatilibus cæli septena et septena, masculum et feminam: ut salvetur semen super faciem universæ terræ.",
+        "LXX": "καὶ ἀπὸ τῶν πετεινῶν τοῦ οὐρανοῦ τῶν καθαρῶν ἑπτὰ ἑπτὰ ἄρσεν καὶ θῆλυ, καὶ ἀπὸ πάντων τῶν πετεινῶν τῶν μὴ καθαρῶν δύο δύο ἄρσεν καὶ θῆλυ, διαθρέψαι σπέρμα ἐπὶ πᾶσαν τὴν γῆν.",
+        "NAB": "likewise, of every clean bird of the air, seven pairs, a male and a female, and of all the unclean birds, one pair, a male and a female. Thus you will keep their issue alive over all the earth.",
+        "SYN": "также и из птиц небесных [чистых] по семи, мужеского пола и женского, [и из всех птиц нечистых по две, мужеского пола и женского,] чтобы сохранить племя для всей земли,"
+      }
     },
     "4": {
-      "sort_number": 4,
-      "name": "4",
-      "latin": "Adhuc enim, et post dies septem ego pluam super terram quadraginta diebus et quadraginta noctibus: et delebo omnem substantiam, quam feci, de superficie terræ.",
-      "word_count": 0,
-      "hebrew": "כִּי֩ לְיָמִ֨ים ע֜וֹד שִׁבְעָ֗ה אָֽנֹכִי֙ מַמְטִ֣יר עַל הָאָ֔רֶץ אַרְבָּעִ֣ים י֔וֹם וְאַרְבָּעִ֖ים לָ֑יְלָה וּמָחִ֗יתִי אֶֽת כָּל הַיְקוּם֙ אֲשֶׁ֣ר עָשִׂ֔יתִי מֵעַ֖ל פְּנֵ֥י הָֽאֲדָמָֽה׃",
-      "russian": "ибо чрез семь дней Я буду изливать дождь на землю сорок дней и сорок ночей; и истреблю все существующее, что Я создал, с лица земли.",
-      "greek": "ἔτι γὰρ ἡμερῶν ἑπτὰ ἐγὼ ἐπάγω ὑετὸν ἐπὶ τὴν γῆν τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας, καὶ ἐξαλείψω πᾶν τὸ ἀνάστεμα ὃ ἐποίησα ἀπὸ προσώπου τῆς γῆς.",
-      "english": "Seven days from now I will bring rain down on the earth for forty days and forty nights, and so I will wipe out from the surface of the earth every moving creature that I have made.\""
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּי֩ לְיָמִ֨ים ע֜וֹד שִׁבְעָ֗ה אָֽנֹכִי֙ מַמְטִ֣יר עַל הָאָ֔רֶץ אַרְבָּעִ֣ים י֔וֹם וְאַרְבָּעִ֖ים לָ֑יְלָה וּמָחִ֗יתִי אֶֽת כָּל הַיְקוּם֙ אֲשֶׁ֣ר עָשִׂ֔יתִי מֵעַ֖ל פְּנֵ֥י הָֽאֲדָמָֽה׃",
+        "VUL": "Adhuc enim, et post dies septem ego pluam super terram quadraginta diebus et quadraginta noctibus: et delebo omnem substantiam, quam feci, de superficie terræ.",
+        "LXX": "ἔτι γὰρ ἡμερῶν ἑπτὰ ἐγὼ ἐπάγω ὑετὸν ἐπὶ τὴν γῆν τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας, καὶ ἐξαλείψω πᾶν τὸ ἀνάστεμα ὃ ἐποίησα ἀπὸ προσώπου τῆς γῆς.",
+        "NAB": "Seven days from now I will bring rain down on the earth for forty days and forty nights, and so I will wipe out from the surface of the earth every moving creature that I have made.\"",
+        "SYN": "ибо чрез семь дней Я буду изливать дождь на землю сорок дней и сорок ночей; и истреблю все существующее, что Я создал, с лица земли."
+      }
     },
     "5": {
-      "sort_number": 5,
-      "name": "5",
-      "latin": "Fecit ergo Noë omnia quæ mandaverat ei Dominus.",
-      "word_count": 0,
-      "hebrew": "וַיַּ֖עַשׂ נֹ֑חַ כְּכֹ֥ל אֲשֶׁר צִוָּ֖הוּ יְהוָֽה׃",
-      "russian": "Ной сделал все, что Господь [Бог] повелел ему.",
-      "greek": "καὶ ἐποίησεν Νῶε πάντα ὅσα ἐνετείλατο αὐτῷ Κύριος ὁ θεός. ⸆",
-      "english": "Noah did just as the LORD had commanded him."
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַיַּ֖עַשׂ נֹ֑חַ כְּכֹ֥ל אֲשֶׁר צִוָּ֖הוּ יְהוָֽה׃",
+        "VUL": "Fecit ergo Noë omnia quæ mandaverat ei Dominus.",
+        "LXX": "καὶ ἐποίησεν Νῶε πάντα ὅσα ἐνετείλατο αὐτῷ Κύριος ὁ θεός. ⸆",
+        "NAB": "Noah did just as the LORD had commanded him.",
+        "SYN": "Ной сделал все, что Господь [Бог] повелел ему."
+      }
     },
     "6": {
-      "sort_number": 6,
-      "name": "6",
-      "latin": "Eratque sexcentorum annorum quando diluvii aquæ inundaverunt super terram.",
-      "word_count": 0,
-      "hebrew": "וְנֹ֕חַ בֶּן שֵׁ֥שׁ מֵא֖וֹת שָׁנָ֑ה וְהַמַּבּ֣וּל הָיָ֔ה מַ֖יִם עַל הָאָֽרֶץ׃",
-      "russian": "Ной же был шестисот лет, как потоп водный пришел на землю.",
-      "greek": "Νῶε δὲ ἦν ἐτῶν ἑξακοσίων καὶ ὁ κατακλυσμὸς ἦν ἐπὶ τῆς γῆς.",
-      "english": "Noah was six hundred years old when the flood waters came upon the earth."
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְנֹ֕חַ בֶּן שֵׁ֥שׁ מֵא֖וֹת שָׁנָ֑ה וְהַמַּבּ֣וּל הָיָ֔ה מַ֖יִם עַל הָאָֽרֶץ׃",
+        "VUL": "Eratque sexcentorum annorum quando diluvii aquæ inundaverunt super terram.",
+        "LXX": "Νῶε δὲ ἦν ἐτῶν ἑξακοσίων καὶ ὁ κατακλυσμὸς ἦν ἐπὶ τῆς γῆς.",
+        "NAB": "Noah was six hundred years old when the flood waters came upon the earth.",
+        "SYN": "Ной же был шестисот лет, как потоп водный пришел на землю."
+      }
     },
     "7": {
-      "sort_number": 7,
-      "name": "7",
-      "latin": "Et ingressus est Noë et filii ejus, uxor ejus et uxores filiorum ejus cum eo in arcam propter aquas diluvii.",
-      "word_count": 0,
-      "hebrew": "וַיָּ֣בֹא נֹ֗חַ וּ֠בָנָיו וְאִשְׁתּ֧וֹ וּנְשֵֽׁי בָנָ֛יו אִתּ֖וֹ אֶל הַתֵּבָ֑ה מִפְּנֵ֖י מֵ֥י הַמַּבּֽוּל׃",
-      "russian": "И вошел Ной и сыновья его, и жена его, и жены сынов его с ним в ковчег от вод потопа.",
-      "greek": "εἰσῆλθεν δὲ Νῶε καὶ οἱ υἱοὶ αὐτοῦ καὶ ἡ γυνὴ αὐτοῦ καὶ αἱ γυναῖκες τῶν υἱῶν αὐτοῦ μετ’ αὐτοῦ εἰς τὴν κιβωτὸν διὰ τὸ ὕδωρ τοῦ κατακλυσμοῦ.",
-      "english": "Together with his sons, his wife, and his sons' wives, Noah went into the ark because of the waters of the flood."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַיָּ֣בֹא נֹ֗חַ וּ֠בָנָיו וְאִשְׁתּ֧וֹ וּנְשֵֽׁי בָנָ֛יו אִתּ֖וֹ אֶל הַתֵּבָ֑ה מִפְּנֵ֖י מֵ֥י הַמַּבּֽוּל׃",
+        "VUL": "Et ingressus est Noë et filii ejus, uxor ejus et uxores filiorum ejus cum eo in arcam propter aquas diluvii.",
+        "LXX": "εἰσῆλθεν δὲ Νῶε καὶ οἱ υἱοὶ αὐτοῦ καὶ ἡ γυνὴ αὐτοῦ καὶ αἱ γυναῖκες τῶν υἱῶν αὐτοῦ μετ’ αὐτοῦ εἰς τὴν κιβωτὸν διὰ τὸ ὕδωρ τοῦ κατακλυσμοῦ.",
+        "NAB": "Together with his sons, his wife, and his sons' wives, Noah went into the ark because of the waters of the flood.",
+        "SYN": "И вошел Ной и сыновья его, и жена его, и жены сынов его с ним в ковчег от вод потопа."
+      }
     },
     "8": {
-      "sort_number": 8,
-      "name": "8",
-      "latin": "De animantibus quoque mundis et immundis, et de volucribus, et ex omni quod movetur super terram,",
-      "word_count": 0,
-      "hebrew": "מִן הַבְּהֵמָה֙ הַטְּהוֹרָ֔ה וּמִן הַ֨בְּהֵמָ֔ה אֲשֶׁ֥ר אֵינֶ֖נָּה טְהֹרָ֑ה וּמִ֨ן הָע֔וֹף וְכֹ֥ל אֲשֶׁר רֹמֵ֖שׂ עַל הָֽאֲדָמָֽה׃",
-      "russian": "И [из птиц чистых и из птиц нечистых, и] из скотов чистых и из скотов нечистых, [и из зверей] и из всех пресмыкающихся по земле",
-      "greek": "καὶ ἀπὸ τῶν πετεινῶν καὶ ἀπὸ τῶν ⸂⸆⸃ κτηνῶν τῶν καθαρῶν καὶ ἀπὸ τῶν κτηνῶν τῶν μὴ καθαρῶν καὶ ἀπὸ τῶν πετεινῶν καὶ ἀπὸ πάντων τῶν ἑρπετῶν τῶν ἐπὶ τῆς γῆς",
-      "english": "Of the clean animals and the unclean, of the birds, and of everything that creeps on the ground,"
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "מִן הַבְּהֵמָה֙ הַטְּהוֹרָ֔ה וּמִן הַ֨בְּהֵמָ֔ה אֲשֶׁ֥ר אֵינֶ֖נָּה טְהֹרָ֑ה וּמִ֨ן הָע֔וֹף וְכֹ֥ל אֲשֶׁר רֹמֵ֖שׂ עַל הָֽאֲדָמָֽה׃",
+        "VUL": "De animantibus quoque mundis et immundis, et de volucribus, et ex omni quod movetur super terram,",
+        "LXX": "καὶ ἀπὸ τῶν πετεινῶν καὶ ἀπὸ τῶν ⸂⸆⸃ κτηνῶν τῶν καθαρῶν καὶ ἀπὸ τῶν κτηνῶν τῶν μὴ καθαρῶν καὶ ἀπὸ τῶν πετεινῶν καὶ ἀπὸ πάντων τῶν ἑρπετῶν τῶν ἐπὶ τῆς γῆς",
+        "NAB": "Of the clean animals and the unclean, of the birds, and of everything that creeps on the ground,",
+        "SYN": "И [из птиц чистых и из птиц нечистых, и] из скотов чистых и из скотов нечистых, [и из зверей] и из всех пресмыкающихся по земле"
+      }
     },
     "9": {
-      "sort_number": 9,
-      "name": "9",
-      "latin": "duo et duo ingressa sunt ad Noë in arcam, masculus et femina, sicut præceperat Dominus Noë.",
-      "word_count": 0,
-      "hebrew": "שְׁנַ֨יִם שְׁנַ֜יִם בָּ֧אוּ אֶל נֹ֛חַ אֶל הַתֵּבָ֖ה זָכָ֣ר וּנְקֵבָ֑ה כַּֽאֲשֶׁ֛ר צִוָּ֥ה אֱלֹהִ֖ים אֶת נֹֽחַ׃",
-      "russian": "по паре, мужеского пола и женского, вошли к Ною в ковчег, как [Господь] Бог повелел Ною.",
-      "greek": "δύο δύο εἰσῆλθον πρὸς Νῶε εἰς τὴν κιβωτόν, ἄρσεν καὶ θῆλυ, καθὰ ἐνετείλατο αὐτῷ ὁ θεός.",
-      "english": "(two by two) male and female entered the ark with Noah, just as the LORD had commanded him."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "שְׁנַ֨יִם שְׁנַ֜יִם בָּ֧אוּ אֶל נֹ֛חַ אֶל הַתֵּבָ֖ה זָכָ֣ר וּנְקֵבָ֑ה כַּֽאֲשֶׁ֛ר צִוָּ֥ה אֱלֹהִ֖ים אֶת נֹֽחַ׃",
+        "VUL": "duo et duo ingressa sunt ad Noë in arcam, masculus et femina, sicut præceperat Dominus Noë.",
+        "LXX": "δύο δύο εἰσῆλθον πρὸς Νῶε εἰς τὴν κιβωτόν, ἄρσεν καὶ θῆλυ, καθὰ ἐνετείλατο αὐτῷ ὁ θεός.",
+        "NAB": "(two by two) male and female entered the ark with Noah, just as the LORD had commanded him.",
+        "SYN": "по паре, мужеского пола и женского, вошли к Ною в ковчег, как [Господь] Бог повелел Ною."
+      }
     },
     "10": {
-      "sort_number": 10,
-      "name": "10",
-      "latin": "Cumque transissent septem dies, aquæ diluvii inundaverunt super terram.",
-      "word_count": 0,
-      "hebrew": "וַֽיְהִ֖י לְשִׁבְעַ֣ת הַיָּמִ֑ים וּמֵ֣י הַמַּבּ֔וּל הָי֖וּ עַל הָאָֽרֶץ׃",
-      "russian": "Чрез семь дней воды потопа пришли на землю.",
-      "greek": "Καὶ ἐγένετο μετὰ τὰς ἑπτὰ ἡμέρας καὶ τὸ ὕδωρ τοῦ κατακλυσμοῦ ἐγένετο ἐπὶ τῆς γῆς.",
-      "english": "As soon as the seven days were over, the waters of the flood came upon the earth."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַֽיְהִ֖י לְשִׁבְעַ֣ת הַיָּמִ֑ים וּמֵ֣י הַמַּבּ֔וּל הָי֖וּ עַל הָאָֽרֶץ׃",
+        "VUL": "Cumque transissent septem dies, aquæ diluvii inundaverunt super terram.",
+        "LXX": "Καὶ ἐγένετο μετὰ τὰς ἑπτὰ ἡμέρας καὶ τὸ ὕδωρ τοῦ κατακλυσμοῦ ἐγένετο ἐπὶ τῆς γῆς.",
+        "NAB": "As soon as the seven days were over, the waters of the flood came upon the earth.",
+        "SYN": "Чрез семь дней воды потопа пришли на землю."
+      }
     },
     "11": {
-      "sort_number": 11,
-      "name": "11",
-      "latin": "Anno sexcentesimo vitæ Noë, mense secundo, septimodecimo die mensis, rupti sunt omnes fontes abyssi magnæ, et cataractæ cæli apertæ sunt:",
-      "word_count": 0,
-      "hebrew": "בִּשְׁנַ֨ת שֵׁשׁ מֵא֤וֹת שָׁנָה֙ לְחַיֵּי נֹ֔חַ בַּחֹ֨דֶשׁ֙ הַשֵּׁנִ֔י בְּשִׁבְעָֽה עָשָׂ֥ר י֖וֹם לַחֹ֑דֶשׁ בַּיּ֣וֹם הַזֶּ֗ה נִבְקְעוּ֙ כָּֽל מַעְיְנֹת֙ תְּה֣וֹם רַבָּ֔ה וַאֲרֻבֹּ֥ת הַשָּׁמַ֖יִם נִפְתָּֽחוּ׃",
-      "russian": "В шестисотый год жизни Ноевой, во второй месяц, в семнадцатый [27] день месяца, в сей день разверзлись все источники великой бездны, и окна небесные отворились;",
-      "greek": "ἐν τῷ ἑξακοσιοστῷ ἔτει ἐν τῇ ζωῇ τοῦ Νῶε τοῦ δευτέρου μηνός, ἑβδόμῃ καὶ εἰκάδι τοῦ μηνός, τῇ ἡμέρᾳ ταύτῃ ἐρράγησαν πᾶσαι αἱ πηγαὶ τῆς ἀβύσσου, καὶ οἱ καταράκται τοῦ οὐρανοῦ ἠνεῴχθησαν·",
-      "english": "In the six hundredth year of Noah's life, in the second month, on the seventeenth day of the month: it was on that day that All the fountains of the great abyss burst forth, and the floodgates of the sky were opened."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "בִּשְׁנַ֨ת שֵׁשׁ מֵא֤וֹת שָׁנָה֙ לְחַיֵּי נֹ֔חַ בַּחֹ֨דֶשׁ֙ הַשֵּׁנִ֔י בְּשִׁבְעָֽה עָשָׂ֥ר י֖וֹם לַחֹ֑דֶשׁ בַּיּ֣וֹם הַזֶּ֗ה נִבְקְעוּ֙ כָּֽל מַעְיְנֹת֙ תְּה֣וֹם רַבָּ֔ה וַאֲרֻבֹּ֥ת הַשָּׁמַ֖יִם נִפְתָּֽחוּ׃",
+        "VUL": "Anno sexcentesimo vitæ Noë, mense secundo, septimodecimo die mensis, rupti sunt omnes fontes abyssi magnæ, et cataractæ cæli apertæ sunt:",
+        "LXX": "ἐν τῷ ἑξακοσιοστῷ ἔτει ἐν τῇ ζωῇ τοῦ Νῶε τοῦ δευτέρου μηνός, ἑβδόμῃ καὶ εἰκάδι τοῦ μηνός, τῇ ἡμέρᾳ ταύτῃ ἐρράγησαν πᾶσαι αἱ πηγαὶ τῆς ἀβύσσου, καὶ οἱ καταράκται τοῦ οὐρανοῦ ἠνεῴχθησαν·",
+        "NAB": "In the six hundredth year of Noah's life, in the second month, on the seventeenth day of the month: it was on that day that All the fountains of the great abyss burst forth, and the floodgates of the sky were opened.",
+        "SYN": "В шестисотый год жизни Ноевой, во второй месяц, в семнадцатый [27] день месяца, в сей день разверзлись все источники великой бездны, и окна небесные отворились;"
+      }
     },
     "12": {
-      "sort_number": 12,
-      "name": "12",
-      "latin": "et facta est pluvia super terram quadraginta diebus et quadraginta noctibus.",
-      "word_count": 0,
-      "hebrew": "וַֽיְהִ֥י הַגֶּ֖שֶׁם עַל הָאָ֑רֶץ אַרְבָּעִ֣ים י֔וֹם וְאַרְבָּעִ֖ים לָֽיְלָה׃",
-      "russian": "и лился на землю дождь сорок дней и сорок ночей.",
-      "greek": "καὶ ἐγένετο ὁ ὑετὸς ἐπὶ τῆς γῆς τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας.",
-      "english": "For forty days and forty nights heavy rain poured down on the earth."
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַֽיְהִ֥י הַגֶּ֖שֶׁם עַל הָאָ֑רֶץ אַרְבָּעִ֣ים י֔וֹם וְאַרְבָּעִ֖ים לָֽיְלָה׃",
+        "VUL": "et facta est pluvia super terram quadraginta diebus et quadraginta noctibus.",
+        "LXX": "καὶ ἐγένετο ὁ ὑετὸς ἐπὶ τῆς γῆς τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας.",
+        "NAB": "For forty days and forty nights heavy rain poured down on the earth.",
+        "SYN": "и лился на землю дождь сорок дней и сорок ночей."
+      }
     },
     "13": {
-      "sort_number": 13,
-      "name": "13",
-      "latin": "In articulo diei illius ingressus est Noë, et Sem, et Cham, et Japheth filii ejus ; uxor illius, et tres uxores filiorum ejus cum eis in arcam:",
-      "word_count": 0,
-      "hebrew": "בְּעֶ֨צֶם הַיּ֤וֹם הַזֶּה֙ בָּ֣א נֹ֔חַ וְשֵׁם וְחָ֥ם וָיֶ֖פֶת בְּנֵי נֹ֑חַ וְאֵ֣שֶׁת נֹ֗חַ וּשְׁלֹ֧שֶׁת נְשֵֽׁי בָנָ֛יו אִתָּ֖ם אֶל הַתֵּבָֽה׃",
-      "russian": "В сей самый день вошел в ковчег Ной, и Сим, Хам и Иафет, сыновья Ноевы, и жена Ноева, и три жены сынов его с ними.",
-      "greek": "Ἐν τῇ ἡμέρᾳ ταύτῃ εἰσῆλθεν Νῶε, Σήμ, Χάμ, Ἰάφεθ, υἱοὶ Νῶε, καὶ ἡ γυνὴ Νῶε καὶ αἱ τρεῖς γυναῖκες τῶν υἱῶν αὐτοῦ μετ’ αὐτοῦ εἰς τὴν κιβωτόν.",
-      "english": "On the precise day named, Noah and his sons Shem, Ham, and Japheth, and Noah's wife, and the three wives of Noah's sons had entered the ark,"
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "בְּעֶ֨צֶם הַיּ֤וֹם הַזֶּה֙ בָּ֣א נֹ֔חַ וְשֵׁם וְחָ֥ם וָיֶ֖פֶת בְּנֵי נֹ֑חַ וְאֵ֣שֶׁת נֹ֗חַ וּשְׁלֹ֧שֶׁת נְשֵֽׁי בָנָ֛יו אִתָּ֖ם אֶל הַתֵּבָֽה׃",
+        "VUL": "In articulo diei illius ingressus est Noë, et Sem, et Cham, et Japheth filii ejus ; uxor illius, et tres uxores filiorum ejus cum eis in arcam:",
+        "LXX": "Ἐν τῇ ἡμέρᾳ ταύτῃ εἰσῆλθεν Νῶε, Σήμ, Χάμ, Ἰάφεθ, υἱοὶ Νῶε, καὶ ἡ γυνὴ Νῶε καὶ αἱ τρεῖς γυναῖκες τῶν υἱῶν αὐτοῦ μετ’ αὐτοῦ εἰς τὴν κιβωτόν.",
+        "NAB": "On the precise day named, Noah and his sons Shem, Ham, and Japheth, and Noah's wife, and the three wives of Noah's sons had entered the ark,",
+        "SYN": "В сей самый день вошел в ковчег Ной, и Сим, Хам и Иафет, сыновья Ноевы, и жена Ноева, и три жены сынов его с ними."
+      }
     },
     "14": {
-      "sort_number": 14,
-      "name": "14",
-      "latin": "ipsi et omne animal secundum genus suum, universaque jumenta in genere suo, et omne quod movetur super terram in genere suo, cunctumque volatile secundum genus suum, universæ aves, omnesque volucres,",
-      "word_count": 0,
-      "hebrew": "הֵ֜מָּה וְכָל הַֽחַיָּ֣ה לְמִינָ֗הּ וְכָל הַבְּהֵמָה֙ לְמִינָ֔הּ וְכָל הָרֶ֛מֶשׂ הָרֹמֵ֥שׂ עַל הָאָ֖רֶץ לְמִינֵ֑הוּ וְכָל הָע֣וֹף לְמִינֵ֔הוּ כֹּ֖ל צִפּ֥וֹר כָּל כָּנָֽף׃",
-      "russian": "Они, и все звери [земли] по роду их, и всякий скот по роду его, и все гады, пресмыкающиеся по земле, по роду их, и все летающие по роду их, все птицы, все крылатые,",
-      "greek": "καὶ πάντα τὰ θηρία κατὰ γένος καὶ πάντα τὰ κτήνη κατὰ γένος καὶ πᾶν ἑρπετὸν κινούμενον ἐπὶ τῆς γῆς κατὰ γένος καὶ πᾶν πετεινὸν κατὰ γένος",
-      "english": "together with every kind of wild beast, every kind of domestic animal, every kind of creeping thing of the earth, and every kind of bird."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הֵ֜מָּה וְכָל הַֽחַיָּ֣ה לְמִינָ֗הּ וְכָל הַבְּהֵמָה֙ לְמִינָ֔הּ וְכָל הָרֶ֛מֶשׂ הָרֹמֵ֥שׂ עַל הָאָ֖רֶץ לְמִינֵ֑הוּ וְכָל הָע֣וֹף לְמִינֵ֔הוּ כֹּ֖ל צִפּ֥וֹר כָּל כָּנָֽף׃",
+        "VUL": "ipsi et omne animal secundum genus suum, universaque jumenta in genere suo, et omne quod movetur super terram in genere suo, cunctumque volatile secundum genus suum, universæ aves, omnesque volucres,",
+        "LXX": "καὶ πάντα τὰ θηρία κατὰ γένος καὶ πάντα τὰ κτήνη κατὰ γένος καὶ πᾶν ἑρπετὸν κινούμενον ἐπὶ τῆς γῆς κατὰ γένος καὶ πᾶν πετεινὸν κατὰ γένος",
+        "NAB": "together with every kind of wild beast, every kind of domestic animal, every kind of creeping thing of the earth, and every kind of bird.",
+        "SYN": "Они, и все звери [земли] по роду их, и всякий скот по роду его, и все гады, пресмыкающиеся по земле, по роду их, и все летающие по роду их, все птицы, все крылатые,"
+      }
     },
     "15": {
-      "sort_number": 15,
-      "name": "15",
-      "latin": "ingressæ sunt ad Noë in arcam, bina et bina ex omni carne, in qua erat spiritus vitæ.",
-      "word_count": 0,
-      "hebrew": "וַיָּבֹ֥אוּ אֶל נֹ֖חַ אֶל הַתֵּבָ֑ה שְׁנַ֤יִם שְׁנַ֨יִם֙ מִכָּל הַבָּשָׂ֔ר אֲשֶׁר בּ֖וֹ ר֥וּחַ חַיִּֽים׃",
-      "russian": "и вошли к Ною в ковчег по паре [мужеского пола и женского] от всякой плоти, в которой есть дух жизни;",
-      "greek": "εἰσῆλθον πρὸς Νῶε εἰς τὴν κιβωτόν, δύο δύο ἄρσεν καὶ θῆλυ ἀπὸ πάσης σαρκὸς ἐν ᾧ ἐστὶν πνεῦμα ζωῆς.",
-      "english": "Pairs of all creatures in which there was the breath of life entered the ark with Noah."
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַיָּבֹ֥אוּ אֶל נֹ֖חַ אֶל הַתֵּבָ֑ה שְׁנַ֤יִם שְׁנַ֨יִם֙ מִכָּל הַבָּשָׂ֔ר אֲשֶׁר בּ֖וֹ ר֥וּחַ חַיִּֽים׃",
+        "VUL": "ingressæ sunt ad Noë in arcam, bina et bina ex omni carne, in qua erat spiritus vitæ.",
+        "LXX": "εἰσῆλθον πρὸς Νῶε εἰς τὴν κιβωτόν, δύο δύο ἄρσεν καὶ θῆλυ ἀπὸ πάσης σαρκὸς ἐν ᾧ ἐστὶν πνεῦμα ζωῆς.",
+        "NAB": "Pairs of all creatures in which there was the breath of life entered the ark with Noah.",
+        "SYN": "и вошли к Ною в ковчег по паре [мужеского пола и женского] от всякой плоти, в которой есть дух жизни;"
+      }
     },
     "16": {
-      "sort_number": 16,
-      "name": "16",
-      "latin": "Et quæ ingressa sunt, masculus et femina ex omni carne introierunt, sicut præceperat ei Deus: et inclusit eum Dominus deforis.",
-      "word_count": 0,
-      "hebrew": "וְהַבָּאִ֗ים זָכָ֨ר וּנְקֵבָ֤ה מִכָּל בָּשָׂר֙ בָּ֔אוּ כַּֽאֲשֶׁ֛ר צִוָּ֥ה אֹת֖וֹ אֱלֹהִ֑ים וַיִּסְגֹּ֥ר יְהוָ֖ה בַּֽעֲדֽוֹ׃",
-      "russian": "и вошедшие [к Ною в ковчег] мужеский и женский пол всякой плоти вошли, как повелел ему [Господь] Бог. И затворил Господь [Бог] за ним [ковчег].",
-      "greek": "καὶ τὰ εἰσπορευόμενα ἄρσεν καὶ θῆλυ ἀπὸ πάσης σαρκὸς εἰσῆλθεν, καθὰ ἐνετείλατο ὁ θεὸς τῷ Νῶε· ⸆ καὶ ἔκλεισεν Κύριος ὁ θεὸς τὴν κιβωτὸν ἔξωθεν αὐτοῦ.",
-      "english": "Those that entered were male and female, and of all species they came, as God had commanded Noah. Then the LORD shut him in."
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְהַבָּאִ֗ים זָכָ֨ר וּנְקֵבָ֤ה מִכָּל בָּשָׂר֙ בָּ֔אוּ כַּֽאֲשֶׁ֛ר צִוָּ֥ה אֹת֖וֹ אֱלֹהִ֑ים וַיִּסְגֹּ֥ר יְהוָ֖ה בַּֽעֲדֽוֹ׃",
+        "VUL": "Et quæ ingressa sunt, masculus et femina ex omni carne introierunt, sicut præceperat ei Deus: et inclusit eum Dominus deforis.",
+        "LXX": "καὶ τὰ εἰσπορευόμενα ἄρσεν καὶ θῆλυ ἀπὸ πάσης σαρκὸς εἰσῆλθεν, καθὰ ἐνετείλατο ὁ θεὸς τῷ Νῶε· ⸆ καὶ ἔκλεισεν Κύριος ὁ θεὸς τὴν κιβωτὸν ἔξωθεν αὐτοῦ.",
+        "NAB": "Those that entered were male and female, and of all species they came, as God had commanded Noah. Then the LORD shut him in.",
+        "SYN": "и вошедшие [к Ною в ковчег] мужеский и женский пол всякой плоти вошли, как повелел ему [Господь] Бог. И затворил Господь [Бог] за ним [ковчег]."
+      }
     },
     "17": {
-      "sort_number": 17,
-      "name": "17",
-      "latin": "Factumque est diluvium quadraginta diebus super terram: et multiplicatæ sunt aquæ, et elevaverunt arcam in sublime a terra.",
-      "word_count": 0,
-      "hebrew": "וַֽיְהִ֧י הַמַּבּ֛וּל אַרְבָּעִ֥ים י֖וֹם עַל הָאָ֑רֶץ וַיִּרְבּ֣וּ הַמַּ֗יִם וַיִּשְׂאוּ֙ אֶת הַתֵּבָ֔ה וַתָּ֖רָם מֵעַ֥ל הָאָֽרֶץ׃",
-      "russian": "И продолжалось на земле наводнение сорок дней [и сорок ночей], и умножилась вода, и подняла ковчег, и он возвысился над землею;",
-      "greek": "Καὶ ἐγένετο ὁ κατακλυσμὸς ἐπὶ τῆς γῆς τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας ἐπὶ τῆς γῆς· καὶ ἐπληθύνθη τὸ ὕδωρ καὶ ἐπῆρεν τὴν κιβωτόν, καὶ ὑψώθη ἀπὸ τῆς γῆς.",
-      "english": "The flood continued upon the earth for forty days. As the waters increased, they lifted the ark, so that it rose above the earth."
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַֽיְהִ֧י הַמַּבּ֛וּל אַרְבָּעִ֥ים י֖וֹם עַל הָאָ֑רֶץ וַיִּרְבּ֣וּ הַמַּ֗יִם וַיִּשְׂאוּ֙ אֶת הַתֵּבָ֔ה וַתָּ֖רָם מֵעַ֥ל הָאָֽרֶץ׃",
+        "VUL": "Factumque est diluvium quadraginta diebus super terram: et multiplicatæ sunt aquæ, et elevaverunt arcam in sublime a terra.",
+        "LXX": "Καὶ ἐγένετο ὁ κατακλυσμὸς ἐπὶ τῆς γῆς τεσσεράκοντα ἡμέρας καὶ τεσσεράκοντα νύκτας ἐπὶ τῆς γῆς· καὶ ἐπληθύνθη τὸ ὕδωρ καὶ ἐπῆρεν τὴν κιβωτόν, καὶ ὑψώθη ἀπὸ τῆς γῆς.",
+        "NAB": "The flood continued upon the earth for forty days. As the waters increased, they lifted the ark, so that it rose above the earth.",
+        "SYN": "И продолжалось на земле наводнение сорок дней [и сорок ночей], и умножилась вода, и подняла ковчег, и он возвысился над землею;"
+      }
     },
     "18": {
-      "sort_number": 18,
-      "name": "18",
-      "latin": "Vehementer enim inundaverunt, et omnia repleverunt in superficie terræ: porro arca ferebatur super aquas.",
-      "word_count": 0,
-      "hebrew": "וַיִּגְבְּר֥וּ הַמַּ֛יִם וַיִּרְבּ֥וּ מְאֹ֖ד עַל הָאָ֑רֶץ וַתֵּ֥לֶךְ הַתֵּבָ֖ה עַל פְּנֵ֥י הַמָּֽיִם׃",
-      "russian": "вода же усиливалась и весьма умножалась на земле, и ковчег плавал по поверхности вод.",
-      "greek": "καὶ ἐπεκράτει τὸ ὕδωρ καὶ ἐπληθύνετο σφόδρα ἐπὶ τῆς γῆς· καὶ ἐπεφέρετο ἡ κιβωτὸς ἐπάνω τοῦ ὕδατος.",
-      "english": "The swelling waters increased greatly, but the ark floated on the surface of the waters."
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַיִּגְבְּר֥וּ הַמַּ֛יִם וַיִּרְבּ֥וּ מְאֹ֖ד עַל הָאָ֑רֶץ וַתֵּ֥לֶךְ הַתֵּבָ֖ה עַל פְּנֵ֥י הַמָּֽיִם׃",
+        "VUL": "Vehementer enim inundaverunt, et omnia repleverunt in superficie terræ: porro arca ferebatur super aquas.",
+        "LXX": "καὶ ἐπεκράτει τὸ ὕδωρ καὶ ἐπληθύνετο σφόδρα ἐπὶ τῆς γῆς· καὶ ἐπεφέρετο ἡ κιβωτὸς ἐπάνω τοῦ ὕδατος.",
+        "NAB": "The swelling waters increased greatly, but the ark floated on the surface of the waters.",
+        "SYN": "вода же усиливалась и весьма умножалась на земле, и ковчег плавал по поверхности вод."
+      }
     },
     "19": {
-      "sort_number": 19,
-      "name": "19",
-      "latin": "Et aquæ prævaluerunt nimis super terram: opertique sunt omnes montes excelsi sub universo cælo.",
-      "word_count": 0,
-      "hebrew": "וְהַמַּ֗יִם גָּֽבְר֛וּ מְאֹ֥ד מְאֹ֖ד עַל הָאָ֑רֶץ וַיְכֻסּ֗וּ כָּל הֶֽהָרִים֙ הַגְּבֹהִ֔ים אֲשֶׁר תַּ֖חַת כָּל הַשָּׁמָֽיִם׃",
-      "russian": "И усилилась вода на земле чрезвычайно, так что покрылись все высокие горы, какие есть под всем небом;",
-      "greek": "τὸ δὲ ὕδωρ ἐπεκράτει σφόδρα σφοδρῶς ἐπὶ τῆς γῆς, καὶ ἐπεκάλυψεν πάντα τὰ ὄρη τὰ ὑψηλὰ ἃ ἦν ὑποκάτω τοῦ οὐρανοῦ.",
-      "english": "Higher and higher above the earth rose the waters, until all the highest mountains everywhere were submerged,"
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְהַמַּ֗יִם גָּֽבְר֛וּ מְאֹ֥ד מְאֹ֖ד עַל הָאָ֑רֶץ וַיְכֻסּ֗וּ כָּל הֶֽהָרִים֙ הַגְּבֹהִ֔ים אֲשֶׁר תַּ֖חַת כָּל הַשָּׁמָֽיִם׃",
+        "VUL": "Et aquæ prævaluerunt nimis super terram: opertique sunt omnes montes excelsi sub universo cælo.",
+        "LXX": "τὸ δὲ ὕδωρ ἐπεκράτει σφόδρα σφοδρῶς ἐπὶ τῆς γῆς, καὶ ἐπεκάλυψεν πάντα τὰ ὄρη τὰ ὑψηλὰ ἃ ἦν ὑποκάτω τοῦ οὐρανοῦ.",
+        "NAB": "Higher and higher above the earth rose the waters, until all the highest mountains everywhere were submerged,",
+        "SYN": "И усилилась вода на земле чрезвычайно, так что покрылись все высокие горы, какие есть под всем небом;"
+      }
     },
     "20": {
-      "sort_number": 20,
-      "name": "20",
-      "latin": "Quindecim cubitis altior fuit aqua super montes, quos operuerat.",
-      "word_count": 0,
-      "hebrew": "חֲמֵ֨שׁ עֶשְׂרֵ֤ה אַמָּה֙ מִלְמַ֔עְלָה גָּבְר֖וּ הַמָּ֑יִם וַיְכֻסּ֖וּ הֶהָרִֽים׃",
-      "russian": "на пятнадцать локтей поднялась над ними вода, и покрылись [все высокие] горы.",
-      "greek": "δέκα πέντε πήχεις ἐπάνω ὑψώθη τὸ ὕδωρ, καὶ ἐπεκάλυψεν πάντα τὰ ὄρη τὰ ὑψηλά.",
-      "english": "the crest rising fifteen cubits higher than the submerged mountains."
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "חֲמֵ֨שׁ עֶשְׂרֵ֤ה אַמָּה֙ מִלְמַ֔עְלָה גָּבְר֖וּ הַמָּ֑יִם וַיְכֻסּ֖וּ הֶהָרִֽים׃",
+        "VUL": "Quindecim cubitis altior fuit aqua super montes, quos operuerat.",
+        "LXX": "δέκα πέντε πήχεις ἐπάνω ὑψώθη τὸ ὕδωρ, καὶ ἐπεκάλυψεν πάντα τὰ ὄρη τὰ ὑψηλά.",
+        "NAB": "the crest rising fifteen cubits higher than the submerged mountains.",
+        "SYN": "на пятнадцать локтей поднялась над ними вода, и покрылись [все высокие] горы."
+      }
     },
     "21": {
-      "sort_number": 21,
-      "name": "21",
-      "latin": "Consumptaque est omnis caro quæ movebatur super terram, volucrum, animantium, bestiarum, omniumque reptilium, quæ reptant super terram: universi homines,",
-      "word_count": 0,
-      "hebrew": "וַיִּגְוַ֞ע כָּל בָּשָׂ֣ר הָרֹמֵ֣שׂ עַל הָאָ֗רֶץ בָּע֤וֹף וּבַבְּהֵמָה֙ וּבַ֣חַיָּ֔ה וּבְכָל הַשֶּׁ֖רֶץ הַשֹּׁרֵ֣ץ עַל הָאָ֑רֶץ וְכֹ֖ל הָאָדָֽם׃",
-      "russian": "И лишилась жизни всякая плоть, движущаяся по земле, и птицы, и скоты, и звери, и все гады, ползающие по земле, и все люди;",
-      "greek": "καὶ ἀπέθανεν πᾶσα σὰρξ κινουμένη ἐπὶ τῆς γῆς τῶν πετεινῶν καὶ τῶν κτηνῶν καὶ τῶν θηρίων, καὶ πᾶν ἑρπετὸν κινούμενον ἐπὶ τῆς γῆς, καὶ πᾶς ἄνθρωπος·",
-      "english": "All creatures that stirred on earth perished: birds, cattle, wild animals, and all that swarmed on the earth, as well as all mankind."
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַיִּגְוַ֞ע כָּל בָּשָׂ֣ר הָרֹמֵ֣שׂ עַל הָאָ֗רֶץ בָּע֤וֹף וּבַבְּהֵמָה֙ וּבַ֣חַיָּ֔ה וּבְכָל הַשֶּׁ֖רֶץ הַשֹּׁרֵ֣ץ עַל הָאָ֑רֶץ וְכֹ֖ל הָאָדָֽם׃",
+        "VUL": "Consumptaque est omnis caro quæ movebatur super terram, volucrum, animantium, bestiarum, omniumque reptilium, quæ reptant super terram: universi homines,",
+        "LXX": "καὶ ἀπέθανεν πᾶσα σὰρξ κινουμένη ἐπὶ τῆς γῆς τῶν πετεινῶν καὶ τῶν κτηνῶν καὶ τῶν θηρίων, καὶ πᾶν ἑρπετὸν κινούμενον ἐπὶ τῆς γῆς, καὶ πᾶς ἄνθρωπος·",
+        "NAB": "All creatures that stirred on earth perished: birds, cattle, wild animals, and all that swarmed on the earth, as well as all mankind.",
+        "SYN": "И лишилась жизни всякая плоть, движущаяся по земле, и птицы, и скоты, и звери, и все гады, ползающие по земле, и все люди;"
+      }
     },
     "22": {
-      "sort_number": 22,
-      "name": "22",
-      "latin": "et cuncta, in quibus spiraculum vitæ est in terra, mortua sunt.",
-      "word_count": 0,
-      "hebrew": "כֹּ֡ל אֲשֶׁר֩ נִשְׁמַת ר֨וּחַ חַיִּ֜ים בְּאַפָּ֗יו מִכֹּ֛ל אֲשֶׁ֥ר בֶּחָֽרָבָ֖ה מֵֽתוּ׃",
-      "russian": "все, что имело дыхание духа жизни в ноздрях своих на суше, умерло.",
-      "greek": "καὶ πάντα ὅσα ἔχει πνοὴν ζωῆς καὶ πᾶς ὃς ἦν ἐπὶ τῆς ξηρᾶς ἀπέθανεν.",
-      "english": "Everything on dry land with the faintest breath of life in its nostrils died out."
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כֹּ֡ל אֲשֶׁר֩ נִשְׁמַת ר֨וּחַ חַיִּ֜ים בְּאַפָּ֗יו מִכֹּ֛ל אֲשֶׁ֥ר בֶּחָֽרָבָ֖ה מֵֽתוּ׃",
+        "VUL": "et cuncta, in quibus spiraculum vitæ est in terra, mortua sunt.",
+        "LXX": "καὶ πάντα ὅσα ἔχει πνοὴν ζωῆς καὶ πᾶς ὃς ἦν ἐπὶ τῆς ξηρᾶς ἀπέθανεν.",
+        "NAB": "Everything on dry land with the faintest breath of life in its nostrils died out.",
+        "SYN": "все, что имело дыхание духа жизни в ноздрях своих на суше, умерло."
+      }
     },
     "23": {
-      "sort_number": 23,
-      "name": "23",
-      "latin": "Et delevit omnem substantiam quæ erat super terram, ab homine usque ad pecus, tam reptile quam volucres cæli: et deleta sunt de terra. Remansit autem solus Noë, et qui cum eo erant in arca.",
-      "word_count": 0,
-      "hebrew": "וַיִּ֜מַח אֶֽת כָּל הַיְק֣וּם אֲשֶׁ֣ר עַל פְּנֵ֣י הָֽאֲדָמָ֗ה מֵאָדָ֤ם עַד בְּהֵמָה֙ עַד רֶ֨מֶשׂ֙ וְעַד ע֣וֹף הַשָּׁמַ֔יִם וַיִּמָּח֖וּ מִן הָאָ֑רֶץ וַיִשָּׁ֧אֶר אַךְ נֹ֛חַ וַֽאֲשֶׁ֥ר אִתּ֖וֹ בַּתֵּבָֽה׃",
-      "russian": "Истребилось всякое существо, которое было на поверхности [всей] земли; от человека до скота, и гадов, и птиц небесных, -- все истребилось с земли, остался только Ной и что было с ним в ковчеге.",
-      "greek": "καὶ ἐξήλειψεν πᾶν τὸ ἀνάστεμα ὃ ἦν ἐπὶ προσώπου πάσης τῆς γῆς, ἀπὸ ἀνθρώπου ἕως κτήνους καὶ ἑρπετῶν καὶ τῶν πετεινῶν τοῦ οὐρανοῦ· καὶ ἐξηλείφθησαν ἀπὸ τῆς γῆς. καὶ κατελείφθη μόνος Νῶε καὶ οἱ μετ’ αὐτοῦ ἐν τῇ κιβωτῷ.",
-      "english": "The LORD wiped out every living thing on earth: man and cattle, the creeping things and the birds of the air; all were wiped out from the earth. Only Noah and those with him in the ark were left."
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַיִּ֜מַח אֶֽת כָּל הַיְק֣וּם אֲשֶׁ֣ר עַל פְּנֵ֣י הָֽאֲדָמָ֗ה מֵאָדָ֤ם עַד בְּהֵמָה֙ עַד רֶ֨מֶשׂ֙ וְעַד ע֣וֹף הַשָּׁמַ֔יִם וַיִּמָּח֖וּ מִן הָאָ֑רֶץ וַיִשָּׁ֧אֶר אַךְ נֹ֛חַ וַֽאֲשֶׁ֥ר אִתּ֖וֹ בַּתֵּבָֽה׃",
+        "VUL": "Et delevit omnem substantiam quæ erat super terram, ab homine usque ad pecus, tam reptile quam volucres cæli: et deleta sunt de terra. Remansit autem solus Noë, et qui cum eo erant in arca.",
+        "LXX": "καὶ ἐξήλειψεν πᾶν τὸ ἀνάστεμα ὃ ἦν ἐπὶ προσώπου πάσης τῆς γῆς, ἀπὸ ἀνθρώπου ἕως κτήνους καὶ ἑρπετῶν καὶ τῶν πετεινῶν τοῦ οὐρανοῦ· καὶ ἐξηλείφθησαν ἀπὸ τῆς γῆς. καὶ κατελείφθη μόνος Νῶε καὶ οἱ μετ’ αὐτοῦ ἐν τῇ κιβωτῷ.",
+        "NAB": "The LORD wiped out every living thing on earth: man and cattle, the creeping things and the birds of the air; all were wiped out from the earth. Only Noah and those with him in the ark were left.",
+        "SYN": "Истребилось всякое существо, которое было на поверхности [всей] земли; от человека до скота, и гадов, и птиц небесных, -- все истребилось с земли, остался только Ной и что было с ним в ковчеге."
+      }
     },
     "24": {
-      "sort_number": 24,
-      "name": "24",
-      "latin": "Obtinueruntque aquæ terram centum quinquaginta diebus.",
-      "word_count": 0,
-      "hebrew": "וַיִּגְבְּר֥וּ הַמַּ֖יִם עַל הָאָ֑רֶץ חֲמִשִּׁ֥ים וּמְאַ֖ת יֽוֹם׃",
-      "russian": "Вода же усиливалась на земле сто пятьдесят дней.",
-      "greek": "⸂⸆⸃ καὶ ὑψώθη τὸ ὕδωρ ἐπὶ τῆς γῆς ἡμέρας ἑκατὸν πεντήκοντα.",
-      "english": "The waters maintained their crest over the earth for one hundred and fifty days, 1 [11] Abyss: the subterranean ocean; see note on 1:2. Previous - Next Copyright &copy; Libreria Editrice Vaticana"
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַיִּגְבְּר֥וּ הַמַּ֖יִם עַל הָאָ֑רֶץ חֲמִשִּׁ֥ים וּמְאַ֖ת יֽוֹם׃",
+        "VUL": "Obtinueruntque aquæ terram centum quinquaginta diebus.",
+        "LXX": "⸂⸆⸃ καὶ ὑψώθη τὸ ὕδωρ ἐπὶ τῆς γῆς ἡμέρας ἑκατὸν πεντήκοντα.",
+        "NAB": "The waters maintained their crest over the earth for one hundred and fifty days, 1 [11] Abyss: the subterranean ocean; see note on 1:2. Previous - Next Copyright &copy; Libreria Editrice Vaticana",
+        "SYN": "Вода же усиливалась на земле сто пятьдесят дней."
+      }
     }
   }
 }

@@ -391,41 +391,53 @@ A desktop version exists in `desktop/` directory but uses an older JSON format a
 
 ## Current Architecture: Split JSON + Caching
 
-### Split JSON Files (Phase 1 - Complete)
+### Split JSON Files (Chapter-Level Architecture)
 
-Large volumes use per-book files with a manifest for lazy loading:
+Large volumes use per-chapter files with a manifest for lazy loading:
 
 ```
 /data/
   gutenberg/
-    manifest.json           # Volume metadata + book index
-    books/
-      GENE.json             # Genesis - lazy loaded
-      EXO.json              # Exodus
-      ...                   # 67 books total
+    manifest.json           # Volume metadata + book/chapter index
+    translations.json       # Versification system metadata
+    chapters/
+      GENE/
+        001.json            # Genesis 1 - lazy loaded
+        002.json            # Genesis 2
+        ...
+      PSAL/
+        001.json            # Psalm 1
+        ...
+        150.json            # Psalm 150
+      ...                   # 67 book directories, 1,215 chapter files total
 ```
 
-**Manifest Schema:**
+**Chapter Schema (v2.0):**
 ```json
 {
-  "volume_name": "Gutenberg Bible",
-  "structure_type": "split",
-  "display_config": { /* volume configuration */ },
-  "books": {
-    "GENE": { 
-      "_external_file": "books/GENE.json", 
-      "name": "Genesis",
-      "chapters": 50, 
-      "verses": 1533 
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_001",
+  "book_key": "GENE",
+  "sequence": 1,
+  "chapter_in": { "MT": 1, "VUL": 1, "LXX": 1 },
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": { "MT": 1, "VUL": 1, "LXX": 1 },
+      "text": {
+        "WLC": "בְּרֵאשִׁית...",
+        "VUL": "In principio...",
+        "NAB": "In the beginning..."
+      }
     }
   }
 }
 ```
 
 **Benefits:**
-- Faster initial load (only manifest + first book)
-- Memory efficiency (unload unused books)
-- Easier content updates (per-book files)
+- Faster navigation (15-20 KB chapters vs 500 KB books)
+- Per-translation versification mapping (`chapter_in`, `v_in`)
+- Tradition-specific content support (`exists_in` field)
 - Offline caching via IndexedDB
 
 ### IndexedDB Caching Layer

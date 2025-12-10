@@ -1,233 +1,345 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "GENE_028",
-  "chapter_key": "28",
-  "chapter_number": 28,
-  "sort_number": 28,
-  "name": "28",
   "book_key": "GENE",
+  "sequence": 28,
+  "chapter_in": {
+    "MT": 28,
+    "VUL": 28,
+    "LXX": 28
+  },
   "testament": "Vetus_Testamentum",
   "section": "Pentateuchus",
-  "verse_count": 22,
   "verses": {
     "1": {
-      "sort_number": 1,
-      "name": "1",
-      "latin": "Vocavit itaque Isaac Jacob, et benedixit eum, præcepitque ei dicens: Noli accipere conjugem de genere Chanaan:",
-      "word_count": 0,
-      "hebrew": "וַיִּקְרָ֥א יִצְחָ֛ק אֶֽל יַעֲקֹ֖ב וַיְבָ֣רֶךְ אֹת֑וֹ וַיְצַוֵּ֨הוּ֙ וַיֹּ֣אמֶר ל֔וֹ לֹֽא תִקַּ֥ח אִשָּׁ֖ה מִבְּנ֥וֹת כְּנָֽעַן׃",
-      "russian": "И призвал Исаак Иакова и благословил его, и заповедал ему и сказал: не бери себе жены из дочерей Ханаанских;",
-      "greek": "προσκαλεσάμενος δὲ Ἰσαὰκ τὸν Ἰακὼβ εὐλόγησεν αὐτόν, καὶ ἐνετείλατο αὐτῷ λέγων Οὐ λήμψῃ γυναῖκα ἐκ τῶν θυγατέρων Χανάαν·",
-      "english": "The LORD said to Moses,"
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַיִּקְרָ֥א יִצְחָ֛ק אֶֽל יַעֲקֹ֖ב וַיְבָ֣רֶךְ אֹת֑וֹ וַיְצַוֵּ֨הוּ֙ וַיֹּ֣אמֶר ל֔וֹ לֹֽא תִקַּ֥ח אִשָּׁ֖ה מִבְּנ֥וֹת כְּנָֽעַן׃",
+        "VUL": "Vocavit itaque Isaac Jacob, et benedixit eum, præcepitque ei dicens: Noli accipere conjugem de genere Chanaan:",
+        "LXX": "προσκαλεσάμενος δὲ Ἰσαὰκ τὸν Ἰακὼβ εὐλόγησεν αὐτόν, καὶ ἐνετείλατο αὐτῷ λέγων Οὐ λήμψῃ γυναῖκα ἐκ τῶν θυγατέρων Χανάαν·",
+        "NAB": "The LORD said to Moses,",
+        "SYN": "И призвал Исаак Иакова и благословил его, и заповедал ему и сказал: не бери себе жены из дочерей Ханаанских;"
+      }
     },
     "2": {
-      "sort_number": 2,
-      "name": "2",
-      "latin": "sed vade, et proficiscere in Mesopotamiam Syriæ, ad domum Bathuel patris matris tuæ, et accipe tibi inde uxorem de filiabus Laban avunculi tui.",
-      "word_count": 0,
-      "hebrew": "ק֥וּם לֵךְ֙ פַּדֶּ֣נָֽה אֲרָ֔ם בֵּ֥יתָה בְתוּאֵ֖ל אֲבִ֣י אִמֶּ֑ךָ וְקַח לְךָ֤ מִשָּׁם֙ אִשָּׁ֔ה מִבְּנ֥וֹת לָבָ֖ן אֲחִ֥י אִמֶּֽךָ׃",
-      "russian": "встань, пойди в Месопотамию, в дом Вафуила, отца матери твоей, и возьми себе жену оттуда, из дочерей Лавана, брата матери твоей;",
-      "greek": "ἀναστὰς ἀπόδραθι εἰς τὴν Μεσοποταμίαν Συρίας εἰς τὸν οἶκον Βαθουὴλ τοῦ πατρὸς τῆς μητρός σου, καὶ λάβε σεαυτῷ ἐκεῖθεν γυναῖκα ἐκ τῶν θυγατέρων Λαβὰν τοῦ ἀδελφοῦ τῆς μητρός σου.",
-      "english": "\"This is the law for the victim of leprosy at the time of his purification. He shall be brought to the priest,"
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "ק֥וּם לֵךְ֙ פַּדֶּ֣נָֽה אֲרָ֔ם בֵּ֥יתָה בְתוּאֵ֖ל אֲבִ֣י אִמֶּ֑ךָ וְקַח לְךָ֤ מִשָּׁם֙ אִשָּׁ֔ה מִבְּנ֥וֹת לָבָ֖ן אֲחִ֥י אִמֶּֽךָ׃",
+        "VUL": "sed vade, et proficiscere in Mesopotamiam Syriæ, ad domum Bathuel patris matris tuæ, et accipe tibi inde uxorem de filiabus Laban avunculi tui.",
+        "LXX": "ἀναστὰς ἀπόδραθι εἰς τὴν Μεσοποταμίαν Συρίας εἰς τὸν οἶκον Βαθουὴλ τοῦ πατρὸς τῆς μητρός σου, καὶ λάβε σεαυτῷ ἐκεῖθεν γυναῖκα ἐκ τῶν θυγατέρων Λαβὰν τοῦ ἀδελφοῦ τῆς μητρός σου.",
+        "NAB": "\"This is the law for the victim of leprosy at the time of his purification. He shall be brought to the priest,",
+        "SYN": "встань, пойди в Месопотамию, в дом Вафуила, отца матери твоей, и возьми себе жену оттуда, из дочерей Лавана, брата матери твоей;"
+      }
     },
     "3": {
-      "sort_number": 3,
-      "name": "3",
-      "latin": "Deus autem omnipotens benedicat tibi, et crescere te faciat, atque multiplicet, ut sis in turbas populorum.",
-      "word_count": 0,
-      "hebrew": "וְאֵ֤ל שַׁדַּי֙ יְבָרֵ֣ךְ אֹֽתְךָ֔ וְיַפְרְךָ֖ וְיַרְבֶּ֑ךָ וְהָיִ֖יתָ לִקְהַ֥ל עַמִּֽים׃",
-      "russian": "Бог же Всемогущий да благословит тебя, да расплодит тебя и да размножит тебя, и да будет от тебя множество народов,",
-      "greek": "ὁ δὲ θεός μου εὐλογήσαι σε καὶ αὐξήσαι σε καὶ πληθύναι σε, καὶ ἔσῃ εἰς συναγωγὰς ἐθνῶν·",
-      "english": "who is to go outside the camp to examine him. If the priest finds that the sore of leprosy has healed in the leper,"
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְאֵ֤ל שַׁדַּי֙ יְבָרֵ֣ךְ אֹֽתְךָ֔ וְיַפְרְךָ֖ וְיַרְבֶּ֑ךָ וְהָיִ֖יתָ לִקְהַ֥ל עַמִּֽים׃",
+        "VUL": "Deus autem omnipotens benedicat tibi, et crescere te faciat, atque multiplicet, ut sis in turbas populorum.",
+        "LXX": "ὁ δὲ θεός μου εὐλογήσαι σε καὶ αὐξήσαι σε καὶ πληθύναι σε, καὶ ἔσῃ εἰς συναγωγὰς ἐθνῶν·",
+        "NAB": "who is to go outside the camp to examine him. If the priest finds that the sore of leprosy has healed in the leper,",
+        "SYN": "Бог же Всемогущий да благословит тебя, да расплодит тебя и да размножит тебя, и да будет от тебя множество народов,"
+      }
     },
     "4": {
-      "sort_number": 4,
-      "name": "4",
-      "latin": "Et det tibi benedictiones Abrahæ, et semini tuo post te: ut possideas terram peregrinationis tuæ, quam pollicitus est avo tuo.",
-      "word_count": 0,
-      "hebrew": "וְיִֽתֶּן לְךָ֙ אֶת בִּרְכַּ֣ת אַבְרָהָ֔ם לְךָ֖ וּלְזַרְעֲךָ֣ אִתָּ֑ךְ לְרִשְׁתְּךָ֙ אֶת אֶ֣רֶץ מְגֻרֶ֔יךָ אֲשֶׁר נָתַ֥ן אֱלֹהִ֖ים לְאַבְרָהָֽם׃",
-      "russian": "и да даст тебе благословение Авраама [отца моего], тебе и потомству твоему с тобою, чтобы тебе наследовать землю странствования твоего, которую Бог дал Аврааму!",
-      "greek": "καὶ δῴη σοι τὴν εὐλογίαν Ἀβραὰμ τοῦ πατρός σου, σοὶ καὶ τῷ σπέρματί σου μετὰ σέ, κληρονομῆσαι τὴν γῆν τῆς παροικήσεώς σου, ἣν δέδωκεν ὁ θεὸς τῷ Ἀβραάμ.",
-      "english": "he shall order the man who is to be purified, to get two live, clean birds, as well as some cedar wood, scarlet yarn, and hyssop."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְיִֽתֶּן לְךָ֙ אֶת בִּרְכַּ֣ת אַבְרָהָ֔ם לְךָ֖ וּלְזַרְעֲךָ֣ אִתָּ֑ךְ לְרִשְׁתְּךָ֙ אֶת אֶ֣רֶץ מְגֻרֶ֔יךָ אֲשֶׁר נָתַ֥ן אֱלֹהִ֖ים לְאַבְרָהָֽם׃",
+        "VUL": "Et det tibi benedictiones Abrahæ, et semini tuo post te: ut possideas terram peregrinationis tuæ, quam pollicitus est avo tuo.",
+        "LXX": "καὶ δῴη σοι τὴν εὐλογίαν Ἀβραὰμ τοῦ πατρός σου, σοὶ καὶ τῷ σπέρματί σου μετὰ σέ, κληρονομῆσαι τὴν γῆν τῆς παροικήσεώς σου, ἣν δέδωκεν ὁ θεὸς τῷ Ἀβραάμ.",
+        "NAB": "he shall order the man who is to be purified, to get two live, clean birds, as well as some cedar wood, scarlet yarn, and hyssop.",
+        "SYN": "и да даст тебе благословение Авраама [отца моего], тебе и потомству твоему с тобою, чтобы тебе наследовать землю странствования твоего, которую Бог дал Аврааму!"
+      }
     },
     "5": {
-      "sort_number": 5,
-      "name": "5",
-      "latin": "Cumque dimisisset eum Isaac, profectus venit in Mesopotamiam Syriæ ad Laban filium Bathuel Syri, fratrem Rebeccæ matris suæ.",
-      "word_count": 0,
-      "hebrew": "וַיִּשְׁלַ֤ח יִצְחָק֙ אֶֽת יַעֲקֹ֔ב וַיֵּ֖לֶךְ פַּדֶּ֣נָֽה אֲרָ֑ם אֶל לָבָ֤ן בֶּן בְּתוּאֵל֙ הָֽאֲרַמִּ֔י אֲחִ֣י רִבְקָ֔ה אֵ֥ם יַעֲקֹ֖ב וְעֵשָֽׂו׃",
-      "russian": "И отпустил Исаак Иакова, и он пошел в Месопотамию к Лавану, сыну Вафуила Арамеянина, к брату Ревекки, матери Иакова и Исава.",
-      "greek": "καὶ ἀπέστειλεν Ἰσαὰκ τὸν Ἰακώβ, καὶ ἐπορεύθη εἰς τὴν Μεσοποταμίαν πρὸς Λαβὰν τὸν υἱὸν Βαθουὴλ τοῦ Σύρου, ἀδελφὸν δὲ Ῥεβέκκας τῆς μητρὸς Ἰακὼβ καὶ Ἠσαύ.",
-      "english": "The priest shall then order him to slay one of the birds over an earthen vessel with spring water in it."
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַיִּשְׁלַ֤ח יִצְחָק֙ אֶֽת יַעֲקֹ֔ב וַיֵּ֖לֶךְ פַּדֶּ֣נָֽה אֲרָ֑ם אֶל לָבָ֤ן בֶּן בְּתוּאֵל֙ הָֽאֲרַמִּ֔י אֲחִ֣י רִבְקָ֔ה אֵ֥ם יַעֲקֹ֖ב וְעֵשָֽׂו׃",
+        "VUL": "Cumque dimisisset eum Isaac, profectus venit in Mesopotamiam Syriæ ad Laban filium Bathuel Syri, fratrem Rebeccæ matris suæ.",
+        "LXX": "καὶ ἀπέστειλεν Ἰσαὰκ τὸν Ἰακώβ, καὶ ἐπορεύθη εἰς τὴν Μεσοποταμίαν πρὸς Λαβὰν τὸν υἱὸν Βαθουὴλ τοῦ Σύρου, ἀδελφὸν δὲ Ῥεβέκκας τῆς μητρὸς Ἰακὼβ καὶ Ἠσαύ.",
+        "NAB": "The priest shall then order him to slay one of the birds over an earthen vessel with spring water in it.",
+        "SYN": "И отпустил Исаак Иакова, и он пошел в Месопотамию к Лавану, сыну Вафуила Арамеянина, к брату Ревекки, матери Иакова и Исава."
+      }
     },
     "6": {
-      "sort_number": 6,
-      "name": "6",
-      "latin": "Videns autem Esau quod benedixisset pater suus Jacob, et misisset eum in Mesopotamiam Syriæ, ut inde uxorem duceret ; et quod post benedictionem præcepisset ei, dicens: Non accipies uxorem de filiabus Chanaan:",
-      "word_count": 0,
-      "hebrew": "וַיַּ֣רְא עֵשָׂ֗ו כִּֽי בֵרַ֣ךְ יִצְחָק֮ אֶֽת יַעֲקֹב֒ וְשִׁלַּ֤ח אֹתוֹ֙ פַּדֶּ֣נָֽה אֲרָ֔ם לָקַֽחַת ל֥וֹ מִשָּׁ֖ם אִשָּׁ֑ה בְּבָרֲכ֣וֹ אֹת֔וֹ וַיְצַ֤ו עָלָיו֙ לֵאמֹ֔ר לֹֽא תִקַּ֥ח אִשָּׁ֖ה מִבְּנ֥וֹת כְּנָֽעַן׃",
-      "russian": "Исав увидел, что Исаак благословил Иакова и благословляя послал его в Месопотамию, взять себе жену оттуда, и заповедал ему, сказав: не бери жены из дочерей Ханаанских;",
-      "greek": "ἴδεν δὲ Ἠσαὺ ὅτι εὐλόγησεν Ἰσαὰκ τὸν Ἰακὼβ καὶ ἀπῴχετο εἰς τὴν Μεσοποταμίαν Συρίας λαβεῖν ἑαυτῷ γυναῖκα, ἐν τῷ εὐλογεῖν αὐτόν, καὶ ἐνετείλατο αὐτῷ λέγων Οὐ λήμψῃ γυναῖκα ἀπὸ τῶν θυγατέρων Χανάαν·",
-      "english": "Taking the living bird with the cedar wood, the scarlet yarn and the hyssop, the priest shall dip them all in the blood of the bird that was slain over the spring water,"
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַיַּ֣רְא עֵשָׂ֗ו כִּֽי בֵרַ֣ךְ יִצְחָק֮ אֶֽת יַעֲקֹב֒ וְשִׁלַּ֤ח אֹתוֹ֙ פַּדֶּ֣נָֽה אֲרָ֔ם לָקַֽחַת ל֥וֹ מִשָּׁ֖ם אִשָּׁ֑ה בְּבָרֲכ֣וֹ אֹת֔וֹ וַיְצַ֤ו עָלָיו֙ לֵאמֹ֔ר לֹֽא תִקַּ֥ח אִשָּׁ֖ה מִבְּנ֥וֹת כְּנָֽעַן׃",
+        "VUL": "Videns autem Esau quod benedixisset pater suus Jacob, et misisset eum in Mesopotamiam Syriæ, ut inde uxorem duceret ; et quod post benedictionem præcepisset ei, dicens: Non accipies uxorem de filiabus Chanaan:",
+        "LXX": "ἴδεν δὲ Ἠσαὺ ὅτι εὐλόγησεν Ἰσαὰκ τὸν Ἰακὼβ καὶ ἀπῴχετο εἰς τὴν Μεσοποταμίαν Συρίας λαβεῖν ἑαυτῷ γυναῖκα, ἐν τῷ εὐλογεῖν αὐτόν, καὶ ἐνετείλατο αὐτῷ λέγων Οὐ λήμψῃ γυναῖκα ἀπὸ τῶν θυγατέρων Χανάαν·",
+        "NAB": "Taking the living bird with the cedar wood, the scarlet yarn and the hyssop, the priest shall dip them all in the blood of the bird that was slain over the spring water,",
+        "SYN": "Исав увидел, что Исаак благословил Иакова и благословляя послал его в Месопотамию, взять себе жену оттуда, и заповедал ему, сказав: не бери жены из дочерей Ханаанских;"
+      }
     },
     "7": {
-      "sort_number": 7,
-      "name": "7",
-      "latin": "quodque obediens Jacob parentibus suis isset in Syriam:",
-      "word_count": 0,
-      "hebrew": "וַיִּשְׁמַ֣ע יַעֲקֹ֔ב אֶל אָבִ֖יו וְאֶל אִמּ֑וֹ וַיֵּ֖לֶךְ פַּדֶּ֥נָֽה אֲרָֽם׃",
-      "russian": "и что Иаков послушался отца своего и матери своей и пошел в Месопотамию.",
-      "greek": "καὶ ἤκουσεν Ἰακὼβ τοῦ πατρὸς καὶ τῆς μητρὸς ἑαυτοῦ, καὶ ἐπορεύθη εἰς τὴν Μεσοποταμίαν.",
-      "english": "and then sprinkle seven times the man to be purified from his leprosy. When he has thus purified him, he shall let the living bird fly away over the countryside."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַיִּשְׁמַ֣ע יַעֲקֹ֔ב אֶל אָבִ֖יו וְאֶל אִמּ֑וֹ וַיֵּ֖לֶךְ פַּדֶּ֥נָֽה אֲרָֽם׃",
+        "VUL": "quodque obediens Jacob parentibus suis isset in Syriam:",
+        "LXX": "καὶ ἤκουσεν Ἰακὼβ τοῦ πατρὸς καὶ τῆς μητρὸς ἑαυτοῦ, καὶ ἐπορεύθη εἰς τὴν Μεσοποταμίαν.",
+        "NAB": "and then sprinkle seven times the man to be purified from his leprosy. When he has thus purified him, he shall let the living bird fly away over the countryside.",
+        "SYN": "и что Иаков послушался отца своего и матери своей и пошел в Месопотамию."
+      }
     },
     "8": {
-      "sort_number": 8,
-      "name": "8",
-      "latin": "probans quoque quod non libenter aspiceret filias Chanaan pater suus:",
-      "word_count": 0,
-      "hebrew": "וַיַּ֣רְא עֵשָׂ֔ו כִּ֥י רָע֖וֹת בְּנ֣וֹת כְּנָ֑עַן בְּעֵינֵ֖י יִצְחָ֥ק אָבִֽיו׃",
-      "russian": "И увидел Исав, что дочери Ханаанские не угодны Исааку, отцу его;",
-      "greek": "καὶ ἴδεν Ἠσαὺ ὅτι πονηραί εἰσιν αἱ θυγατέρες Χανάαν ἐναντίον Ἰσαὰκ τοῦ πατρὸς αὐτοῦ,",
-      "english": "The man being purified shall then wash his garments and shave off all his hair and bathe in water; only when he is thus made clean may he come inside the camp; but he shall still remain outside his tent for seven days."
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַיַּ֣רְא עֵשָׂ֔ו כִּ֥י רָע֖וֹת בְּנ֣וֹת כְּנָ֑עַן בְּעֵינֵ֖י יִצְחָ֥ק אָבִֽיו׃",
+        "VUL": "probans quoque quod non libenter aspiceret filias Chanaan pater suus:",
+        "LXX": "καὶ ἴδεν Ἠσαὺ ὅτι πονηραί εἰσιν αἱ θυγατέρες Χανάαν ἐναντίον Ἰσαὰκ τοῦ πατρὸς αὐτοῦ,",
+        "NAB": "The man being purified shall then wash his garments and shave off all his hair and bathe in water; only when he is thus made clean may he come inside the camp; but he shall still remain outside his tent for seven days.",
+        "SYN": "И увидел Исав, что дочери Ханаанские не угодны Исааку, отцу его;"
+      }
     },
     "9": {
-      "sort_number": 9,
-      "name": "9",
-      "latin": "ivit ad Ismaëlem, et duxit uxorem absque iis, quas prius habebat, Maheleth filiam Ismaël filii Abraham, sororem Nabaioth.",
-      "word_count": 0,
-      "hebrew": "וַיֵּ֥לֶךְ עֵשָׂ֖ו אֶל יִשְׁמָעֵ֑אל וַיִּקַּ֡ח אֶֽת מָחֲלַ֣ת בַּת יִשְׁמָעֵ֨אל בֶּן אַבְרָהָ֜ם אֲח֧וֹת נְבָי֛וֹת עַל נָשָׁ֖יו ל֥וֹ לְאִשָּֽׁה׃",
-      "russian": "и пошел Исав к Измаилу и взял себе жену Махалафу, дочь Измаила, сына Авраамова, сестру Наваиофову, сверх других жен своих.",
-      "greek": "καὶ ἐπορεύθη Ἠσαὺ πρὸς Ἰσμαήλ, καὶ ἔλαβεν τὴν Μαελὲθ θυγατέρα Ἰσμαὴλ τοῦ υἱοῦ Ἀβραάμ, ἀδελφὴν Ναβαιώθ, πρὸς ταῖς γυναιξὶν αὐτοῦ γυναῖκα.",
-      "english": "On the seventh day he shall again shave off all the hair of his head, his beard, his eyebrows, and any other hair he may have, and also wash his garments and bathe his body in water; and so he will be clean."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַיֵּ֥לֶךְ עֵשָׂ֖ו אֶל יִשְׁמָעֵ֑אל וַיִּקַּ֡ח אֶֽת מָחֲלַ֣ת בַּת יִשְׁמָעֵ֨אל בֶּן אַבְרָהָ֜ם אֲח֧וֹת נְבָי֛וֹת עַל נָשָׁ֖יו ל֥וֹ לְאִשָּֽׁה׃",
+        "VUL": "ivit ad Ismaëlem, et duxit uxorem absque iis, quas prius habebat, Maheleth filiam Ismaël filii Abraham, sororem Nabaioth.",
+        "LXX": "καὶ ἐπορεύθη Ἠσαὺ πρὸς Ἰσμαήλ, καὶ ἔλαβεν τὴν Μαελὲθ θυγατέρα Ἰσμαὴλ τοῦ υἱοῦ Ἀβραάμ, ἀδελφὴν Ναβαιώθ, πρὸς ταῖς γυναιξὶν αὐτοῦ γυναῖκα.",
+        "NAB": "On the seventh day he shall again shave off all the hair of his head, his beard, his eyebrows, and any other hair he may have, and also wash his garments and bathe his body in water; and so he will be clean.",
+        "SYN": "и пошел Исав к Измаилу и взял себе жену Махалафу, дочь Измаила, сына Авраамова, сестру Наваиофову, сверх других жен своих."
+      }
     },
     "10": {
-      "sort_number": 10,
-      "name": "10",
-      "latin": "Igitur egressus Jacob de Bersabee, pergebat Haran.",
-      "word_count": 0,
-      "hebrew": "וַיֵּצֵ֥א יַעֲקֹ֖ב מִבְּאֵ֣ר שָׁ֑בַע וַיֵּ֖לֶךְ חָרָֽנָה׃",
-      "russian": "Иаков же вышел из Вирсавии и пошел в Харран,",
-      "greek": "Καὶ ἐξῆλθεν Ἰακὼβ ἀπὸ τοῦ φρέατος τοῦ ὅρκου, καὶ ἐπορεύθη εἰς Χαρράν.",
-      "english": "\"On the eighth day he shall take two unblemished male lambs, one unblemished yearling ewe lamb, three tenths of an ephah of fine flour mixed with oil for a cereal offering, and one log of oil."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַיֵּצֵ֥א יַעֲקֹ֖ב מִבְּאֵ֣ר שָׁ֑בַע וַיֵּ֖לֶךְ חָרָֽנָה׃",
+        "VUL": "Igitur egressus Jacob de Bersabee, pergebat Haran.",
+        "LXX": "Καὶ ἐξῆλθεν Ἰακὼβ ἀπὸ τοῦ φρέατος τοῦ ὅρκου, καὶ ἐπορεύθη εἰς Χαρράν.",
+        "NAB": "\"On the eighth day he shall take two unblemished male lambs, one unblemished yearling ewe lamb, three tenths of an ephah of fine flour mixed with oil for a cereal offering, and one log of oil.",
+        "SYN": "Иаков же вышел из Вирсавии и пошел в Харран,"
+      }
     },
     "11": {
-      "sort_number": 11,
-      "name": "11",
-      "latin": "Cumque venisset ad quemdam locum, et vellet in eo requiescere post solis occubitum, tulit de lapidibus qui jacebant, et supponens capiti suo, dormivit in eodem loco.",
-      "word_count": 0,
-      "hebrew": "וַיִּפְגַּ֨ע בַּמָּק֜וֹם וַיָּ֤לֶן שָׁם֙ כִּי בָ֣א הַשֶּׁ֔מֶשׁ וַיִּקַּח֙ מֵאַבְנֵ֣י הַמָּק֔וֹם וַיָּ֖שֶׂם מְרַֽאֲשֹׁתָ֑יו וַיִּשְׁכַּ֖ב בַּמָּק֥וֹם הַהֽוּא׃",
-      "russian": "и пришел на одно место, и остался там ночевать, потому что зашло солнце. И взял один из камней того места, и положил себе изголовьем, и лег на том месте.",
-      "greek": "καὶ ἀπήντησεν τόπῳ καὶ ἐκοιμήθη ἐκεῖ· ἔδυ γὰρ ὁ ἥλιος· καὶ ἔλαβεν ἀπὸ τῶν λίθων τοῦ τόπου καὶ ἐπέθηκεν πρὸς κεφαλῆς αὐτοῦ, καὶ ἐκοιμήθη ἐν τῷ τόπῳ ἐκείνῳ.",
-      "english": "The priest who performs the purification ceremony shall place the man who is being purified, as well as all these offerings, before the LORD at the entrance of the meeting tent."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַיִּפְגַּ֨ע בַּמָּק֜וֹם וַיָּ֤לֶן שָׁם֙ כִּי בָ֣א הַשֶּׁ֔מֶשׁ וַיִּקַּח֙ מֵאַבְנֵ֣י הַמָּק֔וֹם וַיָּ֖שֶׂם מְרַֽאֲשֹׁתָ֑יו וַיִּשְׁכַּ֖ב בַּמָּק֥וֹם הַהֽוּא׃",
+        "VUL": "Cumque venisset ad quemdam locum, et vellet in eo requiescere post solis occubitum, tulit de lapidibus qui jacebant, et supponens capiti suo, dormivit in eodem loco.",
+        "LXX": "καὶ ἀπήντησεν τόπῳ καὶ ἐκοιμήθη ἐκεῖ· ἔδυ γὰρ ὁ ἥλιος· καὶ ἔλαβεν ἀπὸ τῶν λίθων τοῦ τόπου καὶ ἐπέθηκεν πρὸς κεφαλῆς αὐτοῦ, καὶ ἐκοιμήθη ἐν τῷ τόπῳ ἐκείνῳ.",
+        "NAB": "The priest who performs the purification ceremony shall place the man who is being purified, as well as all these offerings, before the LORD at the entrance of the meeting tent.",
+        "SYN": "и пришел на одно место, и остался там ночевать, потому что зашло солнце. И взял один из камней того места, и положил себе изголовьем, и лег на том месте."
+      }
     },
     "12": {
-      "sort_number": 12,
-      "name": "12",
-      "latin": "Viditque in somnis scalam stantem super terram, et cacumen illius tangens cælum: angelos quoque Dei ascendentes et descendentes per eam,",
-      "word_count": 0,
-      "hebrew": "וַֽיַּחֲלֹ֗ם וְהִנֵּ֤ה סֻלָּם֙ מֻצָּ֣ב אַ֔רְצָה וְרֹאשׁ֖וֹ מַגִּ֣יעַ הַשָּׁמָ֑יְמָה וְהִנֵּה֙ מַלְאֲכֵ֣י אֱלֹהִ֔ים עֹלִ֥ים וְיֹרְדִ֖ים בּֽוֹ׃",
-      "russian": "И увидел во сне: вот, лестница стоит на земле, а верх ее касается неба; и вот, Ангелы Божии восходят и нисходят по ней.",
-      "greek": "καὶ ἐνυπνιάσθη· καὶ ἰδοὺ κλίμαξ ἐστηριγμένη ἐν τῇ γῇ ἧς ἡ κεφαλὴ ἀφικνεῖτο εἰς τὸν οὐρανόν, καὶ οἱ ἄγγελοι τοῦ θεοῦ ἀνέβαινον καὶ κατέβαινον ἐπ’ αὐτῆς.",
-      "english": "Taking one of the male lambs, the priest shall present it as a guilt offering, along with the log of oil, waving them as a wave offering before the LORD."
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַֽיַּחֲלֹ֗ם וְהִנֵּ֤ה סֻלָּם֙ מֻצָּ֣ב אַ֔רְצָה וְרֹאשׁ֖וֹ מַגִּ֣יעַ הַשָּׁמָ֑יְמָה וְהִנֵּה֙ מַלְאֲכֵ֣י אֱלֹהִ֔ים עֹלִ֥ים וְיֹרְדִ֖ים בּֽוֹ׃",
+        "VUL": "Viditque in somnis scalam stantem super terram, et cacumen illius tangens cælum: angelos quoque Dei ascendentes et descendentes per eam,",
+        "LXX": "καὶ ἐνυπνιάσθη· καὶ ἰδοὺ κλίμαξ ἐστηριγμένη ἐν τῇ γῇ ἧς ἡ κεφαλὴ ἀφικνεῖτο εἰς τὸν οὐρανόν, καὶ οἱ ἄγγελοι τοῦ θεοῦ ἀνέβαινον καὶ κατέβαινον ἐπ’ αὐτῆς.",
+        "NAB": "Taking one of the male lambs, the priest shall present it as a guilt offering, along with the log of oil, waving them as a wave offering before the LORD.",
+        "SYN": "И увидел во сне: вот, лестница стоит на земле, а верх ее касается неба; и вот, Ангелы Божии восходят и нисходят по ней."
+      }
     },
     "13": {
-      "sort_number": 13,
-      "name": "13",
-      "latin": "et Dominum innixum scalæ dicentem sibi: Ego sum Dominus Deus Abraham patris tui, et Deus Isaac: terram, in qua dormis, tibi dabo et semini tuo.",
-      "word_count": 0,
-      "hebrew": "וְהִנֵּ֨ה יְהוָ֜ה נִצָּ֣ב עָלָיו֮ וַיֹּאמַר֒ אֲנִ֣י יְהוָ֗ה אֱלֹהֵי֙ אַבְרָהָ֣ם אָבִ֔יךָ וֵאלֹהֵ֖י יִצְחָ֑ק הָאָ֗רֶץ אֲשֶׁ֤ר אַתָּה֙ שֹׁכֵ֣ב עָלֶ֔יהָ לְךָ֥ אֶתְּנֶ֖נָּה וּלְזַרְעֶֽךָ׃",
-      "russian": "И вот, Господь стоит на ней и говорит: Я Господь, Бог Авраама, отца твоего, и Бог Исаака; [не бойся]. Землю, на которой ты лежишь, Я дам тебе и потомству твоему;",
-      "greek": "ὁ δὲ Κύριος ἐπεστήρικτο ἐπ’ αὐτῆς καὶ εἶπεν Ἐγὼ ὁ θεὸς Ἀβραὰμ τοῦ πατρός σου καὶ ὁ θεὸς Ἰσαάκ· μὴ φοβοῦ· ἡ γῆ ἐφ’ ἧς σὺ καθεύδεις ἐπ’ αὐτῆς, σοὶ δώσω αὐτὴν καὶ τῷ σπέρματί σου.",
-      "english": "(This lamb he shall slaughter in the sacred place where the sin offering and the holocaust are slaughtered; because, like the sin offering, the guilt offering belongs to the priest and is most sacred.)"
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְהִנֵּ֨ה יְהוָ֜ה נִצָּ֣ב עָלָיו֮ וַיֹּאמַר֒ אֲנִ֣י יְהוָ֗ה אֱלֹהֵי֙ אַבְרָהָ֣ם אָבִ֔יךָ וֵאלֹהֵ֖י יִצְחָ֑ק הָאָ֗רֶץ אֲשֶׁ֤ר אַתָּה֙ שֹׁכֵ֣ב עָלֶ֔יהָ לְךָ֥ אֶתְּנֶ֖נָּה וּלְזַרְעֶֽךָ׃",
+        "VUL": "et Dominum innixum scalæ dicentem sibi: Ego sum Dominus Deus Abraham patris tui, et Deus Isaac: terram, in qua dormis, tibi dabo et semini tuo.",
+        "LXX": "ὁ δὲ Κύριος ἐπεστήρικτο ἐπ’ αὐτῆς καὶ εἶπεν Ἐγὼ ὁ θεὸς Ἀβραὰμ τοῦ πατρός σου καὶ ὁ θεὸς Ἰσαάκ· μὴ φοβοῦ· ἡ γῆ ἐφ’ ἧς σὺ καθεύδεις ἐπ’ αὐτῆς, σοὶ δώσω αὐτὴν καὶ τῷ σπέρματί σου.",
+        "NAB": "(This lamb he shall slaughter in the sacred place where the sin offering and the holocaust are slaughtered; because, like the sin offering, the guilt offering belongs to the priest and is most sacred.)",
+        "SYN": "И вот, Господь стоит на ней и говорит: Я Господь, Бог Авраама, отца твоего, и Бог Исаака; [не бойся]. Землю, на которой ты лежишь, Я дам тебе и потомству твоему;"
+      }
     },
     "14": {
-      "sort_number": 14,
-      "name": "14",
-      "latin": "Eritque semen tuum quasi pulvis terræ: dilataberis ad occidentem, et orientem, et septentrionem, et meridiem: et benedicentur in te et in semine tuo cunctæ tribus terræ.",
-      "word_count": 0,
-      "hebrew": "וְהָיָ֤ה זַרְעֲךָ֙ כַּעֲפַ֣ר הָאָ֔רֶץ וּפָרַצְתָּ֛ יָ֥מָּה וָקֵ֖דְמָה וְצָפֹ֣נָה וָנֶ֑גְבָּה וְנִבְרֲכ֥וּ בְךָ֛ כָּל מִשְׁפְּחֹ֥ת הָאֲדָמָ֖ה וּבְזַרְעֶֽךָ׃",
-      "russian": "и будет потомство твое, как песок земной; и распространишься к морю и к востоку, и к северу и к полудню; и благословятся в тебе и в семени твоем все племена земные;",
-      "greek": "καὶ ἔσται τὸ σπέρμα σου ὡς ἡ ἄμμος τῆς θαλάσσης, καὶ πλατυνθήσεται ἐπὶ θάλασσαν καὶ ἐπὶ λίβα καὶ ἐπὶ βορρᾶν καὶ ἐπ’ ἀνατολάς· ⸆ καὶ ἐνευλογηθήσονται ἐν σοὶ πᾶσαι αἱ φυλαὶ τῆς γῆς καὶ ἐν τῷ σπέρματί σου.",
-      "english": "Then the priest shall take some of the blood of the guilt offering and put it on the tip of the man's right ear, the thumb of his right hand, and the big toe of his right foot."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְהָיָ֤ה זַרְעֲךָ֙ כַּעֲפַ֣ר הָאָ֔רֶץ וּפָרַצְתָּ֛ יָ֥מָּה וָקֵ֖דְמָה וְצָפֹ֣נָה וָנֶ֑גְבָּה וְנִבְרֲכ֥וּ בְךָ֛ כָּל מִשְׁפְּחֹ֥ת הָאֲדָמָ֖ה וּבְזַרְעֶֽךָ׃",
+        "VUL": "Eritque semen tuum quasi pulvis terræ: dilataberis ad occidentem, et orientem, et septentrionem, et meridiem: et benedicentur in te et in semine tuo cunctæ tribus terræ.",
+        "LXX": "καὶ ἔσται τὸ σπέρμα σου ὡς ἡ ἄμμος τῆς θαλάσσης, καὶ πλατυνθήσεται ἐπὶ θάλασσαν καὶ ἐπὶ λίβα καὶ ἐπὶ βορρᾶν καὶ ἐπ’ ἀνατολάς· ⸆ καὶ ἐνευλογηθήσονται ἐν σοὶ πᾶσαι αἱ φυλαὶ τῆς γῆς καὶ ἐν τῷ σπέρματί σου.",
+        "NAB": "Then the priest shall take some of the blood of the guilt offering and put it on the tip of the man's right ear, the thumb of his right hand, and the big toe of his right foot.",
+        "SYN": "и будет потомство твое, как песок земной; и распространишься к морю и к востоку, и к северу и к полудню; и благословятся в тебе и в семени твоем все племена земные;"
+      }
     },
     "15": {
-      "sort_number": 15,
-      "name": "15",
-      "latin": "Et ero custos tuus quocumque perrexeris, et reducam te in terram hanc: nec dimittam nisi complevero universa quæ dixi.",
-      "word_count": 0,
-      "hebrew": "וְהִנֵּ֨ה אָנֹכִ֜י עִמָּ֗ךְ וּשְׁמַרְתִּ֨יךָ֙ בְּכֹ֣ל אֲשֶׁר תֵּלֵ֔ךְ וַהֲשִׁ֣בֹתִ֔יךָ אֶל הָאֲדָמָ֖ה הַזֹּ֑את כִּ֚י לֹ֣א אֶֽעֱזָבְךָ֔ עַ֚ד אֲשֶׁ֣ר אִם עָשִׂ֔יתִי אֵ֥ת אֲשֶׁר דִּבַּ֖רְתִּי לָֽךְ׃",
-      "russian": "и вот Я с тобою, и сохраню тебя везде, куда ты ни пойдешь; и возвращу тебя в сию землю, ибо Я не оставлю тебя, доколе не исполню того, что Я сказал тебе.",
-      "greek": "καὶ ἰδού ἐγὼ μετὰ σοῦ, διαφυλάσσων σε ἐν τῇ ὁδῷ πάσῃ οὗ ἐὰν πορευθῇς, καὶ ἀποστρέψω σε εἰς τὴν γῆν ταύτην· ὅτι οὐ μή σε ἐγκαταλείπω ἕως τοῦ ποιῆσαί με πάντα ὅσα ἐλάλησά σοι.",
-      "english": "The priest shall also take the log of oil and pour some of it into the palm of his own left hand;"
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְהִנֵּ֨ה אָנֹכִ֜י עִמָּ֗ךְ וּשְׁמַרְתִּ֨יךָ֙ בְּכֹ֣ל אֲשֶׁר תֵּלֵ֔ךְ וַהֲשִׁ֣בֹתִ֔יךָ אֶל הָאֲדָמָ֖ה הַזֹּ֑את כִּ֚י לֹ֣א אֶֽעֱזָבְךָ֔ עַ֚ד אֲשֶׁ֣ר אִם עָשִׂ֔יתִי אֵ֥ת אֲשֶׁר דִּבַּ֖רְתִּי לָֽךְ׃",
+        "VUL": "Et ero custos tuus quocumque perrexeris, et reducam te in terram hanc: nec dimittam nisi complevero universa quæ dixi.",
+        "LXX": "καὶ ἰδού ἐγὼ μετὰ σοῦ, διαφυλάσσων σε ἐν τῇ ὁδῷ πάσῃ οὗ ἐὰν πορευθῇς, καὶ ἀποστρέψω σε εἰς τὴν γῆν ταύτην· ὅτι οὐ μή σε ἐγκαταλείπω ἕως τοῦ ποιῆσαί με πάντα ὅσα ἐλάλησά σοι.",
+        "NAB": "The priest shall also take the log of oil and pour some of it into the palm of his own left hand;",
+        "SYN": "и вот Я с тобою, и сохраню тебя везде, куда ты ни пойдешь; и возвращу тебя в сию землю, ибо Я не оставлю тебя, доколе не исполню того, что Я сказал тебе."
+      }
     },
     "16": {
-      "sort_number": 16,
-      "name": "16",
-      "latin": "Cumque evigilasset Jacob de somno, ait: Vere Dominus est in loco isto, et ego nesciebam.",
-      "word_count": 0,
-      "hebrew": "וַיִּיקַ֣ץ יַעֲקֹב֮ מִשְּׁנָתוֹ֒ וַיֹּ֕אמֶר אָכֵן֙ יֵ֣שׁ יְהוָ֔ה בַּמָּק֖וֹם הַזֶּ֑ה וְאָנֹכִ֖י לֹ֥א יָדָֽעְתִּי׃",
-      "russian": "Иаков пробудился от сна своего и сказал: истинно Господь присутствует на месте сем; а я не знал!",
-      "greek": "⸂⸆⸃ καὶ ἐξηγέρθη Ἰακὼβ ἀπὸ τοῦ ὕπνου αὐτοῦ καὶ εἶπεν ὅτι Ἔστιν Κύριος ἐν τῷ τόπῳ τούτῳ, ἐγὼ δὲ οὐκ ᾔδειν.",
-      "english": "then, dipping his right forefinger in it, he shall sprinkle it seven times before the LORD."
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַיִּיקַ֣ץ יַעֲקֹב֮ מִשְּׁנָתוֹ֒ וַיֹּ֕אמֶר אָכֵן֙ יֵ֣שׁ יְהוָ֔ה בַּמָּק֖וֹם הַזֶּ֑ה וְאָנֹכִ֖י לֹ֥א יָדָֽעְתִּי׃",
+        "VUL": "Cumque evigilasset Jacob de somno, ait: Vere Dominus est in loco isto, et ego nesciebam.",
+        "LXX": "⸂⸆⸃ καὶ ἐξηγέρθη Ἰακὼβ ἀπὸ τοῦ ὕπνου αὐτοῦ καὶ εἶπεν ὅτι Ἔστιν Κύριος ἐν τῷ τόπῳ τούτῳ, ἐγὼ δὲ οὐκ ᾔδειν.",
+        "NAB": "then, dipping his right forefinger in it, he shall sprinkle it seven times before the LORD.",
+        "SYN": "Иаков пробудился от сна своего и сказал: истинно Господь присутствует на месте сем; а я не знал!"
+      }
     },
     "17": {
-      "sort_number": 17,
-      "name": "17",
-      "latin": "Pavensque, Quam terribilis est, inquit, locus iste ! non est hic aliud nisi domus Dei, et porta cæli.",
-      "word_count": 0,
-      "hebrew": "וַיִּירָא֙ וַיֹּאמַ֔ר מַה נּוֹרָ֖א הַמָּק֣וֹם הַזֶּ֑ה אֵ֣ין זֶ֗ה כִּ֚י אִם בֵּ֣ית אֱלֹהִ֔ים וְזֶ֖ה שַׁ֥עַר הַשָּׁמָֽיִם׃",
-      "russian": "И убоялся и сказал: как страшно сие место! это не иное что, как дом Божий, это врата небесные.",
-      "greek": "καὶ ἐφοβήθη, καὶ εἶπεν Ὡς φοβερὸς ὁ τόπος οὗτος· οὐκ ἔστιν τοῦτο ἀλλ’ ἢ οἶκος θεοῦ, καὶ αὕτη ἡ πύλη τοῦ οὐρανοῦ.",
-      "english": "Of the oil left in his hand the priest shall put some on the tip of the man's right ear, the thumb of his right hand, and the big toe of his right foot, over the blood of the guilt offering."
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַיִּירָא֙ וַיֹּאמַ֔ר מַה נּוֹרָ֖א הַמָּק֣וֹם הַזֶּ֑ה אֵ֣ין זֶ֗ה כִּ֚י אִם בֵּ֣ית אֱלֹהִ֔ים וְזֶ֖ה שַׁ֥עַר הַשָּׁמָֽיִם׃",
+        "VUL": "Pavensque, Quam terribilis est, inquit, locus iste ! non est hic aliud nisi domus Dei, et porta cæli.",
+        "LXX": "καὶ ἐφοβήθη, καὶ εἶπεν Ὡς φοβερὸς ὁ τόπος οὗτος· οὐκ ἔστιν τοῦτο ἀλλ’ ἢ οἶκος θεοῦ, καὶ αὕτη ἡ πύλη τοῦ οὐρανοῦ.",
+        "NAB": "Of the oil left in his hand the priest shall put some on the tip of the man's right ear, the thumb of his right hand, and the big toe of his right foot, over the blood of the guilt offering.",
+        "SYN": "И убоялся и сказал: как страшно сие место! это не иное что, как дом Божий, это врата небесные."
+      }
     },
     "18": {
-      "sort_number": 18,
-      "name": "18",
-      "latin": "Surgens ergo Jacob mane, tulit lapidem quem supposuerat capiti suo, et erexit in titulum, fundens oleum desuper.",
-      "word_count": 0,
-      "hebrew": "וַיַּשְׁכֵּ֨ם יַעֲקֹ֜ב בַּבֹּ֗קֶר וַיִּקַּ֤ח אֶת הָאֶ֨בֶן֙ אֲשֶׁר שָׂ֣ם מְרַֽאֲשֹׁתָ֔יו וַיָּ֥שֶׂם אֹתָ֖הּ מַצֵּבָ֑ה וַיִּצֹ֥ק שֶׁ֖מֶן עַל רֹאשָֽׁהּ׃",
-      "russian": "И встал Иаков рано утром, и взял камень, который он положил себе изголовьем, и поставил его памятником, и возлил елей на верх его.",
-      "greek": "καὶ ἀνέστη Ἰακὼβ τὸ πρωί, καὶ ἔλαβεν τὸν λίθον ὃν ἔθηκεν ἐκεῖ πρὸς κεφαλῆς αὐτοῦ καὶ ἔστησεν αὐτὸν στήλην, καὶ ἐπέχεεν ἔλαιον ἐπὶ τὸ ἄκρον αὐτῆς",
-      "english": "The rest of the oil in his hand the priest shall put on the head of the man being purified. Thus shall the priest make atonement for him before the LORD."
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַיַּשְׁכֵּ֨ם יַעֲקֹ֜ב בַּבֹּ֗קֶר וַיִּקַּ֤ח אֶת הָאֶ֨בֶן֙ אֲשֶׁר שָׂ֣ם מְרַֽאֲשֹׁתָ֔יו וַיָּ֥שֶׂם אֹתָ֖הּ מַצֵּבָ֑ה וַיִּצֹ֥ק שֶׁ֖מֶן עַל רֹאשָֽׁהּ׃",
+        "VUL": "Surgens ergo Jacob mane, tulit lapidem quem supposuerat capiti suo, et erexit in titulum, fundens oleum desuper.",
+        "LXX": "καὶ ἀνέστη Ἰακὼβ τὸ πρωί, καὶ ἔλαβεν τὸν λίθον ὃν ἔθηκεν ἐκεῖ πρὸς κεφαλῆς αὐτοῦ καὶ ἔστησεν αὐτὸν στήλην, καὶ ἐπέχεεν ἔλαιον ἐπὶ τὸ ἄκρον αὐτῆς",
+        "NAB": "The rest of the oil in his hand the priest shall put on the head of the man being purified. Thus shall the priest make atonement for him before the LORD.",
+        "SYN": "И встал Иаков рано утром, и взял камень, который он положил себе изголовьем, и поставил его памятником, и возлил елей на верх его."
+      }
     },
     "19": {
-      "sort_number": 19,
-      "name": "19",
-      "latin": "Appellavitque nomen urbis Bethel, quæ prius Luza vocabatur.",
-      "word_count": 0,
-      "hebrew": "וַיִּקְרָ֛א אֶת שֵֽׁם הַמָּק֥וֹם הַה֖וּא בֵּֽית אֵ֑ל וְאוּלָ֛ם ל֥וּז שֵׁם הָעִ֖יר לָרִאשֹׁנָֽה׃",
-      "russian": "И нарек [Иаков] имя месту тому: Вефиль, а прежнее имя того города было: Луз.",
-      "greek": "καὶ ἐκάλεσεν Ἰακὼβ τὸ ὄνομα τοῦ τόπου ἐκείνου Οἶκος θεοῦ· καὶ Οὐλαμμαὺς ἦν ὄνομα τῇ πόλει τὸ πρότερον.",
-      "english": "Only after he has offered the sin offering in atonement for the man's uncleanness shall the priest slaughter the holocaust"
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַיִּקְרָ֛א אֶת שֵֽׁם הַמָּק֥וֹם הַה֖וּא בֵּֽית אֵ֑ל וְאוּלָ֛ם ל֥וּז שֵׁם הָעִ֖יר לָרִאשֹׁנָֽה׃",
+        "VUL": "Appellavitque nomen urbis Bethel, quæ prius Luza vocabatur.",
+        "LXX": "καὶ ἐκάλεσεν Ἰακὼβ τὸ ὄνομα τοῦ τόπου ἐκείνου Οἶκος θεοῦ· καὶ Οὐλαμμαὺς ἦν ὄνομα τῇ πόλει τὸ πρότερον.",
+        "NAB": "Only after he has offered the sin offering in atonement for the man's uncleanness shall the priest slaughter the holocaust",
+        "SYN": "И нарек [Иаков] имя месту тому: Вефиль, а прежнее имя того города было: Луз."
+      }
     },
     "20": {
-      "sort_number": 20,
-      "name": "20",
-      "latin": "Vovit etiam votum, dicens: Si fuerit Deus mecum, et custodierit me in via, per quam ego ambulo, et dederit mihi panem ad vescendum, et vestimentum ad induendum,",
-      "word_count": 0,
-      "hebrew": "וַיִּדַּ֥ר יַעֲקֹ֖ב נֶ֣דֶר לֵאמֹ֑ר אִם יִהְיֶ֨ה אֱלֹהִ֜ים עִמָּדִ֗י וּשְׁמָרַ֨נִי֙ בַּדֶּ֤רֶךְ הַזֶּה֙ אֲשֶׁ֣ר אָנֹכִ֣י הוֹלֵ֔ךְ וְנָֽתַן לִ֥י לֶ֛חֶם לֶאֱכֹ֖ל וּבֶ֥גֶד לִלְבֹּֽשׁ׃",
-      "russian": "И положил Иаков обет, сказав: если [Господь] Бог будет со мною и сохранит меня в пути сем, в который я иду, и даст мне хлеб есть и одежду одеться,",
-      "greek": "καὶ ηὔξατο Ἰακὼβ εὐχὴν λέγων Ἐὰν ᾖ Κύριος ὁ θεὸς μετ’ ἐμοῦ, καὶ διαφυλάξῃ με ἐν τῇ ὁδῷ ταύτῃ ᾗ ἐγὼ πορεύομαι, καὶ δῷ μοι ἄρτον φαγεῖν καὶ ἱμάτιον περιβαλέσθαι,",
-      "english": "and offer it, together with the cereal offering, on the altar before the LORD. When the priest has thus made atonement for him, the man will be clean."
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַיִּדַּ֥ר יַעֲקֹ֖ב נֶ֣דֶר לֵאמֹ֑ר אִם יִהְיֶ֨ה אֱלֹהִ֜ים עִמָּדִ֗י וּשְׁמָרַ֨נִי֙ בַּדֶּ֤רֶךְ הַזֶּה֙ אֲשֶׁ֣ר אָנֹכִ֣י הוֹלֵ֔ךְ וְנָֽתַן לִ֥י לֶ֛חֶם לֶאֱכֹ֖ל וּבֶ֥גֶד לִלְבֹּֽשׁ׃",
+        "VUL": "Vovit etiam votum, dicens: Si fuerit Deus mecum, et custodierit me in via, per quam ego ambulo, et dederit mihi panem ad vescendum, et vestimentum ad induendum,",
+        "LXX": "καὶ ηὔξατο Ἰακὼβ εὐχὴν λέγων Ἐὰν ᾖ Κύριος ὁ θεὸς μετ’ ἐμοῦ, καὶ διαφυλάξῃ με ἐν τῇ ὁδῷ ταύτῃ ᾗ ἐγὼ πορεύομαι, καὶ δῷ μοι ἄρτον φαγεῖν καὶ ἱμάτιον περιβαλέσθαι,",
+        "NAB": "and offer it, together with the cereal offering, on the altar before the LORD. When the priest has thus made atonement for him, the man will be clean.",
+        "SYN": "И положил Иаков обет, сказав: если [Господь] Бог будет со мною и сохранит меня в пути сем, в который я иду, и даст мне хлеб есть и одежду одеться,"
+      }
     },
     "21": {
-      "sort_number": 21,
-      "name": "21",
-      "latin": "reversusque fuero prospere ad domum patris mei: erit mihi Dominus in Deum,",
-      "word_count": 0,
-      "hebrew": "וְשַׁבְתִּ֥י בְשָׁל֖וֹם אֶל בֵּ֣ית אָבִ֑י וְהָיָ֧ה יְהוָ֛ה לִ֖י לֵאלֹהִֽים׃",
-      "russian": "и я в мире возвращусь в дом отца моего, и будет Господь моим Богом, --",
-      "greek": "καὶ ἀποστρέψῃ με μετὰ σωτηρίας εἰς τὸν οἶκον τοῦ πατρός μου, καὶ ἔσται μοι Κύριος εἰς θεόν·",
-      "english": "\"If a man is poor and cannot afford so much, he shall take one male lamb for a guilt offering, to be used as a wave offering in atonement for himself, one tenth of an ephah of fine flour mixed with oil for a cereal offering, a log of oil,"
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְשַׁבְתִּ֥י בְשָׁל֖וֹם אֶל בֵּ֣ית אָבִ֑י וְהָיָ֧ה יְהוָ֛ה לִ֖י לֵאלֹהִֽים׃",
+        "VUL": "reversusque fuero prospere ad domum patris mei: erit mihi Dominus in Deum,",
+        "LXX": "καὶ ἀποστρέψῃ με μετὰ σωτηρίας εἰς τὸν οἶκον τοῦ πατρός μου, καὶ ἔσται μοι Κύριος εἰς θεόν·",
+        "NAB": "\"If a man is poor and cannot afford so much, he shall take one male lamb for a guilt offering, to be used as a wave offering in atonement for himself, one tenth of an ephah of fine flour mixed with oil for a cereal offering, a log of oil,",
+        "SYN": "и я в мире возвращусь в дом отца моего, и будет Господь моим Богом, --"
+      }
     },
     "22": {
-      "sort_number": 22,
-      "name": "22",
-      "latin": "et lapis iste, quem erexi in titulum, vocabitur Domus Dei: cunctorumque quæ dederis mihi, decimas offeram tibi.",
-      "word_count": 0,
-      "hebrew": "וְהָאֶ֣בֶן הַזֹּ֗את אֲשֶׁר שַׂ֨מְתִּי֙ מַצֵּבָ֔ה יִהְיֶ֖ה בֵּ֣ית אֱלֹהִ֑ים וְכֹל֙ אֲשֶׁ֣ר תִּתֶּן לִ֔י עַשֵּׂ֖ר אֲעַשְּׂרֶ֥נּוּ לָֽךְ׃",
-      "russian": "то этот камень, который я поставил памятником, будет [у меня] домом Божиим; и из всего, что Ты, Боже, даруешь мне, я дам Тебе десятую часть.",
-      "greek": "καὶ ὁ λίθος οὗτος, ὃν ἔστησα στήλην, ἔσται μοι οἶκος θεοῦ· καὶ πάντων ὧν ἐάν μοι δῷς, δεκάτην ἀποδεκατώσω αὐτά σοι.",
-      "english": "and two turtledoves or pigeons, which he can more easily afford, the one as a sin offering and the other as a holocaust."
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְהָאֶ֣בֶן הַזֹּ֗את אֲשֶׁר שַׂ֨מְתִּי֙ מַצֵּבָ֔ה יִהְיֶ֖ה בֵּ֣ית אֱלֹהִ֑ים וְכֹל֙ אֲשֶׁ֣ר תִּתֶּן לִ֔י עַשֵּׂ֖ר אֲעַשְּׂרֶ֥נּוּ לָֽךְ׃",
+        "VUL": "et lapis iste, quem erexi in titulum, vocabitur Domus Dei: cunctorumque quæ dederis mihi, decimas offeram tibi.",
+        "LXX": "καὶ ὁ λίθος οὗτος, ὃν ἔστησα στήλην, ἔσται μοι οἶκος θεοῦ· καὶ πάντων ὧν ἐάν μοι δῷς, δεκάτην ἀποδεκατώσω αὐτά σοι.",
+        "NAB": "and two turtledoves or pigeons, which he can more easily afford, the one as a sin offering and the other as a holocaust.",
+        "SYN": "то этот камень, который я поставил памятником, будет [у меня] домом Божиим; и из всего, что Ты, Боже, даруешь мне, я дам Тебе десятую часть."
+      }
     }
   }
 }

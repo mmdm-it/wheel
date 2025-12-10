@@ -9,6 +9,20 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.8.118] - 2025-12-10
+
+### Changed
+- Migrate all 1,215 chapter files to v2.0 schema structure
+- Add `chapter_in` field with MT/VUL/LXX versification mappings
+- Add `v_in` field for per-verse versification mappings
+- Replace language keys (latin, hebrew) with translation codes (VUL, WLC)
+- Add `exists_in` field for tradition-specific content (Daniel 13-14, Esther 11-16)
+- Create `translations.json` metadata file with versification system definitions
+
+### Added
+- Add `scripts/migrate_to_v2.py` migration script with Psalms versification logic
+- Create backup at `chapters_v1_backup` before migration
+
 ## [0.8.117] - 2025-12-07
 
 ### Added

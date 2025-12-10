@@ -1,173 +1,255 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "GENE_016",
-  "chapter_key": "16",
-  "chapter_number": 16,
-  "sort_number": 16,
-  "name": "16",
   "book_key": "GENE",
+  "sequence": 16,
+  "chapter_in": {
+    "MT": 16,
+    "VUL": 16,
+    "LXX": 16
+  },
   "testament": "Vetus_Testamentum",
   "section": "Pentateuchus",
-  "verse_count": 16,
   "verses": {
     "1": {
-      "sort_number": 1,
-      "name": "1",
-      "latin": "Igitur Sarai, uxor Abram, non genuerat liberos: sed habens ancillam ægyptiam nomine Agar,",
-      "word_count": 0,
-      "hebrew": "וְשָׂרַי֙ אֵ֣שֶׁת אַבְרָ֔ם לֹ֥א יָלְדָ֖ה ל֑וֹ וְלָ֛הּ שִׁפְחָ֥ה מִצְרִ֖ית וּשְׁמָ֥הּ הָגָֽר׃",
-      "russian": "Но Сара, жена Аврамова, не рождала ему. У ней была служанка Египтянка, именем Агарь.",
-      "greek": "Σάρα δὲ ἡ γυνὴ Ἀβρὰμ οὐκ ἔτικτεν αὐτῷ· ἦν δὲ αὐτῇ παιδίσκη Αἰγυπτία ᾗ ὄνομα Ἁγάρ.",
-      "english": "When Jacob learned that grain rations were available in Egypt, he said to his sons: \"Why do you keep gaping at one another?"
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְשָׂרַי֙ אֵ֣שֶׁת אַבְרָ֔ם לֹ֥א יָלְדָ֖ה ל֑וֹ וְלָ֛הּ שִׁפְחָ֥ה מִצְרִ֖ית וּשְׁמָ֥הּ הָגָֽר׃",
+        "VUL": "Igitur Sarai, uxor Abram, non genuerat liberos: sed habens ancillam ægyptiam nomine Agar,",
+        "LXX": "Σάρα δὲ ἡ γυνὴ Ἀβρὰμ οὐκ ἔτικτεν αὐτῷ· ἦν δὲ αὐτῇ παιδίσκη Αἰγυπτία ᾗ ὄνομα Ἁγάρ.",
+        "NAB": "When Jacob learned that grain rations were available in Egypt, he said to his sons: \"Why do you keep gaping at one another?",
+        "SYN": "Но Сара, жена Аврамова, не рождала ему. У ней была служанка Египтянка, именем Агарь."
+      }
     },
     "2": {
-      "sort_number": 2,
-      "name": "2",
-      "latin": "dixit marito suo: Ecce, conclusit me Dominus, ne parerem. Ingredere ad ancillam meam, si forte saltem ex illa suscipiam filios. Cumque ille acquiesceret deprecanti,",
-      "word_count": 0,
-      "hebrew": "וַתֹּ֨אמֶר שָׂרַ֜י אֶל אַבְרָ֗ם הִנֵּה נָ֞א עֲצָרַ֤נִי יְהוָה֙ מִלֶּ֔דֶת בֹּא נָא֙ אֶל שִׁפְחָתִ֔י אוּלַ֥י אִבָּנֶ֖ה מִמֶּ֑נָּה וַיִּשְׁמַ֥ע אַבְרָ֖ם לְק֥וֹל שָׂרָֽי׃",
-      "russian": "И сказала Сара Авраму: вот, Господь заключил чрево мое, чтобы мне не рождать; войди же к служанке моей: может быть, я буду иметь детей от нее. Аврам послушался слов Сары.",
-      "greek": "εἶπεν δὲ Σάρα πρὸς Ἀβράμ Ἰδοὺ συνέκλεισέν με Κύριος τοῦ μὴ τίκτειν· εἴσελθε οὖν πρὸς τὴν παιδίσκην μου, ἵνα τεκνοποιήσεις ἐξ αὐτῆς. ὑπήκουσεν δὲ Ἀβρὰμ τῆς φωνῆς αὐτῆς.",
-      "english": "I hear,\" he went on, \"that rations of grain are available in Egypt. Go down there and buy some for us, that we may stay alive rather than die of hunger.\""
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַתֹּ֨אמֶר שָׂרַ֜י אֶל אַבְרָ֗ם הִנֵּה נָ֞א עֲצָרַ֤נִי יְהוָה֙ מִלֶּ֔דֶת בֹּא נָא֙ אֶל שִׁפְחָתִ֔י אוּלַ֥י אִבָּנֶ֖ה מִמֶּ֑נָּה וַיִּשְׁמַ֥ע אַבְרָ֖ם לְק֥וֹל שָׂרָֽי׃",
+        "VUL": "dixit marito suo: Ecce, conclusit me Dominus, ne parerem. Ingredere ad ancillam meam, si forte saltem ex illa suscipiam filios. Cumque ille acquiesceret deprecanti,",
+        "LXX": "εἶπεν δὲ Σάρα πρὸς Ἀβράμ Ἰδοὺ συνέκλεισέν με Κύριος τοῦ μὴ τίκτειν· εἴσελθε οὖν πρὸς τὴν παιδίσκην μου, ἵνα τεκνοποιήσεις ἐξ αὐτῆς. ὑπήκουσεν δὲ Ἀβρὰμ τῆς φωνῆς αὐτῆς.",
+        "NAB": "I hear,\" he went on, \"that rations of grain are available in Egypt. Go down there and buy some for us, that we may stay alive rather than die of hunger.\"",
+        "SYN": "И сказала Сара Авраму: вот, Господь заключил чрево мое, чтобы мне не рождать; войди же к служанке моей: может быть, я буду иметь детей от нее. Аврам послушался слов Сары."
+      }
     },
     "3": {
-      "sort_number": 3,
-      "name": "3",
-      "latin": "tulit Agar ægyptiam ancillam suam post annos decem quam habitare cperant in terra Chanaan: et dedit eam viro suo uxorem.",
-      "word_count": 0,
-      "hebrew": "וַתִּקַּ֞ח שָׂרַ֣י אֵֽשֶׁת אַבְרָ֗ם אֶת הָגָ֤ר הַמִּצְרִית֙ שִׁפְחָתָ֔הּ מִקֵּץ֙ עֶ֣שֶׂר שָׁנִ֔ים לְשֶׁ֥בֶת אַבְרָ֖ם בְּאֶ֣רֶץ כְּנָ֑עַן וַתִּתֵּ֥ן אֹתָ֛הּ לְאַבְרָ֥ם אִישָׁ֖הּ ל֥וֹ לְאִשָּֽׁה׃",
-      "russian": "И взяла Сара, жена Аврамова, служанку свою, Египтянку Агарь, по истечении десяти лет пребывания Аврамова в земле Ханаанской, и дала ее Авраму, мужу своему, в жену.",
-      "greek": "καὶ λαβοῦσα Σάρα ἡ γυνὴ Ἀβρὰμ Ἁγὰρ τὴν Αἰγυπτίαν τὴν ἑαυτῆς παιδίσκην, μετὰ δέκα ἔτη τοῦ οἰκῆσαι Ἀβρὰμ ἐν γῇ Χανάαν, καὶ ἔδωκεν αὐτὴν τῷ Ἀβρὰμ ἀνδρὶ αὐτῆς αὐτῷ γυναῖκα.",
-      "english": "So ten of Joseph's brothers went down to buy an emergency supply of grain from Egypt."
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַתִּקַּ֞ח שָׂרַ֣י אֵֽשֶׁת אַבְרָ֗ם אֶת הָגָ֤ר הַמִּצְרִית֙ שִׁפְחָתָ֔הּ מִקֵּץ֙ עֶ֣שֶׂר שָׁנִ֔ים לְשֶׁ֥בֶת אַבְרָ֖ם בְּאֶ֣רֶץ כְּנָ֑עַן וַתִּתֵּ֥ן אֹתָ֛הּ לְאַבְרָ֥ם אִישָׁ֖הּ ל֥וֹ לְאִשָּֽׁה׃",
+        "VUL": "tulit Agar ægyptiam ancillam suam post annos decem quam habitare cperant in terra Chanaan: et dedit eam viro suo uxorem.",
+        "LXX": "καὶ λαβοῦσα Σάρα ἡ γυνὴ Ἀβρὰμ Ἁγὰρ τὴν Αἰγυπτίαν τὴν ἑαυτῆς παιδίσκην, μετὰ δέκα ἔτη τοῦ οἰκῆσαι Ἀβρὰμ ἐν γῇ Χανάαν, καὶ ἔδωκεν αὐτὴν τῷ Ἀβρὰμ ἀνδρὶ αὐτῆς αὐτῷ γυναῖκα.",
+        "NAB": "So ten of Joseph's brothers went down to buy an emergency supply of grain from Egypt.",
+        "SYN": "И взяла Сара, жена Аврамова, служанку свою, Египтянку Агарь, по истечении десяти лет пребывания Аврамова в земле Ханаанской, и дала ее Авраму, мужу своему, в жену."
+      }
     },
     "4": {
-      "sort_number": 4,
-      "name": "4",
-      "latin": "Qui ingressus est ad eam. At illa concepisse se videns, despexit dominam suam.",
-      "word_count": 0,
-      "hebrew": "וַיָּבֹ֥א אֶל הָגָ֖ר וַתַּ֑הַר וַתֵּ֨רֶא֙ כִּ֣י הָרָ֔תָה וַתֵּקַ֥ל גְּבִרְתָּ֖הּ בְּעֵינֶֽיהָ׃",
-      "russian": "Он вошел к Агари, и она зачала. Увидев же, что зачала, она стала презирать госпожу свою.",
-      "greek": "καὶ εἰσῆλθεν πρὸς Ἁγάρ, καὶ συνέλαβεν· καὶ ἴδεν ὅτι ἐν γαστρὶ ἔχει, καὶ ἠτιμάσθη ἡ κυρία ἐναντίον αὐτῆς.",
-      "english": "It was only Joseph's full brother Benjamin that Jacob did not send with the rest, for he thought some disaster might befall him."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַיָּבֹ֥א אֶל הָגָ֖ר וַתַּ֑הַר וַתֵּ֨רֶא֙ כִּ֣י הָרָ֔תָה וַתֵּקַ֥ל גְּבִרְתָּ֖הּ בְּעֵינֶֽיהָ׃",
+        "VUL": "Qui ingressus est ad eam. At illa concepisse se videns, despexit dominam suam.",
+        "LXX": "καὶ εἰσῆλθεν πρὸς Ἁγάρ, καὶ συνέλαβεν· καὶ ἴδεν ὅτι ἐν γαστρὶ ἔχει, καὶ ἠτιμάσθη ἡ κυρία ἐναντίον αὐτῆς.",
+        "NAB": "It was only Joseph's full brother Benjamin that Jacob did not send with the rest, for he thought some disaster might befall him.",
+        "SYN": "Он вошел к Агари, и она зачала. Увидев же, что зачала, она стала презирать госпожу свою."
+      }
     },
     "5": {
-      "sort_number": 5,
-      "name": "5",
-      "latin": "Dixitque Sarai ad Abram: Inique agis contra me: ego dedi ancillam meam in sinum tuum, quæ videns quod conceperit, despectui me habet: judicet Dominus inter me et te.",
-      "word_count": 0,
-      "hebrew": "וַתֹּ֨אמֶר שָׂרַ֣י אֶל אַבְרָם֮ חֲמָסִ֣י עָלֶיךָ֒ אָנֹכִ֗י נָתַ֤תִּי שִׁפְחָתִי֙ בְּחֵיקֶ֔ךָ וַתֵּ֨רֶא֙ כִּ֣י הָרָ֔תָה וָאֵקַ֖ל בְּעֵינֶ֑יהָ יִשְׁפֹּ֥ט יְהוָ֖ה בֵּינִ֥י וּבֵינֶֽיׄךָ׃",
-      "russian": "И сказала Сара Авраму: в обиде моей ты виновен; я отдала служанку мою в недро твое; а она, увидев, что зачала, стала презирать меня; Господь пусть будет судьею между мною и между тобою.",
-      "greek": "εἶπεν δὲ Σάρα πρὸς Ἀβράμ Ἀδικοῦμαι ἐκ σοῦ· ἐγὼ δέδωκα τὴν παιδίσκην μου εἰς τὸν κόλπον σου· ἰδοῦσα δὲ ὅτι ἐν γαστρὶ ἔχει, ἠτιμάσθην ἐναντίον αὐτῆς. κρίναι ὁ θεὸς ἀνὰ μέσον ἐμοῦ καὶ σοῦ.",
-      "english": "Thus, since there was famine in the land of Canaan also, the sons of Israel were among those who came to procure rations."
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַתֹּ֨אמֶר שָׂרַ֣י אֶל אַבְרָם֮ חֲמָסִ֣י עָלֶיךָ֒ אָנֹכִ֗י נָתַ֤תִּי שִׁפְחָתִי֙ בְּחֵיקֶ֔ךָ וַתֵּ֨רֶא֙ כִּ֣י הָרָ֔תָה וָאֵקַ֖ל בְּעֵינֶ֑יהָ יִשְׁפֹּ֥ט יְהוָ֖ה בֵּינִ֥י וּבֵינֶֽיׄךָ׃",
+        "VUL": "Dixitque Sarai ad Abram: Inique agis contra me: ego dedi ancillam meam in sinum tuum, quæ videns quod conceperit, despectui me habet: judicet Dominus inter me et te.",
+        "LXX": "εἶπεν δὲ Σάρα πρὸς Ἀβράμ Ἀδικοῦμαι ἐκ σοῦ· ἐγὼ δέδωκα τὴν παιδίσκην μου εἰς τὸν κόλπον σου· ἰδοῦσα δὲ ὅτι ἐν γαστρὶ ἔχει, ἠτιμάσθην ἐναντίον αὐτῆς. κρίναι ὁ θεὸς ἀνὰ μέσον ἐμοῦ καὶ σοῦ.",
+        "NAB": "Thus, since there was famine in the land of Canaan also, the sons of Israel were among those who came to procure rations.",
+        "SYN": "И сказала Сара Авраму: в обиде моей ты виновен; я отдала служанку мою в недро твое; а она, увидев, что зачала, стала презирать меня; Господь пусть будет судьею между мною и между тобою."
+      }
     },
     "6": {
-      "sort_number": 6,
-      "name": "6",
-      "latin": "Cui respondens Abram: Ecce, ait, ancilla tua in manu tua est, utere ea ut libet. Affligente igitur eam Sarai, fugam iniit.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֨אמֶר אַבְרָ֜ם אֶל שָׂרַ֗י הִנֵּ֤ה שִׁפְחָתֵךְ֙ בְּיָדֵ֔ךְ עֲשִׂי לָ֖הּ הַטּ֣וֹב בְּעֵינָ֑יִךְ וַתְּעַנֶּ֣הָ שָׂרַ֔י וַתִּבְרַ֖ח מִפָּנֶֽיהָ׃",
-      "russian": "Аврам сказал Саре: вот, служанка твоя в твоих руках; делай с нею, что тебе угодно. И Сара стала притеснять ее, и она убежала от нее.",
-      "greek": "εἶπεν δὲ Ἀβρὰμ πρὸς Σάραν Ἰδοὺ ἡ παιδίσκη σου ἐναντίον ⸆ σου· χρῶ αὐτῇ ὡς δ’ ἄν σοι ἀρεστὸν ᾖ. καὶ ἐκάκωσεν αὐτὴν Σάρα, καὶ ἀπέδρα ἀπὸ προσώπου αὐτῆς.",
-      "english": "It was Joseph, as governor of the country, who dispensed the rations to all the people. When Joseph's brothers came and knelt down before him with their faces to the ground,"
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַיֹּ֨אמֶר אַבְרָ֜ם אֶל שָׂרַ֗י הִנֵּ֤ה שִׁפְחָתֵךְ֙ בְּיָדֵ֔ךְ עֲשִׂי לָ֖הּ הַטּ֣וֹב בְּעֵינָ֑יִךְ וַתְּעַנֶּ֣הָ שָׂרַ֔י וַתִּבְרַ֖ח מִפָּנֶֽיהָ׃",
+        "VUL": "Cui respondens Abram: Ecce, ait, ancilla tua in manu tua est, utere ea ut libet. Affligente igitur eam Sarai, fugam iniit.",
+        "LXX": "εἶπεν δὲ Ἀβρὰμ πρὸς Σάραν Ἰδοὺ ἡ παιδίσκη σου ἐναντίον ⸆ σου· χρῶ αὐτῇ ὡς δ’ ἄν σοι ἀρεστὸν ᾖ. καὶ ἐκάκωσεν αὐτὴν Σάρα, καὶ ἀπέδρα ἀπὸ προσώπου αὐτῆς.",
+        "NAB": "It was Joseph, as governor of the country, who dispensed the rations to all the people. When Joseph's brothers came and knelt down before him with their faces to the ground,",
+        "SYN": "Аврам сказал Саре: вот, служанка твоя в твоих руках; делай с нею, что тебе угодно. И Сара стала притеснять ее, и она убежала от нее."
+      }
     },
     "7": {
-      "sort_number": 7,
-      "name": "7",
-      "latin": "Cumque invenisset eam angelus Domini juxta fontem aquæ in solitudine, qui est in via Sur in deserto,",
-      "word_count": 0,
-      "hebrew": "וַֽיִּמְצָאָ֞הּ מַלְאַ֧ךְ יְהוָ֛ה עַל עֵ֥ין הַמַּ֖יִם בַּמִּדְבָּ֑ר עַל הָעַ֖יִן בְּדֶ֥רֶךְ שֽׁוּר׃",
-      "russian": "И нашел ее Ангел Господень у источника воды в пустыне, у источника на дороге к Суру.",
-      "greek": "εὗρεν δὲ αὐτὴν ἄγγελος Κυρίου τοῦ θεοῦ ἐπὶ τῆς πηγῆς τοῦ ὕδατος ἐν τῇ ἐρήμῳ, ἐπὶ τῆς πηγῆς ἐν τῇ ὁδῷ Σούρ.",
-      "english": "he recognized them as soon as he saw them. But he concealed his own identity from them and spoke sternly to them. \"Where do you come from?\" he asked them. They answered, \"From the land of Canaan, to procure food.\""
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַֽיִּמְצָאָ֞הּ מַלְאַ֧ךְ יְהוָ֛ה עַל עֵ֥ין הַמַּ֖יִם בַּמִּדְבָּ֑ר עַל הָעַ֖יִן בְּדֶ֥רֶךְ שֽׁוּר׃",
+        "VUL": "Cumque invenisset eam angelus Domini juxta fontem aquæ in solitudine, qui est in via Sur in deserto,",
+        "LXX": "εὗρεν δὲ αὐτὴν ἄγγελος Κυρίου τοῦ θεοῦ ἐπὶ τῆς πηγῆς τοῦ ὕδατος ἐν τῇ ἐρήμῳ, ἐπὶ τῆς πηγῆς ἐν τῇ ὁδῷ Σούρ.",
+        "NAB": "he recognized them as soon as he saw them. But he concealed his own identity from them and spoke sternly to them. \"Where do you come from?\" he asked them. They answered, \"From the land of Canaan, to procure food.\"",
+        "SYN": "И нашел ее Ангел Господень у источника воды в пустыне, у источника на дороге к Суру."
+      }
     },
     "8": {
-      "sort_number": 8,
-      "name": "8",
-      "latin": "dixit ad illam: Agar ancilla Sarai, unde venis ? et quo vadis ? Quæ respondit: A facie Sarai dominæ meæ ego fugio.",
-      "word_count": 0,
-      "hebrew": "וַיֹּאמַ֗ר הָגָ֞ר שִׁפְחַ֥ת שָׂרַ֛י אֵֽי מִזֶּ֥ה בָ֖את וְאָ֣נָה תֵלֵ֑כִי וַתֹּ֕אמֶר מִפְּנֵי֙ שָׂרַ֣י גְּבִרְתִּ֔י אָנֹכִ֖י בֹּרַֽחַת׃",
-      "russian": "И сказал [ей Ангел Господень]: Агарь, служанка Сарина! откуда ты пришла и куда идешь? Она сказала: я бегу от лица Сары, госпожи моей.",
-      "greek": "καὶ εἶπεν αὐτῇ ὁ ἄγγελος Κυρίου Ἁγὰρ παιδίσκη Σάρας, πόθεν ἔρχῃ; καὶ ποῦ πορεύῃ; καὶ εἶπεν Ἀπὸ προσώπου Σάρας τῆς κυρίας μου ἐγὼ ἀποδιδράσκω.",
-      "english": "When Joseph recognized his brothers, although they did not recognize him,"
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַיֹּאמַ֗ר הָגָ֞ר שִׁפְחַ֥ת שָׂרַ֛י אֵֽי מִזֶּ֥ה בָ֖את וְאָ֣נָה תֵלֵ֑כִי וַתֹּ֕אמֶר מִפְּנֵי֙ שָׂרַ֣י גְּבִרְתִּ֔י אָנֹכִ֖י בֹּרַֽחַת׃",
+        "VUL": "dixit ad illam: Agar ancilla Sarai, unde venis ? et quo vadis ? Quæ respondit: A facie Sarai dominæ meæ ego fugio.",
+        "LXX": "καὶ εἶπεν αὐτῇ ὁ ἄγγελος Κυρίου Ἁγὰρ παιδίσκη Σάρας, πόθεν ἔρχῃ; καὶ ποῦ πορεύῃ; καὶ εἶπεν Ἀπὸ προσώπου Σάρας τῆς κυρίας μου ἐγὼ ἀποδιδράσκω.",
+        "NAB": "When Joseph recognized his brothers, although they did not recognize him,",
+        "SYN": "И сказал [ей Ангел Господень]: Агарь, служанка Сарина! откуда ты пришла и куда идешь? Она сказала: я бегу от лица Сары, госпожи моей."
+      }
     },
     "9": {
-      "sort_number": 9,
-      "name": "9",
-      "latin": "Dixitque ei angelus Domini: Revertere ad dominam tuam, et humiliare sub manu illius.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֤אמֶר לָהּ֙ מַלְאַ֣ךְ יְהוָ֔ה שׁ֖וּבִי אֶל גְּבִרְתֵּ֑ךְ וְהִתְעַנִּ֖י תַּ֥חַת יָדֶֽיהָ׃",
-      "russian": "Ангел Господень сказал ей: возвратись к госпоже своей и покорись ей.",
-      "greek": "εἶπεν δὲ αὐτῇ ὁ ἄγγελος Κυρίου Ἀποστράφηθι πρὸς τὴν κυρίαν σου καὶ ταπεινώθητι ὑπὸ τὰς χεῖρας αὐτῆς.",
-      "english": "he was reminded of the dreams he had about them. He said to them: \"You are spies. You have come to see the nakedness of the land.\""
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַיֹּ֤אמֶר לָהּ֙ מַלְאַ֣ךְ יְהוָ֔ה שׁ֖וּבִי אֶל גְּבִרְתֵּ֑ךְ וְהִתְעַנִּ֖י תַּ֥חַת יָדֶֽיהָ׃",
+        "VUL": "Dixitque ei angelus Domini: Revertere ad dominam tuam, et humiliare sub manu illius.",
+        "LXX": "εἶπεν δὲ αὐτῇ ὁ ἄγγελος Κυρίου Ἀποστράφηθι πρὸς τὴν κυρίαν σου καὶ ταπεινώθητι ὑπὸ τὰς χεῖρας αὐτῆς.",
+        "NAB": "he was reminded of the dreams he had about them. He said to them: \"You are spies. You have come to see the nakedness of the land.\"",
+        "SYN": "Ангел Господень сказал ей: возвратись к госпоже своей и покорись ей."
+      }
     },
     "10": {
-      "sort_number": 10,
-      "name": "10",
-      "latin": "Et rursum: Multiplicans, inquit, multiplicabo semen tuum, et non numerabitur præ multitudine.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֤אמֶר לָהּ֙ מַלְאַ֣ךְ יְהוָ֔ה הַרְבָּ֥ה אַרְבֶּ֖ה אֶת זַרְעֵ֑ךְ וְלֹ֥א יִסָּפֵ֖ר מֵרֹֽב׃",
-      "russian": "И сказал ей Ангел Господень: умножая умножу потомство твое, так что нельзя будет и счесть его от множества.",
-      "greek": "⸂⸆⸃ καὶ εἶπεν αὐτῇ ὁ ἄγγελος Κυρίου Πληθύνων πληθυνῶ τὸ σπέρμα σου, καὶ οὐκ ἀριθμήσεται ἀπὸ τοῦ πλήθους.",
-      "english": "\"No, my lord,\" they replied. \"On the contrary, your servants have come to procure food."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַיֹּ֤אמֶר לָהּ֙ מַלְאַ֣ךְ יְהוָ֔ה הַרְבָּ֥ה אַרְבֶּ֖ה אֶת זַרְעֵ֑ךְ וְלֹ֥א יִסָּפֵ֖ר מֵרֹֽב׃",
+        "VUL": "Et rursum: Multiplicans, inquit, multiplicabo semen tuum, et non numerabitur præ multitudine.",
+        "LXX": "⸂⸆⸃ καὶ εἶπεν αὐτῇ ὁ ἄγγελος Κυρίου Πληθύνων πληθυνῶ τὸ σπέρμα σου, καὶ οὐκ ἀριθμήσεται ἀπὸ τοῦ πλήθους.",
+        "NAB": "\"No, my lord,\" they replied. \"On the contrary, your servants have come to procure food.",
+        "SYN": "И сказал ей Ангел Господень: умножая умножу потомство твое, так что нельзя будет и счесть его от множества."
+      }
     },
     "11": {
-      "sort_number": 11,
-      "name": "11",
-      "latin": "Ac deinceps: Ecce, ait, concepisti, et paries filium: vocabisque nomen ejus Ismaël, eo quod audierit Dominus afflictionem tuam.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֤אמֶר לָהּ֙ מַלְאַ֣ךְ יְהוָ֔ה הִנָּ֥ךְ הָרָ֖ה וְיֹלַ֣דְתְּ בֵּ֑ן וְקָרָ֤את שְׁמוֹ֙ יִשְׁמָעֵ֔אל כִּֽי שָׁמַ֥ע יְהוָ֖ה אֶל עָנְיֵֽךְ׃",
-      "russian": "И еще сказал ей Ангел Господень: вот, ты беременна, и родишь сына, и наречешь ему имя Измаил, ибо услышал Господь страдание твое;",
-      "greek": "καὶ εἶπεν αὐτῇ ὁ ἄγγελος Κυρίου Ἰδοὺ σὺ ἐν γαστρὶ ἔχεις, καὶ τέξῃ υἱόν, καὶ καλέσεις τὸ ὄνομα αὐτοῦ Ἰσμαήλ, ὅτι ἐπήκουσεν Κύριος τῇ ταπεινώσει σου.",
-      "english": "All of us are sons of the same man. We are honest men; your servants have never been spies.\""
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַיֹּ֤אמֶר לָהּ֙ מַלְאַ֣ךְ יְהוָ֔ה הִנָּ֥ךְ הָרָ֖ה וְיֹלַ֣דְתְּ בֵּ֑ן וְקָרָ֤את שְׁמוֹ֙ יִשְׁמָעֵ֔אל כִּֽי שָׁמַ֥ע יְהוָ֖ה אֶל עָנְיֵֽךְ׃",
+        "VUL": "Ac deinceps: Ecce, ait, concepisti, et paries filium: vocabisque nomen ejus Ismaël, eo quod audierit Dominus afflictionem tuam.",
+        "LXX": "καὶ εἶπεν αὐτῇ ὁ ἄγγελος Κυρίου Ἰδοὺ σὺ ἐν γαστρὶ ἔχεις, καὶ τέξῃ υἱόν, καὶ καλέσεις τὸ ὄνομα αὐτοῦ Ἰσμαήλ, ὅτι ἐπήκουσεν Κύριος τῇ ταπεινώσει σου.",
+        "NAB": "All of us are sons of the same man. We are honest men; your servants have never been spies.\"",
+        "SYN": "И еще сказал ей Ангел Господень: вот, ты беременна, и родишь сына, и наречешь ему имя Измаил, ибо услышал Господь страдание твое;"
+      }
     },
     "12": {
-      "sort_number": 12,
-      "name": "12",
-      "latin": "Hic erit ferus homo: manus ejus contra omnes, et manus omnium contra eum: et e regione universorum fratrum suorum figet tabernacula.",
-      "word_count": 0,
-      "hebrew": "וְה֤וּא יִהְיֶה֙ פֶּ֣רֶא אָדָ֔ם יָד֣וֹ בַכֹּ֔ל וְיַ֥ד כֹּ֖ל בּ֑וֹ וְעַל פְּנֵ֥י כָל אֶחָ֖יו יִשְׁכֹּֽן׃",
-      "russian": "он будет между людьми, как дикий осел; руки его на всех, и руки всех на него; жить будет он пред лицем всех братьев своих.",
-      "greek": "οὗτος ἔσται ἄγροικος ἄνθρωπος· αἱ χεῖρες αὐτοῦ ἐπὶ πάντας καὶ αἱ χεῖρες πάντων ἐπ’ αὐτόν, καὶ κατὰ πρόσωπον πάντων τῶν ἀδελφῶν αὐτοῦ κατοικήσει.",
-      "english": "But he answered them: \"Not so! You have come to see the nakedness of the land.\""
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְה֤וּא יִהְיֶה֙ פֶּ֣רֶא אָדָ֔ם יָד֣וֹ בַכֹּ֔ל וְיַ֥ד כֹּ֖ל בּ֑וֹ וְעַל פְּנֵ֥י כָל אֶחָ֖יו יִשְׁכֹּֽן׃",
+        "VUL": "Hic erit ferus homo: manus ejus contra omnes, et manus omnium contra eum: et e regione universorum fratrum suorum figet tabernacula.",
+        "LXX": "οὗτος ἔσται ἄγροικος ἄνθρωπος· αἱ χεῖρες αὐτοῦ ἐπὶ πάντας καὶ αἱ χεῖρες πάντων ἐπ’ αὐτόν, καὶ κατὰ πρόσωπον πάντων τῶν ἀδελφῶν αὐτοῦ κατοικήσει.",
+        "NAB": "But he answered them: \"Not so! You have come to see the nakedness of the land.\"",
+        "SYN": "он будет между людьми, как дикий осел; руки его на всех, и руки всех на него; жить будет он пред лицем всех братьев своих."
+      }
     },
     "13": {
-      "sort_number": 13,
-      "name": "13",
-      "latin": "Vocavit autem nomen Domini qui loquebatur ad eam: Tu Deus qui vidisti me. Dixit enim: Profecto hic vidi posteriora videntis me.",
-      "word_count": 0,
-      "hebrew": "וַתִּקְרָ֤א שֵׁם יְהוָה֙ הַדֹּבֵ֣ר אֵלֶ֔יהָ אַתָּ֖ה אֵ֣ל רֳאִ֑י כִּ֣י אָֽמְרָ֗ה הֲגַ֥ם הֲלֹ֛ם רָאִ֖יתִי אַחֲרֵ֥י רֹאִֽי׃",
-      "russian": "И нарекла [Агарь] Господа, Который говорил к ней, сим именем: Ты Бог видящий меня. Ибо сказала она: точно я видела здесь в след видящего меня.",
-      "greek": "καὶ ἐκάλεσεν Ἁγὰρ τὸ ὄνομα Κυρίου τοῦ λαλοῦντος πρὸς αὐτήν Σὺ ὁ θεὸς ὁ ἐφιδών με· ὅτι εἶπεν Καὶ γὰρ ἐνώπιον ἴδον ὀφθέντα μοι.",
-      "english": "\"We your servants,\" they said, \"were twelve brothers, sons of a certain man in Canaan; but the youngest one is at present with our father, and the other one is gone.\""
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַתִּקְרָ֤א שֵׁם יְהוָה֙ הַדֹּבֵ֣ר אֵלֶ֔יהָ אַתָּ֖ה אֵ֣ל רֳאִ֑י כִּ֣י אָֽמְרָ֗ה הֲגַ֥ם הֲלֹ֛ם רָאִ֖יתִי אַחֲרֵ֥י רֹאִֽי׃",
+        "VUL": "Vocavit autem nomen Domini qui loquebatur ad eam: Tu Deus qui vidisti me. Dixit enim: Profecto hic vidi posteriora videntis me.",
+        "LXX": "καὶ ἐκάλεσεν Ἁγὰρ τὸ ὄνομα Κυρίου τοῦ λαλοῦντος πρὸς αὐτήν Σὺ ὁ θεὸς ὁ ἐφιδών με· ὅτι εἶπεν Καὶ γὰρ ἐνώπιον ἴδον ὀφθέντα μοι.",
+        "NAB": "\"We your servants,\" they said, \"were twelve brothers, sons of a certain man in Canaan; but the youngest one is at present with our father, and the other one is gone.\"",
+        "SYN": "И нарекла [Агарь] Господа, Который говорил к ней, сим именем: Ты Бог видящий меня. Ибо сказала она: точно я видела здесь в след видящего меня."
+      }
     },
     "14": {
-      "sort_number": 14,
-      "name": "14",
-      "latin": "Propterea appellavit puteum illum Puteum viventis et videntis me. Ipse est inter Cades et Barad.",
-      "word_count": 0,
-      "hebrew": "עַל כֵּן֙ קָרָ֣א לַבְּאֵ֔ר בְּאֵ֥ר לַחַ֖י רֹאִ֑י הִנֵּ֥ה בֵין קָדֵ֖שׁ וּבֵ֥ין בָּֽרֶד׃",
-      "russian": "Посему источник тот называется: Беэр-лахай-рои. Он находится между Кадесом и между Баредом.",
-      "greek": "ἕνεκεν τούτου ἐκάλεσεν τὸ φρέαρ Φρέαρ οὗ ἐνώπιον ἴδον· ἰδοὺ ἀνὰ μέσον Καδὴς καὶ ἀνὰ μέσον Βάραδ.",
-      "english": "\"It is just as I said,\" Joseph persisted; \"you are spies."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "עַל כֵּן֙ קָרָ֣א לַבְּאֵ֔ר בְּאֵ֥ר לַחַ֖י רֹאִ֑י הִנֵּ֥ה בֵין קָדֵ֖שׁ וּבֵ֥ין בָּֽרֶד׃",
+        "VUL": "Propterea appellavit puteum illum Puteum viventis et videntis me. Ipse est inter Cades et Barad.",
+        "LXX": "ἕνεκεν τούτου ἐκάλεσεν τὸ φρέαρ Φρέαρ οὗ ἐνώπιον ἴδον· ἰδοὺ ἀνὰ μέσον Καδὴς καὶ ἀνὰ μέσον Βάραδ.",
+        "NAB": "\"It is just as I said,\" Joseph persisted; \"you are spies.",
+        "SYN": "Посему источник тот называется: Беэр-лахай-рои. Он находится между Кадесом и между Баредом."
+      }
     },
     "15": {
-      "sort_number": 15,
-      "name": "15",
-      "latin": "Peperitque Agar Abræ filium: qui vocavit nomen ejus Ismaël.",
-      "word_count": 0,
-      "hebrew": "וַתֵּ֧לֶד הָגָ֛ר לְאַבְרָ֖ם בֵּ֑ן וַיִּקְרָ֨א אַבְרָ֧ם שֶׁם בְּנ֛וֹ אֲשֶׁר יָלְדָ֥ה הָגָ֖ר יִשְׁמָעֵֽאל׃",
-      "russian": "Агарь родила Авраму сына; и нарек [Аврам] имя сыну своему, рожденному от Агари: Измаил.",
-      "greek": "καὶ ἔτεκεν Ἁγὰρ τῷ Ἀβρὰμ υἱόν, καὶ ἐκάλεσεν Ἀβρὰμ τὸ ὄνομα τοῦ υἱοῦ αὐτοῦ, ὃν ἔτεκεν αὐτῷ Ἁγάρ, Ἰσμαήλ.",
-      "english": "This is how you shall be tested: unless your youngest brother comes here, I swear by the life of Pharaoh that you shall not leave here."
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַתֵּ֧לֶד הָגָ֛ר לְאַבְרָ֖ם בֵּ֑ן וַיִּקְרָ֨א אַבְרָ֧ם שֶׁם בְּנ֛וֹ אֲשֶׁר יָלְדָ֥ה הָגָ֖ר יִשְׁמָעֵֽאל׃",
+        "VUL": "Peperitque Agar Abræ filium: qui vocavit nomen ejus Ismaël.",
+        "LXX": "καὶ ἔτεκεν Ἁγὰρ τῷ Ἀβρὰμ υἱόν, καὶ ἐκάλεσεν Ἀβρὰμ τὸ ὄνομα τοῦ υἱοῦ αὐτοῦ, ὃν ἔτεκεν αὐτῷ Ἁγάρ, Ἰσμαήλ.",
+        "NAB": "This is how you shall be tested: unless your youngest brother comes here, I swear by the life of Pharaoh that you shall not leave here.",
+        "SYN": "Агарь родила Авраму сына; и нарек [Аврам] имя сыну своему, рожденному от Агари: Измаил."
+      }
     },
     "16": {
-      "sort_number": 16,
-      "name": "16",
-      "latin": "Octoginta et sex annorum erat Abram quando peperit ei Agar Ismaëlem.",
-      "word_count": 0,
-      "hebrew": "וְאַבְרָ֕ם בֶּן שְׁמֹנִ֥ים שָׁנָ֖ה וְשֵׁ֣שׁ שָׁנִ֑ים בְּלֶֽדֶת הָגָ֥ר אֶת יִשְׁמָעֵ֖אל לְאַבְרָֽם׃",
-      "russian": "Аврам был восьмидесяти шести лет, когда Агарь родила Авраму Измаила.",
-      "greek": "Ἀβρὰμ δὲ ἦν ὀγδοήκοντα ἓξ ἐτῶν ἡνίκα ἔτεκεν Ἁγὰρ τὸν Ἰσμαὴλ τῷ Ἀβράμ.",
-      "english": "So send one of your number to get your brother, while the rest of you stay here under arrest. Thus shall your words be tested for their truth; if they are untrue, as Pharaoh lives, you are spies!\""
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְאַבְרָ֕ם בֶּן שְׁמֹנִ֥ים שָׁנָ֖ה וְשֵׁ֣שׁ שָׁנִ֑ים בְּלֶֽדֶת הָגָ֥ר אֶת יִשְׁמָעֵ֖אל לְאַבְרָֽם׃",
+        "VUL": "Octoginta et sex annorum erat Abram quando peperit ei Agar Ismaëlem.",
+        "LXX": "Ἀβρὰμ δὲ ἦν ὀγδοήκοντα ἓξ ἐτῶν ἡνίκα ἔτεκεν Ἁγὰρ τὸν Ἰσμαὴλ τῷ Ἀβράμ.",
+        "NAB": "So send one of your number to get your brother, while the rest of you stay here under arrest. Thus shall your words be tested for their truth; if they are untrue, as Pharaoh lives, you are spies!\"",
+        "SYN": "Аврам был восьмидесяти шести лет, когда Агарь родила Авраму Измаила."
+      }
     }
   }
 }

@@ -1,353 +1,525 @@
 {
+  "_schema_version": "2.0",
   "chapter_id": "GENE_025",
-  "chapter_key": "25",
-  "chapter_number": 25,
-  "sort_number": 25,
-  "name": "25",
   "book_key": "GENE",
+  "sequence": 25,
+  "chapter_in": {
+    "MT": 25,
+    "VUL": 25,
+    "LXX": 25
+  },
   "testament": "Vetus_Testamentum",
   "section": "Pentateuchus",
-  "verse_count": 34,
   "verses": {
     "1": {
-      "sort_number": 1,
-      "name": "1",
-      "latin": "Abraham vero aliam duxit uxorem nomine Ceturam:",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֧סֶף אַבְרָהָ֛ם וַיִּקַּ֥ח אִשָּׁ֖ה וּשְׁמָ֥הּ קְטוּרָֽה׃",
-      "russian": "И взял Авраам еще жену, именем Хеттуру.",
-      "greek": "Προσθέμενος δὲ Ἀβραὰμ ἔλαβεν γυναῖκα ᾗ ὄνομα Χεττούρα.",
-      "english": "\"The Dwelling itself you shall make out of sheets woven of fine linen twined and of violet, purple and scarlet yarn, with cherubim embroidered on them."
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַיֹּ֧סֶף אַבְרָהָ֛ם וַיִּקַּ֥ח אִשָּׁ֖ה וּשְׁמָ֥הּ קְטוּרָֽה׃",
+        "VUL": "Abraham vero aliam duxit uxorem nomine Ceturam:",
+        "LXX": "Προσθέμενος δὲ Ἀβραὰμ ἔλαβεν γυναῖκα ᾗ ὄνομα Χεττούρα.",
+        "NAB": "\"The Dwelling itself you shall make out of sheets woven of fine linen twined and of violet, purple and scarlet yarn, with cherubim embroidered on them.",
+        "SYN": "И взял Авраам еще жену, именем Хеттуру."
+      }
     },
     "2": {
-      "sort_number": 2,
-      "name": "2",
-      "latin": "quæ peperit ei Zamran et Jecsan, et Madan, et Madian, et Jesboc, et Sue.",
-      "word_count": 0,
-      "hebrew": "וַתֵּ֣לֶד ל֗וֹ אֶת זִמְרָן֙ וְאֶת יָקְשָׁ֔ן וְאֶת מְדָ֖ן וְאֶת מִדְיָ֑ן וְאֶת יִשְׁבָּ֖ק וְאֶת שֽׁוּחַ׃",
-      "russian": "Она родила ему Зимрана, Иокшана, Медана, Мадиана, Ишбака и Шуаха.",
-      "greek": "ἔτεκεν δὲ αὐτῷ τὸν Ζεβρὰν καὶ τὸν Ἰεξὰν καὶ τὸν Μαδαὶμ καὶ τὸν Μαδιὰμ καὶ τὸν Ἰεσβὸκ καὶ τὸν Σωύε.",
-      "english": "The length of each shall be twenty-eight cubits, and the width four cubits; all the sheets shall be of the same size."
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַתֵּ֣לֶד ל֗וֹ אֶת זִמְרָן֙ וְאֶת יָקְשָׁ֔ן וְאֶת מְדָ֖ן וְאֶת מִדְיָ֑ן וְאֶת יִשְׁבָּ֖ק וְאֶת שֽׁוּחַ׃",
+        "VUL": "quæ peperit ei Zamran et Jecsan, et Madan, et Madian, et Jesboc, et Sue.",
+        "LXX": "ἔτεκεν δὲ αὐτῷ τὸν Ζεβρὰν καὶ τὸν Ἰεξὰν καὶ τὸν Μαδαὶμ καὶ τὸν Μαδιὰμ καὶ τὸν Ἰεσβὸκ καὶ τὸν Σωύε.",
+        "NAB": "The length of each shall be twenty-eight cubits, and the width four cubits; all the sheets shall be of the same size.",
+        "SYN": "Она родила ему Зимрана, Иокшана, Медана, Мадиана, Ишбака и Шуаха."
+      }
     },
     "3": {
-      "sort_number": 3,
-      "name": "3",
-      "latin": "Jecsan quoque genuit Saba et Dadan. Filii Dadan fuerunt Assurim, et Latusim, et Loomin.",
-      "word_count": 0,
-      "hebrew": "וְיָקְשָׁ֣ן יָלַ֔ד אֶת שְׁבָ֖א וְאֶת דְּדָ֑ן וּבְנֵ֣י דְדָ֔ן הָי֛וּ אַשּׁוּרִ֥ם וּלְטוּשִׁ֖ים וּלְאֻמִּֽים׃",
-      "russian": "Иокшан родил Шеву, [Фемана] и Дедана. Сыны Дедана были: [Рагуил, Навдеил,] Ашурим, Летушим и Леюмим.",
-      "greek": "Ἰεξὰν δὲ ἐγέννησεν τὸν Σαβὰν καὶ τὸν Θαιμὰν καὶ τὸν Δαιδάν· υἱοὶ δὲ Δαιδὰν ἐγένοντο Ῥαγουὴλ καὶ Ναβδεὴλ καὶ Ἀσουρὶμ καὶ Δατουσιεὶμ καὶ Λοωμείμ·",
-      "english": "Five of the sheets are to be sewed together, edge to edge; and the same for the other five."
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְיָקְשָׁ֣ן יָלַ֔ד אֶת שְׁבָ֖א וְאֶת דְּדָ֑ן וּבְנֵ֣י דְדָ֔ן הָי֛וּ אַשּׁוּרִ֥ם וּלְטוּשִׁ֖ים וּלְאֻמִּֽים׃",
+        "VUL": "Jecsan quoque genuit Saba et Dadan. Filii Dadan fuerunt Assurim, et Latusim, et Loomin.",
+        "LXX": "Ἰεξὰν δὲ ἐγέννησεν τὸν Σαβὰν καὶ τὸν Θαιμὰν καὶ τὸν Δαιδάν· υἱοὶ δὲ Δαιδὰν ἐγένοντο Ῥαγουὴλ καὶ Ναβδεὴλ καὶ Ἀσουρὶμ καὶ Δατουσιεὶμ καὶ Λοωμείμ·",
+        "NAB": "Five of the sheets are to be sewed together, edge to edge; and the same for the other five.",
+        "SYN": "Иокшан родил Шеву, [Фемана] и Дедана. Сыны Дедана были: [Рагуил, Навдеил,] Ашурим, Летушим и Леюмим."
+      }
     },
     "4": {
-      "sort_number": 4,
-      "name": "4",
-      "latin": "At vero ex Madian ortus est Epha, et Opher, et Henoch, et Abida, et Eldaa: omnes hi filii Ceturæ.",
-      "word_count": 0,
-      "hebrew": "וּבְנֵ֣י מִדְיָ֗ן עֵיפָ֤ה וָעֵ֨פֶר֙ וַחֲנֹ֔ךְ וַאֲבִידָ֖ע וְאֶלְדָּעָ֑ה כָּל אֵ֖לֶּה בְּנֵ֥י קְטוּרָֽה׃",
-      "russian": "Сыны Мадиана: Ефа, Ефер, Ханох, Авида и Елдага. Все сии сыны Хеттуры.",
-      "greek": "υἱοὶ δὲ Μαδιὰμ Γεφὰρ καὶ Ἄφερ καὶ Ἑνὼχ καὶ Ἀβιρὰ καὶ Θεργαμά. οὗτοι πάντες ἦσαν υἱοὶ Χεττούρας.",
-      "english": "Make loops of violet yarn along the edge of the end sheet in one set, and the same along the edge of the end sheet in the other set."
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וּבְנֵ֣י מִדְיָ֗ן עֵיפָ֤ה וָעֵ֨פֶר֙ וַחֲנֹ֔ךְ וַאֲבִידָ֖ע וְאֶלְדָּעָ֑ה כָּל אֵ֖לֶּה בְּנֵ֥י קְטוּרָֽה׃",
+        "VUL": "At vero ex Madian ortus est Epha, et Opher, et Henoch, et Abida, et Eldaa: omnes hi filii Ceturæ.",
+        "LXX": "υἱοὶ δὲ Μαδιὰμ Γεφὰρ καὶ Ἄφερ καὶ Ἑνὼχ καὶ Ἀβιρὰ καὶ Θεργαμά. οὗτοι πάντες ἦσαν υἱοὶ Χεττούρας.",
+        "NAB": "Make loops of violet yarn along the edge of the end sheet in one set, and the same along the edge of the end sheet in the other set.",
+        "SYN": "Сыны Мадиана: Ефа, Ефер, Ханох, Авида и Елдага. Все сии сыны Хеттуры."
+      }
     },
     "5": {
-      "sort_number": 5,
-      "name": "5",
-      "latin": "Deditque Abraham cuncta quæ possederat, Isaac:",
-      "word_count": 0,
-      "hebrew": "וַיִּתֵּ֧ן אַבְרָהָ֛ם אֶת כָּל אֲשֶׁר ל֖וֹ לְיִצְחָֽק׃",
-      "russian": "И отдал Авраам все, что было у него, Исааку [сыну своему],",
-      "greek": "ἔδωκεν δὲ Ἀβραὰμ πάντα τὰ ὑπάρχοντα αὐτοῦ Ἰσαὰκ τῷ υἱῷ αὐτοῦ·",
-      "english": "There are to be fifty loops along the edge of the end sheet in the first set, and fifty loops along the edge of the corresponding sheet in the second set, and so placed that the loops are directly opposite each other."
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַיִּתֵּ֧ן אַבְרָהָ֛ם אֶת כָּל אֲשֶׁר ל֖וֹ לְיִצְחָֽק׃",
+        "VUL": "Deditque Abraham cuncta quæ possederat, Isaac:",
+        "LXX": "ἔδωκεν δὲ Ἀβραὰμ πάντα τὰ ὑπάρχοντα αὐτοῦ Ἰσαὰκ τῷ υἱῷ αὐτοῦ·",
+        "NAB": "There are to be fifty loops along the edge of the end sheet in the first set, and fifty loops along the edge of the corresponding sheet in the second set, and so placed that the loops are directly opposite each other.",
+        "SYN": "И отдал Авраам все, что было у него, Исааку [сыну своему],"
+      }
     },
     "6": {
-      "sort_number": 6,
-      "name": "6",
-      "latin": "filiis autem concubinarum largitus est munera, et separavit eos ab Isaac filio suo, dum adhuc ipse viveret, ad plagam orientalem.",
-      "word_count": 0,
-      "hebrew": "וְלִבְנֵ֤י הַפִּֽילַגְשִׁים֙ אֲשֶׁ֣ר לְאַבְרָהָ֔ם נָתַ֥ן אַבְרָהָ֖ם מַתָּנֹ֑ת וַֽיְשַׁלְּחֵ֞ם מֵעַ֨ל יִצְחָ֤ק בְּנוֹ֙ בְּעוֹדֶ֣נּוּ חַ֔י קֵ֖דְמָה אֶל אֶ֥רֶץ קֶֽדֶם׃",
-      "russian": "а сынам наложниц, которые были у Авраама, дал Авраам подарки и отослал их от Исаака, сына своего, еще при жизни своей, на восток, в землю восточную.",
-      "greek": "καὶ τοῖς υἱοῖς τῶν παλλακῶν αὐτοῦ ἔδωκεν Ἀβραὰμ δόματα, καὶ ἐξαπέστειλεν αὐτοὺς ἀπὸ Ἰσαὰκ τοῦ υἱοῦ αὐτοῦ ἔτι ζῶντος αὐτοῦ πρὸς ἀνατολὰς εἰς γῆν ἀνατολῶν.",
-      "english": "Then make fifty clasps of gold, with which to join the two sets of sheets, so that the Dwelling forms one whole."
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְלִבְנֵ֤י הַפִּֽילַגְשִׁים֙ אֲשֶׁ֣ר לְאַבְרָהָ֔ם נָתַ֥ן אַבְרָהָ֖ם מַתָּנֹ֑ת וַֽיְשַׁלְּחֵ֞ם מֵעַ֨ל יִצְחָ֤ק בְּנוֹ֙ בְּעוֹדֶ֣נּוּ חַ֔י קֵ֖דְמָה אֶל אֶ֥רֶץ קֶֽדֶם׃",
+        "VUL": "filiis autem concubinarum largitus est munera, et separavit eos ab Isaac filio suo, dum adhuc ipse viveret, ad plagam orientalem.",
+        "LXX": "καὶ τοῖς υἱοῖς τῶν παλλακῶν αὐτοῦ ἔδωκεν Ἀβραὰμ δόματα, καὶ ἐξαπέστειλεν αὐτοὺς ἀπὸ Ἰσαὰκ τοῦ υἱοῦ αὐτοῦ ἔτι ζῶντος αὐτοῦ πρὸς ἀνατολὰς εἰς γῆν ἀνατολῶν.",
+        "NAB": "Then make fifty clasps of gold, with which to join the two sets of sheets, so that the Dwelling forms one whole.",
+        "SYN": "а сынам наложниц, которые были у Авраама, дал Авраам подарки и отослал их от Исаака, сына своего, еще при жизни своей, на восток, в землю восточную."
+      }
     },
     "7": {
-      "sort_number": 7,
-      "name": "7",
-      "latin": "Fuerunt autem dies vitæ Abrahæ, centum septuaginta quinque anni.",
-      "word_count": 0,
-      "hebrew": "וְאֵ֗לֶּה יְמֵ֛י שְׁנֵֽי חַיֵּ֥י אַבְרָהָ֖ם אֲשֶׁר חָ֑י מְאַ֥ת שָׁנָ֛ה וְשִׁבְעִ֥ים שָׁנָ֖ה וְחָמֵ֥שׁ שָׁנִֽים׃",
-      "russian": "Дней жизни Авраамовой, которые он прожил, было сто семьдесят пять лет;",
-      "greek": "ταῦτα δὲ τὰ ἔτη ἡμερῶν ζωῆς Ἀβραὰμ ὅσα ἔζησεν, ἑκατὸν ἑβδομήκοντα πέντε ἔτη·",
-      "english": "\"Also make sheets woven of goat hair, to be used as a tent covering over the Dwelling."
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְאֵ֗לֶּה יְמֵ֛י שְׁנֵֽי חַיֵּ֥י אַבְרָהָ֖ם אֲשֶׁר חָ֑י מְאַ֥ת שָׁנָ֛ה וְשִׁבְעִ֥ים שָׁנָ֖ה וְחָמֵ֥שׁ שָׁנִֽים׃",
+        "VUL": "Fuerunt autem dies vitæ Abrahæ, centum septuaginta quinque anni.",
+        "LXX": "ταῦτα δὲ τὰ ἔτη ἡμερῶν ζωῆς Ἀβραὰμ ὅσα ἔζησεν, ἑκατὸν ἑβδομήκοντα πέντε ἔτη·",
+        "NAB": "\"Also make sheets woven of goat hair, to be used as a tent covering over the Dwelling.",
+        "SYN": "Дней жизни Авраамовой, которые он прожил, было сто семьдесят пять лет;"
+      }
     },
     "8": {
-      "sort_number": 8,
-      "name": "8",
-      "latin": "Et deficiens mortuus est in senectute bona, provectæque ætatis et plenus dierum: congregatusque est ad populum suum.",
-      "word_count": 0,
-      "hebrew": "וַיִּגְוַ֨ע וַיָּ֧מָת אַבְרָהָ֛ם בְּשֵׂיבָ֥ה טוֹבָ֖ה זָקֵ֣ן וְשָׂבֵ֑עַ וַיֵּאָ֖סֶף אֶל עַמָּֽיו׃",
-      "russian": "и скончался Авраам, и умер в старости доброй, престарелый и насыщенный [жизнью], и приложился к народу своему.",
-      "greek": "καὶ ἐκλείπων ἀπέθανεν Ἀβραὰμ ἐν γήρει καλῷ πρεσβύτης καὶ πλήρης ἡμερῶν, καὶ προσετέθη πρὸς τὸν λαὸν αὐτοῦ.",
-      "english": "Eleven such sheets are to be made; the length of each shall be thirty cubits, and the width four cubits: all eleven sheets shall be of the same size."
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַיִּגְוַ֨ע וַיָּ֧מָת אַבְרָהָ֛ם בְּשֵׂיבָ֥ה טוֹבָ֖ה זָקֵ֣ן וְשָׂבֵ֑עַ וַיֵּאָ֖סֶף אֶל עַמָּֽיו׃",
+        "VUL": "Et deficiens mortuus est in senectute bona, provectæque ætatis et plenus dierum: congregatusque est ad populum suum.",
+        "LXX": "καὶ ἐκλείπων ἀπέθανεν Ἀβραὰμ ἐν γήρει καλῷ πρεσβύτης καὶ πλήρης ἡμερῶν, καὶ προσετέθη πρὸς τὸν λαὸν αὐτοῦ.",
+        "NAB": "Eleven such sheets are to be made; the length of each shall be thirty cubits, and the width four cubits: all eleven sheets shall be of the same size.",
+        "SYN": "и скончался Авраам, и умер в старости доброй, престарелый и насыщенный [жизнью], и приложился к народу своему."
+      }
     },
     "9": {
-      "sort_number": 9,
-      "name": "9",
-      "latin": "Et sepelierunt eum Isaac et Ismaël filii sui in spelunca duplici, quæ sita est in agro Ephron filii Seor Hethæi, e regione Mambre,",
-      "word_count": 0,
-      "hebrew": "וַיִּקְבְּר֨וּ אֹת֜וֹ יִצְחָ֤ק וְיִשְׁמָעֵאל֙ בָּנָ֔יו אֶל מְעָרַ֖ת הַמַּכְפֵּלָ֑ה אֶל שְׂדֵ֞ה עֶפְרֹ֤ן בֶּן צֹ֨חַר֙ הַֽחִתִּ֔י אֲשֶׁ֖ר עַל פְּנֵ֥י מַמְרֵֽא׃",
-      "russian": "И погребли его Исаак и Измаил, сыновья его, в пещере Махпеле, на поле Ефрона, сына Цохара, Хеттеянина, которое против Мамре,",
-      "greek": "καὶ ἔθαψαν αὐτὸν Ἰσαὰκ καὶ Ἰσμαὴλ οἱ δύο υἱοὶ αὐτοῦ εἰς τὸ σπήλαιον τὸ διπλοῦν, εἰς τὸν ἀγρὸν Ἐφρὼν τοῦ Σάαρ τοῦ Χετταίου, ὅ ἐστιν ἀπέναντι Μαμβρή,",
-      "english": "Sew five of the sheets, edge to edge, into one set, and the other six sheets into another set. Use the sixth sheet double at the front of the tent."
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַיִּקְבְּר֨וּ אֹת֜וֹ יִצְחָ֤ק וְיִשְׁמָעֵאל֙ בָּנָ֔יו אֶל מְעָרַ֖ת הַמַּכְפֵּלָ֑ה אֶל שְׂדֵ֞ה עֶפְרֹ֤ן בֶּן צֹ֨חַר֙ הַֽחִתִּ֔י אֲשֶׁ֖ר עַל פְּנֵ֥י מַמְרֵֽא׃",
+        "VUL": "Et sepelierunt eum Isaac et Ismaël filii sui in spelunca duplici, quæ sita est in agro Ephron filii Seor Hethæi, e regione Mambre,",
+        "LXX": "καὶ ἔθαψαν αὐτὸν Ἰσαὰκ καὶ Ἰσμαὴλ οἱ δύο υἱοὶ αὐτοῦ εἰς τὸ σπήλαιον τὸ διπλοῦν, εἰς τὸν ἀγρὸν Ἐφρὼν τοῦ Σάαρ τοῦ Χετταίου, ὅ ἐστιν ἀπέναντι Μαμβρή,",
+        "NAB": "Sew five of the sheets, edge to edge, into one set, and the other six sheets into another set. Use the sixth sheet double at the front of the tent.",
+        "SYN": "И погребли его Исаак и Измаил, сыновья его, в пещере Махпеле, на поле Ефрона, сына Цохара, Хеттеянина, которое против Мамре,"
+      }
     },
     "10": {
-      "sort_number": 10,
-      "name": "10",
-      "latin": "quem emerat a filiis Heth: ibi sepultus est ipse, et Sara uxor ejus.",
-      "word_count": 0,
-      "hebrew": "הַשָּׂדֶ֛ה אֲשֶׁר קָנָ֥ה אַבְרָהָ֖ם מֵאֵ֣ת בְּנֵי חֵ֑ת שָׁ֛מָּה קֻבַּ֥ר אַבְרָהָ֖ם וְשָׂרָ֥ה אִשְׁתּֽוֹ׃",
-      "russian": "на поле [и в пещере], которые Авраам приобрел от сынов Хетовых. Там погребены Авраам и Сарра, жена его.",
-      "greek": "τὸν ἀγρὸν καὶ τὸ σπήλαιον ὃ ἐκτήσατο Ἀβραὰμ παρὰ τῶν υἱῶν Χέτ· ἐκεῖ ἔθαψαν Ἀβραὰμ καὶ Σάρραν τὴν γυναῖκα αὐτοῦ.",
-      "english": "Make fifty loops along the edge of the end sheet in one set, and fifty loops along the edge of the end sheet in the second set."
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "הַשָּׂדֶ֛ה אֲשֶׁר קָנָ֥ה אַבְרָהָ֖ם מֵאֵ֣ת בְּנֵי חֵ֑ת שָׁ֛מָּה קֻבַּ֥ר אַבְרָהָ֖ם וְשָׂרָ֥ה אִשְׁתּֽוֹ׃",
+        "VUL": "quem emerat a filiis Heth: ibi sepultus est ipse, et Sara uxor ejus.",
+        "LXX": "τὸν ἀγρὸν καὶ τὸ σπήλαιον ὃ ἐκτήσατο Ἀβραὰμ παρὰ τῶν υἱῶν Χέτ· ἐκεῖ ἔθαψαν Ἀβραὰμ καὶ Σάρραν τὴν γυναῖκα αὐτοῦ.",
+        "NAB": "Make fifty loops along the edge of the end sheet in one set, and fifty loops along the edge of the end sheet in the second set.",
+        "SYN": "на поле [и в пещере], которые Авраам приобрел от сынов Хетовых. Там погребены Авраам и Сарра, жена его."
+      }
     },
     "11": {
-      "sort_number": 11,
-      "name": "11",
-      "latin": "Et post obitum illius benedixit Deus Isaac filio ejus, qui habitabat juxta puteum nomine Viventis et videntis.",
-      "word_count": 0,
-      "hebrew": "וַיְהִ֗י אַחֲרֵי֙ מ֣וֹת אַבְרָהָ֔ם וַיְבָ֥רֶךְ אֱלֹהִ֖ים אֶת יִצְחָ֣ק בְּנ֑וֹ וַיֵּ֣שֶׁב יִצְחָ֔ק עִם בְּאֵ֥ר לַחַ֖י רֹאִֽי׃",
-      "russian": "По смерти Авраама Бог благословил Исаака, сына его. Исаак жил при Беэр-лахай-рои.",
-      "greek": "ἐγένετο δὲ μετὰ τὸ ἀποθανεῖν Ἀβραὰμ εὐλόγησεν ὁ θεὸς τὸν Ἰσαὰκ τὸν υἱὸν αὐτοῦ· καὶ κατῴκησεν Ἰσαὰκ παρὰ τὸ φρέαρ τῆς ὁράσεως.",
-      "english": "Also make fifty bronze clasps and put them into the loops, to join the tent into one whole."
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַיְהִ֗י אַחֲרֵי֙ מ֣וֹת אַבְרָהָ֔ם וַיְבָ֥רֶךְ אֱלֹהִ֖ים אֶת יִצְחָ֣ק בְּנ֑וֹ וַיֵּ֣שֶׁב יִצְחָ֔ק עִם בְּאֵ֥ר לַחַ֖י רֹאִֽי׃",
+        "VUL": "Et post obitum illius benedixit Deus Isaac filio ejus, qui habitabat juxta puteum nomine Viventis et videntis.",
+        "LXX": "ἐγένετο δὲ μετὰ τὸ ἀποθανεῖν Ἀβραὰμ εὐλόγησεν ὁ θεὸς τὸν Ἰσαὰκ τὸν υἱὸν αὐτοῦ· καὶ κατῴκησεν Ἰσαὰκ παρὰ τὸ φρέαρ τῆς ὁράσεως.",
+        "NAB": "Also make fifty bronze clasps and put them into the loops, to join the tent into one whole.",
+        "SYN": "По смерти Авраама Бог благословил Исаака, сына его. Исаак жил при Беэр-лахай-рои."
+      }
     },
     "12": {
-      "sort_number": 12,
-      "name": "12",
-      "latin": "Hæ sunt generationes Ismaël filii Abrahæ, quem peperit ei Agar Ægyptia, famula Saræ:",
-      "word_count": 0,
-      "hebrew": "וְאֵ֛לֶּה תֹּלְדֹ֥ת יִשְׁמָעֵ֖אל בֶּן אַבְרָהָ֑ם אֲשֶׁ֨ר יָלְדָ֜ה הָגָ֧ר הַמִּצְרִ֛ית שִׁפְחַ֥ת שָׂרָ֖ה לְאַבְרָהָֽם׃",
-      "russian": "Вот родословие Измаила, сына Авраамова, которого родила Аврааму Агарь Египтянка, служанка Саррина;",
-      "greek": "Αὗται δὲ αἱ γενέσεις Ἰσμαὴλ τοῦ υἱοῦ Ἀβραάμ, ὃν ἔτεκεν Ἁγὰρ ἡ παιδίσκη Σάρρας τῷ Ἀβραάμ.",
-      "english": "There will be an extra half sheet of tent covering, which shall be allowed to hang down over the rear of the Dwelling."
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְאֵ֛לֶּה תֹּלְדֹ֥ת יִשְׁמָעֵ֖אל בֶּן אַבְרָהָ֑ם אֲשֶׁ֨ר יָלְדָ֜ה הָגָ֧ר הַמִּצְרִ֛ית שִׁפְחַ֥ת שָׂרָ֖ה לְאַבְרָהָֽם׃",
+        "VUL": "Hæ sunt generationes Ismaël filii Abrahæ, quem peperit ei Agar Ægyptia, famula Saræ:",
+        "LXX": "Αὗται δὲ αἱ γενέσεις Ἰσμαὴλ τοῦ υἱοῦ Ἀβραάμ, ὃν ἔτεκεν Ἁγὰρ ἡ παιδίσκη Σάρρας τῷ Ἀβραάμ.",
+        "NAB": "There will be an extra half sheet of tent covering, which shall be allowed to hang down over the rear of the Dwelling.",
+        "SYN": "Вот родословие Измаила, сына Авраамова, которого родила Аврааму Агарь Египтянка, служанка Саррина;"
+      }
     },
     "13": {
-      "sort_number": 13,
-      "name": "13",
-      "latin": "et hæc nomina filiorum ejus in vocabulis et generationibus suis. Primogenitus Ismaëlis Nabaioth, deinde Cedar, et Adbeel, et Mabsam,",
-      "word_count": 0,
-      "hebrew": "וְאֵ֗לֶּה שְׁמוֹת֙ בְּנֵ֣י יִשְׁמָעֵ֔אל בִּשְׁמֹתָ֖ם לְתוֹלְדֹתָ֑ם בְּכֹ֤ר יִשְׁמָעֵאל֙ נְבָיֹ֔ת וְקֵדָ֥ר וְאַדְבְּאֵ֖ל וּמִבְשָֽׂם׃",
-      "russian": "и вот имена сынов Измаиловых, имена их по родословию их: первенец Измаилов Наваиоф, за ним Кедар, Адбеел, Мивсам,",
-      "greek": "καὶ ταῦτα τὰ ὀνόματα τῶν υἱῶν Ἰσμαὴλ κατ’ ὄνομα τῶν γενεῶν αὐτοῦ· πρωτότοκος Ἰσμαὴλ Ναβαιώθ, καὶ Κηδὰρ καὶ Ναβδεὴλ καὶ Μασσὰμ",
-      "english": "Likewise, the sheets of the tent will have an extra cubit's length to be left hanging down on either side of the Dwelling to protect it."
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְאֵ֗לֶּה שְׁמוֹת֙ בְּנֵ֣י יִשְׁמָעֵ֔אל בִּשְׁמֹתָ֖ם לְתוֹלְדֹתָ֑ם בְּכֹ֤ר יִשְׁמָעֵאל֙ נְבָיֹ֔ת וְקֵדָ֥ר וְאַדְבְּאֵ֖ל וּמִבְשָֽׂם׃",
+        "VUL": "et hæc nomina filiorum ejus in vocabulis et generationibus suis. Primogenitus Ismaëlis Nabaioth, deinde Cedar, et Adbeel, et Mabsam,",
+        "LXX": "καὶ ταῦτα τὰ ὀνόματα τῶν υἱῶν Ἰσμαὴλ κατ’ ὄνομα τῶν γενεῶν αὐτοῦ· πρωτότοκος Ἰσμαὴλ Ναβαιώθ, καὶ Κηδὰρ καὶ Ναβδεὴλ καὶ Μασσὰμ",
+        "NAB": "Likewise, the sheets of the tent will have an extra cubit's length to be left hanging down on either side of the Dwelling to protect it.",
+        "SYN": "и вот имена сынов Измаиловых, имена их по родословию их: первенец Измаилов Наваиоф, за ним Кедар, Адбеел, Мивсам,"
+      }
     },
     "14": {
-      "sort_number": 14,
-      "name": "14",
-      "latin": "Masma quoque, et Duma, et Massa,",
-      "word_count": 0,
-      "hebrew": "וּמִשְׁמָ֥ע וְדוּמָ֖ה וּמַשָּֽׂא׃",
-      "russian": "Мишма, Дума, Масса,",
-      "greek": "καὶ Μασμὰ καὶ Ἰδουμὰ καὶ Μασσὴ",
-      "english": "Over the tent itself you shall make a covering of rams' skins dyed red, and above that, a covering of tahash skins."
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וּמִשְׁמָ֥ע וְדוּמָ֖ה וּמַשָּֽׂא׃",
+        "VUL": "Masma quoque, et Duma, et Massa,",
+        "LXX": "καὶ Μασμὰ καὶ Ἰδουμὰ καὶ Μασσὴ",
+        "NAB": "Over the tent itself you shall make a covering of rams' skins dyed red, and above that, a covering of tahash skins.",
+        "SYN": "Мишма, Дума, Масса,"
+      }
     },
     "15": {
-      "sort_number": 15,
-      "name": "15",
-      "latin": "Hadar, et Thema, et Jethur, et Naphis, et Cedma.",
-      "word_count": 0,
-      "hebrew": "חֲדַ֣ד וְתֵימָ֔א יְט֥וּר נָפִ֖ישׁ וָקֵֽדְמָה׃",
-      "russian": "Хадад, Фема, Иетур, Нафиш и Кедма.",
-      "greek": "καὶ Χοδδὰν καὶ Θαιμὰν καὶ Ἰετοὺρ καὶ Ναφὲς καὶ Κέδμα.",
-      "english": "\"You shall make boards of acacia wood as walls for the Dwelling."
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "חֲדַ֣ד וְתֵימָ֔א יְט֥וּר נָפִ֖ישׁ וָקֵֽדְמָה׃",
+        "VUL": "Hadar, et Thema, et Jethur, et Naphis, et Cedma.",
+        "LXX": "καὶ Χοδδὰν καὶ Θαιμὰν καὶ Ἰετοὺρ καὶ Ναφὲς καὶ Κέδμα.",
+        "NAB": "\"You shall make boards of acacia wood as walls for the Dwelling.",
+        "SYN": "Хадад, Фема, Иетур, Нафиш и Кедма."
+      }
     },
     "16": {
-      "sort_number": 16,
-      "name": "16",
-      "latin": "Isti sunt filii Ismaëlis: et hæc nomina per castella et oppida eorum, duodecim principes tribuum suarum.",
-      "word_count": 0,
-      "hebrew": "אֵ֣לֶּה הֵ֞ם בְּנֵ֤י יִשְׁמָעֵאל֙ וְאֵ֣לֶּה שְׁמֹתָ֔ם בְּחַצְרֵיהֶ֖ם וּבְטִֽירֹתָ֑ם שְׁנֵים עָשָׂ֥ר נְשִׂיאִ֖ם לְאֻמֹּתָֽם׃",
-      "russian": "Сии суть сыны Измаиловы, и сии имена их, в селениях их, в кочевьях их. Это двенадцать князей племен их.",
-      "greek": "οὗτοί εἰσιν οἱ υἱοὶ Ἰσμαήλ, καὶ ταῦτα τὰ ὀνόματα αὐτῶν ἐν ταῖς σκηναῖς αὐτῶν καὶ ἐν ταῖς ἐπαύλεσιν αὐτῶν· δώδεκα ἄρχοντες κατὰ ἔθνος αὐτῶν.",
-      "english": "The length of each board is to be ten cubits, and its width one and a half cubits."
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אֵ֣לֶּה הֵ֞ם בְּנֵ֤י יִשְׁמָעֵאל֙ וְאֵ֣לֶּה שְׁמֹתָ֔ם בְּחַצְרֵיהֶ֖ם וּבְטִֽירֹתָ֑ם שְׁנֵים עָשָׂ֥ר נְשִׂיאִ֖ם לְאֻמֹּתָֽם׃",
+        "VUL": "Isti sunt filii Ismaëlis: et hæc nomina per castella et oppida eorum, duodecim principes tribuum suarum.",
+        "LXX": "οὗτοί εἰσιν οἱ υἱοὶ Ἰσμαήλ, καὶ ταῦτα τὰ ὀνόματα αὐτῶν ἐν ταῖς σκηναῖς αὐτῶν καὶ ἐν ταῖς ἐπαύλεσιν αὐτῶν· δώδεκα ἄρχοντες κατὰ ἔθνος αὐτῶν.",
+        "NAB": "The length of each board is to be ten cubits, and its width one and a half cubits.",
+        "SYN": "Сии суть сыны Измаиловы, и сии имена их, в селениях их, в кочевьях их. Это двенадцать князей племен их."
+      }
     },
     "17": {
-      "sort_number": 17,
-      "name": "17",
-      "latin": "Et facti sunt anni vitæ Ismaëlis centum triginta septem, deficiensque mortuus est, et appositus ad populum suum.",
-      "word_count": 0,
-      "hebrew": "וְאֵ֗לֶּה שְׁנֵי֙ חַיֵּ֣י יִשְׁמָעֵ֔אל מְאַ֥ת שָׁנָ֛ה וּשְׁלֹשִׁ֥ים שָׁנָ֖ה וְשֶׁ֣בַע שָׁנִ֑ים וַיִּגְוַ֣ע וַיָּ֔מָת וַיֵּאָ֖סֶף אֶל עַמָּֽיו׃",
-      "russian": "Лет же жизни Измаиловой было сто тридцать семь лет; и скончался он, и умер, и приложился к народу своему.",
-      "greek": "καὶ ταῦτα τὰ ἔτη τῆς ζωῆς Ἰσμαήλ, ἑκατὸν τριάκοντα ἑπτὰ ἔτη· καὶ ἐκλείπων ἀπέθανεν καὶ προσετέθη πρὸς τὸ γένος αὐτοῦ.",
-      "english": "Each board shall have two arms that shall serve to fasten the boards in line. In this way all the boards of the Dwelling are to be made."
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְאֵ֗לֶּה שְׁנֵי֙ חַיֵּ֣י יִשְׁמָעֵ֔אל מְאַ֥ת שָׁנָ֛ה וּשְׁלֹשִׁ֥ים שָׁנָ֖ה וְשֶׁ֣בַע שָׁנִ֑ים וַיִּגְוַ֣ע וַיָּ֔מָת וַיֵּאָ֖סֶף אֶל עַמָּֽיו׃",
+        "VUL": "Et facti sunt anni vitæ Ismaëlis centum triginta septem, deficiensque mortuus est, et appositus ad populum suum.",
+        "LXX": "καὶ ταῦτα τὰ ἔτη τῆς ζωῆς Ἰσμαήλ, ἑκατὸν τριάκοντα ἑπτὰ ἔτη· καὶ ἐκλείπων ἀπέθανεν καὶ προσετέθη πρὸς τὸ γένος αὐτοῦ.",
+        "NAB": "Each board shall have two arms that shall serve to fasten the boards in line. In this way all the boards of the Dwelling are to be made.",
+        "SYN": "Лет же жизни Измаиловой было сто тридцать семь лет; и скончался он, и умер, и приложился к народу своему."
+      }
     },
     "18": {
-      "sort_number": 18,
-      "name": "18",
-      "latin": "Habitavit autem ab Hevila usque Sur, quæ respicit Ægyptum introëuntibus Assyrios ; coram cunctis fratribus suis obiit.",
-      "word_count": 0,
-      "hebrew": "וַיִּשְׁכְּנ֨וּ מֵֽחֲוִילָ֜ה עַד שׁ֗וּר אֲשֶׁר֙ עַל פְּנֵ֣י מִצְרַ֔יִם בֹּאֲכָ֖ה אַשּׁ֑וּרָה עַל פְּנֵ֥י כָל אֶחָ֖יו נָפָֽל׃",
-      "russian": "Они жили от Хавилы до Сура, что пред Египтом, как идешь к Ассирии. Они поселились пред лицем всех братьев своих.",
-      "greek": "κατῴκησεν δὲ ἀπὸ Εὑειλὰτ ἕως Σουήλ, ἥ ἐστιν κατὰ πρόσωπον Αἰγύπτου ἕως ἐλθεῖν πρὸς Ἀσσυρίους· κατὰ πρόσωπον πάντων τῶν ἀδελφῶν αὐτοῦ κατῴκησεν.",
-      "english": "Set up the boards of the Dwelling as follows: twenty boards on the south side,"
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַיִּשְׁכְּנ֨וּ מֵֽחֲוִילָ֜ה עַד שׁ֗וּר אֲשֶׁר֙ עַל פְּנֵ֣י מִצְרַ֔יִם בֹּאֲכָ֖ה אַשּׁ֑וּרָה עַל פְּנֵ֥י כָל אֶחָ֖יו נָפָֽל׃",
+        "VUL": "Habitavit autem ab Hevila usque Sur, quæ respicit Ægyptum introëuntibus Assyrios ; coram cunctis fratribus suis obiit.",
+        "LXX": "κατῴκησεν δὲ ἀπὸ Εὑειλὰτ ἕως Σουήλ, ἥ ἐστιν κατὰ πρόσωπον Αἰγύπτου ἕως ἐλθεῖν πρὸς Ἀσσυρίους· κατὰ πρόσωπον πάντων τῶν ἀδελφῶν αὐτοῦ κατῴκησεν.",
+        "NAB": "Set up the boards of the Dwelling as follows: twenty boards on the south side,",
+        "SYN": "Они жили от Хавилы до Сура, что пред Египтом, как идешь к Ассирии. Они поселились пред лицем всех братьев своих."
+      }
     },
     "19": {
-      "sort_number": 19,
-      "name": "19",
-      "latin": "Hæ quoque sunt generationes Isaac filii Abraham: Abraham genuit Isaac:",
-      "word_count": 0,
-      "hebrew": "וְאֵ֛לֶּה תּוֹלְדֹ֥ת יִצְחָ֖ק בֶּן אַבְרָהָ֑ם אַבְרָהָ֖ם הוֹלִ֥יד אֶת יִצְחָֽק׃",
-      "russian": "Вот родословие Исаака, сына Авраамова. Авраам родил Исаака.",
-      "greek": "Καὶ αὗται αἱ γενέσεις Ἰσαὰκ τοῦ υἱοῦ Ἀβραάμ· Ἀβραὰμ ἐγέννησεν τὸν Ἰσαάκ.",
-      "english": "with forty silver pedestals under the twenty boards, so that there are two pedestals under each board, at its two arms;"
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְאֵ֛לֶּה תּוֹלְדֹ֥ת יִצְחָ֖ק בֶּן אַבְרָהָ֑ם אַבְרָהָ֖ם הוֹלִ֥יד אֶת יִצְחָֽק׃",
+        "VUL": "Hæ quoque sunt generationes Isaac filii Abraham: Abraham genuit Isaac:",
+        "LXX": "Καὶ αὗται αἱ γενέσεις Ἰσαὰκ τοῦ υἱοῦ Ἀβραάμ· Ἀβραὰμ ἐγέννησεν τὸν Ἰσαάκ.",
+        "NAB": "with forty silver pedestals under the twenty boards, so that there are two pedestals under each board, at its two arms;",
+        "SYN": "Вот родословие Исаака, сына Авраамова. Авраам родил Исаака."
+      }
     },
     "20": {
-      "sort_number": 20,
-      "name": "20",
-      "latin": "qui cum quadraginta esset annorum, duxit uxorem Rebeccam filiam Bathuelis Syri de Mesopotamia, sororem Laban.",
-      "word_count": 0,
-      "hebrew": "וַיְהִ֤י יִצְחָק֙ בֶּן אַרְבָּעִ֣ים שָׁנָ֔ה בְּקַחְתּ֣וֹ אֶת רִבְקָ֗ה בַּת בְּתוּאֵל֙ הָֽאֲרַמִּ֔י מִפַּדַּ֖ן אֲרָ֑ם אֲח֛וֹת לָבָ֥ן הָאֲרַמִּ֖י ל֥וֹ לְאִשָּֽׁה׃",
-      "russian": "Исаак был сорока лет, когда он взял себе в жену Ревекку, дочь Вафуила Арамеянина из Месопотамии, сестру Лавана Арамеянина.",
-      "greek": "ἦν δὲ Ἰσαὰκ ἐτῶν τεσσεράκοντα ὅτε ἔλαβεν τὴν Ῥεβέκκαν θυγατέρα Βαθουὴλ τοῦ Σύρου ἐκ τῆς Μεσοποταμίας, ἀδελφὴν Λαβὰν τοῦ Σύρου, ἑαυτῷ γυναῖκα.",
-      "english": "twenty boards on the other side of the Dwelling, the north side,"
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַיְהִ֤י יִצְחָק֙ בֶּן אַרְבָּעִ֣ים שָׁנָ֔ה בְּקַחְתּ֣וֹ אֶת רִבְקָ֗ה בַּת בְּתוּאֵל֙ הָֽאֲרַמִּ֔י מִפַּדַּ֖ן אֲרָ֑ם אֲח֛וֹת לָבָ֥ן הָאֲרַמִּ֖י ל֥וֹ לְאִשָּֽׁה׃",
+        "VUL": "qui cum quadraginta esset annorum, duxit uxorem Rebeccam filiam Bathuelis Syri de Mesopotamia, sororem Laban.",
+        "LXX": "ἦν δὲ Ἰσαὰκ ἐτῶν τεσσεράκοντα ὅτε ἔλαβεν τὴν Ῥεβέκκαν θυγατέρα Βαθουὴλ τοῦ Σύρου ἐκ τῆς Μεσοποταμίας, ἀδελφὴν Λαβὰν τοῦ Σύρου, ἑαυτῷ γυναῖκα.",
+        "NAB": "twenty boards on the other side of the Dwelling, the north side,",
+        "SYN": "Исаак был сорока лет, когда он взял себе в жену Ревекку, дочь Вафуила Арамеянина из Месопотамии, сестру Лавана Арамеянина."
+      }
     },
     "21": {
-      "sort_number": 21,
-      "name": "21",
-      "latin": "Deprecatusque est Isaac Dominum pro uxore sua, eo quod esset sterilis: qui exaudivit eum, et dedit conceptum Rebeccæ.",
-      "word_count": 0,
-      "hebrew": "וַיֶּעְתַּ֨ר יִצְחָ֤ק לַֽיהוָה֙ לְנֹ֣כַח אִשְׁתּ֔וֹ כִּ֥י עֲקָרָ֖ה הִ֑וא וַיֵּעָ֤תֶר לוֹ֙ יְהוָ֔ה וַתַּ֖הַר רִבְקָ֥ה אִשְׁתּֽוֹ׃",
-      "russian": "И молился Исаак Господу о [Ревекке] жене своей, потому что она была неплодна; и Господь услышал его, и зачала Ревекка, жена его.",
-      "greek": "ἐδεῖτο δὲ Ἰσαὰκ Κυρίου περὶ Ῥεβέκκας τῆς γυναικὸς αὐτοῦ, ὅτι στεῖρα ἦν· ἐπήκουσεν δὲ αὐτοῦ ὁ θεός, καὶ ἔλαβεν ἐν γαστρὶ Ῥεβέκκα ἡ γυνὴ αὐτοῦ.",
-      "english": "with their forty silver pedestals, two under each board;"
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַיֶּעְתַּ֨ר יִצְחָ֤ק לַֽיהוָה֙ לְנֹ֣כַח אִשְׁתּ֔וֹ כִּ֥י עֲקָרָ֖ה הִ֑וא וַיֵּעָ֤תֶר לוֹ֙ יְהוָ֔ה וַתַּ֖הַר רִבְקָ֥ה אִשְׁתּֽוֹ׃",
+        "VUL": "Deprecatusque est Isaac Dominum pro uxore sua, eo quod esset sterilis: qui exaudivit eum, et dedit conceptum Rebeccæ.",
+        "LXX": "ἐδεῖτο δὲ Ἰσαὰκ Κυρίου περὶ Ῥεβέκκας τῆς γυναικὸς αὐτοῦ, ὅτι στεῖρα ἦν· ἐπήκουσεν δὲ αὐτοῦ ὁ θεός, καὶ ἔλαβεν ἐν γαστρὶ Ῥεβέκκα ἡ γυνὴ αὐτοῦ.",
+        "NAB": "with their forty silver pedestals, two under each board;",
+        "SYN": "И молился Исаак Господу о [Ревекке] жене своей, потому что она была неплодна; и Господь услышал его, и зачала Ревекка, жена его."
+      }
     },
     "22": {
-      "sort_number": 22,
-      "name": "22",
-      "latin": "Sed collidebantur in utero ejus parvuli ; quæ ait: Si sic mihi futurum erat, quid necesse fuit concipere ? perrexitque ut consuleret Dominum.",
-      "word_count": 0,
-      "hebrew": "וַיִּתְרֹֽצֲצ֤וּ הַבָּנִים֙ בְּקִרְבָּ֔הּ וַתֹּ֣אמֶר אִם כֵּ֔ן לָ֥מָּה זֶּ֖ה אָנֹ֑כִי וַתֵּ֖לֶךְ לִדְרֹ֥שׁ אֶת יְהוָֽה׃",
-      "russian": "Сыновья в утробе ее стали биться, и она сказала: если так будет, то для чего мне это? И пошла вопросить Господа.",
-      "greek": "ἐσκίρτων δὲ τὰ παιδία ἐν αὐτῇ· εἶπεν δέ Εἰ οὕτως μοι μέλλει γίνεσθαι, ἵνα τί μοι τοῦτο; ἐπορεύθη δὲ πυθέσθαι παρὰ Κυρίου.",
-      "english": "six boards for the rear of the Dwelling, to the west;"
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַיִּתְרֹֽצֲצ֤וּ הַבָּנִים֙ בְּקִרְבָּ֔הּ וַתֹּ֣אמֶר אִם כֵּ֔ן לָ֥מָּה זֶּ֖ה אָנֹ֑כִי וַתֵּ֖לֶךְ לִדְרֹ֥שׁ אֶת יְהוָֽה׃",
+        "VUL": "Sed collidebantur in utero ejus parvuli ; quæ ait: Si sic mihi futurum erat, quid necesse fuit concipere ? perrexitque ut consuleret Dominum.",
+        "LXX": "ἐσκίρτων δὲ τὰ παιδία ἐν αὐτῇ· εἶπεν δέ Εἰ οὕτως μοι μέλλει γίνεσθαι, ἵνα τί μοι τοῦτο; ἐπορεύθη δὲ πυθέσθαι παρὰ Κυρίου.",
+        "NAB": "six boards for the rear of the Dwelling, to the west;",
+        "SYN": "Сыновья в утробе ее стали биться, и она сказала: если так будет, то для чего мне это? И пошла вопросить Господа."
+      }
     },
     "23": {
-      "sort_number": 23,
-      "name": "23",
-      "latin": "Qui respondens ait: [Duæ gentes sunt in utero tuo,/ et duo populi ex ventre tuo dividentur,/ populusque populum superabit,/ et major serviet minori.]",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֨אמֶר יְהוָ֜ה לָ֗הּ שְׁנֵ֤י גיים גוֹיִם֙ בְּבִטְנֵ֔ךְ וּשְׁנֵ֣י לְאֻמִּ֔ים מִמֵּעַ֖יִךְ יִפָּרֵ֑דוּ וּלְאֹם֙ מִלְאֹ֣ם יֶֽאֱמָ֔ץ וְרַ֖ב יַעֲבֹ֥ד צָעִֽיר׃",
-      "russian": "Господь сказал ей: два племени во чреве твоем, и два различных народа произойдут из утробы твоей; один народ сделается сильнее другого, и больший будет служить меньшему.",
-      "greek": "καὶ εἶπεν Κύριος αὐτῇ Δύο ἔθνη ἐν τῇ γαστρί σού εἰσιν, καὶ δύο λαοὶ ἐκ τῆς κοιλίας σου διασταλήσονται· καὶ λαὸς λαοῦ ὑπερέξει, καὶ ὁ μείζων δουλεύσει τῷ ἐλάσσονι.",
-      "english": "and two boards for the corners at the rear of the Dwelling."
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַיֹּ֨אמֶר יְהוָ֜ה לָ֗הּ שְׁנֵ֤י גיים גוֹיִם֙ בְּבִטְנֵ֔ךְ וּשְׁנֵ֣י לְאֻמִּ֔ים מִמֵּעַ֖יִךְ יִפָּרֵ֑דוּ וּלְאֹם֙ מִלְאֹ֣ם יֶֽאֱמָ֔ץ וְרַ֖ב יַעֲבֹ֥ד צָעִֽיר׃",
+        "VUL": "Qui respondens ait: [Duæ gentes sunt in utero tuo,/ et duo populi ex ventre tuo dividentur,/ populusque populum superabit,/ et major serviet minori.]",
+        "LXX": "καὶ εἶπεν Κύριος αὐτῇ Δύο ἔθνη ἐν τῇ γαστρί σού εἰσιν, καὶ δύο λαοὶ ἐκ τῆς κοιλίας σου διασταλήσονται· καὶ λαὸς λαοῦ ὑπερέξει, καὶ ὁ μείζων δουλεύσει τῷ ἐλάσσονι.",
+        "NAB": "and two boards for the corners at the rear of the Dwelling.",
+        "SYN": "Господь сказал ей: два племени во чреве твоем, и два различных народа произойдут из утробы твоей; один народ сделается сильнее другого, и больший будет служить меньшему."
+      }
     },
     "24": {
-      "sort_number": 24,
-      "name": "24",
-      "latin": "Jam tempus pariendi advenerat, et ecce gemini in utero ejus reperti sunt.",
-      "word_count": 0,
-      "hebrew": "וַיִּמְלְא֥וּ יָמֶ֖יהָ לָלֶ֑דֶת וְהִנֵּ֥ה תוֹמִ֖ם בְּבִטְנָֽהּ׃",
-      "russian": "И настало время родить ей: и вот близнецы в утробе ее.",
-      "greek": "καὶ ἐπληρώθησαν αἱ ἡμέραι τοῦ τεκεῖν αὐτήν· καὶ τῇδε ἦν δίδυμα ἐν τῇ γαστρὶ αὐτῆς.",
-      "english": "These two shall be double at the bottom, and likewise double at the top, to the first ring. That is how both boards in the corners are to be made."
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַיִּמְלְא֥וּ יָמֶ֖יהָ לָלֶ֑דֶת וְהִנֵּ֥ה תוֹמִ֖ם בְּבִטְנָֽהּ׃",
+        "VUL": "Jam tempus pariendi advenerat, et ecce gemini in utero ejus reperti sunt.",
+        "LXX": "καὶ ἐπληρώθησαν αἱ ἡμέραι τοῦ τεκεῖν αὐτήν· καὶ τῇδε ἦν δίδυμα ἐν τῇ γαστρὶ αὐτῆς.",
+        "NAB": "These two shall be double at the bottom, and likewise double at the top, to the first ring. That is how both boards in the corners are to be made.",
+        "SYN": "И настало время родить ей: и вот близнецы в утробе ее."
+      }
     },
     "25": {
-      "sort_number": 25,
-      "name": "25",
-      "latin": "Qui prior egressus est, rufus erat, et totus in morem pellis hispidus: vocatumque est nomen ejus Esau. Protinus alter egrediens, plantam fratris tenebat manu: et idcirco appellavit eum Jacob.",
-      "word_count": 0,
-      "hebrew": "וַיֵּצֵ֤א הָרִאשׁוֹן֙ אַדְמוֹנִ֔י כֻּלּ֖וֹ כְּאַדֶּ֣רֶת שֵׂעָ֑ר וַיִּקְרְא֥וּ שְׁמ֖וֹ עֵשָֽׂו׃",
-      "russian": "Первый вышел красный, весь, как кожа, косматый; и нарекли ему имя Исав.",
-      "greek": "ἐξῆλθεν δὲ ὁ υἱὸς ὁ πρωτότοκος πυρράκης, ὅλος ὡσεὶ δορὰ δασύς· ἐπωνόμασεν δὲ τὸ ὄνομα αὐτοῦ Ἠσαύ.",
-      "english": "Thus, there shall be in the rear eight boards, with their sixteen silver pedestals, two pedestals under each board."
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַיֵּצֵ֤א הָרִאשׁוֹן֙ אַדְמוֹנִ֔י כֻּלּ֖וֹ כְּאַדֶּ֣רֶת שֵׂעָ֑ר וַיִּקְרְא֥וּ שְׁמ֖וֹ עֵשָֽׂו׃",
+        "VUL": "Qui prior egressus est, rufus erat, et totus in morem pellis hispidus: vocatumque est nomen ejus Esau. Protinus alter egrediens, plantam fratris tenebat manu: et idcirco appellavit eum Jacob.",
+        "LXX": "ἐξῆλθεν δὲ ὁ υἱὸς ὁ πρωτότοκος πυρράκης, ὅλος ὡσεὶ δορὰ δασύς· ἐπωνόμασεν δὲ τὸ ὄνομα αὐτοῦ Ἠσαύ.",
+        "NAB": "Thus, there shall be in the rear eight boards, with their sixteen silver pedestals, two pedestals under each board.",
+        "SYN": "Первый вышел красный, весь, как кожа, косматый; и нарекли ему имя Исав."
+      }
     },
     "26": {
-      "sort_number": 26,
-      "name": "26",
-      "latin": "Sexagenarius erat Isaac quando nati sunt ei parvuli.",
-      "word_count": 0,
-      "hebrew": "וְאַֽחֲרֵי כֵ֞ן יָצָ֣א אָחִ֗יו וְיָד֤וֹ אֹחֶ֨זֶת֙ בַּעֲקֵ֣ב עֵשָׂ֔ו וַיִּקְרָ֥א שְׁמ֖וֹ יַעֲקֹ֑ב וְיִצְחָ֛ק בֶּן שִׁשִּׁ֥ים שָׁנָ֖ה בְּלֶ֥דֶת אֹתָֽם׃",
-      "russian": "Потом вышел брат его, держась рукою своею за пяту Исава; и наречено ему имя Иаков. Исаак же был шестидесяти лет, когда они родились [от Ревекки].",
-      "greek": "καὶ μετὰ τοῦτο ἐξῆλθεν ὁ ἀδελφὸς αὐτοῦ, καὶ ἡ χεὶρ αὐτοῦ ἐπειλημμένη τῆς πτέρνης Ἠσαύ· καὶ ἐκάλεσεν τὸ ὄνομα αὐτοῦ Ἰακώβ. Ἰσαὰκ δὲ ἦν ἐτῶν ἑξήκοντα ὅτε ἐγέννησεν αὐτοὺς Ῥεβέκκα.",
-      "english": "Also make bars of acacia wood: five for the boards on one side of the Dwelling,"
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְאַֽחֲרֵי כֵ֞ן יָצָ֣א אָחִ֗יו וְיָד֤וֹ אֹחֶ֨זֶת֙ בַּעֲקֵ֣ב עֵשָׂ֔ו וַיִּקְרָ֥א שְׁמ֖וֹ יַעֲקֹ֑ב וְיִצְחָ֛ק בֶּן שִׁשִּׁ֥ים שָׁנָ֖ה בְּלֶ֥דֶת אֹתָֽם׃",
+        "VUL": "Sexagenarius erat Isaac quando nati sunt ei parvuli.",
+        "LXX": "καὶ μετὰ τοῦτο ἐξῆλθεν ὁ ἀδελφὸς αὐτοῦ, καὶ ἡ χεὶρ αὐτοῦ ἐπειλημμένη τῆς πτέρνης Ἠσαύ· καὶ ἐκάλεσεν τὸ ὄνομα αὐτοῦ Ἰακώβ. Ἰσαὰκ δὲ ἦν ἐτῶν ἑξήκοντα ὅτε ἐγέννησεν αὐτοὺς Ῥεβέκκα.",
+        "NAB": "Also make bars of acacia wood: five for the boards on one side of the Dwelling,",
+        "SYN": "Потом вышел брат его, держась рукою своею за пяту Исава; и наречено ему имя Иаков. Исаак же был шестидесяти лет, когда они родились [от Ревекки]."
+      }
     },
     "27": {
-      "sort_number": 27,
-      "name": "27",
-      "latin": "Quibus adultis, factus est Esau vir gnarus venandi, et homo agricola: Jacob autem vir simplex habitabat in tabernaculis.",
-      "word_count": 0,
-      "hebrew": "וַֽיִּגְדְּלוּ֙ הַנְּעָרִ֔ים וַיְהִ֣י עֵשָׂ֗ו אִ֛ישׁ יֹדֵ֥עַ צַ֖יִד אִ֣ישׁ שָׂדֶ֑ה וְיַעֲקֹב֙ אִ֣ישׁ תָּ֔ם יֹשֵׁ֖ב אֹהָלִֽים׃",
-      "russian": "Дети выросли, и стал Исав человеком искусным в звероловстве, человеком полей; а Иаков человеком кротким, живущим в шатрах.",
-      "greek": "ηὐξήθησαν δὲ οἱ νεανίσκοι· καὶ ἦν Ἠσαὺ ἄνθρωπος εἰδὼς κυνηγεῖν, ἄγροικος· Ἰακὼβ δὲ ἦν ἄνθρωπος ἄπλαστος, οἰκῶν οἰκίαν.",
-      "english": "five for those on the other side, and five for those at the rear, toward the west."
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַֽיִּגְדְּלוּ֙ הַנְּעָרִ֔ים וַיְהִ֣י עֵשָׂ֗ו אִ֛ישׁ יֹדֵ֥עַ צַ֖יִד אִ֣ישׁ שָׂדֶ֑ה וְיַעֲקֹב֙ אִ֣ישׁ תָּ֔ם יֹשֵׁ֖ב אֹהָלִֽים׃",
+        "VUL": "Quibus adultis, factus est Esau vir gnarus venandi, et homo agricola: Jacob autem vir simplex habitabat in tabernaculis.",
+        "LXX": "ηὐξήθησαν δὲ οἱ νεανίσκοι· καὶ ἦν Ἠσαὺ ἄνθρωπος εἰδὼς κυνηγεῖν, ἄγροικος· Ἰακὼβ δὲ ἦν ἄνθρωπος ἄπλαστος, οἰκῶν οἰκίαν.",
+        "NAB": "five for those on the other side, and five for those at the rear, toward the west.",
+        "SYN": "Дети выросли, и стал Исав человеком искусным в звероловстве, человеком полей; а Иаков человеком кротким, живущим в шатрах."
+      }
     },
     "28": {
-      "sort_number": 28,
-      "name": "28",
-      "latin": "Isaac amabat Esau, eo quod de venationibus illius vesceretur: et Rebecca diligebat Jacob.",
-      "word_count": 0,
-      "hebrew": "וַיֶּאֱהַ֥ב יִצְחָ֛ק אֶת עֵשָׂ֖ו כִּי צַ֣יִד בְּפִ֑יו וְרִבְקָ֖ה אֹהֶ֥בֶת אֶֽת יַעֲקֹֽב׃",
-      "russian": "Исаак любил Исава, потому что дичь его была по вкусу его, а Ревекка любила Иакова.",
-      "greek": "ἠγάπησεν δὲ Ἰσαὰκ τὸν Ἠσαύ, ὅτι ἡ θήρα αὐτοῦ βρῶσις αὐτῷ· Ῥεβέκκα δὲ ἠγάπα τὸν Ἰακώβ.",
-      "english": "The center bar, at the middle of the boards, shall reach across from end to end."
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַיֶּאֱהַ֥ב יִצְחָ֛ק אֶת עֵשָׂ֖ו כִּי צַ֣יִד בְּפִ֑יו וְרִבְקָ֖ה אֹהֶ֥בֶת אֶֽת יַעֲקֹֽב׃",
+        "VUL": "Isaac amabat Esau, eo quod de venationibus illius vesceretur: et Rebecca diligebat Jacob.",
+        "LXX": "ἠγάπησεν δὲ Ἰσαὰκ τὸν Ἠσαύ, ὅτι ἡ θήρα αὐτοῦ βρῶσις αὐτῷ· Ῥεβέκκα δὲ ἠγάπα τὸν Ἰακώβ.",
+        "NAB": "The center bar, at the middle of the boards, shall reach across from end to end.",
+        "SYN": "Исаак любил Исава, потому что дичь его была по вкусу его, а Ревекка любила Иакова."
+      }
     },
     "29": {
-      "sort_number": 29,
-      "name": "29",
-      "latin": "Coxit autem Jacob pulmentum: ad quem cum venisset Esau de agro lassus,",
-      "word_count": 0,
-      "hebrew": "וַיָּ֥זֶד יַעֲקֹ֖ב נָזִ֑יד וַיָּבֹ֥א עֵשָׂ֛ו מִן הַשָּׂדֶ֖ה וְה֥וּא עָיֵֽף׃",
-      "russian": "И сварил Иаков кушанье; а Исав пришел с поля усталый.",
-      "greek": "Ἥψησεν δὲ Ἰακὼβ ἕψεμα· ἦλθεν δὲ Ἠσαὺ ἐκ τοῦ πεδίου ἐκλείπων.",
-      "english": "Plate the boards with gold, and make gold rings on them as holders for the bars, which are also to be plated with gold."
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַיָּ֥זֶד יַעֲקֹ֖ב נָזִ֑יד וַיָּבֹ֥א עֵשָׂ֛ו מִן הַשָּׂדֶ֖ה וְה֥וּא עָיֵֽף׃",
+        "VUL": "Coxit autem Jacob pulmentum: ad quem cum venisset Esau de agro lassus,",
+        "LXX": "Ἥψησεν δὲ Ἰακὼβ ἕψεμα· ἦλθεν δὲ Ἠσαὺ ἐκ τοῦ πεδίου ἐκλείπων.",
+        "NAB": "Plate the boards with gold, and make gold rings on them as holders for the bars, which are also to be plated with gold.",
+        "SYN": "И сварил Иаков кушанье; а Исав пришел с поля усталый."
+      }
     },
     "30": {
-      "sort_number": 30,
-      "name": "30",
-      "latin": "ait: Da mihi de coctione hac rufa, quia oppido lassus sum. Quam ob causam vocatum est nomen ejus Edom.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֨אמֶר עֵשָׂ֜ו אֶֽל יַעֲקֹ֗ב הַלְעִיטֵ֤נִי נָא֙ מִן הָאָדֹ֤ם הָאָדֹם֙ הַזֶּ֔ה כִּ֥י עָיֵ֖ף אָנֹ֑כִי עַל כֵּ֥ן קָרָֽא שְׁמ֖וֹ אֱדֽוֹם׃",
-      "russian": "И сказал Исав Иакову: дай мне поесть красного, красного этого, ибо я устал. От сего дано ему прозвание: Едом.",
-      "greek": "καὶ εἶπεν Ἠσαὺ τῷ Ἰακώβ Γεῦσόν με ἀπὸ τοῦ ἑψέματος τοῦ πυρροῦ τούτου, ὅτι ἐκλείπω ἐγώ· διὰ τοῦτο ἐκλήθη τὸ ὄνομα αὐτοῦ Ἐδώμ.",
-      "english": "You shall erect the Dwelling according to the pattern shown you on the mountain."
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַיֹּ֨אמֶר עֵשָׂ֜ו אֶֽל יַעֲקֹ֗ב הַלְעִיטֵ֤נִי נָא֙ מִן הָאָדֹ֤ם הָאָדֹם֙ הַזֶּ֔ה כִּ֥י עָיֵ֖ף אָנֹ֑כִי עַל כֵּ֥ן קָרָֽא שְׁמ֖וֹ אֱדֽוֹם׃",
+        "VUL": "ait: Da mihi de coctione hac rufa, quia oppido lassus sum. Quam ob causam vocatum est nomen ejus Edom.",
+        "LXX": "καὶ εἶπεν Ἠσαὺ τῷ Ἰακώβ Γεῦσόν με ἀπὸ τοῦ ἑψέματος τοῦ πυρροῦ τούτου, ὅτι ἐκλείπω ἐγώ· διὰ τοῦτο ἐκλήθη τὸ ὄνομα αὐτοῦ Ἐδώμ.",
+        "NAB": "You shall erect the Dwelling according to the pattern shown you on the mountain.",
+        "SYN": "И сказал Исав Иакову: дай мне поесть красного, красного этого, ибо я устал. От сего дано ему прозвание: Едом."
+      }
     },
     "31": {
-      "sort_number": 31,
-      "name": "31",
-      "latin": "Cui dixit Jacob: Vende mihi primogenita tua.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֖אמֶר יַעֲקֹ֑ב מִכְרָ֥ה כַיּ֛וֹם אֶת בְּכֹֽרָתְךָ֖ לִֽי׃",
-      "russian": "Но Иаков сказал [Исаву]: продай мне теперь же свое первородство.",
-      "greek": "εἶπεν δὲ Ἰακὼβ τῷ Ἠσαύ Ἀπόδου μοι σήμερον τὰ πρωτοτοκεῖά σου ἐμοί.",
-      "english": "\"You shall have a veil woven of violet, purple and scarlet yarn, and of fine linen twined, with cherubim embroidered on it."
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַיֹּ֖אמֶר יַעֲקֹ֑ב מִכְרָ֥ה כַיּ֛וֹם אֶת בְּכֹֽרָתְךָ֖ לִֽי׃",
+        "VUL": "Cui dixit Jacob: Vende mihi primogenita tua.",
+        "LXX": "εἶπεν δὲ Ἰακὼβ τῷ Ἠσαύ Ἀπόδου μοι σήμερον τὰ πρωτοτοκεῖά σου ἐμοί.",
+        "NAB": "\"You shall have a veil woven of violet, purple and scarlet yarn, and of fine linen twined, with cherubim embroidered on it.",
+        "SYN": "Но Иаков сказал [Исаву]: продай мне теперь же свое первородство."
+      }
     },
     "32": {
-      "sort_number": 32,
-      "name": "32",
-      "latin": "Ille respondit: En morior, quid mihi proderunt primogenita ?",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֣אמֶר עֵשָׂ֔ו הִנֵּ֛ה אָנֹכִ֥י הוֹלֵ֖ךְ לָמ֑וּת וְלָמָּה זֶּ֥ה לִ֖י בְּכֹרָֽה׃",
-      "russian": "Исав сказал: вот, я умираю, что мне в этом первородстве?",
-      "greek": "εἶπεν δε Ἠσαύ Ἰδοὺ ἐγὼ πορεύομαι τελευτᾷν, καὶ ἵνα τί μοι ταῦτα τὰ πρωτοτοκεῖα;",
-      "english": "It is to be hung on four gold-plated columns of acacia wood, which shall have hooks of gold and shall rest on four silver pedestals."
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַיֹּ֣אמֶר עֵשָׂ֔ו הִנֵּ֛ה אָנֹכִ֥י הוֹלֵ֖ךְ לָמ֑וּת וְלָמָּה זֶּ֥ה לִ֖י בְּכֹרָֽה׃",
+        "VUL": "Ille respondit: En morior, quid mihi proderunt primogenita ?",
+        "LXX": "εἶπεν δε Ἠσαύ Ἰδοὺ ἐγὼ πορεύομαι τελευτᾷν, καὶ ἵνα τί μοι ταῦτα τὰ πρωτοτοκεῖα;",
+        "NAB": "It is to be hung on four gold-plated columns of acacia wood, which shall have hooks of gold and shall rest on four silver pedestals.",
+        "SYN": "Исав сказал: вот, я умираю, что мне в этом первородстве?"
+      }
     },
     "33": {
-      "sort_number": 33,
-      "name": "33",
-      "latin": "Ait Jacob: Jura ergo mihi. Juravit ei Esau et vendidit primogenita.",
-      "word_count": 0,
-      "hebrew": "וַיֹּ֣אמֶר יַעֲקֹ֗ב הִשָּׁ֤בְעָה לִּי֙ כַּיּ֔וֹם וַיִּשָּׁבַ֖ע ל֑וֹ וַיִּמְכֹּ֥ר אֶת בְּכֹרָת֖וֹ לְיַעֲקֹֽב׃",
-      "russian": "Иаков сказал [ему]: поклянись мне теперь же. Он поклялся ему, и продал [Исав] первородство свое Иакову.",
-      "greek": "καὶ εἶπεν αὐτῷ Ἰακώβ Ὄμοσόν μοι σήμερον. καὶ ὤμοσεν αὐτῷ· ἀπέδοτο δὲ Ἠσαὺ τὰ πρωτοτοκεῖα τῷ Ἰακώβ.",
-      "english": "Hang the veil from clasps. The ark of the commandments you shall bring inside, behind this veil which divides the holy place from the holy of holies."
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַיֹּ֣אמֶר יַעֲקֹ֗ב הִשָּׁ֤בְעָה לִּי֙ כַּיּ֔וֹם וַיִּשָּׁבַ֖ע ל֑וֹ וַיִּמְכֹּ֥ר אֶת בְּכֹרָת֖וֹ לְיַעֲקֹֽב׃",
+        "VUL": "Ait Jacob: Jura ergo mihi. Juravit ei Esau et vendidit primogenita.",
+        "LXX": "καὶ εἶπεν αὐτῷ Ἰακώβ Ὄμοσόν μοι σήμερον. καὶ ὤμοσεν αὐτῷ· ἀπέδοτο δὲ Ἠσαὺ τὰ πρωτοτοκεῖα τῷ Ἰακώβ.",
+        "NAB": "Hang the veil from clasps. The ark of the commandments you shall bring inside, behind this veil which divides the holy place from the holy of holies.",
+        "SYN": "Иаков сказал [ему]: поклянись мне теперь же. Он поклялся ему, и продал [Исав] первородство свое Иакову."
+      }
     },
     "34": {
-      "sort_number": 34,
-      "name": "34",
-      "latin": "Et sic, accepto pane et lentis edulio, comedit et bibit, et abiit, parvipendens quod primogenita vendidisset.",
-      "word_count": 0,
-      "hebrew": "וְיַעֲקֹ֞ב נָתַ֣ן לְעֵשָׂ֗ו לֶ֚חֶם וּנְזִ֣יד עֲדָשִׁ֔ים וַיֹּ֣אכַל וַיֵּ֔שְׁתְּ וַיָּ֖קָם וַיֵּלַ֑ךְ וַיִּ֥בֶז עֵשָׂ֖ו אֶת הַבְּכֹרָֽה׃",
-      "russian": "И дал Иаков Исаву хлеба и кушанья из чечевицы; и он ел и пил, и встал и пошел; и пренебрег Исав первородство.",
-      "greek": "Ἰακὼβ δὲ ἔδωκεν τῷ Ἠσαὺ ἄρτον καὶ ἕψεμα φακοῦ· καὶ ἔφαγεν καὶ ἔπιεν, καὶ ἀναστὰς ᾤχετο· καὶ ἐφαύλισεν Ἠσαὺ τὰ πρωτοτοκεῖα.",
-      "english": "Set the propitiatory on the ark of the commandments in the holy of holies."
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְיַעֲקֹ֞ב נָתַ֣ן לְעֵשָׂ֗ו לֶ֚חֶם וּנְזִ֣יד עֲדָשִׁ֔ים וַיֹּ֣אכַל וַיֵּ֔שְׁתְּ וַיָּ֖קָם וַיֵּלַ֑ךְ וַיִּ֥בֶז עֵשָׂ֖ו אֶת הַבְּכֹרָֽה׃",
+        "VUL": "Et sic, accepto pane et lentis edulio, comedit et bibit, et abiit, parvipendens quod primogenita vendidisset.",
+        "LXX": "Ἰακὼβ δὲ ἔδωκεν τῷ Ἠσαὺ ἄρτον καὶ ἕψεμα φακοῦ· καὶ ἔφαγεν καὶ ἔπιεν, καὶ ἀναστὰς ᾤχετο· καὶ ἐφαύλισεν Ἠσαὺ τὰ πρωτοτοκεῖα.",
+        "NAB": "Set the propitiatory on the ark of the commandments in the holy of holies.",
+        "SYN": "И дал Иаков Исаву хлеба и кушанья из чечевицы; и он ел и пил, и встал и пошел; и пренебрег Исав первородство."
+      }
     }
   }
 }
