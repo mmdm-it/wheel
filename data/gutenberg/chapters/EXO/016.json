@@ -19,7 +19,14 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "וַיִּסְעוּ֙ מֵֽאֵילִ֔ם וַיָּבֹ֜אוּ כָּל עֲדַ֤ת בְּנֵֽי יִשְׂרָאֵל֙ אֶל מִדְבַּר סִ֔ין אֲשֶׁ֥ר בֵּין אֵילִ֖ם וּבֵ֣ין סִינָ֑י בַּחֲמִשָּׁ֨ה עָשָׂ֥ר יוֹם֙ לַחֹ֣דֶשׁ הַשֵּׁנִ֔י לְצֵאתָ֖ם מֵאֶ֥רֶץ מִצְרָֽיִם׃"
+        "WLC": "וַ/יִּסְעוּ֙ מֵֽ/אֵילִ֔ם וַ/יָּבֹ֜אוּ כָּל עֲדַ֤ת בְּנֵֽי יִשְׂרָאֵל֙ אֶל מִדְבַּר סִ֔ין אֲשֶׁ֥ר בֵּין אֵילִ֖ם וּ/בֵ֣ין סִינָ֑י בַּ/חֲמִשָּׁ֨ה עָשָׂ֥ר יוֹם֙ לַ/חֹ֣דֶשׁ הַ/שֵּׁנִ֔י לְ/צֵאתָ֖/ם מֵ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "ἀπῆραν δὲ ἐξ Αἰλείμ, καὶ ἤλθοσαν πᾶσα συναγωγὴ υἱῶν Ἰσραὴλ εἰς τὴν ἔρημον Σείν, ὅ ἐστιν ἀνὰ μέσον Αἰλεὶμ καὶ ἀνὰ μέσον Σεινά. τῇ δὲ πεντεκαιδεκάτῃ ἡμέρᾳ τῷ μηνὶ τῷ δευτέρῳ ἐξεληλυθότων αὐτῶν ἐκ γῆς Αἰγύπτου",
+        "VUL": "Profectique sunt de Elim, et venit omnis multitudo filiorum Israël in desertum Sin, quod est inter Elim et Sinai, quintodecimo die mensis secundi, postquam egressi sunt de terra Ægypti.",
+        "SYN": "И двинулись из Елима, и пришло всё общество сынов Израилевых в пустыню Син, что между Елимом и между Синаем, в пятнадцатый день второго месяца по выходе их из земли Египетской.",
+        "NEO": "Ils partirent d’Élim, et toute l’assemblée des enfants d’Israël arriva au désert de Sin, qui est entre Élim et le Sinaï, le quinzième jour du second mois après leur sortie du pays d’Égypte.",
+        "NAB": "Having set out from Elim, the whole Israelite community came into the desert of Sin, which is between Elim and Sinai, on the fifteenth day of the second month after their departure from the land of Egypt.",
+        "VAT_ES": "Luego partieron de Elim, y el día quince del segundo mes después de su salida de Egipto, toda la comunidad de los israelitas llegó al desierto de Sin, que está entre Elim y el Sinaí.",
+        "CEI": "Levarono l'accampamento da Elim e tutta la comunità degli Israeliti arrivò al deserto di Sin, che si trova tra Elim e il Sinai, il quindici del secondo mese dopo la loro uscita dal paese d'Egitto."
       }
     },
     "2": {
@@ -30,7 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "וילינו וַיִּלּ֜וֹנוּ כָּל עֲדַ֧ת בְּנֵי יִשְׂרָאֵ֛ל עַל מֹשֶׁ֥ה וְעַֽל אַהֲרֹ֖ן בַּמִּדְבָּֽר׃"
+        "WLC": "ו/ילינו וַ/יִּלּ֜וֹנוּ כָּל עֲדַ֧ת בְּנֵי יִשְׂרָאֵ֛ל עַל מֹשֶׁ֥ה וְ/עַֽל אַהֲרֹ֖ן בַּ/מִּדְבָּֽר׃",
+        "LXX": "διεγόγγυζεν πᾶσα συναγωγὴ υἱῶν Ἰσραὴλ ἐπὶ Μωυσῆν καὶ Ἀαρών·",
+        "VUL": "Et murmuravit omnis congregatio filiorum Israël contra Moysen et Aaron in solitudine.",
+        "SYN": "И возроптало все общество сынов Израилевых на Моисея и Аарона в пустыне,",
+        "NEO": "Toute l’assemblée des enfants d’Israël murmura dans le désert contre Moïse et Aaron.",
+        "NAB": "Here in the desert the whole Israelite community grumbled against Moses and Aaron.",
+        "VAT_ES": "En el desierto, los israelitas comenzaron a protestar contra Moisés y Aarón.",
+        "CEI": "Nel deserto tutta la comunità degli Israeliti mormorò contro Mosè e contro Aronne."
       }
     },
     "3": {
@@ -41,7 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "וַיֹּאמְר֨וּ אֲלֵהֶ֜ם בְּנֵ֣י יִשְׂרָאֵ֗ל מִֽי יִתֵּ֨ן מוּתֵ֤נוּ בְיַד יְהוָה֙ בְּאֶ֣רֶץ מִצְרַ֔יִם בְּשִׁבְתֵּ֨נוּ֙ עַל סִ֣יר הַבָּשָׂ֔ר בְּאָכְלֵ֥נוּ לֶ֖חֶם לָשֹׂ֑בַע כִּֽי הוֹצֵאתֶ֤ם אֹתָ֨נוּ֙ אֶל הַמִּדְבָּ֣ר הַזֶּ֔ה לְהָמִ֛ית אֶת כָּל הַקָּהָ֥ל הַזֶּ֖ה בָּרָעָֽב׃"
+        "WLC": "וַ/יֹּאמְר֨וּ אֲלֵ/הֶ֜ם בְּנֵ֣י יִשְׂרָאֵ֗ל מִֽי יִתֵּ֨ן מוּתֵ֤/נוּ בְ/יַד יְהוָה֙ בְּ/אֶ֣רֶץ מִצְרַ֔יִם בְּ/שִׁבְתֵּ֨/נוּ֙ עַל סִ֣יר הַ/בָּשָׂ֔ר בְּ/אָכְלֵ֥/נוּ לֶ֖חֶם לָ/שֹׂ֑בַע כִּֽי הוֹצֵאתֶ֤ם אֹתָ֨/נוּ֙ אֶל הַ/מִּדְבָּ֣ר הַ/זֶּ֔ה לְ/הָמִ֛ית אֶת כָּל הַ/קָּהָ֥ל הַ/זֶּ֖ה בָּ/רָעָֽב׃",
+        "LXX": "καὶ εἶπαν πρὸς αὐτοὺς οἱ υἱοὶ Ἰσραήλ Ὄφελον ἀπεθάνομεν πληγέντες ὑπὸ Κυρίου ἐν γῇ Αἰγύπτῳ, ὅταν ἐκαθίσαμεν ἐπὶ τῶν λεβήτων τῶν κρεῶν καὶ ἠσθίομεν ἄρτους εἰς πλησμονήν· ὅτι ἐξηγάγετε ἡμᾶς εἰς τὴν ἔρημον ταύτην, ἀποκτεῖναι πᾶσαν τὴν συναγωγὴν ταύτην ἐν λιμῷ.",
+        "VUL": "Dixeruntque filii Israël ad eos : Utinam mortui essemus per manum Domini in terra Ægypti, quando sedebamus super ollas carnium, et comedebamus panem in saturitate : cur eduxistis nos in desertum istud, ut occideretis omnem multitudinem fame ?",
+        "SYN": "и сказали им сыны Израилевы: о, если бы мы умерли от руки Господней в земле Египетской, когда мы сидели у котлов с мясом, когда мы ели хлеб досыта! ибо вывели вы нас в эту пустыню, чтобы всё собрание это уморить голодом.",
+        "NEO": "Les enfants d’Israël leur dirent : « Que ne sommes-nous morts par la main de \\+w Yahweh|strong=\"H3068\"\\+w** dans le pays d’Égypte, quand nous étions assis devant les pots de viande, que nous mangions du pain à satiété ? Car vous nous avez amenés dans ce désert pour faire mourir de faim toute cette multitude. »",
+        "NAB": "The Israelites said to them, \"Would that we had died at the LORD'S hand in the land of Egypt, as we sat by our fleshpots and ate our fill of bread! But you had to lead us into this desert to make the whole community die of famine!\"",
+        "VAT_ES": "«Ojalá el Señor nos hubiera hecho morir en Egipto, les decían, cuando nos sentábamos delante de las ollas de carne y comíamos pan hasta saciarnos. Porque ustedes nos han traído a este desierto para matar de hambre a toda esta asamblea».",
+        "CEI": "Gli Israeliti dissero loro: \"Fossimo morti per mano del Signore nel paese d'Egitto, quando eravamo seduti presso la pentola della carne, mangiando pane a sazietà! Invece ci avete fatti uscire in questo deserto per far morire di fame tutta questa moltitudine\"."
       }
     },
     "4": {
@@ -52,7 +73,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "וַיֹּ֤אמֶר יְהוָה֙ אֶל מֹשֶׁ֔ה הִנְנִ֨י מַמְטִ֥יר לָכֶ֛ם לֶ֖חֶם מִן הַשָּׁמָ֑יִם וְיָצָ֨א הָעָ֤ם וְלָֽקְטוּ֙ דְּבַר י֣וֹם בְּיוֹמ֔וֹ לְמַ֧עַן אֲנַסֶּ֛נּוּ הֲיֵלֵ֥ךְ בְּתוֹרָתִ֖י אִם לֹֽא׃"
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֶל מֹשֶׁ֔ה הִנְ/נִ֨י מַמְטִ֥יר לָ/כֶ֛ם לֶ֖חֶם מִן הַ/שָּׁמָ֑יִם וְ/יָצָ֨א הָ/עָ֤ם וְ/לָֽקְטוּ֙ דְּבַר י֣וֹם בְּ/יוֹמ֔/וֹ לְמַ֧עַן אֲנַסֶּ֛/נּוּ הֲ/יֵלֵ֥ךְ בְּ/תוֹרָתִ֖/י אִם לֹֽא׃",
+        "LXX": "εἶπεν δὲ Κύριος πρὸς Μωυσῆν Ἰδοὺ ἐγὼ ὕω ὑμῖν ἄρτους ἐκ τοῦ οὐρανοῦ, καὶ ἐξελεύσεται ὁ λαὸς καὶ συλλέξουσιν τὸ τῆς ἡμέρας εἰς ἡμέραν, ὅπως πειράσω αὐτοὺς εἰ πορεύσονται τῷ νόμῳ μου ἢ οὔ·",
+        "VUL": "Dixit autem Dominus ad Moysen : Ecce ego pluam vobis panes de cælo : egrediatur populus, et colligat quæ sufficiunt per singulos dies : ut tentem eum utrum ambulet in lege mea, an non.",
+        "SYN": "И сказал Господь Моисею: вот, Я одождю вам хлеб с неба, и пусть народ выходит и собирает ежедневно, сколько нужно на день, чтобы Мне испытать его, будет ли он поступать по закону Моему, или нет;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Voici, je vais faire pleuvoir pour vous du pain du haut du ciel. Le peuple sortira et en ramassera jour par jour la provision nécessaire, afin que je le mette à l’épreuve, pour voir s’il marchera, ou non, dans ma loi.",
+        "NAB": "Then the LORD said to Moses, \"I will now rain down bread from heaven for you. Each day the people are to go out and gather their daily portion; thus will I test them, to see whether they follow my instructions or not.",
+        "VAT_ES": "Entonces el Señor dijo a Moisés: «Yo haré caer pan para ustedes desde lo alto del cielo, y el pueblo saldrá cada día a recoger su ración diaria. Así los pondré a prueba, para ver si caminan o no de acuerdo con mi ley.",
+        "CEI": "Allora il Signore disse a Mosè: \"Ecco, io sto per far piovere pane dal cielo per voi: il popolo uscirà a raccoglierne ogni giorno la razione di un giorno, perché io lo metta alla prova, per vedere se cammina secondo la mia legge o no."
       }
     },
     "5": {
@@ -63,7 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "וְהָיָה֙ בַּיּ֣וֹם הַשִּׁשִּׁ֔י וְהֵכִ֖ינוּ אֵ֣ת אֲשֶׁר יָבִ֑יאוּ וְהָיָ֣ה מִשְׁנֶ֔ה עַ֥ל אֲשֶֽׁר יִלְקְט֖וּ י֥וֹם יֽוֹם׃"
+        "WLC": "וְ/הָיָה֙ בַּ/יּ֣וֹם הַ/שִּׁשִּׁ֔י וְ/הֵכִ֖ינוּ אֵ֣ת אֲשֶׁר יָבִ֑יאוּ וְ/הָיָ֣ה מִשְׁנֶ֔ה עַ֥ל אֲשֶֽׁר יִלְקְט֖וּ י֥וֹם יֽוֹם׃",
+        "LXX": "καὶ ἔσται τῇ ἡμέρᾳ τῇ ἕκτῃ καὶ ἑτοιμάσουσιν ὃ ἐὰν εἰσενέγκωσιν, καὶ ἔσται διπλοῦν ὃ ἐὰν συναγάγωσιν τὸ καθ’ ἡμέραν εἰς ἡμέραν.",
+        "VUL": "Die autem sexto parent quod inferant : et sit duplum quam colligere solebant per singulos dies.",
+        "SYN": "а в шестой день пусть заготовляют, что принесут, и будет вдвое против того, по скольку собирают в прочие дни.",
+        "NEO": "Le sixième jour, ils prépareront ce qu’ils auront rapporté, et il y en aura le double de ce qu’ils en ramassent chaque jour. »",
+        "NAB": "On the sixth day, however, when they prepare what they bring in, let it be twice as much as they gather on the other days.\"",
+        "VAT_ES": "El sexto día de la semana, cuando preparen lo que hayan juntado, tendrán el doble de lo que recojan cada día».",
+        "CEI": "Ma il sesto giorno, quando prepareranno quello che dovranno portare a casa, sarà il doppio di ciò che raccoglieranno ogni altro giorno\"."
       }
     },
     "6": {
@@ -74,7 +109,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "וַיֹּ֤אמֶר מֹשֶׁה֙ וְאַהֲרֹ֔ן אֶֽל כָּל בְּנֵ֖י יִשְׂרָאֵ֑ל עֶ֕רֶב וִֽידַעְתֶּ֕ם כִּ֧י יְהוָ֛ה הוֹצִ֥יא אֶתְכֶ֖ם מֵאֶ֥רֶץ מִצְרָֽיִם׃"
+        "WLC": "וַ/יֹּ֤אמֶר מֹשֶׁה֙ וְ/אַהֲרֹ֔ן אֶֽל כָּל בְּנֵ֖י יִשְׂרָאֵ֑ל עֶ֕רֶב וִֽ/ידַעְתֶּ֕ם כִּ֧י יְהוָ֛ה הוֹצִ֥יא אֶתְ/כֶ֖ם מֵ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς καὶ Ἀαρὼν πρὸς πᾶσαν συναγωγὴν υἱῶν Ἰσραήλ Ἑσπέρας γνώσεσθε ὅτι Κύριος ἐξήγαγεν ὑμᾶς ἐκ γῆς Αἰγύπτου,",
+        "VUL": "Dixeruntque Moyses et Aaron ad omnes filios Israël : Vespere scietis quod Dominus eduxerit vos de terra Ægypti,",
+        "SYN": "И сказали Моисей и Аарон всему [обществу] сынов Израилевых: вечером узнаете вы, что Господь вывел вас из земли Египетской,",
+        "NEO": "Moïse et Aaron dirent à tous les enfants d’Israël : « Ce soir, vous reconnaîtrez que c’est \\+w Yahweh|strong=\"H3068\"\\+w** qui vous a fait sortir du pays d’Égypte ;",
+        "NAB": "So Moses and Aaron told all the Israelites, \"At evening you will know that it was the LORD who brought you out of the land of Egypt;",
+        "VAT_ES": "Moisés y Aarón dijeron a todos los israelitas: «Esta tarde ustedes sabrán que ha sido el Señor el que los hizo salir de Egipto,",
+        "CEI": "Mosè e Aronne dissero a tutti gli Israeliti: \"Questa sera saprete che il Signore vi ha fatti uscire dal paese d'Egitto;"
       }
     },
     "7": {
@@ -85,7 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "וּבֹ֗קֶר וּרְאִיתֶם֙ אֶת כְּב֣וֹד יְהוָ֔ה בְּשָׁמְע֥וֹ אֶת תְּלֻנֹּתֵיכֶ֖ם עַל יְהוָ֑ה וְנַ֣חְנוּ מָ֔ה כִּ֥י תלונו תַלִּ֖ינוּ עָלֵֽינוּ׃"
+        "WLC": "וּ/בֹ֗קֶר וּ/רְאִיתֶם֙ אֶת כְּב֣וֹד יְהוָ֔ה בְּ/שָׁמְע֥/וֹ אֶת תְּלֻנֹּתֵי/כֶ֖ם עַל יְהוָ֑ה וְ/נַ֣חְנוּ מָ֔ה כִּ֥י תלונו תַלִּ֖ינוּ עָלֵֽי/נוּ׃",
+        "LXX": "καὶ πρωὶ ὄψεσθε τὴν δόξαν Κυρίου ἐν τῷ εἰσακοῦσαι τὸν γογγυσμὸν ὑμῶν ἐπὶ τῷ θεῷ· ἡμεῖς δὲ τί ἐσμεν ὅτι διαγογγύζετε καθ’ ἡμῶν;",
+        "VUL": "et mane videbitis gloriam Domini : audivit enim murmur vestrum contra Dominum : nos vero quid sumus, quia mussitastis contra nos ?",
+        "SYN": "и утром увидите славу Господню, ибо услышал Он ропот ваш на Господа: а мы что такое, что ропщете на нас?",
+        "NEO": "et, au matin, vous verrez la gloire de \\+w Yahweh|strong=\"H3068\"\\+w**, car il a entendu vos murmures qui sont contre \\+w Yahweh|strong=\"H3068\"\\+w** ; nous, que sommes-nous, pour que vous murmuriez contre nous ? »",
+        "NAB": "and in the morning you will see the glory of the LORD, as he heeds your grumbling against him. But what are we that you should grumble against us?",
+        "VAT_ES": "y por la mañana verán la gloria del Señor, ya que el Señor los oyó protestar contra él. Porque &iquest;qué somos nosotros para que nos hagan estos reproches?».",
+        "CEI": "domani mattina vedrete la Gloria del Signore; poiché egli ha inteso le vostre mormorazioni contro di lui. Noi infatti che cosa siamo, perché mormoriate contro di noi?\"."
       }
     },
     "8": {
@@ -96,7 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "וַיֹּ֣אמֶר מֹשֶׁ֗ה בְּתֵ֣ת יְהוָה֩ לָכֶ֨ם בָּעֶ֜רֶב בָּשָׂ֣ר לֶאֱכֹ֗ל וְלֶ֤חֶם בַּבֹּ֨קֶר֙ לִשְׂבֹּ֔עַ בִּשְׁמֹ֤עַ יְהוָה֙ אֶת תְּלֻנֹּ֣תֵיכֶ֔ם אֲשֶׁר אַתֶּ֥ם מַלִּינִ֖ם עָלָ֑יו וְנַ֣חְנוּ מָ֔ה לֹא עָלֵ֥ינוּ תְלֻנֹּתֵיכֶ֖ם כִּ֥י עַל יְהוָֽה׃"
+        "WLC": "וַ/יֹּ֣אמֶר מֹשֶׁ֗ה בְּ/תֵ֣ת יְהוָה֩ לָ/כֶ֨ם בָּ/עֶ֜רֶב בָּשָׂ֣ר לֶ/אֱכֹ֗ל וְ/לֶ֤חֶם בַּ/בֹּ֨קֶר֙ לִ/שְׂבֹּ֔עַ בִּ/שְׁמֹ֤עַ יְהוָה֙ אֶת תְּלֻנֹּ֣תֵי/כֶ֔ם אֲשֶׁר אַתֶּ֥ם מַלִּינִ֖ם עָלָ֑י/ו וְ/נַ֣חְנוּ מָ֔ה לֹא עָלֵ֥י/נוּ תְלֻנֹּתֵי/כֶ֖ם כִּ֥י עַל יְהוָֽה׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς Ἐν τῷ διδόναι Κύριον ὑμῖν ἑσπέρας κρέα φαγεῖν καὶ ἄρτους τὸ πρωὶ εἰς πλησμονήν, διὰ τὸ εἰσακοῦσαι Κύριον τὸν γογγυσμὸν ὑμῶν ὃν ὑμεῖς διαγογγύζετε καθ’ ἡμῶν· ἡμεῖς δὲ τί ἐσμεν; οὐ γὰρ καθ’ ἡμῶν ἐστὶν ὁ γογγυσμὸς ὑμῶν, ἀλλ’ ἢ κατὰ τοῦ θεοῦ.",
+        "VUL": "Et ait Moyses : Dabit vobis Dominus vespere carnes edere, et mane panes in saturitate : eo quod audierit murmurationes vestras quibus murmurati estis contra eum : nos enim quid sumus ? nec contra nos est murmur vestrum, sed contra Dominum.",
+        "SYN": "И сказал Моисей: _узнаете,_ когда Господь вечером даст вам мяса в пищу, а утром хлеба досыта, ибо Господь услышал ропот ваш, который вы подняли против Него: а мы что? не на нас ропот ваш, но на Господа.",
+        "NEO": "Moïse dit : « Ce sera quand \\+w Yahweh|strong=\"H3068\"\\+w** vous donnera ce soir de la viande à manger et, au matin, du pain à satiété ; car \\+w Yahweh|strong=\"H3068\"\\+w** a entendu les murmures que vous avez proférés contre lui. Nous, que sommes-nous ? Ce n’est pas contre nous que sont vos murmures, c’est contre \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "When the LORD gives you flesh to eat in the evening,\" continued Moses, \"and in the morning your fill of bread, as he heeds the grumbling you utter against him, what then are we? Your grumbling is not against us, but against the LORD.\"",
+        "VAT_ES": "Y Moisés añadió: «Esta tarde el Señor les dará carne para comer, y por la mañana hará que tengan pan hasta saciarse, ya que escuchó las protestas que ustedes dirigieron contra él. Porque &iquest;qué somos nosotros? En realidad, ustedes no han protestado contra nosotros, sino contra el Señor».",
+        "CEI": "Mosè disse: \"Quando il Signore vi darà alla sera la carne da mangiare e alla mattina il pane a sazietà, sarà perché il Signore ha inteso le mormorazioni, con le quali mormorate contro di lui. Noi infatti che cosa siamo? Non contro di noi vanno le vostre mormorazioni, ma contro il Signore\"."
       }
     },
     "9": {
@@ -107,7 +163,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "וַיֹּ֤אמֶר מֹשֶׁה֙ אֶֽל אַהֲרֹ֔ן אֱמֹ֗ר אֶֽל כָּל עֲדַת֙ בְּנֵ֣י יִשְׂרָאֵ֔ל קִרְב֖וּ לִפְנֵ֣י יְהוָ֑ה כִּ֣י שָׁמַ֔ע אֵ֖ת תְּלֻנֹּתֵיכֶֽם׃"
+        "WLC": "וַ/יֹּ֤אמֶר מֹשֶׁה֙ אֶֽל אַהֲרֹ֔ן אֱמֹ֗ר אֶֽל כָּל עֲדַת֙ בְּנֵ֣י יִשְׂרָאֵ֔ל קִרְב֖וּ לִ/פְנֵ֣י יְהוָ֑ה כִּ֣י שָׁמַ֔ע אֵ֖ת תְּלֻנֹּתֵי/כֶֽם׃",
+        "LXX": "εἶπεν δὲ Μωυσῆς πρὸς Ἀαρών Εἰπὸν πάσῃ συναγωγῇ υἱῶν Ἰσραήλ Προσέλθατε ἐναντίον τοῦ θεοῦ· εἰσακήκοεν γὰρ ὑμῶν τὸν γογγυσμόν.",
+        "VUL": "Dixit quoque Moyses ad Aaron : Dic universæ congregationi filiorum Israël : Accedite coram Domino : audivit enim murmur vestrum.",
+        "SYN": "И сказал Моисей Аарону: скажи всему обществу сынов Израилевых: предстаньте пред лице Господа, ибо Он услышал ропот ваш.",
+        "NEO": "Moïse dit à Aaron : « Dis à toute l’assemblée des enfants d’Israël : Approchez-vous devant \\+w Yahweh|strong=\"H3068\"\\+w**, car il a entendu vos murmures. »",
+        "NAB": "Then Moses said to Aaron, \"Tell the whole Israelite community: Present yourselves before the LORD, for he has heard your grumbling.\"",
+        "VAT_ES": "Moisés dijo a Aarón: «Da esta orden a toda la comunidad de los israelitas: Preséntense ante el Señor, porque él ha escuchado sus protestas».",
+        "CEI": "Mosè disse ad Aronne: \"Dà questo comando a tutta la comunità degli Israeliti: Avvicinatevi alla presenza del Signore, perché egli ha inteso le vostre mormorazioni!\"."
       }
     },
     "10": {
@@ -118,7 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "WLC": "וַיְהִ֗י כְּדַבֵּ֤ר אַהֲרֹן֙ אֶל כָּל עֲדַ֣ת בְּנֵֽי יִשְׂרָאֵ֔ל וַיִּפְנ֖וּ אֶל הַמִּדְבָּ֑ר וְהִנֵּה֙ כְּב֣וֹד יְהוָ֔ה נִרְאָ֖ה בֶּעָנָֽן׃"
+        "WLC": "וַ/יְהִ֗י כְּ/דַבֵּ֤ר אַהֲרֹן֙ אֶל כָּל עֲדַ֣ת בְּנֵֽי יִשְׂרָאֵ֔ל וַ/יִּפְנ֖וּ אֶל הַ/מִּדְבָּ֑ר וְ/הִנֵּה֙ כְּב֣וֹד יְהוָ֔ה נִרְאָ֖ה בֶּ/עָנָֽן׃",
+        "LXX": "ἡνίκα δὲ ἐλάλει Ἀαρὼν πάσῃ συναγωγῇ υἱῶν Ἰσραήλ, καὶ ἐπεστράφησαν εἰς τὴν ἔρημον, καὶ ἡ δόξα Κυρίου ὤφθη ἐν νεφέλῃ.",
+        "VUL": "Cumque loqueretur Aaron ad omnem ctum filiorum Israël, respexerunt ad solitudinem : et ecce gloria Domini apparuit in nube.",
+        "SYN": "И когда говорил Аарон ко всему обществу сынов Израилевых, то они оглянулись к пустыне, и вот, слава Господня явилась в облаке.",
+        "NEO": "Pendant qu’Aaron parlait à toute l’assemblée des enfants d’Israël, ils se tournèrent du côté du désert, et voici que la gloire de \\+w Yahweh|strong=\"H3068\"\\+w** apparut dans la nuée.",
+        "NAB": "When Aaron announced this to the whole Israelite community, they turned toward the desert, and lo, the glory of the LORD appeared in the cloud!",
+        "VAT_ES": "Mientras Aarón les estaba hablando, ellos volvieron su mirada hacia el desierto, y la gloria del Señor se apareció en la nube.",
+        "CEI": "Ora mentre Aronne parlava a tutta la comunità degli Israeliti, essi si voltarono verso il deserto: ed ecco la Gloria del Signore apparve nella nube."
       }
     },
     "11": {
@@ -129,7 +199,14 @@
         "LXX": 11
       },
       "text": {
-        "WLC": "וַיְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּאמֹֽר׃"
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutus est autem Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse en ces termes :",
+        "NAB": "The LORD spoke to Moses and said,",
+        "VAT_ES": "Y el Señor dijo a Moisés:",
+        "CEI": "Il Signore disse a Mosè:"
       }
     },
     "12": {
@@ -140,7 +217,14 @@
         "LXX": 12
       },
       "text": {
-        "WLC": "שָׁמַ֗עְתִּי אֶת תְּלוּנֹּת֮ בְּנֵ֣י יִשְׂרָאֵל֒ דַּבֵּ֨ר אֲלֵהֶ֜ם לֵאמֹ֗ר בֵּ֤ין הָֽעַרְבַּ֨יִם֙ תֹּאכְל֣וּ בָשָׂ֔ר וּבַבֹּ֖קֶר תִּשְׂבְּעוּ לָ֑חֶם וִֽידַעְתֶּ֕ם כִּ֛י אֲנִ֥י יְהוָ֖ה אֱלֹהֵיכֶֽם׃"
+        "WLC": "שָׁמַ֗עְתִּי אֶת תְּלוּנֹּת֮ בְּנֵ֣י יִשְׂרָאֵל֒ דַּבֵּ֨ר אֲלֵ/הֶ֜ם לֵ/אמֹ֗ר בֵּ֤ין הָֽ/עַרְבַּ֨יִם֙ תֹּאכְל֣וּ בָשָׂ֔ר וּ/בַ/בֹּ֖קֶר תִּשְׂבְּעוּ לָ֑חֶם וִֽ/ידַעְתֶּ֕ם כִּ֛י אֲנִ֥י יְהוָ֖ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "Εἰσακήκοα τὸν γογγυσμὸν τῶν υἱῶν Ἰσραήλ· λάλησον πρὸς αὐτοὺς λέγων Τὸ πρὸς ἑσπέραν ἔδεσθε κρέα, καὶ τὸ πρωὶ πλησθήσεσθε ἄρτων· καὶ γνώσεσθε ὅτι ἐγὼ Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Audivi murmurationes filiorum Israël. Loquere ad eos : Vespere comedetis carnes, et mane saturabimini panibus : scietisque quod ego sum Dominus Deus vester.",
+        "SYN": "Я услышал ропот сынов Израилевых; скажи им: вечером будете есть мясо, а поутру насытитесь хлебом -- и узнаете, что Я Господь, Бог ваш.",
+        "NEO": "« J’ai entendu les murmures des enfants d’Israël. Dis-leur : Entre les deux soirs vous mangerez de la viande, et au matin vous vous rassasierez de pain, et vous saurez que je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu. »",
+        "NAB": "\"I have heard the grumbling of the Israelites. Tell them: In the evening twilight you shall eat flesh, and in the morning you shall have your fill of bread, so that you may know that I, the LORD, am your God.\"",
+        "VAT_ES": "«Yo escuché las protestas de los israelitas. Por eso, háblales en estos términos: «A la hora del crepúsculo ustedes comerán carne, y por la mañana se hartarán de pan. Así sabrán que yo, el Señor, soy su Dios».",
+        "CEI": "\"Ho inteso la mormorazione degli Israeliti. Parla loro così: Al tramonto mangerete carne e alla mattina vi sazierete di pane; saprete che io sono il Signore vostro Dio\"."
       }
     },
     "13": {
@@ -151,7 +235,14 @@
         "LXX": 13
       },
       "text": {
-        "WLC": "וַיְהִ֣י בָעֶ֔רֶב וַתַּ֣עַל הַשְּׂלָ֔ו וַתְּכַ֖ס אֶת הַֽמַּחֲנֶ֑ה וּבַבֹּ֗קֶר הָֽיְתָה֙ שִׁכְבַ֣ת הַטַּ֔ל סָבִ֖יב לַֽמַּחֲנֶֽה׃"
+        "WLC": "וַ/יְהִ֣י בָ/עֶ֔רֶב וַ/תַּ֣עַל הַ/שְּׂלָ֔ו וַ/תְּכַ֖ס אֶת הַֽ/מַּחֲנֶ֑ה וּ/בַ/בֹּ֗קֶר הָֽיְתָה֙ שִׁכְבַ֣ת הַ/טַּ֔ל סָבִ֖יב לַֽ/מַּחֲנֶֽה׃",
+        "LXX": "ἐγένετο δὲ ἑσπέρα, καὶ ἀνέβη ὀρτυγομήτρα καὶ ἐκάλυψεν τὴν παρεμβολήν· τὸ πρωὶ ἐγένετο καταπαυομένης τῆς δρόσου κύκλῳ τῆς παρεμβολῆς,",
+        "VUL": "Factum est ergo vespere, et ascendens coturnix, cooperuit castra : mane quoque ros jacuit per circuitum castrorum.",
+        "SYN": "Вечером налетели перепелы и покрыли стан, а поутру лежала роса около стана;",
+        "NEO": "Le soir, on vit monter des cailles, qui couvrirent le camp, et le matin il y avait une couche de rosée autour du camp.",
+        "NAB": "In the evening quail came up and covered the camp. In the morning a dew lay all about the camp,",
+        "VAT_ES": "Efectivamente, aquella misma tarde se levantó una bandada de codornices que cubrieron el campamento; y a la mañana siguiente había una capa de rocío alrededor de él.",
+        "CEI": "Ora alla sera le quaglie salirono e coprirono l'accampamento; al mattino vi era uno strato di rugiada intorno all'accampamento."
       }
     },
     "14": {
@@ -162,7 +253,14 @@
         "LXX": 14
       },
       "text": {
-        "WLC": "וַתַּ֖עַל שִׁכְבַ֣ת הַטָּ֑ל וְהִנֵּ֞ה עַל פְּנֵ֤י הַמִּדְבָּר֙ דַּ֣ק מְחֻסְפָּ֔ס דַּ֥ק כַּכְּפֹ֖ר עַל הָאָֽרֶץ׃"
+        "WLC": "וַ/תַּ֖עַל שִׁכְבַ֣ת הַ/טָּ֑ל וְ/הִנֵּ֞ה עַל פְּנֵ֤י הַ/מִּדְבָּר֙ דַּ֣ק מְחֻסְפָּ֔ס דַּ֥ק כַּ/כְּפֹ֖ר עַל הָ/אָֽרֶץ׃",
+        "LXX": "καὶ ἰδοὺ ἐπὶ πρόσωπον τῆς ἐρήμου λεπτὸν ὡσεὶ κόριον λευκὸν ὡσεὶ πάγος ἐπὶ τῆς γῆς.",
+        "VUL": "Cumque operuisset superficiem terræ, apparuit in solitudine minutum, et quasi pilo tusum in similitudinem pruinæ super terram.",
+        "SYN": "роса поднялась, и вот, на поверхности пустыни _нечто_ мелкое, круповидное, мелкое, как иней на земле.",
+        "NEO": "Quand cette rosée fut dissipée, voici qu’il y avait à la surface du désert quelque chose de menu, de granuleux, de menu comme le givre sur le sol.",
+        "NAB": "and when the dew evaporated, there on the surface of the desert were fine flakes like hoarfrost on the ground.",
+        "VAT_ES": "Cuando esta se disipó, apareció sobre la superficie del desierto una cosa tenue y granulada, fina como la escarcha sobre la tierra.",
+        "CEI": "Poi lo strato di rugiada svanì ed ecco sulla superficie del deserto vi era una cosa minuta e granulosa, minuta come è la brina sulla terra."
       }
     },
     "15": {
@@ -173,7 +271,14 @@
         "LXX": 15
       },
       "text": {
-        "WLC": "וַיִּרְא֣וּ בְנֵֽי יִשְׂרָאֵ֗ל וַיֹּ֨אמְר֜וּ אִ֤ישׁ אֶל אָחִיו֙ מָ֣ן ה֔וּא כִּ֛י לֹ֥א יָדְע֖וּ מַה ה֑וּא וַיֹּ֤אמֶר מֹשֶׁה֙ אֲלֵהֶ֔ם ה֣וּא הַלֶּ֔חֶם אֲשֶׁ֨ר נָתַ֧ן יְהוָ֛ה לָכֶ֖ם לְאָכְלָֽה׃"
+        "WLC": "וַ/יִּרְא֣וּ בְנֵֽי יִשְׂרָאֵ֗ל וַ/יֹּ֨אמְר֜וּ אִ֤ישׁ אֶל אָחִי/ו֙ מָ֣ן ה֔וּא כִּ֛י לֹ֥א יָדְע֖וּ מַה ה֑וּא וַ/יֹּ֤אמֶר מֹשֶׁה֙ אֲלֵ/הֶ֔ם ה֣וּא הַ/לֶּ֔חֶם אֲשֶׁ֨ר נָתַ֧ן יְהוָ֛ה לָ/כֶ֖ם לְ/אָכְלָֽה׃",
+        "LXX": "ἰδόντες δὲ αὐτὸ οἱ υἱοὶ Ἰσραὴλ εἶπαν ἕτερος τῷ ἑτέρῳ Τί ἐστιν τοῦτο; οὐ γὰρ ᾔδεισαν τί ἦν. εἶπεν δὲ Μωυσῆς αὐτοῖς Οὗτος ὁ ἄρτος ὃν ἔδωκεν Κύριος ὑμῖν φαγεῖν.",
+        "VUL": "Quod cum vidissent filii Israël, dixerunt ad invicem : Manhu ? quod significat : Quid est hoc ? ignorabant enim quid esset. Quibus ait Moyses : Iste est panis quem Dominus dedit vobis ad vescendum.",
+        "SYN": "И увидели сыны Израилевы и говорили друг другу: что это? Ибо не знали, что это. И Моисей сказал им: это хлеб, который Господь дал вам в пищу;",
+        "NEO": "Les enfants d’Israël le virent, et ils se dirent les uns aux autres : « Qu’est-ce que cela ? »+ 16:15 Étymologie populaire : \\+it manne\\+it* (\\+it man\\+it* : qu’est-ce que cela?)* car ils ne savaient pas ce que c’était.",
+        "NAB": "On seeing it, the Israelites asked one another, \"What is this?\" for they did not know what it was. But Moses told them, \"This is the bread which the LORD has given you to eat.",
+        "VAT_ES": "Al verla, los israelitas se preguntaron unos a otros: &iquest;Qué es esto?». Porque no sabían lo que era. Entonces Moisés les explicó: «Este es el pan que el Señor les ha dado como alimento.",
+        "CEI": "Gli Israeliti la videro e si dissero l'un l'altro: \"Man hu: che cos'è?\", perché non sapevano che cosa fosse. Mosè disse loro: \"È il pane che il Signore vi ha dato in cibo."
       }
     },
     "16": {
@@ -184,7 +289,14 @@
         "LXX": 16
       },
       "text": {
-        "WLC": "זֶ֤ה הַדָּבָר֙ אֲשֶׁ֣ר צִוָּ֣ה יְהוָ֔ה לִקְט֣וּ מִמֶּ֔נּוּ אִ֖ישׁ לְפִ֣י אָכְל֑וֹ עֹ֣מֶר לַגֻּלְגֹּ֗לֶת מִסְפַּר֙ נַפְשֹׁ֣תֵיכֶ֔ם אִ֛ישׁ לַאֲשֶׁ֥ר בְּאָהֳל֖וֹ תִּקָּֽחוּ׃"
+        "WLC": "זֶ֤ה הַ/דָּבָר֙ אֲשֶׁ֣ר צִוָּ֣ה יְהוָ֔ה לִקְט֣וּ מִמֶּ֔/נּוּ אִ֖ישׁ לְ/פִ֣י אָכְל֑/וֹ עֹ֣מֶר לַ/גֻּלְגֹּ֗לֶת מִסְפַּר֙ נַפְשֹׁ֣תֵי/כֶ֔ם אִ֛ישׁ לַ/אֲשֶׁ֥ר בְּ/אָהֳל֖/וֹ תִּקָּֽחוּ׃",
+        "LXX": "τοῦτο τὸ ῥῆμα ὃ συνέταξεν Κύριος Συναγάγετε ἀπ’ αὐτοῦ ἕκαστος εἰς τοὺς καθήκοντας. γόμορ κατὰ κεφαλὴν κατὰ ἀριθμὸν ψυχῶν ὑμῶν ἕκαστος σὺν τοῖς συσκηνίοις ὑμῶν συλλέξατε.",
+        "VUL": "Hic est sermo, quem præcepit Dominus : Colligat unusquisque ex eo quantum sufficit ad vescendum : gomor per singula capita, juxta numerum animarum vestrarum quæ habitant in tabernaculo sic tolletis.",
+        "SYN": "вот что повелел Господь: собирайте его каждый по стольку, сколько ему съесть; по гомору на человека, по числу душ, сколько у кого в шатре, собирайте.",
+        "NEO": "Voici ce que \\+w Yahweh|strong=\"H3068\"\\+w** a ordonné : Que chacun de vous en ramasse ce qu’il faut pour sa nourriture, un omer+ 16:16 L’\\+it omer\\+it* : environ 3 litres.* par tête, suivant le nombre des personnes ; chacun en prendra pour ceux qui sont dans sa tente. »",
+        "NAB": "\"Now, this is what the LORD has commanded. So gather it that everyone has enough to eat, an omer for each person, as many of you as there are, each man providing for those of his own tent.\"",
+        "VAT_ES": "El señor les manda que cada uno recoja lo que necesita para comer, según la cantidad de miembros que tenga cada familia, a razón de unos cuatro litros por persona; y que cada uno junte para todos los que viven en su carpa».",
+        "CEI": "Ecco che cosa comanda il Signore: Raccoglietene quanto ciascuno può mangiarne, un omer a testa, secondo il numero delle persone con voi. Ne prenderete ciascuno per quelli della propria tenda\"."
       }
     },
     "17": {
@@ -195,7 +307,14 @@
         "LXX": 17
       },
       "text": {
-        "WLC": "וַיַּעֲשׂוּ כֵ֖ן בְּנֵ֣י יִשְׂרָאֵ֑ל וַֽיִּלְקְט֔וּ הַמַּרְבֶּ֖ה וְהַמַּמְעִֽיט׃"
+        "WLC": "וַ/יַּעֲשׂוּ כֵ֖ן בְּנֵ֣י יִשְׂרָאֵ֑ל וַֽ/יִּלְקְט֔וּ הַ/מַּרְבֶּ֖ה וְ/הַ/מַּמְעִֽיט׃",
+        "LXX": "ἐποίησαν δὲ οὕτως οἱ υἱοὶ Ἰσραήλ, καὶ συνέλεξαν ὁ τὸ πολὺ καὶ ὁ τὸ ἔλαττον.",
+        "VUL": "Feceruntque ita filii Israël : et collegerunt, alius plus, alius minus.",
+        "SYN": "И сделали так сыны Израилевы и собрали, кто много, кто мало;",
+        "NEO": "Les enfants d’Israël firent ainsi, et ils recueillirent les uns plus, les autres moins.",
+        "NAB": "The Israelites did so. Some gathered a large and some a small amount.",
+        "VAT_ES": "Así lo hicieron los israelitas, y mientras unos juntaron mucho, otros juntaron poco.",
+        "CEI": "Così fecero gli Israeliti. Ne raccolsero chi molto chi poco."
       }
     },
     "18": {
@@ -206,7 +325,14 @@
         "LXX": 18
       },
       "text": {
-        "WLC": "וַיָּמֹ֣דּוּ בָעֹ֔מֶר וְלֹ֤א הֶעְדִּיף֙ הַמַּרְבֶּ֔ה וְהַמַּמְעִ֖יט לֹ֣א הֶחְסִ֑יר אִ֥ישׁ לְפִֽי אָכְל֖וֹ לָקָֽטוּ׃"
+        "WLC": "וַ/יָּמֹ֣דּוּ בָ/עֹ֔מֶר וְ/לֹ֤א הֶעְדִּיף֙ הַ/מַּרְבֶּ֔ה וְ/הַ/מַּמְעִ֖יט לֹ֣א הֶחְסִ֑יר אִ֥ישׁ לְ/פִֽי אָכְל֖/וֹ לָקָֽטוּ׃",
+        "LXX": "καὶ μετρήσαντες τῷ γόμορ, οὐκ ἐπλεόνασεν ὁ τὸ πολύ, καὶ ὁ τὸ ἔλαττον οὐκ ἠλαττόνησεν· ἕκαστος εἰς τοὺς καθήκοντας παρ’ ἑαυτῷ συνέλεξαν.",
+        "VUL": "Et mensi sunt ad mensuram gomor : nec qui plus collegerat, habuit amplius : nec qui minus paraverat, reperit minus : sed singuli juxta id quod edere poterant, congregaverunt.",
+        "SYN": "и меряли гомором, и у того, кто собрал много, не было лишнего, и у того, кто мало, не было недостатка: каждый собрал, сколько ему съесть.",
+        "NEO": "On mesurait ensuite avec l’omer, et celui qui en avait ramassé beaucoup n’avait rien de trop, et celui qui en avait ramassé peu n’en manquait pas : chacun en recueillait selon sa consommation.",
+        "NAB": "But when they measured it out by the omer, he who had gathered a large amount did not have too much, and he who had gathered a small amount did not have too little. They so gathered that everyone had enough to eat.",
+        "VAT_ES": "Pero cuando lo midieron, ni los que habían recogido poco tenían menos. Cada uno tenía lo necesario para su sustento.",
+        "CEI": "Si misurò con l'omer: colui che ne aveva preso di più, non ne aveva di troppo, colui che ne aveva preso di meno non ne mancava: avevano raccolto secondo quanto ciascuno poteva mangiarne."
       }
     },
     "19": {
@@ -217,7 +343,14 @@
         "LXX": 19
       },
       "text": {
-        "WLC": "וַיֹּ֥אמֶר מֹשֶׁ֖ה אֲלֵהֶ֑ם אִ֕ישׁ אַל יוֹתֵ֥ר מִמֶּ֖נּוּ עַד בֹּֽקֶר׃"
+        "WLC": "וַ/יֹּ֥אמֶר מֹשֶׁ֖ה אֲלֵ/הֶ֑ם אִ֕ישׁ אַל יוֹתֵ֥ר מִמֶּ֖/נּוּ עַד בֹּֽקֶר׃",
+        "LXX": "εἶπεν δὲ Μωυσῆς πρὸς αὐτούς Μηδεὶς καταλιπέτω ἀπ’ αὐτοῦ εἰς τὸ πρωί.",
+        "VUL": "Dixitque Moyses ad eos : Nullus relinquat ex eo in mane.",
+        "SYN": "И сказал им Моисей: никто не оставляй сего до утра.",
+        "NEO": "Moïse leur dit : « Que personne n’en laisse jusqu’au lendemain matin ».",
+        "NAB": "Moses also told them, \"Let no one keep any of it over until tomorrow morning.\"",
+        "VAT_ES": "Además, Moisés les advirtió: «Que nadie reserve nada para el día siguiente».",
+        "CEI": "Poi Mosè disse loro: \"Nessuno ne faccia avanzare fino al mattino\"."
       }
     },
     "20": {
@@ -228,7 +361,14 @@
         "LXX": 20
       },
       "text": {
-        "WLC": "וְלֹא שָׁמְע֣וּ אֶל מֹשֶׁ֗ה וַיּוֹתִ֨רוּ אֲנָשִׁ֤ים מִמֶּ֨נּוּ֙ עַד בֹּ֔קֶר וַיָּ֥רֻם תּוֹלָעִ֖ים וַיִּבְאַ֑שׁ וַיִּקְצֹ֥ף עֲלֵהֶ֖ם מֹשֶֽׁה׃"
+        "WLC": "וְ/לֹא שָׁמְע֣וּ אֶל מֹשֶׁ֗ה וַ/יּוֹתִ֨רוּ אֲנָשִׁ֤ים מִמֶּ֨/נּוּ֙ עַד בֹּ֔קֶר וַ/יָּ֥רֻם תּוֹלָעִ֖ים וַ/יִּבְאַ֑שׁ וַ/יִּקְצֹ֥ף עֲלֵ/הֶ֖ם מֹשֶֽׁה׃",
+        "LXX": "καὶ οὐκ εἰσήκουσαν Μωυσῆ, ἀλλὰ κατέλιπόν τινες ἀπ’ αὐτοῦ εἰς τὸ πρωί· καὶ ἐξέζεσεν σκώληκας καὶ ἐπώζεσεν· καὶ ἐπικράνθη ἐπ’ αὐτοῖς Μωυσῆς.",
+        "VUL": "Qui non audierunt eum, sed dimiserunt quidam ex eis usque mane, et scatere cpit vermibus, atque computruit : et iratus est contra eos Moyses.",
+        "SYN": "Но не послушали они Моисея, и оставили от сего некоторые до утра, -- и завелись черви, и оно воссмердело. И разгневался на них Моисей.",
+        "NEO": "Ils n’écoutèrent pas Moïse, et des gens en gardèrent jusqu’au matin ; mais il s’y mit des vers et tout devint infect. Moïse fut irrité contre eux.",
+        "NAB": "But they would not listen to him. When some kept a part of it over until the following morning, it became wormy and rotten. Therefore Moses was displeased with them.",
+        "VAT_ES": "Algunos no le hicieron caso y reservaron una parte; pero esta se llenó de gusanos y produjo un olor nauseabundo. Moisés se irritó contra ellos,",
+        "CEI": "Essi non obbedirono a Mosè e alcuni ne conservarono fino al mattino; ma vi si generarono vermi e imputridì. Mosè si irritò contro di loro."
       }
     },
     "21": {
@@ -239,7 +379,14 @@
         "LXX": 21
       },
       "text": {
-        "WLC": "וַיִּלְקְט֤וּ אֹתוֹ֙ בַּבֹּ֣קֶר בַּבֹּ֔קֶר אִ֖ישׁ כְּפִ֣י אָכְל֑וֹ וְחַ֥ם הַשֶּׁ֖מֶשׁ וְנָמָֽס׃"
+        "WLC": "וַ/יִּלְקְט֤וּ אֹת/וֹ֙ בַּ/בֹּ֣קֶר בַּ/בֹּ֔קֶר אִ֖ישׁ כְּ/פִ֣י אָכְל֑/וֹ וְ/חַ֥ם הַ/שֶּׁ֖מֶשׁ וְ/נָמָֽס׃",
+        "LXX": "καὶ συνέλεξαν αὐτὸ πρωί· ἡνίκα δὲ διεθέρμαινεν ὁ ἥλιος, ἐτήκετο.",
+        "VUL": "Colligebant autem mane singuli, quantum sufficere poterat ad vescendum : cumque incaluisset sol, liquefiebat.",
+        "SYN": "И собирали его рано поутру, каждый сколько ему съесть; когда же обогревало солнце, оно таяло.",
+        "NEO": "Tous les matins, ils ramassaient de la manne, chacun selon sa consommation, et quand le soleil faisait sentir ses ardeurs, le reste se liquéfiait.",
+        "NAB": "Morning after morning they gathered it, till each had enough to eat; but when the sun grew hot, the manna melted away.",
+        "VAT_ES": "y a partir de entonces, lo recogían todas las mañanas, cada uno de acuerdo con sus necesidades; y cuando el sol empezaba a calentar, se derretía.",
+        "CEI": "Essi dunque ne raccoglievano ogni mattina secondo quanto ciascuno mangiava; quando il sole cominciava a scaldare, si scioglieva."
       }
     },
     "22": {
@@ -250,7 +397,14 @@
         "LXX": 22
       },
       "text": {
-        "WLC": "וַיְהִ֣י בַּיּ֣וֹם הַשִּׁשִּׁ֗י לָֽקְט֥וּ לֶ֨חֶם֙ מִשְׁנֶ֔ה שְׁנֵ֥י הָעֹ֖מֶר לָאֶחָ֑ד וַיָּבֹ֨אוּ֙ כָּל נְשִׂיאֵ֣י הָֽעֵדָ֔ה וַיַּגִּ֖ידוּ לְמֹשֶֽׁה׃"
+        "WLC": "וַ/יְהִ֣י בַּ/יּ֣וֹם הַ/שִּׁשִּׁ֗י לָֽקְט֥וּ לֶ֨חֶם֙ מִשְׁנֶ֔ה שְׁנֵ֥י הָ/עֹ֖מֶר לָ/אֶחָ֑ד וַ/יָּבֹ֨אוּ֙ כָּל נְשִׂיאֵ֣י הָֽ/עֵדָ֔ה וַ/יַּגִּ֖ידוּ לְ/מֹשֶֽׁה׃",
+        "LXX": "ἐγένετο δὲ τῇ ἡμέρᾳ τῇ ἕκτῃ συνέλεξαν τὰ δέοντα διπλᾶ, δύο γόμορ τῷ ἑνί· εἰσήλθοσαν δὲ πάντες οἱ ἄρχοντες τῆς συναγωγῆς καὶ ἀνήγγειλαν Μωσεῖ.",
+        "VUL": "In die autem sexta collegerunt cibos duplices, id est, duo gomor per singulos homines : venerunt autem omnes principes multitudinis, et narraverunt Moysi.",
+        "SYN": "В шестой же день собрали хлеба вдвое, по два гомора на каждого. И пришли все начальники общества и донесли Моисею.",
+        "NEO": "Le sixième jour, ils ramassèrent une quantité double de nourriture, deux omers pour chacun. Tous les principaux du peuple vinrent en informer Moïse,",
+        "NAB": "On the sixth day they gathered twice as much food, two omers for each person. When all the leaders of the community came and reported this to Moses,",
+        "VAT_ES": "Como la ración de alimento que recogieron el sexto día de la semana resultó ser el doble de la habitual –dos medidas de cuatro litros por persona– todos los jefes de la comunidad fueron a informar a Moisés.",
+        "CEI": "Nel sesto giorno essi raccolsero il doppio di quel pane, due omer a testa. Allora tutti i principi della comunità vennero ad informare Mosè."
       }
     },
     "23": {
@@ -261,7 +415,14 @@
         "LXX": 23
       },
       "text": {
-        "WLC": "וַיֹּ֣אמֶר אֲלֵהֶ֗ם ה֚וּא אֲשֶׁ֣ר דִּבֶּ֣ר יְהוָ֔ה שַׁבָּת֧וֹן שַׁבַּת קֹ֛דֶשׁ לַֽיהוָ֖ה מָחָ֑ר אֵ֣ת אֲשֶׁר תֹּאפ֞וּ אֵפ֗וּ וְאֵ֤ת אֲשֶֽׁר תְּבַשְּׁלוּ֙ בַּשֵּׁ֔לוּ וְאֵת֙ כָּל הָ֣עֹדֵ֔ף הַנִּ֧יחוּ לָכֶ֛ם לְמִשְׁמֶ֖רֶת עַד הַבֹּֽקֶר׃"
+        "WLC": "וַ/יֹּ֣אמֶר אֲלֵ/הֶ֗ם ה֚וּא אֲשֶׁ֣ר דִּבֶּ֣ר יְהוָ֔ה שַׁבָּת֧וֹן שַׁבַּת קֹ֛דֶשׁ לַֽ/יהוָ֖ה מָחָ֑ר אֵ֣ת אֲשֶׁר תֹּאפ֞וּ אֵפ֗וּ וְ/אֵ֤ת אֲשֶֽׁר תְּבַשְּׁלוּ֙ בַּשֵּׁ֔לוּ וְ/אֵת֙ כָּל הָ֣/עֹדֵ֔ף הַנִּ֧יחוּ לָ/כֶ֛ם לְ/מִשְׁמֶ֖רֶת עַד הַ/בֹּֽקֶר׃",
+        "LXX": "εἶπεν δὲ Κύριος πρὸς αὐτούς Οὐ τοῦτό ἐστιν τὸ ῥῆμα ὃ ἐλάλησεν Κύριος; σάββατα ἀνάπαυσις ἁγία τῷ κυρίῳ αὔριον· ὅσα ἐὰν πέσσητε πέσσετε, καὶ ὅσα ἐὰν ἕψητε ἕψετε· καὶ πᾶν τὸ πλεονάζον καταλίπετε αὐτὸ εἰς ἀποθήκην εἰς τὸ πρωί.",
+        "VUL": "Qui ait eis : Hoc est quod locutus est Dominus : Requies sabbati sanctificata est Domino cras : quodcumque operandum est, facite, et quæ coquenda sunt coquite : quidquid autem reliquum fuerit, reponite usque in mane.",
+        "SYN": "И [Моисей] сказал им: вот что сказал Господь: завтра покой, святая суббота Господня; что надобно печь, пеките, и что надобно варить, варите _сегодня,_ а что останется, отложите и сберегите до утра.",
+        "NEO": "qui leur dit : « C’est ce que \\+w Yahweh|strong=\"H3068\"\\+w** a ordonné. Demain est un jour de repos, un sabbat consacré à \\+w Yahweh|strong=\"H3068\"\\+w** : faites cuire au four ce que vous avez à faire cuire, faites bouillir ce que vous avez à faire bouillir, et tout ce qui restera, mettez-le en réserve pour le lendemain matin. »",
+        "NAB": "he told them, \"That is what the LORD prescribed. Tomorrow is a day of complete rest, the sabbath, sacred to the LORD. You may either bake or boil the manna, as you please; but whatever is left put away and keep for the morrow.\"",
+        "VAT_ES": "El les dijo: «El Señor dice lo siguiente: Mañana es sábado, día de descanso consagrado al Señor. Cocinen al horno o hagan hervir la cantidad que ustedes quieran, y el resto guárdenlo para mañana».",
+        "CEI": "E disse loro: \"È appunto ciò che ha detto il Signore: Domani è sabato, riposo assoluto consacrato al Signore. Ciò che avete da cuocere, cuocetelo; ciò che avete da bollire, bollitelo; quanto avanza, tenetelo in serbo fino a domani mattina\"."
       }
     },
     "24": {
@@ -272,7 +433,14 @@
         "LXX": 24
       },
       "text": {
-        "WLC": "וַיַּנִּ֤יחוּ אֹתוֹ֙ עַד הַבֹּ֔קֶר כַּאֲשֶׁ֖ר צִוָּ֣ה מֹשֶׁ֑ה וְלֹ֣א הִבְאִ֔ישׁ וְרִמָּ֖ה לֹא הָ֥יְתָה בּֽוֹ׃"
+        "WLC": "וַ/יַּנִּ֤יחוּ אֹת/וֹ֙ עַד הַ/בֹּ֔קֶר כַּ/אֲשֶׁ֖ר צִוָּ֣ה מֹשֶׁ֑ה וְ/לֹ֣א הִבְאִ֔ישׁ וְ/רִמָּ֖ה לֹא הָ֥יְתָה בּֽ/וֹ׃",
+        "LXX": "καὶ κατελίποσαν ἀπ’ αὐτοῦ εἰς τὸ πρωί, καθὼς συνέταξεν αὐτοῖς Μωυσῆς· καὶ οὐκ ἐπώζεσεν, οὐδὲ σκώληξ ἐγένετο ἐν αὐτοῖς.",
+        "VUL": "Feceruntque ita ut præceperat Moyses, et non computruit, neque vermis inventus est in eo.",
+        "SYN": "И отложили то до утра, как повелел [им] Моисей, и оно не воссмердело, и червей не было в нем.",
+        "NEO": "Ils mirent donc l’excédant en réserve jusqu’au matin, comme Moïse l’avait ordonné, et il ne devint pas infect, et les vers ne s’y mirent point.",
+        "NAB": "When they put it away for the morrow, as Moses commanded, it did not become rotten or wormy.",
+        "VAT_ES": "Ellos lo guardaron para el día siguiente, como Moisés les había ordenado; pero esta vez no dio mal olor ni se llenó de gusanos.",
+        "CEI": "Essi lo misero in serbo fino al mattino, come aveva ordinato Mosè, e non imputridì, né vi si trovarono vermi."
       }
     },
     "25": {
@@ -283,7 +451,14 @@
         "LXX": 25
       },
       "text": {
-        "WLC": "וַיֹּ֤אמֶר מֹשֶׁה֙ אִכְלֻ֣הוּ הַיּ֔וֹם כִּֽי שַׁבָּ֥ת הַיּ֖וֹם לַיהוָ֑ה הַיּ֕וֹם לֹ֥א תִמְצָאֻ֖הוּ בַּשָּׂדֶֽה׃"
+        "WLC": "וַ/יֹּ֤אמֶר מֹשֶׁה֙ אִכְלֻ֣/הוּ הַ/יּ֔וֹם כִּֽי שַׁבָּ֥ת הַ/יּ֖וֹם לַ/יהוָ֑ה הַ/יּ֕וֹם לֹ֥א תִמְצָאֻ֖/הוּ בַּ/שָּׂדֶֽה׃",
+        "LXX": "εἶπεν δὲ Μωυσῆς Φάγετε σήμερον· ἔστιν γὰρ σάββατα σήμερον τῷ κυρίῳ· οὐχ εὑρεθήσεται ἐν τῷ πεδίῳ.",
+        "VUL": "Dixitque Moyses : Comedite illud hodie, quia sabbatum est Domini : non invenietur hodie in agro.",
+        "SYN": "И сказал Моисей: ешьте его сегодня, ибо сегодня суббота Господня; сегодня не найдете его на поле;",
+        "NEO": "Moïse dit : « Mangez-le aujourd’hui, car c’est le jour du sabbat en l’honneur de \\+w Yahweh|strong=\"H3068\"\\+w** ; aujourd’hui vous n’en trouveriez pas dans la campagne.",
+        "NAB": "Moses then said, \"Eat it today, for today is the sabbath of the LORD. On this day you will not find any of it on the ground.",
+        "VAT_ES": "Entonces Moisés les dijo: «Hoy tendrán esto para comer, porque este es un día de descanso en honor del Señor, y en el campo no encontrarán nada.",
+        "CEI": "Disse Mosè: \"Mangiatelo oggi, perché è sabato in onore del Signore: oggi non lo troverete nella campagna."
       }
     },
     "26": {
@@ -294,7 +469,14 @@
         "LXX": 26
       },
       "text": {
-        "WLC": "שֵׁ֥שֶׁת יָמִ֖ים תִּלְקְטֻ֑הוּ וּבַיּ֧וֹם הַשְּׁבִיעִ֛י שַׁבָּ֖ת לֹ֥א יִֽהְיֶה בּֽוֹ׃"
+        "WLC": "שֵׁ֥שֶׁת יָמִ֖ים תִּלְקְטֻ֑/הוּ וּ/בַ/יּ֧וֹם הַ/שְּׁבִיעִ֛י שַׁבָּ֖ת לֹ֥א יִֽהְיֶה בּֽ/וֹ׃",
+        "LXX": "ἓξ ἡμέρας συλλέξετε· τῇ δὲ ἡμέρᾳ τῇ ἑβδόμῃ σάββατα, ὅτι οὐκ ἔσται ἐν αὐτῇ.",
+        "VUL": "Sex diebus colligite : in die autem septimo sabbatum est Domini, idcirco non invenietur.",
+        "SYN": "шесть дней собирайте его, а в седьмой день -- суббота: не будет его в _этот_ _день._",
+        "NEO": "Vous en recueillerez pendant six jours ; mais le septième jour, qui est le sabbat, il n’y en aura point. »",
+        "NAB": "On the other six days you can gather it, but on the seventh day, the sabbath, none of it will be there.\"",
+        "VAT_ES": "Ustedes lo recogerán durante seis días, pero el séptimo día, el sábado, no habrá nada».",
+        "CEI": "Sei giorni lo raccoglierete, ma il settimo giorno è sabato: non ve ne sarà\"."
       }
     },
     "27": {
@@ -305,7 +487,14 @@
         "LXX": 27
       },
       "text": {
-        "WLC": "וַֽיְהִי֙ בַּיּ֣וֹם הַשְּׁבִיעִ֔י יָצְא֥וּ מִן הָעָ֖ם לִלְקֹ֑ט וְלֹ֖א מָצָֽאוּ׃"
+        "WLC": "וַֽ/יְהִי֙ בַּ/יּ֣וֹם הַ/שְּׁבִיעִ֔י יָצְא֥וּ מִן הָ/עָ֖ם לִ/לְקֹ֑ט וְ/לֹ֖א מָצָֽאוּ׃",
+        "LXX": "ἐγένετο δὲ ἐν τῇ ἡμέρᾳ τῇ ἑβδόμῃ ἐξήλθοσάν τινες ἐκ τοῦ λαοῦ συλλέξαι, καὶ οὐχ εὗρον.",
+        "VUL": "Venitque septima dies : et egressi de populo ut colligerent, non invenerunt.",
+        "SYN": "_Но_ _некоторые_ из народа вышли в седьмой день собирать -- и не нашли.",
+        "NEO": "Le septième jour, quelques-uns du peuple sortirent pour en ramasser, mais ils n’en trouvèrent pas.",
+        "NAB": "Still, on the seventh day some of the people went out to gather it, although they did not find any.",
+        "VAT_ES": "A pesar de esta advertencia, algunos salieron a recogerlo el séptimo día, pero no lo encontraron.",
+        "CEI": "Nel settimo giorno alcuni del popolo uscirono per raccoglierne, ma non ne trovarono."
       }
     },
     "28": {
@@ -316,7 +505,14 @@
         "LXX": 28
       },
       "text": {
-        "WLC": "וַיֹּ֥אמֶר יְהוָ֖ה אֶל מֹשֶׁ֑ה עַד אָ֨נָה֙ מֵֽאַנְתֶּ֔ם לִשְׁמֹ֥ר מִצְוֺתַ֖י וְתוֹרֹתָֽי׃"
+        "WLC": "וַ/יֹּ֥אמֶר יְהוָ֖ה אֶל מֹשֶׁ֑ה עַד אָ֨נָה֙ מֵֽאַנְתֶּ֔ם לִ/שְׁמֹ֥ר מִצְוֺתַ֖/י וְ/תוֹרֹתָֽ/י׃",
+        "LXX": "εἶπεν δὲ Κύριος πρὸς Μωυσῆν Ἕως τίνος οὐ βούλεσθε εἰσακούειν τὰς ἐντολάς μου καὶ τὸν νόμον μου;",
+        "VUL": "Dixit autem Dominus ad Moysen : Usquequo non vultis custodire mandata mea et legem meam ?",
+        "SYN": "И сказал Господь Моисею: долго ли будете вы уклоняться от соблюдения заповедей Моих и законов Моих?",
+        "NEO": "Alors \\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Jusques à quand refuserez-vous d’observer mes commandements, et mes lois ?",
+        "NAB": "Then the LORD said to Moses, \"How long will you refuse to keep my commandments and laws?",
+        "VAT_ES": "El Señor dijo a Moisés: «&iquest;Hasta cuando se resistirán a observar mis mandamientos y mis leyes?",
+        "CEI": "Disse allora il Signore a Mosè: \"Fino a quando rifiuterete di osservare i miei ordini e le mie leggi?"
       }
     },
     "29": {
@@ -327,7 +523,14 @@
         "LXX": 29
       },
       "text": {
-        "WLC": "רְא֗וּ כִּֽי יְהוָה֮ נָתַ֣ן לָכֶ֣ם הַשַּׁבָּת֒ עַל כֵּ֠ן ה֣וּא נֹתֵ֥ן לָכֶ֛ם בַּיּ֥וֹם הַשִּׁשִּׁ֖י לֶ֣חֶם יוֹמָ֑יִם שְׁב֣וּ אִ֣ישׁ תַּחְתָּ֗יו אַל יֵ֥צֵא אִ֛ישׁ מִמְּקֹמ֖וֹ בַּיּ֥וֹם הַשְּׁבִיעִֽי׃"
+        "WLC": "רְא֗וּ כִּֽי יְהוָה֮ נָתַ֣ן לָ/כֶ֣ם הַ/שַּׁבָּת֒ עַל כֵּ֠ן ה֣וּא נֹתֵ֥ן לָ/כֶ֛ם בַּ/יּ֥וֹם הַ/שִּׁשִּׁ֖י לֶ֣חֶם יוֹמָ֑יִם שְׁב֣וּ אִ֣ישׁ תַּחְתָּ֗י/ו אַל יֵ֥צֵא אִ֛ישׁ מִ/מְּקֹמ֖/וֹ בַּ/יּ֥וֹם הַ/שְּׁבִיעִֽי׃",
+        "LXX": "ἴδετε, ὁ γὰρ κύριος ἔδωκεν ὑμῖν τὴν ἡμέραν ταύτην· διὰ τοῦτο αὐτὸς ἔδωκεν ὑμῖν τῇ ἡμέρᾳ τῇ ἕκτῃ ἄρτους δύο ἡμερῶν· καθήσεσθε ἕκαστος εἰς τοὺς οἴκους ὑμῶν, μηδεὶς ἐκπορευέσθω ἐκ τοῦ τόπου αὐτοῦ τῇ ἡμέρᾳ τῇ ἑβδόμῃ.",
+        "VUL": "videte quod Dominus dederit vobis sabbatum, et propter hoc die sexta tribuit vobis cibos duplices : maneat unusquisque apud semetipsum ; nullus egrediatur de loco suo die septimo.",
+        "SYN": "смотрите, Господь дал вам субботу, посему Он и дает в шестой день хлеба на два дня: оставайтесь каждый у себя [в доме своем], никто не выходи от места своего в седьмой день.",
+        "NEO": "Voyez : c’est parce que \\+w Yahweh|strong=\"H3068\"\\+w** vous a donné le sabbat qu’il vous donne, le sixième jour, du pain pour deux jours. Que chacun reste à sa place, et que nul ne sorte le septième jour du lieu où il est. »",
+        "NAB": "Take note! The LORD has given you the sabbath. That is why on the sixth day he gives you food for two days. On the seventh day everyone is to stay home and no one is to go out.\"",
+        "VAT_ES": "El Señor les ha impuesto el sábado, y por eso el sexto día les duplica la ración. Que el séptimo día todos permanezcan en su sitio y nadie se mueva del lugar donde está».",
+        "CEI": "Vedete che il Signore vi ha dato il sabato! Per questo egli vi dà al sesto giorno il pane per due giorni. Restate ciascuno al proprio posto! Nel settimo giorno nessuno esca dal luogo dove si trova\"."
       }
     },
     "30": {
@@ -338,7 +541,14 @@
         "LXX": 30
       },
       "text": {
-        "WLC": "וַיִּשְׁבְּת֥וּ הָעָ֖ם בַּיּ֥וֹם הַשְּׁבִעִֽי׃"
+        "WLC": "וַ/יִּשְׁבְּת֥וּ הָ/עָ֖ם בַּ/יּ֥וֹם הַ/שְּׁבִעִֽי׃",
+        "LXX": "καὶ ἐσαββάτισεν ὁ λαὸς τῇ ἡμέρᾳ τῇ ἑβδόμῃ.",
+        "VUL": "Et sabbatizavit populus die septimo.",
+        "SYN": "И покоился народ в седьмой день.",
+        "NEO": "Et le peuple se reposa le septième jour.",
+        "NAB": "After that the people rested on the seventh day.",
+        "VAT_ES": "Y el séptimo día, el pueblo descansó.",
+        "CEI": "Il popolo dunque riposò nel settimo giorno."
       }
     },
     "31": {
@@ -349,7 +559,14 @@
         "LXX": 31
       },
       "text": {
-        "WLC": "וַיִּקְרְא֧וּ בֵֽית יִשְׂרָאֵ֛ל אֶת שְׁמ֖וֹ מָ֑ן וְה֗וּא כְּזֶ֤רַע גַּד֙ לָבָ֔ן וְטַעְמ֖וֹ כְּצַפִּיחִ֥ת בִּדְבָֽשׁ׃"
+        "WLC": "וַ/יִּקְרְא֧וּ בֵֽית יִשְׂרָאֵ֛ל אֶת שְׁמ֖/וֹ מָ֑ן וְ/ה֗וּא כְּ/זֶ֤רַע גַּד֙ לָבָ֔ן וְ/טַעְמ֖/וֹ כְּ/צַפִּיחִ֥ת בִּ/דְבָֽשׁ׃",
+        "LXX": "καὶ ἐπωνόμασαν αὐτὸ οἱ υἱοὶ Ἰσραὴλ τὸ ὄνομα αὐτοῦ μάν· ἦν δὲ ὡς σπέρμα κορίου λευκόν, τὸ δὲ γεῦμα αὐτοῦ ὡς ἐνκρὶς ἐν μέλιτι.",
+        "VUL": "Appellavitque domus Israël nomen ejus Man : quod erat quasi semen coriandri album, gustusque ejus quasi similæ cum melle.",
+        "SYN": "И нарек дом Израилев _хлебу_ тому имя: манна; она была, как кориандровое семя, белая, вкусом же как лепешка с медом.",
+        "NEO": "La maison d’Israël donna à cette nourriture le nom de manne. Elle ressemblait à de la graine de coriandre ; elle était blanche et avait le goût d’un gâteau de miel.",
+        "NAB": "The Israelites called this food manna. It was like coriander seed, but white, and it tasted like wafers made with honey.",
+        "VAT_ES": "La casa de Israel llamó «maná» a ese alimento. Era blanco como la semilla de cilantro y tenía un gusto semejante al de las tortas amasadas con miel.",
+        "CEI": "La casa d'Israele la chiamò manna. Era simile al seme del coriandolo e bianca; aveva il sapore di una focaccia con miele."
       }
     },
     "32": {
@@ -360,7 +577,14 @@
         "LXX": 32
       },
       "text": {
-        "WLC": "וַיֹּ֣אמֶר מֹשֶׁ֗ה זֶ֤ה הַדָּבָר֙ אֲשֶׁ֣ר צִוָּ֣ה יְהוָ֔ה מְלֹ֤א הָעֹ֨מֶר֙ מִמֶּ֔נּוּ לְמִשְׁמֶ֖רֶת לְדֹרֹתֵיכֶ֑ם לְמַ֣עַן יִרְא֣וּ אֶת הַלֶּ֗חֶם אֲשֶׁ֨ר הֶאֱכַ֤לְתִּי אֶתְכֶם֙ בַּמִּדְבָּ֔ר בְּהוֹצִיאִ֥י אֶתְכֶ֖ם מֵאֶ֥רֶץ מִצְרָֽיִם׃"
+        "WLC": "וַ/יֹּ֣אמֶר מֹשֶׁ֗ה זֶ֤ה הַ/דָּבָר֙ אֲשֶׁ֣ר צִוָּ֣ה יְהוָ֔ה מְלֹ֤א הָ/עֹ֨מֶר֙ מִמֶּ֔/נּוּ לְ/מִשְׁמֶ֖רֶת לְ/דֹרֹתֵי/כֶ֑ם לְמַ֣עַן יִרְא֣וּ אֶת הַ/לֶּ֗חֶם אֲשֶׁ֨ר הֶאֱכַ֤לְתִּי אֶתְ/כֶם֙ בַּ/מִּדְבָּ֔ר בְּ/הוֹצִיאִ֥/י אֶתְ/כֶ֖ם מֵ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "εἶπεν δὲ Μωυσῆς Τοῦτο τὸ ῥῆμα ὃ συνέταξεν Κύριος Πλήσατε τὸ γόμορ τοῦ μὰν εἰς ἀποθήκην εἰς τὰς γενεὰς ὑμῶν, ἵνα ἴδωσιν τὸν ἄρτον ὃν ἐφάγετε ὑμεῖς ἐν τῇ ἐρήμῳ ὡς ἐξήγαγεν ὑμᾶς Κύριος ἐκ γῆς Αἰγύπτου.",
+        "VUL": "Dixit autem Moyses : Iste est sermo, quem præcepit Dominus : Imple gomor ex eo, et custodiatur in futuras retro generationes : ut noverint panem, quo alui vos in solitudine, quando educti estis de terra Ægypti.",
+        "SYN": "И сказал Моисей: вот что повелел Господь: наполните [манною] гомор для хранения в роды ваши, дабы видели хлеб, которым Я питал вас в пустыне, когда вывел вас из земли Египетской.",
+        "NEO": "Moïse dit : « Voici ce que \\+w Yahweh|strong=\"H3068\"\\+w** a ordonné : Emplis-en un omer, pour la conserver pour vos descendants, afin qu’ils voient le pain dont je vous ai nourris dans le désert, lorsque je vous ai fait sortir du pays d’Égypte. »",
+        "NAB": "Moses said, \"This is what the LORD has commanded. Keep an omerful of manna for your descendants, that they may see what food I gave you to eat in the desert when I brought you out of the land of Egypt.\"",
+        "VAT_ES": "Después Moisés dijo: «El Señor ordena lo siguiente: Llenen de maná un recipiente de unos cuatro litros, y consérvenlo para que sus descendientes vean el alimento que les di de comer cuando los hice salir de Egipto».",
+        "CEI": "Mosè disse: \"Questo ha ordinato il Signore: Riempitene un omer e conservatelo per i vostri discendenti, perché vedano il pane che vi ho dato da mangiare nel deserto, quando vi ho fatti uscire dal paese d'Egitto\"."
       }
     },
     "33": {
@@ -371,7 +595,14 @@
         "LXX": 33
       },
       "text": {
-        "WLC": "וַיֹּ֨אמֶר מֹשֶׁ֜ה אֶֽל אַהֲרֹ֗ן קַ֚ח צִנְצֶ֣נֶת אַחַ֔ת וְתֶן שָׁ֥מָּה מְלֹֽא הָעֹ֖מֶר מָ֑ן וְהַנַּ֤ח אֹתוֹ֙ לִפְנֵ֣י יְהוָ֔ה לְמִשְׁמֶ֖רֶת לְדֹרֹתֵיכֶֽם׃"
+        "WLC": "וַ/יֹּ֨אמֶר מֹשֶׁ֜ה אֶֽל אַהֲרֹ֗ן קַ֚ח צִנְצֶ֣נֶת אַחַ֔ת וְ/תֶן שָׁ֥מָּ/ה מְלֹֽא הָ/עֹ֖מֶר מָ֑ן וְ/הַנַּ֤ח אֹת/וֹ֙ לִ/פְנֵ֣י יְהוָ֔ה לְ/מִשְׁמֶ֖רֶת לְ/דֹרֹתֵי/כֶֽם׃",
+        "LXX": "καὶ εἶπεν Μωσῆς πρὸς Ἀαρών Λάβε στάμνον χρυσοῦν ἕνα καὶ ἐμβάλετε εἰς αὐτὸν πλῆρες τὸ γόμορ μάν, καὶ ἀποθήσεις αὐτὸ ἐναντίον τοῦ θεοῦ εἰς διατήρησιν εἰς τὰς γενεὰς ὑμῶν,",
+        "VUL": "Dixitque Moyses ad Aaron : Sume vas unum, et mitte ibi man, quantum potest capere gomor, et repone coram Domino ad servandum in generationes vestras,",
+        "SYN": "И сказал Моисей Аарону: возьми один сосуд [золотой], и положи в него полный гомор манны, и поставь его пред Господом, для хранения в роды ваши.",
+        "NEO": "Et Moïse dit à Aaron : « Prends un vase, mets-y de la manne plein un omer, et dépose-le devant \\+w Yahweh|strong=\"H3068\"\\+w**, afin qu’il soit conservé pour vos descendants. »",
+        "NAB": "Moses then told Aaron, \"Take an urn and put an omer of manna in it. Then place it before the LORD in safekeeping for your descendants.\"",
+        "VAT_ES": "Y Moisés dijo a Aarón: «Toma un recipiente, coloca en él unos cuatro litros de maná y deposítalo delante del Señor, a fin de conservarlo para las generaciones futuras».",
+        "CEI": "Mosè disse quindi ad Aronne: \"Prendi un'urna e mettici un omer completo di manna; deponila davanti al Signore e conservala per i vostri discendenti\"."
       }
     },
     "34": {
@@ -382,7 +613,14 @@
         "LXX": 34
       },
       "text": {
-        "WLC": "כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶל מֹשֶׁ֑ה וַיַּנִּיחֵ֧הוּ אַהֲרֹ֛ן לִפְנֵ֥י הָעֵדֻ֖ת לְמִשְׁמָֽרֶת׃"
+        "WLC": "כַּ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶל מֹשֶׁ֑ה וַ/יַּנִּיחֵ֧/הוּ אַהֲרֹ֛ן לִ/פְנֵ֥י הָ/עֵדֻ֖ת לְ/מִשְׁמָֽרֶת׃",
+        "LXX": "ὃν τρόπον συνέταξεν Κύριος τῷ Μωυσῇ· καὶ ἀπέθηκεν Ἀαρὼν ἐναντίον τοῦ θεοῦ εἰς διατήρησιν.",
+        "VUL": "sicut præcepit Dominus Moysi. Posuitque illud Aaron in tabernaculo reservandum.",
+        "SYN": "И поставил его Аарон пред ковчегом свидетельства для хранения, как повелел Господь Моисею.",
+        "NEO": "Comme \\+w Yahweh|strong=\"H3068\"\\+w** l’avait ordonné à Moïse, Aaron le déposa devant le Témoignage, afin qu’il fût conservé.",
+        "NAB": "So Aaron placed it in front of the commandments for safekeeping, as the LORD had commanded Moses.",
+        "VAT_ES": "Aarón puso en el recipiente la cantidad de maná que el Señor había ordenado a Moisés, y lo depositó delante del Arca del Testimonio, a fin de que se conservara.",
+        "CEI": "Secondo quanto il Signore aveva ordinato a Mosè, Aronne la depose per conservarla davanti alla Testimonianza."
       }
     },
     "35": {
@@ -393,7 +631,14 @@
         "LXX": 35
       },
       "text": {
-        "WLC": "וּבְנֵ֣י יִשְׂרָאֵ֗ל אָֽכְל֤וּ אֶת הַמָּן֙ אַרְבָּעִ֣ים שָׁנָ֔ה עַד בֹּאָ֖ם אֶל אֶ֣רֶץ נוֹשָׁ֑בֶת אֶת הַמָּן֙ אָֽכְל֔וּ עַד בֹּאָ֕ם אֶל קְצֵ֖ה אֶ֥רֶץ כְּנָֽעַן׃"
+        "WLC": "וּ/בְנֵ֣י יִשְׂרָאֵ֗ל אָֽכְל֤וּ אֶת הַ/מָּן֙ אַרְבָּעִ֣ים שָׁנָ֔ה עַד בֹּאָ֖/ם אֶל אֶ֣רֶץ נוֹשָׁ֑בֶת אֶת הַ/מָּן֙ אָֽכְל֔וּ עַד בֹּאָ֕/ם אֶל קְצֵ֖ה אֶ֥רֶץ כְּנָֽעַן׃",
+        "LXX": "οἱ δὲ υἱοὶ Ἰσραὴλ ἔφαγον τὸ μὰν ἔτη τεσσεράκοντα, ἕως ἦλθον εἰς τὴν οἰκουμένην. ἐφάγοσαν τὸ μὰν ἕως παρεγένοντο εἰς μέρος τῆς Φοινίκης.",
+        "VUL": "Filii autem Israël comederunt man quadraginta annis, donec venirent in terram habitabilem : hoc cibo aliti sunt, usquequo tangerent fines terræ Chanaan.",
+        "SYN": "Сыны Израилевы ели манну сорок лет, доколе не пришли в землю обитаемую; манну ели они, доколе не пришли к пределам земли Ханаанской.",
+        "NEO": "Les enfants d’Israël ont mangé la manne pendant quarante ans, jusqu’à leur arrivée dans un pays habité ; ils ont mangé la manne jusqu’à leur arrivée aux frontières du pays de Canaan.",
+        "NAB": "The Israelites ate this manna for forty years, until they came to settled land; they ate manna until they reached the borders of Canaan.",
+        "VAT_ES": "Los israelitas comieron el maná durante cuarenta años, hasta que llegaron a una región habitada. Así se alimentaron hasta su llegada a los límites de Canaán.",
+        "CEI": "Gli Israeliti mangiarono la manna per quarant'anni, fino al loro arrivo in una terra abitata, mangiarono cioè la manna finché furono arrivati ai confini del paese di Cànaan."
       }
     },
     "36": {
@@ -404,7 +649,13 @@
         "LXX": 36
       },
       "text": {
-        "WLC": "וְהָעֹ֕מֶר עֲשִׂרִ֥ית הָאֵיפָ֖ה הֽוּא׃"
+        "WLC": "וְ/הָ/עֹ֕מֶר עֲשִׂרִ֥ית הָ/אֵיפָ֖ה הֽוּא׃",
+        "LXX": "τὸ δὲ γόμορ τὸ δέκατον τῶν τριῶν μέτρων ἦν.",
+        "VUL": "Gomor autem decima pars est ephi.",
+        "SYN": "А гомор есть десятая часть ефы.",
+        "NEO": "l’omer est la dixième partie de l’épha.",
+        "NAB": "(An omer is one tenth of an ephah.)",
+        "CEI": "L'omer è la decima parte di un efa."
       }
     }
   }

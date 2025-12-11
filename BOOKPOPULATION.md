@@ -30,7 +30,7 @@ Tracking progress of populating Bible chapters with text in all 9 languages.
 | Book | Code | Ch | WLC | LXX | VUL | NAB | SYN | NEO | VAT_ES | CEI | POR |
 |------|------|-----|-----|-----|-----|-----|-----|-----|--------|-----|-----|
 | **Genesis** | GENE | 50 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
-| Exodus | EXO | 40 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| **Exodus** | EXO | 40 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
 | Leviticus | LEVI | 27 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
 | Numbers | NUME | 36 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
 | Deuteronomy | DEUT | 34 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
