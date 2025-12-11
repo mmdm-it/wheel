@@ -19,7 +19,13 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "לַמְנַצֵּ֗חַ מִזְמ֥וֹר לְדָוִֽד׃"
+        "WLC": "לַ/מְנַצֵּ֗חַ מִזְמ֥וֹר לְ/דָוִֽד׃",
+        "LXX": "Εἰς τὸ τέλος· ψαλμὸς τῷ Δαυείδ.",
+        "VUL": "In finem. Psalmus David.",
+        "SYN": "Начальнику хора. Псалом Давида.",
+        "NEO": "Au maître de chant. Psaume de David.",
+        "NAB": "For the leader. A psalm of David.",
+        "CEI": "Al maestro del coro. Salmo. Di Davide."
       }
     },
     "2": {
@@ -30,7 +36,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "יַֽעַנְךָ֣ יְ֭הוָה בְּי֣וֹם צָרָ֑ה יְ֝שַׂגֶּבְךָ֗ שֵׁ֤ם אֱלֹהֵ֬י יַעֲקֹֽב׃"
+        "WLC": "יַֽעַנְ/ךָ֣ יְ֭הוָה בְּ/י֣וֹם צָרָ֑ה יְ֝שַׂגֶּבְ/ךָ֗ שֵׁ֤ם אֱלֹהֵ֬י יַעֲקֹֽב׃",
+        "LXX": "Κύριε, ἐν τῇ δυνάμει σου εὐφρανθήσεται ὁ βασιλεύς, καὶ ἐπὶ τῷ σωτηρίῳ σου ἀγαλλιάσεται σφόδρα.",
+        "VUL": "[Domine, in virtute tua lætabitur rex,/ et super salutare tuum exsultabit vehementer./",
+        "SYN": "Господи! силою Твоею веселится царь и о спасении Твоем безмерно радуется.",
+        "NEO": "Que \\+w Yahweh|strong=\"H3068\"\\+w** t’exauce au jour de la détresse, que le nom du Dieu de Jacob te protège !",
+        "NAB": "The LORD answer you in time of distress; the name of the God of Jacob defend you!",
+        "VAT_ES": "El Señor te haga triunfar en el momento del peligro,",
+        "CEI": "Ti ascolti il Signore nel giorno della prova, ti protegga il nome del Dio di Giacobbe."
       }
     },
     "3": {
@@ -41,7 +54,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "יִשְׁלַֽח עֶזְרְךָ֥ מִקֹּ֑דֶשׁ וּ֝מִצִּיּ֗וֹן יִסְעָדֶֽךָּ׃"
+        "WLC": "יִשְׁלַֽח עֶזְרְ/ךָ֥ מִ/קֹּ֑דֶשׁ וּ֝/מִ/צִּיּ֗וֹן יִסְעָדֶֽ/ךָּ׃",
+        "LXX": "τὴν ἐπιθυμίαν τῆς ψυχῆς αὐτοῦ ἔδωκας αὐτῷ, καὶ τὴν δέησιν τῶν χειλέων αὐτοῦ οὐκ ἐστέρησας αὐτόν. διάψαλμα.",
+        "VUL": "Desiderium cordis ejus tribuisti ei,/ et voluntate labiorum ejus non fraudasti eum./",
+        "SYN": "Ты дал ему, чего желало сердце его, и прошения уст его не отринул,",
+        "NEO": "Que du sanctuaire il t’envoie du secours, que de Sion il te soutienne !",
+        "NAB": "May God send you help from the temple, from Zion be your support.",
+        "VAT_ES": "Que él te auxilie desde su Santuario",
+        "CEI": "Ti mandi l'aiuto dal suo santuario e dall'alto di Sion ti sostenga."
       }
     },
     "4": {
@@ -52,7 +72,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "יִזְכֹּ֥ר כָּל מִנְחֹתֶ֑ךָ וְעוֹלָתְךָ֖ יְדַשְּׁנֶ֣ה סֶֽלָה׃"
+        "WLC": "יִזְכֹּ֥ר כָּל מִנְחֹתֶ֑/ךָ וְ/עוֹלָתְ/ךָ֖ יְדַשְּׁנֶ֣/ה סֶֽלָה׃",
+        "LXX": "ὅτι προέφθασας αὐτὸν ἐν εὐλογίαις χρηστότητος, ἔθηκας ἐπὶ τὴν κεφαλὴν αὐτοῦ στέφανον ἐκ λίθου τιμίου.",
+        "VUL": "Quoniam prævenisti eum in benedictionibus dulcedinis ;/ posuisti in capite ejus coronam de lapide pretioso./",
+        "SYN": "ибо Ты встретил его благословениями благости, возложил на голову его венец из чистого золота.",
+        "NEO": "Qu’il se souvienne de toutes tes oblations, et qu’il ait pour agréable tes holocaustes ! — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "May God remember your every offering, graciously accept your holocaust, Selah",
+        "VAT_ES": "que se acuerde de todas tus ofrendas",
+        "CEI": "Ricordi tutti i tuoi sacrifici e gradisca i tuoi olocausti."
       }
     },
     "5": {
@@ -63,7 +90,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "יִֽתֶּן לְךָ֥ כִלְבָבֶ֑ךָ וְֽכָל עֲצָתְךָ֥ יְמַלֵּֽא׃"
+        "WLC": "יִֽתֶּן לְ/ךָ֥ כִ/לְבָבֶ֑/ךָ וְֽ/כָל עֲצָתְ/ךָ֥ יְמַלֵּֽא׃",
+        "LXX": "ζωὴν ᾐτήσατό σε, καὶ ἔδωκας αὐτῷ, μακρότητα ἡμερῶν εἰς αἰῶνα αἰῶνος.",
+        "VUL": "Vitam petiit a te, et tribuisti ei longitudinem dierum,/ in sæculum, et in sæculum sæculi./",
+        "SYN": "Он просил у Тебя жизни; Ты дал ему долгоденствие на век и век.",
+        "NEO": "Qu’il te donne ce que ton cœur désire, et qu’il accomplisse tous tes desseins !",
+        "NAB": "Grant what is in your heart, fulfill your every plan.",
+        "VAT_ES": "Que satisfaga todos tus deseos",
+        "CEI": "Ti conceda secondo il tuo cuore, faccia riuscire ogni tuo progetto."
       }
     },
     "6": {
@@ -74,7 +108,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "נְרַנְּנָ֤ה בִּ֘ישׁ֤וּעָתֶ֗ךָ וּבְשֵֽׁם אֱלֹהֵ֥ינוּ נִדְגֹּ֑ל יְמַלֵּ֥א יְ֝הוָ֗ה כָּל מִשְׁאֲלוֹתֶֽיךָ׃"
+        "WLC": "נְרַנְּנָ֤ה בִּ֘/ישׁ֤וּעָתֶ֗/ךָ וּ/בְ/שֵֽׁם אֱלֹהֵ֥י/נוּ נִדְגֹּ֑ל יְמַלֵּ֥א יְ֝הוָ֗ה כָּל מִשְׁאֲלוֹתֶֽי/ךָ׃",
+        "LXX": "μεγάλη ἡ δόξα αὐτοῦ ἐν τῷ σωτηρίῳ σου, δόξαν καὶ μεγαλοπρέπειαν ἐπιθήσεις ἐπ’ αὐτόν·",
+        "VUL": "Magna est gloria ejus in salutari tuo ;/ gloriam et magnum decorem impones super eum./",
+        "SYN": "Велика слава его в спасении Твоем; Ты возложил на него честь и величие.",
+        "NEO": "Puissions-nous de nos cris joyeux saluer ta victoire, lever l’étendard au nom de notre Dieu ! Que \\+w Yahweh|strong=\"H3068\"\\+w** accomplisse tous tes vœux !",
+        "NAB": "May we shout for joy at your victory, raise the banners in the name of our God. The LORD grant your every prayer!",
+        "VAT_ES": "para que aclamemos tu victoria",
+        "CEI": "Esulteremo per la tua vittoria, spiegheremo i vessilli in nome del nostro Dio; adempia il Signore tutte le tue domande."
       }
     },
     "7": {
@@ -85,7 +126,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "עַתָּ֤ה יָדַ֗עְתִּי כִּ֤י הוֹשִׁ֥יעַ יְהוָ֗ה מְשִׁ֫יח֥וֹ יַ֭עֲנֵהוּ מִשְּׁמֵ֣י קָדְשׁ֑וֹ בִּ֝גְבֻר֗וֹת יֵ֣שַׁע יְמִינֽוֹ׃"
+        "WLC": "עַתָּ֤ה יָדַ֗עְתִּי כִּ֤י הוֹשִׁ֥יעַ יְהוָ֗ה מְשִׁ֫יח֥/וֹ יַ֭עֲנֵ/הוּ מִ/שְּׁמֵ֣י קָדְשׁ֑/וֹ בִּ֝/גְבֻר֗וֹת יֵ֣שַׁע יְמִינֽ/וֹ׃",
+        "LXX": "ὅτι δώσεις αὐτῷ εὐλογίαν εἰς αἰῶνα αἰῶνος, εὐφρανεῖς αὐτὸν ἐν χαρᾷ μετὰ τοῦ προσώπου σου.",
+        "VUL": "Quoniam dabis eum in benedictionem in sæculum sæculi ;/ lætificabis eum in gaudio cum vultu tuo./",
+        "SYN": "Ты положил на него благословения на веки, возвеселил его радостью лица Твоего,",
+        "NEO": "Déjà je sais que \\+w Yahweh|strong=\"H3068\"\\+w** a sauvé son Oint ; il l’exaucera des cieux, sa sainte demeure, par le secours puissant de sa droite.",
+        "NAB": "Now I know victory is given to the anointed of the LORD. God will answer him from the holy heavens with a strong arm that brings victory.",
+        "VAT_ES": "Ahora sé que el Señor ha dado la victoria a su Ungido,",
+        "CEI": "Ora so che il Signore salva il suo consacrato; gli ha risposto dal suo cielo santo con la forza vittoriosa della sua destra."
       }
     },
     "8": {
@@ -96,7 +144,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "אֵ֣לֶּה בָ֭רֶכֶב וְאֵ֣לֶּה בַסּוּסִ֑ים וַאֲנַ֓חְנוּ בְּשֵׁם יְהוָ֖ה אֱלֹהֵ֣ינוּ נַזְכִּֽיר׃"
+        "WLC": "אֵ֣לֶּה בָ֭/רֶכֶב וְ/אֵ֣לֶּה בַ/סּוּסִ֑ים וַ/אֲנַ֓חְנוּ בְּ/שֵׁם יְהוָ֖ה אֱלֹהֵ֣י/נוּ נַזְכִּֽיר׃",
+        "LXX": "ὅτι ὁ βασιλεὺς ἐλπίζει ἐπὶ Κύριον, καὶ ἐν τῷ ἐλέει τοῦ ὑψίστου οὐ μὴ σαλευθῇ.",
+        "VUL": "Quoniam rex sperat in Domino,/ et in misericordia Altissimi non commovebitur./",
+        "SYN": "ибо царь уповает на Господа, и во благости Всевышнего не поколеблется.",
+        "NEO": "Ceux-ci comptent sur leurs chars, ceux-là sur leurs chevaux ; nous, nous invoquons le nom de \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu.",
+        "NAB": "Some rely on chariots, others on horses, but we on the name of the LORD our God.",
+        "VAT_ES": "Unos se fían de sus carros y otros de sus caballos,",
+        "CEI": "Chi si vanta dei carri e chi dei cavalli, noi siamo forti nel nome del Signore nostro Dio."
       }
     },
     "9": {
@@ -107,7 +162,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "הֵ֭מָּה כָּרְע֣וּ וְנָפָ֑לוּ וַאֲנַ֥חְנוּ קַּ֝֗מְנוּ וַנִּתְעוֹדָֽד׃"
+        "WLC": "הֵ֭מָּה כָּרְע֣וּ וְ/נָפָ֑לוּ וַ/אֲנַ֥חְנוּ קַּ֝֗מְנוּ וַ/נִּתְעוֹדָֽד׃",
+        "LXX": "εὑρεθείη ἡ χείρ σου πᾶσιν τοῖς ἐχθροῖς σου, ἡ δεξιά σου εὕροι πάντας τοὺς μισοῦντάς σε.",
+        "VUL": "Inveniatur manus tua omnibus inimicis tuis ;/ dextera tua inveniat omnes qui te oderunt./",
+        "SYN": "Рука Твоя найдет всех врагов Твоих, десница Твоя найдет [всех] ненавидящих Тебя.",
+        "NEO": "Eux, ils plient et ils tombent ; nous, nous nous relevons et tenons ferme.",
+        "NAB": "They collapse and fall, but we stand strong and firm.",
+        "VAT_ES": "Ellos tropezaron y cayeron,",
+        "CEI": "Quelli si piegano e cadono, ma noi restiamo in piedi e siamo saldi."
       }
     }
   }

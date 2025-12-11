@@ -19,7 +19,14 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "אַֽל תִּ֭תְהַלֵּל בְּי֣וֹם מָחָ֑ר כִּ֤י לֹא תֵ֝דַ֗ע מַה יֵּ֥לֶד יֽוֹם׃"
+        "WLC": "אַֽל תִּ֭תְהַלֵּל בְּ/י֣וֹם מָחָ֑ר כִּ֤י לֹא תֵ֝דַ֗ע מַה יֵּ֥לֶד יֽוֹם׃",
+        "LXX": "μὴ καυχῶ τὰ εἰς αὔριον, οὐ γὰρ γινώσκεις τί τέξεται ἡ ἐπιοῦσα.",
+        "VUL": "[Ne glorieris in crastinum,/ ignorans quid superventura pariat dies./",
+        "SYN": "Не хвались завтрашним днем, потому что не знаешь, что родит тот день.",
+        "NEO": "Ne te glorifie pas du lendemain, car tu ne sais pas ce qu’enfantera le jour suivant.",
+        "NAB": "Boast not of tomorrow, for you know not what any day may bring forth.",
+        "VAT_ES": "No te gloríes del día de mañana, porque no sabes lo que depara cada día.",
+        "CEI": "Non ti vantare del domani, perché non sai neppure che cosa genera l'oggi."
       }
     },
     "2": {
@@ -30,7 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "יְהַלֶּלְךָ֣ זָ֣ר וְלֹא פִ֑יךָ נָ֝כְרִ֗י וְאַל שְׂפָתֶֽיךָ׃"
+        "WLC": "יְהַלֶּלְ/ךָ֣ זָ֣ר וְ/לֹא פִ֑י/ךָ נָ֝כְרִ֗י וְ/אַל שְׂפָתֶֽי/ךָ׃",
+        "LXX": "ἐγκωμιαζέτω σε ὁ πέλας καὶ μὴ τὸ σὸν στόμα, ἀλλότριος καὶ μὴ τὰ σὰ χείλη.",
+        "VUL": "Laudet te alienus, et non os tuum ;/ extraneus, et non labia tua./",
+        "SYN": "Пусть хвалит тебя другой, а не уста твои, - чужой, а не язык твой.",
+        "NEO": "Qu’un autre te loue, et non ta bouche ; un étranger, et non tes lèvres.",
+        "NAB": "Let another praise you - not your own mouth; Someone else - not your own lips.",
+        "VAT_ES": "Que te alabe otro, no tu boca, que sea un extraño, no tus propios labios.",
+        "CEI": "Ti lodi un altro e non la tua bocca, un estraneo e non le tue labbra."
       }
     },
     "3": {
@@ -41,7 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "כֹּֽבֶד אֶ֭בֶן וְנֵ֣טֶל הַח֑וֹל וְכַ֥עַס אֱ֝וִ֗יל כָּבֵ֥ד מִשְּׁנֵיהֶֽם׃"
+        "WLC": "כֹּֽבֶד אֶ֭בֶן וְ/נֵ֣טֶל הַ/ח֑וֹל וְ/כַ֥עַס אֱ֝וִ֗יל כָּבֵ֥ד מִ/שְּׁנֵי/הֶֽם׃",
+        "LXX": "βαρὺ λίθος καὶ δυσβάστακτον ἄμμος, ὀργὴ δὲ ἄφρονος βαρυτέρα ἀμφοτέρων.",
+        "VUL": "Grave est saxum, et onerosa arena,/ sed ira stulti utroque gravior./",
+        "SYN": "Тяжел камень, весок и песок; но гнев глупца тяжелее их обоих.",
+        "NEO": "La pierre est lourde et le sable est pesant : plus que l’un et l’autre pèse la colère de l’insensé.",
+        "NAB": "Stone is heavy, and sand a burden, but a fool's provocation is heavier than both.",
+        "VAT_ES": "Pesada es la piedra y también la arena, pero más pesado aún es el despecho de un necio.",
+        "CEI": "La pietra è greve, la sabbia è pesante, ma più dell'una e dell'altra lo è il fastidio dello stolto."
       }
     },
     "4": {
@@ -52,7 +73,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "אַכְזְרִיּ֣וּת חֵ֭מָה וְשֶׁ֣טֶף אָ֑ף וּמִ֥י יַ֝עֲמֹד לִפְנֵ֥י קִנְאָֽה׃"
+        "WLC": "אַכְזְרִיּ֣וּת חֵ֭מָה וְ/שֶׁ֣טֶף אָ֑ף וּ/מִ֥י יַ֝עֲמֹד לִ/פְנֵ֥י קִנְאָֽה׃",
+        "LXX": "ἀνελεήμων θυμὸς καὶ ὀξεῖα ὀργή, ἀλλ’ οὐδένα ὑφίσταται ζῆλος.",
+        "VUL": "Ira non habet misericordiam nec erumpens furor,/ et impetum concitati ferre quis poterit ?/",
+        "SYN": "Жесток гнев, неукротима ярость; но кто устоит против ревности?",
+        "NEO": "La fureur est cruelle et la colère impétueuse ; mais qui pourra tenir devant la jalousie ?",
+        "NAB": "Anger is relentless, and wrath overwhelming - but before jealousy who can stand?",
+        "VAT_ES": "Cruel es el furor, agua desbordada la ira, pero &iquest;quién resistirá a los celos?",
+        "CEI": "La collera è crudele, l'ira è impetuosa; ma chi può resistere alla gelosia?"
       }
     },
     "5": {
@@ -63,7 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "ט֭וֹבָה תּוֹכַ֣חַת מְגֻלָּ֑ה מֵֽאַהֲבָ֥ה מְסֻתָּֽרֶת׃"
+        "WLC": "ט֭וֹבָה תּוֹכַ֣חַת מְגֻלָּ֑ה מֵֽ/אַהֲבָ֥ה מְסֻתָּֽרֶת׃",
+        "LXX": "κρείσσους ἔλεγχοι ἀποκεκαλυμμένοι κρυπτομένης φιλίας.",
+        "VUL": "Melior est manifesta correptio/ quam amor absconditus./",
+        "SYN": "Лучше открытое обличение, нежели скрытая любовь.",
+        "NEO": "Mieux vaut une réprimande ouverte qu’une amitié cachée.",
+        "NAB": "Better is an open rebuke than a love that remains hidden.",
+        "VAT_ES": "Más vale una reprensión abierta que un cariño disimulado.",
+        "CEI": "Meglio un rimprovero aperto che un amore celato."
       }
     },
     "6": {
@@ -74,7 +109,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "נֶ֭אֱמָנִים פִּצְעֵ֣י אוֹהֵ֑ב וְ֝נַעְתָּר֗וֹת נְשִׁיק֥וֹת שׂוֹנֵֽא׃"
+        "WLC": "נֶ֭אֱמָנִים פִּצְעֵ֣י אוֹהֵ֑ב וְ֝/נַעְתָּר֗וֹת נְשִׁיק֥וֹת שׂוֹנֵֽא׃",
+        "LXX": "ἀξιοπιστότερά ἐστιν τραύματα φίλου ἢ ἑκούσια φιλήματα ἐχθροῦ.",
+        "VUL": "Meliora sunt vulnera diligentis/ quam fraudulenta oscula odientis./",
+        "SYN": "Искренни укоризны от любящего, и лживы поцелуи ненавидящего.",
+        "NEO": "Les blessures d’un ami sont inspirées par la fidélité, mais les baisers d’un ennemi sont trompeurs.",
+        "NAB": "Wounds from a friend may be accepted as well meant, but the greetings of an enemy one prays against.",
+        "VAT_ES": "Leal es la herida que inflige el amigo, engañosa los besos del enemigo.",
+        "CEI": "Leali sono le ferite di un amico, fallaci i baci di un nemico."
       }
     },
     "7": {
@@ -85,7 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "נֶ֣פֶשׁ שְׂ֭בֵעָה תָּב֣וּס נֹ֑פֶת וְנֶ֥פֶשׁ רְ֝עֵבָ֗ה כָּל מַ֥ר מָתֽוֹק׃"
+        "WLC": "נֶ֣פֶשׁ שְׂ֭בֵעָה תָּב֣וּס נֹ֑פֶת וְ/נֶ֥פֶשׁ רְ֝עֵבָ֗ה כָּל מַ֥ר מָתֽוֹק׃",
+        "LXX": "ψυχὴ ἐν πλησμονῇ οὖσα κηρίοις ἐμπαίζει, ψυχῇ δὲ ἐν ἐνδεεῖ καὶ τὰ πικρὰ γλυκέα φαίνεται.",
+        "VUL": "Anima saturata calcabit favum,/ et anima esuriens etiam amarum pro dulci sumet./",
+        "SYN": "Сытая душа попирает и сот, а голодной душе все горькое сладко.",
+        "NEO": "Celui qui est rassasié foule aux pieds le rayon de miel, mais à celui qui a faim tout ce qui est amer paraît doux.",
+        "NAB": "One who is full, tramples on virgin honey; but to the man who is hungry, any bitter thing is sweet.",
+        "VAT_ES": "El hombre satisfecho pisotea un panal de miel, para el hambriento, hasta lo amargo es dulce.",
+        "CEI": "Gola sazia disprezza il miele; per chi ha fame anche l'amaro è dolce."
       }
     },
     "8": {
@@ -96,7 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "כְּ֭צִפּוֹר נוֹדֶ֣דֶת מִן קִנָּ֑הּ כֵּֽן אִ֝֗ישׁ נוֹדֵ֥ד מִמְּקוֹמֽוֹ׃"
+        "WLC": "כְּ֭/צִפּוֹר נוֹדֶ֣דֶת מִן קִנָּ֑/הּ כֵּֽן אִ֝֗ישׁ נוֹדֵ֥ד מִ/מְּקוֹמֽ/וֹ׃",
+        "LXX": "ὥσπερ ὅταν ὄρνεον καταπετασθῇ ἐκ τῆς ἰδίας νοσσιᾶς, οὕτως ἄνθρωπος δουλοῦται ὅταν ἀποξενωθῇ ἐκ τῶν ἰδίων τόπων.",
+        "VUL": "Sicut avis transmigrans de nido suo,/ sic vir qui derelinquit locum suum./",
+        "SYN": "Как птица, покинувшая гнездо свое, так человек, покинувший место свое.",
+        "NEO": "Comme l’oiseau qui erre loin de son nid, ainsi l’homme qui erre loin de son lieu.",
+        "NAB": "Like a bird that is far from its nest is a man who is far from his home.",
+        "VAT_ES": "Como pájaro que anda lejos de su nido, así es el hombre que anda lejos de su hogar.",
+        "CEI": "Come un uccello che vola lontano dal nido così è l'uomo che va errando lontano dalla dimora."
       }
     },
     "9": {
@@ -107,7 +163,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "שֶׁ֣מֶן וּ֭קְטֹרֶת יְשַׂמַּֽח לֵ֑ב וּמֶ֥תֶק רֵ֝עֵ֗הוּ מֵֽעֲצַת נָֽפֶשׁ׃"
+        "WLC": "שֶׁ֣מֶן וּ֭/קְטֹרֶת יְשַׂמַּֽח לֵ֑ב וּ/מֶ֥תֶק רֵ֝עֵ֗/הוּ מֵֽ/עֲצַת נָֽפֶשׁ׃",
+        "LXX": "μύροις καὶ οἴνοις καὶ θυμιάμασιν τέρπεται καρδία, καταρήγνυται δὲ ὑπὸ συμπτωμάτων ψυχή.",
+        "VUL": "Unguento et variis odoribus delectatur cor,/ et bonis amici consiliis anima dulcoratur.]",
+        "SYN": "Масть и курение радуют сердце; так сладок _всякому_ друг сердечным советом своим.",
+        "NEO": "L’huile et les parfums réjouissent le cœur ; telle la douceur d’un ami dont le conseil vient du cœur.",
+        "NAB": "Perfume and incense gladden the heart, but by grief the soul is torn asunder.",
+        "VAT_ES": "El aceite perfumado alegra el corazón, y la dulzura de un amigo, más que el propio consejo.",
+        "CEI": "Il profumo e l'incenso allietano il cuore, la dolcezza di un amico rassicura l'anima."
       }
     },
     "10": {
@@ -118,7 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "WLC": "רֵֽעֲךָ֨ ורעה וְרֵ֪עַ אָבִ֡יךָ אַֽל תַּעֲזֹ֗ב וּבֵ֥ית אָחִ֗יךָ אַל תָּ֭בוֹא בְּי֣וֹם אֵידֶ֑ךָ ט֥וֹב שָׁכֵ֥ן קָ֝ר֗וֹב מֵאָ֥ח רָחֽוֹק׃"
+        "WLC": "רֵֽעֲ/ךָ֨ ו/רעה וְ/רֵ֪עַ אָבִ֡י/ךָ אַֽל תַּעֲזֹ֗ב וּ/בֵ֥ית אָחִ֗י/ךָ אַל תָּ֭בוֹא בְּ/י֣וֹם אֵידֶ֑/ךָ ט֥וֹב שָׁכֵ֥ן קָ֝ר֗וֹב מֵ/אָ֥ח רָחֽוֹק׃",
+        "LXX": "φίλον σὸν ἢ φίλον πατρῷον μὴ ἐγκαταλίπῃς, εἰς δὲ τὸν οἶκον τοῦ ἀδελφοῦ σου μὴ εἰσέλθῃς ἀτυχῶν· κρείσσων φίλος ἐγγὺς ἢ ἀδελφὸς μακρὰν οἰκῶν.",
+        "VUL": "[Amicum tuum et amicum patris tui ne dimiseris,/ et domum fratris tui ne ingrediaris in die afflictionis tuæ./ Melior est vicinus juxta/ quam frater procul./",
+        "SYN": "Не покидай друга твоего и друга отца твоего, и в дом брата твоего не ходи в день несчастья твоего: лучше сосед вблизи, нежели брат вдали.",
+        "NEO": "N’abandonne pas ton ami et l’ami de ton père, et n’entre pas dans la maison de ton frère au jour de ta détresse ; mieux vaut un voisin proche qu’un frère éloigné.",
+        "NAB": "Your own friend and your father's friend forsake not; but if ruin befalls you, enter not a kinsman's house. Better is a neighbor near at hand than a brother far away.",
+        "VAT_ES": "No abandones a tu amigo ni al amigo de tu padre, ni acudas a tu hermano en el día del infortunio: más vale vecino cerca que hermano lejos.",
+        "CEI": "Non abbandonare il tuo amico né quello di tuo padre, non entrare nella casa di tuo fratello nel giorno della tua disgrazia. Meglio un amico vicino che un fratello lontano."
       }
     },
     "11": {
@@ -129,7 +199,14 @@
         "LXX": 11
       },
       "text": {
-        "WLC": "חֲכַ֣ם בְּ֭נִי וְשַׂמַּ֣ח לִבִּ֑י וְאָשִׁ֖יבָה חֹרְפִ֣י דָבָֽר׃"
+        "WLC": "חֲכַ֣ם בְּ֭נִ/י וְ/שַׂמַּ֣ח לִבִּ֑/י וְ/אָשִׁ֖יבָה חֹרְפִ֣/י דָבָֽר׃",
+        "LXX": "Σοφὸς γίνου, υἱέ, ἵνα σου εὐφραίνηται ἡ καρδία, καὶ ἀπόστρεψον ἀπὸ σοῦ ἐπονειδίστους λόγους.",
+        "VUL": "Stude sapientiæ, fili mi, et lætifica cor meum,/ ut possis exprobranti respondere sermonem./",
+        "SYN": "Будь мудр, сын мой, и радуй сердце мое; и я буду иметь, что отвечать злословящему меня.",
+        "NEO": "Mon fils, deviens sage et réjouis mon cœur, afin que je puisse répondre à celui qui m’outrage.",
+        "NAB": "If you are wise, my son, you will gladden my heart, and I will be able to rebut him who tuants me.",
+        "VAT_ES": "Sé sabio, hijo mío, alegra mi corazón, y podré replicar al que me denigra.",
+        "CEI": "Sii saggio, figlio mio, e allieterai il mio cuore e avrò di che rispondere a colui che mi insulta."
       }
     },
     "12": {
@@ -140,7 +217,14 @@
         "LXX": 12
       },
       "text": {
-        "WLC": "עָר֤וּם רָאָ֣ה רָעָ֣ה נִסְתָּ֑ר פְּ֝תָאיִ֗ם עָבְר֥וּ נֶעֱנָֽשׁוּ׃"
+        "WLC": "עָר֤וּם רָאָ֣ה רָעָ֣ה נִסְתָּ֑ר פְּ֝תָאיִ֗ם עָבְר֥וּ נֶעֱנָֽשׁוּ׃",
+        "LXX": "πανοῦργος κακῶν ἐπερχομένων ἀπεκρύβη, ἄφρονες δὲ ἐπελθόντες ζημίαν τίσουσιν.",
+        "VUL": "Astutus videns malum, absconditus est :/ parvuli transeuntes sustinuerunt dispendia./",
+        "SYN": "Благоразумный видит беду и укрывается; а неопытные идут вперед _и_ наказываются.",
+        "NEO": "L’homme prudent voit le mal et se cache ; les simples passent et en portent la peine.",
+        "NAB": "The shrewd man perceives evil and hides; simpletons continue on and suffer the penalty.",
+        "VAT_ES": "El hombre precavido ve el mal y se esconde, los incautos siguen adelante y la pagan.",
+        "CEI": "L'accorto vede il pericolo e si nasconde, gli inesperti vanno avanti e la pagano."
       }
     },
     "13": {
@@ -151,7 +235,14 @@
         "LXX": 13
       },
       "text": {
-        "WLC": "קַח בִּ֭גְדוֹ כִּי עָ֣רַב זָ֑ר וּבְעַ֖ד נָכְרִיָּ֣ה חַבְלֵֽהוּ׃"
+        "WLC": "קַח בִּ֭גְד/וֹ כִּי עָ֣רַב זָ֑ר וּ/בְעַ֖ד נָכְרִיָּ֣ה חַבְלֵֽ/הוּ׃",
+        "LXX": "ἀφελοῦ τὸ ἱμάτιον αὐτοῦ, παρῆλθεν γάρ· ὑβριστὴς ὅστις τὰ ἀλλότρια λυμαίνεται.",
+        "VUL": "Tolle vestimentum ejus qui spopondit pro extraneo,/ et pro alienis aufer ei pignus./",
+        "SYN": "Возьми у него платье его, потому что он поручился за чужого, и за стороннего возьми от него залог.",
+        "NEO": "Prends son vêtement, car il a répondu pour autrui ; demande des gages à cause des étrangers.",
+        "NAB": "Take his garment who becomes surety for another, and for the sake of a stranger, yield it up!",
+        "VAT_ES": "Toma su ropa, porque salió fiador de otro, tómalo a él como prenda, porque dio su aval a gente extraña.",
+        "CEI": "Prendigli il vestito perché si è fatto garante per uno straniero e tienilo in pegno per gli sconosciuti."
       }
     },
     "14": {
@@ -162,7 +253,14 @@
         "LXX": 14
       },
       "text": {
-        "WLC": "מְבָ֘רֵ֤ךְ רֵעֵ֨הוּ בְּק֣וֹל גָּ֭דוֹל בַּבֹּ֣קֶר הַשְׁכֵּ֑ים קְ֝לָלָ֗ה תֵּחָ֥שֶׁב לֽוֹ׃"
+        "WLC": "מְבָ֘רֵ֤ךְ רֵעֵ֨/הוּ בְּ/ק֣וֹל גָּ֭דוֹל בַּ/בֹּ֣קֶר הַשְׁכֵּ֑ים קְ֝לָלָ֗ה תֵּחָ֥שֶׁב לֽ/וֹ׃",
+        "LXX": "ὃς ἂν εὐλογῇ φίλον τὸ πρωὶ μεγάλῃ τῇ φωνῇ, καταρωμένου οὐδὲν διαφέρειν δόξει.",
+        "VUL": "Qui benedicit proximo suo voce grandi,/ de nocte consurgens maledicenti similis erit./",
+        "SYN": "Кто громко хвалит друга своего с раннего утра, того сочтут за злословящего.",
+        "NEO": "Bénir son prochain à haute voix et de grand matin est réputé comme une malédiction.",
+        "NAB": "When one greets his neighbor with a loud voice in the early morning, a curse can be laid to his charge.",
+        "VAT_ES": "Saludar al prójimo en alta voz, de madrugada, es tenido en cuenta como una maldición.",
+        "CEI": "Benedire il prossimo di buon mattino ad alta voce gli sarà imputato come una maledizione."
       }
     },
     "15": {
@@ -173,7 +271,14 @@
         "LXX": 15
       },
       "text": {
-        "WLC": "דֶּ֣לֶף ט֭וֹרֵד בְּי֣וֹם סַגְרִ֑יר וְאֵ֥שֶׁת מדונים מִ֝דְיָנִ֗ים נִשְׁתָּוָֽה׃"
+        "WLC": "דֶּ֣לֶף ט֭וֹרֵד בְּ/י֣וֹם סַגְרִ֑יר וְ/אֵ֥שֶׁת מדונים מִ֝דְיָנִ֗ים נִשְׁתָּוָֽה׃",
+        "LXX": "σταγόνες ἐκβάλλουσιν ἄνθρωπον ἐν ἡμέρᾳ χειμερινῇ ἐκ τοῦ οἴκου· ὡσαύτως καὶ γυνὴ λοίδορος ἐκ τοῦ ἰδίου οἴκου.",
+        "VUL": "Tecta perstillantia in die frigoris/ et litigiosa mulier comparantur./",
+        "SYN": "Непрестанная капель в дождливый день и сварливая жена - равны:",
+        "NEO": "Une gouttière continue dans un jour de pluie et une femme querelleuse se ressemblent.",
+        "NAB": "For a persistent leak on a rainy day the match is a quarrelsome woman.",
+        "VAT_ES": "Gotera incesante en día de lluvia y mujer pendenciera, se asemejan:",
+        "CEI": "Il gocciolar continuo in tempo di pioggia e una moglie litigiosa, si rassomigliano:"
       }
     },
     "16": {
@@ -184,7 +289,14 @@
         "LXX": 16
       },
       "text": {
-        "WLC": "צֹפְנֶ֥יהָ צָֽפַן ר֑וּחַ וְשֶׁ֖מֶן יְמִינ֣וֹ יִקְרָֽא׃"
+        "WLC": "צֹפְנֶ֥י/הָ צָֽפַן ר֑וּחַ וְ/שֶׁ֖מֶן יְמִינ֣/וֹ יִקְרָֽא׃",
+        "LXX": "βορέας σκληρὸς ἄνεμος, ὀνόματι δὲ ἐπιδέξιος καλεῖται.",
+        "VUL": "Qui retinet eam quasi qui ventum teneat,/ et oleum dexteræ suæ vocabit./",
+        "SYN": "кто хочет скрыть ее, тот хочет скрыть ветер и масть в правой руке своей, дающую знать о себе.",
+        "NEO": "Celui qui la retient, retient le vent, et sa main saisit de l’huile.",
+        "NAB": "He who keeps her stores up a stormwind; he cannot tell north from south.",
+        "VAT_ES": "querer frenarla es como frenar el viento o recoger aceite con la mano.",
+        "CEI": "chi la vuol trattenere, trattiene il vento e raccoglie l'olio con la mano destra."
       }
     },
     "17": {
@@ -195,7 +307,14 @@
         "LXX": 17
       },
       "text": {
-        "WLC": "בַּרְזֶ֣ל בְּבַרְזֶ֣ל יָ֑חַד וְ֝אִ֗ישׁ יַ֣חַד פְּנֵֽי רֵעֵֽהוּ׃"
+        "WLC": "בַּרְזֶ֣ל בְּ/בַרְזֶ֣ל יָ֑חַד וְ֝/אִ֗ישׁ יַ֣חַד פְּנֵֽי רֵעֵֽ/הוּ׃",
+        "LXX": "σίδηρος σίδηρον ὀξύνει, ἀνὴρ δὲ παροξύνει πρόσωπον ἑταίρου.",
+        "VUL": "Ferrum ferro exacuitur,/ et homo exacuit faciem amici sui./",
+        "SYN": "Железо железо острит, и человек изощряет взгляд друга своего.",
+        "NEO": "Le fer aiguise le fer ; ainsi un homme aiguise un autre homme.",
+        "NAB": "As iron sharpens iron, so man sharpens his fellow man.",
+        "VAT_ES": "El hierro se afila con el hierro, y el hombre en el trato con el prójimo.",
+        "CEI": "Il ferro si aguzza con il ferro e l'uomo aguzza l'ingegno del suo compagno."
       }
     },
     "18": {
@@ -206,7 +325,14 @@
         "LXX": 18
       },
       "text": {
-        "WLC": "נֹצֵ֣ר תְּ֭אֵנָה יֹאכַ֣ל פִּרְיָ֑הּ וְשֹׁמֵ֖ר אֲדֹנָ֣יו יְכֻבָּֽד׃"
+        "WLC": "נֹצֵ֣ר תְּ֭אֵנָה יֹאכַ֣ל פִּרְיָ֑/הּ וְ/שֹׁמֵ֖ר אֲדֹנָ֣י/ו יְכֻבָּֽד׃",
+        "LXX": "ὃς φυτεύει συκῆν φάγεται τοὺς καρποὺς αὐτῆς, ὃς δὲ φυλάσσει τὸν ἑαυτοῦ κύριον τιμηθήσεται.",
+        "VUL": "Qui servat ficum comedet fructus ejus,/ et qui custos est domini sui glorificabitur./",
+        "SYN": "Кто стережет смоковницу, тот будет есть плоды ее; и кто бережет господина своего, тот будет в чести.",
+        "NEO": "Celui qui garde son figuier en mangera les fruits, et celui qui garde son maître sera honoré.",
+        "NAB": "He who tends a fig tree eats its fruit, and he who is attentive to his master will be enriched.",
+        "VAT_ES": "El que cuida una higuera comerá de su fruto y el que respeta a su patrón recibirá honores.",
+        "CEI": "Il guardiano di un fico ne mangia i frutti, chi ha cura del suo padrone ne riceverà onori."
       }
     },
     "19": {
@@ -217,7 +343,14 @@
         "LXX": 19
       },
       "text": {
-        "WLC": "כַּ֭מַּיִם הַפָּנִ֣ים לַפָּנִ֑ים כֵּ֤ן לֵֽב הָ֝אָדָ֗ם לָאָדָֽם׃"
+        "WLC": "כַּ֭/מַּיִם הַ/פָּנִ֣ים לַ/פָּנִ֑ים כֵּ֤ן לֵֽב הָ֝/אָדָ֗ם לָ/אָדָֽם׃",
+        "LXX": "ὥσπερ οὐχ ὅμοια πρόσωπα προσώποις, οὕτως οὐδὲ αἱ διάνοιαι τῶν ἀνθρώπων.",
+        "VUL": "Quomodo in aquis resplendent vultus prospicientium,/ sic corda hominum manifesta sunt prudentibus./",
+        "SYN": "Как в воде лицо - к лицу, так сердце человека - к человеку.",
+        "NEO": "Comme dans l’eau le visage répond au visage, ainsi le cœur de l’homme répond à l’homme.",
+        "NAB": "As one face differs from another, so does one human heart from another.",
+        "VAT_ES": "Como el rostro se refleja en el agua, así el hombre se mira a sí mismo en los demás.",
+        "CEI": "Come un volto differisce da un altro, così i cuori degli uomini differiscono fra di loro."
       }
     },
     "20": {
@@ -228,7 +361,14 @@
         "LXX": 20
       },
       "text": {
-        "WLC": "שְׁא֣וֹל ואבדה וַ֭אֲבַדּוֹ לֹ֣א תִשְׂבַּ֑עְנָה וְעֵינֵ֥י הָ֝אָדָ֗ם לֹ֣א תִשְׂבַּֽעְנָה׃"
+        "WLC": "שְׁא֣וֹל ו/אבדה וַ֭/אֲבַדּוֹ לֹ֣א תִשְׂבַּ֑עְנָה וְ/עֵינֵ֥י הָ֝/אָדָ֗ם לֹ֣א תִשְׂבַּֽעְנָה׃",
+        "LXX": "ᾅδης καὶ ἀπώλεια οὐκ ἐμπίμπλανται, ὡσαύτως καὶ οἱ ὀφθαλμοὶ τῶν ἀνθρώπων ἄπληστοι. [1] βδέλυγμα Κυρίῳ στηρίζων ὀφθαλμόν, καὶ οἱ ἀπαίδευτοι ἀκρατεῖς γλώσσῃ.",
+        "VUL": "Infernus et perditio numquam implentur :/ similiter et oculi hominum insatiabiles./",
+        "SYN": "Преисподняя и Аваддон - ненасытимы; так ненасытимы и глаза человеческие. [Мерзость пред Господом дерзко поднимающий глаза, и неразумны невоздержанные языком.]",
+        "NEO": "Le schéol et l’abîme ne sont jamais rassasiés, de même les yeux de l’homme ne sont jamais rassasiés.",
+        "NAB": "The nether world and the abyss are never satisfied; so too the eyes of men.",
+        "VAT_ES": "El Abismo y la Perdición son insaciables, e insaciables son también los ojos del hombre.",
+        "CEI": "Come gli inferi e l'abisso non si saziano mai, così non si saziano mai gli occhi dell'uomo."
       }
     },
     "21": {
@@ -239,7 +379,14 @@
         "LXX": 21
       },
       "text": {
-        "WLC": "מַצְרֵ֣ף לַ֭כֶּסֶף וְכ֣וּר לַזָּהָ֑ב וְ֝אִ֗ישׁ לְפִ֣י מַהֲלָלֽוֹ׃"
+        "WLC": "מַצְרֵ֣ף לַ֭/כֶּסֶף וְ/כ֣וּר לַ/זָּהָ֑ב וְ֝/אִ֗ישׁ לְ/פִ֣י מַהֲלָלֽ/וֹ׃",
+        "LXX": "δοκίμιον ἀργύρῳ καὶ χρυσῷ πύρωσις, ἀνὴρ δὲ δοκιμάζεται διὰ στόματος ἐγκωμιαζόντων αὐτόν. [1] καρδία ἀνόμου ἐκζητεῖ κακά, καρδία δὲ εὐθὴς ζητεῖ γνῶσιν.",
+        "VUL": "Quomodo probatur in conflatorio argentum et in fornace aurum,/ sic probatur homo ore laudantis./ Cor iniqui inquirit mala,/ cor autem rectum inquirit scientiam./",
+        "SYN": "Что плавильня - для серебра, горнило - для золота, то для человека уста, которые хвалят его. [Сердце беззаконника ищет зла, сердце же правое ищет знания.]",
+        "NEO": "Le creuset est pour l’argent, et le fourneau pour l’or ; que l’homme éprouve de même la louange qu’il reçoit !",
+        "NAB": "As the crucible tests silver and the furnace gold, so a man is tested by the praise he receives.",
+        "VAT_ES": "Hay un crisol para la plata y un horno para el oro, pero el hombre es apreciado por su reputación.",
+        "CEI": "Come il crogiuolo è per l'argento e il fornello per l'oro, così l'uomo rispetto alla bocca di chi lo loda."
       }
     },
     "22": {
@@ -250,7 +397,14 @@
         "LXX": 22
       },
       "text": {
-        "WLC": "אִ֥ם תִּכְתּֽוֹשׁ אֶת הָאֱוִ֨יל בַּֽמַּכְתֵּ֡שׁ בְּת֣וֹךְ הָ֭רִיפוֹת בַּֽעֱלִ֑י לֹא תָס֥וּר מֵ֝עָלָ֗יו אִוַּלְתּֽוֹ׃"
+        "WLC": "אִ֥ם תִּכְתּֽוֹשׁ אֶת הָ/אֱוִ֨יל בַּֽ/מַּכְתֵּ֡שׁ בְּ/ת֣וֹךְ הָ֭/רִיפוֹת בַּֽ/עֱלִ֑י לֹא תָס֥וּר מֵ֝/עָלָ֗י/ו אִוַּלְתּֽ/וֹ׃",
+        "LXX": "ἐὰν μαστιγοῖς ἄφρονα ἐν μέσῳ συνεδρίου ἀτιμάζων, οὐ μὴ περιέλῃς τὴν ἀφροσύνην αὐτοῦ.",
+        "VUL": "Si contuderis stultum in pila/ quasi ptisanas feriente desuper pilo,/ non auferetur ab eo stultitia ejus.]",
+        "SYN": "Толки глупого в ступе пестом вместе с зерном, не отделится от него глупость его.",
+        "NEO": "Quand tu pilerais l’insensé dans un mortier, comme on broie le grain, avec le pilon, sa folie ne se séparerait pas de lui.",
+        "NAB": "Though you should pound the fool to bits with the pestle, amid the grits in a mortar, his folly would not go out of him.",
+        "VAT_ES": "Aunque machaques al necio en un mortero, entre los granos, con un pisón, su necedad no se apartará de él.",
+        "CEI": "Anche se tu pestassi lo stolto nel mortaio tra i grani con il pestello, non scuoteresti da lui la sua stoltezza."
       }
     },
     "23": {
@@ -261,7 +415,14 @@
         "LXX": 23
       },
       "text": {
-        "WLC": "יָדֹ֣עַ תֵּ֭דַע פְּנֵ֣י צֹאנֶ֑ךָ שִׁ֥ית לִ֝בְּךָ֗ לַעֲדָרִֽים׃"
+        "WLC": "יָדֹ֣עַ תֵּ֭דַע פְּנֵ֣י צֹאנֶ֑/ךָ שִׁ֥ית לִ֝בְּ/ךָ֗ לַ/עֲדָרִֽים׃",
+        "LXX": "Γνωστῶς ἐπιγνώσῃ ψυχὰς ποιμνίου σου, καὶ ἐπιστήσεις καρδίαν σου σαῖς ἀγέλαις·",
+        "VUL": "[Diligenter agnosce vultum pecoris tui,/ tuosque greges considera :/",
+        "SYN": "Хорошо наблюдай за скотом твоим, имей попечение о стадах;",
+        "NEO": "Connais bien l’état de tes brebis, applique ton attention à ton troupeau ;",
+        "NAB": "Take good care of your flocks, give careful attention to your herds;",
+        "VAT_ES": "Conoce bien el estado de tus ovejas, presta mucha atención a tus rebaños,",
+        "CEI": "Preòccupati del tuo gregge, abbi cura delle tue mandrie,"
       }
     },
     "24": {
@@ -272,7 +433,14 @@
         "LXX": 24
       },
       "text": {
-        "WLC": "כִּ֤י לֹ֣א לְעוֹלָ֣ם חֹ֑סֶן וְאִם נֵ֝֗זֶר לְד֣וֹר דור וָדֽוֹר׃"
+        "WLC": "כִּ֤י לֹ֣א לְ/עוֹלָ֣ם חֹ֑סֶן וְ/אִם נֵ֝֗זֶר לְ/ד֣וֹר דור וָ/דֽוֹר׃",
+        "LXX": "ὅτι οὐ τὸν αἰῶνα ἀνδρὶ κράτος καὶ ἰσχύς, οὐδὲ παραδίδωσιν ἐκ γενεᾶς εἰς γενεάν.",
+        "VUL": "non enim habebis jugiter potestatem,/ sed corona tribuetur in generationem et generationem./",
+        "SYN": "потому что _богатство_ не навек, да и власть разве из рода в род?",
+        "NEO": "car la richesse ne dure pas toujours, ni une couronne d’âge en âge.",
+        "NAB": "For wealth lasts not forever, nor even a crown from age to age.",
+        "VAT_ES": "porque la riqueza no dura para siempre ni una diadema indefinidamente.",
+        "CEI": "perché non sono perenni le ricchezze, né un tesoro si trasmette di generazione in generazione."
       }
     },
     "25": {
@@ -283,7 +451,14 @@
         "LXX": 25
       },
       "text": {
-        "WLC": "גָּלָ֣ה חָ֭צִיר וְנִרְאָה דֶ֑שֶׁא וְ֝נֶאֶסְפ֗וּ עִשְּׂב֥וֹת הָרִֽים׃"
+        "WLC": "גָּלָ֣ה חָ֭צִיר וְ/נִרְאָה דֶ֑שֶׁא וְ֝/נֶאֶסְפ֗וּ עִשְּׂב֥וֹת הָרִֽים׃",
+        "LXX": "ἐπιμελοῦ τῶν ἐν τῷ πεδίῳ χλωρῶν καὶ κερεῖς πόαν, καὶ σύναγε χόρτον ὀρινόν,",
+        "VUL": "Aperta sunt prata, et apparuerunt herbæ virentes,/ et collecta sunt fna de montibus./",
+        "SYN": "Прозябает трава, и является зелень, и собирают горные травы.",
+        "NEO": "Mais quand l’herbe a paru, que la verdure s’est montrée, que le foin des montagnes est recueilli,",
+        "NAB": "When the grass is taken away and the aftergrowth appears, and the mountain greens are gathered in,",
+        "VAT_ES": "Una vez cortada la hierba, aparecido el renuevo y apilado el heno de las montañas,",
+        "CEI": "Si toglie il fieno, apparisce l'erba nuova e si raccolgono i foraggi dei monti;"
       }
     },
     "26": {
@@ -294,7 +469,14 @@
         "LXX": 26
       },
       "text": {
-        "WLC": "כְּבָשִׂ֥ים לִלְבוּשֶׁ֑ךָ וּמְחִ֥יר שָׂ֝דֶ֗ה עַתּוּדִֽים׃"
+        "WLC": "כְּבָשִׂ֥ים לִ/לְבוּשֶׁ֑/ךָ וּ/מְחִ֥יר שָׂ֝דֶ֗ה עַתּוּדִֽים׃",
+        "LXX": "ἵνα ἔχῃς πρόβατα εἰς ἱματισμόν· τίμα πεδίον, ἵνα ὦσίν σοι ἄρνες.",
+        "VUL": "Agni ad vestimentum tuum,/ et hædi ad agri pretium./",
+        "SYN": "Овцы - на одежду тебе, и козлы - на покупку поля.",
+        "NEO": "tu as des agneaux pour te vêtir, des boucs pour payer un champ ;",
+        "NAB": "The lambs will provide you with clothing, and the goats will bring the price of a field,",
+        "VAT_ES": "ten corderos para vestirte, chivos para pagar el precio de un campo,",
+        "CEI": "gli agnelli ti danno le vesti e i capretti il prezzo per comprare un campo,"
       }
     },
     "27": {
@@ -305,7 +487,14 @@
         "LXX": 27
       },
       "text": {
-        "WLC": "וְדֵ֤י חֲלֵ֬ב עִזִּ֗ים לְֽ֭לַחְמְךָ לְלֶ֣חֶם בֵּיתֶ֑ךָ וְ֝חַיִּ֗ים לְנַעֲרוֹתֶֽיךָ׃"
+        "WLC": "וְ/דֵ֤י חֲלֵ֬ב עִזִּ֗ים לְֽ֭/לַחְמְ/ךָ לְ/לֶ֣חֶם בֵּיתֶ֑/ךָ וְ֝/חַיִּ֗ים לְ/נַעֲרוֹתֶֽי/ךָ׃",
+        "LXX": "υἱέ, παρ’ ἐμοῦ ἔχεις ῥήσεις ἰσχυρὰς εἰς τὴν ζωήν σου καὶ εἰς τὴν ζωὴν σῶν θεραπόντων.",
+        "VUL": "Sufficiat tibi lac caprarum in cibos tuos,/ et in necessaria domus tuæ, et ad victum ancillis tuis.]",
+        "SYN": "И довольно козьего молока в пищу тебе, в пищу домашним твоим и на продовольствие служанкам твоим.",
+        "NEO": "tu as en abondance le lait des chèvres, pour ta nourriture et celle de ta maison, et pour l’entretien de tes servantes.",
+        "NAB": "And there will be ample goat's milk to supply you, to supply your household, and maintenance for your maidens.",
+        "VAT_ES": "y bastante leche de cabra para alimentarte, para mantener a tu familia y para que vivan tus servidoras.",
+        "CEI": "le capre latte abbondante per il cibo e per vitto della tua famiglia. e per mantenere le tue schiave."
       }
     }
   }

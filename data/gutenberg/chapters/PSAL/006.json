@@ -19,7 +19,13 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "לַמְנַצֵּ֣חַ בִּ֭נְגִינוֹת עַֽל הַשְּׁמִינִ֗ית מִזְמ֥וֹר לְדָוִֽד׃"
+        "WLC": "לַ/מְנַצֵּ֣חַ בִּ֭/נְגִינוֹת עַֽל הַ/שְּׁמִינִ֗ית מִזְמ֥וֹר לְ/דָוִֽד׃",
+        "LXX": "Εἰς τὸ τέλος, ἐν ὕμνοις, ὑπὲρ τῆς ὀγδόης· ψαλμὸς τῷ Δαυείδ.",
+        "VUL": "In finem, in carminibus. Psalmus David. Pro octava.",
+        "SYN": "Начальнику хора. На восьмиструнном. Псалом Давида.",
+        "NEO": "Au maître de chant. Sur les instruments à cordes. A l’octave. Psaume de David.",
+        "NAB": "For the leader; with stringed instruments, \"upon the eighth.\" A psalm of David.",
+        "CEI": "Al maestro del coro. Per strumenti a corda. Sull'ottava. Salmo. Di Davide."
       }
     },
     "2": {
@@ -30,7 +36,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "יְֽהוָ֗ה אַל בְּאַפְּךָ֥ תוֹכִיחֵ֑נִי וְֽאַל בַּחֲמָתְךָ֥ תְיַסְּרֵֽנִי׃"
+        "WLC": "יְֽהוָ֗ה אַל בְּ/אַפְּ/ךָ֥ תוֹכִיחֵ֑/נִי וְֽ/אַל בַּ/חֲמָתְ/ךָ֥ תְיַסְּרֵֽ/נִי׃",
+        "LXX": "Κύριε, μὴ τῷ θυμῷ σου ἐλέγξῃς με, μηδὲ τῇ ὀργῇ σου παιδεύσῃς με.",
+        "VUL": "[Domine, ne in furore tuo arguas me,/ neque in ira tua corripias me./",
+        "SYN": "Господи! не в ярости Твоей обличай меня и не во гневе Твоем наказывай меня.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, ne me punis pas dans ta colère, et ne me châtie pas dans ta fureur.",
+        "NAB": "Do not reprove me in your anger, LORD, nor punish me in your wrath.",
+        "VAT_ES": "Señor, no me reprendas por tu enojo",
+        "CEI": "Signore, non punirmi nel tuo sdegno, non castigarmi nel tuo furore."
       }
     },
     "3": {
@@ -41,7 +54,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "חָנֵּ֥נִי יְהוָה֮ כִּ֤י אֻמְלַ֫ל אָ֥נִי רְפָאֵ֥נִי יְהוָ֑ה כִּ֖י נִבְהֲל֣וּ עֲצָמָֽי׃"
+        "WLC": "חָנֵּ֥/נִי יְהוָה֮ כִּ֤י אֻמְלַ֫ל אָ֥נִי רְפָאֵ֥/נִי יְהוָ֑ה כִּ֖י נִבְהֲל֣וּ עֲצָמָֽ/י׃",
+        "LXX": "ἐλέησόν με, Κύριε, ὅτι ἀσθενής εἰμι· ἴασαί με, ὅτι ἐταράχθη τὰ ὀστᾶ μου.",
+        "VUL": "Miserere mei, Domine, quoniam infirmus sum ;/ sana me, Domine, quoniam conturbata sunt ossa mea./",
+        "SYN": "Помилуй меня, Господи, ибо я немощен; исцели меня, Господи, ибо кости мои потрясены;",
+        "NEO": "Aie pitié de moi, \\+w Yahweh|strong=\"H3068\"\\+w**, car je suis sans force ; guéris-moi, \\+w Yahweh|strong=\"H3068\"\\+w**, car mes os sont tremblants.",
+        "NAB": "Have pity on me, LORD, for I am weak; heal me, LORD, for my bones are trembling.",
+        "VAT_ES": "Ten piedad de mí, porque me faltan las fuerzas;",
+        "CEI": "Pietà di me, Signore: vengo meno; risanami, Signore: tremano le mie ossa."
       }
     },
     "4": {
@@ -52,7 +72,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "וְ֭נַפְשִׁי נִבְהֲלָ֣ה מְאֹ֑ד ואת וְאַתָּ֥ה יְ֝הוָ֗ה עַד מָתָֽי׃"
+        "WLC": "וְ֭/נַפְשִׁ/י נִבְהֲלָ֣ה מְאֹ֑ד ו/את וְ/אַתָּ֥ה יְ֝הוָ֗ה עַד מָתָֽי׃",
+        "LXX": "καὶ ἡ ψυχή μου ἐταράχθη σφόδρα· καὶ σύ, Κύριε, ἕως πότε;",
+        "VUL": "Et anima mea turbata est valde ;/ sed tu, Domine, usquequo ?/",
+        "SYN": "и душа моя сильно потрясена; Ты же, Господи, доколе?",
+        "NEO": "Mon âme est dans un trouble extrême ; et toi, \\+w Yahweh|strong=\"H3068\"\\+w**, jusques à quand... ?",
+        "NAB": "In utter terror is my soul - and you, LORD, how long...?",
+        "VAT_ES": "Mi alma está atormentada,",
+        "CEI": "L'anima mia è tutta sconvolta, ma tu, Signore, fino a quando...?"
       }
     },
     "5": {
@@ -63,7 +90,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "שׁוּבָ֣ה יְ֭הוָה חַלְּצָ֣ה נַפְשִׁ֑י ה֝וֹשִׁיעֵ֗נִי לְמַ֣עַן חַסְדֶּֽךָ׃"
+        "WLC": "שׁוּבָ֣/ה יְ֭הוָה חַלְּצָ֣/ה נַפְשִׁ֑/י ה֝וֹשִׁיעֵ֗/נִי לְמַ֣עַן חַסְדֶּֽ/ךָ׃",
+        "LXX": "ἐπίστρεψον, Κύριε, ῥῦσαι τὴν ψυχήν μου, σῶσόν με ἕνεκεν τοῦ ἐλέους σου.",
+        "VUL": "Convertere, Domine, et eripe animam meam ;/ salvum me fac propter misericordiam tuam./",
+        "SYN": "Обратись, Господи, избавь душу мою, спаси меня ради милости Твоей,",
+        "NEO": "Reviens, \\+w Yahweh|strong=\"H3068\"\\+w**, délivre mon âme ; sauve-moi à cause de ta miséricorde.",
+        "NAB": "Turn, LORD, save my life; in your mercy rescue me.",
+        "VAT_ES": "Vuélvete, Señor, rescata mi vida,",
+        "CEI": "Volgiti, Signore, a liberarmi, salvami per la tua misericordia."
       }
     },
     "6": {
@@ -74,7 +108,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "כִּ֤י אֵ֣ין בַּמָּ֣וֶת זִכְרֶ֑ךָ בִּ֝שְׁא֗וֹל מִ֣י יֽוֹדֶה לָּֽךְ׃"
+        "WLC": "כִּ֤י אֵ֣ין בַּ/מָּ֣וֶת זִכְרֶ֑/ךָ בִּ֝/שְׁא֗וֹל מִ֣י יֽוֹדֶה לָּֽ/ךְ׃",
+        "LXX": "ὅτι οὐκ ἔστιν ἐν τῷ θανάτῳ ὁ μνημονεύων σου· ἐν δὲ τῷ ᾅδῃ τίς ἐξομολογήσεταί σοι;",
+        "VUL": "Quoniam non est in morte qui memor sit tui ;/ in inferno autem quis confitebitur tibi ?/",
+        "SYN": "ибо в смерти нет памятования о Тебе: во гробе кто будет славить Тебя?",
+        "NEO": "Car celui qui meurt n’a plus souvenir de toi ; qui te louera dans le schéol ?",
+        "NAB": "For who among the dead remembers you? Who praises you in Sheol?",
+        "VAT_ES": "porque en la Muerte nadie se acuerda de ti,",
+        "CEI": "Nessuno tra i morti ti ricorda. Chi negli inferi canta le tue lodi?"
       }
     },
     "7": {
@@ -85,7 +126,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "יָגַ֤עְתִּי בְּֽאַנְחָתִ֗י אַשְׂחֶ֣ה בְכָל לַ֭יְלָה מִטָּתִ֑י בְּ֝דִמְעָתִ֗י עַרְשִׂ֥י אַמְסֶֽה׃"
+        "WLC": "יָגַ֤עְתִּי בְּֽ/אַנְחָתִ֗/י אַשְׂחֶ֣ה בְ/כָל לַ֭יְלָה מִטָּתִ֑/י בְּ֝/דִמְעָתִ֗/י עַרְשִׂ֥/י אַמְסֶֽה׃",
+        "LXX": "ἐκοπίασα ἐν τῷ στεναγμῷ μου, λούσω καθ’ ἑκάστην νύκτα τὴν κλίνην μου, ἐν δάκρυσίν μου τὴν στρωμνήν μου βρέξω.",
+        "VUL": "Laboravi in gemitu meo ;/ lavabo per singulas noctes lectum meum :/ lacrimis meis stratum meum rigabo./",
+        "SYN": "Утомлен я воздыханиями моими: каждую ночь омываю ложе мое, слезами моими омочаю постель мою.",
+        "NEO": "Je suis épuisé à force de gémir ; chaque nuit ma couche est baignée de mes larmes, mon lit est arrosé de mes pleurs.",
+        "NAB": "I am wearied with sighing; all night long tears drench my bed; my couch is soaked with weeping.",
+        "VAT_ES": "Estoy agotado de tanto gemir:",
+        "CEI": "Sono stremato dai lungi lamenti, ogni notte inondo di pianto il mio giaciglio, irroro di lacrime il mio letto."
       }
     },
     "8": {
@@ -96,7 +144,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "עָֽשְׁשָׁ֣ה מִכַּ֣עַס עֵינִ֑י עָֽ֝תְקָ֗ה בְּכָל צוֹרְרָֽי׃"
+        "WLC": "עָֽשְׁשָׁ֣ה מִ/כַּ֣עַס עֵינִ֑/י עָֽ֝תְקָ֗ה בְּ/כָל צוֹרְרָֽ/י׃",
+        "LXX": "ἐταράχθη ἀπὸ θυμοῦ ὁ ὀφθαλμός μου, ἐπαλαιώθην ἐν πᾶσιν τοῖς ἐχθροῖς μου.",
+        "VUL": "Turbatus est a furore oculus meus ;/ inveteravi inter omnes inimicos meos./",
+        "SYN": "Иссохло от печали око мое, обветшало от всех врагов моих.",
+        "NEO": "mon œil est consumé par le chagrin ; il a vieilli à cause de tous ceux qui me persécutent.",
+        "NAB": "My eyes are dimmed with sorrow, worn out because of all my foes.",
+        "VAT_ES": "Mis ojos están extenuados por el pesar",
+        "CEI": "I miei occhi si consumano nel dolore, invecchio fra tanti miei oppressori."
       }
     },
     "9": {
@@ -107,7 +162,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "ס֣וּרוּ מִ֭מֶּנִּי כָּל פֹּ֣עֲלֵי אָ֑וֶן כִּֽי שָׁמַ֥ע יְ֝הוָ֗ה ק֣וֹל בִּכְיִֽי׃"
+        "WLC": "ס֣וּרוּ מִ֭מֶּ/נִּי כָּל פֹּ֣עֲלֵי אָ֑וֶן כִּֽי שָׁמַ֥ע יְ֝הוָ֗ה ק֣וֹל בִּכְיִֽ/י׃",
+        "LXX": "ἀπόστητε ἀπ’ ἐμοῦ πάντες οἱ ἐργαζόμενοι τὴν ἀνομίαν, ὅτι εἰσήκουσεν Κύριος τῆς φωνῆς τοῦ κλαυθμοῦ μου·",
+        "VUL": "Discedite a me omnes qui operamini iniquitatem,/ quoniam exaudivit Dominus vocem fletus mei./",
+        "SYN": "Удалитесь от меня все, делающие беззаконие, ибо услышал Господь голос плача моего,",
+        "NEO": "Eloignez-vous de moi, vous tous qui faites le mal ! Car \\+w Yahweh|strong=\"H3068\"\\+w** a entendu la voix de mes larmes.",
+        "NAB": "Away from me, all who do evil! The LORD has heard my weeping.",
+        "VAT_ES": "Apártense de mí todos los malvados,",
+        "CEI": "Via da me voi tutti che fate il male, il Signore ascolta la voce del mio pianto."
       }
     },
     "10": {
@@ -118,7 +180,14 @@
         "LXX": 10
       },
       "text": {
-        "WLC": "שָׁמַ֣ע יְ֭הוָה תְּחִנָּתִ֑י יְ֝הוָ֗ה תְּֽפִלָּתִ֥י יִקָּֽח׃"
+        "WLC": "שָׁמַ֣ע יְ֭הוָה תְּחִנָּתִ֑/י יְ֝הוָ֗ה תְּֽפִלָּתִ֥/י יִקָּֽח׃",
+        "LXX": "εἰσήκουσεν Κύριος τῆς δεήσεώς μου, Κύριος τὴν προσευχήν μου προσεδέξατο.",
+        "VUL": "Exaudivit Dominus deprecationem meam ;/ Dominus orationem meam suscepit./",
+        "SYN": "услышал Господь моление мое; Господь примет молитву мою.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** a entendu ma supplication, \\+w Yahweh|strong=\"H3068\"\\+w** accueille ma prière.",
+        "NAB": "The LORD has heard my prayer; the LORD takes up my plea.",
+        "VAT_ES": "El Señor ha escuchado mi súplica,",
+        "CEI": "Il Signore ascolta la mia supplica, il Signore accoglie la mia preghiera."
       }
     }
   }

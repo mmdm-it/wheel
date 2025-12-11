@@ -19,7 +19,13 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "מִזְמ֥וֹר לְדָוִ֑ד בְּ֝בָרְח֗וֹ מִפְּנֵ֤י אַבְשָׁל֬וֹם בְּנֽוֹ׃"
+        "WLC": "מִזְמ֥וֹר לְ/דָוִ֑ד בְּ֝/בָרְח֗/וֹ מִ/פְּנֵ֤י אַבְשָׁל֬וֹם בְּנֽ/וֹ׃",
+        "LXX": "ψαλμὸς τῷ Δαυείδ, ὁπότε ἀπεδίδρασκεν ἀπὸ προσώπου Ἀβεσσαλὼμ τοῦ υἱοῦ αὐτοῦ.",
+        "VUL": "Psalmus David, cum fugeret a facie Absalom filii sui.",
+        "SYN": "Псалом Давида, когда он бежал от Авессалома, сына своего.",
+        "NEO": "Chant de David. A l’occasion de sa fuite devant Absalon, son fils",
+        "NAB": "A psalm of David, when he fled from his son Absalom.",
+        "CEI": "Salmo di Davide quando fuggiva il figlio Assalonne."
       }
     },
     "2": {
@@ -30,7 +36,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "יְ֭הוָה מָֽה רַבּ֣וּ צָרָ֑י רַ֝בִּ֗ים קָמִ֥ים עָלָֽי׃"
+        "WLC": "יְ֭הוָה מָֽה רַבּ֣וּ צָרָ֑/י רַ֝בִּ֗ים קָמִ֥ים עָלָֽ/י׃",
+        "LXX": "Κύριε, τί ἐπληθύνθησαν οἱ θλίβοντές με; πολλοὶ ἐπανίστανται ἐπ’ ἐμέ·",
+        "VUL": "[Domine, quid multiplicati sunt qui tribulant me ?/ Multi insurgunt adversum me ;/",
+        "SYN": "Господи! как умножились враги мои! Многие восстают на меня",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, que mes ennemis sont nombreux ! Quelle multitude se lève contre moi !",
+        "NAB": "How many are my foes, LORD! How many rise against me!",
+        "VAT_ES": "Señor, &iexcl;qué numerosos son mis adversarios,",
+        "CEI": "Signore, quanti sono i miei oppressori! Molti contro di me insorgono."
       }
     },
     "3": {
@@ -41,7 +54,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "רַבִּים֮ אֹמְרִ֪ים לְנַ֫פְשִׁ֥י אֵ֤ין יְֽשׁוּעָ֓תָה לּ֬וֹ בֵֽאלֹהִ֬ים סֶֽלָה׃"
+        "WLC": "רַבִּים֮ אֹמְרִ֪ים לְ/נַ֫פְשִׁ֥/י אֵ֤ין יְֽשׁוּעָ֓תָ/ה לּ֬/וֹ בֵֽ/אלֹהִ֬ים סֶֽלָה׃",
+        "LXX": "πολλοὶ λέγουσιν τῇ ψυχῇ μου Οὐκ ἔστιν σωτηρία ἐν τῷ θεῷ αὐτοῦ. διάψαλμα.",
+        "VUL": "multi dicunt animæ meæ :/ Non est salus ipsi in Deo ejus./",
+        "SYN": "многие говорят душе моей: \"нет ему спасения в Боге\".",
+        "NEO": "Nombreux sont ceux qui disent à mon sujet : « Plus de salut pour lui auprès de Dieu ! » — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "How many say of me, \"God will not save that one.\" Selah",
+        "VAT_ES": "&iexcl;Cuántos son los que dicen de mí:",
+        "CEI": "Molti di me vanno dicendo: \"Neppure Dio lo salva!\"."
       }
     },
     "4": {
@@ -52,7 +72,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "וְאַתָּ֣ה יְ֭הוָה מָגֵ֣ן בַּעֲדִ֑י כְּ֝בוֹדִ֗י וּמֵרִ֥ים רֹאשִֽׁי׃"
+        "WLC": "וְ/אַתָּ֣ה יְ֭הוָה מָגֵ֣ן בַּעֲדִ֑/י כְּ֝בוֹדִ֗/י וּ/מֵרִ֥ים רֹאשִֽׁ/י׃",
+        "LXX": "σὺ δέ, Κύριε, ἀντιλήμπτωρ μου εἶ, δόξα μου καὶ ὑψῶν τὴν κεφαλήν μου.",
+        "VUL": "Tu autem Domine, susceptor meus es,/ gloria mea, et exaltans caput meum./",
+        "SYN": "Но Ты, Господи, щит предо мною, слава моя, и Ты возносишь голову мою.",
+        "NEO": "Mais toi, \\+w Yahweh|strong=\"H3068\"\\+w**, tu es mon bouclier ; tu es ma gloire, et tu relèves ma tête.",
+        "NAB": "But you, LORD, are a shield around me; my glory, you keep my head high.",
+        "VAT_ES": "Pero Tú eres mi escudo protector y mi gloria,",
+        "CEI": "Ma tu, Signore, sei mia difesa, tu sei mia gloria e sollevi il mio capo."
       }
     },
     "5": {
@@ -63,7 +90,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "ק֭וֹלִי אֶל יְהוָ֣ה אֶקְרָ֑א וַיַּֽעֲנֵ֨נִי מֵהַ֖ר קָדְשׁ֣וֹ סֶֽלָה׃"
+        "WLC": "ק֭וֹלִ/י אֶל יְהוָ֣ה אֶקְרָ֑א וַ/יַּֽעֲנֵ֨/נִי מֵ/הַ֖ר קָדְשׁ֣/וֹ סֶֽלָה׃",
+        "LXX": "φωνῇ μου πρὸς Κύριον ἐκέκραξα, καὶ ἐπήκουσέν μου ἐξ ὄρους ἁγίου αὐτοῦ. διάψαλμα.",
+        "VUL": "Voce mea ad Dominum clamavi ;/ et exaudivit me de monte sancto suo./",
+        "SYN": "Гласом моим взываю к Господу, и Он слышит меня со святой горы Своей.",
+        "NEO": "De ma voix je crie vers \\+w Yahweh|strong=\"H3068\"\\+w**, et il me répond de sa montagne sainte. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "Whenever I cried out to the LORD, I was answered from the holy mountain. Selah",
+        "VAT_ES": "Invoco al Señor en alta voz,",
+        "CEI": "Al Signore innalzo la mia voce e mi risponde dal suo monte santo."
       }
     },
     "6": {
@@ -74,7 +108,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "אֲנִ֥י שָׁכַ֗בְתִּי וָֽאִ֫ישָׁ֥נָה הֱקִיצ֑וֹתִי כִּ֖י יְהוָ֣ה יִסְמְכֵֽנִי׃"
+        "WLC": "אֲנִ֥י שָׁכַ֗בְתִּי וָֽ/אִ֫ישָׁ֥נָ/ה הֱקִיצ֑וֹתִי כִּ֖י יְהוָ֣ה יִסְמְכֵֽ/נִי׃",
+        "LXX": "ἐγὼ ἐκοιμήθην καὶ ὕπνωσα. ἐξηγέρθην, ὅτι Κύριος ἀντιλήμψεταί μου.",
+        "VUL": "Ego dormivi, et soporatus sum ;/ et exsurrexi, quia Dominus suscepit me./",
+        "SYN": "Ложусь я, сплю и встаю, ибо Господь защищает меня.",
+        "NEO": "Je me suis couché et me suis endormi ; je me suis réveillé, car \\+w Yahweh|strong=\"H3068\"\\+w** est mon soutien.",
+        "NAB": "Whenever I lay down and slept, the LORD preserved me to rise again.",
+        "VAT_ES": "Yo me acuesto y me duermo,",
+        "CEI": "Io mi corico e mi addormento, mi sveglio perché il Signore mi sostiene."
       }
     },
     "7": {
@@ -85,7 +126,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "לֹֽא אִ֭ירָא מֵרִבְב֥וֹת עָ֑ם אֲשֶׁ֥ר סָ֝בִ֗יב שָׁ֣תוּ עָלָֽי׃"
+        "WLC": "לֹֽא אִ֭ירָא מֵ/רִבְב֥וֹת עָ֑ם אֲשֶׁ֥ר סָ֝בִ֗יב שָׁ֣תוּ עָלָֽ/י׃",
+        "LXX": "οὐ φοβηθήσομαι ἀπὸ μυριάδων λαοῦ τῶν κύκλῳ ἐπιτιθεμένων μοι.",
+        "VUL": "Non timebo millia populi circumdantis me./ Exsurge, Domine ; salvum me fac, Deus meus./",
+        "SYN": "Не убоюсь тем народа, которые со всех сторон ополчились на меня.",
+        "NEO": "je ne crains pas devant le peuple innombrable, qui m’assiège de toutes parts.",
+        "NAB": "I do not fear, then, thousands of people arrayed against me on every side.",
+        "VAT_ES": "No temo a la multitud innumerable,",
+        "CEI": "Non temo la moltitudine di genti che contro di me si accampano."
       }
     },
     "8": {
@@ -96,7 +144,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "ק֘וּמָ֤ה יְהוָ֨ה הוֹשִׁ֘יעֵ֤נִי אֱלֹהַ֗י כִּֽי הִכִּ֣יתָ אֶת כָּל אֹיְבַ֣י לֶ֑חִי שִׁנֵּ֖י רְשָׁעִ֣ים שִׁבַּֽרְתָּ׃"
+        "WLC": "ק֘וּמָ֤/ה יְהוָ֨ה הוֹשִׁ֘יעֵ֤/נִי אֱלֹהַ֗/י כִּֽי הִכִּ֣יתָ אֶת כָּל אֹיְבַ֣/י לֶ֑חִי שִׁנֵּ֖י רְשָׁעִ֣ים שִׁבַּֽרְתָּ׃",
+        "LXX": "ἀνάστα, Κύριε, σῶσόν με ὁ θεός μου· ὅτι σὺ ἐπάταξας πάντας τοὺς ἐχθραίνοντάς μοι ματαίως, ὀδόντας ἁμαρτωλῶν συνέτριψας.",
+        "VUL": "Quoniam tu percussisti omnes adversantes mihi sine causa ;/ dentes peccatorum contrivisti./",
+        "SYN": "Восстань, Господи! спаси меня, Боже мой! ибо Ты поражаешь в ланиту всех врагов моих; сокрушаешь зубы нечестивых.",
+        "NEO": "Lève-toi, \\+w Yahweh|strong=\"H3068\"\\+w** ! Sauve-moi, mon Dieu ! Car tu frappes à la joue tous mes ennemis, tu brises les dents des méchants.",
+        "NAB": "Arise, LORD! Save me, my God! You will shatter the jaws of all my foes; you will break the teeth of the wicked.",
+        "VAT_ES": "&iexcl;Levántate, Señor! &iexcl;Sálvame, Dios mío!",
+        "CEI": "Sorgi, Signore, salvami, Dio mio. Hai colpito sulla guancia i miei nemici, hai spezzato i denti ai peccatori."
       }
     }
   }

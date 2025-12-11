@@ -19,7 +19,14 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "וַיַּ֥עַן אִיּ֗וֹב וַיֹּאמַֽר׃"
+        "WLC": "וַ/יַּ֥עַן אִיּ֗וֹב וַ/יֹּאמַֽר׃",
+        "LXX": "Ὑπολαβὼν δὲ Ἰὼβ λέγει",
+        "VUL": "Respondens autem Job, dixit :",
+        "SYN": "И отвечал Иов и сказал:",
+        "NEO": "Alors Job prit la parole et dit :",
+        "NAB": "Then Job answered and said:",
+        "VAT_ES": "Job respondió, diciendo:",
+        "CEI": "Giobbe allora rispose:"
       }
     },
     "2": {
@@ -30,7 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "עַד אָ֭נָה תּוֹגְי֣וּן נַפְשִׁ֑י וּֽתְדַכְּאוּנַ֥נִי בְמִלִּֽים׃"
+        "WLC": "עַד אָ֭נָה תּוֹגְי֣וּ/ן נַפְשִׁ֑/י וּֽ/תְדַכְּאוּ/נַ֥נִי בְ/מִלִּֽים׃",
+        "LXX": "Ἕως τίνος ἔγκοπον ποιήσετε ψυχήν μου, καὶ καθαιρεῖτε με λόγοις;",
+        "VUL": "[Usquequo affligitis animam meam,/ et atteritis me sermonibus ?/",
+        "SYN": "доколе будете мучить душу мою и терзать меня речами?",
+        "NEO": "Jusques à quand affligerez-vous mon âme, et m’accablerez-vous de vos discours ?",
+        "NAB": "How long will you vex my soul, grind me down with words?",
+        "VAT_ES": "&iquest;Hasta cuándo me va a afligir y me van a torturar con sus palabras?",
+        "CEI": "Fino a quando mi tormenterete e mi opprimerete con le vostre parole?"
       }
     },
     "3": {
@@ -41,7 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "זֶ֤ה עֶ֣שֶׂר פְּ֭עָמִים תַּכְלִימ֑וּנִי לֹֽא תֵ֝בֹ֗שׁוּ תַּהְכְּרוּ לִֽי׃"
+        "WLC": "זֶ֤ה עֶ֣שֶׂר פְּ֭עָמִים תַּכְלִימ֑וּ/נִי לֹֽא תֵ֝בֹ֗שׁוּ תַּהְכְּרוּ לִֽ/י׃",
+        "LXX": "γνῶτε μόνον ὅτι ὁ κύριος ἐποίησέ με οὕτως· καταλαλεῖτέ μου, οὐκ αἰσχυνόμενοί με ἐπίκεισθέ μοι.",
+        "VUL": "En decies confunditis me,/ et non erubescitis opprimentes me./",
+        "SYN": "Вот, уже раз десять вы срамили меня и не стыдитесь теснить меня.",
+        "NEO": "Voilà dix fois que vous m’insultez, que vous m’outragez sans pudeur.",
+        "NAB": "These ten times you have reviled me, have assailed me without shame!",
+        "VAT_ES": "Ya es la décima vez que me ultrajan, que me maltratan desvergonzadamente.",
+        "CEI": "Son dieci volte che mi insultate e mi maltrattate senza pudore."
       }
     },
     "4": {
@@ -52,7 +73,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "וְאַף אָמְנָ֥ם שָׁגִ֑יתִי אִ֝תִּ֗י תָּלִ֥ין מְשׁוּגָתִֽי׃"
+        "WLC": "וְ/אַף אָמְנָ֥ם שָׁגִ֑יתִי אִ֝תִּ֗/י תָּלִ֥ין מְשׁוּגָתִֽ/י׃",
+        "LXX": "ναὶ δὴ ἐπ’ ἀληθείας ἐγὼ ἐπλανήθην, παρ’ ἐμοὶ δὲ αὐλίζεται πλάνος, [1] λαλῆσαι ῥήματα ἃ οὐκ ἔδει, τὰ δὲ ῥήματά μου πλανᾶται καὶ οὐκ ἐπὶ καιροῦ.",
+        "VUL": "Nempe etsi ignoravi,/ mecum erit ignorantia mea./",
+        "SYN": "Если я и действительно погрешил, то погрешность моя при мне остается.",
+        "NEO": "Quand même j’aurais failli, c’est avec moi que demeure ma faute.",
+        "NAB": "Be it indeed that I am at fault and that my fault remains with me,",
+        "VAT_ES": "Aunque fuera verdad que cometí un error, mi error me concierne sólo a mí.",
+        "CEI": "È poi vero che io abbia mancato e che persista nel mio errore?"
       }
     },
     "5": {
@@ -63,7 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "אִם אָ֭מְנָם עָלַ֣י תַּגְדִּ֑ילוּ וְתוֹכִ֥יחוּ עָ֝לַ֗י חֶרְפָּתִּֽי׃"
+        "WLC": "אִם אָ֭מְנָם עָלַ֣/י תַּגְדִּ֑ילוּ וְ/תוֹכִ֥יחוּ עָ֝לַ֗/י חֶרְפָּתִּֽ/י׃",
+        "LXX": "ἔα δὲ ὅτι ἐπ’ ἐμοὶ μεγαλύνεσθε· ἐνάλλεσθε δέ μοι ὀνείδει.",
+        "VUL": "At vos contra me erigimini,/ et arguitis me opprobriis meis./",
+        "SYN": "Если же вы хотите повеличаться надо мною и упрекнуть меня позором моим,",
+        "NEO": "Mais vous, qui vous élevez contre moi, qui invoquez mon opprobre pour me convaincre,",
+        "NAB": "Even so, if you would vaunt yourselves against me and cast up to me any reproach,",
+        "VAT_ES": "Ustedes se envalentonan contra mí y me imputan mi ignominia:",
+        "CEI": "Non è forse vero che credete di vincere contro di me, rinfacciandomi la mia abiezione?"
       }
     },
     "6": {
@@ -74,7 +109,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "דְּֽעוּ אֵ֭פוֹ כִּי אֱל֣וֹהַּ עִוְּתָ֑נִי וּ֝מְצוּד֗וֹ עָלַ֥י הִקִּֽיף׃"
+        "WLC": "דְּֽעוּ אֵ֭פוֹ כִּי אֱל֣וֹהַּ עִוְּתָ֑/נִי וּ֝/מְצוּד֗/וֹ עָלַ֥/י הִקִּֽיף׃",
+        "LXX": "γνῶτε οὖν ὅτι ὁ κύριός ἐστιν ὁ ταράξας, ὀχύρωμα δὲ αὐτοῦ ἐπ’ ἐμὲ ὕψωσεν.",
+        "VUL": "Saltem nunc intelligite quia Deus non æquo judicio afflixerit me,/ et flagellis suis me cinxerit./",
+        "SYN": "то знайте, что Бог ниспроверг меня и обложил меня Своею сетью.",
+        "NEO": "sachez enfin que c’est Dieu qui m’opprime, et qui m’enveloppe de son filet.",
+        "NAB": "Know then that God has dealt unfairly with me, and compassed me round with his net.",
+        "VAT_ES": "pero sepan que es Dios el que me agravia y que él me ha envuelto en su red.",
+        "CEI": "Sappiate dunque che Dio mi ha piegato e mi ha avviluppato nella sua rete."
       }
     },
     "7": {
@@ -85,7 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "הֵ֤ן אֶצְעַ֣ק חָ֭מָס וְלֹ֣א אֵעָנֶ֑ה אֲ֝שַׁוַּ֗ע וְאֵ֣ין מִשְׁפָּֽט׃"
+        "WLC": "הֵ֤ן אֶצְעַ֣ק חָ֭מָס וְ/לֹ֣א אֵעָנֶ֑ה אֲ֝שַׁוַּ֗ע וְ/אֵ֣ין מִשְׁפָּֽט׃",
+        "LXX": "ἰδοὺ γελῶ ὀνείδει καὶ οὐ λαλήσω· κεκράξομαι, καὶ οὐδαμοῦ κρίμα.",
+        "VUL": "Ecce clamabo, vim patiens, et nemo audiet ;/ vociferabor, et non est qui judicet./",
+        "SYN": "Вот, я кричу: обида! и никто не слушает; вопию, и нет суда.",
+        "NEO": "Voici que je crie à la violence, et nul ne me répond ! J’en appelle, et pas de justice !",
+        "NAB": "If I cry out \"Injustice!\" I am not heard. I cry for help, but there is no redress.",
+        "VAT_ES": "Si grito: «&iexcl;Violencia!», no tengo respuesta; si pido auxilio, no se hace justicia.",
+        "CEI": "Ecco, grido contro la violenza, ma non ho risposta, chiedo aiuto, ma non c'è giustizia!"
       }
     },
     "8": {
@@ -96,7 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "אָרְחִ֣י גָ֭דַר וְלֹ֣א אֶעֱב֑וֹר וְעַ֥ל נְ֝תִיבוֹתַ֗י חֹ֣שֶׁךְ יָשִֽׂים׃"
+        "WLC": "אָרְחִ֣/י גָ֭דַר וְ/לֹ֣א אֶעֱב֑וֹר וְ/עַ֥ל נְ֝תִיבוֹתַ֗/י חֹ֣שֶׁךְ יָשִֽׂים׃",
+        "LXX": "κύκλῳ περιῳκοδόμημαι, καὶ οὐ μὴ διαβῶ, ἐπὶ πρόσωπόν μου σκότος ἔθετο.",
+        "VUL": "Semitam meam circumsepsit, et transire non possum :/ et in calle meo tenebras posuit./",
+        "SYN": "Он преградил мне дорогу, и не могу пройти, и на стези мои положил тьму.",
+        "NEO": "Il m’a barré le chemin, et je ne puis passer : il a répandu les ténèbres sur mes sentiers.",
+        "NAB": "He has barred my way and I cannot pass; he has veiled my path in darkness;",
+        "VAT_ES": "El cercó mi camino y no puedo pasar; cubrió de tinieblas mi sendero.",
+        "CEI": "Mi ha sbarrato la strada perché non passi e sul mio sentiero ha disteso le tenebre."
       }
     },
     "9": {
@@ -107,7 +163,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "כְּ֭בוֹדִי מֵעָלַ֣י הִפְשִׁ֑יט וַ֝יָּ֗סַר עֲטֶ֣רֶת רֹאשִֽׁי׃"
+        "WLC": "כְּ֭בוֹדִ/י מֵ/עָלַ֣/י הִפְשִׁ֑יט וַ֝/יָּ֗סַר עֲטֶ֣רֶת רֹאשִֽׁ/י׃",
+        "LXX": "τὴν δὲ δόξαν ἀπ’ ἐμοῦ ἐξέδυσεν, ἀφεῖλεν δὲ στέφανον ἀπὸ κεφαλῆς μου.",
+        "VUL": "Spoliavit me gloria mea,/ et abstulit coronam de capite meo./",
+        "SYN": "Совлек с меня славу мою и снял венец с головы моей.",
+        "NEO": "Il m’a dépouillé de ma gloire, il a enlevé la couronne de ma tête.",
+        "NAB": "He has stripped me of my glory, and taken the diadem from my brow.",
+        "VAT_ES": "Me ha despojado de mi honor y quitó la corona de mi cabeza.",
+        "CEI": "Mi ha spogliato della mia gloria e mi ha tolto dal capo la corona."
       }
     },
     "10": {
@@ -118,7 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "WLC": "יִתְּצֵ֣נִי סָ֭בִיב וָאֵלַ֑ךְ וַיַּסַּ֥ע כָּ֝עֵ֗ץ תִּקְוָתִֽי׃"
+        "WLC": "יִתְּצֵ֣/נִי סָ֭בִיב וָ/אֵלַ֑ךְ וַ/יַּסַּ֥ע כָּ֝/עֵ֗ץ תִּקְוָתִֽ/י׃",
+        "LXX": "διέσπασέν με κύκλῳ καὶ ᾠχόμην, ἐξέκοψεν δὲ ὥσπερ δένδρον τὴν ἐλπίδα μου.",
+        "VUL": "Destruxit me undique, et pereo :/ et quasi evulsæ arbori abstulit spem meam./",
+        "SYN": "Кругом разорил меня, и я отхожу; и, как дерево, Он исторг надежду мою.",
+        "NEO": "Il m’a sapé tout à l’entour, et je tombe ; il a déraciné, comme un arbre, mon espérance.",
+        "NAB": "He breaks me down on every side, and I am gone; my hope he has uprooted like a tree.",
+        "VAT_ES": "Me demolió por completo, y ya me voy; arrancó, como un árbol, mi esperanza.",
+        "CEI": "Mi ha disfatto da ogni parte e io sparisco, mi ha strappato, come un albero, la speranza."
       }
     },
     "11": {
@@ -129,7 +199,14 @@
         "LXX": 11
       },
       "text": {
-        "WLC": "וַיַּ֣חַר עָלַ֣י אַפּ֑וֹ וַיַּחְשְׁבֵ֖נִי ל֣וֹ כְצָרָֽיו׃"
+        "WLC": "וַ/יַּ֣חַר עָלַ֣/י אַפּ֑/וֹ וַ/יַּחְשְׁבֵ֖/נִי ל֣/וֹ כְ/צָרָֽי/ו׃",
+        "LXX": "δεινῶς δέ μοι ὀργῇ ἐχρήσατο, ἡγήσατο δέ με ὥσπερ ἐχθρόν.",
+        "VUL": "Iratus est contra me furor ejus,/ et sic me habuit quasi hostem suum./",
+        "SYN": "Воспылал на меня гневом Своим и считает меня между врагами Своими.",
+        "NEO": "Sa colère s’est allumée contre moi ; il m’a traité comme ses ennemis.",
+        "NAB": "His wrath he has kindled against me; he counts me among his enemies.",
+        "VAT_ES": "Encendió su indignación contra mí y me trató como a su enemigo.",
+        "CEI": "Ha acceso contro di me la sua ira e mi considera come suo nemico."
       }
     },
     "12": {
@@ -140,7 +217,14 @@
         "LXX": 12
       },
       "text": {
-        "WLC": "יַ֤חַד יָ֘בֹ֤אוּ גְדוּדָ֗יו וַיָּסֹ֣לּוּ עָלַ֣י דַּרְכָּ֑ם וַיַּחֲנ֖וּ סָבִ֣יב לְאָהֳלִֽי׃"
+        "WLC": "יַ֤חַד יָ֘בֹ֤אוּ גְדוּדָ֗י/ו וַ/יָּסֹ֣לּוּ עָלַ֣/י דַּרְכָּ֑/ם וַ/יַּחֲנ֖וּ סָבִ֣יב לְ/אָהֳלִֽ/י׃",
+        "LXX": "ὁμοθυμαδὸν δὲ ἦλθον τὰ πειρατήρια αὐτοῦ ἐπ’ ἐμοί, ταῖς ὁδοῖς μου ἐκύκλωσαν ἐνκάθετοι.",
+        "VUL": "Simul venerunt latrones ejus,/ et fecerunt sibi viam per me,/ et obsederunt in gyro tabernaculum meum./",
+        "SYN": "Полки Его пришли вместе и направили путь свой ко мне и расположились вокруг шатра моего.",
+        "NEO": "Ses bataillons sont venus ensemble, ils se sont frayés un chemin jusqu’à moi, ils font le siège de ma tente.",
+        "NAB": "His troops advance as one man; they build up their road to attack me, and they encamp around my tent.",
+        "VAT_ES": "Sus escuadrones llegaron en tropel, se abrieron camino hasta mí y acamparon alrededor de mi carpa.",
+        "CEI": "Insieme sono accorse le sue schiere e si sono spianata la strada contro di me; hanno posto l'assedio intorno alla mia tenda."
       }
     },
     "13": {
@@ -151,7 +235,14 @@
         "LXX": 13
       },
       "text": {
-        "WLC": "אַ֭חַי מֵעָלַ֣י הִרְחִ֑יק וְ֝יֹדְעַ֗י אַךְ זָ֥רוּ מִמֶּֽנִּי׃"
+        "WLC": "אַ֭חַ/י מֵ/עָלַ֣/י הִרְחִ֑יק וְ֝/יֹדְעַ֗/י אַךְ זָ֥רוּ מִמֶּֽ/נִּי׃",
+        "LXX": "ἀπ’ ἐμοῦ ἀδελφοί μου ἀπέστησαν, ἔγνωσαν ἀλλοτρίους ἢ ἐμέ· φίλοι δέ μου ἀνελεήμονες γεγόνασιν.",
+        "VUL": "Fratres meos longe fecit a me,/ et noti mei quasi alieni recesserunt a me./",
+        "SYN": "Братьев моих Он удалил от меня, и знающие меня чуждаются меня.",
+        "NEO": "Il a éloigné de moi mes frères ; mes amis se sont détournés de moi.",
+        "NAB": "My brethren have withdrawn from me, and my friends are wholly estranged.",
+        "VAT_ES": "Mis hermanos se alejaron de mí y soy un extraño para mis amigos.",
+        "CEI": "I miei fratelli si sono allontanati da me, persino gli amici mi si sono fatti stranieri."
       }
     },
     "14": {
@@ -162,7 +253,14 @@
         "LXX": 14
       },
       "text": {
-        "WLC": "חָדְל֥וּ קְרוֹבָ֑י וּֽמְיֻדָּעַ֥י שְׁכֵחֽוּנִי׃"
+        "WLC": "חָדְל֥וּ קְרוֹבָ֑/י וּֽ/מְיֻדָּעַ֥/י שְׁכֵחֽוּ/נִי׃",
+        "LXX": "οὐ προσεποιήσαντό με οἱ ἐγγύτατοί μου, καὶ οἱ εἰδότες μου τὸ ὄνομα ἐπελάθοντό μου.",
+        "VUL": "Dereliquerunt me propinqui mei,/ et qui me noverant obliti sunt mei./",
+        "SYN": "Покинули меня близкие мои, и знакомые мои забыли меня.",
+        "NEO": "Mes proches m’ont abandonné, mes intimes m’ont oublié.",
+        "NAB": "My kinsfolk and companions neglect me, and my guests have forgotten me.",
+        "VAT_ES": "Desaparecieron mis allegados y familiares, me olvidaron",
+        "CEI": "Scomparsi sono vicini e conoscenti, mi hanno dimenticato gli ospiti di casa;"
       }
     },
     "15": {
@@ -173,7 +271,14 @@
         "LXX": 15
       },
       "text": {
-        "WLC": "גָּ֘רֵ֤י בֵיתִ֣י וְ֭אַמְהֹתַי לְזָ֣ר תַּחְשְׁבֻ֑נִי נָ֝כְרִ֗י הָיִ֥יתִי בְעֵינֵיהֶֽם׃"
+        "WLC": "גָּ֘רֵ֤י בֵיתִ֣/י וְ֭/אַמְהֹתַ/י לְ/זָ֣ר תַּחְשְׁבֻ֑/נִי נָ֝כְרִ֗י הָיִ֥יתִי בְ/עֵינֵי/הֶֽם׃",
+        "LXX": "γείτονες οἰκίας θεράπαιναί τε μου, ἀλλογενὴς ἤμην ἐναντίον αὐτῶν.",
+        "VUL": "Inquilini domus meæ et ancillæ meæ sicut alienum habuerunt me,/ et quasi peregrinus fui in oculis eorum./",
+        "SYN": "Пришлые в доме моем и служанки мои чужим считают меня; посторонним стал я в глазах их.",
+        "NEO": "Les hôtes de ma maison et mes servantes me traitent comme un étranger ; je suis un inconnu à leurs yeux.",
+        "NAB": "Even my handmaids treat me as a stranger; I am an alien in their sight.",
+        "VAT_ES": "los huéspedes de mi casa. Mis servidoras me consideran un extraño, me he convertido en un intruso para ellas.",
+        "CEI": "da estraneo mi trattano le mie ancelle, un forestiero sono ai loro occhi."
       }
     },
     "16": {
@@ -184,7 +289,14 @@
         "LXX": 16
       },
       "text": {
-        "WLC": "לְעַבְדִּ֣י קָ֭רָאתִי וְלֹ֣א יַעֲנֶ֑ה בְּמוֹ פִ֝֗י אֶתְחַנֶּן לֽוֹ׃"
+        "WLC": "לְ/עַבְדִּ֣/י קָ֭רָאתִי וְ/לֹ֣א יַעֲנֶ֑ה בְּמוֹ פִ֝֗/י אֶתְחַנֶּן לֽ/וֹ׃",
+        "LXX": "θεράποντά μου ἐκάλεσα, καὶ οὐχ ὑπήκουσεν· στόμα δέ μου ἐδέετο,",
+        "VUL": "Servum meum vocavi, et non respondit :/ ore proprio deprecabar illum./",
+        "SYN": "Зову слугу моего, и он не откликается; устами моими я должен умолять его.",
+        "NEO": "J’appelle mon serviteur, et il ne me répond pas ; je suis réduit à le supplier de ma bouche.",
+        "NAB": "I call my servant, but he gives no answer, though in my speech I plead with him.",
+        "VAT_ES": "Llamo a mi servidor, y no responde, aunque se lo pida por favor.",
+        "CEI": "Chiamo il mio servo ed egli non risponde, devo supplicarlo con la mia bocca."
       }
     },
     "17": {
@@ -195,7 +307,14 @@
         "LXX": 17
       },
       "text": {
-        "WLC": "ר֭וּחִֽי זָ֣רָה לְאִשְׁתִּ֑י וְ֝חַנֹּתִ֗י לִבְנֵ֥י בִטְנִֽי׃"
+        "WLC": "ר֭וּחִֽ/י זָ֣רָה לְ/אִשְׁתִּ֑/י וְ֝/חַנֹּתִ֗י לִ/בְנֵ֥י בִטְנִֽ/י׃",
+        "LXX": "καὶ ἱκέτευον τὴν γυναῖκά μου, προσεκαλούμην δὲ κολακεύων υἱοὺς παλλακίδων μου·",
+        "VUL": "Halitum meum exhorruit uxor mea,/ et orabam filios uteri mei./",
+        "SYN": "Дыхание мое опротивело жене моей, и я должен умолять ее ради детей чрева моего.",
+        "NEO": "Ma femme a horreur de mon haleine, je demande grâce aux fils de mon sein.",
+        "NAB": "My breath is abhorred by my wife; I am loathsome to the men of my family.",
+        "VAT_ES": "Mi mujer siente asco de mi aliento, soy repugnante para los hijos de mis entrañas.",
+        "CEI": "Il mio fiato è ripugnante per mia moglie e faccio schifo ai figli di mia madre."
       }
     },
     "18": {
@@ -206,7 +325,14 @@
         "LXX": 18
       },
       "text": {
-        "WLC": "גַּם עֲ֭וִילִים מָ֣אֲסוּ בִ֑י אָ֝ק֗וּמָה וַיְדַבְּרוּ בִֽי׃"
+        "WLC": "גַּם עֲ֭וִילִים מָ֣אֲסוּ בִ֑/י אָ֝ק֗וּמָה וַ/יְדַבְּרוּ בִֽ/י׃",
+        "LXX": "οἱ δὲ εἰς τὸν αἰῶνα ἀπεποιήσαντό με· ὅταν ἀναστῶ, κατ’ ἐμοῦ λαλοῦσιν.",
+        "VUL": "Stulti quoque despiciebant me :/ et cum ab eis recessissem, detrahebant mihi./",
+        "SYN": "Даже малые дети презирают меня: поднимаюсь, и они издеваются надо мною.",
+        "NEO": "Les enfants eux-mêmes me méprisent ; si je me lève, ils me raillent.",
+        "NAB": "The young children, too, despise me; when I appear, they speak against me.",
+        "VAT_ES": "Hasta los niños pequeños me desprecian: cuando me levanto, se burlan de mí.",
+        "CEI": "Anche i monelli hanno ribrezzo di me: se tento d'alzarmi, mi danno la baia."
       }
     },
     "19": {
@@ -217,7 +343,14 @@
         "LXX": 19
       },
       "text": {
-        "WLC": "תִּֽ֭עֲבוּנִי כָּל מְתֵ֣י סוֹדִ֑י וְזֶֽה אָ֝הַ֗בְתִּי נֶהְפְּכוּ בִֽי׃"
+        "WLC": "תִּֽ֭עֲבוּ/נִי כָּל מְתֵ֣י סוֹדִ֑/י וְ/זֶֽה אָ֝הַ֗בְתִּי נֶהְפְּכוּ בִֽ/י׃",
+        "LXX": "ἐβδελύξαντό με οἱ ἰδόντες με· οὓς δὴ ἠγαπήκειν, ἐπανέστησάν μοι.",
+        "VUL": "Abominati sunt me quondam consiliarii mei,/ et quem maxime diligebam, aversatus est me./",
+        "SYN": "Гнушаются мною все наперсники мои, и те, которых я любил, обратились против меня.",
+        "NEO": "Tous ceux qui étaient mes confidents m’ont en horreur, ceux que j’aimais se tournent contre moi.",
+        "NAB": "All my intimate friends hold me in horror; those whom I loved have turned against me!",
+        "VAT_ES": "Mis amigos íntimos me abominan, los que yo amaba se vuelven contra mí.",
+        "CEI": "Mi hanno in orrore tutti i miei confidenti: quelli che amavo si rivoltano contro di me."
       }
     },
     "20": {
@@ -228,7 +361,14 @@
         "LXX": 20
       },
       "text": {
-        "WLC": "בְּעוֹרִ֣י וּ֭בִבְשָׂרִי דָּבְקָ֣ה עַצְמִ֑י וָ֝אֶתְמַלְּטָ֗ה בְּע֣וֹר שִׁנָּֽי׃"
+        "WLC": "בְּ/עוֹרִ֣/י וּ֭/בִ/בְשָׂרִ/י דָּבְקָ֣ה עַצְמִ֑/י וָ֝/אֶתְמַלְּטָ֗/ה בְּ/ע֣וֹר שִׁנָּֽ/י׃",
+        "LXX": "ἐν δέρματί μου ἐσάπησαν αἱ σάρκες μου, τὰ δὲ ὀστᾶ μου ἐν ὀδοῦσιν ἔχεται.",
+        "VUL": "Pelli meæ, consumptis carnibus, adhæsit os meum,/ et derelicta sunt tantummodo labia circa dentes meos./",
+        "SYN": "Кости мои прилипли к коже моей и плоти моей, и я остался только с кожею около зубов моих.",
+        "NEO": "Mes os sont attachés à ma peau et à ma chair, je me suis échappé avec la peau de mes dents.",
+        "NAB": "My bones cleave to my skin, and I have escaped with my flesh between my teeth.",
+        "VAT_ES": "Los huesos se me pegan a la piel y se me desprenden los dientes de las envías.",
+        "CEI": "Alla pelle si attaccano le mie ossa e non è salva che la pelle dei miei denti."
       }
     },
     "21": {
@@ -239,7 +379,14 @@
         "LXX": 21
       },
       "text": {
-        "WLC": "חָנֻּ֬נִי חָנֻּ֣נִי אַתֶּ֣ם רֵעָ֑י כִּ֥י יַד אֱ֝ל֗וֹהַּ נָ֣גְעָה בִּֽי׃"
+        "WLC": "חָנֻּ֬/נִי חָנֻּ֣/נִי אַתֶּ֣ם רֵעָ֑/י כִּ֥י יַד אֱ֝ל֗וֹהַּ נָ֣גְעָה בִּֽ/י׃",
+        "LXX": "ἐλεήσατέ με, ἐλεήσατέ με, ὦ φίλοι· χεὶρ γὰρ Κυρίου ἡ ἁψαμένη μού ἐστιν.",
+        "VUL": "Miseremini mei, miseremini mei saltem vos, amici mei,/ quia manus Domini tetigit me./",
+        "SYN": "Помилуйте меня, помилуйте меня вы, друзья мои, ибо рука Божия коснулась меня.",
+        "NEO": "Ayez pitié, ayez pitié de moi, vous du moins, mes amis, car la main de Dieu m’a frappé !",
+        "NAB": "Pity me, pity me, O you my friends, for the hand of God has struck me!",
+        "VAT_ES": "&iexcl;Apiádense, apiádense de mí, amigos míos, porque me ha herido la mano de Dios!",
+        "CEI": "Pietà, pietà di me, almeno voi miei amici, perché la mano di Dio mi ha percosso!"
       }
     },
     "22": {
@@ -250,7 +397,14 @@
         "LXX": 22
       },
       "text": {
-        "WLC": "לָ֭מָּה תִּרְדְּפֻ֣נִי כְמוֹ אֵ֑ל וּ֝מִבְּשָׂרִ֗י לֹ֣א תִשְׂבָּֽעוּ׃"
+        "WLC": "לָ֭/מָּה תִּרְדְּפֻ֣/נִי כְמוֹ אֵ֑ל וּ֝/מִ/בְּשָׂרִ֗/י לֹ֣א תִשְׂבָּֽעוּ׃",
+        "LXX": "διὰ τί με διώκετε ὥσπερ καὶ ὁ κύριος, ἀπὸ δὲ σαρκῶν μου οὐκ ἐμπίπλασθε;",
+        "VUL": "Quare persequimini me sicut Deus,/ et carnibus meis saturamini ?/",
+        "SYN": "Зачем и вы преследуете меня, как Бог, и плотью моею не можете насытиться?",
+        "NEO": "Pourquoi me poursuivez-vous, comme Dieu me poursuit ? Pourquoi êtes-vous insatiables de ma chair ?",
+        "NAB": "Why do you hound me as though you were divine, and insatiably prey upon me?",
+        "VAT_ES": "&iquest;Por qué ustedes me persiguen como Dios y no terminan de saciarse con mi carne?",
+        "CEI": "Perché vi accanite contro di me, come Dio, e non siete mai sazi della mia carne?"
       }
     },
     "23": {
@@ -261,7 +415,14 @@
         "LXX": 23
       },
       "text": {
-        "WLC": "מִֽי יִתֵּ֣ן אֵ֭פוֹ וְיִכָּתְב֣וּן מִלָּ֑י מִֽי יִתֵּ֖ן בַּסֵּ֣פֶר וְיֻחָֽקוּ׃"
+        "WLC": "מִֽי יִתֵּ֣ן אֵ֭פוֹ וְ/יִכָּתְב֣וּ/ן מִלָּ֑/י מִֽי יִתֵּ֖ן בַּ/סֵּ֣פֶר וְ/יֻחָֽקוּ׃",
+        "LXX": "τίς γὰρ ἂν δῴη γραφῆναι τὰ ῥήματά μου, τεθῆναι δὲ αὐτὰ ἐν βιβλίῳ εἰς τὸν αἰῶνα,",
+        "VUL": "Quis mihi tribuat ut scribantur sermones mei ?/ quis mihi det ut exarentur in libro/",
+        "SYN": "О, если бы записаны были слова мои! Если бы начертаны были они в книге",
+        "NEO": "Oh ! Qui me donnera que mes paroles soient écrites ! Qui me donnera qu’elles soient consignées dans un livre,",
+        "NAB": "Oh, would that my words were written down! Would that they were inscribed in a record:",
+        "VAT_ES": "&iexcl;Ah, si se escribieran mis palabras y se las grabara en el bronce;",
+        "CEI": "Oh, se le mie parole si scrivessero, se si fissassero in un libro,"
       }
     },
     "24": {
@@ -272,7 +433,14 @@
         "LXX": 24
       },
       "text": {
-        "WLC": "בְּעֵט בַּרְזֶ֥ל וְעֹפָ֑רֶת לָ֝עַ֗ד בַּצּ֥וּר יֵחָצְבֽוּן׃"
+        "WLC": "בְּ/עֵט בַּרְזֶ֥ל וְ/עֹפָ֑רֶת לָ֝/עַ֗ד בַּ/צּ֥וּר יֵחָצְבֽוּ/ן׃",
+        "LXX": "ἐν γραφίῳ σιδηρῷ καὶ μολίβῳ;",
+        "VUL": "stylo ferreo et plumbi lamina,/ vel celte sculpantur in silice ?/",
+        "SYN": "резцом железным с оловом, -- на вечное время на камне вырезаны были!",
+        "NEO": "qu’avec un burin de fer et du plomb, elles soient pour toujours gravées dans le roc !",
+        "NAB": "That with an iron chisel and with lead they were cut in the rock forever!",
+        "VAT_ES": "si con un punzón de hierro y plomo fueran esculpidas en la roca para siempre!",
+        "CEI": "fossero impresse con stilo di ferro sul piombo, per sempre s'incidessero sulla roccia!"
       }
     },
     "25": {
@@ -283,7 +451,14 @@
         "LXX": 25
       },
       "text": {
-        "WLC": "וַאֲנִ֣י יָ֭דַעְתִּי גֹּ֣אֲלִי חָ֑י וְ֝אַחֲר֗וֹן עַל עָפָ֥ר יָקֽוּם׃"
+        "WLC": "וַ/אֲנִ֣י יָ֭דַעְתִּי גֹּ֣אֲלִ/י חָ֑י וְ֝/אַחֲר֗וֹן עַל עָפָ֥ר יָקֽוּם׃",
+        "LXX": "οἶδα γὰρ ὅτι ἀέναός ἐστιν ὁ ἐκλύειν με μέλλων· ἐπὶ γῆς",
+        "VUL": "Scio enim quod redemptor meus vivit,/ et in novissimo die de terra surrecturus sum :/",
+        "SYN": "А я знаю, Искупитель мой жив, и Он в последний день восставит из праха распадающуюся кожу мою сию,",
+        "NEO": "Je sais que mon vengeur est vivant, et qu’il se lèvera le dernier sur la poussière.",
+        "NAB": "But as for me, I know that my Vindicator lives, and that he will at last stand forth upon the dust;",
+        "VAT_ES": "Porque yo sé que mi Redentor vive y que él, el último, se alzará sobre el polvo",
+        "CEI": "Io lo so che il mio Vendicatore è vivo e che, ultimo, si ergerà sulla polvere!"
       }
     },
     "26": {
@@ -294,7 +469,14 @@
         "LXX": 26
       },
       "text": {
-        "WLC": "וְאַחַ֣ר ע֭וֹרִֽי נִקְּפוּ זֹ֑את וּ֝מִבְּשָׂרִ֗י אֶֽחֱזֶ֥ה אֱלֽוֹהַּ׃"
+        "WLC": "וְ/אַחַ֣ר ע֭וֹרִֽ/י נִקְּפוּ זֹ֑את וּ֝/מִ/בְּשָׂרִ֗/י אֶֽחֱזֶ֥ה אֱלֽוֹהַּ׃",
+        "LXX": "ἀναστήσαι τὸ δέρμα μου τὸ ἀναντλοῦν ταῦτα. παρὰ γὰρ Κυρίου ταῦτά μοι συνετελέσθη,",
+        "VUL": "et rursum circumdabor pelle mea,/ et in carne mea videbo Deum meum :/",
+        "SYN": "и я во плоти моей узрю Бога.",
+        "NEO": "Alors de ce squelette, revêtu de sa peau, de ma chair je verrai Dieu.",
+        "NAB": "And from my flesh I shall see God; my inmost being is consumed with longing.",
+        "VAT_ES": "Y después que me arranquen esta piel, yo, con mi propia carne, veré a Dios.",
+        "CEI": "Dopo che questa mia pelle sarà distrutta, senza la mia carne, vedrò Dio."
       }
     },
     "27": {
@@ -305,7 +487,14 @@
         "LXX": 27
       },
       "text": {
-        "WLC": "אֲשֶׁ֤ר אֲנִ֨י אֶֽחֱזֶה לִּ֗י וְעֵינַ֣י רָא֣וּ וְלֹא זָ֑ר כָּל֖וּ כִלְיֹתַ֣י בְּחֵקִֽי׃"
+        "WLC": "אֲשֶׁ֤ר אֲנִ֨י אֶֽחֱזֶה לִּ֗/י וְ/עֵינַ֣/י רָא֣וּ וְ/לֹא זָ֑ר כָּל֖וּ כִלְיֹתַ֣/י בְּ/חֵקִֽ/י׃",
+        "LXX": "ἃ ἐγὼ ἐμαυτῷ συνεπίσταμαι, ⸂⸆⸃ ἃ ὁ ὀφθαλμός μου ἑόρακεν καὶ οὐκ ἄλλος· πάντα δέ μοι συντετέλεσται ἐν κόλπῳ.",
+        "VUL": "quem visurus sum ego ipse,/ et oculi mei conspecturi sunt, et non alius :/ reposita est hæc spes mea in sinu meo./",
+        "SYN": "Я узрю Его сам; мои глаза, не глаза другого, увидят Его. Истаевает сердце мое в груди моей!",
+        "NEO": "Moi-même je le verrai ; mes yeux le verront, et non un autre ; mes reins se consument d’attente au-dedans de moi.",
+        "NAB": "Whom I myself shall see: my own eyes, not another's, shall behold him,",
+        "VAT_ES": "Sí, yo mismo lo veré, lo contemplarán mis ojos, no los de un extraño. &iexcl;Mi corazón se deshace en mi pecho!",
+        "CEI": "Io lo vedrò, io stesso, e i miei occhi lo contempleranno non da straniero. Le mie viscere si consumano dentro di me."
       }
     },
     "28": {
@@ -316,7 +505,14 @@
         "LXX": 28
       },
       "text": {
-        "WLC": "כִּ֣י תֹ֭אמְרוּ מַה נִּרְדָּף ל֑וֹ וְשֹׁ֥רֶשׁ דָּ֝בָ֗ר נִמְצָא בִֽי׃"
+        "WLC": "כִּ֣י תֹ֭אמְרוּ מַה נִּרְדָּף ל֑/וֹ וְ/שֹׁ֥רֶשׁ דָּ֝בָ֗ר נִמְצָא בִֽ/י׃",
+        "LXX": "εἰ δὲ καὶ ἐρεῖτε Τί ἐροῦμεν ἔναντι αὐτοῦ; καὶ ῥίζαν λόγου εὑρήσομεν ἐν αὐτῷ·",
+        "VUL": "Quare ergo nunc dicitis : Persequamur eum,/ et radicem verbi inveniamus contra eum ?/",
+        "SYN": "Вам надлежало бы сказать: зачем мы преследуем его? Как будто корень зла найден во мне.",
+        "NEO": "Vous direz alors : « Pourquoi le poursuivions-nous ? » et la justice de ma cause sera reconnue.",
+        "NAB": "But you who say, \"How shall we persecute him, seeing that the root of the matter is found in him?\"",
+        "VAT_ES": "Si ustedes dicen: «&iquest;Cómo lo perseguiremos y qué pretexto encontraremos para procesarlo?»,",
+        "CEI": "Poiché dite: \"Come lo perseguitiamo noi, se la radice del suo danno è in lui?\","
       }
     },
     "29": {
@@ -327,7 +523,14 @@
         "LXX": 29
       },
       "text": {
-        "WLC": "גּ֤וּרוּ לָכֶ֨ם מִפְּנֵי חֶ֗רֶב כִּֽי חֵ֭מָה עֲוֺנ֣וֹת חָ֑רֶב לְמַ֖עַן תֵּדְע֣וּן שדין שַׁדּֽוּן׃"
+        "WLC": "גּ֤וּרוּ לָ/כֶ֨ם מִ/פְּנֵי חֶ֗רֶב כִּֽי חֵ֭מָה עֲוֺנ֣וֹת חָ֑רֶב לְמַ֖עַן תֵּדְע֣וּ/ן ש/דין שַׁ/דּֽוּן׃",
+        "LXX": "εὐλαβήθητε δὴ καὶ ὑμεῖς ἀπὸ ἐπικαλύμματος· θυμὸς γὰρ ἐπ’ ἀνόμους ἐπελεύσεται, καὶ τότε γνώσονται ποῦ ἔστιν αὐτῶν ἡ ὕλη.",
+        "VUL": "Fugite ergo a facie gladii,/ quoniam ultor iniquitatum gladius est :/ et scitote esse judicium.]",
+        "SYN": "Убойтесь меча, ибо меч есть отмститель неправды, и знайте, что есть суд.",
+        "NEO": "Ce jour-là, craignez pour vous le glaive : terribles sont les vengeances du glaive ! Et vous saurez qu’il y a une justice.",
+        "NAB": "Be afraid of the sword for yourselves, for these crimes deserve the sword; that you may know that there is a judgment.",
+        "VAT_ES": "teman que la espada los hiera a ustedes mismos, porque esas son culpas dignas de la espada: y entonces sabrán que hay un juez.",
+        "CEI": "temete per voi la spada, poiché punitrice d'iniquità è la spada, affinché sappiate che c'è un giudice."
       }
     }
   }

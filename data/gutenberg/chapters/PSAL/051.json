@@ -19,7 +19,13 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "לַמְנַצֵּ֗חַ מִזְמ֥וֹר לְדָוִֽד׃"
+        "WLC": "לַ/מְנַצֵּ֗חַ מִזְמ֥וֹר לְ/דָוִֽד׃",
+        "LXX": "Εἰς τὸ τέλος· συνέσεως τῷ Δαυείδ,",
+        "VUL": "In finem. Intellectus David,",
+        "SYN": "Начальнику хора. Учение Давида,",
+        "NEO": "Au maître de chant. Psaume de David.",
+        "NAB": "For the leader. A psalm of David,",
+        "CEI": "Al maestro del coro. Salmo. Di Davide."
       }
     },
     "2": {
@@ -30,7 +36,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "בְּֽבוֹא אֵ֭לָיו נָתָ֣ן הַנָּבִ֑יא כַּֽאֲשֶׁר בָּ֝֗א אֶל בַּת שָֽׁבַע׃"
+        "WLC": "בְּֽ/בוֹא אֵ֭לָי/ו נָתָ֣ן הַ/נָּבִ֑יא כַּֽ/אֲשֶׁר בָּ֝֗א אֶל בַּת שָֽׁבַע׃",
+        "LXX": "ἐν τῷ ἐλθεῖν Δωὴκ τὸν Ἰδουμαῖον καὶ ἀναγγεῖλαι τῷ Σαοὺλ καὶ εἰπεῖν αὐτῷ Ἦλθεν Δαυεὶδ εἰς τὸν οἶκον Ἀβιμέλεχ·",
+        "VUL": "cum venit Doëg Idumæus, et nuntiavit Sauli : Venit David in domum Achimelech.",
+        "SYN": "после того, как приходил Доик Идумеянин и донес Саулу и сказал ему, что Давид пришел в дом Ахимелеха.",
+        "NEO": "Lorsque Nathan le prophète vint le trouver, après qu’il fut allé vers Bethsabée.",
+        "NAB": "when Nathan the prophet came to him after his affair with Bathsheba.",
+        "VAT_ES": "Cuando el profeta Natán lo visitó, después que aquel se había unido a Betsabé.",
+        "CEI": "Quando venne da lui il profeta Natan dopo che aveva peccato con Betsabea."
       }
     },
     "3": {
@@ -41,7 +54,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "חָנֵּ֣נִי אֱלֹהִ֣ים כְּחַסְדֶּ֑ךָ כְּרֹ֥ב רַ֝חֲמֶ֗יךָ מְחֵ֣ה פְשָׁעָֽי׃"
+        "WLC": "חָנֵּ֣/נִי אֱלֹהִ֣ים כְּ/חַסְדֶּ֑/ךָ כְּ/רֹ֥ב רַ֝חֲמֶ֗י/ךָ מְחֵ֣ה פְשָׁעָֽ/י׃",
+        "LXX": "Τί ἐνκαυχᾷ ἐν κακίᾳ, ὁ δυνατός, ἀνομίαν ὅλην τὴν ἡμέραν;",
+        "VUL": "[Quid gloriaris in malitia,/ qui potens es in iniquitate ?/",
+        "SYN": "Что хвалишься злодейством, сильный? милость Божия всегда _со мною;_",
+        "NEO": "Aie pitié de moi, ô Dieu, selon ta bonté ; selon ta grande miséricorde efface mes transgressions.",
+        "NAB": "Have mercy on me, God, in your goodness; in your abundant compassion blot out my offense.",
+        "VAT_ES": "&iexcl;Ten piedad de mí, oh Dios, por tu bondad,",
+        "CEI": "Pietà di me, o Dio, secondo la tua misericordia; nella tua grande bontà cancella il mio peccato."
       }
     },
     "4": {
@@ -52,7 +72,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "הרבה הֶ֭רֶב כַּבְּסֵ֣נִי מֵעֲוֺנִ֑י וּֽמֵחַטָּאתִ֥י טַהֲרֵֽנִי׃"
+        "WLC": "הרבה הֶ֭רֶב כַּבְּסֵ֣/נִי מֵ/עֲוֺנִ֑/י וּֽ/מֵ/חַטָּאתִ֥/י טַהֲרֵֽ/נִי׃",
+        "LXX": "ἀδικίαν ἐλογίσατο ἡ γλῶσσά σου· ὡσεὶ ξυρὸν ἐξηκονημένον ἐποίησας δόλον.",
+        "VUL": "Tota die injustitiam cogitavit lingua tua ;/ sicut novacula acuta fecisti dolum./",
+        "SYN": "гибель вымышляет язык твой; как изощренная бритва, он _у тебя,_ коварный!",
+        "NEO": "Lave-moi complètement de mon iniquité, et purifie-moi de mon péché.",
+        "NAB": "Wash away all my guilt; from my sin cleanse me.",
+        "VAT_ES": "&iexcl;Lávame totalmente de mi culpa",
+        "CEI": "Lavami da tutte le mie colpe, mondami dal mio peccato."
       }
     },
     "5": {
@@ -63,7 +90,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "כִּֽי פְ֭שָׁעַי אֲנִ֣י אֵדָ֑ע וְחַטָּאתִ֖י נֶגְדִּ֣י תָמִֽיד׃"
+        "WLC": "כִּֽי פְ֭שָׁעַ/י אֲנִ֣י אֵדָ֑ע וְ/חַטָּאתִ֖/י נֶגְדִּ֣/י תָמִֽיד׃",
+        "LXX": "ἠγάπησας κακίαν ὑπὲρ ἀγαθωσύνην, ἀδικίαν ὑπὲρ τὸ λαλῆσαι δικαιοσύνην. διάψαλμα.",
+        "VUL": "Dilexisti malitiam super benignitatem ;/ iniquitatem magis quam loqui æquitatem./",
+        "SYN": "ты любишь больше зло, нежели добро, больше ложь, нежели говорить правду;",
+        "NEO": "Car je reconnais mes transgressions, et mon péché est constamment devant moi.",
+        "NAB": "For I know my offense; my sin is always before me.",
+        "VAT_ES": "Porque yo reconozco mis faltas",
+        "CEI": "Riconosco la mia colpa, il mio peccato mi sta sempre dinanzi."
       }
     },
     "6": {
@@ -74,7 +108,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "לְךָ֤ לְבַדְּךָ֨ חָטָאתִי֮ וְהָרַ֥ע בְּעֵינֶ֗יךָ עָ֫שִׂ֥יתִי לְ֭מַעַן תִּצְדַּ֥ק בְּדָבְרֶ֗ךָ תִּזְכֶּ֥ה בְשָׁפְטֶֽךָ׃"
+        "WLC": "לְ/ךָ֤ לְ/בַדְּ/ךָ֨ חָטָאתִי֮ וְ/הָ/רַ֥ע בְּ/עֵינֶ֗י/ךָ עָ֫שִׂ֥יתִי לְ֭מַעַן תִּצְדַּ֥ק בְּ/דָבְרֶ֗/ךָ תִּזְכֶּ֥ה בְ/שָׁפְטֶֽ/ךָ׃",
+        "LXX": "ἠγάπησας πάντα τὰ ῥήματα καταποντισμοῦ, γλῶσσαν δολίαν.",
+        "VUL": "Dilexisti omnia verba præcipitationis ;/ lingua dolosa./",
+        "SYN": "ты любишь всякие гибельные речи, язык коварный:",
+        "NEO": "C’est contre toi seul que j’ai péché, j’ai fait ce qui est mal à tes yeux, afin que tu sois trouvé juste dans ta sentence, sans reproche dans ton jugement.",
+        "NAB": "Against you alone have I sinned; I have done such evil in your sight That you are just in your sentence, blameless when you condemn.",
+        "VAT_ES": "Contra ti, contra ti solo pequé",
+        "CEI": "Contro di te, contro te solo ho peccato, quello che è male ai tuoi occhi, io l'ho fatto; perciò sei giusto quando parli, retto nel tuo giudizio."
       }
     },
     "7": {
@@ -85,7 +126,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "הֵן בְּעָו֥וֹן חוֹלָ֑לְתִּי וּ֝בְחֵ֗טְא יֶֽחֱמַ֥תְנִי אִמִּֽי׃"
+        "WLC": "הֵן בְּ/עָו֥וֹן חוֹלָ֑לְתִּי וּ֝/בְ/חֵ֗טְא יֶֽחֱמַ֥תְ/נִי אִמִּֽ/י׃",
+        "LXX": "διὰ τοῦτο ὁ θεὸς καθελεῖ σε εἰς τέλος· ἐκτίλαι σε καὶ μεταναστεύσαι σε ἀπὸ σκηνώματος, καὶ τὸ ῥίζωμά σου ἐκ γῆς ζώντων. διάψαλμα.",
+        "VUL": "Propterea Deus destruet te in finem ;/ evellet te, et emigrabit te de tabernaculo tuo,/ et radicem tuam de terra viventium./",
+        "SYN": "за то Бог сокрушит тебя вконец, изринет тебя и исторгнет тебя из жилища [твоего] и корень твой из земли живых.",
+        "NEO": "Voici que je suis né dans l’iniquité et ma mère m’a conçu dans le péché.",
+        "NAB": "True, I was born guilty, a sinner, even as my mother conceived me.",
+        "VAT_ES": "yo soy culpable desde que nací;",
+        "CEI": "Ecco, nella colpa sono stato generato, nel peccato mi ha concepito mia madre."
       }
     },
     "8": {
@@ -96,7 +144,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "הֵן אֱ֭מֶת חָפַ֣צְתָּ בַטֻּח֑וֹת וּ֝בְסָתֻ֗ם חָכְמָ֥ה תוֹדִיעֵֽנִי׃"
+        "WLC": "הֵן אֱ֭מֶת חָפַ֣צְתָּ בַ/טֻּח֑וֹת וּ֝/בְ/סָתֻ֗ם חָכְמָ֥ה תוֹדִיעֵֽ/נִי׃",
+        "LXX": "καὶ ὄψονται δίκαιοι καὶ φοβηθήσονται, καὶ ἐπ’ αὐτὸν γελάσονται καὶ ἐροῦσιν",
+        "VUL": "Videbunt justi, et timebunt ;/ et super eum ridebunt, et dicent :/",
+        "SYN": "Увидят праведники и убоятся, посмеются над ним [и скажут]:",
+        "NEO": "Voici que tu veux que la sincérité soit dans le cœur au dedans de moi fais-moi connaître la sagesse.",
+        "NAB": "Still, you insist on sincerity of heart; in my inmost being teach me wisdom.",
+        "VAT_ES": "Tú amas la sinceridad del corazón",
+        "CEI": "Ma tu vuoi la sincerità del cuore e nell'intimo m'insegni la sapienza."
       }
     },
     "9": {
@@ -107,7 +162,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "תְּחַטְּאֵ֣נִי בְאֵז֣וֹב וְאֶטְהָ֑ר תְּ֝כַבְּסֵ֗נִי וּמִשֶּׁ֥לֶג אַלְבִּֽין׃"
+        "WLC": "תְּחַטְּאֵ֣/נִי בְ/אֵז֣וֹב וְ/אֶטְהָ֑ר תְּ֝כַבְּסֵ֗/נִי וּ/מִ/שֶּׁ֥לֶג אַלְבִּֽין׃",
+        "LXX": "Ἰδοὺ ἄνθρωπος ὃς οὐκ ἔθετο τὸν θεὸν βοηθὸν αὐτοῦ, ἀλλὰ ἐπήλπισεν ἐπὶ τὸ πλῆθος τοῦ πλούτου αὐτοῦ, καὶ ἐδυναμώθη ἐπὶ τῇ ματαιότητι αὐτοῦ.",
+        "VUL": "Ecce homo qui non posuit Deum adjutorem suum ;/ sed speravit in multitudine divitiarum suarum,/ et prævaluit in vanitate sua./",
+        "SYN": "\"вот человек, который не в Боге полагал крепость свою, а надеялся на множество богатства своего, укреплялся в злодействе своем\".",
+        "NEO": "Purifie-moi avec l’hysope, et je serai pur ; lave-moi, et je serai plus blanc que la neige.",
+        "NAB": "Cleanse me with hyssop, that I may be pure; wash me, make me whiter than snow.",
+        "VAT_ES": "Purifícame con el hisopo y quedaré limpio;",
+        "CEI": "Purificami con issopo e sarò mondo; lavami e sarò più bianco della neve."
       }
     },
     "10": {
@@ -118,7 +180,14 @@
         "LXX": 10
       },
       "text": {
-        "WLC": "תַּ֭שְׁמִיעֵנִי שָׂשׂ֣וֹן וְשִׂמְחָ֑ה תָּ֝גֵ֗לְנָה עֲצָמ֥וֹת דִּכִּֽיתָ׃"
+        "WLC": "תַּ֭שְׁמִיעֵ/נִי שָׂשׂ֣וֹן וְ/שִׂמְחָ֑ה תָּ֝גֵ֗לְנָה עֲצָמ֥וֹת דִּכִּֽיתָ׃",
+        "LXX": "ἐγὼ δὲ ὡσεὶ ἐλαία κατάκαρπος ἐν τῷ οἴκῳ τοῦ θεοῦ· ἤλπισα ἐπὶ τὸ ἔλεος τοῦ θεοῦ εἰς τὸν αἰῶνα καὶ εἰς τὸν αἰῶνα τοῦ αἰῶνος·",
+        "VUL": "Ego autem, sicut oliva fructifera in domo Dei ;/ speravi in misericordia Dei, in æternum et in sæculum sæculi./",
+        "SYN": "А я, как зеленеющая маслина, в доме Божием, и уповаю на милость Божию во веки веков,",
+        "NEO": "Annonce-moi la joie et l’allégresse, et les os que tu as brisés se réjouiront.",
+        "NAB": "Let me hear sounds of joy and gladness; let the bones you have crushed rejoice.",
+        "VAT_ES": "Anúnciame el gozo y la alegría:",
+        "CEI": "Fammi sentire gioia e letizia, esulteranno le ossa che hai spezzato."
       }
     },
     "11": {
@@ -129,7 +198,14 @@
         "LXX": 11
       },
       "text": {
-        "WLC": "הַסְתֵּ֣ר פָּ֭נֶיךָ מֵחֲטָאָ֑י וְֽכָל עֲוֺ֖נֹתַ֣י מְחֵֽה׃"
+        "WLC": "הַסְתֵּ֣ר פָּ֭נֶי/ךָ מֵ/חֲטָאָ֑/י וְֽ/כָל עֲוֺ֖נֹתַ֣/י מְחֵֽה׃",
+        "LXX": "ἐξομολογήσομαί σοι εἰς τὸν αἰῶνα, ὅτι ἐποίησας· καὶ ὑπομενῶ τὸ ὄνομά σου, ὅτι χρηστὸν ἐναντίον τῶν ὁσίων σου.",
+        "VUL": "Confitebor tibi in sæculum, quia fecisti ;/ et exspectabo nomen tuum,/ quoniam bonum est in conspectu sanctorum tuorum.]",
+        "SYN": "вечно буду славить Тебя за то, что Ты соделал, и уповать на имя Твое, ибо оно благо пред святыми Твоими.",
+        "NEO": "Détourne ta face de mes péchés, efface toutes mes iniquités.",
+        "NAB": "Turn away your face from my sins; blot out all my guilt.",
+        "VAT_ES": "Aparta tu vista de mis pecados",
+        "CEI": "Distogli lo sguardo dai miei peccati, cancella tutte le mie colpe."
       }
     },
     "12": {
@@ -140,7 +216,11 @@
         "LXX": 12
       },
       "text": {
-        "WLC": "לֵ֣ב טָ֭הוֹר בְּרָא לִ֣י אֱלֹהִ֑ים וְר֥וּחַ נָ֝כ֗וֹן חַדֵּ֥שׁ בְּקִרְבִּֽי׃"
+        "WLC": "לֵ֣ב טָ֭הוֹר בְּרָא לִ֣/י אֱלֹהִ֑ים וְ/ר֥וּחַ נָ֝כ֗וֹן חַדֵּ֥שׁ בְּ/קִרְבִּֽ/י׃",
+        "NEO": "O Dieu, crée en moi un cœur pur, et renouvelle au dedans de moi un esprit ferme.",
+        "NAB": "A clean heart create for me, God; renew in me a steadfast spirit.",
+        "VAT_ES": "Crea en mí, Dios mío, un corazón puro,",
+        "CEI": "Crea in me, o Dio, un cuore puro, rinnova in me uno spirito saldo."
       }
     },
     "13": {
@@ -151,7 +231,11 @@
         "LXX": 13
       },
       "text": {
-        "WLC": "אַל תַּשְׁלִיכֵ֥נִי מִלְּפָנֶ֑יךָ וְר֥וּחַ קָ֝דְשְׁךָ֗ אַל תִּקַּ֥ח מִמֶּֽנִּי׃"
+        "WLC": "אַל תַּשְׁלִיכֵ֥/נִי מִ/לְּ/פָנֶ֑י/ךָ וְ/ר֥וּחַ קָ֝דְשְׁ/ךָ֗ אַל תִּקַּ֥ח מִמֶּֽ/נִּי׃",
+        "NEO": "Ne me rejette pas loin de ta face, ne me retire pas ton esprit saint.",
+        "NAB": "Do not drive me from your presence, nor take from me your holy spirit.",
+        "VAT_ES": "No me arrojes lejos de tu presencia",
+        "CEI": "Non respingermi dalla tua presenza e non privarmi del tuo santo spirito."
       }
     },
     "14": {
@@ -162,7 +246,11 @@
         "LXX": 14
       },
       "text": {
-        "WLC": "הָשִׁ֣יבָה לִּ֭י שְׂשׂ֣וֹן יִשְׁעֶ֑ךָ וְר֖וּחַ נְדִיבָ֣ה תִסְמְכֵֽנִי׃"
+        "WLC": "הָשִׁ֣יבָ/ה לִּ֭/י שְׂשׂ֣וֹן יִשְׁעֶ֑/ךָ וְ/ר֖וּחַ נְדִיבָ֣ה תִסְמְכֵֽ/נִי׃",
+        "NEO": "Rends-moi la joie de ton salut, et soutiens-moi par un esprit de bonne volonté.",
+        "NAB": "Restore my joy in your salvation; sustain in me a willing spirit.",
+        "VAT_ES": "Devuélveme la alegría de tu salvación,",
+        "CEI": "Rendimi la gioia di essere salvato, sostieni in me un animo generoso."
       }
     },
     "15": {
@@ -173,7 +261,11 @@
         "LXX": 15
       },
       "text": {
-        "WLC": "אֲלַמְּדָ֣ה פֹשְׁעִ֣ים דְּרָכֶ֑יךָ וְ֝חַטָּאִ֗ים אֵלֶ֥יךָ יָשֽׁוּבוּ׃"
+        "WLC": "אֲלַמְּדָ֣ה פֹשְׁעִ֣ים דְּרָכֶ֑י/ךָ וְ֝/חַטָּאִ֗ים אֵלֶ֥י/ךָ יָשֽׁוּבוּ׃",
+        "NEO": "J’enseignerai tes voies à ceux qui les transgressent, et les pécheurs reviendront à toi.",
+        "NAB": "I will teach the wicked your ways, that sinners may return to you.",
+        "VAT_ES": "yo enseñaré tu camino a los impíos",
+        "CEI": "Insegnerò agli erranti le tue vie e i peccatori a te ritorneranno."
       }
     },
     "16": {
@@ -184,7 +276,11 @@
         "LXX": 16
       },
       "text": {
-        "WLC": "הַצִּ֘ילֵ֤נִי מִדָּמִ֨ים אֱֽלֹהִ֗ים אֱלֹהֵ֥י תְּשׁוּעָתִ֑י תְּרַנֵּ֥ן לְ֝שׁוֹנִ֗י צִדְקָתֶֽךָ׃"
+        "WLC": "הַצִּ֘ילֵ֤/נִי מִ/דָּמִ֨ים אֱֽלֹהִ֗ים אֱלֹהֵ֥י תְּשׁוּעָתִ֑/י תְּרַנֵּ֥ן לְ֝שׁוֹנִ֗/י צִדְקָתֶֽ/ךָ׃",
+        "NEO": "O Dieu, Dieu de mon salut, délivre-moi du sang versé, et ma langue célébrera ta justice.",
+        "NAB": "Rescue me from death, God, my saving God, that my tongue may praise your healing power.",
+        "VAT_ES": "&iexcl;Líbrame de la muerte, Dios, salvador mío,",
+        "CEI": "Liberami dal sangue, Dio, Dio mia salvezza, la mia lingua esalterà la tua giustizia."
       }
     },
     "17": {
@@ -195,7 +291,11 @@
         "LXX": 17
       },
       "text": {
-        "WLC": "אֲ֭דֹנָי שְׂפָתַ֣י תִּפְתָּ֑ח וּ֝פִ֗י יַגִּ֥יד תְּהִלָּתֶֽךָ׃"
+        "WLC": "אֲ֭דֹנָ/י שְׂפָתַ֣/י תִּפְתָּ֑ח וּ֝/פִ֗/י יַגִּ֥יד תְּהִלָּתֶֽ/ךָ׃",
+        "NEO": "Seigneur, ouvre mes lèvres, et ma bouche publiera ta louange.",
+        "NAB": "Lord, open my lips; my mouth will proclaim your praise.",
+        "VAT_ES": "Abre mis labios, Señor,",
+        "CEI": "Signore, apri le mie labbra e la mia bocca proclami la tua lode;"
       }
     },
     "18": {
@@ -206,7 +306,11 @@
         "LXX": 18
       },
       "text": {
-        "WLC": "כִּ֤י לֹא תַחְפֹּ֣ץ זֶ֣בַח וְאֶתֵּ֑נָה ע֝וֹלָ֗ה לֹ֣א תִרְצֶֽה׃"
+        "WLC": "כִּ֤י לֹא תַחְפֹּ֣ץ זֶ֣בַח וְ/אֶתֵּ֑נָה ע֝וֹלָ֗ה לֹ֣א תִרְצֶֽה׃",
+        "NEO": "Car tu ne désires pas de sacrifices, — je t’en offrirais, — tu ne prends pas plaisir aux holocaustes.",
+        "NAB": "For you do not desire sacrifice; a burnt offering you would not accept.",
+        "VAT_ES": "Los sacrificios no te satisfacen;",
+        "CEI": "poiché non gradisci il sacrificio e, se offro olocausti, non li accetti."
       }
     },
     "19": {
@@ -217,7 +321,11 @@
         "LXX": 19
       },
       "text": {
-        "WLC": "זִֽבְחֵ֣י אֱלֹהִים֮ ר֪וּחַ נִשְׁבָּ֫רָ֥ה לֵב נִשְׁבָּ֥ר וְנִדְכֶּ֑ה אֱ֝לֹהִ֗ים לֹ֣א תִבְזֶֽה׃"
+        "WLC": "זִֽבְחֵ֣י אֱלֹהִים֮ ר֪וּחַ נִשְׁבָּ֫רָ֥ה לֵב נִשְׁבָּ֥ר וְ/נִדְכֶּ֑ה אֱ֝לֹהִ֗ים לֹ֣א תִבְזֶֽה׃",
+        "NEO": "Les sacrifices de Dieu, c’est un esprit brisé ; ô Dieu, tu ne dédaignes pas un cœur brisé et contrit.",
+        "NAB": "My sacrifice, God, is a broken spirit; God, do not spurn a broken, humbled heart.",
+        "VAT_ES": "mi sacrificio es un espíritu contrito,",
+        "CEI": "Uno spirito contrito è sacrificio a Dio, un cuore affranto e umiliato, Dio, tu non disprezzi."
       }
     }
   }

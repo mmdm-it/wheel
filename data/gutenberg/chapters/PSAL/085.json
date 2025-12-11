@@ -19,7 +19,13 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "לַמְנַצֵּ֬חַ לִבְנֵי קֹ֬רַח מִזְמֽוֹר׃"
+        "WLC": "לַ/מְנַצֵּ֬חַ לִ/בְנֵי קֹ֬רַח מִזְמֽוֹר׃",
+        "LXX": "Προσευχὴ τῷ Δαυείδ. Κλῖνον, Κύριε, τὸ οὖς σου καὶ εἰσάκουσόν μου, ὅτι πτωχὸς καὶ πένης εἰμὶ ἐγώ.",
+        "VUL": "Oratio ipsi David. [Inclina, Domine, aurem tuam et exaudi me,/ quoniam inops et pauper sum ego./",
+        "SYN": "Приклони, Господи, ухо Твое и услышь меня, ибо я беден и нищ.",
+        "NEO": "Au maître de chant. Psaume des fils de Coré.",
+        "NAB": "For the leader. A psalm of the Korahites.",
+        "CEI": "Al maestro del coro. Dei figli di Core. Salmo."
       }
     },
     "2": {
@@ -30,7 +36,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "רָצִ֣יתָ יְהוָ֣ה אַרְצֶ֑ךָ שַׁ֝֗בְתָּ שבות שְׁבִ֣ית יַעֲקֹֽב׃"
+        "WLC": "רָצִ֣יתָ יְהוָ֣ה אַרְצֶ֑/ךָ שַׁ֝֗בְתָּ שבות שְׁבִ֣ית יַעֲקֹֽב׃",
+        "LXX": "φύλαξον τὴν ψυχήν μου, ὅτι ὅσιός εἰμι· σῶσον τὸν δοῦλόν σου, ὁ θεός μου, τὸν ἐλπίζοντα ἐπὶ σέ.",
+        "VUL": "Custodi animam meam, quoniam sanctus sum ;/ salvum fac servum tuum, Deus meus, sperantem in te./",
+        "SYN": "Сохрани душу мою, ибо я благоговею пред Тобою; спаси, Боже мой, раба Твоего, уповающего на Тебя.",
+        "NEO": "Tu as été favorable à ton pays, \\+w Yahweh|strong=\"H3068\"\\+w**, tu as ramené les captifs de Jacob ;",
+        "NAB": "You once favored, LORD, your land, restored the good fortune of Jacob.",
+        "VAT_ES": "Fuiste propicio, Señor, con tu tierra,",
+        "CEI": "Signore, sei stato buono con la tua terra, hai ricondotto i deportati di Giacobbe."
       }
     },
     "3": {
@@ -41,7 +54,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "נָ֭שָׂאתָ עֲוֺ֣ן עַמֶּ֑ךָ כִּסִּ֖יתָ כָל חַטָּאתָ֣ם סֶֽלָה׃"
+        "WLC": "נָ֭שָׂאתָ עֲוֺ֣ן עַמֶּ֑/ךָ כִּסִּ֖יתָ כָל חַטָּאתָ֣/ם סֶֽלָה׃",
+        "LXX": "ἐλέησόν με, κύριε, ὅτι πρὸς σὲ κεκράξομαι ὅλην τὴν ἡμέραν.",
+        "VUL": "Miserere mei, Domine,/ quoniam ad te clamavi tota die ;/",
+        "SYN": "Помилуй меня, Господи, ибо к Тебе взываю каждый день.",
+        "NEO": "tu as pardonné l’iniquité à ton peuple, tu as couvert tous ses péchés ; — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "You forgave the guilt of your people, pardoned all their sins. Selah",
+        "VAT_ES": "perdonaste la culpa de tu pueblo,",
+        "CEI": "Hai perdonato l'iniquità del tuo popolo, hai cancellato tutti i suoi peccati."
       }
     },
     "4": {
@@ -52,7 +72,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "אָסַ֥פְתָּ כָל עֶבְרָתֶ֑ךָ הֱ֝שִׁיב֗וֹתָ מֵחֲר֥וֹן אַפֶּֽךָ׃"
+        "WLC": "אָסַ֥פְתָּ כָל עֶבְרָתֶ֑/ךָ הֱ֝שִׁיב֗וֹתָ מֵ/חֲר֥וֹן אַפֶּֽ/ךָ׃",
+        "LXX": "εὔφρανον τὴν ψυχὴν τοῦ δούλου σου, ὅτι πρὸς σέ, κύριε, ἦρα τὴν ψυχήν μου.",
+        "VUL": "lætifica animam servi tui,/ quoniam ad te, Domine, animam meam levavi./",
+        "SYN": "Возвесели душу раба Твоего, ибо к Тебе, Господи, возношу душу мою,",
+        "NEO": "tu as retiré toute ton indignation, tu es revenu de l’ardeur de ta colère.",
+        "NAB": "You withdrew all your wrath, turned back your burning anger.",
+        "VAT_ES": "reprimiste toda tu indignación",
+        "CEI": "Hai deposto tutto il tuo sdegno e messo fine alla tua grande ira."
       }
     },
     "5": {
@@ -63,7 +90,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "שׁ֭וּבֵנוּ אֱלֹהֵ֣י יִשְׁעֵ֑נוּ וְהָפֵ֖ר כַּֽעַסְךָ֣ עִמָּֽנוּ׃"
+        "WLC": "שׁ֭וּבֵ/נוּ אֱלֹהֵ֣י יִשְׁעֵ֑/נוּ וְ/הָפֵ֖ר כַּֽעַסְ/ךָ֣ עִמָּֽ/נוּ׃",
+        "LXX": "ὅτι σύ, κύριε, χρηστὸς καὶ ἐπιεικὴς καὶ πολυέλεος πᾶσι τοῖς ἐπικαλουμένοις σε.",
+        "VUL": "Quoniam tu, Domine, suavis et mitis,/ et multæ misericordiæ omnibus invocantibus te./",
+        "SYN": "ибо Ты, Господи, благ и милосерд и многомилостив ко всем, призывающим Тебя.",
+        "NEO": "Rétablis-nous, Dieu de notre salut ; mets fin à ton sentiment contre nous.",
+        "NAB": "Restore us once more, God our savior; abandon your wrath against us.",
+        "VAT_ES": "&iexcl;Restáuranos, Dios, salvador nuestro;",
+        "CEI": "Rialzaci, Dio nostra salvezza, e placa il tuo sdegno verso di noi."
       }
     },
     "6": {
@@ -74,7 +108,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "הַלְעוֹלָ֥ם תֶּֽאֱנַף בָּ֑נוּ תִּמְשֹׁ֥ךְ אַ֝פְּךָ֗ לְדֹ֣ר וָדֹֽר׃"
+        "WLC": "הַ/לְ/עוֹלָ֥ם תֶּֽאֱנַף בָּ֑/נוּ תִּמְשֹׁ֥ךְ אַ֝פְּ/ךָ֗ לְ/דֹ֣ר וָ/דֹֽר׃",
+        "LXX": "ἐνώτισαι, Κύριε, τὴν προσευχήν μου, καὶ πρόσχες τῇ φωνῇ τῆς δεήσεώς μου.",
+        "VUL": "Auribus percipe, Domine, orationem meam,/ et intende voci deprecationis meæ./",
+        "SYN": "Услышь, Господи, молитву мою и внемли гласу моления моего.",
+        "NEO": "Seras-tu toujours irrité contre nous, prolongeras-tu ton courroux éternellement ?",
+        "NAB": "Will you be angry with us forever, drag out your anger for all generations?",
+        "VAT_ES": "&iquest;Vas a estar enojado para siempre?",
+        "CEI": "Forse per sempre sarai adirato con noi, di età in età estenderai il tuo sdegno?"
       }
     },
     "7": {
@@ -85,7 +126,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "הֲֽלֹא אַ֭תָּה תָּשׁ֣וּב תְּחַיֵּ֑נוּ וְ֝עַמְּךָ֗ יִשְׂמְחוּ בָֽךְ׃"
+        "WLC": "הֲֽ/לֹא אַ֭תָּה תָּשׁ֣וּב תְּחַיֵּ֑/נוּ וְ֝/עַמְּ/ךָ֗ יִשְׂמְחוּ בָֽ/ךְ׃",
+        "LXX": "ἐν ἡμέρᾳ θλίψεώς μου ἐκέκραξα πρὸς σέ, ὅτι εἰσήκουσάς μου.",
+        "VUL": "In die tribulationis meæ clamavi ad te,/ quia exaudisti me./",
+        "SYN": "В день скорби моей взываю к Тебе, потому что Ты услышишь меня.",
+        "NEO": "Ne nous feras-tu pas revenir à la vie, afin que ton peuple se réjouisse en toi ?",
+        "NAB": "Please give us life again, that your people may rejoice in you.",
+        "VAT_ES": "&iquest;No volverás a darnos la vida,",
+        "CEI": "Non tornerai tu forse a darci vita, perché in te gioisca il tuo popolo?"
       }
     },
     "8": {
@@ -96,7 +144,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "הַרְאֵ֣נוּ יְהוָ֣ה חַסְדֶּ֑ךָ וְ֝יֶשְׁעֲךָ֗ תִּתֶּן לָֽנוּ׃"
+        "WLC": "הַרְאֵ֣/נוּ יְהוָ֣ה חַסְדֶּ֑/ךָ וְ֝/יֶשְׁעֲ/ךָ֗ תִּתֶּן לָֽ/נוּ׃",
+        "LXX": "οὐκ ἔστιν ὅμοιός σοι ἐν θεοῖς, κύριε, καὶ οὐκ ἔστιν κατὰ τὰ ἔργα σου.",
+        "VUL": "Non est similis tui in diis, Domine,/ et non est secundum opera tua./",
+        "SYN": "Нет между богами, как Ты, Господи, и нет дел, как Твои.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, fais-nous voir ta bonté, et accorde-nous ton salut.",
+        "NAB": "Show us, LORD, your love; grant us your salvation.",
+        "VAT_ES": "&iexcl;Manifiéstanos, Señor, tu misericordia",
+        "CEI": "Mostraci, Signore, la tua misericordia e donaci la tua salvezza."
       }
     },
     "9": {
@@ -107,7 +162,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "אֶשְׁמְעָ֗ה מַה יְדַבֵּר֮ הָאֵ֪ל יְה֫וָ֥ה כִּ֤י יְדַבֵּ֬ר שָׁל֗וֹם אֶל עַמּ֥וֹ וְאֶל חֲסִידָ֑יו וְֽאַל יָשׁ֥וּבוּ לְכִסְלָֽה׃"
+        "WLC": "אֶשְׁמְעָ֗ה מַה יְדַבֵּר֮ הָ/אֵ֪ל יְה֫וָ֥ה כִּ֤י יְדַבֵּ֬ר שָׁל֗וֹם אֶל עַמּ֥/וֹ וְ/אֶל חֲסִידָ֑י/ו וְֽ/אַל יָשׁ֥וּבוּ לְ/כִסְלָֽה׃",
+        "LXX": "πάντα τὰ ἔθνη ὅσα ἐποίησας ἥξουσιν καὶ προσκυνήσουσιν ἐνώπιόν σου, Κύριε, καὶ δοξάσουσιν τὸ ὄνομά σου·",
+        "VUL": "Omnes gentes quascumque fecisti venient,/ et adorabunt coram te, Domine,/ et glorificabunt nomen tuum./",
+        "SYN": "Все народы, Тобою сотворенные, приидут и поклонятся пред Тобою, Господи, и прославят имя Твое,",
+        "NEO": "Je veux écouter ce que dira le Dieu \\+w Yahweh|strong=\"H3068\"\\+w** : — Il a des paroles de paix pour son peuple et pour ses fidèles ; pourvu qu’ils ne retournent pas à leur folie. —",
+        "NAB": "I will listen for the word of God; surely the LORD will proclaim peace To his people, to the faithful, to those who trust in him.",
+        "VAT_ES": "Voy a proclamar lo que dice el Señor:",
+        "CEI": "Ascolterò che cosa dice Dio, il Signore: egli annunzia la pace per il suo popolo, per i suoi fedeli, per chi ritorna a lui con tutto il cuore."
       }
     },
     "10": {
@@ -118,7 +180,14 @@
         "LXX": 10
       },
       "text": {
-        "WLC": "אַ֤ךְ קָר֣וֹב לִירֵאָ֣יו יִשְׁע֑וֹ לִשְׁכֹּ֖ן כָּב֣וֹד בְּאַרְצֵֽנוּ׃"
+        "WLC": "אַ֤ךְ קָר֣וֹב לִ/ירֵאָ֣י/ו יִשְׁע֑/וֹ לִ/שְׁכֹּ֖ן כָּב֣וֹד בְּ/אַרְצֵֽ/נוּ׃",
+        "LXX": "ὅτι μέγας εἶ σὺ καὶ ποιῶν θαυμάσια, σὺ εἶ ὁ θεὸς μόνος ὁ μέγας.",
+        "VUL": "Quoniam magnus es tu, et faciens mirabilia ;/ tu es Deus solus./",
+        "SYN": "ибо Ты велик и творишь чудеса, - Ты, Боже, един Ты.",
+        "NEO": "Oui, son salut est proche de ceux qui le craignent, et la gloire habitera de nouveau dans notre pays.",
+        "NAB": "Near indeed is salvation for the loyal; prosperity will fill our land.",
+        "VAT_ES": "Su salvación está muy cerca de sus fieles,",
+        "CEI": "La sua salvezza è vicina a chi lo teme e la sua gloria abiterà la nostra terra."
       }
     },
     "11": {
@@ -129,7 +198,14 @@
         "LXX": 11
       },
       "text": {
-        "WLC": "חֶֽסֶד וֶאֱמֶ֥ת נִפְגָּ֑שׁוּ צֶ֖דֶק וְשָׁל֣וֹם נָשָֽׁקוּ׃"
+        "WLC": "חֶֽסֶד וֶ/אֱמֶ֥ת נִפְגָּ֑שׁוּ צֶ֖דֶק וְ/שָׁל֣וֹם נָשָֽׁקוּ׃",
+        "LXX": "ὁδήγησόν με, Κύριε, τῇ ὁδῷ σου, καὶ πορεύσομαι τῇ ἀληθείᾳ σου· εὐφρανθήτω ἡ καρδία μου τοῦ φοβεῖσθαι τὸ ὄνομά σου.",
+        "VUL": "Deduc me, Domine, in via tua, et ingrediar in veritate tua ;/ lætetur cor meum, ut timeat nomen tuum./",
+        "SYN": "Наставь меня, Господи, на путь Твой, и буду ходить в истине Твоей; утверди сердце мое в страхе имени Твоего.",
+        "NEO": "La bonté et la vérité vont se rencontrer, la justice et la paix s’embrasseront.",
+        "NAB": "Love and truth will meet; justice and peace will kiss.",
+        "VAT_ES": "El Amor y la Verdad se encontrarán,",
+        "CEI": "Misericordia e verità s'incontreranno, giustizia e pace si baceranno."
       }
     },
     "12": {
@@ -140,7 +216,14 @@
         "LXX": 12
       },
       "text": {
-        "WLC": "אֱ֭מֶת מֵאֶ֣רֶץ תִּצְמָ֑ח וְ֝צֶ֗דֶק מִשָּׁמַ֥יִם נִשְׁקָֽף׃"
+        "WLC": "אֱ֭מֶת מֵ/אֶ֣רֶץ תִּצְמָ֑ח וְ֝/צֶ֗דֶק מִ/שָּׁמַ֥יִם נִשְׁקָֽף׃",
+        "LXX": "ἐξομολογήσομαί σοι, Κύριε ὁ θεός μου, ἐν ὅλῃ καρδίᾳ μου, καὶ δοξάσω τὸ ὄνομά σου εἰς τὸν αἰῶνα·",
+        "VUL": "Confitebor tibi, Domine Deus meus, in toto corde meo,/ et glorificabo nomen tuum in æternum :/",
+        "SYN": "Буду восхвалять Тебя, Господи, Боже мой, всем сердцем моим и славить имя Твое вечно,",
+        "NEO": "La vérité germera de la terre, et la justice regardera du haut du ciel.",
+        "NAB": "Truth will spring from the earth; justice will look down from heaven.",
+        "VAT_ES": "la Verdad brotará de la tierra",
+        "CEI": "La verità germoglierà dalla terra e la giustizia si affaccerà dal cielo."
       }
     },
     "13": {
@@ -151,7 +234,14 @@
         "LXX": 13
       },
       "text": {
-        "WLC": "גַּם יְ֭הוָה יִתֵּ֣ן הַטּ֑וֹב וְ֝אַרְצֵ֗נוּ תִּתֵּ֥ן יְבוּלָֽהּ׃"
+        "WLC": "גַּם יְ֭הוָה יִתֵּ֣ן הַ/טּ֑וֹב וְ֝/אַרְצֵ֗/נוּ תִּתֵּ֥ן יְבוּלָֽ/הּ׃",
+        "LXX": "ὅτι τὸ ἔλεός σου μέγα ἐπ’ ἐμέ, καὶ ἐρρύσω τὴν ψυχήν μου ἐξ ᾅδου κατωτάτου.",
+        "VUL": "quia misericordia tua magna est super me,/ et eruisti animam meam ex inferno inferiori./",
+        "SYN": "ибо велика милость Твоя ко мне: Ты избавил душу мою от ада преисподнего.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** lui-même accordera tout bien, et notre terre donnera son fruit.",
+        "NAB": "The LORD will surely grant abundance; our land will yield its increase.",
+        "VAT_ES": "El mismo Señor nos dará sus bienes",
+        "CEI": "Quando il Signore elargirà il suo bene, la nostra terra darà il suo frutto."
       }
     }
   }
