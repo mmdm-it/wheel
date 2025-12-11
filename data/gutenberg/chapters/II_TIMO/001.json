@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "BYZ": "Παῦλος, ἀπόστολος Ἰησοῦ χριστοῦ διὰ θελήματος θεοῦ, κατ’ ἐπαγγελίαν ζωῆς τῆς ἐν χριστῷ Ἰησοῦ,",
+        "VUL": "Paulus Apostolus Jesu Christi per voluntatem Dei, secundum promissionem vitæ, quæ est in Christo Jesu,",
+        "SYN": "Павел, волею Божиею Апостол Иисуса Христа, по обетованию жизни во Христе Иисусе,",
+        "NEO": "Paul, apôtre de Jésus-Christ par la volonté de Dieu, pour annoncer la promesse de la vie qui est dans le Christ Jésus,",
+        "NAB": "Paul, an apostle of Christ Jesus by the will of God for the promise of life in Christ Jesus,",
+        "VAT_ES": "Tú, que eres mi hijo, fortalécete con la gracia de Cristo Jesús.",
+        "CEI": "Perseverate nell'amore fraterno."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τιμοθέῳ ἀγαπητῷ τέκνῳ· χάρις, ἔλεος, εἰρήνη ἀπὸ θεοῦ πατρὸς καὶ χριστοῦ Ἰησοῦ τοῦ κυρίου ἡμῶν.",
+        "VUL": "Timotheo carissimo filio : gratia, misericordia, pax a Deo Patre, et Christo Jesu Domino nostro.",
+        "SYN": "Тимофею, возлюбленному сыну: благодать, милость, мир от Бога Отца и Христа Иисуса, Господа нашего.",
+        "NEO": "à Timothée, mon enfant bien-aimé : grâce, miséricorde, et paix de la part de Dieu le Père et de Jésus-Christ notre Seigneur !",
+        "NAB": "to Timothy, my dear child: grace, mercy, and peace from God the Father and Christ Jesus our Lord.",
+        "VAT_ES": "Lo que oíste de mí y está corroborado por numerosos testigos, confíalo a hombres responsables que sean capaces de enseñar a otros.",
+        "CEI": "Non dimenticate l'ospitalità; alcuni, praticandola, hanno accolto degli angeli senza saperlo."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Χάριν ἔχω τῷ θεῷ, ᾧ λατρεύω ἀπὸ προγόνων ἐν καθαρᾷ συνειδήσει, ὡς ἀδιάλειπτον ἔχω τὴν περὶ σοῦ μνείαν ἐν ταῖς δεήσεσίν μου νυκτὸς καὶ ἡμέρας,",
+        "VUL": "Gratias ago Deo, cui servio a progenitoribus in conscientia pura, quod sine intermissione habeam tui memoriam in orationibus meis, nocte ac die",
+        "SYN": "Благодарю Бога, Которому служу от прародителей с чистою совестью, что непрестанно вспоминаю о тебе в молитвах моих днем и ночью,",
+        "NEO": "Je rends grâces à Dieu, que je sers ainsi que mes pères, avec une conscience pure, comme aussi je fais continuellement mention de toi dans mes prières, nuit et jour.",
+        "NAB": "I am grateful to God, whom I worship with a clear conscienceas my ancestors did, as I remember you constantly in my prayers, night and day.",
+        "VAT_ES": "Comparte mis fatigas, como buen soldado de Jesucristo.",
+        "CEI": "Ricordatevi dei carcerati, come se foste loro compagni di carcere, e di quelli che soffrono, essendo anche voi in un corpo mortale."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἐπιποθῶν σε ἰδεῖν, μεμνημένος σου τῶν δακρύων, ἵνα χαρᾶς πληρωθῶ,",
+        "VUL": "desiderans te videre, memor lacrimarum tuarum, ut gaudio implear,",
+        "SYN": "и желаю видеть тебя, вспоминая о слезах твоих, дабы мне исполниться радости,",
+        "NEO": "Je me rappelle tes larmes, et je désire te voir, afin d’être rempli de joie.",
+        "NAB": "I yearn to see you again, recalling your tears, so that I may be filled with joy,",
+        "VAT_ES": "El que está bajo las armas no se mezcla en los asuntos de la vida civil, para poder cumplir las órdenes de aquel que lo enroló.",
+        "CEI": "Il matrimonio sia rispettato da tutti e il talamo sia senza macchia. I fornicatori e gli adùlteri saranno giudicati da Dio."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "BYZ": "ὑπόμνησιν λαμβάνων τῆς ἐν σοὶ ἀνυποκρίτου πίστεως, ἥτις ἐνῴκησεν πρῶτον ἐν τῇ μάμμῃ σου Λωΐδι καὶ τῇ μητρί σου Εὐνίκῃ, πέπεισμαι δὲ ὅτι καὶ ἐν σοί.",
+        "VUL": "recordationem accipiens ejus fidei, quæ est in te non ficta, quæ et habitavit primum in avia tua Loide, et matre tua Eunice, certus sum autem quod et in te.",
+        "SYN": "приводя на память нелицемерную веру твою, которая прежде обитала в бабке твоей Лоиде и матери твоей Евнике; уверен, что она и в тебе.",
+        "NEO": "Je me souviens aussi de la foi qui est en toi si sincère ; et qui a été constante d’abord dans ton aïeule Loïs et dans ta mère Eunice ; et, j’en suis sûr, elle est de même en toi. I. LA PRÉDICATION DE L’ÉVANGILE. [I, 6 — IV, 18.]",
+        "NAB": "as I recall your sincere faith that first lived in your grandmother Lois and in your mother Eunice and that I am confident lives also in you.",
+        "VAT_ES": "El atleta no recibe el premio si no lucha de acuerdo con las reglas.",
+        "CEI": "La vostra condotta sia senza avarizia; accontentatevi di quello che avete, perché Dio stesso ha detto: Non ti lascerò e non ti abbandonerò."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "BYZ": "Δι’ ἣν αἰτίαν ἀναμιμνῄσκω σε ἀναζωπυρεῖν τὸ χάρισμα τοῦ θεοῦ, ὅ ἐστιν ἐν σοὶ διὰ τῆς ἐπιθέσεως τῶν χειρῶν μου.",
+        "VUL": "Propter quam causam admoneo te ut resuscites gratiam Dei, quæ est in te per impositionem manuum mearum.",
+        "SYN": "По сей причине напоминаю тебе возгревать дар Божий, который в тебе через мое рукоположение;",
+        "NEO": "C’est pourquoi je t’avertis de ranimer+ 1:6 I, 6. À ranimer, Vulg., \\+qt à ressusciter\\+qt*, comme on ferait d’un feu qui dort ou qui s’est ralenti. — \\+qt La grâce\\+qt* du sacrement de l’ordre. I Tim. iv, 14.* la grâce de Dieu, que tu as reçue par l’imposition de mes mains.",
+        "NAB": "For this reason, I remind you to stir into flame the gift of God that you have through the imposition of my hands.",
+        "VAT_ES": "Y el labrador que trabaja duramente es el primero que tiene derecho a recoger los frutos.",
+        "CEI": "Così possiamo dire con fiducia: Il Signore è il mio aiuto, non temerò. Che mi potrà fare l'uomo?"
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "BYZ": "Οὐ γὰρ ἔδωκεν ἡμῖν ὁ θεὸς πνεῦμα δειλίας, ἀλλὰ δυνάμεως καὶ ἀγάπης καὶ σωφρονισμοῦ.",
+        "VUL": "Non enim dedit nobis Deus spiritum timoris : sed virtutis, et dilectionis, et sobrietatis.",
+        "SYN": "ибо дал нам Бог духа не боязни, но силы и любви и целомудрия.",
+        "NEO": "Car ce n’est pas un esprit de timidité que Dieu nous a donné, mais un esprit de force, d’amour et de modération.",
+        "NAB": "For God did not give us a spirit of cowardice but rather of power and love and self-control.",
+        "VAT_ES": "Piensa en lo que te digo, y el Señor, por su parte, te ayudará a comprenderlo todo.",
+        "CEI": "Ricordatevi dei vostri capi, i quali vi hanno annunziato la parola di Dio; considerando attentamente l'esito del loro tenore di vita, imitatene la fede."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "BYZ": "Μὴ οὖν ἐπαισχυνθῇς τὸ μαρτύριον τοῦ κυρίου ἡμῶν, μηδὲ ἐμὲ τὸν δέσμιον αὐτοῦ· ἀλλὰ συγκακοπάθησον τῷ εὐαγγελίῳ κατὰ δύναμιν θεοῦ,",
+        "VUL": "Noli itaque erubescere testimonium Domini nostri, neque me vinctum ejus : sed collabora Evangelio secundum virtutem Dei :",
+        "SYN": "Итак, не стыдись свидетельства Господа нашего Иисуса Христа, ни меня, узника Его; но страдай с благовестием Христовым силою Бога,",
+        "NEO": "Ne rougis donc pas du témoignage à rendre à notre Seigneur, ni de moi, son prisonnier ; mais souffre+ 1:8 8. Souffre; Vulg. \\+qt travaille\\+qt*.* avec moi pour l’Évangile, appuyé sur la force de Dieu,",
+        "NAB": "So do not be ashamed of your testimony to our Lord, nor of me, a prisoner for his sake; but bear your share of hardship for the gospel with the strength that comes from God.",
+        "VAT_ES": "Acuérdate de Jesucristo, que resucitó de entre los muertos y es descendiente de David. Esta es la Buena Noticia que yo predico,",
+        "CEI": "Gesù Cristo è lo stesso ieri, oggi e sempre!"
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "BYZ": "τοῦ σώσαντος ἡμᾶς καὶ καλέσαντος κλήσει ἁγίᾳ, οὐ κατὰ τὰ ἔργα ἡμῶν, ἀλλὰ κατ’ ἰδίαν πρόθεσιν καὶ χάριν τὴν δοθεῖσαν ἡμῖν ἐν χριστῷ Ἰησοῦ πρὸ χρόνων αἰωνίων,",
+        "VUL": "qui nos liberavit, et vocavit vocatione sua sancta, non secundum opera nostra, sed secundum propositum suum, et gratiam, quæ data est nobis in Christo Jesu ante tempora sæcularia.",
+        "SYN": "спасшего нас и призвавшего званием святым, не по делам нашим, но по Своему изволению и благодати, данной нам во Христе Иисусе прежде вековых времен,",
+        "NEO": "qui nous a sauvés et nous a appelés par une vocation sainte, non à cause de nos œuvres, mais selon son propre décret et selon la grâce qui nous a été donnée en Jésus-Christ avant le commencement des siècles,",
+        "NAB": "He saved us and called us to a holy life, not according to our works but according to his own design and the grace bestowed on us in Christ Jesus before time began,",
+        "VAT_ES": "por la cual sufro y estoy encadenado como un malhechor. Pero la palabra de Dios no está encadenada.",
+        "CEI": "Non lasciatevi sviare da dottrine diverse e peregrine, perché è bene che il cuore venga rinsaldato dalla grazia, non da cibi che non hanno mai recato giovamento a coloro che ne usarono."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "BYZ": "φανερωθεῖσαν δὲ νῦν διὰ τῆς ἐπιφανείας τοῦ σωτῆρος ἡμῶν Ἰησοῦ χριστοῦ, καταργήσαντος μὲν τὸν θάνατον, φωτίσαντος δὲ ζωὴν καὶ ἀφθαρσίαν διὰ τοῦ εὐαγγελίου,",
+        "VUL": "Manifestata est autem nunc per illuminationem Salvatoris nostri Jesu Christi, qui destruxit quidem mortem, illuminavit autem vitam, et incorruptionem per Evangelium :",
+        "SYN": "открывшейся же ныне явлением Спасителя нашего Иисуса Христа, разрушившего смерть и явившего жизнь и нетление через благовестие,",
+        "NEO": "et qui a été manifestée à présent par l’apparition de notre Sauveur Jésus-Christ, qui a détruit la mort et a mis en lumière la vie et l’immortalité par l’Évangile.",
+        "NAB": "but now made manifest through the appearance of our savior Christ Jesus, who destroyed death and brought life and immortality to light through the gospel,",
+        "VAT_ES": "Por eso soporto estas pruebas por amor a los elegidos, a fin de que ellos también alcancen la salvación que está en Cristo Jesús y participen de la gloria eterna.",
+        "CEI": "Noi abbiamo un altare del quale non hanno alcun diritto di mangiare quelli che sono al servizio del Tabernacolo."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "BYZ": "εἰς ὃ ἐτέθην ἐγὼ κῆρυξ καὶ ἀπόστολος καὶ διδάσκαλος ἐθνῶν.",
+        "VUL": "in quo positus sum ego prædicator, et Apostolus, et magister gentium.",
+        "SYN": "для которого я поставлен проповедником и Апостолом и учителем язычников.",
+        "NEO": "C’est pour cela que j’ai été établi prédicateur, apôtre et docteur des Gentils ;",
+        "NAB": "for which I was appointed preacher and apostle and teacher.",
+        "VAT_ES": "Esta doctrina es digna de fe:",
+        "CEI": "Infatti i corpi degli animali, il cui sangue vien portato nel santuario dal sommo sacerdote per i peccati, vengono bruciati fuori dell'accampamento."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "BYZ": "Δι’ ἣν αἰτίαν καὶ ταῦτα πάσχω, ἀλλ’ οὐκ ἐπαισχύνομαι· οἶδα γὰρ ᾧ πεπίστευκα, καὶ πέπεισμαι ὅτι δυνατός ἐστιν τὴν παραθήκην μου φυλάξαι εἰς ἐκείνην τὴν ἡμέραν.",
+        "VUL": "Ob quam causam etiam hæc patior, sed non confundor. Scio enim cui credidi, et certus sum quia potens est depositum meum servare in illum diem.",
+        "SYN": "По сей причине я и страдаю так; но не стыжусь. Ибо я знаю, в Кого уверовал, и уверен, что Он силен сохранить залог мой на оный день.",
+        "NEO": "c’est aussi pour cette raison que j’endure les souffrances présentes. Mais je n’en ai pas honte, car je sais en qui j’ai mis ma confiance, et j’ai la conviction qu’il a le pouvoir de garder mon dépôt jusqu’à ce jour-là.",
+        "NAB": "On this account I am suffering these things; but I am not ashamed, for I know him in whom I have believed and am confident that he is able to guard what has been entrusted to me until that day.",
+        "VAT_ES": "Si somos constantes, reinaremos con él.",
+        "CEI": "Perciò anche Gesù, per santificare il popolo con il proprio sangue, patì fuori della porta della città."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὑποτύπωσιν ἔχε ὑγιαινόντων λόγων ὧν παρ’ ἐμοῦ ἤκουσας, ἐν πίστει καὶ ἀγάπῃ τῇ ἐν χριστῷ Ἰησοῦ.",
+        "VUL": "Formam habe sanorum verborum, quæ a me audisti in fide, et in dilectione in Christo Jesu.",
+        "SYN": "Держись образца здравого учения, которое ты слышал от меня, с верою и любовью во Христе Иисусе.",
+        "NEO": "Conserve le souvenir fidèle+ 1:13 13. Le souvenir fidèle, m. à m. le modèle.* des saines instructions que tu as reçues de moi sur la foi et la charité qui est en Jésus-Christ.",
+        "NAB": "Take as your norm the sound words that you heard from me, in the faith and love that are in Christ Jesus.",
+        "VAT_ES": "Si somos infieles, él es fiel,",
+        "CEI": "Usciamo dunque anche noi dall'accampamento e andiamo verso di lui, portando il suo obbrobrio,"
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τὴν καλὴν παραθήκην φύλαξον διὰ πνεύματος ἁγίου τοῦ ἐνοικοῦντος ἐν ἡμῖν.",
+        "VUL": "Bonum depositum custodi per Spiritum Sanctum, qui habitat in nobis.",
+        "SYN": "Храни добрый залог Духом Святым, живущим в нас.",
+        "NEO": "Garde le bon dépôt,+ 1:14 14. Le bon dépôt de la doctrine chrétienne.* par le Saint-Esprit qui habite en nous.",
+        "NAB": "Guard this rich trust with the help of the holy Spirit that dwells within us.",
+        "VAT_ES": "No dejes de enseñar estas cosas, ni de exhortar delante de Dios a que se eviten las discusiones inútiles, que sólo sirven para perdición de quienes las escuchan.",
+        "CEI": "perché non abbiamo quaggiù una città stabile, ma cerchiamo quella futura."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Οἶδας τοῦτο, ὅτι ἀπεστράφησάν με πάντες οἱ ἐν τῇ Ἀσίᾳ, ὧν ἐστὶν Φύγελος καὶ Ἑρμογένης.",
+        "VUL": "Scis hoc, quod aversi sunt a me omnes, qui in Asia sunt, ex quibus est Phigellus, et Hermogenes.",
+        "SYN": "Ты знаешь, что все Асийские оставили меня; в числе их Фигелл и Ермоген.",
+        "NEO": "Tu sais que tous ceux qui sont en Asie m’ont abandonné, entre autres Phygelle et Hermogène.",
+        "NAB": "You know that everyone in Asia deserted me, including Phygelus and Hermogenes.",
+        "VAT_ES": "Esfuérzate en ser digno de la aprobación de Dios, presentándote ante él como un obrero que no tienen de qué avergonzarse y como un fiel dispensador de la Palabra de verdad.",
+        "CEI": "Per mezzo di lui dunque offriamo continuamente un sacrificio di lode a Dio, cioè il frutto di labbra che confessano il suo nome."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "BYZ": "Δῴη ἔλεος ὁ κύριος τῷ Ὀνησιφόρου οἴκῳ· ὅτι πολλάκις με ἀνέψυξεν, καὶ τὴν ἅλυσίν μου οὐκ ἐπαισχύνθη,",
+        "VUL": "Det misericordiam Dominus Onesiphori domui : quia sæpe me refrigeravit, et catenam meam non erubuit :",
+        "SYN": "Да даст Господь милость дому Онисифора за то, что он многократно покоил меня и не стыдился уз моих,",
+        "NEO": "Que le Seigneur répande sa miséricorde sur la maison d’Onésiphore ; car souvent il m’a réconforté, et il n’a pas rougi de mes fers.",
+        "NAB": "May the Lord grant mercy to the family of Onesiphorus because he often gave me new heart and was not ashamed of my chains.",
+        "VAT_ES": "Evita los discursos huecos y profanos, que no hacen más que acrecentar la impiedad",
+        "CEI": "Non scordatevi della beneficenza e di far parte dei vostri beni agli altri, perché di tali sacrifici il Signore si compiace."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἀλλὰ γενόμενος ἐν Ῥώμῃ, σπουδαιότερον ἐζήτησέν με καὶ εὗρεν-",
+        "VUL": "sed cum Romam venisset, sollicite me quæsivit, et invenit.",
+        "SYN": "но, быв в Риме, с великим тщанием искал меня и нашел.",
+        "NEO": "Au contraire, dès son arrivée à Rome, il m’a cherché avec un grand empressement, et m’a trouvé.",
+        "NAB": "But when he came to Rome, he promptly searched for me and found me.",
+        "VAT_ES": "y se extienden como la gangrena. Así sucede con Himeneo y Fileto,",
+        "CEI": "Obbedite ai vostri capi e state loro sottomessi, perché essi vegliano su di voi, come chi ha da renderne conto; obbedite, perché facciano questo con gioia e non gemendo: ciò non sarebbe vantaggioso per voi."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "BYZ": "δῴη αὐτῷ ὁ κύριος εὑρεῖν ἔλεος παρὰ κυρίου ἐν ἐκείνῃ τῇ ἡμέρᾳ- καὶ ὅσα ἐν Ἐφέσῳ διηκόνησεν, βέλτιον σὺ γινώσκεις.",
+        "VUL": "Det illi Dominus invenire misericordiam a Domino in illa die. Et quanta Ephesi ministravit mihi, tu melius nosti.",
+        "SYN": "Да даст ему Господь обрести милость у Господа в оный день; а сколько он служил мне в Ефесе, ты лучше знаешь.",
+        "NEO": "Que le Seigneur lui donne d’obtenir miséricorde auprès du Seigneur en ce jour-là ! Tu sais mieux que personne tous les services qu’il m’a rendus à Éphèse.",
+        "NAB": "May the Lord grant him to find mercy from the Lord on that day. And you know very well the services he rendered in Ephesus.",
+        "VAT_ES": "que se apartaron de la verdad, afirmando que la resurrección ya que se ha realizado, y así han pervertido la fe de algunos.",
+        "CEI": "Pregate per noi, poiché crediamo di avere una buona coscienza, desiderando di comportarci bene in tutto."
+      }
     }
   }
 }

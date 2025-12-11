@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀμὴν ἀμὴν λέγω ὑμῖν, ὁ μὴ εἰσερχόμενος διὰ τῆς θύρας εἰς τὴν αὐλὴν τῶν προβάτων, ἀλλὰ ἀναβαίνων ἀλλαχόθεν, ἐκεῖνος κλέπτης ἐστὶν καὶ λῃστής.",
+        "VUL": "Amen, amen dico vobis : qui non intrat per ostium in ovile ovium, sed ascendit aliunde, ille fur est et latro.",
+        "SYN": "Истинно, истинно говорю вам: кто не дверью входит во двор овчий, но перелазит инуде, тот вор и разбойник;",
+        "NEO": "« En vérité, en vérité, je vous le dis, celui qui n’entre pas par la porte dans la bergerie, mais qui y monte par ailleurs, est un voleur et un brigand.",
+        "NAB": "\"Amen, amen, I say to you, whoever does not enter a sheepfold through the gate but climbs over elsewhere is a thief and a robber.",
+        "VAT_ES": "«Les aseguro que el que no entra por la puerta en el corral de las ovejas, sino por otro lado, es un ladrón y un asaltante.",
+        "CEI": "In quei giorni, mentre aumentava il numero dei discepoli, sorse un malcontento fra gli ellenisti verso gli Ebrei, perché venivano trascurate le loro vedove nella distribuzione quotidiana."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὁ δὲ εἰσερχόμενος διὰ τῆς θύρας ποιμήν ἐστιν τῶν προβάτων.",
+        "VUL": "Qui autem intrat per ostium, pastor est ovium.",
+        "SYN": "а входящий дверью есть пастырь овцам.",
+        "NEO": "Mais celui qui entre par la porte est le pasteur des brebis.",
+        "NAB": "But whoever enters through the gate is the shepherd of the sheep.",
+        "VAT_ES": "El que entra por la puerta es el pastor de las ovejas.",
+        "CEI": "Allora i Dodici convocarono il gruppo dei discepoli e dissero: \"Non è giusto che noi trascuriamo la parola di Dio per il servizio delle mense."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τούτῳ ὁ θυρωρὸς ἀνοίγει, καὶ τὰ πρόβατα τῆς φωνῆς αὐτοῦ ἀκούει, καὶ τὰ ἴδια πρόβατα καλεῖ κατ’ ὄνομα, καὶ ἐξάγει αὐτά.",
+        "VUL": "Huic ostiarius aperit, et oves vocem ejus audiunt, et proprias oves vocat nominatim, et educit eas.",
+        "SYN": "Ему придверник отворяет, и овцы слушаются голоса его, и он зовет своих овец по имени и выводит их.",
+        "NEO": "C’est à lui que le portier ouvre, et les brebis entendent sa voix ; il appelle par leur nom ses brebis, et il les mène aux pâturages.",
+        "NAB": "The gatekeeper opens it for him, and the sheep hear his voice, as he calls his own sheep by name and leads them out.",
+        "VAT_ES": "El guardián le abre y las ovejas escuchan su voz. El llama a cada una por su nombre y las hace salir.",
+        "CEI": "Cercate dunque, fratelli, tra di voi sette uomini di buona reputazione, pieni di Spirito e di saggezza, ai quali affideremo quest'incarico."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ὅταν τὰ ἴδια πρόβατα ἐκβάλῃ, ἔμπροσθεν αὐτῶν πορεύεται· καὶ τὰ πρόβατα αὐτῷ ἀκολουθεῖ, ὅτι οἴδασιν τὴν φωνὴν αὐτοῦ.",
+        "VUL": "Et cum proprias oves emiserit, ante eas vadit : et oves illum sequuntur, quia sciunt vocem ejus.",
+        "SYN": "И когда выведет своих овец, идет перед ними; а овцы за ним идут, потому что знают голос его.",
+        "NEO": "Quand il a fait sortir toutes ses brebis, il marche devant elles, et les brebis le suivent, parce qu’elles connaissent sa voix.",
+        "NAB": "When he has driven out all his own, he walks ahead of them, and the sheep follow him, because they recognize his voice.",
+        "VAT_ES": "Cuando las ha sacado a todas, va delante de ellas y las ovejas lo siguen, porque conocen su voz.",
+        "CEI": "Noi, invece, ci dedicheremo alla preghiera e al ministero della parola\"."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀλλοτρίῳ δὲ οὐ μὴ ἀκολουθήσωσιν, ἀλλὰ φεύξονται ἀπ’ αὐτοῦ· ὅτι οὐκ οἴδασιν τῶν ἀλλοτρίων τὴν φωνήν.",
+        "VUL": "Alienum autem non sequuntur, sed fugiunt ab eo : quia non noverunt vocem alienorum.",
+        "SYN": "За чужим же не идут, но бегут от него, потому что не знают чужого голоса.",
+        "NEO": "Elles ne suivront pas un étranger, mais elles le fuiront, parce qu’elles ne connaissent pas la voix des étrangers. »+ 10:5 X, 5. Suivront… fuiront. Selon d’autres manuscrits, suivraient, etc. Vulg. \\+qt suivent… fuient\\+qt*.*",
+        "NAB": "But they will not follow a stranger; they will run away from him, because they do not recognize the voice of strangers.\"",
+        "VAT_ES": "Nunca seguirán a un extraño, sino que huirán de él, porque no conocen su voz».",
+        "CEI": "Piacque questa proposta a tutto il gruppo ed elessero Stefano, uomo pieno di fede e di Spirito Santo, Filippo, Pròcoro, Nicànore, Timòne, Parmenàs e Nicola, un proselito di Antiochia."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ταύτην τὴν παροιμίαν εἶπεν αὐτοῖς ὁ Ἰησοῦς· ἐκεῖνοι δὲ οὐκ ἔγνωσαν τίνα ἦν ἃ ἐλάλει αὐτοῖς.",
+        "VUL": "Hoc proverbium dixit eis Jesus : illi autem non cognoverunt quid loqueretur eis.",
+        "SYN": "Сию притчу сказал им Иисус; но они не поняли, что такое Он говорил им.",
+        "NEO": "Jésus leur dit cette allégorie ;+ 10:6 6. Allégorie: παροιμίαν similitude, discours allégorique. L’idée de comparaison n’est pas aussi bien marquée dans ce terme que dans celui de παρομία, parabole.* mais ils ne comprirent pas de quoi il leur parlait.",
+        "NAB": "Although Jesus used this figure of speech, they did not realize what he was trying to tell them.",
+        "VAT_ES": "Jesús les hizo esta comparación, pero ellos no comprendieron lo que les quería decir.",
+        "CEI": "Li presentarono quindi agli apostoli i quali, dopo aver pregato, imposero loro le mani."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Εἶπεν οὖν πάλιν αὐτοῖς ὁ Ἰησοῦς, Ἀμὴν ἀμὴν λέγω ὑμῖν ὅτι ἐγώ εἰμι ἡ θύρα τῶν προβάτων.",
+        "VUL": "Dixit ergo eis iterum Jesus : Amen, amen dico vobis, quia ego sum ostium ovium.",
+        "SYN": "Итак, опять Иисус сказал им: истинно, истинно говорю вам, что Я дверь овцам.",
+        "NEO": "Jésus donc leur dit encore : « En vérité, en vérité, je vous le dis, je suis la porte des brebis.",
+        "NAB": "So Jesus said again, \"Amen, amen, I say to you, I am the gate for the sheep.",
+        "VAT_ES": "Entonces Jesús prosiguió: «Les aseguro que yo soy la puerta de las ovejas.",
+        "CEI": "Intanto la parola di Dio si diffondeva e si moltiplicava grandemente il numero dei discepoli a Gerusalemme; anche un gran numero di sacerdoti aderiva alla fede."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "BYZ": "Πάντες ὅσοι ἦλθον κλέπται εἰσὶν καὶ λῃσταί· ἀλλ’ οὐκ ἤκουσαν αὐτῶν τὰ πρόβατα.",
+        "VUL": "Omnes quotquot venerunt, fures sunt, et latrones, et non audierunt eos oves.",
+        "SYN": "Все, сколько их ни приходило предо Мною, суть воры и разбойники; но овцы не послушали их.",
+        "NEO": "Tous ceux qui sont venus avant moi sont des voleurs et des brigands ; mais les brebis ne les ont pas écoutés.",
+        "NAB": "All who came [before me] are thieves and robbers, but the sheep did not listen to them.",
+        "VAT_ES": "Todos aquellos que han venido antes de mí son ladrones y asaltantes, pero las ovejas no los han escuchado.",
+        "CEI": "Stefano intanto, pieno di grazia e di fortezza, faceva grandi prodigi e miracoli tra il popolo."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐγώ εἰμι ἡ θύρα· δι’ ἐμοῦ ἐάν τις εἰσέλθῃ, σωθήσεται, καὶ εἰσελεύσεται καὶ ἐξελεύσεται, καὶ νομὴν εὑρήσει.",
+        "VUL": "Ego sum ostium. Per me si quis introierit, salvabitur : et ingredietur, et egredietur, et pascua inveniet.",
+        "SYN": "Я есмь дверь: кто войдет Мною, тот спасется, и войдет, и выйдет, и пажить найдет.",
+        "NEO": "Je suis la porte : si quelqu’un entre par moi, il sera sauvé ; il entrera, et il sortira, et il trouvera des pâturages.",
+        "NAB": "I am the gate. Whoever enters through me will be saved, and will come in and go out and find pasture.",
+        "VAT_ES": "Yo soy la puerta. El que entra por mí se salvará; podrá entrar y salir, y encontrará su alimento",
+        "CEI": "Sorsero allora alcuni della sinagoga detta dei \"liberti\" comprendente anche i Cirenèi, gli Alessandrini e altri della Cilicia e dell'Asia, a disputare con Stefano,"
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὁ κλέπτης οὐκ ἔρχεται εἰ μὴ ἵνα κλέψῃ καὶ θύσῃ καὶ ἀπολέσῃ· ἐγὼ ἦλθον ἵνα ζωὴν ἔχωσιν, καὶ περισσὸν ἔχωσιν.",
+        "VUL": "Fur non venit nisi ut furetur, et mactet, et perdat. Ego veni ut vitam habeant, et abundantius habeant.",
+        "SYN": "Вор приходит только для того, чтобы украсть, убить и погубить. Я пришел для того, чтобы имели жизнь и имели с избытком.",
+        "NEO": "Le voleur ne vient que pour dérober, égorger et détruire ; moi, je suis venu pour que les brebis aient la vie, et qu’elles soient dans l’abondance.",
+        "NAB": "A thief comes only to steal and slaughter and destroy; I came so that they might have life and have it more abundantly.",
+        "VAT_ES": "El ladrón no viene sino para robar, matar y destruir. Pero yo he venido para que las ovejas tengan Vida, y la tengan en abundancia.",
+        "CEI": "ma non riuscivano a resistere alla sapienza ispirata con cui egli parlava."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός· ὁ ποιμὴν ὁ καλὸς τὴν ψυχὴν αὐτοῦ τίθησιν ὑπὲρ τῶν προβάτων.",
+        "VUL": "Ego sum pastor bonus. Bonus pastor animam suam dat pro ovibus suis.",
+        "SYN": "Я есмь пастырь добрый: пастырь добрый полагает жизнь свою за овец.",
+        "NEO": "Je suis+ 10:11 11. Les Prophètes avaient souvent décrit le Messie sous les traits d’un pasteur plein de bonté (voy. Is. xl, 11 ; Jér. xxiii, 4 ; Ezéch. xxxiv, 23 ; xxxvii, 24 ; Zach. xiii, 17). Souvent aussi ils avaient appelé le peuple de Dieu troupeau du Seigneur, brebis de son pâturage. (Ps. lxxix h. 13 ; c, 3 h. ; Ezéch. xxxiv, 3 sv. ; Mich. vii, 14 ; Zach. x, 3).*",
+        "NAB": "I am the good shepherd. A good shepherd lays down his life for the sheep.",
+        "VAT_ES": "Yo soy el buen Pastor. El buen Pastor da su vida por las ovejas.",
+        "CEI": "Perciò sobillarono alcuni che dissero: \"Lo abbiamo udito pronunziare espressioni blasfeme contro Mosè e contro Dio\"."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὁ μισθωτὸς δέ, καὶ οὐκ ὢν ποιμήν, οὗ οὐκ εἰσὶν τὰ πρόβατα ἴδια, θεωρεῖ τὸν λύκον ἐρχόμενον, καὶ ἀφίησιν τὰ πρόβατα, καὶ φεύγει· καὶ ὁ λύκος ἁρπάζει αὐτά, καὶ σκορπίζει τὰ πρόβατα.",
+        "VUL": "Mercenarius autem, et qui non est pastor, cujus non sunt oves propriæ, videt lupum venientem, et dimittit oves, et fugit : et lupus rapit, et dispergit oves ;",
+        "SYN": "А наемник, не пастырь, которому овцы не свои, видит приходящего волка, и оставляет овец, и бежит; и волк расхищает овец, и разгоняет их.",
+        "NEO": "Mais le mercenaire, qui n’est pas le pasteur, et à qui les brebis n’appartiennent pas, voit venir le loup, laisse là les brebis et prend la fuite ; et le loup les ravit et les disperse.",
+        "NAB": "A hired man, who is not a shepherd and whose sheep are not his own, sees a wolf coming and leaves the sheep and runs away, and the wolf catches and scatters them.",
+        "VAT_ES": "El asalariado, en cambio, que no es el pastor y al que no pertenecen las ovejas, cuando ve venir al lobo las abandona y huye. y el lobo las arrebata y la dispersa.",
+        "CEI": "E così sollevarono il popolo, gli anziani e gli scribi, gli piombarono addosso, lo catturarono e lo trascinarono davanti al sinedrio."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὁ δὲ μισθωτὸς φεύγει, ὅτι μισθωτός ἐστιν, καὶ οὐ μέλει αὐτῷ περὶ τῶν προβάτων.",
+        "VUL": "mercenarius autem fugit, quia mercenarius est, et non pertinet ad eum de ovibus.",
+        "SYN": "А наемник бежит, потому что наемник, и нерадит об овцах.",
+        "NEO": "Le mercenaire s’enfuit, parce qu’il est mercenaire et qu’il n’a nul souci des brebis.",
+        "NAB": "This is because he works for pay and has no concern for the sheep.",
+        "VAT_ES": "Como es asalariado, no se preocupa por las ovejas.",
+        "CEI": "Presentarono quindi dei falsi testimoni, che dissero: \"Costui non cessa di proferire parole contro questo luogo sacro e contro la legge."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός, καὶ γινώσκω τὰ ἐμά, καὶ γινώσκομαι ὑπὸ τῶν ἐμῶν.",
+        "VUL": "Ego sum pastor bonus : et cognosco meas, et cognoscunt me meæ.",
+        "SYN": "Я есмь пастырь добрый; и знаю Моих, и Мои знают Меня.",
+        "NEO": "Je suis le bon pasteur ; je connais mes brebis, et mes brebis me connaissent,",
+        "NAB": "I am the good shepherd, and I know mine and mine know me,",
+        "VAT_ES": "Yo soy el buen Pastor: conozco a mis ovejas, y mis ovejas me conocen a mí",
+        "CEI": "Lo abbiamo udito dichiarare che Gesù il Nazareno distruggerà questo luogo e sovvertirà i costumi tramandatici da Mosè\"."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καθὼς γινώσκει με ὁ πατήρ, κἀγὼ γινώσκω τὸν πατέρα· καὶ τὴν ψυχήν μου τίθημι ὑπὲρ τῶν προβάτων.",
+        "VUL": "Sicut novit me Pater, et ego agnosco Patrem : et animam meam pono pro ovibus meis.",
+        "SYN": "Как Отец знает Меня, _так_ и Я знаю Отца; и жизнь Мою полагаю за овец.",
+        "NEO": "comme mon Père me connaît, et que je connais mon Père, et je donne ma vie pour mes brebis.",
+        "NAB": "just as the Father knows me and I know the Father; and I will lay down my life for the sheep.",
+        "VAT_ES": "–como el Padre me conoce a mí y yo conozco al Padre– y doy mi vida por las ovejas.",
+        "CEI": "E tutti quelli che sedevano nel sinedrio, fissando gli occhi su di lui, videro il suo volto come quello di un angelo."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,14 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ἄλλα πρόβατα ἔχω, ἃ οὐκ ἔστιν ἐκ τῆς αὐλῆς ταύτης· κἀκεῖνά με δεῖ ἀγαγεῖν, καὶ τῆς φωνῆς μου ἀκούσουσιν· καὶ γενήσεται μία ποίμνη, εἷς ποιμήν.",
+        "VUL": "Et alias oves habeo, quæ non sunt ex hoc ovili : et illas oportet me adducere, et vocem meam audient, et fiet unum ovile et unus pastor.",
+        "SYN": "Есть у Меня и другие овцы, которые не сего двора, и тех надлежит Мне привести: и они услышат голос Мой, и будет одно стадо и один Пастырь.",
+        "NEO": "J’ai encore d’autres brebis, qui ne sont pas de cette bergerie ; il faut aussi que je les amène, et elles entendront ma voix, et il y aura une seule bergerie, un seul pasteur.+ 10:16 16. J’ai encore d’autres brebis, les Gentils. — \\+qt Il n’y aura\\+qt* plus après ma mort, \\+qt qu’une bergerie\\+qt* : le mur de séparation entre le judaïsme et le paganisme sera renversé (Eph. ii, 14 sv. ; Col. ii, 15).*",
+        "NAB": "I have other sheep that do not belong to this fold. These also I must lead, and they will hear my voice, and there will be one flock, one shepherd.",
+        "VAT_ES": "Tengo, además, otras ovejas que no son de este corral y a las que debo también conducir: ellas oirán mi voz, y así habrá un solo Rebaño y un solo Pastor."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +289,14 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "BYZ": "Διὰ τοῦτο ὁ πατήρ με ἀγαπᾷ, ὅτι ἐγὼ τίθημι τὴν ψυχήν μου, ἵνα πάλιν λάβω αὐτήν.",
+        "VUL": "Propterea me diligit Pater : quia ego pono animam meam, ut iterum sumam eam.",
+        "SYN": "Потому любит Меня Отец, что Я отдаю жизнь Мою, чтобы опять принять ее.",
+        "NEO": "C’est pour cela que mon Père m’aime, parce que je donne ma vie pour la reprendre.",
+        "NAB": "This is why the Father loves me, because I lay down my life in order to take it up again.",
+        "VAT_ES": "El Padre me ama porque yo doy mi vida para recobrarla."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +305,14 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "BYZ": "Οὐδεὶς αἴρει αὐτὴν ἀπ’ ἐμοῦ, ἀλλ’ ἐγὼ τίθημι αὐτὴν ἀπ’ ἐμαυτοῦ. Ἐξουσίαν ἔχω θεῖναι αὐτήν, καὶ ἐξουσίαν ἔχω πάλιν λαβεῖν αὐτήν. Ταύτην τὴν ἐντολὴν ἔλαβον παρὰ τοῦ πατρός μου.",
+        "VUL": "Nemo tollit eam a me : sed ego pono eam a meipso, et potestatem habeo ponendi eam, et potestatem habeo iterum sumendi eam. Hoc mandatum accepi a Patre meo.",
+        "SYN": "Никто не отнимает ее у Меня, но Я Сам отдаю ее. Имею власть отдать ее и власть имею опять принять ее. Сию заповедь получил Я от Отца Моего.",
+        "NEO": "Personne ne me la ravit, mais je la donne de moi-même ; j’ai le pouvoir de la donner, et le pouvoir de la reprendre : tel est l’ordre que j’ai reçu de mon Père. »",
+        "NAB": "No one takes it from me, but I lay it down on my own. I have power to lay it down, and power to take it up again. This command I have received from my Father.\"",
+        "VAT_ES": "Nadie me la quita, sino que la doy por mí mismo. Tengo el poder de darla y de recobrarla: este es el mandato que recibí de mi Padre»."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +321,14 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Σχίσμα οὖν πάλιν ἐγένετο ἐν τοῖς Ἰουδαίοις διὰ τοὺς λόγους τούτους.",
+        "VUL": "Dissensio iterum facta est inter Judæos propter sermones hos.",
+        "SYN": "От этих слов опять произошла между Иудеями распря.",
+        "NEO": "Il s’éleva de nouveau une division parmi les Juifs à l’occasion de ce discours.",
+        "NAB": "Again there was a division among the Jews because of these words.",
+        "VAT_ES": "A causa de estas palabras, se produjo una nueva división entre los judíos."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +337,14 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἔλεγον δὲ πολλοὶ ἐξ αὐτῶν, Δαιμόνιον ἔχει καὶ μαίνεται· τί αὐτοῦ ἀκούετε;",
+        "VUL": "Dicebant autem multi ex ipsis : Dæmonium habet, et insanit : quid eum auditis ?",
+        "SYN": "Многие из них говорили: Он одержим бесом и безумствует; что слушаете Его?",
+        "NEO": "Plusieurs d’entre eux disaient : « Il est possédé d’un démon, il a perdu le sens : Pourquoi l’écoutez-vous ? »",
+        "NAB": "Many of them said, \"He is possessed and out of his mind; why listen to him?\"",
+        "VAT_ES": "Muchos de ellos decían: «Está poseído por un demonio y delira. &iquest;Por qué lo escuchan?»."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +353,14 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἄλλοι ἔλεγον, Ταῦτα τὰ ῥήματα οὐκ ἔστιν δαιμονιζομένου· μὴ δαιμόνιον δύναται τυφλῶν ὀφθαλμοὺς ἀνοίγειν;",
+        "VUL": "Alii dicebant : Hæc verba non sunt dæmonium habentis : numquid dæmonium potest cæcorum oculos aperire ?",
+        "SYN": "Другие говорили: это слова не бесноватого; может ли бес отверзать очи слепым?",
+        "NEO": "D’autres disaient : « Ce ne sont pas là les paroles d’un possédé ; est-ce qu’un démon peut ouvrir les yeux des aveugles ? »",
+        "NAB": "Others said, \"These are not the words of one possessed; surely a demon cannot open the eyes of the blind, can he?\"",
+        "VAT_ES": "Otros opinaban: «Estas palabras no son de un endemoniado. &iquest;Acaso un demonio puede abrir los ojos a los ciegos?»."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +369,14 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Ἐγένετο δὲ τὰ Ἐγκαίνια ἐν Ἱεροσολύμοις, καὶ χειμὼν ἦν·",
+        "VUL": "Facta sunt autem Encænia in Jerosolymis, et hiems erat.",
+        "SYN": "Настал же тогда в Иерусалиме _праздник_ обновления, и была зима.",
+        "NEO": "On célébrait à Jérusalem la fête de la Dédicace ; c’était l’hiver ;+ 10:22 22. Cette fête se célébrait le 25 du neuvième mois, appelé Casleu (milieu de décembre). (I Mach. iv, 52-59 ; ii, 1, 18 ; x, 5-8.)*",
+        "NAB": "The feast of the Dedication was then taking place in Jerusalem. It was winter.",
+        "VAT_ES": "Se celebraba entonces en Jerusalén la fiesta de la Dedicación. Era invierno,"
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +385,14 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "BYZ": "καὶ περιεπάτει ὁ Ἰησοῦς ἐν τῷ ἱερῷ ἐν τῇ στοᾷ Σολομῶνος.",
+        "VUL": "Et ambulabat Jesus in templo, in porticu Salomonis.",
+        "SYN": "И ходил Иисус в храме, в притворе Соломоновом.",
+        "NEO": "et Jésus se promenait dans le temple, sous le portique de Salomon.",
+        "NAB": "And Jesus walked about in the temple area on the Portico of Solomon.",
+        "VAT_ES": "y Jesús se paseaba por el Templo, en el Pórtico de Salomón."
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +401,14 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐκύκλωσαν οὖν αὐτὸν οἱ Ἰουδαῖοι, καὶ ἔλεγον αὐτῷ, Ἕως πότε τὴν ψυχὴν ἡμῶν αἴρεις; Εἰ σὺ εἶ ὁ χριστός, εἰπὲ ἡμῖν παρρησίᾳ.",
+        "VUL": "Circumdederunt ergo eum Judæi, et dicebant ei : Quousque animam nostram tollis ? si tu es Christus, dic nobis palam.",
+        "SYN": "Тут Иудеи обступили Его и говорили Ему: долго ли Тебе держать нас в недоумении? если Ты Христос, скажи нам прямо.",
+        "NEO": "Les Juifs l’entourèrent donc et lui dirent : « Jusques à quand tiendras-tu notre esprit en suspens ? Si tu es le Christ dites-le-nous franchement. »",
+        "NAB": "So the Jews gathered around him and said to him, \"How long are you going to keep us in suspense? If you are the Messiah, tell us plainly.\"",
+        "VAT_ES": "Los Judíos lo rodearon y le preguntaron: «&iquest;Hasta cuándo nos tendrás en suspenso? Si eres el Mesías, dilo abiertamente»."
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +417,14 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀπεκρίθη αὐτοῖς ὁ Ἰησοῦς, Εἶπον ὑμῖν, καὶ οὐ πιστεύετε· τὰ ἔργα ἃ ἐγὼ ποιῶ ἐν τῷ ὀνόματι τοῦ πατρός μου, ταῦτα μαρτυρεῖ περὶ ἐμοῦ·",
+        "VUL": "Respondit eis Jesus : Loquor vobis, et non creditis : opera quæ ego facio in nomine Patris mei, hæc testimonium perhibent de me :",
+        "SYN": "Иисус отвечал им: Я сказал вам, и не верите; дела, которые творю Я во имя Отца Моего, они свидетельствуют о Мне.",
+        "NEO": "Jésus leur répondit : « Je vous l’ai dit, et vous ne me* croyez pas : les œuvres que je fais au nom de mon Père rendent témoignage de moi ;",
+        "NAB": "Jesus answered them, \"I told you and you do not believe. The works I do in my Father's name testify to me.",
+        "VAT_ES": "Jesús les respondió: «Ya se lo dije, pero ustedes no lo creen. Las obras que hago en nombre de mi Padre dan testimonio de mí,"
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +433,14 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἀλλ’ ὑμεῖς οὐ πιστεύετε· οὐ γάρ ἐστε ἐκ τῶν προβάτων τῶν ἐμῶν, καθὼς εἶπον ὑμῖν.",
+        "VUL": "sed vos non creditis, quia non estis ex ovibus meis.",
+        "SYN": "Но вы не верите, ибо вы не из овец Моих, как Я сказал вам.",
+        "NEO": "mais vous ne me croyez pas, parce que vous n’êtes pas de mes brebis.+ 10:26 26. Après de mes brebis, plusieurs manuscrits ajoutent, \\+qt comme je vous l’ai dit.\\+qt**",
+        "NAB": "But you do not believe, because you are not among my sheep.",
+        "VAT_ES": "pero ustedes no creen, porque no son de mis ovejas."
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +449,14 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τὰ πρόβατα τὰ ἐμὰ τῆς φωνῆς μου ἀκούει, κἀγὼ γινώσκω αὐτά, καὶ ἀκολουθοῦσίν μοι·",
+        "VUL": "Oves meæ vocem meam audiunt, et ego cognosco eas, et sequuntur me :",
+        "SYN": "Овцы Мои слушаются голоса Моего, и Я знаю их; и они идут за Мною.",
+        "NEO": "Mes brebis entendent ma voix ; je les connais, et elles me suivent.",
+        "NAB": "My sheep hear my voice; I know them, and they follow me.",
+        "VAT_ES": "Mis ovejas escuchan mi voz, yo las conozco y ellas me siguen."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +465,14 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "BYZ": "κἀγὼ ζωὴν αἰώνιον δίδωμι αὐτοῖς· καὶ οὐ μὴ ἀπόλωνται εἰς τὸν αἰῶνα, καὶ οὐχ ἁρπάσει τις αὐτὰ ἐκ τῆς χειρός μου.",
+        "VUL": "et ego vitam æternam do eis, et non peribunt in æternum, et non rapiet eas quisquam de manu mea.",
+        "SYN": "И Я даю им жизнь вечную, и не погибнут вовек; и никто не похитит их из руки Моей.",
+        "NEO": "Et je leur donne une vie éternelle, et elles ne périront jamais, et nul ne les ravira de ma main ;",
+        "NAB": "I give them eternal life, and they shall never perish. No one can take them out of my hand.",
+        "VAT_ES": "Yo les doy Vida eterna: ellas no perecerán jamás y nadie las arrebatará de mis manos."
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +481,14 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὁ πατήρ μου ὃς δέδωκέν μοι, μείζων πάντων ἐστίν· καὶ οὐδεὶς δύναται ἁρπάζειν ἐκ τῆς χειρὸς τοῦ πατρός μου.",
+        "VUL": "Pater meus quod dedit mihi, majus omnibus est : et nemo potest rapere de manu Patris mei.",
+        "SYN": "Отец Мой, Который дал Мне их, больше всех; и никто не может похитить их из руки Отца Моего.",
+        "NEO": "mon Père, qui me les a données, est plus grand que tous, et nul ne peut les ravir de la main de mon Père.+ 10:29 29. La Vulgate et quelques manuscrits grecs : Ce que mon Père m’a donné est plus grand que toutes choses.*",
+        "NAB": "My Father, who has given them to me, is greater than all, and no one can take them out of the Father's hand.",
+        "VAT_ES": "Mi Padre, que me las ha dado, es superior a todos y nadie puede arrebatar nada de las manos de mi Padre."
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +497,14 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐγὼ καὶ ὁ πατὴρ ἕν ἐσμεν.",
+        "VUL": "Ego et Pater unum sumus.",
+        "SYN": "Я и Отец -- одно.",
+        "NEO": "Mon père et moi nous sommes un. »",
+        "NAB": "The Father and I are one.\"",
+        "VAT_ES": "El Padre y yo somos una sola cosa»."
+      }
     },
     "31": {
       "seq": 31,
@@ -288,7 +513,14 @@
         "VUL": 31,
         "LXX": 31
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐβάστασαν οὖν πάλιν λίθους οἱ Ἰουδαῖοι ἵνα λιθάσωσιν αὐτόν.",
+        "VUL": "Sustulerunt ergo lapides Judæi, ut lapidarent eum.",
+        "SYN": "Тут опять Иудеи схватили каменья, чтобы побить Его.",
+        "NEO": "Les Juifs ramassèrent de nouveau+ 10:31 31. De nouveau. Voyez viii, 59. — \\+qt Le lapider\\+qt* comme blasphémateur. Les Juifs comprenaient donc que Jésus, par ces paroles, s’attribuait la nature divine.* des pierres pour le lapider.",
+        "NAB": "The Jews again picked up rocks to stone him.",
+        "VAT_ES": "Los judíos tomaron piedras para apedrearlo."
+      }
     },
     "32": {
       "seq": 32,
@@ -297,7 +529,14 @@
         "VUL": 32,
         "LXX": 32
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀπεκρίθη αὐτοῖς ὁ Ἰησοῦς, Πολλὰ καλὰ ἔργα ἔδειξα ὑμῖν ἐκ τοῦ πατρός μου· διὰ ποῖον αὐτῶν ἔργον λιθάζετέ με;",
+        "VUL": "Respondit eis Jesus : Multa bona opera ostendi vobis ex Patre meo : propter quod eorum opus me lapidatis ?",
+        "SYN": "Иисус отвечал им: много добрых дел показал Я вам от Отца Моего; за которое из них хотите побить Меня камнями?",
+        "NEO": "Jésus leur dit : « J’ai fait devant vous beaucoup d’œuvres bonnes qui venaient de mon Père : pour laquelle de ces œuvres me lapidez-vous ? »",
+        "NAB": "Jesus answered them, \"I have shown you many good works from my Father. For which of these are you trying to stone me?\"",
+        "VAT_ES": "Entonces Jesús dijo: «Les hice ver muchas obras buenas que vienen del Padre; &iquest;Por cuál de ellas me quieren apedrear?»."
+      }
     },
     "33": {
       "seq": 33,
@@ -306,7 +545,14 @@
         "VUL": 33,
         "LXX": 33
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀπεκρίθησαν αὐτῷ οἱ Ἰουδαῖοι λέγοντες, Περὶ καλοῦ ἔργου οὐ λιθάζομέν σε, ἀλλὰ περὶ βλασφημίας, καὶ ὅτι σὺ ἄνθρωπος ὢν ποιεῖς σεαυτὸν θεόν.",
+        "VUL": "Responderunt ei Judæi : De bono opere non lapidamus te, sed de blasphemia ; et quia tu homo cum sis, facis teipsum Deum.",
+        "SYN": "Иудеи сказали Ему в ответ: не за доброе дело хотим побить Тебя камнями, но за богохульство и за то, что Ты, будучи человек, делаешь Себя Богом.",
+        "NEO": "Les Juifs lui répondirent : « Ce n’est pas pour une bonne œuvre que nous te lapidons, mais pour un blasphème, et parce que, étant homme, tu te fais Dieu. »",
+        "NAB": "The Jews answered him, \"We are not stoning you for a good work but for blasphemy. You, a man, are making yourself God.\"",
+        "VAT_ES": "Los judíos le respondieron: «No queremos apedrearte por ninguna obra buena, sino porque blasfemas, ya que, siendo hombre, te haces Dios»."
+      }
     },
     "34": {
       "seq": 34,
@@ -315,7 +561,14 @@
         "VUL": 34,
         "LXX": 34
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀπεκρίθη αὐτοῖς ὁ Ἰησοῦς, Οὐκ ἔστιν γεγραμμένον ἐν τῷ νόμῳ ὑμῶν, Ἐγὼ εἶπα, Θεοί ἐστε;",
+        "VUL": "Respondit eis Jesus : Nonne scriptum est in lege vestra, Quia ego dixi : Dii estis ?",
+        "SYN": "Иисус отвечал им: не написано ли в законе вашем: Я сказал: вы боги?",
+        "NEO": "Jésus leur répondit : « N’est-il pas écrit dans votre Loi : J’ai dit : vous êtes des dieux ?+ 10:34 34. Ps. lxxxii (héb.).*",
+        "NAB": "Jesus answered them, \"Is it not written in your law, 'I said, \"You are gods\"'?",
+        "VAT_ES": "Jesús les respondió: «&iquest;No está escrito en la Ley: \"Yo dije: Ustedes son dioses\"?"
+      }
     },
     "35": {
       "seq": 35,
@@ -324,7 +577,14 @@
         "VUL": 35,
         "LXX": 35
       },
-      "text": {}
+      "text": {
+        "BYZ": "Εἰ ἐκείνους εἶπεν θεούς, πρὸς οὓς ὁ λόγος τοῦ θεοῦ ἐγένετο- καὶ οὐ δύναται λυθῆναι ἡ γραφή-",
+        "VUL": "Si illos dixit deos, ad quos sermo Dei factus est, et non potest solvi Scriptura :",
+        "SYN": "Если Он назвал богами тех, к которым было слово Божие, и не может нарушиться Писание, --",
+        "NEO": "Si la Loi appelle dieux ceux à qui la parole de Dieu a été adressée, et si l’Écriture ne peut être anéantie,",
+        "NAB": "If it calls them gods to whom the word of God came, and scripture cannot be set aside,",
+        "VAT_ES": "Si la Ley llama dioses a los que Dios dirigió su Palabra –y la Escritura no puede ser anulada–"
+      }
     },
     "36": {
       "seq": 36,
@@ -333,7 +593,14 @@
         "VUL": 36,
         "LXX": 36
       },
-      "text": {}
+      "text": {
+        "BYZ": "ὃν ὁ πατὴρ ἡγίασεν καὶ ἀπέστειλεν εἰς τὸν κόσμον, ὑμεῖς λέγετε ὅτι Βλασφημεῖς, ὅτι εἶπον, Υἱὸς τοῦ θεοῦ εἰμι;",
+        "VUL": "quem Pater sanctificavit, et misit in mundum vos dicitis : Quia blasphemas, quia dixi : Filius Dei sum ?",
+        "SYN": "Тому ли, Которого Отец освятил и послал в мир, вы говорите: богохульствуешь, потому что Я сказал: Я Сын Божий?",
+        "NEO": "comment dites-vous à celui que le Père a sanctifié+ 10:36 36. Sanctifié doit s’entendre ici de la consécration à la dignité messianique, d’où le nom de \\+qt Saint de Dieu\\+qt* donné à Jésus-Christ (Marc, i, 24 ; Luc, iv, 34 ; ). N.-S. argumente du moins au plus, et se hâte d’ajouter (vers. 38) qu’il est d’ailleurs le Fils de Dieu dans le sens propre du mot, c.‑à-d. un avec le Père en substance et en nature.* et envoyé dans le monde : Vous blasphémez, parce que j’ai dit : Je suis le Fils de Dieu ?",
+        "NAB": "can you say that the one whom the Father has consecrated and sent into the world blasphemes because I said, 'I am the Son of God'?",
+        "VAT_ES": "&iquest;Cómo dicen: \"Tú blasfemas\", a quien el Padre santificó y envió al mundo, porque dijo: \"Yo soy Hijo de Dios\"?"
+      }
     },
     "37": {
       "seq": 37,
@@ -342,7 +609,14 @@
         "VUL": 37,
         "LXX": 37
       },
-      "text": {}
+      "text": {
+        "BYZ": "Εἰ οὐ ποιῶ τὰ ἔργα τοῦ πατρός μου, μὴ πιστεύετέ μοι·",
+        "VUL": "Si non facio opera Patris mei, nolite credere mihi.",
+        "SYN": "Если Я не творю дел Отца Моего, не верьте Мне;",
+        "NEO": "Si je ne fais pas les œuvres de mon Père, ne me croyez pas.",
+        "NAB": "If I do not perform my Father's works, do not believe me;",
+        "VAT_ES": "Si no hago las obras de mi Padre, no me crean;"
+      }
     },
     "38": {
       "seq": 38,
@@ -351,7 +625,14 @@
         "VUL": 38,
         "LXX": 38
       },
-      "text": {}
+      "text": {
+        "BYZ": "εἰ δὲ ποιῶ, κἂν ἐμοὶ μὴ πιστεύητε, τοῖς ἔργοις πιστεύσατε· ἵνα γνῶτε καὶ πιστεύσητε ὅτι ἐν ἐμοὶ ὁ πατήρ, κἀγὼ ἐν αὐτῷ.",
+        "VUL": "Si autem facio : etsi mihi non vultis credere, operibus credite, ut cognoscatis, et credatis quia Pater in me est, et ego in Patre.",
+        "SYN": "а если творю, то, когда не верите Мне, верьте делам Моим, чтобы узнать и поверить, что Отец во Мне и Я в Нем.",
+        "NEO": "Mais si je les fais, lors même que vous ne voudriez pas me croire, croyez à mes œuvres : afin que vous sachiez et reconnaissiez+ 10:38 38. Reconnaissiez, Vulg. et une autre leçon gr. : \\+qt croyiez.\\+qt** que le Père est en moi, et que je suis dans le Père. »",
+        "NAB": "but if I perform them, even if you do not believe me, believe the works, so that you may realize (and understand) that the Father is in me and I am in the Father.\"",
+        "VAT_ES": "pero si las hago, crean en las obras, aunque no me crean a mí. Así reconocerán y sabrán que el Padre está en mí y yo en el Padre»."
+      }
     },
     "39": {
       "seq": 39,
@@ -360,7 +641,14 @@
         "VUL": 39,
         "LXX": 39
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐζήτουν οὖν πάλιν αὐτὸν πιάσαι· καὶ ἐξῆλθεν ἐκ τῆς χειρὸς αὐτῶν.",
+        "VUL": "Quærebant ergo eum apprehendere : et exivit de manibus eorum.",
+        "SYN": "Тогда опять искали схватить Его; но Он уклонился от рук их,",
+        "NEO": "Là-dessus, ils cherchèrent de nouveau à se saisir de lui, mais il s’échappa de leurs mains.",
+        "NAB": "(Then) they tried again to arrest him; but he escaped from their power.",
+        "VAT_ES": "Ellos intentaron nuevamente detenerlo, pero el se les escapó de las manos."
+      }
     },
     "40": {
       "seq": 40,
@@ -369,7 +657,14 @@
         "VUL": 40,
         "LXX": 40
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Καὶ ἀπῆλθεν πάλιν πέραν τοῦ Ἰορδάνου εἰς τὸν τόπον ὅπου ἦν Ἰωάννης τὸ πρῶτον βαπτίζων· καὶ ἔμεινεν ἐκεῖ.",
+        "VUL": "Et abiit iterum trans Jordanem, in eum locum ubi erat Joannes baptizans primum, et mansit illic ;",
+        "SYN": "и пошел опять за Иордан, на то место, где прежде крестил Иоанн, и остался там.",
+        "NEO": "Il s’en retourna au delà du Jourdain, dans le lieu où Jean avait commencé à baptiser ; et il y demeura.",
+        "NAB": "He went back across the Jordan to the place where John first baptized, and there he remained.",
+        "VAT_ES": "Jesús volvió a ir al otro lado del Jordán, al lugar donde Juan había bautizado, y se quedó allí."
+      }
     },
     "41": {
       "seq": 41,
@@ -378,7 +673,14 @@
         "VUL": 41,
         "LXX": 41
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ πολλοὶ ἦλθον πρὸς αὐτόν, καὶ ἔλεγον ὅτι Ἰωάννης μὲν σημεῖον ἐποίησεν οὐδέν· πάντα δὲ ὅσα εἶπεν Ἰωάννης περὶ τούτου, ἀληθῆ ἦν.",
+        "VUL": "et multi venerunt ad eum, et dicebant : Quia Joannes quidem signum fecit nullum.",
+        "SYN": "Многие пришли к Нему и говорили, что Иоанн не сотворил никакого чуда, но все, что сказал Иоанн о Нем, было истинно.",
+        "NEO": "Et beaucoup venaient à lui, disant : « Jean n’a fait aucun miracle ;",
+        "NAB": "Many came to him and said, \"John performed no sign, but everything John said about this man was true.\"",
+        "VAT_ES": "Muchos fueron a verlo, y la gente decía: «Juan no ha hecho ningún signo, pero todo lo que dijo de este hombre era verdad»."
+      }
     },
     "42": {
       "seq": 42,
@@ -387,7 +689,14 @@
         "VUL": 42,
         "LXX": 42
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ἐπίστευσαν πολλοὶ ἐκεῖ εἰς αὐτόν.",
+        "VUL": "Omnia autem quæcumque dixit Joannes de hoc, vera erant. Et multi crediderunt in eum.",
+        "SYN": "И многие там уверовали в Него.",
+        "NEO": "mais tout ce qu’il a dit de celui-ci était vrai. « Et il y en eut là beaucoup qui crurent en lui.",
+        "NAB": "And many there began to believe in him.",
+        "VAT_ES": "Y en ese lugar muchos creyeron en él."
+      }
     }
   }
 }

@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐν ἐκείναις ταῖς ἡμέραις, παμπόλλου ὄχλου ὄντος, καὶ μὴ ἐχόντων τί φάγωσιν, προσκαλεσάμενος ὁ Ἰησοῦς τοὺς μαθητὰς αὐτοῦ λέγει αὐτοῖς,",
+        "VUL": "In diebus illis iterum cum turba multa esset, nec haberent quod manducarent, convocatis discipulis, ait illis :",
+        "SYN": "В те дни, когда собралось весьма много народа и нечего было им есть, Иисус, призвав учеников Своих, сказал им:",
+        "NEO": "En ces jours-là, comme il y avait encore une grande foule qui n’avait pas de quoi manger, Jésus appela ses disciples et leur dit :",
+        "NAB": "In those days when there again was a great crowd without anything to eat, he summoned the disciples and said,",
+        "VAT_ES": "En esos días, volvió a reunirse una gran multitud, y como no tenían qué comer, Jesús llamó a sus discípulos y les dijo:",
+        "CEI": "Quando ebbe terminato di rivolgere tutte queste parole al popolo che stava in ascolto, entrò in Cafarnao."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "BYZ": "Σπλαγχνίζομαι ἐπὶ τὸν ὄχλον, ὅτι ἤδη ἡμέραι τρεῖς προσμένουσίν μοι, καὶ οὐκ ἔχουσιν τί φάγωσιν·",
+        "VUL": "Misereor super turbam : quia ecce jam triduo sustinent me, nec habent quod manducent :",
+        "SYN": "жаль Мне народа, что уже три дня находятся при Мне, и нечего им есть.",
+        "NEO": "« J’ai compassion de ce peuple, car voilà trois jours déjà qu’ils ne me quittent pas, et ils n’ont rien à manger.",
+        "NAB": "\"My heart is moved with pity for the crowd, because they have been with me now for three days and have nothing to eat.",
+        "VAT_ES": "«Me da pena esta multitud, porque hace tres días que están conmigo y no tienen qué comer.",
+        "CEI": "Il servo di un centurione era ammalato e stava per morire. Il centurione l'aveva molto caro."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "BYZ": "καὶ ἐὰν ἀπολύσω αὐτοὺς νήστεις εἰς οἶκον αὐτῶν, ἐκλυθήσονται ἐν τῇ ὁδῷ· τινὲς γὰρ αὐτῶν μακρόθεν ἥκουσιν.",
+        "VUL": "et si dimisero eos jejunos in domum suam, deficient in via : quidam enim ex eis de longe venerunt.",
+        "SYN": "Если неевшими отпущу их в домы их, ослабеют в дороге, ибо некоторые из них пришли издалека.",
+        "NEO": "Si je les renvoie dans leur maison sans nourriture, ils tomberont de défaillance en chemin ; car plusieurs d’entre eux sont venus de loin ! »",
+        "NAB": "If I send them away hungry to their homes, they will collapse on the way, and some of them have come a great distance.\"",
+        "VAT_ES": "Si los mando en ayunas a sus casas, van a desfallecer en el camino, y algunos han venido de lejos».",
+        "CEI": "Perciò, avendo udito parlare di Gesù, gli mandò alcuni anziani dei Giudei a pregarlo di venire e di salvare il suo servo."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ἀπεκρίθησαν αὐτῷ οἱ μαθηταὶ αὐτοῦ, Πόθεν τούτους δυνήσεταί τις ὧδε χορτάσαι ἄρτων ἐπ’ ἐρημίας;",
+        "VUL": "Et responderunt ei discipuli sui : Unde illos quis poterit saturare panibus in solitudine ?",
+        "SYN": "Ученики Его отвечали Ему: откуда мог бы кто _взять_ здесь в пустыне хлебов, чтобы накормить их?",
+        "NEO": "Ses disciples lui répondirent : « Comment pourrait-on trouver ici, dans un désert, assez de pain pour les rassasier ? »",
+        "NAB": "His disciples answered him, \"Where can anyone get enough bread to satisfy them here in this deserted place?\"",
+        "VAT_ES": "Los discípulos le preguntaron: «&iquest;Cómo se podría conseguir pan en este lugar desierto para darles de comer?».",
+        "CEI": "Costoro giunti da Gesù lo pregavano con insistenza: \"Egli merita che tu gli faccia questa grazia, dicevano,"
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ἐπηρώτα αὐτούς, Πόσους ἔχετε ἄρτους; Οἱ δὲ εἶπον, Ἑπτά.",
+        "VUL": "Et interrogavit eos : Quot panes habetis ? Qui dixerunt : Septem.",
+        "SYN": "И спросил их: сколько у вас хлебов? Они сказали: семь.",
+        "NEO": "Et il leur demanda : « Combien avez-vous de pains ? » Ils dirent : « Sept. »",
+        "NAB": "Still he asked them, \"How many loaves do you have?\" \"Seven,\" they replied.",
+        "VAT_ES": "el les dijo: «&iquest;Cuántos panes tienen ustedes?». Ellos respondieron: «Siete».",
+        "CEI": "perché ama il nostro popolo, ed è stato lui a costruirci la sinagoga\"."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ παρήγγειλεν τῷ ὄχλῳ ἀναπεσεῖν ἐπὶ τῆς γῆς· καὶ λαβὼν τοὺς ἑπτὰ ἄρτους, εὐχαριστήσας ἔκλασεν καὶ ἐδίδου τοῖς μαθηταῖς αὐτοῦ, ἵνα παραθῶσιν· καὶ παρέθηκαν τῷ ὄχλῳ.",
+        "VUL": "Et præcepit turbæ discumbere super terram. Et accipiens septem panes, gratias agens fregit, et dabat discipulis suis ut apponerent, et apposuerunt turbæ.",
+        "SYN": "Тогда велел народу возлечь на землю; и, взяв семь хлебов и воздав благодарение, преломил и дал ученикам Своим, чтобы они раздали; и они раздали народу.",
+        "NEO": "Alors il fit asseoir la foule par terre, prit les sept pains, et, après avoir rendu grâces, il les rompit et les donna à ses disciples pour les distribuer ; et ils les distribuèrent au peuple.",
+        "NAB": "He ordered the crowd to sit down on the ground. Then, taking the seven loaves he gave thanks, broke them, and gave them to his disciples to distribute, and they distributed them to the crowd.",
+        "VAT_ES": "Entonces él ordenó a la multitud que se sentara en el suelo, después tomó los siete panes, dio gracias, los partió y los fue entregando a sus discípulos para que los distribuyeran. Ellos los repartieron entre la multitud.",
+        "CEI": "Gesù si incamminò con loro. Non era ormai molto distante dalla casa quando il centurione mandò alcuni amici a dirgli: \"Signore, non stare a disturbarti, io non son degno che tu entri sotto il mio tetto;"
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ εἶχον ἰχθύδια ὀλίγα· καὶ εὐλογήσας εἶπεν παραθεῖναι καὶ αὐτά.",
+        "VUL": "Et habebant pisciculos paucos : et ipsos benedixit, et jussit apponi.",
+        "SYN": "Было у них и немного рыбок: благословив, Он велел раздать и их.",
+        "NEO": "Ils avaient en outre quelques petits poissons ; après avoir prononcé une bénédiction, Jésus les fit aussi distribuer.",
+        "NAB": "They also had a few fish. He said the blessing over them and ordered them distributed also.",
+        "VAT_ES": "Tenían, además, unos cuantos pescados pequeños, y después de pronunciar la bendición sobre ellos, mandó que también los repartieran.",
+        "CEI": "per questo non mi sono neanche ritenuto degno di venire da te, ma comanda con una parola e il mio servo sarà guarito."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἔφαγον δέ, καὶ ἐχορτάσθησαν· καὶ ἦραν περισσεύματα κλασμάτων ἑπτὰ σπυρίδας.",
+        "VUL": "Et manducaverunt, et saturati sunt, et sustulerunt quod superaverat de fragmentis, septem sportas.",
+        "SYN": "И ели, и насытились; и набрали оставшихся кусков семь корзин.",
+        "NEO": "Ils mangèrent et furent rassasiés, et l’on emporta sept corbeilles des morceaux qui restaient.",
+        "NAB": "They ate and were satisfied. They picked up the fragments left over - seven baskets.",
+        "VAT_ES": "Comieron hasta saciarse y todavía se recogieron siete canastas con lo que había sobrado.",
+        "CEI": "Anch'io infatti sono uomo sottoposto a un'autorità, e ho sotto di me dei soldati; e dico all'uno: Và ed egli va, e a un altro: Vieni, ed egli viene, e al mio servo: Fà questo, ed egli lo fa\"."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἦσαν δὲ οἱ φαγόντες ὡς τετρακισχίλιοι· καὶ ἀπέλυσεν αὐτούς.",
+        "VUL": "Erant autem qui manducaverunt, quasi quatuor millia : et dimisit eos.",
+        "SYN": "Евших же было около четырех тысяч. И отпустил их.",
+        "NEO": "Or ceux qui mangèrent étaient environ quatre mille. Ensuite Jésus les renvoya.",
+        "NAB": "There were about four thousand people. He dismissed them",
+        "VAT_ES": "Eran unas cuatro mil personas. Luego Jesús los despidió.",
+        "CEI": "All'udire questo Gesù restò ammirato e rivolgendosi alla folla che lo seguiva disse: \"Io vi dico che neanche in Israele ho trovato una fede così grande!\"."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ εὐθέως ἐμβὰς εἰς τὸ πλοῖον μετὰ τῶν μαθητῶν αὐτοῦ, ἦλθεν εἰς τὰ μέρη Δαλμανουθά.",
+        "VUL": "Et statim ascendens navim cum discipulis suis, venit in partes Dalmanutha.",
+        "SYN": "И тотчас войдя в лодку с учениками Своими, прибыл в пределы Далмануфские.",
+        "NEO": "Il monta aussitôt dans la barque avec ses disciples, et vint dans le pays de Dalmanutha+ 8:10 VIII. 10. Cette localité ne figure ni dans l’Ancien Testament ni dans Josèphe. En S. Matthieu on lit Magadan (xv, 39). C’est sans doute Ed-Delhanuyéh et la localité voisine Mâ’ad, transcrite Μαγαδάν en grec. Vigouroux. Dict, de la Bible. Ce pays doit être la partie septentrionale de la vallée du Jourdain, au delà de ce fleuve.*.",
+        "NAB": "and got into the boat with his disciples and came to the region of Dalmanutha.",
+        "VAT_ES": "En seguida subió a la barca con sus discípulos y fue a la región de Dalmanuta.",
+        "CEI": "E gli inviati, quando tornarono a casa, trovarono il servo guarito."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Καὶ ἐξῆλθον οἱ Φαρισαῖοι, καὶ ἤρξαντο συζητεῖν αὐτῷ, ζητοῦντες παρ’ αὐτοῦ σημεῖον ἀπὸ τοῦ οὐρανοῦ, πειράζοντες αὐτόν.",
+        "VUL": "Et exierunt pharisæi, et cperunt conquirere cum eo, quærentes ab illo signum de cælo, tentantes eum.",
+        "SYN": "Вышли фарисеи, начали с Ним спорить и требовали от Него знамения с неба, искушая Его.",
+        "NEO": "Survinrent les Pharisiens, qui commencèrent à discuter avec lui, lui demandant, pour l’éprouver, un signe du ciel.",
+        "NAB": "The Pharisees came forward and began to argue with him, seeking from him a sign from heaven to test him.",
+        "VAT_ES": "Entonces llegaron los fariseos, que comenzaron a discutir con él; y, para ponerlo a prueba, le pedían un signo del cielo.",
+        "CEI": "In seguito si recò in una città chiamata Nain e facevano la strada con lui i discepoli e grande folla."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ἀναστενάξας τῷ πνεύματι αὐτοῦ λέγει, Τί ἡ γενεὰ αὕτη σημεῖον ἐπιζητεῖ; Ἀμὴν λέγω ὑμῖν, εἰ δοθήσεται τῇ γενεᾷ ταύτῃ σημεῖον.",
+        "VUL": "Et ingemiscens spiritu, ait : Quid generatio ista signum quærit ? Amen dico vobis, si dabitur generationi isti signum.",
+        "SYN": "И Он, глубоко вздохнув, сказал: для чего род сей требует знамения? Истинно говорю вам, не дастся роду сему знамение.",
+        "NEO": "Jésus ayant poussé un profond soupir, dit : « Pourquoi cette génération demande-t-elle un signe ?+ 8:12 12. La Vulgate a traduit mot à mot la tournure hébraïque : amen dico vobis, si dabitur etc. La conjonction si au lieu de non, équivaut à une négation plus énergique. S’il est accordé un signe à cette génération, \\+qt s. ent.\\+qt* que Dieu fasse, etc. Cf. Ps. xcv, 11.* Je vous le dis, en vérité, il ne sera pas donné de signe à cette génération. »",
+        "NAB": "He sighed from the depth of his spirit and said, \"Why does this generation seek a sign? Amen, I say to you, no sign will be given to this generation.\"",
+        "VAT_ES": "Jesús, suspirando profundamente, dijo: «&iquest;Por qué esta generación pide un signo? Les aseguro que no se le dará ningún signo».",
+        "CEI": "Quando fu vicino alla porta della città, ecco che veniva portato al sepolcro un morto, figlio unico di madre vedova; e molta gente della città era con lei."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ἀφεὶς αὐτούς, ἐμβὰς πάλιν εἰς πλοῖον, ἀπῆλθεν εἰς τὸ πέραν.",
+        "VUL": "Et dimittens eos, ascendit iterum navim et abiit trans fretum.",
+        "SYN": "И, оставив их, опять вошел в лодку и отправился на ту сторону.",
+        "NEO": "Et les laissant, il remonta dans la barque et passa à l’autre bord.",
+        "NAB": "Then he left them, got into the boat again, and went off to the other shore.",
+        "VAT_ES": "Y dejándolos, volvió a embarcarse hacia la otra orilla.",
+        "CEI": "Vedendola, il Signore ne ebbe compassione e le disse: \"Non piangere!\"."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Καὶ ἐπελάθοντο λαβεῖν ἄρτους, καὶ εἰ μὴ ἕνα ἄρτον οὐκ εἶχον μεθ’ ἑαυτῶν ἐν τῷ πλοίῳ.",
+        "VUL": "Et obliti sunt panes sumere : et nisi unum panem non habebant secum in navi.",
+        "SYN": "При сем ученики Его забыли взять хлебов и кроме одного хлеба не имели с собою в лодке.",
+        "NEO": "Or les disciples avaient oublié de prendre des pains ; ils n’en avaient qu’un seul avec eux dans la barque.",
+        "NAB": "They had forgotten to bring bread, and they had only one loaf with them in the boat.",
+        "VAT_ES": "Los discípulos se habían olvidado de llevar pan y no tenían más que un pan en la barca.",
+        "CEI": "E accostatosi toccò la bara, mentre i portatori si fermarono. Poi disse: \"Giovinetto, dico a te, alzati!\"."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ διεστέλλετο αὐτοῖς, λέγων, Ὁρᾶτε, βλέπετε ἀπὸ τῆς ζύμης τῶν Φαρισαίων καὶ τῆς ζύμης Ἡρῴδου.",
+        "VUL": "Et præcipiebat eis, dicens : Videte, et cavete a fermento pharisæorum, et fermento Herodis.",
+        "SYN": "А Он заповедал им, говоря: смотрите, берегитесь закваски фарисейской и закваски Иродовой.",
+        "NEO": "Jésus leur donna cet avertissement : « Gardez-vous avec soin du levain des Pharisiens et du levain d’Hérode. »+ 8:15 \\+it Le levain des Pharisiens\\+it* : l’hypocrisie cachée sous les dehors de la piété et du zèle, – \\+it d’Hérode\\+it* : la recherche des biens et des plaisirs matériels ou sensuels. Matth. xvi, 5*",
+        "NAB": "He enjoined them, \"Watch out, guard against the leaven of the Pharisees and the leaven of Herod.\"",
+        "VAT_ES": "Jesús les hacía esta recomendación: «Estén atentos, cuídense de la levadura de los fariseos y de la levadura de Herodes».",
+        "CEI": "Il morto si levò a sedere e incominciò a parlare. Ed egli lo diede alla madre."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ διελογίζοντο πρὸς ἀλλήλους, λέγοντες ὅτι Ἄρτους οὐκ ἔχομεν.",
+        "VUL": "Et cogitabant ad alterutrum, dicentes : quia panes non habemus.",
+        "SYN": "И, рассуждая между собою, говорили: _это_ _значит,_ что хлебов нет у нас.",
+        "NEO": "Sur quoi ils faisaient réflexion entre eux, disant : « C’est que nous n’avons pas de pains. »",
+        "NAB": "They concluded among themselves that it was because they had no bread.",
+        "VAT_ES": "Ellos discutían entre sí, porque no habían traído pan.",
+        "CEI": "Tutti furono presi da timore e glorificavano Dio dicendo: \"Un grande profeta è sorto tra noi e Dio ha visitato il suo popolo\"."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ γνοὺς ὁ Ἰησοῦς λέγει αὐτοῖς, Τί διαλογίζεσθε ὅτι ἄρτους οὐκ ἔχετε; Οὔπω νοεῖτε, οὐδὲ συνίετε; Ἔτι πεπωρωμένην ἔχετε τὴν καρδίαν ὑμῶν;",
+        "VUL": "Quo cognito, ait illis Jesus : Quid cogitatis, quia panes non habetis ? nondum cognoscitis nec intelligitis ? adhuc cæcatum habetis cor vestrum ?",
+        "SYN": "Иисус, уразумев, говорит им: что рассуждаете о том, что нет у вас хлебов? Еще ли не понимаете и не разумеете? Еще ли окаменено у вас сердце?",
+        "NEO": "Jésus, connaissant leur pensée, leur dit : « Pourquoi vous entretenez-vous de ce que vous n’avez pas de pains ? N’avez-vous encore ni sens ni intelligence ? Votre cœur est-il encore aveuglé ?",
+        "NAB": "When he became aware of this he said to them, \"Why do you conclude that it is because you have no bread? Do you not yet understand or comprehend? Are your hearts hardened?",
+        "VAT_ES": "Jesús se dio cuenta y les dijo: «&iquest;A qué viene esa discusión porque no tienen pan? &iquest;Todavía no comprenden ni entienden? Ustedes tienen la mente enceguecida.",
+        "CEI": "La fama di questi fatti si diffuse in tutta la Giudea e per tutta la regione."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὀφθαλμοὺς ἔχοντες οὐ βλέπετε; Καὶ ὦτα ἔχοντες οὐκ ἀκούετε; Καὶ οὐ μνημονεύετε;",
+        "VUL": "oculos habentes non videtis ? et aures habentes non auditis ? nec recordamini,",
+        "SYN": "Имея очи, не видите? имея уши, не слышите? и не помните?",
+        "NEO": "Avez-vous des yeux pour ne pas voir, des oreilles pour ne pas entendre ?* Et n’avez-vous pas de mémoire ?",
+        "NAB": "Do you have eyes and not see, ears and not hear? And do you not remember,",
+        "VAT_ES": "Tienen ojos y no ven, oídos y no oyen. &iquest;No recuerdan",
+        "CEI": "Anche Giovanni fu informato dai suoi discepoli di tutti questi avvenimenti. Giovanni chiamò due di essi"
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὅτε τοὺς πέντε ἄρτους ἔκλασα εἰς τοὺς πεντακισχιλίους, πόσους κοφίνους πλήρεις κλασμάτων ἤρατε; Λέγουσιν αὐτῷ, Δώδεκα.",
+        "VUL": "quando quinque panes fregi in quinque millia : quot cophinos fragmentorum plenos sustulistis ? Dicunt ei : Duodecim.",
+        "SYN": "Когда Я пять хлебов преломил для пяти тысяч _человек,_ сколько полных коробов набрали вы кусков? Говорят Ему: двенадцать.",
+        "NEO": "Quand j’ai rompu les cinq pains entre les cinq mille hommes, combien avez-vous emporté de corbeilles pleines de morceaux ? » Ils lui dirent : « Douze. » —",
+        "NAB": "when I broke the five loaves for the five thousand, how many wicker baskets full of fragments you picked up?\" They answered him, \"Twelve.\"",
+        "VAT_ES": "cuántas canastas llenas de sobras recogieron, cuando repartí cinco panes entre cinco mil personas?». Ellos le respondieron: «Doce».",
+        "CEI": "e li mandò a dire al Signore: \"Sei tu colui che viene, o dobbiamo aspettare un altro?\"."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +341,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὅτε δὲ τοὺς ἑπτὰ εἰς τοὺς τετρακισχιλίους, πόσων σπυρίδων πληρώματα κλασμάτων ἤρατε; Οἱ δὲ εἶπον, Ἑπτά.",
+        "VUL": "Quando et septem panes in quatuor millia : quot sportas fragmentorum tulistis ? Et dicunt ei : Septem.",
+        "SYN": "А когда семь для четырех тысяч, сколько корзин набрали вы оставшихся кусков. Сказали: семь.",
+        "NEO": "Et quand j’ai rompu les sept pains entre les quatre mille hommes, combien de paniers pleins de morceaux avez-vous emportés ? » Ils lui dirent : « Sept. »",
+        "NAB": "\"When I broke the seven loaves for the four thousand, how many full baskets of fragments did you pick up?\" They answered (him), \"Seven.\"",
+        "VAT_ES": "«Y cuando repartí siete panes entre cuatro mil personas, &iquest;cuántas canastas llenas de trozos recogieron?». Ellos le respondieron: «Siete».",
+        "CEI": "Venuti da lui, quegli uomini dissero: \"Giovanni il Battista ci ha mandati da te per domandarti: Sei tu colui che viene o dobbiamo aspettare un altro?\"."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +358,15 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ἔλεγεν αὐτοῖς, Πῶς οὐ συνίετε;",
+        "VUL": "Et dicebat eis : Quomodo nondum intelligitis ?",
+        "SYN": "И сказал им: как же не разумеете?",
+        "NEO": "Il leur dit : « Comment ne comprenez-vous pas encore ? »",
+        "NAB": "He said to them, \"Do you still not understand?\"",
+        "VAT_ES": "Entonces Jesús les dijo: «&iquest;Todavía no comprenden?».",
+        "CEI": "In quello stesso momento Gesù guarì molti da malattie, da infermità, da spiriti cattivi e donò la vista a molti ciechi."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +375,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Καὶ ἔρχεται εἰς Βηθσαϊδάν. Καὶ φέρουσιν αὐτῷ τυφλόν, καὶ παρακαλοῦσιν αὐτὸν ἵνα αὐτοῦ ἅψηται.",
+        "VUL": "Et veniunt Bethsaidam, et adducunt ei cæcum, et rogabant eum ut illum tangeret.",
+        "SYN": "Приходит в Вифсаиду; и приводят к Нему слепого и просят, чтобы прикоснулся к нему.",
+        "NEO": "Ils arrivèrent à Bethsaïde, et on lui amena un aveugle qu’on le pria de toucher.",
+        "NAB": "When they arrived at Bethsaida, they brought to him a blind man and begged him to touch him.",
+        "VAT_ES": "Cuando llegaron a Betsaida, le trajeron a un ciego y le rogaban que lo tocara.",
+        "CEI": "Poi diede loro questa risposta: \"Andate e riferite a Giovanni ciò che avete visto e udito: i ciechi riacquistano la vista, gli zoppi camminano, i lebbrosi vengono sanati, i sordi odono, i morti risuscitano, ai poveri è annunziata la buona novella."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +392,15 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ἐπιλαβόμενος τῆς χειρὸς τοῦ τυφλοῦ, ἐξήγαγεν αὐτὸν ἔξω τῆς κώμης· καὶ πτύσας εἰς τὰ ὄμματα αὐτοῦ, ἐπιθεὶς τὰς χεῖρας αὐτῷ, ἐπηρώτα αὐτὸν εἴ τι βλέπει.",
+        "VUL": "Et apprehensa manu cæci, eduxit eum extra vicum : et exspuens in oculos ejus impositis manibus suis, interrogavit eum si quid videret.",
+        "SYN": "Он, взяв слепого за руку, вывел его вон из селения и, плюнув ему на глаза, возложил на него руки и спросил его: видит ли что?",
+        "NEO": "Prenant la main de l’aveugle, Jésus le conduisit hors du bourg, lui mit de sa salive sur les yeux, et, lui ayant imposé les mains, lui demanda s’il voyait quelque chose.",
+        "NAB": "He took the blind man by the hand and led him outside the village. Putting spittle on his eyes he laid his hands on him and asked, \"Do you see anything?\"",
+        "VAT_ES": "El tomó al ciego de la mano y lo condujo a las afueras del pueblo. Después de ponerla saliva en los ojos e imponerle las manos, Jesús le preguntó: «&iquest;Ves algo?».",
+        "CEI": "E beato è chiunque non sarà scandalizzato di me!\"."
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +409,15 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ἀναβλέψας ἔλεγεν, Βλέπω τοὺς ἀνθρώπους, ὅτι ὡς δένδρα ὁρῶ περιπατοῦντας.",
+        "VUL": "Et aspiciens, ait : Video homines velut arbores ambulantes.",
+        "SYN": "Он, взглянув, сказал: вижу проходящих людей, как деревья.",
+        "NEO": "L’aveugle leva les yeux et dit : « Je vois les hommes qui marchent, semblables à des arbres.+ 8:24 24. Plusieurs manuscrits grecs Je vois les hommes, car je les vois marcher, semblables à des arbres.* »",
+        "NAB": "Looking up he replied, \"I see people looking like trees and walking.\"",
+        "VAT_ES": "El ciego, que comenzaba a ver, le respondió: «Veo hombres, como si fueran árboles que caminan».",
+        "CEI": "Quando gli inviati di Giovanni furono partiti, Gesù cominciò a dire alla folla riguardo a Giovanni: \"Che cosa siete andati a vedere nel deserto? Una canna agitata dal vento?"
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +426,15 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "BYZ": "Εἶτα πάλιν ἐπέθηκεν τὰς χεῖρας ἐπὶ τοὺς ὀφθαλμοὺς αὐτοῦ, καὶ ἐποίησεν αὐτὸν ἀναβλέψαι. Καὶ ἀποκατεστάθη, καὶ ἐνέβλεψεν τηλαυγῶς ἅπαντας.",
+        "VUL": "Deinde iterum imposuit manus super oculos ejus : et cpit videre : et restitutus est ita ut clare videret omnia.",
+        "SYN": "Потом опять возложил руки на глаза ему и велел ему взглянуть. И он исцелел и стал видеть все ясно.",
+        "NEO": "Jésus lui mit de nouveau les mains sur les yeux, et il le fit regarder. Alors il fut si bien guéri, qu’il voyait distinctement toutes choses+ 8:25 25. Vulgate, il commença à voir. — \\+qt Distinctement et de loin\\+qt* τηλαυγῶς.*.",
+        "NAB": "Then he laid hands on his eyes a second time and he saw clearly; his sight was restored and he could see everything distinctly.",
+        "VAT_ES": "Jesús le puso nuevamente las manos sobre los ojos, y el hombre recuperó la vista. Así quedó curado y veía todo con claridad.",
+        "CEI": "E allora, che cosa siete andati a vedere? Un uomo avvolto in morbide vesti? Coloro che portano vesti sontuose e vivono nella lussuria stanno nei palazzi dei re."
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +443,15 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ἀπέστειλεν αὐτὸν εἰς τὸν οἶκον αὐτοῦ, λέγων, Μηδὲ εἰς τὴν κώμην εἰσέλθῃς, μηδὲ εἴπῃς τινὶ ἐν τῇ κώμῃ.",
+        "VUL": "Et misit illum in domum suam, dicens : Vade in domum tuam : et si in vicum introieris, nemini dixeris.",
+        "SYN": "И послал его домой, сказав: не заходи в селение и не рассказывай никому в селении.",
+        "NEO": "Alors Jésus le renvoya dans sa maison, en lui disant : « Va dans ta maison, sans entrer+ 8:26 26. Sans entrer: Vulg. \\+qt et si tu entres…\\+qt* Comp. Matth. vii, 4.* dans le bourg, ni parler de ceci à personne du bourg. »",
+        "NAB": "Then he sent him home and said, \"Do not even go into the village.\"",
+        "VAT_ES": "Jesús lo mandó a su casa, diciéndole: «Ni siquiera entres en el pueblo».",
+        "CEI": "Allora, che cosa siete andati a vedere? Un profeta? Sì, vi dico, e più che un profeta."
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +460,15 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Καὶ ἐξῆλθεν ὁ Ἰησοῦς καὶ οἱ μαθηταὶ αὐτοῦ εἰς τὰς κώμας Καισαρείας τῆς Φιλίππου· καὶ ἐν τῇ ὁδῷ ἐπηρώτα τοὺς μαθητὰς αὐτοῦ, λέγων αὐτοῖς, Τίνα με λέγουσιν οἱ ἄνθρωποι εἶναι;",
+        "VUL": "Et egressus est Jesus, et discipuli ejus in castella Cæsareæ Philippi : et in via interrogabat discipulos suos, dicens eis : Quem me dicunt esse homines ?",
+        "SYN": "И пошел Иисус с учениками Своими в селения Кесарии Филипповой. Дорогою Он спрашивал учеников Своих: за кого почитают Меня люди?",
+        "NEO": "De là, Jésus se rendit avec ses disciples dans les villages qui entourent Césarée de Philippe, et sur le chemin il leur fit cette question : « Qui dit-on que je suis ? »+ 8:27 27. Matth. xvi, 13 et Luc, ix, 18.*",
+        "NAB": "Now Jesus and his disciples set out for the villages of Caesarea Philippi. Along the way he asked his disciples, \"Who do people say that I am?\"",
+        "VAT_ES": "Jesús salió con sus discípulos hacia los poblados de Cesarea de Filipo, y en el camino les preguntó: «&iquest;Quién dice la gente que soy yo?.",
+        "CEI": "Egli è colui del quale sta scritto: Ecco io mando davanti a te il mio messaggero, egli preparerà la via davanti a te."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +477,15 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "BYZ": "Οἱ δὲ ἀπεκρίθησαν, Ἰωάννην τὸν βαπτιστήν· καὶ ἄλλοι Ἠλίαν· ἄλλοι δὲ ἕνα τῶν προφητῶν.",
+        "VUL": "Qui responderunt illi, dicentes : Joannem Baptistam, alii Eliam, alii vero quasi unum de prophetis.",
+        "SYN": "Они отвечали: за Иоанна Крестителя; другие же -- за Илию; а иные -- за одного из пророков.",
+        "NEO": "Ils lui répondirent : « Jean-Baptiste+ 8:28 28. Jean Baptiste: Comp. vi, 14. — \\+qt Un des Prophètes\\+qt* : Vulgate et plusieurs manuscrits grecs : \\+qt comme l’un des prophètes\\+qt*.* ; d’autres, Élie ; d’autres, un des prophètes. — »",
+        "NAB": "They said in reply, \"John the Baptist, others Elijah, still others one of the prophets.\"",
+        "VAT_ES": "Ellos le respondieron: «Algunos dicen que eres Juan el Bautista; otros, Elías; y otros, alguno de los profetas».",
+        "CEI": "Io vi dico, tra i nati di donna non c'è nessuno più grande di Giovanni, e il più piccolo nel regno di Dio è più grande di lui."
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +494,15 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ αὐτὸς λέγει αὐτοῖς, Ὑμεῖς δὲ τίνα με λέγετε εἶναι; Ἀποκριθεὶς δὲ ὁ Πέτρος λέγει αὐτῷ, Σὺ εἶ ὁ χριστός.",
+        "VUL": "Tunc dicit illis : Vos vero quem me esse dicitis ? Respondens Petrus, ait ei : Tu es Christus.",
+        "SYN": "Он говорит им: а вы за кого почитаете Меня? Петр сказал Ему в ответ: Ты Христос.",
+        "NEO": "Mais vous, leur demanda-t-il, qui dites-vous que je suis ? » Pierre, prenant la parole, lui dit : « Tu es le Christ. »",
+        "NAB": "And he asked them, \"But who do you say that I am?\" Peter said to him in reply, \"You are the Messiah.\"",
+        "VAT_ES": "«Y ustedes, Tú eres el Mesías».",
+        "CEI": "Tutto il popolo che lo ha ascoltato, e anche i pubblicani, hanno riconosciuto la giustizia di Dio ricevendo il battesimo di Giovanni."
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +511,15 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ἐπετίμησεν αὐτοῖς, ἵνα μηδενὶ λέγωσιν περὶ αὐτοῦ.",
+        "VUL": "Et comminatus est eis, ne cui dicerent de illo.",
+        "SYN": "И запретил им, чтобы никому не говорили о Нем.",
+        "NEO": "Et il leur défendit sévèrement de dire cela* de lui à personne.",
+        "NAB": "Then he warned them not to tell anyone about him.",
+        "VAT_ES": "Jesús les ordenó terminantemente que no dijeran nada acerca de él.",
+        "CEI": "Ma i farisei e i dottori della legge non facendosi battezzare da lui hanno reso vano per loro il disegno di Dio."
+      }
     },
     "31": {
       "seq": 31,
@@ -288,7 +528,15 @@
         "VUL": 31,
         "LXX": 31
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ἤρξατο διδάσκειν αὐτούς, ὅτι δεῖ τὸν υἱὸν τοῦ ἀνθρώπου πολλὰ παθεῖν, καὶ ἀποδοκιμασθῆναι ἀπὸ τῶν πρεσβυτέρων καὶ τῶν ἀρχιερέων καὶ τῶν γραμματέων, καὶ ἀποκτανθῆναι, καὶ μετὰ τρεῖς ἡμέρας ἀναστῆναι·",
+        "VUL": "Et cpit docere eos quoniam oportet Filium hominis pati multa, et reprobari a senioribus, et a summis sacerdotibus et scribis, et occidi : et post tres dies resurgere.",
+        "SYN": "И начал учить их, что Сыну Человеческому много должно пострадать, быть отвержену старейшинами, первосвященниками и книжниками, и быть убиту, и в третий день воскреснуть.",
+        "NEO": "Alors il commença à leur enseigner qu’il fallait que le Fils de l’homme souffrît beaucoup, qu’il fût rejeté par les Anciens, par les Princes des prêtres et les Scribes, qu’il fût mis à mort et qu’il ressuscitât trois jours après.",
+        "NAB": "He began to teach them that the Son of Man must suffer greatly and be rejected by the elders, the chief priests, and the scribes, and be killed, and rise after three days.",
+        "VAT_ES": "Y comenzó a enseñarles que el Hijo del hombre debía sufrir mucho y ser rechazado por los ancianos, los sumos sacerdotes y los escribas; que debía ser condenado a muerte y resucitar después de tres días;",
+        "CEI": "A chi dunque paragonerò gli uomini di questa generazione, a chi sono simili?"
+      }
     },
     "32": {
       "seq": 32,
@@ -297,7 +545,15 @@
         "VUL": 32,
         "LXX": 32
       },
-      "text": {}
+      "text": {
+        "BYZ": "καὶ παρρησίᾳ τὸν λόγον ἐλάλει. Καὶ προσλαβόμενος αὐτὸν ὁ Πέτρος ἤρξατο ἐπιτιμᾷν αὐτῷ.",
+        "VUL": "Et palam verbum loquebatur. Et apprehendens eum Petrus, cpit increpare eum.",
+        "SYN": "И говорил о сем открыто. Но Петр, отозвав Его, начал прекословить Ему.",
+        "NEO": "Et il leur dit ces choses ouvertement. Pierre, le prenant à part, se mit à le reprendre.",
+        "NAB": "He spoke this openly. Then Peter took him aside and began to rebuke him.",
+        "VAT_ES": "y les hablaba de esto con toda claridad. Pedro, llevándolo aparte, comenzó a reprenderlo.",
+        "CEI": "Sono simili a quei bambini che stando in piazza gridano gli uni agli altri: Vi abbiamo suonato il flauto e non avete ballato; vi abbiamo cantato un lamento e non avete pianto!"
+      }
     },
     "33": {
       "seq": 33,
@@ -306,7 +562,15 @@
         "VUL": 33,
         "LXX": 33
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὁ δὲ ἐπιστραφείς, καὶ ἰδὼν τοὺς μαθητὰς αὐτοῦ, ἐπετίμησεν τῷ Πέτρῳ, λέγων, Ὕπαγε ὀπίσω μου, Σατανᾶ· ὅτι οὐ φρονεῖς τὰ τοῦ θεοῦ, ἀλλὰ τὰ τῶν ἀνθρώπων.",
+        "VUL": "Qui conversus, et videns discipulos suos, comminatus est Petro, dicens : Vade retro me Satana, quoniam non sapis quæ Dei sunt, sed quæ sunt hominum.",
+        "SYN": "Он же, обратившись и взглянув на учеников Своих, воспретил Петру, сказав: отойди от Меня, сатана, потому что ты думаешь не о том, что Божие, но что человеческое.",
+        "NEO": "Mais Jésus, s’étant retourné et ayant regardé ses disciples, réprimanda Pierre, en disant : « Arrière ! Satan ; car tes sentiments+ 8:33 \\+it Tes sentiments\\+it* : ta façon d’imaginer la mission et le rôle du Messie.* ne sont pas ceux de Dieu, mais ceux des hommes. »",
+        "NAB": "At this he turned around and, looking at his disciples, rebuked Peter and said, \"Get behind me, Satan. You are thinking not as God does, but as human beings do.\"",
+        "VAT_ES": "Pero Jesús, dándose vuelta y mirando a sus discípulos, lo reprendió, diciendo: «&iexcl;Retírate, ve detrás de mí, Satanás! Porque tus pensamientos no son los de Dios, sino los de los hombres».",
+        "CEI": "È venuto infatti Giovanni il Battista che non mangia pane e non beve vino, e voi dite: Ha un demonio."
+      }
     },
     "34": {
       "seq": 34,
@@ -315,7 +579,15 @@
         "VUL": 34,
         "LXX": 34
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ προσκαλεσάμενος τὸν ὄχλον σὺν τοῖς μαθηταῖς αὐτοῦ, εἶπεν αὐτοῖς, Ὅστις θέλει ὀπίσω μου ἀκολουθεῖν, ἀπαρνησάσθω ἑαυτόν, καὶ ἀράτω τὸν σταυρὸν αὐτοῦ, καὶ ἀκολουθείτω μοι.",
+        "VUL": "Et convocata turba cum discipulis suis, dixit eis : Si quis vult me sequi, deneget semetipsum : et tollat crucem suam, et sequatur me.",
+        "SYN": "И, подозвав народ с учениками Своими, сказал им: кто хочет идти за Мною, отвергнись себя, и возьми крест свой, и следуй за Мною.",
+        "NEO": "Puis, ayant appelé le peuple avec ses disciples, il leur dit : « Si quelqu’un veut marcher à ma suite, qu’il se renonce lui-même, qu’il prenne sa croix et me suive.",
+        "NAB": "He summoned the crowd with his disciples and said to them, \"Whoever wishes to come after me must deny himself, take up his cross, and follow me.",
+        "VAT_ES": "Entonces Jesús, llamando a la multitud, junto con sus discípulos, les dijo: «El que quiera venir detrás de mí, que renuncie a sí mismo, que cargue con su cruz y me siga.",
+        "CEI": "È venuto il Figlio dell'uomo che mangia e beve, e voi dite: Ecco un mangione e un beone, amico dei pubblicani e dei peccatori."
+      }
     },
     "35": {
       "seq": 35,
@@ -324,7 +596,15 @@
         "VUL": 35,
         "LXX": 35
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὃς γὰρ ἂν θέλῃ τὴν ψυχὴν αὐτοῦ σῶσαι, ἀπολέσει αὐτήν· ὃς δ’ ἂν ἀπολέσῃ τὴν ἑαυτοῦ ψυχὴν ἕνεκεν ἐμοῦ καὶ τοῦ εὐαγγελίου, οὗτος σώσει αὐτήν.",
+        "VUL": "Qui enim voluerit animam suam salvam facere, perdet eam : qui autem perdiderit animam suam propter me, et Evangelium, salvam faciet eam.",
+        "SYN": "Ибо кто хочет душу свою сберечь, тот потеряет ее, а кто потеряет душу свою ради Меня и Евангелия, тот сбережет ее.",
+        "NEO": "Car celui qui veut sauver sa vie+ 8:35 Le mot grec traduit par \\+it vie\\+it* peut, suivant les cas ou le contexte, répondre aux mots \\+it vie, âme, personne\\+it*.*, la perdra, et celui qui perdra sa vie à cause de moi et de l’Évangile, la sauvera.",
+        "NAB": "For whoever wishes to save his life will lose it, but whoever loses his life for my sake and that of the gospel will save it.",
+        "VAT_ES": "Porque el que quiera salvar su vida, la perderá; y el que pierda su vida por mí y por la Buena Noticia, la salvará.",
+        "CEI": "Ma alla sapienza è stata resa giustizia da tutti i suoi figli\"."
+      }
     },
     "36": {
       "seq": 36,
@@ -333,7 +613,15 @@
         "VUL": 36,
         "LXX": 36
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τί γὰρ ὠφελήσει ἄνθρωπον, ἐὰν κερδήσῃ τὸν κόσμον ὅλον, καὶ ζημιωθῇ τὴν ψυχὴν αὐτοῦ;",
+        "VUL": "Quid enim proderit homini, si lucretur mundum totum et detrimentum animæ suæ faciat ?",
+        "SYN": "Ибо какая польза человеку, если он приобретет весь мир, а душе своей повредит?",
+        "NEO": "Que servira-t-il à l’homme de gagner le monde entier, s’il perd son âme ?",
+        "NAB": "What profit is there for one to gain the whole world and forfeit his life?",
+        "VAT_ES": "&iquest;De qué le servirá al hombre ganar el mundo entero, si pierde su vida?",
+        "CEI": "Uno dei farisei lo invitò a mangiare da lui. Egli entrò nella casa del fariseo e si mise a tavola."
+      }
     },
     "37": {
       "seq": 37,
@@ -342,7 +630,15 @@
         "VUL": 37,
         "LXX": 37
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἢ τί δώσει ἄνθρωπος ἀντάλλαγμα τῆς ψυχῆς αὐτοῦ;",
+        "VUL": "Aut quid dabit homo commutationis pro anima sua ?",
+        "SYN": "Или какой выкуп даст человек за душу свою?",
+        "NEO": "Car que donnera l’homme en échange de son âme ?",
+        "NAB": "What could one give in exchange for his life?",
+        "VAT_ES": "&iquest;Y qué podrá dar el hombre a cambio de su vida?",
+        "CEI": "Ed ecco una donna, una peccatrice di quella città, saputo che si trovava nella casa del fariseo, venne con un vasetto di olio profumato;"
+      }
     },
     "38": {
       "seq": 38,
@@ -351,7 +647,15 @@
         "VUL": 38,
         "LXX": 38
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὃς γὰρ ἐὰν ἐπαισχυνθῇ με καὶ τοὺς ἐμοὺς λόγους ἐν τῇ γενεᾷ ταύτῃ τῇ μοιχαλίδι καὶ ἁμαρτωλῷ, καὶ ὁ υἱὸς τοῦ ἀνθρώπου ἐπαισχυνθήσεται αὐτόν, ὅταν ἔλθῃ ἐν τῇ δόξῃ τοῦ πατρὸς αὐτοῦ μετὰ τῶν ἀγγέλων τῶν ἁγίων.",
+        "VUL": "Qui enim me confusus fuerit, et verba mea in generatione ista adultera et peccatrice, et Filius hominis confundetur eum, cum venerit in gloria Patris sui cum angelis sanctis.",
+        "SYN": "Ибо кто постыдится Меня и Моих слов в роде сем прелюбодейном и грешном, того постыдится и Сын Человеческий, когда приидет в славе Отца Своего со святыми Ангелами.",
+        "NEO": "Celui qui aura rougi de moi et de mes paroles au milieu de cette génération adultère et pécheresse, le Fils de l’homme aussi rougira de lui, lorsqu’il viendra dans la gloire de son Père avec les anges saints. »",
+        "NAB": "Whoever is ashamed of me and of my words in this faithless and sinful generation, the Son of Man will be ashamed of when he comes in his Father's glory with the holy angels.\"",
+        "VAT_ES": "Porque si alguien se averg&uuml;enza de mí y de mis palabras en esta generación adúltera y pecadora, también el Hijo del hombre se avergonzará de él cuando venga en la gloria de su Padre con sus santos ángeles».",
+        "CEI": "e fermatasi dietro si rannicchiò piangendo ai piedi di lui e cominciò a bagnarli di lacrime, poi li asciugava con i suoi capelli, li baciava e li cospargeva di olio profumato."
+      }
     }
   }
 }

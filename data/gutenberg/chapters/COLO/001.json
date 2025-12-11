@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "BYZ": "Παῦλος ἀπόστολος Ἰησοῦ χριστοῦ διὰ θελήματος θεοῦ, καὶ Τιμόθεος ὁ ἀδελφός,",
+        "VUL": "Paulus Apostolus Jesu Christi per voluntatem Dei, et Timotheus frater :",
+        "SYN": "Павел, волею Божиею Апостол Иисуса Христа, и Тимофей брат,",
+        "NEO": "Paul, apôtre de Jésus-Christ par la volonté de Dieu, et son frère Timothée,+ 1:1 I, 1. Timothée se trouvait alors auprès de Paul à Rome ou à Césarée. Peut-être est-ce lui qui écrivit l’épître sous la dictée de l’Apôtre (iv, 18).*",
+        "NAB": "Paul, an apostle of Christ Jesus by the will of God, and Timothy our brother,",
+        "VAT_ES": "Sí, quiero que sepan qué dura es la lucha que sostengo por ustedes, por los Laodicea y por tantos otros que no me conocen personalmente.",
+        "CEI": "Devi anche sapere che negli ultimi tempi verranno momenti difficili."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "BYZ": "τοῖς ἐν Κολασσαῖς ἁγίοις καὶ πιστοῖς ἀδελφοῖς ἐν χριστῷ· χάρις ὑμῖν καὶ εἰρήνη ἀπὸ θεοῦ πατρὸς ἡμῶν καὶ κυρίου Ἰησοῦ χριστοῦ.",
+        "VUL": "eis, qui sunt Colossis, sanctis, et fidelibus fratribus in Christo Jesu.",
+        "SYN": "находящимся в Колоссах святым и верным братиям во Христе Иисусе:",
+        "NEO": "aux saints qui sont à Colosses, nos* fidèles frères dans le Christ :",
+        "NAB": "to the holy ones and faithful brothers in Christ in Colossae: grace to you and peace from God our Father.",
+        "VAT_ES": "Mi deseo es que se sientan animados y que, unidos estrechamente en el amor, adquieran la plenitud de la inteligencia en toda su riqueza. Así conocerán el misterio de Dios, que es Cristo,",
+        "CEI": "Gli uomini saranno egoisti, amanti del denaro, vanitosi, orgogliosi, bestemmiatori, ribelli ai genitori, ingrati, senza religione,"
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Εὐχαριστοῦμεν τῷ θεῷ καὶ πατρὶ τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ, πάντοτε περὶ ὑμῶν προσευχόμενοι,",
+        "VUL": "Gratia vobis, et pax a Deo Patre nostro, et Domino Jesu Christo.\\ Gratias agimus Deo, et Patri Domini nostri Jesu Christi semper pro vobis orantes :",
+        "SYN": "благодать вам и мир от Бога Отца нашего и Господа Иисуса Христа. Благодарим Бога и Отца Господа нашего Иисуса Христа, всегда молясь о вас,",
+        "NEO": "que la grâce et la paix soient sur vous de la part de Dieu notre Père [et du Seigneur Jésus-Christ] !+ 1:3 3. Les mots entre crochets ou parenthèses manquent en de nombreux et bons manuscrits.*",
+        "NAB": "We always give thanks to God, the Father of our Lord Jesus Christ, when we pray for you,",
+        "VAT_ES": "en quien están ocultos todos los tesoros de la sabiduría y del conocimiento.",
+        "CEI": "senza amore, sleali, maldicenti, intemperanti, intrattabili, nemici del bene,"
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἀκούσαντες τὴν πίστιν ὑμῶν ἐν χριστῷ Ἰησοῦ, καὶ τὴν ἀγάπην τὴν εἰς πάντας τοὺς ἁγίους,",
+        "VUL": "audientes fidem vestram in Christo Jesu, et dilectionem quam habetis in sanctos omnes",
+        "SYN": "услышав о вере вашей во Христа Иисуса и о любви ко всем святым,",
+        "NEO": "depuis que nous avons entendu parler de votre foi en Jésus-Christ et de votre charité envers tous les saints,",
+        "NAB": "for we have heard of your faith in Christ Jesus and the love that you have for all the holy ones",
+        "VAT_ES": "Los pongo sobre aviso para que nadie los engañe con sofismas.",
+        "CEI": "traditori, sfrontati, accecati dall'orgoglio, attaccati ai piaceri più che a Dio,"
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "BYZ": "διὰ τὴν ἐλπίδα τὴν ἀποκειμένην ὑμῖν ἐν τοῖς οὐρανοῖς, ἣν προηκούσατε ἐν τῷ λόγῳ τῆς ἀληθείας τοῦ εὐαγγελίου,",
+        "VUL": "propter spem, quæ reposita est vobis in cælis : quam audistis in verbo veritatis Evangelii :",
+        "SYN": "в надежде на уготованное вам на небесах, о чем вы прежде слышали в истинном слове благовествования,",
+        "NEO": "en vue de l’espérance qui vous est réservée dans les cieux et dont vous avez eu connaissance par la prédication de la vérité évangélique.",
+        "NAB": "because of the hope reserved for you in heaven. Of this you have already heard through the word of truth, the gospel,",
+        "VAT_ES": "Aunque ausente con el cuerpo, estoy presente en espíritu, y me alegro de ver el orden que reina entre ustedes y la firmeza de la fe que tienen en Cristo.",
+        "CEI": "con la parvenza della pietà, mentre ne hanno rinnegata la forza interiore. Guardati bene da costoro!"
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "BYZ": "τοῦ παρόντος εἰς ὑμᾶς, καθὼς καὶ ἐν παντὶ τῷ κόσμῳ, καὶ ἔστιν καρποφορούμενον καὶ αὐξανόμενον, καθὼς καὶ ἐν ὑμῖν ἀφ’ ἧς ἡμέρας ἠκούσατε καὶ ἐπέγνωτε τὴν χάριν τοῦ θεοῦ ἐν ἀληθείᾳ·",
+        "VUL": "quod pervenit ad vos, sicut et in universo mundo est, et fructificat, et crescit sicut in vobis, ex ea die, qua audistis, et cognovistis gratiam Dei in veritate,",
+        "SYN": "которое пребывает у вас, как и во всем мире, и приносит плод, и возрастает, как и между вами, с того дня, как вы услышали и познали благодать Божию в истине,",
+        "NEO": "Elle est parvenue à vous, ainsi qu’au monde entier ; elle porte des fruits et gagne du terrain, comme cela a eu lieu parmi vous, depuis le jour où vous l’avez entendue, et où vous avez connu la grâce de Dieu dans la vérité,",
+        "NAB": "that has come to you. Just as in the whole world it is bearing fruit and growing, so also among you, from the day you heard it and came to know the grace of God in truth,",
+        "VAT_ES": "Vivan en Cristo Jesús, el Señor, tal como ustedes lo han recibido,",
+        "CEI": "Al loro numero appartengono certi tali che entrano nelle case e accalappiano donnicciole cariche di peccati, mosse da passioni di ogni genere,"
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "BYZ": "καθὼς καὶ ἐμάθετε ἀπὸ Ἐπαφρᾶ τοῦ ἀγαπητοῦ συνδούλου ἡμῶν, ὅς ἐστιν πιστὸς ὑπὲρ ὑμῶν διάκονος τοῦ χριστοῦ,",
+        "VUL": "sicut didicistis ab Epaphra carissimo conservo nostro, qui est fidelis pro vobis minister Christi Jesu,",
+        "SYN": "как и научились от Епафраса, возлюбленного сотрудника нашего, верного для вас служителя Христова,",
+        "NEO": "d’après les instructions que vous avez reçues d’Épaphras+ 1:7 7. Épaphras, probablement le premier apôtre et le fondateur de l’Église de Colosses. Il était alors auprès de Paul prisonnier à Rome, et devait retourner en Asie.* notre bien-aimé compagnon au service de Dieu, et près de vous le fidèle ministre du Christ ;",
+        "NAB": "as you learned it from Epaphras our beloved fellow slave, who is a trustworthy minister of Christ on your behalf",
+        "VAT_ES": "arraigados y edificados en él, apoyándose en la fe que les fue enseñada y dando gracias constantemente.",
+        "CEI": "che stanno sempre lì ad imparare, senza riuscire mai a giungere alla conoscenza della verità."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "BYZ": "ὁ καὶ δηλώσας ἡμῖν τὴν ὑμῶν ἀγάπην ἐν πνεύματι.",
+        "VUL": "qui etiam manifestavit nobis dilectionem vestram in spiritu.",
+        "SYN": "который и известил нас о вашей любви в духе.",
+        "NEO": "c’est lui qui nous a appris votre charité toute spirituelle.",
+        "NAB": "and who also told us of your love in the Spirit.",
+        "VAT_ES": "No se dejen esclavizar por nadie con la vacuidad de una engañosa filosofía, inspirada en tradiciones puramente humanas y en los elementos del mundo, y no en Cristo.",
+        "CEI": "Sull'esempio di Iannes e di Iambres che si opposero a Mosè, anche costoro si oppongono alla verità: uomini dalla mente corrotta e riprovati in materia di fede."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Διὰ τοῦτο καὶ ἡμεῖς, ἀφ’ ἧς ἡμέρας ἠκούσαμεν, οὐ παυόμεθα ὑπὲρ ὑμῶν προσευχόμενοι, καὶ αἰτούμενοι ἵνα πληρωθῆτε τὴν ἐπίγνωσιν τοῦ θελήματος αὐτοῦ ἐν πάσῃ σοφίᾳ καὶ συνέσει πνευματικῇ,",
+        "VUL": "Ideo et nos ex qua die audivimus, non cessamus pro vobis orantes, et postulantes ut impleamini agnitione voluntatis ejus, in omni sapientia et intellectu spiritali :",
+        "SYN": "Посему и мы с того дня, как _о_ _сем_ услышали, не перестаем молиться о вас и просить, чтобы вы исполнялись познанием воли Его, во всякой премудрости и разумении духовном,",
+        "NEO": "C’est pourquoi, depuis le jour où nous en avons été informés, nous ne cessons de prier Dieu pour vous, et de demander que vous ayez la pleine connaissance de sa volonté en toute sagesse et intelligence spirituelle,",
+        "NAB": "Therefore, from the day we heard this, we do not cease praying for you and asking that you may be filled with the knowledge of his will through all spiritual wisdom and understanding",
+        "VAT_ES": "Porque en él habita corporalmente toda la plenitud de la divinidad,",
+        "CEI": "Costoro però non progrediranno oltre, perché la loro stoltezza sarà manifestata a tutti, come avvenne per quelli."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "BYZ": "περιπατῆσαι ὑμᾶς ἀξίως τοῦ κυρίου εἰς πᾶσαν ἀρέσκειαν, ἐν παντὶ ἔργῳ ἀγαθῷ καρποφοροῦντες καὶ αὐξανόμενοι εἰς τὴν ἐπίγνωσιν τοῦ θεοῦ·",
+        "VUL": "ut ambuletis digne Deo per omnia placentes : in omni opere bono fructificantes, et crescentes in scientia Dei :",
+        "SYN": "чтобы поступали достойно Бога, во всем угождая _Ему,_ принося плод во всяком деле благом и возрастая в познании Бога,",
+        "NEO": "pour vous conduire d’une manière digne du Seigneur et lui plaire en toutes choses, produisant du fruit en toutes sortes de bonnes œuvres et faisant des progrès dans la connaissance de Dieu ;",
+        "NAB": "to live in a manner worthy of the Lord, so as to be fully pleasing, in every good work bearing fruit and growing in the knowledge of God,",
+        "VAT_ES": "y ustedes participan de esa plenitud de Cristo, que es la Cabeza de todo Principado y de toda Potestad.",
+        "CEI": "Tu invece mi hai seguito da vicino nell'insegnamento, nella condotta, nei propositi, nella fede, nella magnanimità, nell'amore del prossimo, nella pazienza,"
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἐν πάσῃ δυνάμει δυναμούμενοι κατὰ τὸ κράτος τῆς δόξης αὐτοῦ, εἰς πᾶσαν ὑπομονὴν καὶ μακροθυμίαν μετὰ χαρᾶς·",
+        "VUL": "in omni virtute confortati secundum potentiam claritatis ejus, in omni patientia et longanimitate cum gaudio,",
+        "SYN": "укрепляясь всякою силою по могуществу славы Его, во всяком терпении и великодушии с радостью,",
+        "NEO": "fortifiés à tous égards par sa puissance glorieuse, pour tout supporter avec patience et avec joie ; —",
+        "NAB": "strengthened with every power, in accord with his glorious might, for all endurance and patience, with joy",
+        "VAT_ES": "En él fueron circuncidados, no por mano de hombre, sino por una circuncisión que los despoja del cuerpo carnal, la circuncisión de Cristo.",
+        "CEI": "nelle persecuzioni, nelle sofferenze, come quelle che incontrai ad Antiochia, a Icònio e a Listri. Tu sai bene quali persecuzioni ho sofferto. Eppure il Signore mi ha liberato da tutte."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "BYZ": "εὐχαριστοῦντες τῷ πατρὶ τῷ ἱκανώσαντι ἡμᾶς εἰς τὴν μερίδα τοῦ κλήρου τῶν ἁγίων ἐν τῷ φωτί,",
+        "VUL": "gratias agentes Deo Patri, qui dignos nos fecit in partem sortis sanctorum in lumine :",
+        "SYN": "благодаря Бога и Отца, призвавшего нас к участию в наследии святых во свете,",
+        "NEO": "rendant grâces à [Dieu] le Père, qui nous a rendus capables+ 1:12 12. Capables; Vulg., \\+qt dignes\\+qt*.* d’avoir part à l’héritage des saints dans la lumière,",
+        "NAB": "giving thanks to the Father, who has made you fit to share in the inheritance of the holy ones in light.",
+        "VAT_ES": "En el bautismo, ustedes fueron sepultados con él, y con él resucitaron, por la fe en el poder de Dios que lo resucitó de entre los muertos.",
+        "CEI": "Del resto, tutti quelli che vogliono vivere piamente in Cristo Gesù saranno perseguitati."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "BYZ": "ὃς ἐρρύσατο ἡμᾶς ἐκ τῆς ἐξουσίας τοῦ σκότους, καὶ μετέστησεν εἰς τὴν βασιλείαν τοῦ υἱοῦ τῆς ἀγάπης αὐτοῦ,",
+        "VUL": "qui eripuit nos de potestate tenebrarum, et transtulit in regnum filii dilectionis suæ,",
+        "SYN": "избавившего нас от власти тьмы и введшего в Царство возлюбленного Сына Своего,",
+        "NEO": "en nous délivrant de la puissance des ténèbres, pour nous transporter dans le royaume de son Fils bien-aimé,",
+        "NAB": "He delivered us from the power of darkness and transferred us to the kingdom of his beloved Son,",
+        "VAT_ES": "Ustedes estaban muertos a causa de sus pecados y de la incircuncisión de su carne, pero Cristo los hizo revivir con él, perdonando todas nuestras faltas.",
+        "CEI": "Ma i malvagi e gli impostori andranno sempre di male in peggio, ingannatori e ingannati nello stesso tempo."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἐν ᾧ ἔχομεν τὴν ἀπολύτρωσιν, τὴν ἄφεσιν τῶν ἁμαρτιῶν·",
+        "VUL": "in quo habemus redemptionem per sanguinem ejus, remissionem peccatorum :",
+        "SYN": "в Котором мы имеем искупление Кровию Его и прощение грехов,",
+        "NEO": "par le sang duquel nous avons la rédemption, la rémission des péchés.+ 1:14 14. Eph. i, 7.* PREMIÈRE PARTIE [DOGMATIQUE]. [I, 9 — II, 23.] JÉSUS-CHRIST ET LA RÉDEMPTION.",
+        "NAB": "in whom we have redemption, the forgiveness of sins.",
+        "VAT_ES": "El canceló el acta de condenación que nos era contraria, con todas sus cláusulas, y la hizo desaparecer clavándola en la cruz.",
+        "CEI": "Tu però rimani saldo in quello che hai imparato e di cui sei convinto, sapendo da chi l'hai appreso"
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "BYZ": "ὅς ἐστιν εἰκὼν τοῦ θεοῦ τοῦ ἀοράτου, πρωτότοκος πάσης κτίσεως·",
+        "VUL": "qui est imago Dei invisibilis, primogenitus omnis creaturæ :",
+        "SYN": "Который есть образ Бога невидимого, рожденный прежде всякой твари;",
+        "NEO": "Il est l’image du Dieu invisible, né avant toute créature ;+ 1:15 15. L’image du Dieu invisible: même sens que \\+qt existant dans la condition de Dieu\\+qt* (Phil. ii, 6), \\+qt resplendissement de la gloire\\+qt* et \\+qt figure de la substance de Dieu\\+qt* (Hébr. i, 3). — Cf. Rom. i, 3, 6 ; v, 10 ; I Cor. i, 9 ; II Cor. i, 19, etc.*",
+        "NAB": "He is the image of the invisible God, the firstborn of all creation.",
+        "VAT_ES": "En cuanto a los Principados y a las Potestades, los despojó y los expuso públicamente a la burla, incorporándolos a su cortejo triunfal.",
+        "CEI": "e che fin dall'infanzia conosci le sacre Scritture: queste possono istruirti per la salvezza, che si ottiene per mezzo della fede in Cristo Gesù."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "BYZ": "ὅτι ἐν αὐτῷ ἐκτίσθη τὰ πάντα, τὰ ἐν τοῖς οὐρανοῖς καὶ τὰ ἐπὶ τῆς γῆς, τὰ ὁρατὰ καὶ τὰ ἀόρατα, εἴτε θρόνοι, εἴτε κυριότητες, εἴτε ἀρχαί, εἴτε ἐξουσίαι· τὰ πάντα δι’ αὐτοῦ καὶ εἰς αὐτὸν ἔκτισται·",
+        "VUL": "quoniam in ipso condita sunt universa in cælis, et in terra, visibilia, et invisibilia, sive throni, sive dominationes, sive principatus, sive potestates : omnia per ipsum et in ipso creata sunt :",
+        "SYN": "ибо Им создано все, что на небесах и что на земле, видимое и невидимое: престолы ли, господства ли, начальства ли, власти ли, -- все Им и для Него создано;",
+        "NEO": "car c’est en lui que toutes choses ont été créées, celles qui sont dans les cieux et celles qui sont sur la terre, les choses visibles et les choses invisibles, Trônes, Dominations, Principautés, Puissances ; tout a été créé par lui et pour lui.+ 1:16 16. Développement de la pensée exprimée déjà I Cor. viii, 6. Trônes, etc. : diverses hiérarchies des Anges. Les faux docteurs de Colosses enseignaient que Dieu avait choisi un ange pour créer le monde. Cette classification des Anges en hiérarchies organisées se retrouve dans l’épître aux Romains, viii, 38, et dans la première épître aux Corinthiens, xv, 24.*",
+        "NAB": "For in him were created all things in heaven and on earth, the visible and the invisible, whether thrones or dominions or principalities or powers; all things were created through him and for him.",
+        "VAT_ES": "Por eso, que nadie los critique por cuestiones de alimento y de bebida, o de días festivos, de novilunios y de sábados.",
+        "CEI": "Tutta la Scrittura infatti è ispirata da Dio e utile per insegnare, convincere, correggere e formare alla giustizia, perché l'uomo di Dio sia completo e ben preparato per ogni opera buona."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,14 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "BYZ": "καὶ αὐτός ἐστιν πρὸ πάντων, καὶ τὰ πάντα ἐν αὐτῷ συνέστηκεν.",
+        "VUL": "et ipse est ante omnes, et omnia in ipso constant.",
+        "SYN": "и Он есть прежде всего, и все Им стоит.",
+        "NEO": "Il est, lui, avant toutes choses, et toutes choses subsistent en lui.",
+        "NAB": "He is before all things, and in him all things hold together.",
+        "VAT_ES": "Todas esas cosas no son más que la sombra de una realidad futura, que es el Cuerpo de Cristo."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +306,14 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ αὐτός ἐστιν ἡ κεφαλὴ τοῦ σώματος, τῆς ἐκκλησίας· ὅς ἐστιν ἀρχή, πρωτότοκος ἐκ τῶν νεκρῶν, ἵνα γένηται ἐν πᾶσιν αὐτὸς πρωτεύων·",
+        "VUL": "Et ipse est caput corporis Ecclesiæ, qui est principium, primogenitus ex mortuis : ut sit in omnibus ipse primatum tenens :",
+        "SYN": "И Он есть глава тела Церкви; Он -- начаток, первенец из мертвых, дабы иметь Ему во всем первенство,",
+        "NEO": "Il est la tête+ 1:18 18. La tête: comp. I Cor. xii, 12 sv. ; Eph. i, 23. — \\+qt Prémices\\+qt* de la résurrection, savoir \\+qt le premier-né d’entre les morts\\+qt* (I Cor. xv, 20), le premier ressuscité, et principe de résurrection glorieuse pour tous ses membres, comme Adam, le premier mort, avait été un principe de mort pour tous ses enfants.* du corps de l’Église, lui qui est le principe, le premier-né d’entre les morts, afin qu’en toutes choses, il tienne, lui, la première place.",
+        "NAB": "He is the head of the body, the church. He is the beginning, the firstborn from the dead, that in all things he himself might be preeminent.",
+        "VAT_ES": "Que nadie los prive del previo, bajo pretexto de «humildad» y de un «culto de los ángeles». Esa gente tiene en cuenta solamente las cosas que ha visto y se vanagloria en el orgullo de su mentalidad carnal."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +322,14 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "BYZ": "ὅτι ἐν αὐτῷ εὐδόκησεν πᾶν τὸ πλήρωμα κατοικῆσαι,",
+        "VUL": "quia in ipso complacuit, omnem plenitudinem inhabitare :",
+        "SYN": "ибо благоугодно было _Отцу,_ чтобы в Нем обитала всякая полнота,",
+        "NEO": "Car Dieu* a voulu que toute la plénitude habitât en lui ;+ 1:19 19. D’autres : il était bien que toute la plénitude (des êtres) habitât en lui et de réconcilier ; etc.*",
+        "NAB": "For in him all the fullness was pleased to dwell,",
+        "VAT_ES": "pero no se mantiene unida a la Cabeza que vivifica a todo el Cuerpo y le da cohesión por medio de las articulaciones y de los ligamentos, a fin de que su crecimiento se realice en Dios."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +338,14 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "BYZ": "καὶ δι’ αὐτοῦ ἀποκαταλλάξαι τὰ πάντα εἰς αὐτόν, εἰρηνοποιήσας διὰ τοῦ αἵματος τοῦ σταυροῦ αὐτοῦ, δι’ αὐτοῦ, εἴτε τὰ ἐπὶ τῆς γῆς, εἴτε τὰ ἐπὶ τοῖς οὐρανοῖς.",
+        "VUL": "et per eum reconciliare omnia in ipsum, pacificans per sanguinem crucis ejus, sive quæ in terris, sive quæ in cælis sunt.",
+        "SYN": "и чтобы посредством Его примирить с Собою все, умиротворив через Него, Кровию креста Его, и земное и небесное.",
+        "NEO": "et il a voulu réconcilier par lui toutes choses avec lui-même, celles qui sont sur la terre, et celles qui sont dans les cieux, en faisant la paix par le sang de sa croix.",
+        "NAB": "and through him to reconcile all things for him, making peace by the blood of his cross (through him), whether those on earth or those in heaven.",
+        "VAT_ES": "Ya que ustedes han muerto con Cristo, a los elementos del mundo, &iquest;por qué se someten a las prohibiciones de"
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +354,14 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ὑμᾶς ποτὲ ὄντας ἀπηλλοτριωμένους καὶ ἐχθροὺς τῇ διανοίᾳ ἐν τοῖς ἔργοις τοῖς πονηροῖς, νυνὶ δὲ ἀποκατήλλαξεν",
+        "VUL": "Et vos cum essetis aliquando alienati, et inimici sensu in operibus malis :",
+        "SYN": "И вас, бывших некогда отчужденными и врагами, по расположению к злым делам,",
+        "NEO": "Vous aussi, qui étiez autrefois loin de lui et ennemis par vos pensées et par vos œuvres mauvaises,",
+        "NAB": "And you who once were alienated and hostile in mind because of evil deeds",
+        "VAT_ES": "«no tomar», «no comer» y «no tocar», como si todavía vivieran en el mundo?"
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +370,14 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἐν τῷ σώματι τῆς σαρκὸς αὐτοῦ διὰ τοῦ θανάτου, παραστῆσαι ὑμᾶς ἁγίους καὶ ἀμώμους καὶ ἀνεγκλήτους κατενώπιον αὐτοῦ·",
+        "VUL": "nunc autem reconciliavit in corpore carnis ejus per mortem, exhibere vos sanctos, et immaculatos, et irreprehensibiles coram ipso :",
+        "SYN": "ныне примирил в теле Плоти Его, смертью Его, _чтобы_ представить вас святыми и непорочными и неповинными пред Собою,",
+        "NEO": "il vous a maintenant réconciliés par la mort de son Fils* en son corps charnel, pour vous faire paraître devant lui saints, sans tâche et sans reproche,",
+        "NAB": "he has now reconciled in his fleshly body through his death, to present you holy, without blemish, and irreproachable before him,",
+        "VAT_ES": "Todo esto se refiere a cosas destinadas a ser destruidas por su mismo uso y no son más que preceptos y doctrinas de hombres."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +386,14 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "BYZ": "εἴγε ἐπιμένετε τῇ πίστει τεθεμελιωμένοι καὶ ἑδραῖοι, καὶ μὴ μετακινούμενοι ἀπὸ τῆς ἐλπίδος τοῦ εὐαγγελίου οὗ ἠκούσατε, τοῦ κηρυχθέντος ἐν πάσῃ τῇ κτίσει τῇ ὑπὸ τὸν οὐρανόν, οὗ ἐγενόμην ἐγὼ Παῦλος διάκονος.",
+        "VUL": "si tamen permanetis in fide fundati, et stabiles, et immobiles a spe Evangelii, quod audistis, quod prædicatum est in universa creatura, quæ sub cælo est, cujus factus sum ego Paulus minister.",
+        "SYN": "если только пребываете тверды и непоколебимы в вере и не отпадаете от надежды благовествования, которое вы слышали, которое возвещено всей твари поднебесной, которого я, Павел, сделался служителем.",
+        "NEO": "si du moins vous demeurez fondés et affermis dans la foi, et inébranlables dans l’espérance donnée par l’Évangile que vous avez entendu, qui a été prêché à toute créature sous le ciel, et dont moi, Paul, j’ai été fait ministre.",
+        "NAB": "provided that you persevere in the faith, firmly grounded, stable, and not shifting from the hope of the gospel that you heard, which has been preached to every creature under heaven, of which I, Paul, am a minister.",
+        "VAT_ES": "Estas doctrinas tienen una cierta apariencia de sabiduría por su «religiosidad», su «humildad» y su «desprecio del cuerpo», pero carecen de valor y sólo satisfacen los deseos de la carne."
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +402,13 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Νῦν χαίρω ἐν τοῖς παθήμασιν ὑπὲρ ὑμῶν, καὶ ἀνταναπληρῶ τὰ ὑστερήματα τῶν θλίψεων τοῦ χριστοῦ ἐν τῇ σαρκί μου ὑπὲρ τοῦ σώματος αὐτοῦ, ὅ ἐστιν ἡ ἐκκλησία·",
+        "VUL": "Qui nunc gaudeo in passionibus pro vobis, et adimpleo ea quæ desunt passionum Christi, in carne mea pro corpore ejus, quod est Ecclesia :",
+        "SYN": "Ныне радуюсь в страданиях моих за вас и восполняю недостаток в плоти моей скорбей Христовых за Тело Его, которое есть Церковь,",
+        "NEO": "Maintenant je suis plein de joie dans mes souffrances pour vous, et ce qui manque+ 1:24 24. Ce qui manque, etc. : les souffrances de l’Église et de chacun de ses membres sont les souffrances du Christ (comp. Act. ix, 5 ; Apoc. vii, 4).* aux souffrances du Christ en ma propre chair, je l’achève pour son corps, qui est l’Église.",
+        "NAB": "Now I rejoice in my sufferings for your sake, and in my flesh I am filling up what is lacking in the afflictions of Christ on behalf of his body, which is the church,"
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +417,13 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἧς ἐγενόμην ἐγὼ διάκονος, κατὰ τὴν οἰκονομίαν τοῦ θεοῦ τὴν δοθεῖσάν μοι εἰς ὑμᾶς, πληρῶσαι τὸν λόγον τοῦ θεοῦ,",
+        "VUL": "cujus factus sum ego minister secundum dispensationem Dei, quæ data est mihi in vos, ut impleam verbum Dei :",
+        "SYN": "которой сделался я служителем по домостроительству Божию, вверенному мне для вас, _чтобы_ исполнить слово Божие,",
+        "NEO": "J’en ai été fait ministre, en vue de la charge que Dieu m’a donnée auprès de vous, afin d’annoncer pleinement la parole de Dieu,",
+        "NAB": "of which I am a minister in accordance with God's stewardship given to me to bring to completion for you the word of God,"
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +432,13 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "BYZ": "τὸ μυστήριον τὸ ἀποκεκρυμμένον ἀπὸ τῶν αἰώνων καὶ ἀπὸ τῶν γενεῶν· νυνὶ δὲ ἐφανερώθη τοῖς ἁγίοις αὐτοῦ,",
+        "VUL": "mysterium, quod absconditum fuit a sæculis, et generationibus, nunc autem manifestatum est sanctis ejus,",
+        "SYN": "тайну, сокрытую от веков и родов, ныне же открытую святым Его,",
+        "NEO": "le mystère caché aux siècles et aux générations passées*, mais manifesté maintenant à ses saints,",
+        "NAB": "the mystery hidden from ages and from generations past. But now it has been manifested to his holy ones,"
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +447,13 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "BYZ": "οἷς ἠθέλησεν ὁ θεὸς γνωρίσαι τί τὸ πλοῦτος τῆς δόξης τοῦ μυστηρίου τούτου ἐν τοῖς ἔθνεσιν, ὅς ἐστιν χριστὸς ἐν ὑμῖν, ἡ ἐλπὶς τῆς δόξης·",
+        "VUL": "quibus voluit Deus notas facere divitias gloriæ sacramenti hujus in gentibus, quod est Christus, in vobis spes gloriæ,",
+        "SYN": "Которым благоволил Бог показать, какое богатство славы в тайне сей для язычников, которая есть Христос в вас, упование славы,",
+        "NEO": "à qui Dieu a voulu faire connaître combien est grande pour les Gentils la gloire de ce mystère qui est le Christ, en qui vous avez l’espérance de la gloire.",
+        "NAB": "to whom God chose to make known the riches of the glory of this mystery among the Gentiles; it is Christ in you, the hope for glory."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +462,13 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "BYZ": "ὃν ἡμεῖς καταγγέλλομεν, νουθετοῦντες πάντα ἄνθρωπον, καὶ διδάσκοντες πάντα ἄνθρωπον ἐν πάσῃ σοφίᾳ, ἵνα παραστήσωμεν πάντα ἄνθρωπον τέλειον ἐν χριστῷ Ἰησοῦ·",
+        "VUL": "quem nos annuntiamus, corripientes omnem hominem, et docentes omnem hominem, in omni sapientia, ut exhibeamus omnem hominem perfectum in Christo Jesu :",
+        "SYN": "Которого мы проповедуем, вразумляя всякого человека и научая всякой премудрости, чтобы представить всякого человека совершенным во Христе Иисусе;",
+        "NEO": "C’est lui que nous annonçons, avertissant tous les hommes, les instruisant en toute sagesse, afin que nous rendions tout homme parfait dans le Christ Jésus.",
+        "NAB": "It is he whom we proclaim, admonishing everyone and teaching everyone with all wisdom, that we may present everyone perfect in Christ."
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +477,13 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "BYZ": "εἰς ὃ καὶ κοπιῶ, ἀγωνιζόμενος κατὰ τὴν ἐνέργειαν αὐτοῦ, τὴν ἐνεργουμένην ἐν ἐμοὶ ἐν δυνάμει.",
+        "VUL": "in quo et laboro, certando secundum operationem ejus, quam operatur in me in virtute.",
+        "SYN": "для чего я и тружусь и подвизаюсь силою Его, действующею во мне могущественно.",
+        "NEO": "C’est pour cela que je travaille, et que je lutte selon la force qu’il me donne, et qui agit en moi avec puissance.",
+        "NAB": "For this I labor and struggle, in accord with the exercise of his power working within me."
+      }
     }
   }
 }

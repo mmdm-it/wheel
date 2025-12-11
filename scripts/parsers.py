@@ -7,7 +7,7 @@ Each parser returns a dict: {chapter_num: {verse_num: text}}
 Source Format Summary:
 - Hebrew (WLC): XML with OSIS namespace, <verse> elements with osisID="Book.C.V"
 - Greek OT (LXX): TXT with 8-digit refs (BBCCCVVV) + word per line
-- Greek NT (BYZ): Similar to LXX format
+- Greek NT (BYZ): CSV with chapter,verse,text columns
 - Latin (VUL): Plain text with "C:V text" format
 - Russian (SYN): TXT with "=== C ===" chapter headers, "N text" verses
 - French (NEO): USFM format with \c, \v markers and \w word|strong\w* inline
@@ -16,6 +16,7 @@ Source Format Summary:
 - Italian (CEI): Vatican HTML with [N] verse markers inline
 """
 
+import csv
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -120,6 +121,38 @@ def parse_greek_byzantine(txt_path: Path) -> VerseDict:
     Similar format to LXX but for NT books.
     """
     return parse_greek_lxx(txt_path)  # Same format
+
+
+def parse_byzantine_nt_csv(csv_path: Path) -> VerseDict:
+    """
+    Parse Byzantine NT Greek in CSV format.
+    
+    Format: chapter,verse,text (CSV with header row)
+    Located in: sources/greek/byzantine-nt/csv-unicode/ccat/no-variants/
+    """
+    if not csv_path.exists():
+        return {}
+    
+    verses: VerseDict = {}
+    
+    with open(csv_path, 'r', encoding='utf-8') as f:
+        reader = csv.reader(f)
+        header = next(reader, None)  # Skip header row
+        
+        for row in reader:
+            if len(row) >= 3:
+                try:
+                    chapter = int(row[0])
+                    verse_num = int(row[1])
+                    text = row[2].strip()
+                    
+                    if chapter not in verses:
+                        verses[chapter] = {}
+                    verses[chapter][verse_num] = text
+                except (ValueError, IndexError):
+                    continue
+    
+    return verses
 
 
 def parse_latin_vulgate(lat_path: Path) -> VerseDict:

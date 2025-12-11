@@ -22,7 +22,11 @@
         "VUL": "Tunc Jesus locutus est ad turbas, et ad discipulos suos,",
         "LXX": "Τότε ὁ Ἰησοῦς ἐλάλησεν τοῖς ὄχλοις καὶ τοῖς μαθηταῖς αὐτοῦ,",
         "SYN": "Тогда Иисус начал говорить народу и ученикам Своим",
-        "BYZ": "Τότε ὁ Ἰησοῦς ἐλάλησεν τοῖς ὄχλοις καὶ τοῖς μαθηταῖς αὐτοῦ,"
+        "BYZ": "Τότε ὁ Ἰησοῦς ἐλάλησεν τοῖς ὄχλοις καὶ τοῖς μαθηταῖς αὐτοῦ,",
+        "NEO": "Alors Jésus, s’adressant au peuple et à ses disciples, parla ainsi :+ 23:1 XXIII, 1. Ce discours sur la justice purement extérieure des Pharisiens est la contrepartie du Sermon sur la montagne, où sont posés les principes de la justice chrétienne et véritable.*",
+        "NAB": "Then Jesus spoke to the crowds and to his disciples,",
+        "VAT_ES": "Entonces Jesús dijo a la multitud y a sus discípulos:",
+        "CEI": "Allora Gesù si rivolse alla folla e ai suoi discepoli dicendo:"
       }
     },
     "2": {
@@ -33,10 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "VUL": "dicens: Super cathedram Moysi sederunt scribæ et pharisæi.",
+        "VUL": "dicens : Super cathedram Moysi sederunt scribæ et pharisæi.",
         "LXX": "λέγων, Ἐπὶ τῆς Μωσέως καθέδρας ἐκάθισαν οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι·",
         "SYN": "и сказал: на Моисеевом седалище сели книжники и фарисеи;",
-        "BYZ": "λέγων, Ἐπὶ τῆς Μωσέως καθέδρας ἐκάθισαν οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι·"
+        "BYZ": "λέγων, Ἐπὶ τῆς Μωσέως καθέδρας ἐκάθισαν οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι·",
+        "NEO": "« Les Scribes et les Pharisiens sont assis dans la chaire de Moïse.",
+        "NAB": "saying, \"The scribes and the Pharisees have taken their seat on the chair of Moses.",
+        "VAT_ES": "«Los escribas y fariseos ocupan la cátedra de Moisés;",
+        "CEI": "\"Sulla cattedra di Mosè si sono seduti gli scribi e i farisei."
       }
     },
     "3": {
@@ -47,10 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "VUL": "Omnia ergo quæcumque dixerint vobis, servate, et facite: secundum opera vero eorum nolite facere: dicunt enim, et non faciunt.",
+        "VUL": "Omnia ergo quæcumque dixerint vobis, servate, et facite : secundum opera vero eorum nolite facere : dicunt enim, et non faciunt.",
         "LXX": "πάντα οὖν ὅσα ἐὰν εἴπωσιν ὑμῖν τηρεῖν, τηρεῖτε καὶ ποιεῖτε· κατὰ δὲ τὰ ἔργα αὐτῶν μὴ ποιεῖτε, λέγουσιν γὰρ καὶ οὐ ποιοῦσιν.",
         "SYN": "итак все, что они велят вам соблюдать, соблюдайте и делайте; по делам же их не поступайте, ибо они говорят, и не делают:",
-        "BYZ": "πάντα οὖν ὅσα ἐὰν εἴπωσιν ὑμῖν τηρεῖν, τηρεῖτε καὶ ποιεῖτε· κατὰ δὲ τὰ ἔργα αὐτῶν μὴ ποιεῖτε, λέγουσιν γὰρ καὶ οὐ ποιοῦσιν."
+        "BYZ": "πάντα οὖν ὅσα ἐὰν εἴπωσιν ὑμῖν τηρεῖν, τηρεῖτε καὶ ποιεῖτε· κατὰ δὲ τὰ ἔργα αὐτῶν μὴ ποιεῖτε, λέγουσιν γὰρ καὶ οὐ ποιοῦσιν.",
+        "NEO": "Faites donc et observez tout ce qu’ils vous disent ; mais n’imitez pas leurs œuvres, car ils disent et ne font pas.",
+        "NAB": "Therefore, do and observe all things whatsoever they tell you, but do not follow their example. For they preach but they do not practice.",
+        "VAT_ES": "ustedes hagan y cumplan todo lo que ellos les digan, pero no se guíen por sus obras, porque no hacen lo que dicen.",
+        "CEI": "Quanto vi dicono, fatelo e osservatelo, ma non fate secondo le loro opere, perché dicono e non fanno."
       }
     },
     "4": {
@@ -61,10 +73,14 @@
         "LXX": 4
       },
       "text": {
-        "VUL": "Alligant enim onera gravia, et importabilia, et imponunt in humeros hominum: digito autem suo nolunt ea movere.",
+        "VUL": "Alligant enim onera gravia, et importabilia, et imponunt in humeros hominum : digito autem suo nolunt ea movere.",
         "LXX": "Δεσμεύουσιν γὰρ φορτία βαρέα καὶ δυσβάστακτα, καὶ ἐπιτιθέασιν ἐπὶ τοὺς ὤμους τῶν ἀνθρώπων, τῷ δὲ δακτύλῳ αὐτῶν οὐ θέλουσιν κινῆσαι αὐτά.",
         "SYN": "связывают бремена тяжелые и неудобоносимые и возлагают на плечи людям, а сами не хотят и перстом двинуть их;",
-        "BYZ": "Δεσμεύουσιν γὰρ φορτία βαρέα καὶ δυσβάστακτα, καὶ ἐπιτιθέασιν ἐπὶ τοὺς ὤμους τῶν ἀνθρώπων, τῷ δὲ δακτύλῳ αὐτῶν οὐ θέλουσιν κινῆσαι αὐτά."
+        "BYZ": "Δεσμεύουσιν γὰρ φορτία βαρέα καὶ δυσβάστακτα, καὶ ἐπιτιθέασιν ἐπὶ τοὺς ὤμους τῶν ἀνθρώπων, τῷ δὲ δακτύλῳ αὐτῶν οὐ θέλουσιν κινῆσαι αὐτά.",
+        "NEO": "Ils lient des fardeaux pesants+ 23:4 4. Fardeaux pesants: préceptes onéreux, surcharge d’observances.* et difficiles à porter, et les mettent sur les épaules des hommes, mais ils ne veulent pas les remuer du doigt.",
+        "NAB": "They tie up heavy burdens (hard to carry) and lay them on people's shoulders, but they will not lift a finger to move them.",
+        "VAT_ES": "Atan pesadas cargas y las ponen sobre los hombros de los demás, mientras que ellos no quieren moverlas ni siquiera con el dedo.",
+        "CEI": "Legano infatti pesanti fardelli e li impongono sulle spalle della gente, ma loro non vogliono muoverli neppure con un dito."
       }
     },
     "5": {
@@ -75,10 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "VUL": "Omnia vero opera sua faciunt ut videantur ab hominibus: dilatant enim phylacteria sua, et magnificant fimbrias.",
+        "VUL": "Omnia vero opera sua faciunt ut videantur ab hominibus : dilatant enim phylacteria sua, et magnificant fimbrias.",
         "LXX": "Πάντα δὲ τὰ ἔργα αὐτῶν ποιοῦσιν πρὸς τὸ θεαθῆναι τοῖς ἀνθρώποις· πλατύνουσιν δὲ τὰ φυλακτήρια αὐτῶν, καὶ μεγαλύνουσιν τὰ κράσπεδα τῶν ἱματίων αὐτῶν·",
         "SYN": "все же дела свои делают с тем, чтобы видели их люди: расширяют хранилища свои и увеличивают воскрилия одежд своих;",
-        "BYZ": "Πάντα δὲ τὰ ἔργα αὐτῶν ποιοῦσιν πρὸς τὸ θεαθῆναι τοῖς ἀνθρώποις· πλατύνουσιν δὲ τὰ φυλακτήρια αὐτῶν, καὶ μεγαλύνουσιν τὰ κράσπεδα τῶν ἱματίων αὐτῶν·"
+        "BYZ": "Πάντα δὲ τὰ ἔργα αὐτῶν ποιοῦσιν πρὸς τὸ θεαθῆναι τοῖς ἀνθρώποις· πλατύνουσιν δὲ τὰ φυλακτήρια αὐτῶν, καὶ μεγαλύνουσιν τὰ κράσπεδα τῶν ἱματίων αὐτῶν·",
+        "NEO": "Ils font toutes leurs actions pour être vus des hommes, portant de plus larges phylactères et des houppes plus longues.+ 23:5 5. Interprétant à la lettre certains passages du Pentateuque, où il est recommandé d’avoir toujours la Loi devant les yeux, les Juifs en écrivaient les maximes sur de petites bandes de parchemin, qu’ils renfermaient, pliées avec soin, dans une capsule ou étui en basane ; la capsule était elle-même fixée à un cordon de cuir qu’ils s’attachaient au front et au bras gauche : c’est ce qu’on appelait phylactère, c’est-à-dire \\+qt mémorial\\+qt* de la loi du Seigneur : sur les \\+qt houppes\\+qt*, voy. ix, 20, note.*",
+        "NAB": "All their works are performed to be seen. They widen their phylacteries and lengthen their tassels.",
+        "VAT_ES": "Todo lo hacen para que los vean: agradan las filacterias y alargas los flecos de sus mantos;",
+        "CEI": "Tutte le loro opere le fanno per essere ammirati dagli uomini: allargano i loro filattèri e allungano le frange;"
       }
     },
     "6": {
@@ -92,7 +112,11 @@
         "VUL": "Amant autem primos recubitus in cnis, et primas cathedras in synagogis,",
         "LXX": "φιλοῦσίν τε τὴν πρωτοκλισίαν ἐν τοῖς δείπνοις, καὶ τὰς πρωτοκαθεδρίας ἐν ταῖς συναγωγαῖς,",
         "SYN": "также любят предвозлежания на пиршествах и председания в синагогах",
-        "BYZ": "φιλοῦσίν τε τὴν πρωτοκλισίαν ἐν τοῖς δείπνοις, καὶ τὰς πρωτοκαθεδρίας ἐν ταῖς συναγωγαῖς,"
+        "BYZ": "φιλοῦσίν τε τὴν πρωτοκλισίαν ἐν τοῖς δείπνοις, καὶ τὰς πρωτοκαθεδρίας ἐν ταῖς συναγωγαῖς,",
+        "NEO": "Ils aiment la première place dans les festins, les premiers sièges dans les synagogues,",
+        "NAB": "They love places of honor at banquets, seats of honor in synagogues,",
+        "VAT_ES": "les gusta ocupar los primeros puestos en los banquetes y los primeros asientos en las sinagogas,",
+        "CEI": "amano posti d'onore nei conviti, i primi seggi nelle sinagoghe"
       }
     },
     "7": {
@@ -106,7 +130,11 @@
         "VUL": "et salutationes in foro, et vocari ab hominibus Rabbi.",
         "LXX": "καὶ τοὺς ἀσπασμοὺς ἐν ταῖς ἀγοραῖς, καὶ καλεῖσθαι ὑπὸ τῶν ἀνθρώπων, Ῥαββί, ῥαββί·",
         "SYN": "и приветствия в народных собраниях, и чтобы люди звали их: учитель! учитель!",
-        "BYZ": "καὶ τοὺς ἀσπασμοὺς ἐν ταῖς ἀγοραῖς, καὶ καλεῖσθαι ὑπὸ τῶν ἀνθρώπων, Ῥαββί, ῥαββί·"
+        "BYZ": "καὶ τοὺς ἀσπασμοὺς ἐν ταῖς ἀγοραῖς, καὶ καλεῖσθαι ὑπὸ τῶν ἀνθρώπων, Ῥαββί, ῥαββί·",
+        "NEO": "les salutations dans les places publiques, et à s’entendre appeler par les hommes Rabbi.",
+        "NAB": "greetings in marketplaces, and the salutation 'Rabbi.'",
+        "VAT_ES": "ser saludamos en las plazas y oírse llamar \"mi maestro\" por la gente.",
+        "CEI": "e i saluti nelle piazze, come anche sentirsi chiamare \"rabbì\" dalla gente."
       }
     },
     "8": {
@@ -117,10 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "VUL": "Vos autem nolite vocari Rabbi: unus est enim magister vester, omnes autem vos fratres estis.",
+        "VUL": "Vos autem nolite vocari Rabbi : unus est enim magister vester, omnes autem vos fratres estis.",
         "LXX": "ὑμεῖς δὲ μὴ κληθῆτε Ῥαββί· εἷς γάρ ἐστιν ὑμῶν ὁ καθηγητής, ὁ χριστός· πάντες δὲ ὑμεῖς ἀδελφοί ἐστε.",
         "SYN": "А вы не называйтесь учителями, ибо один у вас Учитель -- Христос, все же вы -- братья;",
-        "BYZ": "ὑμεῖς δὲ μὴ κληθῆτε Ῥαββί· εἷς γάρ ἐστιν ὑμῶν ὁ καθηγητής, ὁ χριστός· πάντες δὲ ὑμεῖς ἀδελφοί ἐστε."
+        "BYZ": "ὑμεῖς δὲ μὴ κληθῆτε Ῥαββί· εἷς γάρ ἐστιν ὑμῶν ὁ καθηγητής, ὁ χριστός· πάντες δὲ ὑμεῖς ἀδελφοί ἐστε.",
+        "NEO": "Pour vous, ne vous faites pas appeler Rabbi ; car vous n’avez qu’un seul Maître, et vous êtes tous frères.",
+        "NAB": "As for you, do not be called 'Rabbi.' You have but one teacher, and you are all brothers.",
+        "VAT_ES": "En cuanto a ustedes, no se hagan llamar \"maestro\", porque no tienen más que un Maestro y todos ustedes son hermanos.",
+        "CEI": "Ma voi non fatevi chiamare \"rabbì\", perché uno solo è il vostro maestro e voi siete tutti fratelli."
       }
     },
     "9": {
@@ -131,10 +163,14 @@
         "LXX": 9
       },
       "text": {
-        "VUL": "Et patrem nolite vocare vobis super terram: unus est enim pater vester qui in cælis est.",
+        "VUL": "Et patrem nolite vocare vobis super terram : unus est enim pater vester qui in cælis est.",
         "LXX": "Καὶ πατέρα μὴ καλέσητε ὑμῶν ἐπὶ τῆς γῆς· εἷς γάρ ἐστιν ὁ πατὴρ ὑμῶν, ὁ ἐν τοῖς οὐρανοῖς.",
         "SYN": "и отцом себе не называйте никого на земле, ибо один у вас Отец, Который на небесах;",
-        "BYZ": "Καὶ πατέρα μὴ καλέσητε ὑμῶν ἐπὶ τῆς γῆς· εἷς γάρ ἐστιν ὁ πατὴρ ὑμῶν, ὁ ἐν τοῖς οὐρανοῖς."
+        "BYZ": "Καὶ πατέρα μὴ καλέσητε ὑμῶν ἐπὶ τῆς γῆς· εἷς γάρ ἐστιν ὁ πατὴρ ὑμῶν, ὁ ἐν τοῖς οὐρανοῖς.",
+        "NEO": "Et ne donnez à personne sur la terre le nom de Père ; car vous n’avez qu’un seul Père, celui qui est dans les cieux.",
+        "NAB": "Call no one on earth your father; you have but one Father in heaven.",
+        "VAT_ES": "a Nadie en el mundo llamen \"padre\", porque no tienen sino uno, el Padre celestial.",
+        "CEI": "E non chiamate nessuno \"padre\" sulla terra, perché uno solo è il Padre vostro, quello del cielo."
       }
     },
     "10": {
@@ -145,10 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "VUL": "Nec vocemini magistri: quia magister vester unus est, Christus.",
+        "VUL": "Nec vocemini magistri : quia magister vester unus est, Christus.",
         "LXX": "Μηδὲ κληθῆτε καθηγηταί· εἷς γὰρ ὑμῶν ἐστιν ὁ καθηγητής, ὁ χριστός.",
         "SYN": "и не называйтесь наставниками, ибо один у вас Наставник -- Христос.",
-        "BYZ": "Μηδὲ κληθῆτε καθηγηταί· εἷς γὰρ ὑμῶν ἐστιν ὁ καθηγητής, ὁ χριστός."
+        "BYZ": "Μηδὲ κληθῆτε καθηγηταί· εἷς γὰρ ὑμῶν ἐστιν ὁ καθηγητής, ὁ χριστός.",
+        "NEO": "Qu’on ne vous appelle pas non plus Maître ; car vous n’avez qu’un Maître, le Christ.",
+        "NAB": "Do not be called 'Master'; you have but one master, the Messiah.",
+        "VAT_ES": "No se dejen llamar tampoco \"doctores\", porque sólo tienen un Doctor, que es el Mesías.",
+        "CEI": "E non fatevi chiamare \"maestri\", perché uno solo è il vostro Maestro, il Cristo."
       }
     },
     "11": {
@@ -162,7 +202,11 @@
         "VUL": "Qui major est vestrum, erit minister vester.",
         "LXX": "Ὁ δὲ μείζων ὑμῶν ἔσται ὑμῶν διάκονος.",
         "SYN": "Больший из вас да будет вам слуга:",
-        "BYZ": "Ὁ δὲ μείζων ὑμῶν ἔσται ὑμῶν διάκονος."
+        "BYZ": "Ὁ δὲ μείζων ὑμῶν ἔσται ὑμῶν διάκονος.",
+        "NEO": "Le plus grand parmi vous sera votre serviteur.",
+        "NAB": "The greatest among you must be your servant.",
+        "VAT_ES": "Que el más grande de entre ustedes se haga servidor de los otros,",
+        "CEI": "Il più grande tra voi sia vostro servo;"
       }
     },
     "12": {
@@ -173,10 +217,14 @@
         "LXX": 12
       },
       "text": {
-        "VUL": "Qui autem se exaltaverit, humiliabitur: et qui se humiliaverit, exaltabitur.",
+        "VUL": "Qui autem se exaltaverit, humiliabitur : et qui se humiliaverit, exaltabitur.",
         "LXX": "Ὅστις δὲ ὑψώσει ἑαυτόν, ταπεινωθήσεται· καὶ ὅστις ταπεινώσει ἑαυτόν, ὑψωθήσεται.",
         "SYN": "ибо, кто возвышает себя, тот унижен будет, а кто унижает себя, тот возвысится.",
-        "BYZ": "Ὅστις δὲ ὑψώσει ἑαυτόν, ταπεινωθήσεται· καὶ ὅστις ταπεινώσει ἑαυτόν, ὑψωθήσεται."
+        "BYZ": "Ὅστις δὲ ὑψώσει ἑαυτόν, ταπεινωθήσεται· καὶ ὅστις ταπεινώσει ἑαυτόν, ὑψωθήσεται.",
+        "NEO": "Mais quiconque s’élèvera sera abaissé, et quiconque s’abaissera sera élevé.",
+        "NAB": "Whoever exalts himself will be humbled; but whoever humbles himself will be exalted.",
+        "VAT_ES": "porque el que se ensalza será humillado, y el que se humilla será ensalzado».",
+        "CEI": "chi invece si innalzerà sarà abbassato e chi si abbasserà sarà innalzato."
       }
     },
     "13": {
@@ -190,7 +238,11 @@
         "VUL": "Væ autem vobis scribæ et pharisæi hypocritæ, quia clauditis regnum cælorum ante homines ! vos enim non intratis, nec introëuntes sinitis intrare.",
         "LXX": "Οὐαὶ δὲ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι κατεσθίετε τὰς οἰκίας τῶν χηρῶν, καὶ προφάσει μακρὰ προσευχόμενοι· διὰ τοῦτο λήψεσθε περισσότερον κρίμα.",
         "SYN": "Горе вам, книжники и фарисеи, лицемеры, что затворяете Царство Небесное человекам, ибо сами не входите и хотящих войти не допускаете.",
-        "BYZ": "Οὐαὶ δὲ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι κατεσθίετε τὰς οἰκίας τῶν χηρῶν, καὶ προφάσει μακρὰ προσευχόμενοι· διὰ τοῦτο λήψεσθε περισσότερον κρίμα."
+        "BYZ": "¶Οὐαὶ δὲ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι κατεσθίετε τὰς οἰκίας τῶν χηρῶν, καὶ προφάσει μακρὰ προσευχόμενοι· διὰ τοῦτο λήψεσθε περισσότερον κρίμα.",
+        "NEO": "« Malheur à vous, Scribes et Pharisiens hypocrites, parce que vous fermez aux hommes le royaume des cieux ! Vous n’y entrez pas vous-mêmes, et vous n’y laissez pas entrer ceux qui y viennent.",
+        "NAB": "\"Woe to you, scribes and Pharisees, you hypocrites. You lock the kingdom of heaven before human beings. You do not enter yourselves, nor do you allow entrance to those trying to enter.",
+        "VAT_ES": "«&iexcl;Ay de ustedes, escribas y fariseos hipócritas, que cierran a los hombres el Reino de los Cielos! Ni entran ustedes, ni dejan entrar a los que quisieran.",
+        "CEI": "Guai a voi, scribi e farisei ipocriti, che chiudete il regno dei cieli davanti agli uomini; perché così voi non vi entrate, e non lasciate entrare nemmeno quelli che vogliono entrarci"
       }
     },
     "14": {
@@ -204,7 +256,10 @@
         "VUL": "Væ vobis scribæ et pharisæi hypocritæ, quia comeditis domos viduarum, orationes longas orantes ! propter hoc amplius accipietis judicium.",
         "LXX": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι κλείετε τὴν βασιλείαν τῶν οὐρανῶν ἔμπροσθεν τῶν ἀνθρώπων· ὑμεῖς γὰρ οὐκ εἰσέρχεσθε, οὐδὲ τοὺς εἰσερχομένους ἀφίετε εἰσελθεῖν.",
         "SYN": "Горе вам, книжники и фарисеи, лицемеры, что поедаете домы вдов и лицемерно долго молитесь: за то примете тем большее осуждение.",
-        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι κλείετε τὴν βασιλείαν τῶν οὐρανῶν ἔμπροσθεν τῶν ἀνθρώπων· ὑμεῖς γὰρ οὐκ εἰσέρχεσθε, οὐδὲ τοὺς εἰσερχομένους ἀφίετε εἰσελθεῖν."
+        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι κλείετε τὴν βασιλείαν τῶν οὐρανῶν ἔμπροσθεν τῶν ἀνθρώπων· ὑμεῖς γὰρ οὐκ εἰσέρχεσθε, οὐδὲ τοὺς εἰσερχομένους ἀφίετε εἰσελθεῖν.",
+        "NEO": "« Malheur à vous, Scribes et Pharisiens hypocrites, parce que, sous le semblant de vos longues prières, vous dévorez les maisons des veuves ! C’est pourquoi vous subirez une plus forte condamnation.+ 23:14 14. Ce verset manque dans beaucoup de manuscrits ; dans quelques-uns, il se transpose avec le verset 13. Nous le trouvons en S. Marc, xii, 40.*",
+        "NAB": ")",
+        "VAT_ES": "[&iexcl;Ay de ustedes, escribas y fariseos hipócritas, que devoran los bienes de las viudas y fingen hacer largas oraciones! Por eso serán juzgados con más severidad.]"
       }
     },
     "15": {
@@ -218,7 +273,11 @@
         "VUL": "Væ vobis scribæ et pharisæi hypocritæ, quia circuitis mare, et aridam, ut faciatis unum proselytum, et cum fuerit factus, facitis eum filium gehennæ duplo quam vos.",
         "LXX": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι περιάγετε τὴν θάλασσαν καὶ τὴν ξηρὰν ποιῆσαι ἕνα προσήλυτον, καὶ ὅταν γένηται, ποιεῖτε αὐτὸν υἱὸν γεέννης διπλότερον ὑμῶν.",
         "SYN": "Горе вам, книжники и фарисеи, лицемеры, что обходите море и сушу, дабы обратить хотя одного; и когда это случится, делаете его сыном геенны, вдвое худшим вас.",
-        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι περιάγετε τὴν θάλασσαν καὶ τὴν ξηρὰν ποιῆσαι ἕνα προσήλυτον, καὶ ὅταν γένηται, ποιεῖτε αὐτὸν υἱὸν γεέννης διπλότερον ὑμῶν."
+        "BYZ": "¶Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι περιάγετε τὴν θάλασσαν καὶ τὴν ξηρὰν ποιῆσαι ἕνα προσήλυτον, καὶ ὅταν γένηται, ποιεῖτε αὐτὸν υἱὸν γεέννης διπλότερον ὑμῶν.",
+        "NEO": "« Malheur à vous, Scribes et Pharisiens hypocrites, parce que vous courez les mers et la terre pour faire un prosélyte, et, quand il l’est devenu, vous faites de lui un fils de la géhenne+ 23:15 15. Fils de la géhenne, hébraïsme, digne de la géhenne, de l’enfer.*, deux fois plus que vous !",
+        "NAB": "\"Woe to you, scribes and Pharisees, you hypocrites. You traverse sea and land to make one convert, and when that happens you make him a child of Gehenna twice as much as yourselves.",
+        "VAT_ES": "&iexcl;Ay de ustedes, escribas y fariseos hipócritas, que recorren mar y tierra para conseguir un prosélito, y cuando lo han conseguido lo hacen dos veces más digno de la Gehena que ustedes!",
+        "CEI": "Guai a voi, scribi e farisei ipocriti, che percorrete il mare e la terra per fare un solo proselito e, ottenutolo, lo rendete figlio della Geenna il doppio di voi."
       }
     },
     "16": {
@@ -229,10 +288,14 @@
         "LXX": 16
       },
       "text": {
-        "VUL": "Væ vobis duces cæci, qui dicitis: Quicumque juraverit per templum, nihil est: qui autem juraverit in auro templi, debet.",
+        "VUL": "Væ vobis duces cæci, qui dicitis : Quicumque juraverit per templum, nihil est : qui autem juraverit in auro templi, debet.",
         "LXX": "Οὐαὶ ὑμῖν, ὁδηγοὶ τυφλοί, οἱ λέγοντες, Ὃς ἂν ὀμόσῃ ἐν τῷ ναῷ, οὐδέν ἐστιν· ὃς δ’ ἂν ὀμόσῃ ἐν τῷ χρυσῷ τοῦ ναοῦ, ὀφείλει.",
         "SYN": "Горе вам, вожди слепые, которые говорите: если кто поклянется храмом, то ничего, а если кто поклянется золотом храма, то повинен.",
-        "BYZ": "Οὐαὶ ὑμῖν, ὁδηγοὶ τυφλοί, οἱ λέγοντες, Ὃς ἂν ὀμόσῃ ἐν τῷ ναῷ, οὐδέν ἐστιν· ὃς δ’ ἂν ὀμόσῃ ἐν τῷ χρυσῷ τοῦ ναοῦ, ὀφείλει."
+        "BYZ": "¶Οὐαὶ ὑμῖν, ὁδηγοὶ τυφλοί, οἱ λέγοντες, Ὃς ἂν ὀμόσῃ ἐν τῷ ναῷ, οὐδέν ἐστιν· ὃς δ’ ἂν ὀμόσῃ ἐν τῷ χρυσῷ τοῦ ναοῦ, ὀφείλει.",
+        "NEO": "« Malheur à vous, guides aveugles, qui dites : Si un homme jure par le temple, ce n’est rien ; mais s’il jure par l’or du temple, il est lié.",
+        "NAB": "\"Woe to you, blind guides, who say, 'If one swears by the temple, it means nothing, but if one swears by the gold of the temple, one is obligated.'",
+        "VAT_ES": "&iexcl;Ay de ustedes, guías, ciegos, que dicen: \"Si se jura por el santuario, el juramento no vale; pero si se jura por el oro del santuario, entonces sí que vale\"!",
+        "CEI": "Guai a voi, guide cieche, che dite: Se si giura per il tempio non vale, ma se si giura per l'oro del tempio si è obbligati."
       }
     },
     "17": {
@@ -243,10 +306,14 @@
         "LXX": 17
       },
       "text": {
-        "VUL": "Stulti et cæci: quid enim majus est ? aurum, an templum, quod sanctificat aurum ?",
+        "VUL": "Stulti et cæci : quid enim majus est ? aurum, an templum, quod sanctificat aurum ?",
         "LXX": "Μωροὶ καὶ τυφλοί· τίς γὰρ μείζων ἐστίν, ὁ χρυσός, ἢ ὁ ναὸς ὁ ἁγιάζων τὸν χρυσόν;",
         "SYN": "Безумные и слепые! что больше: золото, или храм, освящающий золото?",
-        "BYZ": "Μωροὶ καὶ τυφλοί· τίς γὰρ μείζων ἐστίν, ὁ χρυσός, ἢ ὁ ναὸς ὁ ἁγιάζων τὸν χρυσόν;"
+        "BYZ": "Μωροὶ καὶ τυφλοί· τίς γὰρ μείζων ἐστίν, ὁ χρυσός, ἢ ὁ ναὸς ὁ ἁγιάζων τὸν χρυσόν;",
+        "NEO": "Insensés et aveugles ! lequel est le plus grand, l’or, ou le temple qui sanctifie l’or ?",
+        "NAB": "Blind fools, which is greater, the gold, or the temple that made the gold sacred?",
+        "VAT_ES": "&iexcl;Insensatos y ciegos! &iquest;Qué es más importante: el oro o el santuario que hace sagrado el oro?",
+        "CEI": "Stolti e ciechi: che cosa è più grande, l'oro o il tempio che rende sacro l'oro?"
       }
     },
     "18": {
@@ -257,10 +324,14 @@
         "LXX": 18
       },
       "text": {
-        "VUL": "Et quicumque juraverit in altari, nihil est: quicumque autem juraverit in dono, quod est super illud, debet.",
+        "VUL": "Et quicumque juraverit in altari, nihil est : quicumque autem juraverit in dono, quod est super illud, debet.",
         "LXX": "Καί, Ὃς ἐὰν ὀμόσῃ ἐν τῷ θυσιαστηρίῳ, οὐδέν ἐστιν· ὃς δ’ ἂν ὀμόσῃ ἐν τῷ δώρῳ τῷ ἐπάνω αὐτοῦ, ὀφείλει.",
         "SYN": "Также: если кто поклянется жертвенником, то ничего, если же кто поклянется даром, который на нем, то повинен.",
-        "BYZ": "Καί, Ὃς ἐὰν ὀμόσῃ ἐν τῷ θυσιαστηρίῳ, οὐδέν ἐστιν· ὃς δ’ ἂν ὀμόσῃ ἐν τῷ δώρῳ τῷ ἐπάνω αὐτοῦ, ὀφείλει."
+        "BYZ": "Καί, Ὃς ἐὰν ὀμόσῃ ἐν τῷ θυσιαστηρίῳ, οὐδέν ἐστιν· ὃς δ’ ἂν ὀμόσῃ ἐν τῷ δώρῳ τῷ ἐπάνω αὐτοῦ, ὀφείλει.",
+        "NEO": "Et encore : Si un homme jure par l’autel, ce n’est rien ; mais s’il jure par l’offrande qui est déposée sur l’autel, il est lié.",
+        "NAB": "And you say, 'If one swears by the altar, it means nothing, but if one swears by the gift on the altar, one is obligated.'",
+        "VAT_ES": "Ustedes dicen también: \"Si se jura por el altar, el juramento no vale, pero vale si se jura por la ofrenda que está sobre el altar\".",
+        "CEI": "E dite ancora: Se si giura per l'altare non vale, ma se si giura per l'offerta che vi sta sopra, si resta obbligati."
       }
     },
     "19": {
@@ -271,10 +342,14 @@
         "LXX": 19
       },
       "text": {
-        "VUL": "Cæci: quid enim majus est, donum, an altare, quod sanctificat donum ?",
+        "VUL": "Cæci : quid enim majus est, donum, an altare, quod sanctificat donum ?",
         "LXX": "Μωροὶ καὶ τυφλοί· τί γὰρ μεῖζον, τὸ δῶρον, ἢ τὸ θυσιαστήριον τὸ ἁγιάζον τὸ δῶρον;",
         "SYN": "Безумные и слепые! что больше: дар, или жертвенник, освящающий дар?",
-        "BYZ": "Μωροὶ καὶ τυφλοί· τί γὰρ μεῖζον, τὸ δῶρον, ἢ τὸ θυσιαστήριον τὸ ἁγιάζον τὸ δῶρον;"
+        "BYZ": "Μωροὶ καὶ τυφλοί· τί γὰρ μεῖζον, τὸ δῶρον, ἢ τὸ θυσιαστήριον τὸ ἁγιάζον τὸ δῶρον;",
+        "NEO": "Aveugles ! lequel est le plus grand, l’offrande, ou l’autel qui sanctifie l’offrande ?",
+        "NAB": "You blind ones, which is greater, the gift, or the altar that makes the gift sacred?",
+        "VAT_ES": "&iexcl;Ciegos! &iquest;Qué es más importante, la ofrenda o el altar que hace sagrada esa ofrenda?",
+        "CEI": "Ciechi! Che cosa è più grande, l'offerta o l'altare che rende sacra l'offerta?"
       }
     },
     "20": {
@@ -288,7 +363,11 @@
         "VUL": "Qui ergo jurat in altari, jurat in eo, et in omnibus quæ super illud sunt.",
         "LXX": "Ὁ οὖν ὀμόσας ἐν τῷ θυσιαστηρίῳ ὀμνύει ἐν αὐτῷ καὶ ἐν πᾶσιν τοῖς ἐπάνω αὐτοῦ·",
         "SYN": "Итак клянущийся жертвенником клянется им и всем, что на нем;",
-        "BYZ": "Ὁ οὖν ὀμόσας ἐν τῷ θυσιαστηρίῳ ὀμνύει ἐν αὐτῷ καὶ ἐν πᾶσιν τοῖς ἐπάνω αὐτοῦ·"
+        "BYZ": "Ὁ οὖν ὀμόσας ἐν τῷ θυσιαστηρίῳ ὀμνύει ἐν αὐτῷ καὶ ἐν πᾶσιν τοῖς ἐπάνω αὐτοῦ·",
+        "NEO": "Celui donc qui jure par l’autel, jure par l’autel et par tout ce qui est dessus ;",
+        "NAB": "One who swears by the altar swears by it and all that is upon it;",
+        "VAT_ES": "Ahora bien, jurar por el altar, es jurar por él y por todo lo que está sobre él.",
+        "CEI": "Ebbene, chi giura per l'altare, giura per l'altare e per quanto vi sta sopra;"
       }
     },
     "21": {
@@ -299,10 +378,14 @@
         "LXX": 21
       },
       "text": {
-        "VUL": "Et quicumque juraverit in templo, jurat in illo, et in eo qui habitat in ipso:",
+        "VUL": "Et quicumque juraverit in templo, jurat in illo, et in eo qui habitat in ipso :",
         "LXX": "καὶ ὁ ὀμόσας ἐν τῷ ναῷ ὀμνύει ἐν αὐτῷ καὶ ἐν τῷ κατοικήσαντι αὐτόν·",
         "SYN": "и клянущийся храмом клянется им и Живущим в нем;",
-        "BYZ": "καὶ ὁ ὀμόσας ἐν τῷ ναῷ ὀμνύει ἐν αὐτῷ καὶ ἐν τῷ κατοικήσαντι αὐτόν·"
+        "BYZ": "καὶ ὁ ὀμόσας ἐν τῷ ναῷ ὀμνύει ἐν αὐτῷ καὶ ἐν τῷ κατοικήσαντι αὐτόν·",
+        "NEO": "et celui qui jure par le temple, jure par le temple et par celui qui y habite ;",
+        "NAB": "one who swears by the temple swears by it and by him who dwells in it;",
+        "VAT_ES": "Jurar por el santuario, es jurar por él y por aquel que lo habita.",
+        "CEI": "e chi giura per il tempio, giura per il tempio e per Colui che l'abita."
       }
     },
     "22": {
@@ -316,7 +399,11 @@
         "VUL": "et qui jurat in cælo, jurat in throno Dei, et in eo qui sedet super eum.",
         "LXX": "καὶ ὁ ὀμόσας ἐν τῷ οὐρανῷ ὀμνύει ἐν τῷ θρόνῳ τοῦ θεοῦ καὶ ἐν τῷ καθημένῳ ἐπάνω αὐτοῦ.",
         "SYN": "и клянущийся небом клянется Престолом Божиим и Сидящим на нем.",
-        "BYZ": "καὶ ὁ ὀμόσας ἐν τῷ οὐρανῷ ὀμνύει ἐν τῷ θρόνῳ τοῦ θεοῦ καὶ ἐν τῷ καθημένῳ ἐπάνω αὐτοῦ."
+        "BYZ": "καὶ ὁ ὀμόσας ἐν τῷ οὐρανῷ ὀμνύει ἐν τῷ θρόνῳ τοῦ θεοῦ καὶ ἐν τῷ καθημένῳ ἐπάνω αὐτοῦ.",
+        "NEO": "et celui qui jure par le ciel, jure par le trône de Dieu et par celui qui y est assis.",
+        "NAB": "one who swears by heaven swears by the throne of God and by him who is seated on it.",
+        "VAT_ES": "Jurar por el cielo, es jurar por el trono de Dios y por aquel que está sentado en él.",
+        "CEI": "E chi giura per il cielo, giura per il trono di Dio e per Colui che vi è assiso."
       }
     },
     "23": {
@@ -330,7 +417,11 @@
         "VUL": "Væ vobis scribæ et pharisæi hypocritæ, qui decimatis mentham, et anethum, et cyminum, et reliquistis quæ graviora sunt legis, judicium, et misericordiam, et fidem ! hæc oportuit facere, et illa non omittere.",
         "LXX": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι ἀποδεκατοῦτε τὸ ἡδύοσμον καὶ τὸ ἄνηθον καὶ τὸ κύμινον, καὶ ἀφήκατε τὰ βαρύτερα τοῦ νόμου, τὴν κρίσιν καὶ τὸν ἔλεον καὶ τὴν πίστιν· ταῦτα ἔδει ποιῆσαι, κἀκεῖνα μὴ ἀφιέναι.",
         "SYN": "Горе вам, книжники и фарисеи, лицемеры, что даете десятину с мяты, аниса и тмина, и оставили важнейшее в законе: суд, милость и веру; сие надлежало делать, и того не оставлять.",
-        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι ἀποδεκατοῦτε τὸ ἡδύοσμον καὶ τὸ ἄνηθον καὶ τὸ κύμινον, καὶ ἀφήκατε τὰ βαρύτερα τοῦ νόμου, τὴν κρίσιν καὶ τὸν ἔλεον καὶ τὴν πίστιν· ταῦτα ἔδει ποιῆσαι, κἀκεῖνα μὴ ἀφιέναι."
+        "BYZ": "¶Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι ἀποδεκατοῦτε τὸ ἡδύοσμον καὶ τὸ ἄνηθον καὶ τὸ κύμινον, καὶ ἀφήκατε τὰ βαρύτερα τοῦ νόμου, τὴν κρίσιν καὶ τὸν ἔλεον καὶ τὴν πίστιν· ταῦτα ἔδει ποιῆσαι, κἀκεῖνα μὴ ἀφιέναι.",
+        "NEO": "« Malheur à vous, Scribes et Pharisiens hypocrites, qui payez la dîme de la menthe, de l’aneth et du cumin, et qui négligez les points les plus graves de la Loi, la justice, la miséricorde et la bonne foi ! Ce sont ces choses qu’il fallait pratiquer, sans omettre les autres.",
+        "NAB": "\"Woe to you, scribes and Pharisees, you hypocrites. You pay tithes of mint and dill and cummin, and have neglected the weightier things of the law: judgment and mercy and fidelity. (But) these you should have done, without neglecting the others.",
+        "VAT_ES": "&iexcl;Ay de ustedes, escribas y fariseos hipócritas, que pagan el diezmo de la menta, del hinojo y del comino, y descuidan lo esencial de la Ley; la justicia, la misericordia y la fidelidad! Hay que practicar esto, sin descuidar aquello.",
+        "CEI": "Guai a voi, scribi e farisei ipocriti, che pagate la decima della menta, dell'anèto e del cumìno, e trasgredite le prescrizioni più gravi della legge: la giustizia, la misericordia e la fedeltà. Queste cose bisognava praticare, senza omettere quelle."
       }
     },
     "24": {
@@ -344,7 +435,11 @@
         "VUL": "Duces cæci, excolantes culicem, camelum autem glutientes.",
         "LXX": "Ὁδηγοὶ τυφλοί, οἱ διϋλίζοντες τὸν κώνωπα, τὴν δὲ κάμηλον καταπίνοντες.",
         "SYN": "Вожди слепые, оцеживающие комара, а верблюда поглощающие!",
-        "BYZ": "Ὁδηγοὶ τυφλοί, οἱ διϋλίζοντες τὸν κώνωπα, τὴν δὲ κάμηλον καταπίνοντες."
+        "BYZ": "Ὁδηγοὶ τυφλοί, οἱ διϋλίζοντες τὸν κώνωπα, τὴν δὲ κάμηλον καταπίνοντες.",
+        "NEO": "Guides aveugles, qui filtrez le moucheron, et avalez le chameau !",
+        "NAB": "Blind guides, who strain out the gnat and swallow the camel!",
+        "VAT_ES": "&iexcl;Guías ciegos, que filtran el mosquito y se tragan el camello!",
+        "CEI": "Guide cieche, che filtrate il moscerino e ingoiate il cammello!"
       }
     },
     "25": {
@@ -358,7 +453,11 @@
         "VUL": "Væ vobis scribæ et pharisæi hypocritæ, quia mundatis quod deforis est calicis et paropsidis ; intus autem pleni estis rapina et immunditia !",
         "LXX": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι καθαρίζετε τὸ ἔξωθεν τοῦ ποτηρίου καὶ τῆς παροψίδος, ἔσωθεν δὲ γέμουσιν ἐξ ἁρπαγῆς καὶ ἀδικίας.",
         "SYN": "Горе вам, книжники и фарисеи, лицемеры, что очищаете внешность чаши и блюда, между тем как внутри они полны хищения и неправды.",
-        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι καθαρίζετε τὸ ἔξωθεν τοῦ ποτηρίου καὶ τῆς παροψίδος, ἔσωθεν δὲ γέμουσιν ἐξ ἁρπαγῆς καὶ ἀδικίας."
+        "BYZ": "¶Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι καθαρίζετε τὸ ἔξωθεν τοῦ ποτηρίου καὶ τῆς παροψίδος, ἔσωθεν δὲ γέμουσιν ἐξ ἁρπαγῆς καὶ ἀδικίας.",
+        "NEO": "« Malheur à vous, Scribes et Pharisiens hypocrites, parce que vous nettoyez le dehors de la coupe et du plat, tandis que le dedans+ 23:25 25. Le dedans de ces vases est rempli du fruit de vos rapines, etc. Vulg., \\+qt et au dedans vous êtes pleins de rapine\\+qt*, etc.* est rempli de rapine et d’intempérance.",
+        "NAB": "\"Woe to you, scribes and Pharisees, you hypocrites. You cleanse the outside of cup and dish, but inside they are full of plunder and self-indulgence.",
+        "VAT_ES": "&iexcl;Ay de ustedes, escribas y fariseos hipócritas, que limpian por fuera la copa y el plato, mientras que por dentro están llenos de codicia y desenfreno!",
+        "CEI": "Guai a voi, scribi e farisei ipocriti, che pulite l'esterno del bicchiere e del piatto mentre all'interno sono pieni di rapina e d'intemperanza."
       }
     },
     "26": {
@@ -372,7 +471,11 @@
         "VUL": "Pharisæe cæce, munda prius quod intus est calicis, et paropsidis, ut fiat id, quod deforis est, mundum.",
         "LXX": "Φαρισαῖε τυφλέ, καθάρισον πρῶτον τὸ ἐντὸς τοῦ ποτηρίου καὶ τῆς παροψίδος, ἵνα γένηται καὶ τὸ ἐκτὸς αὐτῶν καθαρόν.",
         "SYN": "Фарисей слепой! очисти прежде внутренность чаши и блюда, чтобы чиста была и внешность их.",
-        "BYZ": "Φαρισαῖε τυφλέ, καθάρισον πρῶτον τὸ ἐντὸς τοῦ ποτηρίου καὶ τῆς παροψίδος, ἵνα γένηται καὶ τὸ ἐκτὸς αὐτῶν καθαρόν."
+        "BYZ": "Φαρισαῖε τυφλέ, καθάρισον πρῶτον τὸ ἐντὸς τοῦ ποτηρίου καὶ τῆς παροψίδος, ἵνα γένηται καὶ τὸ ἐκτὸς αὐτῶν καθαρόν.",
+        "NEO": "Pharisien aveugle, nettoie d’abord le dedans de la coupe et du plat, afin que le dehors aussi soit pur.",
+        "NAB": "Blind Pharisee, cleanse first the inside of the cup, so that the outside also may be clean.",
+        "VAT_ES": "&iexcl;Fariseo ciego! Limpia primero la copa por dentro, y así también quedará limpia por fuera.",
+        "CEI": "Fariseo cieco, pulisci prima l'interno del bicchiere, perché anche l'esterno diventi netto!"
       }
     },
     "27": {
@@ -386,7 +489,11 @@
         "VUL": "Væ vobis scribæ et pharisæi hypocritæ, quia similes estis sepulchris dealbatis, quæ a foris parent hominibus speciosa, intus vero pleni sunt ossibus mortuorum, et omni spurcitia !",
         "LXX": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι παρομοιάζετε τάφοις κεκονιαμένοις, οἵτινες ἔξωθεν μὲν φαίνονται ὡραῖοι, ἔσωθεν δὲ γέμουσιν ὀστέων νεκρῶν καὶ πάσης ἀκαθαρσίας.",
         "SYN": "Горе вам, книжники и фарисеи, лицемеры, что уподобляетесь окрашенным гробам, которые снаружи кажутся красивыми, а внутри полны костей мертвых и всякой нечистоты;",
-        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι παρομοιάζετε τάφοις κεκονιαμένοις, οἵτινες ἔξωθεν μὲν φαίνονται ὡραῖοι, ἔσωθεν δὲ γέμουσιν ὀστέων νεκρῶν καὶ πάσης ἀκαθαρσίας."
+        "BYZ": "¶Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι παρομοιάζετε τάφοις κεκονιαμένοις, οἵτινες ἔξωθεν μὲν φαίνονται ὡραῖοι, ἔσωθεν δὲ γέμουσιν ὀστέων νεκρῶν καὶ πάσης ἀκαθαρσίας.",
+        "NEO": "« Malheur à vous, Scribes et Pharisiens hypocrites, parce que vous ressemblez à des sépulcres blanchis+ 23:27 27. Sépulcres blanchis: Chaque année, à l’approche de la Pâque, les Juifs blanchissaient à la chaux les parois des sépulcres, moins pour les embellir que pour les rendre bien visibles, et empêcher qu’on ne contractât quelque souillure légale en les touchant par mégarde.*, qui au dehors paraissent beaux, mais au dedans sont pleins d’ossements de morts et de toute sorte de pourriture.",
+        "NAB": "\"Woe to you, scribes and Pharisees, you hypocrites. You are like whitewashed tombs, which appear beautiful on the outside, but inside are full of dead men's bones and every kind of filth.",
+        "VAT_ES": "&iexcl;Ay de ustedes, escribas y fariseos hipócritas, que parecen sepulcros blanqueados: hermosos por fuera, pero por dentro llenos de huesos de muertos y de podredumbre!",
+        "CEI": "Guai a voi, scribi e farisei ipocriti, che rassomigliate a sepolcri imbiancati: essi all'esterno son belli a vedersi, ma dentro sono pieni di ossa di morti e di ogni putridume."
       }
     },
     "28": {
@@ -397,10 +504,14 @@
         "LXX": 28
       },
       "text": {
-        "VUL": "Sic et vos a foris quidem paretis hominibus justi: intus autem pleni estis hypocrisi et iniquitate.",
+        "VUL": "Sic et vos a foris quidem paretis hominibus justi : intus autem pleni estis hypocrisi et iniquitate.",
         "LXX": "Οὕτως καὶ ὑμεῖς ἔξωθεν μὲν φαίνεσθε τοῖς ἀνθρώποις δίκαιοι, ἔσωθεν δὲ μεστοί ἐστε ὑποκρίσεως καὶ ἀνομίας.",
         "SYN": "так и вы по наружности кажетесь людям праведными, а внутри исполнены лицемерия и беззакония.",
-        "BYZ": "Οὕτως καὶ ὑμεῖς ἔξωθεν μὲν φαίνεσθε τοῖς ἀνθρώποις δίκαιοι, ἔσωθεν δὲ μεστοί ἐστε ὑποκρίσεως καὶ ἀνομίας."
+        "BYZ": "Οὕτως καὶ ὑμεῖς ἔξωθεν μὲν φαίνεσθε τοῖς ἀνθρώποις δίκαιοι, ἔσωθεν δὲ μεστοί ἐστε ὑποκρίσεως καὶ ἀνομίας.",
+        "NEO": "Ainsi vous, au dehors, vous paraissez justes aux hommes, mais au dedans vous êtes pleins d’hypocrisie et d’iniquité.",
+        "NAB": "Even so, on the outside you appear righteous, but inside you are filled with hypocrisy and evildoing.",
+        "VAT_ES": "Así también son ustedes: por fuera parecen justos delante de los hombres, pero por dentro están llenos de hipocresía y de iniquidad.",
+        "CEI": "Così anche voi apparite giusti all'esterno davanti agli uomini, ma dentro siete pieni d'ipocrisia e d'iniquità."
       }
     },
     "29": {
@@ -414,7 +525,11 @@
         "VUL": "Væ vobis scribæ et pharisæi hypocritæ, qui ædificatis sepulchra prophetarum, et ornatis monumenta justorum,",
         "LXX": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι οἰκοδομεῖτε τοὺς τάφους τῶν προφητῶν, καὶ κοσμεῖτε τὰ μνημεῖα τῶν δικαίων,",
         "SYN": "Горе вам, книжники и фарисеи, лицемеры, что строите гробницы пророкам и украшаете памятники праведников,",
-        "BYZ": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι οἰκοδομεῖτε τοὺς τάφους τῶν προφητῶν, καὶ κοσμεῖτε τὰ μνημεῖα τῶν δικαίων,"
+        "BYZ": "¶Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι, ὑποκριταί, ὅτι οἰκοδομεῖτε τοὺς τάφους τῶν προφητῶν, καὶ κοσμεῖτε τὰ μνημεῖα τῶν δικαίων,",
+        "NEO": "« Malheur à vous, Scribes et Pharisiens hypocrites, qui bâtissez les tombeaux des prophètes et ornez les monuments des justes,",
+        "NAB": "\"Woe to you, scribes and Pharisees, you hypocrites. You build the tombs of the prophets and adorn the memorials of the righteous,",
+        "VAT_ES": "&iexcl;Ay de ustedes, escribas y fariseos hipócritas, que construyen los sepulcros de los profetas y adornan las tumbas de los justos,",
+        "CEI": "Guai a voi, scribi e farisei ipocriti, che innalzate i sepolcri ai profeti e adornate le tombe dei giusti,"
       }
     },
     "30": {
@@ -425,10 +540,14 @@
         "LXX": 30
       },
       "text": {
-        "VUL": "et dicitis: Si fuissemus in diebus patrum nostrorum, non essemus socii eorum in sanguine prophetarum !",
+        "VUL": "et dicitis : Si fuissemus in diebus patrum nostrorum, non essemus socii eorum in sanguine prophetarum !",
         "LXX": "καὶ λέγετε, Εἰ ἦμεν ἐν ταῖς ἡμέραις τῶν πατέρων ἡμῶν, οὐκ ἂν ἦμεν κοινωνοὶ αὐτῶν ἐν τῷ αἵματι τῶν προφητῶν.",
-        "SYN": "и говорите: если бы мы были во дни отцов наших, то не были бы сообщниками их в пролитии крови пророков;",
-        "BYZ": "καὶ λέγετε, Εἰ ἦμεν ἐν ταῖς ἡμέραις τῶν πατέρων ἡμῶν, οὐκ ἂν ἦμεν κοινωνοὶ αὐτῶν ἐν τῷ αἵματι τῶν προφητῶν."
+        "SYN": "и говорите: если бы мы были во дни отцов наших, то не были бы сообщниками их в _пролитии_ крови пророков;",
+        "BYZ": "καὶ λέγετε, Εἰ ἦμεν ἐν ταῖς ἡμέραις τῶν πατέρων ἡμῶν, οὐκ ἂν ἦμεν κοινωνοὶ αὐτῶν ἐν τῷ αἵματι τῶν προφητῶν.",
+        "NEO": "et qui dites : Si nous avions vécu aux jours de nos pères, nous n’aurions pas été leurs complices pour verser* le sang des prophètes.",
+        "NAB": "and you say, 'If we had lived in the days of our ancestors, we would not have joined them in shedding the prophets' blood.'",
+        "VAT_ES": "diciendo: \"Si hubiéramos vivido en el tiempo de nuestros padres, no nos hubiéramos unido a ellos para derramar la sangre de los profetas\"!",
+        "CEI": "e dite: Se fossimo vissuti al tempo dei nostri padri, non ci saremmo associati a loro per versare il sangue dei profeti;"
       }
     },
     "31": {
@@ -442,7 +561,11 @@
         "VUL": "itaque testimonio estis vobismetipsis, quia filii estis eorum, qui prophetas occiderunt.",
         "LXX": "Ὥστε μαρτυρεῖτε ἑαυτοῖς ὅτι υἱοί ἐστε τῶν φονευσάντων τοὺς προφήτας·",
         "SYN": "таким образом вы сами против себя свидетельствуете, что вы сыновья тех, которые избили пророков;",
-        "BYZ": "Ὥστε μαρτυρεῖτε ἑαυτοῖς ὅτι υἱοί ἐστε τῶν φονευσάντων τοὺς προφήτας·"
+        "BYZ": "Ὥστε μαρτυρεῖτε ἑαυτοῖς ὅτι υἱοί ἐστε τῶν φονευσάντων τοὺς προφήτας·",
+        "NEO": "Ainsi vous rendez contre vous-mêmes ce témoignage, que vous êtes les fils de ceux qui ont tué les prophètes.",
+        "NAB": "Thus you bear witness against yourselves that you are the children of those who murdered the prophets;",
+        "VAT_ES": "De esa manera atestiguan contra ustedes mismos que son hijos de los que mataron a los profetas.",
+        "CEI": "e così testimoniate, contro voi stessi, di essere figli degli uccisori dei profeti."
       }
     },
     "32": {
@@ -456,7 +579,11 @@
         "VUL": "Et vos implete mensuram patrum vestrorum.",
         "LXX": "καὶ ὑμεῖς πληρώσατε τὸ μέτρον τῶν πατέρων ὑμῶν.",
         "SYN": "дополняйте же меру отцов ваших.",
-        "BYZ": "καὶ ὑμεῖς πληρώσατε τὸ μέτρον τῶν πατέρων ὑμῶν."
+        "BYZ": "καὶ ὑμεῖς πληρώσατε τὸ μέτρον τῶν πατέρων ὑμῶν.",
+        "NEO": "Comblez donc la mesure de vos pères !",
+        "NAB": "now fill up what your ancestors measured out!",
+        "VAT_ES": "&iexcl;Colmen entonces la medida de sus padres!",
+        "CEI": "Ebbene, colmate la misura dei vostri padri!"
       }
     },
     "33": {
@@ -470,7 +597,11 @@
         "VUL": "Serpentes, genimina viperarum, quomodo fugietis a judicio gehennæ ?",
         "LXX": "Ὄφεις, γεννήματα ἐχιδνῶν, πῶς φύγητε ἀπὸ τῆς κρίσεως τῆς γεέννης;",
         "SYN": "Змии, порождения ехиднины! как убежите вы от осуждения в геенну?",
-        "BYZ": "Ὄφεις, γεννήματα ἐχιδνῶν, πῶς φύγητε ἀπὸ τῆς κρίσεως τῆς γεέννης;"
+        "BYZ": "Ὄφεις, γεννήματα ἐχιδνῶν, πῶς φύγητε ἀπὸ τῆς κρίσεως τῆς γεέννης;",
+        "NEO": "Serpents, race de vipères, comment éviterez-vous d’être condamnés à la géhenne ?",
+        "NAB": "You serpents, you brood of vipers, how can you flee from the judgment of Gehenna?",
+        "VAT_ES": "&iexcl;Serpientes, raza de víboras! &iquest;Cómo podrán escapar a la condenación de la Gehena?",
+        "CEI": "Serpenti, razza di vipere, come potrete scampare dalla condanna della Geenna?"
       }
     },
     "34": {
@@ -481,10 +612,14 @@
         "LXX": 34
       },
       "text": {
-        "VUL": "Ideo ecce ego mitto ad vos prophetas, et sapientes, et scribas, et ex illis occidetis, et crucifigetis, et ex eis flagellabitis in synagogis vestris, et persequemini de civitate in civitatem:",
+        "VUL": "Ideo ecce ego mitto ad vos prophetas, et sapientes, et scribas, et ex illis occidetis, et crucifigetis, et ex eis flagellabitis in synagogis vestris, et persequemini de civitate in civitatem :",
         "LXX": "Διὰ τοῦτο, ἰδού, ἐγὼ ἀποστέλλω πρὸς ὑμᾶς προφήτας καὶ σοφοὺς καὶ γραμματεῖς· καὶ ἐξ αὐτῶν ἀποκτενεῖτε καὶ σταυρώσετε, καὶ ἐξ αὐτῶν μαστιγώσετε ἐν ταῖς συναγωγαῖς ὑμῶν καὶ διώξετε ἀπὸ πόλεως εἰς πόλιν·",
         "SYN": "Посему, вот, Я посылаю к вам пророков, и мудрых, и книжников; и вы иных убьете и распнете, а иных будете бить в синагогах ваших и гнать из города в город;",
-        "BYZ": "Διὰ τοῦτο, ἰδού, ἐγὼ ἀποστέλλω πρὸς ὑμᾶς προφήτας καὶ σοφοὺς καὶ γραμματεῖς· καὶ ἐξ αὐτῶν ἀποκτενεῖτε καὶ σταυρώσετε, καὶ ἐξ αὐτῶν μαστιγώσετε ἐν ταῖς συναγωγαῖς ὑμῶν καὶ διώξετε ἀπὸ πόλεως εἰς πόλιν·"
+        "BYZ": "Διὰ τοῦτο, ἰδού, ἐγὼ ἀποστέλλω πρὸς ὑμᾶς προφήτας καὶ σοφοὺς καὶ γραμματεῖς· καὶ ἐξ αὐτῶν ἀποκτενεῖτε καὶ σταυρώσετε, καὶ ἐξ αὐτῶν μαστιγώσετε ἐν ταῖς συναγωγαῖς ὑμῶν καὶ διώξετε ἀπὸ πόλεως εἰς πόλιν·",
+        "NEO": "C’est pourquoi voici que je vous envoie des prophètes, des sages et des docteurs. Vous tuerez et crucifierez les uns, vous battrez de verges les autres dans vos synagogues, et vous les poursuivrez de ville en ville :",
+        "NAB": "Therefore, behold, I send to you prophets and wise men and scribes; some of them you will kill and crucify, some of them you will scourge in your synagogues and pursue from town to town,",
+        "VAT_ES": "Por eso, yo voy a enviarles profetas, sabios y escribas; ustedes matarán y crucificarán a unos, azotarán a otros en las sinagogas, y los perseguirán de ciudad en ciudad.",
+        "CEI": "Perciò ecco, io vi mando profeti, sapienti e scribi; di questi alcuni ne ucciderete e crocifiggerete, altri ne flagellerete nelle vostre sinagoghe e li perseguiterete di città in città;"
       }
     },
     "35": {
@@ -498,7 +633,11 @@
         "VUL": "ut veniat super vos omnis sanguis justus, qui effusus est super terram, a sanguine Abel justi usque ad sanguinem Zachariæ, filii Barachiæ, quem occidistis inter templum et altare.",
         "LXX": "ὅπως ἔλθῃ ἐφ’ ὑμᾶς πᾶν αἷμα δίκαιον ἐκχυνόμενον ἐπὶ τῆς γῆς, ἀπὸ τοῦ αἵματος Ἄβελ τοῦ δικαίου ἕως τοῦ αἵματος Ζαχαρίου υἱοῦ Βαραχίου, ὃν ἐφονεύσατε μεταξὺ τοῦ ναοῦ καὶ τοῦ θυσιαστηρίου.",
         "SYN": "да придет на вас вся кровь праведная, пролитая на земле, от крови Авеля праведного до крови Захарии, сына Варахиина, которого вы убили между храмом и жертвенником.",
-        "BYZ": "ὅπως ἔλθῃ ἐφ’ ὑμᾶς πᾶν αἷμα δίκαιον ἐκχυνόμενον ἐπὶ τῆς γῆς, ἀπὸ τοῦ αἵματος Ἄβελ τοῦ δικαίου ἕως τοῦ αἵματος Ζαχαρίου υἱοῦ Βαραχίου, ὃν ἐφονεύσατε μεταξὺ τοῦ ναοῦ καὶ τοῦ θυσιαστηρίου."
+        "BYZ": "ὅπως ἔλθῃ ἐφ’ ὑμᾶς πᾶν αἷμα δίκαιον ἐκχυνόμενον ἐπὶ τῆς γῆς, ἀπὸ τοῦ αἵματος Ἄβελ τοῦ δικαίου ἕως τοῦ αἵματος Ζαχαρίου υἱοῦ Βαραχίου, ὃν ἐφονεύσατε μεταξὺ τοῦ ναοῦ καὶ τοῦ θυσιαστηρίου.",
+        "NEO": "afin que retombe sur vous tout le sang innocent répandu sur la terre, depuis le sang du juste Abel jusqu’au sang de Zacharie+ 23:35 35. Du meurtre d’Abel, qui est le premier mentionné dans la Bible, le Christ descend à celui de Zacharie qui, dans l’ordre des livres de la Bible hébraïque, est le dernier meurtre de prophète mentionné, II Par. xxiv, 20-22. Il est vrai que dans les Chroniques ou Paralipomènes il est dit fils de Joïada. Serait-ce une erreur de copiste, due au souvenir de \\+qt Zacharie, fils de Barachie\\+qt*, l’avant-dernier des petits prophètes ? S. Jérôme dit avoir lu : fils \\+qt de Joïada\\+qt* dans l’évangile des Nazaréens. Du reste Joïada, qui avait alors 130 ans était-il bien le père et non pas plutôt le grand-père de Zacharie ?*, fils de Barachie, que vous avez tué entre le temple et l’autel.",
+        "NAB": "so that there may come upon you all the righteous blood shed upon earth, from the righteous blood of Abel to the blood of Zechariah, the son of Barachiah, whom you murdered between the sanctuary and the altar.",
+        "VAT_ES": "Así caerá sobre ustedes toda la sangre del justo Abel, hasta la sangre de Zacarías, hijo de Baraquías, al que ustedes asesinaron entre el santuario y el altar.",
+        "CEI": "perché ricada su di voi tutto il sangue innocente versato sopra la terra, dal sangue del giusto Abele fino al sangue di Zaccaria, figlio di Barachìa, che avete ucciso tra il santuario e l'altare."
       }
     },
     "36": {
@@ -512,7 +651,11 @@
         "VUL": "Amen dico vobis, venient hæc omnia super generationem istam.",
         "LXX": "Ἀμὴν λέγω ὑμῖν ὅτι ἥξει πάντα ταῦτα ἐπὶ τὴν γενεὰν ταύτην.",
         "SYN": "Истинно говорю вам, что все сие придет на род сей.",
-        "BYZ": "Ἀμὴν λέγω ὑμῖν ὅτι ἥξει πάντα ταῦτα ἐπὶ τὴν γενεὰν ταύτην."
+        "BYZ": "Ἀμὴν λέγω ὑμῖν ὅτι ἥξει πάντα ταῦτα ἐπὶ τὴν γενεὰν ταύτην.",
+        "NEO": "En vérité, je vous le dis, tout cela viendra sur cette génération.",
+        "NAB": "Amen, I say to you, all these things will come upon this generation.",
+        "VAT_ES": "Les aseguro que todo esto sobrevendrá a la presente generación.",
+        "CEI": "In verità vi dico: tutte queste cose ricadranno su questa generazione."
       }
     },
     "37": {
@@ -526,7 +669,11 @@
         "VUL": "Jerusalem, Jerusalem, quæ occidis prophetas, et lapidas eos, qui ad te missi sunt, quoties volui congregare filios tuos, quemadmodum gallina congregat pullos suos sub alas, et noluisti ?",
         "LXX": "Ἱερουσαλήμ, Ἱερουσαλήμ, ἡ ἀποκτένουσα τοὺς προφήτας καὶ λιθοβολοῦσα τοὺς ἀπεσταλμένους πρὸς αὐτήν, ποσάκις ἠθέλησα ἐπισυναγαγεῖν τὰ τέκνα σου, ὃν τρόπον ἐπισυνάγει ὄρνις τὰ νοσσία ἑαυτῆς ὑπὸ τὰς πτέρυγας, καὶ οὐκ ἠθελήσατε.",
         "SYN": "Иерусалим, Иерусалим, избивающий пророков и камнями побивающий посланных к тебе! сколько раз хотел Я собрать детей твоих, как птица собирает птенцов своих под крылья, и вы не захотели!",
-        "BYZ": "Ἱερουσαλήμ, Ἱερουσαλήμ, ἡ ἀποκτένουσα τοὺς προφήτας καὶ λιθοβολοῦσα τοὺς ἀπεσταλμένους πρὸς αὐτήν, ποσάκις ἠθέλησα ἐπισυναγαγεῖν τὰ τέκνα σου, ὃν τρόπον ἐπισυνάγει ὄρνις τὰ νοσσία ἑαυτῆς ὑπὸ τὰς πτέρυγας, καὶ οὐκ ἠθελήσατε."
+        "BYZ": "¶Ἱερουσαλήμ, Ἱερουσαλήμ, ἡ ἀποκτένουσα τοὺς προφήτας καὶ λιθοβολοῦσα τοὺς ἀπεσταλμένους πρὸς αὐτήν, ποσάκις ἠθέλησα ἐπισυναγαγεῖν τὰ τέκνα σου, ὃν τρόπον ἐπισυνάγει ὄρνις τὰ νοσσία ἑαυτῆς ὑπὸ τὰς πτέρυγας, καὶ οὐκ ἠθελήσατε.",
+        "NEO": "« Jérusalem, Jérusalem, qui tue les prophètes et lapides ceux qui lui sont envoyés ! Que de fois j’ai voulu rassembler tes enfants, comme une poule rassemble ses poussins sous ses ailes, et tu ne l’as pas voulu !+ 23:37 37. Luc, xiii, 34. — Vous ne l’avez pas voulu, ô habitants de Jérusalem. Vulg. \\+qt tu ne l’as pas voulu.\\+qt**",
+        "NAB": "\"Jerusalem, Jerusalem, you who kill the prophets and stone those sent to you, how many times I yearned to gather your children together, as a hen gathers her young under her wings, but you were unwilling!",
+        "VAT_ES": "&iexcl;Jerusalén, Jerusalén, que matas a los profetas y apedreas a los que te son enviados! &iexcl;Cuántas veces quise reunir a tus hijos, como la gallina reúne bajo sus alas a los pollitos, y tú no quisiste!",
+        "CEI": "Gerusalemme, Gerusalemme, che uccidi i profeti e lapidi quelli che ti sono inviati, quante volte ho voluto raccogliere i tuoi figli, come una gallina raccoglie i pulcini sotto le ali, e voi non avete voluto!"
       }
     },
     "38": {
@@ -540,7 +687,11 @@
         "VUL": "Ecce relinquetur vobis domus vestra deserta.",
         "LXX": "Ἰδού, ἀφίεται ὑμῖν ὁ οἶκος ὑμῶν ἔρημος.",
         "SYN": "Се, оставляется вам дом ваш пуст.",
-        "BYZ": "Ἰδού, ἀφίεται ὑμῖν ὁ οἶκος ὑμῶν ἔρημος."
+        "BYZ": "Ἰδού, ἀφίεται ὑμῖν ὁ οἶκος ὑμῶν ἔρημος.",
+        "NEO": "Voici que votre maison vous est laissée solitaire.",
+        "NAB": "Behold, your house will be abandoned, desolate.",
+        "VAT_ES": "Por eso, a ustedes la casa les quedará desierta.",
+        "CEI": "Ecco: la vostra casa vi sarà lasciata deserta!"
       }
     },
     "39": {
@@ -551,10 +702,14 @@
         "LXX": 39
       },
       "text": {
-        "VUL": "Dico enim vobis, non me videbitis amodo, donec dicatis: Benedictus, qui venit in nomine Domini.",
+        "VUL": "Dico enim vobis, non me videbitis amodo, donec dicatis : Benedictus, qui venit in nomine Domini.",
         "LXX": "Λέγω γὰρ ὑμῖν, οὐ μή με ἴδητε ἀπ’ ἄρτι ἕως ἂν εἴπητε, Εὐλογημένος ὁ ἐρχόμενος ἐν ὀνόματι κυρίου.",
         "SYN": "Ибо сказываю вам: не увидите Меня отныне, доколе не воскликнете: благословен Грядый во имя Господне!",
-        "BYZ": "Λέγω γὰρ ὑμῖν, οὐ μή με ἴδητε ἀπ’ ἄρτι ἕως ἂν εἴπητε, Εὐλογημένος ὁ ἐρχόμενος ἐν ὀνόματι κυρίου."
+        "BYZ": "Λέγω γὰρ ὑμῖν, οὐ μή με ἴδητε ἀπ’ ἄρτι ἕως ἂν εἴπητε, Εὐλογημένος ὁ ἐρχόμενος ἐν ὀνόματι κυρίου.",
+        "NEO": "Car, je vous le dis, vous ne me verrez plus désormais jusqu’à ce que vous disiez : « Béni soit celui qui vient au nom du Seigneur !* »",
+        "NAB": "I tell you, you will not see me again until you say, 'Blessed is he who comes in the name of the Lord.'\"",
+        "VAT_ES": "Les aseguro que ya no me verán más, hasta que digan: &iexcl;Bendito el que viene en nombre del Señor!».",
+        "CEI": "Vi dico infatti che non mi vedrete più finché non direte: Benedetto colui che viene nel nome del Signore!\"."
       }
     }
   }

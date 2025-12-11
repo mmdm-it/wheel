@@ -19,10 +19,14 @@
         "LXX": 1
       },
       "text": {
-        "VUL": "In illa hora accesserunt discipuli ad Jesum, dicentes: Quis, putas, major est in regno cælorum ?",
+        "VUL": "In illa hora accesserunt discipuli ad Jesum, dicentes : Quis, putas, major est in regno cælorum ?",
         "LXX": "Ἐν ἐκείνῃ τῇ ὥρᾳ προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ, λέγοντες, Τίς ἄρα μείζων ἐστὶν ἐν τῇ βασιλείᾳ τῶν οὐρανῶν;",
         "SYN": "В то время ученики приступили к Иисусу и сказали: кто больше в Царстве Небесном?",
-        "BYZ": "Ἐν ἐκείνῃ τῇ ὥρᾳ προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ, λέγοντες, Τίς ἄρα μείζων ἐστὶν ἐν τῇ βασιλείᾳ τῶν οὐρανῶν;"
+        "BYZ": "Ἐν ἐκείνῃ τῇ ὥρᾳ προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ, λέγοντες, Τίς ἄρα μείζων ἐστὶν ἐν τῇ βασιλείᾳ τῶν οὐρανῶν;",
+        "NEO": "En ce moment-là, les disciples s’approchèrent de Jésus et lui dirent : « Qui donc est le plus grand dans le royaume des cieux ? »+ 18:1 XVIII, 1. Marc, ix, 32-41 ; Luc, ix, 46-48.*",
+        "NAB": "At that time the disciples approached Jesus and said, \"Who is the greatest in the kingdom of heaven?\"",
+        "VAT_ES": "En aquel momento los discípulos se acercaron a Jesús para preguntarle: «&iquest;Quién es el más grande en el Reino de los Cielos?».",
+        "CEI": "In quel momento i discepoli si avvicinarono a Gesù dicendo: \"Chi dunque è il più grande nel regno dei cieli?\"."
       }
     },
     "2": {
@@ -36,7 +40,11 @@
         "VUL": "Et advocans Jesus parvulum, statuit eum in medio eorum,",
         "LXX": "Καὶ προσκαλεσάμενος ὁ Ἰησοῦς παιδίον ἔστησεν αὐτὸ ἐν μέσῳ αὐτῶν,",
         "SYN": "Иисус, призвав дитя, поставил его посреди них",
-        "BYZ": "Καὶ προσκαλεσάμενος ὁ Ἰησοῦς παιδίον ἔστησεν αὐτὸ ἐν μέσῳ αὐτῶν,"
+        "BYZ": "Καὶ προσκαλεσάμενος ὁ Ἰησοῦς παιδίον ἔστησεν αὐτὸ ἐν μέσῳ αὐτῶν,",
+        "NEO": "Jésus, faisant venir un petit enfant, le plaça au milieu d’eux",
+        "NAB": "He called a child over, placed it in their midst,",
+        "VAT_ES": "Jesús llamó a un niño, lo puso en medio de ellos",
+        "CEI": "Allora Gesù chiamò a sé un bambino, lo pose in mezzo a loro e disse:"
       }
     },
     "3": {
@@ -47,10 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "VUL": "et dixit: Amen dico vobis, nisi conversi fueritis, et efficiamini sicut parvuli, non intrabitis in regnum cælorum.",
+        "VUL": "et dixit : Amen dico vobis, nisi conversi fueritis, et efficiamini sicut parvuli, non intrabitis in regnum cælorum.",
         "LXX": "καὶ εἶπεν, Ἀμὴν λέγω ὑμῖν, ἐὰν μὴ στραφῆτε καὶ γένησθε ὡς τὰ παιδία, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν.",
         "SYN": "и сказал: истинно говорю вам, если не обратитесь и не будете как дети, не войдете в Царство Небесное;",
-        "BYZ": "καὶ εἶπεν, Ἀμὴν λέγω ὑμῖν, ἐὰν μὴ στραφῆτε καὶ γένησθε ὡς τὰ παιδία, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν."
+        "BYZ": "καὶ εἶπεν, Ἀμὴν λέγω ὑμῖν, ἐὰν μὴ στραφῆτε καὶ γένησθε ὡς τὰ παιδία, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν.",
+        "NEO": "et leur dit : « Je vous le dis, en vérité, si vous ne vous changez de façon à devenir comme les petits enfants, vous n’entrerez pas dans le royaume des cieux.",
+        "NAB": "and said, \"Amen, I say to you, unless you turn and become like children, you will not enter the kingdom of heaven.",
+        "VAT_ES": "y dijo: «Les aseguro que si ustedes no cambian o no se hacen como niños, no entrarán en el Reino de los Cielos.",
+        "CEI": "\"In verità vi dico: se non vi convertirete e non diventerete come i bambini, non entrerete nel regno dei cieli."
       }
     },
     "4": {
@@ -64,7 +76,11 @@
         "VUL": "Quicumque ergo humiliaverit se sicut parvulus iste, hic est major in regno cælorum.",
         "LXX": "Ὅστις οὖν ταπεινώσει ἑαυτὸν ὡς τὸ παιδίον τοῦτο, οὗτός ἐστιν ὁ μείζων ἐν τῇ βασιλείᾳ τῶν οὐρανῶν.",
         "SYN": "итак, кто умалится, как это дитя, тот и больше в Царстве Небесном;",
-        "BYZ": "Ὅστις οὖν ταπεινώσει ἑαυτὸν ὡς τὸ παιδίον τοῦτο, οὗτός ἐστιν ὁ μείζων ἐν τῇ βασιλείᾳ τῶν οὐρανῶν."
+        "BYZ": "Ὅστις οὖν ταπεινώσει ἑαυτὸν ὡς τὸ παιδίον τοῦτο, οὗτός ἐστιν ὁ μείζων ἐν τῇ βασιλείᾳ τῶν οὐρανῶν.",
+        "NEO": "Celui donc qui se fera humble comme ce petit enfant, est le plus grand dans le royaume des cieux.",
+        "NAB": "Whoever humbles himself like this child is the greatest in the kingdom of heaven.",
+        "VAT_ES": "Por lo tanto, el que se haga pequeño como este niño, será el más grande en el Reino de los Cielos.",
+        "CEI": "Perciò chiunque diventerà piccolo come questo bambino, sarà il più grande nel regno dei cieli."
       }
     },
     "5": {
@@ -75,10 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "VUL": "Et qui susceperit unum parvulum talem in nomine meo, me suscipit:",
+        "VUL": "Et qui susceperit unum parvulum talem in nomine meo, me suscipit :",
         "LXX": "Καὶ ὃς ἐὰν δέξηται παιδίον τοιοῦτον ἓν ἐπὶ τῷ ὀνόματί μου, ἐμὲ δέχεται·",
         "SYN": "и кто примет одно такое дитя во имя Мое, тот Меня принимает;",
-        "BYZ": "Καὶ ὃς ἐὰν δέξηται παιδίον τοιοῦτον ἓν ἐπὶ τῷ ὀνόματί μου, ἐμὲ δέχεται·"
+        "BYZ": "Καὶ ὃς ἐὰν δέξηται παιδίον τοιοῦτον ἓν ἐπὶ τῷ ὀνόματί μου, ἐμὲ δέχεται·",
+        "NEO": "Et celui qui reçoit en mon nom un petit enfant comme celui-ci, c’est moi qu’il reçoit.",
+        "NAB": "And whoever receives one child such as this in my name receives me.",
+        "VAT_ES": "El que recibe a uno de estos pequeños en mi Nombre, me recibe a mí mismo.",
+        "CEI": "E chi accoglie anche uno solo di questi bambini in nome mio, accoglie me."
       }
     },
     "6": {
@@ -92,7 +112,11 @@
         "VUL": "qui autem scandalizaverit unum de pusillis istis, qui in me credunt, expedit ei ut suspendatur mola asinaria in collo ejus, et demergatur in profundum maris.",
         "LXX": "ὃς δ’ ἂν σκανδαλίσῃ ἕνα τῶν μικρῶν τούτων τῶν πιστευόντων εἰς ἐμέ, συμφέρει αὐτῷ ἵνα κρεμασθῇ μύλος ὀνικὸς εἰς τὸν τράχηλον αὐτοῦ, καὶ καταποντισθῇ ἐν τῷ πελάγει τῆς θαλάσσης.",
         "SYN": "а кто соблазнит одного из малых сих, верующих в Меня, тому лучше было бы, если бы повесили ему мельничный жернов на шею и потопили его во глубине морской.",
-        "BYZ": "ὃς δ’ ἂν σκανδαλίσῃ ἕνα τῶν μικρῶν τούτων τῶν πιστευόντων εἰς ἐμέ, συμφέρει αὐτῷ ἵνα κρεμασθῇ μύλος ὀνικὸς εἰς τὸν τράχηλον αὐτοῦ, καὶ καταποντισθῇ ἐν τῷ πελάγει τῆς θαλάσσης."
+        "BYZ": "ὃς δ’ ἂν σκανδαλίσῃ ἕνα τῶν μικρῶν τούτων τῶν πιστευόντων εἰς ἐμέ, συμφέρει αὐτῷ ἵνα κρεμασθῇ μύλος ὀνικὸς εἰς τὸν τράχηλον αὐτοῦ, καὶ καταποντισθῇ ἐν τῷ πελάγει τῆς θαλάσσης.",
+        "NEO": "Mais celui qui scandalisera un de ces petits qui croient en moi, il vaudrait mieux pour lui qu’on lui attachât au cou la meule qu’un âne tourne, et qu’on le précipitât au fond de la mer.",
+        "NAB": "\"Whoever causes one of these little ones who believe in me to sin, it would be better for him to have a great millstone hung around his neck and to be drowned in the depths of the sea.",
+        "VAT_ES": "Pero si alguien escandaliza a uno de estos pequeños que creen en mí, sería preferible para él que le ataran al cuello una piedra de moler y lo hundieran en el fondo del mar.",
+        "CEI": "Chi invece scandalizza anche uno solo di questi piccoli che credono in me, sarebbe meglio per lui che gli fosse appesa al collo una macina girata da asino, e fosse gettato negli abissi del mare."
       }
     },
     "7": {
@@ -103,10 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "VUL": "Væ mundo a scandalis ! Necesse est enim ut veniant scandala: verumtamen væ homini illi, per quem scandalum venit.",
+        "VUL": "Væ mundo a scandalis ! Necesse est enim ut veniant scandala : verumtamen væ homini illi, per quem scandalum venit.",
         "LXX": "Οὐαὶ τῷ κόσμῳ ἀπὸ τῶν σκανδάλων· ἀνάγκη γάρ ἐστιν ἐλθεῖν τὰ σκάνδαλα· πλὴν οὐαὶ τῷ ἀνθρώπῳ ἐκείνῳ, δι’ οὗ τὸ σκάνδαλον ἔρχεται.",
         "SYN": "Горе миру от соблазнов, ибо надобно придти соблазнам; но горе тому человеку, через которого соблазн приходит.",
-        "BYZ": "Οὐαὶ τῷ κόσμῳ ἀπὸ τῶν σκανδάλων· ἀνάγκη γάρ ἐστιν ἐλθεῖν τὰ σκάνδαλα· πλὴν οὐαὶ τῷ ἀνθρώπῳ ἐκείνῳ, δι’ οὗ τὸ σκάνδαλον ἔρχεται."
+        "BYZ": "Οὐαὶ τῷ κόσμῳ ἀπὸ τῶν σκανδάλων· ἀνάγκη γάρ ἐστιν ἐλθεῖν τὰ σκάνδαλα· πλὴν οὐαὶ τῷ ἀνθρώπῳ ἐκείνῳ, δι’ οὗ τὸ σκάνδαλον ἔρχεται.",
+        "NEO": "« Malheur au monde à cause des scandales ! Il est nécessaire qu’il arrive des scandales ; mais malheur à l’homme par qui le scandale arrive !",
+        "NAB": "Woe to the world because of things that cause sin! Such things must come, but woe to the one through whom they come!",
+        "VAT_ES": "&iexcl;Ay del mundo a causa de los escándalos! Es inevitable que existan pero &iexcl;ay de aquel que los causa!",
+        "CEI": "Guai al mondo per gli scandali! È inevitabile che avvengano scandali, ma guai all'uomo per colpa del quale avviene lo scandalo!"
       }
     },
     "8": {
@@ -117,10 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "VUL": "Si autem manus tua, vel pes tuus scandalizat te, abscide eum, et projice abs te: bonum tibi est ad vitam ingredi debilem, vel claudum, quam duas manus vel duos pedes habentem mitti in ignem æternum.",
+        "VUL": "Si autem manus tua, vel pes tuus scandalizat te, abscide eum, et projice abs te : bonum tibi est ad vitam ingredi debilem, vel claudum, quam duas manus vel duos pedes habentem mitti in ignem æternum.",
         "LXX": "Εἰ δὲ ἡ χείρ σου ἢ ὁ πούς σου σκανδαλίζει σε, ἔκκοψον αὐτὰ καὶ βάλε ἀπὸ σοῦ· καλόν σοι ἐστὶν εἰσελθεῖν εἰς τὴν ζωὴν χωλὸν ἢ κυλλόν, ἢ δύο χεῖρας ἢ δύο πόδας ἔχοντα βληθῆναι εἰς τὸ πῦρ τὸ αἰώνιον.",
         "SYN": "Если же рука твоя или нога твоя соблазняет тебя, отсеки их и брось от себя: лучше тебе войти в жизнь без руки или без ноги, нежели с двумя руками и с двумя ногами быть ввержену в огонь вечный;",
-        "BYZ": "Εἰ δὲ ἡ χείρ σου ἢ ὁ πούς σου σκανδαλίζει σε, ἔκκοψον αὐτὰ καὶ βάλε ἀπὸ σοῦ· καλόν σοι ἐστὶν εἰσελθεῖν εἰς τὴν ζωὴν χωλὸν ἢ κυλλόν, ἢ δύο χεῖρας ἢ δύο πόδας ἔχοντα βληθῆναι εἰς τὸ πῦρ τὸ αἰώνιον."
+        "BYZ": "Εἰ δὲ ἡ χείρ σου ἢ ὁ πούς σου σκανδαλίζει σε, ἔκκοψον αὐτὰ καὶ βάλε ἀπὸ σοῦ· καλόν σοι ἐστὶν εἰσελθεῖν εἰς τὴν ζωὴν χωλὸν ἢ κυλλόν, ἢ δύο χεῖρας ἢ δύο πόδας ἔχοντα βληθῆναι εἰς τὸ πῦρ τὸ αἰώνιον.",
+        "NEO": "Si ta main ou ton pied est pour toi une occasion de chute, coupe-les et jette-les loin de toi : il vaut mieux pour toi entrer dans la vie mutilé ou boiteux, que d’être jeté, ayant deux pieds ou deux mains, dans le feu éternel.",
+        "NAB": "If your hand or foot causes you to sin, cut it off and throw it away. It is better for you to enter into life maimed or crippled than with two hands or two feet to be thrown into eternal fire.",
+        "VAT_ES": "Si tu mano o tu pie son para ti ocasión de pecado, córtalos y arrójalos lejos de ti, porque más te vale entrar en la Vida manco o lisiado, que ser arrojado con tus dos manos o tus pies en el fuego eterno.",
+        "CEI": "Se la tua mano o il tuo piede ti è occasione di scandalo, taglialo e gettalo via da te; è meglio per te entrare nella vita monco o zoppo, che avere due mani o due piedi ed essere gettato nel fuoco eterno."
       }
     },
     "9": {
@@ -131,10 +163,14 @@
         "LXX": 9
       },
       "text": {
-        "VUL": "Et si oculus tuus scandalizat te, erue eum, et projice abs te: bonum tibi est cum uno oculo in vitam intrare, quam duos oculos habentem mitti in gehennam ignis.",
+        "VUL": "Et si oculus tuus scandalizat te, erue eum, et projice abs te : bonum tibi est cum uno oculo in vitam intrare, quam duos oculos habentem mitti in gehennam ignis.",
         "LXX": "Καὶ εἰ ὁ ὀφθαλμός σου σκανδαλίζει σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ σοῦ· καλόν σοι ἐστὶν μονόφθαλμον εἰς τὴν ζωὴν εἰσελθεῖν, ἢ δύο ὀφθαλμοὺς ἔχοντα βληθῆναι εἰς τὴν γέενναν τοῦ πυρός.",
         "SYN": "и если глаз твой соблазняет тебя, вырви его и брось от себя: лучше тебе с одним глазом войти в жизнь, нежели с двумя глазами быть ввержену в геенну огненную.",
-        "BYZ": "Καὶ εἰ ὁ ὀφθαλμός σου σκανδαλίζει σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ σοῦ· καλόν σοι ἐστὶν μονόφθαλμον εἰς τὴν ζωὴν εἰσελθεῖν, ἢ δύο ὀφθαλμοὺς ἔχοντα βληθῆναι εἰς τὴν γέενναν τοῦ πυρός."
+        "BYZ": "Καὶ εἰ ὁ ὀφθαλμός σου σκανδαλίζει σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ σοῦ· καλόν σοι ἐστὶν μονόφθαλμον εἰς τὴν ζωὴν εἰσελθεῖν, ἢ δύο ὀφθαλμοὺς ἔχοντα βληθῆναι εἰς τὴν γέενναν τοῦ πυρός.",
+        "NEO": "Et si ton œil est pour toi une occasion de chute, arrache-le et jette-le loin de toi : il vaut mieux pour toi entrer dans la vie avec un seul œil, que d’être jeté, ayant deux yeux, dans la géhenne du feu.",
+        "NAB": "And if your eye causes you to sin, tear it out and throw it away. It is better for you to enter into life with one eye than with two eyes to be thrown into fiery Gehenna.",
+        "VAT_ES": "Y si tu ojo es para ti ocasión de pecado, arráncalo y tíralo lejos, porque más te vale entrar con un solo ojo en la Vida, que ser arrojado con tus dos ojos en la Gehena del fuego.",
+        "CEI": "E se il tuo occhio ti è occasione di scandalo, cavalo e gettalo via da te; è meglio per te entrare nella vita con un occhio solo, che avere due occhi ed essere gettato nella Geenna del fuoco."
       }
     },
     "10": {
@@ -145,10 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "VUL": "Videte ne contemnatis unum ex his pusillis: dico enim vobis, quia angeli eorum in cælis semper vident faciem Patris mei, qui in cælis est.",
+        "VUL": "Videte ne contemnatis unum ex his pusillis : dico enim vobis, quia angeli eorum in cælis semper vident faciem Patris mei, qui in cælis est.",
         "LXX": "Ὁρᾶτε μὴ καταφρονήσητε ἑνὸς τῶν μικρῶν τούτων, λέγω γὰρ ὑμῖν ὅτι οἱ ἄγγελοι αὐτῶν ἐν οὐρανοῖς διὰ παντὸς βλέπουσιν τὸ πρόσωπον τοῦ πατρός μου τοῦ ἐν οὐρανοῖς.",
         "SYN": "Смотрите, не презирайте ни одного из малых сих; ибо говорю вам, что Ангелы их на небесах всегда видят лице Отца Моего Небесного.",
-        "BYZ": "Ὁρᾶτε μὴ καταφρονήσητε ἑνὸς τῶν μικρῶν τούτων, λέγω γὰρ ὑμῖν ὅτι οἱ ἄγγελοι αὐτῶν ἐν οὐρανοῖς διὰ παντὸς βλέπουσιν τὸ πρόσωπον τοῦ πατρός μου τοῦ ἐν οὐρανοῖς."
+        "BYZ": "Ὁρᾶτε μὴ καταφρονήσητε ἑνὸς τῶν μικρῶν τούτων, λέγω γὰρ ὑμῖν ὅτι οἱ ἄγγελοι αὐτῶν ἐν οὐρανοῖς διὰ παντὸς βλέπουσιν τὸ πρόσωπον τοῦ πατρός μου τοῦ ἐν οὐρανοῖς.",
+        "NEO": "« Prenez garde de mépriser aucun de ces petits, car je vous dis que leurs anges dans le ciel voient sans cesse la face de mon Père qui est dans les cieux. »",
+        "NAB": "\"See that you do not despise one of these little ones, for I say to you that their angels in heaven always look upon the face of my heavenly Father.",
+        "VAT_ES": "Cuídense de despreciar a cualquiera de estos pequeños, porque les aseguro que sus ángeles en el cielo están constantemente en presencia de mi Padre celestial.",
+        "CEI": "Guardatevi dal disprezzare uno solo di questi piccoli, perché vi dico che i loro angeli nel cielo vedono sempre la faccia del Padre mio che è nei cieli."
       }
     },
     "11": {
@@ -162,7 +202,9 @@
         "VUL": "Venit enim Filius hominis salvare quod perierat.",
         "LXX": "Ἦλθεν γὰρ ὁ υἱὸς τοῦ ἀνθρώπου σῶσαι τὸ ἀπολωλός.",
         "SYN": "Ибо Сын Человеческий пришел взыскать и спасти погибшее.",
-        "BYZ": "Ἦλθεν γὰρ ὁ υἱὸς τοῦ ἀνθρώπου σῶσαι τὸ ἀπολωλός."
+        "BYZ": "Ἦλθεν γὰρ ὁ υἱὸς τοῦ ἀνθρώπου σῶσαι τὸ ἀπολωλός.",
+        "NEO": "(Car le Fils de l’homme est venu sauver ce qui était perdu.)+ 18:11 11. Ce verset manque dans plusieurs manuscrits grecs. Il paraît emprunté à Luc, xix, 10.*",
+        "VAT_ES": "[Porque el Hijo del Hombre ha venido a salvar lo que estaba perdido]."
       }
     },
     "12": {
@@ -173,10 +215,14 @@
         "LXX": 12
       },
       "text": {
-        "VUL": "Quid vobis videtur ? si fuerint alicui centum oves, et erravit una ex eis: nonne relinquit nonaginta novem in montibus, et vadit quærere eam quæ erravit ?",
+        "VUL": "Quid vobis videtur ? si fuerint alicui centum oves, et erravit una ex eis : nonne relinquit nonaginta novem in montibus, et vadit quærere eam quæ erravit ?",
         "LXX": "Τί ὑμῖν δοκεῖ; Ἐὰν γένηταί τινι ἀνθρώπῳ ἑκατὸν πρόβατα, καὶ πλανηθῇ ἓν ἐξ αὐτῶν· οὐχὶ ἀφεὶς τὰ ἐνενήκοντα ἐννέα, ἐπὶ τὰ ὄρη πορευθεὶς ζητεῖ τὸ πλανώμενον;",
         "SYN": "Как вам кажется? Если бы у кого было сто овец, и одна из них заблудилась, то не оставит ли он девяносто девять в горах и не пойдет ли искать заблудившуюся?",
-        "BYZ": "Τί ὑμῖν δοκεῖ; Ἐὰν γένηταί τινι ἀνθρώπῳ ἑκατὸν πρόβατα, καὶ πλανηθῇ ἓν ἐξ αὐτῶν· οὐχὶ ἀφεὶς τὰ ἐνενήκοντα ἐννέα, ἐπὶ τὰ ὄρη πορευθεὶς ζητεῖ τὸ πλανώμενον;"
+        "BYZ": "Τί ὑμῖν δοκεῖ; Ἐὰν γένηταί τινι ἀνθρώπῳ ἑκατὸν πρόβατα, καὶ πλανηθῇ ἓν ἐξ αὐτῶν· οὐχὶ ἀφεὶς τὰ ἐνενήκοντα ἐννέα, ἐπὶ τὰ ὄρη πορευθεὶς ζητεῖ τὸ πλανώμενον;",
+        "NEO": "« Que vous en semble ? Si un homme a cent brebis, et qu’une d’elles s’égare, ne laisse-t-il pas dans la montagne les quatre-vingt-dix-neuf autres, pour aller chercher celle qui s’est égarée ?+ 18:12 12. Luc, xv, 4-7.*",
+        "NAB": "What is your opinion? If a man has a hundred sheep and one of them goes astray, will he not leave the ninety-nine in the hills and go in search of the stray?",
+        "VAT_ES": "&iquest;Qué les parece? Si un hombre tiene cien ovejas, y una de ellas se pierde, &iquest;no deja las noventa y nueve restantes en la montaña, para ir a buscar la que se extravió?",
+        "CEI": "Che ve ne pare? Se un uomo ha cento pecore e ne smarrisce una, non lascerà forse le novantanove sui monti, per andare in cerca di quella perduta?"
       }
     },
     "13": {
@@ -187,10 +233,14 @@
         "LXX": 13
       },
       "text": {
-        "VUL": "Et si contigerit ut inveniat eam: amen dico vobis, quia gaudet super eam magis quam super nonaginta novem, quæ non erraverunt.",
+        "VUL": "Et si contigerit ut inveniat eam : amen dico vobis, quia gaudet super eam magis quam super nonaginta novem, quæ non erraverunt.",
         "LXX": "Καὶ ἐὰν γένηται εὑρεῖν αὐτό, ἀμὴν λέγω ὑμῖν ὅτι χαίρει ἐπ’ αὐτῷ μᾶλλον, ἢ ἐπὶ τοῖς ἐνενήκοντα ἐννέα τοῖς μὴ πεπλανημένοις.",
         "SYN": "и если случится найти ее, то, истинно говорю вам, он радуется о ней более, нежели о девяноста девяти незаблудившихся.",
-        "BYZ": "Καὶ ἐὰν γένηται εὑρεῖν αὐτό, ἀμὴν λέγω ὑμῖν ὅτι χαίρει ἐπ’ αὐτῷ μᾶλλον, ἢ ἐπὶ τοῖς ἐνενήκοντα ἐννέα τοῖς μὴ πεπλανημένοις."
+        "BYZ": "Καὶ ἐὰν γένηται εὑρεῖν αὐτό, ἀμὴν λέγω ὑμῖν ὅτι χαίρει ἐπ’ αὐτῷ μᾶλλον, ἢ ἐπὶ τοῖς ἐνενήκοντα ἐννέα τοῖς μὴ πεπλανημένοις.",
+        "NEO": "Et s’il a le bonheur de la trouver, je vous le dis en vérité, il a plus de joie pour elle que pour les quatre-vingt-dix-neuf qui ne se sont pas égarées.",
+        "NAB": "And if he finds it, amen, I say to you, he rejoices more over it than over the ninety-nine that did not stray.",
+        "VAT_ES": "Y si llega a encontrarla, les aseguro que se alegrará más por ella que por las noventa y nueve que no se extraviaron.",
+        "CEI": "Se gli riesce di trovarla, in verità vi dico, si rallegrerà per quella più che per le novantanove che non si erano smarrite."
       }
     },
     "14": {
@@ -204,7 +254,11 @@
         "VUL": "Sic non est voluntas ante Patrem vestrum, qui in cælis est, ut pereat unus de pusillis istis.",
         "LXX": "Οὕτως οὐκ ἔστιν θέλημα ἔμπροσθεν τοῦ πατρὸς ὑμῶν τοῦ ἐν οὐρανοῖς, ἵνα ἀπόληται εἷς τῶν μικρῶν τούτων.",
         "SYN": "Так, нет воли Отца вашего Небесного, чтобы погиб один из малых сих.",
-        "BYZ": "Οὕτως οὐκ ἔστιν θέλημα ἔμπροσθεν τοῦ πατρὸς ὑμῶν τοῦ ἐν οὐρανοῖς, ἵνα ἀπόληται εἷς τῶν μικρῶν τούτων."
+        "BYZ": "Οὕτως οὐκ ἔστιν θέλημα ἔμπροσθεν τοῦ πατρὸς ὑμῶν τοῦ ἐν οὐρανοῖς, ἵνα ἀπόληται εἷς τῶν μικρῶν τούτων.",
+        "NEO": "De même c’est la volonté de votre Père qui est dans les cieux, qu’il ne se perde pas un seul de ces petits.",
+        "NAB": "In just the same way, it is not the will of your heavenly Father that one of these little ones be lost.",
+        "VAT_ES": "De la misma manera, el Padre que está en el cielo no quiere que se pierda ni uno solo de estos pequeños.",
+        "CEI": "Così il Padre vostro celeste non vuole che si perda neanche uno solo di questi piccoli."
       }
     },
     "15": {
@@ -215,10 +269,14 @@
         "LXX": 15
       },
       "text": {
-        "VUL": "Si autem peccaverit in te frater tuus, vade, et corripe eum inter te, et ipsum solum: si te audierit, lucratus eris fratrem tuum.",
+        "VUL": "Si autem peccaverit in te frater tuus, vade, et corripe eum inter te, et ipsum solum : si te audierit, lucratus eris fratrem tuum.",
         "LXX": "Ἐὰν δὲ ἁμαρτήσῃ εἰς σὲ ὁ ἀδελφός σου, ὕπαγε καὶ ἔλεγξον αὐτὸν μεταξὺ σοῦ καὶ αὐτοῦ μόνου. Ἐάν σου ἀκούσῃ, ἐκέρδησας τὸν ἀδελφόν σου·",
         "SYN": "Если же согрешит против тебя брат твой, пойди и обличи его между тобою и им одним; если послушает тебя, то приобрел ты брата твоего;",
-        "BYZ": "Ἐὰν δὲ ἁμαρτήσῃ εἰς σὲ ὁ ἀδελφός σου, ὕπαγε καὶ ἔλεγξον αὐτὸν μεταξὺ σοῦ καὶ αὐτοῦ μόνου. Ἐάν σου ἀκούσῃ, ἐκέρδησας τὸν ἀδελφόν σου·"
+        "BYZ": "¶Ἐὰν δὲ ἁμαρτήσῃ εἰς σὲ ὁ ἀδελφός σου, ὕπαγε καὶ ἔλεγξον αὐτὸν μεταξὺ σοῦ καὶ αὐτοῦ μόνου. Ἐάν σου ἀκούσῃ, ἐκέρδησας τὸν ἀδελφόν σου·",
+        "NEO": "« Si ton frère a péché contre toi, va et reprends-le entre toi et lui seul ; s’il t’écoute, tu auras gagné ton frère.",
+        "NAB": "\"If your brother sins (against you), go and tell him his fault between you and him alone. If he listens to you, you have won over your brother.",
+        "VAT_ES": "Si tu hermano peca, ve y corrígelo en privado. Si te escucha, habrás ganado a tu hermano.",
+        "CEI": "Se il tuo fratello commette una colpa, và e ammoniscilo fra te e lui solo; se ti ascolterà, avrai guadagnato il tuo fratello;"
       }
     },
     "16": {
@@ -232,7 +290,11 @@
         "VUL": "Si autem te non audierit, adhibe tecum adhuc unum, vel duos, ut in ore duorum, vel trium testium stet omne verbum.",
         "LXX": "ἐὰν δὲ μὴ ἀκούσῃ, παράλαβε μετὰ σοῦ ἔτι ἕνα ἢ δύο, ἵνα ἐπὶ στόματος δύο μαρτύρων ἢ τριῶν σταθῇ πᾶν ῥῆμα·",
         "SYN": "если же не послушает, возьми с собою еще одного или двух, дабы устами двух или трех свидетелей подтвердилось всякое слово;",
-        "BYZ": "ἐὰν δὲ μὴ ἀκούσῃ, παράλαβε μετὰ σοῦ ἔτι ἕνα ἢ δύο, ἵνα ἐπὶ στόματος δύο μαρτύρων ἢ τριῶν σταθῇ πᾶν ῥῆμα·"
+        "BYZ": "ἐὰν δὲ μὴ ἀκούσῃ, παράλαβε μετὰ σοῦ ἔτι ἕνα ἢ δύο, ἵνα ἐπὶ στόματος δύο μαρτύρων ἢ τριῶν σταθῇ πᾶν ῥῆμα·",
+        "NEO": "S’il ne t’écoute pas, prends avec toi encore une ou deux personnes, afin que toute cause se décide sur la parole de deux ou trois témoins.",
+        "NAB": "If he does not listen, take one or two others along with you, so that 'every fact may be established on the testimony of two or three witnesses.'",
+        "VAT_ES": "Si no te escucha, busca una o dos personas más, para que el asunto se decida por la declaración de dos o tres testigos.",
+        "CEI": "se non ti ascolterà, prendi con te una o due persone, perché ogni cosa sia risolta sulla parola di due o tre testimoni."
       }
     },
     "17": {
@@ -243,10 +305,14 @@
         "LXX": 17
       },
       "text": {
-        "VUL": "Quod si non audierit eos: dic ecclesiæ. Si autem ecclesiam non audierit, sit tibi sicut ethnicus et publicanus.",
+        "VUL": "Quod si non audierit eos : dic ecclesiæ. Si autem ecclesiam non audierit, sit tibi sicut ethnicus et publicanus.",
         "LXX": "ἐὰν δὲ παρακούσῃ αὐτῶν, εἰπὲ τῇ ἐκκλησίᾳ· ἐὰν δὲ καὶ τῆς ἐκκλησίας παρακούσῃ, ἔστω σοι ὥσπερ ὁ ἐθνικὸς καὶ ὁ τελώνης.",
         "SYN": "если же не послушает их, скажи церкви; а если и церкви не послушает, то да будет он тебе, как язычник и мытарь.",
-        "BYZ": "ἐὰν δὲ παρακούσῃ αὐτῶν, εἰπὲ τῇ ἐκκλησίᾳ· ἐὰν δὲ καὶ τῆς ἐκκλησίας παρακούσῃ, ἔστω σοι ὥσπερ ὁ ἐθνικὸς καὶ ὁ τελώνης."
+        "BYZ": "ἐὰν δὲ παρακούσῃ αὐτῶν, εἰπὲ τῇ ἐκκλησίᾳ· ἐὰν δὲ καὶ τῆς ἐκκλησίας παρακούσῃ, ἔστω σοι ὥσπερ ὁ ἐθνικὸς καὶ ὁ τελώνης.",
+        "NEO": "S’il ne les écoute pas, dis-le à l’Église ; et s’il n’écoute pas non plus l’Église, qu’il soit pour toi comme un païen et un publicain.",
+        "NAB": "If he refuses to listen to them, tell the church. If he refuses to listen even to the church, then treat him as you would a Gentile or a tax collector.",
+        "VAT_ES": "Si se niega a hacerles caso, dilo a la comunidad. Y si tampoco quiere escuchar a la comunidad, considéralo como pagano o republicano.",
+        "CEI": "Se poi non ascolterà neppure costoro, dillo all'assemblea; e se non ascolterà neanche l'assemblea, sia per te come un pagano e un pubblicano."
       }
     },
     "18": {
@@ -257,10 +323,14 @@
         "LXX": 18
       },
       "text": {
-        "VUL": "Amen dico vobis, quæcumque alligaveritis super terram, erunt ligata et in cælo: et quæcumque solveritis super terram, erunt soluta et in cælo.",
+        "VUL": "Amen dico vobis, quæcumque alligaveritis super terram, erunt ligata et in cælo : et quæcumque solveritis super terram, erunt soluta et in cælo.",
         "LXX": "Ἀμὴν λέγω ὑμῖν, ὅσα ἐὰν δήσητε ἐπὶ τῆς γῆς, ἔσται δεδεμένα ἐν τῷ οὐρανῷ· καὶ ὅσα ἐὰν λύσητε ἐπὶ τῆς γῆς, ἔσται λελυμένα ἐν τῷ οὐρανῷ.",
         "SYN": "Истинно говорю вам: что вы свяжете на земле, то будет связано на небе; и что разрешите на земле, то будет разрешено на небе.",
-        "BYZ": "Ἀμὴν λέγω ὑμῖν, ὅσα ἐὰν δήσητε ἐπὶ τῆς γῆς, ἔσται δεδεμένα ἐν τῷ οὐρανῷ· καὶ ὅσα ἐὰν λύσητε ἐπὶ τῆς γῆς, ἔσται λελυμένα ἐν τῷ οὐρανῷ."
+        "BYZ": "Ἀμὴν λέγω ὑμῖν, ὅσα ἐὰν δήσητε ἐπὶ τῆς γῆς, ἔσται δεδεμένα ἐν τῷ οὐρανῷ· καὶ ὅσα ἐὰν λύσητε ἐπὶ τῆς γῆς, ἔσται λελυμένα ἐν τῷ οὐρανῷ.",
+        "NEO": "En vérité, je vous le dis, tout ce que vous lierez sur la terre sera lié dans le ciel, et tout ce que vous délierez sur la terre sera délié dans le ciel.",
+        "NAB": "Amen, I say to you, whatever you bind on earth shall be bound in heaven, and whatever you loose on earth shall be loosed in heaven.",
+        "VAT_ES": "Les aseguro que todo lo que ustedes aten en la tierra, quedará atado en el cielo, y lo que desaten en la tierra, quedará desatado en el cielo.",
+        "CEI": "In verità vi dico: tutto quello che legherete sopra la terra sarà legato anche in cielo e tutto quello che scioglierete sopra la terra sarà sciolto anche in cielo."
       }
     },
     "19": {
@@ -274,7 +344,11 @@
         "VUL": "Iterum dico vobis, quia si duo ex vobis consenserint super terram, de omni re quamcumque petierint, fiet illis a Patre meo, qui in cælis est.",
         "LXX": "Πάλιν ἀμὴν λέγω ὑμῖν ὅτι ἐὰν δύο ὑμῶν συμφωνήσωσιν ἐπὶ τῆς γῆς περὶ παντὸς πράγματος οὗ ἐὰν αἰτήσωνται, γενήσεται αὐτοῖς παρὰ τοῦ πατρός μου τοῦ ἐν οὐρανοῖς.",
         "SYN": "Истинно также говорю вам, что если двое из вас согласятся на земле просить о всяком деле, то, чего бы ни попросили, будет им от Отца Моего Небесного,",
-        "BYZ": "Πάλιν ἀμὴν λέγω ὑμῖν ὅτι ἐὰν δύο ὑμῶν συμφωνήσωσιν ἐπὶ τῆς γῆς περὶ παντὸς πράγματος οὗ ἐὰν αἰτήσωνται, γενήσεται αὐτοῖς παρὰ τοῦ πατρός μου τοῦ ἐν οὐρανοῖς."
+        "BYZ": "Πάλιν ἀμὴν λέγω ὑμῖν ὅτι ἐὰν δύο ὑμῶν συμφωνήσωσιν ἐπὶ τῆς γῆς περὶ παντὸς πράγματος οὗ ἐὰν αἰτήσωνται, γενήσεται αὐτοῖς παρὰ τοῦ πατρός μου τοῦ ἐν οὐρανοῖς.",
+        "NEO": "« Je vous le dis encore, si deux d’entre vous s’accordent sur la terre, quelque chose qu’ils demandent, ils l’obtiendront de mon Père qui est dans les cieux.",
+        "NAB": "Again, (amen,) I say to you, if two of you agree on earth about anything for which they are to pray, it shall be granted to them by my heavenly Father.",
+        "VAT_ES": "También les aseguro que si dos de ustedes se unen en la tierra para pedir algo, mi Padre que está en el cielo se lo concederá.",
+        "CEI": "In verità vi dico ancora: se due di voi sopra la terra si accorderanno per domandare qualunque cosa, il Padre mio che è nei cieli ve la concederà."
       }
     },
     "20": {
@@ -288,7 +362,11 @@
         "VUL": "Ubi enim sunt duo vel tres congregati in nomine meo, ibi sum in medio eorum.",
         "LXX": "Οὗ γάρ εἰσιν δύο ἢ τρεῖς συνηγμένοι εἰς τὸ ἐμὸν ὄνομα, ἐκεῖ εἰμὶ ἐν μέσῳ αὐτῶν.",
         "SYN": "ибо, где двое или трое собраны во имя Мое, там Я посреди них.",
-        "BYZ": "Οὗ γάρ εἰσιν δύο ἢ τρεῖς συνηγμένοι εἰς τὸ ἐμὸν ὄνομα, ἐκεῖ εἰμὶ ἐν μέσῳ αὐτῶν."
+        "BYZ": "Οὗ γάρ εἰσιν δύο ἢ τρεῖς συνηγμένοι εἰς τὸ ἐμὸν ὄνομα, ἐκεῖ εἰμὶ ἐν μέσῳ αὐτῶν.",
+        "NEO": "Car là où deux ou trois sont assemblés en mon nom, je suis au milieu d’eux. »",
+        "NAB": "For where two or three are gathered together in my name, there am I in the midst of them.\"",
+        "VAT_ES": "Porque donde hay dos o tres reunidos en mi Nombre, yo estoy presente en medio de ellos».",
+        "CEI": "Perché dove sono due o tre riuniti nel mio nome, io sono in mezzo a loro\"."
       }
     },
     "21": {
@@ -299,10 +377,14 @@
         "LXX": 21
       },
       "text": {
-        "VUL": "Tunc accedens Petrus ad eum, dixit: Domine, quoties peccabit in me frater meus, et dimittam ei ? usque septies ?",
+        "VUL": "Tunc accedens Petrus ad eum, dixit : Domine, quoties peccabit in me frater meus, et dimittam ei ? usque septies ?",
         "LXX": "Τότε προσελθὼν αὐτῷ ὁ Πέτρος εἶπεν, Κύριε, ποσάκις ἁμαρτήσει εἰς ἐμὲ ὁ ἀδελφός μου, καὶ ἀφήσω αὐτῷ; Ἕως ἑπτάκις;",
         "SYN": "Тогда Петр приступил к Нему и сказал: Господи! сколько раз прощать брату моему, согрешающему против меня? до семи ли раз?",
-        "BYZ": "Τότε προσελθὼν αὐτῷ ὁ Πέτρος εἶπεν, Κύριε, ποσάκις ἁμαρτήσει εἰς ἐμὲ ὁ ἀδελφός μου, καὶ ἀφήσω αὐτῷ; Ἕως ἑπτάκις;"
+        "BYZ": "¶Τότε προσελθὼν αὐτῷ ὁ Πέτρος εἶπεν, Κύριε, ποσάκις ἁμαρτήσει εἰς ἐμὲ ὁ ἀδελφός μου, καὶ ἀφήσω αὐτῷ; Ἕως ἑπτάκις;",
+        "NEO": "Alors Pierre s’approchant de lui : « Seigneur, dit-il, si mon frère pèche contre moi, combien de fois lui pardonnerai-je ? Sera-ce jusqu’à sept fois ? »+ 18:21 21. Luc, xvii, 3-4.*",
+        "NAB": "Then Peter approaching asked him, \"Lord, if my brother sins against me, how often must I forgive him? As many as seven times?\"",
+        "VAT_ES": "Entonces se adelantó Pedro y le dijo: «Señor, &iquest;cuántas veces tendré que perdonar a mi hermano las ofensas que me haga? &iquest;Hasta siete veces?».",
+        "CEI": "Allora Pietro gli si avvicinò e gli disse: \"Signore, quante volte dovrò perdonare al mio fratello, se pecca contro di me? Fino a sette volte?\"."
       }
     },
     "22": {
@@ -313,10 +395,14 @@
         "LXX": 22
       },
       "text": {
-        "VUL": "Dicit illi Jesus: Non dico tibi usque septies: sed usque septuagies septies.",
+        "VUL": "Dicit illi Jesus : Non dico tibi usque septies : sed usque septuagies septies.",
         "LXX": "Λέγει αὐτῷ ὁ Ἰησοῦς, Οὐ λέγω σοι ἕως ἑπτάκις, ἀλλ’ ἕως ἑβδομηκοντάκις ἑπτά.",
         "SYN": "Иисус говорит ему: не говорю тебе: до семи раз, но до седмижды семидесяти раз.",
-        "BYZ": "Λέγει αὐτῷ ὁ Ἰησοῦς, Οὐ λέγω σοι ἕως ἑπτάκις, ἀλλ’ ἕως ἑβδομηκοντάκις ἑπτά."
+        "BYZ": "Λέγει αὐτῷ ὁ Ἰησοῦς, Οὐ λέγω σοι ἕως ἑπτάκις, ἀλλ’ ἕως ἑβδομηκοντάκις ἑπτά.",
+        "NEO": "Jésus lui dit : « Je ne te dis pas jusqu’à sept fois, mais jusqu’à septante fois sept fois+ 18:22 22. Septante fois sept fois, nombre indéfini de fois, toujours.*.",
+        "NAB": "Jesus answered, \"I say to you, not seven times but seventy-seven times.",
+        "VAT_ES": "Jesús le respondió: «No te digo hasta siete veces, sino hasta setenta veces siete.",
+        "CEI": "E Gesù gli rispose: \"Non ti dico fino a sette, ma fino a settanta volte sette."
       }
     },
     "23": {
@@ -330,7 +416,11 @@
         "VUL": "Ideo assimilatum est regnum cælorum homini regi, qui voluit rationem ponere cum servis suis.",
         "LXX": "Διὰ τοῦτο ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ, ὃς ἠθέλησεν συνᾶραι λόγον μετὰ τῶν δούλων αὐτοῦ.",
         "SYN": "Посему Царство Небесное подобно царю, который захотел сосчитаться с рабами своими;",
-        "BYZ": "Διὰ τοῦτο ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ, ὃς ἠθέλησεν συνᾶραι λόγον μετὰ τῶν δούλων αὐτοῦ."
+        "BYZ": "Διὰ τοῦτο ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ, ὃς ἠθέλησεν συνᾶραι λόγον μετὰ τῶν δούλων αὐτοῦ.",
+        "NEO": "« C’est pourquoi le royaume des cieux est semblable à un roi qui voulut régler ses comptes avec ses serviteurs.",
+        "NAB": "That is why the kingdom of heaven may be likened to a king who decided to settle accounts with his servants.",
+        "VAT_ES": "Por eso, el Reino de los Cielos se parece a un rey que quiso arreglar las cuentas con sus servidores.",
+        "CEI": "A proposito, il regno dei cieli è simile a un re che volle fare i conti con i suoi servi."
       }
     },
     "24": {
@@ -344,7 +434,11 @@
         "VUL": "Et cum cpisset rationem ponere, oblatus est ei unus, qui debebat ei decem millia talenta.",
         "LXX": "Ἀρξαμένου δὲ αὐτοῦ συναίρειν, προσηνέχθη αὐτῷ εἷς ὀφειλέτης μυρίων ταλάντων.",
         "SYN": "когда начал он считаться, приведен был к нему некто, который должен был ему десять тысяч талантов;",
-        "BYZ": "Ἀρξαμένου δὲ αὐτοῦ συναίρειν, προσηνέχθη αὐτῷ εἷς ὀφειλέτης μυρίων ταλάντων."
+        "BYZ": "Ἀρξαμένου δὲ αὐτοῦ συναίρειν, προσηνέχθη αὐτῷ εἷς ὀφειλέτης μυρίων ταλάντων.",
+        "NEO": "Le règlement des comptes étant commencé, on lui amena un homme qui lui devait dix mille talents+ 18:24 24. Dix mille talents, environ 55 millions de francs : cette somme énorme est l’image de la dette du pécheur envers Dieu.*.",
+        "NAB": "When he began the accounting, a debtor was brought before him who owed him a huge amount.",
+        "VAT_ES": "Comenzada la tarea, le presentaron a uno que debía diez mil talentos.",
+        "CEI": "Incominciati i conti, gli fu presentato uno che gli era debitore di diecimila talenti."
       }
     },
     "25": {
@@ -358,7 +452,11 @@
         "VUL": "Cum autem non haberet unde redderet, jussit eum dominus ejus venundari, et uxorem ejus, et filios, et omnia quæ habebat, et reddi.",
         "LXX": "Μὴ ἔχοντος δὲ αὐτοῦ ἀποδοῦναι ἐκέλευσεν αὐτὸν ὁ κύριος αὐτοῦ πραθῆναι, καὶ τὴν γυναῖκα αὐτοῦ καὶ τὰ τέκνα, καὶ πάντα ὅσα εἶχεν, καὶ ἀποδοθῆναι.",
         "SYN": "а как он не имел, чем заплатить, то государь его приказал продать его, и жену его, и детей, и все, что он имел, и заплатить;",
-        "BYZ": "Μὴ ἔχοντος δὲ αὐτοῦ ἀποδοῦναι ἐκέλευσεν αὐτὸν ὁ κύριος αὐτοῦ πραθῆναι, καὶ τὴν γυναῖκα αὐτοῦ καὶ τὰ τέκνα, καὶ πάντα ὅσα εἶχεν, καὶ ἀποδοθῆναι."
+        "BYZ": "Μὴ ἔχοντος δὲ αὐτοῦ ἀποδοῦναι ἐκέλευσεν αὐτὸν ὁ κύριος αὐτοῦ πραθῆναι, καὶ τὴν γυναῖκα αὐτοῦ καὶ τὰ τέκνα, καὶ πάντα ὅσα εἶχεν, καὶ ἀποδοθῆναι.",
+        "NEO": "Comme il n’avait pas de quoi payer, son maître ordonna qu’on le vendît, lui, sa femme, ses enfants et tout ce qu’il avait pour acquitter sa dette.",
+        "NAB": "Since he had no way of paying it back, his master ordered him to be sold, along with his wife, his children, and all his property, in payment of the debt.",
+        "VAT_ES": "Como no podía pagar, el rey mandó que fuera vendido junto con su mujer, sus hijos y todo lo que tenía, para saldar la deuda.",
+        "CEI": "Non avendo però costui il denaro da restituire, il padrone ordinò che fosse venduto lui con la moglie, con i figli e con quanto possedeva, e saldasse così il debito."
       }
     },
     "26": {
@@ -369,10 +467,14 @@
         "LXX": 26
       },
       "text": {
-        "VUL": "Procidens autem servus ille, orabat eum, dicens: Patientiam habe in me, et omnia reddam tibi.",
+        "VUL": "Procidens autem servus ille, orabat eum, dicens : Patientiam habe in me, et omnia reddam tibi.",
         "LXX": "Πεσὼν οὖν ὁ δοῦλος προσεκύνει αὐτῷ, λέγων, Κύριε, μακροθύμησον ἐπ’ ἐμοί, καὶ πάντα σοι ἀποδώσω.",
         "SYN": "тогда раб тот пал, и, кланяясь ему, говорил: государь! потерпи на мне, и все тебе заплачу.",
-        "BYZ": "Πεσὼν οὖν ὁ δοῦλος προσεκύνει αὐτῷ, λέγων, Κύριε, μακροθύμησον ἐπ’ ἐμοί, καὶ πάντα σοι ἀποδώσω."
+        "BYZ": "Πεσὼν οὖν ὁ δοῦλος προσεκύνει αὐτῷ, λέγων, Κύριε, μακροθύμησον ἐπ’ ἐμοί, καὶ πάντα σοι ἀποδώσω.",
+        "NEO": "Le serviteur, se jetant à ses pieds, le conjurait en disant : Aie patience envers moi, et je te paierai tout.",
+        "NAB": "At that, the servant fell down, did him homage, and said, 'Be patient with me, and I will pay you back in full.'",
+        "VAT_ES": "El servidor se arrojó a sus pies, diciéndole: \"Señor, dame un plazo y te pagaré todo\".",
+        "CEI": "Allora quel servo, gettatosi a terra, lo supplicava: Signore, abbi pazienza con me e ti restituirò ogni cosa."
       }
     },
     "27": {
@@ -386,7 +488,11 @@
         "VUL": "Misertus autem dominus servi illius, dimisit eum, et debitum dimisit ei.",
         "LXX": "Σπλαγχνισθεὶς δὲ ὁ κύριος τοῦ δούλου ἐκείνου ἀπέλυσεν αὐτόν, καὶ τὸ δάνειον ἀφῆκεν αὐτῷ.",
         "SYN": "Государь, умилосердившись над рабом тем, отпустил его и долг простил ему.",
-        "BYZ": "Σπλαγχνισθεὶς δὲ ὁ κύριος τοῦ δούλου ἐκείνου ἀπέλυσεν αὐτόν, καὶ τὸ δάνειον ἀφῆκεν αὐτῷ."
+        "BYZ": "Σπλαγχνισθεὶς δὲ ὁ κύριος τοῦ δούλου ἐκείνου ἀπέλυσεν αὐτόν, καὶ τὸ δάνειον ἀφῆκεν αὐτῷ.",
+        "NEO": "Touché de compassion, le maître de ce serviteur le laissa aller et lui remit sa dette.",
+        "NAB": "Moved with compassion the master of that servant let him go and forgave him the loan.",
+        "VAT_ES": "El rey se compadeció, lo dejó ir y, además, le perdonó la deuda.",
+        "CEI": "Impietositosi del servo, il padrone lo lasciò andare e gli condonò il debito."
       }
     },
     "28": {
@@ -397,10 +503,14 @@
         "LXX": 28
       },
       "text": {
-        "VUL": "Egressus autem servus ille invenit unum de conservis suis, qui debebat ei centum denarios: et tenens suffocavit eum, dicens: Redde quod debes.",
+        "VUL": "Egressus autem servus ille invenit unum de conservis suis, qui debebat ei centum denarios : et tenens suffocavit eum, dicens : Redde quod debes.",
         "LXX": "Ἐξελθὼν δὲ ὁ δοῦλος ἐκεῖνος εὗρεν ἕνα τῶν συνδούλων αὐτοῦ, ὃς ὤφειλεν αὐτῷ ἑκατὸν δηνάρια, καὶ κρατήσας αὐτὸν ἔπνιγεν, λέγων, Ἀπόδος μοι εἴ τι ὀφείλεις.",
         "SYN": "Раб же тот, выйдя, нашел одного из товарищей своих, который должен был ему сто динариев, и, схватив его, душил, говоря: отдай мне, что должен.",
-        "BYZ": "Ἐξελθὼν δὲ ὁ δοῦλος ἐκεῖνος εὗρεν ἕνα τῶν συνδούλων αὐτοῦ, ὃς ὤφειλεν αὐτῷ ἑκατὸν δηνάρια, καὶ κρατήσας αὐτὸν ἔπνιγεν, λέγων, Ἀπόδος μοι εἴ τι ὀφείλεις."
+        "BYZ": "Ἐξελθὼν δὲ ὁ δοῦλος ἐκεῖνος εὗρεν ἕνα τῶν συνδούλων αὐτοῦ, ὃς ὤφειλεν αὐτῷ ἑκατὸν δηνάρια, καὶ κρατήσας αὐτὸν ἔπνιγεν, λέγων, Ἀπόδος μοι εἴ τι ὀφείλεις.",
+        "NEO": "Le serviteur, à peine sorti, rencontra un de ses compagnons qui lui devait cent deniers+ 18:28 28. Cent deniers, un peu moins de 80 francs : somme insignifiante en comparaison de l’autre.*. Le saisissant à la gorge, il l’étouffait en disant : Paie ce que tu dois.",
+        "NAB": "When that servant had left, he found one of his fellow servants who owed him a much smaller amount. He seized him and started to choke him, demanding, 'Pay back what you owe.'",
+        "VAT_ES": "Al salir, este servidor encontró a uno de sus compañeros que le debía cien denarios y, tomándolo del cuello hasta ahogarlo, le dijo: \"Págame lo que me debes\".",
+        "CEI": "Appena uscito, quel servo trovò un altro servo come lui che gli doveva cento denari e, afferratolo, lo soffocava e diceva: Paga quel che devi!"
       }
     },
     "29": {
@@ -411,10 +521,14 @@
         "LXX": 29
       },
       "text": {
-        "VUL": "Et procidens conservus ejus, rogabat eum, dicens: Patientiam habe in me, et omnia reddam tibi.",
+        "VUL": "Et procidens conservus ejus, rogabat eum, dicens : Patientiam habe in me, et omnia reddam tibi.",
         "LXX": "Πεσὼν οὖν ὁ σύνδουλος αὐτοῦ εἰς τοὺς πόδας αὐτοῦ παρεκάλει αὐτόν, λέγων, Μακροθύμησον ἐπ’ ἐμοί, καὶ ἀποδώσω σοι.",
         "SYN": "Тогда товарищ его пал к ногам его, умолял его и говорил: потерпи на мне, и все отдам тебе.",
-        "BYZ": "Πεσὼν οὖν ὁ σύνδουλος αὐτοῦ εἰς τοὺς πόδας αὐτοῦ παρεκάλει αὐτόν, λέγων, Μακροθύμησον ἐπ’ ἐμοί, καὶ ἀποδώσω σοι."
+        "BYZ": "Πεσὼν οὖν ὁ σύνδουλος αὐτοῦ εἰς τοὺς πόδας αὐτοῦ παρεκάλει αὐτόν, λέγων, Μακροθύμησον ἐπ’ ἐμοί, καὶ ἀποδώσω σοι.",
+        "NEO": "Son compagnon, se jetant à ses pieds, le conjurait en disant : Aie patience envers moi, et je te paierai tout.",
+        "NAB": "Falling to his knees, his fellow servant begged him, 'Be patient with me, and I will pay you back.'",
+        "VAT_ES": "El otro se arrojó a sus pies y le suplicó: \"Dame un plazo y te pagaré la deuda\".",
+        "CEI": "Il suo compagno, gettatosi a terra, lo supplicava dicendo: Abbi pazienza con me e ti rifonderò il debito."
       }
     },
     "30": {
@@ -425,10 +539,14 @@
         "LXX": 30
       },
       "text": {
-        "VUL": "Ille autem noluit: sed abiit, et misit eum in carcerem donec redderet debitum.",
+        "VUL": "Ille autem noluit : sed abiit, et misit eum in carcerem donec redderet debitum.",
         "LXX": "Ὁ δὲ οὐκ ἤθελεν, ἀλλὰ ἀπελθὼν ἔβαλεν αὐτὸν εἰς φυλακήν, ἕως οὗ ἀποδῷ τὸ ὀφειλόμενον.",
         "SYN": "Но тот не захотел, а пошел и посадил его в темницу, пока не отдаст долга.",
-        "BYZ": "Ὁ δὲ οὐκ ἤθελεν, ἀλλὰ ἀπελθὼν ἔβαλεν αὐτὸν εἰς φυλακήν, ἕως οὗ ἀποδῷ τὸ ὀφειλόμενον."
+        "BYZ": "Ὁ δὲ οὐκ ἤθελεν, ἀλλὰ ἀπελθὼν ἔβαλεν αὐτὸν εἰς φυλακήν, ἕως οὗ ἀποδῷ τὸ ὀφειλόμενον.",
+        "NEO": "Mais lui, sans vouloir l’entendre, s’en alla et le fit mettre en prison jusqu’à ce qu’il payât sa dette.",
+        "NAB": "But he refused. Instead, he had him put in prison until he paid back the debt.",
+        "VAT_ES": "Pero él no quiso, sino que lo hizo poner en la cárcel hasta que pagara lo que debía.",
+        "CEI": "Ma egli non volle esaudirlo, andò e lo fece gettare in carcere, fino a che non avesse pagato il debito."
       }
     },
     "31": {
@@ -439,10 +557,14 @@
         "LXX": 31
       },
       "text": {
-        "VUL": "Videntes autem conservi ejus quæ fiebant, contristati sunt valde: et venerunt, et narraverunt domino suo omnia quæ facta fuerant.",
+        "VUL": "Videntes autem conservi ejus quæ fiebant, contristati sunt valde : et venerunt, et narraverunt domino suo omnia quæ facta fuerant.",
         "LXX": "Ἰδόντες δὲ οἱ σύνδουλοι αὐτοῦ τὰ γενόμενα ἐλυπήθησαν σφόδρα· καὶ ἐλθόντες διεσάφησαν τῷ κυρίῳ ἑαυτῶν πάντα τὰ γενόμενα.",
         "SYN": "Товарищи его, видев происшедшее, очень огорчились и, придя, рассказали государю своему все бывшее.",
-        "BYZ": "Ἰδόντες δὲ οἱ σύνδουλοι αὐτοῦ τὰ γενόμενα ἐλυπήθησαν σφόδρα· καὶ ἐλθόντες διεσάφησαν τῷ κυρίῳ ἑαυτῶν πάντα τὰ γενόμενα."
+        "BYZ": "Ἰδόντες δὲ οἱ σύνδουλοι αὐτοῦ τὰ γενόμενα ἐλυπήθησαν σφόδρα· καὶ ἐλθόντες διεσάφησαν τῷ κυρίῳ ἑαυτῶν πάντα τὰ γενόμενα.",
+        "NEO": "Ce que voyant, les autres serviteurs en furent tout contristés, et ils vinrent raconter à leur maître ce qui s’était passé.",
+        "NAB": "Now when his fellow servants saw what had happened, they were deeply disturbed, and went to their master and reported the whole affair.",
+        "VAT_ES": "Los demás servidores, al ver lo que había sucedido, se apenaron mucho y fueron a contarlo a su señor.",
+        "CEI": "Visto quel che accadeva, gli altri servi furono addolorati e andarono a riferire al loro padrone tutto l'accaduto."
       }
     },
     "32": {
@@ -453,10 +575,14 @@
         "LXX": 32
       },
       "text": {
-        "VUL": "Tunc vocavit illum dominus suus: et ait illi: Serve nequam, omne debitum dimisi tibi quoniam rogasti me:",
+        "VUL": "Tunc vocavit illum dominus suus : et ait illi : Serve nequam, omne debitum dimisi tibi quoniam rogasti me :",
         "LXX": "Τότε προσκαλεσάμενος αὐτὸν ὁ κύριος αὐτοῦ λέγει αὐτῷ, Δοῦλε πονηρέ, πᾶσαν τὴν ὀφειλὴν ἐκείνην ἀφῆκά σοι, ἐπεὶ παρεκάλεσάς με·",
         "SYN": "Тогда государь его призывает его и говорит: злой раб! весь долг тот я простил тебе, потому что ты упросил меня;",
-        "BYZ": "Τότε προσκαλεσάμενος αὐτὸν ὁ κύριος αὐτοῦ λέγει αὐτῷ, Δοῦλε πονηρέ, πᾶσαν τὴν ὀφειλὴν ἐκείνην ἀφῆκά σοι, ἐπεὶ παρεκάλεσάς με·"
+        "BYZ": "Τότε προσκαλεσάμενος αὐτὸν ὁ κύριος αὐτοῦ λέγει αὐτῷ, Δοῦλε πονηρέ, πᾶσαν τὴν ὀφειλὴν ἐκείνην ἀφῆκά σοι, ἐπεὶ παρεκάλεσάς με·",
+        "NEO": "Alors le maître l’appela et lui dit : Serviteur méchant, je t’avais remis toute ta dette, parce que tu m’en avais supplié.",
+        "NAB": "His master summoned him and said to him, 'You wicked servant! I forgave you your entire debt because you begged me to.",
+        "VAT_ES": "Este lo mandó llamar y le dijo: \"&iexcl;Miserable! Me suplicaste, y te perdoné la deuda.",
+        "CEI": "Allora il padrone fece chiamare quell'uomo e gli disse: Servo malvagio, io ti ho condonato tutto il debito perché mi hai pregato."
       }
     },
     "33": {
@@ -470,7 +596,11 @@
         "VUL": "nonne ergo oportuit et te misereri conservi tui, sicut et ego tui misertus sum ?",
         "LXX": "οὐκ ἔδει καὶ σὲ ἐλεῆσαι τὸν σύνδουλόν σου, ὡς καὶ ἐγώ σε ἠλέησα;",
         "SYN": "не надлежало ли и тебе помиловать товарища твоего, как и я помиловал тебя?",
-        "BYZ": "οὐκ ἔδει καὶ σὲ ἐλεῆσαι τὸν σύνδουλόν σου, ὡς καὶ ἐγώ σε ἠλέησα;"
+        "BYZ": "οὐκ ἔδει καὶ σὲ ἐλεῆσαι τὸν σύνδουλόν σου, ὡς καὶ ἐγώ σε ἠλέησα;",
+        "NEO": "Ne devais-tu pas avoir pitié de ton compagnon, comme j’ai eu pitié de toi ?",
+        "NAB": "Should you not have had pity on your fellow servant, as I had pity on you?'",
+        "VAT_ES": "&iquest;No debías también tú tener compasión de tu compañero, como yo me compadecí de ti?\".",
+        "CEI": "Non dovevi forse anche tu aver pietà del tuo compagno, così come io ho avuto pietà di te?"
       }
     },
     "34": {
@@ -484,7 +614,11 @@
         "VUL": "Et iratus dominus ejus tradidit eum tortoribus, quoadusque redderet universum debitum.",
         "LXX": "Καὶ ὀργισθεὶς ὁ κύριος αὐτοῦ παρέδωκεν αὐτὸν τοῖς βασανισταῖς, ἕως οὗ ἀποδῷ πᾶν τὸ ὀφειλόμενον αὐτῷ.",
         "SYN": "И, разгневавшись, государь его отдал его истязателям, пока не отдаст ему всего долга.",
-        "BYZ": "Καὶ ὀργισθεὶς ὁ κύριος αὐτοῦ παρέδωκεν αὐτὸν τοῖς βασανισταῖς, ἕως οὗ ἀποδῷ πᾶν τὸ ὀφειλόμενον αὐτῷ."
+        "BYZ": "Καὶ ὀργισθεὶς ὁ κύριος αὐτοῦ παρέδωκεν αὐτὸν τοῖς βασανισταῖς, ἕως οὗ ἀποδῷ πᾶν τὸ ὀφειλόμενον αὐτῷ.",
+        "NEO": "Et son maître irrité le livra aux exécuteurs, jusqu’à ce qu’il eût payé toute sa dette.",
+        "NAB": "Then in anger his master handed him over to the torturers until he should pay back the whole debt.",
+        "VAT_ES": "E indignado, el rey lo entregó en manos de los verdugos hasta que pagara todo lo que debía.",
+        "CEI": "E, sdegnato, il padrone lo diede in mano agli aguzzini, finché non gli avesse restituito tutto il dovuto."
       }
     },
     "35": {
@@ -498,7 +632,11 @@
         "VUL": "Sic et Pater meus cælestis faciet vobis, si non remiseritis unusquisque fratri suo de cordibus vestris.",
         "LXX": "Οὕτως καὶ ὁ πατήρ μου ὁ ἐπουράνιος ποιήσει ὑμῖν, ἐὰν μὴ ἀφῆτε ἕκαστος τῷ ἀδελφῷ αὐτοῦ ἀπὸ τῶν καρδιῶν ὑμῶν τὰ παραπτώματα αὐτῶν.",
         "SYN": "Так и Отец Мой Небесный поступит с вами, если не простит каждый из вас от сердца своего брату своему согрешений его.",
-        "BYZ": "Οὕτως καὶ ὁ πατήρ μου ὁ ἐπουράνιος ποιήσει ὑμῖν, ἐὰν μὴ ἀφῆτε ἕκαστος τῷ ἀδελφῷ αὐτοῦ ἀπὸ τῶν καρδιῶν ὑμῶν τὰ παραπτώματα αὐτῶν."
+        "BYZ": "Οὕτως καὶ ὁ πατήρ μου ὁ ἐπουράνιος ποιήσει ὑμῖν, ἐὰν μὴ ἀφῆτε ἕκαστος τῷ ἀδελφῷ αὐτοῦ ἀπὸ τῶν καρδιῶν ὑμῶν τὰ παραπτώματα αὐτῶν.",
+        "NEO": "Ainsi vous traitera mon Père céleste, si chacun de vous ne pardonne à son frère du fond de son cœur. »",
+        "NAB": "So will my heavenly Father do to you, unless each of you forgives his brother from his heart.\"",
+        "VAT_ES": "Lo mismo hará también mi Padre celestial con ustedes, si no perdonan de corazón a sus hermanos».",
+        "CEI": "Così anche il mio Padre celeste farà a ciascuno di voi, se non perdonerete di cuore al vostro fratello\"."
       }
     }
   }

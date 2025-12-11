@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὦ ἀνόητοι Γαλάται, τίς ὑμᾶς ἐβάσκανεν τῇ ἀληθείᾳ μὴ πείθεσθαι, οἷς κατ’ ὀφθαλμοὺς Ἰησοῦς χριστὸς προεγράφη ἐν ὑμῖν ἐσταυρωμένος;",
+        "VUL": "O insensati Galatæ, quis vos fascinavit non obedire veritati, ante quorum oculos Jesus Christus præscriptus est, in vobis crucifixus ?",
+        "SYN": "О, несмысленные Галаты! кто прельстил вас не покоряться истине, _вас,_ у которых перед глазами предначертан был Иисус Христос, _как_ _бы_ у вас распятый?",
+        "NEO": "Ô Galates insensés ! qui vous a fascinés, vous aux yeux de qui a été tracée l’image de Jésus-Christ crucifié.+ 3:1 III, 1. Après fascinés, la Vulg. ajoute, \\+qt pour ne pas obéir à la vérité\\+qt* : ces mots manquent dans les manuscrits grecs, dans l’ancienne italique et dans plusieurs manuscrits de la Vulg. elle-même. Cf. v. 7. Quelques manuscrits ont, comme la Vulgate, \\+qt in vobis crucifixus\\+qt*, c’est-à-dire « comme s’il eût été crucifié parmi vous ».*",
+        "NAB": "O stupid Galatians! Who has bewitched you, before whose eyes Jesus Christ was publicly portrayed as crucified?",
+        "VAT_ES": "Gálatas insensatos, &iquest;quién los ha seducido a ustedes, ante quienes fue presentada la imagen de Jesucristo crucificado?",
+        "CEI": "Per questo, non potendo più resistere, abbiamo deciso di restare soli ad Atene"
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τοῦτο μόνον θέλω μαθεῖν ἀφ’ ὑμῶν, ἐξ ἔργων νόμου τὸ πνεῦμα ἐλάβετε, ἢ ἐξ ἀκοῆς πίστεως;",
+        "VUL": "Hoc solum a vobis volo discere : ex operibus legis Spiritum accepistis, an ex auditu fidei ?",
+        "SYN": "Сие только хочу знать от вас: через дела ли закона вы получили Духа, или через наставление в вере?",
+        "NEO": "Voici seulement ce que je voudrais savoir de vous : Est-ce par les œuvres de la Loi que vous avez reçu l’Esprit, ou par la soumission de la foi ?",
+        "NAB": "I want to learn only this from you: did you receive the Spirit from works of the law, or from faith in what you heard?",
+        "VAT_ES": "Una sola cosa quiero saber: &iquest;ustedes recibieron el Espíritu por las obras de la Ley o por haber creído en la predicación?",
+        "CEI": "e abbiamo inviato Timòteo, nostro fratello e collaboratore di Dio nel vangelo di Cristo, per confermarvi ed esortarvi nella vostra fede,"
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "BYZ": "Οὕτως ἀνόητοί ἐστε; Ἐναρξάμενοι πνεύματι, νῦν σαρκὶ ἐπιτελεῖσθε;",
+        "VUL": "sic stulti estis, ut cum Spiritu cperitis, nunc carne consummemini ?",
+        "SYN": "Так ли вы несмысленны, что, начав духом, теперь оканчиваете плотью?",
+        "NEO": "Avez-vous si peu de sens, qu’après avoir commencé par l’esprit, vous finissiez par la chair ?",
+        "NAB": "Are you so stupid? After beginning with the Spirit, are you now ending with the flesh?",
+        "VAT_ES": "&iquest;Han sido tan insensatos que llegaron al extremo de comenzar por el Espíritu, para acabar ahora en la carne?",
+        "CEI": "perché nessuno si lasci turbare in queste tribolazioni. Voi stessi, infatti, sapete che a questo siamo destinati;"
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τοσαῦτα ἐπάθετε εἰκῇ; Εἴγε καὶ εἰκῇ.",
+        "VUL": "tanta passi estis sine causa ? si tamen sine causa.",
+        "SYN": "Столь многое потерпели вы неужели без пользы? О, если бы только без пользы!",
+        "NEO": "Avez-vous fait une telle expérience en vain ? si toutefois c’est en vain.",
+        "NAB": "Did you experience so many things in vain? - if indeed it was in vain.",
+        "VAT_ES": "&iquest;Habrá sido en vano que recibieron tantos favores? &iexcl;Ojalá no haya sido en vano!",
+        "CEI": "gia quando eravamo tra voi, vi preannunziavamo che avremmo dovuto subire tribolazioni, come in realtà è accaduto e voi ben sapete."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὁ οὖν ἐπιχορηγῶν ὑμῖν τὸ πνεῦμα καὶ ἐνεργῶν δυνάμεις ἐν ὑμῖν, ἐξ ἔργων νόμου, ἢ ἐξ ἀκοῆς πίστεως;",
+        "VUL": "Qui ergo tribuit vobis Spiritum, et operatur virtutes in vobis : ex operibus legis, an ex auditu fidei ?",
+        "SYN": "Подающий вам Духа и совершающий между вами чудеса через дела ли закона _сие_ _производит,_ или через наставление в вере?",
+        "NEO": "Celui qui vous confère l’Esprit et qui opère parmi vous des miracles, le fait-il donc par les œuvres de la Loi, ou par la soumission de la foi ?",
+        "NAB": "Does, then, the one who supplies the Spirit to you and works mighty deeds among you do so from works of the law or from faith in what you heard?",
+        "VAT_ES": "Aquel que les prodiga el Espíritu y está obrando milagros entre ustedes, &iquest;lo hace por las obras de la Ley o porque han creído en la predicación?",
+        "CEI": "Per questo, non potendo più resistere, mandai a prendere notizie sulla vostra fede, per timore che il tentatore vi avesse tentati e così diventasse vana la nostra fatica."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καθὼς Ἀβραὰμ ἐπίστευσεν τῷ θεῷ, καὶ ἐλογίσθη αὐτῷ εἰς δικαιοσύνην.",
+        "VUL": "Sicut scriptum est : Abraham credidit Deo, et reputatum est illi ad justitiam :",
+        "SYN": "Так Авраам поверил Богу, и это вменилось ему в праведность.",
+        "NEO": "comme il est écrit : « Abraham crut à Dieu, et cela lui fut imputé à justice. »",
+        "NAB": "Thus Abraham \"believed God, and it was credited to him as righteousness.\"",
+        "VAT_ES": "Es el caso de Abraham, que creyó en Dios, y esto le fue tenido en cuenta para su justificación.",
+        "CEI": "Ma ora che è tornato Timòteo, e ci ha portato il lieto annunzio della vostra fede, della vostra carità e del ricordo sempre vivo che conservate di noi, desiderosi di vederci come noi lo siamo di vedere voi,"
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "BYZ": "Γινώσκετε ἄρα ὅτι οἱ ἐκ πίστεως, οὗτοί εἰσιν υἱοὶ Ἀβραάμ.",
+        "VUL": "cognoscite ergo quia qui ex fide sunt, ii sunt filii Abrahæ.",
+        "SYN": "Познайте же, что верующие суть сыны Авраама.",
+        "NEO": "Reconnaissez+ 3:7 7. Reconnaissez, ou bien avec quelques bons manuscrits de la Vulgate, \\+qt vous reconnaissez\\+qt*.* donc que ceux-là sont fils d’Abraham, qui sont de la foi.",
+        "NAB": "Realize then that it is those who have faith who are children of Abraham.",
+        "VAT_ES": "Reconozcan, entonces, que los verdaderos hijos de Abraham son los que tienen fe.",
+        "CEI": "ci sentiamo consolati, fratelli, a vostro riguardo, di tutta l'angoscia e tribolazione in cui eravamo per la vostra fede;"
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "BYZ": "Προϊδοῦσα δὲ ἡ γραφὴ ὅτι ἐκ πίστεως δικαιοῖ τὰ ἔθνη ὁ θεός, προευηγγελίσατο τῷ Ἀβραὰμ ὅτι Ἐνευλογηθήσονται ἐν σοὶ πάντα τὰ ἔθνη.",
+        "VUL": "Providens autem Scriptura quia ex fide justificat gentes Deus, prænuntiavit Abrahæ : Quia benedicentur in te omnes gentes.",
+        "SYN": "И Писание, провидя, что Бог верою оправдает язычников, предвозвестило Аврааму: в тебе благословятся все народы.",
+        "NEO": "Aussi l’Écriture, prévoyant que Dieu justifierait les nations par la foi, annonça d’avance à Abraham cette bonne nouvelle : « Toutes les nations seront bénies en toi. »+ 3:8 8. L’Écriture personnifiée, l’Esprit-Saint parlant par elle (Gen. xii, 3 ; comp. xviii, 18).*",
+        "NAB": "Scripture, which saw in advance that God would justify the Gentiles by faith, foretold the good news to Abraham, saying, \"Through you shall all the nations be blessed.\"",
+        "VAT_ES": "La Escritura, previendo que Dios justificaría a los paganos por la fe, anticipó esta buena noticia a Abraham, prometiéndole: \"En ti serán bendecidas todas las naciones\".",
+        "CEI": "ora, sì, ci sentiamo rivivere, se rimanete saldi nel Signore."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὥστε οἱ ἐκ πίστεως εὐλογοῦνται σὺν τῷ πιστῷ Ἀβραάμ.",
+        "VUL": "Igitur qui ex fide sunt, benedicentur cum fideli Abraham.",
+        "SYN": "Итак верующие благословляются с верным Авраамом,",
+        "NEO": "De sorte que ceux qui sont de la foi sont bénis avec le fidèle Abraham.",
+        "NAB": "Consequently, those who have faith are blessed along with Abraham who had faith.",
+        "VAT_ES": "De esa manera, los que creen son los que participan de la bendición de Abraham, el creyente.",
+        "CEI": "Quale ringraziamento possiamo rendere a Dio riguardo a voi, per tutta la gioia che proviamo a causa vostra davanti al nostro Dio,"
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὅσοι γὰρ ἐξ ἔργων νόμου εἰσίν, ὑπὸ κατάραν εἰσίν· γέγραπται γάρ, Ἐπικατάρατος πᾶς ὃς οὐκ ἐμμένει ἐν πᾶσιν τοῖς γεγραμμένοις ἐν τῷ βιβλίῳ τοῦ νόμου, τοῦ ποιῆσαι αὐτά.",
+        "VUL": "Quicumque enim ex operibus legis sunt, sub maledicto sunt. Scriptum est enim : Maledictus omnis qui non permanserit in omnibus quæ scripta sunt in libro legis ut faciat ea.",
+        "SYN": "а все, утверждающиеся на делах закона, находятся под клятвою. Ибо написано: проклят всяк, кто не исполняет постоянно всего, что написано в книге закона.",
+        "NEO": "En effet tous ceux qui s’appuient sur les œuvres de la Loi sont sous la malédiction ; car il est écrit : « Maudit quiconque n’est pas constant à observer tout ce qui est écrit dans le livre de la Loi. »+ 3:10 10. Citation libre, d’après les Septante, de Deut. xxvii, 26.*",
+        "NAB": "For all who depend on works of the law are under a curse; for it is written, \"Cursed be everyone who does not persevere in doing all the things written in the book of the law.\"",
+        "VAT_ES": "En efecto, todos los que confían en las obras de la Ley están bajo una maldición, porque dice la Escritura: \"Maldito sea el que no cumple fielmente todo lo que está escrito en el libro de la Ley\".",
+        "CEI": "noi che con viva insistenza, notte e giorno, chiediamo di poter vedere il vostro volto e completare ciò che ancora manca alla vostra fede?"
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὅτι δὲ ἐν νόμῳ οὐδεὶς δικαιοῦται παρὰ τῷ θεῷ, δῆλον· ὅτι Ὁ δίκαιος ἐκ πίστεως ζήσεται·",
+        "VUL": "Quoniam autem in lege nemo justificatur apud Deum, manifestum est : quia justus ex fide vivit.",
+        "SYN": "А что законом никто не оправдывается пред Богом, это ясно, потому что праведный верою жив будет.",
+        "NEO": "Or que par la Loi nul ne soit justifié devant Dieu, cela est manifeste, puisque le « juste vivra par la foi. »+ 3:11 11. Hab. ii, 4. Comp. Rom. i, 17.*",
+        "NAB": "And that no one is justified before God by the law is clear, for \"the one who is righteous by faith will live.\"",
+        "VAT_ES": "Es evidente que delante de Dios nadie es justificado por la Ley, ya que el justo vivirá por la fe.",
+        "CEI": "Voglia Dio stesso, Padre nostro, e il Signore nostro Gesù dirigere il nostro cammino verso di voi!"
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "BYZ": "ὁ δὲ νόμος οὐκ ἔστιν ἐκ πίστεως, ἀλλ’ Ὁ ποιήσας αὐτὰ ἄνθρωπος ζήσεται ἐν αὐτοῖς.",
+        "VUL": "Lex autem non est ex fide, sed : Qui fecerit ea, vivet in illis.",
+        "SYN": "А закон не по вере; но кто исполняет его, тот жив будет им.",
+        "NEO": "Or la Loi ne procède pas de la foi ; mais elle dit* : « Celui qui accomplira ces commandements vivra en eux. »+ 3:12 12. Lév. xviii, 5.*",
+        "NAB": "But the law does not depend on faith; rather, \"the one who does these things will live by them.\"",
+        "VAT_ES": "La Ley no tiene en cuenta la fe, antes bien, el que observa sus preceptos vivirá por ellos.",
+        "CEI": "Il Signore poi vi faccia crescere e abbondare nell'amore vicendevole e verso tutti, come anche noi lo siamo verso di voi,"
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "BYZ": "Χριστὸς ἡμᾶς ἐξηγόρασεν ἐκ τῆς κατάρας τοῦ νόμου, γενόμενος ὑπὲρ ἡμῶν κατάρα· γέγραπται γάρ, Ἐπικατάρατος πᾶς ὁ κρεμάμενος ἐπὶ ξύλου·",
+        "VUL": "Christus nos redemit de maledicto legis, factus pro nobis maledictum : quia scriptum est : Maledictus omnis qui pendet in ligno :",
+        "SYN": "Христос искупил нас от клятвы закона, сделавшись за нас клятвою [ибо написано: проклят всяк, висящий на древе],",
+        "NEO": "Le Christ nous a rachetés de la malédiction de la Loi, en se faisant malédiction pour nous, — car il est écrit : « Maudit+ 3:13 13. Maudit…: citation libre, d’après les Septante, de Deut. xxi, 23.* quiconque est pendu au bois, » —",
+        "NAB": "Christ ransomed us from the curse of the law by becoming a curse for us, for it is written, \"Cursed be everyone who hangs on a tree,\"",
+        "VAT_ES": "Cristo nos liberó de esta maldición de la Ley, haciéndose él mismo maldición por nosotros, porque también está escrito: \"Maldito el que está colgado en el patíbulo\".",
+        "CEI": "per rendere saldi e irreprensibili i vostri cuori nella santità, davanti a Dio Padre nostro, al momento della venuta del Signore nostro Gesù con tutti i suoi santi."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,14 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἵνα εἰς τὰ ἔθνη ἡ εὐλογία τοῦ Ἀβραὰμ γένηται ἐν χριστῷ Ἰησοῦ, ἵνα τὴν ἐπαγγελίαν τοῦ πνεύματος λάβωμεν διὰ τῆς πίστεως.",
+        "VUL": "ut in gentibus benedictio Abrahæ fieret in Christo Jesu, ut pollicitationem Spiritus accipiamus per fidem.",
+        "SYN": "дабы благословение Авраамово через Христа Иисуса распространилось на язычников, чтобы нам получить обещанного Духа верою.",
+        "NEO": "afin que la bénédiction promise à Abraham s’étendît aux nations dans le Christ Jésus, afin que nous pussions recevoir par la foi l’Esprit promis.",
+        "NAB": "that the blessing of Abraham might be extended to the Gentiles through Christ Jesus, so that we might receive the promise of the Spirit through faith.",
+        "VAT_ES": "Y esto, para que la bendición de Abraham alcanzara a todos los paganos en Cristo Jesús, y nosotros recibiéramos por la fe el Espíritu prometido."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +255,14 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Ἀδελφοί, κατὰ ἄνθρωπον λέγω· ὅμως ἀνθρώπου κεκυρωμένην διαθήκην οὐδεὶς ἀθετεῖ ἢ ἐπιδιατάσσεται.",
+        "VUL": "Fratres (secundum hominem dico) tamen hominis confirmatum testamentum nemo spernit, aut superordinat.",
+        "SYN": "Братия! говорю по _рассуждению_ человеческому: даже человеком утвержденного завещания никто не отменяет и не прибавляет _к_ _нему._",
+        "NEO": "Frères, — je parle selon les usages des hommes, — un contrat en bonne forme, bien que l’engagement soit pris par un homme, n’est annulé par personne, et personne n’y ajoute.",
+        "NAB": "Brothers, in human terms I say that no one can annul or amend even a human will once ratified.",
+        "VAT_ES": "Hermanos, quiero ponerles un ejemplo de la vida cotidiana: cuando un hombre hace un testamento en debida forma, nadie puede anularlo y agregarle nada."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +271,14 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τῷ δὲ Ἀβραὰμ ἐρρήθησαν αἱ ἐπαγγελίαι, καὶ τῷ σπέρματι αὐτοῦ. Οὐ λέγει, Καὶ τοῖς σπέρμασιν, ὡς ἐπὶ πολλῶν, ἀλλ’ ὡς ἐφ’ ἑνός, Καὶ τῷ σπέρματί σου, ὅς ἐστιν χριστός.",
+        "VUL": "Abrahæ dictæ sunt promissiones, et semini ejus. Non dicit : Et seminibus, quasi in multis : sed quasi in uno : Et semini tuo, qui est Christus.",
+        "SYN": "Но Аврааму даны были обетования и семени его. Не сказано: и потомкам, как бы о многих, но как об одном: и семени твоему, которое есть Христос.",
+        "NEO": "Or les promesses+ 3:16 16. Gen. xiii, 15 ; xvii, 8. — À ses descendants, litt. \\+qt à ses descendances\\+qt*. L’Esprit de Dieu, en choisissant un mot qui désigne une unité collective, de préférence à un pluriel, \\+qt enfants\\+qt* ou \\+qt descendants\\+qt*, par exemple, indiquait un objet de la promesse collectivement un, savoir le Christ uni à tous ceux qui ne forment avec lui qu’un seul corps, le Christ personnel et le Christ mystique, Jésus-Christ et son Église, dit S. Augustin.* ont été faites à Abraham et à sa descendance. On ne dit pas : « Et à ses descendants », comme s’il s’agissait de plusieurs ; mais il dit : « À ta descendance », comme ne parlant que d’un seul, savoir le Christ.",
+        "NAB": "Now the promises were made to Abraham and to his descendant. It does not say, \"And to descendants,\" as referring to many, but as referring to one, \"And to your descendant,\" who is Christ.",
+        "VAT_ES": "Las promesas fueron hechas a Abraham y a su descendencia. La Escritura no dice: «y a los descendientes», como si se tratara de muchos, sino en singular: y a su descendencia, es decir, a Cristo."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +287,14 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τοῦτο δὲ λέγω, διαθήκην προκεκυρωμένην ὑπὸ τοῦ θεοῦ εἰς χριστὸν ὁ μετὰ ἔτη τετρακόσια καὶ τριάκοντα γεγονὼς νόμος οὐκ ἀκυροῖ, εἰς τὸ καταργῆσαι τὴν ἐπαγγελίαν.",
+        "VUL": "Hoc autem dico, testamentum confirmatum a Deo : quæ post quadringentos et triginta annos facta est lex, non irritum facit ad evacuandam promissionem.",
+        "SYN": "Я говорю то, что завета о Христе, прежде Богом утвержденного, закон, явившийся спустя четыреста тридцать лет, не отменяет так, чтобы обетование потеряло силу.",
+        "NEO": "Voici ce que je veux dire : Dieu ayant conclu une alliance en bonne forme, la loi qui est venue quatre cent trente ans après ne la rend pas nulle, de manière à rendre vaine la promesse.+ 3:17 17. Le texte reçu ajoute : en vue du Christ. — S. Paul compte les 400 ans à partir du dernier renouvellement de la promesse.*",
+        "NAB": "This is what I mean: the law, which came four hundred and thirty years afterward, does not annul a covenant previously ratified by God, so as to cancel the promise.",
+        "VAT_ES": "Ahora bien, les digo esto: la Ley promulgada cuatrocientos treinta años después, no puede anular un testamento formalmente establecido por Dios, dejando así sin efecto la promesa."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +303,14 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "BYZ": "Εἰ γὰρ ἐκ νόμου ἡ κληρονομία, οὐκέτι ἐξ ἐπαγγελίας· τῷ δὲ Ἀβραὰμ δι’ ἐπαγγελίας κεχάρισται ὁ θεός.",
+        "VUL": "Nam si ex lege hæreditas, jam non ex promissione. Abrahæ autem per repromissionem donavit Deus.",
+        "SYN": "Ибо если по закону наследство, то уже не по обетованию; но Аврааму Бог даровал _оное_ по обетованию.",
+        "NEO": "Car si l’héritage s’obtenait par la Loi, il ne viendrait plus d’une promesse ; or, c’est par une promesse que Dieu a fait à Abraham ce don de sa grâce.",
+        "NAB": "For if the inheritance comes from the law, it is no longer from a promise; but God bestowed it on Abraham through a promise.",
+        "VAT_ES": "Porque si la herencia se recibe en virtud de la Ley, ya no es en virtud de la promesa. Y en realidad, Dios concedió su gracia a Abraham mediante una promesa."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +319,14 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τί οὖν ὁ νόμος; Τῶν παραβάσεων χάριν προσετέθη, ἄχρι οὗ ἔλθῃ τὸ σπέρμα ᾧ ἐπήγγελται, διαταγεὶς δι’ ἀγγέλων ἐν χειρὶ μεσίτου.",
+        "VUL": "Quid igitur lex ? Propter transgressiones posita est donec veniret semen, cui promiserat, ordinata per angelos in manu mediatoris.",
+        "SYN": "Для чего же закон? Он дан после по причине преступлений, до времени пришествия семени, к которому _относится_ обетование, и преподан через Ангелов, рукою посредника.",
+        "NEO": "Pourquoi donc la Loi ? Elle a été ajoutée à cause des transgressions, jusqu’à ce que vînt « la descendance » à qui la promesse avait été faite ; elle a été promulguée par les anges, par l’entremise d’un médiateur.+ 3:19 19. Rom. v, 20 ; vii, 7-13. — Les anges, selon une tradition juive, dont la première trace se trouve, Deut. xxxiii, 2 (LXX) et qui est clairement affirmée dans le N. T. Comp. Act. vii, 53 ; Hébr. ii, 2. — D’un médiateur entre Dieu et le peuple, Moïse (Deut. v, 5 sv. Comp. ix, 9 sv.). S. Paul fait ressortir par là le caractère intermédiaire et subordonné de la Loi.*",
+        "NAB": "Why, then, the law? It was added for transgressions, until the descendant came to whom the promise had been made; it was promulgated by angels at the hand of a mediator.",
+        "VAT_ES": "Entonces, &iquest;para qué sirve la Ley? Ella fue añadida para multiplicar las transgresiones, hasta que llegara el descendiente de Abraham, a quien estaba destinada la promesa; y fue promulgada por ángeles, a través de un mediador."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +335,14 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὁ δὲ μεσίτης ἑνὸς οὐκ ἔστιν, ὁ δὲ θεὸς εἷς ἐστίν.",
+        "VUL": "Mediator autem unius non est : Deus autem unus est.",
+        "SYN": "Но посредник при одном не бывает, а Бог один.",
+        "NEO": "Or le médiateur n’est pas médiateur* d’un seul ; et Dieu est un.+ 3:20 20. L’entremise d’un médiateur prouve que l’alliance conclue au pied du Sinaï avait le caractère d’un véritable contrat. Dieu s’obligeait vis-à-vis du peuple hébreu à le bénir sous la condition qu’il observât sa Loi (comp. v, 12) ; et c’est en effet à quoi les fils d’Israël s’engagèrent (Exod. xix, 5-8 ; Deut. v, 24 sv.). Au contraire, dans la promesse, Dieu est seul ; il ne contracte aucune dette vis-à-vis de l’homme à qui il promet. La Loi n’a donc pas pu se substituer à la promesse et l’abolir.*",
+        "NAB": "Now there is no mediator when only one party is involved, and God is one.",
+        "VAT_ES": "Pero no existe mediador cuando hay una sola parte, y Dios es uno solo."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +351,14 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὁ οὖν νόμος κατὰ τῶν ἐπαγγελιῶν τοῦ θεοῦ; Μὴ γένοιτο. Εἰ γὰρ ἐδόθη νόμος ὁ δυνάμενος ζῳοποιῆσαι, ὄντως ἂν ἐκ νόμου ἦν ἡ δικαιοσύνη.",
+        "VUL": "Lex ergo adversus promissa Dei ? Absit. Si enim data esset lex, quæ posset vivificare, vere ex lege esset justitia.",
+        "SYN": "Итак закон противен обетованиям Божиим? Никак! Ибо если бы дан был закон, могущий животворить, то подлинно праведность была бы от закона;",
+        "NEO": "La Loi va-t-elle donc contre les promesses de Dieu ? Loin de là ! S’il eût été donné une loi capable de procurer la vie, la justice viendrait réellement de la loi.",
+        "NAB": "Is the law then opposed to the promises (of God)? Of course not! For if a law had been given that could bring life, then righteousness would in reality come from the law.",
+        "VAT_ES": "&iquest;Eso quiere decir que la Ley se opone a las promesas de Dios? &iexcl;De ninguna manera! Porque si hubiéramos recibido una Ley capaz de comunicar la Vida, ciertamente la justicia provendría de la Ley."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +367,14 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀλλὰ συνέκλεισεν ἡ γραφὴ τὰ πάντα ὑπὸ ἁμαρτίαν, ἵνα ἡ ἐπαγγελία ἐκ πίστεως Ἰησοῦ χριστοῦ δοθῇ τοῖς πιστεύουσιν.",
+        "VUL": "Sed conclusit Scriptura omnia sub peccato, ut promissio ex fide Jesu Christi daretur credentibus.",
+        "SYN": "но Писание всех заключило под грехом, дабы обетование верующим дано было по вере в Иисуса Христа.",
+        "NEO": "Mais l’Écriture+ 3:22 22. L’Écriture personnifiée, comme au v. 8. (Rom. iii, 10 sv.).* a tout enfermé sous le péché, afin que, par la foi en Jésus-Christ, ce qui avait été promis fût donné à ceux qui croient.",
+        "NAB": "But scripture confined all things under the power of sin, that through faith in Jesus Christ the promise might be given to those who believe.",
+        "VAT_ES": "Pero, de hecho, la Ley escrita sometió todo al pecado, para que la promesa se cumpla en aquellos que creen, gracias a la fe en Jesucristo."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +383,14 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Πρὸ τοῦ δὲ ἐλθεῖν τὴν πίστιν, ὑπὸ νόμον ἐφρουρούμεθα, συγκεκλεισμένοι εἰς τὴν μέλλουσαν πίστιν ἀποκαλυφθῆναι.",
+        "VUL": "Prius autem quam veniret fides, sub lege custodiebamur conclusi in eam fidem quæ revelanda erat.",
+        "SYN": "А до пришествия веры мы заключены были под стражею закона, до того _времени,_ как надлежало открыться вере.",
+        "NEO": "Avant que vînt la foi, nous étions enfermés sous la garde de la Loi, en vue de la foi qui devait être révélée.",
+        "NAB": "Before faith came, we were held in custody under law, confined for the faith that was to be revealed.",
+        "VAT_ES": "Antes que llegara la fe, estábamos cautivos bajo la custodia de la Ley, en espera de la fe que debía ser revelada."
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +399,14 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὥστε ὁ νόμος παιδαγωγὸς ἡμῶν γέγονεν εἰς χριστόν, ἵνα ἐκ πίστεως δικαιωθῶμεν.",
+        "VUL": "Itaque lex pædagogus noster fuit in Christo, ut ex fide justificemur.",
+        "SYN": "Итак закон был для нас детоводителем ко Христу, дабы нам оправдаться верою;",
+        "NEO": "Ainsi la Loi a été notre pédagogue+ 3:24 24. Les pédagogues, chez les Grecs et les Romains, étaient ordinairement des esclaves qui accompagnaient partout les enfants confiés à leurs soins, veillaient sur eux et leur apprenaient les premiers éléments des connaissances, jusqu’à ce que l’enfant pût entendre plus tard les leçons de quelque maître renommé. Tel fut exactement le rôle de la loi auprès du peuple juif.* pour nous conduire au Christ, afin que nous fussions justifiés par la foi.",
+        "NAB": "Consequently, the law was our disciplinarian for Christ, that we might be justified by faith.",
+        "VAT_ES": "Así, la Ley nos sirvió de guía para llevarnos a Cristo, a fin de que fuéramos justificados por la fe."
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +415,14 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐλθούσης δὲ τῆς πίστεως, οὐκέτι ὑπὸ παιδαγωγόν ἐσμεν.",
+        "VUL": "At ubi venit fides, jam non sumus sub pædagogo.",
+        "SYN": "по пришествии же веры, мы уже не под _руководством_ детоводителя.",
+        "NEO": "Mais la foi étant venue, nous ne sommes plus sous un pédagogue.",
+        "NAB": "But now that faith has come, we are no longer under a disciplinarian.",
+        "VAT_ES": "Y ahora que ha llegado la fe, no necesitamos más de un guía."
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +431,14 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "BYZ": "Πάντες γὰρ υἱοὶ θεοῦ ἐστὲ διὰ τῆς πίστεως ἐν χριστῷ Ἰησοῦ.",
+        "VUL": "Omnes enim filii Dei estis per fidem, quæ est in Christo Jesu.",
+        "SYN": "Ибо все вы сыны Божии по вере во Христа Иисуса;",
+        "NEO": "Car vous êtes tous fils de Dieu par la foi dans le Christ Jésus.+ 3:26 26. Dans le Christ Jésus, peut, dans le grec, se joindre à \\+qt fils de Dieu\\+qt*.*",
+        "NAB": "For through faith you are all children of God in Christ Jesus.",
+        "VAT_ES": "Porque todos ustedes son hijos de Dios por la fe en Cristo Jesús,"
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +447,14 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὅσοι γὰρ εἰς χριστὸν ἐβαπτίσθητε, χριστὸν ἐνεδύσασθε.",
+        "VUL": "Quicumque enim in Christo baptizati estis, Christum induistis.",
+        "SYN": "все вы, во Христа крестившиеся, во Христа облеклись.",
+        "NEO": "Vous tous, en effet, qui avez été baptisés dans le Christ,+ 3:27 27. Dans le Christ (\\+qt in Christum\\+qt*), de manière à sortir de la race pécheresse du premier Adam, pour devenir membre du corps mystique de J.-C. — \\+qt Revêtu le Christ\\+qt* : cette image, familière à S. Paul (Rom. xiii, 14 ; Eph. iv, 24 ; Col. iii, 9 sv.), signifie l’intime communauté de vie et d’esprit dans laquelle l’homme entre avec J.-C. par le baptême.* vous avez revêtu le Christ.",
+        "NAB": "For all of you who were baptized into Christ have clothed yourselves with Christ.",
+        "VAT_ES": "ya que todos ustedes, que fueron bautizados en Cristo, han sido revestidos de Cristo."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +463,14 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "BYZ": "Οὐκ ἔνι Ἰουδαῖος οὐδὲ Ἕλλην, οὐκ ἔνι δοῦλος οὐδὲ ἐλεύθερος, οὐκ ἔνι ἄρσεν καὶ θῆλυ· πάντες γὰρ ὑμεῖς εἷς ἐστὲ ἐν χριστῷ Ἰησοῦ.",
+        "VUL": "Non est Judæus, neque Græcus : non est servus, neque liber : non est masculus, neque femina. Omnes enim vos unum estis in Christo Jesu.",
+        "SYN": "Нет уже Иудея, ни язычника; нет раба, ни свободного; нет мужеского пола, ни женского: ибо все вы одно во Христе Иисусе.",
+        "NEO": "Il n’y a plus ni Juif ni Grec ; il n’y a plus ni esclave ni homme libre ; il n’y a plus ni homme ni femme : car vous n’êtes tous qu’une personne dans le Christ Jésus.+ 3:28 28. Comp. Col. iii, 18. — Une personne (en gr. εἷς, unus, selon les meilleurs manuscrits). La Vulg. a lu \\+qt in unum\\+qt*. Sens : J.-C. appelle tous les hommes à devenir enfants de Dieu, et il a mérité cette grâce à tous, sans distinction.*",
+        "NAB": "There is neither Jew nor Greek, there is neither slave nor free person, there is not male and female; for you are all one in Christ Jesus.",
+        "VAT_ES": "Por lo tanto, ya no hay judío ni pagano, esclavo ni hombre libre, varón ni mujer, porque todos ustedes no son más que uno en Cristo Jesús."
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +479,14 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "BYZ": "Εἰ δὲ ὑμεῖς χριστοῦ, ἄρα τοῦ Ἀβραὰμ σπέρμα ἐστέ, καὶ κατ’ ἐπαγγελίαν κληρονόμοι.",
+        "VUL": "Si autem vos Christi, ergo semen Abrahæ estis, secundum promissionem hæredes.",
+        "SYN": "Если же вы Христовы, то вы семя Авраамово и по обетованию наследники.",
+        "NEO": "Et si vous êtes au Christ,+ 3:29 29. Au Christ, membres de son corps mystique. — \\+qt Vous êtes\\+qt*, comme lui et en lui, \\+qt descendance\\+qt*, etc. Comp. ix, 18.* vous êtes donc « descendance » d’Abraham, héritiers selon la promesse.",
+        "NAB": "And if you belong to Christ, then you are Abraham's descendant, heirs according to the promise.",
+        "VAT_ES": "Y si ustedes pertenecen a Cristo, entonces son descendientes de Abraham, herederos en virtud de la promesa."
+      }
     }
   }
 }

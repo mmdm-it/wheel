@@ -19,10 +19,14 @@
         "LXX": 1
       },
       "text": {
-        "VUL": "Et factum est: cum consummasset Jesus sermones hos omnes, dixit discipulis suis:",
+        "VUL": "Et factum est : cum consummasset Jesus sermones hos omnes, dixit discipulis suis :",
         "LXX": "Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς πάντας τοὺς λόγους τούτους, εἶπεν τοῖς μαθηταῖς αὐτοῦ,",
         "SYN": "Когда Иисус окончил все слова сии, то сказал ученикам Своим:",
-        "BYZ": "Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς πάντας τοὺς λόγους τούτους, εἶπεν τοῖς μαθηταῖς αὐτοῦ,"
+        "BYZ": "Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς πάντας τοὺς λόγους τούτους, εἶπεν τοῖς μαθηταῖς αὐτοῦ,",
+        "NEO": "Jésus ayant achevé tous ces discours, dit à ses disciples :",
+        "NAB": "When Jesus finished all these words, he said to his disciples,",
+        "VAT_ES": "Cuando Jesús terminó de decir todas estas palabras, dijo a sus discípulos:",
+        "CEI": "Terminati tutti questi discorsi, Gesù disse ai suoi discepoli:"
       }
     },
     "2": {
@@ -36,7 +40,11 @@
         "VUL": "Scitis quia post biduum Pascha fiet, et Filius hominis tradetur ut crucifigatur.",
         "LXX": "Οἴδατε ὅτι μετὰ δύο ἡμέρας τὸ Πάσχα γίνεται, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς τὸ σταυρωθῆναι.",
         "SYN": "вы знаете, что через два дня будет Пасха, и Сын Человеческий предан будет на распятие.",
-        "BYZ": "Οἴδατε ὅτι μετὰ δύο ἡμέρας τὸ Πάσχα γίνεται, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς τὸ σταυρωθῆναι."
+        "BYZ": "Οἴδατε ὅτι μετὰ δύο ἡμέρας τὸ Πάσχα γίνεται, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς τὸ σταυρωθῆναι.",
+        "NEO": "« Vous savez que la Pâque a lieu dans deux jours, et que le Fils de l’homme va être livré pour être crucifié. »+ 26:2 XXVI, 2. Marc xiv, i ; Luc xxii, i.*",
+        "NAB": "\"You know that in two days' time it will be Passover, and the Son of Man will be handed over to be crucified.\"",
+        "VAT_ES": "«Ya saben que dentro de dos días se celebrará la Pascua, y el Hijo del hombre será entregado para ser crucificado».",
+        "CEI": "\"Voi sapete che fra due giorni è Pasqua e che il Figlio dell'uomo sarà consegnato per essere crocifisso\"."
       }
     },
     "3": {
@@ -47,10 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "VUL": "Tunc congregati sunt principes sacerdotum, et seniores populi, in atrium principis sacerdotum, qui dicebatur Caiphas:",
+        "VUL": "Tunc congregati sunt principes sacerdotum, et seniores populi, in atrium principis sacerdotum, qui dicebatur Caiphas :",
         "LXX": "Τότε συνήχθησαν οἱ ἀρχιερεῖς καὶ οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ εἰς τὴν αὐλὴν τοῦ ἀρχιερέως τοῦ λεγομένου Καϊάφα,",
         "SYN": "Тогда собрались первосвященники и книжники и старейшины народа во двор первосвященника, по имени Каиафы,",
-        "BYZ": "Τότε συνήχθησαν οἱ ἀρχιερεῖς καὶ οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ εἰς τὴν αὐλὴν τοῦ ἀρχιερέως τοῦ λεγομένου Καϊάφα,"
+        "BYZ": "Τότε συνήχθησαν οἱ ἀρχιερεῖς καὶ οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι τοῦ λαοῦ εἰς τὴν αὐλὴν τοῦ ἀρχιερέως τοῦ λεγομένου Καϊάφα,",
+        "NEO": "Alors les Princes des prêtres et les Anciens du peuple se réunirent dans la cour du grand-prêtre, appelé Caïphe,",
+        "NAB": "Then the chief priests and the elders of the people assembled in the palace of the high priest, who was called Caiaphas,",
+        "VAT_ES": "Entonces los sumos sacerdotes y los ancianos del pueblo se reunieron en el palacio del Sumo Sacerdote, llamado Caifás,",
+        "CEI": "Allora i sommi sacerdoti e gli anziani del popolo si riunirono nel palazzo del sommo sacerdote, che si chiamava Caifa,"
       }
     },
     "4": {
@@ -64,7 +76,11 @@
         "VUL": "et consilium fecerunt ut Jesum dolo tenerent, et occiderent.",
         "LXX": "καὶ συνεβουλεύσαντο ἵνα τὸν Ἰησοῦν δόλῳ κρατήσωσιν καὶ ἀποκτείνωσιν.",
         "SYN": "и положили в совете взять Иисуса хитростью и убить;",
-        "BYZ": "καὶ συνεβουλεύσαντο ἵνα τὸν Ἰησοῦν δόλῳ κρατήσωσιν καὶ ἀποκτείνωσιν."
+        "BYZ": "καὶ συνεβουλεύσαντο ἵνα τὸν Ἰησοῦν δόλῳ κρατήσωσιν καὶ ἀποκτείνωσιν.",
+        "NEO": "et ils délibérèrent sur les moyens de s’emparer de Jésus par ruse et de le faire mourir.",
+        "NAB": "and they consulted together to arrest Jesus by treachery and put him to death.",
+        "VAT_ES": "y se pusieron de acuerdo para detener a Jesús con astucia y darle muerte.",
+        "CEI": "e tennero consiglio per arrestare con un inganno Gesù e farlo morire."
       }
     },
     "5": {
@@ -75,10 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "VUL": "Dicebant autem: Non in die festo, ne forte tumultus fieret in populo.",
+        "VUL": "Dicebant autem : Non in die festo, ne forte tumultus fieret in populo.",
         "LXX": "Ἔλεγον δέ, Μὴ ἐν τῇ ἑορτῇ, ἵνα μὴ θόρυβος γένηται ἐν τῷ λαῷ.",
         "SYN": "но говорили: только не в праздник, чтобы не сделалось возмущения в народе.",
-        "BYZ": "Ἔλεγον δέ, Μὴ ἐν τῇ ἑορτῇ, ἵνα μὴ θόρυβος γένηται ἐν τῷ λαῷ."
+        "BYZ": "Ἔλεγον δέ, Μὴ ἐν τῇ ἑορτῇ, ἵνα μὴ θόρυβος γένηται ἐν τῷ λαῷ.",
+        "NEO": "« Mais, disaient-ils, il ne faut pas que ce soit pendant la fête, de peur qu’il ne s’élève quelque tumulte parmi le peuple. »",
+        "NAB": "But they said, \"Not during the festival, that there may not be a riot among the people.\"",
+        "VAT_ES": "Pero decían: «No lo hagamos durante la fiesta, para que no se produzca un tumulto en el pueblo».",
+        "CEI": "Ma dicevano: \"Non durante la festa, perché non avvengano tumulti fra il popolo\"."
       }
     },
     "6": {
@@ -92,7 +112,11 @@
         "VUL": "Cum autem Jesus esset in Bethania in domo Simonis leprosi,",
         "LXX": "Τοῦ δὲ Ἰησοῦ γενομένου ἐν Βηθανίᾳ ἐν οἰκίᾳ Σίμωνος τοῦ λεπροῦ,",
         "SYN": "Когда же Иисус был в Вифании, в доме Симона прокаженного,",
-        "BYZ": "Τοῦ δὲ Ἰησοῦ γενομένου ἐν Βηθανίᾳ ἐν οἰκίᾳ Σίμωνος τοῦ λεπροῦ,"
+        "BYZ": "Τοῦ δὲ Ἰησοῦ γενομένου ἐν Βηθανίᾳ ἐν οἰκίᾳ Σίμωνος τοῦ λεπροῦ,",
+        "NEO": "Comme Jésus était à Béthanie, dans la maison de Simon le lépreux,+ 26:6 6. Ce repas avait eu lieu le samedi précédent. Jean, xii, 1-8.*",
+        "NAB": "Now when Jesus was in Bethany in the house of Simon the leper,",
+        "VAT_ES": "Cuando Jesús se encontraba en Betania, en casa de Simón el leproso,",
+        "CEI": "Mentre Gesù si trovava a Betània, in casa di Simone il lebbroso,"
       }
     },
     "7": {
@@ -106,7 +130,11 @@
         "VUL": "accessit ad eum mulier habens alabastrum unguenti pretiosi, et effudit super caput ipsius recumbentis.",
         "LXX": "προσῆλθεν αὐτῷ γυνὴ ἀλάβαστρον μύρου ἔχουσα βαρυτίμου, καὶ κατέχεεν ἐπὶ τὴν κεφαλὴν αὐτοῦ ἀνακειμένου.",
         "SYN": "приступила к Нему женщина с алавастровым сосудом мира драгоценного и возливала Ему возлежащему на голову.",
-        "BYZ": "προσῆλθεν αὐτῷ γυνὴ ἀλάβαστρον μύρου ἔχουσα βαρυτίμου, καὶ κατέχεεν ἐπὶ τὴν κεφαλὴν αὐτοῦ ἀνακειμένου."
+        "BYZ": "προσῆλθεν αὐτῷ γυνὴ ἀλάβαστρον μύρου ἔχουσα βαρυτίμου, καὶ κατέχεεν ἐπὶ τὴν κεφαλὴν αὐτοῦ ἀνακειμένου.",
+        "NEO": "une femme+ 26:7 7. Une femme, Marie, sœur de Lazare et de Marthe. (Jean, xi, 2.)* s’approcha de lui, avec un vase d’albâtre contenant un parfum de grand prix ; et pendant qu’il était à table, elle répandit le parfum sur sa tête.",
+        "NAB": "a woman came up to him with an alabaster jar of costly perfumed oil, and poured it on his head while he was reclining at table.",
+        "VAT_ES": "se acercó una mujer con un frasco de alabastro, que contenía un perfume valioso, y lo derramó sobre su cabeza, mientras él estaba comiendo.",
+        "CEI": "gli si avvicinò una donna con un vaso di alabastro di olio profumato molto prezioso, e glielo versò sul capo mentre stava a mensa."
       }
     },
     "8": {
@@ -117,10 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "VUL": "Videntes autem discipuli, indignati sunt, dicentes: Ut quid perditio hæc ?",
+        "VUL": "Videntes autem discipuli, indignati sunt, dicentes : Ut quid perditio hæc ?",
         "LXX": "Ἰδόντες δὲ οἱ μαθηταὶ αὐτοῦ ἠγανάκτησαν, λέγοντες, Εἰς τί ἡ ἀπώλεια αὕτη;",
         "SYN": "Увидев это, ученики Его вознегодовали и говорили: к чему такая трата?",
-        "BYZ": "Ἰδόντες δὲ οἱ μαθηταὶ αὐτοῦ ἠγανάκτησαν, λέγοντες, Εἰς τί ἡ ἀπώλεια αὕτη;"
+        "BYZ": "Ἰδόντες δὲ οἱ μαθηταὶ αὐτοῦ ἠγανάκτησαν, λέγοντες, Εἰς τί ἡ ἀπώλεια αὕτη;",
+        "NEO": "Ce que voyant, les disciples dirent avec indignation : « À quoi bon cette perte ?",
+        "NAB": "When the disciples saw this, they were indignant and said, \"Why this waste?",
+        "VAT_ES": "Al ver esto, sus discípulos, indignados, dijeron: «&iquest;Para qué este derroche?",
+        "CEI": "I discepoli vedendo ciò si sdegnarono e dissero: \"Perché questo spreco?"
       }
     },
     "9": {
@@ -134,7 +166,11 @@
         "VUL": "potuit enim istud venundari multo, et dari pauperibus.",
         "LXX": "Ἠδύνατο γὰρ τοῦτο τὸ μύρον πραθῆναι πολλοῦ, καὶ δοθῆναι πτωχοῖς.",
         "SYN": "Ибо можно было бы продать это миро за большую цену и дать нищим.",
-        "BYZ": "Ἠδύνατο γὰρ τοῦτο τὸ μύρον πραθῆναι πολλοῦ, καὶ δοθῆναι πτωχοῖς."
+        "BYZ": "Ἠδύνατο γὰρ τοῦτο τὸ μύρον πραθῆναι πολλοῦ, καὶ δοθῆναι πτωχοῖς.",
+        "NEO": "On aurait pu vendre ce parfum très cher et en donner le prix aux pauvres. »",
+        "NAB": "It could have been sold for much, and the money given to the poor.\"",
+        "VAT_ES": "Se hubiera podido vender el perfume a buen precio para repartir el dinero entre los pobres».",
+        "CEI": "Lo si poteva vendere a caro prezzo per darlo ai poveri!\"."
       }
     },
     "10": {
@@ -145,10 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "VUL": "Sciens autem Jesus, ait illis: Quid molesti estis huic mulieri ? opus enim bonum operata est in me.",
+        "VUL": "Sciens autem Jesus, ait illis : Quid molesti estis huic mulieri ? opus enim bonum operata est in me.",
         "LXX": "Γνοὺς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς, Τί κόπους παρέχετε τῇ γυναικί; Ἔργον γὰρ καλὸν εἰργάσατο εἰς ἐμέ.",
         "SYN": "Но Иисус, уразумев сие, сказал им: что смущаете женщину? она доброе дело сделала для Меня:",
-        "BYZ": "Γνοὺς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς, Τί κόπους παρέχετε τῇ γυναικί; Ἔργον γὰρ καλὸν εἰργάσατο εἰς ἐμέ."
+        "BYZ": "Γνοὺς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς, Τί κόπους παρέχετε τῇ γυναικί; Ἔργον γὰρ καλὸν εἰργάσατο εἰς ἐμέ.",
+        "NEO": "Jésus, s’en étant aperçu, leur dit : « Pourquoi faites-vous de la peine à cette femme ? C’est une bonne action qu’elle a faite à mon égard.",
+        "NAB": "Since Jesus knew this, he said to them, \"Why do you make trouble for the woman? She has done a good thing for me.",
+        "VAT_ES": "Jesús se dio cuenta y les dijo: «&iquest;Por qué molestan a esta mujer? Ha hecho una buena obra conmigo.",
+        "CEI": "Ma Gesù, accortosene, disse loro: \"Perché infastidite questa donna? Essa ha compiuto un'azione buona verso di me."
       }
     },
     "11": {
@@ -159,10 +199,14 @@
         "LXX": 11
       },
       "text": {
-        "VUL": "Nam semper pauperes habetis vobiscum: me autem non semper habetis.",
+        "VUL": "Nam semper pauperes habetis vobiscum : me autem non semper habetis.",
         "LXX": "Πάντοτε γὰρ τοὺς πτωχοὺς ἔχετε μεθ’ ἑαυτῶν, ἐμὲ δὲ οὐ πάντοτε ἔχετε.",
         "SYN": "ибо нищих всегда имеете с собою, а Меня не всегда имеете;",
-        "BYZ": "Πάντοτε γὰρ τοὺς πτωχοὺς ἔχετε μεθ’ ἑαυτῶν, ἐμὲ δὲ οὐ πάντοτε ἔχετε."
+        "BYZ": "Πάντοτε γὰρ τοὺς πτωχοὺς ἔχετε μεθ’ ἑαυτῶν, ἐμὲ δὲ οὐ πάντοτε ἔχετε.",
+        "NEO": "Car vous avez toujours les pauvres avec vous ; mais moi, vous ne m’avez pas toujours.",
+        "NAB": "The poor you will always have with you; but you will not always have me.",
+        "VAT_ES": "A los pobres los tendrán siempre con ustedes, pero a mí no me tendrán siempre.",
+        "CEI": "I poveri infatti li avete sempre con voi, me, invece, non sempre mi avete."
       }
     },
     "12": {
@@ -176,7 +220,11 @@
         "VUL": "Mittens enim hæc unguentum hoc in corpus meum, ad sepeliendum me fecit.",
         "LXX": "Βαλοῦσα γὰρ αὕτη τὸ μύρον τοῦτο ἐπὶ τοῦ σώματός μου, πρὸς τὸ ἐνταφιάσαι με ἐποίησεν.",
         "SYN": "возлив миро сие на тело Мое, она приготовила Меня к погребению;",
-        "BYZ": "Βαλοῦσα γὰρ αὕτη τὸ μύρον τοῦτο ἐπὶ τοῦ σώματός μου, πρὸς τὸ ἐνταφιάσαι με ἐποίησεν."
+        "BYZ": "Βαλοῦσα γὰρ αὕτη τὸ μύρον τοῦτο ἐπὶ τοῦ σώματός μου, πρὸς τὸ ἐνταφιάσαι με ἐποίησεν.",
+        "NEO": "En répandant ce parfum sur mon corps, elle l’a fait pour ma sépulture.",
+        "NAB": "In pouring this perfumed oil upon my body, she did it to prepare me for burial.",
+        "VAT_ES": "Al derramar este perfume sobre mi cuerpo, ella preparó mi sepultura.",
+        "CEI": "Versando questo olio sul mio corpo, lo ha fatto in vista della mia sepoltura."
       }
     },
     "13": {
@@ -190,7 +238,11 @@
         "VUL": "Amen dico vobis, ubicumque prædicatum fuerit hoc Evangelium in toto mundo, dicetur et quod hæc fecit in memoriam ejus.",
         "LXX": "Ἀμὴν λέγω ὑμῖν, ὅπου ἐὰν κηρυχθῇ τὸ εὐαγγέλιον τοῦτο ἐν ὅλῳ τῷ κόσμῳ, λαληθήσεται καὶ ὃ ἐποίησεν αὕτη εἰς μνημόσυνον αὐτῆς.",
         "SYN": "истинно говорю вам: где ни будет проповедано Евангелие сие в целом мире, сказано будет в память ее и о том, что она сделала.",
-        "BYZ": "Ἀμὴν λέγω ὑμῖν, ὅπου ἐὰν κηρυχθῇ τὸ εὐαγγέλιον τοῦτο ἐν ὅλῳ τῷ κόσμῳ, λαληθήσεται καὶ ὃ ἐποίησεν αὕτη εἰς μνημόσυνον αὐτῆς."
+        "BYZ": "Ἀμὴν λέγω ὑμῖν, ὅπου ἐὰν κηρυχθῇ τὸ εὐαγγέλιον τοῦτο ἐν ὅλῳ τῷ κόσμῳ, λαληθήσεται καὶ ὃ ἐποίησεν αὕτη εἰς μνημόσυνον αὐτῆς.",
+        "NEO": "Je vous le dis, en vérité, partout où sera prêché cet évangile, dans le monde entier, ce qu’elle a fait sera raconté en mémoire d’elle. »",
+        "NAB": "Amen, I say to you, wherever this gospel is proclaimed in the whole world, what she has done will be spoken of, in memory of her.\"",
+        "VAT_ES": "Les aseguro que allí donde se proclame esta Buena Noticia, en todo el mundo, se contará también en su memoria lo que ella hizo».",
+        "CEI": "In verità vi dico: dovunque sarà predicato questo vangelo, nel mondo intero, sarà detto anche ciò che essa ha fatto, in ricordo di lei\"."
       }
     },
     "14": {
@@ -201,10 +253,14 @@
         "LXX": 14
       },
       "text": {
-        "VUL": "Tunc abiit unus de duodecim, qui dicebatur Judas Iscariotes, ad principes sacerdotum:",
+        "VUL": "Tunc abiit unus de duodecim, qui dicebatur Judas Iscariotes, ad principes sacerdotum :",
         "LXX": "Τότε πορευθεὶς εἷς τῶν δώδεκα, ὁ λεγόμενος Ἰούδας Ἰσκαριώτης, πρὸς τοὺς ἀρχιερεῖς,",
         "SYN": "Тогда один из двенадцати, называемый Иуда Искариот, пошел к первосвященникам",
-        "BYZ": "Τότε πορευθεὶς εἷς τῶν δώδεκα, ὁ λεγόμενος Ἰούδας Ἰσκαριώτης, πρὸς τοὺς ἀρχιερεῖς,"
+        "BYZ": "Τότε πορευθεὶς εἷς τῶν δώδεκα, ὁ λεγόμενος Ἰούδας Ἰσκαριώτης, πρὸς τοὺς ἀρχιερεῖς,",
+        "NEO": "Alors l’un des Douze, appelé Judas Iscariote, alla trouver les Princes des prêtres,",
+        "NAB": "Then one of the Twelve, who was called Judas Iscar iot, went to the chief priests",
+        "VAT_ES": "Entonces uno de los Doce, llamado Judas Iscariote, fue a ver a los sumos sacerdotes",
+        "CEI": "Allora uno dei Dodici, chiamato Giuda Iscariota, andò dai sommi sacerdoti"
       }
     },
     "15": {
@@ -215,10 +271,14 @@
         "LXX": 15
       },
       "text": {
-        "VUL": "et ait illis: Quid vultis mihi dare, et ego vobis eum tradam ? At illi constituerunt ei triginta argenteos.",
+        "VUL": "et ait illis : Quid vultis mihi dare, et ego vobis eum tradam ? At illi constituerunt ei triginta argenteos.",
         "LXX": "εἶπεν, Τί θέλετέ μοι δοῦναι, κἀγὼ ὑμῖν παραδώσω αὐτόν; Οἱ δὲ ἔστησαν αὐτῷ τριάκοντα ἀργύρια,",
         "SYN": "и сказал: что вы дадите мне, и я вам предам Его? Они предложили ему тридцать сребренников;",
-        "BYZ": "εἶπεν, Τί θέλετέ μοι δοῦναι, κἀγὼ ὑμῖν παραδώσω αὐτόν; Οἱ δὲ ἔστησαν αὐτῷ τριάκοντα ἀργύρια,"
+        "BYZ": "εἶπεν, Τί θέλετέ μοι δοῦναι, κἀγὼ ὑμῖν παραδώσω αὐτόν; Οἱ δὲ ἔστησαν αὐτῷ τριάκοντα ἀργύρια,",
+        "NEO": "et leur* dit : « Que voulez-vous me donner, et je vous le livrerai ? » Et ils lui comptèrent trente pièces d’argent.+ 26:15 15. Trente pièces d’argent, trente sicles ; le sicle valait quatre drachmes, environ 3 fr. 60. C’était le prix d’un esclave (Exod. xxi, 32) ; Joseph avait été vendu une somme pareille à des marchands Ismaélites (comp. xxvii, 9).*",
+        "NAB": "and said, \"What are you willing to give me if I hand him over to you?\" They paid him thirty pieces of silver,",
+        "VAT_ES": "y les dijo: «&iquest;Cuánto me darán si se lo entrego?». Y resolvieron darle treinta monedas de plata.",
+        "CEI": "e disse: \"Quanto mi volete dare perché io ve lo consegni?\". E quelli gli fissarono trenta monete d'argento."
       }
     },
     "16": {
@@ -232,7 +292,11 @@
         "VUL": "Et exinde quærebat opportunitatem ut eum traderet.",
         "LXX": "καὶ ἀπὸ τότε ἐζήτει εὐκαιρίαν ἵνα αὐτὸν παραδῷ.",
         "SYN": "и с того времени он искал удобного случая предать Его.",
-        "BYZ": "καὶ ἀπὸ τότε ἐζήτει εὐκαιρίαν ἵνα αὐτὸν παραδῷ."
+        "BYZ": "καὶ ἀπὸ τότε ἐζήτει εὐκαιρίαν ἵνα αὐτὸν παραδῷ.",
+        "NEO": "Depuis ce moment, il cherchait une occasion favorable pour livrer Jésus.",
+        "NAB": "and from that time on he looked for an opportunity to hand him over.",
+        "VAT_ES": "Desde ese momento, Judas buscaba una ocasión favorable para entregarlo.",
+        "CEI": "Da quel momento cercava l'occasione propizia per consegnarlo."
       }
     },
     "17": {
@@ -243,10 +307,14 @@
         "LXX": 17
       },
       "text": {
-        "VUL": "Prima autem die azymorum accesserunt discipuli ad Jesum, dicentes: Ubi vis paremus tibi comedere Pascha ?",
+        "VUL": "Prima autem die azymorum accesserunt discipuli ad Jesum, dicentes : Ubi vis paremus tibi comedere Pascha ?",
         "LXX": "Τῇ δὲ πρώτῃ τῶν ἀζύμων προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ, λέγοντες αὐτῷ, Ποῦ θέλεις ἑτοιμάσομέν σοι φαγεῖν τὸ Πάσχα;",
         "SYN": "В первый же день опресночный приступили ученики к Иисусу и сказали Ему: где велишь нам приготовить Тебе пасху?",
-        "BYZ": "Τῇ δὲ πρώτῃ τῶν ἀζύμων προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ, λέγοντες αὐτῷ, Ποῦ θέλεις ἑτοιμάσομέν σοι φαγεῖν τὸ Πάσχα;"
+        "BYZ": "¶Τῇ δὲ πρώτῃ τῶν ἀζύμων προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ, λέγοντες αὐτῷ, Ποῦ θέλεις ἑτοιμάσομέν σοι φαγεῖν τὸ Πάσχα;",
+        "NEO": "Le premier jour des Azymes, les disciples vinrent trouver Jésus, et lui dirent : « Où veux-tu que nous préparions le repas pascal ? »+ 26:17 17. Marc, xiv, 12 ; Luc, xxii, 7.*",
+        "NAB": "On the first day of the Feast of Unleavened Bread, the disciples approached Jesus and said, \"Where do you want us to prepare for you to eat the Passover?\"",
+        "VAT_ES": "El primer día de los Acimos, los discípulos fueron a preguntar a Jesús: «&iquest;Dónde quieres que te preparemos la comida pascual?».",
+        "CEI": "Il primo giorno degli Azzimi, i discepoli si avvicinarono a Gesù e gli dissero: \"Dove vuoi che ti prepariamo, per mangiare la Pasqua?\"."
       }
     },
     "18": {
@@ -257,10 +325,14 @@
         "LXX": 18
       },
       "text": {
-        "VUL": "At Jesus dixit: Ite in civitatem ad quemdam, et dicite ei: Magister dicit: Tempus meum prope est, apud te facio Pascha cum discipulis meis.",
+        "VUL": "At Jesus dixit : Ite in civitatem ad quemdam, et dicite ei : Magister dicit : Tempus meum prope est, apud te facio Pascha cum discipulis meis.",
         "LXX": "Ὁ δὲ εἶπεν, Ὑπάγετε εἰς τὴν πόλιν πρὸς τὸν δεῖνα, καὶ εἴπατε αὐτῷ, Ὁ διδάσκαλος λέγει, Ὁ καιρός μου ἐγγύς ἐστιν· πρός σε ποιῶ τὸ Πάσχα μετὰ τῶν μαθητῶν μου.",
         "SYN": "Он сказал: пойдите в город к такому-то и скажите ему: Учитель говорит: время Мое близко; у тебя совершу пасху с учениками Моими.",
-        "BYZ": "Ὁ δὲ εἶπεν, Ὑπάγετε εἰς τὴν πόλιν πρὸς τὸν δεῖνα, καὶ εἴπατε αὐτῷ, Ὁ διδάσκαλος λέγει, Ὁ καιρός μου ἐγγύς ἐστιν· πρός σε ποιῶ τὸ Πάσχα μετὰ τῶν μαθητῶν μου."
+        "BYZ": "Ὁ δὲ εἶπεν, Ὑπάγετε εἰς τὴν πόλιν πρὸς τὸν δεῖνα, καὶ εἴπατε αὐτῷ, Ὁ διδάσκαλος λέγει, Ὁ καιρός μου ἐγγύς ἐστιν· πρός σε ποιῶ τὸ Πάσχα μετὰ τῶν μαθητῶν μου.",
+        "NEO": "Jésus leur répondit : « Allez à la ville chez un tel, et dites-lui : Le Maître te fait dire : Mon temps est proche, je ferai chez toi la Pâque avec mes disciples. »",
+        "NAB": "He said, \"Go into the city to a certain man and tell him, 'The teacher says, \"My appointed time draws near; in your house I shall celebrate the Passover with my disciples.\"'\"",
+        "VAT_ES": "El respondió: «Vayan a la ciudad, a la casa de tal persona, y díganle: «El Maestro dice: Se acerca mi hora, voy a celebrar la Pascua en tu casa con mis discípulos».",
+        "CEI": "Ed egli rispose: \"Andate in città, da un tale, e ditegli: Il Maestro ti manda a dire: Il mio tempo è vicino; farò la Pasqua da te con i miei discepoli\"."
       }
     },
     "19": {
@@ -274,7 +346,11 @@
         "VUL": "Et fecerunt discipuli sicut constituit illis Jesus, et paraverunt Pascha.",
         "LXX": "Καὶ ἐποίησαν οἱ μαθηταὶ ὡς συνέταξεν αὐτοῖς ὁ Ἰησοῦς, καὶ ἡτοίμασαν τὸ Πάσχα.",
         "SYN": "Ученики сделали, как повелел им Иисус, и приготовили пасху.",
-        "BYZ": "Καὶ ἐποίησαν οἱ μαθηταὶ ὡς συνέταξεν αὐτοῖς ὁ Ἰησοῦς, καὶ ἡτοίμασαν τὸ Πάσχα."
+        "BYZ": "Καὶ ἐποίησαν οἱ μαθηταὶ ὡς συνέταξεν αὐτοῖς ὁ Ἰησοῦς, καὶ ἡτοίμασαν τὸ Πάσχα.",
+        "NEO": "Les disciples firent ce que Jésus leur avait commandé, et ils préparèrent la Pâque.",
+        "NAB": "The disciples then did as Jesus had ordered, and prepared the Passover.",
+        "VAT_ES": "Ellos hicieron como Jesús les había ordenado y prepararon la Pascua.",
+        "CEI": "I discepoli fecero come aveva loro ordinato Gesù, e prepararono la Pasqua."
       }
     },
     "20": {
@@ -288,7 +364,11 @@
         "VUL": "Vespere autem facto, discumbebat cum duodecim discipulis suis.",
         "LXX": "Ὀψίας δὲ γενομένης ἀνέκειτο μετὰ τῶν δώδεκα.",
         "SYN": "Когда же настал вечер, Он возлег с двенадцатью учениками;",
-        "BYZ": "Ὀψίας δὲ γενομένης ἀνέκειτο μετὰ τῶν δώδεκα."
+        "BYZ": "Ὀψίας δὲ γενομένης ἀνέκειτο μετὰ τῶν δώδεκα.",
+        "NEO": "Le soir étant venu, il se mit à table avec les Douze+ 26:20 20. Marc, xiv, 17 ; Luc, xxii, 14.*.",
+        "NAB": "When it was evening, he reclined at table with the Twelve.",
+        "VAT_ES": "Al atardecer, estaba a la mesa con los Doce",
+        "CEI": "Venuta la sera, si mise a mensa con i Dodici."
       }
     },
     "21": {
@@ -299,10 +379,14 @@
         "LXX": 21
       },
       "text": {
-        "VUL": "Et edentibus illis, dixit: Amen dico vobis, quia unus vestrum me traditurus est.",
+        "VUL": "Et edentibus illis, dixit : Amen dico vobis, quia unus vestrum me traditurus est.",
         "LXX": "Καὶ ἐσθιόντων αὐτῶν εἶπεν, Ἀμὴν λέγω ὑμῖν ὅτι εἷς ἐξ ὑμῶν παραδώσει με.",
         "SYN": "и когда они ели, сказал: истинно говорю вам, что один из вас предаст Меня.",
-        "BYZ": "Καὶ ἐσθιόντων αὐτῶν εἶπεν, Ἀμὴν λέγω ὑμῖν ὅτι εἷς ἐξ ὑμῶν παραδώσει με."
+        "BYZ": "Καὶ ἐσθιόντων αὐτῶν εἶπεν, Ἀμὴν λέγω ὑμῖν ὅτι εἷς ἐξ ὑμῶν παραδώσει με.",
+        "NEO": "Pendant qu’ils mangeaient, il dit : « Je vous le dis en vérité, l’un de vous me trahira. »",
+        "NAB": "And while they were eating, he said, \"Amen, I say to you, one of you will betray me.\"",
+        "VAT_ES": "y, mientras comían, Jesús les dijo: «Les aseguro que uno de ustedes me entregará».",
+        "CEI": "Mentre mangiavano disse: \"In verità io vi dico, uno di voi mi tradirà\"."
       }
     },
     "22": {
@@ -313,10 +397,14 @@
         "LXX": 22
       },
       "text": {
-        "VUL": "Et contristati valde, cperunt singuli dicere: Numquid ego sum Domine ?",
+        "VUL": "Et contristati valde, cperunt singuli dicere : Numquid ego sum Domine ?",
         "LXX": "Καὶ λυπούμενοι σφόδρα ἤρξαντο λέγειν αὐτῷ ἕκαστος αὐτῶν, Μήτι ἐγώ εἰμι, κύριε;",
         "SYN": "Они весьма опечалились, и начали говорить Ему, каждый из них: не я ли, Господи?",
-        "BYZ": "Καὶ λυπούμενοι σφόδρα ἤρξαντο λέγειν αὐτῷ ἕκαστος αὐτῶν, Μήτι ἐγώ εἰμι, κύριε;"
+        "BYZ": "Καὶ λυπούμενοι σφόδρα ἤρξαντο λέγειν αὐτῷ ἕκαστος αὐτῶν, Μήτι ἐγώ εἰμι, κύριε;",
+        "NEO": "Ils en furent profondément attristés et chacun se mit à lui dire, : « Est-ce moi, Seigneur ? »",
+        "NAB": "Deeply distressed at this, they began to say to him one after another, \"Surely it is not I, Lord?\"",
+        "VAT_ES": "Profundamente apenados, ellos empezaron a preguntarle uno por uno: «&iquest;Seré yo, Señor?».",
+        "CEI": "Ed essi, addolorati profondamente, incominciarono ciascuno a domandargli: \"Sono forse io, Signore?\"."
       }
     },
     "23": {
@@ -327,10 +415,14 @@
         "LXX": 23
       },
       "text": {
-        "VUL": "At ipse respondens, ait: Qui intingit mecum manum in paropside, hic me tradet.",
+        "VUL": "At ipse respondens, ait : Qui intingit mecum manum in paropside, hic me tradet.",
         "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Ὁ ἐμβάψας μετ’ ἐμοῦ ἐν τῷ τρυβλίῳ τὴν χεῖρα, οὗτός με παραδώσει.",
         "SYN": "Он же сказал в ответ: опустивший со Мною руку в блюдо, этот предаст Меня;",
-        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Ὁ ἐμβάψας μετ’ ἐμοῦ ἐν τῷ τρυβλίῳ τὴν χεῖρα, οὗτός με παραδώσει."
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Ὁ ἐμβάψας μετ’ ἐμοῦ ἐν τῷ τρυβλίῳ τὴν χεῖρα, οὗτός με παραδώσει.",
+        "NEO": "Il répondit : « Celui qui a mis avec moi la main au plat, celui-là me trahira !+ 26:23 23. C’est-à-dire un de ceux qui mangent avec moi.*",
+        "NAB": "He said in reply, \"He who has dipped his hand into the dish with me is the one who will betray me.",
+        "VAT_ES": "El respondió: «El que acaba de servirse de la misma fuente que yo, ese me va a entregar.",
+        "CEI": "Ed egli rispose: \"Colui che ha intinto con me la mano nel piatto, quello mi tradirà."
       }
     },
     "24": {
@@ -341,10 +433,14 @@
         "LXX": 24
       },
       "text": {
-        "VUL": "Filius quidem hominis vadit, sicut scriptum est de illo: væ autem homini illi, per quem Filius hominis tradetur ! bonum erat ei, si natus non fuisset homo ille.",
+        "VUL": "Filius quidem hominis vadit, sicut scriptum est de illo : væ autem homini illi, per quem Filius hominis tradetur ! bonum erat ei, si natus non fuisset homo ille.",
         "LXX": "Ὁ μὲν υἱὸς τοῦ ἀνθρώπου ὑπάγει, καθὼς γέγραπται περὶ αὐτοῦ· οὐαὶ δὲ τῷ ἀνθρώπῳ ἐκείνῳ δι’ οὗ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται· καλὸν ἦν αὐτῷ εἰ οὐκ ἐγεννήθη ὁ ἄνθρωπος ἐκεῖνος.",
         "SYN": "впрочем Сын Человеческий идет, как писано о Нем, но горе тому человеку, которым Сын Человеческий предается: лучше было бы этому человеку не родиться.",
-        "BYZ": "Ὁ μὲν υἱὸς τοῦ ἀνθρώπου ὑπάγει, καθὼς γέγραπται περὶ αὐτοῦ· οὐαὶ δὲ τῷ ἀνθρώπῳ ἐκείνῳ δι’ οὗ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται· καλὸν ἦν αὐτῷ εἰ οὐκ ἐγεννήθη ὁ ἄνθρωπος ἐκεῖνος."
+        "BYZ": "Ὁ μὲν υἱὸς τοῦ ἀνθρώπου ὑπάγει, καθὼς γέγραπται περὶ αὐτοῦ· οὐαὶ δὲ τῷ ἀνθρώπῳ ἐκείνῳ δι’ οὗ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται· καλὸν ἦν αὐτῷ εἰ οὐκ ἐγεννήθη ὁ ἄνθρωπος ἐκεῖνος.",
+        "NEO": "Le Fils de l’homme s’en va selon ce qui est écrit de lui ; mais malheur à l’homme par qui le Fils de l’homme est trahi ! Mieux vaudrait pour lui que cet homme-là ne fût pas né. »",
+        "NAB": "The Son of Man indeed goes, as it is written of him, but woe to that man by whom the Son of Man is betrayed. It would be better for that man if he had never been born.\"",
+        "VAT_ES": "El Hijo del hombre se va, como está escrito de él, pero &iexcl;ay de aquel por quien el Hijo del hombre será entregado: más le valdría no haber nacido!».",
+        "CEI": "Il Figlio dell'uomo se ne va, come è scritto di lui, ma guai a colui dal quale il Figlio dell'uomo viene tradito; sarebbe meglio per quell'uomo se non fosse mai nato!\"."
       }
     },
     "25": {
@@ -355,10 +451,14 @@
         "LXX": 25
       },
       "text": {
-        "VUL": "Respondens autem Judas, qui tradidit eum, dixit: Numquid ego sum Rabbi ? Ait illi: Tu dixisti.",
+        "VUL": "Respondens autem Judas, qui tradidit eum, dixit : Numquid ego sum Rabbi ? Ait illi : Tu dixisti.",
         "LXX": "Ἀποκριθεὶς δὲ Ἰούδας ὁ παραδιδοὺς αὐτὸν εἶπεν, Μήτι ἐγώ εἰμι, ῥαββί; Λέγει αὐτῷ, Σὺ εἶπας.",
-        "SYN": "При сем и Иуда, предающий Его, сказал: не я ли, Равви? Иисус говорит ему: ты сказал.",
-        "BYZ": "Ἀποκριθεὶς δὲ Ἰούδας ὁ παραδιδοὺς αὐτὸν εἶπεν, Μήτι ἐγώ εἰμι, ῥαββί; Λέγει αὐτῷ, Σὺ εἶπας."
+        "SYN": "При сем и Иуда, предающий Его, сказал: не я ли, Равви? _Иисус_ говорит ему: ты сказал.",
+        "BYZ": "Ἀποκριθεὶς δὲ Ἰούδας ὁ παραδιδοὺς αὐτὸν εἶπεν, Μήτι ἐγώ εἰμι, ῥαββί; Λέγει αὐτῷ, Σὺ εἶπας.",
+        "NEO": "Judas, qui le trahissait, prit la parole et dit : « Est-ce moi, Maître ? » — « Tu l’as dit, » répondit Jésus.",
+        "NAB": "Then Judas, his betrayer, said in reply, \"Surely it is not I, Rabbi?\" He answered, \"You have said so.\"",
+        "VAT_ES": "Judas, el que lo iba a entregar, le preguntó: «&iquest;Seré yo, Maestro?». «Tú lo has dicho», le respondió Jesús.",
+        "CEI": "Giuda, il traditore, disse: \"Rabbì, sono forse io?\". Gli rispose: \"Tu l'hai detto\"."
       }
     },
     "26": {
@@ -369,10 +469,14 @@
         "LXX": 26
       },
       "text": {
-        "VUL": "Cnantibus autem eis, accepit Jesus panem, et benedixit, ac fregit, deditque discipulis suis, et ait: Accipite, et comedite: hoc est corpus meum.",
+        "VUL": "Cnantibus autem eis, accepit Jesus panem, et benedixit, ac fregit, deditque discipulis suis, et ait : Accipite, et comedite : hoc est corpus meum.",
         "LXX": "Ἐσθιόντων δὲ αὐτῶν, λαβὼν ὁ Ἰησοῦς τὸν ἄρτον, καὶ εὐχαριστήσας ἔκλασεν καὶ ἐδίδου τοῖς μαθηταῖς, καὶ εἶπεν, Λάβετε, φάγετε· τοῦτό ἐστιν τὸ σῶμά μου.",
         "SYN": "И когда они ели, Иисус взял хлеб и, благословив, преломил и, раздавая ученикам, сказал: приимите, ядите: сие есть Тело Мое.",
-        "BYZ": "Ἐσθιόντων δὲ αὐτῶν, λαβὼν ὁ Ἰησοῦς τὸν ἄρτον, καὶ εὐχαριστήσας ἔκλασεν καὶ ἐδίδου τοῖς μαθηταῖς, καὶ εἶπεν, Λάβετε, φάγετε· τοῦτό ἐστιν τὸ σῶμά μου."
+        "BYZ": "Ἐσθιόντων δὲ αὐτῶν, λαβὼν ὁ Ἰησοῦς τὸν ἄρτον, καὶ εὐχαριστήσας ἔκλασεν καὶ ἐδίδου τοῖς μαθηταῖς, καὶ εἶπεν, Λάβετε, φάγετε· τοῦτό ἐστιν τὸ σῶμά μου.",
+        "NEO": "Pendant le repas, Jésus prit le pain ; et, ayant prononcé une bénédiction, il le rompit et le donna à ses disciples, en disant : « Prenez et mangez, ceci est mon corps. »+ 26:26 26. I Cor. xi, 25.*",
+        "NAB": "While they were eating, Jesus took bread, said the blessing, broke it, and giving it to his disciples said, \"Take and eat; this is my body.\"",
+        "VAT_ES": "Mientras comían, Jesús tomó el pan, pronunció la bendición, lo partió y lo dio a sus discípulos, diciendo: «Tomen y coman, esto es mi Cuerpo».",
+        "CEI": "Ora, mentre essi mangiavano, Gesù prese il pane e, pronunziata la benedizione, lo spezzò e lo diede ai discepoli dicendo: \"Prendete e mangiate; questo è il mio corpo\"."
       }
     },
     "27": {
@@ -383,10 +487,14 @@
         "LXX": 27
       },
       "text": {
-        "VUL": "Et accipiens calicem, gratias egit: et dedit illis, dicens: Bibite ex hoc omnes.",
+        "VUL": "Et accipiens calicem, gratias egit : et dedit illis, dicens : Bibite ex hoc omnes.",
         "LXX": "Καὶ λαβὼν τὸ ποτήριον καὶ εὐχαριστήσας ἔδωκεν αὐτοῖς, λέγων, Πίετε ἐξ αὐτοῦ πάντες·",
         "SYN": "И, взяв чашу и благодарив, подал им и сказал: пейте из нее все,",
-        "BYZ": "Καὶ λαβὼν τὸ ποτήριον καὶ εὐχαριστήσας ἔδωκεν αὐτοῖς, λέγων, Πίετε ἐξ αὐτοῦ πάντες·"
+        "BYZ": "Καὶ λαβὼν τὸ ποτήριον καὶ εὐχαριστήσας ἔδωκεν αὐτοῖς, λέγων, Πίετε ἐξ αὐτοῦ πάντες·",
+        "NEO": "Il prit ensuite la coupe, et, ayant rendu grâces, il la leur donna en disant : « Buvez-en tous :",
+        "NAB": "Then he took a cup, gave thanks, and gave it to them, saying, \"Drink from it, all of you,",
+        "VAT_ES": "Después tomó una copa, dio gracias y se la entregó, diciendo: «Beban todos de ella,",
+        "CEI": "Poi prese il calice e, dopo aver reso grazie, lo diede loro, dicendo: \"Bevetene tutti,"
       }
     },
     "28": {
@@ -400,7 +508,11 @@
         "VUL": "Hic est enim sanguis meus novi testamenti, qui pro multis effundetur in remissionem peccatorum.",
         "LXX": "τοῦτο γάρ ἐστιν τὸ αἷμά μου, τὸ τῆς καινῆς διαθήκης, τὸ περὶ πολλῶν ἐκχυνόμενον εἰς ἄφεσιν ἁμαρτιῶν.",
         "SYN": "ибо сие есть Кровь Моя Нового Завета, за многих изливаемая во оставление грехов.",
-        "BYZ": "τοῦτο γάρ ἐστιν τὸ αἷμά μου, τὸ τῆς καινῆς διαθήκης, τὸ περὶ πολλῶν ἐκχυνόμενον εἰς ἄφεσιν ἁμαρτιῶν."
+        "BYZ": "τοῦτο γάρ ἐστιν τὸ αἷμά μου, τὸ τῆς καινῆς διαθήκης, τὸ περὶ πολλῶν ἐκχυνόμενον εἰς ἄφεσιν ἁμαρτιῶν.",
+        "NEO": "car ceci est mon sang, le sang* de la nouvelle alliance, répandu pour la multitude en rémission des péchés+ 26:28 28. L’ancienne alliance fut scellée par le sang (Exod. xxiv, 5-8), de même la nouvelle alliance sera conclue, scellée et confirmée par mon sang.*.",
+        "NAB": "for this is my blood of the covenant, which will be shed on behalf of many for the forgiveness of sins.",
+        "VAT_ES": "porque esta es mi Sangre, la Sangre de la Alianza, que se derrama por muchos para la remisión de los pecados.",
+        "CEI": "perché questo è il mio sangue dell'alleanza, versato per molti, in remissione dei peccati."
       }
     },
     "29": {
@@ -411,10 +523,14 @@
         "LXX": 29
       },
       "text": {
-        "VUL": "Dico autem vobis: non bibam amodo de hoc genimine vitis usque in diem illum, cum illud bibam vobiscum novum in regno Patris mei.",
+        "VUL": "Dico autem vobis : non bibam amodo de hoc genimine vitis usque in diem illum, cum illud bibam vobiscum novum in regno Patris mei.",
         "LXX": "Λέγω δὲ ὑμῖν ὅτι οὐ μὴ πίω ἀπ’ ἄρτι ἐκ τούτου τοῦ γεννήματος τῆς ἀμπέλου, ἕως τῆς ἡμέρας ἐκείνης ὅταν αὐτὸ πίνω μεθ’ ὑμῶν καινὸν ἐν τῇ βασιλείᾳ τοῦ πατρός μου.",
-        "SYN": "Сказываю же вам, что отныне не буду пить от плода сего виноградного до того дня, когда буду пить с вами новое вино в Царстве Отца Моего.",
-        "BYZ": "Λέγω δὲ ὑμῖν ὅτι οὐ μὴ πίω ἀπ’ ἄρτι ἐκ τούτου τοῦ γεννήματος τῆς ἀμπέλου, ἕως τῆς ἡμέρας ἐκείνης ὅταν αὐτὸ πίνω μεθ’ ὑμῶν καινὸν ἐν τῇ βασιλείᾳ τοῦ πατρός μου."
+        "SYN": "Сказываю же вам, что отныне не буду пить от плода сего виноградного до того дня, когда буду пить с вами новое _вино_ в Царстве Отца Моего.",
+        "BYZ": "Λέγω δὲ ὑμῖν ὅτι οὐ μὴ πίω ἀπ’ ἄρτι ἐκ τούτου τοῦ γεννήματος τῆς ἀμπέλου, ἕως τῆς ἡμέρας ἐκείνης ὅταν αὐτὸ πίνω μεθ’ ὑμῶν καινὸν ἐν τῇ βασιλείᾳ τοῦ πατρός μου.",
+        "NEO": "Je vous le dis, je ne boirai plus désormais de ce fruit de la vigne, jusqu’au jour où je le boirai nouveau avec vous dans le royaume de mon Père. »",
+        "NAB": "I tell you, from now on I shall not drink this fruit of the vine until the day when I drink it with you new in the kingdom of my Father.\"",
+        "VAT_ES": "Les aseguro que desde ahora no beberé más de este fruto de la vid, hasta el día en que beba con ustedes el vino nuevo en el Reino de mi Padre».",
+        "CEI": "Io vi dico che da ora non berrò più di questo frutto della vite fino al giorno in cui lo berrò nuovo con voi nel regno del Padre mio\"."
       }
     },
     "30": {
@@ -428,7 +544,11 @@
         "VUL": "Et hymno dicto, exierunt in montem Oliveti.",
         "LXX": "Καὶ ὑμνήσαντες ἐξῆλθον εἰς τὸ ὄρος τῶν Ἐλαιῶν.",
         "SYN": "И, воспев, пошли на гору Елеонскую.",
-        "BYZ": "Καὶ ὑμνήσαντες ἐξῆλθον εἰς τὸ ὄρος τῶν Ἐλαιῶν."
+        "BYZ": "¶Καὶ ὑμνήσαντες ἐξῆλθον εἰς τὸ ὄρος τῶν Ἐλαιῶν.",
+        "NEO": "Après le chant de l’hymne+ 26:30 30. L’hymne, le \\+qt Hallil\\+qt*. Ps. cxiii à cxviii (\\+qt héb\\+qt*.).*, ils s’en allèrent au mont des Oliviers.",
+        "NAB": "Then, after singing a hymn, they went out to the Mount of Olives.",
+        "VAT_ES": "Después del canto de los Salmos, salieron hacia el monto de los Olivos.",
+        "CEI": "E dopo aver cantato l'inno, uscirono verso il monte degli Ulivi."
       }
     },
     "31": {
@@ -439,10 +559,14 @@
         "LXX": 31
       },
       "text": {
-        "VUL": "Tunc dicit illis Jesus: Omnes vos scandalum patiemini in me in ista nocte. Scriptum est enim: Percutiam pastorem, et dispergentur oves gregis.",
+        "VUL": "Tunc dicit illis Jesus : Omnes vos scandalum patiemini in me in ista nocte. Scriptum est enim : Percutiam pastorem, et dispergentur oves gregis.",
         "LXX": "Τότε λέγει αὐτοῖς ὁ Ἰησοῦς, Πάντες ὑμεῖς σκανδαλισθήσεσθε ἐν ἐμοὶ ἐν τῇ νυκτὶ ταύτῃ· γέγραπται γάρ, Πατάξω τὸν ποιμένα, καὶ διασκορπισθήσεται τὰ πρόβατα τῆς ποίμνης.",
         "SYN": "Тогда говорит им Иисус: все вы соблазнитесь о Мне в эту ночь, ибо написано: поражу пастыря, и рассеются овцы стада;",
-        "BYZ": "Τότε λέγει αὐτοῖς ὁ Ἰησοῦς, Πάντες ὑμεῖς σκανδαλισθήσεσθε ἐν ἐμοὶ ἐν τῇ νυκτὶ ταύτῃ· γέγραπται γάρ, Πατάξω τὸν ποιμένα, καὶ διασκορπισθήσεται τὰ πρόβατα τῆς ποίμνης."
+        "BYZ": "¶Τότε λέγει αὐτοῖς ὁ Ἰησοῦς, Πάντες ὑμεῖς σκανδαλισθήσεσθε ἐν ἐμοὶ ἐν τῇ νυκτὶ ταύτῃ· γέγραπται γάρ, Πατάξω τὸν ποιμένα, καὶ διασκορπισθήσεται τὰ πρόβατα τῆς ποίμνης.",
+        "NEO": "Alors Jésus leur dit : « Je vous serai à tous, cette nuit, une occasion de chute ; car il est écrit : \\+w Je|strong=\"G1473\"\\+w* \\+w frapperai|strong=\"G3960\"\\+w* \\+w le|strong=\"G2532\"\\+w* \\+w pasteur|strong=\"G4166\"\\+w*, \\+w et|strong=\"G2532\"\\+w* \\+w les|strong=\"G2532\"\\+w* \\+w brebis|strong=\"G4263\"\\+w* \\+w du|strong=\"G2532\"\\+w* \\+w troupeau|strong=\"G4167\"\\+w* \\+w seront|strong=\"G3778\"\\+w* \\+w dispersées|strong=\"G1287\"\\+w**.+ 26:31 31. Voy Zach. xiii, 7.*",
+        "NAB": "Then Jesus said to them, \"This night all of you will have your faith in me shaken, for it is written: 'I will strike the shepherd, and the sheep of the flock will be dispersed';",
+        "VAT_ES": "Entonces Jesús les dijo: «Esta misma noche, ustedes se van a escandalizar a causa de mí. Porque dice la Escritura: Heriré al pastor, y se dispersarán las ovejas del rebaño.",
+        "CEI": "Allora Gesù disse loro: \"Voi tutti vi scandalizzerete per causa mia in questa notte. Sta scritto infatti: Percuoterò il pastore e saranno disperse le pecore del gregge,"
       }
     },
     "32": {
@@ -456,7 +580,11 @@
         "VUL": "Postquam autem resurrexero, præcedam vos in Galilæam.",
         "LXX": "Μετὰ δὲ τὸ ἐγερθῆναί με, προάξω ὑμᾶς εἰς τὴν Γαλιλαίαν.",
         "SYN": "по воскресении же Моем предварю вас в Галилее.",
-        "BYZ": "Μετὰ δὲ τὸ ἐγερθῆναί με, προάξω ὑμᾶς εἰς τὴν Γαλιλαίαν."
+        "BYZ": "Μετὰ δὲ τὸ ἐγερθῆναί με, προάξω ὑμᾶς εἰς τὴν Γαλιλαίαν.",
+        "NEO": "Mais après que je serai ressuscité, je vous précéderai+ 26:32 32. Je vous précéderai, c’est-à-dire je me mettrai à votre tête, comme le pasteur marche en avant de son troupeau.* en Galilée. »",
+        "NAB": "but after I have been raised up, I shall go before you to Galilee.\"",
+        "VAT_ES": "Pero después que yo resucite, iré antes que ustedes a Galilea».",
+        "CEI": "ma dopo la mia risurrezione, vi precederò in Galilea\"."
       }
     },
     "33": {
@@ -467,10 +595,14 @@
         "LXX": 33
       },
       "text": {
-        "VUL": "Respondens autem Petrus, ait illi: Et si omnes scandalizati fuerint in te, ego numquam scandalizabor.",
+        "VUL": "Respondens autem Petrus, ait illi : Et si omnes scandalizati fuerint in te, ego numquam scandalizabor.",
         "LXX": "Ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ, Εἰ πάντες σκανδαλισθήσονται ἐν σοί, ἐγὼ δὲ οὐδέποτε σκανδαλισθήσομαι.",
         "SYN": "Петр сказал Ему в ответ: если и все соблазнятся о Тебе, я никогда не соблазнюсь.",
-        "BYZ": "Ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ, Εἰ πάντες σκανδαλισθήσονται ἐν σοί, ἐγὼ δὲ οὐδέποτε σκανδαλισθήσομαι."
+        "BYZ": "Ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ, Εἰ πάντες σκανδαλισθήσονται ἐν σοί, ἐγὼ δὲ οὐδέποτε σκανδαλισθήσομαι.",
+        "NEO": "Pierre, prenant la parole, lui dit : « Quand tu serais pour tous une occasion de chute, tu ne le seras jamais pour moi. »",
+        "NAB": "Peter said to him in reply, \"Though all may have their faith in you shaken, mine will never be.\"",
+        "VAT_ES": "Pedro, tomando la palabra, le dijo: «Aunque todos se escandalicen por tu causa, yo no me escandalizaré jamás».",
+        "CEI": "E Pietro gli disse: \"Anche se tutti si scandalizzassero di te, io non mi scandalizzerò mai\"."
       }
     },
     "34": {
@@ -481,10 +613,14 @@
         "LXX": 34
       },
       "text": {
-        "VUL": "Ait illi Jesus: Amen dico tibi, quia in hac nocte, antequam gallus cantet, ter me negabis.",
+        "VUL": "Ait illi Jesus : Amen dico tibi, quia in hac nocte, antequam gallus cantet, ter me negabis.",
         "LXX": "Ἔφη αὐτῷ ὁ Ἰησοῦς, Ἀμὴν λέγω σοι ὅτι ἐν ταύτῃ τῇ νυκτί, πρὶν ἀλέκτορα φωνῆσαι, τρὶς ἀπαρνήσῃ με.",
         "SYN": "Иисус сказал ему: истинно говорю тебе, что в эту ночь, прежде нежели пропоет петух, трижды отречешься от Меня.",
-        "BYZ": "Ἔφη αὐτῷ ὁ Ἰησοῦς, Ἀμὴν λέγω σοι ὅτι ἐν ταύτῃ τῇ νυκτί, πρὶν ἀλέκτορα φωνῆσαι, τρὶς ἀπαρνήσῃ με."
+        "BYZ": "Ἔφη αὐτῷ ὁ Ἰησοῦς, Ἀμὴν λέγω σοι ὅτι ἐν ταύτῃ τῇ νυκτί, πρὶν ἀλέκτορα φωνῆσαι, τρὶς ἀπαρνήσῃ με.",
+        "NEO": "Jésus lui dit : « Je te le dis en vérité, cette nuit-même, avant que le coq chante, tu me renieras trois fois. »",
+        "NAB": "Jesus said to him, \"Amen, I say to you, this very night before the cock crows, you will deny me three times.\"",
+        "VAT_ES": "Jesús le respondió: «Te aseguro que esta misma noche, antes que cante el gallo, me habrás negado tres veces».",
+        "CEI": "Gli disse Gesù: \"In verità ti dico: questa notte stessa, prima che il gallo canti, mi rinnegherai tre volte\"."
       }
     },
     "35": {
@@ -495,10 +631,14 @@
         "LXX": 35
       },
       "text": {
-        "VUL": "Ait illi Petrus: Etiamsi oportuerit me mori tecum, non te negabo. Similiter et omnes discipuli dixerunt.",
+        "VUL": "Ait illi Petrus : Etiamsi oportuerit me mori tecum, non te negabo. Similiter et omnes discipuli dixerunt.",
         "LXX": "Λέγει αὐτῷ ὁ Πέτρος, Κἂν δέῃ με σὺν σοὶ ἀποθανεῖν, οὐ μή σε ἀπαρνήσωμαι. Ὁμοίως δὲ καὶ πάντες οἱ μαθηταὶ εἶπον.",
         "SYN": "Говорит Ему Петр: хотя бы надлежало мне и умереть с Тобою, не отрекусь от Тебя. Подобное говорили и все ученики.",
-        "BYZ": "Λέγει αὐτῷ ὁ Πέτρος, Κἂν δέῃ με σὺν σοὶ ἀποθανεῖν, οὐ μή σε ἀπαρνήσωμαι. Ὁμοίως δὲ καὶ πάντες οἱ μαθηταὶ εἶπον."
+        "BYZ": "Λέγει αὐτῷ ὁ Πέτρος, Κἂν δέῃ με σὺν σοὶ ἀποθανεῖν, οὐ μή σε ἀπαρνήσωμαι. Ὁμοίως δὲ καὶ πάντες οἱ μαθηταὶ εἶπον.",
+        "NEO": "Pierre lui répondit : « Quand il me faudrait mourir avec toi, je ne te renierai pas. » Et tous les autres disciples dirent de même.",
+        "NAB": "Peter said to him, \"Even though I should have to die with you, I will not deny you.\" And all the disciples spoke likewise.",
+        "VAT_ES": "Pedro le dijo: «Aunque tenga que morir contigo, jamás te negaré». Y todos los discípulos dijeron lo mismo.",
+        "CEI": "E Pietro gli rispose: \"Anche se dovessi morire con te, non ti rinnegherò\". Lo stesso dissero tutti gli altri discepoli."
       }
     },
     "36": {
@@ -509,10 +649,14 @@
         "LXX": 36
       },
       "text": {
-        "VUL": "Tunc venit Jesus cum illis in villam, quæ dicitur Gethsemani, et dixit discipulis suis: Sedete hic donec vadam illuc, et orem.",
+        "VUL": "Tunc venit Jesus cum illis in villam, quæ dicitur Gethsemani, et dixit discipulis suis : Sedete hic donec vadam illuc, et orem.",
         "LXX": "Τότε ἔρχεται μετ’ αὐτῶν ὁ Ἰησοῦς εἰς χωρίον λεγόμενον Γεθσημανῆ, καὶ λέγει τοῖς μαθηταῖς, Καθίσατε αὐτοῦ, ἕως οὗ ἀπελθὼν προσεύξωμαι ἐκεῖ.",
         "SYN": "Потом приходит с ними Иисус на место, называемое Гефсимания, и говорит ученикам: посидите тут, пока Я пойду, помолюсь там.",
-        "BYZ": "Τότε ἔρχεται μετ’ αὐτῶν ὁ Ἰησοῦς εἰς χωρίον λεγόμενον Γεθσημανῆ, καὶ λέγει τοῖς μαθηταῖς, Καθίσατε αὐτοῦ, ἕως οὗ ἀπελθὼν προσεύξωμαι ἐκεῖ."
+        "BYZ": "¶Τότε ἔρχεται μετ’ αὐτῶν ὁ Ἰησοῦς εἰς χωρίον λεγόμενον Γεθσημανῆ, καὶ λέγει τοῖς μαθηταῖς, Καθίσατε αὐτοῦ, ἕως οὗ ἀπελθὼν προσεύξωμαι ἐκεῖ.",
+        "NEO": "Alors Jésus arriva avec eux dans un domaine appelé Gethsémani, et il dit à ses disciples : « Asseyez-vous ici, pendant que je m’éloignerai pour prier. »+ 26:36 36. Marc, xiv, 32 ; Luc, xxii, 39 ; Jean, xviii, 1.*",
+        "NAB": "Then Jesus came with them to a place called Gethsemane, and he said to his disciples, \"Sit here while I go over there and pray.\"",
+        "VAT_ES": "Cuando Jesús llegó con sus discípulos a una propiedad llamada Getsemaní, les dijo: «Quédense aquí, mientras yo voy allí a orar».",
+        "CEI": "Allora Gesù andò con loro in un podere, chiamato Getsèmani, e disse ai discepoli: \"Sedetevi qui, mentre io vado là a pregare\"."
       }
     },
     "37": {
@@ -526,7 +670,11 @@
         "VUL": "Et assumpto Petro, et duobus filiis Zebedæi, cpit contristari et mstus esse.",
         "LXX": "Καὶ παραλαβὼν τὸν Πέτρον καὶ τοὺς δύο υἱοὺς Ζεβεδαίου, ἤρξατο λυπεῖσθαι καὶ ἀδημονεῖν.",
         "SYN": "И, взяв с Собою Петра и обоих сыновей Зеведеевых, начал скорбеть и тосковать.",
-        "BYZ": "Καὶ παραλαβὼν τὸν Πέτρον καὶ τοὺς δύο υἱοὺς Ζεβεδαίου, ἤρξατο λυπεῖσθαι καὶ ἀδημονεῖν."
+        "BYZ": "Καὶ παραλαβὼν τὸν Πέτρον καὶ τοὺς δύο υἱοὺς Ζεβεδαίου, ἤρξατο λυπεῖσθαι καὶ ἀδημονεῖν.",
+        "NEO": "Ayant pris avec lui Pierre et les deux fils de Zébédée, il commença à éprouver de la tristesse et de l’angoisse.",
+        "NAB": "He took along Peter and the two sons of Zebedee, and began to feel sorrow and distress.",
+        "VAT_ES": "Y llevando con él a Pedro y a los dos hijos de Zebedeo, comenzó a entristecerse y a angustiarse.",
+        "CEI": "E presi con sé Pietro e i due figli di Zebedèo, cominciò a provare tristezza e angoscia."
       }
     },
     "38": {
@@ -537,10 +685,14 @@
         "LXX": 38
       },
       "text": {
-        "VUL": "Tunc ait illis: Tristis est anima mea usque ad mortem: sustinete hic, et vigilate mecum.",
+        "VUL": "Tunc ait illis : Tristis est anima mea usque ad mortem : sustinete hic, et vigilate mecum.",
         "LXX": "Τότε λέγει αὐτοῖς ὁ Ἰησοῦς, Περίλυπός ἐστιν ἡ ψυχή μου ἕως θανάτου· μείνατε ὧδε καὶ γρηγορεῖτε μετ’ ἐμοῦ.",
         "SYN": "Тогда говорит им Иисус: душа Моя скорбит смертельно; побудьте здесь и бодрствуйте со Мною.",
-        "BYZ": "Τότε λέγει αὐτοῖς ὁ Ἰησοῦς, Περίλυπός ἐστιν ἡ ψυχή μου ἕως θανάτου· μείνατε ὧδε καὶ γρηγορεῖτε μετ’ ἐμοῦ."
+        "BYZ": "Τότε λέγει αὐτοῖς ὁ Ἰησοῦς, Περίλυπός ἐστιν ἡ ψυχή μου ἕως θανάτου· μείνατε ὧδε καὶ γρηγορεῖτε μετ’ ἐμοῦ.",
+        "NEO": "Et il leur dit : « Mon âme est triste jusqu’à la mort ; demeurez ici et veillez avec moi. »",
+        "NAB": "Then he said to them, \"My soul is sorrowful even to death. Remain here and keep watch with me.\"",
+        "VAT_ES": "Entonces les dijo: «Mi alma siente una tristeza de muerte. Quédense aquí, velando conmigo».",
+        "CEI": "Disse loro: \"La mia anima è triste fino alla morte; restate qui e vegliate con me\"."
       }
     },
     "39": {
@@ -551,10 +703,14 @@
         "LXX": 39
       },
       "text": {
-        "VUL": "Et progressus pusillum, procidit in faciem suam, orans, et dicens: Pater mi, si possibile est, transeat a me calix iste: verumtamen non sicut ego volo, sed sicut tu.",
+        "VUL": "Et progressus pusillum, procidit in faciem suam, orans, et dicens : Pater mi, si possibile est, transeat a me calix iste : verumtamen non sicut ego volo, sed sicut tu.",
         "LXX": "Καὶ προσελθὼν μικρόν, ἔπεσεν ἐπὶ πρόσωπον αὐτοῦ προσευχόμενος καὶ λέγων, Πάτερ μου, εἰ δυνατόν ἐστιν, παρελθέτω ἀπ’ ἐμοῦ τὸ ποτήριον τοῦτο· πλὴν οὐχ ὡς ἐγὼ θέλω, ἀλλ’ ὡς σύ.",
         "SYN": "И, отойдя немного, пал на лице Свое, молился и говорил: Отче Мой! если возможно, да минует Меня чаша сия; впрочем не как Я хочу, но как Ты.",
-        "BYZ": "Καὶ προσελθὼν μικρόν, ἔπεσεν ἐπὶ πρόσωπον αὐτοῦ προσευχόμενος καὶ λέγων, Πάτερ μου, εἰ δυνατόν ἐστιν, παρελθέτω ἀπ’ ἐμοῦ τὸ ποτήριον τοῦτο· πλὴν οὐχ ὡς ἐγὼ θέλω, ἀλλ’ ὡς σύ."
+        "BYZ": "Καὶ προσελθὼν μικρόν, ἔπεσεν ἐπὶ πρόσωπον αὐτοῦ προσευχόμενος καὶ λέγων, Πάτερ μου, εἰ δυνατόν ἐστιν, παρελθέτω ἀπ’ ἐμοῦ τὸ ποτήριον τοῦτο· πλὴν οὐχ ὡς ἐγὼ θέλω, ἀλλ’ ὡς σύ.",
+        "NEO": "Et s’étant un peu avancé, il se prosterna la face contre terre, priant et disant : « Mon Père, s’il est possible, que ce calice passe loin de moi ! Cependant, non pas comme je veux, mais comme tu veux. »",
+        "NAB": "He advanced a little and fell prostrate in prayer, saying, \"My Father, if it is possible, let this cup pass from me; yet, not as I will, but as you will.\"",
+        "VAT_ES": "Y adelantándose un poco, cayó con el rostro en tierra, orando así: «Padre mío, si es posible, que pase lejos de mí este cáliz, pero no se haga mi voluntad, sino la tuya».",
+        "CEI": "E avanzatosi un poco, si prostrò con la faccia a terra e pregava dicendo: \"Padre mio, se è possibile, passi da me questo calice! Però non come voglio io, ma come vuoi tu!\"."
       }
     },
     "40": {
@@ -565,10 +721,14 @@
         "LXX": 40
       },
       "text": {
-        "VUL": "Et venit ad discipulos suos, et invenit eos dormientes, et dicit Petro: Sic non potuistis una hora vigilare mecum ?",
+        "VUL": "Et venit ad discipulos suos, et invenit eos dormientes, et dicit Petro : Sic non potuistis una hora vigilare mecum ?",
         "LXX": "Καὶ ἔρχεται πρὸς τοὺς μαθητὰς καὶ εὑρίσκει αὐτοὺς καθεύδοντας, καὶ λέγει τῷ Πέτρῳ, Οὕτως οὐκ ἰσχύσατε μίαν ὥραν γρηγορῆσαι μετ’ ἐμοῦ;",
         "SYN": "И приходит к ученикам и находит их спящими, и говорит Петру: так ли не могли вы один час бодрствовать со Мною?",
-        "BYZ": "Καὶ ἔρχεται πρὸς τοὺς μαθητὰς καὶ εὑρίσκει αὐτοὺς καθεύδοντας, καὶ λέγει τῷ Πέτρῳ, Οὕτως οὐκ ἰσχύσατε μίαν ὥραν γρηγορῆσαι μετ’ ἐμοῦ;"
+        "BYZ": "Καὶ ἔρχεται πρὸς τοὺς μαθητὰς καὶ εὑρίσκει αὐτοὺς καθεύδοντας, καὶ λέγει τῷ Πέτρῳ, Οὕτως οὐκ ἰσχύσατε μίαν ὥραν γρηγορῆσαι μετ’ ἐμοῦ;",
+        "NEO": "Il vint ensuite à ses disciples, et, les trouvant endormis, il dit à Pierre : « Ainsi, vous n’avez pu veiller une heure avec moi !",
+        "NAB": "When he returned to his disciples he found them asleep. He said to Peter, \"So you could not keep watch with me for one hour?",
+        "VAT_ES": "Después volvió junto a sus discípulos y los encontró durmiendo. Jesús dijo a Pedro: «&iquest;Es posible que no hayan podido quedarse despiertos conmigo, ni siquiera una hora?",
+        "CEI": "Poi tornò dai discepoli e li trovò che dormivano. E disse a Pietro: \"Così non siete stati capaci di vegliare un'ora sola con me?"
       }
     },
     "41": {
@@ -582,7 +742,11 @@
         "VUL": "Vigilate, et orate ut non intretis in tentationem. Spiritus quidem promptus est, caro autem infirma.",
         "LXX": "Γρηγορεῖτε καὶ προσεύχεσθε, ἵνα μὴ εἰσέλθητε εἰς πειρασμόν. Τὸ μὲν πνεῦμα πρόθυμον, ἡ δὲ σὰρξ ἀσθενής.",
         "SYN": "бодрствуйте и молитесь, чтобы не впасть в искушение: дух бодр, плоть же немощна.",
-        "BYZ": "Γρηγορεῖτε καὶ προσεύχεσθε, ἵνα μὴ εἰσέλθητε εἰς πειρασμόν. Τὸ μὲν πνεῦμα πρόθυμον, ἡ δὲ σὰρξ ἀσθενής."
+        "BYZ": "Γρηγορεῖτε καὶ προσεύχεσθε, ἵνα μὴ εἰσέλθητε εἰς πειρασμόν. Τὸ μὲν πνεῦμα πρόθυμον, ἡ δὲ σὰρξ ἀσθενής.",
+        "NEO": "Veillez et priez, afin que vous n’entriez pas en tentation ; l’esprit est prompt, mais la chair est faible. »",
+        "NAB": "Watch and pray that you may not undergo the test. The spirit is willing, but the flesh is weak.\"",
+        "VAT_ES": "Estén prevenidos y oren para no caer en tentación, porque el espíritu está dispuesto, pero la carne es débil».",
+        "CEI": "Vegliate e pregate, per non cadere in tentazione. Lo spirito è pronto, ma la carne è debole\"."
       }
     },
     "42": {
@@ -593,10 +757,14 @@
         "LXX": 42
       },
       "text": {
-        "VUL": "Iterum secundo abiit, et oravit, dicens: Pater mi, si non potest hic calix transire nisi bibam illum, fiat voluntas tua.",
+        "VUL": "Iterum secundo abiit, et oravit, dicens : Pater mi, si non potest hic calix transire nisi bibam illum, fiat voluntas tua.",
         "LXX": "Πάλιν ἐκ δευτέρου ἀπελθὼν προσηύξατο, λέγων, Πάτερ μου, εἰ οὐ δύναται τοῦτο τὸ ποτήριον παρελθεῖν ἀπ’ ἐμοῦ, ἐὰν μὴ αὐτὸ πίω, γενηθήτω τὸ θέλημά σου.",
         "SYN": "Еще, отойдя в другой раз, молился, говоря: Отче Мой! если не может чаша сия миновать Меня, чтобы Мне не пить ее, да будет воля Твоя.",
-        "BYZ": "Πάλιν ἐκ δευτέρου ἀπελθὼν προσηύξατο, λέγων, Πάτερ μου, εἰ οὐ δύναται τοῦτο τὸ ποτήριον παρελθεῖν ἀπ’ ἐμοῦ, ἐὰν μὴ αὐτὸ πίω, γενηθήτω τὸ θέλημά σου."
+        "BYZ": "Πάλιν ἐκ δευτέρου ἀπελθὼν προσηύξατο, λέγων, Πάτερ μου, εἰ οὐ δύναται τοῦτο τὸ ποτήριον παρελθεῖν ἀπ’ ἐμοῦ, ἐὰν μὴ αὐτὸ πίω, γενηθήτω τὸ θέλημά σου.",
+        "NEO": "Il s’éloigna une seconde fois et pria ainsi : « Mon Père, si ce calice ne peut passer sans que je le boive, que ta volonté soit faite ! »",
+        "NAB": "Withdrawing a second time, he prayed again, \"My Father, if it is not possible that this cup pass without my drinking it, your will be done!\"",
+        "VAT_ES": "Se alejó por segunda vez y suplicó: «Padre mío, si no puede pasar este cáliz sin que yo lo beba, que se haga tu voluntad».",
+        "CEI": "E di nuovo, allontanatosi, pregava dicendo: \"Padre mio, se questo calice non può passare da me senza che io lo beva, sia fatta la tua volontà\"."
       }
     },
     "43": {
@@ -607,10 +775,14 @@
         "LXX": 43
       },
       "text": {
-        "VUL": "Et venit iterum, et invenit eos dormientes: erant enim oculi eorum gravati.",
+        "VUL": "Et venit iterum, et invenit eos dormientes : erant enim oculi eorum gravati.",
         "LXX": "Καὶ ἐλθὼν εὑρίσκει αὐτοὺς πάλιν καθεύδοντας· ἦσαν γὰρ αὐτῶν οἱ ὀφθαλμοὶ βεβαρημένοι.",
         "SYN": "И, придя, находит их опять спящими, ибо у них глаза отяжелели.",
-        "BYZ": "Καὶ ἐλθὼν εὑρίσκει αὐτοὺς πάλιν καθεύδοντας· ἦσαν γὰρ αὐτῶν οἱ ὀφθαλμοὶ βεβαρημένοι."
+        "BYZ": "Καὶ ἐλθὼν εὑρίσκει αὐτοὺς πάλιν καθεύδοντας· ἦσαν γὰρ αὐτῶν οἱ ὀφθαλμοὶ βεβαρημένοι.",
+        "NEO": "Étant venu de nouveau, il les trouva encore* endormis, car leurs yeux étaient appesantis.",
+        "NAB": "Then he returned once more and found them asleep, for they could not keep their eyes open.",
+        "VAT_ES": "Al regresar los encontró otra vez durmiendo, porque sus ojos se cerraban de sueño.",
+        "CEI": "E tornato di nuovo trovò i suoi che dormivano, perché gli occhi loro si erano appesantiti."
       }
     },
     "44": {
@@ -624,7 +796,11 @@
         "VUL": "Et relictis illis, iterum abiit, et oravit tertio, eumdem sermonem dicens.",
         "LXX": "Καὶ ἀφεὶς αὐτοὺς ἀπελθὼν πάλιν προσηύξατο ἐκ τρίτου, τὸν αὐτὸν λόγον εἰπών.",
         "SYN": "И, оставив их, отошел опять и помолился в третий раз, сказав то же слово.",
-        "BYZ": "Καὶ ἀφεὶς αὐτοὺς ἀπελθὼν πάλιν προσηύξατο ἐκ τρίτου, τὸν αὐτὸν λόγον εἰπών."
+        "BYZ": "Καὶ ἀφεὶς αὐτοὺς ἀπελθὼν πάλιν προσηύξατο ἐκ τρίτου, τὸν αὐτὸν λόγον εἰπών.",
+        "NEO": "Il les laissa, et s’en alla encore prier pour la troisième fois, disant les mêmes paroles.",
+        "NAB": "He left them and withdrew again and prayed a third time, saying the same thing again.",
+        "VAT_ES": "Nuevamente se alejó de ellos y oró por tercera vez, repitiendo las mismas palabras.",
+        "CEI": "E lasciatili, si allontanò di nuovo e pregò per la terza volta, ripetendo le stesse parole."
       }
     },
     "45": {
@@ -635,10 +811,14 @@
         "LXX": 45
       },
       "text": {
-        "VUL": "Tunc venit ad discipulos suos, et dicit illis: Dormite jam, et requiescite: ecce appropinquavit hora, et Filius hominis tradetur in manus peccatorum.",
+        "VUL": "Tunc venit ad discipulos suos, et dicit illis : Dormite jam, et requiescite : ecce appropinquavit hora, et Filius hominis tradetur in manus peccatorum.",
         "LXX": "Τότε ἔρχεται πρὸς τοὺς μαθητὰς αὐτοῦ, καὶ λέγει αὐτοῖς, Καθεύδετε τὸ λοιπὸν καὶ ἀναπαύεσθε. Ἰδού, ἤγγικεν ἡ ὥρα, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς χεῖρας ἁμαρτωλῶν.",
         "SYN": "Тогда приходит к ученикам Своим и говорит им: вы все еще спите и почиваете? вот, приблизился час, и Сын Человеческий предается в руки грешников;",
-        "BYZ": "Τότε ἔρχεται πρὸς τοὺς μαθητὰς αὐτοῦ, καὶ λέγει αὐτοῖς, Καθεύδετε τὸ λοιπὸν καὶ ἀναπαύεσθε. Ἰδού, ἤγγικεν ἡ ὥρα, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς χεῖρας ἁμαρτωλῶν."
+        "BYZ": "Τότε ἔρχεται πρὸς τοὺς μαθητὰς αὐτοῦ, καὶ λέγει αὐτοῖς, Καθεύδετε τὸ λοιπὸν καὶ ἀναπαύεσθε. Ἰδού, ἤγγικεν ἡ ὥρα, καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς χεῖρας ἁμαρτωλῶν.",
+        "NEO": "Puis il revint à ses disciples et leur dit : « Dormez maintenant et reposez-vous ; voici que l’heure est proche, où le Fils de l’homme va être livré aux mains des pécheurs. —",
+        "NAB": "Then he returned to his disciples and said to them, \"Are you still sleeping and taking your rest? Behold, the hour is at hand when the Son of Man is to be handed over to sinners.",
+        "VAT_ES": "Luego volvió junto a sus discípulos y les dijo: «Ahora pueden dormir y descansar: ha llegado la hora en que el Hijo del hombre va a ser entregado en manos de los pecadores.",
+        "CEI": "Poi si avvicinò ai discepoli e disse loro: \"Dormite ormai e riposate! Ecco, è giunta l'ora nella quale il Figlio dell'uomo sarà consegnato in mano ai peccatori."
       }
     },
     "46": {
@@ -649,10 +829,14 @@
         "LXX": 46
       },
       "text": {
-        "VUL": "Surgite, eamus: ecce appropinquavit qui me tradet.",
+        "VUL": "Surgite, eamus : ecce appropinquavit qui me tradet.",
         "LXX": "Ἐγείρεσθε, ἄγωμεν. Ἰδού, ἤγγικεν ὁ παραδιδούς με.",
         "SYN": "встаньте, пойдем: вот, приблизился предающий Меня.",
-        "BYZ": "Ἐγείρεσθε, ἄγωμεν. Ἰδού, ἤγγικεν ὁ παραδιδούς με."
+        "BYZ": "Ἐγείρεσθε, ἄγωμεν. Ἰδού, ἤγγικεν ὁ παραδιδούς με.",
+        "NEO": "Levez-vous, allons, celui qui me trahit est près d’ici. »",
+        "NAB": "Get up, let us go. Look, my betrayer is at hand.\"",
+        "VAT_ES": "&iexcl;Levántense! &iexcl;Vamos! Ya se acerca el que me va a entregar».",
+        "CEI": "Alzatevi, andiamo; ecco, colui che mi tradisce si avvicina\"."
       }
     },
     "47": {
@@ -666,7 +850,11 @@
         "VUL": "Adhuc eo loquente, ecce Judas unus de duodecim venit, et cum eo turba multa cum gladiis et fustibus, missi a principibus sacerdotum, et senioribus populi.",
         "LXX": "Καὶ ἔτι αὐτοῦ λαλοῦντος, ἰδού, Ἰούδας, εἷς τῶν δώδεκα, ἦλθεν καὶ μετ’ αὐτοῦ ὄχλος πολὺς μετὰ μαχαιρῶν καὶ ξύλων, ἀπὸ τῶν ἀρχιερέων καὶ πρεσβυτέρων τοῦ λαοῦ.",
         "SYN": "И, когда еще говорил Он, вот Иуда, один из двенадцати, пришел, и с ним множество народа с мечами и кольями, от первосвященников и старейшин народных.",
-        "BYZ": "Καὶ ἔτι αὐτοῦ λαλοῦντος, ἰδού, Ἰούδας, εἷς τῶν δώδεκα, ἦλθεν καὶ μετ’ αὐτοῦ ὄχλος πολὺς μετὰ μαχαιρῶν καὶ ξύλων, ἀπὸ τῶν ἀρχιερέων καὶ πρεσβυτέρων τοῦ λαοῦ."
+        "BYZ": "¶Καὶ ἔτι αὐτοῦ λαλοῦντος, ἰδού, Ἰούδας, εἷς τῶν δώδεκα, ἦλθεν καὶ μετ’ αὐτοῦ ὄχλος πολὺς μετὰ μαχαιρῶν καὶ ξύλων, ἀπὸ τῶν ἀρχιερέων καὶ πρεσβυτέρων τοῦ λαοῦ.",
+        "NEO": "Il parlait encore, lorsque Judas, l’un des Douze, arriva, et avec lui une troupe nombreuse de gens armés d’épées et de bâtons, envoyée par les Princes des prêtres et les Anciens du peuple.+ 26:47 47. Marc, xiv, 43 ; Luc, xxii, 47 ; Jean, xviii, 2.*",
+        "NAB": "While he was still speaking, Judas, one of the Twelve, arrived, accompanied by a large crowd, with swords and clubs, who had come from the chief priests and the elders of the people.",
+        "VAT_ES": "Jesús estaba hablando todavía, cuando llegó Judas, uno de los Doce, acompañado de una multitud con espadas y palos, enviada por los sumos sacerdotes y los ancianos del pueblo.",
+        "CEI": "Mentre parlava ancora, ecco arrivare Giuda, uno dei Dodici, e con lui una gran folla con spade e bastoni, mandata dai sommi sacerdoti e dagli anziani del popolo."
       }
     },
     "48": {
@@ -677,10 +865,14 @@
         "LXX": 48
       },
       "text": {
-        "VUL": "Qui autem tradidit eum, dedit illis signum, dicens: Quemcumque osculatus fuero, ipse est, tenete eum.",
+        "VUL": "Qui autem tradidit eum, dedit illis signum, dicens : Quemcumque osculatus fuero, ipse est, tenete eum.",
         "LXX": "Ὁ δὲ παραδιδοὺς αὐτὸν ἔδωκεν αὐτοῖς σημεῖον, λέγων, Ὃν ἂν φιλήσω, αὐτός ἐστιν· κρατήσατε αὐτόν.",
         "SYN": "Предающий же Его дал им знак, сказав: Кого я поцелую, Тот и есть, возьмите Его.",
-        "BYZ": "Ὁ δὲ παραδιδοὺς αὐτὸν ἔδωκεν αὐτοῖς σημεῖον, λέγων, Ὃν ἂν φιλήσω, αὐτός ἐστιν· κρατήσατε αὐτόν."
+        "BYZ": "Ὁ δὲ παραδιδοὺς αὐτὸν ἔδωκεν αὐτοῖς σημεῖον, λέγων, Ὃν ἂν φιλήσω, αὐτός ἐστιν· κρατήσατε αὐτόν.",
+        "NEO": "Le traître leur avait donné ce signe : « Celui que je baiserai, c’est lui, arrêtez-le. »",
+        "NAB": "His betrayer had arranged a sign with them, saying, \"The man I shall kiss is the one; arrest him.\"",
+        "VAT_ES": "El traidor les había dado la señal: «Es aquel a quien voy a besar. Deténganlo».",
+        "CEI": "Il traditore aveva dato loro questo segnale dicendo: \"Quello che bacerò, è lui; arrestatelo!\"."
       }
     },
     "49": {
@@ -691,10 +883,14 @@
         "LXX": 49
       },
       "text": {
-        "VUL": "Et confestim accedens ad Jesum, dixit: Ave Rabbi. Et osculatus est eum.",
+        "VUL": "Et confestim accedens ad Jesum, dixit : Ave Rabbi. Et osculatus est eum.",
         "LXX": "Καὶ εὐθέως προσελθὼν τῷ Ἰησοῦ εἶπεν, Χαῖρε, ῥαββί· καὶ κατεφίλησεν αὐτόν.",
         "SYN": "И, тотчас подойдя к Иисусу, сказал: радуйся, Равви! И поцеловал Его.",
-        "BYZ": "Καὶ εὐθέως προσελθὼν τῷ Ἰησοῦ εἶπεν, Χαῖρε, ῥαββί· καὶ κατεφίλησεν αὐτόν."
+        "BYZ": "Καὶ εὐθέως προσελθὼν τῷ Ἰησοῦ εἶπεν, Χαῖρε, ῥαββί· καὶ κατεφίλησεν αὐτόν.",
+        "NEO": "Et aussitôt, s’approchant de Jésus, il dit : « Salut, Maître », et il le baisa.",
+        "NAB": "Immediately he went over to Jesus and said, \"Hail, Rabbi!\" and he kissed him.",
+        "VAT_ES": "Inmediatamente se acercó a Jesús, diciéndole: «Salud, Maestro», y lo besó.",
+        "CEI": "E subito si avvicinò a Gesù e disse: \"Salve, Rabbì!\". E lo baciò."
       }
     },
     "50": {
@@ -705,10 +901,14 @@
         "LXX": 50
       },
       "text": {
-        "VUL": "Dixitque illi Jesus: Amice, ad quid venisti ? Tunc accesserunt, et manus injecerunt in Jesum, et tenuerunt eum.",
+        "VUL": "Dixitque illi Jesus : Amice, ad quid venisti ? Tunc accesserunt, et manus injecerunt in Jesum, et tenuerunt eum.",
         "LXX": "Ὁ δὲ Ἰησοῦς εἶπεν αὐτῷ, Ἑταῖρε, ἐφ’ ᾧ πάρει; Τότε προσελθόντες ἐπέβαλον τὰς χεῖρας ἐπὶ τὸν Ἰησοῦν, καὶ ἐκράτησαν αὐτόν.",
         "SYN": "Иисус же сказал ему: друг, для чего ты пришел? Тогда подошли и возложили руки на Иисуса, и взяли Его.",
-        "BYZ": "Ὁ δὲ Ἰησοῦς εἶπεν αὐτῷ, Ἑταῖρε, ἐφ’ ᾧ πάρει; Τότε προσελθόντες ἐπέβαλον τὰς χεῖρας ἐπὶ τὸν Ἰησοῦν, καὶ ἐκράτησαν αὐτόν."
+        "BYZ": "Ὁ δὲ Ἰησοῦς εἶπεν αὐτῷ, Ἑταῖρε, ἐφ’ ᾧ πάρει; Τότε προσελθόντες ἐπέβαλον τὰς χεῖρας ἐπὶ τὸν Ἰησοῦν, καὶ ἐκράτησαν αὐτόν.",
+        "NEO": "Jésus lui dit : « Mon ami, pourquoi es-tu ici ? » En même temps, ils s’avancèrent, mirent la main sur Jésus et le saisirent.",
+        "NAB": "Jesus answered him, \"Friend, do what you have come for.\" Then stepping forward they laid hands on Jesus and arrested him.",
+        "VAT_ES": "Jesús le dijo: «Amigo, &iexcl;cumple tu cometido!». Entonces se abalanzaron sobre él y lo detuvieron.",
+        "CEI": "E Gesù gli disse: \"Amico, per questo sei qui!\". Allora si fecero avanti e misero le mani addosso a Gesù e lo arrestarono."
       }
     },
     "51": {
@@ -722,7 +922,11 @@
         "VUL": "Et ecce unus ex his qui erant cum Jesu, extendens manum, exemit gladium suum, et percutiens servum principis sacerdotum amputavit auriculam ejus.",
         "LXX": "Καὶ ἰδού, εἷς τῶν μετὰ Ἰησοῦ, ἐκτείνας τὴν χεῖρα, ἀπέσπασεν τὴν μάχαιραν αὐτοῦ, καὶ πατάξας τὸν δοῦλον τοῦ ἀρχιερέως ἀφεῖλεν αὐτοῦ τὸ ὠτίον.",
         "SYN": "И вот, один из бывших с Иисусом, простерши руку, извлек меч свой и, ударив раба первосвященникова, отсек ему ухо.",
-        "BYZ": "Καὶ ἰδού, εἷς τῶν μετὰ Ἰησοῦ, ἐκτείνας τὴν χεῖρα, ἀπέσπασεν τὴν μάχαιραν αὐτοῦ, καὶ πατάξας τὸν δοῦλον τοῦ ἀρχιερέως ἀφεῖλεν αὐτοῦ τὸ ὠτίον."
+        "BYZ": "Καὶ ἰδού, εἷς τῶν μετὰ Ἰησοῦ, ἐκτείνας τὴν χεῖρα, ἀπέσπασεν τὴν μάχαιραν αὐτοῦ, καὶ πατάξας τὸν δοῦλον τοῦ ἀρχιερέως ἀφεῖλεν αὐτοῦ τὸ ὠτίον.",
+        "NEO": "Et voilà qu’un de ceux+ 26:51 51. Un de ceux, S. Pierre, d’après Jean, xviii, 10.* qui étaient avec Jésus, mettant l’épée à la main, en frappa le serviteur du grand prêtre et lui emporta l’oreille.",
+        "NAB": "And behold, one of those who accompanied Jesus put his hand to his sword, drew it, and struck the high priest's servant, cutting off his ear.",
+        "VAT_ES": "Uno de los que estaban con Jesús sacó su espada e hirió al servidor del Sumo Sacerdote, cortándole la oreja.",
+        "CEI": "Ed ecco, uno di quelli che erano con Gesù, messa mano alla spada, la estrasse e colpì il servo del sommo sacerdote staccandogli un orecchio."
       }
     },
     "52": {
@@ -733,10 +937,14 @@
         "LXX": 52
       },
       "text": {
-        "VUL": "Tunc ait illi Jesus: Converte gladium tuum in locum suum: omnes enim, qui acceperint gladium, gladio peribunt.",
+        "VUL": "Tunc ait illi Jesus : Converte gladium tuum in locum suum : omnes enim, qui acceperint gladium, gladio peribunt.",
         "LXX": "Τότε λέγει αὐτῷ ὁ Ἰησοῦς, Ἀπόστρεψόν σου τὴν μάχαιραν εἰς τὸν τόπον αὐτῆς· πάντες γὰρ οἱ λαβόντες μάχαιραν ἐν μαχαίρᾳ ἀποθανοῦνται.",
         "SYN": "Тогда говорит ему Иисус: возврати меч твой в его место, ибо все, взявшие меч, мечом погибнут;",
-        "BYZ": "Τότε λέγει αὐτῷ ὁ Ἰησοῦς, Ἀπόστρεψόν σου τὴν μάχαιραν εἰς τὸν τόπον αὐτῆς· πάντες γὰρ οἱ λαβόντες μάχαιραν ἐν μαχαίρᾳ ἀποθανοῦνται."
+        "BYZ": "Τότε λέγει αὐτῷ ὁ Ἰησοῦς, Ἀπόστρεψόν σου τὴν μάχαιραν εἰς τὸν τόπον αὐτῆς· πάντες γὰρ οἱ λαβόντες μάχαιραν ἐν μαχαίρᾳ ἀποθανοῦνται.",
+        "NEO": "Alors Jésus lui dit : « Remets ton épée à sa place ; car tous ceux qui se serviront de l’épée, périront par l’épée.",
+        "NAB": "Then Jesus said to him, \"Put your sword back into its sheath, for all who take the sword will perish by the sword.",
+        "VAT_ES": "Jesús le dijo: «Guarda tu espada, porque el que a hierro mata a hierro muere.",
+        "CEI": "Allora Gesù gli disse: \"Rimetti la spada nel fodero, perché tutti quelli che mettono mano alla spada periranno di spada."
       }
     },
     "53": {
@@ -750,7 +958,11 @@
         "VUL": "An putas, quia non possum rogare patrem meum, et exhibebit mihi modo plusquam duodecim legiones angelorum ?",
         "LXX": "Ἢ δοκεῖς ὅτι οὐ δύναμαι ἄρτι παρακαλέσαι τὸν πατέρα μου, καὶ παραστήσει μοι πλείους ἢ δώδεκα λεγεῶνας ἀγγέλων;",
         "SYN": "или думаешь, что Я не могу теперь умолить Отца Моего, и Он представит Мне более, нежели двенадцать легионов Ангелов?",
-        "BYZ": "Ἢ δοκεῖς ὅτι οὐ δύναμαι ἄρτι παρακαλέσαι τὸν πατέρα μου, καὶ παραστήσει μοι πλείους ἢ δώδεκα λεγεῶνας ἀγγέλων;"
+        "BYZ": "Ἢ δοκεῖς ὅτι οὐ δύναμαι ἄρτι παρακαλέσαι τὸν πατέρα μου, καὶ παραστήσει μοι πλείους ἢ δώδεκα λεγεῶνας ἀγγέλων;",
+        "NEO": "Penses-tu que je ne puisse pas sur l’heure prier mon Père, qui me donnerait plus de douze légions d’anges ?",
+        "NAB": "Do you think that I cannot call upon my Father and he will not provide me at this moment with more than twelve legions of angels?",
+        "VAT_ES": "&iquest;O piensas que no puedo recurrir a mi Padre? El pondría inmediatamente a mi disposición más de doce legiones de ángeles.",
+        "CEI": "Pensi forse che io non possa pregare il Padre mio, che mi darebbe subito più di dodici legioni di angeli?"
       }
     },
     "54": {
@@ -764,7 +976,11 @@
         "VUL": "Quomodo ergo implebuntur Scripturæ, quia sic oportet fieri ?",
         "LXX": "Πῶς οὖν πληρωθῶσιν αἱ γραφαί, ὅτι οὕτως δεῖ γενέσθαι;",
         "SYN": "как же сбудутся Писания, что так должно быть?",
-        "BYZ": "Πῶς οὖν πληρωθῶσιν αἱ γραφαί, ὅτι οὕτως δεῖ γενέσθαι;"
+        "BYZ": "Πῶς οὖν πληρωθῶσιν αἱ γραφαί, ὅτι οὕτως δεῖ γενέσθαι;",
+        "NEO": "Comment donc s’accompliront les Écritures, qui attestent qu’il en doit être ainsi ? »",
+        "NAB": "But then how would the scriptures be fulfilled which say that it must come to pass in this way?\"",
+        "VAT_ES": "Pero entonces, &iquest;cómo se cumplirían las Escrituras, según las cuales debe suceder así?».",
+        "CEI": "Ma come allora si adempirebbero le Scritture, secondo le quali così deve avvenire?\"."
       }
     },
     "55": {
@@ -775,10 +991,14 @@
         "LXX": 55
       },
       "text": {
-        "VUL": "In illa hora dixit Jesus turbis: Tamquam ad latronem existis cum gladiis et fustibus comprehendere me: quotidie apud vos sedebam docens in templo, et non me tenuistis.",
+        "VUL": "In illa hora dixit Jesus turbis : Tamquam ad latronem existis cum gladiis et fustibus comprehendere me : quotidie apud vos sedebam docens in templo, et non me tenuistis.",
         "LXX": "Ἐν ἐκείνῃ τῇ ὥρᾳ εἶπεν ὁ Ἰησοῦς τοῖς ὄχλοις, Ὡς ἐπὶ λῃστὴν ἐξήλθετε μετὰ μαχαιρῶν καὶ ξύλων συλλαβεῖν με; Καθ’ ἡμέραν πρὸς ὑμᾶς ἐκαθεζόμην διδάσκων ἐν τῷ ἱερῷ, καὶ οὐκ ἐκρατήσατέ με.",
         "SYN": "В тот час сказал Иисус народу: как будто на разбойника вышли вы с мечами и кольями взять Меня; каждый день с вами сидел Я, уча в храме, и вы не брали Меня.",
-        "BYZ": "Ἐν ἐκείνῃ τῇ ὥρᾳ εἶπεν ὁ Ἰησοῦς τοῖς ὄχλοις, Ὡς ἐπὶ λῃστὴν ἐξήλθετε μετὰ μαχαιρῶν καὶ ξύλων συλλαβεῖν με; Καθ’ ἡμέραν πρὸς ὑμᾶς ἐκαθεζόμην διδάσκων ἐν τῷ ἱερῷ, καὶ οὐκ ἐκρατήσατέ με."
+        "BYZ": "Ἐν ἐκείνῃ τῇ ὥρᾳ εἶπεν ὁ Ἰησοῦς τοῖς ὄχλοις, Ὡς ἐπὶ λῃστὴν ἐξήλθετε μετὰ μαχαιρῶν καὶ ξύλων συλλαβεῖν με; Καθ’ ἡμέραν πρὸς ὑμᾶς ἐκαθεζόμην διδάσκων ἐν τῷ ἱερῷ, καὶ οὐκ ἐκρατήσατέ με.",
+        "NEO": "En même temps, Jésus dit à la foule : « Vous êtes venus, comme à un voleur, avec des épées et des bâtons pour me prendre. J’étais tous les jours assis parmi vous, enseignant dans le temple, et vous ne m’avez pas saisi ;",
+        "NAB": "At that hour Jesus said to the crowds, \"Have you come out as against a robber, with swords and clubs to seize me? Day after day I sat teaching in the temple area, yet you did not arrest me.",
+        "VAT_ES": "Y en ese momento dijo Jesús a la multitud: «&iquest;Soy acaso un ladrón, para que salgan a arrestarme con espadas y palos? Todos los días me sentaba a enseñar en el Templo, y ustedes no me detuvieron».",
+        "CEI": "In quello stesso momento Gesù disse alla folla: \"Siete usciti come contro un brigante, con spade e bastoni, per catturarmi. Ogni giorno stavo seduto nel tempio ad insegnare, e non mi avete arrestato."
       }
     },
     "56": {
@@ -792,7 +1012,11 @@
         "VUL": "Hoc autem totum factum est, ut adimplerentur Scripturæ prophetarum. Tunc discipuli omnes, relicto eo, fugerunt.",
         "LXX": "Τοῦτο δὲ ὅλον γέγονεν, ἵνα πληρωθῶσιν αἱ γραφαὶ τῶν προφητῶν. Τότε οἱ μαθηταὶ πάντες ἀφέντες αὐτὸν ἔφυγον.",
         "SYN": "Сие же все было, да сбудутся писания пророков. Тогда все ученики, оставив Его, бежали.",
-        "BYZ": "Τοῦτο δὲ ὅλον γέγονεν, ἵνα πληρωθῶσιν αἱ γραφαὶ τῶν προφητῶν. Τότε οἱ μαθηταὶ πάντες ἀφέντες αὐτὸν ἔφυγον."
+        "BYZ": "Τοῦτο δὲ ὅλον γέγονεν, ἵνα πληρωθῶσιν αἱ γραφαὶ τῶν προφητῶν. Τότε οἱ μαθηταὶ πάντες ἀφέντες αὐτὸν ἔφυγον.",
+        "NEO": "mais tout cela s’est fait, afin que s’accomplissent les oracles des prophètes. » Alors tous les disciples l’abandonnèrent et prirent la fuite.",
+        "NAB": "But all this has come to pass that the writings of the prophets may be fulfilled.\" Then all the disciples left him and fled.",
+        "VAT_ES": "Todo esto sucedió para que se cumpliera lo que escribieron los profetas. Entonces todos los discípulos lo abandonaron y huyeron.",
+        "CEI": "Ma tutto questo è avvenuto perché si adempissero le Scritture dei profeti\". Allora tutti i discepoli, abbandonatolo, fuggirono."
       }
     },
     "57": {
@@ -806,7 +1030,11 @@
         "VUL": "At illi tenentes Jesum, duxerunt ad Caipham principem sacerdotum, ubi scribæ et seniores convenerant.",
         "LXX": "Οἱ δὲ κρατήσαντες τὸν Ἰησοῦν ἀπήγαγον πρὸς Καϊάφαν τὸν ἀρχιερέα, ὅπου οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι συνήχθησαν.",
         "SYN": "А взявшие Иисуса отвели Его к Каиафе первосвященнику, куда собрались книжники и старейшины.",
-        "BYZ": "Οἱ δὲ κρατήσαντες τὸν Ἰησοῦν ἀπήγαγον πρὸς Καϊάφαν τὸν ἀρχιερέα, ὅπου οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι συνήχθησαν."
+        "BYZ": "¶Οἱ δὲ κρατήσαντες τὸν Ἰησοῦν ἀπήγαγον πρὸς Καϊάφαν τὸν ἀρχιερέα, ὅπου οἱ γραμματεῖς καὶ οἱ πρεσβύτεροι συνήχθησαν.",
+        "NEO": "Ceux qui avaient arrêté Jésus l’emmenèrent chez Caïphe, le grand prêtre, où s’étaient assemblés les Scribes et les Anciens du peuple+ 26:57 57. Marc, xiv, 53 ; Luc, xxii, 54 ; Jean, xviii, 24.*.",
+        "NAB": "Those who had arrested Jesus led him away to Caiaphas the high priest, where the scribes and the elders were assembled.",
+        "VAT_ES": "Los que habían arrestado a Jesús lo condujeron a la casa del Sumo Sacerdote Caifás, donde se habían reunido los escribas y los ancianos.",
+        "CEI": "Or quelli che avevano arrestato Gesù, lo condussero dal sommo sacerdote Caifa, presso il quale già si erano riuniti gli scribi e gli anziani."
       }
     },
     "58": {
@@ -820,7 +1048,11 @@
         "VUL": "Petrus autem sequebatur eum a longe, usque in atrium principis sacerdotum. Et ingressus intro, sedebat cum ministris, ut videret finem.",
         "LXX": "Ὁ δὲ Πέτρος ἠκολούθει αὐτῷ ἀπὸ μακρόθεν, ἕως τῆς αὐλῆς τοῦ ἀρχιερέως· καὶ εἰσελθὼν ἔσω ἐκάθητο μετὰ τῶν ὑπηρετῶν, ἰδεῖν τὸ τέλος.",
         "SYN": "Петр же следовал за Ним издали, до двора первосвященникова; и, войдя внутрь, сел со служителями, чтобы видеть конец.",
-        "BYZ": "Ὁ δὲ Πέτρος ἠκολούθει αὐτῷ ἀπὸ μακρόθεν, ἕως τῆς αὐλῆς τοῦ ἀρχιερέως· καὶ εἰσελθὼν ἔσω ἐκάθητο μετὰ τῶν ὑπηρετῶν, ἰδεῖν τὸ τέλος."
+        "BYZ": "Ὁ δὲ Πέτρος ἠκολούθει αὐτῷ ἀπὸ μακρόθεν, ἕως τῆς αὐλῆς τοῦ ἀρχιερέως· καὶ εἰσελθὼν ἔσω ἐκάθητο μετὰ τῶν ὑπηρετῶν, ἰδεῖν τὸ τέλος.",
+        "NEO": "Pierre le suivit de loin jusqu’à la cour du grand prêtre, y entra, et s’assit avec les serviteurs pour voir la fin.",
+        "NAB": "Peter was following him at a distance as far as the high priest's courtyard, and going inside he sat down with the servants to see the outcome.",
+        "VAT_ES": "Pedro lo seguía de lejos hasta el palacio del Sumo Sacerdote; entró y se sentó con los servidores, para ver cómo terminaba todo.",
+        "CEI": "Pietro intanto lo aveva seguito da lontano fino al palazzo del sommo sacerdote; ed entrato anche lui, si pose a sedere tra i servi, per vedere la conclusione."
       }
     },
     "59": {
@@ -831,10 +1063,14 @@
         "LXX": 59
       },
       "text": {
-        "VUL": "Principes autem sacerdotum, et omne concilium, quærebant falsum testimonium contra Jesum, ut eum morti traderent:",
+        "VUL": "Principes autem sacerdotum, et omne concilium, quærebant falsum testimonium contra Jesum, ut eum morti traderent :",
         "LXX": "Οἱ δὲ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι καὶ τὸ συνέδριον ὅλον ἐζήτουν ψευδομαρτυρίαν κατὰ τοῦ Ἰησοῦ, ὅπως θανατώσωσιν αὐτόν,",
         "SYN": "Первосвященники и старейшины и весь синедрион искали лжесвидетельства против Иисуса, чтобы предать Его смерти,",
-        "BYZ": "Οἱ δὲ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι καὶ τὸ συνέδριον ὅλον ἐζήτουν ψευδομαρτυρίαν κατὰ τοῦ Ἰησοῦ, ὅπως θανατώσωσιν αὐτόν,"
+        "BYZ": "Οἱ δὲ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι καὶ τὸ συνέδριον ὅλον ἐζήτουν ψευδομαρτυρίαν κατὰ τοῦ Ἰησοῦ, ὅπως θανατώσωσιν αὐτόν,",
+        "NEO": "Cependant les Princes des prêtres et tout le Conseil cherchaient quelque faux témoignage contre Jésus afin de le faire mourir ;",
+        "NAB": "The chief priests and the entire Sanhedrin kept trying to obtain false testimony against Jesus in order to put him to death,",
+        "VAT_ES": "Los sumos sacerdotes y todo el Sanedrín buscaban un falso testimonio contra Jesús para poder condenarlo a muerte;",
+        "CEI": "I sommi sacerdoti e tutto il sinedrio cercavano qualche falsa testimonianza contro Gesù, per condannarlo a morte;"
       }
     },
     "60": {
@@ -848,7 +1084,11 @@
         "VUL": "et non invenerunt, cum multi falsi testes accessissent. Novissime autem venerunt duo falsi testes,",
         "LXX": "καὶ οὐχ εὗρον. Καὶ πολλῶν ψευδομαρτύρων προσελθόντων, οὐχ εὗρον.",
         "SYN": "и не находили; и, хотя много лжесвидетелей приходило, не нашли. Но наконец пришли два лжесвидетеля",
-        "BYZ": "καὶ οὐχ εὗρον. Καὶ πολλῶν ψευδομαρτύρων προσελθόντων, οὐχ εὗρον."
+        "BYZ": "καὶ οὐχ εὗρον. Καὶ πολλῶν ψευδομαρτύρων προσελθόντων, οὐχ εὗρον.",
+        "NEO": "et ils n’en trouvèrent pas, quoique plusieurs faux témoins se fussent présentés. Enfin il en vint deux",
+        "NAB": "but they found none, though many false witnesses came forward. Finally two came forward",
+        "VAT_ES": "pero no lo encontraron, a pesar de haberse presentado numerosos testigos falsos. Finalmente, se presentaron dos",
+        "CEI": "ma non riuscirono a trovarne alcuna, pur essendosi fatti avanti molti falsi testimoni."
       }
     },
     "61": {
@@ -859,10 +1099,14 @@
         "LXX": 61
       },
       "text": {
-        "VUL": "et dixerunt: Hic dixit: Possum destruere templum Dei, et post triduum reædificare illud.",
+        "VUL": "et dixerunt : Hic dixit : Possum destruere templum Dei, et post triduum reædificare illud.",
         "LXX": "Ὕστερον δὲ προσελθόντες δύο ψευδομάρτυρες εἶπον, Οὗτος ἔφη, Δύναμαι καταλῦσαι τὸν ναὸν τοῦ θεοῦ, καὶ διὰ τριῶν ἡμερῶν οἰκοδομῆσαι αὐτόν.",
         "SYN": "и сказали: Он говорил: могу разрушить храм Божий и в три дня создать его.",
-        "BYZ": "Ὕστερον δὲ προσελθόντες δύο ψευδομάρτυρες εἶπον, Οὗτος ἔφη, Δύναμαι καταλῦσαι τὸν ναὸν τοῦ θεοῦ, καὶ διὰ τριῶν ἡμερῶν οἰκοδομῆσαι αὐτόν."
+        "BYZ": "Ὕστερον δὲ προσελθόντες δύο ψευδομάρτυρες εἶπον, Οὗτος ἔφη, Δύναμαι καταλῦσαι τὸν ναὸν τοῦ θεοῦ, καὶ διὰ τριῶν ἡμερῶν οἰκοδομῆσαι αὐτόν.",
+        "NEO": "qui dirent : « Cet homme a dit : Je puis détruire le temple de Dieu et le rebâtir en trois jours. »",
+        "NAB": "who stated, \"This man said, 'I can destroy the temple of God and within three days rebuild it.'\"",
+        "VAT_ES": "que declararon: «Este hombre dijo: \"Yo puedo destruir el Templo de Dios y reconstruirlo en tres días\"».",
+        "CEI": "Finalmente se ne presentarono due, che affermarono: \"Costui ha dichiarato: Posso distruggere il tempio di Dio e ricostruirlo in tre giorni\"."
       }
     },
     "62": {
@@ -873,10 +1117,14 @@
         "LXX": 62
       },
       "text": {
-        "VUL": "Et surgens princeps sacerdotum, ait illi: Nihil respondes ad ea, quæ isti adversum te testificantur ?",
+        "VUL": "Et surgens princeps sacerdotum, ait illi : Nihil respondes ad ea, quæ isti adversum te testificantur ?",
         "LXX": "Καὶ ἀναστὰς ὁ ἀρχιερεὺς εἶπεν αὐτῷ, Οὐδὲν ἀποκρίνῃ; Τί οὗτοί σου καταμαρτυροῦσιν;",
-        "SYN": "И, встав, первосвященник сказал Ему: что же ничего не отвечаешь? что они против Тебя свидетельствуют?",
-        "BYZ": "Καὶ ἀναστὰς ὁ ἀρχιερεὺς εἶπεν αὐτῷ, Οὐδὲν ἀποκρίνῃ; Τί οὗτοί σου καταμαρτυροῦσιν;"
+        "SYN": "И, встав, первосвященник сказал Ему: _что_ _же_ ничего не отвечаешь? что они против Тебя свидетельствуют?",
+        "BYZ": "Καὶ ἀναστὰς ὁ ἀρχιερεὺς εἶπεν αὐτῷ, Οὐδὲν ἀποκρίνῃ; Τί οὗτοί σου καταμαρτυροῦσιν;",
+        "NEO": "Le grand prêtre, se levant, dit à Jésus : « Ne réponds-tu rien à ce que ces hommes déposent contre toi ? »",
+        "NAB": "The high priest rose and addressed him, \"Have you no answer? What are these men testifying against you?\"",
+        "VAT_ES": "El Sumo Sacerdote, poniéndose de pie, dijo a Jesús: «&iquest;No respondes nada? &iquest;Qué es lo que estos declaran contra ti?».",
+        "CEI": "Alzatosi il sommo sacerdote gli disse: \"Non rispondi nulla? Che cosa testimoniano costoro contro di te?\"."
       }
     },
     "63": {
@@ -887,10 +1135,14 @@
         "LXX": 63
       },
       "text": {
-        "VUL": "Jesus autem tacebat. Et princeps sacerdotum ait illi: Adjuro te per Deum vivum, ut dicas nobis si tu es Christus Filius Dei.",
+        "VUL": "Jesus autem tacebat. Et princeps sacerdotum ait illi : Adjuro te per Deum vivum, ut dicas nobis si tu es Christus Filius Dei.",
         "LXX": "Ὁ δὲ Ἰησοῦς ἐσιώπα. Καὶ ἀποκριθεὶς ὁ ἀρχιερεὺς εἶπεν αὐτῷ, Ἐξορκίζω σε κατὰ τοῦ θεοῦ τοῦ ζῶντος, ἵνα ἡμῖν εἴπῃς εἰ σὺ εἶ ὁ χριστός, ὁ υἱὸς τοῦ θεοῦ.",
         "SYN": "Иисус молчал. И первосвященник сказал Ему: заклинаю Тебя Богом живым, скажи нам, Ты ли Христос, Сын Божий?",
-        "BYZ": "Ὁ δὲ Ἰησοῦς ἐσιώπα. Καὶ ἀποκριθεὶς ὁ ἀρχιερεὺς εἶπεν αὐτῷ, Ἐξορκίζω σε κατὰ τοῦ θεοῦ τοῦ ζῶντος, ἵνα ἡμῖν εἴπῃς εἰ σὺ εἶ ὁ χριστός, ὁ υἱὸς τοῦ θεοῦ."
+        "BYZ": "Ὁ δὲ Ἰησοῦς ἐσιώπα. Καὶ ἀποκριθεὶς ὁ ἀρχιερεὺς εἶπεν αὐτῷ, Ἐξορκίζω σε κατὰ τοῦ θεοῦ τοῦ ζῶντος, ἵνα ἡμῖν εἴπῃς εἰ σὺ εἶ ὁ χριστός, ὁ υἱὸς τοῦ θεοῦ.",
+        "NEO": "Jésus gardait le silence. Et le grand prêtre lui dit : « Je t’adjure par le Dieu vivant de nous dire si tu es le Christ, le Fils de Dieu ? »",
+        "NAB": "But Jesus was silent. Then the high priest said to him, \"I order you to tell us under oath before the living God whether you are the Messiah, the Son of God.\"",
+        "VAT_ES": "Pero Jesús callaba. El Sumo Sacerdote insistió: «Te conjuro por el Dios vivo a que me digas si tú eres el Mesías, el Hijo de Dios».",
+        "CEI": "Ma Gesù taceva. Allora il sommo sacerdote gli disse: \"Ti scongiuro, per il Dio vivente, perché ci dica se tu sei il Cristo, il Figlio di Dio\"."
       }
     },
     "64": {
@@ -901,10 +1153,14 @@
         "LXX": 64
       },
       "text": {
-        "VUL": "Dicit illi Jesus: Tu dixisti. Verumtamen dico vobis, amodo videbitis Filium hominis sedentem a dextris virtutis Dei, et venientem in nubibus cæli.",
+        "VUL": "Dicit illi Jesus : Tu dixisti. Verumtamen dico vobis, amodo videbitis Filium hominis sedentem a dextris virtutis Dei, et venientem in nubibus cæli.",
         "LXX": "Λέγει αὐτῷ ὁ Ἰησοῦς, Σὺ εἶπας. Πλὴν λέγω ὑμῖν, ἀπ’ ἄρτι ὄψεσθε τὸν υἱὸν τοῦ ἀνθρώπου καθήμενον ἐκ δεξιῶν τῆς δυνάμεως καὶ ἐρχόμενον ἐπὶ τῶν νεφελῶν τοῦ οὐρανοῦ.",
         "SYN": "Иисус говорит ему: ты сказал; даже сказываю вам: отныне узрите Сына Человеческого, сидящего одесную силы и грядущего на облаках небесных.",
-        "BYZ": "Λέγει αὐτῷ ὁ Ἰησοῦς, Σὺ εἶπας. Πλὴν λέγω ὑμῖν, ἀπ’ ἄρτι ὄψεσθε τὸν υἱὸν τοῦ ἀνθρώπου καθήμενον ἐκ δεξιῶν τῆς δυνάμεως καὶ ἐρχόμενον ἐπὶ τῶν νεφελῶν τοῦ οὐρανοῦ."
+        "BYZ": "Λέγει αὐτῷ ὁ Ἰησοῦς, Σὺ εἶπας. Πλὴν λέγω ὑμῖν, ἀπ’ ἄρτι ὄψεσθε τὸν υἱὸν τοῦ ἀνθρώπου καθήμενον ἐκ δεξιῶν τῆς δυνάμεως καὶ ἐρχόμενον ἐπὶ τῶν νεφελῶν τοῦ οὐρανοῦ.",
+        "NEO": "Jésus lui répondit : « Tu l’as dit ; de plus, je vous le dis, dès ce jour vous verrez le Fils de l’homme siéger à la droite du Tout-Puissant+ 26:64 64. Du Tout-Puissant, litt. \\+qt de la Puissance\\+qt* suprême. La Vulg. ajoute \\+qt de Dieu\\+qt*, d’après Luc, xxii, 70. Comp. Ps. cx (héb.), 1 ; Act. vii, 56 ; Dan. vii, 13.* et venir sur les nuées du ciel. »",
+        "NAB": "Jesus said to him in reply, \"You have said so. But I tell you: From now on you will see 'the Son of Man seated at the right hand of the Power' and 'coming on the clouds of heaven.'\"",
+        "VAT_ES": "Jesús le respondió: «Tú lo has dicho. Además, les aseguro que de ahora en adelante verán al hijo del hombre sentarse a la derecha del Todopoderoso y venir sobre las nubes del cielo».",
+        "CEI": "\"Tu l'hai detto, gli rispose Gesù, anzi io vi dico: d'ora innanzi vedrete il Figlio dell'uomo seduto alla destra di Dio, e venire sulle nubi del cielo\"."
       }
     },
     "65": {
@@ -915,10 +1171,14 @@
         "LXX": 65
       },
       "text": {
-        "VUL": "Tunc princeps sacerdotum scidit vestimenta sua, dicens: Blasphemavit: quid adhuc egemus testibus ? ecce nunc audistis blasphemiam:",
+        "VUL": "Tunc princeps sacerdotum scidit vestimenta sua, dicens : Blasphemavit : quid adhuc egemus testibus ? ecce nunc audistis blasphemiam :",
         "LXX": "Τότε ὁ ἀρχιερεὺς διέρρηξεν τὰ ἱμάτια αὐτοῦ, λέγων ὅτι Ἐβλασφήμησεν· τί ἔτι χρείαν ἔχομεν μαρτύρων; Ἴδε, νῦν ἠκούσατε τὴν βλασφημίαν αὐτοῦ.",
         "SYN": "Тогда первосвященник разодрал одежды свои и сказал: Он богохульствует! на что еще нам свидетелей? вот, теперь вы слышали богохульство Его!",
-        "BYZ": "Τότε ὁ ἀρχιερεὺς διέρρηξεν τὰ ἱμάτια αὐτοῦ, λέγων ὅτι Ἐβλασφήμησεν· τί ἔτι χρείαν ἔχομεν μαρτύρων; Ἴδε, νῦν ἠκούσατε τὴν βλασφημίαν αὐτοῦ."
+        "BYZ": "Τότε ὁ ἀρχιερεὺς διέρρηξεν τὰ ἱμάτια αὐτοῦ, λέγων ὅτι Ἐβλασφήμησεν· τί ἔτι χρείαν ἔχομεν μαρτύρων; Ἴδε, νῦν ἠκούσατε τὴν βλασφημίαν αὐτοῦ.",
+        "NEO": "Alors le grand prêtre déchira ses vêtements, en disant : « Il a blasphémé, qu’avons-nous encore besoin de témoins ? Vous venez d’entendre son blasphème :",
+        "NAB": "Then the high priest tore his robes and said, \"He has blasphemed! What further need have we of witnesses? You have now heard the blasphemy;",
+        "VAT_ES": "Entonces el Sumo Sacerdote rasgó sus vestiduras, diciendo: «Ha blasfemado. &iquest;Qué necesidad tenemos ya de testigos? Ustedes acaban de oír la blasfemia.",
+        "CEI": "Allora il sommo sacerdote si stracciò le vesti dicendo: \"Ha bestemmiato! Perché abbiamo ancora bisogno di testimoni? Ecco, ora avete udito la bestemmia;"
       }
     },
     "66": {
@@ -929,10 +1189,14 @@
         "LXX": 66
       },
       "text": {
-        "VUL": "quid vobis videtur ? At illi respondentes dixerunt: Reus est mortis.",
+        "VUL": "quid vobis videtur ? At illi respondentes dixerunt : Reus est mortis.",
         "LXX": "Τί ὑμῖν δοκεῖ; Οἱ δὲ ἀποκριθέντες εἶπον, Ἔνοχος θανάτου ἐστίν.",
         "SYN": "как вам кажется? Они же сказали в ответ: повинен смерти.",
-        "BYZ": "Τί ὑμῖν δοκεῖ; Οἱ δὲ ἀποκριθέντες εἶπον, Ἔνοχος θανάτου ἐστίν."
+        "BYZ": "Τί ὑμῖν δοκεῖ; Οἱ δὲ ἀποκριθέντες εἶπον, Ἔνοχος θανάτου ἐστίν.",
+        "NEO": "que vous en semble ? » Ils répondirent : « Il mérite la mort. »",
+        "NAB": "what is your opinion?\" They said in reply, \"He deserves to die!\"",
+        "VAT_ES": "&iquest;Qué les parece?». Ellos respondieron: «Merece la muerte».",
+        "CEI": "che ve ne pare?\". E quelli risposero: \"È reo di morte!\"."
       }
     },
     "67": {
@@ -946,7 +1210,11 @@
         "VUL": "Tunc exspuerunt in faciem ejus, et colaphis eum ceciderunt, alii autem palmas in faciem ejus dederunt,",
         "LXX": "Τότε ἐνέπτυσαν εἰς τὸ πρόσωπον αὐτοῦ καὶ ἐκολάφισαν αὐτόν· οἱ δὲ ἐρράπισαν,",
         "SYN": "Тогда плевали Ему в лице и заушали Его; другие же ударяли Его по ланитам",
-        "BYZ": "Τότε ἐνέπτυσαν εἰς τὸ πρόσωπον αὐτοῦ καὶ ἐκολάφισαν αὐτόν· οἱ δὲ ἐρράπισαν,"
+        "BYZ": "Τότε ἐνέπτυσαν εἰς τὸ πρόσωπον αὐτοῦ καὶ ἐκολάφισαν αὐτόν· οἱ δὲ ἐρράπισαν,",
+        "NEO": "Alors ils lui crachèrent au visage, et le frappèrent avec le poing ; d’autres le souffletèrent,",
+        "NAB": "Then they spat in his face and struck him, while some slapped him,",
+        "VAT_ES": "Luego lo escupieron en la cara y lo abofetearon. Otros lo golpeaban,",
+        "CEI": "Allora gli sputarono in faccia e lo schiaffeggiarono; altri lo bastonavano,"
       }
     },
     "68": {
@@ -957,10 +1225,14 @@
         "LXX": 68
       },
       "text": {
-        "VUL": "dicentes: Prophetiza nobis Christe, quis est qui te percussit ?",
+        "VUL": "dicentes : Prophetiza nobis Christe, quis est qui te percussit ?",
         "LXX": "λέγοντες, Προφήτευσον ἡμῖν, χριστέ. Τίς ἐστιν ὁ παίσας σε;",
         "SYN": "и говорили: прореки нам, Христос, кто ударил Тебя?",
-        "BYZ": "λέγοντες, Προφήτευσον ἡμῖν, χριστέ. Τίς ἐστιν ὁ παίσας σε;"
+        "BYZ": "λέγοντες, Προφήτευσον ἡμῖν, χριστέ. Τίς ἐστιν ὁ παίσας σε;",
+        "NEO": "en disant : « Christ, devine qui t’a frappé. »",
+        "NAB": "saying, \"Prophesy for us, Messiah: who is it that struck you?\"",
+        "VAT_ES": "diciéndole: «Tú, que eres el Mesías, profetiza, dinos quién te golpeó».",
+        "CEI": "dicendo: \"Indovina, Cristo! Chi è che ti ha percosso?\"."
       }
     },
     "69": {
@@ -971,10 +1243,14 @@
         "LXX": 69
       },
       "text": {
-        "VUL": "Petrus vero sedebat foris in atrio: et accessit ad eum una ancilla, dicens: Et tu cum Jesu Galilæo eras.",
+        "VUL": "Petrus vero sedebat foris in atrio : et accessit ad eum una ancilla, dicens : Et tu cum Jesu Galilæo eras.",
         "LXX": "Ὁ δὲ Πέτρος ἔξω ἐκάθητο ἐν τῇ αὐλῇ· καὶ προσῆλθεν αὐτῷ μία παιδίσκη, λέγουσα, Καὶ σὺ ἦσθα μετὰ Ἰησοῦ τοῦ Γαλιλαίου.",
         "SYN": "Петр же сидел вне на дворе. И подошла к нему одна служанка и сказала: и ты был с Иисусом Галилеянином.",
-        "BYZ": "Ὁ δὲ Πέτρος ἔξω ἐκάθητο ἐν τῇ αὐλῇ· καὶ προσῆλθεν αὐτῷ μία παιδίσκη, λέγουσα, Καὶ σὺ ἦσθα μετὰ Ἰησοῦ τοῦ Γαλιλαίου."
+        "BYZ": "¶Ὁ δὲ Πέτρος ἔξω ἐκάθητο ἐν τῇ αὐλῇ· καὶ προσῆλθεν αὐτῷ μία παιδίσκη, λέγουσα, Καὶ σὺ ἦσθα μετὰ Ἰησοῦ τοῦ Γαλιλαίου.",
+        "NEO": "Cependant Pierre était dehors, assis dans la cour. Une servante l’aborda et lui dit : « Toi aussi, tu étais avec Jésus le Galiléen. »",
+        "NAB": "Now Peter was sitting outside in the courtyard. One of the maids came over to him and said, \"You too were with Jesus the Galilean.\"",
+        "VAT_ES": "Mientras tanto, Pedro estaba sentado afuera, en el patio. Una sirvienta se acercó y le dijo: «Tú también estabas con Jesús, el Galileo».",
+        "CEI": "Pietro intanto se ne stava seduto fuori, nel cortile. Una serva gli si avvicinò e disse: \"Anche tu eri con Gesù, il Galileo!\"."
       }
     },
     "70": {
@@ -985,10 +1261,14 @@
         "LXX": 70
       },
       "text": {
-        "VUL": "At ille negavit coram omnibus, dicens: Nescio quid dicis.",
+        "VUL": "At ille negavit coram omnibus, dicens : Nescio quid dicis.",
         "LXX": "Ὁ δὲ ἠρνήσατο ἔμπροσθεν αὐτῶν πάντων, λέγων, Οὐκ οἶδα τί λέγεις.",
         "SYN": "Но он отрекся перед всеми, сказав: не знаю, что ты говоришь.",
-        "BYZ": "Ὁ δὲ ἠρνήσατο ἔμπροσθεν αὐτῶν πάντων, λέγων, Οὐκ οἶδα τί λέγεις."
+        "BYZ": "Ὁ δὲ ἠρνήσατο ἔμπροσθεν αὐτῶν πάντων, λέγων, Οὐκ οἶδα τί λέγεις.",
+        "NEO": "Mais il le nia devant tous en disant : « Je ne sais ce que tu veux dire. »",
+        "NAB": "But he denied it in front of everyone, saying, \"I do not know what you are talking about!\"",
+        "VAT_ES": "Pero él lo negó delante de todos, diciendo: «No sé lo que quieres decir».",
+        "CEI": "Ed egli negò davanti a tutti: \"Non capisco che cosa tu voglia dire\"."
       }
     },
     "71": {
@@ -999,10 +1279,14 @@
         "LXX": 71
       },
       "text": {
-        "VUL": "Exeunte autem illo januam, vidit eum alia ancilla, et ait his qui erant ibi: Et hic erat cum Jesu Nazareno.",
+        "VUL": "Exeunte autem illo januam, vidit eum alia ancilla, et ait his qui erant ibi : Et hic erat cum Jesu Nazareno.",
         "LXX": "Ἐξελθόντα δὲ αὐτὸν εἰς τὸν πυλῶνα, εἶδεν αὐτὸν ἄλλη, καὶ λέγει αὐτοῖς ἐκεῖ, Καὶ οὗτος ἦν μετὰ Ἰησοῦ τοῦ Ναζωραίου.",
         "SYN": "Когда же он выходил за ворота, увидела его другая, и говорит бывшим там: и этот был с Иисусом Назореем.",
-        "BYZ": "Ἐξελθόντα δὲ αὐτὸν εἰς τὸν πυλῶνα, εἶδεν αὐτὸν ἄλλη, καὶ λέγει αὐτοῖς ἐκεῖ, Καὶ οὗτος ἦν μετὰ Ἰησοῦ τοῦ Ναζωραίου."
+        "BYZ": "Ἐξελθόντα δὲ αὐτὸν εἰς τὸν πυλῶνα, εἶδεν αὐτὸν ἄλλη, καὶ λέγει αὐτοῖς ἐκεῖ, Καὶ οὗτος ἦν μετὰ Ἰησοῦ τοῦ Ναζωραίου.",
+        "NEO": "Comme il se dirigeait vers le vestibule, pour s’en aller, une autre servante le vit et dit à ceux qui se trouvaient là : « Celui-ci était aussi avec Jésus de Nazareth. »",
+        "NAB": "As he went out to the gate, another girl saw him and said to those who were there, \"This man was with Jesus the Nazorean.\"",
+        "VAT_ES": "Al retirarse hacia la puerta, lo vio otra sirvienta y dijo a los que estaban allí: «Este es uno de los que acompañaban a Jesús, el Nazareno».",
+        "CEI": "Mentre usciva verso l'atrio, lo vide un'altra serva e disse ai presenti: \"Costui era con Gesù, il Nazareno\"."
       }
     },
     "72": {
@@ -1013,10 +1297,14 @@
         "LXX": 72
       },
       "text": {
-        "VUL": "Et iterum negavit cum juramento: Quia non novi hominem.",
+        "VUL": "Et iterum negavit cum juramento : Quia non novi hominem.",
         "LXX": "Καὶ πάλιν ἠρνήσατο μεθ’ ὅρκου ὅτι Οὐκ οἶδα τὸν ἄνθρωπον.",
         "SYN": "И он опять отрекся с клятвою, что не знает Сего Человека.",
-        "BYZ": "Καὶ πάλιν ἠρνήσατο μεθ’ ὅρκου ὅτι Οὐκ οἶδα τὸν ἄνθρωπον."
+        "BYZ": "Καὶ πάλιν ἠρνήσατο μεθ’ ὅρκου ὅτι Οὐκ οἶδα τὸν ἄνθρωπον.",
+        "NEO": "Et Pierre le nia une seconde fois avec serment : « Je ne connais pas cet homme. »",
+        "NAB": "Again he denied it with an oath, \"I do not know the man!\"",
+        "VAT_ES": "Y nuevamente Pedro negó con juramento: «Yo no conozco a ese hombre».",
+        "CEI": "Ma egli negò di nuovo giurando: \"Non conosco quell'uomo\"."
       }
     },
     "73": {
@@ -1027,10 +1315,14 @@
         "LXX": 73
       },
       "text": {
-        "VUL": "Et post pusillum accesserunt qui stabant, et dixerunt Petro: Vere et tu ex illis es: nam et loquela tua manifestum te facit.",
+        "VUL": "Et post pusillum accesserunt qui stabant, et dixerunt Petro : Vere et tu ex illis es : nam et loquela tua manifestum te facit.",
         "LXX": "Μετὰ μικρὸν δὲ προσελθόντες οἱ ἑστῶτες εἶπον τῷ Πέτρῳ, Ἀληθῶς καὶ σὺ ἐξ αὐτῶν εἶ· καὶ γὰρ ἡ λαλιά σου δῆλόν σε ποιεῖ.",
         "SYN": "Немного спустя подошли стоявшие там и сказали Петру: точно и ты из них, ибо и речь твоя обличает тебя.",
-        "BYZ": "Μετὰ μικρὸν δὲ προσελθόντες οἱ ἑστῶτες εἶπον τῷ Πέτρῳ, Ἀληθῶς καὶ σὺ ἐξ αὐτῶν εἶ· καὶ γὰρ ἡ λαλιά σου δῆλόν σε ποιεῖ."
+        "BYZ": "Μετὰ μικρὸν δὲ προσελθόντες οἱ ἑστῶτες εἶπον τῷ Πέτρῳ, Ἀληθῶς καὶ σὺ ἐξ αὐτῶν εἶ· καὶ γὰρ ἡ λαλιά σου δῆλόν σε ποιεῖ.",
+        "NEO": "Peu après, ceux qui étaient là s’approchèrent de Pierre, et lui dirent : « Certainement, tu es aussi de ces gens-là ; car ton langage même te faire reconnaître. »",
+        "NAB": "A little later the bystanders came over and said to Peter, \"Surely you too are one of them; even your speech gives you away.\"",
+        "VAT_ES": "Un poco más tarde, los que estaban allí se acercaron a Pedro y le dijeron: «Seguro que tú también eres uno de ellos; hasta tu acento te traiciona».",
+        "CEI": "Dopo un poco, i presenti gli si accostarono e dissero a Pietro: \"Certo anche tu sei di quelli; la tua parlata ti tradisce!\"."
       }
     },
     "74": {
@@ -1044,7 +1336,11 @@
         "VUL": "Tunc cpit detestari et jurare quia non novisset hominem. Et continuo gallus cantavit.",
         "LXX": "Τότε ἤρξατο καταθεματίζειν καὶ ὀμνύειν ὅτι Οὐκ οἶδα τὸν ἄνθρωπον. Καὶ εὐθέως ἀλέκτωρ ἐφώνησεν.",
         "SYN": "Тогда он начал клясться и божиться, что не знает Сего Человека. И вдруг запел петух.",
-        "BYZ": "Τότε ἤρξατο καταθεματίζειν καὶ ὀμνύειν ὅτι Οὐκ οἶδα τὸν ἄνθρωπον. Καὶ εὐθέως ἀλέκτωρ ἐφώνησεν."
+        "BYZ": "Τότε ἤρξατο καταθεματίζειν καὶ ὀμνύειν ὅτι Οὐκ οἶδα τὸν ἄνθρωπον. Καὶ εὐθέως ἀλέκτωρ ἐφώνησεν.",
+        "NEO": "Alors il se mit à faire des imprécations et à jurer qu’il ne connaissait pas cet homme. Aussitôt le coq chanta.+ 26:74 74. Marc, xiv, 72.*",
+        "NAB": "At that he began to curse and to swear, \"I do not know the man.\" And immediately a cock crowed.",
+        "VAT_ES": "Entonces Pedro se puso a maldecir y a jurar que no conocía a ese hombre. En seguida cantó el gallo,",
+        "CEI": "Allora egli cominciò a imprecare e a giurare: \"Non conosco quell'uomo!\". E subito un gallo cantò."
       }
     },
     "75": {
@@ -1055,10 +1351,14 @@
         "LXX": 75
       },
       "text": {
-        "VUL": "Et recordatus est Petrus verbi Jesu, quod dixerat: Priusquam gallus cantet, ter me negabis. Et egressus foras, flevit amare.",
+        "VUL": "Et recordatus est Petrus verbi Jesu, quod dixerat : Priusquam gallus cantet, ter me negabis. Et egressus foras, flevit amare.",
         "LXX": "Καὶ ἐμνήσθη ὁ Πέτρος τοῦ ῥήματος τοῦ Ἰησοῦ εἰρηκότος αὐτῷ ὅτι Πρὶν ἀλέκτορα φωνῆσαι, τρὶς ἀπαρνήσῃ με. Καὶ ἐξελθὼν ἔξω ἔκλαυσεν πικρῶς.",
         "SYN": "И вспомнил Петр слово, сказанное ему Иисусом: прежде нежели пропоет петух, трижды отречешься от Меня. И выйдя вон, плакал горько.",
-        "BYZ": "Καὶ ἐμνήσθη ὁ Πέτρος τοῦ ῥήματος τοῦ Ἰησοῦ εἰρηκότος αὐτῷ ὅτι Πρὶν ἀλέκτορα φωνῆσαι, τρὶς ἀπαρνήσῃ με. Καὶ ἐξελθὼν ἔξω ἔκλαυσεν πικρῶς."
+        "BYZ": "Καὶ ἐμνήσθη ὁ Πέτρος τοῦ ῥήματος τοῦ Ἰησοῦ εἰρηκότος αὐτῷ ὅτι Πρὶν ἀλέκτορα φωνῆσαι, τρὶς ἀπαρνήσῃ με. Καὶ ἐξελθὼν ἔξω ἔκλαυσεν πικρῶς.",
+        "NEO": "Et Pierre se souvint de la parole que Jésus lui avait dite : « Avant que le coq chante, tu me renieras trois fois+ 26:75 75. Trois fois, c’est-à-dire à \\+qt trois reprises\\+qt*, après un intervalle de temps plus ou moins considérable.* ; » et étant sorti, il pleura amèrement.",
+        "NAB": "Then Peter remembered the word that Jesus had spoken: \"Before the cock crows you will deny me three times.\" He went out and began to weep bitterly.",
+        "VAT_ES": "y Pedro recordó las palabras que Jesús había dicho: «Antes que cante el gallo, me negarás tres veces». Y saliendo, lloró amargamente.",
+        "CEI": "E Pietro si ricordò delle parole dette da Gesù: \"Prima che il gallo canti, mi rinnegherai tre volte\". E uscito all'aperto, pianse amaramente."
       }
     }
   }

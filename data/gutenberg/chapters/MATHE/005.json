@@ -22,7 +22,11 @@
         "VUL": "Videns autem Jesus turbas, ascendit in montem, et cum sedisset, accesserunt ad eum discipuli ejus,",
         "LXX": "Ἰδὼν δὲ τοὺς ὄχλους, ἀνέβη εἰς τὸ ὄρος· καὶ καθίσαντος αὐτοῦ, προσῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ·",
         "SYN": "Увидев народ, Он взошел на гору; и, когда сел, приступили к Нему ученики Его.",
-        "BYZ": "Ἰδὼν δὲ τοὺς ὄχλους, ἀνέβη εἰς τὸ ὄρος· καὶ καθίσαντος αὐτοῦ, προσῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ·"
+        "BYZ": "Ἰδὼν δὲ τοὺς ὄχλους, ἀνέβη εἰς τὸ ὄρος· καὶ καθίσαντος αὐτοῦ, προσῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ·",
+        "NEO": "Jésus, voyant cette foule, monta sur la montagne, et lorsqu’il se fut assis, ses disciples s’approchèrent de lui.",
+        "NAB": "When he saw the crowds, he went up the mountain, and after he had sat down, his disciples came to him.",
+        "VAT_ES": "Al ver a la multitud, Jesús subió a la montaña, se sentó, y sus discípulos se acercaron a él.",
+        "CEI": "Vedendo le folle, Gesù salì sulla montagna e, messosi a sedere, gli si avvicinarono i suoi discepoli."
       }
     },
     "2": {
@@ -33,10 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "VUL": "et aperiens os suum docebat eos dicens:",
+        "VUL": "et aperiens os suum docebat eos dicens :",
         "LXX": "καὶ ἀνοίξας τὸ στόμα αὐτοῦ, ἐδίδασκεν αὐτούς, λέγων,",
         "SYN": "И Он, отверзши уста Свои, учил их, говоря:",
-        "BYZ": "καὶ ἀνοίξας τὸ στόμα αὐτοῦ, ἐδίδασκεν αὐτούς, λέγων,"
+        "BYZ": "καὶ ἀνοίξας τὸ στόμα αὐτοῦ, ἐδίδασκεν αὐτούς, λέγων,",
+        "NEO": "Alors, ouvrant sa bouche, il se mit à les enseigner, en disant :",
+        "NAB": "He began to teach them, saying:",
+        "VAT_ES": "Entonces tomó la palabra y comenzó a enseñarles, diciendo:",
+        "CEI": "Prendendo allora la parola, li ammaestrava dicendo:"
       }
     },
     "3": {
@@ -47,10 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "VUL": "Beati pauperes spiritu: quoniam ipsorum est regnum cælorum.",
+        "VUL": "Beati pauperes spiritu : quoniam ipsorum est regnum cælorum.",
         "LXX": "Μακάριοι οἱ πτωχοὶ τῷ πνεύματι· ὅτι αὐτῶν ἐστιν ἡ βασιλεία τῶν οὐρανῶν.",
         "SYN": "Блаженны нищие духом, ибо их есть Царство Небесное.",
-        "BYZ": "Μακάριοι οἱ πτωχοὶ τῷ πνεύματι· ὅτι αὐτῶν ἐστιν ἡ βασιλεία τῶν οὐρανῶν."
+        "BYZ": "¶Μακάριοι οἱ πτωχοὶ τῷ πνεύματι· ὅτι αὐτῶν ἐστιν ἡ βασιλεία τῶν οὐρανῶν.",
+        "NEO": "« Heureux les pauvres en esprit+ 5:3 V, 3. Les pauvres en esprit: ceux qui n’ont pas l’esprit des richesses, le faste, l’orgueil, l’avidité insatiable ; mais qui ont l’esprit de pauvreté, sont humbles. (Luc, vi, 20.)*, car le royaume des cieux est à eux !",
+        "NAB": "\"Blessed are the poor in spirit, for theirs is the kingdom of heaven.",
+        "VAT_ES": "«Felices los que tienen alma de pobres, porque a ellos les pertenece el Reino de los Cielos.",
+        "CEI": "\"Beati i poveri in spirito, perché di essi è il regno dei cieli."
       }
     },
     "4": {
@@ -61,10 +73,14 @@
         "LXX": 4
       },
       "text": {
-        "VUL": "Beati mites: quoniam ipsi possidebunt terram.",
+        "VUL": "Beati mites : quoniam ipsi possidebunt terram.",
         "LXX": "Μακάριοι οἱ πενθοῦντες· ὅτι αὐτοὶ παρακληθήσονται.",
         "SYN": "Блаженны плачущие, ибо они утешатся.",
-        "BYZ": "Μακάριοι οἱ πενθοῦντες· ὅτι αὐτοὶ παρακληθήσονται."
+        "BYZ": "¶Μακάριοι οἱ πενθοῦντες· ὅτι αὐτοὶ παρακληθήσονται.",
+        "NEO": "Heureux ceux qui sont doux, car ils posséderont la terre !+ 5:4 4. La terre promise, voy. le Ps. xxxvii (\\+qt héb.\\+qt*).*",
+        "NAB": "Blessed are they who mourn, for they will be comforted.",
+        "VAT_ES": "Felices los pacientes, porque recibirán la tierra en herencia.",
+        "CEI": "Beati gli afflitti, perché saranno consolati."
       }
     },
     "5": {
@@ -75,10 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "VUL": "Beati qui lugent: quoniam ipsi consolabuntur.",
+        "VUL": "Beati qui lugent : quoniam ipsi consolabuntur.",
         "LXX": "Μακάριοι οἱ πρᾳεῖς· ὅτι αὐτοὶ κληρονομήσουσιν τὴν γῆν.",
         "SYN": "Блаженны кроткие, ибо они наследуют землю.",
-        "BYZ": "Μακάριοι οἱ πρᾳεῖς· ὅτι αὐτοὶ κληρονομήσουσιν τὴν γῆν."
+        "BYZ": "¶Μακάριοι οἱ πρᾳεῖς· ὅτι αὐτοὶ κληρονομήσουσιν τὴν γῆν.",
+        "NEO": "Heureux ceux qui pleurent, car ils seront consolés !",
+        "NAB": "Blessed are the meek, for they will inherit the land.",
+        "VAT_ES": "Felices los afligidos, porque serán consolados.",
+        "CEI": "Beati i miti, perché erediteranno la terra."
       }
     },
     "6": {
@@ -89,10 +109,14 @@
         "LXX": 6
       },
       "text": {
-        "VUL": "Beati qui esuriunt et sitiunt justitiam: quoniam ipsi saturabuntur.",
+        "VUL": "Beati qui esuriunt et sitiunt justitiam : quoniam ipsi saturabuntur.",
         "LXX": "Μακάριοι οἱ πεινῶντες καὶ διψῶντες τὴν δικαιοσύνην· ὅτι αὐτοὶ χορτασθήσονται.",
         "SYN": "Блаженны алчущие и жаждущие правды, ибо они насытятся.",
-        "BYZ": "Μακάριοι οἱ πεινῶντες καὶ διψῶντες τὴν δικαιοσύνην· ὅτι αὐτοὶ χορτασθήσονται."
+        "BYZ": "¶Μακάριοι οἱ πεινῶντες καὶ διψῶντες τὴν δικαιοσύνην· ὅτι αὐτοὶ χορτασθήσονται.",
+        "NEO": "Heureux ceux qui ont faim et soif de la justice, car ils seront rassasiés !",
+        "NAB": "Blessed are they who hunger and thirst for righteousness, for they will be satisfied.",
+        "VAT_ES": "Felices los que tienen hambre y sed de justicia, porque serán saciados.",
+        "CEI": "Beati quelli che hanno fame e sete della giustizia, perché saranno saziati."
       }
     },
     "7": {
@@ -103,10 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "VUL": "Beati misericordes: quoniam ipsi misericordiam consequentur.",
+        "VUL": "Beati misericordes : quoniam ipsi misericordiam consequentur.",
         "LXX": "Μακάριοι οἱ ἐλεήμονες· ὅτι αὐτοὶ ἐλεηθήσονται.",
         "SYN": "Блаженны милостивые, ибо они помилованы будут.",
-        "BYZ": "Μακάριοι οἱ ἐλεήμονες· ὅτι αὐτοὶ ἐλεηθήσονται."
+        "BYZ": "¶Μακάριοι οἱ ἐλεήμονες· ὅτι αὐτοὶ ἐλεηθήσονται.",
+        "NEO": "Heureux les miséricordieux, car ils obtiendront miséricorde !",
+        "NAB": "Blessed are the merciful, for they will be shown mercy.",
+        "VAT_ES": "Felices los misericordiosos, porque obtendrán misericordia.",
+        "CEI": "Beati i misericordiosi, perché troveranno misericordia."
       }
     },
     "8": {
@@ -117,10 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "VUL": "Beati mundo corde: quoniam ipsi Deum videbunt.",
+        "VUL": "Beati mundo corde : quoniam ipsi Deum videbunt.",
         "LXX": "Μακάριοι οἱ καθαροὶ τῇ καρδίᾳ· ὅτι αὐτοὶ τὸν θεὸν ὄψονται.",
         "SYN": "Блаженны чистые сердцем, ибо они Бога узрят.",
-        "BYZ": "Μακάριοι οἱ καθαροὶ τῇ καρδίᾳ· ὅτι αὐτοὶ τὸν θεὸν ὄψονται."
+        "BYZ": "¶Μακάριοι οἱ καθαροὶ τῇ καρδίᾳ· ὅτι αὐτοὶ τὸν θεὸν ὄψονται.",
+        "NEO": "Heureux ceux qui ont le cœur pur, car ils verront Dieu !",
+        "NAB": "Blessed are the clean of heart, for they will see God.",
+        "VAT_ES": "Felices los que tienen el corazón puro, porque verán a Dios.",
+        "CEI": "Beati i puri di cuore, perché vedranno Dio."
       }
     },
     "9": {
@@ -131,10 +163,14 @@
         "LXX": 9
       },
       "text": {
-        "VUL": "Beati pacifici: quoniam filii Dei vocabuntur.",
+        "VUL": "Beati pacifici : quoniam filii Dei vocabuntur.",
         "LXX": "Μακάριοι οἱ εἰρηνοποιοί· ὅτι αὐτοὶ υἱοὶ θεοῦ κληθήσονται.",
         "SYN": "Блаженны миротворцы, ибо они будут наречены сынами Божиими.",
-        "BYZ": "Μακάριοι οἱ εἰρηνοποιοί· ὅτι αὐτοὶ υἱοὶ θεοῦ κληθήσονται."
+        "BYZ": "¶Μακάριοι οἱ εἰρηνοποιοί· ὅτι αὐτοὶ υἱοὶ θεοῦ κληθήσονται.",
+        "NEO": "Heureux les pacifiques, car ils seront appelés enfants de Dieu !",
+        "NAB": "Blessed are the peacemakers, for they will be called children of God.",
+        "VAT_ES": "Felices los que trabajan por la paz, porque serán llamados hijos de Dios.",
+        "CEI": "Beati gli operatori di pace, perché saranno chiamati figli di Dio."
       }
     },
     "10": {
@@ -145,10 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "VUL": "Beati qui persecutionem patiuntur propter justitiam: quoniam ipsorum est regnum cælorum.",
+        "VUL": "Beati qui persecutionem patiuntur propter justitiam : quoniam ipsorum est regnum cælorum.",
         "LXX": "Μακάριοι οἱ δεδιωγμένοι ἕνεκεν δικαιοσύνης· ὅτι αὐτῶν ἐστιν ἡ βασιλεία τῶν οὐρανῶν.",
         "SYN": "Блаженны изгнанные за правду, ибо их есть Царство Небесное.",
-        "BYZ": "Μακάριοι οἱ δεδιωγμένοι ἕνεκεν δικαιοσύνης· ὅτι αὐτῶν ἐστιν ἡ βασιλεία τῶν οὐρανῶν."
+        "BYZ": "¶Μακάριοι οἱ δεδιωγμένοι ἕνεκεν δικαιοσύνης· ὅτι αὐτῶν ἐστιν ἡ βασιλεία τῶν οὐρανῶν.",
+        "NEO": "Heureux ceux qui souffrent persécution pour la justice, car le royaume des cieux est à eux !",
+        "NAB": "Blessed are they who are persecuted for the sake of righteousness, for theirs is the kingdom of heaven.",
+        "VAT_ES": "Felices los que son perseguidos por practicar la justicia, porque a ellos les pertenece el Reino de los Cielos.",
+        "CEI": "Beati i perseguitati per causa della giustizia, perché di essi è il regno dei cieli."
       }
     },
     "11": {
@@ -159,10 +199,14 @@
         "LXX": 11
       },
       "text": {
-        "VUL": "Beati estis cum maledixerint vobis, et persecuti vos fuerint, et dixerint omne malum adversum vos mentientes, propter me:",
+        "VUL": "Beati estis cum maledixerint vobis, et persecuti vos fuerint, et dixerint omne malum adversum vos mentientes, propter me :",
         "LXX": "Μακάριοί ἐστε, ὅταν ὀνειδίσωσιν ὑμᾶς καὶ διώξωσιν, καὶ εἴπωσιν πᾶν πονηρὸν ῥῆμα καθ’ ὑμῶν ψευδόμενοι, ἕνεκεν ἐμοῦ.",
         "SYN": "Блаженны вы, когда будут поносить вас и гнать и всячески неправедно злословить за Меня.",
-        "BYZ": "Μακάριοί ἐστε, ὅταν ὀνειδίσωσιν ὑμᾶς καὶ διώξωσιν, καὶ εἴπωσιν πᾶν πονηρὸν ῥῆμα καθ’ ὑμῶν ψευδόμενοι, ἕνεκεν ἐμοῦ."
+        "BYZ": "¶Μακάριοί ἐστε, ὅταν ὀνειδίσωσιν ὑμᾶς καὶ διώξωσιν, καὶ εἴπωσιν πᾶν πονηρὸν ῥῆμα καθ’ ὑμῶν ψευδόμενοι, ἕνεκεν ἐμοῦ.",
+        "NEO": "Heureux êtes-vous, lorsqu’on vous insultera, qu’on vous persécutera, et qu’on dira faussement toute sorte de mal contre vous, à cause de moi.",
+        "NAB": "Blessed are you when they insult you and persecute you and utter every kind of evil against you (falsely) because of me.",
+        "VAT_ES": "Felices ustedes, cuando sean insultados y perseguidos, y cuando se los calumnie en toda forma a causa de mí.",
+        "CEI": "Beati voi quando vi insulteranno, vi perseguiteranno e, mentendo, diranno ogni sorta di male contro di voi per causa mia."
       }
     },
     "12": {
@@ -175,8 +219,12 @@
       "text": {
         "VUL": "gaudete, et exsultate, quoniam merces vestra copiosa est in cælis. Sic enim persecuti sunt prophetas, qui fuerunt ante vos.",
         "LXX": "Χαίρετε καὶ ἀγαλλιᾶσθε, ὅτι ὁ μισθὸς ὑμῶν πολὺς ἐν τοῖς οὐρανοῖς· οὕτως γὰρ ἐδίωξαν τοὺς προφήτας τοὺς πρὸ ὑμῶν.",
-        "SYN": "Радуйтесь и веселитесь, ибо велика ваша награда на небесах: так гнали и пророков, бывших прежде вас.",
-        "BYZ": "Χαίρετε καὶ ἀγαλλιᾶσθε, ὅτι ὁ μισθὸς ὑμῶν πολὺς ἐν τοῖς οὐρανοῖς· οὕτως γὰρ ἐδίωξαν τοὺς προφήτας τοὺς πρὸ ὑμῶν."
+        "SYN": "Радуйтесь и веселитесь, ибо велика ваша награда на небесах: так гнали _и_ пророков, бывших прежде вас.",
+        "BYZ": "Χαίρετε καὶ ἀγαλλιᾶσθε, ὅτι ὁ μισθὸς ὑμῶν πολὺς ἐν τοῖς οὐρανοῖς· οὕτως γὰρ ἐδίωξαν τοὺς προφήτας τοὺς πρὸ ὑμῶν.",
+        "NEO": "Réjouissez-vous et soyez dans l’allégresse, car votre récompense est grande dans les cieux : c’est ainsi qu’ils ont persécuté les prophètes qui ont été avant vous.",
+        "NAB": "Rejoice and be glad, for your reward will be great in heaven. Thus they persecuted the prophets who were before you.",
+        "VAT_ES": "Alégrense y regocíjense entonces, porque ustedes tendrán una gran recompensa en el cielo; de la misma manera persiguieron a los profetas que los precedieron.",
+        "CEI": "Rallegratevi ed esultate, perché grande è la vostra ricompensa nei cieli. Così infatti hanno perseguitato i profeti prima di voi."
       }
     },
     "13": {
@@ -190,7 +238,11 @@
         "VUL": "Vos estis sal terræ. Quod si sal evanuerit, in quo salietur ? ad nihilum valet ultra, nisi ut mittatur foras, et conculcetur ab hominibus.",
         "LXX": "Ὑμεῖς ἐστε τὸ ἅλας τῆς γῆς· ἐὰν δὲ τὸ ἅλας μωρανθῇ, ἐν τίνι ἁλισθήσεται; Εἰς οὐδὲν ἰσχύει ἔτι, εἰ μὴ βληθῆναι ἔξω καὶ καταπατεῖσθαι ὑπὸ τῶν ἀνθρώπων.",
         "SYN": "Вы -- соль земли. Если же соль потеряет силу, то чем сделаешь ее соленою? Она уже ни к чему негодна, как разве выбросить ее вон на попрание людям.",
-        "BYZ": "Ὑμεῖς ἐστε τὸ ἅλας τῆς γῆς· ἐὰν δὲ τὸ ἅλας μωρανθῇ, ἐν τίνι ἁλισθήσεται; Εἰς οὐδὲν ἰσχύει ἔτι, εἰ μὴ βληθῆναι ἔξω καὶ καταπατεῖσθαι ὑπὸ τῶν ἀνθρώπων."
+        "BYZ": "¶Ὑμεῖς ἐστε τὸ ἅλας τῆς γῆς· ἐὰν δὲ τὸ ἅλας μωρανθῇ, ἐν τίνι ἁλισθήσεται; Εἰς οὐδὲν ἰσχύει ἔτι, εἰ μὴ βληθῆναι ἔξω καὶ καταπατεῖσθαι ὑπὸ τῶν ἀνθρώπων.",
+        "NEO": "Vous êtes le sel de la terre. Si le sel s’affadit, avec quoi lui rendra-t-on sa saveur ? Il n’est plus bon à rien qu’à être jeté dehors et foulé aux pieds par les hommes.",
+        "NAB": "\"You are the salt of the earth. But if salt loses its taste, with what can it be seasoned? It is no longer good for anything but to be thrown out and trampled underfoot.",
+        "VAT_ES": "Ustedes son la sal de la tierra. Pero si la sal pierde su sabor, &iquest;con qué se la volverá a salar? Ya no sirve para nada, sino para ser tirada y pisada por los hombres.",
+        "CEI": "Voi siete il sale della terra; ma se il sale perdesse il sapore, con che cosa lo si potrà render salato? A null'altro serve che ad essere gettato via e calpestato dagli uomini."
       }
     },
     "14": {
@@ -204,7 +256,11 @@
         "VUL": "Vos estis lux mundi. Non potest civitas abscondi supra montem posita,",
         "LXX": "Ὑμεῖς ἐστε τὸ φῶς τοῦ κόσμου· οὐ δύναται πόλις κρυβῆναι ἐπάνω ὄρους κειμένη·",
         "SYN": "Вы -- свет мира. Не может укрыться город, стоящий на верху горы.",
-        "BYZ": "Ὑμεῖς ἐστε τὸ φῶς τοῦ κόσμου· οὐ δύναται πόλις κρυβῆναι ἐπάνω ὄρους κειμένη·"
+        "BYZ": "Ὑμεῖς ἐστε τὸ φῶς τοῦ κόσμου· οὐ δύναται πόλις κρυβῆναι ἐπάνω ὄρους κειμένη·",
+        "NEO": "Vous êtes la lumière du monde. Une ville située au sommet d’une montagne ne peut être cachée ;",
+        "NAB": "You are the light of the world. A city set on a mountain cannot be hidden.",
+        "VAT_ES": "Ustedes son la luz del mundo. No se puede ocultar una ciudad situada en la cima de una montaña.",
+        "CEI": "Voi siete la luce del mondo; non può restare nascosta una città collocata sopra un monte,"
       }
     },
     "15": {
@@ -218,7 +274,11 @@
         "VUL": "neque accendunt lucernam, et ponunt eam sub modio, sed super candelabrum, ut luceat omnibus qui in domo sunt.",
         "LXX": "οὐδὲ καίουσιν λύχνον καὶ τιθέασιν αὐτὸν ὑπὸ τὸν μόδιον, ἀλλ’ ἐπὶ τὴν λυχνίαν, καὶ λάμπει πᾶσιν τοῖς ἐν τῇ οἰκίᾳ.",
         "SYN": "И, зажегши свечу, не ставят ее под сосудом, но на подсвечнике, и светит всем в доме.",
-        "BYZ": "οὐδὲ καίουσιν λύχνον καὶ τιθέασιν αὐτὸν ὑπὸ τὸν μόδιον, ἀλλ’ ἐπὶ τὴν λυχνίαν, καὶ λάμπει πᾶσιν τοῖς ἐν τῇ οἰκίᾳ."
+        "BYZ": "οὐδὲ καίουσιν λύχνον καὶ τιθέασιν αὐτὸν ὑπὸ τὸν μόδιον, ἀλλ’ ἐπὶ τὴν λυχνίαν, καὶ λάμπει πᾶσιν τοῖς ἐν τῇ οἰκίᾳ.",
+        "NEO": "et on n’allume pas une lampe pour la mettre sous le boisseau, mais sur le chandelier, et elle éclaire tous ceux qui sont dans la maison.",
+        "NAB": "Nor do they light a lamp and then put it under a bushel basket; it is set on a lampstand, where it gives light to all in the house.",
+        "VAT_ES": "Y no se enciende una lámpara para meterla debajo de un cajón, sino que se la pone sobre el candelero para que ilumine a todos los que están en la casa.",
+        "CEI": "né si accende una lucerna per metterla sotto il moggio, ma sopra il lucerniere perché faccia luce a tutti quelli che sono nella casa."
       }
     },
     "16": {
@@ -229,10 +289,14 @@
         "LXX": 16
       },
       "text": {
-        "VUL": "Sic luceat lux vestra coram hominibus: ut videant opera vestra bona, et glorificent Patrem vestrum, qui in cælis est.",
+        "VUL": "Sic luceat lux vestra coram hominibus : ut videant opera vestra bona, et glorificent Patrem vestrum, qui in cælis est.",
         "LXX": "Οὕτως λαμψάτω τὸ φῶς ὑμῶν ἔμπροσθεν τῶν ἀνθρώπων, ὅπως ἴδωσιν ὑμῶν τὰ καλὰ ἔργα, καὶ δοξάσωσιν τὸν πατέρα ὑμῶν τὸν ἐν τοῖς οὐρανοῖς.",
         "SYN": "Так да светит свет ваш пред людьми, чтобы они видели ваши добрые дела и прославляли Отца вашего Небесного.",
-        "BYZ": "Οὕτως λαμψάτω τὸ φῶς ὑμῶν ἔμπροσθεν τῶν ἀνθρώπων, ὅπως ἴδωσιν ὑμῶν τὰ καλὰ ἔργα, καὶ δοξάσωσιν τὸν πατέρα ὑμῶν τὸν ἐν τοῖς οὐρανοῖς."
+        "BYZ": "Οὕτως λαμψάτω τὸ φῶς ὑμῶν ἔμπροσθεν τῶν ἀνθρώπων, ὅπως ἴδωσιν ὑμῶν τὰ καλὰ ἔργα, καὶ δοξάσωσιν τὸν πατέρα ὑμῶν τὸν ἐν τοῖς οὐρανοῖς.",
+        "NEO": "Qu’ainsi votre lumière brille devant les hommes, afin que, voyant vos bonnes œuvres, ils glorifient votre Père qui est dans les cieux.",
+        "NAB": "Just so, your light must shine before others, that they may see your good deeds and glorify your heavenly Father.",
+        "VAT_ES": "Así debe brillar ante los ojos de los hombres la luz que hay en ustedes, a fin de que ellos vean sus buenas obras y glorifiquen al Padre que está en el cielo.",
+        "CEI": "Così risplenda la vostra luce davanti agli uomini, perché vedano le vostre opere buone e rendano gloria al vostro Padre che è nei cieli."
       }
     },
     "17": {
@@ -243,10 +307,14 @@
         "LXX": 17
       },
       "text": {
-        "VUL": "Nolite putare quoniam veni solvere legem aut prophetas: non veni solvere, sed adimplere.",
+        "VUL": "Nolite putare quoniam veni solvere legem aut prophetas : non veni solvere, sed adimplere.",
         "LXX": "Μὴ νομίσητε ὅτι ἦλθον καταλῦσαι τὸν νόμον ἢ τοὺς προφήτας· οὐκ ἦλθον καταλῦσαι ἀλλὰ πληρῶσαι.",
         "SYN": "Не думайте, что Я пришел нарушить закон или пророков: не нарушить пришел Я, но исполнить.",
-        "BYZ": "Μὴ νομίσητε ὅτι ἦλθον καταλῦσαι τὸν νόμον ἢ τοὺς προφήτας· οὐκ ἦλθον καταλῦσαι ἀλλὰ πληρῶσαι."
+        "BYZ": "¶Μὴ νομίσητε ὅτι ἦλθον καταλῦσαι τὸν νόμον ἢ τοὺς προφήτας· οὐκ ἦλθον καταλῦσαι ἀλλὰ πληρῶσαι.",
+        "NEO": "Ne pensez pas que je sois venu abolir la Loi ou les Prophètes ; je ne suis pas venu les* abolir, mais les* accomplir.",
+        "NAB": "\"Do not think that I have come to abolish the law or the prophets. I have come not to abolish but to fulfill.",
+        "VAT_ES": "No piensen que vine para abolir la Ley o los Profetas: yo no he venido a abolir, sino a dar cumplimiento.",
+        "CEI": "Non pensate che io sia venuto ad abolire la Legge o i Profeti; non son venuto per abolire, ma per dare compimento."
       }
     },
     "18": {
@@ -260,7 +328,11 @@
         "VUL": "Amen quippe dico vobis, donec transeat cælum et terra, jota unum aut unus apex non præteribit a lege, donec omnia fiant.",
         "LXX": "Ἀμὴν γὰρ λέγω ὑμῖν, ἕως ἂν παρέλθῃ ὁ οὐρανὸς καὶ ἡ γῆ, ἰῶτα ἓν ἢ μία κεραία οὐ μὴ παρέλθῃ ἀπὸ τοῦ νόμου, ἕως ἂν πάντα γένηται.",
         "SYN": "Ибо истинно говорю вам: доколе не прейдет небо и земля, ни одна иота или ни одна черта не прейдет из закона, пока не исполнится все.",
-        "BYZ": "Ἀμὴν γὰρ λέγω ὑμῖν, ἕως ἂν παρέλθῃ ὁ οὐρανὸς καὶ ἡ γῆ, ἰῶτα ἓν ἢ μία κεραία οὐ μὴ παρέλθῃ ἀπὸ τοῦ νόμου, ἕως ἂν πάντα γένηται."
+        "BYZ": "Ἀμὴν γὰρ λέγω ὑμῖν, ἕως ἂν παρέλθῃ ὁ οὐρανὸς καὶ ἡ γῆ, ἰῶτα ἓν ἢ μία κεραία οὐ μὴ παρέλθῃ ἀπὸ τοῦ νόμου, ἕως ἂν πάντα γένηται.",
+        "NEO": "Car, je vous le dis en vérité, jusqu’à ce que passent le ciel et la terre, un seul iota+ 5:18 18. Un seul iota, etc. Locution proverbiale pour exprimer la plus petite partie d’une chose. La lettre \\+qt y, yod\\+qt* en hébreu, rendue par le \\+qt iota grec\\+qt*, est la plus petite des lettres hébraïques ; \\+qt un trait\\+qt* litt. une \\+qt corne\\+qt*, une partie de lettre.* ou un seul trait de la Loi ne passera pas, que tout ne soit accompli.",
+        "NAB": "Amen, I say to you, until heaven and earth pass away, not the smallest letter or the smallest part of a letter will pass from the law, until all things have taken place.",
+        "VAT_ES": "Les aseguro que no desaparecerá ni una i ni una coma de la Ley, antes que desaparezcan el cielo y la tierra, hasta que todo se realice.",
+        "CEI": "In verità vi dico: finché non siano passati il cielo e la terra, non passerà neppure un iota o un segno dalla legge, senza che tutto sia compiuto."
       }
     },
     "19": {
@@ -271,10 +343,14 @@
         "LXX": 19
       },
       "text": {
-        "VUL": "Qui ergo solverit unum de mandatis istis minimis, et docuerit sic homines, minimus vocabitur in regno cælorum: qui autem fecerit et docuerit, hic magnus vocabitur in regno cælorum.",
+        "VUL": "Qui ergo solverit unum de mandatis istis minimis, et docuerit sic homines, minimus vocabitur in regno cælorum : qui autem fecerit et docuerit, hic magnus vocabitur in regno cælorum.",
         "LXX": "Ὃς ἐὰν οὖν λύσῃ μίαν τῶν ἐντολῶν τούτων τῶν ἐλαχίστων, καὶ διδάξῃ οὕτως τοὺς ἀνθρώπους, ἐλάχιστος κληθήσεται ἐν τῇ βασιλείᾳ τῶν οὐρανῶν· ὃς δ’ ἂν ποιήσῃ καὶ διδάξῃ, οὗτος μέγας κληθήσεται ἐν τῇ βασιλείᾳ τῶν οὐρανῶν.",
         "SYN": "Итак, кто нарушит одну из заповедей сих малейших и научит так людей, тот малейшим наречется в Царстве Небесном; а кто сотворит и научит, тот великим наречется в Царстве Небесном.",
-        "BYZ": "Ὃς ἐὰν οὖν λύσῃ μίαν τῶν ἐντολῶν τούτων τῶν ἐλαχίστων, καὶ διδάξῃ οὕτως τοὺς ἀνθρώπους, ἐλάχιστος κληθήσεται ἐν τῇ βασιλείᾳ τῶν οὐρανῶν· ὃς δ’ ἂν ποιήσῃ καὶ διδάξῃ, οὗτος μέγας κληθήσεται ἐν τῇ βασιλείᾳ τῶν οὐρανῶν."
+        "BYZ": "Ὃς ἐὰν οὖν λύσῃ μίαν τῶν ἐντολῶν τούτων τῶν ἐλαχίστων, καὶ διδάξῃ οὕτως τοὺς ἀνθρώπους, ἐλάχιστος κληθήσεται ἐν τῇ βασιλείᾳ τῶν οὐρανῶν· ὃς δ’ ἂν ποιήσῃ καὶ διδάξῃ, οὗτος μέγας κληθήσεται ἐν τῇ βασιλείᾳ τῶν οὐρανῶν.",
+        "NEO": "Celui donc qui aura violé un de ces moindres commandements, et appris aux hommes à faire de même, sera le moindre dans le royaume des cieux ; mais celui qui les aura pratiqués et enseignés, sera grand dans le royaume des cieux.",
+        "NAB": "Therefore, whoever breaks one of the least of these commandments and teaches others to do so will be called least in the kingdom of heaven. But whoever obeys and teaches these commandments will be called greatest in the kingdom of heaven.",
+        "VAT_ES": "El que no cumpla el más pequeño de estos mandamientos, y enseñe a los otros a hacer lo mismo, será considerado el menor en el Reino de los Cielos. En cambio, el que los cumpla y enseñe, será considerado grande en el Reino de los Cielos.",
+        "CEI": "Chi dunque trasgredirà uno solo di questi precetti, anche minimi, e insegnerà agli uomini a fare altrettanto, sarà considerato minimo nel regno dei cieli. Chi invece li osserverà e li insegnerà agli uomini, sarà considerato grande nel regno dei cieli."
       }
     },
     "20": {
@@ -288,7 +364,11 @@
         "VUL": "Dico enim vobis, quia nisi abundaverit justitia vestra plus quam scribarum et pharisæorum, non intrabitis in regnum cælorum.",
         "LXX": "Λέγω γὰρ ὑμῖν ὅτι ἐὰν μὴ περισσεύσῃ ἡ δικαιοσύνη ὑμῶν πλεῖον τῶν γραμματέων καὶ Φαρισαίων, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν.",
         "SYN": "Ибо, говорю вам, если праведность ваша не превзойдет праведности книжников и фарисеев, то вы не войдете в Царство Небесное.",
-        "BYZ": "Λέγω γὰρ ὑμῖν ὅτι ἐὰν μὴ περισσεύσῃ ἡ δικαιοσύνη ὑμῶν πλεῖον τῶν γραμματέων καὶ Φαρισαίων, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν."
+        "BYZ": "Λέγω γὰρ ὑμῖν ὅτι ἐὰν μὴ περισσεύσῃ ἡ δικαιοσύνη ὑμῶν πλεῖον τῶν γραμματέων καὶ Φαρισαίων, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν.",
+        "NEO": "Car je vous dis que si votre justice ne surpasse celle des Scribes et des Pharisiens, vous n’entrerez pas dans le royaume des cieux.",
+        "NAB": "I tell you, unless your righteousness surpasses that of the scribes and Pharisees, you will not enter into the kingdom of heaven.",
+        "VAT_ES": "Les aseguro que si la justicia de ustedes no es superior a la de los escribas y fariseos, no entrarán en el Reino de los Cielos.",
+        "CEI": "Poiché io vi dico: se la vostra giustizia non supererà quella degli scribi e dei farisei, non entrerete nel regno dei cieli."
       }
     },
     "21": {
@@ -299,10 +379,14 @@
         "LXX": 21
       },
       "text": {
-        "VUL": "Audistis quia dictum est antiquis: Non occides: qui autem occiderit, reus erit judicio.",
+        "VUL": "Audistis quia dictum est antiquis : Non occides : qui autem occiderit, reus erit judicio.",
         "LXX": "Ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις, Οὐ φονεύσεις· ὃς δ’ ἂν φονεύσῃ, ἔνοχος ἔσται τῇ κρίσει·",
         "SYN": "Вы слышали, что сказано древним: не убивай, кто же убьет, подлежит суду.",
-        "BYZ": "Ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις, Οὐ φονεύσεις· ὃς δ’ ἂν φονεύσῃ, ἔνοχος ἔσται τῇ κρίσει·"
+        "BYZ": "¶Ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις, Οὐ φονεύσεις· ὃς δ’ ἂν φονεύσῃ, ἔνοχος ἔσται τῇ κρίσει·",
+        "NEO": "Vous avez appris qu’il a été dit aux anciens : « Tu ne tueras pas, et celui qui tuera mérite d’être puni par le tribunal.* »+ 5:21 21. Il s’agit du tribunal établi dans chaque ville de province ; il jugeait sans appel les causes légères, et, sauf appel au Sanhédrin, les causes graves, même capitales.*",
+        "NAB": "\"You have heard that it was said to your ancestors, 'You shall not kill; and whoever kills will be liable to judgment.'",
+        "VAT_ES": "Ustedes han oído que se dijo a los antepasados: \"No matarás\", y el que mata, debe ser llevado ante el tribunal.",
+        "CEI": "Avete inteso che fu detto agli antichi: Non uccidere; chi avrà ucciso sarà sottoposto a giudizio."
       }
     },
     "22": {
@@ -313,10 +397,14 @@
         "LXX": 22
       },
       "text": {
-        "VUL": "Ego autem dico vobis: quia omnis qui irascitur fratri suo, reus erit judicio. Qui autem dixerit fratri suo, raca: reus erit concilio. Qui autem dixerit, fatue: reus erit gehennæ ignis.",
+        "VUL": "Ego autem dico vobis : quia omnis qui irascitur fratri suo, reus erit judicio. Qui autem dixerit fratri suo, raca : reus erit concilio. Qui autem dixerit, fatue : reus erit gehennæ ignis.",
         "LXX": "ἐγὼ δὲ λέγω ὑμῖν ὅτι πᾶς ὁ ὀργιζόμενος τῷ ἀδελφῷ αὐτοῦ εἰκῇ ἔνοχος ἔσται τῇ κρίσει· ὃς δ’ ἂν εἴπῃ τῷ ἀδελφῷ αὐτοῦ, Ῥακά, ἔνοχος ἔσται τῷ συνεδρίῳ· ὃς δ’ ἂν εἴπῃ, Μωρέ, ἔνοχος ἔσται εἰς τὴν γέενναν τοῦ πυρός.",
         "SYN": "А Я говорю вам, что всякий, гневающийся на брата своего напрасно, подлежит суду; кто же скажет брату своему: \"рака\", подлежит синедриону; а кто скажет: \"безумный\", подлежит геенне огненной.",
-        "BYZ": "ἐγὼ δὲ λέγω ὑμῖν ὅτι πᾶς ὁ ὀργιζόμενος τῷ ἀδελφῷ αὐτοῦ εἰκῇ ἔνοχος ἔσται τῇ κρίσει· ὃς δ’ ἂν εἴπῃ τῷ ἀδελφῷ αὐτοῦ, Ῥακά, ἔνοχος ἔσται τῷ συνεδρίῳ· ὃς δ’ ἂν εἴπῃ, Μωρέ, ἔνοχος ἔσται εἰς τὴν γέενναν τοῦ πυρός."
+        "BYZ": "ἐγὼ δὲ λέγω ὑμῖν ὅτι πᾶς ὁ ὀργιζόμενος τῷ ἀδελφῷ αὐτοῦ εἰκῇ ἔνοχος ἔσται τῇ κρίσει· ὃς δ’ ἂν εἴπῃ τῷ ἀδελφῷ αὐτοῦ, Ῥακά, ἔνοχος ἔσται τῷ συνεδρίῳ· ὃς δ’ ἂν εἴπῃ, Μωρέ, ἔνοχος ἔσται εἰς τὴν γέενναν τοῦ πυρός.",
+        "NEO": "Et moi, je vous dis : Quiconque se met en colère contre son frère mérite d’être puni par le tribunal ; et celui qui dira à son frère : Raca, mérite d’être puni par le Conseil ; et celui qui lui dira : Fou, mérite d’être jeté dans la géhenne du feu.+ 5:22 22. D’après la loi, lue dans les synagogues, l’homicide relevait d’un tribunal pouvant porter la peine de mort. Le divin Maître ne proscrit pas seulement l’homicide, mais ce qui peut y conduire comme la haine, la colère. Il met en gradation les fautes : la simple colère, la colère accompagnée de paroles outrageantes, méprisantes et la colère accompagnée de la plus grave injure pour un membre du peuple de Dieu, l’accusation de cette folie religieuse qu’est l’impiété, l’athéisme (Ps. lii, 1). Les peines sont également en gradation avec les tribunaux qui les portent : le \\+qt tribunal ordinaire\\+qt* établi dans les différentes parties du pays ; le tribunal supérieur, nommé \\+qt conseil, sanhédrin\\+qt*, dont les sentences étaient plus graves. Enfin la Géhenne, \\+qt gêhinnom\\+qt*, \\+qt vallée d’Hinnom\\+qt*, figure de l’enfer.*",
+        "NAB": "But I say to you, whoever is angry with his brother will be liable to judgment, and whoever says to his brother, 'Raqa,' will be answerable to the Sanhedrin, and whoever says, 'You fool,' will be liable to fiery Gehenna.",
+        "VAT_ES": "Pero yo les digo que todo aquel que se irrita contra su hermano, merece ser condenado por un tribunal. Y todo aquel que lo insulta, merece ser castigado por el Sanedrín. Y el que lo maldice, merece la Gehena de fuego.",
+        "CEI": "Ma io vi dico: chiunque si adira con il proprio fratello, sarà sottoposto a giudizio. Chi poi dice al fratello: stupido, sarà sottoposto al sinedrio; e chi gli dice: pazzo, sarà sottoposto al fuoco della Geenna."
       }
     },
     "23": {
@@ -327,10 +415,14 @@
         "LXX": 23
       },
       "text": {
-        "VUL": "Si ergo offers munus tuum ad altare, et ibi recordatus fueris quia frater tuus habet aliquid adversum te:",
+        "VUL": "Si ergo offers munus tuum ad altare, et ibi recordatus fueris quia frater tuus habet aliquid adversum te :",
         "LXX": "Ἐὰν οὖν προσφέρῃς τὸ δῶρόν σου ἐπὶ τὸ θυσιαστήριον, καὶ ἐκεῖ μνησθῇς ὅτι ὁ ἀδελφός σου ἔχει τι κατὰ σοῦ,",
         "SYN": "Итак, если ты принесешь дар твой к жертвеннику и там вспомнишь, что брат твой имеет что-нибудь против тебя,",
-        "BYZ": "Ἐὰν οὖν προσφέρῃς τὸ δῶρόν σου ἐπὶ τὸ θυσιαστήριον, καὶ ἐκεῖ μνησθῇς ὅτι ὁ ἀδελφός σου ἔχει τι κατὰ σοῦ,"
+        "BYZ": "Ἐὰν οὖν προσφέρῃς τὸ δῶρόν σου ἐπὶ τὸ θυσιαστήριον, καὶ ἐκεῖ μνησθῇς ὅτι ὁ ἀδελφός σου ἔχει τι κατὰ σοῦ,",
+        "NEO": "Si donc, lorsque tu présentes ton offrande à l’autel, tu te souviens que ton frère a quelque chose contre toi,",
+        "NAB": "Therefore, if you bring your gift to the altar, and there recall that your brother has anything against you,",
+        "VAT_ES": "Por lo tanto, si al presentar tu ofrenda en el altar, te acuerdas de que tu hermano tiene alguna queja contra ti,",
+        "CEI": "Se dunque presenti la tua offerta sull'altare e lì ti ricordi che tuo fratello ha qualche cosa contro di te,"
       }
     },
     "24": {
@@ -341,10 +433,14 @@
         "LXX": 24
       },
       "text": {
-        "VUL": "relinque ibi munus tuum ante altare, et vade prius reconciliari fratri tuo: et tunc veniens offeres munus tuum.",
+        "VUL": "relinque ibi munus tuum ante altare, et vade prius reconciliari fratri tuo : et tunc veniens offeres munus tuum.",
         "LXX": "ἄφες ἐκεῖ τὸ δῶρόν σου ἔμπροσθεν τοῦ θυσιαστηρίου, καὶ ὕπαγε, πρῶτον διαλλάγηθι τῷ ἀδελφῷ σου, καὶ τότε ἐλθὼν πρόσφερε τὸ δῶρόν σου.",
         "SYN": "оставь там дар твой пред жертвенником, и пойди прежде примирись с братом твоим, и тогда приди и принеси дар твой.",
-        "BYZ": "ἄφες ἐκεῖ τὸ δῶρόν σου ἔμπροσθεν τοῦ θυσιαστηρίου, καὶ ὕπαγε, πρῶτον διαλλάγηθι τῷ ἀδελφῷ σου, καὶ τότε ἐλθὼν πρόσφερε τὸ δῶρόν σου."
+        "BYZ": "ἄφες ἐκεῖ τὸ δῶρόν σου ἔμπροσθεν τοῦ θυσιαστηρίου, καὶ ὕπαγε, πρῶτον διαλλάγηθι τῷ ἀδελφῷ σου, καὶ τότε ἐλθὼν πρόσφερε τὸ δῶρόν σου.",
+        "NEO": "laisse là ton offrande devant l’autel, et va d’abord te réconcilier avec ton frère ; puis viens présenter ton offrande.",
+        "NAB": "leave your gift there at the altar, go first and be reconciled with your brother, and then come and offer your gift.",
+        "VAT_ES": "deja tu ofrenda ante el altar, ve a reconciliarte con tu hermano, y sólo entonces vuelve a presentar tu ofrenda.",
+        "CEI": "lascia lì il tuo dono davanti all'altare e và prima a riconciliarti con il tuo fratello e poi torna ad offrire il tuo dono."
       }
     },
     "25": {
@@ -355,10 +451,14 @@
         "LXX": 25
       },
       "text": {
-        "VUL": "Esto consentiens adversario tuo cito dum es in via cum eo: ne forte tradat te adversarius judici, et judex tradat te ministro: et in carcerem mittaris.",
+        "VUL": "Esto consentiens adversario tuo cito dum es in via cum eo : ne forte tradat te adversarius judici, et judex tradat te ministro : et in carcerem mittaris.",
         "LXX": "Ἴσθι εὐνοῶν τῷ ἀντιδίκῳ σου ταχύ, ἕως ὅτου εἶ ἐν τῇ ὁδῷ μετ’ αὐτοῦ, μήποτέ σε παραδῷ ὁ ἀντίδικος τῷ κριτῇ, καὶ ὁ κριτής σε παραδῷ τῷ ὑπηρέτῃ, καὶ εἰς φυλακὴν βληθήσῃ.",
         "SYN": "Мирись с соперником твоим скорее, пока ты еще на пути с ним, чтобы соперник не отдал тебя судье, а судья не отдал бы тебя слуге, и не ввергли бы тебя в темницу;",
-        "BYZ": "Ἴσθι εὐνοῶν τῷ ἀντιδίκῳ σου ταχύ, ἕως ὅτου εἶ ἐν τῇ ὁδῷ μετ’ αὐτοῦ, μήποτέ σε παραδῷ ὁ ἀντίδικος τῷ κριτῇ, καὶ ὁ κριτής σε παραδῷ τῷ ὑπηρέτῃ, καὶ εἰς φυλακὴν βληθήσῃ."
+        "BYZ": "Ἴσθι εὐνοῶν τῷ ἀντιδίκῳ σου ταχύ, ἕως ὅτου εἶ ἐν τῇ ὁδῷ μετ’ αὐτοῦ, μήποτέ σε παραδῷ ὁ ἀντίδικος τῷ κριτῇ, καὶ ὁ κριτής σε παραδῷ τῷ ὑπηρέτῃ, καὶ εἰς φυλακὴν βληθήσῃ.",
+        "NEO": "Accorde-toi au plus tôt avec ton adversaire, pendant que vous allez ensemble au tribunal,* de peur qu’il ne te livre au juge, que le juge ne te livre à l’appariteur, et que tu ne sois jeté en prison.",
+        "NAB": "Settle with your opponent quickly while on the way to court with him. Otherwise your opponent will hand you over to the judge, and the judge will hand you over to the guard, and you will be thrown into prison.",
+        "VAT_ES": "Trata de llegar en seguida a un acuerdo con tu adversario, mientras vas caminando con él, no sea que el adversario te entregue al juez, y el juez al guardia, y te pongan preso.",
+        "CEI": "Mettiti presto d'accordo con il tuo avversario mentre sei per via con lui, perché l'avversario non ti consegni al giudice e il giudice alla guardia e tu venga gettato in prigione."
       }
     },
     "26": {
@@ -372,7 +472,11 @@
         "VUL": "Amen dico tibi, non exies inde, donec reddas novissimum quadrantem.",
         "LXX": "Ἀμὴν λέγω σοι, οὐ μὴ ἐξέλθῃς ἐκεῖθεν, ἕως ἂν ἀποδῷς τὸν ἔσχατον κοδράντην.",
         "SYN": "истинно говорю тебе: ты не выйдешь оттуда, пока не отдашь до последнего кодранта.",
-        "BYZ": "Ἀμὴν λέγω σοι, οὐ μὴ ἐξέλθῃς ἐκεῖθεν, ἕως ἂν ἀποδῷς τὸν ἔσχατον κοδράντην."
+        "BYZ": "Ἀμὴν λέγω σοι, οὐ μὴ ἐξέλθῃς ἐκεῖθεν, ἕως ἂν ἀποδῷς τὸν ἔσχατον κοδράντην.",
+        "NEO": "En vérité, je te le dis, tu n’en sortiras pas que tu n’aies payé jusqu’à la dernière obole.",
+        "NAB": "Amen, I say to you, you will not be released until you have paid the last penny.",
+        "VAT_ES": "Te aseguro que no saldrás de allí hasta que hayas pagado el último centavo.",
+        "CEI": "In verità ti dico: non uscirai di là finché tu non abbia pagato fino all'ultimo spicciolo!"
       }
     },
     "27": {
@@ -383,10 +487,14 @@
         "LXX": 27
       },
       "text": {
-        "VUL": "Audistis quia dictum est antiquis: Non mchaberis.",
+        "VUL": "Audistis quia dictum est antiquis : Non mchaberis.",
         "LXX": "Ἠκούσατε ὅτι ἐρρέθη, Οὐ μοιχεύσεις·",
         "SYN": "Вы слышали, что сказано древним: не прелюбодействуй.",
-        "BYZ": "Ἠκούσατε ὅτι ἐρρέθη, Οὐ μοιχεύσεις·"
+        "BYZ": "¶Ἠκούσατε ὅτι ἐρρέθη, Οὐ μοιχεύσεις·",
+        "NEO": "Vous avez appris qu’il a été dit : « Tu ne commettras pas d’adultère.* »",
+        "NAB": "\"You have heard that it was said, 'You shall not commit adultery.'",
+        "VAT_ES": "Ustedes han oído que se dijo: \"No cometerás adulterio\".",
+        "CEI": "Avete inteso che fu detto: Non commettere adulterio;"
       }
     },
     "28": {
@@ -397,10 +505,14 @@
         "LXX": 28
       },
       "text": {
-        "VUL": "Ego autem dico vobis: quia omnis qui viderit mulierem ad concupiscendum eam, jam mchatus est eam in corde suo.",
+        "VUL": "Ego autem dico vobis : quia omnis qui viderit mulierem ad concupiscendum eam, jam mchatus est eam in corde suo.",
         "LXX": "ἐγὼ δὲ λέγω ὑμῖν ὅτι πᾶς ὁ βλέπων γυναῖκα πρὸς τὸ ἐπιθυμῆσαι αὐτὴν ἤδη ἐμοίχευσεν αὐτὴν ἐν τῇ καρδίᾳ αὐτοῦ.",
         "SYN": "А Я говорю вам, что всякий, кто смотрит на женщину с вожделением, уже прелюбодействовал с нею в сердце своем.",
-        "BYZ": "ἐγὼ δὲ λέγω ὑμῖν ὅτι πᾶς ὁ βλέπων γυναῖκα πρὸς τὸ ἐπιθυμῆσαι αὐτὴν ἤδη ἐμοίχευσεν αὐτὴν ἐν τῇ καρδίᾳ αὐτοῦ."
+        "BYZ": "ἐγὼ δὲ λέγω ὑμῖν ὅτι πᾶς ὁ βλέπων γυναῖκα πρὸς τὸ ἐπιθυμῆσαι αὐτὴν ἤδη ἐμοίχευσεν αὐτὴν ἐν τῇ καρδίᾳ αὐτοῦ.",
+        "NEO": "Et moi, je vous dis que quiconque regarde une femme avec convoitise, a déjà commis l’adultère avec elle, dans son cœur.",
+        "NAB": "But I say to you, everyone who looks at a woman with lust has already committed adultery with her in his heart.",
+        "VAT_ES": "Pero yo les digo: El que mira a una mujer deseándola, ya cometió adulterio con ella en su corazón.",
+        "CEI": "ma io vi dico: chiunque guarda una donna per desiderarla, ha già commesso adulterio con lei nel suo cuore."
       }
     },
     "29": {
@@ -411,10 +523,14 @@
         "LXX": 29
       },
       "text": {
-        "VUL": "Quod si oculus tuus dexter scandalizat te, erue eum, et projice abs te: expedit enim tibi ut pereat unum membrorum tuorum, quam totum corpus tuum mittatur in gehennam.",
+        "VUL": "Quod si oculus tuus dexter scandalizat te, erue eum, et projice abs te : expedit enim tibi ut pereat unum membrorum tuorum, quam totum corpus tuum mittatur in gehennam.",
         "LXX": "Εἰ δὲ ὁ ὀφθαλμός σου ὁ δεξιὸς σκανδαλίζει σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ σοῦ· συμφέρει γάρ σοι ἵνα ἀπόληται ἓν τῶν μελῶν σου, καὶ μὴ ὅλον τὸ σῶμά σου βληθῇ εἰς γέενναν.",
         "SYN": "Если же правый глаз твой соблазняет тебя, вырви его и брось от себя, ибо лучше для тебя, чтобы погиб один из членов твоих, а не все тело твое было ввержено в геенну.",
-        "BYZ": "Εἰ δὲ ὁ ὀφθαλμός σου ὁ δεξιὸς σκανδαλίζει σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ σοῦ· συμφέρει γάρ σοι ἵνα ἀπόληται ἓν τῶν μελῶν σου, καὶ μὴ ὅλον τὸ σῶμά σου βληθῇ εἰς γέενναν."
+        "BYZ": "Εἰ δὲ ὁ ὀφθαλμός σου ὁ δεξιὸς σκανδαλίζει σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ σοῦ· συμφέρει γάρ σοι ἵνα ἀπόληται ἓν τῶν μελῶν σου, καὶ μὴ ὅλον τὸ σῶμά σου βληθῇ εἰς γέενναν.",
+        "NEO": "Si ton œil droit est pour toi une occasion de chute, arrache-le et jette-le loin de toi ; car il vaut mieux pour toi qu’un seul de tes membres périsse, et que ton corps tout entier ne soit pas jeté dans la géhenne.",
+        "NAB": "If your right eye causes you to sin, tear it out and throw it away. It is better for you to lose one of your members than to have your whole body thrown into Gehenna.",
+        "VAT_ES": "Si tu ojo derecho es para ti una ocasión de pecado, arráncalo y arrójalo lejos de ti: es preferible que se pierda uno solo de tus miembros, y no que todo tu cuerpo sea arrojado a la Gehena.",
+        "CEI": "Se il tuo occhio destro ti è occasione di scandalo, cavalo e gettalo via da te: conviene che perisca uno dei tuoi membri, piuttosto che tutto il tuo corpo venga gettato nella Geenna."
       }
     },
     "30": {
@@ -425,10 +541,14 @@
         "LXX": 30
       },
       "text": {
-        "VUL": "Et si dextra manus tua scandalizat te, abscide eam, et projice abs te: expedit enim tibi ut pereat unum membrorum tuorum, quam totum corpus tuum eat in gehennam.",
+        "VUL": "Et si dextra manus tua scandalizat te, abscide eam, et projice abs te : expedit enim tibi ut pereat unum membrorum tuorum, quam totum corpus tuum eat in gehennam.",
         "LXX": "Καὶ εἰ ἡ δεξιά σου χεὶρ σκανδαλίζει σε, ἔκκοψον αὐτὴν καὶ βάλε ἀπὸ σοῦ· συμφέρει γάρ σοι ἵνα ἀπόληται ἓν τῶν μελῶν σου, καὶ μὴ ὅλον τὸ σῶμά σου βληθῇ εἰς γέενναν.",
         "SYN": "И если правая твоя рука соблазняет тебя, отсеки ее и брось от себя, ибо лучше для тебя, чтобы погиб один из членов твоих, а не все тело твое было ввержено в геенну.",
-        "BYZ": "Καὶ εἰ ἡ δεξιά σου χεὶρ σκανδαλίζει σε, ἔκκοψον αὐτὴν καὶ βάλε ἀπὸ σοῦ· συμφέρει γάρ σοι ἵνα ἀπόληται ἓν τῶν μελῶν σου, καὶ μὴ ὅλον τὸ σῶμά σου βληθῇ εἰς γέενναν."
+        "BYZ": "Καὶ εἰ ἡ δεξιά σου χεὶρ σκανδαλίζει σε, ἔκκοψον αὐτὴν καὶ βάλε ἀπὸ σοῦ· συμφέρει γάρ σοι ἵνα ἀπόληται ἓν τῶν μελῶν σου, καὶ μὴ ὅλον τὸ σῶμά σου βληθῇ εἰς γέενναν.",
+        "NEO": "Et si ta main droite est pour toi une occasion de chute, coupe-la et jette-la loin de toi ; car il vaut mieux pour toi qu’un seul de tes membres périsse, et que ton corps tout entier ne soit pas jeté dans la géhenne.",
+        "NAB": "And if your right hand causes you to sin, cut it off and throw it away. It is better for you to lose one of your members than to have your whole body go into Gehenna.",
+        "VAT_ES": "Y si tu mano derecha es para ti una ocasión de pecado, córtala y arrójala lejos de ti; es preferible que se pierda uno solo de tus miembros, y no que todo tu cuerpo sea arrojado a la Gehena.",
+        "CEI": "E se la tua mano destra ti è occasione di scandalo, tagliala e gettala via da te: conviene che perisca uno dei tuoi membri, piuttosto che tutto il tuo corpo vada a finire nella Geenna."
       }
     },
     "31": {
@@ -439,10 +559,14 @@
         "LXX": 31
       },
       "text": {
-        "VUL": "Dictum est autem: Quicumque dimiserit uxorem suam, det ei libellum repudii.",
+        "VUL": "Dictum est autem : Quicumque dimiserit uxorem suam, det ei libellum repudii.",
         "LXX": "Ἐρρέθη δὲ ὅτι Ὃς ἂν ἀπολύσῃ τὴν γυναῖκα αὐτοῦ, δότω αὐτῇ ἀποστάσιον·",
         "SYN": "Сказано также, что если кто разведется с женою своею, пусть даст ей разводную.",
-        "BYZ": "Ἐρρέθη δὲ ὅτι Ὃς ἂν ἀπολύσῃ τὴν γυναῖκα αὐτοῦ, δότω αὐτῇ ἀποστάσιον·"
+        "BYZ": "Ἐρρέθη δὲ ὅτι Ὃς ἂν ἀπολύσῃ τὴν γυναῖκα αὐτοῦ, δότω αὐτῇ ἀποστάσιον·",
+        "NEO": "Il a été dit aussi : « \\+w Quiconque|strong=\"G3739\"\\+w* renvoie \\+w sa|strong=\"G3739\"\\+w* \\+w femme|strong=\"G1135\"\\+w*, \\+w qu|strong=\"G3739\"\\+w*’\\+w il|strong=\"G1161\"\\+w* \\+w lui|strong=\"G3739\"\\+w* \\+w donne|strong=\"G1325\"\\+w* \\+w un|strong=\"G1161\"\\+w* acte \\+w de|strong=\"G3588\"\\+w* divorce.* »+ 5:31 31. Jésus s’adressait ici à des auditeurs juifs ; or, dans l’état social juif, renvoyer sa femme, s’en séparer, c’était l’exposer fatalement à l’adultère, la rendre adultère.*",
+        "NAB": "\"It was also said, 'Whoever divorces his wife must give her a bill of divorce.'",
+        "VAT_ES": "También se dijo: \"El que se divorcia de su mujer, debe darle una declaración de divorcio\".",
+        "CEI": "Fu pure detto: Chi ripudia la propria moglie, le dia l'atto di ripudio;"
       }
     },
     "32": {
@@ -453,10 +577,14 @@
         "LXX": 32
       },
       "text": {
-        "VUL": "Ego autem dico vobis: quia omnis qui dimiserit uxorem suam, excepta fornicationis causa, facit eam mchari: et qui dimissam duxerit, adulterat.",
+        "VUL": "Ego autem dico vobis : quia omnis qui dimiserit uxorem suam, excepta fornicationis causa, facit eam mchari : et qui dimissam duxerit, adulterat.",
         "LXX": "ἐγὼ δὲ λέγω ὑμῖν ὅτι ὃς ἂν ἀπολύσῃ τὴν γυναῖκα αὐτοῦ, παρεκτὸς λόγου πορνείας, ποιεῖ αὐτὴν μοιχᾶσθαι· καὶ ὃς ἐὰν ἀπολελυμένην γαμήσῃ μοιχᾶται.",
         "SYN": "А Я говорю вам: кто разводится с женою своею, кроме вины прелюбодеяния, тот подает ей повод прелюбодействовать; и кто женится на разведенной, тот прелюбодействует.",
-        "BYZ": "ἐγὼ δὲ λέγω ὑμῖν ὅτι ὃς ἂν ἀπολύσῃ τὴν γυναῖκα αὐτοῦ, παρεκτὸς λόγου πορνείας, ποιεῖ αὐτὴν μοιχᾶσθαι· καὶ ὃς ἐὰν ἀπολελυμένην γαμήσῃ μοιχᾶται."
+        "BYZ": "ἐγὼ δὲ λέγω ὑμῖν ὅτι ὃς ἂν ἀπολύσῃ τὴν γυναῖκα αὐτοῦ, παρεκτὸς λόγου πορνείας, ποιεῖ αὐτὴν μοιχᾶσθαι· καὶ ὃς ἐὰν ἀπολελυμένην γαμήσῃ μοιχᾶται.",
+        "NEO": "Et moi, je vous dis : Quiconque renvoie sa femme, hors le cas d’impudicité, la rend adultère ; et quiconque épouse la femme renvoyée, commet un adultère.",
+        "NAB": "But I say to you, whoever divorces his wife (unless the marriage is unlawful) causes her to commit adultery, and whoever marries a divorced woman commits adultery.",
+        "VAT_ES": "Pero yo les digo: El que se divorcia de su mujer, excepto en caso de unión ilegal, la expone a cometer adulterio; y el que se casa con una mujer abandonada por su marido, comete adulterio.",
+        "CEI": "ma io vi dico: chiunque ripudia sua moglie, eccetto il caso di concubinato, la espone all'adulterio e chiunque sposa una ripudiata, commette adulterio."
       }
     },
     "33": {
@@ -467,10 +595,14 @@
         "LXX": 33
       },
       "text": {
-        "VUL": "Iterum audistis quia dictum est antiquis: Non perjurabis: reddes autem Domino juramenta tua.",
+        "VUL": "Iterum audistis quia dictum est antiquis : Non perjurabis : reddes autem Domino juramenta tua.",
         "LXX": "Πάλιν ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις, Οὐκ ἐπιορκήσεις, ἀποδώσεις δὲ τῷ κυρίῳ τοὺς ὅρκους σου·",
         "SYN": "Еще слышали вы, что сказано древним: не преступай клятвы, но исполняй пред Господом клятвы твои.",
-        "BYZ": "Πάλιν ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις, Οὐκ ἐπιορκήσεις, ἀποδώσεις δὲ τῷ κυρίῳ τοὺς ὅρκους σου·"
+        "BYZ": "¶Πάλιν ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις, Οὐκ ἐπιορκήσεις, ἀποδώσεις δὲ τῷ κυρίῳ τοὺς ὅρκους σου·",
+        "NEO": "Vous avez encore appris qu’il a été dit aux anciens : « \\+w Tu|strong=\"G4771\"\\+w* \\+w ne|strong=\"G3756\"\\+w* \\+w te|strong=\"G4771\"\\+w* \\+w parjureras|strong=\"G1964\"\\+w* \\+w pas|strong=\"G3756\"\\+w*, \\+w mais|strong=\"G1161\"\\+w* \\+w tu|strong=\"G4771\"\\+w* t’acquitteras envers \\+w le|strong=\"G1161\"\\+w* \\+w Seigneur|strong=\"G2962\"\\+w* \\+w de|strong=\"G3756\"\\+w* \\+w tes|strong=\"G3754\"\\+w* \\+w serments|strong=\"G3727\"\\+w**. »",
+        "NAB": "\"Again you have heard that it was said to your ancestors, 'Do not take a false oath, but make good to the Lord all that you vow.'",
+        "VAT_ES": "Ustedes han oído también que se dijo a los antepasados: \"No jurarás falsamente, y cumplirás los juramentos hechos al Señor\".",
+        "CEI": "Avete anche inteso che fu detto agli antichi: Non spergiurare, ma adempi con il Signore i tuoi giuramenti;"
       }
     },
     "34": {
@@ -481,10 +613,14 @@
         "LXX": 34
       },
       "text": {
-        "VUL": "Ego autem dico vobis, non jurare omnino, neque per cælum, quia thronus Dei est:",
+        "VUL": "Ego autem dico vobis, non jurare omnino, neque per cælum, quia thronus Dei est :",
         "LXX": "ἐγὼ δὲ λέγω ὑμῖν μὴ ὀμόσαι ὅλως· μήτε ἐν τῷ οὐρανῷ, ὅτι θρόνος ἐστὶν τοῦ θεοῦ·",
         "SYN": "А Я говорю вам: не клянись вовсе: ни небом, потому что оно престол Божий;",
-        "BYZ": "ἐγὼ δὲ λέγω ὑμῖν μὴ ὀμόσαι ὅλως· μήτε ἐν τῷ οὐρανῷ, ὅτι θρόνος ἐστὶν τοῦ θεοῦ·"
+        "BYZ": "ἐγὼ δὲ λέγω ὑμῖν μὴ ὀμόσαι ὅλως· μήτε ἐν τῷ οὐρανῷ, ὅτι θρόνος ἐστὶν τοῦ θεοῦ·",
+        "NEO": "Et moi, je vous dis de ne faire aucune sorte de serments : ni par le ciel, parce que c’est le trône de Dieu ;",
+        "NAB": "But I say to you, do not swear at all; not by heaven, for it is God's throne;",
+        "VAT_ES": "Pero yo les digo que no juren de ningún modo: ni por el cielo, porque es el trono de Dios,",
+        "CEI": "ma io vi dico: non giurate affatto: né per il cielo, perché è il trono di Dio;"
       }
     },
     "35": {
@@ -495,10 +631,14 @@
         "LXX": 35
       },
       "text": {
-        "VUL": "neque per terram, quia scabellum est pedum ejus: neque per Jerosolymam, quia civitas est magni regis:",
+        "VUL": "neque per terram, quia scabellum est pedum ejus : neque per Jerosolymam, quia civitas est magni regis :",
         "LXX": "μήτε ἐν τῇ γῇ, ὅτι ὑποπόδιόν ἐστιν τῶν ποδῶν αὐτοῦ· μήτε εἰς Ἱεροσόλυμα, ὅτι πόλις ἐστὶν τοῦ μεγάλου βασιλέως·",
         "SYN": "ни землею, потому что она подножие ног Его; ни Иерусалимом, потому что он город великого Царя;",
-        "BYZ": "μήτε ἐν τῇ γῇ, ὅτι ὑποπόδιόν ἐστιν τῶν ποδῶν αὐτοῦ· μήτε εἰς Ἱεροσόλυμα, ὅτι πόλις ἐστὶν τοῦ μεγάλου βασιλέως·"
+        "BYZ": "μήτε ἐν τῇ γῇ, ὅτι ὑποπόδιόν ἐστιν τῶν ποδῶν αὐτοῦ· μήτε εἰς Ἱεροσόλυμα, ὅτι πόλις ἐστὶν τοῦ μεγάλου βασιλέως·",
+        "NEO": "ni par la terre, parce que c’est l’escabeau de ses pieds ; ni par Jérusalem, parce que c’est la ville du grand Roi.",
+        "NAB": "nor by the earth, for it is his footstool; nor by Jerusalem, for it is the city of the great King.",
+        "VAT_ES": "ni por la tierra, porque es el estrado de sus pies; ni por Jerusalén, porque es la Ciudad del gran Rey.",
+        "CEI": "né per la terra, perché è lo sgabello per i suoi piedi; né per Gerusalemme, perché è la città del gran re."
       }
     },
     "36": {
@@ -512,7 +652,11 @@
         "VUL": "neque per caput tuum juraveris, quia non potes unum capillum album facere, aut nigrum.",
         "LXX": "μήτε ἐν τῇ κεφαλῇ σου ὀμόσῃς, ὅτι οὐ δύνασαι μίαν τρίχα λευκὴν ἢ μέλαιναν ποιῆσαι.",
         "SYN": "ни головою твоею не клянись, потому что не можешь ни одного волоса сделать белым или черным.",
-        "BYZ": "μήτε ἐν τῇ κεφαλῇ σου ὀμόσῃς, ὅτι οὐ δύνασαι μίαν τρίχα λευκὴν ἢ μέλαιναν ποιῆσαι."
+        "BYZ": "μήτε ἐν τῇ κεφαλῇ σου ὀμόσῃς, ὅτι οὐ δύνασαι μίαν τρίχα λευκὴν ἢ μέλαιναν ποιῆσαι.",
+        "NEO": "Ne jure pas non plus par ta tête, parce que tu ne peux en rendre un seul cheveu blanc ou noir.",
+        "NAB": "Do not swear by your head, for you cannot make a single hair white or black.",
+        "VAT_ES": "No jures tampoco por tu cabeza, porque no puedes convertir en blanco o negro uno solo de tus cabellos.",
+        "CEI": "Non giurare neppure per la tua testa, perché non hai il potere di rendere bianco o nero un solo capello."
       }
     },
     "37": {
@@ -523,10 +667,14 @@
         "LXX": 37
       },
       "text": {
-        "VUL": "Sit autem sermo vester, est, est: non, non: quod autem his abundantius est, a malo est.",
+        "VUL": "Sit autem sermo vester, est, est : non, non : quod autem his abundantius est, a malo est.",
         "LXX": "Ἔστω δὲ ὁ λόγος ὑμῶν, ναὶ ναί, οὒ οὔ· τὸ δὲ περισσὸν τούτων ἐκ τοῦ πονηροῦ ἐστιν.",
         "SYN": "Но да будет слово ваше: да, да; нет, нет; а что сверх этого, то от лукавого.",
-        "BYZ": "Ἔστω δὲ ὁ λόγος ὑμῶν, ναὶ ναί, οὒ οὔ· τὸ δὲ περισσὸν τούτων ἐκ τοῦ πονηροῦ ἐστιν."
+        "BYZ": "Ἔστω δὲ ὁ λόγος ὑμῶν, ναὶ ναί, οὒ οὔ· τὸ δὲ περισσὸν τούτων ἐκ τοῦ πονηροῦ ἐστιν.",
+        "NEO": "Mais que votre langage soit : Cela est, cela n’est pas. Ce qui se dit de plus vient du Malin.",
+        "NAB": "Let your 'Yes' mean 'Yes,' and your 'No' mean 'No.' Anything more is from the evil one.",
+        "VAT_ES": "Cuando ustedes digan «sí», que sea sí, y cuando digan «no», que sea no. Todo lo que se dice de más, viene del Maligno.",
+        "CEI": "Sia invece il vostro parlare sì, sì; no, no; il di più viene dal maligno."
       }
     },
     "38": {
@@ -537,10 +685,14 @@
         "LXX": 38
       },
       "text": {
-        "VUL": "Audistis quia dictum est: Oculum pro oculo, et dentem pro dente.",
+        "VUL": "Audistis quia dictum est : Oculum pro oculo, et dentem pro dente.",
         "LXX": "Ἠκούσατε ὅτι ἐρρέθη, Ὀφθαλμὸν ἀντὶ ὀφθαλμοῦ, καὶ ὀδόντα ἀντὶ ὀδόντος·",
         "SYN": "Вы слышали, что сказано: око за око и зуб за зуб.",
-        "BYZ": "Ἠκούσατε ὅτι ἐρρέθη, Ὀφθαλμὸν ἀντὶ ὀφθαλμοῦ, καὶ ὀδόντα ἀντὶ ὀδόντος·"
+        "BYZ": "¶Ἠκούσατε ὅτι ἐρρέθη, Ὀφθαλμὸν ἀντὶ ὀφθαλμοῦ, καὶ ὀδόντα ἀντὶ ὀδόντος·",
+        "NEO": "Vous avez appris qu’il a été dit : « \\+w Œil|strong=\"G3788\"\\+w* \\+w pour|strong=\"G2532\"\\+w* \\+w œil|strong=\"G3788\"\\+w* \\+w et|strong=\"G2532\"\\+w* \\+w dent|strong=\"G3599\"\\+w* \\+w pour|strong=\"G2532\"\\+w* \\+w dent|strong=\"G3599\"\\+w**. »",
+        "NAB": "\"You have heard that it was said, 'An eye for an eye and a tooth for a tooth.'",
+        "VAT_ES": "Ustedes han oído que se dijo: \"Ojo por ojo y diente por diente\".",
+        "CEI": "Avete inteso che fu detto: Occhio per occhio e dente per dente;"
       }
     },
     "39": {
@@ -551,10 +703,14 @@
         "LXX": 39
       },
       "text": {
-        "VUL": "Ego autem dico vobis, non resistere malo: sed si quis te percusserit in dexteram maxillam tuam, præbe illi et alteram:",
+        "VUL": "Ego autem dico vobis, non resistere malo : sed si quis te percusserit in dexteram maxillam tuam, præbe illi et alteram :",
         "LXX": "ἐγὼ δὲ λέγω ὑμῖν μὴ ἀντιστῆναι τῷ πονηρῷ· ἀλλ’ ὅστις σε ῥαπίσει ἐπὶ τὴν δεξιὰν σιαγόνα, στρέψον αὐτῷ καὶ τὴν ἄλλην·",
         "SYN": "А Я говорю вам: не противься злому. Но кто ударит тебя в правую щеку твою, обрати к нему и другую;",
-        "BYZ": "ἐγὼ δὲ λέγω ὑμῖν μὴ ἀντιστῆναι τῷ πονηρῷ· ἀλλ’ ὅστις σε ῥαπίσει ἐπὶ τὴν δεξιὰν σιαγόνα, στρέψον αὐτῷ καὶ τὴν ἄλλην·"
+        "BYZ": "ἐγὼ δὲ λέγω ὑμῖν μὴ ἀντιστῆναι τῷ πονηρῷ· ἀλλ’ ὅστις σε ῥαπίσει ἐπὶ τὴν δεξιὰν σιαγόνα, στρέψον αὐτῷ καὶ τὴν ἄλλην·",
+        "NEO": "Et moi, je vous dis de ne pas tenir tête au méchant ; mais si quelqu’un te frappe sur la joue droite, présente-lui encore l’autre.+ 5:39 38-39. Œil pour œil: c’est la loi du \\+qt talion\\+qt*. Inscrite dans la législation mosaïque (Ex. xxi, 23, 24 ; Lév. xxiv, 20), elle l’était aussi dans celle de Solon et dans les \\+qt Douze Tables\\+qt*. Chez les Hébreux, les juges seuls en faisaient l’application et souvent ils se contentaient de satisfactions pécuniaires. Mais les docteurs juifs en avaient abusé pour ouvrir la voie aux vengeances privées.*",
+        "NAB": "But I say to you, offer no resistance to one who is evil. When someone strikes you on (your) right cheek, turn the other one to him as well.",
+        "VAT_ES": "Pero yo les digo que no hagan frente al que les hace mal: al contrario, si alguien te da una bofetada en la mejilla derecha, preséntale también la otra.",
+        "CEI": "ma io vi dico di non opporvi al malvagio; anzi se uno ti percuote la guanciadestra, tu porgigli anche l'altra;"
       }
     },
     "40": {
@@ -565,10 +721,14 @@
         "LXX": 40
       },
       "text": {
-        "VUL": "et ei, qui vult tecum judicio contendere, et tunicam tuam tollere, dimitte ei et pallium:",
+        "VUL": "et ei, qui vult tecum judicio contendere, et tunicam tuam tollere, dimitte ei et pallium :",
         "LXX": "καὶ τῷ θέλοντί σοι κριθῆναι καὶ τὸν χιτῶνά σου λαβεῖν, ἄφες αὐτῷ καὶ τὸ ἱμάτιον·",
         "SYN": "и кто захочет судиться с тобою и взять у тебя рубашку, отдай ему и верхнюю одежду;",
-        "BYZ": "καὶ τῷ θέλοντί σοι κριθῆναι καὶ τὸν χιτῶνά σου λαβεῖν, ἄφες αὐτῷ καὶ τὸ ἱμάτιον·"
+        "BYZ": "καὶ τῷ θέλοντί σοι κριθῆναι καὶ τὸν χιτῶνά σου λαβεῖν, ἄφες αὐτῷ καὶ τὸ ἱμάτιον·",
+        "NEO": "Et à celui qui veut t’appeler en justice pour avoir ta tunique, abandonne encore ton manteau.",
+        "NAB": "If anyone wants to go to law with you over your tunic, hand him your cloak as well.",
+        "VAT_ES": "Al que quiere hacerte un juicio para quitarte la túnica, déjale también el manto;",
+        "CEI": "e a chi ti vuol chiamare in giudizio per toglierti la tunica, tu lascia anche il mantello."
       }
     },
     "41": {
@@ -582,7 +742,11 @@
         "VUL": "et quicumque te angariaverit mille passus, vade cum illo et alia duo.",
         "LXX": "καὶ ὅστις σε ἀγγαρεύσει μίλιον ἕν, ὕπαγε μετ’ αὐτοῦ δύο.",
         "SYN": "и кто принудит тебя идти с ним одно поприще, иди с ним два.",
-        "BYZ": "καὶ ὅστις σε ἀγγαρεύσει μίλιον ἕν, ὕπαγε μετ’ αὐτοῦ δύο."
+        "BYZ": "καὶ ὅστις σε ἀγγαρεύσει μίλιον ἕν, ὕπαγε μετ’ αὐτοῦ δύο.",
+        "NEO": "Et si quelqu’un veut t’obliger à faire mille pas, fais-en avec lui deux mille.",
+        "NAB": "Should anyone press you into service for one mile, go with him for two miles.",
+        "VAT_ES": "y si te exige que lo acompañes un kilómetro, camina dos con él.",
+        "CEI": "E se uno ti costringerà a fare un miglio, tu fanne con lui due."
       }
     },
     "42": {
@@ -593,10 +757,14 @@
         "LXX": 42
       },
       "text": {
-        "VUL": "Qui petit a te, da ei: et volenti mutuari a te, ne avertaris.",
+        "VUL": "Qui petit a te, da ei : et volenti mutuari a te, ne avertaris.",
         "LXX": "Τῷ αἰτοῦντί σε δίδου· καὶ τὸν θέλοντα ἀπὸ σοῦ δανείσασθαι μὴ ἀποστραφῇς.",
         "SYN": "Просящему у тебя дай, и от хотящего занять у тебя не отвращайся.",
-        "BYZ": "Τῷ αἰτοῦντί σε δίδου· καὶ τὸν θέλοντα ἀπὸ σοῦ δανείσασθαι μὴ ἀποστραφῇς."
+        "BYZ": "Τῷ αἰτοῦντί σε δίδου· καὶ τὸν θέλοντα ἀπὸ σοῦ δανείσασθαι μὴ ἀποστραφῇς.",
+        "NEO": "Donne à qui te demande, et ne cherche pas à éviter celui qui veut te faire un emprunt.",
+        "NAB": "Give to the one who asks of you, and do not turn your back on one who wants to borrow.",
+        "VAT_ES": "Da al que te pide, y no le vuelvas la espalda al que quiere pedirte algo prestado.",
+        "CEI": "Dà a chi ti domanda e a chi desidera da te un prestito non volgere le spalle."
       }
     },
     "43": {
@@ -607,10 +775,14 @@
         "LXX": 43
       },
       "text": {
-        "VUL": "Audistis quia dictum est: Diliges proximum tuum, et odio habebis inimicum tuum.",
+        "VUL": "Audistis quia dictum est : Diliges proximum tuum, et odio habebis inimicum tuum.",
         "LXX": "Ἠκούσατε ὅτι ἐρρέθη, Ἀγαπήσεις τὸν πλησίον σου, καὶ μισήσεις τὸν ἐχθρόν σου·",
         "SYN": "Вы слышали, что сказано: люби ближнего твоего и ненавидь врага твоего.",
-        "BYZ": "Ἠκούσατε ὅτι ἐρρέθη, Ἀγαπήσεις τὸν πλησίον σου, καὶ μισήσεις τὸν ἐχθρόν σου·"
+        "BYZ": "¶Ἠκούσατε ὅτι ἐρρέθη, Ἀγαπήσεις τὸν πλησίον σου, καὶ μισήσεις τὸν ἐχθρόν σου·",
+        "NEO": "Vous avez appris qu’il a été dit : « \\+w Tu|strong=\"G4771\"\\+w* \\+w aimeras|strong=\"G4771\"\\+w* \\+w ton|strong=\"G2532\"\\+w* \\+w prochain|strong=\"G4139\"\\+w*, \\+w et|strong=\"G2532\"\\+w**, et tu haïras ton ennemi. »",
+        "NAB": "\"You have heard that it was said, 'You shall love your neighbor and hate your enemy.'",
+        "VAT_ES": "Ustedes han oído que se dijo: \"Amarás a tu prójimo\" y odiarás a tu enemigo.",
+        "CEI": "Avete inteso che fu detto: Amerai il tuo prossimo e odierai il tuo nemico;"
       }
     },
     "44": {
@@ -621,10 +793,14 @@
         "LXX": 44
       },
       "text": {
-        "VUL": "Ego autem dico vobis: diligite inimicos vestros, benefacite his qui oderunt vos, et orate pro persequentibus et calumniantibus vos:",
+        "VUL": "Ego autem dico vobis : diligite inimicos vestros, benefacite his qui oderunt vos, et orate pro persequentibus et calumniantibus vos :",
         "LXX": "ἐγὼ δὲ λέγω ὑμῖν, Ἀγαπᾶτε τοὺς ἐχθροὺς ὑμῶν, εὐλογεῖτε τοὺς καταρωμένους ὑμᾶς, καλῶς ποιεῖτε τοῖς μισοῦσιν ὑμᾶς, καὶ προσεύχεσθε ὑπὲρ τῶν ἐπηρεαζόντων ὑμᾶς, καὶ διωκόντων ὑμᾶς·",
         "SYN": "А Я говорю вам: любите врагов ваших, благословляйте проклинающих вас, благотворите ненавидящим вас и молитесь за обижающих вас и гонящих вас,",
-        "BYZ": "ἐγὼ δὲ λέγω ὑμῖν, Ἀγαπᾶτε τοὺς ἐχθροὺς ὑμῶν, εὐλογεῖτε τοὺς καταρωμένους ὑμᾶς, καλῶς ποιεῖτε τοῖς μισοῦσιν ὑμᾶς, καὶ προσεύχεσθε ὑπὲρ τῶν ἐπηρεαζόντων ὑμᾶς, καὶ διωκόντων ὑμᾶς·"
+        "BYZ": "ἐγὼ δὲ λέγω ὑμῖν, Ἀγαπᾶτε τοὺς ἐχθροὺς ὑμῶν, εὐλογεῖτε τοὺς καταρωμένους ὑμᾶς, καλῶς ποιεῖτε τοῖς μισοῦσιν ὑμᾶς, καὶ προσεύχεσθε ὑπὲρ τῶν ἐπηρεαζόντων ὑμᾶς, καὶ διωκόντων ὑμᾶς·",
+        "NEO": "Et moi, je vous dis : Aimez vos ennemis, bénissez ceux qui vous maudissent, faites du bien à ceux qui vous haïssent, et priez pour ceux qui vous maltraitent et qui vous persécutent :",
+        "NAB": "But I say to you, love your enemies, and pray for those who persecute you,",
+        "VAT_ES": "Pero yo les digo: Amen a sus enemigos, rueguen por sus perseguidores;",
+        "CEI": "ma io vi dico: amate i vostri nemici e pregate per i vostri persecutori,"
       }
     },
     "45": {
@@ -635,10 +811,14 @@
         "LXX": 45
       },
       "text": {
-        "VUL": "ut sitis filii Patris vestri, qui in cælis est: qui solem suum oriri facit super bonos et malos: et pluit super justos et injustos.",
+        "VUL": "ut sitis filii Patris vestri, qui in cælis est : qui solem suum oriri facit super bonos et malos : et pluit super justos et injustos.",
         "LXX": "ὅπως γένησθε υἱοὶ τοῦ πατρὸς ὑμῶν τοῦ ἐν τοῖς οὐρανοῖς, ὅτι τὸν ἥλιον αὐτοῦ ἀνατέλλει ἐπὶ πονηροὺς καὶ ἀγαθούς, καὶ βρέχει ἐπὶ δικαίους καὶ ἀδίκους.",
         "SYN": "да будете сынами Отца вашего Небесного, ибо Он повелевает солнцу Своему восходить над злыми и добрыми и посылает дождь на праведных и неправедных.",
-        "BYZ": "ὅπως γένησθε υἱοὶ τοῦ πατρὸς ὑμῶν τοῦ ἐν τοῖς οὐρανοῖς, ὅτι τὸν ἥλιον αὐτοῦ ἀνατέλλει ἐπὶ πονηροὺς καὶ ἀγαθούς, καὶ βρέχει ἐπὶ δικαίους καὶ ἀδίκους."
+        "BYZ": "ὅπως γένησθε υἱοὶ τοῦ πατρὸς ὑμῶν τοῦ ἐν τοῖς οὐρανοῖς, ὅτι τὸν ἥλιον αὐτοῦ ἀνατέλλει ἐπὶ πονηροὺς καὶ ἀγαθούς, καὶ βρέχει ἐπὶ δικαίους καὶ ἀδίκους.",
+        "NEO": "afin que vous soyez les enfants de votre Père qui est dans les cieux ; car il fait lever son soleil sur les méchants et sur les bons, et descendre sa pluie sur les justes et sur les injustes.",
+        "NAB": "that you may be children of your heavenly Father, for he makes his sun rise on the bad and the good, and causes rain to fall on the just and the unjust.",
+        "VAT_ES": "así serán hijos del Padre que está en el cielo, porque él hace salir el sol sobre malos y buenos y hace caer la lluvia sobre justos e injustos.",
+        "CEI": "perché siate figli del Padre vostro celeste, che fa sorgere il suo sole sopra i malvagi e sopra i buoni, e fa piovere sopra i giusti e sopra gli ingiusti."
       }
     },
     "46": {
@@ -652,7 +832,11 @@
         "VUL": "Si enim diligitis eos qui vos diligunt, quam mercedem habebitis ? nonne et publicani hoc faciunt ?",
         "LXX": "Ἐὰν γὰρ ἀγαπήσητε τοὺς ἀγαπῶντας ὑμᾶς, τίνα μισθὸν ἔχετε; Οὐχὶ καὶ οἱ τελῶναι τὸ αὐτὸ ποιοῦσιν;",
         "SYN": "Ибо если вы будете любить любящих вас, какая вам награда? Не то же ли делают и мытари?",
-        "BYZ": "Ἐὰν γὰρ ἀγαπήσητε τοὺς ἀγαπῶντας ὑμᾶς, τίνα μισθὸν ἔχετε; Οὐχὶ καὶ οἱ τελῶναι τὸ αὐτὸ ποιοῦσιν;"
+        "BYZ": "Ἐὰν γὰρ ἀγαπήσητε τοὺς ἀγαπῶντας ὑμᾶς, τίνα μισθὸν ἔχετε; Οὐχὶ καὶ οἱ τελῶναι τὸ αὐτὸ ποιοῦσιν;",
+        "NEO": "Si vous aimez ceux qui vous aiment, quelle récompense méritez-vous ? Les publicains n’en font-ils pas autant ?+ 5:46 46. Publicains: collecteurs d’impôts, chargés de les recueillir pour le compte des Romains. De là le mépris des Juifs pour eux.*",
+        "NAB": "For if you love those who love you, what recompense will you have? Do not the tax collectors do the same?",
+        "VAT_ES": "Si ustedes aman solamente a quienes los aman, &iquest;qué recompensa merecen? &iquest;No hacen lo mismo los publicanos?",
+        "CEI": "Infatti se amate quelli che vi amano, quale merito ne avete? Non fanno così anche i pubblicani?"
       }
     },
     "47": {
@@ -666,7 +850,11 @@
         "VUL": "Et si salutaveritis fratres vestros tantum, quid amplius facitis ? nonne et ethnici hoc faciunt ?",
         "LXX": "Καὶ ἐὰν ἀσπάσησθε τοὺς φίλους ὑμῶν μόνον, τί περισσὸν ποιεῖτε; Οὐχὶ καὶ οἱ τελῶναι οὕτως ποιοῦσιν;",
         "SYN": "И если вы приветствуете только братьев ваших, что особенного делаете? Не так же ли поступают и язычники?",
-        "BYZ": "Καὶ ἐὰν ἀσπάσησθε τοὺς φίλους ὑμῶν μόνον, τί περισσὸν ποιεῖτε; Οὐχὶ καὶ οἱ τελῶναι οὕτως ποιοῦσιν;"
+        "BYZ": "Καὶ ἐὰν ἀσπάσησθε τοὺς φίλους ὑμῶν μόνον, τί περισσὸν ποιεῖτε; Οὐχὶ καὶ οἱ τελῶναι οὕτως ποιοῦσιν;",
+        "NEO": "Et si vous ne saluez que vos frères, que faites-vous d’extraordinaire ? Les païens même n’en font-ils pas autant ?",
+        "NAB": "And if you greet your brothers only, what is unusual about that? Do not the pagans do the same?",
+        "VAT_ES": "Y si saludan solamente a sus hermanos, &iquest;qué hacen de extraordinario? &iquest;No hacen lo mismo los paganos?",
+        "CEI": "E se date il saluto soltanto ai vostri fratelli, che cosa fate di straordinario? Non fanno così anche i pagani?"
       }
     },
     "48": {
@@ -680,7 +868,11 @@
         "VUL": "Estote ergo vos perfecti, sicut et Pater vester cælestis perfectus est.",
         "LXX": "Ἔσεσθε οὖν ὑμεῖς τέλειοι, ὥσπερ ὁ πατὴρ ὑμῶν ὁ ἐν τοῖς οὐρανοῖς τέλειός ἐστιν.",
         "SYN": "Итак будьте совершенны, как совершен Отец ваш Небесный.",
-        "BYZ": "Ἔσεσθε οὖν ὑμεῖς τέλειοι, ὥσπερ ὁ πατὴρ ὑμῶν ὁ ἐν τοῖς οὐρανοῖς τέλειός ἐστιν."
+        "BYZ": "Ἔσεσθε οὖν ὑμεῖς τέλειοι, ὥσπερ ὁ πατὴρ ὑμῶν ὁ ἐν τοῖς οὐρανοῖς τέλειός ἐστιν.",
+        "NEO": "Vous donc, soyez parfaits comme votre Père céleste est parfait.",
+        "NAB": "So be perfect, just as your heavenly Father is perfect.",
+        "VAT_ES": "Por lo tanto, sean perfectos como es perfecto el Padre que está en el cielo.",
+        "CEI": "Siate voi dunque perfetti come è perfetto il Padre vostro celeste."
       }
     }
   }

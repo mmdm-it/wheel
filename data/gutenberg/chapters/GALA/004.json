@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "BYZ": "Λέγω δέ, ἐφ’ ὅσον χρόνον ὁ κληρονόμος νήπιός ἐστιν, οὐδὲν διαφέρει δούλου, κύριος πάντων ὤν·",
+        "VUL": "Dico autem : quanto tempore hæres parvulus est, nihil differt a servo, cum sit dominus omnium :",
+        "SYN": "Еще скажу: наследник, доколе в детстве, ничем не отличается от раба, хотя и господин всего:",
+        "NEO": "Or je dis ceci : Aussi longtemps que l’héritier est enfant, il ne diffère en rien d’un esclave, quoiqu’il soit le maître de tout ;",
+        "NAB": "I mean that as long as the heir is not of age, he is no different from a slave, although he is the owner of everything,",
+        "VAT_ES": "Voy a ser más explícito: el heredero, mientras es menor de edad, aunque sea propietario de todos sus bienes, en nada se diferencia de un esclavo.",
+        "CEI": "Per il resto, fratelli, vi preghiamo e supplichiamo nel Signore Gesù: avete appreso da noi come comportarvi in modo da piacere a Dio, e così già vi comportate; cercate di agire sempre così per distinguervi ancora di più."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἀλλὰ ὑπὸ ἐπιτρόπους ἐστὶν καὶ οἰκονόμους, ἄχρι τῆς προθεσμίας τοῦ πατρός.",
+        "VUL": "sed sub tutoribus et actoribus est usque ad præfinitum tempus a patre :",
+        "SYN": "он подчинен попечителям и домоправителям до срока, отцом _назначенного._",
+        "NEO": "mais il est soumis à des tuteurs et à des curateurs jusqu’au temps marqué par le père.",
+        "NAB": "but he is under the supervision of guardians and administrators until the date set by his father.",
+        "VAT_ES": "En efecto, hasta la edad fijada por su padre, está bajo la dependencia de sus tutores y administradores.",
+        "CEI": "Voi conoscete infatti quali norme vi abbiamo dato da parte del Signore Gesù."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "BYZ": "Οὕτως καὶ ἡμεῖς, ὅτε ἦμεν νήπιοι, ὑπὸ τὰ στοιχεῖα τοῦ κόσμου ἦμεν δεδουλωμένοι·",
+        "VUL": "ita et nos cum essemus parvuli, sub elementis mundi eramus servientes.",
+        "SYN": "Так и мы, доколе были в детстве, были порабощены вещественным началам мира;",
+        "NEO": "De même, nous aussi, quand nous étions enfants, nous étions sous l’esclavage des rudiments du monde.",
+        "NAB": "In the same way we also, when we were not of age, were enslaved to the elemental powers of the world.",
+        "VAT_ES": "Así también nosotros, cuando éramos menores de edad, estábamos sometidos a los elementos del mundo.",
+        "CEI": "Perché questa è la volontà di Dio, la vostra santificazione: che vi asteniate dalla impudicizia,"
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "BYZ": "ὅτε δὲ ἦλθεν τὸ πλήρωμα τοῦ χρόνου, ἐξαπέστειλεν ὁ θεὸς τὸν υἱὸν αὐτοῦ, γενόμενον ἐκ γυναικός, γενόμενον ὑπὸ νόμον,",
+        "VUL": "At ubi venit plenitudo temporis, misit Deus Filium suum factum ex muliere, factum sub lege,",
+        "SYN": "но когда пришла полнота времени, Бог послал Сына Своего [Единородного], Который родился от жены, подчинился закону,",
+        "NEO": "Mais lorsque est venue la plénitude des temps, Dieu a envoyé son Fils, formé d’une femme,+ 4:4 IV, 4. Formé d’une femme. Quelques Pères et de bons manuscrits de la Vulgate lisent \\+qt natum ex muliere\\+qt* au lieu de \\+qt factum\\+qt*. Quelques manuscrits du texte original portent en effet γεννώμενον au lieu de γενόμενον. La leçon γενόμενον, mieux recommandée par le nombre comme par l’autorité des témoignages, doit être retenue de préférence.* né sous la Loi,",
+        "NAB": "But when the fullness of time had come, God sent his Son, born of a woman, born under the law,",
+        "VAT_ES": "Pero cuando se cumplió el tiempo establecido, Dios envió a su Hijo, nacido de una mujer y sujeto a la Ley,",
+        "CEI": "che ciascuno sappia mantenere il proprio corpo con santità e rispetto,"
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἵνα τοὺς ὑπὸ νόμον ἐξαγοράσῃ, ἵνα τὴν υἱοθεσίαν ἀπολάβωμεν.",
+        "VUL": "ut eos, qui sub lege erant, redimeret, ut adoptionem filiorum reciperemus.",
+        "SYN": "чтобы искупить подзаконных, дабы нам получить усыновление.",
+        "NEO": "pour affranchir ceux qui sont sous la Loi, afin de nous conférer l’adoption.",
+        "NAB": "to ransom those under the law, so that we might receive adoption.",
+        "VAT_ES": "para redimir a os que estaban sometidos a la Ley y hacernos hijos adoptivos.",
+        "CEI": "non come oggetto di passioni e libidine, come i pagani che non conoscono Dio;"
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὅτι δέ ἐστε υἱοί, ἐξαπέστειλεν ὁ θεὸς τὸ πνεῦμα τοῦ υἱοῦ αὐτοῦ εἰς τὰς καρδίας ὑμῶν, κρᾶζον, Ἀββᾶ, ὁ πατήρ.",
+        "VUL": "Quoniam autem estis filii, misit Deus Spiritum Filii sui in corda vestra, clamantem : Abba, Pater.",
+        "SYN": "А как вы -- сыны, то Бог послал в сердца ваши Духа Сына Своего, вопиющего: \"Авва, Отче!\"",
+        "NEO": "Et parce que vous êtes fils,+ 4:6 6. Rom. viii, 15.* Dieu a envoyé dans vos cœurs l’Esprit de son Fils, lequel crie : Abba ! Père !",
+        "NAB": "As proof that you are children, God sent the spirit of his Son into our hearts, crying out, \"Abba, Father!\"",
+        "VAT_ES": "Y la prueba de que ustedes son hijos, es que Dios infundió en nuestros corazones el Espíritu de su Hijo, que clama a Dios llamándolo» &iexcl;Abba!, es decir, &iexcl;Padre!",
+        "CEI": "che nessuno offenda e inganni in questa materia il proprio fratello, perché il Signore è vindice di tutte queste cose, come già vi abbiamo detto e attestato."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὥστε οὐκέτι εἶ δοῦλος, ἀλλ’ υἱός· εἰ δὲ υἱός, καὶ κληρονόμος θεοῦ διὰ χριστοῦ.",
+        "VUL": "Itaque jam non est servus, sed filius : quod si filius, et hæres per Deum.",
+        "SYN": "Посему ты уже не раб, но сын; а если сын, то и наследник Божий через Иисуса Христа.",
+        "NEO": "Ainsi tu n’es plus esclave, tu es fils ; et si tu es fils, tu es* aussi héritier, grâce à Dieu.",
+        "NAB": "So you are no longer a slave but a child, and if a child then also an heir, through God.",
+        "VAT_ES": "Así, ya no eres más esclavo, sino hijo, y por lo tanto, heredero por la gracia de Dios.",
+        "CEI": "Dio non ci ha chiamati all'impurità, ma alla santificazione."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Ἀλλὰ τότε μέν, οὐκ εἰδότες θεόν, ἐδουλεύσατε τοῖς μὴ φύσει οὖσιν θεοῖς·",
+        "VUL": "Sed tunc quidem ignorantes Deum, iis, qui natura non sunt dii, serviebatis.",
+        "SYN": "Но тогда, не знав Бога, вы служили _богам,_ которые в существе не боги.",
+        "NEO": "Autrefois, il est vrai, ne connaissant pas Dieu, vous serviez ceux qui par leur nature ne sont pas dieux ;",
+        "NAB": "At a time when you did not know God, you became slaves to things that by nature are not gods;",
+        "VAT_ES": "Antes, cuando ustedes no conocían a Dios, estaban al servicio de dioses que no lo son realmente.",
+        "CEI": "Perciò chi disprezza queste norme non disprezza un uomo, ma Dio stesso, che vi dona il suo Santo Spirito."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "BYZ": "νῦν δέ, γνόντες θεόν, μᾶλλον δὲ γνωσθέντες ὑπὸ θεοῦ, πῶς ἐπιστρέφετε πάλιν ἐπὶ τὰ ἀσθενῆ καὶ πτωχὰ στοιχεῖα, οἷς πάλιν ἄνωθεν δουλεύειν θέλετε;",
+        "VUL": "Nunc autem cum cognoveritis Deum, immo cogniti sitis a Deo : quomodo convertimini iterum ad infirma et egena elementa, quibus denuo servire vultis ?",
+        "SYN": "Ныне же, познав Бога, или, лучше, получив познание от Бога, для чего возвращаетесь опять к немощным и бедным вещественным началам и хотите еще снова поработить себя им?",
+        "NEO": "mais à présent que vous avez connu Dieu, ou plutôt que vous avez été connus de Dieu, comment retournez-vous à ces pauvres et faibles rudiments, auxquels de nouveau vous voulez vous asservir encore ?",
+        "NAB": "but now that you have come to know God, or rather to be known by God, how can you turn back again to the weak and destitute elemental powers? Do you want to be slaves to them all over again?",
+        "VAT_ES": "Pero ahora, que conocen a Dios –o mejor dicho, que son conocidos por él– &iquest;cómo es posible que se vuelvan otra vez a esos elementos sin fuerza ni valor, para someterse nuevamente a ellos?",
+        "CEI": "Riguardo all'amore fraterno, non avete bisogno che ve ne scriva; voi stessi infatti avete imparato da Dio ad amarvi gli uni gli altri,"
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἡμέρας παρατηρεῖσθε, καὶ μῆνας, καὶ καιρούς, καὶ ἐνιαυτούς.",
+        "VUL": "Dies observatis, et menses, et tempora, et annos.",
+        "SYN": "Наблюдаете дни, месяцы, времена и годы.",
+        "NEO": "Vous observez les jours, les mois, les temps et les années !",
+        "NAB": "You are observing days, months, seasons, and years.",
+        "VAT_ES": "&iexcl;Observar los días, los meses, las estaciones y los años!",
+        "CEI": "e questo voi fate verso tutti i fratelli dell'intera Macedonia. Ma vi esortiamo, fratelli, a farlo ancora di più"
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "BYZ": "Φοβοῦμαι ὑμᾶς, μήπως εἰκῇ κεκοπίακα εἰς ὑμᾶς.",
+        "VUL": "Timeo vos, ne forte sine causa laboraverim in vobis.",
+        "SYN": "Боюсь за вас, не напрасно ли я трудился у вас.",
+        "NEO": "J’ai peur pour vous d’avoir travaillé en vain parmi vous.",
+        "NAB": "I am afraid on your account that perhaps I have labored for you in vain.",
+        "VAT_ES": "Francamente, temo haber trabajado inútilmente por ustedes.",
+        "CEI": "e a farvi un punto di onore: vivere in pace, attendere alle cose vostre e lavorare con le vostre mani, come vi abbiamo ordinato,"
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Γίνεσθε ὡς ἐγώ, ὅτι κἀγὼ ὡς ὑμεῖς, ἀδελφοί, δέομαι ὑμῶν. Οὐδέν με ἠδικήσατε·",
+        "VUL": "Estote sicut ego, quia et ego sicut vos : fratres, obsecro vos. Nihil me læsistis.",
+        "SYN": "Прошу вас, братия, будьте, как я, потому что и я, как вы. Вы ничем не обидели меня:",
+        "NEO": "Devenez comme moi, puisque moi-même je suis comme vous, frères, je vous en supplie. Vous ne m’avez blessé en rien.",
+        "NAB": "I implore you, brothers, be as I am, because I have also become as you are. You did me no wrong;",
+        "VAT_ES": "Les ruego, hermanos, que se hagan semejantes a mí, como yo me hice semejante a ustedes. En realidad, no me han ofendido en nada.",
+        "CEI": "al fine di condurre una vita decorosa di fronte agli estranei e di non aver bisogno di nessuno."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "BYZ": "οἴδατε δὲ ὅτι δι’ ἀσθένειαν τῆς σαρκὸς εὐηγγελισάμην ὑμῖν τὸ πρότερον.",
+        "VUL": "Scitis autem quia per infirmitatem carnis evangelizavi vobis jampridem : et tentationem vestram in carne mea",
+        "SYN": "знаете, что, _хотя_ я в немощи плоти благовествовал вам в первый раз,",
+        "NEO": "Quand je vous ai pour la première fois annoncé l’Évangile, vous savez quelle était l’infirmité de ma chair ; et cependant ce qui dans ma chair était une épreuve pour vous,+ 4:13 13. Allusion aux persécutions qui affligèrent l’Apôtre et entravèrent son apostolat lors de sa première mission aux Galates (Act. xiii, 14 ; xix, 22).*",
+        "NAB": "you know that it was because of a physical illness that I originally preached the gospel to you,",
+        "VAT_ES": "Ya saben que fue en ocasión de una enfermedad cuando les prediqué por primera vez la Buena Noticia.",
+        "CEI": "Non vogliamo poi lasciarvi nell'ignoranza, fratelli, circa quelli che sono morti, perché non continuiate ad affliggervi come gli altri che non hanno speranza."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ τὸν πειρασμόν μου τὸν ἐν τῇ σαρκί μου οὐκ ἐξουθενήσατε οὐδὲ ἐξεπτύσατε, ἀλλ’ ὡς ἄγγελον θεοῦ ἐδέξασθέ με, ὡς χριστὸν Ἰησοῦν.",
+        "VUL": "non sprevistis, neque respuistis : sed sicut angelum Dei excepistis me, sicut Christum Jesum.",
+        "SYN": "но вы не презрели искушения моего во плоти моей и не возгнушались _им,_ а приняли меня, как Ангела Божия, как Христа Иисуса.",
+        "NEO": "vous ne l’avez ni méprisé ni repoussé ; mais vous m’avez reçu comme un ange de Dieu, comme le Christ Jésus.",
+        "NAB": "and you did not show disdain or contempt because of the trial caused you by my physical condition, but rather you received me as an angel of God, as Christ Jesus.",
+        "VAT_ES": "A pesar de que mi aspecto físico era una prueba para ustedes, no me desdeñaron ni me despreciaron; todo lo contrario, me recibieron como a un ángel de Dios, como a Cristo Jesús.",
+        "CEI": "Noi crediamo infatti che Gesù è morto e risuscitato; così anche quelli che sono morti, Dio li radunerà per mezzo di Gesù insieme con lui."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τίς οὖν ἦν ὁ μακαρισμὸς ὑμῶν; Μαρτυρῶ γὰρ ὑμῖν ὅτι, εἰ δυνατόν, τοὺς ὀφθαλμοὺς ὑμῶν ἐξορύξαντες ἂν ἐδώκατέ μοι.",
+        "VUL": "Ubi est ergo beatitudo vestra ? testimonium enim perhibeo vobis, quia, si fieri posset, oculos vestros eruissetis, et dedissetis mihi.",
+        "SYN": "Как вы были блаженны! Свидетельствую о вас, что, если бы возможно было, вы исторгли бы очи свои и отдали мне.",
+        "NEO": "Que sont devenus ces heureux sentiments ? Car je vous rends ce témoignage que, s’il eût été possible, vous vous seriez arraché les yeux pour me les donner.",
+        "NAB": "Where now is that blessedness of yours? Indeed, I can testify to you that, if it had been possible, you would have torn out your eyes and given them to me.",
+        "VAT_ES": "&iquest;Dónde está la alegría que sintieron entonces? Yo mismo puedo atestiguar que, de ser posible, se habrían arrancado los ojos para dármelos.",
+        "CEI": "Questo vi diciamo sulla parola del Signore: noi che viviamo e saremo ancora in vita per la venuta del Signore, non avremo alcun vantaggio su quelli che sono morti."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὥστε ἐχθρὸς ὑμῶν γέγονα ἀληθεύων ὑμῖν;",
+        "VUL": "Ergo inimicus vobis factus sum, verum dicens vobis ?",
+        "SYN": "Итак, неужели я сделался врагом вашим, говоря вам истину?",
+        "NEO": "Je serais donc devenu votre ennemi, parce que je vous ai dit la vérité ?",
+        "NAB": "So now have I become your enemy by telling you the truth?",
+        "VAT_ES": "&iquest;Y ahora me he convertido en enemigo de ustedes por decirles la verdad?",
+        "CEI": "Perché il Signore stesso, a un ordine, alla voce dell'arcangelo e al suono della tromba di Dio, discenderà dal cielo. E prima risorgeranno i morti in Cristo;"
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ζηλοῦσιν ὑμᾶς οὐ καλῶς, ἀλλὰ ἐκκλεῖσαι ὑμᾶς θέλουσιν, ἵνα αὐτοὺς ζηλοῦτε.",
+        "VUL": "Æmulantur vos non bene : sed excludere vos volunt, ut illos æmulemini.",
+        "SYN": "Ревнуют по вас нечисто, а хотят вас отлучить, чтобы вы ревновали по них.",
+        "NEO": "L’affection dont ces gens font étalage pour vous, n’est pas bonne, ils veulent vous détacher de nous*, afin que vous vous attachiez à eux.",
+        "NAB": "They show interest in you, but not in a good way; they want to isolate you, so that you may show interest in them.",
+        "VAT_ES": "El interés que los otros demuestran por ustedes no es bueno: lo que quieren es separarlos de mí, para que se interesen por ellos.",
+        "CEI": "quindi noi, i vivi, i superstiti, saremo rapiti insieme con loro tra le nuvole, per andare incontro al Signore nell'aria, e così saremo sempre con il Signore."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καλὸν δὲ τὸ ζηλοῦσθαι ἐν καλῷ πάντοτε, καὶ μὴ μόνον ἐν τῷ παρεῖναί με πρὸς ὑμᾶς.",
+        "VUL": "Bonum autem æmulamini in bono semper : et non tantum cum præsens sum apud vos.",
+        "SYN": "Хорошо ревновать в добром всегда, а не в моем только присутствии у вас.",
+        "NEO": "Il est beau d’être l’objet d’une vive affection, quand c’est dans le bien, toujours, et non pas seulement quand je suis présent parmi vous.",
+        "NAB": "Now it is good to be shown interest for good reason at all times, and not only when I am with you.",
+        "VAT_ES": "Está bien interesarse por los demás, con tal que ese interés sea verdadero y para siempre, y no sólo cuando yo estoy entre ustedes.",
+        "CEI": "Confortatevi dunque a vicenda con queste parole."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,14 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τεκνία μου, οὓς πάλιν ὠδίνω, ἄχρι οὗ μορφωθῇ χριστὸς ἐν ὑμῖν,",
+        "VUL": "Filioli mei, quos iterum parturio, donec formetur Christus in vobis :",
+        "SYN": "Дети мои, для которых я снова в муках рождения, доколе не изобразится в вас Христос!",
+        "NEO": "Mes petits enfants, pour qui j’éprouve de nouveau les douleurs de l’enfantement, jusqu’à ce que le Christ soit formé en vous ;",
+        "NAB": "My children, for whom I am again in labor until Christ be formed in you!",
+        "VAT_ES": "&iexcl;Hijos míos, por quienes estoy sufriendo nuevamente los dolores del parto hasta que Cristo sea formado en ustedes!"
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +340,14 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἤθελον δὲ παρεῖναι πρὸς ὑμᾶς ἄρτι, καὶ ἀλλάξαι τὴν φωνήν μου, ὅτι ἀποροῦμαι ἐν ὑμῖν.",
+        "VUL": "vellem autem esse apud vos modo, et mutare vocem meam : quoniam confundor in vobis.",
+        "SYN": "Хотел бы я теперь быть у вас и изменить голос мой, потому что я в недоумении о вас.",
+        "NEO": "combien je voudrais être auprès de vous à cette heure et changer de langage, car je suis dans une grande perplexité à votre sujet !",
+        "NAB": "I would like to be with you now and to change my tone, for I am perplexed because of you.",
+        "VAT_ES": "Ahora mismo desearía estar allí para hablarles de otra manera, porque ya no sé cómo proceder con ustedes."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +356,14 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Λέγετέ μοι, οἱ ὑπὸ νόμον θέλοντες εἶναι, τὸν νόμον οὐκ ἀκούετε;",
+        "VUL": "Dicite mihi qui sub lege vultis esse : legem non legistis ?",
+        "SYN": "Скажите мне вы, желающие быть под законом: разве вы не слушаете закона?",
+        "NEO": "Dites-moi, vous qui voulez être sous la Loi, n’entendez-vous pas la Loi ?+ 4:21 21. Vulg., n’avez-vous pas lu, etc. L’usage de lire les livres de l’A. T., la Loi et les Prophètes, avait passé de la Synagogue dans les assemblées chrétiennes. Comp. Act. xv, 21.*",
+        "NAB": "Tell me, you who want to be under the law, do you not listen to the law?",
+        "VAT_ES": "Ustedes que quieren someterse a la Ley, díganme: &iquest;No entienden lo que dice la Ley?"
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +372,14 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "BYZ": "Γέγραπται γάρ, ὅτι Ἀβραὰμ δύο υἱοὺς ἔσχεν· ἕνα ἐκ τῆς παιδίσκης, καὶ ἕνα ἐκ τῆς ἐλευθέρας.",
+        "VUL": "Scriptum est enim : Quoniam Abraham duos filios habuit : unum de ancilla, et unum de libera.",
+        "SYN": "Ибо написано: Авраам имел двух сынов, одного от рабы, а другого от свободной.",
+        "NEO": "Car il est écrit+ 4:22 22. Il est écrit, Gen. xvi, 15 ; xxi, 2 sv. — \\+qt Deux fils\\+qt* : Ismaël, né d’Agar, et Isaac, né de Sara.* qu’Abraham eut deux fils, l’un de la servante, l’autre de la femme libre.",
+        "NAB": "For it is written that Abraham had two sons, one by the slave woman and the other by the freeborn woman.",
+        "VAT_ES": "Porque está escrito que Abraham tuvo dos hijos: uno de su esclava y otro de su mujer, que era libre."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +388,14 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀλλ’ ὁ μὲν ἐκ τῆς παιδίσκης κατὰ σάρκα γεγέννηται, ὁ δὲ ἐκ τῆς ἐλευθέρας διὰ τῆς ἐπαγγελίας.",
+        "VUL": "Sed qui de ancilla, secundum carnem natus est : qui autem de libera, per repromissionem :",
+        "SYN": "Но который от рабы, тот рожден по плоти; а который от свободной, тот по обетованию.",
+        "NEO": "Mais le fils de la servante naquit selon la chair, et celui de la femme libre en vertu de la promesse.",
+        "NAB": "The son of the slave woman was born naturally, the son of the freeborn through a promise.",
+        "VAT_ES": "El hijo de la esclava nación según la carne; en cambio, el hijo de la mujer libre, nació en virtud de la promesa."
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +404,14 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἅτινά ἐστιν ἀλληγορούμενα· αὗται γάρ εἰσιν δύο διαθῆκαι· μία μὲν ἀπὸ ὄρους Σινᾶ, εἰς δουλείαν γεννῶσα, ἥτις ἐστὶν Ἅγαρ.",
+        "VUL": "quæ sunt per allegoriam dicta. Hæc enim sunt duo testamenta. Unum quidem in monte Sina, in servitutem generans, quæ est Agar :",
+        "SYN": "В этом есть иносказание. Это два завета: один от горы Синайской, рождающий в рабство, который есть Агарь,",
+        "NEO": "Ces choses ont un sens allégorique ; car ces femmes sont deux alliances. L’une, du mont Sinaï, enfantant pour la servitude : c’est Agar,",
+        "NAB": "Now this is an allegory. These women represent two covenants. One was from Mount Sinai, bearing children for slavery; this is Hagar.",
+        "VAT_ES": "Hay en todo esto un simbolismo: estas dos mujeres representan las dos Alianzas. La primera Alianza, la del monte Sinaí, que engendró un pueblo para la esclavitud, está representada por Agar,"
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +420,14 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τὸ γὰρ Ἅγαρ Σινᾶ ὄρος ἐστὶν ἐν τῇ Ἀραβίᾳ, συστοιχεῖ δὲ τῇ νῦν Ἱερουσαλήμ, δουλεύει δὲ μετὰ τῶν τέκνων αὐτῆς.",
+        "VUL": "Sina enim mons est in Arabia, qui conjunctus est ei quæ nunc est Jerusalem, et servit cum filiis suis.",
+        "SYN": "ибо Агарь означает гору Синай в Аравии и соответствует нынешнему Иерусалиму, потому что он с детьми своими в рабстве;",
+        "NEO": "— car Sinaï est une montagne en Arabie — elle correspond à la Jérusalem actuelle, laquelle est esclave, elle et ses enfants.+ 4:25 25. D’après d’autres manuscrits : Cette Agar, c’est le mont Sinaï en Arabie ; elle correspond à, ressemble, va de pair avec \\+qt la Jérusalem actuelle\\+qt* (avant la venue du Messie) centre du mosaïsme, dont les fils sont assujettis à la Loi. — Descendants d’Ismaël, le fils d’Agar et d’Abraham (Gen. xxi, 12 sv.), et exclus dans la personne de leur père de l’héritage promis à Abraham, les Arabes habitaient la région où se trouve le Sinaï (Gen. xxi, 21 ; xxv, 18). Dans le dessein de la Providence l’alliance mosaïque devait enseigner aux fils d’Israël, par son origine même, qu’elle était une alliance de servitude, ne donnant pas droit par elle-même à l’héritage des promesses.*",
+        "NAB": "Hagar represents Sinai, a mountain in Arabia; it corresponds to the present Jerusalem, for she is in slavery along with her children.",
+        "VAT_ES": "porque el monte Sinaí está en Arabia, y corresponde a la Jerusalén actual, ya que ella con sus hijos viven en la esclavitud."
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +436,14 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἡ δὲ ἄνω Ἱερουσαλὴμ ἐλευθέρα ἐστίν, ἥτις ἐστὶν μήτηρ πάντων ἡμῶν·",
+        "VUL": "Illa autem, quæ sursum est Jerusalem, libera est, quæ est mater nostra.",
+        "SYN": "а вышний Иерусалим свободен: он -- матерь всем нам.",
+        "NEO": "Mais la Jérusalem d’en haut est libre : c’est elle qui est notre mère ;",
+        "NAB": "But the Jerusalem above is freeborn, and she is our mother.",
+        "VAT_ES": "Pero hay otra Jerusalén, la celestial, que es libre, y ella es nuestra madre."
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +452,14 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "BYZ": "γέγραπται γάρ, Εὐφράνθητι, στεῖρα, ἡ οὐ τίκτουσα· ῥῆξον καὶ βόησον, ἡ οὐκ ὠδίνουσα· ὅτι πολλὰ τὰ τέκνα τῆς ἐρήμου μᾶλλον ἢ τῆς ἐχούσης τὸν ἄνδρα.",
+        "VUL": "Scriptum est enim : [Lætare, sterilis, quæ non paris ;/ erumpe et clama, quæ non parturis :/ quia multi filii desertæ,/ magis quam ejus quæ habet virum.]",
+        "SYN": "Ибо написано: возвеселись, неплодная, нерождающая; воскликни и возгласи, не мучившаяся родами; потому что у оставленной гораздо более детей, нежели у имеющей мужа.",
+        "NEO": "car il est écrit : « Réjouis-toi, stérile, toi qui n’enfantais pas ! Éclate en cris de joie et d’allégresse, toi qui ne connaissais pas les douleurs de l’enfantement ! Car les enfants de la délaissée seront plus nombreux que les enfants de celle qui avait l’époux. »+ 4:27 27. Is. liv, 1.*",
+        "NAB": "For it is written: \"Rejoice, you barren one who bore no children; break forth and shout, you who were not in labor; for more numerous are the children of the deserted one than of her who has a husband.\"",
+        "VAT_ES": "Porque dice la Escritura: \"&iexcl;Alégrate, tú que eres estéril y no das a luz; prorrumpe en gritos de alegría, tú que no conoces los dolores del parto! Porque serán más numerosos los hijos de la mujer abandonada que los hijos de la que tiene marido\"."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +468,14 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἡμεῖς δέ, ἀδελφοί, κατὰ Ἰσαάκ, ἐπαγγελίας τέκνα ἐσμέν.",
+        "VUL": "Nos autem, fratres, secundum Isaac promissionis filii sumus.",
+        "SYN": "Мы, братия, дети обетования по Исааку.",
+        "NEO": "Pour vous,+ 4:28 28. Pour vous, autrefois païens, aujourd’hui membres de J.-C. par la foi et le baptême, \\+qt vous êtes\\+qt* (Vulg. et qq. mss. \\+qt pour nous… nous sommes\\+qt*) \\+qt enfants d’Abraham\\+qt*.* frères, vous êtes, à la manière d’Isaac, enfants de la promesse.",
+        "NAB": "Now you, brothers, like Isaac, are children of the promise.",
+        "VAT_ES": "Nosotros, hermanos, somos como Isaac, hijos de la promesa."
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +484,14 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀλλ’ ὥσπερ τότε ὁ κατὰ σάρκα γεννηθεὶς ἐδίωκεν τὸν κατὰ πνεῦμα, οὕτως καὶ νῦν.",
+        "VUL": "Sed quomodo tunc is, qui secundum carnem natus fuerat, persequebatur eum qui secundum spiritum : ita et nunc.",
+        "SYN": "Но, как тогда рожденный по плоти гнал _рожденного_ по духу, так и ныне.",
+        "NEO": "Mais de même qu’alors celui qui était né selon la chair persécutait celui qui était né selon l’Esprit, ainsi en est-il encore maintenant.+ 4:29 29. Gen. xxi, 9.*",
+        "NAB": "But just as then the child of the flesh persecuted the child of the spirit, it is the same now.",
+        "VAT_ES": "Y así como entonces el hijo nacido según la carne perseguía al hijo nacido por obra del Espíritu, así también sucede ahora."
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +500,14 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀλλὰ τί λέγει ἡ γραφή; Ἔκβαλε τὴν παιδίσκην καὶ τὸν υἱὸν αὐτῆς, οὐ γὰρ μὴ κληρονομήσῃ ὁ υἱὸς τῆς παιδίσκης μετὰ τοῦ υἱοῦ τῆς ἐλευθέρας.",
+        "VUL": "Sed quid dicit Scriptura ? Ejice ancillam, et filium ejus : non enim hæres erit filius ancillæ cum filio liberæ.",
+        "SYN": "Что же говорит Писание? Изгони рабу и сына ее, ибо сын рабы не будет наследником вместе с сыном свободной.",
+        "NEO": "Mais que dit l’Écriture ?+ 4:30 30. L’Écriture, Gen. xxi, 10.* « Chasse l’esclave et son fils, car le fils de l’esclave ne saurait hériter avec le fils de la femme libre. »",
+        "NAB": "But what does the scripture say? \"Drive out the slave woman and her son! For the son of the slave woman shall not share the inheritance with the son\" of the freeborn.",
+        "VAT_ES": "Pero dice la Escritura: Echa a la esclava y a su hijo, porque el hijo de la esclava no va a compartir la herencia con el hijo de la mujer libre."
+      }
     },
     "31": {
       "seq": 31,
@@ -288,7 +516,14 @@
         "VUL": 31,
         "LXX": 31
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἄρα, ἀδελφοί, οὐκ ἐσμὲν παιδίσκης τέκνα, ἀλλὰ τῆς ἐλευθέρας.",
+        "VUL": "Itaque, fratres, non sumus ancillæ filii, sed liberæ : qua libertate Christus nos liberavit.",
+        "SYN": "Итак, братия, мы дети не рабы, но свободной.",
+        "NEO": "C’est pourquoi, frères, nous ne sommes pas enfants de la servante, mais de la femme libre.+ 4:31 31. Les vers. iv, 31 et v, 1, offrent de nombreuses variantes. Dans la Vulgate, le premier membre de phrase de v, 1, est rattaché à iv, 31, avec ce sens : Cette liberté, c’est du Christ que nous l’avons reçue.*",
+        "NAB": "Therefore, brothers, we are children not of the slave woman but of the freeborn woman.",
+        "VAT_ES": "Por lo tanto, hermanos, no somos hijos de una esclava, sino de la mujer libre."
+      }
     }
   }
 }

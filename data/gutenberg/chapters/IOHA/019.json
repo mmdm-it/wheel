@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τότε οὖν ἔλαβεν ὁ Πιλάτος τὸν Ἰησοῦν, καὶ ἐμαστίγωσεν.",
+        "VUL": "Tunc ergo apprehendit Pilatus Jesum, et flagellavit.",
+        "SYN": "Тогда Пилат взял Иисуса и _велел_ бить Его.",
+        "NEO": "Alors Pilate prit Jésus et le fit flageller.+ 19:1 XIX, Matth. xxvii, 24 ; Marc, xv, 15 ; Luc, xxiii, 24.*",
+        "NAB": "Then Pilate took Jesus and had him scourged.",
+        "VAT_ES": "Pilato mandó entonces azotar a Jesús.",
+        "CEI": "Ora alcuni, venuti dalla Giudea, insegnavano ai fratelli questa dottrina: \"Se non vi fate circoncidere secondo l'uso di Mosè, non potete esser salvi\"."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ οἱ στρατιῶται πλέξαντες στέφανον ἐξ ἀκανθῶν ἐπέθηκαν αὐτοῦ τῇ κεφαλῇ, καὶ ἱμάτιον πορφυροῦν περιέβαλον αὐτόν,",
+        "VUL": "Et milites plectentes coronam de spinis, imposuerunt capiti ejus : et veste purpurea circumdederunt eum.",
+        "SYN": "И воины, сплетши венец из терна, возложили Ему на голову, и одели Его в багряницу,",
+        "NEO": "Et les soldats ayant tressé une couronne d’épines, la mirent sur sa tête, et le revêtirent d’un manteau de pourpre ;",
+        "NAB": "And the soldiers wove a crown out of thorns and placed it on his head, and clothed him in a purple cloak,",
+        "VAT_ES": "Los soldados tejieron una corona de espinas y se la pusieron sobre la cabeza. Lo revistieron con un manto rojo,",
+        "CEI": "Poiché Paolo e Barnaba si opponevano risolutamente e discutevano animatamente contro costoro, fu stabilito che Paolo e Barnaba e alcuni altri di loro andassero a Gerusalemme dagli apostoli e dagli anziani per tale questione."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "BYZ": "καὶ ἔλεγον, Χαῖρε, ὁ βασιλεὺς τῶν Ἰουδαίων· καὶ ἐδίδουν αὐτῷ ῥαπίσματα.",
+        "VUL": "Et veniebant ad eum, et dicebant : Ave, rex Judæorum : et dabant ei alapas.",
+        "SYN": "и говорили: радуйся, Царь Иудейский! и били Его по ланитам.",
+        "NEO": "puis, s’approchant de lui, ils disaient : « Salut, roi des Juifs ! » et ils le souffletaient.",
+        "NAB": "and they came to him and said, \"Hail, King of the Jews!\" And they struck him repeatedly.",
+        "VAT_ES": "y acercándose, le decían: «&iexcl;Salud, rey de los judíos!», y lo abofeteaban.",
+        "CEI": "Essi dunque, scortati per un tratto dalla comunità, attraversarono la Fenicia e la Samaria raccontando la conversione dei pagani e suscitando grande gioia in tutti i fratelli."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐξῆλθεν οὖν πάλιν ἔξω ὁ Πιλάτος, καὶ λέγει αὐτοῖς, Ἴδε, ἄγω ὑμῖν αὐτὸν ἔξω, ἵνα γνῶτε ὅτι ἐν αὐτῷ οὐδεμίαν αἰτίαν εὑρίσκω.",
+        "VUL": "Exivit ergo iterum Pilatus foras, et dicit eis : Ecce adduco vobis eum foras, ut cognoscatis quia nullam invenio in eo causam.",
+        "SYN": "Пилат опять вышел и сказал им: вот, я вывожу Его к вам, чтобы вы знали, что я не нахожу в Нем никакой вины.",
+        "NEO": "Pilate sortit encore une fois et dit aux Juifs : « Voici que je vous l’amène dehors, afin que vous sachiez que je ne trouve en lui aucun crime. »",
+        "NAB": "Once more Pilate went out and said to them, \"Look, I am bringing him out to you, so that you may know that I find no guilt in him.\"",
+        "VAT_ES": "Pilato volvió a salir y les dijo: «Miren, lo traigo afuera para que sepan que no encuentro en él ningún motivo de condena».",
+        "CEI": "Giunti poi a Gerusalemme, furono ricevuti dalla Chiesa, dagli apostoli e dagli anziani e riferirono tutto ciò che Dio aveva compiuto per mezzo loro."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐξῆλθεν οὖν ὁ Ἰησοῦς ἔξω, φορῶν τὸν ἀκάνθινον στέφανον καὶ τὸ πορφυροῦν ἱμάτιον. Καὶ λέγει αὐτοῖς, Ἴδε, ὁ ἄνθρωπος.",
+        "VUL": "(Exivit ergo Jesus portans coronam spineam, et purpureum vestimentum.) Et dicit eis : Ecce homo.",
+        "SYN": "Тогда вышел Иисус в терновом венце и в багрянице. И сказал им _Пилат:_ се, Человек!",
+        "NEO": "Jésus sortit donc, portant la couronne d’épines et le manteau d’écarlate ; et Pilate leur dit : « Voici l’homme. »",
+        "NAB": "So Jesus came out, wearing the crown of thorns and the purple cloak. And he said to them, \"Behold, the man!\"",
+        "VAT_ES": "Jesús salió, llevando la corona de espinas y el manto rojo. Pilato les dijo: «&iexcl;Aquí tienen al hombre!».",
+        "CEI": "Ma si alzarono alcuni della setta dei farisei, che erano diventati credenti, affermando: è necessario circonciderli e ordinar loro di osservare la legge di Mosè."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὅτε οὖν εἶδον αὐτὸν οἱ ἀρχιερεῖς καὶ οἱ ὑπηρέται, ἐκραύγασαν λέγοντες, Σταύρωσον, σταύρωσον αὐτόν. Λέγει αὐτοῖς ὁ Πιλάτος, Λάβετε αὐτὸν ὑμεῖς καὶ σταυρώσατε· ἐγὼ γὰρ οὐχ εὑρίσκω ἐν αὐτῷ αἰτίαν.",
+        "VUL": "Cum ergo vidissent eum pontifices et ministri, clamabant, dicentes : Crucifige, crucifige eum. Dicit eis Pilatus : Accipite eum vos, et crucifigite : ego enim non invenio in eo causam.",
+        "SYN": "Когда же увидели Его первосвященники и служители, то закричали: распни, распни Его! Пилат говорит им: возьмите Его вы, и распните; ибо я не нахожу в Нем вины.",
+        "NEO": "Lorsque les Princes des prêtres et les satellites le virent, ils s’écrièrent : « Crucifie-le ! crucifie-le ! » Pilate leur dit : « Prenez-le vous-mêmes, et crucifiez-le ; car, pour moi, je ne trouve aucun crime en lui. »",
+        "NAB": "When the chief priests and the guards saw him they cried out, \"Crucify him, crucify him!\" Pilate said to them, \"Take him yourselves and crucify him. I find no guilt in him.\"",
+        "VAT_ES": "Cuando los sumos sacerdotes y los guardias lo vieron, gritaron: «&iexcl;Crucifícalo! &iexcl;Crucifícalo!». Pilato les dijo: «Tómenlo ustedes y crucifíquenlo. Yo no encuentro en él ningún motivo para condenarlo».",
+        "CEI": "Allora si riunirono gli apostoli e gli anziani per esaminare questo problema."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀπεκρίθησαν αὐτῷ οἱ Ἰουδαῖοι, Ἡμεῖς νόμον ἔχομεν, καὶ κατὰ τὸν νόμον ἡμῶν ὀφείλει ἀποθανεῖν, ὅτι ἑαυτὸν υἱὸν θεοῦ ἐποίησεν.",
+        "VUL": "Responderunt ei Judæi : Nos legem habemus, et secundum legem debet mori, quia Filium Dei se fecit.",
+        "SYN": "Иудеи отвечали ему: мы имеем закон, и по закону нашему Он должен умереть, потому что сделал Себя Сыном Божиим.",
+        "NEO": "Les Juifs lui répondirent : « Nous avons une loi, et, d’après notre loi,+ 19:7 7. Notre loi: Lév. xxiv, 15-16 ; Deut. xviii, 20.* il doit mourir, parce qu’il s’est fait Fils de Dieu. »",
+        "NAB": "The Jews answered, \"We have a law, and according to that law he ought to die, because he made himself the Son of God.\"",
+        "VAT_ES": "Los judíos respondieron: «Nosotros tenemos una Ley, y según esa Ley debe morir porque él pretende ser Hijo de Dios».",
+        "CEI": "Dopo lunga discussione, Pietro si alzò e disse: \"Fratelli, voi sapete che già da molto tempo Dio ha fatto una scelta fra voi, perché i pagani ascoltassero per bocca mia la parola del vangelo e venissero alla fede."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὅτε οὖν ἤκουσεν ὁ Πιλάτος τοῦτον τὸν λόγον, μᾶλλον ἐφοβήθη,",
+        "VUL": "Cum ergo audisset Pilatus hunc sermonem, magis timuit.",
+        "SYN": "Пилат, услышав это слово, больше убоялся.",
+        "NEO": "Ayant entendu ces paroles, Pilate fut encore plus effrayé.",
+        "NAB": "Now when Pilate heard this statement, he became even more afraid,",
+        "VAT_ES": "Al oír estas palabras, Pilato se alarmó más todavía.",
+        "CEI": "E Dio, che conosce i cuori, ha reso testimonianza in loro favore concedendo anche a loro lo Spirito Santo, come a noi;"
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "BYZ": "καὶ εἰσῆλθεν εἰς τὸ πραιτώριον πάλιν, καὶ λέγει τῷ Ἰησοῦ, Πόθεν εἶ σύ; Ὁ δὲ Ἰησοῦς ἀπόκρισιν οὐκ ἔδωκεν αὐτῷ.",
+        "VUL": "Et ingressus est prætorium iterum : et dixit ad Jesum : Unde es tu ? Jesus autem responsum non dedit ei.",
+        "SYN": "И опять вошел в преторию и сказал Иисусу: откуда Ты? Но Иисус не дал ему ответа.",
+        "NEO": "Et rentrant dans le prétoire, il dit à Jésus : « D’où es-tu ? » Mais Jésus ne lui fit aucune réponse.",
+        "NAB": "and went back into the praetorium and said to Jesus, \"Where are you from?\" Jesus did not answer him.",
+        "VAT_ES": "Volvió a entrar en el pretorio y preguntó a Jesús: «&iquest;De dónde eres tú?». Pero Jesús no lo respondió nada.",
+        "CEI": "e non ha fatto nessuna discriminazione tra noi e loro, purificandone i cuori con la fede."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "BYZ": "Λέγει οὖν αὐτῷ ὁ Πιλάτος, Ἐμοὶ οὐ λαλεῖς; Οὐκ οἶδας ὅτι ἐξουσίαν ἔχω σταυρῶσαί σε, καὶ ἐξουσίαν ἔχω ἀπολῦσαί σε;",
+        "VUL": "Dicit ergo ei Pilatus : Mihi non loqueris ? nescis quia potestatem habeo crucifigere te, et potestatem habeo dimittere te ?",
+        "SYN": "Пилат говорит Ему: мне ли не отвечаешь? не знаешь ли, что я имею власть распять Тебя и власть имею отпустить Тебя?",
+        "NEO": "Pilate lui dit : « C’est à moi que tu ne parles pas ? Ignores-tu que j’ai le pouvoir de te délivrer et le pouvoir de te crucifier ? »",
+        "NAB": "So Pilate said to him, \"Do you not speak to me? Do you not know that I have power to release you and I have power to crucify you?\"",
+        "VAT_ES": "Pilato le dijo: «&iquest;No quieres hablarme? &iquest;No sabes que tengo autoridad para soltarte y también para crucificarte?».",
+        "CEI": "Or dunque, perché continuate a tentare Dio, imponendo sul collo dei discepoli un giogo che né i nostri padri, né noi siamo stati in grado di portare?"
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀπεκρίθη Ἰησοῦς, Οὐκ εἶχες ἐξουσίαν οὐδεμίαν κατ’ ἐμοῦ, εἰ μὴ ἦν σοι δεδομένον ἄνωθεν· διὰ τοῦτο ὁ παραδιδούς μέ σοι μείζονα ἁμαρτίαν ἔχει.",
+        "VUL": "Respondit Jesus : Non haberes potestatem adversum me ullam, nisi tibi datum esset desuper. Propterea qui me tradidit tibi, majus peccatum habet.",
+        "SYN": "Иисус отвечал: ты не имел бы надо Мною никакой власти, если бы не было дано тебе свыше; посему более греха на том, кто предал Меня тебе.",
+        "NEO": "Jésus répondit : « Tu n’aurais sur moi aucun pouvoir, s’il ne t’avait pas été donné d’en haut. C’est pourquoi celui qui m’a livré à toi a un plus grand péché. »",
+        "NAB": "Jesus answered (him), \"You would have no power over me if it had not been given to you from above. For this reason the one who handed me over to you has the greater sin.\"",
+        "VAT_ES": "Jesús le respondió: «Tú no tendrías sobre mí ninguna autoridad, si no la hubieras recibido de lo alto. Por eso, el que me ha entregado a ti ha cometido un pecado más grave».",
+        "CEI": "Noi crediamo che per la grazia del Signore Gesù siamo salvati e nello stesso modo anche loro\"."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐκ τούτου ἐζήτει ὁ Πιλάτος ἀπολῦσαι αὐτόν. Οἱ δὲ Ἰουδαῖοι ἔκραζον λέγοντες, Ἐὰν τοῦτον ἀπολύσῃς, οὐκ εἶ φίλος τοῦ Καίσαρος· πᾶς ὁ βασιλέα ἑαυτὸν ποιῶν, ἀντιλέγει τῷ Καίσαρι.",
+        "VUL": "Et exinde quærebat Pilatus dimittere eum. Judæi autem clamabant dicentes : Si hunc dimittis, non es amicus Cæsaris. Omnis enim qui se regem facit, contradicit Cæsari.",
+        "SYN": "С этого _времени_ Пилат искал отпустить Его. Иудеи же кричали: если отпустишь Его, ты не друг кесарю; всякий, делающий себя царем, противник кесарю.",
+        "NEO": "Dès ce moment,+ 19:12 12. Dès ce moment ; le grec pourrait aussi se traduire, \\+qt pour cette raison.\\+qt** Pilate cherchait à le délivrer. Mais les Juifs criaient disant : « Si tu le délivres, tu n’es pas ami de César ; quiconque se fait roi, se déclare contre César. »",
+        "NAB": "Consequently, Pilate tried to release him; but the Jews cried out, \"If you release him, you are not a Friend of Caesar. Everyone who makes himself a king opposes Caesar.\"",
+        "VAT_ES": "Desde ese momento, Pilato trataba de ponerlo en libertad. Pero los judíos gritaban: «Si lo sueltas, no eres amigo del César, porque el que se hace rey se opone al César».",
+        "CEI": "Tutta l'assemblea tacque e stettero ad ascoltare Barnaba e Paolo che riferivano quanti miracoli e prodigi Dio aveva compiuto tra i pagani per mezzo loro."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὁ οὖν Πιλάτος ἀκούσας τοῦτον τὸν λόγον ἤγαγεν ἔξω τὸν Ἰησοῦν, καὶ ἐκάθισεν ἐπὶ τοῦ βήματος, εἰς τόπον λεγόμενον Λιθόστρωτον, Ἑβραϊστὶ δὲ Γαββαθᾶ·",
+        "VUL": "Pilatus autem cum audisset hos sermones, adduxit foras Jesum : et sedit pro tribunali, in loco qui dicitur Lithostrotos, hebraice autem Gabbatha.",
+        "SYN": "Пилат, услышав это слово, вывел вон Иисуса и сел на судилище, на месте, называемом Лифостротон, а по-еврейски Гаввафа.",
+        "NEO": "Pilate, ayant entendu ces paroles, fit conduire Jésus dehors, et il s’assit sur son tribunal, au lieu appelé Lithostrotos, et en hébreu Gabbatha.+ 19:13 13. Le mot grec Lithostrotos signifie \\+qt terrain pavé de pierres\\+qt*, et \\+qt Gabbatha\\+qt*, en syro-chaldéen, \\+qt éminence\\+qt*, mot qui indique la nature de l’emplacement. C’est là que Pilate avait fait dresser son tribunal.*",
+        "NAB": "When Pilate heard these words he brought Jesus out and seated him on the judge's bench in the place called Stone Pavement, in Hebrew, Gabbatha.",
+        "VAT_ES": "Al oír esto, Pilato sacó afuera a Jesús y lo hizo sentar sobre un estrado, en el lugar llamado «el Empedrado», en hebreo, «Gábata».",
+        "CEI": "Quand'essi ebbero finito di parlare, Giacomo aggiunse:"
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἦν δὲ Παρασκευὴ τοῦ Πάσχα, ὥρα δὲ ὡσεὶ ἕκτη· καὶ λέγει τοῖς Ἰουδαίοις, Ἴδε, ὁ βασιλεὺς ὑμῶν.",
+        "VUL": "Erat autem parasceve Paschæ, hora quasi sexta, et dicit Judæis : Ecce rex vester.",
+        "SYN": "Тогда была пятница перед Пасхою, и час шестый. И сказал _Пилат_ Иудеям: се, Царь ваш!",
+        "NEO": "— C’était la Préparation+ 19:14 14. La Préparation c’est le terme par lequel les Évangélistes désignent le vendredi, c’est-à-dire le jour qui précédait le sabbat et pendant lequel on préparait toutes choses, de manière à pouvoir passer le lendemain dans un repos absolu (voy. Matth. xxvii, 62 ; Marc, xv, 42 ; Luc, xxiii, 54). — \\+qt La Préparation de la Pâque\\+qt*, c’est le jour préparatoire au repas pascal, qui devait avoir lieu après le coucher du soleil, alors que finissait le 14 Nisan, c’est-à-dire, le vendredi soir, la solennité pascale étant cette année le samedi. — \\+qt Vers la sixième heure\\+qt*, un peu avant midi. Dans un sens large et usuel, les expressions \\+qt première, troisième heure,\\+qt* etc. signifiaient le temps compris entre deux heures consécutives, par exemple de 6 h. à 9 h., de 9 h. à midi, etc. Voy. Marc, xv, 25. S. Jean en mettant environ nous donne l’heure approximative. S. Marc veut marquer par la troisième heure qu’on était encore dans la seconde partie du jour.* de la Pâque, et environ la sixième heure. — Pilate dit aux Juifs : « Voici votre roi. »",
+        "NAB": "It was preparation day for Passover, and it was about noon. And he said to the Jews, \"Behold, your king!\"",
+        "VAT_ES": "Era el día de la Preparación de la Pascua, alrededor del mediodía. Pilato dijo a los judíos: «Aquí tienen a su rey».",
+        "CEI": "\"Fratelli, ascoltatemi. Simone ha riferito come fin da principio Dio ha voluto scegliere tra i pagani un popolo per consacrarlo al suo nome."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "BYZ": "Οἱ δὲ ἐκραύγασαν, Ἆρον, ἆρον, σταύρωσον αὐτόν. Λέγει αὐτοῖς ὁ Πιλάτος, Τὸν βασιλέα ὑμῶν σταυρώσω; Ἀπεκρίθησαν οἱ ἀρχιερεῖς, Οὐκ ἔχομεν βασιλέα εἰ μὴ Καίσαρα.",
+        "VUL": "Illi autem clamabant : Tolle, tolle, crucifige eum. Dicit eis Pilatus : Regem vestrum crucifigam ? Responderunt pontifices : Non habemus regem, nisi Cæsarem.",
+        "SYN": "Но они закричали: возьми, возьми, распни Его! Пилат говорит им: Царя ли вашего распну? Первосвященники отвечали: нет у нас царя, кроме кесаря.",
+        "NEO": "Mais ils se mirent à crier : « Qu’il meure ! Qu’il meure ! Crucifie-le. » Pilate leur dit : « Crucifierai-je votre roi ? » les Princes des prêtres répondirent : « Nous n’avons de roi que César. »",
+        "NAB": "They cried out, \"Take him away, take him away! Crucify him!\" Pilate said to them, \"Shall I crucify your king?\" The chief priests answered, \"We have no king but Caesar.\"",
+        "VAT_ES": "Ellos vociferaban: «&iexcl;Que muera! &iexcl;Que muera! &iexcl;Crucifícalo!». Pilato les dijo: «&iquest;Voy a crucificar a su rey?». Los sumos sacerdotes respondieron: «No tenemos otro rey que el César».",
+        "CEI": "Con questo si accordano le parole dei profeti, come sta scritto:"
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τότε οὖν παρέδωκεν αὐτὸν αὐτοῖς ἵνα σταυρωθῇ. ¶Παρέλαβον δὲ τὸν Ἰησοῦν καὶ ἤγαγον·",
+        "VUL": "Tunc ergo tradidit eis illum ut crucifigeretur. Susceperunt autem Jesum, et eduxerunt.",
+        "SYN": "Тогда наконец он предал Его им на распятие. И взяли Иисуса и повели.",
+        "NEO": "Alors il le leur livra pour être crucifié.+ 19:16 16. Matth. xxvii, 31 ; Marc, xv, 20 ; Luc, xxiii, 26.*",
+        "NAB": "Then he handed him over to them to be crucified. So they took Jesus,",
+        "VAT_ES": "Entonces Pilato se lo entregó para que lo crucifiquen, y ellos se lo llevaron.",
+        "CEI": "Dopo queste cose ritornerò e riedificherò la tenda di Davide che era caduta; ne riparerò le rovine e la rialzerò,"
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "BYZ": "καὶ βαστάζων τὸν σταυρὸν αὐτοῦ ἐξῆλθεν εἰς τόπον λεγόμενον Κρανίου Τόπον, ὃς λέγεται Ἑβραϊστὶ Γολγοθᾶ·",
+        "VUL": "Et bajulans sibi crucem exivit in eum, qui dicitur Calvariæ locum, hebraice autem Golgotha :",
+        "SYN": "И, неся крест Свой, Он вышел на место, называемое Лобное, по-еврейски Голгофа;",
+        "NEO": "Jésus, portant sa croix, arriva hors de la ville au lieu nommé Calvaire, en Hébreu Golgotha ;",
+        "NAB": "and carrying the cross himself he went out to what is called the Place of the Skull, in Hebrew, Golgotha.",
+        "VAT_ES": "Jesús, cargando sobre sí la cruz, salió de la ciudad para dirigirse al lugar llamado «del Cráneo», en hebreo «Gólgota».",
+        "CEI": "perché anche gli altri uomini cerchino il Signore e tutte le genti sulle quali è stato invocato il mio nome,"
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "BYZ": "ὅπου αὐτὸν ἐσταύρωσαν, καὶ μετ’ αὐτοῦ ἄλλους δύο, ἐντεῦθεν καὶ ἐντεῦθεν, μέσον δὲ τὸν Ἰησοῦν.",
+        "VUL": "ubi crucifixerunt eum, et cum eo alios duos hinc et hinc, medium autem Jesum.",
+        "SYN": "там распяли Его и с Ним двух других, по ту и по другую сторону, а посреди Иисуса.",
+        "NEO": "c’est là qu’ils le crucifièrent, et deux autres avec lui, un de chaque côté, et Jésus au milieu.",
+        "NAB": "There they crucified him, and with him two others, one on either side, with Jesus in the middle.",
+        "VAT_ES": "Allí lo crucificaron; y con él a otros dos, uno a cada lado y Jesús en el medio.",
+        "CEI": "dice il Signore che fa queste cose da lui conosciute dall'eternità."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἔγραψεν δὲ καὶ τίτλον ὁ Πιλάτος, καὶ ἔθηκεν ἐπὶ τοῦ σταυροῦ· ἦν δὲ γεγραμμένον, Ἰησοῦς ὁ Ναζωραῖος ὁ βασιλεὺς τῶν Ἰουδαίων.",
+        "VUL": "Scripsit autem et titulum Pilatus, et posuit super crucem. Erat autem scriptum : Jesus Nazarenus, Rex Judæorum.",
+        "SYN": "Пилат же написал и надпись, и поставил на кресте. Написано было: Иисус Назорей, Царь Иудейский.",
+        "NEO": "Pilate fit aussi une inscription, et la fit mettre au haut de la croix ; elle portait ces mots : « Jésus de Nazareth, le roi des Juifs. »",
+        "NAB": "Pilate also had an inscription written and put on the cross. It read, \"Jesus the Nazorean, the King of the Jews.\"",
+        "VAT_ES": "Pilato redactó una inscripción que decía: \"Jesús el Nazareno, rey de los judíos\", y la hizo poner sobre la cruz.",
+        "CEI": "Per questo io ritengo che non si debba importunare quelli che si convertono a Dio tra i pagani,"
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +341,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "BYZ": "Τοῦτον οὖν τὸν τίτλον πολλοὶ ἀνέγνωσαν τῶν Ἰουδαίων, ὅτι ἐγγὺς ἦν ὁ τόπος τῆς πόλεως ὅπου ἐσταυρώθη ὁ Ἰησοῦς· καὶ ἦν γεγραμμένον Ἑβραϊστί, Ἑλληνιστί, Ῥωμαϊστί.",
+        "VUL": "Hunc ergo titulum multi Judæorum legerunt : quia prope civitatem erat locus, ubi crucifixus est Jesus, et erat scriptum hebraice, græce, et latine.",
+        "SYN": "Эту надпись читали многие из Иудеев, потому что место, где был распят Иисус, было недалеко от города, и написано было по-- еврейски, по-гречески, по-римски.",
+        "NEO": "Beaucoup de Juifs lurent cet écriteau, car le lieu où Jésus avait été crucifié était près de la ville, et l’inscription était en hébreu, en grec et en latin.",
+        "NAB": "Now many of the Jews read this inscription, because the place where Jesus was crucified was near the city; and it was written in Hebrew, Latin, and Greek.",
+        "VAT_ES": "Muchos judíos leyeron esta inscripción, porque el lugar donde Jesús fue crucificado quedaba cerca de la ciudad y la inscripción estaba en hebreo, latín y griego.",
+        "CEI": "ma solo si ordini loro di astenersi dalle sozzure degli idoli, dalla impudicizia, dagli animali soffocati e dal sangue."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +358,15 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἔλεγον οὖν τῷ Πιλάτῳ οἱ ἀρχιερεῖς τῶν Ἰουδαίων, Μὴ γράφε, Ὁ βασιλεὺς τῶν Ἰουδαίων· ἀλλ’ ὅτι Ἐκεῖνος εἶπεν, Βασιλεύς εἰμι τῶν Ἰουδαίων.",
+        "VUL": "Dicebant ergo Pilato pontifices Judæorum : Noli scribere : Rex Judæorum : sed quia ipse dixit : Rex sum Judæorum.",
+        "SYN": "Первосвященники же Иудейские сказали Пилату: не пиши: Царь Иудейский, но что Он говорил: Я Царь Иудейский.",
+        "NEO": "Or, les princes des prêtres des Juifs dirent à Pilate : « Ne mets pas : Le roi des Juifs ; mais que lui-même a dit : Je suis le roi des Juifs. »",
+        "NAB": "So the chief priests of the Jews said to Pilate, \"Do not write 'The King of the Jews,' but that he said, 'I am the King of the Jews.'\"",
+        "VAT_ES": "Los sumos sacerdotes de los judíos dijeron a Pilato: «No escribas: \"El rey de los judíos\". sino: \"Este ha dicho: Yo soy el rey de los judíos\"».",
+        "CEI": "Mosè infatti, fin dai tempi antichi, ha chi lo predica in ogni città, poiché viene letto ogni sabato nelle sinagoghe\"."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +375,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἀπεκρίθη ὁ Πιλάτος, Ὃ γέγραφα, γέγραφα.",
+        "VUL": "Respondit Pilatus : Quod scripsi, scripsi.",
+        "SYN": "Пилат отвечал: что я написал, то написал.",
+        "NEO": "Pilate répondit : « Ce que j’ai écrit, je l’ai écrit. »",
+        "NAB": "Pilate answered, \"What I have written, I have written.\"",
+        "VAT_ES": "Pilato respondió: «Lo escrito, escrito está».",
+        "CEI": "Allora gli apostoli, gli anziani e tutta la Chiesa decisero di eleggere alcuni di loro e di inviarli ad Antiochia insieme a Paolo e Barnaba: Giuda chiamato Barsabba e Sila, uomini tenuti in grande considerazione tra i fratelli."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +392,15 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Οἱ οὖν στρατιῶται, ὅτε ἐσταύρωσαν τὸν Ἰησοῦν, ἔλαβον τὰ ἱμάτια αὐτοῦ, καὶ ἐποίησαν τέσσαρα μέρη, ἑκάστῳ στρατιώτῃ μέρος, καὶ τὸν χιτῶνα. Ἦν δὲ ὁ χιτὼν ἄραφος, ἐκ τῶν ἄνωθεν ὑφαντὸς δι’ ὅλου.",
+        "VUL": "Milites ergo cum crucifixissent eum, acceperunt vestimenta ejus (et fecerunt quatuor partes, unicuique militi partem) et tunicam. Erat autem tunica inconsutilis, desuper contexta per totum.",
+        "SYN": "Воины же, когда распяли Иисуса, взяли одежды Его и разделили на четыре части, каждому воину по части, и хитон; хитон же был не сшитый, а весь тканый сверху.",
+        "NEO": "Les soldats, après avoir crucifié Jésus, prirent ses vêtements, et ils en firent quatre parts, une pour chacun d’eux. Ils prirent* aussi sa tunique : c’était une tunique sans couture, d’un seul tissu depuis le haut jusqu’en bas.",
+        "NAB": "When the soldiers had crucified Jesus, they took his clothes and divided them into four shares, a share for each soldier. They also took his tunic, but the tunic was seamless, woven in one piece from the top down.",
+        "VAT_ES": "Después que los soldados crucificaron a Jesús, tomaron sus vestiduras y las dividieron en cuatro partes, una para cada uno. Tomaron también la túnica, y como no tenía costura, porque estaba hecha de una sola pieza de arriba abajo,",
+        "CEI": "E consegnarono loro la seguente lettera: \"Gli apostoli e gli anziani ai fratelli di Antiochia, di Siria e di Cilicia che provengono dai pagani, salute!"
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +409,15 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "BYZ": "Εἶπον οὖν πρὸς ἀλλήλους, Μὴ σχίσωμεν αὐτόν, ἀλλὰ λάχωμεν περὶ αὐτοῦ, τίνος ἔσται· ἵνα ἡ γραφὴ πληρωθῇ ἡ λέγουσα, Διεμερίσαντο τὰ ἱμάτιά μου ἑαυτοῖς, καὶ ἐπὶ τὸν ἱματισμόν μου ἔβαλον κλῆρον. Οἱ μὲν οὖν στρατιῶται ταῦτα ἐποίησαν.",
+        "VUL": "Dixerunt ergo ad invicem : Non scindamus eam, sed sortiamur de illa cujus sit. Ut Scriptura impleretur, dicens : Partiti sunt vestimenta mea sibi : et in vestem meam miserunt sortem. Et milites quidem hæc fecerunt.",
+        "SYN": "Итак сказали друг другу: не станем раздирать его, а бросим о нем жребий, чей будет, -- да сбудется реченное в Писании: разделили ризы Мои между собою и об одежде Моей бросали жребий. Так поступили воины.",
+        "NEO": "Ils se dirent donc entre eux : « Ne la déchirons pas, mais tirons au sort+ 19:24 24. Au sort, Ps. xxii (\\+qt héb\\+qt*.) 19, cité d’après les Septante.* à qui elle sera » : afin que s’accomplît cette parole de l’Écriture : « Ils se sont partagé mes vêtements, et ils ont tiré ma robe au sort. » C’est ce que firent les soldats.",
+        "NAB": "So they said to one another, \"Let's not tear it, but cast lots for it to see whose it will be,\" in order that the passage of scripture might be fulfilled (that says): \"They divided my garments among them, and for my vesture they cast lots.\" This is what the soldiers did.",
+        "VAT_ES": "se dijeron entre sí: «No la rompamos. Vamos a sortearla, para ver a quién le toca.» Así se cumplió la Escritura que dice: Se repartieron mis vestiduras y sortearon mi túnica. Esto fue lo que hicieron los soldados.",
+        "CEI": "Abbiamo saputo che alcuni da parte nostra, ai quali non avevamo dato nessun incarico, sono venuti a turbarvi con i loro discorsi sconvolgendo i vostri animi."
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +426,15 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "BYZ": "Εἱστήκεισαν δὲ παρὰ τῷ σταυρῷ τοῦ Ἰησοῦ ἡ μήτηρ αὐτοῦ, καὶ ἡ ἀδελφὴ τῆς μητρὸς αὐτοῦ, Μαρία ἡ τοῦ Κλωπᾶ, καὶ Μαρία ἡ Μαγδαληνή.",
+        "VUL": "Stabant autem juxta crucem Jesu mater ejus, et soror matris ejus, Maria Cleophæ, et Maria Magdalene.",
+        "SYN": "При кресте Иисуса стояли Матерь Его и сестра Матери Его, Мария Клеопова, и Мария Магдалина.",
+        "NEO": "Près de la croix+ 19:25 25. Près de la Croix. S. Marc (xv, 40) et S. Luc (xxiii, 49) disent \\+qt de loin ;\\+qt* mais les moments ne sont pas les mêmes ; il y a entre les deux situations un intervalle de 3 heures, pendant lesquelles les ténèbres se répandirent sur la terre. — Μαρία ἡ τοῦ Κλωπᾶ, Marie de Clopas, exprime un degré de parenté, que l’on peut rendre par \\+qt sœur de Clopas\\+qt*. D’autres qui identifient Clopas et Alphée vi, 15 font de Marie la femme de Clopas. En tout cas c’était la mère de Jacques le Mineur (Matth. xxvii, 56 ; Marc, xv, 40 ; xvi, 1) qui est dit frère de Jésus. Elle était probablement la belle-sœur de la Sainte Vierge ou même seulement sa parente, la langue hébraïque n’ayant pas de termes spéciaux pour indiquer les divers degrés de parenté. D’après Hégésippe, Clopas était frère de Joseph.* de Jésus se tenaient sa mère et la sœur de sa mère, Marie, femme de Clopas, et Marie-Madeleine.",
+        "NAB": "Standing by the cross of Jesus were his mother and his mother's sister, Mary the wife of Clopas, and Mary of Magdala.",
+        "VAT_ES": "Junto a la cruz de Jesús, estaba su madre y la hermana de su madre, María, mujer de Cleofás, y María Magdalena.",
+        "CEI": "Abbiamo perciò deciso tutti d'accordo di eleggere alcune persone e inviarle a voi insieme ai nostri carissimi Barnaba e Paolo,"
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +443,15 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἰησοῦς οὖν ἰδὼν τὴν μητέρα, καὶ τὸν μαθητὴν παρεστῶτα ὃν ἠγάπα, λέγει τῇ μητρὶ αὐτοῦ, Γύναι, ἰδοὺ ὁ υἱός σου.",
+        "VUL": "Cum vidisset ergo Jesus matrem, et discipulum stantem, quem diligebat, dicit matri suæ : Mulier, ecce filius tuus.",
+        "SYN": "Иисус, увидев Матерь и ученика тут стоящего, которого любил, говорит Матери Своей: Жено! се, сын Твой.",
+        "NEO": "Jésus, ayant vu sa mère, et auprès d’elle le disciple qu’il aimait, dit à sa mère : « Femme, voilà ton fils. »",
+        "NAB": "When Jesus saw his mother and the disciple there whom he loved, he said to his mother, \"Woman, behold, your son.\"",
+        "VAT_ES": "Al ver a la madre y cerca de ella al discípulo a quien el amaba, Jesús le dijo: «Mujer, aquí tienes a tu hijo».",
+        "CEI": "uomini che hanno votato la loro vita al nome del nostro Signore Gesù Cristo."
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +460,15 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "BYZ": "Εἶτα λέγει τῷ μαθητῇ, Ἰδοὺ ἡ μήτηρ σου. Καὶ ἀπ’ ἐκείνης τῆς ὥρας ἔλαβεν ὁ μαθητὴς αὐτὴν εἰς τὰ ἴδια.",
+        "VUL": "Deinde dicit discipulo : Ecce mater tua. Et ex illa hora accepit eam discipulus in sua.",
+        "SYN": "Потом говорит ученику: се, Матерь твоя! И с этого времени ученик сей взял Ее к себе.",
+        "NEO": "Ensuite il dit au disciple : « Voilà ta mère. » Et depuis cette heure-là, le disciple la prit chez lui.",
+        "NAB": "Then he said to the disciple, \"Behold, your mother.\" And from that hour the disciple took her into his home.",
+        "VAT_ES": "Luego dijo al discípulo: «Aquí tienes a tu madre». Y desde aquel momento, el discípulo la recibió en su casa.",
+        "CEI": "Abbiamo mandato dunque Giuda e Sila, che vi riferiranno anch'essi queste stesse cose a voce."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +477,15 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Μετὰ τοῦτο ἰδὼν ὁ Ἰησοῦς ὅτι πάντα ἤδη τετέλεσται, ἵνα τελειωθῇ ἡ γραφή, λέγει, Διψῶ.",
+        "VUL": "Postea sciens Jesus quia omnia consummata sunt, ut consummaretur Scriptura, dixit : Sitio.",
+        "SYN": "После того Иисус, зная, что уже все совершилось, да сбудется Писание, говорит: жажду.",
+        "NEO": "Après cela, Jésus sachant que tout était maintenant consommé, afin que l’Écriture s’accomplît, dit : « J’ai soif. »+ 19:28 28. J’ai soif, Ps. lxix (héb.) 22 ; ou bien Ps. xxii (héb.) 16.*",
+        "NAB": "After this, aware that everything was now finished, in order that the scripture might be fulfilled, Jesus said, \"I thirst.\"",
+        "VAT_ES": "Después, sabiendo que ya todo estaba cumplido, y para que la Escritura se cumpliera hasta el final, Jesús dijo: Tengo sed.",
+        "CEI": "Abbiamo deciso, lo Spirito Santo e noi, di non imporvi nessun altro obbligo al di fuori di queste cose necessarie:"
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +494,15 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "BYZ": "Σκεῦος οὖν ἔκειτο ὄξους μεστόν· οἱ δέ, πλήσαντες σπόγγον ὄξους, καὶ ὑσσώπῳ περιθέντες, προσήνεγκαν αὐτοῦ τῷ στόματι.",
+        "VUL": "Vas ergo erat positum aceto plenum. Illi autem spongiam plenam aceto, hyssopo circumponentes, obtulerunt ori ejus.",
+        "SYN": "Тут стоял сосуд, полный уксуса. _Воины,_ напоив уксусом губку и наложив на иссоп, поднесли к устам Его.",
+        "NEO": "Il y avait là un vase plein de vinaigre ; les soldats* en remplirent une éponge, et l’ayant fixée au bout d’une tige* d’hysope, ils l’approchèrent de sa bouche.+ 19:29 29. Il n’est pas question ici du vin mêlé de myrrhe présenté à Jésus, selon la coutume des Juifs à l’endroit des suppliciés, pour affaiblir en lui le sentiment de la douleur (Matth. xxvii, 34). Il s’agit d’un mélange d’eau et de vinaigre dont les soldats romains faisaient ordinairement leur breuvage (Matth. xxvii, 48 ; Marc, xv, 36).*",
+        "NAB": "There was a vessel filled with common wine. So they put a sponge soaked in wine on a sprig of hyssop and put it up to his mouth.",
+        "VAT_ES": "Había allí un recipiente lleno de vinagre; empaparon en él una esponja, la ataron a una rama de hisopo y se la acercaron a la boca.",
+        "CEI": "astenervi dalle carni offerte agli idoli, dal sangue, dagli animali soffocati e dalla impudicizia. Farete cosa buona perciò a guardarvi da queste cose. State bene\"."
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +511,15 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ὅτε οὖν ἔλαβεν τὸ ὄξος ὁ Ἰησοῦς, εἶπεν, Τετέλεσται· καὶ κλίνας τὴν κεφαλήν, παρέδωκεν τὸ πνεῦμα.",
+        "VUL": "Cum ergo accepisset Jesus acetum, dixit : Consummatum est. Et inclinato capite tradidit spiritum.",
+        "SYN": "Когда же Иисус вкусил уксуса, сказал: совершилось! И, преклонив главу, предал дух.",
+        "NEO": "Quand Jésus eut pris le vinaigre, il dit : « Tout est consommé » ; et baissant la tête, il rendit l’esprit.",
+        "NAB": "When Jesus had taken the wine, he said, \"It is finished.\" And bowing his head, he handed over the spirit.",
+        "VAT_ES": "Después de beber el vinagre, dijo Jesús: «Todo se ha cumplido». E inclinando la cabeza, entregó su espíritu.",
+        "CEI": "Essi allora, congedatisi, discesero ad Antiochia e riunita la comunità consegnarono la lettera."
+      }
     },
     "31": {
       "seq": 31,
@@ -288,7 +528,15 @@
         "VUL": 31,
         "LXX": 31
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Οἱ οὖν Ἰουδαῖοι, ἵνα μὴ μείνῃ ἐπὶ τοῦ σταυροῦ τὰ σώματα ἐν τῷ σαββάτῳ, ἐπεὶ Παρασκευὴ ἦν- ἦν γὰρ μεγάλη ἡ ἡμέρα ἐκείνου τοῦ σαββάτου- ἠρώτησαν τὸν Πιλάτον ἵνα κατεαγῶσιν αὐτῶν τὰ σκέλη, καὶ ἀρθῶσιν.",
+        "VUL": "Judæi ergo (quoniam parasceve erat) ut non remanerent in cruce corpora sabbato (erat enim magnus dies ille sabbati), rogaverunt Pilatum ut frangerentur eorum crura, et tollerentur.",
+        "SYN": "Но так как _тогда_ была пятница, то Иудеи, дабы не оставить тел на кресте в субботу, -- ибо та суббота была день великий, -- просили Пилата, чтобы перебить у них голени и снять их.",
+        "NEO": "Or, comme c’était la Préparation, de peur que les corps ne restassent sur la croix pendant le sabbat, — car le jour de ce sabbat était très solennel, — les Juifs demandèrent à Pilate qu’on rompît les jambes aux crucifiés et qu’on les détachât.+ 19:31 31. Chez les Juifs, une loi (Deut. xxi, 22-23) ordonnait de détacher les suppliciés de la croix et de les ensevelir avant le coucher du soleil. Cette loi et l’imminence du sabbat qui allait commencer avec le coucher du soleil obligèrent les disciples à ensevelir le plus tôt possible le corps du Sauveur. — Mot à mot : grand, car ce sabbat plus solennel était le jour même de Pâque.*",
+        "NAB": "Now since it was preparation day, in order that the bodies might not remain on the cross on the sabbath, for the sabbath day of that week was a solemn one, the Jews asked Pilate that their legs be broken and they be taken down.",
+        "VAT_ES": "Era el día de la Preparación de la Pascua. Los judíos pidieron a Pilato que hiciera quebrar las piernas de los crucificados y mandara retirar sus cuerpos, para que no quedaran en la cruz durante el sábado, porque ese sábado era muy solemne.",
+        "CEI": "Quando l'ebbero letta, si rallegrarono per l'incoraggiamento che infondeva."
+      }
     },
     "32": {
       "seq": 32,
@@ -297,7 +545,15 @@
         "VUL": 32,
         "LXX": 32
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἦλθον οὖν οἱ στρατιῶται, καὶ τοῦ μὲν πρώτου κατέαξαν τὰ σκέλη καὶ τοῦ ἄλλου τοῦ συσταυρωθέντος αὐτῷ·",
+        "VUL": "Venerunt ergo milites : et primi quidem fregerunt crura, et alterius, qui crucifixus est cum eo.",
+        "SYN": "Итак пришли воины, и у первого перебили голени, и у другого, распятого с Ним.",
+        "NEO": "Les soldats vinrent donc, et ils rompirent les jambes du premier, puis de l’autre qui avait été crucifié avec lui.",
+        "NAB": "So the soldiers came and broke the legs of the first and then of the other one who was crucified with Jesus.",
+        "VAT_ES": "Los soldados fueron y quebraron las piernas a los dos que habían sido crucificados con Jesús.",
+        "CEI": "Giuda e Sila, essendo anch'essi profeti, parlarono molto per incoraggiare i fratelli e li fortificarono."
+      }
     },
     "33": {
       "seq": 33,
@@ -306,7 +562,15 @@
         "VUL": 33,
         "LXX": 33
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἐπὶ δὲ τὸν Ἰησοῦν ἐλθόντες, ὡς εἶδον αὐτὸν ἤδη τεθνηκότα, οὐ κατέαξαν αὐτοῦ τὰ σκέλη·",
+        "VUL": "Ad Jesum autem cum venissent, ut viderunt eum jam mortuum, non fregerunt ejus crura,",
+        "SYN": "Но, придя к Иисусу, как увидели Его уже умершим, не перебили у Него голеней,",
+        "NEO": "Mais quand ils vinrent à Jésus, le voyant déjà mort, ils ne lui rompirent pas les jambes ;",
+        "NAB": "But when they came to Jesus and saw that he was already dead, they did not break his legs,",
+        "VAT_ES": "Cuando llegaron a él, al ver que ya estaba muerto, no le quebraron las piernas,",
+        "CEI": "Dopo un certo tempo furono congedati con auguri di pace dai fratelli, per tornare da quelli che li avevano inviati."
+      }
     },
     "34": {
       "seq": 34,
@@ -315,7 +579,15 @@
         "VUL": 34,
         "LXX": 34
       },
-      "text": {}
+      "text": {
+        "BYZ": "ἀλλ’ εἷς τῶν στρατιωτῶν λόγχῃ αὐτοῦ τὴν πλευρὰν ἔνυξεν, καὶ εὐθέως ἐξῆλθεν αἷμα καὶ ὕδωρ.",
+        "VUL": "sed unus militum lancea latus ejus aperuit, et continuo exivit sanguis et aqua.",
+        "SYN": "но один из воинов копьем пронзил Ему ребра, и тотчас истекла кровь и вода.",
+        "NEO": "mais un des soldats lui transperça le côté avec sa lance, et aussitôt il en sortit du sang et de l’eau.+ 19:34 34. Dans l’eau et le sang qui sortirent du corps de Jésus, les SS. Pères voient une figure des sacrements de Baptême et d’Eucharistie. Ils y ont vu aussi une figure de l’Église, sortie du côté de Jésus, comme autrefois Ève fut tirée du côté d’Adam, et dont les enfants naissent à la vie surnaturelle par le baptême et grandissent dans l’union avec Jésus par l’Eucharistie.*",
+        "NAB": "but one soldier thrust his lance into his side, and immediately blood and water flowed out.",
+        "VAT_ES": "sino que uno de los soldados le atravesó el costado con la lanza, y en seguida brotó sangre y agua.",
+        "CEI": "."
+      }
     },
     "35": {
       "seq": 35,
@@ -324,7 +596,15 @@
         "VUL": 35,
         "LXX": 35
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ ὁ ἑωρακὼς μεμαρτύρηκεν, καὶ ἀληθινή ἐστιν αὐτοῦ ἡ μαρτυρία, κἀκεῖνος οἶδεν ὅτι ἀληθῆ λέγει, ἵνα ὑμεῖς πιστεύσητε.",
+        "VUL": "Et qui vidit, testimonium perhibuit : et verum est testimonium ejus. Et ille scit quia vera dicit : ut et vos credatis.",
+        "SYN": "И видевший засвидетельствовал, и истинно свидетельство его; он знает, что говорит истину, дабы вы поверили.",
+        "NEO": "Et celui qui l’a vu en rend témoignage, et son témoignage est vrai ; et il sait qu’il dit vrai, afin que vous aussi, vous croyiez.",
+        "NAB": "An eyewitness has testified, and his testimony is true; he knows that he is speaking the truth, so that you also may (come to) believe.",
+        "VAT_ES": "El que vio esto lo atestigua: su testimonio es verdadero y él sabe que dice la verdad, para que también ustedes crean.",
+        "CEI": "Paolo invece e Barnaba rimasero ad Antiochia, insegnando e annunziando, insieme a molti altri, la parola del Signore."
+      }
     },
     "36": {
       "seq": 36,
@@ -333,7 +613,15 @@
         "VUL": 36,
         "LXX": 36
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐγένετο γὰρ ταῦτα ἵνα ἡ γραφὴ πληρωθῇ, Ὀστοῦν οὐ συντριβήσεται ἀπ’ αὐτοῦ.",
+        "VUL": "Facta sunt enim hæc ut Scriptura impleretur : Os non comminuetis ex eo.",
+        "SYN": "Ибо сие произошло, да сбудется Писание: кость Его да не сокрушится.",
+        "NEO": "Car ces choses sont arrivées afin que l’Écriture fut accomplie : « Aucun de ses os ne sera rompu. »+ 19:36 36. (Exod. xii, 46, et Nombr. ix, 12) : ces paroles se rapportent immédiatement à l’agneau pascal. S. Jean nous enseigne donc que l’agneau pascal était une figure du Messie.*",
+        "NAB": "For this happened so that the scripture passage might be fulfilled: \"Not a bone of it will be broken.\"",
+        "VAT_ES": "Esto sucedió para que se cumpliera la Escritura que dice: \"No le quebrarán ninguno de sus huesos\".",
+        "CEI": "Dopo alcuni giorni Paolo disse a Barnaba: \"Ritorniamo a far visita ai fratelli in tutte le città nelle quali abbiamo annunziato la parola del Signore, per vedere come stanno\"."
+      }
     },
     "37": {
       "seq": 37,
@@ -342,7 +630,15 @@
         "VUL": 37,
         "LXX": 37
       },
-      "text": {}
+      "text": {
+        "BYZ": "Καὶ πάλιν ἑτέρα γραφὴ λέγει, Ὄψονται εἰς ὃν ἐξεκέντησαν.",
+        "VUL": "Et iterum alia Scriptura dicit : Videbunt in quem transfixerunt.",
+        "SYN": "Также и в другом _месте_ Писание говорит: воззрят на Того, Которого пронзили.",
+        "NEO": "Et il est encore écrit ailleurs : « Ils regarderont celui qu’ils ont transpercé. »+ 19:37 37. Transpercé: citation libre de Zach. xii, 10.*",
+        "NAB": "And again another passage says: \"They will look upon him whom they have pierced.\"",
+        "VAT_ES": "Y otro pasaje de la Escritura, dice: \"Verán al que ellos mismos traspasaron\".",
+        "CEI": "Barnaba voleva prendere insieme anche Giovanni, detto Marco,"
+      }
     },
     "38": {
       "seq": 38,
@@ -351,7 +647,15 @@
         "VUL": 38,
         "LXX": 38
       },
-      "text": {}
+      "text": {
+        "BYZ": "¶Μετὰ ταῦτα ἠρώτησεν τὸν Πιλάτον Ἰωσὴφ ὁ ἀπὸ Ἀριμαθαίας, ὢν μαθητὴς τοῦ Ἰησοῦ, κεκρυμμένος δὲ διὰ τὸν φόβον τῶν Ἰουδαίων, ἵνα ἄρῃ τὸ σῶμα τοῦ Ἰησοῦ· καὶ ἐπέτρεψεν ὁ Πιλάτος. Ἦλθεν οὖν καὶ ἦρεν τὸ σῶμα τοῦ Ἰησοῦ.",
+        "VUL": "Post hæc autem rogavit Pilatum Joseph ab Arimathæa (eo quod esset discipulus Jesu, occultus autem propter metum Judæorum), ut tolleret corpus Jesu. Et permisit Pilatus. Venit ergo, et tulit corpus Jesu.",
+        "SYN": "После сего Иосиф из Аримафеи -- ученик Иисуса, но тайный из страха от Иудеев, -- просил Пилата, чтобы снять тело Иисуса; и Пилат позволил. Он пошел и снял тело Иисуса.",
+        "NEO": "Après cela, Joseph d’Arimathie, qui était disciple de Jésus, mais en secret par crainte des Juifs, demanda à Pilate d’enlever le corps de Jésus. Et Pilate le permit. Il vint donc, et prit le corps de Jésus.+ 19:38 38. Matth. xxvii, 57 ; Marc, xv, 43 ; Luc, xxiii, 30.*",
+        "NAB": "After this, Joseph of Arimathea, secretly a disciple of Jesus for fear of the Jews, asked Pilate if he could remove the body of Jesus. And Pilate permitted it. So he came and took his body.",
+        "VAT_ES": "Después de esto, José de Arimatea, que era discípulo de Jesús –pero secretamente, por temor a los judíos– pidió autorización a Pilato para retirar el cuerpo de Jesús. Pilato se la concedió, y él fue a retirarlo.",
+        "CEI": "ma Paolo riteneva che non si dovesse prendere uno che si era allontanato da loro nella Panfilia e non aveva voluto partecipare alla loro opera."
+      }
     },
     "39": {
       "seq": 39,
@@ -360,7 +664,15 @@
         "VUL": 39,
         "LXX": 39
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἦλθεν δὲ καὶ Νικόδημος, ὁ ἐλθὼν πρὸς τὸν Ἰησοῦν νυκτὸς τὸ πρῶτον, φέρων μίγμα σμύρνης καὶ ἀλόης ὡς λίτρας ἑκατόν.",
+        "VUL": "Venit autem et Nicodemus, qui venerat ad Jesum nocte primum, ferens mixturam myrrhæ et aloës, quasi libras centum.",
+        "SYN": "Пришел также и Никодим, -- приходивший прежде к Иисусу ночью, -- и принес состав из смирны и алоя, литр около ста.",
+        "NEO": "Nicodème, qui était venu la première fois trouver Jésus de nuit, vint aussi, apportant un mélange de myrrhe et d’aloès, d’environ cent livres.+ 19:39 39. Ch. iii, 2.*",
+        "NAB": "Nicodemus, the one who had first come to him at night, also came bringing a mixture of myrrh and aloes weighing about one hundred pounds.",
+        "VAT_ES": "Fue también Nicodemo, el mismo que anteriormente había ido a verlo de noche, y trajo una mezcla de mirra y áloe, que pesaba unos treinta kilos.",
+        "CEI": "Il dissenso fu tale che si separarono l'uno dall'altro; Barnaba, prendendo con sé Marco, s'imbarcò per Cipro."
+      }
     },
     "40": {
       "seq": 40,
@@ -369,7 +681,15 @@
         "VUL": 40,
         "LXX": 40
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἔλαβον οὖν τὸ σῶμα τοῦ Ἰησοῦ, καὶ ἔδησαν αὐτὸ ἐν ὀθονίοις μετὰ τῶν ἀρωμάτων, καθὼς ἔθος ἐστὶν τοῖς Ἰουδαίοις ἐνταφιάζειν.",
+        "VUL": "Acceperunt ergo corpus Jesu, et ligaverunt illud linteis cum aromatibus, sicut mos est Judæis sepelire.",
+        "SYN": "Итак они взяли тело Иисуса и обвили его пеленами с благовониями, как обыкновенно погребают Иудеи.",
+        "NEO": "Ils prirent donc le corps de Jésus, et l’enveloppèrent dans des linges, avec les aromates, selon la manière d’ensevelir en usage chez les Juifs.+ 19:40 40. xi, 44 ; Luc, xxiv, 12.*",
+        "NAB": "They took the body of Jesus and bound it with burial cloths along with the spices, according to the Jewish burial custom.",
+        "VAT_ES": "Tomaron entonces el cuerpo de Jesús y lo envolvieron con vendas, agregándole la mezcla de perfumes, según la costumbre de sepultar que tienen los judíos.",
+        "CEI": "Paolo invece scelse Sila e partì, raccomandato dai fratelli alla grazia del Signore."
+      }
     },
     "41": {
       "seq": 41,
@@ -378,7 +698,15 @@
         "VUL": 41,
         "LXX": 41
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἦν δὲ ἐν τῷ τόπῳ ὅπου ἐσταυρώθη κῆπος, καὶ ἐν τῷ κήπῳ μνημεῖον καινόν, ἐν ᾧ οὐδέπω οὐδεὶς ἐτέθη.",
+        "VUL": "Erat autem in loco, ubi crucifixus est, hortus : et in horto monumentum novum, in quo nondum quisquam positus erat.",
+        "SYN": "На том месте, где Он распят, был сад, и в саду гроб новый, в котором еще никто не был положен.",
+        "NEO": "Or, au lieu où Jésus avait été crucifié, il y avait un jardin, et dans le jardin un sépulcre neuf, où personne n’avait encore été mis.",
+        "NAB": "Now in the place where he had been crucified there was a garden, and in the garden a new tomb, in which no one had yet been buried.",
+        "VAT_ES": "En el lugar donde lo crucificaron había una huerta y en ella, una tumba nueva, en la que todavía nadie había sido sepultado.",
+        "CEI": "E attraversando la Siria e la Cilicia, dava nuova forza alle comunità."
+      }
     },
     "42": {
       "seq": 42,
@@ -387,7 +715,14 @@
         "VUL": 42,
         "LXX": 42
       },
-      "text": {}
+      "text": {
+        "BYZ": "Ἐκεῖ οὖν διὰ τὴν Παρασκευὴν τῶν Ἰουδαίων, ὅτι ἐγγὺς ἦν τὸ μνημεῖον, ἔθηκαν τὸν Ἰησοῦν.",
+        "VUL": "Ibi ergo propter parasceven Judæorum, quia juxta erat monumentum, posuerunt Jesum.",
+        "SYN": "Там положили Иисуса ради пятницы Иудейской, потому что гроб был близко.",
+        "NEO": "C’est là, à cause de la Préparation des Juifs, qu’ils déposèrent Jésus, parce que le sépulcre était proche.+ 19:42 42. Et à cause du sabbat et à cause du jour de Pâque.*",
+        "NAB": "So they laid Jesus there because of the Jewish preparation day; for the tomb was close by.",
+        "VAT_ES": "Como era para los judíos el día de la Preparación y el sepulcro estaba cerca, pusieron allí a Jesús."
+      }
     }
   }
 }

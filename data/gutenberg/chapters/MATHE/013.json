@@ -22,7 +22,11 @@
         "VUL": "In illo die exiens Jesus de domo, sedebat secus mare.",
         "LXX": "Ἐν δὲ τῇ ἡμέρᾳ ἐκείνῃ ἐξελθὼν ὁ Ἰησοῦς ἀπὸ τῆς οἰκίας ἐκάθητο παρὰ τὴν θάλασσαν.",
         "SYN": "Выйдя же в день тот из дома, Иисус сел у моря.",
-        "BYZ": "Ἐν δὲ τῇ ἡμέρᾳ ἐκείνῃ ἐξελθὼν ὁ Ἰησοῦς ἀπὸ τῆς οἰκίας ἐκάθητο παρὰ τὴν θάλασσαν."
+        "BYZ": "Ἐν δὲ τῇ ἡμέρᾳ ἐκείνῃ ἐξελθὼν ὁ Ἰησοῦς ἀπὸ τῆς οἰκίας ἐκάθητο παρὰ τὴν θάλασσαν.",
+        "NEO": "Ce jour-là, Jésus sortit de la maison et s’assit au bord de la mer.",
+        "NAB": "On that day, Jesus went out of the house and sat down by the sea.",
+        "VAT_ES": "Aquel día, Jesús salió de la casa y se sentó a orillas del mar.",
+        "CEI": "Quel giorno Gesù uscì di casa e si sedette in riva al mare."
       }
     },
     "2": {
@@ -33,10 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "VUL": "Et congregatæ sunt ad eum turbæ multæ, ita ut naviculam ascendens sederet: et omnis turba stabat in littore,",
+        "VUL": "Et congregatæ sunt ad eum turbæ multæ, ita ut naviculam ascendens sederet : et omnis turba stabat in littore,",
         "LXX": "Καὶ συνήχθησαν πρὸς αὐτὸν ὄχλοι πολλοί, ὥστε αὐτὸν εἰς τὸ πλοῖον ἐμβάντα καθῆσθαι· καὶ πᾶς ὁ ὄχλος ἐπὶ τὸν αἰγιαλὸν εἱστήκει.",
         "SYN": "И собралось к Нему множество народа, так что Он вошел в лодку и сел; а весь народ стоял на берегу.",
-        "BYZ": "Καὶ συνήχθησαν πρὸς αὐτὸν ὄχλοι πολλοί, ὥστε αὐτὸν εἰς τὸ πλοῖον ἐμβάντα καθῆσθαι· καὶ πᾶς ὁ ὄχλος ἐπὶ τὸν αἰγιαλὸν εἱστήκει."
+        "BYZ": "Καὶ συνήχθησαν πρὸς αὐτὸν ὄχλοι πολλοί, ὥστε αὐτὸν εἰς τὸ πλοῖον ἐμβάντα καθῆσθαι· καὶ πᾶς ὁ ὄχλος ἐπὶ τὸν αἰγιαλὸν εἱστήκει.",
+        "NEO": "Une grande foule s’étant assemblée autour de lui, il dut monter dans une barque, où il s’assit, tandis que la foule se tenait sur le rivage.",
+        "NAB": "Such large crowds gathered around him that he got into a boat and sat down, and the whole crowd stood along the shore.",
+        "VAT_ES": "Una gran multitud se reunió junto a él, de manera que debió subir a una barca y sentarse en ella, mientras la multitud permanecía en la costa.",
+        "CEI": "Si cominciò a raccogliere attorno a lui tanta folla che dovette salire su una barca e là porsi a sedere, mentre tutta la folla rimaneva sulla spiaggia."
       }
     },
     "3": {
@@ -47,10 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "VUL": "et locutus est eis multa in parabolis, dicens: Ecce exiit qui seminat, seminare.",
+        "VUL": "et locutus est eis multa in parabolis, dicens : Ecce exiit qui seminat, seminare.",
         "LXX": "Καὶ ἐλάλησεν αὐτοῖς πολλὰ ἐν παραβολαῖς, λέγων, Ἰδού, ἐξῆλθεν ὁ σπείρων τοῦ σπείρειν.",
         "SYN": "И поучал их много притчами, говоря: вот, вышел сеятель сеять;",
-        "BYZ": "Καὶ ἐλάλησεν αὐτοῖς πολλὰ ἐν παραβολαῖς, λέγων, Ἰδού, ἐξῆλθεν ὁ σπείρων τοῦ σπείρειν."
+        "BYZ": "Καὶ ἐλάλησεν αὐτοῖς πολλὰ ἐν παραβολαῖς, λέγων, Ἰδού, ἐξῆλθεν ὁ σπείρων τοῦ σπείρειν.",
+        "NEO": "Et il leur dit beaucoup de choses en paraboles : — le semeur, dit-il, sortit pour semer.+ 13:3 XIII, 3. Marc, iv, 1-9 ; Luc, viii, 4, 8.*",
+        "NAB": "And he spoke to them at length in parables, saying: \"A sower went out to sow.",
+        "VAT_ES": "Entonces él les habló extensamente por medio de parábolas. Les decía: «El sembrador salió a sembrar.",
+        "CEI": "Egli parlò loro di molte cose in parabole. E disse: \"Ecco, il seminatore uscì a seminare."
       }
     },
     "4": {
@@ -64,7 +76,11 @@
         "VUL": "Et dum seminat, quædam ceciderunt secus viam, et venerunt volucres cæli, et comederunt ea.",
         "LXX": "Καὶ ἐν τῷ σπείρειν αὐτόν, ἃ μὲν ἔπεσεν παρὰ τὴν ὁδόν, καὶ ἦλθεν τὰ πετεινὰ καὶ κατέφαγεν αὐτά.",
         "SYN": "и когда он сеял, иное упало при дороге, и налетели птицы и поклевали то;",
-        "BYZ": "Καὶ ἐν τῷ σπείρειν αὐτόν, ἃ μὲν ἔπεσεν παρὰ τὴν ὁδόν, καὶ ἦλθεν τὰ πετεινὰ καὶ κατέφαγεν αὐτά."
+        "BYZ": "Καὶ ἐν τῷ σπείρειν αὐτόν, ἃ μὲν ἔπεσεν παρὰ τὴν ὁδόν, καὶ ἦλθεν τὰ πετεινὰ καὶ κατέφαγεν αὐτά.",
+        "NEO": "Et pendant qu’il semait, des grains tombèrent le long du chemin, et les oiseaux du ciel vinrent et les mangèrent.",
+        "NAB": "And as he sowed, some seed fell on the path, and birds came and ate it up.",
+        "VAT_ES": "Al esparcir las semillas, algunas cayeron al borde del camino y los pájaros las comieron.",
+        "CEI": "E mentre seminava una parte del seme cadde sulla strada e vennero gli uccelli e la divorarono."
       }
     },
     "5": {
@@ -75,10 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "VUL": "Alia autem ceciderunt in petrosa, ubi non habebant terram multam: et continuo exorta sunt, quia non habebant altitudinem terræ:",
+        "VUL": "Alia autem ceciderunt in petrosa, ubi non habebant terram multam : et continuo exorta sunt, quia non habebant altitudinem terræ :",
         "LXX": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὰ πετρώδη, ὅπου οὐκ εἶχεν γῆν πολλήν· καὶ εὐθέως ἐξανέτειλεν, διὰ τὸ μὴ ἔχειν βάθος γῆς·",
         "SYN": "иное упало на места каменистые, где немного было земли, и скоро взошло, потому что земля была неглубока.",
-        "BYZ": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὰ πετρώδη, ὅπου οὐκ εἶχεν γῆν πολλήν· καὶ εὐθέως ἐξανέτειλεν, διὰ τὸ μὴ ἔχειν βάθος γῆς·"
+        "BYZ": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὰ πετρώδη, ὅπου οὐκ εἶχεν γῆν πολλήν· καὶ εὐθέως ἐξανέτειλεν, διὰ τὸ μὴ ἔχειν βάθος γῆς·",
+        "NEO": "D’autres grains tombèrent sur un sol pierreux, où ils n’avaient pas beaucoup de terre, et ils levèrent aussitôt, parce que la terre était peu profonde.",
+        "NAB": "Some fell on rocky ground, where it had little soil. It sprang up at once because the soil was not deep,",
+        "VAT_ES": "Otras cayeron en terreno pedregoso, donde no había mucha tierra, y brotaron en seguida, porque la tierra era poco profunda;",
+        "CEI": "Un'altra parte cadde in luogo sassoso, dove non c'era molta terra; subito germogliò, perché il terreno non era profondo."
       }
     },
     "6": {
@@ -92,7 +112,11 @@
         "VUL": "sole autem orto æstuaverunt ; et quia non habebant radicem, aruerunt.",
         "LXX": "ἡλίου δὲ ἀνατείλαντος ἐκαυματίσθη, καὶ διὰ τὸ μὴ ἔχειν ῥίζαν ἐξηράνθη.",
         "SYN": "Когда же взошло солнце, увяло, и, как не имело корня, засохло;",
-        "BYZ": "ἡλίου δὲ ἀνατείλαντος ἐκαυματίσθη, καὶ διὰ τὸ μὴ ἔχειν ῥίζαν ἐξηράνθη."
+        "BYZ": "ἡλίου δὲ ἀνατείλαντος ἐκαυματίσθη, καὶ διὰ τὸ μὴ ἔχειν ῥίζαν ἐξηράνθη.",
+        "NEO": "Mais le soleil s’étant levé, la plante, frappée de ses feux et n’ayant pas de racine, sécha.",
+        "NAB": "and when the sun rose it was scorched, and it withered for lack of roots.",
+        "VAT_ES": "pero cuando salió el sol, se quemaron y, por falta de raíz, se secaron.",
+        "CEI": "Ma, spuntato il sole, restò bruciata e non avendo radici si seccò."
       }
     },
     "7": {
@@ -103,10 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "VUL": "Alia autem ceciderunt in spinas: et creverunt spinæ, et suffocaverunt ea.",
+        "VUL": "Alia autem ceciderunt in spinas : et creverunt spinæ, et suffocaverunt ea.",
         "LXX": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὰς ἀκάνθας, καὶ ἀνέβησαν αἱ ἄκανθαι καὶ ἀπέπνιξαν αὐτά.",
         "SYN": "иное упало в терние, и выросло терние и заглушило его;",
-        "BYZ": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὰς ἀκάνθας, καὶ ἀνέβησαν αἱ ἄκανθαι καὶ ἀπέπνιξαν αὐτά."
+        "BYZ": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὰς ἀκάνθας, καὶ ἀνέβησαν αἱ ἄκανθαι καὶ ἀπέπνιξαν αὐτά.",
+        "NEO": "D’autres tombèrent parmi les épines, et les épines crûrent et les étouffèrent.",
+        "NAB": "Some seed fell among thorns, and the thorns grew up and choked it.",
+        "VAT_ES": "Otras cayeron entre espinas, y estas, al crecer, las ahogaron.",
+        "CEI": "Un'altra parte cadde sulle spine e le spine crebbero e la soffocarono."
       }
     },
     "8": {
@@ -117,10 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "VUL": "Alia autem ceciderunt in terram bonam: et dabant fructum, aliud centesimum, aliud sexagesimum, aliud trigesimum.",
+        "VUL": "Alia autem ceciderunt in terram bonam : et dabant fructum, aliud centesimum, aliud sexagesimum, aliud trigesimum.",
         "LXX": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὴν γῆν τὴν καλήν· καὶ ἐδίδου καρπόν, ὃ μὲν ἑκατόν, ὃ δὲ ἑξήκοντα, ὃ δὲ τριάκοντα.",
         "SYN": "иное упало на добрую землю и принесло плод: одно во сто крат, а другое в шестьдесят, иное же в тридцать.",
-        "BYZ": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὴν γῆν τὴν καλήν· καὶ ἐδίδου καρπόν, ὃ μὲν ἑκατόν, ὃ δὲ ἑξήκοντα, ὃ δὲ τριάκοντα."
+        "BYZ": "Ἄλλα δὲ ἔπεσεν ἐπὶ τὴν γῆν τὴν καλήν· καὶ ἐδίδου καρπόν, ὃ μὲν ἑκατόν, ὃ δὲ ἑξήκοντα, ὃ δὲ τριάκοντα.",
+        "NEO": "D’autres tombèrent dans la bonne terre, et ils produisirent du fruit, l’un cent, un autre soixante, et un autre trente.",
+        "NAB": "But some seed fell on rich soil, and produced fruit, a hundred or sixty or thirtyfold.",
+        "VAT_ES": "Otras cayeron en tierra buena y dieron fruto: unas cien, otras sesenta, otras treinta.",
+        "CEI": "Un'altra parte cadde sulla terra buona e diede frutto, dove il cento, dove il sessanta, dove il trenta."
       }
     },
     "9": {
@@ -134,7 +166,11 @@
         "VUL": "Qui habet aures audiendi, audiat.",
         "LXX": "Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω.",
         "SYN": "Кто имеет уши слышать, да слышит!",
-        "BYZ": "Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω."
+        "BYZ": "Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω.",
+        "NEO": "Que celui qui a des oreilles entende ! »+ 13:9 9. Cf. .*",
+        "NAB": "Whoever has ears ought to hear.\"",
+        "VAT_ES": "&iexcl;El que tenga oídos, que oiga!».",
+        "CEI": "Chi ha orecchi intenda\"."
       }
     },
     "10": {
@@ -145,10 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "VUL": "Et accedentes discipuli dixerunt ei: Quare in parabolis loqueris eis ?",
+        "VUL": "Et accedentes discipuli dixerunt ei : Quare in parabolis loqueris eis ?",
         "LXX": "Καὶ προσελθόντες οἱ μαθηταὶ εἶπον αὐτῷ, Διὰ τί ἐν παραβολαῖς λαλεῖς αὐτοῖς;",
         "SYN": "И, приступив, ученики сказали Ему: для чего притчами говоришь им?",
-        "BYZ": "Καὶ προσελθόντες οἱ μαθηταὶ εἶπον αὐτῷ, Διὰ τί ἐν παραβολαῖς λαλεῖς αὐτοῖς;"
+        "BYZ": "¶Καὶ προσελθόντες οἱ μαθηταὶ εἶπον αὐτῷ, Διὰ τί ἐν παραβολαῖς λαλεῖς αὐτοῖς;",
+        "NEO": "Alors ses disciples s’approchant lui dirent : « Pourquoi leur parles-tu en paraboles ? »+ 13:10 10. Marc, iv, 10-12 ; Luc, viii, 10-11.*",
+        "NAB": "The disciples approached him and said, \"Why do you speak to them in parables?\"",
+        "VAT_ES": "Los discípulos se acercaron y le dijeron: «&iquest;Por qué les hablas por medio de parábolas?».",
+        "CEI": "Gli si avvicinarono allora i discepoli e gli dissero: \"Perché parli loro in parabole?\"."
       }
     },
     "11": {
@@ -159,10 +199,14 @@
         "LXX": 11
       },
       "text": {
-        "VUL": "Qui respondens, ait illis: Quia vobis datum est nosse mysteria regni cælorum: illis autem non est datum.",
+        "VUL": "Qui respondens, ait illis : Quia vobis datum est nosse mysteria regni cælorum : illis autem non est datum.",
         "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς ὅτι Ὑμῖν δέδοται γνῶναι τὰ μυστήρια τῆς βασιλείας τῶν οὐρανῶν, ἐκείνοις δὲ οὐ δέδοται.",
         "SYN": "Он сказал им в ответ: для того, что вам дано знать тайны Царствия Небесного, а им не дано,",
-        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς ὅτι Ὑμῖν δέδοται γνῶναι τὰ μυστήρια τῆς βασιλείας τῶν οὐρανῶν, ἐκείνοις δὲ οὐ δέδοται."
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς ὅτι Ὑμῖν δέδοται γνῶναι τὰ μυστήρια τῆς βασιλείας τῶν οὐρανῶν, ἐκείνοις δὲ οὐ δέδοται.",
+        "NEO": "Il leur répondit : « À vous, il a été donné de connaître les mystères du royaume des cieux ; mais à eux, cela n’a pas été donné.",
+        "NAB": "He said to them in reply, \"Because knowledge of the mysteries of the kingdom of heaven has been granted to you, but to them it has not been granted.",
+        "VAT_ES": "El les respondió: «A ustedes se les ha concedido conocer los misterios del Reino de los Cielos, pero a ellos no.",
+        "CEI": "Egli rispose: \"Perché a voi è dato di conoscere i misteri del regno dei cieli, ma a loro non è dato."
       }
     },
     "12": {
@@ -173,10 +217,14 @@
         "LXX": 12
       },
       "text": {
-        "VUL": "Qui enim habet, dabitur ei, et abundabit: qui autem non habet, et quod habet auferetur ab eo.",
+        "VUL": "Qui enim habet, dabitur ei, et abundabit : qui autem non habet, et quod habet auferetur ab eo.",
         "LXX": "Ὅστις γὰρ ἔχει, δοθήσεται αὐτῷ καὶ περισσευθήσεται· ὅστις δὲ οὐκ ἔχει, καὶ ὃ ἔχει ἀρθήσεται ἀπ’ αὐτοῦ.",
         "SYN": "ибо кто имеет, тому дано будет и приумножится, а кто не имеет, у того отнимется и то, что имеет;",
-        "BYZ": "Ὅστις γὰρ ἔχει, δοθήσεται αὐτῷ καὶ περισσευθήσεται· ὅστις δὲ οὐκ ἔχει, καὶ ὃ ἔχει ἀρθήσεται ἀπ’ αὐτοῦ."
+        "BYZ": "Ὅστις γὰρ ἔχει, δοθήσεται αὐτῷ καὶ περισσευθήσεται· ὅστις δὲ οὐκ ἔχει, καὶ ὃ ἔχει ἀρθήσεται ἀπ’ αὐτοῦ.",
+        "NEO": "Car on donnera à celui qui a, et il sera dans l’abondance ; mais à celui qui n’a pas, on ôtera même ce qu’il a.+ 13:12 12. Pour comprendre les mystères du royaume de Dieu qu’il dévoile sous les symboles de ces paraboles spéciales, il faut une grâce d’en haut, et cette grâce n’est donnée qu’aux âmes droites et dociles. Il ne s’agit pas ici des paraboles morales, mais des paraboles relatives plus directement au royaume dont on ne pouvait bien saisir le sens sans en avoir la clef.*",
+        "NAB": "To anyone who has, more will be given and he will grow rich; from anyone who has not, even what he has will be taken away.",
+        "VAT_ES": "Porque a quien tiene, se le dará más todavía y tendrá en abundancia, pero al que no tiene, se le quitará aun lo que tiene.",
+        "CEI": "Così a chi ha sarà dato e sarà nell'abbondanza; e a chi non ha sarà tolto anche quello che ha."
       }
     },
     "13": {
@@ -187,10 +235,14 @@
         "LXX": 13
       },
       "text": {
-        "VUL": "Ideo in parabolis loquor eis: quia videntes non vident, et audientes non audiunt, neque intelligunt.",
+        "VUL": "Ideo in parabolis loquor eis : quia videntes non vident, et audientes non audiunt, neque intelligunt.",
         "LXX": "Διὰ τοῦτο ἐν παραβολαῖς αὐτοῖς λαλῶ, ὅτι βλέποντες οὐ βλέπουσιν, καὶ ἀκούοντες οὐκ ἀκούουσιν, οὐδὲ συνιοῦσιν.",
         "SYN": "потому говорю им притчами, что они видя не видят, и слыша не слышат, и не разумеют;",
-        "BYZ": "Διὰ τοῦτο ἐν παραβολαῖς αὐτοῖς λαλῶ, ὅτι βλέποντες οὐ βλέπουσιν, καὶ ἀκούοντες οὐκ ἀκούουσιν, οὐδὲ συνιοῦσιν."
+        "BYZ": "Διὰ τοῦτο ἐν παραβολαῖς αὐτοῖς λαλῶ, ὅτι βλέποντες οὐ βλέπουσιν, καὶ ἀκούοντες οὐκ ἀκούουσιν, οὐδὲ συνιοῦσιν.",
+        "NEO": "C’est pourquoi je leur parle en paraboles, parce qu’en voyant, ils ne voient pas, et qu’en entendant, ils n’entendent ni ne comprennent.",
+        "NAB": "This is why I speak to them in parables, because 'they look but do not see and hear but do not listen or understand.'",
+        "VAT_ES": "Por eso les hablo por medio de parábolas: porque miran y no ven, oyen y no escuchan ni entienden.",
+        "CEI": "Per questo parlo loro in parabole: perché pur vedendo non vedono, e pur udendo non odono e non comprendono."
       }
     },
     "14": {
@@ -201,10 +253,14 @@
         "LXX": 14
       },
       "text": {
-        "VUL": "Et adimpletur in eis prophetia Isaiæ, dicentis: [Auditu audietis, et non intelligetis:/ et videntes videbitis, et non videbitis./",
+        "VUL": "Et adimpletur in eis prophetia Isaiæ, dicentis : [Auditu audietis, et non intelligetis :/ et videntes videbitis, et non videbitis./",
         "LXX": "Καὶ ἀναπληροῦται αὐτοῖς ἡ προφητεία Ἠσαΐου, ἡ λέγουσα, Ἀκοῇ ἀκούσετε, καὶ οὐ μὴ συνῆτε· καὶ βλέποντες βλέψετε, καὶ οὐ μὴ ἴδητε.",
         "SYN": "и сбывается над ними пророчество Исаии, которое говорит: слухом услышите -- и не уразумеете, и глазами смотреть будете -- и не увидите,",
-        "BYZ": "Καὶ ἀναπληροῦται αὐτοῖς ἡ προφητεία Ἠσαΐου, ἡ λέγουσα, Ἀκοῇ ἀκούσετε, καὶ οὐ μὴ συνῆτε· καὶ βλέποντες βλέψετε, καὶ οὐ μὴ ἴδητε."
+        "BYZ": "Καὶ ἀναπληροῦται αὐτοῖς ἡ προφητεία Ἠσαΐου, ἡ λέγουσα, Ἀκοῇ ἀκούσετε, καὶ οὐ μὴ συνῆτε· καὶ βλέποντες βλέψετε, καὶ οὐ μὴ ἴδητε.",
+        "NEO": "Pour eux s’accomplit la prophétie d’Isaïe : « \\+w Vous|strong=\"G2532\"\\+w* \\+w entendrez|strong=\"G2532\"\\+w* \\+w de|strong=\"G2532\"\\+w* \\+w vos|strong=\"G2532\"\\+w* oreilles \\+w et|strong=\"G2532\"\\+w* \\+w vous|strong=\"G2532\"\\+w* \\+w ne|strong=\"G3756\"\\+w* \\+w comprendrez|strong=\"G4920\"\\+w* \\+w pas|strong=\"G3756\"\\+w* ; \\+w vous|strong=\"G2532\"\\+w* \\+w verrez|strong=\"G3756\"\\+w* \\+w de|strong=\"G2532\"\\+w* \\+w vos|strong=\"G2532\"\\+w* \\+w yeux|strong=\"G2532\"\\+w*, \\+w et|strong=\"G2532\"\\+w* \\+w vous|strong=\"G2532\"\\+w* \\+w ne|strong=\"G3756\"\\+w* \\+w verrez|strong=\"G3756\"\\+w* \\+w pas|strong=\"G3756\"\\+w**.+ 13:14 14. Isaïe, vi, 6, 9 et 10 ; Marc, iv, 13-20 ; Luc, viii, 12-16.*",
+        "NAB": "Isaiah's prophecy is fulfilled in them, which says: 'You shall indeed hear but not understand you shall indeed look but never see.",
+        "VAT_ES": "Y así se cumple en ellos la profecía de Isaías, que dice: \"Por más que oigan, no comprenderán, por más que vean, no conocerán,",
+        "CEI": "E così si adempie per loro la profezia di Isaia che dice: Voi udrete, ma non comprenderete, guarderete, ma non vedrete."
       }
     },
     "15": {
@@ -215,10 +271,14 @@
         "LXX": 15
       },
       "text": {
-        "VUL": "Incrassatum est enim cor populi hujus,/ et auribus graviter audierunt,/ et oculos suos clauserunt:/ nequando videant oculis, et auribus audiant,/ et corde intelligant, et convertantur,/ et sanem eos.]",
+        "VUL": "Incrassatum est enim cor populi hujus,/ et auribus graviter audierunt,/ et oculos suos clauserunt :/ nequando videant oculis, et auribus audiant,/ et corde intelligant, et convertantur,/ et sanem eos.]",
         "LXX": "Ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου, καὶ τοῖς ὠσὶν βαρέως ἤκουσαν, καὶ τοὺς ὀφθαλμοὺς αὐτῶν ἐκάμμυσαν· μήποτε ἴδωσιν τοῖς ὀφθαλμοῖς, καὶ τοῖς ὠσὶν ἀκούσωσιν, καὶ τῇ καρδίᾳ συνῶσιν, καὶ ἐπιστρέψωσιν, καὶ ἰάσομαι αὐτούς.",
         "SYN": "ибо огрубело сердце людей сих и ушами с трудом слышат, и глаза свои сомкнули, да не увидят глазами и не услышат ушами, и не уразумеют сердцем, и да не обратятся, чтобы Я исцелил их.",
-        "BYZ": "Ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου, καὶ τοῖς ὠσὶν βαρέως ἤκουσαν, καὶ τοὺς ὀφθαλμοὺς αὐτῶν ἐκάμμυσαν· μήποτε ἴδωσιν τοῖς ὀφθαλμοῖς, καὶ τοῖς ὠσὶν ἀκούσωσιν, καὶ τῇ καρδίᾳ συνῶσιν, καὶ ἐπιστρέψωσιν, καὶ ἰάσομαι αὐτούς."
+        "BYZ": "Ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου, καὶ τοῖς ὠσὶν βαρέως ἤκουσαν, καὶ τοὺς ὀφθαλμοὺς αὐτῶν ἐκάμμυσαν· μήποτε ἴδωσιν τοῖς ὀφθαλμοῖς, καὶ τοῖς ὠσὶν ἀκούσωσιν, καὶ τῇ καρδίᾳ συνῶσιν, καὶ ἐπιστρέψωσιν, καὶ ἰάσομαι αὐτούς.",
+        "NEO": "\\+w Car|strong=\"G1063\"\\+w* \\+w le|strong=\"G2532\"\\+w* \\+w cœur|strong=\"G2588\"\\+w* \\+w de|strong=\"G2532\"\\+w* \\+w ce|strong=\"G3778\"\\+w* \\+w peuple|strong=\"G2992\"\\+w* \\+w s|strong=\"G1438\"\\+w*’\\+w est|strong=\"G3588\"\\+w* appesanti ; \\+w ils|strong=\"G2532\"\\+w* \\+w ont|strong=\"G3588\"\\+w* \\+w endurci|strong=\"G3778\"\\+w* \\+w leurs|strong=\"G2532\"\\+w* \\+w oreilles|strong=\"G3775\"\\+w* \\+w et|strong=\"G2532\"\\+w* \\+w fermé|strong=\"G2576\"\\+w* \\+w leurs|strong=\"G2532\"\\+w* \\+w yeux|strong=\"G3788\"\\+w* : \\+w de|strong=\"G2532\"\\+w* \\+w peur|strong=\"G3379\"\\+w* \\+w que|strong=\"G2532\"\\+w* \\+w leurs|strong=\"G2532\"\\+w* \\+w yeux|strong=\"G3788\"\\+w* \\+w ne|strong=\"G2532\"\\+w* \\+w voient|strong=\"G2532\"\\+w*, \\+w que|strong=\"G2532\"\\+w* \\+w leurs|strong=\"G2532\"\\+w* \\+w oreilles|strong=\"G3775\"\\+w* \\+w n|strong=\"G2532\"\\+w*’\\+w entendent|strong=\"G3588\"\\+w*, \\+w que|strong=\"G2532\"\\+w* \\+w leur|strong=\"G2532\"\\+w* \\+w cœur|strong=\"G2588\"\\+w* \\+w ne|strong=\"G2532\"\\+w* comprenne, \\+w qu|strong=\"G1063\"\\+w*’\\+w ils|strong=\"G2532\"\\+w* \\+w ne|strong=\"G2532\"\\+w* \\+w se|strong=\"G2532\"\\+w* \\+w convertissent|strong=\"G1994\"\\+w* \\+w et|strong=\"G2532\"\\+w* \\+w que|strong=\"G2532\"\\+w* \\+w je|strong=\"G2532\"\\+w* \\+w ne|strong=\"G2532\"\\+w* \\+w les|strong=\"G2532\"\\+w* \\+w guérisse|strong=\"G2390\"\\+w**. »",
+        "NAB": "Gross is the heart of this people, they will hardly hear with their ears, they have closed their eyes, lest they see with their eyes and hear with their ears and understand with their heart and be converted, and I heal them.'",
+        "VAT_ES": "Porque el corazón de este pueblo se ha endurecido, tienen tapados sus oídos y han cerrado sus ojos, para que sus ojos no vean, y sus oídos no oigan, y su corazón no comprenda, y no se conviertan, y yo no los cure\".",
+        "CEI": "Perché il cuore di questo popolo si è indurito, son diventati duri di orecchi, e hanno chiuso gli occhi, per non vedere con gli occhi, non sentire con gli orecchi e non intendere con il cuore e convertirsi, e io li risani."
       }
     },
     "16": {
@@ -232,7 +292,11 @@
         "VUL": "Vestri autem beati oculi quia vident, et aures vestræ quia audiunt.",
         "LXX": "Ὑμῶν δὲ μακάριοι οἱ ὀφθαλμοί, ὅτι βλέπουσιν· καὶ τὰ ὦτα ὑμῶν, ὅτι ἀκούει.",
         "SYN": "Ваши же блаженны очи, что видят, и уши ваши, что слышат,",
-        "BYZ": "Ὑμῶν δὲ μακάριοι οἱ ὀφθαλμοί, ὅτι βλέπουσιν· καὶ τὰ ὦτα ὑμῶν, ὅτι ἀκούει."
+        "BYZ": "Ὑμῶν δὲ μακάριοι οἱ ὀφθαλμοί, ὅτι βλέπουσιν· καὶ τὰ ὦτα ὑμῶν, ὅτι ἀκούει.",
+        "NEO": "Pour vous, heureux vos yeux parce qu’ils voient, et vos oreilles parce qu’elles entendent !",
+        "NAB": "\"But blessed are your eyes, because they see, and your ears, because they hear.",
+        "VAT_ES": "Felices, en cambio, los ojos de ustedes, porque ven; felices sus oídos, porque oyen.",
+        "CEI": "Ma beati i vostri occhi perché vedono e i vostri orecchi perché sentono."
       }
     },
     "17": {
@@ -243,10 +307,14 @@
         "LXX": 17
       },
       "text": {
-        "VUL": "Amen quippe dico vobis, quia multi prophetæ et justi cupierunt videre quæ videtis, et non viderunt: et audire quæ auditis, et non audierunt.",
+        "VUL": "Amen quippe dico vobis, quia multi prophetæ et justi cupierunt videre quæ videtis, et non viderunt : et audire quæ auditis, et non audierunt.",
         "LXX": "Ἀμὴν γὰρ λέγω ὑμῖν ὅτι πολλοὶ προφῆται καὶ δίκαιοι ἐπεθύμησαν ἰδεῖν ἃ βλέπετε, καὶ οὐκ εἶδον· καὶ ἀκοῦσαι ἃ ἀκούετε, καὶ οὐκ ἤκουσαν.",
         "SYN": "ибо истинно говорю вам, что многие пророки и праведники желали видеть, что вы видите, и не видели, и слышать, что вы слышите, и не слышали.",
-        "BYZ": "Ἀμὴν γὰρ λέγω ὑμῖν ὅτι πολλοὶ προφῆται καὶ δίκαιοι ἐπεθύμησαν ἰδεῖν ἃ βλέπετε, καὶ οὐκ εἶδον· καὶ ἀκοῦσαι ἃ ἀκούετε, καὶ οὐκ ἤκουσαν."
+        "BYZ": "Ἀμὴν γὰρ λέγω ὑμῖν ὅτι πολλοὶ προφῆται καὶ δίκαιοι ἐπεθύμησαν ἰδεῖν ἃ βλέπετε, καὶ οὐκ εἶδον· καὶ ἀκοῦσαι ἃ ἀκούετε, καὶ οὐκ ἤκουσαν.",
+        "NEO": "Je vous le dis en vérité, beaucoup de prophètes et de justes ont désiré voir ce que vous voyez, et ne l’ont pas vu ; entendre ce que vous entendez, et ne l’ont pas entendu.",
+        "NAB": "Amen, I say to you, many prophets and righteous people longed to see what you see but did not see it, and to hear what you hear but did not hear it.",
+        "VAT_ES": "Les aseguro que muchos profetas y justos desearon ver lo que ustedes ven y no lo vieron, oír lo que ustedes oyen, y no lo oyeron.",
+        "CEI": "In verità vi dico: molti profeti e giusti hanno desiderato vedere ciò che voi vedete, e non lo videro, e ascoltare ciò che voi ascoltate, e non l'udirono!"
       }
     },
     "18": {
@@ -259,8 +327,12 @@
       "text": {
         "VUL": "Vos ergo audite parabolam seminantis.",
         "LXX": "Ὑμεῖς οὖν ἀκούσατε τὴν παραβολὴν τοῦ σπείροντος.",
-        "SYN": "Вы же выслушайте значение притчи о сеятеле:",
-        "BYZ": "Ὑμεῖς οὖν ἀκούσατε τὴν παραβολὴν τοῦ σπείροντος."
+        "SYN": "Вы же выслушайте _значение_ притчи о сеятеле:",
+        "BYZ": "Ὑμεῖς οὖν ἀκούσατε τὴν παραβολὴν τοῦ σπείροντος.",
+        "NEO": "Vous donc, écoutez ce que signifie* la parabole du semeur :",
+        "NAB": "\"Hear then the parable of the sower.",
+        "VAT_ES": "Escuchen, entonces, lo que significa la parábola del sembrador.",
+        "CEI": "Voi dunque intendete la parabola del seminatore:"
       }
     },
     "19": {
@@ -271,10 +343,14 @@
         "LXX": 19
       },
       "text": {
-        "VUL": "Omnis qui audit verbum regni, et non intelligit, venit malus, et rapit quod seminatum est in corde ejus: hic est qui secus viam seminatus est.",
+        "VUL": "Omnis qui audit verbum regni, et non intelligit, venit malus, et rapit quod seminatum est in corde ejus : hic est qui secus viam seminatus est.",
         "LXX": "Παντὸς ἀκούοντος τὸν λόγον τῆς βασιλείας καὶ μὴ συνιέντος, ἔρχεται ὁ πονηρός, καὶ ἁρπάζει τὸ ἐσπαρμένον ἐν τῇ καρδίᾳ αὐτοῦ· οὗτός ἐστιν ὁ παρὰ τὴν ὁδὸν σπαρείς.",
         "SYN": "ко всякому, слушающему слово о Царствии и не разумеющему, приходит лукавый и похищает посеянное в сердце его -- вот кого означает посеянное при дороге.",
-        "BYZ": "Παντὸς ἀκούοντος τὸν λόγον τῆς βασιλείας καὶ μὴ συνιέντος, ἔρχεται ὁ πονηρός, καὶ ἁρπάζει τὸ ἐσπαρμένον ἐν τῇ καρδίᾳ αὐτοῦ· οὗτός ἐστιν ὁ παρὰ τὴν ὁδὸν σπαρείς."
+        "BYZ": "Παντὸς ἀκούοντος τὸν λόγον τῆς βασιλείας καὶ μὴ συνιέντος, ἔρχεται ὁ πονηρός, καὶ ἁρπάζει τὸ ἐσπαρμένον ἐν τῇ καρδίᾳ αὐτοῦ· οὗτός ἐστιν ὁ παρὰ τὴν ὁδὸν σπαρείς.",
+        "NEO": "« Quiconque entend la parole du royaume et ne la comprend pas, le Malin vient, et il enlève ce qui a été semé dans son cœur : c’est le chemin qui a reçu la semence.",
+        "NAB": "The seed sown on the path is the one who hears the word of the kingdom without understanding it, and the evil one comes and steals away what was sown in his heart.",
+        "VAT_ES": "Cuando alguien oye la Palabra del Reino y no la comprende, viene el Maligno y arrebata lo que había sido sembrado en su corazón: este es el que recibió la semilla al borde del camino.",
+        "CEI": "tutte le volte che uno ascolta la parola del regno e non la comprende, viene il maligno e ruba ciò che è stato seminato nel suo cuore: questo è il seme seminato lungo la strada."
       }
     },
     "20": {
@@ -285,10 +361,14 @@
         "LXX": 20
       },
       "text": {
-        "VUL": "Qui autem super petrosa seminatus est, hic est qui verbum audit, et continuo cum gaudio accipit illud:",
+        "VUL": "Qui autem super petrosa seminatus est, hic est qui verbum audit, et continuo cum gaudio accipit illud :",
         "LXX": "Ὁ δὲ ἐπὶ τὰ πετρώδη σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων, καὶ εὐθὺς μετὰ χαρᾶς λαμβάνων αὐτόν·",
         "SYN": "А посеянное на каменистых местах означает того, кто слышит слово и тотчас с радостью принимает его;",
-        "BYZ": "Ὁ δὲ ἐπὶ τὰ πετρώδη σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων, καὶ εὐθὺς μετὰ χαρᾶς λαμβάνων αὐτόν·"
+        "BYZ": "Ὁ δὲ ἐπὶ τὰ πετρώδη σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων, καὶ εὐθὺς μετὰ χαρᾶς λαμβάνων αὐτόν·",
+        "NEO": "Le terrain pierreux où elle est tombée, c’est celui qui entend la parole et la reçoit aussitôt avec joie :",
+        "NAB": "The seed sown on rocky ground is the one who hears the word and receives it at once with joy.",
+        "VAT_ES": "El que la recibe en terreno pedregoso es el hombre que, al escuchar la Palabra, la acepta en seguida con alegría,",
+        "CEI": "Quello che è stato seminato nel terreno sassoso è l'uomo che ascolta la parola e subito l'accoglie con gioia,"
       }
     },
     "21": {
@@ -299,10 +379,14 @@
         "LXX": 21
       },
       "text": {
-        "VUL": "non habet autem in se radicem, sed est temporalis: facta autem tribulatione et persecutione propter verbum, continuo scandalizatur.",
+        "VUL": "non habet autem in se radicem, sed est temporalis : facta autem tribulatione et persecutione propter verbum, continuo scandalizatur.",
         "LXX": "οὐκ ἔχει δὲ ῥίζαν ἐν ἑαυτῷ, ἀλλὰ πρόσκαιρός ἐστιν· γενομένης δὲ θλίψεως ἢ διωγμοῦ διὰ τὸν λόγον, εὐθὺς σκανδαλίζεται.",
         "SYN": "но не имеет в себе корня и непостоянен: когда настанет скорбь или гонение за слово, тотчас соблазняется.",
-        "BYZ": "οὐκ ἔχει δὲ ῥίζαν ἐν ἑαυτῷ, ἀλλὰ πρόσκαιρός ἐστιν· γενομένης δὲ θλίψεως ἢ διωγμοῦ διὰ τὸν λόγον, εὐθὺς σκανδαλίζεται."
+        "BYZ": "οὐκ ἔχει δὲ ῥίζαν ἐν ἑαυτῷ, ἀλλὰ πρόσκαιρός ἐστιν· γενομένης δὲ θλίψεως ἢ διωγμοῦ διὰ τὸν λόγον, εὐθὺς σκανδαλίζεται.",
+        "NEO": "mais il n’y a pas en lui de racines ; il est inconstant ; dès que survient la tribulation ou la persécution à cause de la parole, aussitôt il succombe.",
+        "NAB": "But he has no root and lasts only for a time. When some tribulation or persecution comes because of the word, he immediately falls away.",
+        "VAT_ES": "pero no la deja echar raíces, porque es inconstante: en cuanto sobreviene una tribulación o una persecución a causa de la Palabra, inmediatamente sucumbe.",
+        "CEI": "ma non ha radice in sé ed è incostante, sicché appena giunge una tribolazione o persecuzione a causa della parola, egli ne resta scandalizzato."
       }
     },
     "22": {
@@ -316,7 +400,11 @@
         "VUL": "Qui autem seminatus est in spinis, hic est qui verbum audit, et sollicitudo sæculi istius, et fallacia divitiarum suffocat verbum, et sine fructu efficitur.",
         "LXX": "Ὁ δὲ εἰς τὰς ἀκάνθας σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων, καὶ ἡ μέριμνα τοῦ αἰῶνος τούτου καὶ ἡ ἀπάτη τοῦ πλούτου συμπνίγει τὸν λόγον, καὶ ἄκαρπος γίνεται.",
         "SYN": "А посеянное в тернии означает того, кто слышит слово, но забота века сего и обольщение богатства заглушает слово, и оно бывает бесплодно.",
-        "BYZ": "Ὁ δὲ εἰς τὰς ἀκάνθας σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων, καὶ ἡ μέριμνα τοῦ αἰῶνος τούτου καὶ ἡ ἀπάτη τοῦ πλούτου συμπνίγει τὸν λόγον, καὶ ἄκαρπος γίνεται."
+        "BYZ": "Ὁ δὲ εἰς τὰς ἀκάνθας σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων, καὶ ἡ μέριμνα τοῦ αἰῶνος τούτου καὶ ἡ ἀπάτη τοῦ πλούτου συμπνίγει τὸν λόγον, καὶ ἄκαρπος γίνεται.",
+        "NEO": "Les épines qui ont reçu la semence, c’est celui qui entend la parole ; mais les sollicitudes de ce siècle et la séduction des richesses étouffent la parole, et elle ne porte pas de fruit.",
+        "NAB": "The seed sown among thorns is the one who hears the word, but then worldly anxiety and the lure of riches choke the word and it bears no fruit.",
+        "VAT_ES": "El que recibe la semilla entre espinas es el hombre que escucha la Palabra, pero las preocupaciones del mundo y la seducción de las riquezas la ahogan, y no puede dar fruto.",
+        "CEI": "Quello seminato tra le spine è colui che ascolta la parola, ma la preoccupazione del mondo e l'inganno della ricchezza soffocano la parola ed essa non dà frutto."
       }
     },
     "23": {
@@ -330,7 +418,11 @@
         "VUL": "Qui vero in terram bonam seminatus est, hic est qui audit verbum, et intelligit, et fructum affert, et facit aliud quidem centesimum, aliud autem sexagesimum, aliud vero trigesimum.",
         "LXX": "Ὁ δὲ ἐπὶ τὴν γῆν τὴν καλὴν σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων καὶ συνιών· ὃς δὴ καρποφορεῖ, καὶ ποιεῖ ὁ μὲν ἑκατόν, ὁ δὲ ἑξήκοντα, ὁ δὲ τριάκοντα.",
         "SYN": "Посеянное же на доброй земле означает слышащего слово и разумеющего, который и бывает плодоносен, так что иной приносит плод во сто крат, иной в шестьдесят, а иной в тридцать.",
-        "BYZ": "Ὁ δὲ ἐπὶ τὴν γῆν τὴν καλὴν σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων καὶ συνιών· ὃς δὴ καρποφορεῖ, καὶ ποιεῖ ὁ μὲν ἑκατόν, ὁ δὲ ἑξήκοντα, ὁ δὲ τριάκοντα."
+        "BYZ": "Ὁ δὲ ἐπὶ τὴν γῆν τὴν καλὴν σπαρείς, οὗτός ἐστιν ὁ τὸν λόγον ἀκούων καὶ συνιών· ὃς δὴ καρποφορεῖ, καὶ ποιεῖ ὁ μὲν ἑκατόν, ὁ δὲ ἑξήκοντα, ὁ δὲ τριάκοντα.",
+        "NEO": "La bonne terre ensemencée, c’est celui qui entend la parole et la comprend ; il porte du fruit, et donne l’un cent, un autre soixante, un autre trente pour un. »",
+        "NAB": "But the seed sown on rich soil is the one who hears the word and understands it, who indeed bears fruit and yields a hundred or sixty or thirtyfold.\"",
+        "VAT_ES": "Y el que la recibe en tierra fértil es el hombre que escucha la Palabra y la comprende. Este produce fruto, ya sea cien, ya sesenta, ya treinta por uno».",
+        "CEI": "Quello seminato nella terra buona è colui che ascolta la parola e la comprende; questi dà frutto e produce ora il cento, ora il sessanta, ora il trenta\"."
       }
     },
     "24": {
@@ -341,10 +433,14 @@
         "LXX": 24
       },
       "text": {
-        "VUL": "Aliam parabolam proposuit illis, dicens: Simile factum est regnum cælorum homini, qui seminavit bonum semen in agro suo:",
+        "VUL": "Aliam parabolam proposuit illis, dicens : Simile factum est regnum cælorum homini, qui seminavit bonum semen in agro suo :",
         "LXX": "Ἄλλην παραβολὴν παρέθηκεν αὐτοῖς, λέγων, Ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ σπείροντι καλὸν σπέρμα ἐν τῷ ἀγρῷ αὐτοῦ·",
         "SYN": "Другую притчу предложил Он им, говоря: Царство Небесное подобно человеку, посеявшему доброе семя на поле своем;",
-        "BYZ": "Ἄλλην παραβολὴν παρέθηκεν αὐτοῖς, λέγων, Ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ σπείροντι καλὸν σπέρμα ἐν τῷ ἀγρῷ αὐτοῦ·"
+        "BYZ": "¶Ἄλλην παραβολὴν παρέθηκεν αὐτοῖς, λέγων, Ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ σπείροντι καλὸν σπέρμα ἐν τῷ ἀγρῷ αὐτοῦ·",
+        "NEO": "Il leur proposa une autre parabole, en disant : « Le royaume des cieux est semblable à un homme qui avait semé du bon grain dans son champ.",
+        "NAB": "He proposed another parable to them. \"The kingdom of heaven may be likened to a man who sowed good seed in his field.",
+        "VAT_ES": "Y les propuso otra parábola: «El Reino de los Cielos se parece a un hombre que sembró buena semilla en su campo;",
+        "CEI": "Un'altra parabola espose loro così: \"Il regno dei cieli si può paragonare a un uomo che ha seminato del buon seme nel suo campo."
       }
     },
     "25": {
@@ -358,7 +454,11 @@
         "VUL": "cum autem dormirent homines, venit inimicus ejus, et superseminavit zizania in medio tritici, et abiit.",
         "LXX": "ἐν δὲ τῷ καθεύδειν τοὺς ἀνθρώπους, ἦλθεν αὐτοῦ ὁ ἐχθρὸς καὶ ἔσπειρεν ζιζάνια ἀνὰ μέσον τοῦ σίτου, καὶ ἀπῆλθεν.",
         "SYN": "когда же люди спали, пришел враг его и посеял между пшеницею плевелы и ушел;",
-        "BYZ": "ἐν δὲ τῷ καθεύδειν τοὺς ἀνθρώπους, ἦλθεν αὐτοῦ ὁ ἐχθρὸς καὶ ἔσπειρεν ζιζάνια ἀνὰ μέσον τοῦ σίτου, καὶ ἀπῆλθεν."
+        "BYZ": "ἐν δὲ τῷ καθεύδειν τοὺς ἀνθρώπους, ἦλθεν αὐτοῦ ὁ ἐχθρὸς καὶ ἔσπειρεν ζιζάνια ἀνὰ μέσον τοῦ σίτου, καὶ ἀπῆλθεν.",
+        "NEO": "Mais, pendant que les hommes dormaient, son ennemi vint et sema de l’ivraie au milieu du froment, et s’en alla.",
+        "NAB": "While everyone was asleep his enemy came and sowed weeds all through the wheat, and then went off.",
+        "VAT_ES": "pero mientras todos dormían vino su enemigo, sembró cizaña en medio del trigo y se fue.",
+        "CEI": "Ma mentre tutti dormivano venne il suo nemico, seminò zizzania in mezzo al grano e se ne andò."
       }
     },
     "26": {
@@ -372,7 +472,11 @@
         "VUL": "Cum autem crevisset herba, et fructum fecisset, tunc apparuerunt et zizania.",
         "LXX": "Ὅτε δὲ ἐβλάστησεν ὁ χόρτος καὶ καρπὸν ἐποίησεν, τότε ἐφάνη καὶ τὰ ζιζάνια.",
         "SYN": "когда взошла зелень и показался плод, тогда явились и плевелы.",
-        "BYZ": "Ὅτε δὲ ἐβλάστησεν ὁ χόρτος καὶ καρπὸν ἐποίησεν, τότε ἐφάνη καὶ τὰ ζιζάνια."
+        "BYZ": "Ὅτε δὲ ἐβλάστησεν ὁ χόρτος καὶ καρπὸν ἐποίησεν, τότε ἐφάνη καὶ τὰ ζιζάνια.",
+        "NEO": "Quand l’herbe eut poussé et donné son fruit, alors apparut aussi l’ivraie.",
+        "NAB": "When the crop grew and bore fruit, the weeds appeared as well.",
+        "VAT_ES": "Cuando creció el trigo y aparecieron las espigas, también apareció la cizaña.",
+        "CEI": "Quando poi la messe fiorì e fece frutto, ecco apparve anche la zizzania."
       }
     },
     "27": {
@@ -383,10 +487,14 @@
         "LXX": 27
       },
       "text": {
-        "VUL": "Accedentes autem servi patrisfamilias, dixerunt ei: Domine, nonne bonum semen seminasti in agro tuo ? unde ergo habet zizania ?",
+        "VUL": "Accedentes autem servi patrisfamilias, dixerunt ei : Domine, nonne bonum semen seminasti in agro tuo ? unde ergo habet zizania ?",
         "LXX": "Προσελθόντες δὲ οἱ δοῦλοι τοῦ οἰκοδεσπότου εἶπον αὐτῷ, Κύριε, οὐχὶ καλὸν σπέρμα ἔσπειρας ἐν τῷ σῷ ἀγρῷ; Πόθεν οὖν ἔχει ζιζάνια;",
         "SYN": "Придя же, рабы домовладыки сказали ему: господин! не доброе ли семя сеял ты на поле твоем? откуда же на нем плевелы?",
-        "BYZ": "Προσελθόντες δὲ οἱ δοῦλοι τοῦ οἰκοδεσπότου εἶπον αὐτῷ, Κύριε, οὐχὶ καλὸν σπέρμα ἔσπειρας ἐν τῷ σῷ ἀγρῷ; Πόθεν οὖν ἔχει ζιζάνια;"
+        "BYZ": "Προσελθόντες δὲ οἱ δοῦλοι τοῦ οἰκοδεσπότου εἶπον αὐτῷ, Κύριε, οὐχὶ καλὸν σπέρμα ἔσπειρας ἐν τῷ σῷ ἀγρῷ; Πόθεν οὖν ἔχει ζιζάνια;",
+        "NEO": "Et les serviteurs du père de famille vinrent lui dire : Seigneur, n’as-tu pas semé de bon grain dans ton champ ? D’où vient donc qu’il s’y trouve de l’ivraie ?",
+        "NAB": "The slaves of the householder came to him and said, 'Master, did you not sow good seed in your field? Where have the weeds come from?'",
+        "VAT_ES": "Los peones fueron a ver entonces al propietario y le dijeron: «Señor, &iquest;no habías sembrado buena semilla en tu campo? &iquest;Cómo es que ahora hay cizaña en él?.",
+        "CEI": "Allora i servi andarono dal padrone di casa e gli dissero: Padrone, non hai seminato del buon seme nel tuo campo? Da dove viene dunque la zizzania?"
       }
     },
     "28": {
@@ -397,10 +505,14 @@
         "LXX": 28
       },
       "text": {
-        "VUL": "Et ait illis: Inimicus homo hoc fecit. Servi autem dixerunt ei: Vis, imus, et colligimus ea ?",
+        "VUL": "Et ait illis : Inimicus homo hoc fecit. Servi autem dixerunt ei : Vis, imus, et colligimus ea ?",
         "LXX": "Ὁ δὲ ἔφη αὐτοῖς, Ἐχθρὸς ἄνθρωπος τοῦτο ἐποίησεν. Οἱ δὲ δοῦλοι εἶπον αὐτῷ, Θέλεις οὖν ἀπελθόντες συλλέξομεν αὐτά;",
         "SYN": "Он же сказал им: враг человека сделал это. А рабы сказали ему: хочешь ли, мы пойдем, выберем их?",
-        "BYZ": "Ὁ δὲ ἔφη αὐτοῖς, Ἐχθρὸς ἄνθρωπος τοῦτο ἐποίησεν. Οἱ δὲ δοῦλοι εἶπον αὐτῷ, Θέλεις οὖν ἀπελθόντες συλλέξομεν αὐτά;"
+        "BYZ": "Ὁ δὲ ἔφη αὐτοῖς, Ἐχθρὸς ἄνθρωπος τοῦτο ἐποίησεν. Οἱ δὲ δοῦλοι εἶπον αὐτῷ, Θέλεις οὖν ἀπελθόντες συλλέξομεν αὐτά;",
+        "NEO": "Il leur répondit : C’est un ennemi qui a fait cela. Les serviteurs lui dirent : Veux-tu que nous allions la cueillir ?",
+        "NAB": "He answered, 'An enemy has done this.' His slaves said to him, 'Do you want us to go and pull them up?'",
+        "VAT_ES": "El les respondió: «Esto lo ha hecho algún enemigo». Los peones replicaron: «&iquest;Quieres que vayamos a arrancarla?».",
+        "CEI": "Ed egli rispose loro: Un nemico ha fatto questo. E i servi gli dissero: Vuoi dunque che andiamo a raccoglierla?"
       }
     },
     "29": {
@@ -411,10 +523,14 @@
         "LXX": 29
       },
       "text": {
-        "VUL": "Et ait: Non: ne forte colligentes zizania, eradicetis simul cum eis et triticum.",
+        "VUL": "Et ait : Non : ne forte colligentes zizania, eradicetis simul cum eis et triticum.",
         "LXX": "Ὁ δὲ ἔφη, Οὔ· μήποτε, συλλέγοντες τὰ ζιζάνια, ἐκριζώσητε ἅμα αὐτοῖς τὸν σῖτον.",
         "SYN": "Но он сказал: нет, -- чтобы, выбирая плевелы, вы не выдергали вместе с ними пшеницы,",
-        "BYZ": "Ὁ δὲ ἔφη, Οὔ· μήποτε, συλλέγοντες τὰ ζιζάνια, ἐκριζώσητε ἅμα αὐτοῖς τὸν σῖτον."
+        "BYZ": "Ὁ δὲ ἔφη, Οὔ· μήποτε, συλλέγοντες τὰ ζιζάνια, ἐκριζώσητε ἅμα αὐτοῖς τὸν σῖτον.",
+        "NEO": "Non, leur dit-il, de peur qu’avec l’ivraie vous n’arrachiez aussi le froment.",
+        "NAB": "He replied, 'No, if you pull up the weeds you might uproot the wheat along with them.",
+        "VAT_ES": "«No, les dijo el dueño, porque al arrancar la cizaña, corren el peligro de arrancar también el trigo.",
+        "CEI": "No, rispose, perché non succeda che, cogliendo la zizzania, con essa sradichiate anche il grano."
       }
     },
     "30": {
@@ -425,10 +541,14 @@
         "LXX": 30
       },
       "text": {
-        "VUL": "Sinite utraque crescere usque ad messem, et in tempore messis dicam messoribus: Colligite primum zizania, et alligate ea in fasciculos ad comburendum: triticum autem congregate in horreum meum.",
+        "VUL": "Sinite utraque crescere usque ad messem, et in tempore messis dicam messoribus : Colligite primum zizania, et alligate ea in fasciculos ad comburendum : triticum autem congregate in horreum meum.",
         "LXX": "Ἄφετε συναυξάνεσθαι ἀμφότερα μέχρι τοῦ θερισμοῦ· καὶ ἐν καιρῷ τοῦ θερισμοῦ ἐρῶ τοῖς θερισταῖς, Συλλέξατε πρῶτον τὰ ζιζάνια, καὶ δήσατε αὐτὰ εἰς δέσμας πρὸς τὸ κατακαῦσαι αὐτά· τὸν δὲ σῖτον συναγάγετε εἰς τὴν ἀποθήκην μου.",
         "SYN": "оставьте расти вместе то и другое до жатвы; и во время жатвы я скажу жнецам: соберите прежде плевелы и свяжите их в снопы, чтобы сжечь их, а пшеницу уберите в житницу мою.",
-        "BYZ": "Ἄφετε συναυξάνεσθαι ἀμφότερα μέχρι τοῦ θερισμοῦ· καὶ ἐν καιρῷ τοῦ θερισμοῦ ἐρῶ τοῖς θερισταῖς, Συλλέξατε πρῶτον τὰ ζιζάνια, καὶ δήσατε αὐτὰ εἰς δέσμας πρὸς τὸ κατακαῦσαι αὐτά· τὸν δὲ σῖτον συναγάγετε εἰς τὴν ἀποθήκην μου."
+        "BYZ": "Ἄφετε συναυξάνεσθαι ἀμφότερα μέχρι τοῦ θερισμοῦ· καὶ ἐν καιρῷ τοῦ θερισμοῦ ἐρῶ τοῖς θερισταῖς, Συλλέξατε πρῶτον τὰ ζιζάνια, καὶ δήσατε αὐτὰ εἰς δέσμας πρὸς τὸ κατακαῦσαι αὐτά· τὸν δὲ σῖτον συναγάγετε εἰς τὴν ἀποθήκην μου.",
+        "NEO": "Laissez croître l’un et l’autre jusqu’à la moisson, et au temps de la moisson je dirai aux moissonneurs : Cueillez d’abord l’ivraie, et liez-la en gerbes pour la brûler, et amassez le froment dans mon grenier. »",
+        "NAB": "Let them grow together until harvest; then at harvest time I will say to the harvesters, \"First collect the weeds and tie them in bundles for burning; but gather the wheat into my barn.\"'\"",
+        "VAT_ES": "Dejen que crezcan juntos hasta la cosecha, y entonces diré a los cosechadores: Arranquen primero la cizaña y átenla en manojos para quemarla, y luego recojan el trigo en mi granero».",
+        "CEI": "Lasciate che l'una e l'altro crescano insieme fino alla mietitura e al momento della mietitura dirò ai mietitori: Cogliete prima la zizzania e legatela in fastelli per bruciarla; il grano invece riponetelo nel mio granaio\"."
       }
     },
     "31": {
@@ -439,10 +559,14 @@
         "LXX": 31
       },
       "text": {
-        "VUL": "Aliam parabolam proposuit eis dicens: Simile est regnum cælorum grano sinapis, quod accipiens homo seminavit in agro suo:",
+        "VUL": "Aliam parabolam proposuit eis dicens : Simile est regnum cælorum grano sinapis, quod accipiens homo seminavit in agro suo :",
         "LXX": "Ἄλλην παραβολὴν παρέθηκεν αὐτοῖς, λέγων, Ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν κόκκῳ σινάπεως, ὃν λαβὼν ἄνθρωπος ἔσπειρεν ἐν τῷ ἀγρῷ αὐτοῦ·",
         "SYN": "Иную притчу предложил Он им, говоря: Царство Небесное подобно зерну горчичному, которое человек взял и посеял на поле своем,",
-        "BYZ": "Ἄλλην παραβολὴν παρέθηκεν αὐτοῖς, λέγων, Ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν κόκκῳ σινάπεως, ὃν λαβὼν ἄνθρωπος ἔσπειρεν ἐν τῷ ἀγρῷ αὐτοῦ·"
+        "BYZ": "¶Ἄλλην παραβολὴν παρέθηκεν αὐτοῖς, λέγων, Ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν κόκκῳ σινάπεως, ὃν λαβὼν ἄνθρωπος ἔσπειρεν ἐν τῷ ἀγρῷ αὐτοῦ·",
+        "NEO": "Il leur proposa une autre parabole, en disant : « Le royaume des cieux est semblable à un grain de sénevé, qu’un homme a pris et semé dans son champ.",
+        "NAB": "He proposed another parable to them. \"The kingdom of heaven is like a mustard seed that a person took and sowed in a field.",
+        "VAT_ES": "También les propuso otra parábola: «El Reino de los Cielos se parece a un grano de mostaza que un hombre sembró en su campo.",
+        "CEI": "Un'altra parabola espose loro: \"Il regno dei cieli si può paragonare a un granellino di senapa, che un uomo prende e semina nel suo campo."
       }
     },
     "32": {
@@ -453,10 +577,14 @@
         "LXX": 32
       },
       "text": {
-        "VUL": "quod minimum quidem est omnibus seminibus: cum autem creverit, majus est omnibus oleribus, et fit arbor, ita ut volucres cæli veniant, et habitent in ramis ejus.",
+        "VUL": "quod minimum quidem est omnibus seminibus : cum autem creverit, majus est omnibus oleribus, et fit arbor, ita ut volucres cæli veniant, et habitent in ramis ejus.",
         "LXX": "ὃ μικρότερον μέν ἐστιν πάντων τῶν σπερμάτων· ὅταν δὲ αὐξηθῇ, μεῖζον τῶν λαχάνων ἐστίν, καὶ γίνεται δένδρον, ὥστε ἐλθεῖν τὰ πετεινὰ τοῦ οὐρανοῦ καὶ κατασκηνοῦν ἐν τοῖς κλάδοις αὐτοῦ.",
         "SYN": "которое, хотя меньше всех семян, но, когда вырастет, бывает больше всех злаков и становится деревом, так что прилетают птицы небесные и укрываются в ветвях его.",
-        "BYZ": "ὃ μικρότερον μέν ἐστιν πάντων τῶν σπερμάτων· ὅταν δὲ αὐξηθῇ, μεῖζον τῶν λαχάνων ἐστίν, καὶ γίνεται δένδρον, ὥστε ἐλθεῖν τὰ πετεινὰ τοῦ οὐρανοῦ καὶ κατασκηνοῦν ἐν τοῖς κλάδοις αὐτοῦ."
+        "BYZ": "ὃ μικρότερον μέν ἐστιν πάντων τῶν σπερμάτων· ὅταν δὲ αὐξηθῇ, μεῖζον τῶν λαχάνων ἐστίν, καὶ γίνεται δένδρον, ὥστε ἐλθεῖν τὰ πετεινὰ τοῦ οὐρανοῦ καὶ κατασκηνοῦν ἐν τοῖς κλάδοις αὐτοῦ.",
+        "NEO": "C’est la plus petite de toutes les semences ; mais, lorsqu’il a poussé, il est plus grand que toutes les plantes potagères, et devient un arbre, de sorte que les oiseaux du ciel viennent s’abriter dans ses rameaux. »+ 13:32 32. Marc, iv, 30-32 ; Luc, xiii, 18-19.*",
+        "NAB": "It is the smallest of all the seeds, yet when full-grown it is the largest of plants. It becomes a large bush, and the 'birds of the sky come and dwell in its branches.'\"",
+        "VAT_ES": "En realidad, esta es la más pequeña de las semillas, pero cuando crece es la más grande de las hortalizas y se convierte en un arbusto, de tal manera que los pájaros del cielo van a cobijarse en sus ramas».",
+        "CEI": "Esso è il più piccolo di tutti i semi ma, una volta cresciuto, è più grande degli altri legumi e diventa un albero, tanto che vengono gli uccelli del cielo e si annidano fra i suoi rami\"."
       }
     },
     "33": {
@@ -467,10 +595,14 @@
         "LXX": 33
       },
       "text": {
-        "VUL": "Aliam parabolam locutus est eis: Simile est regnum cælorum fermento, quod acceptum mulier abscondit in farinæ satis tribus, donec fermentatum est totum.",
+        "VUL": "Aliam parabolam locutus est eis : Simile est regnum cælorum fermento, quod acceptum mulier abscondit in farinæ satis tribus, donec fermentatum est totum.",
         "LXX": "Ἄλλην παραβολὴν ἐλάλησεν αὐτοῖς, Ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν ζύμῃ, ἣν λαβοῦσα γυνὴ ἔκρυψεν εἰς ἀλεύρου σάτα τρία, ἕως οὗ ἐζυμώθη ὅλον.",
         "SYN": "Иную притчу сказал Он им: Царство Небесное подобно закваске, которую женщина, взяв, положила в три меры муки, доколе не вскисло все.",
-        "BYZ": "Ἄλλην παραβολὴν ἐλάλησεν αὐτοῖς, Ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν ζύμῃ, ἣν λαβοῦσα γυνὴ ἔκρυψεν εἰς ἀλεύρου σάτα τρία, ἕως οὗ ἐζυμώθη ὅλον."
+        "BYZ": "¶Ἄλλην παραβολὴν ἐλάλησεν αὐτοῖς, Ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν ζύμῃ, ἣν λαβοῦσα γυνὴ ἔκρυψεν εἰς ἀλεύρου σάτα τρία, ἕως οὗ ἐζυμώθη ὅλον.",
+        "NEO": "Il leur dit encore cette parabole : « Le royaume des cieux est semblable au levain qu’une femme prend et mêle dans trois mesures de farine, pour faire lever toute la pâte. »+ 13:33 33. Luc, xiii, 20. La parabole du grain de sénevé et celle du levain ont la même signification, la merveilleuse expansion de l’Église ; avec une nuance cependant. La première marque les progrès futurs du royaume de Dieu par le côté extérieur et visible ; la parabole du levain laisse entrevoir la vertu secrète et puissante qui doit les opérer.*",
+        "NAB": "He spoke to them another parable. \"The kingdom of heaven is like yeast that a woman took and mixed with three measures of wheat flour until the whole batch was leavened.\"",
+        "VAT_ES": "Después les dijo esta otra parábola: «El Reino de los Cielos se parece a un poco de levadura que una mujer mezcla con gran cantidad de harina, hasta que fermenta toda la masa».",
+        "CEI": "Un'altra parabola disse loro: \"Il regno dei cieli si può paragonare al lievito, che una donna ha preso e impastato con tre misure di farina perché tutta si fermenti\"."
       }
     },
     "34": {
@@ -481,10 +613,14 @@
         "LXX": 34
       },
       "text": {
-        "VUL": "Hæc omnia locutus est Jesus in parabolis ad turbas: et sine parabolis non loquebatur eis:",
+        "VUL": "Hæc omnia locutus est Jesus in parabolis ad turbas : et sine parabolis non loquebatur eis :",
         "LXX": "Ταῦτα πάντα ἐλάλησεν ὁ Ἰησοῦς ἐν παραβολαῖς τοῖς ὄχλοις, καὶ χωρὶς παραβολῆς οὐκ ἐλάλει αὐτοῖς·",
         "SYN": "Все сие Иисус говорил народу притчами, и без притчи не говорил им,",
-        "BYZ": "Ταῦτα πάντα ἐλάλησεν ὁ Ἰησοῦς ἐν παραβολαῖς τοῖς ὄχλοις, καὶ χωρὶς παραβολῆς οὐκ ἐλάλει αὐτοῖς·"
+        "BYZ": "¶Ταῦτα πάντα ἐλάλησεν ὁ Ἰησοῦς ἐν παραβολαῖς τοῖς ὄχλοις, καὶ χωρὶς παραβολῆς οὐκ ἐλάλει αὐτοῖς·",
+        "NEO": "Jésus dit à la foule toutes ces choses en paraboles, et il ne lui parlait qu’en paraboles,+ 13:34 34. Marc, iv, 33.*",
+        "NAB": "All these things Jesus spoke to the crowds in parables. He spoke to them only in parables,",
+        "VAT_ES": "Todo esto lo decía Jesús a la muchedumbre por medio de parábolas, y no les hablaba sin parábolas,",
+        "CEI": "Tutte queste cose Gesù disse alla folla in parabole e non parlava ad essa se non in parabole,"
       }
     },
     "35": {
@@ -495,10 +631,14 @@
         "LXX": 35
       },
       "text": {
-        "VUL": "ut impleretur quod dictum erat per prophetam dicentem: Aperiam in parabolis os meum ; eructabo abscondita a constitutione mundi.",
+        "VUL": "ut impleretur quod dictum erat per prophetam dicentem : Aperiam in parabolis os meum ; eructabo abscondita a constitutione mundi.",
         "LXX": "ὅπως πληρωθῇ τὸ ῥηθὲν διὰ τοῦ προφήτου, λέγοντος, Ἀνοίξω ἐν παραβολαῖς τὸ στόμα μου, ἐρεύξομαι κεκρυμμένα ἀπὸ καταβολῆς κόσμου.",
         "SYN": "да сбудется реченное через пророка, который говорит: отверзу в притчах уста Мои; изреку сокровенное от создания мира.",
-        "BYZ": "ὅπως πληρωθῇ τὸ ῥηθὲν διὰ τοῦ προφήτου, λέγοντος, Ἀνοίξω ἐν παραβολαῖς τὸ στόμα μου, ἐρεύξομαι κεκρυμμένα ἀπὸ καταβολῆς κόσμου."
+        "BYZ": "ὅπως πληρωθῇ τὸ ῥηθὲν διὰ τοῦ προφήτου, λέγοντος, Ἀνοίξω ἐν παραβολαῖς τὸ στόμα μου, ἐρεύξομαι κεκρυμμένα ἀπὸ καταβολῆς κόσμου.",
+        "NEO": "accomplissant ainsi la parole du prophète : « \\+w J|strong=\"G1473\"\\+w*’ouvrirai \\+w ma|strong=\"G1722\"\\+w* \\+w bouche|strong=\"G4750\"\\+w* \\+w en|strong=\"G1722\"\\+w* \\+w paraboles|strong=\"G3850\"\\+w*, \\+w et|strong=\"G1722\"\\+w* \\+w je|strong=\"G1473\"\\+w* révélerai \\+w des|strong=\"G1722\"\\+w* \\+w choses|strong=\"G3588\"\\+w* \\+w cachées|strong=\"G2928\"\\+w* \\+w depuis|strong=\"G1223\"\\+w* \\+w la|strong=\"G1722\"\\+w* \\+w création|strong=\"G2602\"\\+w* \\+w du|strong=\"G1722\"\\+w* \\+add monde\\+add**. »",
+        "NAB": "to fulfill what had been said through the prophet: \"I will open my mouth in parables, I will announce what has lain hidden from the foundation (of the world).\"",
+        "VAT_ES": "para que se cumpliera lo anunciado por el Profeta: \"Hablaré en parábolas anunciaré cosas que estaban ocultas desde la creación del mundo\".",
+        "CEI": "perché si adempisse ciò che era stato detto dal profeta: Aprirò la mia bocca in parabole, proclamerò cose nascoste fin dalla fondazione del mondo."
       }
     },
     "36": {
@@ -509,10 +649,14 @@
         "LXX": 36
       },
       "text": {
-        "VUL": "Tunc, dimissis turbis, venit in domum: et accesserunt ad eum discipuli ejus, dicentes: Edissere nobis parabolam zizaniorum agri.",
+        "VUL": "Tunc, dimissis turbis, venit in domum : et accesserunt ad eum discipuli ejus, dicentes : Edissere nobis parabolam zizaniorum agri.",
         "LXX": "Τότε ἀφεὶς τοὺς ὄχλους ἦλθεν εἰς τὴν οἰκίαν ὁ Ἰησοῦς· καὶ προσῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ, λέγοντες, Φράσον ἡμῖν τὴν παραβολὴν τῶν ζιζανίων τοῦ ἀγροῦ.",
         "SYN": "Тогда Иисус, отпустив народ, вошел в дом. И, приступив к Нему, ученики Его сказали: изъясни нам притчу о плевелах на поле.",
-        "BYZ": "Τότε ἀφεὶς τοὺς ὄχλους ἦλθεν εἰς τὴν οἰκίαν ὁ Ἰησοῦς· καὶ προσῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ, λέγοντες, Φράσον ἡμῖν τὴν παραβολὴν τῶν ζιζανίων τοῦ ἀγροῦ."
+        "BYZ": "¶Τότε ἀφεὶς τοὺς ὄχλους ἦλθεν εἰς τὴν οἰκίαν ὁ Ἰησοῦς· καὶ προσῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ, λέγοντες, Φράσον ἡμῖν τὴν παραβολὴν τῶν ζιζανίων τοῦ ἀγροῦ.",
+        "NEO": "Puis, ayant renvoyé le peuple, il revint dans la maison ; ses disciples s’approchèrent et lui dirent : « Expliquez-nous la parabole de l’ivraie dans le champ. »",
+        "NAB": "Then, dismissing the crowds, he went into the house. His disciples approached him and said, \"Explain to us the parable of the weeds in the field.\"",
+        "VAT_ES": "Entonces, dejando a la multitud, Jesús regresó a la casa; sus discípulos se acercaron y le dijeron: «Explícanos la parábola de la cizaña en el campo».",
+        "CEI": "Poi Gesù lasciò la folla ed entrò in casa; i suoi discepoli gli si accostarono per dirgli: \"Spiegaci la parabola della zizzania nel campo\"."
       }
     },
     "37": {
@@ -523,10 +667,14 @@
         "LXX": 37
       },
       "text": {
-        "VUL": "Qui respondens ait illis: Qui seminat bonum semen, est Filius hominis.",
+        "VUL": "Qui respondens ait illis : Qui seminat bonum semen, est Filius hominis.",
         "LXX": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς, Ὁ σπείρων τὸ καλὸν σπέρμα ἐστὶν ὁ υἱὸς τοῦ ἀνθρώπου·",
         "SYN": "Он же сказал им в ответ: сеющий доброе семя есть Сын Человеческий;",
-        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς, Ὁ σπείρων τὸ καλὸν σπέρμα ἐστὶν ὁ υἱὸς τοῦ ἀνθρώπου·"
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς, Ὁ σπείρων τὸ καλὸν σπέρμα ἐστὶν ὁ υἱὸς τοῦ ἀνθρώπου·",
+        "NEO": "Il répondit : « Celui qui sème le bon grain, c’est le Fils de l’homme ;",
+        "NAB": "He said in reply, \"He who sows good seed is the Son of Man,",
+        "VAT_ES": "El les respondió: «El que siembra la buena semilla es el Hijo del hombre;",
+        "CEI": "Ed egli rispose: \"Colui che semina il buon seme è il Figlio dell'uomo."
       }
     },
     "38": {
@@ -540,7 +688,11 @@
         "VUL": "Ager autem est mundus. Bonum vero semen, hi sunt filii regni. Zizania autem, filii sunt nequam.",
         "LXX": "ὁ δὲ ἀγρός ἐστιν ὁ κόσμος· τὸ δὲ καλὸν σπέρμα, οὗτοί εἰσιν οἱ υἱοὶ τῆς βασιλείας· τὰ δὲ ζιζάνιά εἰσιν οἱ υἱοὶ τοῦ πονηροῦ·",
         "SYN": "поле есть мир; доброе семя, это сыны Царствия, а плевелы -- сыны лукавого;",
-        "BYZ": "ὁ δὲ ἀγρός ἐστιν ὁ κόσμος· τὸ δὲ καλὸν σπέρμα, οὗτοί εἰσιν οἱ υἱοὶ τῆς βασιλείας· τὰ δὲ ζιζάνιά εἰσιν οἱ υἱοὶ τοῦ πονηροῦ·"
+        "BYZ": "ὁ δὲ ἀγρός ἐστιν ὁ κόσμος· τὸ δὲ καλὸν σπέρμα, οὗτοί εἰσιν οἱ υἱοὶ τῆς βασιλείας· τὰ δὲ ζιζάνιά εἰσιν οἱ υἱοὶ τοῦ πονηροῦ·",
+        "NEO": "le champ, c’est le monde ; le bon grain, ce sont les fils du royaume ; l’ivraie, les fils du Malin ;",
+        "NAB": "the field is the world, the good seed the children of the kingdom. The weeds are the children of the evil one,",
+        "VAT_ES": "el campo es el mundo; la buena semilla son los que pertenecen al Reino; la cizaña son los que pertenecen al Maligno,",
+        "CEI": "Il campo è il mondo. Il seme buono sono i figli del regno; la zizzania sono i figli del maligno,"
       }
     },
     "39": {
@@ -554,7 +706,11 @@
         "VUL": "Inimicus autem, qui seminavit ea, est diabolus. Messis vero, consummatio sæculi est. Messores autem, angeli sunt.",
         "LXX": "ὁ δὲ ἐχθρὸς ὁ σπείρας αὐτά ἐστιν ὁ διάβολος· ὁ δὲ θερισμὸς συντέλεια τοῦ αἰῶνός ἐστιν· οἱ δὲ θερισταὶ ἄγγελοί εἰσιν.",
         "SYN": "враг, посеявший их, есть диавол; жатва есть кончина века, а жнецы суть Ангелы.",
-        "BYZ": "ὁ δὲ ἐχθρὸς ὁ σπείρας αὐτά ἐστιν ὁ διάβολος· ὁ δὲ θερισμὸς συντέλεια τοῦ αἰῶνός ἐστιν· οἱ δὲ θερισταὶ ἄγγελοί εἰσιν."
+        "BYZ": "ὁ δὲ ἐχθρὸς ὁ σπείρας αὐτά ἐστιν ὁ διάβολος· ὁ δὲ θερισμὸς συντέλεια τοῦ αἰῶνός ἐστιν· οἱ δὲ θερισταὶ ἄγγελοί εἰσιν.",
+        "NEO": "l’ennemi qui l’a semé, c’est le diable ; la moisson, la fin du monde ; les moissonneurs, ce sont les anges.",
+        "NAB": "and the enemy who sows them is the devil. The harvest is the end of the age, and the harvesters are angels.",
+        "VAT_ES": "y el enemigo que la siembra es el demonio; la cosecha es el fin del mundo y los cosechadores son los ángeles.",
+        "CEI": "e il nemico che l'ha seminata è il diavolo. La mietitura rappresenta la fine del mondo, e i mietitori sono gli angeli."
       }
     },
     "40": {
@@ -565,10 +721,14 @@
         "LXX": 40
       },
       "text": {
-        "VUL": "Sicut ergo colliguntur zizania, et igni comburuntur: sic erit in consummatione sæculi.",
+        "VUL": "Sicut ergo colliguntur zizania, et igni comburuntur : sic erit in consummatione sæculi.",
         "LXX": "Ὥσπερ οὖν συλλέγεται τὰ ζιζάνια καὶ πυρὶ καίεται, οὕτως ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος τούτου.",
         "SYN": "Посему как собирают плевелы и огнем сжигают, так будет при кончине века сего:",
-        "BYZ": "Ὥσπερ οὖν συλλέγεται τὰ ζιζάνια καὶ πυρὶ καίεται, οὕτως ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος τούτου."
+        "BYZ": "Ὥσπερ οὖν συλλέγεται τὰ ζιζάνια καὶ πυρὶ καίεται, οὕτως ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος τούτου.",
+        "NEO": "Comme on cueille l’ivraie et qu’on la brûle dans le feu, ainsi en sera-t-il à la fin du monde.",
+        "NAB": "Just as weeds are collected and burned (up) with fire, so will it be at the end of the age.",
+        "VAT_ES": "Así como se arranca la cizaña y se la quema en el fuego, de la misma manera sucederá al fin del mundo.",
+        "CEI": "Come dunque si raccoglie la zizzania e si brucia nel fuoco, così avverrà alla fine del mondo."
       }
     },
     "41": {
@@ -579,10 +739,14 @@
         "LXX": 41
       },
       "text": {
-        "VUL": "Mittet Filius hominis angelos suos, et colligent de regno ejus omnia scandala, et eos qui faciunt iniquitatem:",
+        "VUL": "Mittet Filius hominis angelos suos, et colligent de regno ejus omnia scandala, et eos qui faciunt iniquitatem :",
         "LXX": "Ἀποστελεῖ ὁ υἱὸς τοῦ ἀνθρώπου τοὺς ἀγγέλους αὐτοῦ, καὶ συλλέξουσιν ἐκ τῆς βασιλείας αὐτοῦ πάντα τὰ σκάνδαλα καὶ τοὺς ποιοῦντας τὴν ἀνομίαν,",
         "SYN": "пошлет Сын Человеческий Ангелов Своих, и соберут из Царства Его все соблазны и делающих беззаконие,",
-        "BYZ": "Ἀποστελεῖ ὁ υἱὸς τοῦ ἀνθρώπου τοὺς ἀγγέλους αὐτοῦ, καὶ συλλέξουσιν ἐκ τῆς βασιλείας αὐτοῦ πάντα τὰ σκάνδαλα καὶ τοὺς ποιοῦντας τὴν ἀνομίαν,"
+        "BYZ": "Ἀποστελεῖ ὁ υἱὸς τοῦ ἀνθρώπου τοὺς ἀγγέλους αὐτοῦ, καὶ συλλέξουσιν ἐκ τῆς βασιλείας αὐτοῦ πάντα τὰ σκάνδαλα καὶ τοὺς ποιοῦντας τὴν ἀνομίαν,",
+        "NEO": "Le Fils de Dieu enverra ses anges, et ils enlèveront de son royaume tous les scandales, et ceux qui commettent l’iniquité,",
+        "NAB": "The Son of Man will send his angels, and they will collect out of his kingdom all who cause others to sin and all evildoers.",
+        "VAT_ES": "El Hijo del hombre enviará a sus ángeles, y estos quitarán de su Reino todos los escándalos y a los que hicieron el mal,",
+        "CEI": "Il Figlio dell'uomo manderà i suoi angeli, i quali raccoglieranno dal suo regno tutti gli scandali e tutti gli operatori di iniquità"
       }
     },
     "42": {
@@ -596,7 +760,11 @@
         "VUL": "et mittent eos in caminum ignis. Ibi erit fletus et stridor dentium.",
         "LXX": "καὶ βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
         "SYN": "и ввергнут их в печь огненную; там будет плач и скрежет зубов;",
-        "BYZ": "καὶ βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων."
+        "BYZ": "καὶ βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
+        "NEO": "et ils les jetteront dans la fournaise ardente : c’est là qu’il y aura des pleurs et des grincements de dents.",
+        "NAB": "They will throw them into the fiery furnace, where there will be wailing and grinding of teeth.",
+        "VAT_ES": "y los arrojarán en el horno ardiente: allí habrá llanto y rechinar de dientes.",
+        "CEI": "e li getteranno nella fornace ardente dove sarà pianto e stridore di denti."
       }
     },
     "43": {
@@ -610,7 +778,11 @@
         "VUL": "Tunc justi fulgebunt sicut sol in regno Patris eorum. Qui habet aures audiendi, audiat.",
         "LXX": "Τότε οἱ δίκαιοι ἐκλάμψουσιν ὡς ὁ ἥλιος ἐν τῇ βασιλείᾳ τοῦ πατρὸς αὐτῶν. Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω.",
         "SYN": "тогда праведники воссияют, как солнце, в Царстве Отца их. Кто имеет уши слышать, да слышит!",
-        "BYZ": "Τότε οἱ δίκαιοι ἐκλάμψουσιν ὡς ὁ ἥλιος ἐν τῇ βασιλείᾳ τοῦ πατρὸς αὐτῶν. Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω."
+        "BYZ": "Τότε οἱ δίκαιοι ἐκλάμψουσιν ὡς ὁ ἥλιος ἐν τῇ βασιλείᾳ τοῦ πατρὸς αὐτῶν. Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω.",
+        "NEO": "Alors les justes resplendiront comme le soleil dans le royaume de leur Père. Que celui qui a des oreilles entende !",
+        "NAB": "Then the righteous will shine like the sun in the kingdom of their Father. Whoever has ears ought to hear.",
+        "VAT_ES": "Entonces los justos resplandecerán como el sol en el Reino de su Padre. &iexcl;El que tenga oídos, que oiga!",
+        "CEI": "Allora i giusti splenderanno come il sole nel regno del Padre loro. Chi ha orecchi, intenda!"
       }
     },
     "44": {
@@ -621,10 +793,14 @@
         "LXX": 44
       },
       "text": {
-        "VUL": "Simile est regnum cælorum thesauro abscondito in agro: quem qui invenit homo, abscondit, et præ gaudio illius vadit, et vendit universa quæ habet, et emit agrum illum.",
+        "VUL": "Simile est regnum cælorum thesauro abscondito in agro : quem qui invenit homo, abscondit, et præ gaudio illius vadit, et vendit universa quæ habet, et emit agrum illum.",
         "LXX": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν θησαυρῷ κεκρυμμένῳ ἐν τῷ ἀγρῷ, ὃν εὑρὼν ἄνθρωπος ἔκρυψεν· καὶ ἀπὸ τῆς χαρᾶς αὐτοῦ ὑπάγει, καὶ πάντα ὅσα ἔχει πωλεῖ, καὶ ἀγοράζει τὸν ἀγρὸν ἐκεῖνον.",
         "SYN": "Еще подобно Царство Небесное сокровищу, скрытому на поле, которое, найдя, человек утаил, и от радости о нем идет и продает все, что имеет, и покупает поле то.",
-        "BYZ": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν θησαυρῷ κεκρυμμένῳ ἐν τῷ ἀγρῷ, ὃν εὑρὼν ἄνθρωπος ἔκρυψεν· καὶ ἀπὸ τῆς χαρᾶς αὐτοῦ ὑπάγει, καὶ πάντα ὅσα ἔχει πωλεῖ, καὶ ἀγοράζει τὸν ἀγρὸν ἐκεῖνον."
+        "BYZ": "¶Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν θησαυρῷ κεκρυμμένῳ ἐν τῷ ἀγρῷ, ὃν εὑρὼν ἄνθρωπος ἔκρυψεν· καὶ ἀπὸ τῆς χαρᾶς αὐτοῦ ὑπάγει, καὶ πάντα ὅσα ἔχει πωλεῖ, καὶ ἀγοράζει τὸν ἀγρὸν ἐκεῖνον.",
+        "NEO": "« Le royaume des cieux est encore semblable à un trésor enfoui dans un champ ; l’homme qui l’a trouvé l’y cache de nouveau*, et, dans sa joie, il s’en va, vend tout ce qu’il a, et achète ce champ.",
+        "NAB": "\"The kingdom of heaven is like a treasure buried in a field, which a person finds and hides again, and out of joy goes and sells all that he has and buys that field.",
+        "VAT_ES": "El Reino de los Cielos se parece a un tesoro escondido en un campo; un hombre lo encuentra, lo vuelve a esconder, y lleno de alegría, vende todo lo que posee y compra el campo.",
+        "CEI": "Il regno dei cieli è simile a un tesoro nascosto in un campo; un uomo lo trova e lo nasconde di nuovo, poi va, pieno di gioia, e vende tutti i suoi averi e compra quel campo."
       }
     },
     "45": {
@@ -638,7 +814,11 @@
         "VUL": "Iterum simile est regnum cælorum homini negotiatori, quærenti bonas margaritas.",
         "LXX": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ ἐμπόρῳ ζητοῦντι καλοὺς μαργαρίτας·",
         "SYN": "Еще подобно Царство Небесное купцу, ищущему хороших жемчужин,",
-        "BYZ": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ ἐμπόρῳ ζητοῦντι καλοὺς μαργαρίτας·"
+        "BYZ": "¶Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ ἐμπόρῳ ζητοῦντι καλοὺς μαργαρίτας·",
+        "NEO": "« le royaume des cieux est encore semblable à un marchand qui cherchait de belles perles.",
+        "NAB": "Again, the kingdom of heaven is like a merchant searching for fine pearls.",
+        "VAT_ES": "El Reino de los Cielos se parece también a un negociante que se dedicaba a buscar perlas finas;",
+        "CEI": "Il regno dei cieli è simile a un mercante che va in cerca di perle preziose;"
       }
     },
     "46": {
@@ -652,7 +832,11 @@
         "VUL": "Inventa autem una pretiosa margarita, abiit, et vendidit omnia quæ habuit, et emit eam.",
         "LXX": "ὃς εὑρὼν ἕνα πολύτιμον μαργαρίτην, ἀπελθὼν πέπρακεν πάντα ὅσα εἶχεν, καὶ ἠγόρασεν αὐτόν.",
         "SYN": "который, найдя одну драгоценную жемчужину, пошел и продал все, что имел, и купил ее.",
-        "BYZ": "ὃς εὑρὼν ἕνα πολύτιμον μαργαρίτην, ἀπελθὼν πέπρακεν πάντα ὅσα εἶχεν, καὶ ἠγόρασεν αὐτόν."
+        "BYZ": "ὃς εὑρὼν ἕνα πολύτιμον μαργαρίτην, ἀπελθὼν πέπρακεν πάντα ὅσα εἶχεν, καὶ ἠγόρασεν αὐτόν.",
+        "NEO": "Ayant trouvé une perle de grand prix, il s’en alla vendre tout ce qu’il avait, et l’acheta.+ 13:46 46. L’excellence du nouveau royaume est exprimée dans les deux paraboles du trésor caché et de la perle. La seule différence est que le trésor caché a été trouvé sans le chercher : la perle au contraire a été cherchée avec ardeur. Cette circonstance complète l’enseignement de la parabole du trésor caché.*",
+        "NAB": "When he finds a pearl of great price, he goes and sells all that he has and buys it.",
+        "VAT_ES": "y al encontrar una de gran valor, fue a vender todo lo que tenía y la compró.",
+        "CEI": "trovata una perla di grande valore, va, vende tutti i suoi averi e la compra."
       }
     },
     "47": {
@@ -666,7 +850,11 @@
         "VUL": "Iterum simile est regnum cælorum sagenæ missæ in mare, et ex omni genere piscium congreganti.",
         "LXX": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν σαγήνῃ βληθείσῃ εἰς τὴν θάλασσαν, καὶ ἐκ παντὸς γένους συναγαγούσῃ·",
         "SYN": "Еще подобно Царство Небесное неводу, закинутому в море и захватившему рыб всякого рода,",
-        "BYZ": "Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν σαγήνῃ βληθείσῃ εἰς τὴν θάλασσαν, καὶ ἐκ παντὸς γένους συναγαγούσῃ·"
+        "BYZ": "¶Πάλιν ὁμοία ἐστὶν ἡ βασιλεία τῶν οὐρανῶν σαγήνῃ βληθείσῃ εἰς τὴν θάλασσαν, καὶ ἐκ παντὸς γένους συναγαγούσῃ·",
+        "NEO": "« le royaume des cieux est encore semblable à un filet qu’on a jeté dans la mer et qui ramasse des poissons de toutes sortes.",
+        "NAB": "Again, the kingdom of heaven is like a net thrown into the sea, which collects fish of every kind.",
+        "VAT_ES": "El Reino de los Cielos se parece también a una red que se echa al mar y recoge toda clase de peces.",
+        "CEI": "Il regno dei cieli è simile anche a una rete gettata nel mare, che raccoglie ogni genere di pesci."
       }
     },
     "48": {
@@ -680,7 +868,11 @@
         "VUL": "Quam, cum impleta esset, educentes, et secus littus sedentes, elegerunt bonos in vasa, malos autem foras miserunt.",
         "LXX": "ἥν, ὅτε ἐπληρώθη, ἀναβιβάσαντες ἐπὶ τὸν αἰγιαλόν, καὶ καθίσαντες, συνέλεξαν τὰ καλὰ εἰς ἀγγεῖα, τὰ δὲ σαπρὰ ἔξω ἔβαλον.",
         "SYN": "который, когда наполнился, вытащили на берег и, сев, хорошее собрали в сосуды, а худое выбросили вон.",
-        "BYZ": "ἥν, ὅτε ἐπληρώθη, ἀναβιβάσαντες ἐπὶ τὸν αἰγιαλόν, καὶ καθίσαντες, συνέλεξαν τὰ καλὰ εἰς ἀγγεῖα, τὰ δὲ σαπρὰ ἔξω ἔβαλον."
+        "BYZ": "ἥν, ὅτε ἐπληρώθη, ἀναβιβάσαντες ἐπὶ τὸν αἰγιαλόν, καὶ καθίσαντες, συνέλεξαν τὰ καλὰ εἰς ἀγγεῖα, τὰ δὲ σαπρὰ ἔξω ἔβαλον.",
+        "NEO": "Lorsqu’il est plein, les pêcheurs le retirent, et, s’asseyant sur le rivage, ils choisissent les bons pour les mettre dans des vases, et jettent les mauvais.",
+        "NAB": "When it is full they haul it ashore and sit down to put what is good into buckets. What is bad they throw away.",
+        "VAT_ES": "Cuando está llena, los pescadores la sacan a la orilla y, sentándose, recogen lo bueno en canastas y tiran lo que no sirve.",
+        "CEI": "Quando è piena, i pescatori la tirano a riva e poi, sedutisi, raccolgono i pesci buoni nei canestri e buttano via i cattivi."
       }
     },
     "49": {
@@ -691,10 +883,14 @@
         "LXX": 49
       },
       "text": {
-        "VUL": "Sic erit in consummatione sæculi: exibunt angeli, et separabunt malos de medio justorum,",
+        "VUL": "Sic erit in consummatione sæculi : exibunt angeli, et separabunt malos de medio justorum,",
         "LXX": "Οὕτως ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος· ἐξελεύσονται οἱ ἄγγελοι, καὶ ἀφοριοῦσιν τοὺς πονηροὺς ἐκ μέσου τῶν δικαίων,",
         "SYN": "Так будет при кончине века: изыдут Ангелы, и отделят злых из среды праведных,",
-        "BYZ": "Οὕτως ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος· ἐξελεύσονται οἱ ἄγγελοι, καὶ ἀφοριοῦσιν τοὺς πονηροὺς ἐκ μέσου τῶν δικαίων,"
+        "BYZ": "Οὕτως ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος· ἐξελεύσονται οἱ ἄγγελοι, καὶ ἀφοριοῦσιν τοὺς πονηροὺς ἐκ μέσου τῶν δικαίων,",
+        "NEO": "Il en sera de même à la fin du monde : les anges viendront et sépareront les méchants d’avec les justes,",
+        "NAB": "Thus it will be at the end of the age. The angels will go out and separate the wicked from the righteous",
+        "VAT_ES": "Así sucederá al fin del mundo: vendrán los ángeles y separarán a los malos de entre los justos,",
+        "CEI": "Così sarà alla fine del mondo. Verranno gli angeli e separeranno i cattivi dai buoni"
       }
     },
     "50": {
@@ -705,10 +901,14 @@
         "LXX": 50
       },
       "text": {
-        "VUL": "et mittent eos in caminum ignis: ibi erit fletus, et stridor dentium.",
+        "VUL": "et mittent eos in caminum ignis : ibi erit fletus, et stridor dentium.",
         "LXX": "καὶ βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
         "SYN": "и ввергнут их в печь огненную: там будет плач и скрежет зубов.",
-        "BYZ": "καὶ βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων."
+        "BYZ": "καὶ βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
+        "NEO": "et ils les jetteront dans la fournaise ardente : c’est là qu’il y aura des pleurs et des grincements de dents.",
+        "NAB": "and throw them into the fiery furnace, where there will be wailing and grinding of teeth.",
+        "VAT_ES": "para arrojarlos en el horno ardiente. Allí habrá llanto y rechinar de dientes.",
+        "CEI": "e li getteranno nella fornace ardente, dove sarà pianto e stridore di denti."
       }
     },
     "51": {
@@ -719,10 +919,14 @@
         "LXX": 51
       },
       "text": {
-        "VUL": "Intellexistis hæc omnia ? Dicunt ei: Etiam.",
+        "VUL": "Intellexistis hæc omnia ? Dicunt ei : Etiam.",
         "LXX": "Λέγει αὐτοῖς ὁ Ἰησοῦς, Συνήκατε ταῦτα πάντα; Λέγουσιν αὐτῷ, Ναί, κύριε.",
         "SYN": "И спросил их Иисус: поняли ли вы все это? Они говорят Ему: так, Господи!",
-        "BYZ": "Λέγει αὐτοῖς ὁ Ἰησοῦς, Συνήκατε ταῦτα πάντα; Λέγουσιν αὐτῷ, Ναί, κύριε."
+        "BYZ": "¶Λέγει αὐτοῖς ὁ Ἰησοῦς, Συνήκατε ταῦτα πάντα; Λέγουσιν αὐτῷ, Ναί, κύριε.",
+        "NEO": "« Avez-vous compris toutes ces choses ? » Ils lui dirent : « Oui, Seigneur. »",
+        "NAB": "\"Do you understand all these things?\" They answered, \"Yes.\"",
+        "VAT_ES": "&iquest;Comprendieron todo esto?». «Sí», le respondieron.",
+        "CEI": "Avete capito tutte queste cose?\". Gli risposero: \"Sì\"."
       }
     },
     "52": {
@@ -733,10 +937,14 @@
         "LXX": 52
       },
       "text": {
-        "VUL": "Ait illis: Ideo omnis scriba doctus in regno cælorum, similis est homini patrifamilias, qui profert de thesauro suo nova et vetera.",
+        "VUL": "Ait illis : Ideo omnis scriba doctus in regno cælorum, similis est homini patrifamilias, qui profert de thesauro suo nova et vetera.",
         "LXX": "Ὁ δὲ εἶπεν αὐτοῖς, Διὰ τοῦτο πᾶς γραμματεὺς μαθητευθεὶς εἰς τὴν βασιλείαν τῶν οὐρανῶν ὅμοιός ἐστιν ἀνθρώπῳ οἰκοδεσπότῃ, ὅστις ἐκβάλλει ἐκ τοῦ θησαυροῦ αὐτοῦ καινὰ καὶ παλαιά.",
         "SYN": "Он же сказал им: поэтому всякий книжник, наученный Царству Небесному, подобен хозяину, который выносит из сокровищницы своей новое и старое.",
-        "BYZ": "Ὁ δὲ εἶπεν αὐτοῖς, Διὰ τοῦτο πᾶς γραμματεὺς μαθητευθεὶς εἰς τὴν βασιλείαν τῶν οὐρανῶν ὅμοιός ἐστιν ἀνθρώπῳ οἰκοδεσπότῃ, ὅστις ἐκβάλλει ἐκ τοῦ θησαυροῦ αὐτοῦ καινὰ καὶ παλαιά."
+        "BYZ": "Ὁ δὲ εἶπεν αὐτοῖς, Διὰ τοῦτο πᾶς γραμματεὺς μαθητευθεὶς εἰς τὴν βασιλείαν τῶν οὐρανῶν ὅμοιός ἐστιν ἀνθρώπῳ οἰκοδεσπότῃ, ὅστις ἐκβάλλει ἐκ τοῦ θησαυροῦ αὐτοῦ καινὰ καὶ παλαιά.",
+        "NEO": "Et il ajouta : « C’est pourquoi tout Scribe versé dans ce qui regarde le royaume des cieux, ressemble à un père de famille qui tire de son trésor des choses nouvelles et des choses anciennes. »",
+        "NAB": "And he replied, \"Then every scribe who has been instructed in the kingdom of heaven is like the head of a household who brings from his storeroom both the new and the old.\"",
+        "VAT_ES": "Entonces agregó: «Todo escriba convertido en discípulo del Reino de los Cielos se parece a un dueño de casa que saca de sus reservas lo nuevo y lo viejo».",
+        "CEI": "Ed egli disse loro: \"Per questo ogni scriba divenuto discepolo del regno dei cieli è simile a un padrone di casa che estrae dal suo tesoro cose nuove e cose antiche\"."
       }
     },
     "53": {
@@ -750,7 +958,11 @@
         "VUL": "Et factum est, cum consummasset Jesus parabolas istas, transiit inde.",
         "LXX": "Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς τὰς παραβολὰς ταύτας, μετῆρεν ἐκεῖθεν·",
         "SYN": "И, когда окончил Иисус притчи сии, пошел оттуда.",
-        "BYZ": "Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς τὰς παραβολὰς ταύτας, μετῆρεν ἐκεῖθεν·"
+        "BYZ": "¶Καὶ ἐγένετο ὅτε ἐτέλεσεν ὁ Ἰησοῦς τὰς παραβολὰς ταύτας, μετῆρεν ἐκεῖθεν·",
+        "NEO": "Après que Jésus eut achevé ces paraboles, il partit de là.+ 13:53 53. Marc, vi, 1-6.*",
+        "NAB": "When Jesus finished these parables, he went away from there.",
+        "VAT_ES": "Cuando Jesús terminó estas parábolas se alejó de allí",
+        "CEI": "Terminate queste parabole, Gesù partì di là"
       }
     },
     "54": {
@@ -761,10 +973,14 @@
         "LXX": 54
       },
       "text": {
-        "VUL": "Et veniens in patriam suam, docebat eos in synagogis eorum, ita ut mirarentur, et dicerent: Unde huic sapientia hæc, et virtutes ?",
+        "VUL": "Et veniens in patriam suam, docebat eos in synagogis eorum, ita ut mirarentur, et dicerent : Unde huic sapientia hæc, et virtutes ?",
         "LXX": "καὶ ἐλθὼν εἰς τὴν πατρίδα αὐτοῦ ἐδίδασκεν αὐτοὺς ἐν τῇ συναγωγῇ αὐτῶν, ὥστε ἐκπλήττεσθαι αὐτοὺς καὶ λέγειν, Πόθεν τούτῳ ἡ σοφία αὕτη καὶ αἱ δυνάμεις;",
         "SYN": "И, придя в отечество Свое, учил их в синагоге их, так что они изумлялись и говорили: откуда у Него такая премудрость и силы?",
-        "BYZ": "καὶ ἐλθὼν εἰς τὴν πατρίδα αὐτοῦ ἐδίδασκεν αὐτοὺς ἐν τῇ συναγωγῇ αὐτῶν, ὥστε ἐκπλήττεσθαι αὐτοὺς καὶ λέγειν, Πόθεν τούτῳ ἡ σοφία αὕτη καὶ αἱ δυνάμεις;"
+        "BYZ": "καὶ ἐλθὼν εἰς τὴν πατρίδα αὐτοῦ ἐδίδασκεν αὐτοὺς ἐν τῇ συναγωγῇ αὐτῶν, ὥστε ἐκπλήττεσθαι αὐτοὺς καὶ λέγειν, Πόθεν τούτῳ ἡ σοφία αὕτη καὶ αἱ δυνάμεις;",
+        "NEO": "Étant venu dans sa patrie, il enseignait dans la synagogue ; de sorte que, saisis d’étonnement, ils disaient : « D’où viennent à celui-ci cette sagesse et ces miracles ?",
+        "NAB": "He came to his native place and taught the people in their synagogue. They were astonished and said, \"Where did this man get such wisdom and mighty deeds?",
+        "VAT_ES": "y, al llegar a su pueblo, se puso a enseñar a la gente en la sinagoga, de tal manera que todos estaban maravillados. «&iquest;De dónde le viene, decían, esta sabiduría y ese poder de hacer milagros?",
+        "CEI": "e venuto nella sua patria insegnava nella loro sinagoga e la gente rimaneva stupita e diceva: \"Da dove mai viene a costui questa sapienza e questi miracoli?"
       }
     },
     "55": {
@@ -778,7 +994,11 @@
         "VUL": "Nonne hic est fabri filius ? nonne mater ejus dicitur Maria, et fratres ejus, Jacobus, et Joseph, et Simon, et Judas ?",
         "LXX": "Οὐχ οὗτός ἐστιν ὁ τοῦ τέκτονος υἱός; Οὐχὶ ἡ μήτηρ αὐτοῦ λέγεται Μαριάμ, καὶ οἱ ἀδελφοὶ αὐτοῦ Ἰάκωβος καὶ Ἰωσῆς καὶ Σίμων καὶ Ἰούδας;",
         "SYN": "не плотников ли Он сын? не Его ли Мать называется Мария, и братья Его Иаков и Иосий, и Симон, и Иуда?",
-        "BYZ": "Οὐχ οὗτός ἐστιν ὁ τοῦ τέκτονος υἱός; Οὐχὶ ἡ μήτηρ αὐτοῦ λέγεται Μαριάμ, καὶ οἱ ἀδελφοὶ αὐτοῦ Ἰάκωβος καὶ Ἰωσῆς καὶ Σίμων καὶ Ἰούδας;"
+        "BYZ": "Οὐχ οὗτός ἐστιν ὁ τοῦ τέκτονος υἱός; Οὐχὶ ἡ μήτηρ αὐτοῦ λέγεται Μαριάμ, καὶ οἱ ἀδελφοὶ αὐτοῦ Ἰάκωβος καὶ Ἰωσῆς καὶ Σίμων καὶ Ἰούδας;",
+        "NEO": "N’est-ce pas le fils du charpentier ? Sa mère ne s’appelle-t-elle pas Marie, et ses frères Jacques, Joseph, Simon et Jude ?",
+        "NAB": "Is he not the carpenter's son? Is not his mother named Mary and his brothers James, Joseph, Simon, and Judas?",
+        "VAT_ES": "&iquest;No es este el hijo del carpintero? &iquest;Su madre no es la que llaman María? &iquest;Y no son hermanos suyos Santiago, José, Simón y Judas?",
+        "CEI": "Non è egli forse il figlio del carpentiere? Sua madre non si chiama Maria e i suoi fratelli Giacomo, Giuseppe, Simone e Giuda?"
       }
     },
     "56": {
@@ -792,7 +1012,11 @@
         "VUL": "et sorores ejus, nonne omnes apud nos sunt ? unde ergo huic omnia ista ?",
         "LXX": "Καὶ αἱ ἀδελφαὶ αὐτοῦ οὐχὶ πᾶσαι πρὸς ἡμᾶς εἰσίν; Πόθεν οὖν τούτῳ ταῦτα πάντα;",
         "SYN": "и сестры Его не все ли между нами? откуда же у Него все это?",
-        "BYZ": "Καὶ αἱ ἀδελφαὶ αὐτοῦ οὐχὶ πᾶσαι πρὸς ἡμᾶς εἰσίν; Πόθεν οὖν τούτῳ ταῦτα πάντα;"
+        "BYZ": "Καὶ αἱ ἀδελφαὶ αὐτοῦ οὐχὶ πᾶσαι πρὸς ἡμᾶς εἰσίν; Πόθεν οὖν τούτῳ ταῦτα πάντα;",
+        "NEO": "Et ses sœurs ne sont-elles pas toutes parmi nous ? D’où lui viennent donc toutes ces choses ? »",
+        "NAB": "Are not his sisters all with us? Where did this man get all this?\"",
+        "VAT_ES": "&iquest;Y acaso no viven entre nosotros todas sus hermanas? &iquest;De dónde le vendrá todo esto?».",
+        "CEI": "E le sue sorelle non sono tutte fra noi? Da dove gli vengono dunque tutte queste cose?\"."
       }
     },
     "57": {
@@ -803,10 +1027,14 @@
         "LXX": 57
       },
       "text": {
-        "VUL": "Et scandalizabantur in eo. Jesus autem dixit eis: Non est propheta sine honore, nisi in patria sua, et in domo sua.",
+        "VUL": "Et scandalizabantur in eo. Jesus autem dixit eis : Non est propheta sine honore, nisi in patria sua, et in domo sua.",
         "LXX": "Καὶ ἐσκανδαλίζοντο ἐν αὐτῷ. Ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς, Οὐκ ἔστιν προφήτης ἄτιμος, εἰ μὴ ἐν τῇ πατρίδι αὐτοῦ καὶ ἐν τῇ οἰκίᾳ αὐτοῦ.",
         "SYN": "И соблазнялись о Нем. Иисус же сказал им: не бывает пророк без чести, разве только в отечестве своем и в доме своем.",
-        "BYZ": "Καὶ ἐσκανδαλίζοντο ἐν αὐτῷ. Ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς, Οὐκ ἔστιν προφήτης ἄτιμος, εἰ μὴ ἐν τῇ πατρίδι αὐτοῦ καὶ ἐν τῇ οἰκίᾳ αὐτοῦ."
+        "BYZ": "Καὶ ἐσκανδαλίζοντο ἐν αὐτῷ. Ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς, Οὐκ ἔστιν προφήτης ἄτιμος, εἰ μὴ ἐν τῇ πατρίδι αὐτοῦ καὶ ἐν τῇ οἰκίᾳ αὐτοῦ.",
+        "NEO": "Et il était pour eux une pierre d’achoppement. Mais Jésus leur dit : « Un prophète n’est sans honneur que dans sa patrie et dans sa maison. »",
+        "NAB": "And they took offense at him. But Jesus said to them, \"A prophet is not without honor except in his native place and in his own house.\"",
+        "VAT_ES": "Y Jesús era para ellos un motivo de escándalo. Entonces les dijo: «Un profeta es despreciado solamente en su pueblo y en su familia».",
+        "CEI": "E si scandalizzavano per causa sua. Ma Gesù disse loro: \"Un profeta non è disprezzato se non nella sua patria e in casa sua\"."
       }
     },
     "58": {
@@ -820,7 +1048,11 @@
         "VUL": "Et non fecit ibi virtutes multas propter incredulitatem illorum.",
         "LXX": "Καὶ οὐκ ἐποίησεν ἐκεῖ δυνάμεις πολλάς, διὰ τὴν ἀπιστίαν αὐτῶν.",
         "SYN": "И не совершил там многих чудес по неверию их.",
-        "BYZ": "Καὶ οὐκ ἐποίησεν ἐκεῖ δυνάμεις πολλάς, διὰ τὴν ἀπιστίαν αὐτῶν."
+        "BYZ": "Καὶ οὐκ ἐποίησεν ἐκεῖ δυνάμεις πολλάς, διὰ τὴν ἀπιστίαν αὐτῶν.",
+        "NEO": "Et il ne fit pas beaucoup de miracles dans ce lieu, à cause de leur incrédulité.",
+        "NAB": "And he did not work many mighty deeds there because of their lack of faith.",
+        "VAT_ES": "Y no hizo allí muchos milagros, a causa de la falta de fe de esa gente.",
+        "CEI": "E non fece molti miracoli a causa della loro incredulità."
       }
     }
   }
