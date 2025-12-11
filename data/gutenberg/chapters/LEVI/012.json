@@ -19,7 +19,14 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "וַיְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּאמֹֽר׃"
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore aggiunse a Mosè: \"Riferisci agli Israeliti:"
       }
     },
     "2": {
@@ -30,7 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "דַּבֵּ֞ר אֶל בְּנֵ֤י יִשְׂרָאֵל֙ לֵאמֹ֔ר אִשָּׁה֙ כִּ֣י תַזְרִ֔יעַ וְיָלְדָ֖ה זָכָ֑ר וְטָֽמְאָה֙ שִׁבְעַ֣ת יָמִ֔ים כִּימֵ֛י נִדַּ֥ת דְּוֺתָ֖הּ תִּטְמָֽא׃"
+        "WLC": "דַּבֵּ֞ר אֶל בְּנֵ֤י יִשְׂרָאֵל֙ לֵ/אמֹ֔ר אִשָּׁה֙ כִּ֣י תַזְרִ֔יעַ וְ/יָלְדָ֖ה זָכָ֑ר וְ/טָֽמְאָה֙ שִׁבְעַ֣ת יָמִ֔ים כִּ/ימֵ֛י נִדַּ֥ת דְּוֺתָ֖/הּ תִּטְמָֽא׃",
+        "LXX": "Λάλησον τοῖς υἱοῖς Ἰσραὴλ καὶ ἐρεῖς πρὸς αὐτούς Γυνὴ ἥτις ἐὰν σπερματισθῇ καὶ τέκῃ ἄρσεν, καὶ ἀκάθαρτος ἔσται ἑπτὰ ἡμέρας, κατὰ τὰς ἡμέρας τοῦ χωρισμοῦ τῆς ἀφέδρου αὐτῆς ἀκάθαρτος ἔσται·",
+        "VUL": "Loquere filiis Israël, et dices ad eos : Mulier, si suscepto semine pepererit masculum, immunda erit septem diebus juxta dies separationis menstruæ.",
+        "SYN": "скажи сынам Израилевым: если женщина зачнет и родит _младенца_ мужеского пола, то она нечиста будет семь дней; как во дни страдания ее очищением, она будет нечиста;",
+        "NEO": "« Parle aux enfants d’Israël, et dis-leur :",
+        "NAB": "\"Tell the Israelites: When a woman has conceived and gives birth to a boy, she shall be unclean for seven days, with the same uncleanness as at her menstrual period.",
+        "VAT_ES": "Habla en estos términos a los israelitas: Cuando una mujer quede embarazada y dé a luz un varón, será impura durante siete días, como lo es en el tiempo de su menstruación.",
+        "CEI": "Quando una donna sarà rimasta incinta e darà alla luce un maschio, sarà immonda per sette giorni; sarà immonda come nel tempo delle sue regole."
       }
     },
     "3": {
@@ -41,7 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "וּבַיּ֖וֹם הַשְּׁמִינִ֑י יִמּ֖וֹל בְּשַׂ֥ר עָרְלָתֽוֹ׃"
+        "WLC": "וּ/בַ/יּ֖וֹם הַ/שְּׁמִינִ֑י יִמּ֖וֹל בְּשַׂ֥ר עָרְלָתֽ/וֹ׃",
+        "LXX": "καὶ τῇ ἡμέρᾳ τῇ ὀγδόῃ περιτεμεῖ τὴν σάρκα τῆς ἀκροβυστίας αὐτοῦ·",
+        "VUL": "Et die octavo circumcidetur infantulus :",
+        "SYN": "в восьмой же день обрежется у него крайняя плоть его;",
+        "NEO": "Le huitième jour, l’enfant sera circoncis ;",
+        "NAB": "On the eighth day, the flesh of the boy's foreskin shall be circumcised,",
+        "VAT_ES": "Al octavo día será circuncidado el prepucio del niño,",
+        "CEI": "L'ottavo giorno si circonciderà il bambino."
       }
     },
     "4": {
@@ -52,7 +73,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "וּשְׁלֹשִׁ֥ים יוֹם֙ וּשְׁלֹ֣שֶׁת יָמִ֔ים תֵּשֵׁ֖ב בִּדְמֵ֣י טָהֳרָ֑ה בְּכָל קֹ֣דֶשׁ לֹֽא תִגָּ֗ע וְאֶל הַמִּקְדָּשׁ֙ לֹ֣א תָבֹ֔א עַד מְלֹ֖את יְמֵ֥י טָהֳרָֽהּ׃"
+        "WLC": "וּ/שְׁלֹשִׁ֥ים יוֹם֙ וּ/שְׁלֹ֣שֶׁת יָמִ֔ים תֵּשֵׁ֖ב בִּ/דְמֵ֣י טָהֳרָ֑ה בְּ/כָל קֹ֣דֶשׁ לֹֽא תִגָּ֗ע וְ/אֶל הַ/מִּקְדָּשׁ֙ לֹ֣א תָבֹ֔א עַד מְלֹ֖את יְמֵ֥י טָהֳרָֽ/הּ׃",
+        "LXX": "καὶ τριάκοντα ἡμέρας καὶ τρεῖς καθίσεται ἐν αἵματι ἀκαθάρτῳ αὐτῆς· παντὸς ἀγγίου οὐχ ἅψεται, καὶ εἰς τὸ ἁγιαστήριον οὐκ εἰσελεύσεται, ἕως ἂν πληρωθῶσιν αἱ ἡμέραι καθάρσεως αὐτῆς.",
+        "VUL": "ipsa vero triginta tribus diebus manebit in sanguine purificationis suæ. Omne sanctum non tanget, nec ingredietur in sanctuarium, donec impleantur dies purificationis suæ.",
+        "SYN": "и тридцать три дня должна она сидеть, очищаясь от кровей своих; ни к чему священному не должна прикасаться и к святилищу не должна приходить, пока не исполнятся дни очищения ее.",
+        "NEO": "mais elle restera encore trente-trois jours dans le sang de sa purification ; elle ne touchera aucune chose sainte et elle n’ira pas au sanctuaire, jusqu’à ce que les jours de sa purification soient accomplis.",
+        "NAB": "and then she shall spend thirty-three days more in becoming purified of her blood; she shall not touch anything sacred nor enter the sanctuary till the days of her purification are fulfilled.",
+        "VAT_ES": "pero ella deberá continuar purificándose de su sangre durante treinta y tres días más. No tocará ningún objeto consagrado ni irá al Santuario, antes de concluir el tiempo de su purificación.",
+        "CEI": "Poi essa resterà ancora trentatré giorni a purificarsi dal suo sangue; non toccherà alcuna cosa santa e non entrerà nel santuario, finché non siano compiuti i giorni della sua purificazione."
       }
     },
     "5": {
@@ -63,7 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "וְאִם נְקֵבָ֣ה תֵלֵ֔ד וְטָמְאָ֥ה שְׁבֻעַ֖יִם כְּנִדָּתָ֑הּ וְשִׁשִּׁ֥ים יוֹם֙ וְשֵׁ֣שֶׁת יָמִ֔ים תֵּשֵׁ֖ב עַל דְּמֵ֥י טָהֳרָֽה׃"
+        "WLC": "וְ/אִם נְקֵבָ֣ה תֵלֵ֔ד וְ/טָמְאָ֥ה שְׁבֻעַ֖יִם כְּ/נִדָּתָ֑/הּ וְ/שִׁשִּׁ֥ים יוֹם֙ וְ/שֵׁ֣שֶׁת יָמִ֔ים תֵּשֵׁ֖ב עַל דְּמֵ֥י טָהֳרָֽה׃",
+        "LXX": "ἐὰν δὲ θῆλυ τέκῃ, καὶ ἀκάθαρτος ἔσται δὶς ἑπτὰ ἡμέρας κατὰ τὴν ἄφεδρον· καὶ ἑξήκοντα ἡμέρας καὶ ἓξ καθεσθήσεται ἐν αἵματι ἀκαθάρτῳ αὐτῆς.",
+        "VUL": "Sin autem feminam pepererit, immunda erit duabus hebdomadibus juxta ritum fluxus menstrui, et sexaginta sex diebus manebit in sanguine purificationis suæ.",
+        "SYN": "Если же она родит _младенца_ женского пола, то во время очищения своего она будет нечиста две недели, и шестьдесят шесть дней должна сидеть, очищаясь от кровей своих.",
+        "NEO": "Si elle met au monde une fille, elle sera impure pendant deux semaines, comme à son indisposition menstruelle, et elle restera soixante-six jours dans le sang de sa purification.",
+        "NAB": "If she gives birth to a girl, for fourteen days she shall be as unclean as at her menstruation, after which she shall spend sixty-six days in becoming purified of her blood.",
+        "VAT_ES": "Pero si da a luz una niña, será impura durante dos semanas, como lo es durante su menstruación, y deberá continuar purificándose de su sangre durante sesenta y seis días más.",
+        "CEI": "Ma, se partorisce una femmina sarà immonda due settimane come al tempo delle sue regole; resterà sessantasei giorni a purificarsi del suo sangue."
       }
     },
     "6": {
@@ -74,7 +109,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "וּבִמְלֹ֣את יְמֵ֣י טָהֳרָ֗הּ לְבֵן֮ א֣וֹ לְבַת֒ תָּבִ֞יא כֶּ֤בֶשׂ בֶּן שְׁנָתוֹ֙ לְעֹלָ֔ה וּבֶן יוֹנָ֥ה אוֹ תֹ֖ר לְחַטָּ֑את אֶל פֶּ֥תַח אֹֽהֶל מוֹעֵ֖ד אֶל הַכֹּהֵֽן׃"
+        "WLC": "וּ/בִ/מְלֹ֣את יְמֵ֣י טָהֳרָ֗/הּ לְ/בֵן֮ א֣וֹ לְ/בַת֒ תָּבִ֞יא כֶּ֤בֶשׂ בֶּן שְׁנָת/וֹ֙ לְ/עֹלָ֔ה וּ/בֶן יוֹנָ֥ה אוֹ תֹ֖ר לְ/חַטָּ֑את אֶל פֶּ֥תַח אֹֽהֶל מוֹעֵ֖ד אֶל הַ/כֹּהֵֽן׃",
+        "LXX": "καὶ ὅταν ἀναπληρωθῶσιν αἱ ἡμέραι καθάρσεως αὐτῆς ἐφ’ υἱῷ ἢ ἐπὶ θυγατρί, προσοίσει ἀμνὸν ἐνιαύσιον ἄμωμον εἰς ὁλοκαύτωμα καὶ νοσσὸν περιστερᾶς ἢ τρυγόνα περὶ ἁμαρτίας ἐπὶ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου πρὸς τὸν ἱερέα·",
+        "VUL": "Cumque expleti fuerint dies purificationis suæ, pro filio sive pro filia, deferet agnum anniculum in holocaustum, et pullum columbæ sive turturem pro peccato, ad ostium tabernaculi testimonii, et tradet sacerdoti,",
+        "SYN": "По окончании дней очищения своего за сына или за дочь она должна принести однолетнего агнца во всесожжение и молодого голубя или горлицу в жертву за грех, ко входу скинии собрания к священнику;",
+        "NEO": "Lorsque les jours de sa purification seront accomplis, pour un fils ou une fille, elle présentera au prêtre, à l’entrée de la tente de réunion, un agneau d’un an en holocauste, et un jeune pigeon ou une tourterelle en sacrifice pour le péché.",
+        "NAB": "\"When the days of her purification for a son or for a daughter are fulfilled, she shall bring to the priest at the entrance of the meeting tent a yearling lamb for a holocaust and a pigeon or a turtledove for a sin offering.",
+        "VAT_ES": "Al concluir el período de su purificación, tanto por el hijo como por la hija, la madre presentará al sacerdote, a la entrada de la Carpa del Encuentro, un cordero de un año para ofrecer un holocausto, y un pichón de paloma o una torcaza, para ofrecerlos como sacrificio por el pecado.",
+        "CEI": "Quando i giorni della sua purificazione per un figlio o per una figlia saranno compiuti, porterà al sacerdote all'ingresso della tenda del convegno un agnello di un anno come olocausto e un colombo o una tortora in sacrificio di espiazione."
       }
     },
     "7": {
@@ -85,7 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "וְהִקְרִיב֞וֹ לִפְנֵ֤י יְהוָה֙ וְכִפֶּ֣ר עָלֶ֔יהָ וְטָהֲרָ֖ה מִמְּקֹ֣ר דָּמֶ֑יהָ זֹ֤את תּוֹרַת֙ הַיֹּלֶ֔דֶת לַזָּכָ֖ר א֥וֹ לַנְּקֵבָֽה׃"
+        "WLC": "וְ/הִקְרִיב֞/וֹ לִ/פְנֵ֤י יְהוָה֙ וְ/כִפֶּ֣ר עָלֶ֔י/הָ וְ/טָהֲרָ֖ה מִ/מְּקֹ֣ר דָּמֶ֑י/הָ זֹ֤את תּוֹרַת֙ הַ/יֹּלֶ֔דֶת לַ/זָּכָ֖ר א֥וֹ לַ/נְּקֵבָֽה׃",
+        "LXX": "καὶ προσοίσει ἔναντι Κυρίου, καὶ ἐξιλάσεται περὶ αὐτῆς ὁ ἱερεύς, καὶ καθαριεῖ αὐτὴν ἀπὸ τῆς πηγῆς τοῦ αἵματος αὐτῆς. οὗτος ὁ νόμος τῆς τικτούσης ἄρσεν ἢ θῆλυ.",
+        "VUL": "qui offeret illa coram Domino, et orabit pro ea, et sic mundabitur a profluvio sanguinis sui : ista est lex parientis masculum aut feminam.",
+        "SYN": "он принесет это пред Господа и очистит ее, и она будет чиста от течения кровей ее. Вот закон о родившей _младенца_ мужеского или женского пола.",
+        "NEO": "Le prêtre les offrira devant \\+w Yahweh|strong=\"H3068\"\\+w**, et fera pour elle l’expiation, et elle sera pure du flux de son sang. Telle est la loi pour la femme qui met au monde soit un fils soit une fille.",
+        "NAB": "The priest shall offer them up before the LORD to make atonement for her, and thus she will be clean again after her flow of blood. Such is the law for the woman who gives birth to a boy or a girl child.",
+        "VAT_ES": "El sacerdote lo presentará delante del Señor y practicará el rito de expiación en favor de ella. Así quedará purificada de su pérdida de sangre. Este es el ritual concerniente a la mujer que da a luz un niño o una niña.",
+        "CEI": "Il sacerdote li offrirà davanti al Signore e farà il rito espiatorio per lei; essa sarà purificata dal flusso del suo sangue. Questa è la legge relativa alla donna, che partorisce un maschio o una femmina."
       }
     },
     "8": {
@@ -96,7 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "וְאִם לֹ֨א תִמְצָ֣א יָדָהּ֮ דֵּ֣י שֶׂה֒ וְלָקְחָ֣ה שְׁתֵּֽי תֹרִ֗ים א֤וֹ שְׁנֵי֙ בְּנֵ֣י יוֹנָ֔ה אֶחָ֥ד לְעֹלָ֖ה וְאֶחָ֣ד לְחַטָּ֑את וְכִפֶּ֥ר עָלֶ֛יהָ הַכֹּהֵ֖ן וְטָהֵֽרָה׃"
+        "WLC": "וְ/אִם לֹ֨א תִמְצָ֣א יָדָ/הּ֮ דֵּ֣י שֶׂה֒ וְ/לָקְחָ֣ה שְׁתֵּֽי תֹרִ֗ים א֤וֹ שְׁנֵי֙ בְּנֵ֣י יוֹנָ֔ה אֶחָ֥ד לְ/עֹלָ֖ה וְ/אֶחָ֣ד לְ/חַטָּ֑את וְ/כִפֶּ֥ר עָלֶ֛י/הָ הַ/כֹּהֵ֖ן וְ/טָהֵֽרָה׃",
+        "LXX": "ἐὰν δὲ μὴ εὑρίσκῃ ἡ χεὶρ αὐτῆς τὸ ἱκανὸν εἰς ἀμνόν, καὶ λήμψεται δύο τρυγόνας ἢ δύο νοσσοὺς περιστερῶν, μίαν εἰς ὁλοκαύτωμα καὶ μίαν περὶ ἁμαρτίας· καὶ ἐξιλάσεται περὶ αὐτῆς ὁ ἱερεύς, καὶ καθαρισθήσεται.",
+        "VUL": "Quod si non invenerit manus ejus, nec potuerit offerre agnum, sumet duos turtures vel duos pullos columbarum, unum in holocaustum, et alterum pro peccato : orabitque pro ea sacerdos, et sic mundabitur.",
+        "SYN": "Если же она не в состоянии принести агнца, то пусть возьмет двух горлиц или двух молодых голубей, одного во всесожжение, а другого в жертву за грех, и очистит ее священник, и она будет чиста.",
+        "NEO": "Si elle n’a pas de quoi se procurer un agneau, qu’elle prenne deux tourterelles ou deux jeunes pigeons, l’un pour l’holocauste, l’autre pour le sacrifice pour le péché ; et le prêtre fera pour elle l’expiation, et elle sera pure. »",
+        "NAB": "If, however, she cannot afford a lamb, she may take two turtledoves or two pigeons, the one for a holocaust and the other for a sin offering. The priest shall make atonement for her, and thus she will again be clean.\"",
+        "VAT_ES": "Y si no dispone de recursos suficientes para adquirir un cordero, tomará dos torcazas o dos pichones, uno para el holocausto y otro para el sacrificio por el pecado. El sacerdote realizará el rito de expiación en favor de ella, y así quedará purificada.",
+        "CEI": "Se non ha mezzi da offrire un agnello, prenderà due tortore o due colombi: uno per l'olocausto e l'altro per il sacrificio espiatorio. Il sacerdote farà il rito espiatorio per lei ed essa sarà monda\"."
       }
     }
   }

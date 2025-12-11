@@ -19,7 +19,14 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "וַיְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּאמֹֽר׃"
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse ancora a Mosè:"
       }
     },
     "2": {
@@ -30,7 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "קַ֤ח אֶֽת אַהֲרֹן֙ וְאֶת בָּנָ֣יו אִתּ֔וֹ וְאֵת֙ הַבְּגָדִ֔ים וְאֵ֖ת שֶׁ֣מֶן הַמִּשְׁחָ֑ה וְאֵ֣ת פַּ֣ר הַֽחַטָּ֗את וְאֵת֙ שְׁנֵ֣י הָֽאֵילִ֔ים וְאֵ֖ת סַ֥ל הַמַּצּֽוֹת׃"
+        "WLC": "קַ֤ח אֶֽת אַהֲרֹן֙ וְ/אֶת בָּנָ֣י/ו אִתּ֔/וֹ וְ/אֵת֙ הַ/בְּגָדִ֔ים וְ/אֵ֖ת שֶׁ֣מֶן הַ/מִּשְׁחָ֑ה וְ/אֵ֣ת פַּ֣ר הַֽ/חַטָּ֗את וְ/אֵת֙ שְׁנֵ֣י הָֽ/אֵילִ֔ים וְ/אֵ֖ת סַ֥ל הַ/מַּצּֽוֹת׃",
+        "LXX": "Λάβε Ἀαρὼν καὶ τοὺς υἱοὺς αὐτοῦ καὶ τὰς στολὰς αὐτοῦ, καὶ τὸ ἔλαιον τῆς χρίσεως καὶ τὸν μόσχον τὸν περὶ τῆς ἁμαρτίας καὶ τοὺς δύο κριοὺς καὶ τὸ κανοῦν τῶν ἀζύμων·",
+        "VUL": "Tolle Aaron cum filiis suis, vestes eorum, et unctionis oleum, vitulum pro peccato, duos arietes, canistrum cum azymis :",
+        "SYN": "возьми Аарона и сынов его с ним, и одежды и елей помазания, и тельца для жертвы за грех и двух овнов, и корзину опресноков,",
+        "NEO": "« Prends Aaron et ses fils avec lui, les vêtements, l’huile d’onction, le taureau pour le sacrifice pour le péché, les deux béliers et la corbeille de pains sans levain,",
+        "NAB": "\"Take Aaron and his sons, together with the vestments, the anointing oil, the bullock for a sin offering, the two rams, and the basket of unleavened food.",
+        "VAT_ES": "Reúne a Aarón y a sus hijos; toma las vestiduras, el óleo de la unción, el novillo para el sacrificio por el pecado, los dos carneros y la canasta de los panes ácimos,",
+        "CEI": "\"Prendi Aronne insieme ai suoi figli, le vesti, l'olio dell'unzione, il giovenco del sacrificio espiatorio, i due arieti e il cesto dei pani azzimi;"
       }
     },
     "3": {
@@ -41,7 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "וְאֵ֥ת כָּל הָעֵדָ֖ה הַקְהֵ֑ל אֶל פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃"
+        "WLC": "וְ/אֵ֥ת כָּל הָ/עֵדָ֖ה הַקְהֵ֑ל אֶל פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃",
+        "LXX": "καὶ πᾶσαν τὴν συναγωγὴν ἐκκλησίασον ἐπὶ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου.",
+        "VUL": "et congregabis omnem ctum ad ostium tabernaculi.",
+        "SYN": "и собери все общество ко входу скинии собрания.",
+        "NEO": "et convoque toute l’assemblée à l’entrée de la tente de réunion. »",
+        "NAB": "Then assemble the whole community at the entrance of the meeting tent.\"",
+        "VAT_ES": "y congrega a toda la comunidad junto a la entrada de la Carpa del Encuentro.",
+        "CEI": "convoca tutta la comunità all'ingresso della tenda del convegno\"."
       }
     },
     "4": {
@@ -52,7 +73,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "וַיַּ֣עַשׂ מֹשֶׁ֔ה כַּֽאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֹת֑וֹ וַתִּקָּהֵל֙ הָֽעֵדָ֔ה אֶל פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃"
+        "WLC": "וַ/יַּ֣עַשׂ מֹשֶׁ֔ה כַּֽ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֹת֑/וֹ וַ/תִּקָּהֵל֙ הָֽ/עֵדָ֔ה אֶל פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃",
+        "LXX": "καὶ ἐποίησεν Μωυσῆς ὃν τρόπον συνέταξεν αὐτῷ Κύριος, καὶ ἐξεκκλησίασεν τὴν συναγωγὴν ἐπὶ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου.",
+        "VUL": "Fecit Moyses ut Dominus imperaverat. Congregataque omni turba ante fores tabernaculi,",
+        "SYN": "Моисей сделал так, как повелел ему Господь, и собралось общество ко входу скинии собрания.",
+        "NEO": "Moïse fit ce que \\+w Yahweh|strong=\"H3068\"\\+w** lui avait ordonné ; et l’assemblée s’étant réunie à l’entrée de la tente de réunion,",
+        "NAB": "And Moses did as the LORD had commanded. When the community had assembled at the entrance of the meeting tent,",
+        "VAT_ES": "Moisés hizo lo que el Señor le había ordenado, y cuando la comunidad estuvo reunida a la entrada de la Carpa,",
+        "CEI": "Mosè fece come il Signore gli aveva ordinato e la comunità fu convocata all'ingresso della tenda del convegno."
       }
     },
     "5": {
@@ -63,7 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "וַיֹּ֥אמֶר מֹשֶׁ֖ה אֶל הָעֵדָ֑ה זֶ֣ה הַדָּבָ֔ר אֲשֶׁר צִוָּ֥ה יְהוָ֖ה לַעֲשֽׂוֹת׃"
+        "WLC": "וַ/יֹּ֥אמֶר מֹשֶׁ֖ה אֶל הָ/עֵדָ֑ה זֶ֣ה הַ/דָּבָ֔ר אֲשֶׁר צִוָּ֥ה יְהוָ֖ה לַ/עֲשֽׂוֹת׃",
+        "LXX": "καὶ εἶπεν Μωσῆς τῇ συναγωγῇ Τοῦτό ἐστιν τὸ ῥῆμα, τοῦτό ἐστιν ὃ ἐνετείλατο Κύριος ποιῆσαι.",
+        "VUL": "ait : Iste est sermo, quem jussit Dominus fieri.",
+        "SYN": "И сказал Моисей к обществу: вот что повелел Господь сделать.",
+        "NEO": "Moïse dit à l’assemblée : « Voici ce que \\+w Yahweh|strong=\"H3068\"\\+w** a ordonné de faire. »",
+        "NAB": "Moses told them what the LORD had ordered to be done.",
+        "VAT_ES": "él les dijo: «El Señor ha mandado hacer estas cosas».",
+        "CEI": "Mosè disse alla comunità: \"Questo il Signore ha ordinato di fare\"."
       }
     },
     "6": {
@@ -74,7 +109,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "וַיַּקְרֵ֣ב מֹשֶׁ֔ה אֶֽת אַהֲרֹ֖ן וְאֶת בָּנָ֑יו וַיִּרְחַ֥ץ אֹתָ֖ם בַּמָּֽיִם׃"
+        "WLC": "וַ/יַּקְרֵ֣ב מֹשֶׁ֔ה אֶֽת אַהֲרֹ֖ן וְ/אֶת בָּנָ֑י/ו וַ/יִּרְחַ֥ץ אֹתָ֖/ם בַּ/מָּֽיִם׃",
+        "LXX": "καὶ προσήνεγκεν Μωυσῆς τὸν Ἀαρὼν καὶ τοὺς υἱοὺς αὐτοῦ, καὶ ἔλουσεν αὐτοὺς ὕδατι·",
+        "VUL": "Statimque obtulit Aaron et filios ejus. Cumque lavisset eos,",
+        "SYN": "И привел Моисей Аарона и сынов его и омыл их водою;",
+        "NEO": "Moïse fit approcher Aaron et ses fils, et il les lava avec de l’eau.",
+        "NAB": "Bringing forward Aaron and his sons, he first washed them with water.",
+        "VAT_ES": "Entonces Moisés ordenó que se acercaran Aarón y sus hijos y los lavó con agua.",
+        "CEI": "Mosè fece accostare Aronne e i suoi figli e li lavò con acqua."
       }
     },
     "7": {
@@ -85,7 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "וַיִּתֵּ֨ן עָלָ֜יו אֶת הַכֻּתֹּ֗נֶת וַיַּחְגֹּ֤ר אֹתוֹ֙ בָּֽאַבְנֵ֔ט וַיַּלְבֵּ֤שׁ אֹתוֹ֙ אֶֽת הַמְּעִ֔יל וַיִּתֵּ֥ן עָלָ֖יו אֶת הָאֵפֹ֑ד וַיַּחְגֹּ֣ר אֹת֗וֹ בְּחֵ֨שֶׁב֙ הָֽאֵפֹ֔ד וַיֶּאְפֹּ֥ד ל֖וֹ בּֽוֹ׃"
+        "WLC": "וַ/יִּתֵּ֨ן עָלָ֜י/ו אֶת הַ/כֻּתֹּ֗נֶת וַ/יַּחְגֹּ֤ר אֹת/וֹ֙ בָּֽ/אַבְנֵ֔ט וַ/יַּלְבֵּ֤שׁ אֹת/וֹ֙ אֶֽת הַ/מְּעִ֔יל וַ/יִּתֵּ֥ן עָלָ֖י/ו אֶת הָ/אֵפֹ֑ד וַ/יַּחְגֹּ֣ר אֹת֗/וֹ בְּ/חֵ֨שֶׁב֙ הָֽ/אֵפֹ֔ד וַ/יֶּאְפֹּ֥ד ל֖/וֹ בּֽ/וֹ׃",
+        "LXX": "καὶ ἐνέδυσεν αὐτοὺς τὸν χιτῶνα καὶ ἔζωσεν αὐτοὺς τὴν ζώνην· καὶ ἐνέδυσεν αὐτὸν τὸν ὑποδύτην καὶ ἐπέθηκεν ἐπ’ αὐτὸν τὴν ἐπωμίδα, καὶ συνέζωσεν αὐτὸν κατὰ τὴν ποίησιν τῆς ἐπωμίδος καὶ συνέσφιγξεν αὐτὸν ἐν αὐτῇ·",
+        "VUL": "vestivit pontificem subucula linea, accingens eum balteo, et induens eum tunica hyacinthina, et desuper humerale imposuit,",
+        "SYN": "и возложил на него хитон, и опоясал его поясом, и надел на него верхнюю ризу, и возложил на него ефод, и опоясал его поясом ефода и прикрепил им ефод на нем,",
+        "NEO": "Il mit à Aaron la tunique, le ceignit de la ceinture, le revêtit de la robe, et il plaça sur lui l’éphod,",
+        "NAB": "Then he put the tunic on Aaron, girded him with the sash, clothed him with the robe, placed the ephod on him, and girded him with the embroidered belt of the ephod, fastening it around him.",
+        "VAT_ES": "Después impuso la túnica a Aarón y se la ciñó con la faja; lo vistió con el manto y le puso encima el efod, ciñéndolo con el cinturón, de manera que se lo dejó bien ajustado.",
+        "CEI": "Poi rivestì Aronne della tunica, lo cinse della cintura, gli pose addosso il manto, gli mise l'efod e lo cinse con la cintura dell'efod, nel quale avvolse l'efod."
       }
     },
     "8": {
@@ -96,7 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "וַיָּ֥שֶׂם עָלָ֖יו אֶת הַחֹ֑שֶׁן וַיִּתֵּן֙ אֶל הַחֹ֔שֶׁן אֶת הָאוּרִ֖ים וְאֶת הַתֻּמִּֽים׃"
+        "WLC": "וַ/יָּ֥שֶׂם עָלָ֖י/ו אֶת הַ/חֹ֑שֶׁן וַ/יִּתֵּן֙ אֶל הַ/חֹ֔שֶׁן אֶת הָ/אוּרִ֖ים וְ/אֶת הַ/תֻּמִּֽים׃",
+        "LXX": "καὶ ἐπέθηκεν ἐπ’ αὐτὴν τὸ λόγιον, καὶ ἐπέθηκεν ἐπὶ τὸ λόγιον τήν δήλωσιν καὶ τὴν ἀλήθειαν.",
+        "VUL": "quod astringens cingulo aptavit rationali, in quo erat Doctrina et Veritas.",
+        "SYN": "и возложил на него наперсник, и на наперсник положил урим и туммим,",
+        "NEO": "qu’il serra avec la ceinture de l’éphod et il le lui attacha. Il lui mit le pectoral et il joignit au pectoral l’Urim et le Thummim ;",
+        "NAB": "He then set the breastpiece on him, with the Urim and Thummim in it,",
+        "VAT_ES": "Luego le colocó el pectoral y depositó en él el Urim y el Tumim;",
+        "CEI": "Gli mise anche il pettorale, e nel pettorale pose gli Urim e i Tummin."
       }
     },
     "9": {
@@ -107,7 +163,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "וַיָּ֥שֶׂם אֶת הַמִּצְנֶ֖פֶת עַל רֹאשׁ֑וֹ וַיָּ֨שֶׂם עַֽל הַמִּצְנֶ֜פֶת אֶל מ֣וּל פָּנָ֗יו אֵ֣ת צִ֤יץ הַזָּהָב֙ נֵ֣זֶר הַקֹּ֔דֶשׁ כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃"
+        "WLC": "וַ/יָּ֥שֶׂם אֶת הַ/מִּצְנֶ֖פֶת עַל רֹאשׁ֑/וֹ וַ/יָּ֨שֶׂם עַֽל הַ/מִּצְנֶ֜פֶת אֶל מ֣וּל פָּנָ֗י/ו אֵ֣ת צִ֤יץ הַ/זָּהָב֙ נֵ֣זֶר הַ/קֹּ֔דֶשׁ כַּ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "καὶ ἐπέθηκεν τὴν μίτραν ἐπὶ τὴν κεφαλὴν αὐτοῦ, καὶ ἐπέθηκεν ἐπὶ τὴν μίτραν κατὰ πρόσωπον αὐτοῦ τὸ πέταλον τὸ χρυσοῦν τὸ καθηγιασμένον ἅγιον, ὃν τρόπον συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "Cidari quoque texit caput : et super eam, contra frontem, posuit laminam auream consecratam in sanctificatione, sicut præceperat ei Dominus.",
+        "SYN": "и возложил на голову его кидар, а на кидар с передней стороны его возложил полированную дощечку, диадиму святыни, как повелел Господь Моисею.",
+        "NEO": "et, ayant posé la tiare sur sa tête, il plaça sur le devant de la tiare la lame d’or, diadème sacré, comme \\+w Yahweh|strong=\"H3068\"\\+w** l’avait ordonné à Moïse.",
+        "NAB": "and put the miter on his head, attaching the gold plate, the sacred diadem, over the front of the miter, at his forehead, as the LORD had commanded him to do.",
+        "VAT_ES": "también puso sobre su cabeza el turbante, y encima de este, sobre la frente, colocó la flor de oro –el signo de su consagración– como el Señor se lo había ordenado.",
+        "CEI": "Poi gli mise in capo il turbante e sul davanti del turbante pose la lamina d'oro, il sacro diadema, come il Signore aveva ordinato a Mosè."
       }
     },
     "10": {
@@ -118,7 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "WLC": "וַיִּקַּ֤ח מֹשֶׁה֙ אֶת שֶׁ֣מֶן הַמִּשְׁחָ֔ה וַיִּמְשַׁ֥ח אֶת הַמִּשְׁכָּ֖ן וְאֶת כָּל אֲשֶׁר בּ֑וֹ וַיְקַדֵּ֖שׁ אֹתָֽם׃"
+        "WLC": "וַ/יִּקַּ֤ח מֹשֶׁה֙ אֶת שֶׁ֣מֶן הַ/מִּשְׁחָ֔ה וַ/יִּמְשַׁ֥ח אֶת הַ/מִּשְׁכָּ֖ן וְ/אֶת כָּל אֲשֶׁר בּ֑/וֹ וַ/יְקַדֵּ֖שׁ אֹתָֽ/ם׃",
+        "LXX": "καὶ ἔλαβεν Μωυσῆς ἀπὸ τοῦ ἐλαίου τῆς χρίσεως,",
+        "VUL": "Tulit et unctionis oleum, quo linivit tabernaculum cum omni supellectili sua.",
+        "SYN": "И взял Моисей елей помазания, и помазал скинию и все, что в ней, и освятил это;",
+        "NEO": "Et Moïse prit l’huile d’onction, il oignit la Demeure et toutes les choses qui étaient dedans, et il les consacra.",
+        "NAB": "Taking the anointing oil, Moses anointed and consecrated the Dwelling, with all that was in it.",
+        "VAT_ES": "En seguida Moisés tomó el óleo de la unción, ungió la Morada y todo lo que había en ella, y así los consagró.",
+        "CEI": "Poi Mosè prese l'olio dell'unzione, unse la Dimora e tutte le cose che vi si trovavano e così le consacrò."
       }
     },
     "11": {
@@ -129,7 +199,14 @@
         "LXX": 11
       },
       "text": {
-        "WLC": "וַיַּ֥ז מִמֶּ֛נּוּ עַל הַמִּזְבֵּ֖חַ שֶׁ֣בַע פְּעָמִ֑ים וַיִּמְשַׁ֨ח אֶת הַמִּזְבֵּ֜חַ וְאֶת כָּל כֵּלָ֗יו וְאֶת הַכִּיֹּ֛ר וְאֶת כַּנּ֖וֹ לְקַדְּשָֽׁם׃"
+        "WLC": "וַ/יַּ֥ז מִמֶּ֛/נּוּ עַל הַ/מִּזְבֵּ֖חַ שֶׁ֣בַע פְּעָמִ֑ים וַ/יִּמְשַׁ֨ח אֶת הַ/מִּזְבֵּ֜חַ וְ/אֶת כָּל כֵּלָ֗י/ו וְ/אֶת הַ/כִּיֹּ֛ר וְ/אֶת כַּנּ֖/וֹ לְ/קַדְּשָֽׁ/ם׃",
+        "LXX": "καὶ ἔρανεν ἀπ’ αὐτοῦ ἐπὶ τὸ θυσιαστήριον ἑπτάκις· καὶ ἔχρισεν τὸ θυσιαστήριον καὶ ἡγίασεν αὐτό, καὶ πάντα τὰ σκεύη αὐτοῦ καὶ τὸν λουτῆρα καὶ τὴν βάσιν αὐτοῦ, καὶ ἡγίασεν αὐτά· καὶ ἔχρισεν τὴν σκηνὴν καὶ πάντα τὰ ἐν αὐτῇ, καὶ ἡγίασεν αὐτήν.",
+        "VUL": "Cumque sanctificans aspersisset altare septem vicibus, unxit illud, et omnia vasa ejus, labrumque cum basi sua sanctificavit oleo.",
+        "SYN": "и покропил им на жертвенник семь раз, и помазал жертвенник и все принадлежности его и умывальницу и подножие ее, чтобы освятить их;",
+        "NEO": "Il en aspergea sept fois l’autel, et il oignit l’autel avec tous ses ustensiles, ainsi que le bassin avec sa base, pour les consacrer.",
+        "NAB": "Then he sprinkled some of this oil seven times on the altar, and anointed the altar, with all its appurtenances, and the laver, with its base, thus consecrating them.",
+        "VAT_ES": "Hizo siete aspersiones con óleo sobre el altar, y ungió el altar y todos sus utensilios, la fuente y su base, para consagrarlos.",
+        "CEI": "Fece sette volte l'aspersione sull'altare, unse l'altare con tutti i suoi accessori, la conca e la sua base, per consacrarli."
       }
     },
     "12": {
@@ -140,7 +217,14 @@
         "LXX": 12
       },
       "text": {
-        "WLC": "וַיִּצֹק֙ מִשֶּׁ֣מֶן הַמִּשְׁחָ֔ה עַ֖ל רֹ֣אשׁ אַהֲרֹ֑ן וַיִּמְשַׁ֥ח אֹת֖וֹ לְקַדְּשֽׁוֹ׃"
+        "WLC": "וַ/יִּצֹק֙ מִ/שֶּׁ֣מֶן הַ/מִּשְׁחָ֔ה עַ֖ל רֹ֣אשׁ אַהֲרֹ֑ן וַ/יִּמְשַׁ֥ח אֹת֖/וֹ לְ/קַדְּשֽׁ/וֹ׃",
+        "LXX": "καὶ ἐπέχεεν Μωσῆς ἀπὸ τοῦ ἐλαίου τῆς χρίσεως ἐπὶ τὴν κεφαλὴν Ἀαρών, καὶ ἔχρισεν αὐτὸν καὶ ἡγίασεν αὐτόν.",
+        "VUL": "Quod fundens super caput Aaron, unxit eum, et consecravit :",
+        "SYN": "и возлил [Моисей] елей помазания на голову Аарона и помазал его, чтоб освятить его.",
+        "NEO": "Il versa de l’huile d’onction sur la tête d’Aaron, et l’oignit pour le consacrer.",
+        "NAB": "He also poured some of the anointing oil on Aaron's head, thus consecrating him.",
+        "VAT_ES": "Luego derramó óleo sobre la cabeza de Aarón y lo consagró por medio de la unción.",
+        "CEI": "Versò l'olio della unzione sul capo d'Aronne e unse Aronne, per consacrarlo."
       }
     },
     "13": {
@@ -151,7 +235,14 @@
         "LXX": 13
       },
       "text": {
-        "WLC": "וַיַּקְרֵ֨ב מֹשֶׁ֜ה אֶת בְּנֵ֣י אַהֲרֹ֗ן וַיַּלְבִּשֵׁ֤ם כֻּתֳּנֹת֙ וַיַּחְגֹּ֤ר אֹתָם֙ אַבְנֵ֔ט וַיַּחֲבֹ֥שׁ לָהֶ֖ם מִגְבָּע֑וֹת כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃"
+        "WLC": "וַ/יַּקְרֵ֨ב מֹשֶׁ֜ה אֶת בְּנֵ֣י אַהֲרֹ֗ן וַ/יַּלְבִּשֵׁ֤/ם כֻּתֳּנֹת֙ וַ/יַּחְגֹּ֤ר אֹתָ/ם֙ אַבְנֵ֔ט וַ/יַּחֲבֹ֥שׁ לָ/הֶ֖ם מִגְבָּע֑וֹת כַּ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "καὶ προσήγαγεν Μωυσῆς τοὺς υἱοὺς Ἀαρών, καὶ ἐνέδυσεν αὐτοὺς χιτῶνας καὶ ἔζωσεν αὐτοὺς ζώνας καὶ περιέθηκεν αὐτοῖς κιδάρεις, καθάπερ συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "filios quoque ejus oblatos vestivit tunicis lineis, et cinxit balteis, imposuitque mitras, ut jusserat Dominus.",
+        "SYN": "И привел Моисей сынов Аароновых, и одел их в хитоны, и опоясал их поясом, и возложил на них кидары, как повелел Господь Моисею.",
+        "NEO": "Moïse fit aussi approcher les fils d’Aaron ; il les revêtit de tuniques, les ceignit de ceintures et leur attacha des mitres, comme \\+w Yahweh|strong=\"H3068\"\\+w** l’avait ordonné à Moïse.",
+        "NAB": "Moses likewise brought forward Aaron's sons, clothed them with tunics, girded them with sashes, and put turbans on them, as the LORD had commanded him to do.",
+        "VAT_ES": "Finalmente, Moisés hizo que se acercaran los hijos de Aarón, los vistió con túnicas, los ciñó con fajas y les ajustó las mitras, según la orden que el Señor le había dado.",
+        "CEI": "Poi Mosè fece avvicinare i figli d'Aronne, li vestì di tuniche, li cinse con le cinture e legò sul loro capo i turbanti, come il Signore aveva ordinato a Mosè."
       }
     },
     "14": {
@@ -162,7 +253,14 @@
         "LXX": 14
       },
       "text": {
-        "WLC": "וַיַּגֵּ֕שׁ אֵ֖ת פַּ֣ר הַֽחַטָּ֑את וַיִּסְמֹ֨ךְ אַהֲרֹ֤ן וּבָנָיו֙ אֶת יְדֵיהֶ֔ם עַל רֹ֖אשׁ פַּ֥ר הַֽחַטָּֽאת׃"
+        "WLC": "וַ/יַּגֵּ֕שׁ אֵ֖ת פַּ֣ר הַֽ/חַטָּ֑את וַ/יִּסְמֹ֨ךְ אַהֲרֹ֤ן וּ/בָנָי/ו֙ אֶת יְדֵי/הֶ֔ם עַל רֹ֖אשׁ פַּ֥ר הַֽ/חַטָּֽאת׃",
+        "LXX": "καὶ προσήγαγεν Μωυσῆς τὸν μόσχον τὸν περὶ τῆς ἁμαρτίας, καὶ ἐπέθηκεν Ἀαρὼν καὶ οἱ υἱοὶ αὐτοῦ τὰς χεῖρας ἐπὶ τὴν κεφαλὴν τοῦ μόσχου τοῦ τῆς ἁμαρτίας.",
+        "VUL": "Obtulit et vitulum pro peccato : cumque super caput ejus posuisset Aaron et filii ejus manus suas,",
+        "SYN": "И привел [Моисей] тельца для жертвы за грех, и Аарон и сыны его возложили руки свои на голову тельца за грех;",
+        "NEO": "Il fit approcher le taureau du sacrifice pour le péché, et Aaron et ses fils posèrent leurs mains sur la tête du taureau du sacrifice pour le péché.",
+        "NAB": "When he had brought forward the bullock for a sin offering, Aaron and his sons laid their hands on its head.",
+        "VAT_ES": "Después hizo traer un novillo para el sacrificio por el pecado. Aarón y sus hijos impusieron sus manos sobre la cabeza de la víctima,",
+        "CEI": "Fece quindi accostare il giovenco del sacrificio espiatorio e Aronne e i suoi figli stesero le mani sulla testa del giovenco del sacrificio espiatorio."
       }
     },
     "15": {
@@ -173,7 +271,14 @@
         "LXX": 15
       },
       "text": {
-        "WLC": "וַיִּשְׁחָ֗ט וַיִּקַּ֨ח מֹשֶׁ֤ה אֶת הַדָּם֙ וַ֠יִּתֵּן עַל קַרְנ֨וֹת הַמִּזְבֵּ֤חַ סָבִיב֙ בְּאֶצְבָּע֔וֹ וַיְחַטֵּ֖א אֶת הַמִּזְבֵּ֑חַ וְאֶת הַדָּ֗ם יָצַק֙ אֶל יְס֣וֹד הַמִּזְבֵּ֔חַ וַֽיְקַדְּשֵׁ֖הוּ לְכַפֵּ֥ר עָלָֽיו׃"
+        "WLC": "וַ/יִּשְׁחָ֗ט וַ/יִּקַּ֨ח מֹשֶׁ֤ה אֶת הַ/דָּם֙ וַ֠/יִּתֵּן עַל קַרְנ֨וֹת הַ/מִּזְבֵּ֤חַ סָבִיב֙ בְּ/אֶצְבָּע֔/וֹ וַ/יְחַטֵּ֖א אֶת הַ/מִּזְבֵּ֑חַ וְ/אֶת הַ/דָּ֗ם יָצַק֙ אֶל יְס֣וֹד הַ/מִּזְבֵּ֔חַ וַֽ/יְקַדְּשֵׁ֖/הוּ לְ/כַפֵּ֥ר עָלָֽי/ו׃",
+        "LXX": "καὶ ἔσφαξεν αὐτόν· καὶ ἔλαβεν Μωσῆς ἀπὸ τοῦ αἵματος καὶ ἐπέθηκεν ἐπὶ τὰ κέρατα τοῦ θυσιαστηρίου κύκλῳ τῷ δακτύλῳ, καὶ ἐκαθάρισεν τὸ θυσιαστήριον· καὶ τὸ αἷμα ἐξέχεεν ἐπὶ τὴν βάσιν τοῦ θυσιαστηρίου, καὶ ἡγίασεν αὐτὸ τοῦ ἐξιλάσασθαι ἐπ’ αὐτοῦ.",
+        "VUL": "immolavit eum, hauriens sanguinem, et tincto digito, tetigit cornua altaris per gyrum : quo expiato et sanctificato, fudit reliquum sanguinem ad fundamenta ejus.",
+        "SYN": "и заколол _его_ [Моисей] и взял крови, и перстом своим возложил на роги жертвенника со всех сторон, и очистил жертвенник, а _остальную_ кровь вылил к подножию жертвенника, и освятил его, чтобы сделать его чистым.",
+        "NEO": "Moïse l’égorgea, prit du sang, en mit avec son doigt sur les cornes de l’autel tout autour, et purifia l’autel ; il répandit le reste du sang au pied de l’autel, et le consacra en faisant sur lui l’expiation.",
+        "NAB": "Then Moses slaughtered it, and taking some of its blood, with his finger he put it on the horns around the altar, thus purifying the altar. He also made atonement for the altar by pouring out the blood at its base when he consecrated it.",
+        "VAT_ES": "y Moisés la inmoló. Entonces tomó la sangre y mojó con el dedo cada uno de los cuernos del altar, para purificarlo. Luego derramó la sangre sobre la base del altar. Así lo consagró, realizando sobre él el rito de expiación.",
+        "CEI": "Mosè lo immolò, ne prese del sangue, bagnò con il dito i corni attorno all'altare e purificò l'altare; poi sparse il resto del sangue alla base dell'altare e lo consacrò per fare su di esso l'espiazione."
       }
     },
     "16": {
@@ -184,7 +289,14 @@
         "LXX": 16
       },
       "text": {
-        "WLC": "וַיִּקַּ֗ח אֶֽת כָּל הַחֵלֶב֮ אֲשֶׁ֣ר עַל הַקֶּרֶב֒ וְאֵת֙ יֹתֶ֣רֶת הַכָּבֵ֔ד וְאֶת שְׁתֵּ֥י הַכְּלָיֹ֖ת וְאֶֽת חֶלְבְּהֶ֑ן וַיַּקְטֵ֥ר מֹשֶׁ֖ה הַמִּזְבֵּֽחָה׃"
+        "WLC": "וַ/יִּקַּ֗ח אֶֽת כָּל הַ/חֵלֶב֮ אֲשֶׁ֣ר עַל הַ/קֶּרֶב֒ וְ/אֵת֙ יֹתֶ֣רֶת הַ/כָּבֵ֔ד וְ/אֶת שְׁתֵּ֥י הַ/כְּלָיֹ֖ת וְ/אֶֽת חֶלְבְּ/הֶ֑ן וַ/יַּקְטֵ֥ר מֹשֶׁ֖ה הַ/מִּזְבֵּֽחָ/ה׃",
+        "LXX": "καὶ ἔλαβεν Μωυσῆς πᾶν τὸ στέαρ τὸ ἐπὶ τῶν ἐνδοσθίων καὶ λοβὸν ἀπὸ τοῦ ἥπατος καὶ ἀμφοτέρους τοὺς νεφροὺς καὶ τὸ στέαρ τὸ ἐπ’ αὐτῶν, καὶ ἀνήνεγκεν Μωυσῆς ἐπὶ τὸ θυσιαστήριον·",
+        "VUL": "Adipem vero qui erat super vitalia, et reticulum jecoris, duosque renunculos, cum arvinulis suis, adolevit super altare :",
+        "SYN": "И взял [Моисей] весь тук, который на внутренностях, и сальник на печени, и обе почки и тук их, и сжег Моисей на жертвеннике;",
+        "NEO": "Il prit ensuite toute la graisse qui enveloppe les entrailles, la taie du foie et les deux rognons avec leur graisse, et il les fit fumer sur l’autel.",
+        "NAB": "Taking all the fat that was over the inner organs, as well as the lobe of the liver and the two kidneys with their fat, Moses burned them on the altar.",
+        "VAT_ES": "En seguida tomó toda la grasa que está sobre las entrañas, la protuberancia del hígado y los dos riñones con su grasa, y los hizo arder sobre el altar.",
+        "CEI": "Poi prese tutto il grasso aderente alle viscere, il lobo del fegato, i due reni con il loro grasso e Mosè bruciò tutto sull'altare."
       }
     },
     "17": {
@@ -195,7 +307,14 @@
         "LXX": 17
       },
       "text": {
-        "WLC": "וְאֶת הַפָּ֤ר וְאֶת עֹרוֹ֙ וְאֶת בְּשָׂר֣וֹ וְאֶת פִּרְשׁ֔וֹ שָׂרַ֣ף בָּאֵ֔שׁ מִח֖וּץ לַֽמַּחֲנֶ֑ה כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃"
+        "WLC": "וְ/אֶת הַ/פָּ֤ר וְ/אֶת עֹר/וֹ֙ וְ/אֶת בְּשָׂר֣/וֹ וְ/אֶת פִּרְשׁ֔/וֹ שָׂרַ֣ף בָּ/אֵ֔שׁ מִ/ח֖וּץ לַֽ/מַּחֲנֶ֑ה כַּ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "καὶ τὸν μόσχον καὶ τὴν βύρσαν αὐτοῦ καὶ τὰ κρέα αὐτοῦ καὶ τὴν κόπρον αὐτοῦ, κατέκαυσεν αὐτὰ πυρὶ ἔξω τῆς παρεμβολῆς, ὃν τρόπον συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "vitulum cum pelle, et carnibus, et fimo, cremans extra castra, sicut præceperat Dominus.",
+        "SYN": "а тельца и кожу его, и мясо его, и нечистоту его сжег на огне вне стана, как повелел Господь Моисею.",
+        "NEO": "Mais le taureau, sa peau, sa chair et ses excréments, il les brûla hors du camp, comme \\+w Yahweh|strong=\"H3068\"\\+w** l’avait ordonné à Moïse.",
+        "NAB": "The bullock, however, with its hide and flesh and offal he burned in the fire outside the camp, as the LORD had commanded him to do.",
+        "VAT_ES": "El resto del novillo –su cuero, su carne y sus excrementos– lo quemó fuera del campamento, como el Señor se lo había ordenado.",
+        "CEI": "Ma il giovenco, la sua pelle, la sua carne e le feci, bruciò nel fuoco fuori dell'accampamento, come il Signore gli aveva ordinato."
       }
     },
     "18": {
@@ -206,7 +325,14 @@
         "LXX": 18
       },
       "text": {
-        "WLC": "וַיַּקְרֵ֕ב אֵ֖ת אֵ֣יל הָעֹלָ֑ה וַֽיִּסְמְכ֞וּ אַהֲרֹ֧ן וּבָנָ֛יו אֶת יְדֵיהֶ֖ם עַל רֹ֥אשׁ הָאָֽיִל׃"
+        "WLC": "וַ/יַּקְרֵ֕ב אֵ֖ת אֵ֣יל הָ/עֹלָ֑ה וַֽ/יִּסְמְכ֞וּ אַהֲרֹ֧ן וּ/בָנָ֛י/ו אֶת יְדֵי/הֶ֖ם עַל רֹ֥אשׁ הָ/אָֽיִל׃",
+        "LXX": "καὶ προσήγαγεν Μωυσῆς τὸν κριὸν τὸν εἰς ὁλοκαύτωμα, καὶ ἐπέθηκεν Ἀαρὼν καὶ οἱ υἱοὶ αὐτοῦ τὰς χεῖρας αὐτῶν ἐπὶ τὴν κεφαλὴν τοῦ κριοῦ.",
+        "VUL": "Obtulit et arietem in holocaustum : super cujus caput cum imposuissent Aaron et filii ejus manus suas,",
+        "SYN": "И привел [Моисей] овна для всесожжения, и возложили Аарон и сыны его руки свои на голову овна;",
+        "NEO": "Il fit approcher le bélier de l’holocauste, et Aaron et ses fils posèrent leurs mains sur la tête du bélier.",
+        "NAB": "He next brought forward the holocaust ram, and Aaron and his sons laid their hands on its head.",
+        "VAT_ES": "Hizo traer, además, el carnero para el holocausto. Aarón y sus hijos impusieron sus manos sobre la cabeza de la víctima,",
+        "CEI": "Fece quindi avvicinare l'ariete dell'olocausto e Aronne e i suoi figli stesero le mani sulla testa dell'ariete."
       }
     },
     "19": {
@@ -217,7 +343,14 @@
         "LXX": 19
       },
       "text": {
-        "WLC": "וַיִּשְׁחָ֑ט וַיִּזְרֹ֨ק מֹשֶׁ֧ה אֶת הַדָּ֛ם עַל הַמִּזְבֵּ֖חַ סָבִֽיב׃"
+        "WLC": "וַ/יִּשְׁחָ֑ט וַ/יִּזְרֹ֨ק מֹשֶׁ֧ה אֶת הַ/דָּ֛ם עַל הַ/מִּזְבֵּ֖חַ סָבִֽיב׃",
+        "LXX": "καὶ ἔσφαξεν Μωυσῆς τὸν κριόν· καὶ προσέχεεν Μωσῆς τὸ αἷμα ἐπὶ τὸ θυσιαστήριον κύκλῳ·",
+        "VUL": "immolavit eum, et fudit sanguinem ejus per circuitum altaris.",
+        "SYN": "и заколол _его_ Моисей и покропил кровью на жертвенник со всех сторон;",
+        "NEO": "On l’égorgea et Moïse répandit le sang sur l’autel tout autour.",
+        "NAB": "When he had slaughtered it, Moses splashed its blood on all sides of the altar.",
+        "VAT_ES": "y Moisés la inmoló. Luego roció con la sangre todos los costados del altar.",
+        "CEI": "Mosè lo immolò e ne sparse il sangue attorno all'altare."
       }
     },
     "20": {
@@ -228,7 +361,14 @@
         "LXX": 20
       },
       "text": {
-        "WLC": "וְאֶת הָאַ֔יִל נִתַּ֖ח לִנְתָחָ֑יו וַיַּקְטֵ֤ר מֹשֶׁה֙ אֶת הָרֹ֔אשׁ וְאֶת הַנְּתָחִ֖ים וְאֶת הַפָּֽדֶר׃"
+        "WLC": "וְ/אֶת הָ/אַ֔יִל נִתַּ֖ח לִ/נְתָחָ֑י/ו וַ/יַּקְטֵ֤ר מֹשֶׁה֙ אֶת הָ/רֹ֔אשׁ וְ/אֶת הַ/נְּתָחִ֖ים וְ/אֶת הַ/פָּֽדֶר׃",
+        "LXX": "καὶ τὸν κριὸν ἐκρεανόμησεν κατὰ μέλη, καὶ ἀνήνεγκεν Μωσῆς τὴν κεφαλὴν καὶ τὰ μέλη καὶ τὸ στέαρ.",
+        "VUL": "Ipsumque arietem in frusta concidens, caput ejus, et artus, et adipem adolevit igni,",
+        "SYN": "и рассек овна на части, и сжег Моисей голову и части и тук,",
+        "NEO": "Puis on coupa le bélier en morceaux, et Moïse fit fumer la tête, les morceaux et la graisse.",
+        "NAB": "After cutting up the ram into pieces, he burned the head, the cut-up pieces and the suet;",
+        "VAT_ES": "Cortó el carnero en pedazos y los hizo arder, junto con la cabeza y la grasa.",
+        "CEI": "Poi fece a pezzi l'ariete e ne bruciò testa, pezzi e grasso."
       }
     },
     "21": {
@@ -239,7 +379,14 @@
         "LXX": 21
       },
       "text": {
-        "WLC": "וְאֶת הַקֶּ֥רֶב וְאֶת הַכְּרָעַ֖יִם רָחַ֣ץ בַּמָּ֑יִם וַיַּקְטֵר֩ מֹשֶׁ֨ה אֶת כָּל הָאַ֜יִל הַמִּזְבֵּ֗חָה עֹלָ֨ה ה֤וּא לְרֵֽיחַ נִיחֹ֨חַ֙ אִשֶּׁ֥ה הוּא֙ לַיהוָ֔ה כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃"
+        "WLC": "וְ/אֶת הַ/קֶּ֥רֶב וְ/אֶת הַ/כְּרָעַ֖יִם רָחַ֣ץ בַּ/מָּ֑יִם וַ/יַּקְטֵר֩ מֹשֶׁ֨ה אֶת כָּל הָ/אַ֜יִל הַ/מִּזְבֵּ֗חָ/ה עֹלָ֨ה ה֤וּא לְ/רֵֽיחַ נִיחֹ֨חַ֙ אִשֶּׁ֥ה הוּא֙ לַ/יהוָ֔ה כַּ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "καὶ τὴν κοιλίαν καὶ τούς πόδας ἔπλυνεν ὕδατι, καὶ ἀνήνεγκεν Μωυσῆς ὅλον τὸν κριὸν ἐπὶ τὸ θυσιαστήριον· ὁλοκαύτωμα ὅ ἐστιν εἰς ὀσμὴν εὐωδίας, κάρπωμά ἐστιν τῷ κυρίῳ, καθάπερ ἐνετείλατο Κύριος τῷ Μωυσῇ.",
+        "VUL": "lotis prius intestinis et pedibus : totumque simul arietem incendit super altare, eo quod esset holocaustum suavissimi odoris Domino, sicut præceperat ei.",
+        "SYN": "а внутренности и ноги вымыл водою, и сжег Моисей всего овна на жертвеннике: это всесожжение в приятное благоухание, это жертва Господу, как повелел Господь Моисею.",
+        "NEO": "On lava dans l’eau les entrailles et les jambes, et Moïse fit fumer tout le bélier sur l’autel : c’était un holocauste d’agréable odeur, un sacrifice fait par le feu à \\+w Yahweh|strong=\"H3068\"\\+w**, comme \\+w Yahweh|strong=\"H3068\"\\+w** l’avait ordonné à Moïse.",
+        "NAB": "then, having washed the inner organs and the shanks with water, he also burned these remaining parts of the ram on the altar as a holocaust, a sweet-smelling oblation to the LORD, as the LORD had commanded him to do.",
+        "VAT_ES": "Después de lavar con agua las entrañas y las patas, Moisés hizo que todo el carnero ardiera sobre el altar, como un holocausto de aroma agradable: era una ofrenda que se quema para el Señor, según la orden que el Señor le había dado.",
+        "CEI": "Dopo averne lavato le viscere e le zampe con acqua, bruciò tutto l'ariete sull'altare: olocausto di soave odore, un sacrificio consumato dal fuoco in onore del Signore, come il Signore gli aveva ordinato."
       }
     },
     "22": {
@@ -250,7 +397,14 @@
         "LXX": 22
       },
       "text": {
-        "WLC": "וַיַּקְרֵב֙ אֶת הָאַ֣יִל הַשֵּׁנִ֔י אֵ֖יל הַמִּלֻּאִ֑ים וַֽיִּסְמְכ֞וּ אַהֲרֹ֧ן וּבָנָ֛יו אֶת יְדֵיהֶ֖ם עַל רֹ֥אשׁ הָאָֽיִל׃"
+        "WLC": "וַ/יַּקְרֵב֙ אֶת הָ/אַ֣יִל הַ/שֵּׁנִ֔י אֵ֖יל הַ/מִּלֻּאִ֑ים וַֽ/יִּסְמְכ֞וּ אַהֲרֹ֧ן וּ/בָנָ֛י/ו אֶת יְדֵי/הֶ֖ם עַל רֹ֥אשׁ הָ/אָֽיִל׃",
+        "LXX": "καὶ προσήγαγεν Μωυσῆς τὸν κριὸν τὸν δεύτερον, κριὸν τελειώσεως· καὶ ἐπέθηκεν Ἀαρὼν καὶ οἱ υἱοὶ αὐτοῦ τὰς χεῖρας αὐτῶν ἐπὶ τὴν κεφαλὴν τοῦ κριοῦ.",
+        "VUL": "Obtulit et arietem secundum in consecratione sacerdotum, posueruntque super caput ejus Aaron et filii ejus manus suas :",
+        "SYN": "И привел [Моисей] другого овна, овна посвящения, и возложили Аарон и сыны его руки свои на голову овна;",
+        "NEO": "Il fit approcher l’autre bélier, le bélier d’installation. Aaron et ses fils ayant posé leurs mains sur la tête du bélier,",
+        "NAB": "Then he brought forward the second ram, the ordination ram, and Aaron and his sons laid their hands on its head.",
+        "VAT_ES": "Luego hizo traer el segundo carnero, el carnero del sacrificio de la consagración, Aarón y sus hijos impusieron sus manos sobre la cabeza de la víctima,",
+        "CEI": "Poi fece accostare il secondo ariete, l'ariete della investitura, e Aronne e i suoi figli stesero le mani sulla testa dell'ariete."
       }
     },
     "23": {
@@ -261,7 +415,14 @@
         "LXX": 23
       },
       "text": {
-        "WLC": "וַיִּשְׁחָ֓ט וַיִּקַּ֤ח מֹשֶׁה֙ מִדָּמ֔וֹ וַיִּתֵּ֛ן עַל תְּנ֥וּךְ אֹֽזֶן אַהֲרֹ֖ן הַיְמָנִ֑ית וְעַל בֹּ֤הֶן יָדוֹ֙ הַיְמָנִ֔ית וְעַל בֹּ֥הֶן רַגְל֖וֹ הַיְמָנִֽית׃"
+        "WLC": "וַ/יִּשְׁחָ֓ט וַ/יִּקַּ֤ח מֹשֶׁה֙ מִ/דָּמ֔/וֹ וַ/יִּתֵּ֛ן עַל תְּנ֥וּךְ אֹֽזֶן אַהֲרֹ֖ן הַ/יְמָנִ֑ית וְ/עַל בֹּ֤הֶן יָד/וֹ֙ הַ/יְמָנִ֔ית וְ/עַל בֹּ֥הֶן רַגְל֖/וֹ הַ/יְמָנִֽית׃",
+        "LXX": "καὶ ἔσφαξεν αὐτόν, καὶ ἔλαβεν Μωσῆς ἀπὸ τοῦ αἵματος αὐτοῦ καὶ ἐπέθηκεν ἐπὶ τὸν λοβὸν τοῦ ὠτὸς Ἀαρὼν τοῦ δεξιοῦ καὶ ἐπὶ τὸ ἄκρον τῆς χειρὸς τῆς δεξιᾶς καὶ ἐπὶ τὸ ἄκρον τοῦ ποδὸς τοῦ δεξιοῦ.",
+        "VUL": "quem cum immolasset Moyses, sumens de sanguine ejus, tetigit extremum auriculæ dextræ Aaron, et pollicem manus ejus dextræ, similiter et pedis.",
+        "SYN": "и заколол _его_ Моисей, и взял крови его, и возложил на край правого уха Ааронова и на большой палец правой руки его и на большой палец правой ноги его.",
+        "NEO": "Moïse égorgea le bélier, prit de son sang, et en mit sur le lobe de l’oreille droite d’Aaron, sur le pouce de sa main droite et sur le gros orteil de son pied droit.",
+        "NAB": "When he had slaughtered it, Moses took some of its blood and put it on the tip of Aaron's right ear, on the thumb of his right hand, and on the big toe of his right foot.",
+        "VAT_ES": "y Moisés la inmoló. Después tomó un poco de sangre y mojó con ella el lóbulo de la oreja derecha y el pulgar de su pie derecho.",
+        "CEI": "Mosè lo immolò, ne prese del sangue e bagnò il lobo dell'orecchio destro di Aronne e il pollice della mano destra e l'alluce del piede destro."
       }
     },
     "24": {
@@ -272,7 +433,14 @@
         "LXX": 24
       },
       "text": {
-        "WLC": "וַיַּקְרֵ֞ב אֶת בְּנֵ֣י אַהֲרֹ֗ן וַיִּתֵּ֨ן מֹשֶׁ֤ה מִן הַדָּם֙ עַל תְּנ֤וּךְ אָזְנָם֙ הַיְמָנִ֔ית וְעַל בֹּ֤הֶן יָדָם֙ הַיְמָנִ֔ית וְעַל בֹּ֥הֶן רַגְלָ֖ם הַיְמָנִ֑ית וַיִּזְרֹ֨ק מֹשֶׁ֧ה אֶת הַדָּ֛ם עַל הַֽמִּזְבֵּ֖חַ סָבִֽיב׃"
+        "WLC": "וַ/יַּקְרֵ֞ב אֶת בְּנֵ֣י אַהֲרֹ֗ן וַ/יִּתֵּ֨ן מֹשֶׁ֤ה מִן הַ/דָּם֙ עַל תְּנ֤וּךְ אָזְנָ/ם֙ הַ/יְמָנִ֔ית וְ/עַל בֹּ֤הֶן יָדָ/ם֙ הַ/יְמָנִ֔ית וְ/עַל בֹּ֥הֶן רַגְלָ֖/ם הַ/יְמָנִ֑ית וַ/יִּזְרֹ֨ק מֹשֶׁ֧ה אֶת הַ/דָּ֛ם עַל הַֽ/מִּזְבֵּ֖חַ סָבִֽיב׃",
+        "LXX": "καὶ προσήγαγεν Μωυσῆς τοὺς υἱοὺς Ἀαρών· καὶ ἐπέθηκεν Μωυσῆς ἀπὸ τοῦ αἵματος ἐπὶ τοὺς λοβοὺς τῶν ὤτων τῶν δεξιῶν καὶ ἐπὶ τὰ ἄκρα τῶν χειρῶν αὐτῶν τῶν δεξιῶν καὶ ἐπὶ τὰ ἄκρα τῶν ποδῶν αὐτῶν τῶν δεξιῶν· καὶ προσέχεεν Μωσῆς τὸ αἷμα ἐπὶ τὸ θυσιαστήριον κύκλῳ.",
+        "VUL": "Obtulit et filios Aaron : cumque de sanguine arietis immolati tetigisset extremum auriculæ singulorum dextræ, et pollices manus ac pedis dextri, reliquum fudit super altare per circuitum :",
+        "SYN": "И привел Моисей сынов Аароновых, и возложил крови на край правого уха их и на большой палец правой руки их и на большой палец правой ноги их, и покропил Моисей кровью на жертвенник со всех сторон.",
+        "NEO": "Il fit approcher les fils d’Aaron, mit du sang sur le lobe de leur oreille droite, sur le pouce de leur main droite et sur le gros orteil de leur pied droit ; puis il répandit le reste du sang sur l’autel tout autour.",
+        "NAB": "Moses had the sons of Aaron also come forward, and he put some of the blood on the tips of their right ears, on the thumbs of their right hands, and on the big toes of their right feet. The rest of the blood he splashed on the sides of the altar.",
+        "VAT_ES": "Luego mandó que se acercaran los hijos de Aarón, les mojó con un poco de sangre el lóbulo de la oreja derecha, el pulgar de la mano derecha y el pulgar de su pie derecho, y roció con la sangre todos los costados del altar.",
+        "CEI": "Poi Mosè fece avvicinare i figli di Aronne e bagnò con quel sangue il lobo del loro orecchio destro, il pollice della mano destra e l'alluce del piede destro; sparse il resto del sangue attorno all'altare."
       }
     },
     "25": {
@@ -283,7 +451,14 @@
         "LXX": 25
       },
       "text": {
-        "WLC": "וַיִּקַּ֞ח אֶת הַחֵ֣לֶב וְאֶת הָֽאַלְיָ֗ה וְאֶֽת כָּל הַחֵלֶב֮ אֲשֶׁ֣ר עַל הַקֶּרֶב֒ וְאֵת֙ יֹתֶ֣רֶת הַכָּבֵ֔ד וְאֶת שְׁתֵּ֥י הַכְּלָיֹ֖ת וְאֶֽת חֶלְבְּהֶ֑ן וְאֵ֖ת שׁ֥וֹק הַיָּמִֽין׃"
+        "WLC": "וַ/יִּקַּ֞ח אֶת הַ/חֵ֣לֶב וְ/אֶת הָֽ/אַלְיָ֗ה וְ/אֶֽת כָּל הַ/חֵלֶב֮ אֲשֶׁ֣ר עַל הַ/קֶּרֶב֒ וְ/אֵת֙ יֹתֶ֣רֶת הַ/כָּבֵ֔ד וְ/אֶת שְׁתֵּ֥י הַ/כְּלָיֹ֖ת וְ/אֶֽת חֶלְבְּ/הֶ֑ן וְ/אֵ֖ת שׁ֥וֹק הַ/יָּמִֽין׃",
+        "LXX": "καὶ ἔλαβεν τὸ στέαρ καὶ τὴν ὀσφὺν καὶ τὸ στέαρ τὸ ἐπὶ τῆς κοιλίας καὶ τὸν λοβὸν τοῦ ἥπατος καὶ τοὺς δύο νεφροὺς καὶ τὸ στέαρ τὸ ἐπ’ αὐτῶν καὶ τὸν βραχίονα τὸν δεξιόν·",
+        "VUL": "adipem vero, et caudam, omnemque pinguedinem quæ operit intestina, reticulumque jecoris, et duos renes cum adipibus suis et armo dextro separavit.",
+        "SYN": "И взял [Моисей] тук и курдюк и весь тук, который на внутренностях, и сальник на печени, и обе почки и тук их и правое плечо;",
+        "NEO": "Il prit ensuite la graisse, la queue, toute la graisse qui couvre les entrailles, la taie du foie, les deux rognons avec leur graisse, et la cuisse droite ;",
+        "NAB": "He then took the fat: the fatty tail and all the fat over the inner organs, the lobe of the liver and the two kidneys with their fat, and likewise the right leg;",
+        "VAT_ES": "En seguida tomó toda la grasa –la cola, la grasa que recubre las entrañas, la protuberancia del hígado y los dos riñones con su grasa– y la pata derecha.",
+        "CEI": "Poi prese il grasso, la coda, tutto il grasso aderente alle viscere, il lobo del fegato, i reni con il loro grasso e la coscia destra;"
       }
     },
     "26": {
@@ -294,7 +469,14 @@
         "LXX": 26
       },
       "text": {
-        "WLC": "וּמִסַּ֨ל הַמַּצּ֜וֹת אֲשֶׁ֣ר לִפְנֵ֣י יְהוָ֗ה לָ֠קַח חַלַּ֨ת מַצָּ֤ה אַחַת֙ וְֽחַלַּ֨ת לֶ֥חֶם שֶׁ֛מֶן אַחַ֖ת וְרָקִ֣יק אֶחָ֑ד וַיָּ֨שֶׂם֙ עַל הַ֣חֲלָבִ֔ים וְעַ֖ל שׁ֥וֹק הַיָּמִֽין׃"
+        "WLC": "וּ/מִ/סַּ֨ל הַ/מַּצּ֜וֹת אֲשֶׁ֣ר לִ/פְנֵ֣י יְהוָ֗ה לָ֠קַח חַלַּ֨ת מַצָּ֤ה אַחַת֙ וְֽ/חַלַּ֨ת לֶ֥חֶם שֶׁ֛מֶן אַחַ֖ת וְ/רָקִ֣יק אֶחָ֑ד וַ/יָּ֨שֶׂם֙ עַל הַ֣/חֲלָבִ֔ים וְ/עַ֖ל שׁ֥וֹק הַ/יָּמִֽין׃",
+        "LXX": "καὶ ἀπὸ τοῦ κανοῦ τῆς τελειώσεως τοῦ ὄντος ἔναντι Κυρίου ἔλαβεν ἄρτον ἕνα ἄζυμον καὶ ἄρτον ἐξ ἐλαίου ἕνα καὶ λάγανον ἕν, καὶ ἐπέθηκεν ἐπὶ τὸ στέαρ καὶ ἐπέθηκεν τὸν βραχίονα τὸν δεξιόν·",
+        "VUL": "Tollens autem de canistro azymorum, quod erat coram Domino, panem absque fermento, et collyridam conspersam oleo, laganumque, posuit super adipes, et armum dextrum,",
+        "SYN": "и из корзины с опресноками, которая пред Господом, взял один опреснок и один хлеб с елеем и одну лепешку, и возложил на тук и на правое плечо;",
+        "NEO": "il prit aussi, de la corbeille de pains sans levain placée devant \\+w Yahweh|strong=\"H3068\"\\+w**, un gâteau sans levain, un gâteau de pain pétri à l’huile et une galette, et il les posa sur les graisses et sur la cuisse droite ;",
+        "NAB": "from the basket of unleavened food that was set before the LORD he took one unleavened cake, one loaf of bread made with oil, and one wafer; these he placed on top of the portions of fat and the right leg.",
+        "VAT_ES": "Sacó de la canasta de los panes ácimos que estaban delante del Señor un pan sin levadura, una torta sin levadura amasada con aceite y una galleta, y las depositó sobre las partes grasosas y sobre la pata derecha.",
+        "CEI": "dal canestro dei pani azzimi, che era davanti al Signore, prese una focaccia senza lievito, una focaccia di pasta intrisa nell'olio e una schiacciata e le pose sulle parti grasse e sulla coscia destra."
       }
     },
     "27": {
@@ -305,7 +487,14 @@
         "LXX": 27
       },
       "text": {
-        "WLC": "וַיִּתֵּ֣ן אֶת הַכֹּ֔ל עַ֚ל כַּפֵּ֣י אַהֲרֹ֔ן וְעַ֖ל כַּפֵּ֣י בָנָ֑יו וַיָּ֧נֶף אֹתָ֛ם תְּנוּפָ֖ה לִפְנֵ֥י יְהוָֽה׃"
+        "WLC": "וַ/יִּתֵּ֣ן אֶת הַ/כֹּ֔ל עַ֚ל כַּפֵּ֣י אַהֲרֹ֔ן וְ/עַ֖ל כַּפֵּ֣י בָנָ֑י/ו וַ/יָּ֧נֶף אֹתָ֛/ם תְּנוּפָ֖ה לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἐπέθηκεν ἅπαντα ἐπὶ τὰς χεῖρας Ἀαρὼν καὶ ἐπὶ τὰς χεῖρας τῶν υἱῶν αὐτοῦ, καὶ ἀνήνεγκεν αὐτὰ ἀφαίρεμα ἔναντι Κυρίου.",
+        "VUL": "tradens simul omnia Aaron et filiis ejus. Qui postquam levaverunt ea coram Domino,",
+        "SYN": "и положил все это на руки Аарону и на руки сынам его, и принес это, потрясая пред лицем Господним;",
+        "NEO": "et ayant mis toutes ces choses sur les mains d’Aaron et sur les mains de ses fils, il les balança en offrande devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "He then put all these things into the hands of Aaron and his sons, whom he had wave them as a wave offering before the LORD.",
+        "VAT_ES": "Luego entregó todo eso a Aarón y a sus hijos, e hizo el gesto de presentación delante del Señor.",
+        "CEI": "Poi mise tutte queste cose sulle mani di Aronne e sulle mani dei suoi figli e le agitò con l'agitazione rituale davanti al Signore."
       }
     },
     "28": {
@@ -316,7 +505,14 @@
         "LXX": 28
       },
       "text": {
-        "WLC": "וַיִּקַּ֨ח מֹשֶׁ֤ה אֹתָם֙ מֵעַ֣ל כַּפֵּיהֶ֔ם וַיַּקְטֵ֥ר הַמִּזְבֵּ֖חָה עַל הָעֹלָ֑ה מִלֻּאִ֥ים הֵם֙ לְרֵ֣יחַ נִיחֹ֔חַ אִשֶּׁ֥ה ה֖וּא לַיהוָֽה׃"
+        "WLC": "וַ/יִּקַּ֨ח מֹשֶׁ֤ה אֹתָ/ם֙ מֵ/עַ֣ל כַּפֵּי/הֶ֔ם וַ/יַּקְטֵ֥ר הַ/מִּזְבֵּ֖חָ/ה עַל הָ/עֹלָ֑ה מִלֻּאִ֥ים הֵם֙ לְ/רֵ֣יחַ נִיחֹ֔חַ אִשֶּׁ֥ה ה֖וּא לַ/יהוָֽה׃",
+        "LXX": "καὶ ἔλαβεν Μωσῆς ἀπὸ τῶν χειρῶν αὐτῶν, καὶ ἀνήνεγκεν αὐτὰ Μωσῆς ἐπὶ τὸ θυσιαστήριον, ἐπὶ τὸ ὁλοκαύτωμα τῆς τελειώσεως, ὅ ἐστιν ὀσμὴ εὐωδίας· κάρπωμά ἐστιν τῷ κυρίῳ.",
+        "VUL": "rursum suscepta de manibus eorum, adolevit super altare holocausti, eo quod consecrationis esset oblatio, in odorem suavitatis, sacrificii Domino.",
+        "SYN": "и взял это Моисей с рук их и сжег на жертвеннике со всесожжением: это жертва посвящения в приятное благоухание, это жертва Господу.",
+        "NEO": "Puis Moïse les ôta de dessus leurs mains, et les fit fumer sur l’autel, par-dessus l’holocauste ; car c’était un sacrifice d’installation, d’agréable odeur, sacrifice fait par le feu à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "When he had received them back, Moses burned them with the holocaust on the altar as the ordination offering, a sweet-smelling oblation to the LORD.",
+        "VAT_ES": "Volvió a tomarlo, y lo hizo arder sobre el altar junto con el holocausto: era un sacrificio de la consagración, un sacrificio de aroma agradable, una ofrenda que se quema para el Señor.",
+        "CEI": "Mosè quindi le prese dalle loro mani e le bruciò sull'altare sopra l'olocausto: sacrificio di investitura, di soave odore, sacrificio consumato dal fuoco in onore del Signore."
       }
     },
     "29": {
@@ -327,7 +523,14 @@
         "LXX": 29
       },
       "text": {
-        "WLC": "וַיִּקַּ֤ח מֹשֶׁה֙ אֶת הֶ֣חָזֶ֔ה וַיְנִיפֵ֥הוּ תְנוּפָ֖ה לִפְנֵ֣י יְהוָ֑ה מֵאֵ֣יל הַמִּלֻּאִ֗ים לְמֹשֶׁ֤ה הָיָה֙ לְמָנָ֔ה כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃"
+        "WLC": "וַ/יִּקַּ֤ח מֹשֶׁה֙ אֶת הֶ֣/חָזֶ֔ה וַ/יְנִיפֵ֥/הוּ תְנוּפָ֖ה לִ/פְנֵ֣י יְהוָ֑ה מֵ/אֵ֣יל הַ/מִּלֻּאִ֗ים לְ/מֹשֶׁ֤ה הָיָה֙ לְ/מָנָ֔ה כַּ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "καὶ λαβὼν Μωσῆς τὸ στηθύνιον, ἀφεῖλεν αὐτὸ ἐπίθεμα ἔναντι Κυρίου ἀπὸ τοῦ κριοῦ τῆς τελειώσεως· καὶ ἐγένετο Μωσῇ ἐν μερίδι, καθὰ ἐνετείλατο Κύριος τῷ Μωσῇ.",
+        "VUL": "Tulitque pectusculum, elevans illud coram Domino, de ariete consecrationis in partem suam, sicut præceperat ei Dominus.",
+        "SYN": "И взял Моисей грудь и принес ее, потрясая пред лицем Господним: это была доля Моисеева от овна посвящения, как повелел Господь Моисею.",
+        "NEO": "Moïse prit la poitrine du bélier d’installation et la balança en offrande devant \\+w Yahweh|strong=\"H3068\"\\+w** : ce fut la portion de Moïse, comme \\+w Yahweh|strong=\"H3068\"\\+w** l’avait ordonné à Moïse.",
+        "NAB": "He then took the breast and waved it as a wave offering before the LORD; this was Moses' own portion of the ordination ram. All this was in keeping with the LORD'S command to Moses.",
+        "VAT_ES": "Luego Moisés tomó el pecho de la víctima e hizo con él el gesto de presentación delante del Señor: esta era la parte del carnero de la consagración, que correspondía a Moisés, según la orden impartida por el Señor.",
+        "CEI": "Poi Mosè prese il petto dell'ariete e lo agitò come offerta da agitare ritualmente davanti al Signore; questa fu la parte dell'ariete dell'investitura toccata a Mosè, come il Signore gli aveva ordinato."
       }
     },
     "30": {
@@ -338,7 +541,14 @@
         "LXX": 30
       },
       "text": {
-        "WLC": "וַיִּקַּ֨ח מֹשֶׁ֜ה מִשֶּׁ֣מֶן הַמִּשְׁחָ֗ה וּמִן הַדָּם֮ אֲשֶׁ֣ר עַל הַמִּזְבֵּחַ֒ וַיַּ֤ז עַֽל אַהֲרֹן֙ עַל בְּגָדָ֔יו וְעַל בָּנָ֛יו וְעַל בִּגְדֵ֥י בָנָ֖יו אִתּ֑וֹ וַיְקַדֵּ֤שׁ אֶֽת אַהֲרֹן֙ אֶת בְּגָדָ֔יו וְאֶת בָּנָ֛יו וְאֶת בִּגְדֵ֥י בָנָ֖יו אִתּֽוֹ׃"
+        "WLC": "וַ/יִּקַּ֨ח מֹשֶׁ֜ה מִ/שֶּׁ֣מֶן הַ/מִּשְׁחָ֗ה וּ/מִן הַ/דָּם֮ אֲשֶׁ֣ר עַל הַ/מִּזְבֵּחַ֒ וַ/יַּ֤ז עַֽל אַהֲרֹן֙ עַל בְּגָדָ֔י/ו וְ/עַל בָּנָ֛י/ו וְ/עַל בִּגְדֵ֥י בָנָ֖י/ו אִתּ֑/וֹ וַ/יְקַדֵּ֤שׁ אֶֽת אַהֲרֹן֙ אֶת בְּגָדָ֔י/ו וְ/אֶת בָּנָ֛י/ו וְ/אֶת בִּגְדֵ֥י בָנָ֖י/ו אִתּֽ/וֹ׃",
+        "LXX": "καὶ ἔλαβεν Μωσῆς ἀπὸ τοῦ ἐλαίου τῆς χρίσεως καὶ ἀπὸ τοῦ αἵματος τοῦ ἐπὶ τοῦ θυσιαστηρίου, καὶ προσέρανεν ἐπὶ Ἀαρὼν καὶ τὰς στολὰς αὐτοῦ καὶ τοὺς υἱοὺς αὐτοῦ καὶ τὰς στολὰς τῶν υἱῶν αὐτοῦ μετ’ αὐτοῦ.",
+        "VUL": "Assumensque unguentum, et sanguinem qui erat in altari, aspersit super Aaron et vestimenta ejus, et super filios illius ac vestes eorum.",
+        "SYN": "И взял Моисей елея помазания и крови, которая на жертвеннике, и покропил Аарона и одежды его, и сынов его и одежды сынов его с ним; и так освятил Аарона и одежды его, и сынов его и одежды сынов его с ним.",
+        "NEO": "Moïse prit de l’huile d’onction et du sang qui était sur l’autel ; il en fit l’aspersion sur Aaron et sur ses vêtements, sur les fils d’Aaron et sur leurs vêtements, et il consacra ainsi Aaron et ses vêtements, ses fils et leurs vêtements avec lui.",
+        "NAB": "Taking some of the anointing oil and some of the blood that was on the altar, Moses sprinkled with it Aaron and his vestments, as well as his sons and their vestments, thus consecrating both Aaron and his vestments and his sons and their vestments.",
+        "VAT_ES": "Moisés tomó en seguida el óleo de la unción y la sangre que estaba sobre el altar, e hizo una aspersión sobre Aarón, sobre sus hijos y sus vestiduras. De esta manera consagró a Aarón, a sus hijos, y también sus vestiduras.",
+        "CEI": "Mosè prese quindi l'olio dell'unzione e il sangue che era sopra l'altare; ne asperse Aronne e le sue vesti, i figli di lui e le loro vesti; così consacrò Aronne e le sue vesti e similmente i suoi figli e le loro vesti."
       }
     },
     "31": {
@@ -349,7 +559,14 @@
         "LXX": 31
       },
       "text": {
-        "WLC": "וַיֹּ֨אמֶר מֹשֶׁ֜ה אֶל אַהֲרֹ֣ן וְאֶל בָּנָ֗יו בַּשְּׁל֣וּ אֶת הַבָּשָׂר֮ פֶּ֣תַח אֹ֣הֶל מוֹעֵד֒ וְשָׁם֙ תֹּאכְל֣וּ אֹת֔וֹ וְאֶ֨ת הַלֶּ֔חֶם אֲשֶׁ֖ר בְּסַ֣ל הַמִּלֻּאִ֑ים כַּאֲשֶׁ֤ר צִוֵּ֨יתִי֙ לֵאמֹ֔ר אַהֲרֹ֥ן וּבָנָ֖יו יֹאכְלֻֽהוּ׃"
+        "WLC": "וַ/יֹּ֨אמֶר מֹשֶׁ֜ה אֶל אַהֲרֹ֣ן וְ/אֶל בָּנָ֗י/ו בַּשְּׁל֣וּ אֶת הַ/בָּשָׂר֮ פֶּ֣תַח אֹ֣הֶל מוֹעֵד֒ וְ/שָׁם֙ תֹּאכְל֣וּ אֹת֔/וֹ וְ/אֶ֨ת הַ/לֶּ֔חֶם אֲשֶׁ֖ר בְּ/סַ֣ל הַ/מִּלֻּאִ֑ים כַּ/אֲשֶׁ֤ר צִוֵּ֨יתִי֙ לֵ/אמֹ֔ר אַהֲרֹ֥ן וּ/בָנָ֖י/ו יֹאכְלֻֽ/הוּ׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς πρὸς Ἀαρὼν καὶ τοὺς υἱοὺς αὐτοῦ Ἑψήσατε τὰ κρέα ἐν τῇ αὐλῇ τῆς σκηνῆς τοῦ μαρτυρίου ἐν τόπῳ ἁγίῳ, καὶ ἐκεῖ φάγεσθε αὐτὰ καὶ τοὺς ἄρτους ἐν τῷ κανῷ τῆς τελειώσεως, ὃν τρόπον συντέτακταί μοι λέγων Ἀαρὼν καὶ οἱ υἱοὶ αὐτοῦ φάγονται ταῦτα·",
+        "VUL": "Cumque sanctificasset eos in vestitu suo, præcepit eis, dicens : Coquite carnes ante fores tabernaculi, et ibi comedite eas ; panes quoque consecrationis edite, qui positi sunt in canistro, sicut præcepit mihi Dominus, dicens : Aaron et filii ejus comedent eos :",
+        "SYN": "И сказал Моисей Аарону и сынам его: сварите мясо у входа скинии собрания и там ешьте его с хлебом, который в корзине посвящения, как мне повелено и сказано: Аарон и сыны его должны есть его;",
+        "NEO": "Moïse dit à Aaron et à ses fils : « Faites cuire la chair à l’entrée de la tente de réunion ; c’est là que vous la mangerez, avec le pain qui est dans la corbeille d’installation, comme je l’ai ordonné en disant : Aaron et ses fils la mangeront.",
+        "NAB": "Finally, Moses said to Aaron and his sons, \"Boil the flesh at the entrance of the meeting tent, and there eat it with the bread that is in the basket of the ordination offering, in keeping with the command I have received: 'Aaron and his sons shall eat of it.'",
+        "VAT_ES": "Entonces Moisés dijo a Aarón y a sus hijos: «Hagan cocer la carne a la entrada de la Carpa del Encuentro, y cómanla allí mismo, con el pan que está en la canasta del sacrificio de la consagración, conforme a la orden que recibí: «Aarón y sus hijos comerán esto».",
+        "CEI": "Poi Mosè disse ad Aronne e ai suoi figli: \"Fate cuocere la carne all'ingresso della tenda del convegno e là mangiatela con il pane che è nel canestro dell'investitura, come mi è stato ordinato. La mangeranno Aronne e i suoi figli."
       }
     },
     "32": {
@@ -360,7 +577,14 @@
         "LXX": 32
       },
       "text": {
-        "WLC": "וְהַנּוֹתָ֥ר בַּבָּשָׂ֖ר וּבַלָּ֑חֶם בָּאֵ֖שׁ תִּשְׂרֹֽפוּ׃"
+        "WLC": "וְ/הַ/נּוֹתָ֥ר בַּ/בָּשָׂ֖ר וּ/בַ/לָּ֑חֶם בָּ/אֵ֖שׁ תִּשְׂרֹֽפוּ׃",
+        "LXX": "καὶ τὸ καταλειφθὲν τῶν κρεῶν καὶ τῶν ἄρτων ἐν πυρὶ κατακαυθήσεται.",
+        "VUL": "quidquid autem reliquum fuerit de carne et panibus, ignis absumet.",
+        "SYN": "а остатки мяса и хлеба сожгите на огне.",
+        "NEO": "Et ce qui restera de la chair et du pain, vous le brûlerez dans le feu.",
+        "NAB": "What is left over of the flesh and the bread you shall burn up in the fire.",
+        "VAT_ES": "Lo que sobre de la carne y del pan, lo quemarán.",
+        "CEI": "Quel che avanza della carne e del pane, bruciatelo nel fuoco."
       }
     },
     "33": {
@@ -371,7 +595,14 @@
         "LXX": 33
       },
       "text": {
-        "WLC": "וּמִפֶּתַח֩ אֹ֨הֶל מוֹעֵ֜ד לֹ֤א תֵֽצְאוּ֙ שִׁבְעַ֣ת יָמִ֔ים עַ֚ד י֣וֹם מְלֹ֔את יְמֵ֖י מִלֻּאֵיכֶ֑ם כִּ֚י שִׁבְעַ֣ת יָמִ֔ים יְמַלֵּ֖א אֶת יֶדְכֶֽם׃"
+        "WLC": "וּ/מִ/פֶּתַח֩ אֹ֨הֶל מוֹעֵ֜ד לֹ֤א תֵֽצְאוּ֙ שִׁבְעַ֣ת יָמִ֔ים עַ֚ד י֣וֹם מְלֹ֔את יְמֵ֖י מִלֻּאֵי/כֶ֑ם כִּ֚י שִׁבְעַ֣ת יָמִ֔ים יְמַלֵּ֖א אֶת יֶדְ/כֶֽם׃",
+        "LXX": "καὶ ἀπὸ τῆς θύρας τῆς σκηνῆς τοῦ μαρτυρίου οὐκ ἐξελεύσεσθε ἑπτὰ ἡμέρας, ἕως ἡμέρα πληρωθῇ τελειώσεως ὑμῶν· ἑπτὰ γὰρ ἡμέρας τελειώσει τὰς χεῖρας ὑμῶν,",
+        "VUL": "De ostio quoque tabernaculi non exibitis septem diebus, usque ad diem quo complebitur tempus consecrationis vestræ ; septem enim diebus finitur consecratio :",
+        "SYN": "Семь дней не отходите от дверей скинии собрания, пока не исполнятся дни посвящения вашего, ибо семь дней должно совершаться посвящение ваше;",
+        "NEO": "Pendant sept jours vous ne sortirez pas de l’entrée de la tente de réunion, jusqu’à ce que soient accomplis les jours de votre installation ; car votre installation durera sept jours.",
+        "NAB": "Moreover, you are not to depart from the entrance of the meeting tent for seven days, until the days of your ordination are completed; for your ordination is to last for seven days.",
+        "VAT_ES": "Durante siete días no abandonarán la entrada de la Carpa del Encuentro, o sea, hasta que termine el período de la consagración, porque la consagración de ustedes durará siete días.",
+        "CEI": "Per sette giorni non uscirete dall'ingresso della tenda del convegno, finché cioè non siano compiuti i giorni della vostra investitura, perché la vostra investitura durerà sette giorni."
       }
     },
     "34": {
@@ -382,7 +613,14 @@
         "LXX": 34
       },
       "text": {
-        "WLC": "כַּאֲשֶׁ֥ר עָשָׂ֖ה בַּיּ֣וֹם הַזֶּ֑ה צִוָּ֧ה יְהוָ֛ה לַעֲשֹׂ֖ת לְכַפֵּ֥ר עֲלֵיכֶֽם׃"
+        "WLC": "כַּ/אֲשֶׁ֥ר עָשָׂ֖ה בַּ/יּ֣וֹם הַ/זֶּ֑ה צִוָּ֧ה יְהוָ֛ה לַ/עֲשֹׂ֖ת לְ/כַפֵּ֥ר עֲלֵי/כֶֽם׃",
+        "LXX": "καθάπερ ἐποίησεν ἐν τῇ ἡμέρᾳ ταύτῃ ᾗ ἐνετείλατο Κύριος τοῦ ποιῆσαι ὥστε ἐξιλάσασθαι περὶ ὑμῶν.",
+        "VUL": "sicut et impræsentiarum factum est, ut ritus sacrificii compleretur.",
+        "SYN": "как сегодня было сделано, так повелел Господь делать для очищения вас;",
+        "NEO": "Ce qui s’est fait aujourd’hui, \\+w Yahweh|strong=\"H3068\"\\+w** a ordonné de le faire durant sept jours afin de faire l’expiation pour vous.",
+        "NAB": "The LORD has commanded that what has been done today be done to make atonement for you.",
+        "VAT_ES": "El Señor ordenó que durante ese tiempo se hiciera lo mismo que se hizo hoy, para practicar el rito de expiación en favor de ustedes.",
+        "CEI": "Come si è fatto oggi così il Signore ha ordinato che si faccia per compiere il rito espiatorio su di voi."
       }
     },
     "35": {
@@ -393,7 +631,14 @@
         "LXX": 35
       },
       "text": {
-        "WLC": "וּפֶתַח֩ אֹ֨הֶל מוֹעֵ֜ד תֵּשְׁב֨וּ יוֹמָ֤ם וָלַ֨יְלָה֙ שִׁבְעַ֣ת יָמִ֔ים וּשְׁמַרְתֶּ֛ם אֶת מִשְׁמֶ֥רֶת יְהוָ֖ה וְלֹ֣א תָמ֑וּתוּ כִּי כֵ֖ן צֻוֵּֽיתִי׃"
+        "WLC": "וּ/פֶתַח֩ אֹ֨הֶל מוֹעֵ֜ד תֵּשְׁב֨וּ יוֹמָ֤ם וָ/לַ֨יְלָה֙ שִׁבְעַ֣ת יָמִ֔ים וּ/שְׁמַרְתֶּ֛ם אֶת מִשְׁמֶ֥רֶת יְהוָ֖ה וְ/לֹ֣א תָמ֑וּתוּ כִּי כֵ֖ן צֻוֵּֽיתִי׃",
+        "LXX": "καὶ ἐπὶ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου καθήσεσθε ἑπτὰ ἡμέρας, ἡμέραν καὶ νύκτα· φυλάξεσθε τὰ φυλάγματα Κυρίου, ἵνα μὴ ἀποθάνητε· οὕτως γὰρ ἐνετείλατό μοι Κύριος ὁ θεός.",
+        "VUL": "Die ac nocte manebitis in tabernaculo observantes custodias Domini, ne moriamini : sic enim mihi præceptum est.",
+        "SYN": "у входа скинии собрания будьте день и ночь в продолжение семи дней и будьте на страже у Господа, чтобы не умереть, ибо так мне повелено [от Господа Бога].",
+        "NEO": "Vous resterez sept jours, jour et nuit, à l’entrée de la tente de réunion, et vous observerez les ordres de \\+w Yahweh|strong=\"H3068\"\\+w**, afin que vous ne mouriez pas ; car c’est là ce qui m’a été ordonné. »",
+        "NAB": "Hence you must remain at the entrance of the meeting tent day and night for seven days, carrying out the prescriptions of the LORD; otherwise, you shall die; for this is the command I have received.\"",
+        "VAT_ES": "Durante ese tiempo, permanecerán día y noche junto a la entrada de la Carpa del Encuentro, cumpliendo lo que el Señor ha establecido, y así no morirán, porque esta es la orden que yo recibí».",
+        "CEI": "Rimarrete sette giorni all'ingresso della tenda del convegno, giorno e notte, osservando il comandamento del Signore, perché non moriate, poiché così mi è stato ordinato\"."
       }
     },
     "36": {
@@ -404,7 +649,14 @@
         "LXX": 36
       },
       "text": {
-        "WLC": "וַיַּ֥עַשׂ אַהֲרֹ֖ן וּבָנָ֑יו אֵ֚ת כָּל הַדְּבָרִ֔ים אֲשֶׁר צִוָּ֥ה יְהוָ֖ה בְּיַד מֹשֶֽׁה׃"
+        "WLC": "וַ/יַּ֥עַשׂ אַהֲרֹ֖ן וּ/בָנָ֑י/ו אֵ֚ת כָּל הַ/דְּבָרִ֔ים אֲשֶׁר צִוָּ֥ה יְהוָ֖ה בְּ/יַד מֹשֶֽׁה׃",
+        "LXX": "καὶ ἐποίησεν Ἀαρὼν καὶ οἱ υἱοὶ αὐτοῦ πάντας τοὺς λόγους οὓς συνέταξεν Κύριος τῷ Μωσῇ.",
+        "VUL": "Feceruntque Aaron et filii ejus cuncta quæ locutus est Dominus per manum Moysi.",
+        "SYN": "И исполнил Аарон и сыны его все, что повелел Господь чрез Моисея.",
+        "NEO": "Aaron et ses fils firent toutes les choses que \\+w Yahweh|strong=\"H3068\"\\+w** avait commandées par Moïse.",
+        "NAB": "So Aaron and his sons did all that the LORD had commanded through Moses.",
+        "VAT_ES": "Aarón y sus hijos hicieron todo lo que el Señor había mandado por medio de Moisés.",
+        "CEI": "Aronne e i suoi figli fecero quanto era stato ordinato dal Signore per mezzo di Mosè."
       }
     }
   }

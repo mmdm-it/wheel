@@ -19,7 +19,14 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "וַיְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּאמֹֽר׃"
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ εἶπεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutus est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse ancora a Mosè:"
       }
     },
     "2": {
@@ -30,7 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "דַּבֵּר֙ אֶל בְּנֵ֣י יִשְׂרָאֵ֔ל וְאָמַרְתָּ֖ אֲלֵהֶ֑ם אֲנִ֖י יְהוָ֥ה אֱלֹהֵיכֶֽם׃"
+        "WLC": "דַּבֵּר֙ אֶל בְּנֵ֣י יִשְׂרָאֵ֔ל וְ/אָמַרְתָּ֖ אֲלֵ/הֶ֑ם אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "Λάλησον τοῖς υἱοῖς Ἰσραὴλ καὶ ἐρεῖς πρὸς αὐτούς Ἐγὼ Κύριος ὁ θεὸς ὑμῶν·",
+        "VUL": "Loquere filiis Israël, et dices ad eos : Ego Dominus Deus vester :",
+        "SYN": "объяви сынам Израилевым и скажи им: Я Господь, Бог ваш.",
+        "NEO": "« Parle aux enfants d’Israël, et dis-leur :",
+        "NAB": "\"Speak to the Israelites and tell them: I, the LORD, am your God.",
+        "VAT_ES": "Habla a los israelitas en estos términos: Yo soy el Señor, su Dios.",
+        "CEI": "\"Parla agli Israeliti e riferisci loro. Io sono il Signore, vostro Dio."
       }
     },
     "3": {
@@ -41,7 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "כְּמַעֲשֵׂ֧ה אֶֽרֶץ מִצְרַ֛יִם אֲשֶׁ֥ר יְשַׁבְתֶּם בָּ֖הּ לֹ֣א תַעֲשׂ֑וּ וּכְמַעֲשֵׂ֣ה אֶֽרֶץ כְּנַ֡עַן אֲשֶׁ֣ר אֲנִי֩ מֵבִ֨יא אֶתְכֶ֥ם שָׁ֨מָּה֙ לֹ֣א תַעֲשׂ֔וּ וּבְחֻקֹּתֵיהֶ֖ם לֹ֥א תֵלֵֽכוּ׃"
+        "WLC": "כְּ/מַעֲשֵׂ֧ה אֶֽרֶץ מִצְרַ֛יִם אֲשֶׁ֥ר יְשַׁבְתֶּם בָּ֖/הּ לֹ֣א תַעֲשׂ֑וּ וּ/כְ/מַעֲשֵׂ֣ה אֶֽרֶץ כְּנַ֡עַן אֲשֶׁ֣ר אֲנִי֩ מֵבִ֨יא אֶתְ/כֶ֥ם שָׁ֨מָּ/ה֙ לֹ֣א תַעֲשׂ֔וּ וּ/בְ/חֻקֹּתֵי/הֶ֖ם לֹ֥א תֵלֵֽכוּ׃",
+        "LXX": "κατὰ τὰ ἐπιτηδεύματα γῆς Αἰγύπτου, ἐν ᾗ κατοικήσατε ἐπ’ αὐτῇ, οὐ ποιηθήσεται· καὶ κατὰ τὰ ἐπιτηδεύματα γῆς Χανάαν, εἰς ἣν ἐγὼ εἰσάγω ὑμᾶς ἐκεῖ, οὐ ποιήσετε, καὶ τοῖς νομίμοις αὐτῶν οὐ πορεύσεσθε.",
+        "VUL": "juxta consuetudinem terræ Ægypti, in qua habitastis, non facietis : et juxta morem regionis Chanaan, ad quam ego introducturus sum vos, non agetis, nec in legitimis eorum ambulabitis.",
+        "SYN": "По делам земли Египетской, в которой вы жили, не поступайте, и по делам земли Ханаанской, в которую Я веду вас, не поступайте, и по установлениям их не ходите:",
+        "NEO": "Vous ne ferez pas ce qui se fait dans le pays d’Égypte où vous avez habité, et vous ne ferez pas ce qui se fait dans le pays de Canaan où je vous conduis : vous ne suivrez pas leurs lois.",
+        "NAB": "You shall not do as they do in the land of Egypt, where you once lived, nor shall you do as they do in the land of Canaan, where I am bringing you; do not conform to their customs.",
+        "VAT_ES": "Ustedes no imitarán las costumbres de Egipto –ese país donde ustedes habitaron– ni tampoco las de Canaán –esa tierra adonde yo los haré entrar–. No seguirán sus preceptos,",
+        "CEI": "Non farete come si fa nel paese d'Egitto dove avete abitato, né farete come si fa nel paese di Cànaan dove io vi conduco, né imiterete i loro costumi."
       }
     },
     "4": {
@@ -52,7 +73,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "אֶת מִשְׁפָּטַ֧י תַּעֲשׂ֛וּ וְאֶת חֻקֹּתַ֥י תִּשְׁמְר֖וּ לָלֶ֣כֶת בָּהֶ֑ם אֲנִ֖י יְהוָ֥ה אֱלֹהֵיכֶֽם׃"
+        "WLC": "אֶת מִשְׁפָּטַ֧/י תַּעֲשׂ֛וּ וְ/אֶת חֻקֹּתַ֥/י תִּשְׁמְר֖וּ לָ/לֶ֣כֶת בָּ/הֶ֑ם אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "τὰ κρίματά μου ποιήσετε καὶ τὰ προστάγματά μου φυλάξεσθε, πορεύεσθαι ἐν αὐτοῖς· ἐγὼ Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Facietis judicia mea, et præcepta mea servabitis, et ambulabitis in eis. Ego Dominus Deus vester.",
+        "SYN": "Мои законы исполняйте и Мои постановления соблюдайте, поступая по ним. Я Господь, Бог ваш.",
+        "NEO": "Vous pratiquerez mes ordonnances et vous observerez mes lois : vous les suivrez. Je suis \\+w Yahweh|strong=\"H3068\"\\+w** votre Dieu.",
+        "NAB": "My decrees you shall carry out, and my statutes you shall take care to follow. I, the LORD, am your God.",
+        "VAT_ES": "sino que cumplirán mis leyes y observarán mis preceptos, obrando en conformidad con ellos. Yo soy el Señor, su Dios.",
+        "CEI": "Metterete in pratica le mie prescrizioni e osserverete le mie leggi, seguendole. Io sono il Signore, vostro Dio."
       }
     },
     "5": {
@@ -63,7 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "וּשְׁמַרְתֶּ֤ם אֶת חֻקֹּתַי֙ וְאֶת מִשְׁפָּטַ֔י אֲשֶׁ֨ר יַעֲשֶׂ֥ה אֹתָ֛ם הָאָדָ֖ם וָחַ֣י בָּהֶ֑ם אֲנִ֖י יְהוָֽה׃"
+        "WLC": "וּ/שְׁמַרְתֶּ֤ם אֶת חֻקֹּתַ/י֙ וְ/אֶת מִשְׁפָּטַ֔/י אֲשֶׁ֨ר יַעֲשֶׂ֥ה אֹתָ֛/ם הָ/אָדָ֖ם וָ/חַ֣י בָּ/הֶ֑ם אֲנִ֖י יְהוָֽה׃",
+        "LXX": "καὶ φυλάξεσθε πάντα τὰ προστάγματά μου καὶ πάντα τὰ κρίματά μου, καὶ ποιήσετε αὐτά· ἃ ποιήσας ἄνθρωπος ζήσεται ἐν αὐτοῖς· ἐγὼ Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Custodite leges meas atque judicia, quæ faciens homo, vivet in eis. Ego Dominus.",
+        "SYN": "Соблюдайте постановления Мои и законы Мои, которые исполняя, человек будет жив. Я Господь [Бог ваш].",
+        "NEO": "Vous observerez mes Lois et mes ordonnances ; l’homme qui les mettra en pratique vivra par elles. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Keep, then, my statutes and decrees, for the man who carries them out will find life through them. I am the LORD.",
+        "VAT_ES": "Ustedes cumplirán mis preceptos y mis leyes, porque el hombre que los cumple vivirá gracias a ellos. Yo soy el Señor.",
+        "CEI": "Osserverete dunque le mie leggi e le mie prescrizioni, mediante le quali, chiunque le metterà in pratica, vivrà. Io sono il Signore."
       }
     },
     "6": {
@@ -74,7 +109,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "אִ֥ישׁ אִישׁ֙ אֶל כָּל שְׁאֵ֣ר בְּשָׂר֔וֹ לֹ֥א תִקְרְב֖וּ לְגַלּ֣וֹת עֶרְוָ֑ה אֲנִ֖י יְהוָֽה׃"
+        "WLC": "אִ֥ישׁ אִישׁ֙ אֶל כָּל שְׁאֵ֣ר בְּשָׂר֔/וֹ לֹ֥א תִקְרְב֖וּ לְ/גַלּ֣וֹת עֶרְוָ֑ה אֲנִ֖י יְהוָֽה׃",
+        "LXX": "Ἄνθρωπος ἄνθρωπος πρὸς πάντα οἰκεῖα σαρκὸς αὐτοῦ οὐ προσελεύσεται ἀποκαλύψαι ἀσχημοσύνην· ἐγὼ Κύριος.",
+        "VUL": "Omnis homo ad proximam sanguinis sui non accedet, ut revelet turpitudinem ejus. Ego Dominus.",
+        "SYN": "Никто ни к какой родственнице по плоти не должен приближаться с тем, чтобы открыть наготу. Я Господь.",
+        "NEO": "Aucun de vous ne s’approchera d’une femme qui est sa proche parente, pour découvrir sa nudité : je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "\"None of you shall approach a close relative to have sexual intercourse with her. I am the LORD.",
+        "VAT_ES": "Ninguno de ustedes se acercará a una mujer de su propia sangre para tener relaciones con ella. Yo soy el Señor.",
+        "CEI": "Nessuno si accosterà a una sua consanguinea, per avere rapporti con lei. Io sono il Signore."
       }
     },
     "7": {
@@ -85,7 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "עֶרְוַ֥ת אָבִ֛יךָ וְעֶרְוַ֥ת אִמְּךָ֖ לֹ֣א תְגַלֵּ֑ה אִמְּךָ֣ הִ֔וא לֹ֥א תְגַלֶּ֖ה עֶרְוָתָֽהּ׃"
+        "WLC": "עֶרְוַ֥ת אָבִ֛י/ךָ וְ/עֶרְוַ֥ת אִמְּ/ךָ֖ לֹ֣א תְגַלֵּ֑ה אִמְּ/ךָ֣ הִ֔וא לֹ֥א תְגַלֶּ֖ה עֶרְוָתָֽ/הּ׃",
+        "LXX": "ἀσχημοσύνην πατρός σου καὶ ἀσχημοσύνην μητρός σου οὐκ ἀποκαλύψεις· μήτηρ γάρ σού ἐστιν καὶ οὐκ ἀποκαλύψεις τὴν ἀσχημοσύνην αὐτῆς.",
+        "VUL": "Turpitudinem patris tui et turpitudinem matris tuæ non discooperies : mater tua est : non revelabis turpitudinem ejus.",
+        "SYN": "Наготы отца твоего и наготы матери твоей не открывай: она мать твоя, не открывай наготы ее.",
+        "NEO": "Tu ne découvriras pas la nudité de ton père et la nudité de ta mère. C’est ta mère, tu ne découvriras pas sa nudité.",
+        "NAB": "You shall not disgrace your father by having intercourse with your mother. Besides, since she is your own mother, you shall not have intercourse with her.",
+        "VAT_ES": "No tendrás relaciones con tu madre, la esposa de tu padre: ella es tu madre, y tú no debes tener relaciones con ella.",
+        "CEI": "Non recherai oltraggio a tuo padre avendo rapporti con tua madre: è tua madre; non scoprirai la sua nudità."
       }
     },
     "8": {
@@ -96,7 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "עֶרְוַ֥ת אֵֽשֶׁת אָבִ֖יךָ לֹ֣א תְגַלֵּ֑ה עֶרְוַ֥ת אָבִ֖יךָ הִֽוא׃"
+        "WLC": "עֶרְוַ֥ת אֵֽשֶׁת אָבִ֖י/ךָ לֹ֣א תְגַלֵּ֑ה עֶרְוַ֥ת אָבִ֖י/ךָ הִֽוא׃",
+        "LXX": "ἀσχημοσύνην γυναικὸς πατρός σου οὐκ ἀποκαλύψεις· ἀσχημοσύνη πατρός σού ἐστιν.",
+        "VUL": "Turpitudinem uxoris patris tui non discooperies : turpitudo enim patris tui est.",
+        "SYN": "Наготы жены отца твоего не открывай: это нагота отца твоего.",
+        "NEO": "Tu ne découvriras pas la nudité de la femme de ton père : c’est la nudité de ton père.",
+        "NAB": "You shall not have intercourse with your father's wife, for that would be a disgrace to your father.",
+        "VAT_ES": "No tendrás relaciones con la mujer de tu padre: ella es la misma carne de tu padre.",
+        "CEI": "Non scoprirai la nudità della tua matrigna; è la nudità di tuo padre."
       }
     },
     "9": {
@@ -107,7 +163,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "עֶרְוַ֨ת אֲחֽוֹתְךָ֤ בַת אָבִ֨יךָ֙ א֣וֹ בַת אִמֶּ֔ךָ מוֹלֶ֣דֶת בַּ֔יִת א֖וֹ מוֹלֶ֣דֶת ח֑וּץ לֹ֥א תְגַלֶּ֖ה עֶרְוָתָֽן׃"
+        "WLC": "עֶרְוַ֨ת אֲחֽוֹתְ/ךָ֤ בַת אָבִ֨י/ךָ֙ א֣וֹ בַת אִמֶּ֔/ךָ מוֹלֶ֣דֶת בַּ֔יִת א֖וֹ מוֹלֶ֣דֶת ח֑וּץ לֹ֥א תְגַלֶּ֖ה עֶרְוָתָֽ/ן׃",
+        "LXX": "ἀσχημοσύνην τῆς ἀδελφῆς σου ἐκ πατρός σου ἢ μητρός σου, ἐνδογενοῦς γεγεννημένης ἢ ἔξω, οὐκ ἀποκαλύψεις ἀσχημοσύνην αὐτῆς.",
+        "VUL": "Turpitudinem sororis tuæ ex patre sive ex matre, quæ domi vel foris genita est, non revelabis.",
+        "SYN": "Наготы сестры твоей, дочери отца твоего или дочери матери твоей, родившейся в доме или вне дома, не открывай наготы их.",
+        "NEO": "Tu ne découvriras pas la nudité de ta sœur, fille de ton père ou fille de ta mère, née dans la maison ou née hors de la maison ; tu ne découvriras pas leur nudité.",
+        "NAB": "You shall not have intercourse with your sister, your father's daughter or your mother's daughter, whether she was born in your own household or born elsewhere.",
+        "VAT_ES": "No tendrás relaciones con tu hermana, sea hija de tu padre o de tu madre, sea que haya nacido en la casa o fuera de ella.",
+        "CEI": "Non scoprirai la nudità di tua sorella, figlia di tuo padre o figlia di tua madre, sia nata in casa o fuori."
       }
     },
     "10": {
@@ -118,7 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "WLC": "עֶרְוַ֤ת בַּת בִּנְךָ֙ א֣וֹ בַֽת בִּתְּךָ֔ לֹ֥א תְגַלֶּ֖ה עֶרְוָתָ֑ן כִּ֥י עֶרְוָתְךָ֖ הֵֽנָּה׃"
+        "WLC": "עֶרְוַ֤ת בַּת בִּנְ/ךָ֙ א֣וֹ בַֽת בִּתְּ/ךָ֔ לֹ֥א תְגַלֶּ֖ה עֶרְוָתָ֑/ן כִּ֥י עֶרְוָתְ/ךָ֖ הֵֽנָּה׃",
+        "LXX": "ἀσχημοσύνην θυγατρὸς υἱοῦ σου ἢ θυγατρὸς θυγατρός σου, οὐκ ἀποκαλύψεις τὴν ἀσχημοσύνην αὐτῶν, ὅτι σὴ ἀσχημοσύνη ἐστίν.",
+        "VUL": "Turpitudinem filiæ filii tui vel neptis ex filia non revelabis : quia turpitudo tua est.",
+        "SYN": "Наготы дочери сына твоего или дочери дочери твоей, не открывай наготы их, ибо они твоя нагота.",
+        "NEO": "Tu ne découvriras pas la nudité de la fille de ton fils ou de la fille de ta fille : car c’est ta nudité.",
+        "NAB": "You shall not have intercourse with your son's daughter or with your daughter's daughter, for that would be a disgrace to your own family.",
+        "VAT_ES": "No tendrás relaciones con tu nieta, sea por parte de tu hijo o de tu hija, porque es tu misma carne.",
+        "CEI": "Non scoprirai la nudità della figlia di tuo figlio o della figlia di tua figlia, perché è la tua propria nudità."
       }
     },
     "11": {
@@ -129,7 +199,14 @@
         "LXX": 11
       },
       "text": {
-        "WLC": "עֶרְוַ֨ת בַּת אֵ֤שֶׁת אָבִ֨יךָ֙ מוֹלֶ֣דֶת אָבִ֔יךָ אֲחוֹתְךָ֖ הִ֑וא לֹ֥א תְגַלֶּ֖ה עֶרְוָתָֽהּ׃"
+        "WLC": "עֶרְוַ֨ת בַּת אֵ֤שֶׁת אָבִ֨י/ךָ֙ מוֹלֶ֣דֶת אָבִ֔י/ךָ אֲחוֹתְ/ךָ֖ הִ֑וא לֹ֥א תְגַלֶּ֖ה עֶרְוָתָֽ/הּ׃",
+        "LXX": "ἀσχημοσύνην θυγατρὸς γυναικὸς πατρός σου οὐκ ἀποκαλύψεις· ὁμοπατρία ἀδελφή σού ἐστιν, οὐκ ἀποκαλύψεις τὴν ἀσχημοσύνην αὐτῆς.",
+        "VUL": "Turpitudinem filiæ uxoris patris tui, quam peperit patri tuo, et est soror tua, non revelabis.",
+        "SYN": "Наготы дочери жены отца твоего, родившейся от отца твоего, она сестра твоя [по отцу], не открывай наготы ее.",
+        "NEO": "Tu ne découvriras pas la nudité de la fille de la femme de ton père, née de ton père : c’est ta sœur.",
+        "NAB": "You shall not have intercourse with the daughter whom your father's wife bore to him, since she, too, is your sister.",
+        "VAT_ES": "No tendrás relaciones con la hija de una mujer de tu padre: ella es descendiente de tu padre, hermana tuya, y tú no debes tener relaciones con ella.",
+        "CEI": "Non scoprirai la nudità della figlia della tua matrigna, generata nella tua casa: è tua sorella."
       }
     },
     "12": {
@@ -140,7 +217,14 @@
         "LXX": 12
       },
       "text": {
-        "WLC": "עֶרְוַ֥ת אֲחוֹת אָבִ֖יךָ לֹ֣א תְגַלֵּ֑ה שְׁאֵ֥ר אָבִ֖יךָ הִֽוא׃"
+        "WLC": "עֶרְוַ֥ת אֲחוֹת אָבִ֖י/ךָ לֹ֣א תְגַלֵּ֑ה שְׁאֵ֥ר אָבִ֖י/ךָ הִֽוא׃",
+        "LXX": "ἀσχημοσύνην ἀδελφῆς πατρός σου οὐκ ἀποκαλύψεις· οἰκεία γὰρ πατρός σού ἐστιν.",
+        "VUL": "Turpitudinem sororis patris tui non discooperies : quia caro est patris tui.",
+        "SYN": "Наготы сестры отца твоего не открывай, она единокровная отцу твоему.",
+        "NEO": "Tu ne découvriras pas la nudité de la sœur de ton père : c’est la chair de ton père.",
+        "NAB": "You shall not have intercourse with your father's sister, since she is your father's relative.",
+        "VAT_ES": "No tendrás relaciones con la hermana de tu padre: ella es la misma carne que tu padre.",
+        "CEI": "Non scoprirai la nudità della sorella di tuo padre; è carne di tuo padre."
       }
     },
     "13": {
@@ -151,7 +235,14 @@
         "LXX": 13
       },
       "text": {
-        "WLC": "עֶרְוַ֥ת אֲחֽוֹת אִמְּךָ֖ לֹ֣א תְגַלֵּ֑ה כִּֽי שְׁאֵ֥ר אִמְּךָ֖ הִֽוא׃"
+        "WLC": "עֶרְוַ֥ת אֲחֽוֹת אִמְּ/ךָ֖ לֹ֣א תְגַלֵּ֑ה כִּֽי שְׁאֵ֥ר אִמְּ/ךָ֖ הִֽוא׃",
+        "LXX": "ἀσχημοσύνην ἀδελφῆς μητρός σου οὐκ ἀποκαλύψεις· οἰκεία γὰρ μητρός σού ἐστιν.",
+        "VUL": "Turpitudinem sororis matris tuæ non revelabis, eo quod caro sit matris tuæ.",
+        "SYN": "Наготы сестры матери твоей не открывай, ибо она единокровная матери твоей.",
+        "NEO": "Tu ne découvriras pas la nudité de la sœur de ta mère : c’est la chair de ta mère.",
+        "NAB": "You shall not have intercourse with your mother's sister, since she is your mother's relative.",
+        "VAT_ES": "No tendrás relaciones con la hermana de tu madre, porque ella es la misma carne que tu madre.",
+        "CEI": "Non scoprirai la nudità della sorella di tua madre, perché è carne di tua madre."
       }
     },
     "14": {
@@ -162,7 +253,14 @@
         "LXX": 14
       },
       "text": {
-        "WLC": "עֶרְוַ֥ת אֲחִֽי אָבִ֖יךָ לֹ֣א תְגַלֵּ֑ה אֶל אִשְׁתּוֹ֙ לֹ֣א תִקְרָ֔ב דֹּדָֽתְךָ֖ הִֽוא׃"
+        "WLC": "עֶרְוַ֥ת אֲחִֽי אָבִ֖י/ךָ לֹ֣א תְגַלֵּ֑ה אֶל אִשְׁתּ/וֹ֙ לֹ֣א תִקְרָ֔ב דֹּדָֽתְ/ךָ֖ הִֽוא׃",
+        "LXX": "ἀσχημοσύνην ἀδελφοῦ τοῦ πατρός σου οὐκ ἀποκαλύψεις, καὶ πρὸς τὴν γυναῖκα αὐτοῦ οὐκ εἰσελεύσῃ· συγγενὴς γάρ σού ἐστιν.",
+        "VUL": "Turpitudinem patrui tui non revelabis, nec accedes ad uxorem ejus, quæ tibi affinitate conjungitur.",
+        "SYN": "Наготы брата отца твоего не открывай и к жене его не приближайся: она тетка твоя.",
+        "NEO": "Tu ne découvriras pas la nudité du frère de ton père, en t’approchant de sa femme : c’est ta tante.",
+        "NAB": "You shall not disgrace your father's brother by being intimate with his wife, since she, too, is your aunt.",
+        "VAT_ES": "No tendrás relaciones con la mujer del hermano de tu padre: no te acercarás a ella, que es tu tía.",
+        "CEI": "Non scoprirai la nudità del fratello di tuo padre, cioè non ti accosterai alla sua moglie: è tua zia."
       }
     },
     "15": {
@@ -173,7 +271,14 @@
         "LXX": 15
       },
       "text": {
-        "WLC": "עֶרְוַ֥ת כַּלָּֽתְךָ֖ לֹ֣א תְגַלֵּ֑ה אֵ֤שֶׁת בִּנְךָ֙ הִ֔וא לֹ֥א תְגַלֶּ֖ה עֶרְוָתָֽהּ׃"
+        "WLC": "עֶרְוַ֥ת כַּלָּֽתְ/ךָ֖ לֹ֣א תְגַלֵּ֑ה אֵ֤שֶׁת בִּנְ/ךָ֙ הִ֔וא לֹ֥א תְגַלֶּ֖ה עֶרְוָתָֽ/הּ׃",
+        "LXX": "ἀσχημοσύνην νύμφης σου οὐκ ἀποκαλύψεις· γυνὴ γὰρ υἱοῦ σού ἐστιν, οὐκ ἀποκαλύψεις τὴν ἀσχημοσύνην αὐτῆς.",
+        "VUL": "Turpitudinem nurus tuæ non revelabis, quia uxor filii tui est : nec discooperies ignominiam ejus.",
+        "SYN": "Наготы невестки твоей не открывай: она жена сына твоего, не открывай наготы ее.",
+        "NEO": "Tu ne découvriras pas la nudité de ta belle-fille : c’est la femme de ton fils, tu ne découvriras pas sa nudité.",
+        "NAB": "You shall not have intercourse with your daughter-in-law; she is your son's wife, and therefore you shall not disgrace her.",
+        "VAT_ES": "No tendrás relaciones con tu nuera: ella es la esposa de tu hijo, y por eso, debes no debes tener relaciones con ella.",
+        "CEI": "Non scoprirai la nudità di tua nuora: è la moglie di tuo figlio; non scoprirai la sua nudità."
       }
     },
     "16": {
@@ -184,7 +289,14 @@
         "LXX": 16
       },
       "text": {
-        "WLC": "עֶרְוַ֥ת אֵֽשֶׁת אָחִ֖יךָ לֹ֣א תְגַלֵּ֑ה עֶרְוַ֥ת אָחִ֖יךָ הִֽוא׃"
+        "WLC": "עֶרְוַ֥ת אֵֽשֶׁת אָחִ֖י/ךָ לֹ֣א תְגַלֵּ֑ה עֶרְוַ֥ת אָחִ֖י/ךָ הִֽוא׃",
+        "LXX": "ἀσχημοσύνην γυναικὸς ἀδελφοῦ σου οὐκ ἀποκαλύψεις· ἀσχημοσύνη ἀδελφοῦ σού ἐστιν.",
+        "VUL": "Turpitudinem uxoris fratris tui non revelabis : quia turpitudo fratris tui est.",
+        "SYN": "Наготы жены брата твоего не открывай, это нагота брата твоего.",
+        "NEO": "Tu ne découvriras pas la nudité de la femme de ton frère : c’est la nudité de ton frère.",
+        "NAB": "You shall not have intercourse with your brother's wife, for that would be a disgrace to your brother.",
+        "VAT_ES": "No tendrás relaciones con la esposa de tu hermano: es la misma carne que tu hermano.",
+        "CEI": "Non scoprirai la nudità di tua cognata: è la nudità di tuo fratello."
       }
     },
     "17": {
@@ -195,7 +307,14 @@
         "LXX": 17
       },
       "text": {
-        "WLC": "עֶרְוַ֥ת אִשָּׁ֛ה וּבִתָּ֖הּ לֹ֣א תְגַלֵּ֑ה אֶֽת בַּת בְּנָ֞הּ וְאֶת בַּת בִּתָּ֗הּ לֹ֤א תִקַּח֙ לְגַלּ֣וֹת עֶרְוָתָ֔הּ שַׁאֲרָ֥ה הֵ֖נָּה זִמָּ֥ה הִֽוא׃"
+        "WLC": "עֶרְוַ֥ת אִשָּׁ֛ה וּ/בִתָּ֖/הּ לֹ֣א תְגַלֵּ֑ה אֶֽת בַּת בְּנָ֞/הּ וְ/אֶת בַּת בִּתָּ֗/הּ לֹ֤א תִקַּח֙ לְ/גַלּ֣וֹת עֶרְוָתָ֔/הּ שַׁאֲרָ֥ה הֵ֖נָּה זִמָּ֥ה הִֽוא׃",
+        "LXX": "ἀσχημοσύνην γυναικὸς καὶ θυγατρὸς αὐτῆς οὐκ ἀποκαλύψεις· τὴν θυγατέρα τοῦ υἱοῦ αὐτῆς καὶ τὴν θυγατέρα τῆς θυγατρὸς αὐτῆς οὐ λήμψῃ ἀποκαλύψαι τὴν ἀσχημοσύνην αὐτῶν· οἰκεῖαι γάρ σού εἰσιν, ἀσέβημά ἐστιν.",
+        "VUL": "Turpitudinem uxoris tuæ et filiæ ejus non revelabis. Filiam filii ejus, et filiam filiæ illius non sumes, ut reveles ignominiam ejus : quia caro illius sunt, et talis coitus incestus est.",
+        "SYN": "Наготы жены и дочери ее не открывай; дочери сына ее и дочери дочери ее не бери, чтоб открыть наготу их, они единокровные ее; это беззаконие.",
+        "NEO": "Tu ne découvriras pas la nudité d’une femme et de sa fille : tu ne prendras pas la fille de son fils ni la fille de sa fille, pour découvrir leur nudité : elles sont proches parentes, c’est un crime.",
+        "NAB": "You shall not have intercourse with a woman and also with her daughter, nor shall you marry and have intercourse with her son's daughter or her daughter's daughter; this would be shameful, because they are related to her.",
+        "VAT_ES": "No tendrás relaciones a un mismo tiempo con una mujer y con su hija, ni te casarás con su nieta, sea por parte de su hijo o de su hija: son de la misma carne que esa mujer, y tener relaciones con ellas es una depravación.",
+        "CEI": "Non scoprirai la nudità di una donna e di sua figlia; né prenderai la figlia di suo figlio, né la figlia di sua figlia per scoprirne la nudità: sono parenti carnali: è un'infamia."
       }
     },
     "18": {
@@ -206,7 +325,14 @@
         "LXX": 18
       },
       "text": {
-        "WLC": "וְאִשָּׁ֥ה אֶל אֲחֹתָ֖הּ לֹ֣א תִקָּ֑ח לִצְרֹ֗ר לְגַלּ֧וֹת עֶרְוָתָ֛הּ עָלֶ֖יהָ בְּחַיֶּֽיהָ׃"
+        "WLC": "וְ/אִשָּׁ֥ה אֶל אֲחֹתָ֖/הּ לֹ֣א תִקָּ֑ח לִ/צְרֹ֗ר לְ/גַלּ֧וֹת עֶרְוָתָ֛/הּ עָלֶ֖י/הָ בְּ/חַיֶּֽי/הָ׃",
+        "LXX": "γυναῖκα ἐπὶ ἀδελφῇ αὐτῆς οὐ λήμψῃ ἀντίζηλον, ἀποκαλύψαι τὴν ἀσχημοσύνην αὐτῆς ἐπ’ αὐτῇ, ἔτι ζώσης αὐτῆς.",
+        "VUL": "Sororem uxoris tuæ in pellicatum illius non accipies, nec revelabis turpitudinem ejus adhuc illa vivente.",
+        "SYN": "Не бери жены вместе с сестрою ее, чтобы сделать ее соперницею, чтоб открыть наготу ее при ней, при жизни ее.",
+        "NEO": "Tu ne prendras pas la sœur de ta femme, pour en faire une rivale, en découvrant sa nudité avec celle de ta femme, de son vivant.",
+        "NAB": "While your wife is still living you shall not marry her sister as her rival; for thus you would disgrace your first wife.",
+        "VAT_ES": "No te casarás con la hermana de tu esposa ni tendrás relaciones con ella mientras viva tu esposa, provocando su rivalidad.",
+        "CEI": "E quanto alla moglie, non prenderai inoltre la sorella di lei, per farne una rivale, mentre tua moglie è in vita."
       }
     },
     "19": {
@@ -217,7 +343,14 @@
         "LXX": 19
       },
       "text": {
-        "WLC": "וְאֶל אִשָּׁ֖ה בְּנִדַּ֣ת טֻמְאָתָ֑הּ לֹ֣א תִקְרַ֔ב לְגַלּ֖וֹת עֶרְוָתָֽהּ׃"
+        "WLC": "וְ/אֶל אִשָּׁ֖ה בְּ/נִדַּ֣ת טֻמְאָתָ֑/הּ לֹ֣א תִקְרַ֔ב לְ/גַלּ֖וֹת עֶרְוָתָֽ/הּ׃",
+        "LXX": "καὶ πρὸς γυναῖκα ἐν χωρισμῷ ἀκαθαρσίας αὐτῆς οὐ προσελεύσῃ ἀποκαλύψαι τὴν ἀσχημοσύνην αὐτῆς.",
+        "VUL": "Ad mulierem quæ patitur menstrua non accedes, nec revelabis fditatem ejus.",
+        "SYN": "И к жене во время очищения нечистот ее не приближайся, чтоб открыть наготу ее.",
+        "NEO": "Tu ne t’approcheras pas d’une femme pendant son impureté menstruelle, pour découvrir sa nudité.",
+        "NAB": "\"You shall not approach a woman to have intercourse with her while she is unclean from menstruation.",
+        "VAT_ES": "No te acercarás a una mujer, para tener relaciones con ella, durante el período de su impureza menstrual.",
+        "CEI": "Non ti accosterai a donna per scoprire la sua nudità durante l'immondezza mestruale."
       }
     },
     "20": {
@@ -228,7 +361,14 @@
         "LXX": 20
       },
       "text": {
-        "WLC": "וְאֶל אֵ֨שֶׁת֙ עֲמִֽיתְךָ֔ לֹא תִתֵּ֥ן שְׁכָבְתְּךָ֖ לְזָ֑רַע לְטָמְאָה בָֽהּ׃"
+        "WLC": "וְ/אֶל אֵ֨שֶׁת֙ עֲמִֽיתְ/ךָ֔ לֹא תִתֵּ֥ן שְׁכָבְתְּ/ךָ֖ לְ/זָ֑רַע לְ/טָמְאָה בָֽ/הּ׃",
+        "LXX": "καὶ πρὸς τὴν γυναῖκα τοῦ πλησίον σου οὐ δώσεις κοίτην σπέρματός σου, ἐκμιανθῆναι πρὸς αὐτήν.",
+        "VUL": "Cum uxore proximi tui non coibis, nec seminis commistione maculaberis.",
+        "SYN": "И с женою ближнего твоего не ложись, чтобы излить семя и оскверниться с нею.",
+        "NEO": "Tu n’auras pas commerce avec la femme de ton prochain, pour te souiller avec elle.",
+        "NAB": "You shall not have carnal relations with your neighbor's wife, defiling yourself with her.",
+        "VAT_ES": "No tendrás relaciones con la mujer de tu prójimo, haciéndote impuro con ella.",
+        "CEI": "Non peccherai con la moglie del tuo prossimo per contaminarti con lei."
       }
     },
     "21": {
@@ -239,7 +379,14 @@
         "LXX": 21
       },
       "text": {
-        "WLC": "וּמִֽזַּרְעֲךָ֥ לֹא תִתֵּ֖ן לְהַעֲבִ֣יר לַמֹּ֑לֶךְ וְלֹ֧א תְחַלֵּ֛ל אֶת שֵׁ֥ם אֱלֹהֶ֖יךָ אֲנִ֥י יְהוָֽה׃"
+        "WLC": "וּ/מִֽ/זַּרְעֲ/ךָ֥ לֹא תִתֵּ֖ן לְ/הַעֲבִ֣יר לַ/מֹּ֑לֶךְ וְ/לֹ֧א תְחַלֵּ֛ל אֶת שֵׁ֥ם אֱלֹהֶ֖י/ךָ אֲנִ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἀπὸ τοῦ σπέρματός σου οὐ δώσεις λατρεύειν ἄρχοντι, καὶ οὐ βεβηλώσεις τὸ ὄνομα τὸ ἅγιον· ἐγὼ Κύριος.",
+        "VUL": "De semine tuo non dabis ut consecretur idolo Moloch, nec pollues nomen Dei tui. Ego Dominus.",
+        "SYN": "Из детей твоих не отдавай на служение Молоху и не бесчести имени Бога твоего. Я Господь.",
+        "NEO": "Tu ne donneras aucun de tes enfants pour le faire passer par le feu en l’honneur de Moloch, et tu ne profaneras pas le nom de ton Dieu. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "You shall not offer any of your offspring to be immolated to Molech, thus profaning the name of your God. I am the LORD.",
+        "VAT_ES": "No entregarás a ninguno de tus descendientes para inmolarlo a Moloc, y no profanarás el nombre de tu Dios. Yo soy el Señor.",
+        "CEI": "Non lascerai passare alcuno dei tuoi figli a Moloch e non profanerai il nome del tuo Dio. Io sono il Signore."
       }
     },
     "22": {
@@ -250,7 +397,14 @@
         "LXX": 22
       },
       "text": {
-        "WLC": "וְאֶ֨ת זָכָ֔ר לֹ֥א תִשְׁכַּ֖ב מִשְׁכְּבֵ֣י אִשָּׁ֑ה תּוֹעֵבָ֖ה הִֽוא׃"
+        "WLC": "וְ/אֶ֨ת זָכָ֔ר לֹ֥א תִשְׁכַּ֖ב מִשְׁכְּבֵ֣י אִשָּׁ֑ה תּוֹעֵבָ֖ה הִֽוא׃",
+        "LXX": "καὶ μετὰ ἄρσενος οὐ κοιμηθήσῃ κοίτην γυναικός· βδέλυγμα γάρ ἐστιν.",
+        "VUL": "Cum masculo non commiscearis coitu femineo, quia abominatio est.",
+        "SYN": "Не ложись с мужчиною, как с женщиною: это мерзость.",
+        "NEO": "Tu ne coucheras pas avec un homme comme on fait avec une femme : c’est une abomination.",
+        "NAB": "You shall not lie with a male as with a woman; such a thing is an abomination.",
+        "VAT_ES": "No te acostarás con un varón como si fuera una mujer: es una abominación.",
+        "CEI": "Non avrai con maschio relazioni come si hanno con donna: è abominio."
       }
     },
     "23": {
@@ -261,7 +415,14 @@
         "LXX": 23
       },
       "text": {
-        "WLC": "וּבְכָל בְּהֵמָ֛ה לֹא תִתֵּ֥ן שְׁכָבְתְּךָ֖ לְטָמְאָה בָ֑הּ וְאִשָּׁ֗ה לֹֽא תַעֲמֹ֞ד לִפְנֵ֧י בְהֵמָ֛ה לְרִבְעָ֖הּ תֶּ֥בֶל הֽוּא׃"
+        "WLC": "וּ/בְ/כָל בְּהֵמָ֛ה לֹא תִתֵּ֥ן שְׁכָבְתְּ/ךָ֖ לְ/טָמְאָה בָ֑/הּ וְ/אִשָּׁ֗ה לֹֽא תַעֲמֹ֞ד לִ/פְנֵ֧י בְהֵמָ֛ה לְ/רִבְעָ֖/הּ תֶּ֥בֶל הֽוּא׃",
+        "LXX": "καὶ πρὸς πᾶν τετράπουν οὐ δώσεις τὴν κοίτην σου εἰς σπερματισμὸν ἐκμιανθῆναι πρὸς αὐτό· καὶ γυνὴ οὐ στήσεται πρὸς πᾶν τετράπουν βιβασθῆναι· μυσερὸν γάρ ἐστιν.",
+        "VUL": "Cum omni pecore non coibis, nec maculaberis cum eo. Mulier non succumbet jumento, nec miscebitur ei, quia scelus est.",
+        "SYN": "И ни с каким скотом не ложись, чтоб излить [семя] и оскверниться от него; и женщина не должна становиться пред скотом для совокупления с ним: это гнусно.",
+        "NEO": "Tu ne coucheras pas avec une bête, pour te souiller avec elle. La femme ne se tiendra pas devant une bête pour se prostituer à elle : c’est une honte.",
+        "NAB": "You shall not have carnal relations with an animal, defiling yourself with it; nor shall a woman set herself in front of an animal to mate with it; such things are abhorrent.",
+        "VAT_ES": "No tendrás trato sexual con una bestia, haciéndote impuro con ella; y ninguna mujer se ofrecerá a un animal para unirse con él: es una perversión.",
+        "CEI": "Non ti abbrutirai con alcuna bestia per contaminarti con essa; la donna non si abbrutirà con una bestia; è una perversione."
       }
     },
     "24": {
@@ -272,7 +433,14 @@
         "LXX": 24
       },
       "text": {
-        "WLC": "אַל תִּֽטַּמְּא֖וּ בְּכָל אֵ֑לֶּה כִּ֤י בְכָל אֵ֨לֶּה֙ נִטְמְא֣וּ הַגּוֹיִ֔ם אֲשֶׁר אֲנִ֥י מְשַׁלֵּ֖חַ מִפְּנֵיכֶֽם׃"
+        "WLC": "אַל תִּֽטַּמְּא֖וּ בְּ/כָל אֵ֑לֶּה כִּ֤י בְ/כָל אֵ֨לֶּה֙ נִטְמְא֣וּ הַ/גּוֹיִ֔ם אֲשֶׁר אֲנִ֥י מְשַׁלֵּ֖חַ מִ/פְּנֵי/כֶֽם׃",
+        "LXX": "Μὴ μιαίνεσθε ἐν πᾶσιν τούτοις· ἐν πᾶσι γὰρ τούτοις ἐμιάνθησαν τὰ ἔθνη ἃ ἐγὼ ἐξαποστέλλω πρὸ προσώπου ὑμῶν.",
+        "VUL": "Nec polluamini in omnibus his quibus contaminatæ sunt universæ gentes, quas ego ejiciam ante conspectum vestrum,",
+        "SYN": "Не оскверняйте себя ничем этим, ибо всем этим осквернили себя народы, которых Я прогоняю от вас:",
+        "NEO": "Ne vous souillez par aucune de ces choses, car c’est par elles que se sont souillées les nations que je vais chasser devant vous.",
+        "NAB": "\"Do not defile yourselves by any of these things by which the nations whom I am driving out of your way have defiled themselves.",
+        "VAT_ES": "No se harán impuros de ninguna de esas maneras, porque así lo hicieron las naciones que yo voy a expulsar delante de ustedes,",
+        "CEI": "Non vi contaminate con nessuna di tali nefandezze; poiché con tutte queste cose si sono contaminate le nazioni che io sto per scacciare davanti a voi."
       }
     },
     "25": {
@@ -283,7 +451,14 @@
         "LXX": 25
       },
       "text": {
-        "WLC": "וַתִּטְמָ֣א הָאָ֔רֶץ וָאֶפְקֹ֥ד עֲוֺנָ֖הּ עָלֶ֑יהָ וַתָּקִ֥א הָאָ֖רֶץ אֶת יֹשְׁבֶֽיהָ׃"
+        "WLC": "וַ/תִּטְמָ֣א הָ/אָ֔רֶץ וָ/אֶפְקֹ֥ד עֲוֺנָ֖/הּ עָלֶ֑י/הָ וַ/תָּקִ֥א הָ/אָ֖רֶץ אֶת יֹשְׁבֶֽי/הָ׃",
+        "LXX": "καὶ ἐμιάνθη ἡ γῆ· καὶ ἀνταπέδωκα αὐτοῖς ἀδικίαν δι’ αὐτήν, καὶ προσώχθισεν ἡ γῆ τοῖς ἐνκαθημένοις ἐπ’ αὐτῆς.",
+        "VUL": "et quibus polluta est terra : cujus ego scelera visitabo, ut evomat habitatores suos.",
+        "SYN": "и осквернилась земля, и Я воззрел на беззаконие ее, и свергнула с себя земля живущих на ней.",
+        "NEO": "Le pays a été souillé ; je punirai ses iniquités, et le pays vomira ses habitants.",
+        "NAB": "Because their land has become defiled, I am punishing it for its wickedness, by making it vomit out its inhabitants.",
+        "VAT_ES": "y por eso el país quedó profanado. Yo les he pedido cuenta de su iniquidad, y el país ha vomitado a sus habitantes.",
+        "CEI": "Il paese ne è stato contaminato; per questo ho punito la sua iniquità e il paese ha vomitato i suoi abitanti."
       }
     },
     "26": {
@@ -294,7 +469,14 @@
         "LXX": 26
       },
       "text": {
-        "WLC": "וּשְׁמַרְתֶּ֣ם אַתֶּ֗ם אֶת חֻקֹּתַי֙ וְאֶת מִשְׁפָּטַ֔י וְלֹ֣א תַעֲשׂ֔וּ מִכֹּ֥ל הַתּוֹעֵבֹ֖ת הָאֵ֑לֶּה הָֽאֶזְרָ֔ח וְהַגֵּ֖ר הַגָּ֥ר בְּתוֹכְכֶֽם׃"
+        "WLC": "וּ/שְׁמַרְתֶּ֣ם אַתֶּ֗ם אֶת חֻקֹּתַ/י֙ וְ/אֶת מִשְׁפָּטַ֔/י וְ/לֹ֣א תַעֲשׂ֔וּ מִ/כֹּ֥ל הַ/תּוֹעֵבֹ֖ת הָ/אֵ֑לֶּה הָֽ/אֶזְרָ֔ח וְ/הַ/גֵּ֖ר הַ/גָּ֥ר בְּ/תוֹכְ/כֶֽם׃",
+        "LXX": "καὶ φυλάξεσθε πάντα τὰ νόμιμά μου καὶ πάντα τὰ προστάγματά μου, καὶ οὐ ποιήσετε ἀπὸ πάντων τῶν βδελυγμάτων τούτων, ὁ ἐνχώριος ἢ ὁ προσγενόμενος προσήλυτος ἐν ὑμῖν·",
+        "VUL": "Custodite legitima mea atque judicia, et non faciatis ex omnibus abominationibus istis, tam indigena quam colonus qui peregrinantur apud vos.",
+        "SYN": "А вы соблюдайте постановления Мои и законы Мои и не делайте всех этих мерзостей, ни туземец, ни пришлец, живущий между вами,",
+        "NEO": "Mais vous, vous observerez mes lois et mes ordonnances, et vous ne commettrez aucune de ces abominations, ni l’indigène, ni l’étranger qui séjourne au milieu de vous.",
+        "NAB": "You, however, whether natives or resident aliens, must keep my statutes and decrees forbidding all such abominations",
+        "VAT_ES": "Pero ustedes observarán mis preceptos y mis leyes, y no cometerán ninguna de esas abominaciones, tanto el nativo como el extranjero que resida en medio de ustedes.",
+        "CEI": "Voi dunque osserverete le mie leggi e le mie prescrizioni e non commetterete nessuna di queste pratiche abominevoli: né colui che è nativo del paese, né il forestiero in mezzo a voi."
       }
     },
     "27": {
@@ -305,7 +487,14 @@
         "LXX": 27
       },
       "text": {
-        "WLC": "כִּ֚י אֶת כָּל הַתּוֹעֵבֹ֣ת הָאֵ֔ל עָשׂ֥וּ אַנְשֵֽׁי הָאָ֖רֶץ אֲשֶׁ֣ר לִפְנֵיכֶ֑ם וַתִּטְמָ֖א הָאָֽרֶץ׃"
+        "WLC": "כִּ֚י אֶת כָּל הַ/תּוֹעֵבֹ֣ת הָ/אֵ֔ל עָשׂ֥וּ אַנְשֵֽׁי הָ/אָ֖רֶץ אֲשֶׁ֣ר לִ/פְנֵי/כֶ֑ם וַ/תִּטְמָ֖א הָ/אָֽרֶץ׃",
+        "LXX": "πάντα γὰρ τὰ βδελύγματα ταῦτα ἐποίησαν οἱ ἄνθρωποι τῆς γῆς οἱ ὄντες πρότεροι ὑμῶν, καὶ ἐμιάνθη ἡ γῆ·",
+        "VUL": "Omnes enim execrationes istas fecerunt accolæ terræ qui fuerunt ante vos, et polluerunt eam.",
+        "SYN": "ибо все эти мерзости делали люди сей земли, что пред вами, и осквернилась земля;",
+        "NEO": "Car toutes ces abominations, les hommes du pays, qui y ont été avant vous, les ont commises, et le pays en a été souillé.",
+        "NAB": "by which the previous inhabitants defiled the land;",
+        "VAT_ES": "Porque todas esas abominaciones fueron cometidas por los hombres que habitaron el país antes que ustedes, y por eso el país ha sido profanado.",
+        "CEI": "Poiché tutte queste cose abominevoli le ha commesse la gente che vi era prima di voi e il paese ne è stato contaminato."
       }
     },
     "28": {
@@ -316,7 +505,14 @@
         "LXX": 28
       },
       "text": {
-        "WLC": "וְלֹֽא תָקִ֤יא הָאָ֨רֶץ֙ אֶתְכֶ֔ם בְּטַֽמַּאֲכֶ֖ם אֹתָ֑הּ כַּאֲשֶׁ֥ר קָאָ֛ה אֶת הַגּ֖וֹי אֲשֶׁ֥ר לִפְנֵיכֶֽם׃"
+        "WLC": "וְ/לֹֽא תָקִ֤יא הָ/אָ֨רֶץ֙ אֶתְ/כֶ֔ם בְּ/טַֽמַּאֲ/כֶ֖ם אֹתָ֑/הּ כַּ/אֲשֶׁ֥ר קָאָ֛ה אֶת הַ/גּ֖וֹי אֲשֶׁ֥ר לִ/פְנֵי/כֶֽם׃",
+        "LXX": "καὶ ἵνα μὴ προσοχθίσῃ ὑμῖν ἡ γῆ ἐν τῷ μιαίνειν ὑμᾶς αὐτήν, ὃν τρόπον προσώχθισεν τοῖς ἔθνεσιν τοῖς πρὸ ὑμῶν.",
+        "VUL": "Cavete ergo ne et vos similiter evomat, cum paria feceritis, sicut evomuit gentem, quæ fuit ante vos.",
+        "SYN": "чтоб и вас не свергнула с себя земля, когда вы станете осквернять ее, как она свергнула народы, бывшие прежде вас;",
+        "NEO": "Et le pays ne vous vomira pas pour l’avoir souillé, comme il a vomi les nations qui y étaient avant vous.",
+        "NAB": "otherwise the land will vomit you out also for having defiled it, just as it vomited out the nations before you.",
+        "VAT_ES": "Que la tierra no los tenga que vomitar también a ustedes, a causa de sus impurezas, como vomitó a la nación que estaba antes que ustedes.",
+        "CEI": "Badate che, contaminandolo, il paese non vomiti anche voi, come ha vomitato la gente che vi abitava prima di voi."
       }
     },
     "29": {
@@ -327,7 +523,14 @@
         "LXX": 29
       },
       "text": {
-        "WLC": "כִּ֚י כָּל אֲשֶׁ֣ר יַעֲשֶׂ֔ה מִכֹּ֥ל הַתּוֹעֵב֖וֹת הָאֵ֑לֶּה וְנִכְרְת֛וּ הַנְּפָשׁ֥וֹת הָעֹשֹׂ֖ת מִקֶּ֥רֶב עַמָּֽם׃"
+        "WLC": "כִּ֚י כָּל אֲשֶׁ֣ר יַעֲשֶׂ֔ה מִ/כֹּ֥ל הַ/תּוֹעֵב֖וֹת הָ/אֵ֑לֶּה וְ/נִכְרְת֛וּ הַ/נְּפָשׁ֥וֹת הָ/עֹשֹׂ֖ת מִ/קֶּ֥רֶב עַמָּֽ/ם׃",
+        "LXX": "ὅτι πᾶς ὃς ἂν ποιήσῃ ἀπὸ πάντων τῶν βδελυγμάτων τούτων, ἐξολεθρευθήσονται αἱ ψυχαὶ αἱ ποιοῦσαι ἐκ τοῦ λαοῦ αὐτῶν.",
+        "VUL": "Omnis anima, quæ fecerit de abominationibus his quippiam, peribit de medio populi sui.",
+        "SYN": "ибо если кто будет делать все эти мерзости, то души делающих это истреблены будут из народа своего.",
+        "NEO": "Car tous ceux qui commettront quelqu’une de ces abominations seront retranchés du milieu de leur peuple.",
+        "NAB": "Everyone who does any of these abominations shall be cut off from among his people.",
+        "VAT_ES": "Porque todo el que cometa una de esas abominaciones será excluido de su pueblo.",
+        "CEI": "Perché quanti commetteranno qualcuna di queste pratiche abominevoli saranno eliminati dal loro popolo."
       }
     },
     "30": {
@@ -338,7 +541,14 @@
         "LXX": 30
       },
       "text": {
-        "WLC": "וּשְׁמַרְתֶּ֣ם אֶת מִשְׁמַרְתִּ֗י לְבִלְתִּ֨י עֲשׂ֜וֹת מֵחֻקּ֤וֹת הַתּֽוֹעֵבֹת֙ אֲשֶׁ֣ר נַעֲשׂ֣וּ לִפְנֵיכֶ֔ם וְלֹ֥א תִֽטַּמְּא֖וּ בָּהֶ֑ם אֲנִ֖י יְהוָ֥ה אֱלֹהֵיכֶֽם׃"
+        "WLC": "וּ/שְׁמַרְתֶּ֣ם אֶת מִשְׁמַרְתִּ֗/י לְ/בִלְתִּ֨י עֲשׂ֜וֹת מֵ/חֻקּ֤וֹת הַ/תּֽוֹעֵבֹת֙ אֲשֶׁ֣ר נַעֲשׂ֣וּ לִ/פְנֵי/כֶ֔ם וְ/לֹ֥א תִֽטַּמְּא֖וּ בָּ/הֶ֑ם אֲנִ֖י יְהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "καὶ φυλάξετε τὰ προστάγματά μου, ὅπως μὴ ποιήσητε ἀπὸ πάντων τῶν νομίμων τῶν ἐβδελυγμένων ὃ γέγονεν πρὸ τοῦ ὑμᾶς· καὶ οὐ μιανθήσεσθε ἐν αὐτοῖς, ὅτι ἐγὼ Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Custodite mandata mea. Nolite facere quæ fecerunt hi qui fuerunt ante vos, et ne polluamini in eis. Ego Dominus Deus vester.",
+        "SYN": "Итак соблюдайте повеления Мои, чтобы не поступать по гнусным обычаям, по которым поступали прежде вас, и чтобы не оскверняться ими. Я Господь, Бог ваш.",
+        "NEO": "Vous observerez mes commandements, afin de ne pratiquer aucun des usages abominables qui se pratiquaient avant vous, et vous ne vous souillerez pas par eux. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu. »",
+        "NAB": "Heed my charge, then, not to defile yourselves by observing the abominable customs that have been observed before you. I, the LORD, am your God.\"",
+        "VAT_ES": "Cumplan, entonces, mis prescripciones, y no hagan ninguna de esas cosas abominables que se hicieron antes, y así no se harán impuros a causa de ellas. Yo soy el Señor, su Dios.",
+        "CEI": "Osserverete dunque i miei ordini e non imiterete nessuno di quei costumi abominevoli che sono stati praticati prima di voi, né vi contaminerete con essi. Io sono il Signore, il Dio vostro\"."
       }
     }
   }
