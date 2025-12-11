@@ -19,11 +19,14 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "וַיֹּ֧סֶף אַבְרָהָ֛ם וַיִּקַּ֥ח אִשָּׁ֖ה וּשְׁמָ֥הּ קְטוּרָֽה׃",
-        "VUL": "Abraham vero aliam duxit uxorem nomine Ceturam:",
+        "WLC": "וַ/יֹּ֧סֶף אַבְרָהָ֛ם וַ/יִּקַּ֥ח אִשָּׁ֖ה וּ/שְׁמָ֥/הּ קְטוּרָֽה׃",
+        "VUL": "Abraham vero aliam duxit uxorem nomine Ceturam :",
         "LXX": "Προσθέμενος δὲ Ἀβραὰμ ἔλαβεν γυναῖκα ᾗ ὄνομα Χεττούρα.",
-        "NAB": "\"The Dwelling itself you shall make out of sheets woven of fine linen twined and of violet, purple and scarlet yarn, with cherubim embroidered on them.",
-        "SYN": "И взял Авраам еще жену, именем Хеттуру."
+        "NAB": "Abraham married another wife, whose name was Keturah.",
+        "SYN": "И взял Авраам еще жену, именем Хеттуру.",
+        "NEO": "Abraham prit encore une femme, nommée Qetoura.",
+        "VAT_ES": "Abraham se casó con otra mujer, llamada Queturá,",
+        "CEI": "Abramo prese un'altra moglie: essa aveva nome Chetura."
       }
     },
     "2": {
@@ -34,11 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "וַתֵּ֣לֶד ל֗וֹ אֶת זִמְרָן֙ וְאֶת יָקְשָׁ֔ן וְאֶת מְדָ֖ן וְאֶת מִדְיָ֑ן וְאֶת יִשְׁבָּ֖ק וְאֶת שֽׁוּחַ׃",
+        "WLC": "וַ/תֵּ֣לֶד ל֗/וֹ אֶת זִמְרָן֙ וְ/אֶת יָקְשָׁ֔ן וְ/אֶת מְדָ֖ן וְ/אֶת מִדְיָ֑ן וְ/אֶת יִשְׁבָּ֖ק וְ/אֶת שֽׁוּחַ׃",
         "VUL": "quæ peperit ei Zamran et Jecsan, et Madan, et Madian, et Jesboc, et Sue.",
         "LXX": "ἔτεκεν δὲ αὐτῷ τὸν Ζεβρὰν καὶ τὸν Ἰεξὰν καὶ τὸν Μαδαὶμ καὶ τὸν Μαδιὰμ καὶ τὸν Ἰεσβὸκ καὶ τὸν Σωύε.",
-        "NAB": "The length of each shall be twenty-eight cubits, and the width four cubits; all the sheets shall be of the same size.",
-        "SYN": "Она родила ему Зимрана, Иокшана, Медана, Мадиана, Ишбака и Шуаха."
+        "NAB": "She bore him Zimran, Jokshan, Medan, Midian, Ishbak, and Shuah.",
+        "SYN": "Она родила ему Зимрана, Иокшана, Медана, Мадиана, Ишбака и Шуаха.",
+        "NEO": "Et elle lui enfanta Zamran, Jecsan, Madan, Madian, Jesboc et Sué. —",
+        "VAT_ES": "y esta le dio varios hijos: Zimrán, Iocsán, Medán, Madián, Isbac y Súaj.",
+        "CEI": "Essa gli partorì Zimràn, Ioksan, Medan, Madian, Isbak e Suach."
       }
     },
     "3": {
@@ -49,11 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "וְיָקְשָׁ֣ן יָלַ֔ד אֶת שְׁבָ֖א וְאֶת דְּדָ֑ן וּבְנֵ֣י דְדָ֔ן הָי֛וּ אַשּׁוּרִ֥ם וּלְטוּשִׁ֖ים וּלְאֻמִּֽים׃",
+        "WLC": "וְ/יָקְשָׁ֣ן יָלַ֔ד אֶת שְׁבָ֖א וְ/אֶת דְּדָ֑ן וּ/בְנֵ֣י דְדָ֔ן הָי֛וּ אַשּׁוּרִ֥ם וּ/לְטוּשִׁ֖ים וּ/לְאֻמִּֽים׃",
         "VUL": "Jecsan quoque genuit Saba et Dadan. Filii Dadan fuerunt Assurim, et Latusim, et Loomin.",
         "LXX": "Ἰεξὰν δὲ ἐγέννησεν τὸν Σαβὰν καὶ τὸν Θαιμὰν καὶ τὸν Δαιδάν· υἱοὶ δὲ Δαιδὰν ἐγένοντο Ῥαγουὴλ καὶ Ναβδεὴλ καὶ Ἀσουρὶμ καὶ Δατουσιεὶμ καὶ Λοωμείμ·",
-        "NAB": "Five of the sheets are to be sewed together, edge to edge; and the same for the other five.",
-        "SYN": "Иокшан родил Шеву, [Фемана] и Дедана. Сыны Дедана были: [Рагуил, Навдеил,] Ашурим, Летушим и Леюмим."
+        "NAB": "Jokshan became the father of Sheba and Dedan. The descendants of Dedan were the Asshurim, the Letushim, and the Leummim.",
+        "SYN": "Иокшан родил Шеву, [Фемана] и Дедана. Сыны Дедана были: [Рагуил, Навдеил,] Ашурим, Летушим и Леюмим.",
+        "NEO": "Jecsan engendra Saba et Dadan ; les fils de Dadan furent les Assurim, les Latusim et les Laomim. —",
+        "VAT_ES": "Iocsán fue padre de Sebá y Dedán. Los descendientes de Dedán fueron los asuritas, los letusíes y los leumíes.",
+        "CEI": "Ioksan generò Saba e Dedan e i figli di Dedan furono gli Asurim, i Letusim e i Leummim."
       }
     },
     "4": {
@@ -64,11 +73,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "וּבְנֵ֣י מִדְיָ֗ן עֵיפָ֤ה וָעֵ֨פֶר֙ וַחֲנֹ֔ךְ וַאֲבִידָ֖ע וְאֶלְדָּעָ֑ה כָּל אֵ֖לֶּה בְּנֵ֥י קְטוּרָֽה׃",
-        "VUL": "At vero ex Madian ortus est Epha, et Opher, et Henoch, et Abida, et Eldaa: omnes hi filii Ceturæ.",
+        "WLC": "וּ/בְנֵ֣י מִדְיָ֗ן עֵיפָ֤ה וָ/עֵ֨פֶר֙ וַ/חֲנֹ֔ךְ וַ/אֲבִידָ֖ע וְ/אֶלְדָּעָ֑ה כָּל אֵ֖לֶּה בְּנֵ֥י קְטוּרָֽה׃",
+        "VUL": "At vero ex Madian ortus est Epha, et Opher, et Henoch, et Abida, et Eldaa : omnes hi filii Ceturæ.",
         "LXX": "υἱοὶ δὲ Μαδιὰμ Γεφὰρ καὶ Ἄφερ καὶ Ἑνὼχ καὶ Ἀβιρὰ καὶ Θεργαμά. οὗτοι πάντες ἦσαν υἱοὶ Χεττούρας.",
-        "NAB": "Make loops of violet yarn along the edge of the end sheet in one set, and the same along the edge of the end sheet in the other set.",
-        "SYN": "Сыны Мадиана: Ефа, Ефер, Ханох, Авида и Елдага. Все сии сыны Хеттуры."
+        "NAB": "The descendants of Midian were Ephah, Epher, Hanoch, Abida, and Eldaah. All of these were descendants of Keturah.",
+        "SYN": "Сыны Мадиана: Ефа, Ефер, Ханох, Авида и Елдага. Все сии сыны Хеттуры.",
+        "NEO": "Les fils de Madian furent Epha, Opher, Hénoch, Abida et Eldaa. — Ce sont là tous les fils de Qetoura.",
+        "VAT_ES": "Los hijos de Madián fueron Efá, Efer, Henoc, Abidá y Eldaá. Todos estos son hijos de Queturá.",
+        "CEI": "I figli di Madian furono Efa, Efer, Enoch, Abida ed Eldaa. Tutti questi sono i figli di Chetura."
       }
     },
     "5": {
@@ -79,11 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "וַיִּתֵּ֧ן אַבְרָהָ֛ם אֶת כָּל אֲשֶׁר ל֖וֹ לְיִצְחָֽק׃",
-        "VUL": "Deditque Abraham cuncta quæ possederat, Isaac:",
+        "WLC": "וַ/יִּתֵּ֧ן אַבְרָהָ֛ם אֶת כָּל אֲשֶׁר ל֖/וֹ לְ/יִצְחָֽק׃",
+        "VUL": "Deditque Abraham cuncta quæ possederat, Isaac :",
         "LXX": "ἔδωκεν δὲ Ἀβραὰμ πάντα τὰ ὑπάρχοντα αὐτοῦ Ἰσαὰκ τῷ υἱῷ αὐτοῦ·",
-        "NAB": "There are to be fifty loops along the edge of the end sheet in the first set, and fifty loops along the edge of the corresponding sheet in the second set, and so placed that the loops are directly opposite each other.",
-        "SYN": "И отдал Авраам все, что было у него, Исааку [сыну своему],"
+        "NAB": "Abraham deeded everything that he owned to his son Isaac.",
+        "SYN": "И отдал Авраам все, что было у него, Исааку [сыну своему],",
+        "NEO": "Abraham donna tous ses biens à Isaac :",
+        "VAT_ES": "Abraham legó todos sus bienes a Isaac.",
+        "CEI": "Abramo diede tutti i suoi beni a Isacco."
       }
     },
     "6": {
@@ -94,11 +109,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "וְלִבְנֵ֤י הַפִּֽילַגְשִׁים֙ אֲשֶׁ֣ר לְאַבְרָהָ֔ם נָתַ֥ן אַבְרָהָ֖ם מַתָּנֹ֑ת וַֽיְשַׁלְּחֵ֞ם מֵעַ֨ל יִצְחָ֤ק בְּנוֹ֙ בְּעוֹדֶ֣נּוּ חַ֔י קֵ֖דְמָה אֶל אֶ֥רֶץ קֶֽדֶם׃",
+        "WLC": "וְ/לִ/בְנֵ֤י הַ/פִּֽילַגְשִׁים֙ אֲשֶׁ֣ר לְ/אַבְרָהָ֔ם נָתַ֥ן אַבְרָהָ֖ם מַתָּנֹ֑ת וַֽ/יְשַׁלְּחֵ֞/ם מֵ/עַ֨ל יִצְחָ֤ק בְּנ/וֹ֙ בְּ/עוֹדֶ֣/נּוּ חַ֔י קֵ֖דְמָ/ה אֶל אֶ֥רֶץ קֶֽדֶם׃",
         "VUL": "filiis autem concubinarum largitus est munera, et separavit eos ab Isaac filio suo, dum adhuc ipse viveret, ad plagam orientalem.",
         "LXX": "καὶ τοῖς υἱοῖς τῶν παλλακῶν αὐτοῦ ἔδωκεν Ἀβραὰμ δόματα, καὶ ἐξαπέστειλεν αὐτοὺς ἀπὸ Ἰσαὰκ τοῦ υἱοῦ αὐτοῦ ἔτι ζῶντος αὐτοῦ πρὸς ἀνατολὰς εἰς γῆν ἀνατολῶν.",
-        "NAB": "Then make fifty clasps of gold, with which to join the two sets of sheets, so that the Dwelling forms one whole.",
-        "SYN": "а сынам наложниц, которые были у Авраама, дал Авраам подарки и отослал их от Исаака, сына своего, еще при жизни своей, на восток, в землю восточную."
+        "NAB": "To his sons by concubinage, however, he made grants while he was still living, as he sent them away eastward, to the land of Kedem, away from his son Isaac.",
+        "SYN": "а сынам наложниц, которые были у Авраама, дал Авраам подарки и отослал их от Исаака, сына своего, еще при жизни своей, на восток, в землю восточную.",
+        "NEO": "Quant aux fils de ses concubines, il leur donna des présents, et il les envoya de son vivant loin de son fils Isaac, à l’orient, au pays d’Orient.",
+        "VAT_ES": "También hizo regalos a los hijos de sus otras mujeres, pero mientras vivía, los apartó de su hijo Isaac, enviándolos hacia el este, a las regiones orientales.",
+        "CEI": "Quanto invece ai figli delle concubine, che Abramo aveva avute, diede loro doni e, mentre era ancora in vita, li licenziò, mandandoli lontano da Isacco suo figlio, verso il levante, nella regione orientale."
       }
     },
     "7": {
@@ -109,11 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "וְאֵ֗לֶּה יְמֵ֛י שְׁנֵֽי חַיֵּ֥י אַבְרָהָ֖ם אֲשֶׁר חָ֑י מְאַ֥ת שָׁנָ֛ה וְשִׁבְעִ֥ים שָׁנָ֖ה וְחָמֵ֥שׁ שָׁנִֽים׃",
+        "WLC": "וְ/אֵ֗לֶּה יְמֵ֛י שְׁנֵֽי חַיֵּ֥י אַבְרָהָ֖ם אֲשֶׁר חָ֑י מְאַ֥ת שָׁנָ֛ה וְ/שִׁבְעִ֥ים שָׁנָ֖ה וְ/חָמֵ֥שׁ שָׁנִֽים׃",
         "VUL": "Fuerunt autem dies vitæ Abrahæ, centum septuaginta quinque anni.",
         "LXX": "ταῦτα δὲ τὰ ἔτη ἡμερῶν ζωῆς Ἀβραὰμ ὅσα ἔζησεν, ἑκατὸν ἑβδομήκοντα πέντε ἔτη·",
-        "NAB": "\"Also make sheets woven of goat hair, to be used as a tent covering over the Dwelling.",
-        "SYN": "Дней жизни Авраамовой, которые он прожил, было сто семьдесят пять лет;"
+        "NAB": "The whole span of Abraham's life was one hundred and seventy-five years.",
+        "SYN": "Дней жизни Авраамовой, которые он прожил, было сто семьдесят пять лет;",
+        "NEO": "Voici les jours des années de la vie d’Abraham : il vécut cent soixante-quinze ans.",
+        "VAT_ES": "Abraham vivió ciento setenta y cinco años.",
+        "CEI": "La durata della vita di Abramo fu di centosettantacinque anni."
       }
     },
     "8": {
@@ -124,11 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "וַיִּגְוַ֨ע וַיָּ֧מָת אַבְרָהָ֛ם בְּשֵׂיבָ֥ה טוֹבָ֖ה זָקֵ֣ן וְשָׂבֵ֑עַ וַיֵּאָ֖סֶף אֶל עַמָּֽיו׃",
-        "VUL": "Et deficiens mortuus est in senectute bona, provectæque ætatis et plenus dierum: congregatusque est ad populum suum.",
+        "WLC": "וַ/יִּגְוַ֨ע וַ/יָּ֧מָת אַבְרָהָ֛ם בְּ/שֵׂיבָ֥ה טוֹבָ֖ה זָקֵ֣ן וְ/שָׂבֵ֑עַ וַ/יֵּאָ֖סֶף אֶל עַמָּֽי/ו׃",
+        "VUL": "Et deficiens mortuus est in senectute bona, provectæque ætatis et plenus dierum : congregatusque est ad populum suum.",
         "LXX": "καὶ ἐκλείπων ἀπέθανεν Ἀβραὰμ ἐν γήρει καλῷ πρεσβύτης καὶ πλήρης ἡμερῶν, καὶ προσετέθη πρὸς τὸν λαὸν αὐτοῦ.",
-        "NAB": "Eleven such sheets are to be made; the length of each shall be thirty cubits, and the width four cubits: all eleven sheets shall be of the same size.",
-        "SYN": "и скончался Авраам, и умер в старости доброй, престарелый и насыщенный [жизнью], и приложился к народу своему."
+        "NAB": "Then he breathed his last, dying at a ripe old age, grown old after a full life; and he was taken to his kinsmen.",
+        "SYN": "и скончался Авраам, и умер в старости доброй, престарелый и насыщенный [жизнью], и приложился к народу своему.",
+        "NEO": "Abraham expira et mourut dans une heureuse vieillesse, âgé et rassasié de jours, et il fut réuni à son peuple.",
+        "VAT_ES": "Murió a una edad muy avanzada, feliz y cargado de años, y fue a reunirse con los suyos.",
+        "CEI": "Poi Abramo spirò e morì in felice canizie, vecchio e sazio di giorni, e si riunì ai suoi antenati."
       }
     },
     "9": {
@@ -139,11 +163,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "וַיִּקְבְּר֨וּ אֹת֜וֹ יִצְחָ֤ק וְיִשְׁמָעֵאל֙ בָּנָ֔יו אֶל מְעָרַ֖ת הַמַּכְפֵּלָ֑ה אֶל שְׂדֵ֞ה עֶפְרֹ֤ן בֶּן צֹ֨חַר֙ הַֽחִתִּ֔י אֲשֶׁ֖ר עַל פְּנֵ֥י מַמְרֵֽא׃",
+        "WLC": "וַ/יִּקְבְּר֨וּ אֹת֜/וֹ יִצְחָ֤ק וְ/יִשְׁמָעֵאל֙ בָּנָ֔י/ו אֶל מְעָרַ֖ת הַ/מַּכְפֵּלָ֑ה אֶל שְׂדֵ֞ה עֶפְרֹ֤ן בֶּן צֹ֨חַר֙ הַֽ/חִתִּ֔י אֲשֶׁ֖ר עַל פְּנֵ֥י מַמְרֵֽא׃",
         "VUL": "Et sepelierunt eum Isaac et Ismaël filii sui in spelunca duplici, quæ sita est in agro Ephron filii Seor Hethæi, e regione Mambre,",
         "LXX": "καὶ ἔθαψαν αὐτὸν Ἰσαὰκ καὶ Ἰσμαὴλ οἱ δύο υἱοὶ αὐτοῦ εἰς τὸ σπήλαιον τὸ διπλοῦν, εἰς τὸν ἀγρὸν Ἐφρὼν τοῦ Σάαρ τοῦ Χετταίου, ὅ ἐστιν ἀπέναντι Μαμβρή,",
-        "NAB": "Sew five of the sheets, edge to edge, into one set, and the other six sheets into another set. Use the sixth sheet double at the front of the tent.",
-        "SYN": "И погребли его Исаак и Измаил, сыновья его, в пещере Махпеле, на поле Ефрона, сына Цохара, Хеттеянина, которое против Мамре,"
+        "NAB": "His sons Isaac and Ishmael buried him in the cave of Machpelah, in the field of Ephron, son of Zohar the Hittite, which faces Mamre,",
+        "SYN": "И погребли его Исаак и Измаил, сыновья его, в пещере Махпеле, на поле Ефрона, сына Цохара, Хеттеянина, которое против Мамре,",
+        "NEO": "Isaac et Ismaël, ses fils, l’enterrèrent dans la caverne de Macpéla, dans le champ d’Ephron, fils de Séor le Hittite, qui est vis-à-vis de Mambré :",
+        "VAT_ES": "Sus hijos Isaac e Ismael lo sepultaron en la caverna de Macpelá, en el campo de Efrón, hijo de Sójar, el hitita, que está frente a Mamré.",
+        "CEI": "Lo seppellirono i suoi figli, Isacco e Ismaele, nella caverna di Macpela, nel campo di Efron, figlio di Zocar, l'Hittita, di fronte a Mamre."
       }
     },
     "10": {
@@ -154,11 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "WLC": "הַשָּׂדֶ֛ה אֲשֶׁר קָנָ֥ה אַבְרָהָ֖ם מֵאֵ֣ת בְּנֵי חֵ֑ת שָׁ֛מָּה קֻבַּ֥ר אַבְרָהָ֖ם וְשָׂרָ֥ה אִשְׁתּֽוֹ׃",
-        "VUL": "quem emerat a filiis Heth: ibi sepultus est ipse, et Sara uxor ejus.",
+        "WLC": "הַ/שָּׂדֶ֛ה אֲשֶׁר קָנָ֥ה אַבְרָהָ֖ם מֵ/אֵ֣ת בְּנֵי חֵ֑ת שָׁ֛מָּ/ה קֻבַּ֥ר אַבְרָהָ֖ם וְ/שָׂרָ֥ה אִשְׁתּֽ/וֹ׃",
+        "VUL": "quem emerat a filiis Heth : ibi sepultus est ipse, et Sara uxor ejus.",
         "LXX": "τὸν ἀγρὸν καὶ τὸ σπήλαιον ὃ ἐκτήσατο Ἀβραὰμ παρὰ τῶν υἱῶν Χέτ· ἐκεῖ ἔθαψαν Ἀβραὰμ καὶ Σάρραν τὴν γυναῖκα αὐτοῦ.",
-        "NAB": "Make fifty loops along the edge of the end sheet in one set, and fifty loops along the edge of the end sheet in the second set.",
-        "SYN": "на поле [и в пещере], которые Авраам приобрел от сынов Хетовых. Там погребены Авраам и Сарра, жена его."
+        "NAB": "the field that Abraham had bought from the Hittites; there he was buried next to his wife Sarah.",
+        "SYN": "на поле [и в пещере], которые Авраам приобрел от сынов Хетовых. Там погребены Авраам и Сарра, жена его.",
+        "NEO": "c’est le champ qu’Abraham avait acheté des fils de Heth. Là fut enterré Abraham, avec Sara, sa femme.",
+        "VAT_ES": "Es el campo que Abraham había comprado a los descendientes de Het. Allí fueron enterrados él y su esposa Sara.",
+        "CEI": "È appunto il campo che Abramo aveva comperato dagli Hittiti: ivi furono sepolti Abramo e sua moglie Sara."
       }
     },
     "11": {
@@ -169,11 +199,14 @@
         "LXX": 11
       },
       "text": {
-        "WLC": "וַיְהִ֗י אַחֲרֵי֙ מ֣וֹת אַבְרָהָ֔ם וַיְבָ֥רֶךְ אֱלֹהִ֖ים אֶת יִצְחָ֣ק בְּנ֑וֹ וַיֵּ֣שֶׁב יִצְחָ֔ק עִם בְּאֵ֥ר לַחַ֖י רֹאִֽי׃",
+        "WLC": "וַ/יְהִ֗י אַחֲרֵי֙ מ֣וֹת אַבְרָהָ֔ם וַ/יְבָ֥רֶךְ אֱלֹהִ֖ים אֶת יִצְחָ֣ק בְּנ֑/וֹ וַ/יֵּ֣שֶׁב יִצְחָ֔ק עִם בְּאֵ֥ר לַחַ֖י רֹאִֽי׃",
         "VUL": "Et post obitum illius benedixit Deus Isaac filio ejus, qui habitabat juxta puteum nomine Viventis et videntis.",
         "LXX": "ἐγένετο δὲ μετὰ τὸ ἀποθανεῖν Ἀβραὰμ εὐλόγησεν ὁ θεὸς τὸν Ἰσαὰκ τὸν υἱὸν αὐτοῦ· καὶ κατῴκησεν Ἰσαὰκ παρὰ τὸ φρέαρ τῆς ὁράσεως.",
-        "NAB": "Also make fifty bronze clasps and put them into the loops, to join the tent into one whole.",
-        "SYN": "По смерти Авраама Бог благословил Исаака, сына его. Исаак жил при Беэр-лахай-рои."
+        "NAB": "After the death of Abraham, God blessed his son Isaac, who made his home near Beer-lahai-roi.",
+        "SYN": "По смерти Авраама Бог благословил Исаака, сына его. Исаак жил при Беэр-лахай-рои.",
+        "NEO": "Après la mort d’Abraham, Dieu bénit Isaac son fils ; et Isaac habitait près du puits de Lachaï-Roï.",
+        "VAT_ES": "Después de la muerte de Abraham, Dios bendijo a su hijo Isaac, y este se estableció cerca del pozo de Lajai Roí.",
+        "CEI": "Dopo la morte di Abramo, Dio benedisse il figlio di lui Isacco e Isacco abitò presso il pozzo di Lacai-Roi."
       }
     },
     "12": {
@@ -184,11 +217,14 @@
         "LXX": 12
       },
       "text": {
-        "WLC": "וְאֵ֛לֶּה תֹּלְדֹ֥ת יִשְׁמָעֵ֖אל בֶּן אַבְרָהָ֑ם אֲשֶׁ֨ר יָלְדָ֜ה הָגָ֧ר הַמִּצְרִ֛ית שִׁפְחַ֥ת שָׂרָ֖ה לְאַבְרָהָֽם׃",
-        "VUL": "Hæ sunt generationes Ismaël filii Abrahæ, quem peperit ei Agar Ægyptia, famula Saræ:",
+        "WLC": "וְ/אֵ֛לֶּה תֹּלְדֹ֥ת יִשְׁמָעֵ֖אל בֶּן אַבְרָהָ֑ם אֲשֶׁ֨ר יָלְדָ֜ה הָגָ֧ר הַ/מִּצְרִ֛ית שִׁפְחַ֥ת שָׂרָ֖ה לְ/אַבְרָהָֽם׃",
+        "VUL": "Hæ sunt generationes Ismaël filii Abrahæ, quem peperit ei Agar Ægyptia, famula Saræ :",
         "LXX": "Αὗται δὲ αἱ γενέσεις Ἰσμαὴλ τοῦ υἱοῦ Ἀβραάμ, ὃν ἔτεκεν Ἁγὰρ ἡ παιδίσκη Σάρρας τῷ Ἀβραάμ.",
-        "NAB": "There will be an extra half sheet of tent covering, which shall be allowed to hang down over the rear of the Dwelling.",
-        "SYN": "Вот родословие Измаила, сына Авраамова, которого родила Аврааму Агарь Египтянка, служанка Саррина;"
+        "NAB": "These are the descendants of Abraham's son Ishmael, whom Hagar the Egyptian, Sarah's slave, bore to Abraham.",
+        "SYN": "Вот родословие Измаила, сына Авраамова, которого родила Аврааму Агарь Египтянка, служанка Саррина;",
+        "NEO": "Voici l’histoire d’Ismaël, fils d’Abraham, qu’avait enfanté à Abraham Agar l’Egyptienne, servante de Sara.",
+        "VAT_ES": "Esta es la descendencia de Ismael –el hijo de Agar, la sirvienta egipcia de Sara, dio a Abraham–",
+        "CEI": "Questa è la discendenza di Ismaele, figlio di Abramo, che gli aveva partorito Agar l'Egiziana, schiava di Sara."
       }
     },
     "13": {
@@ -199,11 +235,14 @@
         "LXX": 13
       },
       "text": {
-        "WLC": "וְאֵ֗לֶּה שְׁמוֹת֙ בְּנֵ֣י יִשְׁמָעֵ֔אל בִּשְׁמֹתָ֖ם לְתוֹלְדֹתָ֑ם בְּכֹ֤ר יִשְׁמָעֵאל֙ נְבָיֹ֔ת וְקֵדָ֥ר וְאַדְבְּאֵ֖ל וּמִבְשָֽׂם׃",
+        "WLC": "וְ/אֵ֗לֶּה שְׁמוֹת֙ בְּנֵ֣י יִשְׁמָעֵ֔אל בִּ/שְׁמֹתָ֖/ם לְ/תוֹלְדֹתָ֑/ם בְּכֹ֤ר יִשְׁמָעֵאל֙ נְבָיֹ֔ת וְ/קֵדָ֥ר וְ/אַדְבְּאֵ֖ל וּ/מִבְשָֽׂם׃",
         "VUL": "et hæc nomina filiorum ejus in vocabulis et generationibus suis. Primogenitus Ismaëlis Nabaioth, deinde Cedar, et Adbeel, et Mabsam,",
         "LXX": "καὶ ταῦτα τὰ ὀνόματα τῶν υἱῶν Ἰσμαὴλ κατ’ ὄνομα τῶν γενεῶν αὐτοῦ· πρωτότοκος Ἰσμαὴλ Ναβαιώθ, καὶ Κηδὰρ καὶ Ναβδεὴλ καὶ Μασσὰμ",
-        "NAB": "Likewise, the sheets of the tent will have an extra cubit's length to be left hanging down on either side of the Dwelling to protect it.",
-        "SYN": "и вот имена сынов Измаиловых, имена их по родословию их: первенец Измаилов Наваиоф, за ним Кедар, Адбеел, Мивсам,"
+        "NAB": "These are the names of Ishmael's sons, listed in the order of their birth: Nebaioth (Ishmael's firstborn), Kedar, Adbeel, Mibsam,",
+        "SYN": "и вот имена сынов Измаиловых, имена их по родословию их: первенец Измаилов Наваиоф, _за_ _ним_ Кедар, Адбеел, Мивсам,",
+        "NEO": "Voici les noms des fils d’Ismaël, selon les noms de leurs postérités : premier-né d’Ismaël, Nebaïoth ; puis Cédar, Adbéel, Mabsam,",
+        "VAT_ES": "con los nombres de cada uno de sus hijos, según el orden de su nacimiento: Nebaiot, el primogénito de Ismael; luego Quedar, Abdeel, Mibsam,",
+        "CEI": "Questi sono i nomi dei figli d'Ismaele, con il loro elenco in ordine di generazione: il primogenito di Ismaele è Nebaiòt, poi Kedar, Adbeèl, Mibsam,"
       }
     },
     "14": {
@@ -214,11 +253,14 @@
         "LXX": 14
       },
       "text": {
-        "WLC": "וּמִשְׁמָ֥ע וְדוּמָ֖ה וּמַשָּֽׂא׃",
+        "WLC": "וּ/מִשְׁמָ֥ע וְ/דוּמָ֖ה וּ/מַשָּֽׂא׃",
         "VUL": "Masma quoque, et Duma, et Massa,",
         "LXX": "καὶ Μασμὰ καὶ Ἰδουμὰ καὶ Μασσὴ",
-        "NAB": "Over the tent itself you shall make a covering of rams' skins dyed red, and above that, a covering of tahash skins.",
-        "SYN": "Мишма, Дума, Масса,"
+        "NAB": "Mishma, Dumah, Massa,",
+        "SYN": "Мишма, Дума, Масса,",
+        "NEO": "Masma, Duma, Massa,",
+        "VAT_ES": "Mismá, Dumá, Masá,",
+        "CEI": "Misma, Duma, Massa,"
       }
     },
     "15": {
@@ -229,11 +271,14 @@
         "LXX": 15
       },
       "text": {
-        "WLC": "חֲדַ֣ד וְתֵימָ֔א יְט֥וּר נָפִ֖ישׁ וָקֵֽדְמָה׃",
+        "WLC": "חֲדַ֣ד וְ/תֵימָ֔א יְט֥וּר נָפִ֖ישׁ וָ/קֵֽדְמָה׃",
         "VUL": "Hadar, et Thema, et Jethur, et Naphis, et Cedma.",
         "LXX": "καὶ Χοδδὰν καὶ Θαιμὰν καὶ Ἰετοὺρ καὶ Ναφὲς καὶ Κέδμα.",
-        "NAB": "\"You shall make boards of acacia wood as walls for the Dwelling.",
-        "SYN": "Хадад, Фема, Иетур, Нафиш и Кедма."
+        "NAB": "Hadad, Tema, Jetur, Naphish, and Kedemah.",
+        "SYN": "Хадад, Фема, Иетур, Нафиш и Кедма.",
+        "NEO": "Hadad, Théma, Jéthur, Naphis et Cedma.",
+        "VAT_ES": "Jadad, Temá, Ietur, Nafis y Quedmá.",
+        "CEI": "Adad, Tema, Ietur, Nafis e Kedma."
       }
     },
     "16": {
@@ -244,11 +289,14 @@
         "LXX": 16
       },
       "text": {
-        "WLC": "אֵ֣לֶּה הֵ֞ם בְּנֵ֤י יִשְׁמָעֵאל֙ וְאֵ֣לֶּה שְׁמֹתָ֔ם בְּחַצְרֵיהֶ֖ם וּבְטִֽירֹתָ֑ם שְׁנֵים עָשָׂ֥ר נְשִׂיאִ֖ם לְאֻמֹּתָֽם׃",
-        "VUL": "Isti sunt filii Ismaëlis: et hæc nomina per castella et oppida eorum, duodecim principes tribuum suarum.",
+        "WLC": "אֵ֣לֶּה הֵ֞ם בְּנֵ֤י יִשְׁמָעֵאל֙ וְ/אֵ֣לֶּה שְׁמֹתָ֔/ם בְּ/חַצְרֵי/הֶ֖ם וּ/בְ/טִֽירֹתָ֑/ם שְׁנֵים עָשָׂ֥ר נְשִׂיאִ֖ם לְ/אֻמֹּתָֽ/ם׃",
+        "VUL": "Isti sunt filii Ismaëlis : et hæc nomina per castella et oppida eorum, duodecim principes tribuum suarum.",
         "LXX": "οὗτοί εἰσιν οἱ υἱοὶ Ἰσμαήλ, καὶ ταῦτα τὰ ὀνόματα αὐτῶν ἐν ταῖς σκηναῖς αὐτῶν καὶ ἐν ταῖς ἐπαύλεσιν αὐτῶν· δώδεκα ἄρχοντες κατὰ ἔθνος αὐτῶν.",
-        "NAB": "The length of each board is to be ten cubits, and its width one and a half cubits.",
-        "SYN": "Сии суть сыны Измаиловы, и сии имена их, в селениях их, в кочевьях их. Это двенадцать князей племен их."
+        "NAB": "These are the sons of Ishmael, their names by their villages and encampments; twelve chieftains of as many tribal groups.",
+        "SYN": "Сии суть сыны Измаиловы, и сии имена их, в селениях их, в кочевьях их. _Это_ двенадцать князей племен их.",
+        "NEO": "Ce sont là les fils d’Ismaël, ce sont là leurs noms, selon leurs villages et leurs campements : ce furent les douze chefs de leurs tribus.",
+        "VAT_ES": "Estos son los hijos de Ismael; doce jefes de otras tantas tribus, que dieron sus nombres al lugar donde habitaron y a sus respectivos campamentos.",
+        "CEI": "Questi sono gli Ismaeliti e questi sono i loro nomi secondo i loro recinti e accampamenti. Sono i dodici principi delle rispettive tribù."
       }
     },
     "17": {
@@ -259,11 +307,14 @@
         "LXX": 17
       },
       "text": {
-        "WLC": "וְאֵ֗לֶּה שְׁנֵי֙ חַיֵּ֣י יִשְׁמָעֵ֔אל מְאַ֥ת שָׁנָ֛ה וּשְׁלֹשִׁ֥ים שָׁנָ֖ה וְשֶׁ֣בַע שָׁנִ֑ים וַיִּגְוַ֣ע וַיָּ֔מָת וַיֵּאָ֖סֶף אֶל עַמָּֽיו׃",
+        "WLC": "וְ/אֵ֗לֶּה שְׁנֵי֙ חַיֵּ֣י יִשְׁמָעֵ֔אל מְאַ֥ת שָׁנָ֛ה וּ/שְׁלֹשִׁ֥ים שָׁנָ֖ה וְ/שֶׁ֣בַע שָׁנִ֑ים וַ/יִּגְוַ֣ע וַ/יָּ֔מָת וַ/יֵּאָ֖סֶף אֶל עַמָּֽי/ו׃",
         "VUL": "Et facti sunt anni vitæ Ismaëlis centum triginta septem, deficiensque mortuus est, et appositus ad populum suum.",
         "LXX": "καὶ ταῦτα τὰ ἔτη τῆς ζωῆς Ἰσμαήλ, ἑκατὸν τριάκοντα ἑπτὰ ἔτη· καὶ ἐκλείπων ἀπέθανεν καὶ προσετέθη πρὸς τὸ γένος αὐτοῦ.",
-        "NAB": "Each board shall have two arms that shall serve to fasten the boards in line. In this way all the boards of the Dwelling are to be made.",
-        "SYN": "Лет же жизни Измаиловой было сто тридцать семь лет; и скончался он, и умер, и приложился к народу своему."
+        "NAB": "The span of Ishmael's life was one hundred and thirty-seven years. After he had breathed his last and died, he was taken to his kinsmen.",
+        "SYN": "Лет же жизни Измаиловой было сто тридцать семь лет; и скончался он, и умер, и приложился к народу своему.",
+        "NEO": "Voici les années de la vie d’Ismaël : cent trente-sept ans ; puis il expira et mourut et il fut réuni à son peuple.",
+        "VAT_ES": "Ismael vivió ciento treinta y siete años. Al cabo de ellos murió, y fue a reunirse con los suyos.",
+        "CEI": "La durata della vita di Ismaele fu di centotrentasette anni; poi morì e si riunì ai suoi antenati."
       }
     },
     "18": {
@@ -274,11 +325,14 @@
         "LXX": 18
       },
       "text": {
-        "WLC": "וַיִּשְׁכְּנ֨וּ מֵֽחֲוִילָ֜ה עַד שׁ֗וּר אֲשֶׁר֙ עַל פְּנֵ֣י מִצְרַ֔יִם בֹּאֲכָ֖ה אַשּׁ֑וּרָה עַל פְּנֵ֥י כָל אֶחָ֖יו נָפָֽל׃",
+        "WLC": "וַ/יִּשְׁכְּנ֨וּ מֵֽ/חֲוִילָ֜ה עַד שׁ֗וּר אֲשֶׁר֙ עַל פְּנֵ֣י מִצְרַ֔יִם בֹּאֲ/כָ֖ה אַשּׁ֑וּרָ/ה עַל פְּנֵ֥י כָל אֶחָ֖י/ו נָפָֽל׃",
         "VUL": "Habitavit autem ab Hevila usque Sur, quæ respicit Ægyptum introëuntibus Assyrios ; coram cunctis fratribus suis obiit.",
         "LXX": "κατῴκησεν δὲ ἀπὸ Εὑειλὰτ ἕως Σουήλ, ἥ ἐστιν κατὰ πρόσωπον Αἰγύπτου ἕως ἐλθεῖν πρὸς Ἀσσυρίους· κατὰ πρόσωπον πάντων τῶν ἀδελφῶν αὐτοῦ κατῴκησεν.",
-        "NAB": "Set up the boards of the Dwelling as follows: twenty boards on the south side,",
-        "SYN": "Они жили от Хавилы до Сура, что пред Египтом, как идешь к Ассирии. Они поселились пред лицем всех братьев своих."
+        "NAB": "The Ishmaelites ranged from Havilah-by-Shur, which is on the border of Egypt, all the way to Asshur; and each of them pitched camp in opposition to his various kinsmen.",
+        "SYN": "Они жили от Хавилы до Сура, что пред Египтом, как идешь к Ассирии. Они поселились пред лицем всех братьев своих.",
+        "NEO": "Ses fils habitèrent depuis Hévila jusqu’à Sur qui est en face de l’Égypte, dans la direction de l’Assyrie. Il s’étendit en face de tous ses frères.",
+        "VAT_ES": "Sus descendientes habitaron desde Javilá de Sur, que está cerca de Egipto, hasta Asur. Y cada uno de ellos realizó incursiones contra todos sus hermanos.",
+        "CEI": "Egli abitò da Avìla fino a Sur, che è lungo il confine dell'Egitto in direzione di Assur; egli si era stabilito di fronte a tutti i suoi fratelli."
       }
     },
     "19": {
@@ -289,11 +343,14 @@
         "LXX": 19
       },
       "text": {
-        "WLC": "וְאֵ֛לֶּה תּוֹלְדֹ֥ת יִצְחָ֖ק בֶּן אַבְרָהָ֑ם אַבְרָהָ֖ם הוֹלִ֥יד אֶת יִצְחָֽק׃",
-        "VUL": "Hæ quoque sunt generationes Isaac filii Abraham: Abraham genuit Isaac:",
+        "WLC": "וְ/אֵ֛לֶּה תּוֹלְדֹ֥ת יִצְחָ֖ק בֶּן אַבְרָהָ֑ם אַבְרָהָ֖ם הוֹלִ֥יד אֶת יִצְחָֽק׃",
+        "VUL": "Hæ quoque sunt generationes Isaac filii Abraham : Abraham genuit Isaac :",
         "LXX": "Καὶ αὗται αἱ γενέσεις Ἰσαὰκ τοῦ υἱοῦ Ἀβραάμ· Ἀβραὰμ ἐγέννησεν τὸν Ἰσαάκ.",
-        "NAB": "with forty silver pedestals under the twenty boards, so that there are two pedestals under each board, at its two arms;",
-        "SYN": "Вот родословие Исаака, сына Авраамова. Авраам родил Исаака."
+        "NAB": "This is the family history of Isaac, son of Abraham; Abraham had begotten Isaac.",
+        "SYN": "Вот родословие Исаака, сына Авраамова. Авраам родил Исаака.",
+        "NEO": "Voici l’histoire d’Isaac, fils d’Abraham.",
+        "VAT_ES": "Esta es la descendencia de Isaac, el hijo de Abraham. Abraham fue padre de Isaac,",
+        "CEI": "Questa è la discendenza di Isacco, figlio di Abramo. Abramo aveva generato Isacco."
       }
     },
     "20": {
@@ -304,11 +361,14 @@
         "LXX": 20
       },
       "text": {
-        "WLC": "וַיְהִ֤י יִצְחָק֙ בֶּן אַרְבָּעִ֣ים שָׁנָ֔ה בְּקַחְתּ֣וֹ אֶת רִבְקָ֗ה בַּת בְּתוּאֵל֙ הָֽאֲרַמִּ֔י מִפַּדַּ֖ן אֲרָ֑ם אֲח֛וֹת לָבָ֥ן הָאֲרַמִּ֖י ל֥וֹ לְאִשָּֽׁה׃",
+        "WLC": "וַ/יְהִ֤י יִצְחָק֙ בֶּן אַרְבָּעִ֣ים שָׁנָ֔ה בְּ/קַחְתּ֣/וֹ אֶת רִבְקָ֗ה בַּת בְּתוּאֵל֙ הָֽ/אֲרַמִּ֔י מִ/פַּדַּ֖ן אֲרָ֑ם אֲח֛וֹת לָבָ֥ן הָ/אֲרַמִּ֖י ל֥/וֹ לְ/אִשָּֽׁה׃",
         "VUL": "qui cum quadraginta esset annorum, duxit uxorem Rebeccam filiam Bathuelis Syri de Mesopotamia, sororem Laban.",
         "LXX": "ἦν δὲ Ἰσαὰκ ἐτῶν τεσσεράκοντα ὅτε ἔλαβεν τὴν Ῥεβέκκαν θυγατέρα Βαθουὴλ τοῦ Σύρου ἐκ τῆς Μεσοποταμίας, ἀδελφὴν Λαβὰν τοῦ Σύρου, ἑαυτῷ γυναῖκα.",
-        "NAB": "twenty boards on the other side of the Dwelling, the north side,",
-        "SYN": "Исаак был сорока лет, когда он взял себе в жену Ревекку, дочь Вафуила Арамеянина из Месопотамии, сестру Лавана Арамеянина."
+        "NAB": "Isaac was forty years old when he married Rebekah, the daughter of Bethuel the Aramean of Paddan-aram and the sister of Laban the Aramean.",
+        "SYN": "Исаак был сорока лет, когда он взял себе в жену Ревекку, дочь Вафуила Арамеянина из Месопотамии, сестру Лавана Арамеянина.",
+        "NEO": "Isaac était âgé de quarante ans quand il prit pour femme Rebecca, fille de Bathuel l’Araméen, de Paddan-Aram, et sœur de Laban, l’Araméen.",
+        "VAT_ES": "el cual, a los cuarenta años, se casó con Rebeca, hija de Betuel, el arameo de Padán Aram, y hermana de Labán, el arameo.",
+        "CEI": "Isacco aveva quarant'anni quando si prese in moglie Rebecca, figlia di Betuèl l'Arameo, da Paddan-Aram, e sorella di Làbano l'Arameo."
       }
     },
     "21": {
@@ -319,11 +379,14 @@
         "LXX": 21
       },
       "text": {
-        "WLC": "וַיֶּעְתַּ֨ר יִצְחָ֤ק לַֽיהוָה֙ לְנֹ֣כַח אִשְׁתּ֔וֹ כִּ֥י עֲקָרָ֖ה הִ֑וא וַיֵּעָ֤תֶר לוֹ֙ יְהוָ֔ה וַתַּ֖הַר רִבְקָ֥ה אִשְׁתּֽוֹ׃",
-        "VUL": "Deprecatusque est Isaac Dominum pro uxore sua, eo quod esset sterilis: qui exaudivit eum, et dedit conceptum Rebeccæ.",
+        "WLC": "וַ/יֶּעְתַּ֨ר יִצְחָ֤ק לַֽ/יהוָה֙ לְ/נֹ֣כַח אִשְׁתּ֔/וֹ כִּ֥י עֲקָרָ֖ה הִ֑וא וַ/יֵּעָ֤תֶר ל/וֹ֙ יְהוָ֔ה וַ/תַּ֖הַר רִבְקָ֥ה אִשְׁתּֽ/וֹ׃",
+        "VUL": "Deprecatusque est Isaac Dominum pro uxore sua, eo quod esset sterilis : qui exaudivit eum, et dedit conceptum Rebeccæ.",
         "LXX": "ἐδεῖτο δὲ Ἰσαὰκ Κυρίου περὶ Ῥεβέκκας τῆς γυναικὸς αὐτοῦ, ὅτι στεῖρα ἦν· ἐπήκουσεν δὲ αὐτοῦ ὁ θεός, καὶ ἔλαβεν ἐν γαστρὶ Ῥεβέκκα ἡ γυνὴ αὐτοῦ.",
-        "NAB": "with their forty silver pedestals, two under each board;",
-        "SYN": "И молился Исаак Господу о [Ревекке] жене своей, потому что она была неплодна; и Господь услышал его, и зачала Ревекка, жена его."
+        "NAB": "Isaac entreated the LORD on behalf of his wife, since she was sterile. The LORD heard his entreaty, and Rebekah became pregnant.",
+        "SYN": "И молился Исаак Господу о [Ревекке] жене своей, потому что она была неплодна; и Господь услышал его, и зачала Ревекка, жена его.",
+        "NEO": "Isaac implora \\+w Yahweh|strong=\"H3068\"\\+w** au sujet de sa femme, car elle était stérile ; \\+w Yahweh|strong=\"H3068\"\\+w** l’exauça et Rebecca, sa femme, conçut.",
+        "VAT_ES": "Isaac oró al Señor por su esposa, que era estéril. El Señor lo escuchó, y su esposa Rebeca quedó embarazada.",
+        "CEI": "Isacco supplicò il Signore per sua moglie, perché essa era sterile e il Signore lo esaudì, così che sua moglie Rebecca divenne incinta."
       }
     },
     "22": {
@@ -334,11 +397,14 @@
         "LXX": 22
       },
       "text": {
-        "WLC": "וַיִּתְרֹֽצֲצ֤וּ הַבָּנִים֙ בְּקִרְבָּ֔הּ וַתֹּ֣אמֶר אִם כֵּ֔ן לָ֥מָּה זֶּ֖ה אָנֹ֑כִי וַתֵּ֖לֶךְ לִדְרֹ֥שׁ אֶת יְהוָֽה׃",
-        "VUL": "Sed collidebantur in utero ejus parvuli ; quæ ait: Si sic mihi futurum erat, quid necesse fuit concipere ? perrexitque ut consuleret Dominum.",
+        "WLC": "וַ/יִּתְרֹֽצֲצ֤וּ הַ/בָּנִים֙ בְּ/קִרְבָּ֔/הּ וַ/תֹּ֣אמֶר אִם כֵּ֔ן לָ֥/מָּה זֶּ֖ה אָנֹ֑כִי וַ/תֵּ֖לֶךְ לִ/דְרֹ֥שׁ אֶת יְהוָֽה׃",
+        "VUL": "Sed collidebantur in utero ejus parvuli ; quæ ait : Si sic mihi futurum erat, quid necesse fuit concipere ? perrexitque ut consuleret Dominum.",
         "LXX": "ἐσκίρτων δὲ τὰ παιδία ἐν αὐτῇ· εἶπεν δέ Εἰ οὕτως μοι μέλλει γίνεσθαι, ἵνα τί μοι τοῦτο; ἐπορεύθη δὲ πυθέσθαι παρὰ Κυρίου.",
-        "NAB": "six boards for the rear of the Dwelling, to the west;",
-        "SYN": "Сыновья в утробе ее стали биться, и она сказала: если так будет, то для чего мне это? И пошла вопросить Господа."
+        "NAB": "But the children in her womb jostled each other so much that she exclaimed, \"If this is to be so, what good will it do me!\" She went to consult the LORD,",
+        "SYN": "Сыновья в утробе ее стали биться, и она сказала: если так будет, то для чего мне это? И пошла вопросить Господа.",
+        "NEO": "Les enfants se heurtaient dans son sein, et elle dit : « S’il en est ainsi, pourquoi suis-je enceinte ? » Elle alla consulter \\+w Yahweh|strong=\"H3068\"\\+w** ;",
+        "VAT_ES": "Como los niños se chocaban el uno contra el otro dentro de su seno, ella exclamó: «Si las cosas tienen que ser así, &iquest;vale la pena seguir viviendo?». Entonces fue a consultar al Señor,",
+        "CEI": "Ora i figli si urtavano nel suo seno ed essa esclamò: \"Se è così, perché questo?\". Andò a consultare il Signore."
       }
     },
     "23": {
@@ -349,11 +415,14 @@
         "LXX": 23
       },
       "text": {
-        "WLC": "וַיֹּ֨אמֶר יְהוָ֜ה לָ֗הּ שְׁנֵ֤י גיים גוֹיִם֙ בְּבִטְנֵ֔ךְ וּשְׁנֵ֣י לְאֻמִּ֔ים מִמֵּעַ֖יִךְ יִפָּרֵ֑דוּ וּלְאֹם֙ מִלְאֹ֣ם יֶֽאֱמָ֔ץ וְרַ֖ב יַעֲבֹ֥ד צָעִֽיר׃",
-        "VUL": "Qui respondens ait: [Duæ gentes sunt in utero tuo,/ et duo populi ex ventre tuo dividentur,/ populusque populum superabit,/ et major serviet minori.]",
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֜ה לָ֗/הּ שְׁנֵ֤י גיים גוֹיִם֙ בְּ/בִטְנֵ֔/ךְ וּ/שְׁנֵ֣י לְאֻמִּ֔ים מִ/מֵּעַ֖יִ/ךְ יִפָּרֵ֑דוּ וּ/לְאֹם֙ מִ/לְאֹ֣ם יֶֽאֱמָ֔ץ וְ/רַ֖ב יַעֲבֹ֥ד צָעִֽיר׃",
+        "VUL": "Qui respondens ait : [Duæ gentes sunt in utero tuo,/ et duo populi ex ventre tuo dividentur,/ populusque populum superabit,/ et major serviet minori.]",
         "LXX": "καὶ εἶπεν Κύριος αὐτῇ Δύο ἔθνη ἐν τῇ γαστρί σού εἰσιν, καὶ δύο λαοὶ ἐκ τῆς κοιλίας σου διασταλήσονται· καὶ λαὸς λαοῦ ὑπερέξει, καὶ ὁ μείζων δουλεύσει τῷ ἐλάσσονι.",
-        "NAB": "and two boards for the corners at the rear of the Dwelling.",
-        "SYN": "Господь сказал ей: два племени во чреве твоем, и два различных народа произойдут из утробы твоей; один народ сделается сильнее другого, и больший будет служить меньшему."
+        "NAB": "and he answered her: \"Two nations are in your womb, two peoples are quarreling while still within you; But one shall surpass the other, and the older shall serve the younger.\"",
+        "SYN": "Господь сказал ей: два племени во чреве твоем, и два различных народа произойдут из утробы твоей; один народ сделается сильнее другого, и больший будет служить меньшему.",
+        "NEO": "et \\+w Yahweh|strong=\"H3068\"\\+w** lui dit :",
+        "VAT_ES": "y él le respondió: «En tu seno hay dos naciones, dos pueblos se separan desde tus entrañas: uno será mas fuerte que el otro, y el mayor servirá al menor».",
+        "CEI": "Il Signore le rispose: \"Due nazioni sono nel tuo seno e due popoli dal tuo grembo si disperderanno; un popolo sarà più forte dell'altro e il maggiore servirà il più piccolo\"."
       }
     },
     "24": {
@@ -364,11 +433,14 @@
         "LXX": 24
       },
       "text": {
-        "WLC": "וַיִּמְלְא֥וּ יָמֶ֖יהָ לָלֶ֑דֶת וְהִנֵּ֥ה תוֹמִ֖ם בְּבִטְנָֽהּ׃",
+        "WLC": "וַ/יִּמְלְא֥וּ יָמֶ֖י/הָ לָ/לֶ֑דֶת וְ/הִנֵּ֥ה תוֹמִ֖ם בְּ/בִטְנָֽ/הּ׃",
         "VUL": "Jam tempus pariendi advenerat, et ecce gemini in utero ejus reperti sunt.",
         "LXX": "καὶ ἐπληρώθησαν αἱ ἡμέραι τοῦ τεκεῖν αὐτήν· καὶ τῇδε ἦν δίδυμα ἐν τῇ γαστρὶ αὐτῆς.",
-        "NAB": "These two shall be double at the bottom, and likewise double at the top, to the first ring. That is how both boards in the corners are to be made.",
-        "SYN": "И настало время родить ей: и вот близнецы в утробе ее."
+        "NAB": "When the time of her delivery came, there were twins in her womb.",
+        "SYN": "И настало время родить ей: и вот близнецы в утробе ее.",
+        "NEO": "Le temps où elle devait enfanter arriva, et voici, il y avait deux jumeaux dans son sein.",
+        "VAT_ES": "Cuando llegó el momento del parto, resultó que había mellizos en su seno.",
+        "CEI": "Quando poi si compì per lei il tempo di partorire, ecco due gemelli erano nel suo grembo."
       }
     },
     "25": {
@@ -379,11 +451,14 @@
         "LXX": 25
       },
       "text": {
-        "WLC": "וַיֵּצֵ֤א הָרִאשׁוֹן֙ אַדְמוֹנִ֔י כֻּלּ֖וֹ כְּאַדֶּ֣רֶת שֵׂעָ֑ר וַיִּקְרְא֥וּ שְׁמ֖וֹ עֵשָֽׂו׃",
-        "VUL": "Qui prior egressus est, rufus erat, et totus in morem pellis hispidus: vocatumque est nomen ejus Esau. Protinus alter egrediens, plantam fratris tenebat manu: et idcirco appellavit eum Jacob.",
+        "WLC": "וַ/יֵּצֵ֤א הָ/רִאשׁוֹן֙ אַדְמוֹנִ֔י כֻּלּ֖/וֹ כְּ/אַדֶּ֣רֶת שֵׂעָ֑ר וַ/יִּקְרְא֥וּ שְׁמ֖/וֹ עֵשָֽׂו׃",
+        "VUL": "Qui prior egressus est, rufus erat, et totus in morem pellis hispidus : vocatumque est nomen ejus Esau. Protinus alter egrediens, plantam fratris tenebat manu : et idcirco appellavit eum Jacob.",
         "LXX": "ἐξῆλθεν δὲ ὁ υἱὸς ὁ πρωτότοκος πυρράκης, ὅλος ὡσεὶ δορὰ δασύς· ἐπωνόμασεν δὲ τὸ ὄνομα αὐτοῦ Ἠσαύ.",
-        "NAB": "Thus, there shall be in the rear eight boards, with their sixteen silver pedestals, two pedestals under each board.",
-        "SYN": "Первый вышел красный, весь, как кожа, косматый; и нарекли ему имя Исав."
+        "NAB": "The first to emerge was reddish, and his whole body was like a hairy mantle; so they named him Esau.",
+        "SYN": "Первый вышел красный, весь, как кожа, косматый; и нарекли ему имя Исав.",
+        "NEO": "Celui qui sortit le premier était roux, tout entier comme un manteau de poil, et ils l’appelèrent Esaü ; ensuite sortit son frère, tenant dans sa main le talon d’Esaü, et on le nomma Jacob.",
+        "VAT_ES": "El que salió primero era rubio, y estaba todo cubierto de vello, como si tuviera un manto de piel. A este lo llamaron Esaú.",
+        "CEI": "Uscì il primo, rossiccio e tutto come un mantello di pelo, e fu chiamato Esaù."
       }
     },
     "26": {
@@ -394,11 +469,14 @@
         "LXX": 26
       },
       "text": {
-        "WLC": "וְאַֽחֲרֵי כֵ֞ן יָצָ֣א אָחִ֗יו וְיָד֤וֹ אֹחֶ֨זֶת֙ בַּעֲקֵ֣ב עֵשָׂ֔ו וַיִּקְרָ֥א שְׁמ֖וֹ יַעֲקֹ֑ב וְיִצְחָ֛ק בֶּן שִׁשִּׁ֥ים שָׁנָ֖ה בְּלֶ֥דֶת אֹתָֽם׃",
+        "WLC": "וְ/אַֽחֲרֵי כֵ֞ן יָצָ֣א אָחִ֗י/ו וְ/יָד֤/וֹ אֹחֶ֨זֶת֙ בַּ/עֲקֵ֣ב עֵשָׂ֔ו וַ/יִּקְרָ֥א שְׁמ֖/וֹ יַעֲקֹ֑ב וְ/יִצְחָ֛ק בֶּן שִׁשִּׁ֥ים שָׁנָ֖ה בְּ/לֶ֥דֶת אֹתָֽ/ם׃",
         "VUL": "Sexagenarius erat Isaac quando nati sunt ei parvuli.",
         "LXX": "καὶ μετὰ τοῦτο ἐξῆλθεν ὁ ἀδελφὸς αὐτοῦ, καὶ ἡ χεὶρ αὐτοῦ ἐπειλημμένη τῆς πτέρνης Ἠσαύ· καὶ ἐκάλεσεν τὸ ὄνομα αὐτοῦ Ἰακώβ. Ἰσαὰκ δὲ ἦν ἐτῶν ἑξήκοντα ὅτε ἐγέννησεν αὐτοὺς Ῥεβέκκα.",
-        "NAB": "Also make bars of acacia wood: five for the boards on one side of the Dwelling,",
-        "SYN": "Потом вышел брат его, держась рукою своею за пяту Исава; и наречено ему имя Иаков. Исаак же был шестидесяти лет, когда они родились [от Ревекки]."
+        "NAB": "His brother came out next, gripping Esau's heel; so they named him Jacob. Isaac was sixty years old when they were born.",
+        "SYN": "Потом вышел брат его, держась рукою своею за пяту Исава; и наречено ему имя Иаков. Исаак же был шестидесяти лет, когда они родились [от Ревекки].",
+        "NEO": "Isaac était âgé de soixante ans quand ils naquirent.",
+        "VAT_ES": "Después salió su hermano, que con su mano tenía agarrado el talón de Esaú. Por ello lo llamaron Jacob. Cuando nacieron, Isaac tenía sesenta años.",
+        "CEI": "Subito dopo, uscì il fratello e teneva in mano il calcagno di Esaù; fu chiamato Giacobbe. Isacco aveva sessant'anni quando essi nacquero."
       }
     },
     "27": {
@@ -409,11 +487,14 @@
         "LXX": 27
       },
       "text": {
-        "WLC": "וַֽיִּגְדְּלוּ֙ הַנְּעָרִ֔ים וַיְהִ֣י עֵשָׂ֗ו אִ֛ישׁ יֹדֵ֥עַ צַ֖יִד אִ֣ישׁ שָׂדֶ֑ה וְיַעֲקֹב֙ אִ֣ישׁ תָּ֔ם יֹשֵׁ֖ב אֹהָלִֽים׃",
-        "VUL": "Quibus adultis, factus est Esau vir gnarus venandi, et homo agricola: Jacob autem vir simplex habitabat in tabernaculis.",
+        "WLC": "וַֽ/יִּגְדְּלוּ֙ הַ/נְּעָרִ֔ים וַ/יְהִ֣י עֵשָׂ֗ו אִ֛ישׁ יֹדֵ֥עַ צַ֖יִד אִ֣ישׁ שָׂדֶ֑ה וְ/יַעֲקֹב֙ אִ֣ישׁ תָּ֔ם יֹשֵׁ֖ב אֹהָלִֽים׃",
+        "VUL": "Quibus adultis, factus est Esau vir gnarus venandi, et homo agricola : Jacob autem vir simplex habitabat in tabernaculis.",
         "LXX": "ηὐξήθησαν δὲ οἱ νεανίσκοι· καὶ ἦν Ἠσαὺ ἄνθρωπος εἰδὼς κυνηγεῖν, ἄγροικος· Ἰακὼβ δὲ ἦν ἄνθρωπος ἄπλαστος, οἰκῶν οἰκίαν.",
-        "NAB": "five for those on the other side, and five for those at the rear, toward the west.",
-        "SYN": "Дети выросли, и стал Исав человеком искусным в звероловстве, человеком полей; а Иаков человеком кротким, живущим в шатрах."
+        "NAB": "As the boys grew up, Esau became a skillful hunter, a man who lived in the open; whereas Jacob was a simple man, who kept to his tents.",
+        "SYN": "Дети выросли, и стал Исав человеком искусным в звероловстве, человеком полей; а Иаков человеком кротким, живущим в шатрах.",
+        "NEO": "Ces enfants grandirent. Esaü devint un habile chasseur, un homme des champs ; mais Jacob était un homme paisible, demeurant sous la tente.",
+        "VAT_ES": "Los niños crecieron. Esaú se convirtió en un hombre agreste, experto en la caza. Jacob, en cambio, era un hombre apacible y apegado a su carpa.",
+        "CEI": "I fanciulli crebbero ed Esaù divenne abile nella caccia, un uomo della steppa, mentre Giacobbe era un uomo tranquillo, che dimorava sotto le tende."
       }
     },
     "28": {
@@ -424,11 +505,14 @@
         "LXX": 28
       },
       "text": {
-        "WLC": "וַיֶּאֱהַ֥ב יִצְחָ֛ק אֶת עֵשָׂ֖ו כִּי צַ֣יִד בְּפִ֑יו וְרִבְקָ֖ה אֹהֶ֥בֶת אֶֽת יַעֲקֹֽב׃",
-        "VUL": "Isaac amabat Esau, eo quod de venationibus illius vesceretur: et Rebecca diligebat Jacob.",
+        "WLC": "וַ/יֶּאֱהַ֥ב יִצְחָ֛ק אֶת עֵשָׂ֖ו כִּי צַ֣יִד בְּ/פִ֑י/ו וְ/רִבְקָ֖ה אֹהֶ֥בֶת אֶֽת יַעֲקֹֽב׃",
+        "VUL": "Isaac amabat Esau, eo quod de venationibus illius vesceretur : et Rebecca diligebat Jacob.",
         "LXX": "ἠγάπησεν δὲ Ἰσαὰκ τὸν Ἠσαύ, ὅτι ἡ θήρα αὐτοῦ βρῶσις αὐτῷ· Ῥεβέκκα δὲ ἠγάπα τὸν Ἰακώβ.",
-        "NAB": "The center bar, at the middle of the boards, shall reach across from end to end.",
-        "SYN": "Исаак любил Исава, потому что дичь его была по вкусу его, а Ревекка любила Иакова."
+        "NAB": "Isaac preferred Esau, because he was fond of game; but Rebekah preferred Jacob.",
+        "SYN": "Исаак любил Исава, потому что дичь его была по вкусу его, а Ревекка любила Иакова.",
+        "NEO": "Isaac prit en affection Esaü, parce qu’il aimait la venaison, et l’affection de Rebecca était pour Jacob.",
+        "VAT_ES": "Isaac quería más a Esaú, porque las presas de caza eran su plato preferido; pero Rebeca sentía más cariño por Jacob.",
+        "CEI": "Isacco prediligeva Esaù, perché la cacciagione era di suo gusto, mentre Rebecca prediligeva Giacobbe."
       }
     },
     "29": {
@@ -439,11 +523,14 @@
         "LXX": 29
       },
       "text": {
-        "WLC": "וַיָּ֥זֶד יַעֲקֹ֖ב נָזִ֑יד וַיָּבֹ֥א עֵשָׂ֛ו מִן הַשָּׂדֶ֖ה וְה֥וּא עָיֵֽף׃",
-        "VUL": "Coxit autem Jacob pulmentum: ad quem cum venisset Esau de agro lassus,",
+        "WLC": "וַ/יָּ֥זֶד יַעֲקֹ֖ב נָזִ֑יד וַ/יָּבֹ֥א עֵשָׂ֛ו מִן הַ/שָּׂדֶ֖ה וְ/ה֥וּא עָיֵֽף׃",
+        "VUL": "Coxit autem Jacob pulmentum : ad quem cum venisset Esau de agro lassus,",
         "LXX": "Ἥψησεν δὲ Ἰακὼβ ἕψεμα· ἦλθεν δὲ Ἠσαὺ ἐκ τοῦ πεδίου ἐκλείπων.",
-        "NAB": "Plate the boards with gold, and make gold rings on them as holders for the bars, which are also to be plated with gold.",
-        "SYN": "И сварил Иаков кушанье; а Исав пришел с поля усталый."
+        "NAB": "Once, when Jacob was cooking a stew, Esau came in from the open, famished.",
+        "SYN": "И сварил Иаков кушанье; а Исав пришел с поля усталый.",
+        "NEO": "Comme Jacob faisait un potage, Esaü arriva des champs, accablé de fatigue.",
+        "VAT_ES": "En cierta ocasión, Esaú volvió exhausto del campo, mientras Jacob estaba preparando un guiso.",
+        "CEI": "Una volta Giacobbe aveva cotto una minestra di lenticchie; Esaù arrivò dalla campagna ed era sfinito."
       }
     },
     "30": {
@@ -454,11 +541,14 @@
         "LXX": 30
       },
       "text": {
-        "WLC": "וַיֹּ֨אמֶר עֵשָׂ֜ו אֶֽל יַעֲקֹ֗ב הַלְעִיטֵ֤נִי נָא֙ מִן הָאָדֹ֤ם הָאָדֹם֙ הַזֶּ֔ה כִּ֥י עָיֵ֖ף אָנֹ֑כִי עַל כֵּ֥ן קָרָֽא שְׁמ֖וֹ אֱדֽוֹם׃",
-        "VUL": "ait: Da mihi de coctione hac rufa, quia oppido lassus sum. Quam ob causam vocatum est nomen ejus Edom.",
+        "WLC": "וַ/יֹּ֨אמֶר עֵשָׂ֜ו אֶֽל יַעֲקֹ֗ב הַלְעִיטֵ֤/נִי נָא֙ מִן הָ/אָדֹ֤ם הָ/אָדֹם֙ הַ/זֶּ֔ה כִּ֥י עָיֵ֖ף אָנֹ֑כִי עַל כֵּ֥ן קָרָֽא שְׁמ֖/וֹ אֱדֽוֹם׃",
+        "VUL": "ait : Da mihi de coctione hac rufa, quia oppido lassus sum. Quam ob causam vocatum est nomen ejus Edom.",
         "LXX": "καὶ εἶπεν Ἠσαὺ τῷ Ἰακώβ Γεῦσόν με ἀπὸ τοῦ ἑψέματος τοῦ πυρροῦ τούτου, ὅτι ἐκλείπω ἐγώ· διὰ τοῦτο ἐκλήθη τὸ ὄνομα αὐτοῦ Ἐδώμ.",
-        "NAB": "You shall erect the Dwelling according to the pattern shown you on the mountain.",
-        "SYN": "И сказал Исав Иакову: дай мне поесть красного, красного этого, ибо я устал. От сего дано ему прозвание: Едом."
+        "NAB": "He said to Jacob, \"Let me gulp down some of that red stuff; I'm starving.\" (That is why he was called Edom.)",
+        "SYN": "И сказал Исав Иакову: дай мне поесть красного, красного этого, ибо я устал. От сего дано ему прозвание: Едом.",
+        "NEO": "Esaü dit à Jacob : « Laisse-moi donc manger de ce roux, de ce roux-là, car je suis fatigué. » — C’est pour cela qu’on a donné à Esaü le nom d’Edom. —",
+        "VAT_ES": "Esaú dijo a Jacob: «Déjame comer un poco de esa comida rojiza, porque estoy extenuado». Fue por eso que se dio a Esaú el nombre de Edom.",
+        "CEI": "Disse a Giacobbe: \"Lasciami mangiare un pò di questa minestra rossa, perché io sono sfinito\" - Per questo fu chiamato Edom -."
       }
     },
     "31": {
@@ -469,11 +559,14 @@
         "LXX": 31
       },
       "text": {
-        "WLC": "וַיֹּ֖אמֶר יַעֲקֹ֑ב מִכְרָ֥ה כַיּ֛וֹם אֶת בְּכֹֽרָתְךָ֖ לִֽי׃",
-        "VUL": "Cui dixit Jacob: Vende mihi primogenita tua.",
+        "WLC": "וַ/יֹּ֖אמֶר יַעֲקֹ֑ב מִכְרָ֥/ה כַ/יּ֛וֹם אֶת בְּכֹֽרָתְ/ךָ֖ לִֽ/י׃",
+        "VUL": "Cui dixit Jacob : Vende mihi primogenita tua.",
         "LXX": "εἶπεν δὲ Ἰακὼβ τῷ Ἠσαύ Ἀπόδου μοι σήμερον τὰ πρωτοτοκεῖά σου ἐμοί.",
-        "NAB": "\"You shall have a veil woven of violet, purple and scarlet yarn, and of fine linen twined, with cherubim embroidered on it.",
-        "SYN": "Но Иаков сказал [Исаву]: продай мне теперь же свое первородство."
+        "NAB": "But Jacob replied, \"First give me your birthright in exchange for it.\"",
+        "SYN": "Но Иаков сказал [Исаву]: продай мне теперь же свое первородство.",
+        "NEO": "Jacob dit : « Vends-moi d’abord ton droit d’aînesse. »",
+        "VAT_ES": "Pero Jacob le respondió: «Dame antes tu derecho de hijo primogénito».",
+        "CEI": "Giacobbe disse: \"Vendimi subito la tua primogenitura\"."
       }
     },
     "32": {
@@ -484,11 +577,14 @@
         "LXX": 32
       },
       "text": {
-        "WLC": "וַיֹּ֣אמֶר עֵשָׂ֔ו הִנֵּ֛ה אָנֹכִ֥י הוֹלֵ֖ךְ לָמ֑וּת וְלָמָּה זֶּ֥ה לִ֖י בְּכֹרָֽה׃",
-        "VUL": "Ille respondit: En morior, quid mihi proderunt primogenita ?",
+        "WLC": "וַ/יֹּ֣אמֶר עֵשָׂ֔ו הִנֵּ֛ה אָנֹכִ֥י הוֹלֵ֖ךְ לָ/מ֑וּת וְ/לָ/מָּה זֶּ֥ה לִ֖/י בְּכֹרָֽה׃",
+        "VUL": "Ille respondit : En morior, quid mihi proderunt primogenita ?",
         "LXX": "εἶπεν δε Ἠσαύ Ἰδοὺ ἐγὼ πορεύομαι τελευτᾷν, καὶ ἵνα τί μοι ταῦτα τὰ πρωτοτοκεῖα;",
-        "NAB": "It is to be hung on four gold-plated columns of acacia wood, which shall have hooks of gold and shall rest on four silver pedestals.",
-        "SYN": "Исав сказал: вот, я умираю, что мне в этом первородстве?"
+        "NAB": "\"Look,\" said Esau, \"I'm on the point of dying. What good will any birthright do me?\"",
+        "SYN": "Исав сказал: вот, я умираю, что мне в этом первородстве?",
+        "NEO": "Esaü répondit : « Voici je m’en vais mourir ; que me servira mon droit d’aînesse ? »",
+        "VAT_ES": "«Me estoy muriendo», dijo Esaú. «&iquest;De qué me servirá ese derecho?».",
+        "CEI": "Rispose Esaù: \"Ecco sto morendo: a che mi serve allora la primogenitura?\"."
       }
     },
     "33": {
@@ -499,11 +595,14 @@
         "LXX": 33
       },
       "text": {
-        "WLC": "וַיֹּ֣אמֶר יַעֲקֹ֗ב הִשָּׁ֤בְעָה לִּי֙ כַּיּ֔וֹם וַיִּשָּׁבַ֖ע ל֑וֹ וַיִּמְכֹּ֥ר אֶת בְּכֹרָת֖וֹ לְיַעֲקֹֽב׃",
-        "VUL": "Ait Jacob: Jura ergo mihi. Juravit ei Esau et vendidit primogenita.",
+        "WLC": "וַ/יֹּ֣אמֶר יַעֲקֹ֗ב הִשָּׁ֤בְעָ/ה לִּ/י֙ כַּ/יּ֔וֹם וַ/יִּשָּׁבַ֖ע ל֑/וֹ וַ/יִּמְכֹּ֥ר אֶת בְּכֹרָת֖/וֹ לְ/יַעֲקֹֽב׃",
+        "VUL": "Ait Jacob : Jura ergo mihi. Juravit ei Esau et vendidit primogenita.",
         "LXX": "καὶ εἶπεν αὐτῷ Ἰακώβ Ὄμοσόν μοι σήμερον. καὶ ὤμοσεν αὐτῷ· ἀπέδοτο δὲ Ἠσαὺ τὰ πρωτοτοκεῖα τῷ Ἰακώβ.",
-        "NAB": "Hang the veil from clasps. The ark of the commandments you shall bring inside, behind this veil which divides the holy place from the holy of holies.",
-        "SYN": "Иаков сказал [ему]: поклянись мне теперь же. Он поклялся ему, и продал [Исав] первородство свое Иакову."
+        "NAB": "But Jacob insisted, \"Swear to me first!\" So he sold Jacob his birthright under oath.",
+        "SYN": "Иаков сказал [ему]: поклянись мне теперь же. Он поклялся ему, и продал [Исав] первородство свое Иакову.",
+        "NEO": "Et Jacob dit : « Jure-le-moi d’abord. » Il jura et vendit son droit d’aînesse à Jacob.",
+        "VAT_ES": "Pero Jacob insistió: «Júramelo antes». El se lo juró y le vendió su derecho de hijo primogénito.",
+        "CEI": "Giacobbe allora disse: \"Giuramelo subito\". Quegli lo giurò e vendette la primogenitura a Giacobbe."
       }
     },
     "34": {
@@ -514,11 +613,14 @@
         "LXX": 34
       },
       "text": {
-        "WLC": "וְיַעֲקֹ֞ב נָתַ֣ן לְעֵשָׂ֗ו לֶ֚חֶם וּנְזִ֣יד עֲדָשִׁ֔ים וַיֹּ֣אכַל וַיֵּ֔שְׁתְּ וַיָּ֖קָם וַיֵּלַ֑ךְ וַיִּ֥בֶז עֵשָׂ֖ו אֶת הַבְּכֹרָֽה׃",
+        "WLC": "וְ/יַעֲקֹ֞ב נָתַ֣ן לְ/עֵשָׂ֗ו לֶ֚חֶם וּ/נְזִ֣יד עֲדָשִׁ֔ים וַ/יֹּ֣אכַל וַ/יֵּ֔שְׁתְּ וַ/יָּ֖קָם וַ/יֵּלַ֑ךְ וַ/יִּ֥בֶז עֵשָׂ֖ו אֶת הַ/בְּכֹרָֽה׃",
         "VUL": "Et sic, accepto pane et lentis edulio, comedit et bibit, et abiit, parvipendens quod primogenita vendidisset.",
         "LXX": "Ἰακὼβ δὲ ἔδωκεν τῷ Ἠσαὺ ἄρτον καὶ ἕψεμα φακοῦ· καὶ ἔφαγεν καὶ ἔπιεν, καὶ ἀναστὰς ᾤχετο· καὶ ἐφαύλισεν Ἠσαὺ τὰ πρωτοτοκεῖα.",
-        "NAB": "Set the propitiatory on the ark of the commandments in the holy of holies.",
-        "SYN": "И дал Иаков Исаву хлеба и кушанья из чечевицы; и он ел и пил, и встал и пошел; и пренебрег Исав первородство."
+        "NAB": "Jacob then gave him some bread and the lentil stew; and Esau ate, drank, got up, and went his way. Esau cared little for his birthright.",
+        "SYN": "И дал Иаков Исаву хлеба и кушанья из чечевицы; и он ел и пил, и встал и пошел; и пренебрег Исав первородство.",
+        "NEO": "Alors Jacob donna à Esaü du pain et du potage de lentilles ; celui-ci mangea et but ; puis il se leva et s’en alla. C’est ainsi qu’Esaü méprisa le droit d’aînesse.",
+        "VAT_ES": "Jacob le dio entonces pan y guiso de lentejas. Esaú comió y bebió; después se levantó y se fue. Así menospreció Esaú el derecho que le correspondía por ser el hijo primogénito.",
+        "CEI": "Giacobbe diede ad Esaù il pane e la minestra di lenticchie; questi mangiò e bevve, poi si alzò e se ne andò. A tal punto Esaù aveva disprezzato la primogenitura."
       }
     }
   }

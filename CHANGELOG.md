@@ -13,7 +13,9 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 - Complete Ruth (4 chapters, 85 verses) with 8 languages: WLC, LXX, VUL, NAB, SYN, NEO, VAT_ES, CEI
+- Complete Genesis (50 chapters, ~1533 verses) with 8 languages: WLC, LXX, VUL, NAB, SYN, NEO, VAT_ES, CEI
 - Create `scripts/parsers.py` reusable parsing library for all source formats
+- Create `scripts/populate_genesis.py` with Vatican HTML file mappings
 - Add NT sections to BOOKPOPULATION.md tracking file
 
 ### Changed

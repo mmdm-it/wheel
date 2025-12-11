@@ -19,11 +19,14 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "וְהַנָּחָשׁ֙ הָיָ֣ה עָר֔וּם מִכֹּל֙ חַיַּ֣ת הַשָּׂדֶ֔ה אֲשֶׁ֥ר עָשָׂ֖ה יְהוָ֣ה אֱלֹהִ֑ים וַיֹּ֨אמֶר֙ אֶל הָ֣אִשָּׁ֔ה אַ֚ף כִּֽי אָמַ֣ר אֱלֹהִ֔ים לֹ֣א תֹֽאכְל֔וּ מִכֹּ֖ל עֵ֥ץ הַגָּֽן׃",
-        "VUL": "Sed et serpens erat callidior cunctis animantibus terræ quæ fecerat Dominus Deus. Qui dixit ad mulierem: Cur præcepit vobis Deus ut non comederetis de omni ligno paradisi ?",
+        "WLC": "וְ/הַ/נָּחָשׁ֙ הָיָ֣ה עָר֔וּם מִ/כֹּל֙ חַיַּ֣ת הַ/שָּׂדֶ֔ה אֲשֶׁ֥ר עָשָׂ֖ה יְהוָ֣ה אֱלֹהִ֑ים וַ/יֹּ֨אמֶר֙ אֶל הָ֣/אִשָּׁ֔ה אַ֚ף כִּֽי אָמַ֣ר אֱלֹהִ֔ים לֹ֣א תֹֽאכְל֔וּ מִ/כֹּ֖ל עֵ֥ץ הַ/גָּֽן׃",
+        "VUL": "Sed et serpens erat callidior cunctis animantibus terræ quæ fecerat Dominus Deus. Qui dixit ad mulierem : Cur præcepit vobis Deus ut non comederetis de omni ligno paradisi ?",
         "LXX": "καὶ ἦσαν οἱ δύο γυμνοί, ὅ τε Ἀδὰμ καὶ ἡ γυνὴ αὐτοῦ, καὶ οὐκ ᾐσχύνοντο. Ὁ δὲ ὄφις ἦν φρονιμώτατος πάντων τῶν θηρίων τῶν ἐπὶ τῆς γῆς ὧν ἐποίησεν Κύριος ὁ θεός· καὶ εἶπεν ὁ ὄφις τῇ γυναικί Τί ὅτι εἶπεν ὁ θεός Οὐ μὴ φάγητε ἀπὸ παντὸς ξύλου τοῦ παραδείσου;",
         "NAB": "Now the serpent was the most cunning of all the animals that the LORD God had made. The serpent asked the woman, \"Did God really tell you not to eat from any of the trees in the garden?\"",
-        "SYN": "Змей был хитрее всех зверей полевых, которых создал Господь Бог. И сказал змей жене: подлинно ли сказал Бог: не ешьте ни от какого дерева в раю?"
+        "SYN": "Змей был хитрее всех зверей полевых, которых создал Господь Бог. И сказал змей жене: подлинно ли сказал Бог: не ешьте ни от какого дерева в раю?",
+        "NEO": "Le serpent était le plus rusé de tous les animaux des champs que \\+w Yahweh|strong=\"H3068\"\\+w** Dieu ait faits. Il dit à la femme :",
+        "VAT_ES": "La serpiente era",
+        "CEI": "Il serpente era la più astuta di tutte le bestie selvatiche fatte dal Signore Dio. Egli disse alla donna: \"È vero che Dio ha detto: Non dovete mangiare di nessun albero del giardino?\"."
       }
     },
     "2": {
@@ -34,11 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "וַתֹּ֥אמֶר הָֽאִשָּׁ֖ה אֶל הַנָּחָ֑שׁ מִפְּרִ֥י עֵֽץ הַגָּ֖ן נֹאכֵֽל׃",
-        "VUL": "Cui respondit mulier: De fructu lignorum, quæ sunt in paradiso, vescimur:",
+        "WLC": "וַ/תֹּ֥אמֶר הָֽ/אִשָּׁ֖ה אֶל הַ/נָּחָ֑שׁ מִ/פְּרִ֥י עֵֽץ הַ/גָּ֖ן נֹאכֵֽל׃",
+        "VUL": "Cui respondit mulier : De fructu lignorum, quæ sunt in paradiso, vescimur :",
         "LXX": "καὶ εἶπεν ἡ γυνὴ τῷ ὄφει Ἀπὸ παντὸς ξύλου τοῦ παραδείσου φαγόμεθα·",
         "NAB": "The woman answered the serpent: \"We may eat of the fruit of the trees in the garden;",
-        "SYN": "И сказала жена змею: плоды с дерев мы можем есть,"
+        "SYN": "И сказала жена змею: плоды с дерев мы можем есть,",
+        "NEO": "La femme répondit au serpent : « Nous mangeons du fruit des arbres du jardin.",
+        "VAT_ES": "La mujer le respondió: «Podemos comer los frutos de todos los árboles del jardín.",
+        "CEI": "Rispose la donna al serpente: \"Dei frutti degli alberi del giardino noi possiamo mangiare,"
       }
     },
     "3": {
@@ -49,11 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "וּמִפְּרִ֣י הָעֵץ֮ אֲשֶׁ֣ר בְּתוֹךְ הַגָּן֒ אָמַ֣ר אֱלֹהִ֗ים לֹ֤א תֹֽאכְלוּ֙ מִמֶּ֔נּוּ וְלֹ֥א תִגְּע֖וּ בּ֑וֹ פֶּן תְּמֻתֽוּן׃",
+        "WLC": "וּ/מִ/פְּרִ֣י הָ/עֵץ֮ אֲשֶׁ֣ר בְּ/תוֹךְ הַ/גָּן֒ אָמַ֣ר אֱלֹהִ֗ים לֹ֤א תֹֽאכְלוּ֙ מִמֶּ֔/נּוּ וְ/לֹ֥א תִגְּע֖וּ בּ֑/וֹ פֶּן תְּמֻתֽוּ/ן׃",
         "VUL": "de fructu vero ligni quod est in medio paradisi, præcepit nobis Deus ne comederemus, et ne tangeremus illud, ne forte moriamur.",
         "LXX": "ἀπὸ δὲ καρποῦ τοῦ ξύλου ὅ ἐστιν ἐν μέσῳ τοῦ παραδείσου, εἶπεν ὁ θεός Οὐ φάγεσθε ἀπ’ αὐτοῦ οὐδὲ μὴ ἅψησθε αὐτοῦ, ἵνα μὴ ἀποθάνητε.",
         "NAB": "it is only about the fruit of the tree in the middle of the garden that God said, 'You shall not eat it or even touch it, lest you die.'\"",
-        "SYN": "только плодов дерева, которое среди рая, сказал Бог, не ешьте их и не прикасайтесь к ним, чтобы вам не умереть."
+        "SYN": "только плодов дерева, которое среди рая, сказал Бог, не ешьте их и не прикасайтесь к ним, чтобы вам не умереть.",
+        "NEO": "Mais du fruit de l’arbre qui est au milieu du jardin, Dieu a dit : Vous n’en mangerez pas et vous n’y toucherez point, de peur que vous ne mouriez. »",
+        "VAT_ES": "Pero respecto del árbol que está en medio del jardín, Dios nos ha dicho: «No coman de él ni lo toquen, porque de lo contrario quedarán sujetos a la muerte».",
+        "CEI": "ma del frutto dell'albero che sta in mezzo al giardino Dio ha detto: Non ne dovete mangiare e non lo dovete toccare, altrimenti morirete\"."
       }
     },
     "4": {
@@ -64,11 +73,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "וַיֹּ֥אמֶר הַנָּחָ֖שׁ אֶל הָֽאִשָּׁ֑ה לֹֽא מ֖וֹת תְּמֻתֽוּן׃",
-        "VUL": "Dixit autem serpens ad mulierem: Nequaquam morte moriemini.",
+        "WLC": "וַ/יֹּ֥אמֶר הַ/נָּחָ֖שׁ אֶל הָֽ/אִשָּׁ֑ה לֹֽא מ֖וֹת תְּמֻתֽוּ/ן׃",
+        "VUL": "Dixit autem serpens ad mulierem : Nequaquam morte moriemini.",
         "LXX": "καὶ εἶπεν ὁ ὄφις τῇ γυναικί Οὐ θανάτῳ ἀποθανεῖσθε·",
         "NAB": "But the serpent said to the woman: \"You certainly will not die!",
-        "SYN": "И сказал змей жене: нет, не умрете,"
+        "SYN": "И сказал змей жене: нет, не умрете,",
+        "NEO": "Le serpent dit à la femme : « Non, vous ne mourrez point ;",
+        "VAT_ES": "La serpiente dijo a la mujer: «No, no morirán.",
+        "CEI": "Ma il serpente disse alla donna: \"Non morirete affatto!"
       }
     },
     "5": {
@@ -79,11 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "כִּ֚י יֹדֵ֣עַ אֱלֹהִ֔ים כִּ֗י בְּיוֹם֙ אֲכָלְכֶ֣ם מִמֶּ֔נּוּ וְנִפְקְח֖וּ עֵֽינֵיכֶ֑ם וִהְיִיתֶם֙ כֵּֽאלֹהִ֔ים יֹדְעֵ֖י ט֥וֹב וָרָֽע׃",
+        "WLC": "כִּ֚י יֹדֵ֣עַ אֱלֹהִ֔ים כִּ֗י בְּ/יוֹם֙ אֲכָלְ/כֶ֣ם מִמֶּ֔/נּוּ וְ/נִפְקְח֖וּ עֵֽינֵי/כֶ֑ם וִ/הְיִיתֶם֙ כֵּֽ/אלֹהִ֔ים יֹדְעֵ֖י ט֥וֹב וָ/רָֽע׃",
         "VUL": "Scit enim Deus quod in quocumque die comederitis ex eo, aperientur oculi vestri, et eritis sicut dii, scientes bonum et malum.",
         "LXX": "ᾔδει γὰρ ὁ θεὸς ὅτι ἐν ᾗ ἂν ἡμὲρᾳ φάγησθε ἀπ’ αὐτοῦ, διανοιχθήσονται ὑμῶν οἱ ὀφθαλμοί, καὶ ἔσεσθε ὡς θεοί, γινώσκοντες καλὸν καὶ πονηρόν. ⸆",
         "NAB": "No, God knows well that the moment you eat of it your eyes will be opened and you will be like gods who know what is good and what is bad.\"",
-        "SYN": "но знает Бог, что в день, в который вы вкусите их, откроются глаза ваши, и вы будете, как боги, знающие добро и зло."
+        "SYN": "но знает Бог, что в день, в который вы вкусите их, откроются глаза ваши, и вы будете, как боги, знающие добро и зло.",
+        "NEO": "mais Dieu sait que, le jour où vous en mangerez, vos yeux s’ouvriront et vous serez comme Dieu, connaissant le bien et le mal. »",
+        "VAT_ES": "Dios sabe muy bien que cuando ustedes coman de ese árbol, se les abrirán los ojos y serán como dioses, conocedores del bien y del mal».",
+        "CEI": "Anzi, Dio sa che quando voi ne mangiaste, si aprirebbero i vostri occhi e diventereste come Dio, conoscendo il bene e il male\"."
       }
     },
     "6": {
@@ -94,11 +109,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "וַתֵּ֣רֶא הָֽאִשָּׁ֡ה כִּ֣י טוֹב֩ הָעֵ֨ץ לְמַאֲכָ֜ל וְכִ֧י תַֽאֲוָה ה֣וּא לָעֵינַ֗יִם וְנֶחְמָ֤ד הָעֵץ֙ לְהַשְׂכִּ֔יל וַתִּקַּ֥ח מִפִּרְי֖וֹ וַתֹּאכַ֑ל וַתִּתֵּ֧ן גַּם לְאִישָׁ֛הּ עִמָּ֖הּ וַיֹּאכַֽל׃",
-        "VUL": "Vidit igitur mulier quod bonum esset lignum ad vescendum, et pulchrum oculis, aspectuque delectabile: et tulit de fructu illius, et comedit: deditque viro suo, qui comedit.",
+        "WLC": "וַ/תֵּ֣רֶא הָֽ/אִשָּׁ֡ה כִּ֣י טוֹב֩ הָ/עֵ֨ץ לְ/מַאֲכָ֜ל וְ/כִ֧י תַֽאֲוָה ה֣וּא לָ/עֵינַ֗יִם וְ/נֶחְמָ֤ד הָ/עֵץ֙ לְ/הַשְׂכִּ֔יל וַ/תִּקַּ֥ח מִ/פִּרְי֖/וֹ וַ/תֹּאכַ֑ל וַ/תִּתֵּ֧ן גַּם לְ/אִישָׁ֛/הּ עִמָּ֖/הּ וַ/יֹּאכַֽל׃",
+        "VUL": "Vidit igitur mulier quod bonum esset lignum ad vescendum, et pulchrum oculis, aspectuque delectabile : et tulit de fructu illius, et comedit : deditque viro suo, qui comedit.",
         "LXX": "καὶ ἴδεν ἡ γυνὴ ὅτι καλὸν τὸ ξύλον εἰς βρῶσιν, καὶ ὅτι ἀρεστὸν τοῖς ὀφθαλμοῖς ἰδεῖν καὶ ὡραῖόν ἐστιν τοῦ κατανοῆσαι, καὶ λαβοῦσα τοῦ καρποῦ αὐτοῦ ἔφαγεν· καὶ ἔδωκεν καὶ τῷ ἀνδρὶ αὐτῆς μετ’ αὐτῆς, καὶ ἔφαγον.",
         "NAB": "The woman saw that the tree was good for food, pleasing to the eyes, and desirable for gaining wisdom. So she took some of its fruit and ate it; and she also gave some to her husband, who was with her, and he ate it.",
-        "SYN": "И увидела жена, что дерево хорошо для пищи, и что оно приятно для глаз и вожделенно, потому что дает знание; и взяла плодов его и ела; и дала также мужу своему, и он ел."
+        "SYN": "И увидела жена, что дерево хорошо для пищи, и что оно приятно для глаз и вожделенно, потому что дает знание; и взяла плодов его и ела; и дала также мужу своему, и он ел.",
+        "NEO": "La femme vit que le fruit de l’arbre était bon à manger, agréable à la vue et désirable pour acquérir l’intelligence ; elle prit de son fruit et en mangea ; elle en donna aussi à son mari qui était avec elle, et il en mangea.",
+        "VAT_ES": "Cuando la mujer vio que el árbol era apetitoso para comer, agradable a la vista y deseable para adquirir discernimiento, tomó de su fruto y comió; luego se lo dio a su marido, que estaba con ella, y él también comió.",
+        "CEI": "Allora la donna vide che l'albero era buono da mangiare, gradito agli occhi e desiderabile per acquistare saggezza; prese del suo frutto e ne mangiò, poi ne diede anche al marito, che era con lei, e anch'egli ne mangiò."
       }
     },
     "7": {
@@ -109,11 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "וַתִּפָּקַ֨חְנָה֙ עֵינֵ֣י שְׁנֵיהֶ֔ם וַיֵּ֣דְע֔וּ כִּ֥י עֵֽירֻמִּ֖ם הֵ֑ם וַֽיִּתְפְּרוּ֙ עֲלֵ֣ה תְאֵנָ֔ה וַיַּעֲשׂ֥וּ לָהֶ֖ם חֲגֹרֹֽת׃",
+        "WLC": "וַ/תִּפָּקַ֨חְנָה֙ עֵינֵ֣י שְׁנֵי/הֶ֔ם וַ/יֵּ֣דְע֔וּ כִּ֥י עֵֽירֻמִּ֖ם הֵ֑ם וַֽ/יִּתְפְּרוּ֙ עֲלֵ֣ה תְאֵנָ֔ה וַ/יַּעֲשׂ֥וּ לָ/הֶ֖ם חֲגֹרֹֽת׃",
         "VUL": "Et aperti sunt oculi amborum ; cumque cognovissent se esse nudos, consuerunt folia ficus, et fecerunt sibi perizomata.",
         "LXX": "καὶ διηνοίχθησαν οἱ ὀφθαλμοὶ τῶν δύο, καὶ ἔγνωσαν ὅτι γυμνοὶ ἦσαν· καὶ ἔρραψαν φύλλα συκῆς καὶ ἐποίησαν ἑαυτοῖς περιζώματα.",
         "NAB": "Then the eyes of both of them were opened, and they realized that they were naked; so they sewed fig leaves together and made loincloths for themselves.",
-        "SYN": "И открылись глаза у них обоих, и узнали они, что наги, и сшили смоковные листья, и сделали себе опоясания."
+        "SYN": "И открылись глаза у них обоих, и узнали они, что наги, и сшили смоковные листья, и сделали себе опоясания.",
+        "NEO": "Leurs yeux à tous deux s’ouvrirent et ils connurent qu’ils étaient nus ; et, ayant cousu des feuilles de figuier, ils s’en firent des ceintures.",
+        "VAT_ES": "Entonces se abrieron los ojos de los dos y descubrieron que estaban desnudos. Por eso se hicieron unos taparrabos, entretejiendo hojas de higuera.",
+        "CEI": "Allora si aprirono gli occhi di tutti e due e si accorsero di essere nudi; intrecciarono foglie di fico e se ne fecero cinture."
       }
     },
     "8": {
@@ -124,11 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "וַֽיִּשְׁמְע֞וּ אֶת ק֨וֹל יְהוָ֧ה אֱלֹהִ֛ים מִתְהַלֵּ֥ךְ בַּגָּ֖ן לְר֣וּחַ הַיּ֑וֹם וַיִּתְחַבֵּ֨א הָֽאָדָ֜ם וְאִשְׁתּ֗וֹ מִפְּנֵי֙ יְהוָ֣ה אֱלֹהִ֔ים בְּת֖וֹךְ עֵ֥ץ הַגָּֽן׃",
+        "WLC": "וַֽ/יִּשְׁמְע֞וּ אֶת ק֨וֹל יְהוָ֧ה אֱלֹהִ֛ים מִתְהַלֵּ֥ךְ בַּ/גָּ֖ן לְ/ר֣וּחַ הַ/יּ֑וֹם וַ/יִּתְחַבֵּ֨א הָֽ/אָדָ֜ם וְ/אִשְׁתּ֗/וֹ מִ/פְּנֵי֙ יְהוָ֣ה אֱלֹהִ֔ים בְּ/ת֖וֹךְ עֵ֥ץ הַ/גָּֽן׃",
         "VUL": "Et cum audissent vocem Domini Dei deambulantis in paradiso ad auram post meridiem, abscondit se Adam et uxor ejus a facie Domini Dei in medio ligni paradisi.",
         "LXX": "Καὶ ἤκουσαν τὴν φωνὴν Κυρίου τοῦ θεοῦ περιπατοῦντος ἐν τῷ παραδείσῳ τὸ δειλινόν· καὶ ἐκρύβησαν ὅ τε Ἀδὰμ καὶ ἡ γυνὴ αὐτοῦ ἀπὸ προσώπου Κυρίου τοῦ θεοῦ ἐν μέσῳ τοῦ ξύλου τοῦ παραδείσου.",
         "NAB": "When they heard the sound of the LORD God moving about in the garden at the breezy time of the day, the man and his wife hid themselves from the LORD God among the trees of the garden.",
-        "SYN": "И услышали голос Господа Бога, ходящего в раю во время прохлады дня; и скрылся Адам и жена его от лица Господа Бога между деревьями рая."
+        "SYN": "И услышали голос Господа Бога, ходящего в раю во время прохлады дня; и скрылся Адам и жена его от лица Господа Бога между деревьями рая.",
+        "NEO": "Alors ils entendirent la voix de \\+w Yahweh|strong=\"H3068\"\\+w** Dieu passant dans le jardin à la brise du jour, et l’homme et sa femme se cachèrent de devant \\+w Yahweh|strong=\"H3068\"\\+w** Dieu au milieu des arbres du jardin.",
+        "VAT_ES": "Al oír la voz del Señor Dios que se paseaba por el jardín, a la hora en que sopla la brisa, se ocultaron de él, entre los árboles del jardín.",
+        "CEI": "Poi udirono il Signore Dio che passeggiava nel giardino alla brezza del giorno e l'uomo con sua moglie si nascosero dal Signore Dio, in mezzo agli alberi del giardino."
       }
     },
     "9": {
@@ -139,11 +163,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "וַיִּקְרָ֛א יְהוָ֥ה אֱלֹהִ֖ים אֶל הָֽאָדָ֑ם וַיֹּ֥אמֶר ל֖וֹ אַיֶּֽכָּה׃",
-        "VUL": "Vocavitque Dominus Deus Adam, et dixit ei: Ubi es ?",
+        "WLC": "וַ/יִּקְרָ֛א יְהוָ֥ה אֱלֹהִ֖ים אֶל הָֽ/אָדָ֑ם וַ/יֹּ֥אמֶר ל֖/וֹ אַיֶּֽ/כָּה׃",
+        "VUL": "Vocavitque Dominus Deus Adam, et dixit ei : Ubi es ?",
         "LXX": "καὶ ἐκάλεσεν Κύριος ὁ θεὸς τὸν Ἀδὰμ καὶ εἶπεν αὐτῷ Ἀδάμ, ποῦ εἶ;",
         "NAB": "The LORD God then called to the man and asked him, \"Where are you?\"",
-        "SYN": "И воззвал Господь Бог к Адаму и сказал ему: [Адам,] где ты?"
+        "SYN": "И воззвал Господь Бог к Адаму и сказал ему: [Адам,] где ты?",
+        "NEO": "Mais \\+w Yahweh|strong=\"H3068\"\\+w** Dieu appela l’homme et lui dit : « Où es-tu ? »",
+        "VAT_ES": "Pero el Señor Dios llamó al hombre y le dijo: «&iquest;Dónde estás?».",
+        "CEI": "Ma il Signore Dio chiamò l'uomo e gli disse: \"Dove sei?\"."
       }
     },
     "10": {
@@ -154,11 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "WLC": "וַיֹּ֕אמֶר אֶת קֹלְךָ֥ שָׁמַ֖עְתִּי בַּגָּ֑ן וָאִירָ֛א כִּֽי עֵירֹ֥ם אָנֹ֖כִי וָאֵחָבֵֽא׃",
-        "VUL": "Qui ait: Vocem tuam audivi in paradiso, et timui, eo quod nudus essem, et abscondi me.",
+        "WLC": "וַ/יֹּ֕אמֶר אֶת קֹלְ/ךָ֥ שָׁמַ֖עְתִּי בַּ/גָּ֑ן וָ/אִירָ֛א כִּֽי עֵירֹ֥ם אָנֹ֖כִי וָ/אֵחָבֵֽא׃",
+        "VUL": "Qui ait : Vocem tuam audivi in paradiso, et timui, eo quod nudus essem, et abscondi me.",
         "LXX": "καὶ εἶπεν αὐτῷ Τὴν φωνήν σου ἤκουσα περιπατοῦντος ἐν τῷ παραδείσῳ, καὶ ἐφοβήθην, ὅτι γυμνός εἰμι, καὶ ἐκρύβην.",
         "NAB": "He answered, \"I heard you in the garden; but I was afraid, because I was naked, so I hid myself.\"",
-        "SYN": "Он сказал: голос Твой я услышал в раю, и убоялся, потому что я наг, и скрылся."
+        "SYN": "Он сказал: голос Твой я услышал в раю, и убоялся, потому что я наг, и скрылся.",
+        "NEO": "Il répondit : « J’ai entendu ta voix, dans le jardin, et j’ai eu peur, car je suis nu ; et je me suis caché. »",
+        "VAT_ES": "«Oí tus pasos por el jardín, respondió él, y tuve miedo porque estaba desnudo. Por eso me escondí».",
+        "CEI": "Rispose: \"Ho udito il tuo passo nel giardino: ho avuto paura, perché sono nudo, e mi sono nascosto\"."
       }
     },
     "11": {
@@ -169,11 +199,14 @@
         "LXX": 11
       },
       "text": {
-        "WLC": "וַיֹּ֕אמֶר מִ֚י הִגִּ֣יד לְךָ֔ כִּ֥י עֵירֹ֖ם אָ֑תָּה הֲמִן הָעֵ֗ץ אֲשֶׁ֧ר צִוִּיתִ֛יךָ לְבִלְתִּ֥י אֲכָל מִמֶּ֖נּוּ אָכָֽלְתָּ׃",
-        "VUL": "Cui dixit: Quis enim indicavit tibi quod nudus esses, nisi quod ex ligno de quo præceperam tibi ne comederes, comedisti ?",
+        "WLC": "וַ/יֹּ֕אמֶר מִ֚י הִגִּ֣יד לְ/ךָ֔ כִּ֥י עֵירֹ֖ם אָ֑תָּה הֲ/מִן הָ/עֵ֗ץ אֲשֶׁ֧ר צִוִּיתִ֛י/ךָ לְ/בִלְתִּ֥י אֲכָל מִמֶּ֖/נּוּ אָכָֽלְתָּ׃",
+        "VUL": "Cui dixit : Quis enim indicavit tibi quod nudus esses, nisi quod ex ligno de quo præceperam tibi ne comederes, comedisti ?",
         "LXX": "καὶ εἶπεν αὐτῷ Τίς ἀνήγγειλέν σοι ὅτι γυμνὸς εἶ, εἰ μὴ ἀπὸ τοῦ ξύλου οὗ ἐνετειλάμην σοι τούτου μόνου μὴ φαγεῖν, ἀπ’ αὐτοῦ ἔφαγες;",
         "NAB": "Then he asked, \"Who told you that you were naked? You have eaten, then, from the tree of which I had forbidden you to eat!\"",
-        "SYN": "И сказал [Бог]: кто сказал тебе, что ты наг? не ел ли ты от дерева, с которого Я запретил тебе есть?"
+        "SYN": "И сказал [Бог]: кто сказал тебе, что ты наг? не ел ли ты от дерева, с которого Я запретил тебе есть?",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** Dieu dit : « Qui t’a appris que tu es nu ? Est-ce que tu as mangé de l’arbre dont je t’avais défendu de manger ? »",
+        "VAT_ES": "El replicó: «&iquest;Y quién te dijo que estabas desnudo? &iquest;Acaso has comido del árbol que yo te prohibí?».",
+        "CEI": "Riprese: \"Chi ti ha fatto sapere che eri nudo? Hai forse mangiato dell'albero di cui ti avevo comandato di non mangiare?\"."
       }
     },
     "12": {
@@ -184,11 +217,14 @@
         "LXX": 12
       },
       "text": {
-        "WLC": "וַיֹּ֖אמֶר הָֽאָדָ֑ם הָֽאִשָּׁה֙ אֲשֶׁ֣ר נָתַ֣תָּה עִמָּדִ֔י הִ֛וא נָֽתְנָה לִּ֥י מִן הָעֵ֖ץ וָאֹכֵֽל׃",
-        "VUL": "Dixitque Adam: Mulier, quam dedisti mihi sociam, dedit mihi de ligno, et comedi.",
+        "WLC": "וַ/יֹּ֖אמֶר הָֽ/אָדָ֑ם הָֽ/אִשָּׁה֙ אֲשֶׁ֣ר נָתַ֣תָּה עִמָּדִ֔/י הִ֛וא נָֽתְנָה לִּ֥/י מִן הָ/עֵ֖ץ וָ/אֹכֵֽל׃",
+        "VUL": "Dixitque Adam : Mulier, quam dedisti mihi sociam, dedit mihi de ligno, et comedi.",
         "LXX": "καὶ εἶπεν ὁ Ἀδάμ Ἡ γυνή, ἣν ἔδωκας μετ’ ἐμοῦ, αὕτη μοι ἔδωκεν ἀπὸ τοῦ ξύλου, καὶ ἔφαγον.",
         "NAB": "The man replied, \"The woman whom you put here with me - she gave me fruit from the tree, so I ate it.\"",
-        "SYN": "Адам сказал: жена, которую Ты мне дал, она дала мне от дерева, и я ел."
+        "SYN": "Адам сказал: жена, которую Ты мне дал, она дала мне от дерева, и я ел.",
+        "NEO": "L’homme répondit : « La femme que vous avez mise avec moi m’a donné du fruit de l’arbre, et j’en ai mangé. »",
+        "VAT_ES": "El hombre respondió: «La mujer que pusiste a mi lado me dio el fruto y yo comí de él».",
+        "CEI": "Rispose l'uomo: \"La donna che tu mi hai posta accanto mi ha dato dell'albero e io ne ho mangiato\"."
       }
     },
     "13": {
@@ -199,11 +235,14 @@
         "LXX": 13
       },
       "text": {
-        "WLC": "וַיֹּ֨אמֶר יְהוָ֧ה אֱלֹהִ֛ים לָאִשָּׁ֖ה מַה זֹּ֣את עָשִׂ֑ית וַתֹּ֨אמֶר֙ הָֽאִשָּׁ֔ה הַנָּחָ֥שׁ הִשִּׁיאַ֖נִי וָאֹכֵֽל׃",
-        "VUL": "Et dixit Dominus Deus ad mulierem: Quare hoc fecisti ? Quæ respondit: Serpens decepit me, et comedi.",
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֧ה אֱלֹהִ֛ים לָ/אִשָּׁ֖ה מַה זֹּ֣את עָשִׂ֑ית וַ/תֹּ֨אמֶר֙ הָֽ/אִשָּׁ֔ה הַ/נָּחָ֥שׁ הִשִּׁיאַ֖/נִי וָ/אֹכֵֽל׃",
+        "VUL": "Et dixit Dominus Deus ad mulierem : Quare hoc fecisti ? Quæ respondit : Serpens decepit me, et comedi.",
         "LXX": "καὶ εἶπεν Κύριος ὁ θεὸς τῇ γυναικί Τί τοῦτο ἐποίησας; καὶ εἶπεν ἡ γυνή Ὁ ὄφις ἠπάτησέν με, καὶ ἔφαγον.",
         "NAB": "The LORD God then asked the woman, \"Why did you do such a thing?\" The woman answered, \"The serpent tricked me into it, so I ate it.\"",
-        "SYN": "И сказал Господь Бог жене: что ты это сделала? Жена сказала: змей обольстил меня, и я ела."
+        "SYN": "И сказал Господь Бог жене: что ты это сделала? Жена сказала: змей обольстил меня, и я ела.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** Dieu dit à la femme : « Pourquoi as-tu fait cela ? » La femme répondit : « Le serpent m’a trompée, et j’en ai mangé. »",
+        "VAT_ES": "El Señor Dios dijo a la mujer: «&iquest;Cómo hiciste semejante cosa?». La mujer respondió: «La serpiente me sedujo y comí».",
+        "CEI": "Il Signore Dio disse alla donna: \"Che hai fatto?\". Rispose la donna: \"Il serpente mi ha ingannata e io ho mangiato\"."
       }
     },
     "14": {
@@ -214,11 +253,14 @@
         "LXX": 14
       },
       "text": {
-        "WLC": "וַיֹּאמֶר֩ יְהֹוָ֨ה אֱלֹהִ֥ים אֶֽל הַנָּחָשׁ֮ כִּ֣י עָשִׂ֣יתָ זֹּאת֒ אָר֤וּר אַתָּה֙ מִכָּל הַבְּהֵמָ֔ה וּמִכֹּ֖ל חַיַּ֣ת הַשָּׂדֶ֑ה עַל גְּחֹנְךָ֣ תֵלֵ֔ךְ וְעָפָ֥ר תֹּאכַ֖ל כָּל יְמֵ֥י חַיֶּֽיךָ׃",
-        "VUL": "Et ait Dominus Deus ad serpentem: [Quia fecisti hoc,/ maledictus es inter omnia animantia, et bestias terræ:/ super pectus tuum gradieris, et terram comedes cunctis diebus vitæ tuæ./",
+        "WLC": "וַ/יֹּאמֶר֩ יְהֹוָ֨ה אֱלֹהִ֥ים אֶֽל הַ/נָּחָשׁ֮ כִּ֣י עָשִׂ֣יתָ זֹּאת֒ אָר֤וּר אַתָּה֙ מִ/כָּל הַ/בְּהֵמָ֔ה וּ/מִ/כֹּ֖ל חַיַּ֣ת הַ/שָּׂדֶ֑ה עַל גְּחֹנְ/ךָ֣ תֵלֵ֔ךְ וְ/עָפָ֥ר תֹּאכַ֖ל כָּל יְמֵ֥י חַיֶּֽי/ךָ׃",
+        "VUL": "Et ait Dominus Deus ad serpentem : [Quia fecisti hoc,/ maledictus es inter omnia animantia, et bestias terræ :/ super pectus tuum gradieris, et terram comedes cunctis diebus vitæ tuæ./",
         "LXX": "καὶ εἶπεν Κύριος ὁ θεὸς τῷ ὄφει Ὅτι ἐποίησας τοῦτο, ἐπικατάρατος σὺ ἀπὸ πάντων τῶν κτηνῶν καὶ ἀπὸ πάντων τῶν θηρίων τῆς γῆς· ἐπὶ τῷ στήθει σου καὶ τῇ κοιλίᾳ πορεύσῃ, καὶ γῆν φάγῃ πάσας τὰς ἡμέρας τῆς ζωῆς σου.",
         "NAB": "Then the LORD God said to the serpent: \"Because you have done this, you shall be banned from all the animals and from all the wild creatures; On your belly shall you crawl, and dirt shall you eat all the days of your life.",
-        "SYN": "И сказал Господь Бог змею: за то, что ты сделал это, проклят ты пред всеми скотами и пред всеми зверями полевыми; ты будешь ходить на чреве твоем, и будешь есть прах во все дни жизни твоей;"
+        "SYN": "И сказал Господь Бог змею: за то, что ты сделал это, проклят ты пред всеми скотами и пред всеми зверями полевыми; ты будешь ходить на чреве твоем, и будешь есть прах во все дни жизни твоей;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** Dieu dit au serpent : « Parce que tu as fait cela, tu es maudit entre tous les animaux domestiques et toutes les bêtes des champs ; tu marcheras sur ton ventre, et tu mangeras la poussière tous les jours de ta vie.",
+        "VAT_ES": "Y el Señor Dios dijo a la serpiente: «Por haber hecho esto, maldita seas entre todos los animales domésticos y entre todos los animales del campo. Te arrastrarás sobre tu vientre, y comerás polvo todos los días de tu vida.",
+        "CEI": "Allora il Signore Dio disse al serpente: \"Poiché tu hai fatto questo, sii tu maledetto più di tutto il bestiame e più di tutte le bestie selvatiche; sul tuo ventre camminerai e polvere mangerai per tutti i giorni della tua vita."
       }
     },
     "15": {
@@ -229,11 +271,14 @@
         "LXX": 15
       },
       "text": {
-        "WLC": "וְאֵיבָ֣ה אָשִׁ֗ית בֵּֽינְךָ֙ וּבֵ֣ין הָֽאִשָּׁ֔ה וּבֵ֥ין זַרְעֲךָ֖ וּבֵ֣ין זַרְעָ֑הּ ה֚וּא יְשׁוּפְךָ֣ רֹ֔אשׁ וְאַתָּ֖ה תְּשׁוּפֶ֥נּוּ עָקֵֽב׃",
-        "VUL": "Inimicitias ponam inter te et mulierem,/ et semen tuum et semen illius:/ ipsa conteret caput tuum,/ et tu insidiaberis calcaneo ejus.]",
+        "WLC": "וְ/אֵיבָ֣ה אָשִׁ֗ית בֵּֽינְ/ךָ֙ וּ/בֵ֣ין הָֽ/אִשָּׁ֔ה וּ/בֵ֥ין זַרְעֲ/ךָ֖ וּ/בֵ֣ין זַרְעָ֑/הּ ה֚וּא יְשׁוּפְ/ךָ֣ רֹ֔אשׁ וְ/אַתָּ֖ה תְּשׁוּפֶ֥/נּוּ עָקֵֽב׃",
+        "VUL": "Inimicitias ponam inter te et mulierem,/ et semen tuum et semen illius :/ ipsa conteret caput tuum,/ et tu insidiaberis calcaneo ejus.]",
         "LXX": "καὶ ἔχθραν θήσω ἀνὰ μέσον σου καὶ ἀνὰ μέσον τῆς γυναικός, καὶ ἀνὰ μέσον τοῦ σπέρματός σου καὶ ἀνὰ μέσον τοῦ σπέρματος αὐτῆς· αὐτός σου τηρήσει κεφαλήν, καὶ σὺ τηρήσεις αὐτοῦ πτέρναν.",
         "NAB": "I will put enmity between you and the woman, and between your offspring and hers; He will strike at your head, while you strike at his heel.\"",
-        "SYN": "и вражду положу между тобою и между женою, и между семенем твоим и между семенем ее; оно будет поражать тебя в голову, а ты будешь жалить его в пяту."
+        "SYN": "и вражду положу между тобою и между женою, и между семенем твоим и между семенем ее; оно будет поражать тебя в голову, а ты будешь жалить его в пяту.",
+        "NEO": "Et je mettrai une inimitié entre toi et la femme, entre ta postérité et sa postérité ; celle-ci te meurtrira à la tête, et tu la meurtriras au talon. »",
+        "VAT_ES": "Pondré enemistad entre ti y la mujer, entre tu linaje y el suyo. El te aplastará la cabeza y tú le acecharás el talón».",
+        "CEI": "Io porrò inimicizia tra te e la donna, tra la tua stirpe e la sua stirpe: questa ti schiaccerà la testa e tu le insidierai il calcagno\"."
       }
     },
     "16": {
@@ -244,11 +289,14 @@
         "LXX": 16
       },
       "text": {
-        "WLC": "אֶֽל הָאִשָּׁ֣ה אָמַ֗ר הַרְבָּ֤ה אַרְבֶּה֙ עִצְּבוֹנֵ֣ךְ וְהֵֽרֹנֵ֔ךְ בְּעֶ֖צֶב תֵּֽלְדִ֣י בָנִ֑ים וְאֶל אִישֵׁךְ֙ תְּשׁ֣וּקָתֵ֔ךְ וְה֖וּא יִמְשָׁל בָּֽךְ׃",
-        "VUL": "Mulieri quoque dixit: Multiplicabo ærumnas tuas, et conceptus tuos: in dolore paries filios, et sub viri potestate eris, et ipse dominabitur tui.",
+        "WLC": "אֶֽל הָ/אִשָּׁ֣ה אָמַ֗ר הַרְבָּ֤ה אַרְבֶּה֙ עִצְּבוֹנֵ֣/ךְ וְ/הֵֽרֹנֵ֔/ךְ בְּ/עֶ֖צֶב תֵּֽלְדִ֣י בָנִ֑ים וְ/אֶל אִישֵׁ/ךְ֙ תְּשׁ֣וּקָתֵ֔/ךְ וְ/ה֖וּא יִמְשָׁל בָּֽ/ךְ׃",
+        "VUL": "Mulieri quoque dixit : Multiplicabo ærumnas tuas, et conceptus tuos : in dolore paries filios, et sub viri potestate eris, et ipse dominabitur tui.",
         "LXX": "καὶ τῇ γυναικὶ εἶπεν Πληθύνων πληθυνῶ τὰς λύπας σου καὶ τὸν στεναγμόν σου· ἐν λύπαις τέξῃ τέκνα, καὶ πρὸς τὸν ἄνδρα σου ἡ ἀποστροφή σου, καὶ αὐτός σου κυριεύσει.",
         "NAB": "To the woman he said: \"I will intensify the pangs of your childbearing; in pain shall you bring forth children. Yet your urge shall be for your husband, and he shall be your master.\"",
-        "SYN": "Жене сказал: умножая умножу скорбь твою в беременности твоей; в болезни будешь рождать детей; и к мужу твоему влечение твое, и он будет господствовать над тобою."
+        "SYN": "Жене сказал: умножая умножу скорбь твою в беременности твоей; в болезни будешь рождать детей; и к мужу твоему влечение твое, и он будет господствовать над тобою.",
+        "NEO": "A la femme il dit : « je multiplierai tes souffrances, et spécialement celles de ta grossesse ; tu enfanteras des fils dans la douleur ; ton désir se portera vers ton mari, et il dominera sur toi. »",
+        "VAT_ES": "Y el Señor Dios dijo a la mujer: «Multiplicaré los sufrimientos de tus embarazos; darás a luz a tus hijos con dolor. Sentirás atracción por tu marido, y él te dominará».",
+        "CEI": "Alla donna disse: \"Moltiplicherò i tuoi dolori e le tue gravidanze, con dolore partorirai figli. Verso tuo marito sarà il tuo istinto, ma egli ti dominerà\"."
       }
     },
     "17": {
@@ -259,11 +307,14 @@
         "LXX": 17
       },
       "text": {
-        "WLC": "וּלְאָדָ֣ם אָמַ֗ר כִּֽי שָׁמַעְתָּ֮ לְק֣וֹל אִשְׁתֶּךָ֒ וַתֹּ֨אכַל֙ מִן הָעֵ֔ץ אֲשֶׁ֤ר צִוִּיתִ֨יךָ֙ לֵאמֹ֔ר לֹ֥א תֹאכַ֖ל מִמֶּ֑נּוּ אֲרוּרָ֤ה הָֽאֲדָמָה֙ בַּֽעֲבוּרֶ֔ךָ בְּעִצָּבוֹן֙ תֹּֽאכֲלֶ֔נָּה כֹּ֖ל יְמֵ֥י חַיֶּֽיךָ׃",
-        "VUL": "Adæ vero dixit: Quia audisti vocem uxoris tuæ, et comedisti de ligno, ex quo præceperam tibi ne comederes, maledicta terra in opere tuo: in laboribus comedes ex ea cunctis diebus vitæ tuæ.",
+        "WLC": "וּ/לְ/אָדָ֣ם אָמַ֗ר כִּֽי שָׁמַעְתָּ֮ לְ/ק֣וֹל אִשְׁתֶּ/ךָ֒ וַ/תֹּ֨אכַל֙ מִן הָ/עֵ֔ץ אֲשֶׁ֤ר צִוִּיתִ֨י/ךָ֙ לֵ/אמֹ֔ר לֹ֥א תֹאכַ֖ל מִמֶּ֑/נּוּ אֲרוּרָ֤ה הָֽ/אֲדָמָה֙ בַּֽ/עֲבוּרֶ֔/ךָ בְּ/עִצָּבוֹן֙ תֹּֽאכֲלֶ֔/נָּה כֹּ֖ל יְמֵ֥י חַיֶּֽי/ךָ׃",
+        "VUL": "Adæ vero dixit : Quia audisti vocem uxoris tuæ, et comedisti de ligno, ex quo præceperam tibi ne comederes, maledicta terra in opere tuo : in laboribus comedes ex ea cunctis diebus vitæ tuæ.",
         "LXX": "τῷ δὲ Ἀδὰμ εἶπεν Ὅτι ἤκουσας τῆς φωνῆς τῆς γυναικός σου καὶ ἔφαγες ἀπὸ τοῦ ξύλου οὗ ἐνετειλάμην σοι τούτου μόνου μὴ φαγεῖν, ἀπ’ αὐτοῦ ἔφαγες, ἐπικατάρατος ἡ γῆ ἐν τοῖς ἔργοις σου· ἐν λύπαις φάγῃ αὐτὴν πάσας τὰς ἡμέρας τῆς ζωῆς σου·",
         "NAB": "To the man he said: \"Because you listened to your wife and ate from the tree of which I had forbidden you to eat, \"Cursed be the ground because of you! In toil shall you eat its yield all the days of your life.",
-        "SYN": "Адаму же сказал: за то, что ты послушал голоса жены твоей и ел от дерева, о котором Я заповедал тебе, сказав: не ешь от него, проклята земля за тебя; со скорбью будешь питаться от нее во все дни жизни твоей;"
+        "SYN": "Адаму же сказал: за то, что ты послушал голоса жены твоей и ел от дерева, о котором Я заповедал тебе, сказав: не ешь от него, проклята земля за тебя; со скорбью будешь питаться от нее во все дни жизни твоей;",
+        "NEO": "Il dit à l’homme : « Parce que tu as écouté la voix de ta femme, et que tu as mangé de l’arbre au sujet duquel je t’avais donné cet ordre : Tu n’en mangeras pas, le sol est maudit à cause de toi. C’est par un travail pénible que tu en tireras ta nourriture, tous les jours de ta vie ;",
+        "VAT_ES": "Y dijo al hombre: «Porque hiciste caso a tu mujer y comiste del árbol que yo te prohibí, maldito sea el suelo por tu culpa. Con fatiga sacarás de él tu alimento todos los días de tu vida.",
+        "CEI": "All'uomo disse: \"Poiché hai ascoltato la voce di tua moglie e hai mangiato dell'albero, di cui ti avevo comandato: Non ne devi mangiare, maledetto sia il suolo per causa tua! Con dolore ne trarrai il cibo per tutti i giorni della tua vita."
       }
     },
     "18": {
@@ -274,11 +325,14 @@
         "LXX": 18
       },
       "text": {
-        "WLC": "וְק֥וֹץ וְדַרְדַּ֖ר תַּצְמִ֣יחַֽ לָ֑ךְ וְאָכַלְתָּ֖ אֶת עֵ֥שֶׂב הַשָּׂדֶֽה׃",
+        "WLC": "וְ/ק֥וֹץ וְ/דַרְדַּ֖ר תַּצְמִ֣יחַֽ לָ֑/ךְ וְ/אָכַלְתָּ֖ אֶת עֵ֥שֶׂב הַ/שָּׂדֶֽה׃",
         "VUL": "Spinas et tribulos germinabit tibi, et comedes herbam terræ.",
         "LXX": "ἀκάνθας καὶ τριβόλους ἀνατελεῖ σοι, καὶ φάγῃ τὸν χόρτον τοῦ ἀγροῦ.",
         "NAB": "Thorns and thistles shall it bring forth to you, as you eat of the plants of the field.",
-        "SYN": "терния и волчцы произрастит она тебе; и будешь питаться полевою травою;"
+        "SYN": "терния и волчцы произрастит она тебе; и будешь питаться полевою травою;",
+        "NEO": "il te produira des épines et des chardons, et tu mangeras l’herbe des champs.",
+        "VAT_ES": "El te producirá cardos y espinas y comerás la hierba del campo.",
+        "CEI": "Spine e cardi produrrà per te e mangerai l'erba campestre."
       }
     },
     "19": {
@@ -289,11 +343,14 @@
         "LXX": 19
       },
       "text": {
-        "WLC": "בְּזֵעַ֤ת אַפֶּ֨יךָ֙ תֹּ֣אכַל לֶ֔חֶם עַ֤ד שֽׁוּבְךָ֙ אֶל הָ֣אֲדָמָ֔ה כִּ֥י מִמֶּ֖נָּה לֻקָּ֑חְתָּ כִּֽי עָפָ֣ר אַ֔תָּה וְאֶל עָפָ֖ר תָּשֽׁוּב׃",
-        "VUL": "In sudore vultus tui vesceris pane, donec revertaris in terram de qua sumptus es: quia pulvis es et in pulverem reverteris.",
+        "WLC": "בְּ/זֵעַ֤ת אַפֶּ֨י/ךָ֙ תֹּ֣אכַל לֶ֔חֶם עַ֤ד שֽׁוּבְ/ךָ֙ אֶל הָ֣/אֲדָמָ֔ה כִּ֥י מִמֶּ֖/נָּה לֻקָּ֑חְתָּ כִּֽי עָפָ֣ר אַ֔תָּה וְ/אֶל עָפָ֖ר תָּשֽׁוּב׃",
+        "VUL": "In sudore vultus tui vesceris pane, donec revertaris in terram de qua sumptus es : quia pulvis es et in pulverem reverteris.",
         "LXX": "ἐν ἱδρῶτι τοῦ προσώπου σου φάγῃ τὸν ἄρτον σου ἕως τοῦ ἀποστρέψαι σε εἰς τὴν γῆν ἐξ ἧς ἐλήμφθης· ὅτι γῆ εἶ καὶ εἰς γῆν ἀπελεύσῃ.",
         "NAB": "By the sweat of your face shall you get bread to eat, Until you return to the ground, from which you were taken; For you are dirt, and to dirt you shall return.\"",
-        "SYN": "в поте лица твоего будешь есть хлеб, доколе не возвратишься в землю, из которой ты взят, ибо прах ты и в прах возвратишься."
+        "SYN": "в поте лица твоего будешь есть хлеб, доколе не возвратишься в землю, из которой ты взят, ибо прах ты и в прах возвратишься.",
+        "NEO": "C’est à la sueur de ton visage que tu mangeras du pain, jusqu’à ce que tu retournes à la terre, parce que c’est d’elle que tu as été pris ; car tu es poussière et tu retourneras en poussière. »",
+        "VAT_ES": "Ganarás el pan con el sudor de tu frente, hasta que vuelvas a la tierra, de donde fuiste sacado. &iexcl;Porque eres polvo y al polvo volverás!».",
+        "CEI": "Con il sudore del tuo volto mangerai il pane; finchè tornerai alla terra, perchè da essa sei stato tratto: polvere tu sei e in polvere tornerai!\"."
       }
     },
     "20": {
@@ -304,11 +361,14 @@
         "LXX": 20
       },
       "text": {
-        "WLC": "וַיִּקְרָ֧א הָֽאָדָ֛ם שֵׁ֥ם אִשְׁתּ֖וֹ חַוָּ֑ה כִּ֛י הִ֥וא הָֽיְתָ֖ה אֵ֥ם כָּל חָֽי׃",
-        "VUL": "Et vocavit Adam nomen uxoris suæ, Heva: eo quod mater esset cunctorum viventium.",
+        "WLC": "וַ/יִּקְרָ֧א הָֽ/אָדָ֛ם שֵׁ֥ם אִשְׁתּ֖/וֹ חַוָּ֑ה כִּ֛י הִ֥וא הָֽיְתָ֖ה אֵ֥ם כָּל חָֽי׃",
+        "VUL": "Et vocavit Adam nomen uxoris suæ, Heva : eo quod mater esset cunctorum viventium.",
         "LXX": "Καὶ ἐκάλεσεν Ἀδὰμ τὸ ὄνομα τῆς γυναικὸς Ζωή, ὅτι αὕτη μήτηρ πάντων τῶν ζώντων.",
         "NAB": "The man called his wife Eve, because she became the mother of all the living.",
-        "SYN": "И нарек Адам имя жене своей: Ева, ибо она стала матерью всех живущих."
+        "SYN": "И нарек Адам имя жене своей: Ева, ибо она стала матерью всех живущих.",
+        "NEO": "Adam donna à sa femme le nom d’Eve, parce qu’elle a été la mère de tous les vivants.",
+        "VAT_ES": "El hombre dio a su mujer el nombre de Eva, por ser ella la madre de todos los vivientes",
+        "CEI": "L'uomo chiamò la moglie Eva, perché essa fu la madre di tutti i viventi."
       }
     },
     "21": {
@@ -319,11 +379,14 @@
         "LXX": 21
       },
       "text": {
-        "WLC": "וַיַּעַשׂ֩ יְהוָ֨ה אֱלֹהִ֜ים לְאָדָ֧ם וּלְאִשְׁתּ֛וֹ כָּתְנ֥וֹת ע֖וֹר וַיַּלְבִּשֵֽׁם׃",
-        "VUL": "Fecit quoque Dominus Deus Adæ et uxori ejus tunicas pelliceas, et induit eos:",
+        "WLC": "וַ/יַּעַשׂ֩ יְהוָ֨ה אֱלֹהִ֜ים לְ/אָדָ֧ם וּ/לְ/אִשְׁתּ֛/וֹ כָּתְנ֥וֹת ע֖וֹר וַ/יַּלְבִּשֵֽׁ/ם׃",
+        "VUL": "Fecit quoque Dominus Deus Adæ et uxori ejus tunicas pelliceas, et induit eos :",
         "LXX": "καὶ ἐποίησεν Κύριος ὁ θεὸς τῷ Ἀδὰμ καὶ τῇ γυναικὶ αὐτοῦ χιτῶνας δερματίνους, καὶ ἐνέδυσεν αὐτούς.",
         "NAB": "For the man and his wife the LORD God made leather garments, with which he clothed them.",
-        "SYN": "И сделал Господь Бог Адаму и жене его одежды кожаные и одел их."
+        "SYN": "И сделал Господь Бог Адаму и жене его одежды кожаные и одел их.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** Dieu fit à Adam et à sa femme des tuniques de peau et les en revêtit.",
+        "VAT_ES": "El Señor Dios hizo al hombre y a su mujer unas túnicas de pieles y los vistió.",
+        "CEI": "Il Signore Dio fece all'uomo e alla donna tuniche di pelli e le vestì."
       }
     },
     "22": {
@@ -334,11 +397,14 @@
         "LXX": 22
       },
       "text": {
-        "WLC": "וַיֹּ֣אמֶר יְהוָ֣ה אֱלֹהִ֗ים הֵ֤ן הָֽאָדָם֙ הָיָה֙ כְּאַחַ֣ד מִמֶּ֔נּוּ לָדַ֖עַת ט֣וֹב וָרָ֑ע וְעַתָּ֣ה פֶּן יִשְׁלַ֣ח יָד֗וֹ וְלָקַח֙ גַּ֚ם מֵעֵ֣ץ הַֽחַיִּ֔ים וְאָכַ֖ל וָחַ֥י לְעֹלָֽם׃",
-        "VUL": "et ait: Ecce Adam quasi unus ex nobis factus est, sciens bonum et malum: nunc ergo ne forte mittat manum suam, et sumat etiam de ligno vitæ, et comedat, et vivat in æternum.",
+        "WLC": "וַ/יֹּ֣אמֶר יְהוָ֣ה אֱלֹהִ֗ים הֵ֤ן הָֽ/אָדָם֙ הָיָה֙ כְּ/אַחַ֣ד מִמֶּ֔/נּוּ לָ/דַ֖עַת ט֣וֹב וָ/רָ֑ע וְ/עַתָּ֣ה פֶּן יִשְׁלַ֣ח יָד֗/וֹ וְ/לָקַח֙ גַּ֚ם מֵ/עֵ֣ץ הַֽ/חַיִּ֔ים וְ/אָכַ֖ל וָ/חַ֥י לְ/עֹלָֽם׃",
+        "VUL": "et ait : Ecce Adam quasi unus ex nobis factus est, sciens bonum et malum : nunc ergo ne forte mittat manum suam, et sumat etiam de ligno vitæ, et comedat, et vivat in æternum.",
         "LXX": "Καὶ εἶπεν Κύριος ὁ θεός Ἰδοὺ Ἀδὰμ γέγονεν ὡς εἷς ἐξ ἡμῶν, τοῦ γινώσκειν καλὸν καὶ πονηρόν· καὶ νῦν μή ποτε ἐκτείνῃ τὴν χεῖρα καὶ λάβῃ τοῦ ξύλου τῆς ζωῆς καὶ φάγῃ, καὶ ζήσεται εἰς τὸν αἰῶνα.",
         "NAB": "Then the LORD God said: \"See! The man has become like one of us, knowing what is good and what is bad! Therefore, he must not be allowed to put out his hand to take fruit from the tree of life also, and thus eat of it and live forever.\"",
-        "SYN": "И сказал Господь Бог: вот, Адам стал как один из Нас, зная добро и зло; и теперь как бы не простер он руки своей, и не взял также от дерева жизни, и не вкусил, и не стал жить вечно."
+        "SYN": "И сказал Господь Бог: вот, Адам стал как один из Нас, зная добро и зло; и теперь как бы не простер он руки своей, и не взял также от дерева жизни, и не вкусил, и не стал жить вечно.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** Dieu dit : « Voici que l’homme est devenu comme l’un de nous, pour la connaissance du bien et du mal. Maintenant, qu’il n’avance pas sa main, qu’il ne prenne pas aussi de l’arbre de vie, pour en manger et vivre éternellement. »",
+        "VAT_ES": "Después el Señor Dios dijo: «El hombre ha llegado a ser como uno de nosotros en el conocimiento del bien y del mal. No vaya a ser que ahora extienda su mano, tome también del árbol de la vida, coma y viva para siempre».",
+        "CEI": "Il Signore Dio disse allora: \"Ecco l'uomo è diventato come uno di noi, per la conoscenza del bene e del male. Ora, egli non stenda più la mano e non prenda anche dell'albero della vita, ne mangi e viva sempre!\"."
       }
     },
     "23": {
@@ -349,11 +415,14 @@
         "LXX": 23
       },
       "text": {
-        "WLC": "וַֽיְשַׁלְּחֵ֛הוּ יְהוָ֥ה אֱלֹהִ֖ים מִגַּן עֵ֑דֶן לַֽעֲבֹד֙ אֶת הָ֣אֲדָמָ֔ה אֲשֶׁ֥ר לֻקַּ֖ח מִשָּֽׁם׃",
+        "WLC": "וַֽ/יְשַׁלְּחֵ֛/הוּ יְהוָ֥ה אֱלֹהִ֖ים מִ/גַּן עֵ֑דֶן לַֽ/עֲבֹד֙ אֶת הָ֣/אֲדָמָ֔ה אֲשֶׁ֥ר לֻקַּ֖ח מִ/שָּֽׁם׃",
         "VUL": "Et emisit eum Dominus Deus de paradiso voluptatis, ut operaretur terram de qua sumptus est.",
         "LXX": "καὶ ἐξαπέστειλεν αὐτὸν Κύριος ὁ θεὸς ἐκ τοῦ παραδείσου τῆς τρυφῆς, ἐργάζεσθαι τὴν γῆν ἐξ ἧς ἐλήμφθη.",
         "NAB": "The LORD God therefore banished him from the garden of Eden, to till the ground from which he had been taken.",
-        "SYN": "И выслал его Господь Бог из сада Едемского, чтобы возделывать землю, из которой он взят."
+        "SYN": "И выслал его Господь Бог из сада Едемского, чтобы возделывать землю, из которой он взят.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** Dieu le fit sortir du jardin d’Eden, pour qu’il cultivât la terre d’où il avait été pris.",
+        "VAT_ES": "Entonces expulsó al hombre del jardín de Edén, para que trabajara la tierra de la que había sido sacado.",
+        "CEI": "Il Signore Dio lo scacciò dal giardino di Eden, perché lavorasse il suolo da dove era stato tratto."
       }
     },
     "24": {
@@ -364,11 +433,14 @@
         "LXX": 24
       },
       "text": {
-        "WLC": "וַיְגָ֖רֶשׁ אֶת הָֽאָדָ֑ם וַיַּשְׁכֵּן֩ מִקֶּ֨דֶם לְגַן עֵ֜דֶן אֶת הַכְּרֻבִ֗ים וְאֵ֨ת לַ֤הַט הַחֶ֨רֶב֙ הַמִּתְהַפֶּ֔כֶת לִשְׁמֹ֕ר אֶת דֶּ֖רֶךְ עֵ֥ץ הַֽחַיִּֽים׃",
-        "VUL": "Ejecitque Adam: et collocavit ante paradisum voluptatis cherubim, et flammeum gladium, atque versatilem, ad custodiendam viam ligni vitæ.",
+        "WLC": "וַ/יְגָ֖רֶשׁ אֶת הָֽ/אָדָ֑ם וַ/יַּשְׁכֵּן֩ מִ/קֶּ֨דֶם לְ/גַן עֵ֜דֶן אֶת הַ/כְּרֻבִ֗ים וְ/אֵ֨ת לַ֤הַט הַ/חֶ֨רֶב֙ הַ/מִּתְהַפֶּ֔כֶת לִ/שְׁמֹ֕ר אֶת דֶּ֖רֶךְ עֵ֥ץ הַֽ/חַיִּֽים׃",
+        "VUL": "Ejecitque Adam : et collocavit ante paradisum voluptatis cherubim, et flammeum gladium, atque versatilem, ad custodiendam viam ligni vitæ.",
         "LXX": "καὶ ἐξέβαλεν τὸν Ἀδὰμ καὶ κατῴκισεν αὐτὸν ἀπέναντι τοῦ παραδείσου τῆς τρυφῆς, καὶ ἔταξεν τὰ χερουβὶν καὶ τὴν φλογίνην ῥομφαίαν τὴν στρεφομένην φυλάσσειν τὴν ὁδὸν τοῦ ξύλου τῆς ζωῆς.",
-        "NAB": "When he expelled the man, he settled him east of the garden of Eden; and he stationed the cherubim and the fiery revolving sword, to guard the way to the tree of life. 1 [5] Like gods who know: or \"like God who knows.\" 2 [8] The breezy time of the day: literally \"the wind of the day.\" On most days in Palestine a cooling breeze blows from the sea shortly before sunset. 3 [15] He will strike . . . at his heel: since the antecedent for he and his is the collective noun offspring, i.e., all the descendants of the woman, a more exact rendering of the sacred writer's words would be, \"They will strike . . . at their heels.\" However, later theology saw in this passage more than unending hostility between snakes and men. The serpent was regarded as the devil ( Wisdom 2:24; John 8:44; Rev 12:9; 20:2), whose eventual defeat seems implied in the contrast between head and heel. Because \"the Son of God appeared that he might destroy the works of the devil\" ( 1 John 3:8), the passage can be understood as the first promise of a Redeemer for fallen mankind. The woman's offspring then is primarily Jesus Christ. 4 [20] This verse seems to be out of place; it would fit better after Genesis 3:24. The Hebrew name hawwa (\"Eve\") is related to the Hebrew word hay (\"living\"). 5 [24] The above rendering is based on the ancient Greek version; that of the current Hebrew is, When he expelled the man, he settled east of the garden of Eden, the cherubim. Previous - Next Copyright &copy; Libreria Editrice Vaticana",
-        "SYN": "И изгнал Адама, и поставил на востоке у сада Едемского Херувима и пламенный меч обращающийся, чтобы охранять путь к дереву жизни."
+        "NAB": "When he expelled the man, he settled him east of the garden of Eden; and he stationed the cherubim and the fiery revolving sword, to guard the way to the tree of life.",
+        "SYN": "И изгнал Адама, и поставил на востоке у сада Едемского Херувима и пламенный меч обращающийся, чтобы охранять путь к дереву жизни.",
+        "NEO": "Et il chassa l’homme, et il mit à l’orient du jardin d’Eden les Chérubins et la flamme de l’épée tournoyante, pour garder le chemin de l’arbre de vie.",
+        "VAT_ES": "Y después de expulsar al hombre, puso al oriente del jardín de Edén a los querubines y la llama de la espada zigzagueante, para custodiar el acceso al árbol de la vida.",
+        "CEI": "Scacciò l'uomo e pose ad oriente del giardino di Eden i cherubini e la fiamma della spada folgorante, per custodire la via all'albero della vita."
       }
     }
   }
