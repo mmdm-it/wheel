@@ -9,6 +9,29 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.8.119] - 2025-12-10
+
+### Added
+- Complete Ruth (4 chapters, 85 verses) with 8 languages: WLC, LXX, VUL, NAB, SYN, NEO, VAT_ES, CEI
+- Create `scripts/parsers.py` reusable parsing library for all source formats
+- Add NT sections to BOOKPOPULATION.md tracking file
+
+### Changed
+- Refactor `scripts/populate_ruth.py` with language-specific parsers
+
+## [0.8.118] - 2025-12-10
+
+### Added
+- Populate Ruth (4 chapters, 85 verses) with 8 languages for testing
+- Add Hebrew (WLC), Greek (LXX), Latin (VUL), English (NAB), Russian (SYN), French (NEO), Spanish (VAT_ES), Italian (CEI) translations
+- Create `scripts/populate_ruth.py` multi-language population script
+- Create `BOOKPOPULATION.md` to track book population status
+
+### Fixed
+- Add `normalizeItemData()` to mobile-data.js for v2.0 compatibility
+- Map v2.0 `seq` field to `sort_number` for sorting
+- Flatten `text.{CODE}` object to language names for UI compatibility
+
 ## [0.8.118] - 2025-12-10
 
 ### Changed

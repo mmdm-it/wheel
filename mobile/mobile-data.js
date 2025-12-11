@@ -2036,11 +2036,15 @@ class DataManager {
             // This is an array of leaf items (final level in hierarchy)
             dataLocation.forEach((itemData, index) => {
                 const itemName = this.getItemDisplayName(itemData, `item-${index}`);
+                
+                // Normalize v2.0 schema: map 'seq' to 'sort_number' for compatibility
+                const normalizedData = this.normalizeItemData(itemData);
+                
                 items.push({
                     name: itemName,
                     ...this.extractParentProperties(parentItem),
                     key: `${parentItem.key}/${itemName}`,
-                    data: itemData,
+                    data: normalizedData,
                     index: index,
                     __level: childLevelName,
                     __levelDepth: childLevelDepth,
@@ -2066,6 +2070,9 @@ class DataManager {
                     displayName = itemKey;
                 }
                 
+                // Normalize v2.0 schema: map 'seq' to 'sort_number' for compatibility
+                const normalizedData = this.normalizeItemData(childData);
+                
                 // Create item with appropriate properties
                 const item = {
                     name: displayName,
@@ -2086,7 +2093,7 @@ class DataManager {
                 }
                 // Store child data if it's not an array (arrays are leaf items, handled separately)
                 if (!childIsArray) {
-                    item.data = childData;
+                    item.data = normalizedData;
                 }
 
                 items.push(item);
@@ -2095,6 +2102,51 @@ class DataManager {
 
         // Apply sorting based on configuration
         return this.sortItems(items, levelConfig);
+    }
+    
+    /**
+     * Normalize item data to ensure compatibility between v1.0 and v2.0 schemas.
+     * Maps v2.0 'seq' field to 'sort_number' for sorting compatibility.
+     */
+    normalizeItemData(itemData) {
+        if (!itemData || typeof itemData !== 'object') {
+            return itemData;
+        }
+        
+        let normalized = { ...itemData };
+        
+        // If item has 'seq' but no 'sort_number', map seq → sort_number
+        if (itemData.seq !== undefined && itemData.sort_number === undefined) {
+            normalized.sort_number = itemData.seq;
+        }
+        
+        // v2.0 schema: flatten 'text' object to old language-code format
+        // Maps text.VUL → latin, text.WLC → hebrew, text.LXX → greek, etc.
+        if (itemData.text && typeof itemData.text === 'object') {
+            const translationMap = {
+                'VUL': 'latin',
+                'WLC': 'hebrew',
+                'LXX': 'greek',
+                'BYZ': 'greek',  // NT Greek
+                'NAB': 'english',
+                'DRA': 'english',
+                'SYN': 'russian',
+                'NEO': 'french',
+                'VAT_ES': 'spanish',
+                'CEI_ES': 'spanish',
+                'CEI': 'italian',
+                'POR': 'portuguese'
+            };
+            
+            Object.entries(itemData.text).forEach(([code, text]) => {
+                const langKey = translationMap[code] || code.toLowerCase();
+                if (normalized[langKey] === undefined) {
+                    normalized[langKey] = text;
+                }
+            });
+        }
+        
+        return normalized;
     }
 
     /**
