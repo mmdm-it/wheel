@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "Τίμα ἰατρὸν πρὸς τὰς χρείας τιμαῖς αὐτοῦ, καὶ γὰρ αὐτὸν ἔκτισεν Κύριος·",
+        "VUL": "[Honora medicum propter necessitatem :/ etenim illum creavit Altissimus./",
+        "SYN": "Почитай врача честью по надобности в нем, ибо Господь создал его,",
+        "NEO": "Rends au médecin pour tes besoins les honneurs qui lui sont dus ; car, lui aussi, c’est le Seigneur qui l’a créé.",
+        "NAB": "Hold the physician in honor, for he is essential to you, and God it was who established his profession.",
+        "VAT_ES": "Honra al médico por sus servicios, como corresponde, porque también a él lo ha creado el Señor.",
+        "CEI": "Onora il medico come si deve secondo il bisogno, anch'egli è stato creato dal Signore."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "παρὰ γὰρ Ὑψίστου ἐστὶν ἴασις, καὶ παρὰ βασιλέως λήμψεται δόμα.",
+        "VUL": "A Deo est enim omnis medela,/ et a rege accipiet donationem./",
+        "SYN": "и от Вышнего - врачевание, и от царя получает он дар.",
+        "NEO": "C’est du Très-Haut, en effet, que vient la guérison, et du roi lui-même il reçoit des présents.",
+        "NAB": "From God the doctor has his wisdom, and the king provides for his sustenance.",
+        "VAT_ES": "La curación procede del Altísimo, y el médico recibe presentes del rey.",
+        "CEI": "Dall'Altissimo viene la guarigione, anche dal re egli riceve doni."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐπιστήμη ἰατροῦ ἀνυψώσει κεφαλὴν αὐτοῦ, καὶ ἔναντι μεγιστάνων θαυμασθήσεται.",
+        "VUL": "Disciplina medici exaltabit caput illius,/ et in conspectu magnatorum collaudabitur./",
+        "SYN": "Знание врача возвысит его голову, и между вельможами он будет в почете.",
+        "NEO": "La science du médecin élève sa tête, et il est admiré en présence des grands.",
+        "NAB": "His knowledge makes the doctor distinguished, and gives him access to those in authority.",
+        "VAT_ES": "La ciencia del médico afianza su prestigio y él se gana la admiración de los grandes.",
+        "CEI": "La scienza del medico lo fa procedere a testa alta, egli è ammirato anche tra i grandi."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "Κύριος ἔκτισεν ἐκ γῆς φάρμακα, καὶ ἀνὴρ φρόνιμος οὐ προσοχθιεῖ αὐτοῖς.",
+        "VUL": "Altissimus creavit de terra medicamenta,/ et vir prudens non abhorrebit illa./",
+        "SYN": "Господь создал из земли врачевства, и благоразумный человек не будет пренебрегать ими.",
+        "NEO": "Le Seigneur fait produire à la terre ses médicaments, et l’homme sensé ne les dédaigne pas.",
+        "NAB": "God makes the earth yield healing herbs which the prudent man should not neglect;",
+        "VAT_ES": "El Señor hizo brotar las plantas medicinales, y el hombre prudente no las desprecia.",
+        "CEI": "Il Signore ha creato medicamenti dalla terra, l'uomo assennato non li disprezza."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "οὐκ ἀπὸ ξύλου ἐγλυκάνθη ὕδωρ εἰς τὸ γνωσθῆναι τὴν ἰσχὺν αὐτοῦ;",
+        "VUL": "Nonne a ligno indulcata est aqua amara ?/",
+        "SYN": "Не от дерева ли вода сделалась сладкою, чтобы познана была сила Его?",
+        "NEO": "Un bois n’a-t-il pas adouci l’eau amère, afin que sa vertu fût connue de tous ?",
+        "NAB": "Was not the water sweetened by a twig that men might learn his power?",
+        "VAT_ES": "&iquest;Acaso una rama no endulzó el agua, a fin de que se conocieran sus propiedades?",
+        "CEI": "L'acqua non fu forse resa dolce per mezzo di un legno, per rendere evidente la potenza di lui?"
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ αὐτὸς ἔδωκεν ἀνθρώποις ἐπιστήμην ἐνδοξάζεσθαι ἐν τοῖς θαυμασίοις αὐτοῦ·",
+        "VUL": "Ad agnitionem hominum virtus illorum :/ et dedit hominibus scientiam Altissimus,/ honorari in mirabilibus suis./",
+        "SYN": "Для того Он и дал людям знание, чтобы прославляли Его в чудных делах Его:",
+        "NEO": "Il a donné aux hommes la science, pour se glorifier par ses dons merveilleux.",
+        "NAB": "He endows men with the knowledge to glory in his mighty works,",
+        "VAT_ES": "El Señor dio a los hombres la ciencia, para ser glorificado por sus maravillas.",
+        "CEI": "Dio ha dato agli uomini la scienza perché potessero gloriarsi delle sue meraviglie."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν αὐτοῖς ἐθεράπευσεν καὶ ἦρεν τὸν πόνον αὐτοῦ,",
+        "VUL": "In his curans mitigabit dolorem :/ et unguentarius faciet pigmenta suavitatis,/ et unctiones conficiet sanitatis :/ et non consummabuntur opera ejus./",
+        "SYN": "ими он врачует человека и уничтожает болезнь его.",
+        "NEO": "Par eux l’homme procure la guérison, et enlève la douleur.",
+        "NAB": "Through which the doctor eases pain and the druggist prepares his medicines;",
+        "VAT_ES": "Con esos remedios el médico cura y quita el dolor, y el farmacéutico prepara sus ung&uuml;entos.",
+        "CEI": "Con esse il medico cura ed elimina il dolore e il farmacista prepara le miscele."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "μυρεψὸς ἐν τούτοις ποιήσει μίγμα· καὶ οὐ μὴ συντελέσῃ ἔργα αὐτοῦ, καὶ εἰρήνη παρ’ αὐτοῦ ἐστιν ἐπὶ προσώπου τῆς γῆς.",
+        "VUL": "Pax enim Dei super faciem terræ./",
+        "SYN": "Приготовляющий лекарства делает из них смесь, и занятия его не оканчиваются, и чрез него бывает благо на лице земли.",
+        "NEO": "Le pharmacien en fait des mixtions, et son œuvre est à peine achevée que par lui le bien-être se répand sur la face de la terre.",
+        "NAB": "Thus God's creative work continues without cease in its efficacy on the surface of the earth.",
+        "VAT_ES": "Así, las obras del Señor no tienen fin, y de él viene la salud a la superficie de la tierra.",
+        "CEI": "Non verranno meno le sue opere! Da lui proviene il benessere sulla terra."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "τέκνον, ἐν ἀρρωστήματί σου μὴ παράβλεπε, ἀλλ’ εὖξαι Κυρίῳ, καὶ αὐτὸς ἰάσεταί σε·",
+        "VUL": "Fili, in tua infirmitate ne despicias teipsum :/ sed ora Dominum, et ipse curabit te./",
+        "SYN": "Сын мой! в болезни твоей не будь небрежен, но молись Господу, и Он исцелит тебя.",
+        "NEO": "Mon fils, si tu es malade, ne néglige pas mon conseil, mais prie le Seigneur, et il te guérira.",
+        "NAB": "My son, when you are ill, delay not, but pray to God, who will heal you:",
+        "VAT_ES": "Si estás enfermo, hijo mío, no seas negligentes, ruega al Señor, y él te sanará.",
+        "CEI": "Figlio, non avvilirti nella malattia, ma prega il Signore ed egli ti guarirà."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀπόστησον πλημμελίαν καὶ εὔθυνον χεῖρας, καὶ ἀπὸ πάσης ἁμαρτίας καθάρισον καρδίαν·",
+        "VUL": "Averte a delicto, et dirige manus,/ et ab omni delicto munda cor tuum./",
+        "SYN": "Оставь греховную жизнь и исправь руки твои, и от всякого греха очисти сердце.",
+        "NEO": "Eloigne la transgression, redresse tes mains, et purifie ton cœur de tout péché.",
+        "NAB": "Flee wickedness; let your hands be just, cleanse your heart of every sin;",
+        "VAT_ES": "No incurras en falta, enmienda tu conducta y purifica tu corazón de todo pecado.",
+        "CEI": "Purìficati, lavati le mani; monda il cuore da ogni peccato."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "δὸς εὐωδίαν καὶ μνημόσυνον σεμιδάλεως, καὶ λίπανον προσφοράν, ὡς μὴ ὑπάρχων.",
+        "VUL": "Da suavitatem et memoriam similaginis,/ et impingua oblationem, et da locum medico :/",
+        "SYN": "Вознеси благоухание и из семидала памятную жертву и сделай приношение тучное, как бы уже умирающий;",
+        "NEO": "Offre l’encens et l’oblation de farine, et immole de grasses victimes, comme si c’en était fait de toi.",
+        "NAB": "Offer your sweet-smelling oblation and petition, a rich offering according to your means.",
+        "VAT_ES": "Ofrece el suave aroma y el memorial de harina, presenta una rica ofrenda, como si fuera la última.",
+        "CEI": "Offri incenso e un memoriale di fior di farina e sacrifici pingui secondo le tue possibilità."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἰατρῷ δὸς τόπον, καὶ γὰρ αὐτὸν ἔκτισεν Κύριος, καὶ μὴ ἀποστήτω σου, καὶ γὰρ αὐτοῦ χρεία.",
+        "VUL": "etenim illum Dominus creavit, et non discedat a te,/ quia opera ejus sunt necessaria./",
+        "SYN": "и дай место врачу, ибо и его создал Господь, и да не удаляется он от тебя, ибо он нужен.",
+        "NEO": "Puis donne accès au médecin, car, lui aussi, le Seigneur l’a créé, et qu’il ne s’éloigne pas de toi, car tu as besoin de lui.",
+        "NAB": "Then give the doctor his place lest he leave; for you need him too.",
+        "VAT_ES": "Después, deja actuar al médico, porque el Señor lo creó; que no se aparte de ti, porque lo necesitas.",
+        "CEI": "Fà poi passare il medico - il Signore ha creato anche lui - non stia lontano da te, poiché ne hai bisogno."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔστιν καιρὸς ὅτε καὶ ἐν χερσὶν αὐτῶν εὐοδία·",
+        "VUL": "Est enim tempus quando in manus illorum incurras :/",
+        "SYN": "В иное время и в их руках бывает успех;",
+        "NEO": "Il arrive que leurs mains ont du succès,",
+        "NAB": "There are times that give him an advantage,",
+        "VAT_ES": "En algunos casos, tu mejoría está en sus manos,",
+        "CEI": "Ci sono casi in cui il successo è nelle loro mani."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ γὰρ αὐτοὶ Κυρίου δεηθήσονται, ἵνα εὐοδώσῃ αὐτοῖς ἀνάπαυσιν καὶ ἴασιν χάριν ἐμβιώσεως.",
+        "VUL": "ipsi vero Dominum deprecabuntur, ut dirigat requiem eorum,/ et sanitatem, propter conversationem illorum./",
+        "SYN": "ибо и они молятся Господу, чтобы Он помог им подать больному облегчение и исцеление к продолжению жизни.",
+        "NEO": "car eux aussi prieront le Seigneur, afin qu’il leur accorde de procurer le repos et la guérison, pour prolonger la vie du malade.",
+        "NAB": "and he too beseeches God That his diagnosis may be correct and his treatment bring about a cure.",
+        "VAT_ES": "y ellos mismos rogarán al Señor que les permita dar un alivio y curar al enfermo, para que se restablezca.",
+        "CEI": "Anch'essi pregano il Signore perché li guidi felicemente ad alleviare la malattia e a risanarla, perché il malato ritorni alla vita."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "ὁ ἁμαρτάνων ἔναντι τοῦ ποιήσαντος αὐτὸν ἐμπέσοι εἰς χεῖρας ἰατροῦ. ⸆",
+        "VUL": "Qui delinquit in conspectu ejus qui fecit eum,/ incidet in manus medici.]",
+        "SYN": "Но кто согрешает пред Сотворившим его, да впадет в руки врача!",
+        "NEO": "Que celui qui pèche devant son Créateur tombe entre les mains du médecin !",
+        "NAB": "He who is a sinner toward his Maker will be defiant toward the doctor.",
+        "VAT_ES": "El hombre que peca delante de su Creador, &iexcl;que caiga en manos del médico!",
+        "CEI": "Chi pecca contro il proprio creatore cada nelle mani del medico."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "τέκνον, ἐπὶ νεκρῷ κατάγαγε δάκρυα, καὶ ὡς δεινὰ πάσχων ἔναρξαι θρήνου, κατὰ δὲ τὴν κρίσιν αὐτοῦ περίστειλον τὸ σῶμα αὐτοῦ, καὶ μὴ ὑπερίδῃς τὴν ταφὴν αὐτοῦ.",
+        "VUL": "[Fili, in mortuum produc lacrimas,/ et quasi dira passus incipe plorare :/ et secundum judicium contege corpus illius,/ et non despicias sepulturam illius./",
+        "SYN": "Сын мой! над умершим пролей слезы и, как бы подвергшийся жестокому несчастию, начни плач; прилично облеки тело его и не пренебреги погребением его;",
+        "NEO": "Mon fils, répands des pleurs sur un mort, et, comme si tu souffrais cruellement, commence la lamentation. Puis donne à son corps les soins qui lui sont dus, et ne néglige pas sa sépulture.",
+        "NAB": "My son, shed tears for one who is dead with wailing and bitter lament; As is only proper, prepare the body, absent not yourself from his burial:",
+        "VAT_ES": "Hijo mío, por un muerto, derrama lágrimas, y entona un lamento, como quien sufre terriblemente. Entierra su cadáver en la forma establecida y no descuides su sepultura.",
+        "CEI": "Figlio, versa lacrime sul morto, e come uno che soffre crudelmente inizia il lamento; poi seppelliscine il corpo secondo il suo rito e non trascurare la sua tomba."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "πίκρανον κλαυθμὸν καὶ θέρμανον κοπετόν, καὶ ποίησον τὸ πένθος κατὰ τὴν ἀξίαν αὐτοῦ ἡμέραν μίαν καὶ δύο χάριν διαβολῆς, καὶ παρακλήθητι λύπης ἕνεκα·",
+        "VUL": "Propter delaturam autem amare fer luctum illius uno die,/ et consolare propter tristitiam :/",
+        "SYN": "горький да будет плач и рыдание теплое, и продолжи сетование о нем, по достоинству его, день или два, для избежания осуждения, и тогда утешься от печали;",
+        "NEO": "Verse des larmes amères, exhale des soupirs brûlants, et fais le deuil, selon qu’il en est digne, un jour ou deux, pour éviter les mauvais propos. Ensuite console-toi, pour éloigner la tristesse ;",
+        "NAB": "Weeping bitterly, mourning fully, pay your tribute of sorrow, as he deserves,",
+        "VAT_ES": "Llora amargamente, golpéate el pecho, y observa el duelo que él se merece, uno o dos días, para evitar comentarios, y luego consuélate de tu tristeza.",
+        "CEI": "Piangi amaramente e alza il tuo lamento, il lutto sia proporzionato alla sua dignità, un giorno o due, per prevenire le dicerie, quindi consòlati del tuo dolore."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀπὸ λύπης γὰρ ἐκβαίνει θάνατος, καὶ λύπη καρδίας κάμψει ἰσχύν·",
+        "VUL": "et fac luctum secundum meritum ejus/ uno die, vel duobus, propter detractionem :/",
+        "SYN": "ибо от печали бывает смерть, и печаль сердечная истощит силу.",
+        "NEO": "car de la tristesse peut venir la mort, et le chagrin du cœur abat toute vigueur.",
+        "NAB": "One or two days, to prevent gossip; then compose yourself after your grief,",
+        "VAT_ES": "Porque la tristeza lleva a la muerte y un corazón abatido quita las fuerzas.",
+        "CEI": "Difatti il dolore precede la morte, il dolore del cuore logora la forza."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν ἀπαγωγῇ παραβαίνει καὶ λύπη, καὶ βίος πτωχοῦ κατὰ καρδίας.",
+        "VUL": "a tristitia enim festinat mors, et cooperit virtutem,/ et tristitia cordis flectit cervicem./",
+        "SYN": "С несчастьем пребывает и печаль, и жизнь нищего тяжела для сердца.",
+        "NEO": "Quand on emmène un mort, le chagrin doit passer avec lui, comme la vie du pauvre est contre son cœur.",
+        "NAB": "For grief can bring on an extremity and heartache destroy one's health.",
+        "VAT_ES": "En la desgracia la tristeza es permanente, y el corazón maldice una vida miserable.",
+        "CEI": "In una disgrazia resta a lungo il dolore, una vita di miseria è dura al cuore."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +341,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "μὴ δῷς εἰς λύπην τὴν καρδίαν σου, ἀπόστησον αὐτὴν μνησθεὶς τὰ ἔσχατα·",
+        "VUL": "In abductione permanet tristitia,/ et substantia inopis secundum cor ejus./",
+        "SYN": "Не предавай сердца твоего печали; отдаляй ее от себя, вспоминая о конце.",
+        "NEO": "N’abandonne pas ton cœur à la tristesse ; chasse-la, te souvenant de ta fin.",
+        "NAB": "Turn not your thoughts to him again; cease to recall him; think rather of the end.",
+        "VAT_ES": "No te dejes llevar por la tristeza, aléjala, acordándote de tu fin.",
+        "CEI": "Non abbandonare il tuo cuore al dolore; scaccialo pensando alla tua fine."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +358,15 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "LXX": "μὴ ἐπιλάθῃ, οὐ γάρ ἐστιν ἐπάνοδος, καὶ τοῦτον οὐκ ὠφελήσεις καὶ σεαυτὸν κακώσεις.",
+        "VUL": "Ne dederis in tristitia cor tuum,/ sed repelle eam a te, et memento novissimorum./",
+        "SYN": "Не забывай о сем, ибо нет возвращения; и ему ты не принесешь пользы, а себе повредишь.",
+        "NEO": "Ne l’oublie pas : il n’y a pas de retour ; tu ne seras pas utile au mort, et tu feras du mal à toi-même.",
+        "NAB": "Recall him not, for there is no hope of his return; it will not help him, but will do you harm.",
+        "VAT_ES": "Nunca lo olvides: &iexcl;no hay camino de retorno! Al muerto, no podrás serle útil y te harás mal a ti.",
+        "CEI": "Non dimenticare: non ci sarà infatti ritorno; al morto non gioverai e farai del male a te stesso."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +375,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "μνήσθητι ὅτι τὸ κρίμα αὐτοῦ οὕτω ὡς καὶ τὸ σόν· ἐμοὶ ἐχθὲς καὶ σοὶ σήμερον.",
+        "VUL": "Noli oblivisci, neque enim est conversio :/ et huic nihil proderis, et teipsum pessimabis./",
+        "SYN": "\"Вспоминай о приговоре надо мною, потому что он также и над тобою; мне вчера, а тебе сегодня\".",
+        "NEO": "Souviens-toi qu’à l’arrêt porté sur lui, le tien sera pareil : « Pour moi hier, pour toi aujourd’hui. »",
+        "NAB": "Remember that his fate will also be yours; for him it was yesterday, for you today.",
+        "VAT_ES": "«Recuerda mi destino, que será también el tuyo: ayer a mí y hoy a ti».",
+        "CEI": "Ricòrdati della mia sorte che sarà anche la tua: \"Ieri a me e oggi a te\"."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +392,15 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν ἀναπαύσει νεκροῦ κατάπαυσον τὸ μνημόσυνον αὐτοῦ, καὶ παρακλήθητι ἐν αὐτῷ ἐν ἐξόδῳ πνεύματος αὐτοῦ.",
+        "VUL": "Memor esto judicii mei : sic enim erit et tuum :/ mihi heri, et tibi hodie./",
+        "SYN": "С упокоением умершего успокой и память о нем, и утешься о нем по исходе души его.",
+        "NEO": "Quand le mort repose, laisse reposer sa mémoire, et console-toi à son sujet, au départ de son esprit.",
+        "NAB": "With the departed dead, let memory fade; rally your courage, once the soul has left.",
+        "VAT_ES": "Ya que el muerto descansa, deja en paz su memoria, y trata de consolarte, porque ha partido su espíritu.",
+        "CEI": "Nel riposo del morto lascia riposare anche il suo ricordo; consòlati di lui, ora che il suo spirito è partito."
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +409,15 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "LXX": "Σοφία γραμματέως ἐν εὐκαιρίᾳ σχολῆς, καὶ ὁ ἐλασσούμενος πράξει αὐτοῦ σοφισθήσεται.",
+        "VUL": "In requie mortui requiescere fac memoriam ejus,/ et consolare illum in exitu spiritus sui.]",
+        "SYN": "Мудрость книжная приобретается в благоприятное время досуга, и кто мало имеет своих занятий, может приобрести мудрость.",
+        "NEO": "La sagesse du scribe s’acquiert à la faveur du loisir, et celui qui n’a pas à s’occuper d’affaires deviendra sage.",
+        "NAB": "The scribe's profession increases his wisdom; whoever is free from toil can become a wise man.",
+        "VAT_ES": "La sabiduría del escriba exige tiempo y dedicación, y el que no está absorbido por otras tareas, se hará sabio.",
+        "CEI": "La sapienza dello scriba si deve alle sue ore di quiete; chi ha poca attività diventerà saggio."
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +426,15 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "LXX": "τί σοφισθήσεται ὁ κρατῶν ἀρότρου, καὶ καυχώμενος ἐν δόρατι κέντρου, βόας ἐλαύνων καὶ ἀναστρεφόμενος ἐν ἔργοις αὐτῶν, καὶ ἡ διήγησις αὐτῶν ἐν υἱοῖς ταύρων;",
+        "VUL": "[Sapientia scribæ in tempore vacuitatis,/ et qui minoratur actu sapientiam percipiet,/ qua sapientia replebitur./",
+        "SYN": "Как может сделаться мудрым тот, кто правит плугом и хвалится бичом, гоняет волов и занят работами их и которого разговор только о молодых волах?",
+        "NEO": "Comment deviendrait-il sage celui qui gouverne la charrue, dont l’ambition est de manier, en guise de lance, l’aiguillon ; qui pousse ses bœufs et se mêle à leurs travaux, et ne sait discourir que des petits des taureaux ?",
+        "NAB": "How can he become learned who guides the plow, who thrills in wielding the goad like a lance, Who guides the ox and urges on the bullock, and whose every concern is for cattle?",
+        "VAT_ES": "&iquest;Cómo se hará sabio el que maneja el arado y se enorgullece de empuñar la picana, el que guía los bueyes, trabaja con ellos, y no sabe hablar más que de novillos?",
+        "CEI": "Come potrà divenir saggio chi maneggia l'aratro e si vanta di brandire un pungolo? Spinge innanzi i buoi e si occupa del loro lavoro e parla solo di vitelli?"
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +443,15 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "LXX": "καρδίαν αὐτοῦ δώσει ἐκδοῦναι αὔλακας, καὶ ἡ ἀγρυπνία αὐτοῦ εἰς χορτάσματα δαμάλεων.",
+        "VUL": "Qui tenet aratrum,/ et qui gloriatur in jaculo, stimulo boves agitat,/ et conversatur in operibus eorum,/ et enarratio ejus in filiis taurorum./",
+        "SYN": "Сердце его занято тем, чтобы проводить борозды, и забота его - о корме для телиц.",
+        "NEO": "Il met tout son cœur à tracer des sillons, un soin vigilant à procurer le fourrage à ses génisses.",
+        "NAB": "His care is for plowing furrows, and he keeps a watch on the beasts in the stalls.",
+        "VAT_ES": "El pone todo su empeño en abrir los surcos y se desvela por dar forraje a las terneras.",
+        "CEI": "Pone la sua mente a tracciare solchi, non dorme per dare il foraggio alle giovenche."
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +460,15 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "LXX": "οὕτως πᾶς τέκτων καὶ ἀρχιτέκτων, ὅστις νύκτωρ ὡς ἡμέρᾳ διάγει· οἱ γλύφοντες γλύμματα σφραγίδων, καὶ ἡ ὑπομονὴ αὐτοῦ ἀλλοιῶσαι ποικιλίαν· καρδίαν αὐτοῦ δώσει εἰς ὁμοιῶσαι ζωγραφίαν, καὶ ἡ ἀγρυπνία αὐτοῦ τελέσαι ἔργον.",
+        "VUL": "Cor suum dabit ad versandos sulcos,/ et vigilia ejus in sagina vaccarum./",
+        "SYN": "Так и всякий плотник и зодчий, который проводит ночь, как день: кто занимается резьбою, того прилежание в том, чтобы оразнообразить форму;",
+        "NEO": "Il en est de même de tout charpentier et constructeur, qui poursuivent leurs occupations la nuit comme le jour ; de celui qui grave les empreintes des cachets : son application est de varier les figures ; il met son cœur à reproduire le dessin, un soin vigilant à parfaire son ouvrage.",
+        "NAB": "So with every engraver and designer who, laboring night and day, Fashions carved seals, and whose concern is to vary the pattern. His care is to produce a vivid impression, and he keeps watch till he finishes his design.",
+        "VAT_ES": "Lo mismo pasa con el artesano y el constructor, que trabajan día y noche; con los que graban las efigies de los sellos y modifican pacientemente los diseños: ellos se dedican a reproducir el modelo y trabajan hasta tarde para acabar la obra.",
+        "CEI": "Così ogni artigiano e ogni artista che passa la notte come il giorno: quelli che incidono incisioni per sigilli e con pazienza cercano di variare l'intaglio; pongono mente a ritrarre bene il disegno e stanno svegli per terminare il lavoro."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +477,15 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "LXX": "οὕτως χαλκεὺς καθήμενος ἐγγὺς ἄκμονος καὶ καταμανθάνων ἀργῷ σιδήρῳ· ἀτμὶς πυρὸς πήξει σάρκας αὐτοῦ, καὶ ἐν θέρμῃ καμίνου διαμαχήσεται· φωνὴ σφύρης καινιεῖ τὸ οὖς αὐτοῦ, καὶ κατέναντι ὁμοιώματος σκεύους οἱ ὀφθαλμοὶ αὐτοῦ· καρδίαν αὐτοῦ δώσει εἰς συντέλειαν ἔργων, καὶ ἡ ἀγρυπνία αὐτοῦ κοσμῆσαι ἐπὶ συντελείας.",
+        "VUL": "Sic omnis faber et architectus,/ qui noctem tamquam diem transigit :/ qui sculpit signacula sculptilia,/ et assiduitas ejus variat picturam :/ cor suum dabit in similitudinem picturæ,/ et vigilia sua perficiet opus./",
+        "SYN": "сердце свое он устремляет на то, чтобы изображение было похоже, и забота его - о том, чтоб окончить дело в совершенстве.",
+        "NEO": "Tel est le forgeron assis près de son enclume, et considérant le fer encore brut ; la vapeur du feu fait fondre ses chairs, et il tient bon contre la chaleur de la fournaise ; le bruit du marteau assourdit son oreille, et son œil est fixé sur le modèle de l’ustensile. Il met son cœur à parfaire son œuvre, un soin vigilant à la polir dans la perfection.",
+        "NAB": "So with the smith standing near his anvil, forging crude iron. The heat from the fire sears his flesh, yet he toils away in the furnace heat. The clang of the hammer deafens his ears, His eyes are fixed on the tool he is shaping. His care is to finish his work, and he keeps watch till he perfects it in detail.",
+        "VAT_ES": "Lo mismo pasa con el herrero, sentado junto al yunque, con la atención fija en el hierro que forja: el vaho del fuego derrite su carne y él se debate con el calor de la fragua; el ruido del martillo ensordece sus oídos y sus ojos están fijos en el modelo del objeto; pone todo su empeño en acabar sus obras y se desvela por dejarlas bien terminadas.",
+        "CEI": "Così il fabbro siede davanti all'incudine ed è intento ai lavori del ferro: la vampa del fuoco gli strugge le carni, e col calore del fornello deve lottare; il rumore del martello gli assorda gli orecchi, i suoi occhi sono fissi al modello dell'oggetto, è tutto preoccupato per finire il suo lavoro, sta sveglio per rifinirlo alla perfezione."
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +494,15 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "LXX": "οὕτως κεραμεὺς καθήμενος ἐν ἔργῳ αὐτοῦ καὶ συστρέφων ἐν ποσὶν αὐτοῦ τροχόν, ὃς ἐν μερίμνῃ κεῖται διὰ παντὸς ἐπὶ τὸ ἔργον αὐτοῦ, καὶ ἐναρίθμιος πᾶσα ἡ ἐργασία αὐτοῦ·",
+        "VUL": "Sic faber ferrarius sedens juxta incudem,/ et considerans opus ferri :/ vapor ignis uret carnes ejus,/ et in calore fornacis concertatur./",
+        "SYN": "Так и ковач, который сидит у наковальни и думает об изделии из железа: дым от огня изнуряет его тело, и с жаром от печи борется он;",
+        "NEO": "Tel encore le potier assis à son ouvrage, et tournant la roue avec ses pieds : constamment il est en souci de son travail, et tous ses efforts tendent à fournir un certain nombre de vases.",
+        "NAB": "So with the potter sitting at his labor, revolving the wheel with his feet. He is always concerned for his products, and turns them out in quantity.",
+        "VAT_ES": "Lo mismo pasa con el alfarero, sentado junto a su obra, mientras hace girar el torno con sus pies: está concentrado exclusivamente en su tarea y apremiado por completar la cantidad;",
+        "CEI": "Così il vasaio seduto al suo lavoro gira con i piedi la ruota, è sempre in ansia per il suo lavoro; tutti i suoi gesti sono calcolati."
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +511,15 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν βραχίονι αὐτοῦ τυπώσει πηλόν, καὶ πρὸ ποδῶν κάμψει ἰσχὺν αὐτοῦ· καρδίαν ἐπιδώσει συντελέσαι τὸ χάρισμα, καὶ ἡ ἀγρυπνία αὐτοῦ καθαρίσαι κάμινον.",
+        "VUL": "Vox mallei innovat aurem ejus,/ et contra similitudinem vasis oculus ejus./",
+        "SYN": "звук молота оглушает его слух, и глаза его устремлены на модель сосуда;",
+        "NEO": "Avec son bras il façonne l’argile, et devant ses pieds il la rend flexible ; il met son cœur à parfaire le vernis, un soin vigilant à nettoyer son four.",
+        "NAB": "With his hands he molds the clay, and with his feet softens it. His care is for proper coloring, and he keeps watch on the fire of his kiln.",
+        "VAT_ES": "con su brazo modela la arcilla y con los pies vence su resistencia; pone todo su empeño en acabar el barnizado y se desvela por limpiar el horno.",
+        "CEI": "Con il braccio imprime una forma all'argilla, mentre con i piedi ne piega la resistenza; è preoccupato per una verniciatura perfetta, sta sveglio per pulire il fornello."
+      }
     },
     "31": {
       "seq": 31,
@@ -288,7 +528,15 @@
         "VUL": 31,
         "LXX": 31
       },
-      "text": {}
+      "text": {
+        "LXX": "πάντες οὗτοι εἰς χεῖρας αὐτῶν ἐνεπίστευσαν, καὶ ἕκαστος ἐν τῷ ἔργῳ αὐτοῦ σοφίζεται·",
+        "VUL": "Cor suum dabit in consummationem operum,/ et vigilia sua ornabit in perfectionem./",
+        "SYN": "сердце его устремлено на окончание дела, и попечение его - о том, чтобы отделать его в совершенстве.",
+        "NEO": "Ces sortes de gens attendent tout de leurs mains, et chacun d’eux est intelligent dans son métier.",
+        "NAB": "All these men are skilled with their hands, each one an expert at his own task;",
+        "VAT_ES": "Todos ellos confían en sus manos, y cada uno se muestra sabio en su oficio.",
+        "CEI": "Tutti costoro hanno fiducia nelle proprie mani; ognuno è esperto nel proprio mestiere."
+      }
     },
     "32": {
       "seq": 32,
@@ -297,7 +545,15 @@
         "VUL": 32,
         "LXX": 32
       },
-      "text": {}
+      "text": {
+        "LXX": "ἄνευ αὐτῶν οὐκ οἰκισθήσεται πόλις, καὶ οὐ παροικήσουσιν οὐδὲ περιπατήσουσιν·",
+        "VUL": "Sic figulus sedens ad opus suum,/ convertens pedibus suis rotam,/ qui in sollicitudine positus est semper propter opus suum,/ et in numero est omnis operatio ejus./",
+        "SYN": "Так и горшечник, который сидит над своим делом и ногами своими вертит колесо,",
+        "NEO": "Sans eux on ne bâtirait aucune ville, on n’irait pas à l’étranger, on ne voyagerait pas.",
+        "NAB": "Without them no city could be lived in, and wherever they stay, they need not hunger.",
+        "VAT_ES": "Sin ellos no se levantaría ninguna ciudad, nadie la habitaría ni circularía por ella.",
+        "CEI": "Senza di loro sarebbe impossibile costruire una città; gli uomini non potrebbero né abitarvi né circolare."
+      }
     },
     "33": {
       "seq": 33,
@@ -306,7 +562,15 @@
         "VUL": 33,
         "LXX": 33
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἐν ἐκκλησίᾳ οὐχ ὑπεραλοῦνται, καὶ διαθήκην κρίματος οὐ διανοηθήσονται· ἐπὶ δίφρον δικαστοῦ οὐ καθιοῦνται, οὐδὲ μὴ ἐκφάνωσιν δικαιοσύνην καὶ κρίμα, καὶ ἐν παραβολαῖς οὐχ εὑρεθήσονται·",
+        "VUL": "In brachio suo formabit lutum,/ et ante pedes suos curvabit virtutem suam./",
+        "SYN": "который постоянно в заботе о деле своем и у которого исчислена вся работа его:",
+        "NEO": "Mais ils ne seront pas recherchés dans le conseil du peuple, et ils ne se distingueront pas dans l’assemblée ; ils n’auront pas la science de l’alliance du droit ; ils ne prendront pas place sur le siège du juge ; ils n’interpréteront pas la justice et le droit, et on ne les trouvera pas pour énoncer des sentences.",
+        "NAB": "They do not occupy the judge's bench, nor are they prominent in the assembly; They set forth no decisions or judgments, nor are they found among the rulers;",
+        "VAT_ES": "Pero no se los buscará para el consejo del pueblo ni tendrán preeminencia en la asamblea; no se sentarán en el tribunal del juez ni estarán versados en los decretos de la Alianza.",
+        "CEI": "Ma essi non sono ricercati nel consiglio del popolo, nell'assemblea non hanno un posto speciale, non siedono sul seggio del giudice, non conoscono le disposizioni del giudizio."
+      }
     },
     "34": {
       "seq": 34,
@@ -315,7 +579,15 @@
         "VUL": 34,
         "LXX": 34
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀλλὰ κτίσμα αἰῶνος τηρήσουσιν, καὶ ἡ δέησις αὐτῶν ἐν ἐργασίᾳ τέχνης.",
+        "VUL": "Cor suum dabit ut consummet linitionem,/ et vigilia sua mundabit fornacem./",
+        "SYN": "рукою своею он дает форму глине, а ногами умягчает ее жесткость;",
+        "NEO": "Cependant ils soutiennent les choses du temps, et leur prière se rapporte aux travaux de leur métier.",
+        "NAB": "Yet they maintain God's ancient handiwork, and their concern is for exercise of their skill.",
+        "VAT_ES": "No harán brillar la instrucción ni el derecho, ni se los encontrará entre los autores de proverbios. Sin embargo, ellos afianzan la creación eterna y el objeto de su plegaria son los trabajos de su oficio.",
+        "CEI": "Non fanno brillare né l'istruzione né il diritto, non compaiono tra gli autori di proverbi; ma sostengono le cose materiali, e la loro preghiera riguarda i lavori del mestiere."
+      }
     }
   }
 }

@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "Σὺ δὲ ὁ θεὸς ἡμῶν χρηστὸς καὶ ἀληθής, μακρόθυμος καὶ ἐλέει διοικῶν τὰ πάντα.",
+        "VUL": "[Tu autem, Deus noster, suavis et verus es,/ patiens, et in misericordia disponens omnia./",
+        "SYN": "Но Ты, Бог наш, благ и истинен, долготерпив и управляешь всем милостиво.",
+        "NEO": "Mais vous, ô notre Dieu, vous êtes bon, fidèle et patient, et vous gouvernez tout avec miséricorde.",
+        "NAB": "But you, our God, are good and true, slow to anger, and governing all with mercy.",
+        "VAT_ES": "Pero tú, Dios nuestro, eres bondadoso y fiel, eres paciente y todo lo administras con misericordia.",
+        "CEI": "Ma tu, nostro Dio, sei buono e fedele, sei paziente e tutto governi secondo misericordia."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ γὰρ ἐὰν ἁμάρτωμεν, σοί ἐσμεν, εἰδότες σου τὸ κράτος· οὐχ ἁμαρτησόμεθα, εἰδότες ὅτι σοὶ λελογίσμεθα.",
+        "VUL": "Etenim si peccaverimus, tui sumus,/ scientes magnitudinem tuam ;/ et si non peccaverimus,/ scimus quoniam apud te sumus computati./",
+        "SYN": "Если мы и согрешаем, мы - Твои, признающие власть Твою; но мы не будем грешить, зная, что мы признаны Твоими.",
+        "NEO": "Lors même que nous péchons, nous sommes à vous, connaissant votre puissance ; mais nous ne voulons pas pécher, car nous savons que nous sommes comptés parmi les vôtres.",
+        "NAB": "For even if we sin, we are yours, and know your might; but we will not sin, knowing that we belong to you.",
+        "VAT_ES": "Aun cuando pecamos, pertenecemos a ti, ya que reconocemos tu soberanía; pero no pecaremos, sabiendo que nos has contado como tuyos.",
+        "CEI": "Anche se pecchiamo, siamo tuoi, conoscendo la tua potenza; ma non peccheremo più, sapendo che ti apparteniamo."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "τὸ γὰρ ἐπίστασθαί σε ὁλόκληρος δικαιοσύνη, καὶ εἰδέναι σου τὸ κράτος ῥίζα ἀθανασίας.",
+        "VUL": "Nosse enim te, consummata justitia est ;/ et scire justitiam et virtutem tuam, radix est immortalitatis./",
+        "SYN": "Знать Тебя есть полная праведность, и признавать власть Твою -корень бессмертия.",
+        "NEO": "Vous connaître est la justice parfaite, et connaître votre puissance est la racine de l’immortalité.",
+        "NAB": "For to know you well is complete justice, and to know your might is the root of immortality.",
+        "VAT_ES": "Porque conocerte a ti es la perfecta justicia y reconocer tu soberanía es la raíz de la inmortalidad.",
+        "CEI": "Conoscerti, infatti, è giustizia perfetta, conoscere la tua potenza è radice di immortalità."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "οὔτε γὰρ ἐπλάνησεν ἡμᾶς ἀνθρώπων κακότεχνος ἐπίνοια, οὐδὲ σκιαγράφων πόνος ἄκαρπος, εἶδος σπιλωθὲν χρώμασιν διηλλαγμένοις·",
+        "VUL": "Non enim in errorem induxit nos/ hominum malæ artis excogitatio,/ nec umbra picturæ labor sine fructu,/ effigies sculpta per varios colores :/",
+        "SYN": "Не обольщает нас лукавое человеческое изобретение, ни бесплодный труд художников - изображения, испещренные различными красками,",
+        "NEO": "Nous n’avons pas été égarés par l’invention d’un art funeste, ni par une figure barbouillée de diverses couleurs, vain travail d’un peintre :",
+        "NAB": "For neither did the evil creation of men's fancy deceive us, nor the fruitless labor of painters, A form smeared with varied colors,",
+        "VAT_ES": "No nos han extraviado las invenciones de un arte humano perverso ni el esfuerzo estéril de los pintores de quimeras: esas figuras embadurnadas de colores abigarrados,",
+        "CEI": "Non ci indusse in errore né l'invenzione umana di un'arte perversa, né la sterile fatica dei pittori, immagini deturpate di vari colori,"
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "ὧν ὄψις ἄφροσιν εἰς ὄνειδος ἔρχεται, ποθεῖ τε νεκρᾶς εἰκόνος εἶδος ἄπνουν.",
+        "VUL": "cujus aspectus insensato dat concupiscentiam,/ et diligit mortuæ imaginis effigiem sine anima./",
+        "SYN": "взгляд на которые возбуждает в безумных похотение и вожделение к бездушному виду мертвого образа.",
+        "NEO": "objets dont l’aspect excite la passion de l’insensé, qui s’éprend pour la figure inanimée d’une image sans vie.",
+        "NAB": "the sight of which arouses yearning in the senseless man, till he longs for the inanimate form of a dead image.",
+        "VAT_ES": "cuya contemplación excita la pasión de los necios y les hace desear la figura inanimada de una imagen sin vida.",
+        "CEI": "la cui vista provoca negli stolti il desiderio, l'anelito per una forma inanimata di un'immagine morta."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "κακῶν ἐρασταὶ ἄξιοί τε τοιούτων ἐλπίδων καὶ οἱ δρῶντες καὶ οἱ ποθοῦντες καὶ οἱ σεβόμενοι.",
+        "VUL": "Malorum amatores digni sunt qui spem habeant in talibus,/ et qui faciunt illos, et qui diligunt, et qui colunt.]",
+        "SYN": "И делающие, и похотствующие, и чествующие суть любители зла, достойные таких надежд.",
+        "NEO": "Affectionnant le mal, ils sont dignes de telles espérances, aussi bien ceux qui les font que ceux qui les aiment ou les adorent.",
+        "NAB": "Lovers of evil things, and worthy of such hopes are they who make them and long for them and worship them.",
+        "VAT_ES": "&iexcl;Amantes del mal y dignos de tales esperanzas son los que las fabrican, las desean y las adoran!",
+        "CEI": "Amanti del male e degni di simili speranze sono coloro che fanno, desiderano e venerano gli idoli."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "Καὶ γὰρ κεραμεὺς ἁπαλὴν γῆν θλίβων ἐπίμοχθον πλάσσει πρὸς ὑπηρεσίαν ἡμῶν ἕκαστον· ἀλλ’ ἐκ τοῦ αὐτοῦ πηλοῦ ἀνεπλάσατο τά τε τῶν καθαρῶν ἔργων δοῦλα σκεύη τά τε ἐναντία, πάνθ’ ὁμοίως· τούτων δὲ ἑτέρου τίς ἑκάστου ἐστὶν ἡ χρῆσις, κριτὴς ὁ πηλουργός·",
+        "VUL": "[Sed et figulus mollem terram premens,/ laboriose fingit ad usus nostros unumquodque vas ;/ et de eodem luto fingit quæ munda sunt in usum vasa,/ et similiter quæ his sunt contraria :/ horum autem vasorum quis sit usus,/ judex est figulus./",
+        "SYN": "Горшечник мнет мягкую землю, заботливо лепит всякий сосуд на службу нашу; из одной и той же глины выделывает сосуды, потребные и для чистых дел и для нечистых - все одинаково; но какое каждого из них употребление, судья - тот же горшечник.",
+        "NEO": "En effet, voici un potier qui pétrit laborieusement la terre molle ; il façonne chaque vase pour notre usage, et de la même argile il fait des vases qui sont destinés à de nobles emplois, et d’autres à des emplois tout contraires, sans distinguer nullement à quel usage chacun d’eux devra servir : c’est le potier qui en est juge.",
+        "NAB": "For truly the potter, laboriously working the soft earth, molds for our service each several article: Both the vessels that serve for clean purposes and their opposites, all alike; As to what shall be the use of each vessel of either class the worker in clay is the judge.",
+        "VAT_ES": "Así un alfarero amasa laboriosamente la tierra blanda y modela cada uno de los objetos que usamos. Con la misma arcilla modela indistintamente objetos destinados a un uso noble y otros que tendrán un destino contrario; pero es el alfarero el que decide cuál será la función de cada uno de ellos.",
+        "CEI": "Un vasaio, impastando con fatica la terra molle, plasma per il nostro uso ogni sorta di vasi. Ma con il medesimo fango modella e i vasi che servono per usi decenti e quelli per usi contrari, tutti allo stesso modo; quale debba essere l'uso di ognuno di essi lo stabilisce il vasaio."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ κακόμοχθος θεὸν μάταιον ἐκ τοῦ αὐτοῦ πλάσσει πηλοῦ, ὃς πρὸ μικροῦ ἐκ γῆς γενηθεὶς μετ’ ὀλίγον πορεύεται ἐξ ἧς ἐλήμφθη, τὸ τῆς ψυχῆς ἀπαιτηθεὶς χρέος.",
+        "VUL": "Et cum labore vano deum fingit de eodem luto/ ille qui paulo ante de terra factus fuerat,/ et post pusillum reducit se unde acceptus est,/ repetitus animæ debitum quam habebat./",
+        "SYN": "И суетный труженик из той же глины лепит суетного бога, тогда как сам недавно родился из земли и вскоре пойдет туда же, откуда он взят, и взыщется с него долг души его.",
+        "NEO": "Ensuite, par un travail impie, de la même argile, il façonne une vaine divinité, lui qui, naguère fait de terre, retournera bientôt au lieu d’où il a été tiré, quand on lui redemandera son âme qui lui avait été prêtée.",
+        "NAB": "And with misspent toil he molds a meaningless god from the selfsame clay; though he himself shortly before was made from the earth And after a little, is to go whence he was taken, when the life that was lent him is demanded back.",
+        "VAT_ES": "Después, con un esfuerzo mal empleado, utiliza la misma arcilla para modelar un falso dios, y el que hace eso es un hombre que poco antes nació de la tierra y dentro de poco volverá a la tierra de donde fue sacado, cuando se le pida que devuelva su alma.",
+        "CEI": "Quindi con odiosa fatica plasma con il medesimo fango un dio vano, egli che, nato da poco dalla terra, tra poco ritornerà là da dove fu tratto, quando gli sarà richiesto l'uso fatto dell'anima sua."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀλλ’ ἔστιν αὐτῷ φροντὶς οὐχ ὅτι μέλλει κάμνειν, οὐδ’ ὅτι βραχυτελῆ βίον ἔχει, ἀλλ’ ἀντερείδεται μὲν χρυσουργοῖς καὶ ἀργυροχόοις, χαλκοπλάστας τε μιμεῖται, καὶ δόξαν ἡγεῖται ὅτι κίβδηλα πλάσσει.",
+        "VUL": "Sed cura est illi non quia laboraturus est,/ nec quoniam brevis illi vita est :/ sed concertatur aurificibus et argentariis ;/ sed et ærarios imitatur,/ et gloriam præfert, quoniam res supervacuas fingit./",
+        "SYN": "Но у него забота не о том, что он должен много трудиться, и не о том, что жизнь его кратка; но он соревнует художникам золотых и серебряных изделий, и подражает медникам, и вменяет себе в славу, что делает мерзости.",
+        "NEO": "Pourtant il ne s’inquiète pas de ce que ses forces s’épuisent, ni de ce que sa vie est courte ; mais il rivalise avec ceux qui travaillent l’or et l’argent, il imite ceux qui travaillent l’airain, et met sa gloire à exécuter des figures trompeuses.",
+        "NAB": "But his concern is not that he is to die nor that his span of life is brief; Rather, he vies with goldsmiths and silversmiths and emulates molders of bronze, and takes pride in modeling counterfeits.",
+        "VAT_ES": "Sin embargo, en vez de preocuparse de que pronto va a morir y de la brevedad de su vida, rivaliza con los orfebres y plateros, imita a los forjadores de bronce y se enorgullece de fabricar lo que es falso.",
+        "CEI": "Ma egli non si preoccupa di morire né di avere una vita breve; anzi gareggia con gli orafi e con gli argentieri, imita i lavoratori del bronzo e ritiene un vanto plasmare cose false."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "σποδὸς ἡ καρδία αὐτοῦ, καὶ γῆς εὐτελεστέρα ἡ ἐλπὶς αὐτοῦ, πηλοῦ τε ἀτιμότερος ὁ βίος αὐτοῦ,",
+        "VUL": "Cinis est enim cor ejus,/ et terra supervacua spes illius,/ et luto vilior vita ejus :/",
+        "SYN": "Сердце его - пепел, и надежда его ничтожнее земли, и жизнь его презреннее грязи;",
+        "NEO": "Son cœur est comme de la cendre, son espérance est plus vile que la terre, et sa vie est de moindre valeur que l’argile.",
+        "NAB": "Ashes his heart is! more worthless than earth is his hope, and more ignoble than clay his life;",
+        "VAT_ES": "Su corazón no es más que ceniza, su esperanza es más vil que la tierra, y su vida más despreciable que la arcilla.",
+        "CEI": "Cenere è il suo cuore, la sua speranza più vile della terra, la sua vita più spregevole del fango,"
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "ὅτι ἠγνόησεν τὸν πλάσαντα αὐτὸν καὶ τὸν ἐμπνεύσαντα αὐτῷ ψυχὴν ἐνεργοῦσαν καὶ ἐμφυσήσαντα πνεῦμα ζωτικόν·",
+        "VUL": "quoniam ignoravit qui se finxit,/ et qui inspiravit illi animam quæ operatur,/ et qui insufflavit ei spiritum vitalem./",
+        "SYN": "ибо он не познал Сотворившего его и вдунувшего в него деятельную душу и вдохнувшего в него дух жизни.",
+        "NEO": "Car il méconnaît celui qui l’a fait, qui lui a inspiré une âme agissante, et a mis en lui un souffle de vie.",
+        "NAB": "Because he knew not the one who fashioned him, and breathed into him a quickening soul, and infused a vital spirit.",
+        "VAT_ES": "Porque desconoce a aquel que lo modeló, al que le infundió un alma capaz de actuar y le transmitió un soplo vital.",
+        "CEI": "perché disconosce il suo creatore, colui che gli inspirò un'anima attiva e gli infuse uno spirito vitale."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀλλ’ ἐλογίσατο παίγνιον εἶναι τὴν ζωὴν ἡμῶν καὶ τὸν βίον πανηγυρισμὸν ἐπικερδῆ, δεῖν γάρ φησιν ὅθεν δὴ κἂν ἐκ κακοῦ πορίζειν.",
+        "VUL": "Sed et æstimaverunt ludum esse vitam nostram,/ et conversationem vitæ compositam ad lucrum,/ et oportere undecumque etiam ex malo acquirere./",
+        "SYN": "Они считают жизнь нашу забавою и житие прибыльною торговлею, ибо говорят, что должно же откуда-либо извлекать прибыль, хотя бы и из зла.",
+        "NEO": "Il regarde notre existence comme un amusement, la vie comme un marché où l’on se rassemble pour le gain ; car, disent-ils, « il faut acquérir par tous les moyens, même par le crime. »",
+        "NAB": "Instead, he esteemed our life a plaything, and our span of life a holiday for gain; \"For one must,\" says he, \"make profit every way, be it even out of evil.\"",
+        "VAT_ES": "El piensa que nuestra vida es un juego y la existencia, una feria para obtener ganancias: «Es necesario, dice, ganar por todos los medios, aunque sean malos».",
+        "CEI": "Ma egli considera un trastullo la nostra vita, l'esistenza un mercato lucroso. Egli dice: \"Da tutto, anche dal male, si deve trarre profitto\"."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "οὗτος γὰρ παρὰ πάντας οἶδεν ὅτι ἁμαρτάνει, ὕλης γεώδους εὔθραυστα σκεύη καὶ γλυπτὰ δημιουργῶν.",
+        "VUL": "Hic enim scit se super omnes delinquere,/ qui ex terræ materia fragilia vasa et sculptilia fingit./",
+        "SYN": "Впрочем такой более всех знает, что он грешит, делая из земляного вещества бренные сосуды и изваяния.",
+        "NEO": "Car celui-là sait bien qu’il est plus coupable que tous les autres, qui, de la même terre, façonne des vases fragiles et des idoles.",
+        "NAB": "For this man more than any knows that he is sinning, when out of earthen stuff he creates fragile vessels and idols alike.",
+        "VAT_ES": "Porque él sabe bien que peca más que cualquier otro cuando de una materia terrestre fabrica objetos frágiles y estatuas.",
+        "CEI": "Costui infatti più di tutti sa di peccare, fabbricando di materia terrestre fragili vasi e statue."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "πάντες δὲ ἀφρονέστατοι καὶ τάλανες ὑπὲρ ψυχὴν νηπίου, οἱ ἐχθροὶ τοῦ λαοῦ σου οἱ καταδυναστεύσαντες αὐτόν.",
+        "VUL": "Omnes enim insipientes,/ et infelices supra modum animæ superbi,/ sunt inimici populi tui, et imperantes illi :/",
+        "SYN": "Самые же неразумные из всех и беднее умом самых младенцев - враги народа Твоего, угнетающие его,",
+        "NEO": "Mais ils sont tous très insensés, et plus malheureux que l’âme d’un enfant, les ennemis de votre peuple qui le tiennent dans l’oppression !",
+        "NAB": "But all quite senseless, and worse than childish in mind, are the enemies of your people who enslaved them.",
+        "VAT_ES": "Pero los más insensatos de todos, y más infelices que el alma de un niño, son los enemigos que oprimieron a tu pueblo,",
+        "CEI": "Ma sono tutti stoltissimi e più miserabili di un'anima infantile i nemici del tuo popolo, che lo hanno oppresso."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "ὅτι καὶ πάντα τὰ εἴδωλα τῶν ἐθνῶν ἐλογίσαντο θεούς, οἷς οὔτε ὀμμάτων χρῆσις εἰς ὅρασιν, οὔτε ῥῖνες εἰς συνολκὴν ἀέρος, οὔτε ὦτα ἀκούειν, οὔτε δάκτυλοι χειρῶν εἰς ψηλάφησιν, καὶ οἱ πόδες αὐτῶν ἀργοὶ πρὸς ἐπίβασιν.",
+        "VUL": "quoniam omnia idola nationum deos æstimaverunt,/ quibus neque oculorum usus est ad videndum,/ neque nares ad percipiendum spiritum,/ neque aures ad audiendum,/ neque digiti manuum ad tractandum,/ sed et pedes eorum pigri ad ambulandum./",
+        "SYN": "потому что они почитают богами всех идолов языческих, у которых нет употребления ни глаз для зрения, ни ноздрей для привлечения воздуха, ни ушей для слышания, ни перстов рук для осязания и которых ноги негодны для хождения.",
+        "NEO": "Car ils ont regardé comme des dieux toutes les idoles des nations, qui ne peuvent user de leurs yeux pour voir, ni de leurs narines pour respirer l’air, ni de leurs oreilles pour entendre, ni des doigts de leurs mains pour toucher, et dont les pieds sont incapables de marcher.",
+        "NAB": "For they esteemed all the idols of the nations gods, which have no use of the eyes for vision, nor nostrils to snuff the air, Nor ears to hear, nor fingers on their hands for feeling; even their feet are useless to walk with.",
+        "VAT_ES": "ya que tuvieron por dioses a todos los ídolos de las naciones, que no pueden valerse de los ojos para ver, ni de las narices para respirar, ni de los oídos para oír, ni de los dedos de las manos para tocar, y cuyos pies no sirven para caminar.",
+        "CEI": "Essi considerarono dei anche tutti gli idoli dei pagani, i quali non hanno né l'uso degli occhi per vedere, né narici per aspirare aria, né orecchie per sentire, né dita delle mani per palpare; e i loro piedi sono incapaci di camminare."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "ἄνθρωπος γὰρ ἐποίησεν αὐτούς, καὶ τὸ πνεῦμα δεδανισμένος ἔπλασεν αὐτούς· οὐδεὶς γὰρ αὐτῷ ὅμοιον ἄνθρωπος ἰσχύει πλάσαι θεόν·",
+        "VUL": "Homo enim fecit illos ;/ et qui spiritum mutuatus est, is finxit illos./ Nemo enim sibi similem homo poterit deum fingere./",
+        "SYN": "Хотя человек сделал их, и заимствовавший дух образовал их, но никакой человек не может образовать бога, как он сам.",
+        "NEO": "C’est un homme qui les a faites, et c’est celui à qui on a prêté le souffle qui les a façonnées. Il n’est pas d’homme qui puisse faire un dieu semblable à lui,",
+        "NAB": "For a man made them; one whose spirit has been lent him fashioned them. For no man succeeds in fashioning a god like himself;",
+        "VAT_ES": "Porque es un hombre el que hizo esos ídolos, uno que recibió en préstamo el aliento, el que los modeló, pero ningún hombre puede modelar un dios semejante a sí mismo:",
+        "CEI": "Un uomo li ha fatti, li ha plasmati uno che ha avuto il respiro in prestito. Ora nessun uomo può plasmare un dio a lui simile;"
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "θνητὸς δὲ ὢν νεκρὸν ἐργάζεται χερσὶν ἀνόμοις· κρείττων γάρ ἐστιν τῶν σεβασμάτων αὐτοῦ, ὧν αὐτὸς μὲν ἔζησεν, ἐκεῖνα δὲ οὐδέποτε.",
+        "VUL": "Cum enim sit mortalis, mortuum fingit manibus iniquis./ Melior enim est ipse his quos colit,/ quia ipse quidem vixit, cum esset mortalis, illi autem numquam.]",
+        "SYN": "Будучи смертным, он делает нечестивыми руками мертвое, поэтому он превосходнее божеств своих, ибо он жил, а те - никогда.",
+        "NEO": "car, étant mortel, il ne fait de ses mains impies qu’une œuvre morte ; il vaut mieux que les objets qu’il adore, car au moins il a la vie, et eux ne l’ont jamais eue.",
+        "NAB": "being mortal, he makes a dead thing with his lawless hands. For he is better than the things he worships; he at least lives, but never they.",
+        "VAT_ES": "siendo mortal, con sus manos impías, sólo puede producir una obra muerta. El vale más que los objetos que adora, ya que él tiene vida, pero aquellos no la tendrán jamás.",
+        "CEI": "essendo mortale, una cosa morta produce con empie mani. Egli è sempre migliore degli oggetti che adora, rispetto a essi possiede la vita, ma quelli giammai"
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "Καὶ τὰ ζῷα δὲ τὰ ἔχθιστα σέβονται· ἀνοίᾳ γὰρ συγκρινόμενα τῶν ἄλλων ἐστὶ χείρονα.",
+        "VUL": "[Sed et animalia miserrima colunt ;/ insensata enim comparata his, illis sunt deteriora./",
+        "SYN": "Притом они почитают животных самых отвратительных, которые по бессмыслию сравнительно хуже всех.",
+        "NEO": "Ils rendent un culte aux animaux les plus odieux, lesquels, jugés d’après la stupidité, sont pires que les autres.",
+        "NAB": "And besides, they worship the most loathsome beasts - for compared as to folly, these are worse than the rest,",
+        "VAT_ES": "Ellos adoran incluso a los animales más repugnantes, que superan en estupidez a todos los demás,",
+        "CEI": "Venerano gli animali più ripugnanti, che per stupidità al paragone risultan peggiori degli altri;"
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "οὐδ’ ὅσον ἐπιποθῆσαι ὡς ἐν ζῴων ὄψει καλὰ τυγχάνει, ἐκπέφευγεν δὲ καὶ τὸν τοῦ θεοῦ ἔπαινον καὶ τὴν εὐλογίαν αὐτοῦ.",
+        "VUL": "Sed nec aspectu aliquis ex his animalibus bona potest conspicere :/ effugerunt autem Dei laudem et benedictionem ejus.]",
+        "SYN": "Они даже некрасивы по виду, как другие животные, чтобы могли привлекать к себе, но лишены и одобрения Божия и благословения Его.",
+        "NEO": "Il n’y a rien de bon en eux qui fasse naître l’affection, comme à l’aspect d’autres animaux ; ils échappent à la louange de Dieu et à sa bénédiction.",
+        "NAB": "Nor for their looks are they good or desirable beasts, but they have escaped both the approval of God and his blessing.",
+        "VAT_ES": "a los que ni siquiera tienen la belleza que hace atrayentes a otros animales, y están excluidos del elogio y la bendición de Dios.",
+        "CEI": "non sono tanto belli da invogliarsene, come capita per l'aspetto di altri animali, e non hanno avuto la lode e la benedizione di Dio."
+      }
     }
   }
 }

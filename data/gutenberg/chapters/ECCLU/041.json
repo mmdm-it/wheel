@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "Ὦ θάνατε, ὡς πικρόν σου τὸ μνημόσυνόν ἐστιν ἀνθρώπῳ εἰρηνεύοντι ἐν τοῖς ὑπάρχουσιν αὐτοῦ, ἀνδρὶ ἀπερισπάστῳ καὶ εὐοδουμένῳ ἐν πᾶσιν καὶ ἔτι ἰσχύοντι ἐπιδέξασθαι τροφήν.",
+        "VUL": "[O mors, quam amara est memoria tua/ homini pacem habenti in substantiis suis :/",
+        "SYN": "О, смерть! как горько воспоминание о тебе для человека, который спокойно живет в своих владениях,",
+        "NEO": "O mort, que ton souvenir est amer à l’homme qui vit en paix au sein de ses richesses, à l’homme exempt de soucis et qui prospère en tout, et qui est encore en état de goûter le plaisir de la table !",
+        "NAB": "O death! how bitter the thought of you for the man at peace amid his possessions, For the man unruffled and always successful, who still can enjoy life's pleasures.",
+        "VAT_ES": "&iexcl;Muerte, qué amargo es tu recuerdo para el que vive tranquilo en medio de sus bienes, para el hombre despreocupado, a quien todo le va bien y aún tiene vigor para disfrutar de la vida!",
+        "CEI": "O morte, come è amaro il tuo pensiero per l'uomo che vive sereno nella sua agiatezza, per l'uomo senza assilli e fortunato in tutto, ancora in grado di gustare il cibo!"
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "ὦ θάνατε, καλόν σου τὸ κρίμα ἐστὶν ἀνθρώπῳ ἐπιδεομένῳ καὶ ἐλασσουμένῳ ἰσχύι, ἐσχατογήρῳ καὶ περισπωμένῳ περὶ πάντων, καὶ ἀπειθοῦντι καὶ ἀπολωλεκότι ὑπομονήν.",
+        "VUL": "viro quieto, et cujus viæ directæ sunt in omnibus,/ et adhuc valenti accipere cibum !/",
+        "SYN": "для человека, который ничем не озабочен и во всем счастлив и еще в силах принимать пищу.",
+        "NEO": "O mort, ton arrêt est agréable, à l’indigent, à celui dont les forces sont épuisées, au vieillard accablé d’années et travaillé de mille soins, à celui qui ne se soumet pas à son sort et qui a perdu l’espérance.",
+        "NAB": "O death! how welcome your sentence to the weak man of failing strength, Tottering and always rebuffed, with no more sight, with vanished hope.",
+        "VAT_ES": "&iexcl;Muerte, tu sentencia es bienvenida para el hombre necesitado y sin fuerzas, gastado por los años y lleno de ansiedades, que se rebela y ha agotado su paciencia!",
+        "CEI": "O morte, è gradita la tua sentenza all'uomo indigente e privo di forze, vecchio decrepito e preoccupato di tutto, al ribelle che ha perduto la pazienza!"
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "μὴ εὐλαβοῦ κρίμα θανάτου, μνήσθητι προτέρων σου καὶ ἐσχάτων·",
+        "VUL": "O mors, bonum est judicium tuum homini indigenti,/ et qui minoratur viribus,/",
+        "SYN": "О, смерть! отраден твой приговор для человека, нуждающегося и изнемогающего в силах,",
+        "NEO": "Ne redoute pas l’arrêt de la mort : souviens-toi de ceux qui t’ont précédé et de ceux qui viendront plus tard.",
+        "NAB": "Fear not death's decree for you; remember, it embraces those before you, and those after.",
+        "VAT_ES": "No temas a tu sentencia de muerte, recuerda a los que te precedieron y te seguirán.",
+        "CEI": "Non temere la sentenza della morte, ricòrdati dei tuoi predecessori e successori."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "τοῦτο τὸ κρίμα παρὰ Κυρίου πάσῃ σαρκί, καὶ τί ἀπαναίνῃ ἐν εὐδοκίᾳ Ὑψίστου; εἴτε δέκα εἴτε ἑκατὸν εἴτε χίλια ἔτη, οὐκ ἔστιν ἐν ᾅδου ἐλεγμὸς ζωῆς.",
+        "VUL": "defecto ætate, et cui de omnibus cura est,/ et incredibili, qui perdit patientiam !/",
+        "SYN": "для престарелого и обремененного заботами обо всем, для не имеющего надежды и потерявшего терпение.",
+        "NEO": "C’est l’arrêt porté par le Seigneur sur toute chair ; et pourquoi te révolter contre le bon plaisir du Très-Haut ? Que tu aies vécu dix ans, cent, mille : dans le schéol on n’est plus en peine de la durée de la vie.",
+        "NAB": "Thus God has ordained for all flesh; why then should you reject the will of the Most High? Whether one has lived a thousand years, a hundred, or ten, in the nether world he has no claim on life.",
+        "VAT_ES": "Esta es la sentencia del Señor para todo ser viviente: &iquest;por qué oponerse a la voluntad del Altísimo? Aunque vivas diez, cien o mil años, en el Abismo no te echarán en cara lo que hayas vivido.",
+        "CEI": "Questo è il decreto del Signore per ogni uomo; perché ribellarsi al volere dell'Altissimo? Siano dieci, cento, mille anni; negli inferi non ci sono recriminazioni sulla vita."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "τέκνα βδελυκτὰ γίνεται τέκνα ἁμαρτωλῶν, καὶ συναναστρεφόμενα παροικίαις ἀσεβῶν·",
+        "VUL": "Noli metuere judicium mortis :/ memento quæ ante te fuerunt,/ et quæ superventura sunt tibi :/ hoc judicium a Domino omni carni./",
+        "SYN": "Не бойся смертного приговора: вспомни о предках твоих и потомках. Это приговор от Господа над всякою плотью.",
+        "NEO": "Ce sont des fils abominables que les fils des pécheurs, eux qui fréquentent les demeures des impies.",
+        "NAB": "A reprobate line are the children of sinners, and witless offspring are in the homes of the wicked.",
+        "VAT_ES": "Los hijos de los pecadores son gente abominable que frecuentan las casas de los impíos.",
+        "CEI": "Figli abominevoli sono i figli dei peccatori, una stirpe empia è nella dimora dei malvagi."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "τέκνων ἁμαρτωλῶν ἀπολεῖται κληρονομία, καὶ μετὰ τοῦ σπέρματος αὐτῶν ἐνδελεχιεῖ ὄνειδος.",
+        "VUL": "Et quid superveniet tibi in beneplacito Altissimi ?/ sive decem, sive centum, sive mille anni :/",
+        "SYN": "Итак, для чего ты отвращаешься от того, что благоугодно Всевышнему? десять ли, сто ли, или тысяча лет, -",
+        "NEO": "L’héritage des enfants des pécheurs va à la ruine, et l’opprobre s’attache à leur postérité.",
+        "NAB": "Their dominion is lost to sinners' children, and reproach abides with their descendants.",
+        "VAT_ES": "La herencia de los hijos de los pecadores va a la ruina, con su descendencia se perpetúa su infamia.",
+        "CEI": "L'eredità dei figli dei peccatori andrà in rovina, con la loro discendenza continuerà il disonore."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "πατρὶ ἀσεβεῖ μέμψεται τέκνα, ὅτι δι’ αὐτὸν ὀνειδισθήσονται.",
+        "VUL": "non est enim in inferno accusatio vitæ.]",
+        "SYN": "в аде нет исследования о времени жизни.",
+        "NEO": "Les enfants d’un père impie lui jettent l’outrage, parce que c’est à cause de lui qu’ils sont dans l’opprobre.",
+        "NAB": "Children curse their wicked father, for they suffer disgrace through him.",
+        "VAT_ES": "Un padre impío se atrae los reproches de sus hijos, porque es a él a quien deben su infamia.",
+        "CEI": "Contro un padre empio imprecano i figli, perché sono disprezzati a causa sua."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "οὐαὶ ὑμῖν ἄνδρες ἀσεβεῖς, οἵτινες ἐγκατελείπετε νόμον θεοῦ Ὑψίστου·",
+        "VUL": "[Filii abominationum fiunt filii peccatorum,/ et qui conversantur secus domos impiorum./",
+        "SYN": "Дети грешников бывают дети отвратительные и общаются с нечестивыми.",
+        "NEO": "Malheur à vous, hommes impies, qui avez abandonné la loi du Dieu très haut !",
+        "NAB": "Woe to you, O sinful men, who forsake the law of the Most High.",
+        "VAT_ES": "&iexcl;Ay de ustedes, hombres impíos, que han abandonado la Ley del Dios Altísimo!",
+        "CEI": "Guai a voi, uomini empi, che avete abbandonato la legge di Dio altissimo!"
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἐὰν γεννηθῆτε, εἰς κατάραν γεννηθήσεσθε, καὶ ἐὰν ἀποθάνητε, εἰς κατάραν μερισθήσεσθε.",
+        "VUL": "Filiorum peccatorum periet hæreditas,/ et cum semine illorum assiduitas opprobrii./",
+        "SYN": "Наследие детей грешников погибнет, и вместе с племенем их будет распространяться бесславие.",
+        "NEO": "Si vous naissez, vous naissez pour la malédiction, et si vous mourez, la malédiction sera votre partage.",
+        "NAB": "If you have children, calamity will seize them; you will beget them only for groaning. When you stumble, there is lasting joy; at death, you become a curse.",
+        "VAT_ES": "Si ustedes nacen, nacen para la maldición, y si mueren, les tocará en suerte la maldición.",
+        "CEI": "Quando nascete, nascete per la maledizione; quando morite, erediterete la maledizione."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "πάντα ὅσα ἐκ γῆς εἰς γῆν ἀπελεύσεται, οὕτως ἀσεβεῖς ἀπὸ κατάρας εἰς ἀπωλίαν·",
+        "VUL": "De patre impio queruntur filii,/ quoniam propter illum sunt in opprobrio./",
+        "SYN": "Нечестивого отца будут укорять дети, потому что за него они терпят бесславие.",
+        "NEO": "Tout ce qui est de la terre retourne à la terre : ainsi les impies vont de la malédiction à la ruine.",
+        "NAB": "Whatever is of nought returns to nought, so too the godless from void to void.",
+        "VAT_ES": "Todo lo que sale de la tierra, vuelve a la tierra: así pasan los impíos, de la maldición a la ruina.",
+        "CEI": "Quanto è dalla terra ritornerà alla terra, così gli empi dalla maledizione alla distruzione."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "πένθος ἀνθρώπων ἐν σώμασιν αὐτῶν, ὄνομα δὲ ἁμαρτωλῶν οὐκ ἀγαθὸν ἐξαλειφθήσεται.",
+        "VUL": "Væ vobis, viri impii,/ qui dereliquistis legem Domini Altissimi !/",
+        "SYN": "Горе вам, люди нечестивые, которые оставили закон Бога Всевышнего!",
+        "NEO": "Les hommes s’attristent pour leur corps, mais le nom odieux des pécheurs sera anéanti.",
+        "NAB": "Man's body is a fleeting thing, but a virtuous name will never be annihilated.",
+        "VAT_ES": "Los hombres se lamentan porque perece su cuerpo. y en cuanto a los pecadores, hasta su mal nombre se borrará..",
+        "CEI": "Il lutto degli uomini riguarda i loro cadaveri, il nome non buono dei peccatori sarà cancellato."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "φρόντισον περὶ ὀνόματος, αὐτὸ γάρ σοι διαμενεῖ ἢ χίλιοι μεγάλοι θησαυροὶ χρυσίου·",
+        "VUL": "Et si nati fueritis, in maledictione nascemini :/ et si mortui fueritis, in maledictione erit pars vestra./",
+        "SYN": "Когда вы рождаетесь, то рождаетесь на проклятие; и когда умираете, то получаете в удел свой проклятие.",
+        "NEO": "Prends soin de ton nom car il te demeurera, plus longtemps que mille grands trésors d’or.",
+        "NAB": "Have a care for your name, for it will stand by you better than precious treasures in the thousands;",
+        "VAT_ES": "Cuida tu buen nombre, porque eso te quedará mucho más que mil tesoros de oro.",
+        "CEI": "Abbi cura del nome, perché esso ti resterà più di mille grandi tesori d'oro."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀγαθῆς ζωῆς ἀριθμὸς ἡμερῶν, καὶ ἀγαθὸν ὄνομα εἰς αἰῶνα διαμενεῖ.",
+        "VUL": "Omnia quæ de terra sunt in terram convertentur :/ sic impii a maledicto in perditionem./",
+        "SYN": "Все, что из земли, возвратится в землю: так нечестивые - от проклятия в погибель.",
+        "NEO": "On compte les jours d’une bonne vie, mais un beau nom demeure à jamais.",
+        "NAB": "The boon of life is for limited days, but a good name, for days without number.",
+        "VAT_ES": "Una vida feliz tiene sus días contados, pero el buen nombre permanece para siempre.",
+        "CEI": "I giorni di una vita felice sono contati, ma un buon nome dura sempre."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "παιδείαν ἐν εἰρήνῃ συντηρήσατε, τέκνα· σοφία δὲ κεκρυμμένη καὶ θησαυρὸς ἀφανής, τίς ὠφελία ἐν ἀμφοτέροις;",
+        "VUL": "Luctus hominum in corpore ipsorum :/ nomen autem impiorum delebitur./",
+        "SYN": "Плач людей бывает о телах их, но грешников и имя недоброе изгладится.",
+        "NEO": "Mes enfants, observez en paix mes instructions :",
+        "NAB": "My children, heed my instruction about shame; judge of disgrace only according to my rules, For it is not always well to be ashamed, nor is it always the proper thing to blush:",
+        "VAT_ES": "Hijos míos, observen en paz mi enseñanza. Sabiduría escondida y tesoro invisible: &iquest;de qué sirven una cosa y la otra?",
+        "CEI": "Figli, custodite l'istruzione in pace; ma sapienza nascosta e tesoro invisibile, l'una e l'altro a che servono?"
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "κρείσσων ἄνθρωπος ἀποκρύπτων τὴν μωρίαν αὐτοῦ ἢ ἄνθρωπος ἀποκρύπτων τὴν σοφίαν αὐτοῦ.",
+        "VUL": "Curam habe de bono nomine :/ hoc enim magis permanebit tibi/ quam mille thesauri pretiosi et magni./",
+        "SYN": "Заботься об имени, ибо оно пребудет с тобою долее, нежели многие тысячи золота:",
+        "NEO": "Mieux vaut l’homme qui cache sa sottise, que l’homme qui cache sa sagesse.",
+        "NAB": "Before father and mother be ashamed of immorality, before master and mistress, of falsehood;",
+        "VAT_ES": "Es preferible el hombre que disimula su necedad al que oculta su sabiduría.",
+        "CEI": "Meglio chi nasconde la sua stoltezza di chi nasconde la sua sapienza."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "τοιγαροῦν ἐντράπητε ἐπὶ τῷ ῥήματί μου· οὐ γάρ ἐστιν πᾶσαν αἰσχύνην διαφυλάξαι καλόν, καὶ οὐ πάντα πᾶσιν ἐν πίστει εὐδοκιμεῖται.",
+        "VUL": "Bonæ vitæ numerus dierum :/ bonum autem nomen permanebit in ævum.]",
+        "SYN": "дням доброй жизни есть число, но доброе имя пребывает вовек.",
+        "NEO": "Donc ayez honte des choses que je vais vous dire. Car toute honte n’est pas bonne à garder, et toutes choses ne sont pas jugées par tous selon la vérité.",
+        "NAB": "Before prince and ruler, of flattery; before the public assembly, of crime;",
+        "VAT_ES": "Por lo tanto, sientan verg&uuml;enza de lo que les voy a indicar, porque no está bien avergonzarse por cualquier cosa ni toda verg&uuml;enza merece ser igualmente aprobada.",
+        "CEI": "Pertanto provate vergogna in vista della mia parola, perché non è bene arrossire per qualsiasi vergogna; non tutti stimano secondo verità tutte le cose."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "αἰσχύνεσθε ἀπὸ πατρὸς καὶ μητρὸς περὶ πορνείας, καὶ ἀπὸ ἡγουμένου καὶ δυνάστου περὶ ψεύδους,",
+        "VUL": "[Disciplinam in pace conservate, filii :/ sapientia enim abscondita, et thesaurus invisus,/ quæ utilitas in utrisque ?/",
+        "SYN": "Соблюдайте, дети, наставление в мире; а сокрытая мудрость и сокровище невидимое - какая в них польза?",
+        "NEO": "Ayez honte de la fornication, devant votre père et votre mère, et du mensonge, devant le prince et le puissant ;",
+        "NAB": "Before friend and companion, of disloyalty, and of breaking an oath or agreement.",
+        "VAT_ES": "Tengan verg&uuml;enza de la fornicación ante su padre y su madre, y de la mentira, ante un jefe y un poderoso;",
+        "CEI": "Vergognatevi della prostituzione davanti al padre e alla madre della menzogna davanti a un capo e a un potente,"
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀπὸ κριτοῦ καὶ ἄρχοντος περὶ πλημμελίας, ἀπὸ συναγωγῆς καὶ λαοῦ περὶ ἀνομίας, ἀπὸ κοινωνοῦ καὶ φίλου περὶ ἀδικίας,",
+        "VUL": "Melior est homo qui abscondit stultitiam suam,/ quam homo qui abscondit sapientiam suam./",
+        "SYN": "Лучше человек, скрывающий свою глупость, нежели человек, скрывающий свою мудрость.",
+        "NEO": "du délit, devant le juge et le magistrat, de la transgression de la loi, devant l’assemblée et le peuple ; de l’injustice, devant le compagnon et l’ami,",
+        "NAB": "Be ashamed of theft from the people where you settle, and of stretching out your elbow when you dine;",
+        "VAT_ES": "del delito ante un juez y un magistrado, y de la iniquidad ante la asamblea del pueblo;",
+        "CEI": "del delitto davanti a un giudice e a un magistrato, dell'empietà davanti all'assemblea del popolo,"
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἀπὸ τόπου οὗ παροικεῖς περὶ κλοπῆς, καὶ ἀπὸ ἀληθείας θεοῦ καὶ διαθήκης, καὶ ἀπὸ πήξεως ἀγκῶνος ἐπ’ ἄρτους, ἀπὸ σκορακισμοῦ λήμψεως καὶ δόσεως,",
+        "VUL": "Verumtamen reveremini in his quæ procedunt de ore meo :/",
+        "SYN": "Итак, стыдитесь того, о чем я скажу,",
+        "NEO": "du vol, devant les gens du voisinage. Au nom de la vérité de Dieu et de son alliance, aie honte d’appuyer ton coude sur les pains ; de t’attirer le mépris en prenant et en donnant,",
+        "NAB": "Of refusing to give when asked, of defrauding another of his appointed share,",
+        "VAT_ES": "de la injusticia ante un compañero y un amigo, y del robo ante su vecindario;",
+        "CEI": "della slealtà davanti al compagno e all'amico, del furto nell'ambiente in cui ti trovi,"
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +341,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἀπὸ ἀσπαζομένων περὶ σιωπῆς, ἀπὸ ὁράσεως γυναικὸς ἑταίρας,",
+        "VUL": "non est enim bonum omnem reverentiam observare,/ et non omnia omnibus bene placent in fide./",
+        "SYN": "ибо не всякую стыдливость хорошо соблюдать и не всё всеми одобряется по истине.",
+        "NEO": "et de garder le silence devant ceux qui te saluent ; de regarder une femme débauchée,",
+        "NAB": "Of failing to return a greeting, and of rebuffing a friend;",
+        "VAT_ES": "de violar un juramento y un pacto, y de apoyar los codos en la mesa;",
+        "CEI": "di venir meno al giuramento e all'alleanza, di piegare i gomiti sul pane,"
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +358,15 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἀπὸ ἀποστροφῆς προσώπου συγγενοῦς, ἀπὸ ἀφαιρέσεως μερίδος καὶ δόσεως, καὶ ἀπὸ κατανοήσεως γυναικὸς ὑπάνδρου,",
+        "VUL": "Erubescite a patre et a matre de fornicatione :/ et a præsidente et a potente de mendacio :/",
+        "SYN": "Стыдитесь пред отцом и матерью блуда, пред начальником и властелином - лжи;",
+        "NEO": "et de détourner le visage d’un parent ; de lui prendre sa part et son don, et d’observer une femme mariée ;",
+        "NAB": "Of gazing at a married woman, and of entertaining thoughts about another's wife; Of trifling with a servant girl you have, and of violating her couch;",
+        "VAT_ES": "de dar o recibir con desdén, y de no devolver el saludo;",
+        "CEI": "del disprezzo di ciò che prendi o che ti è dato, di non rispondere a quanti salutano,"
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +375,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀπὸ περιεργείας παιδίσκης αὐτοῦ, καὶ μὴ ἐπιστῇς ἐπὶ τὴν κοίτην αὐτῆς· ἀπὸ φίλων περὶ λόγων ὀνειδισμοῦ, καὶ μετὰ τὸ δοῦναι μὴ ὀνείδιζε·",
+        "VUL": "a principe et a judice de delicto :/ a synagoga et plebe de iniquitate :/",
+        "SYN": "пред судьею и князем - преступления, пред собранием и народом - беззакония;",
+        "NEO": "d’avoir des familiarités avec ta servante, et ne te tiens pas près de son lit ; aie honte des paroles offensantes devant tes amis, et ne reproche pas après avoir donné.",
+        "NAB": "Of using harsh words with friends, and of following up your gifts with insults;",
+        "VAT_ES": "de mirar a una prostituta, y de dar vuelta la cara a un pariente;",
+        "CEI": "dello sguardo su una donna scostumata, del rifiuto fatto a un parente,"
+      }
     }
   }
 }

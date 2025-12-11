@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀγρυπνία πλούτου ἐκτήκει σάρκας, καὶ ἡ μέριμνα αὐτοῦ ἀφιστᾷ ὕπνον·",
+        "VUL": "[Vana spes et mendacium viro insensato :/ et somnia extollunt imprudentes./",
+        "SYN": "Пустые и ложные надежды - у человека безрассудного, и сонные грезы окрыляют глупых.",
+        "NEO": "L’insensé se livre à des espérances vaines et trompeuses, et les songes donnent des ailes aux sots.",
+        "NAB": "Empty and false are the hopes of the senseless, and fools are borne aloft by dreams.",
+        "VAT_ES": "Vanas y engañosas son las esperanzas del insensato, y los sueños dan alas a los necios.",
+        "CEI": "Speranze vane e fallaci sono proprie dell'uomo insensato, i sogni danno le ali agli stolti."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "μέριμνα ἀγρυπνίας ἀπαιτήσει νυσταγμόν, καὶ ἀρρώστημα βαρὺ ἐκνήψει ὕπνον.",
+        "VUL": "Quasi qui apprehendit umbram et persequitur ventum,/ sic et qui attendit ad visa mendacia./",
+        "SYN": "Как обнимающий тень или гонящийся за ветром, так верящий сновидениям.",
+        "NEO": "C’est vouloir saisir une ombre et atteindre le vent, que de s’arrêter à des songes.",
+        "NAB": "Like a man who catches at shadows or chases the wind, is the one who believes in dreams.",
+        "VAT_ES": "Tratar de asir una sombra o correr detrás del viento es dar crédito a los sueños.",
+        "CEI": "Come uno che afferra le ombre e insegue il vento, così chi si appoggia ai sogni."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐκοπίασεν πλούσιος ἐν συναγωγῇ χρημάτων, καὶ ἐν τῇ ἀναπαύσει ἐμπίμπλαται τῶν τρυφημάτων αὐτοῦ·",
+        "VUL": "Hoc secundum hoc visio somniorum,/ ante faciem hominis similitudo hominis./",
+        "SYN": "Сновидения совершенно то же, что подобие лица против лица.",
+        "NEO": "Une chose d’après une autre, voilà ce qu’on voit en songe ; c’est comme l’image d’un visage en face d’un visage.",
+        "NAB": "What is seen in dreams is to reality what the reflection of a face is to the face itself.",
+        "VAT_ES": "Las visiones de los sueños no son más que un espejismo: un rostro ante el reflejo de su propia imagen.",
+        "CEI": "Questo dopo quello: tale la visione di sogni, di fronte a un volto l'immagine di un volto."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐκοπίασεν πτωχὸς ἐν ἐλαττώσει βίου, καὶ ἐν τῇ ἀναπαύσει ἐπιδεὴς γίνεται.",
+        "VUL": "Ab immundo, quid mundabitur ?/ et a mendace, quid verum dicetur ?/",
+        "SYN": "От нечистого что может быть чистого, и от ложного что может быть истинного?",
+        "NEO": "De l’impureté, que peut-il sortir de pur ? Du mensonge, que peut-il sortir de vrai ?",
+        "NAB": "Can the unclean produce the clean? can the liar ever speak the truth?",
+        "VAT_ES": "&iquest;Puede sacarse algo puro de lo impuro o de la mentira puede salir la verdad?",
+        "CEI": "Dall'impuro che cosa potrà uscire di puro? E dal falso che cosa potrà uscire di vero?"
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "ὁ ἀγαπῶν χρυσίον οὐ δικαιωθήσεται, καὶ ὁ διώκων διαφθορὰν αὐτὸς πλησθήσεται.",
+        "VUL": "Divinatio erroris, et auguria mendacia,/ et somnia malefacientium, vanitas est :/",
+        "SYN": "Гадания и приметы и сновидения - суета, и сердце наполняется мечтами, как у рождающей.",
+        "NEO": "La divination, les augures et les songes sont choses vaines, pareilles aux imaginations du cœur d’une femme enceinte.",
+        "NAB": "Divination, omens and dreams all are unreal; what you already expect, the mind depicts.",
+        "VAT_ES": "Adivinaciones, augurios y sueños son cosas vanas, puras fantasías, como las de una parturienta.",
+        "CEI": "Oracoli, auspici e sogni sono cose vane, come vaneggia la mente di una donna in doglie."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "πολλοὶ ἐδόθησαν εἰς πτῶμα χάριν χρυσίου, καὶ ἐγενήθη ἀπώλεια αὐτῶν κατὰ πρόσωπον αὐτῶν.",
+        "VUL": "et sicut parturientis, cor tuum phantasias patitur./ Nisi ab Altissimo fuerit emissa visitatio,/ ne dederis in illis cor tuum :/",
+        "SYN": "Если они не будут посланы от Всевышнего для вразумления, не прилагай к ним сердца твоего.",
+        "NEO": "A moins qu’ils ne soient envoyés par le Très-Haut, dans une visite, ne leur abandonne pas ton cœur.",
+        "NAB": "Unless it be a vision specially sent by the Most High, fix not your heart on it;",
+        "VAT_ES": "A no ser que los envíe el Altísimo en una visita, no les prestes ninguna atención.",
+        "CEI": "Se non sono inviati dall'Altissimo in una sua visita, non permettere che se ne occupi la tua mente."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "ξύλον προσκόμματός ἐστιν τοῖς ἐνθυσιάζουσιν αὐτῷ, καὶ πᾶς ἄφρων ἁλώσεται ἐν αὐτῷ.",
+        "VUL": "multos enim errare fecerunt somnia,/ et exciderunt sperantes in illis./",
+        "SYN": "Сновидения ввели многих в заблуждение, и надеявшиеся на них подверглись падению.",
+        "NEO": "Car les songes en ont égaré beaucoup, et ceux qui appuyaient sur eux leurs espérances sont tombés.",
+        "NAB": "For dreams have led many astray, and those who believed in them have perished.",
+        "VAT_ES": "Porque los sueños han extraviado a muchos que cayeron por esperar en ellos.",
+        "CEI": "I sogni hanno indotto molti in errore, hanno deviato quanti avevano in essi sperato."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "μακάριος πλούσιος ὃς εὑρέθη ἄμωμος, καὶ ὃς ὀπίσω χρυσίου οὐκ ἐπορεύθη·",
+        "VUL": "Sine mendacio consummabitur verbum legis,/ et sapientia in ore fidelis complanabitur.]",
+        "SYN": "Закон исполняется без обмана, и мудрость в устах верных совершается.",
+        "NEO": "Mais la loi s’accomplit sans mensonge, comme se réalise toute sage parole sortie d’une bouche fidèle.",
+        "NAB": "The law is fulfilled without fail, and perfect wisdom is found in the mouth of the faithful man.",
+        "VAT_ES": "La Ley debe cumplirse sin falsedad, y la sabiduría expresada fielmente es perfecta.",
+        "CEI": "Senza menzogna si deve adempiere la legge, la sapienza in bocca verace è perfezione."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "τίς ἐστιν, καὶ μακαριοῦμεν αὐτόν; ἐποίησεν γὰρ θαυμάσια ἐν λαῷ αὐτοῦ.",
+        "VUL": "[Qui non est tentatus quid scit ?/ vir in multis expertus cogitabit multa :/ et qui multa didicit enarrabit intellectum./",
+        "SYN": "Человек ученый знает много, и многоопытный выскажет знание.",
+        "NEO": "L’homme instruit sait beaucoup de choses, et l’homme de grande expérience parle sagement.",
+        "NAB": "A man with training gains wide knowledge; a man of experience speaks sense.",
+        "VAT_ES": "El que ha viajado mucho sabe muchas cosas, y el hombre de experiencia habla inteligentemente.",
+        "CEI": "Chi ha viaggiato conosce molte cose, chi ha molta esperienza parlerà con intelligenza."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "τίς ἐδοκιμάσθη ἐν αὐτῷ καὶ ἐτελειώθη; καὶ ἔστω εἰς καύχησιν. τίς ἐδύνατο παραβῆναι καὶ οὐ παρέβη, καὶ ποιῆσαι κακὰ καὶ οὐκ ἐποίησεν;",
+        "VUL": "Qui non est expertus pauca recognoscit :/ qui autem in multis factus est, multiplicat malitiam./",
+        "SYN": "Кто не имел опытов, тот мало знает; а кто странствовал, тот умножил знание.",
+        "NEO": "Celui qui n’a pas été éprouvé sait peu de choses, et celui qui a voyagé possède une grande prudence.",
+        "NAB": "One never put to the proof knows little, whereas with travel a man adds to his resourcefulness.",
+        "VAT_ES": "El que no ha sido probado sabe pocas cosas, pero el que ha andado mucho adquiere gran habilidad.",
+        "CEI": "Chi non ha avuto delle prove, poco conosce; chi ha viaggiato ha accresciuto l'accortezza."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "στερεωθήσεται τὰ ἀγαθὰ αὐτοῦ, καὶ τὰς ἐλεημοσύνας αὐτοῦ ἐκδιηγήσεται ἐκκλησία.",
+        "VUL": "Qui tentatus non est qualia scit ?/ qui implanatus est abundabit nequitia./",
+        "SYN": "Многое я видел в моем странствовании, и я знаю больше, нежели сколько говорю.",
+        "NEO": "J’ai vu beaucoup de choses dans mes voyages, et ma science est plus grande que mes paroles.",
+        "NAB": "I have seen much in my travels, learned more than ever I could say.",
+        "VAT_ES": "Yo he visto muchas cosas en el curo de mis viajes, y sé mucho más de lo que podría expresar.",
+        "CEI": "Ho visto molte cose nei miei viaggi; il mio sapere è più che le mie parole."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "Ἐπὶ τραπέζης μεγάλης ἐκάθισας; μὴ ἀνοίξῃς ἐπ’ αὐτῆς τὸν φάρυγγά σου, καὶ μὴ εἴπῃς Πολλά γε τὰ ἐπ’ αὐτῆς.",
+        "VUL": "Multa vidi errando,/ et plurimas verborum consuetudines./",
+        "SYN": "Много раз был я в опасности смерти, и спасался при помощи опыта",
+        "NEO": "Souvent j’ai été en danger de mort, et j’ai été sauvé grâce à cette expérience.",
+        "NAB": "Often I was in danger of death, but by these attainments I was saved.",
+        "VAT_ES": "Muchas veces estuve en peligro de muerte, y gracias a todo eso escapé sano y salvo.",
+        "CEI": "Spesso ho corso pericoli mortali; ma sono stato salvato grazie alla mia esperienza."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "μνήσθητι ὅτι κακὸν ὀφθαλμὸς πονηρός· πονηρότερον ὀφθαλμοῦ τί ἔκτισται; διὰ τοῦτο ἀπὸ παντὸς προσώπου δακρύει.",
+        "VUL": "Aliquoties usque ad mortem periclitatus sum horum causa,/ et liberatus sum gratia Dei.]",
+        "SYN": "Дух боящихся Господа поживет, ибо надежда их - на Спасающего их.",
+        "NEO": "L’esprit de ceux qui craignent le Seigneur vivra, car leur espérance est en celui qui les sauve.",
+        "NAB": "Lively is the courage of those who fear the LORD, for they put their hope in their savior;",
+        "VAT_ES": "El espíritu de los que temen al Señor vivirá, porque han puesto su esperanza en aquel que los salva.",
+        "CEI": "Lo spirito di coloro che temono il Signore vivrà, perché la loro speranza è posta in colui che li salva."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "οὗ ἐὰν ἐπιβλέψῃ, μὴ ἐκτείνῃς χεῖρα, καὶ μὴ συνθλίβου αὐτῷ ἐν τρυβλίῳ.",
+        "VUL": "[Spiritus timentium Deum quæritur,/ et in respectu illius benedicetur./",
+        "SYN": "Боящийся Господа ничего не устрашится и не убоится, ибо Он - надежда его.",
+        "NEO": "Celui qui craint le Seigneur n’a peur de rien ; il ne tremble pas, car Dieu est son espérance.",
+        "NAB": "He who fears the LORD is never alarmed, never afraid; for the LORD is his hope.",
+        "VAT_ES": "El que teme al Señor no se intimida por nada, y no se acobarda, porque él es su esperanza.",
+        "CEI": "Chi teme il Signore non ha paura di nulla, e non teme perché egli è la sua speranza."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "νόει τὰ τοῦ πλησίον ἐκ σεαυτοῦ, καὶ ἐπὶ παντὶ πράγματι διανοοῦ.",
+        "VUL": "Spes enim illorum in salvantem illos,/ et oculi Dei in diligentes se./",
+        "SYN": "Блаженна душа боящегося Господа! кем он держится, и кто опора его?",
+        "NEO": "Heureuse l’âme de celui qui craint le Seigneur ! Sur qui s’appuie-t-elle, et qui est son soutien ?",
+        "NAB": "Happy the soul that fears the LORD! In whom does he trust, and who is his support?",
+        "VAT_ES": "&iexcl;Feliz el alma del que teme al Señor! &iquest;En quién se sostiene y cuál es su apoyo?",
+        "CEI": "Beata l'anima di chi teme il Signore; a chi si appoggia? Chi è il suo sostegno?"
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "φάγε ὡς ἄνθρωπος τὰ παρακείμενά σοι, καὶ μὴ διαμασῶ, μὴ μισηθῇς·",
+        "VUL": "Qui timet Dominum nihil trepidabit :/ et non pavebit, quoniam ipse est spes ejus./",
+        "SYN": "Очи Господа - на любящих Его. Он - могущественная защита и крепкая опора, покров от зноя и покров от полуденного жара, охранение от преткновения и защита от падения;",
+        "NEO": "Les yeux du Seigneur sont sur ceux qui l’aiment ; il est un protecteur puissant, un appui plein de force, un abri contre le vent d’Orient, un abri contre les feux du midi, une garde contre l’achoppement, un secours contre la chute ;",
+        "NAB": "The eyes of the LORD are upon those who love him; he is their mighty shield and strong support, A shelter from the heat, a shade from the noonday sun, a guard against stumbling, a help against falling.",
+        "VAT_ES": "Los ojos del Señor miran a aquellos que lo aman: él es escudo poderoso y apoyo seguro, refugio contra el viento abrasador y el ardor del mediodía, salvaguardia contra el tropiezo y auxilio contra la caída.",
+        "CEI": "Gli occhi del Signore sono su coloro che lo amano, protezione potente e sostegno di forza, riparo dal vento infuocato e riparo dal sole meridiano, difesa contro gli ostacoli, soccorso nella caduta;"
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "παῦσαι πρῶτος χάριν παιδείας, καὶ μὴ ἀπληστεύου, μή ποτε προσκόψῃς·",
+        "VUL": "Timentis Dominum, beata est anima ejus./",
+        "SYN": "Он возвышает душу и просвещает очи, дает врачевство, жизнь и благословение.",
+        "NEO": "il élève l’âme, il illumine les yeux, il donne santé, vie et bénédiction.",
+        "NAB": "He buoys up the spirits, brings a sparkle to the eyes, gives health and life and blessing.",
+        "VAT_ES": "El levanta el ánimo e ilumina los ojos, da salud, vida y bendición.",
+        "CEI": "solleva l'anima e illumina gli occhi, concede sanità, vita e benedizione."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ εἰ ἀνὰ μέσον πλειόνων ἐκάθισας, πρότερος αὐτῶν μὴ ἐκτείνῃς τὴν χεῖρά σου.",
+        "VUL": "Ad quem respicit, et quis est fortitudo ejus ?/",
+        "SYN": "Кто приносит жертву от неправедного стяжания, того приношение насмешливое, и дары беззаконных неблагоугодны;",
+        "NEO": "Immoler un bien mal acquis, c’est faire une offrande dérisoire ; et les dérisions des pécheurs ne sauraient être agréables à Dieu.",
+        "NAB": "Tainted his gifts who offers in sacrifice ill-gotten goods! Mock presents from the lawless win not God's favor.",
+        "VAT_ES": "Ofrecer en sacrificio el fruto de la injusticia es presentar una ofrenda defectuosa, y los dones de los impíos no son aceptados.",
+        "CEI": "Sacrificare il frutto dell'ingiustizia è un'offerta da burla; i doni dei malvagi non sono graditi."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "ὡς ἱκανὸν ἀνθρώπῳ πεπαιδευμένῳ τὸ ὀλίγον, καὶ ἐπὶ τῆς κοίτης αὐτοῦ οὐκ ἀσθμαίνει.",
+        "VUL": "Oculi Domini super timentes eum :/ protector potentiæ, firmamentum virtutis,/ tegimen ardoris, et umbraculum meridiani :/",
+        "SYN": "не благоволит Всевышний к приношениям нечестивых и множеством жертв не умилостивляется о грехах их.",
+        "NEO": "Le Très-Haut n’agrée pas les offrandes des impies, et ce n’est pas pour les nombreuses victimes qu’il pardonne les péchés.",
+        "NAB": "The Most High approves not the gifts of the godless, nor for their many sacrifices does he forgive their sins.",
+        "VAT_ES": "El Altísimo no acepta las ofrendas de los impíos, y no es por el número de víctimas que perdona los pecados.",
+        "CEI": "L'Altissimo non gradisce le offerte degli empi, e per la moltitudine delle vittime non perdona i peccati."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +341,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "ὕπνος ὑγείας ἐπὶ ἐντέρῳ μετρίῳ· ἀνέστη πρωί, καὶ ἡ ψυχὴ αὐτοῦ μετ’ αὐτοῦ· πόνος ἀγρυπνίας καὶ χολέρας καὶ στρόφος μετὰ ἀνδρὸς ἀπλήστου.",
+        "VUL": "deprecatio offensionis, et adjutorium casus :/ exaltans animam, et illuminans oculos,/ dans sanitatem, et vitam, et benedictionem.]",
+        "SYN": "Что заколающий на жертву сына пред отцем его, то приносящий жертву из имения бедных.",
+        "NEO": "Il immole un fils sous les yeux de son père, celui qui offre un sacrifice pris sur le bien des pauvres.",
+        "NAB": "Like the man who slays a son in his father's presence is he who offers sacrifice from the possessions of the poor.",
+        "VAT_ES": "Como inmolar a un hijo ante los ojos de su padre, es presentar una víctima con bienes quitados a los pobres.",
+        "CEI": "Sacrifica un figlio davanti al proprio padre chi offre un sacrificio con i beni dei poveri."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +358,15 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ εἰ ἐβιάσθης ἐν ἐδέσμασιν, ἀνάστα μεσοπορῶν, καὶ ἀναπαύσῃ.",
+        "VUL": "[Immolantis ex iniquo oblatio est maculata,/ et non sunt beneplacitæ subsannationes injustorum./",
+        "SYN": "Хлеб нуждающихся есть жизнь бедных: отнимающий его есть кровопийца.",
+        "NEO": "Le pain des malheureux est la vie des pauvres ; celui qui les en prive est un meurtrier.",
+        "NAB": "The bread of charity is life itself for the needy; he who withholds it is a man of blood.",
+        "VAT_ES": "Un mendrugo de pan es la vida de los indigentes: el que los priva de él es un sanguinario.",
+        "CEI": "Il pane dei bisognosi è la vita dei poveri, toglierlo a loro è commettere un assassinio."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +375,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "ἄκουσόν μου, τέκνον, καὶ μὴ ἐξουδενήσῃς με, καὶ ἐπ’ ἐσχάτῳ εὑρήσεις τοὺς λόγους μου. ἐν πᾶσι τοῖς ἔργοις σου γίνου ἐντρεχής, καὶ πᾶν ἀρρώστημα οὐ μή σοι ⸆ ἀπαντήσῃ.",
+        "VUL": "Dominus solus sustinentibus se/ in via veritatis et justitiæ./",
+        "SYN": "Убивает ближнего, кто отнимает у него пропитание, и проливает кровь, кто лишает наемника платы.",
+        "NEO": "Il donne la mort à son prochain, celui qui lui ôte sa subsistance ; il verse le sang, celui qui prive le mercenaire de son salaire.",
+        "NAB": "He slays his neighbor who deprives him of his living: he sheds blood who denies the laborer his wages.",
+        "VAT_ES": "Mata a su prójimo el que lo priva del sustento, derrama sangre el que retiene el salario del jornalero.",
+        "CEI": "Uccide il prossimo chi gli toglie il nutrimento, versa sangue chi rifiuta il salario all'operaio."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +392,15 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "LXX": "λαμπρὸν ἐπ’ ἄρτοις εὐλογήσει χείλη, καὶ μαρτυρία τῆς καλλονῆς αὐτοῦ πιστή·",
+        "VUL": "Dona iniquorum non probat Altissimus,/ nec respicit in oblationes iniquorum,/ nec in multitudine sacrificiorum eorum propitiabitur peccatis./",
+        "SYN": "Когда один строит, а другой разрушает: то что они получат для себя кроме утомления?",
+        "NEO": "L’un bâtit et l’autre détruit : qu’en retirent-ils, sinon de la peine ?",
+        "NAB": "If one man builds up and another tears down, what do they gain but trouble?",
+        "VAT_ES": "Si uno edifica y otro destruye, &iquest;qué ganan con eso sino fatigas?",
+        "CEI": "Uno edifica, l'altro abbatte: che vantaggio se ne ricava oltre la fatica? Uno prega, l'altro maledice: quale delle due voci ascolterà il Signore?"
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +409,14 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "LXX": "πονηρῷ ἐπ’ ἄρτῳ διαγογγύσει πόλις, καὶ ἡ μαρτυρία τῆς πονηρίας αὐτοῦ ἀκριβής.",
+        "VUL": "Qui offert sacrificium ex substantia pauperum,/ quasi qui victimat filium in conspectu patris sui./",
+        "SYN": "Когда один молится, а другой проклинает, чей голос услышит Владыка?",
+        "NEO": "L’un prie et l’autre maudit : duquel le Maître écoutera-t-il la voix ?",
+        "NAB": "If one man prays and another curses, whose voice will the LORD hear?",
+        "VAT_ES": "Si uno suplica y otro maldice, &iquest;qué voz escuchará el Dueño de todo?"
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +425,15 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "LXX": "Ἐν οἴνῳ μὴ ἀνδρίζου, πολλοὺς γὰρ ἀπώλεσεν ὁ οἶνος·",
+        "VUL": "Panis egentium vita pauperum est :/ qui defraudat illum homo sanguinis est./",
+        "SYN": "Когда кто омывается от осквернения мертвым и опять прикасается к нему, какая польза от его омовения?",
+        "NEO": "Celui qui se lave après le contact d’un mort et qui le touche encore, que gagne-t-il à s’être lavé ?",
+        "NAB": "If a man again touches a corpse after he has bathed, what did he gain by the purification?",
+        "VAT_ES": "El que vuelve a tocar a un muerto después de haberse lavado, &iquest;qué ha ganado con purificarse?",
+        "CEI": "Lavarsi dopo aver toccato un morto, poi toccarlo di nuovo: quale utilità c'è in simile abluzione?"
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +442,15 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "LXX": "κάμινος δοκιμάζει στόμωμα ἐν βαφῇ, οὕτως οἶνος καρδίας ἐν μάχῃ ὑπερηφάνων.",
+        "VUL": "Qui aufert in sudore panem,/ quasi qui occidit proximum suum./",
+        "SYN": "Так человек, который постится за грехи свои и опять идет и делает то же самое: кто услышит молитву его? и какую пользу получит он от того, что смирялся?",
+        "NEO": "Ainsi en est-il de l’homme qui jeûne pour ses péchés, s’il va les commettre encore : qui entendra sa prière, et que lui servira son humiliation.",
+        "NAB": "So with a man who fasts for his sins, but then goes and commits them again: Who will hear his prayer, and what has he gained by his mortification?",
+        "VAT_ES": "Así es el hombre que ayuda por sus pecados y luego vuelve a cometerlos &iquest;quién escuchará su plegaria y qué ha ganado con humillarse?",
+        "CEI": "Così l'uomo che digiuna per i suoi peccati e poi va e li commette di nuovo. Chi ascolterà la sua supplica? Quale utilità c'è nella sua umiliazione?"
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +459,10 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔφισον ζωῆς οἶνος ἀνθρώπῳ, ἐὰν πίνῃς αὐτὸν μέτρῳ αὐτοῦ· τίς ζωὴ ἐλασσουμένῳ οἴνῳ; καὶ αὐτὸς ἔκτισται εἰς εὐφροσύνην ἀνθρώποις.",
+        "VUL": "Qui effundit sanguinem,/ et qui fraudem facit mercenario, fratres sunt./"
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +471,10 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀγαλλίαμα καρδίας καὶ εὐφροσύνη ψυχῆς οἶνος πινόμενος ἐν καιρῷ αὐτάρκης·",
+        "VUL": "Unus ædificans, et unus destruens :/ quid prodest illis, nisi labor ?/"
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +483,10 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "LXX": "πικρία ψυχῆς οἶνος πινόμενος πολὺς ἐν ἐρεθισμῷ καὶ ἀντιπτώματι.",
+        "VUL": "Unus orans, et unus maledicens :/ cujus vocem exaudiet Deus ?/"
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +495,10 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "LXX": "πληθύνει μέθη θυμὸν ἄφρονος εἰς πρόσκομμα, ἐλαττῶν ἰσχὺν καὶ προσποιῶν τραύματα.",
+        "VUL": "Qui baptizatur a mortuo, et iterum tangit eum,/ quid proficit lavatio illius ?/"
+      }
     },
     "31": {
       "seq": 31,
@@ -288,7 +507,10 @@
         "VUL": 31,
         "LXX": 31
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν συμποσίῳ οἴνου μὴ ἐλέγξῃς τὸν πλησίον, καὶ μὴ ἐξουθενήσῃς αὐτὸν ἐν εὐφροσύνῃ αὐτοῦ· λόγον ὀνειδισμοῦ μὴ εἴπῃς αὐτῷ, καὶ μὴ αὐτὸν θλίψῃς ἐν ἀπαιτήσει.",
+        "VUL": "Sic homo qui jejunat in peccatis suis,/ et iterum eadem faciens :/ quid proficit humiliando se ?/ orationem illius quis exaudiet ?]"
+      }
     }
   }
 }

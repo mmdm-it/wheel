@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "Ἀσχολία μεγάλη ἔκτισται παντὶ ἀνθρώπῳ, καὶ ζυγὸς βαρὺς ἐπὶ υἱοὺς Ἀδάμ, ἀφ’ ἡμέρας ἐξόδου ἐκ γαστρὸς μητρὸς αὐτῶν ἕως ἡμέρας ἐπὶ ταφῇ εἰς μητέρα πάντων·",
+        "VUL": "[Occupatio magna creata est omnibus hominibus,/ et jugum grave super filios Adam,/ a die exitus de ventre matris eorum/ usque in diem sepulturæ in matrem omnium./",
+        "SYN": "Много трудов предназначено каждому человеку, и тяжело иго на сынах Адама со дня исхода из чрева матери их до дня возвращения к матери всех.",
+        "NEO": "A tout homme a été imposée une grande misère, et un joug pesant est sur les enfants des hommes, depuis le jour où ils sortent du sein de leur mère, jusqu’au jour de leur sépulture dans le sein de la mère commune.",
+        "NAB": "A great anxiety has God allotted, and a heavy yoke, to the sons of men; From the day one leaves his mother's womb to the day he returns to the mother of all the living,",
+        "VAT_ES": "Una penosa tarea ha sido impuesta a todo hombre y un yugo pesado agobia a los hijos de Adán, desde el día que salen del vientre materno, hasta el día que retornan a la madre común.",
+        "CEI": "Una sorte penosa è disposta per ogni uomo, un giogo pesante grava sui figli di Adamo, dal giorno della loro nascita dal grembo materno al giorno del loro ritorno alla madre comune."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "τοὺς διαλογισμοὺς αὐτῶν καὶ φόβον καρδίας, ἐπίνοια προσδοκίας, ἡμέρα τελευτῆς·",
+        "VUL": "Cogitationes eorum, et timores cordis,/ adinventio exspectationis, et dies finitionis,/",
+        "SYN": "Мысль об ожидаемом и день смерти производит в них размышления и страх сердца.",
+        "NEO": "Ce qui trouble leurs pensées et fait craindre leurs cœurs, c’est la pensée de leur attente, c’est la crainte de la mort.",
+        "NAB": "His thoughts, the fear in his heart, and his troubled forebodings till the day he dies -",
+        "VAT_ES": "Les da mucho que pensar y los llena de temor la ansiosa expectativa del día de la muerte.",
+        "CEI": "Materia alle loro riflessioni e ansietà per il loro cuore offrono il pensiero di ciò che li attende e il giorno della fine."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀπὸ καθημένου ἐπὶ θρόνου ἐν δόξῃ καὶ ἕως τεταπεινωμένου ἐν γῇ καὶ σποδῷ,",
+        "VUL": "a residente super sedem gloriosam,/ usque ad humiliatum in terra et cinere :/",
+        "SYN": "От сидящего на славном престоле и до поверженного на земле и во прахе,",
+        "NEO": "Depuis l’homme qui siège sur un trône, dans la gloire, jusqu’au malheureux assis par terre et sur la cendre ;",
+        "NAB": "Whether he sits on a lofty throne or grovels in dust and ashes,",
+        "VAT_ES": "Desde el que está sentado en un trono glorioso hasta el humillado en el polvo y la ceniza;",
+        "CEI": "Da chi siede su un trono glorioso fino al misero che giace sulla terra e sulla cenere;"
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀπὸ φοροῦντος ὑάκινθον καὶ στέφανον καὶ ἕως περιβαλλομένου ὠμόλινον·",
+        "VUL": "ab eo qui utitur hyacintho et portat coronam,/ usque ad eum qui operitur lino crudo :/ furor, zelus, tumultus, fluctuatio, et timor mortis,/ iracundia perseverans, et contentio :/",
+        "SYN": "от носящего порфиру и венец и до одетого в рубище, -",
+        "NEO": "depuis celui qui porte la pourpre et la couronne, jusqu’au misérable, couvert d’une toile grossière,",
+        "NAB": "Whether he bears a splendid crown or is wrapped in the coarsest of cloaks -",
+        "VAT_ES": "desde el que lleva púrpura y corona hasta el que va vestido miserablemente, sólo sienten rabia y envidia, turbación e inquietud, miedo a la muerte, resentimiento y rivalidad;",
+        "CEI": "da chi indossa porpora e corona fino a chi è ricoperto di panno grossolano, non c'è che sdegno, invidia, spavento, agitazione, paura della morte, contese e liti."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "θυμὸς καὶ ζῆλος καὶ ταραχὴ καὶ σάλος καὶ φόβος θανάτου καὶ μηνίαμα καὶ ἔρις. καὶ ἐν καιρῷ ἀναπαύσεως ἐπὶ κοίτης ὕπνος νυκτὸς ἀλλοιοῖ γνῶσιν αὐτοῦ·",
+        "VUL": "et in tempore refectionis in cubili,/ somnus noctis immutat scientiam ejus./",
+        "SYN": "у всякого досада и ревность, и смущение, и беспокойство, и страх смерти, и негодование, и распря, и во время успокоения на ложе ночной сон расстраивает ум его.",
+        "NEO": "la colère, l’envie, le trouble, l’agitation, la crainte de la mort, l’aigreur et les querelles sont le partage de tous ; et, dans le temps où chacun repose sur sa couche, le sommeil de la nuit bouleverse ses idées.",
+        "NAB": "Are of wrath and envy, trouble and dread, terror of death, fury and strife. Even when he lies on his bed to rest, his cares at night disturb his sleep.",
+        "VAT_ES": "y a la hora en que cada uno descansa en su lecho, el sueño de la noche perturba sus pensamientos.",
+        "CEI": "Durante il riposo nel letto il sogno notturno turba le sue cognizioni."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "ὀλίγον ὡς οὐδὲν ἐν ἀναπαύσει, καὶ ἀπ’ ἐκείνου ἐν ὕπνοις ὡς ἐν ἡμέρᾳ σκοπιᾶς· τεθορυβημένος ἐν ὁράσει καρδίας αὐτοῦ, ὡς ἐκπεφευγὼς ἀπὸ προσώπου πολέμου·",
+        "VUL": "Modicum tamquam nihil in requie,/ et ab eo in somnis, quasi in die respectus./",
+        "SYN": "Мало, почти совсем не имеет он покоя, и потому и во сне он, как днем, на страже:",
+        "NEO": "Il repose un instant, si peu que rien, et aussitôt des rêves l’agitent ; il lui semble être en sentinelle pendant le jour, il est effrayé par la vision de son esprit, comme un homme qui fuit devant le combat.",
+        "NAB": "So short is his rest it seems like none, till in his dreams he struggles as he did by day, Terrified by what his mind's eye sees, like a fugitive being pursued;",
+        "VAT_ES": "Descansa un poco, casi nada, y empieza a debatirse como en pleno día, agitado por sus propias pesadillas, como quien huye de un campo de batalla.",
+        "CEI": "Per un poco, un istante, riposa; quindi nel sonno, come in un giorno di guardia, è sconvolto dai fantasmi del suo cuore, come chi è scampato da una battaglia."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν καιρῷ σωτηρίας αὐτοῦ ἐξηγέρθη, καὶ ἀποθαυμάζων εἰς οὐδένα φόβον.",
+        "VUL": "Conturbatus est in visu cordis sui,/ tamquam qui evaserit in die belli :/ in tempore salutis suæ exsurrexit,/ et admirans ad nullum timorem :/",
+        "SYN": "будучи смущен сердечными своими мечтами, как бежавший с поля брани, во время безопасности своей он пробуждается и не может надивиться, что ничего не было страшного.",
+        "NEO": "Au moment de la délivrance, il s’éveille, et s’étonne de sa vaine frayeur.",
+        "NAB": "As he reaches safety, he wakes up astonished that there was nothing to fear.",
+        "VAT_ES": "En el momento de sentirse a salvo, se despierta y ve con sorpresa que su temor era infundado.",
+        "CEI": "Mentre sta per mettersi in salvo si sveglia, meravigliandosi dell'irreale timore."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "μετὰ πάσης σαρκὸς ἀπὸ ἀνθρώπου ἕως κτήνους, καὶ ἐπὶ ἁμαρτωλῶν ἑπταπλάσια πρὸς ταῦτα·",
+        "VUL": "cum omni carne, ab homine usque ad pecus,/ et super peccatores septuplum./",
+        "SYN": "Хотя это бывает со всякою плотью, от человека до скота, но у грешников в семь крат более сего.",
+        "NEO": "Ainsi en est-il de toute chair, depuis l’homme jusqu’à la bête, et pour les pécheurs, sept fois plus encore.",
+        "NAB": "So it is with all flesh, with man and with beast, but for sinners seven times more.",
+        "VAT_ES": "Esto le toca a todo ser viviente, sea hombre o animal, pero a los pecadores, siete veces más:",
+        "CEI": "È sorte di ogni essere vivente, dall'uomo alla bestia, ma per i peccatori sette volte tanto:"
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "θάνατος καὶ αἷμα καὶ ἔρις καὶ ῥομφαία,",
+        "VUL": "Ad hæc mors, sanguis, contentio, et rhomphæa,/ oppressiones, fames, et contritio, et flagella :/",
+        "SYN": "Смерть, убийство, ссора, меч, бедствия, голод, сокрушение и удары, -",
+        "NEO": "La peste, le meurtre, la discorde, l’épée, [les calamités, la famine, la destruction et les autres fléaux] :",
+        "NAB": "Plague and bloodshed, wrath and the sword, plunder and ruin, famine and death:",
+        "VAT_ES": "muerte, sangre, rivalidad y espada, adversidad, hambre, destrucción y flagelo.",
+        "CEI": "morte, sangue, contese, spada, disgrazie, fame, calamità, flagelli."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐπὶ τοὺς ἀνόμους ἐκτίσθη ταῦτα πάντα, καὶ δι’ αὐτοὺς ἐγένετο ὁ κατακλυσμός.",
+        "VUL": "super iniquos creata sunt hæc omnia :/ et propter illos factus est cataclysmus.]",
+        "SYN": "все это - для беззаконных; и потоп был для них.",
+        "NEO": "tout cela a été créé contre les pécheurs, comme c’est à cause d’eux que le déluge est arrivé.",
+        "NAB": "For the wicked, these were created evil, and it is they who bring on destruction.",
+        "VAT_ES": "Todo esto fue creado para los impíos, y a causa de ellos sobrevino el diluvio.",
+        "CEI": "Questi mali sono stati creati per i malvagi, per loro causa si ebbe anche il diluvio."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "πάντα ὅσα ἀπὸ γῆς εἰς γῆν ἀναστρέφει, καὶ ἀπὸ ὑδάτων εἰς θάλασσαν ἀνακάμπτει.",
+        "VUL": "[Omnia quæ de terra sunt in terram convertentur,/ et omnes aquæ in mare revertentur./",
+        "SYN": "Все, что от земли, обращается в землю, и что из воды, возвращается в море.",
+        "NEO": "Tout ce qui vient de la terre retourne à la terre, comme ce qui vient des eaux descend à la mer.",
+        "NAB": "All that is of earth returns to earth, and what is from above returns above.",
+        "VAT_ES": "Todo lo que sale de la tierra, retorna a la tierra, y lo que sale de las aguas, vuelve al mar.",
+        "CEI": "Quanto è dalla terra alla terra ritorna; quanto è dalle acque rifluisce nel mare."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "πᾶν δῶρον καὶ ἀδικία ἐξαλειφθήσεται, καὶ πίστις εἰς τὸν αἰῶνα στήσεται.",
+        "VUL": "Omne munus et iniquitas delebitur,/ et fides in sæculum stabit./",
+        "SYN": "Всякий подарок и несправедливость будут истреблены, а верность будет стоять вовек.",
+        "NEO": "Tout présent et tout bien injustement acquis périront, mais la bonne foi subsistera à jamais.",
+        "NAB": "All that comes from bribes or injustice will be wiped out, but loyalty remains for ages.",
+        "VAT_ES": "El soborno y la injusticia desaparecerán, pero la fidelidad permanece para siempre.",
+        "CEI": "Ogni regalo per corrompere e l'ingiustizia spariranno, mentre la lealtà resterà sempre."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "χρήματα ἀδίκων ὡς ποταμὸς ξηρανθήσεται, καὶ ὡς βροντὴ μεγάλη ἐν ὑετῷ ἐξηχήσει·",
+        "VUL": "Substantiæ injustorum sicut fluvius siccabuntur,/ et sicut tonitruum magnum in pluvia personabunt./",
+        "SYN": "Имения неправедных, как поток, иссохнут и, как сильный гром при проливном дожде, прогремят.",
+        "NEO": "Les richesses des injustes tariront comme un torrent, et comme un fort tonnerre retentit pendant l’ondée.",
+        "NAB": "Wealth out of wickedness is like a wadi in spate: like a mighty stream with lightning and thunder,",
+        "VAT_ES": "La riqueza de los injustos se secará como un torrente, es como el fragor de un trueno que estalla en la tormenta.",
+        "CEI": "Le ricchezze degli ingiusti si seccheranno come un torrente, come un grande tuono rimbomba via durante la pioggia."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν τῷ ἀνοῖξαι αὐτὸν χεῖρας εὐφρανθήσεται, οὕτως οἱ παραβαίνοντες εἰς συντέλειαν ἐκλείψουσιν.",
+        "VUL": "In aperiendo manus suas lætabitur :/ sic prævaricatores in consummatione tabescent./",
+        "SYN": "Кто открывает руку, тот бывает весел; а преступники вконец погибнут.",
+        "NEO": "L’homme qui sait ouvrir la main se réjouira, mais les prévaricateurs subiront une ruine totale.",
+        "NAB": "Which, in its rising, rolls along the stones, but suddenly, once and for all, comes to an end.",
+        "VAT_ES": "Cuando uno de ellos se apodera de algo, se alegra, pero los transgresores desaparecerán por completo.",
+        "CEI": "Come l'ingiusto aprendo le mani si rallegrerà, così i trasgressori cadranno in rovina."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔκγονα ἀσεβῶν οὐ πληθυνεῖ κλάδους, καὶ ῥίζαι ἀκάθαρτοι ἐπ’ ἀκροτόμου πέτρας·",
+        "VUL": "Nepotes impiorum non multiplicabunt ramos :/ et radices immundæ super cacumen petræ sonant./",
+        "SYN": "Потомки нечестивых не умножат ветвей, и нечистые корни - на утесистой скале:",
+        "NEO": "La postérité des impies ne pousse pas de nombreux rameaux, et les racines impures sont sur le rocher escarpé.",
+        "NAB": "The offshoot of violence will not flourish, for the root of the godless is on sheer rock;",
+        "VAT_ES": "Los retoños de los impíos no multiplican sus ramas, y las raíces impuras están sobre una roca escarpada.",
+        "CEI": "La stirpe degli empi non aumenterà i suoi rami, le radici impure saranno sopra una pietra dura."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "ἄχει ἐπὶ παντὸς ὕδατος καὶ χείλους ποταμοῦ πρὸ παντὸς χόρτου ἐκτιλήσεται.",
+        "VUL": "Super omnem aquam viriditas,/ et ad oram fluminis ante omne fnum evelletur.]",
+        "SYN": "осока при всякой воде и на берегу реки скашивается прежде всякой другой травы.",
+        "NEO": "Le roseau qui croît près des eaux et sur le bord d’un fleuve est arraché avant toute autre herbe.",
+        "NAB": "Or they are like reeds on the riverbank, withered before all other plants;",
+        "VAT_ES": "Caña que brota en cualquier agua y al borde de un río será arrancada antes que toda otra hierba.",
+        "CEI": "Il giunco su ogni corso d'acqua e sugli argini di un fiume sarà tagliato prima di ogni altra erba."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "χάρις ὡς παράδεισος ἐν εὐλογίαις, καὶ ἐλεημοσύνη εἰς τὸν αἰῶνα διαμενεῖ.",
+        "VUL": "[Gratia sicut paradisus in benedictionibus,/ et misericordia in sæculum permanet./",
+        "SYN": "Благотворительность, как рай, полна благословений, и милостыня пребывает вовек.",
+        "NEO": "La bienveillance est comme un jardin béni, et la bienfaisance demeure à jamais.",
+        "NAB": "But goodness will never be cut off, and justice endures forever. Wealth or wages can make life sweet, but better than either is finding a treasure.",
+        "VAT_ES": "La generosidad es como un vergel exuberante y la limosna permanece para siempre.",
+        "CEI": "La bontà è come un giardino di benedizioni, la misericordia dura sempre."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "ζωὴ αὐτάρκους ἐργάτου γλυκανθήσεται, καὶ ὑπὲρ ἀμφότερα ὁ εὑρίσκων θησαυρόν.",
+        "VUL": "Vita sibi sufficientis operarii condulcabitur,/ et in ea invenies thesaurum./",
+        "SYN": "Жизнь довольного своею участью и труженика сладостна; но превосходит обоих тот, кто находит сокровище.",
+        "NEO": "Douce est la vie de l’homme qui se suffit et de l’ouvrier ; plus que les deux, la vie de celui qui trouve un trésor :",
+        "NAB": "A child or a city will preserve one's name, but better than either, attaining wisdom.",
+        "VAT_ES": "Dulce es la vida del que se basta a sí mismo y del que trabaja, pero más todavía la del que encuentra un tesoro.",
+        "CEI": "La vita di chi basta a se stesso e del lavoratore sarà dolce, ma più ancora lo sarà per chi trova un tesoro."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "τέκνα καὶ οἰκοδομὴ πόλεως στηρίζουσιν ὄνομα, καὶ ὑπὲρ ἀμφότερα γυνὴ ἄμωμος λογίζεται.",
+        "VUL": "Filii et ædificatio civitatis confirmabit nomen :/ et super hæc mulier immaculata computabitur./",
+        "SYN": "Дети и построение города увековечивают имя, но превосходнее того и другого считается безукоризненная жена.",
+        "NEO": "Des enfants et la fondation d’une ville perpétuent un nom : plus que les deux, on estime une femme irréprochable.",
+        "NAB": "Sheepfolds and orchards bring flourishing health; but better than either, a devoted wife;",
+        "VAT_ES": "Tener hijos y fundar una ciudad perpetúan el nombre, pero más se estima a una mujer irreprochable.",
+        "CEI": "I figli e la fondazione di una città assicurano unnome, ma più ancora sarà stimata una donna senza macchia."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +341,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "οἶνος καὶ μουσικὰ εὐφραίνουσιν καρδίαν, καὶ ὑπὲρ ἀμφότερα ἀγάπησις σοφίας.",
+        "VUL": "Vinum et musica lætificant cor :/ et super utraque dilectio sapientiæ./",
+        "SYN": "Вино и музыка веселят сердце, но лучше того и другого - любовь к мудрости.",
+        "NEO": "Le vin et la musique réjouissent le cœur : plus que l’un et l’autre, l’amour de la sagesse.",
+        "NAB": "Wine and music delight the soul, but better than either, conjugal love.",
+        "VAT_ES": "El vino y la música alegran el corazón, pero más todavía el amor a la sabiduría.",
+        "CEI": "Vino e musica rallegrano il cuore, ma più ancora lo rallegra l'amore della sapienza."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +358,15 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "LXX": "αὐλὸς καὶ ψαλτήριον ἡδύνουσιν μέλη, καὶ ὑπὲρ ἀμφότερα γλῶσσα ἡδεῖα.",
+        "VUL": "Tibiæ et psalterium suavem faciunt melodiam :/ et super utraque lingua suavis./",
+        "SYN": "Свирель и гусли делают приятным пение, но лучше их - приятный язык.",
+        "NEO": "La flûte et la harpe font entendre de doux sons : plus que les deux, une langue bienveillante.",
+        "NAB": "The flute and the harp offer sweet melody, but better than either, a voice that is true.",
+        "VAT_ES": "La flauta y el arpa emiten sonidos melodiosos, pero más todavía una lengua dulce.",
+        "CEI": "Il flauto e l'arpa rendono piacevole il canto, ma più ancora di essi una voce soave."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +375,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "χάριν καὶ κάλλος ἐπιθυμήσει ὁ ὀφθαλμός σου, καὶ ὑπὲρ ἀμφότερα χλόην σπόρου.",
+        "VUL": "Gratiam et speciem desiderabit oculus tuus :/ et super hæc virides sationes./",
+        "SYN": "Приятность и красота вожделенны для очей твоих, но более той и другой - зелень посева.",
+        "NEO": "La grâce et la beauté font le plaisir de tes yeux : plus que les deux, la verdure des champs.",
+        "NAB": "Charm and beauty delight the eye, but better than either, the flowers of the field.",
+        "VAT_ES": "La gracia y la belleza atraen la mirada, pero más todavía el verdor de los campos.",
+        "CEI": "L'occhio desidera grazia e bellezza, ma più ancora di esse il verde dei campi."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +392,15 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "LXX": "φίλος καὶ ἑταῖρος εἰς καιρὸν ἀπαντῶντες, καὶ ὑπὲρ ἀμφότερα γυνὴ μετὰ ἀνδρός.",
+        "VUL": "Amicus et sodalis in tempore convenientes,/ et super utrosque mulier cum viro./",
+        "SYN": "Друг и приятель сходятся по временам, но жена с мужем - всегда.",
+        "NEO": "L’ami et le compagnon se rencontrent à certaines heures : plus que les deux, la femme avec son mari.",
+        "NAB": "A friend, a neighbor, are timely guides, but better than either, a prudent wife.",
+        "VAT_ES": "El amigo y el compañero se ayudan oportunamente, pero más todavía la mujer y el marido.",
+        "CEI": "Il compagno e l'amico si incontrano a tempo opportuno, ma più ancora di essi moglie e marito."
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +409,15 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀδελφοὶ καὶ βοήθεια εἰς καιρὸν θλίψεως, καὶ ὑπὲρ ἀμφότερα ἐλεημοσύνη ῥύσεται.",
+        "VUL": "Fratres in adjutorium in tempore tribulationis :/ et super eos misericordia liberabit./",
+        "SYN": "Братья и покровители - во время скорби, но вернее тех и других спасает милостыня.",
+        "NEO": "Les frères et les secours sont pour le temps de l’affliction : plus que les deux, la bienfaisance délivre.",
+        "NAB": "A brother, a helper, for times of stress; but better than either, charity that rescues.",
+        "VAT_ES": "Los hermanos y los bienhechores son útiles en la adversidad, pero más todavía salva la limosna.",
+        "CEI": "I fratelli e un aiuto servono nell'afflizione, ma più ancora salverà la carità."
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +426,15 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "LXX": "χρυσίον καὶ ἀργύριον ἐπιστήσουσιν πόδα, καὶ ὑπὲρ ἀμφότερα γυνὴ εὐδοκιμεῖται.",
+        "VUL": "Aurum et argentum est constitutio pedum :/ et super utrumque consilium beneplacitum./",
+        "SYN": "Золото и серебро утверждают стопы, но надежнее того и другого признаётся добрый совет.",
+        "NEO": "L’or et l’argent affermissent les pieds : plus que les deux, est estimée la prudence.",
+        "NAB": "Gold and silver make one's way secure, but better than either, sound judgment.",
+        "VAT_ES": "El oro y la plata hacen marchar con paso firme, pero más todavía se aprecia un consejo.",
+        "CEI": "Oro e argento rendono sicuro il piede, ma ancora di più si apprezza un consiglio."
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +443,15 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "LXX": "χρήματα καὶ ἰσχὺς ἀνυψώσουσιν καρδίαν, καὶ ὑπὲρ ἀμφότερα φόβος Κυρίου· οὐκ ἔστιν φόβῳ Κυρίου ἐλάττωσις, καὶ οὐκ ἔστιν ἐπιζητῆσαι ἐν αὐτῷ βοήθειαν·",
+        "VUL": "Facultates et virtutes exaltant cor,/ et super hæc timor Domini./",
+        "SYN": "Богатство и сила возвышают сердце, но выше того - страх Господень:",
+        "NEO": "La richesse et la force élèvent le cœur : plus que les deux, la crainte du Seigneur. Avec la crainte du Seigneur, on ne manque de rien ; avec elle, il n’y a pas à implorer du secours.",
+        "NAB": "Wealth and vigor build up confidence, but better than either, fear of God. Fear of the LORD leaves nothing wanting; he who has it need seek no other support:",
+        "VAT_ES": "La riqueza y la fuerza reconfortan el corazón, pero más todavía el temor del Señor. Con el temor del Señor, nada falta, y ya no es necesario buscar otra ayuda.",
+        "CEI": "Ricchezze e potenza sollevano il cuore, ma più ancora di esse il timore del Signore. Con il timore del Signore non manca nulla; con esso non c'è bisogno di cercare aiuto."
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +460,15 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "LXX": "φόβος Κυρίου ὡς παράδεισος εὐλογίας, καὶ ὑπὲρ πᾶσαν δόξαν ἐκάλυψαν αὐτόν.",
+        "VUL": "Non est in timore Domini minoratio :/ et non est in eo inquirere adjutorium./",
+        "SYN": "в страхе Господнем нет недостатка, и нет надобности искать при нем помощи;",
+        "NEO": "La crainte du Seigneur est comme un jardin béni, et le Seigneur la revêt d’une gloire sans égale.",
+        "NAB": "The fear of God is a paradise of blessings; its canopy, all that is glorious.",
+        "VAT_ES": "El temor del Señor es como un vergel exuberante, y protege más que cualquier gloria.",
+        "CEI": "Il timore del Signore è come un giardino di benedizioni; la sua protezione vale più di qualsiasi altra gloria."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +477,15 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "LXX": "τέκνον, ζωὴν ἐπαιτήσεως μὴ βιώσῃς· κρεῖσσον ἀποθανεῖν ἢ ἐπαιτεῖν.",
+        "VUL": "Timor Domini sicut paradisus benedictionis,/ et super omnem gloriam operuerunt illum.]",
+        "SYN": "страх Господень - как благословенный рай, и облекает его всякою славою.",
+        "NEO": "Mon fils, puisses-tu ne pas mener une vie de mendicité ; mieux vaut mourir que de mendier.",
+        "NAB": "My son, live not the life of a beggar, better to die than to beg;",
+        "VAT_ES": "Hijo mío, no vivas de la mendicidad, porque más vale morir que mendigar.",
+        "CEI": "Figlio, non vivere da mendicante. È meglio morire che mendicare."
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +494,15 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀνὴρ βλέπων εἰς τράπεζαν ἀλλοτρίαν, οὐκ ἔστιν αὐτοῦ ὁ βίος ἐν λογισμῷ ζωῆς, ἀλισγήσει τὴν ψυχὴν αὐτοῦ ἐν ἐδέσμασιν ἀλλοτρίοις· ἀνὴρ δὲ ἐπιστήμων καὶ πεπαιδευμένος φυλάξεται.",
+        "VUL": "[Fili, in tempore vitæ tuæ ne indigeas :/ melius est enim mori quam indigere./",
+        "SYN": "Сын мой! не живи жизнью нищенскою: лучше умереть, нежели просить милостыни.",
+        "NEO": "Quand un homme en est réduit à regarder vers la table d’un autre, sa vie ne saurait compter pour une vie. Car il souille son âme par des mets étrangers, ce dont se gardera l’homme instruit et bien élevé.",
+        "NAB": "When one has to look to another's table, his life is not really a life. His neighbor's delicacies bring revulsion of spirit to one who understands inward feelings:",
+        "VAT_ES": "No merece llamarse vida la del que está pendiente de la mesa de otro. El mancha su boca con comida ajena, y el hombre instruido y bien educado se cuida de hacerlo.",
+        "CEI": "Un uomo che guarda alla tavola altrui ha una vita che non si può chiamar tale. Si contaminerà con cibi stranieri; l'uomo sapiente ed educato se ne guarderà."
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +511,15 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν στόματι ἀναιδοῦς γλυκανθήσεται ἐπαίτησις, καὶ ἐν κοιλίᾳ αὐτοῦ πῦρ καήσεται.",
+        "VUL": "Vir respiciens in mensam alienam,/ non est vita ejus in cogitatione victus :/ alit enim animam suam cibis alienis :/",
+        "SYN": "Кто засматривается на чужой стол, того жизнь - не жизнь: он унижает душу свою чужими яствами;",
+        "NEO": "Dans la bouche de l’homme sans pudeur la mendicité est douce ; mais, dans ses entrailles, elle brûle comme un feu.",
+        "NAB": "In the mouth of the shameless man begging is sweet, but within him it burns like fire.",
+        "VAT_ES": "En boca del desvergonzado la mendicidad es dulce, pero en sus entrañas será fuego ardiente.",
+        "CEI": "Nella bocca sarà dolce il mendicare per un impudente, ma nel suo ventre brucerà come fuoco."
+      }
     }
   }
 }

@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "Αὕτη ἡ βίβλος τῶν προσταγμάτων τοῦ θεοῦ, καὶ ὁ νόμος ὁ ὑπάρχων εἰς τὸν αἰῶνα· πάντες οἱ κρατοῦντες αὐτήν, εἰς ζωήν· οἱ δὲ καταλείποντες αὐτὴν ἀποθανοῦνται.",
+        "VUL": "[Hic liber mandatorum Dei,/ et lex quæ est in æternum :/ omnes qui tenent eam pervenient ad vitam :/ qui autem dereliquerunt eam, in mortem./",
+        "SYN": "Вот книга заповедей Божиих и закон, пребывающий вовек. Все, держащиеся ее, будут жить, а оставляющие ее умрут.",
+        "NEO": "La sagesse*, c’est le livre des commandements de Dieu,",
+        "NAB": "She is the book of the precepts of God, the law that endures forever; All who cling to her will live, but those will die who forsake her.",
+        "VAT_ES": "La Sabiduría es el libro de los preceptos de Dios, y la Ley que subsiste eternamente: los que la retienen, alcanzarán la vida, pero los que la abandona, morirán.",
+        "CEI": "Essa è il libro dei decreti di Dio, è la legge che sussiste nei secoli; quanti si attengono ad essa avranno la vita, quanti l'abbandonano moriranno."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐπιστρέφου, Ἰακώβ, καὶ ἐπιλαβοῦ αὐτῆς, διόδευσον πρὸς τὴν λάμψιν κατέναντι τοῦ φωτὸς αὐτῆς.",
+        "VUL": "Convertere, Jacob, et apprehende eam :/ ambula per viam ad splendorem ejus contra lumen ejus./",
+        "SYN": "Обратись, Иаков, и возьми ее, ходи при сиянии света ее.",
+        "NEO": "Reviens, ô Jacob, et embrasse-la ;",
+        "NAB": "Turn, O Jacob, and receive her: walk by her light toward splendor.",
+        "VAT_ES": "Vuélvete, Jacob, y tómala, camina hacia el resplandor, atraído por su luz.",
+        "CEI": "Ritorna, Giacobbe, e accoglila, cammina allo splendore della sua luce."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "μὴ δῷς ἑτέρῳ τὴν δόξαν σου, καὶ τὰ συμφέροντά σοι ἔθνει ἀλλοτρίῳ.",
+        "VUL": "Ne tradas alteri gloriam tuam,/ et dignitatem tuam genti alienæ./",
+        "SYN": "Не отдавай другому славы твоей, и полезного для тебя - чужому народу.",
+        "NEO": "Ne donne pas ta gloire à un autre,",
+        "NAB": "Give not your glory to another, your privileges to an alien race.",
+        "VAT_ES": "No cedas a otro tu gloria, ni tus privilegios a un pueblo extranjero.",
+        "CEI": "Non dare ad altri la tua gloria, né i tuoi privilegi a gente straniera."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "μακάριοί ἐσμεν, Ἰσραήλ, ὅτι τὰ ἀρεστὰ τοῦ θεοῦ ἡμῖν γνωστά ἐστιν.",
+        "VUL": "Beati sumus, Israël,/ quia quæ Deo placent manifesta sunt nobis.]",
+        "SYN": "Счастливы мы, Израиль, что мы знаем, что благоугодно Богу.",
+        "NEO": "Heureux sommes-nous, ô Israël,",
+        "NAB": "Blessed are we, O Israel; for what pleases God is known to us!",
+        "VAT_ES": "Felices de nosotros, Israel, porque se nos dio a conocer lo que agrada a Dios.",
+        "CEI": "Beati noi, o Israele, perché ciò che piace a Dio ci è stato rivelato."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "Θαρσεῖτε, λαός μου, μνημόσυνον Ἰσραήλ.",
+        "VUL": "[Animæquior esto, populus Dei, memorabilis Israël :/",
+        "SYN": "Дерзай, народ мой, памятник Израиля!",
+        "NEO": "Prends Courage, ô mon peuple, souvenir d’Israël+ 4:5 \\+it Souvenir d’Israël\\+it* : faibles et réduits à un petit nombre, c’est vous qui conservez la mémoire et le nom d’Israël.* !",
+        "NAB": "Fear not, my people! Remember, Israel,",
+        "VAT_ES": "&iexcl;Animo, pueblo mío, memorial viviente de Israel!",
+        "CEI": "Coraggio, popolo mio, tu, resto d'Israele!"
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐπράθητε τοῖς ἔθνεσιν οὐκ εἰς ἀπώλειαν, διὰ δὲ τὸ παροργίσαι ὑμᾶς τὸν θεόν, παρεδόθητε τοῖς ὑπεναντίοις.",
+        "VUL": "venundati estis gentibus non in perditionem :/ sed propter quod in ira ad iracundiam provocastis Deum,/ traditi estis adversariis./",
+        "SYN": "Вы преданы язычникам не на погибель, но за то, что вы прогневали Бога, вы преданы врагам;",
+        "NEO": "Vous avez été vendus aux nations, non pour la ruine ;",
+        "NAB": "You were sold to the nations not for your destruction; It was because you angered God that you were handed over to your foes.",
+        "VAT_ES": "Ustedes fueron vendidos a las naciones, pero no para ser aniquilados; es por haber excitado la ira de Dios, que fueron entregados a sus enemigos.",
+        "CEI": "Siete stati venduti alle genti non per essere annientati, ma perché avete provocato lo sdegno di Dio siete stati consegnati ai nemici."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "παροξύνατε γὰρ τὸν ποιήσαντα ὑμᾶς θύσαντες δαιμονίοις καὶ οὐ θεῷ.",
+        "VUL": "Exacerbastis enim eum qui fecit vos, Deum æternum,/ immolantes dæmoniis, et non Deo./",
+        "SYN": "ибо раздражили Сотворившего вас, принося жертвы бесам, а не Богу.",
+        "NEO": "Car vous avez irrité Celui qui vous a faits,",
+        "NAB": "For you provoked your Maker with sacrifices to demons, to no-gods;",
+        "VAT_ES": "Ustedes irritaron a su Creador, ofreciendo sacrificios a los demonios y no a Dios;",
+        "CEI": "Avete irritato il vostro creatore, sacrificando ai dèmoni e non a Dio."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐπελάθεσθε ⸆ τὸν τροφεύσαντα ὑμᾶς θεὸν αἰώνιον, ἐλυπήσατε δὴ καὶ τὴν ἐκθρέψασαν ὑμᾶς Ἰερουσαλήμ.",
+        "VUL": "Obliti enim estis Deum qui nutrivit vos,/ et contristastis nutricem vestram Jerusalem./",
+        "SYN": "Вы забыли питающего вас вечного Бога, а также огорчили и воспитавший вас Иерусалим,",
+        "NEO": "Vous avez oublié Celui qui vous a nourris, Dieu éternel,",
+        "NAB": "You forsook the Eternal God who nourished you, and you grieved Jerusalem who fostered you.",
+        "VAT_ES": "olvidaron al Dios, eterno, el que los sustenta, y entristecieron a Jerusalén, la que los crió.",
+        "CEI": "Avete dimenticato chi vi ha allevati, il Dio eterno, avete afflitto colei che vi ha nutriti, Gerusalemme."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "ἴδεν γὰρ τὴν ἐπελθοῦσαν ὑμῖν ὀργὴν παρὰ τοῦ θεοῦ, καὶ εἶπεν Ἀκούσατε, αἱ πάροικοι Σειών, ἐπήγαγέν μοι ὁ θεὸς πένθος μέγα.",
+        "VUL": "Vidit enim iracundiam a Deo venientem vobis, et dixit :/ Audite, confines Sion :/ adduxit enim mihi Deus luctum magnum./",
+        "SYN": "ибо он видел пришедший на вас гнев от Бога и говорил: \"слушайте, сожители Сиона, Бог навел на меня великую скорбь,",
+        "NEO": "Car elle a vu fondre sur vous",
+        "NAB": "She indeed saw coming upon you the anger of God; and she said: \"Hear, you neighbors of Zion! God has brought great mourning upon me,",
+        "VAT_ES": "Porque ella, al ver que la ira del Señor se desencadenaba contra ustedes, exclamó: «Escuchen, ciudades vecinas de Sión: Dios me ha enviado un gran dolor.",
+        "CEI": "Essa ha visto piombare su di voi l'ira divina e ha esclamato: Ascoltate, città vicine di Sion, Dio mi ha mandato un grande dolore."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "ἴδον γὰρ τὴν αἰχμαλωσίαν τῶν υἱῶν μου καὶ τῶν θυγατέρων, ἣν ἐπήγαγεν αὐτοῖς ὁ αἰώνιος.",
+        "VUL": "Vidi enim captivitatem populi mei,/ filiorum meorum et filiarum,/ quam superduxit illis Æternus./",
+        "SYN": "ибо я видел пленение сыновей моих и дочерей, которое навел на них Вечный.",
+        "NEO": "J’ai vu la captivité de mes fils et de mes filles,",
+        "NAB": "For I have seen the captivity that the Eternal God has brought upon my sons and daughters.",
+        "VAT_ES": "Yo he visto el cautiverio que el Eterno infligió a mis hijos y a mis hijas.",
+        "CEI": "Ho visto, infatti, la schiavitù in cui l'Eterno ha condotto i miei figli e le mie figlie."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔθρεψα γὰρ αὐτοὺς μετ’ εὐφροσύνης, ἐξαπέστειλα δὲ μετὰ κλαυθμοῦ καὶ πένθους.",
+        "VUL": "Nutrivi enim illos cum jucunditate ;/ dimisi autem illos cum fletu et luctu./",
+        "SYN": "Я питал их с радостью, а отпустил с плачем и горестью.",
+        "NEO": "Je les avais nourris dans la joie,",
+        "NAB": "With joy I fostered them; but with mourning and lament I let them go.",
+        "VAT_ES": "Yo los había criado gozosamente y los dejé partir con lágrimas y dolor.",
+        "CEI": "Io li avevo nutriti con gioia e li ho dovuti lasciare con lacrime e gemiti."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "μηδεὶς ἐπιχαιρέτω μοι τῇ χήρᾳ καὶ καταλειφθείσῃ ὑπὸ πολλῶν· ἠρημώθην διὰ τὰς ἁμαρτίας τῶν τέκνων μου, διότι ἐξέκλιναν ἐκ νόμου θεοῦ",
+        "VUL": "Nemo gaudeat super me viduam et desolatam :/ a multis derelicta sum propter peccata filiorum meorum,/ quia declinaverunt a lege Dei./",
+        "SYN": "Никто не радуйся о мне, вдовствующем и оставленном многими; я опустел за грехи детей моих, ибо они уклонились от закона Божия;",
+        "NEO": "Que nul ne se réjouisse en me voyant* veuve,",
+        "NAB": "Let no one gloat over me, a widow, bereft of many: For the sins of my children I am left desolate, because they turned from the law of God,",
+        "VAT_ES": "Que nadie se alegre al verme viuda y abandonada por muchos. Estoy desolada por los pecados de mis hijos, porque se desviaron de la Ley de Dios:",
+        "CEI": "Nessuno goda di me nel vedermi vedova e desolata; sono abbandonata per i peccati dei miei figli che deviarono dalla legge di Dio,"
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ δικαιώματα αὐτοῦ οὐκ ἔγνωσαν, οὐδὲ ἐπορεύθησαν ὁδοῖς ἐντολῶν θεοῦ, οὐδὲ τρίβους παιδίας ἐν δικαιοσύνῃ αὐτοῦ ἐπέβησαν.",
+        "VUL": "Justitias autem ipsius nescierunt,/ nec ambulaverunt per vias mandatorum Dei,/ neque per semitas veritatis ejus cum justitia ingressi sunt./",
+        "SYN": "не познали уставов Его, не ходили путями заповедей Бога, и не вступили на стези учения в правде Его.",
+        "NEO": "qu’ils ont méconnu ses commandements,",
+        "NAB": "and did not acknowledge his statutes; In the ways of God's commandments they did not walk, nor did they tread the disciplined paths of his justice.",
+        "VAT_ES": "ellos no conocieron sus preceptos, no siguieron los caminos de sus mandamientos ni anduvieron por las sendas de la instrucción, conforme a su justicia.",
+        "CEI": "non si curarono dei suoi decreti, non seguirono i suoi comandamenti, non procedettero per i sentieri della dottrina, secondo la sua giustizia."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐλθάτωσαν αἱ πάροικοι Σειών, καὶ μνήσθητε τὴν αἰχμαλωσίαν τῶν υἱῶν μου καὶ θυγατέρων, ἣν ἐπήγαγεν αὐτοῖς ὁ αἰώνιος.",
+        "VUL": "Veniant confines Sion,/ et memorentur captivitatem filiorum et filiarum mearum,/ quam superduxit illis Æternus./",
+        "SYN": "Придите, сожители Сиона, и вспомните пленение сыновей моих и дочерей, которое навел на них Вечный.",
+        "NEO": "Qu’elles viennent, les voisines de Sion !",
+        "NAB": "\"Let Zion's neighbors come, to take note of the captivity of my sons and daughters, brought upon them by the Eternal God.",
+        "VAT_ES": "&iexcl;Que vengan las vecinas de Sión, y recuerden el cautiverio que el Eterno infligió a mis hijos y a mis hijas!",
+        "CEI": "Venite, o città vicine di Sion, considerate la schiavitù in cui l'Eterno ha condotto i miei figli e le mie figlie."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐπήγαγεν γὰρ ἐπ’ αὐτοὺς ἔθνος μακρόθεν, ἔθνος ἀναιδὲς καὶ ἀλλόγλωσσον· ὅτι οὐκ ᾐσχύνθησαν πρεσβύτην οὐδὲ παιδίον ἠλέησαν,",
+        "VUL": "Adduxit enim super illos gentem de longinquo,/ gentem improbam, et alterius linguæ,/",
+        "SYN": "Ибо Он навел на них народ издалека, народ наглый и иноязычный, ибо не устыдились старца, и не сжалились над младенцем,",
+        "NEO": "Car il a fait venir contre eux une nation lointaine,",
+        "NAB": "He has brought against them a nation from afar, a nation ruthless and of alien speech, That has neither reverence for age nor tenderness for childhood;",
+        "VAT_ES": "Porque él hizo venir contra ellos a una nación lejana, una nación insolente, de lengua desconocida, que no respetó al anciano ni tuvo compasión del niño;",
+        "CEI": "Ha mandato contro di loro un popolo lontano, una gente perversa di lingua straniera, che non ha avuto rispetto dei vecchi, né pietà dei bambini,"
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἀπήγαγον τοὺς ἀγαπητοὺς τῆς χήρας, καὶ ἀπὸ τῶν θυγατέρων τὴν μόνην ἠρήμωσαν.",
+        "VUL": "qui non sunt reveriti senem,/ neque puerorum miserti sunt,/ et abduxerunt dilectos viduæ,/ et a filiis unicam desolaverunt./",
+        "SYN": "и увели у вдовы _сыновей_ возлюбленных, и лишили одинокую дочерей.",
+        "NEO": "qui n’a eu ni respect pour le vieillard,",
+        "NAB": "They have led away this widow's cherished sons, have left me solitary, without daughters.",
+        "VAT_ES": "que se llevó a los hijos queridos de la viuda y la dejó desolada, privándola de sus hijas.",
+        "CEI": "che ha strappato i cari figli alla vedova e l'ha lasciata sola senza figlie."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐγὼ δὲ τί δυνατὴ βοηθῆσαι ὑμῖν;",
+        "VUL": "Ego autem, quid possum adjuvare vos ?/",
+        "SYN": "Я же чем могу помочь вам?",
+        "NEO": "Et moi comment pourrais-je vous secourir ?",
+        "NAB": "What can I do to help you?",
+        "VAT_ES": "Y yo &iquest;cómo podré socorrerlos?",
+        "CEI": "E io come posso aiutarvi?"
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "ὁ γὰρ ἐπαγαγὼν τὰ κακὰ ἐξελεῖται ὑμᾶς ἐκ χειρὸς ἐχθρῶν ὑμῶν.",
+        "VUL": "qui enim adduxit super vos mala,/ ipse vos eripiet de manibus inimicorum vestrorum./",
+        "SYN": "Кто навел на вас сии бедствия, Тот и избавит вас от руки врагов ваших.",
+        "NEO": "Celui qui a fait venir ces maux sur vous*,",
+        "NAB": "He who has brought this evil upon you must himself deliver you from your enemies' hands.",
+        "VAT_ES": "El mismo que les infligió esos males los librará de las manos de sus enemigos.",
+        "CEI": "Chi vi ha afflitto con tanti mali saprà liberarvi dal potere dei vostri nemici."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "βαδίζετε, τέκνα, βαδίζετε, ἐγὼ γὰρ κατελείφθην ἔρημος.",
+        "VUL": "Ambulate, filii, ambulate :/ ego enim derelicta sum sola./",
+        "SYN": "Идите, дети, идите, ибо я остался пуст.",
+        "NEO": "Allez, mes fils, allez ;",
+        "NAB": "Farewell, my children, farewell: I am left desolate.",
+        "VAT_ES": "&iexcl;Vayan, hijos, vayan, mientras yo me quedo desolada!",
+        "CEI": "Andate, figli miei, andate, io resto sola."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +341,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐξεδυσάμην τὴν στολὴν τῆς εἰρήνης, ἐνεδυσάμην δὲ σάκκον τῆς δεήσεώς μου· κεκράξομαι πρὸς τὸν αἰώνιον ἐν ταῖς ἡμέραις μου.",
+        "VUL": "Exui me stola pacis,/ indui autem me sacco obsecrationis,/ et clamabo ad Altissimum in diebus meis./",
+        "SYN": "Я снял с себя одежду мира и оделся вретищем моления моего; буду взывать к Вечному во дни мои.",
+        "NEO": "J’ai quitté la robe des jours* heureux ;",
+        "NAB": "I have taken off the garment of peace, have put on sackcloth for my prayer of supplication, and while I live I will cry out to the Eternal God.",
+        "VAT_ES": "Yo me quité el vestido de fiesta, me puse ropa de suplicante y clamaré al Eterno mientras viva.",
+        "CEI": "Ho deposto l'abito di pace, ho indossato il cilicio della supplica, griderò all'Eterno per tutti i miei giorni."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +358,15 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "LXX": "Θαρρεῖτε, τέκνα, βοήσατε πρὸς τὸν θεὸν, καὶ ἐξελεῖται ὑμᾶς ἐκ δυναστείας, ἐκ χειρὸς ἐχθρῶν.",
+        "VUL": "Animæquiores estote, filii ; clamate ad Dominum,/ et eripiet vos de manu principum inimicorum./",
+        "SYN": "Дерзайте, дети, взывайте к Богу, и Он избавит вас от насилия, от руки врагов.",
+        "NEO": "Courage, mes fils ; criez au Seigneur,",
+        "NAB": "\"Fear not, my children; call upon God, who will deliver you from oppression at enemy hands.",
+        "VAT_ES": "&iexcl;Animo, hijos, clamen a Dios, y él los librará de la tiranía y del poder de sus enemigos!",
+        "CEI": "Coraggio, figli miei, gridate a Dio ed egli vi libererà dall'oppressione e dal potere dei vostri nemici."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +375,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐγὼ γὰρ ἤλπισα ἐπὶ τῷ αἰωνίῳ τὴν σωτηρίαν ὑμῶν, καὶ ἦλθέν μοι χαρὰ παρὰ τοῦ ἁγίου ἐπὶ τῇ ἐλεημοσύνῃ, ἣ ἥξει ὑμῖν ἐν τάχει παρὰ τοῦ αἰωνίου σωτῆρος ὑμῶν.",
+        "VUL": "Ego enim speravi in æternum salutem vestram,/ et venit mihi gaudium a Sancto, super misericordia/ quæ veniet vobis ab æterno salutari nostro./",
+        "SYN": "Ибо от Вечного я ожидал спасения вашего, и мне пришла от Святаго радость о милости, которая скоро придет к вам от Вечного, Спасителя нашего.",
+        "NEO": "J’attends de l’Éternel votre délivrance,",
+        "NAB": "I have trusted in the Eternal God for your welfare, and joy has come to me from the Holy One Because of the mercy that will swiftly reach you from your eternal savior.",
+        "VAT_ES": "Porque yo espero que el Eterno les dará la salvación, y el Santo me ha llenado de alegría por la misericordia que pronto les llegará del Eterno, su Salvador.",
+        "CEI": "Io, infatti, spero dall'Eterno la vostra salvezza. Una grande gioia mi viene dal Santo, per la misericordia che presto vi giungerà dall'Eterno vostro salvatore."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +392,15 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐξέπεμψα γὰρ ὑμᾶς μετὰ πένθους καὶ κλαυθμοῦ, ἀποδώσει δέ μοι ὁ θεὸς ὑμᾶς μετὰ χαρμοσύνης καὶ εὐφροσύνης εἰς τὸν αἰῶνα.",
+        "VUL": "Emisi enim vos cum luctu et ploratu :/ reducet autem vos mihi Dominus/ cum gaudio et jucunditate in sempiternum./",
+        "SYN": "Я отпускал вас с печалью и горестью, но Бог возвратит мне вас с радостью и весельем навеки.",
+        "NEO": "Je vous ai laissés partir dans les larmes et le deuil ;",
+        "NAB": "With mourning and lament I sent you forth, but God will give you back to me with enduring gladness and joy.",
+        "VAT_ES": "Yo los dejé partir con dolor y lágrimas, pero Dios los hará volver a mí, con gozo y alegría para siempre.",
+        "CEI": "Vi ho visti partire fra gemiti e pianti, ma Dio vi ricondurrà a me con letizia e gioia, per sempre."
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +409,15 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "LXX": "ὥσπερ γὰρ νῦν ἑωράκασιν αἱ πάροικοι Σειὼν τὴν ὑμετέραν αἰχμαλωσίαν, οὕτως ὄψονται ἐν τάχει τὴν παρὰ τοῦ θεοῦ ὑμῶν σωτηρίαν, ἣ ἐπελεύσεται ὑμῖν μετὰ δόξης μεγάλης καὶ λαμπρότητος τοῦ αἰωνίου.",
+        "VUL": "Sicut enim viderunt vicinæ Sion captivitatem vestram a Deo,/ sic videbunt et in celeritate salutem vestram a Deo,/ quæ superveniet vobis cum honore magno et splendore æterno./",
+        "SYN": "Ибо, как ныне сожители Сиона видели пленение ваше, так увидят скоро спасение ваше от Бога, которое придет к вам с великою славою и величием Вечного.",
+        "NEO": "Comme les voisines de Sion ont vu votre captivité,",
+        "NAB": "As Zion's neighbors lately saw you taken captive, so shall they soon see God's salvation come to you, with great glory and the splendor of the Eternal God.",
+        "VAT_ES": "Así como ahora las ciudades vecinas de Sión están viendo el cautiverio de ustedes, así verán pronto la salvación que les llegará de Dios, con la gran gloria y el esplendor del Eterno.",
+        "CEI": "Come ora le città vicine di Sion hanno visto la vostra schiavitù, così vedranno ben presto la vostra salvezza da parte del vostro Dio; essa verrà a voi con grande gloria e splendore dell'Eterno."
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +426,15 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "LXX": "τέκνα, μακροθυμήσατε τὴν παρὰ τοῦ θεοῦ ἐπελθοῦσαν ὑμῖν ὀργήν· κατεδίωξέν σε ὁ ἐχθρός, καὶ ὄψει αὐτοῦ τὴν ἀπώλειαν ἐν τάχει, καὶ ἐπὶ τραχήλους αὐτῶν ἐπιβήσῃ.",
+        "VUL": "Filii, patienter sustinete iram quæ supervenit vobis :/ persecutus est enim te inimicus tuus :/ sed cito videbis perditionem ipsius,/ et super cervices ipsius ascendes./",
+        "SYN": "Дети! потерпите постигший вас от Бога гнев: преследовал тебя враг, но ты скоро увидишь погибель его, и наступишь ему на шею.",
+        "NEO": "Mes fils, supportez avec patience la colère de Dieu qui est venue sur vous ;",
+        "NAB": "\"My children, bear patiently the anger that has come from God upon you; Your enemies have persecuted you, and you will soon see their destruction and trample upon their necks.",
+        "VAT_ES": "Hijos, soporten con paciencia la ira que les ha sobrevenido de parte de Dios. Tu enemigo te ha perseguido, pero pronto verás su ruina y pondrás tu pie sobre su cuello.",
+        "CEI": "Figli, sopportate con pazienza la collera che da Dio è venuta su di voi. Il nemico vi ha perseguitati, ma vedrete ben presto la sua rovina e calcherete il piede sul suo collo."
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +443,15 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "LXX": "οἱ τρυφεροί μου ἐπορεύθησαν ὁδοὺς τραχείας, ἤρθησαν ὡς ποίμνιον ἡρπασμένον ὑπὸ ἐχθρῶν.",
+        "VUL": "Delicati mei ambulaverunt vias asperas :/ ducti sunt enim ut grex direptus ab inimicis./",
+        "SYN": "Воспитанные у меня в неге пошли жесткими путями, схвачены, как стадо, расхищенное врагами.",
+        "NEO": "Mes fils les plus délicats ont marché par d’âpres chemins ;",
+        "NAB": "My pampered children have trodden rough roads, carried off by their enemies like sheep in a raid.",
+        "VAT_ES": "Mis tiernos hijos han recorrido ásperos caminos, fueron llevados como un rebaño arrebatado por el enemigo.",
+        "CEI": "I miei figli tanto delicati hanno dovuto battere aspri sentieri, incalzati come gregge rapito dal nemico."
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +460,15 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "LXX": "Θαρρήσατε, τέκνα, καὶ βοήσατε πρὸς τὸν θεόν, ἔσται γὰρ ὑμῶν ὑπὸ τοῦ ἐπάγοντος μνεία.",
+        "VUL": "Animæquiores estote, filii, et proclamate ad Dominum :/ erit enim memoria vestra ab eo qui duxit vos./",
+        "SYN": "Дерзайте, дети, и взывайте к Богу, ибо о вас вспомнит Тот, Кто навел на вас это.",
+        "NEO": "Courage, mes fils, et criez au Seigneur :",
+        "NAB": "Fear not, my children; call out to God! He who brought this upon you will remember you.",
+        "VAT_ES": "&iexcl;Animo, hijos, clamen a Dios, porque aquel que los castigó se acordará de ustedes!",
+        "CEI": "Coraggio, figli, gridate a Dio, poiché si ricorderà di voi colui che vi ha provati."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +477,15 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "LXX": "ὥσπερ γὰρ ἐγένετο ἡ διάνοια ὑμῶν εἰς τὸ πλανηθῆναι ἀπὸ τοῦ θεοῦ, δεκαπλασιάσατε ἐπιστραφέντες ζητῆσαι αὐτόν.",
+        "VUL": "Sicut enim fuit sensus vester ut erraretis a Deo,/ decies tantum iterum convertentes requiretis eum :/",
+        "SYN": "Какова была решимость ваша, чтобы удалиться от Бога, увеличьте ее в десять раз, чтобы обратиться и искать Его,",
+        "NEO": "Car, comme votre pensée a été de vous éloigner de Dieu,",
+        "NAB": "As your hearts have been disposed to stray from God, turn now ten times the more to seek him;",
+        "VAT_ES": "Ya que el único pensamiento de ustedes ha sido apartarse de Dios, una vez convertidos, búsquenlo con un empeño diez veces mayor.",
+        "CEI": "Però, come pensaste di allontanarvi da Dio, così ritornando decuplicate lo zelo per ricercarlo,"
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +494,15 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "LXX": "ὁ γὰρ ἐπαγαγὼν ὑμῖν τὰ κακὰ ἐπάξει ὑμῖν τὴν αἰώνιον εὐφροσύνην μετὰ τῆς σωτηρίας ὑμῶν.",
+        "VUL": "qui enim induxit vobis mala,/ ipse rursum adducet vobis sempiternam jucunditatem cum salute vestra.]",
+        "SYN": "ибо Тот, Который навел на вас сии бедствия, наведет на вас вечное веселье со спасением\".",
+        "NEO": "Car Celui qui a fait venir sur vous le malheur",
+        "NAB": "For he who has brought disaster upon you will, in saving you, bring you back enduring joy.\"",
+        "VAT_ES": "Porque el que atrajo sobre ustedes estos males les traerá, junto con su salvación, la eterna alegría».",
+        "CEI": "poiché chi vi ha afflitti con tante calamità vi darà anche, con la salvezza, una gioia perenne."
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +511,15 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "LXX": "Θάρσει, Ἰερουσαλήμ, παρακαλέσει σε ὁ ὀνομάσας σε.",
+        "VUL": "[Animæquior esto, Jerusalem :/ exhortatur enim te, qui te nominavit./",
+        "SYN": "Дерзай, Иерусалим! Даровавший тебе имя утешит тебя.",
+        "NEO": "Courage, Jérusalem ;",
+        "NAB": "Fear not, Jerusalem! He who gave you your name is your encouragement.",
+        "VAT_ES": "&iexcl;Animo, Jerusalén! El que te dio un nombre te consolará.",
+        "CEI": "Coraggio, Gerusalemme! Colui che ti ha dato un nome ti consolerà."
+      }
     },
     "31": {
       "seq": 31,
@@ -288,7 +528,15 @@
         "VUL": 31,
         "LXX": 31
       },
-      "text": {}
+      "text": {
+        "LXX": "δείλαιοι οἱ σὲ κακώσαντες καὶ ἐπιχαρέντες τῇ σῇ πτώσει,",
+        "VUL": "Nocentes peribunt, qui te vexaverunt :/ et qui gratulati sunt in tua ruina, punientur./",
+        "SYN": "Несчастны те, которые оскорбляли тебя и радовались твоему падению.",
+        "NEO": "Malheureux ceux qui t’ont maltraitée,",
+        "NAB": "Fearful are those who harmed you, who rejoiced at your downfall;",
+        "VAT_ES": "&iexcl;Ay de los que te maltrataron y se alegraron de tu caída!",
+        "CEI": "Maledetti i tuoi oppressori, che hanno goduto della tua caduta;"
+      }
     },
     "32": {
       "seq": 32,
@@ -297,7 +545,15 @@
         "VUL": 32,
         "LXX": 32
       },
-      "text": {}
+      "text": {
+        "LXX": "δείλαιαι αἱ πόλεις αἷς ἐδούλευσαν τὰ τέκνα σου, δειλαία ἡ δεξαμένη τοὺς υἱούς σου.",
+        "VUL": "Civitates quibus servierunt filii tui, punientur,/ et quæ accepit filios tuos./",
+        "SYN": "Несчастны города, которым служили дети твои, несчастна земля, принявшая сыновей твоих,",
+        "NEO": "Malheureuses les villes où tes fils ont été esclaves !",
+        "NAB": "Fearful are the cities where your children were enslaved, fearful the city that took your sons.",
+        "VAT_ES": "&iexcl;Ay de las ciudades que esclavizaron a tus hijos, ay de aquella que recibió a tus hijos!",
+        "CEI": "maledette le città in cui sono stati schiavi i tuoi figli, maledetta colei che li ha trattenuti."
+      }
     },
     "33": {
       "seq": 33,
@@ -306,7 +562,15 @@
         "VUL": 33,
         "LXX": 33
       },
-      "text": {}
+      "text": {
+        "LXX": "ὥσπερ γὰρ ἐχάρη ἐπὶ τῇ σῇ πτώσει καὶ εὐφράνθη ἐπὶ τῷ πτώματί σου, οὕτως λυπηθήσεται ἐπὶ τῇ ἑαυτῆς ἐρημίᾳ.",
+        "VUL": "Sicut enim gavisa est in tua ruina, et lætata est in casu tuo,/ sic contristabitur in sua desolatione,/",
+        "SYN": "ибо, как она радовалась о твоем падении и веселилась о твоем поражении, так будет скорбеть о своем опустошении.",
+        "NEO": "De même qu’elle s’est réjouie de ta ruine",
+        "NAB": "As that city rejoiced at your collapse, and made merry at your downfall, so shall she grieve over her own desolation.",
+        "VAT_ES": "Porque así como ella se alegró de tu caída y se regocijó por tu ruina, así se afligirá por su propia desolación.",
+        "CEI": "Come ha gioito per la tua caduta e si è allietata per la tua rovina, così patirà per la sua desolazione."
+      }
     },
     "34": {
       "seq": 34,
@@ -315,7 +579,15 @@
         "VUL": 34,
         "LXX": 34
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ περιελῶ αὐτῆς τὸ ἀγαλλίαμα τῆς πολυοχλίας, καὶ τὸ ἀγαυρίαμα αὐτῆς εἰς πένθος.",
+        "VUL": "et amputabitur exsultatio multitudinis ejus,/ et gaudimonium ejus erit in luctum./",
+        "SYN": "Я отниму у нее радость о множестве _ее_ народа, и хвастовство ее _будет_ в печаль;",
+        "NEO": "Je lui ôterai la joie que lui causaient ses nombreux habitants,",
+        "NAB": "I will take from her the joyous throngs, and her exultation shall be turned to mourning:",
+        "VAT_ES": "Yo le quitaré su alegría de ciudad populosa, y su jactancia se convertirá en duelo.",
+        "CEI": "Le toglierò la gioia di essere così popolata, il suo tripudio sarà cambiato in lutto."
+      }
     },
     "35": {
       "seq": 35,
@@ -324,7 +596,15 @@
         "VUL": 35,
         "LXX": 35
       },
-      "text": {}
+      "text": {
+        "LXX": "πῦρ γὰρ ἐπελεύσεται αὐτῇ παρὰ τοῦ αἰωνίου εἰς ἡμέρας μακράς, καὶ κατοικηθήσεται ὑπὸ δαιμονίων τὸν πλείονα χρόνον.",
+        "VUL": "Ignis enim superveniet ei ab Æterno in longiturnis diebus,/ et habitabitur a dæmoniis in multitudine temporis./",
+        "SYN": "ибо придет на нее огонь от Вечного на долгие дни, и весьма долгое время она будет обитаема бесами.",
+        "NEO": "Un feu viendra sur elle de la part de l’Éternel,",
+        "NAB": "For fire shall come upon her from the Eternal God, for a long time, and demons shall dwell in her from that time on.",
+        "VAT_ES": "Caerá fuego sobre ella de parte del Eterno durante muchos días, y será morada de los demonios por muy largo tiempo.",
+        "CEI": "Un fuoco cadrà su di lei per lunghi giorni per volere dell'Eterno e per molto tempo sarà abitata da demoni."
+      }
     },
     "36": {
       "seq": 36,
@@ -333,7 +613,15 @@
         "VUL": 36,
         "LXX": 36
       },
-      "text": {}
+      "text": {
+        "LXX": "περίβλεψαι πρὸς ἀνατολάς, Ἰερουσαλήμ, καὶ ἴδε τὴν εὐφροσύνην τὴν παρὰ τοῦ θεοῦ σοι ἐρχομένην.",
+        "VUL": "Circumspice, Jerusalem, ad orientem,/ et vide jucunditatem a Deo tibi venientem./",
+        "SYN": "Оглянись, Иерусалим, на восток, и посмотри на радость, грядущую к тебе от Бога.",
+        "NEO": "Regarde du côté de l’Orient, ô Jérusalem,",
+        "NAB": "Look to the east, Jerusalem! behold the joy that comes to you from God.",
+        "VAT_ES": "Mira hacia el Oriente, Jerusalén, y contempla la alegría que te viene de Dios.",
+        "CEI": "Guarda ad oriente, Gerusalemme, osserva la gioia che ti viene da Dio."
+      }
     },
     "37": {
       "seq": 37,
@@ -342,7 +630,15 @@
         "VUL": 37,
         "LXX": 37
       },
-      "text": {}
+      "text": {
+        "LXX": "ἰδοὺ ἔρχονται οἱ υἱοί σου οὓς ἐξαπέστειλας, ἔρχονται συνηγμένοι ἀπ’ ἀνατολῶν ἕως δυσμῶν τῷ ῥήματι τοῦ ἁγίου, χαίροντες τῇ τοῦ θεοῦ δόξῃ.",
+        "VUL": "Ecce enim veniunt filii tui, quos dimisisti dispersos :/ veniunt collecti ab oriente usque ad occidentem, in verbo Sancti,/ gaudentes in honorem Dei.]",
+        "SYN": "Вот, идут сыновья твои, которых ты отпустил, идут собранные от востока до запада словом Святаго, радуясь о славе Божией.",
+        "NEO": "Car voici qu’ils reviennent, tes fils que tu as vus partir,",
+        "NAB": "Here come your sons whom you once let go, gathered in from the east and from the west By the word of the Holy One, rejoicing in the glory of God.",
+        "VAT_ES": "Ahí llegan tus hijos, los que habías visto partir; llegan reunidos desde el oriente al occidente por la palabra del Santo, llenos de gozo por la gloria de Dios.",
+        "CEI": "Ecco, ritornano i figli che hai visti partire, ritornano insieme riuniti dall'oriente all'occidente, alla parola del Santo, esultanti per la gloria di Dio."
+      }
     },
     "38": {
       "seq": 38,

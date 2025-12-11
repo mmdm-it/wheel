@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "ὁ ἐκδικῶν παρὰ Κυρίου εὑρήσει ἐκδίκησιν, καὶ τὰς ἁμαρτίας αὐτοῦ διαστηριῶν διαστηρίσει.",
+        "VUL": "[Qui vindicari vult, a Domino inveniet vindictam,/ et peccata illius servans servabit./",
+        "SYN": "Мстительный получит отмщение от Господа, Который не забудет грехов его.",
+        "NEO": "Celui qui se venge trouvera la vengeance auprès du Seigneur, qui conservera soigneusement ses péchés.",
+        "NAB": "The vengeful will suffer the LORD'S vengeance, for he remembers their sins in detail.",
+        "VAT_ES": "El hombre vengativo sufrirá la venganza del Señor, que llevará cuenta exacta de todos sus pecados.",
+        "CEI": "Chi si vendica avrà la vendetta dal Signore ed egli terrà sempre presenti i suoi peccati."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "ἄφες ἀδίκημα τῷ πλησίον σου, καὶ τότε δεηθέντος σου αἱ ἁμαρτίαι σου λυθήσονται.",
+        "VUL": "Relinque proximo tuo nocenti te,/ et tunc deprecanti tibi peccata solventur./",
+        "SYN": "Прости ближнему твоему обиду, и тогда по молитве твоей отпустятся грехи твои.",
+        "NEO": "Pardonne au prochain son injustice, et alors à ta prière tes péchés seront remis.",
+        "NAB": "Forgive your neighbor's injustice; then when you pray, your own sins will be forgiven.",
+        "VAT_ES": "Perdona el agravio a tu prójimo y entonces, cuando ores, serán absueltos tus pecados.",
+        "CEI": "Perdona l'offesa al tuo prossimo e allora per la tua preghiera ti saranno rimessi i peccati."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "ἄνθρωπος ἀνθρώπῳ συντηρεῖ ὀργήν, καὶ παρὰ Κυρίου ζητεῖ ἴασιν;",
+        "VUL": "Homo homini reservat iram,/ et a Deo quærit medelam :/",
+        "SYN": "Человек питает гнев к человеку, а у Господа просит прощения;",
+        "NEO": "L’homme conserve de la colère contre un autre homme, et il demande à Dieu sa guérison !…",
+        "NAB": "Should a man nourish anger against his fellows and expect healing from the LORD?",
+        "VAT_ES": "Si un hombre mantiene su enojo contra otro, &iquest;cómo pretende que el Señor lo sane?",
+        "CEI": "Se qualcuno conserva la collera verso un altro uomo, come oserà chiedere la guarigione al Signore?"
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐπ’ ἄνθρωπον ὅμοιον αὐτῷ οὐκ ἔχει ἔλεος, καὶ περὶ τῶν ἁμαρτιῶν αὐτοῦ δεῖται;",
+        "VUL": "in hominem similem sibi non habet misericordiam,/ et de peccatis suis deprecatur./",
+        "SYN": "к подобному себе человеку не имеет милосердия, и молится о грехах своих;",
+        "NEO": "Il n’a pas pitié d’un homme, son semblable, et il supplie pour ses propres fautes !…",
+        "NAB": "Should a man refuse mercy to his fellows, yet seek pardon for his own sins?",
+        "VAT_ES": "No tiene piedad de un hombre semejante a él &iexcl;y se atreve a implorar por sus pecados!",
+        "CEI": "Egli non ha misericordia per l'uomo suo simile, e osa pregare per i suoi peccati?"
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "αὐτὸς σὰρξ ὢν διατηρεῖ μῆνιν, τίς ἐξιλάσεται τὰς ἁμαρτίας αὐτοῦ;",
+        "VUL": "Ipse cum caro sit reservat iram,/ et propitiationem petit a Deo :/ quis exorabit pro delictis illius ?/",
+        "SYN": "сам, будучи плотию, питает злобу: кто очистит грехи его?",
+        "NEO": "Lui, qui n’est que chair, garde rancune ; qui donc lui obtiendra le pardon de ses péchés ?",
+        "NAB": "If he who is but flesh cherishes wrath, who will forgive his sins?",
+        "VAT_ES": "El, un simple mortal, guarda rencor: &iquest;quién le perdonará sus pecados?",
+        "CEI": "Egli, che è soltanto carne, conserva rancore; chi perdonerà i suoi peccati?"
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "μνήσθητι τὰ ἔσχατα καὶ παῦσαι ἐχθραίνων, καταφθορὰν καὶ θάνατον, καὶ ἔμμενε ἐντολαῖς.",
+        "VUL": "Memento novissimorum, et desine inimicari :/",
+        "SYN": "Помни последнее и перестань враждовать; помни истление и смерть и соблюдай заповеди;",
+        "NEO": "Souviens-toi de ta fin, et cesse de haïr ; de la corruption et de la mort, et observe les commandements.",
+        "NAB": "Remember your last days, set enmity aside; remember death and decay, and cease from sin!",
+        "VAT_ES": "Acuérdate del fin, y deja de odiar; piensa en la corrupción y en la muerte, y sé fiel a los mandamientos;",
+        "CEI": "Ricòrdati della tua fine e smetti di odiare, ricòrdati della corruzione e della morte e resta fedele ai comandamenti."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "μνήσθητι ἐντολῶν καὶ μὴ μηνίσῃς τῷ πλησίον, καὶ διαθήκην Ὑψίστου, καὶ πάριδε ἄγνοιαν.",
+        "VUL": "tabitudo enim et mors imminent in mandatis ejus./",
+        "SYN": "помни заповеди и не злобствуй на ближнего;",
+        "NEO": "Souviens-toi des commandements, et n’aie pas de rancune contre ton prochain ; de l’alliance du Très-Haut, et passe par-dessus l’offense.",
+        "NAB": "Think of the commandments, hate not your neighbor; of the Most High's covenant, and overlook faults.",
+        "VAT_ES": "acuérdate de los mandamientos, y no guardes rencor a tu prójimo; piensa en la Alianza del Altísimo, y pasa por alto la ofensa.",
+        "CEI": "Ricòrdati dei comandamenti e non aver rancore verso il prossimo, dell'alleanza con l'Altissimo e non far conto dell'offesa subìta."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "Ἀπόσχου ἀπὸ μάχης, καὶ ἐλαττώσεις ἁμαρτίας· ἄνθρωπος γὰρ θυμώδης ἐκκαύσει μάχην,",
+        "VUL": "Memorare timorem Dei,/ et non irascaris proximo./",
+        "SYN": "помни завет Всевышнего и презирай невежество.",
+        "NEO": "Tiens-toi éloigné de la dispute, et tu pécheras moins ; car l’homme irascible échauffe la querelle,",
+        "NAB": "Avoid strife and your sins will be fewer, for a quarrelsome man kindles disputes,",
+        "VAT_ES": "Evita los altercados y pecarás mucho menos, porque el hombre iracundo enciende las disputas.",
+        "CEI": "Astieniti dalle risse e sarai lontano dal peccato, perché un uomo passionale attizza una rissa."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἀνὴρ ἁμαρτωλὸς ταράξει φίλους, καὶ ἀνὰ μέσον εἰρηνευόντων ἐκβάλλει διαβολήν.",
+        "VUL": "Memorare testamentum Altissimi,/ et despice ignorantiam proximi./",
+        "SYN": "Удерживайся от ссоры - и ты уменьшишь грехи;",
+        "NEO": "et le pécheur met le trouble parmi les amis, et jette la calomnie parmi ceux qui vivent en paix.",
+        "NAB": "Commits the sin of disrupting friendship and sows discord among those at peace.",
+        "VAT_ES": "El pecador siembra la confusión entre los amigos y crea división entre los que vivían en paz.",
+        "CEI": "Un uomo peccatore semina discordia tra gli amici e tra persone pacifiche diffonde calunnie."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "κατὰ τὴν ὕλην πυρὸς οὕτως ἐκκαυθήσεται, κατὰ τὴν ἰσχὺν τοῦ ἀνθρώπου ὁ θυμὸς αὐτοῦ ἔσται· καὶ κατὰ τὸν πλοῦτον ἀνυψώσει ὀργὴν αὐτοῦ, καὶ κατὰ τὴν στερέωσιν τῆς μάχης ἐκκαυθήσεται.",
+        "VUL": "Abstine te a lite,/ et minues peccata./",
+        "SYN": "ибо раздражительный человек возжжет ссору; человек- грешник смутит друзей и поселит раздор между живущими в мире.",
+        "NEO": "Le feu s’embrase en proportion de la matière qui l’alimente : ainsi la colère d’un homme s’allume en proportion de sa puissance. Selon sa richesse, il fait monter sa fureur ; elle s’enflamme selon la violence de la dispute.",
+        "NAB": "The more wood, the greater the fire, the more underlying it, the fiercer the fight; The greater a man's strength, the sterner his anger, the greater his power, the greater his wrath.",
+        "VAT_ES": "El fuego arde según el combustible, y la disputa se enciende en la medida del empecinamiento; según sea su fuerza, será la furia de un hombre, y según su riqueza, dará libre curso a su ira.",
+        "CEI": "Secondo la materia del fuoco, esso s'infiamma, una rissa divampa secondo la sua violenza; il furore di un uomo è proporzionato alla sua forza, la sua ira cresce in base alla sua ricchezza."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔρις κατασπευδομένη ἐκκαίει πῦρ, καὶ μάχη κατασπεύδουσα ἐκχέει αἷμα.",
+        "VUL": "Homo enim iracundus incendit litem,/ et vir peccator turbabit amicos,/ et in medio pacem habentium immittet inimicitiam./",
+        "SYN": "Каково вещество огня, так он и возгорится;",
+        "NEO": "Une querelle précipitée allume le feu, et une dispute irréfléchie fait couler le sang.",
+        "NAB": "Pitch and resin make fires flare up, and insistent quarrels provoke bloodshed.",
+        "VAT_ES": "Una discordia repentina enciende un fuego, y una disputa precipitada hace correr la sangre.",
+        "CEI": "Una lite concitata accende il fuoco, una rissa violenta fa versare sangue."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐὰν φυσήσῃς σπινθῆρα ἐκκαήσεται, καὶ ἐὰν πτύσῃς ἐπ’ αὐτὸν σβεσθήσεται· καὶ ἀμφότερα ἐκ τοῦ στόματός σου ἐκπορεύεται.",
+        "VUL": "Secundum enim ligna silvæ sic ignis exardescit :/ et secundum virtutem hominis sic iracundia illius erit,/ et secundum substantiam suam exaltabit iram suam./",
+        "SYN": "и какова сила человека, таков будет и гнев его, и по мере богатства усилится ярость его.",
+        "NEO": "Si tu souffles sur une étincelle, elle s’embrase ; si tu craches dessus, elle s’éteint : les deux choses sortent de ta bouche.",
+        "NAB": "If you blow upon a spark, it quickens into flame, if you spit on it, it dies out; yet both you do with your mouth!",
+        "VAT_ES": "Si soplas una chispa, se inflama; si le escupes encima, se extingue, y ambas cosas salen de tu boca.",
+        "CEI": "Se soffi su una scintilla, si accende; se vi sputi sopra, si spegne; eppure ambedue le cose escono dalla tua bocca."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "Ψίθυρον καὶ δίγλωσσον καταρᾶσθε, πολλοὺς γὰρ εἰρηνεύοντας ἀπώλεσαν.",
+        "VUL": "Certamen festinatum incendit ignem,/ et lis festinans effundit sanguinem :/ et lingua testificans adducit mortem./",
+        "SYN": "Жаркий спор возжигает огонь, а жаркая ссора проливает кровь.",
+        "NEO": "Maudis le rapporteur et l’homme à double langue, car ils en ont perdu beaucoup qui vivaient en paix.",
+        "NAB": "Cursed be gossips and the double-tongued, for they destroy the peace of many.",
+        "VAT_ES": "Maldice al murmurador y al de lengua doble: ellos han arruinado a mucha gente que vivía en paz.",
+        "CEI": "Maledici il delatore e l'uomo di doppia lingua, perché fa perire molti che vivono in pace."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "γλῶσσα τρίτη πολλοὺς ἐσάλευσεν καὶ διέστησεν αὐτοὺς ἀπὸ ἔθνους εἰς ἔθνος, καὶ πόλεις ὀχυρὰς καθεῖλεν, καὶ οἰκίας μεγιστάνων κατέστρεψεν·",
+        "VUL": "Si sufflaveris in scintillam, quasi ignis exardebit :/ et si exspueris super illam, extinguetur :/ utraque ex ore proficiscuntur.]",
+        "SYN": "Если подуешь на искру, она разгорится, а если плюнешь на нее, угаснет: то и другое выходит из уст твоих.",
+        "NEO": "La langue calomniatrice en a précipité un grand nombre, et les a chassés d’un peuple chez un autre ; elle a renversé des villes fortes, et jeté par terre les palais des grands.",
+        "NAB": "A meddlesome tongue subverts many, and makes them refugees among the peoples; It destroys walled cities, and overthrows powerful dynasties.",
+        "VAT_ES": "La lengua triple ha hecho tambalear a muchos y los dispersó de nación en nación; ella arrasó ciudades fortificadas y echó por tierra casas de potentados;",
+        "CEI": "Una lingua malèdica ha sconvolto molti, li ha scacciati di nazione in nazione; ha demolito forti città e ha rovinato casati potenti."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "γλῶσσα τρίτη γυναῖκας ἀνδρείας ἐξέβαλεν, καὶ ἐστέρεσεν αὐτὰς τῶν πόνων αὐτῶν·",
+        "VUL": "[Susurro et bilinguis maledictus,/ multos enim turbabit pacem habentes./",
+        "SYN": "Наушник и двоязычный да будут прокляты, ибо они погубили многих, живших в тишине;",
+        "NEO": "La langue calomniatrice a fait chasser des femmes vaillantes, et les a dépouillées du fruit de leurs travaux.",
+        "NAB": "A meddlesome tongue can drive virtuous women from their homes and rob them of the fruit of their toil;",
+        "VAT_ES": "hizo repudiar a mujeres valerosas y las privó del fruto de sus trabajos.",
+        "CEI": "Una lingua malèdica ha fatto ripudiare donne eccellenti, privandole del frutto delle loro fatiche."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "ὁ προσέχων αὐτῇ οὐ μὴ εὕρῃ ἀνάπαυσιν, οὐδὲ κατασκηνώσει μεθ’ ἡσυχίας.",
+        "VUL": "Lingua tertia multos commovit,/ et dispersit illos de gente in gentem./",
+        "SYN": "язык третий многих поколебал и изгонял их от народа к народу,",
+        "NEO": "Qui lui prête l’oreille ne trouvera plus le repos, et il n’aura plus de paix dans sa demeure.",
+        "NAB": "Whoever heeds it has no rest, nor can he dwell in peace.",
+        "VAT_ES": "El que le presta atención, no encuentra más descanso y ya no puede vivir en paz.",
+        "CEI": "Chi le presta attenzione non trova pace, dalla sua dimora scompare la serenità."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "πληγὴ μάστιγος ποιεῖ μώλωπας, πληγὴ δὲ γλώσσης συνκλάσει ὀστᾶ.",
+        "VUL": "Civitates muratas divitum destruxit,/ et domus magnatorum effodit./",
+        "SYN": "и разорял укрепленные города и ниспровергал домы вельмож;",
+        "NEO": "Le coup de verge fait des meurtrissures, le coup de langue brise les os.",
+        "NAB": "A blow from a whip raises a welt, but a blow from the tongue smashes bones;",
+        "VAT_ES": "Un golpe de látigo deja una marca, pero un golpe de lengua quiebra los huesos.",
+        "CEI": "Un colpo di frusta produce lividure, ma un colpo di lingua rompe le ossa."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "πολλοὶ ἔπεσαν ἐν στόματι μαχαίρας, καὶ οὐχ ὡς οἱ πεπτωκότες διὰ γλῶσσαν.",
+        "VUL": "Virtutes populorum concidit,/ et gentes fortes dissolvit./",
+        "SYN": "язык третий изгнал доблестных жен и лишил их трудов их;",
+        "NEO": "Beaucoup ont péri par le tranchant de l’épée ; mais pas autant que ceux qui ont péri par la langue.",
+        "NAB": "Many have fallen by the edge of the sword, but not as many as by the tongue.",
+        "VAT_ES": "Muchos han caído al filo de la espada, pero son menos que los caídos a causa de la lengua.",
+        "CEI": "Molti sono caduti a fil di spada, ma non quanti sono periti per colpa della lingua."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "μακάριος ὁ σκεπασθεὶς ἀπ’ αὐτῆς, ὃς οὐ διῆλθεν ἐν τῷ θυμῷ αὐτῆς, ὃς οὐχ εἵλκυσεν τὸν ζυγὸν αὐτῆς, καὶ ἐν τοῖς δεσμοῖς αὐτῆς οὐκ ἐδέθη·",
+        "VUL": "Lingua tertia mulieres viratas ejecit,/ et privavit illas laboribus suis./",
+        "SYN": "внимающий ему не найдет покоя и не будет жить в тишине.",
+        "NEO": "Heureux celui qui en est à l’abri, qui n’est pas livré à sa fureur, qui n’a pas traîné son joug, et qui n’a pas été lié de ses chaînes !",
+        "NAB": "Happy he who is sheltered from it, and has not endured its wrath; Who has not borne its yoke nor been fettered with its chain;",
+        "VAT_ES": "&iexcl;Feliz el que está al resguardo de ella y no ha quedado expuesto a su furor, el que no ha tirado de su yugo ni ha sido atado a tus cadenas!",
+        "CEI": "Beato chi se ne guarda, chi non è esposto al suo furore, chi non ha trascinato il suo giogo e non è stato legato con le sue catene."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +341,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "ὁ γὰρ ζυγὸς αὐτῆς ζυγὸς σιδηροῦς, καὶ οἱ δεσμοὶ αὐτῆς δεσμοὶ χάλκειοι·",
+        "VUL": "Qui respicit illam non habebit requiem,/ nec habebit amicum in quo requiescat./",
+        "SYN": "Удар бича делает рубцы, а удар языка сокрушит кости;",
+        "NEO": "Car son joug est un joug de fer, et ses chaînes sont des chaînes d’airain.",
+        "NAB": "For its yoke is a yoke of iron and its chains are chains of bronze!",
+        "VAT_ES": "Porque su yugo es un yugo de hierro y sus cadenas son cadenas de bronce.",
+        "CEI": "Il suo giogo è un giogo di ferro; le sue catene catene di bronzo."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +358,15 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "LXX": "θάνατος πονηρὸς ὁ θάνατος αὐτῆς, καὶ λυσιτελὴς μᾶλλον ὁ ᾅδης αὐτῆς.",
+        "VUL": "Flagelli plaga livorem facit :/ plaga autem linguæ comminuet ossa./",
+        "SYN": "многие пали от острия меча, но не столько, сколько павших от языка;",
+        "NEO": "La mort qu’elle donne est une mort affreuse, et le schéol vaut mieux qu’elle.",
+        "NAB": "Dire is the death it inflicts, besides which even the nether world is a gain;",
+        "VAT_ES": "&iexcl;Muerte funesta es la que inflige y es preferible el Abismo a una lengua así!",
+        "CEI": "Spaventosa è la morte che procura, in confronto è preferibile la tomba."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +375,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "οὐ μὴ κρατήσῃ εὐσεβῶν, καὶ ἐν τῇ φλογὶ αὐτῆς οὐ καήσονται·",
+        "VUL": "Multi ceciderunt in ore gladii :/ sed non sic quasi qui interierunt per linguam suam./",
+        "SYN": "счастлив, кто укрылся от него, кто не испытал ярости его, кто не влачил ярма его и не связан был узами его;",
+        "NEO": "Elle n’aura pas d’empire sur les hommes pieux, et ils ne seront pas brûlés par sa flamme.",
+        "NAB": "It will not take hold among the just nor scorch them in its flame,",
+        "VAT_ES": "Pero ella no tiene poder sobre los hombres buenos y ellos no se quemarán en sus llamas.",
+        "CEI": "Essa non ha potere sugli uomini pii, questi non bruceranno alla sua fiamma."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +392,15 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "LXX": "οἱ καταλείποντες Κύριον ἐμπεσοῦνται εἰς αὐτήν, καὶ ἐν αὐτοῖς ἐκκαήσεται καὶ οὐ μὴ σβεσθῇ· ἐξαποσταλήσεται ἐπ’ αὐτοῖς ὡς λέων, καὶ ὡς πάρδαλις λυμανεῖται αὐτούς.",
+        "VUL": "Beatus qui tectus est a lingua nequam,/ qui in iracundiam illius non transivit,/ et qui non attraxit jugum illius,/ et in vinculis ejus non est ligatus :/",
+        "SYN": "ибо ярмо его - ярмо железное, и узы его - узы медные,",
+        "NEO": "Ceux qui abandonnent le Seigneur y tomberont ; et elle les consumera sans s’éteindre.",
+        "NAB": "But those who forsake the LORD will fall victims to it, as it burns among them unquenchably! It will hurl itself against them like a lion; like a panther, it will tear them to pieces.",
+        "VAT_ES": "Los que abandonan al Señor serán sus víctimas: ella los abrasará sin extinguirse, se lanzará sobre ellos como un león y los destrozará como una pantera.",
+        "CEI": "Quanti abbandonano il Signore in essa cadranno, fra costoro divamperà senza spegnersi. Si avventerà contro di loro come un leone e come una pantera ne farà scempio."
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +409,15 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "LXX": "ἴδε, περίφραξον τὸ κτῆμά σου ἀκάνθαις, τὸ ἀργύριόν σου καὶ τὸ χρυσίον κατάδησον·",
+        "VUL": "jugum enim illius jugum ferreum est,/ et vinculum illius vinculum æreum est ;/",
+        "SYN": "смерть лютая - смерть его, и самый ад лучше его.",
+        "NEO": "Vois, entoure ton domaine d’une haie d’épines, lie dans ton sac ton or et ton argent ;",
+        "NAB": "As you hedge round your vineyard with thorns, set barred doors over your mouth;",
+        "VAT_ES": "Por eso, rodea tu posesión con un cerco de espinas, guarda bien tu plata y tu oro;",
+        "CEI": "Ecco, recingi pure la tua proprietà con siepe spinosa, lega in un sacchetto l'argento e l'oro,"
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +426,15 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ τοῖς λόγοις σου ποίησον ζυγὸν καὶ σταθμόν, ⸆ καὶ τῷ στόματί σου ποίησον θύραν καὶ μοχλόν.",
+        "VUL": "mors illius mors nequissima :/ et utilis potius infernus quam illa./",
+        "SYN": "Не овладеет он благочестивыми, и не сгорят они в пламени его;",
+        "NEO": "et fais une balance et des poids pour tes discours, et fais une porte et un verrou pour ta bouche.",
+        "NAB": "As you seal up your silver and gold, so balance and weigh your words.",
+        "VAT_ES": "fabrícate una balanza y una pesa para tus palabras, y una puerta y un cerrojo para tu boca.",
+        "CEI": "ma controlla anche le tue parole pesandole e chiudi con porte e catenaccio la bocca."
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +443,15 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "LXX": "πρόσεχε μή πως ὀλισθήσῃς ἐν αὐτῇ, μὴ πέσῃς κατέναντι ἐνεδρεύοντος.",
+        "VUL": "Perseverantia illius non permanebit,/ sed obtinebit vias injustorum,/ et in flamma sua non comburet justos./",
+        "SYN": "оставляющие Господа впадут в него; в них возгорится он и не угаснет: он будет послан на них, как лев, и, как барс, будет истреблять их.",
+        "NEO": "Prends garde à ne pas faillir par la langue, de peur que tu ne tombes devant celui qui te guette.",
+        "NAB": "Take care not to slip by your tongue and fall victim to your foe waiting in ambush.",
+        "VAT_ES": "Presta atención, se sea que resbales a causa de la lengua y caigas ante los que acechan.",
+        "CEI": "Stà attento a non sbagliare a causa della lingua, perché tu non cada davanti a chi ti insidia."
+      }
     }
   }
 }

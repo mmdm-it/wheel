@@ -18,7 +18,14 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "Καὶ ἐκάλεσεν Τωβεὶτ Τωβείαν τὸν υἱὸν αὐτοῦ καὶ εἶπεν αὐτῷ Ὅρα, τέκνον, μισθὸν τῷ ἀνθρώπῳ τῷ συνελθόντι σοι, καὶ προσθεῖναι αὐτῷ δεῖ.",
+        "VUL": "Tunc vocavit ad se Tobias filium suum, dixitque ei : Quid possumus dare viro isti sancto, qui venit tecum ?",
+        "SYN": "И призвал Товит сына своего Товию и сказал ему: приготовь, сын _мой_, плату человеку, который ходил с тобою; ему надобно еще прибавить.",
+        "NEO": "Lorsque les noces furent terminées, Tobit appela son fils Tobias et lui dit : « Mon fils, tu devrais penser à payer la somme due à ton compagnon ; donne-lui plus que le montant convenu ».",
+        "NAB": "When the wedding celebaration came to an end, Tobit called his son Tobiah and said to him, \"Son, see to it that you give what is due to the man who made the journey with you; give him a bonus too.\"",
+        "VAT_ES": "Cuando terminó de celebrarse la boda Tobit llamó a su hijo Tobías y le dijo: «Hijo mío, ya es hora de pagarle lo convenido a tu compañero, agregando incluso algo más»."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +34,14 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ εἶπεν Πάτερ, οὐ βλάπτομαι δοὺς αὐτῷ τὸ ἥμισυ ὧν ἐνήνοχα,",
+        "VUL": "Respondens Tobias, dixit patri suo : Pater, quam mercedem dabimus ei ? aut quid dignum poterit esse beneficiis ejus ?",
+        "SYN": "Он отвечал: отец _мой_, я не буду в убытке, если отдам ему половину всего, что принес;",
+        "NEO": "« Père, répondit-il, combien dois-je lui donner pour son aide ? Même si je lui donne la moitié de ce qu’il a ramené avec moi, je ne serai pas perdant.",
+        "NAB": "Tobiah said: \"Father, how much shall I pay him? It would not hurt me at all to give him half of all the wealth he brought back with me.",
+        "VAT_ES": "Tobías le respondió: «Padre, &iquest;cuánto tengo que darle? Aunque le entregara la mitad de los bienes que él trajo conmigo, no saldría perdiendo."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +50,14 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "ὅτι με ἀγίοχέν σοι ὑγιῆ, καὶ τὴν γυναῖκά μου ἐθεράπευσεν καὶ τὸ ἀργύριόν μου ἤνεγκεν, καὶ σὲ ὁμοίως ἐθεράπευσεν.",
+        "VUL": "Me duxit et reduxit sanum, pecuniam a Gabelo ipse recepit, uxorem ipse me habere fecit, et dæmonium ab ea ipse compescuit : gaudium parentibus ejus fecit, meipsum a devoratione piscis eripuit, te quoque videre fecit lumen cæli, et bonis omnibus per eum repleti sumus. Quid illi ad hæc poterimus dignum dare ?",
+        "SYN": "потому что он привел меня к тебе здоровым и жену мою уврачевал, и серебро мое принес, и тебя также исцелил.",
+        "NEO": "Il m’a ramené sain et sauf, il a guéri ma femme, il a ramené l’argent aussi, et maintenant il t’a guéri toi aussi. Combien dois-je lui donner pour tout cela ? ».",
+        "NAB": "He led me back safe and sound; he cured my wife; he brought the money back with me; and he cured you. How much of a bonus should I give him?\"",
+        "VAT_ES": "El me ha conducido sano y salvo, ha curado a mi esposa, ha traído conmigo el dinero y te ha curado a ti. &iquest;Qué puedo darle por todo esto?»."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +66,14 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ εἶπεν ὁ πρεσβύτης Δικαιοῦται αὐτῷ.",
+        "VUL": "Sed peto te, pater mi, ut roges eum, si forte dignabitur medietatem de omnibus quæ allata sunt, sibi assumere.",
+        "SYN": "Старец сказал: так и следует ему.",
+        "NEO": "Tobit répondit : « Il a bien gagné la moitié de ce qu’il a rapporté ».",
+        "NAB": "Tobit answered, \"It is only fair, son, that he should receive half of all that he brought back.\"",
+        "VAT_ES": "Tobit le dijo: «Hijo, es justo que se lleve la mitad de lo que trajo»."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +82,14 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἐκάλεσεν τὸν ἄγγελον καὶ εἶπεν αὐτῷ Λάβε τὸ ἥμισυ πάντων ὧν ἐνηνόχατε.",
+        "VUL": "Et vocantes eum, pater scilicet et filius, tulerunt eum in partem : et rogare cperunt ut dignaretur dimidiam partem omnium quæ attulerant acceptam habere.",
+        "SYN": "И призвал Ангела и сказал ему: возьми половину всего, что вы принесли, и иди с миром.",
+        "NEO": "Tobias appela son compagnon et lui dit : « Prends la moitié de ce que tu as rapporté, en paiement de tout ce que tu as fait, et va en paix ».",
+        "NAB": "So Tobiah called Raphael and said, \"Take as your wages half of all that you have brought back, and go in peace.\"",
+        "VAT_ES": "Tobías llamó a su compañero y le dijo: «Toma en pago la mitad de lo que has traído, y vete en paz»."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +98,14 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ καλέσας τοὺς δύο κρυπτῶς εἶπεν αὐτοῖς Εὐλογεῖτε τὸν θεὸν καὶ αὐτῷ ἐξομολογεῖσθε, μεγαλωσύνην δίδοτε αὐτῷ, καὶ ἐξομολογεῖσθε αὐτῷ ἐνώπιον πάντων τῶν ζώντων περὶ ὧν ἐποίησεν μεθ’ ὑμῶν. ἀγαθὸν τὸ εὐλογεῖν τὸν θεὸν καὶ ὑψοῖν τὸ ὄνομα αὐτοῦ, τοὺς λόγους τῶν ἔργων τοῦ θεοῦ ἐντίμως ὑποδεικνύοντες· καὶ μὴ ὀκνεῖτε ἐξομολογεῖσθαι αὐτῷ.",
+        "VUL": "Tunc dixit eis occulte : Benedicite Deum cæli, et coram omnibus viventibus confitemini ei, quia fecit vobiscum misericordiam suam.",
+        "SYN": "Тогда, отозвав обоих особо, _Ангел_ сказал им: благословляйте Бога, прославляйте Его, признавайте величие Его и исповедуйте пред всеми живущими, что Он сделал для вас. Доброе _дело_ - благословлять Бога, превозносить имя Его и благоговейно проповедывать о делах Божиих; и вы не ленитесь прославлять Его.",
+        "NEO": "Raphaël les prit tous deux à part et dit : « Bénissez Dieu, louez-le devant tous les vivants pour la faveur qu’il vous a accordée. Bénissez et exaltez son nom. Proclamez devant tous les hommes les hauts faits de Dieu comme ils le méritent, et ne vous lassez pas de lui rendre grâce.",
+        "NAB": "Raphael called the two men aside privately and said to them: \"Thank God! Give him the praise and the glory. Before all the living, acknowledge the many good things he has done for you, by blessing and extolling his name in song. Before all men, honor and proclaim God's deeds, and do not be slack in praising him.",
+        "VAT_ES": "Entonces Rafael llamó aparte a los dos y les dijo: «Bendigan a Dios, y celébrenlo delante de todos los vivientes por los bienes que él les ha concedido, para que todos bendigan y alaben su Nombre. Hagan conocer debidamente a todos los hombres las obras de Dios y nunca dejen de celebrarlo."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +114,14 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "μυστήριον βασιλέως καλὸν κρύψαι, τὰ δὲ ἔργα τοῦ θεοῦ ἀνακαλύπτειν ἐνδόξως. ἀγαθὸν ποιήσατε, καὶ κακὸν οὐχ εὑρήσει ὑμᾶς.",
+        "VUL": "Etenim sacramentum regis abscondere bonum est : opera autem Dei revelare et confiteri honorificum est.",
+        "SYN": "Тайну цареву прилично хранить, а о делах Божиих объявлять похвально. Делайте добро, и зло не постигнет вас.",
+        "NEO": "Il est juste de garder le secret du roi, mais il est juste de révéler et de publier les œuvres de Dieu comme elles le méritent. Fais ce qui est bien, et il ne t’arrivera aucun malheur.",
+        "NAB": "A king's secret it is prudent to keep, but the works of God are to be declared and made known. Praise them with due honor. Do good, and evil will not find its way to you.",
+        "VAT_ES": "Es bueno mantener oculto el secreto del rey, pero las obras de Dios hay que revelarlas y publicarlas como es debido. Practiquen el bien, y así el mal nunca los dañará."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +130,14 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀγαθὸν προσευχὴ μετὰ νηστείας καὶ ἐλεημοσύνης καὶ δικαιοσύνης· ἀγαθὸν τὸ ὀλίγον μετὰ δικαιοσύνης ἢ πολὺ μετὰ ἀδικίας· καλὸν ποιῆσαι ἐλεημοσύνην ἢ θησαυρίσαι χρυσίον.",
+        "VUL": "Bona est oratio cum jejunio, et eleemosyna magis quam thesauros auri recondere :",
+        "SYN": "Доброе _дело_ - молитва с постом и милостынею и справедливостью. Лучше малое со справедливостью, нежели многое с неправдою; лучше творить милостыню, нежели собирать золото,",
+        "NEO": "« La prière avec la vérité+ 12:8 Le TC à la prière et \\+it le jeûne\\+it*, ce qui semble plus probable. D’ailleurs d’autres traduction préfère dans ce cas se baser sur le TC.* et l’aumône avec la justice valent mieux que la richesse avec l’iniquité. Mieux vaut pratiquer l’aumône que d’amasser de l’or.",
+        "NAB": "Prayer and fasting are good, but better than either is almsgiving accompanied by righteousness. A little with righteousness is better than abundance with wickedness. It is better to give alms than to store up gold;",
+        "VAT_ES": "Vale más la oración con el ayuno y la limosna con la justicia, que la riqueza con la iniquidad. Vale más hacer limosna que amontonar oro."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +146,14 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐλεημοσύνη ἐκ θανάτου ῥύεται, καὶ αὕτη ἀποκαθαριεῖ πᾶσαν ἁμαρτίαν· οἱ ποιοῦντες ἐλεημοσύνας καὶ δικαιοσύνας πλησθήσονται ζωῆς·",
+        "VUL": "quoniam eleemosyna a morte liberat, et ipsa est quæ purgat peccata, et facit invenire misericordiam et vitam æternam.",
+        "SYN": "ибо милостыня от смерти избавляет и может очищать всякий грех. Творящие милостыни и _дела_ правды будут долгоденствовать.",
+        "NEO": "L’aumône sauve de la mort et purifie toute sorte de péché. Ceux qui font l’aumône sont rassasiés de jours ;",
+        "NAB": "for almsgiving saves one from death and expiates every sin. Those who regularly give alms shall enjoy a full life;",
+        "VAT_ES": "La limosna libra de la muerte y purifica de todo pecado. Los que dan limosna gozarán de una larga vida."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +162,14 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "οἱ δὲ ἁμαρτάνοντες πολέμιοί εἰσιν τῆς ἑαυτῶν ζωῆς.",
+        "VUL": "Qui autem faciunt peccatum et iniquitatem, hostes sunt animæ suæ.",
+        "SYN": "Грешники же суть враги своей жизни.",
+        "NEO": "Ceux qui commettent le péché et font le mal se font du mal.",
+        "NAB": "but those habitually guilty of sin are their own worst enemies.",
+        "VAT_ES": "Los que pecan y practican la injusticia son enemigos de su propia vida."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +178,14 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "οὐ μὴ κρύψω ἀφ’ ὑμῶν πᾶν ῥῆμα· εἴρηκα δὴ μυστήριον βασιλέως κρύψαι καλόν, τὰ δὲ ἔργα τοῦ θεοῦ ἀνακαλύπτειν ἐνδόξως.",
+        "VUL": "Manifesto ergo vobis veritatem, et non abscondam a vobis occultum sermonem.",
+        "SYN": "Не скрою от вас ничего; я сказал уже: тайну цареву прилично хранить, а о делах Божиих объявлять похвально.",
+        "NEO": "Je vais vous dire toute la vérité, sans rien vous cacher. Je vous ai déjà dit qu’il est juste de garder le secret dun roi, mais aussi de révéler dignement les œuvres de Dieu.",
+        "NAB": "\"I will now tell you the whole truth; I will conceal nothing at all from you. I have already said to you, 'A king's secret it is prudent to keep, but the works of God are to be made known with due honor.'",
+        "VAT_ES": "Voy a decirles toda la verdad, sin ocultarles nada. Ya les dije que es bueno mantener oculto el secreto del rey y revelar dignamente las obras de Dios."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +194,14 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ νῦν ὅτε προσηύξω σὺ καὶ ἡ νύμφη σου Σάρρα, ἐγὼ προσήγαγον τὸ μνημόσυνον τῆς προσευχῆς ὑμῶν ἐνώπιον τοῦ ἁγίου· καὶ ὅτε ἔθαπτες τοὺς νεκρούς, ὡσαύτως συμπαρήμην σοι.",
+        "VUL": "Quando orabas cum lacrimis, et sepeliebas mortuos, et derelinquebas prandium tuum, et mortuos abscondebas per diem in domo tua, et nocte sepeliebas eos, ego obtuli orationem tuam Domino.",
+        "SYN": "Когда молился ты и невестка твоя Сарра, я возносил память молитвы вашей пред Святаго, и когда ты хоронил мертвых, я также был с тобою.",
+        "NEO": "Tu dois donc savoir que, lorsque toi et Sara étiez en prière, c’est moi qui présentais vos supplications devant la gloire du Seigneur et qui les lisais ; de même, lorsque tu enterrais les morts.",
+        "NAB": "I can now tell you that when you, Tobit, and Sarah prayed, it was I who presented and read the record of your prayer before the Glory of the Lord; and I did the same thing when you used to bury the dead.",
+        "VAT_ES": "Cuando tú y Sara hacían oración, era yo el que presentaba el memorial de sus peticiones delante de la gloria del Señor; y lo mismo cuando tú enterrabas a los muertos."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +210,14 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ὅτε οὐκ ὤκνησας ἀναστῆναι καὶ καταλιπεῖν τὸ ἄριστόν σου ὅπως ἀπελθὼν περιστείλῃς τὸν νεκρόν, οὐκ ἔλαθές με ἀγαθοποιῶν, ἀλλὰ σὺν σοὶ ἤμην.",
+        "VUL": "Et quia acceptus eras Deo, necesse fuit ut tentatio probaret te.",
+        "SYN": "И когда ты не обленился встать и оставить обед свой, чтобы пойти и убрать мертвого, твоя благотворительность не утаилась от меня, но я был с тобою.",
+        "NEO": "Lorsque tu n’as pas hésité à te lever et à quitter la table pour aller enterrer un mort, j’ai été envoyé pour éprouver ta foi,+ 12:13 La Vulg. ajoute : \\+it Et parce que tu étais agréable à Dieu, il a fallu que la tentation t’éprouve.\\+it**",
+        "NAB": "When you did not hesitate to get up and leave your dinner in order to go and bury the dead,",
+        "VAT_ES": "Cuando no dudabas en levantarte de la mesa, dejando la comida para ir a sepultar un cadáver, yo fui enviado para ponerte a prueba."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +226,14 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ νῦν ἀπέστειλέν με ὁ θεὸς ἰάσασθαί σε καὶ τὴν νύμφην σου Σάρραν.",
+        "VUL": "Et nunc misit me Dominus ut curarem te, et Saram uxorem filii tui a dæmonio liberarem.",
+        "SYN": "И ныне Бог послал меня уврачевать тебя и невестку твою Сарру.",
+        "NEO": "et en même temps, Dieu m’a envoyé pour vous guérir, toi et ta belle-fille Sarra.",
+        "NAB": "I was sent to put you to the test. At the same time, however, God commissioned me to heal you and your daughter-in-law Sarah.",
+        "VAT_ES": "Pero Dios también me envió para curarte a ti y a tu nuera Sara."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +242,14 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐγώ εἰμι Ῥαφαήλ, εἷς ἐκ τῶν ἑπτὰ ἁγίων ἀγγέλων οἳ προσαναφέρουσιν τὰς προσευχὰς τῶν ἁγίων καὶ εἰσπορεύονται ἐνώπιον τῆς δόξης τοῦ ἁγίου.",
+        "VUL": "Ego enim sum Raphaël angelus, unus ex septem qui adstamus ante Dominum.",
+        "SYN": "Я - Рафаил, один из семи святых Ангелов, которые возносят молитвы святых и восходят пред славу Святаго.",
+        "NEO": "Je suis Raphaël, l’un des sept anges qui se tiennent toujours prêts à entrer dans la présence de la gloire du Seigneur ».",
+        "NAB": "I am Raphael, one of the seven angels who enter and serve before the Glory of the Lord.\"",
+        "VAT_ES": "Yo soy Rafael, uno de los siete ángeles que están delante de la gloria del Señor y tienen acceso a su presencia»."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +258,14 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "Καὶ ἐταράχθησαν οἱ δύο καὶ ἔπεσον ἐπὶ πρόσωπον, ὅτι ἐφοβήθησαν.",
+        "VUL": "Cumque hæc audissent, turbati sunt, et trementes ceciderunt super terram in faciem suam.",
+        "SYN": "Тогда оба смутились и пали лицем _на землю_, потому что были в страхе.",
+        "NEO": "Ils furent tous deux saisis d’effroi et tombèrent sur leur visage, terrorisés.",
+        "NAB": "Stricken with fear, the two men fell to the ground.",
+        "VAT_ES": "Los dos quedaron desconcertados y cayeron con el rostro en tierra, llenos de temor."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +274,14 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτοῖς Μὴ φοβεῖσθε, εἰρήνη ὑμῖν ἔσται· τὸν δὲ θεὸν εὐλογεῖτε εἰς τὸν αἰῶνα,",
+        "VUL": "Dixitque eis angelus : Pax vobis : nolite timere.",
+        "SYN": "Но он сказал им: не бойтесь, мир будет вам. Благословляйте Бога вовек.",
+        "NEO": "Mais l’ange dit : « N’ayez pas peur, la paix soit avec vous. Bénissez Dieu à jamais.",
+        "NAB": "But Raphael said to them: \"No need to fear; you are safe. Thank God now and forever.",
+        "VAT_ES": "Pero él les dijo: «No teman, la paz esté con ustedes. Bendigan a Dios eternamente."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +290,14 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "ὅτι οὐ τῇ ἐμαυτοῦ χάριτι ἀλλὰ τῇ θελήσει τοῦ θεοῦ ὑμῶν· ὅθεν εὐλογεῖτε αὐτὸν εἰς τὸν αἰῶνα.",
+        "VUL": "Etenim cum essem vobiscum, per voluntatem Dei eram : ipsum benedicite, et cantate illi.",
+        "SYN": "Ибо я пришел не по своему произволению, а по воле Бога нашего; потому и благословляйте Его вовек.",
+        "NEO": "En ce qui me concerne, quand j’étais avec vous, ma présence n’était pas due à une décision de ma part, mais à la volonté de Dieu ; c’est lui que vous devez bénir tant que vous vivrez, c’est lui que vous devez louer.",
+        "NAB": "As for me, when I came to you it was not out of any favor on my part, but because it was God's will. So continue to thank him every day; praise him with song.",
+        "VAT_ES": "Cuando yo estaba con ustedes, no era por mi propia iniciativa, sino por voluntad de Dios. Es a él al que deben bendecir y cantar todos los días."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +306,14 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "πάσας τὰς ἡμέρας ὠπτανόμην ὑμῖν, καὶ οὐκ ἔφαγον οὐδὲ ἔπιον, ἀλλὰ ὅρασιν ὑμεῖς ἐθεωρεῖτε.",
+        "VUL": "Videbar quidem vobiscum manducare et bibere : sed ego cibo invisibili, et potu qui ab hominibus videri non potest, utor.",
+        "SYN": "Все дни я был видим вами; но я не ел и не пил, - только взорам вашим представлялось _это_.",
+        "NEO": "Vous avez cru me voir manger, mais c’était une apparence.",
+        "NAB": "Even though you watched me eat and drink. I did not really do so; what you were seeing was a vision.",
+        "VAT_ES": "Aunque ustedes me veían comer, eso no era más que una apariencia."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +322,14 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ νῦν ἐξομολογεῖσθε τῷ θεῷ, διότι ἀναβαίνω πρὸς τὸν ἀποστείλαντά με, καὶ γράψατε πάντα τὰ συντελεσθέντα εἰς βιβλίον.",
+        "VUL": "Tempus est ergo ut revertar ad eum qui me misit : vos autem benedicite Deum, et narrate omnia mirabilia ejus.",
+        "SYN": "Итак, прославляйте теперь Бога, потому что я восхожу к Пославшему меня, и напишите все совершившееся в книгу.",
+        "NEO": "Maintenant, bénissez le Seigneur sur la terre et rendez grâce à Dieu. Je vais retourner auprès de celui qui m’a envoyé d’en haut. Notez tout ce qui s’est passé. » Et il s’éleva.",
+        "NAB": "So now get up from the ground and praise God. Behold, I am about to ascend to him who sent me; write down all these things that have happened to you.\"",
+        "VAT_ES": "Por eso, bendigan al Señor sobre la tierra y celebran a Dios. Ahora subo a Aquel que me envió. Pongan por escrito todo lo que les ha sucedido». Y en seguida se elevó."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +338,14 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἀνέστησαν, καὶ οὐκ εἶδον αὐτόν.",
+        "VUL": "Et cum hæc dixisset, ab aspectu eorum ablatus est, et ultra eum videre non potuerunt.",
+        "SYN": "И встали они и более уже не видели его.",
+        "NEO": "Quand ils se levèrent à nouveau, il n’était plus visible.",
+        "NAB": "When Raphael ascended they rose to their feet and could no longer see him.",
+        "VAT_ES": "Ellos bendecían a Dios, entonando himnos, y lo celebraban por haber obrado esas maravillas, ya que se les había aparecido un ángel de Dios."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +354,13 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἐξομολογοῦντο τὰ ἔργα τὰ μεγάλα καὶ θαυμαστὰ αὐτοῦ, ὡς ὤφθη αὐτοῖς ἄγγελος Κυρίου.",
+        "VUL": "Tunc prostrati per horas tres in faciem, benedixerunt Deum : et exsurgentes narraverunt omnia mirabilia ejus.",
+        "SYN": "И стали рассказывать о великих и чудных делах Божиих, и как явился им Ангел Господень.",
+        "NEO": "Ils louèrent Dieu par des hymnes ; ils le remercièrent d’avoir accompli de tels prodiges ; un ange de Dieu ne leur était-il pas apparu ?",
+        "NAB": "They kept thanking God and singing his praises; and they continued to acknowledge these marvelous deeds which he had done when the angel of God appeared to them."
+      }
     }
   }
 }

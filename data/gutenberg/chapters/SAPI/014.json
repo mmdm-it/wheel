@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "Πλοῦν τις πάλιν στελλόμενος καὶ ἄγρια μέλλων διοδεύειν κύματα τοῦ φέροντος αὐτὸν πλοίου σαθρότερον ξύλον ἐπιβοᾶται.",
+        "VUL": "[Iterum alius navigare cogitans,/ et per feros fluctus iter facere incipiens,/ ligno portante se, fragilius lignum invocat./",
+        "SYN": "Еще: иной, собираясь плыть и переплывать свирепые волны, призывает на помощь дерево, слабейшее носящего его корабля;",
+        "NEO": "En voici un autre qui pense à prendre la mer, et se dispose à voyager sur les flots en fureur : il invoque un bois plus fragile encore que le vaisseau qui le porte ;",
+        "NAB": "Again, one preparing for a voyage and about to traverse the wild waves cries out to wood more unsound than the boat that bears him.",
+        "VAT_ES": "Otro se embarca dispuesto a surcar las olas bravías e invoca a una madera más carcomida que la nave que lo lleva.",
+        "CEI": "Anche chi si dispone a navigare e a solcare onde selvagge implora un legno più fragile della barca che lo porta."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐκεῖνο μὲν γὰρ ὄρεξις πορισμῶν ἐπενόησεν, τεχνῖτις δὲ σοφία κατεσκεύασεν·",
+        "VUL": "Illud enim cupiditas acquirendi excogitavit,/ et artifex sapientia fabricavit sua./",
+        "SYN": "ибо стремление к приобретениям выдумало оный, а художник искусно устроил,",
+        "NEO": "car, ce vaisseau, c’est la passion du lucre qui l’a inventé, et c’est l’habileté de l’ouvrier qui l’a construit.",
+        "NAB": "For the urge for profits devised this latter, and Wisdom the artificer produced it.",
+        "VAT_ES": "Porque esa nave fue concebida por el afán de lucro y construida por la sabiduría artesanal,",
+        "CEI": "Questa, infatti, fu inventata dal desiderio di guadagni e fu costruita da una saggezza artigiana;"
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "ἡ δὲ σή, πάτερ, διακυβερνᾷ πρόνοια, ὅτι ἔδωκας καὶ ἐν θαλάσσῃ ὁδὸν καὶ ἐν κύμασι τρίβον ἀσφαλῆ,",
+        "VUL": "Tua autem, Pater, providentia gubernat :/ quoniam dedisti et in mari viam,/ et inter fluctus semitam firmissimam,/",
+        "SYN": "но промысл Твой, Отец, управляет кораблем, ибо Ты дал и путь в море и безопасную стезю в волнах,",
+        "NEO": "Mais, ô Père, c’est votre providence qui le gouverne, vous qui avez même ouvert un chemin dans la mer, et une route sûre au milieu des flots,",
+        "NAB": "But your providence, O Father! guides it, for you have furnished even in the sea a road, and through the waves a steady path,",
+        "VAT_ES": "pero es tu Providencia, Padre, la que dirige el timón. Sí, tú has abierto un camino en el mar y un sendero seguro entre las olas,",
+        "CEI": "ma la tua provvidenza, o Padre, la guida perché tu hai predisposto una strada anche nel mare, un sentiero sicuro anche fra le onde,"
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "δεικνὺς ὅτι δύνασαι ἐκ παντὸς σώζειν, ἵνα κἂν ἄνευ τέχνης τις ἐπιβῇ.",
+        "VUL": "ostendens quoniam potens es ex omnibus salvare,/ etiam si sine arte aliquis adeat mare./",
+        "SYN": "показывая, что Ты можешь от всего спасать, хотя бы кто отправлялся в море и без искусства.",
+        "NEO": "montrant par là que vous pouvez délivrer de tout péril, afin que, même sans la science de la navigation, on puisse se mettre en mer. Vous ne voulez pas que les œuvres de votre sagesse restent inutiles ; c’est pourquoi les hommes, confiant leur vie à un bois fragile,",
+        "NAB": "Showing that you can save from any danger, so that even one without skill may embark.",
+        "VAT_ES": "mostrando así que puedes salvar de todo peligro, incluso si uno se embarca sin ninguna experiencia.",
+        "CEI": "mostrando che puoi salvare da tutto, sì che uno possa imbarcarsi anche senza esperienza."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "θέλεις δὲ μὴ ἀργὰ εἶναι τὰ τῆς σοφίας σου ἔργα· διὰ τοῦτο καὶ ἐλαχίστῳ ξύλῳ πιστεύουσιν ἄνθρωποι ψυχάς, καὶ διελθόντες κλύδωνα σχεδίᾳ διεσώθησαν.",
+        "VUL": "Sed ut non essent vacua sapientiæ tuæ opera,/ propter hoc etiam et exiguo ligno credunt homines animas suas,/ et transeuntes mare per ratem liberati sunt./",
+        "SYN": "Ты хочешь, чтобы не тщетны были дела Твоей премудрости; поэтому люди вверяют свою жизнь малейшему дереву и спасаются, проходя по волнам на ладье.",
+        "NEO": "traversent les vagues sur un radeau, et échappent à la mort.",
+        "NAB": "But you will that the products of your Wisdom be not idle; therefore men trust their lives even to frailest wood, and have been safe crossing the surge on a raft.",
+        "VAT_ES": "Tú no quieres que las obras de tu Sabiduría sean estériles: por eso los hombres confían su vida a una simple madera, y atraviesan a salvo las olas sobre una frágil embarcación.",
+        "CEI": "Tu non vuoi che le opere della tua sapienza siano inutili; per questo gli uomini affidano le loro vite anche a un minuscolo legno e, attraversando i flutti con una zattera, scampano."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἀρχῆς γὰρ ἀπολλυμένων ὑπερηφάνων γιγάντων, ἡ ἐλπὶς τοῦ κόσμου ἐπὶ σχεδίας καταφυγοῦσα ἀπέλιπεν τῷ αἰῶνι σπέρμα γενέσεως, τῇ σῇ κυβερνηθεῖσα χειρί.",
+        "VUL": "Sed et ab initio cum perirent superbi gigantes,/ spes orbis terrarum ad ratem confugiens,/ remisit sæculo semen nativitatis quæ manu tua erat gubernata./",
+        "SYN": "Ибо и вначале, когда погубляемы были гордые исполины, надежда мира, управленная Твоею рукою, прибегнув к кораблю, оставила миру семя рода.",
+        "NEO": "Et jadis, alors que les géants orgueilleux périssaient, l’espérance de l’univers échappa sur une barque, et, gouvernée par votre main, laissa au monde la semence d’une postérité.",
+        "NAB": "For of old, when the proud giants were being destroyed, the hope of the universe, who took refuge on a raft, left to the world a future for his race, under the guidance of your hand.",
+        "VAT_ES": "Así, en el principio, mientras perecían los gigantes orgullosos, la esperanza del mundo se refugió en una débil embarcación, que, dirigida por tu mano, dejó al futuro el germen de nuevas generaciones.",
+        "CEI": "Anche in principio, mentre perivano giganti superbi, la speranza del mondo, rifugiatasi in una barca, lasciò al mondo la semenza di nuove generazioni, grazie alla tua mano che la guidava."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "εὐλόγηται γὰρ ξύλον δι’ οὗ γίνεται δικαιοσύνη·",
+        "VUL": "Benedictum est enim lignum per quod fit justitia ;/",
+        "SYN": "Благословенно дерево, чрез которое бывает правда!",
+        "NEO": "Car béni est le bois qui sert à un juste usage.",
+        "NAB": "For blest is the wood through which justice comes about;",
+        "VAT_ES": "Bendita la madera convertida en instrumento de justicia,",
+        "CEI": "È benedetto il legno con cui si compie un'opera giusta,"
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "τὸ χειροποίητον δέ, ἐπικατάρατον αὐτὸ καὶ ὁ ποιήσας αὐτό, ὅτι ὁ μὲν ἠργάζετο, τὸ δὲ φθαρτὸν θεὸς ὠνομάσθη.",
+        "VUL": "per manus autem quod fit idolum,/ maledictum est et ipsum, et qui fecit illud :/ quia ille quidem operatus est,/ illud autem cum esset fragile, deus cognominatus est./",
+        "SYN": "А это рукотворенное проклято и само, и сделавший его - за то, что сделал; а это тленное названо богом.",
+        "NEO": "Mais l’idole, œuvre de la main des hommes, est maudite, elle et son auteur : celui-ci parce qu’il l’a faite, celle-là parce qu’étant périssable, elle est appelée dieu ;",
+        "NAB": "but the handmade idol is accursed, and its maker as well: he for having produced it, and it, because though corruptible, it was termed a god.",
+        "VAT_ES": "pero maldito el ídolo hecho por manos humanas, tanto él como su autor: este por haberlo fabricado y aquel porque, siendo corruptible, fue llamado dios.",
+        "CEI": "ma maledetto l'idolo opera di mani e chi lo ha fatto; questi perché lo ha lavorato, quello perché, corruttibile, è detto dio."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν ἴσῳ γὰρ μισητὰ θεῷ καὶ ὁ ἀσεβῶν καὶ ἡ ἀσέβεια αὐτοῦ·",
+        "VUL": "Similiter autem odio sunt Deo impius et impietas ejus ;/",
+        "SYN": "Ибо равно ненавистны Богу и нечестивец и нечестие его;",
+        "NEO": "car Dieu hait également l’impie et son impiété,",
+        "NAB": "Equally odious to God are the evildoer and his evil deed;",
+        "VAT_ES": "Porque Dios detesta igualmente al impío y su impiedad,",
+        "CEI": "Perché sono ugualmente in odio a Dio l'empio e la sua empietà;"
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ γὰρ τὸ πραχθὲν σὺν τῷ δράσαντι κολασθήσεται.",
+        "VUL": "etenim quod factum est, cum illo qui fecit tormenta patietur./",
+        "SYN": "и сделанное вместе со сделавшим будет наказано.",
+        "NEO": "et l’œuvre et l’ouvrier seront pareillement châtiés.",
+        "NAB": "and the thing made shall be punished with its contriver.",
+        "VAT_ES": "y el objeto fabricado será castigado junto con su autor.",
+        "CEI": "l'opera e l'artefice saranno ugualmente puniti."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "διὰ τοῦτο καὶ ἐν εἰδώλοις ἐθνῶν ἐπισκοπὴ ἔσται, ὅτι ἐν κτίσματι θεοῦ εἰς βδέλυγμα ἐγενήθησαν καὶ εἰς σκάνδαλα ψυχαῖς ἀνθρώπων καὶ εἰς παγίδα ποσὶν ἀφρόνων.",
+        "VUL": "Propter hoc et in idolis nationum non erit respectus,/ quoniam creaturæ Dei in odium factæ sunt,/ et in tentationem animabus hominum,/ et in muscipulam pedibus insipientium./",
+        "SYN": "Посему и на идолов языческих будет суд, так как они среди создания Божия сделались мерзостью, соблазном душ человеческих и сетью ногам неразумных.",
+        "NEO": "C’est pourquoi les idoles des nations seront visitées, parce que, créatures de Dieu, elles sont devenues une abomination, un scandale pour les âmes des hommes, un piège pour les pieds des insensés.",
+        "NAB": "Therefore upon even the idols of the nations shall a visitation come, since they have become abominable amid God's works, Snares for the souls of men and a trap for the feet of the senseless.",
+        "VAT_ES": "Por eso también serán juzgados los ídolos de las naciones, ya que, entre las criaturas de Dios, se convirtieron en una abominación, en motivo de escándalo para las almas de los hombres y en una trampa para los pies de los insensatos.",
+        "CEI": "Perciò ci sarà un castigo anche per gli idoli dei pagani, perché fra le creature di Dio son divenuti un abominio, e scandalo per le anime degli uomini, laccio per i piedi degli stolti."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "Ἀρχὴ γὰρ πορνείας ἐπίνοια εἰδώλων, εὑρέσεις δὲ αὐτῶν φθορὰ ζωῆς.",
+        "VUL": "Initium enim fornicationis est exquisitio idolorum,/ et adinventio illorum corruptio vitæ est :/",
+        "SYN": "Ибо вымысл идолов - начало блуда, и изобретение их - растление жизни.",
+        "NEO": "L’idée de faire des idoles fut le principe de la fornication, et leur invention a amené la perte de la vie.",
+        "NAB": "For the source of wantoness is the devising of idols; and their invention was a corruption of life.",
+        "VAT_ES": "La invención de los ídolos es el origen de la fornicación, y su descubrimiento, la corrupción de la vida.",
+        "CEI": "L'invenzione degli idoli fu l'inizio della prostituzione, la loro scoperta portò la corruzione nella vita."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "οὔτε γὰρ ἦν ἀπ’ ἀρχῆς, οὔτε εἰς τὸν αἰῶνα ἔσται·",
+        "VUL": "neque enim erant ab initio,/ neque erunt in perpetuum./",
+        "SYN": "Не было их вначале, и не вовеки они будут.",
+        "NEO": "Il n’y en avait pas à l’origine et il n’y en aura pas toujours.",
+        "NAB": "For in the beginning they were not, nor shall they continue forever;",
+        "VAT_ES": "Ellos no existían al principio ni existirán para siempre,",
+        "CEI": "Essi non esistevano al principio né mai esisteranno."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "κενοδοξίᾳ γὰρ ἀνθρώπων εἰσῆλθεν εἰς κόσμον, καὶ διὰ τοῦτο σύντομον αὐτῶν τέλος ἐπενοήθη.",
+        "VUL": "Supervacuitas enim hominum hæc advenit in orbem terrarum,/ et ideo brevis illorum finis est inventus.]",
+        "SYN": "Они вошли в мир по человеческому тщеславию, и потому близкий сужден им конец.",
+        "NEO": "C’est la vanité des hommes qui les a introduites dans le monde ; aussi leur fin prochaine est-elle arrêtée dans la pensée divine.",
+        "NAB": "for by the vanity of men they came into the world, and therefore a sudden end is devised for them.",
+        "VAT_ES": "sino que entraron en el mundo por la superstición humana: por eso les está reservado un rápido fin.",
+        "CEI": "Entrarono nel mondo per la vanità dell'uomo, per questo è stata decretata per loro una rapida fine."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀώρῳ γὰρ πένθει τρυχόμενος πατὴρ τοῦ ταχέως ἀφαιρεθέντος τέκνου εἰκόνα ποιήσας τὸν τότε νεκρὸν ἄνθρωπον νῦν ὡς θεὸν ἐτίμησεν, καὶ παρέδωκεν τοῖς ὑποχειρίοις μυστήρια καὶ τελετάς·",
+        "VUL": "[Acerbo enim luctu dolens pater,/ cito sibi rapti filii fecit imaginem ;/ et illum qui tunc quasi homo mortuus fuerat,/ nunc tamquam deum colere cpit,/ et constituit inter servos suos sacra et sacrificia./",
+        "SYN": "Отец, терзающийся горькою скорбью о рано умершем сыне, сделав изображение его, как уже мертвого человека, затем стал почитать его, как бога, и передал подвластным тайны и жертвоприношения.",
+        "NEO": "Un père accablé par une douleur prématurée a façonné l’image d’un fils qui lui a été trop tôt enlevé ; et cet enfant qui était mort, il s’est mis à l’honorer comme un dieu, et il a institué parmi les gens de sa maison des rites pieux et des cérémonies.",
+        "NAB": "For a father, afflicted with untimely mourning, made an image of the child so quickly taken from him, And now honored as a god what was formerly a dead man and handed down to his subjects mysteries and sacrifices.",
+        "VAT_ES": "Un padre, afligido por un duelo prematuro, encarga una imagen de su hijo tan pronto arrebatado, y al que antes no era más que un cadáver, ahora lo honra como a un dios y transmite a los suyos misterios y ritos,",
+        "CEI": "Un padre, consumato da un lutto prematuro, ordinò un'immagine di quel suo figlio così presto rapito, e onorò come un dio chi poco prima era solo un defunto ordinò ai suoi dipendenti riti misterici e di iniziazione."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "εἶτα ἐν χρόνῳ κρατυνθὲν τὸ ἀσεβὲς ἔθος ὡς νόμος ἐφυλάχθη, καὶ τυράννων ἐπιταγαῖς ἐθρησκεύετο τὰ γλυπτά·",
+        "VUL": "Deinde interveniente tempore, convalescente iniqua consuetudine,/ hic error tamquam lex custoditus est,/ et tyrannorum imperio colebantur figmenta./",
+        "SYN": "Потом утвердившийся временем этот нечестивый обычай соблюдаем был, как закон, и по повелениям властителей изваяние почитаемо было, как божество.",
+        "NEO": "Puis, cette coutume impie, s’affermissant avec le temps, fut observée comme une loi, et, sur l’ordre des princes, on adora les statues.",
+        "NAB": "Then, in time, the impious practice gained strength and was observed as law, and graven things were worshiped by princely decrees.",
+        "VAT_ES": "Luego, con el tiempo, esta impía costumbre es observada como ley.",
+        "CEI": "Poi l'empia usanza, rafforzatasi con il tempo, fu osservata come una legge."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "οὓς ἐν ὄψει μὴ δυνάμενοι τιμᾷν ἄνθρωποι διὰ τὸ μακρὰν οἰκεῖν, τὴν πόρρωθεν ὄψιν ἀνατυπωσάμενοι, ἐμφανῆ εἰκόνα τοῦ τιμωμένου βασιλέως ἐποίησαν, ἵνα τὸν ἀπόντα ὡς παρόντα κολακεύωσιν διὰ τῆς σπουδῆς.",
+        "VUL": "Et hos quos in palam homines honorare non poterant/ propter hoc quod longe essent,/ e longinquo figura eorum allata,/ evidentem imaginem regis quem honorare volebant fecerunt,/ ut illum qui aberat, tamquam præsentem colerent sua sollicitudine./",
+        "SYN": "Кого в лицо люди не могли почитать по отдаленности жительства, того отдаленное лицо они изображали: делали видимый образ почитаемого царя, дабы этим усердием польстить отсутствующему, как бы присутствующему.",
+        "NEO": "Quand on ne pouvait les honorer en face, parce qu’ils habitaient trop loin, on se représentait leur lointaine figure, et l’on façonnait une image visible du roi vénéré, afin de rendre à l’absent des hommages aussi empressés que s’il eût été présent.",
+        "NAB": "Men who lived so far away that they could not honor him in his presence copied the appearance of the distant king And made a public image of him they wished to honor, out of zeal to flatter him when absent, as though present.",
+        "VAT_ES": "Asimismo, por orden de los soberanos, se rendía culto a las estatuas: como no se los podía honrar en persona, a causa de la distancia, reprodujeron esa figura lejana, fabricando una imagen visible del rey que veneraban; así se adulaba con fervor al ausente como si estuviera presente.",
+        "CEI": "Le statue si adoravano anche per ordine dei sovrani: i sudditi, non potendo onorarli di persona a distanza, riprodotte con arte le sembianze lontane, fecero un'immagine visibile del re venerato, per adulare con zelo l'assente, quasi fosse presente."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "εἰς ἐπίτασιν δὲ θρησκείας καὶ τοὺς ἀγνοοῦντας ἡ τοῦ τεχνίτου προετρέψατο φιλοτιμία.",
+        "VUL": "Provexit autem ad horum culturam/ et hos qui ignorabant artificis eximia diligentia./",
+        "SYN": "К усилению же почитания и от незнающих поощряло тщание художника,",
+        "NEO": "Et, pour le succès de la superstition, ceux qui ne le connaissaient pas y furent amenés par l’ambition de l’artiste.",
+        "NAB": "And to promote this observance among those to whom it was strange, the artisan's ambition provided a stimulus.",
+        "VAT_ES": "La ambición del artista contribuyó a extender este culto, atrayendo incluso a los que ni siquiera conocían al rey,",
+        "CEI": "All'estensione del culto anche presso quanti non lo conoscevano, spinse l'ambizione dell'artista."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "⸂⸆⸃ ὁ μὲν γὰρ τάχα κρατοῦντι βουλόμενος ἀρέσαι ἐξεβιάσατο τῇ τέχνῃ τὴν ὁμοιότητα ἐπὶ τὸ κάλλιον·",
+        "VUL": "Ille enim, volens placere illi qui se assumpsit,/ elaboravit arte sua ut similitudinem in melius figuraret./",
+        "SYN": "ибо он, желая, может быть, угодить властителю, постарался искусством сделать подобие покрасивее;",
+        "NEO": "Celui-ci, en effet, désireux de plaire au maître puissant, épuisa tout son art à embellir le portrait.",
+        "NAB": "For he, mayhap in his determination to please the ruler, labored over the likeness to the best of his skill;",
+        "VAT_ES": "porque aquel, deseoso sin duda de complacer al soberano, empleó todo su arte para hacerlo más hermoso de lo que era;",
+        "CEI": "Questi infatti, desideroso di piacere al potente, si sforzò con l'arte di renderne più bella l'immagine;"
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +341,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "τὸ δὲ πλῆθος ἐφελκόμενον διὰ τὸ εὔχαρι τῆς ἐργασίας τὸν πρὸ ὀλίγου τιμηθέντα ἄνθρωπον νῦν σέβασμα ἐλογίσαντο.",
+        "VUL": "Multitudo autem hominum, abducta per speciem operis,/ eum qui ante tempus tamquam homo honoratus fuerat,/ nunc deum æstimaverunt./",
+        "SYN": "а народ, увлеченный красотою отделки, незадолго пред тем почитаемого, как человека, признал теперь божеством.",
+        "NEO": "Et la foule des hommes, séduite par l’élégance de l’œuvre, regarda comme un dieu celui qui naguère était honoré comme un homme.",
+        "NAB": "And the masses, drawn by the charm of the workmanship, soon thought he should be worshiped who shortly before was honored as a man.",
+        "VAT_ES": "y la gente, seducida por el encanto de la obra, convirtió en objeto de adoración al que poco antes honraba como a un hombre.",
+        "CEI": "il popolo, attratto dalla leggiadria dell'opera, considerò oggetto di culto colui che poco prima onorava come uomo."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +358,15 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ τοῦτο ἐγένετο τῷ βίῳ εἰς ἔνεδρον, ὅτι ἢ συμφορᾷ ἢ τυραννίδι δουλεύσαντες ἄνθρωποι τὸ ἀκοινώνητον ὄνομα λίθοις καὶ ξύλοις περιέθεσαν.",
+        "VUL": "Et hæc fuit vitæ humanæ deceptio,/ quoniam aut affectui aut regibus deservientes homines,/ incommunicabile nomen lapidibus et lignis imposuerunt.]",
+        "SYN": "И это было соблазном для людей, потому что они, покоряясь или несчастью, или тиранству, несообщимое Имя прилагали к камням и деревам.",
+        "NEO": "Ce fut un piège pour les vivants que les hommes, sous l’influence de l’infortune ou de la tyrannie, eussent donné à la pierre ou au bois le nom incommunicable.",
+        "NAB": "And this became a snare for mankind, that men enslaved to either grief or tyranny conferred the incommunicable Name on stocks and stones.",
+        "VAT_ES": "Y esto resultó una acechanza para los vivientes, ya que los hombres, víctimas del infortunio o de la tiranía, atribuyeron a piedras y maderas el Nombre incomunicable.",
+        "CEI": "Ciò divenne un'insidia ai viventi, perché gli uomini, vittime della disgrazia o della tirannide, imposero a pietre o a legni un nome incomunicabile."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +375,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "Εἶτ’ οὐκ ἤρκεσεν τὸ πλανᾶσθαι περὶ τὴν τοῦ θεοῦ γνῶσιν, ἀλλὰ καὶ μεγάλῳ ζῶντες ἀγνοίας πολέμῳ τὰ τοσαῦτα κακὰ εἰρήνην προσαγορεύουσιν.",
+        "VUL": "[Et non suffecerat errasse eos circa Dei scientiam,/ sed et in magno viventes inscientiæ bello,/ tot et tam magna mala pacem appellant./",
+        "SYN": "Потом не довольно было для них заблуждаться в познании о Боге, но они, живя в великой борьбе невежества, такое великое зло называют миром.",
+        "NEO": "Bientôt ce ne fut pas assez pour eux d’errer dans la notion de Dieu ; vivant dans un état de lutte violente, par suite de leur ignorance, ils appelaient du nom de paix de tels maux.",
+        "NAB": "Then it was not enough for them to err in their knowledge of God; but even though they live in a great war of ignorance, they call such evils peace.",
+        "VAT_ES": "Pero no les bastó equivocarse en el conocimiento de Dios, sino que, debatiéndose en la tremenda lucha provocada por la ignorancia, ellos dan a tantos males el nombre de paz.",
+        "CEI": "Poi non bastò loro sbagliare circa la conoscenza di Dio; essi, pur vivendo in una grande guerra d'ignoranza, danno a sì grandi mali il nome di pace."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +392,15 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "LXX": "ἢ γὰρ τεκνοφόνους τελετὰς ἢ κρύφια μυστήρια ἢ ἐμμανεῖς ἐξάλλων θεσμῶν κώμους ἄγοντες,",
+        "VUL": "Aut enim filios suos sacrificantes,/ aut obscura sacrificia facientes,/ aut insaniæ plenas vigilias habentes,/",
+        "SYN": "Совершая или детоубийственные жертвы, или скрытные тайны, или заимствованные от чужих обычаев неистовые пиршества,",
+        "NEO": "Célébrant des cérémonies homicides de leurs enfants ou des mystères clandestins, et se livrant aux débauches effrénées de rites étranges,",
+        "NAB": "For while they celebrate either child-slaying sacrifices or clandestine mysteries, or frenzied carousals in unheard-of rites,",
+        "VAT_ES": "Con sus ritos infanticidas, sus misterios ocultos y sus frenéticas orgías de costumbres extravagantes,",
+        "CEI": "Celebrando iniziazioni infanticide o misteri segreti, o banchetti orgiastici di strani riti"
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +409,15 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "LXX": "οὔτε βίους οὔτε γάμους καθαροὺς ἔτι φυλάσσουσιν, ἕτερος δ’ ἕτερον ἢ λοχῶν ἀναιρεῖ, ἢ νοθεύων ὀδυνᾷ.",
+        "VUL": "neque vitam, neque nuptias mundas jam custodiunt :/ sed alius alium per invidiam occidit,/ aut adulterans contristat,/",
+        "SYN": "они не берегут ни жизни, ни чистых браков, но один другого или коварством убивает, или прелюбодейством обижает.",
+        "NEO": "ils n’ont plus gardé de pudeur ni dans leur vie, ni dans leurs mariages. L’un tue l’autre par la trahison, ou l’outrage par l’adultère.",
+        "NAB": "They no longer safeguard either lives or pure wedlock; but each either waylays and kills his neighbor, or aggrieves him by adultery.",
+        "VAT_ES": "ya no conservan puros, ni la vida ni el matrimonio; uno elimina al otro a traición o lo aflige por el adulterio.",
+        "CEI": "non conservano più pure né vita né nozze e uno uccide l'altro a tradimento o l'affligge con l'adulterio."
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +426,15 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "LXX": "πάντα δ’ ἐπιμὶξ ἔχει αἷμα καὶ φόνος, κλοπὴ καὶ δόλος, φθορά, ἀπιστία, τάραχος, ἐπιορκία, θόρυβος ἀγαθῶν,",
+        "VUL": "et omnia commista sunt : sanguis, homicidium,/ furtum et fictio, corruptio et infidelitas,/ turbatio et perjurium, tumultus bonorum,/",
+        "SYN": "Всеми же без различия обладают кровь и убийство, хищение и коварство, растление, вероломство, мятеж, клятвопреступление, расхищение имуществ,",
+        "NEO": "C’est partout un mélange de sang et de meurtre, de vol et de tromperie, de corruption et d’infidélité, de révolte et de parjure,",
+        "NAB": "And all is confusion-blood and murder, theft and guile, corruption, faithlessness, turmoil, perjury,",
+        "VAT_ES": "En todas partes reina el caos: sangre y muerte, robo y fraude, corrupción, deslealtad, agitación, perjurio,",
+        "CEI": "Tutto è una grande confusione: sangue e omicidio, furto e inganno, corruzione, slealtà, tumulto, spergiuro;"
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +443,15 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "LXX": "χάριτος ἀμνησία, ψυχῶν μιασμός, γενέσεως ἐναλλαγή, γάμων ἀταξία, μοιχεία καὶ ἀσέλγεια.",
+        "VUL": "Dei immemoratio, animarum inquinatio,/ nativitatis immutatio, nuptiarum inconstantia,/ inordinatio mchiæ et impudicitiæ./",
+        "SYN": "забвение благодарности, осквернение душ, превращение полов, бесчиние браков, прелюбодеяние и распутство.",
+        "NEO": "de persécution des gens de bien, d’oubli des bienfaits, de souillure des âmes, de crimes contre nature, d’instabilité dans les unions, d’adultère et d’impudicité.",
+        "NAB": "Disturbance of good men, neglect of gratitude, besmirching of souls, unnatural lust, disorder in marriage, adultery and shamelessness.",
+        "VAT_ES": "vejación de los buenos, olvido de los beneficios, contaminación de las almas, perversión sexual, desorden en el matrimonio, adulterio y libertinaje.",
+        "CEI": "confusione dei buoni, ingratitudine per i favori, corruzione di anime, perversione sessuale, disordini matrimoniali, adulterio e dissolutezza."
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +460,15 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "LXX": "ἡ γὰρ τῶν ἀνωνύμων εἰδώλων θρησκεία παντὸς ἀρχὴ κακοῦ καὶ αἰτία καὶ πέρας ἐστίν·",
+        "VUL": "Infandorum enim idolorum cultura/ omnis mali causa est, et initium et finis./",
+        "SYN": "Служение идолам, недостойным именования, есть начало и причина, и конец всякого зла,",
+        "NEO": "Car le culte des idoles sans nom est le principe, la cause et la fin de tout mal.",
+        "NAB": "For the worship of infamous idols is the reason and source and extremity of all evil.",
+        "VAT_ES": "Porque el culto de los ídolos sin nombre es principio, causa y fin de todo mal,",
+        "CEI": "L'adorazione di idoli senza nome è principio, causa e fine di ogni male."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +477,15 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "LXX": "ἢ γὰρ εὐφραινόμενοι μεμήνασιν, ἢ προφητεύουσιν ψευδῆ, ἢ ζῶσιν ἀδίκως, ἢ ἐπιορκοῦσιν ταχέως·",
+        "VUL": "Aut enim dum lætantur insaniunt,/ aut certe vaticinantur falsa,/ aut vivunt injuste, aut pejerant cito./",
+        "SYN": "ибо они или, веселясь, неистовствуют, или прорицают ложь, или живут беззаконно, или скоро нарушают клятву.",
+        "NEO": "Leurs divertissements sont de folles joies, et leurs oracles, des mensonges ; ils vivent dans l’injustice et se parjurent sans scrupule.",
+        "NAB": "For they either go mad with enjoyment, or prophesy lies, or live lawlessly or lightly forswear themselves.",
+        "VAT_ES": "sea que se diviertan hasta el delirio o pronuncien falsos vaticinios, sea que vivan en la injusticia o perjuren con toda tranquilidad;",
+        "CEI": "Gli idolatri infatti o delirano nelle orge o sentenziano oracoli falsi o vivono da iniqui o spergiurano con facilità."
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +494,15 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀψύχοις γὰρ πεποιθότες εἰδώλοις κακῶς ὀμόσαντες ἀδικηθῆναι οὐ προσδέχονται.",
+        "VUL": "Dum enim confidunt in idolis quæ sine anima sunt,/ male jurantes noceri se non sperant./",
+        "SYN": "Надеясь на бездушных идолов, они не думают быть наказанными за то, что несправедливо клянутся.",
+        "NEO": "Comme ils mettent leur confiance en des idoles sans vie, ils n’attendent aucun préjudice de leurs parjures.",
+        "NAB": "For as their trust is in soulless idols, they expect no harm when they have sworn falsely.",
+        "VAT_ES": "y como ellos ponen su confianza en ídolos sin vida, no esperan ningún daño de sus falsos juramentos.",
+        "CEI": "Ponendo fiducia in idoli inanimati non si aspettano un castigo per avere giurato il falso."
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +511,15 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀμφότερα δὲ αὐτοὺς μετελεύσεται τὰ δίκαια, ὅτι κακῶς ἐφρόνησαν περὶ θεοῦ προσχόντες εἰδώλοις, καὶ ἀδίκως ὤμοσαν ἐν δόλῳ καταφρονήσαντες ὁσιότητος.",
+        "VUL": "Utraque ergo illis evenient digne,/ quoniam male senserunt de Deo, attendentes idolis,/ et juraverunt injuste,/ in dolo contemnentes justitiam./",
+        "SYN": "Но за то и другое придет на них осуждение, и за то, что нечестиво мыслили о Боге, обращаясь к идолам, и за то, что ложно клялись, коварно презирая святое.",
+        "NEO": "Mais un juste châtiment les frappera pour ce double crime : parce que, s’attachant aux idoles, ils ont eu sur Dieu des pensées perverses, et parce qu’ils ont fait par fourberie des serments contre la justice, au mépris des plus saintes lois.",
+        "NAB": "But on both counts shall justice overtake them: because they thought ill of God and devoted themselves to idols, and because they deliberately swore false oaths, despising piety.",
+        "VAT_ES": "Pero recibirán su merecido por un doble motivo: porque, al entregarse a los ídolos, se han hecho una falsa idea de Dios, y porque han jurado injusta y falsamente, menospreciando la santidad.",
+        "CEI": "Ma, per l'uno e per l'altro motivo, li raggiungerà la giustizia, perché concepirono un'idea falsa di Dio, rivolgendosi agli idoli, e perché spergiurarono con frode, disprezzando la santità."
+      }
     },
     "31": {
       "seq": 31,
@@ -288,7 +528,15 @@
         "VUL": 31,
         "LXX": 31
       },
-      "text": {}
+      "text": {
+        "LXX": "οὐ γὰρ ἡ τῶν ὀμνυμένων δύναμις, ἀλλ’ ἡ τῶν ἁμαρτανόντων δίκη ἐπεξέρχεται ἀεὶ τὴν τῶν ἀδίκων παράβασιν·",
+        "VUL": "Non enim juratorum virtus,/ sed peccantium pna,/ perambulat semper injustorum prævaricationem.]",
+        "SYN": "Ибо не сила тех, которыми они клянутся, но суд над согрешающими следует всегда за преступлением неправедных.",
+        "NEO": "Ce n’est pas la puissance des idoles par lesquelles ils ont juré, c’est le châtiment dû aux pécheurs qui atteint toujours la prévarication des impies.",
+        "NAB": "For not the might of those that are sworn by but the retribution of sinners ever follows upon the transgression of the wicked.",
+        "VAT_ES": "Porque no es el poder de aquellos por quienes se jura, sino el justo castigo reservado a los pecadores, lo que recae siempre sobre la transgresión de los injustos.",
+        "CEI": "Infatti non la potenza di coloro per i quali si giura, ma il castigo dovuto ai peccatori persegue sempre la trasgressione degli ingiusti."
+      }
     }
   }
 }

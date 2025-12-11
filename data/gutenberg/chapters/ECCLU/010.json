@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "Κριτὴς σοφὸς παιδεύσει τὸν λαὸν αὐτοῦ, καὶ ἡγεμονία συνετοῦ τεταγμένη ἔσται.",
+        "VUL": "[Judex sapiens judicabit populum suum,/ et principatus sensati stabilis erit./",
+        "SYN": "Мудрый правитель научит народ свой, и правление разумного будет благоустроено.",
+        "NEO": "Le prince sage tient son peuple dans la discipline, et le gouvernement de l’homme sensé est bien réglé.",
+        "NAB": "A wise magistrate lends stability to his people, and the government of a prudent man is well ordered.",
+        "VAT_ES": "Un gobernante sabio educa a su pueblo y la autoridad del hombre inteligente se ejerce con orden.",
+        "CEI": "Un governatore saggio educa il suo popolo, l'autorità di un uomo assennato sarà ben ordinata."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "κατὰ τὸν κριτὴν τοῦ λαοῦ αὐτοῦ οὕτως καὶ οἱ λειτουργοὶ αὐτοῦ, καὶ κατὰ τὸν ἡγούμενον τῆς πόλεως πάντες οἱ κατοικοῦντες αὐτήν.",
+        "VUL": "Secundum judicem populi, sic et ministri ejus :/ et qualis rector est civitatis, tales et inhabitantes in ea./",
+        "SYN": "Каков правитель народа, таковы и служащие при нем; и каков начальствующий над городом, таковы и все живущие в нем.",
+        "NEO": "Tel le chef du peuple, tels ses ministres ; et tel le gouvernement de la ville, tels tous ses habitants.",
+        "NAB": "As the people's judge, so are his ministers; as the head of a city, its inhabitants.",
+        "VAT_ES": "Como el gobernante de un pueblo, así son sus ministros, y como el jefe de la ciudad, así son sus habitantes.",
+        "CEI": "Quale il governatore del popolo, tali i suoi ministri; quale il capo di una città, tali tutti gli abitanti."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "βασιλεὺς ἀπαίδευτος ἀπολεῖ τὸν λαὸν αὐτοῦ, καὶ πόλις οἰκισθήσεται ἐν συνέσει δυναστῶν.",
+        "VUL": "Rex insipiens perdet populum suum :/ et civitates inhabitabuntur per sensum potentium./",
+        "SYN": "Царь ненаученный погубит народ свой, а при благоразумии сильных устроится город.",
+        "NEO": "Un roi ignorant perd son peuple, mais une ville prospère par l’intelligence des chefs.",
+        "NAB": "A wanton king destroys his people, but a city grows through the wisdom of its princes.",
+        "VAT_ES": "Un rey ignorante es la ruina de su pueblo y una ciudad prospera por la inteligencia de los príncipes.",
+        "CEI": "Un re senza formazione rovinerà il suo popolo; una città prospererà per il senno dei capi."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν χειρὶ Κυρίου ἐξουσία τῆς γῆς, καὶ τὸν χρήσιμον ἐγερεῖ εἰς καιρὸν ἐπ’ αὐτῆς.",
+        "VUL": "In manu Dei potestas terræ :/ et utilem rectorem suscitabit in tempus super illam./",
+        "SYN": "В руке Господа власть над землею, и человека потребного Он вовремя воздвигнет на ней.",
+        "NEO": "La souveraineté du pays est entre les mains du Seigneur, et il lui suscite en son temps le prince habile.",
+        "NAB": "Sovereignty over the earth is in the hand of God, who raises up on it the man of the hour;",
+        "VAT_ES": "En manos del Señor está el dominio de la tierra y, en el momento preciso, le envía el hombre que conviene.",
+        "CEI": "Il governo del mondo è nelle mani del Signore; egli vi susciterà al momento giusto l'uomo adatto."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν χειρὶ Κυρίου εὐοδία ἀνδρός, καὶ προσώπῳ γραμματέως ἐπιθήσει δόξαν αὐτοῦ.",
+        "VUL": "In manu Dei prosperitas hominis,/ et super faciem scribæ imponet honorem suum.]",
+        "SYN": "В руке Господа благоуспешность человека, и на лице книжника Он отпечатлеет славу Свою.",
+        "NEO": "Le succès d’un homme est dans la main du Seigneur ; c’est lui qui met sur le front du chef son autorité.",
+        "NAB": "Sovereignty over every man is in the hand of God, who imparts his majesty to the ruler.",
+        "VAT_ES": "En manos del Señor está el éxito de un hombre y él infundirá su gloria a la persona del legislador.",
+        "CEI": "Il successo dell'uomo è nelle mani del Signore, che investirà il magistrato della sua autorità."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "Ἐπὶ παντὶ ἀδικήματι μὴ μηνιάσῃς τῷ πλησίον, καὶ μὴ πρᾶσσε μηδὲν ἐν ἔργοις ὕβρεως.",
+        "VUL": "[Omnis injuriæ proximi ne memineris,/ et nihil agas in operibus injuriæ./",
+        "SYN": "Не гневайся за всякое оскорбление на ближнего, и никого не оскорбляй делом.",
+        "NEO": "Pour aucune injustice ne garde rancune à ton prochain, et ne fais rien au milieu des actes de violence.",
+        "NAB": "No matter the wrong, do no violence to your neighbor, and do not walk the path of arrogance.",
+        "VAT_ES": "No guardes rencor a tu prójimo por ninguna injuria ni hagas nada en un arrebato de violencia.",
+        "CEI": "Non crucciarti con il tuo prossimo per un torto qualsiasi; non far nulla in preda all'ira."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "μισητὴ ἔναντι Κυρίου καὶ ἀνθρώπων ὑπερηφανία, καὶ ἐξ ἀμφοτέρων πλημμελήσει ἄδικα.",
+        "VUL": "Odibilis coram Deo est et hominibus superbia,/ et execrabilis omnis iniquitas gentium./",
+        "SYN": "Гордость ненавистна и Господу и людям и преступна против обоих.",
+        "NEO": "L’orgueil est odieux à Dieu et aux hommes ; et pour les deux, l’injustice est une iniquité.",
+        "NAB": "Odious to the LORD and to men is arrogance, and the sin of oppression they both hate.",
+        "VAT_ES": "La soberbia es odiosa al Señor y a los hombres y la injusticia es ofensiva para ambos.",
+        "CEI": "Odiosa al Signore e agli uomini è la superbia, all'uno e agli altri è in abominio l'ingiustizia."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "βασιλεία ἀπὸ ἔθνους εἰς ἔθνος μετάγεται διὰ ἀδικίας καὶ ὕβρεις καὶ χρήματα.",
+        "VUL": "Regnum a gente in gentem transfertur propter injustitias,/ et injurias, et contumelias, et diversos dolos./",
+        "SYN": "Владычество переходит от народа к народу по причине несправедливости, обид и любостяжания.",
+        "NEO": "La domination passe d’un peuple à un autre, à cause de l’injustice, des injures et de la convoitise des richesses.",
+        "NAB": "Dominion is transferred from one people to another because of the violence of the arrogant.",
+        "VAT_ES": "La realeza pasa de una nación a otra, a causa de la injusticia, la prepotencia y la codicia.",
+        "CEI": "L'impero passa da un popolo a un altro a causa delle ingiustizie, delle violenze e delle ricchezze."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "τί ὑπερηφανεύεται γῆ καὶ σποδός; ὅτι ἐν ζωῇ ἔρριψα τὰ ἐνδόσθια αὐτοῦ.",
+        "VUL": "Avaro autem nihil est scelestius./ Quid superbit terra et cinis ?/",
+        "SYN": "Что гордится земля и пепел?",
+        "NEO": "Pourquoi s’enorgueillit ce qui est terre et poussière ? Car pendant sa vie je mets le trouble dans ses membres ;",
+        "NAB": "Why are dust and ashes proud? even during life man's body decays;",
+        "VAT_ES": "&iquest;De qué se ensoberbece el que es polvo y ceniza, si aún en vida sus entrañas están llenas de podredumbre?",
+        "CEI": "Perché mai si insuperbisce chi è terra e cenere? Anche da vivo le sue viscere sono ripugnanti."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "μακρὸν ἀρρώστημα, σκώπτει ἰατρός· καὶ βασιλεὺς σήμερον, καὶ αὔριον τελευτήσει.",
+        "VUL": "Nihil est iniquius quam amare pecuniam :/ hic enim et animam suam venalem habet,/ quoniam in vita sua projecit intima sua./",
+        "SYN": "И при жизни извергаются внутренности его.",
+        "NEO": "la maladie est longue ; le médecin se rit ; et le roi d’aujourd’hui mourra demain !",
+        "NAB": "A slight illness - the doctor jests, a king today - tomorrow he is dead.",
+        "VAT_ES": "Una larga enfermedad desconcierta al médico, y el que hoy es rey, mañana morirá.",
+        "CEI": "La malattia è lunga, il medico se la ride; chi oggi è re, domani morirà."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν γὰρ τῷ ἀποθανεῖν ἄνθρωπον κληρονομήσει ἑρπετὰ καὶ θηρία, σκώληκας.",
+        "VUL": "Omnis potentatus brevis vita ;/ languor prolixior gravat medicum./",
+        "SYN": "Продолжительною болезнью врач пренебрегает:",
+        "NEO": "Et quand l’homme est mort, il a en partage les larves, les bêtes et les vers.",
+        "NAB": "When a man dies, he inherits corruption; worms and gnats and maggots.",
+        "VAT_ES": "Cuando un hombre muere, recibe como herencia larvas, fieras y gusanos.",
+        "CEI": "Quando l'uomo muore eredita insetti, belve e vermi."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀρχὴ ὑπερηφανίας ἀνθρώπου ἀφισταμένου ἀπὸ Κυρίου, καὶ ἀπὸ τοῦ ποιήσαντος αὐτὸν ἀπέστη ἡ καρδία αὐτοῦ.",
+        "VUL": "Brevem languorem præcidit medicus :/ sic et rex hodie est, et cras morietur./",
+        "SYN": "и вот, ныне царь, а завтра умирает.",
+        "NEO": "L’orgueil commence quand l’homme se sépare du Seigneur, et quand le cœur s’éloigne de Celui qui l’a fait.",
+        "NAB": "The beginning of pride is man's stubbornness in withdrawing his heart from his Maker;",
+        "VAT_ES": "El orgullo comienza cuando el hombre se aparta del Señor y su corazón se aleja de aquel que lo creó.",
+        "CEI": "Principio della superbia umana è allontanarsi dal Signore, tenere il proprio cuore lontano da chi l'ha creato."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "ὅτι ἀρχὴ ὑπερηφανίας ἁμαρτία, καὶ ὁ κρατῶν αὐτῆς ἐξομβρήσει βδέλυγμα. διὰ τοῦτο παρεδόξασεν Κύριος τὰς ἐπαγωγάς, καὶ κατέστρεψεν εἰς τέλος αὐτούς·",
+        "VUL": "Cum enim morietur homo,/ hæreditabit serpentes, et bestias, et vermes./",
+        "SYN": "Когда же человек умрет, то наследием его становятся пресмыкающиеся, звери и черви.",
+        "NEO": "Car le commencement de l’orgueil, c’est le péché, et celui qui s’y attache répand l’abomination comme la pluie.",
+        "NAB": "For pride is the reservoir of sin, a source which runs over with vice; Because of it God sends unheard-of afflictions and brings men to utter ruin.",
+        "VAT_ES": "Porque el comienzo del orgullo es el pecado y el que persiste en él, hace llover la abominación: por eso el Señor envió calamidades imprevistas y arrasó a los soberbios hasta aniquilarlos.",
+        "CEI": "Principio della superbia infatti è il peccato; chi vi si abbandona diffonde intorno a sé l'abominio. Per questo il Signore rende incredibili i suoi castighi e lo flagella sino a finirlo."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "θρόνους ἀρχόντων καθεῖλεν ὁ κύριος, καὶ ἐκάθισεν πρᾳεῖς ἀντ’ αὐτῶν·",
+        "VUL": "Initium superbiæ hominis apostatare a Deo :/",
+        "SYN": "Начало гордости - удаление человека от Господа и отступление сердца его от Творца его;",
+        "NEO": "Le Seigneur renverse le trône des princes, et fait asseoir à leur place les hommes doux.",
+        "NAB": "The thrones of the arrogant God overturns and establishes the lowly in their stead.",
+        "VAT_ES": "El Señor derribó los tronos de los poderosos y entronizó a los mansos en lugar de ellos.",
+        "CEI": "Il Signore ha abbattuto il trono dei potenti, al loro posto ha fatto sedere gli umili."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "ῥίζας ἐθνῶν ἐξέτιλεν ὁ κύριος, καὶ ἐφύτευσεν ταπεινοὺς ἀντ’ αὐτῶν·",
+        "VUL": "quoniam ab eo qui fecit illum recessit cor ejus,/ quoniam initium omnis peccati est superbia./ Qui tenuerit illam adimplebitur maledictis,/ et subvertet eum in finem./",
+        "SYN": "ибо начало греха - гордость, и обладаемый ею изрыгает мерзость;",
+        "NEO": "Le Seigneur arrache les racines des nations, et plante les humbles à leur place.",
+        "NAB": "The roots of the proud God plucks up, to plant the humble in their place:",
+        "VAT_ES": "El Señor arrancó de raíz a las naciones y plantó a los humildes en lugar de ellos.",
+        "CEI": "Il Signore ha estirpato le radici delle nazioni, al loro posto ha piantato gli umili."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "χώρας ἐθνῶν κατέστρεψεν ὁ κύριος, καὶ ἀπώλεσεν αὐτὰς ἕως θεμελίων γῆς·",
+        "VUL": "Propterea exhonoravit Dominus conventus malorum,/ et destruxit eos usque in finem./",
+        "SYN": "и за это Господь посылает на него страшные наказания и вконец низлагает его.",
+        "NEO": "Le Seigneur bouleverse les contrées des nations, et en poursuit la destruction jusqu’aux fondements de la terre.",
+        "NAB": "He breaks down their stem to the level of the ground, then digs their roots from the earth.",
+        "VAT_ES": "El Señor arrasó los territorios de las naciones y las destruyó hasta los cimientos de la tierra.",
+        "CEI": "Il Signore ha sconvolto le regioni delle nazioni, e le ha distrutte fin dalle fondamenta della terra."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐξήρανεν ἐξ αὐτῶν καὶ ἀπώλεσεν αὐτούς, καὶ κατέπαυσεν ἀπὸ γῆς τὸ μνημόσυνον αὐτῶν.",
+        "VUL": "Sedes ducum superborum destruxit Deus,/ et sedere fecit mites pro eis./",
+        "SYN": "Господь низвергает престолы властителей и посаждает кротких на место их.",
+        "NEO": "Il en dessèche plusieurs et en extermine les habitants ; il efface leur mémoire de la terre.",
+        "NAB": "The traces of the proud God sweeps away and effaces the memory of them from the earth.",
+        "VAT_ES": "A Algunos las arrasó y las hizo desaparecer, y borró hasta su recuerdo de la tierra.",
+        "CEI": "Le ha estirpate e annientate, ha fatto scomparire dalla terra il loro ricordo."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "οὐκ ἔκτισται ἀνθρώποις ὑπερηφανία, οὐδὲ ὀργὴ θυμοῦ γεννήμασιν γυναικῶν.",
+        "VUL": "Radices gentium superbarum arefecit Deus,/ et plantavit humiles ex ipsis gentibus./",
+        "SYN": "Господь вырывает с корнем народы и насаждает, вместо них, смиренных.",
+        "NEO": "L’orgueil n’est pas fait pour l’homme, ni la colère insolente pour ceux qui naissent de la femme.",
+        "NAB": "Insolence is not allotted to a man, nor stubborn anger to one born of woman.",
+        "VAT_ES": "El orgullo no fue creado para el hombre ni el arrebato de la ira para los nacidos de mujer.",
+        "CEI": "Non è fatta per gli uomini la superbia, né per i nati di donna l'arroganza."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "σπέρμα ἔντιμον ποῖον; σπέρμα ἀνθρώπου· σπέρμα ἔντιμον ποῖον; οἱ φοβούμενοι τὸν κύριον. σπέρμα ἄτιμον ποῖον; σπέρμα ἀνθρώπου· σπέρμα ἄτιμον ποῖον; οἱ παραβαίνοντες ἐντολάς.",
+        "VUL": "Terras gentium evertit Dominus,/ et perdidit eas usque ad fundamentum./",
+        "SYN": "Господь опустошает страны народов и разрушает их до оснований земли.",
+        "NEO": "Quelle race est honorée ? La race de l’homme. Quelle race est honorée ? Ceux qui craignent le Seigneur. Quelle race est méprisée ? La race de l’homme. Quelle race est méprisée ? Ceux qui transgressent les commandements.",
+        "NAB": "Whose offspring can be in honor? Those of men. Which offspring are in honor? Those who fear God. Whose offspring can be in disgrace? Those of men. Which offspring are in disgrace? Those who transgress the commandments.",
+        "VAT_ES": "&iquest;Qué raza es digna de honor? La raza humana. &iquest;Qué raza es digna de honor? Los que temen al Señor. &iquest;Qué raza es despreciable? La raza humana. &iquest;Qué raza es despreciable? Los que no cumplen la Ley.",
+        "CEI": "Quale stirpe è onorata? La stirpe dell'uomo. Quale stirpe è onorata? Coloro che temono il Signore."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +341,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν μέσῳ ἀδελφῶν ὁ ἡγούμενος αὐτῶν ἔντιμος, καὶ οἱ φοβούμενοι Κύριον ἐν ὀφθαλμοῖς αὐτοῦ.",
+        "VUL": "Arefecit ex ipsis, et disperdidit eos,/ et cessare fecit memoriam eorum a terra./",
+        "SYN": "Он иссушает их, и погубляет людей и истребляет от земли память их.",
+        "NEO": "Au milieu de ses frères, leur chef est en honneur ; ceux qui craignent le Seigneur le sont de même à ses yeux.",
+        "NAB": "Among brethren their leader is in honor; he who fears God is in honor among his people.",
+        "VAT_ES": "Entre los hermanos se honra al que es su jefe, pero el Señor honra a los que lo temen.",
+        "CEI": "Quale stirpe è ignobile? La stirpe dell'uomo. Quale stirpe è ignobile? Coloro che trasgrediscono i comandamenti."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +358,14 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "VUL": "Memoriam superborum perdidit Deus,/ et reliquit memoriam humilium sensu./",
+        "SYN": "Гордость не сотворена для людей, ни ярость гнева - для рождающихся от жен.",
+        "NEO": "Riche, noble et pauvre, leur gloire est la crainte du Seigneur.",
+        "NAB": "Be it tenant or wayfarer, alien or pauper, his glory is the fear of the LORD.",
+        "VAT_ES": "[El comienzo de la aceptación es el temor del Señor, y el comienzo del rechazo es el endurecimiento y el orgullo.]",
+        "CEI": "Tra i fratelli è onorato il loro capo, ma coloro che temono il Signore lo sono ai suoi occhi."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +374,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "πλούσιος καὶ ἔνδοξος καὶ πτωχός, τὸ καύχημα αὐτῶν φόβος Κυρίου.",
+        "VUL": "Non est creata hominibus superbia,/ neque iracundia nationi mulierum.]",
+        "SYN": "Семя почтенное какое? - Семя человеческое. Семя почтенное какое? - Боящиеся Господа.",
+        "NEO": "Il n’est pas juste de mépriser un pauvre intelligent ; il ne convient pas d’honorer un pécheur.",
+        "NAB": "It is not just to despise a man who is wise but poor, nor proper to honor any sinner.",
+        "VAT_ES": "Para el rico, el ilustre o el pobre la única gloria es el temor del Señor.",
+        "CEI": "Uno ricco, onorato o povero, ponga il proprio vanto nel timore del Signore."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +391,15 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "LXX": "οὐ δίκαιον ἀτιμάσαι πτωχὸν συνετόν, καὶ οὐ καθῆκεν δοξάσαι ἄνδρα ἁμαρτωλόν.",
+        "VUL": "[Semen hominum honorabitur hoc, quod timet Deum :/ semen autem hoc exhonorabitur, quod præterit mandata Domini./",
+        "SYN": "Семя бесчестное какое? - Семя человеческое. Семя бесчестное какое? - Преступающие заповеди.",
+        "NEO": "Le grand, le juge et le puissant sont en honneur, mais aucun d’eux n’est plus grand que celui qui craint le Seigneur.",
+        "NAB": "The prince, the ruler, the judge are in honor; but none is greater than he who fears God.",
+        "VAT_ES": "No es justo despreciar a un pobre inteligente ni está bien glorificar a un hombre pecador.",
+        "CEI": "Non è giusto disprezzare un povero assennato e non conviene esaltare un uomo peccatore."
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +408,15 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "LXX": "μεγιστὰν καὶ κριτὴς καὶ δυνάστης δοξασθήσεται, καὶ οὐκ ἔστιν αὐτῶν τις μείζων τοῦ φοβουμένου τὸν κύριον.",
+        "VUL": "In medio fratrum rector illorum in honore :/ et qui timent Dominum erunt in oculis illius./",
+        "SYN": "Старший между братьями - в почтении у них, так и боящиеся Господа - в очах Его.",
+        "NEO": "Les hommes libres sont les serviteurs de l’esclave prudent, et l’homme intelligent ne murmurera pas.",
+        "NAB": "When free men serve a prudent slave, the wise man does not complain.",
+        "VAT_ES": "El grande, el magistrado y el poderoso son dignos de honra, pero el que teme al Señor es superior a todos ellos.",
+        "CEI": "Il nobile, il giudice e il potente sono onorati; ma nessuno di loro è più grande di chi teme il Signore."
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +425,15 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "LXX": "οἰκέτῃ σοφῷ ἐλεύθεροι λειτουργήσουσιν, καὶ ἀνὴρ ἐπιστήμων οὐ γογγύσει.",
+        "VUL": "Gloria divitum, honoratorum, et pauperum,/ timor Dei est./",
+        "SYN": "Богат ли кто и славен, или беден, похвала их - страх Господень.",
+        "NEO": "Ne raisonne pas pour faire ton ouvrage, et ne te vante pas au temps de ta détresse.",
+        "NAB": "Flaunt not your wisdom in managing your affairs, and boast not in your time of need.",
+        "VAT_ES": "Hombres libres servirán a un esclavo sabio y el hombre que entiende no lo tomará a mal.",
+        "CEI": "Uomini liberi serviranno un servo sapiente; un uomo intelligente non mormora per questo."
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +442,15 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "LXX": "Μὴ σοφίζου ποιῆσαι τὸ ἔργον σου, καὶ μὴ δοξάζου ἐν καιρῷ στενοχωρίας σου.",
+        "VUL": "Noli despicere hominem justum pauperem,/ et noli magnificare virum peccatorem divitem./",
+        "SYN": "Несправедливо - бесчестить разумного бедного, и не должно прославлять мужа грешного.",
+        "NEO": "Mieux vaut l’homme qui travaille en toutes choses, que celui qui se promène, qui se vante et manque de pain.",
+        "NAB": "Better the worker who has plenty of everything than the boaster who is without bread.",
+        "VAT_ES": "No te hagas el sabio cuando realizas tu tarea ni te gloríes en el momento de la penuria.",
+        "CEI": "Non fare il saccente nel compiere il tuo lavoro e non gloriarti al momento del bisogno."
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +459,15 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "LXX": "κρείσσων ἐργαζόμενος ἐν πᾶσιν ἢ περιπατῶν, ἢ δοξαζόμενος καὶ ἀπορῶν ἄρτων.",
+        "VUL": "Magnus, et judex, et potens est in honore :/ et non est major illo qui timet Deum./",
+        "SYN": "Почтенны вельможа, судья и властелин, но нет из них больше боящегося Господа.",
+        "NEO": "Mon fils, honore ton âme dans la douceur, et donne-lui le respect qu’elle mérite.",
+        "NAB": "My son, with humility have self-esteem; prize yourself as you deserve.",
+        "VAT_ES": "Mas vale el que trabaja y vive en la abundancia que el que anda gloriándose y no tiene qué comer.",
+        "CEI": "Meglio uno che lavora e abbonda di tutto che chi va in giro vantandosi e manca di cibo."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +476,15 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "LXX": "τέκνον, ἐν πρᾳύτητι δόξασον τὴν ψυχήν σου, καὶ δὸς αὐτῇ τιμήν κατὰ τὴν ἀξίαν αὐτῆς.",
+        "VUL": "Servo sensato liberi servient :/ et vir prudens et disciplinatus non murmurabit correptus,/ et inscius non honorabitur./",
+        "SYN": "Рабу мудрому будут служить свободные, и разумный человек, будучи наставляем им, не будет роптать.",
+        "NEO": "L’homme qui pèche contre son âme, qui le regardera comme juste ? Qui honorera celui qui déshonore sa vie ?",
+        "NAB": "Who will acquit him who condemns himself? who will honor him who discredits himself?",
+        "VAT_ES": "Hijo mío, gloríate con la debida modestia y estímate según tu justo valor.",
+        "CEI": "Figlio, con modestia glorifica l'anima tua e rendile onore secondo che merita."
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +493,15 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "LXX": "τὸν ἁμαρτάνοντα εἰς τὴν ψυχὴν αὐτοῦ τίς δικαιώσει; καὶ τίς δοξάσει τὸν ἀτιμάζοντα τὴν ζωὴν αὐτοῦ;",
+        "VUL": "Noli extollere te in faciendo opere tuo,/ et noli cunctari in tempore angustiæ./",
+        "SYN": "Не умничай много, чтобы делать дело твое, и не хвались во время нужды.",
+        "NEO": "Le pauvre est honoré pour sa science, et le riche est honoré pour sa richesse.",
+        "NAB": "The poor man is honored for his wisdom as the rich man is honored for his wealth;",
+        "VAT_ES": "&iquest;Quién justificará al que se daña a sí mismo y quién glorificará al que se desprecia?",
+        "CEI": "Chi darà ragione a uno che si dà torto da sé? Chi stimerà uno che si disprezza?"
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +510,15 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "LXX": "πτωχὸς δοξάζεται δι’ ἐπιστήμην αὐτοῦ, καὶ πλούσιος δοξάζεται διὰ τὸν πλοῦτον αὐτοῦ.",
+        "VUL": "Melior est qui operatur et abundat in omnibus,/ quam qui gloriatur et eget pane./",
+        "SYN": "Лучше тот, кто трудится и имеет во всем достаток, нежели кто праздно ходит и хвалится, но нуждается в хлебе.",
+        "NEO": "Mais celui qui est honoré dans la pauvreté, combien le serait-il davantage dans la richesse ? Et celui qui est sans honneur dans la richesse, combien plus le serait-il dans la pauvreté ?",
+        "NAB": "Honored in poverty, how much more so in wealth! Dishonored in wealth, in poverty how much the more!",
+        "VAT_ES": "Al pobre se lo honra por su saber y al rico por sus riquezas.",
+        "CEI": "Un povero è onorato per la sua scienza, un ricco è onorato per la sua ricchezza."
+      }
     },
     "31": {
       "seq": 31,
@@ -288,7 +527,13 @@
         "VUL": 31,
         "LXX": 31
       },
-      "text": {}
+      "text": {
+        "LXX": "ὁ δὲ δοξαζόμενος ἐν πτωχείᾳ, καὶ ἐν πλούτῳ ποσαχῶς; καὶ ὁ ἄδοξος ἐν πλούτῳ, ἐν πτωχείᾳ ποσαχῶς;",
+        "VUL": "Fili, in mansuetudine serva animam tuam,/ et da illi honorem secundum meritum suum./",
+        "SYN": "Сын мой! кротостью прославляй душу твою и воздавай ей честь по ее достоинству.",
+        "VAT_ES": "El que es glorificado en la pobreza, &iexcl;cuánto más lo será en la riqueza! El que es menospreciado en la riqueza, &iexcl;cuánto más lo será en la pobreza!",
+        "CEI": "Chi è onorato nella povertà, quanto più lo sarà nella ricchezza? Chi è disprezzato nella ricchezza, quanto più lo sarà nella povertà?"
+      }
     }
   }
 }

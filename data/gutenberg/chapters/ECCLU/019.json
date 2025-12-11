@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐργάτης μέθυσος οὐ πλουτισθήσεται· ὁ ἐξουθενῶν τὰ ὀλίγα κατὰ μικρὸν πεσεῖται.",
+        "VUL": "[Operarius ebriosus non locupletabitur :/ et qui spernit modica paulatim decidet./",
+        "SYN": "Работник, склонный к пьянству, не обогатится, и ни во что ставящий малое мало-помалу придет в упадок.",
+        "NEO": "L’ouvrier adonné au vin ne s’enrichira pas ; celui qui ne soigne pas le peu qu’il a tombera bientôt dans la ruine.",
+        "NAB": "He who does so grows no richer; he who wastes the little he has will be stripped bare.",
+        "VAT_ES": "Un obrero bebedor nunca se enriquecerá, y el que se descuida en lo pequeño, caerá poco a poco.",
+        "CEI": "Un operaio ubriacone non arricchirà; chi disprezza il poco cadrà presto."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "οἶνος καὶ γυναῖκες ἀποστήσουσιν συνετούς, καὶ ὁ κολλώμενος πόρναις τολμηρότερος ἔσται·",
+        "VUL": "Vinum et mulieres apostatare faciunt sapientes,/ et arguent sensatos./",
+        "SYN": "Вино и женщины развратят разумных, а связывающийся с блудницами сделается еще наглее;",
+        "NEO": "Le vin et les femmes égarent les hommes intelligents, et celui qui s’attache aux courtisanes est un imprudent.",
+        "NAB": "Wine and women make the mind giddy, and the companion of harlots becomes reckless.",
+        "VAT_ES": "Vino y mujeres extravían a los inteligentes, y el que anda con prostitutas es más temerario aún:",
+        "CEI": "Vino e donne traviano anche i saggi, ancor più temerario è chi frequenta prostitute."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "σήπη καὶ σκώληκες κληρονομήσουσιν αὐτόν, καὶ ψυχὴ τολμηρὰ ἐξαρθήσεται.",
+        "VUL": "Et qui se jungit fornicariis erit nequam :/ putredo et vermes hæreditabunt illum :/ et extolletur in exemplum majus,/ et tolletur de numero anima ejus.]",
+        "SYN": "гниль и черви наследуют его, и дерзкая душа истребится.",
+        "NEO": "Les larves et les vers en feront leur proie, et l’âme criminelle sera retranchée.",
+        "NAB": "Rottenness and worms will possess him, for contumacious desire destroys its owner.",
+        "VAT_ES": "la podredumbre y los gusanos se adueñarán de él, y el hombre temerario será extirpado.",
+        "CEI": "Tarli e vermi lo erediteranno, il temerario sarà eliminato."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "ὁ ταχὺ ἐνπιστεύων κοῦφος καρδίᾳ, καὶ ὁ ἁμαρτάνων εἰς ψυχὴν αὐτοῦ πλημμελήσει.",
+        "VUL": "[Qui credit cito levis corde est, et minorabitur :/ et qui delinquit in animam suam, insuper habebitur./",
+        "SYN": "Кто скоро доверяет, тот легкомыслен, и согрешающий грешит против души своей.",
+        "NEO": "Celui qui croit trop vite est un cœur léger, et celui qui tombe dans cette faute pèche contre son âme.",
+        "NAB": "He who lightly trusts in them has no sense, and he who strays after them sins against his own life.",
+        "VAT_ES": "El que se confía demasiado pronto, es un espíritu frívolo, y el que peca, se perjudica a sí mismo.",
+        "CEI": "Chi si fida con troppa facilità è di animo leggero, chi pecca danneggia se stesso."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "ὁ εὐφραινόμενος καρδίᾳ καταγνωσθήσεται,",
+        "VUL": "Qui gaudet iniquitate, denotabitur :/ et qui odit correptionem, minuetur vita :/ et qui odit loquacitatem, extinguit malitiam./",
+        "SYN": "Преданный сердцем удовольствиям будет осужден, а сопротивляющийся вожделениям увенчает жизнь свою.",
+        "NEO": "Celui qui prend plaisir à de sots discours sera condamné,",
+        "NAB": "He who gloats over evil will meet with evil, and he who repeats an evil report has no sense.",
+        "VAT_ES": "El que se complace en el mal será condenado,",
+        "CEI": "Chi si compiace del male sarà condannato;"
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ὁ μισῶν λαλιὰν ἐλαττονοῦται κακίᾳ.",
+        "VUL": "Qui peccat in animam suam, pnitebit :/ et qui jucundatur in malitia, denotabitur./",
+        "SYN": "Обуздывающий язык будет жить мирно, и ненавидящий болтливость уменьшит зло.",
+        "NEO": "et celui qui hait le bavardage se préserve du mal.",
+        "NAB": "Never repeat gossip, and you will not be reviled.",
+        "VAT_ES": "y el que detesta la locuacidad se libra del mal.",
+        "CEI": "chi odia la loquacità sfugge al male."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "μηδέποτε δευτερώσῃς λόγον, καὶ οὐθέν σοι οὐ μὴ ἐλαττονωθῇ·",
+        "VUL": "Ne iteres verbum nequam et durum,/ et non minoraberis./",
+        "SYN": "Никогда не повторяй слова, и ничего у тебя не убудет.",
+        "NEO": "Ne répète jamais une parole, et tu n’encourras aucun dommage.",
+        "NAB": "Tell nothing to friend or foe; if you have a fault, reveal it not,",
+        "VAT_ES": "No repitas jamás lo que has oído, y no perderás nada.",
+        "CEI": "Non riferire mai una diceria e non ne avrai alcun danno;"
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν φίλῳ καὶ ἐν ἐχθρῷ μὴ διηγοῦ, καὶ εἰ μή ἐστίν σοι ἁμαρτία, μὴ ἀποκάλυπτε·",
+        "VUL": "Amico et inimico noli narrare sensum tuum :/ et si est tibi delictum, noli denudare :/",
+        "SYN": "Ни другу ни недругу не рассказывай и, если это тебе не грех, не открывай;",
+        "NEO": "Ne la redis ni à un ami ni à un ennemi, et, à moins qu’il n’y ait faute pour toi, ne la révèle pas.",
+        "NAB": "For he who hears it will hold it against you, and in time become your enemy.",
+        "VAT_ES": "No se lo digas a nadie, sea amigo o enemigo, y a no ser que incurras en pecado, no lo reveles:",
+        "CEI": "non parlarne né all'amico né al nemico, e se puoi farlo senza colpa, non svelar nulla."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀκήκοεν γάρ σου καὶ ἐφυλάξατό σε, καὶ ἐν καιρῷ μισήσει σε.",
+        "VUL": "audiet enim te, et custodiet te,/ et quasi defendens peccatum, odiet te,/ et sic aderit tibi semper./",
+        "SYN": "ибо он выслушает тебя, и будет остерегаться тебя, и по времени возненавидит тебя.",
+        "NEO": "Car, s’il t’entend, il se gardera de toi, et, le moment venu, il se montrera ton ennemi.",
+        "NAB": "Let anything you hear die within you; be assured it will not make you burst.",
+        "VAT_ES": "te escucharían, pero se pondrían en guardia contra ti y, llegado el momento, te odiarían.",
+        "CEI": "Altrimenti chi ti ascolta diffiderà di te e all'occasione ti avrà in odio."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀκήκοας λόγον; συναποθανέτω σοι· θάρσει, οὐ μή σε ῥήξει.",
+        "VUL": "Audisti verbum adversus proximum tuum ?/ commoriatur in te, fidens quoniam non te dirumpet./",
+        "SYN": "Выслушал ты слово, пусть умрет оно с тобою: не бойся, не расторгнет оно тебя.",
+        "NEO": "As-tu entendu quelque grave propos ? Qu’il meure avec toi ! Sois sans inquiétude, il ne te fera pas éclater.",
+        "NAB": "When a fool hears something, he is in labor, like a woman giving birth to a child.",
+        "VAT_ES": "&iquest;Has oído algo? Que muera contigo; no tengas miedo, no te hará reventar.",
+        "CEI": "Hai udito una parola? Muoia con te! Stà sicuro, non ti farà scoppiare."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀπὸ προσώπου λόγου ὠδινήσει μωρός, ὡς ἀπὸ προσώπου βρέφους ἡ τίκτουσα.",
+        "VUL": "A facie verbi parturit fatuus,/ tamquam gemitus partus infantis./",
+        "SYN": "Глупый от слова терпит такую же муку, как рождающая - от младенца.",
+        "NEO": "Pour une parole à garder, l’insensé est dans les douleurs, comme la femme en travail d’enfant.",
+        "NAB": "Like an arrow lodged in a man's thigh is gossip in the breast of a fool.",
+        "VAT_ES": "El necio sufre cuando guarda un secreto, como la parturienta por su criatura.",
+        "CEI": "Per una parola lo stolto ha i dolori, come la partoriente per un bambino."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "βέλος πεπηγὸς ἐν μηρῷ σαρκός, οὕτως λόγος ἐν κοιλίᾳ μωροῦ.",
+        "VUL": "Sagitta infixa femori carnis,/ sic verbum in corde stulti./",
+        "SYN": "Что стрела, вонзенная в бедро, то слово в сердце глупого.",
+        "NEO": "Comme une flèche enfoncée dans la chair de la cuisse, ainsi est une parole dans le cœur de l’insensé.",
+        "NAB": "Admonish your friend - he may not have done it; and if he did, that he may not do it again.",
+        "VAT_ES": "Como una flecha clavada en el muslo es el secreto en el pecho del necio.",
+        "CEI": "Una freccia confitta nella carne della coscia: tale una parola in seno allo stolto."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "Ἔλεγξον φίλον, μή ποτε οὐκ ἐποίησεν, καὶ εἴ τι ἐποίησεν, μή ποτε προσθῇ·",
+        "VUL": "Corripe amicum,/ ne forte non intellexerit, et dicat : Non feci :/ aut, si fecerit, ne iterum addat facere./",
+        "SYN": "Расспроси друга твоего, может быть, не сделал он того; и если сделал, то пусть вперед не делает.",
+        "NEO": "Questionne ton ami ; peut-être n’a-t-il pas fait la chose ; et, s’il l’a faite, afin qu’il ne la fasse plus.",
+        "NAB": "Admonish your neighbor - he may not have said it; and if he did, that he may not say it again.",
+        "VAT_ES": "Aclara las cosas con tu amigo: a lo mejor no hizo nada, y si lo hizo, para que no lo vuelva a hacer.",
+        "CEI": "Interroga l'amico: forse non ha fatto nulla, e se qualcosa ha fatto, perché non continui più."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔλεγξον τὸν φίλον, μή ποτε οὐκ εἶπεν· καὶ εἰ εἴρηκεν, ἵνα μὴ δευτερώσῃ.",
+        "VUL": "Corripe proximum, ne forte non dixerit :/ et si dixerit, ne forte iteret./",
+        "SYN": "Расспроси друга, может быть, не говорил он того; и если сказал, то пусть не повторит того.",
+        "NEO": "Questionne ton ami ; peut-être n’a-t-il pas dit la chose ; et, s’il l’a dite, afin qu’il ne recommence pas.",
+        "NAB": "Admonish your friend - often it may be slander; every story you must not believe.",
+        "VAT_ES": "Aclara las cosas con tu prójimo: a lo mejor no dijo nada, y si lo dijo, para que no lo repita.",
+        "CEI": "Interroga il prossimo: forse non ha detto nulla, e se qualcosa ha detto, perché non lo ripeta."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔλεγξον φίλον, πολλάκις γὰρ γίνεται διαβολή, καὶ μὴ παντὶ λόγῳ πίστευε.",
+        "VUL": "Corripe amicum, sæpe enim fit commissio :/",
+        "SYN": "Расспроси друга, ибо часто бывает клевета.",
+        "NEO": "Questionne ton ami, car souvent il y a calomnie, et ne crois pas tout ce qu’on dit.",
+        "NAB": "Then, too, a man can slip and not mean it; who has not sinned with his tongue?",
+        "VAT_ES": "Aclara las cosas con tu amigo: con frecuencia se calumnia, y no debes fiarte de todo lo que se dice.",
+        "CEI": "Interroga l'amico, perché spesso si tratta di calunnia; non credere a ogni parola."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔστιν ὀλισθάνων καὶ οὐκ ἀπὸ ψυχῆς, καὶ τίς οὐχ ἥμαρτεν ἐν τῇ γλώσσῃ αὐτοῦ;",
+        "VUL": "et non omni verbo credas./ Est qui labitur lingua, sed non ex animo :/",
+        "SYN": "Не всякому слову верь.",
+        "NEO": "Il en est qui manquent, mais sans que le cœur y soit ; et qui est-ce qui n’a pas péché par sa langue ?",
+        "NAB": "Admonish your neighbor before you break with him; thus will you fulfill the law of the Most High.",
+        "VAT_ES": "Se puede cometer un desliz sin querer, &iquest;y quién no ha pecado con su lengua?",
+        "CEI": "C'è chi sdrucciola, ma non di proposito; e chi non ha peccato con la sua lingua?"
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔλεγξον τὸν πλησίον σου πρὶν ἢ ἀπειλῆσαι, καὶ δὸς τόπον νόμῳ Ὑψίστου.",
+        "VUL": "quis est enim qui non deliquerit in lingua sua ?]\\ [Corripe proximum antequam commineris,/",
+        "SYN": "Иной погрешает словом, но не от души; и кто не погрешал языком своим?",
+        "NEO": "Questionne ton ami avant d’en venir aux menaces, et attache-toi à observer la loi du Très-Haut.",
+        "NAB": "All wisdom is fear of the LORD; perfect wisdom is the fulfillment of the law.",
+        "VAT_ES": "Aclara las cosas con tu prójimo antes de amenazarlo, y luego da lugar a la Ley del Altísimo.",
+        "CEI": "Interroga il tuo prossimo, prima di minacciarlo; fà intervenire la legge dell'Altissimo."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,14 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "VUL": "et da locum timori Altissimi :/ quia omnis sapientia timor Dei, et in illa timere Deum,/ et in omni sapientia dispositio legis./",
+        "SYN": "Расспроси ближнего твоего прежде, нежели грозить ему, и дай место закону Всевышнего. Всякая мудрость - страх Господень, и во всякой мудрости - исполнение закона.",
+        "NEO": "Toute sagesse consiste dans la crainte du Seigneur, et dans toute sagesse est l’accomplissement de la loi.",
+        "NAB": "The knowledge of wickedness is not wisdom, nor is there prudence in the counsel of sinners.",
+        "VAT_ES": "[Comienza por temer al Señor, y él te aceptará; si tienes sabiduría, él te amará.]",
+        "CEI": "Tutta la sapienza è timore di Dio e in ogni sapienza è la pratica della legge."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +323,14 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "VUL": "Et non est sapientia nequitiæ disciplina,/ et non est cogitatus peccatorum prudentia./",
+        "SYN": "И не есть мудрость знание худого. И нет разума, где совет грешников.",
+        "NEO": "La sagesse n’est pas l’habileté à faire le mal, et la prudence ne se trouve pas dans le conseil des pécheurs.",
+        "NAB": "There is a shrewdness that is detestable, while the simple man may be free from sin.",
+        "VAT_ES": "[El conocimiento de los mandamientos del Señor es una instrucción que da vida; los que hacen lo que le agrada recogerán los frutos del árbol de la inmortalidad.]",
+        "CEI": "Non c'è sapienza nella conoscenza del male; non è mai prudenza il consiglio dei peccatori."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +339,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "Πᾶσα σοφία φόβος Κυρίου, καὶ ἐν πάσῃ σοφίᾳ ποίησις νόμου.",
+        "VUL": "Est nequitia, et in ipsa execratio,/ et est insipiens qui minuitur sapientia./",
+        "SYN": "Есть лукавство, и это мерзость; и есть неразумный, скудный мудростью.",
+        "NEO": "Il y a une habileté qui est exécrable, et il y a une folie qui n’est qu’un manque de sagesse.",
+        "NAB": "There are those with little understanding who fear God, and those of great intelligence who violate the law.",
+        "VAT_ES": "Toda sabiduría es temor del Señor y toda sabiduría entraña la práctica de la Ley.",
+        "CEI": "V'è un'abilità che è abominevole, c'è uno stolto cui manca solo la saggezza."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +356,14 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "VUL": "Melior est homo qui minuitur sapientia,/ et deficiens sensu, in timore,/ quam qui abundat sensu,/ et transgreditur legem Altissimi./",
+        "SYN": "Лучше скудный знанием, но богобоязненный, нежели богатый знанием - и преступающий закон.",
+        "NEO": "Mieux vaut celui qui a peu d’intelligence et qui craint Dieu, que l’homme qui a beaucoup de sens et qui transgresse la loi.",
+        "NAB": "There is a shrewdness keen but dishonest, which by duplicity wins a judgment.",
+        "VAT_ES": "[El servidor que dice a su señor: «No haré lo que te agrada», incluso si después lo hace, irrita a aquel que lo alimenta.]",
+        "CEI": "Meglio uno di scarsa intelligenza ma timorato, che uno molto intelligente ma trasgressore della legge."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +372,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ οὐκ ἔστιν σοφία πονηρίας ἐπιστήμη, καὶ οὐκ ἔστιν ὅπου βουλὴ ἁμαρτωλῶν φρόνησις.",
+        "VUL": "Est solertia certa, et ipsa iniqua :/",
+        "SYN": "Есть хитрость изысканная, но она беззаконна, и есть превращающий суд, чтобы произнести приговор.",
+        "NEO": "Il y a une habileté véritable, mais qui viole la justice, et il est tel qui fausse la cause pour faire rendre la sentence qu’il désire.",
+        "NAB": "There is the wicked man who is bowed in grief, but is full of guile within;",
+        "VAT_ES": "No es sabiduría saber hacer el mal y no hay prudencia en el consejo de los pecadores.",
+        "CEI": "Esiste un'abilità scaltra, ma ingiusta; c'è chi intriga per prevalere in giudizio."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +389,15 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔστιν πονηρία καὶ αὕτη βδέλυγμα, καὶ ἔστιν ἄφρων ἐλαττούμενος σοφίᾳ.",
+        "VUL": "et est qui emittit verbum certum enarrans veritatem./ Est qui nequiter humiliat se,/ et interiora ejus plena sunt dolo :/",
+        "SYN": "Есть лукавый, который ходит согнувшись, в унынии, но внутри он полон коварства.",
+        "NEO": "Il est tel méchant qui marche courbé par le chagrin, et son cœur est rempli de fraude.",
+        "NAB": "He bows his head and feigns not to hear, but when not observed, he will take advantage of you:",
+        "VAT_ES": "Hay una astucia que resulta abominable, y el que carece de sabiduría es insensato.",
+        "CEI": "C'è il malvagio curvo nella sua tristezza, ma il suo intimo è pieno di inganno;"
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +406,15 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "LXX": "κρείττων ἡττώμενος ἐν συνέσει ἔμφοβος ἢ περισσεύων ἐν φρονήσει καὶ παραβαίνων νόμον.",
+        "VUL": "et est qui se nimium submittit a multa humilitate :/ et est qui inclinat faciem suam,/ et fingit se non videre quod ignoratum est :/",
+        "SYN": "Он поник лицом и притворяется глухим, но он предварит тебя там, где и не думаешь.",
+        "NEO": "Il baisse la tête, il est sourd d’un côté, et, dès qu’il n’est pas remarqué, il prend sur toi les devants.",
+        "NAB": "Even though his lack of strength keeps him from sinning, when he finds the opportunity, he will do harm.",
+        "VAT_ES": "Es preferible el poco inteligente que teme al Señor, al muy inteligente que quebranta la Ley.",
+        "CEI": "abbassa il volto e finge di essere sordo, ma, quando non è osservato, avrà il sopravvento."
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +423,15 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔστιν πανουργία ἀκριβὴς καὶ αὕτη ἄδικος, καὶ ἔστιν διαστρέφων χάριν τοῦ ἐκφᾶναι κρίμα.",
+        "VUL": "et si ab imbecillitate virium vetetur peccare,/ si invenerit tempus malefaciendi, malefaciet./",
+        "SYN": "И если недостаток силы воспрепятствует ему повредить тебе, то он сделает тебе зло, когда найдет случай.",
+        "NEO": "Et si, par sa faiblesse, il est empêché de pécher, il fera le mal quand il en trouvera l’occasion.",
+        "NAB": "One can tell a man by his appearance; a wise man is known as such when first met.",
+        "VAT_ES": "Hay una astucia sutil, pero injusta, y hay quien usa de artimañas para hacer valer su derecho.",
+        "CEI": "E se per mancanza di forza gli è impedito di peccare, all'occasione propizia farà del male."
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +440,15 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔστιν πονηρευόμενος συνκεκυφὼς μελανίᾳ, καὶ τὰ ἐντὸς αὐτοῦ πλήρης δόλου·",
+        "VUL": "Ex visu cognoscitur vir,/ et ab occursu faciei cognoscitur sensatus./",
+        "SYN": "По виду узнается человек, и по выражению лица при встрече познается разумный.",
+        "NEO": "A son air on connaît un homme, et au visage qu’il présente on connaît le sage.",
+        "NAB": "A man's attire, his hearty laughter and his gait, proclaim him for what he is.",
+        "VAT_ES": "Hay un malvado que va encorvado por la tristeza, pero su interior está lleno de falsedad:",
+        "CEI": "Dall'aspetto si conosce l'uomo; dal volto si conosce l'uomo di senno."
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +457,14 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "LXX": "συνκύφων πρόσωπον καὶ ἑτεροκωφῶν, ὅπου οὐκ ἐπεγνώσθη προφθάσει σε·",
+        "VUL": "Amictus corporis, et risus dentium,/ et ingressus hominis, enuntiant de illo./",
+        "SYN": "Одежда и осклабление зубов и походка человека показывают свойство его.",
+        "NEO": "Le vêtement d’un homme, le rire de ses lèvres, et la démarche d’un homme révèlent ce qu’il est.",
+        "VAT_ES": "se cubre el rostro y aparenta no oír, pero si nadie lo ve, te saca ventaja.",
+        "CEI": "Il vestito di un uomo, la bocca sorridente e la sua andatura rivelano quello che è."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +473,12 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἐὰν ὑπὸ ἐλαττώματος ἰσχύος κωλυθῇ ἁμαρτεῖν, ἐὰν εὕρῃ καιρὸν κακοποιήσει.",
+        "VUL": "Est correptio mendax in ira contumeliosi,/ et est judicium quod non probatur esse bonum :/ et est tacens, et ipse est prudens.]",
+        "SYN": "Бывает обличение, но не вовремя, и бывает, что иной молчит, - и он благоразумен.",
+        "VAT_ES": "Si le falta fuerza para pecar, cuando encuentre una ocasión, te perjudicará."
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +487,10 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀπὸ ὁράσεως ἐπιγνωσθήσεται ἀνήρ, καὶ ἀπὸ ἀπαντήσεως προσώπου ἐπιγνωσθήσεται νοήμων·",
+        "VAT_ES": "Por la mirada se reconoce a un hombre, y por su aspecto, al hombre sabio."
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +499,10 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "LXX": "στολισμὸς ἀνδρὸς καὶ γέλως ὀδόντων καὶ βήματα ἀνθρώπου ἀναγγέλλει τὰ περὶ αὐτοῦ.",
+        "VAT_ES": "La vestimenta del hombre, su manera de reír y todo su porte revelan lo que él es."
+      }
     }
   }
 }

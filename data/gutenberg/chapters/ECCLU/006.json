@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἀντὶ φίλου μὴ γίνου ἐχθρός· ὄνομα γὰρ πονηρὸν αἰσχύνη, καὶ ὄνειδος κληρονομήσει· οὕτως ὁ ἁμαρτωλὸς ὁ δίγλωσσος.",
+        "VUL": "[Noli fieri pro amico inimicus proximo :/ improperium enim et contumeliam malus hæreditabit :/ et omnis peccator invidus et bilinguis.]",
+        "SYN": "И не делайся врагом из друга, ибо худое имя получает в удел стыд и позор; так - и грешник двоязычный.",
+        "NEO": "et d’ami ne deviens pas ennemi ; car le méchant aura en partage le mauvais renom, la honte et l’opprobre : tel est le pécheur à la langue double.",
+        "NAB": "Say nothing harmful, small or great; be not a foe instead of a friend; A bad name and disgrace will you acquire: \"That for the evil man with double tongue!\"",
+        "VAT_ES": "porque la mala fama heredará verg&uuml;enza y oprobio: esta es la suerte del pecador que habla con doblez",
+        "CEI": "perché un cattivo nome si attira vergogna e disprezzo; così accade al peccatore, falso nelle sue parole."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "μὴ ἐπάρῃς σεαυτὸν ἐν βουλῇ ψυχῆς σου, ἵνα μὴ διαρπαγῇ ὡς ταῦρος ἡ ψυχή σου·",
+        "VUL": "[Non te extollas in cogitatione animæ tuæ velut taurus,/ ne forte elidatur virtus tua per stultitiam :/",
+        "SYN": "Не возноси себя в помыслах души твоей, чтобы душа твоя не была растерзана, как вол:",
+        "NEO": "Ne t’élève pas toi-même par la volonté de ton âme, de peur que ton âme ne soit pillée, comme par un taureau.",
+        "NAB": "Fall not into the grip of desire, lest, like fire, it consume your strength;",
+        "VAT_ES": "No te dejes arrastrar por el capricho de tu pasión, para no ser despedazado como un toro:",
+        "CEI": "Non ti abbandonare alla tua passione, perché non ti strazi come un toro furioso;"
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "τὰ φύλλα σου καταφάγεσαι καὶ τοὺς καρπούς σου ἀπολέσεις, καὶ ἀφήσεις σεαυτὸν ὡς ξύλον ξηρόν.",
+        "VUL": "et folia tua comedat, et fructus tuos perdat,/ et relinquaris velut lignum aridum in eremo./",
+        "SYN": "листья твои ты истребишь и плоды твои погубишь, и останешься, как сухое дерево.",
+        "NEO": "Tu dévoreras ton feuillage, tu feras périr tes fruits, et tu ne laisseras de toi qu’un bois aride.",
+        "NAB": "Your leaves it will eat, your fruits destroy, and you will be left a dry tree,",
+        "VAT_ES": "devorarías tus ramas, perderías tus frutos y de convertirías en un tronco seco.",
+        "CEI": "divorerà le tue foglie e tu perderai i tuoi frutti, sì da renderti come un legno secco."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "Ψυχὴ πονηρὰ ἀπολεῖ τὸν κτησάμενον αὐτήν, καὶ ἐπίχαρμα ἐχθρῶν ποιήσει αὐτόν.",
+        "VUL": "Anima enim nequam disperdet qui se habet,/ et in gaudium inimicis dat illum,/ et deducet in sortem impiorum.]",
+        "SYN": "Душа лукавая погубит своего обладателя и сделает его посмешищем врагов.",
+        "NEO": "L’âme perverse perd celui qui la possède ; elle fait de lui la risée de ses ennemis.",
+        "NAB": "For contumacious desire destroys its owner and makes him the sport of his enemies.",
+        "VAT_ES": "Una pasión violenta pierde al que la tiene y hace que sus enemigos se rían de él.",
+        "CEI": "Una passione malvagia rovina chi la possiede e lo fa oggetto di scherno per i nemici."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "λάρυγξ γλυκὺς πληθυνεῖ φίλους αὐτοῦ, καὶ γλῶσσα εὔλαλος πληθυνεῖ εὐπροσήγορα.",
+        "VUL": "[Verbum dulce multiplicat amicos et mitigat inimicos,/ et lingua eucharis in bono homine abundat./",
+        "SYN": "Сладкие уста умножат друзей, и доброречивый язык умножит приязнь.",
+        "NEO": "Une parole douce fait beaucoup d’amis, et la langue aimable est riche d’amabilités.",
+        "NAB": "A kind mouth multiplies friends, and gracious lips prompt friendly greetings.",
+        "VAT_ES": "Las palabras dulces multiplican los amigos y un lenguaje amable favorece las buenas relaciones.",
+        "CEI": "Una bocca amabile moltiplica gli amici, un linguaggio gentile attira i saluti."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "οἱ εἰρηνεύοντές σοι ἔστωσαν πολλοί, οἱ δὲ σύμβουλοί σου εἷς ἀπὸ χιλίων.",
+        "VUL": "Multi pacifici sint tibi :/ et consiliarius sit tibi unus de mille./",
+        "SYN": "Живущих с тобою в мире да будет много, а советником твоим - один из тысячи.",
+        "NEO": "Qu’ils soient nombreux ceux qui vivent en bons rapports avec toi, mais prends conseil d’un seul entre mille.",
+        "NAB": "Let your acquaintances be many, but one in a thousand your confidant.",
+        "VAT_ES": "Que sean muchos los que te saludan, pero el que te aconseja, sea uno entre mil.",
+        "CEI": "Siano in molti coloro che vivono in pace con te, ma i tuoi consiglieri uno su mille."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "εἰ κτᾶσαι φίλον, ἐν πειρασμῷ κτῆσαι αὐτόν, καὶ μὴ ταχὺ ἐμπιστεύσῃς αὐτῷ.",
+        "VUL": "Si possides amicum, in tentatione posside eum,/ et ne facile credas ei./",
+        "SYN": "Если хочешь приобрести друга, приобретай его по испытании и не скоро вверяйся ему.",
+        "NEO": "Si tu veux acquérir un ami, acquiers-le en l’éprouvant, et ne te confie pas à lui à la légère.",
+        "NAB": "When you gain a friend, first test him, and be not too ready to trust him",
+        "VAT_ES": "Si ganas un amigo, gánalo en la prueba, y no le des confianza demasiado pronto.",
+        "CEI": "Se intendi farti un amico, mettilo alla prova; e non fidarti subito di lui."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔστιν γὰρ φίλος ἐν καιρῷ αὐτοῦ, καὶ οὐ μὴ παραμείνῃ ἐν ἡμέρᾳ θλίψεώς σου·",
+        "VUL": "Est enim amicus secundum tempus suum,/ et non permanebit in die tribulationis./",
+        "SYN": "Бывает друг в нужное для него время, и не останется с тобой в день скорби твоей;",
+        "NEO": "Car tel est ami à ses heures, qui ne le restera pas au jour de ton affliction ;",
+        "NAB": "For one sort of friend is a friend when it suits him, but he will not be with you in time of distress.",
+        "VAT_ES": "Porque hay amigos ocasionales, que dejan de serlo en el día de aflicción.",
+        "CEI": "C'è infatti chi è amico quando gli fa comodo, ma non resiste nel giorno della tua sventura."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἔστιν φίλος μετατιθέμενος εἰς ἔχθραν, καὶ μάχην ὀνειδισμοῦ σου ἀποκαλύψει·",
+        "VUL": "Et est amicus qui convertitur ad inimicitiam,/ et est amicus qui odium et rixam et convitia denudabit./",
+        "SYN": "и бывает друг, который превращается во врага и откроет ссору к поношению твоему.",
+        "NEO": "tel est ami qui deviendra un ennemi, et qui révélera votre différend à ta confusion ;",
+        "NAB": "Another is a friend who becomes an enemy, and tells of the quarrel to your shame.",
+        "VAT_ES": "Hay amigos que se vuelven enemigos, y para avergonzarte, revelan el motivo de la disputa.",
+        "CEI": "C'è anche l'amico che si cambia in nemico e scoprirà a tuo disonore i vostri litigi."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἔστιν φίλος κοινωνὸς τραπεζῶν, καὶ οὐ μὴ παραμείνῃ ἐν ἡμέρᾳ θλίψεώς σου·",
+        "VUL": "Est autem amicus socius mensæ,/ et non permanebit in die necessitatis./",
+        "SYN": "Бывает другом участник в трапезе, и не останется с тобою в день скорби твоей.",
+        "NEO": "tel est ami quand il est assis à ta table, qui ne le restera pas au jour de ton malheur.",
+        "NAB": "Another is a friend, a boon companion, who will not be with you when sorrow comes.",
+        "VAT_ES": "Hay amigos que comparten tu mesa y dejan de serlo en el día de la aflicción.",
+        "CEI": "C'è l'amico compagno a tavola, ma non resiste nel giorno della tua sventura."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἐν τοῖς ἀγαθοῖς σου ἔσται ὡς σύ, καὶ ἐπὶ τοὺς οἰκέτας σου παρρησιάσεται·",
+        "VUL": "Amicus si permanserit fixus, erit tibi quasi coæqualis,/ et in domesticis tuis fiducialiter aget./",
+        "SYN": "В имении твоем он будет как ты, и дерзко будет обращаться с домочадцами твоими;",
+        "NEO": "Durant ta prospérité, il sera comme un autre toi-même, et il parlera librement avec les gens de ta maison.",
+        "NAB": "When things go well, he is your other self, and lords it over your servants;",
+        "VAT_ES": "Mientras te vaya bien, serán como tú mismo y hablarán abiertamente con tus servidores;",
+        "CEI": "Nella tua fortuna sarà come un altro te stesso, e parlerà liberamente con i tuoi familiari."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐὰν ταπεινωθῇς, ἔσται κατὰ σοῦ, καὶ ἀπὸ τοῦ προσώπου σου κρυβήσεται.",
+        "VUL": "Si humiliaverit se contra te,/ et a facie tua absconderit se,/ unanimem habebis amicitiam bonam./",
+        "SYN": "но если ты будешь унижен, он будет против тебя и скроется от лица твоего.",
+        "NEO": "Si tu tombes dans l’humiliation, il sera contre toi, et il se cachera devant toi.",
+        "NAB": "But if you are brought low, he turns against you and avoids meeting you.",
+        "VAT_ES": "pero si te va mal, se pondrán contra ti y se esconderán de tu vista.",
+        "CEI": "Ma se sarai umiliato, si ergerà contro di te e dalla tua presenza si nasconderà."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀπὸ τῶν ἐχθρῶν σου διαχωρίσθητι, καὶ ἀπὸ τῶν φίλων σου πρόσεχε.",
+        "VUL": "Ab inimicis tuis separare,/ et ab amicis tuis attende./",
+        "SYN": "Отдаляйся от врагов твоих и будь осмотрителен с друзьями твоими.",
+        "NEO": "Eloigne-toi de tes ennemis, et sois sur tes gardes avec tes amis.",
+        "NAB": "Keep away from your enemies; be on your guard with your friends.",
+        "VAT_ES": "Sepárate de tus enemigos y sé precavido con tus amigos.",
+        "CEI": "Tieniti lontano dai tuoi nemici, e dai tuoi amici guàrdati."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "φίλος πιστὸς σκέπη κραταιά· ὁ δὲ εὑρὼν αὐτόν, εὗρεν θησαυρόν.",
+        "VUL": "Amicus fidelis protectio fortis :/ qui autem invenit illum, invenit thesaurum./",
+        "SYN": "Верный друг - крепкая защита: кто нашел его, нашел сокровище.",
+        "NEO": "Un ami fidèle est une protection puissante ; celui qui le trouve a trouvé un trésor.",
+        "NAB": "A faithful friend is a sturdy shelter; he who finds one finds a treasure.",
+        "VAT_ES": "Un amigo fiel no tiene precio, no hay manera de estimar su valor.",
+        "CEI": "Un amico fedele è una protezione potente, chi lo trova, trova un tesoro."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "φίλου πιστοῦ οὐκ ἔστιν ἀντάλλαγμα, καὶ οὐκ ἔστιν σταθμὸς τῆς καλλονῆς αὐτοῦ.",
+        "VUL": "Amico fideli nulla est comparatio,/ et non est digna ponderatio auri et argenti contra bonitatem fidei illius./",
+        "SYN": "Верному другу нет цены, и нет меры доброте его.",
+        "NEO": "Rien ne vaut un ami fidèle ; aucun poids ne saurait en marquer le prix.",
+        "NAB": "A faithful friend is beyond price, no sum can balance his worth.",
+        "VAT_ES": "Un amigo fiel no tiene precio, no hay manera de estimar su valor.",
+        "CEI": "Per un amico fedele, non c'è prezzo, non c'è peso per il suo valore."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "φίλος πιστὸς φάρμακον ζωῆς, καὶ οἱ φοβούμενοι Κύριον εὑρήσουσιν αὐτόν.",
+        "VUL": "Amicus fidelis medicamentum vitæ et immortalitatis :/ et qui metuunt Dominum, invenient illum./",
+        "SYN": "Верный друг - врачевство для жизни, и боящиеся Господа найдут его.",
+        "NEO": "Un ami fidèle est un remède de vie ; ceux qui craignent le Seigneur le trouvent.",
+        "NAB": "A faithful friend is a life-saving remedy, such as he who fears God finds;",
+        "VAT_ES": "Un amigo fiel es un bálsamo de vida, que encuentran los que temen al Señor.",
+        "CEI": "Un amico fedele è un balsamo di vita, lo troveranno quanti temono il Signore."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "ὁ φοβούμενος Κύριον εὐθυνεῖ φιλίαν αὐτοῦ, ὅτι κατ’ αὐτὸν οὕτως καὶ ὁ πλησίον αὐτοῦ.",
+        "VUL": "Qui timet Deum æque habebit amicitiam bonam,/ quoniam secundum illum erit amicus illius.]",
+        "SYN": "Боящийся Господа направляет дружбу свою так, что, каков он сам, таким делается и друг его.",
+        "NEO": "Celui qui craint le Seigneur a une véritable amitié, car son ami lui est semblable.",
+        "NAB": "For he who fears God behaves accordingly, and his friend will be like himself.",
+        "VAT_ES": "El que teme al Señor encamina bien su amistad, porque como es él, así también será su amigo.",
+        "CEI": "Chi teme il Signore è costante nella sua amicizia, perché come uno è, così sarà il suo amico."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "Τέκνον, ἐκ νεότητός σου ἐπίλεξαι παιδίαν, καὶ ἕως πολιῶν εὑρήσεις σοφίαν·",
+        "VUL": "[Fili, a juventute tua excipe doctrinam,/ et usque ad canos invenies sapientiam./",
+        "SYN": "Сын мой! от юности твоей предайся учению, и до седин твоих найдешь мудрость.",
+        "NEO": "Mon fils, dès ta jeunesse adonne-toi à l’instruction, et jusqu’à tes cheveux blancs tu trouveras la sagesse.",
+        "NAB": "My son, from your youth embrace discipline; thus will you find wisdom with graying hair.",
+        "VAT_ES": "Hijo mío, desde tu juventud, busca la instrucción, y hasta en tu vejez, encontrarás la sabiduría.",
+        "CEI": "Figlio, sin dalla giovinezza medita la disciplina, conseguirai la sapienza fino alla canizie."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "ὡς ὁ ἀροτριῶν καὶ ὁ σπείρων πρόσελθε αὐτῇ, καὶ ἀνάμενε τοὺς ἀγαθοὺς καρποὺς αὐτῆς· ἐν γὰρ τῇ ἐργασίᾳ αὐτῆς ὀλίγον κοπιάσεις, καὶ ταχὺ φάγεσαι τῶν γενημάτων αὐτῆς.",
+        "VUL": "Quasi is qui arat et seminat accede ad eam,/ et sustine bonos fructus illius./",
+        "SYN": "Приступай к ней как пашущий и сеющий и ожидай добрых плодов ее:",
+        "NEO": "Approche-toi d’elle comme le laboureur et le semeur, et attends ses bons fruits. Pendant un peu de temps tu auras de la peine à la cultiver, et bientôt tu mangeras de ses fruits.",
+        "NAB": "As though plowing and sowing, draw close to her; then await her bountiful crops.",
+        "VAT_ES": "Acércate a ella como el que ara y el que siembra, y espera pacientemente sus buenos frutos: al cultivarla, te fatigarás un poco, pero muy pronto comerás de sus productos.",
+        "CEI": "Accòstati ad essa come chi ara e chi semina e attendi i suoi ottimi frutti; poiché faticherai un pò per coltivarla, ma presto mangerai dei suoi prodotti."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +341,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "ὡς ταχεῖά ἐστιν σφόδρα τοῖς ἀπαιδεύτοις, καὶ οὐκ ἐμμενεῖ ἐν αὐτῇ ἀκάρδιος·",
+        "VUL": "In opere enim ipsius exiguum laborabis,/ et cito edes de generationibus illius./",
+        "SYN": "ибо малое время потрудишься в возделывании ее, и скоро будешь есть плоды ее.",
+        "NEO": "Combien elle est escarpée pour les ignorants ! L’insensé ne lui restera pas attaché.",
+        "NAB": "For in cultivating her you will labor but little, and soon you will eat of her fruits.",
+        "VAT_ES": "&iexcl;Qué dura les parece a los ignorantes! El insensato no se mantiene fiel a ella:",
+        "CEI": "Essa è davvero aspra per gli stolti, l'uomo senza coraggio non ci resiste;"
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +358,15 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "LXX": "ὡς λίθος δοκιμασίας ἰσχυρὸς ἔσται ἐπ’ αὐτῷ, καὶ οὐ χρονιεῖ ἀπορῖψαι αὐτήν.",
+        "VUL": "Quam aspera est nimium sapientia indoctis hominibus !/ et non permanebit in illa excors./",
+        "SYN": "Для невежд она очень сурова, и неразумный не останется с нею:",
+        "NEO": "Comme une lourde pierre d’épreuve, elle pèse sur lui, et il ne tarde pas à la rejeter.",
+        "NAB": "How irksome she is to the unruly! The fool cannot abide her.",
+        "VAT_ES": "ella lo oprime como una piedra pesada y no tarda en sacársela de encima.",
+        "CEI": "per lui peserà come una pietra di prova, non tarderà a gettarla via."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +375,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "σοφία γὰρ κατὰ τὸ ὄνομα αὐτῆς ἐστιν, καὶ οὐ πολλοῖς ἐστιν φανερά.",
+        "VUL": "Quasi lapidis virtus probatio erit in illis :/ et non demorabuntur projicere illam./",
+        "SYN": "она будет на нем как тяжелый камень испытания, и он не замедлит сбросить ее.",
+        "NEO": "Car la sagesse justifie son nom : elle ne se découvre pas au grand nombre.",
+        "NAB": "She will be like a burdensome stone to test him, and he will not delay in casting her aside.",
+        "VAT_ES": "Porque la sabiduría hace honor a su nombre y no se manifiesta a muchos.",
+        "CEI": "La sapienza infatti è come dice il suo nome, ma non a molti essa è chiara."
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +392,15 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "LXX": "ἄκουσον, τέκνον, καὶ δέξαι γνώμην μου, καὶ μὴ ἀπαναίνου τὴν συμβουλίαν μου·",
+        "VUL": "Sapientia enim doctrinæ secundum nomen est ejus,/ et non est multis manifestata :/ quibus autem cognita est,/ permanet usque ad conspectum Dei./",
+        "SYN": "Премудрость соответствует имени своему, и немногим открывается.",
+        "NEO": "Ecoute, mon fils, et reçois ma pensée, et ne rejette pas mon conseil.",
+        "NAB": "For discipline is like her name, she is not accessible to many.",
+        "VAT_ES": "Escucha, hijo mío, acepta mi doctrina y no rechaces mi consejo.",
+        "CEI": "Ascolta, figlio, e accetta il mio parere; non rigettare il mio consiglio."
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +409,15 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ εἰσένεγκον τοὺς πόδας σου εἰς τὰς πέδας αὐτῆς, καὶ εἰς τὸν κλοιὸν αὐτῆς τὸν τράχηλόν σου·",
+        "VUL": "Audi, fili, et accipe consilium intellectus,/ et ne abjicias consilium meum./",
+        "SYN": "Послушай, сын мой, и прими мнение мое, и не отвергни совета моего.",
+        "NEO": "Engage ton pied dans ses entraves, et ton cou dans son collier.",
+        "NAB": "Listen, my son, and heed my advice; refuse not my counsel.",
+        "VAT_ES": "Mete tus pies en sus cepos y tu cuello en su collar.",
+        "CEI": "Introduci i tuoi piedi nei suoi ceppi, il collo nella sua catena."
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +426,15 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "LXX": "ὑπόθες τὸν ὦμόν σου καὶ βάσταξον αὐτήν, καὶ μὴ προσοχθίσῃς τοῖς δεσμοῖς αὐτῆς·",
+        "VUL": "Injice pedem tuum in compedes illius,/ et in torques illius collum tuum./",
+        "SYN": "Наложи на ноги твои путы ее и на шею твою цепь ее.",
+        "NEO": "Courbe ton épaule pour la porter, et ne t’irrite pas de ses liens.",
+        "NAB": "Put your feet into her fetters, and your neck under her yoke.",
+        "VAT_ES": "Doblega tus espaldas y carga con ella, y no te irrites por sus cadenas.",
+        "CEI": "Piega la tua spalla e portala, non disdegnare i suoi legami."
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +443,15 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν πάσῃ ψυχῇ σου πρόσελθε αὐτῇ, καὶ ἐν ὅλῃ δυνάμει σου συντήρησον τὰς ὁδοὺς αὐτῆς.",
+        "VUL": "Subjice humerum tuum, et porta illam,/ et ne acedieris vinculis ejus./",
+        "SYN": "Подставь ей плечо твое, и носи ее и не тяготись узами ее.",
+        "NEO": "Viens à elle de toute ton âme, et garde ses voies de toutes tes forces.",
+        "NAB": "Stoop your shoulders and carry her and be not irked at her bonds.",
+        "VAT_ES": "Acércate a ella con toda tu alma y permanece en su camino con todas tus fuerzas.",
+        "CEI": "Avvicìnati ad essa con tutta l'anima e con tutta la tua forza resta nelle sue vie."
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +460,15 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐξίχνευσον καὶ ζήτησον, καὶ γνωσθήσεταί σοι, καὶ ἐγκρατὴς γενόμενος μὴ ἀφῇς αὐτήν·",
+        "VUL": "In omni animo tuo accede ad illam,/ et in omni virtute tua conserva vias ejus./",
+        "SYN": "Приблизься к ней всею душею твоею, и всею силою твоею соблюдай пути ее.",
+        "NEO": "Suis ses traces et cherche-la, et elle se fera connaître à toi, et, quand tu l’auras saisie, ne la quitte pas.",
+        "NAB": "With all your soul draw close to her; with all your strength keep her ways.",
+        "VAT_ES": "Sigue sus huellas y búscala: la sabiduría se te dará a conocer, y una vez que la poseas, no la dejes,",
+        "CEI": "Seguine le orme e cercala, ti si manifesterà; e una volta raggiunta, non lasciarla."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +477,15 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐπ’ ἐσχάτων γὰρ εὑρήσεις τὴν ἀνάπαυσιν αὐτῆς, καὶ στραφήσεταί σοι εἰς εὐφροσύνην·",
+        "VUL": "Investiga illam, et manifestabitur tibi :/ et continens factus, ne derelinquas eam :/",
+        "SYN": "Исследуй и ищи, и она будет познана тобою и, сделавшись обладателем ее, не покидай ее;",
+        "NEO": "Car à la fin tu trouveras son repos, et elle se changera pour toi en sujet de joie.",
+        "NAB": "Search her out, discover her; seek her and you will find her. Then when you have her, do not let her go;",
+        "VAT_ES": "porque al fin encontrarás en ella el descanso y ella se convertirá en tu alegría.",
+        "CEI": "Alla fine troverai in lei il riposo, ed essa ti si cambierà in gioia."
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +494,15 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἔσονταί σοι αἱ πέδαι εἰς σκέπην ἰσχύος, καὶ οἱ κλάδοι αὐτῆς εἰς στολὴν δόξης.",
+        "VUL": "in novissimis enim invenies requiem in ea,/ et convertetur tibi in oblectationem./",
+        "SYN": "ибо наконец ты найдешь в ней успокоение, и она обратится в радость тебе.",
+        "NEO": "Ses entraves deviendront pour toi une protection puissante, et son collier un vêtement de gloire.",
+        "NAB": "Thus will you afterward find rest in her, and she will become your joy.",
+        "VAT_ES": "Sus cepos serán un refugio poderoso y sus collares, un manto de gloria.",
+        "CEI": "I suoi ceppi saranno per te una protezione potente, le sue catene una veste di gloria."
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +511,15 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "LXX": "κόσμος γὰρ χρύσεός ἐστιν ἐπ’ αὐτῆς, καὶ οἱ δεσμοὶ αὐτῆς κλῶσμα ὑακίνθινον·",
+        "VUL": "Et erunt tibi compedes ejus in protectionem fortitudinis et bases virtutis,/ et torques illius in stolam gloriæ :/",
+        "SYN": "Путы ее будут тебе крепкою защитою, и цепи ее - славным одеянием;",
+        "NEO": "Car sur sa tête est un ornement d’or, et ses bandeaux sont un tissu d’hyacinthe.",
+        "NAB": "Her fetters will be your throne of majesty; her bonds, your purple cord.",
+        "VAT_ES": "Su yugo será un adorno de oro y sus cadenas, un tejido de jacinto.",
+        "CEI": "Un ornamento d'oro ha su di sé, i suoi legami sono fili di porpora violetta."
+      }
     },
     "31": {
       "seq": 31,
@@ -288,7 +528,15 @@
         "VUL": 31,
         "LXX": 31
       },
-      "text": {}
+      "text": {
+        "LXX": "στολὴν δόξης ἐνδύσῃ αὐτήν, καὶ στέφανον ἀγαλλιάματος περιθήσεις σεαυτῷ.",
+        "VUL": "decor enim vitæ est in illa,/ et vincula illius alligatura salutaris./",
+        "SYN": "ибо на ней украшение золотое, и узы ее - гиацинтовые нити.",
+        "NEO": "Tu t’en revêtiras comme d’une robe de gloire, et tu la mettras sur ta tête comme une couronne de joie.",
+        "NAB": "You will wear her as your robe of glory, bear her as your splendid crown.",
+        "VAT_ES": "Te revestirás de ella como de un manto de gloria y te la ceñirás como una corona de júbilo.",
+        "CEI": "Te ne rivestirai come di una veste di gloria, te ne cingerai come di una corona magnifica."
+      }
     },
     "32": {
       "seq": 32,
@@ -297,7 +545,15 @@
         "VUL": 32,
         "LXX": 32
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐὰν θέλῃς, τέκνον, παιδευθήσῃ, καὶ ἐὰν δῷς τὴν ψυχήν σου, πανοῦργος ἔσῃ·",
+        "VUL": "Stolam gloriæ indues eam,/ et coronam gratulationis superpones tibi./",
+        "SYN": "Как одеждою славы ты облечешься ею, и возложишь ее на себя как венец радости.",
+        "NEO": "Mon fils, si tu le veux, tu acquerras l’instruction, et, si tu appliques ton âme, tu deviendras habile.",
+        "NAB": "My son, if you wish, you can be taught; if you apply yourself, you will be shrewd.",
+        "VAT_ES": "Si quieres, hijo mío, serás instruido, y si pones empeño, sabrás desenvolverte.",
+        "CEI": "Se lo vuoi, figlio, diventerai saggio; applicandoti totalmente, diventerai abile."
+      }
     },
     "33": {
       "seq": 33,
@@ -306,7 +562,15 @@
         "VUL": 33,
         "LXX": 33
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐὰν ἀγαπήσῃς ἀκούειν, ἐκδέξῃ, καὶ ἐὰν κλίνῃς τὸ οὖς σου, σοφὸς ἔσῃ.",
+        "VUL": "Fili, si attenderis mihi, disces :/ et si accommodaveris animum tuum, sapiens eris./",
+        "SYN": "Сын мой! если ты пожелаешь ее, то научишься, и если предашься ей душею твоею, то будешь ко всему способен.",
+        "NEO": "Si tu aimes à écouter, tu apprendras ; si tu prêtes l’oreille, tu deviendras sage.",
+        "NAB": "If you are willing to listen, you will learn; if you give heed, you will be wise.",
+        "VAT_ES": "Si te gusta escuchar, aprenderás, y si prestas atención, llegarás a ser sabio.",
+        "CEI": "Se ti è caro ascoltare, imparerai; se porgerai l'orecchio, sarai saggio."
+      }
     },
     "34": {
       "seq": 34,
@@ -315,7 +579,15 @@
         "VUL": 34,
         "LXX": 34
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν πλήθει πρεσβυτέρων στῆθι· καὶ τίς σοφός; αὐτῷ προσκολλήθητι.",
+        "VUL": "Si inclinaveris aurem tuam, excipies doctrinam :/ et si dilexeris audire, sapiens eris./",
+        "SYN": "Если с любовью будешь слушать ее, то поймешь ее, и если приклонишь ухо твое, то будешь мудр.",
+        "NEO": "Tiens-toi dans la compagnie des vieillards ; quelqu’un est-il sage ? Attache-toi à lui.",
+        "NAB": "Frequent the company of the elders; whoever is wise, stay close to him.",
+        "VAT_ES": "Frecuenta las reuniones de los ancianos y si hay algún sabio, adhiérete a él.",
+        "CEI": "Frequenta le riunioni degli anziani; qualcuno è saggio? Unisciti a lui."
+      }
     },
     "35": {
       "seq": 35,
@@ -324,7 +596,15 @@
         "VUL": 35,
         "LXX": 35
       },
-      "text": {}
+      "text": {
+        "LXX": "πᾶσαν διήγησιν θείαν θέλε ἀκούειν, καὶ παροιμίαι συνέσεως μὴ ἐκφευγέτωσάν σε.",
+        "VUL": "In multitudine presbyterorum prudentium sta,/ et sapientiæ illorum ex corde conjungere,/ ut omnem narrationem Dei possis audire,/ et proverbia laudis non effugiant a te./",
+        "SYN": "Бывай в собрании старцев, и кто мудр, прилепись к тому; люби слушать всякую священную повесть, и притчи разумные да не ускользают от тебя.",
+        "NEO": "Ecoute volontiers tout discours sur Dieu, et que les maximes de sagesse ne t’échappent pas.",
+        "NAB": "Be eager to hear every godly discourse; let no wise saying escape you.",
+        "VAT_ES": "Procura escuchar todo lo que se refiera a Dios y que no se te escapen las máximas profundas.",
+        "CEI": "Ascolta volentieri ogni parola divina e le massime sagge non ti sfuggano."
+      }
     },
     "36": {
       "seq": 36,
@@ -333,7 +613,15 @@
         "VUL": 36,
         "LXX": 36
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐὰν ἴδῃς συνετόν, ὄρθριζε πρὸς αὐτόν, καὶ βαθμοὺς θυρῶν αὐτοῦ ἐκτριβέτω ὁ πούς σου.",
+        "VUL": "Et si videris sensatum, evigila ad eum,/ et gradus ostiorum illius exterat pes tuus./",
+        "SYN": "Если увидишь разумного, ходи к нему с раннего утра, и пусть нога твоя истирает пороги дверей его.",
+        "NEO": "Si tu vois un homme de sens, sois près de lui dès le matin, et que ton pied use le seuil de sa porte.",
+        "NAB": "If you see a man of prudence, seek him out; let your feet wear away his doorstep!",
+        "VAT_ES": "Si ves a un hombre inteligente, ve en seguida hacia él y que tus pies gasten el umbral de su puerta.",
+        "CEI": "Se vedi una persona saggia, và presto da lei; il tuo piede logori i gradini della sua porta."
+      }
     },
     "37": {
       "seq": 37,
@@ -342,7 +630,15 @@
         "VUL": 37,
         "LXX": 37
       },
-      "text": {}
+      "text": {
+        "LXX": "διανοοῦ ἐν τοῖς προστάγμασιν Κυρίου, καὶ ἐν ταῖς ἐντολαῖς αὐτοῦ μελέτα διὰ παντός· αὐτὸς στηριεῖ τὴν καρδίαν σου, καὶ ἡ ἐπιθυμία τῆς σοφίας σου δοθήσεταί σοι.",
+        "VUL": "Cogitatum tuum habe in præceptis Dei,/ et in mandatis illius maxime assiduus esto :/ et ipse dabit tibi cor,/ et concupiscentia sapientiæ dabitur tibi.]",
+        "SYN": "Размышляй о повелениях Господа и всегда поучайся в заповедях Его: Он укрепит твое сердце, и желание премудрости дастся тебе.",
+        "NEO": "Médite sur les commandements du Seigneur, et réfléchis constamment à ses préceptes ; lui-même affermira ton cœur, et la sagesse que tu désires te sera donnée.",
+        "NAB": "Reflect on the precepts of the LORD, let his commandments be your constant meditation; Then he will enlighten your mind, and the wisdom you desire he will grant.",
+        "VAT_ES": "Examina detenidamente los preceptos del Señor y medita sin cesar sus mandamientos: él mismo afirmará tu corazón y te dará la sabiduría que deseas.",
+        "CEI": "Rifletti sui precetti del Signore, medita sempre sui suoi comandamenti; egli renderà saldo il tuo cuore, e il tuo desiderio di sapienza sarà soddisfatto."
+      }
     }
   }
 }

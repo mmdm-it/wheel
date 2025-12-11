@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "Κύριος ἔκτισεν ἐκ γῆς ἄνθρωπον, καὶ πάλιν ἀπέστρεψεν αὐτὸν εἰς αὐτήν·",
+        "VUL": "[Deus creavit de terra hominem,/ et secundum imaginem suam fecit illum :/",
+        "SYN": "Господь создал человека из земли и опять возвращает его в нее.",
+        "NEO": "Le Seigneur a formé l’homme de terre, et il le fait retourner dans la terre.",
+        "NAB": "The LORD from the earth created man, and in his own image he made him.",
+        "VAT_ES": "El Señor creó al hombre de la tierra y lo hace volver de nuevo a ella.",
+        "CEI": "Il Signore creò l'uomo dalla terra e ad essa lo fa tornare di nuovo."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "ἡμέρας ἀριθμοῦ καὶ καιρὸν ἔδωκεν αὐτοῖς, καὶ ἔδωκεν αὐτοῖς ἐξουσίαν τῶν ἐπ’ αὐτῆς.",
+        "VUL": "et iterum convertit illum in ipsam,/ et secundum se vestivit illum virtute./",
+        "SYN": "Определенное число дней и время дал Он им, и дал им власть над всем, что на ней.",
+        "NEO": "Il lui a assigné un nombre de jours et un temps déterminé, et il lui a donné pouvoir sur tout ce qui est sur la terre.",
+        "NAB": "Limited days of life he gives him and makes him return to earth again.",
+        "VAT_ES": "Le señaló un número de días y un tiempo determinado, y puso bajo su dominio las cosas de la tierra.",
+        "CEI": "Egli assegnò agli uomini giorni contati e un tempo fissato, diede loro il dominio di quanto è sulla terra."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "καθ’ ἑαυτοὺς ἐνέδυσεν αὐτοὺς ἰσχύν, καὶ κατ’ εἰκόνα αὐτοῦ ἐποίησεν αὐτούς·",
+        "VUL": "Numerum dierum et tempus dedit illi,/ et dedit illi potestatem eorum quæ sunt super terram./",
+        "SYN": "По природе их, облек их силою и сотворил их по образу Своему,",
+        "NEO": "Selon sa nature, il l’a revêtu de force, et il l’a fait à son image.",
+        "NAB": "He endows man with a strength of his own, and with power over all things else on earth.",
+        "VAT_ES": "Lo revistió de una fuerza semejante a la suya y lo hizo según su propia imagen.",
+        "CEI": "Secondo la sua natura li rivestì di forza, e a sua immagine li formò."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἔθηκεν τὸν φόβον αὐτοῦ ἐπὶ πάσης σαρκός, καὶ κατακυριεύειν θηρίων καὶ πετεινῶν.",
+        "VUL": "Posuit timorem illius super omnem carnem,/ et dominatus est bestiarum et volatilium./",
+        "SYN": "и вложил страх к ним во всякую плоть, чтобы господствовать им над зверями и птицами.",
+        "NEO": "Il a inspiré sa crainte à toute chair, et lui a donné l’empire sur les bêtes et sur les oiseaux.",
+        "NAB": "He puts the fear of him in all flesh, and gives him rule over beasts and birds.",
+        "VAT_ES": "Hizo que todos los vivientes lo temieran, para que él dominara las fieras y los pájaros.",
+        "CEI": "Egli infuse in ogni essere vivente il timore dell'uomo, perché l'uomo dominasse sulle bestie e sugli uccelli."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,14 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "VUL": "Creavit ex ipso adjutorium simile sibi :/ consilium, et linguam, et oculos, et aures,/ et cor dedit illis excogitandi,/ et disciplina intellectus replevit illos./",
+        "SYN": "Он дал им смысл, язык и глаза, и уши и сердце для рассуждения,",
+        "NEO": "Il lui a donné le discernement, une langue, des yeux, des oreilles, et un cœur pour penser.",
+        "NAB": "He forms men's tongues and eyes and ears, and imparts to them an understanding heart.",
+        "VAT_ES": "[Ellos recibieron el uso de las cinco operaciones del Señor; como sexto don, les concedió la inteligencia; y como séptimo, el lenguaje que interpreta las obras de Dios.]",
+        "CEI": "Discernimento, lingua, occhi, orecchi e cuore diede loro perché ragionassero."
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +102,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "διαβούλιον καὶ γλῶσσαν καὶ ὀφθαλμούς, ὦτα καὶ καρδίαν ἔδωκεν διανοεῖσθαι αὐτοῖς·",
+        "VUL": "Creavit illis scientiam spiritus,/ sensu implevit cor illorum,/ et mala et bona ostendit illis./",
+        "SYN": "исполнил их проницательностью разума и показал им добро и зло.",
+        "NEO": "Il l’a rempli de science et d’intelligence, et il lui a fait connaître le bien et le mal.",
+        "NAB": "With wisdom and knowledge he fills them; good and evil he shows them.",
+        "VAT_ES": "Le dio una lengua, ojos y oídos, el poder de discernir y un corazón para pensar.",
+        "CEI": "Li riempì di dottrina e d'intelligenza, e indicò loro anche il bene e il male."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +119,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐπιστήμην συνέσεως ἐνέπλησεν αὐτούς, καὶ ἀγαθὰ καὶ κακὰ ὑπέδειξεν αὐτοῖς·",
+        "VUL": "Posuit oculum suum super corda illorum,/ ostendere illis magnalia operum suorum :/",
+        "SYN": "Он положил око Свое на сердца их, чтобы показать им величие дел Своих,",
+        "NEO": "Il a mis son œil dans leurs cœurs, pour leur montrer la grandeur de ses œuvres.",
+        "NAB": "He looks with favor upon their hearts, and shows them his glorious works,",
+        "VAT_ES": "El colmó a los hombres de saber y entendimiento, y les mostró el bien y el mal.",
+        "CEI": "Pose lo sguardo nei loro cuori per mostrar loro la grandezza delle sue opere."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +136,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔθηκεν τὸν ὀφθαλμὸν αὐτοῦ ἐπὶ τὰς καρδίας αὐτῶν, δεῖξαι αὐτοῖς τὸ μεγαλεῖον τῶν ἔργων αὐτοῦ·",
+        "VUL": "ut nomen sanctificationis collaudent,/ et gloriari in mirabilibus illius ;/ ut magnalia enarrent operum ejus./",
+        "SYN": "да прославляют они святое имя Его и возвещают о величии дел Его.",
+        "NEO": "Et ainsi ils loueront son saint nom, en publiant les merveilles de ses œuvres.",
+        "NAB": "That they may describe the wonders of his deeds and praise his holy name.",
+        "VAT_ES": "Les infundió su propia luz, para manifestarles la grandeza de sus obras,",
+        "CEI": "Loderanno il suo santo nome per narrare la grandezza delle sue opere."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +153,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "ἵνα διηγῶνται τὰ μεγαλεῖα τῶν ἔργων αὐτοῦ.",
+        "VUL": "Addidit illis disciplinam,/ et legem vitæ hæreditavit illos./",
+        "SYN": "Он приложил им знание и дал им в наследство закон жизни;",
+        "NEO": "Il leur a encore donné la science, et les a mis en possession de la loi de vie.",
+        "NAB": "He has set before them knowledge, a law of life as their inheritance;",
+        "VAT_ES": "y les permitió gloriarse eternamente de sus maravillas:",
+        "CEI": "Inoltre pose davanti a loro la scienza e diede loro in eredità la legge della vita."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +170,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ὄνομα ἁγιασμοῦ αἰνέσουσιν,",
+        "VUL": "Testamentum æternum constituit cum illis,/ et justitiam et judicia sua ostendit illis./",
+        "SYN": "вечный завет поставил с ними и показал им суды Свои.",
+        "NEO": "Il a contracté avec eux une alliance éternelle, et il leur a révélé ses commandements.",
+        "NAB": "An everlasting covenant he has made with them, his commandments he has revealed to them.",
+        "VAT_ES": "así alabarán su Nombre santo, proclamando la grandeza de sus obras.",
+        "CEI": "Stabilì con loro un'alleanza eterna e fece loro conoscere i suoi decreti."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +187,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "προσέθηκεν αὐτοῖς ἐπιστήμην, καὶ νόμον ζωῆς ἐκληροδότησεν αὐτοῖς·",
+        "VUL": "Et magnalia honoris ejus vidit oculus illorum,/ et honorem vocis audierunt aures illorum./ Et dixit illis : Attendite ab omni iniquo./",
+        "SYN": "Величие славы видели глаза их, и славу голоса Его слышало ухо их.",
+        "NEO": "Leurs yeux ont contemplé les splendeurs de sa majesté, et leurs oreilles ont entendu les magnifiques accents de sa voix.",
+        "NAB": "His majestic glory their eyes beheld, his glorious voice their ears heard.",
+        "VAT_ES": "Les concedió además la ciencia y les dio como herencia una Ley de vida;",
+        "CEI": "I loro occhi contemplarono la grandezza della sua gloria, i loro orecchi sentirono la magnificenza della sua voce."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +204,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "⸂⸆⸃ διαθήκην αἰῶνος ἔστησεν μετ’ αὐτῶν, καὶ τὰ κρίματα αὐτοῦ ὑπέδειξεν αὐτοῖς·",
+        "VUL": "Et mandavit illis unicuique de proximo suo./",
+        "SYN": "И сказал Он им: \"остерегайтесь всякой неправды\"; и заповедал каждому из них обязанность к ближнему.",
+        "NEO": "Et il leur a dit : « Gardez-vous de toute iniquité ! » et il leur a donné à chacun des prescriptions à l’égard du prochain.",
+        "NAB": "He says to them, \"Avoid all evil\"; each of them he gives precepts about his fellow men.",
+        "VAT_ES": "estableció con ellos una alianza eterna y les hizo conocer sus decretos.",
+        "CEI": "Disse loro: \"Guardatevi da ogni ingiustizia!\" e diede a ciascuno precetti verso il prossimo."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +221,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "μεγαλεῖον δόξης εἶδον οἱ ὀφθαλμοὶ αὐτῶν, καὶ δόξαν φωνῆς αὐτῶν ἤκουσεν τὸ οὖς αὐτῶν·",
+        "VUL": "Viæ illorum coram ipso sunt semper :/ non sunt absconsæ ab oculis ipsius./",
+        "SYN": "Пути их всегда пред Ним, не скроются от очей Его.",
+        "NEO": "Leurs voies sont constamment devant lui ; rien ne peut les dérober à son regard.",
+        "NAB": "Their ways are ever known to him, they cannot be hidden from his eyes.",
+        "VAT_ES": "Ellos vieron con sus ojos la grandeza de su gloria y oyeron con sus oídos la gloria de su voz.",
+        "CEI": "Le loro vie sono sempre davanti a lui, non restano nascoste ai suoi occhi."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +238,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ εἶπεν αὐτοῖς Προσέχετε ἀπὸ παντὸς ἀδίκου, καὶ ἐνετείλατο αὐτοῖς ἑκάστῳ περὶ τοῦ πλησίον.",
+        "VUL": "In unamquamque gentem præposuit rectorem :/",
+        "SYN": "Каждому народу поставил Он вождя,",
+        "NEO": "A chaque peuple il assigne un chef, mais Israël est la portion du Seigneur.",
+        "NAB": "Over every nation he places a ruler, but the LORD'S own portion is Israel.",
+        "VAT_ES": "El les dijo: «Cuídense de toda injusticia», y dio a cada uno preceptos acerca del prójimo.",
+        "CEI": "Su ogni popolo mise un capo, ma Israele è la porzione del Signore."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +255,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "αἱ ὁδοὶ αὐτῶν ἐναντίον αὐτοῦ διὰ παντός, οὐ κρυβήσονται ἀπὸ τῶν ὀφθαλμῶν αὐτοῦ.",
+        "VUL": "et pars Dei Israël facta est manifesta./",
+        "SYN": "а Израиль есть удел Господа.",
+        "NEO": "Toutes leurs œuvres sont devant lui, comme le soleil, et ses yeux sont toujours tournés sur leurs voies.",
+        "NAB": "All their actions are clear as the sun to him, his eyes are ever upon their ways.",
+        "VAT_ES": "Los caminos de los hombres están siempre ante él y no pueden ocultarse a sus ojos.",
+        "CEI": "Tutte le loro opere sono davanti a lui come il sole, i suoi occhi osservano sempre la loro condotta."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +272,14 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "VUL": "Et omnia opera illorum velut sol in conspectu Dei :/ et oculi ejus sine intermissione inspicientes in viis eorum./",
+        "SYN": "Все дела их - как солнце пред Ним, и очи Его всегда на путях их.",
+        "NEO": "Leurs injustices ne lui sont pas cachées, et tous leurs péchés sont devant le Seigneur.",
+        "NAB": "Their wickedness cannot be hidden from him; all of their sins are before the LORD.",
+        "VAT_ES": "[Sus caminos van hacia el mal desde la juventud, y no son capaces de transformar en corazones de carne sus corazones de piedra.]",
+        "CEI": "A lui non sono nascoste le loro ingiustizie, tutti i loro peccati sono davanti al Signore."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +288,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "ἑκάστῳ ἔθνει κατέστησεν ἡγούμενον, καὶ μερὶς Κυρίου Ἰσραήλ ἐστιν.",
+        "VUL": "Non sunt absconsa testamenta per iniquitatem illorum,/ et omnes iniquitates eorum in conspectu Dei./",
+        "SYN": "Не утаились от Него неправды их, и все грехи их - пред Господом.",
+        "NEO": "L’œuvre charitable d’un homme est pour lui comme un sceau, et il conserve le bienfait de l’homme comme la prunelle de l’œil.",
+        "NAB": "A man's goodness God cherishes like a signet ring, a man's virtue, like the apple of his eye.",
+        "VAT_ES": "El asignó un jefe a cada nación, pero Israel es la parte del Señor.",
+        "CEI": "La beneficenza dell'uomo è per lui come un sigillo, egli serberà la generosità come la propria pupilla."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +305,14 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "VUL": "Eleemosyna viri quasi signaculum cum ipso,/ et gratiam hominis quasi pupillam conservabit./",
+        "SYN": "Милостыня человека - как печать у Него, и благодеяние человека сохранит Он, как зеницу ока.",
+        "NEO": "Ensuite il se lèvera et leur rendra selon leurs actions, et il fera retomber sur leur tête ce qui leur est dû.",
+        "NAB": "Later he will rise up and repay them, and requite each one of them as they deserve.",
+        "VAT_ES": "El es su primogénito, al que nutrió con su instrucción, y cuando dispensa la luz del amor, no lo abandona.",
+        "CEI": "Alla fine si leverà e renderà loro la ricompensa, riverserà su di loro il contraccambio."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +321,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "ἅπαντα τὰ ἔργα αὐτῶν ὡς ὁ ἥλιος ἐναντίον αὐτοῦ, καὶ οἱ ὀφθαλμοὶ αὐτοῦ ἐνδελεχεῖς ἐπὶ τὰς ὁδοὺς αὐτῶν·",
+        "VUL": "Et postea resurget,/ et retribuet illis retributionem, unicuique in caput ipsorum,/ et convertet in interiores partes terræ./",
+        "SYN": "Потом Он восстанет и воздаст им, и даяние их на голову их возвратит.",
+        "NEO": "Cependant, à ceux qui se repentent, il accorde le retour, et il console ceux qui ont perdu confiance.",
+        "NAB": "But to the penitent he provides a way back, he encourages those who are losing hope!",
+        "VAT_ES": "Todas sus obras son para él claras como el sol y él tiene los ojos fijos en sus caminos.",
+        "CEI": "Ma a chi si pente egli offre il ritorno, consola quanti vengono meno nella pazienza."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +338,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "οὐκ ἐκρύβησαν αἱ ἀδικίαι αὐτῶν ἀπ’ αὐτοῦ, καὶ πᾶσαι αἱ ἁμαρτίαι αὐτῶν ἔναντι Κυρίου.",
+        "VUL": "Pnitentibus autem dedit viam justitiæ,/ et confirmavit deficientes sustinere,/ et destinavit illis sortem veritatis.]",
+        "SYN": "Но кающимся Он давал обращение и ободрял ослабевавших в терпении.",
+        "NEO": "Tourne-toi vers le Seigneur et quitte tes péchés ; prie devant sa face et diminue tes offenses.",
+        "NAB": "Return to the LORD and give up sin, pray to him and make your offenses few.",
+        "VAT_ES": "Sus injusticias no están ocultas para el Señor y todos sus pecados están delante de él.",
+        "CEI": "Ritorna al Signore e cessa di peccare, prega davanti a lui e cessa di offendere."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +355,14 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "VUL": "[Convertere ad Dominum, et relinque peccata tua :/",
+        "SYN": "Обратись к Господу и оставь грехи;",
+        "NEO": "Reviens au Très-Haut, détourne-toi de l’injustice, et déteste fortement ce qui est abominable.",
+        "NAB": "Turn again to the Most High and away from sin, hate intensely what he loathes;",
+        "VAT_ES": "[Pero el Señor es bondadoso y conoce a su criatura; no las deja ni abandona, sino que las perdona.]",
+        "CEI": "Fà ritorno all'Altissimo e volta le spalle all'ingiustizia; detesta interamente l'iniquità."
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +371,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐλεημοσύνη ἀνδρὸς ὡς σφραγὶς μετ’ αὐτοῦ, καὶ χάριν ἀνθρώπου ὡς κόρην συντηρήσει.",
+        "VUL": "precare ante faciem Domini, et minue offendicula./",
+        "SYN": "молись пред Ним и уменьши твои преткновения.",
+        "NEO": "Qui louera le Très-Haut dans le schéol, à la place des vivants et de ceux qui lui rendent leurs hommages ?",
+        "NAB": "Who in the nether world can glorify the Most High in place of the living who offer their praise?",
+        "VAT_ES": "La limosna de un hombre es para él como un sello, y tiene en cuenta un favor como la pupila de sus ojos.",
+        "CEI": "Negli inferi infatti chi loderà l'Altissimo, al posto dei viventi e di quanti gli rendono lode?"
+      }
     },
     "23": {
       "seq": 23,
@@ -216,7 +388,15 @@
         "VUL": 23,
         "LXX": 23
       },
-      "text": {}
+      "text": {
+        "LXX": "μετὰ ταῦτα ἐξαναστήσεται καὶ ἀνταποδώσει αὐτοῖς, καὶ τὸ ἀνταπόδομα αὐτῶν εἰς κεφαλὴν αὐτῶν ἀποδώσει·",
+        "VUL": "Revertere ad Dominum, et avertere ab injustitia tua,/ et nimis odito execrationem :/",
+        "SYN": "Возвратись ко Всевышнему, и отвратись от неправды, и сильно возненавидь мерзость.",
+        "NEO": "A l’homme mort, comme s’il n’était plus rien, la louange est impossible ; celui qui a la vie et la santé loue le Seigneur.",
+        "NAB": "No more can the dead give praise than those who have never lived; they glorify the LORD who are alive and well.",
+        "VAT_ES": "Después, él se levantará para retribuirles y pondrá sobre sus cabezas la recompensa merecida.",
+        "CEI": "Da un morto, che non è più, la riconoscenza si perde, chi è vivo e sano loda il Signore."
+      }
     },
     "24": {
       "seq": 24,
@@ -225,7 +405,15 @@
         "VUL": 24,
         "LXX": 24
       },
-      "text": {}
+      "text": {
+        "LXX": "πλὴν μετανοοῦσιν ἔδωκεν ἐπάνοδον, καὶ παρεκάλεσεν ἐκλείποντας ὑπομονήν.",
+        "VUL": "et cognosce justitias et judicia Dei,/ et sta in sorte propositionis, et orationis altissimi Dei./",
+        "SYN": "Кто будет восхвалять Всевышнего в аде, вместо живущих и прославляющих Его?",
+        "NEO": "Qu’elle est grande la miséricorde du Seigneur, et sa compassion envers ceux qui se convertissent à lui !",
+        "NAB": "How great the mercy of the LORD, his forgiveness of those who return to him!",
+        "VAT_ES": "A los que se arrepienten, les permite volver y reconforta a los que perdieron la constancia.",
+        "CEI": "Quanto è grande la misericordia del Signore, il suo perdono per quanti si convertono a lui!"
+      }
     },
     "25": {
       "seq": 25,
@@ -234,7 +422,15 @@
         "VUL": 25,
         "LXX": 25
       },
-      "text": {}
+      "text": {
+        "LXX": "Ἐπίστρεφε ἐπὶ Κύριον καὶ ἀπόλειπε ἁμαρτίας, δεήθητι κατὰ πρόσωπον καὶ σμίκρυνον πρόσκομμα·",
+        "VUL": "In partes vade sæculi sancti,/ cum vivis et dantibus confessionem Deo./",
+        "SYN": "От мертвого, как от несуществующего, нет прославления:",
+        "NEO": "Car tout ne peut pas se trouver dans les hommes, le fils de l’homme n’étant pas immortel.",
+        "NAB": "The like cannot be found in men, for not immortal is any son of man.",
+        "VAT_ES": "Vuelve al Señor y deja de pecar, suplica ante su rostro y deja de ofenderlo.",
+        "CEI": "L'uomo non può avere tutto, poiché un figlio dell'uomo non è immortale."
+      }
     },
     "26": {
       "seq": 26,
@@ -243,7 +439,15 @@
         "VUL": 26,
         "LXX": 26
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐπάναγε ἐπὶ Ὕψιστον καὶ ἀπόστρεφε ἀπὸ ἀδικίας, καὶ σφόδρα μίσησον βδέλυγμα.",
+        "VUL": "Non demoreris in errore impiorum :/ ante mortem confitere :/ a mortuo, quasi nihil, perit confessio./",
+        "SYN": "живый и здоровый восхвалит Господа.",
+        "NEO": "Quoi de plus brillant que le soleil ? Et pourtant il s’obscurcit : ainsi le méchant pense à la chair et au sang.",
+        "NAB": "Is anything brighter than the sun? Yet it can be eclipsed. How obscure then the thoughts of flesh and blood!",
+        "VAT_ES": "Vuelve al Altísimo, apártate de la injusticia y odia profundamente toda abominación.",
+        "CEI": "Che c'è di più luminoso del sole? Anch'esso scompare. Così carne e sangue pensano al male."
+      }
     },
     "27": {
       "seq": 27,
@@ -252,7 +456,15 @@
         "VUL": 27,
         "LXX": 27
       },
-      "text": {}
+      "text": {
+        "LXX": "Ὑψίστῳ τίς αἰνέσει ἐν ᾅδου ἀντὶ ζώντων καὶ διδόντων ἀνθομολόγησιν;",
+        "VUL": "Confiteberis vivens,/ vivus et sanus confiteberis :/ et laudabis Deum,/ et gloriaberis in miserationibus illius./",
+        "SYN": "Как велико милосердие Господа и примирение с обращающимися к Нему!",
+        "NEO": "Le soleil visite l’armée des astres dans les hauteurs des cieux, mais tous les hommes sont terre et cendre.",
+        "NAB": "God watches over the hosts of highest heaven, while all men are dust and ashes.",
+        "VAT_ES": "&iquest;Quién alabará al Altísimo en el Abismo, si los vivientes no le rinden homenaje?",
+        "CEI": "Esso sorveglia le schiere dell'alto cielo, ma gli uomini sono tutti terra e cenere."
+      }
     },
     "28": {
       "seq": 28,
@@ -261,7 +473,12 @@
         "VUL": 28,
         "LXX": 28
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀπὸ νεκροῦ ὡς μηδὲ ὄντος ἀπόλλυται ἐξομολόγησις· ζῶν καὶ ὑγιὴς αἰνέσει τὸν κύριον.",
+        "VUL": "Quam magna misericordia Domini,/ et propitiatio illius convertentibus ad se !/",
+        "SYN": "Не может быть всего в человеке,",
+        "VAT_ES": "el muerto, el que ya no existe, deja de alabarlo: el que está vivo y sano debe alabar al Señor."
+      }
     },
     "29": {
       "seq": 29,
@@ -270,7 +487,12 @@
         "VUL": 29,
         "LXX": 29
       },
-      "text": {}
+      "text": {
+        "LXX": "ὡς μεγάλη ἡ ἐλεημοσύνη τοῦ κυρίου, καὶ ἐξιλασμὸς τοῖς ἐπιστρέφουσιν ἐπ’ αὐτόν.",
+        "VUL": "Nec enim omnia possunt esse in hominibus,/ quoniam non est immortalis filius hominis,/ et in vanitate malitiæ placuerunt./",
+        "SYN": "потому что не бессмертен сын человеческий.",
+        "VAT_ES": "&iexcl;Qué grande es la generosidad del Señor y su perdón para los que vuelven a él!"
+      }
     },
     "30": {
       "seq": 30,
@@ -279,7 +501,12 @@
         "VUL": 30,
         "LXX": 30
       },
-      "text": {}
+      "text": {
+        "LXX": "οὐ γὰρ δύναται πάντα εἶναι ἐν ἀνθρώποις, ὅτι οὐκ ἀθάνατος υἱὸς ἀνθρώπου.",
+        "VUL": "Quid lucidius sole ?/ et hic deficiet ;/ aut quid nequius quam quod excogitavit caro et sanguis ?/ et hoc arguetur./",
+        "SYN": "Что светлее солнца? но и оно затмевается. И о злом будет помышлять плоть и кровь.",
+        "VAT_ES": "Un hombre no puede tenerlo todo, porque el ser humano no es inmortal."
+      }
     },
     "31": {
       "seq": 31,
@@ -288,7 +515,12 @@
         "VUL": 31,
         "LXX": 31
       },
-      "text": {}
+      "text": {
+        "LXX": "τί φωτεινότερον ἡλίου; καὶ τοῦτο ἐκλείπει, καὶ πονηρὸς ἐνθυμήσεται σάρκα καὶ αἷμα.",
+        "VUL": "Virtutem altitudinis cæli ipse conspicit :/ et omnes homines terra et cinis.]",
+        "SYN": "За силами высоких небес Он Сам наблюдает, а люди все - земля и пепел.",
+        "VAT_ES": "&iquest;Hay algo más luminoso que el sol? &iexcl;Y sin embargo, también él se eclipsa! &iexcl;Cuánto más la carne y la sangre, que sólo conciben el mal!"
+      }
     },
     "32": {
       "seq": 32,
@@ -297,7 +529,10 @@
         "VUL": 32,
         "LXX": 32
       },
-      "text": {}
+      "text": {
+        "LXX": "δύναμιν ὕψους οὐρανοῦ αὐτὸς ἐπισκέπτεται, καὶ οἱ ἄνθρωποι πάντες γῆ καὶ σποδός.",
+        "VAT_ES": "El Señor pasa revista al ejército de los cielos, &iexcl;cuánto más a los hombres, que son tierra y ceniza!"
+      }
     }
   }
 }

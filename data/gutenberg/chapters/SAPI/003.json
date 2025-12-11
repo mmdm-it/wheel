@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "Δικαίων δὲ ψυχαὶ ἐν χειρὶ θεοῦ, καὶ οὐ μὴ ἅψηται αὐτῶν βάσανος.",
+        "VUL": "[Justorum autem animæ in manu Dei sunt,/ et non tanget illos tormentum mortis./",
+        "SYN": "А души праведных в руке Божией, и мучение не коснется их.",
+        "NEO": "Les âmes des justes sont dans la main de Dieu, et le tourment ne les atteindra pas.",
+        "NAB": "But the souls of the just are in the hand of God, and no torment shall touch them.",
+        "VAT_ES": "Las almas de los justos están en las manos de Dios, y no los afectará ningún tormento.",
+        "CEI": "Le anime dei giusti, invece, sono nelle mani di Dio, nessun tormento le toccherà."
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "ἔδοξαν ἐν ὀφθαλμοῖς ἀφρόνων τεθνάναι, καὶ ἐλογίσθη κάκωσις ἡ ἔξοδος αὐτῶν,",
+        "VUL": "Visi sunt oculis insipientium mori,/ et æstimata est afflictio exitus illorum,/",
+        "SYN": "В глазах неразумных они казались умершими, и исход их считался погибелью,",
+        "NEO": "Aux yeux des insensés, ils paraissent être morts, et leur sortie de ce monde* semble un malheur,",
+        "NAB": "They seemed, in the view of the foolish, to be dead; and their passing away was thought an affliction",
+        "VAT_ES": "A los ojos de los insensatos parecían muertos; su partida de este mundo fue considerada una desgracia",
+        "CEI": "Agli occhi degli stolti parve che morissero; la loro fine fu ritenuta una sciagura,"
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἡ ἀφ’ ἡμῶν πορεία σύντριμμα· οἱ δέ εἰσιν ἐν εἰρήνῃ·",
+        "VUL": "et quod a nobis est iter exterminium ;/ illi autem sunt in pace :/",
+        "SYN": "и отшествие от нас - уничтожением; но они пребывают в мире.",
+        "NEO": "et leur départ du milieu de nous un anéantissement ; mais ils sont dans la paix.",
+        "NAB": "and their going forth from us, utter destruction. But they are in peace.",
+        "VAT_ES": "y su alejamiento de nosotros, una completa destrucción; pero ellos están en paz.",
+        "CEI": "la loro partenza da noi una rovina, ma essi sono nella pace."
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ γὰρ ἐν ὄψει ἀνθρώπων ἐὰν κολασθῶσιν, ἡ ἐλπὶς αὐτῶν ἀθανασίας πλήρης·",
+        "VUL": "etsi coram hominibus tormenta passi sunt,/ spes illorum immortalitate plena est./",
+        "SYN": "Ибо, хотя они в глазах людей и наказываются, но надежда их полна бессмертия.",
+        "NEO": "Alors même* que, devant les hommes, ils ont subi des châtiments, leur espérance est pleine d’immortalité.",
+        "NAB": "For if before men, indeed, they be punished, yet is their hope full of immortality;",
+        "VAT_ES": "A los ojos de los hombres, ellos fueron castigados, pero su esperanza estaba colmada de inmortalidad.",
+        "CEI": "Anche se agli occhi degli uomini subiscono castighi, la loro speranza è piena di immortalità."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ὀλίγα παιδευθέντες μεγάλα εὐεργετηθήσονται, ὅτι ὁ θεὸς ἐπείρασεν αὐτοὺς καὶ εὗρεν αὐτοὺς ἀξίους ἑαυτοῦ·",
+        "VUL": "In paucis vexati, in multis bene disponentur,/ quoniam Deus tentavit eos,/ et invenit illos dignos se./",
+        "SYN": "И немного наказанные, они будут много облагодетельствованы, потому что Бог испытал их и нашел их достойными Его.",
+        "NEO": "Après une légère peine, ils recevront une grande récompense ; car Dieu les a éprouvés, et les a trouvés dignes de lui.",
+        "NAB": "Chastised a little, they shall be greatly blessed, because God tried them and found them worthy of himself.",
+        "VAT_ES": "Por una leve corrección, recibirán grandes beneficios, porque Dios los puso a prueba y los encontró dignos de él.",
+        "CEI": "Per una breve pena riceveranno grandi benefici, perché Dio li ha provati e li ha trovati degni di sé:"
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "ὡς χρυσὸν ἐν χωνευτηρίῳ ἐδοκίμασεν αὐτούς, καὶ ὡς ὁλοκάρπωμα θυσίας προσεδέξατο αὐτούς.",
+        "VUL": "Tamquam aurum in fornace probavit illos,/ et quasi holocausti hostiam accepit illos,/ et in tempore erit respectus illorum./",
+        "SYN": "Он испытал их как золото в горниле и принял их как жертву всесовершенную.",
+        "NEO": "Il les a essayés comme l’or dans la fournaise, et les a agréés comme un parfait holocauste.",
+        "NAB": "As gold in the furnace, he proved them, and as sacrificial offerings he took them to himself.",
+        "VAT_ES": "Los probó como oro en el crisol y los aceptó como un holocausto.",
+        "CEI": "li ha saggiati come oro nel crogiuolo e li ha graditi come un olocausto."
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἐν καιρῷ ἐπισκοπῆς αὐτῶν ἀναλάμψουσιν, καὶ ὡς σπινθῆρες ἐν καλάμῃ διαδραμοῦνται·",
+        "VUL": "Fulgebunt justi/ et tamquam scintillæ in arundineto discurrent./",
+        "SYN": "Во время воздаяния им они воссияют как искры, бегущие по стеблю.",
+        "NEO": "Au temps de leur récompense, ils brilleront ; comme des étincelles, ils courront à travers le chaume.",
+        "NAB": "In the time of their visitation they shall shine, and shall dart about as sparks through stubble;",
+        "VAT_ES": "Por eso brillarán cuando Dios los visite, y se extenderán como chispas por los rastrojos.",
+        "CEI": "Nel giorno del loro giudizio risplenderanno; come scintille nella stoppia, correranno qua e là."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "κρινοῦσιν ἔθνη καὶ κρατήσουσιν λαῶν, καὶ βασιλεύσει αὐτῶν Κύριος εἰς τοὺς αἰῶνας.",
+        "VUL": "Judicabunt nationes, et dominabuntur populis,/ et regnabit Dominus illorum in perpetuum./",
+        "SYN": "Будут судить племена и владычествовать над народами, а над ними будет Господь царствовать вовеки.",
+        "NEO": "Ils jugeront les nations et domineront sur les peuples, et le Seigneur régnera sur eux à jamais.",
+        "NAB": "They shall judge nations and rule over peoples, and the LORD shall be their King forever.",
+        "VAT_ES": "Juzgarán a las naciones y dominarán a los pueblos, y el Señor será su rey para siempre.",
+        "CEI": "Governeranno le nazioni, avranno potere sui popoli e il Signore regnerà per sempre su di loro."
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "οἱ πεποιθότες ἐπ’ αὐτῷ συνήσουσιν ἀλήθειαν, καὶ οἱ πιστοὶ ἐν ἀγάπῃ προσμενοῦσιν αὐτῷ, ὅτι χάρις καὶ ἔλεος τοῖς ἐκλεκτοῖς αὐτοῦ.",
+        "VUL": "Qui confidunt in illo intelligent veritatem,/ et fideles in dilectione acquiescent illi,/ quoniam donum et pax est electis ejus./",
+        "SYN": "Надеющиеся на Него познают истину, и верные в любви пребудут у Него; ибо благодать и милость со святыми Его и промышление об избранных Его.",
+        "NEO": "Eux qui ont mis en lui leur confiance, ils comprendront la vérité ; ses* fidèles habiteront avec lui dans l’amour ; car la grâce et la miséricorde sont pour ses élus+ 3:9 La fin du verset prend cette forme dans le Sinaiticus et l’Alexandrinus : \\+it Car la grâce et la miséricorde sont pour ses saints, et il prend soin de ses élus\\+it*.*.",
+        "NAB": "Those who trust in him shall understand truth, and the faithful shall abide with him in love: Because grace and mercy are with his holy ones, and his care is with the elect.",
+        "VAT_ES": "Los que confían en él comprenderán la verdad y los que le son fieles permanecerán junto a él en el amor. Porque la gracia y la misericordia son para sus elegidos.",
+        "CEI": "Quanti confidano in lui comprenderanno la verità; coloro che gli sono fedeli vivranno presso di lui nell'amore, perché grazia e misericordia sono riservate ai suoi eletti."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "οἱ δὲ ἀσεβεῖς καθὰ ἐλογίσαντο ἕξουσιν ἐπιτιμίαν, οἱ ἀμελήσαντες τοῦ δικαίου καὶ τοῦ κυρίου ἀποστάντες.",
+        "VUL": "Impii autem secundum quæ cogitaverunt/ correptionem habebunt :/ qui neglexerunt justum,/ et a Domino recesserunt./",
+        "SYN": "Нечестивые же, как умствовали, так и понесут наказание за то, что презрели праведного и отступили от Господа.",
+        "NEO": "Mais les impies auront le châtiment mérité par+ 3:10 t\\+it Mérité par\\+it*, m. à m. \\+it selon\\+it*.* leurs pensées perverses, eux qui ont méprisé le juste, et se sont éloignés du Seigneur.",
+        "NAB": "But the wicked shall receive a punishment to match their thoughts, since they neglected justice and forsook the LORD.",
+        "VAT_ES": "Pero los impíos tendrán un castigo conforme a sus razonamientos, porque desdeñaron al justo y se apartaron del Señor.",
+        "CEI": "Ma gli empi per i loro pensieri riceveranno il castigo, essi che han disprezzato il giusto e si son ribellati al Signore."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "σοφίαν γὰρ καὶ παιδείαν ὁ ἐξουθενῶν ταλαίπωρος, καὶ κενὴ ἡ ἐλπὶς αὐτῶν καὶ οἱ κόποι ἀνόνητοι, καὶ ἄχρηστα τὰ ἔργα αὐτῶν.",
+        "VUL": "Sapientiam enim et disciplinam qui abjicit infelix est :/ et vacua est spes illorum,/ et labores sine fructu,/ et inutilia opera eorum./",
+        "SYN": "Ибо презирающий мудрость и наставление несчастен, и надежда их суетна, и труды бесплодны, и дела их непотребны.",
+        "NEO": "Car qui rejette la sagesse et la correction est voué au malheur ; leur espérance est vaine, leurs efforts sont infructueux, et leurs œuvres sans profit.",
+        "NAB": "For he who despises wisdom and instruction is doomed. Vain is their hope, fruitless are their labors, and worthless are their works.",
+        "VAT_ES": "El que desprecia la sabiduría y la enseñanza es un desdichado: &iexcl;vana es su esperanza, inútiles sus esfuerzos, infructuosas sus obras!",
+        "CEI": "Chi disprezza la sapienza e la disciplina è infelice. Vana la loro speranza e le loro fatiche senza frutto, inutili le opere loro."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "αἱ γυναῖκες αὐτῶν ἄφρονες, καὶ πονηρὰ τὰ τέκνα αὐτῶν, ἐπικατάρατος ἡ γένεσις αὐτῶν.",
+        "VUL": "Mulieres eorum insensatæ sunt,/ et nequissimi filii eorum./",
+        "SYN": "Жены их несмысленны, и дети их злы, проклят род их.",
+        "NEO": "Leurs femmes sont insensées, leurs enfants pleins de malice, et leur postérité est maudite.",
+        "NAB": "Their wives are foolish and their children wicked; accursed is their brood.",
+        "VAT_ES": "&iexcl;Sus mujeres son insensatas, sus hijos perversos y su descendencia maldita!",
+        "CEI": "Le loro mogli sono insensate, cattivi i loro figli, maledetta la loro progenie. È meglio la sterilità che una posterità empia"
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "ὅτι μακαρία στεῖρα ἡ ἀμίαντος, ἥτις οὐκ ἔγνω κοίτην ἐν παραπτώματι, ἕξει καρπὸν ἐν ἐπισκοπῇ ψυχῶν·",
+        "VUL": "Maledicta creatura eorum, quoniam felix est sterilis ;/ et incoinquinata, quæ nescivit thorum in delicto,/ habebit fructum in respectione animarum sanctarum ;/",
+        "SYN": "Блаженна неплодная неосквернившаяся, которая не познала беззаконного ложа; она получит плод при воздаянии святых душ.",
+        "NEO": "C’est pourquoi heureuse la femme stérile et sans tache, dont la couche ne connaît pas la souillure ! Elle aura son* fruit à la visite des âmes+ 3:13 \\+it À la visite des âmes\\+it*, c’est-à dire le jour où le Seigneur visitera les âmes. La loi mosaïque avait promis que Dieu récompenserait les justes par de nombreux rejetons, et que les impies n’auraient pas de postérité (Ex 23:26 ; Lev 20:20 sv. ; Deu 7:14 ; Psa 77:3 sv. ; Ose 9:14). La stérilité était donc, dans la pensée des Hébreux, un malheur et un opprobre (comp. Gen. 30:23 ; Isa 4:1 ; Luc 1: 25). Toutefois l’auteur déclare que la piété et la vertu avec la privation d’enfants valent mieux que le vice et l’impiété avec une postérité nombreuse.*.",
+        "NAB": "Yes, blessed is she who, childless and undefiled, knew not transgression of the marriage bed; she shall bear fruit at the visitation of souls.",
+        "VAT_ES": "&iexcl;Feliz, en cambio, la mujer estéril que no se ha manchado, la que no tuvo relaciones ilícitas! Ella dará frutos cuando Dios visite las almas.",
+        "CEI": "Beata la sterile non contaminata, la quale non ha conosciuto un letto peccaminoso; avrà il suo frutto alla rassegna delle anime."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ εὐνοῦχος ὁ μὴ ἐργασάμενος ἐν χειρὶ ἀνόμημα, μηδὲ ἐνθυμηθεὶς κατὰ τοῦ κυρίου πονηρά, δοθήσεται γὰρ αὐτῷ τῆς πίστεως χάρις ἐκλεκτὴ καὶ κλῆρος ἐν ναῷ Κυρίου θυμηρέστερος.",
+        "VUL": "et spado qui non operatus est per manus suas iniquitatem,/ nec cogitavit adversus Deum nequissima :/ dabitur enim illi fidei donum electum,/ et sors in templo Dei acceptissima./",
+        "SYN": "Блажен и евнух, не сделавший беззакония рукою и не помысливший лукавого против Господа, ибо дастся ему особенная благодать веры и приятнейший жребий в храме Господнем.",
+        "NEO": "Heureux* encore l’eunuque qui de sa main n’a pas fait l’iniquité et qui n’a pas conçu de pensées criminelles contre le Seigneur ! Il recevra une récompense de choix pour sa fidélité, et il* aura dans le temple du Seigneur le sort le plus désirable+ 3:14 Les eunuques proprement dits n’étaient pas réputés faire partie de la communauté d’Israël (Deu 23:1) ; ils étaient écartés du service du temple (Lev 21:20) Or, si leur vie est sainte, ils auront une place glorieuse dans le temple de Dieu. Comp Isa 56:3-5.*.",
+        "NAB": "So also the eunuch whose hand wrought no misdeed, who held no wicked thoughts against the LORD - For he shall be given fidelity's choice reward and a more gratifying heritage in the LORD'S temple.",
+        "VAT_ES": "Feliz también el eunuco que no cometió ninguna iniquidad ni tuvo pensamientos perversos contra el Señor. por su fidelidad se le dará una gracia especial, una herencia muy deseable en el Templo del Señor.",
+        "CEI": "Anche l'eunuco, la cui mano non ha commesso iniquità e che non ha pensato cose malvagie contro il Signore, riceverà una grazia speciale per la sua fedeltà, una parte più desiderabile nel tempio del Signore;"
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀγαθῶν γὰρ πόνων ὁ καρπὸς εὐκλεής, καὶ ἀδιάπτωτος ἡ ῥίζα τῆς φρονήσεως.",
+        "VUL": "Bonorum enim laborum gloriosus est fructus,/ et quæ non concidat radix sapientiæ./",
+        "SYN": "Плод добрых трудов славен, и корень мудрости неподвижен.",
+        "NEO": "Car du travail des bonnes œuvres le fruit est glorieux, et la racine de la prudence ne périt pas.",
+        "NAB": "For the fruit of noble struggles is a glorious one; and unfailing is the root of understanding.",
+        "VAT_ES": "Porque es glorioso el fruto de los trabajos honestos, e indefectible la raíz de la Sabiduría.",
+        "CEI": "poiché il frutto delle opere buone è glorioso e imperitura la radice della saggezza."
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "τέκνα δὲ μοιχῶν ἀτέλεστα ἔσται, καὶ ἐκ παρανόμου κοίτης σπέρμα ἀφανισθήσεται.",
+        "VUL": "Filii autem adulterorum in inconsummatione erunt,/ et ab iniquo thoro semen exterminabitur./",
+        "SYN": "Дети прелюбодеев будут несовершенны, и семя беззаконного ложа исчезнет.",
+        "NEO": "Mais les enfants des adultères n’atteindront pas leur fin, et la race sortie d’une couche criminelle disparaîtra.",
+        "NAB": "But the children of adulterers will remain without issue, and the progeny of an unlawful bed will disappear.",
+        "VAT_ES": "Pero los hijos de los adúlteros no llegarán a su madurez y la descendencia de una unión ilegítima desaparecerá.",
+        "CEI": "I figli di adulteri non giungeranno a maturità; la discendenza di un'unione illegittima sarà sterminata."
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐάν τε γὰρ μακρόβιοι γένωνται, εἰς οὐθὲν λογισθήσονται, καὶ ἄτιμον ἐπ’ ἐσχάτων τὸ γῆρας αὐτῶν·",
+        "VUL": "Et si quidem longæ vitæ erunt, in nihilum computabuntur,/ et sine honore erit novissima senectus illorum :/",
+        "SYN": "Если и будут они долгожизненны, но будут почитаться за ничто, и поздняя старость их будет без почета.",
+        "NEO": "Si leur vie est longue, ils seront comptés pour rien, et leur vieillesse à la fin sera sans honneur.",
+        "NAB": "For should they attain long life, they will be held in no esteem, and dishonored will their old age be at last;",
+        "VAT_ES": "Aunque vivan mucho tiempo, serán tenidos por nada, y al fin su vejez será deshonrosa;",
+        "CEI": "Anche se avranno lunga vita, non saran contati per niente, e, infine, la loro vecchiaia sarà senza onore."
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐάν τε ὀξέως τελευτήσωσιν, οὐκ ἔχουσιν ἐλπίδα οὐδὲ ἐν ἡμέρᾳ διαγνώσεως παραμύθιον·",
+        "VUL": "et si celerius defuncti fuerint, non habebunt spem,/ nec in die agnitionis allocutionem./",
+        "SYN": "А если скоро умрут, не будут иметь надежды и утешения в день суда;",
+        "NEO": "S’ils meurent promptement, ils n’auront pas d’espérance, ni de consolation au jour du jugement.",
+        "NAB": "While should they die abruptly, they have no hope nor comfort in the day of scrutiny;",
+        "VAT_ES": "si mueren pronto, no tendrán esperanza ni consuelo en el día del Discernimiento,",
+        "CEI": "Se poi moriranno presto, non avranno speranza né consolazione nel giorno del giudizio,"
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "γενεᾶς γὰρ ἀδίκου χαλεπὰ τὰ τέλη.",
+        "VUL": "Nationis enim iniquæ diræ sunt consummationes.]",
+        "SYN": "ибо ужасен конец неправедного рода.",
+        "NEO": "Car la race injuste a toujours une fin funeste.",
+        "NAB": "for dire is the end of the wicked generation.",
+        "VAT_ES": "porque es penoso el fin de una raza injusta.",
+        "CEI": "poiché di una stirpe iniqua è terribile il destino."
+      }
     }
   }
 }

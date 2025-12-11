@@ -18,7 +18,15 @@
         "VUL": 1,
         "LXX": 1
       },
-      "text": {}
+      "text": {
+        "LXX": "ΚΑΙ οὗτοι οἱ λόγοι τοῦ βιβλίου οὓς ἔγραψεν Βαροὺχ υἱὸς Νηρίου υἱοῦ Μαασαίου υἱοῦ Σεδεκίου υἱοῦ Ἁσαδίου υἱοῦ Χελκίου ἐν Βαβυλῶνι,",
+        "VUL": "Et hæc verba libri quæ scripsit Baruch filius Neriæ, filii Maasiæ, filii Sedeciæ, filii Sedei, filii Helciæ, in Babylonia,",
+        "SYN": "Слова книги, которые написал Варух, сын Нирии, сына Маасея, сына Седекии, сына Асадия, сына Хелкии, в Вавилоне,",
+        "NEO": "Voici les paroles du livre qu’écrivit Baruch, fils de Nérias, fils de Maasias, fils de Sédécias, fils de Sédéï, fils de Helcias, à Babylone,",
+        "NAB": "Now these are the words of the scroll which Baruch, son of Neriah, son of Mahseiah, son of Zedekiah, son of Hasadiah, son of Hilkiah, wrote in Babylon,",
+        "VAT_ES": "Texto del escrito que Baruc, hijo de Nerías, hijo de Maasías, hijo de Sedecías, hijo de Asadías, hijo de Jilquías, escribió en Babilonia,",
+        "CEI": "Queste sono le parole del libro che Baruc figlio di Neria, figlio di Maasià, figlio di Sedecìa, figlio di Asadia, figlio di Chelkìa, scrisse in Babilonia"
+      }
     },
     "2": {
       "seq": 2,
@@ -27,7 +35,15 @@
         "VUL": 2,
         "LXX": 2
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν τῷ ἔτει τῷ πέμπτῳ ἐν ἑβδόμῃ τοῦ μηνός, ἐν τῷ καιρῷ ᾧ ἔλαβον οἱ Χαλδαῖοι τὴν Ἰερουσαλὴμ καὶ ἐνέπρησαν αὐτὴν ἐν πυρί.",
+        "VUL": "in anno quinto, in septimo die mensis, in tempore quo ceperunt Chaldæi Jerusalem, et succenderunt eam igni.",
+        "SYN": "в пятый год, в седьмой день месяца, в то время, когда Халдеи взяли Иерусалим и сожгли его огнем.",
+        "NEO": "la cinquième année+ 1:2 \\+it La cinquième année\\+it* depuis la prise de Jérusalem par Nabuchodonosor (quatrième mois de la onzième année de Sédécias), c.-à-d. l’an 583 av. J.-C.*, le septième jour du mois, au temps où les Chaldéens avaient pris Jérusalem et l’avaient brûlée.",
+        "NAB": "in the fifth year (on the seventh day of the month, at the time when the Chaldeans took Jerusalem and burnt it with fire).",
+        "VAT_ES": "en el año quinto, el séptimo día del mes, en la época en que los caldeos habían tomado Jerusalén y la habían incendiado.",
+        "CEI": "nell'anno quinto, il sette del mese, nella ricorrenza di quando i Caldei presero Gerusalemme e la diedero alle fiamme."
+      }
     },
     "3": {
       "seq": 3,
@@ -36,7 +52,15 @@
         "VUL": 3,
         "LXX": 3
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἀνέγνω Βαροὺχ τοὺς λόγους τοῦ βιβλίου τούτου ἐν ὠσὶν Ἰεχονίου υἱοῦ Ἰωακεὶμ βασιλέως Ἰούδα, καὶ ἐν ὠσὶ παντὸς τοῦ λαοῦ τῶν ἐρχομένων πρὸς τὴν βίβλον,",
+        "VUL": "Et legit Baruch verba libri hujus ad aures Jechoniæ filii Joakim regis Juda, et ad aures universi populi venientis ad librum,",
+        "SYN": "И прочитал Варух слова сей книги вслух Иехонии, сына Иоакимова, царя Иудейского, и вслух всего народа, пришедшего к слушанию книги,",
+        "NEO": "Baruch lut les paroles de ce livre aux oreilles de Jéchonias, fils de Joakim, roi de Juda, et aux oreilles de tout le peuple qui était venu pour entendre* ce livre,",
+        "NAB": "And Baruch read the words of this scroll for Jeconiah, son of Jehoiakim, king of Judah, to hear it, as well as all the people who came to the reading:",
+        "VAT_ES": "Baruc leyó el texto de este escrito en presencia de Jeconías, hijo de Joaquím, rey de Judá, y de todo el pueblo que había venido para escuchar esta lectura;",
+        "CEI": "Baruc lesse le parole di questo libro alla presenza di Ieconia, figlio di Ioiakìm, re di Giuda e di tutto il popolo, accorso per ascoltare la lettura:"
+      }
     },
     "4": {
       "seq": 4,
@@ -45,7 +69,15 @@
         "VUL": 4,
         "LXX": 4
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἐν ὠσίν τῶν δυνατῶν καὶ υἱῶν τῶν βασιλέων, καὶ ἐν ὠσὶ τῶν πρεσβυτέρων, καὶ ἐν ὠσὶ παντὸς τοῦ λαοῦ ἀπὸ μικροῦ ἕως μεγάλου, πάντων τῶν κατοικούντων ἐν Βαβυλῶνι ἐπὶ ποταμοῦ Σούδ.",
+        "VUL": "et ad aures potentium, filiorum regum, et ad aures presbyterorum, et ad aures populi, a minimo usque ad maximum eorum, omnium habitantium in Babylonia, ad flumen Sodi.",
+        "SYN": "и вслух вельмож и сыновей царских, и вслух старейшин, и вслух всего народа, от малого до большого, всех, живших в Вавилоне при реке Суд.",
+        "NEO": "aux oreilles des grands et des fils des rois, et aux oreilles des anciens, et aux oreilles de tout le peuple, du plus petit jusqu’au plus grand, de tous ceux qui habitent à Babylone, près du fleuve Sodi+ 1:4 \\+it Le fleuve Sodi\\+it* (gr. Σοὐδ) n’est pas nommé ailleurs ; c’est peut-être l’un des canaux qui mettaient l’Euphrate en communication avec le Tigre.*.",
+        "NAB": "the nobles, the kings' sons, the elders, and the whole people, small and great alike - all who lived in Babylon by the river Sud.",
+        "VAT_ES": "en presencia de las autoridades y de los príncipes reales, de los ancianos y de todo el pueblo –desde el más pequeño hasta el más grande– de todos los que habitaban en Babilonia junto al río Sud.",
+        "CEI": "erano presenti i nobili, i figli del re, gli anziani, tutto il popolo dal più piccolo al più grande, quanti insomma abitavano in Babilonia presso il fiume Sud."
+      }
     },
     "5": {
       "seq": 5,
@@ -54,7 +86,15 @@
         "VUL": 5,
         "LXX": 5
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἔκλαιον καὶ ἐνήστευον καὶ ηὔχοντο ἐναντίον Κυρίου,",
+        "VUL": "Qui audientes plorabant, et jejunabant, et orabant in conspectu Domini.",
+        "SYN": "И они плакали, и постились, и молились пред Господом,",
+        "NEO": "En l’entendant*, ils pleuraient, jeûnaient et priaient le Seigneur.",
+        "NAB": "They wept and fasted and prayed before the LORD,",
+        "VAT_ES": "Se derramaron lágrimas, se ayunó y se oró delante del Señor .",
+        "CEI": "Ascoltata la lettura, piansero, digiunarono, pregarono il Signore,"
+      }
     },
     "6": {
       "seq": 6,
@@ -63,7 +103,15 @@
         "VUL": 6,
         "LXX": 6
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ συνήγαγον ἀργύριον καθὰ ἑκάστου ἠδύνατο ἡ χείρ.",
+        "VUL": "Et collegerunt pecuniam, secundum quod potuit uniuscujusque manus,",
+        "SYN": "и собрали серебра, сколько было по силам каждого,",
+        "NEO": "Et ils recueillirent de l’argent, selon que chacun+ 1:6 \\+it Selon que chacun\\+it* etc. ; m. à m., \\+it selon que pouvait la main d’un chacun\\+it*.* put en donner suivant ses moyens.",
+        "NAB": "and collected such funds as each could furnish.",
+        "VAT_ES": "También se recogió dinero según las posibilidades de cada uno,",
+        "CEI": "poi, raccolto un pò di denaro, secondo quel che ognuno poteva dare,"
+      }
     },
     "7": {
       "seq": 7,
@@ -72,7 +120,15 @@
         "VUL": 7,
         "LXX": 7
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἀπέστειλαν εἰς Ἰερουσαλὴμ πρὸς Ἰωακεὶμ υἱὸν Χελκίου υἱοῦ Σαλὼμ τὸν ἱερέα, καὶ πρὸς τοὺς ἱερεῖς καὶ πρὸς πάντα τὸν λαὸν τοὺς εὑρεθέντας μετ’ αὐτοῦ ἐν Ἰερουσαλήμ,",
+        "VUL": "et miserunt in Jerusalem ad Joakim filium Helciæ filii Salom sacerdotem, et ad sacerdotes, et ad omnem populum qui inventi sunt cum eo in Jerusalem :",
+        "SYN": "и послали в Иерусалим к Иоакиму, сыну Хелкии, сына Саломова, первосвященнику, и к священникам и ко всему народу, находившемуся с ним в Иерусалиме,",
+        "NEO": "Et ils l’envoyèrent à Jérusalem, à Joakim, fils de Helcias, fils de Salom, le prêtre, aux autres* prêtres et à tout le peuple qui se trouvait avec lui à Jérusalem.",
+        "NAB": "These they sent to Jerusalem, to Jehoiakim, son of Hilkiah, son of Shallum, the priest, and to the priests and the whole people who were with him in Jerusalem.",
+        "VAT_ES": "y se lo envió a Jerusalén, al sacerdote Joaquím, hijo de Jilquías, hijo de Salóm, y a los otros sacerdotes y a todo el pueblo que se encontraba con él en Jerusalén.",
+        "CEI": "lo mandarono a Gerusalemme al sacerdote Ioakim figlio di Chelkìa, figlio di Salòm e agli altri sacerdoti e al popolo che erano con lui in Gerusalemme."
+      }
     },
     "8": {
       "seq": 8,
@@ -81,7 +137,15 @@
         "VUL": 8,
         "LXX": 8
       },
-      "text": {}
+      "text": {
+        "LXX": "ἐν τῷ λαβεῖν αὐτὸν τὰ σκεύη οἴκου Κυρίου τὰ ἐξενεχθέντα ἐκ τοῦ ναοῦ ἀποστρέψαι εἰς γῆν Ἰούδα, τῇ δεκάτῃ τοῦ Σειουάν, σκεύη ἀργυρᾶ ἃ ἐποίησεν Σεδεκίας υἱὸς Ἰωσεία βασιλεὺς Ἰούδα,",
+        "VUL": "cum acciperet vasa templi Domini, quæ ablata fuerant de templo, revocare in terram Juda, decima die mensis Sivan, vasa argentea quæ fecit Sedecias filius Josiæ rex Juda,",
+        "SYN": "когда _Варух_ унесенные из храма сосуды дома Господня принял для возвращения их в землю Иудейскую, в десятый день месяца Сиуала, сосуды серебряные, которые сделал Седекия, сын Иосии, царь Иудейский,",
+        "NEO": "Baruch avait alors recouvré+ 1:8 \\+it Baruch avait alors recouvré\\+it* ; m. à m. \\+it alors que Baruch avait recouvré\\+it*. — Le mois de Sivan commençait avec la lune de juin.* les ustensiles de la maison du Seigneur qui avaient été emportés du Temple, pour les* renvoyer au pays de Juda, le dixième jour du mois* de Sivan, ustensiles en argent qu’avait fait faire Sédécias, fils de Josias, roi de Juda,",
+        "NAB": "(This was when he received the vessels of the house of the Lord that had been removed from the temple, to restore them to the land of Judah, on the tenth of Sivan. These silver vessels Zedekiah, son of Josiah, king of Judah, had had made",
+        "VAT_ES": "Baruc ya había recuperado, el décimo día del mes de Siván, los vasos de la Casa del Señor sacados del Templo, a fin de devolverlos a la tierra de Judá. Eran objetos de plata que había hecho Sedecías, hijo de Josías, rey de Judá,",
+        "CEI": "Era il dieci del mese di Sivan, quando Baruc ricevette, per portarli in Giuda, i vasi della casa del Signore, che erano stati portati via dal tempio. Erano quei vasi d'argento che Sedecìa figlio di Giosia, re di Giuda, aveva fatto rifare,"
+      }
     },
     "9": {
       "seq": 9,
@@ -90,7 +154,15 @@
         "VUL": 9,
         "LXX": 9
       },
-      "text": {}
+      "text": {
+        "LXX": "μετὰ τὸ ἀποικίσαι Ναβουχοδονοσὸρ βασιλέα Βαβυλῶνος τὸν Ἰεχονίαν καὶ τοὺς ἄρχοντας καὶ τοὺς δεσμώτας καὶ τοὺς δυνατοὺς καὶ τὸν λαὸν τῆς γῆς ἀπὸ Ἰερουσαλήμ, καὶ ἤγαγεν αὐτὸν εἰς Βαβυλῶνα.",
+        "VUL": "posteaquam cepisset Nabuchodonosor rex Babylonis Jechoniam, et principes, et cunctos potentes, et populum terræ, ab Jerusalem, et duxit eos vinctos in Babylonem.",
+        "SYN": "после того, как Навуходоносор, царь Вавилонский, переселил из Иерусалима Иехонию и князей, и узников и вельмож, и народ земли и привел его в Вавилон.",
+        "NEO": "après que Nabuchodonosor, roi de Babylone, eut enlevé de Jérusalem Jéchonias, les princes, les otages, les grands et le peuple du pays, et les eut emmenés à Babylone.",
+        "NAB": "after Nebuchadnezzar, king of Babylon, carried off Jeconiah, and the princes, and the skilled workers, and the nobles, and the people of the land from Jerusalem, as captives, and brought them to Babylon.)",
+        "VAT_ES": "después que Nabucodonosor, rey de Babilonia, deportó desde Jerusalén y llevó a Babilonia a Jeconías, a los príncipes, a los rehenes, a los nobles y a la gente del país.",
+        "CEI": "dopo che Nabucodònosor re di Babilonia aveva deportato da Gerusalemme in Babilonia Ieconia, i principi, gli schiavi, i nobili e il popolo del paese."
+      }
     },
     "10": {
       "seq": 10,
@@ -99,7 +171,15 @@
         "VUL": 10,
         "LXX": 10
       },
-      "text": {}
+      "text": {
+        "LXX": "Καὶ εἶπαν Ἰδοὺ ἀπεστείλαμεν πρὸς ὑμᾶς ἀργύριον, καὶ ἀγοράσατε τοῦ ἀργυρίου ὁλοκαυτώματα καὶ περὶ ἁμαρτίας καὶ λίβανον, καὶ ποιήσατε μάννα καὶ ἀνοίσατε ἐπὶ τὸ θυσιαστήριον Κυρίου θεοῦ ἡμῶν,",
+        "VUL": "Et dixerunt : Ecce misimus ad vos pecunias, de quibus emite holocautomata et thus : et facite manna, et offerte pro peccato, ad aram Domini Dei nostri :",
+        "SYN": "И говорили они: вот, мы посылаем вам серебро, и купите на это серебро всесожжения и _жертву_ за грех и ладан, и приготовьте дар, и вознесите на жертвенник Господа Бога нашего,",
+        "NEO": "Ils dirent+ 1:10 \\+it Ils dirent\\+it*, dans la lettre d’envoi.* : « Voici que nous vous envoyons de l’argent ; achetez avec cet argent des victimes pour les holocaustes* et les sacrifices d’expiation, et de l’encens ; faites aussi des oblations, et offrez-les sur l’autel du Seigneur, notre Dieu.",
+        "NAB": "Their message was: \"We send you funds, with which you are to procure holocausts, sin offerings, and frankincense, and to prepare cereal offerings; offer these on the altar of the LORD our God,",
+        "VAT_ES": "Les escribieron lo siguiente: Aquí les enviamos dinero; compren con él víctimas para los holocaustos y los sacrificios por el pecado, y también incienso; hagan ofrendas y preséntenlas sobre el altar del Señor, nuestro Dios.",
+        "CEI": "Mandarono a dire loro: Ecco, vi mandiamo il denaro per comprare olocausti, sacrifici espiatori e incenso e offrire oblazioni sull'altare del Signore nostro Dio."
+      }
     },
     "11": {
       "seq": 11,
@@ -108,7 +188,15 @@
         "VUL": 11,
         "LXX": 11
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ προσεύξασθε περὶ τῆς ζωῆς Ναβουχοδονοσὸρ βασιλέως Βαβυλῶνος καὶ εἰς ζωὴν Βαλτασὰρ υἱοῦ αὐτοῦ, ἵνα ὦσιν αἱ ἡμέραι αὐτῶν ὡς αἱ ἡμέραι τοῦ οὐρανοῦ ἐπὶ τῆς γῆς.",
+        "VUL": "et orate pro vita Nabuchodonosor regis Babylonis, et pro vita Baltassar filii ejus, ut sint dies eorum sicut dies cæli super terram :",
+        "SYN": "и молитесь о жизни Навуходоносора, царя Вавилонского, и о жизни Валтасара, сына его, чтобы дни их были, как дни неба, на земле.",
+        "NEO": "Priez pour la vie de Nabuchodonosor, roi de Babylone, et pour la vie de Baltassar, son fils, afin que leurs jours sur la terre+ 1:11 \\+it Afin que leurs jours sur la terre\\+it*. D’autres : \\+it comme les jours du ciel au-dessus de la terre\\+it*. Comp. Jer 29, 7.* soient comme les jours du ciel ;",
+        "NAB": "and pray for the life of Nebuchadnezzar, king of Babylon, and that of Belshazzar, his son, that their lifetimes may equal the duration of the heavens above the earth;",
+        "VAT_ES": "Rueguen por la vida de Nabucodonosor, rey de Babilonia, y por la de su hijo Baltasar, para que sus días sean sobre la tierra como los días del cielo.",
+        "CEI": "Pregate per la vita di Nabucodònosor re di Babilonia e per la vita di suo figlio Baldassàr, perché i loro giorni sulla terra siano lunghi come i giorni del cielo sulla terra."
+      }
     },
     "12": {
       "seq": 12,
@@ -117,7 +205,15 @@
         "VUL": 12,
         "LXX": 12
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ δώσει Κύριος ἰσχὺν ἡμῖν καὶ φωτίσει τοὺς ὀφθαλμοὺς ἡμῶν, καὶ ζησόμεθα ὑπὸ τὴν σκιὰν Ναβουχοδονοσὸρ βασιλέως Βαβυλῶνος καὶ ὑπὸ τὴν σκιὰν Βαλτασὰρ υἱοῦ αὐτοῦ, καὶ δουλεύσομεν αὐτοῖς ἡμέρας πολλὰς καὶ εὑρήσομεν χάριν ἐναντίον αὐτῶν.",
+        "VUL": "et ut det Dominus virtutem nobis, et illuminet oculos nostros, ut vivamus sub umbra Nabuchodonosor regis Babylonis, et sub umbra Baltassar filii ejus, et serviamus eis multis diebus, et inveniamus gratiam in conspectu eorum.",
+        "SYN": "И даст нам Господь силу и просветит глаза наши, и мы будем жить под покровом Навуходоносора, царя Вавилонского, и под покровом Валтасара, сына его, и будем служить им много дней, и найдем милость у них.",
+        "NEO": "et le Seigneur nous donnera la force ; il fera briller la lumière à nos yeux ; nous vivrons à l’ombre de Nabuchodonosor, roi de Babylone, et à l’ombre de Baltassar, son fils ; nous les servirons de longs jours et nous trouverons grâce devant eux.",
+        "NAB": "and that the LORD may give us strength, and light to our eyes, that we may live under the protective shadow of Nebuchadnezzar, king of Babylon, and that of Belshazzar, his son, and serve them long, finding favor in their sight.",
+        "VAT_ES": "Que el Señor nos dé fuerza e ilumine nuestros ojos, para que vivamos a la sombra de Nabucodonosor, rey de Babilonia, y a la sombra de su hijo Baltasar, y lo sirvamos mucho tiempo, gozando de su favor.",
+        "CEI": "Pregate perché il Signore ci dia forza e illumini i nostri occhi e si possa vivere all'ombra di Nabucodònosor, re di Babilonia, e all'ombra del figlio Baldassàr e servirli per molti anni e trovar grazia ai loro occhi."
+      }
     },
     "13": {
       "seq": 13,
@@ -126,7 +222,15 @@
         "VUL": 13,
         "LXX": 13
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ προσεύξασθε περὶ ἡμῶν πρὸς Κύριον τὸν θεὸν ἡμῶν, ὅτι ⸂⸆⸃ ἡμάρτομεν τῷ κυρίῳ θεῷ ἡμῶν, καὶ οὐκ ἀπέστρεψεν ὁ θυμὸς Κυρίου καὶ ἡ ὀργὴ αὐτοῦ ἀφ’ ἡμῶν ἕως τῆς ἡμέρας ταύτης.",
+        "VUL": "Et pro nobis ipsis orate ad Dominum Deum nostrum, quia peccavimus Domino Deo nostro, et non est aversus furor ejus a nobis usque in hunc diem.",
+        "SYN": "Молитесь и о нас Господу Богу нашему, так как мы согрешили пред Господом, Богом нашим, и не отвратилась от нас ярость Господа и гнев Его до сего дня;",
+        "NEO": "Priez aussi pour nous le Seigneur notre Dieu, parce que nous avons péché contre le Seigneur notre Dieu, et que la colère du Seigneur et son courroux ne se sont pas détournés de nous jusqu’à ce jour.",
+        "NAB": "\"Pray for us also to the LORD, our God; for we have sinned against the LORD, our God, and the wrath and anger of the LORD have not yet been withdrawn from us at the present day.",
+        "VAT_ES": "Rueguen también por nosotros al Señor, nuestro Dios, porque hemos pecado contra él, y la ira del Señor y su indignación no se han alejado de nosotros hasta el día de hoy.",
+        "CEI": "Pregate il Signore nostro Dio anche per noi che lo abbiamo offeso e fino ad oggi il suo sdegno e la sua ira non si sono allontanati da noi."
+      }
     },
     "14": {
       "seq": 14,
@@ -135,7 +239,15 @@
         "VUL": 14,
         "LXX": 14
       },
-      "text": {}
+      "text": {
+        "LXX": "Καὶ ἀναγνώσεσθε τὸ βιβλίον τοῦτο ὃ ἀπεστείλαμεν πρὸς ὑμᾶς ἐξαγορεῦσαι ἐν οἴκῳ Κυρίου ἐν ἡμέρᾳ ἑορτῆς καὶ ἐν ἡμέραις καιροῦ,",
+        "VUL": "Et legite librum istum quem misimus ad vos recitari in templo Domini, in die solemni et in die opportuno :",
+        "SYN": "и прочитайте сию книгу, которую мы посылаем вам, чтобы обнародовать в доме Господнем в день праздничный и в дни нарочитые;",
+        "NEO": "Lisez ce livre que nous vous envoyons pour qu’on en fasse la lecture publique dans la maison du Seigneur, les jours de fête et les jours d’assemblée.",
+        "NAB": "And read out publicly this scroll which we send you, in the house of the LORD, on the feast day and during the days of assembly:",
+        "VAT_ES": "Lean este libro, que nosotros les enviamos para que se haga confesión de los pecados en la Casa del Señor, en el día de la Fiesta y en los días de la Asamblea.",
+        "CEI": "Leggete perciò questo libro che vi abbiamo mandato per fare pubblica confessione nel tempio del Signore, in giorno di festa e nei giorni opportuni."
+      }
     },
     "15": {
       "seq": 15,
@@ -144,7 +256,15 @@
         "VUL": 15,
         "LXX": 15
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἐρεῖτε τῷ κυρίῳ θεῷ ἡμῶν ἡ δικαιοσύνη, ἡμῖν δὲ αἰσχύνη τῶν προσώπων ὡς ἡ ἡμέρα αὕτη, ἀνθρώπῳ Ἰούδα καὶ τοῖς κατοικοῦσιν Ἰερουσαλήμ,",
+        "VUL": "et dicetis : [Domino Deo nostro justitia,/ nobis autem confusio faciei nostræ,/ sicut est dies hæc omni Juda,/ et habitantibus in Jerusalem :/",
+        "SYN": "и скажите: у Господа Бога нашего - правда, а у нас - стыд на лицех, как сегодня, у всякого Иудея и у живущих в Иерусалиме,",
+        "NEO": "Et vous direz :",
+        "NAB": "\"Justice is with the LORD, our God; and we today are flushed with shame, we men of Judah and citizens of Jerusalem,",
+        "VAT_ES": "Ustedes dirán: Al Señor, nuestro Dios, pertenece la justicia; a nosotros, en cambio, la verg&uuml;enza reflejada en el rostro, como sucede en el día de hoy; verg&uuml;enza para los hombres de Judá y los habitantes de Jerusalén,",
+        "CEI": "Direte dunque: Al Signore nostro Dio la giustizia; a noi il disonore sul volto, come oggi avviene per i Giudei e gli abitanti di Gerusalemme,"
+      }
     },
     "16": {
       "seq": 16,
@@ -153,7 +273,15 @@
         "VUL": 16,
         "LXX": 16
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ τοῖς βασιλεῦσιν ἡμῶν καὶ τοῖς ἄρχουσιν ἡμῶν καὶ τοῖς ἱερεῦσιν ἡμῶν καὶ τοῖς προφήταις ἡμῶν καὶ τοῖς πατράσιν ἡμῶν,",
+        "VUL": "regibus nostris, et principibus nostris,/ et sacerdotibus nostris, et prophetis nostris,/ et patribus nostris./",
+        "SYN": "и у царей наших, и у князей наших, и у священников наших, и у пророков наших, и у отцов наших,",
+        "NEO": "pour nos rois et nos princes, pour nos prêtres et nos prophètes, et pour nos pères.",
+        "NAB": "that we, with our kings and rulers and priests and prophets, and with our fathers,",
+        "VAT_ES": "para nuestros reyes y nuestros jefes, para nuestros sacerdotes, nuestros profetas y nuestros padres.",
+        "CEI": "per i nostri re e per i nostri principi, per i nostri sacerdoti e i nostri profeti e per i nostri padri,"
+      }
     },
     "17": {
       "seq": 17,
@@ -162,7 +290,15 @@
         "VUL": 17,
         "LXX": 17
       },
-      "text": {}
+      "text": {
+        "LXX": "ὧν ἡμάρτομεν ἔναντι Κυρίου",
+        "VUL": "Peccavimus ante Dominum Deum nostrum,/ et non credidimus, diffidentes in eum :/",
+        "SYN": "оттого, что мы согрешили пред Господом,",
+        "NEO": "Nous avons péché devant le Seigneur,+ 1:17 \\+it Le Seigneur\\+it*. Vulg. \\+it le Seigneur, notre Dieu\\+it*. — \\+it Et nous lui avons désobéi\\+it*. Vulg. \\+it Nous avons manqué de foi en lui, nous défiant de lui, et nous ne lui avons pas été dociles\\+it*.*",
+        "NAB": "have sinned in the LORD'S sight",
+        "VAT_ES": "Porque hemos pecado contra el Señor,",
+        "CEI": "perché abbiamo offeso il Signore,"
+      }
     },
     "18": {
       "seq": 18,
@@ -171,7 +307,15 @@
         "VUL": 18,
         "LXX": 18
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἠπειθήσαμεν αὐτῷ, καὶ οὐκ ἠκούσαμεν τῆς φωνῆς Κυρίου θεοῦ ἡμῶν πορεύεσθαι τοῖς προστάγμασιν Κυρίου οἷς ἔδωκεν κατὰ πρόσωπον ἡμῶν,",
+        "VUL": "et non fuimus subjectibiles illi,/ et non audivimus vocem Domini Dei nostri,/ ut ambularemus in mandatis ejus, quæ dedit nobis./",
+        "SYN": "и не покорялись Ему, и не слушали гласа Господа Бога нашего, чтобы ходить в повелениях Господа, которые Он дал пред лицем нашим.",
+        "NEO": "et nous lui avons désobéi. Nous n’avons pas écouté la voix du Seigneur notre Dieu, en suivant les commandements du Seigneur, qu’il a donnés devant nous.",
+        "NAB": "and disobeyed him. We have neither heeded the voice of the LORD, our God, nor followed the precepts which the LORD set before us.",
+        "VAT_ES": "le hemos sido infieles y no hemos escuchado la voz del Señor, nuestro Dios, que nos mandaba seguir los preceptos que él puso delante de nosotros.",
+        "CEI": "gli abbiamo disobbedito, non abbiamo ascoltato la voce del Signore nostro Dio per camminare secondo i decreti che il Signore ci aveva messi dinanzi."
+      }
     },
     "19": {
       "seq": 19,
@@ -180,7 +324,15 @@
         "VUL": 19,
         "LXX": 19
       },
-      "text": {}
+      "text": {
+        "LXX": "ἀπὸ τῆς ἡμέρας ἧς ἐξήγαγεν Κύριος τοὺς πατέρας ἡμῶν ἐκ γῆς Αἰγύπτου καὶ ἕως τῆς ἡμέρας ταύτης ἤμεθα ἀπειθοῦντες πρὸς Κύριον θεὸν ἡμῶν, καὶ ἐσχεδιάζομεν πρὸς τὸ μὴ ἀκούειν τῆς φωνῆς αὐτοῦ.",
+        "VUL": "A die qua eduxit patres nostros de terra Ægypti,/ usque ad diem hanc,/ eramus incredibiles ad Dominum Deum nostrum :/ et dissipati recessimus, ne audiremus vocem ipsius :/",
+        "SYN": "С того дня, в который Господь вывел отцов наших из земли Египетской, и до сего дня мы были непокорны пред Господом Богом нашим и небрегли о том, что не слушали гласа Его.",
+        "NEO": "Depuis le jour où le Seigneur a tiré nos pères du pays d’Égypte, jusqu’à aujourd’hui, nous avons été indociles envers le Seigneur notre Dieu, et dans notre folie+ 1:19 \\+it Et dans notre folie\\+it* etc., ; m. à m., d’après le grec : \\+it et nous avons eu la légèreté de nous refuser à entendre sa voix\\+it*.* nous nous sommes détournés, pour ne pas entendre sa voix.",
+        "NAB": "From the time the LORD led our fathers out of the land of Egypt until the present day, we have been disobedient to the LORD, our God, and only too ready to disregard his voice.",
+        "VAT_ES": "Desde el día en que el Señor hizo salir a nuestros padres del país de Egipto, hasta el día de hoy, hemos sido infieles al Señor, nuestro Dios, y no nos hemos preocupado por escuchar su voz.",
+        "CEI": "Da quando il Signore fece uscire i nostri padri dall'Egitto fino ad oggi noi ci siamo ribellati al Signore nostro Dio e ci siamo ostinati a non ascoltare la sua voce."
+      }
     },
     "20": {
       "seq": 20,
@@ -189,7 +341,15 @@
         "VUL": 20,
         "LXX": 20
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ἐκολλήθη εἰς ἡμᾶς τὰ κακὰ καὶ ἡ ἀρὰ ἣν συνέταξεν Κύριος τῷ Μωυσῇ παιδὶ αὐτοῦ ἐν ἡμέρᾳ ᾗ ἐξήγαγεν τοὺς πατέρας ἡμῶν δοῦναι ἡμῖν γῆν ῥέουσαν γάλα καὶ μέλι, ὡς ἡ ἡμέρα αὕτη.",
+        "VUL": "et adhæserunt nobis multa mala et maledictiones/ quæ constituit Dominus Moysi servo suo,/ qui eduxit patres nostros de terra Ægypti,/ dare nobis terram fluentem lac et mel, sicut hodierna die./",
+        "SYN": "Посему и постигли нас бедствия и клятва, - как сегодня, - которую определил Господь пред рабом Своим Моисеем в тот день, в который вывел отцов наших из земли Египетской, чтобы дать нам землю, текущую молоком и медом.",
+        "NEO": "Aussi, comme on le voit* en ce jour, de grands malheurs+ 1:20 \\+it De grands malheurs\\+it*. Grec, \\+it les malheurs\\+it*.* se sont attachés à nous+ 1:20 Dan 9,11 voir Lev 26,14-39; Deu 11,26-28; 27,15-26; 28,15-68; 29,20.*, ainsi que la malédiction que le Seigneur a prononcée, par l’intermédiaire de Moïse, son serviteur, qui a fait sortir nos pères du pays d’Égypte, pour nous donner un pays où coulent le lait et le miel+ 1:20 Jer 11,5.*.",
+        "NAB": "And the evils and the curse which the LORD enjoined upon Moses, his servant, at the time he led our fathers forth from the land of Egypt to give us the land flowing with milk and honey, cling to us even today.",
+        "VAT_ES": "Por eso han caído sobre nosotros tantas calamidades, así como también la maldición que el Señor profirió por medio de Moisés, tu servidor, el día en que hizo salir a nuestros padres del país de Egipto, para darnos una tierra que mana leche y miel. Esto es lo que nos sucede en el día de hoy.",
+        "CEI": "Così, come oggi costatiamo, ci son venuti addosso tanti mali insieme con la maledizione che il Signore aveva minacciata per mezzo di Mosè suo servo, quando fece uscire i nostri padri dall'Egitto per concederci un paese in cui scorre latte e miele."
+      }
     },
     "21": {
       "seq": 21,
@@ -198,7 +358,15 @@
         "VUL": 21,
         "LXX": 21
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ οὐκ ἠκούσαμεν τῆς φωνῆς Κυρίου τοῦ θεοῦ ἡμῶν κατὰ πάντας τοὺς λόγους τῶν προφητῶν ὧν ἀπέστειλεν πρὸς ἡμᾶς,",
+        "VUL": "Et non audivimus vocem Domini Dei nostri,/ secundum omnia verba prophetarum quos misit ad nos :/",
+        "SYN": "И не слушали мы гласа Господа Бога нашего во всех словах пророков, которых Он посылал к нам,",
+        "NEO": "Nous n’avons pas écouté la voix du Seigneur, notre Dieu, selon toutes les paroles des prophètes, qu’il a envoyés vers nous.",
+        "NAB": "For we did not heed the voice of the LORD, our God, in all the words of the prophets whom he sent us,",
+        "VAT_ES": "Nosotros no hemos escuchado la voz del Señor, nuestro Dios, conforme a todas las palabras de los profetas que él nos envió.",
+        "CEI": "Non abbiamo ascoltato la voce del Signore nostro Dio, secondo le parole dei profeti che egli ci ha mandato:"
+      }
     },
     "22": {
       "seq": 22,
@@ -207,7 +375,15 @@
         "VUL": 22,
         "LXX": 22
       },
-      "text": {}
+      "text": {
+        "LXX": "καὶ ᾠχόμεθα ἕκαστος ἐν διανοίᾳ καρδίας αὐτοῦ τῆς πονηρᾶς ἐργάζεσθαι θεοῖς ἑτέροις, ποιῆσαι τὰ κακὰ κατ’ ὀφθαλμοὺς Κυρίου θεοῦ ἡμῶν.",
+        "VUL": "et abivimus unusquisque in sensum cordis nostri maligni,/ operari diis alienis,/ facientes mala ante oculos Domini Dei nostri.]",
+        "SYN": "и ходили каждый по мыслям злого сердца своего, служа иным богам, совершая злые дела пред очами Господа Бога нашего.",
+        "NEO": "Et nous sommes allés, chacun selon l’inclination de son cœur méchant, servir des dieux étrangers, faire le mal sous les yeux du Seigneur notre Dieu.",
+        "NAB": "but each one of us went off after the devices of our own wicked hearts, served other gods, and did evil in the sight of the LORD, our God.",
+        "VAT_ES": "Cada uno se dejó llevar por los caprichos de su corazón perverso, sirviendo a otros dioses y haciendo el mal a los ojos del Señor, nuestro Dios.",
+        "CEI": "ma ciascuno di noi ha seguito le perverse inclinazioni del suo cuore, ha servito dei stranieri e ha fatto ciò che è male agli occhi del Signore nostro Dio."
+      }
     }
   }
 }
