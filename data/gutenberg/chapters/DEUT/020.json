@@ -19,7 +19,14 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "כִּֽי תֵצֵ֨א לַמִּלְחָמָ֜ה עַל אֹיְבֶ֗יךָ וְֽרָאִ֜יתָ ס֤וּס וָרֶ֨כֶב֙ עַ֚ם רַ֣ב מִמְּךָ֔ לֹ֥א תִירָ֖א מֵהֶ֑ם כִּֽי יְהוָ֤ה אֱלֹהֶ֨יךָ֙ עִמָּ֔ךְ הַמַּֽעַלְךָ֖ מֵאֶ֥רֶץ מִצְרָֽיִם׃"
+        "WLC": "כִּֽי תֵצֵ֨א לַ/מִּלְחָמָ֜ה עַל אֹיְבֶ֗י/ךָ וְֽ/רָאִ֜יתָ ס֤וּס וָ/רֶ֨כֶב֙ עַ֚ם רַ֣ב מִמְּ/ךָ֔ לֹ֥א תִירָ֖א מֵ/הֶ֑ם כִּֽי יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ עִמָּ֔/ךְ הַ/מַּֽעַלְ/ךָ֖ מֵ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "Ἐὰν δὲ ἐξέλθῃς εἰς πόλεμον ἐπὶ τοὺς ἐχθρούς σου, καὶ ἴδῃς ἵππον καὶ ἀναβάτην καὶ λαὸν πλείονά σου, οὐ φοβηθήσῃ ἀπ’ αὐτῶν· ὅτι Κύριος ὁ θεός σου μετὰ σοῦ, ὁ ἀναβιβάσας σε ἐκ γῆς Αἰγύπτου.",
+        "VUL": "Si exieris ad bellum contra hostes tuos, et videris equitatus et currus, et majorem quam tu habeas adversarii exercitus multitudinem, non timebis eos : quia Dominus Deus tuus tecum est, qui eduxit te de terra Ægypti.",
+        "SYN": "Когда ты выйдешь на войну против врага твоего и увидишь коней и колесницы [и] народа более, нежели у тебя, то не бойся их, ибо с тобою Господь Бог твой, Который вывел тебя из земли Египетской.",
+        "NEO": "Lorsque tu sortiras pour combattre contre tes ennemis, et que tu verras des chevaux et des chars, un peuple plus nombreux que toi, tu ne les craindras pas, car \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, qui t’a fait monter du pays d’Égypte, est avec toi.",
+        "NAB": "\"When you go out to war against your enemies and you see horses and chariots and an army greater than your own, do not be afraid of them, for the LORD, your God, who brought you up from the land of Egypt, will be with you.",
+        "VAT_ES": "Cuando salgas a combatir contra tus enemigos y veas caballos, carros de guerra y un ejército más numeroso que tú, no les tengas miedo; el Señor, tu Dios el mismo que te hizo salir de Egipto, está contigo.",
+        "CEI": "Quando andrai in guerra contro i tuoi nemici e vedrai cavalli e carri e forze superiori a te, non li temere, perché è con te il Signore tuo Dio, che ti ha fatto uscire dal paese d'Egitto."
       }
     },
     "2": {
@@ -30,7 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "וְהָיָ֕ה כְּקָֽרָבְכֶ֖ם אֶל הַמִּלְחָמָ֑ה וְנִגַּ֥שׁ הַכֹּהֵ֖ן וְדִבֶּ֥ר אֶל הָעָֽם׃"
+        "WLC": "וְ/הָיָ֕ה כְּ/קָֽרָבְ/כֶ֖ם אֶל הַ/מִּלְחָמָ֑ה וְ/נִגַּ֥שׁ הַ/כֹּהֵ֖ן וְ/דִבֶּ֥ר אֶל הָ/עָֽם׃",
+        "LXX": "καὶ ἔσται ὅταν ἐγγίσῃς τῷ πολέμῳ, καὶ προσεγγίσας ὁ ἱερεὺς λαλήσει τῷ λαῷ",
+        "VUL": "Appropinquante autem jam prælio, stabit sacerdos ante aciem, et sic loquetur ad populum :",
+        "SYN": "Когда же приступаете к сражению, тогда пусть подойдет священник, и говорит народу,",
+        "NEO": "Quand vous vous disposerez au combat, le prêtre s’avancera et parlera au peuple.",
+        "NAB": "\"When you are about to go into battle, the priest shall come forward and say to the soldiers:",
+        "VAT_ES": "Y cuando ya estén prontos para entrar en combate, el sacerdote se adelantará y arengará a la tropa",
+        "CEI": "Quando sarete vicini alla battaglia, il sacerdote si farà avanti, parlerà al popolo"
       }
     },
     "3": {
@@ -41,7 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "וְאָמַ֤ר אֲלֵהֶם֙ שְׁמַ֣ע יִשְׂרָאֵ֔ל אַתֶּ֨ם קְרֵבִ֥ים הַיּ֛וֹם לַמִּלְחָמָ֖ה עַל אֹיְבֵיכֶ֑ם אַל יֵרַ֣ךְ לְבַבְכֶ֗ם אַל תִּֽירְא֧וּ וְאַֽל תַּחְפְּז֛וּ וְאַל תַּֽעַרְצ֖וּ מִפְּנֵיהֶֽם׃"
+        "WLC": "וְ/אָמַ֤ר אֲלֵ/הֶם֙ שְׁמַ֣ע יִשְׂרָאֵ֔ל אַתֶּ֨ם קְרֵבִ֥ים הַ/יּ֛וֹם לַ/מִּלְחָמָ֖ה עַל אֹיְבֵי/כֶ֑ם אַל יֵרַ֣ךְ לְבַבְ/כֶ֗ם אַל תִּֽירְא֧וּ וְ/אַֽל תַּחְפְּז֛וּ וְ/אַל תַּֽעַרְצ֖וּ מִ/פְּנֵי/הֶֽם׃",
+        "LXX": "καὶ ἐρεῖ πρὸς αὐτούς Ἄκουε, Ἰσραήλ· ὑμεῖς πορεύεσθε σήμερον εἰς τὸν πόλεμον ἐπὶ τοὺς ἐχθροὺς ὑμῶν, μὴ ἐκλυέσθω ἡ καρδία ὑμῶν, μὴ φοβεῖσθε μηδὲ θραύεσθε μηδὲ ἐκκλίνετε ἀπὸ προσώπου αὐτῶν·",
+        "VUL": "Audi, Israël : vos hodie contra inimicos vestros pugnam committitis : non pertimescat cor vestrum, nolite metuere, nolite cedere, nec formidetis eos :",
+        "SYN": "и скажет ему: слушай, Израиль! вы сегодня вступаете в сражение с врагами вашими, да не ослабеет сердце ваше, не бойтесь, не смущайтесь и не ужасайтесь их,",
+        "NEO": "Il leur dira : « Ecoute Israël ! Vous vous disposez aujourd’hui au combat contre vos ennemis ; que votre cœur ne faiblisse pas, soyez sans crainte, ne vous effrayez pas et ne soyez pas terrifiés devant eux ;",
+        "NAB": "'Hear, O Israel! Today you are going into battle against your enemies. Be not weakhearted or afraid; be neither alarmed nor frightened by them.",
+        "VAT_ES": "en estos términos: «Escucha, Israel. Ahora ustedes están próximos a entrar en batalla contra sus enemigos. &iexcl;Tengan valor! No teman, ni se angustien, ni tiemblen ante ellos,",
+        "CEI": "e gli dirà: Ascolta, Israele! Voi oggi siete prossimi a dar battaglia ai vostri nemici; il vostro cuore non venga meno; non temete, non vi smarrite e non vi spaventate dinanzi a loro,"
       }
     },
     "4": {
@@ -52,7 +73,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "כִּ֚י יְהוָ֣ה אֱלֹֽהֵיכֶ֔ם הַהֹלֵ֖ךְ עִמָּכֶ֑ם לְהִלָּחֵ֥ם לָכֶ֛ם עִם אֹיְבֵיכֶ֖ם לְהוֹשִׁ֥יעַ אֶתְכֶֽם׃"
+        "WLC": "כִּ֚י יְהוָ֣ה אֱלֹֽהֵי/כֶ֔ם הַ/הֹלֵ֖ךְ עִמָּ/כֶ֑ם לְ/הִלָּחֵ֥ם לָ/כֶ֛ם עִם אֹיְבֵי/כֶ֖ם לְ/הוֹשִׁ֥יעַ אֶתְ/כֶֽם׃",
+        "LXX": "ὅτι Κύριος ὁ θεὸς ὑμῶν ὁ προπορευόμενος μεθ’ ὑμῶν, συνεκπολεμῆσαι ὑμῖν τοὺς ἐχθροὺς ὑμῶν, διασῶσαι ὑμᾶς.",
+        "VUL": "quia Dominus Deus vester in medio vestri est, et pro vobis contra adversarios dimicabit, ut eruat vos de periculo.",
+        "SYN": "ибо Господь Бог ваш идет с вами, чтобы сразиться за вас с врагами вашими [и] спасти вас.",
+        "NEO": "car \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, marche avec vous, pour combattre pour vous contre vos ennemis et vous sauver. »",
+        "NAB": "For it is the LORD, your God, who goes with you to fight for you against your enemies and give you victory.'",
+        "VAT_ES": "porque el Señor, su Dios, los acompaña, y él combatirá en favor de ustedes para darles la victoria sobre sus enemigos».",
+        "CEI": "perché il Signore vostro Dio cammina con voi per combattere per voi contro i vostri nemici e per salvarvi."
       }
     },
     "5": {
@@ -63,7 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "וְדִבְּר֣וּ הַשֹּֽׁטְרִים֮ אֶל הָעָ֣ם לֵאמֹר֒ מִֽי הָאִ֞ישׁ אֲשֶׁ֨ר בָּנָ֤ה בַֽיִת חָדָשׁ֙ וְלֹ֣א חֲנָכ֔וֹ יֵלֵ֖ךְ וְיָשֹׁ֣ב לְבֵית֑וֹ פֶּן יָמוּת֙ בַּמִּלְחָמָ֔ה וְאִ֥ישׁ אַחֵ֖ר יַחְנְכֶֽנּוּ׃"
+        "WLC": "וְ/דִבְּר֣וּ הַ/שֹּֽׁטְרִים֮ אֶל הָ/עָ֣ם לֵ/אמֹר֒ מִֽי הָ/אִ֞ישׁ אֲשֶׁ֨ר בָּנָ֤ה בַֽיִת חָדָשׁ֙ וְ/לֹ֣א חֲנָכ֔/וֹ יֵלֵ֖ךְ וְ/יָשֹׁ֣ב לְ/בֵית֑/וֹ פֶּן יָמוּת֙ בַּ/מִּלְחָמָ֔ה וְ/אִ֥ישׁ אַחֵ֖ר יַחְנְכֶֽ/נּוּ׃",
+        "LXX": "καὶ λαλήσουσιν οἱ γραμματεῖς πρὸς τὸν λαὸν λέγοντες Τίς ὁ ἄνθρωπος ὁ οἰκοδομήσας οἰκίαν καινὴν καὶ οὐκ ἐνεκαίνισεν αὐτήν; πορευέσθω καὶ ἀποστραφήτω εἰς τὴν οἰκίαν αὐτοῦ, μὴ ἀποθάνῃ ἐν τῷ πολέμῳ καὶ ἄνθρωπος ἕτερος ἐνκαινιεῖ αὐτήν.",
+        "VUL": "Duces quoque per singulas turmas audiente exercitu proclamabunt : Quis est homo qui ædificavit domum novam, et non dedicavit eam ? vadat, et revertatur in domum suam, ne forte moriatur in bello, et alius dedicet eam.",
+        "SYN": "Надзиратели же пусть объявят народу, говоря: кто построил новый дом и не обновил его, тот пусть идет и возвратится в дом свой, дабы не умер на сражении, и другой не обновил его;",
+        "NEO": "Les officiers parleront ensuite au peuple, en disant : « Qui est-ce qui a bâti une maison neuve, et ne l’a pas encore dédiée ? Qu’il s’en aille et retourne chez lui, de peur qu’il ne meure dans la bataille et qu’un autre ne la dédie.",
+        "NAB": "\"Then the officials shall say to the soldiers, 'Is there anyone who has built a new house and not yet had the housewarming? Let him return home, lest he die in battle and another dedicate it.",
+        "VAT_ES": "Los escribas, por su parte, dirán a la tropa: «&iquest;Alguien construyó una casa nueva y todavía no la estrenó? Que se retire y vuelva a su casa, no sea que muera en el combate y otro hombre la estrene.",
+        "CEI": "I capi diranno al popolo: C'è qualcuno che abbia costruito una casa nuova e non l'abbia ancora inaugurata? Vada, torni a casa, perché non muoia in battaglia e altri inauguri la casa."
       }
     },
     "6": {
@@ -74,7 +109,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "וּמִֽי הָאִ֞ישׁ אֲשֶׁר נָטַ֥ע כֶּ֨רֶם֙ וְלֹ֣א חִלְּל֔וֹ יֵלֵ֖ךְ וְיָשֹׁ֣ב לְבֵית֑וֹ פֶּן יָמוּת֙ בַּמִּלְחָמָ֔ה וְאִ֥ישׁ אַחֵ֖ר יְחַלְּלֶֽנּוּ׃"
+        "WLC": "וּ/מִֽי הָ/אִ֞ישׁ אֲשֶׁר נָטַ֥ע כֶּ֨רֶם֙ וְ/לֹ֣א חִלְּל֔/וֹ יֵלֵ֖ךְ וְ/יָשֹׁ֣ב לְ/בֵית֑/וֹ פֶּן יָמוּת֙ בַּ/מִּלְחָמָ֔ה וְ/אִ֥ישׁ אַחֵ֖ר יְחַלְּלֶֽ/נּוּ׃",
+        "LXX": "καὶ τίς ὁ ἄνθρωπος ὅστις ἐφύτευσεν ἀμπελῶνα καὶ οὐκ εὐφράνθη ἐξ αὐτοῦ; πορευέσθω καὶ ἀποστραφήτω εἰς τὴν οἰκίαν αὐτοῦ, μὴ ἀποθάνῃ ἐν τῷ πολέμῳ καὶ ἄνθρωπος ἕτερος εὐφρανθήσεται ἐξ αὐτοῦ.",
+        "VUL": "Quis est homo qui plantavit vineam, et necdum fecit eam esse communem, de qua vesci omnibus liceat ? vadat, et revertatur in domum suam, ne forte moriatur in bello, et alius homo ejus fungatur officio.",
+        "SYN": "и кто насадил виноградник и не пользовался им, тот пусть идет и возвратится в дом свой, дабы не умер на сражении, и другой не воспользовался им;",
+        "NEO": "Qui est-ce qui a planté une vigne, et n’a pas encore joui de ses fruits ? Qu’il s’en aille et retourne chez lui, de peur qu’il ne meure dans la bataille et qu’un autre n’en jouisse.",
+        "NAB": "Is there anyone who has planted a vineyard and never yet enjoyed its fruits? Let him return home, lest he die in battle and another enjoy its fruits in his stead.",
+        "VAT_ES": "&iquest;Alguien plantó una viña y todavía no recogió los primeros frutos? Que se retire y vuelva a su casa, no sea que muera en el combate y otro hombre los recoja.",
+        "CEI": "C'è qualcuno che abbia piantato una vigna e non ne abbia ancora goduto il frutto? Vada, torni a casa, perché non muoia in battaglia e altri ne goda il frutto."
       }
     },
     "7": {
@@ -85,7 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "וּמִֽי הָאִ֞ישׁ אֲשֶׁר אֵרַ֤שׂ אִשָּׁה֙ וְלֹ֣א לְקָחָ֔הּ יֵלֵ֖ךְ וְיָשֹׁ֣ב לְבֵית֑וֹ פֶּן יָמוּת֙ בַּמִּלְחָמָ֔ה וְאִ֥ישׁ אַחֵ֖ר יִקָּחֶֽנָּה׃"
+        "WLC": "וּ/מִֽי הָ/אִ֞ישׁ אֲשֶׁר אֵרַ֤שׂ אִשָּׁה֙ וְ/לֹ֣א לְקָחָ֔/הּ יֵלֵ֖ךְ וְ/יָשֹׁ֣ב לְ/בֵית֑/וֹ פֶּן יָמוּת֙ בַּ/מִּלְחָמָ֔ה וְ/אִ֥ישׁ אַחֵ֖ר יִקָּחֶֽ/נָּה׃",
+        "LXX": "καὶ τίς ὁ ἄνθρωπος ὅστις μεμνήστευται γυναῖκα καὶ οὐκ ἔλαβεν αὐτήν; πορευέσθω καὶ ἀποστραφήτω εἰς τὴν οἰκίαν αὐτοῦ, μὴ ἀποθάνῃ ἐν τῷ πολέμῳ καὶ ἄνθρωπος ἕτερος λήμψεται αὐτήν.",
+        "VUL": "Quis est homo, qui despondit uxorem, et non accepit eam ? vadat, et revertatur in domum suam, ne forte moriatur in bello, et alius homo accipiat eam.",
+        "SYN": "и кто обручился с женою и не взял ее, тот пусть идет и возвратится в дом свой, дабы не умер на сражении, и другой не взял ее.",
+        "NEO": "Qui est-ce qui s’est fiancé à une femme, et ne l’a pas encore épousée ? Qu’il s’en aille et retourne chez lui, de peur qu’il ne meure dans la bataille et qu’un autre ne l’épouse. »",
+        "NAB": "Is there anyone who has betrothed a woman and not yet taken her as his wife? Let him return home, lest he die in battle and another take her to wife.'",
+        "VAT_ES": "&iquest;Alguien está comprometido con una mujer y todavía no se unió a ella? Que se retire y vuelva a su casa, no sea que muera en el combate y otro hombre se case con ella».",
+        "CEI": "C'è qualcuno che si sia fidanzato con una donna e non l'abbia ancora sposata? Vada, torni a casa, perché non muoia in battaglia e altri la sposi."
       }
     },
     "8": {
@@ -96,7 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "וְיָסְפ֣וּ הַשֹּׁטְרִים֮ לְדַבֵּ֣ר אֶל הָעָם֒ וְאָמְר֗וּ מִי הָאִ֤ישׁ הַיָּרֵא֙ וְרַ֣ךְ הַלֵּבָ֔ב יֵלֵ֖ךְ וְיָשֹׁ֣ב לְבֵית֑וֹ וְלֹ֥א יִמַּ֛ס אֶת לְבַ֥ב אֶחָ֖יו כִּלְבָבֽוֹ׃"
+        "WLC": "וְ/יָסְפ֣וּ הַ/שֹּׁטְרִים֮ לְ/דַבֵּ֣ר אֶל הָ/עָם֒ וְ/אָמְר֗וּ מִי הָ/אִ֤ישׁ הַ/יָּרֵא֙ וְ/רַ֣ךְ הַ/לֵּבָ֔ב יֵלֵ֖ךְ וְ/יָשֹׁ֣ב לְ/בֵית֑/וֹ וְ/לֹ֥א יִמַּ֛ס אֶת לְבַ֥ב אֶחָ֖י/ו כִּ/לְבָבֽ/וֹ׃",
+        "LXX": "καὶ προσθήσουσιν οἱ γραμματεῖς λαλῆσαι πρὸς τὸν λαὸν καὶ ἐροῦσιν Τίς ὁ ἄνθρωπος ὁ φοβούμενος καὶ δειλὸς τῇ καρδίᾳ; πορευέσθω καὶ ἀποστραφήτω εἰς τὴν οἰκίαν αὐτοῦ, ἵνα μὴ δειλιάνῃ τὴν καρδίαν τοῦ ἀδελφοῦ αὐτοῦ ὥσπερ ἡ αὐτοῦ.",
+        "VUL": "His dictis addent reliqua, et loquentur ad populum : Quis est homo formidolosus, et corde pavido ? vadat, et revertatur in domum suam, ne pavere faciat corda fratrum suorum, sicut ipse timore perterritus est.",
+        "SYN": "И еще объявят надзиратели народу, и скажут: кто боязлив и малодушен, тот пусть идет и возвратится в дом свой, дабы он не сделал робкими сердца братьев его, как его сердце.",
+        "NEO": "Les officiers parleront encore au peuple et diront : « Qui est-ce qui a peur et qui sent son cœur faiblir ? Qu’il s’en aille et retourne chez lui, afin que le cœur de ses frères ne défaille pas comme le sien. »",
+        "NAB": "In fine, the officials shall say to the soldiers, 'Is there anyone who is afraid and weakhearted? Let him return home, lest he make his fellows as fainthearted as himself.'",
+        "VAT_ES": "Además, los escribas harán esta advertencia a la tropa: «&iquest;Alguien tiene miedo y le falta valor? Que se retire y vuelva a su casa, no sea que transmita a sus hermanos su propia cobardía».",
+        "CEI": "I capi aggiungeranno al popolo: C'è qualcuno che abbia paura e cui venga meno il coraggio? Vada, torni a casa, perché il coraggio dei suoi fratelli non venga a mancare come il suo."
       }
     },
     "9": {
@@ -107,7 +163,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "וְהָיָ֛ה כְּכַלֹּ֥ת הַשֹּׁטְרִ֖ים לְדַבֵּ֣ר אֶל הָעָ֑ם וּפָֽקְד֛וּ שָׂרֵ֥י צְבָא֖וֹת בְּרֹ֥אשׁ הָעָֽם׃"
+        "WLC": "וְ/הָיָ֛ה כְּ/כַלֹּ֥ת הַ/שֹּׁטְרִ֖ים לְ/דַבֵּ֣ר אֶל הָ/עָ֑ם וּ/פָֽקְד֛וּ שָׂרֵ֥י צְבָא֖וֹת בְּ/רֹ֥אשׁ הָ/עָֽם׃",
+        "LXX": "καὶ ἔσται ὅταν παύσωνται οἱ γραμματεῖς λαλοῦντες πρὸς τὸν λαόν, καὶ καταστήσουσιν ἄρχοντας τῆς στρατιᾶς προηγουμένους τοῦ λαοῦ.",
+        "VUL": "Cumque siluerint duces exercitus, et finem loquendi fecerint, unusquisque suos ad bellandum cuneos præparabit.",
+        "SYN": "Когда надзиратели скажут все это народу, тогда должно поставить военных начальников в вожди народу.",
+        "NEO": "Quand les officiers auront achevé de parler au peuple, on placera les chefs des troupes à la tête du peuple.",
+        "NAB": "\"When the officials have finished speaking to the soldiers, military officers shall be appointed over the army.",
+        "VAT_ES": "Y cuando los escribas hayan terminado de instruir a la tropa, los jefes de batallones se pondrán al frente de ella.",
+        "CEI": "Quando i capi avranno finito di parlare al popolo, costituiranno i comandanti delle schiere alla testa del popolo."
       }
     },
     "10": {
@@ -118,7 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "WLC": "כִּֽי תִקְרַ֣ב אֶל עִ֔יר לְהִלָּחֵ֖ם עָלֶ֑יהָ וְקָרָ֥אתָ אֵלֶ֖יהָ לְשָׁלֽוֹם׃"
+        "WLC": "כִּֽי תִקְרַ֣ב אֶל עִ֔יר לְ/הִלָּחֵ֖ם עָלֶ֑י/הָ וְ/קָרָ֥אתָ אֵלֶ֖י/הָ לְ/שָׁלֽוֹם׃",
+        "LXX": "Ἐὰν δὲ προσέλθῃς πρὸς πόλιν ἐκπολεμῆσαι αὐτούς, καὶ ἐκκάλεσαι αὐτοὺς μετ’ εἰρήνης.",
+        "VUL": "Siquando accesseris ad expugnandam civitatem, offeres ei primum pacem.",
+        "SYN": "Когда подойдешь к городу, чтобы завоевать его, предложи ему мир;",
+        "NEO": "Lorsque tu t’approcheras d’une ville pour l’attaquer, tu lui offriras la paix.",
+        "NAB": "\"When you march up to attack a city, first offer it terms of peace.",
+        "VAT_ES": "Cuando te acerques a una ciudad para atacarla, primero le ofrecerás la paz.",
+        "CEI": "Quando ti avvicinerai a una città per attaccarla, le offrirai prima la pace."
       }
     },
     "11": {
@@ -129,7 +199,14 @@
         "LXX": 11
       },
       "text": {
-        "WLC": "וְהָיָה֙ אִם שָׁל֣וֹם תַּֽעַנְךָ֔ וּפָתְחָ֖ה לָ֑ךְ וְהָיָ֞ה כָּל הָעָ֣ם הַנִּמְצָא בָ֗הּ יִהְי֥וּ לְךָ֛ לָמַ֖ס וַעֲבָדֽוּךָ׃"
+        "WLC": "וְ/הָיָה֙ אִם שָׁל֣וֹם תַּֽעַנְ/ךָ֔ וּ/פָתְחָ֖ה לָ֑/ךְ וְ/הָיָ֞ה כָּל הָ/עָ֣ם הַ/נִּמְצָא בָ֗/הּ יִהְי֥וּ לְ/ךָ֛ לָ/מַ֖ס וַ/עֲבָדֽוּ/ךָ׃",
+        "LXX": "ἐὰν μὲν εἰρηνικὰ ἀποκριθῶσίν σοι καὶ ἀνοίξωσίν σοι, ἔσται πᾶς ὁ λαός, οἱ εὑρεθέντες ἐν αὐτῇ, ἔσονταί σοι φορολόγητοι καὶ ὑπήκοοί σου·",
+        "VUL": "Si receperit, et aperuerit tibi portas, cunctus populus, qui in ea est, salvabitur, et serviet tibi sub tributo.",
+        "SYN": "если он согласится на мир с тобою и отворит тебе _ворота,_ то весь народ, который найдется в нем, будет платить тебе дань и служить тебе;",
+        "NEO": "Si elle te fait une réponse de paix et t’ouvre ses portes, tout le peuple qui s’y trouvera te sera tributaire et te servira.",
+        "NAB": "If it agrees to your terms of peace and opens its gates to you, all the people to be found in it shall serve you in forced labor.",
+        "VAT_ES": "Si ella la acepta y te abre sus puertas, toda la población te pagará tributo y te servirá.",
+        "CEI": "Se accetta la pace e ti apre le sue porte, tutto il popolo che vi si troverà ti sarà tributario e ti servirà."
       }
     },
     "12": {
@@ -140,7 +217,14 @@
         "LXX": 12
       },
       "text": {
-        "WLC": "וְאִם לֹ֤א תַשְׁלִים֙ עִמָּ֔ךְ וְעָשְׂתָ֥ה עִמְּךָ֖ מִלְחָמָ֑ה וְצַרְתָּ֖ עָלֶֽיהָּ׃"
+        "WLC": "וְ/אִם לֹ֤א תַשְׁלִים֙ עִמָּ֔/ךְ וְ/עָשְׂתָ֥ה עִמְּ/ךָ֖ מִלְחָמָ֑ה וְ/צַרְתָּ֖ עָלֶֽי/הָּ׃",
+        "LXX": "ἐὰν δὲ μὴ ὑπακούσωσίν σοι καὶ ποιῶσιν πρὸς σὲ πόλεμον, περικαθιεῖς αὐτήν,",
+        "VUL": "Sin autem fdus inire noluerit, et cperit contra te bellum, oppugnabis eam.",
+        "SYN": "если же он не согласится на мир с тобою и будет вести с тобою войну, то осади его,",
+        "NEO": "Si elle ne fait pas la paix avec toi, et qu’elle veuille te faire la guerre, tu l’assiégeras et,",
+        "NAB": "But if it refuses to make peace with you and instead offers you battle, lay siege to it,",
+        "VAT_ES": "Pero si rehúsa el ofrecimiento de paz y te opone resistencia, deberás sitiarla.",
+        "CEI": "Ma se non vuol far pace con te e vorrà la guerra, allora l'assedierai."
       }
     },
     "13": {
@@ -151,7 +235,14 @@
         "LXX": 13
       },
       "text": {
-        "WLC": "וּנְתָנָ֛הּ יְהוָ֥ה אֱלֹהֶ֖יךָ בְּיָדֶ֑ךָ וְהִכִּיתָ֥ אֶת כָּל זְכוּרָ֖הּ לְפִי חָֽרֶב׃"
+        "WLC": "וּ/נְתָנָ֛/הּ יְהוָ֥ה אֱלֹהֶ֖י/ךָ בְּ/יָדֶ֑/ךָ וְ/הִכִּיתָ֥ אֶת כָּל זְכוּרָ֖/הּ לְ/פִי חָֽרֶב׃",
+        "LXX": "ἕως ἂν παραδῷ σοι αὐτὴν Κύριος ὁ θεός σου εἰς τὰς χεῖράς σου, καὶ πατάξεις πᾶν ἀρσενικὸν αὐτῆς ἐν φόνῳ μαχαίρας,",
+        "VUL": "Cumque tradiderit Dominus Deus tuus illam in manu tua, percuties omne quod in ea generis masculini est, in ore gladii,",
+        "SYN": "и _когда_ Господь Бог твой предаст его в руки твои, порази в нем весь мужеский пол острием меча;",
+        "NEO": "quand \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, l’aura livrée entre tes mains, tu feras passer tous les mâles au fil de l’épée.",
+        "NAB": "and when the LORD, your God, delivers it into your hand, put every male in it to the sword;",
+        "VAT_ES": "Cuando el Señor, tu Dios, la ponga en tus manos, tú pasarás al filo de la espada a todos sus varones.",
+        "CEI": "Quando il Signore tuo Dio l'avrà data nelle tue mani, ne colpirai a fil di spada tutti i maschi;"
       }
     },
     "14": {
@@ -162,7 +253,14 @@
         "LXX": 14
       },
       "text": {
-        "WLC": "רַ֣ק הַ֠נָּשִׁים וְהַטַּ֨ף וְהַבְּהֵמָ֜ה וְכֹל֩ אֲשֶׁ֨ר יִהְיֶ֥ה בָעִ֛יר כָּל שְׁלָלָ֖הּ תָּבֹ֣ז לָ֑ךְ וְאָֽכַלְתָּ֙ אֶת שְׁלַ֣ל אֹיְבֶ֔יךָ אֲשֶׁ֥ר נָתַ֛ן יְהוָ֥ה אֱלֹהֶ֖יךָ לָֽךְ׃"
+        "WLC": "רַ֣ק הַ֠/נָּשִׁים וְ/הַ/טַּ֨ף וְ/הַ/בְּהֵמָ֜ה וְ/כֹל֩ אֲשֶׁ֨ר יִהְיֶ֥ה בָ/עִ֛יר כָּל שְׁלָלָ֖/הּ תָּבֹ֣ז לָ֑/ךְ וְ/אָֽכַלְתָּ֙ אֶת שְׁלַ֣ל אֹיְבֶ֔י/ךָ אֲשֶׁ֥ר נָתַ֛ן יְהוָ֥ה אֱלֹהֶ֖י/ךָ לָֽ/ךְ׃",
+        "LXX": "πλὴν τῶν γυναικῶν καὶ τῆς ἀποσκευῆς· καὶ ὅσα ἂν ὑπάρχῃ ἐν τῇ πόλει καὶ πᾶσαν τὴν ἀπαρτίαν προνομεύσεις σεαυτῷ, καὶ φάγῃ πᾶσαν τὴν προνομὴν τῶν ἐχθρῶν σου ὧν Κύριος ὁ θεός σου δίδωσίν σοι.",
+        "VUL": "absque mulieribus et infantibus, jumentis et ceteris quæ in civitate sunt. Omnem prædam exercitui divides, et comedes de spoliis hostium tuorum, quæ Dominus Deus tuus dederit tibi.",
+        "SYN": "только жен и детей и скот и все, что в городе, всю добычу его возьми себе и пользуйся добычею врагов твоих, которых предал тебе Господь Бог твой;",
+        "NEO": "Mais les femmes, les enfants, le bétail, et tout ce qui sera dans la ville, tout son butin, tu le prendras pour toi, et tu pourras manger le butin de tes ennemis que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’aura donné.",
+        "NAB": "but the women and children and livestock and all else in it that is worth plundering you may take as your booty, and you may use this plunder of your enemies which the LORD, your God, has given you.",
+        "VAT_ES": "En cuanto a las mujeres, los niños, el ganado y cualquier otra cosa que haya en la ciudad, podrás retenerlos como botín, y disfrutar de los despojos de los enemigos que el Señor, tu Dios, te entrega.",
+        "CEI": "ma le donne, i bambini, il bestiame e quanto sarà nella città, tutto il suo bottino, li prenderai come tua preda; mangerai il bottino dei tuoi nemici, che il Signore tuo Dio ti avrà dato."
       }
     },
     "15": {
@@ -173,7 +271,14 @@
         "LXX": 15
       },
       "text": {
-        "WLC": "כֵּ֤ן תַּעֲשֶׂה֙ לְכָל הֶ֣עָרִ֔ים הָרְחֹקֹ֥ת מִמְּךָ֖ מְאֹ֑ד אֲשֶׁ֛ר לֹא מֵעָרֵ֥י הַגּֽוֹיִם הָאֵ֖לֶּה הֵֽנָּה׃"
+        "WLC": "כֵּ֤ן תַּעֲשֶׂה֙ לְ/כָל הֶ֣/עָרִ֔ים הָ/רְחֹקֹ֥ת מִמְּ/ךָ֖ מְאֹ֑ד אֲשֶׁ֛ר לֹא מֵ/עָרֵ֥י הַ/גּֽוֹיִם הָ/אֵ֖לֶּה הֵֽנָּה׃",
+        "LXX": "οὕτως ποιήσεις πάσας τὰς πόλεις τὰς μακρὰν οὔσας σου σφόδρα· οὐχὶ ἐκ τῶν πόλεων τῶν ἐθνῶν τούτων",
+        "VUL": "Sic facies cunctis civitatibus, quæ a te procul valde sunt, et non sunt de his urbibus, quas in possessionem accepturus es.",
+        "SYN": "так поступай со всеми городами, которые от тебя весьма далеко, которые не из _числа_ городов народов сих.",
+        "NEO": "C’est ainsi que tu agiras à l’égard de toutes les villes qui sont très loin de toi, et qui ne sont pas du nombre des villes de ces nations-ci.",
+        "NAB": "\"That is how you shall deal with any city at a considerable distance from you, which does not belong to the peoples of this land.",
+        "VAT_ES": "Así tratarás a todas las ciudades que estén muy alejadas de ti y que no pertenezcan a las naciones vecinas.",
+        "CEI": "Così farai per tutte le città che sono molto lontane da te e che non sono città di queste nazioni."
       }
     },
     "16": {
@@ -184,7 +289,14 @@
         "LXX": 16
       },
       "text": {
-        "WLC": "רַ֗ק מֵעָרֵ֤י הָֽעַמִּים֙ הָאֵ֔לֶּה אֲשֶׁר֙ יְהוָ֣ה אֱלֹהֶ֔יךָ נֹתֵ֥ן לְךָ֖ נַחֲלָ֑ה לֹ֥א תְחַיֶּ֖ה כָּל נְשָׁמָֽה׃"
+        "WLC": "רַ֗ק מֵ/עָרֵ֤י הָֽ/עַמִּים֙ הָ/אֵ֔לֶּה אֲשֶׁר֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ נֹתֵ֥ן לְ/ךָ֖ נַחֲלָ֑ה לֹ֥א תְחַיֶּ֖ה כָּל נְשָׁמָֽה׃",
+        "LXX": "ὧν Κύριος ὁ θεός σου δίδωσίν σοι κληρονομεῖν τὴν γῆν αὐτῶν, οὐ ζωγρήσετε πᾶν ἐνπνέον,",
+        "VUL": "De his autem civitatibus, quæ dabuntur tibi, nullum omnino permittes vivere :",
+        "SYN": "А в городах сих народов, которых Господь Бог твой дает тебе во владение, не оставляй в живых ни одной души,",
+        "NEO": "Mais quant aux villes de ces peuples que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te donne pour héritage, tu n’y laisseras la vie à rien de ce qui respire.",
+        "NAB": "But in the cities of those nations which the LORD, your God, is giving you as your heritage, you shall not leave a single soul alive.",
+        "VAT_ES": "Pero en las ciudades de esos pueblos que el Señor, tu Dios, te dará como herencia, no deberás dejar ningún sobreviviente.",
+        "CEI": "Soltanto nelle città di questi popoli che il Signore tuo Dio ti dà in eredità, non lascerai in vita alcun essere che respiri;"
       }
     },
     "17": {
@@ -195,7 +307,14 @@
         "LXX": 17
       },
       "text": {
-        "WLC": "כִּֽי הַחֲרֵ֣ם תַּחֲרִימֵ֗ם הַחִתִּ֤י וְהָאֱמֹרִי֙ הַכְּנַעֲנִ֣י וְהַפְּרִזִּ֔י הַחִוִּ֖י וְהַיְבוּסִ֑י כַּאֲשֶׁ֥ר צִוְּךָ֖ יְהוָ֥ה אֱלֹהֶֽיךָ׃"
+        "WLC": "כִּֽי הַחֲרֵ֣ם תַּחֲרִימֵ֗/ם הַ/חִתִּ֤י וְ/הָ/אֱמֹרִי֙ הַ/כְּנַעֲנִ֣י וְ/הַ/פְּרִזִּ֔י הַ/חִוִּ֖י וְ/הַ/יְבוּסִ֑י כַּ/אֲשֶׁ֥ר צִוְּ/ךָ֖ יְהוָ֥ה אֱלֹהֶֽי/ךָ׃",
+        "LXX": "ἀλλ’ ἢ ἀναθέματι ἀναθεματιεῖτε αὐτούς, τὸν Χετταῖον καὶ Ἀμορραῖον καὶ Χαναναῖον καὶ Φερεζαῖον καὶ Εὑαῖον καὶ Ἰεβουσαῖον, ὃν τρόπον ἐνετείλατό σοι Κύριος ὁ θεός σου·",
+        "VUL": "sed interficies in ore gladii, Hethæum videlicet, et Amorrhæum, et Chananæum, Pherezæum, et Hevæum, et Jebusæum, sicut præcepit tibi Dominus Deus tuus :",
+        "SYN": "но предай их заклятию: Хеттеев и Аморреев, и Хананеев, и Ферезеев, и Евеев, и Иевусеев, [и Гергесеев,] как повелел тебе Господь Бог твой,",
+        "NEO": "Car tu dévoueras ces peuples par anathème : les Hittites, les Amorrhéens, les Chananéens, les Phérézéens, les Hévéens et les Jébuséens, comme \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te l’a ordonné,",
+        "NAB": "You must doom them all - the Hittites, Amorites, Canaanites, Perizzites, Hivites and Jebusites - as the LORD, your God, has commanded you,",
+        "VAT_ES": "Consagrarás al exterminio total a los hititas, a los amorreos, a los cananeos, a los perizitas, a los jivitas y a los jebuseos, como te lo ordena el Señor, tu Dios,",
+        "CEI": "ma li voterai allo sterminio: cioè gli Hittiti, gli Amorrei, i Cananei, i Perizziti, gli Evei e i Gebusei, come il Signore tuo Dio ti ha comandato di fare,"
       }
     },
     "18": {
@@ -206,7 +325,14 @@
         "LXX": 18
       },
       "text": {
-        "WLC": "לְמַ֗עַן אֲשֶׁ֨ר לֹֽא יְלַמְּד֤וּ אֶתְכֶם֙ לַעֲשׂ֔וֹת כְּכֹל֙ תּֽוֹעֲבֹתָ֔ם אֲשֶׁ֥ר עָשׂ֖וּ לֵֽאלֹהֵיהֶ֑ם וַחֲטָאתֶ֖ם לַיהוָ֥ה אֱלֹהֵיכֶֽם׃"
+        "WLC": "לְמַ֗עַן אֲשֶׁ֨ר לֹֽא יְלַמְּד֤וּ אֶתְ/כֶם֙ לַ/עֲשׂ֔וֹת כְּ/כֹל֙ תּֽוֹעֲבֹתָ֔/ם אֲשֶׁ֥ר עָשׂ֖וּ לֵֽ/אלֹהֵי/הֶ֑ם וַ/חֲטָאתֶ֖ם לַ/יהוָ֥ה אֱלֹהֵי/כֶֽם׃",
+        "LXX": "ἵνα μὴ διδάξωσιν ὑμᾶς ποιεῖν πάντα τὰ βδελύγματα αὐτῶν ὅσα ἐποίησαν τοῖς θεοῖς αὐτῶν, καὶ ἁμαρτήσεσθε ἐναντίον Κυρίου τοῦ θεοῦ ὑμῶν.",
+        "VUL": "ne forte doceant vos facere cunctas abominationes, quas ipsi operati sunt diis suis, et peccetis in Dominum Deum vestrum.",
+        "SYN": "дабы они не научили вас делать такие же мерзости, какие они делали для богов своих, и дабы вы не грешили пред Господом Богом вашим.",
+        "NEO": "afin qu’ils ne vous apprennent pas à imiter toutes les abominations qu’ils font envers leurs dieux, et que vous ne péchiez pas contre \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu.",
+        "NAB": "lest they teach you to make any such abominable offerings as they make to their gods, and you thus sin against the LORD, your God.",
+        "VAT_ES": "para que ellos no les enseñen a imitar todas las abominaciones que cometen en honor de sus dioses. Así ustedes no pecarán contra el Señor, su Dios.",
+        "CEI": "perché essi non v'insegnino a commettere tutti gli abomini che fanno per i loro dei e voi non pecchiate contro il Signore vostro Dio."
       }
     },
     "19": {
@@ -217,7 +343,14 @@
         "LXX": 19
       },
       "text": {
-        "WLC": "כִּֽי תָצ֣וּר אֶל עִיר֩ יָמִ֨ים רַבִּ֜ים לְֽהִלָּחֵ֧ם עָלֶ֣יהָ לְתָפְשָׂ֗הּ לֹֽא תַשְׁחִ֤ית אֶת עֵצָהּ֙ לִנְדֹּ֤חַ עָלָיו֙ גַּרְזֶ֔ן כִּ֚י מִמֶּ֣נּוּ תֹאכֵ֔ל וְאֹת֖וֹ לֹ֣א תִכְרֹ֑ת כִּ֤י הָֽאָדָם֙ עֵ֣ץ הַשָּׂדֶ֔ה לָבֹ֥א מִפָּנֶ֖יךָ בַּמָּצֽוֹר׃"
+        "WLC": "כִּֽי תָצ֣וּר אֶל עִיר֩ יָמִ֨ים רַבִּ֜ים לְֽ/הִלָּחֵ֧ם עָלֶ֣י/הָ לְ/תָפְשָׂ֗/הּ לֹֽא תַשְׁחִ֤ית אֶת עֵצָ/הּ֙ לִ/נְדֹּ֤חַ עָלָי/ו֙ גַּרְזֶ֔ן כִּ֚י מִמֶּ֣/נּוּ תֹאכֵ֔ל וְ/אֹת֖/וֹ לֹ֣א תִכְרֹ֑ת כִּ֤י הָֽ/אָדָם֙ עֵ֣ץ הַ/שָּׂדֶ֔ה לָ/בֹ֥א מִ/פָּנֶ֖י/ךָ בַּ/מָּצֽוֹר׃",
+        "LXX": "Ἐὰν δὲ περικαθίσῃς περὶ πόλιν μίαν ἡμέρας πλείους ἐκπολεμῆσαι αὐτὴν εἰς κατάλημψιν αὐτῆς, οὐχὶ ἐξολεθρεύσεις τὰ δένδρα αὐτῆς ἐπιβαλεῖν ἐπ’ αὐτὰ σίδηρον· ἀλλ’ ἢ ἀπ’ αὐτοῦ φάγῃ, αὐτὸ δὲ οὐκ ἐκκόψεις. μὴ ἄνθρωπος τὸ ξύλον τὸ ἐν τῷ ἀγρῷ, εἰσελθεῖν ἀπὸ προσώπου σου εἰς τὸν χάρακα;",
+        "VUL": "Quando obsederis civitatem multo tempore, et munitionibus circumdederis ut expugnes eam, non succides arbores, de quibus vesci potest, nec securibus per circuitum debes vastare regionem : quoniam lignum est, et non homo, nec potest bellantium contra te augere numerum.",
+        "SYN": "Если долгое время будешь держать в осаде [какой-нибудь] город, чтобы завоевать его и взять его, то не порти дерев его, от которых можно питаться, и не опустошай окрестностей, ибо дерево на поле не человек, чтобы могло уйти от тебя в укрепление;",
+        "NEO": "Si tu assièges une ville pendant de longs jours, combattant contre elle pour t’en emparer, tu ne détruiras pas les arbres en y portant la hache ; car tu en mangeras le fruit, et tu ne les abattras pas : l’arbre des champs est-il un homme pour que tu l’assièges ?",
+        "NAB": "\"When you are at war with a city and have to lay siege to it for a long time before you capture it, you shall not destroy its trees by putting an ax to them. You may eat their fruit, but you must not cut down the trees. After all, are the trees of the field men, that they should be included in your siege?",
+        "VAT_ES": "Si para conquistar una ciudad tienes que asediarla mucho tiempo, no destruirás sus árboles a golpes de hacha. Come de sus frutos, pero no los cortes. &iquest;Acaso los árboles del campo son hombres, para que los hagas también a ellos víctimas del asedio?",
+        "CEI": "Quando cingerai d'assedio una città per lungo tempo, per espugnarla e conquistarla, non ne distruggerai gli alberi colpendoli con la scure; ne mangerai il frutto, ma non li taglierai, perché l'albero della campagna è forse un uomo, per essere coinvolto nell'assedio?"
       }
     },
     "20": {
@@ -228,7 +361,14 @@
         "LXX": 20
       },
       "text": {
-        "WLC": "רַ֞ק עֵ֣ץ אֲשֶׁר תֵּדַ֗ע כִּֽי לֹא עֵ֤ץ מַאֲכָל֙ ה֔וּא אֹת֥וֹ תַשְׁחִ֖ית וְכָרָ֑תָּ וּבָנִ֣יתָ מָצ֗וֹר עַל הָעִיר֙ אֲשֶׁר הִ֨וא עֹשָׂ֧ה עִמְּךָ֛ מִלְחָמָ֖ה עַ֥ד רִדְתָּֽהּ׃"
+        "WLC": "רַ֞ק עֵ֣ץ אֲשֶׁר תֵּדַ֗ע כִּֽי לֹא עֵ֤ץ מַאֲכָל֙ ה֔וּא אֹת֥/וֹ תַשְׁחִ֖ית וְ/כָרָ֑תָּ וּ/בָנִ֣יתָ מָצ֗וֹר עַל הָ/עִיר֙ אֲשֶׁר הִ֨וא עֹשָׂ֧ה עִמְּ/ךָ֛ מִלְחָמָ֖ה עַ֥ד רִדְתָּֽ/הּ׃",
+        "LXX": "ἀλλὰ ξύλον ὃ ἐπίστασαι ὅτι οὐ καρπόβρωτόν ἐστιν, τοῦτο ὀλεθρεύσεις καὶ ἐκκόψεις καὶ οἰκοδομήσεις χαράκωσιν ἐπὶ τὴν πόλιν ἥτις ποιεῖ πρὸς σὲ τὸν πόλεμον, ἕως ἂν παραδοθῇ.",
+        "VUL": "Si qua autem ligna non sunt pomifera, sed agrestia, et in ceteros apta usus, succide, et instrue machinas, donec capias civitatem, quæ contra te dimicat.",
+        "SYN": "только те дерева, о которых ты знаешь, что они ничего не приносят в пищу, можешь портить и рубить, и строить укрепление против города, который ведет с тобою войну, доколе не покоришь его.",
+        "NEO": "Mais les arbres que tu sais n’être pas des arbres servant à la nourriture, tu pourras les détruire et les abattre, et en construire des machines contre la ville qui est en guerre avec toi, jusqu’à ce qu’elle succombe.",
+        "NAB": "However, those trees which you know are not fruit trees you may destroy, cutting them down to build siegeworks with which to reduce the city that is resisting you.",
+        "VAT_ES": "Podrás destruir y cortar, en cambio, los árboles que sepas que no dan ningún fruto, a fin de construir máquinas de asedio contra la ciudad que te oponga resistencia, hasta que logres someterla.",
+        "CEI": "Soltanto potrai distruggere e recidere gli alberi che saprai non essere alberi da frutto, per costruire opere d'assedio contro la città che è in guerra con te, finché non sia caduta."
       }
     }
   }

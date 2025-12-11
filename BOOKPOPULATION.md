@@ -32,8 +32,8 @@ Tracking progress of populating Bible chapters with text in all 9 languages.
 | **Genesis** | GENE | 50 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
 | **Exodus** | EXO | 40 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
 | **Leviticus** | LEVI | 27 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
-| Numbers | NUME | 36 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Deuteronomy | DEUT | 34 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| **Numbers** | NUME | 36 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Deuteronomy** | DEUT | 34 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
 
 ### Old Testament - Historical Books
 

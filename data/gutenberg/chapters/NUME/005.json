@@ -19,7 +19,14 @@
         "LXX": 1
       },
       "text": {
-        "WLC": "וַיְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּאמֹֽר׃"
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses:",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse a Mosè:"
       }
     },
     "2": {
@@ -30,7 +37,14 @@
         "LXX": 2
       },
       "text": {
-        "WLC": "צַ֚ו אֶת בְּנֵ֣י יִשְׂרָאֵ֔ל וִֽישַׁלְּחוּ֙ מִן הַֽמַּחֲנֶ֔ה כָּל צָר֖וּעַ וְכָל זָ֑ב וְכֹ֖ל טָמֵ֥א לָנָֽפֶשׁ׃"
+        "WLC": "צַ֚ו אֶת בְּנֵ֣י יִשְׂרָאֵ֔ל וִֽ/ישַׁלְּחוּ֙ מִן הַֽ/מַּחֲנֶ֔ה כָּל צָר֖וּעַ וְ/כָל זָ֑ב וְ/כֹ֖ל טָמֵ֥א לָ/נָֽפֶשׁ׃",
+        "LXX": "Πρόσταξον τοῖς υἱοῖς Ἰσραήλ, καὶ ἐξαποστειλάτωσαν ἐκ τῆς παρεμβολῆς πάντα λεπρὸν καὶ πάντα γονορρυῆ καὶ πάντα ἀκάθαρτον ἐπὶ ψυχῇ·",
+        "VUL": "Præcipe filiis Israël, ut ejiciant de castris omnem leprosum, et qui semine fluit, pollutusque est super mortuo :",
+        "SYN": "повели сынам Израилевым выслать из стана всех прокаженных, и всех имеющих истечение, и всех осквернившихся от мертвого,",
+        "NEO": "« Ordonne aux enfants d’Israël de faire sortir du camp quiconque à la lèpre et quiconque a une gonorrhée, et quiconque est souillé par un cadavre.",
+        "NAB": "\"Order the Israelites to expel from camp every leper, and everyone suffering from a discharge, and everyone who has become unclean by contact with a corpse.",
+        "VAT_ES": "Manda a los israelitas que alejen del campamento a todos los leprosos, a todos los que padecen de blenorrea y a todos los que se han vuelto impuros a causa de un cadáver.",
+        "CEI": "\"Ordina agli Israeliti che allontanino dall'accampamento ogni lebbroso, chiunque soffre di gonorrea o è impuro per il contatto con un cadavere."
       }
     },
     "3": {
@@ -41,7 +55,14 @@
         "LXX": 3
       },
       "text": {
-        "WLC": "מִזָּכָ֤ר עַד נְקֵבָה֙ תְּשַׁלֵּ֔חוּ אֶל מִח֥וּץ לַֽמַּחֲנֶ֖ה תְּשַׁלְּח֑וּם וְלֹ֤א יְטַמְּאוּ֙ אֶת מַ֣חֲנֵיהֶ֔ם אֲשֶׁ֥ר אֲנִ֖י שֹׁכֵ֥ן בְּתוֹכָֽם׃"
+        "WLC": "מִ/זָּכָ֤ר עַד נְקֵבָה֙ תְּשַׁלֵּ֔חוּ אֶל מִ/ח֥וּץ לַֽ/מַּחֲנֶ֖ה תְּשַׁלְּח֑וּ/ם וְ/לֹ֤א יְטַמְּאוּ֙ אֶת מַ֣חֲנֵי/הֶ֔ם אֲשֶׁ֥ר אֲנִ֖י שֹׁכֵ֥ן בְּ/תוֹכָֽ/ם׃",
+        "LXX": "ἀπὸ ἀρσενικοῦ ἕως θηλυκοῦ, ἐξαποστείλατε ἔξω τῆς παρεμβολῆς, καὶ οὐ μὴ μιανοῦσιν τὰς παρεμβολὰς αὐτῶν, ἐν οἷς ἐγὼ καταγίνομαι ἐν αὐτοῖς.",
+        "VUL": "tam masculum quam feminam ejicite de castris, ne contaminent ea cum habitaverint vobiscum.",
+        "SYN": "и мужчин и женщин вышлите, за стан вышлите их, чтобы не оскверняли они станов своих, среди которых Я живу.",
+        "NEO": "Hommes ou femmes, vous les ferez sortir du camp, afin qu’ils ne souillent pas leur camp, au milieu duquel j’habite. »",
+        "NAB": "Male and female alike, you shall compel them to go out of the camp; they are not to defile the camp in which I dwell.\"",
+        "VAT_ES": "Alejen tanto a los hombres como a las mujeres, para que no han impuro el campamento de aquellos entre quienes yo habito.",
+        "CEI": "Allontanerete sia i maschi sia le femmine; li allontanerete dall'accampamento perché non contaminino il loro accampamento in mezzo al quale io abito\"."
       }
     },
     "4": {
@@ -52,7 +73,14 @@
         "LXX": 4
       },
       "text": {
-        "WLC": "וַיַּֽעֲשׂוּ כֵן֙ בְּנֵ֣י יִשְׂרָאֵ֔ל וַיְשַׁלְּח֣וּ אוֹתָ֔ם אֶל מִח֖וּץ לַֽמַּחֲנֶ֑ה כַּאֲשֶׁ֨ר דִּבֶּ֤ר יְהוָה֙ אֶל מֹשֶׁ֔ה כֵּ֥ן עָשׂ֖וּ בְּנֵ֥י יִשְׂרָאֵֽל׃"
+        "WLC": "וַ/יַּֽעֲשׂוּ כֵן֙ בְּנֵ֣י יִשְׂרָאֵ֔ל וַ/יְשַׁלְּח֣וּ אוֹתָ֔/ם אֶל מִ/ח֖וּץ לַֽ/מַּחֲנֶ֑ה כַּ/אֲשֶׁ֨ר דִּבֶּ֤ר יְהוָה֙ אֶל מֹשֶׁ֔ה כֵּ֥ן עָשׂ֖וּ בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐποίησαν οὕτως οἱ υἱοὶ Ἰσραήλ, καὶ ἐξαπέστειλαν αὐτοὺς ἔξω τῆς παρεμβολῆς· καθὰ ἐλάλησεν Κύριος Μωυσῇ, οὕτως ἐποίησαν οἱ υἱοὶ Ἰσραήλ.",
+        "VUL": "Feceruntque ita filii Israël, et ejecerunt eos extra castra, sicut locutus erat Dominus Moysi.",
+        "SYN": "И сделали так сыны Израилевы, и выслали их вон из стана; как говорил Господь Моисею, так и сделали сыны Израилевы.",
+        "NEO": "Les enfants d’Israël firent ainsi, et ils les firent sortir hors du camp ; comme \\+w Yahweh|strong=\"H3068\"\\+w** l’avait ordonné à Moïse, ainsi firent les enfants d’Israël.",
+        "NAB": "The Israelites obeyed the command that the LORD had given Moses; they expelled them from the camp.",
+        "VAT_ES": "Así lo hicieron los israelitas: alejaron del campamento a los impuros, como el Señor le había dicho a Moisés.",
+        "CEI": "Gli Israeliti fecero così e li allontanarono dall'accampamento. Come il Signore aveva ordinato a Mosè, così fecero gli Israeliti."
       }
     },
     "5": {
@@ -63,7 +91,14 @@
         "LXX": 5
       },
       "text": {
-        "WLC": "וַיְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּאמֹֽר׃"
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "Luego el Señor dijo a Moisés:",
+        "CEI": "Il Signore aggiunse a Mosè:"
       }
     },
     "6": {
@@ -74,7 +109,14 @@
         "LXX": 6
       },
       "text": {
-        "WLC": "דַּבֵּר֮ אֶל בְּנֵ֣י יִשְׂרָאֵל֒ אִ֣ישׁ אֽוֹ אִשָּׁ֗ה כִּ֤י יַעֲשׂוּ֙ מִכָּל חַטֹּ֣את הָֽאָדָ֔ם לִמְעֹ֥ל מַ֖עַל בַּיהוָ֑ה וְאָֽשְׁמָ֖ה הַנֶּ֥פֶשׁ הַהִֽוא׃"
+        "WLC": "דַּבֵּר֮ אֶל בְּנֵ֣י יִשְׂרָאֵל֒ אִ֣ישׁ אֽוֹ אִשָּׁ֗ה כִּ֤י יַעֲשׂוּ֙ מִ/כָּל חַטֹּ֣את הָֽ/אָדָ֔ם לִ/מְעֹ֥ל מַ֖עַל בַּ/יהוָ֑ה וְ/אָֽשְׁמָ֖ה הַ/נֶּ֥פֶשׁ הַ/הִֽוא׃",
+        "LXX": "Λάλησον τοῖς υἱοῖς Ἰσραὴλ λέγων Ἀνὴρ ἢ γυνὴ ὅστις ἐὰν ποιήσῃ ἀπὸ τῶν ἁμαρτιῶν τῶν ἀνθρωπίνων, καὶ παριδὼν παρίδῃ καὶ πλημμελῶν πλημμελήσῃ ἡ ψυχὴ ἐκείνη,",
+        "VUL": "Loquere ad filios Israël : Vir, sive mulier, cum fecerint ex omnibus peccatis, quæ solent hominibus accidere, et per negligentiam transgressi fuerint mandatum Domini, atque deliquerint,",
+        "SYN": "скажи сынам Израилевым: если мужчина или женщина сделает какой-либо грех против человека, и чрез это сделает преступление против Господа, и виновна будет душа та,",
+        "NEO": "« Dis aux enfants d’Israël : Si quelqu’un, homme ou femme, commet quelqu’un de tous les péchés qui cause un préjudice au prochain, en se rendant infidèle envers \\+w Yahweh|strong=\"H3068\"\\+w**, et qu’il se soit rendu coupable,",
+        "NAB": "\"Tell the Israelites: If a man (or a woman) commits a fault against his fellow man and wrongs him, thus breaking faith with the LORD,",
+        "VAT_ES": "Habla en estos términos a los israelitas: Si un hombre o una mujer cometen una falta en perjuicio de otro, mostrándose así infieles al Señor, esa persona es culpable.",
+        "CEI": "\"Ordina agli Israeliti: Quando un uomo o una donna avrà fatto un torto a qualcuno, peccando contro il Signore, questa persona si sarà resa colpevole."
       }
     },
     "7": {
@@ -85,7 +127,14 @@
         "LXX": 7
       },
       "text": {
-        "WLC": "וְהִתְוַדּ֗וּ אֶֽת חַטָּאתָם֮ אֲשֶׁ֣ר עָשׂוּ֒ וְהֵשִׁ֤יב אֶת אֲשָׁמוֹ֙ בְּרֹאשׁ֔וֹ וַחֲמִישִׁת֖וֹ יֹסֵ֣ף עָלָ֑יו וְנָתַ֕ן לַאֲשֶׁ֖ר אָשַׁ֥ם לֽוֹ׃"
+        "WLC": "וְ/הִתְוַדּ֗וּ אֶֽת חַטָּאתָ/ם֮ אֲשֶׁ֣ר עָשׂוּ֒ וְ/הֵשִׁ֤יב אֶת אֲשָׁמ/וֹ֙ בְּ/רֹאשׁ֔/וֹ וַ/חֲמִישִׁת֖/וֹ יֹסֵ֣ף עָלָ֑י/ו וְ/נָתַ֕ן לַ/אֲשֶׁ֖ר אָשַׁ֥ם לֽ/וֹ׃",
+        "LXX": "ἐξαγορεύσει τὴν ἁμαρτίαν ἣν ἐποίησεν, καὶ ἀποδώσει τὴν πλημμελίαν, τὸ κεφάλαιον, καὶ τὸ ἐπίπεμπτον αὐτοῦ προσθήσει ἐπ’ αὐτό, καὶ ἀποδώσει τίνι ἐπλημμέλησεν αὐτῷ.",
+        "VUL": "confitebuntur peccatum suum, et reddent ipsum caput, quintamque partem desuper, ei in quem peccaverint.",
+        "SYN": "то пусть исповедаются во грехе своем, который они сделали, и возвратят сполна то, в чем виновны, и прибавят к тому пятую часть и отдадут тому, против кого согрешили;",
+        "NEO": "il confessera son péché et il restituera en son entier l’objet mal acquis, en y ajoutant un cinquième ; il le remettra à celui envers qui il s’est rendu coupable.",
+        "NAB": "he shall confess the wrong he has done, restore his ill-gotten goods in full, and in addition give one fifth of their value to the one he has wronged.",
+        "VAT_ES": "Ellos confesarán el pecado que han cometido y restituirán la suma total a aquel a quien ocasionaron el perjuicio, añadiendo además una quinta parte de su valor.",
+        "CEI": "Dovrà confessare il peccato commesso e restituirà: il reo rifonderà per intero il danno commesso, aggiungendovi un quinto e lo darà a colui verso il quale è responsabile."
       }
     },
     "8": {
@@ -96,7 +145,14 @@
         "LXX": 8
       },
       "text": {
-        "WLC": "וְאִם אֵ֨ין לָאִ֜ישׁ גֹּאֵ֗ל לְהָשִׁ֤יב הָאָשָׁם֙ אֵלָ֔יו הָאָשָׁ֛ם הַמּוּשָׁ֥ב לַיהוָ֖ה לַכֹּהֵ֑ן מִלְּבַ֗ד אֵ֚יל הַכִּפֻּרִ֔ים אֲשֶׁ֥ר יְכַפֶּר בּ֖וֹ עָלָֽיו׃"
+        "WLC": "וְ/אִם אֵ֨ין לָ/אִ֜ישׁ גֹּאֵ֗ל לְ/הָשִׁ֤יב הָ/אָשָׁם֙ אֵלָ֔י/ו הָ/אָשָׁ֛ם הַ/מּוּשָׁ֥ב לַ/יהוָ֖ה לַ/כֹּהֵ֑ן מִ/לְּ/בַ֗ד אֵ֚יל הַ/כִּפֻּרִ֔ים אֲשֶׁ֥ר יְכַפֶּר בּ֖/וֹ עָלָֽי/ו׃",
+        "LXX": "ἐὰν δὲ μὴ ᾖ τῷ ἀνθρώπῳ ὁ ἀγχιστεύων ὥστε ἀποδοῦναι αὐτῷ τὸ πλημμέλημα πρὸς αὐτόν, τὸ πλημμέλημα τὸ ἀποδιδόμενον Κυρίῳ τῷ ἱερεῖ ἔσται, πλὴν τοῦ κριοῦ τοῦ ἱλασμοῦ δι’ οὗ ἐξιλάσεται ἐν αὐτῷ περὶ αὐτοῦ.",
+        "VUL": "Sin autem non fuerit qui recipiat, dabunt Domino, et erit sacerdotis, excepto ariete, qui offertur pro expiatione, ut sit placabilis hostia.",
+        "SYN": "если же у него нет наследника, которому следовало бы возвратить за вину: то посвятить это Господу; пусть будет это священнику, сверх овна очищения, которым он очистит его;",
+        "NEO": "Si celui-ci n’a pas de représentant à qui puisse être rendu l’objet du délit, cet objet revient à \\+w Yahweh|strong=\"H3068\"\\+w**, au prêtre, outre le bélier expiatoire avec lequel on fera l’expiation pour le coupable ».",
+        "NAB": "However, if the latter has no next of kin to whom restoration of the ill-gotten goods can be made, the goods to be restored shall be the LORD'S and shall fall to the priest; this is apart from the atonement ram with which the priest makes amends for the guilty man.",
+        "VAT_ES": "Si eses hombre no tiene ningún pariente cercano a quien se le pueda restituir, la suma será devuelta al Señor y entregada al sacerdote, además del carnero de la expiación, con el cual se practicará el rito de expiación en favor de esa persona.",
+        "CEI": "Ma se costui non ha stretto parente a cui si possa rifondere il danno commesso, questo spetterà al Signore, cioè al sacerdote, oltre l'ariete dell'espiazione, mediante il quale si farà l'espiazione per il colpevole."
       }
     },
     "9": {
@@ -107,7 +163,14 @@
         "LXX": 9
       },
       "text": {
-        "WLC": "וְכָל תְּרוּמָ֞ה לְכָל קָדְשֵׁ֧י בְנֵי יִשְׂרָאֵ֛ל אֲשֶׁר יַקְרִ֥יבוּ לַכֹּהֵ֖ן ל֥וֹ יִהְיֶֽה׃"
+        "WLC": "וְ/כָל תְּרוּמָ֞ה לְ/כָל קָדְשֵׁ֧י בְנֵי יִשְׂרָאֵ֛ל אֲשֶׁר יַקְרִ֥יבוּ לַ/כֹּהֵ֖ן ל֥/וֹ יִהְיֶֽה׃",
+        "LXX": "καὶ πᾶσα ἀπαρχὴ κατὰ πάντα τὰ ἁγιαζόμενα ἐν υἱοῖς Ἰσραήλ, ὅσα ἂν προσφέρωσιν τῷ κυρίῳ τῷ ἱερεῖ, αὐτῷ ἔσται.",
+        "VUL": "Omnes quoque primitiæ, quas offerunt filii Israël, ad sacerdotem pertinent :",
+        "SYN": "и всякое возношение из всех святынь сынов Израилевых, которые они приносят к священнику, ему принадлежит,",
+        "NEO": "« Toute offrande prélevée sur les choses saintes que les enfants d’Israël présentent au prêtre, appartiendra à celui-ci ;",
+        "NAB": "Likewise, every sacred contribution that the Israelites are bound to make shall fall to the priest.",
+        "VAT_ES": "Y cualquier ofrenda de dones sagrados que los israelitas presenten al sacerdote, será para él.",
+        "CEI": "Ogni tributo su tutte le cose consacrate che gli Israeliti offriranno, è del sacerdote, apparterrà a lui;"
       }
     },
     "10": {
@@ -118,7 +181,14 @@
         "LXX": 10
       },
       "text": {
-        "WLC": "וְאִ֥ישׁ אֶת קֳדָשָׁ֖יו ל֣וֹ יִהְי֑וּ אִ֛ישׁ אֲשֶׁר יִתֵּ֥ן לַכֹּהֵ֖ן ל֥וֹ יִהְיֶֽה׃"
+        "WLC": "וְ/אִ֥ישׁ אֶת קֳדָשָׁ֖י/ו ל֣/וֹ יִהְי֑וּ אִ֛ישׁ אֲשֶׁר יִתֵּ֥ן לַ/כֹּהֵ֖ן ל֥/וֹ יִהְיֶֽה׃",
+        "LXX": "καὶ ἑκάστῳ τὰ ἡγιασμένα αὐτοῦ ἔσται· ἀνὴρ ὃς ἐὰν δῷ τῷ ἱερεῖ, αὐτῷ ἔσται.",
+        "VUL": "et quidquid in sanctuarium offertur a singulis, et traditur manibus sacerdotis, ipsius erit.",
+        "SYN": "и посвященное кем-либо ему принадлежит; все, что даст кто священнику, ему принадлежит.",
+        "NEO": "les choses que tout homme aura consacré seront à lui ; ce que chacun donne au prêtre lui appartiendra ».",
+        "NAB": "Each Israelite man may dispose of his own sacred contributions; they become the property of the priest to whom he gives them.\"",
+        "VAT_ES": "Cada sacerdote podrá disponer de sus propios dones sagrados: cada uno guardará para él lo que reciba.",
+        "CEI": "le cose che uno consacrerà saranno sue e ciò che uno darà al sacerdote apparterrà a lui\"."
       }
     },
     "11": {
@@ -129,7 +199,14 @@
         "LXX": 11
       },
       "text": {
-        "WLC": "וַיְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּאמֹֽר׃"
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "Luego el Señor dijo a Moisés:",
+        "CEI": "Il Signore aggiunse a Mosè:"
       }
     },
     "12": {
@@ -140,7 +217,14 @@
         "LXX": 12
       },
       "text": {
-        "WLC": "דַּבֵּר֙ אֶל בְּנֵ֣י יִשְׂרָאֵ֔ל וְאָמַרְתָּ֖ אֲלֵהֶ֑ם אִ֥ישׁ אִישׁ֙ כִּֽי תִשְׂטֶ֣ה אִשְׁתּ֔וֹ וּמָעֲלָ֥ה ב֖וֹ מָֽעַל׃"
+        "WLC": "דַּבֵּר֙ אֶל בְּנֵ֣י יִשְׂרָאֵ֔ל וְ/אָמַרְתָּ֖ אֲלֵ/הֶ֑ם אִ֥ישׁ אִישׁ֙ כִּֽי תִשְׂטֶ֣ה אִשְׁתּ֔/וֹ וּ/מָעֲלָ֥ה ב֖/וֹ מָֽעַל׃",
+        "LXX": "Λάλησον τοῖς υἱοῖς Ἰσραὴλ καὶ ἐρεῖς πρὸς αὐτούς Ἀνδρὸς ἀνδρὸς ἐὰν παραβῇ ἡ γυνὴ αὐτοῦ καὶ παρίδῃ αὐτὸν ὑπεριδοῦσα,",
+        "VUL": "Loquere ad filios Israël, et dices ad eos : Vir cujus uxor erraverit, maritumque contemnens",
+        "SYN": "объяви сынам Израилевым и скажи им: если изменит кому жена, и нарушит верность к нему,",
+        "NEO": "« Parle aux enfants d’Israël, et dis-leur : Si une femme mariée se détourne et devient infidèle à son mari,",
+        "NAB": "\"Speak to the Israelites and tell them: If a man's wife goes astray and becomes unfaithful to him",
+        "VAT_ES": "Habla en estos términos a los israelitas: Cuando una mujer se aparta del camino y es infiel a su esposo,",
+        "CEI": "\"Parla agli Israeliti e riferisci loro: Se una donna si sarà traviata e avrà commesso una infedeltà verso il marito"
       }
     },
     "13": {
@@ -151,7 +235,14 @@
         "LXX": 13
       },
       "text": {
-        "WLC": "וְשָׁכַ֨ב אִ֣ישׁ אֹתָהּ֮ שִׁכְבַת זֶרַע֒ וְנֶעְלַם֙ מֵעֵינֵ֣י אִישָׁ֔הּ וְנִסְתְּרָ֖ה וְהִ֣יא נִטְמָ֑אָה וְעֵד֙ אֵ֣ין בָּ֔הּ וְהִ֖וא לֹ֥א נִתְפָּֽשָׂה׃"
+        "WLC": "וְ/שָׁכַ֨ב אִ֣ישׁ אֹתָ/הּ֮ שִׁכְבַת זֶרַע֒ וְ/נֶעְלַם֙ מֵ/עֵינֵ֣י אִישָׁ֔/הּ וְ/נִסְתְּרָ֖ה וְ/הִ֣יא נִטְמָ֑אָה וְ/עֵד֙ אֵ֣ין בָּ֔/הּ וְ/הִ֖וא לֹ֥א נִתְפָּֽשָׂה׃",
+        "LXX": "καὶ κοιμηθῇ τις μετ’ αὐτῆς κοίτην σπέρματος, καὶ λάθῃ ἐξ ὀφθαλμῶν τοῦ ἀνδρὸς αὐτῆς καὶ κρύψῃ, αὐτὴ δὲ ᾖ μεμιαμμένη, καὶ μάρτυς μὴ ἦν μετ’ αὐτῆς καὶ αὐτὴ μὴ ᾖ συνειλημμένη·",
+        "VUL": "dormierit cum altero viro, et hoc maritus deprehendere non quiverit, sed latet adulterium, et testibus argui non potest, quia non est inventa in stupro :",
+        "SYN": "и переспит кто с ней и излиет семя, и это будет скрыто от глаз мужа ее, и она осквернится тайно, и не будет на нее свидетеля, и не будет уличена,",
+        "NEO": "un autre homme ayant eu commerce avec elle, et que la chose soit cachée aux yeux de son mari, cette femme s’étant souillée en secret, sans qu’il y ait eu de témoin contre elle, et sans qu’elle ait été prise sur le fait :",
+        "NAB": "by having intercourse with another man, though her husband has not sufficient evidence of the fact, so that her impurity remains unproved for lack of a witness who might have caught her in the act;",
+        "VAT_ES": "teniendo relaciones con otro hombre, y su marido no llega a enterarse, porque ella se deshonró ocultamente, y no hay testigos ni fue sorprendida en el acto;",
+        "CEI": "e un uomo avrà avuto rapporti con lei, ma la cosa è rimasta nascosta agli occhi del marito; se essa si è contaminata in segreto e non vi siano testimoni contro di lei perché non è stata colta sul fatto,"
       }
     },
     "14": {
@@ -162,7 +253,14 @@
         "LXX": 14
       },
       "text": {
-        "WLC": "וְעָבַ֨ר עָלָ֧יו רֽוּחַ קִנְאָ֛ה וְקִנֵּ֥א אֶת אִשְׁתּ֖וֹ וְהִ֣וא נִטְמָ֑אָה אוֹ עָבַ֨ר עָלָ֤יו רֽוּחַ קִנְאָה֙ וְקִנֵּ֣א אֶת אִשְׁתּ֔וֹ וְהִ֖יא לֹ֥א נִטְמָֽאָה׃"
+        "WLC": "וְ/עָבַ֨ר עָלָ֧י/ו רֽוּחַ קִנְאָ֛ה וְ/קִנֵּ֥א אֶת אִשְׁתּ֖/וֹ וְ/הִ֣וא נִטְמָ֑אָה אוֹ עָבַ֨ר עָלָ֤י/ו רֽוּחַ קִנְאָה֙ וְ/קִנֵּ֣א אֶת אִשְׁתּ֔/וֹ וְ/הִ֖יא לֹ֥א נִטְמָֽאָה׃",
+        "LXX": "καὶ ἐπέλθῃ αὐτῷ πνεῦμα ζηλώσεως καὶ ζηλώσῃ τὴν γυναῖκα αὐτοῦ, αὐτὴ δὲ μεμίανται, ἢ ἐπέλθῃ αὐτῷ πνεῦμα ζηλώσεως καὶ ζηλώσῃ τὴν γυναῖκα αὐτοῦ, αὐτὴ δὲ μὴ ᾖ μεμιαμμένη·",
+        "VUL": "si spiritus zelotypiæ concitaverit virum contra uxorem suam, quæ vel polluta est, vel falsa suspicione appetitur :",
+        "SYN": "и найдет на него дух ревности, и будет ревновать жену свою, когда она осквернена, или найдет на него дух ревности, и он будет ревновать жену свою, когда она не осквернена, --",
+        "NEO": "— si le mari est saisi d’un esprit de jalousie et qu’il soit jaloux de sa femme qui s’est souillée, ou bien s’il est saisi d’un esprit de jalousie et qu’il soit jaloux de sa femme qui ne s’est pas souillée :",
+        "NAB": "or if a man is overcome by a feeling of jealousy that makes him suspect his wife, whether she was actually impure or not:",
+        "VAT_ES": "si el hombre tiene un arrebato de celos y siente celos de su mujer, que realmente se ha deshonrado; o bien, si un hombre siente celos de mujer, a pesar de que ella es inocente:",
+        "CEI": "qualora lo spirito di gelosia si impadronisca del marito e questi diventi geloso della moglie che si è contaminata oppure lo spirito di gelosia si impadronisca di lui e questi diventi geloso della moglie che non si è contaminata,"
       }
     },
     "15": {
@@ -173,7 +271,14 @@
         "LXX": 15
       },
       "text": {
-        "WLC": "וְהֵבִ֨יא הָאִ֣ישׁ אֶת אִשְׁתּוֹ֮ אֶל הַכֹּהֵן֒ וְהֵבִ֤יא אֶת קָרְבָּנָהּ֙ עָלֶ֔יהָ עֲשִׂירִ֥ת הָאֵיפָ֖ה קֶ֣מַח שְׂעֹרִ֑ים לֹֽא יִצֹ֨ק עָלָ֜יו שֶׁ֗מֶן וְלֹֽא יִתֵּ֤ן עָלָיו֙ לְבֹנָ֔ה כִּֽי מִנְחַ֤ת קְנָאֹת֙ ה֔וּא מִנְחַ֥ת זִכָּר֖וֹן מַזְכֶּ֥רֶת עָוֺֽן׃"
+        "WLC": "וְ/הֵבִ֨יא הָ/אִ֣ישׁ אֶת אִשְׁתּ/וֹ֮ אֶל הַ/כֹּהֵן֒ וְ/הֵבִ֤יא אֶת קָרְבָּנָ/הּ֙ עָלֶ֔י/הָ עֲשִׂירִ֥ת הָ/אֵיפָ֖ה קֶ֣מַח שְׂעֹרִ֑ים לֹֽא יִצֹ֨ק עָלָ֜י/ו שֶׁ֗מֶן וְ/לֹֽא יִתֵּ֤ן עָלָי/ו֙ לְבֹנָ֔ה כִּֽי מִנְחַ֤ת קְנָאֹת֙ ה֔וּא מִנְחַ֥ת זִכָּר֖וֹן מַזְכֶּ֥רֶת עָוֺֽן׃",
+        "LXX": "καὶ ἄξει ὁ ἄνθρωπος τὴν γυναῖκα αὐτοῦ πρὸς τὸν ἱερέα, καὶ προσοίσει τὸ δῶρον περὶ αὐτῆς, τὸ δέκατον τοῦ οἰφί, ἄλευρον κρίθινον· οὐκ ἐπιχεεῖ ἐπ’ αὐτὸ ἔλαιον οὐδὲ ἐπιθήσει ἐπ’ αὐτὸ λίβανον, ἔστιν γὰρ θυσία ζηλοτυπίας, θυσία μνημοσύνου ἀναμιμνήσκουσα ἁμαρτίαν.",
+        "VUL": "adducet eam ad sacerdotem, et offeret oblationem pro illa, decimam partem sati farinæ hordeaceæ : non fundet super eam oleum, nec imponet thus : quia sacrificium zelotypiæ est, et oblatio investigans adulterium.",
+        "SYN": "пусть приведет муж жену свою к священнику и принесет за нее в жертву десятую часть ефы ячменной муки, но не возливает на нее елея и не кладет ливана, потому что это приношение ревнования, приношение воспоминания, напоминающее о беззаконии;",
+        "NEO": "cet homme amènera sa femme au prêtre et il apportera une offrande à cause d’elle, un dixième d’épha de farine d’orge ; il n’y versera pas d’huile et n’y mettra pas d’encens, car c’est une oblation de jalousie, une oblation de souvenir, qui rappelle une prévarication.",
+        "NAB": "he shall bring his wife to the priest and shall take along as an offering for her a tenth of an ephah of barley meal. However, he shall not pour oil on it nor put frankincense over it, since it is a cereal offering of jealousy, a cereal offering for an appeal in a question of guilt.",
+        "VAT_ES": "en esos casos, el hombre presentará su mujer al sacerdote y entregará como ofrenda por ella la décima parte de una medida de harina de cebada. Pero no derramará aceite sobre esa ofrenda ni le añadirá incienso, porque se trata de una oblación motivada por los celos, de una oblación conmemorativa, que debe recordar un delito.",
+        "CEI": "quell'uomo condurrà la moglie al sacerdote e porterà una offerta per lei: un decimo di efa di farina d'orzo; non vi spanderà sopra olio, né vi metterà sopra incenso, perché è un'oblazione di gelosia, un'offerta commemorativa per ricordare una iniquità."
       }
     },
     "16": {
@@ -184,7 +289,14 @@
         "LXX": 16
       },
       "text": {
-        "WLC": "וְהִקְרִ֥יב אֹתָ֖הּ הַכֹּהֵ֑ן וְהֶֽעֱמִדָ֖הּ לִפְנֵ֥י יְהוָֽה׃"
+        "WLC": "וְ/הִקְרִ֥יב אֹתָ֖/הּ הַ/כֹּהֵ֑ן וְ/הֶֽעֱמִדָ֖/הּ לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ προσάξει αὐτὴν ὁ ἱερεύς, καὶ στήσει αὐτὴν ἔναντι Κυρίου·",
+        "VUL": "Offeret igitur eam sacerdos, et statuet coram Domino,",
+        "SYN": "а священник пусть приведет и поставит ее пред лице Господне,",
+        "NEO": "Le prêtre la fera approcher de l’autel et se tenir debout devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "\"The priest shall first have the woman come forward and stand before the LORD.",
+        "VAT_ES": "El sacerdote hará acercar a la mujer y la hará comparecer delante del Señor.",
+        "CEI": "Il sacerdote farà avvicinare la donna e la farà stare davanti al Signore."
       }
     },
     "17": {
@@ -195,7 +307,14 @@
         "LXX": 17
       },
       "text": {
-        "WLC": "וְלָקַ֧ח הַכֹּהֵ֛ן מַ֥יִם קְדֹשִׁ֖ים בִּכְלִי חָ֑רֶשׂ וּמִן הֶֽעָפָ֗ר אֲשֶׁ֤ר יִהְיֶה֙ בְּקַרְקַ֣ע הַמִּשְׁכָּ֔ן יִקַּ֥ח הַכֹּהֵ֖ן וְנָתַ֥ן אֶל הַמָּֽיִם׃"
+        "WLC": "וְ/לָקַ֧ח הַ/כֹּהֵ֛ן מַ֥יִם קְדֹשִׁ֖ים בִּ/כְלִי חָ֑רֶשׂ וּ/מִן הֶֽ/עָפָ֗ר אֲשֶׁ֤ר יִהְיֶה֙ בְּ/קַרְקַ֣ע הַ/מִּשְׁכָּ֔ן יִקַּ֥ח הַ/כֹּהֵ֖ן וְ/נָתַ֥ן אֶל הַ/מָּֽיִם׃",
+        "LXX": "καὶ λήμψεται ὁ ἱερεὺς ὕδωρ καθαρὸν ζῶν ἐν ἀγγίῳ ὀστρακίνῳ, καὶ τῆς γῆς τῆς οὔσης ἐπὶ τοῦ ἐδάφους τῆς σκηνῆς τοῦ μαρτυρίου, καὶ λαβὼν ὁ ἱερεὺς ἐμβαλεῖ εἰς τὸ ὕδωρ·",
+        "VUL": "assumetque aquam sanctam in vase fictili, et pauxillum terræ de pavimento tabernaculi mittet in eam.",
+        "SYN": "и возьмет священник святой воды в глиняный сосуд, и возьмет священник земли с полу скинии и положит в воду;",
+        "NEO": "Le prêtre prendra de l’eau sainte dans un vase de terre et, ayant pris de la poussière sur le sol de la Demeure, il la mettra dans l’eau.",
+        "NAB": "In an earthen vessel he shall meanwhile put some holy water, as well as some dust that he has taken from the floor of the Dwelling.",
+        "VAT_ES": "Luego recogerá con agua consagrada en un recipiente de barro, y echará sobre el agua un poco de polvo, tomado el suelo de la Morada.",
+        "CEI": "Poi il sacerdote prenderà acqua santa in un vaso di terra; prenderà anche polvere che è sul pavimento della Dimora e la metterà nell'acqua."
       }
     },
     "18": {
@@ -206,7 +325,14 @@
         "LXX": 18
       },
       "text": {
-        "WLC": "וְהֶעֱמִ֨יד הַכֹּהֵ֥ן אֶֽת הָאִשָּׁה֮ לִפְנֵ֣י יְהוָה֒ וּפָרַע֙ אֶת רֹ֣אשׁ הָֽאִשָּׁ֔ה וְנָתַ֣ן עַל כַּפֶּ֗יהָ אֵ֚ת מִנְחַ֣ת הַזִּכָּר֔וֹן מִנְחַ֥ת קְנָאֹ֖ת הִ֑וא וּבְיַ֤ד הַכֹּהֵן֙ יִהְי֔וּ מֵ֥י הַמָּרִ֖ים הַמְאָֽרֲרִֽים׃"
+        "WLC": "וְ/הֶעֱמִ֨יד הַ/כֹּהֵ֥ן אֶֽת הָ/אִשָּׁה֮ לִ/פְנֵ֣י יְהוָה֒ וּ/פָרַע֙ אֶת רֹ֣אשׁ הָֽ/אִשָּׁ֔ה וְ/נָתַ֣ן עַל כַּפֶּ֗י/הָ אֵ֚ת מִנְחַ֣ת הַ/זִּכָּר֔וֹן מִנְחַ֥ת קְנָאֹ֖ת הִ֑וא וּ/בְ/יַ֤ד הַ/כֹּהֵן֙ יִהְי֔וּ מֵ֥י הַ/מָּרִ֖ים הַ/מְאָֽרֲרִֽים׃",
+        "LXX": "καὶ στήσει τὴν γυναῖκα ὁ ἱερεὺς ἔναντι Κυρίου, καὶ ἀποκαλύψει τὴν κεφαλὴν τῆς γυναικός, καὶ δώσει ἐπὶ τὰς χεῖρας αὐτῆς τὴν θυσίαν τοῦ μνημοσύνου, τὴν θυσίαν τῆς ζηλοτυπίας· ἐν δὲ τῇ χειρὶ τοῦ ἱερέως ἔσται τὸ ὕδωρ τοῦ ἐλεγμοῦ τοῦ ἐπικαταρωμένου τούτου.",
+        "VUL": "Cumque steterit mulier in conspectu Domini, discooperiet caput ejus, et ponet super manus illius sacrificium recordationis, et oblationem zelotypiæ : ipse autem tenebit aquas amarissimas, in quibus cum execratione maledicta congessit.",
+        "SYN": "и поставит священник жену пред лице Господне, и обнажит голову жены, и даст ей в руки приношение воспоминания, -- это приношение ревнования, в руке же у священника будет горькая вода, наводящая проклятие.",
+        "NEO": "Le prêtre fera tenir la femme debout devant \\+w Yahweh|strong=\"H3068\"\\+w**, il dénouera la chevelure de la tête de la femme et lui posera sur les mains l’oblation de souvenir ; c’est une oblation de jalousie. Le prêtre aura dans la main les eaux amères qui apportent la malédiction.",
+        "NAB": "Then, as the woman stands before the LORD, the priest shall uncover her head and place in her hands the cereal offering of her appeal, that is, the cereal offering of jealousy, while he himself shall hold the bitter water that brings a curse.",
+        "VAT_ES": "Una vez que haya puesto a la mujer delante del Señor, le descubrirá la cabeza y colocará en sus manos la oblación conmemorativa, es decir, la oblación motivada por los celos. El sacerdote, por su parte, tendrá en sus manos las aguas amargas, portadoras de maldición.",
+        "CEI": "Il sacerdote farà quindi stare la donna davanti al Signore, le scoprirà il capo e porrà nelle mani di lei l'oblazione commemorativa, che è l'oblazione di gelosia, mentre il sacerdote avrà in mano l'acqua amara che porta maledizione."
       }
     },
     "19": {
@@ -217,7 +343,14 @@
         "LXX": 19
       },
       "text": {
-        "WLC": "וְהִשְׁבִּ֨יעַ אֹתָ֜הּ הַכֹּהֵ֗ן וְאָמַ֤ר אֶל הָֽאִשָּׁה֙ אִם לֹ֨א שָׁכַ֥ב אִישׁ֙ אֹתָ֔ךְ וְאִם לֹ֥א שָׂטִ֛ית טֻמְאָ֖ה תַּ֣חַת אִישֵׁ֑ךְ הִנָּקִ֕י מִמֵּ֛י הַמָּרִ֥ים הַֽמְאָרֲרִ֖ים הָאֵֽלֶּה׃"
+        "WLC": "וְ/הִשְׁבִּ֨יעַ אֹתָ֜/הּ הַ/כֹּהֵ֗ן וְ/אָמַ֤ר אֶל הָֽ/אִשָּׁה֙ אִם לֹ֨א שָׁכַ֥ב אִישׁ֙ אֹתָ֔/ךְ וְ/אִם לֹ֥א שָׂטִ֛ית טֻמְאָ֖ה תַּ֣חַת אִישֵׁ֑/ךְ הִנָּקִ֕י מִ/מֵּ֛י הַ/מָּרִ֥ים הַֽ/מְאָרֲרִ֖ים הָ/אֵֽלֶּה׃",
+        "LXX": "καὶ ὁρκιεῖ αὐτὴν ὁ ἱερεὺς καὶ ἐρεῖ τῇ γυναικί Εἰ μὴ κεκοίμηταί τις μετὰ σοῦ, εἰ μὴ παραβέβηκας μιανθῆναι ὑπὸ τὸν ἄνδρα τὸν σεαυτῆς, ἀθῴα ἴσθι ἀπὸ τοῦ ὕδατος τοῦ ἐλεγμοῦ τοῦ ἐπικαταρωμένου τούτου.",
+        "VUL": "Adjurabitque eam, et dicet : Si non dormivit vir alienus tecum, et si non polluta es deserto mariti thoro, non te nocebunt aquæ istæ amarissimæ, in quas maledicta congessi.",
+        "SYN": "И заклянет ее священник и скажет жене: если никто не переспал с тобою, и ты не осквернилась и не изменила мужу своему, то невредима будешь от сей горькой воды, наводящей проклятие;",
+        "NEO": "Le prêtre adjurera la femme et lui dira : Si aucun homme n’a couché avec toi, et si tu ne t’es pas détournée pour te souiller, étant sous la puissance de ton mari, sois préservée de l’effet de ces eaux amères qui apportent la malédiction.",
+        "NAB": "Then he shall adjure the woman, saying to her, 'If no other man has had intercourse with you, and you have not gone astray by impurity while under the authority of your husband, be immune to the curse brought by this bitter water.",
+        "VAT_ES": "Luego el sacerdote deberá conjurar a la mujer, diciéndole: «Si desde que estás bajo la potestad de tu marido ningún hombre se ha acostado contigo, si no te has apartado del buen camino ni te has deshonrado, que estas aguas amargas, portadores de maldición, no te hagan ningún daño.",
+        "CEI": "Il sacerdote farà giurare quella donna e le dirà: Se nessun uomo ha avuto rapporti disonesti con te e se non ti sei traviata per contaminarti ricevendo un altro invece di tuo marito, quest'acqua amara, che porta maledizione, non ti faccia danno!"
       }
     },
     "20": {
@@ -228,7 +361,14 @@
         "LXX": 20
       },
       "text": {
-        "WLC": "וְאַ֗תְּ כִּ֥י שָׂטִ֛ית תַּ֥חַת אִישֵׁ֖ךְ וְכִ֣י נִטְמֵ֑את וַיִּתֵּ֨ן אִ֥ישׁ בָּךְ֙ אֶת שְׁכָבְתּ֔וֹ מִֽבַּלְעֲדֵ֖י אִישֵֽׁךְ׃"
+        "WLC": "וְ/אַ֗תְּ כִּ֥י שָׂטִ֛ית תַּ֥חַת אִישֵׁ֖/ךְ וְ/כִ֣י נִטְמֵ֑את וַ/יִּתֵּ֨ן אִ֥ישׁ בָּ/ךְ֙ אֶת שְׁכָבְתּ֔/וֹ מִֽ/בַּלְעֲדֵ֖י אִישֵֽׁ/ךְ׃",
+        "LXX": "εἰ δὲ σὺ παραβέβηκας ὕπανδρος οὖσα ἢ μεμίανσαι, καὶ ἔδωκέν τις τὴν κοίτην αὐτοῦ ἐν σοὶ πλὴν τοῦ ἀνδρός σου·",
+        "VUL": "Sin autem declinasti a viro tuo, atque polluta es, et concubuisti cum altero viro :",
+        "SYN": "но если ты изменила мужу твоему и осквернилась, и если кто переспал с тобою кроме мужа твоего, --",
+        "NEO": "Mais si, étant sous la puissance de ton mari, tu t’es détournée et t’es souillée, et si un autre homme que ton mari a couché avec toi :",
+        "NAB": "But if you have gone astray while under the authority of your husband and have acted impurely by letting a man other than your husband have intercourse with you' -",
+        "VAT_ES": "Pero si te has apartado del buen camino mientras estabas bajo la potestad de tu marido, si te has deshonrado, y si un hombre que no es tu esposo ha tenido relaciones contigo",
+        "CEI": "Ma se ti sei traviata ricevendo un altro invece di tuo marito e ti sei contaminata e un uomo che non è tuo marito ha avuto rapporti disonesti con te..."
       }
     },
     "21": {
@@ -239,7 +379,14 @@
         "LXX": 21
       },
       "text": {
-        "WLC": "וְהִשְׁבִּ֨יעַ הַכֹּהֵ֥ן אֶֽת הָֽאִשָּׁה֮ בִּשְׁבֻעַ֣ת הָאָלָה֒ וְאָמַ֤ר הַכֹּהֵן֙ לָֽאִשָּׁ֔ה יִתֵּ֨ן יְהוָ֥ה אוֹתָ֛ךְ לְאָלָ֥ה וְלִשְׁבֻעָ֖ה בְּת֣וֹךְ עַמֵּ֑ךְ בְּתֵ֨ת יְהוָ֤ה אֶת יְרֵכֵךְ֙ נֹפֶ֔לֶת וְאֶת בִּטְנֵ֖ךְ צָבָֽה׃"
+        "WLC": "וְ/הִשְׁבִּ֨יעַ הַ/כֹּהֵ֥ן אֶֽת הָֽ/אִשָּׁה֮ בִּ/שְׁבֻעַ֣ת הָ/אָלָה֒ וְ/אָמַ֤ר הַ/כֹּהֵן֙ לָֽ/אִשָּׁ֔ה יִתֵּ֨ן יְהוָ֥ה אוֹתָ֛/ךְ לְ/אָלָ֥ה וְ/לִ/שְׁבֻעָ֖ה בְּ/ת֣וֹךְ עַמֵּ֑/ךְ בְּ/תֵ֨ת יְהוָ֤ה אֶת יְרֵכֵ/ךְ֙ נֹפֶ֔לֶת וְ/אֶת בִּטְנֵ֖/ךְ צָבָֽה׃",
+        "LXX": "καὶ ὁρκιεῖ ὁ ἱερεὺς τὴν γυναῖκα ἐν τοῖς λόγοις τῆς ἀρᾶς ταύτης, καὶ ἐρεῖ ὁ ἱερεὺς τῇ γυναικί Δῴη Κύριός σε ἐν ἀρᾷ καὶ ἐνόρκιον ἐν μέσῳ τοῦ λαοῦ σου, ἐν τῷ δοῦναι Κύριον τὸν μηρόν σου διαπεπτωκότα καὶ τὴν κοιλίαν σου πεπρησμένην·",
+        "VUL": "his maledictionibus subjacebis : det te Dominus in maledictionem, exemplumque cunctorum in populo suo : putrescere faciat femur tuum, et tumens uterus tuus disrumpatur.",
+        "SYN": "тогда священник пусть заклянет жену клятвою проклятия и скажет священник жене: да предаст тебя Господь проклятию и клятве в народе твоем, и да соделает Господь лоно твое опавшим и живот твой опухшим;",
+        "NEO": "— le prêtre adjurera la femme par le serment d’imprécation, et lui dira : — Que \\+w Yahweh|strong=\"H3068\"\\+w** fasse de toi une malédiction et une exécration au milieu de ton peuple, en faisant maigrir tes flancs et enfler ton ventre,",
+        "NAB": "so shall the priest adjure the woman with this oath of imprecation - 'may the LORD make you an example of malediction and imprecation among your people by causing your thighs to waste away and your belly to swell!",
+        "VAT_ES": "–aquí el sacerdote deberá conjurar a la mujer con el juramente imprecatorio– que el Señor haga de ti un ejemplo de maldición e imprecación en medio de tu pueblo, volviéndote estéril e hinchando tu vientre.",
+        "CEI": "Allora il sacerdote farà giurare alla donna con un'imprecazione; poi dirà alla donna: Il Signore faccia di te un oggetto di maledizione e di imprecazione in mezzo al tuo popolo, facendoti avvizzire i fianchi e gonfiare il ventre;"
       }
     },
     "22": {
@@ -250,7 +397,14 @@
         "LXX": 22
       },
       "text": {
-        "WLC": "וּ֠בָאוּ הַמַּ֨יִם הַמְאָרְרִ֤ים הָאֵ֨לֶּה֙ בְּֽמֵעַ֔יִךְ לַצְבּ֥וֹת בֶּ֖טֶן וְלַנְפִּ֣ל יָרֵ֑ךְ וְאָמְרָ֥ה הָאִשָּׁ֖ה אָמֵ֥ן אָמֵֽן׃"
+        "WLC": "וּ֠/בָאוּ הַ/מַּ֨יִם הַ/מְאָרְרִ֤ים הָ/אֵ֨לֶּה֙ בְּֽ/מֵעַ֔יִ/ךְ לַ/צְבּ֥וֹת בֶּ֖טֶן וְ/לַ/נְפִּ֣ל יָרֵ֑ךְ וְ/אָמְרָ֥ה הָ/אִשָּׁ֖ה אָמֵ֥ן אָמֵֽן׃",
+        "LXX": "καὶ εἰσελεύσεται τὸ ὕδωρ τὸ ἐπικαταρώμενον τοῦτο εἰς τὴν κοιλίαν σου, πρῆσαι γαστέρα καὶ διαπεσεῖν μηρόν σου. καὶ ἐρεῖ ἡ γυνή Γένοιτο, γένοιτο.",
+        "VUL": "Ingrediantur aquæ maledictæ in ventrem tuum, et utero tumescente putrescat femur. Et respondebit mulier : Amen, amen.",
+        "SYN": "и да пройдет вода сия, наводящая проклятие, во внутренность твою, чтобы опух живот [твой] и опало лоно [твое]. И скажет жена: аминь, аминь.",
+        "NEO": "et que ces eaux qui apportent la malédiction entrent dans tes entrailles pour te faire enfler le ventre et maigrir les flancs ! Et la femme dira : Amen ! Amen !",
+        "NAB": "May this water, then, that brings a curse, enter your body to make your belly swell and your thighs waste away!' And the woman shall say, 'Amen, amen!'",
+        "VAT_ES": "Que estas aguas portadores de maldición penetren en tus entrañas, para que se hinche tu vientre y te vuelvas estéril». Y la mujer responderá: «Amén, amén».",
+        "CEI": "quest'acqua che porta maledizione ti entri nelle viscere per farti gonfiare il ventre e avvizzire i fianchi! E la donna dirà: Amen, Amen!"
       }
     },
     "23": {
@@ -261,7 +415,14 @@
         "LXX": 23
       },
       "text": {
-        "WLC": "וְ֠כָתַב אֶת הָאָלֹ֥ת הָאֵ֛לֶּה הַכֹּהֵ֖ן בַּסֵּ֑פֶר וּמָחָ֖ה אֶל מֵ֥י הַמָּרִֽים׃"
+        "WLC": "וְ֠/כָתַב אֶת הָ/אָלֹ֥ת הָ/אֵ֛לֶּה הַ/כֹּהֵ֖ן בַּ/סֵּ֑פֶר וּ/מָחָ֖ה אֶל מֵ֥י הַ/מָּרִֽים׃",
+        "LXX": "καὶ γράψει ὁ ἱερεὺς τὰς ἀρὰς ταύτας εἰς βιβλίον, καὶ ἐξαλείψει εἰς τὸ ὕδωρ τοῦ ἐλεγμοῦ τοῦ ἐπικαταρωμένου·",
+        "VUL": "Scribetque sacerdos in libello ista maledicta, et delebit ea aquis amarissimis, in quas maledicta congessit,",
+        "SYN": "И напишет священник заклинания сии на свитке, и смоет их в горькую воду;",
+        "NEO": "Le prêtre écrira ces imprécations sur un rouleau, et il les effacera ensuite dans les eaux amères.",
+        "NAB": "The priest shall put these imprecations in writing and shall then wash them off into the bitter water,",
+        "VAT_ES": "Entonces el sacerdote consignará por escrito estas maldiciones y las disolverá en las aguas amargas.",
+        "CEI": "Poi il sacerdote scriverà queste imprecazioni su un rotolo e le cancellerà con l'acqua amara."
       }
     },
     "24": {
@@ -272,7 +433,14 @@
         "LXX": 24
       },
       "text": {
-        "WLC": "וְהִשְׁקָה֙ אֶת הָ֣אִשָּׁ֔ה אֶת מֵ֥י הַמָּרִ֖ים הַמְאָֽרֲרִ֑ים וּבָ֥אוּ בָ֛הּ הַמַּ֥יִם הַֽמְאָרֲרִ֖ים לְמָרִֽים׃"
+        "WLC": "וְ/הִשְׁקָה֙ אֶת הָ֣/אִשָּׁ֔ה אֶת מֵ֥י הַ/מָּרִ֖ים הַ/מְאָֽרֲרִ֑ים וּ/בָ֥אוּ בָ֛/הּ הַ/מַּ֥יִם הַֽ/מְאָרֲרִ֖ים לְ/מָרִֽים׃",
+        "LXX": "καὶ ποτιεῖ τὴν γυναῖκα τὸ ὕδωρ τοῦ ἐλεγμοῦ τοῦ ἐπικαταρωμένου, καὶ εἰσελεύσεται εἰς αὐτὴν τὸ ὕδωρ τὸ ἐπικαταρώμενον τοῦ ἐλεγμοῦ.",
+        "VUL": "et dabit ei bibere. Quas cum exhauserit,",
+        "SYN": "и даст жене выпить горькую воду, наводящую проклятие, и войдет в нее вода, наводящая проклятие, ко вреду ее.",
+        "NEO": "Puis il fera boire à la femme les eaux amères qui apportent la malédiction, et les eaux qui apportent la malédiction entreront en elle pour lui être amères.",
+        "NAB": "which he is to have the woman drink, so that it may go into her with all its bitter curse.",
+        "VAT_ES": "El se las hará beber a la mujer, para que las aguas portadores de maldición entren en ella y le provoquen amargura.",
+        "CEI": "Farà bere alla donna quell'acqua amara che porta maledizione e l'acqua che porta maledizione entrerà in lei per produrle amarezza;"
       }
     },
     "25": {
@@ -283,7 +451,14 @@
         "LXX": 25
       },
       "text": {
-        "WLC": "וְלָקַ֤ח הַכֹּהֵן֙ מִיַּ֣ד הָֽאִשָּׁ֔ה אֵ֖ת מִנְחַ֣ת הַקְּנָאֹ֑ת וְהֵנִ֤יף אֶת הַמִּנְחָה֙ לִפְנֵ֣י יְהוָ֔ה וְהִקְרִ֥יב אֹתָ֖הּ אֶל הַמִּזְבֵּֽחַ׃"
+        "WLC": "וְ/לָקַ֤ח הַ/כֹּהֵן֙ מִ/יַּ֣ד הָֽ/אִשָּׁ֔ה אֵ֖ת מִנְחַ֣ת הַ/קְּנָאֹ֑ת וְ/הֵנִ֤יף אֶת הַ/מִּנְחָה֙ לִ/פְנֵ֣י יְהוָ֔ה וְ/הִקְרִ֥יב אֹתָ֖/הּ אֶל הַ/מִּזְבֵּֽחַ׃",
+        "LXX": "καὶ λήμψεται ὁ ἱερεὺς ἐκ χειρὸς τῆς γυναικὸς τὴν θυσίαν τῆς ζηλοτυπίας, καὶ ἐπιθήσει τὴν θυσίαν ἔναντι Κυρίου καὶ προσοίσει αὐτὴν πρὸς τὸ θυσιαστήριον·",
+        "VUL": "tollet sacerdos de manu ejus sacrificium zelotypiæ, et elevabit illud coram Domino, imponetque illud super altare, ita dumtaxat ut prius :",
+        "SYN": "И возьмет священник из рук жены хлебное приношение ревнования, и вознесет сие приношение пред Господом, и отнесет его к жертвеннику;",
+        "NEO": "Le prêtre, ayant pris des mains de la femme l’oblation de jalousie, la balancera devant \\+w Yahweh|strong=\"H3068\"\\+w**, et l’approchera de l’autel ;",
+        "NAB": "But first he shall take the cereal offering of jealousy from the woman's hand, and having waved this offering before the LORD, shall put it near the altar,",
+        "VAT_ES": "En seguida el sacerdote tomará de manos de la mujer la oblación motivada por los celos, hará el gesto de presentación delante del Señor, y la llevará hasta el altar.",
+        "CEI": "il sacerdote prenderà dalle mani della donna l'oblazione di gelosia, agiterà l'oblazione davanti al Signore e l'offrirà sull'altare;"
       }
     },
     "26": {
@@ -294,7 +469,14 @@
         "LXX": 26
       },
       "text": {
-        "WLC": "וְקָמַ֨ץ הַכֹּהֵ֤ן מִן הַמִּנְחָה֙ אֶת אַזְכָּ֣רָתָ֔הּ וְהִקְטִ֖יר הַמִּזְבֵּ֑חָה וְאַחַ֛ר יַשְׁקֶ֥ה אֶת הָאִשָּׁ֖ה אֶת הַמָּֽיִם׃"
+        "WLC": "וְ/קָמַ֨ץ הַ/כֹּהֵ֤ן מִן הַ/מִּנְחָה֙ אֶת אַזְכָּ֣רָתָ֔/הּ וְ/הִקְטִ֖יר הַ/מִּזְבֵּ֑חָ/ה וְ/אַחַ֛ר יַשְׁקֶ֥ה אֶת הָ/אִשָּׁ֖ה אֶת הַ/מָּֽיִם׃",
+        "LXX": "καὶ δράξεται ὁ ἱερεὺς ἀπὸ τῆς θυσίας τὸ μνημόσυνον ⸂⸆⸃ αὐτῆς καὶ ἀνοίσει αὐτὸ ἐπὶ τὸ θυσιαστήριον, καὶ μετὰ ταῦτα ποτιεῖ τὴν γυναῖκα τὸ ὕδωρ.",
+        "VUL": "pugillum sacrificii tollat de eo, quod offertur, et incendat super altare : et sic potum det mulieri aquas amarissimas.",
+        "SYN": "и возьмет священник горстью из хлебного приношения часть в память, и сожжет на жертвеннике, и потом даст жене выпить воды;",
+        "NEO": "il prendra une poignée de cette oblation comme mémorial, et il la fera fumer sur l’autel ; et après cela, il fera boire les eaux à la femme.",
+        "NAB": "where he shall take a handful of the cereal offering as its token offering and burn it on the altar. Only then shall he have the woman drink the water.",
+        "VAT_ES": "Luego tomará de la ofrenda un puñado, como memorial, y lo hará arder sobre el altar. Finalmente, hará que la mujer beba esas aguas.",
+        "CEI": "il sacerdote prenderà una manciata di quell'oblazione come memoriale di lei e la brucerà sull'altare; poi farà bere l'acqua alla donna."
       }
     },
     "27": {
@@ -305,7 +487,14 @@
         "LXX": 27
       },
       "text": {
-        "WLC": "וְהִשְׁקָ֣הּ אֶת הַמַּ֗יִם וְהָיְתָ֣ה אִֽם נִטְמְאָה֮ וַתִּמְעֹ֣ל מַ֣עַל בְּאִישָׁהּ֒ וּבָ֨אוּ בָ֜הּ הַמַּ֤יִם הַמְאָֽרֲרִים֙ לְמָרִ֔ים וְצָבְתָ֣ה בִטְנָ֔הּ וְנָפְלָ֖ה יְרֵכָ֑הּ וְהָיְתָ֧ה הָאִשָּׁ֛ה לְאָלָ֖ה בְּקֶ֥רֶב עַמָּֽהּ׃"
+        "WLC": "וְ/הִשְׁקָ֣/הּ אֶת הַ/מַּ֗יִם וְ/הָיְתָ֣ה אִֽם נִטְמְאָה֮ וַ/תִּמְעֹ֣ל מַ֣עַל בְּ/אִישָׁ/הּ֒ וּ/בָ֨אוּ בָ֜/הּ הַ/מַּ֤יִם הַ/מְאָֽרֲרִים֙ לְ/מָרִ֔ים וְ/צָבְתָ֣ה בִטְנָ֔/הּ וְ/נָפְלָ֖ה יְרֵכָ֑/הּ וְ/הָיְתָ֧ה הָ/אִשָּׁ֛ה לְ/אָלָ֖ה בְּ/קֶ֥רֶב עַמָּֽ/הּ׃",
+        "LXX": "καὶ ἔσται ἐὰν ᾖ μεμιαμμένη καὶ λήθῃ λάθῃ τὸν ἄνδρα αὐτῆς, καὶ εἰσελεύσεται εἰς αὐτὴν τὸ ὕδωρ τοῦ ἐλεγμοῦ τὸ ἐπικαταρώμενον, καὶ πρησθήσεται τὴν κοιλίαν, καὶ διαπεσεῖται ὁ μηρὸς αὐτῆς, καὶ ἔσται ἡ γυνὴ εἰς ἀρὰν τῷ λαῷ αὐτῆς·",
+        "VUL": "Quas cum biberit, si polluta est, et contempto viro adulterii rea, pertransibunt eam aquæ maledictionis, et inflato ventre, computrescet femur : eritque mulier in maledictionem, et in exemplum omni populo.",
+        "SYN": "и когда напоит ее водою, тогда, если она нечиста и сделала преступление против мужа своего, горькая вода, наводящая проклятие, войдет в нее, ко вреду ее, и опухнет чрево ее и опадет лоно ее, и будет эта жена проклятою в народе своем;",
+        "NEO": "Quand il lui fera boire les eaux, il arrivera, si elle s’est souillée et a été infidèle à son mari, que les eaux qui apportent la malédiction entreront en elle pour lui être amères : son ventre s’enflera, ses flancs maigriront, et cette femme sera une malédiction au milieu de son peuple.",
+        "NAB": "Once she has done so, if she has been impure and unfaithful to her husband, this bitter water that brings a curse will go into her, and her belly will swell and her thighs will waste away, so that she will become an example of imprecation among her people.",
+        "VAT_ES": "Después de darle a beber el agua, si la mujer se ha deshonrado siendo infiel a su marido, las aguas que entren en ella le provocarán amargura; su vientre se hinchará y ella se volverá estéril. Así la mujer quedará como ejemplo de maldición en medio de su pueblo.",
+        "CEI": "Quando le avrà fatto bere l'acqua, se essa si è contaminata e ha commesso un'infedeltà contro il marito, l'acqua che porta maledizione entrerà in lei per produrre amarezza; il ventre le si gonfierà e i suoi fianchi avvizziranno e quella donna diventerà un oggetto di maledizione in mezzo al suo popolo."
       }
     },
     "28": {
@@ -316,7 +505,14 @@
         "LXX": 28
       },
       "text": {
-        "WLC": "וְאִם לֹ֤א נִטְמְאָה֙ הָֽאִשָּׁ֔ה וּטְהֹרָ֖ה הִ֑וא וְנִקְּתָ֖ה וְנִזְרְעָ֥ה זָֽרַע׃"
+        "WLC": "וְ/אִם לֹ֤א נִטְמְאָה֙ הָֽ/אִשָּׁ֔ה וּ/טְהֹרָ֖ה הִ֑וא וְ/נִקְּתָ֖ה וְ/נִזְרְעָ֥ה זָֽרַע׃",
+        "LXX": "ἐὰν δὲ μὴ μιανθῇ ἡ γυνὴ καὶ καθαρὰ ᾖ, καὶ ἀθῴα ἔσται καὶ ἐκσπερματιεῖ σπέρμα.",
+        "VUL": "Quod si polluta non fuerit, erit innoxia, et faciet liberos.",
+        "SYN": "если же жена не осквернилась и была чиста, то останется невредимою и будет оплодотворяема семенем.",
+        "NEO": "Mais si la femme ne s’est pas souillée et qu’elle soit pure, elle sera préservée, et elle aura des enfants.",
+        "NAB": "If, however, the woman has not defiled herself, but is still pure, she will be immune and will still be able to bear children.",
+        "VAT_ES": "Pero si no se ha deshonrado y es pura, quedará inmune y podrá tener hijos.",
+        "CEI": "Ma se la donna non si è contaminata ed è pura, sarà riconosciuta innocente e avrà figli."
       }
     },
     "29": {
@@ -327,7 +523,14 @@
         "LXX": 29
       },
       "text": {
-        "WLC": "זֹ֥את תּוֹרַ֖ת הַקְּנָאֹ֑ת אֲשֶׁ֨ר תִּשְׂטֶ֥ה אִשָּׁ֛ה תַּ֥חַת אִישָׁ֖הּ וְנִטְמָֽאָה׃"
+        "WLC": "זֹ֥את תּוֹרַ֖ת הַ/קְּנָאֹ֑ת אֲשֶׁ֨ר תִּשְׂטֶ֥ה אִשָּׁ֛ה תַּ֥חַת אִישָׁ֖/הּ וְ/נִטְמָֽאָה׃",
+        "LXX": "Οὗτος ὁ νόμος τῆς ζηλοτυπίας, ᾧ ἐὰν παραβῇ ἡ γυνὴ ὕπανδρος οὖσα καὶ μιανθῇ,",
+        "VUL": "Ista est lex zelotypiæ. Si declinaverit mulier a viro suo, et si polluta fuerit,",
+        "SYN": "Вот закон о ревновании, когда жена изменит мужу своему и осквернится,",
+        "NEO": "Telle est la loi sur la jalousie, quand une femme, étant sous la puissance de son mari, se détourne et se souille,",
+        "NAB": "\"This, then, is the law for jealousy: When a woman goes astray while under the authority of her husband and acts impurely,",
+        "VAT_ES": "Este es el ritual para los casos de celos, cuando una mujer se ha desviado y deshonrado mientras está bajo la potestad de su marido,",
+        "CEI": "Questa è la legge della gelosia, nel caso in cui la moglie di uno si sia traviata ricevendo un altro invece del marito e si contamini"
       }
     },
     "30": {
@@ -338,7 +541,14 @@
         "LXX": 30
       },
       "text": {
-        "WLC": "א֣וֹ אִ֗ישׁ אֲשֶׁ֨ר תַּעֲבֹ֥ר עָלָ֛יו ר֥וּחַ קִנְאָ֖ה וְקִנֵּ֣א אֶת אִשְׁתּ֑וֹ וְהֶעֱמִ֤יד אֶת הָֽאִשָּׁה֙ לִפְנֵ֣י יְהוָ֔ה וְעָ֤שָׂה לָהּ֙ הַכֹּהֵ֔ן אֵ֥ת כָּל הַתּוֹרָ֖ה הַזֹּֽאת׃"
+        "WLC": "א֣וֹ אִ֗ישׁ אֲשֶׁ֨ר תַּעֲבֹ֥ר עָלָ֛י/ו ר֥וּחַ קִנְאָ֖ה וְ/קִנֵּ֣א אֶת אִשְׁתּ֑/וֹ וְ/הֶעֱמִ֤יד אֶת הָֽ/אִשָּׁה֙ לִ/פְנֵ֣י יְהוָ֔ה וְ/עָ֤שָׂה לָ/הּ֙ הַ/כֹּהֵ֔ן אֵ֥ת כָּל הַ/תּוֹרָ֖ה הַ/זֹּֽאת׃",
+        "LXX": "ἢ ἄνθρωπος ᾧ ἐὰν ἐπέλθῃ ἐπ’ αὐτὸν πνεῦμα ζηλώσεως καὶ ζηλώσῃ τὴν γυναῖκα αὐτοῦ· καὶ στήσει τὴν γυναῖκα αὐτοῦ ἔναντι Κυρίου, καὶ ποιήσει ⸆ αὐτῇ ὁ ἱερεὺς πάντα τὸν νόμον τοῦτον·",
+        "VUL": "maritusque zelotypiæ spiritu concitatus adduxerit eam in conspectu Domini, et fecerit ei sacerdos juxta omnia quæ scripta sunt :",
+        "SYN": "или когда на мужа найдет дух ревности, и он будет ревновать жену свою, тогда пусть он поставит жену пред лицем Господа, и сделает с нею священник все по сему закону, --",
+        "NEO": "ou quand l’esprit de jalousie s’empare d’un mari et qu’il devient jaloux de sa femme : il fera tenir sa femme debout devant \\+w Yahweh|strong=\"H3068\"\\+w**, et le prêtre lui appliquera cette loi dans son entier.",
+        "NAB": "or when such a feeling of jealousy comes over a man that he becomes suspicious of his wife, he shall have her stand before the LORD, and the priest shall apply this law in full to her.",
+        "VAT_ES": "o cuando un hombre ha tenido un arrebato de celos y siete celos de su esposa. En estos casos, el marido la hará comparecer delante del Señor, y el sacerdote le aplicará íntegramente este ritual.",
+        "CEI": "e per il caso in cui lo spirito di gelosia si impadronisca del marito e questi diventi geloso della moglie; egli farà comparire sua moglie davanti al Signore e il sacerdote le applicherà questa legge integralmente."
       }
     },
     "31": {
@@ -349,7 +559,14 @@
         "LXX": 31
       },
       "text": {
-        "WLC": "וְנִקָּ֥ה הָאִ֖ישׁ מֵעָוֺ֑ן וְהָאִשָּׁ֣ה הַהִ֔וא תִּשָּׂ֖א אֶת עֲוֺנָֽהּ׃"
+        "WLC": "וְ/נִקָּ֥ה הָ/אִ֖ישׁ מֵ/עָוֺ֑ן וְ/הָ/אִשָּׁ֣ה הַ/הִ֔וא תִּשָּׂ֖א אֶת עֲוֺנָֽ/הּ׃",
+        "LXX": "καὶ ἀθῷος ἔσται ὁ ἄνθρωπος ἀπὸ ἁμαρτίας, καὶ ἡ γυνὴ ἐκείνη λήμψεται τὴν ἁμαρτίαν αὐτῆς.",
+        "VUL": "maritus absque culpa erit, et illa recipiet iniquitatem suam.",
+        "SYN": "и будет муж чист от греха, а жена понесет на себе грех свой.",
+        "NEO": "Le mari sera exempt de faute ; mais la femme portera son iniquité ».",
+        "NAB": "The man shall be free from guilt, but the woman shall bear such guilt as she may have.\"",
+        "VAT_ES": "El marido quedará libre de culpa, y la mujer cargará con la suya.",
+        "CEI": "Il marito sarà immune da colpa, ma la donna porterà la pena della sua iniquità\"."
       }
     }
   }
