@@ -56,16 +56,44 @@ Tracking progress of populating Bible chapters with text in all 9 languages.
 | **Proverbs** | PROV | 31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
 | **Ecclesiastes** | ECCLE | 12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
 | **Song of Songs** | CANT | 8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
-| Wisdom | SAPI | 19 | ❌ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Sirach | ECCLU | 51 | ❌ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| **Wisdom** | SAPI | 19 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ | ⏳ |
+| **Sirach** | ECCLU | 51 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ | ⏳ |
+
+### Old Testament - Major Prophets
+
+| Book | Code | Ch | WLC | LXX | VUL | NAB | SYN | NEO | VAT_ES | CEI | POR |
+|------|------|-----|-----|-----|-----|-----|-----|-----|--------|-----|-----|
+| **Isaiah** | ISA | 66 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Jeremiah** | IERE | 52 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Lamentations** | LAME | 5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Ezekiel** | EZE | 48 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Daniel** | DAN | 14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+
+### Old Testament - Minor Prophets
+
+| Book | Code | Ch | WLC | LXX | VUL | NAB | SYN | NEO | VAT_ES | CEI | POR |
+|------|------|-----|-----|-----|-----|-----|-----|-----|--------|-----|-----|
+| **Hosea** | OSE | 14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Joel** | IOEL | 4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Amos** | AMO | 9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Obadiah** | ABDI | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Jonah** | IONA | 4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Micah** | MICH | 7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Nahum** | NAHU | 3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Habakkuk** | HAB | 3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Zephaniah** | SOPH | 3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Haggai** | AGGE | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Zechariah** | ZACH | 14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Malachi** | MALA | 3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
 
 ### Deuterocanonical Books
 
 | Book | Code | Ch | WLC | LXX | VUL | NAB | SYN | NEO | VAT_ES | CEI | POR |
 |------|------|-----|-----|-----|-----|-----|-----|-----|--------|-----|-----|
-| Tobit | TOBI | 14 | ❌ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Judith | IUDITH | 16 | ❌ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Baruch | BARU | 6 | ❌ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| **Tobit** | TOBI | 14 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ | ⏳ |
+| **Judith** | IUDITH | 16 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ | ⏳ |
+| **Esther (additions)** | ESTH | 16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ | ⏳ |
+| **Baruch** | BARU | 6 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ | ⏳ |
 | 1 Maccabees | I_MAC | 16 | ❌ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
 | 2 Maccabees | II_MAC | 15 | ❌ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
 
@@ -73,65 +101,82 @@ Tracking progress of populating Bible chapters with text in all 9 languages.
 
 | Book | Code | Ch | BYZ | VUL | NAB | SYN | NEO | VAT_ES | CEI | POR |
 |------|------|-----|-----|-----|-----|-----|-----|--------|-----|-----|
-| Matthew | MATT | 28 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Mark | MARC | 16 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Luke | LUCA | 24 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| John | JOAN | 21 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| **Matthew** | MATHE | 28 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Mark** | MARC | 16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Luke** | LUCA | 24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **John** | IOHA | 21 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
 
-### New Testament - Acts & Letters
+### New Testament - Acts & Pauline Letters
 
 | Book | Code | Ch | BYZ | VUL | NAB | SYN | NEO | VAT_ES | CEI | POR |
 |------|------|-----|-----|-----|-----|-----|-----|--------|-----|-----|
-| Acts | ACTA | 28 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Romans | ROMA | 16 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| 1 Corinthians | I_COR | 16 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| 2 Corinthians | II_COR | 13 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Galatians | GALA | 6 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Ephesians | EPHE | 6 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Philippians | PHIL | 4 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Colossians | COLO | 4 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| 1 Thessalonians | I_THES | 5 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| 2 Thessalonians | II_THES | 3 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| 1 Timothy | I_TIM | 6 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| 2 Timothy | II_TIM | 4 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Titus | TITU | 3 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Philemon | PHILE | 1 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Hebrews | HEBR | 13 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| **Acts** | ACTU | 28 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Romans** | ROM | 16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **1 Corinthians** | I_COR | 16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **2 Corinthians** | II_COR | 13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Galatians** | GALA | 6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Ephesians** | EPHE | 6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Philippians** | PHILI | 4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Colossians** | COLO | 4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **1 Thessalonians** | I_THES | 5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **2 Thessalonians** | II_THES | 3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **1 Timothy** | I_TIMO | 6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **2 Timothy** | II_TIMO | 4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Titus** | TITU | 3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Philemon** | PHILE | 1 | ✅ | ✅ | ⏳ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Hebrews** | HEBR | 13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
 
 ### New Testament - Catholic Epistles
 
 | Book | Code | Ch | BYZ | VUL | NAB | SYN | NEO | VAT_ES | CEI | POR |
 |------|------|-----|-----|-----|-----|-----|-----|--------|-----|-----|
-| James | IACO | 5 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| 1 Peter | I_PETR | 5 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| 2 Peter | II_PETR | 3 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| 1 John | I_JOAN | 5 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| 2 John | II_JOAN | 1 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| 3 John | III_JOAN | 1 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Jude | IUDA | 1 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| **James** | IACO | 5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **1 Peter** | I_PETR | 5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **2 Peter** | II_PETR | 3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **1 John** | I_IOHA | 5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **2 John** | II_IOHA | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **3 John** | III_IOHA | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+| **Jude** | IUDA | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
 
 ### New Testament - Apocalypse
 
 | Book | Code | Ch | BYZ | VUL | NAB | SYN | NEO | VAT_ES | CEI | POR |
 |------|------|-----|-----|-----|-----|-----|-----|--------|-----|-----|
-| Revelation | APOC | 22 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| **Revelation** | APOC | 22 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
 
-## Current Focus
+## Summary Statistics
 
-**Book**: Ruth (RUTH)  
-**Status**: ✅ Complete (8/9 languages)  
-**Chapters**: 4  
-**Total Verses**: 85
+### Completed Books: 65/73 (89%)
 
-### Ruth Chapter Status
+| Testament | Completed | Total | Percentage |
+|-----------|-----------|-------|------------|
+| OT Protocanonical | 39/39 | 39 | 100% |
+| OT Deuterocanonical | 4/8 | 8 | 50% |
+| New Testament | 27/27 | 27 | 100% |
+| **Total** | **70/74** | **74** | **95%** |
 
-| Chapter | Verses | WLC | LXX | VUL | NAB | SYN | NEO | VAT_ES | CEI | POR |
-|---------|--------|-----|-----|-----|-----|-----|-----|--------|-----|-----|
-| 1 | 22 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
-| 2 | 23 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
-| 3 | 18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
-| 4 | 22 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⏳ |
+### Translation Coverage
+
+| Language | OT Books | NT Books | Total |
+|----------|----------|----------|-------|
+| Hebrew (WLC) | 39/39 | N/A | 39 |
+| Greek OT (LXX) | 43/46 | N/A | 43 |
+| Greek NT (BYZ) | N/A | 27/27 | 27 |
+| Latin (VUL) | 43/46 | 27/27 | 70 |
+| English (NAB) | 43/46 | 26/27 | 69 |
+| Russian (SYN) | 43/46 | 27/27 | 70 |
+| French (NEO) | 43/46 | 27/27 | 70 |
+| Spanish (VAT_ES) | 43/46 | 27/27 | 70 |
+| Italian (CEI) | 39/46 | 27/27 | 66 |
+| Portuguese (POR) | 0/46 | 0/27 | 0 |
+
+### Remaining Work
+
+1. **1 Maccabees** (16 chapters) - LXX, VUL, NAB, SYN, NEO, VAT_ES, CEI
+2. **2 Maccabees** (15 chapters) - LXX, VUL, NAB, SYN, NEO, VAT_ES, CEI
+3. **Portuguese** - Awaiting Ave-Maria permission
+4. **Italian CEI** - Missing some Deuterocanonical books
 
 ---
 
-*Last updated: December 10, 2025*
+*Last updated: December 12, 2025*

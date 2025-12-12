@@ -9,17 +9,44 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.8.120] - 2025-12-15
+
+### Added
+- Complete New Testament (27 books, 260 chapters) with 7 languages: BYZ, VUL, SYN, NEO, NAB, VAT_ES, CEI
+- NT Books: Matthew, Mark, Luke, John, Acts, Romans, 1&2 Corinthians, Galatians, Ephesians, Philippians, Colossians, 1&2 Thessalonians, 1&2 Timothy, Titus, Philemon, Hebrews, James, 1&2 Peter, 1-3 John, Jude, Revelation
+- Create `scripts/populate_nt_json.py` for NT population in JSON format
+- Add `parse_byzantine_nt_csv()` parser for Byzantine Greek NT CSV format
+
+### Changed
+- Update `scripts/parsers.py` with Byzantine NT CSV parser support
+- Update all documentation: BOOKPOPULATION.md, TODO.md, TEXTSOURCES.md, README.md
+
+### Statistics
+- **Total translations added this version**: 53,648 (NT)
+- **Cumulative total**: ~231,000 verse translations across 66 books
+- **Books complete**: 66/73 (39 OT + 27 NT)
+- **Remaining**: 1 Maccabees, 2 Maccabees, plus 5 deuterocanonical books
+
 ## [0.8.119] - 2025-12-10
 
 ### Added
 - Complete Ruth (4 chapters, 85 verses) with 8 languages: WLC, LXX, VUL, NAB, SYN, NEO, VAT_ES, CEI
 - Complete Genesis (50 chapters, ~1533 verses) with 8 languages: WLC, LXX, VUL, NAB, SYN, NEO, VAT_ES, CEI
+- Complete OT Major Prophets: Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel
+- Complete OT Minor Prophets: Hosea through Malachi (12 books)
+- Complete Deuterocanonical books: Tobit, Judith, Esther additions, Wisdom, Sirach, Baruch
 - Create `scripts/parsers.py` reusable parsing library for all source formats
 - Create `scripts/populate_genesis.py` with Vatican HTML file mappings
+- Create `scripts/populate_minor_prophets.py` for combined Minor Prophets population
+- Create `scripts/populate_deuterocanonical.py` for Deuterocanonical books
 - Add NT sections to BOOKPOPULATION.md tracking file
 
 ### Changed
 - Refactor `scripts/populate_ruth.py` with language-specific parsers
+
+### Statistics
+- **Total translations added this version**: ~177,000 (OT)
+- **Books complete**: 39/73 OT books
 
 ## [0.8.118] - 2025-12-10
 

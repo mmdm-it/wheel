@@ -143,14 +143,29 @@ The Catholic Bible includes 73 books (vs 66 Protestant):
   - Bel and the Dragon (Daniel 14)
   - Prayer of Azariah and Song of Three Children
 
-## Processing Pipeline (TODO)
+## Processing Pipeline
 
-1. **Parse** - Convert each format to standardized JSON
-2. **Align** - Match verses across translations
-3. **Validate** - Verify book/chapter/verse coverage
-4. **Merge** - Combine into chapter-level JSON files
-5. **Index** - Generate manifest with verse counts
+**Status**: 66/73 books populated with translations.
+
+| Step | Status | Notes |
+|------|--------|-------|
+| Parse | ✅ Complete | Parsers in `scripts/parsers.py` |
+| Align | ✅ Complete | Verses matched across 7 languages |
+| Validate | ✅ Complete | Coverage verified per book |
+| Merge | ✅ Complete | Chapter-level JSON files populated |
+| Index | ✅ Complete | Manifest with verse counts |
+
+**Scripts created**:
+- `scripts/parsers.py` - Reusable parsing library for all source formats
+- `scripts/populate_ot_json.py` - OT population (39 books)
+- `scripts/populate_nt_json.py` - NT population (27 books)
+
+**Remaining work**:
+- [ ] 1 Maccabees (16 chapters)
+- [ ] 2 Maccabees (15 chapters)
+- [ ] Chinese text extraction from PDFs
+- [ ] Portuguese (pending permission)
 
 ---
 
-*Last updated: December 7, 2025*
+*Last updated: December 15, 2025*
