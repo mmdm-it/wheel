@@ -18,6 +18,7 @@ class MobileCatalogApp {
         this.viewport = new ViewportManager();
         this.dataManager = new DataManager();
         this.renderer = new MobileRenderer(this.viewport, this.dataManager);
+        this.renderer.setController(this);
         this.touchHandler = null;
 
         this.initialized = false;

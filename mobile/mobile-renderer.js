@@ -23,6 +23,7 @@ class MobileRenderer {
     constructor(viewportManager, dataManager) {
         this.viewport = viewportManager;
         this.dataManager = dataManager;
+        this.controller = null; // injected controller (e.g., MobileCatalogApp)
         
         // Initialize Animation module
         this.animation = new MobileAnimation(viewportManager, dataManager, this);
@@ -69,6 +70,14 @@ class MobileRenderer {
         // Debug controls
         this.focusRingDebugFlag = this.computeFocusRingDebugFlag();
         this.loopInOutDebugFlag = this.computeLoopInOutDebugFlag();
+    }
+
+    setController(controller) {
+        this.controller = controller;
+    }
+
+    getTouchHandler() {
+        return this.controller && this.controller.touchHandler;
     }
 
     computeFocusRingDebugFlag() {
@@ -532,10 +541,10 @@ class MobileRenderer {
         Logger.debug(`🎯 Centering [${targetIndex}] ${focusItem.name} with offset: ${targetOffset.toFixed(3)}`);
         
         // Animate to target position
-        if (window.mobileCatalogApp) {
-            window.mobileCatalogApp.animateRotationTo(targetOffset);
+        if (this.controller && typeof this.controller.animateRotationTo === 'function') {
+            this.controller.animateRotationTo(targetOffset);
         } else {
-            Logger.error('🎯 window.mobileCatalogApp not found!');
+            Logger.error('🎯 rotation controller not available');
         }
     }
 
@@ -556,7 +565,7 @@ class MobileRenderer {
         // Get current selected index
         const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
         const middleIndex = (this.currentFocusItems.length - 1) / 2;
-        const currentRotationOffset = window.mobileCatalogApp?.touchHandler?.rotationOffset || 0;
+        const currentRotationOffset = this.getTouchHandler()?.rotationOffset || 0;
         const currentIndex = this.getSelectedFocusIndex(currentRotationOffset, this.currentFocusItems.length);
         
         Logger.debug('🔍 Selection state:', {
@@ -585,11 +594,11 @@ class MobileRenderer {
         Logger.debug(`🔍🎯 Offset: ${currentRotationOffset.toFixed(3)} → ${targetOffset.toFixed(3)}`);
         
         // Animate to target position
-        if (window.mobileCatalogApp) {
+        if (this.controller && typeof this.controller.animateRotationTo === 'function') {
             Logger.debug('🔍 Calling animateRotationTo with targetOffset:', targetOffset.toFixed(3));
-            window.mobileCatalogApp.animateRotationTo(targetOffset);
+            this.controller.animateRotationTo(targetOffset);
         } else {
-            Logger.error('🔍 window.mobileCatalogApp not found!');
+            Logger.error('🔍 rotation controller not available');
         }
     }
     
@@ -1732,7 +1741,7 @@ class MobileRenderer {
         
         const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
         const centerAngle = this.viewport.getCenterAngle();
-        const rotationOffset = window.mobileCatalogApp?.touchHandler?.rotationOffset || 0;
+        const rotationOffset = this.getTouchHandler()?.rotationOffset || 0;
         const adjustedCenterAngle = centerAngle + rotationOffset;
         const middleIndex = (allFocusItems.length - 1) / 2;
         const angle = adjustedCenterAngle + (middleIndex - selectedIndex) * angleStep;
@@ -2580,8 +2589,9 @@ class MobileRenderer {
         this.isAnimating = true;
 
         // Immediately disable touch handling to prevent race conditions with touch events
-        if (window.mobileCatalogApp && window.mobileCatalogApp.touchHandler) {
-            window.mobileCatalogApp.touchHandler.tempDisabled = true;
+        const touchHandler = this.getTouchHandler();
+        if (touchHandler) {
+            touchHandler.tempDisabled = true;
         }
         
         // Capture all Child Pyramid node positions before clearing
@@ -2636,8 +2646,9 @@ class MobileRenderer {
         this.animation.animateSiblingsToFocusRing(item, nodePositions, allSiblings, () => {
             // Animation complete - now show the real focus ring
             this.isAnimating = false;
-            if (window.mobileCatalogApp && window.mobileCatalogApp.touchHandler) {
-                window.mobileCatalogApp.touchHandler.tempDisabled = false;
+            const handler = this.getTouchHandler();
+            if (handler) {
+                handler.tempDisabled = false;
             }
             this.continueChildPyramidClick(item);
         });
@@ -2759,12 +2770,13 @@ class MobileRenderer {
             Logger.debug(`🔺 Calculated centerOffset for leaf ${item.name}: clickedIndex=${clickedIndex}, middleIndex=${middleIndex}, centerOffset=${centerOffset.toFixed(3)}`);
 
             // Set up touch rotation with the correct offset
-            if (window.mobileCatalogApp) {
-                window.mobileCatalogApp.setupTouchRotation(allSiblings);
+            if (this.controller && typeof this.controller.setupTouchRotation === 'function') {
+                this.controller.setupTouchRotation(allSiblings);
                 Logger.debug('🔺 Touch rotation re-setup for', allSiblings.length, itemLevel + 's');
                 
-                if (window.mobileCatalogApp.touchHandler) {
-                    window.mobileCatalogApp.touchHandler.rotationOffset = centerOffset;
+                const handler = this.getTouchHandler();
+                if (handler) {
+                    handler.rotationOffset = centerOffset;
                     Logger.debug('🔺 Set touch handler rotationOffset to', centerOffset.toFixed(3));
                 }
             }
@@ -2803,15 +2815,16 @@ class MobileRenderer {
         Logger.debug(`🔺 Calculated centerOffset for ${item.name}: clickedIndex=${clickedIndex}, middleIndex=${middleIndex}, centerOffset=${centerOffset.toFixed(3)}`);
 
         // 5. Set up touch rotation with the correct offset
-        if (window.mobileCatalogApp) {
-            window.mobileCatalogApp.setupTouchRotation(allSiblings);
+        if (this.controller && typeof this.controller.setupTouchRotation === 'function') {
+            this.controller.setupTouchRotation(allSiblings);
             Logger.debug('🔺 Touch rotation re-setup for', allSiblings.length, itemLevel + 's');
             
             // CRITICAL: Set the rotation offset AFTER setupTouchRotation to override its default
-            if (window.mobileCatalogApp.touchHandler) {
+            const handler = this.getTouchHandler();
+            if (handler) {
                 // Stop any ongoing inertial animation to prevent it from interfering
-                window.mobileCatalogApp.touchHandler.stopAnimation();
-                window.mobileCatalogApp.touchHandler.rotationOffset = centerOffset;
+                handler.stopAnimation();
+                handler.rotationOffset = centerOffset;
                 Logger.debug('🔺 Set touch handler rotationOffset to', centerOffset.toFixed(3));
             }
         }
