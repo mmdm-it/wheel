@@ -62,11 +62,11 @@ class HubNucCoordinate {
     }
     
     _calculateHub() {
-        if (this._nucCalculated) {
-            // Convert from Nuc to Hub coordinates
-            // (This would be the inverse of the constitutional formula)
-            this._hubX = this._nucX; // Simplified - would need viewport context
-            this._hubY = this._nucY;
+        const hubPos = CoordinateSystem.getHubPosition();
+        if (this._nucCalculated && hubPos) {
+            // Convert from Nuc (screen) to Hub Cartesian (origin at Hub)
+            this._hubX = this._nucX - hubPos.x;
+            this._hubY = this._nucY - hubPos.y;
         } else if (this._polarCalculated) {
             // Convert from polar to Hub Cartesian
             this._hubX = this._radius * Math.cos(this._angle);
@@ -76,17 +76,15 @@ class HubNucCoordinate {
     }
     
     _calculateNuc() {
-        if (this._hubCalculated) {
-            // This is the key optimization - direct Hub to Nuc conversion
-            // Uses the constitutional relationship
-            this._nucX = this._hubX; // Would need proper transformation
-            this._nucY = this._hubY;
-        } else if (this._polarCalculated) {
+        const hubPos = CoordinateSystem.getHubPosition();
+        if (this._hubCalculated && hubPos) {
+            // Convert from Hub Cartesian to Nuc (screen) by adding hub origin
+            this._nucX = hubPos.x + this._hubX;
+            this._nucY = hubPos.y + this._hubY;
+        } else if (this._polarCalculated && hubPos) {
             // Convert from polar (relative to Hub) to Nuc coordinates
-            // This is the pattern we see everywhere: x = centerX + radius * cos(angle)
-            const hubCoords = CoordinateSystem.getHubPosition();
-            this._nucX = hubCoords.x + this._radius * Math.cos(this._angle);
-            this._nucY = hubCoords.y + this._radius * Math.sin(this._angle);
+            this._nucX = hubPos.x + this._radius * Math.cos(this._angle);
+            this._nucY = hubPos.y + this._radius * Math.sin(this._angle);
         }
         this._nucCalculated = true;
     }
@@ -134,11 +132,7 @@ class CoordinateSystem {
     
     static getHubPosition() {
         if (!CoordinateSystem._hubPosition && CoordinateSystem._viewport) {
-            const v = CoordinateSystem._viewport;
-            // Constitutional formula
-            const hubX = v.LSd - (v.SSd / 2);
-            const hubY = -(v.LSd / 2);
-            CoordinateSystem._hubPosition = { x: hubX, y: hubY };
+            CoordinateSystem._hubPosition = CoordinateSystem._computeHubFromViewport(CoordinateSystem._viewport);
         }
         return CoordinateSystem._hubPosition;
     }
@@ -156,8 +150,10 @@ class CoordinateSystem {
         if (CoordinateSystem._cache.has(cacheKey)) {
             return CoordinateSystem._cache.get(cacheKey);
         }
-        
         const hubPos = CoordinateSystem.getHubPosition();
+        if (!hubPos) {
+            return { x: radius * Math.cos(angle), y: radius * Math.sin(angle) };
+        }
         const nucX = hubPos.x + radius * Math.cos(angle);
         const nucY = hubPos.y + radius * Math.sin(angle);
         
@@ -179,6 +175,7 @@ class CoordinateSystem {
     static getHubToNucAngle() {
         const hub = CoordinateSystem.getHubPosition();
         const nuc = CoordinateSystem.getNucPosition();
+        if (!hub) return 0;
         
         const vectorX = nuc.x - hub.x;
         const vectorY = nuc.y - hub.y;
@@ -200,6 +197,25 @@ class CoordinateSystem {
         return angleRadiusPairs.map(({ angle, radius }) => 
             CoordinateSystem.hubAngleToNuc(angle, radius)
         );
+    }
+
+    // Compute hub position consistent with ViewportManager.getArcParameters()
+    static _computeHubFromViewport(v) {
+        if (!v || typeof v.LSd !== 'number' || typeof v.SSd !== 'number') {
+            return null;
+        }
+
+        const LSd = v.LSd;
+        const SSd = v.SSd;
+        const radius = SSd / 2 + (LSd * LSd) / (2 * SSd);
+
+        if (v.isPortrait !== false) {
+            // Portrait: Hub at (Radius - SSd/2, -LSd/2)
+            return { x: radius - SSd / 2, y: -(LSd / 2) };
+        }
+
+        // Landscape: Hub at (LSd/2, -(Radius - SSd/2))
+        return { x: LSd / 2, y: -(radius - SSd / 2) };
     }
 }
 

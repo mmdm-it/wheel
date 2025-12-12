@@ -202,18 +202,13 @@ class TouchRotationHandler {
             if (angleDelta > Math.PI) angleDelta -= 2 * Math.PI;
             if (angleDelta < -Math.PI) angleDelta += 2 * Math.PI;
             
-            // Calculate linear movement for comparison with existing method
-            const linearDelta = (touchCurrentX - touchStartX) + (touchCurrentY - touchStartY);
-            
-            Logger.debug(`Bilingual touch analysis: angular=${angleDelta.toFixed(4)}rad (${(angleDelta * 180 / Math.PI).toFixed(1)}°), linear=${linearDelta.toFixed(1)}px`);
+            Logger.debug(`Bilingual touch analysis: angular=${angleDelta.toFixed(4)}rad (${(angleDelta * 180 / Math.PI).toFixed(1)}°)`);
             
             return {
                 angleDelta,
-                linearDelta,
                 startCoord: startNucCoord,
                 currentCoord: currentNucCoord,
-                // For future: could use angular delta for more sophisticated rotation
-                recommendedRotationDelta: angleDelta * 0.5 // Example scaling
+                recommendedRotationDelta: angleDelta // Use angular delta directly
             };
             
         } catch (error) {

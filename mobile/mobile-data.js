@@ -20,6 +20,7 @@ class DataManager {
         this.loading = false;
         this.loadPromise = null;
         this.currentVolumePath = null;
+        this.cacheVersion = 'unknown'; // versioned cache key (schema+data)
         this.availableVolumes = [];
         this.rootDataKey = null; // e.g., 'MMdM' or 'Gutenberg_Bible'
         
@@ -140,15 +141,22 @@ class DataManager {
         await this.idbReady;
         if (!this.idbCache) return null;
 
+        const cacheKey = this._buildCacheKey(filePath);
+
         return new Promise((resolve) => {
             try {
                 const tx = this.idbCache.transaction(IDB_STORE, 'readonly');
                 const store = tx.objectStore(IDB_STORE);
-                const request = store.get(filePath);
+                const request = store.get(cacheKey);
 
                 request.onsuccess = () => {
                     const result = request.result;
                     if (result) {
+                        if (result.versionKey !== this.cacheVersion) {
+                            Logger.debug(`💾 Cache version mismatch for ${filePath} (have ${result.versionKey}, want ${this.cacheVersion})`);
+                            resolve(null);
+                            return;
+                        }
                         Logger.debug(`💾 Cache hit: ${filePath}`);
                         resolve(result.data);
                     } else {
@@ -176,15 +184,18 @@ class DataManager {
         await this.idbReady;
         if (!this.idbCache) return;
 
+        const cacheKey = this._buildCacheKey(filePath);
+
         try {
             const tx = this.idbCache.transaction(IDB_STORE, 'readwrite');
             const store = tx.objectStore(IDB_STORE);
             store.put({
-                path: filePath,
+                path: cacheKey,
                 data: data,
-                timestamp: Date.now()
+                timestamp: Date.now(),
+                versionKey: this.cacheVersion
             });
-            Logger.debug(`💾 Cached: ${filePath}`);
+            Logger.debug(`💾 Cached: ${filePath} (version ${this.cacheVersion})`);
         } catch (error) {
             Logger.debug('💾 Cache write error:', error);
         }
@@ -210,6 +221,10 @@ class DataManager {
         } catch (error) {
             Logger.warn('💾 Cache clear error:', error);
         }
+    }
+
+    _buildCacheKey(filePath) {
+        return `${this.cacheVersion}::${filePath}`;
     }
 
     /**
@@ -334,7 +349,9 @@ class DataManager {
             const indexResponse = await fetch('./volumes.json');
             if (indexResponse.ok) {
                 const index = await indexResponse.json();
-                volumeFiles = index.volumes || [];
+                const indexed = index.volumes || [];
+                // Accept strings or objects { path, name }
+                volumeFiles = indexed.map(entry => typeof entry === 'string' ? entry : entry?.path).filter(Boolean);
                 Logger.debug('📋 Loaded volume index:', volumeFiles);
             }
         } catch (error) {
@@ -491,7 +508,7 @@ class DataManager {
             }
             
             this.data = await response.json();
-            
+
             // Determine root data key (e.g., 'MMdM', 'Gutenberg_Bible')
             this.rootDataKey = Object.keys(this.data)[0];
             
@@ -505,6 +522,7 @@ class DataManager {
                 const schemaVersion = displayConfig.volume_schema_version || '1.0.0';
                 const dataVersion = displayConfig.volume_data_version || 'unknown';
                 const structureType = displayConfig.structure_type || 'monolithic';
+                this.cacheVersion = this.computeCacheVersion(displayConfig, filename);
                 
                 Logger.info(`📦 Loaded volume schema: ${schemaVersion} | data: ${dataVersion} | structure: ${structureType}`);
                 
@@ -517,6 +535,9 @@ class DataManager {
             }
             
             this.currentVolumePath = filename;
+            // Reset external load tracking for new volume context
+            this.loadedExternalFiles.clear();
+            this.externalFileLoadingPromises.clear();
             Logger.info(`✅ Volume loaded successfully: ${filename}`);
             return this.data;
             
@@ -801,23 +822,51 @@ class DataManager {
     }
 
     validateData(data) {
-        if (!data || !this.rootDataKey) return false;
+        if (!data || !this.rootDataKey) {
+            Logger.error('Validation failed: missing data or root key');
+            return false;
+        }
         
         const rootData = data[this.rootDataKey];
-        if (!rootData || !rootData.display_config) return false;
+        if (!rootData || !rootData.display_config) {
+            Logger.error('Validation failed: missing display_config');
+            return false;
+        }
         
-        // Validate Wheel volume structure
-        if (rootData.display_config.volume_type !== 'wheel_hierarchical') return false;
-        if (!rootData.display_config.wheel_volume_version) return false;
+        const cfg = rootData.display_config;
+        if (cfg.volume_type !== 'wheel_hierarchical') {
+            Logger.error('Validation failed: volume_type must be wheel_hierarchical');
+            return false;
+        }
+        if (!cfg.wheel_volume_version) {
+            Logger.error('Validation failed: missing wheel_volume_version');
+            return false;
+        }
+        if (!cfg.volume_schema_version) {
+            Logger.error('Validation failed: missing volume_schema_version');
+            return false;
+        }
+        if (!cfg.hierarchy_levels || Object.keys(cfg.hierarchy_levels).length === 0) {
+            Logger.error('Validation failed: hierarchy_levels missing or empty');
+            return false;
+        }
         
-        // Get the first data collection (markets, testaments, etc.)
-        const levelNames = Object.keys(rootData.display_config.hierarchy_levels || {});
-        if (levelNames.length === 0) return false;
-        
+        const levelNames = Object.keys(cfg.hierarchy_levels);
         const firstLevelPlural = this.getPluralPropertyName(levelNames[0]);
         const firstLevelData = rootData[firstLevelPlural];
+        if (!firstLevelData || typeof firstLevelData !== 'object') {
+            Logger.error('Validation failed: root collection missing');
+            return false;
+        }
         
-        return firstLevelData && typeof firstLevelData === 'object';
+        return true;
+    }
+
+    computeCacheVersion(displayConfig, filename) {
+        const schema = displayConfig?.volume_schema_version || 'unknown-schema';
+        const dataVersion = displayConfig?.volume_data_version || 'unknown-data';
+        const volumeName = displayConfig?.volume_name || filename || 'unknown-volume';
+        return `${volumeName}|${schema}|${dataVersion}`;
     }
 
     getDisplayConfig() {
