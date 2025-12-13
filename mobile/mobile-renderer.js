@@ -516,16 +516,11 @@ class MobileRenderer {
         }
         
         // Find the index of the clicked item
-        console.log(`🎯🔍 SEARCH: Searching for key="${focusItem.key}" in array...`);
         const targetIndex = this.currentFocusItems.findIndex(item => {
-            console.log(`  🎯🔍 Comparing with item name="${item.name}" key="${item.key}" match=${item.key === focusItem.key}`);
             return item.key === focusItem.key;
         });
         
-        console.log(`🎯🔍 SEARCH: Result targetIndex=${targetIndex}`);
-        
         if (targetIndex < 0) {
-            console.log(`🎯❌ SEARCH FAILED: Item not found in currentFocusItems`);
             Logger.warn('🎯 Clicked item not found in current focus items');
             return;
         }
@@ -537,7 +532,6 @@ class MobileRenderer {
         const middleIndex = (this.currentFocusItems.length - 1) / 2;
         const targetOffset = (targetIndex - middleIndex) * angleStep;
         
-        console.log(`🎯✅ ANIMATE: Will center [${targetIndex}] "${focusItem.name}" with offset: ${targetOffset.toFixed(3)}`);
         Logger.debug(`🎯 Centering [${targetIndex}] ${focusItem.name} with offset: ${targetOffset.toFixed(3)}`);
         
         // Animate to target position
@@ -1706,35 +1700,28 @@ class MobileRenderer {
      * Called after programmatic rotation animations complete
      */
     triggerFocusSettlement() {
-        console.log('🎯🎯🎯 triggerFocusSettlement CALLED');
         Logger.debug('🎯 triggerFocusSettlement CALLED');
         
         // Mark as no longer rotating
         this.isRotating = false;
-        console.log('🎯 Set isRotating = false');
         
         // Clear any pending settle timeout
         if (this.settleTimeout) {
             clearTimeout(this.settleTimeout);
             this.settleTimeout = null;
-            console.log('🎯 Cleared pending settle timeout');
         }
         
         // Get the currently selected focus item
         if (!this.selectedFocusItem) {
-            console.log('🎯❌ No selected focus item to settle');
             Logger.warn('🎯 No selected focus item to settle');
             return;
         }
-        
-        console.log('🎯 Selected focus item:', this.selectedFocusItem.name);
         
         // Calculate the angle for the selected item
         const allFocusItems = this.allFocusItems.length > 0 ? this.allFocusItems : this.currentFocusItems;
         const selectedIndex = allFocusItems.findIndex(item => item.key === this.selectedFocusItem.key);
         
         if (selectedIndex < 0) {
-            console.log('🎯❌ Selected focus item not found in focus items list');
             Logger.warn('🎯 Selected focus item not found in focus items list');
             return;
         }
@@ -1746,7 +1733,6 @@ class MobileRenderer {
         const middleIndex = (allFocusItems.length - 1) / 2;
         const angle = adjustedCenterAngle + (middleIndex - selectedIndex) * angleStep;
         
-        console.log('🎯 Calling showChildContentForFocusItem for:', this.selectedFocusItem.name);
         Logger.debug(`🎯 Settling on: ${this.selectedFocusItem.name} at index ${selectedIndex}`);
         this.showChildContentForFocusItem(this.selectedFocusItem, angle);
         
