@@ -1886,7 +1886,8 @@ class MobileRenderer {
                         this.allFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
                 }
                 
-                const currentItem = this.currentFocusItems?.find(item => item.key === clickedKey);
+                // Some focus arrays contain null gap placeholders; guard before reading key
+                const currentItem = this.currentFocusItems?.find(item => item && item.key === clickedKey);
                 
                 if (currentItem) {
                     if (DEBUG_VERBOSE) console.log(`🎯✅ CLICK: Found item "${currentItem.name}"`);
@@ -2217,7 +2218,15 @@ class MobileRenderer {
     }
     
     clearFanLines() {
-        this.elements.pathLinesGroup.innerHTML = '';
+        const group = this.elements.pathLinesGroup;
+        if (!group) return;
+
+        // Preserve the parent-line; remove only other line elements
+        Array.from(group.children).forEach(child => {
+            if (!child.classList.contains('parent-line')) {
+                child.remove();
+            }
+        });
     }
     
     /**
