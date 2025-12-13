@@ -223,8 +223,9 @@ class MobileAnimation {
         const viewport = this.viewport.getViewportInfo();
         const LSd = Math.max(viewport.width, viewport.height);
         const arcParams = this.viewport.getArcParameters();
-        const parentButtonAngle = 135 * Math.PI / 180;
-        const parentButtonRadius = 0.9 * LSd * Math.SQRT2;
+        // Mirror the IN migration endpoint so the OUT animation starts exactly where the previous move ended
+        const parentButtonAngle = Math.PI - Math.atan(LSd / arcParams.radius);
+        const parentButtonRadius = 0.9 * Math.sqrt(LSd * LSd + arcParams.radius * arcParams.radius);
         const startX = arcParams.centerX + parentButtonRadius * Math.cos(parentButtonAngle);
         const startY = arcParams.centerY + parentButtonRadius * Math.sin(parentButtonAngle);
         

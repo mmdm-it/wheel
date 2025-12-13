@@ -1455,6 +1455,7 @@ class MobileRenderer {
             this.elements.childRingGroup.classList.add('hidden');
             this.elements.detailItemsGroup.classList.add('hidden');
             this.clearFanLines();
+            this.clearParentLine();
             
             // Remove any sort number error messages
             const errorDivs = document.querySelectorAll('.sort-number-error');
@@ -2451,6 +2452,12 @@ class MobileRenderer {
      * PERFORMANCE: Debounced to prevent multiple redundant calls
      */
     drawParentLine(parentButtonNuc) {
+        // Do not draw while rotating or during animations
+        if (this.isRotating || this.isAnimating) {
+            console.log('🟡 drawParentLine skipped: rotating/animating');
+            return;
+        }
+
         // PERFORMANCE: Debounce unless the line is missing
         const positionKey = `${parentButtonNuc.x.toFixed(1)}_${parentButtonNuc.y.toFixed(1)}`;
         const pathLinesGroup = this.elements.pathLinesGroup;
