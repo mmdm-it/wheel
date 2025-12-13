@@ -1735,6 +1735,14 @@ class MobileRenderer {
         
         Logger.debug(`🎯 Settling on: ${this.selectedFocusItem.name} at index ${selectedIndex}`);
         this.showChildContentForFocusItem(this.selectedFocusItem, angle);
+
+        // After settlement, refresh parent line if we have a stored parent position
+        if (this._lastParentButtonNuc) {
+            setTimeout(() => {
+                console.log('🟡 triggerFocusSettlement -> redraw parent line');
+                this.drawParentLine(this._lastParentButtonNuc);
+            }, 10);
+        }
         
         // BUGFIX: Removed redundant updateFocusRingPositions() call
         // The focus ring was already positioned correctly with click handlers attached
@@ -2274,6 +2282,8 @@ class MobileRenderer {
                 x: arcParams.centerX + parentButtonCircleRadius * Math.cos(parentButtonAngle),
                 y: arcParams.centerY + parentButtonCircleRadius * Math.sin(parentButtonAngle)
             };
+            // Remember latest position for redraws after rotations
+            this._lastParentButtonNuc = parentButtonNuc;
             
             // Text at same position as circle (centered over it)
             const textOffsetX = 0;
@@ -2335,7 +2345,10 @@ class MobileRenderer {
                 parentNodeCircle.classList.remove('hidden');
                 parentNodeCircle.style.display = '';
                 // Draw line from circle to magnifier only when circle is visible
-                setTimeout(() => this.drawParentLine(parentButtonNuc), 20);
+                setTimeout(() => {
+                    console.log(`🟡 drawParentLine scheduled: parent=(${parentButtonNuc.x.toFixed(1)}, ${parentButtonNuc.y.toFixed(1)})`);
+                    this.drawParentLine(parentButtonNuc);
+                }, 20);
                 console.log('🟡 Circle VISIBLE - line will be drawn');
             }
             
@@ -2438,12 +2451,13 @@ class MobileRenderer {
      * PERFORMANCE: Debounced to prevent multiple redundant calls
      */
     drawParentLine(parentButtonNuc) {
-        // PERFORMANCE: Debounce - skip if we've drawn recently with same position
+        // PERFORMANCE: Debounce unless the line is missing
         const positionKey = `${parentButtonNuc.x.toFixed(1)}_${parentButtonNuc.y.toFixed(1)}`;
-        if (this._lastParentLinePosition === positionKey && 
-            this._lastParentLineTime && 
-            performance.now() - this._lastParentLineTime < 100) {
-            // Skip redundant call
+        const pathLinesGroup = this.elements.pathLinesGroup;
+        const hasParentLine = pathLinesGroup?.querySelector('.parent-line');
+        if (hasParentLine && this._lastParentLinePosition === positionKey && this._lastParentLineTime && performance.now() - this._lastParentLineTime < 100) {
+            // Skip redundant call only if a line already exists
+            console.log('🟡 drawParentLine skipped (debounce, line exists)');
             return;
         }
         this._lastParentLinePosition = positionKey;
@@ -2459,7 +2473,7 @@ class MobileRenderer {
         // Check if Parent Button circle is visible before drawing line
         const parentNodeCircle = document.getElementById('parentNodeCircle');
         if (!parentNodeCircle || parentNodeCircle.classList.contains('hidden') || parentNodeCircle.style.display === 'none') {
-            if (DEBUG_VERBOSE) console.log('🔵🔵 drawParentLine ABORTED: Parent Button circle not visible');
+            console.log('🟡 drawParentLine aborted: parent circle not visible');
             return;
         }
         
@@ -2477,18 +2491,8 @@ class MobileRenderer {
         // Parent Button is positioned with transform in Nuc coordinates
         // Both are in the same SVG space, so we can draw directly
         
-        if (DEBUG_VERBOSE) {
-            console.log('🔵 Magnifier position (SVG):', {
-                x: magnifierPos.x.toFixed(2),
-                y: magnifierPos.y.toFixed(2),
-                angle: ((magnifierPos.angle * 180 / Math.PI) % 360).toFixed(1) + '°'
-            });
-            
-            console.log('🔵 Parent Button position (Nuc/transform):', {
-                x: parentButtonNuc.x.toFixed(2),
-                y: parentButtonNuc.y.toFixed(2)
-            });
-        }
+        console.log(`🟡 drawParentLine geometry: parent=(${parentButtonNuc.x.toFixed(1)}, ${parentButtonNuc.y.toFixed(1)}), ` +
+            `magnifier=(${magnifierPos.x.toFixed(1)}, ${magnifierPos.y.toFixed(1)}), angle=${((magnifierPos.angle * 180 / Math.PI) % 360).toFixed(1)}°`);
         
         // Line connects the two circles: Parent Button circle and Magnifier circle
         // Parent Button circle is at the group origin (0,0) in group coordinates
@@ -2496,30 +2500,14 @@ class MobileRenderer {
         const lineEndX = parentButtonNuc.x;
         const lineEndY = parentButtonNuc.y;
         
-        if (DEBUG_VERBOSE) {
-            console.log('🔵 Circle-to-circle connection:', {
-                parentCircleX: lineEndX.toFixed(2),
-                parentCircleY: lineEndY.toFixed(2),
-                magnifierX: magnifierPos.x.toFixed(2),
-                magnifierY: magnifierPos.y.toFixed(2)
-            });
-        }
-        
         // Calculate distance
         const dx = magnifierPos.x - lineEndX;
         const dy = magnifierPos.y - lineEndY;
         const distance = Math.sqrt(dx * dx + dy * dy);
+
+        console.log(`🟡 drawParentLine line: dx=${dx.toFixed(1)}, dy=${dy.toFixed(1)}, dist=${distance.toFixed(1)}`);
         
-        if (DEBUG_VERBOSE) {
-            console.log('🔵 Line geometry:', {
-                dx: dx.toFixed(2),
-                dy: dy.toFixed(2),
-                distance: distance.toFixed(2)
-            });
-        }
-        
-        // Create line element
-        const pathLinesGroup = this.elements.pathLinesGroup;
+        // Create line element (reuse pathLinesGroup from earlier)
         if (!pathLinesGroup) {
             console.warn('⚠️ drawParentLine: pathLinesGroup not found');
             return;
@@ -2535,15 +2523,7 @@ class MobileRenderer {
         line.setAttribute('stroke-width', '1');
         
         pathLinesGroup.appendChild(line);
-        
-        if (DEBUG_VERBOSE) {
-            console.log('🔵🔵 drawParentLine COMPLETE:', {
-                lineCreated: true,
-                lineInDOM: !!document.querySelector('.parent-line'),
-                parentLinesGroupChildren: pathLinesGroup.children.length,
-                timestamp: performance.now().toFixed(2)
-            });
-        }
+        console.log(`🟡 drawParentLine complete: children=${pathLinesGroup.children.length}, inDOM=${!!document.querySelector('.parent-line')}`);
     }
     
     /**
@@ -2556,7 +2536,14 @@ class MobileRenderer {
         const existingLine = pathLinesGroup.querySelector('.parent-line');
         if (existingLine) {
             existingLine.remove();
+            console.log('🟡 clearParentLine: removed existing parent line');
+        } else {
+            console.log('🟡 clearParentLine: no parent line to remove');
         }
+
+        // Reset debounce tracking so next draw is not skipped
+        this._lastParentLinePosition = null;
+        this._lastParentLineTime = null;
     }
     
     /**
