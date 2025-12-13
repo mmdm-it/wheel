@@ -2348,9 +2348,97 @@ class DataManager {
     }
 
     sortLeafItems(items, levelConfig) {
-        // Context-aware sorting for leaf items (models, songs, verses)
+        if (!items || !items.length) {
+            return items;
+        }
+
+        // Validate that every leaf item is explicitly authored with sort_number
+        const itemsWithoutSort = items.filter(item => {
+            const sortNum = item.data?.sort_number ?? item.sort_number;
+            return sortNum === undefined || sortNum === null;
+        });
+
+        if (itemsWithoutSort.length > 0) {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'sort-number-error';
+            errorDiv.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #ff3333;
+                color: white;
+                padding: 30px;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                z-index: 10000;
+                text-align: center;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+                max-width: 80%;
+            `;
+
+            const levelName = levelConfig?.display_name || 'leaf items';
+
+            const firstItem = itemsWithoutSort[0];
+            let parentContext = '';
+            if (firstItem.__path && firstItem.__path.length > 0) {
+                const parentNames = firstItem.__path.slice(0, -1).map(segment => {
+                    if (typeof segment === 'string') return segment;
+                    return segment?.name || segment?.key || segment;
+                });
+                if (parentNames.length > 0) {
+                    parentContext = ` under ${parentNames.join(' → ')}`;
+                }
+            }
+
+            const itemList = itemsWithoutSort.slice(0, 5).map(item =>
+                `• ${item.name || item.key}`
+            ).join('\n');
+            const moreCount = itemsWithoutSort.length > 5
+                ? `\n...and ${itemsWithoutSort.length - 5} more`
+                : '';
+
+            const titleEl = document.createElement('div');
+            titleEl.style.fontSize = '24px';
+            titleEl.style.marginBottom = '15px';
+            titleEl.textContent = '⚠️ ERROR - Sort Number Missing';
+
+            const contextEl = document.createElement('div');
+            contextEl.style.fontSize = '16px';
+            contextEl.style.marginBottom = '10px';
+            contextEl.textContent = `Leaf level: ${levelName}${parentContext}`;
+
+            const listEl = document.createElement('div');
+            listEl.style.fontSize = '14px';
+            listEl.style.textAlign = 'left';
+            listEl.style.marginTop = '15px';
+            listEl.style.whiteSpace = 'pre-line';
+            listEl.textContent = `${itemList}${moreCount}`;
+
+            const footerEl = document.createElement('div');
+            footerEl.style.fontSize = '12px';
+            footerEl.style.marginTop = '20px';
+            footerEl.style.opacity = '0.9';
+            footerEl.textContent = 'Leaf items require authored sort_number';
+
+            errorDiv.appendChild(titleEl);
+            errorDiv.appendChild(contextEl);
+            errorDiv.appendChild(listEl);
+            errorDiv.appendChild(footerEl);
+
+            document.body.appendChild(errorDiv);
+
+            Logger.error(`❌ CRITICAL: ${itemsWithoutSort.length} leaf items missing sort_number at level ${levelName}`);
+            itemsWithoutSort.forEach(item => {
+                Logger.error(`   Missing sort_number: ${item.name || item.key}`);
+            });
+
+            return [];
+        }
+
         const sorted = [...items];
-        
+
         // Preserve original index for stable sorting
         sorted.forEach((item, idx) => {
             if (item.__sortFallbackIndex === undefined) {
@@ -2363,47 +2451,12 @@ class DataManager {
         });
 
         return sorted.sort((a, b) => {
-            // Check for sort_number first (universal explicit sort order)
             const sortA = a.data?.sort_number ?? a.sort_number;
             const sortB = b.data?.sort_number ?? b.sort_number;
-            
-            if (sortA !== undefined && sortB !== undefined) {
-                if (sortA !== sortB) {
-                    return sortA - sortB;
-                }
-                return a.__sortFallbackIndex - b.__sortFallbackIndex;
-            }
-            
-            // Check for track_number (songs in album context)
-            const trackA = a.data?.track_number ?? a.track_number;
-            const trackB = b.data?.track_number ?? b.track_number;
-            
-            if (trackA !== undefined && trackB !== undefined) {
-                if (trackA !== trackB) {
-                    return trackA - trackB;
-                }
-                return a.__sortFallbackIndex - b.__sortFallbackIndex;
-            }
 
-            // Check for verse_number (Bible verses in chapter context)
-            const verseA = a.data?.verse_number ?? a.verse_number;
-            const verseB = b.data?.verse_number ?? b.verse_number;
-            
-            if (verseA !== undefined && verseB !== undefined) {
-                if (verseA !== verseB) {
-                    return verseA - verseB;
-                }
-                return a.__sortFallbackIndex - b.__sortFallbackIndex;
+            if (sortA !== sortB) {
+                return sortA - sortB;
             }
-
-            // Fallback: alphabetical by name (for aggregated views or models)
-            const nameA = (a.name || a.key || '').toString().toLowerCase();
-            const nameB = (b.name || b.key || '').toString().toLowerCase();
-            
-            if (nameA !== nameB) {
-                return nameA.localeCompare(nameB);
-            }
-            
             return a.__sortFallbackIndex - b.__sortFallbackIndex;
         });
     }
