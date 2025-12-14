@@ -48,6 +48,11 @@ class MobileAnimation {
             Logger.debug('🎬 No current magnified item to animate');
             return;
         }
+
+        // Hide the parent-to-magnifier line while animating
+        if (this.renderer && this.renderer.clearParentLine) {
+            this.renderer.clearParentLine();
+        }
         
         // Hide the actual Magnifier ring during animation
         const magnifierRing = document.getElementById('magnifier');
@@ -217,6 +222,11 @@ class MobileAnimation {
         if (!parentItem) {
             Logger.debug('🎬 No parent item to animate');
             return;
+        }
+
+        // Hide the parent-to-magnifier line while animating
+        if (this.renderer && this.renderer.clearParentLine) {
+            this.renderer.clearParentLine();
         }
         
         // Get start position (Parent Button)
