@@ -435,18 +435,28 @@ class MobileCatalogApp {
     }
 
     animateRotationTo(targetOffset) {
-        console.log('🎯🚀 animateRotationTo START', { targetOffset });
+        // Clamp target to touch-handler rotation limits to avoid one-way navigation issues near bounds
+        let clampedTarget = targetOffset;
+        if (this.touchHandler && this.touchHandler.rotationLimits) {
+            const { min = -Infinity, max = Infinity } = this.touchHandler.rotationLimits;
+            clampedTarget = Math.max(min, Math.min(max, targetOffset));
+            if (clampedTarget !== targetOffset) {
+                console.log('🎯🚧 animateRotationTo CLAMPED', { targetOffset, clampedTarget, min, max });
+            }
+        }
+
+        console.log('🎯🚀 animateRotationTo START', { targetOffset: clampedTarget });
         if (!this.touchHandler) {
             console.log('🎯❌ No touchHandler - aborting animation');
             return;
         }
 
         const startOffset = this.touchHandler.rotationOffset;
-        console.log('🎯📍 Animation params:', { startOffset, targetOffset, delta: targetOffset - startOffset });
+        console.log('🎯📍 Animation params:', { startOffset, targetOffset: clampedTarget, delta: clampedTarget - startOffset });
 
         // Validate inputs
-        if (isNaN(targetOffset)) {
-            Logger.error(`Invalid targetOffset for animation: ${targetOffset}`);
+        if (isNaN(clampedTarget)) {
+            Logger.error(`Invalid targetOffset for animation: ${clampedTarget}`);
             return;
         }
         if (isNaN(startOffset)) {
@@ -455,7 +465,7 @@ class MobileCatalogApp {
             return;
         }
 
-        const deltaOffset = targetOffset - startOffset;
+        const deltaOffset = clampedTarget - startOffset;
         const duration = 300;
         const startTime = performance.now();
 
@@ -597,12 +607,64 @@ class MobileCatalogApp {
         }
 
         Logger.debug(`🔼✓ Current level: ${currentLevel}`);
+        console.log('🔼🧭 NAV CONTEXT', {
+            currentLevel,
+            activeType: this.renderer.activeType,
+            hierarchyLevels: this.renderer.getHierarchyLevelNames(),
+            path: currentFocus.__path,
+            currentFocusItems: this.renderer.currentFocusItems?.length,
+            allFocusItems: this.renderer.allFocusItems?.length
+        });
 
-        // Check if we're at the top navigation level - if so, don't allow OUT migration
+        // Helper to show the configured top navigation level immediately (no OUT animation)
+        const applyTopNavLevel = (topLevelItems, selectedTopLevel, centerOffset) => {
+            console.log('🔼🌲 applyTopNavLevel invoked:', {
+                topNavLevel,
+                itemCount: topLevelItems?.length,
+                selectedName: selectedTopLevel?.name,
+                selectedKey: selectedTopLevel?.key,
+                centerOffset
+            });
+            console.log('🔼🌲 Top-level items sample:', topLevelItems?.slice(0, 6)?.map(i => `${i.name} (${i.key}) sort:${i.sort_number}`));
+            this.renderer.currentFocusItems = topLevelItems;
+            this.renderer.allFocusItems = topLevelItems;
+            this.setupTouchRotation(topLevelItems);
+            if (this.touchHandler) {
+                this.touchHandler.rotationOffset = centerOffset;
+            }
+            this.renderer.lastRotationOffset = centerOffset;
+            this.renderer.forceImmediateFocusSettlement = true;
+            this.renderer.updateFocusRingPositions(centerOffset);
+            this.renderer.forceImmediateFocusSettlement = false;
+            this.renderer.selectedFocusItem = selectedTopLevel;
+            this.renderer.activeType = topNavLevel;
+            this.renderer.buildActivePath(selectedTopLevel);
+            this.renderer.updateParentButton(null);
+            this.renderer.clearParentLine();
+            this.renderer.isRotating = false;
+            this.isAnimating = false;
+        };
+
+        // Check if we're at the top navigation level - if so, show top level and stop
         const displayConfig = this.dataManager.getDisplayConfig();
         const topNavLevel = displayConfig?.focus_ring_startup?.top_navigation_level;
-        if (topNavLevel && currentLevel === topNavLevel) {
-            Logger.debug(`🔼 Already at top navigation level (${topNavLevel}) - Parent Button should not trigger OUT migration`);
+        if (topNavLevel && (currentLevel === topNavLevel || this.renderer.activeType === topNavLevel || (currentFocus.__path?.length || 0) <= 1)) {
+            Logger.debug(`🔼 Already at top navigation level (${topNavLevel}) - showing top items and stopping`);
+            const topLevelItems = this.dataManager.getTopNavigationItems();
+            const pathTopName = currentFocus.__path ? currentFocus.__path[0] : null;
+            const selectedTopLevel = pathTopName ? topLevelItems.find(i => i.name === pathTopName) || topLevelItems?.[0] : topLevelItems?.[0];
+            console.log('🔼🔝 Top-nav guard triggered; topLevelItems length:', topLevelItems?.length, 'first item:', selectedTopLevel?.name, selectedTopLevel?.key);
+            console.log('🔼🔝 Top-nav guard items sample:', topLevelItems?.slice(0, 10)?.map(i => `${i.name} (${i.key}) sort:${i.sort_number}`));
+            if (topLevelItems && selectedTopLevel) {
+                const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+                const middleIndex = (topLevelItems.length - 1) / 2;
+                const topIndex = this.renderer.findItemIndexInArray(selectedTopLevel, topLevelItems, topNavLevel);
+                const centerOffset = topIndex >= 0 ? (topIndex - middleIndex) * angleStep : 0;
+                applyTopNavLevel(topLevelItems, selectedTopLevel, centerOffset);
+            } else {
+                this.renderer.updateParentButton(null);
+                this.renderer.clearParentLine();
+            }
             return;
         }
 
@@ -635,122 +697,46 @@ class MobileCatalogApp {
         // If no parent level exists, we're at second-from-top level
         // Navigate to top level (the start point)
         if (!parentLevel) {
-            Logger.debug('🔼 At second level - navigating OUT to top level');
-            
-            // Get top level items
-            const topLevelItems = this.renderer.getTopLevelItems();
-            if (!topLevelItems || !topLevelItems.length) {
-                Logger.warn('🔼 No top level items available');
+            Logger.debug('🔼 No parent level available - already at top; showing top items');
+            const topLevelItems = this.dataManager.getTopNavigationItems();
+            const pathTopName = currentFocus.__path ? currentFocus.__path[0] : null;
+            const selectedTopLevel = pathTopName ? topLevelItems.find(i => i.name === pathTopName) || topLevelItems?.[0] : topLevelItems?.[0];
+            console.log('🔼🔝 No-parent branch; topLevelItems length:', topLevelItems?.length, 'first item:', selectedTopLevel?.name, selectedTopLevel?.key);
+            console.log('🔼🔝 No-parent branch items sample:', topLevelItems?.slice(0, 10)?.map(i => `${i.name} (${i.key}) sort:${i.sort_number}`));
+            if (topLevelItems && selectedTopLevel) {
+                const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+                const middleIndex = (topLevelItems.length - 1) / 2;
+                const topIndex = this.renderer.findItemIndexInArray(selectedTopLevel, topLevelItems, this.renderer.getHierarchyLevelNames()[0]);
+                const centerOffset = topIndex >= 0 ? (topIndex - middleIndex) * angleStep : 0;
+                applyTopNavLevel(topLevelItems, selectedTopLevel, centerOffset);
+            } else {
                 this.renderer.updateParentButton(null);
-                return;
+                this.renderer.clearParentLine();
             }
-            
-            // Find which top-level item is the parent of current focus
-            // The top level is at depth 0 in the hierarchy, so extract __path[0]
-            const topLevelParentName = currentFocus.__path && currentFocus.__path.length > 0 
-                ? currentFocus.__path[0] 
-                : null;
-            
-            console.log('🔼🔍 OUT MIGRATION DIAGNOSIS:');
-            console.log('  Current focus item:', currentFocus.name, '| key:', currentFocus.key);
-            console.log('  Current focus __path:', currentFocus.__path);
-            console.log('  Extracted parent name from __path[0]:', topLevelParentName);
-            console.log('  Top level items (first 5):', topLevelItems.slice(0, 5).map(i => `${i.name}(${i.key}, sort:${i.sort_number})`));
-            
-            const selectedTopLevel = topLevelParentName 
-                ? topLevelItems.find(item => item.name === topLevelParentName) || topLevelItems[0]
-                : topLevelItems[0];
-            
-            console.log('  Selected top level item:', selectedTopLevel.name, '| key:', selectedTopLevel.key, '| sort_number:', selectedTopLevel.sort_number);
-            
-            Logger.debug(`🔼 Showing top level: ${topLevelItems.length} items, selected: ${selectedTopLevel.name || selectedTopLevel.key}`);
-            
-            // Update Focus Ring with top level items
-            this.renderer.currentFocusItems = topLevelItems;
-            this.renderer.allFocusItems = topLevelItems;
-            
-            const topLevelIndex = this.renderer.findItemIndexInArray(selectedTopLevel, topLevelItems, this.renderer.getHierarchyLevelNames()[0]);
-            const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-            const middleIndex = (topLevelItems.length - 1) / 2;
-            const centerOffset = topLevelIndex >= 0 ? (topLevelIndex - middleIndex) * angleStep : 0;
-            
-            console.log('  Found index in array:', topLevelIndex, '| middleIndex:', middleIndex, '| centerOffset:', centerOffset);
-            console.log('🔼🔍 END DIAGNOSIS\n');
-            
-            Logger.debug(`🔼 Top level index: ${topLevelIndex}, centerOffset: ${centerOffset}`);
-            
-            console.log('🔼🔼 CAPTURED for OUT animation (top nav):', clonedNodes.length, 'items');
-            
-            // OUT MIGRATION ANIMATION for top nav level (Stage 2 + Stage 4)
-            console.log('🔼🔼 STARTING OUT ANIMATION (top nav)');
-            
-            // Stage 4: Animate Parent Button content to Magnifier (OUT migration)
-            const parentItem = currentFocus.__path && currentFocus.__path.length > 0 
-                ? { name: currentFocus.__path[0] }
-                : { name: 'Parent' };
-            this.renderer.animation.animateParentButtonToMagnifier(parentItem);
-            
-            // Hide current Child Pyramid before OUT animation (prevents duplicate display)
-            this.renderer.childPyramid.hide();
-            this.renderer.clearFanLines();
-            
-            this.isAnimating = true;
-            
-            // Stage 2: Animate Focus Ring to Child Pyramid (OUT migration)
-            this.renderer.animateFocusRingToChildPyramid(currentFocusItems, clonedNodes, () => {
-                console.log('🔼🔼 OUT animation complete (top nav)');
-                console.log('🔼🔼 Child Pyramid will be shown by updateFocusRingPositions()');
-                
-                // Clear fan lines during transition
-                this.renderer.clearFanLines();
-            
-                // Setup rotation for top level
-                this.setupTouchRotation(topLevelItems);
-                if (this.touchHandler) {
-                    this.touchHandler.rotationOffset = centerOffset;
-                }
-                
-                // Update display
-                if (this.renderer.settleTimeout) {
-                    clearTimeout(this.renderer.settleTimeout);
-                    this.renderer.settleTimeout = null;
-                }
-                
-                console.log('🔼🔼 About to call updateFocusRingPositions - NEW NODES WILL APPEAR');
-                // Set lastRotationOffset BEFORE updateFocusRingPositions
-                this.renderer.lastRotationOffset = centerOffset;
-                // Force immediate settlement
-                this.renderer.forceImmediateFocusSettlement = true;
-                this.renderer.updateFocusRingPositions(centerOffset);
-                this.renderer.forceImmediateFocusSettlement = false;
-                console.log('🔼🔼 updateFocusRingPositions complete');
-                
-                this.renderer.selectedFocusItem = selectedTopLevel;
-                this.renderer.activeType = this.renderer.getHierarchyLevelNames()[0];
-                this.renderer.buildActivePath(selectedTopLevel);
-                this.renderer.isRotating = false;
-                this.isAnimating = false;
-                
-                // At top level, hide parent button
-                this.renderer.updateParentButton(null);
-                
-                Logger.debug(`🔼 Reached top level - Parent Button hidden, showing ${topLevelItems.length} top-level items`);
-            });
             return;
         }
 
         Logger.debug(`🔼 Navigating from ${currentLevel} to parent level ${parentLevel}`);
 
+        // If we're already at the configured top navigation level, do nothing further
+        if (topNavLevel && currentLevel === topNavLevel) {
+            Logger.debug('🔼 Already at top navigation level; ignoring parent button click');
+            this.renderer.updateParentButton(null);
+            this.renderer.clearParentLine();
+            return;
+        }
+
         // Special case: If navigating TO the top navigation level, show all top-level items
         if (topNavLevel && parentLevel === topNavLevel) {
             Logger.debug(`🔼 Navigating to top navigation level (${topNavLevel}) - showing all items`);
             
-            const topLevelItems = this.dataManager.getAllInitialFocusItems();
+            const topLevelItems = this.dataManager.getTopNavigationItems();
             if (!topLevelItems || !topLevelItems.length) {
                 Logger.warn('🔼 No top level items available');
                 this.renderer.updateParentButton(null);
                 return;
             }
+            console.log('🔼🔝 Top-nav OUT branch items sample:', topLevelItems.slice(0, 10).map(i => `${i.name} (${i.key}) sort:${i.sort_number}`));
             
             // Find which top-level item should be selected (the ancestor in path)
             // Need to extract the name at the correct depth in the hierarchy
@@ -843,9 +829,9 @@ class MobileCatalogApp {
             this.renderer.buildActivePath(selectedTopLevel);
             this.renderer.isRotating = false;
             
-                // At top level, hide parent button (will be re-shown as disabled)
-                const parentName = this.renderer.getParentNameForLevel(selectedTopLevel, topNavLevel);
-                this.renderer.updateParentButton(parentName);
+                // At top level, hide/disable parent button and clear its line
+                this.renderer.updateParentButton(null);
+                this.renderer.clearParentLine();
                 
                 this.isAnimating = false;
                 Logger.debug(`🔼 Reached top navigation level - showing ${topLevelItems.length} items`);

@@ -1133,6 +1133,34 @@ class DataManager {
     }
 
     /**
+     * Get items at the configured top navigation level (first hierarchy level)
+     * Used when the UI needs to show the absolute top (e.g., testaments).
+     */
+    getTopNavigationItems() {
+        if (!this.data || !this.rootDataKey) return [];
+
+        const levelNames = this.getHierarchyLevelNames();
+        if (!levelNames.length) return [];
+
+        const topLevelName = levelNames[0];
+        const topLevelConfig = this.getHierarchyLevelConfig(topLevelName);
+        const topKeys = this.getTopLevelKeys();
+
+        const items = topKeys.map((name, index) => ({
+            name,
+            [topLevelName]: name,
+            key: name,
+            sort_number: index + 1, // provide stable order when authored sort_number is missing
+            __level: topLevelName,
+            __levelDepth: 0,
+            __isLeaf: false,
+            __path: [name]
+        }));
+
+        return this.sortItems(items, topLevelConfig);
+    }
+
+    /**
      * UNIVERSAL METHOD: Get all initial focus items for display
      * Gets the THIRD level items aggregated across the first two hierarchy levels
      * (e.g., items from groups+subgroups)

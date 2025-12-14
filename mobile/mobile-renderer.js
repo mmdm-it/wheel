@@ -2247,6 +2247,11 @@ class MobileRenderer {
         const parentNodeCircle = document.getElementById('parentNodeCircle');
         this.attachParentButtonDebugLogging(parentButtonGroup);
 
+        // If we've locked the parent button at top level, ignore attempts to show it
+        if (this._parentButtonLockedAtTop) {
+            parentName = null;
+        }
+
         if (parentButtonGroup) {
             parentButtonGroup.style.pointerEvents = 'visiblePainted';
         }
@@ -2308,6 +2313,16 @@ class MobileRenderer {
             
             // Log Parent Button text size (set by CSS #parentButtonGroup #parentText rule)
             console.log('📏 PARENT BUTTON TEXT SIZE:', '16px (CSS)', 'weight: 600 (CSS)', 'text:', parentName);
+
+            // High-level display log for diagnosing loops
+            console.log('🟢 Parent Button display update', {
+                parentName,
+                currentLevel,
+                topNavLevel,
+                isAtTopLevel,
+                shouldHideCircle,
+                skipAnimation
+            });
             
             // Position circle at fixed origin (0,0) relative to group transform
             // Circle radius from config
@@ -2335,31 +2350,32 @@ class MobileRenderer {
                 parentButtonGroup.style.pointerEvents = 'visiblePainted';
             }
             
+            // Once a concrete parent is shown, unlock the top-level lock
+            this._parentButtonLockedAtTop = false;
+
             // Show/hide circle and line together
             if (shouldHideCircle) {
                 parentNodeCircle.classList.add('hidden');
                 parentNodeCircle.style.display = 'none';
                 // Clear line when circle is hidden
                 this.clearParentLine();
-                console.log('🟡 Circle HIDDEN (at top level) - line cleared');
             } else {
                 parentNodeCircle.classList.remove('hidden');
                 parentNodeCircle.style.display = '';
                 // Draw line from circle to magnifier only when circle is visible
                 setTimeout(() => {
-                    console.log(`🟡 drawParentLine scheduled: parent=(${parentButtonNuc.x.toFixed(1)}, ${parentButtonNuc.y.toFixed(1)})`);
                     this.drawParentLine(parentButtonNuc);
                 }, 20);
-                console.log('🟡 Circle VISIBLE - line will be drawn');
             }
-            
-            console.log('🟡🟡🟡 PARENT BUTTON FINAL STATE:');
-            console.log('  Group visible:', !parentButtonGroup.classList.contains('hidden'));
-            console.log('  Circle visible:', !parentNodeCircle.classList.contains('hidden'));
-            console.log('  Text visible:', parentText.style.display !== 'none');
-            console.log('  Disabled:', parentButtonGroup.classList.contains('disabled'));
+            console.log('🟢 Parent Button final state', {
+                groupVisible: !parentButtonGroup.classList.contains('hidden'),
+                circleVisible: !parentNodeCircle.classList.contains('hidden'),
+                textVisible: parentText.style.display !== 'none',
+                disabled: parentButtonGroup.classList.contains('disabled')
+            });
         } else {
             // Hide button if no parent
+            this._parentButtonLockedAtTop = true;
             parentButtonGroup.classList.add('hidden');
             parentButtonGroup.style.display = 'none';
             parentButtonGroup.removeAttribute('data-disabled');
@@ -2373,8 +2389,8 @@ class MobileRenderer {
                 parentText.style.display = 'none';
             }
             this.clearParentLine();
-            
-            console.log('🟡🟡🟡 PARENT BUTTON: No parent - completely hidden');
+
+            console.log('🟢 Parent Button hidden (no parent)');
         }
     }
 
@@ -2453,10 +2469,7 @@ class MobileRenderer {
      */
     drawParentLine(parentButtonNuc) {
         // Do not draw while rotating or during animations
-        if (this.isRotating || this.isAnimating) {
-            console.log('🟡 drawParentLine skipped: rotating/animating');
-            return;
-        }
+        if (this.isRotating || this.isAnimating) return;
 
         // PERFORMANCE: Debounce unless the line is missing
         const positionKey = `${parentButtonNuc.x.toFixed(1)}_${parentButtonNuc.y.toFixed(1)}`;
@@ -2464,25 +2477,14 @@ class MobileRenderer {
         const hasParentLine = pathLinesGroup?.querySelector('.parent-line');
         if (hasParentLine && this._lastParentLinePosition === positionKey && this._lastParentLineTime && performance.now() - this._lastParentLineTime < 100) {
             // Skip redundant call only if a line already exists
-            console.log('🟡 drawParentLine skipped (debounce, line exists)');
             return;
         }
         this._lastParentLinePosition = positionKey;
         this._lastParentLineTime = performance.now();
         
-        if (DEBUG_VERBOSE) {
-            console.log('🔵🔵 drawParentLine START:', {
-                parentButtonNuc,
-                timestamp: performance.now().toFixed(2)
-            });
-        }
-        
         // Check if Parent Button circle is visible before drawing line
         const parentNodeCircle = document.getElementById('parentNodeCircle');
-        if (!parentNodeCircle || parentNodeCircle.classList.contains('hidden') || parentNodeCircle.style.display === 'none') {
-            console.log('🟡 drawParentLine aborted: parent circle not visible');
-            return;
-        }
+        if (!parentNodeCircle || parentNodeCircle.classList.contains('hidden') || parentNodeCircle.style.display === 'none') return;
         
         // Clear any existing line
         this.clearParentLine();
@@ -2498,9 +2500,6 @@ class MobileRenderer {
         // Parent Button is positioned with transform in Nuc coordinates
         // Both are in the same SVG space, so we can draw directly
         
-        console.log(`🟡 drawParentLine geometry: parent=(${parentButtonNuc.x.toFixed(1)}, ${parentButtonNuc.y.toFixed(1)}), ` +
-            `magnifier=(${magnifierPos.x.toFixed(1)}, ${magnifierPos.y.toFixed(1)}), angle=${((magnifierPos.angle * 180 / Math.PI) % 360).toFixed(1)}°`);
-        
         // Line connects the two circles: Parent Button circle and Magnifier circle
         // Parent Button circle is at the group origin (0,0) in group coordinates
         // So in SVG space, it's at parentButtonNuc (x, y)
@@ -2512,8 +2511,6 @@ class MobileRenderer {
         const dy = magnifierPos.y - lineEndY;
         const distance = Math.sqrt(dx * dx + dy * dy);
 
-        console.log(`🟡 drawParentLine line: dx=${dx.toFixed(1)}, dy=${dy.toFixed(1)}, dist=${distance.toFixed(1)}`);
-        
         // Create line element (reuse pathLinesGroup from earlier)
         if (!pathLinesGroup) {
             console.warn('⚠️ drawParentLine: pathLinesGroup not found');
@@ -2530,7 +2527,6 @@ class MobileRenderer {
         line.setAttribute('stroke-width', '1');
         
         pathLinesGroup.appendChild(line);
-        console.log(`🟡 drawParentLine complete: children=${pathLinesGroup.children.length}, inDOM=${!!document.querySelector('.parent-line')}`);
     }
     
     /**
@@ -2543,9 +2539,6 @@ class MobileRenderer {
         const existingLine = pathLinesGroup.querySelector('.parent-line');
         if (existingLine) {
             existingLine.remove();
-            console.log('🟡 clearParentLine: removed existing parent line');
-        } else {
-            console.log('🟡 clearParentLine: no parent line to remove');
         }
 
         // Reset debounce tracking so next draw is not skipped
