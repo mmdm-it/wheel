@@ -1865,49 +1865,49 @@ class MobileRenderer {
         
         if (isSelected) {
             g.classList.add('selected');
-        } else {
-            // Add click handler only to unselected nodes
+        }
+
+        // Always attach click handler (even for selected) so a stuck selection can be re-centered
+        if (DEBUG_VERBOSE) {
+            console.log(`🎯📝 HANDLER: Adding click handler for "${focusItem.name}" key="${focusItem.key}" (selected=${isSelected})`);
+        }
+        
+        // PERFORMANCE: Use passive event listeners for touch/mouse events that don't preventDefault
+        g.addEventListener('mousedown', (e) => {
+            if (DEBUG_VERBOSE) console.log(`🎯👆 MOUSEDOWN on "${focusItem.name}" key="${focusItem.key}"`);
+        }, { passive: true });
+        g.addEventListener('touchstart', (e) => {
+            if (DEBUG_VERBOSE) console.log(`🎯👆 TOUCHSTART on "${focusItem.name}" key="${focusItem.key}"`);
+        }, { passive: true });
+        
+        g.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Look up the item fresh from currentFocusItems using the stored key
+            const clickedKey = g.getAttribute('data-focus-key');
             if (DEBUG_VERBOSE) {
-                console.log(`🎯📝 HANDLER: Adding click handler for "${focusItem.name}" key="${focusItem.key}"`);
+                console.log(`🎯🔥 CLICK: Handler fired! clickedKey="${clickedKey}"`);
+                console.log(`🎯🔥 CLICK: this.currentFocusItems has ${this.currentFocusItems?.length || 0} items`);
+                console.log(`🎯🔥 CLICK: this.allFocusItems has ${this.allFocusItems?.length || 0} items`);
+                console.log(`🎯🔥 CLICK: currentFocusItems:`, 
+                    this.currentFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
+                console.log(`🎯🔥 CLICK: allFocusItems:`, 
+                    this.allFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
             }
             
-            // PERFORMANCE: Use passive event listeners for touch/mouse events that don't preventDefault
-            g.addEventListener('mousedown', (e) => {
-                if (DEBUG_VERBOSE) console.log(`🎯👆 MOUSEDOWN on "${focusItem.name}" key="${focusItem.key}"`);
-            }, { passive: true });
-            g.addEventListener('touchstart', (e) => {
-                if (DEBUG_VERBOSE) console.log(`🎯👆 TOUCHSTART on "${focusItem.name}" key="${focusItem.key}"`);
-            }, { passive: true });
+            // Some focus arrays contain null gap placeholders; guard before reading key
+            const currentItem = this.currentFocusItems?.find(item => item && item.key === clickedKey);
             
-            g.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                
-                // Look up the item fresh from currentFocusItems using the stored key
-                const clickedKey = g.getAttribute('data-focus-key');
-                if (DEBUG_VERBOSE) {
-                    console.log(`🎯🔥 CLICK: Handler fired! clickedKey="${clickedKey}"`);
-                    console.log(`🎯🔥 CLICK: this.currentFocusItems has ${this.currentFocusItems?.length || 0} items`);
-                    console.log(`🎯🔥 CLICK: this.allFocusItems has ${this.allFocusItems?.length || 0} items`);
-                    console.log(`🎯🔥 CLICK: currentFocusItems:`, 
-                        this.currentFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
-                    console.log(`🎯🔥 CLICK: allFocusItems:`, 
-                        this.allFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
-                }
-                
-                // Some focus arrays contain null gap placeholders; guard before reading key
-                const currentItem = this.currentFocusItems?.find(item => item && item.key === clickedKey);
-                
-                if (currentItem) {
-                    if (DEBUG_VERBOSE) console.log(`🎯✅ CLICK: Found item "${currentItem.name}"`);
-                    Logger.debug(`🎯 Focus node clicked: ${currentItem.name}`);
-                    this.bringFocusNodeToCenter(currentItem);
-                } else {
-                    console.log(`🎯❌ CLICK: Key "${clickedKey}" NOT FOUND in currentFocusItems`);
-                    Logger.warn(`🎯 Clicked node key ${clickedKey} not found in current focus items`);
-                }
-            });
-        }
+            if (currentItem) {
+                if (DEBUG_VERBOSE) console.log(`🎯✅ CLICK: Found item "${currentItem.name}"`);
+                Logger.debug(`🎯 Focus node clicked: ${currentItem.name}`);
+                this.bringFocusNodeToCenter(currentItem);
+            } else {
+                console.log(`🎯❌ CLICK: Key "${clickedKey}" NOT FOUND in currentFocusItems`);
+                Logger.warn(`🎯 Clicked node key ${clickedKey} not found in current focus items`);
+            }
+        });
         
         // No strokes on focus nodes - clean styling
         
