@@ -2,7 +2,7 @@
 
 A mobile-first hierarchical data browser with novel rotational touch navigation. Navigate deep tree structures intuitively using circular gestures.
 
-**Version 0.8.162** | December 2025
+**Version 0.8.163** | December 2025
 
 ## Biblia Catholica
 

@@ -10,6 +10,13 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Phase 3: General code cleanup and optimization
 - Child Pyramid design completion (blocking 0.9.0 release)
 
+## [0.8.163] - 2025-12-15
+
+### Fixed
+- Added missing sort_numbers to 9 Ford 6-cylinder families (Flathead Six, Falcon Six, Truck Six, Cologne, Vulcan, SHO, Cyclone, EcoBoost V6, Essex)
+- Families now sorted chronologically by year_introduced (1941-2009)
+- Resolves console errors during family-level navigation in Ford catalog
+
 ## [0.8.162] - 2025-12-15
 
 ### Fixed

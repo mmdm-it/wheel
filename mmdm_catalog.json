@@ -2198,6 +2198,7 @@
                                         "sort_number": 2,
                                         "families": {
                                             "Cologne": {
+                                                "sort_number": 4,
                                                 "models": [
                                                     {
                                                         "engine_model": "2.9L Cologne V6",
@@ -2214,6 +2215,7 @@
                                                 ]
                                             },
                                             "Cyclone": {
+                                                "sort_number": 7,
                                                 "models": [
                                                     {
                                                         "engine_model": "3.5L Duratec 35 (Cyclone)",
@@ -2245,6 +2247,7 @@
                                                 ]
                                             },
                                             "EcoBoost V6": {
+                                                "sort_number": 8,
                                                 "subfamilies": {
                                                     "Nano": {
                                                         "models": [
@@ -2285,6 +2288,7 @@
                                                 ]
                                             },
                                             "Essex": {
+                                                "sort_number": 9,
                                                 "models": [
                                                     {
                                                         "engine_model": "3.8L Essex V6",
@@ -2295,6 +2299,7 @@
                                                 ]
                                             },
                                             "Falcon Six": {
+                                                "sort_number": 2,
                                                 "models": [
                                                     {
                                                         "engine_model": "200 CID I6",
@@ -2311,6 +2316,7 @@
                                                 ]
                                             },
                                             "Flathead Six": {
+                                                "sort_number": 1,
                                                 "models": [
                                                     {
                                                         "engine_model": "226 CID Flathead I6",
@@ -2327,6 +2333,7 @@
                                                 ]
                                             },
                                             "SHO": {
+                                                "sort_number": 6,
                                                 "models": [
                                                     {
                                                         "engine_model": "3.0L SHO V6",
@@ -2345,6 +2352,7 @@
                                                 ]
                                             },
                                             "Truck Six": {
+                                                "sort_number": 3,
                                                 "models": [
                                                     {
                                                         "engine_model": "300 CID I6",
@@ -2355,6 +2363,7 @@
                                                 ]
                                             },
                                             "Vulcan": {
+                                                "sort_number": 5,
                                                 "models": [
                                                     {
                                                         "engine_model": "3.0L Vulcan V6",
