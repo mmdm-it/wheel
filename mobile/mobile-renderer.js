@@ -45,7 +45,6 @@ class MobileRenderer {
     this.leafStateCache = new Map(); // Cache leaf determinations per item
     this.detailSectorAnimating = false;
     this.isAnimating = false; // Block clicks during node migration animations
-        this.parentButtonDebugAttached = false; // Guard repeated listener attachment
         this.focusRingDebugAttached = false; // Guard repeated listener attachment
         this.showDetailSectorBoundsFlag = false; // Toggle for Detail Sector bounds diagnostic
         
@@ -167,6 +166,11 @@ class MobileRenderer {
 
         // Reposition translation toggle if present (orientation/resize)
         this.translationToggle.positionButton();
+        this.navigationView.positionParentButton();
+        this.navigationView.drawParentLine({
+            isRotating: this.isRotating,
+            isAnimating: this.isAnimating
+        });
         
         // Notify child pyramid of viewport changes
         this.childPyramid.handleViewportChange();
@@ -247,37 +251,24 @@ class MobileRenderer {
      * Update Parent Button text and position
      */
     updateParentButton(parentName, skipAnimation = false) {
-        // If we've locked the parent button at top level, ignore attempts to show it
-        if (this._parentButtonLockedAtTop) {
-            parentName = null;
-        }
-
         if (!parentName) {
-            this.navigationView.hideParentButton(skipAnimation);
+            this.navigationView.updateParentButton({ parentName: null, skipAnimation });
             return;
         }
 
-        // Check if we're at top navigation level to decide circle visibility
         const rootData = this.dataManager.data?.[this.dataManager.rootDataKey];
         const startupConfig = rootData?.display_config?.focus_ring_startup;
         const topNavLevel = startupConfig?.top_navigation_level;
         const currentLevel = this.activeType;
-        const isAtTopLevel = topNavLevel && currentLevel === topNavLevel;
-        const shouldHideCircle = isAtTopLevel || currentLevel === null;
 
-        // Position parent button via helper
-        this.navigationView.positionParentButton();
-        const parentNodeCircle = document.getElementById('parentNodeCircle');
-        if (parentNodeCircle) {
-            parentNodeCircle.style.visibility = shouldHideCircle ? 'hidden' : 'visible';
-        }
-
-        this.navigationView.updateParentButton(parentName, skipAnimation);
-
-        // Re-add parent line (if hidden) after animation begins
-        setTimeout(() => {
-            this.renderParentLine();
-        }, 50);
+        this.navigationView.updateParentButton({
+            parentName,
+            currentLevel,
+            topNavLevel,
+            skipAnimation,
+            isRotating: this.isRotating,
+            isAnimating: this.isAnimating
+        });
     }
 
     /**
@@ -1403,7 +1394,7 @@ class MobileRenderer {
             this.elements.childRingGroup.classList.add('hidden');
             this.elements.detailItemsGroup.classList.add('hidden');
             this.clearFanLines();
-            this.clearParentLine();
+            this.navigationView.clearParentLine();
             
             // Remove any sort number error messages
             const errorDivs = document.querySelectorAll('.sort-number-error');
@@ -1685,13 +1676,13 @@ class MobileRenderer {
         Logger.debug(`🎯 Settling on: ${this.selectedFocusItem.name} at index ${selectedIndex}`);
         this.showChildContentForFocusItem(this.selectedFocusItem, angle);
 
-        // After settlement, refresh parent line if we have a stored parent position
-        if (this._lastParentButtonNuc) {
-            setTimeout(() => {
-                console.log('🟡 triggerFocusSettlement -> redraw parent line');
-                this.drawParentLine(this._lastParentButtonNuc);
-            }, 10);
-        }
+        // After settlement, refresh parent line
+        setTimeout(() => {
+            this.navigationView.drawParentLine({
+                isRotating: this.isRotating,
+                isAnimating: this.isAnimating
+            });
+        }, 10);
         
         // BUGFIX: Removed redundant updateFocusRingPositions() call
         // The focus ring was already positioned correctly with click handlers attached
@@ -2186,300 +2177,8 @@ class MobileRenderer {
         });
     }
     
-    /**
-     * Update Parent Button text and position
-     */
-    updateParentButton(parentName, skipAnimation = false) {
-        const parentButtonGroup = document.getElementById('parentButtonGroup');
-        const parentText = document.getElementById('parentText');
-        const parentNodeCircle = document.getElementById('parentNodeCircle');
-        this.attachParentButtonDebugLogging(parentButtonGroup);
-
-        // If we've locked the parent button at top level, ignore attempts to show it
-        if (this._parentButtonLockedAtTop) {
-            parentName = null;
-        }
-
-        if (parentButtonGroup) {
-            parentButtonGroup.style.pointerEvents = 'visiblePainted';
-        }
-        if (parentText) {
-            parentText.style.pointerEvents = 'none';
-        }
-        
-        if (parentName) {
-            // Check if we're at top navigation level
-            const rootData = this.dataManager.data?.[this.dataManager.rootDataKey];
-            const startupConfig = rootData?.display_config?.focus_ring_startup;
-            const topNavLevel = startupConfig?.top_navigation_level;
-            const currentLevel = this.activeType;
-            const isAtTopLevel = topNavLevel && currentLevel === topNavLevel;
-            
-            // During initial load, currentLevel may be null - treat as top level
-            const shouldHideCircle = isAtTopLevel || currentLevel === null;
-            
-            // Get viewport dimensions and Hub center for fixed positioning
-            const viewport = this.viewport.getViewportInfo();
-            const SSd = Math.min(viewport.width, viewport.height);
-            const LSd = Math.max(viewport.width, viewport.height);
-            const arcParams = this.viewport.getArcParameters();
-            
-            // Fixed Parent Button circle position in Hub polar coordinates:
-            // Angle: 180° - arctan(LSd/R) - points toward upper-left corner entry
-            // Distance: 0.9 × sqrt(LSd² + R²) - along the corner diagonal
-            const R = arcParams.radius;
-            const parentButtonAngle = Math.PI - Math.atan(LSd / R);  // 180° - arctan(LSd/R)
-            const parentButtonCircleRadius = 0.9 * Math.sqrt(LSd * LSd + R * R);
-            
-            // Convert circle position from Hub polar to SVG Cartesian (Nuc coordinates)
-            const parentButtonNuc = {
-                x: arcParams.centerX + parentButtonCircleRadius * Math.cos(parentButtonAngle),
-                y: arcParams.centerY + parentButtonCircleRadius * Math.sin(parentButtonAngle)
-            };
-            // Remember latest position for redraws after rotations
-            this._lastParentButtonNuc = parentButtonNuc;
-            
-            // Text at same position as circle (centered over it)
-            const textOffsetX = 0;
-            const textOffsetY = 0;
-            
-            // Position the group
-            parentButtonGroup.setAttribute('transform', `translate(${parentButtonNuc.x}, ${parentButtonNuc.y})`);
-            
-            // Update text
-            parentText.textContent = parentName;
-            parentText.setAttribute('x', textOffsetX.toFixed(2));
-            parentText.setAttribute('y', textOffsetY.toFixed(2));
-            parentText.setAttribute('text-anchor', 'middle');  // Center text over circle
-            
-            // Rotate text to align with Parent Button angle
-            let parentTextRotation = parentButtonAngle * 180 / Math.PI;
-            if (Math.cos(parentButtonAngle) < 0) {
-                parentTextRotation += 180;
-            }
-            parentText.setAttribute('transform', `rotate(${parentTextRotation}, ${textOffsetX.toFixed(2)}, ${textOffsetY.toFixed(2)})`);
-            
-            // Log Parent Button text size (set by CSS #parentButtonGroup #parentText rule)
-            console.log('📏 PARENT BUTTON TEXT SIZE:', '16px (CSS)', 'weight: 600 (CSS)', 'text:', parentName);
-
-            // High-level display log for diagnosing loops
-            console.log('🟢 Parent Button display update', {
-                parentName,
-                currentLevel,
-                topNavLevel,
-                isAtTopLevel,
-                shouldHideCircle,
-                skipAnimation
-            });
-            
-            // Position circle at fixed origin (0,0) relative to group transform
-            // Circle radius from config
-            parentNodeCircle.setAttribute('cx', '0');
-            parentNodeCircle.setAttribute('cy', '0');
-            parentNodeCircle.setAttribute('r', MOBILE_CONFIG.RADIUS.PARENT_BUTTON);
-            
-            // Show button group
-            parentButtonGroup.classList.remove('hidden');
-            // Force display to be visible (override any lingering CSS)
-            parentButtonGroup.style.display = '';
-            
-            // Enable or disable based on level
-            if (isAtTopLevel) {
-                parentButtonGroup.classList.add('disabled');
-                parentButtonGroup.setAttribute('data-disabled', 'true');
-                // Hide text when disabled
-                parentText.style.display = 'none';
-                parentButtonGroup.style.pointerEvents = 'none';
-            } else {
-                parentButtonGroup.classList.remove('disabled');
-                parentButtonGroup.removeAttribute('data-disabled');
-                // Show text when active
-                parentText.style.display = '';
-                parentButtonGroup.style.pointerEvents = 'visiblePainted';
-            }
-            
-            // Once a concrete parent is shown, unlock the top-level lock
-            this._parentButtonLockedAtTop = false;
-
-            // Show/hide circle and line together
-            if (shouldHideCircle) {
-                parentNodeCircle.classList.add('hidden');
-                parentNodeCircle.style.display = 'none';
-                // Clear line when circle is hidden
-                this.clearParentLine();
-            } else {
-                parentNodeCircle.classList.remove('hidden');
-                parentNodeCircle.style.display = '';
-                // Draw line from circle to magnifier only when circle is visible
-                setTimeout(() => {
-                    this.drawParentLine(parentButtonNuc);
-                }, 20);
-            }
-            console.log('🟢 Parent Button final state', {
-                groupVisible: !parentButtonGroup.classList.contains('hidden'),
-                circleVisible: !parentNodeCircle.classList.contains('hidden'),
-                textVisible: parentText.style.display !== 'none',
-                disabled: parentButtonGroup.classList.contains('disabled')
-            });
-        } else {
-            // Hide button if no parent
-            this._parentButtonLockedAtTop = true;
-            parentButtonGroup.classList.add('hidden');
-            parentButtonGroup.style.display = 'none';
-            parentButtonGroup.removeAttribute('data-disabled');
-            parentButtonGroup.style.pointerEvents = 'none';
-            
-            if (parentNodeCircle) {
-                parentNodeCircle.classList.add('hidden');
-                parentNodeCircle.style.display = 'none';
-            }
-            if (parentText) {
-                parentText.style.display = 'none';
-            }
-            this.clearParentLine();
-
-            console.log('🟢 Parent Button hidden (no parent)');
-        }
-    }
-
-    attachParentButtonDebugLogging(parentButtonGroup) {
-        if (this.parentButtonDebugAttached || !parentButtonGroup) {
-            return;
-        }
-
-        const circle = document.getElementById('parentNodeCircle');
-        const text = document.getElementById('parentText');
-
-        const logEvent = (sourceLabel) => (event) => {
-            const target = event.target;
-            const classes = target?.getAttribute('class') || 'none';
-            let rectInfo = null;
-            if (target?.getBoundingClientRect) {
-                const rect = target.getBoundingClientRect();
-                rectInfo = {
-                    width: rect.width.toFixed(2),
-                    height: rect.height.toFixed(2),
-                    left: rect.left.toFixed(2),
-                    top: rect.top.toFixed(2)
-                };
-            }
-
-            console.log(`🟡📡 ${sourceLabel} EVENT`, {
-                type: event.type,
-                targetTag: target?.tagName || 'unknown',
-                classes,
-                rect: rectInfo,
-                timestamp: performance.now().toFixed(2)
-            });
-        };
-
-        const parentDebugOptions = { capture: true, passive: true };
-        ['mousedown', 'mouseup', 'click', 'touchstart', 'touchend'].forEach(type => {
-            parentButtonGroup.addEventListener(type, logEvent('parentButtonGroup'), parentDebugOptions);
-        });
-
-        if (circle) {
-            ['mousedown', 'mouseup', 'click', 'touchstart', 'touchend'].forEach(type => {
-                circle.addEventListener(type, logEvent('parentNodeCircle'), parentDebugOptions);
-            });
-        }
-
-        if (text) {
-            ['mousedown', 'mouseup', 'click', 'touchstart', 'touchend'].forEach(type => {
-                text.addEventListener(type, logEvent('parentText'), parentDebugOptions);
-            });
-        }
-
-        this.parentButtonDebugAttached = true;
-        console.log('🟡📡 Parent Button debug listeners attached');
-    }
-    
     hideParentButton() {
         this.navigationView.hideParentButton(true);
-        this.clearParentLine();
-    }
-    
-    /**
-     * Draw line from Parent Button circle to magnifier (similar to fan lines)
-     * PERFORMANCE: Debounced to prevent multiple redundant calls
-     */
-    drawParentLine(parentButtonNuc) {
-        // Do not draw while rotating or during animations
-        if (this.isRotating || this.isAnimating) return;
-
-        // PERFORMANCE: Debounce unless the line is missing
-        const positionKey = `${parentButtonNuc.x.toFixed(1)}_${parentButtonNuc.y.toFixed(1)}`;
-        const pathLinesGroup = this.elements.pathLinesGroup;
-        const hasParentLine = pathLinesGroup?.querySelector('.parent-line');
-        if (hasParentLine && this._lastParentLinePosition === positionKey && this._lastParentLineTime && performance.now() - this._lastParentLineTime < 100) {
-            // Skip redundant call only if a line already exists
-            return;
-        }
-        this._lastParentLinePosition = positionKey;
-        this._lastParentLineTime = performance.now();
-        
-        // Check if Parent Button circle is visible before drawing line
-        const parentNodeCircle = document.getElementById('parentNodeCircle');
-        if (!parentNodeCircle || parentNodeCircle.classList.contains('hidden') || parentNodeCircle.style.display === 'none') return;
-        
-        // Clear any existing line
-        this.clearParentLine();
-        
-        // Get magnifier position (already in SVG coordinates, same as mainGroup)
-        const magnifierPos = this.viewport.getMagnifyingRingPosition();
-        if (!magnifierPos) {
-            console.warn('⚠️ drawParentLine: No magnifier position available');
-            return;
-        }
-        
-        // Magnifier is already positioned in the same SVG coordinate space as mainGroup
-        // Parent Button is positioned with transform in Nuc coordinates
-        // Both are in the same SVG space, so we can draw directly
-        
-        // Line connects the two circles: Parent Button circle and Magnifier circle
-        // Parent Button circle is at the group origin (0,0) in group coordinates
-        // So in SVG space, it's at parentButtonNuc (x, y)
-        const lineEndX = parentButtonNuc.x;
-        const lineEndY = parentButtonNuc.y;
-        
-        // Calculate distance
-        const dx = magnifierPos.x - lineEndX;
-        const dy = magnifierPos.y - lineEndY;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-
-        // Create line element (reuse pathLinesGroup from earlier)
-        if (!pathLinesGroup) {
-            console.warn('⚠️ drawParentLine: pathLinesGroup not found');
-            return;
-        }
-        
-        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-        line.setAttribute('class', 'parent-line');
-        line.setAttribute('x1', lineEndX);
-        line.setAttribute('y1', lineEndY);
-        line.setAttribute('x2', magnifierPos.x);
-        line.setAttribute('y2', magnifierPos.y);
-        line.setAttribute('stroke', 'black');
-        line.setAttribute('stroke-width', '1');
-        
-        pathLinesGroup.appendChild(line);
-    }
-    
-    /**
-     * Clear the parent line
-     */
-    clearParentLine() {
-        const pathLinesGroup = this.elements.pathLinesGroup;
-        if (!pathLinesGroup) return;
-        
-        const existingLine = pathLinesGroup.querySelector('.parent-line');
-        if (existingLine) {
-            existingLine.remove();
-        }
-
-        // Reset debounce tracking so next draw is not skipped
-        this._lastParentLinePosition = null;
-        this._lastParentLineTime = null;
     }
     
     /**
