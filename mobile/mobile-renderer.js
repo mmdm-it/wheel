@@ -19,6 +19,7 @@ import { showSortNumberErrorOverlay } from './validation-overlay.js';
 import { TranslationToggle } from './translation-toggle.js';
 import { NavigationView } from './navigation-view.js';
 import { FocusRingView } from './focus-ring-view.js';
+import { MagnifierManager } from './magnifier-manager.js';
 
 /**
  * Efficient renderer that minimizes DOM manipulation
@@ -37,6 +38,7 @@ class MobileRenderer {
         this.translationToggle = new TranslationToggle(viewportManager);
         this.navigationView = new NavigationView(viewportManager);
         this.focusRingView = new FocusRingView(this);
+        this.magnifier = new MagnifierManager(viewportManager, this);
 
         // DOM/state caches
         this.elements = {};
@@ -101,6 +103,10 @@ class MobileRenderer {
 
     setController(controller) {
         this.controller = controller;
+        // Inject touch handler into magnifier manager
+        if (controller && controller.touchHandler) {
+            this.magnifier.setTouchHandler(controller.touchHandler);
+        }
     }
 
     getTouchHandler() {
@@ -245,40 +251,8 @@ class MobileRenderer {
     }
 
     positionMagnifyingRing() {
-        const ring = this.elements.magnifier;
-        if (!ring) {
-            Logger.error('Magnifier not found');
-            return;
-        }
-        
-        const position = this.viewport.getMagnifyingRingPosition();
-        
-        // Position ring at calculated dynamic position
-        ring.setAttribute('cx', position.x);
-        ring.setAttribute('cy', position.y);
-        ring.setAttribute('r', MOBILE_CONFIG.RADIUS.MAGNIFIER);
-        
-        // Final styling: black ring as requested
-        ring.setAttribute('stroke', 'black');
-        ring.setAttribute('stroke-width', '1');
-        ring.setAttribute('opacity', '0.8');
-        
-        // Restore visibility if hidden during animation
-        ring.style.opacity = '';
-        
-        // Log Magnifier position and current selected item text
-        const selectedItem = this.selectedFocusItem;
-        console.log('🔍 === MAGNIFIER AT LOAD ===');
-        console.log('🔍 Magnifier position:', { x: position.x.toFixed(1), y: position.y.toFixed(1), radius: MOBILE_CONFIG.RADIUS.MAGNIFIER });
-        console.log('🔍 Magnifier angle (from viewport):', (position.angle * 180 / Math.PI).toFixed(1) + '°');
-        if (selectedItem) {
-            console.log('🔍 Selected item text:', selectedItem.name);
-            console.log('🔍 Selected item rotation:', '0° (text is horizontal at Magnifier)');
-        } else {
-            console.log('🔍 No selected item yet');
-        }
-        
-        this.focusRingDebug(`Magnifier positioned at (${position.x.toFixed(1)}, ${position.y.toFixed(1)}) with radius ${MOBILE_CONFIG.RADIUS.MAGNIFIER}`);
+        // Delegate to MagnifierManager
+        this.magnifier.position();
     }
 
     initializeTranslationButton() {
@@ -348,111 +322,8 @@ class MobileRenderer {
     }
     
     createMagnifier() {
-        // Remove existing magnifier if it exists
-        const existingRing = this.elements.magnifier;
-        if (existingRing) {
-            existingRing.remove();
-        }
-        
-        // Create new magnifier
-        const ring = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
-        ring.setAttribute('id', 'magnifier');
-        ring.style.cursor = 'pointer';
-        ring.style.pointerEvents = 'all'; // Ensure it receives touch events
-        
-        console.log('✨ Magnifier created with click handler');
-        
-        // Add click handler to advance Focus Ring by one node
-        let touchStartPos = null;
-        let touchStartTime = null;
-        
-        ring.addEventListener('touchstart', (e) => {
-            console.log('✨ Magnifier TOUCHSTART');
-            touchStartPos = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-            touchStartTime = performance.now();
-        }, { passive: true });
-        
-        ring.addEventListener('touchend', (e) => {
-            console.log('✨ Magnifier TOUCHEND');
-            if (!touchStartPos) return;
-            
-            const touch = e.changedTouches[0];
-            const dx = touch.clientX - touchStartPos.x;
-            const dy = touch.clientY - touchStartPos.y;
-            const distance = Math.sqrt(dx * dx + dy * dy);
-            const duration = performance.now() - touchStartTime;
-            
-            Logger.debug('🔍 Magnifier touchend:', {
-                distance: distance.toFixed(2),
-                duration: duration.toFixed(2),
-                willTrigger: distance < 10 && duration < 300
-            });
-            
-            // Only trigger if touch didn't move much (click, not swipe) and was quick
-            if (distance < 10 && duration < 300) {
-                e.preventDefault();
-                e.stopPropagation();
-                console.log('✨ MAGNIFIER TAP - no action (clicks on unselected nodes move them to center)');
-            } else {
-                console.log('✨ Magnifier touch too long or moved too much:', { distance, duration });
-            }
-            touchStartPos = null;
-            touchStartTime = null;
-        }, { passive: false });
-        
-        // Magnifier click disabled - clicking unselected nodes brings them to center
-        ring.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            Logger.debug('🔍 Magnifier clicked - no action (clicks on unselected nodes move them to center)');
-        });
-        
-        // Add to main group (NOT to focus ring group, so it stays visible)
-        this.elements.mainGroup.appendChild(ring);
-        
-        // Cache the element
-        this.elements.magnifier = ring;
-        
-        // Position it
-        this.positionMagnifyingRing();
-        
-        Logger.debug('Magnifier created and positioned with click handler');
-        
-        return ring;
-    }
-    
-    /**
-     * Initialize translation button if translations are configured
-     */
-    initializeTranslationButton() {
-        console.log('🌐 initializeTranslationButton() called');
-        
-        const displayConfig = this.dataManager.getDisplayConfig();
-        console.log('🌐 displayConfig:', displayConfig ? 'exists' : 'null');
-        
-        const translations = displayConfig?.translations;
-        console.log('🌐 translations config:', JSON.stringify(translations));
-        
-        if (!translations || !translations.available || translations.available.length < 2) {
-            console.log('🌐 No translations configured or only one language - hiding button');
-            return;
-        }
-        
-        this.translationsConfig = translations;
-
-        const initialized = this.translationToggle.init(translations, {
-            onChange: (lang) => this.handleTranslationChange(lang)
-        });
-
-        if (!initialized) {
-            Logger.warn('🌐 Translation toggle could not be initialized (missing DOM elements?)');
-            return;
-        }
-
-        // Sync initial selection to navigation state
-        this.setTranslation(this.translationToggle.getCurrent());
-
-        Logger.info(`🌐 Translation button initialized: ${this.translationToggle.getCurrent()}`);
+        // Delegate to MagnifierManager
+        return this.magnifier.create();
     }
     
     /**
@@ -495,43 +366,8 @@ class MobileRenderer {
      * Triggered by clicking an unselected focus node
      */
     bringFocusNodeToCenter(focusItem) {
-        console.log('🎯🎯🎯 bringFocusNodeToCenter CALLED');
-        console.log(`🎯🔍 SEARCH: Looking for item name="${focusItem.name}" key="${focusItem.key}"`);
-        console.log(`🎯🔍 SEARCH: currentFocusItems array has ${this.currentFocusItems.length} items`);
-        
-        Logger.debug('🎯🎯🎯 bringFocusNodeToCenter CALLED');
-        Logger.debug('🎯 Target item:', focusItem.name);
-        
-        if (!this.currentFocusItems || this.currentFocusItems.length === 0) {
-            Logger.warn('🎯 No focus items available');
-            return;
-        }
-        
-        // Find the index of the clicked item
-        const targetIndex = this.currentFocusItems.findIndex(item => {
-            return item.key === focusItem.key;
-        });
-        
-        if (targetIndex < 0) {
-            Logger.warn('🎯 Clicked item not found in current focus items');
-            return;
-        }
-        
-        Logger.debug('🎯 Target index:', targetIndex);
-        
-        // Calculate rotation offset needed to center this item
-        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-        const middleIndex = (this.currentFocusItems.length - 1) / 2;
-        const targetOffset = (targetIndex - middleIndex) * angleStep;
-        
-        Logger.debug(`🎯 Centering [${targetIndex}] ${focusItem.name} with offset: ${targetOffset.toFixed(3)}`);
-        
-        // Animate to target position
-        if (this.controller && typeof this.controller.animateRotationTo === 'function') {
-            this.controller.animateRotationTo(targetOffset);
-        } else {
-            Logger.error('🎯 rotation controller not available');
-        }
+        // Delegate to MagnifierManager
+        this.magnifier.bringToCenter(focusItem);
     }
 
     /**
@@ -539,53 +375,8 @@ class MobileRenderer {
      * Triggered by clicking the magnifier
      */
     advanceFocusRing() {
-        Logger.debug('🔍🔍🔍 advanceFocusRing CALLED');
-        
-        if (!this.currentFocusItems || this.currentFocusItems.length === 0) {
-            Logger.warn('🔍 No focus items to advance');
-            return;
-        }
-        
-        Logger.debug('🔍 Current focus items:', this.currentFocusItems.length);
-        
-        // Get current selected index
-        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-        const middleIndex = (this.currentFocusItems.length - 1) / 2;
-        const currentRotationOffset = this.getTouchHandler()?.rotationOffset || 0;
-        const currentIndex = this.getSelectedFocusIndex(currentRotationOffset, this.currentFocusItems.length);
-        
-        Logger.debug('🔍 Selection state:', {
-            angleStep,
-            middleIndex,
-            currentRotationOffset: currentRotationOffset.toFixed(3),
-            currentIndex
-        });
-        
-        if (currentIndex < 0) {
-            Logger.warn('🔍 No item currently selected at center');
-            return;
-        }
-        
-        const currentItem = this.currentFocusItems[currentIndex];
-        Logger.debug('🔍 Current item:', currentItem.name);
-        
-        // Calculate next index (wrap around to 0 if at end)
-        const nextIndex = (currentIndex + 1) % this.currentFocusItems.length;
-        const nextItem = this.currentFocusItems[nextIndex];
-        
-        // Calculate rotation offset needed to center the next item
-        const targetOffset = (nextIndex - middleIndex) * angleStep;
-        
-        Logger.debug(`🔍🎯 Magnifier clicked: advancing from [${currentIndex}] ${currentItem.name} to [${nextIndex}] ${nextItem.name}`);
-        Logger.debug(`🔍🎯 Offset: ${currentRotationOffset.toFixed(3)} → ${targetOffset.toFixed(3)}`);
-        
-        // Animate to target position
-        if (this.controller && typeof this.controller.animateRotationTo === 'function') {
-            Logger.debug('🔍 Calling animateRotationTo with targetOffset:', targetOffset.toFixed(3));
-            this.controller.animateRotationTo(targetOffset);
-        } else {
-            Logger.error('🔍 rotation controller not available');
-        }
+        // Delegate to MagnifierManager
+        this.magnifier.advance();
     }
     
 
