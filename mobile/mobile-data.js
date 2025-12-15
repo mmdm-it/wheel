@@ -11,6 +11,7 @@ import { DataLazyLoader } from './data-lazy-loader.js';
 import { DataVirtualLevels } from './data-virtual-levels.js';
 import { DataHierarchyNavigator } from './data-hierarchy-navigator.js';
 import { ItemBuilder } from './item-builder.js';
+import { DataConfigManager } from './data-config-manager.js';
 
 /**
  * Manages data loading with error handling and caching
@@ -39,6 +40,9 @@ class DataManager {
         
         // Item building (normalization, parent properties, sorting)
         this.itemBuilder = new ItemBuilder(this);
+        
+        // Configuration and metadata access
+        this.configManager = new DataConfigManager(this);
         
         // Phase 4 Consolidation: Bilingual coordinate storage
         this.coordinateCache = new Map(); // Item key -> HubNucCoordinate
@@ -726,84 +730,29 @@ class DataManager {
      * Resolve a dotted path within a context object
      */
     resolveDetailPath(path, context) {
-        if (!path || !context) {
-            return undefined;
-        }
-
-        return path.split('.').reduce((accumulator, segment) => {
-            if (accumulator === undefined || accumulator === null) {
-                return undefined;
-            }
-
-            const trimmed = segment.trim();
-
-            if (!trimmed) {
-                return accumulator;
-            }
-
-            if (trimmed.endsWith(']')) {
-                const bracketIndex = trimmed.indexOf('[');
-                if (bracketIndex === -1) {
-                    return accumulator[trimmed];
-                }
-
-                const property = trimmed.slice(0, bracketIndex);
-                const indexValue = trimmed.slice(bracketIndex + 1, trimmed.length - 1);
-                const numericIndex = parseInt(indexValue, 10);
-
-                const target = property ? accumulator[property] : accumulator;
-
-                if (!Array.isArray(target)) {
-                    return undefined;
-                }
-
-                if (isNaN(numericIndex)) {
-                    return undefined;
-                }
-
-                return target[numericIndex];
-            }
-
-            return accumulator[trimmed];
-        }, context);
+        return this.configManager.resolveDetailPath(path, context);
     }
 
     /**
      * Interpolate template placeholders using context data
      * Supports {{property}} and {{object.property}} syntax
-     * @param {string} template - Template string with {{placeholders}}
-     * @param {Object} context - Context object with property values
-     * @returns {string} Resolved template with placeholders replaced
      */
     resolveDetailTemplate(template, context) {
-        if (typeof template !== 'string' || !template.includes('{{')) {
-            return template || '';
-        }
-
-        return template.replace(/{{\s*([^}]+)\s*}}/g, (_match, token) => {
-            const value = this.resolveDetailPath(token, context);
-            if (value === undefined || value === null) {
-                return '';
-            }
-            return String(value);
-        });
+        return this.configManager.resolveDetailTemplate(template, context);
     }
 
     /**
      * Get the ordered list of hierarchy level names
      */
     getHierarchyLevelNames() {
-        const displayConfig = this.getDisplayConfig();
-        if (!displayConfig || !displayConfig.hierarchy_levels) return [];
-        return Object.keys(displayConfig.hierarchy_levels);
+        return this.configManager.getHierarchyLevelNames();
     }
 
     /**
      * Get the depth/level index for a given level name
      */
     getHierarchyLevelDepth(levelName) {
-        const levelNames = this.getHierarchyLevelNames();
-        return levelNames.indexOf(levelName);
+        return this.configManager.getHierarchyLevelDepth(levelName);
     }
 
     getData() {
@@ -811,23 +760,15 @@ class DataManager {
     }
 
     getTopLevelCollectionName() {
-        if (!this.rootDataKey) return null;
-        const levelNames = this.getHierarchyLevelNames();
-        if (levelNames.length === 0) return null;
-        return this.getPluralPropertyName(levelNames[0]);
+        return this.configManager.getTopLevelCollectionName();
     }
 
     getTopLevelCollection() {
-        if (!this.data || !this.rootDataKey) return {};
-        const rootData = this.data[this.rootDataKey];
-        const collectionName = this.getTopLevelCollectionName();
-        return rootData && rootData[collectionName] || {};
+        return this.configManager.getTopLevelCollection();
     }
 
     getTopLevelKeys() {
-        // Generic method - returns keys from top-level collection
-        const topLevel = this.getTopLevelCollection();
-        return Object.keys(topLevel);
+        return this.configManager.getTopLevelKeys();
     }
 
     /**
