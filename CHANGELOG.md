@@ -10,6 +10,57 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Phase 3: General code cleanup and optimization
 - Child Pyramid design completion (blocking 0.9.0 release)
 
+## [0.8.158] - 2025-12-15
+
+### Changed
+- **Phase 2A Complete**: Extracted DataConfigManager module from mobile-data.js (59 lines saved)
+- **Mobile-data.js**: 1,017 → 958 lines (5.8% reduction, now under 1,000 lines)
+- **Total Phase 2A Savings**: 108 lines (10.1% reduction from original 1,066 lines)
+
+### Added
+- `data-config-manager.js`: New module with 8 configuration/metadata methods
+  - getDisplayConfig() - root display configuration access
+  - getHierarchyLevelConfig() - level-specific configuration
+  - getHierarchyLevelNames() - ordered level names array
+  - getHierarchyLevelDepth() - level index lookup
+  - getTopLevelCollectionName() - plural form of first level
+  - getTopLevelCollection() - top-level data object
+  - getTopLevelKeys() - top-level item keys
+  - resolveDetailPath() - dotted path resolution with array indexing
+  - resolveDetailTemplate() - {{placeholder}} interpolation
+
+### Improved
+- **Separation of Concerns**: Configuration logic separated from coordination
+- **Module Count**: 7 focused modules extracted (ItemUtils, DataCacheManager, DataLazyLoader, DataVirtualLevels, DataHierarchyNavigator, ItemBuilder, DataConfigManager)
+- **Testability**: Configuration methods can be unit tested independently
+
+## [0.8.157] - 2025-12-15
+
+### Fixed
+- Marked subfamily as virtual/optional hierarchy level (v0.8.156+6)
+- Fixed Ford sort_number to be alphabetically correct: 24 between Fiat (23) and FPT (25) (v0.8.156+5)
+- Fixed duplicate sort_number: Cummins 15→16 (v0.8.156+4)
+- Added missing sort_number to Ford 10-cylinder Modular family (v0.8.156+4)
+- Added sort_numbers to 8 Ford engine families (chronological order 1-8) (v0.8.156+3)
+- Cleaned unused family metadata from 61 models across 8 manufacturers (v0.8.156+2)
+- Added missing sort_numbers to 3 restructured manufacturers (v0.8.156+1)
+
+## [0.8.156] - 2025-12-15
+
+### Changed
+- **Catalog Data**: Restructured Ford/MerCruiser/Detroit Diesel to explicit families/subfamilies
+- **Ford 8-Cylinder**: Now has explicit family collections (Flathead, Windsor, FE, Cleveland, 385, Boss, Modular, Godzilla)
+- **Data Structure**: Changed from `cylinders → models (with rpp_* flags)` to `cylinders → families → subfamilies → models`
+
+### Added
+- `scripts/restructure_ford_hierarchy.py`: Automated conversion from pseudo-parent to explicit hierarchy
+- `scripts/clean_unused_family_metadata.py`: Remove family metadata from non-family manufacturers
+
+## [0.8.155] - 2025-12-15
+
+### Changed
+- (Add changes here)
+
 ## [0.8.155] - 2025-12-15
 
 ### Removed
