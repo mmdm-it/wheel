@@ -14,6 +14,7 @@ class FocusRingView {
         this.focusRingDebugAttached = false;
         this._lastFocusItemsKey = null;
         this.lastRotationOffset = undefined;
+        this.protectedRotationOffset = undefined; // Protection period after immediate settlement
     }
 
     showFocusRing() {

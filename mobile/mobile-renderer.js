@@ -969,9 +969,9 @@ class MobileRenderer {
         
         // Track rotation changes - hide Child Pyramid during rotation
         const programmaticFocus = this.forceImmediateFocusSettlement === true;
-        const rotationTriggered = this.lastRotationOffset !== undefined && Math.abs(rotationOffset - this.lastRotationOffset) > 0.001;
+        const rotationTriggered = this.focusRingView.lastRotationOffset !== undefined && Math.abs(rotationOffset - this.focusRingView.lastRotationOffset) > 0.001;
         // Don't hide Child Pyramid if we're within the protection period after immediate settlement
-        const isProtected = this.protectedRotationOffset !== undefined && Math.abs(rotationOffset - this.protectedRotationOffset) < 0.01;
+        const isProtected = this.focusRingView.protectedRotationOffset !== undefined && Math.abs(rotationOffset - this.focusRingView.protectedRotationOffset) < 0.01;
         const isRotating = !programmaticFocus && !isProtected && rotationTriggered;
         
         if (isRotating) {
@@ -995,7 +995,7 @@ class MobileRenderer {
                 div.remove();
             });
         }
-        this.lastRotationOffset = rotationOffset;
+        this.focusRingView.lastRotationOffset = rotationOffset;
         
         // PERFORMANCE OPTIMIZATION: Check if focus items changed - only rebuild if needed
         const focusItemsKey = allFocusItems.map(item => item === null ? 'GAP' : item.key).join('|');
@@ -1839,7 +1839,7 @@ class MobileRenderer {
                 }
             }
             
-            this.lastRotationOffset = centerOffset;
+            this.focusRingView.lastRotationOffset = centerOffset;
 
             // Show Focus Ring with siblings - clicked item should be centered
             this.forceImmediateFocusSettlement = true;
@@ -1888,7 +1888,7 @@ class MobileRenderer {
         }
         
         // Also update lastRotationOffset to prevent rotation detection
-        this.lastRotationOffset = centerOffset;
+        this.focusRingView.lastRotationOffset = centerOffset;
 
         // CRITICAL: Set selectedFocusItem BEFORE conditional check
         // This ensures showChildContentForFocusItem has the correct context
@@ -1911,9 +1911,9 @@ class MobileRenderer {
             this.updateFocusRingPositions(centerOffset);
             
             // Protect this rotation position from triggering Child Pyramid hide
-            this.protectedRotationOffset = centerOffset;
+            this.focusRingView.protectedRotationOffset = centerOffset;
             setTimeout(() => {
-                this.protectedRotationOffset = undefined;
+                this.focusRingView.protectedRotationOffset = undefined;
             }, 100);
             
             // Show child content for the newly selected focus item (non-leaf)
