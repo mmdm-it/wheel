@@ -6,11 +6,7 @@
 import { Logger } from './mobile-logger.js';
 import { CoordinateSystem, HubNucCoordinate } from './mobile-coordinates.js';
 import { ItemUtils } from './item-utils.js';
-
-// IndexedDB constants
-const IDB_NAME = 'WheelVolumeCache';
-const IDB_VERSION = 1;
-const IDB_STORE = 'externalFiles';
+import { DataCacheManager } from './data-cache-manager.js';
 
 /**
  * Manages data loading with error handling and caching
@@ -29,9 +25,8 @@ class DataManager {
         this.loadedExternalFiles = new Set();
         this.externalFileLoadingPromises = new Map(); // Prevent duplicate loads
         
-        // IndexedDB cache for persistent storage across sessions
-        this.idbCache = null;
-        this.idbReady = this._initIndexedDB();
+        // Cache manager for persistent storage across sessions
+        this.cacheManager = new DataCacheManager();
         
         // Phase 4 Consolidation: Bilingual coordinate storage
         this.coordinateCache = new Map(); // Item key -> HubNucCoordinate
@@ -93,139 +88,17 @@ class DataManager {
         }
     }
 
-    /**
-     * Initialize IndexedDB for persistent caching of external files
-     * @returns {Promise<IDBDatabase|null>}
-     */
-    async _initIndexedDB() {
-        if (typeof indexedDB === 'undefined') {
-            Logger.debug('💾 IndexedDB not available - using memory cache only');
-            return null;
-        }
-
-        return new Promise((resolve) => {
-            try {
-                const request = indexedDB.open(IDB_NAME, IDB_VERSION);
-
-                request.onerror = () => {
-                    Logger.warn('💾 IndexedDB open failed - using memory cache only');
-                    resolve(null);
-                };
-
-                request.onsuccess = (event) => {
-                    this.idbCache = event.target.result;
-                    Logger.debug('💾 IndexedDB cache initialized');
-                    resolve(this.idbCache);
-                };
-
-                request.onupgradeneeded = (event) => {
-                    const db = event.target.result;
-                    if (!db.objectStoreNames.contains(IDB_STORE)) {
-                        const store = db.createObjectStore(IDB_STORE, { keyPath: 'path' });
-                        store.createIndex('timestamp', 'timestamp', { unique: false });
-                        Logger.debug('💾 IndexedDB store created');
-                    }
-                };
-            } catch (error) {
-                Logger.warn('💾 IndexedDB init error:', error);
-                resolve(null);
-            }
-        });
-    }
 
     /**
-     * Get cached external file from IndexedDB
-     * @param {string} filePath - Path to the external file
-     * @returns {Promise<Object|null>} Cached data or null
-     */
-    async _getCachedFile(filePath) {
-        await this.idbReady;
-        if (!this.idbCache) return null;
-
-        const cacheKey = this._buildCacheKey(filePath);
-
-        return new Promise((resolve) => {
-            try {
-                const tx = this.idbCache.transaction(IDB_STORE, 'readonly');
-                const store = tx.objectStore(IDB_STORE);
-                const request = store.get(cacheKey);
-
-                request.onsuccess = () => {
-                    const result = request.result;
-                    if (result) {
-                        if (result.versionKey !== this.cacheVersion) {
-                            Logger.debug(`💾 Cache version mismatch for ${filePath} (have ${result.versionKey}, want ${this.cacheVersion})`);
-                            resolve(null);
-                            return;
-                        }
-                        Logger.debug(`💾 Cache hit: ${filePath}`);
-                        resolve(result.data);
-                    } else {
-                        resolve(null);
-                    }
-                };
-
-                request.onerror = () => {
-                    Logger.debug(`💾 Cache read error for ${filePath}`);
-                    resolve(null);
-                };
-            } catch (error) {
-                Logger.debug('💾 Cache read exception:', error);
-                resolve(null);
-            }
-        });
-    }
-
-    /**
-     * Store external file in IndexedDB cache
-     * @param {string} filePath - Path to the external file
-     * @param {Object} data - Data to cache
-     */
-    async _setCachedFile(filePath, data) {
-        await this.idbReady;
-        if (!this.idbCache) return;
-
-        const cacheKey = this._buildCacheKey(filePath);
-
-        try {
-            const tx = this.idbCache.transaction(IDB_STORE, 'readwrite');
-            const store = tx.objectStore(IDB_STORE);
-            store.put({
-                path: cacheKey,
-                data: data,
-                timestamp: Date.now(),
-                versionKey: this.cacheVersion
-            });
-            Logger.debug(`💾 Cached: ${filePath} (version ${this.cacheVersion})`);
-        } catch (error) {
-            Logger.debug('💾 Cache write error:', error);
-        }
-    }
-
-    /**
-     * Clear all cached external files from IndexedDB
+     * Clear all cached external files
      * Useful for forcing fresh data reload
      */
     async clearCache() {
         // Clear memory cache
         this.loadedExternalFiles.clear();
         
-        // Clear IndexedDB cache
-        await this.idbReady;
-        if (!this.idbCache) return;
-
-        try {
-            const tx = this.idbCache.transaction(IDB_STORE, 'readwrite');
-            const store = tx.objectStore(IDB_STORE);
-            store.clear();
-            Logger.info('💾 Cache cleared');
-        } catch (error) {
-            Logger.warn('💾 Cache clear error:', error);
-        }
-    }
-
-    _buildCacheKey(filePath) {
-        return `${this.cacheVersion}::${filePath}`;
+        // Clear persistent cache via cache manager
+        await this.cacheManager.clearCache();
     }
 
     /**
@@ -608,7 +481,7 @@ class DataManager {
         
         try {
             // Check IndexedDB cache first
-            const cachedData = await this._getCachedFile(externalFilePath);
+            const cachedData = await this.cacheManager.getCachedFile(externalFilePath);
             let externalData;
             
             if (cachedData) {
@@ -628,7 +501,7 @@ class DataManager {
                 console.log(`🔍 DEBUG: Fetched data, verses keys:`, externalData.verses ? Object.keys(externalData.verses).slice(0, 5) : 'no verses');
                 
                 // Cache for future use
-                await this._setCachedFile(externalFilePath, externalData);
+                await this.cacheManager.setCachedFile(externalFilePath, externalData);
             }
             
             // Merge external data into target location
@@ -867,7 +740,12 @@ class DataManager {
         const schema = displayConfig?.volume_schema_version || 'unknown-schema';
         const dataVersion = displayConfig?.volume_data_version || 'unknown-data';
         const volumeName = displayConfig?.volume_name || filename || 'unknown-volume';
-        return `${volumeName}|${schema}|${dataVersion}`;
+        const version = `${volumeName}|${schema}|${dataVersion}`;
+        
+        // Update cache manager with the version
+        this.cacheManager.setCacheVersion(version);
+        
+        return version;
     }
 
     getDisplayConfig() {
