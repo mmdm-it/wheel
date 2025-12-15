@@ -9,6 +9,11 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.8.133] - 2025-12-14
+
+### Changed
+- (Add changes here)
+
 ## [0.8.132] - 2025-12-14
 
 ### Changed

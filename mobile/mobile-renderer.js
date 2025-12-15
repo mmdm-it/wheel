@@ -18,6 +18,7 @@ import { CoordinateSystem, HubNucCoordinate } from './mobile-coordinates.js';
 import { showSortNumberErrorOverlay } from './validation-overlay.js';
 import { TranslationToggle } from './translation-toggle.js';
 import { NavigationView } from './navigation-view.js';
+import { FocusRingView } from './focus-ring-view.js';
 
 /**
  * Efficient renderer that minimizes DOM manipulation
@@ -28,53 +29,74 @@ class MobileRenderer {
         this.dataManager = dataManager;
         this.navigationState = navigationState;
         this.controller = null; // injected controller (e.g., MobileCatalogApp)
-        
-        // Initialize Animation module
+
+        // Modules
         this.animation = new MobileAnimation(viewportManager, dataManager, this);
-        
-        // Initialize Child Pyramid module
         this.childPyramid = new MobileChildPyramid(viewportManager, dataManager, this);
-        
-        // Initialize Detail Sector module
         this.detailSector = new MobileDetailSector(viewportManager, dataManager, this);
-        
-        // DOM element caches
+        this.translationToggle = new TranslationToggle(viewportManager);
+        this.navigationView = new NavigationView(viewportManager);
+        this.focusRingView = new FocusRingView(this);
+
+        // DOM/state caches
         this.elements = {};
         this.focusElements = new Map();
         this.positionCache = new Map();
-    this.leafStateCache = new Map(); // Cache leaf determinations per item
-    this.detailSectorAnimating = false;
-    this.isAnimating = false; // Block clicks during node migration animations
-        this.focusRingDebugAttached = false; // Guard repeated listener attachment
-        this.showDetailSectorBoundsFlag = false; // Toggle for Detail Sector bounds diagnostic
-        
-        // State
+        this.leafStateCache = new Map();
+        this.detailSectorAnimating = false;
+        this.isAnimating = false;
+
+        // Selection state
         this.selectedTopLevel = null;
         this.setSelectedFocusItem(null);
         this.currentFocusItems = [];
         this.activePath = [];
         this.activeType = null;
-        
-        // Settling state for smooth child item display
+
+        // Rotation/settling state
         this.isRotating = false;
         this.settleTimeout = null;
-        
-        // Sprocket chain viewport state
-        this.allFocusItems = []; // Complete linear chain of all focus items
-        this.chainPosition = 0; // Current position in the linear chain (0-based)
-        this.visibleStartIndex = 0; // First visible focus item index
-        this.visibleEndIndex = 0; // Last visible focus item index
-        this.forceImmediateFocusSettlement = false; // Skip rotation delay for programmatic focus moves
+        this.allFocusItems = [];
+        this.chainPosition = 0;
+        this.visibleStartIndex = 0;
+        this.visibleEndIndex = 0;
+        this.forceImmediateFocusSettlement = false;
+        this._lastFocusItemsKey = null;
 
         // Translation state
-        this.currentTranslation = null; // Will be set from display_config.translations.default
-        this.translationsConfig = null; // Cache translations config
-        this.translationToggle = new TranslationToggle(viewportManager);
-        this.navigationView = new NavigationView(viewportManager);
+        this.currentTranslation = null;
+        this.translationsConfig = null;
 
-        // Debug controls
+        // Debug flags
         this.focusRingDebugFlag = this.computeFocusRingDebugFlag();
         this.loopInOutDebugFlag = this.computeLoopInOutDebugFlag();
+    }
+
+    setSelectedFocusItem(item) {
+        this.selectedFocusItem = item || null;
+        if (this.navigationState) {
+            this.navigationState.setSelectedFocusItem(this.selectedFocusItem);
+        }
+    }
+
+    setActivePath(path) {
+        this.activePath = Array.isArray(path) ? path : [];
+        if (this.navigationState) {
+            this.navigationState.setActivePath(this.activePath);
+        }
+    }
+
+    setTranslation(code) {
+        this.currentTranslation = code || null;
+        if (this.navigationState) {
+            this.navigationState.setTranslation(this.currentTranslation);
+        }
+    }
+
+    focusRingDebug(...args) {
+        if ((typeof window !== 'undefined' && window.DEBUG_FOCUS_RING) || this.focusRingDebugFlag) {
+            Logger.debug(...args);
+        }
     }
 
     setController(controller) {
@@ -117,87 +139,33 @@ class MobileRenderer {
         }
     }
 
-    setSelectedFocusItem(item) {
-        this.selectedFocusItem = item || null;
-        if (this.navigationState) {
-            this.navigationState.setSelectedFocusItem(this.selectedFocusItem);
-        }
-    }
-
-    setActivePath(path) {
-        this.activePath = Array.isArray(path) ? path : [];
-        if (this.navigationState) {
-            this.navigationState.setActivePath(this.activePath);
-        }
-    }
-
-    setTranslation(code) {
-        this.currentTranslation = code || null;
-        if (this.navigationState) {
-            this.navigationState.setTranslation(this.currentTranslation);
-        }
-    }
-
-    focusRingDebug(...args) {
-        if ((typeof window !== 'undefined' && window.DEBUG_FOCUS_RING) || this.focusRingDebugFlag) {
-            Logger.debug(...args);
-        }
-    }
-
     async initialize() {
         await this.initializeElements();
         this.navigationView.init();
         this.viewport.adjustSVGForMobile(this.elements.svg, this.elements.mainGroup);
-        
-        // Note: Detail Sector circle will be created after volume loads
-        // (when config is available to check hide_circle setting)
-        
-        // Setup copyright click handler for diagnostic toggle
+        // Detail Sector circle is created after volume loads (config-dependent)
         this.setupCopyrightDiagnosticToggle();
-        
         return true;
-    }
-    
-    handleViewportChange() {
-        // Update focus ring positions if they're currently shown
-        if (this.currentFocusItems.length > 0) {
-            this.updateFocusRingPositions(0);
-        }
-
-        // Reposition translation toggle if present (orientation/resize)
-        this.translationToggle.positionButton();
-        this.navigationView.positionParentButton();
-        this.navigationView.drawParentLine({
-            isRotating: this.isRotating,
-            isAnimating: this.isAnimating
-        });
-        
-        // Notify child pyramid of viewport changes
-        this.childPyramid.handleViewportChange();
-        
-        // Notify detail sector of viewport changes
-        this.detailSector.handleViewportChange();
     }
 
     async initializeElements() {
         const requiredElements = [
-            'catalogSvg', 'mainGroup', 'centralGroup', 'topLevel', 
+            'catalogSvg', 'mainGroup', 'centralGroup', 'topLevel',
             'pathLinesGroup', 'focusRing', 'detailItems'
         ];
-        
+
         const optionalElements = [
-            'childRing',  // Will be created dynamically if needed
-            'translationButtonGroup'  // Translation toggle button
+            'childRing', // Will be created dynamically if needed
+            'translationButtonGroup' // Translation toggle button
         ];
-        
+
         const elementIds = [...requiredElements, ...optionalElements];
-        
         const missing = [];
-        
+
         elementIds.forEach(id => {
             const element = document.getElementById(id);
             if (element) {
-                const key = id === 'catalogSvg' ? 'svg' : 
+                const key = id === 'catalogSvg' ? 'svg' :
                            id === 'mainGroup' ? 'mainGroup' :
                            id === 'centralGroup' ? 'centralGroup' :
                            id === 'topLevel' ? 'topLevelGroup' :
@@ -208,7 +176,6 @@ class MobileRenderer {
                            id + 'Group';
                 this.elements[key] = element;
             } else {
-                // Only add to missing if it's a required element
                 if (requiredElements.includes(id)) {
                     missing.push(id);
                 } else {
@@ -216,8 +183,7 @@ class MobileRenderer {
                 }
             }
         });
-        
-        // Handle missing childRing by creating it dynamically
+
         if (!this.elements.childRingGroup) {
             Logger.debug('Creating childRing element dynamically');
             const childRing = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
@@ -226,76 +192,56 @@ class MobileRenderer {
             this.elements.mainGroup.appendChild(childRing);
             this.elements.childRingGroup = childRing;
         }
-        
-        // Initialize Child Pyramid module with the DOM element
+
         this.childPyramid.initialize(this.elements.childRingGroup);
-        
-        // Initialize Detail Sector module with the DOM element
         this.detailSector.initialize(this.elements.detailItemsGroup);
-        
-        // Note: Translation button initialization moved to mobile-app.js loadSelectedVolume()
-        // because it requires display_config which isn't available until data is loaded
-        
+
         if (missing.length > 0) {
             Logger.error('Missing DOM elements:', missing);
             Logger.debug('Available elements in DOM:', elementIds.map(id => `${id}: ${!!document.getElementById(id)}`));
             throw new Error(`Required DOM elements not found: ${missing.join(', ')}`);
         }
-        
+
         Logger.debug('DOM elements initialized:', Object.keys(this.elements));
         Logger.debug('UserAgent:', navigator.userAgent);
         Logger.debug('Window size:', window.innerWidth, 'x', window.innerHeight);
     }
 
-    /**
-     * Update Parent Button text and position
-     */
     updateParentButton(parentName, skipAnimation = false) {
+        // If we've locked the parent button at top level, ignore attempts to show it
+        if (this._parentButtonLockedAtTop) {
+            parentName = null;
+        }
+
         if (!parentName) {
-            this.navigationView.updateParentButton({ parentName: null, skipAnimation });
+            this.navigationView.hideParentButton(skipAnimation);
             return;
         }
 
+        // Check if we're at top navigation level to decide circle visibility
         const rootData = this.dataManager.data?.[this.dataManager.rootDataKey];
         const startupConfig = rootData?.display_config?.focus_ring_startup;
         const topNavLevel = startupConfig?.top_navigation_level;
         const currentLevel = this.activeType;
+        const isAtTopLevel = topNavLevel && currentLevel === topNavLevel;
+        const shouldHideCircle = isAtTopLevel || currentLevel === null;
 
-        this.navigationView.updateParentButton({
-            parentName,
-            currentLevel,
-            topNavLevel,
-            skipAnimation,
-            isRotating: this.isRotating,
-            isAnimating: this.isAnimating
-        });
-    }
-
-    /**
-     * Setup click handler on copyright notice to toggle Detail Sector bounds diagnostic
-     * Click the copyright to show/hide the lime green boundary visualization
-     */
-    setupCopyrightDiagnosticToggle() {
-        const copyright = document.getElementById('copyright');
-        if (!copyright) {
-            Logger.debug('Copyright element not found - diagnostic toggle not available');
-            return;
+        // Position parent button via helper
+        this.navigationView.positionParentButton();
+        const parentNodeCircle = document.getElementById('parentNodeCircle');
+        if (parentNodeCircle) {
+            parentNodeCircle.style.visibility = shouldHideCircle ? 'hidden' : 'visible';
         }
-        
-        copyright.style.cursor = 'pointer';
-        copyright.addEventListener('click', () => {
-            this.showDetailSectorBoundsFlag = !this.showDetailSectorBoundsFlag;
-            
-            if (this.showDetailSectorBoundsFlag) {
-                this.showDetailSectorBounds();
-                console.log('📐 Detail Sector bounds: ON');
-            } else {
-                this.hideDetailSectorBounds();
-                console.log('📐 Detail Sector bounds: OFF');
-            }
-        });
-        
-        Logger.debug('Copyright diagnostic toggle initialized - click to show/hide Detail Sector bounds');
+
+        this.navigationView.updateParentButton(parentName, skipAnimation);
+
+        // Re-add parent line (if hidden) after animation begins
+        setTimeout(() => {
+            this.navigationView.drawParentLine({
+                parentName,
+                skipAnimation: true
+            });
+        }, 50);
     }
 
     positionMagnifyingRing() {
@@ -358,6 +304,28 @@ class MobileRenderer {
         this.setTranslation(this.translationToggle.getCurrent());
 
         Logger.info(`🌐 Translation button initialized: ${this.translationToggle.getCurrent()}`);
+    }
+
+    setupCopyrightDiagnosticToggle() {
+        const copyright = document.getElementById('copyright');
+        if (!copyright) {
+            Logger.debug('Copyright element not found - diagnostic toggle not available');
+            return;
+        }
+
+        copyright.style.cursor = 'pointer';
+        copyright.addEventListener('click', () => {
+            this.showDetailSectorBoundsFlag = !this.showDetailSectorBoundsFlag;
+            if (this.showDetailSectorBoundsFlag) {
+                this.showDetailSectorBounds();
+                console.log('📐 Detail Sector bounds: ON');
+            } else {
+                this.hideDetailSectorBounds();
+                console.log('📐 Detail Sector bounds: OFF');
+            }
+        });
+
+        Logger.debug('Copyright diagnostic toggle initialized - click to show/hide Detail Sector bounds');
     }
 
     handleTranslationChange(lang) {
@@ -1173,39 +1141,7 @@ class MobileRenderer {
     }
     
     showFocusRing() {
-        console.log('🎯🎪 showFocusRing CALLED');
-        const focusRingGroup = this.elements.focusRingGroup;
-        focusRingGroup.classList.remove('hidden');
-        focusRingGroup.innerHTML = '';
-        this.attachFocusRingDebugLogging(focusRingGroup);
-        
-        // Create Focus Ring background band (visual nzone differentiation)
-        this.createFocusRingBackground();
-        
-        // Create magnifier at correct position when focus items are shown
-        this.createMagnifier();
-        
-        // Initialize viewport filtering state
-        this.allFocusItems = this.currentFocusItems; // Set the complete list for filtering
-        
-        Logger.debug(`Viewport filtering initialized: ${this.allFocusItems.length} total focus items`);
-        
-        // BUGFIX: Only calculate initial rotation offset on first load (not during navigation)
-        // During navigation, the calling code (continueChildPyramidClick) already calculated
-        // the correct centerOffset and will call updateFocusRingPositions() after this returns
-        if (!this.forceImmediateFocusSettlement) {
-            // Initial app load - use startup config to determine which item to magnify
-            const initialOffset = this.calculateInitialRotationOffset();
-            Logger.debug(`Using initial rotation offset: ${initialOffset} radians (${initialOffset * 180 / Math.PI}°)`);
-            
-            this.updateFocusRingPositions(initialOffset);
-            
-            // Store the initial offset for the touch handler
-            this.initialRotationOffset = initialOffset;
-        } else {
-            // Navigation - skip calculation, caller will position the ring
-            Logger.debug('🎯 Skipping calculateInitialRotationOffset (forceImmediateFocusSettlement=true)');
-        }
+        this.focusRingView.showFocusRing();
     }
     
     /**
@@ -1213,148 +1149,15 @@ class MobileRenderer {
      * Creates a curved band from 95% to 105% of Focus Ring radius
      */
     createFocusRingBackground() {
-        console.log('🎨 === CREATING FOCUS RING CENTERLINE ===');
-        
-        const arcParams = this.viewport.getArcParameters();
-        console.log('🎨 arcParams:', arcParams);
-        
-        // Draw band between 99% and 101% of Focus Ring radius (narrower for larger radius)
-        const hubX = arcParams.centerX;
-        const hubY = arcParams.centerY;
-        const innerRadius = arcParams.radius * 0.99;  // 99% of Focus Ring radius
-        const outerRadius = arcParams.radius * 1.01;  // 101% of Focus Ring radius
-        
-        console.log(`🎨 Hub: (${hubX}, ${hubY})`);
-        console.log(`🎨 Inner radius (99%): ${innerRadius}`);
-        console.log(`🎨 Outer radius (101%): ${outerRadius}`);
-        
-        // Insert at beginning so nodes appear on top
-        const focusRingGroup = this.elements.focusRingGroup;
-        
-        // Create annular ring (donut) filled with white
-        const pathData = [
-            // Outer circle (clockwise)
-            `M ${hubX + outerRadius} ${hubY}`,
-            `A ${outerRadius} ${outerRadius} 0 1 1 ${hubX - outerRadius} ${hubY}`,
-            `A ${outerRadius} ${outerRadius} 0 1 1 ${hubX + outerRadius} ${hubY}`,
-            // Inner circle (counter-clockwise to create hole)
-            `M ${hubX + innerRadius} ${hubY}`,
-            `A ${innerRadius} ${innerRadius} 0 1 0 ${hubX - innerRadius} ${hubY}`,
-            `A ${innerRadius} ${innerRadius} 0 1 0 ${hubX + innerRadius} ${hubY}`,
-            `Z`
-        ].join(' ');
-        
-        const path = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'path');
-        path.setAttribute('d', pathData);
-        path.setAttribute('fill', '#7a7979ff');  // Slightly darker gray than background
-        path.setAttribute('fill-rule', 'evenodd');
-        path.setAttribute('id', 'focusRingBackground');
-        
-        console.log('🎨 White band created');
-        
-        if (focusRingGroup.firstChild) {
-            focusRingGroup.insertBefore(path, focusRingGroup.firstChild);
-            console.log('🎨 Inserted before first child');
-        } else {
-            focusRingGroup.appendChild(path);
-            console.log('🎨 Appended to empty group');
-        }
-        
-        console.log('🎨 focusRingGroup children after:', focusRingGroup.children.length);
-        console.log('🎨 === WHITE BAND COMPLETE ===');
-        
-        Logger.debug('Focus Ring darker gray background band created (98% to 102%)');
+        this.focusRingView.createFocusRingBackground();
     }
 
     attachFocusRingDebugLogging(focusRingGroup) {
-        if (this.focusRingDebugAttached || !focusRingGroup) {
-            return;
-        }
-
-        const logEvent = (event) => {
-            const target = event.target;
-            const classes = target?.getAttribute('class') || 'none';
-            const tagName = target?.tagName || 'unknown';
-            let pointerEvents = 'n/a';
-            try {
-                pointerEvents = window.getComputedStyle(target).pointerEvents;
-            } catch (error) {
-                // Ignore failures on SVG elements without computed style
-            }
-
-            console.log('🎯📡 FOCUS RING EVENT', {
-                type: event.type,
-                tagName,
-                classes,
-                pointerEvents,
-                timestamp: performance.now().toFixed(2)
-            });
-        };
-
-        const focusDebugOptions = { capture: true, passive: true };
-        ['mousedown', 'mouseup', 'click', 'touchstart', 'touchend'].forEach(type => {
-            focusRingGroup.addEventListener(type, logEvent, focusDebugOptions);
-        });
-
-        this.focusRingDebugAttached = true;
-        console.log('🎯📡 Focus Ring debug listeners attached');
+        this.focusRingView.attachFocusRingDebugLogging(focusRingGroup);
     }
     
     calculateInitialRotationOffset() {
-        if (!this.currentFocusItems.length) return 0;
-        
-        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-        const middleIndex = (this.currentFocusItems.length - 1) / 2;
-        
-        // Get startup configuration from volume - use correct property path
-        const rootData = this.dataManager.data?.[this.dataManager.rootDataKey];
-        const startupConfig = rootData?.display_config?.focus_ring_startup;
-        
-        Logger.info(`🎯 calculateInitialRotationOffset: ${this.currentFocusItems.length} focus items, middleIndex=${middleIndex}`);
-        Logger.info(`🎯 Config: ${JSON.stringify(startupConfig)}`);
-        
-        // Debug: Log first 10 items with their sort_numbers
-        Logger.info(`🎯 First 10 focus items:`);
-        this.currentFocusItems.slice(0, 10).forEach((item, idx) => {
-            const sortNum = item.data?.sort_number ?? item.sort_number;
-            Logger.info(`   [${idx}] ${item.name} (sort_number: ${sortNum})`);
-        });
-        
-        if (startupConfig && startupConfig.initial_magnified_item !== undefined) {
-            // Find item with specified sort_number
-            const targetSortNumber = startupConfig.initial_magnified_item;
-            const targetIndex = this.currentFocusItems.findIndex(item => {
-                const itemSortNumber = item.data?.sort_number ?? item.sort_number;
-                return itemSortNumber === targetSortNumber;
-            });
-            
-            Logger.info(`🎯 Looking for sort_number ${targetSortNumber}, found at index: ${targetIndex}`);
-            
-            if (targetIndex === -1) {
-                const availableSortNumbers = this.currentFocusItems
-                    .map(item => item.data?.sort_number ?? item.sort_number)
-                    .filter(n => n !== undefined)
-                    .sort((a, b) => a - b)
-                    .join(', ');
-                Logger.error(`❌ STARTUP ERROR: initial_magnified_item ${targetSortNumber} not found`);
-                Logger.error(`   Available sort_numbers: ${availableSortNumbers}`);
-                // Fallback to first item
-                const offset = (0 - middleIndex) * angleStep;
-                Logger.warn(`   Falling back to first item (index 0), offset = ${offset * 180 / Math.PI}°`);
-                return offset;
-            }
-            
-            // Calculate offset to center the target item under magnifier
-            const offset = (targetIndex - middleIndex) * angleStep;
-            Logger.info(`🎯 Startup: Magnifying item at sort_number ${targetSortNumber} (index ${targetIndex}), offset = ${offset * 180 / Math.PI}°`);
-            Logger.info(`🎯 Item name: ${this.currentFocusItems[targetIndex].name}`);
-            return offset;
-        }
-        
-        // Fallback: no configuration specified
-        Logger.warn(`⚠️ No focus_ring_startup configuration found - using first item`);
-        const offset = (0 - middleIndex) * angleStep;
-        return offset;
+        return this.focusRingView.calculateInitialRotationOffset();
     }
     
     updateFocusRingPositions(rotationOffset) {
@@ -1718,185 +1521,21 @@ class MobileRenderer {
 
     
     calculateFocusPosition(angle, arcParams) {
-        // Validate inputs
-        if (isNaN(angle) || !arcParams || isNaN(arcParams.centerX) || isNaN(arcParams.centerY) || isNaN(arcParams.radius)) {
-            Logger.error(`Invalid position calculation inputs: angle=${angle}, arcParams=${JSON.stringify(arcParams)}`);
-            return { x: 0, y: 0, angle: 0 }; // Safe fallback
-        }
-        
-        const key = `${angle}_${arcParams.centerX}_${arcParams.centerY}_${arcParams.radius}`;
-        
-        if (this.positionCache.has(key)) {
-            return this.positionCache.get(key);
-        }
-        
-        // Arc-based positioning with off-screen center
-        const x = arcParams.centerX + arcParams.radius * Math.cos(angle);
-        const y = arcParams.centerY + arcParams.radius * Math.sin(angle);
-        
-        // Validate calculated position
-        if (isNaN(x) || isNaN(y)) {
-            Logger.error(`Calculated NaN position: angle=${angle}, centerX=${arcParams.centerX}, centerY=${arcParams.centerY}, radius=${arcParams.radius}, x=${x}, y=${y}`);
-            return { x: 0, y: 0, angle: 0 }; // Safe fallback
-        }
-        
-        const position = { x, y, angle };
-        this.positionCache.set(key, position);
-        
-        return position;
+        return this.focusRingView.calculateFocusPosition(angle, arcParams);
     }
     
     // Phase 2 Consolidation: Bilingual coordinate positioning method
     // Uses bilingual coordinate system while preserving exact positioning behavior
     calculateFocusPositionBilingual(angle, arcParams) {
-        // Validate inputs - same as original method
-        if (isNaN(angle) || !arcParams || isNaN(arcParams.centerX) || isNaN(arcParams.centerY) || isNaN(arcParams.radius)) {
-            Logger.error(`Invalid bilingual position calculation inputs: angle=${angle}, arcParams=${JSON.stringify(arcParams)}`);
-            return { x: 0, y: 0, angle: 0 }; // Safe fallback
-        }
-        
-        // Setup coordinate system with current viewport
-        const viewport = this.viewport.getViewportInfo();
-        CoordinateSystem.setViewport({
-            LSd: Math.max(viewport.width, viewport.height),
-            SSd: Math.min(viewport.width, viewport.height)
-        });
-        
-        // Create Hub coordinate using polar representation
-        const hubCoord = HubNucCoordinate.fromPolar(angle, arcParams.radius);
-        
-        // Get Nuc coordinates (calculated lazily using constitutional formula)
-        const x = hubCoord.nucX;
-        const y = hubCoord.nucY;
-        
-        // Validate calculated position - same as original method
-        if (isNaN(x) || isNaN(y)) {
-            Logger.error(`Bilingual calculated NaN position: angle=${angle}, radius=${arcParams.radius}, x=${x}, y=${y}`);
-            return { x: 0, y: 0, angle: 0 }; // Safe fallback
-        }
-        
-        Logger.debug(`Bilingual focus position: Hub(${angle * 180 / Math.PI}°, r=${arcParams.radius}) -> Nuc(${x.toFixed(1)}, ${y.toFixed(1)})`);
-        
-        return { 
-            x, 
-            y, 
-            angle,
-            // Include coordinate representation for debugging
-            hubCoord 
-        };
+        return this.focusRingView.calculateFocusPositionBilingual(angle, arcParams);
     }
     
     createFocusElement(focusItem, position, angle, isSelected = false) {
-        const g = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
-        g.classList.add('focusItem');
-        g.setAttribute('transform', `translate(${position.x}, ${position.y})`);
-        g.setAttribute('data-focus-key', focusItem.key);
-        g._focusItem = focusItem;  // Store full item reference for text updates
-        
-        console.log(`🎯📝 CREATE: Element for "${focusItem.name}" key="${focusItem.key}" isSelected=${isSelected}`);
-        
-        const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
-        circle.setAttribute('class', 'node');
-        circle.setAttribute('cx', '0');
-        circle.setAttribute('cy', '0');
-        circle.setAttribute('r', isSelected ? MOBILE_CONFIG.RADIUS.MAGNIFIED : MOBILE_CONFIG.RADIUS.UNSELECTED);
-        circle.setAttribute('fill', this.getColor('focusItem', focusItem.name));
-        
-        if (isSelected) {
-            g.classList.add('selected');
-        }
-
-        // Always attach click handler (even for selected) so a stuck selection can be re-centered
-        if (DEBUG_VERBOSE) {
-            console.log(`🎯📝 HANDLER: Adding click handler for "${focusItem.name}" key="${focusItem.key}" (selected=${isSelected})`);
-        }
-        
-        // PERFORMANCE: Use passive event listeners for touch/mouse events that don't preventDefault
-        g.addEventListener('mousedown', (e) => {
-            if (DEBUG_VERBOSE) console.log(`🎯👆 MOUSEDOWN on "${focusItem.name}" key="${focusItem.key}"`);
-        }, { passive: true });
-        g.addEventListener('touchstart', (e) => {
-            if (DEBUG_VERBOSE) console.log(`🎯👆 TOUCHSTART on "${focusItem.name}" key="${focusItem.key}"`);
-        }, { passive: true });
-        
-        g.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            
-            // Look up the item fresh from currentFocusItems using the stored key
-            const clickedKey = g.getAttribute('data-focus-key');
-            if (DEBUG_VERBOSE) {
-                console.log(`🎯🔥 CLICK: Handler fired! clickedKey="${clickedKey}"`);
-                console.log(`🎯🔥 CLICK: this.currentFocusItems has ${this.currentFocusItems?.length || 0} items`);
-                console.log(`🎯🔥 CLICK: this.allFocusItems has ${this.allFocusItems?.length || 0} items`);
-                console.log(`🎯🔥 CLICK: currentFocusItems:`, 
-                    this.currentFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
-                console.log(`🎯🔥 CLICK: allFocusItems:`, 
-                    this.allFocusItems?.map(item => `"${item.name}"(key=${item.key})`).join(', ') || 'NONE');
-            }
-            
-            // Some focus arrays contain null gap placeholders; guard before reading key
-            const currentItem = this.currentFocusItems?.find(item => item && item.key === clickedKey);
-            
-            if (currentItem) {
-                if (DEBUG_VERBOSE) console.log(`🎯✅ CLICK: Found item "${currentItem.name}"`);
-                Logger.debug(`🎯 Focus node clicked: ${currentItem.name}`);
-                this.bringFocusNodeToCenter(currentItem);
-            } else {
-                console.log(`🎯❌ CLICK: Key "${clickedKey}" NOT FOUND in currentFocusItems`);
-                Logger.warn(`🎯 Clicked node key ${clickedKey} not found in current focus items`);
-            }
-        });
-        
-        // No strokes on focus nodes - clean styling
-        
-        g.appendChild(circle);
-        
-        const text = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        this.updateFocusItemText(text, angle, focusItem, isSelected);
-        g.appendChild(text);
-        
-        return g;
+        return this.focusRingView.createFocusElement(focusItem, position, angle, isSelected);
     }
     
     updateFocusElement(element, position, angle, isSelected = false) {
-        // Validate position to prevent NaN errors
-        if (!position || isNaN(position.x) || isNaN(position.y)) {
-            Logger.error(`Invalid focus element position: ${JSON.stringify(position)}, angle: ${angle}`);
-            return;
-        }
-        
-        element.setAttribute('transform', `translate(${position.x}, ${position.y})`);
-        
-        const circle = element.querySelector('circle');
-        const text = element.querySelector('text');
-        
-        // Simple binary selection: selected node is magnified, all others are normal
-        const nodeRadius = isSelected ? MOBILE_CONFIG.RADIUS.MAGNIFIED : MOBILE_CONFIG.RADIUS.UNSELECTED;
-        circle.setAttribute('r', nodeRadius);
-        
-        // Clean styling - no strokes
-        circle.removeAttribute('stroke');
-        circle.removeAttribute('stroke-width');
-        
-        // Apply selected class based on selection state
-        if (isSelected) {
-            element.classList.add('selected');
-            const textElement = element.querySelector('text');
-            Logger.debug(`Applied selected class to focus item: ${textElement && textElement.textContent}`);
-        } else {
-            element.classList.remove('selected');
-        }
-        
-        if (text) {
-            const storedItem = element._focusItem;
-            if (storedItem) {
-                this.updateFocusItemText(text, angle, storedItem, isSelected);
-            } else {
-                // Fallback for legacy elements without stored item
-                this.updateFocusItemText(text, angle, { name: text.textContent, __level: 'focusItem' }, isSelected);
-            }
-        }
+        this.focusRingView.updateFocusElement(element, position, angle, isSelected);
     }
     
     updateFocusItemText(textElement, angle, item, isSelected = false) {
