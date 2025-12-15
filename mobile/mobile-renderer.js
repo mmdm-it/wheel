@@ -394,7 +394,7 @@ class MobileRenderer {
         this.isRotating = false;
         if (this.selectedFocusItem) {
             this.focusRingDebug('Rotation ended, showing children for settled focus item:', this.selectedFocusItem.name);
-            const selectedIndex = this.currentFocusItems.findIndex(m => m.key === this.selectedFocusItem.key);
+            const selectedIndex = ItemUtils.findItemIndexByKey(this.currentFocusItems, this.selectedFocusItem.key);
             if (selectedIndex >= 0) {
                 const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
                 const centerAngle = this.viewport.getCenterAngle();

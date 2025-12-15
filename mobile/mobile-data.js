@@ -5,6 +5,7 @@
 
 import { Logger } from './mobile-logger.js';
 import { CoordinateSystem, HubNucCoordinate } from './mobile-coordinates.js';
+import { ItemUtils } from './item-utils.js';
 
 // IndexedDB constants
 const IDB_NAME = 'WheelVolumeCache';
@@ -2089,7 +2090,7 @@ class DataManager {
             const leafItems = this.clonePseudoItems(parentItem.__pseudoSourceItems || []);
             Logger.debug(`📋 Returning ${leafItems.length} leaf items from pseudo parent "${parentItem.name}"`);
             leafItems.forEach((item, idx) => {
-                const sortNum = item.data?.sort_number ?? item.sort_number;
+                const sortNum = ItemUtils.getSortNumber(item);
                 Logger.debug(`   [${idx}] ${item.name || item.key}: sort_number=${sortNum}, __level=${item.__level}`);
             });
             return this.sortItems(leafItems, childLevelConfig);
@@ -2274,7 +2275,7 @@ class DataManager {
         // For NON-LEAF levels: sort_number is MANDATORY (unless explicitly skipped)
         if (!isLeafLevel && !skipValidation) {
             const itemsWithoutSort = items.filter(item => {
-                const sortNum = item.data?.sort_number ?? item.sort_number;
+                const sortNum = ItemUtils.getSortNumber(item);
                 return sortNum === undefined || sortNum === null;
             });
 
@@ -2382,7 +2383,7 @@ class DataManager {
 
         // Validate that every leaf item is explicitly authored with sort_number
         const itemsWithoutSort = items.filter(item => {
-            const sortNum = item.data?.sort_number ?? item.sort_number;
+            const sortNum = ItemUtils.getSortNumber(item);
             return sortNum === undefined || sortNum === null;
         });
 

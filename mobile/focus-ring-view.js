@@ -291,7 +291,7 @@ class FocusRingView {
         if (isBibleBooks) {
             r.focusRingDebug(`📚 BIBLE BOOKS - Focus items order (${allFocusItems.length} items):`);
             allFocusItems.forEach((item, idx) => {
-                const sortNum = item.data?.sort_number ?? item.sort_number ?? 'none';
+                const sortNum = ItemUtils.getSortNumber(item) ?? 'none';
                 r.focusRingDebug(`  [${idx}] ${item.name} (sort_number: ${sortNum})`);
             });
             r.focusRingDebug(`🎯 Center angle: ${(centerAngle * 180 / Math.PI).toFixed(1)}°, Rotation offset: ${(rotationOffset * 180 / Math.PI).toFixed(1)}°`);
