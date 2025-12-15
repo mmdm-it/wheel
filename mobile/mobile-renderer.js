@@ -78,6 +78,150 @@ class MobileRenderer {
         this.loopInOutDebugFlag = this.computeLoopInOutDebugFlag();
     }
 
+    setController(controller) {
+        this.controller = controller;
+    }
+
+    getTouchHandler() {
+        return this.controller && this.controller.touchHandler;
+    }
+
+    computeFocusRingDebugFlag() {
+        if (typeof window === 'undefined') {
+            return false;
+        }
+
+        try {
+            const persisted = localStorage.getItem('debugFocusRing') === 'true';
+            const queryFlag = new URLSearchParams(window.location.search).get('debugFocusRing') === '1';
+            return persisted || queryFlag;
+        } catch (error) {
+            return false;
+        }
+    }
+
+    computeLoopInOutDebugFlag() {
+        if (typeof window === 'undefined') {
+            return false;
+        }
+
+        try {
+            if (window.DEBUG_LOOP_INOUT === true) {
+                return true;
+            }
+
+            const persisted = localStorage.getItem('debugLoopInOut') === 'true';
+            const queryFlag = new URLSearchParams(window.location.search).get('loopInOut') === '1';
+            return persisted || queryFlag;
+        } catch (error) {
+            return false;
+        }
+    }
+
+    focusRingDebug(...args) {
+        if ((typeof window !== 'undefined' && window.DEBUG_FOCUS_RING) || this.focusRingDebugFlag) {
+            Logger.debug(...args);
+        }
+    }
+
+    async initialize() {
+        await this.initializeElements();
+        this.navigationView.init();
+        this.viewport.adjustSVGForMobile(this.elements.svg, this.elements.mainGroup);
+        
+        // Note: Detail Sector circle will be created after volume loads
+        // (when config is available to check hide_circle setting)
+        
+        // Setup copyright click handler for diagnostic toggle
+        this.setupCopyrightDiagnosticToggle();
+        
+        return true;
+    }
+    
+    handleViewportChange() {
+        // Update focus ring positions if they're currently shown
+        if (this.currentFocusItems.length > 0) {
+            this.updateFocusRingPositions(0);
+        }
+
+        // Reposition translation toggle if present (orientation/resize)
+        this.translationToggle.positionButton();
+        
+        // Notify child pyramid of viewport changes
+        this.childPyramid.handleViewportChange();
+        
+        // Notify detail sector of viewport changes
+        this.detailSector.handleViewportChange();
+    }
+
+    async initializeElements() {
+        const requiredElements = [
+            'catalogSvg', 'mainGroup', 'centralGroup', 'topLevel', 
+            'pathLinesGroup', 'focusRing', 'detailItems'
+        ];
+        
+        const optionalElements = [
+            'childRing',  // Will be created dynamically if needed
+            'translationButtonGroup'  // Translation toggle button
+        ];
+        
+        const elementIds = [...requiredElements, ...optionalElements];
+        
+        const missing = [];
+        
+        elementIds.forEach(id => {
+            const element = document.getElementById(id);
+            if (element) {
+                const key = id === 'catalogSvg' ? 'svg' : 
+                           id === 'mainGroup' ? 'mainGroup' :
+                           id === 'centralGroup' ? 'centralGroup' :
+                           id === 'topLevel' ? 'topLevelGroup' :
+                           id === 'pathLinesGroup' ? 'pathLinesGroup' :
+                           id === 'focusRing' ? 'focusRingGroup' :
+                           id === 'childRing' ? 'childRingGroup' :
+                           id === 'detailItems' ? 'detailItemsGroup' :
+                           id + 'Group';
+                this.elements[key] = element;
+            } else {
+                // Only add to missing if it's a required element
+                if (requiredElements.includes(id)) {
+                    missing.push(id);
+                } else {
+                    Logger.debug(`Optional element ${id} not found - will create if needed`);
+                }
+            }
+        });
+        
+        // Handle missing childRing by creating it dynamically
+        if (!this.elements.childRingGroup) {
+            Logger.debug('Creating childRing element dynamically');
+            const childRing = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'g');
+            childRing.id = 'childRing';
+            childRing.classList.add('hidden');
+            this.elements.mainGroup.appendChild(childRing);
+            this.elements.childRingGroup = childRing;
+        }
+        
+        // Initialize Child Pyramid module with the DOM element
+        this.childPyramid.initialize(this.elements.childRingGroup);
+        
+        // Initialize Detail Sector module with the DOM element
+        this.detailSector.initialize(this.elements.detailItemsGroup);
+        
+        // Note: Translation button initialization moved to mobile-app.js loadSelectedVolume()
+        // because it requires display_config which isn't available until data is loaded
+        
+        if (missing.length > 0) {
+            Logger.error('Missing DOM elements:', missing);
+            Logger.debug('Available elements in DOM:', elementIds.map(id => `${id}: ${!!document.getElementById(id)}`));
+            throw new Error(`Required DOM elements not found: ${missing.join(', ')}`);
+        }
+        
+        Logger.debug('DOM elements initialized:', Object.keys(this.elements));
+        Logger.debug('UserAgent:', navigator.userAgent);
+        Logger.debug('Window size:', window.innerWidth, 'x', window.innerHeight);
+    }
+
     /**
      * Update Parent Button text and position
      */
@@ -114,6 +258,8 @@ class MobileRenderer {
             this.renderParentLine();
         }, 50);
     }
+
+    /**
      * Setup click handler on copyright notice to toggle Detail Sector bounds diagnostic
      * Click the copyright to show/hide the lime green boundary visualization
      */
@@ -130,72 +276,58 @@ class MobileRenderer {
             
             if (this.showDetailSectorBoundsFlag) {
                 this.showDetailSectorBounds();
-                initializeTranslationButton() {
-                    const displayConfig = this.dataManager.getDisplayConfig();
-                    const translations = displayConfig?.translations;
-                    if (!translations || !translations.available || translations.available.length < 2) {
-                        Logger.debug('🌐 No translations configured or only one language - hiding button');
-                        return;
-                    }
+                console.log('📐 Detail Sector bounds: ON');
+            } else {
+                this.hideDetailSectorBounds();
+                console.log('📐 Detail Sector bounds: OFF');
+            }
+        });
+        
+        Logger.debug('Copyright diagnostic toggle initialized - click to show/hide Detail Sector bounds');
+    }
 
-                    this.translationsConfig = translations;
-
-                    const initialized = this.translationToggle.init(translations, {
-                        onChange: (lang) => this.handleTranslationChange(lang)
-                    });
-
-                    if (!initialized) {
-                        Logger.warn('🌐 Translation toggle could not be initialized (missing DOM elements?)');
-                        return;
-                    }
-
-                    // Sync initial selection to navigation state
-                    this.setTranslation(this.translationToggle.getCurrent());
-
-                    Logger.info(`🌐 Translation button initialized: ${this.translationToggle.getCurrent()}`);
-                }
-
-                handleTranslationChange(lang) {
-                    this.setTranslation(lang);
-
-                    // Refresh detail sector if visible
-                    if (this.detailSector.isVisible && this.selectedFocusItem) {
-                        this.detailSector.showDetailContent(this.selectedFocusItem);
-                    }
-
-                    // Refresh Focus Ring to update Magnifier labels (Chapter/Verse translations)
-                    if (this.lastRotationOffset !== undefined) {
-                        this.updateFocusRingPositions(this.lastRotationOffset);
-                    }
-
-                    // Keep toggle label in sync if external callers set translation
-                    if (this.translationToggle.getCurrent() !== lang) {
-                        this.translationToggle.setCurrent(lang);
-                    }
-                }
-            childRing.classList.add('hidden');
-            this.elements.mainGroup.appendChild(childRing);
-            this.elements.childRingGroup = childRing;
+    initializeTranslationButton() {
+        const displayConfig = this.dataManager.getDisplayConfig();
+        const translations = displayConfig?.translations;
+        if (!translations || !translations.available || translations.available.length < 2) {
+            Logger.debug('🌐 No translations configured or only one language - hiding button');
+            return;
         }
-        
-        // Initialize Child Pyramid module with the DOM element
-        this.childPyramid.initialize(this.elements.childRingGroup);
-        
-        // Initialize Detail Sector module with the DOM element
-        this.detailSector.initialize(this.elements.detailItemsGroup);
-        
-        // Note: Translation button initialization moved to mobile-app.js loadSelectedVolume()
-        // because it requires display_config which isn't available until data is loaded
-        
-        if (missing.length > 0) {
-            Logger.error('Missing DOM elements:', missing);
-            Logger.debug('Available elements in DOM:', elementIds.map(id => `${id}: ${!!document.getElementById(id)}`));
-            throw new Error(`Required DOM elements not found: ${missing.join(', ')}`);
+
+        this.translationsConfig = translations;
+
+        const initialized = this.translationToggle.init(translations, {
+            onChange: (lang) => this.handleTranslationChange(lang)
+        });
+
+        if (!initialized) {
+            Logger.warn('🌐 Translation toggle could not be initialized (missing DOM elements?)');
+            return;
         }
-        
-        Logger.debug('DOM elements initialized:', Object.keys(this.elements));
-        Logger.debug('UserAgent:', navigator.userAgent);
-        Logger.debug('Window size:', window.innerWidth, 'x', window.innerHeight);
+
+        // Sync initial selection to navigation state
+        this.setTranslation(this.translationToggle.getCurrent());
+
+        Logger.info(`🌐 Translation button initialized: ${this.translationToggle.getCurrent()}`);
+    }
+
+    handleTranslationChange(lang) {
+        this.setTranslation(lang);
+
+        // Refresh detail sector if visible
+        if (this.detailSector.isVisible && this.selectedFocusItem) {
+            this.detailSector.showDetailContent(this.selectedFocusItem);
+        }
+
+        // Refresh Focus Ring to update Magnifier labels (Chapter/Verse translations)
+        if (this.lastRotationOffset !== undefined) {
+            this.updateFocusRingPositions(this.lastRotationOffset);
+        }
+
+        // Keep toggle label in sync if external callers set translation
+        if (this.translationToggle.getCurrent() !== lang) {
+            this.translationToggle.setCurrent(lang);
+        }
     }
     
     createMagnifier() {
