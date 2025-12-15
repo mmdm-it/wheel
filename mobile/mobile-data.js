@@ -422,8 +422,7 @@ class DataManager {
             
             this.currentVolumePath = filename;
             // Reset external load tracking for new volume context
-            this.loadedExternalFiles.clear();
-            this.externalFileLoadingPromises.clear();
+            this.lazyLoader.clearLoadedFiles();
             Logger.info(`✅ Volume loaded successfully: ${filename}`);
             return this.data;
             
