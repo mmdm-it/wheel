@@ -243,7 +243,12 @@ class MobileRenderer {
             parentNodeCircle.style.visibility = shouldHideCircle ? 'hidden' : 'visible';
         }
 
-        this.navigationView.updateParentButton(parentName, skipAnimation);
+        this.navigationView.updateParentButton({
+            parentName,
+            currentLevel,
+            topNavLevel,
+            skipAnimation
+        });
 
         // Re-add parent line (if hidden) after animation begins
         setTimeout(() => {

@@ -10,6 +10,16 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Phase 3: General code cleanup and optimization
 - Child Pyramid design completion (blocking 0.9.0 release)
 
+## [0.8.160] - 2025-12-15
+
+### Fixed
+- **Parent Button Visibility (ACTUAL FIX)**: Fixed parameter mismatch in updateParentButton call
+  - Issue: mobile-renderer.js was calling navigationView.updateParentButton(parentName, skipAnimation)
+  - But: navigation-view.js expects updateParentButton({ parentName, currentLevel, ... })
+  - Result: parentName was undefined, so button was hidden instead of shown
+  - Solution: Pass parameters as named object instead of positional arguments
+  - This was the root cause of the disappearing Parent Button after IN migration
+
 ## [0.8.159] - 2025-12-15
 
 ### Fixed
