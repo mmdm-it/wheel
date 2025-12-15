@@ -958,55 +958,8 @@ class MobileRenderer {
      * Called after programmatic rotation animations complete
      */
     triggerFocusSettlement() {
-        Logger.debug('🎯 triggerFocusSettlement CALLED');
-        
-        // Mark as no longer rotating
-        this.isRotating = false;
-        
-        // Clear any pending settle timeout
-        if (this.settleTimeout) {
-            clearTimeout(this.settleTimeout);
-            this.settleTimeout = null;
-        }
-        
-        // Get the currently selected focus item
-        if (!this.selectedFocusItem) {
-            Logger.warn('🎯 No selected focus item to settle');
-            return;
-        }
-        
-        // Calculate the angle for the selected item
-        const allFocusItems = this.allFocusItems.length > 0 ? this.allFocusItems : this.currentFocusItems;
-        const selectedIndex = allFocusItems.findIndex(item => item.key === this.selectedFocusItem.key);
-        
-        if (selectedIndex < 0) {
-            Logger.warn('🎯 Selected focus item not found in focus items list');
-            return;
-        }
-        
-        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-        const centerAngle = this.viewport.getCenterAngle();
-        const rotationOffset = this.getTouchHandler()?.rotationOffset || 0;
-        const adjustedCenterAngle = centerAngle + rotationOffset;
-        const middleIndex = (allFocusItems.length - 1) / 2;
-        const angle = adjustedCenterAngle + (middleIndex - selectedIndex) * angleStep;
-        
-        Logger.debug(`🎯 Settling on: ${this.selectedFocusItem.name} at index ${selectedIndex}`);
-        this.showChildContentForFocusItem(this.selectedFocusItem, angle);
-
-        // After settlement, refresh parent line
-        setTimeout(() => {
-            this.navigationView.drawParentLine({
-                isRotating: this.isRotating,
-                isAnimating: this.isAnimating
-            });
-        }, 10);
-        
-        // BUGFIX: Removed redundant updateFocusRingPositions() call
-        // The focus ring was already positioned correctly with click handlers attached
-        // during handleChildPyramidClick() before this settlement function was called.
-        // Calling it again here was causing a race condition where DOM elements were
-        // being recreated while still settling from the animation, breaking click handlers.
+        // Delegate to FocusRingView (method moved in Phase 3)
+        this.focusRingView.triggerFocusSettlement();
     }
     
     getSelectedFocusIndex(rotationOffset, focusCount) {
@@ -1054,107 +1007,8 @@ class MobileRenderer {
     }
     
     updateFocusItemText(textElement, angle, item, isSelected = false) {
-        // Validate angle to prevent NaN errors
-        if (isNaN(angle)) {
-            Logger.error(`Invalid text angle: ${angle}`);
-            return;
-        }
-        
-        // Get configuration for this item's level (pure universal)
-        const itemLevel = item.__level || 'focusItem';
-        const levelConfig = this.dataManager.getHierarchyLevelConfig(itemLevel);
-        const textPosition = levelConfig && levelConfig.focus_text_position || 'radial';
-        const textTransform = levelConfig && levelConfig.focus_text_transform || 'none';
-        
-        let textX, textY, textAnchor;
-        
-        if (textPosition === 'centered') {
-            // Center text over the node
-            textX = 0;
-            textY = 0;
-            textAnchor = 'middle';
-        } else {
-            // Radial positioning - center text over circles for all items
-            // No offset needed - text positioned at same coordinates as circle center
-            const offset = 0;
-            
-            textX = offset * Math.cos(angle);
-            textY = offset * Math.sin(angle);
-            
-            // Center all text over circles for consistent positioning
-            textAnchor = 'middle';
-        }
-        
-        let rotation = angle * 180 / Math.PI;
-        
-        if (Math.cos(angle) < 0) {
-            rotation += 180;
-        }
-        
-        // Validate calculated values
-        if (isNaN(textX) || isNaN(textY) || isNaN(rotation)) {
-            Logger.error(`Invalid text position: x=${textX}, y=${textY}, rotation=${rotation}, angle=${angle}`);
-            return;
-        }
-        
-        textElement.setAttribute('x', textX);
-        textElement.setAttribute('y', textY);
-        textElement.setAttribute('dy', '0.3em');
-        textElement.setAttribute('text-anchor', textAnchor);
-        textElement.setAttribute('transform', `rotate(${rotation}, ${textX}, ${textY})`);
-        textElement.setAttribute('fill', 'black');
-        
-        // Let CSS handle font sizing and weight through the 'selected' class
-        textElement.removeAttribute('font-size');
-        textElement.removeAttribute('font-weight');
-        
-        // Apply text transformation based on configuration (pure universal)
-        // Prefer translated display name when available, BUT NOT for numeric items
-        // (verses have their content in language properties, not their display name)
-        const isNumericLevel = levelConfig && levelConfig.is_numeric;
-        const translationProp = (!isNumericLevel && typeof this.getTranslationTextProperty === 'function')
-            ? this.getTranslationTextProperty()
-            : null;
-        // Only look for translated names on non-numeric items (books, sections, etc.)
-        // For numeric items (chapters, verses), the language property contains content, not the name
-        const translated = translationProp
-            ? (item.translations?.[translationProp])  // Only check translations object, not item root
-            : null;
-        const baseName = translated || item.name;
-
-        let displayText = baseName;
-        if (textTransform === 'number_only_or_cil') {
-            // Extract numeric part and optionally append CIL when selected
-            const match = baseName && baseName.match(/^(\d+)/);
-            if (match) {
-                const number = match[1];
-                displayText = isSelected ? `${number} CIL` : number;
-            }
-        } else if (textTransform === 'number_only') {
-            // Show just the number for unselected, prepend display_name when selected
-            const match = baseName && baseName.match(/^(\d+)/);
-            if (match) {
-                const number = match[1];
-                if (isSelected && levelConfig) {
-                    const translatedDisplayName = this.getTranslatedDisplayName(levelConfig);
-                    if (translatedDisplayName) {
-                        displayText = `${translatedDisplayName} ${number}`;
-                    } else {
-                        displayText = number;
-                    }
-                } else {
-                    displayText = number;
-                }
-            }
-        }
-        
-        textElement.textContent = displayText;
-        
-        // Log text size for Magnifier (selected focus item)
-        if (isSelected) {
-            // CSS sets font-size via .focusItem.selected text rule (20px bold)
-            console.log('📏 MAGNIFIER TEXT SIZE:', '20px (CSS)', 'weight: bold (CSS)', 'item:', item.name);
-        }
+        // Delegate to FocusRingView (method moved in Phase 3)
+        this.focusRingView.updateFocusItemText(textElement, angle, item, isSelected);
     }
     
     addTimestampToCenter() {

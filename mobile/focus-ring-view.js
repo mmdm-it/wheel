@@ -1098,6 +1098,200 @@ class FocusRingView {
         }
     }
 
+    /**
+     * Manually trigger focus settlement to show Child Pyramid for centered item
+     * Called after programmatic rotation animations complete
+     */
+    triggerFocusSettlement() {
+        const r = this.renderer;
+        Logger.debug('🎯 triggerFocusSettlement CALLED');
+        
+        // Mark as no longer rotating
+        r.isRotating = false;
+        
+        // Clear any pending settle timeout
+        if (r.settleTimeout) {
+            clearTimeout(r.settleTimeout);
+            r.settleTimeout = null;
+        }
+        
+        // Get the currently selected focus item
+        if (!r.selectedFocusItem) {
+            Logger.warn('🎯 No selected focus item to settle');
+            return;
+        }
+        
+        // Calculate the angle for the selected item
+        const allFocusItems = r.allFocusItems.length > 0 ? r.allFocusItems : r.currentFocusItems;
+        const selectedIndex = allFocusItems.findIndex(item => item.key === r.selectedFocusItem.key);
+        
+        if (selectedIndex < 0) {
+            Logger.warn('🎯 Selected focus item not found in focus items list');
+            return;
+        }
+        
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const centerAngle = r.viewport.getCenterAngle();
+        const rotationOffset = r.getTouchHandler()?.rotationOffset || 0;
+        const adjustedCenterAngle = centerAngle + rotationOffset;
+        const middleIndex = (allFocusItems.length - 1) / 2;
+        const angle = adjustedCenterAngle + (middleIndex - selectedIndex) * angleStep;
+        
+        Logger.debug(`🎯 Settling on: ${r.selectedFocusItem.name} at index ${selectedIndex}`);
+        r.showChildContentForFocusItem(r.selectedFocusItem, angle);
+
+        // After settlement, refresh parent line
+        setTimeout(() => {
+            r.navigationView.drawParentLine({
+                isRotating: r.isRotating,
+                isAnimating: r.isAnimating
+            });
+        }, 10);
+        
+        // BUGFIX: Removed redundant updateFocusRingPositions() call
+        // The focus ring was already positioned correctly with click handlers attached
+        // during handleChildPyramidClick() before this settlement function was called.
+        // Calling it again here was causing a race condition where DOM elements were
+        // being recreated while still settling from the animation, breaking click handlers.
+    }
+    
+    /**
+     * Get the index of the focus item that should be selected at the current rotation offset
+     */
+    getSelectedFocusIndex(rotationOffset, focusCount) {
+        if (focusCount === 0) return -1;
+        
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
+        const middleIndex = (focusCount - 1) / 2;
+        
+        // Calculate which focus item index should be at the dynamic center angle position
+        // For a focus item at index i to be at center angle:
+        // centerAngle + rotationOffset + (middleIndex - i) * angleStep = centerAngle
+        // Therefore: i = middleIndex + (rotationOffset / angleStep)
+        const exactIndex = middleIndex + (rotationOffset / angleStep);
+        const roundedIndex = Math.round(exactIndex);
+        
+        // Only select if the focus item is very close to the exact position (detent threshold)
+        const detentThreshold = 0.15; // Allow small deviation for selection
+        const deviation = Math.abs(exactIndex - roundedIndex);
+        
+        if (deviation <= detentThreshold && roundedIndex >= 0 && roundedIndex < focusCount) {
+            return roundedIndex;
+        }
+        
+        return -1; // No focus item selected if not close enough to detent position
+    }
+
+    /**
+     * Update text label for a focus item
+     * Handles positioning, rotation, and text transformation
+     */
+    updateFocusItemText(textElement, angle, item, isSelected = false) {
+        const r = this.renderer;
+        
+        // Validate angle to prevent NaN errors
+        if (isNaN(angle)) {
+            Logger.error(`Invalid text angle: ${angle}`);
+            return;
+        }
+        
+        // Get configuration for this item's level (pure universal)
+        const itemLevel = item.__level || 'focusItem';
+        const levelConfig = r.dataManager.getHierarchyLevelConfig(itemLevel);
+        const textPosition = levelConfig && levelConfig.focus_text_position || 'radial';
+        const textTransform = levelConfig && levelConfig.focus_text_transform || 'none';
+        
+        let textX, textY, textAnchor;
+        
+        if (textPosition === 'centered') {
+            // Center text over the node
+            textX = 0;
+            textY = 0;
+            textAnchor = 'middle';
+        } else {
+            // Radial positioning - center text over circles for all items
+            // No offset needed - text positioned at same coordinates as circle center
+            const offset = 0;
+            
+            textX = offset * Math.cos(angle);
+            textY = offset * Math.sin(angle);
+            
+            // Center all text over circles for consistent positioning
+            textAnchor = 'middle';
+        }
+        
+        let rotation = angle * 180 / Math.PI;
+        
+        if (Math.cos(angle) < 0) {
+            rotation += 180;
+        }
+        
+        // Validate calculated values
+        if (isNaN(textX) || isNaN(textY) || isNaN(rotation)) {
+            Logger.error(`Invalid text position: x=${textX}, y=${textY}, rotation=${rotation}, angle=${angle}`);
+            return;
+        }
+        
+        textElement.setAttribute('x', textX);
+        textElement.setAttribute('y', textY);
+        textElement.setAttribute('dy', '0.3em');
+        textElement.setAttribute('text-anchor', textAnchor);
+        textElement.setAttribute('transform', `rotate(${rotation}, ${textX}, ${textY})`);
+        textElement.setAttribute('fill', 'black');
+        
+        // Let CSS handle font sizing and weight through the 'selected' class
+        textElement.removeAttribute('font-size');
+        textElement.removeAttribute('font-weight');
+        
+        // Apply text transformation based on configuration (pure universal)
+        // Prefer translated display name when available, BUT NOT for numeric items
+        // (verses have their content in language properties, not their display name)
+        const isNumericLevel = levelConfig && levelConfig.is_numeric;
+        const translationProp = (!isNumericLevel && typeof r.getTranslationTextProperty === 'function')
+            ? r.getTranslationTextProperty()
+            : null;
+        // Only look for translated names on non-numeric items (books, sections, etc.)
+        // For numeric items (chapters, verses), the language property contains content, not the name
+        const translated = translationProp
+            ? (item.translations?.[translationProp])  // Only check translations object, not item root
+            : null;
+        const baseName = translated || item.name;
+
+        let displayText = baseName;
+        if (textTransform === 'number_only_or_cil') {
+            // Extract numeric part and optionally append CIL when selected
+            const match = baseName && baseName.match(/^(\d+)/);
+            if (match) {
+                const number = match[1];
+                displayText = isSelected ? `${number} CIL` : number;
+            }
+        } else if (textTransform === 'number_only') {
+            // Show just the number for unselected, prepend display_name when selected
+            const match = baseName && baseName.match(/^(\d+)/);
+            if (match) {
+                const number = match[1];
+                if (isSelected && levelConfig) {
+                    const translatedDisplayName = r.getTranslatedDisplayName(levelConfig);
+                    if (translatedDisplayName) {
+                        displayText = `${translatedDisplayName} ${number}`;
+                    } else {
+                        displayText = number;
+                    }
+                } else {
+                    displayText = number;
+                }
+            }
+        }
+        
+        textElement.textContent = displayText;
+        
+        // Log text size for Magnifier (selected focus item)
+        if (isSelected) {
+            // CSS sets font-size via .focusItem.selected text rule (20px bold)
+            console.log('📏 MAGNIFIER TEXT SIZE:', '20px (CSS)', 'weight: bold (CSS)', 'item:', item.name);
+        }
+    }
+
     reset() {
         this.focusElements.clear();
         this.positionCache.clear();
