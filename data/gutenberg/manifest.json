@@ -23,15 +23,15 @@
         ],
         "default": "latin",
         "labels": {
-          "hebrew": "עברית",
-          "greek": "Ελληνικά",
+          "hebrew": "\u05e2\u05d1\u05e8\u05d9\u05ea",
+          "greek": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac",
           "latin": "LATINA",
           "english": "ENGLISH",
-          "french": "FRANÇAIS",
-          "spanish": "ESPAÑOL",
+          "french": "FRAN\u00c7AIS",
+          "spanish": "ESPA\u00d1OL",
           "italian": "ITALIANO",
-          "portuguese": "PORTUGUÊS",
-          "russian": "РУССКИЙ"
+          "portuguese": "PORTUGU\u00caS",
+          "russian": "\u0420\u0423\u0421\u0421\u041a\u0418\u0419"
         }
       },
       "focus_ring_startup": {
@@ -91,15 +91,15 @@
           "color": "#8b6f47",
           "positioning": "arc",
           "display_name": "Chapter",
-          "display_name_hebrew": "פרק",
-          "display_name_greek": "Κεφάλαιο",
+          "display_name_hebrew": "\u05e4\u05e8\u05e7",
+          "display_name_greek": "\u039a\u03b5\u03c6\u03ac\u03bb\u03b1\u03b9\u03bf",
           "display_name_latin": "Caput",
           "display_name_english": "Chapter",
           "display_name_french": "Chapitre",
-          "display_name_spanish": "Capítulo",
+          "display_name_spanish": "Cap\u00edtulo",
           "display_name_italian": "Capitolo",
-          "display_name_portuguese": "Capítulo",
-          "display_name_russian": "Глава",
+          "display_name_portuguese": "Cap\u00edtulo",
+          "display_name_russian": "\u0413\u043b\u0430\u0432\u0430",
           "sort_type": "numeric_asc",
           "focus_text_position": "centered",
           "focus_text_transform": "number_only",
@@ -111,15 +111,15 @@
           "color": "#8b6f47",
           "positioning": "arc",
           "display_name": "Verse",
-          "display_name_hebrew": "פסוק",
-          "display_name_greek": "Στίχος",
+          "display_name_hebrew": "\u05e4\u05e1\u05d5\u05e7",
+          "display_name_greek": "\u03a3\u03c4\u03af\u03c7\u03bf\u03c2",
           "display_name_latin": "Versus",
           "display_name_english": "Verse",
           "display_name_french": "Verset",
-          "display_name_spanish": "Versículo",
+          "display_name_spanish": "Vers\u00edculo",
           "display_name_italian": "Verso",
-          "display_name_portuguese": "Versículo",
-          "display_name_russian": "Стих",
+          "display_name_portuguese": "Vers\u00edculo",
+          "display_name_russian": "\u0421\u0442\u0438\u0445",
           "sort_type": "numeric_asc",
           "focus_text_position": "centered",
           "focus_text_transform": "number_only",
@@ -158,7 +158,7 @@
             "books": {
               "GENE": {
                 "book_key": "GENE",
-                "book_name": "GENE",
+                "book_name": "Genesis",
                 "sort_number": 1,
                 "chapter_count": 50,
                 "chapters": {
@@ -462,11 +462,23 @@
                     "_external_file": "data/gutenberg/chapters/GENE/050.json",
                     "_loaded": false
                   }
+                },
+                "name": "Genesis",
+                "translations": {
+                  "hebrew": "Genesis",
+                  "greek": "Genesis",
+                  "latin": "Genesis",
+                  "english": "Genesis",
+                  "french": "Genesis",
+                  "spanish": "Genesis",
+                  "italian": "Genesis",
+                  "portuguese": "Genesis",
+                  "russian": "Genesis"
                 }
               },
               "EXO": {
                 "book_key": "EXO",
-                "book_name": "EXO",
+                "book_name": "Exodus",
                 "sort_number": 2,
                 "chapter_count": 40,
                 "chapters": {
@@ -710,11 +722,23 @@
                     "_external_file": "data/gutenberg/chapters/EXO/040.json",
                     "_loaded": false
                   }
+                },
+                "name": "Exodus",
+                "translations": {
+                  "hebrew": "Exodus",
+                  "greek": "Exodus",
+                  "latin": "Exodus",
+                  "english": "Exodus",
+                  "french": "Exodus",
+                  "spanish": "Exodus",
+                  "italian": "Exodus",
+                  "portuguese": "Exodus",
+                  "russian": "Exodus"
                 }
               },
               "LEVI": {
                 "book_key": "LEVI",
-                "book_name": "LEVI",
+                "book_name": "Leviticus",
                 "sort_number": 3,
                 "chapter_count": 27,
                 "chapters": {
@@ -880,11 +904,23 @@
                     "_external_file": "data/gutenberg/chapters/LEVI/027.json",
                     "_loaded": false
                   }
+                },
+                "name": "Leviticus",
+                "translations": {
+                  "hebrew": "Leviticus",
+                  "greek": "Leviticus",
+                  "latin": "Leviticus",
+                  "english": "Leviticus",
+                  "french": "Leviticus",
+                  "spanish": "Leviticus",
+                  "italian": "Leviticus",
+                  "portuguese": "Leviticus",
+                  "russian": "Leviticus"
                 }
               },
               "NUME": {
                 "book_key": "NUME",
-                "book_name": "NUME",
+                "book_name": "Numbers",
                 "sort_number": 4,
                 "chapter_count": 36,
                 "chapters": {
@@ -1104,11 +1140,23 @@
                     "_external_file": "data/gutenberg/chapters/NUME/036.json",
                     "_loaded": false
                   }
+                },
+                "name": "Numbers",
+                "translations": {
+                  "hebrew": "Numbers",
+                  "greek": "Numbers",
+                  "latin": "Numbers",
+                  "english": "Numbers",
+                  "french": "Numbers",
+                  "spanish": "Numbers",
+                  "italian": "Numbers",
+                  "portuguese": "Numbers",
+                  "russian": "Numbers"
                 }
               },
               "DEUT": {
                 "book_key": "DEUT",
-                "book_name": "DEUT",
+                "book_name": "Deuteronomy",
                 "sort_number": 5,
                 "chapter_count": 34,
                 "chapters": {
@@ -1316,10 +1364,33 @@
                     "_external_file": "data/gutenberg/chapters/DEUT/034.json",
                     "_loaded": false
                   }
+                },
+                "name": "Deuteronomy",
+                "translations": {
+                  "hebrew": "Deuteronomy",
+                  "greek": "Deuteronomy",
+                  "latin": "Deuteronomy",
+                  "english": "Deuteronomy",
+                  "french": "Deuteronomy",
+                  "spanish": "Deuteronomy",
+                  "italian": "Deuteronomy",
+                  "portuguese": "Deuteronomy",
+                  "russian": "Deuteronomy"
                 }
               }
             },
-            "sort_number": 1
+            "sort_number": 1,
+            "translations": {
+              "hebrew": "Pentateuch",
+              "greek": "Pentateuch",
+              "latin": "Pentateuch",
+              "english": "Pentateuch",
+              "french": "Pentateuch",
+              "spanish": "Pentateuch",
+              "italian": "Pentateuch",
+              "portuguese": "Pentateuch",
+              "russian": "Pentateuch"
+            }
           },
           "Libri_Historici_et_Novellae_Biblicae": {
             "name": "Libri Historici et Novellae Biblicae",
@@ -1338,7 +1409,7 @@
             "books": {
               "IOSU": {
                 "book_key": "IOSU",
-                "book_name": "IOSU",
+                "book_name": "Joshua",
                 "sort_number": 6,
                 "chapter_count": 24,
                 "chapters": {
@@ -1486,11 +1557,23 @@
                     "_external_file": "data/gutenberg/chapters/IOSU/024.json",
                     "_loaded": false
                   }
+                },
+                "name": "Joshua",
+                "translations": {
+                  "hebrew": "Joshua",
+                  "greek": "Joshua",
+                  "latin": "Joshua",
+                  "english": "Joshua",
+                  "french": "Joshua",
+                  "spanish": "Joshua",
+                  "italian": "Joshua",
+                  "portuguese": "Joshua",
+                  "russian": "Joshua"
                 }
               },
               "IUDI": {
                 "book_key": "IUDI",
-                "book_name": "IUDI",
+                "book_name": "Judges",
                 "sort_number": 7,
                 "chapter_count": 21,
                 "chapters": {
@@ -1620,11 +1703,23 @@
                     "_external_file": "data/gutenberg/chapters/IUDI/021.json",
                     "_loaded": false
                   }
+                },
+                "name": "Judges",
+                "translations": {
+                  "hebrew": "Judges",
+                  "greek": "Judges",
+                  "latin": "Judges",
+                  "english": "Judges",
+                  "french": "Judges",
+                  "spanish": "Judges",
+                  "italian": "Judges",
+                  "portuguese": "Judges",
+                  "russian": "Judges"
                 }
               },
               "RUTH": {
                 "book_key": "RUTH",
-                "book_name": "RUTH",
+                "book_name": "Ruth",
                 "sort_number": 8,
                 "chapter_count": 4,
                 "chapters": {
@@ -1652,11 +1747,23 @@
                     "_external_file": "data/gutenberg/chapters/RUTH/004.json",
                     "_loaded": false
                   }
+                },
+                "name": "Ruth",
+                "translations": {
+                  "hebrew": "Ruth",
+                  "greek": "Ruth",
+                  "latin": "Ruth",
+                  "english": "Ruth",
+                  "french": "Ruth",
+                  "spanish": "Ruth",
+                  "italian": "Ruth",
+                  "portuguese": "Ruth",
+                  "russian": "Ruth"
                 }
               },
               "I_SAM": {
                 "book_key": "I_SAM",
-                "book_name": "I_SAM",
+                "book_name": "1 Samuel",
                 "sort_number": 9,
                 "chapter_count": 31,
                 "chapters": {
@@ -1846,11 +1953,23 @@
                     "_external_file": "data/gutenberg/chapters/I_SAM/031.json",
                     "_loaded": false
                   }
+                },
+                "name": "1 Samuel",
+                "translations": {
+                  "hebrew": "1 Samuel",
+                  "greek": "1 Samuel",
+                  "latin": "1 Samuel",
+                  "english": "1 Samuel",
+                  "french": "1 Samuel",
+                  "spanish": "1 Samuel",
+                  "italian": "1 Samuel",
+                  "portuguese": "1 Samuel",
+                  "russian": "1 Samuel"
                 }
               },
               "II_SAM": {
                 "book_key": "II_SAM",
-                "book_name": "II_SAM",
+                "book_name": "2 Samuel",
                 "sort_number": 10,
                 "chapter_count": 24,
                 "chapters": {
@@ -1998,11 +2117,23 @@
                     "_external_file": "data/gutenberg/chapters/II_SAM/024.json",
                     "_loaded": false
                   }
+                },
+                "name": "2 Samuel",
+                "translations": {
+                  "hebrew": "2 Samuel",
+                  "greek": "2 Samuel",
+                  "latin": "2 Samuel",
+                  "english": "2 Samuel",
+                  "french": "2 Samuel",
+                  "spanish": "2 Samuel",
+                  "italian": "2 Samuel",
+                  "portuguese": "2 Samuel",
+                  "russian": "2 Samuel"
                 }
               },
               "III_REG": {
                 "book_key": "III_REG",
-                "book_name": "III_REG",
+                "book_name": "1 Kings",
                 "sort_number": 11,
                 "chapter_count": 22,
                 "chapters": {
@@ -2138,11 +2269,23 @@
                     "_external_file": "data/gutenberg/chapters/III_REG/022.json",
                     "_loaded": false
                   }
+                },
+                "name": "1 Kings",
+                "translations": {
+                  "hebrew": "1 Kings",
+                  "greek": "1 Kings",
+                  "latin": "1 Kings",
+                  "english": "1 Kings",
+                  "french": "1 Kings",
+                  "spanish": "1 Kings",
+                  "italian": "1 Kings",
+                  "portuguese": "1 Kings",
+                  "russian": "1 Kings"
                 }
               },
               "IV_REG": {
                 "book_key": "IV_REG",
-                "book_name": "IV_REG",
+                "book_name": "2 Kings",
                 "sort_number": 12,
                 "chapter_count": 25,
                 "chapters": {
@@ -2296,11 +2439,23 @@
                     "_external_file": "data/gutenberg/chapters/IV_REG/025.json",
                     "_loaded": false
                   }
+                },
+                "name": "2 Kings",
+                "translations": {
+                  "hebrew": "2 Kings",
+                  "greek": "2 Kings",
+                  "latin": "2 Kings",
+                  "english": "2 Kings",
+                  "french": "2 Kings",
+                  "spanish": "2 Kings",
+                  "italian": "2 Kings",
+                  "portuguese": "2 Kings",
+                  "russian": "2 Kings"
                 }
               },
               "TOBI": {
                 "book_key": "TOBI",
-                "book_name": "TOBI",
+                "book_name": "Tobit",
                 "sort_number": 13,
                 "chapter_count": 14,
                 "chapters": {
@@ -2388,11 +2543,23 @@
                     "_external_file": "data/gutenberg/chapters/TOBI/014.json",
                     "_loaded": false
                   }
+                },
+                "name": "Tobit",
+                "translations": {
+                  "hebrew": "Tobit",
+                  "greek": "Tobit",
+                  "latin": "Tobit",
+                  "english": "Tobit",
+                  "french": "Tobit",
+                  "spanish": "Tobit",
+                  "italian": "Tobit",
+                  "portuguese": "Tobit",
+                  "russian": "Tobit"
                 }
               },
               "IUDITH": {
                 "book_key": "IUDITH",
-                "book_name": "IUDITH",
+                "book_name": "Judith",
                 "sort_number": 14,
                 "chapter_count": 16,
                 "chapters": {
@@ -2492,11 +2659,23 @@
                     "_external_file": "data/gutenberg/chapters/IUDITH/016.json",
                     "_loaded": false
                   }
+                },
+                "name": "Judith",
+                "translations": {
+                  "hebrew": "Judith",
+                  "greek": "Judith",
+                  "latin": "Judith",
+                  "english": "Judith",
+                  "french": "Judith",
+                  "spanish": "Judith",
+                  "italian": "Judith",
+                  "portuguese": "Judith",
+                  "russian": "Judith"
                 }
               },
               "ESTH": {
                 "book_key": "ESTH",
-                "book_name": "ESTH",
+                "book_name": "Esther",
                 "sort_number": 15,
                 "chapter_count": 16,
                 "chapters": {
@@ -2596,10 +2775,33 @@
                     "_external_file": "data/gutenberg/chapters/ESTH/016.json",
                     "_loaded": false
                   }
+                },
+                "name": "Esther",
+                "translations": {
+                  "hebrew": "Esther",
+                  "greek": "Esther",
+                  "latin": "Esther",
+                  "english": "Esther",
+                  "french": "Esther",
+                  "spanish": "Esther",
+                  "italian": "Esther",
+                  "portuguese": "Esther",
+                  "russian": "Esther"
                 }
               }
             },
-            "sort_number": 2
+            "sort_number": 2,
+            "translations": {
+              "hebrew": "Historical Books",
+              "greek": "Historical Books",
+              "latin": "Historical Books",
+              "english": "Historical Books",
+              "french": "Historical Books",
+              "spanish": "Historical Books",
+              "italian": "Historical Books",
+              "portuguese": "Historical Books",
+              "russian": "Historical Books"
+            }
           },
           "Libri_Sapientiae": {
             "name": "Libri Sapientiae",
@@ -2615,7 +2817,7 @@
             "books": {
               "IOB": {
                 "book_key": "IOB",
-                "book_name": "IOB",
+                "book_name": "Job",
                 "sort_number": 16,
                 "chapter_count": 42,
                 "chapters": {
@@ -2871,11 +3073,23 @@
                     "_external_file": "data/gutenberg/chapters/IOB/042.json",
                     "_loaded": false
                   }
+                },
+                "name": "Job",
+                "translations": {
+                  "hebrew": "Job",
+                  "greek": "Job",
+                  "latin": "Job",
+                  "english": "Job",
+                  "french": "Job",
+                  "spanish": "Job",
+                  "italian": "Job",
+                  "portuguese": "Job",
+                  "russian": "Job"
                 }
               },
               "PSAL": {
                 "book_key": "PSAL",
-                "book_name": "PSAL",
+                "book_name": "Psalms",
                 "sort_number": 17,
                 "chapter_count": 150,
                 "chapters": {
@@ -3779,11 +3993,23 @@
                     "_external_file": "data/gutenberg/chapters/PSAL/150.json",
                     "_loaded": false
                   }
+                },
+                "name": "Psalms",
+                "translations": {
+                  "hebrew": "Psalms",
+                  "greek": "Psalms",
+                  "latin": "Psalms",
+                  "english": "Psalms",
+                  "french": "Psalms",
+                  "spanish": "Psalms",
+                  "italian": "Psalms",
+                  "portuguese": "Psalms",
+                  "russian": "Psalms"
                 }
               },
               "PROV": {
                 "book_key": "PROV",
-                "book_name": "PROV",
+                "book_name": "Proverbs",
                 "sort_number": 18,
                 "chapter_count": 31,
                 "chapters": {
@@ -3973,11 +4199,23 @@
                     "_external_file": "data/gutenberg/chapters/PROV/031.json",
                     "_loaded": false
                   }
+                },
+                "name": "Proverbs",
+                "translations": {
+                  "hebrew": "Proverbs",
+                  "greek": "Proverbs",
+                  "latin": "Proverbs",
+                  "english": "Proverbs",
+                  "french": "Proverbs",
+                  "spanish": "Proverbs",
+                  "italian": "Proverbs",
+                  "portuguese": "Proverbs",
+                  "russian": "Proverbs"
                 }
               },
               "ECCLE": {
                 "book_key": "ECCLE",
-                "book_name": "ECCLE",
+                "book_name": "Ecclesiastes",
                 "sort_number": 19,
                 "chapter_count": 12,
                 "chapters": {
@@ -4053,11 +4291,23 @@
                     "_external_file": "data/gutenberg/chapters/ECCLE/012.json",
                     "_loaded": false
                   }
+                },
+                "name": "Ecclesiastes",
+                "translations": {
+                  "hebrew": "Ecclesiastes",
+                  "greek": "Ecclesiastes",
+                  "latin": "Ecclesiastes",
+                  "english": "Ecclesiastes",
+                  "french": "Ecclesiastes",
+                  "spanish": "Ecclesiastes",
+                  "italian": "Ecclesiastes",
+                  "portuguese": "Ecclesiastes",
+                  "russian": "Ecclesiastes"
                 }
               },
               "CANT": {
                 "book_key": "CANT",
-                "book_name": "CANT",
+                "book_name": "Song of Songs",
                 "sort_number": 20,
                 "chapter_count": 8,
                 "chapters": {
@@ -4109,11 +4359,23 @@
                     "_external_file": "data/gutenberg/chapters/CANT/008.json",
                     "_loaded": false
                   }
+                },
+                "name": "Song of Songs",
+                "translations": {
+                  "hebrew": "Song of Songs",
+                  "greek": "Song of Songs",
+                  "latin": "Song of Songs",
+                  "english": "Song of Songs",
+                  "french": "Song of Songs",
+                  "spanish": "Song of Songs",
+                  "italian": "Song of Songs",
+                  "portuguese": "Song of Songs",
+                  "russian": "Song of Songs"
                 }
               },
               "SAPI": {
                 "book_key": "SAPI",
-                "book_name": "SAPI",
+                "book_name": "Wisdom",
                 "sort_number": 21,
                 "chapter_count": 19,
                 "chapters": {
@@ -4231,11 +4493,23 @@
                     "_external_file": "data/gutenberg/chapters/SAPI/019.json",
                     "_loaded": false
                   }
+                },
+                "name": "Wisdom",
+                "translations": {
+                  "hebrew": "Wisdom",
+                  "greek": "Wisdom",
+                  "latin": "Wisdom",
+                  "english": "Wisdom",
+                  "french": "Wisdom",
+                  "spanish": "Wisdom",
+                  "italian": "Wisdom",
+                  "portuguese": "Wisdom",
+                  "russian": "Wisdom"
                 }
               },
               "ECCLU": {
                 "book_key": "ECCLU",
-                "book_name": "ECCLU",
+                "book_name": "Sirach",
                 "sort_number": 22,
                 "chapter_count": 51,
                 "chapters": {
@@ -4545,10 +4819,33 @@
                     "_external_file": "data/gutenberg/chapters/ECCLU/051.json",
                     "_loaded": false
                   }
+                },
+                "name": "Sirach",
+                "translations": {
+                  "hebrew": "Sirach",
+                  "greek": "Sirach",
+                  "latin": "Sirach",
+                  "english": "Sirach",
+                  "french": "Sirach",
+                  "spanish": "Sirach",
+                  "italian": "Sirach",
+                  "portuguese": "Sirach",
+                  "russian": "Sirach"
                 }
               }
             },
-            "sort_number": 3
+            "sort_number": 3,
+            "translations": {
+              "hebrew": "Wisdom Books",
+              "greek": "Wisdom Books",
+              "latin": "Wisdom Books",
+              "english": "Wisdom Books",
+              "french": "Wisdom Books",
+              "spanish": "Wisdom Books",
+              "italian": "Wisdom Books",
+              "portuguese": "Wisdom Books",
+              "russian": "Wisdom Books"
+            }
           },
           "Libri_Prophetici": {
             "name": "Libri Prophetici",
@@ -4575,7 +4872,7 @@
             "books": {
               "ISA": {
                 "book_key": "ISA",
-                "book_name": "ISA",
+                "book_name": "Isaiah",
                 "sort_number": 23,
                 "chapter_count": 66,
                 "chapters": {
@@ -4975,11 +5272,23 @@
                     "_external_file": "data/gutenberg/chapters/ISA/066.json",
                     "_loaded": false
                   }
+                },
+                "name": "Isaiah",
+                "translations": {
+                  "hebrew": "Isaiah",
+                  "greek": "Isaiah",
+                  "latin": "Isaiah",
+                  "english": "Isaiah",
+                  "french": "Isaiah",
+                  "spanish": "Isaiah",
+                  "italian": "Isaiah",
+                  "portuguese": "Isaiah",
+                  "russian": "Isaiah"
                 }
               },
               "IERE": {
                 "book_key": "IERE",
-                "book_name": "IERE",
+                "book_name": "Jeremiah",
                 "sort_number": 24,
                 "chapter_count": 52,
                 "chapters": {
@@ -5295,11 +5604,23 @@
                     "_external_file": "data/gutenberg/chapters/IERE/052.json",
                     "_loaded": false
                   }
+                },
+                "name": "Jeremiah",
+                "translations": {
+                  "hebrew": "Jeremiah",
+                  "greek": "Jeremiah",
+                  "latin": "Jeremiah",
+                  "english": "Jeremiah",
+                  "french": "Jeremiah",
+                  "spanish": "Jeremiah",
+                  "italian": "Jeremiah",
+                  "portuguese": "Jeremiah",
+                  "russian": "Jeremiah"
                 }
               },
               "LAME": {
                 "book_key": "LAME",
-                "book_name": "LAME",
+                "book_name": "Lamentations",
                 "sort_number": 25,
                 "chapter_count": 5,
                 "chapters": {
@@ -5333,11 +5654,23 @@
                     "_external_file": "data/gutenberg/chapters/LAME/005.json",
                     "_loaded": false
                   }
+                },
+                "name": "Lamentations",
+                "translations": {
+                  "hebrew": "Lamentations",
+                  "greek": "Lamentations",
+                  "latin": "Lamentations",
+                  "english": "Lamentations",
+                  "french": "Lamentations",
+                  "spanish": "Lamentations",
+                  "italian": "Lamentations",
+                  "portuguese": "Lamentations",
+                  "russian": "Lamentations"
                 }
               },
               "BARU": {
                 "book_key": "BARU",
-                "book_name": "BARU",
+                "book_name": "Baruch",
                 "sort_number": 26,
                 "chapter_count": 6,
                 "chapters": {
@@ -5377,11 +5710,23 @@
                     "_external_file": "data/gutenberg/chapters/BARU/006.json",
                     "_loaded": false
                   }
+                },
+                "name": "Baruch",
+                "translations": {
+                  "hebrew": "Baruch",
+                  "greek": "Baruch",
+                  "latin": "Baruch",
+                  "english": "Baruch",
+                  "french": "Baruch",
+                  "spanish": "Baruch",
+                  "italian": "Baruch",
+                  "portuguese": "Baruch",
+                  "russian": "Baruch"
                 }
               },
               "EZE": {
                 "book_key": "EZE",
-                "book_name": "EZE",
+                "book_name": "Ezekiel",
                 "sort_number": 27,
                 "chapter_count": 48,
                 "chapters": {
@@ -5673,11 +6018,23 @@
                     "_external_file": "data/gutenberg/chapters/EZE/048.json",
                     "_loaded": false
                   }
+                },
+                "name": "Ezekiel",
+                "translations": {
+                  "hebrew": "Ezekiel",
+                  "greek": "Ezekiel",
+                  "latin": "Ezekiel",
+                  "english": "Ezekiel",
+                  "french": "Ezekiel",
+                  "spanish": "Ezekiel",
+                  "italian": "Ezekiel",
+                  "portuguese": "Ezekiel",
+                  "russian": "Ezekiel"
                 }
               },
               "DAN": {
                 "book_key": "DAN",
-                "book_name": "DAN",
+                "book_name": "Daniel",
                 "sort_number": 28,
                 "chapter_count": 14,
                 "chapters": {
@@ -5765,11 +6122,23 @@
                     "_external_file": "data/gutenberg/chapters/DAN/014.json",
                     "_loaded": false
                   }
+                },
+                "name": "Daniel",
+                "translations": {
+                  "hebrew": "Daniel",
+                  "greek": "Daniel",
+                  "latin": "Daniel",
+                  "english": "Daniel",
+                  "french": "Daniel",
+                  "spanish": "Daniel",
+                  "italian": "Daniel",
+                  "portuguese": "Daniel",
+                  "russian": "Daniel"
                 }
               },
               "OSE": {
                 "book_key": "OSE",
-                "book_name": "OSE",
+                "book_name": "Hosea",
                 "sort_number": 29,
                 "chapter_count": 14,
                 "chapters": {
@@ -5857,11 +6226,23 @@
                     "_external_file": "data/gutenberg/chapters/OSE/014.json",
                     "_loaded": false
                   }
+                },
+                "name": "Hosea",
+                "translations": {
+                  "hebrew": "Hosea",
+                  "greek": "Hosea",
+                  "latin": "Hosea",
+                  "english": "Hosea",
+                  "french": "Hosea",
+                  "spanish": "Hosea",
+                  "italian": "Hosea",
+                  "portuguese": "Hosea",
+                  "russian": "Hosea"
                 }
               },
               "IOEL": {
                 "book_key": "IOEL",
-                "book_name": "IOEL",
+                "book_name": "Joel",
                 "sort_number": 30,
                 "chapter_count": 3,
                 "chapters": {
@@ -5883,11 +6264,23 @@
                     "_external_file": "data/gutenberg/chapters/IOEL/003.json",
                     "_loaded": false
                   }
+                },
+                "name": "Joel",
+                "translations": {
+                  "hebrew": "Joel",
+                  "greek": "Joel",
+                  "latin": "Joel",
+                  "english": "Joel",
+                  "french": "Joel",
+                  "spanish": "Joel",
+                  "italian": "Joel",
+                  "portuguese": "Joel",
+                  "russian": "Joel"
                 }
               },
               "AMO": {
                 "book_key": "AMO",
-                "book_name": "AMO",
+                "book_name": "Amos",
                 "sort_number": 31,
                 "chapter_count": 9,
                 "chapters": {
@@ -5945,11 +6338,23 @@
                     "_external_file": "data/gutenberg/chapters/AMO/009.json",
                     "_loaded": false
                   }
+                },
+                "name": "Amos",
+                "translations": {
+                  "hebrew": "Amos",
+                  "greek": "Amos",
+                  "latin": "Amos",
+                  "english": "Amos",
+                  "french": "Amos",
+                  "spanish": "Amos",
+                  "italian": "Amos",
+                  "portuguese": "Amos",
+                  "russian": "Amos"
                 }
               },
               "ABDI": {
                 "book_key": "ABDI",
-                "book_name": "ABDI",
+                "book_name": "Obadiah",
                 "sort_number": 32,
                 "chapter_count": 1,
                 "chapters": {
@@ -5959,11 +6364,23 @@
                     "_external_file": "data/gutenberg/chapters/ABDI/001.json",
                     "_loaded": false
                   }
+                },
+                "name": "Obadiah",
+                "translations": {
+                  "hebrew": "Obadiah",
+                  "greek": "Obadiah",
+                  "latin": "Obadiah",
+                  "english": "Obadiah",
+                  "french": "Obadiah",
+                  "spanish": "Obadiah",
+                  "italian": "Obadiah",
+                  "portuguese": "Obadiah",
+                  "russian": "Obadiah"
                 }
               },
               "IONA": {
                 "book_key": "IONA",
-                "book_name": "IONA",
+                "book_name": "Jonah",
                 "sort_number": 33,
                 "chapter_count": 4,
                 "chapters": {
@@ -5991,11 +6408,23 @@
                     "_external_file": "data/gutenberg/chapters/IONA/004.json",
                     "_loaded": false
                   }
+                },
+                "name": "Jonah",
+                "translations": {
+                  "hebrew": "Jonah",
+                  "greek": "Jonah",
+                  "latin": "Jonah",
+                  "english": "Jonah",
+                  "french": "Jonah",
+                  "spanish": "Jonah",
+                  "italian": "Jonah",
+                  "portuguese": "Jonah",
+                  "russian": "Jonah"
                 }
               },
               "MICH": {
                 "book_key": "MICH",
-                "book_name": "MICH",
+                "book_name": "Micah",
                 "sort_number": 34,
                 "chapter_count": 7,
                 "chapters": {
@@ -6041,11 +6470,23 @@
                     "_external_file": "data/gutenberg/chapters/MICH/007.json",
                     "_loaded": false
                   }
+                },
+                "name": "Micah",
+                "translations": {
+                  "hebrew": "Micah",
+                  "greek": "Micah",
+                  "latin": "Micah",
+                  "english": "Micah",
+                  "french": "Micah",
+                  "spanish": "Micah",
+                  "italian": "Micah",
+                  "portuguese": "Micah",
+                  "russian": "Micah"
                 }
               },
               "NAHU": {
                 "book_key": "NAHU",
-                "book_name": "NAHU",
+                "book_name": "Nahum",
                 "sort_number": 35,
                 "chapter_count": 3,
                 "chapters": {
@@ -6067,11 +6508,23 @@
                     "_external_file": "data/gutenberg/chapters/NAHU/003.json",
                     "_loaded": false
                   }
+                },
+                "name": "Nahum",
+                "translations": {
+                  "hebrew": "Nahum",
+                  "greek": "Nahum",
+                  "latin": "Nahum",
+                  "english": "Nahum",
+                  "french": "Nahum",
+                  "spanish": "Nahum",
+                  "italian": "Nahum",
+                  "portuguese": "Nahum",
+                  "russian": "Nahum"
                 }
               },
               "HAB": {
                 "book_key": "HAB",
-                "book_name": "HAB",
+                "book_name": "Habakkuk",
                 "sort_number": 36,
                 "chapter_count": 3,
                 "chapters": {
@@ -6093,11 +6546,23 @@
                     "_external_file": "data/gutenberg/chapters/HAB/003.json",
                     "_loaded": false
                   }
+                },
+                "name": "Habakkuk",
+                "translations": {
+                  "hebrew": "Habakkuk",
+                  "greek": "Habakkuk",
+                  "latin": "Habakkuk",
+                  "english": "Habakkuk",
+                  "french": "Habakkuk",
+                  "spanish": "Habakkuk",
+                  "italian": "Habakkuk",
+                  "portuguese": "Habakkuk",
+                  "russian": "Habakkuk"
                 }
               },
               "SOPH": {
                 "book_key": "SOPH",
-                "book_name": "SOPH",
+                "book_name": "Zephaniah",
                 "sort_number": 37,
                 "chapter_count": 3,
                 "chapters": {
@@ -6119,11 +6584,23 @@
                     "_external_file": "data/gutenberg/chapters/SOPH/003.json",
                     "_loaded": false
                   }
+                },
+                "name": "Zephaniah",
+                "translations": {
+                  "hebrew": "Zephaniah",
+                  "greek": "Zephaniah",
+                  "latin": "Zephaniah",
+                  "english": "Zephaniah",
+                  "french": "Zephaniah",
+                  "spanish": "Zephaniah",
+                  "italian": "Zephaniah",
+                  "portuguese": "Zephaniah",
+                  "russian": "Zephaniah"
                 }
               },
               "AGGE": {
                 "book_key": "AGGE",
-                "book_name": "AGGE",
+                "book_name": "Haggai",
                 "sort_number": 38,
                 "chapter_count": 2,
                 "chapters": {
@@ -6139,11 +6616,23 @@
                     "_external_file": "data/gutenberg/chapters/AGGE/002.json",
                     "_loaded": false
                   }
+                },
+                "name": "Haggai",
+                "translations": {
+                  "hebrew": "Haggai",
+                  "greek": "Haggai",
+                  "latin": "Haggai",
+                  "english": "Haggai",
+                  "french": "Haggai",
+                  "spanish": "Haggai",
+                  "italian": "Haggai",
+                  "portuguese": "Haggai",
+                  "russian": "Haggai"
                 }
               },
               "ZACH": {
                 "book_key": "ZACH",
-                "book_name": "ZACH",
+                "book_name": "Zechariah",
                 "sort_number": 39,
                 "chapter_count": 14,
                 "chapters": {
@@ -6231,11 +6720,23 @@
                     "_external_file": "data/gutenberg/chapters/ZACH/014.json",
                     "_loaded": false
                   }
+                },
+                "name": "Zechariah",
+                "translations": {
+                  "hebrew": "Zechariah",
+                  "greek": "Zechariah",
+                  "latin": "Zechariah",
+                  "english": "Zechariah",
+                  "french": "Zechariah",
+                  "spanish": "Zechariah",
+                  "italian": "Zechariah",
+                  "portuguese": "Zechariah",
+                  "russian": "Zechariah"
                 }
               },
               "MALA": {
                 "book_key": "MALA",
-                "book_name": "MALA",
+                "book_name": "Malachi",
                 "sort_number": 40,
                 "chapter_count": 4,
                 "chapters": {
@@ -6263,11 +6764,45 @@
                     "_external_file": "data/gutenberg/chapters/MALA/004.json",
                     "_loaded": false
                   }
+                },
+                "name": "Malachi",
+                "translations": {
+                  "hebrew": "Malachi",
+                  "greek": "Malachi",
+                  "latin": "Malachi",
+                  "english": "Malachi",
+                  "french": "Malachi",
+                  "spanish": "Malachi",
+                  "italian": "Malachi",
+                  "portuguese": "Malachi",
+                  "russian": "Malachi"
                 }
               }
             },
-            "sort_number": 4
+            "sort_number": 4,
+            "translations": {
+              "hebrew": "Prophetic Books",
+              "greek": "Prophetic Books",
+              "latin": "Prophetic Books",
+              "english": "Prophetic Books",
+              "french": "Prophetic Books",
+              "spanish": "Prophetic Books",
+              "italian": "Prophetic Books",
+              "portuguese": "Prophetic Books",
+              "russian": "Prophetic Books"
+            }
           }
+        },
+        "translations": {
+          "hebrew": "Old Testament",
+          "greek": "Old Testament",
+          "latin": "Old Testament",
+          "english": "Old Testament",
+          "french": "Old Testament",
+          "spanish": "Old Testament",
+          "italian": "Old Testament",
+          "portuguese": "Old Testament",
+          "russian": "Old Testament"
         }
       },
       "Novum_Testamentum": {
@@ -6285,7 +6820,7 @@
             "books": {
               "MATHE": {
                 "book_key": "MATHE",
-                "book_name": "MATHE",
+                "book_name": "Matthew",
                 "sort_number": 41,
                 "chapter_count": 28,
                 "chapters": {
@@ -6457,11 +6992,23 @@
                     "_external_file": "data/gutenberg/chapters/MATHE/028.json",
                     "_loaded": false
                   }
+                },
+                "name": "Matthew",
+                "translations": {
+                  "hebrew": "Matthew",
+                  "greek": "Matthew",
+                  "latin": "Matthew",
+                  "english": "Matthew",
+                  "french": "Matthew",
+                  "spanish": "Matthew",
+                  "italian": "Matthew",
+                  "portuguese": "Matthew",
+                  "russian": "Matthew"
                 }
               },
               "MARC": {
                 "book_key": "MARC",
-                "book_name": "MARC",
+                "book_name": "Mark",
                 "sort_number": 42,
                 "chapter_count": 16,
                 "chapters": {
@@ -6561,11 +7108,23 @@
                     "_external_file": "data/gutenberg/chapters/MARC/016.json",
                     "_loaded": false
                   }
+                },
+                "name": "Mark",
+                "translations": {
+                  "hebrew": "Mark",
+                  "greek": "Mark",
+                  "latin": "Mark",
+                  "english": "Mark",
+                  "french": "Mark",
+                  "spanish": "Mark",
+                  "italian": "Mark",
+                  "portuguese": "Mark",
+                  "russian": "Mark"
                 }
               },
               "LUCA": {
                 "book_key": "LUCA",
-                "book_name": "LUCA",
+                "book_name": "Luke",
                 "sort_number": 43,
                 "chapter_count": 24,
                 "chapters": {
@@ -6713,11 +7272,23 @@
                     "_external_file": "data/gutenberg/chapters/LUCA/024.json",
                     "_loaded": false
                   }
+                },
+                "name": "Luke",
+                "translations": {
+                  "hebrew": "Luke",
+                  "greek": "Luke",
+                  "latin": "Luke",
+                  "english": "Luke",
+                  "french": "Luke",
+                  "spanish": "Luke",
+                  "italian": "Luke",
+                  "portuguese": "Luke",
+                  "russian": "Luke"
                 }
               },
               "IOHA": {
                 "book_key": "IOHA",
-                "book_name": "IOHA",
+                "book_name": "John",
                 "sort_number": 44,
                 "chapter_count": 21,
                 "chapters": {
@@ -6847,10 +7418,33 @@
                     "_external_file": "data/gutenberg/chapters/IOHA/021.json",
                     "_loaded": false
                   }
+                },
+                "name": "John",
+                "translations": {
+                  "hebrew": "John",
+                  "greek": "John",
+                  "latin": "John",
+                  "english": "John",
+                  "french": "John",
+                  "spanish": "John",
+                  "italian": "John",
+                  "portuguese": "John",
+                  "russian": "John"
                 }
               }
             },
-            "sort_number": 1
+            "sort_number": 1,
+            "translations": {
+              "hebrew": "Gospels",
+              "greek": "Gospels",
+              "latin": "Gospels",
+              "english": "Gospels",
+              "french": "Gospels",
+              "spanish": "Gospels",
+              "italian": "Gospels",
+              "portuguese": "Gospels",
+              "russian": "Gospels"
+            }
           },
           "Actus_Apostolorum": {
             "name": "Actus Apostolorum",
@@ -6860,7 +7454,7 @@
             "books": {
               "ACTU": {
                 "book_key": "ACTU",
-                "book_name": "ACTU",
+                "book_name": "Acts",
                 "sort_number": 45,
                 "chapter_count": 28,
                 "chapters": {
@@ -7032,10 +7626,33 @@
                     "_external_file": "data/gutenberg/chapters/ACTU/028.json",
                     "_loaded": false
                   }
+                },
+                "name": "Acts",
+                "translations": {
+                  "hebrew": "Acts",
+                  "greek": "Acts",
+                  "latin": "Acts",
+                  "english": "Acts",
+                  "french": "Acts",
+                  "spanish": "Acts",
+                  "italian": "Acts",
+                  "portuguese": "Acts",
+                  "russian": "Acts"
                 }
               }
             },
-            "sort_number": 2
+            "sort_number": 2,
+            "translations": {
+              "hebrew": "Acts of the Apostles",
+              "greek": "Acts of the Apostles",
+              "latin": "Acts of the Apostles",
+              "english": "Acts of the Apostles",
+              "french": "Acts of the Apostles",
+              "spanish": "Acts of the Apostles",
+              "italian": "Acts of the Apostles",
+              "portuguese": "Acts of the Apostles",
+              "russian": "Acts of the Apostles"
+            }
           },
           "Epistolae": {
             "name": "Epistolae",
@@ -7065,7 +7682,7 @@
             "books": {
               "ROM": {
                 "book_key": "ROM",
-                "book_name": "ROM",
+                "book_name": "Romans",
                 "sort_number": 46,
                 "chapter_count": 16,
                 "chapters": {
@@ -7165,11 +7782,23 @@
                     "_external_file": "data/gutenberg/chapters/ROM/016.json",
                     "_loaded": false
                   }
+                },
+                "name": "Romans",
+                "translations": {
+                  "hebrew": "Romans",
+                  "greek": "Romans",
+                  "latin": "Romans",
+                  "english": "Romans",
+                  "french": "Romans",
+                  "spanish": "Romans",
+                  "italian": "Romans",
+                  "portuguese": "Romans",
+                  "russian": "Romans"
                 }
               },
               "I_COR": {
                 "book_key": "I_COR",
-                "book_name": "I_COR",
+                "book_name": "1 Corinthians",
                 "sort_number": 47,
                 "chapter_count": 16,
                 "chapters": {
@@ -7269,11 +7898,23 @@
                     "_external_file": "data/gutenberg/chapters/I_COR/016.json",
                     "_loaded": false
                   }
+                },
+                "name": "1 Corinthians",
+                "translations": {
+                  "hebrew": "1 Corinthians",
+                  "greek": "1 Corinthians",
+                  "latin": "1 Corinthians",
+                  "english": "1 Corinthians",
+                  "french": "1 Corinthians",
+                  "spanish": "1 Corinthians",
+                  "italian": "1 Corinthians",
+                  "portuguese": "1 Corinthians",
+                  "russian": "1 Corinthians"
                 }
               },
               "II_COR": {
                 "book_key": "II_COR",
-                "book_name": "II_COR",
+                "book_name": "2 Corinthians",
                 "sort_number": 48,
                 "chapter_count": 13,
                 "chapters": {
@@ -7355,11 +7996,23 @@
                     "_external_file": "data/gutenberg/chapters/II_COR/013.json",
                     "_loaded": false
                   }
+                },
+                "name": "2 Corinthians",
+                "translations": {
+                  "hebrew": "2 Corinthians",
+                  "greek": "2 Corinthians",
+                  "latin": "2 Corinthians",
+                  "english": "2 Corinthians",
+                  "french": "2 Corinthians",
+                  "spanish": "2 Corinthians",
+                  "italian": "2 Corinthians",
+                  "portuguese": "2 Corinthians",
+                  "russian": "2 Corinthians"
                 }
               },
               "GALA": {
                 "book_key": "GALA",
-                "book_name": "GALA",
+                "book_name": "Galatians",
                 "sort_number": 49,
                 "chapter_count": 6,
                 "chapters": {
@@ -7399,11 +8052,23 @@
                     "_external_file": "data/gutenberg/chapters/GALA/006.json",
                     "_loaded": false
                   }
+                },
+                "name": "Galatians",
+                "translations": {
+                  "hebrew": "Galatians",
+                  "greek": "Galatians",
+                  "latin": "Galatians",
+                  "english": "Galatians",
+                  "french": "Galatians",
+                  "spanish": "Galatians",
+                  "italian": "Galatians",
+                  "portuguese": "Galatians",
+                  "russian": "Galatians"
                 }
               },
               "EPHE": {
                 "book_key": "EPHE",
-                "book_name": "EPHE",
+                "book_name": "Ephesians",
                 "sort_number": 50,
                 "chapter_count": 6,
                 "chapters": {
@@ -7443,11 +8108,23 @@
                     "_external_file": "data/gutenberg/chapters/EPHE/006.json",
                     "_loaded": false
                   }
+                },
+                "name": "Ephesians",
+                "translations": {
+                  "hebrew": "Ephesians",
+                  "greek": "Ephesians",
+                  "latin": "Ephesians",
+                  "english": "Ephesians",
+                  "french": "Ephesians",
+                  "spanish": "Ephesians",
+                  "italian": "Ephesians",
+                  "portuguese": "Ephesians",
+                  "russian": "Ephesians"
                 }
               },
               "PHILI": {
                 "book_key": "PHILI",
-                "book_name": "PHILI",
+                "book_name": "Philippians",
                 "sort_number": 51,
                 "chapter_count": 4,
                 "chapters": {
@@ -7475,11 +8152,23 @@
                     "_external_file": "data/gutenberg/chapters/PHILI/004.json",
                     "_loaded": false
                   }
+                },
+                "name": "Philippians",
+                "translations": {
+                  "hebrew": "Philippians",
+                  "greek": "Philippians",
+                  "latin": "Philippians",
+                  "english": "Philippians",
+                  "french": "Philippians",
+                  "spanish": "Philippians",
+                  "italian": "Philippians",
+                  "portuguese": "Philippians",
+                  "russian": "Philippians"
                 }
               },
               "COLO": {
                 "book_key": "COLO",
-                "book_name": "COLO",
+                "book_name": "Colossians",
                 "sort_number": 52,
                 "chapter_count": 4,
                 "chapters": {
@@ -7507,11 +8196,23 @@
                     "_external_file": "data/gutenberg/chapters/COLO/004.json",
                     "_loaded": false
                   }
+                },
+                "name": "Colossians",
+                "translations": {
+                  "hebrew": "Colossians",
+                  "greek": "Colossians",
+                  "latin": "Colossians",
+                  "english": "Colossians",
+                  "french": "Colossians",
+                  "spanish": "Colossians",
+                  "italian": "Colossians",
+                  "portuguese": "Colossians",
+                  "russian": "Colossians"
                 }
               },
               "I_THES": {
                 "book_key": "I_THES",
-                "book_name": "I_THES",
+                "book_name": "1 Thessalonians",
                 "sort_number": 53,
                 "chapter_count": 5,
                 "chapters": {
@@ -7545,11 +8246,23 @@
                     "_external_file": "data/gutenberg/chapters/I_THES/005.json",
                     "_loaded": false
                   }
+                },
+                "name": "1 Thessalonians",
+                "translations": {
+                  "hebrew": "1 Thessalonians",
+                  "greek": "1 Thessalonians",
+                  "latin": "1 Thessalonians",
+                  "english": "1 Thessalonians",
+                  "french": "1 Thessalonians",
+                  "spanish": "1 Thessalonians",
+                  "italian": "1 Thessalonians",
+                  "portuguese": "1 Thessalonians",
+                  "russian": "1 Thessalonians"
                 }
               },
               "II_THES": {
                 "book_key": "II_THES",
-                "book_name": "II_THES",
+                "book_name": "2 Thessalonians",
                 "sort_number": 54,
                 "chapter_count": 3,
                 "chapters": {
@@ -7571,11 +8284,23 @@
                     "_external_file": "data/gutenberg/chapters/II_THES/003.json",
                     "_loaded": false
                   }
+                },
+                "name": "2 Thessalonians",
+                "translations": {
+                  "hebrew": "2 Thessalonians",
+                  "greek": "2 Thessalonians",
+                  "latin": "2 Thessalonians",
+                  "english": "2 Thessalonians",
+                  "french": "2 Thessalonians",
+                  "spanish": "2 Thessalonians",
+                  "italian": "2 Thessalonians",
+                  "portuguese": "2 Thessalonians",
+                  "russian": "2 Thessalonians"
                 }
               },
               "I_TIMO": {
                 "book_key": "I_TIMO",
-                "book_name": "I_TIMO",
+                "book_name": "1 Timothy",
                 "sort_number": 55,
                 "chapter_count": 6,
                 "chapters": {
@@ -7615,11 +8340,23 @@
                     "_external_file": "data/gutenberg/chapters/I_TIMO/006.json",
                     "_loaded": false
                   }
+                },
+                "name": "1 Timothy",
+                "translations": {
+                  "hebrew": "1 Timothy",
+                  "greek": "1 Timothy",
+                  "latin": "1 Timothy",
+                  "english": "1 Timothy",
+                  "french": "1 Timothy",
+                  "spanish": "1 Timothy",
+                  "italian": "1 Timothy",
+                  "portuguese": "1 Timothy",
+                  "russian": "1 Timothy"
                 }
               },
               "II_TIMO": {
                 "book_key": "II_TIMO",
-                "book_name": "II_TIMO",
+                "book_name": "2 Timothy",
                 "sort_number": 56,
                 "chapter_count": 4,
                 "chapters": {
@@ -7647,11 +8384,23 @@
                     "_external_file": "data/gutenberg/chapters/II_TIMO/004.json",
                     "_loaded": false
                   }
+                },
+                "name": "2 Timothy",
+                "translations": {
+                  "hebrew": "2 Timothy",
+                  "greek": "2 Timothy",
+                  "latin": "2 Timothy",
+                  "english": "2 Timothy",
+                  "french": "2 Timothy",
+                  "spanish": "2 Timothy",
+                  "italian": "2 Timothy",
+                  "portuguese": "2 Timothy",
+                  "russian": "2 Timothy"
                 }
               },
               "TITU": {
                 "book_key": "TITU",
-                "book_name": "TITU",
+                "book_name": "Titus",
                 "sort_number": 57,
                 "chapter_count": 3,
                 "chapters": {
@@ -7673,11 +8422,23 @@
                     "_external_file": "data/gutenberg/chapters/TITU/003.json",
                     "_loaded": false
                   }
+                },
+                "name": "Titus",
+                "translations": {
+                  "hebrew": "Titus",
+                  "greek": "Titus",
+                  "latin": "Titus",
+                  "english": "Titus",
+                  "french": "Titus",
+                  "spanish": "Titus",
+                  "italian": "Titus",
+                  "portuguese": "Titus",
+                  "russian": "Titus"
                 }
               },
               "PHILE": {
                 "book_key": "PHILE",
-                "book_name": "PHILE",
+                "book_name": "Philemon",
                 "sort_number": 58,
                 "chapter_count": 1,
                 "chapters": {
@@ -7687,11 +8448,23 @@
                     "_external_file": "data/gutenberg/chapters/PHILE/001.json",
                     "_loaded": false
                   }
+                },
+                "name": "Philemon",
+                "translations": {
+                  "hebrew": "Philemon",
+                  "greek": "Philemon",
+                  "latin": "Philemon",
+                  "english": "Philemon",
+                  "french": "Philemon",
+                  "spanish": "Philemon",
+                  "italian": "Philemon",
+                  "portuguese": "Philemon",
+                  "russian": "Philemon"
                 }
               },
               "HEBR": {
                 "book_key": "HEBR",
-                "book_name": "HEBR",
+                "book_name": "Hebrews",
                 "sort_number": 59,
                 "chapter_count": 13,
                 "chapters": {
@@ -7773,11 +8546,23 @@
                     "_external_file": "data/gutenberg/chapters/HEBR/013.json",
                     "_loaded": false
                   }
+                },
+                "name": "Hebrews",
+                "translations": {
+                  "hebrew": "Hebrews",
+                  "greek": "Hebrews",
+                  "latin": "Hebrews",
+                  "english": "Hebrews",
+                  "french": "Hebrews",
+                  "spanish": "Hebrews",
+                  "italian": "Hebrews",
+                  "portuguese": "Hebrews",
+                  "russian": "Hebrews"
                 }
               },
               "IACO": {
                 "book_key": "IACO",
-                "book_name": "IACO",
+                "book_name": "James",
                 "sort_number": 60,
                 "chapter_count": 5,
                 "chapters": {
@@ -7811,11 +8596,23 @@
                     "_external_file": "data/gutenberg/chapters/IACO/005.json",
                     "_loaded": false
                   }
+                },
+                "name": "James",
+                "translations": {
+                  "hebrew": "James",
+                  "greek": "James",
+                  "latin": "James",
+                  "english": "James",
+                  "french": "James",
+                  "spanish": "James",
+                  "italian": "James",
+                  "portuguese": "James",
+                  "russian": "James"
                 }
               },
               "I_PETR": {
                 "book_key": "I_PETR",
-                "book_name": "I_PETR",
+                "book_name": "1 Peter",
                 "sort_number": 61,
                 "chapter_count": 5,
                 "chapters": {
@@ -7849,11 +8646,23 @@
                     "_external_file": "data/gutenberg/chapters/I_PETR/005.json",
                     "_loaded": false
                   }
+                },
+                "name": "1 Peter",
+                "translations": {
+                  "hebrew": "1 Peter",
+                  "greek": "1 Peter",
+                  "latin": "1 Peter",
+                  "english": "1 Peter",
+                  "french": "1 Peter",
+                  "spanish": "1 Peter",
+                  "italian": "1 Peter",
+                  "portuguese": "1 Peter",
+                  "russian": "1 Peter"
                 }
               },
               "II_PETR": {
                 "book_key": "II_PETR",
-                "book_name": "II_PETR",
+                "book_name": "2 Peter",
                 "sort_number": 62,
                 "chapter_count": 3,
                 "chapters": {
@@ -7875,11 +8684,23 @@
                     "_external_file": "data/gutenberg/chapters/II_PETR/003.json",
                     "_loaded": false
                   }
+                },
+                "name": "2 Peter",
+                "translations": {
+                  "hebrew": "2 Peter",
+                  "greek": "2 Peter",
+                  "latin": "2 Peter",
+                  "english": "2 Peter",
+                  "french": "2 Peter",
+                  "spanish": "2 Peter",
+                  "italian": "2 Peter",
+                  "portuguese": "2 Peter",
+                  "russian": "2 Peter"
                 }
               },
               "I_IOHA": {
                 "book_key": "I_IOHA",
-                "book_name": "I_IOHA",
+                "book_name": "1 John",
                 "sort_number": 63,
                 "chapter_count": 5,
                 "chapters": {
@@ -7913,11 +8734,23 @@
                     "_external_file": "data/gutenberg/chapters/I_IOHA/005.json",
                     "_loaded": false
                   }
+                },
+                "name": "1 John",
+                "translations": {
+                  "hebrew": "1 John",
+                  "greek": "1 John",
+                  "latin": "1 John",
+                  "english": "1 John",
+                  "french": "1 John",
+                  "spanish": "1 John",
+                  "italian": "1 John",
+                  "portuguese": "1 John",
+                  "russian": "1 John"
                 }
               },
               "II_IOHA": {
                 "book_key": "II_IOHA",
-                "book_name": "II_IOHA",
+                "book_name": "2 John",
                 "sort_number": 64,
                 "chapter_count": 1,
                 "chapters": {
@@ -7927,11 +8760,23 @@
                     "_external_file": "data/gutenberg/chapters/II_IOHA/001.json",
                     "_loaded": false
                   }
+                },
+                "name": "2 John",
+                "translations": {
+                  "hebrew": "2 John",
+                  "greek": "2 John",
+                  "latin": "2 John",
+                  "english": "2 John",
+                  "french": "2 John",
+                  "spanish": "2 John",
+                  "italian": "2 John",
+                  "portuguese": "2 John",
+                  "russian": "2 John"
                 }
               },
               "III_IOHA": {
                 "book_key": "III_IOHA",
-                "book_name": "III_IOHA",
+                "book_name": "3 John",
                 "sort_number": 65,
                 "chapter_count": 1,
                 "chapters": {
@@ -7941,11 +8786,23 @@
                     "_external_file": "data/gutenberg/chapters/III_IOHA/001.json",
                     "_loaded": false
                   }
+                },
+                "name": "3 John",
+                "translations": {
+                  "hebrew": "3 John",
+                  "greek": "3 John",
+                  "latin": "3 John",
+                  "english": "3 John",
+                  "french": "3 John",
+                  "spanish": "3 John",
+                  "italian": "3 John",
+                  "portuguese": "3 John",
+                  "russian": "3 John"
                 }
               },
               "IUDA": {
                 "book_key": "IUDA",
-                "book_name": "IUDA",
+                "book_name": "Jude",
                 "sort_number": 66,
                 "chapter_count": 1,
                 "chapters": {
@@ -7955,10 +8812,33 @@
                     "_external_file": "data/gutenberg/chapters/IUDA/001.json",
                     "_loaded": false
                   }
+                },
+                "name": "Jude",
+                "translations": {
+                  "hebrew": "Jude",
+                  "greek": "Jude",
+                  "latin": "Jude",
+                  "english": "Jude",
+                  "french": "Jude",
+                  "spanish": "Jude",
+                  "italian": "Jude",
+                  "portuguese": "Jude",
+                  "russian": "Jude"
                 }
               }
             },
-            "sort_number": 3
+            "sort_number": 3,
+            "translations": {
+              "hebrew": "Epistles",
+              "greek": "Epistles",
+              "latin": "Epistles",
+              "english": "Epistles",
+              "french": "Epistles",
+              "spanish": "Epistles",
+              "italian": "Epistles",
+              "portuguese": "Epistles",
+              "russian": "Epistles"
+            }
           },
           "Apocalypsis": {
             "name": "Apocalypsis",
@@ -7968,7 +8848,7 @@
             "books": {
               "APOC": {
                 "book_key": "APOC",
-                "book_name": "APOC",
+                "book_name": "Revelation",
                 "sort_number": 67,
                 "chapter_count": 22,
                 "chapters": {
@@ -8104,617 +8984,1388 @@
                     "_external_file": "data/gutenberg/chapters/APOC/022.json",
                     "_loaded": false
                   }
+                },
+                "name": "Revelation",
+                "translations": {
+                  "hebrew": "Revelation",
+                  "greek": "Revelation",
+                  "latin": "Revelation",
+                  "english": "Revelation",
+                  "french": "Revelation",
+                  "spanish": "Revelation",
+                  "italian": "Revelation",
+                  "portuguese": "Revelation",
+                  "russian": "Revelation"
                 }
               }
             },
-            "sort_number": 4
+            "sort_number": 4,
+            "translations": {
+              "hebrew": "Revelation",
+              "greek": "Revelation",
+              "latin": "Revelation",
+              "english": "Revelation",
+              "french": "Revelation",
+              "spanish": "Revelation",
+              "italian": "Revelation",
+              "portuguese": "Revelation",
+              "russian": "Revelation"
+            }
           }
+        },
+        "translations": {
+          "hebrew": "New Testament",
+          "greek": "New Testament",
+          "latin": "New Testament",
+          "english": "New Testament",
+          "french": "New Testament",
+          "spanish": "New Testament",
+          "italian": "New Testament",
+          "portuguese": "New Testament",
+          "russian": "New Testament"
         }
       }
     },
     "books": {
       "GENE": {
         "path": "books/GENE.json",
-        "name": "GENE",
+        "name": "Genesis",
         "testament": "Vetus_Testamentum",
         "section": "Pentateuchus",
         "sort_number": 1,
         "chapters": 50,
-        "verses": 1533
+        "verses": 1533,
+        "translations": {
+          "hebrew": "Genesis",
+          "greek": "Genesis",
+          "latin": "Genesis",
+          "english": "Genesis",
+          "french": "Genesis",
+          "spanish": "Genesis",
+          "italian": "Genesis",
+          "portuguese": "Genesis",
+          "russian": "Genesis"
+        }
       },
       "EXO": {
         "path": "books/EXO.json",
-        "name": "EXO",
+        "name": "Exodus",
         "testament": "Vetus_Testamentum",
         "section": "Pentateuchus",
         "sort_number": 2,
         "chapters": 1,
-        "verses": 1
+        "verses": 1,
+        "translations": {
+          "hebrew": "Exodus",
+          "greek": "Exodus",
+          "latin": "Exodus",
+          "english": "Exodus",
+          "french": "Exodus",
+          "spanish": "Exodus",
+          "italian": "Exodus",
+          "portuguese": "Exodus",
+          "russian": "Exodus"
+        }
       },
       "LEVI": {
         "path": "books/LEVI.json",
-        "name": "LEVI",
+        "name": "Leviticus",
         "testament": "Vetus_Testamentum",
         "section": "Pentateuchus",
         "sort_number": 3,
         "chapters": 1,
-        "verses": 1
+        "verses": 1,
+        "translations": {
+          "hebrew": "Leviticus",
+          "greek": "Leviticus",
+          "latin": "Leviticus",
+          "english": "Leviticus",
+          "french": "Leviticus",
+          "spanish": "Leviticus",
+          "italian": "Leviticus",
+          "portuguese": "Leviticus",
+          "russian": "Leviticus"
+        }
       },
       "NUME": {
         "path": "books/NUME.json",
-        "name": "NUME",
+        "name": "Numbers",
         "testament": "Vetus_Testamentum",
         "section": "Pentateuchus",
         "sort_number": 4,
         "chapters": 1,
-        "verses": 1
+        "verses": 1,
+        "translations": {
+          "hebrew": "Numbers",
+          "greek": "Numbers",
+          "latin": "Numbers",
+          "english": "Numbers",
+          "french": "Numbers",
+          "spanish": "Numbers",
+          "italian": "Numbers",
+          "portuguese": "Numbers",
+          "russian": "Numbers"
+        }
       },
       "DEUT": {
         "path": "books/DEUT.json",
-        "name": "DEUT",
+        "name": "Deuteronomy",
         "testament": "Vetus_Testamentum",
         "section": "Pentateuchus",
         "sort_number": 5,
         "chapters": 1,
-        "verses": 1
+        "verses": 1,
+        "translations": {
+          "hebrew": "Deuteronomy",
+          "greek": "Deuteronomy",
+          "latin": "Deuteronomy",
+          "english": "Deuteronomy",
+          "french": "Deuteronomy",
+          "spanish": "Deuteronomy",
+          "italian": "Deuteronomy",
+          "portuguese": "Deuteronomy",
+          "russian": "Deuteronomy"
+        }
       },
       "IOSU": {
         "path": "books/IOSU.json",
-        "name": "IOSU",
+        "name": "Joshua",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 6,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Joshua",
+          "greek": "Joshua",
+          "latin": "Joshua",
+          "english": "Joshua",
+          "french": "Joshua",
+          "spanish": "Joshua",
+          "italian": "Joshua",
+          "portuguese": "Joshua",
+          "russian": "Joshua"
+        }
       },
       "IUDI": {
         "path": "books/IUDI.json",
-        "name": "IUDI",
+        "name": "Judges",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 7,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Judges",
+          "greek": "Judges",
+          "latin": "Judges",
+          "english": "Judges",
+          "french": "Judges",
+          "spanish": "Judges",
+          "italian": "Judges",
+          "portuguese": "Judges",
+          "russian": "Judges"
+        }
       },
       "RUTH": {
         "path": "books/RUTH.json",
-        "name": "RUTH",
+        "name": "Ruth",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 8,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Ruth",
+          "greek": "Ruth",
+          "latin": "Ruth",
+          "english": "Ruth",
+          "french": "Ruth",
+          "spanish": "Ruth",
+          "italian": "Ruth",
+          "portuguese": "Ruth",
+          "russian": "Ruth"
+        }
       },
       "I_SAM": {
         "path": "books/I_SAM.json",
-        "name": "I_SAM",
+        "name": "1 Samuel",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 9,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "1 Samuel",
+          "greek": "1 Samuel",
+          "latin": "1 Samuel",
+          "english": "1 Samuel",
+          "french": "1 Samuel",
+          "spanish": "1 Samuel",
+          "italian": "1 Samuel",
+          "portuguese": "1 Samuel",
+          "russian": "1 Samuel"
+        }
       },
       "II_SAM": {
         "path": "books/II_SAM.json",
-        "name": "II_SAM",
+        "name": "2 Samuel",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 10,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "2 Samuel",
+          "greek": "2 Samuel",
+          "latin": "2 Samuel",
+          "english": "2 Samuel",
+          "french": "2 Samuel",
+          "spanish": "2 Samuel",
+          "italian": "2 Samuel",
+          "portuguese": "2 Samuel",
+          "russian": "2 Samuel"
+        }
       },
       "III_REG": {
         "path": "books/III_REG.json",
-        "name": "III_REG",
+        "name": "1 Kings",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 11,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "1 Kings",
+          "greek": "1 Kings",
+          "latin": "1 Kings",
+          "english": "1 Kings",
+          "french": "1 Kings",
+          "spanish": "1 Kings",
+          "italian": "1 Kings",
+          "portuguese": "1 Kings",
+          "russian": "1 Kings"
+        }
       },
       "IV_REG": {
         "path": "books/IV_REG.json",
-        "name": "IV_REG",
+        "name": "2 Kings",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 12,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "2 Kings",
+          "greek": "2 Kings",
+          "latin": "2 Kings",
+          "english": "2 Kings",
+          "french": "2 Kings",
+          "spanish": "2 Kings",
+          "italian": "2 Kings",
+          "portuguese": "2 Kings",
+          "russian": "2 Kings"
+        }
       },
       "TOBI": {
         "path": "books/TOBI.json",
-        "name": "TOBI",
+        "name": "Tobit",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 13,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Tobit",
+          "greek": "Tobit",
+          "latin": "Tobit",
+          "english": "Tobit",
+          "french": "Tobit",
+          "spanish": "Tobit",
+          "italian": "Tobit",
+          "portuguese": "Tobit",
+          "russian": "Tobit"
+        }
       },
       "IUDITH": {
         "path": "books/IUDITH.json",
-        "name": "IUDITH",
+        "name": "Judith",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 14,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Judith",
+          "greek": "Judith",
+          "latin": "Judith",
+          "english": "Judith",
+          "french": "Judith",
+          "spanish": "Judith",
+          "italian": "Judith",
+          "portuguese": "Judith",
+          "russian": "Judith"
+        }
       },
       "ESTH": {
         "path": "books/ESTH.json",
-        "name": "ESTH",
+        "name": "Esther",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 15,
         "chapters": 16,
-        "verses": 17
+        "verses": 17,
+        "translations": {
+          "hebrew": "Esther",
+          "greek": "Esther",
+          "latin": "Esther",
+          "english": "Esther",
+          "french": "Esther",
+          "spanish": "Esther",
+          "italian": "Esther",
+          "portuguese": "Esther",
+          "russian": "Esther"
+        }
       },
       "IOB": {
         "path": "books/IOB.json",
-        "name": "IOB",
+        "name": "Job",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 16,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Job",
+          "greek": "Job",
+          "latin": "Job",
+          "english": "Job",
+          "french": "Job",
+          "spanish": "Job",
+          "italian": "Job",
+          "portuguese": "Job",
+          "russian": "Job"
+        }
       },
       "PSAL": {
         "path": "books/PSAL.json",
-        "name": "PSAL",
+        "name": "Psalms",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 17,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Psalms",
+          "greek": "Psalms",
+          "latin": "Psalms",
+          "english": "Psalms",
+          "french": "Psalms",
+          "spanish": "Psalms",
+          "italian": "Psalms",
+          "portuguese": "Psalms",
+          "russian": "Psalms"
+        }
       },
       "PROV": {
         "path": "books/PROV.json",
-        "name": "PROV",
+        "name": "Proverbs",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 18,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Proverbs",
+          "greek": "Proverbs",
+          "latin": "Proverbs",
+          "english": "Proverbs",
+          "french": "Proverbs",
+          "spanish": "Proverbs",
+          "italian": "Proverbs",
+          "portuguese": "Proverbs",
+          "russian": "Proverbs"
+        }
       },
       "ECCLE": {
         "path": "books/ECCLE.json",
-        "name": "ECCLE",
+        "name": "Ecclesiastes",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 19,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Ecclesiastes",
+          "greek": "Ecclesiastes",
+          "latin": "Ecclesiastes",
+          "english": "Ecclesiastes",
+          "french": "Ecclesiastes",
+          "spanish": "Ecclesiastes",
+          "italian": "Ecclesiastes",
+          "portuguese": "Ecclesiastes",
+          "russian": "Ecclesiastes"
+        }
       },
       "CANT": {
         "path": "books/CANT.json",
-        "name": "CANT",
+        "name": "Song of Songs",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 20,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Song of Songs",
+          "greek": "Song of Songs",
+          "latin": "Song of Songs",
+          "english": "Song of Songs",
+          "french": "Song of Songs",
+          "spanish": "Song of Songs",
+          "italian": "Song of Songs",
+          "portuguese": "Song of Songs",
+          "russian": "Song of Songs"
+        }
       },
       "SAPI": {
         "path": "books/SAPI.json",
-        "name": "SAPI",
+        "name": "Wisdom",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 21,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Wisdom",
+          "greek": "Wisdom",
+          "latin": "Wisdom",
+          "english": "Wisdom",
+          "french": "Wisdom",
+          "spanish": "Wisdom",
+          "italian": "Wisdom",
+          "portuguese": "Wisdom",
+          "russian": "Wisdom"
+        }
       },
       "ECCLU": {
         "path": "books/ECCLU.json",
-        "name": "ECCLU",
+        "name": "Sirach",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 22,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Sirach",
+          "greek": "Sirach",
+          "latin": "Sirach",
+          "english": "Sirach",
+          "french": "Sirach",
+          "spanish": "Sirach",
+          "italian": "Sirach",
+          "portuguese": "Sirach",
+          "russian": "Sirach"
+        }
       },
       "ISA": {
         "path": "books/ISA.json",
-        "name": "ISA",
+        "name": "Isaiah",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 23,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Isaiah",
+          "greek": "Isaiah",
+          "latin": "Isaiah",
+          "english": "Isaiah",
+          "french": "Isaiah",
+          "spanish": "Isaiah",
+          "italian": "Isaiah",
+          "portuguese": "Isaiah",
+          "russian": "Isaiah"
+        }
       },
       "IERE": {
         "path": "books/IERE.json",
-        "name": "IERE",
+        "name": "Jeremiah",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 24,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Jeremiah",
+          "greek": "Jeremiah",
+          "latin": "Jeremiah",
+          "english": "Jeremiah",
+          "french": "Jeremiah",
+          "spanish": "Jeremiah",
+          "italian": "Jeremiah",
+          "portuguese": "Jeremiah",
+          "russian": "Jeremiah"
+        }
       },
       "LAME": {
         "path": "books/LAME.json",
-        "name": "LAME",
+        "name": "Lamentations",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 25,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Lamentations",
+          "greek": "Lamentations",
+          "latin": "Lamentations",
+          "english": "Lamentations",
+          "french": "Lamentations",
+          "spanish": "Lamentations",
+          "italian": "Lamentations",
+          "portuguese": "Lamentations",
+          "russian": "Lamentations"
+        }
       },
       "BARU": {
         "path": "books/BARU.json",
-        "name": "BARU",
+        "name": "Baruch",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 26,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Baruch",
+          "greek": "Baruch",
+          "latin": "Baruch",
+          "english": "Baruch",
+          "french": "Baruch",
+          "spanish": "Baruch",
+          "italian": "Baruch",
+          "portuguese": "Baruch",
+          "russian": "Baruch"
+        }
       },
       "EZE": {
         "path": "books/EZE.json",
-        "name": "EZE",
+        "name": "Ezekiel",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 27,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Ezekiel",
+          "greek": "Ezekiel",
+          "latin": "Ezekiel",
+          "english": "Ezekiel",
+          "french": "Ezekiel",
+          "spanish": "Ezekiel",
+          "italian": "Ezekiel",
+          "portuguese": "Ezekiel",
+          "russian": "Ezekiel"
+        }
       },
       "DAN": {
         "path": "books/DAN.json",
-        "name": "DAN",
+        "name": "Daniel",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 28,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Daniel",
+          "greek": "Daniel",
+          "latin": "Daniel",
+          "english": "Daniel",
+          "french": "Daniel",
+          "spanish": "Daniel",
+          "italian": "Daniel",
+          "portuguese": "Daniel",
+          "russian": "Daniel"
+        }
       },
       "OSE": {
         "path": "books/OSE.json",
-        "name": "OSE",
+        "name": "Hosea",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 29,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Hosea",
+          "greek": "Hosea",
+          "latin": "Hosea",
+          "english": "Hosea",
+          "french": "Hosea",
+          "spanish": "Hosea",
+          "italian": "Hosea",
+          "portuguese": "Hosea",
+          "russian": "Hosea"
+        }
       },
       "IOEL": {
         "path": "books/IOEL.json",
-        "name": "IOEL",
+        "name": "Joel",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 30,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Joel",
+          "greek": "Joel",
+          "latin": "Joel",
+          "english": "Joel",
+          "french": "Joel",
+          "spanish": "Joel",
+          "italian": "Joel",
+          "portuguese": "Joel",
+          "russian": "Joel"
+        }
       },
       "AMO": {
         "path": "books/AMO.json",
-        "name": "AMO",
+        "name": "Amos",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 31,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Amos",
+          "greek": "Amos",
+          "latin": "Amos",
+          "english": "Amos",
+          "french": "Amos",
+          "spanish": "Amos",
+          "italian": "Amos",
+          "portuguese": "Amos",
+          "russian": "Amos"
+        }
       },
       "ABDI": {
         "path": "books/ABDI.json",
-        "name": "ABDI",
+        "name": "Obadiah",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 32,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Obadiah",
+          "greek": "Obadiah",
+          "latin": "Obadiah",
+          "english": "Obadiah",
+          "french": "Obadiah",
+          "spanish": "Obadiah",
+          "italian": "Obadiah",
+          "portuguese": "Obadiah",
+          "russian": "Obadiah"
+        }
       },
       "IONA": {
         "path": "books/IONA.json",
-        "name": "IONA",
+        "name": "Jonah",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 33,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Jonah",
+          "greek": "Jonah",
+          "latin": "Jonah",
+          "english": "Jonah",
+          "french": "Jonah",
+          "spanish": "Jonah",
+          "italian": "Jonah",
+          "portuguese": "Jonah",
+          "russian": "Jonah"
+        }
       },
       "MICH": {
         "path": "books/MICH.json",
-        "name": "MICH",
+        "name": "Micah",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 34,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Micah",
+          "greek": "Micah",
+          "latin": "Micah",
+          "english": "Micah",
+          "french": "Micah",
+          "spanish": "Micah",
+          "italian": "Micah",
+          "portuguese": "Micah",
+          "russian": "Micah"
+        }
       },
       "NAHU": {
         "path": "books/NAHU.json",
-        "name": "NAHU",
+        "name": "Nahum",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 35,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Nahum",
+          "greek": "Nahum",
+          "latin": "Nahum",
+          "english": "Nahum",
+          "french": "Nahum",
+          "spanish": "Nahum",
+          "italian": "Nahum",
+          "portuguese": "Nahum",
+          "russian": "Nahum"
+        }
       },
       "HAB": {
         "path": "books/HAB.json",
-        "name": "HAB",
+        "name": "Habakkuk",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 36,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Habakkuk",
+          "greek": "Habakkuk",
+          "latin": "Habakkuk",
+          "english": "Habakkuk",
+          "french": "Habakkuk",
+          "spanish": "Habakkuk",
+          "italian": "Habakkuk",
+          "portuguese": "Habakkuk",
+          "russian": "Habakkuk"
+        }
       },
       "SOPH": {
         "path": "books/SOPH.json",
-        "name": "SOPH",
+        "name": "Zephaniah",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 37,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Zephaniah",
+          "greek": "Zephaniah",
+          "latin": "Zephaniah",
+          "english": "Zephaniah",
+          "french": "Zephaniah",
+          "spanish": "Zephaniah",
+          "italian": "Zephaniah",
+          "portuguese": "Zephaniah",
+          "russian": "Zephaniah"
+        }
       },
       "AGGE": {
         "path": "books/AGGE.json",
-        "name": "AGGE",
+        "name": "Haggai",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 38,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Haggai",
+          "greek": "Haggai",
+          "latin": "Haggai",
+          "english": "Haggai",
+          "french": "Haggai",
+          "spanish": "Haggai",
+          "italian": "Haggai",
+          "portuguese": "Haggai",
+          "russian": "Haggai"
+        }
       },
       "ZACH": {
         "path": "books/ZACH.json",
-        "name": "ZACH",
+        "name": "Zechariah",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 39,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Zechariah",
+          "greek": "Zechariah",
+          "latin": "Zechariah",
+          "english": "Zechariah",
+          "french": "Zechariah",
+          "spanish": "Zechariah",
+          "italian": "Zechariah",
+          "portuguese": "Zechariah",
+          "russian": "Zechariah"
+        }
       },
       "MALA": {
         "path": "books/MALA.json",
-        "name": "MALA",
+        "name": "Malachi",
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 40,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Malachi",
+          "greek": "Malachi",
+          "latin": "Malachi",
+          "english": "Malachi",
+          "french": "Malachi",
+          "spanish": "Malachi",
+          "italian": "Malachi",
+          "portuguese": "Malachi",
+          "russian": "Malachi"
+        }
       },
       "MATHE": {
         "path": "books/MATHE.json",
-        "name": "MATHE",
+        "name": "Matthew",
         "testament": "Novum_Testamentum",
         "section": "Evangelia",
         "sort_number": 41,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Matthew",
+          "greek": "Matthew",
+          "latin": "Matthew",
+          "english": "Matthew",
+          "french": "Matthew",
+          "spanish": "Matthew",
+          "italian": "Matthew",
+          "portuguese": "Matthew",
+          "russian": "Matthew"
+        }
       },
       "MARC": {
         "path": "books/MARC.json",
-        "name": "MARC",
+        "name": "Mark",
         "testament": "Novum_Testamentum",
         "section": "Evangelia",
         "sort_number": 42,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Mark",
+          "greek": "Mark",
+          "latin": "Mark",
+          "english": "Mark",
+          "french": "Mark",
+          "spanish": "Mark",
+          "italian": "Mark",
+          "portuguese": "Mark",
+          "russian": "Mark"
+        }
       },
       "LUCA": {
         "path": "books/LUCA.json",
-        "name": "LUCA",
+        "name": "Luke",
         "testament": "Novum_Testamentum",
         "section": "Evangelia",
         "sort_number": 43,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Luke",
+          "greek": "Luke",
+          "latin": "Luke",
+          "english": "Luke",
+          "french": "Luke",
+          "spanish": "Luke",
+          "italian": "Luke",
+          "portuguese": "Luke",
+          "russian": "Luke"
+        }
       },
       "IOHA": {
         "path": "books/IOHA.json",
-        "name": "IOHA",
+        "name": "John",
         "testament": "Novum_Testamentum",
         "section": "Evangelia",
         "sort_number": 44,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "John",
+          "greek": "John",
+          "latin": "John",
+          "english": "John",
+          "french": "John",
+          "spanish": "John",
+          "italian": "John",
+          "portuguese": "John",
+          "russian": "John"
+        }
       },
       "ACTU": {
         "path": "books/ACTU.json",
-        "name": "ACTU",
+        "name": "Acts",
         "testament": "Novum_Testamentum",
         "section": "Actus_Apostolorum",
         "sort_number": 45,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Acts",
+          "greek": "Acts",
+          "latin": "Acts",
+          "english": "Acts",
+          "french": "Acts",
+          "spanish": "Acts",
+          "italian": "Acts",
+          "portuguese": "Acts",
+          "russian": "Acts"
+        }
       },
       "ROM": {
         "path": "books/ROM.json",
-        "name": "ROM",
+        "name": "Romans",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 46,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Romans",
+          "greek": "Romans",
+          "latin": "Romans",
+          "english": "Romans",
+          "french": "Romans",
+          "spanish": "Romans",
+          "italian": "Romans",
+          "portuguese": "Romans",
+          "russian": "Romans"
+        }
       },
       "I_COR": {
         "path": "books/I_COR.json",
-        "name": "I_COR",
+        "name": "1 Corinthians",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 47,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "1 Corinthians",
+          "greek": "1 Corinthians",
+          "latin": "1 Corinthians",
+          "english": "1 Corinthians",
+          "french": "1 Corinthians",
+          "spanish": "1 Corinthians",
+          "italian": "1 Corinthians",
+          "portuguese": "1 Corinthians",
+          "russian": "1 Corinthians"
+        }
       },
       "II_COR": {
         "path": "books/II_COR.json",
-        "name": "II_COR",
+        "name": "2 Corinthians",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 48,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "2 Corinthians",
+          "greek": "2 Corinthians",
+          "latin": "2 Corinthians",
+          "english": "2 Corinthians",
+          "french": "2 Corinthians",
+          "spanish": "2 Corinthians",
+          "italian": "2 Corinthians",
+          "portuguese": "2 Corinthians",
+          "russian": "2 Corinthians"
+        }
       },
       "GALA": {
         "path": "books/GALA.json",
-        "name": "GALA",
+        "name": "Galatians",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 49,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Galatians",
+          "greek": "Galatians",
+          "latin": "Galatians",
+          "english": "Galatians",
+          "french": "Galatians",
+          "spanish": "Galatians",
+          "italian": "Galatians",
+          "portuguese": "Galatians",
+          "russian": "Galatians"
+        }
       },
       "EPHE": {
         "path": "books/EPHE.json",
-        "name": "EPHE",
+        "name": "Ephesians",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 50,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Ephesians",
+          "greek": "Ephesians",
+          "latin": "Ephesians",
+          "english": "Ephesians",
+          "french": "Ephesians",
+          "spanish": "Ephesians",
+          "italian": "Ephesians",
+          "portuguese": "Ephesians",
+          "russian": "Ephesians"
+        }
       },
       "PHILI": {
         "path": "books/PHILI.json",
-        "name": "PHILI",
+        "name": "Philippians",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 51,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Philippians",
+          "greek": "Philippians",
+          "latin": "Philippians",
+          "english": "Philippians",
+          "french": "Philippians",
+          "spanish": "Philippians",
+          "italian": "Philippians",
+          "portuguese": "Philippians",
+          "russian": "Philippians"
+        }
       },
       "COLO": {
         "path": "books/COLO.json",
-        "name": "COLO",
+        "name": "Colossians",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 52,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Colossians",
+          "greek": "Colossians",
+          "latin": "Colossians",
+          "english": "Colossians",
+          "french": "Colossians",
+          "spanish": "Colossians",
+          "italian": "Colossians",
+          "portuguese": "Colossians",
+          "russian": "Colossians"
+        }
       },
       "I_THES": {
         "path": "books/I_THES.json",
-        "name": "I_THES",
+        "name": "1 Thessalonians",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 53,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "1 Thessalonians",
+          "greek": "1 Thessalonians",
+          "latin": "1 Thessalonians",
+          "english": "1 Thessalonians",
+          "french": "1 Thessalonians",
+          "spanish": "1 Thessalonians",
+          "italian": "1 Thessalonians",
+          "portuguese": "1 Thessalonians",
+          "russian": "1 Thessalonians"
+        }
       },
       "II_THES": {
         "path": "books/II_THES.json",
-        "name": "II_THES",
+        "name": "2 Thessalonians",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 54,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "2 Thessalonians",
+          "greek": "2 Thessalonians",
+          "latin": "2 Thessalonians",
+          "english": "2 Thessalonians",
+          "french": "2 Thessalonians",
+          "spanish": "2 Thessalonians",
+          "italian": "2 Thessalonians",
+          "portuguese": "2 Thessalonians",
+          "russian": "2 Thessalonians"
+        }
       },
       "I_TIMO": {
         "path": "books/I_TIMO.json",
-        "name": "I_TIMO",
+        "name": "1 Timothy",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 55,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "1 Timothy",
+          "greek": "1 Timothy",
+          "latin": "1 Timothy",
+          "english": "1 Timothy",
+          "french": "1 Timothy",
+          "spanish": "1 Timothy",
+          "italian": "1 Timothy",
+          "portuguese": "1 Timothy",
+          "russian": "1 Timothy"
+        }
       },
       "II_TIMO": {
         "path": "books/II_TIMO.json",
-        "name": "II_TIMO",
+        "name": "2 Timothy",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 56,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "2 Timothy",
+          "greek": "2 Timothy",
+          "latin": "2 Timothy",
+          "english": "2 Timothy",
+          "french": "2 Timothy",
+          "spanish": "2 Timothy",
+          "italian": "2 Timothy",
+          "portuguese": "2 Timothy",
+          "russian": "2 Timothy"
+        }
       },
       "TITU": {
         "path": "books/TITU.json",
-        "name": "TITU",
+        "name": "Titus",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 57,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Titus",
+          "greek": "Titus",
+          "latin": "Titus",
+          "english": "Titus",
+          "french": "Titus",
+          "spanish": "Titus",
+          "italian": "Titus",
+          "portuguese": "Titus",
+          "russian": "Titus"
+        }
       },
       "PHILE": {
         "path": "books/PHILE.json",
-        "name": "PHILE",
+        "name": "Philemon",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 58,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Philemon",
+          "greek": "Philemon",
+          "latin": "Philemon",
+          "english": "Philemon",
+          "french": "Philemon",
+          "spanish": "Philemon",
+          "italian": "Philemon",
+          "portuguese": "Philemon",
+          "russian": "Philemon"
+        }
       },
       "HEBR": {
         "path": "books/HEBR.json",
-        "name": "HEBR",
+        "name": "Hebrews",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 59,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Hebrews",
+          "greek": "Hebrews",
+          "latin": "Hebrews",
+          "english": "Hebrews",
+          "french": "Hebrews",
+          "spanish": "Hebrews",
+          "italian": "Hebrews",
+          "portuguese": "Hebrews",
+          "russian": "Hebrews"
+        }
       },
       "IACO": {
         "path": "books/IACO.json",
-        "name": "IACO",
+        "name": "James",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 60,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "James",
+          "greek": "James",
+          "latin": "James",
+          "english": "James",
+          "french": "James",
+          "spanish": "James",
+          "italian": "James",
+          "portuguese": "James",
+          "russian": "James"
+        }
       },
       "I_PETR": {
         "path": "books/I_PETR.json",
-        "name": "I_PETR",
+        "name": "1 Peter",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 61,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "1 Peter",
+          "greek": "1 Peter",
+          "latin": "1 Peter",
+          "english": "1 Peter",
+          "french": "1 Peter",
+          "spanish": "1 Peter",
+          "italian": "1 Peter",
+          "portuguese": "1 Peter",
+          "russian": "1 Peter"
+        }
       },
       "II_PETR": {
         "path": "books/II_PETR.json",
-        "name": "II_PETR",
+        "name": "2 Peter",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 62,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "2 Peter",
+          "greek": "2 Peter",
+          "latin": "2 Peter",
+          "english": "2 Peter",
+          "french": "2 Peter",
+          "spanish": "2 Peter",
+          "italian": "2 Peter",
+          "portuguese": "2 Peter",
+          "russian": "2 Peter"
+        }
       },
       "I_IOHA": {
         "path": "books/I_IOHA.json",
-        "name": "I_IOHA",
+        "name": "1 John",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 63,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "1 John",
+          "greek": "1 John",
+          "latin": "1 John",
+          "english": "1 John",
+          "french": "1 John",
+          "spanish": "1 John",
+          "italian": "1 John",
+          "portuguese": "1 John",
+          "russian": "1 John"
+        }
       },
       "II_IOHA": {
         "path": "books/II_IOHA.json",
-        "name": "II_IOHA",
+        "name": "2 John",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 64,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "2 John",
+          "greek": "2 John",
+          "latin": "2 John",
+          "english": "2 John",
+          "french": "2 John",
+          "spanish": "2 John",
+          "italian": "2 John",
+          "portuguese": "2 John",
+          "russian": "2 John"
+        }
       },
       "III_IOHA": {
         "path": "books/III_IOHA.json",
-        "name": "III_IOHA",
+        "name": "3 John",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 65,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "3 John",
+          "greek": "3 John",
+          "latin": "3 John",
+          "english": "3 John",
+          "french": "3 John",
+          "spanish": "3 John",
+          "italian": "3 John",
+          "portuguese": "3 John",
+          "russian": "3 John"
+        }
       },
       "IUDA": {
         "path": "books/IUDA.json",
-        "name": "IUDA",
+        "name": "Jude",
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 66,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Jude",
+          "greek": "Jude",
+          "latin": "Jude",
+          "english": "Jude",
+          "french": "Jude",
+          "spanish": "Jude",
+          "italian": "Jude",
+          "portuguese": "Jude",
+          "russian": "Jude"
+        }
       },
       "APOC": {
         "path": "books/APOC.json",
-        "name": "APOC",
+        "name": "Revelation",
         "testament": "Novum_Testamentum",
         "section": "Apocalypsis",
         "sort_number": 67,
         "chapters": 0,
-        "verses": 0
+        "verses": 0,
+        "translations": {
+          "hebrew": "Revelation",
+          "greek": "Revelation",
+          "latin": "Revelation",
+          "english": "Revelation",
+          "french": "Revelation",
+          "spanish": "Revelation",
+          "italian": "Revelation",
+          "portuguese": "Revelation",
+          "russian": "Revelation"
+        }
       }
     }
   }

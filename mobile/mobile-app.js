@@ -9,6 +9,7 @@ import { ViewportManager } from './mobile-viewport.js';
 import { TouchRotationHandler } from './mobile-touch.js';
 import { DataManager } from './mobile-data.js';
 import { MobileRenderer } from './mobile-renderer.js';
+import { NavigationState } from './navigation-state.js';
 
 /**
  * Main application class that coordinates all components
@@ -17,7 +18,8 @@ class MobileCatalogApp {
     constructor() {
         this.viewport = new ViewportManager();
         this.dataManager = new DataManager();
-        this.renderer = new MobileRenderer(this.viewport, this.dataManager);
+        this.navigationState = new NavigationState();
+        this.renderer = new MobileRenderer(this.viewport, this.dataManager, this.navigationState);
         this.renderer.setController(this);
         this.touchHandler = null;
 

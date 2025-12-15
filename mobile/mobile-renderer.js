@@ -15,14 +15,16 @@ import { MobileAnimation } from './mobile-animation.js';
 import { MobileChildPyramid } from './mobile-childpyramid.js';
 import { MobileDetailSector } from './mobile-detailsector.js';
 import { CoordinateSystem, HubNucCoordinate } from './mobile-coordinates.js';
+import { showSortNumberErrorOverlay } from './validation-overlay.js';
 
 /**
  * Efficient renderer that minimizes DOM manipulation
  */
 class MobileRenderer {
-    constructor(viewportManager, dataManager) {
+    constructor(viewportManager, dataManager, navigationState) {
         this.viewport = viewportManager;
         this.dataManager = dataManager;
+        this.navigationState = navigationState;
         this.controller = null; // injected controller (e.g., MobileCatalogApp)
         
         // Initialize Animation module
@@ -47,7 +49,7 @@ class MobileRenderer {
         
         // State
         this.selectedTopLevel = null;
-        this.selectedFocusItem = null;
+        this.setSelectedFocusItem(null);
         this.currentFocusItems = [];
         this.activePath = [];
         this.activeType = null;
@@ -74,6 +76,27 @@ class MobileRenderer {
 
     setController(controller) {
         this.controller = controller;
+    }
+
+    setSelectedFocusItem(item) {
+        this.selectedFocusItem = item || null;
+        if (this.navigationState) {
+            this.navigationState.setSelectedFocusItem(this.selectedFocusItem);
+        }
+    }
+
+    setActivePath(path) {
+        this.activePath = Array.isArray(path) ? path : [];
+        if (this.navigationState) {
+            this.navigationState.setActivePath(this.activePath);
+        }
+    }
+
+    setTranslation(code) {
+        this.currentTranslation = code || null;
+        if (this.navigationState) {
+            this.navigationState.setTranslation(this.currentTranslation);
+        }
     }
 
     getTouchHandler() {
@@ -371,7 +394,7 @@ class MobileRenderer {
         }
         
         this.translationsConfig = translations;
-        this.currentTranslation = translations.default || translations.available[0];
+        this.setTranslation(translations.default || translations.available[0]);
         console.log(`🌐 Current translation set to: ${this.currentTranslation}`);
         
         const buttonGroup = document.getElementById('translationButtonGroup');
@@ -442,7 +465,7 @@ class MobileRenderer {
         const currentIndex = available.indexOf(this.currentTranslation);
         const nextIndex = (currentIndex + 1) % available.length;
         
-        this.currentTranslation = available[nextIndex];
+        this.setTranslation(available[nextIndex]);
         
         // Update button label
         const label = this.translationsConfig.labels?.[this.currentTranslation] || this.currentTranslation.toUpperCase();
@@ -621,7 +644,7 @@ class MobileRenderer {
     
     buildActivePath(focusItem) {
         // Pure universal: Use metadata __path property
-        this.activePath = focusItem.__path || [];
+        this.setActivePath(focusItem.__path || []);
         this.focusRingDebug('Built active path:', this.activePath);
     }
     
@@ -740,7 +763,7 @@ class MobileRenderer {
 
         // Set the active type to the current focus item's level
         this.activeType = currentLevel;
-        this.selectedFocusItem = focusItem;
+        this.setSelectedFocusItem(focusItem);
         
         // Update Parent Button for non-leaf items
         const itemLevel = this.getItemHierarchyLevel(focusItem);
@@ -783,99 +806,14 @@ class MobileRenderer {
         });
 
         if (itemsWithoutSort.length === 0) return false;
+        const shown = showSortNumberErrorOverlay(itemsWithoutSort, context);
 
-        const errorDiv = document.createElement('div');
-        errorDiv.className = 'sort-number-error';
-        errorDiv.style.cssText = `
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: #ff3333;
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            font-size: 20px;
-            font-weight: bold;
-            z-index: 10000;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-            max-width: 80%;
-        `;
-        
-        // Extract parent context from first item's path
-        const firstItem = itemsWithoutSort[0];
-        const parentNames = [];
-        if (firstItem.__path && firstItem.__path.length > 0) {
-            // Get parent names from path (exclude the item itself)
-            firstItem.__path.slice(0, -1).forEach(segment => {
-                if (typeof segment === 'string') {
-                    parentNames.push(segment);
-                } else if (segment && (segment.name || segment.key)) {
-                    parentNames.push(segment.name || segment.key);
-                }
-            });
-        }
-        
-        // Build DOM elements with textContent to avoid HTML injection from catalog data
-        const titleEl = document.createElement('div');
-        titleEl.style.fontSize = '24px';
-        titleEl.style.marginBottom = '15px';
-        titleEl.textContent = '⚠️ ERROR - Sort Number Missing';
-
-        const contextEl = document.createElement('div');
-        contextEl.style.fontSize = '16px';
-        contextEl.style.marginBottom = '10px';
-        contextEl.textContent = context;
-
-        const parentInfoEl = document.createElement('div');
-        parentInfoEl.style.fontSize = '14px';
-        parentInfoEl.style.marginTop = '10px';
-        parentInfoEl.style.opacity = '0.9';
-        if (parentNames.length > 0) {
-            parentInfoEl.textContent = `Parent: ${parentNames.join(' → ')}`;
-        }
-
-        const listEl = document.createElement('ul');
-        listEl.style.fontSize = '14px';
-        listEl.style.textAlign = 'left';
-        listEl.style.marginTop = '15px';
-        listEl.style.paddingLeft = '20px';
-        itemsWithoutSort.forEach(item => {
-            const li = document.createElement('li');
-            li.textContent = `${item.name || item.key} (level: ${item.__level || 'unknown'})`;
-            listEl.appendChild(li);
-        });
-
-        const footerEl = document.createElement('div');
-        footerEl.style.fontSize = '12px';
-        footerEl.style.marginTop = '20px';
-        footerEl.style.opacity = '0.9';
-        footerEl.textContent = 'Items cannot be displayed without sort_number';
-
-        errorDiv.appendChild(titleEl);
-        errorDiv.appendChild(contextEl);
-        if (parentNames.length > 0) {
-            errorDiv.appendChild(parentInfoEl);
-        }
-        errorDiv.appendChild(listEl);
-        errorDiv.appendChild(footerEl);
-        
-        document.body.appendChild(errorDiv);
-        
-        console.log('🚨 ERROR DIV CREATED:', {
-            className: errorDiv.className,
-            inDOM: document.body.contains(errorDiv),
-            allErrorDivs: document.querySelectorAll('.sort-number-error').length,
-            timestamp: performance.now().toFixed(2)
-        });
-        
         Logger.error(`❌ CRITICAL: ${itemsWithoutSort.length} items missing sort_number in ${context}`);
         itemsWithoutSort.forEach(item => {
             Logger.error(`   Missing sort_number: ${item.name || item.key} (${item.__level})`);
         });
         
-        return true;
+        return shown;
     }
 
     /**
@@ -1191,7 +1129,7 @@ class MobileRenderer {
         this.clearFanLines();
 
         // Update current selection state
-        this.selectedFocusItem = { ...focusItem };
+        this.setSelectedFocusItem({ ...focusItem });
 
         // Set the active type to the current focus item's level
         const itemLevel = this.getItemHierarchyLevel(focusItem);
@@ -1641,7 +1579,7 @@ class MobileRenderer {
             // Build appropriate active path based on item type
             this.buildActivePath(selectedFocusItem);
             
-            this.selectedFocusItem = selectedFocusItem;
+            this.setSelectedFocusItem(selectedFocusItem);
             const parentLevel = this.getPreviousHierarchyLevel(this.getItemHierarchyLevel(selectedFocusItem));
             const parentName = parentLevel ? this.getParentNameForLevel(selectedFocusItem, parentLevel) : null;
             this.updateParentButton(parentName, true); // Skip animation during rotation
@@ -1691,7 +1629,7 @@ class MobileRenderer {
             this.elements.childRingGroup.classList.add('hidden');
             this.elements.detailItemsGroup.classList.add('hidden');
             this.clearFanLines();
-            this.selectedFocusItem = null;
+            this.setSelectedFocusItem(null);
             this.hideParentButton();
         }
     }
@@ -2186,10 +2124,10 @@ class MobileRenderer {
     
     reset() {
         this.selectedTopLevel = null;
-        this.selectedFocusItem = null;
+        this.setSelectedFocusItem(null);
         this.hideParentButton();
         this.currentFocusItems = [];
-        this.activePath = [];
+        this.setActivePath([]);
         this.activeType = null;
         this.focusElements.clear();
         this.positionCache.clear();
@@ -2698,7 +2636,7 @@ class MobileRenderer {
         // 1. Update the navigation state - this item becomes the new focus
         this.buildActivePath(item);
         this.activeType = itemLevel;
-        this.selectedFocusItem = { ...item };
+        this.setSelectedFocusItem({ ...item });
 
         // 2. Get all siblings at the same level
         // COUSIN NAVIGATION: Get all items at this level across all parents (with gaps)
@@ -2816,7 +2754,7 @@ class MobileRenderer {
 
         // CRITICAL: Set selectedFocusItem BEFORE conditional check
         // This ensures showChildContentForFocusItem has the correct context
-        this.selectedFocusItem = item;
+        this.setSelectedFocusItem(item);
         this.activeType = itemLevel;
         
         // Animate text migration from Magnifier (old focus) to Parent Button (new parent)
