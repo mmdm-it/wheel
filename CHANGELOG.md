@@ -10,6 +10,20 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Phase 3: General code cleanup and optimization
 - Child Pyramid design completion (blocking 0.9.0 release)
 
+## [0.8.162] - 2025-12-15
+
+### Fixed
+- **Ford 4-Cylinder Families**: Added missing sort_numbers to 7 families
+  - Model A: 1 (1927)
+  - Kent: 2 (1965)
+  - Lima: 3 (1974)
+  - CVH: 4 (1980)
+  - Zetec: 5 (1992)
+  - Duratec I4: 6 (2000)
+  - EcoBoost I4: 7 (2009)
+  - Sorted chronologically by year_introduced
+  - Fixes navigation errors when viewing Ford 4-cylinder families
+
 ## [0.8.161] - 2025-12-15
 
 ### Changed
