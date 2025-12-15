@@ -67,10 +67,6 @@ class MobileRenderer {
         this.forceImmediateFocusSettlement = false;
         this._lastFocusItemsKey = null;
 
-        // Translation state
-        this.currentTranslation = null;
-        this.translationsConfig = null;
-
         // Debug flags
         this.focusRingDebugFlag = this.computeFocusRingDebugFlag();
         this.loopInOutDebugFlag = this.computeLoopInOutDebugFlag();
@@ -91,9 +87,9 @@ class MobileRenderer {
     }
 
     setTranslation(code) {
-        this.currentTranslation = code || null;
+        this.translationToggle.setCurrent(code);
         if (this.navigationState) {
-            this.navigationState.setTranslation(this.currentTranslation);
+            this.navigationState.setTranslation(code);
         }
     }
 
@@ -265,8 +261,6 @@ class MobileRenderer {
             return;
         }
 
-        this.translationsConfig = translations;
-
         const initialized = this.translationToggle.init(translations, {
             onChange: (lang) => this.handleTranslationChange(lang)
         });
@@ -332,7 +326,7 @@ class MobileRenderer {
      * Get current translation code (e.g., 'lat', 'eng')
      */
     getCurrentTranslation() {
-        return this.currentTranslation || 'lat';
+        return this.translationToggle.getCurrent() || 'lat';
     }
     
     /**
@@ -342,7 +336,7 @@ class MobileRenderer {
     getTranslationTextProperty() {
         // Return current translation language code directly
         // (e.g., 'latin', 'english', 'hebrew', 'greek', 'french', etc.)
-        return this.currentTranslation || 'latin';
+        return this.translationToggle.getCurrent() || 'latin';
     }
 
     /**
@@ -354,7 +348,8 @@ class MobileRenderer {
         if (!levelConfig) return '';
         
         // Try to get the translated version first
-        const translatedKey = `display_name_${this.currentTranslation}`;
+        const currentLang = this.translationToggle.getCurrent();
+        const translatedKey = `display_name_${currentLang}`;
         if (levelConfig[translatedKey]) {
             return levelConfig[translatedKey];
         }
