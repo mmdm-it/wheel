@@ -21,6 +21,7 @@ import { NavigationView } from './navigation-view.js';
 import { FocusRingView } from './focus-ring-view.js';
 import { MagnifierManager } from './magnifier-manager.js';
 import { ThemeManager } from './theme-manager.js';
+import { DataQueryHelper } from './data-query-helper.js';
 
 /**
  * Efficient renderer that minimizes DOM manipulation
@@ -41,6 +42,7 @@ class MobileRenderer {
         this.navigationView = new NavigationView(viewportManager);
         this.focusRingView = new FocusRingView(this);
         this.magnifier = new MagnifierManager(viewportManager, this);
+        this.dataQuery = new DataQueryHelper(this);
 
         // DOM/state caches
         this.elements = {};
@@ -589,218 +591,36 @@ class MobileRenderer {
     }
 
     getChildItemsForLevel(parentItem, childLevel) {
-        // Pure universal: Use DataManager's universal navigation method
-        const childLevelName = childLevel;
-        const items = this.dataManager.getItemsAtLevel(parentItem, childLevelName) || [];
-        
-        // Validate sort_numbers before returning
-        return this.validateSortNumbers(items, `${childLevelName} under ${parentItem.name}`);
+        return this.dataQuery.getChildItemsForLevel(parentItem, childLevel);
     }
 
     /**
-     * Get cousin items for Focus Ring display - all items at the same level
-     * across all parent groups, with gaps between sibling groups
-     * IMPORTANT: Only includes current parent and subsequent parents (no wrap-around)
-     * @param {Object} item - The current item
-     * @param {string} itemLevel - The level of the current item
-     * @returns {Array} Array of items with null gaps between sibling groups
+     * Get cousin items for Focus Ring display - delegates to DataQueryHelper
      */
     getCousinItemsForLevel(item, itemLevel) {
-        // Get the grandparent level (two levels up)
-        const parentLevel = this.getPreviousHierarchyLevel(itemLevel);
-        if (!parentLevel) {
-            Logger.warn('No parent level found for cousin navigation');
-            return this.getChildItemsForLevel(this.buildParentItemFromChild(item, parentLevel), itemLevel);
-        }
-        
-        const grandparentLevel = this.getPreviousHierarchyLevel(parentLevel);
-        if (!grandparentLevel) {
-            Logger.warn('No grandparent level found for cousin navigation - falling back to sibling navigation');
-            const parentItem = this.buildParentItemFromChild(item, parentLevel);
-            return this.getChildItemsForLevel(parentItem, itemLevel);
-        }
-        
-        // Build parent and grandparent items from current item
-        const parentItem = this.buildParentItemFromChild(item, parentLevel);
-        const grandparentItem = this.buildParentItemFromChild(item, grandparentLevel);
-        
-        // Get all parents (uncles/aunts) at the parent level under the grandparent
-        const allParents = this.getChildItemsForLevel(grandparentItem, parentLevel);
-        
-        // Find the index of the current parent in the list
-        const currentParentIndex = allParents.findIndex(p => p.key === parentItem.key);
-        
-        if (currentParentIndex === -1) {
-            Logger.warn(`🎯👥 Could not find current parent ${parentItem.name} in parent list - using all parents`);
-        }
-        
-        // Only include parents from current parent forward (no wrap-around)
-        const parentsToInclude = currentParentIndex >= 0 
-            ? allParents.slice(currentParentIndex) 
-            : allParents;
-        
-        Logger.debug(`🎯👥 Cousin navigation: ${itemLevel} across ${parentsToInclude.length}/${allParents.length} ${parentLevel}s starting from ${parentItem.name}`);
-        
-        // Collect all cousins with gaps
-        const cousinsWithGaps = [];
-        
-        parentsToInclude.forEach((parent, parentIndex) => {
-            // Get siblings under this parent
-            const siblings = this.getChildItemsForLevel(parent, itemLevel);
-            
-            Logger.debug(`  ${parentLevel} "${parent.name}": ${siblings.length} ${itemLevel}s`);
-            
-            // Add all siblings
-            cousinsWithGaps.push(...siblings);
-            
-            // Add 2 gaps after each sibling group (except the last one)
-            if (parentIndex < parentsToInclude.length - 1) {
-                cousinsWithGaps.push(null, null); // Two gap entries
-            }
-        });
-        
-        Logger.debug(`🎯👥 Total cousin items: ${cousinsWithGaps.filter(x => x !== null).length} + ${cousinsWithGaps.filter(x => x === null).length} gaps = ${cousinsWithGaps.length} total`);
-        
-        return cousinsWithGaps;
+        return this.dataQuery.getCousinItemsForLevel(item, itemLevel);
     }
 
     /**
-     * Async version of getChildItemsForLevel that supports lazy loading
-     * Used for split volumes where data may need to be fetched
+     * Async version of getChildItemsForLevel - delegates to DataQueryHelper
      */
     async getChildItemsForLevelAsync(parentItem, childLevel) {
-        const childLevelName = childLevel;
-        
-        // Check if lazy loading is needed (for split volumes)
-        if (this.dataManager.isSplitStructure()) {
-            // For books getting chapters, ensure book data is loaded first
-            const parentLevel = parentItem.__level;
-            if (parentLevel === 'book' && childLevelName === 'chapter') {
-                const loaded = await this.dataManager.ensureBookLoaded(parentItem);
-                if (!loaded) {
-                    console.error(`Failed to load book data for ${parentItem.name}`);
-                    return [];
-                }
-            }
-            // For chapters getting verses (chapter-level split), ensure chapter data is loaded first
-            if (parentLevel === 'chapter' && childLevelName === 'verse' && this.dataManager.isChapterSplitStructure()) {
-                const loaded = await this.dataManager.ensureChapterLoaded(parentItem);
-                if (!loaded) {
-                    console.error(`Failed to load chapter data for ${parentItem.name}`);
-                    return [];
-                }
-            }
-        }
-        
-        // Now get items (data should be available)
-        const items = this.dataManager.getItemsAtLevel(parentItem, childLevelName) || [];
-        
-        // Validate sort_numbers before returning
-        return this.validateSortNumbers(items, `${childLevelName} under ${parentItem.name}`);
+        return await this.dataQuery.getChildItemsForLevelAsync(parentItem, childLevel);
     }
 
     resolveChildLevel(parentItem, startingLevel) {
-        if (!startingLevel) {
-            return { level: null, items: [] };
-        }
-
-        const visited = new Set();
-        let levelName = startingLevel;
-
-        while (levelName && !visited.has(levelName)) {
-            visited.add(levelName);
-
-            const childItems = this.getChildItemsForLevel(parentItem, levelName);
-            if (childItems && childItems.length) {
-                return { level: levelName, items: childItems };
-            }
-
-            const isPseudo = typeof this.dataManager.isPseudoLevel === 'function'
-                ? this.dataManager.isPseudoLevel(levelName)
-                : false;
-
-            if (!isPseudo) {
-                break;
-            }
-
-            levelName = this.getNextHierarchyLevel(levelName);
-        }
-
-        return { level: levelName, items: [] };
+        return this.dataQuery.resolveChildLevel(parentItem, startingLevel);
     }
 
     /**
-     * Async version of resolveChildLevel that supports lazy loading
-     * Used for split volumes where data may need to be fetched
+     * Async version of resolveChildLevel - delegates to DataQueryHelper
      */
     async resolveChildLevelAsync(parentItem, startingLevel) {
-        if (!startingLevel) {
-            return { level: null, items: [] };
-        }
-
-        const visited = new Set();
-        let levelName = startingLevel;
-
-        while (levelName && !visited.has(levelName)) {
-            visited.add(levelName);
-
-            // Use async version for lazy loading support
-            const childItems = await this.getChildItemsForLevelAsync(parentItem, levelName);
-            if (childItems && childItems.length) {
-                return { level: levelName, items: childItems };
-            }
-
-            const isPseudo = typeof this.dataManager.isPseudoLevel === 'function'
-                ? this.dataManager.isPseudoLevel(levelName)
-                : false;
-
-            if (!isPseudo) {
-                break;
-            }
-
-            levelName = this.getNextHierarchyLevel(levelName);
-        }
-
-        return { level: levelName, items: [] };
+        return await this.dataQuery.resolveChildLevelAsync(parentItem, startingLevel);
     }
 
     getTopLevelItems() {
-        const levelNames = this.getHierarchyLevelNames();
-        if (!levelNames.length) {
-            return [];
-        }
-
-        const topLevelName = levelNames[0];
-        const topLevelCollection = this.dataManager.getTopLevelCollection();
-        if (!topLevelCollection || typeof topLevelCollection !== 'object') {
-            return [];
-        }
-
-        const levelConfig = this.dataManager.getHierarchyLevelConfig(topLevelName);
-
-        const items = Object.keys(topLevelCollection).map(key => {
-            const entry = topLevelCollection[key];
-            const displayName = (entry && (entry.display_name || entry.name)) || key;
-
-            return {
-                name: displayName,
-                key: key,
-                data: entry,
-                __level: topLevelName,
-                __levelDepth: 0,
-                __isLeaf: false,
-                __path: [key],
-                [topLevelName]: key
-            };
-        });
-
-        let sortedItems = items;
-        if (typeof this.dataManager.sortItems === 'function') {
-            sortedItems = this.dataManager.sortItems(items, levelConfig);
-        }
-
-        // Validate sort_numbers for top level items
-        return this.validateSortNumbers(sortedItems, `Top level ${topLevelName}`);
+        return this.dataQuery.getTopLevelItems();
     }
 
     getLevelPluralLabel(levelName) {
@@ -1580,80 +1400,17 @@ class MobileRenderer {
     }
 
     /**
-     * Build a parent item from a child item for navigation purposes
+     * Build a parent item from a child item - delegates to DataQueryHelper
      */
     buildParentItemFromChild(childItem, parentLevel) {
-        if (!childItem.__path) {
-            Logger.warn('buildParentItemFromChild: Child item missing __path metadata');
-            return {};
-        }
-
-        const levelNames = this.getHierarchyLevelNames();
-        const parentIndex = levelNames.indexOf(parentLevel);
-        if (parentIndex === -1) {
-            Logger.warn(`buildParentItemFromChild: Unknown parent level "${parentLevel}"`);
-            return {};
-        }
-
-        // Build parent item from the path slice up to parentLevel
-        const parentItem = {
-            __level: parentLevel,
-            __levelDepth: parentIndex,
-            __path: childItem.__path.slice(0, parentIndex + 1),
-            __isLeaf: false,
-            key: childItem.__path.slice(0, parentIndex + 1).join('/')
-        };
-
-        // Reconstruct actual data properties from __path for legacy method compatibility
-        // TODO: Remove this once getItemsAtLevel is refactored to use only metadata
-        for (let i = 0; i <= parentIndex; i++) {
-            const levelName = levelNames[i];
-            const pathValue = childItem.__path[i];
-            
-            // Generic property mapping - property name matches level name
-            parentItem[levelName] = pathValue;
-            
-            // Additional property aliases for legacy compatibility
-            if (levelName === parentLevel && !parentItem.name) {
-                parentItem.name = pathValue;
-            }
-            
-            // Handle numeric conversions for count-based levels
-            const levelConfig = this.dataManager.getHierarchyLevelConfig(levelName);
-            if (levelConfig && levelConfig.is_numeric) {
-                const countProperty = levelName + 'Count';
-                parentItem[countProperty] = parseInt(pathValue);
-            }
-            
-            // Handle code-based properties
-            if (levelConfig && levelConfig.use_code_property) {
-                const codeProperty = levelName + 'Code';
-                parentItem[codeProperty] = pathValue;
-            }
-        }
-
-        if (!parentItem.name) {
-            parentItem.name = childItem.__path[parentIndex];
-        }
-
-        return parentItem;
+        return this.dataQuery.buildParentItemFromChild(childItem, parentLevel);
     }
 
     /**
-     * Find the index of an item in an array based on level-specific matching
+     * Find the index of an item in an array - delegates to DataQueryHelper
      */
     findItemIndexInArray(item, array, level) {
-        console.log(`🔺🔍 SEARCHING FOR: key="${item.key}" in array of ${array.length} items (including gaps)`);
-        const index = array.findIndex(sibling => sibling !== null && sibling.key === item.key);
-        console.log(`🔺🔍 FOUND AT INDEX: ${index} (${index >= 0 ? array[index].name : 'NOT FOUND'})`);
-        
-        if (index === -1) {
-            Logger.warn(`🔺 findItemIndexInArray: Item key "${item.key}" not found in array of ${array.length} items`);
-            Logger.warn(`🔺 Item keys in array:`, array.filter(s => s !== null).map(s => s.key));
-            Logger.warn(`🔺 Searching for item:`, item);
-        }
-        
-        return index;
+        return this.dataQuery.findItemIndexInArray(item, array, level);
     }
 
     /**

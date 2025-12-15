@@ -4,7 +4,7 @@
  */
 
 const VERSION = {
-    semantic: '0.8.144',      // major.minor.patch
+    semantic: '0.8.145',      // major.minor.patch
     display() {
         return `v${this.semantic}`;
     }
