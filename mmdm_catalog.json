@@ -2362,6 +2362,7 @@
                                         "sort_number": 3,
                                         "families": {
                                             "385": {
+                                                "sort_number": 5,
                                                 "subfamilies": {
                                                     "Boss": {
                                                         "models": [
@@ -2411,6 +2412,7 @@
                                                 ]
                                             },
                                             "Boss": {
+                                                "sort_number": 6,
                                                 "models": [
                                                     {
                                                         "engine_model": "6.2L Boss",
@@ -2429,6 +2431,7 @@
                                                 ]
                                             },
                                             "Cleveland": {
+                                                "sort_number": 4,
                                                 "models": [
                                                     {
                                                         "engine_model": "351",
@@ -2451,6 +2454,7 @@
                                                 ]
                                             },
                                             "FE": {
+                                                "sort_number": 3,
                                                 "models": [
                                                     {
                                                         "engine_model": "332",
@@ -2485,6 +2489,7 @@
                                                 ]
                                             },
                                             "Flathead": {
+                                                "sort_number": 1,
                                                 "models": [
                                                     {
                                                         "engine_model": "221",
@@ -2507,6 +2512,7 @@
                                                 ]
                                             },
                                             "Godzilla": {
+                                                "sort_number": 8,
                                                 "models": [
                                                     {
                                                         "engine_model": "7.3L Godzilla",
@@ -2520,6 +2526,7 @@
                                                 ]
                                             },
                                             "Modular": {
+                                                "sort_number": 7,
                                                 "subfamilies": {
                                                     "Coyote": {
                                                         "models": [
@@ -2633,6 +2640,7 @@
                                                 ]
                                             },
                                             "Windsor": {
+                                                "sort_number": 2,
                                                 "models": [
                                                     {
                                                         "engine_model": "260",
