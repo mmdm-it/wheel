@@ -10,6 +10,25 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Phase 3: General code cleanup and optimization
 - Child Pyramid design completion (blocking 0.9.0 release)
 
+## [0.8.155] - 2025-12-15
+
+### Removed
+- **Pseudo-parent architecture removed** (~300 lines eliminated)
+  - Removed 12 pseudo-parent methods from data-virtual-levels.js (735 → 439 lines)
+  - Removed pseudo-parent checks from data-hierarchy-navigator.js
+  - Removed 12 delegation methods from mobile-data.js (1,066 → 1,018 lines)
+  - Removed pseudo-parent fallback logic from data-query-helper.js
+- **Rationale**: Pseudo-parents added complexity without storage/performance benefits
+  - Original goal: Avoid authoring deep JSON hierarchies for manufacturers like Ford
+  - Reality: Added ~300 lines of runtime filtering/cloning logic
+  - Better approach: Author explicit hierarchy in JSON, skip empty collections during navigation
+- **Impact**: Eliminates entire class of navigation bugs caused by pseudo-parent path mismatches
+
+### Changed
+- Virtual level skipping now checks `is_virtual` flag directly instead of `isPseudoLevel()`
+- Documentation updated to reflect virtual-levels-only architecture
+- Module headers cleaned of pseudo-parent references
+
 ## [0.8.154] - 2025-12-15
 
 ### Changed

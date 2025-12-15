@@ -46,31 +46,6 @@ export class DataHierarchyNavigator {
             path: Array.isArray(dataPath) ? [...dataPath] : []
         });
 
-        // Handle pseudo parent navigation before any structural validation
-        if (parentItem.__isPseudoParent) {
-            return this.dataManager.getItemsFromPseudoParent(parentItem, childLevelName, childLevelConfig);
-        }
-
-        if (this.dataManager.levelSupportsPseudoChild(parentLevelName, childLevelName)) {
-            const pseudoItems = this.dataManager.getPseudoParentItems(parentItem, childLevelName, childLevelConfig);
-            if (pseudoItems && pseudoItems.length) {
-                return pseudoItems;
-            }
-
-            const terminalLevelName = this.dataManager.getPseudoTerminalLevel(childLevelName);
-            if (terminalLevelName && terminalLevelName !== childLevelName) {
-                const previousLevelName = childLevelName;
-                Logger.debug(`getItemsAtLevel: No pseudo ${previousLevelName} nodes; falling back to ${terminalLevelName}`);
-                this.dataManager.traceItem(parentItem, `Pseudo level empty → falling back to ${terminalLevelName}`, {
-                    requestedLevel: previousLevelName,
-                    terminalLevel: terminalLevelName
-                });
-                childLevelName = terminalLevelName;
-                childLevelConfig = this.dataManager.getHierarchyLevelConfig(childLevelName);
-                childLevelDepth = this.dataManager.getHierarchyLevelDepth(childLevelName);
-            }
-        }
-
         // Check if child level is virtual
         if (childLevelConfig && childLevelConfig.is_virtual) {
             return this.dataManager.getVirtualLevelItems(parentItem, childLevelName, childLevelConfig);
@@ -102,7 +77,7 @@ export class DataHierarchyNavigator {
                 return [];
             }
 
-            this.dataManager.traceItem(parentItem, `Skipping virtual/pseudo levels between ${parentLevelName} and ${childLevelName}`, {
+            this.dataManager.traceItem(parentItem, `Skipping virtual levels between ${parentLevelName} and ${childLevelName}`, {
                 parentDepth: parentLevelDepth,
                 childDepth: childLevelDepth
             });

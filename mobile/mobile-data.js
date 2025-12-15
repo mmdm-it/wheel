@@ -31,7 +31,7 @@ class DataManager {
         // Lazy loader for split volume structures
         this.lazyLoader = new DataLazyLoader(this, this.cacheManager);
         
-        // Virtual levels and pseudo-parent handling
+        // Virtual level handling
         this.virtualLevels = new DataVirtualLevels(this);
         
         // Hierarchy navigation (core getItemsAtLevel)
@@ -966,54 +966,6 @@ class DataManager {
      */
     getPluralPropertyName(levelName) {
         return this.hierarchyNavigator.getPluralPropertyName(levelName);
-    }
-
-    levelSupportsPseudoChild(parentLevelName, childLevelName) {
-        return this.virtualLevels.levelSupportsPseudoChild(parentLevelName, childLevelName);
-    }
-
-    isPseudoLevel(levelName) {
-        return this.virtualLevels.isPseudoLevel(levelName);
-    }
-
-    getPseudoTriggerPrefix(config) {
-        return this.virtualLevels.getPseudoTriggerPrefix(config);
-    }
-
-    getPseudoTerminalLevel(levelName) {
-        return this.virtualLevels.getPseudoTerminalLevel(levelName);
-    }
-
-    getItemProperty(item, propertyName) {
-        return this.virtualLevels.getItemProperty(item, propertyName);
-    }
-
-    filterItemsByPseudoFilters(items, filters) {
-        return this.virtualLevels.filterItemsByPseudoFilters(items, filters);
-    }
-
-    cloneLeafForPseudo(baseItem, pseudoPath) {
-        return this.virtualLevels.cloneLeafForPseudo(baseItem, pseudoPath);
-    }
-
-    clonePseudoItems(items) {
-        return this.virtualLevels.clonePseudoItems(items);
-    }
-
-    getPseudoSourceItems(parentItem, terminalLevelName) {
-        return this.virtualLevels.getPseudoSourceItems(parentItem, terminalLevelName);
-    }
-
-    buildPseudoParentItem(parentItem, pseudoLevelName, groupName, baseItems, terminalLevelName, pseudoConfig, isOrphan = false, sortNumber = undefined) {
-        return this.virtualLevels.buildPseudoParentItem(parentItem, pseudoLevelName, groupName, baseItems, terminalLevelName, pseudoConfig, isOrphan, sortNumber);
-    }
-
-    getPseudoParentItems(parentItem, pseudoLevelName, pseudoConfig) {
-        return this.virtualLevels.getPseudoParentItems(parentItem, pseudoLevelName, pseudoConfig);
-    }
-
-    getItemsFromPseudoParent(parentItem, childLevelName, childLevelConfig) {
-        return this.virtualLevels.getItemsFromPseudoParent(parentItem, childLevelName, childLevelConfig);
     }
 
     /**

@@ -4,7 +4,7 @@
  * 
  * Responsibilities:
  * - Query items at different hierarchy levels
- * - Resolve child levels (skipping pseudo-levels)
+ * - Resolve child levels (skipping virtual levels)
  * - Build cousin navigation (items across sibling groups with gaps)
  * - Construct parent items from child metadata
  * - Find item indices in arrays
@@ -68,15 +68,6 @@ export class DataQueryHelper {
         // Build parent and grandparent items from current item
         const parentItem = this.buildParentItemFromChild(item, parentLevel);
         const grandparentItem = this.buildParentItemFromChild(item, grandparentLevel);
-        
-        // Check if parent level is a pseudo-parent level
-        // If so, we can't navigate "parent level under grandparent" because pseudo-parents
-        // don't exist in the data structure - they're generated on-demand
-        if (parentItem.__isPseudoParent) {
-            Logger.debug(`🎯👥 Parent "${parentItem.name}" is pseudo-parent - falling back to sibling navigation only`);
-            // Just return siblings under this pseudo-parent
-            return this.getChildItemsForLevel(parentItem, itemLevel);
-        }
         
         // Get all parents (uncles/aunts) at the parent level under the grandparent
         const allParents = this.getChildItemsForLevel(grandparentItem, parentLevel);
@@ -155,7 +146,7 @@ export class DataQueryHelper {
     }
 
     /**
-     * Resolve the actual child level, skipping pseudo-levels with no data
+     * Resolve the actual child level, skipping virtual levels with no data
      * @param {Object} parentItem - The parent item
      * @param {string} startingLevel - The initial child level to try
      * @returns {Object} { level: resolvedLevelName, items: childItems }
@@ -177,11 +168,11 @@ export class DataQueryHelper {
                 return { level: levelName, items: childItems };
             }
 
-            const isPseudo = typeof r.dataManager.isPseudoLevel === 'function'
-                ? r.dataManager.isPseudoLevel(levelName)
-                : false;
-
-            if (!isPseudo) {
+            // Check if level is virtual
+            const levelConfig = r.dataManager.getHierarchyLevelConfig(levelName);
+            const isVirtual = levelConfig && levelConfig.is_virtual === true;
+            
+            if (!isVirtual) {
                 break;
             }
 
@@ -213,11 +204,11 @@ export class DataQueryHelper {
                 return { level: levelName, items: childItems };
             }
 
-            const isPseudo = typeof r.dataManager.isPseudoLevel === 'function'
-                ? r.dataManager.isPseudoLevel(levelName)
-                : false;
-
-            if (!isPseudo) {
+            // Check if level is virtual
+            const levelConfig = r.dataManager.getHierarchyLevelConfig(levelName);
+            const isVirtual = levelConfig && levelConfig.is_virtual === true;
+            
+            if (!isVirtual) {
                 break;
             }
 
