@@ -331,12 +331,24 @@ export class DataHierarchyNavigator {
 
     /**
      * Get the data location for an item by traversing its path
+     * 
+     * IMPORTANT: __dataPath must be used for navigation, not __path
+     * - __path contains display names (e.g., ['Ford', 'Modular', 'Triton'])
+     * - __dataPath contains JSON keys/indices (e.g., ['Ford', 2, 'Triton'])
+     * 
+     * For items where levels are skipped (e.g., no family level), __dataPath
+     * handles this correctly because it stores the actual JSON traversal path.
      */
     getDataLocationForItem(item) {
         const pathToTraverse = item && (item.__dataPath || item.__path);
         if (!item || !pathToTraverse || !pathToTraverse.length) {
             return null;
         }
+
+        Logger.debug(`🗺️ getDataLocationForItem: item="${item.name}" level="${item.__level}"`);
+        Logger.debug(`🗺️   __path: [${item.__path?.join(', ')}]`);
+        Logger.debug(`🗺️   __dataPath: [${item.__dataPath?.join(', ')}]`);
+        Logger.debug(`🗺️   pathToTraverse: [${pathToTraverse.join(', ')}]`);
 
         const levelNames = this.dataManager.getHierarchyLevelNames();
         let dataLocation = this.dataManager.getTopLevelCollection();
