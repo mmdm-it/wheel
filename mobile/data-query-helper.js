@@ -69,6 +69,15 @@ export class DataQueryHelper {
         const parentItem = this.buildParentItemFromChild(item, parentLevel);
         const grandparentItem = this.buildParentItemFromChild(item, grandparentLevel);
         
+        // Check if parent level is a pseudo-parent level
+        // If so, we can't navigate "parent level under grandparent" because pseudo-parents
+        // don't exist in the data structure - they're generated on-demand
+        if (parentItem.__isPseudoParent) {
+            Logger.debug(`🎯👥 Parent "${parentItem.name}" is pseudo-parent - falling back to sibling navigation only`);
+            // Just return siblings under this pseudo-parent
+            return this.getChildItemsForLevel(parentItem, itemLevel);
+        }
+        
         // Get all parents (uncles/aunts) at the parent level under the grandparent
         const allParents = this.getChildItemsForLevel(grandparentItem, parentLevel);
         
