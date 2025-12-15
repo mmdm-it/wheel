@@ -9,6 +9,105 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Phase 3: General code cleanup and optimization
 
+## [0.9.1] - 2025-12-15
+
+### Changed
+- **Dead code cleanup**: Removed unused DEBUG_VERBOSE flag and addTimestampToCenter() method
+- Renderer reduced from 984 → 920 lines (64 lines saved)
+- Total reduction: 70.1% from original 3,073 lines
+
+### Documentation
+- Updated ARCHITECTURE.md with new module structure
+- Created REFACTOR_COMPLETE.md documenting the full refactoring journey
+- Updated README.md version to 0.9.1
+
+## [0.9.0] - 2025-12-15
+
+### Added
+- **ChildContentCoordinator** (230 lines): Child content display logic
+  - Moved showChildContentForFocusItem and helper methods
+  - Moved handleLeafFocusSelection
+  - Handles lazy loading for split volumes
+  - 167 lines saved from renderer
+
+### Changed
+- **MILESTONE**: Renderer now under 1,000 lines (984 lines)!
+- Total reduction from 3,073 → 984 lines (68% reduction)
+
+## [0.8.147] - 2025-12-15
+
+### Added
+- **NavigationCoordinator** (287 lines): Navigation state transition logic
+  - Moved handleChildPyramidClick (83 lines)
+  - Moved continueChildPyramidClick (174 lines)
+  - Encapsulates IN navigation orchestration
+  - 237 lines saved from renderer
+
+### Changed
+- Renderer: 1,388 → 1,151 lines (17.1% reduction)
+
+## [0.8.146] - 2025-12-15
+
+### Added
+- **ParentNameBuilder** (124 lines): Parent button label generation
+  - Moved getParentNameForLevel with breadcrumb logic
+  - Handles simple vs cumulative styles
+  - Context-aware pluralization
+  - 89 lines saved from renderer
+
+### Changed
+- Renderer: 1,477 → 1,388 lines (6.0% reduction)
+- Week 2 target (1,500 lines) exceeded by 112 lines
+
+## [0.8.145] - 2025-12-15
+
+### Added
+- **DataQueryHelper** (348 lines): Hierarchical data query methods
+  - Moved 8 data query methods including cousin navigation
+  - Centralized hierarchy traversal logic
+  - 243 lines saved from renderer
+
+### Changed
+- Renderer: 1,720 → 1,477 lines (14.1% reduction)
+
+## [0.8.144] - 2025-12-14
+
+### Changed
+- **FocusRingManager Phase 3**: Extracted 3 related methods
+  - Moved triggerFocusSettlement (52 lines)
+  - Moved getSelectedFocusIndex (26 lines)  
+  - Moved updateFocusItemText (104 lines)
+  - Renderer: 1,866 → 1,720 lines (146 lines saved)
+
+## [0.8.143] - 2025-12-14
+
+### Changed
+- **FocusRingManager Phase 2b**: Extracted main method
+  - Moved updateFocusRingPositions (309 lines)
+  - Renderer: 2,166 → 1,866 lines (300 lines saved)
+  - focus-ring-view.js: 799 → 1,108 lines
+
+## [0.8.142] - 2025-12-14
+
+### Changed
+- **FocusRingManager Phase 2a**: Migrated rotation state
+  - Moved lastRotationOffset and protectedRotationOffset to FocusRingView
+  - Updated 9 references in renderer
+
+## [0.8.141] - 2025-12-14
+
+### Changed
+- **FocusRingManager Phase 1**: Eliminated state duplication
+  - Removed duplicate focusElements, _lastFocusItemsKey, positionCache Maps from renderer
+  - Established FocusRingView as single source of truth
+  - Updated 11 references throughout codebase
+
+## [0.8.140] - 2025-12-14
+
+### Added
+- **Week 2 Planning**: Created WEEK2_PLAN.md and WEEK2_ARCHITECTURE_ANALYSIS.md
+- Deep dependency analysis before FocusRingManager extraction
+
 ## [0.8.138] - 2025-12-14
 
 ### Changed

@@ -17,13 +17,22 @@ mobile/
 ├── mobile-config.js            # Constants and configuration
 ├── mobile-data.js              # Data loading and navigation
 ├── mobile-logger.js            # Debug logging system
-├── mobile-renderer.js          # SVG rendering and UI updates
+├── mobile-renderer.js          # ⭐ Coordinator (920 lines - 70% reduction!)
 ├── mobile-animation.js         # Animation system (IN/OUT migrations)
 ├── mobile-touch.js             # Touch event handling
 ├── mobile-viewport.js          # Viewport calculations
 ├── mobile-coordinates.js       # Coordinate system (Hub/Nuc)
 ├── mobile-childpyramid.js      # Child item preview display
-└── mobile-detailsector.js      # Content detail view (Gutenberg verse rendering)
+├── mobile-detailsector.js      # Content detail view (Gutenberg verse rendering)
+├── focus-ring-view.js          # Focus ring rendering & positioning
+├── magnifier-manager.js        # Magnifier element management
+├── navigation-coordinator.js   # Navigation state transitions
+├── child-content-coordinator.js # Child content display logic
+├── data-query-helper.js        # Hierarchical data queries
+├── parent-name-builder.js      # Parent button label generation
+├── theme-manager.js            # Color scheme management
+├── translation-toggle.js       # Translation switching UI
+└── navigation-view.js          # Navigation UI components
 ```
 
 ### Module Responsibilities
@@ -34,11 +43,67 @@ mobile/
 - Handles virtual hierarchy levels
 - Domain-agnostic (works with any hierarchical JSON)
 
-**mobile-renderer.js**
-- Creates SVG elements for navigation UI
-- Updates positions based on rotation angle
-- Manages Focus Ring, Child Pyramid, Parent Button
-- Handles UI state transitions
+**mobile-renderer.js** ⭐ **REFACTORED (3,073 → 920 lines, 70% reduction)**
+- Thin coordinator pattern with delegation to specialized modules
+- Manages DOM element references and initialization
+- Coordinates between all UI modules
+- Handles application lifecycle and state
+- **No longer contains**: rendering logic, data queries, animations, navigation coordination
+
+**focus-ring-view.js** (1,302 lines)
+- Creates and positions Focus Ring SVG elements
+- Manages focus ring rotation and item positioning
+- Handles text rendering with bilingual support
+- Calculates and caches item positions
+- Owns all Focus Ring state (focusElements, positionCache, rotation offsets)
+
+**magnifier-manager.js** (269 lines)
+- Creates and positions magnifier ring element
+- Handles magnifier animations and transitions
+- Manages advancing focus ring on rotation
+- Brings focus items to center position
+
+**navigation-coordinator.js** (287 lines)
+- Orchestrates IN navigation (Child Pyramid → Focus Ring)
+- Manages animation sequencing during navigation
+- Handles leaf vs non-leaf navigation logic
+- Updates navigation state and active paths
+- Sets up rotation offsets for centered items
+
+**child-content-coordinator.js** (230 lines)
+- Determines if focus item has children or is a leaf
+- Handles lazy loading for split volumes
+- Shows Child Pyramid for non-leaf items
+- Shows Detail Sector for leaf items
+- Manages parent button updates during content display
+
+**data-query-helper.js** (348 lines)
+- Query items at different hierarchy levels
+- Resolves child levels (skipping pseudo-levels)
+- Builds cousin navigation (items across sibling groups with gaps)
+- Constructs parent items from child metadata
+- Finds item indices in arrays
+
+**parent-name-builder.js** (124 lines)
+- Generates display names for parent levels
+- Builds contextual breadcrumbs from top navigation level
+- Handles different parent button styles (simple vs cumulative)
+- Pluralizes parent names appropriately
+
+**theme-manager.js**
+- Manages color schemes from display_config
+- Provides color lookup for different element types
+- Handles theme-related styling
+
+**translation-toggle.js**
+- Manages translation UI button
+- Handles translation switching logic
+- Maintains current translation state
+
+**navigation-view.js**
+- Manages Parent Button UI and animations
+- Handles navigation breadcrumb display
+- Controls button visibility and interactions
 
 **mobile-animation.js**
 - Manages all nzone migration animations (600ms transitions)
