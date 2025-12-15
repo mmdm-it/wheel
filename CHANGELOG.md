@@ -10,6 +10,14 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Phase 3: General code cleanup and optimization
 - Child Pyramid design completion (blocking 0.9.0 release)
 
+## [0.8.159] - 2025-12-15
+
+### Fixed
+- **Parent Button Visibility**: Fixed Parent Button disappearing after IN migration animation
+  - Issue: Animation cleanup was adding 'hidden' class after updateParentButton() removed it
+  - Solution: Let updateParentButton() control visibility instead of animation cleanup
+  - Timing: Animation completes at t=600ms, but was hiding button that appeared at t=100-200ms
+
 ## [0.8.158] - 2025-12-15
 
 ### Changed

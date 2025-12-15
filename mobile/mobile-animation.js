@@ -205,11 +205,12 @@ class MobileAnimation {
             }
             
             // Reset after animation
+            // NOTE: Don't add 'hidden' class here - updateParentButton() will handle visibility
+            // The new parent button should appear after this animation completes
             setTimeout(() => {
                 parentButtonGroup.style.transition = '';
                 parentButtonGroup.style.opacity = '';
-                parentButtonGroup.classList.add('hidden');
-                console.log('🎬 Stage 5: Animation complete, Parent Button hidden');
+                console.log('🎬 Stage 5: Animation complete, Parent Button off-screen (updateParentButton will restore)');
             }, 600);
         }
     }
