@@ -26,6 +26,7 @@ def restructure_manufacturer_data(mfr_data, mfr_name):
     restructured = {
         "year_founded": mfr_data.get("year_founded"),
         "year_dissolved": mfr_data.get("year_dissolved"),
+        "sort_number": mfr_data.get("sort_number"),  # Preserve manufacturer sort_number
         "cylinders": {}
     }
     

@@ -2126,6 +2126,7 @@
                             "Ford": {
                                 "year_founded": 1903,
                                 "year_dissolved": null,
+                                "sort_number": 15,
                                 "cylinders": {
                                     "4": {
                                         "sort_number": 1,
@@ -2790,6 +2791,7 @@
                             "MerCruiser": {
                                 "year_founded": 1961,
                                 "year_dissolved": null,
+                                "sort_number": 27,
                                 "cylinders": {
                                     "8": {
                                         "sort_number": 1,
@@ -2818,6 +2820,7 @@
                             "Detroit Diesel": {
                                 "year_founded": 1938,
                                 "year_dissolved": null,
+                                "sort_number": 63,
                                 "cylinders": {
                                     "6": {
                                         "sort_number": 1,
