@@ -8,20 +8,14 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 - Phase 3: General code cleanup and optimization
+- Child Pyramid design completion (blocking 0.9.0 release)
 
-## [0.9.1] - 2025-12-15
+## [0.8.148] - 2025-12-15
 
 ### Changed
 - **Dead code cleanup**: Removed unused DEBUG_VERBOSE flag and addTimestampToCenter() method
 - Renderer reduced from 984 → 920 lines (64 lines saved)
 - Total reduction: 70.1% from original 3,073 lines
-
-### Documentation
-- Updated ARCHITECTURE.md with new module structure
-- Created REFACTOR_COMPLETE.md documenting the full refactoring journey
-- Updated README.md version to 0.9.1
-
-## [0.9.0] - 2025-12-15
 
 ### Added
 - **ChildContentCoordinator** (230 lines): Child content display logic
@@ -31,8 +25,13 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   - 167 lines saved from renderer
 
 ### Changed
-- **MILESTONE**: Renderer now under 1,000 lines (984 lines)!
-- Total reduction from 3,073 → 984 lines (68% reduction)
+- **MILESTONE**: Renderer now under 1,000 lines (920 lines)!
+- Total reduction from 3,073 → 920 lines (70.1% reduction)
+
+### Documentation
+- Updated ARCHITECTURE.md with new module structure
+- Created REFACTOR_COMPLETE.md documenting the full refactoring journey
+- Updated README.md version to 0.8.148
 
 ## [0.8.147] - 2025-12-15
 
