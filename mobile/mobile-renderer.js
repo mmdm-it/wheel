@@ -118,6 +118,27 @@ class MobileRenderer {
         }
     }
 
+    setSelectedFocusItem(item) {
+        this.selectedFocusItem = item || null;
+        if (this.navigationState) {
+            this.navigationState.setSelectedFocusItem(this.selectedFocusItem);
+        }
+    }
+
+    setActivePath(path) {
+        this.activePath = Array.isArray(path) ? path : [];
+        if (this.navigationState) {
+            this.navigationState.setActivePath(this.activePath);
+        }
+    }
+
+    setTranslation(code) {
+        this.currentTranslation = code || null;
+        if (this.navigationState) {
+            this.navigationState.setTranslation(this.currentTranslation);
+        }
+    }
+
     focusRingDebug(...args) {
         if ((typeof window !== 'undefined' && window.DEBUG_FOCUS_RING) || this.focusRingDebugFlag) {
             Logger.debug(...args);
@@ -284,6 +305,43 @@ class MobileRenderer {
         });
         
         Logger.debug('Copyright diagnostic toggle initialized - click to show/hide Detail Sector bounds');
+    }
+
+    positionMagnifyingRing() {
+        const ring = this.elements.magnifier;
+        if (!ring) {
+            Logger.error('Magnifier not found');
+            return;
+        }
+        
+        const position = this.viewport.getMagnifyingRingPosition();
+        
+        // Position ring at calculated dynamic position
+        ring.setAttribute('cx', position.x);
+        ring.setAttribute('cy', position.y);
+        ring.setAttribute('r', MOBILE_CONFIG.RADIUS.MAGNIFIER);
+        
+        // Final styling: black ring as requested
+        ring.setAttribute('stroke', 'black');
+        ring.setAttribute('stroke-width', '1');
+        ring.setAttribute('opacity', '0.8');
+        
+        // Restore visibility if hidden during animation
+        ring.style.opacity = '';
+        
+        // Log Magnifier position and current selected item text
+        const selectedItem = this.selectedFocusItem;
+        console.log('🔍 === MAGNIFIER AT LOAD ===');
+        console.log('🔍 Magnifier position:', { x: position.x.toFixed(1), y: position.y.toFixed(1), radius: MOBILE_CONFIG.RADIUS.MAGNIFIER });
+        console.log('🔍 Magnifier angle (from viewport):', (position.angle * 180 / Math.PI).toFixed(1) + '°');
+        if (selectedItem) {
+            console.log('🔍 Selected item text:', selectedItem.name);
+            console.log('🔍 Selected item rotation:', '0° (text is horizontal at Magnifier)');
+        } else {
+            console.log('🔍 No selected item yet');
+        }
+        
+        this.focusRingDebug(`Magnifier positioned at (${position.x.toFixed(1)}, ${position.y.toFixed(1)}) with radius ${MOBILE_CONFIG.RADIUS.MAGNIFIER}`);
     }
 
     initializeTranslationButton() {
