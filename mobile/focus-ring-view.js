@@ -351,17 +351,35 @@ class FocusRingView {
             }
         });
 
+        // LOG: Show magnifier and adjacent nodes
+        if (selectedIndex >= 0) {
+            const prevIndex = selectedIndex - 1;
+            const nextIndex = selectedIndex + 1;
+            const prevItem = prevIndex >= 0 && prevIndex < allFocusItems.length ? allFocusItems[prevIndex] : null;
+            const nextItem = nextIndex >= 0 && nextIndex < allFocusItems.length ? allFocusItems[nextIndex] : null;
+            
+            console.log('🔍 === MAGNIFIER + ADJACENT NODES ===');
+            console.log(`🔍 [-1] Previous: ${prevItem ? prevItem.name : 'N/A'}`);
+            console.log(`🔍 [0] MAGNIFIER: ${selectedFocusItem.name}`);
+            console.log(`🔍 [+1] Next: ${nextItem ? nextItem.name : 'N/A'}`);
+            console.log('🔍 === END ===');
+        }
+
         // Update all visible focus items (create new elements as needed)
         const reuseFocusElements = !shouldRebuild;
 
         // Clear all elements if rebuilding
         if (!reuseFocusElements) {
+            const beforeCount = focusRingGroup.children.length;
             focusRingGroup.innerHTML = '';
+            console.log(`🧹 REBUILD: Cleared ${beforeCount} elements from focusRingGroup`);
             // Preserve background band at the start
             if (background) {
                 focusRingGroup.appendChild(background);
+                console.log('🧹 REBUILD: Re-appended background band');
             }
             this.focusElements.clear();
+            console.log(`🧹 REBUILD: Cleared focusElements Map (was ${this.focusElements.size} entries)`);
         }
 
         for (const [key, element] of this.focusElements.entries()) {
@@ -369,8 +387,12 @@ class FocusRingView {
             if (!stillVisible) {
                 element.remove();
                 this.focusElements.delete(key);
+                console.log(`🗑️ CLEANUP: Removed element for key="${key}"`);
             }
         }
+
+        let createCount = 0;
+        let updateCount = 0;
 
         visibleEntries.forEach(entry => {
             const { focusItem, position, angle, isSelected } = entry;
@@ -379,10 +401,16 @@ class FocusRingView {
                 element = this.createFocusElement(focusItem, position, angle, isSelected);
                 focusRingGroup.appendChild(element);
                 this.focusElements.set(focusItem.key, element);
+                createCount++;
             } else {
                 this.updateFocusElement(element, position, angle, isSelected);
+                updateCount++;
             }
         });
+
+        if (createCount > 0 || updateCount > 0) {
+            console.log(`📊 DOM OPERATIONS: Created ${createCount}, Updated ${updateCount} (reuseFocusElements=${reuseFocusElements})`);
+        }
 
         if (selectedIndex === -1 && allFocusItems.length > 0) {
             // Find the item closest to center angle as a fallback
@@ -613,7 +641,19 @@ class FocusRingView {
         element.setAttribute('transform', `translate(${position.x}, ${position.y})`);
 
         const circle = element.querySelector('circle');
-        const text = element.querySelector('text');
+        const allTextElements = element.querySelectorAll('text');
+        const text = allTextElements[0];
+        
+        // BUG DETECTION: Check for duplicate text elements
+        if (allTextElements.length > 1) {
+            const itemName = (element._focusItem || {}).name || 'UNKNOWN';
+            console.error(`❌ BUG FOUND: ${allTextElements.length} text elements in node "${itemName}"! Removing duplicates...`);
+            // Remove all but the first text element
+            for (let i = 1; i < allTextElements.length; i++) {
+                console.log(`🗑️ Removing duplicate text[${i}]: "${allTextElements[i].textContent}"`);
+                allTextElements[i].remove();
+            }
+        }
 
         const nodeRadius = isSelected ? MOBILE_CONFIG.RADIUS.MAGNIFIED : MOBILE_CONFIG.RADIUS.UNSELECTED;
         circle.setAttribute('r', nodeRadius);

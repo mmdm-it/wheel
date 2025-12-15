@@ -1002,9 +1002,17 @@ class MobileRenderer {
         const focusItemsChanged = this._lastFocusItemsKey !== focusItemsKey;
         this._lastFocusItemsKey = focusItemsKey;
         
-        // Always clear and rebuild during rotation to prevent ghosting
-        // The optimization is for static state (same items, same position) only
-        const shouldRebuild = focusItemsChanged || isRotating || rotationTriggered;
+        // BUG FIX: Don't rebuild during rotation - causes text element duplication
+        // Only rebuild when the actual items change (navigation to different level)
+        const shouldRebuild = focusItemsChanged;
+        
+        console.log(`🔧 shouldRebuild=${shouldRebuild} (focusItemsChanged=${focusItemsChanged}, isRotating=${isRotating}, rotationTriggered=${rotationTriggered})`);
+        
+        // Clear Map when rebuilding to prevent stale key lookups
+        if (shouldRebuild) {
+            console.log(`🧹 REBUILD: Clearing renderer.focusElements Map (was ${this.focusElements.size} entries)`);
+            this.focusElements.clear();
+        }
         
         // Ensure background band stays in DOM; we'll diff visible nodes instead of clearing all
         const background = focusRingGroup.querySelector('#focusRingBackground');
@@ -1096,32 +1104,51 @@ class MobileRenderer {
             }
         });
 
-        // Diff DOM: remove nodes that scrolled out of view
-        const visibleKeys = new Set(visibleEntries.map(entry => entry.focusItem.key));
-        for (const [key, element] of this.focusElements.entries()) {
-            if (!visibleKeys.has(key)) {
-                element.remove();
-                this.focusElements.delete(key);
+        // Cleanup: remove elements that are no longer visible (unless rebuilding - Map already cleared)
+        if (!shouldRebuild) {
+            const visibleKeys = new Set(visibleEntries.map(entry => entry.focusItem.key));
+            for (const [key, element] of this.focusElements.entries()) {
+                if (!visibleKeys.has(key)) {
+                    element.remove();
+                    this.focusElements.delete(key);
+                    console.log(`🗑️ CLEANUP: Removed element for key="${key}" (scrolled out of viewport)`);
+                }
             }
+        } else {
+            // On rebuild, clear all existing DOM elements (except background)
+            const elementsToRemove = focusRingGroup.querySelectorAll('.focusItem');
+            console.log(`🧹 REBUILD: Removing ${elementsToRemove.length} DOM elements`);
+            elementsToRemove.forEach(el => el.remove());
         }
 
         // Render/update visible nodes in order
+        let elementsAppended = 0;
+        let elementsUpdated = 0;
+        
         visibleEntries.forEach(entry => {
             const { focusItem, position, angle, isSelected } = entry;
             let element = this.focusElements.get(focusItem.key);
             if (element) {
                 this.updateFocusElement(element, position, angle, isSelected);
+                elementsUpdated++;
             } else {
                 element = this.createFocusElement(focusItem, position, angle, isSelected);
                 this.focusElements.set(focusItem.key, element);
             }
             if (element.parentNode !== focusRingGroup) {
                 focusRingGroup.appendChild(element);
+                elementsAppended++;
             } else if (element.nextSibling && element.nextSibling.id === 'focusRingBackground') {
                 // Keep background as first child if present
                 focusRingGroup.appendChild(element);
             }
         });
+        
+        const totalInDOM = focusRingGroup.querySelectorAll('.focusItem').length;
+        const totalInMap = this.focusElements.size;
+        if (totalInDOM !== totalInMap) {
+            console.error(`❌ DOM MISMATCH: ${totalInDOM} elements in DOM but ${totalInMap} in Map! (appended: ${elementsAppended}, updated: ${elementsUpdated})`);
+        }
 
         // Ensure background stays behind nodes
         if (background && focusRingGroup.firstChild !== background) {
