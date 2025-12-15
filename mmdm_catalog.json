@@ -125,7 +125,8 @@
                     "focus_text_position": "radial",
                     "focus_text_transform": "none",
                     "is_numeric": false,
-                    "use_code_property": true
+                    "use_code_property": true,
+                    "is_virtual": true
                 },
                 "model": {
                     "text_format": "title_case",
