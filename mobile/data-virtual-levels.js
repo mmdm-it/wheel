@@ -148,7 +148,8 @@ export class DataVirtualLevels {
                         __level: virtualLevelName,
                         __levelDepth: virtualLevelDepth,
                         __isLeaf: false,
-                        __path: [...parentItem.__path, groupName]
+                        __path: [...parentItem.__path, groupName],
+                        __dataPath: (parentItem.__dataPath || parentItem.__path || [])
                     };
                     
                     // Add sort_number from curatorial judgment field if present
@@ -183,7 +184,8 @@ export class DataVirtualLevels {
                 __level: virtualLevelName,
                 __levelDepth: virtualLevelDepth,
                 __isLeaf: false,
-                __path: [...parentItem.__path, orphanGroupName]
+                __path: [...parentItem.__path, orphanGroupName],
+                __dataPath: (parentItem.__dataPath || parentItem.__path || [])
             });
             
             // Remove empty property if use_code_property is false
@@ -233,6 +235,7 @@ export class DataVirtualLevels {
             if (Array.isArray(aggregatedCollection)) {
                 aggregatedCollection.forEach((entry, index) => {
                     const itemName = entry && entry.name ? entry.name : `${aggregatedLevelName}-${index}`;
+                    const parentDataPath = parentItem.__dataPath || parentItem.__path || [];
                     items.push({
                         name: itemName,
                         [intermediateLevelName]: parentItem.name || parentItem[intermediateLevelName],
@@ -242,12 +245,14 @@ export class DataVirtualLevels {
                         __level: aggregatedLevelName,
                         __levelDepth: levelDepth,
                         __isLeaf: false,
-                        __path: [...parentItem.__path, itemName]
+                        __path: [...parentItem.__path, itemName],
+                        __dataPath: [...parentDataPath, index]
                     });
                 });
             } else {
                 Object.keys(aggregatedCollection).forEach(itemName => {
                     const entry = aggregatedCollection[itemName];
+                    const parentDataPath = parentItem.__dataPath || parentItem.__path || [];
                     items.push({
                         name: entry && entry.display_name ? entry.display_name : itemName,
                         [intermediateLevelName]: parentItem.name || parentItem[intermediateLevelName],
@@ -257,7 +262,8 @@ export class DataVirtualLevels {
                         __level: aggregatedLevelName,
                         __levelDepth: levelDepth,
                         __isLeaf: false,
-                        __path: [...parentItem.__path, itemName]
+                        __path: [...parentItem.__path, itemName],
+                        __dataPath: [...parentDataPath, itemName]
                     });
                 });
             }
@@ -283,6 +289,7 @@ export class DataVirtualLevels {
             if (aggregatedData && typeof aggregatedData === 'object') {
                 Object.keys(aggregatedData).forEach(itemName => {
                     const entry = aggregatedData[itemName];
+                    const parentDataPath = parentItem.__dataPath || parentItem.__path || [];
                     items.push({
                         name: entry && entry.display_name ? entry.display_name : itemName,
                         [intermediateLevelName]: intermediateName,
@@ -292,7 +299,8 @@ export class DataVirtualLevels {
                         __level: aggregatedLevelName,
                         __levelDepth: levelDepth,
                         __isLeaf: false,
-                        __path: [...parentItem.__path, intermediateName, itemName]
+                        __path: [...parentItem.__path, intermediateName, itemName],
+                        __dataPath: [...parentDataPath, intermediateName, itemName]
                     });
                 });
             }
@@ -379,6 +387,7 @@ export class DataVirtualLevels {
         const levelConfig = this.dataManager.getHierarchyLevelConfig(childLevelName);
         const items = filteredData.map((item, index) => {
             const itemName = this.dataManager.getItemDisplayName(item, `${childLevelName}-${index}`);
+            const virtualParentDataPath = virtualParentItem.__dataPath || virtualParentItem.__path || [];
             return {
                 name: itemName,
                 ...this.dataManager.extractParentProperties(virtualParentItem),
@@ -388,7 +397,9 @@ export class DataVirtualLevels {
                 __level: childLevelName,
                 __levelDepth: childLevelDepth,
                 __isLeaf: true,
-                __path: [...virtualParentItem.__path, itemName]
+                __path: [...virtualParentItem.__path, itemName],
+                // For virtual parents, use the parent's data path (don't add filtered index)
+                __dataPath: [...virtualParentDataPath]
             };
         });
         

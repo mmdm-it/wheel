@@ -852,7 +852,8 @@ class DataManager {
             __level: topLevelName,
             __levelDepth: 0,
             __isLeaf: false,
-            __path: [name]
+            __path: [name],
+            __dataPath: [name]  // Add dataPath for consistent navigation
         }));
 
         return this.sortItems(items, topLevelConfig);

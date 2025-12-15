@@ -229,6 +229,9 @@ export class DataHierarchyNavigator {
                 // Normalize v2.0 schema: map 'seq' to 'sort_number' for compatibility
                 const normalizedData = this.dataManager.normalizeItemData(itemData);
                 
+                // Get parent's data path (fallback to __path if no __dataPath exists)
+                const parentDataPath = parentItem.__dataPath || parentItem.__path || [];
+                
                 items.push({
                     name: itemName,
                     ...this.dataManager.extractParentProperties(parentItem),
@@ -238,7 +241,9 @@ export class DataHierarchyNavigator {
                     __level: childLevelName,
                     __levelDepth: childLevelDepth,
                     __isLeaf: true,
-                    __path: [...parentItem.__path, itemName]
+                    __path: [...parentItem.__path, itemName],
+                    // For arrays, use numeric index in data path for JSON navigation
+                    __dataPath: [...parentDataPath, index]
                 });
             });
         } else if (typeof dataLocation === 'object') {
@@ -262,6 +267,9 @@ export class DataHierarchyNavigator {
                 // Normalize v2.0 schema: map 'seq' to 'sort_number' for compatibility
                 const normalizedData = this.dataManager.normalizeItemData(childData);
                 
+                // Get parent's data path (fallback to __path if no __dataPath exists)
+                const parentDataPath = parentItem.__dataPath || parentItem.__path || [];
+                
                 // Create item with appropriate properties
                 const item = {
                     name: displayName,
@@ -271,7 +279,9 @@ export class DataHierarchyNavigator {
                     __levelDepth: childLevelDepth,
                     // Item is a leaf if we're at the last hierarchy level OR if it's an array with no further levels
                     __isLeaf: !hasFurtherLevels || (childIsArray && !hasFurtherLevels),
-                    __path: [...parentItem.__path, itemKey]
+                    __path: [...parentItem.__path, itemKey],
+                    // For objects, use property key in data path (same as __path)
+                    __dataPath: [...parentDataPath, itemKey]
                 };
 
                 
@@ -351,11 +361,12 @@ export class DataHierarchyNavigator {
                 }
             } else {
                 if (Array.isArray(dataLocation)) {
-                    const numericIndex = parseInt(pathSegment, 10);
-                    if (!isNaN(numericIndex) && dataLocation[numericIndex]) {
+                    // For arrays, pathSegment should be a numeric index (stored as number or parseable string)
+                    const numericIndex = typeof pathSegment === 'number' ? pathSegment : parseInt(pathSegment, 10);
+                    if (!isNaN(numericIndex) && numericIndex >= 0 && numericIndex < dataLocation.length) {
                         dataLocation = dataLocation[numericIndex];
                     } else {
-                        Logger.warn(`getDataLocationForItem: numeric segment '${pathSegment}' not found in array`);
+                        Logger.warn(`getDataLocationForItem: numeric segment '${pathSegment}' not found in array (length=${dataLocation.length})`);
                         return null;
                     }
                 } else {
