@@ -786,7 +786,319 @@ class FocusRingView {
         }
     }
 
-    resetCaches() {
+    /**
+     * Update Focus Ring positions during rotation
+     * Main rendering method for Focus Ring items with viewport filtering
+     */
+    updateFocusRingPositions(rotationOffset) {
+        const r = this.renderer;
+        const DEBUG_VERBOSE = false; // Local debug flag
+        
+        // PERFORMANCE: Reduce verbose logging during animation frames
+        if (DEBUG_VERBOSE) {
+            console.log(`🎯🔄 updateFocusRingPositions CALLED with rotationOffset=${rotationOffset?.toFixed(3) || 'undefined'}`);
+            console.log(`🎯🔄 At start: currentFocusItems=${r.currentFocusItems?.length || 0}, allFocusItems=${r.allFocusItems?.length || 0}`);
+        }
+        
+        const focusRingGroup = r.elements.focusRingGroup;
+        
+        // For sprocket chain: use all focus items but apply viewport filtering during rendering
+        const allFocusItems = r.allFocusItems.length > 0 ? r.allFocusItems : r.currentFocusItems;
+        if (!allFocusItems.length) return;
+        
+        // Validate rotationOffset
+        if (isNaN(rotationOffset)) {
+            Logger.error(`Invalid rotationOffset: ${rotationOffset}`);
+            rotationOffset = 0; // Safe fallback
+        }
+        
+        // Track rotation changes - hide Child Pyramid during rotation
+        const programmaticFocus = r.forceImmediateFocusSettlement === true;
+        const rotationTriggered = this.lastRotationOffset !== undefined && Math.abs(rotationOffset - this.lastRotationOffset) > 0.001;
+        // Don't hide Child Pyramid if we're within the protection period after immediate settlement
+        const isProtected = this.protectedRotationOffset !== undefined && Math.abs(rotationOffset - this.protectedRotationOffset) < 0.01;
+        const isRotating = !programmaticFocus && !isProtected && rotationTriggered;
+        
+        if (isRotating) {
+            const errorDivCount = document.querySelectorAll('.sort-number-error').length;
+            if (errorDivCount > 0) {
+                console.log('🔄 ROTATION DETECTED - Removing error divs:', errorDivCount);
+            }
+            r.focusRingDebug('🔄 Rotation detected - hiding Child Pyramid temporarily');
+            
+            // Hide Child Pyramid and fan lines during rotation
+            r.elements.childRingGroup.classList.add('hidden');
+            r.elements.detailItemsGroup.classList.add('hidden');
+            r.clearFanLines();
+            r.navigationView.clearParentLine();
+            
+            // Remove any sort number error messages
+            const errorDivs = document.querySelectorAll('.sort-number-error');
+            
+            errorDivs.forEach(div => {
+                console.log('🗑️ Removing error div:', div.textContent.substring(0, 50));
+                div.remove();
+            });
+        }
+        this.lastRotationOffset = rotationOffset;
+        
+        // PERFORMANCE OPTIMIZATION: Check if focus items changed - only rebuild if needed
+        const focusItemsKey = allFocusItems.map(item => item === null ? 'GAP' : item.key).join('|');
+        const focusItemsChanged = this._lastFocusItemsKey !== focusItemsKey;
+        this._lastFocusItemsKey = focusItemsKey;
+        
+        // BUG FIX: Don't rebuild during rotation - causes text element duplication
+        // Only rebuild when the actual items change (navigation to different level)
+        const shouldRebuild = focusItemsChanged;
+        
+        console.log(`🔧 shouldRebuild=${shouldRebuild} (focusItemsChanged=${focusItemsChanged}, isRotating=${isRotating}, rotationTriggered=${rotationTriggered})`);
+        
+        // Clear Map when rebuilding to prevent stale key lookups
+        if (shouldRebuild) {
+            console.log(`🧹 REBUILD: Clearing focusRingView.focusElements Map (was ${this.focusElements.size} entries)`);
+            this.focusElements.clear();
+        }
+        
+        // Ensure background band stays in DOM; we'll diff visible nodes instead of clearing all
+        const background = focusRingGroup.querySelector('#focusRingBackground');
+        if (background && !background.parentNode) {
+            focusRingGroup.appendChild(background);
+        }
+        
+        // Use updated angle calculation logic to maintain JSON order
+        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD; // Keep original 4.3° spacing
+        const centerAngle = r.viewport.getCenterAngle();
+        const adjustedCenterAngle = centerAngle + rotationOffset;
+        const middleIndex = (allFocusItems.length - 1) / 2;
+        
+        // Validate centerAngle
+        if (isNaN(centerAngle) || isNaN(adjustedCenterAngle)) {
+            Logger.error(`Invalid angles: centerAngle=${centerAngle}, adjustedCenterAngle=${adjustedCenterAngle}`);
+            return;
+        }
+        
+        // Calculate arc parameters
+        const arcParams = r.viewport.getArcParameters();
+        let selectedFocusItem = null;
+        let selectedIndex = -1;
+        
+        // Only log for Bible books
+        const isBibleBooks = allFocusItems.length > 0 && allFocusItems[0].name?.startsWith('Liber_');
+        
+        if (isBibleBooks) {
+            r.focusRingDebug(`📚 BIBLE BOOKS - Focus items order (${allFocusItems.length} items):`);
+            allFocusItems.forEach((item, idx) => {
+                const sortNum = item.data?.sort_number ?? item.sort_number ?? 'none';
+                r.focusRingDebug(`  [${idx}] ${item.name} (sort_number: ${sortNum})`);
+            });
+            r.focusRingDebug(`🎯 Center angle: ${(centerAngle * 180 / Math.PI).toFixed(1)}°, Rotation offset: ${(rotationOffset * 180 / Math.PI).toFixed(1)}°`);
+            r.focusRingDebug(`🎯 Adjusted center angle: ${(adjustedCenterAngle * 180 / Math.PI).toFixed(1)}°`);
+        }
+
+        // Process all focus items but only render those in viewport window (with small buffer)
+        const visibleEntries = [];
+        const viewportBuffer = angleStep * 2; // keep a small buffer to reduce pop-in
+
+        allFocusItems.forEach((focusItem, index) => {
+            // Skip gap entries (null values used for visual separation between cousin groups)
+            if (focusItem === null) {
+                return; // Don't render anything for gaps
+            }
+            
+            // Validate sort_number
+            const sortNumber = focusItem.data?.sort_number ?? focusItem.sort_number;
+            if (sortNumber === undefined || sortNumber === null) {
+                Logger.error(`❌ RUNTIME ERROR: Item "${focusItem.name}" at index ${index} missing sort_number`);
+            }
+            
+            // Calculate angle using original logic
+            const angle = adjustedCenterAngle + (middleIndex - index) * angleStep;
+            
+            if (isBibleBooks) {
+                r.focusRingDebug(`📐 Item [${index}] ${focusItem.name}: angle = ${(angle * 180 / Math.PI).toFixed(1)}°`);
+            }
+            
+            // Validate calculated angle
+            if (isNaN(angle)) {
+                Logger.error(`Invalid calculated angle for focus item ${index}: ${angle}`);
+                return;
+            }
+            
+            // Check if this focus item should be visible (viewport filter)
+            const angleDiff = Math.abs(angle - centerAngle);
+            const maxViewportAngle = MOBILE_CONFIG.VIEWPORT.VIEWPORT_ARC / 2;
+            
+            if (angleDiff <= maxViewportAngle + viewportBuffer) {
+                const position = r.calculateFocusPosition(angle, arcParams);
+                const isSelected = angleDiff < (angleStep * 0.5);
+                if (isSelected) {
+                    selectedFocusItem = focusItem;
+                    selectedIndex = index;
+                    if (DEBUG_VERBOSE) {
+                        console.log(`🎯🎯🎯 ITEM SELECTED AT CENTER: [${index}] ${focusItem.name}, angleDiff=${angleDiff.toFixed(3)}°, rotationOffset=${(rotationOffset * 180 / Math.PI).toFixed(1)}°`);
+                    }
+                    r.focusRingDebug('🎯 SELECTED during rotation:', focusItem.name, 'angleDiff:', angleDiff.toFixed(3), 'threshold:', (angleStep * 0.5).toFixed(3));
+                }
+
+                visibleEntries.push({
+                    focusItem,
+                    position,
+                    angle,
+                    isSelected
+                });
+            }
+        });
+
+        // Cleanup: remove elements that are no longer visible (unless rebuilding - Map already cleared)
+        if (!shouldRebuild) {
+            const visibleKeys = new Set(visibleEntries.map(entry => entry.focusItem.key));
+            for (const [key, element] of this.focusElements.entries()) {
+                if (!visibleKeys.has(key)) {
+                    element.remove();
+                    this.focusElements.delete(key);
+                    console.log(`🗑️ CLEANUP: Removed element for key="${key}" (scrolled out of viewport)`);
+                }
+            }
+        } else {
+            // On rebuild, clear all existing DOM elements (except background)
+            const elementsToRemove = focusRingGroup.querySelectorAll('.focusItem');
+            console.log(`🧹 REBUILD: Removing ${elementsToRemove.length} DOM elements`);
+            elementsToRemove.forEach(el => el.remove());
+        }
+
+        // Render/update visible nodes in order
+        let elementsAppended = 0;
+        let elementsUpdated = 0;
+        
+        visibleEntries.forEach(entry => {
+            const { focusItem, position, angle, isSelected } = entry;
+            let element = this.focusElements.get(focusItem.key);
+            if (element) {
+                r.updateFocusElement(element, position, angle, isSelected);
+                elementsUpdated++;
+            } else {
+                element = r.createFocusElement(focusItem, position, angle, isSelected);
+                this.focusElements.set(focusItem.key, element);
+            }
+            if (element.parentNode !== focusRingGroup) {
+                focusRingGroup.appendChild(element);
+                elementsAppended++;
+            } else if (element.nextSibling && element.nextSibling.id === 'focusRingBackground') {
+                // Keep background as first child if present
+                focusRingGroup.appendChild(element);
+            }
+        });
+        
+        const totalInDOM = focusRingGroup.querySelectorAll('.focusItem').length;
+        const totalInMap = this.focusElements.size;
+        if (totalInDOM !== totalInMap) {
+            console.error(`❌ DOM MISMATCH: ${totalInDOM} elements in DOM but ${totalInMap} in Map! (appended: ${elementsAppended}, updated: ${elementsUpdated})`);
+        }
+
+        // Ensure background stays behind nodes
+        if (background && focusRingGroup.firstChild !== background) {
+            focusRingGroup.insertBefore(background, focusRingGroup.firstChild);
+        }
+        
+        // Position magnifying ring at the calculated center angle
+        r.positionMagnifyingRing();
+        
+        // COUSIN NAVIGATION FIX: If no item was selected (gap at center), find nearest non-gap item
+        if (selectedIndex === -1 && allFocusItems.length > 0) {
+            // Calculate which index should be at center based on angles
+            const centerIndexFloat = middleIndex - (rotationOffset / angleStep);
+            const centerIndexRounded = Math.round(centerIndexFloat);
+            
+            // Search outward from center position to find nearest non-gap item
+            let searchRadius = 0;
+            const maxSearch = allFocusItems.length;
+            
+            while (searchRadius < maxSearch && selectedFocusItem === null) {
+                // Check items at increasing distances from center
+                const checkIndices = [];
+                if (searchRadius === 0) {
+                    checkIndices.push(centerIndexRounded);
+                } else {
+                    checkIndices.push(centerIndexRounded + searchRadius);
+                    checkIndices.push(centerIndexRounded - searchRadius);
+                }
+                
+                for (const checkIndex of checkIndices) {
+                    if (checkIndex >= 0 && checkIndex < allFocusItems.length) {
+                        const candidate = allFocusItems[checkIndex];
+                        if (candidate !== null) {
+                            selectedFocusItem = candidate;
+                            selectedIndex = checkIndex;
+                            Logger.debug(`🎯 Gap at center - selected nearest item: [${selectedIndex}] ${selectedFocusItem.name}`);
+                            break;
+                        }
+                    }
+                }
+                searchRadius++;
+            }
+        }
+        
+        // Update active path with selected focus item  
+        if (selectedIndex >= 0 && selectedFocusItem) {
+            // Build appropriate active path based on item type
+            r.buildActivePath(selectedFocusItem);
+            
+            r.setSelectedFocusItem(selectedFocusItem);
+            const parentLevel = r.getPreviousHierarchyLevel(r.getItemHierarchyLevel(selectedFocusItem));
+            const parentName = parentLevel ? r.getParentNameForLevel(selectedFocusItem, parentLevel) : null;
+            r.updateParentButton(parentName, true); // Skip animation during rotation
+
+            const angle = adjustedCenterAngle + (middleIndex - selectedIndex) * angleStep;
+
+            if (r.forceImmediateFocusSettlement) {
+                r.focusRingDebug('🔺 Immediate focus settlement triggered - showing child content without rotation delay');
+                r.isRotating = false;
+                if (r.settleTimeout) {
+                    clearTimeout(r.settleTimeout);
+                }
+                r.elements.detailItemsGroup.classList.add('hidden');
+                r.clearFanLines();
+                r.showChildContentForFocusItem(selectedFocusItem, angle);
+            } else {
+                // Mark as rotating and defer child display
+                r.isRotating = true;
+
+                // Clear any existing settle timeout
+                if (r.settleTimeout) {
+                    clearTimeout(r.settleTimeout);
+                }
+
+                // Hide child ring immediately during rotation to prevent strobing
+                r.focusRingDebug('🔄 ROTATION: Focus item selected but rotating - hiding Child Pyramid during rotation');
+                r.elements.childRingGroup.classList.add('hidden');
+                r.elements.detailItemsGroup.classList.add('hidden');
+                r.clearFanLines();
+
+                // Set timeout to show appropriate child content after settling
+                r.settleTimeout = setTimeout(() => {
+                    r.focusRingDebug('⏰ TIMEOUT FIRED: isRotating=', r.isRotating, 'selectedFocusItem=', r.selectedFocusItem && r.selectedFocusItem.name, 'expectedItem=', selectedFocusItem.name);
+                    r.isRotating = false;
+                    if (r.selectedFocusItem && r.selectedFocusItem.key === selectedFocusItem.key) {
+                        r.focusRingDebug('✅ Focus item settled:', selectedFocusItem.name, 'showing child content');
+                        r.showChildContentForFocusItem(selectedFocusItem, angle);
+                    } else {
+                        r.focusRingDebug('❌ Timeout fired but item changed - not showing child content');
+                    }
+                }, MOBILE_CONFIG.TIMING.FOCUS_ITEM_SETTLE_DELAY);
+            }
+            
+        } else {
+            // Hide child ring immediately when no focus item is selected (during rotation)
+            r.focusRingDebug('🔄 ROTATION: No focus item selected - hiding Child Pyramid immediately');
+            r.elements.childRingGroup.classList.add('hidden');
+            r.elements.detailItemsGroup.classList.add('hidden');
+            r.clearFanLines();
+            r.setSelectedFocusItem(null);
+            r.hideParentButton();
+        }
+    }
+
+    reset() {
         this.focusElements.clear();
         this.positionCache.clear();
         this._lastFocusItemsKey = null;
