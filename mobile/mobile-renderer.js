@@ -6,9 +6,6 @@
  * Edit this file directly - no bundling required.
  */
 
-// Debug flag - set to false to disable verbose console logging
-const DEBUG_VERBOSE = false;
-
 import { MOBILE_CONFIG, VERSION } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
 import { MobileAnimation } from './mobile-animation.js';
@@ -668,25 +665,6 @@ class MobileRenderer {
         this.focusRingView.updateFocusItemText(textElement, angle, item, isSelected);
     }
     
-    addTimestampToCenter() {
-        const existingTimestamp = this.elements.centralGroup.querySelector('.timestamp');
-        if (existingTimestamp) {
-            existingTimestamp.remove();
-        }
-        
-        const timestamp = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
-        timestamp.setAttribute('class', 'timestamp');
-        timestamp.setAttribute('x', '0');
-        timestamp.setAttribute('y', '60');
-        timestamp.setAttribute('text-anchor', 'middle');
-        timestamp.setAttribute('fill', '#f2f2e6');
-        timestamp.setAttribute('font-size', '8');
-        timestamp.setAttribute('opacity', '0.7');
-        timestamp.textContent = new Date().toLocaleTimeString();
-        
-        this.elements.centralGroup.appendChild(timestamp);
-    }
-    
     /**
      * Get the color scheme from display_config
      */
@@ -832,51 +810,16 @@ class MobileRenderer {
     hideParentButton() {
         this.navigationView.hideParentButton(true);
     }
-    
-    /**
-     * Animate a Child Pyramid node to the Magnifier position
-     * Delegates to animation module
-     */
-    animateNodeToMagnifier(nodeGroup, startPos, endPos, onComplete) {
-        this.animation.animateNodeToMagnifier(nodeGroup, startPos, endPos, onComplete);
-    }
 
-    /**
-     * Handle Child Pyramid item clicks (nzone migration)
-     */
     /**
      * Handle Child Pyramid item click - delegates to NavigationCoordinator
      */
     handleChildPyramidClick(item, event) {
         this.navigationCoordinator.handleChildPyramidClick(item, event);
     }
-    
-    /**
-     * Animate the current Magnifier node to Parent Button position
-     * Delegates to animation module
-     */
-    animateMagnifierToParentButton(clickedItem) {
-        this.animation.animateMagnifierToParentButton(clickedItem, this.selectedFocusItem);
-    }
-    
-    /**
-     * Animate all sibling nodes from Child Pyramid to Focus Ring positions
-     * @param {Object} clickedItem - The item that was clicked
-     * @param {Array} nodePositions - Array of {node, key, startX, startY} for all Child Pyramid nodes
-     * @param {Function} onComplete - Callback when all animations complete
-     */
-    animateSiblingsToFocusRing(clickedItem, nodePositions, onComplete) {
-        const allSiblings = this.currentChildItems || [];
-        this.animation.animateSiblingsToFocusRing(clickedItem, nodePositions, allSiblings, onComplete);
-    }
-
-    runInOutInDebugLoop(animatedNodes, done) {
-        this.animation.runInOutInDebugLoop(animatedNodes, done);
-    }
 
     /**
      * OUT MIGRATION: Animate Focus Ring nodes to Child Pyramid positions
-     * This is the reverse of animateSiblingsToFocusRing
      * Used when Parent Button is clicked to navigate OUT to parent level
      * 
      * @param {Array} focusItems - Current items in Focus Ring (data)
@@ -890,13 +833,6 @@ class MobileRenderer {
             this.elements.magnifier,
             onComplete
         );
-    }
-    
-    /**
-     * Continue Child Pyramid click after animation - delegates to NavigationCoordinator
-     */
-    continueChildPyramidClick(item) {
-        this.navigationCoordinator.continueChildPyramidClick(item);
     }
 
     /**
