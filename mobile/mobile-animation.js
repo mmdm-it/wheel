@@ -182,7 +182,6 @@ class MobileAnimation {
             console.log('🎬 Stage 5: Parent Button is hidden, skipping off-screen animation');
         } else {
             console.log('🎬 Stage 5: Animating Parent Button off-screen');
-            console.log('🎬 Stage 5: Initial state - classes:', parentButtonGroup.classList.toString(), 'opacity:', parentButtonGroup.style.opacity);
             const currentTransform = parentButtonGroup.getAttribute('transform');
             console.log('🎬 Stage 5: Current transform:', currentTransform);
             
@@ -209,11 +208,8 @@ class MobileAnimation {
             // NOTE: Don't add 'hidden' class here - updateParentButton() will handle visibility
             // The new parent button should appear after this animation completes
             setTimeout(() => {
-                console.log('🎬 Stage 5: Animation complete (t=600ms), resetting transition/opacity');
-                console.log('🎬 Stage 5: Final state - classes:', parentButtonGroup.classList.toString(), 'opacity:', parentButtonGroup.style.opacity);
                 parentButtonGroup.style.transition = '';
                 parentButtonGroup.style.opacity = '';
-                console.log('🎬 Stage 5: After reset - classes:', parentButtonGroup.classList.toString(), 'computed opacity:', window.getComputedStyle(parentButtonGroup).opacity);
             }, 600);
         }
     }

@@ -32,14 +32,9 @@ class NavigationView {
     }
 
     updateParentButton({ parentName, currentLevel, topNavLevel, skipAnimation = false, isRotating = false, isAnimating = false } = {}) {
-        console.log('🔼🔼🔼 updateParentButton called:', { parentName, currentLevel, topNavLevel, skipAnimation, isRotating, isAnimating });
-        if (!this.parentButtonGroup || !this.parentText) {
-            console.log('🔼 updateParentButton: parentButtonGroup or parentText not found');
-            return;
-        }
+        if (!this.parentButtonGroup || !this.parentText) return;
 
         if (!parentName) {
-            console.log('🔼 updateParentButton: no parentName, hiding button');
             this.hideParentButton(skipAnimation);
             return;
         }
@@ -53,23 +48,18 @@ class NavigationView {
         this.parentText.setAttribute('y', '0');
         this.parentText.setAttribute('text-anchor', 'middle');
 
-        console.log('🔼 updateParentButton: REMOVING hidden class, current classes:', this.parentButtonGroup.classList.toString());
         this.parentButtonGroup.classList.remove('hidden');
         this.parentButtonGroup.style.display = '';
         this.parentButtonGroup.style.pointerEvents = isAtTopLevel ? 'none' : 'visiblePainted';
         this.parentText.style.pointerEvents = 'none';
 
-        console.log('🔼 updateParentButton: setting display and opacity, skipAnimation:', skipAnimation);
         if (!skipAnimation) {
             this.parentButtonGroup.style.transition = 'transform 200ms ease-out, opacity 200ms ease-out';
             this.parentButtonGroup.style.opacity = '1';
-            console.log('🔼 updateParentButton: WITH animation, opacity set to 1');
         } else {
             this.parentButtonGroup.style.transition = '';
             this.parentButtonGroup.style.opacity = '';
-            console.log('🔼 updateParentButton: NO animation, clearing opacity');
         }
-        console.log('🔼 updateParentButton: final computed opacity:', window.getComputedStyle(this.parentButtonGroup).opacity);
 
         if (this.parentNodeCircle) {
             this.parentNodeCircle.setAttribute('cx', '0');
@@ -112,25 +102,18 @@ class NavigationView {
     }
 
     hideParentButton(skipAnimation = false) {
-        console.log('🔼🔼🔼 hideParentButton called, skipAnimation:', skipAnimation);
-        if (!this.parentButtonGroup) {
-            console.log('🔼 hideParentButton: parentButtonGroup not found');
-            return;
-        }
+        if (!this.parentButtonGroup) return;
         this.clearParentLine();
         this._lastParentButtonNuc = null;
         if (skipAnimation) {
-            console.log('🔼 hideParentButton: ADDING hidden class (no animation)');
             this.parentButtonGroup.classList.add('hidden');
             this.parentButtonGroup.style.opacity = '';
             this.parentButtonGroup.style.transition = '';
         } else {
-            console.log('🔼 hideParentButton: animating opacity to 0, will add hidden class in 160ms');
             this.parentButtonGroup.style.transition = 'opacity 150ms ease-out';
             this.parentButtonGroup.style.opacity = '0';
             setTimeout(() => {
                 if (this.parentButtonGroup) {
-                    console.log('🔼 hideParentButton: ADDING hidden class after animation');
                     this.parentButtonGroup.classList.add('hidden');
                     this.parentButtonGroup.style.transition = '';
                 }
