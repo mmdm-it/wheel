@@ -20,6 +20,7 @@ import { TranslationToggle } from './translation-toggle.js';
 import { NavigationView } from './navigation-view.js';
 import { FocusRingView } from './focus-ring-view.js';
 import { MagnifierManager } from './magnifier-manager.js';
+import { ThemeManager } from './theme-manager.js';
 
 /**
  * Efficient renderer that minimizes DOM manipulation
@@ -29,6 +30,7 @@ class MobileRenderer {
         this.viewport = viewportManager;
         this.dataManager = dataManager;
         this.navigationState = navigationState;
+        this.theme = new ThemeManager(dataManager);
         this.controller = null; // injected controller (e.g., MobileCatalogApp)
 
         // Modules
@@ -1456,30 +1458,15 @@ class MobileRenderer {
      * Get the color scheme from display_config
      */
     getColorScheme() {
-        const displayConfig = this.dataManager.getDisplayConfig();
-        return displayConfig && displayConfig.color_scheme || {
-            background: '#868686',
-            nodes: '#f1b800',
-            detail_sector: '#362e6a',
-            text_primary: '#000000',
-            text_secondary: '#ffffff'
-        };
+        return this.theme.getColorScheme();
     }
 
     getColor(type, name) {
-        // Special handling for volume selector
-        if (type === 'volume_selector') {
-            return '#362e6a'; // MMdM blue for volume selector
-        }
-        
-        // Get color from display configuration
-        const levelConfig = this.dataManager.getHierarchyLevelConfig(type);
-        const colorScheme = this.getColorScheme();
-        return levelConfig && levelConfig.color || colorScheme.nodes;
+        return this.theme.getColor(type, name);
     }
     
     getColorForType(type) {
-        return this.getColor(type, '');
+        return this.theme.getColorForType(type);
     }
     
     /**
