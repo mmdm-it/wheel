@@ -11,6 +11,7 @@ const DEBUG_VERBOSE = false;
 
 import { MOBILE_CONFIG } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
+import { ItemUtils } from './item-utils.js';
 
 /**
  * Manages the Child Pyramid display with dynamic arc positioning
@@ -57,7 +58,7 @@ class MobileChildPyramid {
         
         // Validate sort_numbers - this should never fail if renderer validation worked
         const itemsWithoutSort = items.filter(item => {
-            const sortNum = item.data?.sort_number ?? item.sort_number;
+            const sortNum = ItemUtils.getSortNumber(item);
             return sortNum === undefined || sortNum === null;
         });
         
@@ -82,7 +83,7 @@ class MobileChildPyramid {
         // Sort items based on type
         const sortedItems = this.sortChildPyramidItems(items, itemType);
         if (DEBUG_VERBOSE) console.log(`🔺 CHILD PYRAMID SORTED ORDER:`, sortedItems.map(item => {
-            const sortNum = item.data?.sort_number ?? item.sort_number;
+            const sortNum = ItemUtils.getSortNumber(item);
             return `${item.name}(sort:${sortNum})`;
         }).join(', '));
         
@@ -136,8 +137,8 @@ class MobileChildPyramid {
         });
         
         return sorted.sort((a, b) => {
-            const sortA = a.data?.sort_number ?? a.sort_number ?? 0;
-            const sortB = b.data?.sort_number ?? b.sort_number ?? 0;
+            const sortA = ItemUtils.getSortNumber(a) ?? 0;
+            const sortB = ItemUtils.getSortNumber(b) ?? 0;
             
             if (sortA !== sortB) {
                 return sortA - sortB; // ASCENDING by sort_number
@@ -208,7 +209,7 @@ class MobileChildPyramid {
             const x = centerX + actualRadius * Math.cos(angle);
             const y = centerY + actualRadius * Math.sin(angle);
             
-            const sortNum = item.data?.sort_number ?? item.sort_number;
+            const sortNum = ItemUtils.getSortNumber(item);
             if (DEBUG_VERBOSE) console.log(`🔺 PLACING: ${item.name}(sort:${sortNum}) at arrayIndex=${index}, visualPosition=${positionIndex}, angle=${(angle*180/Math.PI).toFixed(1)}°`);
             
             // Cache node position for fan lines
@@ -314,7 +315,7 @@ class MobileChildPyramid {
         // Single event handler on hit zone (most efficient approach)
         hitZone.addEventListener('click', (e) => {
             e.stopPropagation();
-            const sortNum = item.data?.sort_number ?? item.sort_number;
+            const sortNum = ItemUtils.getSortNumber(item);
             console.log(`🔺🔺🔺 CHILD PYRAMID CLICK DETECTED: "${item.name}" (sort_number: ${sortNum})`);
             this.handleChildPyramidClick(item, e);
         });

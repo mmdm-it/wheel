@@ -10,6 +10,7 @@ import { TouchRotationHandler } from './mobile-touch.js';
 import { DataManager } from './mobile-data.js';
 import { MobileRenderer } from './mobile-renderer.js';
 import { NavigationState } from './navigation-state.js';
+import { ItemUtils } from './item-utils.js';
 
 /**
  * Main application class that coordinates all components
@@ -862,7 +863,7 @@ class MobileCatalogApp {
             return;
         }
 
-        const selectedParent = parentSiblings.find(item => item.key === parentItem.key) || parentSiblings[0];
+        const selectedParent = ItemUtils.findItemByKey(parentSiblings, parentItem.key) || parentSiblings[0];
         if (!selectedParent) {
             Logger.warn('🔼 Parent level item not found among siblings');
             return;

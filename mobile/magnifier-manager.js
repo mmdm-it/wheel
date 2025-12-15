@@ -8,6 +8,7 @@
 
 import { MOBILE_CONFIG } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
+import { ItemUtils } from './item-utils.js';
 
 class MagnifierManager {
     constructor(viewport, renderer) {
@@ -231,9 +232,7 @@ class MagnifierManager {
         }
         
         // Find the index of the clicked item
-        const targetIndex = currentFocusItems.findIndex(item => {
-            return item !== null && item.key === focusItem.key;
-        });
+        const targetIndex = ItemUtils.findItemIndexByKey(currentFocusItems, focusItem.key);
         
         if (targetIndex < 0) {
             Logger.warn('🎯 Target item not found in currentFocusItems:', focusItem.name);

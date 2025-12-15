@@ -11,6 +11,7 @@
 
 import { MOBILE_CONFIG } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
+import { ItemUtils } from './item-utils.js';
 
 /**
  * Animation manager for mobile catalog node migrations
@@ -382,7 +383,7 @@ class MobileAnimation {
         // Create animated clones for each sibling
         nodePositions.forEach(nodePos => {
             // Find this node's item in siblings array
-            const siblingIndex = allSiblings.findIndex(sib => sib.key === nodePos.key);
+            const siblingIndex = ItemUtils.findItemIndexByKey(allSiblings, nodePos.key);
             if (siblingIndex === -1) {
                 Logger.warn(`Node ${nodePos.key} not found in siblings array`);
                 return;
@@ -428,7 +429,7 @@ class MobileAnimation {
             const translateY = endPos.y - nodePos.startY;
             
             // Determine if this is the clicked node (will be centered at Magnifier)
-            const isClickedNode = siblingItem.key === clickedItem.key;
+            const isClickedNode = ItemUtils.isSameItem(siblingItem, clickedItem);
             
             Logger.debug(`🎬 Node ${siblingItem.name}: translate(${translateX.toFixed(1)}, ${translateY.toFixed(1)}) rotate ${textRotationDelta.toFixed(1)}° ${isClickedNode ? '[CLICKED - will magnify]' : ''}`);
             

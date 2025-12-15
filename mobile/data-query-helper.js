@@ -13,6 +13,8 @@
  * previously mixed into the renderer.
  */
 
+import { ItemUtils } from './item-utils.js';
+
 import { Logger } from './mobile-logger.js';
 
 export class DataQueryHelper {
@@ -71,7 +73,7 @@ export class DataQueryHelper {
         const allParents = this.getChildItemsForLevel(grandparentItem, parentLevel);
         
         // Find the index of the current parent in the list
-        const currentParentIndex = allParents.findIndex(p => p.key === parentItem.key);
+        const currentParentIndex = ItemUtils.findItemIndexByKey(allParents, parentItem.key);
         
         if (currentParentIndex === -1) {
             Logger.warn(`🎯👥 Could not find current parent ${parentItem.name} in parent list - using all parents`);
@@ -334,7 +336,7 @@ export class DataQueryHelper {
      */
     findItemIndexInArray(item, array, level) {
         console.log(`🔺🔍 SEARCHING FOR: key="${item.key}" in array of ${array.length} items (including gaps)`);
-        const index = array.findIndex(sibling => sibling !== null && sibling.key === item.key);
+        const index = ItemUtils.findItemIndexByKey(array, item.key);
         console.log(`🔺🔍 FOUND AT INDEX: ${index} (${index >= 0 ? array[index].name : 'NOT FOUND'})`);
         
         if (index === -1) {

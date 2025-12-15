@@ -22,6 +22,7 @@ import { DataQueryHelper } from './data-query-helper.js';
 import { ParentNameBuilder } from './parent-name-builder.js';
 import { NavigationCoordinator } from './navigation-coordinator.js';
 import { ChildContentCoordinator } from './child-content-coordinator.js';
+import { ItemUtils } from './item-utils.js';
 
 /**
  * Efficient renderer that minimizes DOM manipulation
@@ -434,7 +435,7 @@ class MobileRenderer {
         }
         
         const itemsWithoutSort = items.filter(item => {
-            const sortNum = item.data?.sort_number ?? item.sort_number;
+            const sortNum = ItemUtils.getSortNumber(item);
             return sortNum === undefined || sortNum === null;
         });
 

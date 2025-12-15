@@ -5,6 +5,7 @@
 import { MOBILE_CONFIG } from './mobile-config.js';
 import { Logger } from './mobile-logger.js';
 import { CoordinateSystem, HubNucCoordinate } from './mobile-coordinates.js';
+import { ItemUtils } from './item-utils.js';
 
 class FocusRingView {
     constructor(renderer) {
@@ -161,7 +162,7 @@ class FocusRingView {
         // Debug: Log first 10 items with their sort_numbers
         Logger.info(`🎯 First 10 focus items:`);
         r.currentFocusItems.slice(0, 10).forEach((item, idx) => {
-            const sortNum = item.data?.sort_number ?? item.sort_number;
+            const sortNum = ItemUtils.getSortNumber(item);
             Logger.info(`   [${idx}] ${item.name} (sort_number: ${sortNum})`);
         });
 
@@ -169,7 +170,7 @@ class FocusRingView {
             // Find item with specified sort_number
             const targetSortNumber = startupConfig.initial_magnified_item;
             const targetIndex = r.currentFocusItems.findIndex(item => {
-                const itemSortNumber = item.data?.sort_number ?? item.sort_number;
+                const itemSortNumber = ItemUtils.getSortNumber(item);
                 return itemSortNumber === targetSortNumber;
             });
 
@@ -177,7 +178,7 @@ class FocusRingView {
 
             if (targetIndex === -1) {
                 const availableSortNumbers = r.currentFocusItems
-                    .map(item => item.data?.sort_number ?? item.sort_number)
+                    .map(item => ItemUtils.getSortNumber(item))
                     .filter(n => n !== undefined)
                     .sort((a, b) => a - b)
                     .join(', ');
@@ -308,7 +309,7 @@ class FocusRingView {
             }
 
             // Validate sort_number
-            const sortNumber = focusItem.data?.sort_number ?? focusItem.sort_number;
+            const sortNumber = ItemUtils.getSortNumber(focusItem);
             if (sortNumber === undefined || sortNumber === null) {
                 Logger.error(`❌ RUNTIME ERROR: Item "${focusItem.name}" at index ${index} missing sort_number`);
             }
@@ -611,7 +612,7 @@ class FocusRingView {
             }
 
             // Some focus arrays contain null gap placeholders; guard before reading key
-            const currentItem = r.currentFocusItems?.find(item => item && item.key === clickedKey);
+            const currentItem = ItemUtils.findItemByKey(r.currentFocusItems, clickedKey);
 
             if (currentItem) {
                 if (r.DEBUG_VERBOSE) console.log(`🎯✅ CLICK: Found item "${currentItem.name}"`);
@@ -888,7 +889,7 @@ class FocusRingView {
         if (isBibleBooks) {
             r.focusRingDebug(`📚 BIBLE BOOKS - Focus items order (${allFocusItems.length} items):`);
             allFocusItems.forEach((item, idx) => {
-                const sortNum = item.data?.sort_number ?? item.sort_number ?? 'none';
+                const sortNum = ItemUtils.getSortNumber(item) ?? 'none';
                 r.focusRingDebug(`  [${idx}] ${item.name} (sort_number: ${sortNum})`);
             });
             r.focusRingDebug(`🎯 Center angle: ${(centerAngle * 180 / Math.PI).toFixed(1)}°, Rotation offset: ${(rotationOffset * 180 / Math.PI).toFixed(1)}°`);
@@ -906,7 +907,7 @@ class FocusRingView {
             }
             
             // Validate sort_number
-            const sortNumber = focusItem.data?.sort_number ?? focusItem.sort_number;
+            const sortNumber = ItemUtils.getSortNumber(focusItem);
             if (sortNumber === undefined || sortNumber === null) {
                 Logger.error(`❌ RUNTIME ERROR: Item "${focusItem.name}" at index ${index} missing sort_number`);
             }
@@ -1078,7 +1079,7 @@ class FocusRingView {
                 r.settleTimeout = setTimeout(() => {
                     r.focusRingDebug('⏰ TIMEOUT FIRED: isRotating=', r.isRotating, 'selectedFocusItem=', r.selectedFocusItem && r.selectedFocusItem.name, 'expectedItem=', selectedFocusItem.name);
                     r.isRotating = false;
-                    if (r.selectedFocusItem && r.selectedFocusItem.key === selectedFocusItem.key) {
+                    if (r.selectedFocusItem && ItemUtils.isSameItem(r.selectedFocusItem, selectedFocusItem)) {
                         r.focusRingDebug('✅ Focus item settled:', selectedFocusItem.name, 'showing child content');
                         r.showChildContentForFocusItem(selectedFocusItem, angle);
                     } else {
@@ -1123,7 +1124,7 @@ class FocusRingView {
         
         // Calculate the angle for the selected item
         const allFocusItems = r.allFocusItems.length > 0 ? r.allFocusItems : r.currentFocusItems;
-        const selectedIndex = allFocusItems.findIndex(item => item.key === r.selectedFocusItem.key);
+        const selectedIndex = ItemUtils.findItemIndexByKey(allFocusItems, r.selectedFocusItem.key);
         
         if (selectedIndex < 0) {
             Logger.warn('🎯 Selected focus item not found in focus items list');
