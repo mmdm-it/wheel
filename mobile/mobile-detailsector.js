@@ -39,6 +39,419 @@ class MobileDetailSector {
     }
 
     /**
+     * Create the Detail Sector circle at upper right corner
+     * This circle animates to the focus ring center when a leaf item is selected
+     */
+    createCircle() {
+        // Check if circle should be hidden for this volume
+        const displayConfig = this.dataManager.getDisplayConfig();
+        const hideCircle = displayConfig?.detail_sector?.hide_circle;
+        
+        if (hideCircle) {
+            Logger.debug('🔵 Detail Sector circle disabled by config (hide_circle: true)');
+            // Remove any existing circle from previous volume
+            const existingCircle = document.getElementById('detailSectorCircle');
+            if (existingCircle) {
+                existingCircle.remove();
+                Logger.debug('🔵 Removed existing Detail Sector circle');
+            }
+            return;
+        }
+        
+        // Calculate radius as 12% of the shorter viewport dimension
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const shorterSide = Math.min(viewportWidth, viewportHeight);
+        const radius = shorterSide * 0.12;
+        
+        // Calculate logo dimensions (needed for proper positioning)
+        const logoScaleFactor = 1.8;
+        const logoWidth = radius * 2 * logoScaleFactor;
+        const logoHalfWidth = logoWidth / 2;
+        
+        // Calculate margin as 3% of shorter side for proportional spacing
+        const margin = shorterSide * 0.03;
+        
+        // Position in upper right corner (origin at screen center)
+        // Use logo half-width for right edge calculation since logo is wider than circle
+        const cx = (viewportWidth / 2) - logoHalfWidth - margin;
+        const cy = -(viewportHeight / 2) + radius + margin;
+        
+        // Create Detail Sector circle
+        const circle = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'circle');
+        circle.setAttribute('id', 'detailSectorCircle');
+        circle.setAttribute('cx', cx);
+        circle.setAttribute('cy', cy);
+        circle.setAttribute('r', radius);
+        circle.setAttribute('fill', '#362e6a'); // MMdM blue
+        circle.setAttribute('stroke', 'black');
+        circle.setAttribute('stroke-width', '1');
+        circle.setAttribute('opacity', '0.5'); // START state: 50% opacity
+        
+        // Insert at the BEGINNING of mainGroup so all other elements appear on top
+        const mainGroup = this.renderer.elements.mainGroup;
+        if (mainGroup && mainGroup.firstChild) {
+            mainGroup.insertBefore(circle, mainGroup.firstChild);
+            Logger.debug(`🔵 Detail Sector circle inserted at BEGINNING of mainGroup (below all other elements)`);
+        } else if (mainGroup) {
+            mainGroup.appendChild(circle);
+            Logger.debug(`🔵 Detail Sector circle appended to empty mainGroup`);
+        } else {
+            Logger.error(`🔵 mainGroup not found - cannot insert Detail Sector circle`);
+            return;
+        }
+        
+        // Calculate top buffer for debug logging
+        const circleTopEdge = cy - radius;
+        const topBuffer = circleTopEdge - (-(viewportHeight / 2));
+        
+        Logger.debug(`🔵 Detail Sector circle created at (${cx.toFixed(1)}, ${cy.toFixed(1)}) with ${radius.toFixed(1)}px radius`);
+        Logger.debug(`   Circle top edge: ${circleTopEdge.toFixed(1)}, Screen top: ${(-(viewportHeight/2)).toFixed(1)}`);
+        Logger.debug(`   Circle top buffer from screen edge: ${topBuffer.toFixed(1)}px (margin: ${margin.toFixed(1)}px)`);
+        
+        // Create Detail Sector logo
+        this.createLogo();
+    }
+    
+    /**
+     * Create the volume logo positioned over the Detail Sector circle
+     * Logo is centered at the same position as the circle
+     */
+    createLogo() {
+        // Calculate the same position as Detail Sector circle
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const shorterSide = Math.min(viewportWidth, viewportHeight);
+        const radius = shorterSide * 0.12;
+        
+        // Scale logo relative to circle radius
+        // Logo aspect ratio: 154:134 = ~1.149:1
+        const logoAspectRatio = 154 / 134;
+        const logoScaleFactor = 1.8; // Logo width = 180% of circle diameter (3.6× radius)
+        const logoWidth = radius * 2 * logoScaleFactor;
+        const logoHeight = logoWidth / logoAspectRatio;
+        const logoHalfWidth = logoWidth / 2;
+        
+        // Calculate margin as 3% of shorter side for proportional spacing
+        const margin = shorterSide * 0.03;
+        
+        // Position in upper right corner (origin at screen center)
+        // Use logo half-width for right edge calculation
+        const cx = (viewportWidth / 2) - logoHalfWidth - margin;
+        const cy = -(viewportHeight / 2) + radius + margin;
+        
+        // Calculate top-left position to center logo over circle center
+        const x = cx - (logoWidth / 2);
+        const y = cy - (logoHeight / 2);
+        
+        // Get configured logo path from catalog configuration
+        const displayConfig = this.dataManager.getDisplayConfig();
+        const detailSectorConfig = displayConfig && displayConfig.detail_sector;
+        const logoBasePath = detailSectorConfig && detailSectorConfig.logo_base_path;
+        const defaultImage = detailSectorConfig && detailSectorConfig.default_image;
+        
+        // Check if logo is configured
+        if (logoBasePath && defaultImage) {
+            // Logo is configured - create image element
+            const logoPath = logoBasePath + defaultImage + '.png';
+            
+            const logo = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'image');
+            logo.setAttribute('id', 'detailSectorLogo');
+            logo.setAttributeNS('http://www.w3.org/1999/xlink', 'href', logoPath);
+            logo.setAttribute('x', x);
+            logo.setAttribute('y', y);
+            logo.setAttribute('width', logoWidth);
+            logo.setAttribute('height', logoHeight);
+            logo.setAttribute('opacity', '0.5'); // START state: 50% opacity
+            logo.style.pointerEvents = 'none'; // Allow clicks to pass through to magnifier
+            
+            // Add to main group
+            this.renderer.elements.mainGroup.appendChild(logo);
+            
+            Logger.debug(`🔵 Detail Sector logo created at (${x.toFixed(1)}, ${y.toFixed(1)}) with size ${logoWidth.toFixed(1)}x${logoHeight.toFixed(1)} (${logoScaleFactor * 100}% of circle diameter)`);
+            Logger.debug(`🔵 Logo path: ${logoPath}`);
+        } else {
+            // No logo configured - create text element with "Choose an Image"
+            const textElement = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
+            textElement.setAttribute('id', 'detailSectorLogo');
+            textElement.setAttribute('x', cx);
+            textElement.setAttribute('y', cy);
+            textElement.setAttribute('text-anchor', 'middle');
+            textElement.setAttribute('dominant-baseline', 'middle');
+            textElement.setAttribute('fill', '#666666');
+            textElement.style.pointerEvents = 'none'; // Allow clicks to pass through to magnifier
+            textElement.setAttribute('font-family', 'Montserrat, sans-serif');
+            textElement.setAttribute('font-size', '16');
+            textElement.setAttribute('font-weight', '500');
+            textElement.setAttribute('opacity', '0.5'); // START state: 50% opacity
+            textElement.textContent = 'Choose an Image';
+            
+            // Add to main group
+            this.renderer.elements.mainGroup.appendChild(textElement);
+            
+            Logger.debug(`🔵 Detail Sector text created at (${cx.toFixed(1)}, ${cy.toFixed(1)}) - no logo configured`);
+        }
+    }
+    
+    /**
+     * Update the Detail Sector logo after volume loading
+     * Replaces the "Choose an Image" text with the actual catalog logo
+     */
+    updateLogo() {
+        const existingLogo = document.getElementById('detailSectorLogo');
+        if (existingLogo) {
+            // Remove existing logo from previous volume
+            existingLogo.remove();
+            Logger.debug('🔵 Removed existing Detail Sector logo');
+        }
+        
+        // Create new logo based on current volume configuration
+        this.createLogo();
+        
+        Logger.debug('🔵 Detail Sector logo updated for loaded volume');
+    }
+
+    /**
+     * Calculate END state position and size for Detail Sector logo
+     * Returns logo dimensions and position for expanded state
+     * Uses same calculation as test logo for consistency
+     */
+    getLogoEndState() {
+        // Get Focus Ring parameters (same as test logo)
+        const arcParams = this.viewport.getArcParameters();
+        const focusRingRadius = arcParams.radius;
+        
+        // Get magnifier angle (same as test logo)
+        const magnifierAngle = this.viewport.getCenterAngle();
+        
+        // Logo dimensions: 100% of Focus Ring radius for width (same as test logo)
+        const logoAspectRatio = 154 / 134; // Original aspect ratio
+        const logoWidth = focusRingRadius * 1.0;
+        const logoHeight = logoWidth / logoAspectRatio;
+        
+        // Position center of logo along magnifier angle at -35% of Focus Ring radius (same as test logo)
+        const logoCenterRadius = focusRingRadius * -0.35;
+        const logoCenterX = logoCenterRadius * Math.cos(magnifierAngle);
+        const logoCenterY = logoCenterRadius * Math.sin(magnifierAngle);
+        
+        // Position logo so its center is at the calculated point
+        const endX = logoCenterX - (logoWidth / 2);
+        const endY = logoCenterY - (logoHeight / 2);
+        
+        // Debug calculation
+        Logger.debug(`🔵 getLogoEndState() calculation (matching test logo):`);
+        Logger.debug(`   Focus Ring radius: ${focusRingRadius.toFixed(1)}`);
+        Logger.debug(`   Logo center at (${logoCenterX.toFixed(1)}, ${logoCenterY.toFixed(1)}) (-35% of radius)`);
+        Logger.debug(`   Logo size: ${logoWidth.toFixed(1)}x${logoHeight.toFixed(1)} (100% of radius)`);
+        Logger.debug(`   Logo position: (${endX.toFixed(1)}, ${endY.toFixed(1)})`);
+        
+        return {
+            x: endX,
+            y: endY,
+            width: logoWidth,
+            height: logoHeight,
+            centerX: logoCenterX,
+            centerY: logoCenterY
+        };
+    }
+    
+    /**
+     * DIAGNOSTIC: Visualize the Detail Sector bounding area
+     * Shows the usable content region bounded by:
+     * - Inner arc of Focus Ring
+     * - Top edge of viewport
+     * - Right edge of viewport
+     * 
+     * Call this method to see the actual available space for Detail Sector content
+     */
+    showBounds() {
+        const SVG_NS = MOBILE_CONFIG.SVG_NS;
+        const mainGroup = this.renderer.elements.mainGroup;
+        
+        if (!mainGroup) {
+            Logger.error('Cannot show Detail Sector bounds - mainGroup not found');
+            return;
+        }
+        
+        // Remove any existing diagnostic elements
+        const existing = document.getElementById('detailSectorBoundsDiag');
+        if (existing) existing.remove();
+        
+        const diagGroup = document.createElementNS(SVG_NS, 'g');
+        diagGroup.setAttribute('id', 'detailSectorBoundsDiag');
+        
+        // Get viewport and arc parameters
+        const viewport = this.viewport.getViewportInfo();
+        const arcParams = this.viewport.getArcParameters();
+        
+        // Viewport bounds in SVG coordinates (origin at center)
+        const halfWidth = viewport.width / 2;
+        const halfHeight = viewport.height / 2;
+        const topY = -halfHeight;
+        const rightX = halfWidth;
+        const bottomY = halfHeight;
+        const leftX = -halfWidth;
+        
+        // Focus Ring parameters
+        const ringCenterX = arcParams.centerX;
+        const ringCenterY = arcParams.centerY;
+        const ringRadius = arcParams.radius;
+        
+        // Calculate the text margin arc inside the Focus Ring band
+        // Using 98% to provide margin from the 99% inner edge of the Focus Ring band
+        const innerRadius = ringRadius * 0.98;
+        
+        // Dynamic margins based on shorter side (SSd) - same approach as Detail Sector circle
+        const SSd = viewport.SSd;
+        const marginPercent = 0.03; // 3% of shorter side
+        const topMargin = SSd * marginPercent;
+        const rightMargin = SSd * marginPercent;
+        
+        // Apply margins to viewport bounds
+        const effectiveTopY = topY + topMargin;
+        const effectiveRightX = rightX - rightMargin;
+        
+        // Find ALL intersection points of the inner Focus Ring arc with EFFECTIVE viewport edges
+        const intersections = [];
+        
+        // Check EFFECTIVE TOP edge (y = effectiveTopY)
+        const dyTop = effectiveTopY - ringCenterY;
+        const discTop = innerRadius * innerRadius - dyTop * dyTop;
+        if (discTop >= 0) {
+            const sqrtTop = Math.sqrt(discTop);
+            const x1 = ringCenterX - sqrtTop;
+            const x2 = ringCenterX + sqrtTop;
+            if (x1 >= leftX && x1 <= effectiveRightX) intersections.push({x: x1, y: effectiveTopY, edge: 'top'});
+            if (x2 >= leftX && x2 <= effectiveRightX && x2 !== x1) intersections.push({x: x2, y: effectiveTopY, edge: 'top'});
+        }
+        
+        // Check BOTTOM edge (y = bottomY) - no margin on bottom
+        const dyBottom = bottomY - ringCenterY;
+        const discBottom = innerRadius * innerRadius - dyBottom * dyBottom;
+        if (discBottom >= 0) {
+            const sqrtBottom = Math.sqrt(discBottom);
+            const x1 = ringCenterX - sqrtBottom;
+            const x2 = ringCenterX + sqrtBottom;
+            if (x1 >= leftX && x1 <= effectiveRightX) intersections.push({x: x1, y: bottomY, edge: 'bottom'});
+            if (x2 >= leftX && x2 <= effectiveRightX && x2 !== x1) intersections.push({x: x2, y: bottomY, edge: 'bottom'});
+        }
+        
+        // Check LEFT edge (x = leftX) - no margin on left
+        const dxLeft = leftX - ringCenterX;
+        const discLeft = innerRadius * innerRadius - dxLeft * dxLeft;
+        if (discLeft >= 0) {
+            const sqrtLeft = Math.sqrt(discLeft);
+            const y1 = ringCenterY - sqrtLeft;
+            const y2 = ringCenterY + sqrtLeft;
+            if (y1 >= effectiveTopY && y1 <= bottomY) intersections.push({x: leftX, y: y1, edge: 'left'});
+            if (y2 >= effectiveTopY && y2 <= bottomY && y2 !== y1) intersections.push({x: leftX, y: y2, edge: 'left'});
+        }
+        
+        // Check EFFECTIVE RIGHT edge (x = effectiveRightX)
+        const dxRight = effectiveRightX - ringCenterX;
+        const discRight = innerRadius * innerRadius - dxRight * dxRight;
+        if (discRight >= 0) {
+            const sqrtRight = Math.sqrt(discRight);
+            const y1 = ringCenterY - sqrtRight;
+            const y2 = ringCenterY + sqrtRight;
+            if (y1 >= effectiveTopY && y1 <= bottomY) intersections.push({x: effectiveRightX, y: y1, edge: 'right'});
+            if (y2 >= effectiveTopY && y2 <= bottomY && y2 !== y1) intersections.push({x: effectiveRightX, y: y2, edge: 'right'});
+        }
+        
+        // Draw the Focus Ring arc (inner edge with margin) 
+        const arcPath = document.createElementNS(SVG_NS, 'circle');
+        arcPath.setAttribute('cx', ringCenterX);
+        arcPath.setAttribute('cy', ringCenterY);
+        arcPath.setAttribute('r', innerRadius);
+        arcPath.setAttribute('fill', 'none');
+        arcPath.setAttribute('stroke', 'lime');
+        arcPath.setAttribute('stroke-width', '2');
+        arcPath.setAttribute('stroke-dasharray', '8,4');
+        diagGroup.appendChild(arcPath);
+        
+        // Draw EFFECTIVE content boundary (with margins applied)
+        const effectiveRect = document.createElementNS(SVG_NS, 'rect');
+        effectiveRect.setAttribute('x', leftX);
+        effectiveRect.setAttribute('y', effectiveTopY);
+        effectiveRect.setAttribute('width', effectiveRightX - leftX);
+        effectiveRect.setAttribute('height', bottomY - effectiveTopY);
+        effectiveRect.setAttribute('fill', 'none');
+        effectiveRect.setAttribute('stroke', 'lime');
+        effectiveRect.setAttribute('stroke-width', '2');
+        diagGroup.appendChild(effectiveRect);
+        
+        // Mark ring center with an X
+        const centerMarkerSize = 15;
+        const centerX1 = document.createElementNS(SVG_NS, 'line');
+        centerX1.setAttribute('x1', ringCenterX - centerMarkerSize);
+        centerX1.setAttribute('y1', ringCenterY - centerMarkerSize);
+        centerX1.setAttribute('x2', ringCenterX + centerMarkerSize);
+        centerX1.setAttribute('y2', ringCenterY + centerMarkerSize);
+        centerX1.setAttribute('stroke', 'lime');
+        centerX1.setAttribute('stroke-width', '2');
+        diagGroup.appendChild(centerX1);
+        
+        const centerX2 = document.createElementNS(SVG_NS, 'line');
+        centerX2.setAttribute('x1', ringCenterX - centerMarkerSize);
+        centerX2.setAttribute('y1', ringCenterY + centerMarkerSize);
+        centerX2.setAttribute('x2', ringCenterX + centerMarkerSize);
+        centerX2.setAttribute('y2', ringCenterY - centerMarkerSize);
+        centerX2.setAttribute('stroke', 'lime');
+        centerX2.setAttribute('stroke-width', '2');
+        diagGroup.appendChild(centerX2);
+        
+        // Mark all intersection points
+        intersections.forEach((pt, i) => {
+            const marker = document.createElementNS(SVG_NS, 'circle');
+            marker.setAttribute('cx', pt.x);
+            marker.setAttribute('cy', pt.y);
+            marker.setAttribute('r', 6);
+            marker.setAttribute('fill', 'lime');
+            diagGroup.appendChild(marker);
+            
+            const label = document.createElementNS(SVG_NS, 'text');
+            label.setAttribute('x', pt.x + 10);
+            label.setAttribute('y', pt.y + 5);
+            label.setAttribute('fill', 'lime');
+            label.setAttribute('font-size', '12px');
+            label.setAttribute('font-family', 'monospace');
+            label.textContent = `${pt.edge}(${pt.x.toFixed(0)},${pt.y.toFixed(0)})`;
+            diagGroup.appendChild(label);
+        });
+        
+        // Add label for ring center
+        const centerLabel = document.createElementNS(SVG_NS, 'text');
+        centerLabel.setAttribute('x', ringCenterX + 20);
+        centerLabel.setAttribute('y', ringCenterY + 5);
+        centerLabel.setAttribute('fill', 'lime');
+        centerLabel.setAttribute('font-size', '12px');
+        centerLabel.setAttribute('font-family', 'monospace');
+        centerLabel.textContent = `CENTER(${ringCenterX.toFixed(0)},${ringCenterY.toFixed(0)})`;
+        diagGroup.appendChild(centerLabel);
+        
+        mainGroup.appendChild(diagGroup);
+        
+        Logger.info('📐 Detail Sector bounds diagnostic displayed (lime green outline)');
+        
+        return {
+            viewport: {topY, bottomY, leftX, rightX},
+            ring: {centerX: ringCenterX, centerY: ringCenterY, innerRadius},
+            intersections
+        };
+    }
+    
+    /**
+     * Hide the Detail Sector bounds diagnostic
+     */
+    hideBounds() {
+        const existing = document.getElementById('detailSectorBoundsDiag');
+        if (existing) {
+            existing.remove();
+            Logger.info('📐 Detail Sector bounds diagnostic hidden');
+        }
+    }
+
+    /**
      * Calculate the usable content bounds for the Detail Sector
      * Returns the bounding box within the Focus Ring arc, with margins
      */
