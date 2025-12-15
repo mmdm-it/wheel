@@ -12,6 +12,7 @@ import { DataVirtualLevels } from './data-virtual-levels.js';
 import { DataHierarchyNavigator } from './data-hierarchy-navigator.js';
 import { ItemBuilder } from './item-builder.js';
 import { DataConfigManager } from './data-config-manager.js';
+import { DataCoordinateCache } from './data-coordinate-cache.js';
 
 /**
  * Manages data loading with error handling and caching
@@ -44,9 +45,8 @@ class DataManager {
         // Configuration and metadata access
         this.configManager = new DataConfigManager(this);
         
-        // Phase 4 Consolidation: Bilingual coordinate storage
-        this.coordinateCache = new Map(); // Item key -> HubNucCoordinate
-        this.coordinateMetadata = new Map(); // Level -> coordinate stats
+        // Coordinate caching for bilingual coordinate system
+        this.coordinateCache = new DataCoordinateCache(this);
 
         // Targeted item tracing (trace items matching this path/name)
         this.traceItemTarget = 'Lockwood-Ash';
@@ -135,94 +135,28 @@ class DataManager {
      * Enables efficient coordinate retrieval and analysis
      */
     storeItemCoordinates(items, viewport, angleCallback) {
-        if (!items || !viewport || typeof angleCallback !== 'function') {
-            Logger.warn('storeItemCoordinates: Invalid parameters');
-            return;
-        }
-
-        // Set up coordinate system with current viewport
-        CoordinateSystem.setViewport({
-            LSd: Math.max(viewport.width, viewport.height),
-            SSd: Math.min(viewport.width, viewport.height)
-        });
-
-        let storedCount = 0;
-        const levelName = items.length > 0 ? items[0].__level : 'unknown';
-
-        items.forEach((item, index) => {
-            try {
-                // Get angle for this item (from positioning logic)
-                const angle = angleCallback(item, index);
-                
-                if (typeof angle === 'number' && !isNaN(angle)) {
-                    // Create bilingual coordinate with focus ring radius
-                    const arcParams = viewport.getArcParameters ? viewport.getArcParameters() : 
-                                     { radius: Math.max(viewport.width, viewport.height) };
-                    
-                    const hubCoord = HubNucCoordinate.fromPolar(angle, arcParams.radius);
-                    this.coordinateCache.set(item.key, hubCoord);
-                    storedCount++;
-                }
-            } catch (error) {
-                Logger.warn(`Failed to store coordinates for item ${item.key}:`, error);
-            }
-        });
-
-        // Update metadata
-        this.coordinateMetadata.set(levelName, {
-            itemCount: items.length,
-            storedCount,
-            timestamp: Date.now(),
-            viewport: { width: viewport.width, height: viewport.height }
-        });
-
-        Logger.verbose(`Stored bilingual coordinates: ${storedCount}/${items.length} items at level ${levelName}`);
+        return this.coordinateCache.storeItemCoordinates(items, viewport, angleCallback);
     }
 
     /**
      * Phase 4 Consolidation: Retrieve stored bilingual coordinates
      */
     getItemCoordinates(itemKey) {
-        return this.coordinateCache.get(itemKey) || null;
+        return this.coordinateCache.getItemCoordinates(itemKey);
     }
 
     /**
      * Phase 4 Consolidation: Get coordinate statistics
      */
     getCoordinateStats() {
-        const stats = {
-            totalCached: this.coordinateCache.size,
-            levelStats: {}
-        };
-
-        for (const [level, metadata] of this.coordinateMetadata) {
-            stats.levelStats[level] = metadata;
-        }
-
-        return stats;
+        return this.coordinateCache.getCoordinateStats();
     }
 
     /**
      * Phase 4 Consolidation: Clear coordinate cache
      */
     clearCoordinateCache(levelName = null) {
-        if (levelName) {
-            // Clear specific level
-            let cleared = 0;
-            for (const [key, coord] of this.coordinateCache) {
-                // Would need item reference to check level - simplified approach
-                this.coordinateCache.delete(key);
-                cleared++;
-            }
-            this.coordinateMetadata.delete(levelName);
-            Logger.debug(`Cleared ${cleared} coordinates for level ${levelName}`);
-        } else {
-            // Clear all
-            const totalCleared = this.coordinateCache.size;
-            this.coordinateCache.clear();
-            this.coordinateMetadata.clear();
-            Logger.debug(`Cleared all ${totalCleared} cached coordinates`);
-        }
+        return this.coordinateCache.clearCoordinateCache(levelName);
     }
 
     /**

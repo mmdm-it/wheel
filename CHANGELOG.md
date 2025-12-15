@@ -10,6 +10,24 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Phase 3: General code cleanup and optimization
 - Child Pyramid design completion (blocking 0.9.0 release)
 
+## [0.8.161] - 2025-12-15
+
+### Changed
+- **Phase 2A**: Extracted DataCoordinateCache module (66 lines saved)
+- **Mobile-data.js**: 958 → 892 lines (6.9% reduction)
+
+### Added
+- `data-coordinate-cache.js`: New module with 4 coordinate caching methods
+  - storeItemCoordinates() - Store bilingual coordinates for items
+  - getItemCoordinates() - Retrieve stored coordinates by key
+  - getCoordinateStats() - Get cache statistics
+  - clearCoordinateCache() - Clear all or specific level coordinates
+
+### Improved
+- **Separation of Concerns**: Phase 4 coordinate caching logic now isolated
+- **Module Count**: 8 focused modules extracted from mobile-data.js
+- **Progress**: 174 lines saved total (16.3% reduction from original 1,066 lines)
+
 ## [0.8.160] - 2025-12-15
 
 ### Fixed
