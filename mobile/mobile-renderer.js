@@ -44,8 +44,8 @@ class MobileRenderer {
 
         // DOM/state caches
         this.elements = {};
-        this.focusElements = new Map();
-        this.positionCache = new Map();
+        // focusElements Map moved to FocusRingView (single source of truth)
+        // positionCache Map moved to FocusRingView (only used there)
         this.leafStateCache = new Map();
         this.detailSectorAnimating = false;
         this.isAnimating = false;
@@ -65,7 +65,7 @@ class MobileRenderer {
         this.visibleStartIndex = 0;
         this.visibleEndIndex = 0;
         this.forceImmediateFocusSettlement = false;
-        this._lastFocusItemsKey = null;
+        // _lastFocusItemsKey moved to FocusRingView (change detection)
 
         // Debug flags
         this.focusRingDebugFlag = this.computeFocusRingDebugFlag();
@@ -999,8 +999,8 @@ class MobileRenderer {
         
         // PERFORMANCE OPTIMIZATION: Check if focus items changed - only rebuild if needed
         const focusItemsKey = allFocusItems.map(item => item === null ? 'GAP' : item.key).join('|');
-        const focusItemsChanged = this._lastFocusItemsKey !== focusItemsKey;
-        this._lastFocusItemsKey = focusItemsKey;
+        const focusItemsChanged = this.focusRingView._lastFocusItemsKey !== focusItemsKey;
+        this.focusRingView._lastFocusItemsKey = focusItemsKey;
         
         // BUG FIX: Don't rebuild during rotation - causes text element duplication
         // Only rebuild when the actual items change (navigation to different level)
@@ -1010,8 +1010,8 @@ class MobileRenderer {
         
         // Clear Map when rebuilding to prevent stale key lookups
         if (shouldRebuild) {
-            console.log(`🧹 REBUILD: Clearing renderer.focusElements Map (was ${this.focusElements.size} entries)`);
-            this.focusElements.clear();
+            console.log(`🧹 REBUILD: Clearing focusRingView.focusElements Map (was ${this.focusRingView.focusElements.size} entries)`);
+            this.focusRingView.focusElements.clear();
         }
         
         // Ensure background band stays in DOM; we'll diff visible nodes instead of clearing all
@@ -1107,10 +1107,10 @@ class MobileRenderer {
         // Cleanup: remove elements that are no longer visible (unless rebuilding - Map already cleared)
         if (!shouldRebuild) {
             const visibleKeys = new Set(visibleEntries.map(entry => entry.focusItem.key));
-            for (const [key, element] of this.focusElements.entries()) {
+            for (const [key, element] of this.focusRingView.focusElements.entries()) {
                 if (!visibleKeys.has(key)) {
                     element.remove();
-                    this.focusElements.delete(key);
+                    this.focusRingView.focusElements.delete(key);
                     console.log(`🗑️ CLEANUP: Removed element for key="${key}" (scrolled out of viewport)`);
                 }
             }
@@ -1127,13 +1127,13 @@ class MobileRenderer {
         
         visibleEntries.forEach(entry => {
             const { focusItem, position, angle, isSelected } = entry;
-            let element = this.focusElements.get(focusItem.key);
+            let element = this.focusRingView.focusElements.get(focusItem.key);
             if (element) {
                 this.updateFocusElement(element, position, angle, isSelected);
                 elementsUpdated++;
             } else {
                 element = this.createFocusElement(focusItem, position, angle, isSelected);
-                this.focusElements.set(focusItem.key, element);
+                this.focusRingView.focusElements.set(focusItem.key, element);
             }
             if (element.parentNode !== focusRingGroup) {
                 focusRingGroup.appendChild(element);
@@ -1145,7 +1145,7 @@ class MobileRenderer {
         });
         
         const totalInDOM = focusRingGroup.querySelectorAll('.focusItem').length;
-        const totalInMap = this.focusElements.size;
+        const totalInMap = this.focusRingView.focusElements.size;
         if (totalInDOM !== totalInMap) {
             console.error(`❌ DOM MISMATCH: ${totalInDOM} elements in DOM but ${totalInMap} in Map! (appended: ${elementsAppended}, updated: ${elementsUpdated})`);
         }
@@ -1569,10 +1569,12 @@ class MobileRenderer {
         this.currentFocusItems = [];
         this.setActivePath([]);
         this.activeType = null;
-        this.focusElements.clear();
-        this.positionCache.clear();
+        
+        // Clear caches (focusElements now in FocusRingView)
+        this.focusRingView.focusElements.clear();
+        // positionCache is in FocusRingView now
         this.leafStateCache.clear();
-    this.detailSectorAnimating = false;
+        this.detailSectorAnimating = false;
         
         // Collapse Detail Sector
         this.collapseDetailSector();
