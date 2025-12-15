@@ -23,6 +23,7 @@ import { MagnifierManager } from './magnifier-manager.js';
 import { ThemeManager } from './theme-manager.js';
 import { DataQueryHelper } from './data-query-helper.js';
 import { ParentNameBuilder } from './parent-name-builder.js';
+import { NavigationCoordinator } from './navigation-coordinator.js';
 
 /**
  * Efficient renderer that minimizes DOM manipulation
@@ -45,6 +46,7 @@ class MobileRenderer {
         this.magnifier = new MagnifierManager(viewportManager, this);
         this.dataQuery = new DataQueryHelper(this);
         this.parentNameBuilder = new ParentNameBuilder(this);
+        this.navigationCoordinator = new NavigationCoordinator(this);
 
         // DOM/state caches
         this.elements = {};
@@ -1009,83 +1011,11 @@ class MobileRenderer {
     /**
      * Handle Child Pyramid item clicks (nzone migration)
      */
+    /**
+     * Handle Child Pyramid item click - delegates to NavigationCoordinator
+     */
     handleChildPyramidClick(item, event) {
-        // Block clicks during animation
-        if (this.isAnimating) {
-            Logger.debug('🔺 Click blocked - animation in progress');
-            return;
-        }
-        
-        console.log('🔺🔺🔺 HANDLE CHILD PYRAMID CLICK CALLED!', item.name);
-        Logger.debug('🔺 Child pyramid item clicked:', item.name, 'implementing nzone migration OUT');
-
-        // Set animation flag to block further clicks
-        this.isAnimating = true;
-
-        // Immediately disable touch handling to prevent race conditions with touch events
-        const touchHandler = this.getTouchHandler();
-        if (touchHandler) {
-            touchHandler.tempDisabled = true;
-        }
-        
-        // Capture all Child Pyramid node positions before clearing
-        const allChildNodes = Array.from(this.elements.childRingGroup.querySelectorAll('.child-pyramid-item'));
-        const nodePositions = allChildNodes.map(node => {
-            const circle = node.querySelector('.node');
-            const dataItem = JSON.parse(node.getAttribute('data-item'));
-            return {
-                node: node,
-                key: dataItem.key,
-                startX: parseFloat(circle.getAttribute('cx')),
-                startY: parseFloat(circle.getAttribute('cy'))
-            };
-        });
-        
-        Logger.debug(`🎬 Captured ${nodePositions.length} Child Pyramid nodes for animation`);
-        
-        // Clear Child Pyramid and fan lines immediately to prevent duplicates during animation
-        this.elements.childRingGroup.innerHTML = '';
-        this.elements.childRingGroup.classList.add('hidden');
-        this.clearFanLines();
-        
-        // Clear Focus Ring nodes but preserve the background band (wallpaper)
-        const focusRingGroup = this.elements.focusRingGroup;
-        const background = focusRingGroup.querySelector('#focusRingBackground');
-        focusRingGroup.innerHTML = '';
-        if (background) {
-            focusRingGroup.appendChild(background);
-        }
-        // Don't hide the focusRingGroup - keep it visible to show the background band
-        
-        // Check if clicked item is a leaf - if so, start Detail Sector expansion immediately
-        const isLeaf = this.isLeafItem(item);
-        
-        if (isLeaf) {
-            Logger.debug('🔺 Leaf item detected - starting Detail Sector expansion during animation');
-            const displayConfig = this.dataManager.getDisplayConfig();
-            const leafLevel = displayConfig?.leaf_level;
-            const itemLevel = this.getItemHierarchyLevel(item);
-            const isActualLeaf = leafLevel && itemLevel === leafLevel;
-            
-            if (isActualLeaf && !this.detailSectorAnimating) {
-                this.expandDetailSector();
-            }
-        }
-        
-        // Animate Magnifier node (current focus) to Parent Button and Parent Button off-screen
-        this.animation.animateMagnifierToParentButton(item, this.selectedFocusItem);
-        
-        // Start animation for all nodes, then continue with state updates
-        const allSiblings = this.currentChildItems || [];
-        this.animation.animateSiblingsToFocusRing(item, nodePositions, allSiblings, () => {
-            // Animation complete - now show the real focus ring
-            this.isAnimating = false;
-            const handler = this.getTouchHandler();
-            if (handler) {
-                handler.tempDisabled = false;
-            }
-            this.continueChildPyramidClick(item);
-        });
+        this.navigationCoordinator.handleChildPyramidClick(item, event);
     }
     
     /**
@@ -1130,177 +1060,10 @@ class MobileRenderer {
     }
     
     /**
-     * Continue with Child Pyramid click logic after animation completes
+     * Continue Child Pyramid click after animation - delegates to NavigationCoordinator
      */
     continueChildPyramidClick(item) {
-        Logger.debug('🔺 Continuing child pyramid click after animation:', item.name);
-        
-        // NZONE MIGRATION: Child Pyramid → Focus Ring
-        // This moves the clicked item OUT to become the new focus in the Focus Ring
-
-        // Determine the hierarchy level of the clicked item
-        const itemLevel = this.getItemHierarchyLevel(item);
-        if (!itemLevel) {
-            Logger.warn('🔺 Could not determine hierarchy level for clicked item:', item);
-            return;
-        }
-
-        Logger.debug(`🔺 ${itemLevel} clicked:`, item.name, 'Full item:', item);
-
-        // 1. Update the navigation state - this item becomes the new focus
-        this.buildActivePath(item);
-        this.activeType = itemLevel;
-        this.setSelectedFocusItem({ ...item });
-
-        // 2. Get all siblings at the same level
-        // COUSIN NAVIGATION: Get all items at this level across all parents (with gaps)
-        let allSiblings = [];
-        
-        // For Child Pyramid clicks, siblings are the other items currently in Child Pyramid
-        // But we want to expand to cousin navigation
-        if (this.currentChildItems && this.currentChildItems.length > 0) {
-            // We have cached child items, but we want cousins instead
-            Logger.debug(`🔺 Expanding from ${this.currentChildItems.length} siblings to cousin navigation`);
-        }
-        
-        // Use cousin navigation for Focus Ring
-        allSiblings = this.getCousinItemsForLevel(item, itemLevel);
-        
-        console.log(`🔺🔍 COUSINS ARRAY (${allSiblings.length} items including gaps):`, allSiblings.map((s, i) => s ? `[${i}]${s.name}(key:${s.key})` : `[${i}]GAP`).join(', '));
-        console.log(`🔺🔍 CLICKED ITEM: name="${item.name}", key="${item.key}"`);
-        
-        Logger.debug(`🔺 Getting cousins for "${item.name}" at level ${itemLevel}, found ${allSiblings.length} items (including gaps)`);
-
-        // Validate sort_numbers for non-null items only
-        const nonNullItems = allSiblings.filter(s => s !== null);
-        const validatedNonNull = this.validateSortNumbers(nonNullItems, `Focus Ring cousins at ${itemLevel}`);
-        if (validatedNonNull.length === 0) {
-            Logger.error('🔺 Cannot display Focus Ring - no valid items with sort_numbers');
-            return;
-        }
-        
-        // Rebuild array with gaps in original positions
-        const validatedWithGaps = allSiblings.map(s => s === null ? null : s);
-
-        this.currentFocusItems = validatedWithGaps;
-        this.allFocusItems = validatedWithGaps;
-        
-        console.log(`🎯🔄 SET currentFocusItems: ${validatedWithGaps.length} items set (${nonNullItems.length} real + ${validatedWithGaps.length - nonNullItems.length} gaps)`);
-
-        // 3. Clear current Child Pyramid (already cleared before animation)
-        this.elements.childRingGroup.innerHTML = '';
-        this.elements.childRingGroup.classList.add('hidden');
-
-        // 4. Check if this is a leaf item (model with no children)
-        if (this.isLeafItem(item)) {
-            Logger.debug('🔺 Leaf item clicked:', item.name, '- moving siblings to Focus Ring and displaying in Detail Sector');
-            
-            // Find the clicked item in siblings and calculate center offset
-            const clickedIndex = this.findItemIndexInArray(item, allSiblings, itemLevel);
-            const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-            const middleIndex = (allSiblings.length - 1) / 2;
-            const centerOffset = (clickedIndex - middleIndex) * angleStep;
-            
-            Logger.debug(`🔺 Calculated centerOffset for leaf ${item.name}: clickedIndex=${clickedIndex}, middleIndex=${middleIndex}, centerOffset=${centerOffset.toFixed(3)}`);
-
-            // Set up touch rotation with the correct offset
-            if (this.controller && typeof this.controller.setupTouchRotation === 'function') {
-                this.controller.setupTouchRotation(allSiblings);
-                Logger.debug('🔺 Touch rotation re-setup for', allSiblings.length, itemLevel + 's');
-                
-                const handler = this.getTouchHandler();
-                if (handler) {
-                    handler.rotationOffset = centerOffset;
-                    Logger.debug('🔺 Set touch handler rotationOffset to', centerOffset.toFixed(3));
-                }
-            }
-            
-            this.focusRingView.lastRotationOffset = centerOffset;
-
-            // Show Focus Ring with siblings - clicked item should be centered
-            this.forceImmediateFocusSettlement = true;
-            try {
-                this.showFocusRing();
-                // Immediately update with correct offset
-                this.updateFocusRingPositions(centerOffset);
-            } finally {
-                this.forceImmediateFocusSettlement = false;
-            }
-            
-            // Handle as leaf item - display in Detail Sector
-            // (handleLeafFocusSelection already updates the parent button)
-            this.handleLeafFocusSelection(item);
-            
-            Logger.debug(`🔺 Immediate focus settlement complete for leaf ${itemLevel} ${item.name}`);
-            return;
-        }
-
-        // Non-leaf item handling: continue with regular nzone migration
-
-        // 4. Find the clicked item in the siblings and calculate the center offset FIRST
-        const clickedIndex = this.findItemIndexInArray(item, allSiblings, itemLevel);
-        const angleStep = MOBILE_CONFIG.ANGLES.FOCUS_SPREAD;
-        const middleIndex = (allSiblings.length - 1) / 2;
-        // FIX: Use positive offset to match the (middleIndex - index) formula in updateFocusRingPositions
-        // If clicked item is at higher index (e.g., 14), we need positive offset to shift base angle UP
-        // so that (middleIndex - 14) becomes less negative, bringing item 14 closer to center
-        const centerOffset = (clickedIndex - middleIndex) * angleStep;
-        
-        Logger.debug(`🔺 Calculated centerOffset for ${item.name}: clickedIndex=${clickedIndex}, middleIndex=${middleIndex}, centerOffset=${centerOffset.toFixed(3)}`);
-
-        // 5. Set up touch rotation with the correct offset
-        if (this.controller && typeof this.controller.setupTouchRotation === 'function') {
-            this.controller.setupTouchRotation(allSiblings);
-            Logger.debug('🔺 Touch rotation re-setup for', allSiblings.length, itemLevel + 's');
-            
-            // CRITICAL: Set the rotation offset AFTER setupTouchRotation to override its default
-            const handler = this.getTouchHandler();
-            if (handler) {
-                // Stop any ongoing inertial animation to prevent it from interfering
-                handler.stopAnimation();
-                handler.rotationOffset = centerOffset;
-                Logger.debug('🔺 Set touch handler rotationOffset to', centerOffset.toFixed(3));
-            }
-        }
-        
-        // Also update lastRotationOffset to prevent rotation detection
-        this.focusRingView.lastRotationOffset = centerOffset;
-
-        // CRITICAL: Set selectedFocusItem BEFORE conditional check
-        // This ensures showChildContentForFocusItem has the correct context
-        this.setSelectedFocusItem(item);
-        this.activeType = itemLevel;
-        
-        // Animate text migration from Magnifier (old focus) to Parent Button (new parent)
-        // Get the new parent name that will appear in Parent Button
-        const parentLevel = this.getPreviousHierarchyLevel(itemLevel);
-        const newParentName = parentLevel ? this.getParentNameForLevel(item, parentLevel) : null;
-        if (newParentName) {
-            this.updateParentButton(newParentName, false); // Trigger animation
-        }
-
-        // Update Focus Ring with siblings - clicked item should be centered
-        this.forceImmediateFocusSettlement = true;
-        try {
-            this.showFocusRing();
-            // Immediately update with correct offset
-            this.updateFocusRingPositions(centerOffset);
-            
-            // Protect this rotation position from triggering Child Pyramid hide
-            this.focusRingView.protectedRotationOffset = centerOffset;
-            setTimeout(() => {
-                this.focusRingView.protectedRotationOffset = undefined;
-            }, 100);
-            
-            // Show child content for the newly selected focus item (non-leaf)
-            const magnifierPos = this.viewport.getMagnifyingRingPosition();
-            this.showChildContentForFocusItem(item, magnifierPos.angle);
-        } finally {
-            this.forceImmediateFocusSettlement = false;
-        }
-
-        Logger.debug(`🔺 Immediate focus settlement complete for ${itemLevel} ${item.name}`);
-        return;
+        this.navigationCoordinator.continueChildPyramidClick(item);
     }
 
     /**
