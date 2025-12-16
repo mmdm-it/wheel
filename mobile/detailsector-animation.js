@@ -161,11 +161,8 @@ export class DetailSectorAnimation {
             textElement.setAttribute('y', cy);
             textElement.setAttribute('text-anchor', 'middle');
             textElement.setAttribute('dominant-baseline', 'middle');
-            textElement.setAttribute('fill', '#666666');
+            textElement.setAttribute('class', 'logo-placeholder');
             textElement.style.pointerEvents = 'none'; // Allow clicks to pass through to magnifier
-            textElement.setAttribute('font-family', 'Montserrat, sans-serif');
-            textElement.setAttribute('font-size', '16');
-            textElement.setAttribute('font-weight', '500');
             textElement.setAttribute('opacity', '0.5'); // START state: 50% opacity
             textElement.textContent = 'Choose an Image';
             

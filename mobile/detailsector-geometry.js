@@ -344,9 +344,7 @@ export class DetailSectorGeometry {
             const label = document.createElementNS(SVG_NS, 'text');
             label.setAttribute('x', pt.x + 10);
             label.setAttribute('y', pt.y + 5);
-            label.setAttribute('fill', 'lime');
-            label.setAttribute('font-size', '12px');
-            label.setAttribute('font-family', 'monospace');
+            label.setAttribute('class', 'debug-text');
             label.textContent = `${pt.edge}(${pt.x.toFixed(0)},${pt.y.toFixed(0)})`;
             diagGroup.appendChild(label);
         });
@@ -355,9 +353,7 @@ export class DetailSectorGeometry {
         const centerLabel = document.createElementNS(SVG_NS, 'text');
         centerLabel.setAttribute('x', ringCenterX + 20);
         centerLabel.setAttribute('y', ringCenterY + 5);
-        centerLabel.setAttribute('fill', 'lime');
-        centerLabel.setAttribute('font-size', '12px');
-        centerLabel.setAttribute('font-family', 'monospace');
+        centerLabel.setAttribute('class', 'debug-text');
         centerLabel.textContent = `CENTER(${ringCenterX.toFixed(0)},${ringCenterY.toFixed(0)})`;
         diagGroup.appendChild(centerLabel);
         

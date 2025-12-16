@@ -145,9 +145,9 @@ class DetailSectorContent {
             textElement.setAttribute('y', lineInfo.y);
             textElement.setAttribute('text-anchor', 'start');
             textElement.setAttribute('fill', '#1a1a1a');
-            textElement.setAttribute('class', 'detail-body-text');
-            // Use inline style attribute to override all CSS rules
-            textElement.setAttribute('style', `font-size: ${fontSize}px !important; font-family: 'EB Garamond', Georgia, serif !important;`);
+            // Apply detail-body-text class with appropriate font-size tier
+            const fontClass = fontSize === 30 ? 'detail-body-text big-font' : 'detail-body-text small-font';
+            textElement.setAttribute('class', fontClass);
             textElement.textContent = text;
             contentGroup.appendChild(textElement);
             
@@ -163,23 +163,32 @@ class DetailSectorContent {
 
     /**
      * Create a text element with specified properties
+     * Uses CSS classes for all font sizing and weights (Phase 3A)
      */
     createTextElement(text, x, y, anchor, fontSize, color, weight = 'normal') {
         const textElement = document.createElementNS(MOBILE_CONFIG.SVG_NS, 'text');
         textElement.setAttribute('x', x);
         textElement.setAttribute('y', y);
         textElement.setAttribute('text-anchor', anchor);
-        textElement.setAttribute('font-size', fontSize);
         textElement.setAttribute('fill', color);
         
-        // Handle font-weight and font-style
+        // Build CSS class list for font sizing and weight
+        const classes = [];
+        classes.push(`text-size-${fontSize}`);
+        
         if (weight === 'italic') {
-            textElement.setAttribute('font-style', 'italic');
-            textElement.setAttribute('font-weight', 'normal');
+            classes.push('font-style-italic');
+            classes.push('font-weight-normal');
+        } else if (weight === 'normal') {
+            classes.push('font-weight-normal');
+        } else if (weight === 'bold') {
+            classes.push('font-weight-bold');
         } else {
-            textElement.setAttribute('font-weight', weight);
+            // Numeric weights (500, 600, 700)
+            classes.push(`font-weight-${weight}`);
         }
         
+        textElement.setAttribute('class', classes.join(' '));
         textElement.textContent = text;
         return textElement;
     }

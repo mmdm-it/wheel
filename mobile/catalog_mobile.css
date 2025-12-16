@@ -59,14 +59,58 @@ text {
     text-transform: uppercase; 
 }
 
-/* Detail body text - configurable font for text-heavy content */
-/* font-size controlled by JavaScript two-tier system (30px or 22px based on word count) */
-/* Use unset to let the SVG font-size attribute take effect */
+/* ===== Phase 3A: CSS-Only Font Sizing ===== */
+
+/* Detail body text - two-tier system based on word count */
 text.detail-body-text {
     font-family: 'EB Garamond', Georgia, serif !important;
     text-transform: none !important;
-    font-size: unset !important;
 }
+
+/* Big font tier: ≤30 words */
+text.detail-body-text.big-font {
+    font-size: 30px !important;
+}
+
+/* Small font tier: 31+ words */
+text.detail-body-text.small-font {
+    font-size: 22px !important;
+}
+
+/* Debug text for geometry diagnostics */
+text.debug-text {
+    font-size: 12px;
+    font-family: monospace;
+    fill: lime;
+}
+
+/* Logo placeholder text */
+text.logo-placeholder {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    fill: #666666;
+}
+
+/* Generic text size classes for detail sector content */
+text.text-size-12 { font-size: 12px; }
+text.text-size-14 { font-size: 14px; }
+text.text-size-16 { font-size: 16px; }
+text.text-size-18 { font-size: 18px; }
+text.text-size-20 { font-size: 20px; }
+text.text-size-22 { font-size: 22px; }
+text.text-size-24 { font-size: 24px; }
+text.text-size-30 { font-size: 30px; }
+
+/* Font weight classes */
+text.font-weight-normal { font-weight: normal; }
+text.font-weight-bold { font-weight: bold; }
+text.font-weight-500 { font-weight: 500; }
+text.font-weight-600 { font-weight: 600; }
+text.font-weight-700 { font-weight: 700; }
+
+/* Font style classes */
+text.font-style-italic { font-style: italic; }
 
 /* Version text override */
 #versionText {
