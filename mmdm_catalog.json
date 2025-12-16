@@ -2125,6 +2125,7 @@
                                                 "sort_number": 2,
                                                 "subfamilies": {
                                                     "Triton": {
+                                                        "sort_number": 1,
                                                         "models": [
                                                             {
                                                                 "engine_model": "5.4L Triton",
@@ -2138,6 +2139,7 @@
                                                         ]
                                                     },
                                                     "Coyote": {
+                                                        "sort_number": 2,
                                                         "models": [
                                                             {
                                                                 "engine_model": "5.0L Coyote",
