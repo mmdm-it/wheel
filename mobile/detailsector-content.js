@@ -383,28 +383,29 @@ class DetailSectorContent {
         // Get current translation from renderer
         const currentLang = this.renderer.getCurrentTranslation();
         
-        console.log(`🌐 applyTranslationToContext: currentLang="${currentLang}", context.text type=${typeof context.text}`);
-        if (context.text && typeof context.text === 'object') {
-            console.log(`🌐 context.text keys:`, Object.keys(context.text));
-            console.log(`🌐 context direct properties:`, Object.keys(context).filter(k => typeof context[k] === 'string').slice(0, 10));
-        }
-        
-        // If no translation or context has no text object, return as-is
-        if (!currentLang || !context.text || typeof context.text !== 'object') {
+        // If no translation, return as-is
+        if (!currentLang) {
             return context;
         }
 
         // Create a copy of context
         const translatedContext = { ...context };
 
-        // If the selected language exists in text object, use it
-        if (context.text[currentLang]) {
-            translatedContext.text = context.text[currentLang];
-            console.log(`🌐 Replaced context.text with text.${currentLang}:`, translatedContext.text.substring(0, 50));
-        } else {
-            console.warn(`🌐 WARNING: Language "${currentLang}" not found in text object`);
+        // Strategy 1: Check if language property exists directly on context (normalized data)
+        // e.g., context.latin, context.hebrew, context.greek
+        if (context[currentLang] && typeof context[currentLang] === 'string') {
+            translatedContext.text = context[currentLang];
+            return translatedContext;
         }
 
+        // Strategy 2: Check if language exists in text object (un-normalized or old data)
+        // e.g., context.text.VUL, context.text.WLC
+        if (context.text && typeof context.text === 'object' && context.text[currentLang]) {
+            translatedContext.text = context.text[currentLang];
+            return translatedContext;
+        }
+
+        // Strategy 3: If neither exists, keep text as-is (may be object or string)
         return translatedContext;
     }
 }
