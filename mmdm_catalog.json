@@ -115,8 +115,7 @@
                     "focus_text_position": "radial",
                     "focus_text_transform": "none",
                     "is_numeric": false,
-                    "use_code_property": true,
-                    "is_virtual": true
+                    "use_code_property": true
                 },
                 "subfamily": {
                     "text_format": "title_case",
@@ -126,8 +125,7 @@
                     "focus_text_position": "radial",
                     "focus_text_transform": "none",
                     "is_numeric": false,
-                    "use_code_property": true,
-                    "is_virtual": true
+                    "use_code_property": true
                 },
                 "model": {
                     "text_format": "title_case",
