@@ -230,7 +230,15 @@ export class DataHierarchyNavigator {
             });
         } else if (typeof dataLocation === 'object') {
             // This is an object with keys as item names
+            // Skip metadata properties that are not child items
+            const metadataProperties = ['sort_number', 'year_founded', 'year_dissolved', 'name', 'display_name', '_external_file'];
+            
             Object.keys(dataLocation).forEach(itemKey => {
+                // Skip metadata properties
+                if (metadataProperties.includes(itemKey)) {
+                    return;
+                }
+                
                 const childData = dataLocation[itemKey];
                 const isNumeric = levelConfig && levelConfig.is_numeric || false;
                 const hasFurtherLevels = childLevelDepth < hierarchyNames.length - 1;
