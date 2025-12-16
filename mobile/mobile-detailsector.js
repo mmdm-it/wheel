@@ -244,5 +244,3 @@ class MobileDetailSector {
 }
 
 export { MobileDetailSector };
-
-export { MobileDetailSector };
