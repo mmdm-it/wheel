@@ -13,6 +13,7 @@ import { DataHierarchyNavigator } from './data-hierarchy-navigator.js';
 import { ItemBuilder } from './item-builder.js';
 import { DataConfigManager } from './data-config-manager.js';
 import { DataCoordinateCache } from './data-coordinate-cache.js';
+import { DataDetailSectorManager } from './data-detailsector-manager.js';
 
 /**
  * Manages data loading with error handling and caching
@@ -47,6 +48,9 @@ class DataManager {
         
         // Coordinate caching for bilingual coordinate system
         this.coordinateCache = new DataCoordinateCache(this);
+        
+        // Detail sector configuration and context management
+        this.detailSectorManager = new DataDetailSectorManager(this);
 
         // Targeted item tracing (trace items matching this path/name)
         this.traceItemTarget = 'Lockwood-Ash';
@@ -531,17 +535,7 @@ class DataManager {
      * @returns {Object|null} Merged configuration object or null if no config found
      */
     getDetailSectorConfigForItem(item) {
-        if (!item) {
-            return null;
-        }
-
-        const displayConfig = this.getDisplayConfig() || {};
-        const baseConfig = displayConfig.detail_sector || {};
-        const levelConfig = this.getHierarchyLevelConfig(item.__level) || {};
-        const levelDetail = levelConfig.detail_sector || {};
-        const itemDetail = (item.data && item.data.detail_sector) || item.detail_sector || {};
-
-        return this.mergeDetailSectorConfigs(baseConfig, levelDetail, itemDetail);
+        return this.detailSectorManager.getDetailSectorConfigForItem(item);
     }
 
     /**
@@ -551,113 +545,14 @@ class DataManager {
      * @returns {Object} Context object with flattened properties for templating
      */
     getDetailSectorContext(item) {
-        if (!item) {
-            return {};
-        }
-
-        const context = {
-            name: item.name,
-            level: item.__level,
-            key: item.key,
-            path: item.__path,
-            data: item.data || {},
-            display_config: this.getDisplayConfig() || {}
-        };
-
-        // Copy top-level properties from item
-        Object.keys(item).forEach(key => {
-            if (key.startsWith('__')) {
-                return;
-            }
-            if (key === 'data' || key === 'detail_sector') {
-                return;
-            }
-            context[key] = item[key];
-        });
-
-        // Also copy properties from item.data (where audio_file, year, etc. are stored)
-        if (item.data && typeof item.data === 'object') {
-            Object.keys(item.data).forEach(key => {
-                // Don't overwrite existing context properties
-                if (context[key] === undefined) {
-                    context[key] = item.data[key];
-                }
-            });
-        }
-
-        // Add hierarchical ancestor labels (generic - works for any volume)
-        // Maps path positions to ancestor1, ancestor2, etc.
-        if (item.__path && item.__path.length >= 2) {
-            const levelNames = this.getHierarchyLevelNames();
-            item.__path.forEach((segment, index) => {
-                if (index < item.__path.length - 1) { // Skip the current item
-                    const levelName = levelNames[index] || `ancestor${index + 1}`;
-                    // Add both generic and level-specific keys
-                    context[`ancestor${index + 1}`] = segment;
-                    context[levelName] = segment;
-                }
-            });
-            Logger.verbose('📋 Added hierarchical context:', { path: item.__path, ancestors: item.__path.slice(0, -1) });
-        }
-
-        return context;
+        return this.detailSectorManager.getDetailSectorContext(item);
     }
 
     /**
      * Merge detail sector config layers with predictable overrides
      */
     mergeDetailSectorConfigs(...configs) {
-        const merged = {
-            mode: null,
-            default_image: null,
-            header: null,
-            views: []
-        };
-
-        const viewOrder = [];
-        const viewIndexById = new Map();
-
-        configs.forEach(config => {
-            if (!config) {
-                return;
-            }
-
-            if (config.mode !== undefined) {
-                merged.mode = config.mode;
-            }
-
-            if (config.default_image !== undefined) {
-                merged.default_image = config.default_image;
-            }
-
-            if (config.header !== undefined) {
-                merged.header = config.header;
-            }
-
-            if (Array.isArray(config.views)) {
-                config.views.forEach(view => {
-                    if (!view) {
-                        return;
-                    }
-
-                    if (!view.id) {
-                        viewOrder.push(view);
-                        return;
-                    }
-
-                    if (viewIndexById.has(view.id)) {
-                        const index = viewIndexById.get(view.id);
-                        viewOrder[index] = view;
-                    } else {
-                        viewIndexById.set(view.id, viewOrder.length);
-                        viewOrder.push(view);
-                    }
-                });
-            }
-        });
-
-        merged.views = viewOrder;
-        return merged;
+        return this.detailSectorManager.mergeDetailSectorConfigs(...configs);
     }
 
     /**
