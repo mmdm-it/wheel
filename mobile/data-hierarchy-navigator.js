@@ -231,10 +231,10 @@ export class DataHierarchyNavigator {
         } else if (typeof dataLocation === 'object') {
             // This is an object with keys as item names
             // Skip metadata properties that are not child items
-            const metadataProperties = ['sort_number', 'year_founded', 'year_dissolved', 'name', 'display_name', '_external_file'];
+            const metadataProperties = ['sort_number', 'year_founded', 'year_dissolved', 'name', 'display_name', '_external_file', 'models', 'families', 'subfamilies'];
             
             Object.keys(dataLocation).forEach(itemKey => {
-                // Skip metadata properties
+                // Skip metadata properties and collection properties
                 if (metadataProperties.includes(itemKey)) {
                     return;
                 }
