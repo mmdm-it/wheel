@@ -101,6 +101,24 @@ class DataManager {
     }
 
     /**
+     * Check if current volume uses split structure with lazy loading
+     * Delegates to lazyLoader module
+     * @returns {boolean} True if volume uses split structure
+     */
+    isSplitStructure() {
+        return this.lazyLoader.isSplitStructure();
+    }
+
+    /**
+     * Check if current volume uses chapter-level split structure
+     * Delegates to lazyLoader module
+     * @returns {boolean} True if volume uses chapter-level split structure
+     */
+    isChapterSplitStructure() {
+        return this.lazyLoader.isChapterSplitStructure();
+    }
+
+    /**
      * Get the display name for an item, checking multiple possible property names.
      * This provides backwards compatibility with volumes using domain-specific naming.
      * @param {Object} item - The data item
