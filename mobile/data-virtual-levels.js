@@ -420,6 +420,7 @@ export class DataVirtualLevels {
             return false;
         }
 
+        // Check that all skipped levels are either virtual or optional
         for (let i = parentDepth + 1; i < childDepth; i++) {
             const skippedLevelName = levelNames[i];
             const skippedLevelConfig = this.dataManager.getHierarchyLevelConfig(skippedLevelName);
@@ -427,7 +428,9 @@ export class DataVirtualLevels {
                 return false;
             }
 
-            if (!skippedLevelConfig.is_virtual) {
+            // Allow skipping if level is virtual OR optional
+            const canSkip = skippedLevelConfig.is_virtual === true || skippedLevelConfig.is_optional === true;
+            if (!canSkip) {
                 return false;
             }
         }
