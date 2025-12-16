@@ -213,27 +213,6 @@ export class DataHierarchyNavigator {
      * Extract child items from a data location
      */
     extractChildItems(dataLocation, childLevelName, parentItem) {
-        // DEBUG: Log what we're extracting
-        console.log(`📦 extractChildItems CALLED:`, {
-            childLevelName,
-            parentName: parentItem.name,
-            parentLevel: parentItem.__level,
-            dataIsArray: Array.isArray(dataLocation),
-            dataKeys: typeof dataLocation === 'object' && !Array.isArray(dataLocation) ? Object.keys(dataLocation) : 'N/A'
-        });
-        
-        // CRITICAL DEBUG: If extracting family/subfamily/model from Ford cylinders, show full trace
-        if ((childLevelName === 'family' || childLevelName === 'subfamily' || childLevelName === 'model') && 
-            parentItem.name && parentItem.name.includes('Cylinders')) {
-            console.error(`🔴 CRITICAL BUG TRACE:`, {
-                childLevelName,
-                parentItem: { name: parentItem.name, __level: parentItem.__level, key: parentItem.key },
-                dataLocationType: Array.isArray(dataLocation) ? 'array' : typeof dataLocation,
-                dataKeys: typeof dataLocation === 'object' && !Array.isArray(dataLocation) ? Object.keys(dataLocation) : 'N/A',
-                stackTrace: new Error().stack
-            });
-        }
-        
         const childLevelDepth = this.dataManager.getHierarchyLevelDepth(childLevelName);
         const levelConfig = this.dataManager.getHierarchyLevelConfig(childLevelName);
         const items = [];
