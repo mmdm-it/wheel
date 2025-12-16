@@ -194,45 +194,6 @@ class DataManager {
     computeCacheVersion(displayConfig, filename) {
         return this.volumeLoader.computeCacheVersion(displayConfig, filename);
     }
-        if (cfg.volume_type !== 'wheel_hierarchical') {
-            Logger.error('Validation failed: volume_type must be wheel_hierarchical');
-            return false;
-        }
-        if (!cfg.wheel_volume_version) {
-            Logger.error('Validation failed: missing wheel_volume_version');
-            return false;
-        }
-        if (!cfg.volume_schema_version) {
-            Logger.error('Validation failed: missing volume_schema_version');
-            return false;
-        }
-        if (!cfg.hierarchy_levels || Object.keys(cfg.hierarchy_levels).length === 0) {
-            Logger.error('Validation failed: hierarchy_levels missing or empty');
-            return false;
-        }
-        
-        const levelNames = Object.keys(cfg.hierarchy_levels);
-        const firstLevelPlural = this.getPluralPropertyName(levelNames[0]);
-        const firstLevelData = rootData[firstLevelPlural];
-        if (!firstLevelData || typeof firstLevelData !== 'object') {
-            Logger.error('Validation failed: root collection missing');
-            return false;
-        }
-        
-        return true;
-    }
-
-    computeCacheVersion(displayConfig, filename) {
-        const schema = displayConfig?.volume_schema_version || 'unknown-schema';
-        const dataVersion = displayConfig?.volume_data_version || 'unknown-data';
-        const volumeName = displayConfig?.volume_name || filename || 'unknown-volume';
-        const version = `${volumeName}|${schema}|${dataVersion}`;
-        
-        // Update cache manager with the version
-        this.cacheManager.setCacheVersion(version);
-        
-        return version;
-    }
 
     getDisplayConfig() {
         if (!this.data || !this.rootDataKey) return null;
