@@ -120,7 +120,7 @@ class DataLazyLoader {
                 // Normalize verse data to flatten text.VUL → latin, etc. (Phase 3A fix)
                 const normalizedVerses = {};
                 Object.entries(externalData.verses).forEach(([key, verseData]) => {
-                    normalizedVerses[key] = this.dataManager.itemBuilder.normalizeItem(verseData, 'verse');
+                    normalizedVerses[key] = this.dataManager.normalizeItemData(verseData);
                 });
                 targetLocation.verses = normalizedVerses;
                 targetLocation._loaded = true;
