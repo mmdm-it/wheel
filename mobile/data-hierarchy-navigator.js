@@ -171,10 +171,17 @@ export class DataHierarchyNavigator {
         
         if (!childrenData) {
             const childCollectionName = this.getPluralPropertyName(childLevelName);
-            Logger.warn(`getItemsAtLevel: could not find '${childCollectionName}' property for ${childLevelName}`);
-            this.dataManager.traceItem(parentItem, `Missing child collection '${childCollectionName}' for ${childLevelName}`, {
-                parentPath: dataPath
-            });
+            
+            // Check if this is a virtual level (can be skipped) - don't warn if so
+            const levelConfig = this.dataManager.getHierarchyLevelConfig(childLevelName);
+            const isVirtual = levelConfig && levelConfig.is_virtual === true;
+            
+            if (!isVirtual) {
+                Logger.warn(`getItemsAtLevel: could not find '${childCollectionName}' property for ${childLevelName}`);
+                this.dataManager.traceItem(parentItem, `Missing child collection '${childCollectionName}' for ${childLevelName}`, {
+                    parentPath: dataPath
+                });
+            }
             return [];
         }
 
