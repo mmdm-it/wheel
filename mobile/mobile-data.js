@@ -119,6 +119,26 @@ class DataManager {
     }
 
     /**
+     * Ensure a book's chapters are loaded (for split structure volumes)
+     * Delegates to lazyLoader module
+     * @param {Object} bookItem - The book item
+     * @returns {Promise<boolean>} True if loaded successfully
+     */
+    async ensureBookLoaded(bookItem) {
+        return await this.lazyLoader.ensureBookLoaded(bookItem);
+    }
+
+    /**
+     * Ensure a chapter's verses are loaded (for chapter-split structure volumes)
+     * Delegates to lazyLoader module
+     * @param {Object} chapterItem - The chapter item
+     * @returns {Promise<boolean>} True if loaded successfully
+     */
+    async ensureChapterLoaded(chapterItem) {
+        return await this.lazyLoader.ensureChapterLoaded(chapterItem);
+    }
+
+    /**
      * Get the display name for an item, checking multiple possible property names.
      * This provides backwards compatibility with volumes using domain-specific naming.
      * @param {Object} item - The data item
