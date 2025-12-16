@@ -176,6 +176,16 @@ export class DataHierarchyNavigator {
             const levelConfig = this.dataManager.getHierarchyLevelConfig(childLevelName);
             const isVirtual = levelConfig && levelConfig.is_virtual === true;
             
+            // DEBUG: Log why we're returning empty
+            console.log(`🚫 getItemsAtLevel: childrenData is null/undefined`, {
+                childLevelName,
+                childCollectionName,
+                isVirtual,
+                parentName: parentItem.name,
+                dataLocation: dataLocation ? 'exists' : 'null',
+                dataLocationKeys: dataLocation && typeof dataLocation === 'object' ? Object.keys(dataLocation) : 'N/A'
+            });
+            
             if (!isVirtual) {
                 Logger.warn(`getItemsAtLevel: could not find '${childCollectionName}' property for ${childLevelName}`);
                 this.dataManager.traceItem(parentItem, `Missing child collection '${childCollectionName}' for ${childLevelName}`, {
@@ -186,6 +196,12 @@ export class DataHierarchyNavigator {
         }
 
         // Get the child items from this location
+        console.log(`✅ getItemsAtLevel: About to extract children`, {
+            childLevelName,
+            parentName: parentItem.name,
+            childrenDataIsArray: Array.isArray(childrenData),
+            childrenDataKeys: typeof childrenData === 'object' && !Array.isArray(childrenData) ? Object.keys(childrenData) : 'N/A'
+        });
         const childItems = this.extractChildItems(childrenData, childLevelName, parentItem);
         this.dataManager.traceItem(parentItem, `Resolved ${childItems.length} ${childLevelName} item(s)`, {
             sampleNames: childItems.slice(0, 3).map(item => item.name)
@@ -197,6 +213,15 @@ export class DataHierarchyNavigator {
      * Extract child items from a data location
      */
     extractChildItems(dataLocation, childLevelName, parentItem) {
+        // DEBUG: Log what we're extracting
+        console.log(`📦 extractChildItems CALLED:`, {
+            childLevelName,
+            parentName: parentItem.name,
+            parentLevel: parentItem.__level,
+            dataIsArray: Array.isArray(dataLocation),
+            dataKeys: typeof dataLocation === 'object' && !Array.isArray(dataLocation) ? Object.keys(dataLocation) : 'N/A'
+        });
+        
         const childLevelDepth = this.dataManager.getHierarchyLevelDepth(childLevelName);
         const levelConfig = this.dataManager.getHierarchyLevelConfig(childLevelName);
         const items = [];
