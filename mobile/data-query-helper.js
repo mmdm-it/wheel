@@ -168,11 +168,11 @@ export class DataQueryHelper {
                 return { level: levelName, items: childItems };
             }
 
-            // Check if level is virtual
+            // Check if level is optional or virtual - if so, try next level
             const levelConfig = r.dataManager.getHierarchyLevelConfig(levelName);
-            const isVirtual = levelConfig && levelConfig.is_virtual === true;
+            const isOptional = levelConfig && (levelConfig.is_optional === true || levelConfig.is_virtual === true);
             
-            if (!isVirtual) {
+            if (!isOptional) {
                 break;
             }
 
@@ -204,11 +204,11 @@ export class DataQueryHelper {
                 return { level: levelName, items: childItems };
             }
 
-            // Check if level is virtual
+            // Check if level is optional or virtual - if so, try next level
             const levelConfig = r.dataManager.getHierarchyLevelConfig(levelName);
-            const isVirtual = levelConfig && levelConfig.is_virtual === true;
+            const isOptional = levelConfig && (levelConfig.is_optional === true || levelConfig.is_virtual === true);
             
-            if (!isVirtual) {
+            if (!isOptional) {
                 break;
             }
 
