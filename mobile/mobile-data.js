@@ -15,19 +15,15 @@ import { DataConfigManager } from './data-config-manager.js';
 import { DataCoordinateCache } from './data-coordinate-cache.js';
 import { DataDetailSectorManager } from './data-detailsector-manager.js';
 import { DataItemTracer } from './data-item-tracer.js';
+import { DataVolumeLoader } from './data-volume-loader.js';
 
 /**
  * Manages data loading with error handling and caching
  */
 class DataManager {
     constructor() {
-        this.data = null;
-        this.loading = false;
-        this.loadPromise = null;
-        this.currentVolumePath = null;
-        this.cacheVersion = 'unknown'; // versioned cache key (schema+data)
-        this.availableVolumes = [];
-        this.rootDataKey = null; // e.g., 'MMdM' or 'Gutenberg_Bible'
+        // Volume loading and discovery
+        this.volumeLoader = new DataVolumeLoader(this);
         
         // Cache manager for persistent storage across sessions
         this.cacheManager = new DataCacheManager();
@@ -56,6 +52,28 @@ class DataManager {
         // Item tracing for targeted debug logging
         this.itemTracer = new DataItemTracer(this);
     }
+
+    // Delegated properties from volumeLoader
+    get data() { return this.volumeLoader.data; }
+    set data(value) { this.volumeLoader.data = value; }
+    
+    get loading() { return this.volumeLoader.loading; }
+    set loading(value) { this.volumeLoader.loading = value; }
+    
+    get loadPromise() { return this.volumeLoader.loadPromise; }
+    set loadPromise(value) { this.volumeLoader.loadPromise = value; }
+    
+    get currentVolumePath() { return this.volumeLoader.currentVolumePath; }
+    set currentVolumePath(value) { this.volumeLoader.currentVolumePath = value; }
+    
+    get cacheVersion() { return this.volumeLoader.cacheVersion; }
+    set cacheVersion(value) { this.volumeLoader.cacheVersion = value; }
+    
+    get availableVolumes() { return this.volumeLoader.availableVolumes; }
+    set availableVolumes(value) { this.volumeLoader.availableVolumes = value; }
+    
+    get rootDataKey() { return this.volumeLoader.rootDataKey; }
+    set rootDataKey(value) { this.volumeLoader.rootDataKey = value; }
 
     getActiveTraceTarget() {
         return this.itemTracer.getActiveTraceTarget();
@@ -130,153 +148,7 @@ class DataManager {
      * @returns {Promise<Array>} Array of discovered volume objects with metadata
      */
     async discoverVolumes() {
-        Logger.debug('🔍 Discovering available Wheel volumes...');
-        
-        // Try to load volume index if available
-        let volumeFiles = [];
-        try {
-            const indexResponse = await fetch('./volumes.json');
-            if (indexResponse.ok) {
-                const index = await indexResponse.json();
-                const indexed = index.volumes || [];
-                // Accept strings or objects { path, name }
-                volumeFiles = indexed.map(entry => typeof entry === 'string' ? entry : entry?.path).filter(Boolean);
-                Logger.debug('📋 Loaded volume index:', volumeFiles);
-            }
-        } catch (error) {
-            Logger.debug('📋 No volume index found, scanning common locations');
-        }
-        
-        // If no index, scan common volume file patterns
-        if (volumeFiles.length === 0) {
-            // Scan for any .json files that might be volumes
-            // These are just common patterns - the validation below will reject non-volumes
-            // Note: gutenberg.json removed - now uses split chapters in data/gutenberg/manifest.json
-            volumeFiles = [
-                'mmdm_catalog.json',
-                'hg_mx.json',
-                'fairhope.json'
-            ];
-        }
-        
-        // Also check for split manifests (these take precedence)
-        const splitManifests = [
-            { manifest: 'data/gutenberg/manifest.json', volumeId: 'gutenberg' }
-        ];
-        
-        const volumes = [];
-        const addedVolumeIds = new Set();
-        
-        // First, check for split manifests (they take precedence)
-        for (const { manifest, volumeId } of splitManifests) {
-            try {
-                const response = await fetch(`./${manifest}`);
-                
-                if (!response.ok) {
-                    continue;
-                }
-                
-                const data = await response.json();
-                const rootKey = Object.keys(data)[0];
-                const rootData = data[rootKey];
-                
-                if (rootData &&
-                    rootData.display_config &&
-                    rootData.display_config.volume_type === 'wheel_hierarchical' &&
-                    (rootData.display_config.structure_type === 'split' || rootData.display_config.structure_type === 'split_chapters')) {
-                    
-                    const schemaVersion = rootData.display_config.volume_schema_version || '1.0.0';
-                    const dataVersion = rootData.display_config.volume_data_version || 'unknown';
-                    const structureType = rootData.display_config.structure_type;
-                    
-                    Logger.info(`📦 Split volume discovered: ${rootData.display_config.volume_name}`);
-                    Logger.info(`   Schema: ${schemaVersion} | Data: ${dataVersion} | Structure: ${structureType}`);
-                    
-                    volumes.push({
-                        filename: manifest,
-                        name: rootData.display_config.volume_name || volumeId,
-                        description: rootData.display_config.volume_description || '',
-                        version: rootData.display_config.wheel_volume_version,
-                        schemaVersion: schemaVersion,
-                        dataVersion: dataVersion,
-                        structureType: structureType,
-                        rootKey: rootKey
-                    });
-                    
-                    addedVolumeIds.add(volumeId);
-                    Logger.debug(`✅ Found split volume: ${rootData.display_config.volume_name}`);
-                }
-            } catch (error) {
-                Logger.debug(`⏭️  Error checking split manifest ${manifest}: ${error.message}`);
-            }
-        }
-        
-        // Then check monolithic volumes (skip if split version already found)
-        for (const filename of volumeFiles) {
-            // Extract volume ID from filename (e.g., 'gutenberg.json' -> 'gutenberg')
-            const volumeId = filename.replace('.json', '');
-            
-            // Skip if split version already discovered
-            if (addedVolumeIds.has(volumeId)) {
-                Logger.debug(`⏭️  Skipping ${filename} - split version already loaded`);
-                continue;
-            }
-            
-            try {
-                const response = await fetch(`./${filename}`);
-                
-                if (!response.ok) {
-                    continue;
-                }
-                
-                const data = await response.json();
-                
-                // Check for Wheel volume identification keys
-                const rootKey = Object.keys(data)[0];
-                const rootData = data[rootKey];
-                
-                if (rootData &&
-                    rootData.display_config &&
-                    rootData.display_config.volume_type === 'wheel_hierarchical' &&
-                    rootData.display_config.wheel_volume_version) {
-                    
-                    const schemaVersion = rootData.display_config.volume_schema_version || '1.0.0';
-                    const dataVersion = rootData.display_config.volume_data_version || 'unknown';
-                    const structureType = rootData.display_config.structure_type || 'monolithic';
-                    
-                    Logger.info(`📦 Volume schema: ${schemaVersion} | data: ${dataVersion} | structure: ${structureType}`);
-                    
-                    volumes.push({
-                        filename: filename,
-                        name: rootData.display_config.volume_name || filename,
-                        description: rootData.display_config.volume_description || '',
-                        version: rootData.display_config.wheel_volume_version,
-                        schemaVersion: schemaVersion,
-                        dataVersion: dataVersion,
-                        structureType: structureType,
-                        rootKey: rootKey
-                    });
-                    
-                    Logger.debug(`✅ Found valid Wheel volume: ${rootData.display_config.volume_name}`);
-                } else {
-                    Logger.debug(`⏭️  ${filename} missing required Wheel volume keys`);
-                }
-            } catch (error) {
-                // File doesn't exist or isn't valid JSON - skip it
-                Logger.debug(`⏭️  Error checking ${filename}: ${error.message}`);
-            }
-        }
-        
-        this.availableVolumes = volumes;
-        Logger.info(`🔍 Discovery complete: ${volumes.length} Wheel volume(s) found`);
-        
-        if (volumes.length > 0) {
-            volumes.forEach(vol => {
-                Logger.verbose(`   - ${vol.name} (${vol.filename}) [${vol.structureType}]`);
-            });
-        }
-        
-        return volumes;
+        return this.volumeLoader.discoverVolumes();
     }
 
     /**
@@ -286,150 +158,42 @@ class DataManager {
      * @throws {Error} If volume cannot be loaded or is invalid
      */
     async loadVolume(filename) {
-        this.loading = true;
-        Logger.debug(`📂 Loading volume: ${filename}`);
-        
-        try {
-            const response = await fetch(`./${filename}`);
-            
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-            }
-            
-            this.data = await response.json();
-
-            // Determine root data key (e.g., 'MMdM', 'Gutenberg_Bible')
-            this.rootDataKey = Object.keys(this.data)[0];
-            
-            if (!this.validateData(this.data)) {
-                throw new Error('Invalid data structure received');
-            }
-            
-            // Log schema information
-            const displayConfig = this.getDisplayConfig();
-            if (displayConfig) {
-                const schemaVersion = displayConfig.volume_schema_version || '1.0.0';
-                const dataVersion = displayConfig.volume_data_version || 'unknown';
-                const structureType = displayConfig.structure_type || 'monolithic';
-                this.cacheVersion = this.computeCacheVersion(displayConfig, filename);
-                
-                Logger.info(`📦 Loaded volume schema: ${schemaVersion} | data: ${dataVersion} | structure: ${structureType}`);
-                
-                // Check if structure type is supported
-                if (structureType === 'split') {
-                    Logger.info(`📂 Split structure detected - lazy loading enabled for external book files`);
-                } else if (structureType === 'split_chapters') {
-                    Logger.info(`📂 Chapter-level split structure detected - lazy loading enabled for external chapter files`);
-                }
-            }
-            
-            this.currentVolumePath = filename;
-            // Reset external load tracking for new volume context
-            this.lazyLoader.clearLoadedFiles();
-            Logger.info(`✅ Volume loaded successfully: ${filename}`);
-            return this.data;
-            
-        } catch (error) {
-            Logger.error(`❌ Failed to load volume ${filename}:`, error);
-            this.data = null;
-            throw new Error(`Unable to load volume: ${error.message}`);
-        } finally {
-            this.loading = false;
-        }
+        return this.volumeLoader.loadVolume(filename);
     }
 
     /**
-     * Check if current volume uses split structure with lazy loading
-     * @returns {boolean} True if volume uses split structure
-     */
-    isSplitStructure() {
-        return this.lazyLoader.isSplitStructure();
-    }
-
-    /**
-     * Check if current volume uses chapter-level split structure
-     * @returns {boolean} True if volume uses chapter-level split structure
-     */
-    isChapterSplitStructure() {
-        return this.lazyLoader.isChapterSplitStructure();
-    }
-
-    /**
-     * Load external file data and merge into the main data structure
-     * @param {string} externalFilePath - Path to the external JSON file
-     * @param {Object} targetLocation - Location in data structure to merge into
+     * Load default volume (legacy support)
      * @returns {Promise<Object>} The loaded data
      */
-    async loadExternalFile(externalFilePath, targetLocation) {
-        return this.lazyLoader.loadExternalFile(externalFilePath, targetLocation);
-    }
-
-    /**
-     * Ensure book data is loaded before accessing its children (chapters)
-     * @param {Object} bookItem - The book item that may need loading
-     * @returns {Promise<boolean>} True if book is ready
-     */
-    async ensureBookLoaded(bookItem) {
-        return this.lazyLoader.ensureBookLoaded(bookItem);
-    }
-
-    /**
-     * Get the actual data location for a book item
-     * @param {Object} bookItem - Book item with __path metadata
-     * @returns {Object|null} The book data object
-     */
-    getBookDataLocation(bookItem) {
-        return this.lazyLoader.getBookDataLocation(bookItem);
-    }
-
-    /**
-     * Ensure chapter data is loaded before accessing its children (verses)
-     * @param {Object} chapterItem - The chapter item that may need loading
-     * @returns {Promise<boolean>} True if chapter is ready
-     */
-    async ensureChapterLoaded(chapterItem) {
-        return this.lazyLoader.ensureChapterLoaded(chapterItem);
-    }
-
-    /**
-     * Get the actual data location for a chapter item
-     * @param {Object} chapterItem - Chapter item with __path metadata
-     * @returns {Object|null} The chapter data object
-     */
-    getChapterDataLocation(chapterItem) {
-        return this.lazyLoader.getChapterDataLocation(chapterItem);
-    }
-
     async load() {
-        // Legacy support - load default volume if no volume selector is used
-        if (this.data) return this.data;
-        if (this.loadPromise) return this.loadPromise;
-
-        // Discover volumes and load the first one
-        await this.discoverVolumes();
-        const defaultVolume = this.availableVolumes?.[0]?.filename || 'mmdm_catalog.json';
-        this.loadPromise = this.loadVolume(defaultVolume);
-        return this.loadPromise;
+        return this.volumeLoader.load();
     }
 
+    /**
+     * @deprecated Use load() instead
+     */
     async performLoad() {
-        // Deprecated - use load() instead
-        return this.load();
+        return this.volumeLoader.performLoad();
     }
 
+    /**
+     * Validate that loaded data is a proper Wheel volume
+     * @param {Object} data - The volume data to validate
+     * @returns {boolean} True if valid
+     */
     validateData(data) {
-        if (!data || !this.rootDataKey) {
-            Logger.error('Validation failed: missing data or root key');
-            return false;
-        }
-        
-        const rootData = data[this.rootDataKey];
-        if (!rootData || !rootData.display_config) {
-            Logger.error('Validation failed: missing display_config');
-            return false;
-        }
-        
-        const cfg = rootData.display_config;
+        return this.volumeLoader.validateData(data);
+    }
+
+    /**
+     * Compute cache version string from display config
+     * @param {Object} displayConfig - The display_config object
+     * @param {string} filename - Current volume filename
+     * @returns {string} Cache version string
+     */
+    computeCacheVersion(displayConfig, filename) {
+        return this.volumeLoader.computeCacheVersion(displayConfig, filename);
+    }
         if (cfg.volume_type !== 'wheel_hierarchical') {
             Logger.error('Validation failed: volume_type must be wheel_hierarchical');
             return false;
