@@ -117,10 +117,15 @@ class DataLazyLoader {
                 targetLocation._loaded = true;
                 Logger.info(`✅ Loaded ${Object.keys(externalData.chapters).length} chapters from ${externalFilePath}`);
             } else if (externalData.verses) {
-                targetLocation.verses = externalData.verses;
+                // Normalize verse data to flatten text.VUL → latin, etc. (Phase 3A fix)
+                const normalizedVerses = {};
+                Object.entries(externalData.verses).forEach(([key, verseData]) => {
+                    normalizedVerses[key] = this.dataManager.itemBuilder.normalizeItem(verseData, 'verse');
+                });
+                targetLocation.verses = normalizedVerses;
                 targetLocation._loaded = true;
-                console.log(`🔍 DEBUG: Merged ${Object.keys(externalData.verses).length} verses into targetLocation`);
-                console.log(`🔍 DEBUG: Sample verse 6:`, JSON.stringify(externalData.verses['6']).substring(0, 200));
+                console.log(`🔍 DEBUG: Normalized and merged ${Object.keys(normalizedVerses).length} verses into targetLocation`);
+                console.log(`🔍 DEBUG: Sample verse 6:`, JSON.stringify(normalizedVerses['6']).substring(0, 200));
                 Logger.info(`✅ Loaded ${Object.keys(externalData.verses).length} verses from ${externalFilePath}`);
             } else {
                 // Generic merge - copy all properties except metadata
