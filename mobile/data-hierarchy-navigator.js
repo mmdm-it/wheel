@@ -222,6 +222,18 @@ export class DataHierarchyNavigator {
             dataKeys: typeof dataLocation === 'object' && !Array.isArray(dataLocation) ? Object.keys(dataLocation) : 'N/A'
         });
         
+        // CRITICAL DEBUG: If extracting family/subfamily/model from Ford cylinders, show full trace
+        if ((childLevelName === 'family' || childLevelName === 'subfamily' || childLevelName === 'model') && 
+            parentItem.name && parentItem.name.includes('Cylinders')) {
+            console.error(`🔴 CRITICAL BUG TRACE:`, {
+                childLevelName,
+                parentItem: { name: parentItem.name, __level: parentItem.__level, key: parentItem.key },
+                dataLocationType: Array.isArray(dataLocation) ? 'array' : typeof dataLocation,
+                dataKeys: typeof dataLocation === 'object' && !Array.isArray(dataLocation) ? Object.keys(dataLocation) : 'N/A',
+                stackTrace: new Error().stack
+            });
+        }
+        
         const childLevelDepth = this.dataManager.getHierarchyLevelDepth(childLevelName);
         const levelConfig = this.dataManager.getHierarchyLevelConfig(childLevelName);
         const items = [];
