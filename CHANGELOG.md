@@ -10,6 +10,11 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Phase 3: General code cleanup and optimization
 - Child Pyramid design completion (blocking 0.9.0 release)
 
+## [0.8.187] - 2025-12-16
+
+### Changed
+- (Add changes here)
+
 ## [0.8.186] - 2025-12-16
 
 ### Changed
