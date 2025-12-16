@@ -2,18 +2,99 @@
 
 ## Target: bibliacatholica.org Launch (Dec 21, 2025)
 Complete Catholic Bible in 9 languages via web browser.
+**5 days remaining**
 
-## Version Roadmap
-- **v0.8.x** → Child Pyramid redesign
-- **v0.9.x** → Complete 9-language JSON population
-- **v1.0.0** → bibliacatholica.org launch
+## Critical Path to Launch
 
-## Now (Today)
+### Day 1 (Dec 17): Phase 3 - Single Source of Truth ⚠️ BLOCKING
+- [ ] **Phase 3A: CSS-Only Font Sizing** (4 hours)
+  - [ ] Audit all `setAttribute('font-size')` calls
+  - [ ] Create CSS classes for all text sizes
+  - [ ] Replace JS font sizing with class toggles
+  - [ ] Impact: Fixes "weeks battling .js vs .css" problem
+- [ ] **Phase 3B: CSS Variable Theme System** (3 hours)
+  - [ ] Add `theme` section to manifest.json (Bible volume)
+  - [ ] Update ThemeManager to apply CSS variables from JSON
+  - [ ] Convert hardcoded colors/fonts to CSS variables
+  - [ ] Impact: Volume-agnostic styling, ready for MMdM catalog
 
-### Clean Architecture Initiative (v0.8.149+)
-**Goal**: Make code clean, elegant, eliminate bugs from redundant logic
+### Day 2 (Dec 18): Complete Missing Content ⚠️ BLOCKING
+- [ ] **Populate 1 Maccabees** (3 hours)
+  - [ ] Parse 16 chapters
+  - [ ] Add to gutenberg volume
+- [ ] **Populate 2 Maccabees** (3 hours)
+  - [ ] Parse 15 chapters
+  - [ ] Add to gutenberg volume
+- [ ] **Test all 73 books load correctly** (1 hour)
 
-**PROGRESS UPDATE (v0.8.186)**:
+### Day 3 (Dec 19): Translation & Testing
+- [ ] **Test translation toggle** (2 hours)
+  - [ ] Verify all 9 languages switch correctly
+  - [ ] Fix any language-specific rendering issues
+- [ ] **Full navigation smoke test** (3 hours)
+  - [ ] Test all Testament → Section → Book → Chapter → Verse paths
+  - [ ] Test rotation, selection, detail sector
+  - [ ] Test on mobile device (not just Chrome DevTools)
+
+### Day 4 (Dec 20): Polish & Deploy Prep
+- [ ] **Documentation** (2 hours)
+  - [ ] Add screenshots to README
+  - [ ] Update CHANGELOG with final v1.0.0 entry
+- [ ] **Performance check** (2 hours)
+  - [ ] Test lazy loading performance
+  - [ ] Optimize any slow paths
+- [ ] **Domain setup** (2 hours)
+  - [ ] Configure bibliacatholica.org DNS
+  - [ ] Set up hosting/CDN
+
+### Day 5 (Dec 21): Launch Day 🚀
+- [ ] Final testing on production URL
+- [ ] Launch announcement
+- [ ] Monitor for issues
+
+## Post-Launch (After Dec 21)
+- [ ] Phase 3C: Dead Code Removal (catalog_mobile_modular.js, mobile-viewport-modernized.js)
+- [ ] Phase 4: JSDoc Documentation
+- [ ] Recruiting prep (GitHub Discussions, HN post)
+- [ ] Portuguese translation permission
+
+---
+
+## Version Roadmap (UPDATED)
+- **v0.8.x** → Clean architecture complete ✅
+- **v0.9.x** → Content complete, theme system → **CURRENT FOCUS**
+- **v1.0.0** → bibliacatholica.org launch (Dec 21)
+
+## Now (Today - Dec 16)
+
+### Phase 3: Single Source of Truth (CRITICAL FOR LAUNCH)
+**Goal**: Eliminate multiple sources of truth, prepare for multi-volume deployment
+
+**Why This Blocks Launch**:
+- Bible and MMdM catalog need different fonts/colors
+- Current CSS is hardcoded for one volume only
+- Font-size battles between .js and .css cause bugs
+- Need volume-agnostic system before launch
+
+**Tasks**:
+- [ ] **Phase 3A: CSS-Only Font Sizing** (Today)
+  - [ ] Find all `setAttribute('font-size')` and `setAttribute('font-weight')` calls
+  - [ ] Create CSS classes for each text size variant
+  - [ ] Replace JS font sizing with CSS class application only
+  - [ ] Test: Focus ring, child pyramid, detail sector text
+  - [ ] Commit and version bump
+- [ ] **Phase 3B: CSS Variable Theme System** (Today/Tomorrow)
+  - [ ] Design theme schema for manifest.json
+  - [ ] Extend ThemeManager.applyVolumeTheme() to set CSS variables
+  - [ ] Convert hardcoded CSS colors/fonts to CSS variables
+  - [ ] Add Bible theme config to manifest.json
+  - [ ] Test theme application on volume load
+  - [ ] Commit and version bump
+- [ ] **Phase 3C: Config Consolidation** (If time allows)
+  - [ ] Move magic numbers from code to mobile-config.js
+  - [ ] Document what should be config vs. what should be theme
+
+### Clean Architecture Initiative (v0.8.149-186) ✅ COMPLETE
 - ✅ Phase 1: Complete (item-utils.js - 150 lines)
 - ✅ Phase 2A: Complete (mobile-data.js split - 52% reduction)
 - ✅ Phase 2B: Complete (mobile-detailsector.js split - 87% reduction)
@@ -64,23 +145,22 @@ Complete Catholic Bible in 9 languages via web browser.
 - Bug fixes: v0.8.182-184 (delegation completion)
 - Architecture: Facade pattern with proper encapsulation
 - **Status: Phase 2 COMPLETE ✅** (focus-ring-view.js excluded by design)
+- [x] **Phase 2C: Split focus-ring-view.js** (REVERTED v0.8.186)
+  - [x] Attempted extraction - broke positioning/styling
+  - [x] Reverted to v0.8.185-stable
+  - [x] Decision: Keep focus-ring-view.js intact (too complex/critical)
+  - [x] Status: Skipped by design - not worth the risk ⚠️
+- [x] **Dead Code Cleanup** (v0.8.186)
+  - [x] Deleted config-test.js, mobile-renderer-demo.js, viewport-bilingual-test.js
+  - [x] Created CODEBASE_AUDIT.md documenting issues and action plan
+- [ ] **Phase 3: Single Source of Truth** (IN PROGRESS)
+  - [ ] Phase 3A: CSS-Only Font Sizing
+  - [ ] Phase 3B: CSS Variable Theme System  
+  - [ ] Phase 3C: Config Consolidation
 
 ---
 
-- [x] **Phase 1: Extract Utilities** (COMPLETE v0.8.149-150)
-  - [x] Created `mobile/item-utils.js` with 11 utility methods (150 lines)
-  - [x] Replaced 100+ redundant patterns across 11 files
-  - [x] Impact: Eliminated 80-100 lines of redundant code, single source of truth
-  - [x] Fixed: Pseudo-parent cousin navigation bug (v0.8.150)
-- [x] **Phase 2A: Split mobile-data.js** (COMPLETE v0.8.161-177)
-  - [x] Extract DataHierarchyNavigator (~415 lines) - v0.8.161
-  - [x] Extract DataConfigManager (~59 lines) - v0.8.158
-  - [x] Extract DataCoordinateCache (~66 lines) - v0.8.161
-  - [x] Extract DataDetailSectorManager (~152 lines) - v0.8.175
-  - [x] Extract DataItemTracer (~83 lines) - v0.8.176
-  - [x] Extract DataVolumeLoader (~314 lines) - v0.8.177
-  - [x] Result: 1,066 → 512 lines (52% reduction, 554 lines extracted)
-  - [x] Modules created: 11 focused, testable modules
+### Content Population Status (71/73 Books Complete)
 - [x] **Phase 2B: Split mobile-detailsector.js** (COMPLETE v0.8.179-185)
   - [x] Extract detailsector-geometry.js (385 lines) - v0.8.179 - COMPLETE
   - [x] Extract detailsector-animation.js (562 lines) - v0.8.180 - COMPLETE
@@ -99,7 +179,16 @@ Complete Catholic Bible in 9 languages via web browser.
   - [ ] Consolidate item validation logic
   - [ ] Consolidate gap handling in arrays
   - [ ] Impact: Save 200-300 lines
-- [ ] **Phase 4: Document Module Contracts** (3 days)
+**Old Testament**: 46 books (39 protocanonical + 7 deuterocanonical) ✅ COMPLETE
+**New Testament**: 27 books ✅ COMPLETE
+**Remaining**: 2 books (1 Maccabees, 2 Maccabees) ⚠️ BLOCKING LAUNCH
+
+- [ ] **1 Maccabees** (16 chapters) - CRITICAL
+- [ ] **2 Maccabees** (15 chapters) - CRITICAL
+
+---
+
+### Virtual Levels & Optional Levels (RESOLVED v0.8.171-174)Module Contracts** (3 days)
   - [ ] Add JSDoc type definitions
   - [ ] Document module responsibilities
   - [ ] Create architecture diagrams
@@ -114,7 +203,7 @@ Complete Catholic Bible in 9 languages via web browser.
   - Now checks for both `is_optional` and `is_virtual` flags
   - Allows navigation to skip empty optional levels (Ford 4-cyl → models directly)
 - [x] **Validation**: All Ford navigation paths tested and working
-  - 4-cyl: cylinder → model (skips family)
+### Multi-language Support (9 Languages)l (skips family)
   - 6-cyl: cylinder → family → model (Falcon Six)
   - 8-cyl: cylinder → family → subfamily → model (Windsor, Modular)
 - [x] **Pseudo-parents**: Manufacturer aggregation across countries working correctly
@@ -132,12 +221,12 @@ Complete Catholic Bible in 9 languages via web browser.
     - [x] Greek OT: Septuagint (Swete) - 120 txt files
     - [x] Greek NT: Byzantine Robinson-Pierpont - 144 CSV files
     - [x] Latin: Clementine Vulgate - 146 lat files
-    - [x] French: néo-Crampon Libre - 73 USFM files
-    - [x] Spanish: Libro del Pueblo de Dios (Vatican) - 1,348 HTML files
-    - [x] English: NAB (Vatican) - 1,411 HTML files
-    - [x] Italian: Vatican Italian - 1,330 HTML files
-    - [x] Chinese: Vatican PDFs - 75 PDF files
-    - [x] Russian: Synodal 77-book (bible.by) - 77 TXT files with deuterocanonicals
+  - [x] Parse downloaded sources into JSON format
+    - [x] Old Testament: 46 books complete (39 + 7 deuterocanonical)
+    - [x] New Testament: 27 books complete
+    - [x] Partial Deuterocanonical: Tobit, Judith, Wisdom, Sirach completed
+    - [ ] Missing: 1 Maccabees, 2 Maccabees ⚠️ BLOCKS LAUNCH
+- [x] Chapter-level split architecture (v0.8.114)7 TXT files with deuterocanonicals
   - [ ] **Portuguese**: Contact Editora Ave-Maria for permission
     - WhatsApp: +55 11 97334-7405
     - Website: avemaria.com.br
@@ -145,23 +234,24 @@ Complete Catholic Bible in 9 languages via web browser.
     - [x] Old Testament: 39 protocanonical books complete
     - [x] New Testament: 27 books complete
     - [x] Deuterocanonical: 4/8 books complete (Tobit, Judith, Wisdom, Sirach, Baruch, Esther additions)
-    - [ ] Remaining: 1 Maccabees, 2 Maccabees
-- [x] Chapter-level split architecture (v0.8.114)
-  - [x] Design chapter split structure (CHAPTER_SPLIT_DESIGN.md)
-  - [x] Implement 1,215 chapter files (scripts/split-books-to-chapters.js)
-  - [x] Add chapter_id field for unique identification
-  - [x] Update mobile-data.js with ensureChapterLoaded()
-  - [x] Update mobile-renderer.js for chapter-level lazy loading
-  - [ ] Test lazy loading performance
+## Next (This Week) - LAUNCH PREP
+- [ ] **CRITICAL: Complete content** (Day 2 - Dec 18)
+  - [ ] Populate 1 Maccabees (16 chapters)
+  - [ ] Populate 2 Maccabees (15 chapters)
+  - [ ] Test all 73 books load correctly
+- [ ] **CRITICAL: Theme system** (Day 1 - Dec 17)
+  - [ ] Implement CSS variable theme system
+  - [ ] Make fonts/colors volume-specific (not hardcoded)
+- [ ] **Important: Testing** (Day 3 - Dec 19)
+  - [ ] Test translation toggle functionality
+  - [ ] Full navigation smoke test on mobile device
+  - [ ] Performance profiling
+- [ ] **Launch prep** (Day 4-5 - Dec 20-21)
+  - [ ] Documentation (screenshots, README)
+  - [ ] Domain setup (bibliacatholica.org)
+  - [ ] Deploy and monitor
 
-## Next (This Week)
-- [ ] Populate remaining books
-  - [ ] 1 Maccabees (16 chapters)
-  - [ ] 2 Maccabees (15 chapters)
-- [ ] Multi-language UI labels
-  - [ ] Add translated names for Testaments
-  - [ ] Add translated names for Books
-  - [ ] Add translated names for Chapters
+## Soon (After Launch - Dec 22+)ed names for Chapters
   - [ ] Add translated names for Verses
 - [ ] Documentation updates
   - [x] Update BOOKPOPULATION.md with NT completion
