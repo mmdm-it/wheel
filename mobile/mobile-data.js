@@ -14,6 +14,7 @@ import { ItemBuilder } from './item-builder.js';
 import { DataConfigManager } from './data-config-manager.js';
 import { DataCoordinateCache } from './data-coordinate-cache.js';
 import { DataDetailSectorManager } from './data-detailsector-manager.js';
+import { DataItemTracer } from './data-item-tracer.js';
 
 /**
  * Manages data loading with error handling and caching
@@ -51,61 +52,21 @@ class DataManager {
         
         // Detail sector configuration and context management
         this.detailSectorManager = new DataDetailSectorManager(this);
-
-        // Targeted item tracing (trace items matching this path/name)
-        this.traceItemTarget = 'Lockwood-Ash';
+        
+        // Item tracing for targeted debug logging
+        this.itemTracer = new DataItemTracer(this);
     }
 
     getActiveTraceTarget() {
-        if (typeof window !== 'undefined') {
-            const runtimeOverride = window.DEBUG_ITEM_TRACE;
-            if (typeof runtimeOverride === 'string') {
-                const trimmed = runtimeOverride.trim();
-                if (trimmed.length === 0) {
-                    return null;
-                }
-                return trimmed;
-            }
-        }
-        return this.traceItemTarget;
+        return this.itemTracer.getActiveTraceTarget();
     }
 
     shouldTraceItem(item) {
-        const target = this.getActiveTraceTarget();
-        if (!target || !item) {
-            return false;
-        }
-
-        const normalizedTarget = target.toLowerCase();
-        const candidates = [];
-
-        // Check top-level ancestor (first path segment)
-        if (Array.isArray(item.__path) && item.__path.length > 0) {
-            candidates.push(item.__path[0]);
-        }
-
-        if (item.name) {
-            candidates.push(item.name);
-        }
-
-        if (Array.isArray(item.__path)) {
-            candidates.push(...item.__path);
-        }
-
-        return candidates.some(value => typeof value === 'string' && value.toLowerCase().includes(normalizedTarget));
+        return this.itemTracer.shouldTraceItem(item);
     }
 
     traceItem(item, message, extraContext = null) {
-        if (!this.shouldTraceItem(item)) {
-            return;
-        }
-
-        const prefix = this.getActiveTraceTarget() || 'Item';
-        if (extraContext !== null) {
-            Logger.info(`[Trace:${prefix}] ${message}`, extraContext);
-        } else {
-            Logger.info(`[Trace:${prefix}] ${message}`);
-        }
+        return this.itemTracer.traceItem(item, message, extraContext);
     }
 
 
