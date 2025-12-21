@@ -1,0 +1,149 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_124",
+  "book_key": "PSAL",
+  "sequence": 124,
+  "chapter_in": {
+    "MT": 124,
+    "VUL": 123,
+    "LXX": 123
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שִׁ֥יר הַֽ/מַּעֲל֗וֹת לְ/דָ֫וִ֥ד לוּלֵ֣י יְ֭הוָה שֶׁ/הָ֣יָה לָ֑/נוּ יֹֽאמַר נָ֝א יִשְׂרָאֵֽל׃",
+        "LXX": "ᾨδὴ τῶν ἀναβαθμῶν. Οἱ πεποιθότες ἐπὶ Κύριον ὡς ὄρος Σιών· οὐ σαλευθήσεται εἰς τὸν αἰῶνα ὁ κατοικῶν Ἰερουσαλήμ.",
+        "VUL": "Canticum graduum. [Qui confidunt in Domino, sicut mons Sion :/ non commovebitur in æternum,/ qui habitat",
+        "SYN": "Надеющийся на Господа, как гора Сион, не подвигнется: пребывает вовек.",
+        "NEO": "Cantique des montées. De David.",
+        "NAB": "A song of ascents. Of David. I Had not the LORD been with us, let Israel say,",
+        "CEI": "Canto delle ascensioni. Di Davide. Se il Signore non fosse stato con noi, - lo dica Israele -"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "לוּלֵ֣י יְ֭הוָה שֶׁ/הָ֣יָה לָ֑/נוּ בְּ/ק֖וּם עָלֵ֣י/נוּ אָדָֽם׃",
+        "LXX": "ὄρη κύκλῳ αὐτῆς, καὶ Κύριος κύκλῳ τοῦ λαοῦ αὐτοῦ ἀπὸ τοῦ νῦν καὶ ἕως τοῦ αἰῶνος.",
+        "VUL": "in Jerusalem./ Montes in circuitu ejus ;/ et Dominus in circuitu populi sui,/ ex hoc nunc et usque in sæculum./",
+        "SYN": "Горы окрест Иерусалима, а Господь окрест народа Своего отныне и вовек.",
+        "NEO": "si \\+w Yahweh|strong=\"H3068\"\\+w** n’eût été pour nous, quand les hommes se sont élevés contre nous !...",
+        "NAB": "Had not the LORD been with us, when people rose against us,",
+        "VAT_ES": "si el Señor no hubiera estado de nuestra parte,",
+        "CEI": "se il Signore non fosse stato con noi, quando uomini ci assalirono,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אֲ֭זַי חַיִּ֣ים בְּלָע֑וּ/נוּ בַּ/חֲר֖וֹת אַפָּ֣/ם בָּֽ/נוּ׃",
+        "LXX": "ὅτι οὐκ ἀφήσει τὴν ῥάβδον τῶν ἁμαρτωλῶν ἐπὶ τὸν κλῆρον τῶν δικαίων, ὅπως ἂν μὴ ἐκτείνωσιν οἱ δίκαιοι ἐν ἀνομίᾳ χεῖρας αὐτῶν.",
+        "VUL": "Quia non relinquet Dominus virgam peccatorum/ super sortem justorum :/ ut non extendant justi/ ad iniquitatem manus suas,/",
+        "SYN": "Ибо не оставит [Господь] жезла нечестивых над жребием праведных, дабы праведные не простерли рук своих к беззаконию.",
+        "NEO": "Ils nous auraient dévorés tout vivants, quand leur colère s’est allumée contre nous ;",
+        "NAB": "They would have swallowed us alive, for their fury blazed against us.",
+        "VAT_ES": "nos habrían devorado vivos.",
+        "CEI": "ci avrebbero inghiottiti vivi, nel furore della loro ira."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אֲ֭זַי הַ/מַּ֣יִם שְׁטָפ֑וּ/נוּ נַ֗֜חְלָ/ה עָבַ֥ר עַל נַפְשֵֽׁ/נוּ׃",
+        "LXX": "ἀγάθυνον, Κύριε, τοῖς ἀγαθοῖς καὶ τοῖς εὐθέσι τῇ καρδίᾳ·",
+        "VUL": "benefac, Domine, bonis,/ et rectis corde./",
+        "SYN": "Благотвори, Господи, добрым и правым в сердцах своих;",
+        "NEO": "les eaux nous auraient engloutis, le torrent eût passé sur notre âme ;",
+        "NAB": "The waters would have engulfed us, the torrent overwhelmed us;",
+        "VAT_ES": "las aguas nos habrían inundado,",
+        "CEI": "Le acque ci avrebbero travolti; un torrente ci avrebbe sommersi,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אֲ֭זַי עָבַ֣ר עַל נַפְשֵׁ֑/נוּ הַ֝/מַּ֗יִם הַ/זֵּֽידוֹנִֽים׃",
+        "LXX": "τοὺς δὲ ἐκκλίνοντας εἰς τὰς στραγγαλιὰς ἀπάξει Κύριος μετὰ τῶν ἐργαζομένων τὴν ἀνομίαν. εἰρήνη ἐπὶ τὸν Ἰσραήλ.",
+        "VUL": "Declinantes autem in obligationes,/ adducet Dominus cum operantibus iniquitatem./ Pax super Israël !]",
+        "SYN": "а совращающихся на кривые пути свои да оставит Господь ходить с делающими беззаконие. Мир на Израиля!",
+        "NEO": "sur notre âme auraient passé les eaux impétueuses.",
+        "NAB": "seething waters would have drowned us.",
+        "VAT_ES": "nos habrían sumergido las aguas turbulentas.",
+        "CEI": "ci avrebbero travolti acque impetuose."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בָּר֥וּךְ יְהוָ֑ה שֶׁ/לֹּ֥א נְתָנָ֥/נוּ טֶ֝֗רֶף לְ/שִׁנֵּי/הֶֽם׃",
+        "NEO": "Béni soit \\+w Yahweh|strong=\"H3068\"\\+w**, qui ne nous a pas livrés à leurs dents !",
+        "NAB": "Blessed be the LORD, who did not leave us to be torn by their fangs.",
+        "VAT_ES": "&iexcl;Bendito sea el Señor,",
+        "CEI": "Sia benedetto il Signore, che non ci ha lasciati, in preda ai loro denti."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "נַפְשֵׁ֗/נוּ כְּ/צִפּ֥וֹר נִמְלְטָה֮ מִ/פַּ֪ח י֫וֹקְשִׁ֥ים הַ/פַּ֥ח נִשְׁבָּ֗ר וַ/אֲנַ֥חְנוּ נִמְלָֽטְנוּ׃",
+        "NEO": "Notre âme, comme le passereau, s’est échappée du filet de l’oiseleur ; le filet s’est rompu, et nous avons été délivrés.",
+        "NAB": "We escaped with our lives like a bird from the fowler's snare; the snare was broken and we escaped.",
+        "VAT_ES": "Nuestra vida se salvó como un pájaro",
+        "CEI": "Noi siamo stati liberati come un uccello dal laccio dei cacciatori: il laccio si è spezzato e noi siamo scampati."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "עֶ֭זְרֵ/נוּ בְּ/שֵׁ֣ם יְהוָ֑ה עֹ֝שֵׂ֗ה שָׁמַ֥יִם וָ/אָֽרֶץ׃",
+        "NEO": "Notre secours est dans le nom de \\+w Yahweh|strong=\"H3068\"\\+w**, qui a fait les cieux et la terre.",
+        "NAB": "Our help is the name of the LORD, the maker of heaven and earth.",
+        "VAT_ES": "Nuestra ayuda está en el nombre del Señor,",
+        "CEI": "Il nostro aiuto è nel nome del Signore che ha fatto cielo e terra."
+      }
+    }
+  }
+}

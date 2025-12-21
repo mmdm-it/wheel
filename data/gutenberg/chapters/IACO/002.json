@@ -1,0 +1,443 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IACO_002",
+  "book_key": "IACO",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Ἀδελφοί μου, μὴ ἐν προσωποληψίαις ἔχετε τὴν πίστιν τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ τῆς δόξης.",
+        "VUL": "Fratres mei, nolite in personarum acceptione habere fidem Domini nostri Jesu Christi gloriæ.",
+        "SYN": "Братия мои! имейте веру в Иисуса Христа нашего Господа славы, не взирая на лица.",
+        "NEO": "Mes frères, n’alliez aucune acception de personnes avec la foi en Jésus-Christ notre Seigneur de gloire.",
+        "NAB": "My brothers, show no partiality as you adhere to the faith in our glorious Lord Jesus Christ.",
+        "VAT_ES": "Hermanos, que no haya mucho entre ustedes que pretendan ser maestros, sabiendo que los que enseñamos seremos juzgados más severamente,",
+        "CEI": "Rivelazione di Gesù Cristo che Dio gli diede per render noto ai suoi servi le cose che devono presto accadere, e che egli manifestò inviando il suo angelo al suo servo Giovanni."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Ἐὰν γὰρ εἰσέλθῃ εἰς τὴν συναγωγὴν ὑμῶν ἀνὴρ χρυσοδακτύλιος ἐν ἐσθῆτι λαμπρᾷ, εἰσέλθῃ δὲ καὶ πτωχὸς ἐν ῥυπαρᾷ ἐσθῆτι,",
+        "VUL": "Etenim si introierit in conventum vestrum vir aureum annulum habens in veste candida, introierit autem et pauper in sordido habitu,",
+        "SYN": "Ибо, если в собрание ваше войдет человек с золотым перстнем, в богатой одежде, войдет же и бедный в скудной одежде,",
+        "NEO": "Si, par exemple, il entre dans votre assemblée un homme qui ait un anneau d’or et un vêtement magnifique, et qu’il y entre aussi un pauvre avec un habit sordide ;",
+        "NAB": "For if a man with gold rings on his fingers and in fine clothes comes into your assembly, and a poor person in shabby clothes also comes in,",
+        "VAT_ES": "porque todos faltamos de muchas maneras. Si alguien no falta con palabras es un hombre perfecto, porque es capaz de dominar toda su persona.",
+        "CEI": "Questi attesta la parola di Dio e la testimonianza di Gesù Cristo, riferendo ciò che ha visto."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "καὶ ἐπιβλέψητε ἐπὶ τὸν φοροῦντα τὴν ἐσθῆτα τὴν λαμπράν, καὶ εἴπητε αὐτῷ, Σὺ κάθου ὧδε καλῶς, καὶ τῷ πτωχῷ εἴπητε, Σὺ στῆθι ἐκεῖ, ἢ κάθου ὧδε ὑπὸ τὸ ὑποπόδιόν μου·",
+        "VUL": "et intendatis in eum qui indutus est veste præclara, et dixeritis ei : Tu sede hic bene : pauperi autem dicatis : Tu sta illic ; aut sede sub scabello pedum meorum :",
+        "SYN": "и вы, смотря на одетого в богатую одежду, скажете ему: тебе хорошо сесть здесь, а бедному скажете: ты стань там, или садись здесь, у ног моих, --",
+        "NEO": "et que tournant vos regards vers celui qui est magnifiquement vêtu, vous lui* disiez : « Vous, asseyez-vous ici, à cette place d’honneur », et que vous disiez au pauvre : « Toi, tiens-toi là debout, ou assieds-toi ici, au bas de mon marchepied : »",
+        "NAB": "and you pay attention to the one wearing the fine clothes and say, \"Sit here, please,\" while you say to the poor one, \"Stand there,\" or \"Sit at my feet,\"",
+        "VAT_ES": "Cuando ponemos un freno en la boca de los caballos para que nos obedezcan, dominamos todo su cuerpo.",
+        "CEI": "Beato chi legge e beati coloro che ascoltano le parole di questa profezia e mettono in pratica le cose che vi sono scritte. Perché il tempo è vicino."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "καὶ οὐ διεκρίθητε ἐν ἑαυτοῖς, καὶ ἐγένεσθε κριταὶ διαλογισμῶν πονηρῶν;",
+        "VUL": "nonne judicatis apud vosmetipsos, et facti estis judices cogitationum iniquarum ?",
+        "SYN": "то не пересуживаете ли вы в себе и не становитесь ли судьями с худыми мыслями?",
+        "NEO": "n’est-ce pas faire entre vous des distinctions, et vous établir juges aux pensées perverses ?",
+        "NAB": "have you not made distinctions among yourselves and become judges with evil designs?",
+        "VAT_ES": "Lo mismo sucede con los barcos: por grandes que sean y a pesar de la violencia de los vientos, mediante un pequeño timón, son dirigidos adonde quiere el piloto.",
+        "CEI": "Giovanni alle sette Chiese che sono in Asia: grazia a voi e pace da Colui che è, che era e che viene, dai sette spiriti che stanno davanti al suo trono,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ἀκούσατε, ἀδελφοί μου ἀγαπητοί. Οὐχ ὁ θεὸς ἐξελέξατο τοὺς πτωχοὺς τοῦ κόσμου πλουσίους ἐν πίστει, καὶ κληρονόμους τῆς βασιλείας ἧς ἐπηγγείλατο τοῖς ἀγαπῶσιν αὐτόν;",
+        "VUL": "Audite, fratres mei dilectissimi : nonne Deus elegit pauperes in hoc mundo, divites in fide, et hæredes regni, quod repromisit Deus diligentibus se ?",
+        "SYN": "Послушайте, братия мои возлюбленные: не бедных ли мира избрал Бог быть богатыми верою и наследниками Царствия, которое Он обещал любящим Его?",
+        "NEO": "Écoutez, mes frères bien-aimés : Dieu n’a-t-il pas choisi ceux qui sont pauvres aux yeux du monde,+ 2:5 II, 5. Les pauvres aux yeux du monde. Selon une autre leçon, \\+qt les pauvres de ce monde\\+qt*. Comp. I Cor. i, 26, 29.* pour être riches dans la foi et héritiers du royaume qu’il a promis à ceux qui l’aiment ?",
+        "NAB": "Listen, my beloved brothers. Did not God choose those who are poor in the world to be rich in faith and heirs of the kingdom that he promised to those who love him?",
+        "VAT_ES": "De la misma manera, la lengua es un miembro pequeño, y sin embargo, puede jactarse de hacer grandes cosas. Miren cómo una pequeña llama basta para incendiar un gran bosque.",
+        "CEI": "e da Gesù Cristo, il testimone fedele, il primogenito dei morti e il principe dei re della terra. A Colui che ci ama e ci ha liberati dai nostri peccati con il suo sangue,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ὑμεῖς δὲ ἠτιμάσατε τὸν πτωχόν. Οὐχ οἱ πλούσιοι καταδυναστεύουσιν ὑμῶν, καὶ αὐτοὶ ἕλκουσιν ὑμᾶς εἰς κριτήρια;",
+        "VUL": "vos autem exhonorastis pauperem. Nonne divites per potentiam opprimunt vos, et ipsi trahunt vos ad judicia ?",
+        "SYN": "А вы презрели бедного. Не богатые ли притесняют вас, и не они ли влекут вас в суды?",
+        "NEO": "Et vous, vous faites affront au pauvre ! Ne sont-ce pas les riches qui vous oppriment et qui vous traînent devant les tribunaux ?",
+        "NAB": "But you dishonored the poor person. Are not the rich oppressing you? And do they themselves not haul you off to court?",
+        "VAT_ES": "También la lengua es un fuego: es un mundo de maldad puesto en nuestros miembros, que contamina todo el cuerpo, y encendida por el mismo infierno, hace arder todo el ciclo de la vida humana.",
+        "CEI": "che ha fatto di noi un regno di sacerdoti per il suo Dio e Padre, a lui la gloria e la potenza nei secoli dei secoli. Amen."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Οὐκ αὐτοὶ βλασφημοῦσιν τὸ καλὸν ὄνομα τὸ ἐπικληθὲν ἐφ’ ὑμᾶς;",
+        "VUL": "nonne ipsi blasphemant bonum nomen, quod invocatum est super vos ?",
+        "SYN": "Не они ли бесславят доброе имя, которым вы называетесь?",
+        "NEO": "Ne sont-ce pas eux qui outragent le beau nom que vous portez ?+ 2:7 7. Le nom du Christ, d’où a été formé chrétien.*",
+        "NAB": "Is it not they who blaspheme the noble name that was invoked over you?",
+        "VAT_ES": "Animales salvajes y pájaros, reptiles y peces de toda clase, han sido y son dominados por el hombre.",
+        "CEI": "Ecco, viene sulle nubi e ognuno lo vedrà; anche quelli che lo trafissero e tutte le nazioni della terra si batteranno per lui il petto. Sì, Amen!"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Εἰ μέντοι νόμον τελεῖτε βασιλικόν, κατὰ τὴν γραφήν, Ἀγαπήσεις τὸν πλησίον σου ὡς σεαυτόν, καλῶς ποιεῖτε·",
+        "VUL": "Si tamen legem perficitis regalem secundum Scripturas : Diliges proximum tuum sicut teipsum : bene facitis :",
+        "SYN": "Если вы исполняете закон царский, по Писанию: возлюби ближнего твоего, как себя самого, -- хорошо делаете.",
+        "NEO": "Que si vous accomplissez la loi royale, selon ce passage de l’Écriture : « Tu aimeras ton prochain comme toi-même », vous faites bien.",
+        "NAB": "However, if you fulfill the royal law according to the scripture, \"You shall love your neighbor as yourself,\" you are doing well.",
+        "VAT_ES": "Por el contrario, nadie puede dominar la lengua, que es un flagelo siempre activo y lleno de veneno mortal.",
+        "CEI": "Io sono l'Alfa e l'Omega, dice il Signore Dio, Colui che è, che era e che viene, l'Onnipotente!"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "εἰ δὲ προσωποληπτεῖτε, ἁμαρτίαν ἐργάζεσθε, ἐλεγχόμενοι ὑπὸ τοῦ νόμου ὡς παραβάται.",
+        "VUL": "si autem personas accipitis, peccatum operamini, redarguti a lege quasi transgressores.",
+        "SYN": "Но если поступаете с лицеприятием, то грех делаете, и перед законом оказываетесь преступниками.",
+        "NEO": "Mais si vous faites acception des personnes, vous commettez un péché, et la loi elle-même vous condamne comme transgresseurs.",
+        "NAB": "But if you show partiality, you commit sin, and are convicted by the law as transgressors.",
+        "VAT_ES": "Con ella bendecimos al Señor, nuestro Padre, y con ella maldecimos a los hombres, hechos a imagen de Dios.",
+        "CEI": "Io, Giovanni, vostro fratello e vostro compagno nella tribolazione, nel regno e nella costanza in Gesù, mi trovavo nell'isola chiamata Patmos a causa della parola di Dio e della testimonianza resa a Gesù."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Ὅστις γὰρ ὅλον τὸν νόμον τηρήσει, πταίσει δὲ ἐν ἑνί, γέγονεν πάντων ἔνοχος.",
+        "VUL": "Quicumque autem totam legem servaverit, offendat autem in uno, factus est omnium reus.",
+        "SYN": "Кто соблюдает весь закон и согрешит в одном чем-нибудь, тот становится виновным во всем.",
+        "NEO": "Car quiconque aura observé toute la loi, s’il vient à faillir en un seul point, est coupable de tous.",
+        "NAB": "For whoever keeps the whole law, but falls short in one particular, has become guilty in respect to all of it.",
+        "VAT_ES": "De la misma boca salen la bendición y la maldición. Pero no debe ser así, hermanos.",
+        "CEI": "Rapito in estasi, nel giorno del Signore, udii dietro di me una voce potente, come di tromba, che diceva:"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Ὁ γὰρ εἰπών, Μὴ μοιχεύσεις, εἶπεν καί, Μὴ φονεύσεις· εἰ δὲ οὐ μοιχεύσεις, φονεύσεις δέ, γέγονας παραβάτης νόμου.",
+        "VUL": "Qui enim dixit : Non mchaberis, dixit et : Non occides. Quod si non mchaberis, occides autem, factus es transgressor legis.",
+        "SYN": "Ибо Тот же, Кто сказал: не прелюбодействуй, сказал и: не убей; посему, если ты не прелюбодействуешь, но убьешь, то ты также преступник закона.",
+        "NEO": "En effet, celui qui a dit : « Tu ne commettras pas d’adultère », a dit aussi : « Tu ne tueras pas. » Si donc tu tues, quoique tu ne commettes pas d’adultère, tu es transgresseur de la loi.",
+        "NAB": "For he who said, \"You shall not commit adultery,\" also said, \"You shall not kill.\" Even if you do not commit adultery but kill, you have become a transgressor of the law.",
+        "VAT_ES": "&iquest;Acaso brota el agua dulce y la amarga de una misma fuente?",
+        "CEI": "Quello che vedi, scrivilo in un libro e mandalo alle sette Chiese: a Efeso, a Smirne, a Pèrgamo, a Tiàtira, a Sardi, a Filadèlfia e a Laodicèa."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Οὕτως λαλεῖτε καὶ οὕτως ποιεῖτε, ὡς διὰ νόμου ἐλευθερίας μέλλοντες κρίνεσθαι.",
+        "VUL": "Sic loquimini, et sic facite sicut per legem libertatis incipientes judicari.",
+        "SYN": "Так говорите и так поступайте, как имеющие быть судимы по закону свободы.",
+        "NEO": "Parlez et agissez comme devant être jugés par la loi de liberté.",
+        "NAB": "So speak and so act as people who will be judged by the law of freedom.",
+        "VAT_ES": "&iquest;Acaso, hermanos, una higuera puede producir aceitunas, o higos una vid? Tampoco el mar puede producir agua dulce.",
+        "CEI": "Ora, come mi voltai per vedere chi fosse colui che mi parlava, vidi sette candelabri d'oro"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Ἡ γὰρ κρίσις ἀνέλεος τῷ μὴ ποιήσαντι ἔλεος· κατακαυχᾶται ἔλεον κρίσεως.",
+        "VUL": "Judicium enim sine misericordia illi qui non fecit misericordiam : superexaltat autem misericordia judicium.",
+        "SYN": "Ибо суд без милости не оказавшему милости; милость превозносится над судом.",
+        "NEO": "Car le jugement sera sans miséricorde pour celui qui n’aura pas fait miséricorde ; la miséricorde triomphe du jugement.",
+        "NAB": "For the judgment is merciless to one who has not shown mercy; mercy triumphs over judgment.",
+        "VAT_ES": "El que se tenga por sabio y prudente, demuestre con su buena conducta que sus actos tienen la sencillez propia de la sabiduría.",
+        "CEI": "e in mezzo ai candelabri c'era uno simile a figlio di uomo, con un abito lungo fino ai piedi e cinto al petto con una fascia d'oro."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "¶Τί τὸ ὄφελος, ἀδελφοί μου, ἐὰν πίστιν λέγῃ τις ἔχειν, ἔργα δὲ μὴ ἔχῃ; Μὴ δύναται ἡ πίστις σῶσαι αὐτόν;",
+        "VUL": "Quid proderit, fratres mei, si fidem quis dicat se habere, opera autem non habeat ? numquid poterit fides salvare eum ?",
+        "SYN": "Что пользы, братия мои, если кто говорит, что он имеет веру, а дел не имеет? может ли эта вера спасти его?",
+        "NEO": "Que sert-il, mes frères, à un homme de dire qu’il a la foi, s’il n’a pas les œuvres ? Est-ce que cette foi pourra le sauver ?+ 2:14 14. La foi spéculative, la foi morte que la charité n’anime pas : comp. I Cor. xiii, 2.*",
+        "NAB": "What good is it, my brothers, if someone says he has faith but does not have works? Can that faith save him?",
+        "VAT_ES": "Pero si ustedes están dominados por la rivalidad y por el espíritu de discordia, no se vanagloríen ni falten a la verdad.",
+        "CEI": "I capelli della testa erano candidi, simili a lana candida, come neve. Aveva gli occhi fiammeggianti come fuoco,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ἐὰν δὲ ἀδελφὸς ἢ ἀδελφὴ γυμνοὶ ὑπάρχωσιν καὶ λειπόμενοι ὦσιν τῆς ἐφημέρου τροφῆς,",
+        "VUL": "Si autem frater et soror nudi sint, et indigeant victu quotidiano,",
+        "SYN": "Если брат или сестра наги и не имеют дневного пропитания,",
+        "NEO": "Si un frère ou une sœur sont dans la nudité et n’ont pas ce qui leur est nécessaire chaque jour de nourriture,",
+        "NAB": "If a brother or sister has nothing to wear and has no food for the day,",
+        "VAT_ES": "Semejante sabiduría no desciende de lo alto sino que es terrena, sensual y demoníaca.",
+        "CEI": "i piedi avevano l'aspetto del bronzo splendente purificato nel crogiuolo. La voce era simile al fragore di grandi acque."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "εἴπῃ δέ τις αὐτοῖς ἐξ ὑμῶν, Ὑπάγετε ἐν εἰρήνῃ, θερμαίνεσθε καὶ χορτάζεσθε, μὴ δῶτε δὲ αὐτοῖς τὰ ἐπιτήδεια τοῦ σώματος, τί τὸ ὄφελος;",
+        "VUL": "dicat autem aliquis ex vobis illis : Ite in pace, calefacimini et saturamini : non dederitis autem eis quæ necessaria sunt corpori, quid proderit ?",
+        "SYN": "а кто-нибудь из вас скажет им: \"идите с миром, грейтесь и питайтесь\", но не даст им потребного для тела: что пользы?",
+        "NEO": "et que l’un de vous leur dise : « Allez en paix, chauffez-vous et vous rassasiez », sans leur donner ce qui est nécessaire à leur corps, à quoi cela sert-il ?",
+        "NAB": "and one of you says to them, \"Go in peace, keep warm, and eat well,\" but you do not give them the necessities of the body, what good is it?",
+        "VAT_ES": "Porque donde hay rivalidad y discordia, hay también desorden y toda clase de maldad.",
+        "CEI": "Nella destra teneva sette stelle, dalla bocca gli usciva una spada affilata a doppio taglio e il suo volto somigliava al sole quando splende in tutta la sua forza."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Οὕτως καὶ ἡ πίστις, ἐὰν μὴ ἔργα ἔχῃ, νεκρά ἐστιν καθ’ ἑαυτήν.",
+        "VUL": "Sic et fides, si non habeat opera, mortua est in semetipsa.",
+        "SYN": "Так и вера, если не имеет дел, мертва сама по себе.",
+        "NEO": "Il en est de même de la foi : si elle n’a pas les œuvres, elle est morte en elle-même.+ 2:17 17. Dans la suite du chapitre, l’Apôtre montre que la foi sans les œuvres est nulle (vers. 18), sans valeur morale (v. 19), \\+qt inefficace\\+qt* (v. 20 sv.).*",
+        "NAB": "So also faith of itself, if it does not have works, is dead.",
+        "VAT_ES": "En cambio, la sabiduría que viene de lo alto es, ante todo, pura; y además, pacífica, benévola y conciliadora; está llena de misericordia y dispuesta a hacer el bien; es imparcial y sincera.",
+        "CEI": "Appena lo vidi, caddi ai suoi piedi come morto. Ma egli, posando su di me la destra, mi disse: Non temere! Io sono il Primo e l'Ultimo"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ ἐρεῖ τις, Σὺ πίστιν ἔχεις, κἀγὼ ἔργα ἔχω· δεῖξόν μοι τὴν πίστιν σου ἐκ τῶν ἔργων σου, κἀγὼ δείξω σοι ἐκ τῶν ἔργων μου τὴν πίστιν μου.",
+        "VUL": "Sed dicet quis : Tu fidem habes, et ego opera habeo : ostende mihi fidem tuam sine operibus : et ego ostendam tibi ex operibus fidem meam.",
+        "SYN": "Но скажет кто-нибудь: \"ты имеешь веру, а я имею дела\": покажи мне веру твою без дел твоих, а я покажу тебе веру мою из дел моих.",
+        "NEO": "Mais on pourrait même dire : « Tu as la foi, et moi, j’ai les œuvres. » Montre-moi ta foi sans les œuvres et moi, je te montrerai ma foi par mes œuvres.",
+        "NAB": "Indeed someone might say, \"You have faith and I have works.\" Demonstrate your faith to me without works, and I will demonstrate my faith to you from my works.",
+        "VAT_ES": "Un fruto de justicia se siembra pacíficamente para los que trabajan por la paz.",
+        "CEI": "e il Vivente. Io ero morto, ma ora vivo per sempre e ho potere sopra la morte e sopra gli inferi."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Σὺ πιστεύεις ὅτι ὁ θεὸς εἷς ἐστίν· καλῶς ποιεῖς· καὶ τὰ δαιμόνια πιστεύουσιν, καὶ φρίσσουσιν.",
+        "VUL": "Tu credis quoniam unus est Deus : bene facis : et dæmones credunt, et contremiscunt.",
+        "SYN": "Ты веруешь, что Бог един: хорошо делаешь; и бесы веруют, и трепещут.",
+        "NEO": "Tu crois qu’il y a un seul Dieu, tu fais bien ; les démons le croient aussi…, et ils tremblent !",
+        "NAB": "You believe that God is one. You do well. Even the demons believe that and tremble.",
+        "CEI": "Scrivi dunque le cose che hai visto, quelle che sono e quelle che accadranno dopo."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Θέλεις δὲ γνῶναι, ὦ ἄνθρωπε κενέ, ὅτι ἡ πίστις χωρὶς τῶν ἔργων νεκρά ἐστιν;",
+        "VUL": "Vis autem scire, o homo inanis, quoniam fides sine operibus mortua est ?",
+        "SYN": "Но хочешь ли знать, неосновательный человек, что вера без дел мертва?",
+        "NEO": "Mais veux-tu te convaincre, ô homme vain, que la foi sans les œuvres est sans vertu ?+ 2:20 20. Est sans vertu, inerte. Vulgate \\+qt est morte\\+qt*.*",
+        "NAB": "Do you want proof, you ignoramus, that faith without works is useless?",
+        "CEI": "Questo è il senso recondito delle sette stelle che hai visto nella mia destra e dei sette candelabri d'oro, eccolo: le sette stelle sono gli angeli delle sette Chiese e le sette lampade sono le sette Chiese."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Ἀβραὰμ ὁ πατὴρ ἡμῶν οὐκ ἐξ ἔργων ἐδικαιώθη, ἀνενέγκας Ἰσαὰκ τὸν υἱὸν αὐτοῦ ἐπὶ τὸ θυσιαστήριον;",
+        "VUL": "Abraham pater noster nonne ex operibus justificatus est, offerens Isaac filium suum super altare ?",
+        "SYN": "Не делами ли оправдался Авраам, отец наш, возложив на жертвенник Исаака, сына своего?",
+        "NEO": "Abraham, notre père, ne fut-il pas justifié par les œuvres, lorsqu’il offrit son fils Isaac sur l’autel ?+ 2:21 21. Gen. xxii, 9-18. S. Paul (Rom. iii, 28 et iv, 2 sv.), s’appuyant sur Gen. xv, 6, semble affirmer exactement le contraire. Mais le point de vue est différent : il ne s’agit ni des mêmes œuvres, ni de la même foi. S. Paul ne dit pas que ce qui justifie c’est la foi seule; ce qui s’opposerait à la foi jointe aux œuvres : idée étrangère à son argumentation dans l’Épître aux Romains. Mais la foi est opposée aux œuvres, aux observances de la loi juive en particulier, en ce sens que la vertu justifiante est non pas dans la loi, dans l’œuvre \\+qt in se\\+qt*, mais dans la foi. Évidemment il entend toujours une foi vivante, agissante, logique (comme Gal. v, 6). La question traitée par S. Jacques est différente. Suffit-il de croire et avec cela de ne pas se soucier d’accomplir la loi de Dieu ? Non, dit-il, ce n’est pas une foi spéculative qui est requise, une foi morte ; mais il faut une foi pratique, vivante, logique. Cf. Concile de Trente (sess. vi, cap. 10).*",
+        "NAB": "Was not Abraham our father justified by works when he offered his son Isaac upon the altar?"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Βλέπεις ὅτι ἡ πίστις συνήργει τοῖς ἔργοις αὐτοῦ, καὶ ἐκ τῶν ἔργων ἡ πίστις ἐτελειώθη;",
+        "VUL": "Vides quoniam fides cooperabatur operibus illius : et ex operibus fides consummata est ?",
+        "SYN": "Видишь ли, что вера содействовала делам его, и делами вера достигла совершенства?",
+        "NEO": "Tu vois que la foi coopérait à ses œuvres, et que par les œuvres sa foi fut rendue parfaite.",
+        "NAB": "You see that faith was active along with his works, and faith was completed by the works."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Καὶ ἐπληρώθη ἡ γραφὴ ἡ λέγουσα, Ἐπίστευσεν δὲ Ἀβραὰμ τῷ θεῷ, καὶ ἐλογίσθη αὐτῷ εἰς δικαιοσύνην, καὶ φίλος θεοῦ ἐκλήθη.",
+        "VUL": "Et suppleta est Scriptura, dicens : Credidit Abraham Deo, et reputatum est illi ad justitiam, et amicus Dei appellatus est.",
+        "SYN": "И исполнилось слово Писания: \"веровал Авраам Богу, и это вменилось ему в праведность, и он наречен другом Божиим\".",
+        "NEO": "Et la parole de l’Écriture s’accomplit : « Abraham crut à Dieu, et cela lui fut imputé à justice », et il fut appelé ami de Dieu.",
+        "NAB": "Thus the scripture was fulfilled that says, \"Abraham believed God, and it was credited to him as righteousness,\" and he was called \"the friend of God.\""
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Ὁρᾶτε τοίνυν ὅτι ἐξ ἔργων δικαιοῦται ἄνθρωπος, καὶ οὐκ ἐκ πίστεως μόνον.",
+        "VUL": "Videtis quoniam ex operibus justificatur homo, et non ex fide tantum ?",
+        "SYN": "Видите ли, что человек оправдывается делами, а не верою только?",
+        "NEO": "Vous voyez que l’homme est justifié par les œuvres, et non par la foi seulement.",
+        "NAB": "See how a person is justified by works and not by faith alone."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Ὁμοίως δὲ καὶ Ῥαὰβ ἡ πόρνη οὐκ ἐξ ἔργων ἐδικαιώθη, ὑποδεξαμένη τοὺς ἀγγέλους, καὶ ἑτέρᾳ ὁδῷ ἐκβαλοῦσα;",
+        "VUL": "Similiter et Rahab meretrix, nonne ex operibus justificata est, suscipiens nuntios, et alia via ejiciens ?",
+        "SYN": "Подобно и Раав блудница не делами ли оправдалась, приняв соглядатаев и отпустив их другим путем?",
+        "NEO": "De même Rahab, la courtisane, ne fut-elle pas justifiée par les œuvres, quand elle reçut les envoyés de Josué et les fit partir par un autre chemin ?",
+        "NAB": "And in the same way, was not Rahab the harlot also justified by works when she welcomed the messengers and sent them out by a different route?"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Ὥσπερ γὰρ τὸ σῶμα χωρὶς πνεύματος νεκρόν ἐστιν, οὕτως καὶ ἡ πίστις χωρὶς τῶν ἔργων νεκρά ἐστιν.",
+        "VUL": "Sicut enim corpus sine spiritu mortuum est, ita et fides sine operibus mortua est.",
+        "SYN": "Ибо, как тело без духа мертво, так и вера без дел мертва.",
+        "NEO": "De même que le corps sans âme est mort, ainsi la foi sans les œuvres est morte.",
+        "NAB": "For just as a body without a spirit is dead, so also faith without works is dead."
+      }
+    }
+  }
+}

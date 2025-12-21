@@ -1,0 +1,555 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DAN_003",
+  "book_key": "DAN",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "נְבוּכַדְנֶצַּ֣ר מַלְכָּ֗/א עֲבַד֙ צְלֵ֣ם דִּֽי דְהַ֔ב רוּמֵ/הּ֙ אַמִּ֣ין שִׁתִּ֔ין פְּתָיֵ֖/הּ אַמִּ֣ין שִׁ֑ת אֲקִימֵ/הּ֙ בְּ/בִקְעַ֣ת דּוּרָ֔א בִּ/מְדִינַ֖ת בָּבֶֽל׃",
+        "LXX": "Ἔτους ὀκτωκαιδεκάτου Ναβουχοδονοσὸρ βασιλεὺς διοικῶν πόλεις καὶ χώρας καὶ πάντας τοὺς κατοικοῦντας ἐπὶ τῆς γῆς ἀπὸ Ἰνδικῆς ἕως Αἰθιοπίας ἐποίησεν εἰκόνα χρυσῆν, τὸ ὕψος αὐτῆς πηχῶν ἑξήκοντα, καὶ τὸ πλάτος αὐτῆς πηχῶν ἕξ· καὶ ἔστησεν αὐτὴν ἐν πεδίῳ τοῦ περιβόλου χώρας Βαβυλωνίας.",
+        "VUL": "Nabuchodonosor rex fecit statuam auream, altitudine cubitorum sexaginta, latitudine cubitorum sex, et statuit eam in campo Dura, provinciæ Babylonis.",
+        "SYN": "Царь Навуходоносор сделал золотой истукан, вышиною в шестьдесят локтей, шириною в шесть локтей, поставил его на поле Деире, в области Вавилонской.",
+        "NEO": "Le roi Nabuchodonosor fit une statue d’or, dont la hauteur était de soixante coudées et la largeur de six coudées ; il la dressa dans la plaine de Dura, dans la province de Babylone.",
+        "NAB": "King Nebuchadnezzar had a golden statue made, sixty cubits high and six cubits wide, which he set up in the plain of Dura in the province of Babylon.",
+        "VAT_ES": "El rey Nabucodonosor hizo una estatua de oro, de treinta metros de alto y tres de ancho, y la erigió en la llanura de Dura, en la provincia de Babilonia.",
+        "CEI": "Il re Nabucodònosor aveva fatto costruire una statua d'oro, alta sessanta cubiti e larga sei, e l'aveva fatta erigere nella pianura di Dura, nella provincia di Babilonia."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וּ/נְבוּכַדְנֶצַּ֣ר מַלְכָּ֡/א שְׁלַ֡ח לְ/מִכְנַ֣שׁ לַֽ/אֲחַשְׁדַּרְפְּנַיָּ֡/א סִגְנַיָּ֣/א וּֽ/פַחֲוָתָ֡/א אֲדַרְגָּזְרַיָּ/א֩ גְדָ֨בְרַיָּ֤/א דְּתָבְרַיָּ/א֙ תִּפְתָּיֵ֔/א וְ/כֹ֖ל שִׁלְטֹנֵ֣י מְדִֽינָתָ֑/א לְ/מֵתֵא֙ לַ/חֲנֻכַּ֣ת צַלְמָ֔/א דִּ֥י הֲקֵ֖ים נְבוּכַדְנֶצַּ֥ר מַלְכָּֽ/א׃",
+        "LXX": "καὶ Ναβουχοδονοσὸρ βασιλεὺς βασιλέων καὶ κυριεύων τῆς οἰκουμένης ὅλης ἀπέστειλεν ἐπισυναγαγεῖν πάντα τὰ ἔθνη καὶ φυλὰς καὶ γλώσσας, σατράπας, στρατηγούς, τοπάρχας καὶ ὑπάτους, διοικητὰς καὶ τοὺς ἐπ’ ἐξουσιῶν κατὰ χώραν, καὶ πάντας τοὺς κατὰ τὴν οἰκουμένην, ἐλθεῖν εἰς τὸν ἐγκαινισμὸν τῆς εἰκόνος τῆς χρυσῆς ἣν ἔστησεν Ναβουχοδονοσὸρ ὁ βασιλεύς.",
+        "VUL": "Itaque Nabuchodonosor rex misit ad congregandos satrapas, magistratus, et judices, duces, et tyrannos, et præfectos, omnesque principes regionum, ut convenirent ad dedicationem statuæ quam erexerat Nabuchodonosor rex.",
+        "SYN": "И послал царь Навуходоносор собрать сатрапов, наместников, воевод, верховных судей, казнохранителей, законоведцев, блюстителей суда и всех областных правителей, чтобы они пришли на торжественное открытие истукана, которого поставил царь Навуходоносор.",
+        "NEO": "Et le roi Nabuchodonosor fit rassembler les satrapes, les intendants et les gouverneurs, les grands juges, les trésoriers, les légistes, les juges et tous les magistrats des provinces, pour qu’ils se rendissent à la dédicace de la statue qu’avait dressée le roi Nabuchodonosor.",
+        "NAB": "He then ordered the satraps, prefects, and governors, the counselors, treasurers, judges, magistrates and all the officials of the provinces to be summoned to the dedication of the statue which he had set up.",
+        "VAT_ES": "Luego mandó reunir a los sátrapas, prefectos, gobernadores, consejeros, tesoreros, juristas, magistrados y a todos los jefes de provincia, para que asistieran a la dedicación de la estatua que había erigido el rey Nabucodonosor.",
+        "CEI": "Quindi il re Nabucodònosor aveva convocato i sàtrapi, i prefetti, i governatori, i consiglieri, i tesorieri, i giudici, i questori e tutte le alte autorità delle province, perché presenziassero all'inaugurazione della statua che il re Nabucodònosor aveva fatto erigere."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "בֵּ/אדַ֡יִן מִֽתְכַּנְּשִׁ֡ין אֲחַשְׁדַּרְפְּנַיָּ֡/א סִגְנַיָּ֣/א וּֽ/פַחֲוָתָ֡/א אֲדַרְגָּזְרַיָּ֣/א גְדָבְרַיָּ/א֩ דְּתָ֨בְרַיָּ֜/א תִּפְתָּיֵ֗/א וְ/כֹל֙ שִׁלְטֹנֵ֣י מְדִֽינָתָ֔/א לַ/חֲנֻכַּ֣ת צַלְמָ֔/א דִּ֥י הֲקֵ֖ים נְבוּכַדְנֶצַּ֣ר מַלְכָּ֑/א ו/קאמין וְ/קָֽיְמִין֙ לָ/קֳבֵ֣ל צַלְמָ֔/א דִּ֥י הֲקֵ֖ים נְבוּכַדְנֶצַּֽר׃",
+        "LXX": "τότε συνήχθησαν ὕπατοι, στρατηγοί, τοπάρχαι, ἡγούμενοι, τύραννοι μεγάλοι ἐπ’ ἐξουσιῶν, καὶ πάντες οἱ ἄρχοντες τῶν χωρῶν, τοῦ ἐλθεῖν εἰς τὸν ἐγκαινισμὸν τῆς εἰκόνος ἧς ἔστησε Ναβουχοδονοσὸρ ὁ βασιλεύς. καὶ ἔστησαν οἱ προσγεγραμμένοι κατέναντι τῆς εἰκόνος ἧς ἔστησε Ναβουχοδονοσόρ.",
+        "VUL": "Tunc congregati sunt satrapæ, magistratus, et judices, duces, et tyranni, et optimates, qui erant in potestatibus constituti, et universi principes regionum, ut convenirent ad dedicationem statuæ, quam erexerat Nabuchodonosor rex. Stabant autem in conspectu statuæ, quam posuerat Nabuchodonosor rex :",
+        "SYN": "И собрались сатрапы, наместники, военачальники, верховные судьи, казнохранители, законоведцы, блюстители суда и все областные правители на открытие истукана, которого Навуходоносор царь поставил, и стали перед истуканом, которого воздвиг Навуходоносор.",
+        "NEO": "Ainsi s’assemblèrent les satrapes, les intendants et les gouverneurs, les grands juges, les trésoriers, les légistes, les juges et tous les magistrats des provinces pour la dédicace de la statue que le roi Nabuchodonosor avait dressée ; et ils se tinrent devant la statue qu’avait dressée Nabuchodonosor.",
+        "NAB": "The satraps, prefects, and governors, the counselors, treasurers, judges, and magistrates and all the officials of the provinces, all these came together for the dedication and stood before the statue which King Nebuchadnezzar had set up.",
+        "VAT_ES": "Entonces se reunieron los sátrapas, prefectos, gobernadores, consejeros, tesoreros, juristas, magistrados y todos los jefes de provincia, para la dedicación de la estatua que había erigido el rey Nabucodonosor. Y se pusieron de pie ante la estatua erigida por el rey.",
+        "CEI": "I sàtrapi, i prefetti, i governatori, i consiglieri, i tesorieri, i giudici, i questori e tutte le alte autorità delle province vennero all'inaugurazione della statua. Essi si disposero davanti alla statua fatta erigere dal re."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/כָרוֹזָ֖/א קָרֵ֣א בְ/חָ֑יִל לְ/כ֤וֹן אָֽמְרִין֙ עַֽמְמַיָּ֔/א אֻמַּיָּ֖/א וְ/לִשָּׁנַיָּֽ/א׃",
+        "LXX": "καὶ ὁ κήρυξ ἐκήρυξε τοῖς ὄχλοις Ὑμῖν παραγγέλλεται, ἔθνη καὶ χῶραι, λαοὶ καὶ γλῶσσαι,",
+        "VUL": "et præco clamabat valenter : Vobis dicitur populis, tribubus, et linguis :",
+        "SYN": "Тогда глашатай громко воскликнул: объявляется вам, народы, племена и языки:",
+        "NEO": "Un héraut cria d’une voix forte : « Voici ce qu’on vous fait savoir, à vous, peuples, nations et langues :",
+        "NAB": "A herald cried out: \"Nations and peoples of every language, when you hear the sound of the trumpet, flute, lyre, harp, psaltery, bagpipe, and all the other musical instruments,",
+        "VAT_ES": "El heraldo proclamó con fuerza: «A todos ustedes, pueblos, naciones y lenguas, se les ordena lo siguiente:",
+        "CEI": "Un banditore gridò ad alta voce: \"Popoli, nazioni e lingue, a voi è rivolto questo proclama:"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בְּ/עִדָּנָ֡/א דִּֽי תִשְׁמְע֡וּן קָ֣ל קַרְנָ֣/א מַ֠שְׁרוֹקִיתָ/א קיתרוס קַתְר֨וֹס סַבְּכָ֤א פְּסַנְתֵּרִין֙ סוּמְפֹּ֣נְיָ֔ה וְ/כֹ֖ל זְנֵ֣י זְמָרָ֑/א תִּפְּל֤וּן וְ/תִסְגְּדוּן֙ לְ/צֶ֣לֶם דַּהֲבָ֔/א דִּ֥י הֲקֵ֖ים נְבוּכַדְנֶצַּ֥ר מַלְכָּֽ/א׃",
+        "LXX": "ὅταν ἀκούσητε τῆς φωνῆς τῆς σάλπιγγος, σύριγγος, καὶ κιθάρας, σαμβύκης καὶ ψαλτηρίου, συμφωνίας καὶ παντὸς γένους μουσικῶν, πεσόντες προσκυνήσατε τῇ εἰκόνι τῇ χρυσῇ ἣν ἔστησε Ναβουχοδονοσὸρ βασιλεύς·",
+        "VUL": "in hora qua audieritis sonitum tubæ, et fistulæ, et citharæ, sambucæ, et psalterii, et symphoniæ, et universi generis musicorum, cadentes adorate statuam auream, quam constituit Nabuchodonosor rex.",
+        "SYN": "в то время, как услышите звук трубы, свирели, цитры, цевницы, гуслей и симфонии и всяких музыкальных орудий, падите и поклонитесь золотому истукану, которого поставил царь Навуходоносор.",
+        "NEO": "Au moment où vous entendrez le son de la trompette, du chalumeau, de la cithare, de la sambuque, du psaltérion, de la cornemuse et de toutes sortes d’instruments, vous vous prosternerez pour adorer la statue d’or que le roi Nabuchodonosor a dressée.",
+        "NAB": "you are ordered to fall down and worship the golden statue which King Nebuchadnezzar has set up.",
+        "VAT_ES": "Apenas escuchen el sonido de la trompeta, el pífano, la cítara, la sambuca, el laúd, la cornamusa y de toda clase de instrumentos, ustedes deberán postrarse y adorar la estatua de oro que ha erigido el rey Nabucodonosor.",
+        "CEI": "Quando voi udirete il suono del corno, del flauto, della cetra, dell'arpicordo, del salterio, della zampogna, e d'ogni specie di strumenti musicali, vi prostrerete e adorerete la statua d'oro, che il re Nabucodònosor ha fatto innalzare."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וּ/מַן דִּי לָ֥א יִפֵּ֖ל וְ/יִסְגֻּ֑ד בַּ/הּ שַׁעֲתָ֣/א יִתְרְמֵ֔א לְ/גֽוֹא אַתּ֥וּן נוּרָ֖/א יָקִֽדְתָּֽ/א׃",
+        "LXX": "καὶ πᾶς ὃς ἂν μὴ πεσὼν προσκυνήσῃ, αὐτῇ τῇ ὥρᾳ ἐμβαλοῦσιν αὐτὸν εἰς τὴν κάμινον τοῦ πυρὸς τὴν καιομένην.",
+        "VUL": "Si quis autem non prostratus adoraverit, eadem hora mittetur in fornacem ignis ardentis.",
+        "SYN": "А кто не падет и не поклонится, тотчас брошен будет в печь, раскаленную огнем.",
+        "NEO": "Quiconque ne se prosternera pas et n’adorera pas la statue, sera jeté à l’instant au milieu de la fournaise de feu ardent. »",
+        "NAB": "Whoever does not fall down and worship shall be instantly cast into a white-hot furnace.\"",
+        "VAT_ES": "El que no se postre para adorarla será arrojado inmediatamente dentro de un horno de fuego ardiente».",
+        "CEI": "Chiunque non si prostrerà alla statua, in quel medesimo istante sarà gettato in mezzo ad una fornace di fuoco ardente\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כָּ/ל קֳבֵ֣ל דְּנָ֡ה בֵּ/הּ זִמְנָ֡/א כְּ/דִ֣י שָֽׁמְעִ֣ין כָּֽל עַמְמַיָּ֡/א קָ֣ל קַרְנָ/א֩ מַשְׁר֨וֹקִיתָ֜/א קיתרס קַתְר֤וֹס שַׂבְּכָא֙ פְּסַנְטֵרִ֔ין וְ/כֹ֖ל זְנֵ֣י זְמָרָ֑/א נָֽפְלִ֨ין כָּֽל עַֽמְמַיָּ֜/א אֻמַיָּ֣/א וְ/לִשָּׁנַיָּ֗/א סָֽגְדִין֙ לְ/צֶ֣לֶם דַּהֲבָ֔/א דִּ֥י הֲקֵ֖ים נְבוּכַדְנֶצַּ֥ר מַלְכָּֽ/א׃",
+        "LXX": "καὶ ἐν τῷ καιρῷ ἐκείνῳ, ὅτε ἤκουσαν πάντα τὰ ἔθνη τῆς φωνῆς τῆς σάλπιγγος, σύριγγός τε καὶ κιθάρας, σαμβύκης τε καὶ ψαλτηρίου καὶ παντὸς ἤχου μουσικῶν, πίπτοντα πάντα τὰ ἔθνη, φυλαί, καὶ γλῶσσαι προσεκύνησαν τῇ εἰκόνι τῇ χρυσῇ ἣν ἔστησε Ναβουχοδονοσὸρ ὁ βασιλεύς, κατέναντι τούτου.",
+        "VUL": "Post hæc igitur, statim ut audierunt omnes populi sonitum tubæ, fistulæ, et citharæ, sambucæ, et psalterii, et symphoniæ, et omnis generis musicorum, cadentes omnes populi, tribus, et linguæ adoraverunt statuam auream, quam constituerat Nabuchodonosor rex.",
+        "SYN": "Посему, когда все народы услышали звук трубы, свирели, цитры, цевницы, гуслей и всякого рода музыкальных орудий, то пали все народы, племена и языки, и поклонились золотому истукану, которого поставил Навуходоносор царь.",
+        "NEO": "C’est pourquoi au montent où tous les peuples entendirent le son de la trompette, du chalumeau, de la cithare, de la sambuque, du psaltérion et de toutes les sortes d’instruments, tous les peuples, nations et langues se prosternèrent, adorant la statue d’or qu’avait dressée le roi Nabuchodonosor.",
+        "NAB": "Therefore, as soon as they heard the sound of the trumpet, flute, lyre, harp, psaltery, bagpipe, and all the other musical instruments, the nations and peoples of every language all fell down and worshiped the golden statue which King Nebuchadnezzar had set up.",
+        "VAT_ES": "Por tal motivo, apenas todos los pueblos oyeron el sonido de la trompeta, el pífano, la cítara, la sambuca, el laúd, la cornamusa y de toda clase de instrumentos, todos los pueblos, naciones y lenguas se postraron para adorar la estatua de oro que había erigido el rey Nabucodonosor.",
+        "CEI": "Perciò tutti i popoli, nazioni e lingue, in quell'istante che ebbero udito il suono del corno, del flauto, dell'arpicordo, del salterio e di ogni specie di strumenti musicali, si prostrarono e adorarono la statua d'oro, che il re Nabucodònosor aveva fatto innalzare."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כָּ/ל קֳבֵ֤ל דְּנָה֙ בֵּ/הּ זִמְנָ֔/א קְרִ֖בוּ גֻּבְרִ֣ין כַּשְׂדָּאִ֑ין וַ/אֲכַ֥לוּ קַרְצֵי/ה֖וֹן דִּ֥י יְהוּדָיֵֽ/א׃",
+        "LXX": "ἐν ἐκείνῳ τῷ καιρῷ προσελθόντες ἄνδρες Χαλδαῖοι διέβαλον τοὺς Ἰουδαίους·",
+        "VUL": "Statimque in ipso tempore accedentes viri Chaldæi accusaverunt Judæos :",
+        "SYN": "В это самое время приступили некоторые из Халдеев и донесли на Иудеев.",
+        "NEO": "Là-dessus, au moment même, des Chaldéens s’approchèrent et dirent du mal des Juifs.",
+        "NAB": "At that point, some of the Chaldeans came and accused the Jews",
+        "VAT_ES": "En ese mismo momento, se acercaron unos caldeos y acusaron a los judíos.",
+        "CEI": "Però in quel momento alcuni Caldei si fecero avanti per accusare i Giudei"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "עֲנוֹ֙ וְ/אָ֣מְרִ֔ין לִ/נְבוּכַדְנֶצַּ֖ר מַלְכָּ֑/א מַלְכָּ֖/א לְ/עָלְמִ֥ין חֱיִֽי׃",
+        "LXX": "καὶ ὑπολαβόντες εἶπον Ναβουχοδονοσὸρ τῷ βασιλεῖ Κύριε βασιλεῦ, εἰς τὸν αἰῶνα ζῆθι.",
+        "VUL": "dixeruntque Nabuchodonosor regi : Rex, in æternum vive !",
+        "SYN": "Они сказали царю Навуходоносору: царь, вовеки живи!",
+        "NEO": "Ils prirent la parole et dirent au roi Nabuchodonosor : « O roi, vis à jamais ! »",
+        "NAB": "to King Nebuchadnezzar: \"O king, live forever!",
+        "VAT_ES": "Tomando la palabra, dijeron al rey Nabucodonosor: «&iexcl;Viva el rey eternamente!",
+        "CEI": "e andarono a dire al re Nabucodònosor: \"Re, vivi per sempre!"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "אנתה אַ֣נְתְּ מַלְכָּ/א֮ שָׂ֣מְתָּ טְּעֵם֒ דִּ֣י כָל אֱנָ֡שׁ דִּֽי יִשְׁמַ֡ע קָ֣ל קַרְנָ֣/א מַ֠שְׁרֹקִיתָ/א קיתרס קַתְר֨וֹס שַׂבְּכָ֤א פְסַנְתֵּרִין֙ ו/סיפניה וְ/סוּפֹּ֣נְיָ֔ה וְ/כֹ֖ל זְנֵ֣י זְמָרָ֑/א יִפֵּ֥ל וְ/יִסְגֻּ֖ד לְ/צֶ֥לֶם דַּהֲבָֽ/א׃",
+        "LXX": "σύ, βασιλεῦ, προσέταξας καὶ ἔκρινας, ἵνα πᾶς ἄνθρωπος ὃς ἂν ἀκούσῃ τῆς φωνῆς τῆς σάλπιγγος, σύριγγός τε καὶ σαμβύκης, κιθάρας καὶ ψαλτηρίου καὶ παντὸς ἤχου μουσικῶν, πεσὼν προσκυνήσῃ τῇ εἰκόνι τῇ χρυσῇ,",
+        "VUL": "tu, rex, posuisti decretum, ut omnis homo, qui audierit sonitum tubæ, fistulæ, et citharæ, sambucæ, et psalterii, et symphoniæ, et universi generis musicorum, prosternat se, et adoret statuam auream :",
+        "SYN": "Ты, царь, дал повеление, чтобы каждый человек, который услышит звук трубы, свирели, цитры, цевницы, гуслей и симфонии и всякого рода музыкальных орудий, пал и поклонился золотому истукану;",
+        "NEO": "Toi, ô roi, tu as porté un décret ordonnant que tout homme qui entendrait le son de la trompette, du chalumeau, de la cithare, de la sambuque, du psaltérion, de la cornemuse et de toutes les sortes d’instruments, se prosterne pour adorer la statue d’or,",
+        "NAB": "O king, you issued a decree that everyone who heard the sound of the trumpet, flute, lyre, harp, psaltery, bagpipe, and all the other musical instruments should fall down and worship the golden statue;",
+        "VAT_ES": "Tú, rey, has ordenado que todo el que oiga el sonido de la trompeta, el pífano, la cítara, la sambuca, el laúd, la cornamusa y de toda clase de instrumentos, tiene que postrarse y adorar la estatua de oro;",
+        "CEI": "Tu hai decretato, o re, che chiunque avrà udito il suono del corno, del flauto, della cetra, dell'arpicordo, del salterio, della zampogna e d'ogni specie di strumenti musicali, si deve prostrare e adorare la statua d'oro:"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/מַן דִּי לָ֥א יִפֵּ֖ל וְ/יִסְגֻּ֑ד יִתְרְמֵ֕א לְ/גֽוֹא אַתּ֥וּן נוּרָ֖/א יָקִֽדְתָּֽ/א׃",
+        "LXX": "καὶ ὃς ἂν μὴ πεσὼν προσκυνήσῃ, ἐμβληθήσεται εἰς τὴν κάμινον τοῦ πυρὸς τὴν καιομένην.",
+        "VUL": "si quis autem non procidens adoraverit, mittatur in fornacem ignis ardentis.",
+        "SYN": "а кто не падет и не поклонится, тот должен быть брошен в печь, раскаленную огнем.",
+        "NEO": "et que quiconque ne se prosternera pas pour l’adorer sera jeté au milieu de la fournaise de feu ardent.",
+        "NAB": "whoever did not was to be cast into a white-hot furnace.",
+        "VAT_ES": "y que todo el que no se postre para adorarla, debe ser arrojado dentro de un horno de fuego ardiente.",
+        "CEI": "chiunque non si prostrerà per adorarla, sia gettato in mezzo ad una fornace con il fuoco acceso."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אִיתַ֞י גֻּבְרִ֣ין יְהוּדָאיִ֗ן דִּֽי מַנִּ֤יתָ יָתְ/הוֹן֙ עַל עֲבִידַת֙ מְדִינַ֣ת בָּבֶ֔ל שַׁדְרַ֥ךְ מֵישַׁ֖ךְ וַ/עֲבֵ֣ד נְג֑וֹ גֻּבְרַיָּ֣/א אִלֵּ֗ךְ לָא שָׂ֨מֽוּ עלי/ך עֲלָ֤/ךְ מַלְכָּ/א֙ טְעֵ֔ם ל/אלהי/ך לֵֽ/אלָהָ/ךְ֙ לָ֣א פָלְחִ֔ין וּ/לְ/צֶ֧לֶם דַּהֲבָ֛/א דִּ֥י הֲקֵ֖ימְתָּ לָ֥א סָגְדִֽין׃",
+        "LXX": "εἰσὶ δέ τινες ἄνδρες Ἰουδαῖοι, οὓς κατέστησας ἐπὶ τῆς χώρας τῆς Βαβυλωνίας, Σεδράχ, Μισάχ, Ἀβδεναγώ· οἱ ἄνθρωποι ἐκεῖνοι οὐκ ἐφοβήθησάν σου τὴν ἐντολὴν καὶ τῷ εἰδώλῳ σου οὐκ ἐλάτρευσαν καὶ τῇ εἰκόνι σου τῇ χρυσῇ ᾗ ἔστησας οὐ προσεκύνησαν.",
+        "VUL": "Sunt ergo viri Judæi, quos constituisti super opera regionis Babylonis, Sidrach, Misach, et Abdenago : viri isti contempserunt, rex, decretum tuum : deos tuos non colunt, et statuam auream, quam erexisti, non adorant.",
+        "SYN": "Есть мужи Иудейские, которых ты поставил над делами страны Вавилонской: Седрах, Мисах и Авденаго; эти мужи не повинуются повелению твоему, царь, богам твоим не служат и золотому истукану, которого ты поставил, не поклоняются.",
+        "NEO": "Or, il y a des juifs que tu as préposés aux affaires de la province de Babylone, Sidrac, Misac et Abdénago : ces hommes-là n’ont pas d’égard pour toi, ô roi ; ils ne servent pas tes dieux et ils ne se prosternent pas devant la statue d’or que tu as dressée. »",
+        "NAB": "There are certain Jews whom you have made administrators of the province of Babylon: Shadrach, Meshach, Abednego; these men, O king, have paid no attention to you; they will not serve your god or worship the golden statue which you set up.\"",
+        "VAT_ES": "Pero hay unos judíos, Sadrac, Mesac y Abed Negó, a quienes tú has encomendado la administración de la provincia de Babilonia: esos hombres no te han hecho caso, rey; ellos no sirven a tus dioses ni adoran la estatua de oro que tú has erigido».",
+        "CEI": "Ora, ci sono alcuni Giudei, ai quali hai affidato gli affari della provincia di Babilonia, cioè Sadràch, Mesàch e Abdènego, che non ti obbediscono, re: non servono i tuoi dei e non adorano la statua d'oro che tu hai fatto innalzare\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "בֵּ/אדַ֤יִן נְבוּכַדְנֶצַּר֙ בִּ/רְגַ֣ז וַ/חֲמָ֔ה אֲמַר֙ לְ/הַיְתָיָ֔ה לְ/שַׁדְרַ֥ךְ מֵישַׁ֖ךְ וַ/עֲבֵ֣ד נְג֑וֹ בֵּ/אדַ֨יִן֙ גֻּבְרַיָּ֣/א אִלֵּ֔ךְ הֵיתָ֖יוּ קֳדָ֥ם מַלְכָּֽ/א׃",
+        "LXX": "τότε Ναβουχοδονοσὸρ θυμωθεὶς ὀργῇ προσέταξεν ἀγαγεῖν τὸν Σεδρὰχ, Μισάχ, Ἀβδεναγώ· τότε οἱ ἄνθρωποι ἤχθησαν πρὸς τὸν βασιλέα.",
+        "VUL": "Tunc Nabuchodonosor, in furore et in ira, præcepit ut adducerentur Sidrach, Misach, et Abdenago : qui confestim adducti sunt in conspectu regis.",
+        "SYN": "Тогда Навуходоносор во гневе и ярости повелел привести Седраха, Мисаха и Авденаго; и приведены были эти мужи к царю.",
+        "NEO": "Alors Nabuchodonosor, irrité et furieux, ordonna d’amener Sidrac, Misac, et Abdénago ; et ces hommes furent amenés devant le roi.",
+        "NAB": "Nebuchadnezzar flew into a rage and sent for Shadrach, Meshach, and Abednego, who were promptly brought before the king.",
+        "VAT_ES": "Entonces Nabucodonosor, lleno de indignación y de furor, mandó traer a Sadrac, Mesac y Abed Negó. Cuando esos hombres fueron traídos ante la presencia del rey,",
+        "CEI": "Allora Nabucodònosor, sdegnato, comandò che gli si conducessero Sadràch, Mesàch e Abdènego, e questi comparvero alla presenza del re."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "עָנֵ֤ה נְבֻֽכַדְנֶצַּר֙ וְ/אָמַ֣ר לְ/ה֔וֹן הַ/צְדָּ֕א שַׁדְרַ֥ךְ מֵישַׁ֖ךְ וַ/עֲבֵ֣ד נְג֑וֹ לֵֽ/אלָהַ֗/י לָ֤א אִֽיתֵי/כוֹן֙ פָּֽלְחִ֔ין וּ/לְ/צֶ֧לֶם דַּהֲבָ֛/א דִּ֥י הֲקֵ֖ימֶת לָ֥א סָֽגְדִֽין׃",
+        "LXX": "οὓς καὶ συνιδὼν Ναβουχοδονοσὸρ ὁ βασιλεὺς εἶπεν αὐτοῖς Διὰ τί, Σεδράχ, Μισάχ, Ἀβδεναγώ, τοῖς θεοῖς μου οὐ λατρεύετε καὶ τῇ εἰκόνι τῇ χρυσῇ ἣν ἔστησα οὐ προσκυνεῖτε;",
+        "VUL": "Pronuntiansque Nabuchodonosor rex, ait eis : Verene Sidrach, Misach, et Abdenago, deos meos non colitis, et statuam auream, quam constitui, non adoratis ?",
+        "SYN": "Навуходоносор сказал им: с умыслом ли вы, Седрах, Мисах и Авденаго, богам моим не служите, и золотому истукану, которого я поставил, не поклоняетесь?",
+        "NEO": "Nabuchodonosor prit la parole et leur dit : « Est-ce à dessein, Sidrac, Misac et Abdénago, que vous ne servez pas mon dieu et que vous n’adorez pas la statue d’or que j’ai dressée !",
+        "NAB": "King Nebuchadnezzar questioned them: \"Is it true, Shadrach, Meshach, and Abednego, that you will not serve my god, or worship the golden statue that I set up?",
+        "VAT_ES": "Nabucodonosor tomó la palabra y les dijo: «&iquest;Es verdad Sadrac, Mesac y Abed Negó, que ustedes no sirven a mis dioses y no adoran la estatua de oro que yo erigí?",
+        "CEI": "Nabucodònosor disse loro: \"È vero, Sadràch, Mesàch e Abdènego, che voi non servite i miei dei e non adorate la statua d'oro che io ho fatto innalzare?"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כְּעַ֞ן הֵ֧ן אִֽיתֵי/כ֣וֹן עֲתִידִ֗ין דִּ֣י בְ/עִדָּנָ֡/א דִּֽי תִשְׁמְע֡וּן קָ֣ל קַרְנָ֣/א מַשְׁרוֹקִיתָ֣/א קיתרס קַתְר֣וֹס שַׂבְּכָ֡א פְּסַנְתֵּרִין֩ וְ/סוּמְפֹּ֨נְיָ֜ה וְ/כֹ֣ל זְנֵ֣י זְמָרָ֗/א תִּפְּל֣וּן וְ/תִסְגְּדוּן֮ לְ/צַלְמָ֣/א דִֽי עַבְדֵת֒ וְ/הֵן֙ לָ֣א תִסְגְּד֔וּן בַּ/הּ שַׁעֲתָ֣/ה תִתְרְמ֔וֹן לְ/גֽוֹא אַתּ֥וּן נוּרָ֖/א יָקִֽדְתָּ֑/א וּ/מַן ה֣וּא אֱלָ֔הּ דֵּ֥י יְשֵֽׁיזְבִנְ/כ֖וֹן מִן יְדָֽ/י׃",
+        "LXX": "καὶ νῦν εἰ μὲν ἔχετε ἑτοίμως ἅμα τῷ ἀκοῦσαι τῆς σάλπιγγος, σύριγγός τε καὶ κιθάρας, σαυβύκης τε καὶ ψαλτηρίου καὶ συμφωνίας καὶ παντὸς ἤχου μουσικῶν, πεσόντες προσκυνῆσαι τῇ εἰκόνι τῇ χρυσῇ ᾗ ἔστησα· εἰ δὲ μή γε, γινώσκετε ὅτι μὴ προσκυνησάντων ὑμῶν αὐθωρὶ ἐμβληθήσεσθε εἰς τὴν κάμινον τοῦ πυρὸς τὴν καιομένην· καὶ ποῖος θεὸς ἐξελεῖται ὑμᾶς ἐκ τῶν χειρῶν μου;",
+        "VUL": "nunc ergo si estis parati, quacumque hora audieritis sonitum tubæ, fistulæ, citharæ, sambucæ, et psalterii, et symphoniæ, omnisque generis musicorum, prosternite vos, et adorate statuam, quam feci : quod si non adoraveritis, eadem hora mittemini in fornacem ignis ardentis : et quis est Deus, qui eripiet vos de manu mea ?",
+        "SYN": "Отныне, если вы готовы, как скоро услышите звук трубы, свирели, цитры, цевницы, гуслей, симфонии и всякого рода музыкальных орудий, падите и поклонитесь истукану, которого я сделал; если же не поклонитесь, то в тот же час брошены будете в печь, раскаленную огнем, и тогда какой Бог избавит вас от руки моей?",
+        "NEO": "Maintenant si vous êtes prêts, au moment où vous entendrez le son de la trompette, du chalumeau, de la cithare, de la sambuque, du psaltérion, de la cornemuse et de toutes les sortes d’Instruments, à vous prosterner pour adorer la statue que j’ai faite... Mais si vous ne l’adorez pas, vous serez jetés à l’instant même au milieu de la fournaise de feu ardent, et quel est le dieu qui vous délivrera de ma main ? »",
+        "NAB": "Be ready now to fall down and worship the statue I had made, whenever you hear the sound of the trumpet, flute, lyre, harp, psaltery, bagpipe, and all the other musical instruments; otherwise, you shall be instantly cast into the white-hot furnace; and who is the God that can deliver you out of my hands?\"",
+        "VAT_ES": "&iquest;Están dispuestos ahora, apenas oigan el sonido de la trompeta, el pífano, la cítara, la sambuca, el laúd, la cornamusa y de toda clase de instrumentos, a postrarse y adorar la estatua que yo hice? Porque si ustedes no la adoran, serán arrojados inmediatamente dentro de un horno de fuego ardiente. &iquest;Y qué Dios podrá salvarlos de mi mano?».",
+        "CEI": "Ora, se voi sarete pronti, quando udirete il suono del corno, del flauto, della cetra, dell'arpicordo, del salterio, della zampogna e d'ogni specie di strumenti musicali, a prostrarvi e adorare la statua che io ho fatta, bene; altrimenti in quel medesimo istante sarete gettati in mezzo ad una fornace dal fuoco ardente. Qual Dio vi potrà liberare dalla mia mano?\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "עֲנ֗וֹ שַׁדְרַ֤ךְ מֵישַׁךְ֙ וַ/עֲבֵ֣ד נְג֔וֹ וְ/אָמְרִ֖ין לְ/מַלְכָּ֑/א נְבֽוּכַדְנֶצַּ֔ר לָֽא חַשְׁחִ֨ין אֲנַ֧חְנָה עַל דְּנָ֛ה פִּתְגָ֖ם לַ/הֲתָבוּתָֽ/ךְ׃",
+        "LXX": "ἀποκριθέντες δὲ Σεδράχ, Μισάχ, Ἀβδεναγώ, εἶπαν τῷ βασιλεῖ Ναβουχοδονοσόρ Βασιλεῦ, οὐ χρείαν ἔχομεν ἡμεῖς ἐπὶ τῇ ἐπιταγῇ ταύτῃ ἀποκριθῆναί σοι.",
+        "VUL": "Respondentes Sidrach, Misach, et Abdenago, dixerunt regi Nabuchodonosor : Non oportet nos de hac re respondere tibi.",
+        "SYN": "И отвечали Седрах, Мисах и Авденаго, и сказали царю Навуходоносору: нет нужды нам отвечать тебе на это.",
+        "NEO": "Sidrac, Misac et Abdénago répondirent au roi et dirent : « Nabuchodonosor, sur ce point nous n’avons pas besoin de t’adresser une réponse.",
+        "NAB": "Shadrach, Meshach, and Abednego answered King Nebuchadnezzar, \"There is no need for us to defend ourselves before you in this matter.",
+        "VAT_ES": "Sadrac, Mesac y Abed Negó respondieron al rey Nabucodonosor, diciendo: «No tenemos necesidad de darte una respuesta acerca de este asunto.",
+        "CEI": "Ma Sadràch, Mesàch e Abdènego risposero al re Nabucodònosor: \"Re, noi non abbiamo bisogno di darti alcuna risposta in proposito;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "הֵ֣ן אִיתַ֗י אֱלָהַ֨/נָא֙ דִּֽי אֲנַ֣חְנָא פָֽלְחִ֔ין יָכִ֖ל לְ/שֵׁיזָבוּתַ֑/נָא מִן אַתּ֨וּן נוּרָ֧/א יָקִֽדְתָּ֛/א וּ/מִן יְדָ֥/ךְ מַלְכָּ֖/א יְשֵׁיזִֽב׃",
+        "LXX": "ἔστι γὰρ θεὸς ἐν οὐρανοῖς εἷς κύριος ἡμῶν, ὃν φοβούμεθα, ὅς ἐστι δυνατὸς ἐξελέσθαι ἡμᾶς ἐκ τῆς καμίνου τοῦ πυρὸς τῆς καιομένης· καὶ ἐκ τῶν χειρῶν σου, βασιλεῦ, ἐξελεῖται ἡμᾶς.",
+        "VUL": "Ecce enim Deus noster, quem colimus, potest eripere nos de camino ignis ardentis, et de manibus tuis, o rex, liberare.",
+        "SYN": "Бог наш, Которому мы служим, силен спасти нас от печи, раскаленной огнем, и от руки твоей, царь, избавит.",
+        "NEO": "Si vraiment notre Dieu que nous servons peut nous délivrer, il nous délivrera de la fournaise de feu ardent et de ta main, ô roi.",
+        "NAB": "If our God, whom we serve, can save us from the white-hot furnace and from your hands, O king, may he save us!",
+        "VAT_ES": "Nuestro Dios, a quien servimos, puede salvarnos del horno de fuego ardiente y nos librará de tus manos.",
+        "CEI": "sappi però che il nostro Dio, che serviamo, può liberarci dalla fornace con il fuoco acceso e dalla tua mano, o re."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/הֵ֣ן לָ֔א יְדִ֥יעַ לֶהֱוֵא לָ֖/ךְ מַלְכָּ֑/א דִּ֤י ל/אלהי/ך לֵֽ/אלָהָ/ךְ֙ לָא איתי/נא אִיתַ֣/נָא פָֽלְחִ֔ין וּ/לְ/צֶ֧לֶם דַּהֲבָ֛/א דִּ֥י הֲקֵ֖ימְתָּ לָ֥א נִסְגֻּֽד׃",
+        "LXX": "καὶ τότε φανερόν σοι ἔσται, βασιλεῦ, ὅτι οὔτε τῷ εἰδώλῳ σου λατρεύομεν οὔτε τῇ εἰκόνι σου τῇ εἰκόνι σου τῇ χρυσῇ, ἣν ἔστησας, οὐ προσκυνοῦμεν.",
+        "VUL": "Quod si noluerit, notum sit tibi, rex, quia deos tuos non colimus, et statuam auream, quam erexisti, non adoramus.",
+        "SYN": "Если же и не будет того, то да будет известно тебе, царь, что мы богам твоим служить не будем и золотому истукану, которого ты поставил, не поклонимся.",
+        "NEO": "Sinon, qu’il soit connu de toi, ô roi, que nous ne servirons pas tes dieux et que nous ne nous prosternerons pas devant la statue d’or que tu as dressée. »",
+        "NAB": "But even if he will not, know, O king, that we will not serve your god or worship the golden statue which you set up.\"",
+        "VAT_ES": "Y aunque no lo haga, ten por sabido, rey, que nosotros no serviremos a tus dioses ni adoraremos la estatua de oro que tú has erigido».",
+        "CEI": "Ma anche se non ci liberasse, sappi, o re, che noi non serviremo mai i tuoi dei e non adoreremo la statua d'oro che tu hai eretto\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "בֵּ/אדַ֨יִן נְבוּכַדְנֶצַּ֜ר הִתְמְלִ֣י חֱמָ֗א וּ/צְלֵ֤ם אַנְפּ֨וֹ/הִי֙ אשתנו אֶשְׁתַּנִּ֔י עַל שַׁדְרַ֥ךְ מֵישַׁ֖ךְ וַ/עֲבֵ֣ד נְג֑וֹ עָנֵ֤ה וְ/אָמַר֙ לְ/מֵזֵ֣א לְ/אַתּוּנָ֔/א חַ֨ד שִׁבְעָ֔ה עַ֛ל דִּ֥י חֲזֵ֖ה לְ/מֵזְיֵֽ/הּ׃",
+        "LXX": "τότε Ναβουχοδονοσὸρ ἐπλήσθη θυμοῦ, καὶ ἡ μορφὴ τοῦ προσώπου αὐτοῦ ἠλλοιώθη ἐπὶ Σεδράχ, Μισάχ, καὶ Ἀβδεναγώ, καὶ ἐπέταξε καῆναι τὴν κάμινον ἑπταπλασίως παρ’ ὃ ἔδει αὐτὴν καῆναι,",
+        "VUL": "Tunc Nabuchodonosor repletus est furore, et aspectus faciei illius immutatus est super Sidrach, Misach, et Abdenago : et præcepit ut succenderetur fornax septuplum quam succendi consueverat.",
+        "SYN": "Тогда Навуходоносор исполнился ярости, и вид лица его изменился на Седраха, Мисаха и Авденаго, и он повелел разжечь печь в семь раз сильнее, нежели как обыкновенно разжигали ее,",
+        "NEO": "Alors Nabuchodonosor fut rempli de fureur, et l’aspect de son visage fut changé envers Sidrac, Misac, et Abdénago. Reprenant la parole, il ordonna de chauffer la fournaise sept fois plus qu’on n’avait jugé convenable de le faire,",
+        "NAB": "Nebuchadnezzar's face became livid with utter rage against Shadrach, Meshach, and Abednego. He ordered the furnace to be heated seven times more than usual",
+        "VAT_ES": "Nabucodonosor se llenó de furor y la expresión de su rostro se alteró frente a Sadrac, Mesac y Abed Negó. El rey tomó la palabra y ordenó activar el horno siete veces más de lo habitual.",
+        "CEI": "Allora Nabucodònosor, acceso d'ira e con aspetto minaccioso contro Sadràch, Mesàch e Abdènego, ordinò che si aumentasse il fuoco della fornace sette volte più del solito."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וּ/לְ/גֻבְרִ֤ין גִּבָּֽרֵי חַ֨יִל֙ דִּ֣י בְ/חַיְלֵ֔/הּ אֲמַר֙ לְ/כַפָּתָ֔ה לְ/שַׁדְרַ֥ךְ מֵישַׁ֖ךְ וַ/עֲבֵ֣ד נְג֑וֹ לְ/מִרְמֵ֕א לְ/אַתּ֥וּן נוּרָ֖/א יָקִֽדְתָּֽ/א׃",
+        "LXX": "καὶ ἄνδρας ἰσχυροτάτους τῶν ἐν τῇ δυνάμει ἐπέταξε συμποδίσαντας τὸν Σεδράχ, Μισάχ, Ἀβδεναγώ, ἐμβαλεῖν εἰς τὴν κάμινον τοῦ πυρὸς τὴν καιομένην.",
+        "VUL": "Et viris fortissimis de exercitu suo jussit ut ligatis pedibus Sidrach, Misach, et Abdenago, mitterent eos in fornacem ignis ardentis.",
+        "SYN": "и самым сильным мужам из войска своего приказал связать Седраха, Мисаха и Авденаго и бросить их в печь, раскаленную огнем.",
+        "NEO": "et il commanda à quelques-uns des plus vigoureux soldats qui étaient dans son armée de lier Sidrac, Misac et Abdénago et de les jeter dans la fournaise de feu ardent.",
+        "NAB": "and had some of the strongest men in his army bind Shadrach, Meshach, and Abednego and cast them into the white-hot furnace.",
+        "VAT_ES": "Luego ordenó a los hombres más fuertes de su ejército que ataran a Sadrac, Mesac y Abed Negó, para arrojarlos en el horno de fuego ardiente.",
+        "CEI": "Poi, ad alcuni uomini fra i più forti del suo esercito, comandò di legare Sadràch, Mesàch e Abdènego e gettarli nella fornace con il fuoco acceso."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "בֵּ/אדַ֜יִן גֻּבְרַיָּ֣/א אִלֵּ֗ךְ כְּפִ֨תוּ֙ בְּ/סַרְבָּלֵי/הוֹן֙ פטישי/הון פַּטְּשֵׁי/ה֔וֹן וְ/כַרְבְּלָתְ/ה֖וֹן וּ/לְבֻשֵׁי/ה֑וֹן וּ/רְמִ֕יו לְ/גֽוֹא אַתּ֥וּן נוּרָ֖/א יָקִֽדְתָּֽ/א׃",
+        "LXX": "τότε οἱ ἄνδρες ἐκεῖνοι συνεποδίσθησαν, ἔχοντες τὰ ὑποδήματα αὐτῶν καὶ τὰς τιάρας αὐτῶν ἐπὶ τῶν κεφαλῶν αὐτῶν, σὺν τῷ ἱματισμῷ αὐτῶν, καὶ ἐβλήθησαν εἰς τὴν κάμινον τοῦ πυρὸς τὴν καιομένην.",
+        "VUL": "Et confestim viri illi vincti, cum braccis suis, et tiaris, et calceamentis, et vestibus, missi sunt in medium fornacis ignis ardentis :",
+        "SYN": "Тогда мужи сии связаны были в исподнем и верхнем платье своем, в головных повязках и в прочих одеждах своих, и брошены в печь, раскаленную огнем.",
+        "NEO": "Alors ces hommes, avec leurs tuniques, leurs robes, leurs manteaux et leurs autres vêtements, furent liés et jetés dans la fournaise de feu ardent.",
+        "NAB": "They were bound and cast into the white-hot furnace with their coats, hats, shoes and other garments,",
+        "VAT_ES": "Entonces estos tres, con sus mantos, sus calzados, sus gorros y toda su ropa, fueron atados y arrojados dentro del horno ardiente.",
+        "CEI": "Furono infatti legati, vestiti come erano, con i mantelli, calzari, turbanti e tutti i loro abiti e gettati in mezzo alla fornace con il fuoco acceso."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כָּ/ל קֳבֵ֣ל דְּנָ֗ה מִן דִּ֞י מִלַּ֤ת מַלְכָּ/א֙ מַחְצְפָ֔ה וְ/אַתּוּנָ֖/א אֵזֵ֣ה יַתִּ֑ירָא גֻּבְרַיָּ֣/א אִלֵּ֗ךְ דִּ֤י הַסִּ֨קוּ֙ לְ/שַׁדְרַ֤ךְ מֵישַׁךְ֙ וַ/עֲבֵ֣ד נְג֔וֹ קַטִּ֣ל הִמּ֔וֹן שְׁבִיבָ֖/א דִּ֥י נוּרָֽ/א׃",
+        "LXX": "ἐπειδὴ τὸ πρόσταγμα τοῦ βασιλέως ἤπειγεν καὶ ἡ κάμινος ἐξεκαύθη ὑπὲρ τὸ πρότερον ἑπταπλασίως, καὶ οἱ ἄνδρες οἱ προχειρισθέντες συμποδίσαντες αὐτοὺς καὶ προσαγαγόντες τῇ καμίνῳ ἐνεβάλοσαν εἰς αὐτήν.",
+        "VUL": "nam jussio regis urgebat. Fornax autem succensa erat nimis : porro viros illos, qui miserant Sidrach, Misach, et Abdenago, interfecit flamma ignis.",
+        "SYN": "И как повеление царя было строго, и печь раскалена была чрезвычайно, то пламя огня убило тех людей, которые бросали Седраха, Мисаха и Авденаго.",
+        "NEO": "Comme l’ordre du roi était pressant et la fournaise extraordinairement chauffée, la flamme de feu tua ces hommes qui y avaient jeté Sidrac, Misac et Abdénago.",
+        "NAB": "for the king's order was urgent. So huge a fire was kindled in the furnace that the flames devoured the men who threw Shadrach, Meshach, and Abednego into it.",
+        "VAT_ES": "Como la orden del rey era perentoria y el horno estaba muy encendido, la llamarada mató a los hombres que habían llevado a Sadrac, Mesac y Abed Negó.",
+        "CEI": "Ma quegli uomini, che dietro il severo comando del re avevano acceso al massimo la fornace per gettarvi Sadràch, Mesàch e Abdènego, rimasero uccisi dalle fiamme,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/גֻבְרַיָּ֤/א אִלֵּךְ֙ תְּלָ֣תֵּ/ה֔וֹן שַׁדְרַ֥ךְ מֵישַׁ֖ךְ וַ/עֲבֵ֣ד נְג֑וֹ נְפַ֛לוּ לְ/גֽוֹא אַתּוּן נוּרָ֥/א יָֽקִדְתָּ֖/א מְכַפְּתִֽין׃",
+        "LXX": "τοὺς μὲν οὖν ἄνδρας τοὺς συμποδίσαντας τοὺς περὶ τὸν Ἀζαρίαν ἐξελθοῦσα ἡ φλὸξ ἐκ τῆς καμίνου ἐνεπύρισε καὶ ἀπέκτεινεν, αὐτοὶ δὲ συνετηρήθησαν.",
+        "VUL": "Viri autem hi tres, id est, Sidrach, Misach, et Abdenago, ceciderunt in medio camino ignis ardentis, colligati.",
+        "SYN": "А сии три мужа, Седрах, Мисах и Авденаго, упали в раскаленную огнем печь связанные.",
+        "NEO": "Et ces trois hommes, Sidrac, Misac et Abdénago tombèrent au milieu de la fournaise ardente, tout liés.",
+        "NAB": "But these three fell, bound, into the midst of the white-hot furnace.",
+        "VAT_ES": "En cuanto a estos tres, Sadrac, Mesac y Abed Negó, cayeron atados dentro del horno de fuego ardiente.",
+        "CEI": "nel momento stesso che i tre giovani Sadràch, Mesàch e Abdènego cadevano legati nella fornace con il fuoco acceso."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אֱדַ֨יִן֙ נְבוּכַדְנֶצַּ֣ר מַלְכָּ֔/א תְּוַ֖הּ וְ/קָ֣ם בְּ/הִתְבְּהָלָ֑ה עָנֵ֨ה וְ/אָמַ֜ר לְ/הַדָּֽבְר֗וֹ/הִי הֲ/לָא֩ גֻבְרִ֨ין תְּלָתָ֜א רְמֵ֤ינָא לְ/גוֹא נוּרָ/א֙ מְכַפְּתִ֔ין עָנַ֤יִן וְ/אָמְרִין֙ לְ/מַלְכָּ֔/א יַצִּיבָ֖א מַלְכָּֽ/א׃",
+        "LXX": "Οὕτως οὖν προσηύξατο Ἁνανίας καὶ Ἀζαρίας καὶ Μισαήλ, καὶ ὕμνησαν τῷ κυρίῳ, ὅτε αὐτοὺς ὁ βασιλεὺς προσέταξεν ἐμβληθῆναι εἰς τὴν κάμινον.",
+        "VUL": "Et ambulabant in medio flammæ, laudantes Deum, et benedicentes Domino.",
+        "SYN": "[И ходили посреди пламени, воспевая Бога и благословляя Господа.",
+        "NEO": "Et ils marchaient au milieu de la flamme, louant Dieu et bénissant le Seigneur.",
+        "NAB": "They walked about in the flames, singing to God and blessing the Lord.",
+        "VAT_ES": "El rey Nabucodonosor quedó estupefacto y se levantó rápidamente. Y tomando la palabra, dijo a sus cortesanos: «&iquest;No eran tres los hombres que fueron atados y arrojados dentro del fuego?». Ellos le respondieron, diciendo: «Así es, rey».",
+        "CEI": "Essi passeggiavano in mezzo alle fiamme, lodavano Dio e benedicevano il Signore."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "עָנֵ֣ה וְ/אָמַ֗ר הָֽא אֲנָ֨ה חָזֵ֜ה גֻּבְרִ֣ין אַרְבְּעָ֗ה שְׁרַ֨יִן֙ מַהְלְכִ֣ין בְּ/גֽוֹא נוּרָ֔/א וַ/חֲבָ֖ל לָא אִיתַ֣י בְּ/ה֑וֹן וְ/רֵוֵ/הּ֙ דִּ֣י רביעי/א רְֽבִיעָ/אָ֔ה דָּמֵ֖ה לְ/בַר אֱלָהִֽין׃",
+        "LXX": "στὰς δὲ Ἀζαρίας προσηύξατο οὕτως, καὶ ἀνοίξας τὸ στόμα αὐτοῦ ἐξωμολογεῖτο τῷ κυρίῳ ἅμα τοῖς συνεταίροις αὐτοῦ ἐν μέσῳ τῷ πυρί, ὑποκαιομένης τῆς καμίνου ὑπὸ τῶν Χαλδαίων σφόδρα. καὶ εἶπαν",
+        "VUL": "Stans autem Azarias oravit sic, aperiensque os suum in medio ignis, ait :",
+        "SYN": "И став Азария молился и, открыв уста свои среди огня, возгласил:",
+        "NEO": "Et Azarias, se levant, fit cette prière ; ouvrant la bouche au milieu du feu, il dit :",
+        "NAB": "In the fire Azariah stood up and prayed aloud:",
+        "VAT_ES": "El replicó: «Sin embargo, yo veo cuatro hombres que caminan libremente por el fuego sin sufrir ningún daño, y el aspecto del cuarto se asemeja a un hijo de los dioses».",
+        "CEI": "Azaria, alzatosi, fece questa preghiera in mezzo al fuoco e aprendo la bocca disse:"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "בֵּ/אדַ֜יִן קְרֵ֣ב נְבוּכַדְנֶצַּ֗ר לִ/תְרַע֮ אַתּ֣וּן נוּרָ֣/א יָקִֽדְתָּ/א֒ עָנֵ֣ה וְ/אָמַ֗ר שַׁדְרַ֨ךְ מֵישַׁ֧ךְ וַ/עֲבֵד נְג֛וֹ עַבְד֛וֹ/הִי דִּֽי אֱלָהָ֥/א עלי/א עִלָּאָ֖/ה פֻּ֣קוּ וֶ/אֱת֑וֹ בֵּ/אדַ֣יִן נָֽפְקִ֗ין שַׁדְרַ֥ךְ מֵישַׁ֛ךְ וַ/עֲבֵ֥ד נְג֖וֹ מִן גּ֥וֹא נוּרָֽ/א׃",
+        "LXX": "Εὐλογητὸς εἶ, Κύριε ὁ θεὸς τῶν πατέρων ἡμῶν, καὶ αἰνετὸν καὶ δεδοξασμένον τὸ ὄνομά σου εἰς τοὺς αἰῶνας,",
+        "VUL": "[Benedictus es, Domine Deus patrum nostrorum,/ et laudabile, et gloriosum nomen tuum in sæcula :/",
+        "SYN": "\"Благословен Ты, Господи Боже отцов наших, хвально и прославлено имя Твое вовеки.",
+        "NEO": "Soyez béni, Seigneur, Dieu de nos pères ; votre nom est digne de louange et de gloire à jamais.",
+        "NAB": "\"Blessed are you, and praiseworthy, O Lord, the God of our fathers, and glorious forever is your name.",
+        "VAT_ES": "Entonces Nabucodonosor se acercó a la puerta del horno de fuego ardiente y, tomando la palabra, dijo: «Sadrac, Mesac y Abed Negó, servidores del Dios altísimo, salgan y vengan». Y Sadrac, Mesac y Abed Negó salieron de en medio del fuego.",
+        "CEI": "\"Benedetto sei tu, Signore Dio dei nostri padri; degno di lode e glorioso è il tuo nome per sempre."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וּ֠/מִֽתְכַּנְּשִׁין אֲחַשְׁדַּרְפְּנַיָּ֞/א סִגְנַיָּ֣/א וּ/פַחֲוָתָ/א֮ וְ/הַדָּבְרֵ֣י מַלְכָּ/א֒ חָזַ֣יִן לְ/גֻבְרַיָּ֣/א אִלֵּ֡ךְ דִּי֩ לָֽא שְׁלֵ֨ט נוּרָ֜/א בְּ/גֶשְׁמְ/ה֗וֹן וּ/שְׂעַ֤ר רֵֽאשְׁ/הוֹן֙ לָ֣א הִתְחָרַ֔ךְ וְ/סָרְבָּלֵי/ה֖וֹן לָ֣א שְׁנ֑וֹ וְ/רֵ֣יחַ נ֔וּר לָ֥א עֲדָ֖ת בְּ/הֽוֹן׃",
+        "LXX": "ὅτι δίκαιος εἶ ἐπὶ πᾶσιν οἷς ἐποίησας ἡμῖν, καὶ πάντα τὰ ἔργα σου ἀληθινὰ καὶ αἱ ὁδοί σου εὐθεῖαι καὶ πᾶσαι αἱ κρίσεις σου ἀληθιναί.",
+        "VUL": "quia justus es in omnibus, quæ fecisti nobis,/ et universa opera tua vera, et viæ tuæ rectæ,/ et omnia judicia tua vera.",
+        "SYN": "Ибо праведен Ты во всем, что соделал с нами, и все дела Твои истинны и пути Твои правы, и все суды Твои истинны.",
+        "NEO": "Car vous êtes juste dans tout ce que vous nous avez fait, et toutes vos œuvres sont vraies ; vos voies sont droites, et vos jugements sont équitables.",
+        "NAB": "For you are just in all you have done; all your deeds are faultless, all your ways right, and all your judgments proper.",
+        "VAT_ES": "Una vez reunidos los prefectos, los gobernadores y los cortesanos del rey, comprobaron que el fuego no había tenido poder sobre el cuerpo de aquellos hombres, que sus cabellos no se habían quemado, que sus mantos estaban intactos y que ni siquiera el olor del fuego se había adherido a ellos.",
+        "CEI": "Tu sei giusto in tutto ciò che hai fatto; tutte le tue opere sono vere, rette le tue vie e giusti tutti i tuoi giudizi."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "עָנֵ֨ה נְבֽוּכַדְנֶצַּ֜ר וְ/אָמַ֗ר בְּרִ֤יךְ אֱלָהֲ/הוֹן֙ דִּֽי שַׁדְרַ֤ךְ מֵישַׁךְ֙ וַ/עֲבֵ֣ד נְג֔וֹ דִּֽי שְׁלַ֤ח מַלְאֲכֵ/הּ֙ וְ/שֵׁיזִ֣ב לְ/עַבְד֔וֹ/הִי דִּ֥י הִתְרְחִ֖צוּ עֲל֑וֹ/הִי וּ/מִלַּ֤ת מַלְכָּ/א֙ שַׁנִּ֔יו וִ/יהַ֣בוּ גשמי/הון גֶשְׁמְ/ה֗וֹן דִּ֠י לָֽא יִפְלְח֤וּן וְ/לָֽא יִסְגְּדוּן֙ לְ/כָל אֱלָ֔הּ לָהֵ֖ן לֵ/אלָֽהֲ/הֽוֹן׃",
+        "LXX": "καὶ κρίματα ἀληθείας ἐποίησας κατὰ πάντα ἃ ἐπήγαγες ἡμῖν καὶ ἐπὶ τὴν πόλιν σου τὴν ἁγίαν τὴν τῶν πατέρων ἡμῶν Ἰερουσαλήμ· διότι ἐν ἀληθείᾳ καὶ κρίσει ἐποίησας πάντα ταῦτα διὰ τὰς ἁμαρτίας ἡμῶν.",
+        "VUL": "Judicia enim vera fecisti/ juxta omnia, quæ induxisti super nos,/ et super civitatem sanctam patrum nostrorum Jerusalem :/ quia in veritate et in judicio induxisti omnia hæc/ propter peccata nostra./",
+        "SYN": "Ты совершил истинные суды во всем, что навел на нас и на святый град отцов наших Иерусалим, потому что по истине и по суду навел Ты все это на нас за грехи наши.",
+        "NEO": "Car vous avez rendu des jugements équitables ; dans tous les maux que vous avez fait venir sur nous ; et sur la ville sainte de nos pères, Jérusalem ; c’est par un juste jugement que vous avez fait tout cela, à cause de nos péchés.",
+        "NAB": "You have executed proper judgments in all that you have brought upon us and upon Jerusalem, the holy city of our fathers. By a proper judgment you have done all this because of our sins;",
+        "VAT_ES": "Nabucodonosor tomó la palabra y dijo: «Bendito sea el Dios de Sadrac, Mesac y Abed Negó, porque ha enviado a su Angel y ha salvado a sus servidores, que confiaron en él y, quebrantando la orden del rey, entregaron su cuerpo antes que servir y adorar a cualquier otro dios que no fuera su Dios.",
+        "CEI": "Giusto è stato il tuo giudizio per quanto hai fatto ricadere su di noi e sulla città santa dei nostri padri, Gerusalemme. Con verità e giustizia tu ci hai inflitto tutto questo a causa dei nostri peccati,"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וּ/מִ/נִּי֮ שִׂ֣ים טְעֵם֒ דִּי֩ כָל עַ֨ם אֻמָּ֜ה וְ/לִשָּׁ֗ן דִּֽי יֵאמַ֤ר שלה שָׁלוּ֙ עַ֣ל אֱלָהֲ/ה֗וֹן דִּֽי שַׁדְרַ֤ךְ מֵישַׁךְ֙ וַ/עֲבֵ֣ד נְג֔וֹא הַדָּמִ֣ין יִתְעֲבֵ֔ד וּ/בַיְתֵ֖/הּ נְוָלִ֣י יִשְׁתַּוֵּ֑ה כָּ/ל קֳבֵ֗ל דִּ֣י לָ֤א אִיתַי֙ אֱלָ֣ה אָחֳרָ֔ן דִּֽי יִכֻּ֥ל לְ/הַצָּלָ֖ה כִּ/דְנָֽה׃",
+        "LXX": "ὅτι ἡμάρτομεν ἐν πᾶσι καὶ ἠνομήσαμεν ἀποστῆναι ἀπὸ σοῦ καὶ ἐξημάρτομεν ἐν πᾶσι·",
+        "VUL": "Peccavimus enim, et inique egimus recedentes a te,/ et deliquimus in omnibus :/",
+        "SYN": "Ибо согрешили мы, и поступили беззаконно, отступив от Тебя, и во всем согрешили.",
+        "NEO": "Car nous avons péché et commis l’iniquité en nous retirant de vous, et nous avons manqué en toutes choses.",
+        "NAB": "For we have sinned and transgressed by departing from you, and we have done every kind of evil.",
+        "VAT_ES": "Por eso, yo doy este decreto: «Todo pueblo, nación o lengua que hable irreverentemente contra el Dios de Sadrac, Mesac y Abed Negó, será cortado en pedazos y su casa quedará reducida a un basural, porque no hay otro dios que pueda librar de esa manera».",
+        "CEI": "poiché noi abbiamo peccato, abbiamo agito da iniqui, allontanandoci da te, abbiamo mancato in ogni modo. Non abbiamo obbedito ai tuoi comandamenti,"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "בֵּ/אדַ֣יִן מַלְכָּ֗/א הַצְלַ֛ח לְ/שַׁדְרַ֥ךְ מֵישַׁ֛ךְ וַ/עֲבֵ֥ד נְג֖וֹ בִּ/מְדִינַ֥ת בָּבֶֽל׃",
+        "LXX": "καὶ τῶν ἐντολῶν τοῦ νόμου σου οὐχ ὑπηκούσαμεν οὐδὲ συνετηρήσαμεν, οὐδὲ ἐποιήσαμεν καθὼς ἐνετείλω ἡμῖν ἵνα εὖ ἡμῖν γένηται.",
+        "VUL": "et præcepta tua non audivimus,/ nec observavimus,/ nec fecimus sicut præceperas nobis/ ut bene nobis esset./",
+        "SYN": "Заповедей Твоих не слушали и не соблюдали их, и не поступали, как Ты повелел нам, чтобы благо нам было.",
+        "NEO": "Nous n’avons pas écouté vos commandements et nous ne les avons pas observés, et nous n’avons pas agi selon que vous nous l’aviez commandé, afin que nous fussions heureux.",
+        "NAB": "Your commandments we have not heeded or observed, nor have we done as you ordered us for our good.",
+        "VAT_ES": "Entonces Nabucodonosor hizo prosperar a Sadrac, Mesac y Abed Negó en la provincia de Babilonia.",
+        "CEI": "non li abbiamo osservati, non abbiamo fatto quanto ci avevi ordinato per il nostro bene."
+      }
+    }
+  }
+}

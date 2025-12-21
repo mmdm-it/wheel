@@ -1,0 +1,520 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_001",
+  "book_key": "ECCLU",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "ΠΑΣΑ σοφία παρὰ Κυρίου, καὶ μετ’ αὐτοῦ ἐστιν εἰς τὸν αἰῶνα.",
+        "VUL": "<Prologus>Multorum nobis et magnorum per legem, et prophetas, aliosque qui secuti sunt illos, sapientia demonstrata est, in quibus oportet laudare Israël doctrinæ et sapientiæ causa, quia non solum ipsos loquentes necesse est esse peritos, sed etiam extraneos posse et dicentes et scribentes doctissimos fieri. Avus meus Jesus, postquam se amplius dedit ad diligentiam lectionis legis, et prophetarum, et aliorum librorum qui nobis a parentibus nostris traditi sunt, voluit et ipse scribere aliquid horum quæ ad doctrinam et sapientiam pertinent, ut desiderantes discere, et illorum periti facti, magis magisque attendant animo, et confirmentur ad legitimam vitam. Hortor itaque venire vos cum benevolentia, et attentiori studio lectionem facere, et veniam habere in illis, in quibus videmur, sequentes imaginem sapientiæ, deficere in verborum compositione. Nam deficiunt verba hebraica, quando fuerint translata ad alteram linguam : non autem solum hæc, sed et ipsa lex, et prophetæ, ceteraque aliorum librorum non parvam habent differentiam quando inter se dicuntur. Nam in octavo et trigesimo anno temporibus Ptolemæi Evergetis regis, postquam perveni in Ægyptum, et cum multum temporis ibi fuissem, inveni ibi libros relictos, non parvæ neque contemnendæ doctrinæ. Itaque bonum et necessarium putavi et ipse aliquam addere diligentiam et laborem interpretandi librum istum : et multa vigilia attuli doctrinam in spatio temporis, ad illa quæ ad finem ducunt, librum istum dare, et illis qui volunt animum intendere, et discere quemadmodum oporteat instituere mores, qui secundum legem Domini proposuerint vitam agere. [Omnis sapientia a Domino Deo est :/ et cum illo fuit semper, et est ante ævum./",
+        "SYN": "Всякая премудрость - от Господа и с Ним пребывает вовек.",
+        "NEO": "Toute sagesse vient du Seigneur, elle est avec lui à jamais.",
+        "NAB": "All wisdom comes from the LORD and with him it remains forever.",
+        "VAT_ES": "Toda sabiduría viene del Señor, y está con él para siempre.",
+        "CEI": "Ogni sapienza viene dal Signore ed è sempre con lui."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ἄμμον θαλασσῶν καὶ σταγόνας ὑετοῦ καὶ ἡμέρας αἰῶνος τίς ἐξαριθμήσει;",
+        "VUL": "Arenam maris, et pluviæ guttas,/ et dies sæculi, quis dinumeravit ?/ altitudinem cæli, et latitudinem terræ,/ et profundum abyssi, quis dimensus est ?/",
+        "SYN": "Песок морей и капли дождя и дни вечности кто исчислит?",
+        "NEO": "Qui peut compter le sable de la mer, les gouttes de la pluie et les jours du passé ?",
+        "NAB": "The sand of the seashore, the drops of rain, the days of eternity: who can number these?",
+        "VAT_ES": "&iquest;Quién puede contar la arena de los mares, las gotas de la lluvia y los días de la eternidad?",
+        "CEI": "La sabbia del mare, le gocce della pioggia e i giorni del mondo chi potrà contarli?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ὕψος οὐρανοῦ καὶ πλάτος γῆς καὶ ἄβυσσον καὶ σοφίαν τίς ἐξιχνιάσει;",
+        "VUL": "sapientiam Dei præcedentem omnia, quis investigavit ?/",
+        "SYN": "Высоту неба и широту земли, и бездну и премудрость кто исследует?",
+        "NEO": "Qui peut atteindre les hauteurs du ciel, la largeur de la terre, la profondeur de l’abîme et la sagesse ?",
+        "NAB": "Heaven's height, earth's breadth, the depths of the abyss: who can explore these?",
+        "VAT_ES": "&iquest;Quién puede medir la altura del cielo, la extensión de la tierra, el abismo y la sabiduría?",
+        "CEI": "L'altezza del cielo, l'estensione della terra, la profondità dell'abisso chi potrà esplorarle?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "προτέρα πάντων ἔκτισται σοφία, καὶ σύνεσις φρονήσεως ἐξ αἰῶνος.",
+        "VUL": "Prior omnium creata est sapientia,/ et intellectus prudentiæ ab ævo./",
+        "SYN": "Прежде всего произошла Премудрость, и разумение мудрости - от века.",
+        "NEO": "La sagesse a été créée avant toutes choses, et la lumière de l’intelligence dès l’éternité.",
+        "NAB": "Before all things else wisdom was created; and prudent understanding, from eternity.",
+        "VAT_ES": "Antes que todas las cosas fue creada la sabiduría y la inteligencia previsora, desde la eternidad.",
+        "CEI": "Prima di ogni cosa fu creata la sapienza e la saggia prudenza è da sempre."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "VUL": "Fons sapientiæ verbum Dei in excelsis,/ et ingressus illius mandata æterna./",
+        "SYN": "Источник премудрости - слово Бога Всевышнего, и шествие ее - вечные заповеди.",
+        "NEO": "[La source de la sagesse, c’est la parole de Dieu au plus haut des cieux, ses voies sont les commandements éternels.]",
+        "NAB": "To whom has wisdom's root been revealed? Who knows her subtleties?",
+        "VAT_ES": "El manantial de la sabiduría es la palabra de Dios en las alturas, y sus canales son los mandamientos eternos.",
+        "CEI": "A chi fu rivelata la radice della sapienza? Chi conosce i suoi disegni?"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ῥίζα σοφίας τίνι ἀπεκαλύφθη; καὶ τὰ πανουργεύματα αὐτῆς τίς ἔγνω;",
+        "VUL": "Radix sapientiæ cui revelata est ?/ et astutias illius quis agnovit ?/",
+        "SYN": "Кому открыт корень премудрости? и кто познал искусство ее?",
+        "NEO": "A qui a été révélée la racine de la sagesse, et qui a connu ses desseins profonds ?",
+        "NAB": "There is but one, wise and truly awe-inspiring, seated upon his throne:",
+        "VAT_ES": "&iquest;A quién fue revelada la raíz de la sabiduría y quién conoció sus secretos designios?",
+        "CEI": "Uno solo è sapiente, molto terribile, seduto sopra il trono."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "VUL": "disciplina sapientiæ cui revelata est et manifestata ?/ et multiplicationem ingressus illius quis intellexit ?/",
+        "SYN": "Один есть премудрый, весьма страшный, сидящий на престоле Своем, Господь.",
+        "NEO": "[A qui la science de la sagesse a-t-elle été révélée et manifestée, et qui comprend la richesse de ses voies ?]",
+        "NAB": "It is the LORD; he created her, has seen her and taken note of her.",
+        "VAT_ES": "&iquest;A quién se le manifestó la ciencia de la sabiduría y quién comprendió la diversidad de sus caminos?",
+        "CEI": "Il Signore ha creato la sapienza; l'ha vista e l'ha misurata, l'ha diffusa su tutte le sue opere,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "εἷς ἐστὶν σοφός, φοβερὸς σφόδρα, καθήμενος ἐπὶ τοῦ θρόνου αὐτοῦ. Κύριος",
+        "VUL": "Unus est altissimus, Creator omnipotens,/ et rex potens et metuendus nimis,/ sedens super thronum illius, et dominans Deus./",
+        "SYN": "Он произвел ее и видел и измерил ее",
+        "NEO": "Il n’y a qu’un sage grandement redoutable, assis sur son trône : c’est le Seigneur.",
+        "NAB": "He has poured her forth upon all his works, upon every living thing according to his bounty; he has lavished her upon his friends.",
+        "VAT_ES": "Sólo uno es sabio, temible en extremo: el Señor, que está sentado en su trono.",
+        "CEI": "su ogni mortale, secondo la sua generosità, la elargì a quanti lo amano."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "αὐτὸς ἔκτισεν αὐτήν, καὶ ἴδεν καὶ ἐξηρίθμησεν αὐτήν, καὶ ἐξέχεεν αὐτὴν ἐπὶ πάντα τὰ ἔργα αὐτοῦ,",
+        "VUL": "Ipse creavit illam in Spiritu Sancto,/ et vidit, et dinumeravit, et mensus est :/",
+        "SYN": "и излил ее на все дела Свои",
+        "NEO": "C’est lui qui l’a créée ; il l’a vue et il l’a fait connaître.",
+        "NAB": "Fear of the LORD is glory and splendor, gladness and a festive crown.",
+        "VAT_ES": "El mismo la creó, la vio y la midió, y la derramó sobre todas sus obras:",
+        "CEI": "Il timore del Signore è gloria e vanto, gioia e corona di esultanza."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "μετὰ πάσης σαρκὸς κατὰ τὴν δόσιν αὐτοῦ, καὶ ἐχορήγησεν αὐτὴν τοῖς ἀγαπῶσιν αὐτόν.",
+        "VUL": "et effudit illam super omnia opera sua,/ et super omnem carnem, secundum datum suum,/ et præbuit illam diligentibus se.]",
+        "SYN": "и на всякую плоть по дару Своему, и особенно наделил ею любящих Его.",
+        "NEO": "Il l’a répandue sur toutes ses œuvres, ainsi que sur toute chair, selon la mesure de son don, il l’a donnée libéralement à ceux qui l’aiment.",
+        "NAB": "Fear of the LORD warms the heart, giving gladness and joy and length of days.",
+        "VAT_ES": "la dio a todos los hombres, según su generosidad, y la infundió abundantemente en aquellos que lo aman.",
+        "CEI": "Il timore del Signore allieta il cuore e dà contentezza, gioia e lunga vita."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "φόβος Κυρίου δόξα καὶ καύχημα καὶ εὐφροσύνη καὶ στέφανος ἀγαλλιάματος.",
+        "VUL": "[Timor Domini gloria, et gloriatio,/ et lætitia, et corona exsultationis./",
+        "SYN": "Страх Господень - слава и честь, и веселие и венец радости.",
+        "NEO": "La crainte du Seigneur est gloire et honneur, et joie, et couronne d’allégresse.",
+        "NAB": "He who fears the LORD will have a happy end; even on the day of his death he will be blessed.",
+        "VAT_ES": "El temor del Señor es gloria y motivo de orgullo, es gozo y corona de alegría.",
+        "CEI": "Per chi teme il Signore andrà bene alla fine, sarà benedetto nel giorno della sua morte."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "φόβος Κυρίου τέρψει καρδίαν, καὶ δώσει εὐφροσύνην καὶ χαρὰν καὶ μακροημέρευσιν.",
+        "VUL": "Timor Domini delectabit cor,/ et dabit lætitiam, et gaudium, et longitudinem dierum./",
+        "SYN": "Страх Господень усладит сердце и даст веселие и радость и долгоденствие.",
+        "NEO": "La crainte du Seigneur réjouit le cœur ; elle donne gaieté, joie et longue vie.",
+        "NAB": "The beginning of wisdom is fear of the LORD, which is formed with the faithful in the womb.",
+        "VAT_ES": "El temor del Señor deleita el corazón, da gozo, alegría y larga vida.",
+        "CEI": "Principio della sapienza è temere il Signore; essa fu creata con i fedeli nel seno materno."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "τῷ φοβουμένῳ τὸν κύριον εὖ ἔσται ἐπ’ ἐσχάτων, καὶ ἐν ἡμέρᾳ τελευτῆς αὐτοῦ εὑρήσει χάριν.",
+        "VUL": "Timenti Dominum bene erit in extremis,/ et in die defunctionis suæ benedicetur./",
+        "SYN": "Боящемуся Господа благо будет напоследок, и в день смерти своей он получит благословение. Страх Господень - дар от Господа и поставляет на стезях любви.",
+        "NEO": "Celui qui craint le Seigneur s’en trouvera bien à la fin, et il trouvera grâce au jour de sa mort. [L’amour de Dieu est une glorieuse sagesse ; à ceux à qui il se montre, Dieu communique la sagesse, pour qu’ils le puissent contempler.]",
+        "NAB": "With devoted men was she created from of old, and with their children her beneficence abides.",
+        "VAT_ES": "Todo terminará bien para el que teme al Señor, él será bendecido en el día de su muerte.",
+        "CEI": "Tra gli uomini essa ha posto il nido, fondamento perenne; resterà fedelmente con i loro discendenti."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "ἀρχὴ σοφίας φοβεῖσθαι τὸν θεόν, καὶ μετὰ πιστῶν ἐν μήτρᾳ συνεκτίσθη αὐτοῖς·",
+        "VUL": "Dilectio Dei honorabilis sapientia :/",
+        "SYN": "Любовь к Господу - славная премудрость, и кому благоволит Он, разделяет ее по Своему усмотрению.",
+        "NEO": "Le commencement de la sagesse est de craindre Dieu ; elle est formée avec les fidèles dans le sein de leur mère.",
+        "NAB": "Fullness of wisdom is fear of the LORD; she inebriates men with her fruits.",
+        "VAT_ES": "El principio de la sabiduría es el temor del Señor: ella es creada junto con los fieles en el seno materno.",
+        "CEI": "Pienezza della sapienza è temere il Signore; essa inebria di frutti i propri devoti."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "καὶ μετὰ ἀνθρώπων θεμέλιον αἰῶνος ἐνόσσευσεν, καὶ μετὰ τοῦ σπέρματος αὐτῶν ἐμπιστευθήσεται.",
+        "VUL": "quibus autem apparuerit in visu diligunt eam in visione,/ et in agnitione magnalium suorum./",
+        "SYN": "Начало премудрости - бояться Бога, и с верными она образуется вместе во чреве. Среди людей она утвердила себе вечное основание и семени их вверится.",
+        "NEO": "Elle s’est préparé chez les hommes une éternelle habitation ; elle demeurera fidèlement avec leur race.",
+        "NAB": "Her entire house she fills with choice foods, her granaries with her harvest.",
+        "VAT_ES": "Anidó entre los hombres para siempre y permanecerá fielmente con su descendencia.",
+        "CEI": "Tutta la loro casa riempirà di cose desiderabili, i magazzini dei suoi frutti."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "πλησμονὴ σοφίας φοβεῖσθαι τὸν κύριον, καὶ μεθύσκει αὐτοὺς ἀπὸ τῶν καρπῶν αὐτῆς·",
+        "VUL": "Initium sapientiæ timor Domini :/ et cum fidelibus in vulva concreatus est :/ cum electis feminis graditur,/ et cum justis et fidelibus agnoscitur./",
+        "SYN": "Полнота премудрости - бояться Господа; она напояет их от плодов своих:",
+        "NEO": "La plénitude de la sagesse est de craindre le Seigneur ; elle rassasie de ses fruits ceux qui la possèdent.",
+        "NAB": "Wisdom's garland is fear of the LORD, with blossoms of peace and perfect health.",
+        "VAT_ES": "La plenitud de la sabiduría es el temor del Señor y ella los embriaga con sus frutos:",
+        "CEI": "Corona della sapienza è il timore del Signore; fa fiorire la pace e la salute."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "πάντα τὸν οἶκον αὐτῆς ἐμπλήσει ἐπιθυμημάτων, καὶ τὰ ἀποδοχεῖα ἀπὸ τῶν γενημάτων αὐτῆς.",
+        "VUL": "Timor Domini scientiæ religiositas :/",
+        "SYN": "весь дом их она наполнит всем, чего желают, и кладовые их - произведениями своими.",
+        "NEO": "Elle remplit toute sa maison de choses désirables, et ses greniers de ses produits.",
+        "NAB": "Knowledge and full understanding she showers down; she heightens the glory of those who possess her.",
+        "VAT_ES": "les colma la casa de bienes preciosos y con sus productos llena sus graneros.",
+        "CEI": "Dio ha visto e misurato la sapienza; ha fatto piovere la scienza e il lume dell'intelligenza; ha esaltato la gloria di quanti la possiedono."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "στέφανος σοφίας φόβος Κυρίου, ἀναθάλλων εἰρήνην καὶ ὑγείαν ἰάσεως.",
+        "VUL": "religiositas custodiet et justificabit cor ;/ jucunditatem atque gaudium dabit./",
+        "SYN": "Венец премудрости - страх Господень, произращающий мир и невредимое здравие; но то и другое - дары Бога, Который распространяет славу любящих Его.",
+        "NEO": "La couronne de la sagesse, c’est la crainte du Seigneur ; elle fait fleurir la paix et les fruits de salut.",
+        "NAB": "The root of wisdom is fear of the LORD; her branches are length of days.",
+        "VAT_ES": "La corona de la sabiduría es el temor del Señor: ella hace florecer el bienestar y la buena salud.",
+        "CEI": "Radice della sapienza è temere il Signore; i suoi rami sono lunga vita."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "καὶ εἶδεν καὶ ἐξηρίθμησεν αὐτήν, ἐπιστήμην καὶ γνῶσιν συνέσεως ἐξώμβρησεν, καὶ δόξαν κρατούντων αὐτῆς ἀνύψωσεν.",
+        "VUL": "Timenti Dominum bene erit,/ et in diebus consummationis illius benedicetur./",
+        "SYN": "Он видел ее и измерил, пролил как дождь ведение и разумное знание и возвысил славу обладающих ею.",
+        "NEO": "Le Seigneur l’a vue et l’a manifestée ; [et toutes deux sont des dons de Dieu.] Il fait pleuvoir à flots la science et la lumière de l’intelligence, il exalte la gloire de ceux qui la possèdent.",
+        "NAB": "One cannot justify unjust anger; anger plunges a man to his downfall.",
+        "VAT_ES": "El Señor la vio y la midió, hizo llover la ciencia y el conocimiento, y exaltó la gloria de los que la poseen.",
+        "CEI": "La collera ingiusta non si potrà giustificare, poiché il traboccare della sua passione sarà la sua rovina."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ῥίζα σοφίας φοβεῖσθαι τὸν κύριον, καὶ οἱ κλάδοι αὐτῆς μακροημέρευσις.",
+        "VUL": "Plenitudo sapientiæ est timere Deum,/ et plenitudo a fructibus illius./",
+        "SYN": "Корень премудрости - бояться Господа, а ветви ее - долгоденствие.",
+        "NEO": "La racine de la sagesse, c’est de craindre le Seigneur, et ses rameaux sont une longue vie.",
+        "NAB": "A patient man need stand firm but for a time, and then contentment comes back to him.",
+        "VAT_ES": "La raíz de la sabiduría es el temor del Señor y sus ramas son una larga vida.",
+        "CEI": "Il paziente sopporterà per qualche tempo; alla fine sgorgherà la sua gioia;"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "VUL": "Omnem domum illius implebit a generationibus,/ et receptacula a thesauris illius./",
+        "SYN": "Страх Господень отгоняет грехи; не имеющий же страха не может оправдаться.",
+        "NEO": "[La crainte du Seigneur bannit le péché, et celui qui s’y attache détourne la colère.]",
+        "NAB": "For a while he holds back his words, then the lips of many herald his wisdom.",
+        "VAT_ES": "El temor del Señor aleja los pecados: el que persevera en él aparta la ira divina.",
+        "CEI": "per qualche tempo terrà nascoste le parole e le labbra di molti celebreranno la sua intelligenza."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "Οὐ δυνήσεται θυμὸς ἄδικος δικαιωθῆναι· ἡ γὰρ ῥοπὴ τοῦ θυμοῦ αὐτοῦ πτῶσις αὐτῷ.",
+        "VUL": "Corona sapientiæ timor Domini,/ replens pacem et salutis fructum :/",
+        "SYN": "Не может быть оправдан несправедливый гнев, ибо самое движение гнева есть падение для человека.",
+        "NEO": "L’homme injuste et emporté ne saurait être justifié, car la fougue de sa colère amène sa ruine.",
+        "NAB": "Among wisdom's treasures is the paragon of prudence; but fear of the LORD is an abomination to the sinner.",
+        "VAT_ES": "Un arrebato indebido no puede justificarse, porque el ímpetu de la pasión lleva a la propia ruina.",
+        "CEI": "Fra i tesori della sapienza sono le massime istruttive, ma per il peccatore la pietà è un abominio."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "ἕως καιροῦ ἀνθέξεται μακρόθυμος, καὶ ὕστερον αὐτῷ ἀναδώσει εὐφροσύνη·",
+        "VUL": "et vidit, et dinumeravit eam :/ utraque autem sunt dona Dei./",
+        "SYN": "Терпеливый до времени удержится и после вознаграждается веселием.",
+        "NEO": "L’homme patient attend jusqu’au temps voulu, et ensuite la joie lui est rendue.",
+        "NAB": "If you desire wisdom, keep the commandments, and the LORD will bestow her upon you;",
+        "VAT_ES": "El hombre paciente soporta hasta el momento oportuno, pero al fin se llenará de gozo:",
+        "CEI": "Se desideri la sapienza, osserva i comandamenti; allora il Signore te la concederà."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "ἕως καιροῦ κρύψει τοὺς λόγους αὐτοῦ, καὶ χείλη πιστῶν ἐκδιηγήσεται σύνεσιν αὐτοῦ.",
+        "VUL": "Scientiam et intellectum prudentiæ sapientia compartietur,/ et gloriam tenentium se exaltat./",
+        "SYN": "До времени он скроет слова свои, и уста верных расскажут о благоразумии его.",
+        "NEO": "Il cache jusqu’au temps voulu ses paroles, et les lèvres des fidèles raconteront sa prudence.",
+        "NAB": "For fear of the LORD is wisdom and culture; loyal humility is his delight.",
+        "VAT_ES": "él reserva sus palabras hasta el momento oportuno, y los sabios de muchos proclamarán su inteligencia.",
+        "CEI": "Il timore del Signore è sapienza e istruzione, si compiace della fiducia e della mansuetudine."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "ἐν θησαυροῖς σοφίας παραβολὴ ἐπιστήμης, βδέλυγμα δὲ ἁμαρτωλῷ θεοσέβεια.",
+        "VUL": "Radix sapientiæ est timere Dominum,/ et rami illius longævi./",
+        "SYN": "В сокровищницах премудрости - притчи разума, грешнику же страх Господень ненавистен.",
+        "NEO": "Les trésors de la sagesse renferment des maximes de prudence, mais la piété envers Dieu est en abomination au pécheur.",
+        "NAB": "Be not faithless to the fear of the LORD, nor approach it with duplicity of heart.",
+        "VAT_ES": "En los tesoros de la sabiduría están los enigmas de la ciencia, pero el pecador aborrece la religiosidad.",
+        "CEI": "Non essere disobbediente al timore del Signore e non avvicinarti ad esso con doppiezza di cuore."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "ἐπιθυμήσας σοφίαν διατήρησον ἐντολάς, καὶ Κύριος χορηγήσει σοι αὐτήν.",
+        "VUL": "In thesauris sapientiæ intellectus et scientiæ religiositas :/ execratio autem peccatoribus sapientia./",
+        "SYN": "Если желаешь премудрости, соблюдай заповеди, и Господь подаст ее тебе,",
+        "NEO": "Désires-tu la sagesse ? garde les commandements, et le Seigneur te l’accordera.",
+        "NAB": "Play not the hypocrite before men; over your lips keep watch.",
+        "VAT_ES": "Si deseas la sabiduría, observa los mandamientos, y el Señor te la dará abundantemente.",
+        "CEI": "Non essere finto davanti agli uomini e controlla le tue parole."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "σοφία γὰρ καὶ παιδεία φόβος Κυρίου, καὶ ἡ εὐδοκία αὐτοῦ πίστις καὶ πρᾳότης.",
+        "VUL": "Timor Domini expellit peccatum :/",
+        "SYN": "ибо премудрость и знание есть страх пред Господом, и благоугождение Ему - вера и кротость.",
+        "NEO": "Car la sagesse et l’instruction, c’est la crainte du Seigneur, et ce qui lui plaît, c’est la fidélité et la mansuétude.",
+        "NAB": "Exalt not yourself lest you fall and bring upon you dishonor;",
+        "VAT_ES": "Porque el temor del Señor es sabiduría e instrucción: a él le agradan la fidelidad y la mansedumbre.",
+        "CEI": "Non esaltarti per non cadere e per non attirarti il disonore;"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "μὴ ἀπειθήσῃς φόβῳ Κυρίου, καὶ μὴ προσέλθῃς αὐτῷ ἐν καρδίᾳ δισσῇ.",
+        "VUL": "nam qui sine timore est non poterit justificari :/ iracundia enim animositatis illius subversio illius est./",
+        "SYN": "Не будь недоверчивым к страху пред Господом и не приступай к Нему с раздвоенным сердцем.",
+        "NEO": "Ne te refuse pas à la crainte du Seigneur, et ne t’approche pas de lui avec un cœur double.",
+        "NAB": "For then the LORD will reveal your secrets and publicly cast you down,",
+        "VAT_ES": "No seas reacio al temor del Señor ni te acerques a él con doblez de corazón.",
+        "CEI": "il Signore svelerà i tuoi segreti e ti umilierà davanti all'assemblea,"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "μὴ ὑποκριθῇς ἐν στόμασιν ἀνθρώπων, καὶ ἐν τοῖς χείλεσίν σου πρόσεχε.",
+        "VUL": "Usque in tempus sustinebit patiens,/ et postea redditio jucunditatis./",
+        "SYN": "Не лицемерь пред устами других и будь внимателен к устам твоим.",
+        "NEO": "Ne sois pas hypocrite devant les hommes, et prends garde à tes lèvres.",
+        "NAB": "Because you approached the fear of the LORD with your heart full of guile.",
+        "VAT_ES": "No seas hipócrita delante de los hombres y presta atención a tus palabras.",
+        "CEI": "perché non hai ricercato il timore del Signore e il tuo cuore è pieno di inganno."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "μὴ ἐξύψου σεαυτόν, ἵνα μὴ πέσῃς καὶ ἐπαγάγῃς τῇ ψυχῇ σου ἀτιμίαν, καὶ ἀποκαλύψει Κύριος τὰ κρυπτά σου, καὶ ἐν μέσῳ συναγωγῆς καταβαλεῖ σε, ὅτι οὐ προσῆλθες φόβῳ Κυρίου, καὶ ἡ καρδία σου πλήρης δόλου.",
+        "VUL": "Bonus sensus usque in tempus abscondet verba illius,/ et labia multorum enarrabunt sensum illius./",
+        "SYN": "Не возноси себя, чтобы не упасть и не навлечь бесчестия на душу твою, ибо Господь откроет тайны твои и уничижит тебя среди собрания за то, что ты не приступил искренно к страху Господню, и сердце твое полно лукавства.",
+        "NEO": "Ne t’élève pas toi-même, de peur que tu ne tombes, et que tu n’attires sur toi la confusion. Car le Seigneur révélera ce que tu caches, et te précipitera au milieu de l’assemblée, parce que tu ne t’es pas adonné à la crainte du Seigneur, et que ton cœur est plein de fraude.",
+        "VAT_ES": "No te exaltes a ti mismo, no sea que caigas y atraigas sobre ti el deshonor: el Señor revelará tus secretos y te humillará en medio de la asamblea, por no haberte acercado al temor del Señor y porque tu corazón está lleno de falsedad."
+      }
+    }
+  }
+}

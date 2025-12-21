@@ -1,0 +1,137 @@
+{
+  "_schema_version": "2.0",
+  "_description": "Translation and versification metadata for the multilingual Bible",
+  
+  "versification_systems": {
+    "MT": {
+      "name": "Masoretic Text",
+      "tradition": "Hebrew/Protestant",
+      "description": "Standard Hebrew Bible numbering, used by most Protestant translations"
+    },
+    "VUL": {
+      "name": "Vulgate",
+      "tradition": "Catholic Latin",
+      "description": "Latin Vulgate numbering, traditional Catholic standard"
+    },
+    "LXX": {
+      "name": "Septuagint",
+      "tradition": "Greek Orthodox",
+      "description": "Greek Old Testament numbering, used by Orthodox churches"
+    }
+  },
+  
+  "translations": {
+    "WLC": {
+      "name": "Westminster Leningrad Codex",
+      "language": "hebrew",
+      "language_name": "Hebrew",
+      "versification": "MT",
+      "direction": "rtl",
+      "testament": "OT",
+      "description": "Digital version of the Leningrad Codex"
+    },
+    "VUL": {
+      "name": "Clementine Vulgate",
+      "language": "latin",
+      "language_name": "Latin",
+      "versification": "VUL",
+      "direction": "ltr",
+      "testament": "both",
+      "description": "Official Latin Bible of the Catholic Church (1592)"
+    },
+    "LXX": {
+      "name": "Septuagint",
+      "language": "greek",
+      "language_name": "Greek",
+      "versification": "LXX",
+      "direction": "ltr",
+      "testament": "OT",
+      "description": "Greek translation of the Hebrew Bible (3rd-1st c. BCE)"
+    },
+    "BYZ": {
+      "name": "Byzantine Textform",
+      "language": "greek",
+      "language_name": "Greek",
+      "versification": "MT",
+      "direction": "ltr",
+      "testament": "NT",
+      "description": "Majority Text of the Greek New Testament"
+    },
+    "NAB": {
+      "name": "New American Bible",
+      "language": "english",
+      "language_name": "English",
+      "versification": "MT",
+      "direction": "ltr",
+      "testament": "both",
+      "approved_by": "USCCB",
+      "description": "Modern Catholic English translation (uses Hebrew numbering)"
+    },
+    "DRA": {
+      "name": "Douay-Rheims",
+      "language": "english",
+      "language_name": "English",
+      "versification": "VUL",
+      "direction": "ltr",
+      "testament": "both",
+      "description": "Traditional Catholic English translation (uses Vulgate numbering)"
+    },
+    "SYN": {
+      "name": "Russian Synodal",
+      "language": "russian",
+      "language_name": "Russian",
+      "versification": "LXX",
+      "direction": "ltr",
+      "testament": "both",
+      "description": "Russian Orthodox Synodal translation (1876)"
+    },
+    "NEO": {
+      "name": "Bible Crampon / Néo-Crampon",
+      "language": "french",
+      "language_name": "French",
+      "versification": "VUL",
+      "direction": "ltr",
+      "testament": "both",
+      "description": "French Catholic translation"
+    },
+    "CEI": {
+      "name": "CEI (Conferenza Episcopale Italiana)",
+      "language": "italian",
+      "language_name": "Italian",
+      "versification": "VUL",
+      "direction": "ltr",
+      "testament": "both",
+      "description": "Official Italian Catholic translation"
+    },
+    "VAT_ES": {
+      "name": "Vatican Spanish",
+      "language": "spanish",
+      "language_name": "Spanish",
+      "versification": "VUL",
+      "direction": "ltr",
+      "testament": "both",
+      "description": "Spanish translation from Vatican sources"
+    },
+    "POR": {
+      "name": "Portuguese Catholic",
+      "language": "portuguese",
+      "language_name": "Portuguese",
+      "versification": "VUL",
+      "direction": "ltr",
+      "testament": "both",
+      "description": "Portuguese Catholic translation (pending)"
+    }
+  },
+  
+  "language_display_order": [
+    "latin",
+    "greek", 
+    "hebrew",
+    "english",
+    "french",
+    "spanish",
+    "italian",
+    "portuguese",
+    "russian"
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_SAM_006",
+  "book_key": "I_SAM",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֧י אֲרוֹן יְהוָ֛ה בִּ/שְׂדֵ֥ה פְלִשְׁתִּ֖ים שִׁבְעָ֥ה חֳדָשִֽׁים׃",
+        "LXX": "Καὶ ἦν ἡ κιβωτὸς ἐν ἀγρῷ τῶν ἀλλοφύλων ἑπτὰ μῆνας, καὶ ἐξέζεσεν ἡ γῆ αὐτῶν μύας.",
+        "VUL": "Fuit ergo arca Domini in regione Philisthinorum septem mensibus.",
+        "SYN": "И пробыл ковчег Господень в области Филистимской семь месяцев, [и наполнилась земля та мышами].",
+        "NEO": "L’arche de \\+w Yahweh|strong=\"H3068\"\\+w** fut sept mois dans le pays des Philistins.",
+        "NAB": "The ark of the LORD had been in the land of the Philistines seven months",
+        "VAT_ES": "El arca del Señor permaneció siete meses en territorio filisteo.",
+        "CEI": "Rimase l'arca del Signore nel territorio dei Filistei sette mesi."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרְא֣וּ פְלִשְׁתִּ֗ים לַ/כֹּהֲנִ֤ים וְ/לַ/קֹּֽסְמִים֙ לֵ/אמֹ֔ר מַֽה נַּעֲשֶׂ֖ה לַ/אֲר֣וֹן יְהוָ֑ה הוֹדִעֻ֕/נוּ בַּ/מֶּ֖ה נְשַׁלְּחֶ֥/נּוּ לִ/מְקוֹמֽ/וֹ׃",
+        "LXX": "καὶ καλοῦσιν ἀλλόφυλοι τοὺς ἱερεῖς καὶ τοὺς μάντεις καὶ τοὺς ἐπαοιδοὺς αὐτῶν λέγοντες Τί ποιήσωμεν κιβωτῷ Κυρίου; γνωρίσατε ἡμῖν ἐν τίνι ἀποστελοῦμεν αὐτὴν εἰς τὸν τόπον αὐτῆς.",
+        "VUL": "Et vocaverunt Philisthiim sacerdotes et divinos, dicentes : Quid faciemus de arca Domini ? indicate nobis quomodo remittamus eam in locum suum. Qui dixerunt :",
+        "SYN": "И призвали Филистимляне жрецов и прорицателей [и заклинателей] и сказали: что нам делать с ковчегом Господним? научите нас, как нам отпустить его в свое место.",
+        "NEO": "Et les Philistins appelèrent les prêtres et les devins et leur dirent : « Que ferons-nous de l’arche de \\+w Yahweh|strong=\"H3068\"\\+w** ? Faites-nous connaître comment nous devons la renvoyer en son lieu. » Ils répondirent :",
+        "NAB": "when they summoned priests and fortune-tellers to ask, \"What shall we do with the ark of the LORD? Tell us what we should send back with it.\"",
+        "VAT_ES": "Luego los filisteos convocaron a los sacerdotes y adivinos, y les preguntaron: «&iquest;Qué haremos con el Arca del Señor? Indíquennos cómo podemos enviarla al lugar donde estaba:.",
+        "CEI": "Poi i Filistei convocarono i sacerdoti e gli indovini e dissero: \"Che dobbiamo fare dell'arca del Signore? Indicateci il modo di rimandarla alla sua sede\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֗וּ אִֽם מְשַׁלְּחִ֞ים אֶת אֲר֨וֹן אֱלֹהֵ֤י יִשְׂרָאֵל֙ אַל תְּשַׁלְּח֤וּ אֹת/וֹ֙ רֵיקָ֔ם כִּֽי הָשֵׁ֥ב תָּשִׁ֛יבוּ ל֖/וֹ אָשָׁ֑ם אָ֤ז תֵּרָֽפְאוּ֙ וְ/נוֹדַ֣ע לָ/כֶ֔ם לָ֛/מָּה לֹא תָס֥וּר יָד֖/וֹ מִ/כֶּֽם׃",
+        "LXX": "καὶ εἶπαν Εἰ ἐξαποστέλλετε ὑμεῖς τὴν κιβωτὸν διαθήκης θεοῦ Κυρίου Ἰσραήλ, μὴ δὴ ἐξαποστείλητε αὐτὴν κενήν, ἀλλὰ ἀποδιδόντες ἀπόδοτε αὐτῇ τῆς βασάνου, καὶ τότε ἰαθήσεσθε, καὶ ἐξιλασθήσεται ὑμῖν· μὴ οὐκ ἀποστῇ ἡ χεὶρ αὐτοῦ ἀφ’ ὑμῶν;",
+        "VUL": "Si remittitis arcam Dei Israël, nolite dimittere eam vacuam, sed quod debetis, reddite ei pro peccato, et tunc curabimini : et scietis quare non recedat manus ejus a vobis.",
+        "SYN": "Те сказали: если вы хотите отпустить ковчег [завета Господа] Бога Израилева, то не отпускайте его ни с чем, но принесите Ему жертву повинности; тогда исцелитесь и узнаете, за что не отступает от вас рука Его.",
+        "NEO": "« Si vous renvoyez l’arche du Dieu d’Israël, ne la renvoyez pas à vide, mais ne manquez pas de lui faire une offrande de réparation ; vous guérirez alors et vous saurez pourquoi sa main ne s’est pas retirée de vous. »",
+        "NAB": "They replied: \"If you intend to send away the ark of the God of Israel, you must not send it alone, but must, by all means, make amends to him through a guilt offering. Then you will be healed, and will learn why he continues to afflict you.\"",
+        "VAT_ES": "Ellos respondieron: «Si devuelven el Arca del Dios de Israel, no la envíen sin nada, sino que deberán ofrecerle una reparación. Si así logran curarse, sabrán por qué su mano no se apartaba de ustedes».",
+        "CEI": "Risposero: \"Se intendete rimandare l'arca del Dio d'Israele, non rimandatela vuota, ma pagate un tributo in ammenda della vostra colpa. Allora guarirete e vi sarà noto perché non si è ritirata da voi la sua mano\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֗וּ מָ֣ה הָ/אָשָׁם֮ אֲשֶׁ֣ר נָשִׁ֣יב ל/וֹ֒ וַ/יֹּאמְר֗וּ מִסְפַּר֙ סַרְנֵ֣י פְלִשְׁתִּ֔ים חֲמִשָּׁה֙ עפלי טְחֹרֵ֣י זָהָ֔ב וַ/חֲמִשָּׁ֖ה עַכְבְּרֵ֣י זָהָ֑ב כִּֽי מַגֵּפָ֥ה אַחַ֛ת לְ/כֻלָּ֖/ם וּ/לְ/סַרְנֵי/כֶֽם׃",
+        "LXX": "καὶ λέγουσιν Τί τὸ τῆς βασάνου ἀποδώσομεν αὐτῇ; καὶ εἶπαν Κατ’ ἀριθμὸν τῶν σατραπῶν τῶν ἀλλοφύλων πέντε ἕδρας χρυσᾶς, ὅτι πταῖσμα ἓν ὑμῖν καὶ τοῖς ἄρχουσιν ὑμῶν καὶ τῷ λαῷ·",
+        "VUL": "Qui dixerunt : Quid est quod pro delicto reddere debeamus ei ? Responderuntque illi :",
+        "SYN": "И сказали они: какую жертву повинности должны мы принести Ему? Те сказали: по числу владетелей Филистимских пять наростов золотых и пять мышей золотых; ибо казнь одна на всех вас и на владетелях ваших;",
+        "NEO": "Les Philistins dirent : « Quelle offrande de réparation lui feront-nous ? »",
+        "NAB": "When asked further, \"What guilt offering should be our amends to him?\", they replied: \"Five golden hemorrhoids and five golden mice to correspond to the number of Philistine lords, since the same plague has struck all of you and your lords.",
+        "VAT_ES": "«&iquest;Qué reparación debemos ofrecerle?», preguntaron los filisteos. Ellos respondieron: «Cinco tumores de oro y cinco ratones de oro, uno por cada uno de los príncipes filisteos. Porque la misma plaga la han padecido ustedes y ellos.",
+        "CEI": "Chiesero: \"Quale riparazione dobbiamo pagarle?\". Risposero: \"Secondo il numero dei capi dei Filistei, cinque bubboni d'oro e cinque topi d'oro, perché unico è stato il flagello per tutto il popolo e per i vostri capi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/עֲשִׂיתֶם֩ צַלְמֵ֨י עפלי/כם טְחֹרֵי/כֶ֜ם וְ/צַלְמֵ֣י עַכְבְּרֵי/כֶ֗ם הַ/מַּשְׁחִיתִם֙ אֶת הָ/אָ֔רֶץ וּ/נְתַתֶּ֛ם לֵ/אלֹהֵ֥י יִשְׂרָאֵ֖ל כָּב֑וֹד אוּלַ֗י יָקֵ֤ל אֶת יָד/וֹ֙ מֵֽ/עֲלֵי/כֶ֔ם וּ/מֵ/עַ֥ל אֱלֹהֵי/כֶ֖ם וּ/מֵ/עַ֥ל אַרְצְ/כֶֽם׃",
+        "LXX": "καὶ μῦς χρυσοῦς ὁμοίωμα τῶν μυῶν ὑμῶν τῶν διαφθειρόντων τὴν γῆν. καὶ δώσετε τῷ κυρίῳ δόξαν, ὅπως κουφίσῃ τὴν χεῖρα αὐτοῦ ἀφ’ ὑμῶν καὶ ἀπὸ τῶν θεῶν ὑμῶν καὶ ἀπὸ τῆς γῆς ὑμῶν.",
+        "VUL": "Juxta numerum provinciarum Philisthinorum quinque anos aureos facietis, et quinque mures aureos : quia plaga una fuit omnibus vobis, et satrapis vestris. Facietisque similitudines anorum vestrorum, et similitudines murium, qui demoliti sunt terram : et dabitis Deo Israël gloriam, si forte relevet manum suam a vobis, et a diis vestris, et a terra vestra.",
+        "SYN": "итак сделайте изваяния наростов ваших и изваяния мышей ваших, опустошающих землю, и воздайте славу Богу Израилеву; может быть, Он облегчит руку Свою над вами и над богами вашими и над землею вашею;",
+        "NEO": "Ils répondirent : « Cinq tumeurs d’or et cinq souris d’or, selon le nombre des princes des Philistins, car une même plaie a été sur vous et sur vos princes. Faites donc des figures de vos tumeurs et des figures de vos souris qui ravagent le pays, et donnez ainsi gloire au Dieu d’Israël : peut-être cessera-t-il d’appesantir sa main sur vous, sur vos dieux et sur votre pays.",
+        "NAB": "Therefore, make images of the hemorrhoids and of the mice that are infesting your land and give them as a tribute to the God of Israel. Perhaps then he will cease to afflict you, your gods, and your land.",
+        "VAT_ES": "Hagan unas imágenes de los tumores y de los ratones que devastan el país, y den gloria al Dios de Israel. Tal vez así su mano no pese tanto sobre ustedes, sobre sus dioses y sobre su país.",
+        "CEI": "Fate dunque immagini dei vostri bubboni e immagini dei vostri topi che infestano la terra e datele in omaggio al Dio d'Israele, sperando che sia tolto il peso della sua mano da voi, dal vostro dio e dal vostro paese."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/לָ֤/מָּה תְכַבְּדוּ֙ אֶת לְבַבְ/כֶ֔ם כַּ/אֲשֶׁ֧ר כִּבְּד֛וּ מִצְרַ֥יִם וּ/פַרְעֹ֖ה אֶת לִבָּ֑/ם הֲ/לוֹא֙ כַּ/אֲשֶׁ֣ר הִתְעַלֵּ֣ל בָּ/הֶ֔ם וַֽ/יְשַׁלְּח֖וּ/ם וַ/יֵּלֵֽכוּ׃",
+        "LXX": "καὶ ἵνα τί βαρύνετε τὰς καρδίας ὑμῶν, ὡς ἐβάρυνεν Αἴγυπτος καὶ Φαραὼ τὴν καρδίαν αὐτῶν; οὐχὶ ὅτε ἐνέπαιξεν αὐτοῖς, ἐξαπέστειλαν αὐτοὺς καὶ ἀπῆλθον;",
+        "VUL": "Quare aggravatis corda vestra, sicut aggravavit Ægyptus et Pharao cor suum ? nonne postquam percussus est, tunc dimisit eos, et abierunt ?",
+        "SYN": "и для чего вам ожесточать сердце ваше, как ожесточили сердце свое Египтяне и фараон? вот, когда Господь показал силу Свою над ними, то они отпустили их, и те пошли;",
+        "NEO": "Pourquoi endurciriez-vous votre cœur, comme l’Égypte et Pharaon ont endurci le leur ? N’ont-il pas, lorsqu’il eut exercé ses châtiments sur eux, laissé partir les enfants d’Israël ?",
+        "NAB": "Why should you become stubborn, as the Egyptians and Pharaoh were stubborn? Was it not after he had dealt ruthlessly with them that the Israelites were released and departed?",
+        "VAT_ES": "&iquest;Por qué se van a obstinar como lo hicieron Egipto y el Faraón? &iquest;No tuvieron acaso que dejarlos partir cuando el Señor se ensañó con ellos?",
+        "CEI": "Perché ostinarvi come si sono ostinati gli Egiziani e il faraone? Dopo essere stati colpiti dai flagelli, non li lasciarono forse andare, cosicché essi partirono?"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה קְח֨וּ וַ/עֲשׂ֜וּ עֲגָלָ֤ה חֲדָשָׁה֙ אֶחָ֔ת וּ/שְׁתֵּ֤י פָרוֹת֙ עָל֔וֹת אֲשֶׁ֛ר לֹא עָלָ֥ה עֲלֵי/הֶ֖ם עֹ֑ל וַ/אֲסַרְתֶּ֤ם אֶת הַ/פָּרוֹת֙ בָּ/עֲגָלָ֔ה וַ/הֲשֵׁיבֹתֶ֧ם בְּנֵי/הֶ֛ם מֵ/אַחֲרֵי/הֶ֖ם הַ/בָּֽיְתָ/ה׃",
+        "LXX": "καὶ νῦν λάβετε καὶ ποιήσατε ἅμαξαν καινὴν καὶ δύο βόας πρωτοτοκούσας ἄνευ τῶν τέκνων· καὶ ζεύξατε τὰς βόας ἐν τῇ ἁμάξῃ, καὶ ἀπαγάγετε τὰ τὲκνα ἀπὸ ὄπισθεν αὐτῶν εἰς οἶκον.",
+        "VUL": "Nunc ergo arripite et facite plaustrum novum unum : et duas vaccas ftas, quibus non est impositum jugum, jungite in plaustro, et recludite vitulos earum domi.",
+        "SYN": "итак возьмите, сделайте одну колесницу новую и возьмите двух первородивших коров, на которых не было ярма, и впрягите коров в колесницу, а телят их отведите от них домой;",
+        "NEO": "Maintenant donc faites un chariot neuf, et prenez deux vaches qui allaitent et qui n’aient pas porté le joug ; attelez les vaches au chariot, et ramenez loin d’elles leurs petits à l’étable.",
+        "NAB": "So now set to work and make a new cart. Then take two milch cows that have not borne the yoke; hitch them to the cart, but drive their calves indoors away from them.",
+        "VAT_ES": "Hagan ahora mismo un carro nuevo y tomen dos vacas que estén criando y que no hayan llevado el yugo. Aten las vacas al carro, dejando a sus crías encerradas en el establo.",
+        "CEI": "Dunque fate un carro nuovo, poi prendete due vacche allattanti sulle quali non sia mai stato posto il giogo e attaccate queste vacche al carro, togliendo loro i vitelli e riconducendoli alla stalla."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וּ/לְקַחְתֶּ֞ם אֶת אֲר֣וֹן יְהוָ֗ה וּ/נְתַתֶּ֤ם אֹת/וֹ֙ אֶל הָ֣/עֲגָלָ֔ה וְ/אֵ֣ת כְּלֵ֣י הַ/זָּהָ֗ב אֲשֶׁ֨ר הֲשֵׁבֹתֶ֥ם ל/וֹ֙ אָשָׁ֔ם תָּשִׂ֥ימוּ בָ/אַרְגַּ֖ז מִ/צִּדּ֑/וֹ וְ/שִׁלַּחְתֶּ֥ם אֹת֖/וֹ וְ/הָלָֽךְ׃",
+        "LXX": "καὶ λήμψεσθε τὴν κιβωτὸν καὶ θήσετε αὐτὴν ἐπὶ τὴν ἅμαξαν, καὶ τὰ σκεύη τὰ χρυσᾶ ἀποδώσετε αὐτῇ τῆς βασάνου καὶ οὐ θήσετε ἐν θέματι βερεχθὰν ἐκ μέρους αὐτῆς, καὶ ἐξαποστελεῖτε αὐτὴν καὶ ἀπελάσατε αὐτήν, καὶ ἀπελεύσεσθε.",
+        "VUL": "Tolletisque arcam Domini, et ponetis in plaustro, et vasa aurea quæ exsolvistis ei pro delicto, ponetis in capsellam ad latus ejus : et dimittite eam ut vadat.",
+        "SYN": "и возьмите ковчег Господень, и поставьте его на колесницу, а золотые вещи, которые принесете Ему в жертву повинности, положите в ящик сбоку его; и отпустите его, и пусть пойдет;",
+        "NEO": "Vous prendrez l’arche de \\+w Yahweh|strong=\"H3068\"\\+w** et vous la mettrez sur le chariot ; puis, ayant placé à côté d’elle, dans un coffret, les objets d’or que vous aurez donnés en offrande de réparation, vous la renverrez et elle s’en ira.",
+        "NAB": "You shall next take the ark of the LORD and place it on the cart, putting in a box beside it the golden articles that you are offering, as amends for your guilt. Start it on its way, and let it go.",
+        "VAT_ES": "Luego tomarán el Arca del Señor y la pondrán sobre el carro. Al lado de ella, en un cofre, colocarán los objetos de oro que le ofrecen en reparación. Después, la dejarán partir.",
+        "CEI": "Quindi prendete l'arca del Signore, collocatela sul carro e ponete gli oggetti d'oro che dovete pagarle in riparazione in una cesta appesa di fianco. Poi fatela partire e lasciate che se ne vada."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וּ/רְאִיתֶ֗ם אִם דֶּ֨רֶךְ גְּבוּל֤/וֹ יַֽעֲלֶה֙ בֵּ֣ית שֶׁ֔מֶשׁ ה֚וּא עָ֣שָׂה לָ֔/נוּ אֶת הָ/רָעָ֥ה הַ/גְּדוֹלָ֖ה הַ/זֹּ֑את וְ/אִם לֹ֗א וְ/יָדַ֨עְנוּ֙ כִּ֣י לֹ֤א יָד/וֹ֙ נָ֣גְעָה בָּ֔/נוּ מִקְרֶ֥ה ה֖וּא הָ֥יָה לָֽ/נוּ׃",
+        "LXX": "καὶ ὄψεσθε, εἰ εἰς ὁδὸν ὅριον αὐτῆς πορεύσεται κατὰ Βαιθσάμυς, αὐτὸς πεποίηκεν ἡμῖν τὴν κακίαν ταύτην τὴν μεγάλην· καὶ ἐὰν μή, καὶ γνωσόμεθα ὅτι οὐ χεὶρ αὐτοῦ ἧπται ἡμῶν, ἀλλὰ σύνπτωμα τοῦτο γέγονεν ἡμῖν.",
+        "VUL": "Et aspicietis : et si quidem per viam finium suorum ascenderit contra Bethsames, ipse fecit nobis hoc malum grande : sin autem, minime : sciemus quia nequaquam manus ejus tetigit nos, sed casu accidit.",
+        "SYN": "и смотрите, если он пойдет к пределам своим, к Вефсамису, то он великое сие зло сделал нам; если же нет, то мы будем знать, что не его рука поразила нас, а сделалось это с нами случайно.",
+        "NEO": "Suivez-la du regard : si elle monte par le chemin de sa frontière, vers Beth-Samès, c’est \\+w Yahweh|strong=\"H3068\"\\+w** qui nous a fait ce grand mal ; sinon, nous saurons que ce n’est pas sa main qui nous a frappés, et que cela nous est arrivé par hasard. »",
+        "NAB": "Then watch! If it goes to Beth-shemesh along the route to his own territory, he has brought this great calamity upon us; if not, we will know it was not he who struck us, but that an accident happened to us.\"",
+        "VAT_ES": "Fíjense bien: si ella sube en dirección a su territorio, hacia Bet Semes, quiere decir que el Señor nos ha infligido esta gran calamidad; en caso contrario, sabremos que no fue su mano la que nos golpeó, sino que esto nos ha sucedido por casualidad.",
+        "CEI": "E state a vedere: se salirà a Bet-Sèmes per la via che porta al suo territorio, essa ci ha provocato tutti questi mali così grandi; se no, sapremo che non ci ha colpiti la sua mano, ma per puro caso abbiamo avuto questo incidente\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲשׂ֤וּ הָ/אֲנָשִׁים֙ כֵּ֔ן וַ/יִּקְח֗וּ שְׁתֵּ֤י פָרוֹת֙ עָל֔וֹת וַ/יַּאַסְר֖וּ/ם בָּ/עֲגָלָ֑ה וְ/אֶת בְּנֵי/הֶ֖ם כָּל֥וּ בַ/בָּֽיִת׃",
+        "LXX": "καὶ ἐποίησαν οἱ ἀλλόφυλοι οὕτως, καὶ ἔλαβον δύο βόας πρωτοτοκούσας καὶ ἔζευξαν αὐτὰς ἐν τῇ ἁμάξῃ, καὶ τὰ τέκνα αὐτῶν ἀπεκώλυσαν εἰς οἶκον·",
+        "VUL": "Fecerunt ergo illi hoc modo : et tollentes duas vaccas quæ lactabant vitulos, junxerunt ad plaustrum, vitulosque earum concluserunt domi.",
+        "SYN": "И сделали они так: и взяли двух первородивших коров и впрягли их в колесницу, а телят их удержали дома;",
+        "NEO": "Ces gens firent ainsi ; ayant pris deux vaches qui allaitaient, ils les attelèrent au chariot et ils enfermèrent leurs petits dans l’étable.",
+        "NAB": "They acted upon this advice. Taking two milch cows, they hitched them to the cart but shut up their calves indoors.",
+        "VAT_ES": "Así lo hicieron: tomaron dos vacas que estaban criando y las ataron al carro, pero encerraron a sus crías en el establo.",
+        "CEI": "Quegli uomini fecero in tal modo. Presero due vacche allattanti, le attaccarono al carro e chiusero nella stalla i loro vitelli."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יָּשִׂ֛מוּ אֶת אֲר֥וֹן יְהוָ֖ה אֶל הָ/עֲגָלָ֑ה וְ/אֵ֣ת הָ/אַרְגַּ֗ז וְ/אֵת֙ עַכְבְּרֵ֣י הַ/זָּהָ֔ב וְ/אֵ֖ת צַלְמֵ֥י טְחֹרֵי/הֶֽם׃",
+        "LXX": "καὶ ἔθεντο τὴν κιβωτὸν ἐπὶ τὴν ἅμαξαν, καὶ τὸ θέμα ἐργὰβ καὶ τοὺς μῦς τοὺς χρυσοῦς.",
+        "VUL": "Et posuerunt arcam Dei super plaustrum, et capsellam quæ habebat mures aureos et similitudines anorum.",
+        "SYN": "и поставили ковчег Господа на колесницу и ящик с золотыми мышами и изваяниями наростов.",
+        "NEO": "Ils mirent sur le chariot l’arche de \\+w Yahweh|strong=\"H3068\"\\+w**, et le coffret avec les souris d’or et les figures de leurs tumeurs.",
+        "NAB": "Then they placed the ark of the LORD on the cart, along with the box containing the golden mice and the images of the hemorrhoids.",
+        "VAT_ES": "Luego pusieron sobre el carro el Arca del Señor y el cofre con los ratones de oro y las imágenes de los tumores.",
+        "CEI": "Quindi collocarono l'arca del Signore sul carro con la cesta e i topi d'oro e le immagini dei bubboni."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יִשַּׁ֨רְנָה הַ/פָּר֜וֹת בַּ/דֶּ֗רֶךְ עַל דֶּ֨רֶךְ֙ בֵּ֣ית שֶׁ֔מֶשׁ בִּ/מְסִלָּ֣ה אַחַ֗ת הָלְכ֤וּ הָלֹךְ֙ וְ/גָע֔וֹ וְ/לֹא סָ֖רוּ יָמִ֣ין וּ/שְׂמֹ֑אול וְ/סַרְנֵ֤י פְלִשְׁתִּים֙ הֹלְכִ֣ים אַחֲרֵי/הֶ֔ם עַד גְּב֖וּל בֵּ֥ית שָֽׁמֶשׁ׃",
+        "LXX": "καὶ κατεύθυναν αἱ βόες ἐν τῇ ὁδῷ εἰς ὁδὸν Βαιθσάμυς, ἐν τρίβῳ ἑνὶ ἐπορεύοντο καὶ ἐκοπίων, καὶ οὐ μεθίσταντο δεξιὰ οὐδὲ ἀριστερά· καὶ οἱ σατράπαι τῶν ἀλλοφύλων ἐπορεύοντο ὀπίσω αὐτῆς ἕως ὁρίων Βαιθσάμυς.",
+        "VUL": "Ibant autem in directum vaccæ per viam quæ ducit Bethsames, et itinere uno gradiebantur, pergentes et mugientes : et non declinabant neque ad dextram neque ad sinistram : sed et satrapæ Philisthiim sequebantur usque ad terminos Bethsames.",
+        "SYN": "И пошли коровы прямо на дорогу к Вефсамису; одною дорогою шли, шли и мычали, но не уклонялись ни направо, ни налево; владетели же Филистимские следовали за ними до пределов Вефсамиса.",
+        "NEO": "Les vaches prirent tout droit le chemin de Beth-Samès ; elles suivirent toujours la même route en marchant et en mugissant, sans se détourner ni à droite ni à gauche. Les princes des Philistins allèrent derrière elles jusqu’à la frontière de Beth-Samès.",
+        "NAB": "The cows went straight for the route to Beth-shemesh and continued along this road, mooing as they went, without turning right or left. The Philistine lords followed them as far as the border of Beth-shemesh.",
+        "VAT_ES": "Las vacas se fueron derecho por el camino de Bet Semes; iban muriendo, siempre por el mismo sendero, sin desviarse ni a la derecha ni a la izquierda. Y los príncipes de los filisteos las siguieron hasta la frontera de Bet Semes.",
+        "CEI": "Le vacche andarono diritte per la strada di Bet-Sèmes percorrendo sicure una sola via e muggendo continuamente, ma non piegando né a destra né a sinistra. I capi dei Filistei le seguirono sino al confine con Bet-Sèmes."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וּ/בֵ֣ית שֶׁ֔מֶשׁ קֹצְרִ֥ים קְצִיר חִטִּ֖ים בָּ/עֵ֑מֶק וַ/יִּשְׂא֣וּ אֶת עֵינֵי/הֶ֗ם וַ/יִּרְאוּ֙ אֶת הָ֣/אָר֔וֹן וַֽ/יִּשְׂמְח֖וּ לִ/רְאֽוֹת׃",
+        "LXX": "καὶ οἱ ἐν Βαιθσάμυς ἐθέριζον θερισμὸν πυρῶν ἐν κοιλάδι, καὶ ἦραν ὀφθαλμοὺς αὐτῶν καὶ εἶδον κιβωτὸν Κυρίου, καὶ ηὐφράνθησαν εἰς ἀπάντησιν αὐτῆς.",
+        "VUL": "Porro Bethsamitæ metebant triticum in valle : et elevantes oculos suos, viderunt arcam, et gavisi sunt cum vidissent.",
+        "SYN": "_Жители_ Вефсамиса жали тогда пшеницу в долине, и взглянув увидели ковчег Господень, и обрадовались, что увидели его.",
+        "NEO": "Les gens de Beth-Samès étaient à moissonner le blé dans la vallée. Levant les yeux, ils aperçurent l’arche, et se réjouirent en la voyant.",
+        "NAB": "The people of Beth-shemesh were harvesting the wheat in the valley. When they looked up and spied the ark, they greeted it with rejoicing.",
+        "VAT_ES": "La gente de Bet Semes estaba cosechando el trigo en el valle. Al levantar los ojos, divisaron el Arca y se alegraron de verla.",
+        "CEI": "Gli abitanti di Bet-Sèmes stavano facendo la mietitura del grano nella pianura. Alzando gli occhi, scorsero l'arca ed esultarono a quella vista."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/הָ/עֲגָלָ֡ה בָּ֠אָה אֶל שְׂדֵ֨ה יְהוֹשֻׁ֤עַ בֵּֽית הַשִּׁמְשִׁי֙ וַ/תַּעֲמֹ֣ד שָׁ֔ם וְ/שָׁ֖ם אֶ֣בֶן גְּדוֹלָ֑ה וַֽ/יְבַקְּעוּ֙ אֶת עֲצֵ֣י הָ/עֲגָלָ֔ה וְ/אֶת הַ֨/פָּר֔וֹת הֶעֱל֥וּ עֹלָ֖ה לַ/יהוָֽה׃",
+        "LXX": "καὶ ἡ ἅμαξα εἰσῆλθεν εἰς ἀγρὸν Ὡσῆε τὸν ἐν Βαιθσάμυς, καὶ ἔστησαν ἐκεῖ παρ’ αὐτῇ λίθον μέγαν· καὶ σχίζουσιν τὰ ξύλα τῆς ἁμάξης, καὶ τὰς βόας ἀνήνεγκαν εἰς ὁλοκαύτωσιν τῷ κυρίῳ.",
+        "VUL": "Et plaustrum venit in agrum Josue Bethsamitæ, et stetit ibi. Erat autem ibi lapis magnus, et conciderunt ligna plaustri, vaccasque imposuerunt super ea holocaustum Domino.",
+        "SYN": "Колесница же пришла на поле Иисуса Вефсамитянина и остановилась там; и был тут большой камень, и раскололи колесницу на дрова, а коров принесли во всесожжение Господу.",
+        "NEO": "Le chariot arriva dans le champ de Josué le Bethsamite et s’y arrêta. Il y avait là une grosse pierre. On fendit le bois du chariot et l’on offrit les vaches en holocauste à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The cart came to the field of Joshua the Beth-shemite and stopped there. At a large stone in the field, the wood of the cart was split up and the cows were offered as a holocaust to the LORD.",
+        "VAT_ES": "El carro llegó al campo de Josué de Bet Semes y se detuvo. Allí había una gran piedra. Entonces hicieron astillas la madera del carro y ofrecieron las vacas en holocausto al Señor.",
+        "CEI": "Il carro giunse al campo di Giosuè di Bet-Sèmes e si fermò là dove era una grossa pietra. Allora fecero a pezzi i legni del carro e offrirono le vacche in olocausto al Signore."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/הַ/לְוִיִּ֞ם הוֹרִ֣ידוּ אֶת אֲר֣וֹן יְהוָ֗ה וְ/אֶת הָ/אַרְגַּ֤ז אֲשֶׁר אִתּ/וֹ֙ אֲשֶׁר בּ֣/וֹ כְלֵֽי זָהָ֔ב וַ/יָּשִׂ֖מוּ אֶל הָ/אֶ֣בֶן הַ/גְּדוֹלָ֑ה וְ/אַנְשֵׁ֣י בֵֽית שֶׁ֗מֶשׁ הֶעֱל֨וּ עֹל֜וֹת וַֽ/יִּזְבְּח֧וּ זְבָחִ֛ים בַּ/יּ֥וֹם הַ/ה֖וּא לַֽ/יהוָֽה׃",
+        "LXX": "καὶ οἱ Λευεῖται ἀνήνεγκαν τὴν κιβωτὸν τοῦ κυρίου καὶ τὸ θέμα ἐργὰβ μετ’ αὐτῆς καὶ τὰ ἐπ’ αὐτῆς σκεύη τὰ χρυσᾶ, καὶ ἔθεντο ἐπὶ τοῦ λίθου τοῦ μεγάλου· καὶ οἱ ἄνδρες Βαιθσάμυς ἀνήνεγκαν ὁλοκαυτώσεις καὶ θυσίας ἐν τῇ ἡμέρᾳ ἐκείνῃ τῷ κυρίῳ.",
+        "VUL": "Levitæ autem deposuerunt arcam Dei, et capsellam quæ erat juxta eam, in qua erant vasa aurea, et posuerunt super lapidem grandem. Viri autem Bethsamitæ obtulerunt holocausta, et immolaverunt victimas in die illa Domino.",
+        "SYN": "Левиты сняли ковчег Господа и ящик, бывший при нем, в котором _были_ золотые вещи, и поставили на большом том камне; жители же Вефсамиса принесли в тот день всесожжения и закололи жертвы Господу.",
+        "NEO": "Les Lévites, après avoir descendu l’arche de \\+w Yahweh|strong=\"H3068\"\\+w**, et le coffret qui était auprès, renfermant les objets d’or, posèrent le tout sur la grosse pierre. Les gens de Beth-Samès offrirent en ce jour-là des holocaustes et des sacrifices à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The Levites, meanwhile, had taken down the ark of God and the box beside it, in which the golden articles were, and had placed them on the great stone. The men of Beth-shemesh also offered other holocausts and sacrifices to the LORD that day.",
+        "VAT_ES": "Mientras tanto, los levitas habían bajado el Arca del Señor y el cofre que estaba con ella, donde se encontraban los objetos de oro, y los depositaron sobre la piedra grande. La gente de Bet Semes ofreció aquel día holocaustos y sacrificios al Señor.",
+        "CEI": "I leviti avevano tolto l'arca del Signore e la cesta che vi era appesa, nella quale stavano gli oggetti d'oro, e l'avevano posta sulla grossa pietra. In quel giorno gli uomini di Bet-Sèmes offrirono olocausti e immolarono vittime al Signore."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/חֲמִשָּׁ֥ה סַרְנֵֽי פְלִשְׁתִּ֖ים רָא֑וּ וַ/יָּשֻׁ֥בוּ עֶקְר֖וֹן בַּ/יּ֥וֹם הַ/הֽוּא׃",
+        "LXX": "καὶ οἱ πέντε σατράπαι τῶν ἀλλοφύλων ἑώρων, καὶ ἀνέστρεψαν εἰς Ἀσκάλωνα τῇ ἡμέρᾳ ἐκείνῃ.",
+        "VUL": "Et quinque satrapæ Philisthinorum viderunt, et reversi sunt in Accaron in die illa.",
+        "SYN": "И пять владетелей Филистимских видели _это_ и возвратились в тот день в Аккарон.",
+        "NEO": "Les cinq princes des Philistins, ayant vu cela, retournèrent le même jour à Accaron.",
+        "NAB": "After witnessing this, the five Philistine lords returned to Ekron the same day.",
+        "VAT_ES": "Al ver esto, los príncipes de los filisteos regresaron a Ecrón aquel mismo día.",
+        "CEI": "I cinque capi dei Filistei stettero ad osservare, poi tornarono il giorno stesso ad Ekron."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨לֶּה֙ טְחֹרֵ֣י הַ/זָּהָ֔ב אֲשֶׁ֨ר הֵשִׁ֧יבוּ פְלִשְׁתִּ֛ים אָשָׁ֖ם לַֽ/יהוָ֑ה לְ/אַשְׁדּ֨וֹד אֶחָ֜ד לְ/עַזָּ֤ה אֶחָד֙ לְ/אַשְׁקְל֣וֹן אֶחָ֔ד לְ/גַ֥ת אֶחָ֖ד לְ/עֶקְר֥וֹן אֶחָֽד׃",
+        "LXX": "καὶ αὗται αἱ ἕδραι αἱ χρυσαῖ ἃς ἀπέδωκαν οἱ ἀλλόφυλοι τῆς βασάνου τῷ κυρίῳ· τῆς Ἀζώτου μίαν, τῆς Γάζης μίαν, τῆς Ἀσκάλωνος μίαν, τῆς Γὲθ μίαν, τῆς Ἀκκαρὼν μίαν.",
+        "VUL": "Hi sunt autem ani aurei quos reddiderunt Philisthiim pro delicto, Domino : Azotus unum, Gaza unum, Ascalon unum, Geth unum, Accaron unum :",
+        "SYN": "Золотые эти наросты, которые принесли Филистимляне в жертву повинности Господу, были: один за Азот, один за Газу, один за Аскалон, один за Геф, один за Аккарон;",
+        "NEO": "Voici les tumeurs d’or que les Philistins donnèrent à \\+w Yahweh|strong=\"H3068\"\\+w** en offrande de réparation : une pour Azot, une pour Gaza, une pour Ascalon, une pour Geth, une pour Accaron.",
+        "NAB": "The golden hemorrhoids the Philistines sent back as a guilt offering to the LORD were as follows: one for Ashdod, one for Gaza, one for Ashkelon, one for Gath, and one for Ekron.",
+        "VAT_ES": "Los tumores de oro que los filisteos presentaron como reparación al Señor fueron uno por Asdod, uno por Gaza, uno por Ascalón, uno por Gat y uno por Ecrón.",
+        "CEI": "Sono questi i bubboni d'oro che i Filistei pagarono in ammenda al Signore: uno per Asdòd, uno per Gaza, uno per Ascalòn, uno per Gat, uno per Ekron."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/עַכְבְּרֵ֣י הַ/זָּהָ֗ב מִסְפַּ֞ר כָּל עָרֵ֤י פְלִשְׁתִּים֙ לַ/חֲמֵ֣שֶׁת הַ/סְּרָנִ֔ים מֵ/עִ֣יר מִבְצָ֔ר וְ/עַ֖ד כֹּ֣פֶר הַ/פְּרָזִ֑י וְ/עַ֣ד אָבֵ֣ל הַ/גְּדוֹלָ֗ה אֲשֶׁ֨ר הִנִּ֤יחוּ עָלֶ֨י/הָ֙ אֵ֚ת אֲר֣וֹן יְהוָ֔ה עַ֚ד הַ/יּ֣וֹם הַ/זֶּ֔ה בִּ/שְׂדֵ֥ה יְהוֹשֻׁ֖עַ בֵּֽית הַשִּׁמְשִֽׁי׃",
+        "LXX": "καὶ μῦς οἱ χρυσοῖ κατ’ ἀριθμὸν πασῶν πόλεων τῶν ἀλλοφύλων τῶν πέντε σατραπῶν ἐκ πόλεως ἐστερεωμένης καὶ ἕως κώμης τοῦ Φερεζαίου καὶ ἕως λίθου τοῦ μεγάλου, οὗ ἐπέθηκαν ἐπ’ αὐτοῦ τὴν κιβωτὸν διαθήκης Κυρίου, τοῦ ἐν ἀγρῷ Ὡσῆε τοῦ Βαιθσαμυσείτου.",
+        "VUL": "et mures aureos secundum numerum urbium Philisthiim, quinque provinciarum, ab urbe murata usque ad villam quæ erat absque muro, et usque ad Abelmagnum, super quem posuerunt arcam Domini, quæ erat usque in illum diem in agro Josue Bethsamitis.",
+        "SYN": "а золотые мыши _были_ по числу всех городов Филистимских -- пяти владетелей, от городов укрепленных и до открытых сел, до большого камня, на котором поставили ковчег Господа и _который_ _находится_ до сего дня на поле Иисуса Вефсамитянина.",
+        "NEO": "Ils offrirent aussi des souris d’or selon le nombre de toutes les villes des Philistins appartenant aux cinq chefs, tant des villes fortifiées que des villages sans murs : témoin la grosse pierre sur laquelle on déposa l’arche de \\+w Yahweh|strong=\"H3068\"\\+w**, et qui est restée jusqu’à ce jour dans le champ de Josué le Bethsamite.",
+        "NAB": "The golden mice, however, corresponded to the number of all the cities of the Philistines belonging to the five lords, including fortified cities and open villages. The large stone on which the ark of the LORD was placed is still in the field of Joshua the Beth-shemite at the present time.",
+        "VAT_ES": "Y el número de los ratones de oro correspondía al de todas las ciudades de los filisteos, gobernadas por los cinco príncipes, desde las ciudades fortificadas hasta los poblados desguarnecidos. Testigo de esto es la piedra grande sobre la que depositaron el Arca del Señor, y que hasta el día de hoy está en el campo de Josué de Bet Semes.",
+        "CEI": "Invece i topi d'oro erano pari al numero delle città filistee appartenenti ai cinque capi, dalle fortezze sino ai villaggi di campagna. A testimonianza di tutto ciò rimane oggi nel campo di Giosuè a Bet-Sèmes la grossa pietra, sulla quale avevano deposto l'arca del Signore."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יַּ֞ךְ בְּ/אַנְשֵׁ֣י בֵֽית שֶׁ֗מֶשׁ כִּ֤י רָאוּ֙ בַּ/אֲר֣וֹן יְהוָ֔ה וַ/יַּ֤ךְ בָּ/עָם֙ שִׁבְעִ֣ים אִ֔ישׁ חֲמִשִּׁ֥ים אֶ֖לֶף אִ֑ישׁ וַ/יִּֽתְאַבְּל֣וּ הָ/עָ֔ם כִּֽי הִכָּ֧ה יְהוָ֛ה בָּ/עָ֖ם מַכָּ֥ה גְדוֹלָֽה׃",
+        "LXX": "Καὶ οὐκ ἠσμένισαν οἱ υἱοὶ Ἰεχονίου ἐν τοῖς ἀνδράσιν Βαιθσάμυς, ὅτι εἶδαν κιβωτὸν Κυρίου· καὶ ἐπάταξεν ἐν αὐτοῖς ἑβδομήκοντα ἄνδρας καὶ πεντήκοντα χιλιάδας ἀνδρῶν. καὶ ἐπένθησεν ὁ λαός, ὅτι ἐπάταξεν Κύριος ἐν τῷ λαῷ πληγὴν μεγάλην σφόδρα.",
+        "VUL": "Percussit autem de viris Bethsamitibus, eo quod vidissent arcam Domini : et percussit de populo septuaginta viros, et quinquaginta millia plebis. Luxitque populus, eo quod Dominus percussisset plebem plaga magna.",
+        "SYN": "[Не порадовались сыны Иехониины среди мужей Вефсамисских, что видели ковчег Господа]. И поразил Он жителей Вефсамиса за то, что они заглядывали в ковчег Господа, и убил из народа пятьдесят тысяч семьдесят человек; и заплакал народ, ибо поразил Господь народ поражением великим.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** frappa les gens de Beth-Samès, parce qu’ils avaient regardé l’arche de \\+w Yahweh|strong=\"H3068\"\\+w** ; il frappa cinquante mille soixante-dix hommes parmi le peuple. Et le peuple fit un grand deuil de ce que \\+w Yahweh|strong=\"H3068\"\\+w** avait frappé le peuple d’une grande plaie.",
+        "NAB": "The descendants of Jeconiah did not join in the celebration with the inhabitants of Beth-shemesh when they greeted the ark of the LORD, and seventy of them were struck down. The people went into mourning at this great calamity with which the LORD had afflicted them.",
+        "VAT_ES": "El Señor castigó a la gente de Bet Semes, porque habían mirado el Arca del Señor. Como él hirió a setenta hombres, el pueblo estuvo de duelo porque el Señor les había infligido un castigo tan grande.",
+        "CEI": "Ma il Signore percosse gli uomini di Bet-Sèmes, perché avevano guardato l'arca del Signore; colpì nel popolo settanta persone su cinquantamila e il popolo fu in lutto perché il Signore aveva inflitto alla loro gente questo grave castigo."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יֹּֽאמְרוּ֙ אַנְשֵׁ֣י בֵֽית שֶׁ֔מֶשׁ מִ֚י יוּכַ֣ל לַ/עֲמֹ֔ד לִ/פְנֵ֨י יְהוָ֧ה הָ/אֱלֹהִ֛ים הַ/קָּד֖וֹשׁ הַ/זֶּ֑ה וְ/אֶל מִ֖י יַעֲלֶ֥ה מֵ/עָלֵֽי/נוּ׃",
+        "LXX": "καὶ εἶπαν οἱ ἄνδρες οἱ ἐκ Βαιθσάμυς Τίς δυνήσεται διελθεῖν ἐνώπιον τοῦ ἁγίου τούτου; καὶ πρὸς τίνα ἀναβήσηται κιβωτὸς Κυρίου ἀφ’ ἡμῶν;",
+        "VUL": "Et dixerunt viri Bethsamitæ : Quis poterit stare in conspectu Domini Dei sancti hujus ? et ad quem ascendet a nobis ?",
+        "SYN": "И сказали жители Вефсамиса: кто может стоять пред Господом, сим святым Богом? и к кому Он пойдет от нас?",
+        "NEO": "Les gens de Beth-Samès dirent : « Qui peut subsister en la présence de \\+w Yahweh|strong=\"H3068\"\\+w**, ce Dieu saint ? Et vers qui va-t-il monter en s’éloignant de nous ? »",
+        "NAB": "The men of Beth-shemesh asked, \"Who can stand in the presence of this Holy One? To whom shall he go from us?\"",
+        "VAT_ES": "Los hombres de Bet Semes dijeron: «&iquest;Quién podrá resistir en la presencia del Señor, este Dios tan santo? &iquest;A quién enviársela, para que esté lejos de nosotros?».",
+        "CEI": "Gli uomini di Bet-Sèmes allora esclamarono: \"Chi mai potrà stare alla presenza del Signore, questo Dio così santo? La manderemo via da noi; ma da chi?\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַֽ/יִּשְׁלְחוּ֙ מַלְאָכִ֔ים אֶל יוֹשְׁבֵ֥י קִרְיַת יְעָרִ֖ים לֵ/אמֹ֑ר הֵשִׁ֤בוּ פְלִשְׁתִּים֙ אֶת אֲר֣וֹן יְהוָ֔ה רְד֕וּ הַעֲל֥וּ אֹת֖/וֹ אֲלֵי/כֶֽם׃",
+        "LXX": "καὶ ἀποστέλλουσιν ἀγγέλους πρὸς τοὺς κατοικοῦντας Καριαθιαρεὶμ λέγοντες Ἀπεστρόφασιν ἀλλόφυλοι τὴν κιβωτὸν Κυρίου· κατάβητε καὶ ἀναγάγετε αὐτὴν πρὸς ἑαυτούς.",
+        "VUL": "Miseruntque nuntios ad habitatores Cariathiarim, dicentes : Reduxerunt Philisthiim arcam Domini : descendite, et reducite eam ad vos.",
+        "SYN": "И послали послов к жителям Кириаф-Иарима сказать: Филистимляне возвратили ковчег Господа; придите, возьмите его к себе.",
+        "NEO": "Ils envoyèrent des messagers aux habitants de Cariathiarim, pour leur dire : « Les Philistins ont ramené l’arche de \\+w Yahweh|strong=\"H3068\"\\+w** ; descendez et faites-la monter vers vous. »",
+        "NAB": "They then sent messengers to the inhabitants of Kiriath-jearim, saying, \"The Philistines have returned the ark of the LORD; come down and get it.\"",
+        "VAT_ES": "En seguida mandaron unos mensajeros a los habitantes de Quiriat Iearím, para decirles: «Los filisteos han devuelto el Arca del Señor. Bajen y súbanla con ustedes».",
+        "CEI": "Perciò inviarono messaggeri agli abitanti di Kiriat-Iearìm con questa ambasciata: \"I Filistei hanno ricondotto l'arca del Signore. Scendete e portatela presso di voi\"."
+      }
+    }
+  }
+}

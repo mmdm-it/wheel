@@ -1,0 +1,555 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_038",
+  "book_key": "GENE",
+  "sequence": 38,
+  "chapter_in": {
+    "MT": 38,
+    "VUL": 38,
+    "LXX": 38
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ בָּ/עֵ֣ת הַ/הִ֔וא וַ/יֵּ֥רֶד יְהוּדָ֖ה מֵ/אֵ֣ת אֶחָ֑י/ו וַ/יֵּ֛ט עַד אִ֥ישׁ עֲדֻלָּמִ֖י וּ/שְׁמ֥/וֹ חִירָֽה׃",
+        "VUL": "Eodem tempore, descendens Judas a fratribus suis, divertit ad virum Odollamitem, nomine Hiram.",
+        "LXX": "Ἐγένετο δὲ ἐν τῷ καιρῷ ἐκείνῳ κατέβη Ἰούδας ἀπὸ τῶν ἀδελφῶν αὐτοῦ, καὶ ἀφίκετο ἕως πρὸς ἄνθρωπόν τινα Ὀδολλαμίτην ᾧ ὄνομα Εἱρᾶς.",
+        "NAB": "About that time Judah parted from his brothers and pitched his tent near a certain Adullamite named Hirah.",
+        "SYN": "В то время Иуда отошел от братьев своих и поселился близ одного Одолламитянина, которому имя: Хира.",
+        "NEO": "En ce temps-là Juda, s’éloignant de ses frères, descendit et arriva jusqu’auprès d’un homme d’Odollam, nommé Hira.",
+        "VAT_ES": "Por aquel tiempo, Judá se alejó de sus hermanos y entró en amistad con un hombre de Adulam llamado Jirá.",
+        "CEI": "In quel tempo Giuda si separò dai suoi fratelli e si stabilì presso un uomo di Adullàm, di nome Chira."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יַּרְא שָׁ֧ם יְהוּדָ֛ה בַּת אִ֥ישׁ כְּנַעֲנִ֖י וּ/שְׁמ֣/וֹ שׁ֑וּעַ וַ/יִּקָּחֶ֖/הָ וַ/יָּבֹ֥א אֵלֶֽי/הָ׃",
+        "VUL": "Viditque ibi filiam hominis Chananæi, vocabulo Sue : et accepta uxore, ingressus est ad eam.",
+        "LXX": "καὶ ἴδεν ἐκεῖ Ἰούδας θυγατέρα ἀνθρώπου Χαναναίου ᾗ ὄνομα Σαύα· καὶ ἔλαβεν αὐτὴν καὶ εἰσῆλθεν πρὸς αὐτήν.",
+        "NAB": "There he met the daughter of a Canaanite named Shua, married her, and had relations with her.",
+        "SYN": "И увидел там Иуда дочь одного Хананеянина, которому имя: Шуа; и взял ее и вошел к ней.",
+        "NEO": "Là, Juda vit la fille d’un Chananéen, nommé Sué, et il la prit pour femme et alla vers elle.",
+        "VAT_ES": "Allí conoció a la hija de un cananeo llamado Súa, y después de tomarla por esposa, se unió con ella.",
+        "CEI": "Qui Giuda vide la figlia di un Cananeo chiamato Sua, la prese in moglie e si unì a lei."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/תַּ֖הַר וַ/תֵּ֣לֶד בֵּ֑ן וַ/יִּקְרָ֥א אֶת שְׁמ֖/וֹ עֵֽר׃",
+        "VUL": "Quæ concepit, et peperit filium, et vocavit nomen ejus Her.",
+        "LXX": "καὶ συλλαβοῦσα ἔτεκεν υἱόν, καὶ ἐκάλεσεν τὸ ὄνομα αὐτοῦ Ἤρ.",
+        "NAB": "She conceived and bore a son, whom she named Er.",
+        "SYN": "Она зачала и родила сына; и он нарек ему имя: Ир.",
+        "NEO": "Elle conçut et enfanta un fils, et il le nomma Her.",
+        "VAT_ES": "Ella concibió y dio a luz un hijo, y él lo llamo Er.",
+        "CEI": "Essa concepì e partorì un figlio e lo chiamò Er."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/תַּ֥הַר ע֖וֹד וַ/תֵּ֣לֶד בֵּ֑ן וַ/תִּקְרָ֥א אֶת שְׁמ֖/וֹ אוֹנָֽן׃",
+        "VUL": "Rursumque concepto ftu, natum filium vocavit Onan.",
+        "LXX": "καὶ συλλαβοῦσα ἔτι ἔτεκεν υἱόν, καὶ ἐκάλεσεν τὸ ὄνομα αὐτοῦ Αὐνάν.",
+        "NAB": "Again she conceived and bore a son, whom she named Onan.",
+        "SYN": "И зачала опять, и родила сына, и нарекла ему имя: Онан.",
+        "NEO": "Elle conçut encore et enfanta un fils, et elle le nomma Onan.",
+        "VAT_ES": "Luego concibió nuevamente, y tuvo otro hijo, al que llamó Onán.",
+        "CEI": "Poi concepì ancora e partorì un figlio e lo chiamò Onan."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֤סֶף עוֹד֙ וַ/תֵּ֣לֶד בֵּ֔ן וַ/תִּקְרָ֥א אֶת שְׁמ֖/וֹ שֵׁלָ֑ה וְ/הָיָ֥ה בִ/כְזִ֖יב בְּ/לִדְתָּ֥/הּ אֹתֽ/וֹ׃",
+        "VUL": "Tertium quoque peperit : quem appellavit Sela ; quo nato, parere ultra cessavit.",
+        "LXX": "καὶ προσθεῖσα ἔτι ἔτεκεν υἱόν, καὶ ἐκάλεσεν τὸ ὄνομα αὐτοῦ Σηλώμ· αὕτη δὲ ἦν ἐν Χασβὶ ἡνίκα ἔτεκεν αὐτούς.",
+        "NAB": "Then she bore still another son, whom she named Shelah. They were in Chezib when he was born.",
+        "SYN": "И еще родила сына [третьего] и нарекла ему имя: Шела. Иуда был в Хезиве, когда она родила его.",
+        "NEO": "Elle conçut de nouveau et enfanta un fils, et elle le nomma Séla ; Juda était à Achzib quand elle le mit au monde.",
+        "VAT_ES": "Después volvió a tener otro hijo, y le puso el nombre de Selá. Cuando ella dio a luz, estaba en Quezib.",
+        "CEI": "Ancora un'altra volta partorì un figlio e lo chiamò Sela. Essa si trovava in Chezib, quando lo partorì."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֧ח יְהוּדָ֛ה אִשָּׁ֖ה לְ/עֵ֣ר בְּכוֹר֑/וֹ וּ/שְׁמָ֖/הּ תָּמָֽר׃",
+        "VUL": "Dedit autem Judas uxorem primogenito suo Her, nomine Thamar.",
+        "LXX": "⸂⸆⸃ καὶ ἔλαβεν Ἰούδας γυναῖκα Ἢρ τῷ πρωτοτόκῳ αὐτοῦ, ᾗ ὄνομα Θαμάρ.",
+        "NAB": "Judah got a wife named Tamar for his first-born, Er.",
+        "SYN": "И взял Иуда жену Иру, первенцу своему; имя ей Фамарь.",
+        "NEO": "Juda prit pour Her, son premier-né, une femme nommée Thamar.",
+        "VAT_ES": "Más tarde, Judá casó a Er, su hijo mayor, con una mujer llamada Tamar.",
+        "CEI": "Giuda prese una moglie per il suo primogenito Er, la quale si chiamava Tamar."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י עֵ֚ר בְּכ֣וֹר יְהוּדָ֔ה רַ֖ע בְּ/עֵינֵ֣י יְהוָ֑ה וַ/יְמִתֵ֖/הוּ יְהוָֽה׃",
+        "VUL": "Fuit quoque Her primogenitus Judæ nequam in conspectu Domini : et ab eo occisus est.",
+        "LXX": "ἐγένετο δὲ Ἢρ πρωτότοκος Ἰούδα πονηρὸς ἐναντίον Κυρίου, καὶ ἀπέκτεινεν αὐτὸν ὁ θεός.",
+        "NAB": "But Er, Judah's first-born, greatly offended the LORD; so the LORD took his life.",
+        "SYN": "Ир, первенец Иудин, был неугоден пред очами Господа, и умертвил его Господь.",
+        "NEO": "Her, premier-né de Juda, fut méchant aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w** et \\+w Yahweh|strong=\"H3068\"\\+w** le fit mourir.",
+        "VAT_ES": "Er desagradó al Señor, y el Señor lo hizo morir.",
+        "CEI": "Ma Er, primogenito di Giuda, si rese odioso al Signore e il Signore lo fece morire."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוּדָה֙ לְ/אוֹנָ֔ן בֹּ֛א אֶל אֵ֥שֶׁת אָחִ֖י/ךָ וְ/יַבֵּ֣ם אֹתָ֑/הּ וְ/הָקֵ֥ם זֶ֖רַע לְ/אָחִֽי/ךָ׃",
+        "VUL": "Dixit ergo Judas ad Onan filium suum : Ingredere ad uxorem fratris tui, et sociare illi, ut suscites semen fratri tuo.",
+        "LXX": "εἶπεν δὲ Ἰούδας τῷ Αὐνάν Εἴσελθε πρὸς τὴν γυναῖκα τοῦ ἀδελφοῦ σου καὶ γάμβρευσαι αὐτήν, καὶ ἀνάστησον σπέρμα τῷ ἀδελφῷ σου.",
+        "NAB": "Then Judah said to Onan, \"Unite with your brother's widow, in fulfillment of your duty as brother-in-law, and thus preserve your brother's line.\"",
+        "SYN": "И сказал Иуда Онану: войди к жене брата твоего, женись на ней, как деверь, и восстанови семя брату твоему.",
+        "NEO": "Alors Juda dit à Onan : « Va vers la femme de ton frère, remplis ton devoir de beau-frère et suscite une postérité à ton frère. »",
+        "VAT_ES": "Judá dijo entonces a Onán: «Unete a la viuda de Er, para cumplir con tus deberes de cuñado y asegurar una descendencia a tu hermano».",
+        "CEI": "Allora Giuda disse a Onan: \"Unisciti alla moglie del fratello, compi verso di lei il dovere di cognato e assicura così una posterità per il fratello\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֣דַע אוֹנָ֔ן כִּ֛י לֹּ֥א ל֖/וֹ יִהְיֶ֣ה הַ/זָּ֑רַע וְ/הָיָ֞ה אִם בָּ֨א אֶל אֵ֤שֶׁת אָחִי/ו֙ וְ/שִׁחֵ֣ת אַ֔רְצָ/ה לְ/בִלְתִּ֥י נְתָן זֶ֖רַע לְ/אָחִֽי/ו׃",
+        "VUL": "Ille sciens non sibi nasci filios, introiens ad uxorem fratris sui, semen fundebat in terram, ne liberi fratris nomine nascerentur.",
+        "LXX": "γνοὺς δὲ Αὐνὰν ὅτι οὐκ αὐτῷ ἔσται τὸ σπέρμα, ἐγίνετο, ὅταν εἰσήρχετο πρὸς τὴν γυναῖκα τοῦ ἀδελφοῦ αὐτοῦ, ἐξέχεεν ἐπὶ τὴν γῆν τοῦ μὴ δοῦναι σπέρμα τῷ ἀδελφῷ αὐτοῦ.",
+        "NAB": "Onan, however, knew that the descendants would not be counted as his; so whenever he had relations with his brother's widow, he wasted his seed on the ground, to avoid contributing offspring for his brother.",
+        "SYN": "Онан знал, что семя будет не ему, и потому, когда входил к жене брата своего, изливал [семя] на землю, чтобы не дать семени брату своему.",
+        "NEO": "Mais Onan savait que cette postérité ne serait pas à lui et, lorsqu’il allait vers la femme de son frère, il se souillait à terre afin de ne pas donner de postérité à son frère.",
+        "VAT_ES": "Pero Onán, sabiendo que la descendencia no le pertenecería, cada vez que se unía con ella, derramaba el semen en la tierra para evitar que hermano tuviera una descendencia.",
+        "CEI": "Ma Onan sapeva che la prole non sarebbe stata considerata come sua; ogni volta che si univa alla moglie del fratello, disperdeva per terra, per non dare una posterità al fratello."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֛רַע בְּ/עֵינֵ֥י יְהוָ֖ה אֲשֶׁ֣ר עָשָׂ֑ה וַ/יָּ֖מֶת גַּם אֹתֽ/וֹ׃",
+        "VUL": "Et idcirco percussit eum Dominus, quod rem detestabilem faceret.",
+        "LXX": "πονηρὸν δὲ ἐφάνη τὸ ῥῆμα ἐναντίον τοῦ θεοῦ ὅτι ἐποίησεν τοῦτο, καὶ ἐθανάτωσεν καὶ τοῦτον.",
+        "NAB": "What he did greatly offended the LORD, and the LORD took his life too.",
+        "SYN": "Зло было пред очами Господа то, что он делал; и Он умертвил и его.",
+        "NEO": "Son action déplut au Seigneur, qui le fit aussi mourir.",
+        "VAT_ES": "Su manera de proceder desagradó al Señor, que lo hizo morir también a él.",
+        "CEI": "Ciò che egli faceva non fu gradito al Signore, il quale fece morire anche lui."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוּדָה֩ לְ/תָמָ֨ר כַּלָּת֜/וֹ שְׁבִ֧י אַלְמָנָ֣ה בֵית אָבִ֗י/ךְ עַד יִגְדַּל֙ שֵׁלָ֣ה בְנִ֔/י כִּ֣י אָמַ֔ר פֶּן יָמ֥וּת גַּם ה֖וּא כְּ/אֶחָ֑י/ו וַ/תֵּ֣לֶךְ תָּמָ֔ר וַ/תֵּ֖שֶׁב בֵּ֥ית אָבִֽי/הָ׃",
+        "VUL": "Quam ob rem dixit Judas Thamar nurui suæ : Esto vidua in domo patris tui, donec crescat Sela filius meus : timebat enim ne et ipse moreretur, sicut fratres ejus. Quæ abiit, et habitavit in domo patris sui.",
+        "LXX": "εἶπεν δὲ Ἰούδας Θαμὰρ τῇ νύμφῃ αὐτοῦ Κάθου χήρα ἐν τῷ οἴκῳ τοῦ πατρός σου ἕως μέγας γένηται Σηλὼμ ὁ υἱός μου· εἶπεν γάρ Μή ποτε ἀποθάνῃ καὶ οὗτος ὥσπερ οἱ ἀδελφοὶ αὐτοῦ. ἀπελθοῦσα δὲ Θαμὰρ ἐκάθητο ἐν τῷ οἴκῳ τοῦ πατρὸς αὐτῆς.",
+        "NAB": "Thereupon Judah said to his daughter-in-law Tamar, \"Stay as a widow in your father's house until my son Shelah grows up\" - for he feared that Shelah also might die like his brothers. So Tamar went to live in her father's house.",
+        "SYN": "И сказал Иуда Фамари, невестке своей [по смерти двух сыновей своих]: живи вдовою в доме отца твоего, пока подрастет Шела, сын мой. Ибо он сказал [в уме своем]: не умер бы и он подобно братьям его. Фамарь пошла и стала жить в доме отца своего.",
+        "NEO": "Et Juda dit à Thamar, sa belle-fille : « Demeure comme veuve dans la maison de ton père jusqu’à ce que Séla, mon fils, soit devenu grand. » Car il se disait : « Il ne faut pas que lui aussi meure comme ses frères. » Thamar s’en alla et demeura dans la maison de son père.",
+        "VAT_ES": "Entonces Judá dijo a su nuera Tamar: «Vive como una viuda en la casa de tu padre, hasta que crezca mi hijo Selá», porque temía que este corriera la misma suerte que sus hermanos. Por eso Tamar se fue a vivir a la casa de su padre.",
+        "CEI": "Allora Giuda disse alla nuora Tamar: \"Ritorna a casa da tuo padre come vedova fin quando il mio figlio Sela sarà cresciuto\". Perché pensava: \"Che non muoia anche questo come i suoi fratelli!\". Così Tamar se ne andò e ritornò alla casa del padre."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יִּרְבּוּ֙ הַ/יָּמִ֔ים וַ/תָּ֖מָת בַּת שׁ֣וּעַ אֵֽשֶׁת יְהוּדָ֑ה וַ/יִּנָּ֣חֶם יְהוּדָ֗ה וַ/יַּ֜עַל עַל גֹּֽזֲזֵ֤י צֹאנ/וֹ֙ ה֗וּא וְ/חִירָ֛ה רֵעֵ֥/הוּ הָ/עֲדֻלָּמִ֖י תִּמְנָֽתָ/ה׃",
+        "VUL": "Evolutis autem multis diebus, mortua est filia Sue uxor Judæ : qui, post luctum consolatione suscepta, ascendebat ad tonsores ovium suarum, ipse et Hiras opilio gregis Odollamites, in Thamnas.",
+        "LXX": "ἐπληθύνθησαν δὲ αἱ ἡμέραι καὶ ἀπέθανεν Σαύα ἡ γυνὴ Ἰούδα· καὶ παρακληθεὶς Ἰούδας ἀνέβη ἐπὶ τοὺς κείροντας τὰ πρόβατα αὐτοῦ, αὐτὸς καὶ Εἱρᾶς ὁ ποιμὴν αὐτοῦ ὁ Ὀδολλαμείτης, εἰς Θαμνά.",
+        "NAB": "Years passed, and Judah's wife, the daughter of Shua, died. After Judah completed the period of mourning, he went up to Timnah for the shearing of his sheep, in company with his friend Hirah the Adullamite.",
+        "SYN": "Прошло много времени, и умерла дочь Шуи, жена Иудина. Иуда, утешившись, пошел в Фамну к стригущим скот его, сам и Хира, друг его, Одолламитянин.",
+        "NEO": "Après beaucoup de jours, la fille de Sué, femme de Juda, mourut. Lorsque Juda eut fini son deuil, il monta vers ceux qui tondaient ses brebis à Thamna, lui et son ami Hira, l’Odollamite.",
+        "VAT_ES": "Mucho tiempo después, murió la esposa de Judá, la hija de Súa. Una vez concluido el duelo, Judá se dirigió hacia Timná en compañía de su amigo Jirá, el adulamita, porque allí esquilaban sus ovejas.",
+        "CEI": "Passarono molti giorni e morì la figlia di Sua, moglie di Giuda. Quando Giuda ebbe finito il lutto, andò a Timna da quelli che tosavano il suo gregge e con lui vi era Chira, il suo amico di Adullàm."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֻּגַּ֥ד לְ/תָמָ֖ר לֵ/אמֹ֑ר הִנֵּ֥ה חָמִ֛י/ךְ עֹלֶ֥ה תִמְנָ֖תָ/ה לָ/גֹ֥ז צֹאנֽ/וֹ׃",
+        "VUL": "Nuntiatumque est Thamar quod socer illius ascenderet in Thamnas ad tondendas oves.",
+        "LXX": "καὶ ἀπηγγέλη Θαμὰρ τῇ νύμφῃ αὐτοῦ λέγοντες Ἰδοὺ ὁ πενθερός σου ἀνέβη εἰς Θαμνὰ κεῖραι τὰ πρόβατα αὐτοῦ.",
+        "NAB": "When Tamar was told that her father-in-law was on his way up to Timnah to shear his sheep,",
+        "SYN": "И уведомили Фамарь, говоря: вот, свекор твой идет в Фамну стричь скот свой.",
+        "NEO": "On en informa Thamar, en disant : « Voici ton beau-père qui monte à Thamna pour tondre ses brebis. »",
+        "VAT_ES": "Tamar fue informada de que su suegro se dirigía hacia Timná, donde estaban esquilando su rebaño.",
+        "CEI": "Fu portata a Tamar questa notizia: \"Ecco, tuo suocero va a Timna per la tosatura del suo gregge\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/תָּסַר֩ בִּגְדֵ֨י אַלְמְנוּתָ֜/הּ מֵֽ/עָלֶ֗י/הָ וַ/תְּכַ֤ס בַּ/צָּעִיף֙ וַ/תִּתְעַלָּ֔ף וַ/תֵּ֨שֶׁב֙ בְּ/פֶ֣תַח עֵינַ֔יִם אֲשֶׁ֖ר עַל דֶּ֣רֶךְ תִּמְנָ֑תָ/ה כִּ֤י רָאֲתָה֙ כִּֽי גָדַ֣ל שֵׁלָ֔ה וְ/הִ֕וא לֹֽא נִתְּנָ֥ה ל֖/וֹ לְ/אִשָּֽׁה׃",
+        "VUL": "Quæ, depositis viduitatis vestibus, assumpsit theristrum : et mutato habitu, sedit in bivio itineris, quod ducit Thamnam : eo quod crevisset Sela, et non eum accepisset maritum.",
+        "LXX": "καὶ περιελομένη τὰ ἱμάτια τῆς χηρεύσεως ἀφ’ ἑαυτῆς περιεβάλετο θερίστρῳ καὶ ἐκαλλωπίσατο, καὶ ἐκάθισεν πρὸς ταῖς πύλαις Αἰνάν, ἥ ἐστιν ἐν παρόδῳ Θαμνά· ἴδεν γὰρ ὅτι μέγας γέγονεν Σηλὼμ ὁ υἱὸς αὐτοῦ, αὐτὸς δὲ οὐκ ἔδωκεν αὐτὴν αὐτῷ γυναῖκα.",
+        "NAB": "she took off her widow's garb, veiled her face by covering herself with a shawl, and sat down at the entrance to Enaim, which is on the way to Timnah; for she was aware that, although Shelah was now grown up, she had not been given to him in marriage.",
+        "SYN": "И сняла она с себя одежду вдовства своего, покрыла себя покрывалом и, закрывшись, села у ворот Енаима, что на дороге в Фамну. Ибо видела, что Шела вырос, и она не дана ему в жену.",
+        "NEO": "Alors elle ôta ses vêtements de veuve, se couvrit d’un voile, et, ainsi enveloppée, elle s’assit à l’entrée d’Enaïm, sur le chemin de Thamna, car elle voyait que Séla était devenu grand et qu’elle ne lui était pas donnée pour femme.",
+        "VAT_ES": "Y como veía que Selá ya era grande, y sin embargo, no se lo habían dado como esposo, se quitó su ropa de viuda, se cubrió con un velo para no ser reconocida, y se sentó a la entrada de Enaim, sobre el camino a Timná.",
+        "CEI": "Allora Tamar si tolse gli abiti vedovili, si coprì con il velo e se lo avvolse intorno, poi si pose a sedere all'ingresso di Enaim, che è sulla strada verso Timna. Aveva visto infatti che Sela era ormai cresciuto, ma che lei non gli era stata data in moglie."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּרְאֶ֣/הָ יְהוּדָ֔ה וַֽ/יַּחְשְׁבֶ֖/הָ לְ/זוֹנָ֑ה כִּ֥י כִסְּתָ֖ה פָּנֶֽי/הָ׃",
+        "VUL": "Quam cum vidisset Judas, suspicatus est esse meretricem : operuerat enim vultum suum, ne agnosceretur.",
+        "LXX": "καὶ ἰδὼν αὐτὴν Ἰούδας ἔδοξεν αὐτὴν πόρνην εἶναι· κατεκαλύψατο γὰρ τὸ πρόσωπον αὐτῆς, καὶ οὐκ ἐπέγνω αὐτήν.",
+        "NAB": "When Judah saw her, he mistook her for a harlot, since she had covered her face.",
+        "SYN": "И увидел ее Иуда и почел ее за блудницу, потому что она закрыла лице свое. [И не узнал ее.]",
+        "NEO": "Juda, l’ayant vue, la prit pour une femme de mauvaise vie ; car elle avait couvert son visage.",
+        "VAT_ES": "Como tenía la cara tapada, al verla, Judá pensó que era una prostituta.",
+        "CEI": "Giuda la vide e la credette una prostituta, perché essa si era coperta la faccia."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨ט אֵלֶ֜י/הָ אֶל הַ/דֶּ֗רֶךְ וַ/יֹּ֨אמֶר֙ הָֽבָ/ה נָּא֙ אָב֣וֹא אֵלַ֔יִ/ךְ כִּ֚י לֹ֣א יָדַ֔ע כִּ֥י כַלָּת֖/וֹ הִ֑וא וַ/תֹּ֨אמֶר֙ מַה תִּתֶּן לִּ֔/י כִּ֥י תָב֖וֹא אֵלָֽ/י׃",
+        "VUL": "Ingrediensque ad eam, ait : Dimitte me ut coëam tecum : nesciebat enim quod nurus sua esset. Qua respondente : Quid dabis mihi ut fruaris concubitu meo ?",
+        "LXX": "ἐξέκλινεν δὲ πρὸς αὐτὴν τὴν ὁδὸν καὶ εἶπεν αὐτῇ Ἔασόν με εἰσελθεῖν πρὸς σέ· οὐ γὰρ ἔγνω ὅτι ἡ νύμφη αὐτοῦ ἐστίν. ἡ δὲ εἶπεν Τί μοι δώσεις ἐὰν εἰσέλθῃς πρὸς μέ;",
+        "NAB": "So he went over to her at the roadside, and not realizing that she was his daughter-in-law, he said, \"Come, let me have intercourse with you.\" She replied, \"What will you pay me for letting you have intercourse with me?\"",
+        "SYN": "Он поворотил к ней и сказал: войду я к тебе. Ибо не знал, что это невестка его. Она сказала: что ты дашь мне, если войдешь ко мне?",
+        "NEO": "Il se dirigea de son côté, vers le chemin, et dit : « Laisse-moi aller vers toi. » Car il ignorait que ce fût sa belle-fille. Elle dit : « Que me donneras-tu pour venir vers moi ? »",
+        "VAT_ES": "Entonces se apartó del camino y fue hacia ella para decirle: «Deja que me acueste contigo», ignorando que se trataba de su nuera. Ella le respondió: «&iquest;Qué me darás por acostarte conmigo?».",
+        "CEI": "Egli si diresse su quella strada verso di lei e disse: \"Lascia che io venga con te!\". Non sapeva infatti che quella fosse la sua nuora. Essa disse: \"Che mi darai per venire con me?\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֕אמֶר אָנֹכִ֛י אֲשַׁלַּ֥ח גְּדִֽי עִזִּ֖ים מִן הַ/צֹּ֑אן וַ/תֹּ֕אמֶר אִם תִּתֵּ֥ן עֵרָב֖וֹן עַ֥ד שָׁלְחֶֽ/ךָ׃",
+        "VUL": "dixit : Mittam tibi hædum de gregibus. Rursumque illa dicente : Patiar quod vis, si dederis mihi arrhabonem, donec mittas quod polliceris.",
+        "LXX": "ὁ δὲ εἶπεν Ἐγώ σοι ἀποστέλλω ἔριφον αἰγῶν ἐκ τῶν προβάτων. ἡ δὲ εἶπεν Ἐὰν δῷς ἀρραβῶνα ἕως τοῦ ἀποστεῖλαί σε.",
+        "NAB": "He answered, \"I will send you a kid from the flock.\" \"Very well,\" she said, \"provided you leave a pledge until you send it.\"",
+        "SYN": "Он сказал: я пришлю тебе козленка из стада [моего]. Она сказала: дашь ли ты мне залог, пока пришлешь?",
+        "NEO": "Il répondit : « Je t’enverrai un chevreau du troupeau. » Elle dit : « A condition que tu me donnes un gage jusqu’à ce que tu l’envoies. »",
+        "VAT_ES": "«Te enviaré un chivito de mi rebaño», le aseguró él. «De acuerdo, continuó ella, con tal que me dejes algo como prenda hasta que me lo envíes».",
+        "CEI": "Rispose: \"Io ti manderò un capretto del gregge\". Essa riprese: \"Mi dai un pegno fin quando me lo avrai mandato?\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר מָ֣ה הָֽ/עֵרָבוֹן֮ אֲשֶׁ֣ר אֶתֶּן לָּ/ךְ֒ וַ/תֹּ֗אמֶר חֹתָֽמְ/ךָ֙ וּ/פְתִילֶ֔/ךָ וּ/מַטְּ/ךָ֖ אֲשֶׁ֣ר בְּ/יָדֶ֑/ךָ וַ/יִּתֶּן לָּ֛/הּ וַ/יָּבֹ֥א אֵלֶ֖י/הָ וַ/תַּ֥הַר לֽ/וֹ׃",
+        "VUL": "Ait Judas : Quid tibi vis pro arrhabone dari ? Respondit : Annulum tuum, et armillam, et baculum quem manu tenes. Ad unum igitur coitum mulier concepit,",
+        "LXX": "ὁ δὲ εἶπεν Τίνα τὸν ἀρραβῶνά σοι δώσω; ἡ δὲ εἶπεν Τὸν δακτύλιόν σου καὶ τὸν ὁρμίσκον καὶ τὴν ῥάβδον τὴν ἐν τῇ χειρί σου. καὶ ἔδωκεν αὐτῇ, καὶ εἰσῆλθεν πρὸς αὐτήν· καὶ ἐν γαστρὶ ἔλαβεν ἐξ αὐτοῦ.",
+        "NAB": "Judah asked, \"What pledge am I to give to you?\" She answered, \"Your seal and cord, and the staff you carry.\" So he gave them to her and had intercourse with her, and she conceived by him.",
+        "SYN": "Он сказал: какой дать тебе залог? Она сказала: печать твою, и перевязь твою, и трость твою, которая в руке твоей. И дал он ей и вошел к ней; и она зачала от него.",
+        "NEO": "Il dit : Quel gage dois-je te donner ? » Elle dit : « Ton anneau, ton cordon et ton bâton que tu tiens à la main. » Il les lui donna et alla vers elle, et elle devint enceinte de lui.",
+        "VAT_ES": "El le preguntó: «&iquest;Qué debo dejarte?». «Tu sello con su cordón y el bastón que llevas en la mano», le respondió. El se los entregó y se acostó con ella, dejándola embarazada.",
+        "CEI": "Egli disse: \"Qual è il pegno che ti devo dare?\". Rispose: \"Il tuo sigillo, il tuo cordone e il bastone che hai in mano\". Allora glieli diede e le si unì. Essa concepì da lui."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/תָּ֣קָם וַ/תֵּ֔לֶךְ וַ/תָּ֥סַר צְעִיפָ֖/הּ מֵ/עָלֶ֑י/הָ וַ/תִּלְבַּ֖שׁ בִּגְדֵ֥י אַלְמְנוּתָֽ/הּ׃",
+        "VUL": "et surgens abiit : depositoque habitu quem sumpserat, induta est viduitatis vestibus.",
+        "LXX": "καὶ ἀναστᾶσα ἀπῆλθεν, καὶ περιείλατο τὸ θέριστρον ἀφ’ ἑαυτῆς, καὶ ἐνεδύσατο τὰ ἱμάτια τῆς χηρεύσεως αὐτῆς.",
+        "NAB": "When she went away, she took off her shawl and put on her widow's garb again.",
+        "SYN": "И, встав, пошла, сняла с себя покрывало свое и оделась в одежду вдовства своего.",
+        "NEO": "Puis, s’étant levée, elle s’en alla ; et elle ôta son voile et revêtit ses vêtements de veuve.",
+        "VAT_ES": "Inmediatamente, ella se retiró, se quitó el velo que la cubría, y volvió a ponerse su ropa de viuda.",
+        "CEI": "Poi si alzò e se ne andò; si tolse il velo e rivestì gli abiti vedovili."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֨ח יְהוּדָ֜ה אֶת גְּדִ֣י הָֽ/עִזִּ֗ים בְּ/יַד֙ רֵעֵ֣/הוּ הָֽ/עֲדֻלָּמִ֔י לָ/קַ֥חַת הָ/עֵרָב֖וֹן מִ/יַּ֣ד הָ/אִשָּׁ֑ה וְ/לֹ֖א מְצָאָֽ/הּ׃",
+        "VUL": "Misit autem Judas hædum per pastorem suum Odollamitem, ut reciperet pignus quod dederat mulieri : qui cum non invenisset eam,",
+        "LXX": "ἀπέστειλεν δὲ Ἰούδας τὸν ἔριφον ἐξ αἰγῶν ἐν χειρὶ τοῦ ποιμένος αὐτοῦ τοῦ Ὀδολλαμείτου, κομίσασθαι τὸν ἀρραβῶνα παρὰ τῆς γυναικός· καὶ οὐχ εὗρεν αὐτήν.",
+        "NAB": "Judah sent the kid by his friend the Adullamite to recover the pledge from the woman; but he could not find her.",
+        "SYN": "Иуда же послал козленка чрез друга своего Одолламитянина, чтобы взять залог из руки женщины, но он не нашел ее.",
+        "NEO": "Juda envoya le chevreau par son ami, l’Odollamite, pour retirer le gage des mains de cette femme ; mais il ne la trouva point.",
+        "VAT_ES": "Cuando Judá le envió el chivito por medio de su amigo, el adulamita, para rescatar la prenda que había quedado en manos de la mujer, este no pudo encontrarla.",
+        "CEI": "Giuda mandò il capretto per mezzo del suo amico di Adullàm, per riprendere il pegno dalle mani di quella donna, ma quegli non la trovò."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁאַ֞ל אֶת אַנְשֵׁ֤י מְקֹמָ/הּ֙ לֵ/אמֹ֔ר אַיֵּ֧ה הַ/קְּדֵשָׁ֛ה הִ֥וא בָ/עֵינַ֖יִם עַל הַ/דָּ֑רֶךְ וַ/יֹּ֣אמְר֔וּ לֹא הָיְתָ֥ה בָ/זֶ֖ה קְדֵשָֽׁה׃",
+        "VUL": "interrogavit homines loci illius : Ubi est mulier quæ sedebat in bivio ? Respondentibus cunctis : Non fuit in loco ista meretrix.",
+        "LXX": "ἐπηρώτησεν δὲ τοὺς ἄνδρας τοὺς ἐπὶ τοῦ τόπου Ποῦ ἐστιν ἡ πόρνη ἡ γενομένη ἐν Αἰνὰν ἐπὶ τῆς ὁδοῦ; καὶ εἶπαν Οὐκ ἦν ἐνταῦθα πόρνη.",
+        "NAB": "So he asked the men of the place, \"Where is the temple prostitute, the one by the roadside in Enaim?\" But they answered, \"There has never been a temple prostitute here.\"",
+        "SYN": "И спросил жителей того места, говоря: где блудница, _которая_ _была_ в Енаиме при дороге? Но они сказали: здесь не было блудницы.",
+        "NEO": "Il interrogea les gens du lieu, en disant : « Où est cette prostituée qui se tenait à Enaïm au bord du chemin ? » Ils répondirent : « Il n’y a pas eu ici de prostituée. »",
+        "VAT_ES": "Entonces preguntó a la gente del lugar: «&iquest;Dónde está esa prostituta que se sentaba en Enaim, al borde del camino?». Ellos le respondieron: «Allí nunca hubo una prostituta».",
+        "CEI": "Domandò agli uomini di quel luogo: \"Dov'è quella prostituta che stava in Enaim sulla strada?\". Ma risposero: \"Non c'è stata qui nessuna prostituta\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יָּ֨שָׁב֙ אֶל יְהוּדָ֔ה וַ/יֹּ֖אמֶר לֹ֣א מְצָאתִ֑י/הָ וְ/גַ֨ם אַנְשֵׁ֤י הַ/מָּקוֹם֙ אָֽמְר֔וּ לֹא הָיְתָ֥ה בָ/זֶ֖ה קְדֵשָֽׁה׃",
+        "VUL": "Reversus est ad Judam, et dixit ei : Non inveni eam : sed et homines loci illius dixerunt mihi, numquam sedisse ibi scortum.",
+        "LXX": "καὶ ἀπεστράφη πρὸς Ἰούδαν καὶ εἶπεν Οὐχ εὗρον, καὶ οἱ ἄνθρωποι οἱ ἐκ τοῦ τόπου λέγουσιν μὴ εἶναι ἐνταῦθα πόρνην.",
+        "NAB": "He went back to Judah and told him, \"I could not find her; and besides, the men of the place said there was no temple prostitute there.\"",
+        "SYN": "И возвратился он к Иуде и сказал: я не нашел ее; да и жители места того сказали: здесь не было блудницы.",
+        "NEO": "Il revint donc vers Juda et dit : « Je ne l’ai pas trouvée ; et même les gens du lieu ont dit : il n’y a pas eu ici de prostituée. »",
+        "VAT_ES": "El regresó y dijo a Judá: «No la pude encontrar. Además, la gente del lugar me aseguró que allí nunca hubo una prostituta».",
+        "CEI": "Così tornò da Giuda e disse: \"Non l'ho trovata; anche gli uomini di quel luogo dicevano: Non c'è stata qui nessuna prostituta\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוּדָה֙ תִּֽקַּֽח לָ֔/הּ פֶּ֖ן נִהְיֶ֣ה לָ/ב֑וּז הִנֵּ֤ה שָׁלַ֨חְתִּי֙ הַ/גְּדִ֣י הַ/זֶּ֔ה וְ/אַתָּ֖ה לֹ֥א מְצָאתָֽ/הּ׃",
+        "VUL": "Ait Judas : Habeat sibi, certe mendacii arguere nos non potest, ego misi hædum quem promiseram : et tu non invenisti eam.",
+        "LXX": "εἶπεν δὲ Ἰούδας Ἐχέτω αὐτά, ἀλλὰ μή ποτε καταγελασθῶμεν· ἐγὼ μὲν ἀπέσταλκα τὸν ἔριφον τοῦτον, σὺ δὲ οὐχ εὕρηκας.",
+        "NAB": "\"Let her keep the things,\" Judah replied; \"otherwise we shall become a laughingstock. After all, I did send her the kid, even though you were unable to find her.\"",
+        "SYN": "Иуда сказал: пусть она возьмет себе, чтобы только не стали над нами смеяться; вот, я посылал этого козленка, но ты не нашел ее.",
+        "NEO": "Juda dit : « Qu’elle garde son gage ; il ne faut pas qu’on se moque de nous. Voici, j’ai envoyé le chevreau promis, et tu ne l’as pas trouvée. »",
+        "VAT_ES": "Judá replicó: «Que se quede con todo, porque de lo contrario nos pondremos en ridículo. Yo cumplí mandándole el cabrito, y tú no la encontraste».",
+        "CEI": "Allora Giuda disse: \"Se li tenga! Altrimenti ci esponiamo agli scherni. Vedi che le ho mandato questo capretto, ma tu non l'hai trovata\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י כְּ/מִ/שְׁלֹ֣שׁ חֳדָשִׁ֗ים וַ/יֻּגַּ֨ד לִֽ/יהוּדָ֤ה לֵֽ/אמֹר֙ זָֽנְתָה֙ תָּמָ֣ר כַּלָּתֶ֔/ךָ וְ/גַ֛ם הִנֵּ֥ה הָרָ֖ה לִ/זְנוּנִ֑ים וַ/יֹּ֣אמֶר יְהוּדָ֔ה הוֹצִיא֖וּ/הָ וְ/תִשָּׂרֵֽף׃",
+        "VUL": "Ecce autem post tres menses nuntiaverunt Judæ, dicentes : Fornicata est Thamar nurus tua, et videtur uterus illius intumescere. Dixitque Judas : Producite eam ut comburatur.",
+        "LXX": "ἐγένετο δὲ μετὰ τρίμηνον ἀπηγγέλη τῷ Ἰούδᾳ λέγοντες Ἐκπεπόρνευκεν Θαμὰρ ἡ νύμφη σου, καὶ ἰδοὺ ἐν γαστρὶ ἔχει ἐκ πορνείας. εἶπεν δὲ Ἰούδας Ἐξαγάγετε αὐτὴν καὶ κατακαυθήτω.",
+        "NAB": "About three months later, Judah was told that his daughter-in-law Tamar had played the harlot and was then with child from her harlotry. \"Bring her out,\" cried Judah; \"she shall be burned.\"",
+        "SYN": "Прошло около трех месяцев, и сказали Иуде, говоря: Фамарь, невестка твоя, впала в блуд, и вот, она беременна от блуда. Иуда сказал: выведите ее, и пусть она будет сожжена.",
+        "NEO": "Environ trois mois après, on vint dire à Juda : « Thamar, ta belle-fille, s’est prostituée, et même la voilà enceinte à la suite de ses prostitutions. » Juda dit : « Faites-la sortir et qu’elle soit brûlée. »",
+        "VAT_ES": "Unos tres meses más tarde, notificaron a Judá: «Tu nuera Tamar se ha prostituido, y en una de sus andanzas quedó embarazada». Entonces Judá exclamó: «Sáquenla afuera y quémenla viva».",
+        "CEI": "Circa tre mesi dopo, fu portata a Giuda questa notizia: \"Tamar, la tua nuora, si è prostituita e anzi è incinta a causa della prostituzione\". Giuda disse: \"Conducetela fuori e sia bruciata!\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "הִ֣וא מוּצֵ֗את וְ/הִ֨יא שָׁלְחָ֤ה אֶל חָמִ֨י/הָ֙ לֵ/אמֹ֔ר לְ/אִישׁ֙ אֲשֶׁר אֵ֣לֶּה לּ֔/וֹ אָנֹכִ֖י הָרָ֑ה וַ/תֹּ֨אמֶר֙ הַכֶּר נָ֔א לְ/מִ֞י הַ/חֹתֶ֧מֶת וְ/הַ/פְּתִילִ֛ים וְ/הַ/מַּטֶּ֖ה הָ/אֵֽלֶּה׃",
+        "VUL": "Quæ cum duceretur ad pnam, misit ad socerum suum, dicens : De viro, cujus hæc sunt, concepi : cognosce cujus sit annulus, et armilla, et baculus.",
+        "LXX": "αὐτὴ δὲ ἀγομένη ἀπέστειλεν πρὸς τὸν πενθερὸν αὐτῆς λέγουσα Ἐκ τοῦ ἀνθρώπου τίνος ταῦτά ἐστιν ἐγὼ ἐν γαστρὶ ἔχω· καὶ εἶπεν Ἐπίγνωθι τίνος ὁ δακτύλιος καὶ ὁ ὁρμίσκος καὶ ἡ ῥάβδος αὕτη.",
+        "NAB": "But as they were bringing her out, she sent word to her father-in-law, \"It is by the man to whom these things belong that I am with child. Please verify,\" she added, \"whose seal and cord and whose staff these are.\"",
+        "SYN": "Но когда повели ее, она послала сказать свекру своему: я беременна от того, чьи эти вещи. И сказала: узнавай, чья эта печать и перевязь и трость.",
+        "NEO": "Comme on l’emmenait dehors, elle envoya dire à son beau-père : « C’est de l’homme à qui ces objets appartiennent que je suis enceinte. Regarde bien, ajouta-t-elle, à qui sont cet anneau, ce cordon et ce bâton. »",
+        "VAT_ES": "Pero cuando la iban a sacar, ella mandó decir a su suegro: «Estas cosas pertenecen al hombre que me dejó embarazada. Averigua quién es el dueño de este sello, este cordón y ese bastón».",
+        "CEI": "Essa veniva già condotta fuori, quando mandò a dire al suocero: \"Dell'uomo a cui appartengono questi oggetti io sono incinta\". E aggiunse: \"Riscontra, dunque, di chi siano questo sigillo, questi cordoni e questo bastone\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יַּכֵּ֣ר יְהוּדָ֗ה וַ/יֹּ֨אמֶר֙ צָֽדְקָ֣ה מִמֶּ֔/נִּי כִּֽי עַל כֵּ֥ן לֹא נְתַתִּ֖י/הָ לְ/שֵׁלָ֣ה בְנִ֑/י וְ/לֹֽא יָסַ֥ף ע֖וֹד לְ/דַעְתָּֽ/ה׃",
+        "VUL": "Qui, agnitis muneribus, ait : Justior me est : quia non tradidi eam Sela filio meo. Attamen ultra non cognovit eam.",
+        "LXX": "ἐπέγνω δὲ Ἰούδας καὶ εἶπεν Δεδικαίωται Θαμὰρ ἢ ἐγώ, οὗ εἵνεκεν οὐκ ἔδωκα αὐτὴν Σηλὼμ τῷ υἱῷ μου· καὶ οὐ προσέθετο ἔτι τοῦ γνῶναι αὐτήν.",
+        "NAB": "Judah recognized them and said, \"She is more in the right than I am, since I did not give her to my son Shelah.\" But he had no further relations with her.",
+        "SYN": "Иуда узнал и сказал: она правее меня, потому что я не дал ее Шеле, сыну моему. И не познавал ее более.",
+        "NEO": "Juda les reconnut et dit : « Elle est plus juste que moi, puisque je ne l’ai pas donnée à Séla, mon fils. » Et il ne la connut plus.",
+        "VAT_ES": "Al reconocerlos, Judá declaró: «Ella es más justa que yo, porque yo no le di a mi hijo Selá». Y no volvió a tener relaciones con ella.",
+        "CEI": "Giuda li riconobbe e disse: \"Essa è più giusta di me, perché io non l'ho data a mio figlio Sela\". E non ebbe più rapporti con lei."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֖י בְּ/עֵ֣ת לִדְתָּ֑/הּ וְ/הִנֵּ֥ה תְאוֹמִ֖ים בְּ/בִטְנָֽ/הּ׃",
+        "VUL": "Instante autem partu, apparuerunt gemini in utero : atque in ipsa effusione infantium unus protulit manum, in qua obstetrix ligavit coccinum, dicens :",
+        "LXX": "ἐγένετο δὲ ἡνίκα ἔτεκεν, καὶ τῇδε ἦν δίδυμα ἐν τῇ κοιλίᾳ αὐτῆς.",
+        "NAB": "When the time of her delivery came, she was found to have twins in her womb.",
+        "SYN": "Во время родов ее оказалось, что близнецы в утробе ее.",
+        "NEO": "Quand elle fut au moment d’enfanter, voici, il y avait deux jumeaux dans son sein.",
+        "VAT_ES": "Llegado el momento del parto, resultó que en su seno había mellizos.",
+        "CEI": "Quand'essa fu giunta al momento di partorire, ecco aveva nel grembo due gemelli."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י בְ/לִדְתָּ֖/הּ וַ/יִּתֶּן יָ֑ד וַ/תִּקַּ֣ח הַ/מְיַלֶּ֗דֶת וַ/תִּקְשֹׁ֨ר עַל יָד֤/וֹ שָׁנִי֙ לֵ/אמֹ֔ר זֶ֖ה יָצָ֥א רִאשֹׁנָֽה׃",
+        "VUL": "Iste egredietur prior.",
+        "LXX": "ἐγένετο δὲ ἐν τῷ τίκτειν αὐτὴν ὁ εἷς προεξήνεγκεν τὴν χεῖρα· λαβοῦσα δὲ ἡ μαῖα ἔδησεν ἐπὶ τὴν χεῖρα αὐτοῦ κόκκινον λέγουσα Οὗτος ἐξελεύσεται πρότερος.",
+        "NAB": "While she was giving birth, one infant put out his hand; and the midwife, taking a crimson thread, tied it on his hand, to note that this one came out first.",
+        "SYN": "И во время родов ее показалась рука [одного]; и взяла повивальная бабка и навязала ему на руку красную нить, сказав: этот вышел первый.",
+        "NEO": "Pendant l’accouchement, l’un d’eux étendit la main ; la sage-femme la prit et y attacha un fil écarlate, en disant : « C’est celui-ci qui est sorti le premier. »",
+        "VAT_ES": "Mientras daba a luz, uno de ellos extendió su mano, y la partera le ató en ella un hilo escarlata, diciendo: «Este ha sido el primero, en salir».",
+        "CEI": "Durante il parto, uno di essi mise fuori una mano e la levatrice prese un filo scarlatto e lo legò attorno a quella mano, dicendo: \"Questi è uscito per primo\"."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י כְּ/מֵשִׁ֣יב יָד֗/וֹ וְ/הִנֵּה֙ יָצָ֣א אָחִ֔י/ו וַ/תֹּ֕אמֶר מַה פָּרַ֖צְתָּ עָלֶ֣י/ךָ פָּ֑רֶץ וַ/יִּקְרָ֥א שְׁמ֖/וֹ פָּֽרֶץ׃",
+        "VUL": "Illo vero retrahente manum, egressus est alter : dixitque mulier : Quare divisa est propter te maceria ? et ob hanc causam, vocavit nomen ejus Phares.",
+        "LXX": "ὡς δὲ ἐπισυνήγαγεν τὴν χεῖρα, καὶ εὐθὺς ἐξῆλθεν ὁ ἀδελφὸς αὐτοῦ. ἡ δὲ εἶπεν Τί διεκόπη διὰ σὲ φραγμός; καὶ ἐκάλεσεν τὸ ὄνομα αὐτοῦ Φάρες.",
+        "NAB": "But as he withdrew his hand, his brother came out; and she said, \"What a breach you have made for yourself!\" So he was called Perez.",
+        "SYN": "Но он возвратил руку свою; и вот, вышел брат его. И она сказала: как ты расторг себе преграду? И наречено ему имя: Фарес.",
+        "NEO": "Mais il retira sa main, et voici que son frère sortit. « Quelle brèche tu as faite ! dit la sage-femme ; la brèche soit sur toi ! » Et on le nomma Pharès.",
+        "VAT_ES": "Pero luego retiró su mano, y el otro salió antes. Entonces ella dijo: «&iexcl;Cómo te has abierto una brecha!». Por eso fue llamado Peres.",
+        "CEI": "Ma, quando questi ritirò la mano, ecco uscì suo fratello. Allora essa disse: \"Come ti sei aperta una breccia?\" e lo si chiamò Perez."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/אַחַר֙ יָצָ֣א אָחִ֔י/ו אֲשֶׁ֥ר עַל יָד֖/וֹ הַ/שָּׁנִ֑י וַ/יִּקְרָ֥א שְׁמ֖/וֹ זָֽרַח׃",
+        "VUL": "Postea egressus est frater ejus, in cujus manu erat coccinum : quem appellavit Zara.",
+        "LXX": "καὶ μετὰ τοῦτο ἐξῆλθεν ὁ ἀδελφὸς αὐτοῦ, ἐφ’ ᾧ ἦν ἐπὶ τὴν χεῖρα αὐτοῦ τὸ κόκκινον· καὶ ἐκάλεσεν τὸ ὄνομα αὐτοῦ Ζάρα.",
+        "NAB": "Afterward his brother came out; he was called Zerah.",
+        "SYN": "Потом вышел брат его с красной нитью на руке. И наречено ему имя: Зара.",
+        "NEO": "Ensuite sortit son frère, qui avait à la main le fil écarlate ; et on le nomma Zara.",
+        "VAT_ES": "Después salió su hermano, con el hilo escarlata, y por eso lo llamaron Zéraj.",
+        "CEI": "Poi uscì suo fratello, che aveva il filo scarlatto alla mano, e lo si chiamò Zerach."
+      }
+    }
+  }
+}

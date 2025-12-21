@@ -1,0 +1,285 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_047",
+  "book_key": "ISA",
+  "sequence": 47,
+  "chapter_in": {
+    "MT": 47,
+    "VUL": 47,
+    "LXX": 47
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "רְדִ֣י וּ/שְׁבִ֣י עַל עָפָ֗ר בְּתוּלַת֙ בַּת בָּבֶ֔ל שְׁבִי לָ/אָ֥רֶץ אֵין כִּסֵּ֖א בַּת כַּשְׂדִּ֑ים כִּ֣י לֹ֤א תוֹסִ֨יפִי֙ יִקְרְאוּ לָ֔/ךְ רַכָּ֖ה וַ/עֲנֻגָּֽה׃",
+        "LXX": "Κατάβηθι, κάθισον ἐπὶ γῆν, παρθένος θυγάτηρ Βαβυλῶνος· κάθισον εἰς τὴν γῆν, θυγάτηρ Χαλδαίων, ὅτι οὐκέτι προστεθήσῃ κληθῆναι ἁπαλὴ καὶ τρυφερά.",
+        "VUL": "[Descende, sede in pulvere,/ virgo filia Babylon :/ sede in terra ; non est solium/ filiæ Chaldæorum,/ quia ultra non vocaberis/ mollis et tenera./",
+        "SYN": "Сойди и сядь на прах, девица, дочь Вавилона; сиди на земле: престола нет, дочь Халдеев, и вперед не будут называть тебя нежною и роскошною.",
+        "NEO": "Descends, assieds-toi dans la poussière, vierge, fille de Babylone ; assieds-toi par terre, sans trône, fille des Chaldéens ; car on ne t’appellera plus la délicate, la voluptueuse.",
+        "NAB": "Come down, sit in the dust, O virgin daughter Babylon; Sit on the ground, dethroned, O daughter of the Chaldeans. No longer shall you be called dainty and delicate.",
+        "VAT_ES": "Así habla el Señor a su ungido, a Ciro, a quien tomé de la mano derecha, para someter ante él a las naciones y desarmar a los reyes para abrir ante él las puertas de las ciudades, de manera que no puedan cerrarse.",
+        "CEI": "Scendi e siedi sulla polvere, vergine figlia di Babilonia. Siedi a terra, senza trono, figlia dei Caldei, poiché non sarai più chiamata tenera e voluttuosa."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "קְחִ֥י רֵחַ֖יִם וְ/טַ֣חֲנִי קָ֑מַח גַּלִּ֨י צַמָּתֵ֧/ךְ חֶשְׂפִּי שֹׁ֛בֶל גַּלִּי שׁ֖וֹק עִבְרִ֥י נְהָרֽוֹת׃",
+        "LXX": "λάβε μύλον, ἄλεσον ἄλευρον, ἀποκάλυψαι τὸ κατακάλυμμά σου, ἀνακάλυψαι τὰς πολιάς, ἀνάσυραι τὰς κνήμας, διάβηθι ποταμούς·",
+        "VUL": "Tolle molam, et mole farinam ;/ denuda turpitudinem tuam ;/ discooperi humerum, revela crura,/ transi flumina./",
+        "SYN": "Возьми жернова и мели муку; сними покрывало твое, подбери подол, открой голени, переходи через реки:",
+        "NEO": "Prends la meule, et mouds de la farine ; ôte ton voile ; relève les pans de ta robe, mets à nu tes jambes, pour passer les fleuves.",
+        "NAB": "Take the millstone and grind flour, remove your veil; Strip off your train, bare your legs, pass through the streams.",
+        "VAT_ES": "Yo iré delante de ti y allanaré los cerros; romperé las puertas de bronce y haré saltar los cerrojos de hierro.",
+        "CEI": "Prendi la mola e macina la farina, togliti il velo, solleva i lembi della veste, scopriti le gambe, attraversa i fiumi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "תִּגָּל֙ עֶרְוָתֵ֔/ךְ גַּ֥ם תֵּרָאֶ֖ה חֶרְפָּתֵ֑/ךְ נָקָ֣ם אֶקָּ֔ח וְ/לֹ֥א אֶפְגַּ֖ע אָדָֽם׃",
+        "LXX": "ἀνακαλυφθήσεται ἡ αἰσχύνη σου, φανήσονται οἱ ὀνειδισμοί σου· τὸ δίκαιον ἐκ σοῦ λήμψομαι, οὐκέτι μὴ παραδῶ ἀνθρώποις.",
+        "VUL": "Revelabitur ignominia tua,/ et videbitur opprobrium tuum ;/ ultionem capiam, et non resistet mihi homo./",
+        "SYN": "откроется нагота твоя, и даже виден будет стыд твой. Совершу мщение и не пощажу никого.",
+        "NEO": "Que ta nudité soit découverte, qu’on voie ta honte ! Je veux me venger, je n’épargnerai personne.",
+        "NAB": "Your nakedness shall be uncovered and your shame be seen; I will take vengeance, I will yield to no entreaty, says our redeemer,",
+        "VAT_ES": "Te daré tesoros secretos y riquezas escondidas, para que sepas que yo soy el Señor, el que te llama por tu nombre, el Dios de Israel.",
+        "CEI": "Si scopra la tua nudità, si mostri la tua vergogna. \"Prenderò vendetta e nessuno interverrà\","
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "גֹּאֲלֵ֕/נוּ יְהוָ֥ה צְבָא֖וֹת שְׁמ֑/וֹ קְד֖וֹשׁ יִשְׂרָאֵֽל׃",
+        "LXX": "ὁ ῥυσάμενός σε Κύριος σαβαώθ, ὄνομα αὐτῷ ἅγιος Ἰσραήλ.",
+        "VUL": "Redemptor noster, Dominus exercituum nomen illius,/ Sanctus Israël./",
+        "SYN": "Искупитель наш - Господь Саваоф имя Ему, Святый Израилев.",
+        "NEO": "— Notre Rédempteur se nomme \\+w Yahweh|strong=\"H3068\"\\+w** des armées, le Saint d’Israël ! —",
+        "NAB": "Whose name is the LORD of hosts, the Holy One of Israel.",
+        "VAT_ES": "Por amor a Jacob, mi servidor, y a Israel, mi elegido, yo te llamé por tu nombre, te di un título insigne, sin que tú me conocieras.",
+        "CEI": "dice il nostro redentore che si chiama Signore degli eserciti, il Santo di Israele."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "שְׁבִ֥י דוּמָ֛ם וּ/בֹ֥אִי בַ/חֹ֖שֶׁךְ בַּת כַּשְׂדִּ֑ים כִּ֣י לֹ֤א תוֹסִ֨יפִי֙ יִקְרְאוּ לָ֔/ךְ גְּבֶ֖רֶת מַמְלָכֽוֹת׃",
+        "LXX": "κάθισον κατανενυγμένη, εἴσελθε εἰς τὸ σκότος, θυγάτηρ Χαλδαίων, οὐκέτι μὴ κληθήσῃ ἰσχὺς βασιλείας.",
+        "VUL": "Sede tacens, et intra in tenebras,/ filia Chaldæorum,/ quia non vocaberis ultra/ domina regnorum./",
+        "SYN": "Сиди молча и уйди в темноту, дочь Халдеев: ибо вперед не будут называть тебя госпожею царств.",
+        "NEO": "Assieds-toi en silence, entre dans les ténèbres, fille des Chaldéens ; car on ne t’appellera plus la souveraine des royaumes.",
+        "NAB": "Go into darkness and sit in silence, O daughter of the Chaldeans, No longer shall you be called sovereign mistress of kingdoms.",
+        "VAT_ES": "Yo soy el Señor, y no hay otro, no hay ningún Dios fuera de mí, Yo hice empuñar las armas, sin que tú me conocieras,",
+        "CEI": "Siedi in silenzio e scivola nell'ombra, figlia dei Caldei, perché non sarai più chiamata Signora di regni."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "קָצַ֣פְתִּי עַל עַמִּ֗/י חִלַּ֨לְתִּי֙ נַחֲלָתִ֔/י וָ/אֶתְּנֵ֖/ם בְּ/יָדֵ֑/ךְ לֹא שַׂ֤מְתְּ לָ/הֶם֙ רַחֲמִ֔ים עַל זָקֵ֕ן הִכְבַּ֥דְתְּ עֻלֵּ֖/ךְ מְאֹֽד׃",
+        "LXX": "παρωξύνθην ἐπὶ τῷ λαῷ μου, ἐμίανας τὴν κληρονομίαν μου· ἐγὼ ἔδωκα αὐτοὺς εἰς τὴν χεῖρά σου, σὺ δὲ οὐκ ἔδωκας αὐτοῖς ἔλεος, τοῦ πρεσβυτέρου ἐβάρυνας τὸν ζυγὸν σφόδρα,",
+        "VUL": "Iratus sum super populum meum :/ contaminavi hæreditatem meam,/ et dedi eos in manu tua :/ non posuisti eis misericordias ;/ super senem aggravasti jugum tuum valde./",
+        "SYN": "Я прогневался на народ Мой, уничижил наследие Мое и предал их в руки твои; _а_ ты не оказала им милосердия, на старца налагала крайне тяжкое иго твое.",
+        "NEO": "J’étais irrité contre mon peuple ; j’ai laissé profaner mon héritage et je les ai livrés entre tes mains... Tu ne leur fis pas de miséricorde ; sur le vieillard tu as fait peser lourdement ton joug.",
+        "NAB": "Angry at my people, I profaned my inheritance, And I gave them into your hand; but you showed them no mercy, And upon old men you laid a very heavy yoke.",
+        "VAT_ES": "para que se conozca, desde el Oriente y el Occidente, que no hay nada fuera de mí. Yo soy el Señor, y no hay otro.",
+        "CEI": "Ero adirato contro il mio popolo, avevo lasciato profanare la mia eredità; perciò lo misi in tuo potere, ma tu non mostrasti loro pietà; perfino sui vecchi facesti gravare il tuo giogo pesante."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֣אמְרִ֔י לְ/עוֹלָ֖ם אֶהְיֶ֣ה גְבָ֑רֶת עַ֣ד לֹא שַׂ֥מְתְּ אֵ֨לֶּה֙ עַל לִבֵּ֔/ךְ לֹ֥א זָכַ֖רְתְּ אַחֲרִיתָֽ/הּ׃",
+        "LXX": "καὶ εἶπας Εἰς τὸν αἰῶνα ἔσομαι ἄρχουσα. οὐκ ἐνόησας ταῦτα ἐν τῇ καρδίᾳ σου, οὐδὲ ἐμνήσθης τὰ ἔσχατα.",
+        "VUL": "Et dixisti : In sempiternum ero domina./ Non posuisti hæc super cor tuum,/ neque recordata es novissimi tui./",
+        "SYN": "И ты говорила: \"вечно буду госпожею\", а не представляла того в уме твоем, не помышляла, что будет после.",
+        "NEO": "Tu as dit : « Je suis souveraine à jamais ! » de sorte que tu n’as pas pris garde à ces choses, tu n’as pas songé à la fin de tout cela.",
+        "NAB": "You said, \"I shall remain always, a sovereign mistress forever!\" But you did not lay these things to heart, you disregarded their outcome.",
+        "VAT_ES": "Yo formo la luz y creo las tinieblas, hago la felicidad y creo la desgracia: yo, el Señor, soy el que hago todo esto.",
+        "CEI": "Tu pensavi: \"Sempre io sarò signora, sempre\". Non ti sei mai curata di questi avvenimenti, non hai mai pensato quale sarebbe stata la fine."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֞ה שִׁמְעִי זֹ֤את עֲדִינָה֙ הַ/יּוֹשֶׁ֣בֶת לָ/בֶ֔טַח הָ/אֹֽמְרָה֙ בִּ/לְבָ֔בָ/הּ אֲנִ֖י וְ/אַפְסִ֣/י ע֑וֹד לֹ֤א אֵשֵׁב֙ אַלְמָנָ֔ה וְ/לֹ֥א אֵדַ֖ע שְׁכֽוֹל׃",
+        "LXX": "Νῦν δὲ ἄκουε ταῦτα, τρυφερά, ἡ καθημένη, ἡ πεποιθυῖα, ἡ λέγουσα ἐν καρδίᾳ αὐτῆς Ἐγώ εἰμι, καὶ οὐκ ἔστιν ἑτέρα, οὐ καθιῶ χήρα οὐδὲ γνώσομαι ὀρφανείαν.",
+        "VUL": "Et nunc audi hæc delicata,/ et habitans confidenter,/ quæ dicis in corde tuo :/ Ego sum, et non est præter me amplius ;/ non sedebo vidua,/ et ignorabo sterilitatem./",
+        "SYN": "Но ныне выслушай это, изнеженная, живущая беспечно, говорящая в сердце своем: \"я, - и другой подобной мне нет; не буду сидеть вдовою и не буду знать потери детей\".",
+        "NEO": "Et maintenant, écoute ceci, voluptueuse, assise en sécurité, toi qui disais en ton cœur : « Moi, et rien que moi ! Je ne serai jamais veuve, ni privée de mes enfants. »",
+        "NAB": "Now hear this, voluptuous one, enthroned securely, Saying to yourself, \"I, and no one else! I shall never be a widow, or suffer the loss of my children\" -",
+        "VAT_ES": "Destilen, cielos, desde lo alto, y que las nubes derramen la justicia! Que se abra la tierra y produzca la salvación, y que también haga germinar la justicia! Yo, el Señor, he creado todo esto.",
+        "CEI": "Ora ascolta questo, o voluttuosa che te ne stavi sicura, che pensavi: \"Io e nessuno fuori di me! Non resterò vedova, non conoscerò la perdita dei figli\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/תָבֹאנָה֩ לָּ֨/ךְ שְׁתֵּי אֵ֥לֶּה רֶ֛גַע בְּ/י֥וֹם אֶחָ֖ד שְׁכ֣וֹל וְ/אַלְמֹ֑ן כְּ/תֻמָּ/ם֙ בָּ֣אוּ עָלַ֔יִ/ךְ בְּ/רֹ֣ב כְּשָׁפַ֔יִ/ךְ בְּ/עָצְמַ֥ת חֲבָרַ֖יִ/ךְ מְאֹֽד׃",
+        "LXX": "νῦν δὲ ἥξει ἐξέφνης ἐπὶ σὲ ἐν τῇ φαρμακίᾳ σου, ἐν τῇ ἰσχύι τῶν ἐπαοιδῶν σου σφόδρα,",
+        "VUL": "Venient tibi duo hæc/ subito in die una,/ sterilitas et viduitas :/ universa venerunt super te,/ propter multitudinem maleficiorum tuorum,/ et propter duritiam incantatorum tuorum vehementem./",
+        "SYN": "Но внезапно, в один день, придет к тебе то и другое, потеря детей и вдовство; в полной мере придут они на тебя, несмотря на множество чародейств твоих и на великую силу волшебств твоих.",
+        "NEO": "Ces deux choses t’arriveront, soudain, en un même jour, et la perte de tes enfants et le veuvage ; elles viendront sur toi dans leur plénitude, malgré la multitude de tes sortilèges, malgré la puissance de tes enchantements.",
+        "NAB": "Both these things shall come to you suddenly, in a single day: Complete bereavement and widowhood shall come upon you For your many sorceries and the great number of your spells;",
+        "VAT_ES": "&iexcl;Ay del que desafía al que lo modela, siendo sólo un tiesto entre los tiestos de la tierra! &iquest;Acaso la arcilla dice al alfarero: «&iquest;Qué haces?» o «Tu obra no tiene asas»?",
+        "CEI": "Ma ti accadranno queste due cose, d'improvviso, in un sol giorno; perdita dei figli e vedovanza piomberanno su di te, nonostante la moltitudine delle tue magie, la forza dei tuoi molti scongiuri."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/תִּבְטְחִ֣י בְ/רָעָתֵ֗/ךְ אָמַרְתְּ֙ אֵ֣ין רֹאָ֔/נִי חָכְמָתֵ֥/ךְ וְ/דַעְתֵּ֖/ךְ הִ֣יא שׁוֹבְבָ֑תֶ/ךְ וַ/תֹּאמְרִ֣י בְ/לִבֵּ֔/ךְ אֲנִ֖י וְ/אַפְסִ֥/י עֽוֹד׃",
+        "LXX": "τῇ ἐλπίδι τῆς πονηρίας σου. σὺ γὰρ εἶπας Ἐγώ εἰμι, καὶ οὐκ ἔστιν ἑτέρα· γνῶθι, ἡ σύνεσις τούτων ἔσται καὶ ἡ πορνία σου σοὶ αἰσχύνη· καὶ εἶπας τῇ καρδίᾳ σου Ἐγώ εἰμι, καὶ οὐκ ἔστιν ἑτέρα.",
+        "VUL": "Et fiduciam habuisti in malitia tua,/ et dixisti : Non est qui videat me./ Sapientia tua et scientia tua,/ hæc decepit te./ Et dixisti in corde tuo :/ Ego sum, et præter me non est altera./",
+        "SYN": "Ибо ты надеялась на злодейство твое, говорила: \"никто не видит меня\". Мудрость твоя и знание твое - они сбили тебя с пути; и ты говорила в сердце твоем: \"я, и никто кроме меня\".",
+        "NEO": "Tu te confiais dans ta malice ; tu disais : « Nul ne me voit ! » Ta sagesse et ta science, ce sont elles qui t’ont séduite, alors que tu disais en ton cœur : « Moi, et rien que moi ! »",
+        "NAB": "Because you felt secure in your wickedness, and said, \"No one sees me.\" Your wisdom and your knowledge led you astray, And you said to yourself, \"I, and no one else!\"",
+        "VAT_ES": "&iexcl;Ay del que dice a un padre: «&iquest;Qué has engendrado?», o a una mujer: «&iquest;Qué has dado a luz?»!",
+        "CEI": "Confidavi nella tua malizia, dicevi: \"Nessuno mi vede\". La tua saggezza e il tuo sapere ti hanno sviato. Eppure dicevi in cuor tuo: \"Io e nessuno fuori di me\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/בָ֧א עָלַ֣יִ/ךְ רָעָ֗ה לֹ֤א תֵדְעִי֙ שַׁחְרָ֔/הּ וְ/תִפֹּ֤ל עָלַ֨יִ/ךְ֙ הֹוָ֔ה לֹ֥א תוּכְלִ֖י כַּפְּרָ֑/הּ וְ/תָבֹ֨א עָלַ֧יִ/ךְ פִּתְאֹ֛ם שׁוֹאָ֖ה לֹ֥א תֵדָֽעִי׃",
+        "LXX": "καὶ ἥξει ἐπὶ σὲ ἀπώλεια καὶ οὐ μὴ γνῷς, βόθυνος, καὶ ἐμπεσῇ εἰς αὐτόν· καὶ ἥξει ἐπὶ σὲ ταλαιπωρία, καὶ οὐ μὴ δυνήσῃ καθαρὰ γενέσθαι· καὶ ἥξει ἐπὶ σὲ ἐξαπίνης ἀπωλία καὶ οὐ γνώσῃ.",
+        "VUL": "Veniet super te malum,/ et nescies ortum ejus ;/ et irruet super te calamitas/ quam non poteris expiare ;/ veniet super te repente miseria/ quam nescies./",
+        "SYN": "И придет на тебя бедствие: ты не узнаешь, откуда оно поднимется; и нападет на тебя беда, которой ты не в силах будешь отвратить, и внезапно придет на тебя пагуба, о которой ты и не думаешь.",
+        "NEO": "Et le malheur viendra sur toi sans que tu puisses le conjurer ; la calamité fondra sur toi, sans que tu puisses la détourner ; et la ruine viendra sur toi soudain, sans que tu t’en doutes.",
+        "NAB": "But upon you shall come evil you will not know how to predict; Disaster shall befall you which you cannot allay. Suddenly there shall come upon you ruin which you will not expect.",
+        "VAT_ES": "Así habla el Señor, el Santo de Israel, el que lo modela: &iquest;Acaso van a interrogarme sobre mis hijos y a darme órdenes sobre la obra de mis manos?",
+        "CEI": "Ti verrà addosso una sciagura che non saprai scongiurare; ti cadrà sopra una calamità che non potrai evitare. Su di te piomberà improvvisa una catastrofe che non prevederai."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "עִמְדִי נָ֤א בַ/חֲבָרַ֨יִ/ךְ֙ וּ/בְ/רֹ֣ב כְּשָׁפַ֔יִ/ךְ בַּ/אֲשֶׁ֥ר יָגַ֖עַתְּ מִ/נְּעוּרָ֑יִ/ךְ אוּלַ֛י תּוּכְלִ֥י הוֹעִ֖יל אוּלַ֥י תַּעֲרֽוֹצִי׃",
+        "LXX": "στῆθι νῦν ἐν ταῖς ἐπαοιδαῖς σου καὶ τῇ πολλῇ φαρμακίᾳ σου, ἃ ἐμάνθανες ἐκ νεότητός σου, εἰ δυνήσει ὠφεληθῆναι.",
+        "VUL": "Sta cum incantatoribus tuis/ et cum multitudine maleficiorum tuorum,/ in quibus laborasti ab adolescentia tua,/ si forte quod prosit tibi,/ aut si possis fieri fortior./",
+        "SYN": "Оставайся же с твоими волшебствами и со множеством чародейств твоих, которыми ты занималась от юности твоей: может быть, пособишь себе, может быть, устоишь.",
+        "NEO": "Reste donc avec tes enchantements, et avec la multitude de tes sortilèges, auxquels tu t’es adonnée dès ta jeunesse ! Peut-être en pourras-tu tirer profit, peut-être inspireras-tu la terreur !",
+        "NAB": "Keep up, now, your spells and your many sorceries. Perhaps you can make them avail, perhaps you can strike terror!",
+        "VAT_ES": "Soy yo el que hice la tierra y he creado al hombre sobre ella; mis manos extendieron el cielo y yo dirijo todo su ejército.",
+        "CEI": "Stà pure ferma nei tuoi incantesimi e nella moltitudine delle magie, per cui ti sei affaticata dalla giovinezza: forse potrai giovartene, forse potrai far paura!"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "נִלְאֵ֖ית בְּ/רֹ֣ב עֲצָתָ֑יִ/ךְ יַעַמְדוּ נָ֨א וְ/יוֹשִׁיעֻ֜/ךְ הברו הֹבְרֵ֣י שָׁמַ֗יִם הַֽ/חֹזִים֙ בַּ/כּ֣וֹכָבִ֔ים מֽוֹדִיעִם֙ לֶ/חֳדָשִׁ֔ים מֵ/אֲשֶׁ֥ר יָבֹ֖אוּ עָלָֽיִ/ךְ׃",
+        "LXX": "κεκοπίακας ἐν ταῖς βουλαῖς σου· στήτωσαν καὶ σωσάτωσάν σε οἱ ἀστρολόγοι τοῦ οὐρανοῦ, οἱ ὁρῶντες τοὺς ἀστέρας ἀναγγειλάτωσάν σοι τί μέλλει ἐπὶ σὲ ἔρχεσθαι.",
+        "VUL": "Defecisti in multitudine consiliorum tuorum./ Stent, et salvent te/ augures cæli,/ qui contemplabantur sidera,/ et supputabant menses,/ ut ex eis annuntiarent ventura tibi./",
+        "SYN": "Ты утомлена множеством советов твоих; пусть же выступят наблюдатели небес и звездочеты и предвещатели по новолуниям, и спасут тебя от того, что должно приключиться тебе.",
+        "NEO": "Tu t’es fatiguée à force de consultations ; qu’ils se présentent donc et qu’ils te sauvent, ceux qui mesurent le ciel, qui observent les astres, qui font connaître à chaque nouvelle lune ce qui doit t’arriver.",
+        "NAB": "You wearied yourself with many consultations, at which you toiled from your youth; Let the astrologers stand forth to save you, the stargazers who forecast at each new moon what would happen to you.",
+        "VAT_ES": "Yo lo suscité en la justicia y allanaré todos sus caminos. El reconstruirá mi ciudad y repatriará a mis desterrados, sin pago ni soborno, dice el Señor de los ejércitos.",
+        "CEI": "Ti sei stancata dei tuoi molti consiglieri: si presentino e ti salvino gli astrologi che osservano le stelle, i quali ogni mese ti pronosticano che cosa ti capiterà."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הִנֵּ֨ה הָי֤וּ כְ/קַשׁ֙ אֵ֣שׁ שְׂרָפָ֔תַ/ם לֹֽא יַצִּ֥ילוּ אֶת נַפְשָׁ֖/ם מִ/יַּ֣ד לֶֽהָבָ֑ה אֵין גַּחֶ֣לֶת לַ/חְמָ֔ם א֖וּר לָ/שֶׁ֥בֶת נֶגְדּֽ/וֹ׃",
+        "LXX": "ἰδοὺ πάντες ὡς φρύγανα ἐπὶ πυρὶ κατακαυθήσονται, καὶ οὐ μὴ ἐξέλωνται τὴν ψυχὴν αὐτῶν ἐκ φλογός· ὅτι ἔχεις ἄνθρακας πυρός, κάθισαι ἐπ’ αὐτούς.",
+        "VUL": "Ecce facti sunt quasi stipula,/ ignis combussit eos ;/ non liberabunt animam suam/ de manu flammæ ;/ non sunt prunæ quibus calefiant,/ nec focus ut sedeant ad eum./",
+        "SYN": "Вот они, как солома: огонь сожег их, - не избавили души своей от пламени; не осталось угля, чтобы погреться, ни огня, чтобы посидеть перед ним.",
+        "NEO": "Voici qu’ils sont devenus comme le chaume : le feu les consumera, ils ne sauveront pas leur vie de la puissance de la flamme ; ce n’est pas une braise pour se chauffer, ni un feu pour s’asseoir devant.",
+        "NAB": "Lo, they are like stubble, fire consumes them; They cannot save themselves from the spreading flames. This is no warming ember, no fire to sit before.",
+        "VAT_ES": "Así habla el Señor: Las ganancias de Egipto, las mercancías de Cus, y los hombres de Sebá, de elevada estatura, desfilarán ante ti y te pertenecerán; irán detrás de ti, desfilarán encadenados, se postrarán ante ti y te dirán suplicantes: «Sólo en ti está Dios, y no hay otro; los dioses no son nada».",
+        "CEI": "Ecco, essi sono come stoppia: il fuoco li consuma; non salveranno se stessi dal potere delle fiamme. Non ci sarà bracia per scaldarsi, né fuoco dinanzi al quale sedersi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כֵּ֥ן הָיוּ לָ֖/ךְ אֲשֶׁ֣ר יָגָ֑עַתְּ סֹחֲרַ֣יִ/ךְ מִ/נְּעוּרַ֗יִ/ךְ אִ֤ישׁ לְ/עֶבְר/וֹ֙ תָּע֔וּ אֵ֖ין מוֹשִׁיעֵֽ/ךְ׃",
+        "LXX": "οὗτοι ἔσονταί σοι βοήθεια· ἐκοπίασας ἐν τῇ μεταβολῇ ἐκ νεότητος, ἄνθρωπος καθ’ ἑαυτὸν ἐπλανήθη· σοὶ δὲ οὐκ ἔσται σωτηρία.",
+        "VUL": "Sic facta sunt tibi in quibuscumque laboraveras :/ negotiatores tui ab adolescentia tua,/ unusquisque in via sua erraverunt ;/ non est qui salvet te.]",
+        "SYN": "Такими стали для тебя те, с которыми ты трудилась, с которыми вела торговлю от юности твоей. Каждый побрел в свою сторону; никто не спасает тебя.",
+        "NEO": "Tels sont pour toi ceux pour qui tu t’es fatiguée ; ceux avec qui tu trafiquas dès ta jeunesse : ils fuient chacun de son côté ; il n’y a personne qui te sauve !",
+        "NAB": "Thus do your wizards serve you with whom you have toiled from your youth; Each wanders his own way, with none to save you.",
+        "VAT_ES": "&iexcl;Realmente, tú eres un Dios que se oculta, Dios de Israel, Salvador!",
+        "CEI": "Così sono diventati per te i tuoi maghi, con i quali ti sei affaticata fin dalla giovinezza; ognuno se ne va per suo conto, nessuno ti viene in aiuto."
+      }
+    }
+  }
+}

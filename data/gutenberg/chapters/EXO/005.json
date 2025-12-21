@@ -1,0 +1,429 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_005",
+  "book_key": "EXO",
+  "sequence": 5,
+  "chapter_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/אַחַ֗ר בָּ֚אוּ מֹשֶׁ֣ה וְ/אַהֲרֹ֔ן וַ/יֹּאמְר֖וּ אֶל פַּרְעֹ֑ה כֹּֽה אָמַ֤ר יְהוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל שַׁלַּח֙ אֶת עַמִּ֔/י וְ/יָחֹ֥גּוּ לִ֖/י בַּ/מִּדְבָּֽר׃",
+        "LXX": "Καὶ μετὰ ταῦτα εἰσῆλθεν Μωυσῆς καὶ Ἀαρὼν πρὸς Φαραὼ καὶ εἶπαν αὐτῷ Τάδε λέγει Κύριος ὁ θεὸς Ἰσραήλ Ἐξαπόστειλον τὸν λαόν μου, ἵνα μοι ἑορτάσωσιν ἐν τῇ ἐρήμῳ.",
+        "VUL": "Post hæc ingressi sunt Moyses et Aaron, et dixerunt Pharaoni : Hæc dicit Dominus Deus Israël : Dimitte populum meum ut sacrificet mihi in deserto.",
+        "SYN": "После сего Моисей и Аарон пришли к фараону и сказали [ему]: так говорит Господь, Бог Израилев: отпусти народ Мой, чтоб он совершил Мне праздник в пустыне.",
+        "NEO": "Ensuite Moïse et Aaron se rendirent auprès de Pharaon et lui dirent : « Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël : Laisse aller mon peuple, pour qu’il célèbre une fête en mon honneur dans le désert. »",
+        "NAB": "After that, Moses and Aaron went to Pharaoh and said, \"Thus says the LORD, the God of Israel: Let my people go, that they may celebrate a feast to me in the desert.\"",
+        "VAT_ES": "Inmediatamente, Moisés y Aarón fueron a decir al Faraón: «Así habla el Señor, el Dios de Israel: Deja partir a mi pueblo, para que celebre en el desierto una fiesta en mi honor».",
+        "CEI": "Dopo, Mosè e Aronne vennero dal Faraone e gli annunziarono: \"Dice il Signore, il Dio d'Israele: Lascia partire il mio popolo perché mi celebri una festa nel deserto!\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר פַּרְעֹ֔ה מִ֤י יְהוָה֙ אֲשֶׁ֣ר אֶשְׁמַ֣ע בְּ/קֹל֔/וֹ לְ/שַׁלַּ֖ח אֶת יִשְׂרָאֵ֑ל לֹ֤א יָדַ֨עְתִּי֙ אֶת יְהוָ֔ה וְ/גַ֥ם אֶת יִשְׂרָאֵ֖ל לֹ֥א אֲשַׁלֵּֽחַ׃",
+        "LXX": "καὶ εἶπεν Φαραώ Τίς ἐστιν οὗ εἰσακούσομαι τῆς φωνῆς αὐτοῦ ὥστε ἐξαποστεῖλαι τοὺς υἱοὺς Ἰσραήλ; οὐκ οἶδα τὸν κύριον, καὶ τὸν Ἰσραὴλ οὐκ ἐξαποστέλλω.",
+        "VUL": "At ille respondit : Quis est Dominus, ut audiam vocem ejus, et dimittam Israël ? nescio Dominum, et Israël non dimittam.",
+        "SYN": "Но фараон сказал: кто такой Господь, чтоб я послушался голоса Его _и_ отпустил [сынов] Израиля? я не знаю Господа и Израиля не отпущу.",
+        "NEO": "Pharaon répondit : « Qui est \\+w Yahweh|strong=\"H3068\"\\+w** pour que j’obéisse à sa voix, en laissant aller Israël ? Je ne connais pas \\+w Yahweh|strong=\"H3068\"\\+w**, et je ne laisserai pas aller Israël. »",
+        "NAB": "Pharaoh answered, \"Who is the LORD, that I should heed his plea to let Israel go? I do not know the LORD; even if I did, I would not let Israel go.\"",
+        "VAT_ES": "Pero el Faraón respondió: «&iquest;Y quien es el Señor para que yo le obedezca dejando partir a Israel? Yo no conozco al Señor y no dejaré partir a Israel».",
+        "CEI": "Il faraone rispose: \"Chi è il Signore, perché io debba ascoltare la sua voce per lasciar partire Israele? Non conosco il Signore e neppure lascerò partire Israele!\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמְר֔וּ אֱלֹהֵ֥י הָ/עִבְרִ֖ים נִקְרָ֣א עָלֵ֑י/נוּ נֵ֣לֲכָה נָּ֡א דֶּרֶךְ֩ שְׁלֹ֨שֶׁת יָמִ֜ים בַּ/מִּדְבָּ֗ר וְ/נִזְבְּחָה֙ לַֽ/יהוָ֣ה אֱלֹהֵ֔י/נוּ פֶּ֨ן יִפְגָּעֵ֔/נוּ בַּ/דֶּ֖בֶר א֥וֹ בֶ/חָֽרֶב׃",
+        "LXX": "καὶ λέγουσιν αὐτῷ Ὁ θεὸς τῶν Ἐβραίων προσκέκληται ἡμᾶς· πορευσόμεθα οὖν ὁδὸν τριῶν ἡμερῶν εἰς τὴν ἔρημον, ὅπως θύσωμεν τῷ θεῷ ἡμῶν, μή ποτε συναντήσῃ ἡμῖν θάνατος ἢ φόνος.",
+        "VUL": "Dixeruntque : Deus Hebræorum vocavit nos, ut eamus viam trium dierum in solitudinem, et sacrificemus Domino Deo nostro : ne forte accidat nobis pestis aut gladius.",
+        "SYN": "Они сказали [ему]: Бог Евреев призвал нас; отпусти нас в пустыню на три дня пути принести жертву Господу, Богу нашему, чтобы Он не поразил нас язвою, или мечом.",
+        "NEO": "Ils dirent : « Le Dieu des Hébreux s’est présenté à nous. Permets-nous de faire trois journées de marche au désert, pour offrir des sacrifices à \\+w Yahweh|strong=\"H3068\"\\+w**, afin qu’il ne nous frappe pas de la peste ou de l’épée. »",
+        "NAB": "They replied, \"The God of the Hebrews has sent us word. Let us go a three days' journey in the desert, that we may offer sacrifice to the LORD, our God; otherwise he will punish us with pestilence or the sword.\"",
+        "VAT_ES": "Ellos dijeron: «El Dios de los hebreos vino a nuestro encuentro, y ahora tenemos que realizar una marcha de tres días por el desierto, para ofrecer sacrificios al Señor, nuestro Dios. De lo contrario él nos castigará con la peste o la espada».",
+        "CEI": "Ripresero: \"Il Dio degli Ebrei si è presentato a noi. Ci sia dunque concesso di partire per un viaggio di tre giorni nel deserto e celebrare un sacrificio al Signore, nostro Dio, perché non ci colpisca di peste o di spada!\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֲלֵ/הֶם֙ מֶ֣לֶךְ מִצְרַ֔יִם לָ֚/מָּה מֹשֶׁ֣ה וְ/אַהֲרֹ֔ן תַּפְרִ֥יעוּ אֶת הָ/עָ֖ם מִ/מַּֽעֲשָׂ֑י/ו לְכ֖וּ לְ/סִבְלֹתֵי/כֶֽם׃",
+        "LXX": "καὶ εἶπεν αὐτοῖς ὁ βασιλεὺς Αἰγύπτου Ἵνα τί, Μωυσῆ καὶ Ἀαρών, διαστρέφετε τὸν λαόν μου ἀπὸ τῶν ἔργων; ἀπέλθατε ἕκαστος ὑμῶν πρὸς τὰ ἔργα αὐτοῦ.",
+        "VUL": "Ait ad eos rex Ægypti : Quare Moyses et Aaron sollicitatis populum ab operibus suis ? ite ad onera vestra.",
+        "SYN": "И сказал им царь Египетский: для чего вы, Моисей и Аарон, отвлекаете народ [мой] от дел его? ступайте [каждый из вас] на свою работу.",
+        "NEO": "Mais le roi d’Égypte leur dit : « Pourquoi, Moïse et Aaron, détournez-vous le peuple de son ouvrage ? Allez à vos corvées ! »",
+        "NAB": "The king of Egypt answered them, \"What do you mean, Moses and Aaron, by taking the people away from their work? Off to your labor!",
+        "VAT_ES": "El rey de Egipto les respondió: «&iquest;Por qué ustedes, Moisés y Aarón, se empeñan en apartar al pueblo de sus tareas? Vuelvan al trabajo que les ha sido impuesto».",
+        "CEI": "Il re di Egitto disse loro: \"Perché, Mosè e Aronne, distogliete il popolo dai suoi lavori? Tornate ai vostri lavori!\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר פַּרְעֹ֔ה הֵן רַבִּ֥ים עַתָּ֖ה עַ֣ם הָ/אָ֑רֶץ וְ/הִשְׁבַּתֶּ֥ם אֹתָ֖/ם מִ/סִּבְלֹתָֽ/ם׃",
+        "LXX": "καὶ εἶπεν Φαραώ Ἰδοὺ νῦν πολυπληθεῖ ὁ λαός· μὴ οὖν καταπαύσωμεν αὐτοὺς ἀπὸ τῶν ἔργων.",
+        "VUL": "Dixitque Pharao : Multus est populus terræ : videtis quod turba succreverit : quanto magis si dederitis eis requiem ab operibus ?",
+        "SYN": "И сказал фараон: вот, народ в земле сей многочислен, и вы отвлекаете его от работ его.",
+        "NEO": "Pharaon dit : « Voici que le peuple du pays est maintenant nombreux, et vous lui feriez interrompre ses corvées ! »",
+        "NAB": "Look how numerous the people of the land are already,\" continued Pharaoh, \"and yet you would give them rest from their labor!\"",
+        "VAT_ES": "El pensaba así: «Ellos son ahora más numerosos que los nativos del país, &iquest;y todavía debo tolerarles que interrumpan sus trabajos?».",
+        "CEI": "Il faraone aggiunse: \"Ecco, ora sono numerosi più del popolo del paese, voi li vorreste far cessare dai lavori forzati!\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יְצַ֥ו פַּרְעֹ֖ה בַּ/יּ֣וֹם הַ/ה֑וּא אֶת הַ/נֹּגְשִׂ֣ים בָּ/עָ֔ם וְ/אֶת שֹׁטְרָ֖י/ו לֵ/אמֹֽר׃",
+        "LXX": "συνέταξεν δὲ Φαραὼ τοῖς ἐργοδιώκταις τοῦ λαοῦ καὶ τοῖς γραμματεῦσιν λέγων",
+        "VUL": "Præcepit ergo in die illo præfectis operum et exactoribus populi, dicens :",
+        "SYN": "И в тот же день фараон дал повеление приставникам над народом и надзирателям, говоря:",
+        "NEO": "Ce jour-là même, Pharaon donna cet ordre aux exacteurs du peuple et aux scribes :",
+        "NAB": "That very day Pharaoh gave the taskmasters and foremen of the people this order:",
+        "VAT_ES": "Ese mismo día, el Faraón dio a los capataces y a los inspectores del pueblo las siguientes instrucciones:",
+        "CEI": "In quel giorno il faraone diede questi ordini ai sorveglianti del popolo e ai suoi scribi: \""
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "לֹ֣א תֹאסִפ֞וּ/ן לָ/תֵ֨ת תֶּ֧בֶן לָ/עָ֛ם לִ/לְבֹּ֥ן הַ/לְּבֵנִ֖ים כִּ/תְמ֣וֹל שִׁלְשֹׁ֑ם הֵ֚ם יֵֽלְכ֔וּ וְ/קֹשְׁשׁ֥וּ לָ/הֶ֖ם תֶּֽבֶן׃",
+        "LXX": "Οὐκέτι προστεθήσεται διδόναι ἄχυρον τῷ λαῷ εἰς τὴν πλινθουργίαν καθάπερ ἐχθὲς καὶ τρίτην ἡμέραν· αὐτοὶ πορευέσθωσαν καὶ συναγαγέτωσαν ἑαυτοῖς ἄχυρα.",
+        "VUL": "Nequaquam ultra dabitis paleas populo ad conficiendos lateres, sicut prius : sed ipsi vadant, et colligant stipulas.",
+        "SYN": "не давайте впредь народу соломы для делания кирпича, как вчера и третьего дня, пусть они сами ходят и собирают себе солому,",
+        "NEO": "« Vous ne donnerez plus, comme on l’a fait jusqu’ici, de paille au peuple pour faire des briques ; qu’ils aillent eux-mêmes ramasser de la paille.",
+        "NAB": "\"You shall no longer supply the people with straw for their brickmaking as you have previously done. Let them go and gather straw themselves!",
+        "VAT_ES": "«No sigan entregando a esa gente la paja para hacer los ladrillos, como lo hicieron hasta ahora. Que vayan a juntarla ellos mismos.",
+        "CEI": "Non darete più la paglia al popolo per fabbricare i mattoni come facevate prima. Si procureranno da sé la paglia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אֶת מַתְכֹּ֨נֶת הַ/לְּבֵנִ֜ים אֲשֶׁ֣ר הֵם֩ עֹשִׂ֨ים תְּמ֤וֹל שִׁלְשֹׁם֙ תָּשִׂ֣ימוּ עֲלֵי/הֶ֔ם לֹ֥א תִגְרְע֖וּ מִמֶּ֑/נּוּ כִּֽי נִרְפִּ֣ים הֵ֔ם עַל כֵּ֗ן הֵ֤ם צֹֽעֲקִים֙ לֵ/אמֹ֔ר נֵלְכָ֖ה נִזְבְּחָ֥ה לֵ/אלֹהֵֽי/נוּ׃",
+        "LXX": "καὶ τὴν σύνταξιν τῆς πλινθίας ἧς αὐτοὶ ποιοῦσιν καθ’ ἑκάστην ἡμέραν ἐπιβαλεῖς αὐτοῖς, οὐκ ἀφελεῖς οὐδέν· σχολάζουσιν γάρ, διὰ τοῦτο κεκράγασιν λέγοντες Ἐγερθῶμεν καὶ θύσωμεν τῷ θεῷ ἡμῶν.",
+        "VUL": "Et mensuram laterum, quam prius faciebant, imponetis super eos, nec minuetis quidquam : vacant enim, et idcirco vociferantur, dicentes : Eamus, et sacrificemus Deo nostro.",
+        "SYN": "а кирпичей наложите на них то же урочное число, какое они делали вчера и третьего дня, и не убавляйте; они праздны, потому и кричат: пойдем, принесем жертву Богу нашему;",
+        "NEO": "Néanmoins vous lui imposerez la quantité de briques qu’ils faisaient auparavant, sans en rien retrancher, car ce sont des paresseux ; voilà pourquoi ils crient, en disant : Nous voudrions aller faire des sacrifices à notre Dieu.",
+        "NAB": "Yet you shall levy upon them the same quota of bricks as they have previously made. Do not reduce it. They are lazy; that is why they are crying, 'Let us go to offer sacrifice to our God.'",
+        "VAT_ES": "Pero exíjanles la misma cantidad de ladrillos que fabricaban antes, sin descontarles ni uno solo, porque son unos holgazanes. Por eso gritan: «&iexcl;Déjanos ir a ofrecer sacrificios a nuestro Dios!»",
+        "CEI": "Però voi dovete esigere il numero di mattoni che facevano prima, senza ridurlo. Perché sono fannulloni; per questo protestano: Vogliamo partire, dobbiamo sacrificare al nostro Dio!"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "תִּכְבַּ֧ד הָ/עֲבֹדָ֛ה עַל הָ/אֲנָשִׁ֖ים וְ/יַעֲשׂוּ בָ֑/הּ וְ/אַל יִשְׁע֖וּ בְּ/דִבְרֵי שָֽׁקֶר׃",
+        "LXX": "βαρυνέσθω τὰ ἔργα τῶν ἀνθρώπων τούτων, καὶ μεριμνάτωσαν ταῦτα, καὶ μὴ μεριμνάτωσαν ἐν λόγοις κενοῖς.",
+        "VUL": "Opprimantur operibus, et expleant ea : ut non acquiescant verbis mendacibus.",
+        "SYN": "дать им больше работы, чтоб они работали и не занимались пустыми речами.",
+        "NEO": "Qu’on charge de travail ces gens-là ; qu’ils soient à la besogne et qu’ils ne prêtent plus l’oreille à des paroles de mensonge. »",
+        "NAB": "Increase the work for the men, so that they keep their mind on it and pay no attention to lying words.\"",
+        "VAT_ES": "Háganlos trabajar más duramente y que estén siempre ocupados; así no prestarán atención a esas patrañas».",
+        "CEI": "Pesi dunque il lavoro su questi uomini e vi si trovino impegnati; non diano retta a parole false!\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨צְא֜וּ נֹגְשֵׂ֤י הָ/עָם֙ וְ/שֹׁ֣טְרָ֔י/ו וַ/יֹּאמְר֥וּ אֶל הָ/עָ֖ם לֵ/אמֹ֑ר כֹּ֚ה אָמַ֣ר פַּרְעֹ֔ה אֵינֶ֛/נִּי נֹתֵ֥ן לָ/כֶ֖ם תֶּֽבֶן׃",
+        "LXX": "κατέσπευδον δὲ αὐτοὺς οἱ ἐργοδιῶκται καὶ οἱ γραμματεῖς, καὶ ἔλεγον πρὸς τὸν λαὸν λέγοντες Τάδε λέγει Φαραώ Οὐκέτι δίδωμι ὑμῖν ἄχυρα·",
+        "VUL": "Igitur egressi præfecti operum et exactores ad populum, dixerunt : Sic dicit Pharao : Non do vobis paleas :",
+        "SYN": "И вышли приставники народа и надзиратели его и сказали народу: так говорит фараон: не даю вам соломы;",
+        "NEO": "Les exacteurs du peuple et les scribes vinrent donc dire au peuple : « Ainsi parle Pharaon : Je ne vous donne plus de paille ;",
+        "NAB": "So the taskmasters and foremen of the people went out and told them, \"Thus says Pharaoh: I will not provide you with straw.",
+        "VAT_ES": "En seguida salieron los capataces del pueblo, junto con los inspectores, y dijeron a la multitud: «Así habla el Faraón: «De ahora en adelante no les daré más paja.",
+        "CEI": "I sorveglianti del popolo e gli scribi uscirono e parlarono al popolo: \"Ha ordinato il faraone: Io non vi dò più paglia."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "אַתֶּ֗ם לְכ֨וּ קְח֤וּ לָ/כֶם֙ תֶּ֔בֶן מֵ/אֲשֶׁ֖ר תִּמְצָ֑אוּ כִּ֣י אֵ֥ין נִגְרָ֛ע מֵ/עֲבֹדַתְ/כֶ֖ם דָּבָֽר׃",
+        "LXX": "αὐτοὶ πορευόμενοι συλλέγετε ἑαυτοῖς ἄχυρα ὅθεν ἐὰν εὕρητε, οὐ γὰρ ἀφαιρεῖται ἀπὸ τῆς συντάξεως ὑμῶν οὐθέν.",
+        "VUL": "ite, et colligite sicubi invenire poteritis, nec minuetur quidquam de opere vestro.",
+        "SYN": "сами пойдите, берите себе солому, где найдете, а от работы вашей ничего не убавляется.",
+        "NEO": "allez vous-mêmes prendre de la paille où vous en trouverez, car on ne retranchera rien de votre tâche. »",
+        "NAB": "Go and gather the straw yourselves, wherever you can find it. Yet there must not be the slightest reduction in your work.\"",
+        "VAT_ES": "Vayan ustedes mismos y tráiganla de donde puedan. Pero el rendimiento no deberá disminuir en lo más mínimo».",
+        "CEI": "Voi stessi andate a procurarvela dove ne troverete, ma non diminuisca il vostro lavoro\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥פֶץ הָ/עָ֖ם בְּ/כָל אֶ֣רֶץ מִצְרָ֑יִם לְ/קֹשֵׁ֥שׁ קַ֖שׁ לַ/תֶּֽבֶן׃",
+        "LXX": "καὶ διεσπάρη ὁ λαὸς ἐν ὅλῃ γῇ Αἰγύπτῳ συναγαγεῖν καλάμην εἰς ἄχυρα·",
+        "VUL": "Dispersusque est populus per omnem terram Ægypti ad colligendas paleas.",
+        "SYN": "И рассеялся народ по всей земле Египетской собирать жниво вместо соломы.",
+        "NEO": "Le peuple se répandit dans tout le pays d’Égypte pour ramasser du chaume pour en faire de la paille hachée.",
+        "NAB": "The people, then, scattered throughout the land of Egypt to gather stubble for straw,",
+        "VAT_ES": "Entonces el pueblo se dispersó por todo el territorio de Egipto para recoger los rastrojos, y abastecerse así de paja.",
+        "CEI": "Il popolo si disperse in tutto il paese d'Egitto a raccattare stoppie da usare come paglia."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/הַ/נֹּגְשִׂ֖ים אָצִ֣ים לֵ/אמֹ֑ר כַּלּ֤וּ מַעֲשֵׂי/כֶם֙ דְּבַר י֣וֹם בְּ/יוֹמ֔/וֹ כַּ/אֲשֶׁ֖ר בִּ/הְי֥וֹת הַ/תֶּֽבֶן׃",
+        "LXX": "οἱ δὲ ἐργοδιῶκται κατέσπευδον αὐτοὺς λέγοντες Συντελεῖτε τὰ ἔργα τὰ καθήκοντα καθ’ ἡμέραν καθάπερ καὶ ὅτε τὸ ἄχυρον ἐδίδοτο ὑμῖν.",
+        "VUL": "Præfecti quoque operum instabant, dicentes : Complete opus vestrum quotidie, ut prius facere solebatis quando dabantur vobis paleæ.",
+        "SYN": "Приставники же понуждали [их], говоря: выполняйте [урочную] работу свою каждый день, как и тогда, когда была _у_ _вас_ солома.",
+        "NEO": "Les exacteurs les pressaient, en disant : « Achevez vos travaux, ce qui est fixé pour chaque jour, comme lorsqu’on avait de la paille. »",
+        "NAB": "while the taskmasters kept driving them on, saying, \"Finish your work, the same daily amount as when your straw was supplied.\"",
+        "VAT_ES": "Los capataces, por su parte, los apremiaban diciendo: «Terminen el trabajo que se les fijó para cada día, como lo hacían cuando les daban la paja».",
+        "CEI": "Ma i sorveglianti li sollecitavano dicendo: \"Porterete a termine il vostro lavoro; ogni giorno il quantitativo giornaliero, come quando vi era la paglia\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֻּכּ֗וּ שֹֽׁטְרֵי֙ בְּנֵ֣י יִשְׂרָאֵ֔ל אֲשֶׁר שָׂ֣מוּ עֲלֵ/הֶ֔ם נֹגְשֵׂ֥י פַרְעֹ֖ה לֵ/אמֹ֑ר מַדּ֡וּעַ לֹא֩ כִלִּיתֶ֨ם חָקְ/כֶ֤ם לִ/לְבֹּן֙ כִּ/תְמ֣וֹל שִׁלְשֹׁ֔ם גַּם תְּמ֖וֹל גַּם הַ/יּֽוֹם׃",
+        "LXX": "καὶ ἐμαστιγώθησαν οἱ γραμματεῖς τοῦ γένους τῶν υἱῶν Ἰσραὴλ οἱ κατασταθέντες ἐπ’ αὐτοὺς ὑπὸ τῶν ἐπιστατῶν τοῦ Φαραώ, λέγοντες Διὰ τί οὐ συνετελέσατε τὰς συντάξεις ὑμῶν τῆς πλινθίας καθάπερ ἐχθὲς καὶ τρίτην ἡμέραν καὶ τὸ τῆς σήμερον;",
+        "VUL": "Flagellatique sunt qui præerant operibus filiorum Israël, ab exactoribus Pharaonis, dicentibus : Quare non impletis mensuram laterum sicut prius, nec heri, nec hodie ?",
+        "SYN": "А надзирателей из сынов Израилевых, которых поставили над ними приставники фараоновы, били, говоря: почему вы вчера и сегодня не изготовляете урочного числа кирпичей, как было до сих пор?",
+        "NEO": "On battit les scribes des enfants d’Israël, que les exacteurs de Pharaon avaient établis sur eux ; on disait : « Pourquoi n’avez-vous pas achevé hier et aujourd’hui votre tâche de briques, comme précédemment ? »",
+        "NAB": "The foremen of the Israelites, whom the taskmasters of Pharaoh had placed over them, were beaten, and were asked, \"Why have you not completed your prescribed amount of bricks yesterday and today, as before?\"",
+        "VAT_ES": "Y los capataces del Faraón golpearon a los inspectores israelitas que ellos habían designado, diciendo: «&iquest;Por qué ayer y hoy no completaron la cantidad establecida de ladrillos, como lo venían haciendo hasta ahora?».",
+        "CEI": "Bastonarono gli scribi degli Israeliti, quelli che i sorveglianti del faraone avevano costituiti loro capi, dicendo: \"Perché non avete portato a termine anche ieri e oggi, come prima, il vostro numero di mattoni?\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֗אוּ שֹֽׁטְרֵי֙ בְּנֵ֣י יִשְׂרָאֵ֔ל וַ/יִּצְעֲק֥וּ אֶל פַּרְעֹ֖ה לֵ/אמֹ֑ר לָ֧/מָּה תַעֲשֶׂ֦ה כֹ֖ה לַ/עֲבָדֶֽי/ךָ׃",
+        "LXX": "εἰσελθόντες δὲ οἱ γραμματεῖς τῶν υἱῶν Ἰσραὴλ κατεβόησαν πρὸς Φαραὼ λέγοντες Ἵνα τί οὕτως ποιεῖς τοῖς σοῖς οἰκέταις;",
+        "VUL": "Veneruntque præpositi filiorum Israël, et vociferati sunt ad Pharaonem dicentes : Cur ita agis contra servos tuos ?",
+        "SYN": "И пришли надзиратели сынов Израилевых и возопили к фараону, говоря: для чего ты так поступаешь с рабами твоими?",
+        "NEO": "Les scribes des enfants d’Israël allèrent se plaindre à Pharaon, en disant : « Pourquoi en agis-tu ainsi envers tes serviteurs ?",
+        "NAB": "Then the Israelite foremen came and made this appeal to Pharaoh: \"Why do you treat your servants in this manner?",
+        "VAT_ES": "Los inspectores de los israelitas fueron a quejarse al Faraón, diciendo: «&iquest;Por qué tratas así a tus servidores?",
+        "CEI": "Allora gli scribi degli Israeliti vennero dal faraone a reclamare, dicendo: \"Perché tratti così i tuoi servi?"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "תֶּ֗בֶן אֵ֤ין נִתָּן֙ לַ/עֲבָדֶ֔י/ךָ וּ/לְבֵנִ֛ים אֹמְרִ֥ים לָ֖/נוּ עֲשׂ֑וּ וְ/הִנֵּ֧ה עֲבָדֶ֛י/ךָ מֻכִּ֖ים וְ/חָטָ֥את עַמֶּֽ/ךָ׃",
+        "LXX": "ἄχυρον οὐ δίδοται τοῖς οἰκέταις σου, καὶ τὴν πλίνθον ἡμῖν λέγουσιν ποιεῖν, καὶ ἰδοὺ οἱ παῖδές σου μεμαστίγωνται· ἀδικήσεις οὖν τὸν λαόν σου.",
+        "VUL": "paleæ non dantur nobis, et lateres similiter imperantur : en famuli tui flagellis cædimur, et injuste agitur contra populum tuum.",
+        "SYN": "соломы не дают рабам твоим, а кирпичи, говорят нам, делайте. И вот, рабов твоих бьют; грех народу твоему.",
+        "NEO": "On ne fournit pas de paille à tes serviteurs, et l’on nous dit : Faites des briques ! Et voici, tes serviteurs sont battus, et ton peuple se trouve en faute. »",
+        "NAB": "No straw is supplied to your servants, and still we are told to make bricks. Look how your servants are beaten! It is you who are at fault.\"",
+        "VAT_ES": "No nos dan paja, no cesan de decirnos que hagamos ladrillos, y encima nos golpean. Y tú tienes la culpa».",
+        "CEI": "Paglia non vien data ai tuoi servi, ma i mattoni - ci si dice - fateli! Ed ecco i tuoi servi sono bastonati e la colpa è del tuo popolo!\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֛אמֶר נִרְפִּ֥ים אַתֶּ֖ם נִרְפִּ֑ים עַל כֵּן֙ אַתֶּ֣ם אֹֽמְרִ֔ים נֵלְכָ֖ה נִזְבְּחָ֥ה לַֽ/יהוָֽה׃",
+        "LXX": "καὶ εἶπεν αὐτοῖς Σχολάζετε, σχολασταί ἐστε· διὰ τοῦτο λέγετε Πορευθῶμεν θύσωμεν τῷ θεῷ ἡμῶν.",
+        "VUL": "Qui ait : Vacatis otio, et idcirco dicitis : Eamus, et sacrificemus Domino.",
+        "SYN": "Но он сказал [им]: праздны вы, праздны, поэтому и говорите: пойдем, принесем жертву Господу.",
+        "NEO": "Pharaon répondit : « Vous êtes des paresseux, des paresseux ! Voilà pourquoi vous dites : Nous voudrions aller offrir des sacrifices à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Pharaoh answered, \"It is just because you are lazy that you keep saying, 'Let us go and offer sacrifice to the LORD.'",
+        "VAT_ES": "Pero el Faraón respondió: «Ustedes son unos holgazanes, sí, unos perfectos holgazanes. Por eso andan diciendo: «Déjanos ir a ofrecer sacrificios a nuestro Dios».",
+        "CEI": "Rispose: \"Fannulloni siete, fannulloni! Per questo dite: Vogliamo partire, dobbiamo sacrificare al Signore."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/עַתָּה֙ לְכ֣וּ עִבְד֔וּ וְ/תֶ֖בֶן לֹא יִנָּתֵ֣ן לָ/כֶ֑ם וְ/תֹ֥כֶן לְבֵנִ֖ים תִּתֵּֽנּוּ׃",
+        "LXX": "νῦν οὖν πορευθέντες ἐργάζεσθε· τὸ γὰρ ἄχυρον οὐ δοθήσεται ὑμῖν, καὶ τὴν σύνταξιν τῆς πλινθίας ἀποδώσετε.",
+        "VUL": "Ite ergo, et operamini : paleæ non dabuntur vobis, et reddetis consuetum numerum laterum.",
+        "SYN": "Пойдите же, работайте; соломы не дадут вам, а положенное число кирпичей давайте.",
+        "NEO": "Et maintenant, allez travailler ; on ne vous donnera pas de paille, et vous livrerez la même quantité de briques. »",
+        "NAB": "Off to work, then! Straw shall not be provided for you, but you must still deliver your quota of bricks.\"",
+        "VAT_ES": "Ahora vayan a trabajar. Y no sólo no les darán más paja, sino que deberán entregar la misma cantidad de ladrillos.»",
+        "CEI": "Ora andate, lavorate! Non vi sarà data paglia, ma voi darete lo stesso numero di mattoni\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יִּרְא֞וּ שֹֽׁטְרֵ֧י בְנֵֽי יִשְׂרָאֵ֛ל אֹתָ֖/ם בְּ/רָ֣ע לֵ/אמֹ֑ר לֹא תִגְרְע֥וּ מִ/לִּבְנֵי/כֶ֖ם דְּבַר י֥וֹם בְּ/יוֹמֽ/וֹ׃",
+        "LXX": "ἑώρων δὲ οἱ γραμματεῖς τῶν υἱῶν Ἰσραὴλ ἑαυτοὺς ἐν κακοῖς λέγοντες Οὐκ ἀπολείψετε τῆς πλινθίας τὸ καθῆκον τῇ ἡμέρᾳ.",
+        "VUL": "Videbantque se præpositi filiorum Israël in malo, eo quod diceretur eis : Non minuetur quidquam de lateribus per singulos dies.",
+        "SYN": "И увидели надзиратели сынов Израилевых беду свою в словах: не убавляйте числа кирпичей, какое [положено] на каждый день.",
+        "NEO": "Les scribes des enfants d’Israël virent leur cruelle situation, puisqu’on leur disait : « Vous ne retrancherez rien de vos briques ; chaque jour la tâche du jour ! »",
+        "NAB": "The Israelite foremen knew they were in a sorry plight, having been told not to reduce the daily amount of bricks.",
+        "VAT_ES": "Cuando les anunciaron que no debían disminuir la producción de ladrillos establecida para cada día, los inspectores israelitas se vieron en un grave aprieto.",
+        "CEI": "Gli scribi degli Israeliti si videro ridotti a mal partito, quando fu loro detto: \"Non diminuirete affatto il numero giornaliero dei mattoni\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַֽ/יִּפְגְּעוּ֙ אֶת מֹשֶׁ֣ה וְ/אֶֽת אַהֲרֹ֔ן נִצָּבִ֖ים לִ/קְרָאתָ֑/ם בְּ/צֵאתָ֖/ם מֵ/אֵ֥ת פַּרְעֹֽה׃",
+        "LXX": "συνήντησαν δὲ Μωυσῇ καὶ Ἀαρὼν ἐρχομένοις εἰς συνάντησιν αὐτοῖς, ἐκπορευομένων αὐτῶν ἀπὸ Φαραώ,",
+        "VUL": "Occurreruntque Moysi et Aaron, qui stabant ex adverso, egredientibus a Pharaone :",
+        "SYN": "И когда они вышли от фараона, то встретились с Моисеем и Аароном, которые стояли, ожидая их,",
+        "NEO": "Ayant trouvé Moïse et Aaron, qui se tenaient là pour les attendre à leur sortie de chez Pharaon,",
+        "NAB": "When, therefore, they left Pharaoh and came upon Moses and Aaron, who were waiting to meet them,",
+        "VAT_ES": "Y al encontrarse con Moisés y Aarón que los estaban esperando a la salida,",
+        "CEI": "Quando, uscendo dalla presenza del faraone, incontrarono Mosè e Aronne che stavano ad aspettarli,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֣וּ אֲלֵ/הֶ֔ם יֵ֧רֶא יְהוָ֛ה עֲלֵי/כֶ֖ם וְ/יִשְׁפֹּ֑ט אֲשֶׁ֧ר הִבְאַשְׁתֶּ֣ם אֶת רֵיחֵ֗/נוּ בְּ/עֵינֵ֤י פַרְעֹה֙ וּ/בְ/עֵינֵ֣י עֲבָדָ֔י/ו לָֽ/תֶת חֶ֥רֶב בְּ/יָדָ֖/ם לְ/הָרְגֵֽ/נוּ׃",
+        "LXX": "καὶ εἶπαν αὐτοῖς Ἴδοι ὁ θεὸς ὑμᾶς καὶ κρίναι, ὅτι ἐβδελύξατε τὴν ὀσμὴν ἡμῶν ἐναντίον Φαραὼ καὶ ἐναντίον τῶν θεραπόντων αὐτοῦ, δοῦναι ῥομφαίαν εἰς τὰς χεῖρας αὐτοῦ ἀποκτεῖναι ἡμᾶς.",
+        "VUL": "et dixerunt ad eos : Videat Dominus et judicet, quoniam ftere fecistis odorem nostrum coram Pharaone et servis ejus, et præbuistis ei gladium, ut occideret nos.",
+        "SYN": "и сказали им: да видит и судит вам Господь за то, что вы сделали нас ненавистными в глазах фараона и рабов его и дали им меч в руки, чтобы убить нас.",
+        "NEO": "ils leur dirent : « Que \\+w Yahweh|strong=\"H3068\"\\+w** vous voie, et qu’il juge, vous qui avez changé en aversion notre faveur aux yeux de Pharaon et de ses serviteurs, et qui avez mis dans leurs mains une épée pour nous tuer. »",
+        "NAB": "they said to them, \"The LORD look upon you and judge! You have brought us into bad odor with Pharaoh and his servants and have put a sword in their hands to slay us.\"",
+        "VAT_ES": "les dijeron: «Que el Señor fije su mirada en ustedes y juzgue. Porque nos han hecho odiosos al Faraón y a sus servidores, y han puesto en sus manos una espada para que nos maten».",
+        "CEI": "dissero loro: \"Il Signore proceda contro di voi e giudichi; perché ci avete resi odiosi agli occhi del faraone e agli occhi dei suoi ministri, mettendo loro in mano la spada per ucciderci!\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יָּ֧שָׁב מֹשֶׁ֛ה אֶל יְהוָ֖ה וַ/יֹּאמַ֑ר אֲדֹנָ֗/י לָ/מָ֤ה הֲרֵעֹ֨תָה֙ לָ/עָ֣ם הַ/זֶּ֔ה לָ֥/מָּה זֶּ֖ה שְׁלַחְתָּֽ/נִי׃",
+        "LXX": "Ἐπέστρεψεν δὲ Μωυσῆς πρὸς Κύριον καὶ εἶπεν Δέομαι, Κύριε, τί ἐκάκωσας τὸν λαὸν τοῦτον; καὶ ἵνα τί ἀπέσταλκάς με;",
+        "VUL": "Reversusque est Moyses ad Dominum, et ait : Domine, cur afflixisti populum istum ? quare misisti me ?",
+        "SYN": "И обратился Моисей к Господу и сказал: Господи! для чего Ты подвергнул такому бедствию народ сей, [и] для чего послал меня?",
+        "NEO": "Alors Moïse retourna vers \\+w Yahweh|strong=\"H3068\"\\+w**, et dit : « Seigneur, pourquoi avez-vous fait du mal à ce peuple ? pourquoi donc m’avez-vous envoyé ?",
+        "NAB": "Moses again had recourse to the LORD and said, \"Lord, why do you treat this people so badly? And why did you send me on such a mission?",
+        "VAT_ES": "Moisés se volvió al Señor, diciendo: «Señor, &iquest;por qué maltratas a este pueblo? &iquest;Para esto me has enviado?",
+        "CEI": "Allora Mosè si rivolse al Signore e disse: \"Mio Signore, perché hai maltrattato questo popolo? Perché dunque mi hai inviato?"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וּ/מֵ/אָ֞ז בָּ֤אתִי אֶל פַּרְעֹה֙ לְ/דַבֵּ֣ר בִּ/שְׁמֶ֔/ךָ הֵרַ֖ע לָ/עָ֣ם הַ/זֶּ֑ה וְ/הַצֵּ֥ל לֹא הִצַּ֖לְתָּ אֶת עַמֶּֽ/ךָ׃",
+        "LXX": "καὶ ἀφ’ οὗ πεπόρευμαι πρὸς Φαραὼ λαλῆσαι ἐπὶ τῷ σῷ ὀνόματι, ἐκάκωσεν τὸν λαὸν τοῦτον, καὶ οὐκ ἐρρύσω τὸν λαόν σου.",
+        "VUL": "ex eo enim quo ingressus sum ad Pharaonem ut loquerer in nomine tuo, afflixit populum tuum : et non liberasti eos.",
+        "SYN": "ибо с того времени, как я пришел к фараону и стал говорить именем Твоим, он начал хуже поступать с народом сим; избавить же, -- Ты не избавил народа Твоего.",
+        "NEO": "Depuis que je suis allé vers Pharaon pour parler en votre nom, il maltraite ce peuple, et vous n’avez en aucune manière délivré votre peuple. »",
+        "NAB": "Ever since I went to Pharaoh to speak in your name, he has maltreated this people of yours, and you have done nothing to rescue them.\"",
+        "VAT_ES": "Desde que me presenté ante el Faraón para hablarle en tu nombre, él no ha cesado de maltratar a este pueblo, y tú no haces nada para librar a tu pueblo.",
+        "CEI": "Da quando sono venuto dal faraone per parlargli in tuo nome, egli ha fatto del male a questo popolo e tu non hai per nulla liberato il tuo popolo!\"."
+      }
+    }
+  }
+}

@@ -1,0 +1,532 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_COR_012",
+  "book_key": "I_COR",
+  "sequence": 12,
+  "chapter_in": {
+    "MT": 12,
+    "VUL": 12,
+    "LXX": 12
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Περὶ δὲ τῶν πνευματικῶν, ἀδελφοί, οὐ θέλω ὑμᾶς ἀγνοεῖν.",
+        "VUL": "De spiritualibus autem, nolo vos ignorare fratres.",
+        "SYN": "Не хочу оставить вас, братия, в неведении и о _дарах_ духовных.",
+        "NEO": "Pour ce qui concerne les dons spirituels, je ne veux pas, mes frères, que vous soyez dans l’ignorance.+ 12:1 XII, 1. Dons spirituels, litt. \\+qt charismes\\+qt*, grâces spéciales accordées par l’Esprit-Saint à certains fidèles, non pour leur propre sanctification, mais pour le bien de l’Église (Comp. Rom. xii, 6) ; ils diffèrent donc et de la \\+qt grâce sanctifiante\\+qt* et des \\+qt dons du Saint-Esprit\\+qt*. Ces dons, ainsi que les manifestations extraordinaires auxquelles ils donnaient lieu, fréquents à l’origine de l’Église, sont devenus par la suite de plus en plus rares, sans avoir disparu tout à fait.*",
+        "NAB": "Now in regard to spiritual gifts, brothers, I do not want you to be unaware.",
+        "VAT_ES": "Con relación a los dones espirituales, no quiero, hermanos, que ustedes vivan en la ignorancia.",
+        "CEI": "Dopo quattordici anni, andai di nuovo a Gerusalemme in compagnia di Barnaba, portando con me anche Tito:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Οἴδατε ὅτι ὅτε ἔθνη ἦτε πρὸς τὰ εἴδωλα τὰ ἄφωνα, ὡς ἂν ἤγεσθε, ἀπαγόμενοι.",
+        "VUL": "Scitis quoniam cum gentes essetis, ad simulacra muta prout ducebamini euntes.",
+        "SYN": "Знаете, что когда вы были язычниками, то ходили к безгласным идолам, так, как бы вели вас.",
+        "NEO": "Vous savez que, lorsque vous étiez païens, vous vous laissiez entraîner vers les idoles muettes, selon que vous y étiez conduits.",
+        "NAB": "You know how, when you were pagans, you were constantly attracted and led away to mute idols.",
+        "VAT_ES": "Ustedes saben que cuando todavía eran paganos, se dejaban arrastrar ciegamente al culto de dioses inanimados.",
+        "CEI": "vi andai però in seguito ad una rivelazione. Esposi loro il vangelo che io predico tra i pagani, ma lo esposi privatamente alle persone più ragguardevoli, per non trovarmi nel rischio di correre o di aver corso invano."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Διὸ γνωρίζω ὑμῖν ὅτι οὐδεὶς ἐν πνεύματι θεοῦ λαλῶν λέγει Ἀνάθεμα Ἰησοῦν· καὶ οὐδεὶς δύναται εἰπεῖν, Κύριον Ἰησοῦν, εἰ μὴ ἐν πνεύματι ἁγίῳ.",
+        "VUL": "Ideo notum vobis facio, quod nemo in Spiritu Dei loquens, dicit anathema Jesu. Et nemo potest dicere, Dominus Jesus, nisi in Spiritu Sancto.",
+        "SYN": "Потому сказываю вам, что никто, говорящий Духом Божиим, не произнесет анафемы на Иисуса, и никто не может назвать Иисуса Господом, как только Духом Святым.",
+        "NEO": "Je vous déclare donc que personne, s’il parle par l’Esprit de Dieu, ne dit : Jésus est anathème ; et personne ne peut dire : « Jésus est le Seigneur, » si ce n’est par l’Esprit-Saint.",
+        "NAB": "Therefore, I tell you that nobody speaking by the spirit of God says, \"Jesus be accursed.\" And no one can say, \"Jesus is Lord,\" except by the holy Spirit.",
+        "VAT_ES": "Por eso les aseguro que nadie, movido por el Espíritu de Dios, puede decir: «Maldito sea Jesús». Y nadie puede decir: «Jesús es el Señor», si no está impulsado por el Espíritu Santo.",
+        "CEI": "Ora neppure Tito, che era con me, sebbene fosse greco, fu obbligato a farsi circoncidere."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "¶Διαιρέσεις δὲ χαρισμάτων εἰσίν, τὸ δὲ αὐτὸ πνεῦμα.",
+        "VUL": "Divisiones vero gratiarum sunt, idem autem Spiritus :",
+        "SYN": "Дары различны, но Дух один и тот же;",
+        "NEO": "Il y a pourtant diversité de dons, mais c’est le même Esprit ;",
+        "NAB": "There are different kinds of spiritual gifts but the same Spirit;",
+        "VAT_ES": "Ciertamente, hay diversidad de dones, pero todos proceden del mismo Espíritu.",
+        "CEI": "E questo proprio a causa dei falsi fratelli che si erano intromessi a spiare la libertà che abbiamo in Cristo Gesù, allo scopo di renderci schiavi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Καὶ διαιρέσεις διακονιῶν εἰσίν, καὶ ὁ αὐτὸς κύριος.",
+        "VUL": "et divisiones ministrationum sunt, idem autem Dominus :",
+        "SYN": "и служения различны, а Господь один и тот же;",
+        "NEO": "diversité de ministères, mais c’est le même Seigneur ;",
+        "NAB": "there are different forms of service but the same Lord;",
+        "VAT_ES": "Hay diversidad de ministerios, pero un solo Señor.",
+        "CEI": "Ad essi però non cedemmo, per riguardo, neppure un istante, perché la verità del vangelo continuasse a rimanere salda tra di voi."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Καὶ διαιρέσεις ἐνεργημάτων εἰσίν, ὁ δὲ αὐτός ἐστιν θεός, ὁ ἐνεργῶν τὰ πάντα ἐν πᾶσιν.",
+        "VUL": "et divisiones operationum sunt, idem vero Deus qui operatur omnia in omnibus.",
+        "SYN": "и действия различны, а Бог один и тот же, производящий все во всех.",
+        "NEO": "diversité d’opérations, mais c’est le même Dieu qui opère tout en tous.",
+        "NAB": "there are different workings but the same God who produces all of them in everyone.",
+        "VAT_ES": "Hay diversidad de actividades, pero es el mismo Dios el que realiza todo en todos.",
+        "CEI": "Da parte dunque delle persone più ragguardevoli - quali fossero allora non m'interessa, perché Dio non bada a persona alcuna - a me, da quelle persone ragguardevoli, non fu imposto nulla di più."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ἑκάστῳ δὲ δίδοται ἡ φανέρωσις τοῦ πνεύματος πρὸς τὸ συμφέρον.",
+        "VUL": "Unicuique autem datur manifestatio Spiritus ad utilitatem.",
+        "SYN": "Но каждому дается проявление Духа на пользу.",
+        "NEO": "À chacun la manifestation de l’Esprit est donnée pour l’utilité commune*.",
+        "NAB": "To each individual the manifestation of the Spirit is given for some benefit.",
+        "VAT_ES": "En cada uno, el Espíritu se manifiesta para el bien común.",
+        "CEI": "Anzi, visto che a me era stato affidato il vangelo per i non circoncisi, come a Pietro quello per i circoncisi -"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "ᾯ μὲν γὰρ διὰ τοῦ πνεύματος δίδοται λόγος σοφίας, ἄλλῳ δὲ λόγος γνώσεως, κατὰ τὸ αὐτὸ πνεῦμα·",
+        "VUL": "Alii quidem per Spiritum datur sermo sapientiæ : alii autem sermo scientiæ secundum eumdem Spiritum :",
+        "SYN": "Одному дается Духом слово мудрости, другому слово знания, тем же Духом;",
+        "NEO": "En effet, à l’un est donnée par l’Esprit une parole de sagesse,+ 12:8 8. Parole de sagesse, non pas simplement la connaissance des mystères les plus profonds de la religion (ii, 6 sv.), mais en outre le don surnaturel de les expliquer que l’Esprit-Saint donne à des âmes simples et sans étude, comme il le fit pour les Apôtres. — \\+qt Parole de connaissance ou de science\\+qt*, le don de proposer les vérités ordinaires de la religion que tous doivent savoir, et de les mettre à la portée de tous les esprits. Ce serait le don propre des Docteurs (v. 28). Comp. Rom. xii, 6.* à l’autre une parole de connaissance, selon le même Esprit ;",
+        "NAB": "To one is given through the Spirit the expression of wisdom; to another the expression of knowledge according to the same Spirit;",
+        "VAT_ES": "El Espíritu da a uno la sabiduría para hablar; a otro, la ciencia para enseñar, según el mismo Espíritu;",
+        "CEI": "poiché colui che aveva agito in Pietro per farne un apostolo dei circoncisi aveva agito anche in me per i pagani -"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "ἑτέρῳ δὲ πίστις, ἐν τῷ αὐτῷ πνεύματι· ἄλλῳ δὲ χαρίσματα ἰαμάτων ἐν τῷ αὐτῷ πνεύματι·",
+        "VUL": "alteri fides in eodem Spiritu : alii gratia sanitatum in uno Spiritu :",
+        "SYN": "иному вера, тем же Духом; иному дары исцелений, тем же Духом;",
+        "NEO": "à un autre, la foi, par le même Esprit ; à un autre, le don des guérisons, par ce seul et même Esprit ;+ 12:9 9. La foi, non la vertu théologale de ce nom, qui est nécessaire à tous, mais ce degré de foi qui obtient et fait des miracles (Matth. xxi, 21, 22 ; I Cor. viii, 2).*",
+        "NAB": "to another faith by the same Spirit; to another gifts of healing by the one Spirit;",
+        "VAT_ES": "a otro, la fe, también el mismo Espíritu. A este se le da el don de curar, siempre en ese único Espíritu;",
+        "CEI": "e riconoscendo la grazia a me conferita, Giacomo, Cefa e Giovanni, ritenuti le colonne, diedero a me e a Barnaba la loro destra in segno di comunione, perché noi andassimo verso i pagani ed essi verso i circoncisi."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "ἄλλῳ δὲ ἐνεργήματα δυνάμεων, ἄλλῳ δὲ προφητεία, ἄλλῳ δὲ διακρίσεις πνευμάτων, ἑτέρῳ δὲ γένη γλωσσῶν, ἄλλῳ δὲ ἑρμηνεία γλωσσῶν·",
+        "VUL": "alii operatio virtutum, alii prophetia, alii discretio spirituum, alii genera linguarum, alii interpretatio sermonum.",
+        "SYN": "иному чудотворения, иному пророчество, иному различение духов, иному разные языки, иному истолкование языков.",
+        "NEO": "à un autre, la puissance d’opérer des miracles ; à un autre la prophétie ; à un autre, le discernement des esprits ; à un autre la diversité des langues ; à un autre le don de les interpréter.+ 12:10 10. Prophétie, don non pas précisément d’annoncer les événements futurs, mais d’enseigner les vérités de la foi sous l’action directe du Saint-Esprit.*",
+        "NAB": "to another mighty deeds; to another prophecy; to another discernment of spirits; to another varieties of tongues; to another interpretation of tongues.",
+        "VAT_ES": "a aquel, el don de hacer milagros; a uno, el don de profecía; a otro, el don de juzgar sobre el valor de los dones del Espíritu; a este, el don de lenguas; a aquel, el don de interpretarlas.",
+        "CEI": "Soltanto ci pregarono di ricordarci dei poveri: ciò che mi sono proprio preoccupato di fare."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "πάντα δὲ ταῦτα ἐνεργεῖ τὸ ἓν καὶ τὸ αὐτὸ πνεῦμα, διαιροῦν ἰδίᾳ ἑκάστῳ καθὼς βούλεται.",
+        "VUL": "Hæc autem omnia operatur unus atque idem Spiritus, dividens singulis prout vult.",
+        "SYN": "Все же сие производит один и тот же Дух, разделяя каждому особо, как Ему угодно.",
+        "NEO": "Mais c’est le seul et même Esprit qui produit tous ces dons, les distribuant à chacun en particulier, comme il lui plaît.",
+        "NAB": "But one and the same Spirit produces all of these, distributing them individually to each person as he wishes.",
+        "VAT_ES": "Pero en todo esto, es el mismo y único Espíritu el que actúa, distribuyendo sus dones a cada uno en particular como él quiere.",
+        "CEI": "Ma quando Cefa venne ad Antiochia, mi opposi a lui a viso aperto perché evidentemente aveva torto."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "¶Καθάπερ γὰρ τὸ σῶμα ἕν ἐστιν, καὶ μέλη ἔχει πολλά, πάντα δὲ τὰ μέλη τοῦ σώματος τοῦ ἑνός, πολλὰ ὄντα, ἕν ἐστιν σῶμα· οὕτως καὶ ὁ χριστός.",
+        "VUL": "Sicut enim corpus unum est, et membra habet multa, omnia autem membra corporis cum sint multa, unum tamen corpus sunt : ita et Christus.",
+        "SYN": "Ибо, как тело одно, но имеет многие члены, и все члены одного тела, хотя их и много, составляют одно тело, -- так и Христос.",
+        "NEO": "Car, comme le corps est un et a plusieurs membres, et comme tous les membres du corps, malgré leur nombre, ne forment qu’un seul corps, ainsi en est-il du Christ.+ 12:12 12. L’Église est encore appelée le corps du Christ. Eph. i, 23 ; iv, 13 ; v, 30 etc. Comp. Col. i, 18.*",
+        "NAB": "As a body is one though it has many parts, and all the parts of the body, though many, are one body, so also Christ.",
+        "VAT_ES": "Así como el cuerpo tiene muchos miembros, y sin embargo, es uno, y estos miembros, a pesar de ser muchos, no forman sino un solo cuerpo, así también sucede con Cristo.",
+        "CEI": "Infatti, prima che giungessero alcuni da parte di Giacomo, egli prendeva cibo insieme ai pagani; ma dopo la loro venuta, cominciò a evitarli e a tenersi in disparte, per timore dei circoncisi."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Καὶ γὰρ ἐν ἑνὶ πνεύματι ἡμεῖς πάντες εἰς ἓν σῶμα ἐβαπτίσθημεν, εἴτε Ἰουδαῖοι εἴτε Ἕλληνες, εἴτε δοῦλοι εἴτε ἐλεύθεροι· καὶ πάντες εἰς ἓν πνεῦμα ἐποτίσθημεν.",
+        "VUL": "Etenim in uno Spiritu omnes nos in unum corpus baptizati sumus, sive Judæi, sive gentiles, sive servi, sive liberi : et omnes in uno Spiritu potati sumus.",
+        "SYN": "Ибо все мы одним Духом крестились в одно тело, Иудеи или Еллины, рабы или свободные, и все напоены одним Духом.",
+        "NEO": "Tous, en effet, nous avons été baptisés dans un seul esprit pour former un seul corps, soit Juifs, soit Grecs, soit esclaves, soit libres, et nous avons tous été abreuvés d’un seul Esprit.",
+        "NAB": "For in one Spirit we were all baptized into one body, whether Jews or Greeks, slaves or free persons, and we were all given to drink of one Spirit.",
+        "VAT_ES": "Porque todos hemos sido bautizados en un solo Espíritu para formar un solo Cuerpo –judíos y griegos, esclavos y hombres libres– y todos hemos bebido de un mismo Espíritu.",
+        "CEI": "E anche gli altri Giudei lo imitarono nella simulazione, al punto che anche Barnaba si lasciò attirare nella loro ipocrisia."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Καὶ γὰρ τὸ σῶμα οὐκ ἔστιν ἓν μέλος ἀλλὰ πολλά.",
+        "VUL": "Nam et corpus non est unum membrum, sed multa.",
+        "SYN": "Тело же не из одного члена, но из многих.",
+        "NEO": "Ainsi le corps n’est pas un seul membre, mais il est formé de* plusieurs.",
+        "NAB": "Now the body is not a single part, but many.",
+        "VAT_ES": "El cuerpo no se compone de un solo miembro sino de muchos.",
+        "CEI": "Ora quando vidi che non si comportavano rettamente secondo la verità del vangelo, dissi a Cefa in presenza di tutti: \"Se tu, che sei Giudeo, vivi come i pagani e non alla maniera dei Giudei, come puoi costringere i pagani a vivere alla maniera dei Giudei?"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ἐὰν εἴπῃ ὁ πούς, Ὅτι οὐκ εἰμὶ χείρ, οὐκ εἰμὶ ἐκ τοῦ σώματος· οὐ παρὰ τοῦτο οὐκ ἔστιν ἐκ τοῦ σώματος;",
+        "VUL": "Si dixerit pes : Quoniam non sum manus, non sum de corpore : num ideo non est de corpore ?",
+        "SYN": "Если нога скажет: я не принадлежу к телу, потому что я не рука, то неужели она потому не принадлежит к телу?",
+        "NEO": "Si le pied disait : « Puisque je ne suis pas main, je ne suis pas du corps », en serait-il moins du corps pour cela ?",
+        "NAB": "If a foot should say, \"Because I am not a hand I do not belong to the body,\" it does not for this reason belong any less to the body.",
+        "VAT_ES": "Si el pie dijera: «Como no soy mano, no formo parte del cuerpo», &iquest;acaso por eso no seguiría siendo parte de él?",
+        "CEI": "Noi che per nascita siamo Giudei e non pagani peccatori,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Καὶ ἐὰν εἴπῃ τὸ οὖς, Ὅτι οὐκ εἰμὶ ὀφθαλμός, οὐκ εἰμὶ ἐκ τοῦ σώματος· οὐ παρὰ τοῦτο οὐκ ἔστιν ἐκ τοῦ σώματος;",
+        "VUL": "Et si dixerit auris : Quoniam non sum oculus, non sum de corpore : num ideo non est de corpore ?",
+        "SYN": "И если ухо скажет: я не принадлежу к телу, потому что я не глаз, то неужели оно потому не принадлежит к телу?",
+        "NEO": "Et si l’oreille disait : « Puisque je ne suis pas œil, je ne suis pas du corps », en serait-elle moins du corps pour cela ?",
+        "NAB": "Or if an ear should say, \"Because I am not an eye I do not belong to the body,\" it does not for this reason belong any less to the body.",
+        "VAT_ES": "Y si el oído dijera: «Ya que no soy ojo, no formo parte del cuerpo», &iquest;acaso dejaría de ser parte de él?",
+        "CEI": "sapendo tuttavia che l'uomo non è giustificato dalle opere della legge ma soltanto per mezzo della fede in Gesù Cristo, abbiamo creduto anche noi in Gesù Cristo per essere giustificati dalla fede in Cristo e non dalle opere della legge; poiché dalle opere della legge non verrà mai giustificato nessuno\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Εἰ ὅλον τὸ σῶμα ὀφθαλμός, ποῦ ἡ ἀκοή; Εἰ ὅλον ἀκοή, ποῦ ἡ ὄσφρησις;",
+        "VUL": "Si totum corpus oculus : ubi auditus ? Si totum auditus : ubi odoratus ?",
+        "SYN": "Если все тело глаз, то где слух? Если все слух, то где обоняние?",
+        "NEO": "Si tout le corps était œil, où serait l’ouïe ? S’il était tout entier ouïe, où serait l’odorat ?",
+        "NAB": "If the whole body were an eye, where would the hearing be? If the whole body were hearing, where would the sense of smell be?",
+        "VAT_ES": "Si todo el cuerpo fuera ojo, &iquest;dónde estaría el oído? Y si todo fuera oído, &iquest;dónde estaría el olfato?",
+        "CEI": "Se pertanto noi che cerchiamo la giustificazione in Cristo siamo trovati peccatori come gli altri, forse Cristo è ministro del peccato? Impossibile!"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Νυνὶ δὲ ὁ θεὸς ἔθετο τὰ μέλη ἓν ἕκαστον αὐτῶν ἐν τῷ σώματι, καθὼς ἠθέλησεν.",
+        "VUL": "Nunc autem posuit Deus membra, unumquodque eorum in corpore sicut voluit.",
+        "SYN": "Но Бог расположил члены, каждый в _составе_ тела, как Ему было угодно.",
+        "NEO": "Mais Dieu a placé chacun des membres dans le corps, comme il l’a voulu.",
+        "NAB": "But as it is, God placed the parts, each one of them, in the body as he intended.",
+        "VAT_ES": "Pero Dios ha dispuesto a cada uno de los miembros en el cuerpo, según un plan establecido.",
+        "CEI": "Infatti se io riedifico quello che ho demolito, mi denuncio come trasgressore."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ ἦν τὰ πάντα ἓν μέλος, ποῦ τὸ σῶμα;",
+        "VUL": "Quod si essent omnia unum membrum, ubi corpus ?",
+        "SYN": "А если бы все были один член, то где _было_ _бы_ тело?",
+        "NEO": "Si tous étaient un seul et même membre, où serait le corps ?",
+        "NAB": "If they were all one part, where would the body be?",
+        "VAT_ES": "Porque si todos fueran un solo miembro, &iquest;dónde estaría el cuerpo?",
+        "CEI": "In realtà mediante la legge io sono morto alla legge, per vivere per Dio."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Νῦν δὲ πολλὰ μὲν μέλη, ἓν δὲ σῶμα.",
+        "VUL": "Nunc autem multa quidem membra, unum autem corpus.",
+        "SYN": "Но теперь членов много, а тело одно.",
+        "NEO": "Il y a donc plusieurs membres et un seul corps.",
+        "NAB": "But as it is, there are many parts, yet one body.",
+        "VAT_ES": "De hecho, hay muchos miembros, pero el cuerpo es uno solo.",
+        "CEI": "Sono stato crocifisso con Cristo e non sono più io che vivo, ma Cristo vive in me. Questa vita nella carne, io la vivo nella fede del Figlio di Dio, che mi ha amato e ha dato se stesso per me."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Οὐ δύναται δὲ ὁ ὀφθαλμὸς εἰπεῖν τῇ χειρί, Χρείαν σου οὐκ ἔχω· ἢ πάλιν ἡ κεφαλὴ τοῖς ποσίν, Χρείαν ὑμῶν οὐκ ἔχω.",
+        "VUL": "Non potest autem oculus dicere manui : Opera tua non indigeo : aut iterum caput pedibus : Non estis mihi necessarii.",
+        "SYN": "Не может глаз сказать руке: ты мне не надобна; или также голова ногам: вы мне не нужны.",
+        "NEO": "L’œil ne peut pas dire à la main : « Je n’ai pas besoin de toi » ; ni la tête dire aux pieds : « Je n’ai pas besoin de vous. »",
+        "NAB": "The eye cannot say to the hand, \"I do not need you,\" nor again the head to the feet, \"I do not need you.\"",
+        "VAT_ES": "El ojo no puede decir a la mano: «No te necesito», ni la cabeza, a los pies: «No tengo necesidad de ustedes».",
+        "CEI": "Non annullo dunque la grazia di Dio; infatti se la giustificazione viene dalla legge, Cristo è morto invano."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Ἀλλὰ πολλῷ μᾶλλον τὰ δοκοῦντα μέλη τοῦ σώματος ἀσθενέστερα ὑπάρχειν, ἀναγκαῖά ἐστιν·",
+        "VUL": "Sed multo magis quæ videntur membra corporis infirmiora esse, necessariora sunt :",
+        "SYN": "Напротив, члены тела, которые кажутся слабейшими, гораздо нужнее,",
+        "NEO": "Au contraire, les membres du corps qui paraissent les plus faibles sont plus nécessaires ;",
+        "NAB": "Indeed, the parts of the body that seem to be weaker are all the more necessary,",
+        "VAT_ES": "Más aún, los miembros del cuerpo que consideramos más débiles también son necesarios,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "καὶ ἃ δοκοῦμεν ἀτιμότερα εἶναι τοῦ σώματος, τούτοις τιμὴν περισσοτέραν περιτίθεμεν· καὶ τὰ ἀσχήμονα ἡμῶν εὐσχημοσύνην περισσοτέραν ἔχει·",
+        "VUL": "et quæ putamus ignobiliora membra esse corporis, his honorem abundantiorem circumdamus : et quæ inhonesta sunt nostra, abundantiorem honestatem habent.",
+        "SYN": "и которые нам кажутся менее благородными в теле, о тех более прилагаем попечения;",
+        "NEO": "et ceux que nous tenons pour les moins honorables du corps, sont ceux que nous entourons de plus d’honneur. Ainsi nos membres les moins honnêtes, nous les traitons avec plus de décence,",
+        "NAB": "and those parts of the body that we consider less honorable we surround with greater honor, and our less presentable parts are treated with greater propriety,",
+        "VAT_ES": "y los que consideramos menos decorosos son los que tratamos más decorosamente. Así nuestros miembros menos dignos son tratados con mayor respeto,"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "τὰ δὲ εὐσχήμονα ἡμῶν οὐ χρείαν ἔχει· ἀλλ’ ὁ θεὸς συνεκέρασεν τὸ σῶμα, τῷ ὑστεροῦντι περισσοτέραν δοὺς τιμήν,",
+        "VUL": "Honesta autem nostra nullius egent : sed Deus temperavit corpus, ei cui deerat, abundantiorem tribuendo honorem,",
+        "SYN": "и неблагообразные наши более благовидно покрываются, а благообразные наши не имеют _в_ _том_ нужды. Но Бог соразмерил тело, внушив о менее совершенном большее попечение,",
+        "NEO": "tandis que nos parties honnêtes n’en ont pas besoin. Dieu a disposé le corps de manière à donner plus de respect à ce qui est moins digne,",
+        "NAB": "whereas our more presentable parts do not need this. But God has so constructed the body as to give greater honor to a part that is without it,",
+        "VAT_ES": "ya que los otros no necesitan ser tratados de esa manera. Pero Dios dispuso el cuerpo, dando mayor honor a los miembros que más lo necesitan,"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "ἵνα μὴ ᾖ σχίσματα ἐν τῷ σώματι, ἀλλὰ τὸ αὐτὸ ὑπὲρ ἀλλήλων μεριμνῶσιν τὰ μέλη.",
+        "VUL": "ut non sit schisma in corpore, sed idipsum pro invicem sollicita sint membra.",
+        "SYN": "дабы не было разделения в теле, а все члены одинаково заботились друг о друге.",
+        "NEO": "afin qu’il n’y ait pas de division dans le corps, mais que les membres aient également soin les uns des autres.",
+        "NAB": "so that there may be no division in the body, but that the parts may have the same concern for one another.",
+        "VAT_ES": "a fin de que no haya divisiones en el cuerpo, sino que todos los miembros sean mutuamente solidarios."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Καὶ εἴτε πάσχει ἓν μέλος, συμπάσχει πάντα τὰ μέλη· εἴτε δοξάζεται ἓν μέλος, συγχαίρει πάντα τὰ μέλη.",
+        "VUL": "Et si quid patitur unum membrum, compatiuntur omnia membra : sive gloriatur unum membrum, congaudent omnia membra.",
+        "SYN": "Посему, страдает ли один член, страдают с ним все члены; славится ли один член, с ним радуются все члены.",
+        "NEO": "Et si un membre souffre, tous les membres souffrent avec lui ; si un membre est honoré, tous les membres s’en réjouissent avec lui.",
+        "NAB": "If (one) part suffers, all the parts suffer with it; if one part is honored, all the parts share its joy.",
+        "VAT_ES": "&iquest;Un miembro sufre? Todos los demás sufren con él. &iquest;Un miembro es enaltecido? Todos los demás participan de su alegría."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Ὑμεῖς δέ ἐστε σῶμα χριστοῦ, καὶ μέλη ἐκ μέρους.",
+        "VUL": "Vos autem estis corpus Christi, et membra de membro.",
+        "SYN": "И вы -- тело Христово, а порознь -- члены.",
+        "NEO": "Vous êtes le corps du Christ, et vous êtes* ses membres, chacun pour sa part.+ 12:27 27. Chacun pour sa part, chacun avec son don particulier, sa fonction, etc. Au lieu de μέρους, la Vulgate a lu μέλους, \\+qt membra de membro\\+qt*, au même sens que Rom. xii, 5 : \\+qt Vous êtes membres les uns des autres\\+qt*, des membres unis entre eux et dépendants les uns des autres.*",
+        "NAB": "Now you are Christ's body, and individually parts of it.",
+        "VAT_ES": "Ustedes son el Cuerpo de Cristo, y cada uno en particular, miembros de ese Cuerpo."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Καὶ οὓς μὲν ἔθετο ὁ θεὸς ἐν τῇ ἐκκλησίᾳ πρῶτον ἀποστόλους, δεύτερον προφήτας, τρίτον διδασκάλους, ἔπειτα δυνάμεις, εἶτα χαρίσματα ἰαμάτων, ἀντιλήψεις, κυβερνήσεις, γένη γλωσσῶν.",
+        "VUL": "Et quosdam quidem posuit Deus in ecclesia primum apostolos, secundo prophetas, exinde doctores, deinde virtutes, exinde gratias curationum, opitulationes, gubernationes, genera linguarum, interpretationes sermonum.",
+        "SYN": "И иных Бог поставил в Церкви, во-первых, Апостолами, во-- вторых, пророками, в-третьих, учителями; далее, _иным_ _дал_ силы _чудодейственные,_ также дары исцелений, вспоможения, управления, разные языки.",
+        "NEO": "Dieu a établi dans l’Église premièrement des apôtres,+ 12:28 28. Apôtres, non pas seulement les Douze, mais avec eux des hommes extraordinairement appelés et délégués par le S. Esprit à la prédication de l’Évangile sous leur dépendance. — \\+qt Prophètes\\+qt*, voy. vers. 10. Le même rang — le premier après les Apôtres — leur est attribué ; Eph. iv, 11 ; et Act. xiii, 1, où ils sont nommés avant les docteurs auxquels est assigné le rang. — \\+qt Docteurs\\+qt*, chargés officiellement d’instruire la communauté, en eux, ce n’est pas, comme dans les \\+qt prophètes\\+qt*, l’inspiration qui domine, mais la réflexion et l’étude. — \\+qt Diverses langues\\+qt* : voy. chap. xiv. La Vulgate ajoute, \\+qt d’interpréter les langues\\+qt*, les discours de ceux qui parlaient \\+qt en langues\\+qt* (chap. xiv).* secondement des prophètes, troisièmement des docteurs, ensuite ceux qui ont les dons de guérir, d’assister, de gouverner, de parler diverses langues.",
+        "NAB": "Some people God has designated in the church to be, first, apostles; second, prophets; third, teachers; then, mighty deeds; then, gifts of healing, assistance, administration, and varieties of tongues.",
+        "VAT_ES": "En la Iglesia, hay algunos que han sido establecidos por Dios, en primer lugar, como apóstoles; en segundo lugar, como profetas; en tercer lugar, como doctores. Después vienen los que han recibido el don de hacer milagros, el don de curar, el don de socorrer a los necesitados, el don de gobernar y el don de lenguas."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Μὴ πάντες ἀπόστολοι; Μὴ πάντες προφῆται; Μὴ πάντες διδάσκαλοι; Μὴ πάντες δυνάμεις;",
+        "VUL": "Numquid omnes apostoli ? numquid omnes prophetæ ? numquid omnes doctores ?",
+        "SYN": "Все ли Апостолы? Все ли пророки? Все ли учители? Все ли чудотворцы?",
+        "NEO": "Tous sont-ils apôtres ? Tous prophètes ? Tous docteurs ?",
+        "NAB": "Are all apostles? Are all prophets? Are all teachers? Do all work mighty deeds?",
+        "VAT_ES": "&iquest;Acaso todos son apóstoles? &iquest;Todos profetas? &iquest;Todos doctores? &iquest;Todos hacen milagros?"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Μὴ πάντες χαρίσματα ἔχουσιν ἰαμάτων; Μὴ πάντες γλώσσαις λαλοῦσιν; Μὴ πάντες διερμηνεύουσιν;",
+        "VUL": "numquid omnes virtutes ? numquid omnes gratiam habent curationum ? numquid omnes linguis loquuntur ? numquid omnes interpretantur ?",
+        "SYN": "Все ли имеют дары исцелений? Все ли говорят языками? Все ли истолкователи?",
+        "NEO": "Tous thaumaturges ? Tous ont-ils les grâces de guérison ? Tous parlent-ils des langues ? Tous interprètent-ils ?",
+        "NAB": "Do all have gifts of healing? Do all speak in tongues? Do all interpret?",
+        "VAT_ES": "&iquest;Todos tienen el don de curar? &iquest;Todos tienen el don de lenguas o el don de interpretarlas?"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "Ζηλοῦτε δὲ τὰ χαρίσματα τὰ κρείττονα. Καὶ ἔτι καθ’ ὑπερβολὴν ὁδὸν ὑμῖν δείκνυμι.",
+        "VUL": "Æmulamini autem charismata meliora. Et adhuc excellentiorem viam vobis demonstro.",
+        "SYN": "Ревнуйте о дарах больших, и я покажу вам путь еще превосходнейший.",
+        "NEO": "Aspirez aux dons supérieurs.+ 12:31 31. Supérieurs. Vulg. \\+qt meilleurs\\+qt*, plus utiles à la communauté. — La Vulg. et beaucoup d’interprètes traduisent par le comparatif, \\+qt une voie plus excellente\\+qt*. Ce verset appartient au chap. suivant.* Aussi bien je vais vous montrer une voie excellente entre toutes.",
+        "NAB": "Strive eagerly for the greatest spiritual gifts. But I shall show you a still more excellent way.",
+        "VAT_ES": "Ustedes, por su parte, aspiren a los dones más perfectos. Y ahora voy a mostrarles un camino más perfecto todavía."
+      }
+    }
+  }
+}

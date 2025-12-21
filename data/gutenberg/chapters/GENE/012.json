@@ -1,0 +1,375 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_012",
+  "book_key": "GENE",
+  "sequence": 12,
+  "chapter_in": {
+    "MT": 12,
+    "VUL": 12,
+    "LXX": 12
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֶל אַבְרָ֔ם לֶךְ לְ/ךָ֛ מֵ/אַרְצְ/ךָ֥ וּ/מִ/מּֽוֹלַדְתְּ/ךָ֖ וּ/מִ/בֵּ֣ית אָבִ֑י/ךָ אֶל הָ/אָ֖רֶץ אֲשֶׁ֥ר אַרְאֶֽ/ךָּ׃",
+        "VUL": "Dixit autem Dominus ad Abram : Egredere de terra tua, et de cognatione tua, et de domo patris tui, et veni in terram quam monstrabo tibi.",
+        "LXX": "Καὶ εἶπεν Κύριος τῷ Ἀβράμ Ἔξελθε ἐκ τῆς γῆς σου καὶ ἐκ τῆς συγγενείας σου καὶ ἐκ τοῦ οἴκου τοῦ πατρός σου, εἰς τὴν γῆν ἣν ἄν σοι δείξω.",
+        "NAB": "The LORD said to Abram: \"Go forth from the land of your kinsfolk and from your father's house to a land that I will show you.",
+        "SYN": "И сказал Господь Авраму: пойди из земли твоей, от родства твоего и из дома отца твоего [и иди] в землю, которую Я укажу тебе;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Abram : « Va-t-en de ton pays, de ta famille et de la maison de ton père, dans le pays que je te montrerai.",
+        "VAT_ES": "El Señor dijo a Abram: «Deja tu tierra natal y la casa de tu padre, y ve al país que yo te mostraré.",
+        "CEI": "Il Signore disse ad Abram: \"Vàttene dal tuo paese, dalla tua patria e dalla casa di tuo padre, verso il paese che io ti indicherò."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/אֶֽעֶשְׂ/ךָ֙ לְ/ג֣וֹי גָּד֔וֹל וַ/אֲבָ֣רֶכְ/ךָ֔ וַ/אֲגַדְּלָ֖ה שְׁמֶ֑/ךָ וֶ/הְיֵ֖ה בְּרָכָֽה׃",
+        "VUL": "Faciamque te in gentem magnam, et benedicam tibi, et magnificabo nomen tuum, erisque benedictus.",
+        "LXX": "καὶ ποιήσω σε εἰς ἔθνος μέγα καὶ εὐλογήσω σε καὶ μεγαλυνῶ τὸ ὄνομά σου, καὶ ἔσῃ εὐλογητός·",
+        "NAB": "\"I will make of you a great nation, and I will bless you; I will make your name great, so that you will be a blessing.",
+        "SYN": "и Я произведу от тебя великий народ, и благословлю тебя, и возвеличу имя твое, и будешь ты в благословение;",
+        "NEO": "Je ferai de toi une grande nation, je te bénirai et je rendrai grand ton nom. Tu seras une bénédiction :",
+        "VAT_ES": "Yo haré de ti una gran nación y te bendeciré; engrandeceré tu nombre y serás una bendición.",
+        "CEI": "Farò di te un grande popolo e ti benedirò, renderò grande il tuo nome e diventerai una benedizione."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/אֲבָֽרֲכָה֙ מְבָ֣רְכֶ֔י/ךָ וּ/מְקַלֶּלְ/ךָ֖ אָאֹ֑ר וְ/נִבְרְכ֣וּ בְ/ךָ֔ כֹּ֖ל מִשְׁפְּחֹ֥ת הָ/אֲדָמָֽה׃",
+        "VUL": "Benedicam benedicentibus tibi, et maledicam maledicentibus tibi, atque in te benedicentur universæ cognationes terræ.",
+        "LXX": "καὶ εὐλογήσω τοὺς εὐλογοῦντάς σε, καὶ τοὺς καταρωμένους σε καταράσομαι, καὶ εὐλογηθήσονται ἐν σοὶ πᾶσαι αἱ φυλαὶ τῆς γῆς.",
+        "NAB": "I will bless those who bless you and curse those who curse you. All the communities of the earth shall find blessing in you.\"",
+        "SYN": "Я благословлю благословляющих тебя, и злословящих тебя прокляну; и благословятся в тебе все племена земные.",
+        "NEO": "Je bénirai ceux qui te béniront, et celui qui te maudira, je le maudirai, et toutes les familles de la terre seront bénies en toi. »",
+        "VAT_ES": "Bendeciré a los que te bendigan y maldeciré al que te maldiga, y por ti se bendecirán todos los pueblos de la tierra».",
+        "CEI": "Benedirò coloro che ti benediranno e coloro che ti malediranno maledirò e in te si diranno benedette tutte le famiglie della terra\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֣לֶךְ אַבְרָ֗ם כַּ/אֲשֶׁ֨ר דִּבֶּ֤ר אֵלָי/ו֙ יְהוָ֔ה וַ/יֵּ֥לֶךְ אִתּ֖/וֹ ל֑וֹט וְ/אַבְרָ֗ם בֶּן חָמֵ֤שׁ שָׁנִים֙ וְ/שִׁבְעִ֣ים שָׁנָ֔ה בְּ/צֵאת֖/וֹ מֵ/חָרָֽן׃",
+        "VUL": "Egressus est itaque Abram sicut præceperat ei Dominus, et ivit cum eo Lot : septuaginta quinque annorum erat Abram cum egrederetur de Haran.",
+        "LXX": "καὶ ἐπορεύθη Ἀβρὰμ καθάπερ ἐλάλησεν αὐτῷ Κύριος, καὶ ᾤχετο μετ’ αὐτοῦ Λώτ· Ἀβρὰμ δὲ ἦν ἐτῶν ἑβδομήκοντα πέντε ὅτε ἐξῆλθεν ἐκ Χαρράν.",
+        "NAB": "Abram went as the LORD directed him, and Lot went with him. Abram was seventy-five years old when he left Haran.",
+        "SYN": "И пошел Аврам, как сказал ему Господь; и с ним пошел Лот. Аврам был семидесяти пяти лет, когда вышел из Харрана.",
+        "NEO": "Abram partit, comme \\+w Yahweh|strong=\"H3068\"\\+w** le lui avait dit, et Lot s’en alla avec lui. Abram avait soixante-quinze ans quand il sortit de Haran.",
+        "VAT_ES": "Abram partió, como el Señor se lo había ordenado, y Lot se fue con él. Cuando salió de Jarán, Abram tenía setenta y cinco años.",
+        "CEI": "Allora Abram partì, come gli aveva ordinato il Signore, e con lui partì Lot. Abram aveva settantacinque anni quando lasciò Carran."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֣ח אַבְרָם֩ אֶת שָׂרַ֨י אִשְׁתּ֜/וֹ וְ/אֶת ל֣וֹט בֶּן אָחִ֗י/ו וְ/אֶת כָּל רְכוּשָׁ/ם֙ אֲשֶׁ֣ר רָכָ֔שׁוּ וְ/אֶת הַ/נֶּ֖פֶשׁ אֲשֶׁר עָשׂ֣וּ בְ/חָרָ֑ן וַ/יֵּצְא֗וּ לָ/לֶ֨כֶת֙ אַ֣רְצָ/ה כְּנַ֔עַן וַ/יָּבֹ֖אוּ אַ֥רְצָ/ה כְּנָֽעַן׃",
+        "VUL": "Tulitque Sarai uxorem suam, et Lot filium fratris sui, universamque substantiam quam possederant, et animas quas fecerant in Haran : et egressi sunt ut irent in terram Chanaan. Cumque venissent in eam,",
+        "LXX": "καὶ ἔλαβεν Ἀβρὰμ τὴν Σαρὰ γυναῖκα αὐτοῦ καὶ τὸν Λὼτ υἱὸν τοῦ ἀδελφοῦ αὐτοῦ καὶ πάντα τὰ ὑπάρχοντα αὐτῶν ὅσα ἐκτήσαντο καὶ πᾶσαν ψυχὴν ἣν ἐκτήσαντο ἐκ Χαρράν, καὶ ἐξήλθοσαν πορευθῆναι εἰς γῆν Χανάαν· καὶ ἦλθον εἰς γῆν Χανάαν.",
+        "NAB": "Abram took his wife Sarai, his brother's son Lot, all the possessions that they had accumulated, and the persons they had acquired in Haran, and they set out for the land of Canaan. When they came to the land of Canaan,",
+        "SYN": "И взял Аврам с собою Сару, жену свою, Лота, сына брата своего, и все имение, которое они приобрели, и всех людей, которых они имели в Харране; и вышли, чтобы идти в землю Ханаанскую; и пришли в землю Ханаанскую.",
+        "NEO": "Abram prit Saraï, sa femme, et Lot, fils de son frère, ainsi que tous les biens qu’ils possédaient et les serviteurs qu’ils avaient acquis à Haran, et ils partirent pour aller au pays de Canaan. Et ils arrivèrent au pays de Canaan.",
+        "VAT_ES": "Tomó a su esposa Sarai, a su sobrino Lot, con todos los bienes que habían adquirido y todas las personas que habían reunido en Jarán, y se encaminaron hacia la tierra de Canaán. Al llegar a Canaán,",
+        "CEI": "Abram dunque prese la moglie Sarai, e Lot, figlio di suo fratello, e tutti i beni che avevano acquistati in Carran e tutte le persone che lì si erano procurate e si incamminarono verso il paese di Cànaan. Arrivarono al paese di Cànaan"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲבֹ֤ר אַבְרָם֙ בָּ/אָ֔רֶץ עַ֚ד מְק֣וֹם שְׁכֶ֔ם עַ֖ד אֵל֣וֹן מוֹרֶ֑ה וְ/הַֽ/כְּנַעֲנִ֖י אָ֥ז בָּ/אָֽרֶץ׃",
+        "VUL": "pertransivit Abram terram usque ad locum Sichem, usque ad convallem illustrem : Chananæus autem tunc erat in terra.",
+        "LXX": "καὶ διώδευσεν Ἀβρὰμ εἰς τὸ μῆκος αὐτῆς ἕως τοῦ τόπου Συχέμ, ἐπὶ τὴν δρῦν τὴν ὑψηλήν· οἱ δὲ Χαναναῖοι τότε κατῴκουν τὴν γῆν.",
+        "NAB": "Abram passed through the land as far as the sacred place at Shechem, by the terebinth of Moreh. (The Canaanites were then in the land.)",
+        "SYN": "И прошел Аврам по земле сей [по длине ее] до места Сихема, до дубравы Море. В этой земле тогда [жили] Хананеи.",
+        "NEO": "Abram traversa le pays jusqu’au lieu nommé Sichem, jusqu’au chêne de Moré. — Les Chananéens étaient alors dans le pays. —",
+        "VAT_ES": "Abram recorrió el país hasta el lugar santo de Siquem, hasta la encina de Moré. En ese tiempo, los cananeos ocupaban el país.",
+        "CEI": "e Abram attraversò il paese fino alla località di Sichem, presso la Quercia di More. Nel paese si trovavano allora i Cananei."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֵּרָ֤א יְהוָה֙ אֶל אַבְרָ֔ם וַ/יֹּ֕אמֶר לְ/זַ֨רְעֲ/ךָ֔ אֶתֵּ֖ן אֶת הָ/אָ֣רֶץ הַ/זֹּ֑את וַ/יִּ֤בֶן שָׁם֙ מִזְבֵּ֔חַ לַ/יהוָ֖ה הַ/נִּרְאֶ֥ה אֵלָֽי/ו׃",
+        "VUL": "Apparuit autem Dominus Abram, et dixit ei : Semini tuo dabo terram hanc. Qui ædificavit ibi altare Domino, qui apparuerat ei.",
+        "LXX": "καὶ ὤφθη Κύριος τῷ Ἀβρὰμ καὶ εἶπεν αὐτῷ Τῷ σπέρματί σου δώσω τὴν γῆν ταύτην· καὶ ᾠκοδόμησεν ἐκεῖ Ἀβρὰμ θυσιαστήριον Κυρίῳ τῷ ὀφθέντι αὐτῷ.",
+        "NAB": "The LORD appeared to Abram and said, \"To your descendants I will give this land.\" So Abram built an altar there to the LORD who had appeared to him.",
+        "SYN": "И явился Господь Авраму и сказал [ему]: потомству твоему отдам Я землю сию. И создал там [Аврам] жертвенник Господу, Который явился ему.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** apparut à Abram et lui dit : « je donnerai ce pays à ta postérité. » Et Abram bâtit là un autel à \\+w Yahweh|strong=\"H3068\"\\+w** qui lui était apparu.",
+        "VAT_ES": "Entonces el Señor se apareció a Abram y le dijo: «Yo daré esta tierra a tu descendencia». Allí Abram erigió un altar al Señor, que se la había aparecido.",
+        "CEI": "Il Signore apparve ad Abram e gli disse: \"Alla tua discendenza io darò questo paese\". Allora Abram costruì in quel posto un altare al Signore che gli era apparso."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יַּעְתֵּ֨ק מִ/שָּׁ֜ם הָ/הָ֗רָ/ה מִ/קֶּ֛דֶם לְ/בֵֽית אֵ֖ל וַ/יֵּ֣ט אָהֳלֹ֑/ה בֵּֽית אֵ֤ל מִ/יָּם֙ וְ/הָ/עַ֣י מִ/קֶּ֔דֶם וַ/יִּֽבֶן שָׁ֤ם מִזְבֵּ֨חַ֙ לַֽ/יהוָ֔ה וַ/יִּקְרָ֖א בְּ/שֵׁ֥ם יְהוָֽה׃",
+        "VUL": "Et inde transgrediens ad montem, qui erat contra orientem Bethel, tetendit ibi tabernaculum suum, ab occidente habens Bethel, et ab oriente Hai : ædificavit quoque ibi altare Domino, et invocavit nomen ejus.",
+        "LXX": "καὶ ἀπέστη ἐκεῖθεν εἰς τὸ ὄρος κατ’ ἀνατολὰς Βαιθήλ, καὶ ἔστησεν ἐκεῖ τὴν σκηνὴν αὐτοῦ ἐν Βαιθὴλ κατὰ θάλασσαν καὶ Ἁγγαὶ κατ’ ἀνατολάς· καὶ ᾠκοδόμησεν ἐκεῖ θυσιαστήριον τῷ κυρίῳ καὶ ἐπεκαλέσατο ἐπὶ τῷ ὀνόματι Κυρίου.",
+        "NAB": "From there he moved on to the hill country east of Bethel, pitching his tent with Bethel to the west and Ai to the east. He built an altar there to the LORD and invoked the LORD by name.",
+        "SYN": "Оттуда двинулся он к горе, на восток от Вефиля; и поставил шатер свой _так,_ _что_ _от_ _него_ Вефиль _был_ на запад, а Гай на восток; и создал там жертвенник Господу и призвал имя Господа [явившегося ему].",
+        "NEO": "Il passa de là à la montagne, à l’orient de Béthel, et il dressa sa tente, ayant Béthel au couchant et Haï à l’orient. Là encore il bâtit un autel à \\+w Yahweh|strong=\"H3068\"\\+w**, et il invoqua le nom de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "VAT_ES": "Después se trasladó hasta la región montañosa que está al este de Betel, que quedaba al oeste, y Ai, al este. También allí erigió un altar al Señor e invocó su Nombre.",
+        "CEI": "Di là passò sulle montagne a oriente di Betel e piantò la tenda, avendo Betel ad occidente e Ai ad oriente. Lì costruì un altare al Signore e invocò il nome del Signore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּסַּ֣ע אַבְרָ֔ם הָל֥וֹךְ וְ/נָס֖וֹעַ הַ/נֶּֽגְבָּ/ה׃",
+        "VUL": "Perrexitque Abram vadens, et ultra progrediens ad meridiem.",
+        "LXX": "καὶ ἀπῆρεν Ἀβρὰμ καὶ πορευθεὶς ἐστρατοπέδευσεν ἐν τῇ ἐρήμῳ.",
+        "NAB": "Then Abram journeyed on by stages to the Negeb.",
+        "SYN": "И поднялся Аврам и продолжал идти к югу.",
+        "NEO": "Puis Abram s’avança, de campement en campement, vers le Midi.",
+        "VAT_ES": "Luego siguió avanzando por etapas hasta el Négueb.",
+        "CEI": "Poi Abram levò la tenda per accamparsi nel Negheb."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י רָעָ֖ב בָּ/אָ֑רֶץ וַ/יֵּ֨רֶד אַבְרָ֤ם מִצְרַ֨יְמָ/ה֙ לָ/ג֣וּר שָׁ֔ם כִּֽי כָבֵ֥ד הָ/רָעָ֖ב בָּ/אָֽרֶץ׃",
+        "VUL": "Facta est autem fames in terra : descenditque Abram in Ægyptum, ut peregrinaretur ibi : prævaluerat enim fames in terra.",
+        "LXX": "Καὶ ἐγένετο λιμὸς ἐπὶ τῆς γῆς· καὶ κατέβη Ἀβρὰμ εἰς Αἴγυπτον παροικῆσαι ἐκεῖ, ὅτι ἐνίσχυσεν ὁ λιμὸς ἐπὶ τῆς γῆς.",
+        "NAB": "There was famine in the land; so Abram went down to Egypt to sojourn there, since the famine in the land was severe.",
+        "SYN": "И был голод в той земле. И сошел Аврам в Египет, пожить там, потому что усилился голод в земле той.",
+        "NEO": "Il y eut une famine dans le pays, et Abram descendit en Égypte pour y séjourner ; car la famine était grande dans le pays.",
+        "VAT_ES": "Entonces hubo hambre en aquella región, y Abram bajó a Egipto para establecerse allí por un tiempo, porque el hambre acosaba al país.",
+        "CEI": "Venne una carestia nel paese e Abram scese in Egitto per soggiornarvi, perché la carestia gravava sul paese."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֕י כַּ/אֲשֶׁ֥ר הִקְרִ֖יב לָ/ב֣וֹא מִצְרָ֑יְמָ/ה וַ/יֹּ֨אמֶר֙ אֶל שָׂרַ֣י אִשְׁתּ֔/וֹ הִנֵּה נָ֣א יָדַ֔עְתִּי כִּ֛י אִשָּׁ֥ה יְפַת מַרְאֶ֖ה אָֽתְּ׃",
+        "VUL": "Cumque prope esset ut ingrederetur Ægyptum, dixit Sarai uxori suæ : Novi quod pulchra sis mulier :",
+        "LXX": "ἐγένετο δὲ ἡνίκα ἤγγισεν Ἀβρὰμ εἰσελθεῖν εἰς Αἴγυπτον, εἶπεν Ἀβρὰμ Σάρᾳ τῇ γυναικὶ αὐτοῦ ⸆ Γινώσκω ἐγὼ ὅτι γυνὴ εὐπρόσωπος εἶ·",
+        "NAB": "When he was about to enter Egypt, he said to his wife Sarai: \"I know well how beautiful a woman you are.",
+        "SYN": "Когда же он приближался к Египту, то сказал Саре, жене своей: вот, я знаю, что ты женщина, прекрасная видом;",
+        "NEO": "Comme il était près d’entrer en Égypte, il dit à Saraï, sa femme : « Voici, je sais que tu es une belle femme ;",
+        "VAT_ES": "Cuando estaba por llegar a Egipto, dijo a Sarai, su mujer: «Yo sé que eres una mujer hermosa.",
+        "CEI": "Ma, quando fu sul punto di entrare in Egitto, disse alla moglie Sarai: \"Vedi, io so che tu sei donna di aspetto avvenente."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה כִּֽי יִרְא֤וּ אֹתָ/ךְ֙ הַ/מִּצְרִ֔ים וְ/אָמְר֖וּ אִשְׁתּ֣/וֹ זֹ֑את וְ/הָרְג֥וּ אֹתִ֖/י וְ/אֹתָ֥/ךְ יְחַיּֽוּ׃",
+        "VUL": "et quod cum viderint te Ægyptii, dicturi sunt : Uxor ipsius est : et interficient me, et te reservabunt.",
+        "LXX": "ἔσται οὖν ὡς ἂν ἴδωσίν σε οἱ Αἰγύπτιοι, ἐροῦσιν ὅτι Γυνὴ αὐτοῦ ἐστὶν αὐτή· καὶ ἀποκτενοῦσίν με, σὲ δὲ περιποιήσονται.",
+        "NAB": "When the Egyptians see you, they will say, 'She is his wife'; then they will kill me, but let you live.",
+        "SYN": "и когда Египтяне увидят тебя, то скажут: это жена его; и убьют меня, а тебя оставят в живых;",
+        "NEO": "quand les Egyptiens te verront, ils diront : C’est sa femme, et ils me tueront et te laisseront vivre.",
+        "VAT_ES": "Por eso los egipcios, apenas te vean, dirán: «Es su mujer», y me matarán, mientras que a ti te dejarán con vida.",
+        "CEI": "Quando gli Egiziani ti vedranno, penseranno: Costei è sua moglie, e mi uccideranno, mentre lasceranno te in vita."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "אִמְרִי נָ֖א אֲחֹ֣תִ/י אָ֑תְּ לְמַ֨עַן֙ יִֽיטַב לִ֣/י בַ/עֲבוּרֵ֔/ךְ וְ/חָיְתָ֥ה נַפְשִׁ֖/י בִּ/גְלָלֵֽ/ךְ׃",
+        "VUL": "Dic ergo, obsecro te, quod soror mea sis : ut bene sit mihi propter te, et vivat anima mea ob gratiam tui.",
+        "LXX": "εἰπὸν οὖν ὅτι Ἀδελφὴ αὐτοῦ εἰμί, ὅπως ἂν εὖ μοι γένηται διὰ σέ, καὶ ζήσεται ἡ ψυχή μου ἕνεκεν σοῦ.",
+        "NAB": "Please say, therefore, that you are my sister, so that it may go well with me on your account and my life may be spared for your sake.\"",
+        "SYN": "скажи же, что ты мне сестра, дабы мне хорошо было ради тебя, и дабы жива была душа моя чрез тебя.",
+        "NEO": "Dis donc que tu es ma sœur, afin que je sois bien traité à cause de toi, et qu’on me laisse la vie par égard pour toi. »",
+        "VAT_ES": "Por favor, di que eres mi hermana. Así yo seré bien tratado en atención a ti, y gracias a ti, salvaré mi vida».",
+        "CEI": "Dì dunque che tu sei mia sorella, perché io sia trattato bene per causa tua e io viva per riguardo a te\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֕י כְּ/ב֥וֹא אַבְרָ֖ם מִצְרָ֑יְמָ/ה וַ/יִּרְא֤וּ הַ/מִּצְרִים֙ אֶת הָ֣/אִשָּׁ֔ה כִּֽי יָפָ֥ה הִ֖וא מְאֹֽד׃",
+        "VUL": "Cum itaque ingressus esset Abram Ægyptum, viderunt Ægyptii mulierem quod esset pulchra nimis.",
+        "LXX": "ἐγένετο δὲ ἡνίκα εἰσῆλθεν Ἀβρὰμ εἰς Αἴγυπτον, ἰδόντες οἱ Αἰγύπτιοι τὴν γυναῖκα αὐτοῦ ὅτι καλὴ ἦν σφόδρα,",
+        "NAB": "When Abram came to Egypt, the Egyptians saw how beautiful the woman was; and when Pharaoh's courtiers saw her,",
+        "SYN": "И было, когда пришел Аврам в Египет, Египтяне увидели, что она женщина весьма красивая;",
+        "NEO": "Lorsque Abram fut arrivé en Égypte, les Egyptiens virent que sa femme était fort belle.",
+        "VAT_ES": "Cuando Abram llegó a Egipto, los egipcios vieron que su mujer era muy hermosa,",
+        "CEI": "Appunto quando Abram arrivò in Egitto, gli Egiziani videro che la donna era molto avvenente."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּרְא֤וּ אֹתָ/הּ֙ שָׂרֵ֣י פַרְעֹ֔ה וַ/יְהַֽלְל֥וּ אֹתָ֖/הּ אֶל פַּרְעֹ֑ה וַ/תֻּקַּ֥ח הָ/אִשָּׁ֖ה בֵּ֥ית פַּרְעֹֽה׃",
+        "VUL": "Et nuntiaverunt principes Pharaoni, et laudaverunt eam apud illum : et sublata est mulier in domum Pharaonis.",
+        "LXX": "καὶ ἴδον αὐτὴν οἱ ἄρχοντες Φαραὼ καὶ ἐπῄνεσαν αὐτὴν πρὸς Φαραὼ καὶ εἰσήγαγον αὐτὴν πρὸς Φαραώ.",
+        "NAB": "they praised her to Pharaoh. So she was taken into Pharaoh's palace.",
+        "SYN": "увидели ее и вельможи фараоновы и похвалили ее фараону; и взята была она в дом фараонов.",
+        "NEO": "Les grands de Pharaon, l’ayant vue, la vantèrent à Pharaon, et cette femme fut prise et emmenée dans la maison de Pharaon.",
+        "VAT_ES": "y los oficiales de la corte, que también la vieron, la elogiaron ante el Faraón. Entonces fue llevada al palacio del Faraón.",
+        "CEI": "La osservarono gli ufficiali del faraone e ne fecero le lodi al faraone; così la donna fu presa e condotta nella casa del faraone."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וּ/לְ/אַבְרָ֥ם הֵיטִ֖יב בַּ/עֲבוּרָ֑/הּ וַֽ/יְהִי ל֤/וֹ צֹאן וּ/בָקָר֙ וַ/חֲמֹרִ֔ים וַ/עֲבָדִים֙ וּ/שְׁפָחֹ֔ת וַ/אֲתֹנֹ֖ת וּ/גְמַלִּֽים׃",
+        "VUL": "Abram vero bene usi sunt propter illam : fueruntque ei oves et boves et asini, et servi et famulæ, et asinæ et cameli.",
+        "LXX": "καὶ τῷ Ἀβρὰμ εὖ ἐχρήσαντο δι’ αὐτήν, καὶ ἐγένοντο αὐτῷ πρόβατα καὶ μόσχοι καὶ ὄνοι, παῖδες καὶ παιδίσκαι, ἡμίονοι καὶ κάμηλοι.",
+        "NAB": "On her account it went very well with Abram, and he received flocks and herds, male and female slaves, male and female asses, and camels.",
+        "SYN": "И Авраму хорошо было ради ее; и был у него мелкий и крупный скот и ослы, и рабы и рабыни, и лошаки и верблюды.",
+        "NEO": "Il traita bien Abram à cause d’elle, et Abram reçut des brebis, des bœufs, des ânes, des serviteurs et des servantes, des ânesses et des chameaux.",
+        "VAT_ES": "En atención a ella, Abram fue tratado deferentemente y llegó a tener ovejas, vacas, asnos, esclavos, sirvientas, asnas y camellos.",
+        "CEI": "Per riguardo a lei, egli trattò bene Abram, che ricevette greggi e armenti e asini, schiavi e schiave, asine e cammelli."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יְנַגַּ֨ע יְהוָ֧ה אֶת פַּרְעֹ֛ה נְגָעִ֥ים גְּדֹלִ֖ים וְ/אֶת בֵּית֑/וֹ עַל דְּבַ֥ר שָׂרַ֖י אֵ֥שֶׁת אַבְרָֽם׃",
+        "VUL": "Flagellavit autem Dominus Pharaonem plagis maximis, et domum ejus, propter Sarai uxorem Abram.",
+        "LXX": "καὶ ἤτασεν ὁ θεὸς τὸν Φαραὼ ἐτασμοῖς μεγάλοις καὶ πονηροῖς καὶ τὸν οἶκον αὐτοῦ περὶ Σάρας τῆς γυναικὸς Ἀβράμ.",
+        "NAB": "But the LORD struck Pharaoh and his household with severe plagues because of Abram's wife Sarai.",
+        "SYN": "Но Господь поразил тяжкими ударами фараона и дом его за Сару, жену Аврамову.",
+        "NEO": "Mais \\+w Yahweh|strong=\"H3068\"\\+w** frappa de grandes plaies Pharaon et sa maison, à cause de Saraï, femme d’Abram.",
+        "VAT_ES": "Pero el Señor infligió grandes males al Faraón y su gente, por causa de Sarai, la esposa de Abram.",
+        "CEI": "Ma il Signore colpì il faraone e la sua casa con grandi piaghe, per il fatto di Sarai, moglie di Abram."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֤א פַרְעֹה֙ לְ/אַבְרָ֔ם וַ/יֹּ֕אמֶר מַה זֹּ֖את עָשִׂ֣יתָ לִּ֑/י לָ֚/מָּה לֹא הִגַּ֣דְתָּ לִּ֔/י כִּ֥י אִשְׁתְּ/ךָ֖ הִֽוא׃",
+        "VUL": "Vocavitque Pharao Abram, et dixit ei : Quidnam est hoc quod fecisti mihi ? quare non indicasti quod uxor tua esset ?",
+        "LXX": "καλέσας δὲ Φαραὼ τὸν Ἀβρὰμ εἶπεν Τί τοῦτο ἐποίησάς μοι, ὅτι οὐκ ἀπήγγειλάς μοι ὅτι γυνή σού ἐστιν;",
+        "NAB": "Then Pharaoh summoned Abram and said to him: \"How could you do this to me! Why didn't you tell me she was your wife?",
+        "SYN": "И призвал фараон Аврама и сказал: что ты это сделал со мною? для чего не сказал мне, что она жена твоя?",
+        "NEO": "Pharaon appela alors Abram et lui dit : « Qu’est-ce que tu m’as fait ? Pourquoi ne m’as-tu pas déclaré qu’elle était ta femme ?",
+        "VAT_ES": "El Faraón llamó a Abram y le dijo: «&iquest;Qué me has hecho? &iquest;Por qué no me advertiste que era tu mujer?",
+        "CEI": "Allora il faraone convocò Abram e gli disse: \"Che mi hai fatto? Perché non mi hai dichiarato che era tua moglie?"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "לָ/מָ֤ה אָמַ֨רְתָּ֙ אֲחֹ֣תִ/י הִ֔וא וָ/אֶקַּ֥ח אֹתָ֛/הּ לִ֖/י לְ/אִשָּׁ֑ה וְ/עַתָּ֕ה הִנֵּ֥ה אִשְׁתְּ/ךָ֖ קַ֥ח וָ/לֵֽךְ׃",
+        "VUL": "quam ob causam dixisti esse sororem tuam, ut tollerem eam mihi in uxorem ? Nunc igitur ecce conjux tua, accipe eam, et vade.",
+        "LXX": "ἵνα τί εἶπας ὅτι Ἀδελφή μού ἐστιν; καὶ ἔλαβον αὐτὴν ἐμαυτῷ εἰς γυναῖκα. καὶ νῦν ἰδοὺ ἡ γυνή σου ἐναντίον σου· λαβὼν ἀπότρεχε.",
+        "NAB": "Why did you say, 'She is my sister,' so that I took her for my wife? Here, then, is your wife. Take her and be gone!\"",
+        "SYN": "для чего ты сказал: она сестра моя? и я взял было ее себе в жену. И теперь вот жена твоя; возьми [ее] и пойди.",
+        "NEO": "Pourquoi as-tu dit : C’est ma sœur ; de sorte que je l’ai prise pour femme ? Maintenant, voici ta femme ; prends-la et va-t’en ! »",
+        "VAT_ES": "&iquest;Por qué dijiste que era tu hermana, dando lugar a que yo la tomara por esposa? Ahí tienes a tu mujer: tómala y vete».",
+        "CEI": "Perché hai detto: È mia sorella, così che io me la sono presa in moglie? E ora eccoti tua moglie: prendila e vàttene!\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יְצַ֥ו עָלָ֛י/ו פַּרְעֹ֖ה אֲנָשִׁ֑ים וַֽ/יְשַׁלְּח֥וּ אֹת֛/וֹ וְ/אֶת אִשְׁתּ֖/וֹ וְ/אֶת כָּל אֲשֶׁר לֽ/וֹ׃",
+        "VUL": "Præcepitque Pharao super Abram viris : et deduxerunt eum, et uxorem illius, et omnia quæ habebat.",
+        "LXX": "καὶ ἐνετείλατο Φαραὼ ἀνδράσιν περὶ Ἀβράμ, συνπροπέμψαι αὐτὸν καὶ τὴν γυναῖκα αὐτοῦ καὶ πάντα ὅσα ἦν αὐτῷ, καὶ Λὼτ μετ’ αὐτοῦ.",
+        "NAB": "Then Pharaoh gave men orders concerning him, and they sent him on his way, with his wife and all that belonged to him.",
+        "SYN": "И дал о нем фараон повеление людям, и проводили его, и жену его, и все, что у него было, [и Лота с ним].",
+        "NEO": "Et Pharaon, ayant donné des ordres à ses gens au sujet d’Abram, ils le renvoyèrent, lui et sa femme, et tout ce qui lui appartenait.",
+        "VAT_ES": "Después el Faraón dio órdenes a sus hombres acerca de Abram, y ellos lo hicieron salir junto con su mujer y todos sus bienes.",
+        "CEI": "Poi il faraone lo affidò ad alcuni uomini che lo accompagnarono fuori della frontiera insieme con la moglie e tutti i suoi averi."
+      }
+    }
+  }
+}

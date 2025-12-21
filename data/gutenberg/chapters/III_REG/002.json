@@ -1,0 +1,843 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "III_REG_002",
+  "book_key": "III_REG",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרְב֥וּ יְמֵֽי דָוִ֖ד לָ/מ֑וּת וַ/יְצַ֛ו אֶת שְׁלֹמֹ֥ה בְנ֖/וֹ לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἤγγισαν αἱ ἡμέραι Δαυεὶδ ἀποθανεῖν αὐτόν, καὶ ἀπεκρίνατο Σαλωμὼν υἱῷ αὐτοῦ λέγων",
+        "VUL": "Appropinquaverunt autem dies David ut moreretur : præcepitque Salomoni filio suo, dicens :",
+        "SYN": "Приблизилось время умереть Давиду, и завещал он сыну своему Соломону, говоря:",
+        "NEO": "Comme le temps de sa mort approchait, David donna ses ordres à Salomon, son fils, en disant :",
+        "NAB": "When the time of David's death drew near, he gave these instructions to his son Solomon:",
+        "VAT_ES": "Cro 29.26-28",
+        "CEI": "Sentendo avvicinarsi il giorno della sua morte, Davide fece queste raccomandazioni al figlio Salomone:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אָנֹכִ֣י הֹלֵ֔ךְ בְּ/דֶ֖רֶךְ כָּל הָ/אָ֑רֶץ וְ/חָזַקְתָּ֖ וְ/הָיִ֥יתָֽ לְ/אִֽישׁ׃",
+        "LXX": "Ἐγώ εἰμι πορεύομαι ἐν ὁδῷ πάσης τῆς γῆς· καὶ ἰσχύσεις καὶ ἔσῃ εἰς ἄνδρα·",
+        "VUL": "Ego ingredior viam universæ terræ : confortare, et esto vir.",
+        "SYN": "вот, я отхожу в путь всей земли, ты же будь тверд и будь мужествен",
+        "NEO": "« Je m’en vais par le chemin de toute la terre ; montre-toi fort et sois un homme !",
+        "NAB": "\"I am going the way of all mankind. Take courage and be a man.",
+        "VAT_ES": "«Yo me voy por el camino de todo el mundo. Sé fuerte y compórtate como un hombre.",
+        "CEI": "\"Io me ne vado per la strada di ogni uomo sulla terra. Tu sii forte e mostrati uomo."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/שָׁמַרְתָּ֞ אֶת מִשְׁמֶ֣רֶת יְהוָ֣ה אֱלֹהֶ֗י/ךָ לָ/לֶ֤כֶת בִּ/דְרָכָי/ו֙ לִ/שְׁמֹ֨ר חֻקֹּתָ֤י/ו מִצְוֺתָי/ו֙ וּ/מִשְׁפָּטָ֣י/ו וְ/עֵדְוֺתָ֔י/ו כַּ/כָּת֖וּב בְּ/תוֹרַ֣ת מֹשֶׁ֑ה לְמַ֣עַן תַּשְׂכִּ֗יל אֵ֚ת כָּל אֲשֶׁ֣ר תַּֽעֲשֶׂ֔ה וְ/אֵ֛ת כָּל אֲשֶׁ֥ר תִּפְנֶ֖ה שָֽׁם׃",
+        "LXX": "καὶ φυλάξεις φυλακὴν θεοῦ σου τοῦ πορεύεσθαι ἐν ταῖς ὁδοῖς αὐτοῦ, φυλάσσειν τὰς ἐντολὰς αὐτοῦ καὶ τὰ δικαιώματα καὶ τὰ κρίματα τὰ γεγραμμένα ἐν νόμῳ Μωυσέως, ἵνα συνήσεις ἃ ποιήσεις κατὰ πάντα ὅσα ἂν ἐντείλωμαί σοι·",
+        "VUL": "Et observa custodias Domini Dei tui, ut ambules in viis ejus : ut custodias cæremonias ejus, et præcepta ejus, et judicia, et testimonia, sicut scriptum est in lege Moysi : ut intelligas universa quæ facis, et quocumque te verteris :",
+        "SYN": "и храни завет Господа Бога твоего, ходя путями Его и соблюдая уставы Его и заповеди Его, и определения Его и постановления Его, как написано в законе Моисеевом, чтобы быть тебе благоразумным во всем, что ни будешь делать, и везде, куда ни обратишься;",
+        "NEO": "Garde le service de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, en marchant dans ses voies, en observant ses lois, ses commandements, ses ordonnances et ses préceptes, selon ce qui est écrit dans la loi de Moïse, afin que tu réussisses dans tout ce que tu feras et partout où tu te tourneras,",
+        "NAB": "Keep the mandate of the LORD, your God, following his ways and observing his statutes, commands, ordinances, and decrees as they are written in the law of Moses, that you may succeed in whatever you do, wherever you turn,",
+        "VAT_ES": "Observa las prescripciones del Señor, tu Dios, siguiendo sus caminos, observando sus preceptos, sus mandamientos, sus leyes y sus instrucciones, según lo que está escrito en la Ley de Moisés. Así prosperarás en todo lo que hagas y en todo lo que emprendas,",
+        "CEI": "Osserva la legge del Signore tuo Dio, procedendo nelle sue vie ed eseguendo i suoi statuti, i suoi comandi, i suoi decreti e le sue prescrizioni, come sta scritto nella legge di Mosè, perché tu riesca in ogni tua impresa e in ogni tuo progetto,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "לְמַעַן֩ יָקִ֨ים יְהוָ֜ה אֶת דְּבָר֗/וֹ אֲשֶׁ֨ר דִּבֶּ֣ר עָלַ/י֮ לֵ/אמֹר֒ אִם יִשְׁמְר֨וּ בָנֶ֜י/ךָ אֶת דַּרְכָּ֗/ם לָ/לֶ֤כֶת לְ/פָנַ/י֙ בֶּ/אֱמֶ֔ת בְּ/כָל לְבָבָ֖/ם וּ/בְ/כָל נַפְשָׁ֑/ם לֵ/אמֹ֕ר לֹֽא יִכָּרֵ֤ת לְ/ךָ֙ אִ֔ישׁ מֵ/עַ֖ל כִּסֵּ֥א יִשְׂרָאֵֽל׃",
+        "LXX": "ἵνα στήσῃ Κύριος τὸν λόγον αὐτοῦ ὃν ἐλάλησεν λέγων Ἐὰν φυλάξωσιν οἱ υἱοί σου τὴν ὁδὸν αὐτῶν πορεύεσθαι ἐνώπιον ἐμοῦ ἐν ἀληθείᾳ ἐν ὅλῃ καρδίᾳ αὐτῶν, λέγων Οὐκ ἐξολοθρευθήσεταί σοι ἀνὴρ ἐπάνωθεν θρόνου Ἰσραήλ.",
+        "VUL": "ut confirmet Dominus sermones suos quos locutus est de me, dicens : Si custodierint filii tui vias suas, et ambulaverint coram me in veritate, in omni corde suo et in omni anima sua, non auferetur tibi vir de solio Israël.",
+        "SYN": "чтобы Господь исполнил слово Свое, которое Он сказал обо мне, говоря: \"если сыны твои будут наблюдать за путями своими, чтобы ходить предо Мною в истине от всего сердца своего и от всей души своей, то не прекратится муж от тебя на престоле Израилевом\".",
+        "NEO": "en sorte que \\+w Yahweh|strong=\"H3068\"\\+w** accomplisse sa parole qu’il a prononcée sur moi, en disant : Si tes fils prennent garde à leur voie, en marchant devant moi avec fidélité, de tout leur cœur et de toute leur âme, tu ne manqueras jamais d’un descendant assis sur le trône d’Israël.",
+        "NAB": "and the LORD may fulfill the promise he made on my behalf when he said, 'If your sons so conduct themselves that they remain faithful to me with their whole heart and with their whole soul, you shall always have someone of your line on the throne of Israel.'",
+        "VAT_ES": "y el Señor mantendrá esta palabra que me ha dicho: Si tus hijos vigilan su conducta, caminando delante de mí con fidelidad, de todo corazón y con toda su alma, nunca te faltará un descendiente en el trono de Israel.",
+        "CEI": "perché il Signore attui la promessa che mi ha fatto quando ha detto: Se i tuoi figli nella loro condotta si cureranno di camminare davanti a me con lealtà, con tutto il cuore e con tutta l'anima, sul trono d'Israele siederà sempre uno dei tuoi discendenti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/גַ֣ם אַתָּ֣ה יָדַ֡עְתָּ אֵת֩ אֲשֶׁר עָ֨שָׂה לִ֜/י יוֹאָ֣ב בֶּן צְרוּיָ֗ה אֲשֶׁ֣ר עָשָׂ֣ה לִ/שְׁנֵֽי שָׂרֵ֣י צִבְא֣וֹת יִ֠שְׂרָאֵל לְ/אַבְנֵ֨ר בֶּן נֵ֜ר וְ/לַ/עֲמָשָׂ֤א בֶן יֶ֨תֶר֙ וַ/יַּ֣הַרְגֵ֔/ם וַ/יָּ֥שֶׂם דְּמֵֽי מִלְחָמָ֖ה בְּ/שָׁלֹ֑ם וַ/יִּתֵּ֞ן דְּמֵ֣י מִלְחָמָ֗ה בַּ/חֲגֹֽרָת/וֹ֙ אֲשֶׁ֣ר בְּ/מָתְנָ֔י/ו וּֽ/בְ/נַעֲל֖/וֹ אֲשֶׁ֥ר בְּ/רַגְלָֽי/ו׃",
+        "LXX": "καί γε σὺ ἔγνως ὅσα ἐποίησέν μοι Ἰωὰβ υἱὸς Σαρουίας, ὅσα ἐποίησεν τοῖς δυσὶν ἄρχουσιν τῶν δυνάμεων Ἰσραήλ, Ἀβεννὴρ υἱῷ Νὴρ καὶ τῷ Ἀμεσσαιὰ υἱῷ Ἰέθερ, καὶ ἀπέκτεινεν αὐτοὺς καὶ ἔταξεν τὰ αἵματα πολέμου ἐν τῇ ζώνῃ αὐτοῦ τῇ ἐν τῇ ὀσφύι αὐτοῦ καὶ ἐν τῷ ὑποδήματι αὐτοῦ τῷ ἐν τῷ ποδὶ αὐτοῦ.",
+        "VUL": "Tu quoque nosti quæ fecerit mihi Joab filius Sarviæ, quæ fecerit duobus principibus exercitus Israël, Abner filio Ner, et Amasæ filio Jether : quos occidit, et effudit sanguinem belli in pace, et posuit cruorem prælii in balteo suo qui erat circa lumbos ejus, et in calceamento suo quod erat in pedibus ejus.",
+        "SYN": "Еще: ты знаешь, что сделал мне Иоав, сын Саруин, как поступил он с двумя вождями войска Израильского, с Авениром, сыном Нировым, и Амессаем, сыном Иеферовым, как он умертвил их и пролил кровь бранную во время мира, обагрив кровью бранною пояс на чреслах своих и обувь на ногах своих:",
+        "NEO": "Tu sais aussi toi-même ce que m’a fait Joab, fils de Sarvia, ce qu’il a fait aux deux chefs des armées d’Israël, à Abner, fils de Ner, et à Amasa, fils de Jéther : il les a tués, versant pendant la paix le sang de la guerre, et mettant le sang de la guerre sur la ceinture qu’il avait aux reins et sur la chaussure qu’il avait aux pieds.",
+        "NAB": "You yourself know what Joab, son of Zeruiah, did to me when he slew the two generals of Israel's armies, Abner, son of Ner, and Amasa, son of Jether. He took revenge for the blood of war in a time of peace, and put bloodshed without provocation on the belt about my waist and the sandal on my foot.",
+        "VAT_ES": "Tú sabes, además, lo que me hizo Joab, hijo de Sarvia, lo que hizo a los dos jefes de los ejércitos de Israel, a Abner, hijo de Ner, y a Amasá, hijo de Iéter: como los mató, vengando en tiempo de paz la sangre derramada en la guerra; así manchó con sangre inocente mi cinturón y mis sandalias.",
+        "CEI": "Anche tu sai quel che ha fatto a me Ioab, figlio di Zeruià, cioè come egli ha trattato i due capi dell'esercito di Israele, Abner figlio di Ner e Amasà figlio di Ieter, come li ha uccisi spargendo in tempo di pace il sangue, come si fa in guerra, e macchiando di sangue innocente la cintura dei suoi fianchi e i sandali dei suoi piedi."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/עָשִׂ֖יתָ כְּ/חָכְמָתֶ֑/ךָ וְ/לֹֽא תוֹרֵ֧ד שֵׂיבָת֛/וֹ בְּ/שָׁלֹ֖ם שְׁאֹֽל׃",
+        "LXX": "καὶ ποιήσεις κατὰ τὴν σοφίαν σου, καὶ σὺ κατάξεις τὴν πολιὰν αὐτοῦ ἐν εἰρήνῃ εἰς ᾅδου.",
+        "VUL": "Facies ergo juxta sapientiam tuam, et non deduces canitiem ejus pacifice ad inferos.",
+        "SYN": "поступи по мудрости твоей, чтобы не отпустить седины его мирно в преисподнюю.",
+        "NEO": "Tu agiras selon ta sagesse, et tu ne laisseras pas ses cheveux blancs descendre en paix au séjour des morts.",
+        "NAB": "Act with the wisdom you possess; you must not allow him to go down to the grave in peaceful old age.",
+        "VAT_ES": "Obra conforme a tu sabiduría, y no dejes que sus cabellos blancos bajen en paz al Abismo.",
+        "CEI": "Tu agirai con saggezza, ma non permetterai che la sua vecchiaia scenda in pace agli inferi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/לִ/בְנֵ֨י בַרְזִלַּ֤י הַ/גִּלְעָדִי֙ תַּֽעֲשֶׂה חֶ֔סֶד וְ/הָי֖וּ בְּ/אֹכְלֵ֣י שֻׁלְחָנֶ֑/ךָ כִּי כֵן֙ קָרְב֣וּ אֵלַ֔/י בְּ/בָרְחִ֕/י מִ/פְּנֵ֖י אַבְשָׁל֥וֹם אָחִֽי/ךָ׃",
+        "LXX": "καὶ τοῖς υἱοῖς Βερζελλεὶ τοῦ Γαλααδείτου ποιήσεις ἔλεος, καὶ ἔσονται ἐν τοῖς ἐσθίουσιν τὴν τράπεζάν σου· ὅτι οὕτως ἤγγισάν μοι ἐν τῷ με ἀποδιδράσκειν ἀπὸ προσώπου Ἀβεσσαλὼμ τοῦ ἀδελφοῦ σου.",
+        "VUL": "Sed et filiis Berzellai Galaaditis reddes gratiam, eruntque comedentes in mensa tua : occurrerunt enim mihi quando fugiebam a facie Absalom fratris tui.",
+        "SYN": "А сынам Верзеллия Галаадитянина окажи милость, чтоб они были между питающимися твоим столом, ибо они пришли ко мне, когда я бежал от Авессалома, брата твоего.",
+        "NEO": "Mais aux fils de Berzellaï le Galaadite tu montreras de la bienveillance, et ils seront de ceux qui mangent à ta table ; car c’est ainsi qu’ils se sont approchés de moi lorsque je fuyais devant Absalom, ton frère.",
+        "NAB": "\"But be kind to the sons of Barzillai the Gileadite, and have them eat at your table. For they received me kindly when I was fleeing your brother Absalom.",
+        "VAT_ES": "En cambio, a los hijos de Barzilai, el galaadita, trátalos con bondad y cuéntalos entre tus comensales, porque así me trataron a mí cuando huía de tu hermano Absalón.",
+        "CEI": "Agirai con bontà verso i figli di Barzillài il Galaadita, che mangeranno alla tua tavola, perché mi hanno assistito mentre fuggivo da Assalonne tuo fratello."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּ֣ה עִ֠מְּ/ךָ שִֽׁמְעִ֨י בֶן גֵּרָ֥א בֶן הַ/יְמִינִי֮ מִ/בַּחֻרִים֒ וְ/ה֤וּא קִֽלְלַ֨/נִי֙ קְלָלָ֣ה נִמְרֶ֔צֶת בְּ/י֖וֹם לֶכְתִּ֣/י מַחֲנָ֑יִם וְ/הֽוּא יָרַ֤ד לִ/קְרָאתִ/י֙ הַ/יַּרְדֵּ֔ן וָ/אֶשָּׁ֨בַֽע ל֤/וֹ בַֽ/יהוָה֙ לֵ/אמֹ֔ר אִם אֲמִֽיתְ/ךָ֖ בֶּ/חָֽרֶב׃",
+        "LXX": "καὶ ἰδοὺ μετὰ σοῦ Σεμεεὶ υἱὸς Γηρὰ υἱὸς τοῦ Ἰεμεινεὶ ἐκ Βααθουρείμ· καὶ αὐτὸς κατηράσατό με κατάραν ὀδυνηρὰν τῇ ἡμέρᾳ ᾗ ἐπορευόμην εἰς παρεμβολάς, καὶ αὐτὸς κατέβη εἰς ἀπαντήν μου εἰς τὸν Ἰορδάνην, καὶ ὤμοσα αὐτῷ ἐν Κυρίῳ λέγων Εἰ θανατώσω σε ἐν ῥομφαίᾳ.",
+        "VUL": "Habes quoque apud te Semei filium Gera filii Jemini de Bahurim, qui maledixit mihi maledictione pessima quando ibam ad castra : sed quia descendit mihi in occursum cum transirem Jordanem, et juravi ei per Dominum, dicens : Non te interficiam gladio :",
+        "SYN": "Вот еще у тебя Семей, сын Геры Вениамитянина из Бахурима; он злословил меня тяжким злословием, когда я шел в Маханаим; но он вышел навстречу мне у Иордана, и я поклялся ему Господом, говоря: \"я не умерщвлю тебя мечом\".",
+        "NEO": "Voici que tu as près de toi Séméï, fils de Géra, Benjamite, de Bahurim. Il a proféré contre moi des malédictions violentes le jour où j’allais à Mahanaïm. Mais comme il descendit à ma rencontre vers le Jourdain, je lui jurai par \\+w Yahweh|strong=\"H3068\"\\+w**, en disant : Je ne te ferai pas mourir par l’épée.",
+        "NAB": "\"You also have with you Shimei, son of Gera, the Benjaminite of Bahurim, who cursed me balefully when I was going to Mahanaim. Because he came down to meet me at the Jordan, I swore to him by the LORD that I would not put him to the sword.",
+        "VAT_ES": "Tú tienes todavía cerca de ti a Simei, hijo de Guerá, el benjaminita de Bajurím; él me maldijo despiadadamente el día en que yo iba a Majanaim. Pero cuando bajó a recibirme en el Jordán, yo le juré por el Señor: No te haré morir por la espada.",
+        "CEI": "Tu hai accanto a te anche Simèi figlio di Ghera, Beniaminita, di Bacurìm; egli mi maledisse con una maledizione terribile quando fuggivo verso Macanàim. Ma mi venne incontro al Giordano e gli giurai per il Signore: Non ti farò morire di spada."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/עַתָּה֙ אַל תְּנַקֵּ֔/הוּ כִּ֛י אִ֥ישׁ חָכָ֖ם אָ֑תָּה וְ/יָֽדַעְתָּ֙ אֵ֣ת אֲשֶׁ֣ר תַּֽעֲשֶׂה לּ֔/וֹ וְ/הוֹרַדְתָּ֧ אֶת שֵׂיבָת֛/וֹ בְּ/דָ֖ם שְׁאֽוֹל׃",
+        "LXX": "καὶ οὐ μὴ ἀθῳώσῃς αὐτόν, ὅτι ἀνὴρ σοφὸς εἶ σύ, καὶ γνώσῃ ἃ ποιήσεις αὐτῷ· καὶ κατάξεις τὴν πολιὰν αὐτοῦ ἐν αἵματι εἰς ᾅδου.",
+        "VUL": "tu noli pati eum esse innoxium. Vir autem sapiens es, ut scias quæ facies ei : deducesque canos ejus cum sanguine ad inferos.",
+        "SYN": "Ты же не оставь его безнаказанным; ибо ты человек мудрый и знаешь, что тебе сделать с ним, чтобы низвести седину его в крови в преисподнюю.",
+        "NEO": "Et maintenant, tu ne le laisseras pas impuni ; car tu es un homme sage, et tu sais comment tu dois le traiter ; c’est dans le sang que tu feras descendre ses cheveux blancs au séjour des morts. »",
+        "NAB": "But you must not let him go unpunished. You are a prudent man and will know how to deal with him to send down his hoary head in blood to the grave.\"",
+        "VAT_ES": "Ahora no lo dejes sin castigo, porque eres un hombre sensato y sabes cómo deberás tratarlo para que sus cabellos blancos bajen ensangrentados al Abismo».",
+        "CEI": "Ora non lasciare impunito il suo peccato. Sei saggio e sai come trattarlo. Farai scendere la sua canizie agli inferi con morte violenta\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁכַּ֥ב דָּוִ֖ד עִם אֲבֹתָ֑י/ו וַ/יִּקָּבֵ֖ר בְּ/עִ֥יר דָּוִֽד׃",
+        "LXX": "καὶ ἐκοιμήθη Δαυεὶδ μετὰ τῶν πατέρων αὐτοῦ, καὶ ἐτάφη ἐν πόλει Δαυείδ.",
+        "VUL": "Dormivit igitur David cum patribus suis, et sepultus est in civitate David.",
+        "SYN": "И почил Давид с отцами своими и погребен был в городе Давидовом.",
+        "NEO": "David se coucha avec ses pères, et il fut enterré dans la cité de David.",
+        "NAB": "David rested with his ancestors and was buried in the City of David.",
+        "VAT_ES": "David se fue a descansar con sus padres, y lo enterraron en la Ciudad de David.",
+        "CEI": "Davide si addormentò con i suoi padri e fu sepolto nella città di Davide."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/הַ/יָּמִ֗ים אֲשֶׁ֨ר מָלַ֤ךְ דָּוִד֙ עַל יִשְׂרָאֵ֔ל אַרְבָּעִ֖ים שָׁנָ֑ה בְּ/חֶבְר֤וֹן מָלַךְ֙ שֶׁ֣בַע שָׁנִ֔ים וּ/בִ/ירוּשָׁלִַ֣ם מָלַ֔ךְ שְׁלֹשִׁ֥ים וְ/שָׁלֹ֖שׁ שָׁנִֽים׃",
+        "LXX": "καὶ αἱ ἡμέραι ἃς ἐβασίλευσεν Δαυεὶδ ἐπὶ τὸν Ἰσραὴλ τεσσεράκοντα ἔτη· ἐν Χεβρὼν ἐβασίλευσεν ἔτη ἑπτά, καὶ ἐν Ἰερουσαλὴμ τριάκοντα τρία ἔτη.",
+        "VUL": "Dies autem quibus regnavit David super Israël, quadraginta anni sunt : in Hebron regnavit septem annis ; in Jerusalem, triginta tribus.",
+        "SYN": "Времени царствования Давида над Израилем было сорок лет: в Хевроне царствовал он семь лет и тридцать три года царствовал в Иерусалиме.",
+        "NEO": "Le temps que David régna sur Israël fut de quarante ans : il régna sept ans à Hébron, et il régna trente-trois ans à Jérusalem.",
+        "NAB": "The length of David's reign over Israel was forty years: he reigned seven years in Hebron and thirty-three years in Jerusalem.",
+        "VAT_ES": "Cuarenta años duró su reinado sobre Israel: reinó siete años en Hebrón y treinta y tres en Jerusalén.",
+        "CEI": "La durata del regno di Davide su Israele fu di quaranta anni: sette in Ebron e trentatré in Gerusalemme."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וּ/שְׁלֹמֹ֕ה יָשַׁ֕ב עַל כִּסֵּ֖א דָּוִ֣ד אָבִ֑י/ו וַ/תִּכֹּ֥ן מַלְכֻת֖/וֹ מְאֹֽד׃",
+        "LXX": "Καὶ Σαλωμὼν ἐκάθισεν ἐπὶ θρόνου Δαυεὶδ τοῦ πατρὸς αὐτοῦ, καὶ ἡτοιμάσθη ἡ βασιλεία αὐτοῦ σφόδρα.",
+        "VUL": "Salomon autem sedit super thronum David patris sui, et firmatum est regnum ejus nimis.",
+        "SYN": "И сел Соломон на престоле Давида, отца своего, и царствование его было очень твердо.",
+        "NEO": "Et Salomon s’assit sur le trône de David, son père, et son règne fut bien affermi.",
+        "NAB": "When Solomon was seated on the throne of his father David, with his sovereignty firmly established,",
+        "VAT_ES": "Salomón se sentó en el trono de su padre David, y su realeza quedó firmemente afianzada.",
+        "CEI": "Salomone sedette sul trono di Davide suo padre e il suo regno si consolidò molto."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֞א אֲדֹנִיָּ֣הוּ בֶן חַגֵּ֗ית אֶל בַּת שֶׁ֨בַע֙ אֵם שְׁלֹמֹ֔ה וַ/תֹּ֖אמֶר הֲ/שָׁל֣וֹם בֹּאֶ֑/ךָ וַ/יֹּ֖אמֶר שָׁלֽוֹם׃",
+        "LXX": "καὶ εἰσῆλθεν Ἀδωνείας πρὸς Βηρσάβεε μητέρα Σαλωμὼν καὶ προσεκύνησεν αὐτῇ· ἡ δὲ εἶπεν Εἰρήνη ἡ εἴσοδός σου; καὶ εἶπεν Εἰρήνη·",
+        "VUL": "Et ingressus est Adonias filius Haggith ad Bethsabee matrem Salomonis. Quæ dixit ei : Pacificusne est ingressus tuus ? Qui respondit : Pacificus.",
+        "SYN": "И пришел Адония, сын Аггифы, к Вирсавии, матери Соломона, [и поклонился ей]. Она сказала: с миром ли приход твой? И сказал он: с миром.",
+        "NEO": "Adonias, fils de Haggith, vint trouver Bethsabée, mère de Salomon. Elle lui dit : « Viens-tu dans une intention pacifique ? » Il répondit : « Oui ! dans une intention pacifique ; »",
+        "NAB": "Adonijah, son of Haggith, went to Bathsheba, the mother of Solomon. \"Do you come as a friend?\" she asked. \"Yes,\" he answered,",
+        "VAT_ES": "Adonías, hijo de Jaguit, fue a ver a Betsabé, la madre de Salomón. «&iquest;Vienes en soy de paz?», preguntó ella. «Sí», respondió él.",
+        "CEI": "Adonia figlio di Agghìt si recò da Betsabea, madre di Salomone, che gli chiese: \"Vieni con intenzioni pacifiche?\". \"Pacifiche\", rispose quello,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֕אמֶר דָּבָ֥ר לִ֖/י אֵלָ֑יִ/ךְ וַ/תֹּ֖אמֶר דַּבֵּֽר׃",
+        "LXX": "λόγος μοι πρὸς σέ. καὶ εἶπεν αὐτῷ Λάλησον.",
+        "VUL": "Addiditque : Sermo mihi est ad te. Cui ait : Loquere. Et ille :",
+        "SYN": "И сказал он: у меня есть слово к тебе. Она сказала: говори.",
+        "NEO": "et il ajouta : « J’ai un mot à te dire. » Elle dit : « Parle. »",
+        "NAB": "and added, \"I have something to say to you.\" She replied, \"Say it.\"",
+        "VAT_ES": "Y añadió: «Tengo algo que decirte». «Habla», replicó ella.",
+        "CEI": "e soggiunse: \"Ho da dirti una cosa\". E quella: \"Parla!\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר אַ֤תְּ יָדַ֨עַתְּ֙ כִּי לִ/י֙ הָיְתָ֣ה הַ/מְּלוּכָ֔ה וְ/עָלַ֞/י שָׂ֧מוּ כָֽל יִשְׂרָאֵ֛ל פְּנֵי/הֶ֖ם לִ/מְלֹ֑ךְ וַ/תִּסֹּ֤ב הַ/מְּלוּכָה֙ וַ/תְּהִ֣י לְ/אָחִ֔/י כִּ֥י מֵ/יְהוָ֖ה הָ֥יְתָה לּֽ/וֹ׃",
+        "LXX": "καὶ εἶπεν αὐτῇ Σὺ οἶδας ὅτι ἐμοὶ ἦν ἡ βασιλεία καὶ ἐπ’ ἐμὲ ἔθετο πᾶς Ἰσραὴλ τὸ πρόσωπον αὐτοῦ εἰς βασιλέα· καὶ ἐστράφη ἡ βασιλεία καὶ ἐγενὴθη τῷ ἀδελφῷ μου, ὅτι παρὰ Κυρίου ἐγένετο αὐτῷ.",
+        "VUL": "Tu, inquit, nosti, quia meum erat regnum, et me præposuerat omnis Israël sibi in regem : sed translatum est regnum, et factum est fratris mei : a Domino enim constitutum est ei.",
+        "SYN": "И сказал он: ты знаешь, что царство принадлежало мне, и весь Израиль обращал на меня взоры свои, как на будущего царя; но царство отошло от меня и досталось брату моему, ибо от Господа это было ему;",
+        "NEO": "Et il dit : « Tu sais que le royaume m’appartenait, et que tout Israël portait ses regards sur moi pour que je règne. Mais la royauté a été transférée, et elle a été donnée à mon frère, parce que \\+w Yahweh|strong=\"H3068\"\\+w** la lui avait destinée.",
+        "NAB": "So he said: \"You know that the kingdom was mine, and all Israel expected me to be king. But the kingdom escaped me and became my brother's, for the LORD gave it to him.",
+        "VAT_ES": "Entonces él dijo: «Tú sabes que a mí me correspondía la realeza y que todo Israel tenía los ojos puestos en mí, esperando que yo reinara. Pero la realeza se me escapó de las manos y fue a parar a mi hermano, porque el Señor se la tenía destinada.",
+        "CEI": "Egli disse: \"Tu sai che il regno spettava a me e che tutti gli Israeliti si attendevano che io regnassi. Eppure il regno mi è sfuggito ed è passato a mio fratello, perché gli era stato decretato dal Signore."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה שְׁאֵלָ֤ה אַחַת֙ אָֽנֹכִי֙ שֹׁאֵ֣ל מֵֽ/אִתָּ֔/ךְ אַל תָּשִׁ֖בִי אֶת פָּנָ֑/י וַ/תֹּ֥אמֶר אֵלָ֖י/ו דַּבֵּֽר׃",
+        "LXX": "καὶ νῦν αἴτησιν μίαν ἐγὼ αἰτοῦμαι παρὰ σοῦ, μὴ ἀποστρέψῃς τὸ πρόσωπόν σου. καὶ εἶπεν αὐτῷ Βηρσάβεε Λάλει.",
+        "VUL": "Nunc ergo petitionem unam precor a te : ne confundas faciem meam. Quæ dixit ad eum : Loquere.",
+        "SYN": "теперь я прошу тебя об одном, не откажи мне. Она сказала ему: говори.",
+        "NEO": "Maintenant, je te demande une seule chose ; ne me rejette pas. » Elle lui répondit : « Parle. »",
+        "NAB": "But now there is one favor I would ask of you. Do not refuse me.\" And she said, \"Speak on.\"",
+        "VAT_ES": "Ahora tengo que hacerte un solo pedido; no me lo niegues». Ella le dijo: «Habla».",
+        "CEI": "Ora ti rivolgo una domanda; non respingermi\". Ed essa: \"Parla!\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר אִמְרִי נָא֙ לִ/שְׁלֹמֹ֣ה הַ/מֶּ֔לֶךְ כִּ֥י לֹֽא יָשִׁ֖יב אֶת פָּנָ֑יִ/ךְ וְ/יִתֶּן לִ֛/י אֶת אֲבִישַׁ֥ג הַ/שּׁוּנַמִּ֖ית לְ/אִשָּֽׁה׃",
+        "LXX": "καὶ εἶπεν αὐτῇ Εἰπὸν δὴ πρὸς Σαλωμὼν τὸν βασιλέα, ὅτι οὐκ ἀποστρέψει τὸ πρόσωπον αὐτοῦ ἀπὸ σοῦ· καὶ δώσει μοι τὴν Ἀβεισὰ τὴν Σωμανεῖτιν εἰς γυναῖκα.",
+        "VUL": "Et ille ait : Precor ut dicas Salomoni regi (neque enim negare tibi quidquam potest) ut det mihi Abisag Sunamitidem uxorem.",
+        "SYN": "И сказал он: прошу тебя, поговори царю Соломону, ибо он не откажет тебе, чтоб он дал мне Ависагу Сунамитянку в жену.",
+        "NEO": "Et il dit : « Dis, je te prie, au roi Salomon — car il ne te rejettera pas — de me donner pour femme Abisag, la Sunamite. »",
+        "NAB": "He said, \"Please ask King Solomon, who will not refuse you, to give me Abishag the Shunamite for my wife.\"",
+        "VAT_ES": "El prosiguió: «Pídele por favor al rey Salomón, que me dé por esposa a Abisag, la sunamita. Seguramente no te lo va a negar».",
+        "CEI": "Adonia disse: \"Dì al re Salomone - il quale nulla ti può negare - che mi conceda in moglie Abisag la Sunammita\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֥אמֶר בַּת שֶׁ֖בַע ט֑וֹב אָנֹכִ֕י אֲדַבֵּ֥ר עָלֶ֖י/ךָ אֶל הַ/מֶּֽלֶךְ׃",
+        "LXX": "καὶ εἶπεν Βηρσάβεε Καλῶς, ἐγὼ λαλήσω περὶ σοῦ τῷ βασιλεῖ.",
+        "VUL": "Et ait Bethsabee : Bene : ego loquar pro te regi.",
+        "SYN": "И сказала Вирсавия: хорошо, я поговорю о тебе царю.",
+        "NEO": "Bethsabée dit : « Bien ! Je parlerai au roi à ton sujet. »",
+        "NAB": "\"Very well,\" replied Bathsheba, \"I will speak to the king for you.\"",
+        "VAT_ES": "Está bien, respondió Betsabé, yo misma le hablaré de ti al rey».",
+        "CEI": "Betsabea rispose: \"Bene! Parlerò in tuo favore al re\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/תָּבֹ֤א בַת שֶׁ֨בַע֙ אֶל הַ/מֶּ֣לֶךְ שְׁלֹמֹ֔ה לְ/דַבֶּר ל֖/וֹ עַל אֲדֹנִיָּ֑הוּ וַ/יָּקָם֩ הַ/מֶּ֨לֶךְ לִ/קְרָאתָ֜/הּ וַ/יִּשְׁתַּ֣חוּ לָ֗/הּ וַ/יֵּ֨שֶׁב֙ עַל כִּסְא֔/וֹ וַ/יָּ֤שֶׂם כִּסֵּא֙ לְ/אֵ֣ם הַ/מֶּ֔לֶךְ וַ/תֵּ֖שֶׁב לִֽ/ימִינֽ/וֹ׃",
+        "LXX": "καὶ εἰσῆλθεν Βηρσάβεε πρὸς τὸν βασιλέα Σαλωμὼν λαλῆσαι αὐτῷ περὶ Ἀδωνειού· καὶ ἐξανέστη ὁ βασιλεὺς εἰς ἀπαντὴν αὐτῇ καὶ κατεφίλησεν αὐτήν, καὶ ἐκάθισεν ἐπὶ τοῦ θρόνου· καὶ ἐτέθη θρόνος τῇ μητρὶ τοῦ βασιλέως, καὶ ἐκάθισεν ἐκ δεξιῶν αὐτοῦ.",
+        "VUL": "Venit ergo Bethsabee ad regem Salomonem ut loqueretur ei pro Adonia : et surrexit rex in occursum ejus, adoravitque eam, et sedit super thronum suum : positusque est thronus matri regis, quæ sedit ad dexteram ejus.",
+        "SYN": "И вошла Вирсавия к царю Соломону говорить ему об Адонии. Царь встал перед нею, и поклонился ей, и сел на престоле своем. Поставили престол и для матери царя, и она села по правую руку его",
+        "NEO": "Bethsabée se rendit auprès du roi Salomon pour lui parler au sujet d’Adonias. Et le roi se leva pour aller à sa rencontre et il se prosterna devant elle ; il s’assit sur son trône, et fit placer un trône pour la mère du roi, et elle s’assit à sa droite.",
+        "NAB": "Then Bathsheba went to King Solomon to speak to him for Adonijah, and the king stood up to meet her and paid her homage. Then he sat down upon his throne, and a throne was provided for the king's mother, who sat at his right.",
+        "VAT_ES": "Betsabé fue a presentarse al rey Salomón para hablarle de Adonías. El rey se levantó, fue a su encuentro y le hizo una inclinación. Luego se sentó en su trono, mandó poner un trono para la madre del rey, y ella se sentó a su derecha.",
+        "CEI": "Betsabea si presentò al re Salomone per parlargli in favore di Adonia. Il re si alzò per andarle incontro, si prostrò davanti a lei, quindi sedette sul trono, facendo collocare un trono per la madre del re. Questa gli sedette alla destra"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֗אמֶר שְׁאֵלָ֨ה אַחַ֤ת קְטַנָּה֙ אָֽנֹכִי֙ שֹׁאֶ֣לֶת מֵֽ/אִתָּ֔/ךְ אַל תָּ֖שֶׁב אֶת פָּנָ֑/י וַ/יֹּֽאמֶר לָ֤/הּ הַ/מֶּ֨לֶךְ֙ שַׁאֲלִ֣י אִמִּ֔/י כִּ֥י לֹֽא אָשִׁ֖יב אֶת פָּנָֽיִ/ךְ׃",
+        "LXX": "καὶ εἶπεν αὐτῷ Αἴτησιν μίαν ἐγὼ μικρὰν αἰτοῦμαι παρὰ σοῦ, μὴ ἀποστρέψῃς τὸ πρόσωπόν σου· καὶ εἶπεν αὐτῇ ὁ βασιλεύς Αἴτησαι, μήτηρ ἐμή, καὶ οὐκ ἀποστρέψω σε.",
+        "VUL": "Dixitque ei : Petitionem unam parvulam ego deprecor a te : ne confundas faciem meam. Et dixit ei rex : Pete, mater mea : neque enim fas est ut avertam faciem tuam.",
+        "SYN": "и сказала: я имею к тебе одну небольшую просьбу, не откажи мне. И сказал ей царь: проси, мать моя; я не откажу тебе.",
+        "NEO": "Puis elle dit : « J’ai une petite demande à te faire : ne me rejette pas. » Le roi lui dit : « Demande, ma mère, car je ne te rejetterai pas. »",
+        "NAB": "\"There is one small favor I would ask of you,\" she said. \"Do not refuse me.\" \"Ask it, my mother,\" the king said to her, \"for I will not refuse you.\"",
+        "VAT_ES": "Entonces ella dijo: «Tengo que hacerte un pequeño pedido; no me lo niegues». El rey respondió: «Pide, madre mía, porque no te lo voy a negar».",
+        "CEI": "e disse: \"Ho una piccola grazia da chiederti; non me la negare\". Il re le rispose: \"Chiedi, madre mia, non ti respingerò\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֕אמֶר יֻתַּ֖ן אֶת אֲבִישַׁ֣ג הַ/שֻּׁנַמִּ֑ית לַ/אֲדֹנִיָּ֥הוּ אָחִ֖י/ךָ לְ/אִשָּֽׁה׃",
+        "LXX": "καὶ εἶπεν Δοθήτω δὴ Ἀβεισὰ ἡ Σωμανεῖτις τῷ Ἀδωνειὰ τῷ ἀδελφῷ σου εἰς γυναῖκα.",
+        "VUL": "Quæ ait : Detur Abisag Sunamitis Adoniæ fratri tuo uxor.",
+        "SYN": "И сказала она: дай Ависагу Сунамитянку Адонии, брату твоему, в жену.",
+        "NEO": "Elle dit : « Qu’Abisag, la Sunamite, soit donnée pour femme à Adonias, ton frère. »",
+        "NAB": "So she said, \"Let Abishag the Shunamite be given to your brother Adonijah for his wife.\"",
+        "VAT_ES": "Ella le dijo: «Que se dé a Abisag, la sunamita, como esposa a tu hermano Adonías».",
+        "CEI": "E quella: \"Si conceda Abisag la Sunammita in moglie ad Adonia tuo fratello\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יַּעַן֩ הַ/מֶּ֨לֶךְ שְׁלֹמֹ֜ה וַ/יֹּ֣אמֶר לְ/אִמּ֗/וֹ וְ/לָ/מָה֩ אַ֨תְּ שֹׁאֶ֜לֶת אֶת אֲבִישַׁ֤ג הַ/שֻּׁנַמִּית֙ לַ/אֲדֹ֣נִיָּ֔הוּ וְ/שַֽׁאֲלִי ל/וֹ֙ אֶת הַ/מְּלוּכָ֔ה כִּ֛י ה֥וּא אָחִ֖/י הַ/גָּד֣וֹל מִמֶּ֑/נִּי וְ/ל/וֹ֙ וּ/לְ/אֶבְיָתָ֣ר הַ/כֹּהֵ֔ן וּ/לְ/יוֹאָ֖ב בֶּן צְרוּיָֽה׃",
+        "LXX": "καὶ ἀπεκρίθη Σαλωμὼν ὁ βασιλεὺς καὶ εἶπεν τῇ μητρὶ αὐτοῦ Καὶ ἵνα τί σὺ ᾔτησαι τὴν Ἀβεισὰ τῷ Ἀδωνειά; καὶ αἴτησαι αὐτῷ τὴν βασιλείαν· ὅτι οὗτος ἀδελφός μου ὁ μέγας ὑπὲρ ἐμέ, καὶ αὐτῷ Ἀβιαθὰρ ὁ ἱερεὺς καὶ αὐτῷ Ἰωὰβ ὁ υἱὸς Σαρουίας ὁ ἀρχιστράτηγος ἑταῖρος.",
+        "VUL": "Responditque rex Salomon, et dixit matri suæ : Quare postulas Abisag Sunamitidem Adoniæ ? postula ei et regnum : ipse est enim frater meus major me, et habet Abiathar sacerdotem, et Joab filium Sarviæ.",
+        "SYN": "И отвечал царь Соломон и сказал матери своей: а зачем ты просишь Ависагу Сунамитянку для Адонии? проси ему _также_ и царства; ибо он мой старший брат, и ему священник Авиафар и Иоав, сын Саруин, [военачальник, друг].",
+        "NEO": "Le roi Salomon répondit et dit à sa mère : « Pourquoi demandes-tu Abisag, la Sunamite, pour Adonias ? Demande donc la royauté pour lui, — car il est mon frère aîné, — pour lui, pour le prêtre Abiathar, et pour Joab, fils de Sarvia ! »",
+        "NAB": "\"And why do you ask Abishag the Shunamite for Adonijah?\" King Solomon answered his mother. \"Ask the kingdom for him as well, for he is my elder brother and has with him Abiathar the priest and Joab, son of Zeruiah.\"",
+        "VAT_ES": "Pero el rey Salomón replicó a su madre, diciendo: «&iquest;Por qué pides para Adonías a la sunamita Abisag? &iexcl;Pide más bien para él la realeza, ya que es mi hermano mayor! &iexcl;Sí, para él, para el sacerdote Abiatar y para Joab, hijo de Sarvia!».",
+        "CEI": "Il re Salomone rispose alla madre: \"Perché tu mi chiedi Abisag la Sunammita per Adonia? Chiedi anche il regno per lui, poiché egli è mio fratello maggiore e per lui parteggiano il sacerdote Ebiatàr e Ioab figlio di Zeruià\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יִּשָּׁבַע֙ הַ/מֶּ֣לֶךְ שְׁלֹמֹ֔ה בַּֽ/יהוָ֖ה לֵ/אמֹ֑ר כֹּ֣ה יַֽעֲשֶׂה לִּ֤/י אֱלֹהִים֙ וְ/כֹ֣ה יוֹסִ֔יף כִּ֣י בְ/נַפְשׁ֔/וֹ דִּבֶּר֙ אֲדֹ֣נִיָּ֔הוּ אֶת הַ/דָּבָ֖ר הַ/זֶּֽה׃",
+        "LXX": "καὶ ὤμοσεν ὁ βασιλεὺς Σαλωμὼν κατὰ τοῦ κυρίου λέγων Τάδε ποιήσαι μοι ὁ θεὸς καὶ τάδε προσθείη, ὅτι κατὰ τῆς ψυχῆς αὐτοῦ ἐλάλησεν Ἀδωνειὰ τὸν λόγον τοῦτον.",
+        "VUL": "Juravit itaque rex Salomon per Dominum, dicens : Hæc faciat mihi Deus, et hæc addat, quia contra animam suam locutus est Adonias verbum hoc.",
+        "SYN": "И поклялся царь Соломон Господом, говоря: то и то пусть сделает со мною Бог и еще больше сделает, если не на свою душу сказал Адония такое слово;",
+        "NEO": "Le roi Salomon jura par \\+w Yahweh|strong=\"H3068\"\\+w**, en disant : « Que Dieu me traite dans toute sa rigueur si ce n’est pas pour sa perte qu’Adonias a prononcé cette parole !",
+        "NAB": "And King Solomon swore by the LORD: \"May God do thus and so to me, and more besides, if Adonijah has not proposed this at the cost of his life.",
+        "VAT_ES": "Y el rey Salomón juró por el Señor, diciendo: «&iexcl;Que Dios me castigue si Adonías no ha pronunciado esta palabra a costa de su propia vida!",
+        "CEI": "Il re Salomone giurò per il Signore: \"Dio mi faccia questo e altro mi aggiunga, se non è vero che Adonia ha manifestato quest'idea a danno della propria vita."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה חַי יְהוָה֙ אֲשֶׁ֣ר הֱכִינַ֗/נִי ו/יושיבי/ני וַ/יּֽוֹשִׁיבַ֨/נִי֙ עַל כִּסֵּא֙ דָּוִ֣ד אָבִ֔/י וַ/אֲשֶׁ֧ר עָֽשָׂה לִ֛/י בַּ֖יִת כַּ/אֲשֶׁ֣ר דִּבֵּ֑ר כִּ֣י הַ/יּ֔וֹם יוּמַ֖ת אֲדֹנִיָּֽהוּ׃",
+        "LXX": "καὶ νῦν ζῇ Κύριος ὃς ἡτοίμασέν με καὶ ἔθετό με ἐπὶ τὸν θρόνον Δαυεὶδ τοῦ πατρός μου, καὶ αὐτὸς ἐποίησέν μοι οἶκον καθὼς ἐλάλησεν Κύριος, ὅτι σήμερον θανατωθήσεται Ἀδωνειά.",
+        "VUL": "Et nunc vivit Dominus, qui firmavit me, et collocavit me super solium David patris mei, et qui fecit mihi domum, sicut locutus est, quia hodie occidetur Adonias.",
+        "SYN": "ныне же, -- жив Господь, укрепивший меня и посадивший меня на престоле Давида, отца моего, и устроивший мне дом, как говорил Он, -- ныне же Адония должен умереть.",
+        "NEO": "Et maintenant, \\+w Yahweh|strong=\"H3068\"\\+w** est vivant ! — lui qui m’a affermi et m’a fait asseoir sur le trône de David, mon père, et qui m’a édifié une maison selon qu’il l’avait dit, — aujourd’hui même, Adonias sera mis à mort ! »",
+        "NAB": "And now, as the LORD lives, who has seated me firmly on the throne of my father David and made of me a dynasty as he promised, this day shall Adonijah be put to death.\"",
+        "VAT_ES": "Y ahora, &iexcl;por la vida del Señor, que me ha afianzado haciéndome sentar en el trono de mi padre David, y que me ha constituido una dinastía, conforme a lo que había dicho, juro que Adonías morirá hoy mismo!».",
+        "CEI": "Ebbene, per la vita del Signore che mi ha reso saldo, mi ha fatto sedere sul trono di Davide mio padre e mi ha concesso una casa come aveva promesso, oggi stesso Adonia verrà ucciso\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַח֙ הַ/מֶּ֣לֶךְ שְׁלֹמֹ֔ה בְּ/יַ֖ד בְּנָיָ֣הוּ בֶן יְהוֹיָדָ֑ע וַ/יִּפְגַּע בּ֖/וֹ וַ/יָּמֹֽת׃",
+        "LXX": "καὶ ἐξαπέστειλεν Σαλωμὼν ὁ βασιλεὺς ἐν χειρὶ Βαναιοὺ υἱοῦ Ἰωδᾶε καὶ ἀνεῖλεν αὐτόν, καὶ ἀπέθανεν Ἀδωνείας ἐν τῇ ἡμέρᾳ ἐκείνῃ.",
+        "VUL": "Misitque rex Salomon per manum Banaiæ filii Jojadæ, qui interfecit eum, et mortuus est.",
+        "SYN": "И послал царь Соломон Ванею, сына Иодаева, который поразил его, и он умер.",
+        "NEO": "Et le roi Salomon députa Banaïas, fils de Joïadas ; il frappa Adonias, qui mourut.",
+        "NAB": "Then King Solomon sent Benaiah, son of Jehoiada, who struck him dead.",
+        "VAT_ES": "En seguida el rey Salomón envió a Benaías, hijo de Iehoiadá, y este hirió de muerte a Adonías.",
+        "CEI": "Il re Salomone ordinò a Benaià figlio di Ioiadà, di ucciderlo; così morì Adonia."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וּ/לְ/אֶבְיָתָ֨ר הַ/כֹּהֵ֜ן אָמַ֣ר הַ/מֶּ֗לֶךְ עֲנָתֹת֙ לֵ֣ךְ עַל שָׂדֶ֔י/ךָ כִּ֛י אִ֥ישׁ מָ֖וֶת אָ֑תָּה וּ/בַ/יּ֨וֹם הַ/זֶּ֜ה לֹ֣א אֲמִיתֶ֗/ךָ כִּֽי נָשָׂ֜אתָ אֶת אֲר֨וֹן אֲדֹנָ֤/י יְהֹוִה֙ לִ/פְנֵי֙ דָּוִ֣ד אָבִ֔/י וְ/כִ֣י הִתְעַנִּ֔יתָ בְּ/כֹ֥ל אֲשֶֽׁר הִתְעַנָּ֖ה אָבִֽ/י׃",
+        "LXX": "καὶ τῷ Ἀβιαθὰρ τῷ ἱερεῖ εἶπεν ὁ βασιλεύς Ἀπότρεχε σὺ εἰς Ἀναθὼθ εἰς ἀγρόν σου, ὅτι ἀνὴρ θανάτου εἶ σὺ ἐν τῇ ἡμέρᾳ ταύτῃ· καὶ οὐ θανατώσω σε, ὅτι ἦρας τὴν κιβωτὸν τῆς διαθήκης Κυρίου ἐνώπιον τοῦ πατρός μου, καὶ ὅτι ἐκακουχήθης ἐν ἅπασιν οἷς ἐκακουχήθη ὁ πατήρ μου.",
+        "VUL": "Abiathar quoque sacerdoti dixit rex : Vade in Anathoth ad agrum tuum : equidem vir mortis es : sed hodie te non interficiam, quia portasti arcam Domini Dei coram David patre meo, et sustinuisti laborem in omnibus in quibus laboravit pater meus.",
+        "SYN": "А священнику Авиафару царь сказал: ступай в Анафоф на твое поле; ты достоин смерти, но в настоящее время я не умерщвлю тебя, ибо ты носил ковчег Владыки Господа пред Давидом, отцом моим, и терпел все, что терпел отец мой.",
+        "NEO": "Le roi dit au prêtre Abiathar : « Va-t’en à Anathoth dans tes terres, car tu mérites la mort ; mais je ne te ferai pas mourir aujourd’hui, parce que tu as porté l’arche du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** devant David, mon père, et parce que tu as eu ta part dans tout ce qu’a souffert mon père. »",
+        "NAB": "The king said to Abiathar the priest: \"Go to your land in Anathoth. Though you deserve to die, I will not put you to death this time, because you carried the ark of the Lord GOD before my father David and shared in all the hardships my father endured.\"",
+        "VAT_ES": "En cuanto al sacerdote Ebiatar, el rey le dijo: «Vete a tus campos de Anatot. Aunque mereces la muerte, hoy no te haré morir, porque has llevado el Arca del Señor delante de mi padre David, y has compartido todas sus aflicciones».",
+        "CEI": "Al sacerdote Ebiatàr il re ordinò: \"Vattene in Anatòt, nella tua campagna. Meriteresti la morte, ma oggi non ti faccio morire perché tu hai portato l'arca del Signore davanti a Davide mio padre e perché hai partecipato a tutte le traversie di mio padre\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יְגָ֤רֶשׁ שְׁלֹמֹה֙ אֶת אֶבְיָתָ֔ר מִ/הְי֥וֹת כֹּהֵ֖ן לַֽ/יהוָ֑ה לְ/מַלֵּא֙ אֶת דְּבַ֣ר יְהוָ֔ה אֲשֶׁ֥ר דִּבֶּ֛ר עַל בֵּ֥ית עֵלִ֖י בְּ/שִׁלֹֽה׃",
+        "LXX": "καὶ ἐξέβαλεν Σαλωμὼν τὸν Ἀβιαθὰρ τοῦ μὴ εἶναι ἱερέα τοῦ κυρίου, πληρωθῆναι τὸ ῥῆμα Κυρίου ὃ ἐλάλησεν ἐπὶ τὸν οἶκον Ἠλεὶ ἐν Σηλώμ.",
+        "VUL": "Ejecit ergo Salomon Abiathar ut non esset sacerdos Domini, ut impleretur sermo Domini quem locutus est super domum Heli in Silo.",
+        "SYN": "И удалил Соломон Авиафара от священства Господня, и исполнилось слово Господа, которое сказал Он о доме Илия в Силоме.",
+        "NEO": "Et Salomon chassa Abiathar pour qu’il ne fût plus prêtre de \\+w Yahweh|strong=\"H3068\"\\+w**, accomplissant ainsi la parole que \\+w Yahweh|strong=\"H3068\"\\+w** avait prononcée sur la maison d’Héli à Silo.",
+        "NAB": "So Solomon deposed Abiathar from his office of priest of the LORD, thus fulfilling the prophecy which the LORD had made in Shiloh about the house of Eli.",
+        "VAT_ES": "Y Salomón destituyó a Ebiatar de su función de sacerdote del Señor, cumpliendo así la palabra que el Señor había pronunciado contra la casa de Elí, en Silo.",
+        "CEI": "Così Salomone escluse Ebiatàr dal sacerdozio del Signore, adempiendo la parola che il Signore aveva pronunziata in Silo riguardo alla casa di Eli."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/הַ/שְּׁמֻעָה֙ בָּ֣אָה עַד יוֹאָ֔ב כִּ֣י יוֹאָ֗ב נָטָה֙ אַחֲרֵ֣י אֲדֹנִיָּ֔ה וְ/אַחֲרֵ֥י אַבְשָׁל֖וֹם לֹ֣א נָטָ֑ה וַ/יָּ֤נָס יוֹאָב֙ אֶל אֹ֣הֶל יְהוָ֔ה וַֽ/יַּחֲזֵ֖ק בְּ/קַרְנ֥וֹת הַ/מִּזְבֵּֽחַ׃",
+        "LXX": "καὶ ἡ ἀκοὴ ἦλθεν ἕως Ἰωὰβ τοῦ υἱοῦ Σαρουίας, ὅτι Ἰωὰβ ἦν κεκλικὼς ὀπίσω Ἀδωνειά, καὶ ὀπίσω Ἀβεσσαλὼμ οὐκ ἔκλινεν· καὶ ἔφυγεν Ἰωὰβ εἰς τὸ σκήνωμα τοῦ κυρίου καὶ κατέσχεν τῶν κεράτων τοῦ θυσιαστηρίου.",
+        "VUL": "Venit autem nuntius ad Joab, quod Joab declinasset post Adoniam, et post Salomonem non declinasset : fugit ergo Joab in tabernaculum Domini, et apprehendit cornu altaris.",
+        "SYN": "Слух _об_ _этом_ дошел до Иоава, -- так как Иоав склонялся на сторону Адонии, а на сторону Соломона не склонялся, -- и убежал Иоав в скинию Господню и ухватился за роги жертвенника.",
+        "NEO": "La nouvelle en parvint à Joab, car Joab avait suivi le parti d’Adonias, quoiqu’il n’eût pas suivi le parti d’Absalom. Et Joab s’enfuit au tabernacle de \\+w Yahweh|strong=\"H3068\"\\+w**, et il saisit les cornes de l’autel.",
+        "NAB": "When the news came to Joab, who had sided with Adonijah, though not with Absalom, he fled to the tent of the LORD and seized the horns of the altar.",
+        "VAT_ES": "La noticia llegó a oídos de Joab, y como él se había puesto de parte de Adonías, aunque no de Absalón, fue a refugiarse en la Carpa del Señor y se agarró de los cuernos del altar.",
+        "CEI": "Quando la notizia giunse a Ioab - questi era stato dalla parte di Adonia, ma non per Assalonne - Ioab si rifugiò nella tenda del Signore e si afferrò ai corni dell'altare."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יֻּגַּ֞ד לַ/מֶּ֣לֶךְ שְׁלֹמֹ֗ה כִּ֣י נָ֤ס יוֹאָב֙ אֶל אֹ֣הֶל יְהוָ֔ה וְ/הִנֵּ֖ה אֵ֣צֶל הַ/מִּזְבֵּ֑חַ וַ/יִּשְׁלַ֨ח שְׁלֹמֹ֜ה אֶת בְּנָיָ֧הוּ בֶן יְהוֹיָדָ֛ע לֵ/אמֹ֖ר לֵ֥ךְ פְּגַע בּֽ/וֹ׃",
+        "LXX": "καὶ ἀπηγγέλη τῷ Σαλωμὼν λέγοντες ὅτι Ἔφυγεν Ἰωὰβ εἰς τὴν σκηνὴν τοῦ κυρίου, καὶ ἰδοὺ κατέχει τῶν κεράτων τοῦ θυσιαστηρίου. καὶ ἀπέστειλεν Σαλωμὼν πρὸς Ἰωὰβ λέγων Τί γέγονέν σοι ὅτι πέφευγας εἰς τὸ θυσιαστήριον; καὶ εἶπεν Ἰωάβ Ὅτι ἐφοβήθην ἀπὸ προσώπου σου, καὶ ἔφυγον πρὸς Κύριον. καὶ ἀπέστειλεν ὁ Σαλωμὼν τὸν Βαναιοὺ υἱὸν Ἰωδᾶε λέγων Πορεύου καὶ ἄνελε αὐτὸν, καὶ θάψον αὐτόν.",
+        "VUL": "Nuntiatumque est regi Salomoni quod fugisset Joab in tabernaculum Domini, et esset juxta altare : misitque Salomon Banaiam filium Jojadæ, dicens : Vade, interfice eum.",
+        "SYN": "И донесли царю Соломону, что Иоав убежал в скинию Господню и что он у жертвенника. И послал Соломон Ванею, сына Иодаева, говоря: пойди, умертви его [и похорони его].",
+        "NEO": "On annonça au roi Salomon que Joab s’était réfugié au tabernacle de \\+w Yahweh|strong=\"H3068\"\\+w** et qu’il était auprès de l’autel ; et Salomon envoya Banaïas, fils de Joïadas, en lui disant : « Va, frappe-le. »",
+        "NAB": "King Solomon was told that Joab had fled to the tent of the LORD and was at the altar. He sent Benaiah, son of Jehoiada, with the order, \"Go, strike him down.\"",
+        "VAT_ES": "Cuando informaron al rey Salomón: «Joab se ha refugiado en la Carpa del Señor y está al lado del altar», Salomón mandó decir a Joab: «&iquest;Qué motivo tienes para refugiarte junto al altar?». Joab respondió: «Tuve miedo de ti y fui a refugiarme junto al Señor». Entonces Salomón envió a Benaías, hijo de Iehoiadá, con esta orden: «Ve y mátalo».",
+        "CEI": "Fu riferito al re Salomone come Ioab si fosse rifugiato nella tenda del Signore e si fosse posto al fianco dell'altare. Salomone inviò Benaià figlio di Ioiadà con l'ordine: \"Và, colpiscilo!\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֨א בְנָיָ֜הוּ אֶל אֹ֣הֶל יְהוָ֗ה וַ/יֹּ֨אמֶר אֵלָ֜י/ו כֹּֽה אָמַ֤ר הַ/מֶּ֨לֶךְ֙ צֵ֔א וַ/יֹּ֥אמֶר לֹ֖א כִּ֣י פֹ֣ה אָמ֑וּת וַ/יָּ֨שֶׁב בְּנָיָ֤הוּ אֶת הַ/מֶּ֨לֶךְ֙ דָּבָ֣ר לֵ/אמֹ֔ר כֹּֽה דִבֶּ֥ר יוֹאָ֖ב וְ/כֹ֥ה עָנָֽ/נִי׃",
+        "LXX": "καὶ ἦλθεν Βαναιοὺ υἱὸς Ἰωδᾶε εἰς τὴν σκηνὴν τοῦ κυρίου καὶ εἶπεν αὐτῷ Τάδε λέγει ὁ βασιλεύς Ἔξελθε· καὶ εἶπεν Ἰωάβ Οὐκ ἐκπορεύομαι, ὅτι ὧδε ἀποθανοῦμαι· καὶ ἀπέστρεψεν Βαναίας υἱὸς Ἰωδᾶε καὶ εἶπεν τῷ βασιλεῖ λέγων Τάδε λελάληκεν Ἰωὰβ καὶ τάδε ἀποκέκριταί μοι.",
+        "VUL": "Et venit Banaias ad tabernaculum Domini, et dixit ei : Hæc dicit rex : Egredere. Qui ait : Non egrediar, sed hic moriar. Renuntiavit Banaias regi sermonem, dicens : Hæc locutus est Joab, et hæc respondit mihi.",
+        "SYN": "И пришел Ванея в скинию Господню и сказал ему: так сказал царь: выходи. И сказал тот: нет, я хочу умереть здесь. Ванея передал это царю, говоря: так сказал Иоав, и так отвечал мне.",
+        "NEO": "Arrivé au tabernacle de \\+w Yahweh|strong=\"H3068\"\\+w**, Banaïas dit à Joab : « Ainsi parle le roi : Sors. » Mais il répondit : « Non ! je mourrai ici. » Banaïas rapporta cette réponse au roi, en disant : « C’est ainsi qu’a parlé Joab, c’est ainsi qu’il m’a répondu. »",
+        "NAB": "Benaiah went to the tent of the LORD and said to him, \"The king says, 'Come out.'\" But he answered, \"No! I will die here.\" Benaiah reported to the king, \"This is what Joab said to me in reply.\"",
+        "VAT_ES": "Benaías entró en la Carpa del Señor y dijo a Joab: «El rey ordena que salgas». Pero él replicó: «No, moriré aquí». Benaías llevó la respuesta al rey: «Joab ha dicho esto y me ha respondido así».",
+        "CEI": "Benaià andò nella tenda del Signore e disse a Ioab: \"Per ordine del re, esci!\". Quegli rispose: \"No! Morirò qui\". Benaià riferì al re: \"Ioab ha parlato così e così mi ha risposto\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמֶר ל֣/וֹ הַ/מֶּ֗לֶךְ עֲשֵׂה֙ כַּ/אֲשֶׁ֣ר דִּבֶּ֔ר וּ/פְגַע בּ֖/וֹ וּ/קְבַרְתּ֑/וֹ וַ/הֲסִירֹ֣תָ דְּמֵ֣י חִנָּ֗ם אֲשֶׁר֙ שָׁפַ֣ךְ יוֹאָ֔ב מֵ/עָלַ֕/י וּ/מֵ/עַ֖ל בֵּ֥ית אָבִֽ/י׃",
+        "LXX": "καὶ εἶπεν αὐτῷ ὁ βασιλεύς Πορεύου καὶ ποίησον αὐτῷ καθὼς εἴρηκεν, καὶ ἄνελε αὐτὸν καὶ θάψεις αὐτόν· καὶ ἐξαρεῖς σήμερον τὸ αἷμα ὃ δωρεὰν ἐξέχεεν ἀπ’ ἐμοῦ καὶ ἀπὸ τοῦ οἴκου τοῦ πατρός μου.",
+        "VUL": "Dixitque ei rex : Fac sicut locutus est, et interfice eum, et sepeli : et amovebis sanguinem innocentem qui effusus est a Joab, a me, et a domo patris mei.",
+        "SYN": "Царь сказал ему: сделай, как он сказал, и умертви его и похорони его, и сними невинную кровь, пролитую Иоавом, с меня и с дома отца моего;",
+        "NEO": "Et le roi dit à Banaïas : « Fais comme il a dit, frappe-le et enterre-le ; tu ôteras ainsi de dessus moi et de dessus la maison de mon père le sang que Joab a répandu sans raison.",
+        "NAB": "The king answered him: \"Do as he has said, Strike him down and bury him, and you will remove from me and from my family the blood which Joab shed without provocation.",
+        "VAT_ES": "Y el rey le dijo: «Procede conforme a lo que él ha dicho: mátalo y luego entiérralo. Así apartarás de mí y de la casa de mi padre la sangre inocente que ha derramado Joab.",
+        "CEI": "Il re gli disse: \"Fà come egli ha detto; colpiscilo e seppelliscilo; così allontanerai da me e dalla casa di mio padre il sangue che Ioab ha sparso senza motivo."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/הֵשִׁיב֩ יְהוָ֨ה אֶת דָּמ֜/וֹ עַל רֹאשׁ֗/וֹ אֲשֶׁ֣ר פָּגַ֣ע בִּ/שְׁנֵֽי אֲ֠נָשִׁים צַדִּקִ֨ים וְ/טֹבִ֤ים מִמֶּ֨/נּוּ֙ וַ/יַּהַרְגֵ֣/ם בַּ/חֶ֔רֶב וְ/אָבִ֥/י דָוִ֖ד לֹ֣א יָדָ֑ע אֶת אַבְנֵ֤ר בֶּן נֵר֙ שַׂר צְבָ֣א יִשְׂרָאֵ֔ל וְ/אֶת עֲמָשָׂ֥א בֶן יֶ֖תֶר שַׂר צְבָ֥א יְהוּדָֽה׃",
+        "LXX": "καὶ ἀπέστρεψεν Κύριος τὸ αἷμα τῆς ἀδικίας αὐτοῦ εἰς κεφαλὴν αὐτοῦ· καὶ ἀπήντησεν τοῖς δυσὶν ἀνθρώποις τοῖς δικαίοις καὶ ἀγαθοῖς ὑπὲρ αὐτὸν καὶ ἀπέκτεινεν αὐτοὺς ἐν ῥομφαίᾳ, καὶ ὁ πατήρ μου Δαυεὶδ οὐκ ἔγνω τὸ αἷμα αὐτῶν, τὸν Ἀβεννὴρ υἱὸν Νὴρ ἀρχιστράτηγον Ἰσραὴλ καὶ τὸν Ἀμεσσὰ τὸν Ἰέθερ ἀρχιστράτηγον Ἰούδα.",
+        "VUL": "Et reddet Dominus sanguinem ejus super caput ejus, quia interfecit duos viros justos, melioresque se : et occidit eos gladio, patre meo David ignorante, Abner filium Ner principem militiæ Israël, et Amasam filium Jether principem exercitus Juda :",
+        "SYN": "да обратит Господь кровь его на голову его за то, что он убил двух мужей невинных и лучших его: поразил мечом, без ведома отца моего Давида, Авенира, сына Нирова, военачальника Израильского, и Амессая, сына Иеферова, военачальника Иудейского;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** fera retomber son sang sur sa tête, lui qui a frappé deux hommes plus justes et meilleurs que lui, et qui les a tués par l’épée, sans que mon père David le sût : Abner, fils de Ner, chef de l’armée d’Israël, et Amasa, fils de Jéther, chef de l’armée de Juda.",
+        "NAB": "The LORD will hold him responsible for his own blood, because he struck down two men better and more just than himself, and slew them with the sword without my father David's knowledge: Abner, son of Ner, general of Israel's army, and Amasa, son of Jether, general of Judah's army.",
+        "VAT_ES": "El Señor hará recaer esa sangre sobre su cabeza, porque él mató a dos hombres más justos y mejores que él, y los hizo morir bajo la espada, sin que lo supiera mi padre David: a Abner, hijo de Ner, jefe del ejército de Israel, y a Amasá, hijo de Iéter, jefe del ejército de Judá.",
+        "CEI": "Il Signore farà ricadere il suo sangue sulla sua testa, perché egli ha colpito due uomini giusti e migliori di lui e li ha trafitti con la sua spada - senza che Davide mio padre lo sapesse - ossia Abner, figlio di Ner, capo dell'esercito di Israele e Amasà figlio di Ieter, capo dell'esercito di Giuda."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/שָׁ֤בוּ דְמֵי/הֶם֙ בְּ/רֹ֣אשׁ יוֹאָ֔ב וּ/בְ/רֹ֥אשׁ זַרְע֖/וֹ לְ/עֹלָ֑ם וּ/לְ/דָוִ֡ד וּ֠/לְ/זַרְע/וֹ וּ/לְ/בֵית֨/וֹ וּ/לְ/כִסְא֜/וֹ יִהְיֶ֥ה שָׁל֛וֹם עַד עוֹלָ֖ם מֵ/עִ֥ם יְהוָֽה׃",
+        "LXX": "καὶ ἐπεστράφη τὰ αἵματα αὐτοῦ εἰς κεφαλὴν αὐτοῦ καὶ εἰς κεφαλὴν τοῦ σπέρματος αὐτοῦ εἰς τὸν αἰῶνα· καὶ τῷ Δαυεὶδ καὶ τῷ σπέρματι αὐτοῦ καὶ τῷ οἴκῳ αὐτοῦ καὶ τῷ θρόνῳ αὐτοῦ γένοιτο εἰρήνη ἕως αἰῶνος παρὰ Κυρίου.",
+        "VUL": "et revertetur sanguis illorum in caput Joab, et in caput seminis ejus in sempiternum. David autem et semini ejus, et domui, et throno illius, sit pax usque in æternum a Domino.",
+        "SYN": "да обратится кровь их на голову Иоава и на голову потомства его на веки, а Давиду и потомству его, и дому его и престолу его да будет мир на веки от Господа!",
+        "NEO": "Leur sang retombera sur la tête de Joab et sur la tête de ses descendants à jamais ; mais il y aura paix pour toujours, de la part de \\+w Yahweh|strong=\"H3068\"\\+w**, pour David et sa postérité, pour sa maison et son trône. »",
+        "NAB": "Joab and his descendants shall be responsible forever for their blood. But there shall be the peace of the LORD forever for David, and his descendants, and his house, and his throne.\"",
+        "VAT_ES": "Su sangre recaerá sobre la cabeza de Joab y sobre la cabeza de su descendencia para siempre; en cambio, para David, para su descendencia, para su casa y su trono, habrá paz perpetua de parte del Señor».",
+        "CEI": "Il loro sangue ricada sulla testa di Ioab e sulla testa della sua discendenza per sempre, mentre su Davide e sulla sua discendenza, sul suo casato e sul suo trono si riversi per sempre la pace da parte del Signore\"."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יַּ֗עַל בְּנָיָ֨הוּ֙ בֶּן יְה֣וֹיָדָ֔ע וַ/יִּפְגַּע בּ֖/וֹ וַ/יְמִתֵ֑/הוּ וַ/יִּקָּבֵ֥ר בְּ/בֵית֖/וֹ בַּ/מִּדְבָּֽר׃",
+        "LXX": "καὶ ἀπήντησεν Ἰωδᾶε τῷ Ἰωὰβ καὶ ἐθανάτωσεν αὐτόν· καὶ ἔθαψεν αὐτὸν ἐν τῷ οἴκῳ αὐτοῦ ἐν τῇ ἐρήμῳ.",
+        "VUL": "Ascendit itaque Banaias filius Jojadæ, et aggressus eum interfecit : sepultusque est in domo sua in deserto.",
+        "SYN": "И пошел Ванея, сын Иодаев, и поразил Иоава, и умертвил его, и он был похоронен в доме своем в пустыне.",
+        "NEO": "Banaïas, fils de Joïadas, monta et, ayant frappé Joab, il lui donna la mort, et il fut enterré dans sa maison, au désert.",
+        "NAB": "Benaiah, son of Jehoiada, went back, struck him down and killed him; he was buried in his house in the desert.",
+        "VAT_ES": "Entonces Benaías, hijo de Iehoiadá, subió e hirió de muerte a Joab, y este fue sepultado en su casa, en el desierto.",
+        "CEI": "Benaià figlio di Ioiadà andò, lo assalì e l'uccise; Ioab fu sepolto nella sua casa, nel deserto."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֨ן הַ/מֶּ֜לֶךְ אֶת בְּנָיָ֧הוּ בֶן יְהוֹיָדָ֛ע תַּחְתָּ֖י/ו עַל הַ/צָּבָ֑א וְ/אֶת צָד֤וֹק הַ/כֹּהֵן֙ נָתַ֣ן הַ/מֶּ֔לֶךְ תַּ֖חַת אֶבְיָתָֽר׃",
+        "LXX": "καὶ ἔδωκεν ὁ βασιλεὺς τὸν Βαναιοὺ υἱὸν Ἰωδᾶε ἀντ’ αὐτοῦ ἐπὶ τὴν στρατηγίαν· καὶ ἡ βασιλεία κατωρθοῦτο ἐν Ἰερουσαλήμ. καὶ Σαδὼκ τὸν ἱερέα, ἔδωκεν αὐτὸν ὁ βασιλεὺς εἰς ἱερέα πρῶτον ἀντὶ Ἀβιαθάρ. [1] Καὶ ἔδωκεν Κύριος φρόνησιν τῷ Σαλωμὼν καὶ σοφίαν πολλὴν σφόδρα καὶ πλάτος καρδίας ὡς ἡ ἄμμος ἡ παρὰ τὴν θάλασσαν. [2] καὶ ἐπληθύνθη ἡ φρόνησις Σαλωμὼν πάντων ἀρχαίων υἱῶν καὶ ὑπὲρ πάντας φρονίμους Αἰγύπτου. [3] καὶ ἔλαβεν τὴν θυγατέρα Φαραώ, καὶ εἰσήγαγεν αὐτὴν εἰς τὴν πόλιν Δαυεὶδ ἕως συντελέσαι αὐτὸν τὸν οἶκον Κυρίου ἐν πρώτοις καὶ τὸ τεῖχος Ἰερουσαλὴμ κυκλόθεν· ἐν ἑπτὰ ἔτεσιν ἐποίησεν καὶ συνετέλεσεν. [4] καὶ ἦν τῷ Σαλωμὼν ἑβδομήκοντα χιλιάδες αἴροντες ἄρσιν καὶ ὀγδοήκοντα χιλιάδες λατόμων ἐν τῷ ὄρει. [5] καὶ ἐποίησεν Σαλωμὼν τὴν θάλασσαν καὶ τὰ ὑποστηρίγματα καὶ τοὺς λουτῆρας τοὺς μεγάλους καὶ τοὺς στύλους καὶ τὴν κρήνην τῆς αὐλῆς καὶ τὴν θάλασσαν τὴν χαλκῆν. καὶ ᾠκοδόμησεν τὴν ἄκραν ἔπαλξιν ἐπ’ αὐτῆς. διέκοψεν τὴν πόλιν Δαυείδ. [6] οὕτως θυγάτηρ Φαραὼ ἀνέβαινεν ἐκ τῆς πόλεως Δαυεὶδ εἰς τὸν οἶκον αὐτῆς ὃν ᾠκοδόμησεν αὐτῇ. τότε ᾠκοδόμησεν τὴν ἄκραν. [7] καὶ Σαλωμὼν ἀνέφερεν τρεῖς ἐν τῷ ἐνιαυτῷ ὁλοκαυτώσεις καὶ εἰρηνικὰς ἐπὶ τὸ θυσιαστήριον ὃ ᾠκοδόμησεν τῷ κυρίῳ, καὶ ἐθυμία ἐνώπιον Κυρίου. καὶ συνετέλεσεν τὸν οἶκον. [8] καὶ οὗτοι οἱ ἄρχοντες οἱ κατεσταμένοι ἐπὶ τὰ ἔργα τοῦ Σαλωμών· τρεῖς χιλιάδες καὶ ἑξακόσιοι ἐπιστάται τοῦ λαοῦ τῶν ποιούντων τὰ ἔργα. [9] καὶ ᾠκοδόμησεν τὴν Ἀσσοὺρ καὶ τὴν Μαγαὼ καὶ τὴν Γάζερ καὶ τὴν Βαιθωρὼν ἐπάνω καὶ τὰ Βαλλάθ. [11] πλὴν μετὰ τὸ οἰκοδομῆσαι αὐτὸν τὸν οἶκον τοῦ κυρίου καὶ τὸ τεῖχος Ἰερουσαλὴμ κύκλῳ, μετὰ ταῦτα ᾠκοδόμησεν τὰς πόλεις ταύτας. [12] Καὶ ἐν τῷ ἔτι Δαυεὶδ ζῇν ἐνετείλατο τῷ Σαλωμὼν λέγων Ἰδοὺ μετὰ σοῦ Σεμεεὶ υἱὸς Γηρά, υἱὸς τοῦ σπέρματος τοῦ Ἰεμεινεὶ ἐκ Χεβρών. [13] οὗτος κατηράσατό με κατάραν ὀδυνηρὰν ἐν ᾗ ἡμέρᾳ ἐπορευόμην εἰς παρεμβολάς· [14] καὶ αὐτὸς κατέβαινεν εἰς ἀπαντήν μοι ἐπὶ τὸν Ἰορδάνην, καὶ ὤμοσα αὐτῷ κατὰ τοῦ κυρίου λέγων Εἰ θανατωθήσεται ἐν ῥομφαίᾳ· [15] καὶ νῦν μὴ ἀθῳώσῃς αὐτόν, ὅτι ἀνὴρ φρόνιμος σύ, καὶ γνώσῃ ἃ ποιήσεις αὐτῷ· καὶ κατάξεις τὴν πολιὰν αὐτοῦ ἐν αἵματι εἰς ᾅδου.",
+        "VUL": "Et constituit rex Banaiam filium Jojadæ pro eo super exercitum, et Sadoc sacerdotem posuit pro Abiathar.",
+        "SYN": "И поставил царь Соломон Ванею, сына Иодаева, вместо его над войском; [управление же царством было в Иерусалиме,] а Садока священника поставил царь [первосвященником] вместо Авиафара. [И дал Господь Соломону разум и мудрость весьма великую и обширный ум, как песок при море. И Соломон имел разум выше разума всех сынов востока и всех мудрых Египтян. И взял за себя дочь фараона и ввел ее в город Давидов, доколе не построил дома своего и, во-первых, дома Господня и стены вокруг Иерусалима; в семь лет окончил он строение. И было у Соломона семьдесят тысяч человек, носящих тяжести, и восемьдесят тысяч каменосеков в горах. И сделал Соломон море и подпоры, и большие бани и столбы, и источник на дворе и медное море, и построил замок и укрепления его, и разделил город Давидов. Тогда дочь фараона перешла из города Давидова в дом свой, который он построил ей; тогда построил Соломон стену вокруг города. И приносил Соломон три раза в год всесожжения и мирные жертвы на жертвеннике, который он устроил Господу, и курение совершал на нем пред Господом, и окончил строение дома. Главных приставников над работами Соломоновыми было три тысячи шестьсот, которые управляли народом, производившим работы. И построил он Ассур, и Магдон, и Газер, и Вефорон вышний и Валалаф; но эти города он построил после построения дома Господня и стены вокруг Иерусалима. И еще при жизни Давид завещал Соломону, говоря: вот у тебя Семей, сын Геры, сына Иеминиина из Бахурима; он злословил меня тяжким злословием, как я шел в Маханаим; но он вышел навстречу мне у Иордана, и я поклялся ему Господом, говоря: \"я не умерщвлю тебя мечом\". Ты же не оставь его безнаказанным, ибо ты человек мудрый и знаешь, что тебе сделать с ним, чтобы низвести седину его в крови в преисподнюю.]",
+        "NEO": "Et le roi mit à sa place, comme chef de l’armée, Banaïas, fils de Joïadas ; et le roi mit le prêtre Sadoc à la place d’Abiathar.",
+        "NAB": "The king appointed Benaiah, son of Jehoiada, over the army in his place, and put Zadok the priest in place of Abiathar.",
+        "VAT_ES": "En lugar de Joab, el rey puso al frente del ejército a Benaías, hijo de Iehoiadá. Y al sacerdote Sadoc lo puso en lugar de Abiatar.",
+        "CEI": "Il re lo sostituì, nominando capo dell'esercito Benaià figlio di Ioiadà, mentre mise il sacerdote Zadòk al posto di Ebiatàr."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח הַ/מֶּ֨לֶךְ֙ וַ/יִּקְרָ֣א לְ/שִׁמְעִ֔י וַ/יֹּ֣אמֶר ל֗/וֹ בְּֽנֵה לְ/ךָ֥ בַ֨יִת֙ בִּ/יר֣וּשָׁלִַ֔ם וְ/יָשַׁבְתָּ֖ שָׁ֑ם וְ/לֹֽא תֵצֵ֥א מִ/שָּׁ֖ם אָ֥נֶה וָ/אָֽנָה׃",
+        "LXX": "καὶ ἐκάλεσεν ὁ βασιλεὺς τὸν Σεμεεὶ καὶ εἶπεν αὐτῷ Οἰκοδόμησον οἶκον σεαυτῷ ἐν Ἰερουσαλὴμ καὶ κάθου ἐκεῖ, καὶ οὐκ ἐξελεύσῃ ἐκεῖθεν οὐδαμοῦ.",
+        "VUL": "Misit quoque rex, et vocavit Semei : dixitque ei : Ædifica tibi domum in Jerusalem, et habita ibi : et non egredieris inde huc atque illuc.",
+        "SYN": "И послав царь призвал Семея и сказал ему: построй себе дом в Иерусалиме и живи здесь, и никуда не выходи отсюда;",
+        "NEO": "Le roi envoya appeler Séméï et lui dit : « Bâtis-toi une maison à Jérusalem ; tu y demeureras et tu n’en sortiras pas pour aller de côté et d’autre.",
+        "NAB": "Then the king summoned Shimei and said to him: \"Build yourself a house in Jerusalem and live there. Do not go anywhere else.",
+        "VAT_ES": "El rey mandó llamar a Semei y le dijo: «Constrúyete una casa en Jerusalén y quédate allí, sin salir a ninguna parte.",
+        "CEI": "Il re mandò a chiamare Simèi per dirgli: \"Costruisciti una casa in Gerusalemme; ivi sia la tua dimora; non ne uscirai per andartene qua e là."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֣ה בְּ/י֣וֹם צֵאתְ/ךָ֗ וְ/עָֽבַרְתָּ֙ אֶת נַ֣חַל קִדְר֔וֹן יָדֹ֥עַ תֵּדַ֖ע כִּ֣י מ֣וֹת תָּמ֑וּת דָּמְ/ךָ֖ יִהְיֶ֥ה בְ/רֹאשֶֽׁ/ךָ׃",
+        "LXX": "καὶ ἔσται ἐν τῇ ἡμέρᾳ τῆς ἐξόδου σου καὶ διαβήσῃ τὸν χειμάρρουν Κεδρών, γινώσκων γνώσῃ ὅτι θανάτῳ ἀποθανῇ· τὸ αἷμά σου ἔσται ἐπὶ τὴν κεφαλήν σου. καὶ ὥρκισεν αὐτὸν ὁ βασιλεὺς ἐν τῇ ἡμέρᾳ ἐκείνῃ.",
+        "VUL": "Quacumque autem die egressus fueris, et transieris torrentem Cedron, scito te interficiendum : sanguis tuus erit super caput tuum.",
+        "SYN": "и знай, что в тот день, в который ты выйдешь и перейдешь поток Кедрон, непременно умрешь; кровь твоя будет на голове твоей.",
+        "NEO": "Le jour où tu sortiras et passeras le torrent de Cédron, sache bien que certainement tu mourras ; ton sang sera sur ta tête. »",
+        "NAB": "For if you leave, and cross the Kidron Valley, be certain you shall die without fail. You shall be responsible for your own blood.\"",
+        "VAT_ES": "Porque si un día sales y cruzas el torrente Cedrón, sábelo bien: morirás irremediablemente; tu sangre recaerá sobre tu cabeza».",
+        "CEI": "Quando ne uscirai, oltrepassando il torrente Cedron - sappilo bene! - sarai degno di morte; il tuo sangue ricadrà sulla tua testa\"."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר שִׁמְעִ֤י לַ/מֶּ֨לֶךְ֙ ט֣וֹב הַ/דָּבָ֔ר כַּ/אֲשֶׁ֤ר דִּבֶּר֙ אֲדֹנִ֣/י הַ/מֶּ֔לֶךְ כֵּ֖ן יַעֲשֶׂ֣ה עַבְדֶּ֑/ךָ וַ/יֵּ֧שֶׁב שִׁמְעִ֛י בִּ/ירוּשָׁלִַ֖ם יָמִ֥ים רַבִּֽים׃",
+        "LXX": "καὶ εἶπεν Σεμεεὶ πρὸς τὸν βασιλέα Ἀγαθὸν τὸ ῥῆμα ὃ ἐλάλησας, κύριέ μου βασιλεῦ· οὕτω ποιήσει ὁ δοῦλός σου. καὶ ἐκάθισεν Σεμεεὶ ἐν Ἰερουσαλὴμ τρία ἔτη.",
+        "VUL": "Dixitque Semei regi : Bonus sermo : sicut locutus est dominus meus rex, sic faciet servus tuus. Habitavit itaque Semei in Jerusalem diebus multis.",
+        "SYN": "И сказал Семей царю: хорошо; как приказал господин мой царь, так сделает раб твой. И жил Семей в Иерусалиме долгое время.",
+        "NEO": "Séméï répondit au roi : « Cette parole est bonne ; ce que dit mon seigneur le roi, ton serviteur le fera. » Et Séméï demeura de nombreux jours à Jérusalem.",
+        "NAB": "Shimei answered the king: \"I accept. Your servant will do just as the king's majesty has said.\" So Shimei stayed in Jerusalem for a long time.",
+        "VAT_ES": "Semei dijo al rey: «Muy bien. Tu servidor obrará conforme a lo que ha dicho mi señor el rey». Y Semei permaneció largo tiempo en Jerusalén.",
+        "CEI": "Simèi disse al re: \"L'ordine è giusto! Come ha detto il re mio signore, così farà il tuo servo\". Simèi dimorò in Gerusalemme per molto tempo."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י מִ/קֵּץ֙ שָׁלֹ֣שׁ שָׁנִ֔ים וַ/יִּבְרְח֤וּ שְׁנֵֽי עֲבָדִים֙ לְ/שִׁמְעִ֔י אֶל אָכִ֥ישׁ בֶּֽן מַעֲכָ֖ה מֶ֣לֶךְ גַּ֑ת וַ/יַּגִּ֤ידוּ לְ/שִׁמְעִי֙ לֵ/אמֹ֔ר הִנֵּ֥ה עֲבָדֶ֖י/ךָ בְּ/גַֽת׃",
+        "LXX": "καὶ ἐγενήθη μετὰ τὰ τρία ἔτη καὶ ἀπέδρασαν δύο δοῦλοι τοῦ Σεμεεὶ πρὸς Ἀγχοὺς υἱὸν Ἀμησὰ βασιλέα Γέθ· καὶ ἀπηγγέλη τῷ Σεμεεὶ λέγοντες Ἰδοὺ οἱ δοῦλοί σου ἐν Γέθ.",
+        "VUL": "Factum est autem post annos tres ut fugerent servi Semei ad Achis filium Maacha regem Geth : nuntiatumque est Semei quod servi ejus issent in Geth.",
+        "SYN": "Но через три года случилось, что у Семея двое рабов убежали к Анхусу, сыну Маахи, царю Гефскому. И сказали Семею, говоря: вот, рабы твои в Гефе.",
+        "NEO": "Il arriva, au bout de trois ans, que deux serviteurs de Séméï s’enfuirent auprès d’Achis, fils de Maacha, roi de Geth. On le rapporta à Séméï, en disant : « Voici que tes serviteurs sont à Geth. »",
+        "NAB": "But three years later, two of Shimei's servants ran away to Achish, son of Maacah, king of Gath, and Shimei was informed that his servants were in Gath.",
+        "VAT_ES": "Pero, al cabo de tres años, dos esclavos de Semei huyeron al reino de Aquís, hijo de Maacá, rey de Gat. Alguien le avisó a Semei: «Mira que tus esclavos están en Gat».",
+        "CEI": "Dopo tre anni, due schiavi di Simei fuggirono presso Achis figlio di Maaca, re di Gat. Fu riferito a Simei che i suoi schiavi erano in Gat."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣קָם שִׁמְעִ֗י וַֽ/יַּחֲבֹשׁ֙ אֶת חֲמֹר֔/וֹ וַ/יֵּ֤לֶךְ גַּ֨תָ/ה֙ אֶל אָכִ֔ישׁ לְ/בַקֵּ֖שׁ אֶת עֲבָדָ֑י/ו וַ/יֵּ֣לֶךְ שִׁמְעִ֔י וַ/יָּבֵ֥א אֶת עֲבָדָ֖י/ו מִ/גַּֽת׃",
+        "LXX": "καὶ ἀνέστη Σεμεεὶ καὶ ἐπέσαξε τὴν ὄνον αὐτοῦ καὶ ἐπορεύθη εἰς Γὲθ πρὸς Ἀγχούς, τοῦ ἐκζητῆσαι τοὺς δούλους αὐτοῦ· καὶ ἐπορεύθη Σεμεεὶ καὶ ἤγαγεν τοὺς δούλους αὐτοῦ ἐκ Γέθ.",
+        "VUL": "Et surrexit Semei, et stravit asinum suum, ivitque ad Achis in Geth ad requirendum servos suos, et adduxit eos de Geth.",
+        "SYN": "И встал Семей, и оседлал осла своего, и отправился в Геф к Анхусу искать рабов своих. И возвратился Семей и привел рабов своих из Гефа.",
+        "NEO": "Séméï se leva et, ayant sellé son âne, il se rendit à Geth, auprès d’Achis, pour chercher ses serviteurs. Séméï s’en alla et ramena de Geth ses serviteurs.",
+        "NAB": "So Shimei rose, saddled his ass, and went to Achish in Gath in search of his servants, whom he brought back.",
+        "VAT_ES": "Entonces Semei se levantó, ensilló su asno y se fue a Gat, donde estaba Aquís, para buscar a sus esclavos; no hizo más que ir y traer de Gat a sus esclavos.",
+        "CEI": "Simei si alzò, sellò l'asino e partì per Gat andando da Achis in cerca dei suoi schiavi. Simei vi andò e ricondusse i suoi schiavi da Gat."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וַ/יֻּגַּ֖ד לִ/שְׁלֹמֹ֑ה כִּי הָלַ֨ךְ שִׁמְעִ֧י מִ/ירוּשָׁלִַ֛ם גַּ֖ת וַ/יָּשֹֽׁב׃",
+        "LXX": "καὶ ἀπηγγέλη τῷ Σαλωμὼν λέγοντες ὅτι Ἐπορεύθη Σεμεεὶ ἐξ Ἰερουσαλὴμ εἰς Γὲθ καὶ ἀπέστρεψεν τοὺς δούλους αὐτοῦ.",
+        "VUL": "Nuntiatum est autem Salomoni quod isset Semei in Geth de Jerusalem, et rediisset.",
+        "SYN": "И донесли Соломону, что Семей ходил из Иерусалима в Геф и возвратился.",
+        "NEO": "On rapporta à Salomon que Séméï était allé de Jérusalem à Geth et qu’il était de retour.",
+        "NAB": "When Solomon was informed that Shimei had gone from Jerusalem to Gath, and had returned,",
+        "VAT_ES": "Cuando le avisaron a Salomón que Semei había ido de Jerusalén a Gat y que estaba de vuelta,",
+        "CEI": "Fu riferito a Salomone che Simei era andato da Gerusalemme a Gat e che era ritornato."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֨ח הַ/מֶּ֜לֶךְ וַ/יִּקְרָ֣א לְ/שִׁמְעִ֗י וַ/יֹּ֨אמֶר אֵלָ֜י/ו הֲ/ל֧וֹא הִשְׁבַּעְתִּ֣י/ךָ בַֽ/יהוָ֗ה וָ/אָעִ֤ד בְּ/ךָ֙ לֵ/אמֹ֔ר בְּ/י֣וֹם צֵאתְ/ךָ֗ וְ/הָֽלַכְתָּ֙ אָ֣נֶה וָ/אָ֔נָה יָדֹ֥עַ תֵּדַ֖ע כִּ֣י מ֣וֹת תָּמ֑וּת וַ/תֹּ֧אמֶר אֵלַ֛/י ט֥וֹב הַ/דָּבָ֖ר שָׁמָֽעְתִּי׃",
+        "LXX": "καὶ ἀπέστειλεν ὁ βασιλεὺς καὶ ἐκάλεσεν τὸν Σεμεεὶ καὶ εἶπεν πρὸς αὐτόν Οὐχὶ ὥρκισά σε κατὰ τοῦ κυρίου καὶ ἐπεμαρτυράμην σοι λέγων Ἐν ᾗ ἂν ἡμέρᾳ ἐξέλθῃς ἐξ Ἰερουσαλὴμ καὶ πορευθῇς εἰς δεξιὰ ἢ εἰς ἀριστερά, γινώσκων γνώσῃ ὅτι θανάτῳ ἀποθανῇ;",
+        "VUL": "Et mittens vocavit eum, dixitque illi : Nonne testificatus sum tibi per Dominum, et prædixi tibi : Quacumque die egressus ieris huc et illuc, scito te esse moriturum : et respondisti mihi : Bonus sermo, quem audivi ?",
+        "SYN": "И послав призвал царь Семея и сказал ему: не клялся ли я тебе Господом и не объявлял ли тебе, говоря: \"знай, что в тот день, в который ты выйдешь и пойдешь куда-нибудь, непременно умрешь\"? и ты сказал мне: \"хорошо\";",
+        "NEO": "Le roi envoya appeler Séméï et lui dit : « Ne t’avais-je pas fait jurer par \\+w Yahweh|strong=\"H3068\"\\+w**, et ne t’avais-je pas fait une injonction en disant : Le jour où tu sortiras pour aller de côté ou d’autre, sache bien que certainement tu mourras ? Et ne m’as-tu pas répondu : La parole que j’ai entendue est bonne ?",
+        "NAB": "the king summoned Shimei and said to him: \"Did I not have you swear by the LORD to your clear understanding of my warning that, if you left and went anywhere else, you should die without fail? And you answered, 'I accept and obey.'",
+        "VAT_ES": "el rey mandó llamar a Semei y le dijo: «&iquest;Acaso no te hice jurar por el Señor, advirtiéndole expresamente que apenas salieras y fueras a cualquier parte podrías estar seguro de que morirías sin remedio? Y tú me respondiste: Está bien, me doy por enterado.",
+        "CEI": "Il re, fattolo chiamare, gli disse: \"Non ti avevo forse giurato per il Signore e non ti avevo io testimoniato che, quando tu fossi uscito per andartene qua e là - lo sapevi bene! - saresti stato degno di morte? Tu mi avevi risposto: L'ordine è giusto! Ho capito."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וּ/מַדּ֕וּעַ לֹ֣א שָׁמַ֔רְתָּ אֵ֖ת שְׁבֻעַ֣ת יְהוָ֑ה וְ/אֶת הַ/מִּצְוָ֖ה אֲשֶׁר צִוִּ֥יתִי עָלֶֽי/ךָ׃",
+        "LXX": "καὶ τί ὅτι οὐκ ἐφύλαξας τὸν ὅρκον Κυρίου καὶ τὴν ἐντολὴν ἣν ἐνετειλάμην κατὰ σοῦ;",
+        "VUL": "quare ergo non custodisti jusjurandum Domini, et præceptum quod præceperam tibi ?",
+        "SYN": "зачем же ты не соблюл приказания, которое я дал тебе пред Господом с клятвою?",
+        "NEO": "Pourquoi donc n’as-tu pas observé le serment fait à \\+w Yahweh|strong=\"H3068\"\\+w** et l’ordre que je t’avais donné ? »",
+        "NAB": "Why, then, have you not kept the oath of the LORD and the command that I gave you?\"",
+        "VAT_ES": "&iquest;Por qué entonces no has cumplido el juramento del Señor y la orden que te di?».",
+        "CEI": "Perché non hai rispettato il giuramento del Signore e il comando che ti avevo impartito?\"."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר הַ/מֶּ֜לֶךְ אֶל שִׁמְעִ֗י אַתָּ֤ה יָדַ֨עְתָּ֙ אֵ֣ת כָּל הָ/רָעָ֗ה אֲשֶׁ֤ר יָדַע֙ לְבָ֣בְ/ךָ֔ אֲשֶׁ֥ר עָשִׂ֖יתָ לְ/דָוִ֣ד אָבִ֑/י וְ/הֵשִׁ֧יב יְהוָ֛ה אֶת רָעָתְ/ךָ֖ בְּ/רֹאשֶֽׁ/ךָ׃",
+        "LXX": "καὶ εἶπεν ὁ βασιλεὺς πρὸς Σεμεεί Σὺ οἶδας πᾶσαν τὴν κακίαν σου ἣν ἔγνω ἡ καρδία σου, ἃ ἐποίησας τῷ Δαυεὶδ τῷ πατρί μου· καὶ ἀνταπέδωκεν Κύριος τὴν κακίαν σου εἰς κεφαλήν σου.",
+        "VUL": "Dixitque rex ad Semei : Tu nosti omne malum cujus tibi conscium est cor tuum, quod fecisti David patri meo : reddidit Dominus malitiam tuam in caput tuum :",
+        "SYN": "И сказал царь Семею: ты знаешь и знает сердце твое все зло, какое ты сделал отцу моему Давиду; да обратит же Господь злобу твою на голову твою!",
+        "NEO": "Et le roi dit à Séméï : « Tu sais — ton cœur le sait — tout le mal que tu as fait à David, mon père ; \\+w Yahweh|strong=\"H3068\"\\+w** fait retomber ta méchanceté sur ta tête.",
+        "NAB": "And the king said to Shimei: \"You know in your heart the evil that you did to my father David. Now the LORD requites you for your own wickedness.",
+        "VAT_ES": "Y el rey siguió diciendo a Semei: «Tú sabes bien, y tu corazón lo reconoce, todo el daño que hiciste a mi padre David. El Señor hará recaer tu maldad sobre tu cabeza,",
+        "CEI": "Il re aggiunse a Simei: \"Tu conosci tutto il male che hai fatto a Davide mio padre. Il Signore farà ricadere la tua malvagità sulla tua testa."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וְ/הַ/מֶּ֥לֶךְ שְׁלֹמֹ֖ה בָּר֑וּךְ וְ/כִסֵּ֣א דָוִ֗ד יִהְיֶ֥ה נָכ֛וֹן לִ/פְנֵ֥י יְהוָ֖ה עַד עוֹלָֽם׃",
+        "LXX": "καὶ ὁ βασιλεὺς Σαλωμὼν ηὐλογημένος, καὶ ὁ θρόνος Δαυεὶδ ἔσται ἕτοιμος ἐνώπιον Κυρίου εἰς τὸν αἰῶνα.",
+        "VUL": "et rex Salomon benedictus, et thronus David erit stabilis coram Domino usque in sempiternum.",
+        "SYN": "а царь Соломон да будет благословен, и престол Давида да будет непоколебим пред Господом во веки!",
+        "NEO": "Mais le roi Salomon sera béni, et le trône de David sera affermi à jamais devant \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "But King Solomon shall be blessed, and David's throne shall endure before the LORD forever.\"",
+        "VAT_ES": "mientras que el rey Salomón será bendecido, y el trono de David será estable para siempre delante del Señor».",
+        "CEI": "Invece sia benedetto il re Salomone e il trono di Davide sia saldo per sempre davanti al Signore\"."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "וַ/יְצַ֣ו הַ/מֶּ֗לֶךְ אֶת בְּנָיָ֨הוּ֙ בֶּן יְה֣וֹיָדָ֔ע וַ/יֵּצֵ֕א וַ/יִּפְגַּע בּ֖/וֹ וַ/יָּמֹ֑ת וְ/הַ/מַּמְלָכָ֥ה נָכ֖וֹנָה בְּ/יַד שְׁלֹמֹֽה׃",
+        "LXX": "καὶ ἐνετείλατο ὁ βασιλεὺς Σαλωμὼν τῷ Βαναιὰ υἱῷ Ἰωδᾶε, καὶ ἐξῆλθεν καὶ ἀνεῖλεν αὐτόν. [1] Καὶ ἦν ὁ βασιλεὺς Σαλωμὼν φρόνιμος σφόδρα καὶ σοφός· καὶ Ἰουδὰ καὶ Ἰσραὴλ πολλοὶ σφόδρα ὡς ἡ ἄμμος ἡ ἐπὶ τῆς θαλάσσης εἰς πλῆθος, ἐσθίοντες καὶ πίνοντες καὶ χαίροντες. [2] καὶ Σαλωμὼν ἦν ἄρχων ἐν πάσαις ταῖς βασιλείαις, καὶ ἦσαν προσφέροντες δῶρα καὶ ἐδούλευον τῷ Σαλωμὼν πάσας τὰς ἡμέρας τῆς ζωῆς αὐτοῦ. [3] καὶ Σαλωμὼν ἤρξατο ἀνοίγειν τὰ δυναστεύματα τοῦ Λιβάνου· [4] καὶ αὐτὸς ᾠκοδόμησεν τὴν Θερμαὶ ἐν τῇ ἐρήμῳ. [5] καὶ τοῦτο τὸ ἄριστον τῷ Σαλωμών· τριάκοντα κόροι σεμιδάλεως καὶ ἑξήκοντα κόροι ἀλεύρου κεκοπανισμένου, δέκα μόσχοι ἐκλεκτοὶ καὶ εἴκοσι βόες νομάδες καὶ ἑκατὸν πρόβατα, ἐκτὸς ἐλάφων καὶ δορκάδων καὶ ὀρνίθων ἐκλεκτῶν νομάδων. [6] οὐκ ἦν ἄρχων ἐν παντὶ πέραν τοῦ ποταμοῦ ἀπὸ Ῥαφεὶ ἕως Γάζης, ἐν πᾶσιν τοῖς βασιλεῦσιν πέραν τοῦ ποταμοῦ; [7] καὶ ἦν αὐτῷ εἰρήνη ἐκ πάντων τῶν μερῶν αὐτοῦ κυκλόθεν· καὶ κατῴκει Ἰουδὰ καὶ Ἰσραὴλ πεποιθότες, ἕκαστος ὑπὸ τὴν ἄμπελον αὐτοῦ καὶ ὑπὸ τὴν συκῆν αὐτοῦ, ἐσθίοντες καὶ πίνοντες ἀπὸ Δὰν καὶ ἕως Βηρσάβεε πάσας τὰς ἡμέρας Σαλωμών. [8] καὶ οὗτοι οἱ ἄρχοντες τοῦ Σαλωμών· Ἀζαριοὺ υἱὸς Σαδὼκ τοῦ ἱερέως, καὶ Ὀρνειοὺ υἱὸς Ναθάν, ἄρχων τῶν ἐφεστηκότων, καὶ ἔδραμεν ἐπὶ τὸν οἶκον αὐτοῦ· καὶ Σουβὰ γραμματεύς, καὶ Βασὰ υἱὸς Ἀχειθάλαμ ἀναμιμνήσκων, καὶ Ἀβεὶ υἱὸς Ἰωὰβ ἀρχιστράτηγος, καὶ Ἀχειρὲ υἱὸς Ἐδραεὶ ἐπὶ τὰς ἄρσεις, καὶ Βαναιὰ υἱὸς Ἰωδᾶε ἐπὶ τῆς αὐλαρχίας καὶ ἐπὶ τοῦ πλινθείου, καὶ Καχοὺρ υἱὸς Ναθὰν ὁ σύμβουλος. [9] καὶ ἦσαν τῷ Σαλωμὼν τεσσεράκοντα χιλιάδες τοκάδες ἵπποι εἰς ἅρματα, καὶ δώδεκα χιλιάδες ἵππων· [11] καὶ ἦν ἄρχων ἐν πᾶσιν τοῖς βασιλεῦσιν ἀπὸ τοῦ ποταμοῦ καὶ ἕως γῆς ἀλλοφύλων καὶ ἕως ὁρίων Αἰγύπτου. [12] Σαλωμὼν υἱὸς Δαυεὶδ ἐβασίλευσεν ἐπὶ Ἰσραὴλ καὶ Ἰουδὰ ἐν Ἰερουσαλήμ.",
+        "VUL": "Jussit itaque rex Banaiæ filio Jojadæ, qui egressus, percussit eum, et mortuus est.",
+        "SYN": "и повелел царь Ванее, сыну Иодаеву, и он пошел и поразил Семея, и тот умер.",
+        "NEO": "Et le roi donna des ordres à Banaïas, fils de Joïadas ; et il sortit et frappa Séméï, qui mourut.",
+        "NAB": "The king then gave the order to Benaiah, son of Jehoiada, who struck him dead as he left.",
+        "VAT_ES": "Luego el rey dio una orden a Benaías, hijo de Iehoiadá, y este salió e hirió de muerte a Semei. Así la realeza quedó afirmada en manos de Salomón.",
+        "CEI": "Il re diede ordine a Benaià figlio di Ioiadà, di andare ad ucciderlo. E quegli morì. Il regno si consolidò nelle mani di Salomone."
+      }
+    }
+  }
+}

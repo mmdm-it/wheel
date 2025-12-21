@@ -1,0 +1,440 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "SAPI_006",
+  "book_key": "SAPI",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Ἀκούσατε οὖν, βασιλεῖς, καὶ σύνετε· μάθετε, δικασταὶ περάτων γῆς·",
+        "VUL": "[Melior est sapientia quam vires,/ et vir prudens quam fortis./",
+        "SYN": "Итак, слушайте, цари, и разумейте, научитесь, судьи концов земли!",
+        "NEO": "Écoutez donc, ô rois, et comprenez ; écoutez l’instruction, vous qui jugez les extrémités de la terre.",
+        "NAB": "Hear, therefore, kings, and understand; learn, you magistrates of the earth's expanse!",
+        "VAT_ES": "&iexcl;Escuchen, reyes, y comprendan! &iexcl;Aprendan, jueces de los confines de la tierra!",
+        "CEI": "Ascoltate, o re, e cercate di comprendere; imparate, governanti di tutta la terra."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ἐνωτίσασθε, οἱ κρατοῦντες πλήθους καὶ γεγαυρωμένοι ἐπὶ ὄχλοις ἐθνῶν.",
+        "VUL": "Audite ergo, reges, et intelligite ;/ discite, judices finium terræ./",
+        "SYN": "Внимайте, обладатели множества и гордящиеся пред народами!",
+        "NEO": "Prêtez l’oreille, vous qui dominez sur la multitude, qui êtes fiers de commander* à des foules de peuples.",
+        "NAB": "Hearken, you who are in power over the multitude and lord it over throngs of peoples!",
+        "VAT_ES": "&iexcl;Presten atención, los que dominan multitudes y están orgullosos de esa muchedumbre de naciones!",
+        "CEI": "Porgete l'orecchio, voi che dominate le moltitudini e siete orgogliosi per il gran numero dei vostri popoli."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ὅτι ἐδόθη παρὰ τοῦ κυρίου ἡ κράτησις ὑμῖν, καὶ ἡ δυναστεία παρὰ Ὑψίστου, ὃς ἐξετάσει ὑμῶν τὰ ἔργα καὶ τὰς βουλὰς διεραυνήσει·",
+        "VUL": "Præbete aures, vos qui continetis multitudines,/ et placetis vobis in turbis nationum./",
+        "SYN": "От Господа дана вам держава, и сила - от Вышнего, Который исследует ваши дела и испытает намерения.",
+        "NEO": "Sachez que la force vous a été donnée par le Seigneur, et la puissance par le Très-Haut, qui examinera vos œuvres et sondera vos pensées.",
+        "NAB": "Because authority was given you by the LORD and sovereignty by the Most High, who shall probe your works and scrutinize your counsels!",
+        "VAT_ES": "Porque el Señor les ha dado el dominio, y el poder lo han recibo del Altísimo: él examinará las obras de ustedes y juzgará sus designios,",
+        "CEI": "La vostra sovranità proviene dal Signore; la vostra potenza dall'Altissimo, il quale esaminerà le vostre opere e scruterà i vostri propositi;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ὅτι ὑπηρέται ὄντες τῆς αὐτοῦ βασιλείας οὐκ ἐκρίνατε ὀρθῶς, οὐδὲ ἐφυλάξατε νόμον, οὐδὲ κατὰ τὴν βουλὴν τοῦ θεοῦ ἐπορεύθητε.",
+        "VUL": "Quoniam data est a Domino potestas vobis,/ et virtus ab Altissimo :/ qui interrogabit opera vestra, et cogitationes scrutabitur./",
+        "SYN": "Ибо вы, будучи служителями Его царства, не судили справедливо, не соблюдали закона и не поступали по воле Божией.",
+        "NEO": "Parce que, étant les ministres de sa royauté, vous n’avez pas jugé avec droiture, ni observé la loi, ni marché selon la volonté de Dieu ;",
+        "NAB": "Because, though you were ministers of his kingdom, you judged not rightly, and did not keep the law, nor walk according to the will of God,",
+        "VAT_ES": "Ya que ustedes, siendo ministros de su reino, no han gobernado con rectitud ni han respetado la Ley ni han obrado según la voluntad de Dios",
+        "CEI": "poiché, pur essendo ministri del suo regno, non avete governato rettamente, né avete osservato la legge né vi siete comportati secondo il volere di Dio."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "φρικτῶς καὶ ταχέως ἐπιστήσεται ὑμῖν, ὅτι κρίσις ἀπότομος ἐν τοῖς ὑπερέχουσιν γίνεται.",
+        "VUL": "Quoniam cum essetis ministri regni illius,/ non recte judicastis, nec custodistis legem justitiæ,/ neque secundum voluntatem Dei ambulastis./",
+        "SYN": "Страшно и скоро Он явится вам, - и строг суд над начальствующими,",
+        "NEO": "terrible et soudain, il fondra sur vous, car un jugement sévère s’exerce sur ceux qui commandent.",
+        "NAB": "Terribly and swiftly shall he come against you, because judgment is stern for the exalted -",
+        "VAT_ES": "él caerá sobre ustedes en forma terrible y repentina, ya que un juicio inexorable espera a los que están arriba.",
+        "CEI": "Con terrore e rapidamente egli si ergerà contro di voi poiché un giudizio severo si compie contro coloro che stanno in alto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ὁ γὰρ ἐλάχιστος συγγνωστός ἐστιν ἐλέους, δυνατοὶ δὲ δυνατῶς ἐτασθήσονται·",
+        "VUL": "Horrende et cito apparebit vobis,/ quoniam judicium durissimum his qui præsunt fiet./",
+        "SYN": "ибо меньший заслуживает помилование, а сильные сильно будут истязаны.",
+        "NEO": "Aux petits, on pardonne par pitié+ 6:6 \\+it Aux petits on pardonne par pitié\\+it*. M à m., \\+it le petit est susceptible du pardon de ta miséricorde\\+it*.* ; mais les puissants sont puissamment châtiés.",
+        "NAB": "For the lowly may be pardoned out of mercy but the mighty shall be mightily put to the test.",
+        "VAT_ES": "Al pequeño, por piedad, se le perdona, pero los poderosos serán examinados con rigor.",
+        "CEI": "L'inferiore è meritevole di pietà, ma i potenti saranno esaminati con rigore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "οὐ γὰρ ὑποστελεῖται πρόσωπον ὁ πάντων δεσπότης, οὐδὲ ἐντραπήσεται μέγεθος· ὅτι μικρὸν καὶ μέγαν αὐτὸς ἐποίησεν, ὁμοίως τε προνοεῖ περὶ πάντων·",
+        "VUL": "Exiguo enim conceditur misericordia ;/ potentes autem potenter tormenta patientur./",
+        "SYN": "Господь всех не убоится лица и не устрашится величия, ибо Он сотворил и малого и великого и одинаково промышляет о всех;",
+        "NEO": "Le souverain de tous ne reculera devant personne, il ne s’arrêtera par respect devant aucune grandeur ; car il a fait les grands et les petits, et il prend soin des uns comme des autres.",
+        "NAB": "For the Lord of all shows no partiality, nor does he fear greatness, Because he himself made the great as well as the small, and he provides for all alike;",
+        "VAT_ES": "Porque el Señor de todos no retrocede ante nadie, ni lo intimida la grandeza: él hizo al pequeño y al grande, y cuida de todos por igual,",
+        "CEI": "Il Signore di tutti non si ritira davanti a nessuno, non ha soggezione della grandezza, perché egli ha creato il piccolo e il grande e si cura ugualmente di tutti."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "τοῖς δὲ κραταιοῖς ἰσχυρὰ ἐφίσταται ἔραυνα.",
+        "VUL": "Non enim subtrahet personam cujusquam Deus,/ nec verebitur magnitudinem ejus cujusquam,/ quoniam pusillum et magnum ipse fecit,/ et æqualiter cura est illi de omnibus./",
+        "SYN": "но начальствующим предстоит строгое испытание.",
+        "NEO": "Mais les puissants seront soumis à une épreuve plus rigoureuse.",
+        "NAB": "but for those in power a rigorous scrutiny impends.",
+        "VAT_ES": "Pero los poderosos serán severamente examinados.",
+        "CEI": "Ma sui potenti sovrasta un'indagine rigorosa."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "πρὸς ὑμᾶς οὖν, ὦ τύραννοι, οἱ λόγοι μου, ἵνα μάθητε σοφίαν καὶ μὴ παραπέσητε.",
+        "VUL": "Fortioribus autem fortior instat cruciatio./",
+        "SYN": "Итак, к вам, цари, слова мои, чтобы вы научились премудрости и не падали.",
+        "NEO": "C’est donc à vous, ô rois, que s’adressent* mes discours, afin que vous appreniez la sagesse et que vous ne tombiez pas.",
+        "NAB": "To you, therefore, O princes, are my words addressed that you may learn wisdom and that you may not sin.",
+        "VAT_ES": "A ustedes, soberanos, se dirigen mis palabras, para que aprendan la Sabiduría y no incurran en falta;",
+        "CEI": "Pertanto a voi, o sovrani, sono dirette le mie parole, perché impariate la sapienza e non abbiate a cadere."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "οἱ γὰρ φυλάξαντες ὁσίως τὰ ὅσια ὁσιωθήσονται, καὶ οἱ διδαχθέντες αὐτὰ εὑρήσουσιν ἀπολογίαν.",
+        "VUL": "Ad vos ergo, reges, sunt hi sermones mei :/ ut discatis sapientiam, et non excidatis./",
+        "SYN": "Ибо свято хранящие святое освятятся, и научившиеся тому найдут оправдание.",
+        "NEO": "Ceux qui observent saintement les saintes lois seront sanctifiés, et ceux qui les auront apprises auront de quoi répondre.",
+        "NAB": "For those who keep the holy precepts hallowed shall be found holy, and those learned in them will have ready a response.",
+        "VAT_ES": "porque los que observen santamente las leyes santas serán reconocidos como santos, y los que se dejen instruir por ellas, también en ellas encontrarán su defensa.",
+        "CEI": "Chi custodisce santamente le cose sante sarà santificato e chi si è istruito in esse vi troverà una difesa."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἐπιθυμήσατε οὖν τῶν λόγων μου, ποθήσατε καὶ παιδευθήσεσθε.",
+        "VUL": "Qui enim custodierint justa juste, justificabuntur ;/ et qui didicerint ista, invenient quid respondeant./",
+        "SYN": "Итак, возжелайте слов моих, полюбите и научитесь.",
+        "NEO": "Mettez donc vos complaisances dans mes paroles, désirez-les, et vous aurez l’instruction.",
+        "NAB": "Desire therefore my words; long for them and you shall be instructed.",
+        "VAT_ES": "Deseen, entonces, mis palabras; búsquenlas ardientemente, y serán instruidos. Encuentro con la Sabiduría",
+        "CEI": "Desiderate, pertanto, le mie parole; bramatele e ne riceverete istruzione."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "Λαμπρὰ καὶ ἀμάραντός ἐστιν ἡ σοφία, καὶ εὐχερῶς θεωρεῖται ὑπὸ τῶν ἀγαπώντων αὐτήν·",
+        "VUL": "Concupiscite ergo sermones meos ;/ diligite illos, et habebitis disciplinam./",
+        "SYN": "Премудрость светла и неувядающа, и легко созерцается любящими ее, и обретается ищущими ее;",
+        "NEO": "La sagesse est brillante, et son éclat ne se ternit pas ; facilement on l’aperçoit quand on l’aime, facilement on la trouve quand on la cherche.",
+        "NAB": "Resplendent and unfading is Wisdom, and she is readily perceived by those who love her, and found by those who seek her.",
+        "VAT_ES": "La Sabiduría es luminosa y nunca pierde su brillo: se deja contemplar fácilmente por los que la aman y encontrar por los que la buscan.",
+        "CEI": "La sapienza è radiosa e indefettibile, facilmente è contemplata da chi l'ama e trovata da chiunque la ricerca."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "φθάνει τοὺς ἐπιθυμοῦντας προγνωσθῆναι.",
+        "VUL": "Clara est, et quæ numquam marcescit, sapientia :/ et facile videtur ab his qui diligunt eam,/ et invenitur ab his qui quærunt illam./",
+        "SYN": "она даже упреждает желающих познать ее.",
+        "NEO": "Elle prévient ceux qui la cherchent, et se montre à eux la première.",
+        "NAB": "She hastens to make herself known in anticipation of men's desire;",
+        "VAT_ES": "Ella se anticipa a darse a conocer a los que la desean.",
+        "CEI": "Previene, per farsi conoscere, quanti la desiderano."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "ὁ ὀρθρίσας ἐπ’ αὐτὴν οὐ κοπιάσει, πάρεδρον γὰρ εὑρήσει τῶν πυλῶν αὐτοῦ.",
+        "VUL": "Præoccupat qui se concupiscunt,/ ut illis se prior ostendat./",
+        "SYN": "С раннего утра ищущий ее не утомится, ибо найдет ее сидящею у дверей своих.",
+        "NEO": "Celui qui se lève le matin pour la chercher* n’a pas de peine : il la trouve assise à sa porte.",
+        "NAB": "he who watches for her at dawn shall not be disappointed, for he shall find her sitting by his gate.",
+        "VAT_ES": "El que madruga para buscarla no se fatigará, porque la encontrará sentada a su puerta.",
+        "CEI": "Chi si leva per essa di buon mattino non faticherà, la troverà seduta alla sua porta."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "τὸ γὰρ ἐνθυμηθῆναι περὶ αὐτῆς φρονήσεως τελειότης, καὶ ὁ ἀγρυπνήσας δι’ αὐτὴν ταχέως ἀμέριμνος ἔσται·",
+        "VUL": "Qui de luce vigilaverit ad illam non laborabit ;/ assidentem enim illam foribus suis inveniet./",
+        "SYN": "Помышлять о ней есть уже совершенство разума, и бодрствующий ради нее скоро освободится от забот,",
+        "NEO": "Car penser à elle, c’est la perfection de la prudence, et celui qui veille à cause d’elle sera bientôt libre de soucis ;",
+        "NAB": "For taking thought of her is the perfection of prudence, and he who for her sake keeps vigil shall quickly be free from care;",
+        "VAT_ES": "Meditar en ella es la perfección de la prudencia, y el que se desvela por su causa pronto quedará libre de inquietudes.",
+        "CEI": "Riflettere su di essa è perfezione di saggezza, chi veglia per lei sarà presto senza affanni."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ὅτι τοὺς ἀξίους αὐτῆς αὕτη περιέρχεται ζητοῦσα, καὶ ἐν ταῖς τρίβοις φαντάζεται αὐτοῖς εὐμενῶς, καὶ ἐν πάσῃ ἐπινοίᾳ ὑπαντᾷ αὐτοῖς.",
+        "VUL": "Cogitare ergo de illa sensus est consummatus,/ et qui vigilaverit propter illam cito securus erit./",
+        "SYN": "ибо она сама обходит и ищет достойных ее, и благосклонно является им на путях, и при всякой мысли встречается с ними.",
+        "NEO": "elle-même va de tous côtés chercher ceux qui sont dignes d’elle, elle se montre amicalement à eux dans leurs voies, et les assiste dans tous leurs desseins.",
+        "NAB": "Because she makes her own rounds, seeking those worthy of her, and graciously appears to them in the ways, and meets them with all solicitude.",
+        "VAT_ES": "La Sabiduría busca por todas partes a los que son dignos de ella, se les aparece con benevolencia en los caminos y les sale al encuentro en todos sus pensamientos.",
+        "CEI": "Essa medesima va in cerca di quanti sono degni di lei, appare loro ben disposta per le strade, va loro incontro con ogni benevolenza."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "ἀρχὴ γὰρ αὐτῆς ἡ ἀληθεστάτη παιδείας ἐπιθυμία,",
+        "VUL": "Quoniam dignos se ipsa circuit quærens,/ et in viis ostendit se hilariter,/ et in omni providentia occurrit illis./",
+        "SYN": "Начало ее есть искреннейшее желание учения,",
+        "NEO": "En effet, son commencement le plus assuré est le désir de l’instruction.",
+        "NAB": "For the first step toward discipline is a very earnest desire for her; then, care for discipline is love of her;",
+        "VAT_ES": "El comienzo de la Sabiduría es el verdadero deseo de instruirse, querer instruirse, es amarla;",
+        "CEI": "Suo principio assai sincero è il desiderio d'istruzione; la cura dell'istruzione è amore;"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "φροντὶς δὲ παιδείας ἀγάπη, ἀγάπη δὲ τήρησις νόμων αὐτῆς, προσοχὴ δὲ νόμων βεβαίωσις ἀφθαρσίας,",
+        "VUL": "Initium enim illius verissima est disciplinæ concupiscentia./",
+        "SYN": "а забота об учении - любовь, любовь же - хранение законов ее, а наблюдение законов - залог бессмертия,",
+        "NEO": "Or le soin de l’instruction conduit* à l’amour, l’amour fait qu’on obéit à ses* lois, l’obéissance à ses lois assure l’immortalité,",
+        "NAB": "love means the keeping of her laws; To observe her laws is the basis for incorruptibility;",
+        "VAT_ES": "amarla, es cumplir sus leyes, observar sus leyes, es garantía de incorruptibilidad,",
+        "CEI": "l'amore è osservanza delle sue leggi; il rispetto delle leggi è garanzia di immortalità"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ἀφθαρσία δὲ ἐγγὺς εἶναι ποιεῖ θεοῦ·",
+        "VUL": "Cura ergo disciplinæ dilectio est,/ et dilectio custodia legum illius est ;/ custoditio autem legum consummatio incorruptionis est ;/",
+        "SYN": "а бессмертие приближает к Богу;",
+        "NEO": "et l’immortalité donne une place près de Dieu.",
+        "NAB": "and incorruptibility makes one close to God;",
+        "VAT_ES": "y la incorruptibilidad hace estar cerca de Dios:",
+        "CEI": "e l'immortalità fa stare vicino a Dio."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ἐπιθυμία ἄρα σοφίας ἀνάγει ἐπὶ βασιλείαν.",
+        "VUL": "incorruptio autem facit esse proximum Deo./",
+        "SYN": "поэтому желание премудрости возводит к царству.",
+        "NEO": "Ainsi le désir de la sagesse conduit à la royauté.",
+        "NAB": "thus the desire for Wisdom leads up to a kingdom.",
+        "VAT_ES": "así, el deseo de la Sabiduría conduce a la realeza.",
+        "CEI": "Dunque il desiderio della sapienza conduce al regno."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "εἰ οὖν ἥδεσθε ἐπὶ θρόνοις καὶ σκήπτροις, τύραννοι λαῶν, τιμήσατε σοφίαν, ἵνα εἰς τὸν αἰῶνα βασιλεύσητε.",
+        "VUL": "Concupiscentia itaque sapientiæ deducit ad regnum perpetuum./",
+        "SYN": "Итак, властители народов, если вы услаждаетесь престолами и скипетрами, то почтите премудрость, чтобы вам царствовать вовеки.",
+        "NEO": "Si donc, ô rois des peuples, vous mettez votre plaisir dans les trônes et le sceptre, honorez la sagesse, afin de régner éternellement.",
+        "NAB": "If, then, you find pleasure in throne and scepter, you princes of the peoples, honor Wisdom, that you may reign as kings forever.",
+        "VAT_ES": "Si a ustedes, entonces, soberanos de los pueblos, les agradan los tronos y los cetros, honren a la Sabiduría y reinarán para siempre.",
+        "CEI": "Se dunque, sovrani dei popoli, vi dilettate di troni e di scettri, onorate la sapienza, perché possiate regnare sempre."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "τί δέ ἐστιν σοφία καὶ πῶς ἐγένετο ἀπαγγελῶ, καὶ οὐκ ἀποκρύψω ὑμῖν μυστήρια, ἀλλὰ ἀπ’ ἀρχῆς γενέσεως ἐξιχνιάσω καὶ θήσω εἰς τὸ ἐμφανὲς τὴν γνῶσιν αὐτῆς, καὶ οὐ μὴ παροδεύσω τὴν ἀλήθειαν·",
+        "VUL": "Si ergo delectamini sedibus et sceptris, o reges populi,/ diligite sapientiam, ut in perpetuum regnetis :/",
+        "SYN": "Что же есть премудрость, и как она произошла, я возвещу,",
+        "NEO": "Mais ce qu’est la sagesse et son origine, je vais l’exposer, sans vous cacher les mystères de Dieu*. Je remonterai jusqu’au début de la création, je mettrai au grand jour ce qui la concerne, et je ne m’écarterai pas de la vérité.",
+        "NAB": "Now what wisdom is, and how she came to be I shall relate; and I shall hide no secrets from you, But from the very beginning I shall search out and bring to light knowledge of her, nor shall I diverge from the truth.",
+        "VAT_ES": "&iquest;Pero qué es la Sabiduría y cuál es su origen? Yo lo voy a anunciar, sin ocultarles sus misterios: me remontaré hasta sus orígenes más remotos, pondré al descubierto su conocimiento, y no me apartaré de la verdad.",
+        "CEI": "Esporrò che cos'è la sapienza e come essa nacque; non vi terrò nascosti i suoi segreti. Seguirò le sue tracce fin dall'origine, metterò in luce la sua conoscenza, non mi allontanerò dalla verità."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "οὔτε μὴν φθόνῳ τετηκότι συνοδεύσω, ὅτι οὗτος οὐ κοινωνήσει σοφίᾳ.",
+        "VUL": "diligite lumen sapientiæ, omnes qui præestis populis.]",
+        "SYN": "и не скрою от вас тайн, но исследую от начала рождения,",
+        "NEO": "Loin de moi de faire route avec l’envie dévorante ! Elle n’a rien de commun avec la sagesse.",
+        "NAB": "Neither shall I admit consuming jealousy to my company, because that can have no fellowship with Wisdom.",
+        "VAT_ES": "No me acompañará en el camino la envidia corrosiva, porque ella no tiene nada en común con la Sabiduría.",
+        "CEI": "Non mi accompagnerò con l'invidia che consuma, poiché essa non ha nulla in comune con la sapienza."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "πλῆθος δὲ σοφῶν σωτηρία κόσμου, καὶ βασιλεὺς φρόνιμος εὐσταθία δήμου.",
+        "VUL": "[Quid est autem sapientia, et quemadmodum facta sit, referam,/ et non abscondam a vobis sacramenta Dei :/ sed ab initio nativitatis investigabo,/ et ponam in lucem scientiam illius,/ et non præteribo veritatem./",
+        "SYN": "и открою познание ее, и не миную истины;",
+        "NEO": "Le grand nombre des sages fait le salut de la terre, et un roi sage la prospérité de son peuple.",
+        "NAB": "A great number of wise men is the safety of the world, and a prudent king, the stability of his people;",
+        "VAT_ES": "Una multitud de sabios es la salvación del mundo, y un rey sensato asegura la estabilidad de su pueblo.",
+        "CEI": "L'abbondanza dei saggi è la salvezza del mondo; un re saggio è la salvezza di un popolo."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "ὥστε παιδεύεσθε τοῖς ῥήμασίν μου, καὶ ὠφεληθήσεσθε.",
+        "VUL": "Neque cum invidia tabescente iter habebo,/ quoniam talis homo non erit particeps sapientiæ./",
+        "SYN": "и не пойду вместе с истаевающим от зависти, ибо таковой не будет причастником премудрости.",
+        "NEO": "Recevez donc l’instruction par mes paroles, et vous vous en trouverez bien.",
+        "NAB": "so take instruction from my words, to your profit.",
+        "VAT_ES": "Por lo tanto, déjense instruir por mis palabras, y esto les resultará provechoso.",
+        "CEI": "Lasciatevi dunque ammaestrare dalle mie parole e ne trarrete profitto."
+      }
+    }
+  }
+}

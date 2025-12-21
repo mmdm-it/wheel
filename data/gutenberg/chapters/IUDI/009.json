@@ -1,0 +1,1041 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IUDI_009",
+  "book_key": "IUDI",
+  "sequence": 9,
+  "chapter_in": {
+    "MT": 9,
+    "VUL": 9,
+    "LXX": 9
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨לֶךְ אֲבִימֶ֤לֶךְ בֶּן יְרֻבַּ֨עַל֙ שְׁכֶ֔מָ/ה אֶל אֲחֵ֖י אִמּ֑/וֹ וַ/יְדַבֵּ֣ר אֲלֵי/הֶ֔ם וְ/אֶל כָּל מִשְׁפַּ֛חַת בֵּית אֲבִ֥י אִמּ֖/וֹ לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐπορεύθη Ἀβειμέλεχ υἱὸς Ἰεροβάαλ εἰς Συχὲμ πρὸς ἀδελφοὺς μητρὸς αὐτοῦ, καὶ ἐλάλησεν πρὸς αὐτοὺς καὶ πρὸς πᾶσαν συγγενίαν οἴκου πατρὸς μητρὸς αὐτοῦ λέγων",
+        "VUL": "Abiit autem Abimelech filius Jerobaal in Sichem ad fratres matris suæ, et locutus est ad eos, et ad omnem cognationem domus patris matris suæ, dicens :",
+        "SYN": "Авимелех, сын Иероваалов, пошел в Сихем к братьям матери своей и говорил им и всему племени отца матери своей, и сказал:",
+        "NEO": "Abimélek, fils de Jérobaal, se rendit à Sichem vers les frères de sa mère, et il leur adressa ces paroles, ainsi qu’à toute la famille de la maison du père de sa mère :",
+        "NAB": "Abimelech, son of Jerubbaal, went to his mother's kinsmen in Shechem, and said to them and to the whole clan to which his mother's family belonged,",
+        "VAT_ES": "Abimélec, hijo de Ierubaal, fue a Siquem, donde estaban los hermanos de su madre, y les dijo a ellos y a todo el clan de la casa paterna de su madre:",
+        "CEI": "Ora Abimèlech, figlio di Ierub-Baal, andò a Sichem dai fratelli di sua madre e disse loro e a tutta la parentela di sua madre:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "דַּבְּרוּ נָ֞א בְּ/אָזְנֵ֨י כָל בַּעֲלֵ֣י שְׁכֶם֮ מַה טּ֣וֹב לָ/כֶם֒ הַ/מְשֹׁ֨ל בָּ/כֶ֜ם שִׁבְעִ֣ים אִ֗ישׁ כֹּ֚ל בְּנֵ֣י יְרֻבַּ֔עַל אִם מְשֹׁ֥ל בָּ/כֶ֖ם אִ֣ישׁ אֶחָ֑ד וּ/זְכַרְתֶּ֕ם כִּֽי עַצְמֵ/כֶם וּ/בְשַׂרְ/כֶ֖ם אָנִֽי׃",
+        "LXX": "Λαλήσατε δὴ ἐν τοῖς ὠσὶν πάντων τῶν ἀνδρῶν Συχέμ Τί τὸ ἀγαθὸν ὑμῖν, κυριεῦσαι ὑμῶν ἑβδομήκοντα ἄνδρας, πάντας υἱοὺς Ἰεροβάαλ, ἢ κυριεύειν ὑμῶν ἄνδρα ἕνα; καὶ μνήσθητε ὅτι ὀστοῦν ὑμῶν καὶ σὰρξ ὑμῶν εἰμι.",
+        "VUL": "Loquimini ad omnes viros Sichem : Quid vobis est melius, ut dominentur vestri septuaginta viri omnes filii Jerobaal, an ut dominetur unus vir ? simulque considerate quod os vestrum et caro vestra sum.",
+        "SYN": "внушите всем жителям Сихемским: что лучше для вас, чтобы владели вами все семьдесят сынов Иеровааловых, или чтобы владел один? и вспомните, что я кость ваша и плоть ваша.",
+        "NEO": "« Dites, je vous prie, aux oreilles de tous les habitants de Sichem : Lequel vaut mieux pour vous que soixante-dix hommes, tous fils de Jérobaal, dominent sur vous, ou qu’un seul homme domine sur vous ? Souvenez-vous que je suis vos os et votre chair. »",
+        "NAB": "\"Put this question to all the citizens of Shechem: 'Which is better for you: that seventy men, or all Jerubbaal's sons, rule over you, or that one man rule over you?' You must remember that I am your own flesh and bone.\"",
+        "VAT_ES": "«Digan a todos los señores de Siquem: «&iquest;Qué es mejor para ustedes, que los gobiernen setenta hombres –todos los hijos de Ierubaal– o que los gobierne uno solo? Recuerden además que yo soy de la misma sangre que ustedes».",
+        "CEI": "\"Dite agli orecchi di tutti i signori di Sichem: È meglio per voi che vi governino settanta uomini, tutti i figli di Ierub-Baal, o che vi governi un solo uomo? Ricordatevi che io sono del vostro sangue\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יְדַבְּר֨וּ אֲחֵֽי אִמּ֜/וֹ עָלָ֗י/ו בְּ/אָזְנֵי֙ כָּל בַּעֲלֵ֣י שְׁכֶ֔ם אֵ֥ת כָּל הַ/דְּבָרִ֖ים הָ/אֵ֑לֶּה וַ/יֵּ֤ט לִבָּ/ם֙ אַחֲרֵ֣י אֲבִימֶ֔לֶךְ כִּ֥י אָמְר֖וּ אָחִ֥י/נוּ הֽוּא׃",
+        "LXX": "καὶ ἐλάλησαν περὶ αὐτοῦ οἱ ἀδελφοὶ τῆς μητρὸς αὐτοῦ ἐν τοῖς ὠσὶν πάντων τῶν ἀνδρῶν Συχὲμ πάντας τοὺς λόγους τούτους· καὶ ἔκλινεν ἡ καρδία αὐτῶν ὀπίσω Ἀβειμέλεχ, ὅτι εἶπαν Ἀδελφὸς ἡμῶν ἐστιν,",
+        "VUL": "Locutique sunt fratres matris ejus de eo ad omnes viros Sichem universos sermones istos, et inclinaverunt cor eorum post Abimelech, dicentes : Frater noster est.",
+        "SYN": "Братья матери его внушили о нем все сии слова жителям Сихемским; и склонилось сердце их к Авимелеху, ибо говорили они: он брат наш.",
+        "NEO": "Les frères de sa mère ayant répété à son sujet toutes ces paroles aux oreilles de tous les habitants de Sichem, le cœur de ces derniers s’inclina vers Abimélek, car ils se disaient : « C’est notre frère. »",
+        "NAB": "When his mother's kin repeated these words to them on his behalf, all the citizens of Shechem sympathized with Abimelech, thinking, \"He is our kinsman.\"",
+        "VAT_ES": "Los hermanos de su madre comunicaron estas palabras de Abimélec a los señores de Siquem, y estos se pusieron de parte de él, porque decían: «Es nuestro hermano».",
+        "CEI": "I fratelli di sua madre parlarono di lui, ripetendo a tutti i signori di Sichem quelle parole e il cuor loro si piegò a favore di Abimèlech, perché dicevano: \"È nostro fratello\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יִּתְּנוּ ל/וֹ֙ שִׁבְעִ֣ים כֶּ֔סֶף מִ/בֵּ֖יתּ בַ֣עַל בְּרִ֑ית וַ/יִּשְׂכֹּ֨ר בָּ/הֶ֜ם אֲבִימֶ֗לֶךְ אֲנָשִׁ֤ים רֵיקִים֙ וּ/פֹ֣חֲזִ֔ים וַ/יֵּלְכ֖וּ אַחֲרָֽי/ו׃",
+        "LXX": "καὶ ἔδωκαν αὐτῷ ἑβδομήκοντα ἀργυρίου ἐξ οἴκου Βααλβερίθ· καὶ ἐμισθώσατο ἑαυτῷ Ἀβειμέλεχ ἄνδρας κενοὺς καὶ δειλούς, καὶ ἐπορεύθησαν ὀπίσω αὐτοῦ.",
+        "VUL": "Dederuntque illi septuaginta pondo argenti de fano Baalberit. Qui conduxit sibi ex eo viros inopes et vagos, secutique sunt eum.",
+        "SYN": "И дали ему семьдесят _сиклей_ серебра из дома Ваалверифа; Авимелех нанял на оные праздных и своевольных людей, которые и пошли за ним.",
+        "NEO": "Ils lui donnèrent soixante-dix sicles d’argent, tirés de la maison de Baal-Berith, et Abimélek s’en servit pour soudoyer des gens de rien et des aventuriers, qui s’attachèrent à lui.",
+        "NAB": "They also gave him seventy silver shekels from the temple of Baal of Berith, with which Abimelech hired shiftless men and ruffians as his followers.",
+        "VAT_ES": "Luego le dieron setenta siclos de plata del templo de Baal Berit, con los que Abimélec contrató a unos hombres y aventureros, que le sirvieron de escolta.",
+        "CEI": "Gli diedero settanta sicli d'argento che tolsero dal tempio di Baal-Berit; con essi Abimèlech assoldò uomini sfaccendati e audaci che lo seguirono."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֤א בֵית אָבִי/ו֙ עָפְרָ֔תָ/ה וַֽ/יַּהֲרֹ֞ג אֶת אֶחָ֧י/ו בְּנֵֽי יְרֻבַּ֛עַל שִׁבְּעִ֥ים אִ֖ישׁ עַל אֶ֣בֶן אֶחָ֑ת וַ/יִּוָּתֵ֞ר יוֹתָ֧ם בֶּן יְרֻבַּ֛עַל הַ/קָּטֹ֖ן כִּ֥י נֶחְבָּֽא׃",
+        "LXX": "καὶ εἰσῆλθεν εἰς τὸν οἶκον τοῦ πατρὸς αὐτοῦ εἰς Ἐφράθα καὶ ἀπέκτεινεν τοὺς ἀδελφοὺς αὐτοῦ υἱοὺς Ἰεροβάαλ ἑβδομήκοντα ἄνδρας ἐπὶ λίθον ἕνα· καὶ κατελείφθη Ἰωαθὰν υἱὸς Ἰεροβάαλ ὁ νεώτερος, ὅτι ἐκρύβη.",
+        "VUL": "Et venit in domum patris sui in Ephra, et occidit fratres suos filios Jerobaal, septuaginta viros super lapidem unum : remansitque Joatham filius Jerobaal minimus, et absconditus est.",
+        "SYN": "И пришел он в дом отца своего в Офру и убил братьев своих, семьдесят сынов Иеровааловых, на одном камне. Остался только Иофам, младший сын Иероваалов, потому что скрылся.",
+        "NEO": "Il vint dans la maison de son père à Ephra, et il tua ses frères, fils de Jérobaal, au nombre de soixante-dix, sur une même pierre ; il n’échappa que Joatham, le plus jeune fils de Jerobaal, parce qu’il s’était caché.",
+        "NAB": "He then went to his ancestral house in Ophrah, and slew his brothers, the seventy sons of Jerubbaal, on one stone. Only the youngest son of Jerubbaal, Jotham, escaped, for he was hidden.",
+        "VAT_ES": "Enseguida entró en la casa de su padre, en Ofrá, y mató a sus hermanos, los setenta hijos de Ierubaal, sobre una misma piedra. Sólo escapó Jotam, el hijo menor de Ierubaal, porque logró esconderse.",
+        "CEI": "Venne alla casa di suo padre, a Ofra, e uccise sopra una stessa pietra i suoi fratelli, figli di Ierub-Baal, settanta uomini. Ma Iotam, figlio minore di Ierub-Baal, scampò, perché si era nascosto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֵּאָ֨סְפ֜וּ כָּל בַּעֲלֵ֤י שְׁכֶם֙ וְ/כָל בֵּ֣ית מִלּ֔וֹא וַ/יֵּ֣לְכ֔וּ וַ/יַּמְלִ֥יכוּ אֶת אֲבִימֶ֖לֶךְ לְ/מֶ֑לֶךְ עִם אֵל֥וֹן מֻצָּ֖ב אֲשֶׁ֥ר בִּ/שְׁכֶֽם׃",
+        "LXX": "Καὶ συνήχθησαν πάντες ἄνδρες Σικίμων καὶ πᾶς οἶκος Βηθμααλών, καὶ ἐπορεύθησαν καὶ ἐβασίλευσαν τὸν Ἀβειμέλεχ πρὸς τῇ βαλάνῳ τῇ εὑρετῇ τῆς στάσεως τῆς ἐν Σικίμοις.",
+        "VUL": "Congregati sunt autem omnes viri Sichem, et universæ familiæ urbis Mello : abieruntque et constituerunt regem Abimelech, juxta quercum quæ stabat in Sichem.",
+        "SYN": "И собрались все жители Сихемские и весь дом Милло, и пошли и поставили царем Авимелеха у дуба, что близ Сихема.",
+        "NEO": "Alors tous les habitants de Sichem et toute la maison de Mello s’assemblèrent ; ils vinrent et proclamèrent roi Abimélek, prés du térébinthe du monument qui se trouve à Sichem.",
+        "NAB": "Then all the citizens of Shechem and all Beth-millo came together and proceeded to make Abimelech king by the terebinth at the memorial pillar in Shechem.",
+        "VAT_ES": "Entonces se reunieron todos los señores de Siquem y todo Bet Miló, y fueron a proclamar rey a Abimélec, junto a la encina de la piedra conmemorativa que está en Siquem.",
+        "CEI": "Tutti i signori di Sichem e tutta Bet-Millo si radunarono e andarono a proclamare re Abimèlech presso la Quercia della Stele che si trova a Sichem."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יַּגִּ֣דוּ לְ/יוֹתָ֗ם וַ/יֵּ֨לֶךְ֙ וַֽ/יַּעֲמֹד֙ בְּ/רֹ֣אשׁ הַר גְּרִזִ֔ים וַ/יִּשָּׂ֥א קוֹל֖/וֹ וַ/יִּקְרָ֑א וַ/יֹּ֣אמֶר לָ/הֶ֗ם שִׁמְע֤וּ אֵלַ/י֙ בַּעֲלֵ֣י שְׁכֶ֔ם וְ/יִשְׁמַ֥ע אֲלֵי/כֶ֖ם אֱלֹהִֽים׃",
+        "LXX": "καὶ ἀνηγγέλη τῷ Ἰωαθάν· καὶ ἐπορεύθη καὶ ἔστη ἐπὶ κορυφὴν ὄρους Γαρειζείν, καὶ ἐπῆρεν τὴν φωνὴν αὐτοῦ καὶ ἔκλαυσεν, καὶ εἶπεν αὐτοῖς Ἀκούσατέ μου, ἄνδρες Σικίμων, καὶ ἀκούσεται ὑμῶν ὁ θεός.",
+        "VUL": "Quod cum nuntiatum esset Joatham, ivit, et stetit in vertice montis Garizim : elevataque voce, clamavit, et dixit : Audite me, viri Sichem ; ita audiat vos Deus.",
+        "SYN": "Когда рассказали об этом Иофаму, он пошел и стал на вершине горы Гаризима и, возвысив голос свой, кричал и говорил им: послушайте меня, жители Сихема, и послушает вас Бог!",
+        "NEO": "Lorsque Joatham en eut été informé, il alla se placer sur le sommet du mont Garizim et, élevant la voix, il leur cria en disant : « Ecoutez-moi, habitants de Sichem, afin que Dieu vous écoute !",
+        "NAB": "When this was reported to him, Jotham went to the top of Mount Gerizim, and standing there, cried out to them in a loud voice: \"Hear me, citizens of Shechem, that God may then hear you!",
+        "VAT_ES": "Cuando le llevaron la noticia a Jotam, este se puso en la cima del monte Garizim, y gritó con voz potente: «Escúchenme, señores de Siquem, y que Dios los escuche a ustedes:",
+        "CEI": "Ma Iotam, informato della cosa, andò a porsi sulla sommità del monte Garizim e, alzando la voce, gridò: \"Ascoltatemi, signori di Sichem, e Dio ascolterà voi!"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הָל֤וֹךְ הָֽלְכוּ֙ הָ/עֵצִ֔ים לִ/מְשֹׁ֥חַ עֲלֵי/הֶ֖ם מֶ֑לֶךְ וַ/יֹּאמְר֥וּ לַ/זַּ֖יִת מלוכ/ה מָלְכָ֥/ה עָלֵֽי/נוּ׃",
+        "LXX": "πορευόμενα ἐπορεύθη τὰ ξύλα τοῦ χρίσαι ἐφ’ ἑαυτὰ βασιλέα, καὶ εἶπον τῇ ἐλαίᾳ Βασίλευσον ἐφ’ ἡμῶν.",
+        "VUL": "Ierunt ligna, ut ungerent super se regem : dixeruntque olivæ : Impera nobis.",
+        "SYN": "Пошли некогда дерева помазать над собою царя и сказали маслине: царствуй над нами.",
+        "NEO": "Les arbres se mirent en chemin pour oindre un roi qui les commandât. Ils dirent à l’olivier : Règne sur nous.",
+        "NAB": "Once the trees went to anoint a king over themselves. So they said to the olive tree, 'Reign over us.'",
+        "VAT_ES": "Los árboles se pusieron en camino para ungir a un rey que los gobernará. Entonces dijeron al olivo: «Sé tú nuestro rey».",
+        "CEI": "Si misero in cammino gli alberi per ungere un re su di essi. Dissero all'ulivo: Regna su di noi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר לָ/הֶם֙ הַ/זַּ֔יִת הֶ/חֳדַ֨לְתִּי֙ אֶת דִּשְׁנִ֔/י אֲשֶׁר בִּ֛/י יְכַבְּד֥וּ אֱלֹהִ֖ים וַ/אֲנָשִׁ֑ים וְ/הָ֣לַכְתִּ֔י לָ/נ֖וּעַ עַל הָ/עֵצִֽים׃",
+        "LXX": "καὶ εἶπεν αὐτοῖς ἡ ἐλαία Μὴ ἀπολείψασα τὴν πιότητά μου, ἐν ᾗ δοξάσουσι τὸν θεὸν ἄνδρες, πορεύσομαι κινεῖσθαι ἐπὶ τῶν ξύλων;",
+        "VUL": "Quæ respondit : Numquid possum deserere pinguedinem meam, qua et dii utuntur et homines, et venire ut inter ligna promovear ?",
+        "SYN": "Маслина сказала им: оставлю ли я тук мой, которым чествуют богов и людей и пойду ли скитаться по деревам?",
+        "NEO": "Mais l’olivier leur dit : Renoncerais-je à mon huile, qui fait ma gloire devant Dieu et devant les hommes, pour aller me balancer au-dessus des autres arbres ?",
+        "NAB": "But the olive tree answered them, 'Must I give up my rich oil, whereby men and gods are honored, and go to wave over the trees?'",
+        "VAT_ES": "Pero el olivo les respondió: «&iquest;Voy a renunciar a mi aceite con el que se honra a los dioses y a los hombres, para ir a mecerme por encima de los árboles?",
+        "CEI": "Rispose loro l'ulivo: Rinuncerò al mio olio, grazie al quale si onorano dei e uomini, e andrò ad agitarmi sugli alberi?"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֥וּ הָ/עֵצִ֖ים לַ/תְּאֵנָ֑ה לְכִי אַ֖תְּ מָלְכִ֥י עָלֵֽי/נוּ׃",
+        "LXX": "καὶ εἶπον τὰ ξύλα τῇ συκῇ Δεῦρο βασίλευσον ἐφ’ ἡμῶν.",
+        "VUL": "Dixeruntque ligna ad arborem ficum : Veni, et super nos regnum accipe.",
+        "SYN": "И сказали дерева смоковнице: иди ты, царствуй над нами.",
+        "NEO": "Et les arbres dirent au figuier : Viens, toi, règne sur nous.",
+        "NAB": "Then the trees said to the fig tree, 'Come; you reign over us!'",
+        "VAT_ES": "Los árboles dijeron a la higuera: «Ven tú a reinar sobre nosotros».",
+        "CEI": "Dissero gli alberi al fico: Vieni tu, regna su di noi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֤אמֶר לָ/הֶם֙ הַ/תְּאֵנָ֔ה הֶ/חֳדַ֨לְתִּי֙ אֶת מָתְקִ֔/י וְ/אֶת תְּנוּבָתִ֖/י הַ/טּוֹבָ֑ה וְ/הָ֣לַכְתִּ֔י לָ/נ֖וּעַ עַל הָ/עֵצִֽים׃",
+        "LXX": "καὶ εἶπεν αὐτοῖς ἡ συκῆ Μὴ ἀπολείψασα ἐγὼ τὴν γλυκύτητά μου καὶ τὰ γενήματά μου τὰ ἀγαθὰ πορεύσομαι κινεῖσθαι ἐπὶ τῶν ξύλων;",
+        "VUL": "Quæ respondit eis : Numquid possum deserere dulcedinem meam, fructusque suavissimos, et ire ut inter cetera ligna promovear ?",
+        "SYN": "Смоковница сказала им: оставлю ли я сладость мою и хороший плод мой и пойду ли скитаться по деревам?",
+        "NEO": "Mais le figuier leur dit : Renoncerais-je à ma douceur et à mon excellent fruit, pour aller me balancer au-dessus des autres arbres ?",
+        "NAB": "But the fig tree answered them, 'Must I give up my sweetness and my good fruit, and go to wave over the trees?'",
+        "VAT_ES": "Pero la higuera les respondió: «&iquest;Voy a renunciar a mi dulzura y a mi sabroso fruto, para ir a mecerme por encima de los árboles?»",
+        "CEI": "Rispose loro il fico: Rinuncerò alla mia dolcezza e al mio frutto squisito, e andrò ad agitarmi sugli alberi?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֥וּ הָ/עֵצִ֖ים לַ/גָּ֑פֶן לְכִי אַ֖תְּ מלוכי מָלְכִ֥י עָלֵֽי/נוּ׃",
+        "LXX": "καὶ εἶπαν τὰ ξύλα πρὸς τὴν ἄμπελον Δεῦρο σὺ βασίλευσον ἐφ’ ἡμῶν.",
+        "VUL": "Locutaque sunt ligna ad vitem : Veni, et impera nobis.",
+        "SYN": "И сказали дерева виноградной лозе: иди ты, царствуй над нами.",
+        "NEO": "Et les arbres dirent à la vigne : Viens, toi, règne sur nous.",
+        "NAB": "Then the trees said to the vine, 'Come you, and reign over us.'",
+        "VAT_ES": "Los árboles le dijeron a la vid: «Ven tú a reinar sobre nosotros».",
+        "CEI": "Dissero gli alberi alla vite: Vieni tu, regna su di noi."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֤אמֶר לָ/הֶם֙ הַ/גֶּ֔פֶן הֶ/חֳדַ֨לְתִּי֙ אֶת תִּ֣ירוֹשִׁ֔/י הַֽ/מְשַׂמֵּ֥חַ אֱלֹהִ֖ים וַ/אֲנָשִׁ֑ים וְ/הָ֣לַכְתִּ֔י לָ/נ֖וּעַ עַל הָ/עֵצִֽים׃",
+        "LXX": "καὶ εἶπεν αὐτοῖς ἡ ἄμπελος Μὴ ἀπολείψασα τὸν οἶνόν μου τὸν εὐφραίνοντα θεὸν καὶ ἀνθρώπους πορεύσομαι κινεῖσθαι ἐπὶ τῶν ξύλων;",
+        "VUL": "Quæ respondit eis : Numquid possum deserere vinum meum, quod lætificat Deum et homines, et inter ligna cetera promoveri ?",
+        "SYN": "Виноградная лоза сказала им: оставлю ли я сок мой, который веселит богов и человеков, и пойду ли скитаться по деревам?",
+        "NEO": "Mais la vigne leur dit : Renoncerais-je à mon vin, qui réjouit Dieu et les hommes, pour aller me balancer au-dessus des autres arbres ?",
+        "NAB": "But the vine answered them, 'Must I give up my wine that cheers gods and men, and go to wave over the trees?'",
+        "VAT_ES": "Pero la vid les respondió: «&iquest;Voy a renunciar a mi mosto que alegra a los dioses y a los hombres, para ir a mecerme por encima de los árboles?».",
+        "CEI": "Rispose loro la vite: Rinuncerò al mio mosto che allieta dei e uomini, e andrò ad agitarmi sugli alberi?"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֥וּ כָל הָ/עֵצִ֖ים אֶל הָ/אָטָ֑ד לֵ֥ךְ אַתָּ֖ה מְלָךְ עָלֵֽי/נוּ׃",
+        "LXX": "καὶ εἶπαν πάντα τὰ ξύλα τῇ ῥάμνῳ Δεῦρο σὺ βασίλευσον ἐφ’ ἡμῶν.",
+        "VUL": "Dixeruntque omnia ligna ad rhamnum : Veni, et impera super nos.",
+        "SYN": "Наконец сказали все дерева терновнику: иди ты, царствуй над нами.",
+        "NEO": "Alors tous les arbres dirent au buisson d’épines : Viens, toi, règne sur nous.",
+        "NAB": "Then all the trees said to the buckthorn, 'Come; you reign over us!'",
+        "VAT_ES": "Entonces, todos los árboles dijeron a la zarza: «Ven tú a reinar sobre nosotros».",
+        "CEI": "Dissero tutti gli alberi al rovo: Vieni tu, regna su di noi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר הָ/אָטָד֮ אֶל הָ/עֵצִים֒ אִ֡ם בֶּ/אֱמֶ֣ת אַתֶּם֩ מֹשְׁחִ֨ים אֹתִ֤/י לְ/מֶ֨לֶךְ֙ עֲלֵי/כֶ֔ם בֹּ֖אוּ חֲס֣וּ בְ/צִלִּ֑/י וְ/אִם אַ֕יִן תֵּ֤צֵא אֵשׁ֙ מִן הָ֣/אָטָ֔ד וְ/תֹאכַ֖ל אֶת אַרְזֵ֥י הַ/לְּבָנֽוֹן׃",
+        "LXX": "καὶ εἶπεν ἡ ῥάμνος πρὸς τὰ ξύλα Εἰ ἐν ἀληθείᾳ χρίετέ με ὑμεῖς τοῦ βασιλεύειν ἐφ’ ὑμᾶς, δεῦτε ὑπόστητε ἐν τῇ σκιᾷ μου· καὶ εἰ μή, ἐξέλθῃ πῦρ ἀπ’ ἐμοῦ καὶ καταφάγῃ τὰς κέδρους τοῦ Λιβάνου.",
+        "VUL": "Quæ respondit eis : Si vere me regem vobis constituitis, venite, et sub umbra mea requiescite : si autem non vultis, egrediatur ignis de rhamno, et devoret cedros Libani.",
+        "SYN": "Терновник сказал деревам: если вы по истине поставляете меня царем над собою, то идите, покойтесь под тенью моею; если же нет, то выйдет огонь из терновника и пожжет кедры Ливанские.",
+        "NEO": "Et le buisson d’épines dit aux arbres : Si vraiment vous voulez m’oindre pour votre roi, venez, confiez-vous à mon ombrage ; sinon, qu’un feu sorte du buisson d’épines et dévore les cèdes du Liban !...",
+        "NAB": "But the buckthorn replied to the trees, 'If you wish to anoint me king over you in good faith, come and take refuge in my shadow. Otherwise, let fire come from the buckthorn and devour the cedars of Lebanon.'",
+        "VAT_ES": "Pero la zarza respondió a los árboles: «Si de veras quieren ungirme para que reine sobre ustedes, vengan a cobijarse bajo mi sombra; de lo contrario, saldrá fuego de la zarza y consumirá los cedros del Líbano».",
+        "CEI": "Rispose il rovo agli alberi: Se in verità ungete me re su di voi, venite, rifugiatevi alla mia ombra; se no, esca un fuoco dal rovo e divori i cedri del Libano."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה אִם בֶּ/אֱמֶ֤ת וּ/בְ/תָמִים֙ עֲשִׂיתֶ֔ם וַ/תַּמְלִ֖יכוּ אֶת אֲבִימֶ֑לֶךְ וְ/אִם טוֹבָ֤ה עֲשִׂיתֶם֙ עִם יְרֻבַּ֣עַל וְ/עִם בֵּית֔/וֹ וְ/אִם כִּ/גְמ֥וּל יָדָ֖י/ו עֲשִׂ֥יתֶם לֽ/וֹ׃",
+        "LXX": "καὶ νῦν εἰ ἐν ἀληθείᾳ καὶ τελειότητι ἐποιήσατε καὶ ἐβασιλεύσατε τὸν Ἀβειμέλεχ, καὶ εἰ ἀγαθωσύνην ἐποιήσατε μετὰ Ἰεροβάαλ καὶ μετὰ τοῦ οἴκου αὐτοῦ, καὶ εἰ ὡς ἀνταπόδοσις χειρὸς αὐτοῦ ἐποιήσατε αὐτῷ·",
+        "VUL": "Nunc igitur, si recte et absque peccato constituistis super vos regem Abimelech, et bene egistis cum Jerobaal, et cum domo ejus, et reddidistis vicem beneficiis ejus, qui pugnavit pro vobis,",
+        "SYN": "Итак смотрите, по истине ли и по правде ли вы поступили, поставив Авимелеха царем? И хорошо ли вы поступили с Иероваалом и домом его, и сообразно ли с его благодеяниями поступили вы?",
+        "NEO": "Maintenant, si c’est avec équité et droiture que vous avez agi en faisant roi Abimélek, si vous vous êtes bien conduits envers Jérobaal et sa maison, et si vous l’avez traité selon le mérite de ses mains,",
+        "NAB": "\"Now then, if you have acted in good faith and honorably in appointing Abimelech your king, if you have dealt well with Jerubbaal and with his family, and if you have treated him as he deserved -",
+        "VAT_ES": "Y ahora, díganme: &iquest;Han obrado ustedes con sinceridad al proclamar rey a Abimélec? &iquest;Se han portado bien con Ierubaal y con su familia, y lo han tratado como se merecía?",
+        "CEI": "Ora voi non avete agito con lealtà e onestà proclamando re Abimèlech, non avete operato bene verso Ierub-Baal e la sua casa, non lo avete trattato secondo il merito delle sue azioni..."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אֲשֶׁר נִלְחַ֥ם אָבִ֖/י עֲלֵי/כֶ֑ם וַ/יַּשְׁלֵ֤ךְ אֶת נַפְשׁ/וֹ֙ מִ/נֶּ֔גֶד וַ/יַּצֵּ֥ל אֶתְ/כֶ֖ם מִ/יַּ֥ד מִדְיָֽן׃",
+        "LXX": "ὡς παρετάξατο ὁ πατήρ μου ὑπὲρ ὑμῶν καὶ ἐξέρριψεν τὴν ψυχὴν αὐτοῦ ἐξ ἐναντίας καὶ ἐρύσατο ὑμᾶς ἐκ χειρὸς Μαδιάμ,",
+        "VUL": "et animam suam dedit periculis, ut erueret vos de manu Madian,",
+        "SYN": "За вас отец мой сражался, не дорожил жизнью своею и избавил вас от руки Мадианитян;",
+        "NEO": "— car mon père a combattu pour vous, il a exposé sa vie et vous a délivrés de la main de Madian ;",
+        "NAB": "for my father fought for you at the risk of his life when he saved you from the power of Midian;",
+        "VAT_ES": "Mi padre combatió por ustedes, arriesgó su vida y los libró del poder de Madián,",
+        "CEI": "Perché mio padre ha combattuto per voi, ha esposto al pericolo la vita e vi ha liberati dalle mani di Madian."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/אַתֶּ֞ם קַמְתֶּ֨ם עַל בֵּ֤ית אָבִ/י֙ הַ/יּ֔וֹם וַ/תַּהַרְג֧וּ אֶת בָּנָ֛י/ו שִׁבְעִ֥ים אִ֖ישׁ עַל אֶ֣בֶן אֶחָ֑ת וַ/תַּמְלִ֜יכוּ אֶת אֲבִימֶ֤לֶךְ בֶּן אֲמָת/וֹ֙ עַל בַּעֲלֵ֣י שְׁכֶ֔ם כִּ֥י אֲחִי/כֶ֖ם הֽוּא׃",
+        "LXX": "καὶ ὑμεῖς ἐπανέστητε ἐπὶ τὸν οἶκον τοῦ πατρός μου σήμερον καὶ ἀπεκτείνατε τοὺς υἱοὺς αὐτοῦ ἑβδομήκοντα ἄνδρας ἐπὶ λίθον ἕνα, καὶ ἐβασιλεύσατε τὸν Ἀβειμέλεχ υἱὸν παιδίσκης αὐτοῦ ἐπὶ τοὺς ἄνδρας Σικίμων, ὅτι ἀδελφὸς ὑμῶν ἐστιν·",
+        "VUL": "qui nunc surrexistis contra domum patris mei, et interfecistis filios ejus septuaginta viros super unum lapidem, et constituistis regem Abimelech filium ancillæ ejus super habitatores Sichem, eo quod frater vester sit :",
+        "SYN": "а вы теперь восстали против дома отца моего, и убили семьдесят сынов отца моего на одном камне, и поставили царем над жителями Сихемскими Авимелеха, сына рабыни его, потому что он брат ваш.",
+        "NEO": "et vous, vous vous êtes levés aujourd’hui contre la maison de mon père, vous avez tué ses fils, au nombre de soixante-dix, sur une même pierre, et vous avez établi roi sur les hommes de Sichem Abimélek, fils de sa servante, parce qu’il est votre frère, —",
+        "NAB": "but you have risen against his family this day and have killed his seventy sons upon one stone, and have made Abimelech, the son of his handmaid, king over the citizens of Shechem, because he is your kinsman -",
+        "VAT_ES": "y ahora ustedes se han levantado contra la familia de mi padre, han matado sobre una misma piedra a sus setenta hijos, y han proclamado rey de los señores de Siquem y Abimélec, el hijo de su esclava, aduciendo que es hermano de ustedes.",
+        "CEI": "Voi invece oggi siete insorti contro la casa di mio padre, avete ucciso i suoi figli, settanta uomini, sopra una stessa pietra e avete proclamato re dei signori di Sichem Abimèlech, figlio della sua schiava, perché è vostro fratello."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/אִם בֶּ/אֱמֶ֨ת וּ/בְ/תָמִ֧ים עֲשִׂיתֶ֛ם עִם יְרֻבַּ֥עַל וְ/עִם בֵּית֖/וֹ הַ/יּ֣וֹם הַ/זֶּ֑ה שִׂמְחוּ֙ בַּ/אֲבִימֶ֔לֶךְ וְ/יִשְׂמַ֥ח גַּם ה֖וּא בָּ/כֶֽם׃",
+        "LXX": "καὶ εἰ ἐν ἀληθείᾳ καὶ τελειότητι ἐποιήσατε μετὰ Ἰεροβάαλ καὶ μετὰ τοῦ οἴκου αὐτοῦ ἐν τῇ ἡμέρᾳ ταύτῃ, εὐφρανθείητε ἐν Ἀβειμέλεχ, καὶ εὐφρανθείη καί γε αὐτὸς ἐφ’ ὑμῖν.",
+        "VUL": "si ergo recte et absque vitio egistis cum Jerobaal et domo ejus, hodie lætamini in Abimelech, et ille lætetur in vobis.",
+        "SYN": "Если вы ныне по истине и по правде поступили с Иероваалом и домом его, то [да будет на вас благословение и] радуйтесь об Авимелехе, и он пусть радуется о вас;",
+        "NEO": "si c’est avec équité et droiture que vous avez agi en ce jour envers Jérobaal et sa maison, eh bien, qu’Abimélek fasse votre joie, et que vous fassiez la sienne aussi !",
+        "NAB": "if, then, you have acted in good faith and with honor toward Jerubbaal and his family this day, rejoice in Abimelech and may he in turn rejoice in you.",
+        "VAT_ES": "Si hoy han sido sinceros y leales con Ierubaal y su familia, que Abimélec sea para ustedes un motivo de Alegría, y ustedes para él.",
+        "CEI": "Se dunque avete operato oggi con sincerità e con integrità verso Ierub-Baal e la sua casa, godetevi Abimèlech ed egli si goda voi!"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/אִם אַ֕יִן תֵּ֤צֵא אֵשׁ֙ מֵ/אֲבִימֶ֔לֶךְ וְ/תֹאכַ֛ל אֶת בַּעֲלֵ֥י שְׁכֶ֖ם וְ/אֶת בֵּ֣ית מִלּ֑וֹא וְ/תֵצֵ֨א אֵ֜שׁ מִ/בַּעֲלֵ֤י שְׁכֶם֙ וּ/מִ/בֵּ֣ית מִלּ֔וֹא וְ/תֹאכַ֖ל אֶת אֲבִימֶֽלֶךְ׃",
+        "LXX": "εἰ δὲ οὐ, ἐξέλθοι πῦρ ἀπὸ Ἀβειμέλεχ καὶ φάγοι τοὺς ἄνδρας Σικίμων καὶ τὸν οἶκον Βηθμααλλών, καὶ ἐξέλθοι πῦρ ἀπὸ ἀνδρῶν Σικίμων καὶ ἐκ τοῦ οἴκου Βηθμααλλὼν καὶ καταφάγοι τὸν Ἀβειμέλεχ.",
+        "VUL": "Sin autem perverse : egrediatur ignis ex eo, et consumat habitatores Sichem, et oppidum Mello : egrediaturque ignis de viris Sichem, et de oppido Mello, et devoret Abimelech.",
+        "SYN": "если же нет, то да изыдет огонь от Авимелеха и да пожжет жителей Сихемских и весь дом Милло и да изыдет огонь от жителей Сихемских и от дома Милло, и да пожжет Авимелеха.",
+        "NEO": "Sinon, qu’un feu sorte d’Abimélek et dévore les habitants de Sichem et la maison de Mello, et qu’un feu sorte des habitants de Sichem et de la maison de Mello et dévore Abimélek ! »",
+        "NAB": "But if not, let fire come forth from Abimelech to devour the citizens of Shechem and Beth-millo, and let fire come forth from the citizens and from Beth-millo to devour Abimelech.\"",
+        "VAT_ES": "De lo contrario, que salga fuego de Abimélec para devorar a los señores de Siquem y de Bet Miló, y que salga fuego de los señores de Siquem y de Bet Miló, para devorar a Abimélec.",
+        "CEI": "Ma se non è così, esca da Abimèlech un fuoco che divori i signori di Sichem e Bet-Millo; esca dai signori di Sichem e da Bet-Millo un fuoco che divori Abimèlech!\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣נָס יוֹתָ֔ם וַ/יִּבְרַ֖ח וַ/יֵּ֣לֶךְ בְּאֵ֑רָ/ה וַ/יֵּ֣שֶׁב שָׁ֔ם מִ/פְּנֵ֖י אֲבִימֶ֥לֶךְ אָחִֽי/ו׃",
+        "LXX": "καὶ ἔφυγεν Ἰωαθὰν καὶ ἀπέδρα, καὶ ἐπορεύθη ἕως Βαιὴρ καὶ ᾤκησεν ἐκεῖ ἀπὸ προσώπου Ἀβειμέλεχ ἀδελφοῦ αὐτοῦ.",
+        "VUL": "Quæ cum dixisset, fugit, et abiit in Bera : habitavitque ibi ob metum Abimelech fratris sui.",
+        "SYN": "И побежал Иофам, и убежал и пошел в Беэр, и жил там, _укрываясь_ от брата своего Авимелеха.",
+        "NEO": "Joatham se retira et prit la fuite ; il se rendit à Béra et il y demeura, par crainte d’Abimélek, son frère.",
+        "NAB": "Then Jotham went in flight to Beer, where he remained for fear of his brother Abimelech.",
+        "VAT_ES": "Después Jotam huyó para ponerse a salvo, y se estableció en Beer, lejos de su hermano Abimélec.",
+        "CEI": "Iotam corse via, si mise in salvo e andò a stabilirsi a Beer, lontano da Abimèlech suo fratello."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יָּ֧שַׂר אֲבִימֶ֛לֶךְ עַל יִשְׂרָאֵ֖ל שָׁלֹ֥שׁ שָׁנִֽים׃",
+        "LXX": "Καὶ ἦρξεν Ἀβειμέλεχ ἐπὶ Ἰσραὴλ τρία ἔτη.",
+        "VUL": "Regnavit itaque Abimelech super Israël tribus annis.",
+        "SYN": "Авимелех же царствовал над Израилем три года.",
+        "NEO": "Abimélek domina trois ans sur Israël.",
+        "NAB": "When Abimelech had ruled Israel for three years,",
+        "VAT_ES": "Abimélec gobernó tres años en Israel,",
+        "CEI": "Abimèlech dominò su Israele tre anni."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח אֱלֹהִים֙ ר֣וּחַ רָעָ֔ה בֵּ֣ין אֲבִימֶ֔לֶךְ וּ/בֵ֖ין בַּעֲלֵ֣י שְׁכֶ֑ם וַ/יִּבְגְּד֥וּ בַעֲלֵי שְׁכֶ֖ם בַּ/אֲבִימֶֽלֶךְ׃",
+        "LXX": "καὶ ἐξαπέστειλεν ὁ θεὸς πνεῦμα πονηρὸν ἀνὰ μέσον Ἀβειμέλεχ καὶ ἀνὰ μέσον τῶν ἀνδρῶν Σικίμων, καὶ ἠθέτησαν ἄνδρες Σικίμων ἐν τῷ οἴκῳ Ἀβειμέλεχ·",
+        "VUL": "Misitque Dominus spiritum pessimum inter Abimelech et habitatores Sichem : qui cperunt eum detestari,",
+        "SYN": "И послал Бог злого духа между Авимелехом и между жителями Сихема, и не стали покоряться жители Сихемские Авимелеху,",
+        "NEO": "Et Dieu envoya un esprit mauvais entre Abimélek et les habitants de Sichem, et les habitants de Sichem devinrent infidèles à Abimélek :",
+        "NAB": "God put bad feelings between Abimelech and the citizens of Shechem, who rebelled against Abimelech.",
+        "VAT_ES": "Pero Dios envió un espíritu de discordia entre Abimélec y los señores de Siquem, y estos traicionaron a Abimélec.",
+        "CEI": "Poi Dio mandò un cattivo spirito fra Abimèlech e i signori di Sichem e i signori di Sichem si ribellarono ad Abimèlech."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "לָ/ב֕וֹא חֲמַ֖ס שִׁבְעִ֣ים בְּנֵֽי יְרֻבָּ֑עַל וְ/דָמָ֗/ם לָ/שׂ֞וּם עַל אֲבִימֶ֤לֶךְ אֲחִי/הֶם֙ אֲשֶׁ֣ר הָרַ֣ג אוֹתָ֔/ם וְ/עַל֙ בַּעֲלֵ֣י שְׁכֶ֔ם אֲשֶׁר חִזְּק֥וּ אֶת יָדָ֖י/ו לַ/הֲרֹ֥ג אֶת אֶחָֽי/ו׃",
+        "LXX": "τοῦ ἐπαγαγεῖν τὴν ἀδικίαν τῶν ἑβδομήκοντα υἱῶν Ἰεροβάαλ καὶ τὰ αἵματα αὐτῶν, τοῦ θεῖναι ἐπὶ Ἀβειμέλεχ τὸν ἀδελφὸν αὐτῶν ὃς ἀπέκτεινεν αὐτούς, καὶ ἐπὶ ἄνδρας Σικίμων, ὅτι ἐνίσχυσαν τὰς χεῖρας αὐτοῦ ἀποκτεῖναι τοὺς ἀδελφούς.",
+        "VUL": "et scelus interfectionis septuaginta filiorum Jerobaal, et effusionem sanguinis eorum conferre in Abimelech fratrem suum, et in ceteros Sichimorum principes, qui eum adjuverant.",
+        "SYN": "дабы таким образом совершилось мщение за семьдесят сынов Иеровааловых, и кровь их обратилась на Авимелеха, брата их, который убил их, и на жителей Сихемских, которые подкрепили руки его, чтоб убить братьев своих.",
+        "NEO": "afin que le crime commis sur les soixante-dix fils de Jérobaal fût vengé et que leur sang retombe sur Abimélek, leur frère, qui les avait tués, et sur les hommes de Sichem qui l’avaient aidé à tuer ses frères.",
+        "NAB": "This was to repay the violence done to the seventy sons of Jerubbaal and to avenge their blood upon their brother Abimelech, who killed them, and upon the citizens of Shechem, who encouraged him to kill his brothers.",
+        "VAT_ES": "Así debía ser castigado el crimen cometido contra los setenta hijos de Ierubaal, y su sangre debía recaer sobre su hermano Abimélec, que los había matado, y sobre los señores de Siquem, que habían sido cómplices en la matanza de sus hermanos.",
+        "CEI": "Questo avvenne perché la violenza fatta ai settanta figli di Ierub-Baal ricevesse il castigo e il loro sangue ricadesse su Abimèlech loro fratello, che li aveva uccisi, e sui signori di Sichem, che gli avevano dato mano per uccidere i suoi fratelli."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יָּשִׂ֣ימוּ ל/וֹ֩ בַעֲלֵ֨י שְׁכֶ֜ם מְאָרְבִ֗ים עַ֚ל רָאשֵׁ֣י הֶ/הָרִ֔ים וַ/יִּגְזְל֗וּ אֵ֛ת כָּל אֲשֶׁר יַעֲבֹ֥ר עֲלֵי/הֶ֖ם בַּ/דָּ֑רֶךְ וַ/יֻּגַּ֖ד לַ/אֲבִימֶֽלֶךְ׃",
+        "LXX": "καὶ ἔθηκαν αὐτῷ οἱ ἄνδρες Σικίμων ἐνεδρεύοντας ἐπὶ τὰς κεφαλὰς τῶν ὀρέων, καὶ διήρπαζον πάντα ὃς παρεπορεύετο ἐπ’ αὐτοὺς ἐν τῇ ὁδῷ· καὶ ἀπηγγέλη τῷ βασιλεῖ Ἀβειμέλεχ.",
+        "VUL": "Posueruntque insidias adversus eum in summitate montium : et dum illius præstolabantur adventum, exercebant latrocinia, agentes prædas de prætereuntibus : nuntiatumque est Abimelech.",
+        "SYN": "Жители Сихемские посадили против него в засаду людей на вершинах гор, которые грабили всякого проходящего мимо их по дороге. О сем донесено было Авимелеху.",
+        "NEO": "Les hommes de Sichem placèrent en embuscade contre lui, sur les sommets des montagnes, des gens qui dépouillaient tous ceux qui passaient près d’eux sur le chemin ; et cela fut rapporté à Abimélek.",
+        "NAB": "The citizens of Shechem then set men in ambush for him on the mountaintops, and these robbed all who passed them on the road. But it was reported to Abimelech.",
+        "VAT_ES": "Por eso, los señores de Siquem preparaban emboscadas contra él en las cimas de los montes, y saqueaban a todos los que pasaban por allí. Abimélec fue informado de todo esto.",
+        "CEI": "I signori di Sichem posero agguati contro di lui sulla cima dei monti, rapinando chiunque passasse vicino alla strada. Abimèlech fu informato della cosa."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֞א גַּ֤עַל בֶּן עֶ֨בֶד֙ וְ/אֶחָ֔י/ו וַ/יַּעַבְר֖וּ בִּ/שְׁכֶ֑ם וַ/יִּבְטְחוּ ב֖/וֹ בַּעֲלֵ֥י שְׁכֶֽם׃",
+        "LXX": "καὶ ἦλθεν Γάλααδ υἱὸς Ἰώβηλ καὶ οἱ ἀδελφοὶ αὐτοῦ καὶ παρῆλθον ἐν Σικίμοις, καὶ ἤλπισαν ἐν αὐτῷ οἱ ἄνδρες Σικίμων.",
+        "VUL": "Venit autem Gaal filius Obed cum fratribus suis, et transivit in Sichimam. Ad cujus adventum erecti habitatores Sichem,",
+        "SYN": "Пришел же и Гаал, сын Еведов, с братьями своими в Сихем, и ходили они по Сихему, и жители Сихемские положились на него.",
+        "NEO": "Gaal, fils d’Obed, vint avec ses frères, et ils passèrent à Sichem. Les hommes de Sichem prirent confiance en lui.",
+        "NAB": "Now Gaal, son of Ebed, came over to Shechem with his kinsmen. The citizens of Shechem put their trust in him,",
+        "VAT_ES": "Una vez, Gaal, hijo de Ebed, pasó por Siquem junto con sus hermanos, y se ganó la confianza de los señores de Siquem.",
+        "CEI": "Poi Gaal, figlio di Ebed, e i suoi fratelli vennero e si stabilirono a Sichem e i signori di Sichem riposero la fiducia in lui."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יֵּצְא֨וּ הַ/שָּׂדֶ֜ה וַֽ/יִּבְצְר֤וּ אֶת כַּרְמֵי/הֶם֙ וַֽ/יִּדְרְכ֔וּ וַֽ/יַּעֲשׂ֖וּ הִלּוּלִ֑ים וַ/יָּבֹ֨אוּ֙ בֵּ֣ית אֱֽלֹֽהֵי/הֶ֔ם וַ/יֹּֽאכְלוּ֙ וַ/יִּשְׁתּ֔וּ וַֽ/יְקַלְל֖וּ אֶת אֲבִימֶֽלֶךְ׃",
+        "LXX": "καὶ ἐξῆλθον εἰς ἀγρὸν καὶ ἐτρύγησαν τοὺς ἀμπελῶνας αὐτῶν καὶ ἐπάτησαν, καὶ ἐποίησαν ἑλλουλείμ, καὶ εἰσήνεγκαν εἰς οἶκον θεοῦ αὐτῶν καὶ ἔφαγον καὶ εἶπον καὶ κατηράσαντο τὸν Ἀβειμέλεχ.",
+        "VUL": "egressi sunt in agros, vastantes vineas, uvasque calcantes : et factis cantantium choris, ingressi sunt fanum dei sui, et inter epulas et pocula maledicebant Abimelech,",
+        "SYN": "И вышли в поле, и собирали виноград свой, и давили в точилах, и делали праздники, ходили в дом бога своего, и ели и пили, и проклинали Авимелеха.",
+        "NEO": "Ils sortirent dans la campagne, vendangèrent leurs vignes, foulèrent les raisins et firent une fête ; puis, étant entrés dans la maison de leur dieu, ils mangèrent et burent, et ils maudirent Abimélek.",
+        "NAB": "and went out into the fields, harvested their grapes and trod them out. Then they held a festival and went to the temple of their god, where they ate and drank and cursed Abimelech.",
+        "VAT_ES": "Estos salieron al campo a vendimiar, pisaron las uvas, hicieron festejos y entraron en el templo de su dios. Después de comer y beber, maldijeron a Abimélec.",
+        "CEI": "Usciti nella campagna, vendemmiarono le loro vigne, pigiarono l'uva e fecero festa. Poi entrarono nella casa del loro Dio, mangiarono, bevvero e maledissero Abimèlech."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר גַּ֣עַל בֶּן עֶ֗בֶד מִֽי אֲבִימֶ֤לֶךְ וּ/מִֽי שְׁכֶם֙ כִּ֣י נַעַבְדֶ֔/נּוּ הֲ/לֹ֥א בֶן יְרֻבַּ֖עַל וּ/זְבֻ֣ל פְּקִיד֑/וֹ עִבְד֗וּ אֶת אַנְשֵׁ֤י חֲמוֹר֙ אֲבִ֣י שְׁכֶ֔ם וּ/מַדּ֖וּעַ נַעַבְדֶ֥/נּוּ אֲנָֽחְנוּ׃",
+        "LXX": "καὶ εἶπεν Γάαδ υἱὸς Ἰώβηλ Τίς ἐστιν Ἀβειμέλεχ καὶ τίς ἐστιν υἱὸς Συχὲμ ὅτι δουλεύσομεν αὐτῷ; οὐχ υἱὸς Ἰεροβάαλ, καὶ Ζεβούλ, ἐπίσκοπος αὐτοῦ, δοῦλος αὐτοῦ σὺν τοῖς ἀνδράσιν Ἐμμὼρ πατρὸς Συχέμ; καὶ τί ὅτι δουλεύσομεν αὐτῷ ἡμεῖς;",
+        "VUL": "clamante Gaal filio Obed : Quis est Abimelech, et quæ est Sichem, ut serviamus ei ? numquid non est filius Jerobaal, et constituit principem Zebul servum suum super viros Emor patris Sichem ? cur ergo serviemus ei ?",
+        "SYN": "Гаал, сын Еведов, говорил: кто Авимелех и что Сихем, чтобы нам служить ему? Не сын ли он Иероваалов, и не Зевул ли главный начальник его? Служите лучше потомкам Еммора, отца Сихемова, а ему для чего нам служить?",
+        "NEO": "Et Gaal, fils d’Obed, dit : « Qui est Abimélek, et qui est Sichem, pour que nous le servions ? N’est-il pas fils de Jérobaal, et Zébul n’est-il pas son officier ? Servez les hommes d’Emor, père de Sichem ; mais nous, pourquoi servirions-nous Abimélek ?",
+        "NAB": "Gaal, son of Ebed, said, \"Who is Abimelech? And why should we of Shechem serve him? Were not the son of Jerubbaal and his lieutenant Zebul once subject to the men of Hamor, father of Shechem? Why should we serve him?",
+        "VAT_ES": "Entonces Gaal, hijo de Ebed, exclamó: «&iquest;Qué autoridad tiene Abimélec sobre Siquem que le estamos sometidos? &iquest;El hijo de Ierubaal, y de Zebul, su lugarteniente, no han estado sometidos a la gente de Jamor, el padre de Siquem? &iquest;Por qué tenemos que estar sometidos a ellos?",
+        "CEI": "Gaal, figlio di Ebed, disse: \"Chi è Abimèlech e che è Sichem, perché dobbiamo servirlo? Non dovrebbero piuttosto il figlio di Ierub-Baal e Zebul, suo luogotenente, servire gli uomini di Camor, capostipite di Sichem? Perché dovremmo servirlo noi?"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וּ/מִ֨י יִתֵּ֜ן אֶת הָ/עָ֤ם הַ/זֶּה֙ בְּ/יָדִ֔/י וְ/אָסִ֖ירָה אֶת אֲבִימֶ֑לֶךְ וַ/יֹּ֨אמֶר֙ לַ/אֲבִימֶ֔לֶךְ רַבֶּ֥ה צְבָאֲ/ךָ֖ וָ/צֵֽאָ/ה׃",
+        "LXX": "καὶ τίς δῴη τὸν λαὸν τοῦτον ἐν χειρί μου; καὶ μεταστήσω τὸν Ἀβειμέλεχ καὶ ἐρῶ πρὸς αὐτόν Πλήθυνον τὴν δύναμίν σου καὶ ἔξελθε.",
+        "VUL": "utinam daret aliquis populum istum sub manu mea, ut auferrem de medio Abimelech. Dictumque est Abimelech : Congrega exercitus multitudinem, et veni.",
+        "SYN": "Если бы кто дал народ сей в руки мои, я прогнал бы Авимелеха. И сказано было Авимелеху: умножь войско твое и выходи.",
+        "NEO": "Ah ! que ne suis-je le chef de ce peuple ! Je chasserais Abimélek. » Et il dit à Abimélek : « Renforce ton armée et sors ! »",
+        "NAB": "Would that this people were entrusted to my command! I would depose Abimelech. I would say to Abimelech, 'Get a larger army and come out!'\"",
+        "VAT_ES": "&iexcl;Si pusieran a este pueblo en mis manos, yo expulsaría a Abimélec, desafiándolo a que refuerce su ejército y salga a combatir!».",
+        "CEI": "Se avessi in mano questo popolo, io scaccerei Abimèlech e direi: Accresci pure il tuo esercito ed esci in campo\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֗ע זְבֻל֙ שַׂר הָ/עִ֔יר אֶת דִּבְרֵ֖י גַּ֣עַל בֶּן עָ֑בֶד וַ/יִּ֖חַר אַפּֽ/וֹ׃",
+        "LXX": "καὶ ἤκουσεν Ζεβοὺλ ἄρχων τῆς πόλεως τοὺς λόγους Γάλααδ υἱοῦ Ἰώβηλ, καὶ ὠργίσθη θυμῷ αὐτός.",
+        "VUL": "Zebul enim princeps civitatis, auditis sermonibus Gaal filii Obed, iratus est valde,",
+        "SYN": "Зевул, начальник города, услышал слова Гаала, сына Еведова, и воспылал гнев его.",
+        "NEO": "Zébul, gouverneur de la ville, apprit les propos de Gaal, fils d’Obed, et sa colère s’enflamma.",
+        "NAB": "At the news of what Gaal, son of Ebed, had said, Zebul, the ruler of the city, was angry",
+        "VAT_ES": "Zebul, el gobernador de la ciudad, al enterarse de las palabras de Gaal, hijo de Ebed, se enfureció",
+        "CEI": "Ora Zebul, governatore della città, udite le parole di Gaal, figlio di Ebed, si accese d'ira"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֧ח מַלְאָכִ֛ים אֶל אֲבִימֶ֖לֶךְ בְּ/תָרְמָ֣ה לֵ/אמֹ֑ר הִנֵּה֩ גַ֨עַל בֶּן עֶ֤בֶד וְ/אֶחָי/ו֙ בָּאִ֣ים שְׁכֶ֔מָ/ה וְ/הִנָּ֛/ם צָרִ֥ים אֶת הָ/עִ֖יר עָלֶֽי/ךָ׃",
+        "LXX": "καὶ ἀπέστειλεν ἀγγέλους πρὸς Ἀβειμέλεχ ἐν κρυφῇ λέγων Ἰδοὺ Γάλααδ υἱὸς Ἰώβηλ καὶ οἱ ἀδελφοὶ αὐτοῦ ἔρχονται εἰς Συχέμ, καὶ ἰδοὺ αὐτοὶ περικάθηνται τὴν πόλιν ἐπὶ σέ.",
+        "VUL": "et misit clam ad Abimelech nuntios, dicens : Ecce Gaal filius Obed venit in Sichimam cum fratribus suis, et oppugnat adversum te civitatem.",
+        "SYN": "Он хитрым образом отправляет послов к Авимелеху, чтобы сказать: вот, Гаал, сын Еведов, и братья его пришли в Сихем, и вот, они возмущают против тебя город;",
+        "NEO": "Il envoya secrètement des messagers à Abimélek, pour lui dire : « Voici que Gaal, fils d’Obed, est venu à Sichem avec ses frères, et voici qu’ils soulèvent la ville contre toi.",
+        "NAB": "and sent messengers to Abimelech in Arumah with the information: \"Gaal, son of Ebed, and his kinsmen have come to Shechem and are stirring up the city against you.",
+        "VAT_ES": "y envió disimuladamente mensajeros a Arumá, donde estaba Abimélec, para avisarle: «Gaal, hijo de Ebed, ha llegado a Siquem con sus hermanos, y está sublevando la ciudad contra ti.",
+        "CEI": "e mandò messaggeri ad Abimèlech in Aruma per dirgli: \"Ecco Gaal, figlio di Ebed, e i suoi fratelli sono venuti a Sichem e sollevano la città contro di te."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/עַתָּה֙ ק֣וּם לַ֔יְלָה אַתָּ֖ה וְ/הָ/עָ֣ם אֲשֶׁר אִתָּ֑/ךְ וֶ/אֱרֹ֖ב בַּ/שָּׂדֶֽה׃",
+        "LXX": "καὶ νῦν ἀναστὰς νυκτὸς σὺ καὶ ὁ λαὸς ὁ μετὰ σοῦ, καὶ ἐνέδρευσον ἐν τῷ ἀγρῷ·",
+        "VUL": "Surge itaque nocte cum populo qui tecum est, et latita in agro :",
+        "SYN": "итак, встань ночью, ты и народ, находящийся с тобою, и поставь засаду в поле;",
+        "NEO": "Lève-toi de nuit, toi et le peuple qui est avec toi, et mets-toi en embuscade dans la campagne.",
+        "NAB": "Now rouse yourself; set an ambush tonight in the fields, you and the men who are with you.",
+        "VAT_ES": "Por eso, ven durante la noche con toda la gente que tienes contigo y quédate al acecho en campo abierto.",
+        "CEI": "Alzati dunque di notte con la gente che hai con te e tendi un agguato nella campagna."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֤ה בַ/בֹּ֨קֶר֙ כִּ/זְרֹ֣חַ הַ/שֶּׁ֔מֶשׁ תַּשְׁכִּ֖ים וּ/פָשַׁטְתָּ֣ עַל הָ/עִ֑יר וְ/הִנֵּה ה֞וּא וְ/הָ/עָ֤ם אֲשֶׁר אִתּ/וֹ֙ יֹצְאִ֣ים אֵלֶ֔י/ךָ וְ/עָשִׂ֣יתָ לּ֔/וֹ כַּ/אֲשֶׁ֖ר תִּמְצָ֥א יָדֶֽ/ךָ׃",
+        "LXX": "καὶ ἔσται τὸ πρωὶ ἅμα τῷ ἀνατεῖλαι τὸν ἥλιον ὀρθριεῖς καὶ ἐκτενεῖς ἐπὶ τὴν πόλιν, καὶ ἰδοὺ αὐτὸς καὶ ὁ λαὸς ὁ μετ’ αὐτοῦ ἐκπορεύονται πρὸς σέ, καὶ ποιήσεις αὐτῷ ὅσα εὕρῃ ἡ χείρ σου.",
+        "VUL": "et primo mane, oriente sole, irrue super civitatem. Illo autem egrediente adversum te cum populo suo, fac ei quod potueris.",
+        "SYN": "поутру же, при восхождении солнца, встань рано и приступи к городу; и когда он и народ, который у него, выйдут к тебе, тогда делай с ними, что может рука твоя.",
+        "NEO": "Le matin, au lever du soleil, lève-toi et fonds sur la ville ; et lorsque Gaal et le peuple qui est avec lui sortiront contre toi, tu lui feras selon ce que l’occasion te permettra. »",
+        "NAB": "Promptly at sunrise tomorrow morning, make a raid on the city. When he and his followers come out against you, deal with him as best you can.\"",
+        "VAT_ES": "Por la mañana temprano, apenas brille el sol, irrumpirás contra la ciudad. Y cuando Gaal con su gente salga a enfrentarse contigo, lo tratarás como más convenga».",
+        "CEI": "Domattina, non appena spunterà il sole, ti alzerai e piomberai sulla città mentre lui con la sua gente ti uscirà contro: tu gli farai quel che troverai opportuno\"."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יָּ֧קָם אֲבִימֶ֛לֶךְ וְ/כָל הָ/עָ֥ם אֲשֶׁר עִמּ֖/וֹ לָ֑יְלָה וַ/יֶּאֶרְב֣וּ עַל שְׁכֶ֔ם אַרְבָּעָ֖ה רָאשִֽׁים׃",
+        "LXX": "καὶ ἀνέστη Ἀβειμέλεχ καὶ πᾶς ὁ λαὸς μετ’ αὐτοῦ νυκτός, καὶ ἐνήδρευσαν ἐπὶ Συχὲμ τέτρασιν ἀρχαῖς.",
+        "VUL": "Surrexit itaque Abimelech cum omni exercitu suo nocte, et tetendit insidias juxta Sichimam in quatuor locis.",
+        "SYN": "И встал ночью Авимелех и весь народ, находившийся с ним, и поставили в засаду у Сихема четыре отряда.",
+        "NEO": "Abimélek et tout le peuple qui était avec lui se levèrent de nuit, et ils se mirent en embuscade près de Sichem, divisés en quatre corps.",
+        "NAB": "During the night Abimelech advanced with all his soldiers and set up an ambush for Shechem in four companies.",
+        "VAT_ES": "Abimélec salió durante la noche con toda su gente y se puso al acecho cerca de Siquem, con su tropa dividida en cuatro grupos.",
+        "CEI": "Abimèlech e tutta la gente che era con lui si alzarono di notte e tesero un agguato contro Sichem, divisi in quattro schiere."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵא֙ גַּ֣עַל בֶּן עֶ֔בֶד וַ/יַּעֲמֹ֕ד פֶּ֖תַח שַׁ֣עַר הָ/עִ֑יר וַ/יָּ֧קָם אֲבִימֶ֛לֶךְ וְ/הָ/עָ֥ם אֲשֶׁר אִתּ֖/וֹ מִן הַ/מַּאְרָֽב׃",
+        "LXX": "καὶ ἐξῆλθεν Γάλααδ υἱὸς Ἰώβηλ καὶ ἔστη πρὸς τῇ θύρᾳ τῆς πύλης τῆς πόλεως, καὶ ἀνέστη Ἀβειμέλεχ καὶ ὁ λαὸς ὁ μετ’ αὐτοῦ ἀπὸ τοῦ ἐνέδρου.",
+        "VUL": "Egressusque est Gaal filius Obed, et stetit in introitu portæ civitatis. Surrexit autem Abimelech, et omnis exercitus cum eo, de insidiarum loco.",
+        "SYN": "[Поутру] Гаал, сын Еведов, вышел и стал у ворот городских; и встал Авимелех и народ, бывший с ним, из засады.",
+        "NEO": "Gaal, fils d’Obed, sortit, et il se plaça à l’entrée de la porte de la ville. Aussitôt Abimélek et tout le peuple qui était avec lui se levèrent de l’embuscade.",
+        "NAB": "Gaal, son of Ebed, went out and stood at the entrance of the city gate. When Abimelech and his soldiers rose from their place of ambush,",
+        "VAT_ES": "Cuando Gaal, hijo de Ebed, salió y se detuvo a las puertas de la ciudad, Abimélec y la tropa que lo acompañaba salieron de los lugares donde estaban al acecho.",
+        "CEI": "Gaal, figlio di Ebed, uscì e si fermò all'ingresso della porta della città; allora Abimèlech uscì dall'agguato con la gente che aveva."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יַּרְא גַּעַל֮ אֶת הָ/עָם֒ וַ/יֹּ֣אמֶר אֶל זְבֻ֔ל הִנֵּה עָ֣ם יוֹרֵ֔ד מֵ/רָאשֵׁ֖י הֶ/הָרִ֑ים וַ/יֹּ֤אמֶר אֵלָי/ו֙ זְבֻ֔ל אֵ֣ת צֵ֧ל הֶ/הָרִ֛ים אַתָּ֥ה רֹאֶ֖ה כָּ/אֲנָשִֽׁים׃",
+        "LXX": "καὶ εἶδεν Γάλααδ υἱὸς Ἰώβηλ τὸν λαόν, καὶ εἶπεν πρὸς Ζεβούλ Ἰδοὺ λαὸς καταβαίνει ἀπὸ κεφαλῶν τῶν ὀρέων· καὶ εἶπεν πρὸς αὐτὸν Ζεβούλ Τὴν σκιὰν τῶν ὀρέων σὺ βλέπεις ὡς ἄνδρας.",
+        "VUL": "Cumque vidisset populum Gaal, dixit ad Zebul : Ecce de montibus multitudo descendit. Cui ille respondit : Umbras montium vides quasi capita hominum, et hoc errore deciperis.",
+        "SYN": "Гаал, увидев народ, говорит Зевулу: вот, народ спускается с вершины гор. А Зевул сказал ему: тень гор тебе кажется людьми.",
+        "NEO": "En voyant le peuple, Gaal dit à Zébul : « Voici des gens qui descendent du sommet des montagnes. » Zébul lui répondit : « C’est l’ombre des montagnes que tu prends pour des hommes. »",
+        "NAB": "Gaal saw them and said to Zebul, \"There are men coming down from the hilltops!\" But Zebul answered him, \"You see the shadow of the hills as men.\"",
+        "VAT_ES": "Al ver las tropas, Gaal dijo a Zebul: «Mira esa gente que baja de la cima de los montes». «Es la sombra de los montes, y a ti te parecen hombres», le respondió Zebul.",
+        "CEI": "Gaal, vista quella gente, disse a Zebul: \"Ecco gente che scende dalle cime dei monti\". Zebul gli rispose: \"Tu vedi l'ombra dei monti e la prendi per uomini\"."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨סֶף ע֣וֹד גַּעַל֮ לְ/דַבֵּר֒ וַ/יֹּ֕אמֶר הִנֵּה עָם֙ יֽוֹרְדִ֔ים מֵ/עִ֖ם טַבּ֣וּר הָ/אָ֑רֶץ וְ/רֹאשׁ אֶחָ֣ד בָּ֔א מִ/דֶּ֖רֶךְ אֵל֥וֹן מְעוֹנְנִֽים׃",
+        "LXX": "καὶ προσέθετο ἔτι Γάλααδ τοῦ λαλῆσαι καὶ εἶπεν Ἰδοὺ λαὸς καταβαίνων κατὰ θάλασσαν ἀπὸ τοῦ ἐχόμενα ὀμφαλοῦ τῆς γῆς, καὶ ἀρχὴ ἑτέρα ἔρχεται διὰ ὁδοῦ Ἠλωνμαωνεμείν.",
+        "VUL": "Rursumque Gaal ait : Ecce populus de umbilico terræ descendit, et unus cuneus venit per viam quæ respicit quercum.",
+        "SYN": "Гаал опять говорил и сказал: вот, народ спускается с возвышенности, и один отряд идет от дуба Меонним.",
+        "NEO": "Gaal reprit la parole et dit : « Voici une troupe qui descend du milieu du pays, et un corps qui arrive par le chemin du chêne des devins. »",
+        "NAB": "But Gaal went on to say, \"Men are coming down from the region of Tabbur-Haares, and one company is coming by way of Elon-Meonenim.\"",
+        "VAT_ES": "Pero Gaal insistió: «Es gente que baja por la ladera del Ombligo de la Tierra, y otro grupo viene por el camino de la Encina de los Adivinos».",
+        "CEI": "Gaal riprese a parlare e disse: \"Ecco gente che scende dall'Ombelico della terra e una schiera che giunge per la via della Quercia dei Maghi\"."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֵלָ֜י/ו זְבֻ֗ל אַיֵּ֨ה אֵפ֥וֹא פִ֨י/ךָ֙ אֲשֶׁ֣ר תֹּאמַ֔ר מִ֥י אֲבִימֶ֖לֶךְ כִּ֣י נַעַבְדֶ֑/נּוּ הֲ/לֹ֨א זֶ֤ה הָ/עָם֙ אֲשֶׁ֣ר מָאַ֣סְתָּה בּ֔/וֹ צֵא נָ֥א עַתָּ֖ה וְ/הִלָּ֥חֶם בּֽ/וֹ׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτὸν Ζεβούλ Καὶ ποῦ ἐστιν τὸ στόμα σου ὡς ἐλάλησας Τίς ἐστιν Ἀβειμέλεχ ὅτι δουλεύσομεν αὐτῷ; μὴ οὐχὶ οὗτος ὁ λαὸς ὃν ἐξουδένωσας; ἔξελθε δὴ νῦν καὶ παράταξαι αὐτῷ.",
+        "VUL": "Cui dixit Zebul : Ubi est nunc os tuum, quo loquebaris : Quis est Abimelech ut serviamus ei ? nonne hic populus est, quem despiciebas ? egredere, et pugna contra eum.",
+        "SYN": "И сказал ему Зевул: где уста твои, которые говорили: \"кто Авимелех, чтобы мы стали служить ему?\" Это тот народ, который ты пренебрегал; выходи теперь и сразись с ним.",
+        "NEO": "Zébul lui répondit : « Où donc est ta bouche avec laquelle tu disais : Qui est Abimélek, pour que nous le servions ? N’est-ce pas là le peuple que tu méprisais ? Sors maintenant et livre-lui bataille ! »",
+        "NAB": "Zebul said to him, \"Where now is the boast you uttered, 'Who is Abimelech that we should serve him?' Are these not the men for whom you expressed contempt? Go out now and fight with them.\"",
+        "VAT_ES": "Entonces Zebul le dijo: «&iquest;No eras tú el que te envalentonabas, diciendo: «&iquest;Quién es Abimélec para que le estemos sometidos?». &iexcl;Ahí está la gente que tú despreciabas! &iexcl;Ve ahora a combatir contra ellos!».",
+        "CEI": "Allora Zebul gli disse: \"Dov'è ora la spavalderia di quando dicevi: Chi è Abimèlech, perché dobbiamo servirlo? Non è questo il popolo che disprezzavi? Ora esci in campo e combatti contro di lui!\"."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֣צֵא גַ֔עַל לִ/פְנֵ֖י בַּעֲלֵ֣י שְׁכֶ֑ם וַ/יִּלָּ֖חֶם בַּ/אֲבִימֶֽלֶךְ׃",
+        "LXX": "καὶ ἐξῆλθεν Γάλααδ ἐνώπιον ἀνδρῶν Συχὲμ καὶ παρετάξατο πρὸς Ἀβειμέλεχ.",
+        "VUL": "Abiit ergo Gaal, spectante Sichimorum populo, et pugnavit contra Abimelech,",
+        "SYN": "И пошел Гаал впереди жителей Сихемских и сразился с Авимелехом.",
+        "NEO": "Gaal fit une sortie, à la tête des hommes de Sichem, et livra bataille à Abimélek.",
+        "NAB": "So Gaal went out at the head of the citizens of Shechem and fought against Abimelech.",
+        "VAT_ES": "Gaal salió al frente de los señores de Siquem y presentó batalla a Abimélec.",
+        "CEI": "Allora Gaal uscì alla testa dei signori di Sichem e diede battaglia ad Abimèlech."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וַ/יִּרְדְּפֵ֣/הוּ אֲבִימֶ֔לֶךְ וַ/יָּ֖נָס מִ/פָּנָ֑י/ו וַֽ/יִּפְּל֛וּ חֲלָלִ֥ים רַבִּ֖ים עַד פֶּ֥תַח הַ/שָּֽׁעַר׃",
+        "LXX": "καὶ ἐδίωξεν αὐτὸν Ἀβειμέλεχ καὶ ἔφυγεν ἀπὸ προσώπου αὐτοῦ, καὶ ἔπεσαν τραυματίαι πολλοὶ ἕως τῆς θύρας τῆς πύλης.",
+        "VUL": "qui persecutus est eum fugientem, et in urbem compulit : cecideruntque ex parte ejus plurimi, usque ad portam civitatis.",
+        "SYN": "И погнался за ним Авимелех, и побежал он от него, и много пало убитых до самых ворот города.",
+        "NEO": "Abimélek le poursuivit, et Gaal s’enfuit devant lui, et beaucoup de ses hommes tombèrent morts jusqu’à l’entrée de la porte.",
+        "NAB": "But Abimelech routed him, and he fled before him; and many fell slain right up to the entrance of the gate.",
+        "VAT_ES": "Abimélec lo persiguió: Gaal emprendió la retirada y muchos cayeron muertos antes de llegar a la puerta de la ciudad.",
+        "CEI": "Ma Abimèlech lo inseguì ed egli fuggì dinanzi a lui e molti uomini caddero morti fino all'ingresso della porta."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֥שֶׁב אֲבִימֶ֖לֶךְ בָּ/ארוּמָ֑ה וַ/יְגָ֧רֶשׁ זְבֻ֛ל אֶת גַּ֥עַל וְ/אֶת אֶחָ֖י/ו מִ/שֶּׁ֥בֶת בִּ/שְׁכֶֽם׃",
+        "LXX": "καὶ εἰσῆλθεν Ἀβειμέλεχ ἐν Ἀρημά· καὶ ἐξέβαλεν Ζεβοὺλ τὸν Γάλααδ καὶ τοὺς ἀδελφοὺς αὐτοῦ μὴ οἰκεῖν ἐν Συχέμ.",
+        "VUL": "Et Abimelech sedit in Ruma : Zebul autem Gaal et socios ejus expulit de urbe, nec in ea passus est commorari.",
+        "SYN": "И остался Авимелех в Аруме, а Гаала и братьев его Зевул выгнал, чтоб они не жили в Сихеме.",
+        "NEO": "Abimélek s’arrêta à Ruma ; et Zébul chassa Gaal et ses frères, qui ne purent plus rester à Sichem.",
+        "NAB": "Abimelech returned to Arumah, but Zebul drove Gaal and his kinsmen from Shechem, which they had occupied.",
+        "VAT_ES": "Abimélec regresó a Arumá, y Zebul expulsó de Siquem a Gaal y a sus hermanos, impidiéndoles habitar allí.",
+        "CEI": "Abimèlech ritornò ad Aruma e Zebul cacciò Gaal e i suoi fratelli, che non poterono più rimanere a Sichem."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ מִֽ/מָּחֳרָ֔ת וַ/יֵּצֵ֥א הָ/עָ֖ם הַ/שָּׂדֶ֑ה וַ/יַּגִּ֖דוּ לַ/אֲבִימֶֽלֶךְ׃",
+        "LXX": "καὶ ἐγένετο τῇ ἐπαύριον καὶ ἐξῆλθεν ὁ λαὸς εἰς ἀγρὸν καὶ ἀνήγγειλεν τῷ Ἀβειμέλεχ.",
+        "VUL": "Sequenti ergo die, egressus est populus in campum. Quod cum nuntiatum esset Abimelech,",
+        "SYN": "На другой день вышел народ в поле, и донесли о сем Авимелеху.",
+        "NEO": "Le lendemain, le peuple sortit dans la campagne. Abimélek en ayant été informé,",
+        "NAB": "The next day, when the people were taking the field, it was reported to Abimelech,",
+        "VAT_ES": "Al día siguiente, la gente de Siquem se puso en campaña. Cuando Abimélec recibió la noticia,",
+        "CEI": "Il giorno dopo il popolo di Sichem uscì alla campagna e Abimèlech ne fu informato."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֣ח אֶת הָ/עָ֗ם וַֽ/יֶּחֱצֵ/ם֙ לִ/שְׁלֹשָׁ֣ה רָאשִׁ֔ים וַ/יֶּאֱרֹ֖ב בַּ/שָּׂדֶ֑ה וַ/יַּ֗רְא וְ/הִנֵּ֤ה הָ/עָם֙ יֹצֵ֣א מִן הָ/עִ֔יר וַ/יָּ֥קָם עֲלֵי/הֶ֖ם וַ/יַּכֵּֽ/ם׃",
+        "LXX": "καὶ ἔλαβεν τὸν λαὸν καὶ διεῖλεν αὐτοὺς εἰς τρεῖς ἀρχάς, καὶ ἐνήδρευσεν ἐν ἀγρῷ καὶ εἶδεν καὶ ἰδοὺ ὁ λαὸς ἐξῆλθεν ἐκ τῆς πόλεως, καὶ ἀνέστη ἐπ’ αὐτοὺς καὶ ἐπάταξεν αὐτούς.",
+        "VUL": "tulit exercitum suum, et divisit in tres turmas, tendens insidias in agris. Vidensque quod egrederetur populus de civitate, surrexit, et irruit in eos",
+        "SYN": "Он взял свой народ и разделил его на три отряда и поставил в засаду в поле. И увидев, что народ вышел из города, восстал на них и побил их.",
+        "NEO": "prit sa troupe, la partagea en trois corps, et se mit en embuscade dans la campagne. Dès qu’il aperçut le peuple sortant de la ville, il se leva contre eux et les battit.",
+        "NAB": "who divided the men he had into three companies, and set up an ambush in the fields. He watched till he saw the people leave the city, and then rose against them for the attack.",
+        "VAT_ES": "reunió sus tropas, las dividió en tres grupos y se puso al acecho en el campo. Al ver que la gente salía de la ciudad, irrumpió contra ellos y los derrotó.",
+        "CEI": "Egli prese la sua gente, la divise in tre schiere e tese un agguato nella campagna: quando vide che il popolo usciva dalla città, si mosse contro di essi e li battè."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וַ/אֲבִימֶ֗לֶךְ וְ/הָ/רָאשִׁים֙ אֲשֶׁ֣ר עִמּ֔/וֹ פָּשְׁט֕וּ וַ/יַּ֣עַמְד֔וּ פֶּ֖תַח שַׁ֣עַר הָ/עִ֑יר וּ/שְׁנֵ֣י הָֽ/רָאשִׁ֗ים פָּֽשְׁט֛וּ עַֽל כָּל אֲשֶׁ֥ר בַּ/שָּׂדֶ֖ה וַ/יַּכּֽוּ/ם׃",
+        "LXX": "καὶ Ἀβειμέλεχ καὶ οἱ ἀρχηγοὶ οἱ μετ’ αὐτοῦ ἐξέτειναν καὶ ἔστησαν παρὰ τὴν θύραν τῆς πύλης τῆς πόλεως, καὶ αἱ δύο ἀρχαὶ ἐξέτειναν ἐπὶ πάντας τοὺς ἐν τῷ ἀγρῷ καὶ ἐπάταξαν αὐτούς.",
+        "VUL": "cum cuneo suo, oppugnans et obsidens civitatem : duæ autem turmæ palantes per campum adversarios persequebantur.",
+        "SYN": "Между тем как Авимелех и отряды, бывшие с ним, приступили и стали у ворот городских, другие два отряда напали на всех, бывших в поле, и убивали их.",
+        "NEO": "Abimélek et les corps qui étaient avec lui se jetèrent en avant et se placèrent à l’entrée de la porte de la ville ; deux de ces corps se jetèrent sur tous ceux qui étaient dans la campagne et les battirent.",
+        "NAB": "Abimelech and the company with him dashed in and stood by the entrance of the city gate, while the other two companies rushed upon all who were in the field and attacked them.",
+        "VAT_ES": "Después, Abimélec y el grupo que lo acompañaba volvieron a atacar, y tomaron posiciones frente a la puerta de la ciudad. Mientras tanto, los otros dos grupos se lanzaron contra los que estaban en el campo y los derrotaron.",
+        "CEI": "Abimèlech e la sua gente fecero irruzione e si fermarono all'ingresso della porta della città, mentre le altre due schiere si gettarono su quelli che erano nella campagna e li colpirono."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וַ/אֲבִימֶ֜לֶךְ נִלְחָ֣ם בָּ/עִ֗יר כֹּ֚ל הַ/יּ֣וֹם הַ/ה֔וּא וַ/יִּלְכֹּד֙ אֶת הָ/עִ֔יר וְ/אֶת הָ/עָ֥ם אֲשֶׁר בָּ֖/הּ הָרָ֑ג וַ/יִּתֹּץ֙ אֶת הָ/עִ֔יר וַ/יִּזְרָעֶ֖/הָ מֶֽלַח׃",
+        "LXX": "καὶ Ἀβειμέλεχ παρετάσσετο ἐν τῇ πόλει ὅλην τὴν ἡμέραν ἐκείνην, καὶ κατελάβετο τὴν πόλιν καὶ τὸν λαὸν τὸν ἐν αὐτῇ ἀπέκτεινεν, καὶ καθεῖλεν τὴν πόλιν καὶ ἔσπειρεν εἰς ἅλας.",
+        "VUL": "Porro Abimelech omni die illo oppugnabat urbem : quam cepit, interfectis habitatoribus ejus, ipsaque destructa, ita ut sal in ea dispergeret.",
+        "SYN": "И сражался Авимелех с городом весь тот день, и взял город, и побил народ, бывший в нем, и разрушил город и засеял его солью.",
+        "NEO": "Et Abimélek donna l’assaut à la ville pendant toute la journée ; il s’en empara et tua le peuple qui s’y trouvait ; puis il rasa la ville et y sema du sel.",
+        "NAB": "That entire day Abimelech fought against the city, and captured it. He then killed its inhabitants and demolished the city, sowing the site with salt.",
+        "VAT_ES": "Abimélec atacó la ciudad durante todo el día. Cuando la tomó, mató a la población, arrasó la ciudad y esparció sal sobre ella.",
+        "CEI": "Abimèlech combattè contro la città tutto quel giorno, la prese e uccise il popolo che vi si trovava; poi distrusse la città e la cosparse di sale."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "וַֽ/יִּשְׁמְע֔וּ כָּֽל בַּעֲלֵ֖י מִֽגְדַּל שְׁכֶ֑ם וַ/יָּבֹ֣אוּ אֶל צְרִ֔יחַ בֵּ֖ית אֵ֥ל בְּרִֽית׃",
+        "LXX": "καὶ ἤκουσαν πάντες οἱ ἄνδρες πύργων Συχέμ, καὶ ἦλθον εἰς συνέλευσιν Βαιθηρβερίθ.",
+        "VUL": "Quod cum audissent qui habitabant in turre Sichimorum, ingressi sunt fanum dei sui Berith, ubi fdus cum eo pepigerant, et ex eo locus nomen acceperat : qui erat munitus valde.",
+        "SYN": "Услышав об этом, все бывшие в башне Сихемской ушли в башню капища _Ваал-Верифа._",
+        "NEO": "A cette nouvelle, tous les hommes de la tour de Sichem se rendirent dans la forteresse de la maison du dieu Berith.",
+        "NAB": "When they heard of this, all the citizens of Migdal-shechem went into the crypt of the temple of El-berith.",
+        "VAT_ES": "Al enterarse, los señores de Migdal Siquem, se refugiaron en la cripta del templo de El Berit.",
+        "CEI": "Tutti i signori della torre di Sichem, all'udir questo, entrarono nel sotterraneo del tempio di El-Berit."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "וַ/יֻּגַּ֖ד לַ/אֲבִימֶ֑לֶךְ כִּ֣י הִֽתְקַבְּצ֔וּ כָּֽל בַּעֲלֵ֖י מִֽגְדַּל שְׁכֶֽם׃",
+        "LXX": "καὶ ἀνηγγέλη τῷ Ἀβειμέλεχ ὅτι συνήχθησαν πάντες οἱ ἄνδρες πύργων Συχέμ.",
+        "VUL": "Abimelech quoque audiens viros turris Sichimorum pariter conglobatos,",
+        "SYN": "Авимелеху донесено, что собрались _туда_ все бывшие в башне Сихемской.",
+        "NEO": "Dès qu’on eut annoncé à Abimélek que tous les habitants de la tour de Sichem s’y étaient rassemblés,",
+        "NAB": "It was reported to Abimelech that all the citizens of Migdal-shechem were gathered together.",
+        "VAT_ES": "Cuando Abimélec recibió la noticia de que todos los señores de Migdal Siquem estaban en un solo lugar,",
+        "CEI": "Fu riferito ad Abimèlech che tutti i signori della torre di Sichem si erano adunati."
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַל אֲבִימֶ֜לֶךְ הַר צַלְמ֗וֹן הוּא֮ וְ/כָל הָ/עָ֣ם אֲשֶׁר אִתּ/וֹ֒ וַ/יִּקַּח֩ אֲבִימֶ֨לֶךְ אֶת הַ/קַּרְדֻּמּ֜וֹת בְּ/יָד֗/וֹ וַ/יִּכְרֹת֙ שׂוֹכַ֣ת עֵצִ֔ים וַ/יִּ֨שָּׂאֶ֔/הָ וַ/יָּ֖שֶׂם עַל שִׁכְמ֑/וֹ וַ/יֹּ֜אמֶר אֶל הָ/עָ֣ם אֲשֶׁר עִמּ֗/וֹ מָ֤ה רְאִיתֶם֙ עָשִׂ֔יתִי מַהֲר֖וּ עֲשׂ֥וּ כָמֽוֹ/נִי׃",
+        "LXX": "καὶ ἀνέβη Ἀβειμέλεχ εἰς ὄρος Ἐρμών, καὶ πᾶς ὁ λαὸς ὁ μετ’ αὐτοῦ· καὶ ἔλαβεν Ἀβειμέλεχ τὰς ἀξίνας ἐν τῇ χειρὶ αὐτοῦ, καὶ ἔκοψεν κλάδον ξύλου καὶ ἦρεν καὶ ἔθηκεν ἐπ’ ὤμων αὐτοῦ, καὶ εἶπεν τῷ λαῷ τῷ μετ’ αὐτοῦ Ὃ εἴδετέ με ποιοῦντα, ταχέως ποιήσατε ὡς ἐγώ.",
+        "VUL": "ascendit in montem Selmon cum omni populo suo : et arrepta securi, præcidit arboris ramum, impositumque ferens humero, dixit ad socios : Quod me videtis facere, cito facite.",
+        "SYN": "И пошел Авимелех на гору Селмон, сам и весь народ, бывший с ним, и взял Авимелех топоры с собою и нарубил сучьев древесных, и положил на плечи свои, и сказал народу, бывшему с ним: вы видели, что я делал; скорее делайте и вы то же, что я.",
+        "NEO": "Abimélek monta sur le mont Selmon, lui et tout le peuple qui était avec lui. Abimélek prit en main une hache, coupa une branche d’arbre, la souleva et la mit sur son épaule. Il dit au peuple qui était avec lui : « Ce que vous m’avez vu faire, hâtez-vous de le faire comme moi. »",
+        "NAB": "So he went up Mount Zalmon with all his soldiers, took his axe in his hand, and cut down some brushwood. This he lifted to his shoulder, then said to the men with him, \"Hurry! Do just as you have seen me do.\"",
+        "VAT_ES": "subió al monte Salmón con todas sus tropas; y tomando un hacha, cortó una rama de árbol, se la puso al hombre, y dijo a las tropas que lo acompañaban: «&iexcl;Apúrense! Hagan lo mismo que yo».",
+        "CEI": "Allora Abimèlech salì sul monte Zalmon con tutta la gente che aveva con sé; prese in mano la scure, tagliò un ramo d'albero, lo sollevò e se lo mise in spalla; poi disse alla sua gente: \"Quello che mi avete visto fare, fatelo presto anche voi!\"."
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "וַ/יִּכְרְת֨וּ גַם כָּל הָ/עָ֜ם אִ֣ישׁ שׂוֹכֹ֗/ה וַ/יֵּ֨לְכ֜וּ אַחֲרֵ֤י אֲבִימֶ֨לֶךְ֙ וַ/יָּשִׂ֣ימוּ עַֽל הַ/צְּרִ֔יחַ וַ/יַּצִּ֧יתוּ עֲלֵי/הֶ֛ם אֶֽת הַ/צְּרִ֖יחַ בָּ/אֵ֑שׁ וַ/יָּמֻ֜תוּ גַּ֣ם כָּל אַנְשֵׁ֧י מִֽגְדַּל שְׁכֶ֛ם כְּ/אֶ֖לֶף אִ֥ישׁ וְ/אִשָּֽׁה׃",
+        "LXX": "καὶ ἔκοψαν καί γε ἀνὴρ κλάδον πᾶς ἀνὴρ καὶ ἐπορεύθησαν ὀπίσω Ἀβειμέλεχ, καὶ ἐπέθηκαν ἐπὶ τὴν συνέλευσιν, καὶ ἐνεπύρισαν ἐπ’ αὐτοὺς τὴν συνέλευσιν ἐν πυρί· καὶ ἀπέθανον καί γε πάντες οἱ ἄνδρες πύργου Σικίμων ὡς χίλιοι ἄνδρες καὶ γυναῖκες.",
+        "VUL": "Igitur certatim ramos de arboribus præcidentes, sequebantur ducem. Qui circumdantes præsidium, succenderunt : atque ita factum est, ut fumo et igne mille homines necarentur, viri pariter et mulieres, habitatorum turris Sichem.",
+        "SYN": "И нарубил каждый из всего народа сучьев, и пошли за Авимелехом, и положили к башне, и сожгли посредством их башню огнем, и умерли все бывшие в башне Сихемской, около тысячи мужчин и женщин.",
+        "NEO": "Et tous les gens aussi coupèrent chacun une branche et suivirent Abimélek ; ils placèrent les branches contre la forteresse, et ils la livrèrent au feu avec ceux qu’elle renfermait. Et tous les gens de la tour de Sichem périrent aussi, mille environ, hommes et femmes.",
+        "NAB": "So all the men likewise cut down brushwood, and following Abimelech, placed it against the crypt. Then they set the crypt on fire over their heads, so that every one of the citizens of Migdal-shechem, about a thousand men and women, perished.",
+        "VAT_ES": "Cada uno de sus hombres cortó una rama y todos fueron detrás de Abimélec. Después cubrieron la cripta con las ramas y les prendieron fuego. Así murieron también los habitantes de Migdal Siquem, unos mil hombres y mujeres.",
+        "CEI": "Tutti tagliarono ciascuno un ramo e seguirono Abimèlech; posero i rami contro il sotterraneo e bruciarono tra le fiamme la sala con quelli che vi erano dentro. Così perì tutta la gente della torre di Sichem, circa mille persone, fra uomini e donne."
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֥לֶךְ אֲבִימֶ֖לֶךְ אֶל תֵּבֵ֑ץ וַ/יִּ֥חַן בְּ/תֵבֵ֖ץ וַֽ/יִּלְכְּדָֽ/הּ׃",
+        "LXX": "Καὶ ἐπορεύθη Ἀβειμέλεχ ἐκ Βαιθηρβερὶθ καὶ παρενέβαλεν ἐν Θηβής, καὶ κατέλαβεν αὐτήν.",
+        "VUL": "Abimelech autem inde proficiscens venit ad oppidum Thebes, quod circumdans obsidebat exercitu.",
+        "SYN": "Потом пошел Авимелех в Тевец и осадил Тевец и взял его.",
+        "NEO": "De là, Abimélek marcha contre Thébés ; il assiégea Thébés et s’en empara.",
+        "NAB": "Abimelech proceeded to Thebez, which he invested and captured.",
+        "VAT_ES": "Luego Abimélec marchó contra Tebes, la asedió y la conquistó.",
+        "CEI": "Poi Abimèlech andò a Tebes, la cinse d'assedio e la prese."
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "WLC": "וּ/מִגְדַּל עֹז֮ הָיָ֣ה בְ/תוֹךְ הָ/עִיר֒ וַ/יָּנֻ֨סוּ שָׁ֜מָּ/ה כָּל הָ/אֲנָשִׁ֣ים וְ/הַ/נָּשִׁ֗ים וְ/כֹל֙ בַּעֲלֵ֣י הָ/עִ֔יר וַֽ/יִּסְגְּר֖וּ בַּעֲדָ֑/ם וַֽ/יַּעֲל֖וּ עַל גַּ֥ג הַ/מִּגְדָּֽל׃",
+        "LXX": "καὶ πύργος ἰσχυρὸς ἦν ἐν μέσῳ τῆς πόλεως, καὶ ἔφυγον ἐκεῖ πάντες οἱ ἄνδρες καὶ αἱ γυναῖκες τῆς πόλεως, καὶ ἔκλεισαν ἔξωθεν αὐτῶν καὶ ἀνέβησαν ἐπὶ τὸ δῶμα τοῦ πύργου.",
+        "VUL": "Erat autem turris excelsa in media civitate, ad quam confugerant simul viri ac mulieres, et omnes principes civitatis, clausa firmissime janua, et super turris tectum stantes per propugnacula.",
+        "SYN": "Среди города была крепкая башня, и убежали туда все мужчины и женщины и все жители города, и заперлись и взошли на кровлю башни.",
+        "NEO": "Il y avait au milieu de la ville une forte tour où se réfugièrent tous les habitants de la ville, hommes et femmes ; ayant fermé la porte sur eux, ils montèrent sur le toit de la tour.",
+        "NAB": "Now there was a strong tower in the middle of the city, and all the men and women, in a word all the citizens of the city, fled there, shutting themselves in and going up to the roof of the tower.",
+        "VAT_ES": "En medio de la ciudad había una torre fortificada, y todos los habitantes de la ciudad, hombres y mujeres, se refugiaron en ella. La cerraron por dentro y se subieron a la parte más alta de la torre.",
+        "CEI": "In mezzo alla città c'era una torre fortificata, dove si rifugiarono tutti i signori della città, uomini e donne; vi si rinchiusero dentro e salirono sul terrazzo della torre."
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֤א אֲבִימֶ֨לֶךְ֙ עַד הַ/מִּגְדָּ֔ל וַ/יִּלָּ֖חֶם בּ֑/וֹ וַ/יִּגַּ֛שׁ עַד פֶּ֥תַח הַ/מִּגְדָּ֖ל לְ/שָׂרְפ֥/וֹ בָ/אֵֽשׁ׃",
+        "LXX": "καὶ ἦλθεν Ἀβειμέλεχ ἕως τοῦ πύργου, καὶ παρετάξαντο αὐτῷ· καὶ ἤγγισεν Ἀβειμέλεχ ἕως τῆς θύρας τοῦ πύργου τοῦ ἐμπρῆσαι αὐτὸν ἐν πυρί.",
+        "VUL": "Accedensque Abimelech juxta turrim, pugnabat fortiter : et appropinquans ostio, ignem supponere nitebatur :",
+        "SYN": "Авимелех пришел к башне и окружил ее и подошел к дверям башни, чтобы сжечь ее огнем.",
+        "NEO": "Abimélek vint jusqu’à la tour ; il l’attaqua et s’approcha de la porte de la tour pour y mettre le feu.",
+        "NAB": "Abimelech came up to the tower and fought against it, advancing to the very entrance of the tower to set it on fire.",
+        "VAT_ES": "Abimélec se adelantó para atacar la torre y llego hasta la puerta con la intención de prenderle fuego.",
+        "CEI": "Abimèlech, giunto alla torre, l'attaccò e si accostò alla porta della torre per appiccarvi il fuoco."
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "WLC": "וַ/תַּשְׁלֵ֞ךְ אִשָּׁ֥ה אַחַ֛ת פֶּ֥לַח רֶ֖כֶב עַל רֹ֣אשׁ אֲבִימֶ֑לֶךְ וַ/תָּ֖רִץ אֶת גֻּלְגָּלְתּֽ/וֹ׃",
+        "LXX": "καὶ ἔρριψεν γυνὴ μία κλάσμα ἐπιμυλίου ἐπὶ κεφαλὴν Ἀβειμέλεχ, καὶ ἔκλασεν τὸ κρανίον αὐτοῦ.",
+        "VUL": "et ecce una mulier fragmen molæ desuper jaciens, illisit capiti Abimelech, et confregit cerebrum ejus.",
+        "SYN": "Тогда одна женщина бросила обломок жернова на голову Авимелеху и проломила ему череп.",
+        "NEO": "Alors une femme lança sur la tête d’Abimélek un morceau de meule de moulin et lui brisa le crâne.",
+        "NAB": "But a certain woman cast the upper part of a millstone down on Abimelech's head, and it fractured his skull.",
+        "VAT_ES": "Pero una mujer le arrojó una rueda de molino sobre la cabeza y le partió el cráneo.",
+        "CEI": "Ma una donna gettò giù il pezzo superiore di una macina sulla testa di Abimèlech e gli spaccò il cranio."
+      }
+    },
+    "54": {
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֨א מְהֵרָ֜ה אֶל הַ/נַּ֣עַר נֹשֵׂ֣א כֵלָ֗י/ו וַ/יֹּ֤אמֶר ל/וֹ֙ שְׁלֹ֤ף חַרְבְּ/ךָ֙ וּ/מ֣וֹתְתֵ֔/נִי פֶּן יֹ֥אמְרוּ לִ֖/י אִשָּׁ֣ה הֲרָגָ֑תְ/הוּ וַ/יִּדְקְרֵ֥/הוּ נַעֲר֖/וֹ וַ/יָּמֹֽת׃",
+        "LXX": "καὶ ἐβόησεν ταχὺ πρὸς τὸ παιδάριον τὸ αἶρον τὰ σκεύη αὐτοῦ καὶ εἶπεν αὐτῷ Σπάσον τὴν ῥομφαίαν μου καὶ θανάτωσόν με, μή ποτε εἴπωσιν Γυνὴ ἀπέκτεινεν αὐτόν. καὶ ἐξεκέντησεν αὐτὸν τὸ παιδάριον αὐτοῦ, καὶ ἀπέθανεν.",
+        "VUL": "Qui vocavit cito armigerum suum, et ait ad eum : Evagina gladium tuum, et percute me, ne forte dicatur quod a femina interfectus sim. Qui jussa perficiens, interfecit eum.",
+        "SYN": "[Авимелех] тотчас призвал отрока, оруженосца своего, и сказал ему: обнажи меч твой и умертви меня, чтобы не сказали обо мне: женщина убила его. И пронзил его отрок его, и он умер.",
+        "NEO": "Il appela aussitôt le jeune homme qui portait ses armes, et lui dit : « Tire ton épée et donne-moi la mort, afin qu’on ne dise pas de moi : C’est une femme qui l’a tué. » Le jeune homme le transperça, et il mourut.",
+        "NAB": "He immediately called his armor-bearer and said to him, \"Draw your sword and dispatch me, lest they say of me that a woman killed me.\" So his attendant ran him through and he died.",
+        "VAT_ES": "El llamó en seguida a su escudero y le dijo: «Desenvaina tu espada y mátame, para que no se pueda decir que me mató una mujer». Entonces el escudero lo atravesó con su espada y el murió.",
+        "CEI": "Egli chiamò in fretta il giovane che gli portava le armi e gli disse: \"Tira fuori la spada e uccidimi, perché non si dica di me: L'ha ucciso una donna!\". Il giovane lo trafisse ed egli morì."
+      }
+    },
+    "55": {
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "WLC": "וַ/יִּרְא֥וּ אִֽישׁ יִשְׂרָאֵ֖ל כִּ֣י מֵ֣ת אֲבִימֶ֑לֶךְ וַ/יֵּלְכ֖וּ אִ֥ישׁ לִ/מְקֹמֽ/וֹ׃",
+        "LXX": "καὶ εἶδεν ἀνὴρ Ἰσραὴλ ὅτι ἀπέθανεν Ἀβειμέλεχ· καὶ ἐπορεύθησαν ἀνὴρ εἰς τὸν τόπον αὐτοῦ.",
+        "VUL": "Illoque mortuo, omnes qui cum eo erant de Israël, reversi sunt in sedes suas :",
+        "SYN": "Израильтяне, видя, что умер Авимелех, пошли каждый в свое место.",
+        "NEO": "Quand les hommes d’Israël virent qu’Abimélek était mort, ils s’en allèrent chacun dans sa maison.",
+        "NAB": "When the Israelites saw that Abimelech was dead, they all left for their homes.",
+        "VAT_ES": "Al ver que Abimélec estaba muerto, los hombres de Israel regresaron cada uno a su lugar.",
+        "CEI": "Quando gli Israeliti videro che Abimèlech era morto, se ne andarono ciascuno a casa sua."
+      }
+    },
+    "56": {
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣שֶׁב אֱלֹהִ֔ים אֵ֖ת רָעַ֣ת אֲבִימֶ֑לֶךְ אֲשֶׁ֤ר עָשָׂה֙ לְ/אָבִ֔י/ו לַ/הֲרֹ֖ג אֶת שִׁבְעִ֥ים אֶחָֽי/ו׃",
+        "LXX": "καὶ ἐπέστρεψεν ὁ θεὸς τὴν πονηρίαν Ἀβειμέλεχ, ἣν ἐποίησεν τῷ πατρὶ αὐτοῦ ἀποκτεῖναι τοὺς ἑβδομήκοντα ἀδελφοὺς αὐτοῦ.",
+        "VUL": "et reddidit Deus malum quod fecerat Abimelech contra patrem suum, interfectis septuaginta fratribus suis.",
+        "SYN": "Так воздал Бог Авимелеху за злодеяние, которое он сделал отцу своему, убив семьдесят братьев своих.",
+        "NEO": "Ainsi Dieu fit retomber sur Abimélek le mal qu’il avait fait à son père, en tuant ses soixante-dix frères ;",
+        "NAB": "Thus did God requite the evil Abimelech had done to his father in killing his seventy brothers.",
+        "VAT_ES": "Dios hizo recaer sobre Abimélec el crimen que había cometido contra su padre, cuando mató a sus setenta hermanos.",
+        "CEI": "Così Dio fece ricadere sopra Abimèlech il male che egli aveva fatto contro suo padre, uccidendo settanta suoi fratelli."
+      }
+    },
+    "57": {
+      "seq": 57,
+      "v_in": {
+        "MT": 57,
+        "VUL": 57,
+        "LXX": 57
+      },
+      "text": {
+        "WLC": "וְ/אֵ֗ת כָּל רָעַת֙ אַנְשֵׁ֣י שְׁכֶ֔ם הֵשִׁ֥יב אֱלֹהִ֖ים בְּ/רֹאשָׁ֑/ם וַ/תָּבֹ֣א אֲלֵי/הֶ֔ם קִֽלֲלַ֖ת יוֹתָ֥ם בֶּן יְרֻבָּֽעַל׃",
+        "LXX": "καὶ τὴν πᾶσαν πονηρίαν ἀνδρῶν Συχὲμ ἐπέστρεψεν ὁ θεὸς εἰς κεφαλὴν αὐτῶν· καὶ ἐπῆλθεν ἐπ’ αὐτοὺς ἡ κατάρα Ἰωαθὰν υἱοῦ Ἰεροβάαλ.",
+        "VUL": "Sichimitis quoque quod operati erant, retributum est, et venit super eos maledictio Joatham filii Jerobaal.",
+        "SYN": "И все злодеяния жителей Сихемских обратил Бог на голову их; и постигло их проклятие Иофама, сына Иероваалова.",
+        "NEO": "et Dieu fit retomber sur la tête des gens de Sichem toute leur méchanceté. Ainsi s’accomplit sur eux la malédiction de Joatham, fils de Jérobaal.",
+        "NAB": "God also brought all their wickedness home to the Shechemites, for the curse of Jotham, son of Jerubbaal, overtook them.",
+        "VAT_ES": "Y también hizo que toda la maldad de la gente de Siquem recayera sobre ellos mismos. Así se cumplió la maldición que Jotam, hijo de Ierubaal, había pronunciado contra ellos.",
+        "CEI": "Dio fece anche ricadere sul capo della gente di Sichem tutto il male che essa aveva fatto; così si avverò su di loro la maledizione di Iotam, figlio di Ierub-Baal."
+      }
+    }
+  }
+}

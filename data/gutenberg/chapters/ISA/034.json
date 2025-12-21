@@ -1,0 +1,319 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_034",
+  "book_key": "ISA",
+  "sequence": 34,
+  "chapter_in": {
+    "MT": 34,
+    "VUL": 34,
+    "LXX": 34
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "קִרְב֤וּ גוֹיִם֙ לִ/שְׁמֹ֔עַ וּ/לְאֻמִּ֖ים הַקְשִׁ֑יבוּ תִּשְׁמַ֤ע הָ/אָ֨רֶץ֙ וּ/מְלֹאָ֔/הּ תֵּבֵ֖ל וְ/כָל צֶאֱצָאֶֽי/הָ׃",
+        "LXX": "Προσαγάγετε, ἔθνη, καὶ ἀκούσατε, ἄρχοντες· ἀκουσάτω ἡ γῆ καὶ οἱ ἐν αὐτῇ, ἡ οἰκουμένη καὶ ὁ λαὸς ὁ ἐν αὐτῇ.",
+        "VUL": "[Accedite, gentes, et audite ;/ et populi, attendite :/ audiat terra, et plenitudo ejus ;/ orbis, et omne germen ejus./",
+        "SYN": "Приступите, народы, слушайте и внимайте, племена! да слышит земля и все, что наполняет ее, вселенная и все рождающееся в ней!",
+        "NEO": "Approchez, nations, pour entendre ; peuples, soyez attentifs ! Que la terre entende, elle et ce qu’elle renferme, le monde et tout ce qu’il produit.",
+        "NAB": "Come near, O nations, and hear; be attentive, O peoples! Let the earth and what fills it listen, the world and all it produces.",
+        "VAT_ES": "&iexcl;Acérquense, naciones, para oír; pueblos, presten atención! &iexcl;Escuche la tierra y todo lo que hay en ella, el mundo y todo lo que él produce!",
+        "CEI": "Avvicinatevi, popoli, per udire, e voi, nazioni, prestate ascolto; ascolti la terra e quanti vi abitano, il mondo e quanto produce!"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כִּ֣י קֶ֤צֶף לַֽ/יהוָה֙ עַל כָּל הַ/גּוֹיִ֔ם וְ/חֵמָ֖ה עַל כָּל צְבָאָ֑/ם הֶחֱרִימָ֖/ם נְתָנָ֥/ם לַ/טָּֽבַח׃",
+        "LXX": "διότι θυμὸς Κυρίου ἐπὶ πάντα τὰ ἔθνη καὶ ὀργὴ ἐπὶ τὸν ἀριθμὸν αὐτῶν, τοῦ ἀπολέσαι αὐτοὺς καὶ παραδοῦναι αὐτοὺς εἰς σφαγήν.",
+        "VUL": "Quia indignatio Domini super omnes gentes,/ et furor super universam militiam eorum :/ interfecit eos, et dedit eos in occisionem./",
+        "SYN": "Ибо гнев Господа на все народы, и ярость Его на все воинство их. Он предал их заклятию, отдал их на заклание.",
+        "NEO": "Car \\+w Yahweh|strong=\"H3068\"\\+w** est courroucé contre toutes les nations, et en fureur contre toute leur armée ; il les a vouées, livrées au carnage.",
+        "NAB": "The LORD is angry with all the nations and is wrathful against all their host; he has doomed them and given them over to slaughter.",
+        "VAT_ES": "Porque el Señor está irritado contra todas las naciones y enfurecido contra todos sus ejércitos: los ha consagrado al exterminio, los ha destinado a la matanza.",
+        "CEI": "Poiché il Signore è adirato contro tutti i popoli ed è sdegnato contro tutti i loro eserciti; li ha votati allo sterminio, li ha destinati al massacro."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/חַלְלֵי/הֶ֣ם יֻשְׁלָ֔כוּ וּ/פִגְרֵי/הֶ֖ם יַעֲלֶ֣ה בָאְשָׁ֑/ם וְ/נָמַ֥סּוּ הָרִ֖ים מִ/דָּמָֽ/ם׃",
+        "LXX": "οἱ δὲ τραυματίαι αὐτῶν ῥιφήσονται καὶ οἱ νεκροί, καὶ ἀναβήσεται αὐτῶν ἡ ὀσμή, καὶ βραχήσεται τὰ ὄρη ἀπὸ τοῦ αἵματος αὐτῶν.",
+        "VUL": "Interfecti eorum projicientur,/ et de cadaveribus eorum ascendet ftor ;/ tabescent montes a sanguine eorum./",
+        "SYN": "И убитые их будут разбросаны, и от трупов их поднимется смрад, и горы размокнут от крови их.",
+        "NEO": "Leurs morts seront jetés sans sépulture, leurs cadavres exhaleront l’infection, et les montagnes se fondront dans leur sang.",
+        "NAB": "Their slain shall be cast out, their corpses shall send up a stench; The mountains shall run with their blood,",
+        "VAT_ES": "Sus víctimas son arrojadas fuera, de sus cadáveres sube el hedor, y con su sangre se disuelven las montañas.",
+        "CEI": "I loro uccisi sono gettati via, si diffonde il fetore dei loro cadaveri; grondano i monti del loro sangue."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/נָמַ֨קּוּ֙ כָּל צְבָ֣א הַ/שָּׁמַ֔יִם וְ/נָגֹ֥לּוּ כַ/סֵּ֖פֶר הַ/שָּׁמָ֑יִם וְ/כָל צְבָאָ֣/ם יִבּ֔וֹל כִּ/נְבֹ֤ל עָלֶה֙ מִ/גֶּ֔פֶן וּ/כְ/נֹבֶ֖לֶת מִ/תְּאֵנָֽה׃",
+        "LXX": "καὶ τακήσονται πᾶσαι αἱ δυνάμεις τῶν οὐρανῶν, καὶ ἑλιγήσεται ὡς βιβλίον ὁ οὐρανός, καὶ πάντα τὰ ἄστρα πεσεῖται ὡς φύλλα ἐξ ἀμπέλου, καὶ ὡς πίπτει φύλλα ἀπὸ συκῆς.",
+        "VUL": "Et tabescet omnis militia cælorum,/ et complicabuntur sicut liber cæli :/ et omnis militia eorum defluet,/ sicut defluit folium de vinea et de ficu./",
+        "SYN": "И истлеет все небесное воинство; и небеса свернутся, как свиток книжный; и все воинство их падет, как спадает лист с виноградной лозы, и как увядший лист - со смоковницы.",
+        "NEO": "Toute l’armée des cieux sera réduite en poussière ; les cieux seront roulés comme un livre, et toute leur armée tombera, comme tombe la feuille de la vigne, comme tombe celle du figuier.",
+        "NAB": "and all the hills shall rot; The heavens shall be rolled up like a scroll, and all their host shall wither away, As the leaf wilts on the vine, or as the fig withers on the tree.",
+        "VAT_ES": "Se diluye todo el ejército del cielo, los cielos son enrollados como un pliego, y todo su ejército se marchita como se marchita el follaje de la vid, como cae marchita la hija de la higuera.",
+        "CEI": "Tutta la milizia celeste si dissolve, i cieli si arrotolano come un libro, tutti i loro astri cadono come cade il pampino della vite, come le foglie avvizzite del fico."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּֽי רִוְּתָ֥ה בַ/שָּׁמַ֖יִם חַרְבִּ֑/י הִנֵּה֙ עַל אֱד֣וֹם תֵּרֵ֔ד וְ/עַל עַ֥ם חֶרְמִ֖/י לְ/מִשְׁפָּֽט׃",
+        "LXX": "ἐμεθύσθη ἐν τῷ οὐρανῷ ἡ μάχαιρὰ μου· ἰδοὺ ἐπὶ τὴν Ἰδουμαίαν καταβήσεται καὶ ἐπὶ τὸν λαὸν τῆς ἀπωλείας μετὰ κρίσεως.",
+        "VUL": "Quoniam inebriatus est in cælo gladius meus ;/ ecce super Idumæam descendet,/ et super populum interfectionis meæ, ad judicium./",
+        "SYN": "Ибо упился меч Мой на небесах: вот, для суда нисходит он на Едом и на народ, преданный Мною заклятию.",
+        "NEO": "« Car mon épée s’est enivrée dans les cieux, et voici qu’elle descend sur Edom, sur le peuple que j’ai voué à l’anathème, pour le juger.",
+        "NAB": "When my sword has drunk its fill in the heavens, lo, it shall come down in judgment upon Edom, a people I have doomed.",
+        "VAT_ES": "Porque mi espada se abrevó en el cielo: miren cómo baja sobre Edom, sobre el pueblo que he condenado al juicio.",
+        "CEI": "Poiché nel cielo si è inebriata la spada del Signore, ecco essa si abbatte su Edom, su un popolo che egli ha votato allo sterminio per fare giustizia."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "חֶ֣רֶב לַ/יהוָ֞ה מָלְאָ֥ה דָם֙ הֻדַּ֣שְׁנָה מֵ/חֵ֔לֶב מִ/דַּ֤ם כָּרִים֙ וְ/עַתּוּדִ֔ים מֵ/חֵ֖לֶב כִּלְי֣וֹת אֵילִ֑ים כִּ֣י זֶ֤בַח לַֽ/יהוָה֙ בְּ/בָצְרָ֔ה וְ/טֶ֥בַח גָּד֖וֹל בְּ/אֶ֥רֶץ אֱדֽוֹם׃",
+        "LXX": "ἡ μάχαιρα τοῦ κυρίου ἐνεπλήσθη αἵματος, ἐπαχύνθη ἀπὸ στέατος, ἀπὸ αἵματος τράγων καὶ ἀμνῶν καὶ ἀπὸ στέατος τράγων καὶ κριῶν. ὅτι θυσία τῷ κυρίῳ ἐν Βοσόρ, καὶ σφαγὴ μεγάλη ἐν τῇ Ἰδουμαίᾳ,",
+        "VUL": "Gladius Domini repletus est sanguine,/ incrassatus est adipe,/ de sanguine agnorum et hircorum,/ de sanguine medullatorum arietum :/ victima enim Domini in Bosra,/ et interfectio magna in terra Edom./",
+        "SYN": "Меч Господа наполнится кровью, утучнеет от тука, от крови агнцев и козлов, от тука с почек овнов: ибо жертва у Господа в Восоре и большое заклание в земле Едома.",
+        "NEO": "L’épée de \\+w Yahweh|strong=\"H3068\"\\+w** est pleine de sang. ruisselante de graisse, du sang des agneaux et des boucs, de la graisse des reins des béliers. Car \\+w Yahweh|strong=\"H3068\"\\+w** fait un sacrifice à Bosra, et un grand carnage au pays d’Edom.",
+        "NAB": "The LORD has a sword filled with blood, greasy with fat, With the blood of lambs and goats, with the fat of rams' kidneys; For the LORD has a sacrifice in Bozrah, a great slaughter in the land of Edom.",
+        "VAT_ES": "La espada del Señor está llena de sangre, impregnada de grasa, de la sangre de corderos y chivos, de la grasa de riñones de carneros. Porque el Señor tiene un sacrificio en Bosrá, una gran matanza en el país de Edom.",
+        "CEI": "La spada del Signore è piena di sangue, è imbrattata di grasso, del sangue di agnelli e di capri, delle viscere grasse dei montoni, perché si compie un sacrificio al Signore in Bozra, una grande ecatombe nel paese di Edom."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/יָרְד֤וּ רְאֵמִים֙ עִמָּ֔/ם וּ/פָרִ֖ים עִם אַבִּירִ֑ים וְ/רִוְּתָ֤ה אַרְצָ/ם֙ מִ/דָּ֔ם וַ/עֲפָרָ֖/ם מֵ/חֵ֥לֶב יְדֻשָּֽׁן׃",
+        "LXX": "καὶ συμπεσοῦνται οἱ ἁδροὶ μετ’ αὐτῶν καὶ οἱ κριοὶ καὶ οἱ ταῦροι, καὶ μεθυσθήσεται ἡ γῆ ἀπὸ τοῦ αἵματος, καὶ ἀπὸ τοῦ στέατος αὐτῶν ἐμπλησθήσεται.",
+        "VUL": "Et descendent unicornes cum eis,/ et tauri cum potentibus ;/ inebriabitur terra eorum sanguine,/ et humus eorum adipe pinguium./",
+        "SYN": "И буйволы падут с ними и тельцы вместе с волами, и упьется земля их кровью, и прах их утучнеет от тука.",
+        "NEO": "Avec eux tombent les buffles, et les bœufs avec les taureaux.",
+        "NAB": "Wild oxen shall be struck down with fatlings, and bullocks with bulls; Their land shall be soaked with blood, and their earth greasy with fat.",
+        "VAT_ES": "Caen los búfalos con los terneros cebados, los novillos con los toros: su tierra se abreva con sangre, su suelo se impregna de grasa.",
+        "CEI": "Cadono bisonti insieme con essi, giovenchi insieme con tori. La loro terra si imbeve di sangue, la polvere si impingua di grasso."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּ֛י י֥וֹם נָקָ֖ם לַֽ/יהוָ֑ה שְׁנַ֥ת שִׁלּוּמִ֖ים לְ/רִ֥יב צִיּֽוֹן׃",
+        "LXX": "ἡμέρα γὰρ κρίσεως Κυρίου, καὶ ἐνιαυτὸς ἀνταποδόσεως κρίσεως Σειών.",
+        "VUL": "Quia dies ultionis Domini,/ annus retributionum judicii Sion./",
+        "SYN": "Ибо день мщения у Господа, год возмездия за Сион.",
+        "NEO": "Car c’est un jour de vengeance pour \\+w Yahweh|strong=\"H3068\"\\+w**, une année de revanche pour la cause de Sion.",
+        "NAB": "For the LORD has a day of vengeance, a year of requital by Zion's defender.",
+        "VAT_ES": "Porque es un día de venganza para el Señor, un año de desquite para la causa de Sión.",
+        "CEI": "Poiché è il giorno della vendetta del Signore, l'anno della retribuzione per l'avversario di Sion."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/נֶהֶפְכ֤וּ נְחָלֶ֨י/הָ֙ לְ/זֶ֔פֶת וַ/עֲפָרָ֖/הּ לְ/גָפְרִ֑ית וְ/הָיְתָ֣ה אַרְצָ֔/הּ לְ/זֶ֖פֶת בֹּעֵרָֽה׃",
+        "LXX": "καὶ στραφήσονται αὐτῆς αἱ φάραγγες εἰς πίσσαν, καὶ ἡ γῆ αὐτῆς εἰς θεῖον· καὶ ἔσται ἡ γῆ αὐτῆς ὡς πίσσα καιομένη",
+        "VUL": "Et convertentur torrentes ejus in picem,/ et humus ejus in sulphur ;/ et erit terra ejus in picem ardentem./",
+        "SYN": "И превратятся реки его в смолу, и прах его - в серу, и будет земля его горящею смолою:",
+        "NEO": "Ses torrents seront changés en poix, et sa poussière en soufre, et sa terre deviendra de la poix brûlante,",
+        "NAB": "Edom's streams shall be changed into pitch and her earth into sulphur, and her land shall become burning pitch;",
+        "VAT_ES": "Sus torrentes se transformarán en resina y su suelo en azufre; su tierra se convertirá en resina ardiente,",
+        "CEI": "I torrenti di quel paese si cambieranno in pece, la sua polvere in zolfo, la sua terra diventerà pece ardente."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "לַ֤יְלָה וְ/יוֹמָם֙ לֹ֣א תִכְבֶּ֔ה לְ/עוֹלָ֖ם יַעֲלֶ֣ה עֲשָׁנָ֑/הּ מִ/דּ֤וֹר לָ/דוֹר֙ תֶּחֱרָ֔ב לְ/נֵ֣צַח נְצָחִ֔ים אֵ֥ין עֹבֵ֖ר בָּֽ/הּ׃",
+        "LXX": "νυκτὸς καὶ ἡμέρας, καὶ οὐ σβεσθήσεται εἰς τὸν αἰῶνα χρόνον, καὶ ἀναβήσεται ὁ καπνὸς αὐτῆς ἄνω, εἰς γενεὰς αὐτῆς ἐρημωθήσεται, καὶ εἰς χρόνον πολύν.",
+        "VUL": "Nocte et die non extinguetur,/ in sempiternum ascendet fumus ejus,/ a generatione in generationem desolabitur,/ in sæcula sæculorum non erit transiens per eam./",
+        "SYN": "не будет гаснуть ни днем, ни ночью; вечно будет восходить дым ее; будет от рода в род оставаться опустелою; во веки веков никто не пройдет по ней;",
+        "NEO": "qui ne s’éteindra ni la nuit ni le jour, dont la fumée montera éternellement.",
+        "NAB": "Night and day it shall not be quenched, its smoke shall rise forever. From generation to generation she shall lie waste, never again shall anyone pass through her.",
+        "VAT_ES": "que no se extinguirá ni de día ni de noche: la humareda subirá incesantemente. Quedará desierta de generación en generación, nunca más pasará nadie por allí.",
+        "CEI": "Non si spegnerà né di giorno né di notte, sempre salirà il suo fumo; per tutte le generazioni resterà deserta, mai più alcuno vi passerà."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וִ/ירֵשׁ֨וּ/הָ֙ קָאַ֣ת וְ/קִפּ֔וֹד וְ/יַנְשׁ֥וֹף וְ/עֹרֵ֖ב יִשְׁכְּנוּ בָ֑/הּ וְ/נָטָ֥ה עָלֶ֛י/הָ קַֽו תֹ֖הוּ וְ/אַבְנֵי בֹֽהוּ׃",
+        "LXX": "ὄρνεα καὶ ἐχῖνοι καὶ εἴβεις καὶ κόρακες κατοικήσουσιν ἐν αὐτῇ· καὶ ἐπιβληθήσεται ἐπ’ αὐτὴν σπαρτίον γεωμετρίας ἐρήμου, καὶ ὀνοκένταυροι οἰκήσουσιν ἐν αὐτῇ.",
+        "VUL": "Et possidebunt illam onocrotalus et ericius ;/ ibis et corvus habitabunt in ea :/ et extendetur super eam mensura, ut redigatur ad nihilum,/ et perpendiculum in desolationem./",
+        "SYN": "и завладеют ею пеликан и еж; и филин и ворон поселятся в ней; и протянут по ней вервь разорения и отвес уничтожения.",
+        "NEO": "Le pélican et le hérisson la posséderont ; la chouette et le corbeau y habiteront. Et il étendra sur elle le cordeau du chaos et le niveau du vide.",
+        "NAB": "But the desert owl and hoot owl shall possess her, the screech owl and raven shall dwell in her. The LORD will measure her with line and plummet to be an empty waste for satyrs to dwell in.",
+        "VAT_ES": "Se adueñarán de ella el pelícano y el erizo, la lechuza y el cuervo habitarán allí. Se extenderá sobre ella la plomada del caos y el nivel del vacío.",
+        "CEI": "Ne prenderanno possesso il pellicano e il riccio, il gufo e il corvo vi faranno dimora. Il Signore stenderà su di essa la corda della solitudine e la livella del vuoto."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "חֹרֶ֥י/הָ וְ/אֵֽין שָׁ֖ם מְלוּכָ֣ה יִקְרָ֑אוּ וְ/כָל שָׂרֶ֖י/הָ יִ֥הְיוּ אָֽפֶס׃",
+        "LXX": "οἱ ἄρχοντες αὐτῆς οὐκ ἔσονται· οἱ γὰρ βασιλεῖς καὶ οἱ μεγιστᾶνες αὐτῆς ἔσονται εἰς ἀπώλειαν.",
+        "VUL": "Nobiles ejus non erunt ibi ; regem potius invocabunt,/ et omnes principes ejus erunt in nihilum./",
+        "SYN": "Никого не останется там из знатных ее, кого можно было бы призвать на царство, и все князья ее будут ничто.",
+        "NEO": "Il n’y aura plus de grands pour proclamer un roi, et tous ses princes seront anéantis.",
+        "NAB": "Her nobles shall be no more, nor shall kings be proclaimed there; all her princes are gone.",
+        "VAT_ES": "Los nobles no proclamarán más un rey y todos sus príncipes serán aniquilados.",
+        "CEI": "Non ci saranno più i suoi nobili, non si proclameranno più re, tutti i suoi capi saranno ridotti a nulla."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/עָלְתָ֤ה אַרְמְנֹתֶ֨י/הָ֙ סִירִ֔ים קִמּ֥וֹשׂ וָ/ח֖וֹחַ בְּ/מִבְצָרֶ֑י/הָ וְ/הָיְתָה֙ נְוֵ֣ה תַנִּ֔ים חָצִ֖יר לִ/בְנ֥וֹת יַעֲנָֽה׃",
+        "LXX": "καὶ ἀναφύσει εἰς τὰς πόλεις αὐτῶν ἀκάνθινα ξύλα καὶ εἰς τὰ ὀχυρώματα αὐτῆς, καὶ ἔσται ἐπαύλεις σειρήνων καὶ αὐλὴ στρουθῶν·",
+        "VUL": "Et orientur in domibus ejus spinæ et urticæ,/ et paliurus in munitionibus ejus ;/ et erit cubile draconum,/ et pascua struthionum./",
+        "SYN": "И зарастут дворцы ее колючими растениями, крапивою и репейником - твердыни ее; и будет она жилищем шакалов, пристанищем страусов.",
+        "NEO": "Les épines pousseront dans ses palais, les ronces et les chardons dans ses forteresses.",
+        "NAB": "Her castles shall be overgrown with thorns, her fortresses with thistles and briers. She shall become an abode for jackals and a haunt for ostriches.",
+        "VAT_ES": "En sus palacios crecerán zarzas, en sus fortalezas, ortigas y espinas; será una morada de chacales, una guarida de avestruces.",
+        "CEI": "Nei suoi palazzi saliranno le spine, ortiche e cardi sulle sue fortezze; diventerà una tana di sciacalli, un recinto per gli struzzi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וּ/פָגְשׁ֤וּ צִיִּים֙ אֶת אִיִּ֔ים וְ/שָׂעִ֖יר עַל רֵעֵ֣/הוּ יִקְרָ֑א אַךְ שָׁם֙ הִרְגִּ֣יעָה לִּילִ֔ית וּ/מָצְאָ֥ה לָ֖/הּ מָנֽוֹחַ׃",
+        "LXX": "καὶ συναντήσουσιν δαιμόνια ὀνοκενταύροις καὶ βοήσονται ἕτερος πρὸς τὸν ἕτερον, ἐκεῖ ἀναπαύσονται ὀνοκένταυροι εὑρόντες αὑτοῖς ἀνάπαυσιν·",
+        "VUL": "Et occurrent dæmonia onocentauris,/ et pilosus clamabit alter ad alterum ;/ ibi cubavit lamia,/ et invenit sibi requiem./",
+        "SYN": "И звери пустыни будут встречаться с дикими кошками, и лешие будут перекликаться один с другим; там будет отдыхать ночное привидение и находить себе покой.",
+        "NEO": "Les chats et les chiens sauvages s’y rencontreront, et les satyres s’y appelleront les uns les autres.",
+        "NAB": "Wildcats shall meet with desert beasts, satyrs shall call to one another; There shall the lilith repose, and find for herself a place to rest.",
+        "VAT_ES": "Las fieras del desierto se juntarán con las hienas, los sátiros se llamarán unos a otros. Allí también descansará Lilit y tendrá un lugar de reposo.",
+        "CEI": "Gatti selvatici si incontreranno con iene, i satiri si chiameranno l'un l'altro; vi faranno sosta anche le civette e vi troveranno tranquilla dimora."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "שָׁ֣מָּ/ה קִנְּנָ֤ה קִפּוֹז֙ וַ/תְּמַלֵּ֔ט וּ/בָקְעָ֖ה וְ/דָגְרָ֣ה בְ/צִלָּ֑/הּ אַךְ שָׁ֛ם נִקְבְּצ֥וּ דַיּ֖וֹת אִשָּׁ֥ה רְעוּתָֽ/הּ׃",
+        "LXX": "ἐκεῖ ἐνόσσευσεν ἐχῖνος, καὶ ἔσωσεν ἡ γῆ τὰ παιδία αὐτῆς μετὰ ἀσφαλείας· ἐκεῖ συνήντησαν ἔλαφοι καὶ εἶδον τὰ πρόσωπα ἀλλήλων·",
+        "VUL": "Ibi habuit foveam ericius, et enutrivit catulos,/ et circumfodit, et fovit in umbra ejus ;/ illuc congregati sunt milvi, alter ad alterum./",
+        "SYN": "Там угнездится летучий змей, будет класть яйца и выводить детей и собирать их под тень свою; там и коршуны будут собираться один к другому.",
+        "NEO": "Là le serpent fera son nid et pondra, couvera et réunira ses petits sous son ombre.",
+        "NAB": "There the hoot owl shall nest and lay eggs, hatch them out and gather them in her shadow; There shall the kites assemble, none shall be missing its mate.",
+        "VAT_ES": "Allí anidará la serpiente y pondrá sus huevos, los incubará y los hará empollar; y allí también se reunirán los buitres, cada uno con su pareja."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "דִּרְשׁ֨וּ מֵֽ/עַל סֵ֤פֶר יְהוָה֙ וּֽ/קְרָ֔אוּ אַחַ֤ת מֵ/הֵ֨נָּה֙ לֹ֣א נֶעְדָּ֔רָה אִשָּׁ֥ה רְעוּתָ֖/הּ לֹ֣א פָקָ֑דוּ כִּֽי פִ/י֙ ה֣וּא צִוָּ֔ה וְ/רוּח֖/וֹ ה֥וּא קִבְּצָֽ/ן׃",
+        "LXX": "ἀριθμῷ παρῆλθον, καὶ μία αὐτῶν οὐκ ἀπώλετο, ἑτέρα τὴν ἑτέραν οὐκ ἐζήτησαν, ὅτι Κύριος αὐτοῖς ἐνετείλατο, καὶ τὸ πνεῦμα αὐτοῦ συνήγαγεν αὐτά.",
+        "VUL": "Requirite diligenter in libro Domini, et legite :/ Unum ex eis non defuit,/ alter alterum non quæsivit ;/ quia quod ex ore meo procedit, ille mandavit,/ et spiritus ejus ipse congregavit ea./",
+        "SYN": "Отыщите в книге Господней и прочитайте; ни одно из сих не преминет придти, и одно другим не заменится. Ибо сами уста Его повелели, и сам дух Его соберет их.",
+        "NEO": "Cherchez dans le livre de \\+w Yahweh|strong=\"H3068\"\\+w**, et lisez : Pas un d’eux ne manque, ni l’un ni l’autre ne fait défaut.",
+        "NAB": "Look in the book of the LORD and read: No one of these shall be lacking, For the mouth of the LORD has ordered it, and his spirit shall gather them there.",
+        "VAT_ES": "Consulten el libro del Señor y lean: no falta ninguno de ellos, ni uno solo ha perdido su pareja, porque lo ha mandado la boca del Señor y su espíritu los ha congregado."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/הֽוּא הִפִּ֤יל לָ/הֶן֙ גּוֹרָ֔ל וְ/יָד֛/וֹ חִלְּקַ֥תָּ/ה לָ/הֶ֖ם בַּ/קָּ֑ו עַד עוֹלָם֙ יִֽירָשׁ֔וּ/הָ לְ/ד֥וֹר וָ/ד֖וֹר יִשְׁכְּנוּ בָֽ/הּ׃",
+        "LXX": "καὶ αὐτὸς ἐπιβαλεῖ αὐτοῖς κλήρους, καὶ ἡ χεὶρ αὐτοῦ διεμέρισεν βόσκεσθαι· εἰς τὸν αἰῶνα χρόνον κληρονομήσετε, γενεὰς γενεῶν ἀναπαύσονται ἐπ’ αὐτῆς.",
+        "VUL": "Et ipse misit eis sortem,/ et manus ejus divisit eam illis in mensuram :/ usque in æternum possidebunt eam ;/ in generationem et generationem habitabunt in ea.]",
+        "SYN": "И Сам Он бросил им жребий, и Его рука разделила им ее мерою; во веки будут они владеть ею, из рода в род будут жить на ней.",
+        "NEO": "C’est lui qui a jeté le sort pour eux, et sa main qui leur a partagé le pays au cordeau ; à jamais ils le posséderont, d’âge en âge ils y habiteront.",
+        "NAB": "It is he who casts the lot for them, and with his hands he marks off their shares of her; They shall possess her forever, and dwell there from generation to generation.",
+        "VAT_ES": "El mismo ha echado la suerte para ellos, su mano les asignó una parte con la cuerda: ellos la poseerán para siempre, habitará allí de generación en generación.",
+        "CEI": "Egli ha distribuito loro la parte in sorte, la sua mano ha diviso loro il paese con tutta esattezza, lo possederanno per sempre, lo abiteranno di generazione in generazione."
+      }
+    }
+  }
+}

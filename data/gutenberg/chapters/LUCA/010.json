@@ -1,0 +1,712 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LUCA_010",
+  "book_key": "LUCA",
+  "sequence": 10,
+  "chapter_in": {
+    "MT": 10,
+    "VUL": 10,
+    "LXX": 10
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Μετὰ δὲ ταῦτα ἀνέδειξεν ὁ κύριος καὶ ἑτέρους ἑβδομήκοντα, καὶ ἀπέστειλεν αὐτοὺς ἀνὰ δύο πρὸ προσώπου αὐτοῦ εἰς πᾶσαν πόλιν καὶ τόπον οὗ ἔμελλεν αὐτὸς ἔρχεσθαι.",
+        "VUL": "Post hæc autem designavit Dominus et alios septuaginta duos : et misit illos binos ante faciem suam in omnem civitatem et locum, quo erat ipse venturus.",
+        "SYN": "После сего избрал Господь и других семьдесят _учеников,_ и послал их по два пред лицем Своим во всякий город и место, куда Сам хотел идти,",
+        "NEO": "Après cela+ 10:1 X, 1. Après cela… encore 70 autres. Cf. ix, 1. Il y a partage entre les manuscrits et les versions, entre le chiffre 72 et 70. Le chiffre de la Vulgate 72 est appuyé par plusieurs manuscrits grecs, en particulier le Vaticanus et les syriaques.*, le Seigneur en désigna encore soixante-douze autres, et les envoya devant lui, deux à deux, dans toutes les villes et tous les lieux où lui-même devait aller.",
+        "NAB": "After this the Lord appointed seventy (-two) others whom he sent ahead of him in pairs to every town and place he intended to visit.",
+        "VAT_ES": "Después de esto, el Señor designó a otros setenta y dos, y los envió de dos en dos para que lo precedieran en todas las ciudades y sitios adonde él debía ir.",
+        "CEI": "Tre giorni dopo, ci fu uno sposalizio a Cana di Galilea e c'era la madre di Gesù."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Ἔλεγεν οὖν πρὸς αὐτούς, Ὁ μὲν θερισμὸς πολύς, οἱ δὲ ἐργάται ὀλίγοι· δεήθητε οὖν τοῦ κυρίου τοῦ θερισμοῦ, ὅπως ἐκβάλῃ ἐργάτας εἰς τὸν θερισμὸν αὐτοῦ.",
+        "VUL": "Et dicebat illis : Messis quidem multa, operarii autem pauci. Rogate ergo dominum messis ut mittat operarios in messem suam.",
+        "SYN": "и сказал им: жатвы много, а делателей мало; итак, молите Господина жатвы, чтобы выслал делателей на жатву Свою.",
+        "NEO": "Il leur dit : « La moisson est grande, mais les ouvriers sont en petit nombre. Priez donc le maître de la moisson d’envoyer des ouvriers à sa moisson.",
+        "NAB": "He said to them, \"The harvest is abundant but the laborers are few; so ask the master of the harvest to send out laborers for his harvest.",
+        "VAT_ES": "Y les dijo: «La cosecha es abundante, pero los trabajadores son pocos. Rueguen al dueño de los sembrados que envíe trabajadores para la cosecha.",
+        "CEI": "Fu invitato alle nozze anche Gesù con i suoi discepoli."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Ὑπάγετε· ἰδού, ἐγὼ ἀποστέλλω ὑμᾶς ὡς ἄρνας ἐν μέσῳ λύκων.",
+        "VUL": "Ite : ecce ego mitto vos sicut agnos inter lupos.",
+        "SYN": "Идите! Я посылаю вас, как агнцев среди волков.",
+        "NEO": "Partez : voici que je vous envoie comme des agneaux au milieu des loups.+ 10:3 Les douze apôtres correspondent aux douze tribus d’Israël, et les soixante-dix disciples, semblant rappeler les soixante-dix nations énumérées dans la table ethnographique de la Genèse, (chap. x), préfigureraient l’évangélisation de tous les peuples de la terre. Pour le chiffre 72, il proviendrait des deux nombres 12 et 6 usités dans la symbolique sacrée.*",
+        "NAB": "Go on your way; behold, I am sending you like lambs among wolves.",
+        "VAT_ES": "&iexcl;Vayan! Yo los envío como a ovejas en medio de lobos.",
+        "CEI": "Nel frattempo, venuto a mancare il vino, la madre di Gesù gli disse: \"Non hanno più vino\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Μὴ βαστάζετε βαλάντιον, μὴ πήραν, μηδὲ ὑποδήματα· καὶ μηδένα κατὰ τὴν ὁδὸν ἀσπάσησθε.",
+        "VUL": "Nolite portare sacculum, neque peram, neque calceamenta, et neminem per viam salutaveritis.",
+        "SYN": "Не берите ни мешка, ни сумы, ни обуви, и никого на дороге не приветствуйте.",
+        "NEO": "Ne portez ni bourse, ni sac, ni souliers, et ne saluez personne en chemin.",
+        "NAB": "Carry no money bag, no sack, no sandals; and greet no one along the way.",
+        "VAT_ES": "No lleven dinero, ni alforja, ni calzado, y no se detengan a saludar a nadie por el camino.",
+        "CEI": "E Gesù rispose: \"Che ho da fare con te, o donna? Non è ancora giunta la mia ora\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Εἰς ἣν δ’ ἂν οἰκίαν εἰσέρχησθε, πρῶτον λέγετε, Εἰρήνη τῷ οἴκῳ τούτῳ.",
+        "VUL": "In quamcumque domum intraveritis, primum dicite : Pax huic domui :",
+        "SYN": "В какой дом войдете, сперва говорите: мир дому сему;",
+        "NEO": "Dans quelque maison que vous entriez, dites d’abord : Paix à cette maison !",
+        "NAB": "Into whatever house you enter, first say, 'Peace to this household.'",
+        "VAT_ES": "Al entrar en una casa, digan primero: «&iexcl;Que descienda la paz sobre esta casa!».",
+        "CEI": "La madre dice ai servi: \"Fate quello che vi dirà\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Καὶ ἐὰν ᾖ ἐκεῖ υἱὸς εἰρήνης, ἐπαναπαύσεται ἐπ’ αὐτὸν ἡ εἰρήνη ὑμῶν· εἰ δὲ μήγε, ἐφ’ ὑμᾶς ἀνακάμψει.",
+        "VUL": "et si ibi fuerit filius pacis, requiescet super illum pax vestra : sin autem, ad vos revertetur.",
+        "SYN": "и если будет там сын мира, то почиет на нем мир ваш, а если нет, то к вам возвратится.",
+        "NEO": "Et s’il s’y trouve un enfant de paix+ 10:6 6. Un fils de paix ou de salut (hébraïsme), c’est-à-dire un homme digne de recevoir les biens spirituels que vous apportez.*, votre paix reposera sur lui ; sinon, elle reviendra à vous.",
+        "NAB": "If a peaceful person lives there, your peace will rest on him; but if not, it will return to you.",
+        "VAT_ES": "Y si hay allí alguien digno de recibirla, esa paz reposará sobre él; de lo contrario, volverá a ustedes.",
+        "CEI": "Vi erano là sei giare di pietra per la purificazione dei Giudei, contenenti ciascuna due o tre barili."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ἐν αὐτῇ δὲ τῇ οἰκίᾳ μένετε, ἐσθίοντες καὶ πίνοντες τὰ παρ’ αὐτῶν· ἄξιος γὰρ ὁ ἐργάτης τοῦ μισθοῦ αὐτοῦ ἐστίν. Μὴ μεταβαίνετε ἐξ οἰκίας εἰς οἰκίαν.",
+        "VUL": "In eadem autem domo manete, edentes et bibentes quæ apud illos sunt : dignus est enim operarius mercede sua. Nolite transire de domo in domum.",
+        "SYN": "В доме же том оставайтесь, ешьте и пейте, что у них есть, ибо трудящийся достоин награды за труды свои; не переходите из дома в дом.",
+        "NEO": "Demeurez dans la même maison, mangeant et buvant de ce qu’il y aura chez eux ; car l’ouvrier mérite son salaire. Ne passez pas d’une maison dans une autre.",
+        "NAB": "Stay in the same house and eat and drink what is offered to you, for the laborer deserves his payment. Do not move about from one house to another.",
+        "VAT_ES": "Permanezcan en esa misma casa, comiendo y bebiendo de lo que haya, porque el que trabaja merece su salario. No vayan de casa en casa.",
+        "CEI": "E Gesù disse loro: \"Riempite d'acqua le giare\"; e le riempirono fino all'orlo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Καὶ εἰς ἣν ἂν πόλιν εἰσέρχησθε, καὶ δέχωνται ὑμᾶς, ἐσθίετε τὰ παρατιθέμενα ὑμῖν,",
+        "VUL": "Et in quamcumque civitatem intraveritis, et susceperint vos, manducate quæ apponuntur vobis :",
+        "SYN": "И если придете в какой город и примут вас, ешьте, что вам предложат,",
+        "NEO": "Dans quelque ville que vous entriez, si l’on vous reçoit, mangez ce qu’on vous présentera ;",
+        "NAB": "Whatever town you enter and they welcome you, eat what is set before you,",
+        "VAT_ES": "En las ciudades donde entren y sean recibidos, coman lo que les sirvan;",
+        "CEI": "Disse loro di nuovo: \"Ora attingete e portatene al maestro di tavola\". Ed essi gliene portarono."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "καὶ θεραπεύετε τοὺς ἐν αὐτῇ ἀσθενεῖς, καὶ λέγετε αὐτοῖς, Ἤγγικεν ἐφ’ ὑμᾶς ἡ βασιλεία τοῦ θεοῦ.",
+        "VUL": "et curate infirmos, qui in illa sunt, et dicite illis : Appropinquavit in vos regnum Dei.",
+        "SYN": "и исцеляйте находящихся в нем больных, и говорите им: приблизилось к вам Царствие Божие.",
+        "NEO": "guérissez les malades qui s’y trouveront, et dites-leur : Le royaume de Dieu est proche de vous.",
+        "NAB": "cure the sick in it and say to them, 'The kingdom of God is at hand for you.'",
+        "VAT_ES": "curen a sus enfermos y digan a la gente: «El Reino de Dios está cerca de ustedes».",
+        "CEI": "E come ebbe assaggiato l'acqua diventata vino, il maestro di tavola, che non sapeva di dove venisse (ma lo sapevano i servi che avevano attinto l'acqua), chiamò lo sposo"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Εἰς ἣν δ’ ἂν πόλιν εἰσέρχησθε, καὶ μὴ δέχωνται ὑμᾶς, ἐξελθόντες εἰς τὰς πλατείας αὐτῆς εἴπατε,",
+        "VUL": "In quamcumque autem civitatem intraveritis, et non susceperint vos, exeuntes in plateas ejus, dicite :",
+        "SYN": "Если же придете в какой город и не примут вас, то, выйдя на улицу, скажите:",
+        "NEO": "Mais dans quelque ville que vous entriez, si l’on ne vous reçoit pas, allez sur les places publiques et dites :",
+        "NAB": "Whatever town you enter and they do not receive you, go out into the streets and say,",
+        "VAT_ES": "Pero en todas las ciudades donde entren y no los reciban, salgan a las plazas y digan:",
+        "CEI": "e gli disse: \"Tutti servono da principio il vino buono e, quando sono un pò brilli, quello meno buono; tu invece hai conservato fino ad ora il vino buono\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Καὶ τὸν κονιορτὸν τὸν κολληθέντα ἡμῖν ἐκ τῆς πόλεως ὑμῶν ἀπομασσόμεθα ὑμῖν· πλὴν τοῦτο γινώσκετε, ὅτι ἤγγικεν ἐφ’ ὑμᾶς ἡ βασιλεία τοῦ θεοῦ.",
+        "VUL": "Etiam pulverem, qui adhæsit nobis de civitate vestra, extergimus in vos : tamen hoc scitote, quia appropinquavit regnum Dei.",
+        "SYN": "и прах, прилипший к нам от вашего города, отрясаем вам; однако же знайте, что приблизилось к вам Царствие Божие.",
+        "NEO": "La poussière même de votre ville, qui s’est attachée à nous, nous l’essuyons contre vous ; sachez cependant ceci, c’est que le royaume de Dieu est proche.",
+        "NAB": "'The dust of your town that clings to our feet, even that we shake off against you.' Yet know this: the kingdom of God is at hand.",
+        "VAT_ES": "&iexcl;Hasta el polvo de esta ciudad que se ha adherido a nuestros pies, lo sacudimos sobre ustedes! Sepan, sin embargo, que el Reino de Dios está cerca».",
+        "CEI": "Così Gesù diede inizio ai suoi miracoli in Cana di Galilea, manifestò la sua gloria e i suoi discepoli credettero in lui."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Λέγω ὑμῖν ὅτι Σοδόμοις ἐν τῇ ἡμέρᾳ ἐκείνῃ ἀνεκτότερον ἔσται, ἢ τῇ πόλει ἐκείνῃ.",
+        "VUL": "Dico vobis, quia Sodomis in die illa remissius erit, quam illi civitati.",
+        "SYN": "Сказываю вам, что Содому в день оный будет отраднее, нежели городу тому.",
+        "NEO": "Je vous le dis, il y aura, en ce jour-là, moins de rigueur pour Sodome que pour cette ville.",
+        "NAB": "I tell you, it will be more tolerable for Sodom on that day than for that town.",
+        "VAT_ES": "Les aseguro que en aquel Día, Sodoma será tratada menos rigurosamente que esa ciudad.",
+        "CEI": "Dopo questo fatto, discese a Cafarnao insieme con sua madre, i fratelli e i suoi discepoli e si fermarono colà solo pochi giorni."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Οὐαί σοι, Χοραζίν, οὐαί σοι, Βηθσαϊδά· ὅτι εἰ ἐν Τύρῳ καὶ Σιδῶνι ἐγένοντο αἱ δυνάμεις αἱ γενόμεναι ἐν ὑμῖν, πάλαι ἂν ἐν σάκκῳ καὶ σποδῷ καθήμεναι μετενόησαν.",
+        "VUL": "Væ tibi Corozain ! væ tibi Bethsaida ! quia si in Tyro et Sidone factæ fuissent virtutes quæ factæ sunt in vobis, olim in cilicio et cinere sedentes pniterent.",
+        "SYN": "Горе тебе, Хоразин! горе тебе, Вифсаида! ибо если бы в Тире и Сидоне явлены были силы, явленные в вас, то давно бы они, сидя во вретище и пепле, покаялись;",
+        "NEO": "Malheur à toi, Corozaïn ! Malheur à toi, Bethsaïde ! Car si les miracles qui ont été faits au milieu de vous, l’avaient été dans Tyr et dans Sidon, elles auraient depuis longtemps fait pénitence, assises sous le cilice et la cendre.+ 10:13 13. Matth. ix, 20.*",
+        "NAB": "\"Woe to you, Chorazin! Woe to you, Bethsaida! For if the mighty deeds done in your midst had been done in Tyre and Sidon, they would long ago have repented, sitting in sackcloth and ashes.",
+        "VAT_ES": "&iexcl;Ay de ti, Corozaín! &iexcl;Ay de ti, Betsaida! Porque si en Tiro y en Sidón se hubieran hecho los milagros realizados entre ustedes, hace tiempo que se habrían convertido, poniéndose cilicio y sentándose sobre ceniza.",
+        "CEI": "Si avvicinava intanto la Pasqua dei Giudei e Gesù salì a Gerusalemme."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Πλὴν Τύρῳ καὶ Σιδῶνι ἀνεκτότερον ἔσται ἐν τῇ κρίσει, ἢ ὑμῖν.",
+        "VUL": "Verumtamen Tyro et Sidoni remissius erit in judicio, quam vobis.",
+        "SYN": "но и Тиру и Сидону отраднее будет на суде, нежели вам.",
+        "NEO": "C’est pourquoi, il y aura, au jugement, moins de rigueur pour Tyr et pour Sidon que pour vous.",
+        "NAB": "But it will be more tolerable for Tyre and Sidon at the judgment than for you.",
+        "VAT_ES": "Por eso Tiro y Sidón, en el día del Juicio, serán tratadas menos rigurosamente que ustedes.",
+        "CEI": "Trovò nel tempio gente che vendeva buoi, pecore e colombe, e i cambiavalute seduti al banco."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Καὶ σύ, Καπερναούμ, ἡ ἕως τοῦ οὐρανοῦ ὑψωθεῖσα, ἕως ᾍδου καταβιβασθήσῃ.",
+        "VUL": "Et tu Capharnaum, usque ad cælum exaltata, usque ad infernum demergeris.",
+        "SYN": "И ты, Капернаум, до неба вознесшийся, до ада низвергнешься.",
+        "NEO": "Et toi, Capharnaüm, qui t’élèves au ciel, tu seras abaissée jusqu’aux enfers.",
+        "NAB": "And as for you, Capernaum, 'Will you be exalted to heaven? You will go down to the netherworld.'\"",
+        "VAT_ES": "Y tú, Cafarnaúm, &iquest;acaso crees que serás elevada hasta el cielo? No, serás precipitada hasta el infierno.",
+        "CEI": "Fatta allora una sferza di cordicelle, scacciò tutti fuori del tempio con le pecore e i buoi; gettò a terra il denaro dei cambiavalute e ne rovesciò i banchi,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Ὁ ἀκούων ὑμῶν ἐμοῦ ἀκούει· καὶ ὁ ἀθετῶν ὑμᾶς ἐμὲ ἀθετεῖ· ὁ δὲ ἐμὲ ἀθετῶν ἀθετεῖ τὸν ἀποστείλαντά με.",
+        "VUL": "Qui vos audit, me audit : et qui vos spernit, me spernit. Qui autem me spernit, spernit eum qui misit me.",
+        "SYN": "Слушающий вас Меня слушает, и отвергающийся вас Меня отвергается; а отвергающийся Меня отвергается Пославшего Меня.",
+        "NEO": "Celui qui vous écoute, m’écoute, et celui qui vous méprise, me méprise ; or celui qui me méprise, méprise Celui qui m’a envoyé. »",
+        "NAB": "Whoever listens to you listens to me. Whoever rejects you rejects me. And whoever rejects me rejects the one who sent me.\"",
+        "VAT_ES": "El que los escucha a ustedes, me escucha a mí; el que los rechaza a ustedes, me rechaza a mí; y el que me rechaza, rechaza a aquel que me envió».",
+        "CEI": "e ai venditori di colombe disse: \"Portate via queste cose e non fate della casa del Padre mio un luogo di mercato\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "¶Ὑπέστρεψαν δὲ οἱ ἑβδομήκοντα μετὰ χαρᾶς, λέγοντες, Κύριε, καὶ τὰ δαιμόνια ὑποτάσσεται ἡμῖν ἐν τῷ ὀνόματί σου.",
+        "VUL": "Reversi sunt autem septuaginta duo cum gaudio, dicentes : Domine, etiam dæmonia subjiciuntur nobis in nomine tuo.",
+        "SYN": "Семьдесят _учеников_ возвратились с радостью и говорили: Господи! и бесы повинуются нам о имени Твоем.",
+        "NEO": "Les soixante-douze revinrent avec joie, disant : « Seigneur, les démons mêmes nous sont soumis en votre nom. »",
+        "NAB": "The seventy (-two) returned rejoicing, and said, \"Lord, even the demons are subject to us because of your name.\"",
+        "VAT_ES": "Los setenta y dos volvieron y le dijeron llenos de gozo: «Señor, hasta los demonios se nos someten en tu Nombre».",
+        "CEI": "I discepoli si ricordarono che sta scritto: Lo zelo per la tua casa mi divora."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Εἶπεν δὲ αὐτοῖς, Ἐθεώρουν τὸν Σατανᾶν ὡς ἀστραπὴν ἐκ τοῦ οὐρανοῦ πεσόντα.",
+        "VUL": "Et ait illis : Videbam Satanam sicut fulgor de cælo cadentem.",
+        "SYN": "Он же сказал им: Я видел сатану, спадшего с неба, как молнию;",
+        "NEO": "Il leur répondit : « Je contemplais Satan tombant du ciel comme la foudre.+ 10:18 18. La foudre est le symbole de la rapidité, et \\+qt tomber du ciel\\+qt* figure la perte de la domination (comp. Is. xiv, 12). Le chap. xii, 7-9 de l’Apocalypse décrit la chute complète que Jésus contemple ici dans son commencement.*",
+        "NAB": "Jesus said, \"I have observed Satan fall like lightning from the sky.",
+        "VAT_ES": "El les dijo: «Yo veía a Satanás caer del cielo como un rayo.",
+        "CEI": "Allora i Giudei presero la parola e gli dissero: \"Quale segno ci mostri per fare queste cose?\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ἰδού, δίδωμι ὑμῖν τὴν ἐξουσίαν τοῦ πατεῖν ἐπάνω ὄφεων καὶ σκορπίων, καὶ ἐπὶ πᾶσαν τὴν δύναμιν τοῦ ἐχθροῦ· καὶ οὐδὲν ὑμᾶς οὐ μὴ ἀδικήσῃ.",
+        "VUL": "Ecce dedi vobis potestatem calcandi supra serpentes, et scorpiones, et super omnem virtutem inimici : et nihil vobis nocebit.",
+        "SYN": "се, даю вам власть наступать на змей и скорпионов и на всю силу вражью, и ничто не повредит вам;",
+        "NEO": "Voilà que je vous ai donné le pouvoir de fouler aux pieds les serpents et les scorpions, et toute la puissance de l’ennemi, et elle ne pourra vous nuire en rien.",
+        "NAB": "Behold, I have given you the power 'to tread upon serpents' and scorpions and upon the full force of the enemy and nothing will harm you.",
+        "VAT_ES": "Les he dado poder de caminar sobre serpientes y escorpiones y para vencer todas las fuerzas del enemigo; y nada podrá dañarlos.",
+        "CEI": "Rispose loro Gesù: \"Distruggete questo tempio e in tre giorni lo farò risorgere\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Πλὴν ἐν τούτῳ μὴ χαίρετε ὅτι τὰ πνεύματα ὑμῖν ὑποτάσσεται· χαίρετε δὲ ὅτι τὰ ὀνόματα ὑμῶν ἐγράφη ἐν τοῖς οὐρανοῖς.",
+        "VUL": "Verumtamen in hoc nolite gaudere quia spiritus vobis subjiciuntur : gaudete autem, quod nomina vestra scripta sunt in cælis.",
+        "SYN": "однакож тому не радуйтесь, что духи вам повинуются, но радуйтесь тому, что имена ваши написаны на небесах.",
+        "NEO": "Seulement ne vous réjouissez pas de ce que les esprits vous sont soumis ; mais réjouissez-vous de ce que vos noms sont écrits dans les cieux. »",
+        "NAB": "Nevertheless, do not rejoice because the spirits are subject to you, but rejoice because your names are written in heaven.\"",
+        "VAT_ES": "No se alegren, sin embargo, de que los espíritus se les sometan; alégrense más bien de que sus nombres estén escritos en el cielo».",
+        "CEI": "Gli dissero allora i Giudei: \"Questo tempio è stato costruito in quarantasei anni e tu in tre giorni lo farai risorgere?\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "¶Ἐν αὐτῇ τῇ ὥρᾳ ἠγαλλιάσατο τῷ πνεύματι ὁ Ἰησοῦς, καὶ εἶπεν, Ἐξομολογοῦμαί σοι, πάτερ, κύριε τοῦ οὐρανοῦ καὶ τῆς γῆς, ὅτι ἀπέκρυψας ταῦτα ἀπὸ σοφῶν καὶ συνετῶν, καὶ ἀπεκάλυψας αὐτὰ νηπίοις. Ναί, ὁ πατήρ, ὅτι οὕτως ἐγένετο εὐδοκία ἔμπροσθέν σου.",
+        "VUL": "In ipsa hora exsultavit Spiritu Sancto, et dixit : Confiteor tibi Pater, Domine cæli et terræ, quod abscondisti hæc a sapientibus et prudentibus, et revelasti ea parvulis. Etiam Pater : quoniam sic placuit ante te.",
+        "SYN": "В тот час возрадовался духом Иисус и сказал: славлю Тебя, Отче, Господи неба и земли, что Ты утаил сие от мудрых и разумных и открыл младенцам. Ей, Отче! Ибо таково было Твое благоволение.",
+        "NEO": "Au même moment+ 10:21 21. Au même moment: cette indication chronologique, qui se lit aussi en S. Matthieu (xi, 25), doit s’entendre du moment où Jésus fit, aux villes de Galilée, les reproches rapportés aux vers. 13 sv. et Matth. xi, 21 sv. Alors, en effet, comme pour consoler le Sauveur de l’incrédulité orgueilleuse de ces villes, le Saint-Esprit lui inspira un sentiment de joie et de reconnaissance pour son Père qui avait accordé abondamment le don de la foi aux cœurs humbles.*, il tressaillit de joie sous l’action de l’Esprit-Saint, et il dit : « Je te bénis, ô Père, Seigneur du ciel et de la terre, de ce que tu as caché ces choses aux sages et aux prudents, et les as révélées aux petits enfants. Oui, je te bénis*, ô Père, de ce qu’il t’a plu ainsi.",
+        "NAB": "At that very moment he rejoiced (in) the holy Spirit and said, \"I give you praise, Father, Lord of heaven and earth, for although you have hidden these things from the wise and the learned you have revealed them to the childlike. Yes, Father, such has been your gracious will.",
+        "VAT_ES": "En aquel momento Jesús se estremeció de gozo, movido por el Espíritu Santo, y dijo: «Te alabo, Padre, Señor del cielo y de la tierra, por haber ocultado estas cosas a los sabios y a los prudentes y haberlas revelado a los pequeños. Sí, Padre, porque así lo has querido.",
+        "CEI": "Ma egli parlava del tempio del suo corpo."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Καὶ στραφεὶς πρὸς τοὺς μαθητὰς εἶπεν, Πάντα μοι παρεδόθη ὑπὸ τοῦ πατρός μου· καὶ οὐδεὶς γινώσκει τίς ἐστιν ὁ υἱός, εἰ μὴ ὁ πατήρ, καὶ τίς ἐστιν ὁ πατήρ, εἰ μὴ ὁ υἱός, καὶ ᾧ ἐὰν βούληται ὁ υἱὸς ἀποκαλύψαι.",
+        "VUL": "Omnia mihi tradita sunt a Patre meo. Et nemo scit quis sit Filius, nisi Pater : et quis sit Pater, nisi Filius, et cui voluerit Filius revelare.",
+        "SYN": "И, обратившись к ученикам, сказал: все предано Мне Отцем Моим; и кто есть Сын, не знает никто, кроме Отца, и кто есть Отец, _не_ _знает_ _никто,_ кроме Сына, и кому Сын хочет открыть.",
+        "NEO": "Toutes choses m’ont été données+ 10:22 22. Toutes choses m'ont été données, littér. \\+qt livrées, mises en mains, par mon Père ;\\+qt* ce verset contient, comme en germe, les doctrines théologiques que Jésus a développées devant les docteurs de Jérusalem dans les discours qui remplissent l’évangile de S. Jean. Comp. Jean, v, 17-43 ; vi, 37-47 ; viii, 16-29 ; xiii, 3.* par mon Père ; et personne ne sait ce qu’est le Fils, si ce n’est le Père, et ce qu’est le Père, si ce n’est le Fils, et celui à qui le Fils veut bien le révéler. »",
+        "NAB": "All things have been handed over to me by my Father. No one knows who the Son is except the Father, and who the Father is except the Son and anyone to whom the Son wishes to reveal him.\"",
+        "VAT_ES": "Todo me ha sido dado por mi Padre, y nadie sabe quién es el Hijo, sino el Padre, como nadie sabe quién es el Padre, sino el Hijo y aquel a quien el Hijo se lo quiera revelar».",
+        "CEI": "Quando poi fu risuscitato dai morti, i suoi discepoli si ricordarono che aveva detto questo, e credettero alla Scrittura e alla parola detta da Gesù."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Καὶ στραφεὶς πρὸς τοὺς μαθητὰς κατ’ ἰδίαν εἶπεν, Μακάριοι οἱ ὀφθαλμοὶ οἱ βλέποντες ἃ βλέπετε.",
+        "VUL": "Et conversus ad discipulos suos, dixit : Beati oculi qui vident quæ vos videtis.",
+        "SYN": "И, обратившись к ученикам, сказал им особо: блаженны очи, видящие то, что вы видите!",
+        "NEO": "Et se tournant vers ses disciples, il leur dit en particulier : « Heureux les yeux qui voient ce que vous voyez !",
+        "NAB": "Turning to the disciples in private he said, \"Blessed are the eyes that see what you see.",
+        "VAT_ES": "Después, volviéndose hacia sus discípulos, Jesús les dijo a ellos solos: «&iexcl;Felices los ojos que ven lo que ustedes ven!",
+        "CEI": "Mentre era a Gerusalemme per la Pasqua, durante la festa molti, vedendo i segni che faceva, credettero nel suo nome."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Λέγω γὰρ ὑμῖν ὅτι πολλοὶ προφῆται καὶ βασιλεῖς ἠθέλησαν ἰδεῖν ἃ ὑμεῖς βλέπετε, καὶ οὐκ εἶδον· καὶ ἀκοῦσαι ἃ ἀκούετε, καὶ οὐκ ἤκουσαν.",
+        "VUL": "Dico enim vobis quod multi prophetæ et reges voluerunt videre quæ vos videtis, et non viderunt : et audire quæ auditis, et non audierunt.",
+        "SYN": "ибо сказываю вам, что многие пророки и цари желали видеть, что вы видите, и не видели, и слышать, что вы слышите, и не слышали.",
+        "NEO": "Car, je vous le dis, beaucoup de prophètes et de rois ont désiré voir ce que vous voyez, et ne l’ont pas vu, entendre ce que vous entendez, et ne l’ont pas entendu. »",
+        "NAB": "For I say to you, many prophets and kings desired to see what you see, but did not see it, and to hear what you hear, but did not hear it.\"",
+        "VAT_ES": "&iexcl;Les aseguro que muchos profetas y reyes quisieron ver lo que ustedes ven y no lo vieron, oír lo que ustedes oyen y no lo oyeron!».",
+        "CEI": "Gesù però non si confidava con loro, perché conosceva tutti"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "¶Καὶ ἰδού, νομικός τις ἀνέστη, ἐκπειράζων αὐτόν, καὶ λέγων, Διδάσκαλε, τί ποιήσας ζωὴν αἰώνιον κληρονομήσω;",
+        "VUL": "Et ecce quidam legisperitus surrexit tentans illum, et dicens : Magister, quid faciendo vitam æternam possidebo ?",
+        "SYN": "И вот, один законник встал и, искушая Его, сказал: Учитель! что мне делать, чтобы наследовать жизнь вечную?",
+        "NEO": "Et voici qu’un docteur de la Loi, s’étant levé, lui dit pour l’éprouver : « Maître, que ferai-je pour posséder la vie éternelle ? »+ 10:25 25. L’épisode de Marthe et de Marie s’est certainement passé à Béthanie (Jean, xi, 1), et comme, dans l’entretien qui le précède, il est question du chemin \\+qt de Jérusalem à Jéricho\\+qt*, nous pouvons légitimement supposer que cet entretien a eu lieu près de cette dernière ville, la veille de l’arrivée à Béthanie.*",
+        "NAB": "There was a scholar of the law who stood up to test him and said, \"Teacher, what must I do to inherit eternal life?\"",
+        "VAT_ES": "Y entonces, un doctor de la Ley se levantó y le preguntó para ponerlo a prueba: «Maestro, &iquest;qué tengo que hacer para heredar la Vida eterna?».",
+        "CEI": "e non aveva bisogno che qualcuno gli desse testimonianza su un altro, egli infatti sapeva quello che c'è in ogni uomo."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ εἶπεν πρὸς αὐτόν, Ἐν τῷ νόμῳ τί γέγραπται; Πῶς ἀναγινώσκεις;",
+        "VUL": "At ille dixit ad eum : In lege quid scriptum est ? quomodo legis ?",
+        "SYN": "Он же сказал ему: в законе что написано? как читаешь?",
+        "NEO": "Jésus lui dit : « Qu’y a-t-il d’écrit dans la Loi ? Qu’y lis-tu ? »",
+        "NAB": "Jesus said to him, \"What is written in the law? How do you read it?\"",
+        "VAT_ES": "Jesús le preguntó a su vez: «&iquest;Qué está escrito en la Ley? &iquest;Qué lees en ella?»."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ ἀποκριθεὶς εἶπεν, Ἀγαπήσεις κύριον τὸν θεόν σου, ἐξ ὅλης τῆς καρδίας σου, καὶ ἐξ ὅλης τῆς ψυχῆς σου, καὶ ἐξ ὅλης τῆς ἰσχύος σου, καὶ ἐξ ὅλης τῆς διανοίας σου· καὶ τὸν πλησίον σου ὡς σεαυτόν.",
+        "VUL": "Ille respondens dixit : Diliges Dominum Deum tuum ex toto corde tuo, et ex tota anima tua, et ex omnibus viribus tuis, et ex omni mente tua : et proximum tuum sicut teipsum.",
+        "SYN": "Он сказал в ответ: возлюби Господа Бога твоего всем сердцем твоим, и всею душею твоею, и всею крепостию твоею, и всем разумением твоим, и ближнего твоего, как самого себя.",
+        "NEO": "Il répondit : « Tu aimeras le Seigneur ton Dieu de tout cœur, de toute ton âme, de toute tes forces et de tout ton esprit, et ton prochain comme toi-même. »",
+        "NAB": "He said in reply, \"You shall love the Lord, your God, with all your heart, with all your being, with all your strength, and with all your mind, and your neighbor as yourself.\"",
+        "VAT_ES": "El le respondió: «Amarás al Señor, tu Dios, con todo tu corazón, con toda tu alma, con todas tus fuerzas y con todo tu espíritu, y a tu prójimo como a ti mismo»."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Εἶπεν δὲ αὐτῷ, Ὀρθῶς ἀπεκρίθης· τοῦτο ποίει, καὶ ζήσῃ.",
+        "VUL": "Dixitque illi : Recte respondisti : hoc fac, et vives.",
+        "SYN": "_Иисус_ сказал ему: правильно ты отвечал; так поступай, и будешь жить.",
+        "NEO": "Jésus lui dit : « Tu as bien répondu, fais cela et tu vivras. »",
+        "NAB": "He replied to him, \"You have answered correctly; do this and you will live.\"",
+        "VAT_ES": "«Has respondido exactamente, le dijo Jesús; obra así y alcanzarás la vida»."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ θέλων δικαιοῦν ἑαυτὸν εἶπεν πρὸς τὸν Ἰησοῦν, Καὶ τίς ἐστίν μου πλησίον;",
+        "VUL": "Ille autem volens justificare seipsum, dixit ad Jesum : Et quis est meus proximus ?",
+        "SYN": "Но он, желая оправдать себя, сказал Иисусу: а кто мой ближний?",
+        "NEO": "Mais cet homme, voulant se justifier+ 10:29 29. Se justifier d’avoir posé une question dont il connaissait si bien la réponse.*, dit à Jésus : « Et qui est mon prochain ? »",
+        "NAB": "But because he wished to justify himself, he said to Jesus, \"And who is my neighbor?\"",
+        "VAT_ES": "Pero el doctor de la Ley, para justificar su intervención, le hizo esta pregunta: «&iquest;Y quién es mi prójimo?»."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "Ὑπολαβὼν δὲ ὁ Ἰησοῦς εἶπεν, Ἄνθρωπός τις κατέβαινεν ἀπὸ Ἱερουσαλὴμ εἰς Ἰεριχώ, καὶ λῃσταῖς περιέπεσεν, οἳ καὶ ἐκδύσαντες αὐτὸν καὶ πληγὰς ἐπιθέντες ἀπῆλθον, ἀφέντες ἡμιθανῆ τυγχάνοντα.",
+        "VUL": "Suscipiens autem Jesus, dixit : Homo quidam descendebat ab Jerusalem in Jericho, et incidit in latrones, qui etiam despoliaverunt eum : et plagis impositis abierunt semivivo relicto.",
+        "SYN": "На это сказал Иисус: некоторый человек шел из Иерусалима в Иерихон и попался разбойникам, которые сняли с него одежду, изранили его и ушли, оставив его едва живым.",
+        "NEO": "Jésus reprit : « Un homme descendait de Jérusalem à Jéricho ; il tomba entre les mains des brigands, qui le dépouillèrent, et l’ayant chargé de coups, se retirèrent, le laissant à demi-mort.",
+        "NAB": "Jesus replied, \"A man fell victim to robbers as he went down from Jerusalem to Jericho. They stripped and beat him and went off leaving him half-dead.",
+        "VAT_ES": "Jesús volvió a tomar la palabra y le respondió: «Un hombre bajaba de Jerusalén a Jericó y cayó en manos de unos ladrones, que lo despojaron de todo, lo hirieron y se fueron, dejándolo medio muerto."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "Κατὰ συγκυρίαν δὲ ἱερεύς τις κατέβαινεν ἐν τῇ ὁδῷ ἐκείνῃ· καὶ ἰδὼν αὐτὸν ἀντιπαρῆλθεν.",
+        "VUL": "Accidit autem ut sacerdos quidam descenderet eadem via : et viso illo præterivit.",
+        "SYN": "По случаю один священник шел тою дорогою и, увидев его, прошел мимо.",
+        "NEO": "Or, il arriva qu’un prêtre descendait par le même chemin ; il vit cet homme et passa outre.",
+        "NAB": "A priest happened to be going down that road, but when he saw him, he passed by on the opposite side.",
+        "VAT_ES": "Casualmente bajaba por el mismo camino un sacerdote: lo vio y siguió de largo."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "Ὁμοίως δὲ καὶ Λευΐτης γενόμενος κατὰ τὸν τόπον ἐλθὼν καὶ ἰδὼν ἀντιπαρῆλθεν.",
+        "VUL": "Similiter et Levita, cum esset secus locum, et videret eum, pertransiit.",
+        "SYN": "Также и левит, быв на том месте, подошел, посмотрел и прошел мимо.",
+        "NEO": "De même un lévite, étant venu dans ce lieu, s’approcha, le vit et passa outre.",
+        "NAB": "Likewise a Levite came to the place, and when he saw him, he passed by on the opposite side.",
+        "VAT_ES": "También pasó por allí un levita: lo vio y siguió su camino."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Σαμαρείτης δέ τις ὁδεύων ἦλθεν κατ’ αὐτόν, καὶ ἰδὼν αὐτὸν ἐσπλαγχνίσθη,",
+        "VUL": "Samaritanus autem quidam iter faciens, venit secus eum : et videns eum, misericordia motus est.",
+        "SYN": "Самарянин же некто, проезжая, нашел на него и, увидев его, сжалился",
+        "NEO": "Mais un Samaritain, qui était en voyage, arriva près de lui, et, le voyant, fut touché de compassion.",
+        "NAB": "But a Samaritan traveler who came upon him was moved with compassion at the sight.",
+        "VAT_ES": "Pero un samaritano que viajaba por allí, al pasar junto a él, lo vio y se conmovió."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "καὶ προσελθὼν κατέδησεν τὰ τραύματα αὐτοῦ, ἐπιχέων ἔλαιον καὶ οἶνον· ἐπιβιβάσας δὲ αὐτὸν ἐπὶ τὸ ἴδιον κτῆνος, ἤγαγεν αὐτὸν εἰς πανδοχεῖον, καὶ ἐπεμελήθη αὐτοῦ.",
+        "VUL": "Et appropians alligavit vulnera ejus, infundens oleum et vinum : et imponens illum in jumentum suum, duxit in stabulum, et curam ejus egit.",
+        "SYN": "и, подойдя, перевязал ему раны, возливая масло и вино; и, посадив его на своего осла, привез его в гостиницу и позаботился о нем;",
+        "NEO": "Il s’approcha, banda ses plaies, après y avoir versé de l’huile et du vin ; puis il le mit sur sa propre monture, le mena dans une hôtellerie, et prit soin de lui.",
+        "NAB": "He approached the victim, poured oil and wine over his wounds and bandaged them. Then he lifted him up on his own animal, took him to an inn and cared for him.",
+        "VAT_ES": "Entonces se acercó y vendó sus heridas, cubriéndolas con aceite y vino; después lo puso sobre su propia montura, lo condujo a un albergue y se encargó de cuidarlo."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "Καὶ ἐπὶ τὴν αὔριον ἐξελθών, ἐκβαλὼν δύο δηνάρια ἔδωκεν τῷ πανδοχεῖ, καὶ εἶπεν αὐτῷ, Ἐπιμελήθητι αὐτοῦ· καὶ ὅ τι ἂν προσδαπανήσῃς, ἐγὼ ἐν τῷ ἐπανέρχεσθαί με ἀποδώσω σοι.",
+        "VUL": "Et altera die protulit duos denarios, et dedit stabulario, et ait : Curam illius habe : et quodcumque supererogaveris, ego cum rediero reddam tibi.",
+        "SYN": "а на другой день, отъезжая, вынул два динария, дал содержателю гостиницы и сказал ему: позаботься о нем; и если издержишь что более, я, когда возвращусь, отдам тебе.",
+        "NEO": "Le lendemain, tirant deux deniers, il les donna à l’hôte et lui dit : Aie soin de cet homme, et tout ce que tu dépenseras de plus, je te le rendrai à mon retour.",
+        "NAB": "The next day he took out two silver coins and gave them to the innkeeper with the instruction, 'Take care of him. If you spend more than what I have given you, I shall repay you on my way back.'",
+        "VAT_ES": "Al día siguiente, sacó dos denarios y se los dio al dueño del albergue, diciéndole: \"Cuídalo, y lo que gastes de más, te lo pagaré al volver\""
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "Τίς οὖν τούτων τῶν τριῶν πλησίον δοκεῖ σοι γεγονέναι τοῦ ἐμπεσόντος εἰς τοὺς λῃστάς;",
+        "VUL": "Quis horum trium videtur tibi proximus fuisse illi, qui incidit in latrones ?",
+        "SYN": "Кто из этих троих, думаешь ты, был ближний попавшемуся разбойникам?",
+        "NEO": "Lequel de ces trois te semble avoir été le prochain de l’homme qui tomba entre les mains des brigands ? »",
+        "NAB": "Which of these three, in your opinion, was neighbor to the robbers' victim?\"",
+        "VAT_ES": "&iquest;Cuál de los tres te parece que se portó como prójimo del hombre asaltado por los ladrones?»."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ εἶπεν, Ὁ ποιήσας τὸ ἔλεος μετ’ αὐτοῦ. Εἶπεν οὖν αὐτῷ ὁ Ἰησοῦς, Πορεύου, καὶ σὺ ποίει ὁμοίως.",
+        "VUL": "At ille dixit : Qui fecit misericordiam in illum. Et ait illi Jesus : Vade, et tu fac similiter.",
+        "SYN": "Он сказал: оказавший ему милость. Тогда Иисус сказал ему: иди, и ты поступай так же.",
+        "NEO": "Le docteur répondit : « Celui qui a pratiqué la miséricorde envers lui. » Et Jésus lui dit : « Toi aussi, va et fais de même. »",
+        "NAB": "He answered, \"The one who treated him with mercy.\" Jesus said to him, \"Go and do likewise.\"",
+        "VAT_ES": "«El que tuvo compasión de él», le respondió el doctor. Y Jesús le dijo: «Ve, y procede tú de la misma manera».El encuentro de Jesús con Marta y María"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "BYZ": "¶Ἐγένετο δὲ ἐν τῷ πορεύεσθαι αὐτούς, καὶ αὐτὸς εἰσῆλθεν εἰς κώμην τινά· γυνὴ δέ τις ὀνόματι Μάρθα ὑπεδέξατο αὐτὸν εἰς τὸν οἶκον αὐτῆς.",
+        "VUL": "Factum est autem, dum irent, et ipse intravit in quoddam castellum : et mulier quædam, Martha nomine, excepit illum in domum suam,",
+        "SYN": "В продолжение пути их пришел Он в одно селение; здесь женщина, именем Марфа, приняла Его в дом свой;",
+        "NEO": "Pendant qu’ils étaient en chemin, Jésus entra dans un village, et une femme, nommée Marthe, le reçut dans sa maison.+ 10:38 38. Il s’agit du village de Béthanie, près de Jérusalem, la demeure de \\+qt Marie\\+qt* et de \\+qt Marthe\\+qt*, sœurs de Lazare. Jean, viii, 1 ; xi, 5.*",
+        "NAB": "As they continued their journey he entered a village where a woman whose name was Martha welcomed him.",
+        "VAT_ES": "Mientras iban caminando, Jesús entró en un pueblo, y una mujer que se llamaba Marta lo recibió en su casa."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "BYZ": "Καὶ τῇδε ἦν ἀδελφὴ καλουμένη Μαρία, ἣ καὶ παρακαθίσασα παρὰ τοὺς πόδας τοῦ Ἰησοῦ ἤκουεν τὸν λόγον αὐτοῦ.",
+        "VUL": "et huic erat soror nomine Maria, quæ etiam sedens secus pedes Domini, audiebat verbum illius.",
+        "SYN": "у нее была сестра, именем Мария, которая села у ног Иисуса и слушала слово Его.",
+        "NEO": "Elle avait une sœur, nommée Marie, qui, s’étant assise aux pieds du Seigneur, écoutait sa parole,",
+        "NAB": "She had a sister named Mary (who) sat beside the Lord at his feet listening to him speak.",
+        "VAT_ES": "Tenía una hermana llamada María, que sentada a los pies del Señor, escuchaba su Palabra."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "BYZ": "Ἡ δὲ Μάρθα περιεσπᾶτο περὶ πολλὴν διακονίαν· ἐπιστᾶσα δὲ εἶπεν, Κύριε, οὐ μέλει σοι ὅτι ἡ ἀδελφή μου μόνην με κατέλειπεν διακονεῖν; Εἰπὲ οὖν αὐτῇ ἵνα μοι συναντιλάβηται.",
+        "VUL": "Martha autem satagebat circa frequens ministerium : quæ stetit, et ait : Domine, non est tibi curæ quod soror mea reliquit me solam ministrare ? dic ergo illi ut me adjuvet.",
+        "SYN": "Марфа же заботилась о большом угощении и, подойдя, сказала: Господи! или Тебе нужды нет, что сестра моя одну меня оставила служить? скажи ей, чтобы помогла мне.",
+        "NEO": "tandis que Marthe s’empressait aux divers soins du service. S’étant donc arrêtée : « Seigneur, dit-elle, ne te mets-tu pas en peine que ma sœur m’ait laissée servir seule ? Dites-lui donc de m’aider. »",
+        "NAB": "Martha, burdened with much serving, came to him and said, \"Lord, do you not care that my sister has left me by myself to do the serving? Tell her to help me.\"",
+        "VAT_ES": "Marta, que muy estaba muy ocupada con los quehaceres de la casa, dijo a Jesús: «Señor, &iquest;no te importa que mi hermana me deje sola con todo el trabajo? Dile que me ayude»."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "BYZ": "Ἀποκριθεὶς δὲ εἶπεν αὐτῇ ὁ Ἰησοῦς, Μάρθα, Μάρθα, μεριμνᾷς καὶ τυρβάζῃ περὶ πολλά·",
+        "VUL": "Et respondens dixit illi Dominus : Martha, Martha, sollicita es, et turbaris erga plurima,",
+        "SYN": "Иисус же сказал ей в ответ: Марфа! Марфа! ты заботишься и суетишься о многом,",
+        "NEO": "Le Seigneur lui répondit : « Marthe, Marthe, tu t’inquiètes et t’agites pour beaucoup de choses.",
+        "NAB": "The Lord said to her in reply, \"Martha, Martha, you are anxious and worried about many things.",
+        "VAT_ES": "Pero el Señor le respondió: «Marta, Marta, te inquietas y te agitas por muchas cosas,"
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "BYZ": "ἑνὸς δέ ἐστιν χρεία· Μαρία δὲ τὴν ἀγαθὴν μερίδα ἐξελέξατο, ἥτις οὐκ ἀφαιρεθήσεται ἀπ’ αὐτῆς.",
+        "VUL": "porro unum est necessarium. Maria optimam partem elegit, quæ non auferetur ab ea.",
+        "SYN": "а одно только нужно; Мария же избрала благую часть, которая не отнимется у нее.",
+        "NEO": "Une seule est nécessaire. Marie a choisi la bonne+ 10:42 Certaines bibles traduisent la \\+it meilleure\\+it* part, suivant en cela une liberté de St Jérôme dans la Vulgate. Le texte grec emploie le mot \\+it αγαθην\\+it* qui signifie \\+it bon\\+it*.* part, qui ne lui sera pas ôtée. »",
+        "NAB": "There is need of only one thing. Mary has chosen the better part and it will not be taken from her.\"",
+        "VAT_ES": "y sin embargo, pocas cosas, o más bien, una sola es necesaria, María eligió la mejor parte, que no le será quitada»."
+      }
+    }
+  }
+}

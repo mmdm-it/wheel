@@ -1,0 +1,550 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_022",
+  "book_key": "DEUT",
+  "sequence": 22,
+  "chapter_in": {
+    "MT": 22,
+    "VUL": 22,
+    "LXX": 22
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לֹֽא תִרְאֶה֩ אֶת שׁ֨וֹר אָחִ֜י/ךָ א֤וֹ אֶת שֵׂי/וֹ֙ נִדָּחִ֔ים וְ/הִתְעַלַּמְתָּ֖ מֵ/הֶ֑ם הָשֵׁ֥ב תְּשִׁיבֵ֖/ם לְ/אָחִֽי/ךָ׃",
+        "LXX": "Μὴ ἰδὼν τὸν μόσχον τοῦ ἀδελφοῦ σου ἢ τὸ πρόβατον αὐτοῦ πλανώμενα ἐν τῇ ὁδῷ, μὴ ὑπερίδῃς αὐτά· ἀποστροφῇ ἀποστρέψεις αὐτὰ τῷ ἀδελφῷ σου καὶ ἀποδώσεις αὐτῷ.",
+        "VUL": "Non videbis bovem fratris tui, aut ovem errantem, et præteribis : sed reduces fratri tuo,",
+        "SYN": "Когда увидишь вола брата твоего или овцу его заблудившихся, не оставляй их, но возврати их брату твоему;",
+        "NEO": "Si tu vois le bœuf ou la brebis de ton frère égarés dans les champs, tu ne t’en détourneras pas, mais tu les ramèneras à ton frère.",
+        "NAB": "\"You shall not see your kinsman's ox or sheep driven astray without showing concern about it; see to it that it is returned to your kinsman.",
+        "VAT_ES": "Si ves extraviados al buey o a la oveja de tu hermano, no te despreocupes de ellos y vé a devolvérselos cuanto antes.",
+        "CEI": "Se vedi smarriti un bue o una pecora di tuo fratello, tu non devi fingere di non averli scorti, ma avrai cura di ricondurli a tuo fratello."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/אִם לֹ֨א קָר֥וֹב אָחִ֛י/ךָ אֵלֶ֖י/ךָ וְ/לֹ֣א יְדַעְתּ֑/וֹ וַ/אֲסַפְתּ/וֹ֙ אֶל תּ֣וֹךְ בֵּיתֶ֔/ךָ וְ/הָיָ֣ה עִמְּ/ךָ֗ עַ֣ד דְּרֹ֤שׁ אָחִ֨י/ךָ֙ אֹת֔/וֹ וַ/הֲשֵׁבֹת֖/וֹ לֽ/וֹ׃",
+        "LXX": "ἐὰν δὲ μὴ ἐγγίζῃ ὁ ἀδελφός σου πρὸς σὲ μηδὲ ἐπίστῃ αὐτόν, συνάξεις αὐτὸν ἔνδον εἰς τὴν οἰκίαν σου, καὶ ἔσται μετὰ σοῦ ἕως ἂν ζητήσῃ αὐτὰ ὁ ἀδελφός σου, καὶ ἀποδώσεις αὐτῷ.",
+        "VUL": "etiamsi non est propinquus frater tuus, nec nosti eum : duces in domum tuam, et erunt apud te quamdiu quærat ea frater tuus, et recipiat.",
+        "SYN": "если же не близко будет к тебе брат твой, или ты не знаешь его, то прибери их в дом свой, и пусть они будут у тебя, доколе брат твой не будет искать их, и тогда возврати ему их;",
+        "NEO": "Si ton frère n’habite pas près de toi et que tu ne le connaisses pas, tu recueilleras l’animal dans ta maison, et il restera chez toi jusqu’à ce que ton frère le recherche, et alors tu le lui rendras.",
+        "NAB": "If this kinsman does not live near you, or you do not know who he may be, take it to your own place and keep it with you until he claims it; then give it back to him.",
+        "VAT_ES": "Si ese hermano no es tu vecino o no sabes quién es, encierra al animal en tu casa y cuídalo hasta que él lo venga a reclamar. Entonces se lo devolverás.",
+        "CEI": "Se tuo fratello non abita vicino a te e non lo conosci, accoglierai l'animale in casa tua: rimarrà da te finché tuo fratello non ne faccia ricerca e allora glielo renderai."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/כֵ֧ן תַּעֲשֶׂ֣ה לַ/חֲמֹר֗/וֹ וְ/כֵ֣ן תַּעֲשֶׂה֮ לְ/שִׂמְלָת/וֹ֒ וְ/כֵ֣ן תַּעֲשֶׂ֜ה לְ/כָל אֲבֵדַ֥ת אָחִ֛י/ךָ אֲשֶׁר תֹּאבַ֥ד מִמֶּ֖/נּוּ וּ/מְצָאתָ֑/הּ לֹ֥א תוּכַ֖ל לְ/הִתְעַלֵּֽם׃",
+        "LXX": "οὕτως ποιήσεις τὸν ὄνον αὐτοῦ, καὶ οὕτως ποιήσεις κατὰ πᾶσαν ἀπωλίαν τοῦ ἀδελφοῦ σου· ὅσα ἐὰν ἀπόληται παρ’ αὐτοῦ καὶ εὕρῃς, οὐ δυνήσῃ ὑπεριδεῖν.",
+        "VUL": "Similiter facies de asino, et de vestimento, et de omni re fratris tui, quæ perierit : si inveneris eam, ne negligas quasi alienam.",
+        "SYN": "так поступай и с ослом его, так поступай с одеждой его, так поступай со всякою потерянною _вещью_ брата твоего, которая будет им потеряна и которую ты найдешь; нельзя тебе уклоняться _от_ _сего._",
+        "NEO": "Tu feras de même pour son âne, et tu feras de même pour son manteau, et tu feras de même pour tout objet perdu, que ton frère aurait perdu et que tu trouverais ; tu ne dois pas t’en détourner.",
+        "NAB": "You shall do the same with his ass, or his garment, or anything else which your kinsman loses and you happen to find; you may not be unconcerned about them.",
+        "VAT_ES": "Lo mismo harás con su asno, con su ropa y con cualquier otro objeto que pierdas tu hermano y que tú encuentres: no podrás despreocuparte de ellos",
+        "CEI": "Lo stesso farai del suo asino, lo stesso della sua veste, lo stesso di qualunque altro oggetto che tuo fratello abbia perduto e che tu trovi; tu non fingerai di non averli scorti."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "לֹא תִרְאֶה֩ אֶת חֲמ֨וֹר אָחִ֜י/ךָ א֤וֹ שׁוֹר/וֹ֙ נֹפְלִ֣ים בַּ/דֶּ֔רֶךְ וְ/הִתְעַלַּמְתָּ֖ מֵ/הֶ֑ם הָקֵ֥ם תָּקִ֖ים עִמּֽ/וֹ׃",
+        "LXX": "Οὐκ ὄψῃ τὸν ὄνον τοῦ ἀδελφοῦ σου ἢ τὸν μόσχον αὐτοῦ πεπτωκότας ἐν τῇ ὁδῷ· μὴ ὑπερίδῃς αὐτούς· ἀνιστῶν ἀναστήσεις μετ’ αὐτοῦ.",
+        "VUL": "Si videris asinum fratris tui aut bovem cecidisse in via, non despicies, sed sublevabis cum eo.",
+        "SYN": "Когда увидишь осла брата твоего или вола его упадших на пути, не оставляй их, но подними их с ним вместе.",
+        "NEO": "Si tu vois l’âne de ton frère ou son bœuf s’abattre dans le chemin, tu ne t’en détourneras pas ; tu ne manqueras pas de l’aider à les relever.",
+        "NAB": "You shall not see your kinsman's ass or ox foundering on the road without showing concern about it; see to it that you help him lift it up.",
+        "VAT_ES": "Si ves caídos en el camino al asno o al buey de tu hermano, no te despreocupes de ellos y ayúdalo a levantarlos.",
+        "CEI": "Se vedi l'asino del tuo fratello o il suo bue caduto nella strada, tu non fingerai di non averli scorti, ma insieme con lui li farai rialzare."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לֹא יִהְיֶ֤ה כְלִי גֶ֨בֶר֙ עַל אִשָּׁ֔ה וְ/לֹא יִלְבַּ֥שׁ גֶּ֖בֶר שִׂמְלַ֣ת אִשָּׁ֑ה כִּ֧י תוֹעֲבַ֛ת יְהוָ֥ה אֱלֹהֶ֖י/ךָ כָּל עֹ֥שֵׂה אֵֽלֶּה׃",
+        "LXX": "Οὐκ ἔσται σκεύη ἀνδρὸς ἐπὶ γυναικί, οὐδὲ μὴ ἐνδύσηται ἀνὴρ στολὴν γυναικίαν· ὅτι βδέλυγμα Κυρίῳ τῷ θεῷ σού ἐστιν πᾶς ποιῶν ταῦτα.",
+        "VUL": "Non induetur mulier veste virili, nec vir utetur veste feminea : abominabilis enim apud Deum est qui facit hæc.",
+        "SYN": "На женщине не должно быть мужской одежды, и мужчина не должен одеваться в женское платье, ибо мерзок пред Господом Богом твоим всякий делающий сие.",
+        "NEO": "Une femme ne portera pas un habit d’homme, et un homme ne mettra pas un vêtement de femme ; car quiconque fait ces choses est en abomination à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu.",
+        "NAB": "\"A woman shall not wear an article proper to a man, nor shall a man put on a woman's dress; for anyone who does such things is an abomination to the LORD, your God.",
+        "VAT_ES": "La mujer no se pondrá ropa de hombre, ni el hombre un vestido de mujer: el que lo hace resulta abominable a los ojos del Señor, tu Dios.",
+        "CEI": "La donna non si metterà un indumento da uomo né l'uomo indosserà una veste da donna; perché chiunque fa tali cose è in abominio al Signore tuo Dio."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כִּ֣י יִקָּרֵ֣א קַן צִפּ֣וֹר לְ/פָנֶ֡י/ךָ בַּ/דֶּ֜רֶךְ בְּ/כָל עֵ֣ץ א֣וֹ עַל הָ/אָ֗רֶץ אֶפְרֹחִים֙ א֣וֹ בֵיצִ֔ים וְ/הָ/אֵ֤ם רֹבֶ֨צֶת֙ עַל הָֽ/אֶפְרֹחִ֔ים א֖וֹ עַל הַ/בֵּיצִ֑ים לֹא תִקַּ֥ח הָ/אֵ֖ם עַל הַ/בָּנִֽים׃",
+        "LXX": "Ἐὰν δὲ συναντήσῃς νοσσιᾷ ὀρνέων πρὸ προσώπου σου ἐν τῇ ὁδῷ ἢ ἐπὶ παντὶ δένδρει ἢ ἐπὶ τῆς γῆς, νοσσοῖς ἢ ὠοῖς, καὶ ἡ μήτηρ θάλπῃ ἐπὶ τῶν νοσσῶν ἢ ἐπὶ τῶν ὠῶν, οὐ λήμψῃ τὴν μητέρα μετὰ τῶν τέκνων·",
+        "VUL": "Si ambulans per viam, in arbore vel in terra nidum avis inveneris, et matrem pullis vel ovis desuper incubantem : non tenebis eam cum filiis,",
+        "SYN": "Если попадется тебе на дороге птичье гнездо на каком-либо дереве или на земле, с птенцами или яйцами, и мать сидит на птенцах или на яйцах, то не бери матери вместе с детьми:",
+        "NEO": "Si tu rencontres dans ton chemin un nid d’oiseau, sur un arbre ou sur la terre, avec des petits ou des œufs, et la mère couchée sur les petits ou sur les œufs, tu ne prendras pas la mère avec les petits ;",
+        "NAB": "\"If, while walking along, you chance upon a bird's nest with young birds or eggs in it, in any tree or on the ground, and the mother bird is sitting on them, you shall not take away the mother bird along with her brood;",
+        "VAT_ES": "Si mientras vas caminando, encuentras en un árbol o en el suelo un nido de pájaros con pichones o con huevos, y la madre está echada encima de ellos, no tomes a la madre con su cría.",
+        "CEI": "Quando, cammin facendo, troverai sopra un albero o per terra un nido d'uccelli con uccellini o uova e la madre che sta per covare gli uccellini o le uova, non prenderai la madre sui figli;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "שַׁלֵּ֤חַ תְּשַׁלַּח֙ אֶת הָ/אֵ֔ם וְ/אֶת הַ/בָּנִ֖ים תִּֽקַּֽח לָ֑/ךְ לְמַ֨עַן֙ יִ֣יטַב לָ֔/ךְ וְ/הַאֲרַכְתָּ֖ יָמִֽים׃",
+        "LXX": "ἀποστολῇ ἀποστελεῖς τὴν μητέρα, τὰ δὲ παιδία λήμψῃ σεαυτῷ, ἵνα εὖ σοι γένηται καὶ πολυήμερος γένῃ.",
+        "VUL": "sed abire patieris, captos tenens filios : ut bene sit tibi, et longo vivas tempore.",
+        "SYN": "мать пусти, а детей возьми себе, чтобы тебе было хорошо, и чтобы продлились дни твои.",
+        "NEO": "tu ne manqueras pas de laisser aller la mère, et tu ne prendras pour toi que les petits, afin que tu sois heureux et que tu prolonges tes jours.",
+        "NAB": "you shall let her go, although you may take her brood away. It is thus that you shall have prosperity and a long life.",
+        "VAT_ES": "Deja en libertad a la madre y toma para ti los pichones. Así serás feliz y tendrás una larga vida.",
+        "CEI": "ma scacciandola, lascia andar la madre e prendi per te i figli, perché tu sia felice e goda lunga vita."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּ֤י תִבְנֶה֙ בַּ֣יִת חָדָ֔שׁ וְ/עָשִׂ֥יתָ מַעֲקֶ֖ה לְ/גַגֶּ֑/ךָ וְ/לֹֽא תָשִׂ֤ים דָּמִים֙ בְּ/בֵיתֶ֔/ךָ כִּֽי יִפֹּ֥ל הַ/נֹּפֵ֖ל מִמֶּֽ/נּוּ׃",
+        "LXX": "Ἐὰν οἰκοδομήσῃς οἰκίαν καινήν, καὶ ποιήσεις στεφάνην τῷ δώματί σου· καὶ οὐ ποιήσεις φόνον ἐν τῇ οἰκίᾳ σου, ἐὰν πέσῃ ὁ πεσὼν ἀπ’ αὐτοῦ.",
+        "VUL": "Cum ædificaveris domum novam, facies murum tecti per circuitum : ne effundatur sanguis in domo tua, et sis reus labente alio, et in præceps ruente.",
+        "SYN": "Если будешь строить новый дом, то сделай перила около кровли твоей, чтобы не навести тебе крови на дом твой, когда кто-- нибудь упадет с него.",
+        "NEO": "Quand tu bâtiras une maison neuve, tu feras une balustrade autour de ton toit, afin de ne pas mettre du sang sur ta maison, dans le cas où quelqu’un viendrait à tomber de là.",
+        "NAB": "\"When you build a new house, put a parapet around the roof; otherwise, if someone falls off, you will bring bloodguilt upon your house.",
+        "VAT_ES": "Cuando construyas una casa nueva, pondrás una baranda alrededor de la terraza. Así no harás a tu casa responsable de derramamiento de sangre, en el caso de que alguien se caiga de allí.",
+        "CEI": "Quando costruirai una casa nuova, farai un parapetto intorno alla tua terrazza, per non attirare sulla tua casa la vendetta del sangue, qualora uno cada di là."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לֹא תִזְרַ֥ע כַּרְמְ/ךָ֖ כִּלְאָ֑יִם פֶּן תִּקְדַּ֗שׁ הַֽ/מְלֵאָ֤ה הַ/זֶּ֨רַע֙ אֲשֶׁ֣ר תִּזְרָ֔ע וּ/תְבוּאַ֖ת הַ/כָּֽרֶם׃",
+        "LXX": "Οὐ κατασπερεῖς τὸν ἀμπελῶνά σου δίφορον, ἵνα μὴ ἁγιασθῇ τὸ γένημα καὶ τὸ σπέρμα ὃ ἐὰν σπείρῃ μετὰ τοῦ γενήματος τοῦ ἀμπελῶνός σου.",
+        "VUL": "Non seres vineam tuam altero semine : ne et sementis quam sevisti, et quæ nascuntur ex vinea, pariter sanctificentur.",
+        "SYN": "Не засевай виноградника своего двумя родами семян, чтобы не сделать тебе заклятым сбора семян, которые ты посеешь вместе с плодами виноградника [своего].",
+        "NEO": "Tu n’ensemenceras pas ta vigne de deux sortes de semences ; de peur que le tout ne soit déclaré chose sainte, et la graine que tu as semée, et le produit de la vigne.",
+        "NAB": "\"You shall not sow your vineyard with two different kinds of seed; if you do, its produce shall become forfeit, both the crop you have sown and the yield of the vineyard.",
+        "VAT_ES": "No sembrarás en tu viña otra clase de plantas, porque de lo contrario toda la cosecha será sagrada: tanto el producto de lo que siembres como el fruto de la viña.",
+        "CEI": "Non seminerai nella tua vigna semi di due specie diverse, perché altrimenti tutto il prodotto di ciò che avrai seminato e la rendita della vigna diventerà cosa consacrata."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "לֹֽא תַחֲרֹ֥שׁ בְּ/שׁוֹר וּ/בַ/חֲמֹ֖ר יַחְדָּֽו׃",
+        "LXX": "οὐκ ἀροτριάσεις ἐν μόσχῳ καὶ ὄνῳ ἐπὶ τὸ αὐτό.",
+        "VUL": "Non arabis in bove simul et asino.",
+        "SYN": "Не паши на воле и осле вместе.",
+        "NEO": "Tu ne laboureras pas avec un bœuf et un âne attelés ensemble.",
+        "NAB": "You shall not plow with an ox and an ass harnessed together.",
+        "VAT_ES": "No ares con un buey y un asno juntos.",
+        "CEI": "Non devi arare con un bue e un asino aggiogati assieme."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "לֹ֤א תִלְבַּשׁ֙ שַֽׁעַטְנֵ֔ז צֶ֥מֶר וּ/פִשְׁתִּ֖ים יַחְדָּֽו׃",
+        "LXX": "οὐκ ἐνδύσῃ κίβδηλον, ἔρια καὶ λίνον ἐν τῷ αὐτῷ.",
+        "VUL": "Non indueris vestimento, quod ex lana linoque contextum est.",
+        "SYN": "Не надевай одежды, сделанной из разных веществ, из шерсти и льна вместе.",
+        "NEO": "Tu ne porteras pas un vêtement d’un tissu mélangé de laine et de lin réunis ensemble.",
+        "NAB": "You shall not wear cloth of two different kinds of thread, wool and linen, woven together.",
+        "VAT_ES": "No vestirás ropa tejida de lana mezclada con lino.",
+        "CEI": "Non ti vestirai con un tessuto misto, fatto di lana e di lino insieme."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "גְּדִלִ֖ים תַּעֲשֶׂה לָּ֑/ךְ עַל אַרְבַּ֛ע כַּנְפ֥וֹת כְּסוּתְ/ךָ֖ אֲשֶׁ֥ר תְּכַסֶּה בָּֽ/הּ׃",
+        "LXX": "Στρεπτὰ ποιήσεις σεαυτῷ ἐπὶ τῶν τεσσάρων κρασπέδων τῶν περιβολαίων σου, ἃ ἐὰν περιβάλῃ ἐν αὐτοῖς.",
+        "VUL": "Funiculos in fimbriis facies per quatuor angulos pallii tui, quo operieris.",
+        "SYN": "Сделай себе кисточки на четырех углах покрывала твоего, которым ты покрываешься.",
+        "NEO": "Tu feras des glands aux quatre coins du vêtement dont tu te couvriras.",
+        "NAB": "\"You shall put twisted cords on the four corners of the cloak that you wrap around you.",
+        "VAT_ES": "Coloca unos flecos en las cuatro puntas del manto con que te cubres.",
+        "CEI": "Metterai fiocchi alle quattro estremità del mantello con cui ti copri."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כִּֽי יִקַּ֥ח אִ֖ישׁ אִשָּׁ֑ה וּ/בָ֥א אֵלֶ֖י/הָ וּ/שְׂנֵאָֽ/הּ׃",
+        "LXX": "Ἐὰν δέ τις λάβῃ γυναῖκα καὶ συνοικήσῃ αὐτῇ, καὶ μισήσῃ αὐτήν,",
+        "VUL": "Si duxerit vir uxorem, et postea odio habuerit eam,",
+        "SYN": "Если кто возьмет жену, и войдет к ней, и возненавидит ее,",
+        "NEO": "Si un homme, après avoir pris une femme et être allé vers elle, vient à éprouver pour elle de l’aversion,",
+        "NAB": "\"If a man, after marrying a woman and having relations with her, comes to dislike her,",
+        "VAT_ES": "Si un hombre se casa con una mujer y se une a ella, pero después le toma aversión,",
+        "CEI": "Se un uomo sposa una donna e, dopo aver coabitato con lei, la prende in odio,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/שָׂ֥ם לָ/הּ֙ עֲלִילֹ֣ת דְּבָרִ֔ים וְ/הוֹצִ֥יא עָלֶ֖י/הָ שֵׁ֣ם רָ֑ע וְ/אָמַ֗ר אֶת הָ/אִשָּׁ֤ה הַ/זֹּאת֙ לָקַ֔חְתִּי וָ/אֶקְרַ֣ב אֵלֶ֔י/הָ וְ/לֹא מָצָ֥אתִי לָ֖/הּ בְּתוּלִֽים׃",
+        "LXX": "καὶ ἐπιθῇ αὐτῇ προφασιστικοὺς λόγους, καὶ κατενέγκῃ αὐτῆς ὄνομα πονηρὸν καὶ λέγῃ Τὴν γυναῖκα ταύτην εἴληφα, καὶ προσελθὼν αὐτῇ οὐχ εὕρηκα αὐτῆς τὰ παρθένια·",
+        "VUL": "quæsieritque occasiones quibus dimittat eam, objiciens ei nomen pessimum, et dixerit : Uxorem hanc accepi, et ingressus ad eam non inveni virginem :",
+        "SYN": "и будет возводить на нее порочные дела, и пустит о ней худую молву, и скажет: \"я взял сию жену, и вошел к ней, и не нашел у нее девства\",",
+        "NEO": "et lui impute des choses déshonorantes et porte atteinte à sa réputation, en disant : « J’ai pris cette femme et, quand je suis venu vers elle, je ne l’ai pas trouvée vierge »,",
+        "NAB": "and makes monstrous charges against her and defames her by saying, 'I married this woman, but when I first had relations with her I did not find her a virgin,'",
+        "VAT_ES": "la acusa falsamente y la difama, diciendo: «Yo me casé con esta mujer, y cuando me uní a ella comprobé que no era virgen»,",
+        "CEI": "le attribuisce azioni scandalose e diffonde sul suo conto una fama cattiva, dicendo: Ho preso questa donna, ma quando mi sono accostato a lei non l'ho trovata in stato di verginità,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/לָקַ֛ח אֲבִ֥י ה/נער הַֽ/נַּעֲרָ֖ה וְ/אִמָּ֑/הּ וְ/הוֹצִ֜יאוּ אֶת בְּתוּלֵ֧י ה/נער הַֽ/נַּעֲרָ֛ה אֶל זִקְנֵ֥י הָ/עִ֖יר הַ/שָּֽׁעְרָ/ה׃",
+        "LXX": "καὶ λαβὼν ὁ πατὴρ τῆς παιδὸς καὶ ἡ μήτηρ ἐξοίσουσιν τὰ παρθένια τῆς παιδὸς πρὸς τὴν γερουσίαν ἐπὶ τὴν πύλην,",
+        "VUL": "tollent eam pater et mater ejus, et ferent secum signa virginitatis ejus ad seniores urbis qui in porta sunt :",
+        "SYN": "то отец отроковицы и мать ее пусть возьмут и вынесут _признаки_ девства отроковицы к старейшинам города, к воротам;",
+        "NEO": "le père et la mère de la jeune femme prendront les signes de sa virginité, et les produiront devant les anciens de la ville, à la porte.",
+        "NAB": "the father and mother of the girl shall take the evidence of her virginity and bring it to the elders at the city gate.",
+        "VAT_ES": "entonces el padre y la madre de la joven tomarán las pruebas de su virginidad, y las exhibirán ante los ancianos, en la puerta de la ciudad.",
+        "CEI": "il padre e la madre della giovane prenderanno i segni della verginità della giovane e li presenteranno agli anziani della città, alla porta."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/אָמַ֛ר אֲבִ֥י ה/נער הַֽ/נַּעַרָ֖ה אֶל הַ/זְּקֵנִ֑ים אֶת בִּתִּ֗/י נָתַ֜תִּי לָ/אִ֥ישׁ הַ/זֶּ֛ה לְ/אִשָּׁ֖ה וַ/יִּשְׂנָאֶֽ/הָ׃",
+        "LXX": "καὶ ἐρεῖ ὁ πατὴρ τῆς παιδὸς τῇ γερουσίᾳ Τὴν θυγατέρα μου ταύτην δέδωκα τῷ ἀνθρώπῳ τούτῳ γυναῖκα, καὶ μισήσας αὐτὴν",
+        "VUL": "et dicet pater : Filiam meam dedi huic uxorem : quam quia odit,",
+        "SYN": "и отец отроковицы скажет старейшинам: дочь мою я отдал в жену сему человеку, и [ныне] он возненавидел ее,",
+        "NEO": "Le père de la jeune fille dira aux anciens : « J’ai donné ma fille pour femme à cet homme et, l’ayant prise en aversion,",
+        "NAB": "There the father of the girl shall say to the elders, 'I gave my daughter to this man in marriage, but he has come to dislike her,",
+        "VAT_ES": "El padre de la joven dirá a los ancianos: «Yo entregué mi hija a este hombre para que fuera su esposa, pero él le ha tomado aversión",
+        "CEI": "Il padre della giovane dirà agli anziani: Ho dato mia figlia in moglie a quest'uomo; egli l'ha presa in odio"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּה ה֡וּא שָׂם֩ עֲלִילֹ֨ת דְּבָרִ֜ים לֵ/אמֹ֗ר לֹֽא מָצָ֤אתִי לְ/בִתְּ/ךָ֙ בְּתוּלִ֔ים וְ/אֵ֖לֶּה בְּתוּלֵ֣י בִתִּ֑/י וּ/פָֽרְשׂוּ֙ הַ/שִּׂמְלָ֔ה לִ/פְנֵ֖י זִקְנֵ֥י הָ/עִֽיר׃",
+        "LXX": "νῦν οὗτος ἐπιτίθησιν αὐτῇ προφασιστικοὺς λόγους, λέγων Οὐχ εὕρηκα τῇ θυγατρί σου παρθένια, καὶ ταῦτα τὰ παρθένια τῆς θυγατρός μου, καὶ ἀναπτύξουσιν τὸ ἱμάτιον ἐναντίον τῆς γερουσίας τῆς πόλεως.",
+        "VUL": "imponit ei nomen pessimum, ut dicat : Non inveni filiam tuam virginem : et ecce hæc sunt signa virginitatis filiæ meæ. Expandent vestimentum coram senioribus civitatis :",
+        "SYN": "и вот, он взводит [на нее] порочные дела, говоря: \"я не нашел у дочери твоей девства\"; но вот признаки девства дочери моей. И расстелют одежду пред старейшинами города.",
+        "NEO": "il lui impute des choses déshonorantes en disant : Je n’ai pas trouvé ta fille vierge. Or voici les signes de virginité de ma fille. » Et ils déploieront son vêtement devant les anciens de la ville.",
+        "NAB": "and now brings monstrous charges against her, saying: I did not find your daughter a virgin. But here is the evidence of my daughter's virginity!' And they shall spread out the cloth before the elders of the city.",
+        "VAT_ES": "y ahora la acusa falsamente, declarando que no encontró en ella las señales de la virginidad. Aquí están las pruebas de que mi hija era realmente virgen». Y en seguida extenderán la sábana nupcial ante los ancianos de la ciudad.",
+        "CEI": "ed ecco le attribuisce azioni scandalose, dicendo: Non ho trovato tua figlia in stato di verginità; ebbene, questi sono i segni della verginità di mia figlia, e spiegheranno il panno davanti agli anziani della città."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/לָֽקְח֛וּ זִקְנֵ֥י הָֽ/עִיר הַ/הִ֖וא אֶת הָ/אִ֑ישׁ וְ/יִסְּר֖וּ אֹתֽ/וֹ׃",
+        "LXX": "καὶ λήμψεται ἡ γερουσία τῆς πόλεως ἐκείνης τὸν ἄνθρωπον ἐκεῖνον καὶ παιδεύσουσιν αὐτόν,",
+        "VUL": "apprehendentque senes urbis illius virum, et verberabunt illum,",
+        "SYN": "Тогда старейшины того города пусть возьмут мужа и накажут его,",
+        "NEO": "Alors les anciens de la ville saisiront cet homme et le châtieront ;",
+        "NAB": "Then these city elders shall take the man and chastise him,",
+        "VAT_ES": "Entonces estos tomarán al hombre y lo castigarán",
+        "CEI": "Allora gli anziani di quella città prenderanno il marito e lo castigheranno"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/עָנְשׁ֨וּ אֹת֜/וֹ מֵ֣אָה כֶ֗סֶף וְ/נָתְנוּ֙ לַ/אֲבִ֣י הַֽ/נַּעֲרָ֔ה כִּ֤י הוֹצִיא֙ שֵׁ֣ם רָ֔ע עַ֖ל בְּתוּלַ֣ת יִשְׂרָאֵ֑ל וְ/לֽ/וֹ תִהְיֶ֣ה לְ/אִשָּׁ֔ה לֹא יוּכַ֥ל לְ/שַּׁלְּחָ֖/הּ כָּל יָמָֽי/ו׃",
+        "LXX": "καὶ ζημιώσουσιν αὐτὸν ἑκατὸν σίκλους καὶ δώσουσιν τῷ πατρὶ τῆς νεάνιδος, ὅτι ἐξήνεγκεν ὄνομα πονηρὸν ἐπὶ παρθένον Ἰσραηλεῖτιν· καὶ αὐτοῦ ἔσται γυνή, οὐ δυνήσεται ἐξαποστεῖλαι αὐτὴν τὸν ἅπαντα χρόνον.",
+        "VUL": "condemnantes insuper centum siclis argenti, quos dabit patri puellæ, quoniam diffamavit nomen pessimum super virginem Israël : habebitque eam uxorem, et non poterit dimittere eam omnibus diebus vitæ suæ.",
+        "SYN": "и наложат на него сто _сиклей_ серебра пени и отдадут отцу отроковицы за то, что он пустил худую молву о девице Израильской; она же пусть останется его женою, и он не может развестись с нею во всю жизнь свою.",
+        "NEO": "en outre, ils lui imposeront une amende de cent sicles d’argent, qu’ils donneront au père de la jeune femme, pour avoir porté atteinte à la réputation d’une vierge d’Israël. Elle restera sa femme, et il ne pourra pas la renvoyer, tant qu’il vivra.",
+        "NAB": "besides fining him one hundred silver shekels, which they shall give to the girl's father, because the man defamed a virgin in Israel. Moreover, she shall remain his wife, and he may not divorce her as long as he lives.",
+        "VAT_ES": "por haber difamado a una virgen israelita, condenándolo, además, a pagar cien siclos de plata, que entregarán al padre de la joven. Ella seguirá siendo su mujer, y el hombre no podrá repudiarla nunca más.",
+        "CEI": "e gli imporranno un'ammenda di cento sicli d'argento, che daranno al padre della giovane, per il fatto che ha diffuso una cattiva fama contro una vergine d'Israele. Ella rimarrà sua moglie ed egli non potrà ripudiarla per tutto il tempo della sua vita."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/אִם אֱמֶ֣ת הָיָ֔ה הַ/דָּבָ֖ר הַ/זֶּ֑ה לֹא נִמְצְא֥וּ בְתוּלִ֖ים ל/נער לַֽ/נַּעֲרָֽה׃",
+        "LXX": "ἐὰν δὲ ἐπ’ ἀληθείας γένηται ὁ λόγος οὗτος καὶ μὴ εὑρεθῇ παρθένια τῇ νεάνιδι,",
+        "VUL": "Quod si verum est quod objicit, et non est in puella inventa virginitas,",
+        "SYN": "Если же сказанное будет истинно, и не найдется девства у отроковицы,",
+        "NEO": "Mais si ce fait est vrai et que la jeune femme ne soit pas trouvée vierge,",
+        "NAB": "\"But if this charge is true, and evidence of the girl's virginity is not found,",
+        "VAT_ES": "Pero si la acusación resulta verdadera y no aparecen las pruebas de la virginidad de la joven,",
+        "CEI": "Ma se la cosa è vera, se la giovane non è stata trovata in stato di verginità,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/הוֹצִ֨יאוּ אֶת ה/נער הַֽ/נַּעֲרָ֜ה אֶל פֶּ֣תַח בֵּית אָבִ֗י/הָ וּ/סְקָלוּ/הָ֩ אַנְשֵׁ֨י עִירָ֤/הּ בָּ/אֲבָנִים֙ וָ/מֵ֔תָה כִּֽי עָשְׂתָ֤ה נְבָלָה֙ בְּ/יִשְׂרָאֵ֔ל לִ/זְנ֖וֹת בֵּ֣ית אָבִ֑י/הָ וּ/בִֽעַרְתָּ֥ הָ/רָ֖ע מִ/קִּרְבֶּֽ/ךָ׃",
+        "LXX": "καὶ ἐξάξουσιν τὴν νεᾶνιν ἐπὶ τὰς θύρας τοῦ πατρὸς αὐτῆς, καὶ λιθοβολήσουσιν αὐτὴν ἐν λίθοις καὶ ἀποθανεῖται, ὅτι ἐποίησεν ἀφροσύνην ἐν υἱοῖς Ἰσραήλ, ἐκπορνεῦσαι τὸν οἶκον τοῦ πατρὸς αὐτῆς· καὶ ἐξαρεῖς τὸν πονηρὸν ἐξ ὑμῶν αὐτῶν.",
+        "VUL": "ejicient eam extra fores domus patris sui, et lapidibus obruent viri civitatis illius, et morietur : quoniam fecit nefas in Israël, ut fornicaretur in domo patris sui : et auferes malum de medio tui.",
+        "SYN": "то отроковицу пусть приведут к дверям дома отца ее, и жители города ее побьют ее камнями до смерти, ибо она сделала срамное дело среди Израиля, блудодействовав в доме отца своего; и _так_ истреби зло из среды себя.",
+        "NEO": "on fera sortir la jeune femme à l’entrée de la maison de son père, et elle sera lapidée par les gens de sa ville, jusqu’à ce qu’elle meure, parce qu’elle a commis une infamie en Israël, en se prostituant dans la maison de son père. Tu ôteras ainsi le mal du milieu de toi.",
+        "NAB": "they shall bring the girl to the entrance of her father's house and there her townsmen shall stone her to death, because she committed a crime against Israel by her unchasteness in her father's house. Thus shall you purge the evil from your midst.",
+        "VAT_ES": "la sacarán a la puerta de la casa de su padre, y la gente de esa ciudad la matará a pedradas, por haber cometido una acción infame en Israel, prostituyéndose en la casa de su padre. Así harás desaparecer el mal de entre ustedes.",
+        "CEI": "allora la faranno uscire all'ingresso della casa del padre e la gente della sua città la lapiderà, così che muoia, perché ha commesso un'infamia in Israele, disonorandosi in casa del padre. Così toglierai il male di mezzo a te."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כִּֽי יִמָּצֵ֨א אִ֜ישׁ שֹׁכֵ֣ב עִם אִשָּׁ֣ה בְעֻֽלַת בַּ֗עַל וּ/מֵ֨תוּ֙ גַּם שְׁנֵי/הֶ֔ם הָ/אִ֛ישׁ הַ/שֹּׁכֵ֥ב עִם הָ/אִשָּׁ֖ה וְ/הָ/אִשָּׁ֑ה וּ/בִֽעַרְתָּ֥ הָ/רָ֖ע מִ/יִּשְׂרָאֵֽל׃",
+        "LXX": "Ἐὰν δὲ εὑρεθῇ ἄνθρωπος κοιμώμενος μετὰ γυναικὸς συνοικισμένης ἀνδρί, ἀποκτενεῖτε ἀμφοτέρους, τὸν ἄνδρα τὸν κοιμώμενον μετὰ τῆς γυναικὸς καὶ τὴν γυναῖκα· καὶ ἐξαρεῖς τὸν πονηρὸν ἐξ Ἰσραήλ.",
+        "VUL": "Si dormierit vir cum uxore alterius, uterque morietur, id est, adulter et adultera : et auferes malum de Israël.",
+        "SYN": "Если найден будет кто лежащий с женою замужнею, то должно предать смерти обоих: и мужчину, лежавшего с женщиною, и женщину; и _так_ истреби зло от Израиля.",
+        "NEO": "Si l’on trouve un homme couché avec une femme mariée, ils mourront tous deux, l’homme qui a couché avec la femme, et la femme aussi. Tu ôteras ainsi le mal du milieu d’Israël.",
+        "NAB": "\"If a man is discovered having relations with a woman who is married to another, both the man and the woman with whom he has had relations shall die. Thus shall you purge the evil from your midst.",
+        "VAT_ES": "Si se sorprende a un hombre acostado con una mujer casada, morirán los dos; el hombre que estaba acostado con la mujer, y también ella. Así harás desaparecer el mal de entre ustedes.",
+        "CEI": "Quando un uomo verrà colto in fallo con una donna maritata, tutti e due dovranno morire: l'uomo che ha peccato con la donna e la donna. Così toglierai il male da Israele."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "כִּ֤י יִהְיֶה֙ נער נַעֲרָ֣ה בְתוּלָ֔ה מְאֹרָשָׂ֖ה לְ/אִ֑ישׁ וּ/מְצָאָ֥/הּ אִ֛ישׁ בָּ/עִ֖יר וְ/שָׁכַ֥ב עִמָּֽ/הּ׃",
+        "LXX": "Ἐὰν δὲ γένηται παῖς παρθένος μεμνηστευμένη ἀνδρί, καὶ εὑρὼν αὐτὴν ἄνθρωπος ἐν πόλει κοιμηθῇ μετ’ αὐτῆς·",
+        "VUL": "Si puellam virginem desponderit vir, et invenerit eam aliquis in civitate, et concubuerit cum ea,",
+        "SYN": "Если будет молодая девица обручена мужу, и кто-нибудь встретится с нею в городе и ляжет с нею,",
+        "NEO": "Si une jeune fille vierge est fiancée à quelqu’un, et qu’un homme la rencontre dans la ville et couche avec elle,",
+        "NAB": "\"If within the city a man comes upon a maiden who is betrothed, and has relations with her,",
+        "VAT_ES": "Si una joven virgen está comprometida con un hombre, y otro la encuentra en la ciudad y se acuesta con ella,",
+        "CEI": "Quando una fanciulla vergine è fidanzata e un uomo, trovandola in città, pecca con lei,"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/הוֹצֵאתֶ֨ם אֶת שְׁנֵי/הֶ֜ם אֶל שַׁ֣עַר הָ/עִ֣יר הַ/הִ֗וא וּ/סְקַלְתֶּ֨ם אֹתָ֥/ם בָּ/אֲבָנִים֮ וָ/מֵתוּ֒ אֶת ה/נער הַֽ/נַּעֲרָ֗ה עַל דְּבַר֙ אֲשֶׁ֣ר לֹא צָעֲקָ֣ה בָ/עִ֔יר וְ/אֶ֨ת הָ/אִ֔ישׁ עַל דְּבַ֥ר אֲשֶׁר עִנָּ֖ה אֶת אֵ֣שֶׁת רֵעֵ֑/הוּ וּ/בִֽעַרְתָּ֥ הָ/רָ֖ע מִ/קִּרְבֶּֽ/ךָ׃",
+        "LXX": "ἐξάξετε ἀμφοτέρους ἐπὶ τὴν πύλην τῆς πόλεως αὐτῶν, καὶ λιθοβοληθήσονται ἐν λίθοις καὶ ἀποθανοῦνται· τὴν νεᾶνιν, ὅτι οὐκ ἐβόησεν ἐν τῇ πόλει, καὶ τὸν ἄνθρωπον, ὅτι ἐταπείνωσεν τὴν γυναῖκα τοῦ πλησίον· καὶ ἐξαρεῖς τὸν πονηρὸν ἐξ ὑμῶν αὐτῶν.",
+        "VUL": "educes utrumque ad portam civitatis illius, et lapidibus obruentur : puella, quia non clamavit, cum esset in civitate : vir, quia humiliavit uxorem proximi sui : et auferes malum de medio tui.",
+        "SYN": "то обоих их приведите к воротам того города, и побейте их камнями до смерти: отроковицу за то, что она не кричала в городе, а мужчину за то, что он опорочил жену ближнего своего; и _так_ истреби зло из среды себя.",
+        "NEO": "vous les amènerez tous deux à la porte de la ville, et vous les lapiderez, jusqu’à ce qu’ils meurent : la jeune fille pour n’avoir pas crié dans la ville, et l’homme pour avoir déshonoré la femme de son prochain. Tu ôteras ainsi le mal du milieu de toi.",
+        "NAB": "you shall bring them both out to the gate of the city and there stone them to death: the girl because she did not cry out for help though she was in the city, and the man because he violated his neighbor's wife. Thus shall you purge the evil from your midst.",
+        "VAT_ES": "se hará salir a los dos a la puerta de esa ciudad y los matarán a pedradas; a la joven por no haber pedido auxilio, a pesar de que estaba en la ciudad; y al hombre por haber violado a la mujer de su prójimo. Así harás desaparecer el mal de entre ustedes.",
+        "CEI": "condurrete tutti e due alla porta di quella città e li lapiderete così che muoiano: la fanciulla, perché essendo in città non ha gridato, e l'uomo perché ha disonorato la donna del suo prossimo. Così toglierai il male da te."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְֽ/אִם בַּ/שָּׂדֶ֞ה יִמְצָ֣א הָ/אִ֗ישׁ אֶת ה/נער הַֽ/נַּעֲרָה֙ הַ/מְאֹ֣רָשָׂ֔ה וְ/הֶחֱזִֽיק בָּ֥/הּ הָ/אִ֖ישׁ וְ/שָׁכַ֣ב עִמָּ֑/הּ וּ/מֵ֗ת הָ/אִ֛ישׁ אֲשֶׁר שָׁכַ֥ב עִמָּ֖/הּ לְ/בַדּֽ/וֹ׃",
+        "LXX": "Ἐὰν δὲ ἐν πεδίῳ εὕρῃ ἄνθρωπος τὴν παῖδα τὴν μεμνηστευμένην καὶ βιασάμενος κοιμηθῇ μετ’ αὐτῆς, ἀποκτενεῖτε τὸν κοιμώμενον μετ’ αὐτῆς μόνον,",
+        "VUL": "Sin autem in agro repererit vir puellam, quæ desponsata est, et apprehendens concubuerit cum ea, ipse morietur solus :",
+        "SYN": "Если же кто в поле встретится с отроковицею обрученною и, схватив ее, ляжет с нею, то должно предать смерти только мужчину, лежавшего с нею,",
+        "NEO": "Mais si c’est dans les champs que cet homme rencontre la jeune fille fiancée, et qu’il lui fasse violence et couche avec elle, l’homme qui aura couché avec elle mourra seul.",
+        "NAB": "\"If, however, it is in the open fields that a man comes upon such a betrothed maiden, seizes her and has relations with her, the man alone shall die.",
+        "VAT_ES": "Pero si el hombre encuentra en el campo a la joven comprometida y se acuesta con ella por la fuerza, sólo morirá el hombre que se acostó con ella.",
+        "CEI": "Ma se l'uomo trova per i campi la fanciulla fidanzata e facendole violenza pecca con lei, allora dovrà morire soltanto l'uomo che ha peccato con lei;"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "ו/ל/נער וְ/לַֽ/נַּעֲרָה֙ לֹא תַעֲשֶׂ֣ה דָבָ֔ר אֵ֥ין ל/נער לַֽ/נַּעֲרָ֖ה חֵ֣טְא מָ֑וֶת כִּ֡י כַּ/אֲשֶׁר֩ יָק֨וּם אִ֤ישׁ עַל רֵעֵ֨/הוּ֙ וּ/רְצָח֣/וֹ נֶ֔פֶשׁ כֵּ֖ן הַ/דָּבָ֥ר הַ/זֶּֽה׃",
+        "LXX": "καὶ τῇ νεάνιδι οὐκ ἔστιν ἁμάρτημα θανάτου. ὡς εἴ τις ἐπαναστῇ ἄνθρωπος ἐπὶ τὸν πλησίον καὶ φονεύσῃ αὐτοῦ ψυχήν, οὕτως τὸ πρᾶγμα τοῦτο·",
+        "VUL": "puella nihil patietur, nec est rea mortis : quoniam sicut latro consurgit contra fratrem suum, et occidit animam ejus, ita et puella perpessa est.",
+        "SYN": "а отроковице ничего не делай; на отроковице нет преступления смертного: ибо это то же, как если бы кто восстал на ближнего своего и убил его;",
+        "NEO": "Tu ne feras rien à la jeune fille ; il n’y a pas en elle de crime digne de mort, car c’est comme lorsqu’un homme se jette sur son prochain et le tue ; le cas est le même.",
+        "NAB": "You shall do nothing to the maiden, since she is not guilty of a capital offense. This case is like that of a man who rises up against his neighbor and murders him:",
+        "VAT_ES": "A la joven, no le harás nada, porque no ha cometido un pecado que merezca la muerte. Es un caso semejante al de un hombre que ataca a otro y lo mata:",
+        "CEI": "ma non farai nulla alla fanciulla. Nella fanciulla non c'è colpa degna di morte: come quando un uomo assale il suo prossimo e l'uccide, così è in questo caso,"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "כִּ֥י בַ/שָּׂדֶ֖ה מְצָאָ֑/הּ צָעֲקָ֗ה ה/נער הַֽ/נַּעֲרָה֙ הַ/מְאֹ֣רָשָׂ֔ה וְ/אֵ֥ין מוֹשִׁ֖יעַ לָֽ/הּ׃",
+        "LXX": "ὅτι ἐν τῷ ἀγρῷ εὗρεν αὐτήν, ἐβόησεν ἡ νεᾶνις ἡ μεμνηστευμένη, καὶ οὐκ ἦν ὁ βοηθήσων αὐτῇ.",
+        "VUL": "Sola erat in agro : clamavit, et nullus affuit qui liberaret eam.",
+        "SYN": "ибо он встретился с нею в поле, и _хотя_ отроковица обрученная кричала, но некому было спасти ее.",
+        "NEO": "L’homme l’a rencontrée dans les champs, la jeune fille fiancée a crié, mais il n’y avait personne pour la secourir.",
+        "NAB": "it was in the open fields that he came upon her, and though the betrothed maiden may have cried out for help, there was no one to come to her aid.",
+        "VAT_ES": "como el encuentro se produjo en el campo, tal vez la joven pidió auxilio, pero no había nadie que la socorriera.",
+        "CEI": "perché egli l'ha incontrata per i campi: la fanciulla fidanzata ha potuto gridare, ma non c'era nessuno per venirle in aiuto."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "כִּֽי יִמְצָ֣א אִ֗ישׁ נער נַעֲרָ֤ה בְתוּלָה֙ אֲשֶׁ֣ר לֹא אֹרָ֔שָׂה וּ/תְפָשָׂ֖/הּ וְ/שָׁכַ֣ב עִמָּ֑/הּ וְ/נִמְצָֽאוּ׃",
+        "LXX": "Ἐὰν δέ τις εὕρῃ τὴν παῖδα τὴν παρθένον ἥτις οὐ μεμνήστευται, καὶ βιασάμενος κοιμηθῇ μετ’ αὐτῆς, καὶ εὑρεθῇ·",
+        "VUL": "Si invenerit vir puellam virginem, quæ non habet sponsum, et apprehendens concubuerit cum illa, et res ad judicium venerit :",
+        "SYN": "Если кто-нибудь встретится с девицею необрученною, и схватит ее и ляжет с нею, и застанут их,",
+        "NEO": "Si un homme rencontre une jeune fille vierge non fiancée, la saisit et couche avec elle, et qu’ils soient surpris,",
+        "NAB": "\"If a man comes upon a maiden that is not betrothed, takes her and has relations with her, and their deed is discovered,",
+        "VAT_ES": "Si un hombre encuentra a una joven virgen que no está comprometida, la toma por la fuerza y se acuesta con ella, y son sorprendidos,",
+        "CEI": "Se un uomo trova una fanciulla vergine che non sia fidanzata, l'afferra e pecca con lei e sono colti in flagrante,"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ֠/נָתַן הָ/אִ֨ישׁ הַ/שֹּׁכֵ֥ב עִמָּ֛/הּ לַ/אֲבִ֥י ה/נער הַֽ/נַּעֲרָ֖ה חֲמִשִּׁ֣ים כָּ֑סֶף וְ/לֽ/וֹ תִהְיֶ֣ה לְ/אִשָּׁ֗ה תַּ֚חַת אֲשֶׁ֣ר עִנָּ֔/הּ לֹא יוּכַ֥ל שַׁלְּחָ֖/ה כָּל יָמָֽי/ו׃",
+        "LXX": "δώσει ὁ ἄνθρωπος ὁ κοιμηθεὶς μετ’ αὐτῆς τῷ πατρὶ τῆς νεάνιδος πεντήκοντα δίδραχμα ἀργυρίου, καὶ αὐτοῦ ἔσται γυνή, ἀνθ’ ὧν ἐταπείνωσεν αὐτήν· οὐ δυνήσεται ἐξαποστεῖλαι αὐτὴν τὸν ἅπαντα χρόνον.",
+        "VUL": "dabit qui dormivit cum ea, patri puellæ quinquaginta siclos argenti, et habebit eam uxorem, quia humiliavit illam : non poterit dimittere eam cunctis diebus vitæ suæ.",
+        "SYN": "то лежавший с нею должен дать отцу отроковицы пятьдесят [сиклей] серебра, а она пусть будет его женою, потому что он опорочил ее; во всю жизнь свою он не может развестись с нею.",
+        "NEO": "l’homme qui a couché avec elle donnera au père de la jeune fille cinquante sicles d’argent, et elle sera sa femme, parce qu’il l’a déshonorée, il ne pourra pas la renvoyer, tant qu’il vivra.",
+        "NAB": "the man who had relations with her shall pay the girl's father fifty silver shekels and take her as his wife, because he has deflowered her. Moreover, he may not divorce her as long as he lives.",
+        "VAT_ES": "el hombre que se acostó con ella deberá pagar al padre de la joven cincuenta siclos de plata y ella será su mujer. Nunca podrá repudiarla, porque él la violó.",
+        "CEI": "l'uomo che ha peccato con lei darà al padre della fanciulla cinquanta sicli d'argento; essa sarà sua moglie, per il fatto che egli l'ha disonorata, e non potrà ripudiarla per tutto il tempo della sua vita."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "Οὐ λήμψεται ἄνθρωπος τὴν γυναῖκα τοῦ πατρὸς αὐτοῦ, καὶ οὐκ ἀποκαλύψει συνκάλυμμα τοῦ πατρὸς αὐτοῦ.",
+        "VUL": "Non accipiet homo uxorem patris sui, nec revelabit operimentum ejus.",
+        "SYN": "Никто не должен брать жены отца своего и открывать край _одежды_ отца своего."
+      }
+    }
+  }
+}

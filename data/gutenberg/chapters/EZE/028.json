@@ -1,0 +1,483 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EZE_028",
+  "book_key": "EZE",
+  "sequence": 28,
+  "chapter_in": {
+    "MT": 28,
+    "VUL": 28,
+    "LXX": 28
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu rivolta questa parola del Signore:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֡ם אֱמֹר֩ לִ/נְגִ֨יד צֹ֜ר כֹּֽה אָמַ֣ר אֲדֹנָ֣/י יְהֹוִ֗ה יַ֣עַן גָּבַ֤הּ לִבְּ/ךָ֙ וַ/תֹּ֨אמֶר֙ אֵ֣ל אָ֔נִי מוֹשַׁ֧ב אֱלֹהִ֛ים יָשַׁ֖בְתִּי בְּ/לֵ֣ב יַמִּ֑ים וְ/אַתָּ֤ה אָדָם֙ וְֽ/לֹא אֵ֔ל וַ/תִּתֵּ֥ן לִבְּ/ךָ֖ כְּ/לֵ֥ב אֱלֹהִֽים׃",
+        "LXX": "Καὶ σύ, υἱὲ ἀνθρώπου, εἰπὸν τῷ ἄρχοντι Τύρου Τάδε λέγει Κύριος Ἀνθ’ οὗ ὑψώθη σου ἡ καρδία, καὶ εἶπας θεός εἰμι ἐγώ, κατοικίαν Θεοῦ κατοίκηκα ἐν καρδίᾳ θαλάσσης, σὺ δὲ εἶ ἄνθρωπος καὶ οὐ θεός, καὶ ἔδωκας τὴν καρδίαν σου ὡς καρδίαν θεοῦ,",
+        "VUL": "Fili hominis, dic principi Tyri : [Hæc dicit Dominus Deus :/ Eo quod elevatum est cor tuum,/ et dixisti : Deus ego sum,/ et in cathedra Dei sedi in corde maris,/ cum sis homo, et non deus :/ et dedisti cor tuum quasi cor Dei :/",
+        "SYN": "сын человеческий! скажи начальствующему в Тире: так говорит Господь Бог: за то, что вознеслось сердце твое и ты говоришь: \"я бог, восседаю на седалище божием, в сердце морей\", и будучи человеком, а не Богом, ставишь ум твой наравне с умом Божиим, -",
+        "NEO": "« Fils de l’homme, dis au prince de Tyr : Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Parce que ton cœur s’est élevé, et que tu as dit : « Je suis un dieu, je siège sur un trône de dieu au milieu des mers », alors que tu es un homme et non pas un dieu, quoique tu rendes ton cœur pareil au cœur d’un dieu :",
+        "NAB": "Son of man, say to the prince of Tyre: Thus says the Lord GOD: Because you are haughty of heart, you say, \"A god am I! I occupy a godly throne in the heart of the sea!\" - And yet you are a man, and not a god, however you may think yourself like a god.",
+        "VAT_ES": "Hijo de hombre, di al príncipe de Tiro: Así habla el Señor: Tu corazón se llenó de arrogancia y dijiste: «Yo soy un dios; estoy sentado en un trono divino, en el corazón de los mares». &iexcl;Tú, que eres un hombre y no un dios, te has considerado igual a un dios!",
+        "CEI": "\"Figlio dell'uomo, parla al principe di Tiro: Dice il Signore Dio: Poiché il tuo cuore si è insuperbito e hai detto: Io sono un dio, siedo su un seggio divino in mezzo ai mari, mentre tu sei un uomo e non un dio, hai uguagliato la tua mente a quella di Dio,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הִנֵּ֥ה חָכָ֛ם אַתָּ֖ה מ/דנאל מִ/דָּֽנִיֵּ֑אל כָּל סָת֖וּם לֹ֥א עֲמָמֽוּ/ךָ׃",
+        "LXX": "μὴ σοφώτερος εἶ σὺ τοῦ Δανιήλ; σοφοὶ οὐκ ἐπαίδευσάν σε τῇ ἐπιστήμῃ αὐτῶν;",
+        "VUL": "ecce sapientior es tu Daniele :/ omne secretum non est absconditum a te :/",
+        "SYN": "вот, ты премудрее Даниила, нет тайны, сокрытой от тебя;",
+        "NEO": "— Voici que tu es plus sage que Daniel ; rien de secret ne t’est caché ;",
+        "NAB": "Oh yes, you are wiser than Daniel, there is no secret that is beyond you.",
+        "VAT_ES": "Sí, eres más sabio que Daniel: ningún secreto te supera.",
+        "CEI": "ecco, tu sei più saggio di Daniele, nessun segreto ti è nascosto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "בְּ/חָכְמָֽתְ/ךָ֙ וּ/בִ/תְבוּנָ֣תְ/ךָ֔ עָשִׂ֥יתָ לְּ/ךָ֖ חָ֑יִל וַ/תַּ֛עַשׂ זָהָ֥ב וָ/כֶ֖סֶף בְּ/אוֹצְרוֹתֶֽי/ךָ׃",
+        "LXX": "μὴ ἐν τῇ ἐπιστήμῃ σου ἢ τῇ φρονήσει σου ἐποίησας σεαυτῷ δύναμιν καὶ χρυσίον καὶ ἀργύριον ἐν τοῖς θησαυροῖς σου;",
+        "VUL": "in sapientia et prudentia tua fecisti tibi fortitudinem,/ et acquisisti aurum et argentum in thesauris tuis :/",
+        "SYN": "твоею мудростью и твоим разумом ты приобрел себе богатство и в сокровищницы твои собрал золота и серебра;",
+        "NEO": "par ta sagesse et ton intelligence, tu t’es acquis de la richesse, et tu as entassé de l’or et de l’argent, dans tes trésors ;",
+        "NAB": "By your wisdom and your intelligence you have made riches for yourself; You have put gold and silver into your treasuries.",
+        "VAT_ES": "Con tu sabiduría y tu inteligencia, te has hecho una fortuna, acumulaste oro y plata en tus tesoros.",
+        "CEI": "Con la tua saggezza e il tuo accorgimento hai creato la tua potenza e ammassato oro e argento nei tuoi scrigni;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בְּ/רֹ֧ב חָכְמָתְ/ךָ֛ בִּ/רְכֻלָּתְ/ךָ֖ הִרְבִּ֣יתָ חֵילֶ֑/ךָ וַ/יִּגְבַּ֥הּ לְבָבְ/ךָ֖ בְּ/חֵילֶֽ/ךָ׃",
+        "LXX": "ἐν τῇ πολλῇ ἐπιστήμῃ σου καὶ ἐμπορίᾳ ἐπλήθυνας δύναμίν σου, ὑψώθη ἡ καρδία σου ἐν τῇ δυνάμει σου.",
+        "VUL": "in multitudine sapientiæ tuæ,/ et in negotiatione tua multiplicasti tibi fortitudinem,/ et elevatum est cor tuum in robore tuo :/",
+        "SYN": "большою мудростью твоею, посредством торговли твоей, ты умножил богатство твое, и ум твой возгордился богатством твоим, -",
+        "NEO": "par la grandeur de ta sagesse, par ton commerce, tu as accru ta richesse, et, dans ta richesse, ton cœur s’est élevé, —",
+        "NAB": "By your great wisdom applied to your trading you have heaped up your riches; your heart has grown haughty from your riches -",
+        "VAT_ES": "Por tu gran habilidad para el comercio fuiste acrecentando tu fortuna, y tu corazón se llenó de arrogancia a causa de tantas riquezas.",
+        "CEI": "con la tua grande accortezza e i tuoi traffici hai accresciuto le tue ricchezze e per le tue ricchezze si è inorgoglito il tuo cuore."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "לָ/כֵ֕ן כֹּ֥ה אָמַ֖ר אֲדֹנָ֣/י יְהוִ֑ה יַ֛עַן תִּתְּ/ךָ֥ אֶת לְבָבְ/ךָ֖ כְּ/לֵ֥ב אֱלֹהִֽים׃",
+        "LXX": "διὰ τοῦτο τάδε λέγει Κύριος Ἐπειδὴ δέδωκας τὴν καρδίαν σου ὡς καρδίαν θεοῦ,",
+        "VUL": "propterea hæc dicit Dominus Deus :/ Eo quod elevatum est cor tuum quasi cor dei,/",
+        "SYN": "за то так говорит Господь Бог: так как ты ум твой ставишь наравне с умом Божиим,",
+        "NEO": "à cause de cela, ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** :",
+        "NAB": "therefore thus says the Lord GOD: Because you have thought yourself to have the mind of a god,",
+        "VAT_ES": "Por eso, así habla el Señor: Porque te has considerado igual a un dios,",
+        "CEI": "Perciò così dice il Signore Dio: Poiché hai uguagliato la tua mente a quella di Dio,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "לָ/כֵ֗ן הִנְ/נִ֨י מֵבִ֤יא עָלֶ֨י/ךָ֙ זָרִ֔ים עָרִיצֵ֖י גּוֹיִ֑ם וְ/הֵרִ֤יקוּ חַרְבוֹתָ/ם֙ עַל יְפִ֣י חָכְמָתֶ֔/ךָ וְ/חִלְּל֖וּ יִפְעָתֶֽ/ךָ׃",
+        "LXX": "ἀντὶ τούτου ἰδοὺ ἐγὼ ἐπάγω ἐπὶ σὲ ἀλλοτρίους λοιμοὺς ἀπὸ ἐθνῶν, καὶ ἐκκενώσουσιν τὰς μαχαίρας αὐτῶν ἐπὶ σὲ καὶ ἐπὶ τὸ κάλλος τῆς ἐπιστήμης σου, καὶ στρώσουσιν τὸ κάλλος σου εἰς ἀπώλειαν,",
+        "VUL": "idcirco ecce ego adducam super te alienos,/ robustissimos gentium :/ et nudabunt gladios suos super pulchritudinem sapientiæ tuæ,/ et polluent decorem tuum./",
+        "SYN": "вот, Я приведу на тебя иноземцев, лютейших из народов, и они обнажат мечи свои против красы твоей мудрости и помрачат блеск твой;",
+        "NEO": "à cause de cela, voici que je fais venir contre toi des étrangers, féroces entre tous les peuples ; ils tireront l’épée contre les chefs-d’œuvre de ta sagesse, et ils profaneront ta splendeur.",
+        "NAB": "Therefore I will bring against you foreigners, the most barbarous of nations. They shall draw their swords against your beauteous wisdom, they shall run them through your splendid apparel.",
+        "VAT_ES": "Yo traigo contra ti gente extranjera, las más feroces de las naciones: ellos desenvainarán la espada contra tu bella sabiduría, y profanarán tu esplendor.",
+        "CEI": "ecco, io manderò contro di te i più feroci popoli stranieri; snuderanno le spade contro la tua bella saggezza, profaneranno il tuo splendore."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "לַ/שַּׁ֖חַת יֽוֹרִד֑וּ/ךָ וָ/מַ֛תָּה מְמוֹתֵ֥י חָלָ֖ל בְּ/לֵ֥ב יַמִּֽים׃",
+        "LXX": "καὶ καταβιβάσουσίν σε, καὶ ἀποθανῇ θανάτῳ τραυματιῶν ἐν καρδίᾳ θαλάσσης.",
+        "VUL": "Interficient, et detrahent te :/ et morieris in interitu occisorum in corde maris./",
+        "SYN": "низведут тебя в могилу, и умрешь в сердце морей смертью убитых.",
+        "NEO": "Ils te feront descendre dans la fosse, et tu mourras de la mort de ceux qui sont tués, au sein des mers.",
+        "NAB": "They shall thrust you down to the pit, there to die a bloodied corpse, in the heart of the sea.",
+        "VAT_ES": "Te precipitarán en la Fosa y morirás de muerte violenta en el corazón de los mares.",
+        "CEI": "Ti precipiteranno nella fossa e morirai della morte degli uccisi in mezzo ai mari."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הֶ/אָמֹ֤ר תֹּאמַר֙ אֱלֹהִ֣ים אָ֔נִי לִ/פְנֵ֖י הֹֽרְגֶ֑/ךָ וְ/אַתָּ֥ה אָדָ֛ם וְ/לֹא אֵ֖ל בְּ/יַ֥ד מְחַלְלֶֽי/ךָ׃",
+        "LXX": "μὴ λέγων ἐρεῖς Θεός εἰμι ἐγώ, ἐνώπιον τῶν ἀναιρούντων σε; σὺ δὲ εἶ ἄνθρωπος καὶ οὐ θεός.",
+        "VUL": "Numquid dicens loqueris : Deus ego sum,/ coram interficientibus te,/ cum sis homo, et non deus,/ in manu occidentium te ?/",
+        "SYN": "Скажешь ли тогда перед твоим убийцею: \"я бог\", тогда как в руке поражающего тебя ты будешь человек, а не бог?",
+        "NEO": "Diras-tu encore : « Je suis un dieu », en présence de ton meurtrier, quand tu es un homme et non pas un dieu, dans la main de celui qui t’égorge ?",
+        "NAB": "Will you then say, \"I am a god!\" when you face your murderers? No, you are a man, not a god, handed over to those who will slay you.",
+        "VAT_ES": "&iquest;Te atreverás a decir: «Yo soy un dios», delante de tus verdugos» Serás un hombre, no un dios, en manos de los que te traspasen.",
+        "CEI": "Ripeterai ancora: \"Io sono un dio\", di fronte ai tuo uccisori? Ma sei un uomo e non un dio in balìa di chi ti uccide."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "מוֹתֵ֧י עֲרֵלִ֛ים תָּמ֖וּת בְּ/יַד זָרִ֑ים כִּ֚י אֲנִ֣י דִבַּ֔רְתִּי נְאֻ֖ם אֲדֹנָ֥/י יְהוִֽה׃",
+        "LXX": "ἐν πλήθει ἀπεριτμήτων ἀπολῇ ἐν χερσὶν ἀλλοτρίων, ὅτι ἐγὼ ἐλάλησα, λέγει Κύριος.",
+        "VUL": "Morte incircumcisorum morieris in manu alienorum,/ quia ego locutus sum, ait Dominus Deus.]",
+        "SYN": "Ты умрешь от руки иноземцев смертью необрезанных; ибо Я сказал это, говорит Господь Бог.",
+        "NEO": "Tu mourras de la mort des incirconcis par la main des étrangers ; car moi j’ai parlé, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "You shall die the death of the uncircumcised at the hands of foreigners, for I have spoken, says the Lord GOD.",
+        "VAT_ES": "Tendrás la muerte de los incircuncisos, en manos de extranjeros, porque yo ha hablado –oráculo del Señor–.",
+        "CEI": "Della morte dei non circoncisi morirai per mano di stranieri, perché io l'ho detto\". Oracolo del Signore Dio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens : Fili hominis, leva planctum super regem Tyri,",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu rivolta questa parola del Signore:"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֕ם שָׂ֥א קִינָ֖ה עַל מֶ֣לֶךְ צ֑וֹר וְ/אָמַ֣רְתָּ לּ֗/וֹ כֹּ֤ה אָמַר֙ אֲדֹנָ֣/י יְהוִ֔ה אַתָּה֙ חוֹתֵ֣ם תָּכְנִ֔ית מָלֵ֥א חָכְמָ֖ה וּ/כְלִ֥יל יֹֽפִי׃",
+        "LXX": "Υἱὲ ἀνθρώπου, λάβε θρῆνον ἐπὶ τὸν ἄρχοντα Τύρου καὶ εἰπὸν αὐτῷ Τάδε λέγει κύριος Κύριος Σὺ ἀποσφράγισμα ὁμοιώσεως καὶ στέφανος κάλλους",
+        "VUL": "et dices ei : [Hæc dicit Dominus Deus :/ Tu signaculum similitudinis,/ plenus sapientia, et perfectus decore./",
+        "SYN": "сын человеческий! плачь о царе Тирском и скажи ему: так говорит Господь Бог: ты печать совершенства, полнота мудрости и венец красоты.",
+        "NEO": "et dis-lui : Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Tu étais le sceau de la perfection, plein de sagesse et parfait en beauté.",
+        "NAB": "Son of man, utter a lament over the king of Tyre, saying to him: Thus says the Lord GOD: You were stamped with the seal of perfection, of complete wisdom and perfect beauty.",
+        "VAT_ES": "Hijo de hombre, entona una lamentación sobre el rey de Tiro, Tú le dirás: Así habla el Señor: Eras un modelo de perfección, lleno de sabiduría y de acabada hermosura.",
+        "CEI": "\"Figlio dell'uomo, intona un lamento sul principe di Tiro e digli: Così dice il Signore Dio: Tu eri un modello di perfezione, pieno di sapienza, perfetto in bellezza;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "בְּ/עֵ֨דֶן גַּן אֱלֹהִ֜ים הָיִ֗יתָ כָּל אֶ֨בֶן יְקָרָ֤ה מְסֻכָתֶ֨/ךָ֙ אֹ֣דֶם פִּטְדָ֞ה וְ/יָהֲלֹ֗ם תַּרְשִׁ֥ישׁ שֹׁ֨הַם֙ וְ/יָ֣שְׁפֵ֔ה סַפִּ֣יר נֹ֔פֶךְ וּ/בָרְקַ֖ת וְ/זָהָ֑ב מְלֶ֨אכֶת תֻּפֶּ֤י/ךָ וּ/נְקָבֶ֨י/ךָ֙ בָּ֔/ךְ בְּ/י֥וֹם הִבָּרַאֲ/ךָ֖ כּוֹנָֽנוּ׃",
+        "LXX": "ἐν τῇ τρυφῇ τοῦ παραδείσου τοῦ θεοῦ ἐγενήθης. πᾶν λίθον χρηστὸν ἐνδέδεσαι, σάρδιον καὶ τοπάζιον καὶ σμάραγδον, καὶ ἄνθρακα καὶ σάπφειρον καὶ ἴασπιν, καὶ ἀργύριον καὶ χρυσίον, καὶ λιγύριον καὶ ἀχάτην καὶ ἀμέθυστον, καὶ χρυσόλιθον καὶ βηρύλλιον καὶ ὀνύχιον, καὶ χρυσίου ἐνέπλησας τοὺς θησαυρούς σου καὶ τὰς ἀποθήκας σου ἐν σοί.",
+        "VUL": "In deliciis paradisi Dei fuisti :/ omnis lapis pretiosus operimentum tuum,/ sardius, topazius, et jaspis,/ chrysolithus, et onyx, et beryllus,/ sapphirus, et carbunculus, et smaragdus :/ aurum, opus decoris tui :/ et foramina tua, in die qua conditus es, præparata sunt./",
+        "SYN": "Ты находился в Едеме, в саду Божием; твои одежды были украшены всякими драгоценными камнями; рубин, топаз и алмаз, хризолит, оникс, яспис, сапфир, карбункул и изумруд и золото, все, искусно усаженное у тебя в гнездышках и нанизанное на тебе, приготовлено было в день сотворения твоего.",
+        "NEO": "Tu étais en Eden, dans un jardin de Dieu ; tu étais couvert de pierres précieuses, sardoine, topaze et diamant, chrysolithe, onyx et jaspe, saphir, escarboucle, émeraude et or ; tu avais à ton service des tambourins et des fifres, préparés le jour où tu fus créé.",
+        "NAB": "In Eden, the garden of God, you were, and every precious stone was your covering (carnelian, topaz, and beryl, chrysolite, onyx, and jasper, sapphire, garnet, and emerald); Of gold your pendants and jewels were made, on the day you were created.",
+        "VAT_ES": "Estabas en Edén, el Jardín de Dios, recubierto de piedras preciosas de todas las especies: sardo, malaquita y diamante, crisólito, ónix y jaspe, zafiro, topacio y esmeralda. Llevabas adornos labrados en oro y encajes preparados para ti el día en que fuiste creado.",
+        "CEI": "in Eden, giardino di Dio, tu eri coperto d'ogni pietra preziosa: rubini, topàzi, diamanti, crisòliti, ònici e diaspri, zaffìri, carbonchi e smeraldi; e d'oro era il lavoro dei tuoi castoni e delle tue legature, preparato nel giorno in cui fosti creato."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אַ֨תְּ כְּר֔וּב מִמְשַׁ֖ח הַ/סּוֹכֵ֑ךְ וּ/נְתַתִּ֗י/ךָ בְּ/הַ֨ר קֹ֤דֶשׁ אֱלֹהִים֙ הָיִ֔יתָ בְּ/ת֥וֹךְ אַבְנֵי אֵ֖שׁ הִתְהַלָּֽכְתָּ׃",
+        "LXX": "ἀφ’ ἧς ἡμέρας ἐκτίσθης σὺ μετὰ τοῦ χερούβ, ἔθηκά σε ἐν ὄρει ἁγίῳ θεοῦ, ἐγενήθης ἐν μέσῳ λίθων πυρίνων,",
+        "VUL": "Tu cherub extentus, et protegens,/ et posui te in monte sancto Dei :/ in medio lapidum ignitorum ambulasti,/",
+        "SYN": "Ты был помазанным херувимом, чтобы осенять, и Я поставил тебя на то; ты был на святой горе Божией, ходил среди огнистых камней.",
+        "NEO": "Tu étais le chérubin oint pour protéger ; je t’avais placé sur la sainte montagne de Dieu ; tu y étais ; tu marchais au milieu des pierres de feu.",
+        "NAB": "With the Cherub I placed you; you were on the holy mountain of God, walking among the fiery stones.",
+        "VAT_ES": "Yo había hecho de ti un querubín protector, con sus alas desplegadas; estabas en la montaña santa de Dios y te paseabas entre piedras de fuego.",
+        "CEI": "Eri come un cherubino ad ali spiegate a difesa; io ti posi sul monte santo di Dio e camminavi in mezzo a pietre di fuoco."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "תָּמִ֤ים אַתָּה֙ בִּ/דְרָכֶ֔י/ךָ מִ/יּ֖וֹם הִבָּֽרְאָ֑/ךְ עַד נִמְצָ֥א עַוְלָ֖תָ/ה בָּֽ/ךְ׃",
+        "LXX": "ἐγενήθης ἄμωμος σὺ ἐν ταῖς ἡμέραις σου, ἀφ’ ἧς ἡμέρας σὺ ἐκτίσθης ἕως εὑρέθη τὰ ἀδικήματα ἐν σοί.",
+        "VUL": "perfectus in viis tuis a die conditionis tuæ,/ donec inventa est iniquitas in te./",
+        "SYN": "Ты совершен был в путях твоих со дня сотворения твоего, доколе не нашлось в тебе беззакония.",
+        "NEO": "Tu fus parfait dans tes voies depuis le jour où tu fus créé, jusqu’à ce que l’iniquité se trouva en toi.",
+        "NAB": "Blameless you were in your conduct from the day you were created, Until evil was found in you,",
+        "VAT_ES": "Eras irreprochable en tus caminos desde el día en que fuiste creado, hasta que apareció tu iniquidad:",
+        "CEI": "Perfetto tu eri nella tua condotta, da quando sei stato creato, finché fu trovata in te l'iniquità."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "בְּ/רֹ֣ב רְכֻלָּתְ/ךָ֗ מָל֧וּ תוֹכְ/ךָ֛ חָמָ֖ס וַֽ/תֶּחֱטָ֑א וָ/אֶחַלֶּלְ/ךָ֩ מֵ/הַ֨ר אֱלֹהִ֤ים וָֽ/אַבֶּדְ/ךָ֙ כְּר֣וּב הַ/סֹּכֵ֔ךְ מִ/תּ֖וֹךְ אַבְנֵי אֵֽשׁ׃",
+        "LXX": "ἀπὸ πλήθους τῆς ἐμπορίας σου ἔπλησας τὰ ταμιεῖά σου ἀνομίας, καὶ ἥμαρτες καὶ ἐτραυματίσθης ἀπὸ ὄρους τοῦ θεοῦ, καὶ ἤγαγέν σε τὸ χεροὺβ ἐκ μέσου λίθων πυρίνων.",
+        "VUL": "In multitudine negotiationis tuæ/ repleta sunt interiora tua iniquitate, et peccasti :/ et ejeci te de monte Dei,/ et perdidi te, o cherub protegens, de medio lapidum ignitorum./",
+        "SYN": "От обширности торговли твоей внутреннее твое исполнилось неправды, и ты согрешил; и Я низвергнул тебя, как нечистого, с горы Божией, изгнал тебя, херувим осеняющий, из среды огнистых камней.",
+        "NEO": "En multipliant ton trafic, ton intérieur s’est rempli de violence, et tu as péché, et je t’ai banni de la montagne de Dieu, et je t’ai fait périr, ô chérubin protecteur, au milieu des pierres de feu.",
+        "NAB": "the result of your far-flung trade; violence was your business, and you sinned. Then I banned you from the mountain of God; the Cherub drove you from among the fiery stones.",
+        "VAT_ES": "a fuerza de tanto traficar, tu interior se llenó de violencia y caíste en el pecado. Por eso yo te expulso como algo profanado lejos de la montaña de Dios; te hago desaparecer, querubín protector, de entre las piedras de fuego.",
+        "CEI": "Crescendo i tuoi commerci ti sei riempito di violenza e di peccati; io ti ho scacciato dal monte di Dio e ti ho fatto perire, cherubino protettore, in mezzo alle pietre di fuoco."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "גָּבַ֤הּ לִבְּ/ךָ֙ בְּ/יָפְיֶ֔/ךָ שִׁחַ֥תָּ חָכְמָתְ/ךָ֖ עַל יִפְעָתֶ֑/ךָ עַל אֶ֣רֶץ הִשְׁלַכְתִּ֗י/ךָ לִ/פְנֵ֧י מְלָכִ֛ים נְתַתִּ֖י/ךָ לְ/רַ֥אֲוָה בָֽ/ךְ׃",
+        "LXX": "ὑψώθη ἡ καρδία σου ἐπὶ τῷ κάλλει σου, διεφθάρη ἡ ἐπιστήμη σου μετὰ τοῦ κάλλους σου· διὰ πλῆθος ἁμαρτιῶν σου ἐπὶ τὴν γῆν ἔρριψά σε, ἐναντίον βασιλέων ἔδωκά σε παραδειγματισθῆναι.",
+        "VUL": "Et elevatum est cor tuum in decore tuo ;/ perdidisti sapientiam tuam in decore tuo :/ in terram projeci te ;/ ante faciem regum dedi te ut cernerent te./",
+        "SYN": "От красоты твоей возгордилось сердце твое, от тщеславия твоего ты погубил мудрость твою; за то Я повергну тебя на землю, перед царями отдам тебя на позор.",
+        "NEO": "Ton cœur s’est élevé à cause de ta beauté ; tu as perverti ta sagesse par l’effet de ta splendeur. Je t’ai précipité par terre ; je t’ai donné en spectacle aux rois.",
+        "NAB": "You became haughty of heart because of your beauty; for the sake of splendor you debased your wisdom. I cast you to the earth, so great was your guilt; I made you a spectacle in the sight of kings.",
+        "VAT_ES": "Tu corazón se llenó de arrogancia a causa de tu hermosura; corrompiste tu sabiduría a causa de tu esplendor. Pero yo te arrojé por tierra y te expuse como espectáculo delante de los reyes.",
+        "CEI": "Il tuo cuore si era inorgoglito per la tua bellezza, la tua saggezza si era corrotta a causa del tuo splendore: ti ho gettato a terra e ti ho posto davanti ai re che ti vedano."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "מֵ/רֹ֣ב עֲוֺנֶ֗י/ךָ בְּ/עֶ֨וֶל֙ רְכֻלָּ֣תְ/ךָ֔ חִלַּ֖לְתָּ מִקְדָּשֶׁ֑י/ךָ וָֽ/אוֹצִא אֵ֤שׁ מִ/תּֽוֹכְ/ךָ֙ הִ֣יא אֲכָלַ֔תְ/ךָ וָ/אֶתֶּנְ/ךָ֤ לְ/אֵ֨פֶר֙ עַל הָ/אָ֔רֶץ לְ/עֵינֵ֖י כָּל רֹאֶֽי/ךָ׃",
+        "LXX": "διὰ τὸ πλῆθος τῶν ἁμαρτιῶν σου καὶ τῶν ἀδικιῶν τῆς ἐμπορίας σου ἐβεβήλωσα τὰ ἱερά σου, καὶ ἐξάξω πῦρ ἐκ μέσου σου, τοῦτο καταφάγεταί σε· καὶ δώσω σε σποδὸν ἐπὶ τῆς γῆς σου ἐναντίον πάντων τῶν ὁρώντων σε.",
+        "VUL": "In multitudine iniquitatum tuarum,/ et iniquitate negotiationis tuæ,/ polluisti sanctificationem tuam :/ producam ergo ignem de medio tui, qui comedat te,/ et dabo te in cinerem super terram,/ in conspectu omnium videntium te./",
+        "SYN": "Множеством беззаконий твоих в неправедной торговле твоей ты осквернил святилища твои; и Я извлеку из среды тебя огонь, который и пожрет тебя: и Я превращу тебя в пепел на земле перед глазами всех, видящих тебя.",
+        "NEO": "A force d’iniquité, par l’injustice de ton commerce, tu as profané tes sanctuaires ; et j’ai fait sortir un feu du milieu de toi, c’est lui qui t’a dévoré ; et je t’ai réduit en cendres sur la terre, aux yeux de tous ceux qui te voyaient.",
+        "NAB": "Because of your guilt, your sinful trade, I have profaned your sanctuaries, And I have brought out fire from your midst which will devour you. I have reduced you to dust on the earth in the sight of all who should see you.",
+        "VAT_ES": "Con tus numerosas culpas, con tu comercio venal, profanaste tus santuarios. Pero yo hago brotar de ti mismo el fuego que te devora. Te reduciré a ceniza sobre el suelo delante de todos los que te miran.",
+        "CEI": "Con la gravità dei tuoi delitti, con la disonestà del tuo commercio hai profanato i tuoi santuari; perciò in mezzo a te ho fatto sprigionare un fuoco per divorarti. Ti ho ridotto in cenere sulla terra sotto gli occhi di quanti ti guardano."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כָּל יוֹדְעֶ֨י/ךָ֙ בָּֽ/עַמִּ֔ים שָׁמְמ֖וּ עָלֶ֑י/ךָ בַּלָּה֣וֹת הָיִ֔יתָ וְ/אֵינְ/ךָ֖ עַד עוֹלָֽם׃",
+        "LXX": "καὶ πάντες οἱ ἐπιστάμενοί σε ἐν τοῖς ἔθνεσιν στενάξουσιν ἐπὶ σέ· ἀπωλία ἐγένου, καὶ οὐχ ὑπάρξεις ἔτι εἰς τὸν αἰῶνα.",
+        "VUL": "Omnes qui viderint te in gentibus, obstupescent super te :/ nihili factus es, et non eris in perpetuum.]",
+        "SYN": "Все, знавшие тебя среди народов, изумятся о тебе; ты сделаешься ужасом, и не будет тебя во веки.",
+        "NEO": "Tous ceux qui te connaissaient parmi les peuples sont dans la stupeur à cause de toi ; tu es devenu un objet d’épouvante ; et pour jamais tu n’es plus. »",
+        "NAB": "Among the peoples, all who knew you stand aghast at you; You have become a horror, you shall be no more.",
+        "VAT_ES": "Todos los pueblos que te conocen están consternados por ti; te has convertido en un motivo de espanto y no existirás nunca más.",
+        "CEI": "Quanti fra i popoli ti hanno conosciuto sono rimasti attoniti per te, sei divenuto oggetto di terrore, finito per sempre\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me:",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu rivolta questa parola del Signore:"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "בֶּן אָדָ֕ם שִׂ֥ים פָּנֶ֖י/ךָ אֶל צִיד֑וֹן וְ/הִנָּבֵ֖א עָלֶֽי/הָ׃",
+        "LXX": "Υἱὲ ἀνθρώπου, στήρισον τὸ πρόσωπόν σου ἐπὶ Σειδῶνα καὶ προφήτευσον ἐπ’ αὐτὴν",
+        "VUL": "Fili hominis, pone faciem tuam contra Sidonem, et prophetabis de ea :",
+        "SYN": "сын человеческий! обрати лице твое к Сидону и изреки на него пророчество,",
+        "NEO": "« Fils de l’homme, tourne ta face vers Sidon, prophétise sur elle,",
+        "NAB": "Son of man, look toward Sidon, and prophesy against it:",
+        "VAT_ES": "Hijo de hombre, vuelve tu rostro hacia Sidón y profetiza contra ella.",
+        "CEI": "\"Figlio dell'uomo, volgiti verso Sidòne e profetizza contro di essa:"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/אָמַרְתָּ֗ כֹּ֤ה אָמַר֙ אֲדֹנָ֣/י יְהוִ֔ה הִנְ/נִ֤י עָלַ֨יִ/ךְ֙ צִיד֔וֹן וְ/נִכְבַּדְתִּ֖י בְּ/תוֹכֵ֑/ךְ וְֽ/יָדְע֞וּ כִּֽי אֲנִ֣י יְהוָ֗ה בַּ/עֲשׂ֥וֹתִ/י בָ֛/הּ שְׁפָטִ֖ים וְ/נִקְדַּ֥שְׁתִּי בָֽ/הּ׃",
+        "LXX": "καὶ εἰπόν Τάδε λέγει Κύριος Ἰδοὺ ἐγὼ ἐπὶ σέ, Σειδών, καὶ ἐνδοξασθήσομαι ἐν σοί, καὶ γνώσῃ ὅτι ἐγώ εἰμι Κύριος, ἐν τῷ ποιῆσαί με ἐν σοὶ κρίματα, καὶ ἁγιασθήσομαι ἐν σοί.",
+        "VUL": "et dices : [Hæc dicit Dominus Deus :/ Ecce ego ad te, Sidon,/ et glorificabor in medio tui :/ et scient quia ego Dominus,/ cum fecero in ea judicia,/ et sanctificatus fuero in ea./",
+        "SYN": "и скажи: вот, Я - на тебя, Сидон, и прославлюсь среди тебя, и узнают, что Я Господь, когда произведу суд над ним и явлю в нем святость Мою;",
+        "NEO": "et dis : Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Voici que je viens à toi, Sidon ; je vais me glorifier au milieu de toi. On saura que je suis \\+w Yahweh|strong=\"H3068\"\\+w** quand j’exercerai des jugements contre elle, et que je me sanctifierai en elle.",
+        "NAB": "Thus says the Lord GOD: See! I am coming at you, Sidon; I will be glorified in your midst. Then they shall know that I am the LORD, when I inflict punishments upon it and use it to manifest my holiness.",
+        "VAT_ES": "Tú dirás: Así habla el Señor: voy a ser glorificado en medio de ti. Y cuando le inflija un justo castigo y manifieste en ella mi santidad, se sabrá que yo soy el Señor.",
+        "CEI": "Annunziale: Dice il Signore Dio: Eccomi contro di te, Sidòne, e mostrerò la mia gloria in mezzo a te. Si saprà che io sono il Signore quando farò giustizia di te e manifesterò la mia santità."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/שִׁלַּחְתִּי בָ֞/הּ דֶּ֤בֶר וָ/דָם֙ בְּ/ח֣וּצוֹתֶ֔י/הָ וְ/נִפְלַ֤ל חָלָל֙ בְּ/תוֹכָ֔/הּ בְּ/חֶ֥רֶב עָלֶ֖י/הָ מִ/סָּבִ֑יב וְ/יָדְע֖וּ כִּֽי אֲנִ֥י יְהוָֽה׃",
+        "LXX": "αἷμα καὶ θάνατος ἐν ταῖς πλατείαις σου, καὶ πεσοῦνται τετραυματισμένοι μαχαίραις ἐν σοὶ περικύκλῳ σου· καὶ γνώσονται διότι ἐγώ εἰμι Κύριος.",
+        "VUL": "Et immittam ei pestilentiam,/ et sanguinem in plateis ejus :/ et corruent interfecti in medio ejus gladio per circuitum,/ et scient quia ego Dominus./",
+        "SYN": "и пошлю на него моровую язву и кровопролитие на улицы его, и падут среди него убитые мечом, пожирающим его отовсюду; и узнают, что Я Господь.",
+        "NEO": "J’enverrai contre elle la peste, et il y aura du sang dans ses rues ; il tombera au milieu d’elle des victimes de l’épée qui la frappera de toutes parts ; et l’on saura que je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Into it I will send pestilence, and blood shall flow in its streets. Within it shall fall those slain by the sword that comes against it from every side. Thus they shall know that I am the LORD.",
+        "VAT_ES": "Enviaré la peste contra ella y la sangre correrá por sus calles: las víctimas caerán bajo la espada alzada contra ella de todas partes. Así se sabrá que yo soy el Señor.",
+        "CEI": "Manderò contro di essa la peste e il sangue scorrerà per le sue vie: cadranno in essa i trafitti di spada e questa da ogni parte graverà; e sapranno che io sono il Signore."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא יִהְיֶ֨ה ע֜וֹד לְ/בֵ֣ית יִשְׂרָאֵ֗ל סִלּ֤וֹן מַמְאִיר֙ וְ/ק֣וֹץ מַכְאִ֔ב מִ/כֹּל֙ סְבִ֣יבֹתָ֔/ם הַ/שָּׁאטִ֖ים אוֹתָ֑/ם וְ/יָ֣דְע֔וּ כִּ֥י אֲנִ֖י אֲדֹנָ֥/י יְהוִֽה׃",
+        "LXX": "καὶ οὐκ ἔσονται οὐκέτι ἐν τῷ οἴκῳ τοῦ Ἰσραὴλ σκόλοψ πικρίας καὶ ἄκανθα ὀδύνης ἀπὸ τῶν περικύκλῳ αὐτῶν τῶν ἀτιμασάντων αὐτούς, καὶ γνώσονται ὅτι ἐγώ εἰμι Κύριος.",
+        "VUL": "Et non erit ultra domui Israël offendiculum amaritudinis,/ et spina dolorem inferens undique/ per circuitum eorum qui adversantur eis :/ et scient quia ego Dominus Deus./",
+        "SYN": "И не будет он впредь для дома Израилева колючим терном и причиняющим боль волчцом, более всех соседей зложелательствующим ему, и узнают, что Я Господь Бог.",
+        "NEO": "Alors il n’y aura plus pour la maison d’Israël d’épine malfaisante ou de ronce douloureuse, parmi tous ses voisins qui la méprisent ; et l’on saura que je suis le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Sidon shall no longer be a tearing thorn for the house of Israel, a brier that scratches them more than all the others about them who despise them; thus they shall know that I am the LORD.",
+        "VAT_ES": "Entonces ya no habrá para la casa de Israel ni espina punzante ni aguijón doloroso entre todos los vecinos que la desprecian. Así se sabrá que yo soy el Señor.",
+        "CEI": "Non ci sarà più per gli Israeliti un aculeo pungente, una spina dolorosa tra tutti i suoi vicini che la disprezzano: sapranno che io sono il Signore\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "כֹּֽה אָמַר֮ אֲדֹנָ֣/י יְהוִה֒ בְּ/קַבְּצִ֣/י אֶת בֵּ֣ית יִשְׂרָאֵ֗ל מִן הָֽ/עַמִּים֙ אֲשֶׁ֣ר נָפֹ֣צוּ בָ֔/ם וְ/נִקְדַּ֥שְׁתִּי בָ֖/ם לְ/עֵינֵ֣י הַ/גּוֹיִ֑ם וְ/יָֽשְׁבוּ֙ עַל אַדְמָתָ֔/ם אֲשֶׁ֥ר נָתַ֖תִּי לְ/עַבְדִּ֥/י לְ/יַעֲקֹֽב׃",
+        "LXX": "τάδε λέγει κύριος Κύριος Καὶ συνάξω τὸν Ἰσραὴλ ἐκ τῶν ἐθνῶν οὗ διεσκορπίσθησαν ἐκεῖ, καὶ ἁγιασθήσομαι ἐν αὐτοῖς καὶ ἐνώπιον τῶν λαῶν καὶ τῶν ἐθνῶν.",
+        "VUL": "Hæc dicit Dominus Deus :/ Quando congregavero domum Israël/ de populis in quibus dispersi sunt,/ sanctificabor in eis coram gentibus :/ et habitabunt in terra sua,/ quam dedi servo meo Jacob :/",
+        "SYN": "Так говорит Господь Бог: когда Я соберу дом Израилев из народов, между которыми они рассеяны, и явлю в них святость Мою перед глазами племен, и они будут жить на земле своей, которую Я дал рабу Моему Иакову:",
+        "NEO": "Ainsi parle le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Lorsque je rassemblerai la maison d’Israël du milieu des peuples parmi lesquels elle est dispersée, je me sanctifierai en eux aux yeux des nations ; et ils habiteront sur leur terre, que j’aie donnée à mon serviteur, à Jacob.",
+        "NAB": "Thus says the Lord GOD: When I gather the house of Israel from the peoples among whom they are scattered, then I will manifest my holiness through them in the sight of the nations. Then they shall live on their land which I gave to my servant Jacob;",
+        "VAT_ES": "Así habla el Señor: Cuando yo reúna a la casa de Israel de entre los pueblos en que ha sido dispersada, manifestaré mi santidad por medio de ellos, a los ojos de las naciones. Ellos habitarán en su propio suelo, el que di a mi servidor Jacob:",
+        "CEI": "Così dice il Signore Dio; \"Quando avrò radunato gli Israeliti di mezzo ai popoli fra i quali sono dispersi, io manifesterò in essi la mia santità davanti alle genti: abiteranno il paese che diedi al mio servo Giacobbe,"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/יָשְׁב֣וּ עָלֶי/הָ֮ לָ/בֶטַח֒ וּ/בָנ֤וּ בָתִּים֙ וְ/נָטְע֣וּ כְרָמִ֔ים וְ/יָשְׁב֖וּ לָ/בֶ֑טַח בַּ/עֲשׂוֹתִ֣/י שְׁפָטִ֗ים בְּ/כֹ֨ל הַ/שָּׁאטִ֤ים אֹתָ/ם֙ מִ/סְּבִ֣יבוֹתָ֔/ם וְ/יָ֣דְע֔וּ כִּ֛י אֲנִ֥י יְהוָ֖ה אֱלֹהֵי/הֶֽם׃",
+        "LXX": "καὶ κατοικήσουσιν ἐπὶ τῆς γῆς αὐτῶν, ἣν δέδωκα τῷ δούλῳ μου Ἰακώβ, καὶ κατοικήσουσιν ἐπ’ αὐτῆς ἐν ἐλπίδι, καὶ οἰκοδομήσουσιν οἰκίας καὶ φυτεύσουσιν ἀμπελῶνας, καὶ κατοικήσουσιν ἐν ἐλπίδι, ὅταν ποιήσω κρίμα ἐν πᾶσιν τοῖς ἀτιμάσασιν αὐτοὺς ἐν τοῖς κύκλῳ αὐτῶν· καὶ γνώσονται ὅτι ἐγώ εἰμι Κύριος ὁ θεὸς αὐτῶν καὶ ὁ θεὸς τῶν πατέρων αὐτῶν.",
+        "VUL": "et habitabunt in ea securi,/ et ædificabunt domos, et plantabunt vineas,/ et habitabunt confidenter,/ cum fecero judicia in omnibus qui adversantur eis per circuitum :/ et scient quia ego Dominus Deus eorum.]",
+        "SYN": "тогда они будут жить на ней безопасно, и построят домы, и насадят виноградники, и будут жить в безопасности, потому что Я произведу суд над всеми зложелателями их вокруг них, и узнают, что Я Господь Бог их.",
+        "NEO": "Ils y habiteront en sûreté ; ils bâtiront des maisons et planteront des vignes ; ils l’habiteront en sûreté, quand j’aurai exercé des jugements sur tous leurs voisins qui les méprisent. Et l’on saura que je suis \\+w Yahweh|strong=\"H3068\"\\+w** leur Dieu. »",
+        "NAB": "they shall live on it in security, building houses and planting vineyards. They shall dwell secure while I inflict punishments on all their neighbors who despised them; thus they shall know that I, the LORD, am their God.",
+        "VAT_ES": "vivirán seguros en él, construirán casas, plantarán viñas y habitarán seguros, cuando yo inflija un justo castigo a todos los pueblos vecinos que la desprecien. Así se sabrá que yo soy el Señor, su Dios.",
+        "CEI": "vi abiteranno tranquilli, costruiranno case e pianteranno vigne; vi abiteranno tranquilli, quando avrò eseguito i miei giudizi su tutti coloro che intorno li disprezzano: e sapranno che io sono il Signore loro Dio\"."
+      }
+    }
+  }
+}

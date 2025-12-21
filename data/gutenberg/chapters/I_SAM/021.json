@@ -1,0 +1,285 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_SAM_021",
+  "book_key": "I_SAM",
+  "sequence": 21,
+  "chapter_in": {
+    "MT": 21,
+    "VUL": 21,
+    "LXX": 21
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יָּ֖קָם וַ/יֵּלַ֑ךְ וִ/יהוֹנָתָ֖ן בָּ֥א הָ/עִֽיר׃",
+        "LXX": "Καὶ ἔρχεται Δαυεὶδ εἰς Νόμβα πρὸς Ἀβιμέλεχ τὸν ἱερέα· καὶ ἐξέστη Ἀβειμέλεχ τῇ ἀπαντήσει αὐτοῦ καὶ εἶπεν αὐτῷ Τί ὅτι σὺ μόνος καὶ οὐθεὶς μετὰ σοῦ;",
+        "VUL": "Venit autem David in Nobe ad Achimelech sacerdotem : et obstupuit Achimelech, eo quod venisset David. Et dixit ei : Quare tu solus, et nullus est tecum ?",
+        "SYN": "И пришел Давид в Номву к Ахимелеху священнику, и смутился Ахимелех при встрече с Давидом и сказал ему: почему ты один, и никого нет с тобою?",
+        "NEO": "David se leva et s’en alla, et Jonathas rentra dans la ville.",
+        "NAB": "Then David departed on his way, while Jonathan went back into the city.",
+        "VAT_ES": "En seguida David partió, y Jonatán volvió a la ciudad.",
+        "CEI": "Davide si alzò e partì e Giònata tornò in città."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֤א דָוִד֙ נֹ֔בֶ/ה אֶל אֲחִימֶ֖לֶךְ הַ/כֹּהֵ֑ן וַ/יֶּחֱרַ֨ד אֲחִימֶ֜לֶךְ לִ/קְרַ֣את דָּוִ֗ד וַ/יֹּ֤אמֶר ל/וֹ֙ מַדּ֤וּעַ אַתָּה֙ לְ/בַדֶּ֔/ךָ וְ/אִ֖ישׁ אֵ֥ין אִתָּֽ/ךְ׃",
+        "LXX": "καὶ εἶπεν Δαυεὶδ τῷ ἱερεῖ Ὁ βασιλεὺς ἐντέταλταί μοι ῥῆμα σήμερον καὶ εἶπέν μοι Μηδεὶς γνώτω τὸ ῥῆμα περὶ οὗ ἐγὼ ἀποστέλλω σε καὶ ὑπὲρ οὗ ἐντέταλμαί σοι· καὶ τοῖς παιδαρίοις διαμεμαρτύρημαι ἐν τῷ τόπῳ τῷ λεγομένῳ Θεοῦ πίστις, Φελλανεὶ Μαεμωνεί.",
+        "VUL": "Et ait David ad Achimelech sacerdotem : Rex præcepit mihi sermonem, et dixit : Nemo sciat rem propter quam missus es a me, et cujusmodi præcepta tibi dederim : nam et pueris condixi in illum et illum locum.",
+        "SYN": "И сказал Давид Ахимелеху священнику: царь поручил мне дело и сказал мне: \"пусть никто не знает, за чем я послал тебя и что поручил тебе\"; поэтому людей я оставил на известном месте;",
+        "NEO": "David se rendit à Nobé, auprès du grand prêtre Achimélech ; et Achimélech accourut effrayé au-devant de David, et lui dit : « Pourquoi es-tu seul et n’y a-t-il personne avec toi ? »",
+        "NAB": "David went to Ahimelech, the priest of Nob, who came trembling to meet him and asked, \"Why are you alone? Is there no one with you?\"",
+        "VAT_ES": "David llegó a Nob, donde estaba el sacerdote Ajimélec. Este salió a su encuentro muy asustado y le dijo: «&iquest;Por qué estás tú solo, sin nadie que te acompañe?».",
+        "CEI": "Davide si recò a Nob dal sacerdote Achimelech. Achimelech, turbato, andò incontro a Davide e gli disse: \"Perché sei solo e non c'è nessuno con te?\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר דָּוִ֜ד לַ/אֲחִימֶ֣לֶךְ הַ/כֹּהֵ֗ן הַ/מֶּלֶךְ֮ צִוַּ֣/נִי דָבָר֒ וַ/יֹּ֣אמֶר אֵלַ֗/י אִ֣ישׁ אַל יֵ֧דַע מְא֛וּמָה אֶת הַ/דָּבָ֛ר אֲשֶׁר אָנֹכִ֥י שֹׁלֵֽחֲ/ךָ֖ וַ/אֲשֶׁ֣ר צִוִּיתִ֑/ךָ וְ/אֶת הַ/נְּעָרִ֣ים יוֹדַ֔עְתִּי אֶל מְק֥וֹם פְּלֹנִ֖י אַלְמוֹנִֽי׃",
+        "LXX": "καὶ νῦν εἰσὶν ὑπὸ τὴν χεῖρά σου πέντε ἄρτοι; δὸς εἰς χεῖρά μου τὸ εὑρεθέν.",
+        "VUL": "Nunc ergo si quid habes ad manum, vel quinque panes, da mihi, aut quidquid inveneris.",
+        "SYN": "итак, что есть у тебя под рукою, дай мне, хлебов пять, или что найдется.",
+        "NEO": "David répondit au prêtre Achimélech : « Le roi m’a donné un ordre et m’a dit : Que personne ne sache rien de l’affaire pour laquelle je t’envoie et je t’ai donné un ordre. J’ai assigné à mes gens tel lieu de rendez-vous.",
+        "NAB": "David answered the priest: \"The king gave me a commission and told me to let no one know anything about the business on which he sent me or the commission he gave me. For that reason I have arranged a meeting place with my men.",
+        "VAT_ES": "David respondió al sacerdote Ajimélec: «El rey me dio un encargo y me dijo: «Que nadie sepa nada de la misión que te encomiendo ni de la orden que te di». En cuanto a los demás muchachos, les he dado cita en tal lugar.",
+        "CEI": "Rispose Davide al sacerdote Achimelech: \"Il re mi ha ordinato e mi ha detto: Nessuno sappia niente di questa cosa per la quale ti mando e di cui ti ho dato incarico. Ai miei uomini ho dato appuntamento al tal posto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה מַה יֵּ֧שׁ תַּֽחַת יָדְ/ךָ֛ חֲמִשָּׁה לֶ֖חֶם תְּנָ֣/ה בְ/יָדִ֑/י א֖וֹ הַ/נִּמְצָֽא׃",
+        "LXX": "καὶ ἀπεκρίθη ὁ ἱερεὺς τῷ Δαυεὶδ καὶ εἶπεν Οὐκ εἰσὶν ἄρτοι βέβηλοι ὑπὸ τὴν χεῖρά μου, ὅτι ἀλλ’ ἢ ἄρτοι ἅγιοί εἰσιν· εἰ πεφυλαγμένα τὰ παιδάριά ἐστιν ἀπὸ γυναικός, καὶ φάγεται.",
+        "VUL": "Et respondens sacerdos ad David, ait illi : Non habeo laicos panes ad manum, sed tantum panem sanctum : si mundi sunt pueri, maxime a mulieribus ?",
+        "SYN": "И отвечал священник Давиду, говоря: нет у меня под рукою простого хлеба, а есть хлеб священный; если только люди _твои_ воздержались от женщин, [пусть съедят].",
+        "NEO": "Et maintenant qu’as-tu sous la main ? Donne-moi cinq pains dans la main, ou ce qui se trouvera. »",
+        "NAB": "Now what have you on hand? Give me five loaves, or whatever you can find.\"",
+        "VAT_ES": "Si tienes a mano cinco panes, o lo que sea, dámelos ahora mismo».",
+        "CEI": "Ora però se hai a disposizione cinque pani, dammeli, o altra cosa che si possa trovare\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַן הַ/כֹּהֵ֤ן אֶת דָּוִד֙ וַ/יֹּ֔אמֶר אֵֽין לֶ֥חֶם חֹ֖ל אֶל תַּ֣חַת יָדִ֑/י כִּֽי אִם לֶ֤חֶם קֹ֨דֶשׁ֙ יֵ֔שׁ אִם נִשְׁמְר֥וּ הַ/נְּעָרִ֖ים אַ֥ךְ מֵ/אִשָּֽׁה׃",
+        "LXX": "καὶ ἀπεκρίθη Δαυεὶδ τῷ ἱερεῖ καὶ εἶπεν αὐτῷ Ἀλλὰ ἀπὸ γυναικὸς ἀπεσχήμεθα ἐχθὲς καὶ τρίτην ἡμέραν· ἐν τῷ ἐξελθεῖν με εἰς ὁδὸν γέγονε πάντα τὰ παιδάρια ἡγνισμένα. καὶ αὐτὴ ἡ ὁδὸς βέβηλος; διότι ἁγιασθήσεται σήμερον διὰ τὰ σκεύη μου.",
+        "VUL": "Et respondit David sacerdoti, et dixit ei : Equidem, si de mulieribus agitur : continuimus nos ab heri et nudiustertius quando egrediebamur, et fuerunt vasa puerorum sancta. Porro via hæc polluta est, sed et ipsa hodie sanctificabitur in vasis.",
+        "SYN": "И отвечал Давид священнику и сказал ему: женщин при нас не было ни вчера, ни третьего дня, со времени, как я вышел, и сосуды отроков чисты, а если дорога нечиста, то _хлеб_ останется чистым в сосудах.",
+        "NEO": "Le prêtre répondit à David et dit : « Je n’ai pas sous la main de pain ordinaire, mais il y a du pain consacré ; pourvu que tes gens se soient abstenus de femmes. »",
+        "NAB": "But the priest replied to David, \"I have no ordinary bread on hand, only holy bread; if the men have abstained from women, you may eat some of that.\"",
+        "VAT_ES": "El sacerdote respondió a David: «No tengo a mano pan común; sólo hay pan consagrado, con tal que los muchachos se hayan abstenido de tener relaciones con mujeres».",
+        "CEI": "Il sacerdote rispose a Davide: \"Non ho sottomano pani comuni, ho solo pani sacri: se i tuoi giovani si sono almeno astenuti dalle donne, potete mangiarne\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יַּעַן֩ דָּוִ֨ד אֶת הַ/כֹּהֵ֜ן וַ/יֹּ֣אמֶר ל֗/וֹ כִּ֣י אִם אִשָּׁ֤ה עֲצֻֽרָה לָ֨/נוּ֙ כִּ/תְמ֣וֹל שִׁלְשֹׁ֔ם בְּ/צֵאתִ֕/י וַ/יִּהְי֥וּ כְלֵֽי הַ/נְּעָרִ֖ים קֹ֑דֶשׁ וְ/הוּא֙ דֶּ֣רֶךְ חֹ֔ל וְ/אַ֕ף כִּ֥י הַ/יּ֖וֹם יִקְדַּ֥שׁ בַּ/כֶּֽלִי׃",
+        "LXX": "καὶ ἔδωκεν αὐτῷ Ἀβειμέλεχ ὁ ἱερεὺς τοὺς ἄρτους τῆς προθέσεως, ὅτι οὐκ ἦν ἐκεῖ ἄρτοι, ὅτι ἀλλ’ ἢ ἄρτοι τοῦ προσώπου, οἱ ἀφῃρημένοι ἐκ προσώπου Κυρίου παρατεθῆναι ἄρτον θερμὸν ᾗ ἡμέρᾳ ἔλαβεν αὐτούς.",
+        "VUL": "Dedit ergo ei sacerdos sanctificatum panem : neque enim erat ibi panis, nisi tantum panes propositionis, qui sublati fuerant a facie Domini, ut ponerentur panes calidi.",
+        "SYN": "И дал ему священник священного хлеба; ибо не было у него хлеба, кроме хлебов предложения, которые взяты были от лица Господа, чтобы по снятии их положить теплые хлебы.",
+        "NEO": "David répondit au prêtre et lui dit : « Nous nous sommes abstenus de femmes depuis trois jours que je suis parti, et les vases de mes gens sont chose sainte ; et si le voyage est profane, pourtant il est sanctifié quant au vase ? »",
+        "NAB": "David answered the priest: \"We have indeed been segregated from women as on previous occasions. Whenever I go on a journey, all the young men are consecrated - even for a secular journey. All the more so today, when they are consecrated at arms!\"",
+        "VAT_ES": "«&iexcl;Seguro que sí!, respondió David al sacerdote; las mujeres nos han estado vedadas, como siempre que yo salgo de campaña. Si los muchachos mantienen puros sus cuerpos aún en una expedición profana, &iexcl;con mayor razón tendrán hoy sus cuerpos en estado de pureza!».",
+        "CEI": "Rispose Davide al sacerdote: \"Ma certo! Dalle donne ci siamo astenuti da tre giorni. Come sempre quando mi metto in viaggio, i giovani sono mondi, sebbene si tratti d'un viaggio profano; tanto più oggi essi sono mondi\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יִּתֶּן ל֥/וֹ הַ/כֹּהֵ֖ן קֹ֑דֶשׁ כִּי֩ לֹא הָ֨יָה שָׁ֜ם לֶ֗חֶם כִּֽי אִם לֶ֤חֶם הַ/פָּנִים֙ הַ/מּֽוּסָרִים֙ מִ/לִּ/פְנֵ֣י יְהוָ֔ה לָ/שׂוּם֙ לֶ֣חֶם חֹ֔ם בְּ/י֖וֹם הִלָּקְחֽ/וֹ׃",
+        "LXX": "καὶ ἐκεῖ ἦν ἓν τῶν παιδαρίων τοῦ Σαοὺλ ἐν τῇ ἡμέρᾳ ἐκείνῃ συνεχόμενος Νεεσσαρὰν ἐνώπιον Κυρίου, καὶ ὄνομα αὐτῷ Δωὴκ ὁ Σύρος, νέμων τὰς ἡμιόνους Σαούλ.",
+        "VUL": "Erat autem ibi vir quidam de servis Saul in die illa, intus in tabernaculo Domini : et nomen ejus Doëg Idumæus, potentissimus pastorum Saul.",
+        "SYN": "Там находился в тот день пред Господом один из слуг Сауловых, по имени Доик, Идумеянин, начальник пастухов Сауловых.",
+        "NEO": "Alors le prêtre lui donna du pain consacré, car il n’y avait pas là d’autre pain que le pain de proposition, qu’on avait ôté de devant \\+w Yahweh|strong=\"H3068\"\\+w**, pour le remplacer par du pain chaud au moment où on l’enlevait.",
+        "NAB": "So the priest gave him holy bread, for no other bread was on hand except the showbread which had been removed from the LORD'S presence and replaced by fresh bread when it was taken away.",
+        "VAT_ES": "Entonces el sacerdote le dio pan consagrado, porque allí no había otro pan que el de la ofrenda, el que se retira de la presencia del Señor cuando se lo reemplaza por pan fresco.",
+        "CEI": "Il sacerdote gli diede il pane sacro, perché non c'era là altro pane che quello dell'offerta, ritirato dalla presenza del Signore, per essere sostituito con pane fresco nel giorno in cui si toglie."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/שָׁ֡ם אִישׁ֩ מֵ/עַבְדֵ֨י שָׁא֜וּל בַּ/יּ֣וֹם הַ/ה֗וּא נֶעְצָר֙ לִ/פְנֵ֣י יְהוָ֔ה וּ/שְׁמ֖/וֹ דֹּאֵ֣ג הָ/אֲדֹמִ֑י אַבִּ֥יר הָ/רֹעִ֖ים אֲשֶׁ֥ר לְ/שָׁאֽוּל׃",
+        "LXX": "καὶ εἶπεν Δαυεὶδ πρὸς Ἀβειμέλεχ Ἴδε εἰ ἔστιν ἐνταῦθα ὑπὸ τὴν χεῖρά σου δόρυ ἢ ῥομφαία, ὅτι τὴν ῥομφαίαν μου καὶ τὰ σκεύη οὐκ εἴληφα ἐν τῇ χειρί μου, ὅτι ἦν τὸ ῥῆμα τοῦ βασιλέως κατὰ σπουδήν.",
+        "VUL": "Dixit autem David ad Achimelech : Si habes hic ad manum hastam aut gladium ? quia gladium meum et arma mea non tuli mecum : sermo enim regis urgebat.",
+        "SYN": "И сказал Давид Ахимелеху: нет ли здесь у тебя под рукою копья или меча? ибо я не взял с собою ни меча, ни другого оружия, так как поручение царя было спешное.",
+        "NEO": "— Ce même jour, de trouvait là un homme d’entre les serviteurs de Saül, retenu devant \\+w Yahweh|strong=\"H3068\"\\+w** ; il s’appelait Doëg, un Edomite, chef des bergers de Saül.",
+        "NAB": "One of Saul's servants was there that day, detained before the LORD; his name was Doeg the Edomite, and he was Saul's chief henchman.",
+        "VAT_ES": "Aquel día, estaba obligado a quedarse allí, delante del Señor, uno de los servidores de Saúl, llamado Doeg, el edomita, que era el jefe de los pastores de Saúl.",
+        "CEI": "Ma era là in quel giorno uno dei ministri di Saul, trattenuto presso il Signore, di nome Doeg, Idumeo, capo dei pastori di Saul."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר דָּוִד֙ לַ/אֲחִימֶ֔לֶךְ וְ/אִ֛ין יֶשׁ פֹּ֥ה תַֽחַת יָדְ/ךָ֖ חֲנִ֣ית אוֹ חָ֑רֶב כִּ֣י גַם חַרְבִּ֤/י וְ/גַם כֵּלַ/י֙ לֹֽא לָקַ֣חְתִּי בְ/יָדִ֔/י כִּֽי הָיָ֥ה דְבַר הַ/מֶּ֖לֶךְ נָחֽוּץ׃",
+        "LXX": "καὶ εἶπεν ὁ ἱερεύς Ἰδοὺ ἡ ῥομφαία Γολιὰθ τοῦ ἀλλοφύλου, ὃν ἐπάταξας ἐν τῇ κοιλάδι Ἠλά· καὶ αὐτὴ ἐνειλημένη ἦν ἐν ἱματίῳ· εἰ ταύτην λήμψῃ, σεαυτῷ λάβε, ὅτι οὐκ ἔστιν ἑτέρα παρὲξ ταύτης ἐνταῦθα. καὶ εἶπεν Δαυείδ Ἰδοὺ οὐκ ἔστιν ὥσπερ αὐτή, δός μοι αὐτήν.",
+        "VUL": "Et dixit sacerdos : Ecce hic gladius Goliath Philisthæi, quem percussisti in Valle terebinthi : est involutus pallio post ephod : si istum vis tollere, tolle : neque enim hic est alius absque eo. Et ait David : Non est huic alter similis : da mihi eum.",
+        "SYN": "И сказал священник: вот меч Голиафа Филистимлянина, которого ты поразил в долине дуба, завернутый в одежду, позади ефода; если хочешь, возьми его; другого кроме этого нет здесь. И сказал Давид: нет ему подобного, дай мне его. [И дал ему.]",
+        "NEO": "David dit à Achimélech : « N’as-tu pas sous la main une lance ou une épée ? car je n’ai pas même pris avec moi mon épée ni mes armes, parce que l’ordre du roi était pressant. »",
+        "NAB": "David then asked Ahimelech: \"Do you have a spear or a sword on hand? I brought along neither my sword nor my weapons, because the king's business was urgent.\"",
+        "VAT_ES": "David dijo a Ajimélec: «&iquest;No tienes a mano una lanza o una espada? Porque yo no he traído ni mi espada ni mis armas, debido a la urgencia de la misión encomendada por el rey».",
+        "CEI": "Davide disse ad Achimelech: \"Non hai per caso sottomano una lancia o una spada? Io non ho preso con me né la lancia né altra arma, perché l'incarico del re era urgente\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר הַ/כֹּהֵ֗ן חֶרֶב֩ גָּלְיָ֨ת הַ/פְּלִשְׁתִּ֜י אֲשֶׁר הִכִּ֣יתָ בְּ/עֵ֣מֶק הָאֵלָ֗ה הִנֵּה הִ֞יא לוּטָ֣ה בַ/שִּׂמְלָה֮ אַחֲרֵ֣י הָ/אֵפוֹד֒ אִם אֹתָ֤/הּ תִּֽקַּח לְ/ךָ֙ קָ֔ח כִּ֣י אֵ֥ין אַחֶ֛רֶת זוּלָתָ֖/הּ בָּ/זֶ֑ה וַ/יֹּ֧אמֶר דָּוִ֛ד אֵ֥ין כָּמ֖וֹ/הָ תְּנֶ֥/נָּה לִּֽ/י׃",
+        "LXX": "καὶ ἔδωκεν αὐτὴν αὐτῷ· καὶ ἀνέστη Δαυεὶδ καὶ ἔφυγεν ἐν τῇ ἡμέρᾳ ἐκείνῃ ἐκ προσώπου Σαούλ. Καὶ ἦλθεν Δαυεὶδ πρὸς Ἀγχοὺς βασιλέα Γέθ·",
+        "VUL": "Surrexit itaque David, et fugit in die illa a facie Saul : et venit ad Achis regem Geth.",
+        "SYN": "И встал Давид, и убежал в тот же день от Саула, и пришел к Анхусу, царю Гефскому.",
+        "NEO": "Le prêtre répondit : « Il y a l’épée de Goliath, le Philistin que tu as tué dans la vallée du Térébinthe ; la voilà, enveloppée dans le manteau, derrière l’éphod. Si tu veux la prendre, prends-la, car il n’y en a pas d’autre ici. » Et David dit : « Elle n’a pas sa pareille, donne-la-moi. »",
+        "NAB": "The priest replied: \"The sword of Goliath the Philistine, whom you killed in the Vale of the Terebinth, is here (wrapped in a mantle) behind an ephod. If you wish to take that, take it; there is no sword here except that one.\" David said: \"There is none to match it. Give it to me!\"",
+        "VAT_ES": "El sacerdote respondió: «La espada de Goliat, el filisteo que tú derrotaste en el valle del Terebinto, está allí, envuelta en un paño, detrás del efod. Tómala, si quieres, porque aquí no hay otra». «No hay otra espada igual a esa, respondió David: &iexcl;dámela!».",
+        "CEI": "Il sacerdote rispose: \"Guarda, c'è la spada di Golia, il Filisteo che tu hai ucciso nella valle del Terebinto; è là dietro l'efod, avvolta in un manto. Se vuoi, portala via, prendila, perché qui non c'è altra spada che questa\". Rispose Davide: \"Non ce n'è una migliore; dammela\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣קָם דָּוִ֔ד וַ/יִּבְרַ֥ח בַּ/יּוֹם הַ/ה֖וּא מִ/פְּנֵ֣י שָׁא֑וּל וַ/יָּבֹ֕א אֶל אָכִ֖ישׁ מֶ֥לֶךְ גַּֽת׃",
+        "LXX": "καὶ εἶπαν οἱ παῖδες Ἀγχοὺς πρὸς αὐτόν Οὐχὶ οὗτος Δαυεὶδ ὁ βασιλεὺς τῆς γῆς; οὐχὶ τοὺτῳ ἐξῆρχον αἱ χορεύουσαι λέγουσαι Ἐπάταξεν Σαοὺλ ἐν χιλιάσιν αὐτοῦ, καὶ Δαυεὶδ ἐν μυριάσιν αὐτοῦ;",
+        "VUL": "Dixeruntque servi Achis ad eum cum vidissent David : Numquid non iste est David rex terræ ? nonne huic cantabant per choros, dicentes : [Percussit Saul mille,/ et David decem millia ?]",
+        "SYN": "И сказали Анхусу слуги его: не это ли Давид, царь той страны? не ему ли пели в хороводах и говорили: \"Саул поразил тысячи, а Давид -- десятки тысяч\"?",
+        "NEO": "David se leva et s’enfuit ce même jour loin de Saül ; il se rendit chez Achis, roi de Geth.",
+        "NAB": "That same day David took to flight from Saul, going to Achish, king of Gath.",
+        "VAT_ES": "Ese mismo día, David partió y huyó lejos de Saúl, y llegó adonde estaba Aquís, rey de Gat.",
+        "CEI": "Quel giorno Davide si alzò e si allontanò da Saul e giunse da Achis, re di Gat."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמְר֜וּ עַבְדֵ֤י אָכִישׁ֙ אֵלָ֔י/ו הֲ/לוֹא זֶ֥ה דָוִ֖ד מֶ֣לֶךְ הָ/אָ֑רֶץ הֲ/ל֣וֹא לָ/זֶ֗ה יַעֲנ֤וּ בַ/מְּחֹלוֹת֙ לֵ/אמֹ֔ר הִכָּ֤ה שָׁאוּל֙ ב/אלפ/ו בַּ/אֲלָפָ֔י/ו וְ/דָוִ֖ד ב/רבבת/ו בְּ/רִבְבֹתָֽי/ו׃",
+        "LXX": "καὶ ἔθετο Δαυεὶδ τὰ ῥήματα ἐν τῇ καρδίᾳ αὐτοῦ, καὶ ἐφοβήθη σφόδρα ἀπὸ προσώπου Ἀγχοὺς βασιλέως Γέθ.",
+        "VUL": "Posuit autem David sermones istos in corde suo, et extimuit valde a facie Achis regis Geth.",
+        "SYN": "Давид положил слова эти в сердце своем и сильно боялся Анхуса, царя Гефского.",
+        "NEO": "Les serviteurs d’Achis lui dirent : « N’est-ce pas là David, roi du pays ? N’est-ce pas celui pour qui l’on chantait en dansant : Saül a tué ses mille, et David ses dix mille. »",
+        "NAB": "But the servants of Achish said, \"Is this not David, the king of the land? During their dances do they not sing, 'Saul has slain his thousands, but David his ten thousands'?\"",
+        "VAT_ES": "Los servidores de Aquís dijeron al rey: «&iquest;Este no es David, el rey del país? &iquest;No es este aquel por quien cantaban y danzaban, diciendo: Saúl ha matado a miles y David a decenas de miles?».",
+        "CEI": "I ministri di Achis gli dissero: \"Non è costui Davide, il re del paese? Non cantavano in coro in onore di lui: Ha ucciso Saul i suoi mille e Davide i suoi diecimila?\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יָּ֧שֶׂם דָּוִ֛ד אֶת הַ/דְּבָרִ֥ים הָ/אֵ֖לֶּה בִּ/לְבָב֑/וֹ וַ/יִּרָ֣א מְאֹ֔ד מִ/פְּנֵ֖י אָכִ֥ישׁ מֶֽלֶךְ גַּֽת׃",
+        "LXX": "καὶ ἠλλοίωσεν τὸ πρόσωπον αὐτοῦ ἐνώπιον αὐτοῦ καὶ προσεποιήσατο ἐν τῇ ἡμέρᾳ ἐκείνῃ, καὶ ἐτυμπάνιζεν ἐπὶ ταῖς θύραις τῆς πόλεως καὶ παρεφέρετο ἐν ταῖς χερσὶν αὐτοῦ καὶ ἔπιπτεν ἐπὶ τὰς θύρας τῆς πύλης, καὶ τὰ σίελα αὐτοῦ κατέρρει ἐπὶ τὸν πώγωνα αὐτοῦ.",
+        "VUL": "Et immutavit os suum coram eis, et collabebatur inter manus eorum : et impingebat in ostia portæ, defluebantque salivæ ejus in barbam.",
+        "SYN": "И изменил лице свое пред ними, и притворился безумным в их глазах, и чертил на дверях, [кидался на руки свои] и пускал слюну по бороде своей.",
+        "NEO": "David prit ces paroles à cœur, et il eut une grande peur d’Achis, roi de Geth.",
+        "NAB": "David took note of these remarks and became very much afraid of Achish, king of Gath.",
+        "VAT_ES": "David se tomó muy a pecho esas palabras y tuvo miedo de Aquís, rey de Gat.",
+        "CEI": "Davide si preoccupò di queste parole e temette molto Achis re di Gat."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יְשַׁנּ֤/וֹ אֶת טַעְמ/וֹ֙ בְּ/עֵ֣ינֵי/הֶ֔ם וַ/יִּתְהֹלֵ֖ל בְּ/יָדָ֑/ם ו/יתו וַ/יְתָיו֙ עַל דַּלְת֣וֹת הַ/שַּׁ֔עַר וַ/יּ֥וֹרֶד רִיר֖/וֹ אֶל זְקָנֽ/וֹ׃",
+        "LXX": "καὶ εἶπεν Ἀγχοὺς πρὸς τοὺς παῖδας αὐτοῦ Ἰδοὺ ἴδετε ἄνδρα ἐπίλημπτον· ἵνα τί εἰσηγάγετε αὐτὸν πρὸς μέ;",
+        "VUL": "Et ait Achis ad servos suos : Vidistis hominem insanum : quare adduxistis eum ad me ?",
+        "SYN": "И сказал Анхус рабам своим: видите, он человек сумасшедший; для чего вы привели его ко мне?",
+        "NEO": "Il dissimula sa raison à leurs yeux et fit l’insensé entre leurs mains ; il battait du tambour sur les battants des portes, et il laissait couler sa salive sur sa barbe.",
+        "NAB": "So, as they watched, he feigned insanity and acted like a madman in their hands, drumming on the doors of the gate and drooling onto his beard.",
+        "VAT_ES": "Entonces se hizo pasar por loco públicamente y se puso a divagar delante de ellos: arañaba las puertas y dejaba correr la saliva por su barba.",
+        "CEI": "Allora cominciò a fare il pazzo ai loro occhi, a fare il folle tra le loro mani; tracciava segni sui battenti delle porte e lasciava colare la saliva sulla barba."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר אָכִ֖ישׁ אֶל עֲבָדָ֑י/ו הִנֵּ֤ה תִרְאוּ֙ אִ֣ישׁ מִשְׁתַּגֵּ֔עַ לָ֛/מָּה תָּבִ֥יאוּ אֹת֖/וֹ אֵלָֽ/י׃",
+        "LXX": "ἐλαττοῦμαι ἐπιλήμπτων ἐγώ, ὅτι εἰσαγιόχατε αὐτὸν ἐπιλημπτεύεσθαι πρὸς μέ; οὗτος οὐκ εἰσελεύσεται εἰς οἰκίαν.",
+        "VUL": "an desunt nobis furiosi, quod introduxistis istum, ut fureret me præsente ? hiccine ingredietur domum meam ?",
+        "SYN": "разве мало у меня сумасшедших, что вы привели его, чтобы он юродствовал предо мною? неужели он войдет в дом мой?",
+        "NEO": "Achis dit à ses serviteurs : « Vous voyez bien que cet homme est un fou ; pourquoi me l’avez-vous amené ?",
+        "NAB": "Finally Achish said to his servants: \"You see the man is mad. Why did you bring him to me?",
+        "VAT_ES": "Aquís dijo a sus servidores: «&iquest;Pero no ven que se ha vuelto loco? &iquest;A qué me lo han traído?",
+        "CEI": "Achis disse ai ministri: \"Ecco, vedete anche voi che è un pazzo. Perché lo avete condotto da me? Non ho abbastanza pazzi io perché mi conduciate anche costui per fare il folle davanti a me? Dovrebbe entrare in casa mia un uomo simile?\"."
+      }
+    }
+  }
+}

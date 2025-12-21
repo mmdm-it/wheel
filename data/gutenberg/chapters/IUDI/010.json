@@ -1,0 +1,339 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IUDI_010",
+  "book_key": "IUDI",
+  "sequence": 10,
+  "chapter_in": {
+    "MT": 10,
+    "VUL": 10,
+    "LXX": 10
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יָּקָם֩ אַחֲרֵ֨י אֲבִימֶ֜לֶךְ לְ/הוֹשִׁ֣יעַ אֶת יִשְׂרָאֵ֗ל תּוֹלָ֧ע בֶּן פּוּאָ֛ה בֶּן דּוֹד֖וֹ אִ֣ישׁ יִשָּׂשכָ֑ר וְ/הֽוּא יֹשֵׁ֥ב בְּ/שָׁמִ֖יר בְּ/הַ֥ר אֶפְרָֽיִם׃",
+        "LXX": "Καὶ ἀνέστη μετὰ Ἀβειμέλεχ τοῦ σῶσαι τὸν Ἰσραὴλ Θωλὰ υἱὸς Φουά, υἱὸς πατραδέλφου αὐτοῦ, ἀνὴρ Ἰσσαχάρ· καὶ αὐτὸς ᾤκει ἐν Σαμεὶρ ἐν ὄρει Ἐφράιμ.",
+        "VUL": "Post Abimelech surrexit dux in Israël Thola filius Phua patrui Abimelech, vir de Issachar, qui habitavit in Samir montis Ephraim :",
+        "SYN": "После Авимелеха восстал для спасения Израиля Фола, сын Фуи, сына Додова, из колена Иссахарова. Он жил в Шамире на горе Ефремовой.",
+        "NEO": "Après Abimélek, Thola, fils de Phua, fils de Dodo, homme d’Issachar, se leva pour délivrer Israël ; il demeurait à Samir, dans la montagne d’Ephraïm.",
+        "NAB": "After Abimelech there rose to save Israel the Issacharite Tola, son of Puah, son of Dodo, a resident of Shamir in the mountain region of Ephraim.",
+        "VAT_ES": "Después de Abimélec, surgió Tolá, hijo de Puá, hijo de Dodó, para salvar a Israel. Era de Isacar, pero vivía en Samir, en la montaña de Efraím.",
+        "CEI": "Dopo Abimèlech, sorse a salvare Israele Tola, figlio di Pua, figlio di Dodo, uomo di Issacar. Dimorava a Samir sulle montagne di Efraim;"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁפֹּט֙ אֶת יִשְׂרָאֵ֔ל עֶשְׂרִ֥ים וְ/שָׁלֹ֖שׁ שָׁנָ֑ה וַ/יָּ֖מָת וַ/יִּקָּבֵ֥ר בְּ/שָׁמִֽיר׃",
+        "LXX": "καὶ ἔκρινεν τὸν Ἰσραὴλ εἴκοσι τρία ἔτη, καὶ ἀπέθανεν καὶ ἐτάφη ἐν Σαμείρ.",
+        "VUL": "et judicavit Israëlem viginti et tribus annis, mortuusque est, ac sepultus in Samir.",
+        "SYN": "Он был судьею Израиля двадцать три года, и умер, и погребен в Шамире.",
+        "NEO": "Il fut juge en Israël pendant vingt-trois ans ; puis il mourut et fut enterré à Samir.",
+        "NAB": "When he had judged Israel twenty-three years, he died and was buried in Shamir.",
+        "VAT_ES": "El juzgó a Israel durante veintitrés años. Cuando murió, fue sepultado en Samir.",
+        "CEI": "fu giudice d'Israele per ventitré anni, poi morì e fu sepolto a Samir."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣קָם אַחֲרָ֔י/ו יָאִ֖יר הַ/גִּלְעָדִ֑י וַ/יִּשְׁפֹּט֙ אֶת יִשְׂרָאֵ֔ל עֶשְׂרִ֥ים וּ/שְׁתַּ֖יִם שָׁנָֽה׃",
+        "LXX": "Καὶ ἀνέστη μετ’ αὐτὸν Ἰαεὶρ ὁ Γαλαάδ, καὶ ἔκρινεν τὸν Ἰσραὴλ εἴκοσι δύο ἔτη.",
+        "VUL": "Huic successit Jair Galaadites, qui judicavit Israël per viginti et duos annos,",
+        "SYN": "После него восстал Иаир из Галаада и был судьею Израиля двадцать два года.",
+        "NEO": "Après lui se leva Jaïr, de Galaad, qui jugea Israël pendant vingt-deux ans.",
+        "NAB": "Jair the Gileadite came after him and judged Israel twenty-two years.",
+        "VAT_ES": "Después de él, surgió Iaír, de Galaad. /El Juzgó a Israel durante veintidós años.",
+        "CEI": "Dopo di lui sorse Iair, il Galaadita, che fu giudice d'Israele per ventidue anni;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי ל֞/וֹ שְׁלֹשִׁ֣ים בָּנִ֗ים רֹֽכְבִים֙ עַל שְׁלֹשִׁ֣ים עֲיָרִ֔ים וּ/שְׁלֹשִׁ֥ים עֲיָרִ֖ים לָ/הֶ֑ם לָ/הֶ֞ם יִקְרְא֣וּ חַוֺּ֣ת יָאִ֗יר עַ֚ד הַ/יּ֣וֹם הַ/זֶּ֔ה אֲשֶׁ֖ר בְּ/אֶ֥רֶץ הַ/גִּלְעָֽד׃",
+        "LXX": "καὶ ἦσαν αὐτῷ τριάκοντα καὶ δύο υἱοὶ ἐπιβαίνοντες ἐπὶ τριάκοντα δύο πώλους, καὶ τριάκοντα δύο πόλεις αὐτοῖς· καὶ ἐκάλουν αὐτὰς Ἐπαύλεις Ἰαεὶρ ἕως τῆς ἡμέρας ταύτης, ἐν γῇ Γαλαάδ.",
+        "VUL": "habens triginta filios sedentes super triginta pullos asinarum, et principes triginta civitatum, quæ ex nomine ejus sunt appellatæ Havoth Jair, id est, oppida Jair, usque in præsentem diem, in terra Galaad.",
+        "SYN": "У него было тридцать [два] сына, ездивших на тридцати [двух] молодых ослах, и тридцать [два] города было у них; их до сего дня называют селениями Иаира, что в земле Галаадской.",
+        "NEO": "Il avait trente fils, qui montaient trente ânons, et qui possédaient trente villes appelées encore aujourd’hui Bourgs de Jaïr, et situées dans le pays de Galaad.",
+        "NAB": "He had thirty sons who rode on thirty saddle-asses and possessed thirty cities in the land of Gilead; these are called Havvoth-jair to the present day.",
+        "VAT_ES": "Tenía treinta hijos, que iban montados en treinta asnos y tenían treinta ciudades. Estas últimas se llaman todavía hoy los Poblados de Iaír, y se encuentran en el territorio de Galaad.",
+        "CEI": "ebbe trenta figli che cavalcavano trenta asinelli e avevano trenta città, che si chiamano anche oggi i Villaggi di Iair e sono nel paese di Gàlaad."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣מָת יָאִ֔יר וַ/יִּקָּבֵ֖ר בְּ/קָמֽוֹן׃",
+        "LXX": "καὶ ἀπέθανεν Ἰαείρ, καὶ ἐτάφη ἐν Ῥαμνών.",
+        "VUL": "Mortuusque est Jair, ac sepultus in loco cui est vocabulum Camon.",
+        "SYN": "И умер Иаир и погребен в Камоне.",
+        "NEO": "Et Jaïr mourut, et il fut enterré à Camon.",
+        "NAB": "Jair died and was buried in Kamon.",
+        "VAT_ES": "Cuando murió Iaír, lo sepultaron en Camón.",
+        "CEI": "Poi Iair morì e fu sepolto a Kamon."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּסִ֣פוּ בְּנֵ֣י יִשְׂרָאֵ֗ל לַ/עֲשׂ֣וֹת הָ/רַע֮ בְּ/עֵינֵ֣י יְהוָה֒ וַ/יַּעַבְד֣וּ אֶת הַ/בְּעָלִ֣ים וְ/אֶת הָ/עַשְׁתָּר֡וֹת וְ/אֶת אֱלֹהֵ֣י אֲרָם֩ וְ/אֶת אֱלֹהֵ֨י צִיד֜וֹן וְ/אֵ֣ת אֱלֹהֵ֣י מוֹאָ֗ב וְ/אֵת֙ אֱלֹהֵ֣י בְנֵי עַמּ֔וֹן וְ/אֵ֖ת אֱלֹהֵ֣י פְלִשְׁתִּ֑ים וַ/יַּעַזְב֥וּ אֶת יְהוָ֖ה וְ/לֹ֥א עֲבָדֽוּ/הוּ׃",
+        "LXX": "Καὶ προσέθεντο οἱ υἱοὶ Ἰσραὴλ ποιῆσαι τὸ πονηρὸν ἐνώπιον Κυρίου, καὶ ἐδούλευσαν τοῖς Βααλεὶμ καὶ ταῖς Ἀσταρὼθ καὶ τοῖς θεοῖς Ἀρὰδ καὶ τοῖς θεοῖς Σιδῶνος καὶ τοῖς θεοῖς Μωὰβ καὶ τοῖς θεοῖς υἱῶν Ἀμμὼν καὶ τοῖς θεοῖς Φυλιστιείμ· καὶ ἐνκατέλιπον τὸν κύριον καὶ οὐκ ἐδούλευσαν αὐτῷ.",
+        "VUL": "Filii autem Israël peccatis veteribus jungentes nova, fecerunt malum in conspectu Domini, et servierunt idolis, Baalim et Astaroth, et diis Syriæ ac Sidonis et Moab et filiorum Ammon et Philisthiim : dimiseruntque Dominum, et non coluerunt eum.",
+        "SYN": "Сыны Израилевы продолжали делать злое пред очами Господа и служили Ваалам и Астартам, и богам Арамейским, и богам Сидонским, и богам Моавитским, и богам Аммонитским, и богам Филистимским; а Господа оставили и не служили Ему.",
+        "NEO": "Les enfants d’Israël firent encore ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w** ; ils servirent les Baals et les Astartés, les dieux de Syrie, les dieux de Sidon, les dieux de Moab, les dieux des fils d’Ammon et les dieux des Philistins, et ils abandonnèrent \\+w Yahweh|strong=\"H3068\"\\+w** et ne le servirent plus.",
+        "NAB": "The Israelites again offended the LORD, serving the Baals and Ashtaroths, the gods of Aram, the gods of Sidon, the gods of Moab, the gods of the Ammonites, and the gods of the Philistines. Since they had abandoned the LORD and would not serve him,",
+        "VAT_ES": "Los israelitas volvieron a hacer lo que es malo a los ojos del Señor, sirviendo a los Baales y a las Astartés, a los dioses de Aram, de Sidón y de Moab, y a los dioses de los amonitas y de los filisteos. Así abandonaron al Señor y dejaron de servirlo",
+        "CEI": "Gli Israeliti continuarono a fare ciò che è male agli occhi del Signore e servirono i Baal, le Astarti, gli dei di Aram, gli dei di Sidòne, gli dei di Moab, gli dei degli Ammoniti e gli dei dei Filistei; abbandonarono il Signore e non lo servirono più."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יִּֽחַר אַ֥ף יְהוָ֖ה בְּ/יִשְׂרָאֵ֑ל וַֽ/יִּמְכְּרֵ/ם֙ בְּ/יַד פְּלִשְׁתִּ֔ים וּ/בְ/יַ֖ד בְּנֵ֥י עַמּֽוֹן׃",
+        "LXX": "καὶ ὠργίσθη θυμῷ Κύριος ἐν Ἰσραήλ, καὶ ἀπέδοτο αὐτοὺς ἐν χειρὶ Φυλιστιεὶμ καὶ ἐν χειρὶ υἱῶν Ἀμμών.",
+        "VUL": "Contra quos Dominus iratus, tradidit eos in manus Philisthiim et filiorum Ammon.",
+        "SYN": "И воспылал гнев Господа на Израиля, и Он предал их в руки Филистимлян и в руки Аммонитян;",
+        "NEO": "La colère de \\+w Yahweh|strong=\"H3068\"\\+w** s’enflamma contre Israël, et il les vendit entre les mains des Philistins et entre les mains des fils d’Ammon.",
+        "NAB": "the LORD became angry with Israel and allowed them to fall into the power of (the Philistines and) the Ammonites.",
+        "VAT_ES": "Entonces la ira del Señor se encendió contra Israel, y él los entregó en manos de los filisteos y de los amonitas.",
+        "CEI": "L'ira del Signore si accese contro Israele e li mise nelle mani dei Filistei e nelle mani degli Ammoniti."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַֽ/יִּרְעֲצ֤וּ וַ/יְרֹֽצְצוּ֙ אֶת בְּנֵ֣י יִשְׂרָאֵ֔ל בַּ/שָּׁנָ֖ה הַ/הִ֑יא שְׁמֹנֶ֨ה עֶשְׂרֵ֜ה שָׁנָ֗ה אֶֽת כָּל בְּנֵ֤י יִשְׂרָאֵל֙ אֲשֶׁר֙ בְּ/עֵ֣בֶר הַ/יַּרְדֵּ֔ן בְּ/אֶ֥רֶץ הָ/אֱמֹרִ֖י אֲשֶׁ֥ר בַּ/גִּלְעָֽד׃",
+        "LXX": "καὶ ἔθλιψαν καὶ ἔθλασαν τοὺς υἱοὺς Ἰσραὴλ ἐν τῷ καιρῷ ἐκείνῳ δέκα ὀκτὼ ἔτη, τοὺς πάντας υἱοὺς Ἰσραὴλ τοὺς ἐν τῷ πέραν τοῦ Ἰορδάνου ἐν γῇ τοῦ Ἀμορρεὶ τοῦ ἐν Γαλαάδ.",
+        "VUL": "Afflictique sunt, et vehementer oppressi per annos decem et octo, omnes qui habitabant trans Jordanem in terra Amorrhæi, qui est in Galaad :",
+        "SYN": "они теснили и мучили сынов Израилевых с того года восемнадцать лет, всех сынов Израилевых по ту сторону Иордана в земле Аморрейской, которая в Галааде.",
+        "NEO": "Ces derniers opprimèrent et écrasèrent les enfants d’Israël en cette année-là ; et cette oppression dura dix-huit ans pour tous les enfants d’Israël qui habitaient de l’autre côté du Jourdain, dans le pays des Amorrhéens en Galaad.",
+        "NAB": "For eighteen years they afflicted and oppressed the Israelites in Bashan, and all the Israelites in the Amorite land beyond the Jordan in Gilead.",
+        "VAT_ES": "A partir de ese momento, los amonitas oprimieron duramente a los israelitas que vivían al otro lado del Jordán, en el país de los amorreos de Galaad. La opresión duró dieciocho años.",
+        "CEI": "Questi afflissero e oppressero per diciotto anni gli Israeliti, tutti i figli d'Israele che erano oltre il Giordano, nel paese degli Amorrèi in Gàlaad."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יַּעַבְר֤וּ בְנֵֽי עַמּוֹן֙ אֶת הַ/יַּרְדֵּ֔ן לְ/הִלָּחֵ֛ם גַּם בִּ/יהוּדָ֥ה וּ/בְ/בִנְיָמִ֖ין וּ/בְ/בֵ֣ית אֶפְרָ֑יִם וַ/תֵּ֥צֶר לְ/יִשְׂרָאֵ֖ל מְאֹֽד׃",
+        "LXX": "καὶ διέβησαν οἱ υἱοὶ Ἀμμὼν τὸν Ἰορδάνην παρατάξασθαι πρὸς Ἰούδαν καὶ Βενιαμεὶν καὶ πρὸς Ἐφράιμ· καὶ ἐθλίβη Ἰσραὴλ σφόδρα.",
+        "VUL": "in tantum ut filii Ammon, Jordane transmisso, vastarent Judam et Benjamin et Ephraim : afflictusque est Israël nimis.",
+        "SYN": "Наконец Аммонитяне перешли Иордан, чтобы вести войну с Иудою и Вениамином и с домом Ефремовым. И весьма тесно было сынам Израиля.",
+        "NEO": "Les fils d’Ammon passèrent le Jourdain pour combattre aussi Juda, Benjamin et la maison d’Ephraïm ; et Israël fut réduit à une grande détresse.",
+        "NAB": "The Ammonites also crossed the Jordan to fight against Judah, Benjamin, and the house of Ephraim, so that Israel was in great distress.",
+        "VAT_ES": "Además, los amonitas cruzaron el Jordán para atacar también a Judá, a Benjamín y a la casa de Efraím. Israel se encontró así en un grave aprieto.",
+        "CEI": "Poi gli Ammoniti passarono il Giordano per combattere anche contro Giuda, contro Beniamino e contro la casa d'Efraim e Israele fu in grande angoscia."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַֽ/יִּזְעֲקוּ֙ בְּנֵ֣י יִשְׂרָאֵ֔ל אֶל יְהוָ֖ה לֵ/אמֹ֑ר חָטָ֣אנוּ לָ֔/ךְ וְ/כִ֤י עָזַ֨בְנוּ֙ אֶת אֱלֹהֵ֔י/נוּ וַֽ/נַּעֲבֹ֖ד אֶת הַ/בְּעָלִֽים׃",
+        "LXX": "καὶ ἐβόησαν οἱ υἱοὶ Ἰσραὴλ πρὸς Κύριον λέγοντες Ἡμάρτομέν σοι, ὅτι ἐνκατελίπομεν τὸν θεὸν καὶ ἐδουλεύσαμεν τῷ Βααλείμ.",
+        "VUL": "Et clamantes ad Dominum, dixerunt : Peccavimus tibi, quia dereliquimus Dominum Deum nostrum, et servivimus Baalim.",
+        "SYN": "И возопили сыны Израилевы к Господу, и говорили: согрешили мы пред Тобою, потому что оставили Бога нашего и служили Ваалам.",
+        "NEO": "Les enfants d’Israël crièrent vers \\+w Yahweh|strong=\"H3068\"\\+w**, en disant : « Nous avons péché contre vous, car nous avons abandonné notre Dieu et nous avons servi les Baals. »",
+        "NAB": "Then the Israelites cried out to the LORD, \"We have sinned against you; we have forsaken our God and have served the Baals.\"",
+        "VAT_ES": "Entonces los israelitas clamaron al Señor, diciendo: «Hemos pecado contra ti, nuestro Dios, porque te hemos abandonado para servir a los Baales».",
+        "CEI": "Allora gli Israeliti gridarono al Signore: \"Abbiamo peccato contro di te, perché abbiamo abbandonato il nostro Dio e abbiamo servito i Baal\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ֥/יֹּאמֶר יְהוָ֖ה אֶל בְּנֵ֣י יִשְׂרָאֵ֑ל הֲ/לֹ֤א מִ/מִּצְרַ֨יִם֙ וּ/מִן הָ֣/אֱמֹרִ֔י וּ/מִן בְּנֵ֥י עַמּ֖וֹן וּ/מִן פְּלִשְׁתִּֽים׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς τοὺς υἱοὺς Ἰσραήλ Μὴ οὐχὶ ἐξ Αἰγύπτου καὶ ἀπὸ τοῦ Ἀμορραίου καὶ ἀπὸ υἱῶν Ἀμμὼν καὶ ἀπὸ Φυλιστιεὶμ",
+        "VUL": "Quibus locutus est Dominus : Numquid non Ægyptii et Amorrhæi, filiique Ammon et Philisthiim,",
+        "SYN": "И сказал Господь сынам Израилевым: не угнетали ли вас Египтяне, и Аморреи, и Аммонитяне, и Филистимляне,",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit aux enfants d’Israël : « Est-ce que je ne vous ai pas délivrés des Egyptiens, des Amorrhéens, des fils d’Ammon, des Philistins ?",
+        "NAB": "The LORD answered the Israelites: \"Did not the Egyptians, the Amorites, the Ammonites, the Philistines,",
+        "VAT_ES": "Y el Señor dijo a los israelitas: «Cuando los oprimieron los egipcios, los amorreos, los amonitas, los filisteos,",
+        "CEI": "Il Signore disse agli Israeliti: \"Non vi ho io liberati dagli Egiziani, dagli Amorrèi, dagli Ammoniti e dai Filistei?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/צִידוֹנִ֤ים וַֽ/עֲמָלֵק֙ וּ/מָע֔וֹן לָחֲצ֖וּ אֶתְ/כֶ֑ם וַ/תִּצְעֲק֣וּ אֵלַ֔/י וָ/אוֹשִׁ֥יעָ/ה אֶתְ/כֶ֖ם מִ/יָּדָֽ/ם׃",
+        "LXX": "καὶ Σιδωνίων καὶ Ἀμαλὴκ καὶ Μαδιάμ, οἳ ἔθλιψαν ὑμᾶς, καὶ ἐβοήσατε πρὸς μέ, καὶ ἔσωσα ὑμᾶς ἐκ χειρὸς αὐτῶν;",
+        "VUL": "Sidonii quoque et Amalec et Chanaan oppresserunt vos, et clamastis ad me, et erui vos de manu eorum ?",
+        "SYN": "и Сидоняне, и Амаликитяне, и Моавитяне, и когда вы взывали ко Мне, не спасал ли Я вас от рук их?",
+        "NEO": "Et lorsque les Sidoniens, Amalec et Maon vous ont opprimés, et que vous avez crié vers moi, ne vous ai-je pas sauvés de leurs mains ?",
+        "NAB": "the Sidonians, the Amalekites, and the Midianites oppress you? Yet when you cried out to me, and I saved you from their grasp,",
+        "VAT_ES": "los sidonios, los amalecitas y los madianitas, ustedes clamaron hacia mí, y yo los salvé de su poder.",
+        "CEI": "Quando quelli di Sidòne, gli Amaleciti e i Madianiti vi opprimevano e voi gridavate a me, non vi ho forse liberati dalle loro mani?"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/אַתֶּם֙ עֲזַבְתֶּ֣ם אוֹתִ֔/י וַ/תַּעַבְד֖וּ אֱלֹהִ֣ים אֲחֵרִ֑ים לָ/כֵ֥ן לֹֽא אוֹסִ֖יף לְ/הוֹשִׁ֥יעַ אֶתְ/כֶֽם׃",
+        "LXX": "καὶ ὑμεῖς ἐγκατελίπετέ με καὶ ἐδουλεύσατε θεοῖς ἑτέροις· διὰ τοῦτο οὐ προσθήσω τοῦ σῶσαι ὑμᾶς.",
+        "VUL": "Et tamen reliquistis me, et coluistis deos alienos : idcirco non addam ut ultra vos liberem :",
+        "SYN": "А вы оставили Меня и стали служить другим богам; за то Я не буду уже спасать вас:",
+        "NEO": "Mais vous, vous m’avez abandonné et vous avez servi d’autres dieux ; c’est pourquoi je ne vous délivrerai plus.",
+        "NAB": "you still forsook me and worshiped other gods. Therefore I will save you no more.",
+        "VAT_ES": "A pesar de eso, ustedes me abandonaron y sirvieron a otros dioses. Por eso, no volverá a salvarlos.",
+        "CEI": "Eppure, mi avete abbandonato e avete servito altri dei; perciò io non vi salverò più."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לְכ֗וּ וְ/זַֽעֲקוּ֙ אֶל הָ֣/אֱלֹהִ֔ים אֲשֶׁ֥ר בְּחַרְתֶּ֖ם בָּ֑/ם הֵ֛מָּה יוֹשִׁ֥יעוּ לָ/כֶ֖ם בְּ/עֵ֥ת צָרַתְ/כֶֽם׃",
+        "LXX": "πορεύεσθε καὶ βοήσατε πρὸς τοὺς θεοὺς οὓς ἐξελέξασθε ἑαυτοῖς, καὶ αὐτοὶ σωσάτωσαν ὑμᾶς ἐν καιρῷ θλίψεως ὑμῶν.",
+        "VUL": "ite, et invocate deos quos elegistis : ipsi vos liberent in tempore angustiæ.",
+        "SYN": "пойдите, взывайте к богам, которых вы избрали, пусть они спасают вас в тесное для вас время.",
+        "NEO": "Allez, invoquez les dieux que vous vous êtes choisis ; qu’ils vous délivrent au temps de votre détresse ! »",
+        "NAB": "Go and cry out to the gods you have chosen; let them save you now that you are in distress.\"",
+        "VAT_ES": "Vayan a invocar a los dioses que ustedes se han elegido: que ellos los salven en el momento del peligro».",
+        "CEI": "Andate a gridare agli dei che avete scelto; vi salvino essi nel tempo della vostra angoscia!\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֨וּ בְנֵי יִשְׂרָאֵ֤ל אֶל יְהוָה֙ חָטָ֔אנוּ עֲשֵׂה אַתָּ֣ה לָ֔/נוּ כְּ/כָל הַ/טּ֖וֹב בְּ/עֵינֶ֑י/ךָ אַ֛ךְ הַצִּילֵ֥/נוּ נָ֖א הַ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ εἶπαν οἱ υἱοὶ Ἰσραὴλ πρὸς Κύριον Ἡμάρτομεν, ποίησον σὺ ἡμῖν κατὰ πᾶν τὸ ἀγαθὸν ἐν ὀφθαλμοῖς σου· πλὴν ἐξελοῦ ἡμᾶς ἐν τῇ ἡμέρᾳ ταύτῃ.",
+        "VUL": "Dixeruntque filii Israël ad Dominum : Peccavimus, redde tu nobis quidquid tibi placet : tantum nunc libera nos.",
+        "SYN": "И сказали сыны Израилевы Господу: согрешили мы; делай с нами все, что Тебе угодно, только избавь нас ныне.",
+        "NEO": "Les enfants d’Israël dirent à \\+w Yahweh|strong=\"H3068\"\\+w** : « Nous avons péché, traitez-nous tous comme il vous semblera bon. Seulement daignez nous délivrer en ce jour. »",
+        "NAB": "But the Israelites said to the LORD, \"We have sinned. Do to us whatever you please. Only save us this day.\"",
+        "VAT_ES": "Los israelitas respondieron al Señor: «Hemos pecado. Trátanos como quieras, pero por favor, sálvanos en este día».",
+        "CEI": "Gli Israeliti dissero al Signore: \"Abbiamo peccato; fà di noi ciò che ti piace; soltanto, liberaci in questo giorno\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יָּסִ֜ירוּ אֶת אֱלֹהֵ֤י הַ/נֵּכָר֙ מִ/קִּרְבָּ֔/ם וַ/יַּעַבְד֖וּ אֶת יְהוָ֑ה וַ/תִּקְצַ֥ר נַפְשׁ֖/וֹ בַּ/עֲמַ֥ל יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐξέκλιναν τοὺς θεοὺς τοὺς ἀλλοτρίους ἐκ μέσου αὐτῶν, καὶ ἐδούλευσαν τῷ κυρίῳ μόνῳ· καὶ ὠλιγώθη ἡ ψυχὴ αὐτοῦ ἐν κόπῳ Ἰσραήλ.",
+        "VUL": "Quæ dicentes, omnia de finibus suis alienorum deorum idola projecerunt, et servierunt Domino Deo : qui doluit super miseriis eorum.",
+        "SYN": "И отвергли от себя чужих богов и стали служить [только] Господу. И не потерпела душа Его страдания Израилева.",
+        "NEO": "Et ils ôtèrent du milieu d’eux les dieux étrangers, et ils servirent \\+w Yahweh|strong=\"H3068\"\\+w**, et son âme ne put supporter les souffrances d’Israël.",
+        "NAB": "And they cast out the foreign gods from their midst and served the LORD, so that he grieved over the misery of Israel.",
+        "VAT_ES": "Ellos hicieron desaparecer a los dioses extraños y sirvieron al Señor. Y el Señor no pudo soportar por más tiempo el sufrimiento de Israel.",
+        "CEI": "Eliminarono gli dei stranieri e servirono il Signore, il quale non tollerò più a lungo la tribolazione di Israele."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יִּצָּֽעֲקוּ֙ בְּנֵ֣י עַמּ֔וֹן וַֽ/יַּחֲנ֖וּ בַּ/גִּלְעָ֑ד וַ/יֵּאָֽסְפוּ֙ בְּנֵ֣י יִשְׂרָאֵ֔ל וַֽ/יַּחֲנ֖וּ בַּ/מִּצְפָּֽה׃",
+        "LXX": "Καὶ ἀνέβησαν οἱ υἱοὶ Ἀμμὼν καὶ παρενέβαλον ἐν Γαλαάδ, καὶ συνήχθησαν οἱ υἱοὶ Ἰσραὴλ καὶ παρενέβαλον ἐν τῇ σκοπιᾷ.",
+        "VUL": "Itaque filii Ammon conclamantes in Galaad fixere tentoria, contra quos congregati filii Israël in Maspha castrametati sunt.",
+        "SYN": "Аммонитяне собрались и расположились станом в Галааде; собрались также сыны Израилевы и стали станом в Массифе.",
+        "NEO": "Les fils d’Ammon se rassemblèrent et campèrent en Galaad, et les enfants d’Israël se réunirent et campèrent à Maspha.",
+        "NAB": "The Ammonites had gathered for war and encamped in Gilead, while the Israelites assembled and encamped in Mizpah.",
+        "VAT_ES": "Los amonitas se concentraron y fueron a acampar en Galaad. También se reunieron los israelitas y pusieron su campamento en Mispá.",
+        "CEI": "Gli Ammoniti si radunarono e si accamparono in Gàlaad e anche gli Israeliti si adunarono e si accamparono a Mizpa."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֨וּ הָ/עָ֜ם שָׂרֵ֤י גִלְעָד֙ אִ֣ישׁ אֶל רֵעֵ֔/הוּ מִ֣י הָ/אִ֔ישׁ אֲשֶׁ֣ר יָחֵ֔ל לְ/הִלָּחֵ֖ם בִּ/בְנֵ֣י עַמּ֑וֹן יִֽהְיֶ֣ה לְ/רֹ֔אשׁ לְ/כֹ֖ל יֹשְׁבֵ֥י גִלְעָֽד׃",
+        "LXX": "καὶ εἶπον ὁ λαὸς οἱ ἄρχοντες Γαλαάδ, ἀνὴρ πρὸς τὸν πλησίον αὐτοῦ Τίς ὁ ἀνὴρ ὅστις ἂν ἄρξηται παρατάξασθαι πρὸς υἱοὺς Ἀμμών, καὶ ἔσται εἰς ἄρχοντα πᾶσιν τοῖς κατοικοῦσιν Γαλαάδ;",
+        "VUL": "Dixeruntque principes Galaad singuli ad proximos suos : Qui primus ex nobis contra filios Ammon cperit dimicare, erit dux populi Galaad.",
+        "SYN": "Народ _и_ князья Галаадские сказали друг другу: кто начнет войну против Аммонитян, тот будет начальником всех жителей Галаадских.",
+        "NEO": "Le peuple, les chefs de Galaad se dirent les uns aux autres : « Quel est l’homme qui commencera l’attaque contre les fils d’Ammon ? Il deviendra chef de tous les habitants de Galaad. »",
+        "NAB": "And among the people the princes of Gilead said to one another, \"The one who begins the war against the Ammonites shall be leader of all the inhabitants of Gilead.\"",
+        "VAT_ES": "Entonces el pueblo y los jefes de Galaad se dijeron unos a otros: «&iquest;Quién es el hombre que dirigirá el combate contra los amonitas? El quedará al frente de todos los habitantes de Galaad».",
+        "CEI": "Il popolo, i principi di Gàlaad, si dissero l'un l'altro: \"Chi sarà l'uomo che comincerà a combattere contro gli Ammoniti? Egli sarà il capo di tutti gli abitanti di Gàlaad\"."
+      }
+    }
+  }
+}

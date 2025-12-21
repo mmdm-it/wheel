@@ -1,0 +1,321 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "MALA_002",
+  "book_key": "MALA",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה אֲלֵי/כֶ֛ם הַ/מִּצְוָ֥ה הַ/זֹּ֖את הַ/כֹּהֲנִֽים׃",
+        "LXX": "Καὶ νῦν ἡ ἐντολὴ αὕτη πρὸς ὑμᾶς, οἱ ἱερεῖς.",
+        "VUL": "Et nunc ad vos mandatum hoc, o sacerdotes.",
+        "SYN": "Итак для вас, священники, эта заповедь:",
+        "NEO": "Maintenant donc, c’est* pour vous qu’est* ce décret, ô prêtres.",
+        "NAB": "And now, O priests, this commandment is for you: If you do not listen,",
+        "VAT_ES": "&iexcl;Y ahora, para ustedes es esta advertencia, sacerdotes!",
+        "CEI": "Ora a voi questo monito, o sacerdoti."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אִם לֹ֣א תִשְׁמְע֡וּ וְ/אִם לֹא֩ תָשִׂ֨ימוּ עַל לֵ֜ב לָ/תֵ֧ת כָּב֣וֹד לִ/שְׁמִ֗/י אָמַר֙ יְהוָ֣ה צְבָא֔וֹת וְ/שִׁלַּחְתִּ֤י בָ/כֶם֙ אֶת הַ/מְּאֵרָ֔ה וְ/אָרוֹתִ֖י אֶת בִּרְכֽוֹתֵי/כֶ֑ם וְ/גַם֙ אָרוֹתִ֔י/הָ כִּ֥י אֵינְ/כֶ֖ם שָׂמִ֥ים עַל לֵֽב׃",
+        "LXX": "ἐὰν μὴ ἀκούσητε, καὶ ἐὰν μὴ θῆσθε εἰς τὴν καρδίαν ὑμῶν τοῦ δοῦναι δόξαν τῷ ὀνόματί μου, λέγει Κύριος Παντοκράτωρ, καὶ ἐξαποστελῶ ἐφ’ ὑμᾶς τὴν κατάραν, καὶ ἐπικαταράσομαι τὴν εὐλογίαν ὑμῶν, καὶ καταράσομαι αὐτήν· καὶ διασκεδάσω τὴν εὐλογίαν ὑμῶν, καὶ οὐκ ἔσται ἐν ὑμῖν, ὅτι ὑμεῖς οὐ τίθεσθε εἰς τὴν καρδίαν ὑμῶν.",
+        "VUL": "Si nolueritis audire, et si nolueritis ponere super cor, ut detis gloriam nomini meo, ait Dominus exercituum, mittam in vos egestatem, et maledicam benedictionibus vestris, et maledicam illis, quoniam non posuistis super cor.",
+        "SYN": "если вы не послушаетесь и если не примете к сердцу, чтобы воздавать славу имени Моему, говорит Господь Саваоф, то Я пошлю на вас проклятие и прокляну ваши благословения, и уже проклинаю, потому что вы не хотите приложить к тому сердца.",
+        "NEO": "Si vous n’écoutez pas et si vous ne prenez pas à cœur de donner gloire à mon nom, dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées, j’enverrai contre vous la malédiction, et je maudirai+ 2:2 \\+it Je maudirai\\+it*, je changerai en malédiction.* vos bénédictions ; — et déjà je les ai maudites, parce que vous n’avez pas pris à cœur ! —",
+        "NAB": "And if you do not lay it to heart, to give glory to my name, says the LORD of hosts, I will send a curse upon you and of your blessing I will make a curse. Yes, I have already cursed it, because you do not lay it to heart.",
+        "VAT_ES": "Si no escuchan y no se deciden a dar gloria a mi Nombre, dice el Señor de los ejércitos, yo enviaré sobre ustedes la maldición y maldeciré sus bendiciones; ya las he maldecido, porque ustedes no se deciden a hacer eso.",
+        "CEI": "Se non mi ascolterete e non vi prenderete a cuore di dar gloria al mio nome, dice il Signore degli eserciti, manderò su di voi la maledizione e cambierò in maledizione le vostre benedizioni. Anzi le ho già maledette, perché nessuno tra di voi se la prende a cuore."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הִנְ/נִ֨י גֹעֵ֤ר לָ/כֶם֙ אֶת הַ/זֶּ֔רַע וְ/זֵרִ֤יתִי פֶ֨רֶשׁ֙ עַל פְּנֵי/כֶ֔ם פֶּ֖רֶשׁ חַגֵּי/כֶ֑ם וְ/נָשָׂ֥א אֶתְ/כֶ֖ם אֵלָֽי/ו׃",
+        "LXX": "ἰδοὺ ἐγὼ ἀφορίζω ὑμῖν τὸν ὦμον, καὶ σκορπιῶ ἔνυστρον ἐπὶ τὰ πρόσωπα ὑμῶν, ἔνυστρον ἑορτῶν, καὶ λήμψομαι ὑμᾶς εἰς τὸ αὐτό·",
+        "VUL": "Ecce ego projiciam vobis brachium, et dispergam super vultum vestrum stercus solemnitatum vestrarum, et assumet vos secum.",
+        "SYN": "Вот, Я отниму у вас плечо, и помет раскидаю на лица ваши, помет праздничных жертв ваших, и выбросят вас вместе с ним.",
+        "NEO": "Voici que je ferai manquer vos semences+ 2:3 \\+it Je ferai manquer vos semences\\+it*, les semences du peuple dont les prêtres ont la dime. LXX et Vulg., \\+it je vous retirerai l’épaule de la victime\\+it* : sens en meilleur rapport avec le contexte.*, je répandrai du fumier sur vos visages, le fumier de vos fêtes, et on vous emportera avec lui.",
+        "NAB": "Lo, I will deprive you of the shoulder and I will strew dung in your faces, The dung of your feasts, and you will be carried off with it.",
+        "VAT_ES": "Yo les quebraré el brazo, les tiraré estiércol a la cara –el estiércol de sus fiestas– y ustedes serán barridos con él.",
+        "CEI": "Ecco, io spezzerò il vostro braccio e spanderò sulla vostra faccia escrementi, gli escrementi delle vittime immolate nelle vostre solennità, perché siate spazzati via insieme con essi."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וִֽ/ידַעְתֶּ֕ם כִּ֚י שִׁלַּ֣חְתִּי אֲלֵי/כֶ֔ם אֵ֖ת הַ/מִּצְוָ֣ה הַ/זֹּ֑את לִֽ/הְי֤וֹת בְּרִיתִ/י֙ אֶת לֵוִ֔י אָמַ֖ר יְהוָ֥ה צְבָאֽוֹת׃",
+        "LXX": "καὶ ἐπιγνώσεσθε διότι ἐγὼ ἐξαπέσταλκα πρὸς ὑμᾶς τὴν ἐντολὴν ταύτην, τοῦ εἶναι τὴν διαθήκην μου πρὸς τοὺς Λευείτας, λέγει Κύριος Παντοκράτωρ.",
+        "VUL": "Et scietis quia misi ad vos mandatum istud, ut esset pactum meum cum Levi, dicit Dominus exercituum.",
+        "SYN": "И вы узнаете, что Я дал эту заповедь для сохранения завета Моего с Левием, говорит Господь Саваоф.",
+        "NEO": "Vous saurez alors que je vous ai adressé ce décret, afin que mon alliance avec Lévi demeure+ 2:4 \\+it Demeure\\+it*, ce qui ne peut être obtenu que par la punition des prêtres prévaricateurs.*, dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "Then you will know that I sent you this commandment because I have a covenant with Levi, says the LORD of hosts.",
+        "VAT_ES": "Entonces sabrán que yo les hice esta advertencia, para que subsista mi alianza con Leví, dice el Señor de los ejércitos.",
+        "CEI": "Così saprete che io ho diretto a voi questo monito, perché c'è anche un'alleanza fra me e Levi, dice il Signore degli eserciti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בְּרִיתִ֣/י הָיְתָ֣ה אִתּ֗/וֹ הַֽ/חַיִּים֙ וְ/הַ֨/שָּׁל֔וֹם וָ/אֶתְּנֵֽ/ם ל֥/וֹ מוֹרָ֖א וַ/יִּֽירָאֵ֑/נִי וּ/מִ/פְּנֵ֥י שְׁמִ֖/י נִחַ֥ת הֽוּא׃",
+        "LXX": "ἡ διαθήκη μου ἦν μετ’ αὐτοῦ τῆς ζωῆς καὶ τῆς εἰρήνης, καὶ ἔδωκα αὐτῷ ἐν φόβῳ φοβεῖσθαι καὶ ἀπὸ προσώπου ὀνόματός μου στέλλεσθαι αὐτόν.",
+        "VUL": "Pactum meum fuit cum eo vitæ et pacis : et dedi ei timorem, et timuit me, et a facie nominis mei pavebat.",
+        "SYN": "Завет Мой с ним был _завет_ жизни и мира, и Я дал его ему для страха, и он боялся Меня и благоговел пред именем Моим.",
+        "NEO": "Mon alliance avec Lévi fut une alliance de* vie et de paix, et je lui donnai ces biens ; une alliance de* crainte+ 2:5 \\+it De crainte\\+it*, la religion.*, et il me craignit et trembla devant mon nom.",
+        "NAB": "My covenant with him was one of life and peace; fear I put in him, and he feared me, and stood in awe of my name.",
+        "VAT_ES": "Mi alianza con él era vida y paz, y yo se las concedía; era temor, y él me temía y reverenciaba mi Nombre.",
+        "CEI": "La mia alleanza con lui era alleanza di vita e di benessere e io glieli concessi; alleanza di timore ed egli mi temette ed ebbe riverenza del mio nome."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "תּוֹרַ֤ת אֱמֶת֙ הָיְתָ֣ה בְּ/פִ֔י/הוּ וְ/עַוְלָ֖ה לֹא נִמְצָ֣א בִ/שְׂפָתָ֑י/ו בְּ/שָׁל֤וֹם וּ/בְ/מִישׁוֹר֙ הָלַ֣ךְ אִתִּ֔/י וְ/רַבִּ֖ים הֵשִׁ֥יב מֵ/עָוֺֽן׃",
+        "LXX": "νόμος ἀληθείας ἦν ἐν τῷ στόματι αὐτοῦ, καὶ ἀδικία οὐχ εὑρέθη ἐν χείλεσιν αὐτοῦ· ἐν εἰρήνῃ κατευθύνων ἐπορεύθη μετ’ ἐμοῦ, καὶ πολλοὺς ἐπέστρεψεν ἀπὸ ἀδικίας.",
+        "VUL": "Lex veritatis fuit in ore ejus, et iniquitas non est inventa in labiis ejus : in pace et in æquitate ambulavit mecum, et multos avertit ab iniquitate.",
+        "SYN": "Закон истины был в устах его, и неправды не обреталось на языке его; в мире и правде он ходил со Мною и многих отвратил от греха.",
+        "NEO": "La loi de vérité était dans sa bouche, et il ne se trouvait pas d’iniquité sur ses lèvres ; il marchait avec moi dans la paix et la droiture, et il détourna du mal un grand nombre d’hommes*.",
+        "NAB": "True doctrine was in his mouth, and no dishonesty was found upon his lips; He walked with me in integrity and in uprightness, and turned many away from evil.",
+        "VAT_ES": "La verdadera doctrina estaba en su boca y en sus labios no había maldad; él caminaba conmigo en paz y con rectitud, y apartaba a muchos del mal.",
+        "CEI": "Un insegnamento fedele era sulla sua bocca, né c'era falsità sulle sue labbra; con pace e rettitudine ha camminato davanti a me e ha trattenuto molti dal male."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כִּֽי שִׂפְתֵ֤י כֹהֵן֙ יִשְׁמְרוּ דַ֔עַת וְ/תוֹרָ֖ה יְבַקְשׁ֣וּ מִ/פִּ֑י/הוּ כִּ֛י מַלְאַ֥ךְ יְהוָֽה צְבָא֖וֹת הֽוּא׃",
+        "LXX": "ὅτι χείλη ἱερέως φυλάξεται γνῶσιν, καὶ νόμον ἐκζητήσουσιν ἐκ στόματος αὐτοῦ, διότι ἄγγελος Κυρίου Παντοκράτορός ἐστιν.",
+        "VUL": "Labia enim sacerdotis custodient scientiam, et legem requirent ex ore ejus, quia angelus Domini exercituum est.",
+        "SYN": "Ибо уста священника должны хранить ведение, и закона ищут от уст его, потому что он вестник Господа Саваофа.",
+        "NEO": "Car les lèvres du prêtre gardent la science, et de sa bouche on demande l’enseignement, parce qu’il est l’ange de \\+w Yahweh|strong=\"H3068\"\\+w** des armées.+ 2:7 L’une des fonctions principales du prêtre était d’instruire le peuple dans la vraie doctrine. Comp. Lév. x, 11 ; — \\+it L’ange\\+it*, ou le messager de Yahweh.*",
+        "NAB": "For the lips of the priest are to keep knowledge, and instruction is to be sought from his mouth, because he is the messenger of the LORD of hosts.",
+        "VAT_ES": "Porque los labios del sacerdotes guardan la ciencia y de su boca se busca la instrucción, porque es el mensajero del Señor de los ejércitos.",
+        "CEI": "Infatti le labbra del sacerdote devono custodire la scienza e dalla sua bocca si ricerca l'istruzione, perché egli è messaggero del Signore degli eserciti."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אַתֶּם֙ סַרְתֶּ֣ם מִן הַ/דֶּ֔רֶךְ הִכְשַׁלְתֶּ֥ם רַבִּ֖ים בַּ/תּוֹרָ֑ה שִֽׁחַתֶּם֙ בְּרִ֣ית הַ/לֵּוִ֔י אָמַ֖ר יְהוָ֥ה צְבָאֽוֹת׃",
+        "LXX": "ὑμεῖς δὲ ἐξεκλίνατε ἐκ τῆς ὁδοῦ καὶ ἠσθενήσατε πολλοὺς ἐν νόμῳ, διεφθείρατε τὴν διαθήκην τοῦ Λευί; λέγει Κύριος Παντοκράτωρ.",
+        "VUL": "Vos autem recessistis de via, et scandalizastis plurimos in lege : irritum fecistis pactum Levi, dicit Dominus exercituum.",
+        "SYN": "Но вы уклонились от пути сего, для многих послужили соблазном в законе, разрушили завет Левия, говорит Господь Саваоф.",
+        "NEO": "Mais vous, vous vous êtes écartés de la voie ; vous en avez fait trébucher un grand nombre dans la loi+ 2:8 \\+it Dans la loi\\+it*, dans l’observation des préceptes divins.* ; vous avez perverti l’alliance de Lévi, dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "But you have turned aside from the way, and have caused many to falter by your instruction; You have made void the covenant of Levi, says the LORD of hosts.",
+        "VAT_ES": "Pero ustedes se han desviado del camino, han hecho tropezar a muchos con su doctrina, han pervertido la alianza con Leví, dice el Señor de los ejércitos.",
+        "CEI": "Voi invece vi siete allontanati dalla retta via e siete stati d'inciampo a molti con il vostro insegnamento; avete rotto l'alleanza di Levi, dice il Signore degli eserciti."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/גַם אֲנִ֞י נָתַ֧תִּי אֶתְ/כֶ֛ם נִבְזִ֥ים וּ/שְׁפָלִ֖ים לְ/כָל הָ/עָ֑ם כְּ/פִ֗י אֲשֶׁ֤ר אֵֽינְ/כֶם֙ שֹׁמְרִ֣ים אֶת דְּרָכַ֔/י וְ/נֹשְׂאִ֥ים פָּנִ֖ים בַּ/תּוֹרָֽה׃",
+        "LXX": "κἀγὼ δέδωκα ὑμᾶς ἐξουδενωμένους καὶ ἀπερριμμένους εἰς πάντα τὰ ἔθνη, ἀνθ’ ὧν ὑμεῖς οὐ φυλάσσεσθε τὰς ὁδούς μου ἀλλὰ ἐλαμβάνετε πρόσωπα ἐν νόμῳ.",
+        "VUL": "Propter quod et ego dedi vos contemptibiles, et humiles omnibus populis, sicut non servastis vias meas, et accepistis faciem in lege.",
+        "SYN": "За то и Я сделаю вас презренными и униженными перед всем народом, так как вы не соблюдаете путей Моих, лицеприятствуете в делах закона.",
+        "NEO": "Et moi, à mon tour, je vous ai rendus méprisables et vils pour tout le peuple, parce que vous ne gardez pas+ 2:9 \\+it Parce que vous ne gardez pas\\+it* ; ou bien, \\+it dans la mesure où vous ne gardez pas\\+it*. — \\+it Et que vous avez égard\\+it* etc. D’autres en faisant dépendre ce membre de phrase de la négation et en interprétant autrement la formule : \\+it et que vous n’avez pas égard à la loi\\+it* (Van Hoonacker).* mes voies et que vous avez égard aux personnes en appliquant* la loi.",
+        "NAB": "I, therefore, have made you contemptible and base before all the people, Since you do not keep my ways, but show partiality in your decisions.",
+        "VAT_ES": "Por eso yo los he hecho despreciables y viles para todo el pueblo, porque ustedes no siguen mis caminos y hacen acepción de personas al aplicar la Ley.",
+        "CEI": "Perciò anch'io vi ho reso spregevoli e abbietti davanti a tutto il popolo, perché non avete osservato le mie disposizioni e avete usato parzialità riguardo alla legge."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "הֲ/ל֨וֹא אָ֤ב אֶחָד֙ לְ/כֻלָּ֔/נוּ הֲ/ל֛וֹא אֵ֥ל אֶֽחָ֖ד בְּרָאָ֑/נוּ מַדּ֗וּעַ נִבְגַּד֙ אִ֣ישׁ בְּ/אָחִ֔י/ו לְ/חַלֵּ֖ל בְּרִ֥ית אֲבֹתֵֽי/נוּ׃",
+        "LXX": "Οὐχὶ θεὸς εἷς ἔκτισεν ὑμᾶς; οὐχὶ πατὴρ εἷς πάντων ὑμῶν; τί ὅτι ἐνκατελίπετε ἕκαστος τὸν ἀδελφὸν αὐτοῦ, τοῦ βεβηλῶσαι τὴν διαθήκην τῶν πατέρων ὑμῶν;",
+        "VUL": "Numquid non pater unus omnium nostrum ? numquid non Deus unus creavit nos ? quare ergo despicit unusquisque nostrum fratrem suum, violans pactum patrum nostrorum ?",
+        "SYN": "Не один ли у всех нас Отец? Не один ли Бог сотворил нас? Почему же мы вероломно поступаем друг против друга, нарушая тем завет отцов наших?",
+        "NEO": "N’y a-t-il pas un même père pour nous tous ? Un même Dieu ne nous a-t-il pas tous* créés ? Pourquoi sommes-nous infidèles l’un envers l’autre, profanant l’alliance de nos pères ?+ 2:10 Comp. Esd 10 et Neh 13, sur les mariages des Israélites avec des femmes des pays voisins.*",
+        "NAB": "Have we not all the one Father? Has not the one God created us? Why then do we break faith with each other, violating the covenant of our fathers?",
+        "VAT_ES": "&iquest;No tenemos todos un solo Padre? &iquest;No nos ha creado un solo Dios? &iquest;Por qué nos traicionamos unos a otros, profanando así la alianza de nuestros padres?",
+        "CEI": "Non abbiamo forse tutti noi un solo Padre? Forse non ci ha creati un unico Dio? Perché dunque agire con perfidia l'uno contro l'altro profanando l'alleanza dei nostri padri?"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "בָּגְדָ֣ה יְהוּדָ֔ה וְ/תוֹעֵבָ֛ה נֶעֶשְׂתָ֥ה בְ/יִשְׂרָאֵ֖ל וּ/בִ/ירֽוּשָׁלִָ֑ם כִּ֣י חִלֵּ֣ל יְהוּדָ֗ה קֹ֤דֶשׁ יְהוָה֙ אֲשֶׁ֣ר אָהֵ֔ב וּ/בָעַ֖ל בַּת אֵ֥ל נֵכָֽר׃",
+        "LXX": "ἐνκατελίφθη Ἰούδας, καὶ βδέλυγμα ἐγένετο ἐν τῷ Ἰσραὴλ καὶ ἐν Ἰερουσαλήμ, διότι ἐβεβήλωσεν Ἰούδας τὰ ἅγια Κυρίου, ἐν οἷς ἠγάπησεν καὶ ἐπετήδευσεν εἰς θεοὺς ἀλλοτρίους.",
+        "VUL": "Transgressus est Juda, et abominatio facta est in Israël et in Jerusalem, quia contaminavit Juda sanctificationem Domini, quam dilexit, et habuit filiam dei alieni.",
+        "SYN": "Вероломно поступает Иуда, и мерзость совершается в Израиле и в Иерусалиме; ибо унизил Иуда святыню Господню, которую любил, и женился на дочери чужого бога.",
+        "NEO": "Juda est infidèle, et une abomination est commise en Israël et à Jérusalem ; car Juda profane ce qui est consacré à \\+w Yahweh|strong=\"H3068\"\\+w**, ce que Yahweh* aime ; il épouse la fille d’un dieu étranger.",
+        "NAB": "Judah has broken faith; an abominable thing has been done in Israel and in Jerusalem. Judah has profaned the temple which the LORD loves, and has married an idolatrous woman.",
+        "VAT_ES": "Judá ha traicionado, y se ha cometido una abominación en Israel y en Jerusalén. Porque Judá ha profanado lo que está consagrado al Señor, lo que él ama, casándose con la hija de un dios extranjero.",
+        "CEI": "Giuda è stato sleale e l'abominio è stato commesso in Israele e in Gerusalemme. Giuda infatti ha osato profanare il santuario caro al Signore e ha sposato le figlie d'un dio straniero!"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "יַכְרֵ֨ת יְהוָ֜ה לָ/אִ֨ישׁ אֲשֶׁ֤ר יַעֲשֶׂ֨/נָּה֙ עֵ֣ר וְ/עֹנֶ֔ה מֵ/אָהֳלֵ֖י יַֽעֲקֹ֑ב וּ/מַגִּ֣ישׁ מִנְחָ֔ה לַֽ/יהוָ֖ה צְבָאֽוֹת׃",
+        "LXX": "ἐξολεθρεύσει Κύριος τὸν ἄνθρωπον τὸν ποιοῦντα ταῦτα, ἕως καὶ ταπεινωθῇ ἐκ σκηνωμάτων Ἰακὼβ καὶ ἐκ προσαγόντων θυσίαν τῷ κυρίῳ Παντοκράτορι.",
+        "VUL": "Disperdet Dominus virum qui fecerit hoc, magistrum et discipulum, de tabernaculis Jacob, et offerentem munus Domino exercituum.",
+        "SYN": "У того, кто делает это, истребит Господь из шатров Иаковлевых бдящего на страже и отвечающего, и приносящего жертву Господу Саваофу.",
+        "NEO": "Pour l’homme qui fait cela, que \\+w Yahweh|strong=\"H3068\"\\+w** retranche des tentes de Jacob celui qui veille et celui qui répond+ 2:12 \\+it Celui qui veille et celui qui répond\\+it*, locution proverbiale : à un tel homme que Dieu enlève tout descendant ! Au lieu de celui qui veille, les LXX suggéreraient la leçon \\+it témoin\\+it* (\\+it ‘ed\\+it* au lieu de \\+it ‘êr\\+it*), \\+it témoin et répondant\\+it*, tout appui humain ; le coupable, d’après la suite de la phrase, serait aussi privé d’appui auprès de Dieu.*, et celui qui offre l’oblation à \\+w Yahweh|strong=\"H3068\"\\+w** des armées !",
+        "NAB": "May the LORD cut off from the man who does this both witness and advocate out of the tents of Jacob, and anyone to offer sacrifice to the LORD of hosts!",
+        "VAT_ES": "Al hombre que hace esto, que el Señor le arranque de los campamentos de Jacob al testigo, al garante y aun al que presenta la ofrenda al Señor de los ejércitos.",
+        "CEI": "Elimini il Signore chi ha agito così dalle tende di Giacobbe, il testimone e il mallevadore, e colui che offre l'offerta al Signore degli eserciti."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/זֹאת֙ שֵׁנִ֣ית תַּֽעֲשׂ֔וּ כַּסּ֤וֹת דִּמְעָה֙ אֶת מִזְבַּ֣ח יְהוָ֔ה בְּכִ֖י וַֽ/אֲנָקָ֑ה מֵ/אֵ֣ין ע֗וֹד פְּנוֹת֙ אֶל הַ/מִּנְחָ֔ה וְ/לָ/קַ֥חַת רָצ֖וֹן מִ/יֶּדְ/כֶֽם׃",
+        "LXX": "καὶ ταῦτα ἃ ἐμίσουν, ἐποιεῖτε· ἐκαλύπτετε δάκρυσιν τὸ θυσιαστήριον Κυρίου καὶ κλαυθμῷ καὶ στεναγμῷ ἐκ κόπων. ἔτι ἄξιον ἐπιβλέψαι εἰς θυσίαν ἢ λαβεῖν δεκτὸν ἐκ τῶν χειρῶν ὑμῶν;",
+        "VUL": "Et hoc rursum fecistis : operiebatis lacrimis altare Domini, fletu et mugitu, ita ut non respiciam ultra ad sacrificium, nec accipiam placabile quid de manu vestra.",
+        "SYN": "И вот еще что вы делаете: вы заставляете обливать слезами жертвенник Господа с рыданием и воплем, так что Он уже не призирает более на приношение и не принимает умилоствительной жертвы из рук ваших.",
+        "NEO": "Voici une seconde chose que vous faites : vous couvrez de larmes l’autel de \\+w Yahweh|strong=\"H3068\"\\+w**, vous le couvrez* de pleurs et de gémissements, en sorte que \\+w Yahweh|strong=\"H3068\"\\+w** n’a plus égard à l’oblation, et qu’il ne reçoit plus de votre main une offrande* agréable.",
+        "NAB": "This also you do: the altar of the LORD you cover with tears, weeping and groaning, Because he no longer regards your sacrifice nor accepts it favorably from your hand;",
+        "VAT_ES": "Ustedes hacen todavía otra cosa: cubren el altar del Señor de lágrimas, llantos y gemidos, porque él no se vuelve más hacia la ofrenda, ni la acepta de las manos de ustedes.",
+        "CEI": "Un'altra cosa fate ancora; voi coprite di lacrime, di pianti e di sospiri l'altare del Signore, perché egli non guarda all'offerta, né la gradisce con benevolenza dalle vostre mani."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/אֲמַרְתֶּ֖ם עַל מָ֑ה עַ֡ל כִּי יְהוָה֩ הֵעִ֨יד בֵּינְ/ךָ֜ וּ/בֵ֣ין אֵ֣שֶׁת נְעוּרֶ֗י/ךָ אֲשֶׁ֤ר אַתָּה֙ בָּגַ֣דְתָּה בָּ֔/הּ וְ/הִ֥יא חֲבֶרְתְּ/ךָ֖ וְ/אֵ֥שֶׁת בְּרִיתֶֽ/ךָ׃",
+        "LXX": "καὶ εἴπατε Ἕνεκεν τίνος; ὅτι Κύριος διεμαρτύρατο ἀνὰ μέσον σοῦ καὶ ἀνὰ μέσον γυναικὸς νεότητός σου, ἣν ἐνκατέλιπες· καὶ αὕτη κοινωνός σου καὶ γυνὴ διαθήκης σου.",
+        "VUL": "Et dixistis : Quam ob causam ? Quia Dominus testificatus est inter te et uxorem pubertatis tuæ, quam tu despexisti : et hæc particeps tua, et uxor fderis tui.",
+        "SYN": "Вы скажете: \"за что?\" За то, что Господь был свидетелем между тобою и женою юности твоей, против которой ты поступил вероломно, между тем как она подруга твоя и законная жена твоя.",
+        "NEO": "Et vous dites : « Pourquoi ? » — Parce que \\+w Yahweh|strong=\"H3068\"\\+w** a été témoin+ 2:14 \\+it À été témoin\\+it*, au moment du divorce, pour condamner l’époux infidèle.* entre toi et la femme de ta jeunesse, à laquelle tu as été infidèle, elle qui était ta compagne et la femme de ton alliance.",
+        "NAB": "And you say, \"Why is it?\" - Because the LORD is witness between you and the wife of your youth, With whom you have broken faith though she is your companion, your betrothed wife.",
+        "VAT_ES": "Y ustedes dicen: «&iquest;Por qué?». Porque el Señor ha sido testigo entre ti y la esposa de tu juventud, a la que tú traicionaste, aunque ella era tu compañera y la mujer de tu alianza.",
+        "CEI": "E chiedete: Perché? Perché il Signore è testimone fra te e la donna della tua giovinezza, che ora perfidamente tradisci, mentr'essa è la tua consorte, la donna legata a te da un patto."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/לֹא אֶחָ֣ד עָשָׂ֗ה וּ/שְׁאָ֥ר ר֨וּחַ֙ ל֔/וֹ וּ/מָה֙ הָֽ/אֶחָ֔ד מְבַקֵּ֖שׁ זֶ֣רַע אֱלֹהִ֑ים וְ/נִשְׁמַרְתֶּם֙ בְּ/ר֣וּחֲ/כֶ֔ם וּ/בְ/אֵ֥שֶׁת נְעוּרֶ֖י/ךָ אַל יִבְגֹּֽד׃",
+        "LXX": "καὶ οὐ καλὸν ἐποίησεν καὶ ὑπόλιμμα πνεύματος αὐτοῦ; καὶ εἴπατε Τί ἄλλο ἢ σπέρμα ζητεῖ ὁ θεός; καὶ φυλάξασθε ἐν τῷ πνεύματι ὑμῶν, καὶ γυναῖκα νεότητός σου μὴ ἐνκαταλίπῃς·",
+        "VUL": "Nonne unus fecit, et residuum spiritus ejus est ? et quid unus quærit, nisi semen Dei ? custodite ergo spiritum vestrum, et uxorem adolescentiæ tuæ noli despicere.",
+        "SYN": "Но не сделал ли того же один, и в нем пребывал превосходный дух? что же сделал этот один? он желал получить от Бога потомство. Итак берегите дух ваш, и никто не поступай вероломно против жены юности своей.",
+        "NEO": "Aucun n’a fait cela, ayant du reste de l’Esprit divin*. — » Et que fit* l’Un+ 2:15 \\+it Que fit l’Un\\+it* ; Vulg., n’est-ce pas le même Dieu qui a fait la femme, comme il a fait l’homme, et l’Esprit n’est-il pas commun aux deux ? Et que veut ce Dieu ? Que de l’homme et de la femme naisse une sainte postérité, ce qui est impossible avec le renvoi des femmes Israélites et le mariage avec des femmes étrangères. Cette première partie du vers. est difficile. — \\+it Et que nul ne soit infidèle\\+it* ; LXX, \\+it et ne sois pas infidèle\\+it*.* ? » — Il cherchait une postérité divine. Prenez donc garde à votre vie, et que nul* ne soit infidèle à la femme de sa jeunesse.",
+        "NAB": "Did he not make one being, with flesh and spirit: and what does that one require but godly offspring? You must then safeguard life that is your own, and not break faith with the wife of your youth.",
+        "VAT_ES": "&iquest;No ha hecho él un solo ser, que tiene carne y espíritu? &iquest;Y qué busca este único ser? Una descendencia dada por Dios. Tengan cuidado, entonces, de su espíritu y que nadie traicione a la mujer de su juventud.",
+        "CEI": "Non fece egli un essere solo dotato di carne e soffio vitale? Che cosa cerca quest'unico essere, se non prole da parte di Dio? Custodite dunque il vostro soffio vitale e nessuno tradisca la donna della sua giovinezza."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "כִּֽי שָׂנֵ֣א שַׁלַּ֗ח אָמַ֤ר יְהוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל וְ/כִסָּ֤ה חָמָס֙ עַל לְבוּשׁ֔/וֹ אָמַ֖ר יְהוָ֣ה צְבָא֑וֹת וְ/נִשְׁמַרְתֶּ֥ם בְּ/רוּחֲ/כֶ֖ם וְ/לֹ֥א תִבְגֹּֽדוּ׃",
+        "LXX": "ἀλλὰ ἐὰν μισήσας ἐξαποστείλῃς, λέγει Κύριος ὁ θεὸς τοῦ Ἰσραήλ, καὶ καλύψει ἀσέβεια ἐπὶ τὰ ἐνθυμήματά σου, λέγει Κύριος Παντοκράτωρ. καὶ φυλάξασθε ἐν τῷ πνεύματι ὑμῶν καὶ οὐ μὴ ἐνκαταλίπητε,",
+        "VUL": "Cum odio habueris, dimitte, dicit Dominus Deus Israël : operiet autem iniquitas vestimentum ejus, dicit Dominus exercituum. Custodite spiritum vestrum, et nolite despicere.",
+        "SYN": "Если ты ненавидишь ее, отпусти, говорит Господь Бог Израилев; обида покроет одежду его, говорит Господь Саваоф; посему наблюдайте за духом вашим и не поступайте вероломно.",
+        "NEO": "Car je hais+ 2:16 \\+it Car je hais… car c’est couvrir\\+it* (m. à m., \\+it et il couvre\\+it*). D’autres : \\+it celui qui par haine répudie\\+it*… \\+it couvre de violence son vêtement\\+it*.* la répudiation, dit \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël ; car c’est couvrir de violence son vêtement, dit \\+w Yahweh|strong=\"H3068\"\\+w** des armées. Prenez donc garde à votre vie et ne soyez pas infidèles.",
+        "NAB": "For I hate divorce, says the LORD, the God of Israel, And covering one's garment with injustice, says the LORD of hosts; You must then safeguard life that is your own, and not break faith.",
+        "VAT_ES": "Porque si alguien repudia por aversión, cubre su ropa de violencia, dice el Señor de los ejércitos, el Dios de Israel. Tengan cuidado, entonces, de su espíritu y no traicionen.",
+        "CEI": "Perché io detesto il ripudio, dice il Signore Dio d'Israele, e chi copre d'iniquità la propria veste, dice il Signore degli eserciti. Custodite la vostra vita dunque e non vogliate agire con perfidia."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "הוֹגַעְתֶּ֤ם יְהוָה֙ בְּ/דִבְרֵי/כֶ֔ם וַ/אֲמַרְתֶּ֖ם בַּ/מָּ֣ה הוֹגָ֑עְנוּ בֶּ/אֱמָרְ/כֶ֗ם כָּל עֹ֨שֵׂה רָ֜ע ט֣וֹב בְּ/עֵינֵ֣י יְהוָ֗ה וּ/בָ/הֶם֙ ה֣וּא חָפֵ֔ץ א֥וֹ אַיֵּ֖ה אֱלֹהֵ֥י הַ/מִּשְׁפָּֽט׃",
+        "LXX": "οἱ παροξύνοντες τὸν θεὸν ἐν τοῖς λόγοις ὑμῶν· καὶ εἴπατε Ἐν τίνι παρωξύναμεν αὐτόν; ἐν τῷ λέγειν ὑμᾶς Πᾶς ποιῶν πονηρόν, καλὸν ἐνώπιον Κυρίου, καὶ ἐν αὐτοῖς αὐτὸς εὐδόκησεν· καί Ποῦ ἐστιν ὁ θεὸς τῆς δικαιοσύνης;",
+        "VUL": "Laborare fecistis Dominum in sermonibus vestris, et dixistis : In quo eum fecimus laborare ? In eo quod dicitis : Omnis qui facit malum bonus est in conspectu Domini, et tales ei placent : aut certe ubi est Deus judicii ?",
+        "SYN": "Вы прогневляете Господа словами вашими и говорите: \"чем прогневляем мы Его?\" Тем, что говорите: \"всякий, делающий зло, хорош пред очами Господа, и к таким Он благоволит\", или: \"где Бог правосудия?\"",
+        "NEO": "Vous avez fatigué \\+w Yahweh|strong=\"H3068\"\\+w** par vos paroles. Et vous dites : « En quoi l’avons-nous fatigué ? » — En disant : « Quiconque fait le mal est bon aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**, et en ces gens-là il prend plaisir ! » Ou bien : « Où est le Dieu de la justice ? »",
+        "NAB": "You have wearied the LORD with your words, yet you say, \"How have we wearied him?\" By your saying, \"Every evildoer is good in the sight of the LORD, And he is pleased with him\"; or else, \"Where is the just God?\"",
+        "VAT_ES": "Ustedes cansan al Señor con sus palabras, y dicen: «&iquest;En qué lo cansamos?». Cuando ustedes dicen: «Todo el que obra mal es bien visto por el Señor, y él se complace en ello» o también: «&iquest;Dónde está el Dios de la justicia?».",
+        "CEI": "Voi avete stancato il Signore con le vostre parole; eppure chiedete: Come lo abbiamo stancato? Quando affermate: Chiunque fa il male è come se fosse buono agli occhi del Signore e in lui si compiace; o quando esclamate: Dov'è il Dio della giustizia?"
+      }
+    }
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_009",
+  "book_key": "PSAL",
+  "sequence": 9,
+  "chapter_in": {
+    "MT": 9,
+    "VUL": 9,
+    "LXX": 9
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ֭/מְנַצֵּחַ עַלְמ֥וּת לַבֵּ֗ן מִזְמ֥וֹר לְ/דָוִֽד׃",
+        "LXX": "Εἰς τὸ τέλος, ὑπὲρ τῶν κρυφίων τοῦ υἱοῦ· ψαλμὸς τῷ Δαυείδ.",
+        "VUL": "In finem, pro occultis filii. Psalmus David.",
+        "SYN": "Начальнику хора. По смерти Лабена. Псалом Давида.",
+        "NEO": "Au maître de chant. Sur l’air « Mort au fils ». Psaume de David.",
+        "NAB": "For the leader; according to Muth Labben. A psalm of David.",
+        "CEI": "Al maestro del coro. In sordina. Salmo. Di Davide."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אוֹדֶ֣ה יְ֭הוָה בְּ/כָל לִבִּ֑/י אֲ֝סַפְּרָ֗ה כָּל נִפְלְאוֹתֶֽי/ךָ׃",
+        "LXX": "Ἐξομολογήσομαι σοι, Κύριε, ἐν ὅλῃ καρδίᾳ μου, διηγήσομαι πάντα τὰ θαυμάσιά σου·",
+        "VUL": "[Confitebor tibi, Domine, in toto corde meo ;/ narrabo omnia mirabilia tua./",
+        "SYN": "Буду славить [Тебя], Господи, всем сердцем моим, возвещать все чудеса Твои.",
+        "NEO": "Je louerai \\+w Yahweh|strong=\"H3068\"\\+w** de tout mon cœur, je raconterai toutes tes merveilles.",
+        "NAB": "I will praise you, LORD, with all my heart; I will declare all your wondrous deeds.",
+        "VAT_ES": "[Alef] Te doy gracias, Señor, de todo corazón",
+        "CEI": "Loderò il Signore con tutto il cuore e annunzierò tutte le tue meraviglie."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אֶשְׂמְחָ֣ה וְ/אֶעֶלְצָ֣ה בָ֑/ךְ אֲזַמְּרָ֖ה שִׁמְ/ךָ֣ עֶלְיֽוֹן׃",
+        "LXX": "εὐφρανθήσομαι καὶ ἀγαλλιάσομαι ἐν σοί, ψαλῶ τῷ ὀνόματί σου, Ὕψιστε.",
+        "VUL": "Lætabor et exsultabo in te ;/ psallam nomini tuo, Altissime./",
+        "SYN": "Буду радоваться и торжествовать о Тебе, петь имени Твоему, Всевышний.",
+        "NEO": "Je me réjouirai et je tressaillerai en toi, je chanterai ton nom, ô Très-Haut.",
+        "NAB": "I will delight and rejoice in you; I will sing hymns to your name, Most High.",
+        "VAT_ES": "Quiero alegrarme y regocijarme en ti,",
+        "CEI": "Gioisco in te ed esulto, canto inni al tuo nome, o Altissimo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "בְּ/שׁוּב אוֹיְבַ֥/י אָח֑וֹר יִכָּשְׁל֥וּ וְ֝/יֹאבְד֗וּ מִ/פָּנֶֽי/ךָ׃",
+        "LXX": "ἐν τῷ ἀποστραφῆναι τὸν ἐχθρὸν μου εἰς τὰ ὀπίσω, ἀσθενήσουσιν καὶ ἀπολοῦνται ἀπὸ προσώπου σου.",
+        "VUL": "In convertendo inimicum meum retrorsum ;/ infirmabuntur, et peribunt a facie tua./",
+        "SYN": "Когда враги мои обращены назад, то преткнутся и погибнут пред лицем Твоим,",
+        "NEO": "Mes ennemis reculent, ils trébuchent et tombent devant ta face.",
+        "NAB": "For my enemies turn back; they stumble and perish before you.",
+        "VAT_ES": "[Bet] Cuando retrocedían mis enemigos,",
+        "CEI": "Mentre i miei nemici retrocedono, davanti a te inciampano e periscono,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּֽי עָ֭שִׂיתָ מִשְׁפָּטִ֣/י וְ/דִינִ֑/י יָשַׁ֥בְתָּ לְ֝/כִסֵּ֗א שׁוֹפֵ֥ט צֶֽדֶק׃",
+        "LXX": "ὅτι ἐποίησας τὴν κρίσιν μου καὶ τὴν δίκην μου, ἐκάθισας ἐπὶ θρόνου, ὁ κρίνων δικαιοσύνην.",
+        "VUL": "Quoniam fecisti judicium meum et causam meam ;/ sedisti super thronum, qui judicas justitiam./",
+        "SYN": "ибо Ты производил мой суд и мою тяжбу; Ты воссел на престоле, Судия праведный.",
+        "NEO": "Car tu as fait triompher mon droit et ma cause, tu t’es assis sur ton trône en juste juge.",
+        "NAB": "You upheld my right and my cause, seated on your throne, judging justly.",
+        "VAT_ES": "porque tú defendiste mi derecho y mi causa,",
+        "CEI": "perché hai sostenuto il mio diritto e la mia causa; siedi in trono giudice giusto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "גָּעַ֣רְתָּ ג֭וֹיִם אִבַּ֣דְתָּ רָשָׁ֑ע שְׁמָ֥/ם מָ֝חִ֗יתָ לְ/עוֹלָ֥ם וָ/עֶֽד׃",
+        "LXX": "ἐπετίμησας ἔθνεσιν, καὶ ἀπώλετο ὁ ἀσεβής· τὸ ὄνομα αὐτῶν ἐξήλειψας εἰς τὸν αἰῶνα καὶ εἰς τὸν αἰῶνα τοῦ αἰῶνος.",
+        "VUL": "Increpasti gentes, et periit impius :/ nomen eorum delesti in æternum, et in sæculum sæculi./",
+        "SYN": "Ты вознегодовал на народы, погубил нечестивого, имя их изгладил на веки и веки.",
+        "NEO": "Tu as châtié les nations, tu as fait périr l’impie, tu as effacé leur nom pour toujours et à jamais.",
+        "NAB": "You rebuked the nations, you destroyed the wicked; their name you blotted out for all time",
+        "VAT_ES": "[Guímel] Escarmentaste a las naciones,",
+        "CEI": "Hai minacciato le nazioni, hai sterminato l'empio, il loro nome hai cancellato in eterno, per sempre."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "הָֽ/אוֹיֵ֨ב תַּ֥מּוּ חֳרָב֗וֹת לָ֫/נֶ֥צַח וְ/עָרִ֥ים נָתַ֑שְׁתָּ אָבַ֖ד זִכְרָ֣/ם הֵֽמָּה׃",
+        "LXX": "τοῦ ἐχθροῦ ἐξέλιπον αἱ ῥομφαῖαι εἰς τέλος, καὶ πόλεις καθεῖλες· ἀπώλετο τὸ μνημόσυνον αὐτῶν μετ’ ἠχοῦς·",
+        "VUL": "Inimici defecerunt frameæ in finem,/ et civitates eorum destruxisti./ Periit memoria eorum cum sonitu ;/",
+        "SYN": "У врага совсем не стало оружия, и города Ты разрушил; погибла память их с ними.",
+        "NEO": "L’ennemi est anéanti ! Des ruines pour toujours ! Des villes que tu as renversées ! Leur souvenir a disparu !",
+        "NAB": "The enemies have been ruined forever; you destroyed their cities; their memory has perished.",
+        "VAT_ES": "desapareció el enemigo: es una ruina irreparable;",
+        "CEI": "Per sempre sono abbattute le fortezze del nemico, è scomparso il ricordo delle città che hai distrutte."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַֽ֭/יהוָה לְ/עוֹלָ֣ם יֵשֵׁ֑ב כּוֹנֵ֖ן לַ/מִּשְׁפָּ֣ט כִּסְאֽ/וֹ׃",
+        "LXX": "καὶ ὁ κύριος εἰς τὸν αἰῶνα μένει· ἡτοίμασεν ἐν κρίσει τὸν θρόνον αὐτοῦ.",
+        "VUL": "et Dominus in æternum permanet./ Paravit in judicio thronum suum,/",
+        "SYN": "Но Господь пребывает вовек; Он приготовил для суда престол Свой,",
+        "NEO": "Mais \\+w Yahweh|strong=\"H3068\"\\+w** siège à jamais, il a dressé son trône pour le jugement.",
+        "NAB": "The LORD rules forever, has set up a throne for judgment.",
+        "VAT_ES": "[He] Pero el Señor reina eternamente",
+        "CEI": "Ma il Signore sta assiso in eterno; erige per il giudizio il suo trono:"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/ה֗וּא יִשְׁפֹּֽט תֵּבֵ֥ל בְּ/צֶ֑דֶק יָדִ֥ין לְ֝אֻמִּ֗ים בְּ/מֵישָׁרִֽים׃",
+        "LXX": "καὶ αὐτὸς κρινεῖ τὴν οἰκουμένην ἐν δικαιοσύνῃ, κρινεῖ λαοὺς ἐν εὐθύτητι.",
+        "VUL": "et ipse judicabit orbem terræ in æquitate :/ judicabit populos in justitia./",
+        "SYN": "и Он будет судить вселенную по правде, совершит суд над народами по правоте.",
+        "NEO": "Il juge le monde avec justice, il juge les peuples avec droiture.",
+        "NAB": "It is God who governs the world with justice, who judges the peoples with fairness.",
+        "VAT_ES": "él gobierna al mundo con justicia",
+        "CEI": "giudicherà il mondo con giustizia, con rettitudine deciderà le cause dei popoli."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וִ֘/יהִ֤י יְהוָ֣ה מִשְׂגָּ֣ב לַ/דָּ֑ךְ מִ֝שְׂגָּ֗ב לְ/עִתּ֥וֹת בַּצָּרָֽה׃",
+        "LXX": "καὶ ἐγένετο Κύριος καταφυγὴ τῷ πένητι, βοηθὸς ἐν εὐκαιρίαις ἐν θλίψει.",
+        "VUL": "Et factus est Dominus refugium pauperi ;/ adjutor in opportunitatibus, in tribulatione./",
+        "SYN": "И будет Господь прибежищем угнетенному, прибежищем во времена скорби;",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** est un refuge pour l’opprimé, un refuge au temps de la détresse.",
+        "NAB": "The LORD is a stronghold for the oppressed, stronghold in times of trouble.",
+        "VAT_ES": "[Vau] El Señor es un baluarte para el oprimido,",
+        "CEI": "Il Signore sarà un riparo per l'oppresso, in tempo di angoscia un rifugio sicuro."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/יִבְטְח֣וּ בְ֭/ךָ יוֹדְעֵ֣י שְׁמֶ֑/ךָ כִּ֤י לֹֽא עָזַ֖בְתָּ דֹרְשֶׁ֣י/ךָ יְהוָֽה׃",
+        "LXX": "καὶ ἐλπισάτωσαν ἐπὶ σὲ οἱ γινώσκοντες τὸ ὄνομά σου, ὅτι οὐκ ἐνκατέλιπες τοὺς ἐκζητοῦντάς σε, Κύριε.",
+        "VUL": "Et sperent in te qui noverunt nomen tuum,/ quoniam non dereliquisti quærentes te, Domine./",
+        "SYN": "и будут уповать на Тебя знающие имя Твое, потому что Ты не оставляешь ищущих Тебя, Господи.",
+        "NEO": "En toi se confient tous ceux qui connaissent ton nom ; car tu ne délaisses pas ceux qui te cherchent, \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Those who honor your name trust in you; you never forsake those who seek you, LORD.",
+        "VAT_ES": "&iexcl;Confíen en ti los que veneran tu Nombre,",
+        "CEI": "Confidino in te quanti conoscono il tuo nome, perché non abbandoni chi ti cerca, Signore."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "זַמְּר֗וּ לַ֭/יהוָה יֹשֵׁ֣ב צִיּ֑וֹן הַגִּ֥ידוּ בָ֝/עַמִּ֗ים עֲלִֽילוֹתָֽי/ו׃",
+        "LXX": "ψάλατε τῷ κυρίῳ τῷ κατοικοῦντι ἐν Σιών, ἀναγγείλατε ἐν τοῖς ἔθνεσιν τὰ ἐπιτηδεύματα αὐτοῦ·",
+        "VUL": "Psallite Domino qui habitat in Sion ;/ annuntiate inter gentes studia ejus :/",
+        "SYN": "Пойте Господу, живущему на Сионе, возвещайте между народами дела Его,",
+        "NEO": "Chantez à \\+w Yahweh|strong=\"H3068\"\\+w**, qui réside en Sion, publiez parmi les peuples ses hauts faits.",
+        "NAB": "Sing hymns to the LORD enthroned on Zion; proclaim God's deeds among the nations!",
+        "VAT_ES": "[Zain] Canten al Señor, que reina en Sión,",
+        "CEI": "Cantate inni al Signore, che abita in Sion, narrate tra i popoli le sue opere."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "כִּֽי דֹרֵ֣שׁ דָּ֭מִים אוֹתָ֣/ם זָכָ֑ר לֹֽא שָׁ֝כַ֗ח צַעֲקַ֥ת עניים עֲנָוִֽים׃",
+        "LXX": "ὅτι ἐκζητῶν τὰ αἵματα αὐτῶν ἐμνήσθη, οὐκ ἐπελάθετο τῆς δεήσεως τῶν πενήτων.",
+        "VUL": "quoniam requirens sanguinem eorum recordatus est ;/ non est oblitus clamorem pauperum./",
+        "SYN": "ибо Он взыскивает за кровь; помнит их, не забывает вопля угнетенных.",
+        "NEO": "Car celui qui redemande le sang versé s’en est souvenu, il n’a pas oublié le cri des affligés.",
+        "NAB": "For the avenger of bloodshed remembers, does not forget the cry of the afflicted.",
+        "VAT_ES": "Porque él pide cuenta de la sangre,",
+        "CEI": "Vindice del sangue, egli ricorda, non dimentica il grido degli afflitti."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "חָֽנְנֵ֬/נִי יְהוָ֗ה רְאֵ֣ה עָ֭נְיִ/י מִ/שֹּׂנְאָ֑/י מְ֝רוֹמְמִ֗/י מִ/שַּׁ֥עֲרֵי מָֽוֶת׃",
+        "LXX": "ἐλέησόν με, Κύριε· ἴδε τὴν ταπείνωσίν μου ἐκ τῶν ἐχθρῶν μου, ὁ ὑψῶν με ἐκ τῶν πυλῶν τοῦ θανάτου,",
+        "VUL": "Miserere mei, Domine :/ vide humilitatem meam de inimicis meis,/",
+        "SYN": "Помилуй меня, Господи; воззри на страдание мое от ненавидящих меня, - Ты, Который возносишь меня от врат смерти,",
+        "NEO": "« Aie pitié de moi, \\+w Yahweh|strong=\"H3068\"\\+w**, disaient-ils ; vois l’affliction où m’ont réduit mes ennemis, toi qui me retires des portes de la mort,",
+        "NAB": "Have mercy on me, LORD; see how my foes afflict me! You alone can raise me from the gates of death.",
+        "VAT_ES": "[Jet] El Señor se apiadó de mí, contempló mi aflicción;",
+        "CEI": "Abbi pietà di me, Signore, vedi la mia miseria, opera dei miei nemici, tu che mi strappi dalle soglie della morte,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "לְמַ֥עַן אֲסַפְּרָ֗ה כָּֽל תְּהִלָּ֫תֶ֥י/ךָ בְּ/שַֽׁעֲרֵ֥י בַת צִיּ֑וֹן אָ֝גִ֗ילָה בִּ/ישׁוּעָתֶֽ/ךָ׃",
+        "LXX": "ὅπως ἂν ἐξαγγείλω πάσας τὰς αἰνέσεις σου ἐν ταῖς πύλαις τῆς θυγατρὸς Σιών· ἀγαλλιάσομαι ἐπὶ τῷ σωτηρίῳ σου.",
+        "VUL": "qui exaltas me de portis mortis,/ ut annuntiem omnes laudationes tuas in portis filiæ Sion :/",
+        "SYN": "чтобы я возвещал все хвалы Твои во вратах дщери Сионовой: буду радоваться о спасении Твоем.",
+        "NEO": "afin que je puisse raconter toutes les louanges, aux portes de la fille de Sion, tressaillir de joie à cause de ton salut. »",
+        "NAB": "Then I will declare all your praises, sing joyously of your salvation in the gates of daughter Zion.",
+        "VAT_ES": "para que pudiera proclamar sus alabanzas",
+        "CEI": "perché possa annunziare le tue lodi, esultare per la tua salvezza alle porte della città di Sion."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "טָבְע֣וּ ג֭וֹיִם בְּ/שַׁ֣חַת עָשׂ֑וּ בְּ/רֶֽשֶׁת ז֥וּ טָ֝מָ֗נוּ נִלְכְּדָ֥ה רַגְלָֽ/ם׃",
+        "LXX": "ἐνεπάγησαν ἔθνη ἐν διαφθορᾷ ᾗ ἐποίησαν, ἐν παγίδι ταύτῃ ᾗ ἔκρυψαν συνελήμφθη ὁ ποὺς αὐτῶν.",
+        "VUL": "exsultabo in salutari tuo./ Infixæ sunt gentes in interitu quem fecerunt ;/ in laqueo isto quem absconderunt/ comprehensus est pes eorum./",
+        "SYN": "Обрушились народы в яму, которую выкопали; в сети, которую скрыли они, запуталась нога их.",
+        "NEO": "Les nations sont tombées dans la fosse qu’elles ont creusée, dans le lacet qu’elles ont caché s’est pris leur pied.",
+        "NAB": "The nations fall into the pit they dig; in the snare they hide, their own foot is caught.",
+        "VAT_ES": "[Tet] Los pueblos se han hundido en la fosa que abrieron,",
+        "CEI": "Sprofondano i popoli nella fossa che hanno scavata, nella rete che hanno teso si impiglia il loro piede."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "נ֤וֹדַ֨ע יְהוָה֮ מִשְׁפָּ֪ט עָ֫שָׂ֥ה בְּ/פֹ֣עַל כַּ֭פָּי/ו נוֹקֵ֣שׁ רָשָׁ֑ע הִגָּי֥וֹן סֶֽלָה׃",
+        "LXX": "γινώσκεται Κύριος κρίματα ποιῶν, ἐν τοῖς ἔργοις τῶν χειρῶν αὐτοῦ συνελήμφθη ὁ ἁμαρτωλός. ᾠδὴ διαψάλματος.",
+        "VUL": "Cognoscetur Dominus judicia faciens ;/ in operibus manuum suarum comprehensus est peccator./",
+        "SYN": "Познан был Господь по суду, который Он совершил; нечестивый уловлен делами рук своих.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** s’est montré, il a exercé le jugement, dans l’œuvre de ses mains il a enlacé l’impie. — Higgaion. \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "The LORD is revealed in this divine rule: by the deeds they do the wicked are trapped. Higgaion. Selah",
+        "VAT_ES": "El Señor se dio a conocer, hizo justicia,",
+        "CEI": "Il Signore si è manifestato, ha fatto giustizia; l'empio è caduto nella rete, opera delle sue mani."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "יָשׁ֣וּבוּ רְשָׁעִ֣ים לִ/שְׁא֑וֹלָ/ה כָּל גּ֝וֹיִ֗ם שְׁכֵחֵ֥י אֱלֹהִֽים׃",
+        "LXX": "ἀποστραφήτωσαν οἱ ἁμαρτωλοὶ εἰς τὸν ᾅδην, πάντα τὰ ἔθνη τὰ ἐπιλανθανόμενα τοῦ θεοῦ.",
+        "VUL": "Convertantur peccatores in infernum,/ omnes gentes quæ obliviscuntur Deum./",
+        "SYN": "Да обратятся нечестивые в ад, - все народы, забывающие Бога.",
+        "NEO": "Les impies retournent au schéol, toutes les nations qui oublient Dieu.",
+        "NAB": "To Sheol the wicked will depart, all the nations that forget God.",
+        "VAT_ES": "[Iod] Vuelvan al Abismo los malvados,",
+        "CEI": "Tornino gli empi negli inferi, tutti i popoli che dimenticano Dio."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כִּ֤י לֹ֣א לָ֭/נֶצַח יִשָּׁכַ֣ח אֶבְי֑וֹן תִּקְוַ֥ת ענוים עֲ֝נִיִּ֗ים תֹּאבַ֥ד לָ/עַֽד׃",
+        "LXX": "ὅτι οὐκ εἰς τέλος ἐπιλησθήσεται ὁ πτωχός, ἡ ὑπομονὴ τῶν πενήτων οὐκ ἀπολεῖται εἰς τὸν αἰῶνα.",
+        "VUL": "Quoniam non in finem oblivio erit pauperis ;/ patientia pauperum non peribit in finem./",
+        "SYN": "Ибо не навсегда забыт будет нищий, и надежда бедных не до конца погибнет.",
+        "NEO": "Car le malheureux n’est pas toujours oublié, l’espérance des affligés ne périt pas à jamais.",
+        "NAB": "The needy will never be forgotten, nor will the hope of the afflicted ever fade.",
+        "VAT_ES": "[Caf] Porque el pobre no será olvidado para siempre",
+        "CEI": "Perché il povero non sarà dimenticato, la speranza degli afflitti non resterà delusa."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "קוּמָ֣/ה יְ֭הוָה אַל יָעֹ֣ז אֱנ֑וֹשׁ יִשָּׁפְט֥וּ ג֝וֹיִ֗ם עַל פָּנֶֽי/ךָ׃",
+        "LXX": "ἀνάστηθι, Κύριε, μὴ κραταιούσθω ἄνθρωπος, κριθήτωσαν ἔθνη ἐνώπιόν σου.",
+        "VUL": "Exsurge, Domine ; non confortetur homo :/ judicentur gentes in conspectu tuo./",
+        "SYN": "Восстань, Господи, да не преобладает человек, да судятся народы пред лицем Твоим.",
+        "NEO": "Lève-toi, \\+w Yahweh|strong=\"H3068\"\\+w** ! Que l’homme ne triomphe pas ! Que les nations soient jugées devant ta face !",
+        "NAB": "Arise, LORD, let no mortal prevail; let the nations be judged in your presence.",
+        "VAT_ES": "&iexcl;Levántate, Señor!",
+        "CEI": "Sorgi, Signore, non prevalga l'uomo: davanti a te siano giudicate le genti."
+      }
+    }
+  }
+}

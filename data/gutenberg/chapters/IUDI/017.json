@@ -1,0 +1,249 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IUDI_017",
+  "book_key": "IUDI",
+  "sequence": 17,
+  "chapter_in": {
+    "MT": 17,
+    "VUL": 17,
+    "LXX": 17
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי אִ֥ישׁ מֵֽ/הַר אֶפְרָ֖יִם וּ/שְׁמ֥/וֹ מִיכָֽיְהוּ׃",
+        "LXX": "Καὶ ἐγένετο ἀνὴρ ἀπὸ ὄρους Ἐφράιμ, καὶ ὄνομα αὐτῷ Μειχαίας.",
+        "VUL": "Fuit eo tempore vir quidam de monte Ephraim nomine Michas,",
+        "SYN": "Был некто на горе Ефремовой, именем Миха.",
+        "NEO": "Il y avait un homme de la montagne d’Ephraïm, nommé Michas.",
+        "NAB": "There was a man in the mountain region of Ephraim whose name was Micah.",
+        "VAT_ES": "Había un hombre de la montaña de Efraím, llamado Miqueas.",
+        "CEI": "C'era un uomo sulle montagne di Efraim, che si chiamava Mica."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר לְ/אִמּ֡/וֹ אֶלֶף֩ וּ/מֵאָ֨ה הַ/כֶּ֜סֶף אֲשֶׁ֣ר לֻֽקַּֽח לָ֗/ךְ ו/אתי וְ/אַ֤תְּ אָלִית֙ וְ/גַם֙ אָמַ֣רְתְּ בְּ/אָזְנַ֔/י הִנֵּֽה הַ/כֶּ֥סֶף אִתִּ֖/י אֲנִ֣י לְקַחְתִּ֑י/ו וַ/תֹּ֣אמֶר אִמּ֔/וֹ בָּר֥וּךְ בְּנִ֖/י לַ/יהוָֽה׃",
+        "LXX": "καὶ εἶπεν τῇ μητρὶ αὐτοῦ Οἱ χίλιοι καὶ ἑκατὸν οὓς ἔλαβες ἀργυρίου σεαυτῇ, καί με ἠράσω καὶ προσεῖπας ἐν ὠσί μου, ἰδοὺ τὸ ἀργύριον παρ’ ἐμοί, ἐγὼ ἔλαβον αὐτό. καὶ εἶπεν ἡ μήτηρ αὐτοῦ Εὐλογητὸς ὁ υἱός μου τῷ κυρίῳ.",
+        "VUL": "qui dixit matri suæ : Mille et centum argenteos, quos separaveras tibi, et super quibus me audiente juraveras, ecce ego habeo, et apud me sunt. Cui illa respondit : Benedictus filius meus Domino.",
+        "SYN": "Он сказал матери своей: тысяча сто _сиклей_ серебра, которые у тебя взяты и за которые ты при мне изрекла проклятие, это серебро у меня, я взял его. Мать его сказала: благословен сын мой у Господа!",
+        "NEO": "Il dit à sa mère : « Les mille et cent sicles d’argent qu’on t’a pris, et au sujet desquels tu as prononcé une malédiction, — et tu l’as même prononcée à mes oreilles, — voici, cet argent est entre mes mains, c’est moi qui l’ai pris. » Et sa mère dit : « Que mon fils soit béni de \\+w Yahweh|strong=\"H3068\"\\+w** ! »",
+        "NAB": "He said to his mother, \"The eleven hundred shekels of silver over which you pronounced a curse in my hearing when they were taken from you, are in my possession. It was I who took them; so now I will restore them to you.\"",
+        "VAT_ES": "El dijo a su madre: «Esos mil cien siclos de plata que te quitaron, y por los que te oí proferir una imprecación, están en mi poder; yo te los quité, pero ahora te los devuelvo». Su madre exclamó: «&iexcl;Que el Señor te bendiga, hijo mío».",
+        "CEI": "Egli disse alla madre: \"Quei millecento sicli di argento che ti hanno rubato e per i quali hai pronunziato una maledizione e l'hai pronunziata alla mia presenza, ecco, li ho io; quel denaro l'avevo preso io. Ora te lo restituisco\". La madre disse: \"Benedetto sia mio figlio dal Signore!\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יָּ֛שֶׁב אֶת אֶֽלֶף וּ/מֵאָ֥ה הַ/כֶּ֖סֶף לְ/אִמּ֑/וֹ וַ/תֹּ֣אמֶר אִמּ֡/וֹ הַקְדֵּ֣שׁ הִקְדַּ֣שְׁתִּי אֶת הַ/כֶּסֶף֩ לַ/יהוָ֨ה מִ/יָּדִ֜/י לִ/בְנִ֗/י לַֽ/עֲשׂוֹת֙ פֶּ֣סֶל וּ/מַסֵּכָ֔ה וְ/עַתָּ֖ה אֲשִׁיבֶ֥/נּוּ לָֽ/ךְ׃",
+        "LXX": "καὶ ἀπέδωκεν τοὺς χιλίους καὶ ἑκατὸν τοῦ ἀργυρίου τῇ μητρὶ αὐτοῦ· καὶ εἶπεν ἡ μήτηρ αὐτοῦ Ἁγιάζουσα ἡγίακα τὸ ἀργύριον τῷ κυρίῳ ἐκ χειρός μου τῷ υἱῷ μου τοῦ ποιῆσαι γλυπτὸν καὶ χωνευτόν, καὶ νῦν ἀποδώσω σοι αὐτό.",
+        "VUL": "Reddidit ergo eos matri suæ, quæ dixerat ei : Consecravi et vovi hoc argentum Domino, ut de manu mea suscipiat filius meus, et faciat sculptile atque conflatile : et nunc trado illud tibi.",
+        "SYN": "И возвратил он матери своей тысячу сто _сиклей_ серебра. И сказала мать его: это серебро я от себя посвятила Господу для [тебя,] сына моего, чтобы сделать из него истукан и литый кумир; итак отдаю оное тебе.",
+        "NEO": "Il rendit à sa mère les mille et cent sicles d’argent ; et sa mère dit : « Je consacre de ma main cet argent à \\+w Yahweh|strong=\"H3068\"\\+w** pour mon fils, afin d’en faire une image taillée et un objet en fonte ; et maintenant je te le rends. »",
+        "NAB": "When he restored the eleven hundred shekels of silver to his mother, she took two hundred of them and gave them to the silversmith, who made of them a carved idol overlaid with silver.",
+        "VAT_ES": "El le devolvió los mil cien siclos de plata, y su madre dijo: «Yo había consagrado solemnemente esa plata al Señor, en favor de mi hijo, para hacer una estatua revestida de metal fundido».",
+        "CEI": "Egli restituì alla madre i millecento sicli d'argento e la madre disse: \"Io consacro con la mia mano questo denaro al Signore, in favore di mio figlio, per farne una statua scolpita e una statua di getto\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥שֶׁב אֶת הַ/כֶּ֖סֶף לְ/אִמּ֑/וֹ וַ/תִּקַּ֣ח אִמּ/וֹ֩ מָאתַ֨יִם כֶּ֜סֶף וַ/תִּתְּנֵ֣/הוּ לַ/צּוֹרֵ֗ף וַֽ/יַּעֲשֵׂ֨/הוּ֙ פֶּ֣סֶל וּ/מַסֵּכָ֔ה וַ/יְהִ֖י בְּ/בֵ֥ית מִיכָֽיְהוּ׃",
+        "LXX": "καὶ ἀπέδωκεν τὸ ἀργύριον τῇ μητρὶ αὐτοῦ· καὶ ἔλαβεν ἡ μήτηρ αὐτοῦ διακοσίους ἀργυρίου καὶ ἔδωκεν αὐτὸ ἀργυροκόπῳ, καὶ ἐποίησεν αὐτὸ γλυπτὸν καὶ χωνευτόν· καὶ ἐγενήθη ἐν οἴκῳ Μειχαία.",
+        "VUL": "Reddidit igitur eos matri suæ : quæ tulit ducentos argenteos, et dedit eos argentario, ut faceret ex eis sculptile atque conflatile, quod fuit in domo Michæ.",
+        "SYN": "Но он возвратил серебро матери своей. Мать его взяла двести _сиклей_ серебра и отдала их плавильщику. Он сделал из них истукан и литый кумир, который и находился в доме Михи.",
+        "NEO": "Lorsqu’il eut rendu l’argent à sa mère, sa mère prit deux cents sicles et les donna au fondeur, qui en fit une image taillée et un objet en fonte ; et ils furent dans la maison de Michas.",
+        "NAB": "Then his mother said, \"May the LORD bless my son! I have consecrated the silver to the LORD as my gift in favor of my son, by making a carved idol overlaid with silver.\" It remained in the house of Micah.",
+        "VAT_ES": "Así, cuando él devolvió la plata a su madre, ella tomó doscientos siclos de plata y se los entregó al orfebre. Este hizo una estatua revestida de metal fundido, y la pusieron en la casa de Miqueas.",
+        "CEI": "Quando egli ebbe restituito il denaro alla madre, questa prese duecento sicli e li diede al fonditore, il quale ne fece una statua scolpita e una statua di getto, che furono collocate nella casa di Mica."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/הָ/אִ֣ישׁ מִיכָ֔ה ל֖/וֹ בֵּ֣ית אֱלֹהִ֑ים וַ/יַּ֤עַשׂ אֵפוֹד֙ וּ/תְרָפִ֔ים וַ/יְמַלֵּ֗א אֶת יַ֤ד אַחַד֙ מִ/בָּנָ֔י/ו וַ/יְהִי ל֖/וֹ לְ/כֹהֵֽן׃",
+        "LXX": "καὶ ὁ οἶκος Μειχαία αὐτῷ οἶκος θεοῦ· καὶ ἐποίησεν ἐφὼδ καὶ θαραφείν, καὶ ἐπλήρωσεν τὴν χεῖρα ἀπὸ ἑνὸς υἱῶν αὐτοῦ, καὶ ἐγένετο αὐτῷ εἰς ἱερέα.",
+        "VUL": "Qui ædiculam quoque in ea deo separavit, et fecit ephod, et theraphim, id est, vestem sacerdotalem, et idola : implevitque unius filiorum suorum manum, et factus est ei sacerdos.",
+        "SYN": "И был у Михи дом Божий. И сделал он ефод и терафим и посвятил одного из сыновей своих, чтоб он был у него священником.",
+        "NEO": "Car ce Michas avait une maison de Dieu ; il fit un éphod et des théraphim, et il consacra un de ses fils, qui lui servit de prêtre.",
+        "NAB": "Thus the layman Micah had a sanctuary. He also made an ephod and household idols, and consecrated one of his sons, who became his priest.",
+        "VAT_ES": "Y como este hombre tenía un lugar de culto, se hizo un efod y unos ídolos familiares, e invistió a uno de sus hijos para que fuera su sacerdote.",
+        "CEI": "Quest'uomo, Mica, ebbe un santuario; fece un efod e i terafim e diede l'investitura a uno dei figli, che gli fece da sacerdote."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בַּ/יָּמִ֣ים הָ/הֵ֔ם אֵ֥ין מֶ֖לֶךְ בְּ/יִשְׂרָאֵ֑ל אִ֛ישׁ הַ/יָּשָׁ֥ר בְּ/עֵינָ֖י/ו יַעֲשֶֽׂה׃",
+        "LXX": "ἐν δὲ ταῖς ἡμέραις ἐκείναις οὐκ ἦν βασιλεὺς ἐν Ἰσραήλ· ἀνὴρ τὸ εὐθὲς ἐν ὀφθαλμοῖς αὐτοῦ ἐποίει.",
+        "VUL": "In diebus illis non erat rex in Israël, sed unusquisque quod sibi rectum videbatur, hoc faciebat.",
+        "SYN": "В те дни не было царя у Израиля; каждый делал то, что ему казалось справедливым.",
+        "NEO": "En ce temps-là, il n’y avait pas de roi en Israël ; chacun faisait ce qui était bon à ses yeux.",
+        "NAB": "In those days there was no king in Israel; everyone did what he thought best.",
+        "VAT_ES": "En aquel tiempo no había rey en Israel, y cada uno hacía lo que le parecía bien.",
+        "CEI": "In quel tempo non c'era un re in Israele; ognuno faceva quello che gli pareva meglio."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יְהִי נַ֗עַר מִ/בֵּ֥ית לֶ֨חֶם֙ יְהוּדָ֔ה מִ/מִּשְׁפַּ֖חַת יְהוּדָ֑ה וְ/ה֥וּא לֵוִ֖י וְ/ה֥וּא גָֽר שָֽׁם׃",
+        "LXX": "Καὶ ἐγενήθη νεανίας ἐκ Βηθλέεμ δήμου Ἰούδα, καὶ αὐτὸς Λευείτης· καὶ οὗτος παρῴκει ἐκεῖ.",
+        "VUL": "Fuit quoque alter adolescens de Bethlehem Juda, ex cognatione ejus : eratque ipse Levites, et habitabat ibi.",
+        "SYN": "Один юноша из Вифлеема Иудейского, из колена Иудина, левит, тогда жил там;",
+        "NEO": "Il y avait un jeune homme de Bethléem de Juda, de la famille de Juda ; il était Lévite et séjournait dans celle ville.",
+        "NAB": "There was a young Levite who had resided within the tribe of Judah at Bethlehem of Judah.",
+        "VAT_ES": "Había un hombre joven de Belén de Judá, del clan de Judá, que era levita y residía allí como forastero.",
+        "CEI": "Ora c'era un giovane di Betlemme di Giuda, della tribù di Giuda, il quale era un levita e abitava in quel luogo come forestiero."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨לֶךְ הָ/אִ֜ישׁ מֵ/הָ/עִ֗יר מִ/בֵּ֥ית לֶ֨חֶם֙ יְהוּדָ֔ה לָ/ג֖וּר בַּ/אֲשֶׁ֣ר יִמְצָ֑א וַ/יָּבֹ֧א הַר אֶפְרַ֛יִם עַד בֵּ֥ית מִיכָ֖ה לַ/עֲשׂ֥וֹת דַּרְכּֽ/וֹ׃",
+        "LXX": "καὶ ἐπορεύθη ὁ ἀνὴρ ἀπὸ Βηθλέεμ τῆς πόλεως Ἰούδα παροικῆσαι ἐν ᾧ ἐὰν εὕρῃ τόπῳ, καὶ ἦλθεν ἕως ὄρους Ἐφράιμ καὶ ἕως οἴκου Μειχαία, τοῦ ποιῆσαι ὁδὸν αὐτοῦ.",
+        "VUL": "Egressusque de civitate Bethlehem, peregrinari voluit ubicumque sibi commodum reperisset. Cumque venisset in montem Ephraim, iter faciens, et declinasset parumper in domum Michæ,",
+        "SYN": "этот человек пошел из города Вифлеема Иудейского, чтобы пожить, где случится, и идя дорогою, пришел на гору Ефремову к дому Михи.",
+        "NEO": "Cet homme partit de la ville de Bethléem de Juda, pour trouver un lieu de séjour. Il arriva ainsi dans la montagne d’Ephraïm, jusqu’à la maison de Michas.",
+        "NAB": "From that city he set out to find another place of residence. On his journey he came to the house of Micah in the mountain region of Ephraim.",
+        "VAT_ES": "Este hombre había dejado la ciudad de Belén de Judá, tratando de encontrar un sitio donde residir. Llegó a la montaña de Judá y, mientras iba de camino, dio con la casa de Micá.",
+        "CEI": "Questo uomo era partito dalla città di Betlemme di Giuda, per cercare una dimora dovunque la trovasse. Cammin facendo era giunto sulle montagne di Efraim, alla casa di Mica."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר ל֥/וֹ מִיכָ֖ה מֵ/אַ֣יִן תָּב֑וֹא וַ/יֹּ֨אמֶר אֵלָ֜י/ו לֵוִ֣י אָנֹ֗כִי מִ/בֵּ֥ית לֶ֨חֶם֙ יְהוּדָ֔ה וְ/אָנֹכִ֣י הֹלֵ֔ךְ לָ/ג֖וּר בַּ/אֲשֶׁ֥ר אֶמְצָֽא׃",
+        "LXX": "καὶ εἶπεν αὐτῷ Μειχαίας Πόθεν ἔρχῃ; καὶ εἶπεν πρὸς αὐτόν Λευείτης εἰμὶ ἀπὸ Βαιθλέεμ Ἰούδα, καὶ ἐγὼ πορεύομαι παροικῆσαι ἐν ᾧ ἐὰν εὕρω τόπῳ.",
+        "VUL": "interrogatus est ab eo unde venisset. Qui respondit : Levita sum de Bethlehem Juda, et vado ut habitem ubi potuero, et utile mihi esse perspexero.",
+        "SYN": "И сказал ему Миха: откуда ты идешь? Он сказал ему: я левит из Вифлеема Иудейского и иду пожить, где случится.",
+        "NEO": "Michas lui dit : « D’où viens-tu ? » Il lui répondit : « Je suis Lévite, de Bethléem de Juda, et je voyage pour trouver un lieu de séjour. »",
+        "NAB": "Micah said to him, \"Where do you come from?\" He answered him, \"I am a Levite from Bethlehem in Judah, and am on my way to find some other place of residence.\"",
+        "VAT_ES": "Este le preguntó: «&iquest;De dónde vienes?». «Soy un levita de Belén de Judá, le respondió él, y estoy tratando de encontrar un sitio donde residir».",
+        "CEI": "Mica gli domandò: \"Da dove vieni?\". Gli rispose: \"Sono un levita di Betlemme di Giuda e vado a cercare una dimora dove la troverò\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֩ ל֨/וֹ מִיכָ֜ה שְׁבָ֣/ה עִמָּדִ֗/י וֶֽ/הְיֵה לִ/י֮ לְ/אָ֣ב וּ/לְ/כֹהֵן֒ וְ/אָנֹכִ֨י אֶֽתֶּן לְ/ךָ֜ עֲשֶׂ֤רֶת כֶּ֨סֶף֙ לַ/יָּמִ֔ים וְ/עֵ֥רֶךְ בְּגָדִ֖ים וּ/מִחְיָתֶ֑/ךָ וַ/יֵּ֖לֶךְ הַ/לֵּוִֽי׃",
+        "LXX": "καὶ εἶπεν αὐτῷ Μειχαίας Κάθου μετ’ ἐμοῦ, καὶ γίνου μοι εἰς πατέρα καὶ εἰς ἱερέα, καὶ ἐγὼ δώσω σοι δέκα ἀργυρίου εἰς ἡμέραν καὶ στολὴν ἱματίων καὶ τὰ πρὸς ζωήν σου.",
+        "VUL": "Dixitque Michas : Mane apud me, et esto mihi parens ac sacerdos : daboque tibi per annos singulos decem argenteos, ac vestem duplicem, et quæ ad victum sunt necessaria.",
+        "SYN": "И сказал ему Миха: останься у меня и будь у меня отцом и священником; я буду давать тебе по десяти _сиклей_ серебра на год, потребное одеяние и пропитание.",
+        "NEO": "Michas lui dit : « Reste avec moi ; sois pour moi un père et un prêtre, et je te donnerai dix sicles d’argent par an, une provision de vêtements et la nourriture. » Et le Lévite entra.",
+        "NAB": "\"Stay with me,\" Micah said to him. \"Be father and priest to me, and I will give you ten silver shekels a year, a set of garments, and your food.\"",
+        "VAT_ES": "Entonces Micá le dijo: «Quédate conmigo, y serás para mí un padre y un sacerdote. Yo te daré diez siclos de plata al año, además de la ropa y la comida». Ante su insistencia,",
+        "CEI": "Mica gli disse: \"Rimani con me e sii per me padre e sacerdote; ti darò dieci sicli d'argento all'anno, un corredo e vitto\". Il levita entrò."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יּ֥וֹאֶל הַ/לֵּוִ֖י לָ/שֶׁ֣בֶת אֶת הָ/אִ֑ישׁ וַ/יְהִ֤י הַ/נַּ֨עַר֙ ל֔/וֹ כְּ/אַחַ֖ד מִ/בָּנָֽי/ו׃",
+        "LXX": "καὶ ἐπορεύθη ὁ Λευείτης καὶ ἤρξατο παροικεῖν παρὰ τῷ ἀνδρί· καὶ ἐγενήθη ὁ νεανίας παρ’ αὐτῷ ὡς εἷς ἀπὸ υἱῶν αὐτοῦ.",
+        "VUL": "Acquievit, et mansit apud hominem, fuitque illi quasi unus de filiis.",
+        "SYN": "Левит пошел к нему и согласился левит остаться у этого человека, и был юноша у него, как один из сыновей его.",
+        "NEO": "Le Lévite consentit à demeurer chez cet homme, et le jeune homme fut pour lui comme l’un de ses fils.",
+        "NAB": "So the young Levite decided to stay with the man, to whom he became as one of his own sons.",
+        "VAT_ES": "el levita accedió a quedarse con aquel hombre, y el joven fue para él como uno de sus hijos.",
+        "CEI": "Il levita dunque acconsentì a stare con quell'uomo, che trattò il giovane come un figlio."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יְמַלֵּ֤א מִיכָה֙ אֶת יַ֣ד הַ/לֵּוִ֔י וַ/יְהִי ל֥/וֹ הַ/נַּ֖עַר לְ/כֹהֵ֑ן וַ/יְהִ֖י בְּ/בֵ֥ית מִיכָֽה׃",
+        "LXX": "καὶ ἐπλήρωσεν Μειχαίας τὴν χεῖρα τοῦ Λευείτου, καὶ ἐγένετο αὐτῷ εἰς ἱερέα· καὶ ἐγένετο ἐν οἴκῳ Μειχαία.",
+        "VUL": "Implevitque Michas manum ejus, et habuit puerum sacerdotem apud se :",
+        "SYN": "Миха посвятил левита, и этот юноша был у него священником и жил в доме у Михи.",
+        "NEO": "Michas installa le Lévite, et le jeune homme lui servit de prêtre et demeura dans la maison de Michas.",
+        "NAB": "Micah consecrated the young Levite, who became his priest, remaining in his house.",
+        "VAT_ES": "Micá invistió al levita, y así el joven se convirtió en su sacerdote y se quedó en casa de Micá.",
+        "CEI": "Mica diede l'investitura al levita; il giovane gli fece da sacerdote e si stabilì in casa di lui."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר מִיכָ֔ה עַתָּ֣ה יָדַ֔עְתִּי כִּֽי יֵיטִ֥יב יְהוָ֖ה לִ֑/י כִּ֧י הָיָה לִ֛/י הַ/לֵּוִ֖י לְ/כֹהֵֽן׃",
+        "LXX": "καὶ εἶπεν Μειχαίας Νῦν ἔγνων ὅτι ἀγαθυνεῖ Κύριος ἐμοί, ὅτι ἐγένετό μοι ὁ Λευείτης εἰς ἱερέα.",
+        "VUL": "Nunc scio, dicens, quod benefaciet mihi Deus habenti Levitici generis sacerdotem.",
+        "SYN": "И сказал Миха: теперь я знаю, что Господь будет мне благотворить, потому что левит у меня священником.",
+        "NEO": "Et Michas dit : « Je sais maintenant que \\+w Yahweh|strong=\"H3068\"\\+w** me fera du bien, puisque j’ai ce Lévite pour prêtre. »",
+        "NAB": "Therefore Micah said, \"Now I know that the LORD will prosper me, since the Levite has become my priest.\"",
+        "VAT_ES": "Entonces Micá exclamó: «&iexcl;Ahora sé que el Señor me hará prosperar, porque tengo a este levita como sacerdote!».",
+        "CEI": "Mica disse: \"Ora so che il Signore mi farà del bene, perché ho ottenuto questo levita come mio sacerdote\"."
+      }
+    }
+  }
+}

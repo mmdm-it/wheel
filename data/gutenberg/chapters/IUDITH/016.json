@@ -1,0 +1,512 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IUDITH_016",
+  "book_key": "IUDITH",
+  "sequence": 16,
+  "chapter_in": {
+    "MT": 16,
+    "VUL": 16,
+    "LXX": 16
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "καὶ εἶπεν Ἰουδείθ Ἐξάρχετε τῷ θεῷ μου ἐν τυμπάνοις, ᾄσατε τῷ κυρίῳ ἐν κυμβάλοις; ἐναρμόσασθε αὐτῷ ψαλμὸν καὶ αἶνον, ὑψοῦτε καὶ ἐπικαλεῖσθε τὸ ὄνομα αὐτοῦ.",
+        "VUL": "Tunc cantavit canticum hoc Domino Judith, dicens :",
+        "SYN": "И сказала Иудифь: начните Богу моему на тимпанах, пойте Господу моему на кимвалах, стройно воспевайте Ему новую песнь, возносите и призывайте имя Его;",
+        "NEO": "Alors Judith chanta ce cantique au Seigneur, en disant :",
+        "NAB": "\"Strike up the instruments, a song to my God with timbrels, chant to the Lord with cymbals; Sing to him a new song, exalt and acclaim his name.",
+        "VAT_ES": "Judit dijo: «&iexcl;Entonen un canto a mi Dios con tamboriles, canten al Señor con címbalos; compongan en su honor un salmo de alabanza, glorifiquen e invoquen su Nombre!",
+        "CEI": "Giuditta disse: \"Lodate il mio Dio con i timpani, cantate al Signore con cembali, elevate a lui l'accordo del salmo e della lode; esaltate e invocate il suo nome."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ὅτι θεὸς συντρίβων πολέμους Κύριος, ὅτι εἰς παρεμβολὰς αὐτοῦ ἐν μέσῳ λαοῦ ἐξείλατό με ἐκ χειρὸς καταδιωκόντων με.",
+        "VUL": "[Incipite Domino in tympanis ;/ cantate Domino in cymbalis ;/ modulamini illi psalmum novum :/ exaltate, et invocate nomen ejus./",
+        "SYN": "потому что Он есть Бог Господь, сокрушающий брани, потому что Он ополчился за меня среди народа и исторг меня из руки моих преследователей.",
+        "NEO": "« Célébrez le Seigneur au son des tambourins, chantez le Seigneur avec les cymbales, modulez en son honneur un cantique nouveau, exaltez et acclamez son nom.",
+        "NAB": "For the Lord is God; he crushes warfare, and sets his encampment among his people; he snatched me from the hands of my presecutors.",
+        "VAT_ES": "Porque el Señor es un Dios que pone fin a las guerras: él estableció su campamento en medio del pueblo y me libró de mis perseguidores.",
+        "CEI": "Poiché il Signore è il Dio che stronca le guerre; egli mi ha riportata nel suo accampamento in mezzo al suo popolo, mi ha salvata dalle mani dei miei persecutori."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ἦλθεν Ἀσσοὺρ ἐξ ὀρέων ἀπὸ βορρᾶ, ἦλθεν ἐν μυριάσι δυνάμεων αὐτοῦ, ὧν τὸ πλῆθος αὐτῶν ἐνέφραξεν χειμάρρους, καὶ ἡ ἵππος αὐτῶν ἐκάλυψεν βουνούς.",
+        "VUL": "Dominus conterens bella,/ Dominus nomen est illi./",
+        "SYN": "Пришел Ассур с гор севера, пришел с мириадами войска своего, и множество их запрудило воду в источниках, и конница их покрыла холмы.",
+        "NEO": "Le Seigneur met fin aux guerres ; le Seigneur est son nom !",
+        "NAB": "\"The Assyrian came from the mountains of the north, with the myriads of his forces he came; Their numbers blocked the torrents, their horses covered the hills.",
+        "VAT_ES": "De las montañas del norte llegó Asiria, avanzó con un ejército innumerable: sus tropas obstruyeron los valles y su caballería cubrió las colinas.",
+        "CEI": "Calò Assur dai monti, giù da settentrione, calò con le torme dei suoi armati, il suo numero ostruì i torrenti, i suoi cavalli coprirono i colli."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "εἶπεν ἐμπρήσειν τὰ ὄρη μου, καὶ τοὺς νεανίσκους μου ἀνελεῖν ῥομφαίᾳ, καὶ τὰ θηλάζοντά μου θήσειν εἰς ἔδαφος, καὶ τὰ νήπιά μου δώσειν εἰς προνομήν, καὶ τὰς παρθένους σκυλεῦσαι.",
+        "VUL": "Qui posuit castra sua in medio populi sui,/ ut eriperet nos de manu omnium inimicorum nostrorum./",
+        "SYN": "Он сказал, что пределы мои сожжет, юношей моих мечом истребит, грудных младенцев бросит о землю, малых детей моих отдаст на расхищение, дев моих пленит.",
+        "NEO": "Il a dressé son camp au milieu de son peuple, pour nous délivrer des mains de tous nos ennemis.",
+        "NAB": "He threatened to burn my land, put my youths to the sword, Dash my babes to the ground, make my children a prey, and seize my virgins as spoil.",
+        "VAT_ES": "Amenazó con incendiar mis territorios y pasar a mis jóvenes al filo de la espada, con estrellar a mis pequeños contra el suelo y entregar a mis niños como presa y a mis muchachas como botín.",
+        "CEI": "Affermò di bruciare il mio paese, di stroncare i miei giovani con la spada, di schiacciare al suolo i miei lattanti, di prender come preda i miei fanciulli, di rapire le mie vergini."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "Κύριος Παντοκράτωρ ἠθέτησεν αὐτοὺς ἐν χειρὶ θηλείας.",
+        "VUL": "Venit Assur ex montibus ab aquilone/ in multitudine fortitudinis suæ :/ cujus multitudo obturavit torrentes,/ et equi eorum cooperuerunt valles./",
+        "SYN": "Но Господь Вседержитель низложил их рукою жены.",
+        "NEO": "Assur est venu des montagnes, du côté de l’Aquilon, avec les myriades de ses guerriers ; leur multitude arrêtait les torrents, et leurs chevaux couvraient les vallées.",
+        "NAB": "\"But the Lord Almighty thwarted them, by a woman's hand he confounded them.",
+        "VAT_ES": "&iexcl;Pero el Señor todopoderoso los eliminó por la mano de una mujer!",
+        "CEI": "Il Signore onnipotente li ha rintuzzati per mano di donna!"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "οὐ γὰρ ὑπέπεσεν ὁ δυνατὸς αὐτῶν ὑπὸ νεανίσκων, οὐδὲ υἱοὶ Τιτάνων ἐπάταξαν αὐτόν, οὐδὲ ὑψηλοὶ γίγαντες ἐπέθεντο αὐτῷ· ἀλλὰ Ἰουδεὶθ θυγάτηρ Μεραρεί· ἐν κάλλει προσώπου αὐτῆς παρέλυσεν αὐτόν.",
+        "VUL": "Dixit se incensurum fines meos,/ et juvenes meos occisurum gladio ;/ infantes meos dare in prædam,/ et virgines in captivitatem./",
+        "SYN": "Не от юношей пал сильный их, не сыны титанов поразили его, и не рослые исполины налегли на него, но Иудифь, дочь Мерарии, красотою лица своего погубила его;",
+        "NEO": "Il se promettait de ravager par le feu mon territoire, d’immoler par l’épée mes jeunes gens, de faire de mes enfants un butin, de mes vierges des captives.",
+        "NAB": "Not by youths was their mighty one struck down, nor did titans bring him low, nor huge giants attack him; But Judith, the daughter of Merari, by the beauty of her countenance disabled him.",
+        "VAT_ES": "Su jefe no fue abatido por jóvenes guerreros, ni lo golpearon hijos de titanes, ni lo atacaron enormes gigantes: lo desarmó Judit, la hija de Merarí, con la hermosura de su rostro.",
+        "CEI": "Poiché non cadde il loro capo contro giovani forti, né figli di titani lo percossero, né alti giganti l'oppressero, ma Giuditta figlia di Merari, con la bellezza del suo volto lo fiaccò."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "ἐξεδύσατο γὰρ στολὴν χηρεύσεως αὐτῆς εἰς ὕψος τῶν πονούντων ἐν Ἰσραήλ, ἠλείψατο τὸ πρόσωπον αὐτῆς ἐν μυρισμῷ,",
+        "VUL": "Dominus autem omnipotens nocuit eum,/ et tradidit eum in manus feminæ, et confodit eum./",
+        "SYN": "потому что она для возвышения бедствовавших в Израиле сняла с себя одежды вдовства своего, помазала лице свое благовонною мастью,",
+        "NEO": "Mais le Seigneur tout-puissant l’a couvert d’ignominie ; il l’a livré aux mains d’une femme, et elle en a triomphé.",
+        "NAB": "She took off her widow's garb to raise up the afflicted in Israel. She anointed her face with fragrant oil;",
+        "VAT_ES": "Ella se quitó su ropa de luto, para exaltar a los afligidos de Israel:",
+        "CEI": "Essa depose la veste di vedova per sollievo degli afflitti in Israele, si unse con aroma il volto,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "καὶ ἐδήσατο τὰς τρίχας αὐτῆς ἐν μίτρᾳ, καὶ ἔλαβεν στολὴν λινῆν εἰς ἀπάτην αὐτοῦ.",
+        "VUL": "Non enim cecidit potens eorum a juvenibus,/ nec filii Titan percusserunt eum,/ nec excelsi gigantes opposuerunt se illi :/ sed Judith filia Merari in specie faciei suæ dissolvit eum./",
+        "SYN": "украсила волосы свои головным убором, надела для прельщения его льняную одежду.",
+        "NEO": "Leur héros n’est pas tombé sous les coups des jeunes gens ; les fils des braves ne l’ont pas frappé ; les géants à haute stature ne se sont pas mesurés avec lui.",
+        "NAB": "with a fillet she fastened her tresses, and put on a linen robe to beguile him.",
+        "VAT_ES": "se ajustó el cabello con una diadema, se puso ropa de lino para seducirlo.",
+        "CEI": "cinse del diadema i capelli, indossò una veste di lino per sedurlo."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "τὸ σανδάλιον αὐτῆς ἥρπασεν ὀφθαλμὸν αὐτοῦ, καὶ τὸ κάλλος αὐτῆς ᾐχμαλώτισεν ψυχὴν αὐτοῦ. διῆλθεν ὁ ἀκινάκης τὸν τράχηλον αὐτοῦ.",
+        "VUL": "Exuit enim se vestimento viduitatis,/ et induit se vestimento lætitiæ/ in exsultatione filiorum Israël./",
+        "SYN": "Ее сандалии восхитили взор его, и красота ее пленила душу его; меч прошел по шее его.",
+        "NEO": "Elle s’est dépouillée des vêtements de son veuvage, elle s’est parée de ses vêtements de fête, pour le triomphe des enfants d’Israël ;",
+        "NAB": "Her sandals caught his eyes, and her beauty captivated his mind. The sword cut through his neck.",
+        "VAT_ES": "Sus sandalias deslumbraron los ojos del guerrero, su hermosura le cautivó el corazón... &iexcl;y la espada le cortó la cabeza!",
+        "CEI": "I suoi sandali rapirono i suoi occhi la sua bellezza avvinse il suo cuore e la scimitarra gli troncò il collo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ἔφριξαν Πέρσαι τὴν τόλμαν αὐτῆς, καὶ Μῆδοι τὸ θράσος αὐτῆς ἐρράχθησαν.",
+        "VUL": "Unxit faciem suam unguento,/ et colligavit cincinnos suos mitra ;/ accepit stolam novam ad decipiendum illum./",
+        "SYN": "Персы ужаснулись отваги ее, и Мидяне растерялись от смелости ее.",
+        "NEO": "elle a fait couler sur son visage une huile parfumée, elle a disposé sous le turban les boucles de sa chevelure.",
+        "NAB": "\"The Persians were dismayed at her daring, the Medes appalled at her boldness.",
+        "VAT_ES": "Los persas temblaron por su audacia y los medos se turbaron por su temeridad,",
+        "CEI": "I Persiani rabbrividirono per il suo coraggio, per la sua forza raccapricciarono i Medi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "τότε ἠλάλαξαν οἱ ταπεινοί μου, καὶ ἐφοβήθησαν οἱ ἀσθενοῦντές μου καὶ ἐπτοήθησαν· ὕψωσαν τὴν φωνὴν αὐτῶν καὶ ἀνετράπησαν.",
+        "VUL": "Sandalia ejus rapuerunt oculos ejus ;/ pulchritudo ejus captivam fecit animam ejus :/ amputavit pugione cervicem ejus./",
+        "SYN": "Тогда воскликнули смиренные мои, - и они испугались; немощные мои, - и они пришли в смущение; возвысили голос свой, - и они обратились в бегство.",
+        "NEO": "L’éclat de sa chaussure a ébloui ses yeux, sa beauté a rendu son âme captive, et elle lui a tranché la tête avec l’épée.",
+        "NAB": "When my lowly ones shouted, they were terrified; when my weaklings cried out, they trembled; at the sound of their war cry, they took to flight.",
+        "VAT_ES": "Entonces mi pueblo humillado gritó de alegría y los otros se llenaron de espanto; mis débiles lanzaron gritos de triunfo y ellos quedaron aterrados; mi pueblo alzó su voz y ellos se dieron a la fuga.",
+        "CEI": "Allora i miei poveri alzarono il grido di guerra e quelli si spaventarono; i miei deboli alzarono il grido e quelli furono sconvolti; gettarono alte grida e quelli volsero in fuga."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "υἱοὶ κορασίων κατεκέντησαν αὐτούς, καὶ ὡς παῖδας αὐτομολούντων ἐτίτρωσκον· ἀπώλοντο ἐκ παρατάξεως κυρίου μου.",
+        "VUL": "Horruerunt Persæ constantiam ejus,/ et Medi audaciam ejus./",
+        "SYN": "Сыновья молодых жен кололи их и, как детям беглых рабов, наносили им раны; они погибли от ополчения Господа моего.",
+        "NEO": "Les Perses ont frémi de sa vaillance, les Mèdes de son audace ;",
+        "NAB": "Sons of slave girls pierced them through; the supposed sons of rebel mothers cut them down; they perished before the ranks of my Lord.",
+        "VAT_ES": "Hijos de jóvenes mujeres los traspasaron, los acribillaron como a esclavos fugitivos: &iexcl;todos perecieron en el combate de mi Señor!",
+        "CEI": "Come figli di donnicciuole li trafissero, li trapassarono come disertori, perirono sotto le schiere del mio Signore."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "ὑμνήσω τῷ θεῷ μου ὕμνον καινόν. Κύριε, μέγας εἶ καὶ ἔνδοξος, θαυμαστὸς ἐν ἰσχύι, ἀνυπέρβλητος.",
+        "VUL": "Tunc ululaverunt castra Assyriorum,/ quando apparuerunt humiles mei, arescentes in siti./",
+        "SYN": "Воспою Господу моему песнь новую. Велик Ты, Господи, и славен, дивен силою и непобедим!",
+        "NEO": "le camp des Assyriens a retenti de hurlements, quand se sont montrés les miens, exténués et desséchés par la soif.",
+        "NAB": "\"A new hymn I will sing to my God. O Lord, great are you and glorious, wonderful in power and unsurpassable.",
+        "VAT_ES": "Cantaré a mi Dios un canto nuevo: &iexcl;Señor, tú eres grande y glorioso, admirable por tu poder e invencible!",
+        "CEI": "Innalzerò al mio Dio un canto nuovo: Signore, grande sei tu e glorioso, mirabile nella tua potenza e invincibile."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "σοὶ δουλευσάτω πᾶσα ἡ κτίσις σου· ὅτι εἶπας, καὶ ἐγενήθησαν· ἀπέστειλας τὸ πνεῦμά σου, καὶ ᾠκοδόμησεν· καὶ οὐκ ἔστιν ὃς ἀντιστήσεται τῇ φωνῇ σου.",
+        "VUL": "Filii puellarum compunxerunt eos,/ et sicut pueros fugientes occiderunt eos :/ perierunt in prælio a facie Domini Dei mei./",
+        "SYN": "Да работает Тебе всякое создание Твое: ибо Ты сказал, - и совершилось; Ты послал Духа Твоего, - и устроилось, - и нет _никого_, кто противостал бы гласу Твоему.",
+        "NEO": "Des fils de jeunes femmes les ont transpercés et les ont tués comme des enfants qui s’enfuient : ils ont péri dans le combat, devant la face du Seigneur mon Dieu.",
+        "NAB": "Let your every creature serve you; for you spoke, and they were made, You sent forth your spirit, and they were created; no one can resist your word.",
+        "VAT_ES": "Que te sirvan todas las criaturas, porque tú lo dijiste y fueron hechas, enviaste tu espíritu y él las formó, y nadie puede resistir a tu voz.",
+        "CEI": "Ti sia sottomessa ogni tua creatura: perché tu dicesti e tutte le cose furon fatte; mandasti il tuo spirito e furono costruite e nessuno può resistere alla tua voce."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ὄρη γὰρ ἐκ θεμελίων σὺν ὕδασιν σαλευθήσεται, πέτραι δ’ ἀπὸ προσώπου σου ὡς κηρὸς τακήσονται· ἔτι δὲ τοῖς φοβουμένοις σε, σὺ εὐιλατεύεις αὐτοῖς.",
+        "VUL": "Hymnum cantemus Domino ;/ hymnum novum cantemus Deo nostro./",
+        "SYN": "Горы с водами подвигнутся с оснований, и камни, как воск, растают от лица Твоего, но к боящимся Тебя Ты благомилостив.",
+        "NEO": "Chantons un cantique au Seigneur, chantons au Seigneur un cantique nouveau :",
+        "NAB": "The mountains to their bases, and the seas, are shaken; the rocks, like wax, melt before your glance. \"But to those who fear you, you are very merciful.",
+        "VAT_ES": "Las montañas y las aguas se sacudieron desde sus cimientos, las rocas se derretirán como cera en tu presencia, pero tú siempre te muestras propicio con aquellos que te temen.",
+        "CEI": "I monti sulle loro basi insieme con le acque sussulteranno, davanti a te le rocce si struggeranno come cera; ma a coloro che ti temono tu sarai sempre propizio."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ὅτι μικρὸν πᾶσα θυσία εἰς ὀσμὴν εὐωδίας, καὶ ἐλάχιστον πᾶν στέαρ εἰς ὁλοκαύτωμά σοι· ὁ δὲ φοβούμενος τὸν κύριον μέγας διὰ παντός.",
+        "VUL": "Adonai Domine, magnus es tu,/ et præclarus in virtute tua :/ et quem superare nemo potest./",
+        "SYN": "Мала всякая жертва для вони благоухания, и всякий тук ничтожен для всесожжения Тебе, но боящийся Господа всегда велик.",
+        "NEO": "Maître souverain, Seigneur, vous êtes grand, et magnifique dans votre puissance, et nul ne peut vous surpasser.",
+        "NAB": "Though the sweet odor of every sacrifice is a trifle, and the fat of all holocausts but little in your sight, one who fears the Lord is forever great.",
+        "VAT_ES": "Poco vale un sacrificio de aroma agradable y menos aún toda la grasa ofrecida en holocausto, pero el que teme al Señor será grande para siempre.",
+        "CEI": "Poca cosa è per te ogni sacrificio in soave odore, non basta quanto è pingue per farti un olocausto; ma chi teme il Signore è sempre grande."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "οὐαὶ ἔθνεσιν ἐπανισταμένοις τῷ γένει μου· Κύριος Παντοκράτωρ ἐκδικήσει αὐτοὺς ἐν ἡμέρᾳ κρίσεως, δοῦναι πῦρ καὶ σκώληκας εἰς σάρκας αὐτῶν, καὶ κλαύσονται ἐν αἰσθήσει ἕως αἰῶνος.",
+        "VUL": "Tibi serviat omnis creatura tua,/ quia dixisti, et facta sunt ;/ misisti spiritum tuum, et creata sunt :/ et non est qui resistat voci tuæ./",
+        "SYN": "Горе народам, восстающим на род мой: Господь Вседержитель отмстит им в день суда, пошлет огонь и червей на их тела, - и они будут чувствовать _боль_ и плакать вечно.",
+        "NEO": "Que toutes vos créatures vous servent, parce que vous avez parlé, et tout a été fait ; vous avez envoyé votre esprit, et tout a été créé, et nul ne peut résister à votre voix.",
+        "NAB": "\"Woe to the nations that rise against my people! the Lord Almighty will requite them; in the day of judgment he will punish them: He will send fire and worms into their flesh, and they shall burn and suffer forever.\"",
+        "VAT_ES": "&iexcl;Ay de las naciones que se levantan contra mi pueblo! El Señor todopoderoso los castigará en el día del Juicio: pondrá en su carne fuego y gusanos, y gemirán de dolor eternamente».",
+        "CEI": "Guai alle genti che insorgono contro il mio popolo: il Signore onnipotente li punirà nel giorno del giudizio, immettendo fuoco e vermi nelle loro carni, e piangeranno nel tormento per sempre\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "Ὡς δὲ ἤλθοσαν εἰς Ἰερουσαλήμ, προσεκύνησαν τῷ θεῷ, καὶ ἡνίκα ἐκαθαρίσθη ὁ λαός, ἀνήνεγκαν τὰ ὁλοκαυτώματα αὐτῶν καὶ τὰ ἑκούσια αὐτῶν καὶ τὰ δόματα.",
+        "VUL": "Montes a fundamentis movebuntur cum aquis ;/ petræ, sicut cera, liquescent ante faciem tuam./",
+        "SYN": "Когда пришли в Иерусалим, они поклонились Богу, и, когда народ очистился, вознесли всесожжения свои и доброхотные _жертвы_ свои и дары свои.",
+        "NEO": "Les montagnes, ainsi que les eaux, sont agitées sur leurs bases, les pierres se fondent comme la cire, devant votre face ;",
+        "NAB": "The people then went to Jerusalem to worship God; when they were purified, they offered their holocausts, freewill offerings, and gifts.",
+        "VAT_ES": "Apenas llegaron a Jerusalén, todos adoraron a Dios y, una vez que el pueblo se purificó, ofrecieron sus holocaustos, sus ofrendas voluntarias y sus dones.",
+        "CEI": "Quando giunsero a Gerusalemme si prostrarono ad adorare Dio e, appena il popolo fu purificato, offrirono i loro olocausti e le offerte spontanee e i doni."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "καὶ ἀνέθηκεν Ἰουδεὶθ πάντα τὰ σκεύη Ὀλοφέρνου ὅσα ἔδωκεν ὁ λαὸς αὐτῇ, καὶ τὸ κωνώπιον ὃ ἔλαβεν ἑαυτῇ ἐκ τοῦ κοιτῶνος αὐτοῦ εἰς ἀνάθημα τῷ θεῷ ἔδωκεν.",
+        "VUL": "Qui autem timent te,/ magni erunt apud te per omnia./",
+        "SYN": "Иудифь же принесла все сосуды Олоферна, которые отдал ей народ, и занавес, который она взяла из спальни его, отдала в жертву Господу.",
+        "NEO": "mais ceux qui vous craignent sont grands devant vous en toutes choses.",
+        "NAB": "Judith dedicated, as a votive offering to God, all the things of Holofernes that the people had given her, as well as the canopy that she herself had taken from his bedroom.",
+        "VAT_ES": "Judit dedicó todo el mobiliario de Holofernes, que el pueblo le había obsequiado, y consagró en homenaje a Dios el cortinado que ella misma había arrancado de su lecho.",
+        "CEI": "Giuditta dedicò tutti gli oggetti di Oloferne, che il popolo le aveva dati, e anche la cortina che aveva presa direttamente dal letto di lui, come offerta consacrata a Dio."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "καὶ ἦν ὁ λαὸς εὐφραινόμενος ἐν Ἰερουσαλὴμ κατὰ πρόσωπον τῶν ἁγίων ἐπὶ μῆνας τρεῖς, καὶ Ἰουδεὶθ μετ’ αὐτῶν κατέμενεν.",
+        "VUL": "Væ genti insurgenti super genus meum :/ Dominus enim omnipotens vindicabit in eis ;/ in die judicii visitabit illos./",
+        "SYN": "Народ веселился в Иерусалиме пред святилищем три месяца, и Иудифь пребывала с ними.",
+        "NEO": "Malheur à la nation qui s’élève contre mon peuple ! Car le Seigneur, le Tout-Puissant, se vengera d’elle, il la visitera au jour du jugement,",
+        "NAB": "For three months the people continued their celebration in Jerusalem before the sanctuary, and Judith remained with them.",
+        "VAT_ES": "El pueblo prolongó los festejos durante tres meses delante del Templo de Jerusalén, y Judit permaneció con ellos.",
+        "CEI": "Il popolo continuò a far festa in Gerusalemme vicino al tempio per tre mesi e Giuditta rimase con loro."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "Μετὰ δὲ τὰς ἡμέρας ταύτας ἀνέζευξεν ἕκαστος εἰς τὴν κληρονομίαν αὐτοῦ, καὶ Ἰουδεὶθ ἀπῆλθεν εἰς Βαιτυλουὰ καὶ κατέμεινεν ἐπὶ τῆς ὑπάρξεως αὐτῆς· καὶ ἐγένετο κατὰ τὸν καιρὸν αὐτῆς ἔνδοξος ἐν πάσῃ τῇ γῇ.",
+        "VUL": "Dabit enim ignem et vermes in carnes eorum,/ ut urantur et sentiant usque in sempiternum.]",
+        "SYN": "Но после сих дней каждый возвратился в удел свой, а Иудифь отправилась в Ветилую, где оставалась в имении своем, и была в свое время славною во всей земле.",
+        "NEO": "il livrera leur chair au feu et aux vers, afin qu’ils brûlent et qu’ils éprouvent ce supplice éternellement. »",
+        "NAB": "When those days were over, each one returned to his inheritance. Judith went back to Bethulia and remained on her estate. For the rest of her life she was renowned throughout the land.",
+        "VAT_ES": "Pasado este tiempo, cada uno regresó a su herencia, Judit, por su parte, volvió a Betulia y siguió administrando sus bienes. Ella se hizo célebre en tu tiempo por todo el país.",
+        "CEI": "Dopo quei giorni, ognuno tornò nella propria sede ereditaria; Giuditta tornò a Betulia e dimorò nella sua proprietà e divenne famosa in tutta la terra durante la sua vita."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "καὶ πολλοὶ ἐπεθύμησαν αὐτήν, καὶ οὐκ ἔγνω ἀνὴρ αὐτὴν πάσας τὰς ἡμέρας τῆς ζωῆς αὐτῆς, ἀφ’ ἧς ἡμέρας ἀπέθανεν Μανασσῆς ὁ ἀνὴρ αὐτῆς καὶ προσετέθη πρὸς τὸν λαὸν αὐτοῦ.",
+        "VUL": "Et factum est post hæc, omnis populus post victoriam venit in Jerusalem adorare Dominum : et mox ut purificati sunt, obtulerunt omnes holocausta, et vota, et repromissiones suas.",
+        "SYN": "Многие желали ее, но мужчина не познал ее во все дни ее жизни с того дня, как муж ее Манассия умер и приложился к народу своему.",
+        "NEO": "Après cette victoire, tout le peuple se rendit à Jérusalem pour adorer le Seigneur et, aussitôt qu’ils furent purifiés, ils offrirent tous les holocaustes et acquittèrent leurs vœux et leurs promesses.",
+        "NAB": "Many wished to marry her, but she gave herself to no man all the days of her life from the time of the death and burial of her husband, Manasseh.",
+        "VAT_ES": "Muchos la pretendieron como esposa, pero ella no volvió a casarse, después que su esposo Manasés murió y fue a reunirse con sus antepasados.",
+        "CEI": "Molti ne erano anche invaghiti, ma nessun uomo potè avvicinarla per tutti i giorni della sua vita da quando suo marito Manàsse morì e fu riunito al suo popolo."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "καὶ ἦν προβαίνουσα μεγάλη σφόδρα, καὶ ἐγήρασεν ἐν τῷ οἴκῳ τοῦ ἀνδρὸς αὐτῆς ἔτη ἑκατὸν πέντε, καὶ ἀφῆκεν τὴν ἅβραν αὐτῆς ἐλευθέραν. καὶ ἀπέθανεν εἰς Βαιτυλουά, καὶ ἔθαψαν αὐτὴν ἐν τῷ σπηλαίῳ τοῦ ἀνδρὸς αὐτῆς Μανασσῆ.",
+        "VUL": "Porro Judith universa vasa bellica Holofernis, quæ dedit illi populus, et conopeum quod ipsa sustulerat de cubili ipsius, obtulit in anathema oblivionis.",
+        "SYN": "Она приобрела великую славу и состарилась в доме мужа своего, _прожив_ до ста пяти лет, и отпустила служанку свою на свободу. Она умерла в Ветилуе, и похоронили ее в пещере мужа ее Манассии.",
+        "NEO": "Judith offrit toutes les armes d’Holoferne, que le peuple lui avait données, et le rideau qu’elle avait elle-même enlevé du lit, en anathème d’oubli.",
+        "NAB": "She lived to be very old in the house of her husband, reaching the advanced age of a hundred and five. She died in Bethulia, where they buried her in the tomb of her husband, Manasseh;",
+        "VAT_ES": "Su fama fue creciendo cada vez más, mientras envejecía en la casa de su esposo, hasta llegar a los ciento cinco años. Otorgó la libertad a su servidora, y murió en Betulia, siendo sepultada en la caverna de su esposo Manasés.",
+        "CEI": "Essa andò molto avanti negli anni protraendo la vecchiaia nella casa del marito fino a centocinque anni: alla sua ancella preferita aveva concesso la libertà. Morì in Betulia e la seppellirono nella grotta sepolcrale del marito Manàsse"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "καὶ ἐπένθησεν αὐτὴν οἶκος Ἰσραὴλ ἡμέρας ἑπτά. καὶ διεῖλεν τὰ ὑπάρχοντα αὐτῆς πρὸ τοῦ ἀποθανεῖν αὐτὴν πᾶσι τοῖς ἔγγιστα Μανασσῆ τοῦ ἀνδρὸς αὐτῆς καὶ τοῖς ἔγγιστα τοῦ γένους αὐτῆς.",
+        "VUL": "Erat autem populus jucundus secundum faciem sanctorum : et per tres menses gaudium hujus victoriæ celebratum est cum Judith.",
+        "SYN": "Дом Израиля оплакивал ее семь дней. Имение же свое прежде смерти своей она разделила между родственниками Манассии, мужа своего, и между близкими из рода своего.",
+        "NEO": "Tout le peuple était dans l’allégresse en face du sanctuaire, et la joie de cette victoire fut célébrée avec Judith pendant trois mois.",
+        "NAB": "and the house of Israel mourned her for seven days. Before she died, she distributed her goods to the relatives of her husband, Manasseh, and to her own relatives; and to the maid she gave her freedom.",
+        "VAT_ES": "La casa de Israel estuvo de duelo por ella durante siete días. Antes de morir había repartido sus bienes entre los parientes de su esposo Manasés y entre sus propios parientes.",
+        "CEI": "e la casa d'Israele la pianse sette giorni. Prima di morire aveva diviso i suoi beni tra i parenti più stretti di Manàsse suo marito e tra i parenti più stretti della sua famiglia."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "καὶ οὐκ ἦν ἔτι ὁ ἐκφοβῶν τοὺς υἱοὺς Ἰσραὴλ ἐν ταῖς ἡμέραις Ἰουδεὶθ καὶ μετὰ τὸ ἀποθανεῖν αὐτὴν ἡμέρας πολλάς. ἀμήν.",
+        "VUL": "Post dies autem illos, unusquisque rediit in domum suam : et Judith magna facta est in Bethulia, et præclarior erat universæ terræ Israël.",
+        "SYN": "И никто более не устрашал сынов Израиля во дни Иудифи и много дней по смерти ее.",
+        "NEO": "Ces jours de fête étant passés, chacun retourna dans sa maison ; Judith fut honorée dans Béthulie, et elle jouit d’un grand renom dans tout le pays d’Israël.",
+        "NAB": "During the life of Judith and for a long time after her death, no one again disturbed the Israelites.",
+        "VAT_ES": "Nadie atemorizó a los israelitas mientras vivió Judit, y hasta mucho tiempo después de su muerte.",
+        "CEI": "Né vi fu più nessuno che incutesse timore agli Israeliti finché visse Giuditta e per un lungo periodo dopo la sua morte."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "VUL": "Erat enim virtuti castitas adjuncta, ita ut non cognosceret virum omnibus diebus vitæ suæ, ex quo defunctus est Manasses vir ejus.",
+        "NEO": "Joignant au courage la chasteté, elle ne connut pas d’homme le reste de sa vie, depuis la mort de Manassès, son mari."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "VUL": "Erat autem, diebus festis, procedens cum magna gloria.",
+        "NEO": "Les jours de fête, elle paraissait magnifiquement parée."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "VUL": "Mansit autem in domo viri sui annos centum quinque, et dimisit abram suam liberam : et defuncta est ac sepulta cum viro suo in Bethulia.",
+        "NEO": "Après avoir demeuré cent cinq ans dans la maison de son mari et donné la liberté à sa servante, elle mourut et fut inhumée à Béthulie avec son mari ;"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "VUL": "Luxitque illam omnis populus diebus septem.",
+        "NEO": "et tout le peuple la pleura pendant sept jours."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "VUL": "In omni autem spatio vitæ ejus non fuit qui perturbaret Israël, et post mortem ejus annis multis.",
+        "NEO": "Dans tout le cours de sa vie et après sa mort, il n’y eut personne, pendant de longues années, qui troubla la paix d’Israël."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "VUL": "Dies autem victoriæ hujus festivitatis ab Hebræis in numero sanctorum dierum accipitur, et colitur a Judæis ex illo tempore usque in præsentem diem.",
+        "NEO": "Le jour de fête institué en souvenir de cette victoire est compté par les Hébreux au nombre des saints jours, et il est célébré par les Juifs depuis ce temps-là jusqu’aujourd’hui."
+      }
+    }
+  }
+}

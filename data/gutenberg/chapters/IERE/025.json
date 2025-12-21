@@ -1,0 +1,680 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IERE_025",
+  "book_key": "IERE",
+  "sequence": 25,
+  "chapter_in": {
+    "MT": 25,
+    "VUL": 25,
+    "LXX": 25
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "הַ/דָּבָ֞ר אֲשֶׁר הָיָ֤ה עַֽל יִרְמְיָ֨הוּ֙ עַל כָּל עַ֣ם יְהוּדָ֔ה בַּ/שָּׁנָה֙ הָֽ/רְבִעִ֔ית לִ/יהוֹיָקִ֥ים בֶּן יֹאשִׁיָּ֖הוּ מֶ֣לֶךְ יְהוּדָ֑ה הִ֗יא הַ/שָּׁנָה֙ הָ/רִ֣אשֹׁנִ֔ית לִ/נְבֽוּכַדְרֶאצַּ֖ר מֶ֥לֶךְ בָּבֶֽל׃",
+        "LXX": "Ὁ λόγος ὁ γενόμενος πρὸς Ἰερεμίαν ἐπὶ πάντα τὸν λαὸν Ἰούδα ἐν τῷ ἔτει τῷ τετάρτῳ τοῦ Ἰωακεὶμ υἱοῦ Ἰωσεία βασιλέως Ἰούδα,",
+        "VUL": "Verbum quod factum est ad Jeremiam, de omni populo Juda, in anno quarto Joakim filii Josiæ regis Juda (ipse est annus primus Nabuchodonosor regis Babylonis),",
+        "SYN": "Слово, которое было к Иеремии о всем народе Иудейском, в четвертый год Иоакима, сына Иосии, царя Иудейского, - это был первый год Навуходоносора, царя Вавилонского, -",
+        "NEO": "La parole qui fut adressée à Jérémie touchant tout le peuple de Juda, en la quatrième année de Joakim, fils de Josias, roi de Juda, — c’était la première année de Nabuchodonosor, roi de Babylone — ;",
+        "NAB": "The word that came to Jeremiah concerning all the people of Judah, in the fourth year of Jehoiakim, son of Josiah, king of Judah (the first year of Nebuchadnezzar, king of Babylon).",
+        "VAT_ES": "Palabra que llegó a Jeremías acerca de todo el pueblo de Judá, el cuarto año de Joaquím, hijo de Josías, rey de Judá, es decir, el primer año de Nabucodonosor, rey de Babilonia.",
+        "CEI": "Questa parola fu rivolta a Geremia per tutto il popolo di Giuda nel quarto anno di Ioiakìm figlio di Giosia, re di Giuda - cioè nel primo anno di Nabucodònosor re di Babilonia -."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֨ר דִּבֶּ֜ר יִרְמְיָ֤הוּ הַ/נָּבִיא֙ עַל כָּל עַ֣ם יְהוּדָ֔ה וְ/אֶ֛ל כָּל יֹשְׁבֵ֥י יְרוּשָׁלִַ֖ם לֵ/אמֹֽר׃",
+        "LXX": "ὃν ἐλάλησεν πρὸς πάντα τὸν λαὸν Ἰούδα καὶ πρὸς τοὺς κατοικοῦντας Ἰερουσαλὴμ λέγων",
+        "VUL": "quod locutus est Jeremias propheta ad omnem populum Juda, et ad universos habitatores Jerusalem, dicens :",
+        "SYN": "и которое пророк Иеремия произнес ко всему народу Иудейскому и ко всем жителям Иерусалима и сказал:",
+        "NEO": "parole que Jérémie prononça sur tout le peuple de Juda et pour tous les habitants de Jérusalem, en ces termes :",
+        "NAB": "This word the prophet Jeremiah spoke to all the people of Judah and all the citizens of Jerusalem:",
+        "VAT_ES": "Esto es lo que dijo el profeta Jeremías acerca de todo el pueblo de Judá y de todos los habitantes de Jerusalén:",
+        "CEI": "Il profeta Geremia l'annunciò a tutto il popolo di Giuda e a tutti gli abitanti di Gerusalemme dicendo:"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "מִן שְׁלֹ֣שׁ עֶשְׂרֵ֣ה שָׁנָ֡ה לְ/יֹאשִׁיָּ֣הוּ בֶן אָמוֹן֩ מֶ֨לֶךְ יְהוּדָ֜ה וְ/עַ֣ד הַ/יּ֣וֹם הַ/זֶּ֗ה זֶ֚ה שָׁלֹ֤שׁ וְ/עֶשְׂרִים֙ שָׁנָ֔ה הָיָ֥ה דְבַר יְהוָ֖ה אֵלָ֑/י וָ/אֲדַבֵּ֧ר אֲלֵי/כֶ֛ם אַשְׁכֵּ֥ים וְ/דַבֵּ֖ר וְ/לֹ֥א שְׁמַעְתֶּֽם׃",
+        "LXX": "Ἐν τρισκαιδεκάτῳ ἔτει Ἰωσία υἱοῦ Ἀμὼς βασιλέως Ἰούδα καὶ ἕως τῆς ἡμέρας ταύτης εἴκοσι καὶ τρία ⸂⸆⸃ ἔτη, καὶ ἐλάλησα πρὸς ὑμᾶς ὀρθρίζων καὶ λέγων.",
+        "VUL": "A tertiodecimo anno Josiæ filii Amon regis Juda, usque ad diem hanc, iste tertius et vigesimus annus, factum est verbum Domini ad me, et locutus sum ad vos, de nocte consurgens et loquens, et non audistis.",
+        "SYN": "от тринадцатого года Иосии, сына Амонова, царя Иудейского, до сего дня, вот уже двадцать три года, было ко мне слово Господне, и я с раннего утра говорил вам, - и вы не слушали.",
+        "NEO": "Depuis la treizième année de Josias, fils d’Amon, roi de Juda, jusqu’à ce jour, voici vingt-trois ans que la parole de \\+w Yahweh|strong=\"H3068\"\\+w** m’a été adressée et que je vous ai parlé, vous parlant dès le matin, et que vous n’avez pas écouté !",
+        "NAB": "Since the thirteenth year of Josiah, son of Amon, king of Judah, to this day-these three and twenty years-the word of the LORD has come to me and I spoke to you untiringly, but you would not listen.",
+        "VAT_ES": "Desde el año trece de Josías, hijo de Amón, rey de Judá, hasta el día de hoy –son ya veintitrés años– me ha llegado la palabra del Señor, y yo les he hablado incansablemente, sin que ustedes me escucharan.",
+        "CEI": "\"Dall'anno decimoterzo di Giosia figlio di Amòn, re di Giuda, fino ad oggi sono ventitré anni che mi è stata rivolta la parola del Signore e io ho parlato a voi premurosamente e continuamente, ma voi non avete ascoltato."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/שָׁלַח֩ יְהוָ֨ה אֲלֵי/כֶ֜ם אֶֽת כָּל עֲבָדָ֧י/ו הַ/נְּבִאִ֛ים הַשְׁכֵּ֥ם וְ/שָׁלֹ֖חַ וְ/לֹ֣א שְׁמַעְתֶּ֑ם וְ/לֹֽא הִטִּיתֶ֥ם אֶֽת אָזְנְ/כֶ֖ם לִ/שְׁמֹֽעַ׃",
+        "LXX": "καὶ ἀπέστελλον πρὸς ὑμᾶς τοὺς δούλους μου τοὺς προφήτας ὄρθρου ἀποστέλλων, καὶ οὐκ εἰσηκούσατε καὶ οὐ προσέσχετε τοῖς ὠσὶν ὑμῶν,",
+        "VUL": "Et misit Dominus ad vos omnes servos suos prophetas, consurgens diluculo, mittensque : et non audistis, neque inclinastis aures vestras ut audiretis,",
+        "SYN": "Господь посылал к вам всех рабов Своих, пророков, с раннего утра посылал, - и вы не слушали и не приклоняли уха своего, чтобы слушать.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** vous a envoyé tous ses serviteurs les prophètes, les envoyant dès le matin, et vous n’avez pas écouté, et vous n’avez pas prêté l’oreille pour entendre.",
+        "NAB": "Though you refused to listen or pay heed, the LORD has sent you without fail all his servants the prophets",
+        "VAT_ES": "También el Señor les ha enviado incansablemente a todos sus servidores los profetas, pero ustedes no han escuchado ni han inclinado sus oídos para oír.",
+        "CEI": "Il Signore vi ha inviato con assidua premura tutti i suoi servi, i profeti, ma voi non avete ascoltato e non avete prestato orecchio per ascoltare"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לֵ/אמֹ֗ר שֽׁוּבוּ נָ֞א אִ֣ישׁ מִ/דַּרְכּ֤/וֹ הָֽ/רָעָה֙ וּ/מֵ/רֹ֣עַ מַעַלְלֵי/כֶ֔ם וּ/שְׁבוּ֙ עַל הָ֣/אֲדָמָ֔ה אֲשֶׁ֨ר נָתַ֧ן יְהוָ֛ה לָ/כֶ֖ם וְ/לַ/אֲבֽוֹתֵי/כֶ֑ם לְ/מִן עוֹלָ֖ם וְ/עַד עוֹלָֽם׃",
+        "LXX": "λέγων Ἀποστράφητε ἕκαστος ἀπὸ τῆς ὁδοῦ αὐτοῦ τῆς πονηρᾶς καὶ ἀπὸ τῶν πονηρῶν ἐπιτηδευμάτων ὑμῶν, καὶ κατοικήσετε ἐπὶ τῆς γῆς ἧς ἔδωκα ὑμῖν καὶ τοῖς πατράσιν ὑμῶν ἀπ’ αἰῶνος καὶ ἕως αἰῶνος.",
+        "VUL": "cum diceret : Revertimini unusquisque a via sua mala, et a pessimis cogitationibus vestris, et habitabitis in terra quam dedit Dominus vobis et patribus vestris, a sæculo et usque in sæculum :",
+        "SYN": "Вам говорили: \"обратитесь каждый от злого пути своего и от злых дел своих и живите на земле, которую Господь дал вам и отцам вашим из века в век;",
+        "NEO": "Il disait : « Revenez-donc chacun de votre mauvaise voie et de la perversité de vos actions, et vous habiterez dans le pays que \\+w Yahweh|strong=\"H3068\"\\+w** a donné à vous et à vos pères, d’âge en âge.",
+        "NAB": "with this message: Turn back, each of you, from your evil way and from your evil deeds; then you shall remain in the land which the LORD gave you and your fathers, from of old and forever.",
+        "VAT_ES": "El les decía: Vuélvanse cada uno de su mal camino y de la maldad de sus acciones, y habitarán en el suelo que les ha dado el Señor, a ustedes y a sus padres, desde siempre y para siempre.",
+        "CEI": "quando vi diceva: Ognuno abbandoni la sua condotta perversa e le sue opere malvagie; allora potrete abitare nel paese che il Signore ha dato a voi e ai vostri padri dai tempi antichi e per sempre."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/אַל תֵּלְכ֗וּ אַֽחֲרֵי֙ אֱלֹהִ֣ים אֲחֵרִ֔ים לְ/עָבְדָ֖/ם וּ/לְ/הִשְׁתַּחֲוֺ֣ת לָ/הֶ֑ם וְ/לֹֽא תַכְעִ֤יסוּ אוֹתִ/י֙ בְּ/מַעֲשֵׂ֣ה יְדֵי/כֶ֔ם וְ/לֹ֥א אָרַ֖ע לָ/כֶֽם׃",
+        "LXX": "μὴ πορεύεσθε ὀπίσω θεῶν ἀλλοτρίων τοῦ δουλεύειν αὐτοῖς καὶ τοῦ προσκυνεῖν αὐτοῖς, ὅπως μὴ παροργίζητέ με ἐν τοῖς ἔργοις τῶν χειρῶν ὑμῶν τοῦ κακῶσαι ὑμᾶς.",
+        "VUL": "et nolite ire post deos alienos, ut serviatis eis, adoretisque eos : neque me ad iracundiam provocetis in operibus manuum vestrarum, et non affligam vos.",
+        "SYN": "и не ходите во след иных богов, чтобы служить им и поклоняться им, и не прогневляйте Меня делами рук своих, и не сделаю вам зла\".",
+        "NEO": "N’allez pas après d’autres dieux pour les servir et les adorer ; ne m’irritez pas par l’ouvrage de vos mains, et je ne vous ferai aucun mal.",
+        "NAB": "Do not follow strange gods to serve and adore them, lest you provoke me with your handiwork, and I bring evil upon you.",
+        "VAT_ES": "No vayan detrás de otros dioses para servirlos y para postrarse delante de ellos, no me agravien con la obra de sus manos, y no les haré ningún mal.",
+        "CEI": "Non seguite altri dei per servirli e adorarli e non provocatemi con le opere delle vostre mani e io non vi farò del male."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא שְׁמַעְתֶּ֥ם אֵלַ֖/י נְאֻם יְהוָ֑ה לְמַ֧עַן הכעסו/ני הַכְעִיסֵ֛/נִי בְּ/מַעֲשֵׂ֥ה יְדֵי/כֶ֖ם לְ/רַ֥ע לָ/כֶֽם׃",
+        "LXX": "καὶ οὐκ ἠκούσατέ μου.",
+        "VUL": "Et non audistis me, dicit Dominus, ut me ad iracundiam provocaretis in operibus manuum vestrarum, in malum vestrum.",
+        "SYN": "Но вы не слушали Меня, говорит Господь, прогневляя Меня делами рук своих, на зло себе.",
+        "NEO": "Mais vous ne m’avez pas écouté, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, — afin de m’irriter par l’œuvre de vos mains, pour votre malheur.",
+        "NAB": "But you would not listen to me, says the LORD, and so you provoked me with your handiwork to your own harm.",
+        "VAT_ES": "Pero ustedes no me escucharon –oráculo del Señor– agraviándome con la obra de sus manos, para su propia desgracia.",
+        "CEI": "Ma voi non mi avete ascoltato - dice il Signore - e mi avete provocato con l'opera delle vostre mani per vostra disgrazia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "לָ/כֵ֕ן כֹּ֥ה אָמַ֖ר יְהוָ֣ה צְבָא֑וֹת יַ֕עַן אֲשֶׁ֥ר לֹֽא שְׁמַעְתֶּ֖ם אֶת דְּבָרָֽ/י׃",
+        "LXX": "διὰ τοῦτο τάδε λέγει Κύριος Ἐπειδὴ οὐκ ἐπιστεύσατε τοῖς λόγοις μου,",
+        "VUL": "Propterea hæc dicit Dominus exercituum : Pro eo quod non audistis verba mea,",
+        "SYN": "Посему так говорит Господь Саваоф: за то, что вы не слушали слов Моих,",
+        "NEO": "C’est pourquoi ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** des armées : Parce que vous n’avez pas écouté mes paroles,",
+        "NAB": "Hence, thus says the LORD of hosts: Since you would not listen to my words,",
+        "VAT_ES": "Por eso, así habla el Señor de los ejércitos: Porque ustedes no han escuchado mis palabras,",
+        "CEI": "Per questo dice il Signore degli eserciti: Poiché non avete ascoltato le mie parole,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הִנְ/נִ֣י שֹׁלֵ֡חַ וְ/לָקַחְתִּי֩ אֶת כָּל מִשְׁפְּח֨וֹת צָפ֜וֹן נְאֻם יְהוָ֗ה וְ/אֶל נְבֽוּכַדְרֶאצַּ֣ר מֶֽלֶךְ בָּבֶל֮ עַבְדִּ/י֒ וַ/הֲבִ֨אֹתִ֜י/ם עַל הָ/אָ֤רֶץ הַ/זֹּאת֙ וְ/עַל יֹ֣שְׁבֶ֔י/הָ וְ/עַ֛ל כָּל הַ/גּוֹיִ֥ם הָ/אֵ֖לֶּה סָבִ֑יב וְ/הַ֣חֲרַמְתִּ֔י/ם וְ/שַׂמְתִּי/ם֙ לְ/שַׁמָּ֣ה וְ/לִ/שְׁרֵקָ֔ה וּ/לְ/חָרְב֖וֹת עוֹלָֽם׃",
+        "LXX": "ἰδοὺ ἐγὼ ἀποστέλλω καὶ λήμψομαι πατριὰν ἀπὸ βορρᾶ, καὶ ἄξω αὐτοὺς ἐπὶ τὴν γῆν ταύτην καὶ ἐπὶ τοὺς κατοικοῦντας αὐτὴν καὶ ἐπὶ πάντα τὰ ἔθνη τὰ κύκλῳ αὐτῆς, καὶ ἐξερημώσω αὐτοὺς καὶ δώσω αὐτοὺς εἰς ἀφανισμὸν καὶ εἰς συριγμὸν καὶ εἰς ὀνειδισμὸν αἰώνιον.",
+        "VUL": "ecce ego mittam et assumam universas cognationes aquilonis, ait Dominus, et Nabuchodonosor regem Babylonis servum meum, et adducam eos super terram istam, et super habitatores ejus, et super omnes nationes quæ in circuitu illius sunt : et interficiam eos, et ponam eos in stuporem et in sibilum, et in solitudines sempiternas.",
+        "SYN": "вот, Я пошлю и возьму все племена северные, говорит Господь, и пошлю к Навуходоносору, царю Вавилонскому, рабу Моему, и приведу их на землю сию и на жителей ее и на все окрестные народы; и совершенно истреблю их и сделаю их ужасом и посмеянием и вечным запустением.",
+        "NEO": "voici que j’envoie prendre toutes les tribus du septentrion, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, — et je les amène à Nabuchodonosor, roi de Babylone, mon serviteur ; je les ferai venir contre ce pays et contre ses habitants, et contre toutes ces nations d’alentour, que je frapperai d’anathème, et dont je ferai une solitude, un objet de moquerie, une ruine éternelle.",
+        "NAB": "lo! I will send for and fetch all the tribes of the north, says the LORD (and I will send to Nebuchadnezzar, king of Babylon, my servant); I will bring them against this land, against its inhabitants, and against all these neighboring nations. I will doom them, making them an object of horror, of ridicule, of everlasting reproach.",
+        "VAT_ES": "yo mando a buscar todos los clanes del Norte –oráculo del Señor– y a Nabucodonosor, rey de Babilonia, mi servidor, y los hago venir contra este país, contra sus habitantes y contra todas estas naciones de alrededor. Así los consagraré al exterminio total, y los convertiré en una desolación, en un motivo de estupor y en ruinas perpetuas.",
+        "CEI": "ecco manderò a prendere tutte le tribù del settentrione, le manderò contro questo paese, contro i suoi abitanti e contro tutte le nazioni confinanti, voterò costoro allo sterminio e li ridurrò a oggetto di orrore, a scherno e a obbrobrio perenne."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/הַאֲבַדְתִּ֣י מֵ/הֶ֗ם ק֤וֹל שָׂשׂוֹן֙ וְ/ק֣וֹל שִׂמְחָ֔ה ק֥וֹל חָתָ֖ן וְ/ק֣וֹל כַּלָּ֑ה ק֥וֹל רֵחַ֖יִם וְ/א֥וֹר נֵֽר׃",
+        "LXX": "καὶ ἀπολῶ ἀπ’ αὐτῶν φωνὴν χαρᾶς καὶ φωνὴν εὐφροσύνης, φωνὴν νυμφίου καὶ φωνὴν νύμφης, ὀσμὴν μύρου καὶ φῶς λύχνου.",
+        "VUL": "Perdamque ex eis vocem gaudii et vocem lætitiæ, vocem sponsi et vocem sponsæ, vocem molæ et lumen lucernæ.",
+        "SYN": "И прекращу у них голос радости и голос веселия, голос жениха и голос невесты, звук жерновов и свет светильника.",
+        "NEO": "Je ferai disparaître du milieu d’eux les cris de joie et les cris d’allégresse, les chants du fiancé et les chants de la fiancée, le bruit de la meule et la lumière de la lampe.",
+        "NAB": "Among them I will bring to an end the song of joy and the song of gladness, the voice of the bridegroom and the voice of the bride, the sound of the millstone and the light of the lamp.",
+        "VAT_ES": "Haré desaparecer de entre ellos el grito de alegría y el grito de júbilo, el canto del esposo y el canto de la esposa, el ruido del molino y la luz de la lámpara.",
+        "CEI": "Farò cessare in mezzo a loro le grida di gioia e le voci di allegria, la voce dello sposo e quella della sposa, il rumore della mola e il lume della lampada."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/הָֽיְתָה֙ כָּל הָ/אָ֣רֶץ הַ/זֹּ֔את לְ/חָרְבָּ֖ה לְ/שַׁמָּ֑ה וְ/עָ֨בְד֜וּ הַ/גּוֹיִ֥ם הָ/אֵ֛לֶּה אֶת מֶ֥לֶךְ בָּבֶ֖ל שִׁבְעִ֥ים שָׁנָֽה׃",
+        "LXX": "καὶ ἔσται πᾶσα ἡ γῆ εἰς ἀφανισμόν, καὶ δουλεύσουσιν ἐν τοῖς ἔθνεσιν ἑβδομήκοντα ἔτη, ⸆",
+        "VUL": "Et erit universa terra hæc in solitudinem, et in stuporem : et servient omnes gentes istæ regi Babylonis septuaginta annis.",
+        "SYN": "И вся земля эта будет пустынею и ужасом; и народы сии будут служить царю Вавилонскому семьдесят лет.",
+        "NEO": "Tout ce pays sera une solitude, un désert, et ces nations seront asservies au roi de Babylone pendant soixante-dix ans.",
+        "NAB": "This whole land shall be a ruin and a desert. Seventy years these nations shall be enslaved to the king of Babylon;",
+        "VAT_ES": "Todo este país será una ruina y una devastación, y esas naciones servirán al rey de Babilonia durante setenta años.",
+        "CEI": "Tutta questa regione sarà abbandonata alla distruzione e alla desolazione e queste genti resteranno schiave del re di Babilonia per settanta anni."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֣ה כִ/מְלֹ֣אות שִׁבְעִ֣ים שָׁנָ֡ה אֶפְקֹ֣ד עַל מֶֽלֶךְ בָּבֶל֩ וְ/עַל הַ/גּ֨וֹי הַ/ה֧וּא נְאֻם יְהוָ֛ה אֶת עֲוֺנָ֖/ם וְ/עַל אֶ֣רֶץ כַּשְׂדִּ֑ים וְ/שַׂמְתִּ֥י אֹת֖/וֹ לְ/שִֽׁמְמ֥וֹת עוֹלָֽם׃",
+        "LXX": "καὶ ἐν τῷ πληρωθῆναι ἑβδομήκοντα ἔτη ἐκδικήσω τὸ ἔθνος ἐκεῖνο καὶ θήσομαι αὐτοὺς εἰς ἀφανισμὸν αἰώνιον,",
+        "VUL": "Cumque impleti fuerint septuaginta anni, visitabo super regem Babylonis et super gentem illam, dicit Dominus, iniquitatem eorum, et super terram Chaldæorum, et ponam illam in solitudines sempiternas.",
+        "SYN": "И будет: когда исполнится семьдесят лет, накажу царя Вавилонского и тот народ, говорит Господь, за их нечестие, и землю Халдейскую, и сделаю ее вечною пустынею.",
+        "NEO": "Et lorsque les soixante-dix ans seront accomplis, je ferai rendre compte de leur péché au roi de Babylone et à cette nation, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, — et au pays des Chaldéens, et j’en ferai des solitudes éternelles.",
+        "NAB": "but when the seventy years have elapsed, I will punish the king of Babylon and the nation and the land of the Chaldeans for their guilt, says the LORD. Their land I will turn into everlasting desert.",
+        "VAT_ES": "Pero cuando hayan pasado los setenta años, yo castigaré por su iniquidad al rey de Babilonia y a aquella nación –oráculo del Señor– así como también al país de los caldeos, y los convertiré en desolaciones perpetuas.",
+        "CEI": "Quando saranno compiuti i settanta anni, io punirò il re di Babilonia e quel popolo - dice il Signore - per i loro delitti, punirò il paese dei Caldei e lo ridurrò a una desolazione perenne."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "ו/הבאיתי וְ/הֵֽבֵאתִי֙ עַל הָ/אָ֣רֶץ הַ/הִ֔יא אֶת כָּל דְּבָרַ֖/י אֲשֶׁר דִּבַּ֣רְתִּי עָלֶ֑י/הָ אֵ֤ת כָּל הַ/כָּתוּב֙ בַּ/סֵּ֣פֶר הַ/זֶּ֔ה אֲשֶׁר נִבָּ֥א יִרְמְיָ֖הוּ עַל כָּל הַ/גּוֹיִֽם׃",
+        "LXX": "καὶ ἐπάξω ἐπὶ τὴν γῆν ἐκείνην πάντας τοὺς ⸂⸆⸃ λόγους μου οὓς ἐλάλησα κατ’ αὐτῆς, πάντα τὰ γεγραμμένα ἐν τῷ βιβλίῳ τούτῳ.",
+        "VUL": "Et adducam super terram illam omnia verba mea, quæ locutus sum contra eam, omne quod scriptum est in libro isto, quæcumque prophetavit Jeremias adversum omnes gentes :",
+        "SYN": "И совершу над тою землею все слова Мои, которые Я произнес на нее, все написанное в сей книге, что Иеремия пророчески изрек на все народы.",
+        "NEO": "Et je ferai venir sur ce pays toutes les paroles que j’ai prononcées contre lui, tout ce qui est écrit dans ce livre, ce que Jérémie a prophétisé sur toutes les nations.",
+        "NAB": "Against that land I will fulfill all the words I have spoken against it (all that is written in this book, which Jeremiah prophesied against all the nations).",
+        "VAT_ES": "Yo haré venir sobre ese país todas las palabras que pronuncié contra él, todo lo que está escrito en este libro. Esto es lo que profetizó Jeremías contra todas las naciones.",
+        "CEI": "Manderò dunque a effetto su questo paese tutte le parole che ho pronunziate a suo riguardo, quanto è scritto in questo libro, ciò che Geremia aveva predetto contro tutte le nazioni."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כִּ֣י עָֽבְדוּ בָ֤/ם גַּם הֵ֨מָּה֙ גּוֹיִ֣ם רַבִּ֔ים וּ/מְלָכִ֖ים גְּדוֹלִ֑ים וְ/שִׁלַּמְתִּ֥י לָ/הֶ֛ם כְּ/פָעֳלָ֖/ם וּ/כְ/מַעֲשֵׂ֥ה יְדֵי/הֶֽם׃",
+        "LXX": "Ἃ ἐπροφήτευσεν Ἰερεμίας ἐπὶ τὰ ἔθνη τὰ Αἰλάμ. ⸆",
+        "VUL": "quia servierunt eis, cum essent gentes multæ, et reges magni : et reddam eis secundum opera eorum, et secundum facta manuum suarum.",
+        "SYN": "Ибо и их поработят многочисленные народы и цари великие; и Я воздам им по их поступкам и по делам рук их.",
+        "NEO": "Car des nations nombreuses et de grands rois les asserviront, eux aussi, et je leur rendrai selon leurs actions et selon l’œuvre de leurs mains. »",
+        "NAB": "They also shall be enslaved to great nations and mighty kings, and thus I will repay them according to their own deeds and according to their own handiwork.",
+        "VAT_ES": "Porque también a ellas las someterán naciones poderosas y grandes reyes, y yo les retribuiré según su conducta y según la obra de sus manos.",
+        "CEI": "Nazioni numerose e re potenti ridurranno in schiavitù anche costoro, e così li ripagherò secondo le loro azioni, secondo le opere delle loro mani\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כִּ֣י כֹה֩ אָמַ֨ר יְהוָ֜ה אֱלֹהֵ֤י יִשְׂרָאֵל֙ אֵלַ֔/י קַ֠ח אֶת כּ֨וֹס הַ/יַּ֧יִן הַ/חֵמָ֛ה הַ/זֹּ֖את מִ/יָּדִ֑/י וְ/הִשְׁקִיתָ֤ה אֹת/וֹ֙ אֶת כָּל הַ/גּוֹיִ֔ם אֲשֶׁ֧ר אָנֹכִ֛י שֹׁלֵ֥חַ אוֹתְ/ךָ֖ אֲלֵי/הֶֽם׃",
+        "LXX": "Τάδε λέγει Κύριος Συνετρίβη τὸ τόξον Αἰλάμ, ἀρχὴ δυναστείας αὐτῶν.",
+        "VUL": "Quia sic dicit Dominus exercituum, Deus Israël : Sume calicem vini furoris hujus de manu mea, et propinabis de illo cunctis gentibus ad quas ego mittam te.",
+        "SYN": "Ибо так сказал мне Господь, Бог Израилев: возьми из руки Моей чашу сию с вином ярости и напой из нее все народы, к которым Я посылаю тебя.",
+        "NEO": "Car ainsi m’a parlé \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu d’Israël : Prends de ma main cette coupe du vin de ma colère et fais-la boire à toutes les nations vers lesquelles je t’en verrai.",
+        "NAB": "For thus said the LORD, the God of Israel, to me: Take this cup of foaming wine from my hand, and have all the nations to whom I will send you drink it.",
+        "VAT_ES": "Porque así me ha hablado el Señor, Dios de Israel: «Toma de mi mano esta copa de vino del furor, y dásela de beber a todas las naciones a las que yo te envío;",
+        "CEI": "Così mi disse il Signore, Dio di Israele: \"Prendi dalla mia mano questa coppa di vino della mia ira e falla bere a tutte le nazioni alle quali ti invio,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/שָׁת֕וּ וְ/הִֽתְגֹּֽעֲשׁ֖וּ וְ/הִתְהֹלָ֑לוּ מִ/פְּנֵ֣י הַ/חֶ֔רֶב אֲשֶׁ֛ר אָנֹכִ֥י שֹׁלֵ֖חַ בֵּינֹתָֽ/ם׃",
+        "LXX": "καὶ ἐπάξω ἐπὶ Αἰλὰμ τέσσαρας ἀνέμους ἐκ τῶν τεσσάρων ἄκρων τοῦ οὐρανοῦ καὶ διασπερῶ αὐτοὺς ἐν πᾶσιν τοῖς ἀνέμοις τούτοις, καὶ οὐκ ἔσται ἔθνος ὃ οὐχ ἥξει ἐκεῖ, οἱ ἐξωσμένοι Αἰλάμ.",
+        "VUL": "Et bibent, et turbabuntur et insanient a facie gladii quem ego mittam inter eos.",
+        "SYN": "И они выпьют, и будут шататься и обезумеют при виде меча, который Я пошлю на них.",
+        "NEO": "Elles en boiront, elles chancelleront, elles seront prises de folie devant l’épée que j’enverrai au milieu d’elles.",
+        "NAB": "They shall drink, and be convulsed, and go mad, because of the sword I will send among them.",
+        "VAT_ES": "ellas la beberán, se marearán y se enloquecerán, a causa de la espada que envío en medio de ellas».",
+        "CEI": "perché ne bevano, ne restino inebriate ed escano di senno dinanzi alla spada che manderò in mezzo a loro\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וָ/אֶקַּ֥ח אֶת הַ/כּ֖וֹס מִ/יַּ֣ד יְהוָ֑ה וָֽ/אַשְׁקֶה֙ אֶת כָּל הַ/גּוֹיִ֔ם אֲשֶׁר שְׁלָחַ֥/נִי יְהוָ֖ה אֲלֵי/הֶֽם׃",
+        "LXX": "καὶ πτοήσω αὐτοὺς ἐναντίον τῶν ἐχθρῶν αὐτῶν τῶν ζητούντων τὴν ψυχὴν αὐτῶν, καὶ ἐπάξω ἐπ’ αὐτοὺς κατὰ τὴν ὀργὴν τοῦ θυμοῦ μου, καὶ ἐπαποστελῶ ὀπίσω αὐτῶν τὴν μάχαιράν μου ἕως τοῦ ἐξαναλῶσαι αὐτούς.",
+        "VUL": "Et accepi calicem de manu Domini, et propinavi cunctis gentibus ad quas misit me Dominus,",
+        "SYN": "И взял я чашу из руки Господней и напоил из нее все народы, к которым послал меня Господь:",
+        "NEO": "Je pris la coupe de la main de \\+w Yahweh|strong=\"H3068\"\\+w** et je la fis boire à toutes les nations vers lesquelles \\+w Yahweh|strong=\"H3068\"\\+w** m’envoyait :",
+        "NAB": "I took the cup from the hand of the LORD and gave drink to all the nations to which the LORD sent me:",
+        "VAT_ES": "Yo tomé la copa de la mano del Señor y se la hice beber a todas las naciones a las que me había enviado el Señor :",
+        "CEI": "Presi dunque la coppa dalle mani del Signore e la diedi a bere a tutte le nazioni alle quali il Signore mi aveva inviato:"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "אֶת יְרוּשָׁלִַ֨ם֙ וְ/אֶת עָרֵ֣י יְהוּדָ֔ה וְ/אֶת מְלָכֶ֖י/הָ אֶת שָׂרֶ֑י/הָ לָ/תֵ֨ת אֹתָ֜/ם לְ/חָרְבָּ֧ה לְ/שַׁמָּ֛ה לִ/שְׁרֵקָ֥ה וְ/לִ/קְלָלָ֖ה כַּ/יּ֥וֹם הַ/זֶּֽה׃",
+        "LXX": "καὶ θήσω τὸν θρόνον μου ἐν Αἰλάμ, καὶ ἐξαποστελῶ ἐκεῖθεν βασιλέα καὶ μεγιστᾶνας,",
+        "VUL": "Jerusalem, et civitatibus Juda, et regibus ejus, et principibus ejus, ut darem eos in solitudinem, et in stuporem, et in sibilum, et in maledictionem, sicut est dies ista :",
+        "SYN": "Иерусалим и города Иудейские, и царей его и князей его, чтоб опустошить их и сделать ужасом, посмеянием и проклятием, как и видно ныне,",
+        "NEO": "à Jérusalem et aux villes de Juda, à ses rois, à ses princes, pour en faire une solitude, une désolation, un objet de moquerie et de malédiction, comme cela se voit aujourd’hui ;",
+        "NAB": "(Jerusalem, the cities of Judah, her kings and her princes, to make them a ruin and a desert, an object of ridicule and cursing, as they are today;)",
+        "VAT_ES": "a Jerusalén y a las ciudades de Judá, a sus reyes y a sus príncipes, para convertirlos en una ruina, una devastación, como sucede en el día de hoy;",
+        "CEI": "a Gerusalemme e alle città di Giuda, ai suoi re e ai suoi capi, per abbandonarli alla distruzione, alla desolazione, all'obbrobrio e alla maledizione, come avviene ancor oggi;"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "אֶת פַּרְעֹ֧ה מֶֽלֶךְ מִצְרַ֛יִם וְ/אֶת עֲבָדָ֥י/ו וְ/אֶת שָׂרָ֖י/ו וְ/אֶת כָּל עַמּֽ/וֹ׃",
+        "LXX": "καὶ ἔσται ἐπ’ ἐσχάτου τῶν ἡμερῶν καὶ ἀποστρέψω τὴν αἰχμαλωσίαν Αἰλάμ, λέγει Κύριος.",
+        "VUL": "Pharaoni regi Ægypti, et servis ejus, et principibus ejus, et omni populo ejus :",
+        "SYN": "фараона, царя Египетского, и слуг его, и князей его и весь народ его,",
+        "NEO": "à Pharaon ; roi d’Égypte, à ses serviteurs, à ses princes, à tout son peuple ;",
+        "NAB": "Pharaoh, king of Egypt, and his servants, his princes, all the people under him, native",
+        "VAT_ES": "al Faraón, rey de Egipto, a sus servidores, a sus príncipes y a todo su pueblo;",
+        "CEI": "anche al faraone re d'Egitto, ai suoi ministri, ai suoi nobili e a tutto il suo popolo;"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/אֵת֙ כָּל הָ/עֶ֔רֶב וְ/אֵ֕ת כָּל מַלְכֵ֖י אֶ֣רֶץ הָ/ע֑וּץ וְ/אֵ֗ת כָּל מַלְכֵי֙ אֶ֣רֶץ פְּלִשְׁתִּ֔ים וְ/אֶת אַשְׁקְל֤וֹן וְ/אֶת עַזָּה֙ וְ/אֶת עֶקְר֔וֹן וְ/אֵ֖ת שְׁאֵרִ֥ית אַשְׁדּֽוֹד׃",
+        "VUL": "et universis generaliter : cunctis regibus terræ Ausitidis, et cunctis regibus terræ Philisthiim, et Ascaloni, et Gazæ, et Accaron, et reliquiis Azoti :",
+        "SYN": "и весь смешанный народ, и всех царей земли Уца, и всех царей земли Филистимской, и Аскалон, и Газу, и Екрон, и остатки Азота,",
+        "NEO": "à tout le peuple mélangé ; à tous les rois du pays de Uts ; à tous les rois du pays des Philistins, à Ascalon, à Gaza, à Accaron et aux restes d’Azoth ;",
+        "NAB": "and foreign; all the kings of the land of Uz; all the kings of the land of the Philistines: Ashkelon, Gaza, Ekron, and the remnant of Ashdod;",
+        "VAT_ES": "a toda la mezcla de pueblos, a todos los reyes del país de Us; a todos los reyes del país de los filisteos: a Ascalón, Gaza, Ecrón y el resto de Asdod;",
+        "CEI": "alla gente d'ogni razza e a tutti i re del paese di Uz, a tutti i re del paese dei Filistei, ad Ascalòn, a Gaza, a Ekròn e ai superstiti di Asdòd,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "אֶת אֱד֥וֹם וְ/אֶת מוֹאָ֖ב וְ/אֶת בְּנֵ֥י עַמּֽוֹן׃",
+        "VUL": "et Idumææ, et Moab, et filiis Ammon :",
+        "SYN": "Едома, и Моава, и сыновей Аммоновых,",
+        "NEO": "à Edom, à Moab et aux fils d’Ammon ;",
+        "NAB": "Edom, Moab, and the Ammonites;",
+        "VAT_ES": "a Edom, Moab y los amonitas;",
+        "CEI": "a Edom, a Moab e agli Ammoniti,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/אֵת֙ כָּל מַלְכֵי צֹ֔ר וְ/אֵ֖ת כָּל מַלְכֵ֣י צִיד֑וֹן וְ/אֵת֙ מַלְכֵ֣י הָ/אִ֔י אֲשֶׁ֖ר בְּ/עֵ֥בֶר הַ/יָּֽם׃",
+        "VUL": "et cunctis regibus Tyri, et universis regibus Sidonis, et regibus terræ insularum qui sunt trans mare :",
+        "SYN": "и всех царей Тира, и всех царей Сидона, и царей островов, которые за морем,",
+        "NEO": "à tous les rois de Tyr, et à tous les rois de Sidon, et aux rois des îles qui sont au delà de la mer ;",
+        "NAB": "all the kings of Tyre, of Sidon, and of the shores beyond the sea;",
+        "VAT_ES": "a todos los reyes de Tiro, a todos los reyes de Sidón, a los reyes de las costas lejanas que están más allá del mar;",
+        "CEI": "a tutti i re di Tiro e a tutti i re di Sidòne e ai re dell'isola che è al di là del mare,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/אֶת דְּדָ֤ן וְ/אֶת תֵּימָא֙ וְ/אֶת בּ֔וּז וְ/אֵ֖ת כָּל קְצוּצֵ֥י פֵאָֽה׃",
+        "VUL": "et Dedan, et Thema, et Buz, et universis qui attonsi sunt in comam :",
+        "SYN": "Дедана, и Фему, и Буза, и всех, стригущих волосы на висках,",
+        "NEO": "à Dédan, à Théma, à Buz et à tous ceux qui se rasent les tempes ;",
+        "NAB": "Dedan and Tema and Buz, all the desert dwellers who shave their temples;",
+        "VAT_ES": "a Dedán, Temá y Buz; a todos los «Sienes rapadas:;",
+        "CEI": "a Dedan, a Tema, a Buz e a quanti si radono l'estremità delle tempie,"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/אֵ֖ת כָּל מַלְכֵ֣י עֲרָ֑ב וְ/אֵת֙ כָּל מַלְכֵ֣י הָ/עֶ֔רֶב הַ/שֹּׁכְנִ֖ים בַּ/מִּדְבָּֽר׃",
+        "VUL": "et cunctis regibus Arabiæ, et cunctis regibus occidentis, qui habitant in deserto :",
+        "SYN": "и всех царей Аравии, и всех царей народов разноплеменных, живущих в пустыне,",
+        "NEO": "à tous les rois d’Arabie, à tous les rois des peuples mélangés qui habitent le désert ;",
+        "NAB": "(all the kings of Arabia;)",
+        "VAT_ES": "a todos los reyes de Arabia que habitan en el desierto;",
+        "CEI": "a tutti i re degli Arabi che abitano nel deserto,"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/אֵ֣ת כָּל מַלְכֵ֣י זִמְרִ֗י וְ/אֵת֙ כָּל מַלְכֵ֣י עֵילָ֔ם וְ/אֵ֖ת כָּל מַלְכֵ֥י מָדָֽי׃",
+        "VUL": "et cunctis regibus Zambri, et cunctis regibus Elam, et cunctis regibus Medorum :",
+        "SYN": "всех царей Зимврии, и всех царей Елама, и всех царей Мидии,",
+        "NEO": "à tous les rois de Zambri, à tous les rois d’Elam, et à tous les rois de Médie ;",
+        "NAB": "all the kings of Zimri, of Elam, of the Medes;",
+        "VAT_ES": "a todos los reyes de Zimrí, a todos los reyes de Elam, a todos los reyes de Media;",
+        "CEI": "a tutti i re di Zimrì, a tutti i re dell'Elam e a tutti i re della Media,"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/אֵ֣ת כָּל מַלְכֵ֣י הַ/צָּפ֗וֹן הַ/קְּרֹבִ֤ים וְ/הָֽ/רְחֹקִים֙ אִ֣ישׁ אֶל אָחִ֔י/ו וְ/אֵת֙ כָּל הַ/מַּמְלְכ֣וֹת הָ/אָ֔רֶץ אֲשֶׁ֖ר עַל פְּנֵ֣י הָ/אֲדָמָ֑ה וּ/מֶ֥לֶךְ שֵׁשַׁ֖ךְ יִשְׁתֶּ֥ה אַחֲרֵי/הֶֽם׃",
+        "VUL": "cunctis quoque regibus aquilonis, de prope et de longe, unicuique contra fratrem suum : et omnibus regnis terræ quæ super faciem ejus sunt : et rex Sesach bibet post eos.",
+        "SYN": "и всех царей севера, близких друг к другу и дальних, и все царства земные, которые на лице земли, а царь Сесаха выпьет после них.",
+        "NEO": "à tous les rois du septentrion, proches ou éloignés, à l’un comme à l’autre, et à tous les royaumes du monde qui sont sur la face de la terre ; et le roi de Sésac boira après eux.",
+        "NAB": "all the kings of the north, near and far, one after the other; all the kingdoms upon the face of the earth (and after them the king of Sheshach shall drink).",
+        "VAT_ES": "a todos los reyes del Norte, próximos y lejanos, uno después del otro: o sea, a todos los reyes de la tierra que están sobre la superficie del suelo. Y el rey de Sesac beberá después de ellos.",
+        "CEI": "a tutti i re del settentrione, vicini e lontani, agli uni e agli altri e a tutti i regni che sono sulla terra; il re di Sesàch berrà dopo di essi."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/אָמַרְתָּ֣ אֲלֵי/הֶ֡ם כֹּֽה אָמַר֩ יְהוָ֨ה צְבָא֜וֹת אֱלֹהֵ֣י יִשְׂרָאֵ֗ל שְׁת֤וּ וְ/שִׁכְרוּ֙ וּ/קְי֔וּ וְ/נִפְל֖וּ וְ/לֹ֣א תָק֑וּמוּ מִ/פְּנֵ֣י הַ/חֶ֔רֶב אֲשֶׁ֛ר אָנֹכִ֥י שֹׁלֵ֖חַ בֵּינֵי/כֶֽם׃",
+        "VUL": "Et dices ad eos : Hæc dicit Dominus exercituum, Deus Israël : Bibite, et inebriamini, et vomite : et cadite, neque surgatis a facie gladii quem ego mittam inter vos.",
+        "SYN": "И скажи им: так говорит Господь Саваоф, Бог Израилев: пейте и опьянейте, и изрыгните и падите, и не вставайте при виде меча, который Я пошлю на вас.",
+        "NEO": "Tu leur diras : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** des armées, Dieu d’Israël : Buvez, enivrez-vous, vomissez et tombez pour ne plus vous relever, devant l’épée que j’envoie au milieu de vous.",
+        "NAB": "Tell them: Thus says the LORD of hosts, the God of Israel: Drink! become drunk and vomit; fall, never to rise, before the sword that I will send among you!",
+        "VAT_ES": "Tú les dirás: Así habla el Señor de los ejércitos, el Dios de Israel: &iexcl;Beban hasta embriagarse, vomiten y caigan para no levantarse más, delante de la espada que yo envío en medio de ustedes!",
+        "CEI": "\"Tu riferirai loro: Dice il Signore degli eserciti, Dio di Israele: Bevete e inebriatevi, vomitate e cadete senza rialzarvi davanti alla spada che io mando in mezzo a voi."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה כִּ֧י יְמָאֲנ֛וּ לָ/קַֽחַת הַ/כּ֥וֹס מִ/יָּדְ/ךָ֖ לִ/שְׁתּ֑וֹת וְ/אָמַרְתָּ֣ אֲלֵי/הֶ֗ם כֹּ֥ה אָמַ֛ר יְהוָ֥ה צְבָא֖וֹת שָׁת֥וֹ תִשְׁתּֽוּ׃",
+        "VUL": "Cumque noluerint accipere calicem de manu tua ut bibant, dices ad eos : Hæc dicit Dominus exercituum : Bibentes bibetis :",
+        "SYN": "Если же они будут отказываться брать чашу из руки твоей, чтобы пить, то скажи им: так говорит Господь Саваоф: вы непременно будете пить.",
+        "NEO": "Et s’ils refusent de prendre de ta main la coupe pour boire, tu leur diras : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Vous boirez !",
+        "NAB": "If they refuse to take the cup from your hand and drink, say to them: Thus says the LORD of hosts: You must drink!",
+        "VAT_ES": "Y si ellos se niegan a tomar de tu mano la copa para beber, tú les dirás: Así habla el Señor de los ejércitos: &iexcl;Tendrán que beber!",
+        "CEI": "Se poi rifiuteranno di prendere dalla tua mano il calice da bere, tu dirai loro: Dice il Signore degli eserciti: Certamente berrete!"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "כִּי֩ הִנֵּ֨ה בָ/עִ֜יר אֲשֶׁ֧ר נִֽקְרָא שְׁמִ֣/י עָלֶ֗י/הָ אָֽנֹכִי֙ מֵחֵ֣ל לְ/הָרַ֔ע וְ/אַתֶּ֖ם הִנָּקֵ֣ה תִנָּק֑וּ לֹ֣א תִנָּק֔וּ כִּ֣י חֶ֗רֶב אֲנִ֤י קֹרֵא֙ עַל כָּל יֹשְׁבֵ֣י הָ/אָ֔רֶץ נְאֻ֖ם יְהוָ֥ה צְבָאֽוֹת׃",
+        "VUL": "quia ecce in civitate in qua invocatum est nomen meum ego incipiam affligere, et vos quasi innocentes et immunes eritis ? non eritis immunes : gladium enim ego voco super omnes habitatores terræ, dicit Dominus exercituum.",
+        "SYN": "Ибо вот на город сей, на котором наречено имя Мое, Я начинаю наводить бедствие; и вы ли останетесь ненаказанными? Нет, не останетесь ненаказанными; ибо Я призываю меч на всех живущих на земле, говорит Господь Саваоф.",
+        "NEO": "Car voici : c’est dans la ville sur laquelle mon nom est invoqué que je commence à faire venir le mal ; et vous, vous seriez impunis ? Vous ne serez pas impunis, car j’appelle l’épée sur tous les habitants de la terre, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "For since with this city, which is called by my name, I begin to inflict evil, how can you possibly be spared? You shall not be spared! I will call down the sword upon all who inhabit the earth, says the LORD of hosts.",
+        "VAT_ES": "Porque si yo inflijo un castigo, comenzando por la ciudad que es llamada con mi Nombre, ustedes, &iquest;van a quedar impunes? No, no quedarán impunes, porque yo llamo a la espada contra todos los habitantes de la tierra –oráculo del Señor de los ejércitos–.",
+        "CEI": "Se io comincio a castigare proprio la città che porta il mio nome, pretendete voi di rimanere impuniti? No, impuniti non resterete, perché io chiamerò la spada su tutti gli abitanti della terra. Oracolo del Signore degli eserciti."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/אַתָּה֙ תִּנָּבֵ֣א אֲלֵי/הֶ֔ם אֵ֥ת כָּל הַ/דְּבָרִ֖ים הָ/אֵ֑לֶּה וְ/אָמַרְתָּ֣ אֲלֵי/הֶ֗ם יְהוָ֞ה מִ/מָּר֤וֹם יִשְׁאָג֙ וּ/מִ/מְּע֤וֹן קָדְשׁ/וֹ֙ יִתֵּ֣ן קוֹל֔/וֹ שָׁאֹ֤ג יִשְׁאַג֙ עַל נָוֵ֔/הוּ הֵידָד֙ כְּ/דֹרְכִ֣ים יַֽעֲנֶ֔ה אֶ֥ל כָּל יֹשְׁבֵ֖י הָ/אָֽרֶץ׃",
+        "VUL": "Et tu prophetabis ad eos omnia verba hæc, et dices ad illos : [Dominus de excelso rugiet,/ et de habitaculo sancto suo dabit vocem suam :/ rugiens rugiet super decorem suum :/ celeuma quasi calcantium concinetur/ adversus omnes habitatores terræ./",
+        "SYN": "Посему прореки на них все слова сии и скажи им: Господь возгремит с высоты и из жилища святыни Своей подаст глас Свой; страшно возгремит на селение Свое; как топчущие в точиле, воскликнет на всех живущих на земле.",
+        "NEO": "Et toi, tu leur prophétiseras toutes ces choses, et tu leur diras : \\+w Yahweh|strong=\"H3068\"\\+w** rugit du haut du ciel ; de sa demeure sainte il fait retentir sa voix ; il rugit violemment contre son domaine ; il pousse le cri des vendangeurs, contre tous les habitants de la terre.",
+        "NAB": "Prophesy against them all these things and say to them: The LORD roars from on high, from his holy dwelling he raises his voice; Mightily he roars over the range, a shout like that of vintagers over the grapes.",
+        "VAT_ES": "En cuanto a ti, profetiza contra ellos todas estas palabras. Tú les dirás: El Señor ruge desde lo alto, desde su santa morada alza su voz; ruge con furia contra su redil, lanza un grito como los que pisan la uva contra todos los habitantes de la tierra.",
+        "CEI": "Tu preannunzierai tutte queste cose e dirai loro: Il Signore ruggisce dall'alto, dalla sua santa dimora fa udire il suo tuono; alza il suo ruggito contro la prateria, manda grida di giubilo come i pigiatori delle uve, contro tutti gli abitanti del paese."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "בָּ֤א שָׁאוֹן֙ עַד קְצֵ֣ה הָ/אָ֔רֶץ כִּ֣י רִ֤יב לַֽ/יהוָה֙ בַּ/גּוֹיִ֔ם נִשְׁפָּ֥ט ה֖וּא לְ/כָל בָּשָׂ֑ר הָ/רְשָׁעִ֛ים נְתָנָ֥/ם לַ/חֶ֖רֶב נְאֻם יְהוָֽה׃",
+        "VUL": "Pervenit sonitus usque ad extrema terræ,/ quia judicium Domino cum gentibus :/ judicatur ipse cum omni carne./ Impios tradidi gladio, dicit Dominus./",
+        "SYN": "Шум дойдет до концов земли, ибо у Господа состязание с народами: Он будет судиться со всякою плотью, нечестивых Он предаст мечу, говорит Господь.",
+        "NEO": "Le bruit en est arrivé jusqu’au bout de la terre ; car \\+w Yahweh|strong=\"H3068\"\\+w** fait le procès à toutes les nations, il entre en jugement avec toute chair ; il livre les méchants au glaive, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "To all who inhabit the earth to its very ends the uproar spreads; For the LORD has an indictment against the nations, he is to pass judgment upon all mankind: The godless shall be given to the sword, says the LORD.",
+        "VAT_ES": "Llega el estruendo hasta el confín de la tierra, porque el Señor está en pleito con las naciones, entabla juicio a todo ser viviente, y a los malvados los entrega a la espada –oráculo del Señor–.",
+        "CEI": "Il rumore giunge fino all'estremità della terra, perché il Signore viene a giudizio con le nazioni; egli istruisce il giudizio riguardo a ogni uomo, abbandona gli empi alla spada. Parola del Signore."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "כֹּ֤ה אָמַר֙ יְהוָ֣ה צְבָא֔וֹת הִנֵּ֥ה רָעָ֛ה יֹצֵ֖את מִ/גּ֣וֹי אֶל גּ֑וֹי וְ/סַ֣עַר גָּד֔וֹל יֵע֖וֹר מִ/יַּרְכְּתֵי אָֽרֶץ׃",
+        "VUL": "Hæc dicit Dominus exercituum :/ Ecce afflictio egredietur de gente in gentem,/ et turbo magnus egredietur a summitatibus terræ./",
+        "SYN": "Так говорит Господь Саваоф: вот, бедствие пойдет от народа к народу, и большой вихрь поднимется от краев земли.",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** des armées : Voici que le malheur passe de nation en nation ; une grande tempête s’élève des extrémités de la terre.",
+        "NAB": "Thus says the LORD of hosts: Lo! calamity stalks from nation to nation; A great storm is unleashed from the ends of the earth.",
+        "VAT_ES": "Así habla el Señor de los ejércitos: Miren cómo pasa la desgracia de nación en nación; se desata una gran tempestad desde los extremos de la tierra.",
+        "CEI": "Dice il Signore degli eserciti: Ecco, la sventura passa di nazione in nazione, un grande turbine si alza dall'estremità della terra."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/הָי֞וּ חַֽלְלֵ֤י יְהוָה֙ בַּ/יּ֣וֹם הַ/ה֔וּא מִ/קְצֵ֥ה הָ/אָ֖רֶץ וְ/עַד קְצֵ֣ה הָ/אָ֑רֶץ לֹ֣א יִסָּפְד֗וּ וְ/לֹ֤א יֵאָֽסְפוּ֙ וְ/לֹ֣א יִקָּבֵ֔רוּ לְ/דֹ֛מֶן עַל פְּנֵ֥י הָ/אֲדָמָ֖ה יִֽהְיֽוּ׃",
+        "VUL": "Et erunt interfecti Domini in die illa,/ a summo terræ usque ad summum ejus :/ non plangentur, et non colligentur, neque sepelientur :/ in sterquilinium super faciem terræ jacebunt./",
+        "SYN": "И будут пораженные Господом в тот день от конца земли до конца земли, не будут оплаканы и не будут прибраны и похоронены, навозом будут на лице земли.",
+        "NEO": "Et il y aura des tués de \\+w Yahweh|strong=\"H3068\"\\+w**, en ce jour-là, d’un bout de la terre à l’autre ; ils ne seront ni pleurés, ni ramassés, ni enterrés ; ils seront comme du fumier sur le sol.",
+        "NAB": "On that day, those whom the LORD has slain will be strewn from one end of the earth to the other. None will mourn them, none will gather them for burial; they shall lie like dung on the field.",
+        "VAT_ES": "Habrá víctimas del Señor, en aquel día, desde un extremo a otro de la tierra; no serán lloradas ni recogidas ni enterradas: se convertirán en estiércol sobre la superficie del suelo.",
+        "CEI": "In quel giorno i colpiti dal Signore si troveranno da un'estremità all'altra della terra; non saranno pianti né raccolti né sepolti, ma saranno come letame sul suolo."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "הֵילִ֨ילוּ הָ/רֹעִ֜ים וְ/זַעֲק֗וּ וְ/הִֽתְפַּלְּשׁוּ֙ אַדִּירֵ֣י הַ/צֹּ֔אן כִּֽי מָלְא֥וּ יְמֵי/כֶ֖ם לִ/טְב֑וֹחַ וּ/תְפוֹצ֣וֹתִי/כֶ֔ם וּ/נְפַלְתֶּ֖ם כִּ/כְלִ֥י חֶמְדָּֽה׃",
+        "VUL": "Ululate, pastores, et clamate,/ et aspergite vos cinere, optimates gregis :/ quia completi sunt dies vestri ut interficiamini,/ et dissipationes vestræ :/ et cadetis quasi vasa pretiosa./",
+        "SYN": "Рыдайте, пастыри, и стенайте, и посыпайте себя прахом, вожди стада; ибо исполнились дни ваши для заклания и рассеяния вашего, и падете, как дорогой сосуд.",
+        "NEO": "Hurlez, pasteurs, et criez ; roulez-vous dans la poussière, chefs du troupeau, car vos jours sont accomplis pour le massacre ; je vous disperserai et vous tomberez comme des vases de prix.",
+        "NAB": "Howl, you shepherds, and wail! roll in the dust, leaders of the flock! The time for your slaughter has come; like choice rams you shall fall.",
+        "VAT_ES": "&iexcl;Giman, pastores y griten, revuélquense en el polvo, encargados del rebaño! Porque les ha llegado el día de la matanza y caerán como carneros escogidos.",
+        "CEI": "Urlate, pastori, gridate, rotolatevi nella polvere, capi del gregge! Perché sono compiuti i giorni per il vostro macello; stramazzerete come scelti montoni."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וְ/אָבַ֥ד מָנ֖וֹס מִן הָֽ/רֹעִ֑ים וּ/פְלֵיטָ֖ה מֵ/אַדִּירֵ֥י הַ/צֹּֽאן׃",
+        "VUL": "Et peribit fuga a pastoribus,/ et salvatio ab optimatibus gregis./",
+        "SYN": "И не будет убежища пастырям и спасения вождям стада.",
+        "NEO": "Plus de retraite pour les pasteurs, plus de refuge pour les chefs du troupeau !",
+        "NAB": "There is no flight for the shepherds, no escape for the leaders of the flock.",
+        "VAT_ES": "&iexcl;No hay asilo para los pastores, no escaparán los encargados del rebaño!",
+        "CEI": "Non ci sarà rifugio per i pastori né scampo per i capi del gregge."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "ק֚וֹל צַעֲקַ֣ת הָֽ/רֹעִ֔ים וִֽ/ילְלַ֖ת אַדִּירֵ֣י הַ/צֹּ֑אן כִּֽי שֹׁדֵ֥ד יְהוָ֖ה אֶת מַרְעִיתָֽ/ם׃",
+        "VUL": "Vox clamoris pastorum, et ululatus optimatum gregis,/ quia vastavit Dominus pascua eorum :/",
+        "SYN": "Слышен вопль пастырей и рыдание вождей стада, ибо опустошил Господь пажить их.",
+        "NEO": "On entend les cris des pasteurs, et les hurlements des chefs du troupeau, car \\+w Yahweh|strong=\"H3068\"\\+w** ravage leur pâturage.",
+        "NAB": "Listen! Wailing from the shepherds, howling by the leaders of the flock! For the LORD lays waste their grazing place,",
+        "VAT_ES": "&iexcl;Escuchen el clamor de los pastores, el gemido de los encargados del rebaño, porque el Señor devasta sus pastizales,",
+        "CEI": "Sentite le grida dei pastori, gli urli delle guide del gregge, perché il Signore distrugge il loro pascolo;"
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וְ/נָדַ֖מּוּ נְא֣וֹת הַ/שָּׁל֑וֹם מִ/פְּנֵ֖י חֲר֥וֹן אַף יְהוָֽה׃",
+        "VUL": "et conticuerunt arva pacis a facie iræ furoris Domini./",
+        "SYN": "Истребляются мирные селения от ярости гнева Господня.",
+        "NEO": "Les campagnes paisibles sont dévastées par la fureur de la colère de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "desolate lie the peaceful pastures;",
+        "VAT_ES": "sus prósperas praderas son destruidas, ante el ardor de la ira del Señor!",
+        "CEI": "sono devastati i prati tranquilli a causa dell'ardente ira del Signore."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "עָזַ֥ב כַּ/כְּפִ֖יר סֻכּ֑/וֹ כִּֽי הָיְתָ֤ה אַרְצָ/ם֙ לְ/שַׁמָּ֔ה מִ/פְּנֵי֙ חֲר֣וֹן הַ/יּוֹנָ֔ה וּ/מִ/פְּנֵ֖י חֲר֥וֹן אַפּֽ/וֹ׃",
+        "VUL": "Dereliquit quasi leo umbraculum suum,/ quia facta est terra eorum in desolationem/ a facie iræ columbæ,/ et a facie iræ furoris Domini.]",
+        "SYN": "Он оставил жилище Свое, как лев; и земля их сделалась пустынею от ярости опустошителя и от пламенного гнева Его.",
+        "NEO": "Il quitte sa retraite, comme le lion son fourré ; leur pays va être changé en désert devant la fureur du destructeur, devant la colère de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The lion leaves his lair, and their land is made desolate By the sweeping sword, by the burning wrath of the LORD.",
+        "VAT_ES": "Un cachorro de león abandona su guarida: sí, el país es una devastación, a causa de la espada arrasadora, a causa del ardor de su ira.",
+        "CEI": "Il leone abbandona la sua tana, poiché il loro paese è una desolazione a causa della spada devastatrice e a causa della sua ira ardente\"."
+      }
+    }
+  }
+}

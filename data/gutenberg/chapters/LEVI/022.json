@@ -1,0 +1,609 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LEVI_022",
+  "book_key": "LEVI",
+  "sequence": 22,
+  "chapter_in": {
+    "MT": 22,
+    "VUL": 22,
+    "LXX": 22
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutus quoque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse ancora a Mosè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "דַּבֵּ֨ר אֶֽל אַהֲרֹ֜ן וְ/אֶל בָּנָ֗י/ו וְ/יִנָּֽזְרוּ֙ מִ/קָּדְשֵׁ֣י בְנֵֽי יִשְׂרָאֵ֔ל וְ/לֹ֥א יְחַלְּל֖וּ אֶת שֵׁ֣ם קָדְשִׁ֑/י אֲשֶׁ֨ר הֵ֧ם מַקְדִּשִׁ֛ים לִ֖/י אֲנִ֥י יְהוָֽה׃",
+        "LXX": "Εἰπὸν Ἀαρὼν καὶ τοῖς υἱοῖς αὐτοῦ, καὶ προσεχέτωσαν ἀπὸ τῶν ἁγίων τῶν υἱῶν Ἰσραήλ, καὶ οὐ βεβηλώσουσιν τὸ ὄνομα τὸ ἅγιόν μου, ὅσα αὐτοὶ ἁγιάζουσίν μοι· ἐγὼ Κύριος.",
+        "VUL": "Loquere ad Aaron et ad filios ejus, ut caveant ab his quæ consecrata sunt filiorum Israël, et non contaminent nomen sanctificatorum mihi, quæ ipsi offerunt. Ego Dominus.",
+        "SYN": "скажи Аарону и сынам его, чтоб они осторожно поступали со святынями сынов Израилевых и не бесчестили святаго имени Моего в том, что они посвящают Мне. Я Господь.",
+        "NEO": "« Parle à Aaron et à ses fils, afin qu’ils s’abstiennent des choses saintes que me consacrent les enfants d’Israël, et qu’ils ne profanent pas mon saint nom. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "\"Tell Aaron and his sons to respect the sacred offerings which the Israelites consecrate to me; else they will profane my holy name. I am the LORD.",
+        "VAT_ES": "Instruye a Aarón y a sus hijos, para que tengan mucho cuidado con los dones sagrados que me consagran los israelitas, no sea que profanen mi santo Nombre. Yo soy el Señor.",
+        "CEI": "\"Ordina ad Aronne e ai suoi figli che si astengano dalle cose sante a me consacrate dagli Israeliti e non profanino il mio santo nome. Io sono il Signore."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אֱמֹ֣ר אֲלֵ/הֶ֗ם לְ/דֹרֹ֨תֵי/כֶ֜ם כָּל אִ֣ישׁ אֲשֶׁר יִקְרַ֣ב מִ/כָּל זַרְעֲ/כֶ֗ם אֶל הַ/קֳּדָשִׁים֙ אֲשֶׁ֨ר יַקְדִּ֤ישׁוּ בְנֵֽי יִשְׂרָאֵל֙ לַֽ/יהוָ֔ה וְ/טֻמְאָת֖/וֹ עָלָ֑י/ו וְ/נִכְרְתָ֞ה הַ/נֶּ֧פֶשׁ הַ/הִ֛וא מִ/לְּ/פָנַ֖/י אֲנִ֥י יְהוָֽה׃",
+        "LXX": "εἰπὸν αὐτοῖς Εἰς τὰς γενεὰς ὑμῶν πᾶς ἄνθρωπος ὃς ἂν προσέλθῃ ἀπὸ τοῦ σπέρματος ὑμῶν πρὸς τὰ ἅγια ὅσα ἂν ἁγιάζωσιν οἱ υἱοὶ Ἰσραὴλ τῷ κυρίῳ, καὶ ἡ ἀκαθαρσία αὐτοῦ ἐπ’ αὐτῷ ᾖ, ἐξολεθρευθήσεται ἡ ψυχὴ ἐκείνη ἀπ’ ἐμοῦ· ἐγὼ Κύριος ὁ θεὸς ὑμῶν.",
+        "VUL": "Dic ad eos, et ad posteros eorum : Omnis homo qui accesserit de stirpe vestra ad ea quæ consecrata sunt, et quæ obtulerunt filii Israël Domino, in quo est immunditia, peribit coram Domino. Ego sum Dominus.",
+        "SYN": "Скажи им: если кто из всего потомства вашего в роды ваши, имея на себе нечистоту, приступит к святыням, которые посвящают сыны Израилевы Господу, то истребится душа та от лица Моего. Я Господь [Бог ваш].",
+        "NEO": "Dis-leur :",
+        "NAB": "\"Tell them: If any one of you, or of your descendants in any future generation, dares, while he is in a state of uncleanness, to draw near the sacred offerings which the Israelites consecrate to the LORD, such a one shall be cut off from my presence. I am the LORD.",
+        "VAT_ES": "Por eso, diles lo siguiente: Si alguno de sus descendientes, en cualquier generación, participa en estado de impureza de los dones sagrados que los israelitas consagran al Señor, será excluido de mi presencia. Yo soy el Señor.",
+        "CEI": "Ordina loro: Qualunque uomo della vostra discendenza che nelle generazioni future si accosterà, in stato d'immondezza, alle cose sante consacrate dagli Israeliti al Signore, sarà eliminato davanti a me. Io sono il Signore."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אִ֣ישׁ אִ֞ישׁ מִ/זֶּ֣רַע אַהֲרֹ֗ן וְ/ה֤וּא צָר֨וּעַ֙ א֣וֹ זָ֔ב בַּ/קֳּדָשִׁים֙ לֹ֣א יֹאכַ֔ל עַ֖ד אֲשֶׁ֣ר יִטְהָ֑ר וְ/הַ/נֹּגֵ֨עַ֙ בְּ/כָל טְמֵא נֶ֔פֶשׁ א֣וֹ אִ֔ישׁ אֲשֶׁר תֵּצֵ֥א מִמֶּ֖/נּוּ שִׁכְבַת זָֽרַע׃",
+        "LXX": "καὶ ἄνθρωπος ἐκ τοῦ σπέρματος Ἀαρὼν τοῦ ἱερέως, καὶ οὗτος λεπρᾷ ἢ γονορρυής, τῶν ἁγίων οὐκ ἔδεται ἕως ἂν καθαρισθῇ· καὶ ὁ ἁπτόμενος πάσης ἀκαθαρσίας ψυχῆς, ἢ ἄνθρωπος ᾧ ἂν ἐξέλθῃ ἐξ αὐτοῦ κοίτη σπέρματος,",
+        "VUL": "Homo de semine Aaron, qui fuerit leprosus, aut patiens fluxum seminis, non vescetur de his quæ sanctificata sunt mihi, donec sanetur. Qui tetigerit immundum super mortuo, et ex quo egreditur semen quasi coitus,",
+        "SYN": "Кто из семени Ааронова прокажен, или имеет истечение, тот не должен есть святынь, пока не очистится; и кто прикоснется к чему-- нибудь нечистому от мертвого, или у кого случится излияние семени,",
+        "NEO": "Tout homme de la race d’Aaron qui aura la lèpre ou une gonorrhée, ne mangera pas des choses saintes, jusqu’à ce qu’il soit pur. Il en sera de même de celui qui aura touché une personne souillée par le contact d’un cadavre, de celui qui aura eu un épanchement séminal,",
+        "NAB": "\"No descendant of Aaron who is stricken with leprosy, or who suffers from a flow, may eat of these sacred offerings, unless he again becomes clean. Moreover, if anyone touches a person who has become unclean by contact with a corpse, or if anyone has had an emission of seed,",
+        "VAT_ES": "Ningún descendiente de Aarón que sea leproso o padezca de blenorrea, podrá comer de los dones sagrados hasta que quede purificado. Si alguien toca lo que se ha vuelto impuro a causa de un cadáver, o si tiene una eyaculación,",
+        "CEI": "Nessun uomo della stirpe di Aronne, affetto da lebbra o da gonorrea, potrà mangiare le cose sante, finché non sia mondo. Così sarà di chi abbia toccato qualunque persona immonda per contatto con un cadavere o abbia avuto una emissione seminale"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אוֹ אִישׁ֙ אֲשֶׁ֣ר יִגַּ֔ע בְּ/כָל שֶׁ֖רֶץ אֲשֶׁ֣ר יִטְמָא ל֑/וֹ א֤וֹ בְ/אָדָם֙ אֲשֶׁ֣ר יִטְמָא ל֔/וֹ לְ/כֹ֖ל טֻמְאָתֽ/וֹ׃",
+        "LXX": "ὅστις ἂν ἅψηται παντὸς ἑρπετοῦ ἀκαθάρτου ὃ μιανεῖ αὐτόν, ἢ ἐπ’ ἀνθρώπῳ ἐν ᾧ μιανεῖ αὐτὸν κατὰ πᾶσαν ἀκαθαρσίαν αὐτοῦ,",
+        "VUL": "et qui tangit reptile, et quodlibet immundum cujus tactus est sordidus,",
+        "SYN": "или кто прикоснется к какому-нибудь гаду, от которого он сделается нечист, или к человеку, от которого он сделается нечист какою бы то ни было нечистотою, --",
+        "NEO": "de celui qui aura touché soit un animal rampant qui l’ait rendu impur, soit un homme impur qui lui ait communiqué sa souillure quelle qu’elle soit.",
+        "NAB": "or if anyone touches any swarming creature or any man whose uncleanness, of whatever kind it may be, is contagious,",
+        "VAT_ES": "o si toca algún animal o algún ser humano que lo hace impuro –cualquiera sea la clase de impureza–",
+        "CEI": "o di chi abbia toccato qualsiasi rettile da cui abbia contratto immondezza oppure un uomo che gli abbia comunicato un'immondezza di qualunque specie."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "נֶ֚פֶשׁ אֲשֶׁ֣ר תִּגַּע בּ֔/וֹ וְ/טָמְאָ֖ה עַד הָ/עָ֑רֶב וְ/לֹ֤א יֹאכַל֙ מִן הַ/קֳּדָשִׁ֔ים כִּ֛י אִם רָחַ֥ץ בְּשָׂר֖/וֹ בַּ/מָּֽיִם׃",
+        "LXX": "ψυχὴ ἥτις ἂν ἅψηται αὐτῶν ἀκάθαρτος ἔσται ἕως ἑσπέρας· οὐκ ἔδεται ἀπὸ τῶν ἁγίων, ἐὰν μὴ λούσηται τὸ σῶμα αὐτοῦ ὕδατι",
+        "VUL": "immundus erit usque ad vesperum, et non vescetur his quæ sanctificata sunt : sed cum laverit carnem suam aqua,",
+        "SYN": "тот, прикоснувшийся к сему, нечист будет до вечера и не должен есть святынь, прежде нежели омоет тело свое водою;",
+        "NEO": "Celui qui touchera ces choses sera impur jusqu’au soir et il ne mangera pas des choses saintes ; mais il baignera son corps dans l’eau",
+        "NAB": "the one who touches such as these shall be unclean until evening and may not eat of the sacred portions until he has first bathed his body in water,",
+        "VAT_ES": "si alguien toca algo de eso, será impuro hasta la tarde y no comerá de las cosas sagradas sin lavarse antes con agua.",
+        "CEI": "La persona che abbia avuto tali contatti sarà immonda fino alla sera e non mangerà le cose sante prima di essersi lavato il corpo nell'acqua;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וּ/בָ֥א הַ/שֶּׁ֖מֶשׁ וְ/טָהֵ֑ר וְ/אַחַר֙ יֹאכַ֣ל מִן הַ/קֳּדָשִׁ֔ים כִּ֥י לַחְמ֖/וֹ הֽוּא׃",
+        "LXX": "καὶ δύῃ ὁ ἥλιος, καὶ καθαρὸς ἔσται· καὶ τότε φάγεται τῶν ἁγίων, ὅτι ἄρτος ἐστὶν αὐτοῦ.",
+        "VUL": "et occubuerit sol, tunc mundatus vescetur de sanctificatis, quia cibus illius est.",
+        "SYN": "но когда зайдет солнце и он очистится, тогда может он есть святыни, ибо это его пища.",
+        "NEO": "et, après le coucher du soleil, il sera pur ; il pourra manger alors des choses saintes, car c’est sa nourriture.",
+        "NAB": "then, when the sun sets, he again becomes clean. Only then may he eat of the sacred offerings, which are his food.",
+        "VAT_ES": "Al ponerse el sol quedará puro, y entonces podrá comer de las cosas sagradas, porque son su alimento.",
+        "CEI": "dopo il tramonto del sole sarà monda e allora potrà mangiare le cose sante, perché esse sono il suo vitto."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "נְבֵלָ֧ה וּ/טְרֵפָ֛ה לֹ֥א יֹאכַ֖ל לְ/טָמְאָה בָ֑/הּ אֲנִ֖י יְהוָֽה׃",
+        "LXX": "θνησιμαῖον καὶ θηριάλωτον οὐ φάγεται, μιανθῆναι αὐτὸν ἐν αὐτοῖς· ἐγὼ Κύριος.",
+        "VUL": "Morticinum et captum a bestia non comedent, nec polluentur in eis. Ego sum Dominus.",
+        "SYN": "Мертвечины и звероядины он не должен есть, чтобы не оскверниться этим. Я Господь.",
+        "NEO": "Il ne mangera pas d’une bête morte ou déchirée, de manière à être souillé par elle ; je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "He shall not make himself unclean by eating of any animal that has died of itself or has been killed by wild beasts. I am the LORD.",
+        "VAT_ES": "No comerá ningún animal muerto o despedazado por las fieras, porque de lo contrario incurriría en impureza. Yo soy el Señor.",
+        "CEI": "Il sacerdote non mangerà carne di bestia morta naturalmente o sbranata, per non rendersi immondo. Io sono il Signore."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/שָׁמְר֣וּ אֶת מִשְׁמַרְתִּ֗/י וְ/לֹֽא יִשְׂא֤וּ עָלָי/ו֙ חֵ֔טְא וּ/מֵ֥תוּ ב֖/וֹ כִּ֣י יְחַלְּלֻ֑/הוּ אֲנִ֥י יְהוָ֖ה מְקַדְּשָֽׁ/ם׃",
+        "LXX": "καὶ φυλάξονται τὰ φυλάγματά μου, ἵνα μὴ λάβωσιν δι’ αὐτὰ ἁμαρτίαν, καὶ ἀποθάνωσιν δι’ αὐτό· ἐὰν δὲ βεβηλώσουσιν αὐτά, ἐγὼ Κύριος ὁ θεὸς ὁ ἁγιάζων αὐτούς.",
+        "VUL": "Custodiant præcepta mea, ut non subjaceant peccato, et moriantur in sanctuario, cum polluerint illud. Ego Dominus qui sanctifico eos.",
+        "SYN": "Да соблюдают они повеления Мои, чтобы не понести на себе греха и не умереть в нем, когда нарушат сие. Я Господь [Бог], освящающий их.",
+        "NEO": "Ils observeront mes commandements, de peur qu’ils ne se chargent d’un péché à ce sujet, et qu’ils ne meurent pour avoir profané les choses saintes. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, qui les sanctifie.",
+        "NAB": "\"They shall keep my charge and not do wrong in this matter; else they will die for their profanation. I am the LORD who have consecrated them.",
+        "VAT_ES": "Que observen mis prescripciones, no sea que carguen con un pecado a causa del alimento, y mueran por haberlo profanado. Yo soy el Señor, que los santifico.",
+        "CEI": "Osserveranno dunque ciò che ho comandato, altrimenti porteranno la pena del loro peccato e moriranno per aver profanato le cose sante. Io sono il Signore che li santifico."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/כָל זָ֖ר לֹא יֹ֣אכַל קֹ֑דֶשׁ תּוֹשַׁ֥ב כֹּהֵ֛ן וְ/שָׂכִ֖יר לֹא יֹ֥אכַל קֹֽדֶשׁ׃",
+        "LXX": "Καὶ πᾶς ἀλλογενὴς οὐ φάγεται ἅγια· πάροικος ἱερέως ἢ μισθωτὸς οὐ φάγεται ἅγια.",
+        "VUL": "Omnis alienigena non comedet de sanctificatis ; inquilinus sacerdotis et mercenarius non vescentur ex eis.",
+        "SYN": "Никто посторонний не должен есть святыни; поселившийся у священника и наемник не должен есть святыни;",
+        "NEO": "Aucun étranger ne mangera des choses saintes ; celui qui demeure chez un prêtre et le mercenaire ne mangeront pas des choses saintes.",
+        "NAB": "\"Neither a lay person nor a priest's tenant or hired servant may eat of any sacred offering.",
+        "VAT_ES": "Ningún extraño podrá comer de las cosas sagradas, ni tampoco lo harán el huésped o el jornalero de un sacerdote.",
+        "CEI": "Nessun estraneo mangerà le cose sante: né l'ospite di un sacerdote o il salariato potrà mangiare le cose sante."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/כֹהֵ֗ן כִּֽי יִקְנֶ֥ה נֶ֨פֶשׁ֙ קִנְיַ֣ן כַּסְפּ֔/וֹ ה֖וּא יֹ֣אכַל בּ֑/וֹ וִ/ילִ֣יד בֵּית֔/וֹ הֵ֖ם יֹאכְל֥וּ בְ/לַחְמֽ/וֹ׃",
+        "LXX": "ἐὰν δὲ ἱερεὺς κτήσηται ψυχὴν ἔνκτητον ἀργυρίου, οὗτος φάγεται ἐκ τῶν ἄρτων αὐτοῦ· καὶ οἰκογενεῖς αὐτοῦ, καὶ οὗτοι φάγονται τῶν ἄρτων αὐτοῦ.",
+        "VUL": "Quem autem sacerdos emerit, et qui vernaculus domus ejus fuerit, hi comedent ex eis.",
+        "SYN": "если же священник купит себе человека за серебро, то сей может есть оную; также и домочадцы его могут есть хлеб его.",
+        "NEO": "Mais un esclave acquis par le prêtre à prix d’argent pourra en manger ; il en est de même de celui qui est né dans sa maison : ils mangeront de sa nourriture.",
+        "NAB": "But a slave whom a priest acquires by purchase or who is born in his house may eat of his food.",
+        "VAT_ES": "Pero si un sacerdote adquiere con su dinero un esclavo, este podrá comer de las cosas sagradas; y también los esclavos nacidos en su casa podrán comer de su pan.",
+        "CEI": "Ma una persona, che il sacerdote avrà comprata con il denaro, ne potrà mangiare: così anche quelli che gli sono nati in casa: questi potranno mangiare il suo pane."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וּ/בַת כֹּהֵ֔ן כִּ֥י תִהְיֶ֖ה לְ/אִ֣ישׁ זָ֑ר הִ֕וא בִּ/תְרוּמַ֥ת הַ/קֳּדָשִׁ֖ים לֹ֥א תֹאכֵֽל׃",
+        "LXX": "καὶ θυγάτηρ ἀνθρώπου ἱερέως ἐὰν γένηται ἀνδρὶ ἀλλογενεῖ, αὐτὴ τῶν ἀπαρχῶν τοῦ ἁγίου οὐ φάγεται.",
+        "VUL": "Si filia sacerdotis cuilibet ex populo nupta fuerit, de his quæ sanctificata sunt, et de primitiis non vescetur.",
+        "SYN": "Если дочь священника выйдет в замужество за постороннего, то она не должна есть приносимых святынь;",
+        "NEO": "La fille d’un prêtre, mariée à un étranger, ne mangera pas de ce qui a été prélevé sur les choses saintes.",
+        "NAB": "A priest's daughter who is married to a layman may not eat of the sacred contributions.",
+        "VAT_ES": "Si la hija de un sacerdote se casa con alguien que no es sacerdote, ella no podrá comer de las ofrendas sagradas.",
+        "CEI": "La figlia di un sacerdote, sposata con un estraneo, non potrà mangiare le cose sante offerte mediante il rito dell'elevazione."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וּ/בַת כֹּהֵן֩ כִּ֨י תִהְיֶ֜ה אַלְמָנָ֣ה וּ/גְרוּשָׁ֗ה וְ/זֶרַע֮ אֵ֣ין לָ/הּ֒ וְ/שָׁבָ֞ה אֶל בֵּ֤ית אָבִ֨י/הָ֙ כִּ/נְעוּרֶ֔י/הָ מִ/לֶּ֥חֶם אָבִ֖י/הָ תֹּאכֵ֑ל וְ/כָל זָ֖ר לֹא יֹ֥אכַל בּֽ/וֹ׃",
+        "LXX": "καὶ θυγάτηρ ἱερέως ἐὰν γένηται χήρα ἐκβεβλημένη, σπέρμα δὲ μὴ ἦν αὐτῇ, ἐπαναστρέψει ἐπὶ τὸν οἶκον τὸν πατρικὸν κατὰ τὴν νεότητα αὐτῆς, ἀπὸ τῶν ἄρτων τοῦ πατρὸς αὐτῆς φάγεται. καὶ πᾶς ἀλλογενὴς οὐ φάγεται ἀπ’ αὐτῶν.",
+        "VUL": "Sin autem vidua, vel repudiata, et absque liberis reversa fuerit ad domum patris sui : sicut puella consueverat, aletur cibis patris sui. Omnis alienigena comedendi ex eis non habet potestatem.",
+        "SYN": "когда же дочь священника будет вдова, или разведенная, и детей нет у нее, и возвратится в дом отца своего, как _была_ в юности своей, тогда она может есть хлеб отца своего; а посторонний никто не должен есть его.",
+        "NEO": "Mais si la fille d’un prêtre, devenue veuve ou répudiée, sans avoir d’enfants, retourne dans la maison de son père, comme elle y était dans sa jeunesse, elle pourra manger de la nourriture de son père ; mais aucun étranger n’en mangera.",
+        "NAB": "But if a priest's daughter is widowed or divorced and, having no children, returns to her father's house, she may then eat of her father's food as in her youth. No layman, however, may eat of it.",
+        "VAT_ES": "Pero si la hija de un sacerdote queda viuda o es repudiada y, no teniendo hijos, vuelve a la casa de su padre como en su juventud, podrá comer del pan de su padre. Ningún extraño comerá de él;",
+        "CEI": "Se invece la figlia del sacerdote è rimasta vedova o è stata ripudiata e non ha figli, se torna a stare da suo padre come quando era giovane, potrà mangiare il pane del padre; mentre nessun estraneo al sacerdozio potrà mangiarne."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/אִ֕ישׁ כִּֽי יֹאכַ֥ל קֹ֖דֶשׁ בִּ/שְׁגָגָ֑ה וְ/יָסַ֤ף חֲמִֽשִׁית/וֹ֙ עָלָ֔י/ו וְ/נָתַ֥ן לַ/כֹּהֵ֖ן אֶת הַ/קֹּֽדֶשׁ׃",
+        "LXX": "καὶ ἄνθρωπος ὃς ἂν φάγῃ ἅγια κατὰ ἄγνοιαν, καὶ προσθήσει τὸ ἐπίπεμπτον αὐτοῦ ἐπ’ αὐτὸ καὶ δώσει τῷ ἱερεῖ τὸ ἅγιον.",
+        "VUL": "Qui comederit de sanctificatis per ignorantiam, addet quintam partem cum eo quod comedit, et dabit sacerdoti in sanctuarium.",
+        "SYN": "Кто по ошибке съест _что-нибудь_ из святыни, тот должен отдать священнику святыню и приложить к ней пятую ее долю.",
+        "NEO": "Si un homme mange par erreur d’une chose sainte, il restituera au prêtre la valeur de la chose sainte, en y ajoutant un cinquième.",
+        "NAB": "If such a one eats of a sacred offering through inadvertence, he shall make restitution to the priest for the sacred offering, with an increment of one fifth of the amount.",
+        "VAT_ES": "y si alguien, por inadvertencia, come de una ofrenda sagrada, deberá restituirla al sacerdote, añadiendo además una quinta parte de su valor.",
+        "CEI": "Se uno mangia per errore una cosa santa, darà al sacerdote il valore della cosa santa, aggiungendovi un quinto."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/לֹ֣א יְחַלְּל֔וּ אֶת קָדְשֵׁ֖י בְּנֵ֣י יִשְׂרָאֵ֑ל אֵ֥ת אֲשֶׁר יָרִ֖ימוּ לַ/יהוָֽה׃",
+        "LXX": "καὶ οὐ βεβηλώσουσιν τὰ ἅγια τῶν υἱῶν Ἰσραὴλ ἃ αὐτοὶ ἀφαιροῦσιν τῷ κυρίῳ,",
+        "VUL": "Nec contaminabunt sanctificata filiorum Israël, quæ offerunt Domino :",
+        "SYN": "_Священники_ сами не должны порочить святыни сынов Израилевых, которые они приносят Господу,",
+        "NEO": "Les prêtres ne profaneront pas les choses saintes des enfants d’Israël, ce qu’ils ont prélevé pour \\+w Yahweh|strong=\"H3068\"\\+w**,",
+        "NAB": "The sacred offerings which the Israelites contribute to the LORD the priests shall not allow to be profaned",
+        "VAT_ES": "Los sacerdotes no permitirán que los israelitas profanen los dones sagrados que ellos reservan para el Señor,",
+        "CEI": "I sacerdoti non profaneranno dunque le cose sante degli Israeliti, che essi offrono al Signore con la rituale elevazione,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/הִשִּׂ֤יאוּ אוֹתָ/ם֙ עֲוֺ֣ן אַשְׁמָ֔ה בְּ/אָכְלָ֖/ם אֶת קָדְשֵׁי/הֶ֑ם כִּ֛י אֲנִ֥י יְהוָ֖ה מְקַדְּשָֽׁ/ם׃",
+        "LXX": "καὶ ἐπάξουσιν ἐφ’ ἑαυτοὺς ἀνομίαν πλημμελίας ἐν τῷ ἐσθίειν αὐτοὺς τὰ ἃγια αὐτῶν· ὅτι ἐγὼ Κύριος ὁ ἁγιάζων αὐτούς.",
+        "VUL": "ne forte sustineant iniquitatem delicti sui, cum sanctificata comederint. Ego Dominus qui sanctifico eos.",
+        "SYN": "и не должны навлекать на себя вину в преступлении, когда будут есть святыни свои, ибо Я Господь, освящающий их.",
+        "NEO": "et ne leur feront pas porter le poids de la faute qu’ils commettraient en mangeant leurs choses saintes ; car je suis \\+w Yahweh|strong=\"H3068\"\\+w**, qui les sanctifie. »",
+        "NAB": "nor in the eating of the sacred offering shall they bring down guilt that must be punished; it is I, the LORD, who make them sacred.\"",
+        "VAT_ES": "o que carguen con un pecado que exige una reparación, por comer esos dones sagrados. Porque yo soy el Señor, que los santifico.",
+        "CEI": "e non faranno portare loro la pena del peccato di cui si renderebbero colpevoli, mangiando le loro cose sante; poiché io sono il Signore che le santifico\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse a Mosè:"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "דַּבֵּ֨ר אֶֽל אַהֲרֹ֜ן וְ/אֶל בָּנָ֗י/ו וְ/אֶל֙ כָּל בְּנֵ֣י יִשְׂרָאֵ֔ל וְ/אָמַרְתָּ֖ אֲלֵ/הֶ֑ם אִ֣ישׁ אִישׁ֩ מִ/בֵּ֨ית יִשְׂרָאֵ֜ל וּ/מִן הַ/גֵּ֣ר בְּ/יִשְׂרָאֵ֗ל אֲשֶׁ֨ר יַקְרִ֤יב קָרְבָּנ/וֹ֙ לְ/כָל נִדְרֵי/הֶם֙ וּ/לְ/כָל נִדְבוֹתָ֔/ם אֲשֶׁר יַקְרִ֥יבוּ לַ/יהוָ֖ה לְ/עֹלָֽה׃",
+        "LXX": "Λάλησον Ἀαρὼν καὶ τοῖς υἱοῖς αὐτοῦ καὶ πάσῃ συναγωγῇ Ἰσραὴλ καὶ ἐρεῖς πρὸς αὐτούς Ἄνθρωπος ἂνθρωπος ἀπὸ τῶν υἱῶν Ἰσραὴλ ἢ τῶν υἱῶν τῶν προσηλύτων τῶν προσκειμένων πρὸς αὐτοὺς ἐν Ἰσραὴλ ὃς ἂν προσενέγκῃ τὰ δῶρα αὐτοῦ κατὰ πᾶσαν ὁμολογίαν αὐτῶν ἢ κατὰ πᾶσαν αἵρέσιν αὐτῶν, ὅσα ἂν προσενέγκωσιν τῷ θεῷ εἰς ὁλοκαύτωμα,",
+        "VUL": "Loquere ad Aaron et filios ejus, et ad omnes filios Israël, dicesque ad eos : Homo de domo Israël, et de advenis qui habitant apud vos, qui obtulerit oblationem suam, vel vota solvens, vel sponte offerens, quidquid illud obtulerit in holocaustum Domini,",
+        "SYN": "объяви Аарону и сынам его и всем сынам Израилевым и скажи им: если кто из дома Израилева, или из пришельцев, [поселившихся] между Израильтянами, по обету ли какому, или по усердию приносит жертву свою, которую приносят Господу во всесожжение,",
+        "NEO": "« Parle à Aaron et à ses fils, ainsi qu’à tous les enfants d’Israël ; et dis-leur :",
+        "NAB": "\"Speak to Aaron and his sons and to all the Israelites, and tell them: When anyone of the house of Israel, or any alien residing in Israel, who wishes to offer a sacrifice, brings a holocaust as a votive offering or as a free-will offering to the LORD,",
+        "VAT_ES": "Habla en estos término a Aarón y a sus hijos, y a todos los israelitas: Si un hombre de la casa de Israel, o alguno de los extranjero residentes en Israel presenta su ofrenda al señor para un holocausto –ya sea en cumplimiento de un voto o como ofrenda voluntaria–",
+        "CEI": "\"Parla ad Aronne, ai suoi figli, a tutti gli Israeliti e ordina loro: Chiunque della casa d'Israele o dei forestieri dimoranti in Israele presenta in olocausto al Signore un'offerta per qualsiasi voto o dono volontario,"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "לִֽ/רְצֹנְ/כֶ֑ם תָּמִ֣ים זָכָ֔ר בַּ/בָּקָ֕ר בַּ/כְּשָׂבִ֖ים וּ/בָֽ/עִזִּֽים׃",
+        "LXX": "δεκτὰ ὑμῖν ἄμωμα ἄρσενα ἐκ τῶν βουκολίων καὶ ἐκ τῶν προβάτων καὶ ἐκ τῶν αἰγῶν.",
+        "VUL": "ut offeratur per vos, masculus immaculatus erit ex bobus, et ovibus, et ex capris :",
+        "SYN": "то, чтобы сим приобрести благоволение _от_ _Бога,_ _жертва_ _должна_ _быть_ без порока, мужеского пола, из крупного скота, из овец и из коз;",
+        "NEO": "pour que vous soyez agréés, que la victime soit un mâle sans défaut, d’entre les bœufs, les brebis ou les chèvres.",
+        "NAB": "if it is to be acceptable, the ox or sheep or goat that he offers must be an unblemished male.",
+        "VAT_ES": "para que esa ofrenda le sea aceptada, tendrá que ser buey, oveja o cabra, macho y sin defecto.",
+        "CEI": "per essere gradito, dovrà offrire un maschio, senza difetto, di buoi, di pecore o di capre."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "כֹּ֛ל אֲשֶׁר בּ֥/וֹ מ֖וּם לֹ֣א תַקְרִ֑יבוּ כִּי לֹ֥א לְ/רָצ֖וֹן יִהְיֶ֥ה לָ/כֶֽם׃",
+        "LXX": "πάντα ὅσα ἂν ἔχῃ μῶμον ἐν αὐτῷ οὐ προσάξουσιν Κυρίῳ, διότι οὐ δεκτὸν ἔσται ὑμῖν.",
+        "VUL": "si maculam habuerit, non offeretis, neque erit acceptabile.",
+        "SYN": "никакого _животного,_ на котором есть порок, не приносите [Господу], ибо это не приобретет вам благоволения.",
+        "NEO": "Vous n’en offrirez aucune qui ait un défaut, car elle ne serait pas agréée.",
+        "NAB": "You shall not offer one that has any defect, for such a one would not be acceptable for you.",
+        "VAT_ES": "No ofrezcan nada que tenga algún defecto, porque no les será aceptado.",
+        "CEI": "Non offrirete nulla con qualche difetto, perché non sarebbe gradito."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/אִ֗ישׁ כִּֽי יַקְרִ֤יב זֶֽבַח שְׁלָמִים֙ לַ/יהוָ֔ה לְ/פַלֵּא נֶ֨דֶר֙ א֣וֹ לִ/נְדָבָ֔ה בַּ/בָּקָ֖ר א֣וֹ בַ/צֹּ֑אן תָּמִ֤ים יִֽהְיֶה֙ לְ/רָצ֔וֹן כָּל מ֖וּם לֹ֥א יִהְיֶה בּֽ/וֹ׃",
+        "LXX": "καὶ ἄνθρωπος ὃς ἂν προσενέγκῃ θυσίαν σωτηρίου τῷ κυρίῳ, διαστείλας εὐχὴν κατὰ αἵρεσιν ἢ ἐν ταῖς ἑορταῖς ὑμῶν, ἐκ τῶν βουκολίων ἢ ἐκ τῶν προβάτων, ἄμωμον ἔσται εἰσδεκτόν, πᾶς μῶμος οὐκ ἔσται ἐν αὐτῷ.",
+        "VUL": "Homo qui obtulerit victimam pacificorum Domino, vel vota solvens, vel sponte offerens, tam de bobus quam de ovibus, immaculatum offeret ut acceptabile sit : omnis macula non erit in eo.",
+        "SYN": "И если кто приносит мирную жертву Господу, исполняя обет, или по усердию, [или в праздники ваши,] из крупного скота или из мелкого, то _жертва_ _должна_ _быть_ без порока, чтоб быть угодною _Богу:_ никакого порока не должно быть на ней;",
+        "NEO": "Quand un homme offre à \\+w Yahweh|strong=\"H3068\"\\+w** du gros ou du menu bétail en sacrifice pacifique, soit pour s’acquitter d’un vœu, soit comme offrande volontaire, la victime, pour être agréée, devra être parfaite ; il n’y aura en elle aucun défaut.",
+        "NAB": "When anyone presents a peace offering to the LORD from the herd or the flock in fulfillment of a vow, or as a free-will offering, if it is to find acceptance, it must be unblemished; it shall not have any defect.",
+        "VAT_ES": "Y si alguien –sea en cumplimiento de un voto especial o como ofrenda voluntaria– presenta al Señor en sacrificio de comunión un animal del ganado mayor o menor, para que esa ofrenda le sea aceptada, tendrá que ser sin defecto: no habrá en ella ninguna imperfección.",
+        "CEI": "Se uno offre al Signore, in sacrificio di comunione, un bovino o un ovino, sia per sciogliere un voto, sia come offerta volontaria, la vittima, perché sia gradita, dovrà essere perfetta: senza difetti."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "עַוֶּרֶת֩ א֨וֹ שָׁב֜וּר אוֹ חָר֣וּץ אֽוֹ יַבֶּ֗לֶת א֤וֹ גָרָב֙ א֣וֹ יַלֶּ֔פֶת לֹא תַקְרִ֥יבוּ אֵ֖לֶּה לַ/יהוָ֑ה וְ/אִשֶּׁ֗ה לֹא תִתְּנ֥וּ מֵ/הֶ֛ם עַל הַ/מִּזְבֵּ֖חַ לַ/יהוָֽה׃",
+        "LXX": "τυφλὸν ἢ συντετριμμένον ἢ γλωσσότμητον ἢ μυρμηκιῶντα ἢ ψωραγριῶντα ἢ λιχῆνας ἔχοντα, οὐ προσάξουσιν ταῦτα τῷ κυρίῳ, καὶ εἰς κάρπωσιν οὐ δώσετε ἀπ’ αὐτῶν ἐπὶ τὸ θυσιαστήριον τῷ κυρίῳ.",
+        "VUL": "Si cæcum fuerit, si fractum, si cicatricem habens, si papulas, aut scabiem, aut impetiginem : non offeretis ea Domino, nec adolebitis ex eis super altare Domini.",
+        "SYN": "_животного_ слепого, или поврежденного, или уродливого, или больного, или коростового, или паршивого, таких не приносите Господу и в жертву не давайте их на жертвенник Господень;",
+        "NEO": "Un animal aveugle, estropié ou mutilé, ayant un ulcère, la gale ou une dartre, vous ne l’offrirez pas à \\+w Yahweh|strong=\"H3068\"\\+w** ; vous n’en ferez pas sur l’autel un sacrifice par le feu à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "One that is blind or crippled or maimed, or one that has a running sore or mange or ringworm, you shall not offer to the LORD; do not put such an animal on the altar as an oblation to the LORD.",
+        "VAT_ES": "No deberán ofrecer ni presentar como ofrenda que se quema para el Señor ningún animal ciego, estropeado o mutilado, ulcerado, sarnoso o purulento.",
+        "CEI": "Non offrirete al Signore nessuna vittima cieca o storpia o mutilata o con ulceri o con la scabbia o con piaghe purulente; non ne farete sull'altare un sacrificio consumato dal fuoco in onore del Signore."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/שׁ֥וֹר וָ/שֶׂ֖ה שָׂר֣וּעַ וְ/קָל֑וּט נְדָבָה֙ תַּעֲשֶׂ֣ה אֹת֔/וֹ וּ/לְ/נֵ֖דֶר לֹ֥א יֵרָצֶֽה׃",
+        "LXX": "καὶ μόσχον ἢ πρόβατον ὠτότμητον ἢ κολοβόκερκον σφάγια ποιήσεις αὐτὰ σεαυτῷ, εἰς δὲ εὐχήν σου οὐ προσδεχθήσεται.",
+        "VUL": "Bovem et ovem, aure et cauda amputatis, voluntarie offerre potes, votum autem ex eis solvi non potest.",
+        "SYN": "тельца и агнца с членами, несоразмерно длинными или короткими, в жертву усердия принести можешь; а если по обету, то это не угодно будет _Богу;_",
+        "NEO": "Tu pourras immoler comme offrande volontaire un bœuf ou une brebis ayant un membre trop long ou trop court ; mais, pour l’accomplissement d’un vœu, cette victime ne serait pas agréée.",
+        "NAB": "An ox or a sheep that is in any way ill-proportioned or stunted you may indeed present as a free-will offering, but it will not be acceptable as a votive offering.",
+        "VAT_ES": "En cambio, podrán ofrecer como ofrenda voluntaria un buey o una oveja con un miembro demasiado largo o demasiado corto; pero no les será aceptado en cumplimiento de un voto.",
+        "CEI": "Come offerta volontaria potrai presentare un bue o una pecora che abbia un membro troppo lungo o troppo corto; ma come offerta per qualche voto non sarebbe gradita."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וּ/מָע֤וּךְ וְ/כָתוּת֙ וְ/נָת֣וּק וְ/כָר֔וּת לֹ֥א תַקְרִ֖יבוּ לַֽ/יהוָ֑ה וּֽ/בְ/אַרְצְ/כֶ֖ם לֹ֥א תַעֲשֽׂוּ׃",
+        "LXX": "θλαδίαν καὶ ἐκτεθλιμμένον καὶ ἐκτομίαν καὶ ἀπεσπασμένον, οὐ προσάξεις αὐτὰ τῷ κυρίῳ, καὶ ἐπὶ τῆς γῆς ὑμῶν οὐ ποιήσετε.",
+        "VUL": "Omne animal, quod vel contritis, vel tusis, vel sectis ablatisque testiculis est, non offeretis Domino, et in terra vestra hoc omnino ne faciatis.",
+        "SYN": "_животного,_ у которого ятра раздавлены, разбиты, оторваны или вырезаны, не приносите Господу и в земле вашей не делайте _сего;_",
+        "NEO": "Vous n’offrirez pas à \\+w Yahweh|strong=\"H3068\"\\+w** un animal qui ait les testicules froissés, écrasés, arrachés ou coupés ; vous ne ferez pas cela dans votre pays.",
+        "NAB": "One that has its testicles bruised or crushed or torn out or cut off you shall not offer to the LORD. You shall neither do this in your own land",
+        "VAT_ES": "Tampoco ofrecerán animales con los testículos aplastados, destrozados, arrancados o cortados. No harán nada de esto en su tierra,",
+        "CEI": "Non offrirete al Signore un animale con i testicoli ammaccati o schiacciati o strappati o tagliati. Tali cose non farete nel vostro paese,"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וּ/מִ/יַּ֣ד בֶּן נֵכָ֗ר לֹ֥א תַקְרִ֛יבוּ אֶת לֶ֥חֶם אֱלֹהֵי/כֶ֖ם מִ/כָּל אֵ֑לֶּה כִּ֣י מָשְׁחָתָ֤/ם בָּ/הֶם֙ מ֣וּם בָּ֔/ם לֹ֥א יֵרָצ֖וּ לָ/כֶֽם׃",
+        "LXX": "καὶ ἐκ χειρὸς ἀλλογενοῦς οὐ προσοίσετε τὰ δῶρα τοῦ θεοῦ ὑμῶν ἀπὸ πάντων τούτων, ὅτι φθαρτά ἐστιν ἐν αὐτοῖς, μῶμος ἐν αὐτοῖς· οὐ δεχθήσεται ὑμῖν.",
+        "VUL": "De manu alienigenæ non offeretis panes Deo vestro, et quidquid aliud dare voluerit, quia corrupta, et maculata sunt omnia : non suscipietis ea.",
+        "SYN": "и из рук иноземцев не приносите всех таковых _животных_ в дар Богу вашему, потому что на них повреждение, порок на них: не приобретут они вам благоволения.",
+        "NEO": "Même de la main d’un étranger, vous n’accepterez aucune de ces victimes pour l’offrir comme aliment de votre Dieu ; car elles sont corrompues, il y a en elles un défaut : elles ne seraient pas agréées pour vous. »",
+        "NAB": "nor receive from a foreigner any such animals to offer up as the food of your God; since they are deformed or defective, they will not be acceptable for you.\"",
+        "VAT_ES": "ni aceptarán estos animales a los extranjeros para ofrecerlos como alimento de su Dios, porque en ellos hay una deformidad y tienen un defecto. Por eso no les serán aceptados.",
+        "CEI": "né accetterete dallo straniero alcuna di queste vittime per offrirla come pane in onore del vostro Dio; essendo mutilate, difettose, non sarebbero gradite per il vostro bene\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore aggiunse a Mosè:"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "שׁ֣וֹר אוֹ כֶ֤שֶׂב אוֹ עֵז֙ כִּ֣י יִוָּלֵ֔ד וְ/הָיָ֛ה שִׁבְעַ֥ת יָמִ֖ים תַּ֣חַת אִמּ֑/וֹ וּ/מִ/יּ֤וֹם הַ/שְּׁמִינִי֙ וָ/הָ֔לְאָה יֵרָצֶ֕ה לְ/קָרְבַּ֥ן אִשֶּׁ֖ה לַ/יהוָֽה׃",
+        "LXX": "Μόσχον ἢ πρόβατον ἢ αἶγα, ὡς ἂν τεχθῇ, καὶ ἔσται ἑπτὰ ἡμέρας ὑπὸ τὴν μητέρα· τῇ δὲ ἡμέρᾳ τῇ ὀγδόῃ καὶ ἐπέκεινα δεχθήσεται εἰς δῶρα, κάρπωμα Κυρίῳ.",
+        "VUL": "Bos, ovis et capra, cum genita fuerint, septem diebus erunt sub ubere matris suæ : die autem octavo, et deinceps, offerri poterunt Domino.",
+        "SYN": "когда родится теленок, или ягненок, или козленок, то семь дней он должен пробыть при матери своей, а от восьмого дня и далее будет благоугоден для приношения в жертву Господу;",
+        "NEO": "« Un bœuf, un agneau ou une chèvre, quand il naîtra, restera sept jours sous sa mère ; à partir du huitième jour et les jours suivants, il sera agréé pour être offert en sacrifice fait par le feu à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "\"When an ox or a lamb or a goat is born, it shall remain with its mother for seven days; only from the eighth day onward will it be acceptable, to be offered as an oblation to the LORD.",
+        "VAT_ES": "Cuando nazca un ternero, un cordero o un cabrito, estará siete días con su madre, y a partir del octavo será aceptado como ofrenda que se quema para el Señor.",
+        "CEI": "\"Quando nascerà un vitello o un agnello o un capretto, starà sette giorni sotto la madre; dall'ottavo giorno in poi, sarà gradito come vittima da consumare con il fuoco per il Signore."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/שׁ֖וֹר אוֹ שֶׂ֑ה אֹת֣/וֹ וְ/אֶת בְּנ֔/וֹ לֹ֥א תִשְׁחֲט֖וּ בְּ/י֥וֹם אֶחָֽד׃",
+        "LXX": "καὶ μόσχον ἢ πρόβατον, αὐτὴν καὶ τὰ παιδία αὐτῆς, οὐ σφάξεις ἐν ἡμέρᾳ μιᾷ.",
+        "VUL": "Sive illa bos, sive ovis, non immolabuntur una die cum ftibus suis.",
+        "SYN": "но ни коровы, ни овцы не заколайте в один день с порождением ее.",
+        "NEO": "Bœuf ou agneau, vous n’immolerez pas l’animal et son petit le même jour.",
+        "NAB": "You shall not slaughter an ox or a sheep on one and the same day with its young.",
+        "VAT_ES": "Pero no inmolarán ningún animal del ganado mayor o menor junto con su cría, en un mismo día.",
+        "CEI": "Non scannerete vacca o pecora lo stesso giorno con il suo piccolo."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/כִֽי תִזְבְּח֥וּ זֶֽבַח תּוֹדָ֖ה לַ/יהוָ֑ה לִֽ/רְצֹנְ/כֶ֖ם תִּזְבָּֽחוּ׃",
+        "LXX": "ἐὰν δὲ θύσῃς θυσίαν εὐχὴν χαρμοσύνης Κυρίῳ, εἰσδεκτὸν ὑμῖν θύσετε αὐτό·",
+        "VUL": "Si immolaveritis hostiam pro gratiarum actione Domino, ut possit esse placabilis,",
+        "SYN": "Если приносите Господу жертву благодарения, то приносите ее так, чтоб она приобрела вам благоволение;",
+        "NEO": "Quand vous offrirez à \\+w Yahweh|strong=\"H3068\"\\+w** un sacrifice d’actions de grâces, vous l’offrirez de manière qu’il soit agréé ;",
+        "NAB": "Whenever you offer a thanksgiving sacrifice to the LORD, so offer it that it may be acceptable for you;",
+        "VAT_ES": "Cuando ofrezcan al Señor un sacrificio de acción de gracias, háganlo de tal manera que les sea aceptado.",
+        "CEI": "Quando offrirete al Signore un sacrificio di ringraziamento, offritelo in modo che sia gradito."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "בַּ/יּ֤וֹם הַ/הוּא֙ יֵאָכֵ֔ל לֹֽא תוֹתִ֥ירוּ מִמֶּ֖/נּוּ עַד בֹּ֑קֶר אֲנִ֖י יְהוָֽה׃",
+        "LXX": "αὐτῇ τῇ ἡμέρᾳ ἐκείνῃ βρωθήσεται, οὐκ ἀπολείψετε ἀπὸ τῶν κρεῶν εἰς τὸ πρωί· ἐγώ εἰμι Κύριος.",
+        "VUL": "eodem die comedetis eam : non remanebit quidquam in mane alterius diei. Ego Dominus.",
+        "SYN": "в тот же день должно съесть ее, не оставляйте от нее до утра. Я Господь.",
+        "NEO": "pour cela, la victime sera mangée le même jour ; vous n’en laisserez rien jusqu’au matin. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "it must, therefore, be eaten on the same day; none of it shall be left over until the next day. I am the LORD.",
+        "VAT_ES": "Será comido ese mismo día; no dejarán nada para el día siguiente. Yo soy el Señor.",
+        "CEI": "La vittima sarà mangiata il giorno stesso; non ne lascerete nulla fino al mattino. Io sono il Signore."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וּ/שְׁמַרְתֶּם֙ מִצְוֺתַ֔/י וַ/עֲשִׂיתֶ֖ם אֹתָ֑/ם אֲנִ֖י יְהוָֽה׃",
+        "LXX": "Καὶ φυλάξετε τὰς ἐντολάς μου καὶ ποιήσετε αὐτάς.",
+        "VUL": "Custodite mandata mea, et facite ea. Ego Dominus.",
+        "SYN": "И соблюдайте заповеди Мои и исполняйте их. Я Господь.",
+        "NEO": "Vous observerez mes commandements et les mettrez en pratique : je suis \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "\"Be careful to observe the commandments which I, the LORD, give you,",
+        "VAT_ES": "Observen fielmente mis mandamientos. Yo soy el Señor.",
+        "CEI": "Osserverete dunque i miei comandi e li metterete in pratica. Io sono il Signore."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/לֹ֤א תְחַלְּלוּ֙ אֶת שֵׁ֣ם קָדְשִׁ֔/י וְ/נִ֨קְדַּשְׁתִּ֔י בְּ/ת֖וֹךְ בְּנֵ֣י יִשְׂרָאֵ֑ל אֲנִ֥י יְהוָ֖ה מְקַדִּשְׁ/כֶֽם׃",
+        "LXX": "καὶ οὐ βεβηλώσετε τὸ ὄνομα τοῦ ἁγίου, καὶ ἁγιασθήσομαι ἐν μέσῳ τῶν υἱῶν Ἰσραήλ· ἐγὼ Κύριος ὁ ἁγιάζων ὑμᾶς,",
+        "VUL": "Ne polluatis nomen meum sanctum, ut sanctificer in medio filiorum Israël. Ego Dominus qui sanctifico vos,",
+        "SYN": "Не бесчестите святого имени Моего, чтоб Я был святим среди сынов Израилевых. Я Господь, освящающий вас,",
+        "NEO": "Vous ne profanerez pas mon saint nom, et je serai sanctifié au milieu des enfants d’Israël. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**, qui vous sanctifie,",
+        "NAB": "and do not profane my holy name; in the midst of the Israelites I, the LORD, must be held as sacred. It is I who made you sacred",
+        "VAT_ES": "No profanen mi santo Nombre, para que yo sea santificado en medio de los israelitas. Yo soy el Señor, que los santifico,",
+        "CEI": "Non profanerete il mio santo nome, perché io mi manifesti santo in mezzo agli Israeliti. Io sono il Signore che vi santifico,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "הַ/מּוֹצִ֤יא אֶתְ/כֶם֙ מֵ/אֶ֣רֶץ מִצְרַ֔יִם לִ/הְי֥וֹת לָ/כֶ֖ם לֵ/אלֹהִ֑ים אֲנִ֖י יְהוָֽה׃",
+        "LXX": "ὁ ἐξαγαγὼν ὑμᾶς ἐκ γῆς Αἰγύπτου ὥστε εἶναι ὑμῶν θεός· ἐγὼ Κύριος.",
+        "VUL": "et eduxi de terra Ægypti, ut essem vobis in Deum. Ego Dominus.",
+        "SYN": "Который вывел вас из земли Египетской, чтоб быть вашим Богом. Я Господь.",
+        "NEO": "celui qui vous a fait sortir du pays d’Égypte, pour être votre Dieu. Je suis \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "and led you out of the land of Egypt, that I, the LORD, might be your God.\"",
+        "VAT_ES": "el que los hizo salir de Egipto para ser su Dios. Yo soy el señor.",
+        "CEI": "che vi ho fatto uscire dal paese d'Egitto per essere vostro Dio. Io sono il Signore\"."
+      }
+    }
+  }
+}

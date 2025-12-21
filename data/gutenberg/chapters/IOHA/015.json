@@ -1,0 +1,474 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOHA_015",
+  "book_key": "IOHA",
+  "sequence": 15,
+  "chapter_in": {
+    "MT": 15,
+    "VUL": 15,
+    "LXX": 15
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Evangelia",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Ἐγώ εἰμι ἡ ἄμπελος ἡ ἀληθινή, καὶ ὁ πατήρ μου ὁ γεωργός ἐστιν.",
+        "VUL": "Ego sum vitis vera, et Pater meus agricola est.",
+        "SYN": "Я есмь истинная виноградная лоза, а Отец Мой -- виноградарь.",
+        "NEO": "« Je suis la vraie vigne, et mon Père est le vigneron.+ 15:1 XV, 1. Dans l’hypothèse qui fait rester le Sauveur dans le cénacle, l’occasion de cette allégorie fut sans doute la coupe consacrée que N.-S. présenta à ses disciples à la fin de la Cène. Plusieurs endroits de l’Ancien Testament annoncent le Messie sous la figure de la vigne (Is. v, 1-7 ; Ezéch. xv, 2-6 ; Eccli. xxiv, 25). Parmi ceux qui soutiennent que la suite du discours fut prononcée sur le chemin de Gethsémani, plusieurs supposent que le Sauveur voyant sous ses yeux des plants de vigne, en prit occasion pour se comparer à la vigne et ses disciples aux sarments.*",
+        "NAB": "\"I am the true vine, and my Father is the vine grower.",
+        "VAT_ES": "«Yo soy la verdadera vid y mi Padre es el viñador.",
+        "CEI": "Gli apostoli e i fratelli che stavano nella Giudea vennero a sapere che anche i pagani avevano accolto la parola di Dio."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Πᾶν κλῆμα ἐν ἐμοὶ μὴ φέρον καρπόν, αἴρει αὐτό· καὶ πᾶν τὸ καρπὸν φέρον, καθαίρει αὐτό, ἵνα πλείονα καρπὸν φέρῃ.",
+        "VUL": "Omnem palmitem in me non ferentem fructum, tollet eum, et omnem qui fert fructum, purgabit eum, ut fructum plus afferat.",
+        "SYN": "Всякую у Меня ветвь, не приносящую плода, Он отсекает; и всякую, приносящую плод, очищает, чтобы более принесла плода.",
+        "NEO": "Tout sarment qui en moi ne porte pas de fruit, il le retranche ; et tout sarment qui porte du fruit, il l’émonde, afin qu’il en porte davantage.",
+        "NAB": "He takes away every branch in me that does not bear fruit, and everyone that does he prunes so that it bears more fruit.",
+        "VAT_ES": "El corta todos mis sarmientos que no dan fruto; al que da fruto, lo poda para que dé más todavía.",
+        "CEI": "E quando Pietro salì a Gerusalemme, i circoncisi lo rimproveravano dicendo:"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Ἤδη ὑμεῖς καθαροί ἐστε διὰ τὸν λόγον ὃν λελάληκα ὑμῖν.",
+        "VUL": "Jam vos mundi estis propter sermonem quem locutus sum vobis.",
+        "SYN": "Вы уже очищены через слово, которое Я проповедал вам.",
+        "NEO": "Déjà vous êtes purs, à cause de la parole que je vous ai annoncée.",
+        "NAB": "You are already pruned because of the word that I spoke to you.",
+        "VAT_ES": "Ustedes ya están limpios por la palabra que yo les anuncié.",
+        "CEI": "\"Sei entrato in casa di uomini non circoncisi e hai mangiato insieme con loro!\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Μείνατε ἐν ἐμοί, κἀγὼ ἐν ὑμῖν. Καθὼς τὸ κλῆμα οὐ δύναται καρπὸν φέρειν ἀφ’ ἑαυτοῦ, ἐὰν μὴ μείνῃ ἐν τῇ ἀμπέλῳ, οὕτως οὐδὲ ὑμεῖς, ἐὰν μὴ ἐν ἐμοὶ μείνητε.",
+        "VUL": "Manete in me, et ego in vobis. Sicut palmes non potest ferre fructum a semetipso, nisi manserit in vite, sic nec vos, nisi in me manseritis.",
+        "SYN": "Пребудьте во Мне, и Я в вас. Как ветвь не может приносить плода сама собою, если не будет на лозе: так и вы, если не будете во Мне.",
+        "NEO": "Demeurez en moi, et moi en vous. Comme le sarment ne peut de lui-même porter du fruit, s’il ne demeure uni à la vigne, ainsi vous ne le pouvez non plus, si vous ne demeurez en moi.",
+        "NAB": "Remain in me, as I remain in you. Just as a branch cannot bear fruit on its own unless it remains on the vine, so neither can you unless you remain in me.",
+        "VAT_ES": "Permanezcan en mí, como yo permanezco en ustedes. Así como el sarmiento no puede dar fruto si no permanece en la vid, tampoco ustedes, si no permanecen en mí.",
+        "CEI": "Allora Pietro raccontò per ordine come erano andate le cose, dicendo:"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Ἐγώ εἰμι ἡ ἄμπελος, ὑμεῖς τὰ κλήματα. Ὁ μένων ἐν ἐμοί, κἀγὼ ἐν αὐτῷ, οὗτος φέρει καρπὸν πολύν· ὅτι χωρὶς ἐμοῦ οὐ δύνασθε ποιεῖν οὐδέν.",
+        "VUL": "Ego sum vitis, vos palmites : qui manet in me, et ego in eo, hic fert fructum multum, quia sine me nihil potestis facere.",
+        "SYN": "Я есмь лоза, а вы ветви; кто пребывает во Мне, и Я в нем, тот приносит много плода; ибо без Меня не можете делать ничего.",
+        "NEO": "Je suis la vigne, vous êtes les sarments. Celui qui demeure en moi, et en qui je demeure, porte beaucoup de fruits : car, séparés de moi, vous ne pouvez rien faire.",
+        "NAB": "I am the vine, you are the branches. Whoever remains in me and I in him will bear much fruit, because without me you can do nothing.",
+        "VAT_ES": "Yo soy la vid, ustedes los sarmientos El que permanece en mí, y yo en él, da mucho fruto, porque separados de mí, nada pueden hacer.",
+        "CEI": "\"Io mi trovavo in preghiera nella città di Giaffa e vidi in estasi una visione: un oggetto, simile a una grande tovaglia, scendeva come calato dal cielo per i quattro capi e giunse fino a me."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ἐὰν μή τις μείνῃ ἐν ἐμοί, ἐβλήθη ἔξω ὡς τὸ κλῆμα, καὶ ἐξηράνθη, καὶ συνάγουσιν αὐτὰ καὶ εἰς τὸ πῦρ βάλλουσιν, καὶ καίεται.",
+        "VUL": "Si quis in me non manserit, mittetur foras sicut palmes, et arescet, et colligent eum, et in ignem mittent, et ardet.",
+        "SYN": "Кто не пребудет во Мне, извергнется вон, как ветвь, и засохнет; а такие _ветви_ собирают и бросают в огонь, и они сгорают.",
+        "NEO": "Si quelqu’un ne demeure pas en moi, il est jeté dehors, comme le sarment, et il sèche ; puis on ramasse ces sarments, on les jette au feu, et ils brûlent.",
+        "NAB": "Anyone who does not remain in me will be thrown out like a branch and wither; people will gather them and throw them into a fire and they will be burned.",
+        "VAT_ES": "Pero el que no permanece en mí, es como el sarmiento que se tira y se seca; después se recoge, se arroja al fuego y arde.",
+        "CEI": "Fissandolo con attenzione, vidi in esso quadrupedi, fiere e rettili della terra e uccelli del cielo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ἐὰν μείνητε ἐν ἐμοί, καὶ τὰ ῥήματά μου ἐν ὑμῖν μείνῃ, ὃ ἐὰν θέλητε αἰτήσεσθε, καὶ γενήσεται ὑμῖν.",
+        "VUL": "Si manseritis in me, et verba mea in vobis manserint, quodcumque volueritis petetis, et fiet vobis.",
+        "SYN": "Если пребудете во Мне и слова Мои в вас пребудут, то, чего ни пожелаете, просите, и будет вам.",
+        "NEO": "Si vous demeurez en moi, et que mes paroles demeurent en vous, vous demanderez ce que vous voudrez, et cela vous sera accordé.",
+        "NAB": "If you remain in me and my words remain in you, ask for whatever you want and it will be done for you.",
+        "VAT_ES": "Si ustedes permanecen en mí y mis palabras permanecen en ustedes, pidan lo que quieran y lo obtendrán.",
+        "CEI": "E sentii una voce che mi diceva: Pietro, àlzati, uccidi e mangia!"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἐν τούτῳ ἐδοξάσθη ὁ πατήρ μου, ἵνα καρπὸν πολὺν φέρητε· καὶ γενήσεσθε ἐμοὶ μαθηταί.",
+        "VUL": "In hoc clarificatus est Pater meus, ut fructum plurimum afferatis, et efficiamini mei discipuli.",
+        "SYN": "Тем прославится Отец Мой, если вы принесете много плода и будете Моими учениками.",
+        "NEO": "C’est la gloire de mon Père que vous portiez beaucoup de fruits, et que vous soyez mes disciples.",
+        "NAB": "By this is my Father glorified, that you bear much fruit and become my disciples.",
+        "VAT_ES": "La gloria de mi Padre consiste en que ustedes den fruto abundante, y así sean mis discípulos.",
+        "CEI": "Risposi: Non sia mai, Signore, poiché nulla di profano e di immondo è entrato mai nella mia bocca."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Καθὼς ἠγάπησέν με ὁ πατήρ, κἀγὼ ἠγάπησα ὑμᾶς· μείνατε ἐν τῇ ἀγάπῃ τῇ ἐμῇ.",
+        "VUL": "Sicut dilexit me Pater, et ego dilexi vos. Manete in dilectione mea.",
+        "SYN": "Как возлюбил Меня Отец, и Я возлюбил вас; пребудьте в любви Моей.",
+        "NEO": "Comme mon Père m’a aimé, moi aussi je vous ai aimés : demeurez dans mon amour.",
+        "NAB": "As the Father loves me, so I also love you. Remain in my love.",
+        "VAT_ES": "Como el Padre me amó, también yo los he amado a ustedes. Permanezcan en mi amor.",
+        "CEI": "Ribattè nuovamente la voce dal cielo: Quello che Dio ha purificato, tu non considerarlo profano."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Ἐὰν τὰς ἐντολάς μου τηρήσητε, μενεῖτε ἐν τῇ ἀγάπῃ μου· καθὼς ἐγὼ τὰς ἐντολὰς τοῦ πατρός μου τετήρηκα, καὶ μένω αὐτοῦ ἐν τῇ ἀγάπῃ.",
+        "VUL": "Si præcepta mea servaveritis, manebitis in dilectione mea, sicut et ego Patris mei præcepta servavi, et maneo in ejus dilectione.",
+        "SYN": "Если заповеди Мои соблюдете, пребудете в любви Моей, как и Я соблюл заповеди Отца Моего и пребываю в Его любви.",
+        "NEO": "Si vous gardez mes commandements, vous demeurerez dans mon amour, comme moi-même j’ai gardé les commandements de mon Père, et comme je demeure dans son amour.",
+        "NAB": "If you keep my commandments, you will remain in my love, just as I have kept my Father's commandments and remain in his love.",
+        "VAT_ES": "Si cumplen mis mandamientos, permanecerán en mi amor. como yo cumplí los mandamientos de mi Padre y permanezco en su amor.",
+        "CEI": "Questo avvenne per tre volte e poi tutto fu risollevato di nuovo nel cielo."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Ταῦτα λελάληκα ὑμῖν, ἵνα ἡ χαρὰ ἡ ἐμὴ ἐν ὑμῖν μείνῃ, καὶ ἡ χαρὰ ὑμῶν πληρωθῇ.",
+        "VUL": "Hæc locutus sum vobis : ut gaudium meum in vobis sit, et gaudium vestrum impleatur.",
+        "SYN": "Сие сказал Я вам, да радость Моя в вас пребудет и радость ваша будет совершенна.",
+        "NEO": "Je vous ai dit ces choses, afin que ma joie soit en vous, et que votre joie soit parfaite.",
+        "NAB": "\"I have told you this so that my joy may be in you and your joy may be complete.",
+        "VAT_ES": "Les he dicho esto para que mi gozo sea el de ustedes, y ese gozo sea perfecto.",
+        "CEI": "Ed ecco, in quell'istante, tre uomini giunsero alla casa dove eravamo, mandati da Cesarèa a cercarmi."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Αὕτη ἐστὶν ἡ ἐντολὴ ἡ ἐμή, ἵνα ἀγαπᾶτε ἀλλήλους, καθὼς ἠγάπησα ὑμᾶς.",
+        "VUL": "Hoc est præceptum meum, ut diligatis invicem, sicut dilexi vos.",
+        "SYN": "Сия есть заповедь Моя, да любите друг друга, как Я возлюбил вас.",
+        "NEO": "Ceci est mon commandement, que vous vous aimiez les uns les autres, comme je vous ai aimés.+ 15:12 12. Cf. vers. 10 ; xiii, 34.*",
+        "NAB": "This is my commandment: love one another as I love you.",
+        "VAT_ES": "Este es mi mandamiento: Amense los unos a los otros, como yo los he amado.",
+        "CEI": "Lo Spirito mi disse di andare con loro senza esitare. Vennero con me anche questi sei fratelli ed entrammo in casa di quell'uomo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Μείζονα ταύτης ἀγάπην οὐδεὶς ἔχει, ἵνα τις τὴν ψυχὴν αὐτοῦ θῇ ὑπὲρ τῶν φίλων αὐτοῦ.",
+        "VUL": "Majorem hac dilectionem nemo habet, ut animam suam ponat quis pro amicis suis.",
+        "SYN": "Нет больше той любви, как если кто положит душу свою за друзей своих.",
+        "NEO": "Il n’y a pas de plus grand amour que de donner sa vie pour ses amis.",
+        "NAB": "No one has greater love than this, to lay down one's life for one's friends.",
+        "VAT_ES": "No hay amor más grande que dar la vida por los amigos.",
+        "CEI": "Egli ci raccontò che aveva visto un angelo presentarsi in casa sua e dirgli: Manda a Giaffa e fà venire Simone detto anche Pietro;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ὑμεῖς φίλοι μου ἐστέ, ἐὰν ποιῆτε ὅσα ἐγὼ ἐντέλλομαι ὑμῖν.",
+        "VUL": "Vos amici mei estis, si feceritis quæ ego præcipio vobis.",
+        "SYN": "Вы друзья Мои, если исполняете то, что Я заповедую вам.",
+        "NEO": "Vous êtes mes amis, si vous faites ce que je vous commande.",
+        "NAB": "You are my friends if you do what I command you.",
+        "VAT_ES": "Ustedes son mis amigos si hacen lo que yo les mando.",
+        "CEI": "egli ti dirà parole per mezzo delle quali sarai salvato tu e tutta la tua famiglia."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Οὐκέτι ὑμᾶς λέγω δούλους, ὅτι ὁ δοῦλος οὐκ οἶδεν τί ποιεῖ αὐτοῦ ὁ κύριος· ὑμᾶς δὲ εἴρηκα φίλους, ὅτι πάντα ἃ ἤκουσα παρὰ τοῦ πατρός μου ἐγνώρισα ὑμῖν.",
+        "VUL": "Jam non dicam vos servos : quia servus nescit quid faciat dominus ejus. Vos autem dixi amicos : quia omnia quæcumque audivi a Patre meo, nota feci vobis.",
+        "SYN": "Я уже не называю вас рабами, ибо раб не знает, что делает господин его; но Я назвал вас друзьями, потому что сказал вам все, что слышал от Отца Моего.",
+        "NEO": "Je ne vous appelle plus serviteurs, parce que le serviteur ne sait pas ce que fait son maître ; mais je vous ai appelés amis, parce que tout ce que j’ai entendu de mon Père, je vous l’ai fait connaître.",
+        "NAB": "I no longer call you slaves, because a slave does not know what his master is doing. I have called you friends, because I have told you everything I have heard from my Father.",
+        "VAT_ES": "Ya no los llamo servidores, porque el servidor ignora lo que hace su señor; yo los llamo amigos, porque les he dado a conocer todo lo que oí de mi Padre.",
+        "CEI": "Avevo appena cominciato a parlare quando lo Spirito Santo scese su di loro, come in principio era sceso su di noi."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Οὐχ ὑμεῖς με ἐξελέξασθε, ἀλλ’ ἐγὼ ἐξελεξάμην ὑμᾶς, καὶ ἔθηκα ὑμᾶς, ἵνα ὑμεῖς ὑπάγητε καὶ καρπὸν φέρητε, καὶ ὁ καρπὸς ὑμῶν μένῃ· ἵνα ὅ τι ἂν αἰτήσητε τὸν πατέρα ἐν τῷ ὀνόματί μου, δῷ ὑμῖν.",
+        "VUL": "Non vos me elegistis, sed ego elegi vos, et posui vos ut eatis, et fructum afferatis, et fructus vester maneat : ut quodcumque petieritis Patrem in nomine meo, det vobis.",
+        "SYN": "Не вы Меня избрали, а Я вас избрал и поставил вас, чтобы вы шли и приносили плод, и чтобы плод ваш пребывал, дабы, чего ни попросите от Отца во имя Мое, Он дал вам.",
+        "NEO": "Ce n’est pas vous qui m’avez choisi ; mais c’est moi qui vous ai choisis et qui vous ai établis, pour que vous alliez et que vous portiez du fruit, que votre fruit demeure, et que le Père vous accorde ce que vous lui demanderez en mon nom.",
+        "NAB": "It was not you who chose me, but I who chose you and appointed you to go and bear fruit that will remain, so that whatever you ask the Father in my name he may give you.",
+        "VAT_ES": "No son ustedes los que me eligieron a mí, sino yo el que los elegí a ustedes, y los destiné para que vayan y den fruto, y ese fruto sea duradero. Así todo lo que pidan al Padre en mi Nombre, él se lo concederá.",
+        "CEI": "Mi ricordai allora di quella parola del Signore che diceva: Giovanni battezzò con acqua, voi invece sarete battezzati in Spirito Santo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Ταῦτα ἐντέλλομαι ὑμῖν, ἵνα ἀγαπᾶτε ἀλλήλους.",
+        "VUL": "Hæc mando vobis : ut diligatis invicem.",
+        "SYN": "Сие заповедаю вам, да любите друг друга.",
+        "NEO": "Ce que je vous commande, c’est de vous aimer les uns les autres.",
+        "NAB": "This I command you: love one another.",
+        "VAT_ES": "Lo que yo les mando es que se amen los unos a los otros.",
+        "CEI": "Se dunque Dio ha dato a loro lo stesso dono che a noi per aver creduto nel Signore Gesù Cristo, chi ero io per porre impedimento a Dio?\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Εἰ ὁ κόσμος ὑμᾶς μισεῖ, γινώσκετε ὅτι ἐμὲ πρῶτον ὑμῶν μεμίσηκεν.",
+        "VUL": "Si mundus vos odit, scitote quia me priorem vobis odio habuit.",
+        "SYN": "Если мир вас ненавидит, знайте, что Меня прежде вас возненавидел.",
+        "NEO": "Si le monde vous hait, sachez qu’il m’a haï le premier.",
+        "NAB": "\"If the world hates you, realize that it hated me first.",
+        "VAT_ES": "Si el mundo los odia, sepan que antes me ha odiado a mí.",
+        "CEI": "All'udir questo si calmarono e cominciarono a glorificare Dio dicendo: \"Dunque anche ai pagani Dio ha concesso che si convertano perché abbiano la vita!\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Εἰ ἐκ τοῦ κόσμου ἦτε, ὁ κόσμος ἂν τὸ ἴδιον ἐφίλει· ὅτι δὲ ἐκ τοῦ κόσμου οὐκ ἐστέ, ἀλλ’ ἐγὼ ἐξελεξάμην ὑμᾶς ἐκ τοῦ κόσμου, διὰ τοῦτο μισεῖ ὑμᾶς ὁ κόσμος.",
+        "VUL": "Si de mundo fuissetis, mundus quod suum erat diligeret : quia vero de mundo non estis, sed ego elegi vos de mundo, propterea odit vos mundus.",
+        "SYN": "Если бы вы были от мира, то мир любил бы свое; а как вы не от мира, но Я избрал вас от мира, потому ненавидит вас мир.",
+        "NEO": "Si vous étiez du monde, le monde aimerait ce qui lui appartiendrait en propre ; mais parce que vous n’êtes pas du monde, et que je vous ai choisis du milieu du monde, à cause de cela le monde vous hait.",
+        "NAB": "If you belonged to the world, the world would love its own; but because you do not belong to the world, and I have chosen you out of the world, the world hates you.",
+        "VAT_ES": "Si ustedes fueran del mundo, el mundo los amaría como cosa suya. Pero como no son del mundo, sino que yo los elegí y los saqué de él, él mundo los odia.",
+        "CEI": "Intanto quelli che erano stati dispersi dopo la persecuzione scoppiata al tempo di Stefano, erano arrivati fin nella Fenicia, a Cipro e ad Antiochia e non predicavano la parola a nessuno fuorchè ai Giudei."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Μνημονεύετε τοῦ λόγου οὗ ἐγὼ εἶπον ὑμῖν, Οὐκ ἔστιν δοῦλος μείζων τοῦ κυρίου αὐτοῦ. Εἰ ἐμὲ ἐδίωξαν, καὶ ὑμᾶς διώξουσιν· εἰ τὸν λόγον μου ἐτήρησαν, καὶ τὸν ὑμέτερον τηρήσουσιν.",
+        "VUL": "Mementote sermonis mei, quem ego dixi vobis : non est servus major domino suo. Si me persecuti sunt, et vos persequentur ; si sermonem meum servaverunt, et vestrum servabunt.",
+        "SYN": "Помните слово, которое Я сказал вам: раб не больше господина своего. Если Меня гнали, будут гнать и вас; если Мое слово соблюдали, будут соблюдать и ваше.",
+        "NEO": "Souvenez-vous de la parole que je vous ai dite : Le serviteur n’est pas plus grand que le maître. S’ils m’ont persécuté, ils vous persécuteront, vous aussi ; s’ils ont gardé ma parole, ils garderont aussi la vôtre.",
+        "NAB": "Remember the word I spoke to you, 'No slave is greater than his master.' If they persecuted me, they will also persecute you. If they kept my word, they will also keep yours.",
+        "VAT_ES": "Acuérdense de lo que les dije: el servidor no es más grande que su señor. Si me persiguieron a mí, también los perseguirán a ustedes; si fueron fieles a mi palabra, también serán fieles a la de ustedes.",
+        "CEI": "Ma alcuni fra loro, cittadini di Cipro e di Cirène, giunti ad Antiochia, cominciarono a parlare anche ai Greci, predicando la buona novella del Signore Gesù."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Ἀλλὰ ταῦτα πάντα ποιήσουσιν ὑμῖν διὰ τὸ ὄνομά μου, ὅτι οὐκ οἴδασιν τὸν πέμψαντά με.",
+        "VUL": "Sed hæc omnia facient vobis propter nomen meum : quia nesciunt eum qui misit me.",
+        "SYN": "Но все то сделают вам за имя Мое, потому что не знают Пославшего Меня.",
+        "NEO": "Mais ils vous feront toutes ces choses à cause de mon nom, parce qu’ils ne connaissent pas celui qui m’a envoyé.",
+        "NAB": "And they will do all these things to you on account of my name, because they do not know the one who sent me.",
+        "VAT_ES": "Pero los tratarán así a causa de mi Nombre, porque no conocen al que me envió.",
+        "CEI": "E la mano del Signore era con loro e così un gran numero credette e si convertì al Signore."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Εἰ μὴ ἦλθον καὶ ἐλάλησα αὐτοῖς, ἁμαρτίαν οὐκ εἶχον· νῦν δὲ πρόφασιν οὐκ ἔχουσιν περὶ τῆς ἁμαρτίας αὐτῶν.",
+        "VUL": "Si non venissem, et locutus fuissem eis, peccatum non haberent : nunc autem excusationem non habent de peccato suo.",
+        "SYN": "Если бы Я не пришел и не говорил им, то не имели бы греха; а теперь не имеют извинения во грехе своем.",
+        "NEO": "Si je n’étais pas venu, et que je ne leur eusse pas parlé, ils seraient sans péché ; mais maintenant leur péché est sans excuse.",
+        "NAB": "If I had not come and spoken to them, they would have no sin; but as it is they have no excuse for their sin.",
+        "VAT_ES": "Si yo hubiera venido ni les hubiera hablado, no tendrían pecado; pero ahora su pecado no tiene disculpa.",
+        "CEI": "La notizia giunse agli orecchi della Chiesa di Gerusalemme, la quale mandò Barnaba ad Antiochia."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Ὁ ἐμὲ μισῶν, καὶ τὸν πατέρα μου μισεῖ.",
+        "VUL": "Qui me odit, et Patrem meum odit.",
+        "SYN": "Ненавидящий Меня ненавидит и Отца Моего.",
+        "NEO": "Celui qui me hait, hait aussi mon Père.",
+        "NAB": "Whoever hates me also hates my Father.",
+        "VAT_ES": "El que me odia, odia también a mi Padre.",
+        "CEI": "Quando questi giunse e vide la grazia del Signore, si rallegrò e,"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Εἰ τὰ ἔργα μὴ ἐποίησα ἐν αὐτοῖς ἃ οὐδεὶς ἄλλος πεποίηκεν, ἁμαρτίαν οὐκ εἶχον· νῦν δὲ καὶ ἑωράκασιν καὶ μεμισήκασιν καὶ ἐμὲ καὶ τὸν πατέρα μου.",
+        "VUL": "Si opera non fecissem in eis quæ nemo alius fecit, peccatum non haberent : nunc autem et viderunt, et oderunt et me, et Patrem meum.",
+        "SYN": "Если бы Я не сотворил между ними дел, каких никто другой не делал, то не имели бы греха; а теперь и видели, и возненавидели и Меня и Отца Моего.",
+        "NEO": "Si je n’avais pas fait au milieu d’eux des œuvres que nul autre n’a faites, ils seraient sans péché ; mais maintenant ils ont vu, et ils me haïssent, moi et mon Père.",
+        "NAB": "If I had not done works among them that no one else ever did, they would not have sin; but as it is, they have seen and hated both me and my Father.",
+        "VAT_ES": "Si yo no hubiera hecho entre ellos obras que ningún otro realizó, no tendrían pecado. Pero ahora las han visto, y sin embargo, me odian a mí y a mi Padre,",
+        "CEI": "da uomo virtuoso qual era e pieno di Spirito Santo e di fede, esortava tutti a perseverare con cuore risoluto nel Signore. E una folla considerevole fu condotta al Signore."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ ἵνα πληρωθῇ ὁ λόγος ὁ γεγραμμένος ἐν τῷ νόμῳ αὐτῶν ὅτι Ἐμίσησάν με δωρεάν.",
+        "VUL": "Sed ut adimpleatur sermo, qui in lege eorum scriptus est : Quia odio habuerunt me gratis.",
+        "SYN": "Но да сбудется слово, написанное в законе их: возненавидели Меня напрасно.",
+        "NEO": "Mais cela est arrivé* afin que s’accomplît la parole qui est écrite dans leur Loi : ils m’ont haï sans sujet.+ 15:25 25. Ps. xxxv (héb.) 19 ; lxix (héb.) 5.*",
+        "NAB": "But in order that the word written in their law might be fulfilled, 'They hated me without cause.'",
+        "VAT_ES": "para que se cumpla lo que está escrito en la Ley: Me han odiado sin motivo.",
+        "CEI": "Barnaba poi partì alla volta di Tarso per cercare Saulo e trovatolo lo condusse ad Antiochia."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "¶Ὅταν δὲ ἔλθῃ ὁ παράκλητος, ὃν ἐγὼ πέμψω ὑμῖν παρὰ τοῦ πατρός, τὸ πνεῦμα τῆς ἀληθείας, ὃ παρὰ τοῦ πατρὸς ἐκπορεύεται, ἐκεῖνος μαρτυρήσει περὶ ἐμοῦ·",
+        "VUL": "Cum autem venerit Paraclitus, quem ego mittam vobis a Patre, Spiritum veritatis, qui a Patre procedit, ille testimonium perhibebit de me ;",
+        "SYN": "Когда же приидет Утешитель, Которого Я пошлю вам от Отца, Дух истины, Который от Отца исходит, Он будет свидетельствовать о Мне;",
+        "NEO": "Lorsque le Consolateur que je vous enverrai d’auprès du Père, l’Esprit de vérité qui procède du Père, sera venu, il rendra témoignage de moi.",
+        "NAB": "\"When the Advocate comes whom I will send you from the Father, the Spirit of truth that proceeds from the Father, he will testify to me.",
+        "VAT_ES": "Cuando venga el Paráclito que yo les enviaré desde el Padre, el Espíritu de la Verdad que proviene del Padre, él dará testimonio de mí.",
+        "CEI": "Rimasero insieme un anno intero in quella comunità e istruirono molta gente; ad Antiochia per la prima volta i discepoli furono chiamati Cristiani."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "καὶ ὑμεῖς δὲ μαρτυρεῖτε, ὅτι ἀπ’ ἀρχῆς μετ’ ἐμοῦ ἐστε.",
+        "VUL": "et vos testimonium perhibebitis, quia ab initio mecum estis.",
+        "SYN": "а также и вы будете свидетельствовать, потому что вы сначала со Мною.",
+        "NEO": "Et vous aussi, vous me* rendrez témoignage, parce que vous êtes avec moi dès le commencement. »",
+        "NAB": "And you also testify, because you have been with me from the beginning.",
+        "VAT_ES": "Y ustedes también dan testimonio, porque están conmigo desde el principio».",
+        "CEI": "In questo tempo alcuni profeti scesero ad Antiochia da Gerusalemme."
+      }
+    }
+  }
+}

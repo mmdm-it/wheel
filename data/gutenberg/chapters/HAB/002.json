@@ -1,0 +1,375 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "HAB_002",
+  "book_key": "HAB",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "עַל מִשְׁמַרְתִּ֣/י אֶעֱמֹ֔דָה וְ/אֶֽתְיַצְּבָ֖ה עַל מָצ֑וֹר וַ/אֲצַפֶּ֗ה לִ/רְאוֹת֙ מַה יְדַבֶּר בִּ֔/י וּ/מָ֥ה אָשִׁ֖יב עַל תּוֹכַחְתִּֽ/י׃",
+        "LXX": "Ἐπὶ τῆς φυλακῆς μου στήσομαι καὶ ἐπιβήσομαι ἐπὶ πέτραν, καὶ ἀποσκοπεύσω τοῦ ἰδεῖν τί λαλήσει ἐν ἐμοί, καὶ τί ἀποκριθῶ ἐπὶ τὸν ἔλεγχόν μου.",
+        "VUL": "[Super custodiam meam stabo,/ et figam gradum super munitionem :/ et contemplabor ut videam quid dicatur mihi,/ et quid respondeam ad arguentem me.]",
+        "SYN": "На стражу мою стал я и, стоя на башне, наблюдал, чтобы узнать, что скажет Он во мне, и что мне отвечать по жалобе моей?",
+        "NEO": "Je veux me tenir à mon poste, et me placer sur la tour de garde ; et j’observerai pour voir ce que me dira \\+w Yahweh|strong=\"H3068\"\\+w**, et ce que je répondrai à la remontrance qui me sera faite.",
+        "NAB": "I will stand at my guard post, and station myself upon the rampart, And keep watch to see what he will say to me, and what answer he will give to my complaint.",
+        "VAT_ES": "Me pondré en mi puesto de guardia y me apostaré sobre el muro; vigilaré para ver qué me dice el Señor, y qué responde a mi reproche.",
+        "CEI": "Mi metterò di sentinella, in piedi sulla fortezza, a spiare, per vedere che cosa mi dirà, che cosa risponderà ai miei lamenti."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲנֵ֤/נִי יְהוָה֙ וַ/יֹּ֔אמֶר כְּת֣וֹב חָז֔וֹן וּ/בָאֵ֖ר עַל הַ/לֻּח֑וֹת לְמַ֥עַן יָר֖וּץ ק֥וֹרֵא בֽ/וֹ׃",
+        "LXX": "καὶ ἀπεκρίθη πρὸς μὲ Κύριος καὶ εἶπεν Γράψον ὅρασιν καὶ σαφῶς εἰς πυξίον, ὅπως διώκῃ ὁ ἀναγινώσκων αὐτά.",
+        "VUL": "Et respondit mihi Dominus, et dixit : [Scribe visum, et explana eum super tabulas,/ ut percurrat qui legerit eum./",
+        "SYN": "И отвечал мне Господь и сказал: запиши видение и начертай ясно на скрижалях, чтобы читающий легко мог прочитать,",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** me répondit et dit :",
+        "NAB": "Then the LORD answered me and said: Write down the vision Clearly upon the tablets, so that one can read it readily.",
+        "VAT_ES": "El Señor me respondió y dijo: Escribe la visión, grábala sobre unas tablas para que se la pueda leer de corrido.",
+        "CEI": "Il Signore rispose e mi disse: \"Scrivi la visione e incidila bene sulle tavolette perchè la si legga speditamente."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כִּ֣י ע֤וֹד חָזוֹן֙ לַ/מּוֹעֵ֔ד וְ/יָפֵ֥חַ לַ/קֵּ֖ץ וְ/לֹ֣א יְכַזֵּ֑ב אִם יִתְמַהְמָהּ֙ חַכֵּה ל֔/וֹ כִּֽי בֹ֥א יָבֹ֖א לֹ֥א יְאַחֵֽר׃",
+        "LXX": "διότι ἔτι ὅρασις εἰς καιρόν, καὶ ἀνατελεῖ εἰς πέρας καὶ οὐκ εἰς κενόν· ἐὰν ὑστερήσῃ, ὑπόμεινον αὐτόν, ὅτι ἐρχόμενος ἥξει καὶ οὐ μὴ χρονίσῃ.",
+        "VUL": "Quia adhuc visus procul ;/ et apparebit in finem, et non mentietur :/ si moram fecerit, exspecta illum,/ quia veniens veniet, et non tardabit./",
+        "SYN": "ибо видение относится еще к определенному времени и говорит о конце и не обманет; и хотя бы и замедлило, жди его, ибо непременно сбудется, не отменится.",
+        "NEO": "Car il y a encore une vision pour un temps fixé ; elle se hâte vers son terme et ne mentira pas ; si elle tarde, attends-là, car elle arrivera certainement, elle ne manquera pas :",
+        "NAB": "For the vision still has its time, presses on to fulfillment, and will not disappoint; If it delays, wait for it, it will surely come, it will not be late.",
+        "VAT_ES": "Porque la visión aguarda el momento fijado, ansía llegar a término y no fallará; si parece que se demora, espérala, porque vendrá seguramente, y no tardará.",
+        "CEI": "È una visione che attesta un termine, parla di una scadenza e non mentisce; se indugia, attendila, perchè certo verrà e non tarderà\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הִנֵּ֣ה עֻפְּלָ֔ה לֹא יָשְׁרָ֥ה נַפְשׁ֖/וֹ בּ֑/וֹ וְ/צַדִּ֖יק בֶּ/אֱמוּנָת֥/וֹ יִחְיֶֽה׃",
+        "LXX": "ἐὰν ὑποστείληται, οὐκ εὐδοκεῖ ἡ ψυχή μου ἐν αὐτῷ· ὁ δὲ δίκαιος ἐκ πίστεώς μου ζήσεται.",
+        "VUL": "Ecce qui incredulus est, non erit recta anima ejus in semetipso ;/ justus autem in fide sua vivet./",
+        "SYN": "Вот, душа надменная не успокоится, а праведный своею верою жив будет.",
+        "NEO": "Celui dont l’âme s’enfle au-dedans de lui n’est pas dans le droit chemin ; mais le juste vivra par sa foi.",
+        "NAB": "The rash man has no integrity; but the just man, because of his faith, shall live. Wealth, too, is treacherous: the proud, unstable man -",
+        "VAT_ES": "El que no tiene el alma recta, sucumbirá, pero el justo vivirá por su fidelidad.",
+        "CEI": "Ecco, soccombe colui che non ha l'animo retto, mentre il giusto vivrà per la sua fede."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/אַף֙ כִּֽי הַ/יַּ֣יִן בּוֹגֵ֔ד גֶּ֥בֶר יָהִ֖יר וְ/לֹ֣א יִנְוֶ֑ה אֲשֶׁר֩ הִרְחִ֨יב כִּ/שְׁא֜וֹל נַפְשׁ֗/וֹ וְ/ה֤וּא כַ/מָּ֨וֶת֙ וְ/לֹ֣א יִשְׂבָּ֔ע וַ/יֶּאֱסֹ֤ף אֵלָי/ו֙ כָּל הַ/גּוֹיִ֔ם וַ/יִּקְבֹּ֥ץ אֵלָ֖י/ו כָּל הָ/עַמִּֽים׃",
+        "LXX": "ὁ δὲ κατοιόμενος καταφρονητής· οὐδὲν μὴ περάνῃ· ὃς ἐπλάτυνεν καθὼς ᾅδης τὴν ψυχὴν αὐτοῦ, καὶ οὗτος ὡς θάνατος οὐκ ἐμπιπλάμενος, καὶ ἐπισυνάξει ἐπ’ αὐτὸν πάντα τὰ ἔθνη, καὶ εἰσδέξεται πρὸς αὐτὸν πάντας τοὺς λαούς.",
+        "VUL": "Et quomodo vinum potantem decipit,/ sic erit vir superbus, et non decorabitur :/ qui dilatavit quasi infernus animam suam,/ et ipse quasi mors, et non adimpletur :/ et congregabit ad se omnes gentes,/ et coacervabit ad se omnes populos./",
+        "SYN": "Надменный человек, как бродящее вино, не успокаивается, так что расширяет душу свою как ад, и как смерть он ненасытен, и собирает к себе все народы, и захватывает себе все племена.",
+        "NEO": "Et de plus le vin est perfide ! L’homme arrogant ne subsistera pas, lui qui s’est fait un appétit large comme le schéol, qui, comme la mort, est insatiable ; il rassemble vers lui toutes les nations, et ramasse à lui tous les peuples.",
+        "NAB": "He who opens wide his throat like the nether world, and is insatiable as death, Who gathers to himself all the nations, and rallies to himself all the peoples -",
+        "VAT_ES": "&iexcl;Ciertamente, la riqueza es traidora, y el hombre presuntuoso no subsistirá, el que dilata su garganta como el Abismo y es insaciable como la Muerte, el que reúne para sí a todas las naciones y acapara para él a todos los pueblos!",
+        "CEI": "La ricchezza rende malvagi; il superbo non sussisterà; spalanca come gli inferi le sue fauci e, come la morte, non si sazia, attira a sé tutti i popoli, raduna per sé tutte le genti."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "הֲ/לוֹא אֵ֣לֶּה כֻלָּ֗/ם עָלָי/ו֙ מָשָׁ֣ל יִשָּׂ֔אוּ וּ/מְלִיצָ֖ה חִיד֣וֹת ל֑/וֹ וְ/יֹאמַ֗ר ה֚וֹי הַ/מַּרְבֶּ֣ה לֹּא ל֔/וֹ עַד מָתַ֕י וּ/מַכְבִּ֥יד עָלָ֖י/ו עַבְטִֽיט׃",
+        "LXX": "οὐχὶ ταῦτα πάντα παραβολὴν κατ’ αὐτοῦ λήμψονται καὶ πρόβλημα εἰς διήγησιν αὐτοῦ; καὶ ἐροῦσιν Οὐαὶ ὁ πληθύνων ἑαυτῷ τὰ οὐκ ὄντα αὐτοῦ· ἕως τίνος; καὶ βαρύνων τὸν κλοιὸν αὐτοῦ στιβαρῶς.",
+        "VUL": "Numquid non omnes isti super eum parabolam sument,/ et loquelam ænigmatum ejus, et dicetur :/ Væ ei qui multiplicat non sua ?/ usquequo et aggravat contra se densum lutum ?/",
+        "SYN": "Но не все ли они будут произносить о нем притчу и насмешливую песнь: \"горе тому, кто без меры обогащает себя не своим, - на долго ли? - и обременяет себя залогами!\"",
+        "NEO": "Est-ce que ceux-ci, eux tous, ne prononceront pas à son sujet des sentences, des fables et des énigmes à son adresse ? On dira : Malheur à qui amasse ce qui n’est pas à lui, — jusques à quand ? — à qui met sur soi un fardeau de gages !",
+        "NAB": "Shall not all these take up a taunt against him, satire and epigrams about him, to say: Woe to him who stores up what is not his: how long can it last! he loads himself down with debts.",
+        "VAT_ES": "&iquest;No entonarán todos estos contra él sátiras, sarcasmos y enigmas? Ellos dirán: &iexcl;Ay del que acumula lo que no le pertenece –&iquest;hasta cuándo?– y se carga de objeto prendados!",
+        "CEI": "Forse che tutti non lo canzoneranno, non faranno motteggi per lui? Diranno: Guai a chi accumula ciò che non è suo, - e fino a quando? - e si carica di pegni!"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "הֲ/ל֣וֹא פֶ֗תַע יָק֨וּמוּ֙ נֹשְׁכֶ֔י/ךָ וְ/יִקְצ֖וּ מְזַעְזְעֶ֑י/ךָ וְ/הָיִ֥יתָ לִ/מְשִׁסּ֖וֹת לָֽ/מוֹ׃",
+        "LXX": "ὅτι ἐξαίφνης ἀναστήσονται δάκνοντες αὐτόν, καὶ ἐκνήψουσιν οἱ ἐπίβουλοί σου, καὶ ἔσῃ εἰς διαρπαγὴν αὐτοῖς.",
+        "VUL": "Numquid non repente consurgent qui mordeant te,/ et suscitabuntur lacerantes te,/ et eris in rapinam eis ?/",
+        "SYN": "Не восстанут ли внезапно те, которые будут терзать тебя, и не поднимутся ли против тебя грабители, и ты достанешься им на расхищение?",
+        "NEO": "Tes créanciers ne se lèveront-ils pas soudain, tes bourreaux ne se réveilleront-ils pas, et ne deviendras-tu pas leur proie ?",
+        "NAB": "Shall not your creditors rise suddenly? Shall not they who make you tremble awake? You shall become their spoil!",
+        "VAT_ES": "&iquest;No se levantarán de repente tus acreedores, y no se despertarán tus expoliadores? &iexcl;Tú serás una buena presa para ellos!",
+        "CEI": "Forse che non sorgeranno a un tratto i tuoi creditori, non si sveglieranno i tuoi esattori e tu diverrai loro preda?"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּֽי אַתָּ֤ה שַׁלּ֨וֹתָ֙ גּוֹיִ֣ם רַבִּ֔ים יְשָׁלּ֖וּ/ךָ כָּל יֶ֣תֶר עַמִּ֑ים מִ/דְּמֵ֤י אָדָם֙ וַ/חֲמַס אֶ֔רֶץ קִרְיָ֖ה וְ/כָל יֹ֥שְׁבֵי בָֽ/הּ׃",
+        "LXX": "διότι ἐσκύλευσας ἔθνη πολλά, σκυλεύσουσιν πάντες οἱ ὑπολελιμμένοι λαοί, δι’ αἵματα ἀνθρώπων καὶ ἀσεβείας γῆς καὶ πὸλεως καὶ πάντων τῶν κατοικούντων αὐτήν.",
+        "VUL": "Quia tu spoliasti gentes multas,/ spoliabunt te omnes qui reliqui fuerint de populis,/ propter sanguinem hominis,/ et iniquitatem terræ, civitatis, et omnium habitantium in ea./",
+        "SYN": "Так как ты ограбил многие народы, то и тебя ограбят все остальные народы за пролитие крови человеческой, за разорение страны, города и всех живущих в нем.",
+        "NEO": "Parce que tu as dépouillé beaucoup de nations, tous les peuples qui restent te dépouilleront, à cause du sang humain répandu, des violences faites à la terre, à la ville et à tous ses habitants.",
+        "NAB": "Because you despoiled many peoples all the rest of the nations shall despoil you; Because of men's blood shed, and violence done to the land, to the city and to all who dwell in it.",
+        "VAT_ES": "Por haber despojado a numerosas naciones, lo que resta de esos pueblos te despojará a ti, a causa de la sangre humana derramada y de la violencia contra el país, contra la ciudad y todos sus habitantes.",
+        "CEI": "Poiché tu hai spogliato molte genti, gli altri popoli spoglieranno te, a causa del sangue umano versato, della violenza fatta alla regione, alla città e ai suoi abitanti."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "ה֗וֹי בֹּצֵ֛עַ בֶּ֥צַע רָ֖ע לְ/בֵית֑/וֹ לָ/שׂ֤וּם בַּ/מָּרוֹם֙ קִנּ֔/וֹ לְ/הִנָּצֵ֖ל מִ/כַּף רָֽע׃",
+        "LXX": "Ὢ ὁ πλεονεκτῶν πλεονεξίαν κακὴν τῷ οἴκῳ αὐτοῦ, τοῦ τάξαι εἰς ὕψος νοσσιὰν αὐτοῦ, τοῦ ἐκσπασθῆναι ἐκ χειρὸς κακῶν·",
+        "VUL": "Væ qui congregat avaritiam malam domui suæ,/ ut sit in excelso nidus ejus,/ et liberari se putat de manu mali !/",
+        "SYN": "Горе тому, кто жаждет неправедных приобретений для дома своего, чтобы устроить гнездо свое на высоте и тем обезопасить себя от руки несчастья!",
+        "NEO": "Malheur à qui amasse pour sa maison des gains iniques, afin de placer son nid bien haut, pour échapper à l’atteinte du malheur !",
+        "NAB": "Woe to him who pursues evil gain for his household, setting his nest on high to escape the reach of misfortune!",
+        "VAT_ES": "&iexcl;Ay del que acumula para su casa ganancias deshonestas, a fin de establecer en lo alto su nido y escapar a los golpes de la desgracia!",
+        "CEI": "Guai a chi è avido di lucro, sventura per la sua casa, per mettere il nido in luogo alto, e sfuggire alla stretta della sventura."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "יָעַ֥צְתָּ בֹּ֖שֶׁת לְ/בֵיתֶ֑/ךָ קְצוֹת עַמִּ֥ים רַבִּ֖ים וְ/חוֹטֵ֥א נַפְשֶֽׁ/ךָ׃",
+        "LXX": "ἐβουλεύσω αἰσχύνην τῷ οἴκῳ σου, συνεπέρανας λαοὺς πολλούς, καὶ ἐξήμαρτεν ἡ ψυχή σου·",
+        "VUL": "Cogitasti confusionem domui tuæ ;/ concidisti populos multos,/ et peccavit anima tua./",
+        "SYN": "Бесславие измыслил ты для твоего дома, истребляя многие народы, и согрешил против души твоей.",
+        "NEO": "Tu as médité la honte de ta maison ; en détruisant beaucoup de peuples, tu as péché contre toi-même.",
+        "NAB": "You have devised shame for your household, cutting off many peoples, forfeiting your own life:",
+        "VAT_ES": "Hiciste un proyecto vergonzoso para tu casa: al diezmar a numerosos pueblos, atentas contra tu propia vida.",
+        "CEI": "Hai decretato il disonore alla tua casa; hai soppresso popoli numerosi, hai fatto del male contro te stesso."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּי אֶ֖בֶן מִ/קִּ֣יר תִּזְעָ֑ק וְ/כָפִ֖יס מֵ/עֵ֥ץ יַעֲנֶֽ/נָּה׃",
+        "LXX": "διότι λίθος ἐκ τοίχου βοήσεται, καὶ κάνθαρος ἐκ ξύλου φθέγξεται αὐτά.",
+        "VUL": "Quia lapis de pariete clamabit,/ et lignum, quod inter juncturas ædificiorum est, respondebit./",
+        "SYN": "Камни из стен возопиют и перекладины из дерева будут отвечать им:",
+        "NEO": "Car la pierre criera de la muraille, et la poutre lui répondra de la charpente.",
+        "NAB": "For the stone in the wall shall cry out, and the beam in the woodwork shall answer it!",
+        "VAT_ES": "Porque la piedra gritará desde el muro y desde el armazón le responderá la viga.",
+        "CEI": "La pietra infatti griderà dalla parete e dal tavolato risponderà la trave."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "ה֛וֹי בֹּנֶ֥ה עִ֖יר בְּ/דָמִ֑ים וְ/כוֹנֵ֥ן קִרְיָ֖ה בְּ/עַוְלָֽה׃",
+        "LXX": "Οὐαὶ ὁ οἰκοδομῶν πόλιν ἐν αἵμασιν, καὶ ἑτοιμάζων πόλιν ἐν ἀδικίαις.",
+        "VUL": "Væ qui ædificat civitatem in sanguinibus,/ et præparat urbem in iniquitate !/",
+        "SYN": "\"горе строящему город на крови и созидающему крепости неправдою!\"",
+        "NEO": "Malheur à qui bâtit une ville dans le sang, et fonde une cité sur l’injustice !",
+        "NAB": "Woe to him who builds a city by bloodshed, and establishes a town by wickedness!",
+        "VAT_ES": "&iexcl;Ay del que edifica una ciudad con sangre y la funda sobre la injusticia!",
+        "CEI": "Guai a chi costruisce una città sul sangue e fonda un castello sull'iniquità."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הֲ/ל֣וֹא הִנֵּ֔ה מֵ/אֵ֖ת יְהוָ֣ה צְבָא֑וֹת וְ/יִֽיגְע֤וּ עַמִּים֙ בְּ/דֵי אֵ֔שׁ וּ/לְאֻמִּ֖ים בְּ/דֵי רִ֥יק יִעָֽפוּ׃",
+        "LXX": "οὐ ταῦτά ἐστιν παρὰ Κυρίου Παντοκράτορος; καὶ ἐξέλιπον λαοὶ ἱκανοὶ ἐν πυρί, καὶ ἔθνη πολλὰ ὠλιγοψύχησαν.",
+        "VUL": "Numquid non hæc sunt a Domino exercituum ?/ laborabunt enim populi in multo igne,/ et gentes in vacuum, et deficient./",
+        "SYN": "Вот, не от Господа ли Саваофа это, что народы трудятся для огня и племена мучат себя напрасно?",
+        "NEO": "N’est-ce pas, ceci, la volonté de \\+w Yahweh|strong=\"H3068\"\\+w** des armées : que les peuples travaillent pour le feu, et que les nations se fatiguent pour le néant ?",
+        "NAB": "Is not this from the LORD of hosts: peoples toil for the flames, and nations grow weary for nought!",
+        "VAT_ES": "&iquest;No proviene del Señor de los ejércitos que sólo para el fuego se fatiguen los pueblos y las naciones se extenúen por nada?",
+        "CEI": "Non è forse volere del Signore degli eserciti che i popoli fatichino per il fuoco e le nazioni si stanchino per un nulla?"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כִּ֚י תִּמָּלֵ֣א הָ/אָ֔רֶץ לָ/דַ֖עַת אֶת כְּב֣וֹד יְהוָ֑ה כַּ/מַּ֖יִם יְכַסּ֥וּ עַל יָֽם׃",
+        "LXX": "ὅτι ἐμπλησθήσεται ἡ γῆ τοῦ γνῶναι τὴν δόξαν Κυρίου, ὡς ὕδωρ κατακαλύψει αὐτούς.",
+        "VUL": "Quia replebitur terra, ut cognoscant gloriam Domini,/ quasi aquæ operientes mare./",
+        "SYN": "Ибо земля наполнится познанием славы Господа, как воды наполняют море.",
+        "NEO": "Car la terre sera remplie de la connaissance de la gloire de \\+w Yahweh|strong=\"H3068\"\\+w**, comme les eaux recouvrent le fond de la mer.",
+        "NAB": "But the earth shall be filled with the knowledge of the LORD'S glory as water covers the sea.",
+        "VAT_ES": "Porque la tierra se llenará del conocimiento de la gloria del Señor, como las aguas cubren el mar.",
+        "CEI": "Poiché, come le acque colmano il mare, così la terra dovrà riempirsi di conoscenza della gloria del Signore."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "ה֚וֹי מַשְׁקֵ֣ה רֵעֵ֔/הוּ מְסַפֵּ֥חַ חֲמָתְ/ךָ֖ וְ/אַ֣ף שַׁכֵּ֑ר לְמַ֥עַן הַבִּ֖יט עַל מְעוֹרֵי/הֶֽם׃",
+        "LXX": "Ὢ ὁ ποτίζων τὸν πλησίον αὐτοῦ ἀνατροπῇ θολερᾷ, καὶ μεθύσκων, ὅπως ἐπιβλέπῃ ἐπὶ τὰ σπήλαια αὐτῶν.",
+        "VUL": "Væ qui potum dat amico suo mittens fel suum,/ et inebrians ut aspiciat nuditatem ejus !/",
+        "SYN": "Горе тебе, который подаешь ближнему твоему питье с примесью злобы твоей и делаешь его пьяным, чтобы видеть срамоту его!",
+        "NEO": "Malheur à qui fait boire son prochain, à toi qui lui verses ta fureur jusqu’à l’enivrer, pour regarder sa nudité !",
+        "NAB": "Woe to you who give your neighbors a flood of your wrath to drink, and make them drunk, till their nakedness is seen!",
+        "VAT_ES": "&iexcl;Ay del que hace beber a su prójimo! &iexcl;Tú derramas tu veneno hasta embriagarlo, para contemplar su desnudez!",
+        "CEI": "Guai a chi fa bere i suoi vicini versando veleno per ubriacarli e scoprire le loro nudità."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "שָׂבַ֤עְתָּ קָלוֹן֙ מִ/כָּב֔וֹד שְׁתֵ֥ה גַם אַ֖תָּה וְ/הֵֽעָרֵ֑ל תִּסּ֣וֹב עָלֶ֗י/ךָ כּ֚וֹס יְמִ֣ין יְהוָ֔ה וְ/קִיקָל֖וֹן עַל כְּבוֹדֶֽ/ךָ׃",
+        "LXX": "πλησμονὴν ἀτιμίας ἐκ δόξης πίε καὶ σύ· καρδίᾳ σαλεύθητι καὶ σείσθητι· ἐκύκλωσεν ἐπὶ σὲ ποτήριον δεξιᾶς Κυρίου, καὶ συνήχθη ἀτιμία ἐπὶ τὴν δόξαν σου.",
+        "VUL": "Repletus es ignominia pro gloria ;/ bibe tu quoque, et consopire./ Circumdabit te calix dexteræ Domini,/ et vomitus ignominiæ super gloriam tuam./",
+        "SYN": "Ты пресытился стыдом вместо славы; пей же и ты и показывай срамоту, - обратится и к тебе чаша десницы Господней и посрамление на славу твою.",
+        "NEO": "Tu t’es rassasié d’opprobre, au lieu de gloire ; bois, toi aussi, et montre ton incirconcision ; la coupe de la droite de \\+w Yahweh|strong=\"H3068\"\\+w** se retournera sur toi ; l’ignominie couvrira ta gloire.",
+        "NAB": "You are filled with shame instead of glory; drink, you too, and stagger! On you shall revert the cup from the LORD'S right hand, and utter shame on your glory.",
+        "VAT_ES": "Te has saciado de ignominia, no de gloria; &iexcl;bebe tú también y muestra tu prepucio! El cáliz de la mano del Señor se volverá sobre ti, y tu gloria se convertirá en ignominia.",
+        "CEI": "Ti sei saziato di vergogna, non di gloria. Bevi, e ti colga il capogiro. Si riverserà su di te il calice della destra del Signore e la vergogna sopra il tuo onore,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כִּ֣י חֲמַ֤ס לְבָנוֹן֙ יְכַסֶּ֔/ךָּ וְ/שֹׁ֥ד בְּהֵמ֖וֹת יְחִיתַ֑/ן מִ/דְּמֵ֤י אָדָם֙ וַ/חֲמַס אֶ֔רֶץ קִרְיָ֖ה וְ/כָל יֹ֥שְׁבֵי בָֽ/הּ׃",
+        "LXX": "διότι ἀσέβεια τοῦ Λιβάνου καλύψει σε, καὶ ταλαιπωρία θηρίων πτοήσει σε, διὰ αἵματα ἀνθρώπων καὶ ἀσεβείας γῆς καὶ πόλεως καὶ πάντων τῶν κατοικούντων αὐτήν.",
+        "VUL": "Quia iniquitas Libani operiet te,/ et vastitas animalium deterrebit eos/ de sanguinibus hominum,/ et iniquitate terræ, et civitatis, et omnium habitantium in ea./",
+        "SYN": "Ибо злодейство твое на Ливане обрушится на тебя за истребление устрашенных животных, за пролитие крови человеческой, за опустошение страны, города и всех живущих в нем.",
+        "NEO": "Car la violence faite au Liban retombera sur toi, ainsi que la destruction des animaux frappés d’épouvante, à cause du sang humain répandu, des violences faites à la terre, à la ville et à tous ses habitants.",
+        "NAB": "For the violence done to Lebanon shall cover you, and the destruction of the beasts shall terrify you; Because of men's blood shed, and violence done to the land, to the city and to all who dwell in it.",
+        "VAT_ES": "Porque la violencia hecha al Líbano te cubrirá y la matanza de los animales te aterrará, a causa de la sangre humana derramada y de la violencia contra el país, contra la ciudad y todos sus habitantes.",
+        "CEI": "poiché lo scempio fatto al Libano ricadrà su di te e il massacro degli animali ti colmerà di spavento, a causa del sangue umano versato, della violenza fatta alla regione, alla città e a tutti i suoi abitanti."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "מָֽה הוֹעִ֣יל פֶּ֗סֶל כִּ֤י פְסָל/וֹ֙ יֹֽצְר֔/וֹ מַסֵּכָ֖ה וּ/מ֣וֹרֶה שָּׁ֑קֶר כִּ֣י בָטַ֞ח יֹצֵ֤ר יִצְר/וֹ֙ עָלָ֔י/ו לַ/עֲשׂ֖וֹת אֱלִילִ֥ים אִלְּמִֽים׃",
+        "LXX": "Τί ὠφελεῖ γλυπτόν, ὅτι ἔγλυψαν αὐτό; ἔπλασεν αὐτὸ χώνευμα, φαντασίαν ψευδῆ, ὅτι πέποιθεν ὁ πλάσας ἐπὶ τὸ πλάσμα αὐτοῦ τοῦ ποιῆσαι εἴδωλα κωφά.",
+        "VUL": "Quid prodest sculptile, quia sculpsit illud fictor suus,/ conflatile, et imaginem falsam ?/ quia speravit in figmento fictor ejus, ut faceret simulacra muta./",
+        "SYN": "Что за польза от истукана, сделанного художником, этого литаго лжеучителя, хотя ваятель, делая немые кумиры, полагается на свое произведение?",
+        "NEO": "A quoi sert l’image taillée, pour que son auteur la taille, l’idole de fonte, et l’oracle de mensonge, pour que l’auteur de cet ouvrage se confie en lui, en façonnant des divinités silencieuses ?",
+        "NAB": "Of what avail is the carved image, that its maker should carve it? Or the molten image and lying oracle, that its very maker should trust in it, and make dumb idols?",
+        "VAT_ES": "&iquest;De qué sirve una imagen esculpida, para que el artista la talle, o una imagen de metal fundido, un oráculo falso, para que el artista ponga su confianza en ella, fabricando ídolos mudos?",
+        "CEI": "A che giova un idolo perchè l'artista si dia pena di scolpirlo? O una statua fusa o un oracolo falso, perchè l'artista confidi in essi, scolpendo idoli muti?"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "ה֣וֹי אֹמֵ֤ר לָ/עֵץ֙ הָקִ֔יצָ/ה ע֖וּרִי לְ/אֶ֣בֶן דּוּמָ֑ם ה֣וּא יוֹרֶ֔ה הִנֵּה ה֗וּא תָּפוּשׂ֙ זָהָ֣ב וָ/כֶ֔סֶף וְ/כָל ר֖וּחַ אֵ֥ין בְּ/קִרְבּֽ/וֹ׃",
+        "LXX": "οὐαὶ ὁ λέγων τῷ ξύλῳ Ἔκνηψον ἐξεγέρθητι, καὶ τῷ λίθῳ Ὑψώθητι· καὶ αὐτό ἐστιν φαντασία, τοῦτο δέ ἐστιν ἔλασμα χρυσίου καὶ ἀργυρίου, καὶ πᾶν πνεῦμα οὐκ ἔστιν ἐν αὐτῷ.",
+        "VUL": "Væ qui dicit ligno : Expergiscere ;/ Surge, lapidi tacenti !/ Numquid ipse docere poterit ?/ ecce iste coopertus est auro et argento,/ et omnis spiritus non est in visceribus ejus./",
+        "SYN": "Горе тому, кто говорит дереву: \"встань!\" и бессловесному камню: \"пробудись!\" Научит ли он чему-нибудь? Вот, он обложен золотом и серебром, но дыхания в нем нет.",
+        "NEO": "Malheur à qui dit au bois : « Lève-toi ! » « Réveille-toi ! » à la pierre muette. Enseignera-t-elle ?... Voici qu’elle est plaquée d’or et d’argent, et il n’y a pas au dedans d’elle un souffle de vie.",
+        "NAB": "Woe to him who says to wood, \"Awake!\" to dumb stone, \"Arise!\" Can such a thing give oracles? See, it is overlaid with gold and silver, but there is no life breath in it.",
+        "VAT_ES": "&iexcl;Ay del que dice al madero: «Despierta», y a la piedra muda: «Levántate»! &iquest;Puede eso pronunciar un oráculo? &iexcl;Sin duda, está recubierto de oro y plata, pero no hay soplo de vida en su interior!",
+        "CEI": "Guai a chi dice al legno: \"Svegliati\", e alla pietra muta: \"Alzati\". Ecco, è ricoperta d'oro e d'argento ma dentro non c'è soffio vitale."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַֽ/יהוָ֖ה בְּ/הֵיכַ֣ל קָדְשׁ֑/וֹ הַ֥ס מִ/פָּנָ֖י/ו כָּל הָ/אָֽרֶץ׃",
+        "LXX": "ὁ δὲ κύριος ἐν ναῷ ἁγίῳ αὐτοῦ· εὐλαβείσθω ἀπὸ προσώπου πᾶσα ἡ γῆ.",
+        "VUL": "Dominus autem in templo sancto suo :/ sileat a facie ejus omnis terra !]",
+        "SYN": "А Господь - во святом храме Своем: да молчит вся земля пред лицем Его!",
+        "NEO": "Mais \\+w Yahweh|strong=\"H3068\"\\+w** est dans son saint temple ; tais-toi, devant lui, ô terre toute entière !",
+        "NAB": "But the LORD is in his holy temple; silence before him, all the earth!",
+        "VAT_ES": "El Señor reside en su santo Templo, &iexcl;guarde silencio toda la tierra delante de él!",
+        "CEI": "Il Signore risiede nel suo santo tempio. Taccia, davanti a lui, tutta la terra!"
+      }
+    }
+  }
+}

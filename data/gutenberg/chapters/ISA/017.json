@@ -1,0 +1,267 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_017",
+  "book_key": "ISA",
+  "sequence": 17,
+  "chapter_in": {
+    "MT": 17,
+    "VUL": 17,
+    "LXX": 17
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מַשָּׂ֖א דַּמָּ֑שֶׂק הִנֵּ֤ה דַמֶּ֨שֶׂק֙ מוּסָ֣ר מֵ/עִ֔יר וְ/הָיְתָ֖ה מְעִ֥י מַפָּלָֽה׃",
+        "LXX": "Τὸ ῥῆμα τὸ κατὰ Δαμασκοῦ. Ἰδοὺ Δαμασκὸς ἀρθήσεται ἀπὸ πόλεων, καὶ ἔσται εἰς πτῶσιν,",
+        "VUL": "Onus Damasci. [Ecce Damascus desinet esse civitas,/ et erit sicut acervus lapidum in ruina./",
+        "SYN": "Пророчество о Дамаске. - Вот, Дамаск исключается из _числа_ городов и будет грудою развалин.",
+        "NEO": "Oracle sur Damas.",
+        "NAB": "Oracle on Damascus: Lo, Damascus shall cease to be a city and become a ruin;",
+        "VAT_ES": "Oráculo sobre Damasco, &iexcl;Miren! damasco ya no será una ciudad, se ha convertido en un montón de ruinas,",
+        "CEI": "Oracolo su Damasco. Ecco, Damasco sarà eliminata dal numero delle città, diverrà un cumulo di rovine."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עֲזֻב֖וֹת עָרֵ֣י עֲרֹעֵ֑ר לַ/עֲדָרִ֣ים תִּֽהְיֶ֔ינָה וְ/רָבְצ֖וּ וְ/אֵ֥ין מַחֲרִֽיד׃",
+        "LXX": "καταλελιμμένη εἰς τὸν αἰῶνα, εἰς κοίτην ποιμνίων καὶ ἀνάπαυσιν, καὶ οὐκ ἔσται ὁ διώκων·",
+        "VUL": "Derelictæ civitates Aroër/ gregibus erunt,/ et requiescent ibi, et non erit qui exterreat./",
+        "SYN": "Города Ароерские будут покинуты, - останутся для стад, которые будут отдыхать там, и некому будет пугать их.",
+        "NEO": "Les villes d’Aroër sont abandonnées, elles sont livrées aux troupeaux, ils s’y reposent, et personne ne les chasse.",
+        "NAB": "Her cities shall be forever abandoned, given over to flocks to lie in undisturbed.",
+        "VAT_ES": "Sus poblaciones, abandonadas para siempre, serán para los rebaños: allí pacerán sin que nadie los moleste.",
+        "CEI": "Le sue borgate saranno abbandonate per sempre; saranno pascolo dei greggi che vi riposeranno senza esserne scacciati."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/נִשְׁבַּ֤ת מִבְצָר֙ מֵֽ/אֶפְרַ֔יִם וּ/מַמְלָכָ֥ה מִ/דַּמֶּ֖שֶׂק וּ/שְׁאָ֣ר אֲרָ֑ם כִּ/כְב֤וֹד בְּנֵֽי יִשְׂרָאֵל֙ יִֽהְי֔וּ נְאֻ֖ם יְהוָ֥ה צְבָאֽוֹת׃",
+        "LXX": "καὶ οὐκέτι ἔσται ὀχυρὰ τοῦ καταφυγεῖν Ἐφράιμ· καὶ οὐκέτι βασιλεία ἐν Δαμασκῷ καὶ τὸ λοιπὸν τῶν Σύρων· οὐ γὰρ σὺ βελτίων εἶ τῶν υἱῶν Ἰσραὴλ καὶ τῆς δόξης αὐτῶν.",
+        "VUL": "Et cessabit adjutorium ab Ephraim,/ et regnum a Damasco ;/ et reliquiæ Syriæ/ sicut gloria filiorum Israël erunt,/ dicit Dominus exercituum./",
+        "SYN": "Не станет твердыни Ефремовой и царства Дамасского с остальною Сириею; с ними будет то же, что со славою сынов Израиля, говорит Господь Саваоф.",
+        "NEO": "La forteresse sera ôtée à Ephraïm, et la royauté à Damas ; il en sera du reste de la Syrie comme de la gloire des enfants d’Israël, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w** des armées.",
+        "NAB": "The fortress shall be lost to Ephraim and the kingdom to Damascus; The remnant of Aram shall have the same glory as the Israelites, says the LORD of hosts.",
+        "VAT_ES": "Efraím perderá su plaza fuerte y Damasco; la realeza. El resto de Aram tendrá la misma suerte que la gloria de los hijos de Israel –oráculo del Señor de los ejércitos–.",
+        "CEI": "A Efraim sarà tolta la cittadella, a Damasco la sovranità. Al resto degli Aramei toccherà la stessa sorte della gloria degli Israeliti, oracolo del Signore degli eserciti."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֙ בַּ/יּ֣וֹם הַ/ה֔וּא יִדַּ֖ל כְּב֣וֹד יַעֲקֹ֑ב וּ/מִשְׁמַ֥ן בְּשָׂר֖/וֹ יֵרָזֶֽה׃",
+        "LXX": "Τάδε λέγει Κύριος σαβαώθ Ἔσται ἐν τῇ ἡμέρᾳ ἐκείνῃ ἔκλειψις δόξης Ἰακώβ, καὶ τὰ πίονα τῆς δόξης αὐτοῦ σεισθήσεται.",
+        "VUL": "Et erit in die illa :/ attenuabitur gloria Jacob,/ et pinguedo carnis ejus marcescet./",
+        "SYN": "И будет в тот день: умалится слава Иакова, и тучное тело его сделается тощим.",
+        "NEO": "Et il arrivera en ce jour-là : La gloire de Jacob sera flétrie, et la graisse de son corps sera amaigrie.",
+        "NAB": "On that day The glory of Jacob shall fade, and his full body grow thin,",
+        "VAT_ES": "Aquel día, disminuirá a la gloria de Jacob y enflaquecerá la gordura de su cuerpo.",
+        "CEI": "In quel giorno verrà ridotta la gloria di Giacobbe e la pinguedine delle sue membra dimagrirà."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה כֶּֽ/אֱסֹף֙ קָצִ֣יר קָמָ֔ה וּ/זְרֹע֖/וֹ שִׁבֳּלִ֣ים יִקְצ֑וֹר וְ/הָיָ֛ה כִּ/מְלַקֵּ֥ט שִׁבֳּלִ֖ים בְּ/עֵ֥מֶק רְפָאִֽים׃",
+        "LXX": "καὶ ἔσται ὃν τρόπον ἐάν τις συναγάγῃ ἀμητὸν ἑστηκότα καὶ σπέρμα σταχύων ἀμήσῃ, καὶ ἔσται ὃν τρόπον ἐάν τις συναγάγῃ στάχυν ἐν φάραγγι στερεᾷ,",
+        "VUL": "Et erit sicut congregans in messe quod restiterit,/ et brachium ejus spicas leget ;/ et erit sicut quærens spicas/ in valle Raphaim./",
+        "SYN": "То же будет, что по собрании хлеба жнецом, когда рука его пожнет колосья, и когда соберут колосья в долине Рефаимской.",
+        "NEO": "Il en sera comme lorsque le moissonneur rassemble les gerbes, et que son bras coupe les épis ; il en sera comme lorsqu’on ramasse les épis, dans la vallée de Raphaïm.",
+        "NAB": "Like the reaper's mere armful of stalks when he gathers the standing grain; Or as when one gleans the ears in the Valley of Rephaim.",
+        "VAT_ES": "Será como cuando el segador recoge la mies y su brazo siega las espigas, como cuando se desgranan las espigas en el valle de Refaím",
+        "CEI": "Avverrà come quando il mietitore prende una manciata di steli, e con l'altro braccio falcia le spighe, come quando si raccolgono le spighe nella valle dei Rèfaim,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/נִשְׁאַר בּ֤/וֹ עֽוֹלֵלֹת֙ כְּ/נֹ֣קֶף זַ֔יִת שְׁנַ֧יִם שְׁלֹשָׁ֛ה גַּרְגְּרִ֖ים בְּ/רֹ֣אשׁ אָמִ֑יר אַרְבָּעָ֣ה חֲמִשָּׁ֗ה בִּ/סְעִפֶ֨י/הָ֙ פֹּֽרִיָּ֔ה נְאֻם יְהוָ֖ה אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ καταλειφθῇ ἐν αὐτῇ καλάμη, ἢ ὡς ῥῶγες ἐλαίας δύο ἢ τρεῖς ἐπ’ ἄκρου μετεώρου, ἢ τέσσαρες ἢ πέντε ἐπὶ τῶν κλάδων αὐτῶν καταλειφθῇ. τάδε λέγει Κύριος ὁ θεὸς Ἰσραήλ.",
+        "VUL": "Et relinquetur in eo sicut racemus et sicut excussio oleæ/ duarum vel trium olivarum in summitate rami,/ sive quatuor aut quinque in cacuminibus ejus fructus ejus,/ dicit Dominus Deus Israël./",
+        "SYN": "И останутся у него, как бывает при обивании маслин, две-три ягоды на самой вершине, или четыре-пять на плодоносных ветвях, говорит Господь, Бог Израилев.",
+        "NEO": "Il restera un grappillage, comme lorsqu’on secoue l’olivier, deux, trois olives au haut de la cime, quatre, cinq aux branches de l’arbre, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël.",
+        "NAB": "Only a scattering of grapes shall be left! As when an olive tree has been beaten, Two or three olives remain at the very top, four or five on its fruitful branches, says the LORD, the God of Israel.",
+        "VAT_ES": "y sólo queda un residuo; o como cuando se golpea un olivo: quedan dos o tres aceitunas en lo alto de la copa, cuatro o cinco en las ramas del árbol frutal –oráculo del Señor, Dios de Israel–.",
+        "CEI": "Vi resteranno solo racimoli, come alla bacchiatura degli ulivi: due o tre bacche sulla cima dell'albero, quattro o cinque sui rami da frutto. Oracolo del Signore, Dio di Israele."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "בַּ/יּ֣וֹם הַ/ה֔וּא יִשְׁעֶ֥ה הָ/אָדָ֖ם עַל עֹשֵׂ֑/הוּ וְ/עֵינָ֕י/ו אֶל קְד֥וֹשׁ יִשְׂרָאֵ֖ל תִּרְאֶֽינָה׃",
+        "LXX": "τῇ ἡμέρᾳ ἐκείνῃ πεποιθὼς ἔσται ὁ ἄνθρωπος ἐπὶ τῷ ποιήσαντι αὐτόν, οἱ δὲ ὀφθαλμοὶ αὐτοῦ εἰς τὸν ἅγιον τοῦ Ἰσραὴλ ἐμβλέψονται,",
+        "VUL": "In die illa inclinabitur homo ad/ factorem suum,/ et oculi ejus ad Sanctum Israël respicient ;/",
+        "SYN": "В тот день обратит человек взор свой к Творцу своему, и глаза его будут устремлены к Святому Израилеву;",
+        "NEO": "En ce jour-là, l’homme regardera vers celui qui l’a fait, et ses yeux contempleront le Saint d’Israël.",
+        "NAB": "On that day man shall look to his maker, his eyes turned toward the Holy One of Israel.",
+        "VAT_ES": "Aquel día, el hombre volverá la mirada hacia su Creador, y sus ojos mirarán al Santo de Israel.",
+        "CEI": "In quel giorno si volgerà l'uomo al suo creatore e i suoi occhi guarderanno al Santo di Israele."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/לֹ֣א יִשְׁעֶ֔ה אֶל הַֽ/מִּזְבְּח֖וֹת מַעֲשֵׂ֣ה יָדָ֑י/ו וַ/אֲשֶׁ֨ר עָשׂ֤וּ אֶצְבְּעֹתָי/ו֙ לֹ֣א יִרְאֶ֔ה וְ/הָ/אֲשֵׁרִ֖ים וְ/הָ/חַמָּנִֽים׃",
+        "LXX": "καὶ οὐ μὴ πεποιθότες ὦσιν ἐπὶ τοῖς βωμοῖς οὐδὲ ἐπὶ τοῖς ἔργοις τῶν χειρῶν αὐτῶν ἃ ἐποίησαν οἱ δάκτυλοι αὐτῶν, καὶ οὐκ ὄψονται τὰ δένδρα οὐδὲ τὰ βδελύγματα αὐτῶν.",
+        "VUL": "et non inclinabitur ad altaria quæ fecerunt manus ejus ;/ et quæ operati sunt digiti ejus non respiciet/ lucos et delubra./",
+        "SYN": "и не взглянет на жертвенники, на дело рук своих, и не посмотрит на то, что сделали персты его, на кумиры Астарты и Ваала.",
+        "NEO": "Il ne regardera plus vers les autels, œuvre de ses mains ; il ne contemplera plus ce que ses doigts ont façonné, les aschérahs et les piliers du Soleil.",
+        "NAB": "He shall not look to the altars, his handiwork, nor shall he regard what his fingers have made: the sacred poles or the incense stands.",
+        "VAT_ES": "Ya no volverá la mirada hacia los altares que son obra de sus manos, ni mirará hacia los postes sagrados y los altares de incienso que fabricaron sus dedos.",
+        "CEI": "Non si volgerà agli altari, lavoro delle sue mani; non guarderà ciò che fecero le sue dita, i pali sacri e gli altari per l'incenso."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "בַּ/יּ֨וֹם הַ/ה֜וּא יִהְי֣וּ עָרֵ֣י מָעֻזּ֗/וֹ כַּ/עֲזוּבַ֤ת הַ/חֹ֨רֶשׁ֙ וְ/הָ֣/אָמִ֔יר אֲשֶׁ֣ר עָזְב֔וּ מִ/פְּנֵ֖י בְּנֵ֣י יִשְׂרָאֵ֑ל וְ/הָיְתָ֖ה שְׁמָמָֽה׃",
+        "LXX": "τῇ ἡμέρᾳ ἐκείνῃ ἔσονται αἱ πόλεις σου ἐγκαταλελιμμέναι ὃν τρόπον κατέλιπον οἱ Ἀμορραῖοι καὶ οἱ Εὑαῖοι ἀπὸ προσώπου τῶν υἱῶν Ἰσραήλ, καὶ ἔσονται ἔρημοι·",
+        "VUL": "In die illa erunt civitates fortitudinis ejus/ derelictæ sicut aratra, et segetes/ quæ derelictæ sunt a facie filiorum Israël ;/ et eris deserta./",
+        "SYN": "В тот день укрепленные города его будут, как развалины в лесах и на вершинах гор, оставленные пред сынами Израиля, - и будет пусто.",
+        "NEO": "En ce jour-là, ses villes fortes seront comme les villes abandonnées dans les bois et les montagnes, qui furent abandonnées devant les enfants d’Israël ; ce sera un désert.",
+        "NAB": "On that day his strong cities shall be like those abandoned by the Hivites and Amorites When faced with the children of Israel: they shall be laid waste.",
+        "VAT_ES": "Aquel día, tus ciudades de refugio serán abandonadas como las de los jivitas y los amorreos delante de los hijos de Israel, y habrá una desolación.",
+        "CEI": "In quel giorno avverrà alle tue fortezze come alle città abbandonate che l'Eveo e l'Amorreo evacuarono di fronte agli Israeliti e sarà una desolazione."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּ֤י שָׁכַ֨חַתְּ֙ אֱלֹהֵ֣י יִשְׁעֵ֔/ךְ וְ/צ֥וּר מָעֻזֵּ֖/ךְ לֹ֣א זָכָ֑רְתְּ עַל כֵּ֗ן תִּטְּעִי֙ נִטְעֵ֣י נַעֲמָנִ֔ים וּ/זְמֹ֥רַת זָ֖ר תִּזְרָעֶֽ/נּוּ׃",
+        "LXX": "διότι κατέλιπες τὸν θεὸν τὸν σωτῆρά σου, καὶ Κυρίου τοῦ βοηθοῦ σου οὐκ ἐμνήσθης. διὰ τοῦτο φυτεύσεις φύτευμα ἄπιστον καὶ σπέρμα ἄπιστον·",
+        "VUL": "Quia oblita es Dei salvatoris tui,/ et fortis adjutoris tui non es recordata :/ propterea plantabis plantationem fidelem,/ et germen alienum seminabis ;/",
+        "SYN": "Ибо ты забыл Бога спасения твоего, и не воспоминал о скале прибежища твоего; оттого развел увеселительные сады и насадил черенки от чужой лозы.",
+        "NEO": "Car tu as oublié le Dieu de ton salut, tu ne t’es pas souvenu du Rocher de ta force. C’est pourquoi tu plantes des plantations agréables, et tu y mets des ceps de l’étranger.",
+        "NAB": "For you have forgotten God, your savior, and remembered not the Rock, your strength. Therefore, though you plant your pagan plants and set out your foreign vine slips,",
+        "VAT_ES": "Porque tú has olvidado al Dios de tu salvación y no te has acordado de la Roca de tu refugio. Por eso plantas plantaciones deliciosas e injertas gajos extranjeros.",
+        "CEI": "Perché hai dimenticato Dio tuo salvatore e non ti sei ricordato della Roccia, tua fortezza. Tu pianti perciò piante amene e innesti tralci stranieri;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "בְּ/י֤וֹם נִטְעֵ/ךְ֙ תְּשַׂגְשֵׂ֔גִי וּ/בַ/בֹּ֖קֶר זַרְעֵ֣/ךְ תַּפְרִ֑יחִי נֵ֥ד קָצִ֛יר בְּ/י֥וֹם נַחֲלָ֖ה וּ/כְאֵ֥ב אָנֽוּשׁ׃",
+        "LXX": "τῇ δὲ ἡμέρᾳ ᾗ ἂν φυτεύσῃς, πλανηθήσῃ· τὸ δὲ πρωὶ ἐὰν σπείρῃς, ἀνθήσει εἰς ἀμητὸν ᾗ ἂν ἡμέρᾳ κληρώσῃ, καὶ ὡς πατὴρ ἀνθρώπου κληρώσῃ τοῖς υἱοῖς σου.",
+        "VUL": "in die plantationis tuæ labrusca,/ et mane semen tuum florebit ;/ ablata est messis in die hæreditatis,/ et dolebit graviter./",
+        "SYN": "В день насаждения твоего ты заботился, чтобы оно росло и чтобы посеянное тобою рано расцвело; но в день собирания не куча жатвы будет, но скорбь жестокая.",
+        "NEO": "Le jour ou tu les plantes, tu les entoures d’une clôture, et, le lendemain matin, tu fais fleurir tes semences ; et la moisson t’échappe au jour de la maladie et de la douleur mortelle !",
+        "NAB": "Though you make them grow the day you plant them and make your sprouts blossom on the next morning, The harvest shall disappear on the day of the grievous blow, the incurable blight.",
+        "VAT_ES": "El mismo día que plantas, los ves crecer, y a la mañana siguiente, ves germinar tu semilla. Pero la cosecha se pierde en un día funesto, y el dolor es incurable.",
+        "CEI": "di giorno le pianti, le vedi crescere e al mattino vedi fiorire i tuoi semi, ma svanirà il raccolto in un giorno di malattia e di dolore insanabile."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "ה֗וֹי הֲמוֹן֙ עַמִּ֣ים רַבִּ֔ים כַּ/הֲמ֥וֹת יַמִּ֖ים יֶהֱמָי֑וּ/ן וּ/שְׁא֣וֹן לְאֻמִּ֔ים כִּ/שְׁא֛וֹן מַ֥יִם כַּבִּירִ֖ים יִשָּׁאֽוּ/ן׃",
+        "LXX": "Οὐαὶ πλῆθος ἐθνῶν πολλῶν· ὡς θάλασσα κυμαίνουσα, οὕτως ταραχθήσεσθε, καὶ νῶτος ἐθνῶν πολλῶν ὡς ὕδωρ ἠχήσει·",
+        "VUL": "Væ multitudini populorum multorum,/ ut multitudo maris sonantis ;/ et tumultus turbarum,/ sicut sonitus aquarum multarum./",
+        "SYN": "Увы! шум народов многих! шумят они, как шумит море. Рев племен! они ревут, как ревут сильные воды.",
+        "NEO": "Oh ! Rumeur de peuples nombreux ! Ils mugissent comme mugissent les mers ! Grondement des nations ! Elles grondent comme grondent les eaux puissantes.",
+        "NAB": "Ah! the roaring of many peoples that roar like the roar of the seas! The surging of nations that surge like the surging of mighty waves!",
+        "VAT_ES": "&iexcl;Ah, ese rugido de pueblos numerosos, que rugen como rugen los mares! &iexcl;Ese bramido de naciones, que braman como las aguas encrespadas.",
+        "CEI": "Ah, il rumore di popoli immensi, rumore come il mugghio dei mari, fragore di nazioni come lo scroscio di acque che scorrono veementi."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "לְאֻמִּ֗ים כִּ/שְׁא֞וֹן מַ֤יִם רַבִּים֙ יִשָּׁא֔וּ/ן וְ/גָ֥עַר בּ֖/וֹ וְ/נָ֣ס מִ/מֶּרְחָ֑ק וְ/רֻדַּ֗ף כְּ/מֹ֤ץ הָרִים֙ לִ/פְנֵי ר֔וּחַ וּ/כְ/גַלְגַּ֖ל לִ/פְנֵ֥י סוּפָֽה׃",
+        "LXX": "ὡς ὕδωρ πολὺ ἔθνη πολλά, ὡς ὕδατος πολλοῦ βίᾳ φερομένου. καὶ ἀποσκορακιεῖ αὐτόν, καὶ πόρρω αὐτὸν διώξεται ὡς χνοῦν ἀχύρου λικμώντων ἀπέναντι ἀνέμου, καὶ ὡς κονιορτὸν τροχοῦ καταιγὶς φέρουσα.",
+        "VUL": "Sonabunt populi sicut sonitus aquarum inundantium,/ et increpabit eum, et fugiet procul ;/ et rapietur sicut pulvis montium a facie venti,/ et sicut turbo coram tempestate./",
+        "SYN": "Ревут народы, как ревут сильные воды; но Он погрозил им и они далеко побежали, и были гонимы, как прах по горам от ветра и как пыль от вихря.",
+        "NEO": "Les nations grondent comme grondent les grandes eaux. Mais il les menace : elles fuient au loin ; elles sont dispersées, comme la paille des hauteurs au souffle du vent, comme un tourbillon de poussière devant l’ouragan.",
+        "NAB": "But God shall rebuke them, and they shall flee far away; Windswept, like chaff on the mountains, like tumbleweed in a storm.",
+        "VAT_ES": "El los amenaza, y huyen bien lejos, empujados como paja por el viento de las montañas, como la flor del cardo por el vendaval.",
+        "CEI": "Le nazioni fanno fragore come il fragore di molte acque, ma il Signore le minaccia, esse fuggono lontano; come pula sono disperse sui monti dal vento e come mulinello di polvere dinanzi al turbine."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לְ/עֵ֥ת עֶ֨רֶב֙ וְ/הִנֵּ֣ה בַלָּהָ֔ה בְּ/טֶ֥רֶם בֹּ֖קֶר אֵינֶ֑/נּוּ זֶ֚ה חֵ֣לֶק שׁוֹסֵ֔י/נוּ וְ/גוֹרָ֖ל לְ/בֹזְזֵֽי/נוּ׃",
+        "LXX": "πρὸς ἑσπέραν, καὶ ἔσται πένθος· πρὶν ἢ πρωί, καὶ οὐκ ἔσται. αὕτη ἡ μερὶς τῶν ὑμᾶς προνομευσάντων, καὶ κληρονομία τοῖς ὑμᾶς κληρονομήσασιν.",
+        "VUL": "In tempore vespere, et ecce turbatio ;/ in matutino, et non subsistet./ Hæc est pars eorum qui vastaverunt nos,/ et sors diripientium nos.]",
+        "SYN": "Вечер - и вот ужас! и прежде утра уже нет его. Такова участь грабителей наших, жребий разорителей наших.",
+        "NEO": "Au temps du soir, voici la consternation ; avant le matin, ils ne sont plus. Voilà le partage de ceux qui nous pillent, et le sort de ceux qui nous dépouillent.",
+        "NAB": "In the evening, they spread terror, before morning, they are gone! Such is the portion of those who despoil us, the lot of those who plunder us.",
+        "VAT_ES": "&iexcl;Al atardecer, sobreviene el espanto, antes del amanecer, ya no existen más! Esta es la parte de los que nos despojan y la suerte de los que nos saquean.",
+        "CEI": "Alla sera, ecco era tutto uno spavento, prima del mattino non è già più. Questo è il destino dei nostri predatori e la sorte dei nostri saccheggiatori."
+      }
+    }
+  }
+}

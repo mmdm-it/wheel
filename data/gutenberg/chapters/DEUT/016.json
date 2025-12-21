@@ -1,0 +1,410 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_016",
+  "book_key": "DEUT",
+  "sequence": 16,
+  "chapter_in": {
+    "MT": 16,
+    "VUL": 16,
+    "LXX": 16
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שָׁמוֹר֙ אֶת חֹ֣דֶשׁ הָ/אָבִ֔יב וְ/עָשִׂ֣יתָ פֶּ֔סַח לַ/יהוָ֖ה אֱלֹהֶ֑י/ךָ כִּ֞י בְּ/חֹ֣דֶשׁ הָֽ/אָבִ֗יב הוֹצִ֨יאֲ/ךָ֜ יְהוָ֧ה אֱלֹהֶ֛י/ךָ מִ/מִּצְרַ֖יִם לָֽיְלָה׃",
+        "LXX": "Φύλαξαι τὸν μῆνα τῶν νέων, καὶ ποιήσεις τὸ πάσχα Κυρίῳ τῷ θεῷ σου, ὅτι ἐν τῷ μηνὶ τῶν νέων ἐξῆλθες ἐξ Αἰγύπτου νυκτός.",
+        "VUL": "Observa mensem novarum frugum, et verni primum temporis, ut facias Phase Domino Deo tuo : quoniam in isto mense eduxit te Dominus Deus tuus de Ægypto nocte.",
+        "SYN": "Наблюдай месяц Авив, и совершай Пасху Господу, Богу твоему, потому что в месяце Авиве вывел тебя Господь, Бог твой, из Египта ночью.",
+        "NEO": "Observe le mois d’Abib et célèbre la Pâque en l’honneur de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu ; car c’est au mois d’Abib que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’a fait sortir d’Égypte, pendant la nuit.",
+        "NAB": "\"Observe the month of Abib by keeping the Passover of the LORD, your God, since it was in the month of Abib that he brought you by night out of Egypt.",
+        "VAT_ES": "Solemniza el mes de Abib celebrando en él la Pascua en honor del Señor, tu Dios, porque una noche del mes de Abib él te hizo salir de Egipto.",
+        "CEI": "Osserva il mese di Abib e celebra la pasqua in onore del Signore tuo Dio perché nel mese di Abib il Signore tuo Dio ti ha fatto uscire dall'Egitto, durante la notte."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/זָבַ֥חְתָּ פֶּ֛סַח לַ/יהוָ֥ה אֱלֹהֶ֖י/ךָ צֹ֣אן וּ/בָקָ֑ר בַּ/מָּקוֹם֙ אֲשֶׁר יִבְחַ֣ר יְהוָ֔ה לְ/שַׁכֵּ֥ן שְׁמ֖/וֹ שָֽׁם׃",
+        "LXX": "καὶ θύσεις τὸ πάσχα Κυρίῳ τῷ θεῷ σου, πρόβατα καὶ βόας, ἐν τῷ τόπῳ ᾧ ἐὰν ἐκλέξηται Κύριος ὁ θεός σου αὐτὸν ἐπικληθῆναι τὸ ὄνομα αὐτοῦ ἐκεῖ.",
+        "VUL": "Immolabisque Phase Domino Deo tuo de ovibus, et de bobus, in loco quem elegerit Dominus Deus tuus, ut habitet nomen ejus ibi.",
+        "SYN": "И заколай Пасху Господу, Богу твоему, из мелкого и крупного скота на месте, которое изберет Господь, чтобы пребывало там имя Его.",
+        "NEO": "Tu immoleras la Pâque à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, les brebis et les bœufs, au lieu que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, aura choisi pour y faire habiter son nom.",
+        "NAB": "You shall offer the Passover sacrifice from your flock or your herd to the LORD, your God, in the place which he chooses as the dwelling place of his name.",
+        "VAT_ES": "Inmola al Señor, tu Dios, como víctima pascual, un animal del ganado mayor o menor, en el lugar que él elija para constituirlo morada de su Nombre.",
+        "CEI": "Immolerai la pasqua al Signore tuo Dio: un sacrificio di bestiame grosso e minuto, nel luogo che il Signore avrà scelto per stabilirvi il suo nome."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "לֹא תֹאכַ֤ל עָלָי/ו֙ חָמֵ֔ץ שִׁבְעַ֥ת יָמִ֛ים תֹּֽאכַל עָלָ֥י/ו מַצּ֖וֹת לֶ֣חֶם עֹ֑נִי כִּ֣י בְ/חִפָּז֗וֹן יָצָ֨אתָ֙ מֵ/אֶ֣רֶץ מִצְרַ֔יִם לְמַ֣עַן תִּזְכֹּר֔ אֶת י֤וֹם צֵֽאתְ/ךָ֙ מֵ/אֶ֣רֶץ מִצְרַ֔יִם כֹּ֖ל יְמֵ֥י חַיֶּֽי/ךָ׃",
+        "LXX": "οὐ φάγῃ ἐπ’ αὐτοῦ ζύμην· ἑπτὰ ἡμέρας φάγῃ ἐπ’ αὐτοῦ ἄζυμα, ἄρτον κακώσεως, ὅτι ἐν σπουδῇ ἐξήλθετε ἐξ Αἰγύπτου, ἵνα μνησθῆτε τὴν ἡμέραν τῆς ἐξοδίας ὑμῶν ἐκ γῆς Αἰγύπτου πάσας τὰς ἡμέρας τῆς ζωῆς ὑμῶν.",
+        "VUL": "Non comedes in eo panem fermentatum : septem diebus comedes absque fermento afflictionis panem, quoniam in pavore egressus es de Ægypto : ut memineris diei egressionis tuæ de Ægypto, omnibus diebus vitæ tuæ.",
+        "SYN": "Не ешь с нею квасного; семь дней ешь с нею опресноки, хлебы бедствия, ибо ты с поспешностью вышел из земли Египетской, дабы ты помнил день исшествия своего из земли Египетской во все дни жизни твоей;",
+        "NEO": "Avec ces victimes, tu ne mangeras pas du pain levé, mais pendant sept jours tu mangeras des pains sans levain, du pain d’affliction, — car c’est en hâte que tu es sorti du pays d’Égypte, — afin que tu te souviennes toute ta vie du jour où tu es sorti d’Égypte.",
+        "NAB": "You shall not eat leavened bread with it. For seven days you shall eat with it only unleavened bread, the bread of affliction, that you may remember as long as you live the day of your departure from the land of Egypt; for in frightened haste you left the land of Egypt.",
+        "VAT_ES": "No comas la víctima con pan fermentado. Durante siete días comerás pan sin levadura, que es un pan de aflicción, porque tú saliste precipitadamente de Egipto: así te acordarás siempre del día en que saliste de Egipto.",
+        "CEI": "Non mangerai con essa pane lievitato; per sette giorni mangerai con essa gli azzimi, pane di afflizione perché sei uscito in fretta dal paese d'Egitto; e così per tutto il tempo della tua vita tu ti ricorderai il giorno in cui sei uscito dal paese d'Egitto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא יֵרָאֶ֨ה לְ/ךָ֥ שְׂאֹ֛ר בְּ/כָל גְּבֻלְ/ךָ֖ שִׁבְעַ֣ת יָמִ֑ים וְ/לֹא יָלִ֣ין מִן הַ/בָּשָׂ֗ר אֲשֶׁ֨ר תִּזְבַּ֥ח בָּ/עֶ֛רֶב בַּ/יּ֥וֹם הָ/רִאשׁ֖וֹן לַ/בֹּֽקֶר׃",
+        "LXX": "οὐκ ὀφθήσεταί σοι ζύμη ἐν πᾶσι τοῖς ὁρίοις σου ἑπτὰ ἡμέρας, καὶ οὐ κοιμηθήσεται ἀπὸ τῶν κρεῶν ὧν ἐὰν θύσῃς τὸ ἑσπέρας τῇ ἡμέρᾳ τῇ πρώτῃ εἰς τὸ πρωί.",
+        "VUL": "Non apparebit fermentum in omnibus terminis tuis septem diebus, et non remanebit de carnibus ejus, quod immolatum est vespere in die primo, usque mane.",
+        "SYN": "не должно находиться у тебя ничто квасное во всем уделе твоем в продолжение семи дней, и из мяса, которое ты принес в жертву вечером в первый день, ничто не должно оставаться до утра.",
+        "NEO": "On ne verra pas chez toi de levain, dans toute l’étendue de ton territoire, pendant sept jours, et aucune partie des victimes que tu auras immolées le soir du premier jour ne restera pendant la nuit jusqu’au matin.",
+        "NAB": "Nothing leavened may be found in all your territory for seven days, and none of the meat which you sacrificed on the evening of the first day shall be kept overnight for the next day.",
+        "VAT_ES": "Estos siete días la levadura no deberá verse en todo tu territorio, y tampoco quedarán para el día siguiente restos de la carne sacrificada al atardecer del primer día.",
+        "CEI": "Non si veda lievito presso di te, entro tutti i tuoi confini, per sette giorni; della carne, che avrai immolata la sera del primo giorno, non resti nulla fino al mattino."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לֹ֥א תוּכַ֖ל לִ/זְבֹּ֣חַ אֶת הַ/פָּ֑סַח בְּ/אַחַ֣ד שְׁעָרֶ֔י/ךָ אֲשֶׁר יְהוָ֥ה אֱלֹהֶ֖י/ךָ נֹתֵ֥ן לָֽ/ךְ׃",
+        "LXX": "οὐ δυνήσῃ θῦσαι τὸ πάσχα ἐν οὐδεμιᾷ τῶν πόλεών σου ὧν Κύριος ὁ θεός σου δίδωσίν σοι·",
+        "VUL": "Non poteris immolare Phase in qualibet urbium tuarum, quas Dominus Deus tuus daturus est tibi,",
+        "SYN": "Не можешь ты заколать Пасху в котором-нибудь из жилищ твоих, которые Господь, Бог твой, даст тебе;",
+        "NEO": "Tu ne pourras pas sacrifier la Pâque dans chacune de tes villes que te donnera \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu ;",
+        "NAB": "\"You may not sacrifice the Passover in any of the communities which the LORD, your God, gives you;",
+        "VAT_ES": "No inmoles la víctima pascual en cualquiera de las ciudades que el Señor, tu Dios, te dará.",
+        "CEI": "Non potrai immolare la pasqua in una qualsiasi città che il Signore tuo Dio sta per darti,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כִּ֠י אִֽם אֶל הַ/מָּק֞וֹם אֲשֶׁר יִבְחַ֨ר יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ לְ/שַׁכֵּ֣ן שְׁמ֔/וֹ שָׁ֛ם תִּזְבַּ֥ח אֶת הַ/פֶּ֖סַח בָּ/עָ֑רֶב כְּ/ב֣וֹא הַ/שֶּׁ֔מֶשׁ מוֹעֵ֖ד צֵֽאתְ/ךָ֥ מִ/מִּצְרָֽיִם׃",
+        "LXX": "ἀλλ’ ἢ εἰς τὸν τόπον ὃν ἐὰν ἐκλέξηται Κύριος ὁ θεός σου ἐπικληθῆναι τὸ ὄνομα αὐτοῦ ἐκεῖ, θύσεις τὸ πάσχα ἑσπέρας πρὸς δυσμὰς ἡλίου ἐν τῷ καιρῷ ᾧ ἐξῆλθες ἐξ Αἰγύπτου·",
+        "VUL": "sed in loco quem elegerit Dominus Deus tuus, ut habitet nomen ejus ibi : immolabis Phase vespere ad solis occasum, quando egressus es de Ægypto.",
+        "SYN": "но только на том месте, которое изберет Господь, Бог твой, чтобы пребывало там имя Его, заколай Пасху вечером при захождении солнца, в то самое время, в которое ты вышел из Египта;",
+        "NEO": "mais c’est au lieu que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, aura choisi pour y faire habiter son nom, que tu sacrifieras la Pâque, le soir, au coucher du soleil, au temps de ta sortie d’Égypte.",
+        "NAB": "only at the place which he chooses as the dwelling place of his name, and in the evening at sunset, on the anniversary of your departure from Egypt, shall you sacrifice the Passover.",
+        "VAT_ES": "La inmolarás únicamente en el lugar que el elija para constituirlo morada de su Nombre, y lo harás al atardecer, cuando se ponga el sol, a la misma hora en que saliste de Egipto.",
+        "CEI": "ma immolerai la pasqua soltanto nel luogo che il Signore tuo Dio avrà scelto per fissarvi il suo nome; la immolerai alla sera, al tramonto del sole, nell'ora in cui sei uscito dall'Egitto."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וּ/בִשַּׁלְתָּ֙ וְ/אָ֣כַלְתָּ֔ בַּ/מָּק֕וֹם אֲשֶׁ֥ר יִבְחַ֛ר יְהוָ֥ה אֱלֹהֶ֖י/ךָ בּ֑/וֹ וּ/פָנִ֣יתָ בַ/בֹּ֔קֶר וְ/הָלַכְתָּ֖ לְ/אֹהָלֶֽי/ךָ׃",
+        "LXX": "καὶ ἑψήσεις καὶ ὀπτήσεις καὶ φάγῃ ἐν τῷ τόπῳ οὗ ἐὰν ἐκλέξηται Κύριος ὁ θεός σου αὐτόν· καὶ ἀποστραφήσῃ τὸ πρωὶ καὶ ἐλεύσῃ εἰς τοὺς οἴκους σου.",
+        "VUL": "Et coques, et comedes in loco quem elegerit Dominus Deus tuus, maneque consurgens vades in tabernacula tua.",
+        "SYN": "и испеки и съешь на том месте, которое изберет Господь, Бог твой, а на другой день можешь возвратиться и войти в шатры твои.",
+        "NEO": "Tu feras cuire la victime et tu la mangeras au lieu qu’aura choisi \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu ; et tu t’en retourneras le matin pour aller dans tes tentes.",
+        "NAB": "You shall cook and eat it at the place the LORD, your God, chooses; then in the morning you may return to your tents.",
+        "VAT_ES": "Cocerás y comerás la víctima en el lugar que el Señor, tu Dios, elija, y a la mañana siguiente emprenderás el camino de regreso a tu casa.",
+        "CEI": "Farai cuocere la vittima e la mangerai nel luogo che il Signore tuo Dio avrà scelto; la mattina te ne potrai tornare e andartene alle tue tende."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "שֵׁ֥שֶׁת יָמִ֖ים תֹּאכַ֣ל מַצּ֑וֹת וּ/בַ/יּ֣וֹם הַ/שְּׁבִיעִ֗י עֲצֶ֨רֶת֙ לַ/יהוָ֣ה אֱלֹהֶ֔י/ךָ לֹ֥א תַעֲשֶׂ֖ה מְלָאכָֽה׃",
+        "LXX": "ἓξ ἡμέρας φάγῃ ἄζυμα, καὶ τῇ ἡμέρᾳ τῇ ἑβδόμῃ ἐξόδιον, ἑορτὴ Κυρίῳ τῷ θεῷ σου· οὐ ποιήσεις ἐν αὐτῇ πᾶν ἔργον, πλὴν ὅσα ποιηθήσεται ψυχῇ.",
+        "VUL": "Sex diebus comedes azyma : et in die septima, quia collecta est Domini Dei tui, non facies opus.",
+        "SYN": "Шесть дней ешь пресные хлебы, а в седьмой день отдание праздника Господу, Богу твоему; не занимайся работою.",
+        "NEO": "Pendant six jours, tu mangeras des pains sans levain, et le septième jour sera l’assemblée solennelle en l’honneur de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu : tu ne feras aucun ouvrage.",
+        "NAB": "For six days you shall eat unleavened bread, and on the seventh there shall be a solemn meeting in honor of the LORD, your God; on that day you shall not do any sort of work.",
+        "VAT_ES": "Durante seis días comerás pan sin levadura, y el séptimo día harás una asamblea litúrgica en honor del Señor, tu Dios. Ese día no realizarás ningún trabajo.",
+        "CEI": "Per sei giorni mangerai azzimi e il settimo giorno vi sarà una solenne assemblea per il Signore tuo Dio; non farai alcun lavoro."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "שִׁבְעָ֥ה שָׁבֻעֹ֖ת תִּסְפָּר לָ֑/ךְ מֵ/הָחֵ֤ל חֶרְמֵשׁ֙ בַּ/קָּמָ֔ה תָּחֵ֣ל לִ/סְפֹּ֔ר שִׁבְעָ֖ה שָׁבֻעֽוֹת׃",
+        "LXX": "ἑπτὰ ἑβδομάδας ἐξαριθμήσεις σεαυτῷ· ἀρξαμένου σου δρέπανον ἐπ’ ἀμητὸν ἄρξῃ ἐξαριθμῆσαι ἑπτὰ ἑβδομάδας.",
+        "VUL": "Septem hebdomadas numerabis tibi ab ea die qua falcem in segetem miseris.",
+        "SYN": "Семь седмиц отсчитай себе; начинай считать семь седмиц с того времени, как появится серп на жатве;",
+        "NEO": "Tu compteras sept semaines ; dès que la faucille sera mise au blé, tu commenceras à compter sept semaines ;",
+        "NAB": "\"You shall count off seven weeks, computing them from the day when the sickle is first put to the standing grain.",
+        "VAT_ES": "Cuenta siete semanas a partir del momento en que empieces a cosechar,",
+        "CEI": "Conterai sette settimane; da quando si metterà la falce nella messe comincerai a contare sette settimane;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/עָשִׂ֜יתָ חַ֤ג שָׁבֻעוֹת֙ לַ/יהוָ֣ה אֱלֹהֶ֔י/ךָ מִסַּ֛ת נִדְבַ֥ת יָדְ/ךָ֖ אֲשֶׁ֣ר תִּתֵּ֑ן כַּ/אֲשֶׁ֥ר יְבָרֶכְ/ךָ֖ יְהוָ֥ה אֱלֹהֶֽי/ךָ׃",
+        "LXX": "Καὶ ποιήσεις ἑορτὴν ἑβδομάδων Κυρίῳ τῷ θεῷ σου καθότι ἡ χείρ σου ἰσχύει, ὅσα ἂν δῷ Κύριος ὁ θεός σου·",
+        "VUL": "Et celebrabis diem festum hebdomadarum Domino Deo tuo, oblationem spontaneam manus tuæ, quam offeres juxta benedictionem Domini Dei tui :",
+        "SYN": "тогда совершай праздник седмиц Господу, Богу твоему, по усердию руки твоей, сколько ты дашь, смотря по тому, чем благословит тебя Господь, Бог твой;",
+        "NEO": "et tu célébreras la fête des Semaines en l’honneur de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, avec les offrandes volontaires de tes mains, que tu feras selon que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’auras béni.",
+        "NAB": "You shall then keep the feast of Weeks in honor of the LORD, your God, and the measure of your own freewill offering shall be in proportion to the blessing the LORD, your God, has bestowed on you.",
+        "VAT_ES": "y al término de ellas celebrarás la fiesta de las Semanas en honor del Señor, tu Dios, llevando tus ofrendas voluntarias, en la medida en que el Señor, tu Dios, llevando tus ofrendas voluntarias, en la medida en que el Señor, tu Dios, te bendiga.",
+        "CEI": "poi celebrerai la festa delle settimane per il Signore tuo Dio, offrendo nella misura della tua generosità e in ragione di ciò in cui il Signore tuo Dio ti avrà benedetto."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/שָׂמַחְתָּ֞ לִ/פְנֵ֣י יְהוָ֣ה אֱלֹהֶ֗י/ךָ אַתָּ֨ה וּ/בִנְ/ךָ֣ וּ/בִתֶּ/ךָ֮ וְ/עַבְדְּ/ךָ֣ וַ/אֲמָתֶ/ךָ֒ וְ/הַ/לֵּוִי֙ אֲשֶׁ֣ר בִּ/שְׁעָרֶ֔י/ךָ וְ/הַ/גֵּ֛ר וְ/הַ/יָּת֥וֹם וְ/הָ/אַלְמָנָ֖ה אֲשֶׁ֣ר בְּ/קִרְבֶּ֑/ךָ בַּ/מָּק֗וֹם אֲשֶׁ֤ר יִבְחַר֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ לְ/שַׁכֵּ֥ן שְׁמ֖/וֹ שָֽׁם׃",
+        "LXX": "καὶ εὐφρανθήσῃ ἐναντίον τοῦ θεοῦ σου, καὶ ὁ υἱός σου καὶ ἡ θυγάτηρ σου, ὁ παῖς σου καὶ ἡ παιδίσκη σου, καὶ ὁ Λευείτης καὶ ὁ προσήλυτος καὶ ὁ ὀρφανὸς καὶ ἡ χήρα ἡ οὖσα ἐν ὑμῖν, ἐν, τῷ τόπῳ ᾧ ἐὰν ἐκλέξηται Κύριος ὁ θεός σου ἐπικληθῆναι τὸ ὄνομα αὐτοῦ ἐκεῖ·",
+        "VUL": "et epulaberis coram Domino Deo tuo, tu, filius tuus et filia tua, servus tuus et ancilla tua, et Levites qui est intra portas tuas, advena ac pupillus et vidua, qui morantur vobiscum : in loco quem elegerit Dominus Deus tuus, ut habitet nomen ejus ibi.",
+        "SYN": "и веселись пред Господом, Богом твоим, ты, и сын твой, и дочь твоя, и раб твой, и раба твоя, и левит, который в жилищах твоих, и пришелец, и сирота, и вдова, которые среди тебя, на месте, которое изберет Господь, Бог твой, чтобы пребывало там имя Его;",
+        "NEO": "Tu te réjouiras en présence de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, dans le lieu que \\+w Yahweh|strong=\"H3068\"\\+w** ton Dieu, aura choisi pour y faire habiter son nom, toi, ton fils et ta fille, ton serviteur et ta servante, le Lévite qui sera dans tes portes, ainsi que l’étranger, l’orphelin et la veuve qui seront au milieu de toi.",
+        "NAB": "In the place which the LORD, your God, chooses as the dwelling place of his name, you shall make merry in his presence together with your son and daughter, your male and female slave, and the Levite who belongs to your community, as well as the alien, the orphan and the widow among you.",
+        "VAT_ES": "Te alegrarás en la presencia del Señor, tu Dios –en el lugar que él elija para construirlo morada de su Nombre– junto con tu hijo y tu hija, con tu esclavo y tu esclava, con el levita que viva en tu ciudad, y con el extranjero, el huérfano y la viuda que estén contigo.",
+        "CEI": "Gioirai davanti al Signore tuo Dio tu, tuo figlio, tua figlia, il tuo schiavo e la tua schiava, il levita che sarà nelle tue città e l'orfano e la vedova che saranno in mezzo a te, nel luogo che il Signore tuo Dio avrà scelto per stabilirvi il suo nome."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/זָ֣כַרְתָּ֔ כִּי עֶ֥בֶד הָיִ֖יתָ בְּ/מִצְרָ֑יִם וְ/שָׁמַרְתָּ֣ וְ/עָשִׂ֔יתָ אֶת הַֽ/חֻקִּ֖ים הָ/אֵֽלֶּה׃",
+        "LXX": "καὶ μνησθήσῃ ὅτι οἰκέτης ἐγένου ἐν γῇ Αἰγύπτῳ, καὶ φυλάξῃ καὶ ποιήσεις τὰς ἐντολὰς ταύτας.",
+        "VUL": "Et recordaberis quoniam servus fueris in Ægypto : custodiesque ac facies quæ præcepta sunt.",
+        "SYN": "помни, что ты был рабом в Египте, и соблюдай и исполняй постановления сии.",
+        "NEO": "Tu te souviendras que tu as été esclave en Égypte, et tu auras soin de mettre ces lois en pratique.",
+        "NAB": "Remember that you too were once slaves in Egypt, and carry out these statutes carefully.",
+        "VAT_ES": "Recuerda que fuiste esclavo en Egipto y observa fielmente estas prescripciones.",
+        "CEI": "Ti ricorderai che sei stato schiavo in Egitto e osserverai e metterai in pratica queste leggi."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "חַ֧ג הַ/סֻּכֹּ֛ת תַּעֲשֶׂ֥ה לְ/ךָ֖ שִׁבְעַ֣ת יָמִ֑ים בְּ/אָ֨סְפְּ/ךָ֔ מִֽ/גָּרְנְ/ךָ֖ וּ/מִ/יִּקְבֶֽ/ךָ׃",
+        "LXX": "Ἑορτὴν σκηνῶν ποιήσεις σεαυτῷ ἑπτὰ ἡμέρας ἐν τῷ συναγαγεῖν σε ἐκ τοῦ ἅλωνός σου καὶ ἀπὸ τῆς ληνοῦ σου·",
+        "VUL": "Solemnitatem quoque tabernaculorum celebrabis per septem dies, quando collegeris de area et torculari fruges tuas :",
+        "SYN": "Праздник кущей совершай у себя семь дней, когда уберешь с гумна твоего и из точила твоего;",
+        "NEO": "Tu célébreras la fête des Tabernacles pendant sept jours, lorsque tu auras recueilli le produit de ton aire et de ton pressoir ;",
+        "NAB": "\"You shall celebrate the feast of Booths for seven days, when you have gathered in the produce from your threshing floor and wine press.",
+        "VAT_ES": "Celebra durante siete días la fiesta de las Chozas, apenas termines de recoger los frutos de tu era y de tu lagar.",
+        "CEI": "Celebrerai la festa delle capanne per sette giorni, quando raccoglierai il prodotto della tua aia e del tuo torchio;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/שָׂמַחְתָּ֖ בְּ/חַגֶּ֑/ךָ אַתָּ֨ה וּ/בִנְ/ךָ֤ וּ/בִתֶּ֨/ךָ֙ וְ/עַבְדְּ/ךָ֣ וַ/אֲמָתֶ֔/ךָ וְ/הַ/לֵּוִ֗י וְ/הַ/גֵּ֛ר וְ/הַ/יָּת֥וֹם וְ/הָ/אַלְמָנָ֖ה אֲשֶׁ֥ר בִּ/שְׁעָרֶֽי/ךָ׃",
+        "LXX": "καὶ εὐφρανθήσῃ ἐν τῇ ἑορτῇ σου, σὺ καὶ ὁ υἱός σου καὶ ἡ θυγάτηρ σου, ὁ παῖς σου καὶ ἡ παιδίσκη σου, καὶ ὁ Λευείτης καὶ ὁ προσήλυτος καὶ ὁ ὀρφανὸς καὶ ἡ χήρα ἡ οὖσα ἐν ταῖς πόλεσίν σου.",
+        "VUL": "et epulaberis in festivitate tua, tu, filius tuus et filia, servus tuus et ancilla, Levites quoque et advena, pupillus et vidua qui intra portas tuas sunt.",
+        "SYN": "и веселись в праздник твой ты и сын твой, и дочь твоя, и раб твой, и раба твоя, и левит, и пришелец, и сирота, и вдова, которые в жилищах твоих;",
+        "NEO": "tu te réjouiras à cette fête, toi, ton fils et ta fille, ton serviteur et ta servante, ainsi que le Lévite, l’étranger, l’orphelin et la veuve qui seront dans tes portes.",
+        "NAB": "You shall make merry at your feast, together with your son and daughter, your male and female slave, and also the Levite, the alien, the orphan and the widow who belong to your community.",
+        "VAT_ES": "Te alegrarás durante la fiesta, junto con tu hijo y tu hija, con tu esclavo y tu esclava, y con el levita, el extranjero, el huérfano y la viuda que vivan en tu ciudad.",
+        "CEI": "gioirai in questa tua festa, tu, tuo figlio e tua figlia, il tuo schiavo e la tua schiava e il levita, il forestiero, l'orfano e la vedova che saranno entro le tue città."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "שִׁבְעַ֣ת יָמִ֗ים תָּחֹג֙ לַ/יהוָ֣ה אֱלֹהֶ֔י/ךָ בַּ/מָּק֖וֹם אֲשֶׁר יִבְחַ֣ר יְהוָ֑ה כִּ֣י יְבָרֶכְ/ךָ֞ יְהוָ֣ה אֱלֹהֶ֗י/ךָ בְּ/כֹ֤ל תְּבוּאָֽתְ/ךָ֙ וּ/בְ/כֹל֙ מַעֲשֵׂ֣ה יָדֶ֔י/ךָ וְ/הָיִ֖יתָ אַ֥ךְ שָׂמֵֽחַ׃",
+        "LXX": "ἑπτὰ ἡμέρας ἑορτάσεις Κυρίῳ τῷ θεῷ σου ἐν τῷ τόπῳ ᾧ ἐὰν ἐκλέξηται Κύριος ὁ θεός σου αὐτῷ· ἐὰν δὲ εὐλογήσῃ σε Κύριος ὁ θεός σου ἐν πᾶσιν γενήμασίν σου καὶ ἐν παντὶ ἔργῳ τῶν χειρῶν σου, καὶ ἔσῃ εὐφραινόμενος.",
+        "VUL": "Septem diebus Domino Deo tuo festa celebrabis in loco quem elegerit Dominus : benedicetque tibi Dominus Deus tuus in cunctis frugibus tuis, et in omni opere manuum tuarum, erisque in lætitia.",
+        "SYN": "семь дней празднуй Господу, Богу твоему, на месте, которое изберет Господь, Бог твой, [чтобы призываемо было там имя Его]; ибо благословит тебя Господь, Бог твой, во всех произведениях твоих и во всяком деле рук твоих, и ты будешь только веселиться.",
+        "NEO": "Tu célébreras la fête pendant sept jours en l’honneur de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, dans le lieu que \\+w Yahweh|strong=\"H3068\"\\+w** aura choisi ; car \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te bénira dans toutes tes récoltes et dans tout le travail de tes mains, et tu seras tout entier à la joie.",
+        "NAB": "For seven days you shall celebrate this pilgrim feast in honor of the LORD, your God, in the place which he chooses; since the LORD, your God, has blessed you in all your crops and in all your undertakings, you shall do nought but make merry.",
+        "VAT_ES": "Siete días estarás de fiesta en honor del Señor, tu Dios, en el lugar que él elija. Porque el Señor, tu Dios, te bendecirá en todas tus cosechas y en todas tus obras, para que seas plenamente feliz.",
+        "CEI": "Celebrerai la festa per sette giorni per il Signore tuo Dio, nel luogo che avrà scelto il Signore, perché il Signore tuo Dio ti benedirà in tutto il tuo raccolto e in tutto il lavoro delle tue mani e tu sarai contento."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "שָׁל֣וֹשׁ פְּעָמִ֣ים בַּ/שָּׁנָ֡ה יֵרָאֶ֨ה כָל זְכוּרְ/ךָ֜ אֶת פְּנֵ֣י יְהוָ֣ה אֱלֹהֶ֗י/ךָ בַּ/מָּקוֹם֙ אֲשֶׁ֣ר יִבְחָ֔ר בְּ/חַ֧ג הַ/מַּצּ֛וֹת וּ/בְ/חַ֥ג הַ/שָּׁבֻע֖וֹת וּ/בְ/חַ֣ג הַ/סֻּכּ֑וֹת וְ/לֹ֧א יֵרָאֶ֛ה אֶת פְּנֵ֥י יְהוָ֖ה רֵיקָֽם׃",
+        "LXX": "τρεῖς καιροὺς τοῦ ἐνιαυτοῦ ὀφθήσεται πᾶν ἀρσενικόν σου ἐναντίον Κυρίου τοῦ θεοῦ σου ἐν τῷ τόπῳ ᾧ ἐὰν ἐκλέξηται αὐτὸν Κύριος, ἐν τῇ ἑορτῇ τῶν ἀζύμων, καὶ ἐν τῇ ἑορτῇ τῶν ἑβδομάδων, καὶ ἐν τῇ ἑορτῇ τῆς σκηνοπηγίας. οὐκ ὀφθήσῃ ἐνώπιον Κυρίου τοῦ θεοῦ σου κενός·",
+        "VUL": "Tribus vicibus per annum apparebit omne masculinum tuum in conspectu Domini Dei tui in loco quem elegerit : in solemnitate azymorum, in solemnitate hebdomadarum, et in solemnitate tabernaculorum. Non apparebit ante Dominum vacuus :",
+        "SYN": "Три раза в году весь мужеский пол должен являться пред лице Господа, Бога твоего, на место, которое изберет Он: в праздник опресноков, в праздник седмиц и в праздник кущей; и _никто_ не должен являться пред лице Господа с пустыми _руками,_",
+        "NEO": "Trois fois par année, tout mâle d’entre vous se présentera devant \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, dans le lieu qu’il aura choisi : à la fête des Azymes, à la fête des Semaines et à la fête des Tabernacles ; il ne paraîtra pas devant \\+w Yahweh|strong=\"H3068\"\\+w** les mains vides.",
+        "NAB": "\"Three times a year, then, every male among you shall appear before the LORD, your God, in the place which he chooses: at the feast of Unleavened Bread, at the feast of Weeks, and at the feast of Booths. No one shall appear before the LORD empty-handed,",
+        "VAT_ES": "Tres veces al año, todos los varones se presentarán delante del Señor, tu Dios, en el lugar elegido por él: en la fiesta de los Acimos, en la fiesta de las Semanas y en la fiesta de las Chozas. Nadie se presentará delante del Señor con las manos vacías.",
+        "CEI": "Tre volte all'anno ogni tuo maschio si presenterà davanti al Signore tuo Dio, nel luogo che Egli avrà scelto: nella festa degli azzimi, nella festa delle settimane e nella festa delle capanne; nessuno si presenterà davanti al Signore a mani vuote."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אִ֖ישׁ כְּ/מַתְּנַ֣ת יָד֑/וֹ כְּ/בִרְכַּ֛ת יְהוָ֥ה אֱלֹהֶ֖י/ךָ אֲשֶׁ֥ר נָֽתַן לָֽ/ךְ׃",
+        "LXX": "ἕκαστος κατὰ δύναμιν τῶν χειρῶν ὑμῶν, κατὰ τὴν εὐλογίαν Κυρίου τοῦ θεοῦ σου ἣν ἔδωκέν σοι.",
+        "VUL": "sed offeret unusquisque secundum quod habuerit juxta benedictionem Domini Dei sui, quam dederit ei.",
+        "SYN": "но каждый с даром в руке своей, смотря по благословению Господа, Бога твоего, какое Он дал тебе.",
+        "NEO": "Chacun fera ses offrandes, selon ce qu’il peut donner, selon les bénédictions que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, lui aura accordées.",
+        "NAB": "but each of you with as much as he can give, in proportion to the blessings which the LORD, your God, has bestowed on you.",
+        "VAT_ES": "Cada uno dará lo que pueda, conforme a la bendición que el Señor, tu Dios, te haya otorgado.",
+        "CEI": "Ma il dono di ciascuno sarà in misura della benedizione che il Signore tuo Dio ti avrà data."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "שֹׁפְטִ֣ים וְ/שֹֽׁטְרִ֗ים תִּֽתֶּן לְ/ךָ֙ בְּ/כָל שְׁעָרֶ֔י/ךָ אֲשֶׁ֨ר יְהוָ֧ה אֱלֹהֶ֛י/ךָ נֹתֵ֥ן לְ/ךָ֖ לִ/שְׁבָטֶ֑י/ךָ וְ/שָׁפְט֥וּ אֶת הָ/עָ֖ם מִשְׁפַּט צֶֽדֶק׃",
+        "LXX": "Κριτὰς καὶ γραμματοεισαγωγεῖς ποιήσεις σεαυτῷ ἐν ταῖς πόλεσίν σου αἷς Κύριος ὁ θεός σου δίδωσίν σοι κατὰ φυλάς, καὶ κρινοῦσιν τὸν λαὸν κρίσιν δικαίαν·",
+        "VUL": "Judices et magistros constitues in omnibus portis tuis, quas Dominus Deus tuus dederit tibi, per singulas tribus tuas : ut judicent populum justo judicio,",
+        "SYN": "Во всех жилищах твоих, которые Господь, Бог твой, даст тебе, поставь себе судей и надзирателей по коленам твоим, чтоб они судили народ судом праведным;",
+        "NEO": "Tu établiras des juges et des magistrats dans toutes les villes que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te donnera, selon tes tribus, et ils jugeront le peuple avec justice.",
+        "NAB": "\"You shall appoint judges and officials throughout your tribes to administer true justice for the people in all the communities which the LORD, your God, is giving you.",
+        "VAT_ES": "En cada una de las ciudades que el Señor, tu Dios, te dé para tus tribus, pondrás jueces y escribas que dicten sentencias justas en favor del pueblo.",
+        "CEI": "Ti costituirai giudici e scribi in tutte le città che il Signore tuo Dio ti dà, tribù per tribù; essi giudicheranno il popolo con giuste sentenze."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "לֹא תַטֶּ֣ה מִשְׁפָּ֔ט לֹ֥א תַכִּ֖יר פָּנִ֑ים וְ/לֹא תִקַּ֣ח שֹׁ֔חַד כִּ֣י הַ/שֹּׁ֗חַד יְעַוֵּר֙ עֵינֵ֣י חֲכָמִ֔ים וִֽ/יסַלֵּ֖ף דִּבְרֵ֥י צַדִּיקִֽם׃",
+        "LXX": "οὐκ ἐπιγνώσονται πρόσωπον, οὐδὲ λήμψονται δῶρον· τὰ γὰρ δῶρα ἀποτυφλοῖ ὀφθαλμοὺς σοφῶν καὶ ἐξαρεῖ λόγους δικαίων.",
+        "VUL": "nec in alteram partem declinent. Non accipies personam, nec munera : quia munera excæcant oculos sapientum, et mutant verba justorum.",
+        "SYN": "не извращай закона, не смотри на лица и не бери даров, ибо дары ослепляют глаза мудрых и превращают дело правых;",
+        "NEO": "Tu ne feras pas fléchir le droit, tu n’auras pas égard aux personnes et tu ne recevras pas de présents, car les présents aveuglent les yeux des sages et corrompent les paroles des justes.",
+        "NAB": "You shall not distort justice; you must be impartial. You shall not take a bribe; for a bribe blinds the eyes even of the wise and twists the words even of the just.",
+        "VAT_ES": "No tergiversarás el derecho; no harás acepción de personas ni te dejarás sobornar. Porque el soborno ciega los ojos de los sabios y pervierte las palabras de los justos.",
+        "CEI": "Non farai violenza al diritto, non avrai riguardi personali e non accetterai regali, perché il regalo acceca gli occhi dei saggi e corrompe le parole dei giusti."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "צֶ֥דֶק צֶ֖דֶק תִּרְדֹּ֑ף לְמַ֤עַן תִּֽחְיֶה֙ וְ/יָרַשְׁתָּ֣ אֶת הָ/אָ֔רֶץ אֲשֶׁר יְהוָ֥ה אֱלֹהֶ֖י/ךָ נֹתֵ֥ן לָֽ/ךְ׃",
+        "LXX": "δικαίως τὸ δίκαιον διώξῃ, ἵνα ζῆτε καὶ εἰσελθόντες κληρονομήσητε τὴν γῆν ἣν Κύριος ὁ θεός σου δίδωσίν σοι.",
+        "VUL": "Juste quod justum est persequeris : ut vivas, et possideas terram, quam Dominus Deus tuus dederit tibi.",
+        "SYN": "правды, правды ищи, дабы ты был жив и овладел землею, которую Господь, Бог твой, дает тебе.",
+        "NEO": "Tu suivras strictement la justice, afin que tu vives et que tu possèdes le pays que te donne \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu.",
+        "NAB": "Justice and justice alone shall be your aim, that you may have life and may possess the land which the LORD, your God, is giving you.",
+        "VAT_ES": "Tu deber es buscar la justicia, sólo la justicia, para que tengas vida y poseas la tierra que el Señor, tu Dios, te da.",
+        "CEI": "La giustizia e solo la giustizia seguirai, per poter vivere e possedere il paese che il Signore tuo Dio sta per darti."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "לֹֽא תִטַּ֥ע לְ/ךָ֛ אֲשֵׁרָ֖ה כָּל עֵ֑ץ אֵ֗צֶל מִזְבַּ֛ח יְהוָ֥ה אֱלֹהֶ֖י/ךָ אֲשֶׁ֥ר תַּעֲשֶׂה לָּֽ/ךְ׃",
+        "LXX": "Οὐ φυτεύσεις σεαυτῷ ἄλσος· πᾶν ξύλον παρὰ τὸ θυσιαστήριον τοῦ θεοῦ σου οὐ ποιήσεις σεαυτῷ.",
+        "VUL": "Non plantabis lucum, et omnem arborem juxta altare Domini Dei tui.",
+        "SYN": "Не сади себе рощи из каких-либо дерев при жертвеннике Господа, Бога твоего, который ты сделаешь себе,",
+        "NEO": "Tu ne planteras pas d’aschéra, aucun bois, à côté de l’autel que tu élèveras à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu.",
+        "NAB": "\"You shall not plant a sacred pole of any kind of wood beside the altar of the LORD, your God, which you will build;",
+        "VAT_ES": "No plantarás ninguna clase de árbol, para tenerlo como poste sagrado, junto al altar que dediques al Señor, tu Dios.",
+        "CEI": "Non pianterai alcun palo sacro di qualunque specie di legno, accanto all'altare del Signore tuo Dio, che tu hai costruito; non erigerai alcuna stele che il Signore tuo Dio ha in odio."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא תָקִ֥ים לְ/ךָ֖ מַצֵּבָ֑ה אֲשֶׁ֥ר שָׂנֵ֖א יְהוָ֥ה אֱלֹהֶֽי/ךָ׃",
+        "LXX": "οὐ στήσεις σεαυτῷ στήλην, ἃ ἐμίσησεν Κύριος ὁ θεός σου.",
+        "VUL": "Nec facies tibi, neque constitues statuam : quæ odit Dominus Deus tuus.",
+        "SYN": "и не ставь себе столба, что ненавидит Господь Бог твой.",
+        "NEO": "Tu ne dresseras pas de ces stèles, qui sont en aversion à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu.",
+        "NAB": "nor shall you erect a sacred pillar, such as the LORD, your God, detests.",
+        "VAT_ES": "Tampoco erigirás piedras conmemorativas, porque el Señor, tu Dios, las detesta."
+      }
+    }
+  }
+}

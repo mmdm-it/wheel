@@ -1,0 +1,627 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_043",
+  "book_key": "GENE",
+  "sequence": 43,
+  "chapter_in": {
+    "MT": 43,
+    "VUL": 43,
+    "LXX": 43
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/הָ/רָעָ֖ב כָּבֵ֥ד בָּ/אָֽרֶץ׃",
+        "VUL": "Interim fames omnem terram vehementer premebat.",
+        "LXX": "Ὁ δὲ λιμὸς ἐνίσχυσεν ἐπὶ τῆς γῆς.",
+        "NAB": "Now the famine in the land grew more severe.",
+        "SYN": "Голод усилился на земле.",
+        "NEO": "La famine s’appesantissait sur le pays.",
+        "VAT_ES": "El hambre continuaba asolando el país.",
+        "CEI": "La carestia continuava a gravare sul paese."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י כַּ/אֲשֶׁ֤ר כִּלּוּ֙ לֶ/אֱכֹ֣ל אֶת הַ/שֶּׁ֔בֶר אֲשֶׁ֥ר הֵבִ֖יאוּ מִ/מִּצְרָ֑יִם וַ/יֹּ֤אמֶר אֲלֵי/הֶם֙ אֲבִי/הֶ֔ם שֻׁ֖בוּ שִׁבְרוּ לָ֥/נוּ מְעַט אֹֽכֶל׃",
+        "VUL": "Consumptisque cibis quos ex Ægypto detulerant, dixit Jacob ad filios suos : Revertimini, et emite nobis pauxillum escarum.",
+        "LXX": "ἐγένετο δὲ ἡνίκα συνετέλεσαν καταφαγεῖν τὸν σῖτον ὃν ἤνεγκαν ἐξ Αἰγύπτου, καὶ εἶπεν αὐτοῖς ὁ πατὴρ αὐτῶν Πάλιν πορευθέντες πρίασθε ἡμῖν μικρὰ βρώματα.",
+        "NAB": "So when they had used up all the rations they had brought from Egypt, their father said to them, \"Go back and procure us a little more food.\"",
+        "SYN": "И когда они съели хлеб, который привезли из Египта, тогда отец их сказал им: пойдите опять, купите нам немного пищи.",
+        "NEO": "Quand ils eurent fini de manger le blé qu’ils avaient apporté d’Égypte, leur père leur dit : « Retournez nous acheter un peu de vivres. »",
+        "VAT_ES": "Y cuando se agotaron los víveres que habían traído de Egipto, su padre les dijo: «Regresen a Egipto a comprarnos un poco de comida».",
+        "CEI": "Quando ebbero finito di consumare il grano che avevano portato dall'Egitto, il padre disse loro: \"Tornate là e acquistate per noi un pò di viveri\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמֶר אֵלָ֛י/ו יְהוּדָ֖ה לֵ/אמֹ֑ר הָעֵ֣ד הֵעִד֩ בָּ֨/נוּ הָ/אִ֤ישׁ לֵ/אמֹר֙ לֹֽא תִרְא֣וּ פָנַ֔/י בִּלְתִּ֖י אֲחִי/כֶ֥ם אִתְּ/כֶֽם׃",
+        "VUL": "Respondit Judas : Denuntiavit nobis vir ille sub attestatione jurisjurandi, dicens : Non videbitis faciem meam, nisi fratrem vestrum minimum adduxeritis vobiscum.",
+        "LXX": "εἶπεν δὲ αὐτῷ Ἰούδας λέγων Διαμαρτυρίᾳ διαμεμαρτύρηται ἡμῖν ὁ ἄνθρωπος λέγων Οὐκ ὄψεσθε τὸ πρόσωπόν μου ἐὰν μὴ ὁ ἀδελφὸς ὑμῶν ὁ νεώτερος καταβῇ πρὸς μέ.",
+        "NAB": "But Judah replied: \"The man strictly warned us, 'You shall not appear in my presence unless your brother is with you.'",
+        "SYN": "И сказал ему Иуда, говоря: тот человек решительно объявил нам, сказав: не являйтесь ко мне на лице, если брата вашего не будет с вами.",
+        "NEO": "Juda lui répondit : « Cet homme nous a fait cette déclaration formelle : Vous ne verrez pas ma face que votre frère ne soit avec vous.",
+        "VAT_ES": "Pero Judá le respondió: «Aquel hombre nos advirtió expresamente que no nos presentáramos delante de él, si nuestro hermano no nos acompañaba.",
+        "CEI": "Ma Giuda gli disse: \"Quell'uomo ci ha dichiarato severamente: Non verrete alla mia presenza, se non avrete con voi il vostro fratello!"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אִם יֶשְׁ/ךָ֛ מְשַׁלֵּ֥חַ אֶת אָחִ֖י/נוּ אִתָּ֑/נוּ נֵרְדָ֕ה וְ/נִשְׁבְּרָ֥ה לְ/ךָ֖ אֹֽכֶל׃",
+        "VUL": "Si ergo vis eum mittere nobiscum, pergemus pariter, et ememus tibi necessaria :",
+        "LXX": "εἰ μὲν οὖν ἀποστέλλεις τὸν ἀδελφὸν ἡμῶν μεθ’ ἡμῶν, καταβησόμεθα καὶ ἀγοράσωμέν σοι βρώματα·",
+        "NAB": "If you are willing to let our brother go with us, we will go down to procure food for you.",
+        "SYN": "Если пошлешь с нами брата нашего, то пойдем и купим тебе пищи,",
+        "NEO": "Si donc tu laisses venir notre frère avec nous, nous descendrons et nous t’achèterons des vivres.",
+        "VAT_ES": "Si tú dejas partir a nuestro hermano con nosotros, bajaremos a comprarte comida;",
+        "CEI": "Se tu sei disposto a lasciar partire con noi nostro fratello, andremo laggiù e ti compreremo il grano."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/אִם אֵינְ/ךָ֥ מְשַׁלֵּ֖חַ לֹ֣א נֵרֵ֑ד כִּֽי הָ/אִ֞ישׁ אָמַ֤ר אֵלֵ֨י/נוּ֙ לֹֽא תִרְא֣וּ פָנַ֔/י בִּלְתִּ֖י אֲחִי/כֶ֥ם אִתְּ/כֶֽם׃",
+        "VUL": "sin autem non vis, non ibimus : vir enim, ut sæpe diximus, denuntiavit nobis, dicens : Non videbitis faciem meam absque fratre vestro minimo.",
+        "LXX": "εἰ δὲ μὴ ἀποστέλλεις τὸν ἀδελφὸν ἡμῶν μεθ’ ἡμῶν, οὐ πορευσόμεθα· ὁ γὰρ ἄνθρωπος εἶπεν ἡμῖν λέγων Οὐκ ὄψεσθέ μου τὸ πρόσωπον ἐὰν μὴ ὁ ἀδελφὸς ὑμῶν ὁ νεώτερος μεθ’ ὑμῶν ᾖ.",
+        "NAB": "But if you are not willing, we will not go down, because the man told us, 'You shall not appear in my presence unless your brother is with you.'\"",
+        "SYN": "а если не пошлешь, то не пойдем, ибо тот человек сказал нам: не являйтесь ко мне на лице, если брата вашего не будет с вами.",
+        "NEO": "Mais si tu ne le laisses pas venir, nous ne descendrons point ; car cet homme nous a dit : Vous ne verrez pas ma face que votre frère ne soit avec vous. »",
+        "VAT_ES": "pero si no lo dejas, no podremos ir, porque el hombre nos dijo: «No vengan a verme si su hermano no los acompaña».",
+        "CEI": "Ma se tu non lo lasci partire, noi non ci andremo, perché quell'uomo ci ha detto: Non verrete alla mia presenza, se non avrete con voi il vostro fratello!\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ יִשְׂרָאֵ֔ל לָ/מָ֥ה הֲרֵעֹתֶ֖ם לִ֑/י לְ/הַגִּ֣יד לָ/אִ֔ישׁ הַ/ע֥וֹד לָ/כֶ֖ם אָֽח׃",
+        "VUL": "Dixit eis Israël : In meam hoc fecistis miseriam, ut indicaretis ei et alium habere vos fratrem.",
+        "LXX": "εἶπεν δὲ Ἰσραήλ Τί ἐκακοποιήσατέ μοι, ἀναγγείλαντες τῷ ἀνθρώπῳ εἰ ἔστιν ὑμῖν ἀδελφός;",
+        "NAB": "Israel demanded, \"Why did you bring this trouble on me by telling the man that you had another brother?\"",
+        "SYN": "Израиль сказал: для чего вы сделали мне такое зло, сказав тому человеку, что у вас есть еще брат?",
+        "NEO": "Et Israël dit : « Pourquoi m’avez-vous causé cette peine, de dire à cet homme que vous aviez encore un frère ? »",
+        "VAT_ES": "Entonces Israel dijo: «&iquest;Por qué me han causado este dolor, diciendo a este hombre que tenían otro hermano?».",
+        "CEI": "Israele disse: \"Perché mi avete fatto questo male, cioè far sapere a quell'uomo che avevate ancora un fratello?\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֡וּ שָׁא֣וֹל שָֽׁאַל הָ֠/אִישׁ לָ֣/נוּ וּ/לְ/מֽוֹלַדְתֵּ֜/נוּ לֵ/אמֹ֗ר הַ/ע֨וֹד אֲבִי/כֶ֥ם חַי֙ הֲ/יֵ֣שׁ לָ/כֶ֣ם אָ֔ח וַ/נַ֨גֶּד ל֔/וֹ עַל פִּ֖י הַ/דְּבָרִ֣ים הָ/אֵ֑לֶּה הֲ/יָד֣וֹעַ נֵדַ֔ע כִּ֣י יֹאמַ֔ר הוֹרִ֖ידוּ אֶת אֲחִי/כֶֽם׃",
+        "VUL": "At illi responderunt : Interrogavit nos homo per ordinem nostram progeniem : si pater viveret : si haberemus fratrem : et nos respondimus ei consequenter juxta id quod fuerat sciscitatus : numquid scire poteramus quod dicturus esset : Adducite fratrem vestrum vobiscum ?",
+        "LXX": "οἱ δὲ εἶπαν Ἐρωτῶν ἐπηρώτησεν ἡμᾶς ὁ ἄνθρωπος καὶ τὴν γενεὰν ἡμῶν, λέγων Εἰ ἔτι ὁ πατὴρ ὑμῶν ζῇ; εἰ ἔστιν ὑμῖν ἀδελφός; καὶ ἀπηγγείλαμεν αὐτῷ κατὰ τὴν ἐπερώτησιν αὐτοῦ. μὴ ᾔδειμεν εἰ ἐρεῖ ἡμῖν Ἀγάγετε τὸν ἀδελφὸν ὑμῶν;",
+        "NAB": "They answered: \"The man kept asking about ourselves and our family: 'Is your father still living? Do you have another brother?' We had to answer his questions. How could we know that he would say, 'Bring your brother down here'?\"",
+        "SYN": "Они сказали: расспрашивал тот человек о нас и о родстве нашем, говоря: жив ли еще отец ваш? есть ли у вас брат? Мы и рассказали ему по этим расспросам. Могли ли мы знать, что он скажет: приведите брата вашего?",
+        "NEO": "Ils dirent : « Cet homme nous a adressé beaucoup de questions sur nous et sur notre famille, en disant : Votre père vit-il encore ? Avez-vous un autre frère ? Et nous avons répondu selon ces questions. Pouvions-nous savoir qu’il dirait : Faites descendre votre frère ? »",
+        "VAT_ES": "Ellos respondieron: «El comenzó a hacernos preguntas sobre nosotros y sobre nuestra familia. «El padre de ustedes &iquest;vive todavía? &iquest;Tienen otro hermano?». Nosotros nos limitamos a responder a sus preguntas. &iquest;Cómo nos íbamos a imaginar que él nos diría: «Traigan aquí a su hermano»?».",
+        "CEI": "Risposero: \"Quell'uomo ci ha interrogati con insistenza intorno a noi e alla nostra parentela: È ancora vivo vostro padre? Avete qualche fratello? e noi abbiamo risposto secondo queste domande. Potevamo sapere ch'egli avrebbe detto: Conducete qui vostro fratello?\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוּדָ֜ה אֶל יִשְׂרָאֵ֣ל אָבִ֗י/ו שִׁלְחָ֥/ה הַ/נַּ֛עַר אִתִּ֖/י וְ/נָק֣וּמָה וְ/נֵלֵ֑כָה וְ/נִֽחְיֶה֙ וְ/לֹ֣א נָמ֔וּת גַּם אֲנַ֥חְנוּ גַם אַתָּ֖ה גַּם טַפֵּֽ/נוּ׃",
+        "VUL": "Judas quoque dixit patri suo : Mitte puerum mecum, ut proficiscamur, et possimus vivere : ne moriamur nos et parvuli nostri.",
+        "LXX": "εἶπεν δὲ Ἰούδας πρὸς Ἰσραὴλ τὸν πατέρα αὐτοῦ Ἀπόστειλον τὸ παιδάριον μετ’ ἐμοῦ, καὶ ἀναστάντες πορευσόμεθα, ἵνα ζῶμεν καὶ μὴ ἀποθάνωμεν καὶ ἡμεῖς καὶ σὺ καὶ ἡ ἀποσκευὴ ἡμῶν.",
+        "NAB": "Then Judah urged his father Israel: \"Let the boy go with me, that we may be off and on our way if you and we and our children are to keep from starving to death.",
+        "SYN": "Иуда же сказал Израилю, отцу своему: отпусти отрока со мною, и мы встанем и пойдем, и живы будем и не умрем и мы, и ты, и дети наши;",
+        "NEO": "Et Juda dit à Israël, son père : « Laisse partir l’enfant avec moi, afin que nous nous levions et nous mettions en route, et nous vivrons et ne mourrons point, nous, toi et nos petits enfants.",
+        "VAT_ES": "Entonces Judá dijo a su padre Israel: «Envía al muchacho bajo mi responsabilidad, y ahora mismo nos pondremos en camino para poder sobrevivir. De lo contrario moriremos nosotros, tú y nuestros niños.",
+        "CEI": "Giuda disse a Israele suo padre: \"Lascia venire il giovane con me; partiremo subito per vivere e non morire, noi, tu e i nostri bambini."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אָֽנֹכִי֙ אֶֽעֶרְבֶ֔/נּוּ מִ/יָּדִ֖/י תְּבַקְשֶׁ֑/נּוּ אִם לֹ֨א הֲבִיאֹתִ֤י/ו אֵלֶ֨י/ךָ֙ וְ/הִצַּגְתִּ֣י/ו לְ/פָנֶ֔י/ךָ וְ/חָטָ֥אתִֽי לְ/ךָ֖ כָּל הַ/יָּמִֽים׃",
+        "VUL": "Ego suscipio puerum : de manu mea require illum : nisi reduxero, et reddidero eum tibi, ero peccati reus in te omni tempore.",
+        "LXX": "ἐγὼ δὲ ἐκδέχομαι αὐτόν, ἐκ χειρός μου ζήτησον αὐτόν· ἐὰν μὴ ἀγάγω αὐτὸν πρὸς σὲ καὶ στήσω αὐτὸν ἐναντίον σου, ἡμαρτηκὼς ἔσομαι πρὸς σὲ πάσας τὰς ἡμέρας.",
+        "NAB": "I myself will stand surety for him. You can hold me responsible for him. If I fail to bring him back, to set him in your presence, you can hold it against me forever.",
+        "SYN": "я отвечаю за него, из моих рук потребуешь его; если я не приведу его к тебе и не поставлю его пред лицем твоим, то останусь я виновным пред тобою во все дни жизни;",
+        "NEO": "C’est moi qui réponds de lui, tu le redemanderas de ma main. Si je ne le ramène pas auprès de toi, si je ne le mets pas devant toi, je serai coupable envers toi à tout jamais.",
+        "VAT_ES": "Yo respondo por él, y tendrás que pedirme cuentas a mí. Si no te lo traigo y lo pongo delante de tus ojos, seré culpable ante ti todo el resto de mi vida.",
+        "CEI": "Io mi rendo garante di lui: dalle mie mani lo reclamerai. Se non te lo ricondurrò, se non te lo riporterò, io sarò colpevole contro di te per tutta la vita."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּ֖י לוּלֵ֣א הִתְמַהְמָ֑הְנוּ כִּֽי עַתָּ֥ה שַׁ֖בְנוּ זֶ֥ה פַעֲמָֽיִם׃",
+        "VUL": "Si non intercessisset dilatio, jam vice alter venissemus.",
+        "LXX": "εἰ μὴ γὰρ ἐβραδύναμεν, ἤδη ἂν ὑπεστρέψαμεν δίς.",
+        "NAB": "Had we not dilly-dallied, we could have been there and back twice by now!\"",
+        "SYN": "если бы мы не медлили, то уже сходили бы два раза.",
+        "NEO": "Car si nous n’avions pas tant tardé, nous serions maintenant deux fois de retour. »",
+        "VAT_ES": "Ya estaríamos de vuelta dos veces, si no nos hubiéramos entretenido tanto».",
+        "CEI": "Se non avessimo indugiato, ora saremmo già di ritorno per la seconda volta\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֲלֵ/הֶ֜ם יִשְׂרָאֵ֣ל אֲבִי/הֶ֗ם אִם כֵּ֣ן אֵפוֹא֮ זֹ֣את עֲשׂוּ֒ קְח֞וּ מִ/זִּמְרַ֤ת הָ/אָ֨רֶץ֙ בִּ/כְלֵי/כֶ֔ם וְ/הוֹרִ֥ידוּ לָ/אִ֖ישׁ מִנְחָ֑ה מְעַ֤ט צֳרִי֙ וּ/מְעַ֣ט דְּבַ֔שׁ נְכֹ֣את וָ/לֹ֔ט בָּטְנִ֖ים וּ/שְׁקֵדִֽים׃",
+        "VUL": "Igitur Israël pater eorum dixit ad eos : Si sic necesse est, facite quod vultis : sumite de optimis terræ fructibus in vasis vestris, et deferte viro munera, modicum resinæ, et mellis, et storacis, stactes, et terebinthi, et amygdalarum.",
+        "LXX": "εἶπεν δὲ αὐτοῖς Ἰσραὴλ ὁ πατὴρ αὐτῶν Εἰ οὕτως ἐστίν, τοῦτο ποιήσατε· λάβετε ἀπὸ τῶν καρπῶν τῆς γῆς ἐν τοῖς ἀγγίοις ὑμῶν, καὶ καταγάγετε τῷ ἀνθρώπῳ δῶρα, τῆς ῥιτίνης καὶ τοῦ μέλιτος, θυμίαμα καὶ στακτὴν καὶ τερέμινθον καὶ κάρυα.",
+        "NAB": "Their father Israel then told them: \"If it must be so, then do this: Put some of the land's best products in your baggage and take them down to the man as gifts: some balm and honey, gum and resin, and pistachios and almonds.",
+        "SYN": "Израиль, отец их, сказал им: если так, то вот что сделайте: возьмите с собою плодов земли сей и отнесите в дар тому человеку несколько бальзама и несколько меду, стираксы и ладану, фисташков и миндальных орехов;",
+        "NEO": "Israël, leur père, leur dit : « Eh bien, puisqu’il le faut, faites ceci : Prenez dans vos vaisseaux des meilleures productions du pays et portez à cet homme un présent : un peu de baume et un peu de miel, de l’astragale, du ladanum, des pistaches et des amandes.",
+        "VAT_ES": "Ya que tiene que ser así, continuó diciendo Israel, hagan lo siguiente: Pongan en sus equipajes los mejores productos del país, y regalen a aquel hombre un poco de bálsamo y un poco de miel, goma tragacanto, mirra, nueces y almendras.",
+        "CEI": "Israele loro padre rispose: \"Se è così, fate pure: mettete nei vostri bagagli i prodotti più scelti del paese e portateli in dono a quell'uomo: un pò di balsamo, un pò di miele, resina e laudano, pistacchi e mandorle."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/כֶ֥סֶף מִשְׁנֶ֖ה קְח֣וּ בְ/יֶדְ/כֶ֑ם וְ/אֶת הַ/כֶּ֜סֶף הַ/מּוּשָׁ֨ב בְּ/פִ֤י אַמְתְּחֹֽתֵי/כֶם֙ תָּשִׁ֣יבוּ בְ/יֶדְ/כֶ֔ם אוּלַ֥י מִשְׁגֶּ֖ה הֽוּא׃",
+        "VUL": "Pecuniam quoque duplicem ferte vobiscum : et illam, quam invenistis in sacculis, reportate, ne forte errore factum sit :",
+        "LXX": "καὶ τὸ ἀργύριον δισσὸν λάβετε ἐν ταῖς χερσὶν ὑμῶν· τὸ ἀργύριον τὸ ἀποστραφὲν ἐν τοῖς μαρσίπποις ὑμῶν ἀποστρέψατε μεθ’ ὑμῶν· μή ποτε ἀγνόημά ἐστιν.",
+        "NAB": "Also take extra money along, for you must return the amount that was put back in the mouths of your bags; it may have been a mistake.",
+        "SYN": "возьмите и другое серебро в руки ваши; а серебро, обратно положенное в отверстие мешков ваших, возвратите руками вашими: может быть, это недосмотр;",
+        "NEO": "Prenez dans vos mains de l’argent en double, et reportez celui qui a été mis à l’entrée de vos sacs, peut-être par erreur.",
+        "VAT_ES": "Tomen además una doble cantidad de dinero, porque ustedes tendrán que restituir la suma que les pusieron junto a la abertura de la bolsa. Tal vez se trate de una equivocación.",
+        "CEI": "Prendete con voi doppio denaro, il denaro cioè che è stato rimesso nella bocca dei vostri sacchi lo porterete indietro: forse si tratta di un errore."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/אֶת אֲחִי/כֶ֖ם קָ֑חוּ וְ/ק֖וּמוּ שׁ֥וּבוּ אֶל הָ/אִֽישׁ׃",
+        "VUL": "sed et fratrem vestrum tollite, et ite ad virum.",
+        "LXX": "καὶ τὸν ἀδελφὸν ὑμῶν λάβετε, καὶ ἀναστάντες κατάβητε πρὸς τὸν ἄνθρωπον.",
+        "NAB": "Take your brother, too, and be off on your way back to the man.",
+        "SYN": "и брата вашего возьмите и, встав, пойдите опять к человеку тому;",
+        "NEO": "Prenez votre frère, levez-vous et retournez vers cet homme.",
+        "VAT_ES": "Lleven también a su hermano, y vuelvan cuanto antes a ver a ese hombre.",
+        "CEI": "Prendete anche vostro fratello, partite e tornate da quell'uomo."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/אֵ֣ל שַׁדַּ֗י יִתֵּ֨ן לָ/כֶ֤ם רַחֲמִים֙ לִ/פְנֵ֣י הָ/אִ֔ישׁ וְ/שִׁלַּ֥ח לָ/כֶ֛ם אֶת אֲחִי/כֶ֥ם אַחֵ֖ר וְ/אֶת בִּנְיָמִ֑ין וַ/אֲנִ֕י כַּ/אֲשֶׁ֥ר שָׁכֹ֖לְתִּי שָׁכָֽלְתִּי׃",
+        "VUL": "Deus autem meus omnipotens faciat vobis eum placabilem : et remittat vobiscum fratrem vestrum quem tenet, et hunc Benjamin : ego autem quasi orbatus absque liberis ero.",
+        "LXX": "ὁ δὲ θεός μου δῴη ὑμῖν χάριν ἐναντίον τοῦ ἀνθρώπου, καὶ ἀποστείλαι τὸν ἀδελφὸν ὑμῶν τὸν ἕνα καὶ ⸆ τὸν Βενιαμείν· ἐγὼ μὲν γὰρ καθὰ ἠτέκνωμαι ἠτέκνωμαι.",
+        "NAB": "May God Almighty dispose the man to be merciful toward you, so that he may let your other brother go, as well as Benjamin. As for me, if I am to suffer bereavement, I shall suffer it.\"",
+        "SYN": "Бог же Всемогущий да даст вам найти милость у человека того, чтобы он отпустил вам и другого брата вашего и Вениамина, а мне если уже быть бездетным, то пусть буду бездетным.",
+        "NEO": "Que le Dieu tout-puissant vous fasse trouver grâce devant cet homme, afin qu’il laisse revenir avec vous votre autre frère, ainsi que Benjamin ! Pour moi, si je dois être privé de mes enfants, que j’en sois privé ! »",
+        "VAT_ES": "Que el Dios Todopoderoso lo mueva a compadecerse de ustedes, y él les permita traer a su hermano, lo mismo que a Benjamín. Yo, por mi parte, si tengo que verme privado de mis hijos, estoy dispuesto a soportarlo».",
+        "CEI": "Dio onnipotente vi faccia trovare misericordia presso quell'uomo, così che vi rilasci l'altro fratello e Beniamino. Quanto a me, una volta che non avrò più i miei figli, non li avrò più...!\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּקְח֤וּ הָֽ/אֲנָשִׁים֙ אֶת הַ/מִּנְחָ֣ה הַ/זֹּ֔את וּ/מִשְׁנֶה כֶּ֛סֶף לָקְח֥וּ בְ/יָדָ֖/ם וְ/אֶת בִּנְיָמִ֑ן וַ/יָּקֻ֨מוּ֙ וַ/יֵּרְד֣וּ מִצְרַ֔יִם וַ/יַּֽעַמְד֖וּ לִ/פְנֵ֥י יוֹסֵֽף׃",
+        "VUL": "Tulerunt ergo viri munera, et pecuniam duplicem, et Benjamin : descenderuntque in Ægyptum, et steterunt coram Joseph.",
+        "LXX": "Λαβόντες δὲ οἱ ἄνδρες τὰ δῶρα ταῦτα, καὶ τὸ ἀργύριον διπλοῦν ἔλαβον ἐν ταῖς χερσὶν αὐτῶν, καὶ τὸν Βενιαμείν· καὶ ἀναστάντες κατέβησαν εἰς Αἴγυπτον, καὶ ἔστησαν ἐναντίον Ἰωσήφ.",
+        "NAB": "So the men got the gifts, took double the amount of money with them, and, accompanied by Benjamin, were off on their way down to Egypt to present themselves to Joseph.",
+        "SYN": "И взяли те люди дары эти, и серебра вдвое взяли в руки свои, и Вениамина, и встали, пошли в Египет и предстали пред лице Иосифа.",
+        "NEO": "Les hommes prirent ce présent, et ils prirent dans leurs mains de l’argent au double, ainsi que Benjamin ; et, s’étant levés, ils descendirent en Égypte et se présentèrent devant Joseph.",
+        "VAT_ES": "Ellos recogieron los regalos, tomaron una doble cantidad de dinero, y bajaron a Egipto llevándose a Benjamín. En seguida fueron a presentarse delante de José,",
+        "CEI": "Presero dunque i nostri uomini questo dono e il doppio del denaro e anche Beniamino, partirono, scesero in Egitto e si presentarono a Giuseppe."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨רְא יוֹסֵ֣ף אִתָּ/ם֮ אֶת בִּנְיָמִין֒ וַ/יֹּ֨אמֶר֙ לַֽ/אֲשֶׁ֣ר עַל בֵּית֔/וֹ הָבֵ֥א אֶת הָ/אֲנָשִׁ֖ים הַ/בָּ֑יְתָ/ה וּ/טְבֹ֤חַ טֶ֨בַח֙ וְ/הָכֵ֔ן כִּ֥י אִתִּ֛/י יֹאכְל֥וּ הָ/אֲנָשִׁ֖ים בַּֽ/צָּהֳרָֽיִם׃",
+        "VUL": "Quos cum ille vidisset et Benjamin simul, præcepit dispensatori domus suæ, dicens : Introduc viros domum, et occide victimas, et instrue convivium : quoniam mecum sunt comesturi meridie.",
+        "LXX": "ἴδεν δὲ Ἰωσὴφ αὐτοὺς καὶ τὸν Βενιαμεὶν τὸν ἀδελφὸν αὐτοῦ τὸν ὁμομήτριον, καὶ ἐνετείλατο τῷ ἐπὶ τῆς οἰκίας αὐτοῦ εἰσαγαγεῖν τοὺς ἀνθρώπους εἰς τὴν οἰκίαν Καὶ σφάξον ⸂⸆⸃ θύματα καὶ ἑτοίμασον· μετ’ ἐμοῦ γὰρ φάγονται οἱ ἄνθρωποι ἄρτους τὴν μεσημβρίαν ⸆",
+        "NAB": "When Joseph saw Benjamin with them, he told his head steward, \"Take these men into the house, and have an animal slaughtered and prepared, for they are to dine with me at noon.\"",
+        "SYN": "Иосиф, увидев между ними Вениамина [брата своего, сына матери своей], сказал начальнику дома своего: введи сих людей в дом и заколи что-нибудь из скота, и приготовь, потому что со мною будут есть эти люди в полдень.",
+        "NEO": "Dès que Joseph vit Benjamin avec eux, il dit à son intendant : « Fais entrer ces gens dans la maison, tue des victimes et apprête un repas, car ces gens mangeront avec moi à midi. »",
+        "VAT_ES": "y cuando este vio que venían con Benjamín, dijo a su mayordomo: «Lleva a estos hombres a casa. Mata un animal y prepáralo, porque hoy al mediodía comerán conmigo».",
+        "CEI": "Quando Giuseppe ebbe visto Beniamino con loro, disse al suo maggiordomo: \"Conduci questi uomini in casa, macella quello che occorre e prepara, perché questi uomini mangeranno con me a mezzogiorno\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ הָ/אִ֔ישׁ כַּֽ/אֲשֶׁ֖ר אָמַ֣ר יוֹסֵ֑ף וַ/יָּבֵ֥א הָ/אִ֛ישׁ אֶת הָ/אֲנָשִׁ֖ים בֵּ֥יתָ/ה יוֹסֵֽף׃",
+        "VUL": "Fecit ille quod sibi fuerat imperatum, et introduxit viros domum.",
+        "LXX": "ἐποίησεν δὲ ὁ ἄνθρωπος καθὰ εἶπεν Ἰωσήφ, καὶ εἰσήγαγεν τοὺς ἀνθρώπους εἰς τὴν οἰκίαν Ἰωσήφ.",
+        "NAB": "Doing as Joseph had ordered, the steward conducted the men to Joseph's house.",
+        "SYN": "И сделал человек тот, как сказал Иосиф, и ввел человек тот людей сих в дом Иосифов.",
+        "NEO": "Cet homme fit ce que Joseph avait ordonné, et il conduisit ces gens dans la maison de Joseph.",
+        "VAT_ES": "El mayordomo hizo lo que José le había ordenado y los condujo hasta la casa.",
+        "CEI": "Il maggiordomo fece come Giuseppe aveva ordinato e introdusse quegli uomini nella casa di Giuseppe."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּֽירְא֣וּ הָֽ/אֲנָשִׁ֗ים כִּ֣י הֽוּבְאוּ֮ בֵּ֣ית יוֹסֵף֒ וַ/יֹּאמְר֗וּ עַל דְּבַ֤ר הַ/כֶּ֨סֶף֙ הַ/שָּׁ֤ב בְּ/אַמְתְּחֹתֵ֨י/נוּ֙ בַּ/תְּחִלָּ֔ה אֲנַ֖חְנוּ מֽוּבָאִ֑ים לְ/הִתְגֹּלֵ֤ל עָלֵ֨י/נוּ֙ וּ/לְ/הִתְנַפֵּ֣ל עָלֵ֔י/נוּ וְ/לָ/קַ֧חַת אֹתָ֛/נוּ לַ/עֲבָדִ֖ים וְ/אֶת חֲמֹרֵֽי/נוּ׃",
+        "VUL": "Ibique exterriti, dixerunt mutuo : Propter pecuniam, quam retulimus prius in saccis nostris, introducti sumus : ut devolvat in nos calumniam, et violenter subjiciat servituti et nos, et asinos nostros.",
+        "LXX": "ἰδόντες δὲ οἱ ἄνθρωποι ὅτι εἰσηνέχθησαν εἰς τὸν οἶκον Ἰωσὴφ εἶπαν Διὰ τὸ ἀργύριον τὸ ἀποστραφὲν ἐν τοῖς μαρσίπποις ἡμῶν τὴν ἀρχὴν ἡμεῖς εἰσαγόμεθα, τοῦ συκοφαντῆσαι ἡμᾶς καὶ ἐπιθέσθαι ἡμῖν, τοῦ λαβεῖν ἡμᾶς εἰς παῖδας καὶ τοὺς ὄνους ἡμῶν.",
+        "NAB": "But on being led to his house, they became apprehensive. \"It must be,\" they thought, \"on account of the money put back in our bags the first time, that we are taken inside; they want to use it as a pretext to attack us and take our donkeys and seize us as slaves.\"",
+        "SYN": "И испугались люди эти, что ввели их в дом Иосифов, и сказали: это за серебро, возвращенное прежде в мешки наши, ввели нас, чтобы придраться к нам и напасть на нас, и взять нас в рабство, и ослов наших.",
+        "NEO": "Pendant qu’on les conduisait à la maison de Joseph, les hommes eurent peur, et ils dirent : « C’est à cause de l’argent rapporté l’autre fois dans nos sacs qu’on nous emmène ; c’est pour nous assaillir, tomber sur nous, nous prendre comme esclaves avec nos ânes. »",
+        "VAT_ES": "Pero ellos, al ser llevados a la casa de José, se llenaron de temor y dijeron: «Nos traen aquí a causa del dinero que fue puesto en nuestras bolsas la vez anterior. No es más que un pretexto para atacarnos y convertirnos en esclavos, junto con nuestros animales».",
+        "CEI": "Ma quegli uomini si spaventarono, perché venivano condotti in casa di Giuseppe, e dissero: \"A causa del denaro, rimesso nei nostri sacchi l'altra volta, ci si vuol condurre là: per assalirci, piombarci addosso e prenderci come schiavi con i nostri asini\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַֽ/יִּגְּשׁוּ֙ אֶל הָ/אִ֔ישׁ אֲשֶׁ֖ר עַל בֵּ֣ית יוֹסֵ֑ף וַ/יְדַבְּר֥וּ אֵלָ֖י/ו פֶּ֥תַח הַ/בָּֽיִת׃",
+        "VUL": "Quam ob rem in ipsis foribus accedentes ad dispensatorem domus,",
+        "LXX": "προσελθόντες δὲ πρὸς τὸν ἄνθρωπον τὸν ἐπὶ τοῦ οἴκου Ἰωσὴφ ἐλάλησαν αὐτῷ ἐν τῷ πυλῶνι τοῦ οἴκου",
+        "NAB": "So they went up to Joseph's head steward and talked to him at the entrance of the house.",
+        "SYN": "И подошли они к начальнику дома Иосифова, и стали говорить ему у дверей дома,",
+        "NEO": "S’étant approchés de l’intendant de la maison de Joseph, ils lui adressèrent la parole, à l’entrée de la maison,",
+        "VAT_ES": "Entonces se acercaron al mayordomo de José y le hablaron a la entrada de la casa,",
+        "CEI": "Allora si avvicinarono al maggiordomo della casa di Giuseppe e parlarono con lui all'ingresso della casa;"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֖וּ בִּ֣י אֲדֹנִ֑/י יָרֹ֥ד יָרַ֛דְנוּ בַּ/תְּחִלָּ֖ה לִ/שְׁבָּר אֹֽכֶל׃",
+        "VUL": "locuti sunt : Oramus, domine, ut audias nos. Jam ante descendimus ut emeremus escas :",
+        "LXX": "λέγοντες Δεόμεθα, κύριε· κατέβημεν τὴν ἀρχὴν πρίασθαι βρώματα·",
+        "NAB": "\"If you please, sir,\" they said, \"we came down here once before to procure food.",
+        "SYN": "и сказали: послушай, господин наш, мы приходили уже прежде покупать пищи,",
+        "NEO": "en disant : « Pardon, mon seigneur. Nous sommes déjà descendus une fois pour acheter des vivres.",
+        "VAT_ES": "diciéndole: «Perdón, señor, nosotros ya estuvimos aquí una vez para abastecernos de víveres.",
+        "CEI": "dissero: \"Mio signore, noi siamo venuti già un'altra volta per comperare viveri."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִ֞י כִּי בָ֣אנוּ אֶל הַ/מָּל֗וֹן וַֽ/נִּפְתְּחָ/ה֙ אֶת אַמְתְּחֹתֵ֔י/נוּ וְ/הִנֵּ֤ה כֶֽסֶף אִישׁ֙ בְּ/פִ֣י אַמְתַּחְתּ֔/וֹ כַּסְפֵּ֖/נוּ בְּ/מִשְׁקָל֑/וֹ וַ/נָּ֥שֶׁב אֹת֖/וֹ בְּ/יָדֵֽ/נוּ׃",
+        "VUL": "quibus emptis, cum venissemus ad diversorium, aperuimus saccos nostros, et invenimus pecuniam in ore saccorum : quam nunc eodem pondere reportavimus.",
+        "LXX": "καὶ ἐγένετο ἡνίκα ἤλθομεν εἰς τὸ καταλῦσαι καὶ ἠνοίξαμεν τοὺς μαρσίππους ἡμῶν, καὶ τόδε τὸ ἀργύριον ἑκάστου ἐν τῷ μαρσίππῳ αὐτοῦ. τὸ ἀργύριον ἡμῶν ἐν σταθμῷ ἀπεστρέψαμεν νῦν ἐν τοῖς μαρσίπποις ἡμῶν,",
+        "NAB": "But when we arrived at a night's encampment and opened our bags, there was each man's money in the mouth of his bag - our money in the full amount! We have now brought it back.",
+        "SYN": "и случилось, что, когда пришли мы на ночлег и открыли мешки наши, -- вот серебро каждого в отверстии мешка его, серебро наше по весу его, и мы возвращаем его своими руками;",
+        "NEO": "Au retour, quand nous arrivâmes à l’endroit où nous devions passer la nuit, nous avons ouvert nos sacs, et voici, l’argent de chacun était à l’entrée de son sac, notre argent selon son poids : nous le rapportons avec nous ;",
+        "VAT_ES": "Pero cuando acampamos para pasar la noche, abrimos nuestras bolsas y resultó que el dinero de cada uno estaba junto a la abertura de su bolsa. Era exactamente la misma cantidad que habíamos pagado. Ahora tenemos esa suma aquí con nosotros,",
+        "CEI": "Quando fummo arrivati ad un luogo per passarvi la notte, aprimmo i sacchi ed ecco il denaro di ciascuno si trovava alla bocca del suo sacco: proprio il nostro denaro con il suo peso esatto. Allora noi l'abbiamo portato indietro"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/כֶ֧סֶף אַחֵ֛ר הוֹרַ֥דְנוּ בְ/יָדֵ֖/נוּ לִ/שְׁבָּר אֹ֑כֶל לֹ֣א יָדַ֔עְנוּ מִי שָׂ֥ם כַּסְפֵּ֖/נוּ בְּ/אַמְתְּחֹתֵֽי/נוּ׃",
+        "VUL": "Sed et aliud attulimus argentum, ut emamus quæ nobis necessaria sunt : non est in nostra conscientia quis posuerit eam in marsupiis nostris.",
+        "LXX": "καὶ ἀργύριον ἕτερον ἠνέγκαμεν μεθ’ ἑαυτῶν ἀγοράσαι βρώματα· οὐκ οἴδαμεν τίς ἐνέβαλεν τὸ ἀργύριον εἰς τοὺς μαρσίππους ἡμῶν.",
+        "NAB": "We have brought other money to procure food with. We do not know who put the first money in our bags.\"",
+        "SYN": "а для покупки пищи мы принесли другое серебро в руках наших, мы не знаем, кто положил серебро наше в мешки наши.",
+        "NEO": "et en même temps nous avons apporté d’autre argent pour acheter des vivres. Nous ne savons pas qui a mis notre argent dans nos sacs. »",
+        "VAT_ES": "y además hemos traído dinero para adquirir nuevas provisiones. No sabemos quién puso el dinero en nuestras bolsas».",
+        "CEI": "e, per acquistare i viveri, abbiamo portato con noi altro denaro. Non sappiamo chi abbia messo nei sacchi il nostro denaro!\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֩ שָׁל֨וֹם לָ/כֶ֜ם אַל תִּירָ֗אוּ אֱלֹ֨הֵי/כֶ֜ם וֵֽ/אלֹהֵ֤י אֲבִי/כֶם֙ נָתַ֨ן לָ/כֶ֤ם מַטְמוֹן֙ בְּ/אַמְתְּחֹ֣תֵי/כֶ֔ם כַּסְפְּ/כֶ֖ם בָּ֣א אֵלָ֑/י וַ/יּוֹצֵ֥א אֲלֵ/הֶ֖ם אֶת שִׁמְעֽוֹן׃",
+        "VUL": "At ille respondit : Pax vobiscum, nolite timere : Deus vester, et Deus patris vestri, dedit vobis thesauros in saccis vestris : nam pecuniam, quam dedistis mihi, probatam ego habeo. Eduxitque ad eos Simeon.",
+        "LXX": "εἶπεν δὲ αὐτοῖς ὁ ἄνθρωπος Ἵλεως ὑμῖν, μὴ φοβεῖσθε· ὁ θεὸς ὑμῶν καὶ ὁ θεὸς τῶν πατέρων ὑμῶν ἔδωκεν ὑμῖν θησαυροὺς ἐν τοῖς μαρσίπποις ὑμῶν· τὸ δὲ ἀργύριον ὑμῶν εὐδοκιμοῦν ἀπέχω. καὶ ἐξήγαγεν πρὸς αὐτοὺς Συμεών·",
+        "NAB": "\"Be at ease,\" he replied; \"you have no need to fear. Your God and the God of your father must have put treasures in your bags for you. As for your money, I received it.\" With that, he led Simeon out to them.",
+        "SYN": "Он сказал: будьте спокойны, не бойтесь; Бог ваш и Бог отца вашего дал вам клад в мешках ваших; серебро ваше дошло до меня. И привел к ним Симеона.",
+        "NEO": "Il leur dit : « Que la paix soit avec vous ! Ne craignez rien. C’est votre Dieu, le Dieu de votre père, qui vous a donné un trésor dans vos sacs. Votre argent m’a été remis. » Et il leur amena Siméon.",
+        "VAT_ES": "Pero él respondió: «Quédense tranquilos, no teman. Su Dios y el Dios de su padre les puso ese dinero en las bolsas. La suma que ustedes pagaron está en mi poder». Y en seguida les presentó a Simeón.",
+        "CEI": "Ma quegli disse: \"State in pace, non temete! Il vostro Dio e il Dio dei padri vostri vi ha messo un tesoro nei sacchi; il vostro denaro è pervenuto a me\". E portò loro Simeone."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יָּבֵ֥א הָ/אִ֛ישׁ אֶת הָ/אֲנָשִׁ֖ים בֵּ֣יתָ/ה יוֹסֵ֑ף וַ/יִּתֶּן מַ֨יִם֙ וַ/יִּרְחֲצ֣וּ רַגְלֵי/הֶ֔ם וַ/יִּתֵּ֥ן מִסְפּ֖וֹא לַ/חֲמֹֽרֵי/הֶֽם׃",
+        "VUL": "Et introductis domum, attulit aquam, et laverunt pedes suos, deditque pabulum asinis eorum.",
+        "LXX": "καὶ ἤνεγκεν ὕδωρ νίψαι τοὺς πόδας αὐτῶν, καὶ ἤνεγκεν χορτάσματα τοῖς ὄνοις αὐτῶν.",
+        "NAB": "The steward then brought the men inside Joseph's house. He gave them water to bathe their feet, and got fodder for their donkeys.",
+        "SYN": "И ввел тот человек людей сих в дом Иосифов и дал воды, и они омыли ноги свои; и дал корму ослам их.",
+        "NEO": "Cet homme, les ayant fait entrer dans la maison de Joseph, leur donna de l’eau et ils se lavèrent les pieds ; il donna aussi du fourrage à leurs ânes.",
+        "VAT_ES": "El mayordomo introdujo a los hombres en la casa de José, les trajo agua para que se lavaran los pies y les dio pasto para los animales.",
+        "CEI": "Quell'uomo fece entrare gli uomini nella casa di Giuseppe, diede loro acqua, perché si lavassero i piedi e diede il foraggio ai loro asini."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יָּכִ֨ינוּ֙ אֶת הַ/מִּנְחָ֔ה עַד בּ֥וֹא יוֹסֵ֖ף בַּֽ/צָּהֳרָ֑יִם כִּ֣י שָֽׁמְע֔וּ כִּי שָׁ֖ם יֹ֥אכְלוּ לָֽחֶם׃",
+        "VUL": "Illi vero parabant munera, donec ingrederetur Joseph meridie : audierant enim quod ibi comesturi essent panem.",
+        "LXX": "ἡτοίμασαν δὲ τὰ δῶρα ἕως τοῦ ἐλθεῖν Ἰωσὴφ μεσημβρίᾳ· ἤκουσαν γὰρ ὅτι ἐκεῖ μέλλει ἀριστᾷν.",
+        "NAB": "Then they set out their gifts to await Joseph's arrival at noon, for they had heard that they were to dine there.",
+        "SYN": "И они приготовили дары к приходу Иосифа в полдень, ибо слышали, что там будут есть хлеб.",
+        "NEO": "Ils préparèrent leur présent, en attendant que Joseph vint à midi ; car on leur avait annoncé qu’ils mangeraient chez lui.",
+        "VAT_ES": "Ellos prepararon los regalos, esperando la llegada de José al mediodía, porque ya les había avisado que comería allí.",
+        "CEI": "Essi prepararono il dono nell'attesa che Giuseppe arrivasse a mezzogiorno, perché avevano saputo che avrebbero preso cibo in quel luogo."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֤א יוֹסֵף֙ הַ/בַּ֔יְתָ/ה וַ/יָּבִ֥יאּוּ ל֛/וֹ אֶת הַ/מִּנְחָ֥ה אֲשֶׁר בְּ/יָדָ֖/ם הַ/בָּ֑יְתָ/ה וַ/יִּשְׁתַּחֲווּ ל֖/וֹ אָֽרְצָ/ה׃",
+        "VUL": "Igitur ingressus est Joseph domum suam, obtuleruntque ei munera, tenentes in manibus suis : et adoraverunt proni in terram.",
+        "LXX": "εἰσῆλθεν δὲ Ἰωσὴφ εἰς τὴν οἰκίαν, καὶ προσήνεγκαν αὐτῷ τὰ δῶρα ἃ εἶχον ἐν ταῖς χερσὶν αὐτῶν εἰς τὸν οἶκον, καὶ προσεκύνησαν αὐτῷ ἐπὶ πρόσωπον ἐπὶ τὴν γῆν.",
+        "NAB": "When Joseph came home, they presented him with the gifts they had brought inside, while they bowed down before him to the ground.",
+        "SYN": "И пришел Иосиф домой; и они принесли ему в дом дары, которые были на руках их, и поклонились ему до земли.",
+        "NEO": "Quand Joseph fut arrivé chez lui, ils lui apportèrent dans la maison le présent qu’ils avaient dans la main, et se prosternèrent par terre devant lui.",
+        "VAT_ES": "Cuando José entró en la casa, le presentaron los regalos que traían y se postraron ante él con el rostro en tierra.",
+        "CEI": "Quando Giuseppe arrivò a casa, gli presentarono il dono, che avevano con sé, e si prostrarono davanti a lui con la faccia a terra."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁאַ֤ל לָ/הֶם֙ לְ/שָׁל֔וֹם וַ/יֹּ֗אמֶר הֲ/שָׁל֛וֹם אֲבִי/כֶ֥ם הַ/זָּקֵ֖ן אֲשֶׁ֣ר אֲמַרְתֶּ֑ם הַ/עוֹדֶ֖/נּוּ חָֽי׃",
+        "VUL": "At ille, clementer resalutatis eis, interrogavit eos, dicens : Salvusne est pater vester senex, de quo dixeratis mihi ? adhuc vivit ?",
+        "LXX": "ἠρώτησεν δὲ αὐτούς Πῶς ἔχετε; καὶ εἶπεν αὐτοῖς Εἰ ὑγιαίνει ὁ πατὴρ ὑμῶν ὁ πρεσβύτερος ὃν εἴπατε; ἔτι ζῇ;",
+        "NAB": "After inquiring how they were, he asked them, \"And how is your aged father, of whom you spoke? Is he still in good health?\"",
+        "SYN": "Он спросил их о здоровье и сказал: здоров ли отец ваш старец, о котором вы говорили? жив ли еще он?",
+        "NEO": "Il leur demanda comment ils se portaient, puis il dit : « Votre vieux père, dont vous avez parlé, est-il en bonne santé ? vit-il encore ? »",
+        "VAT_ES": "José los saludó y les dijo: «El anciano padre de que me hablaron, &iquest;vive todavía? &iquest;Cómo está?».",
+        "CEI": "Egli domandò loro come stavano e disse: \"Sta bene il vostro vecchio padre, di cui mi avete parlato? Vive ancora?\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֗וּ שָׁל֛וֹם לְ/עַבְדְּ/ךָ֥ לְ/אָבִ֖י/נוּ עוֹדֶ֣/נּוּ חָ֑י וַֽ/יִּקְּד֖וּ ו/ישתחו וַ/יִּֽשְׁתַּחֲוּֽוּ׃",
+        "VUL": "Qui responderunt : Sospes est servus tuus pater noster, adhuc vivit. Et incurvati, adoraverunt eum.",
+        "LXX": "οἱ δὲ εἶπαν Ὑγιαίνει ὁ παῖς σου ὁ πατὴρ ἡμῶν, ἔτι ζῇ. καὶ εἶπεν Εὐλογητὸς ὁ ἄνθρωπος ἐκεῖνος τῷ θεῷ. καὶ κύψαντες προσεκύνησαν.",
+        "NAB": "\"Your servant our father is thriving and still in good health,\" they said, as they bowed respectfully.",
+        "SYN": "Они сказали: здоров раб твой, отец наш; еще жив. [Он сказал: благословен человек сей от Бога.] И преклонились они и поклонились.",
+        "NEO": "Ils répondirent : « Ton serviteur, notre père, est en bonne santé ; il vit encore « ; et ils s’inclinèrent et se prosternèrent.",
+        "VAT_ES": "«Nuestro padre, tu servidor, vive todavía y goza de buena salud», le respondieron; e inclinándose, se postraron.",
+        "CEI": "Risposero: \"Il tuo servo, nostro padre, sta bene, è ancora vivo\" e si inginocchiarono prostrandosi."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יִּשָּׂ֣א עֵינָ֗י/ו וַ/יַּ֞רְא אֶת בִּנְיָמִ֣ין אָחִי/ו֮ בֶּן אִמּ/וֹ֒ וַ/יֹּ֗אמֶר הֲ/זֶה֙ אֲחִי/כֶ֣ם הַ/קָּטֹ֔ן אֲשֶׁ֥ר אֲמַרְתֶּ֖ם אֵלָ֑/י וַ/יֹּאמַ֕ר אֱלֹהִ֥ים יָחְנְ/ךָ֖ בְּנִֽ/י׃",
+        "VUL": "Attollens autem Joseph oculos, vidit Benjamin fratrem suum uterinum, et ait : Iste est frater vester parvulus, de quo dixeratis mihi ? Et rursum : Deus, inquit, misereatur tui, fili mi.",
+        "LXX": "ἀναβλέψας δὲ τοῖς ὀφθαλμοῖς Ἰωσὴφ ἴδεν Βενιαμεὶν τὸν ἀδελφὸν αὐτοῦ τὸν ὁμομήτριον, καὶ εἶπεν αὐτοῖς Οὗτός ἐστιν ὁ ἀδελφὸς ὑμῶν ὁ νεώτερος, ὃν εἴπατε πρὸς μὲ ἀγαγεῖν; καὶ εἶπεν Ὁ θεὸς ἐλεήσαι σε, τέκνον.",
+        "NAB": "When Joseph's eye fell on his full brother Benjamin, he asked, \"Is this your youngest brother, of whom you told me?\" Then he said to him, \"May God be gracious to you, my boy!\"",
+        "SYN": "И поднял глаза свои [Иосиф], и увидел Вениамина, брата своего, сына матери своей, и сказал: это брат ваш меньший, о котором вы сказывали мне? И сказал: да будет милость Божия с тобою, сын мой!",
+        "NEO": "Joseph leva les yeux, et il vit Benjamin, son frère, fils de sa mère ; il dit : « Est-ce là votre jeune frère dont vous m’avez parlé ? » Et il dit : « Que Dieu te soit favorable, mon fils ! »",
+        "VAT_ES": "Al levantar los ojos, José vio a Benjamín, el hijo de su misma madre, y preguntó: «&iquest;Es este el hermano menor de que me habían hablado?». Y añadió: «Que Dios te favorezca, hijo mío».",
+        "CEI": "Egli alzò gli occhi e guardò Beniamino, suo fratello, il figlio di sua madre, e disse: \"È questo il vostro fratello più giovane, di cui mi avete parlato?\" e aggiunse: \"Dio ti conceda grazia, figlio mio!\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יְמַהֵ֣ר יוֹסֵ֗ף כִּֽי נִכְמְר֤וּ רַחֲמָי/ו֙ אֶל אָחִ֔י/ו וַ/יְבַקֵּ֖שׁ לִ/בְכּ֑וֹת וַ/יָּבֹ֥א הַ/חַ֖דְרָ/ה וַ/יֵּ֥בְךְּ שָֽׁמָּ/ה׃",
+        "VUL": "Festinavitque, quia commota fuerant viscera ejus super fratre suo, et erumpebant lacrimæ : et introiens cubiculum flevit.",
+        "LXX": "ἐταράχθη δὲ Ἰωσήφ, συνεστρέφετο γὰρ τὰ ἔντερα αὐτοῦ ἐπὶ τῷ ἀδελφῷ αὐτοῦ, καὶ ἐζήτει κλαῦσαι· εἰσελθὼν δὲ εἰς τὸ ταμιεῖον ἔκλαυσεν ἐκεῖ.",
+        "NAB": "With that, Joseph had to hurry out, for he was so overcome with affection for his brother that he was on the verge of tears. He went into a private room and wept there.",
+        "SYN": "И поспешно удалился Иосиф, потому что воскипела любовь к брату его, и он готов был заплакать, и вошел он во внутреннюю комнату и плакал там.",
+        "NEO": "Alors, en toute hâte, car ses entrailles étaient émues pour son frère, Joseph chercha un endroit pour pleurer ; il entra dans sa chambre et il y pleura.",
+        "VAT_ES": "José salió precipitadamente porque se conmovió a la vista de su hermano y no podía contener las lágrimas. Entró en una habitación y lloró.",
+        "CEI": "Giuseppe uscì in fretta, perché si era commosso nell'intimo alla presenza di suo fratello e sentiva il bisogno di piangere; entrò nella sua camera e pianse."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יִּרְחַ֥ץ פָּנָ֖י/ו וַ/יֵּצֵ֑א וַ/יִּ֨תְאַפַּ֔ק וַ/יֹּ֖אמֶר שִׂ֥ימוּ לָֽחֶם׃",
+        "VUL": "Rursumque lota facie egressus, continuit se, et ait : Ponite panes.",
+        "LXX": "καὶ νιψάμενος τὸ πρόσωπον ἐξελθὼν ἐνεκρατεύσατο, καὶ εἶπεν Παράθετε ἄρτους.",
+        "NAB": "After washing his face, he reappeared and, now in control of himself, gave the order, \"Serve the meal.\"",
+        "SYN": "И умыв лице свое, вышел, и скрепился и сказал: подавайте кушанье.",
+        "NEO": "Après s’être lavé le visage, il sortit et, faisant des efforts pour se contenir, il dit : « Servez à manger. »",
+        "VAT_ES": "Después se lavó la cara, volvió y, tratando de dominarse, ordenó que sirvieran la comida.",
+        "CEI": "Poi si lavò la faccia, uscì e, facendosi forza, ordinò: \"Servite il pasto\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יָּשִׂ֥ימוּ ל֛/וֹ לְ/בַדּ֖/וֹ וְ/לָ/הֶ֣ם לְ/בַדָּ֑/ם וְ/לַ/מִּצְרִ֞ים הָ/אֹכְלִ֤ים אִתּ/וֹ֙ לְ/בַדָּ֔/ם כִּי֩ לֹ֨א יוּכְל֜וּ/ן הַ/מִּצְרִ֗ים לֶ/אֱכֹ֤ל אֶת הָֽ/עִבְרִים֙ לֶ֔חֶם כִּי תוֹעֵבָ֥ה הִ֖וא לְ/מִצְרָֽיִם׃",
+        "VUL": "Quibus appositis, seorsum Joseph, et seorsum fratribus, Ægyptiis quoque qui vescebantur simul, seorsum (illicitum est enim Ægyptiis comedere cum Hebræis, et profanum putant hujuscemodi convivium)",
+        "LXX": "καὶ παρέθηκαν αὐτῷ μόνῳ, καὶ αὐτοῖς καθ’ ἑαυτούς, καὶ τοῖς Αἰγυπτίοις τοῖς συνδειπνοῦσιν μετ’ αὐτοῦ καθ’ ἑαυτούς· οὐ γὰρ ἐδύναντο οἱ Αἰγύπτιοι συνεσθίειν μετὰ τῶν Ἐβραίων ἄρτους, βδέλυγμα γάρ ἐστιν τοῖς Αἰγυπτίοις πᾶς ποιμὴν προβάτων.",
+        "NAB": "It was served separately to him, to the brothers, and to the Egyptians who partook of his board. (Egyptians may not eat with Hebrews; that is abhorrent to them.)",
+        "SYN": "И подали ему особо, и им особо, и Египтянам, обедавшим с ним, особо, ибо Египтяне не могут есть с Евреями, потому что это мерзость для Египтян.",
+        "NEO": "On le servit à part, et ses frères à part, à part aussi les Egyptiens qui mangeaient avec lui, car les Egyptiens ne peuvent prendre leurs repas avec les Hébreux : c’est une abomination pour les Egyptiens.",
+        "VAT_ES": "Sirvieron en mesas separadas a José, a sus hermanos, y a los egipcios que comían con él, porque los egipcios no pueden comer con los hebreos: es una abominación para ellos.",
+        "CEI": "Fu servito per lui a parte, per loro a parte e per i commensali egiziani a parte, perché gli Egiziani non possono prender cibo con gli Ebrei: ciò sarebbe per loro un abominio."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יֵּשְׁב֣וּ לְ/פָנָ֔י/ו הַ/בְּכֹר֙ כִּ/בְכֹ֣רָת֔/וֹ וְ/הַ/צָּעִ֖יר כִּ/צְעִרָת֑/וֹ וַ/יִּתְמְה֥וּ הָ/אֲנָשִׁ֖ים אִ֥ישׁ אֶל רֵעֵֽ/הוּ׃",
+        "VUL": "sederunt coram eo, primogenitus juxta primogenita sua, et minimus juxta ætatem suam. Et mirabantur nimis,",
+        "LXX": "ἐκάθισαν δὲ ἐναντίον αὐτοῦ, ὁ πρωτότοκος κατὰ τὰ πρεσβεῖα αὐτοῦ καὶ ὁ νεώτερος κατὰ τὴν νεότητα αὐτοῦ· ἐξίσταντο δὲ οἱ ἄνθρωποι ἕκαστος πρὸς τὸν ἀδελφὸν αὐτοῦ.",
+        "NAB": "When they were seated by his directions according to their age, from the oldest to the youngest, they looked at one another in amazement;",
+        "SYN": "И сели они пред ним, первородный по первородству его, и младший по молодости его, и дивились эти люди друг пред другом.",
+        "NEO": "Les frères de Joseph s’assirent devant lui, le premier-né selon son droit d’aînesse, et le plus jeune selon son âge ; et ils se regardaient les uns les autres avec étonnement.",
+        "VAT_ES": "Cuando se sentaron frente a José, por orden de edad, de mayor a menor, sus hermanos se miraron con asombro unos a otros.",
+        "CEI": "Presero posto davanti a lui dal primogenito al più giovane, ciascuno in ordine di età ed essi si guardavano con meraviglia l'un l'altro."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יִּשָּׂ֨א מַשְׂאֹ֜ת מֵ/אֵ֣ת פָּנָי/ו֮ אֲלֵ/הֶם֒ וַ/תֵּ֜רֶב מַשְׂאַ֧ת בִּנְיָמִ֛ן מִ/מַּשְׂאֹ֥ת כֻּלָּ֖/ם חָמֵ֣שׁ יָד֑וֹת וַ/יִּשְׁתּ֥וּ וַֽ/יִּשְׁכְּר֖וּ עִמּֽ/וֹ׃",
+        "VUL": "sumptis partibus quas ab eo acceperant : majorque pars venit Benjamin, ita ut quinque partibus excederet. Biberuntque et inebriati sunt cum eo.",
+        "LXX": "ἦραν δὲ μερίδα παρ’ αὐτοῦ πρὸς αὐτούς· ἐμεγαλύνθη δὲ ἡ μερὶς Βενιαμεὶν παρὰ τὰς μερίδας πάντων πενταπλασίως πρὸς τὰς ἐκείνων. ἔπιον δὲ καὶ ἐμεθύσθησαν μετ’ αὐτοῦ.",
+        "NAB": "and as portions were brought to them from Joseph's table, Benjamin's portion was five times as large as anyone else's. So they drank freely and made merry with him.",
+        "SYN": "И посылались им кушанья от него, и доля Вениамина была впятеро больше долей каждого из них. И пили, и довольно пили они с ним.",
+        "NEO": "Il leur fit porter des portions de devant lui, et la portion de Benjamin était cinq fois plus forte que les portions d’eux tous. Ils burent joyeusement avec lui.",
+        "VAT_ES": "El les hizo servir de su misma mesa, y la porción de Benjamín era varias veces mayor que la de los demás. Todos bebieron y se alegraron con él.",
+        "CEI": "Egli fece portare loro porzioni prese dalla propria mensa, ma la porzione di Beniamino era cinque volte più abbondante di quella di tutti gli altri. E con lui bevvero fino all'allegria."
+      }
+    }
+  }
+}

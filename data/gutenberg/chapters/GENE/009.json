@@ -1,0 +1,537 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_009",
+  "book_key": "GENE",
+  "sequence": 9,
+  "chapter_in": {
+    "MT": 9,
+    "VUL": 9,
+    "LXX": 9
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְבָ֣רֶךְ אֱלֹהִ֔ים אֶת נֹ֖חַ וְ/אֶת בָּנָ֑י/ו וַ/יֹּ֧אמֶר לָ/הֶ֛ם פְּר֥וּ וּ/רְב֖וּ וּ/מִלְא֥וּ אֶת הָ/אָֽרֶץ׃",
+        "VUL": "Benedixitque Deus Noë et filiis ejus. Et dixit ad eos : Crescite, et multiplicamini, et replete terram.",
+        "LXX": "Καὶ ηὐλόγησεν ὁ θεὸς τὸν Νῶε καὶ τοὺς υἱοὺς αὐτοῦ, καὶ εἶπεν αὐτοῖς Αὐξάνεσθε καὶ πληθύνεσθε, καὶ πληρώσατε τὴν γῆν καὶ κατακυριεύσατε αὐτῆς.",
+        "NAB": "God blessed Noah and his sons and said to them: \"Be fertile and multiply and fill the earth.",
+        "SYN": "И благословил Бог Ноя и сынов его и сказал им: плодитесь и размножайтесь, и наполняйте землю [и обладайте ею];",
+        "NEO": "Dieu bénit Noé et ses fils et leur dit : « Soyez féconds, multipliez et remplissez la terre.",
+        "VAT_ES": "Entonces Dios bendijo a Noé y a sus hijos, diciéndoles: «Sean fecundos, multiplíquense y llenen la tierra.",
+        "CEI": "Dio benedisse Noè e i suoi figli e disse loro: \"Siate fecondi e moltiplicatevi e riempite la terra."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וּ/מוֹרַאֲ/כֶ֤ם וְ/חִתְּ/כֶם֙ יִֽהְיֶ֔ה עַ֚ל כָּל חַיַּ֣ת הָ/אָ֔רֶץ וְ/עַ֖ל כָּל ע֣וֹף הַ/שָּׁמָ֑יִם בְּ/כֹל֩ אֲשֶׁ֨ר תִּרְמֹ֧שׂ הָֽ/אֲדָמָ֛ה וּֽ/בְ/כָל דְּגֵ֥י הַ/יָּ֖ם בְּ/יֶדְ/כֶ֥ם נִתָּֽנוּ׃",
+        "VUL": "Et terror vester ac tremor sit super cuncta animalia terræ, et super omnes volucres cæli, cum universis quæ moventur super terram : omnes pisces maris manui vestræ traditi sunt.",
+        "LXX": "καὶ ὁ τρόμος ὑμῶν καὶ ὁ φόβος ἔσται ἐπὶ πᾶσιν τοῖς θηρίοις τῆς γῆς καὶ ἐπὶ πάντα τὰ ὄρνεα τοῦ οὐρανοῦ καὶ ἐπὶ πάντα τὰ κινούμενα ἐπὶ τῆς γῆς καὶ πάντας τοὺς ἰχθύας τῆς θαλάσσης· ὑπὸ χεῖρας ὑμῖν δέδωκα.",
+        "NAB": "Dread fear of you shall come upon all the animals of the earth and all the birds of the air, upon all the creatures that move about on the ground and all the fishes of the sea; into your power they are delivered.",
+        "SYN": "да страшатся и да трепещут вас все звери земные, [и весь скот земной,] и все птицы небесные, все, что движется на земле, и все рыбы морские: в ваши руки отданы они;",
+        "NEO": "Vous serez craints et redoutés de toute bête de la terre, de tout oiseau du ciel, de tout ce qui se meut sur la terre et de tous les poissons de la mer : ils sont livrés entre vos mains.",
+        "VAT_ES": "Ante ustedes sentirán temor a todos los animales de la tierra y todos los pájaros del cielo, todo lo que se mueve por el suelo, y todos los peces del mar: ellos han sido puestos en manos de ustedes.",
+        "CEI": "Il timore e il terrore di voi sia in tutte le bestie selvatiche e in tutto il bestiame e in tutti gli uccelli del cielo. Quanto striscia sul suolo e tutti i pesci del mare sono messi in vostro potere."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כָּל רֶ֨מֶשׂ֙ אֲשֶׁ֣ר הוּא חַ֔י לָ/כֶ֥ם יִהְיֶ֖ה לְ/אָכְלָ֑ה כְּ/יֶ֣רֶק עֵ֔שֶׂב נָתַ֥תִּי לָ/כֶ֖ם אֶת כֹּֽל׃",
+        "VUL": "Et omne, quod movetur et vivit, erit vobis in cibum : quasi olera virentia tradidi vobis omnia.",
+        "LXX": "καὶ πᾶν ἑρπετὸν ὅ ἐστιν ζῶν ὑμῖν ἔσται εἰς βρῶσιν· ὡς λάχανα χόρτου ἔδωκα ὑμῖν τὰ πάντα.",
+        "NAB": "Every creature that is alive shall be yours to eat; I give them all to you as I did the green plants.",
+        "SYN": "все движущееся, что живет, будет вам в пищу; как зелень травную даю вам все;",
+        "NEO": "Tout ce qui se meut et qui a vie vous servira de nourriture ; je vous donne tout cela, comme je vous avais donné l’herbe verte.",
+        "VAT_ES": "Todo lo que se mueve y tiene vida les servirá de alimento; yo les doy todo eso como antes les di los vegetales.",
+        "CEI": "Quanto si muove e ha vita vi servirà di cibo: vi do tutto questo, come già le verdi erbe."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אַךְ בָּשָׂ֕ר בְּ/נַפְשׁ֥/וֹ דָמ֖/וֹ לֹ֥א תֹאכֵֽלוּ׃",
+        "VUL": "Excepto, quod carnem cum sanguine non comedetis.",
+        "LXX": "πλὴν κρέας ἐν αἵματι ψυχῆς οὐ φάγεσθε·",
+        "NAB": "Only flesh with its lifeblood still in it you shall not eat.",
+        "SYN": "только плоти с душею ее, с кровью ее, не ешьте;",
+        "NEO": "Seulement vous ne mangerez pas de chair avec son âme, c’est-à-dire avec son sang.",
+        "VAT_ES": "Sólo se abstendrán de comer la carne con su vida, es decir, con su sangre.",
+        "CEI": "Soltanto non mangerete la carne con la sua vita, cioè il suo sangue."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/אַ֨ךְ אֶת דִּמְ/כֶ֤ם לְ/נַפְשֹֽׁתֵי/כֶם֙ אֶדְרֹ֔שׁ מִ/יַּ֥ד כָּל חַיָּ֖ה אֶדְרְשֶׁ֑/נּוּ וּ/מִ/יַּ֣ד הָֽ/אָדָ֗ם מִ/יַּד֙ אִ֣ישׁ אָחִ֔י/ו אֶדְרֹ֖שׁ אֶת נֶ֥פֶשׁ הָֽ/אָדָֽם׃",
+        "VUL": "Sanguinem enim animarum vestrarum requiram de manu cunctarum bestiarum : et de manu hominis, de manu viri, et fratris ejus requiram animam hominis.",
+        "LXX": "καὶ γὰρ τὸ ὑμέτερον αἷμα τῶν ψυχῶν ὑμῶν ἐκζητήσω· ἐκ χειρὸς πάντων τῶν θηρίων ἐκζητήσω αὐτό, καὶ ἐκ χειρὸς ἀνθρώπου ἀδελφοῦ ἐκζητήσω τὴν ψυχὴν τοῦ ἀνθρώπου.",
+        "NAB": "For your own lifeblood, too, I will demand an accounting: from every animal I will demand it, and from man in regard to his fellow man I will demand an accounting for human life.",
+        "SYN": "Я взыщу и вашу кровь, _в_ _которой_ жизнь ваша, взыщу ее от всякого зверя, взыщу также душу человека от руки человека, от руки брата его;",
+        "NEO": "Et votre sang à vous, j’en demanderai compte à cause de vos âmes, j’en demanderai compte à toute bête ; de la main de l’homme, de la main de l’homme qui est son frère, je redemanderai l’âme de l’homme.",
+        "VAT_ES": "Y yo pediré cuenta de la sangre de cada uno de ustedes: pediré cuenta de ella a todos los animales, y también pediré cuenta al hombre de la vida de su prójimo.",
+        "CEI": "Del sangue vostro anzi, ossia della vostra vita, io domanderò conto; ne domanderò conto ad ogni essere vivente e domanderò conto della vita dell'uomo all'uomo, a ognuno di suo fratello."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "שֹׁפֵךְ֙ דַּ֣ם הָֽ/אָדָ֔ם בָּֽ/אָדָ֖ם דָּמ֣/וֹ יִשָּׁפֵ֑ךְ כִּ֚י בְּ/צֶ֣לֶם אֱלֹהִ֔ים עָשָׂ֖ה אֶת הָ/אָדָֽם׃",
+        "VUL": "Quicumque effuderit humanum sanguinem, fundetur sanguis illius : ad imaginem quippe Dei factus est homo.",
+        "LXX": "ὁ ἐκχέων αἷμα ἀνθρώπου ἀντὶ τοῦ αἵματος αὐτοῦ ἐκχυθήσεται, ὅτι ἐν εἰκόνι θεοῦ ἐποίησα τὸν ἄνθρωπον.",
+        "NAB": "If anyone sheds the blood of man, by man shall his blood be shed; For in the image of God has man been made.",
+        "SYN": "кто прольет кровь человеческую, того кровь прольется рукою человека: ибо человек создан по образу Божию;",
+        "NEO": "Quiconque aura versé le sang de l’homme, par l’homme son sang sera versé, car Dieu a fait l’homme à son image.",
+        "VAT_ES": "Otro hombre derramará la sangre de aquel que derrame sangre humana, porque el hombre ha sido creado a imagen de Dios.",
+        "CEI": "Chi sparge il sangue dell'uomo dall'uomo il suo sangue sarà sparso, perché ad immagine di Dio Egli ha fatto l'uomo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/אַתֶּ֖ם פְּר֣וּ וּ/רְב֑וּ שִׁרְצ֥וּ בָ/אָ֖רֶץ וּ/רְבוּ בָֽ/הּ׃",
+        "VUL": "Vos autem crescite et multiplicamini, et ingredimini super terram, et implete eam.",
+        "LXX": "ὑμεῖς δὲ αὐξάνεσθε καὶ πληθύνεσθε, καὶ πληρώσατε τὴν γῆν καὶ πληθύνεσθε ἐπὶ τῆς γῆς.",
+        "NAB": "Be fertile, then, and multiply; abound on earth and subdue it.\"",
+        "SYN": "вы же плодитесь и размножайтесь, и распространяйтесь по земле, и умножайтесь на ней.",
+        "NEO": "Vous, soyez féconds et multipliez ; répandez-vous sur la terre et vous y multipliez. »",
+        "VAT_ES": "Ustedes, por su parte, sean fecundos y multiplíquense, llenen la tierra y domínenla».",
+        "CEI": "E voi, siate fecondi e moltiplicatevi, siate numerosi sulla terra e dominatela\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֱלֹהִים֙ אֶל נֹ֔חַ וְ/אֶל בָּנָ֥י/ו אִתּ֖/וֹ לֵ/אמֹֽר׃",
+        "VUL": "Hæc quoque dixit Deus ad Noë, et ad filios ejus cum eo :",
+        "LXX": "Καὶ εἶπεν ὁ θεὸς τῷ Νῶε καὶ τοῖς υἱοῖς αὐτοῦ μετ’ αὐτοῦ λέγων",
+        "NAB": "God said to Noah and to his sons with him:",
+        "SYN": "И сказал Бог Ною и сынам его с ним:",
+        "NEO": "Dieu dit encore à Noé et à ses fils avec lui :",
+        "VAT_ES": "Y Dios siguió diciendo a Noé y a sus hijos:",
+        "CEI": "Dio disse a Noè e ai sui figli con lui:"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/אֲנִ֕י הִנְנִ֥/י מֵקִ֛ים אֶת בְּרִיתִ֖/י אִתְּ/כֶ֑ם וְ/אֶֽת זַרְעֲ/כֶ֖ם אַֽחֲרֵי/כֶֽם׃",
+        "VUL": "Ecce ego statuam pactum meum vobiscum, et cum semine vestro post vos :",
+        "LXX": "Ἐγὼ ἰδοὺ ἀνίστημι τὴν διαθήκην μου ὑμῖν καὶ τῷ σπέρματι ὑμῶν μεθ’ ὑμᾶς,",
+        "NAB": "\"See, I am now establishing my covenant with you and your descendants after you",
+        "SYN": "вот, Я поставляю завет Мой с вами и с потомством вашим после вас,",
+        "NEO": "« Et moi, je vais établir mon alliance avec vous et avec votre postérité après vous,",
+        "VAT_ES": "«Además, yo establezco mi alianza con ustedes, con sus descendientes,",
+        "CEI": "\"Quanto a me, ecco io stabilisco la mia alleanza coni vostri discendenti dopo di voi;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨ת כָּל נֶ֤פֶשׁ הַֽ/חַיָּה֙ אֲשֶׁ֣ר אִתְּ/כֶ֔ם בָּ/ע֧וֹף בַּ/בְּהֵמָ֛ה וּֽ/בְ/כָל חַיַּ֥ת הָ/אָ֖רֶץ אִתְּ/כֶ֑ם מִ/כֹּל֙ יֹצְאֵ֣י הַ/תֵּבָ֔ה לְ/כֹ֖ל חַיַּ֥ת הָ/אָֽרֶץ׃",
+        "VUL": "et ad omnem animam viventem, quæ est vobiscum, tam in volucribus quam in jumentis et pecudibus terræ cunctis, quæ egressa sunt de arca, et universis bestiis terræ.",
+        "LXX": "καὶ πάσῃ ψυχῇ ζώσῃ μεθ’ ὑμῶν, ἀπὸ ὀρνέων καὶ ἀπὸ κτηνῶν, καὶ πᾶσι τοῖς θηρίοις τῆς γῆς ὅσα μεθ’ ὑμῶν ἀπὸ πάντων τῶν ἐξελθόντων ἐκ τῆς κιβωτοῦ.",
+        "NAB": "and with every living creature that was with you: all the birds, and the various tame and wild animals that were with you and came out of the ark.",
+        "SYN": "и со всякою душею живою, которая с вами, с птицами и со скотами, и со всеми зверями земными, которые у вас, со всеми вышедшими из ковчега, со всеми животными земными;",
+        "NEO": "avec tous les êtres vivants qui sont avec vous, oiseaux, animaux domestiques et toutes les bêtes de la terre avec vous, depuis tous ceux qui sont sortis de l’arche jusqu’à toute bête de la terre.",
+        "VAT_ES": "y con todos los seres vivientes que están con ustedes: con los pájaros, el ganado y las fieras salvajes; con todos los animales que salieron del arca, en una palabra, con todos los seres vivientes que hay en la tierra.",
+        "CEI": "con ogni essere vivente che è con voi, uccelli, bestiame e bestie selvatiche, con tutti gli animali che sono usciti dall'arca."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/הֲקִמֹתִ֤י אֶת בְּרִיתִ/י֙ אִתְּ/כֶ֔ם וְ/לֹֽא יִכָּרֵ֧ת כָּל בָּשָׂ֛ר ע֖וֹד מִ/מֵּ֣י הַ/מַּבּ֑וּל וְ/לֹֽא יִהְיֶ֥ה ע֛וֹד מַבּ֖וּל לְ/שַׁחֵ֥ת הָ/אָֽרֶץ׃",
+        "VUL": "Statuam pactum meum vobiscum, et nequaquam ultra interficietur omnis caro aquis diluvii, neque erit deinceps diluvium dissipans terram.",
+        "LXX": "καὶ στήσω τὴν διαθήκην μου πρὸς ὑμᾶς, καὶ οὐκ ἀποθανεῖται πᾶσα σὰρξ ἔτι ἀπὸ τοῦ ὕδατος τοῦ κατακλυσμοῦ, καὶ οὐκ ἔσται ἔτι κατακλυσμὸς ὕδατος τοῦ καταφθεῖραι πᾶσαν τὴν γῆν.",
+        "NAB": "I will establish my covenant with you, that never again shall all bodily creatures be destroyed by the waters of a flood; there shall not be another flood to devastate the earth.\"",
+        "SYN": "поставляю завет Мой с вами, что не будет более истреблена всякая плоть водами потопа, и не будет уже потопа на опустошение земли.",
+        "NEO": "J’établis mon alliance avec vous : aucune chair ne sera plus détruite par les eaux du déluge, et il n’y aura plus de déluge pour ravager la terre. »",
+        "VAT_ES": "Yo estableceré mi alianza con ustedes: los mortales ya no volverán a ser exterminados por las aguas del Diluvio, ni habrá otro Diluvio para devastar la tierra».",
+        "CEI": "Io stabilisco la mia alleanza con voi: non sarà più distrutto nessun vivente dalle acque del diluvio, né più il diluvio devasterà la terra\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אֱלֹהִ֗ים זֹ֤את אֽוֹת הַ/בְּרִית֙ אֲשֶׁר אֲנִ֣י נֹתֵ֗ן בֵּינִ/י֙ וּ/בֵ֣ינֵי/כֶ֔ם וּ/בֵ֛ין כָּל נֶ֥פֶשׁ חַיָּ֖ה אֲשֶׁ֣ר אִתְּ/כֶ֑ם לְ/דֹרֹ֖ת עוֹלָֽם׃",
+        "VUL": "Dixitque Deus : Hoc signum fderis quod do inter me et vos, et ad omnem animam viventem, quæ est vobiscum in generationes sempiternas :",
+        "LXX": "καὶ εἶπεν Κύριος ὁ θεὸς πρὸς Νῶε Τοῦτο τὸ σημεῖον τῆς διαθήκης ὃ ἐγὼ δίδωμι ἀνὰ μέσον ἐμοῦ καὶ ὑμῶν καὶ ἀνὰ μέσον πάσης ψυχῆς ζώσης ἥ ἐστιν μεθ’ ὑμῶν εἰς γενεὰς αἰωνίους·",
+        "NAB": "God added: \"This is the sign that I am giving for all ages to come, of the covenant between me and you and every living creature with you:",
+        "SYN": "И сказал [Господь] Бог: вот знамение завета, который Я поставляю между Мною и между вами и между всякою душею живою, которая с вами, в роды навсегда:",
+        "NEO": "Et Dieu dit : « Voici le signe de l’alliance que je mets entre moi et vous, et tous les êtres vivants qui sont avec vous, pour toutes les générations à venir.",
+        "VAT_ES": "Dios añadió: «Este será el signo de la alianza que establezco con ustedes, y con todos los seres vivientes que los acompañan, para todos los tiempos futuros:",
+        "CEI": "Dio disse: \"Questo è il segno dell'alleanza, che io pongo tra me e voi e tra ogni essere vivente che è con voi per le generazioni eterne."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "אֶת קַשְׁתִּ֕/י נָתַ֖תִּי בֶּֽ/עָנָ֑ן וְ/הָֽיְתָה֙ לְ/א֣וֹת בְּרִ֔ית בֵּינִ֖/י וּ/בֵ֥ין הָ/אָֽרֶץ׃",
+        "VUL": "arcum meum ponam in nubibus, et erit signum fderis inter me et inter terram.",
+        "LXX": "τὸ τόξον μου τίθημι ἐν τῇ νεφέλῃ, καὶ ἔσται εἰς σημεῖον διαθήκης ἀνὰ μέσον ἐμοῦ καὶ τῆς γῆς.",
+        "NAB": "I set my bow in the clouds to serve as a sign of the covenant between me and the earth.",
+        "SYN": "Я полагаю радугу Мою в облаке, чтоб она была знамением [вечного] завета между Мною и между землею.",
+        "NEO": "J’ai mis mon arc dans la nue, et il deviendra signe d’alliance entre moi et la terre.",
+        "VAT_ES": "yo pongo mi arco en las nubes, como un signo de mi alianza con la tierra.",
+        "CEI": "Il mio arco pongo sulle nubi ed esso sarà il segno dell'alleanza tra me e la terra."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֕ה בְּ/עַֽנְנִ֥/י עָנָ֖ן עַל הָ/אָ֑רֶץ וְ/נִרְאֲתָ֥ה הַ/קֶּ֖שֶׁת בֶּ/עָנָֽן׃",
+        "VUL": "Cumque obduxero nubibus cælum, apparebit arcus meus in nubibus :",
+        "LXX": "καὶ ἔσται ἐν τῷ συννεφεῖν με νεφέλας ἐπὶ τὴν γῆν ὀφθήσεται τὸ τόξον μου ἐν τῇ νεφέλῃ,",
+        "NAB": "When I bring clouds over the earth, and the bow appears in the clouds,",
+        "SYN": "И будет, когда Я наведу облако на землю, то явится радуга [Моя] в облаке;",
+        "NEO": "Quand j’assemblerai des nuées au-dessus de la terre, l’arc apparaîtra dans la nue,",
+        "VAT_ES": "Cuando cubra de nubes la tierra y aparezca mi arco entre ellas,",
+        "CEI": "Quando radunerò le nubi sulla terra e apparirà l'arco sulle nubi"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/זָכַרְתִּ֣י אֶת בְּרִיתִ֗/י אֲשֶׁ֤ר בֵּינִ/י֙ וּ/בֵ֣ינֵי/כֶ֔ם וּ/בֵ֛ין כָּל נֶ֥פֶשׁ חַיָּ֖ה בְּ/כָל בָּשָׂ֑ר וְ/לֹֽא יִֽהְיֶ֨ה ע֤וֹד הַ/מַּ֨יִם֙ לְ/מַבּ֔וּל לְ/שַׁחֵ֖ת כָּל בָּשָֽׂר׃",
+        "VUL": "et recordabor fderis mei vobiscum, et cum omni anima vivente quæ carnem vegetat : et non erunt ultra aquæ diluvii ad delendum universam carnem.",
+        "LXX": "καὶ μνησθήσομαι τῆς διαθήκης μου, ἥ ἐστιν ἀνὰ μέσον ἐμοῦ καὶ ὑμῶν καὶ ἀνὰ μέσον πάσης ψυχῆς ζώσης ἐν πάσῃ σαρκί· καὶ οὐκ ἔσται ἔτι τὸ ὕδωρ εἰς κατακλυσμόν, ὥστε ἐξαλεῖψαι πᾶσαν σάρκα.",
+        "NAB": "I will recall the covenant I have made between me and you and all living beings, so that the waters shall never again become a flood to destroy all mortal beings.",
+        "SYN": "и Я вспомню завет Мой, который между Мною и между вами и между всякою душею живою во всякой плоти; и не будет более вода потопом на истребление всякой плоти.",
+        "NEO": "et je me souviendrai de mon alliance entre moi et vous et tout être vivant, de toute chair, et les eaux ne deviendront plus un déluge détruisant toute chair.",
+        "VAT_ES": "me acordaré de mi alianza con ustedes y con todos los seres vivientes, y no volverán a precipitarse las aguas del Diluvio para destruir a los mortales.",
+        "CEI": "ricorderò la mia alleanza che è tra me e voi e tra ogni essere che vive in ogni carne e noi ci saranno più le acque per il diluvio, per distruggere ogni carne."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/הָיְתָ֥ה הַ/קֶּ֖שֶׁת בֶּֽ/עָנָ֑ן וּ/רְאִיתִ֗י/הָ לִ/זְכֹּר֙ בְּרִ֣ית עוֹלָ֔ם בֵּ֣ין אֱלֹהִ֔ים וּ/בֵין֙ כָּל נֶ֣פֶשׁ חַיָּ֔ה בְּ/כָל בָּשָׂ֖ר אֲשֶׁ֥ר עַל הָ/אָֽרֶץ׃",
+        "VUL": "Eritque arcus in nubibus, et videbo illum, et recordabor fderis sempiterni quod pactum est inter Deum et omnem animam viventem universæ carnis quæ est super terram.",
+        "LXX": "καὶ ἔσται τὸ τόξον μου ἐν τῇ νεφέλῃ, καὶ ὄψομαι τοῦ μνησθῆναι διαθήκην αἰώνιον ἀνὰ μέσον ἐμοῦ καὶ ἀνὰ μέσον πάσης ψυχῆς ζώσης ἐν πάσῃ σαρκὶ ἥ ἐστιν ἐπὶ τῆς γῆς.",
+        "NAB": "As the bow appears in the clouds, I will see it and recall the everlasting covenant that I have established between God and all living beings - all mortal creatures that are on earth.\"",
+        "SYN": "И будет радуга [Моя] в облаке, и Я увижу ее, и вспомню завет вечный между Богом [и между землею] и между всякою душею живою во всякой плоти, которая на земле.",
+        "NEO": "L’arc sera dans la nue et, en le regardant, je me souviendrai de l’alliance éternelle qui existe entre Dieu et tous les êtres vivants, de toute chair, qui sont sur la terre. »",
+        "VAT_ES": "Al aparecer mi arco en las nubes, yo lo veré y me acordaré de mi alianza eterna con todos los seres vivientes que hay sobre la tierra.",
+        "CEI": "L'arco sarà sulle nubi e io lo guarderò per ricordare l'alleanza eterna tra Dio e ogni essere che vive in ogni carne che è sulla terra\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר אֱלֹהִ֖ים אֶל נֹ֑חַ זֹ֤את אֽוֹת הַ/בְּרִית֙ אֲשֶׁ֣ר הֲקִמֹ֔תִי בֵּינִ֕/י וּ/בֵ֥ין כָּל בָּשָׂ֖ר אֲשֶׁ֥ר עַל הָ/אָֽרֶץ׃",
+        "VUL": "Dixitque Deus ad Noë : Hoc erit signum fderis, quod constitui inter me et omnem carnem super terram.",
+        "LXX": "καὶ εἶπεν ὁ θεὸς τῷ Νῶε Τοῦτο τὸ σημεῖον τῆς διαθήκης ἧς διεθέμην ἀνὰ μέσον ἐμοῦ καὶ ἀνὰ μέσον πάσης σαρκὸς ἥ ἐστιν ἐπὶ τῆς γῆς.",
+        "NAB": "God told Noah: \"This is the sign of the covenant I have established between me and all mortal creatures that are on earth.\"",
+        "SYN": "И сказал Бог Ною: вот знамение завета, который Я поставил между Мною и между всякою плотью, которая на земле.",
+        "NEO": "Et Dieu dit à Noé : « Tel est le signe de l’alliance que j’ai établie entre moi et toute chair qui est sur la terre. »",
+        "VAT_ES": "Este, dijo Dios a Noé, es el signo de la alianza que establecí con todos los mortales».",
+        "CEI": "Disse Dio a Noè: \"Questo è il segno dell'alleanza che io ho stabilito tra me e ogni carne che è sulla terra\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּֽהְי֣וּ בְנֵי נֹ֗חַ הַ/יֹּֽצְאִים֙ מִן הַ/תֵּבָ֔ה שֵׁ֖ם וְ/חָ֣ם וָ/יָ֑פֶת וְ/חָ֕ם ה֖וּא אֲבִ֥י כְנָֽעַן׃",
+        "VUL": "Erant ergo filii Noë, qui egressi sunt de arca, Sem, Cham et Japheth : porro Cham ipse est pater Chanaan.",
+        "LXX": "Ἦσαν δὲ οἱ υἱοὶ Νῶε οἱ ἐξελθόντες ἐκ τῆς κιβωτοῦ Σήμ, Χάμ, Ἰάφεθ· Χὰμ ἦν πατὴρ Χανάαν.",
+        "NAB": "The sons of Noah who came out of the ark were Shem, Ham and Japheth. (Ham was the father of Canaan.)",
+        "SYN": "Сыновья Ноя, вышедшие из ковчега, были: Сим, Хам и Иафет. Хам же был отец Ханаана.",
+        "NEO": "Les fils de Noé qui sortirent de l’arche étaient Sem, Cham et Japheth ; et Cham était père de Canaan.",
+        "VAT_ES": "Los hijos de Noé que salieron del arca fueron Sem, Cam y Jafet. Cam es el padre de Canaán.",
+        "CEI": "I figli di Noè che uscirono dall'arca furono Sem, Cam e Iafet; Cam è il padre di Cànaan."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "שְׁלֹשָׁ֥ה אֵ֖לֶּה בְּנֵי נֹ֑חַ וּ/מֵ/אֵ֖לֶּה נָֽפְצָ֥ה כָל הָ/אָֽרֶץ׃",
+        "VUL": "Tres isti filii sunt Noë : et ab his disseminatum est omne genus hominum super universam terram.",
+        "LXX": "τρεῖς οὗτοί εἰσιν οἱ υἱοὶ Νῶε· ἀπὸ τούτων διεσπάρησαν ἐπὶ πᾶσαν τὴν γῆν.",
+        "NAB": "These three were the sons of Noah, and from them the whole earth was peopled.",
+        "SYN": "Сии трое были сыновья Ноевы, и от них населилась вся земля.",
+        "NEO": "Ces trois sont les fils de Noé, et c’est par eux que fut peuplée toute la terre.",
+        "VAT_ES": "A partir de estos tres hijos de Noé, se pobló toda la tierra.",
+        "CEI": "Questi tre sono i figli di Noè e da questi fu popolata tutta la terra."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥חֶל נֹ֖חַ אִ֣ישׁ הָֽ/אֲדָמָ֑ה וַ/יִּטַּ֖ע כָּֽרֶם׃",
+        "VUL": "Cpitque Noë vir agricola exercere terram, et plantavit vineam.",
+        "LXX": "Καὶ ἤρξατο Νῶε ἄνθρωπος γεωργὸς γῆς, καὶ ἐφύτευσεν ἀμπελῶνα.",
+        "NAB": "Now Noah, a man of the soil, was the first to plant a vineyard.",
+        "SYN": "Ной начал возделывать землю и насадил виноградник;",
+        "NEO": "Noé, qui était cultivateur, commença à planter de la vigne.",
+        "VAT_ES": "Noé se dedicó a la agricultura y fue el primero que plantó una viña.",
+        "CEI": "Ora Noè, coltivatore della terra, cominciò a piantare una vigna."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֥שְׁתְּ מִן הַ/יַּ֖יִן וַ/יִּשְׁכָּ֑ר וַ/יִּתְגַּ֖ל בְּ/ת֥וֹךְ אָהֳלֹֽ/ה׃",
+        "VUL": "Bibensque vinum inebriatus est, et nudatus in tabernaculo suo.",
+        "LXX": "καὶ ἔπιεν ἐκ τοῦ οἴνου καὶ ἐμεθύσθη, καὶ ἐγυμνώθη ἐν τῷ οἴκῳ αὐτοῦ.",
+        "NAB": "When he drank some of the wine, he became drunk and lay naked inside his tent.",
+        "SYN": "и выпил он вина, и опьянел, и _лежал_ обнаженным в шатре своем.",
+        "NEO": "Ayant bu du vin, il s’enivra, et il se découvrit au milieu de sa tente.",
+        "VAT_ES": "Pero cuando bebió vino, se embriagó y quedó tendido en medio de su carpa, completamente desnudo.",
+        "CEI": "Avendo bevuto il vino, si ubriacò e giacque scoperto all'interno della sua tenda."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יַּ֗רְא חָ֚ם אֲבִ֣י כְנַ֔עַן אֵ֖ת עֶרְוַ֣ת אָבִ֑י/ו וַ/יַּגֵּ֥ד לִ/שְׁנֵֽי אֶחָ֖י/ו בַּ/חֽוּץ׃",
+        "VUL": "Quod cum vidisset Cham, pater Chanaan, verenda scilicet patris sui esse nudata, nuntiavit duobus fratribus suis foras.",
+        "LXX": "καὶ εἶδεν Χὰμ ὁ πατὴρ Χανάαν τὴν γύμνωσιν τοῦ πατρὸς αὐτοῦ, καὶ ἐξελθὼν ἀνήγγειλεν τοῖς δυσὶν ἀδελφοῖς αὐτοῦ ἔξω.",
+        "NAB": "Ham, the father of Canaan, saw his father's nakedness, and he told his two brothers outside about it.",
+        "SYN": "И увидел Хам, отец Ханаана, наготу отца своего, и выйдя рассказал двум братьям своим.",
+        "NEO": "Cham, père de Canaan, vit la nudité de son père, et il alla le rapporter dehors à ses deux frères.",
+        "VAT_ES": "Cam, el padre de Canaán, al ver a su padre desnudo, fue a contárselo a sus hermanos, que estaban afuera.",
+        "CEI": "Cam, padre di Cànaan, vide il padre scoperto e raccontò la cosa ai due fratelli che stavano fuori."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּח֩ שֵׁ֨ם וָ/יֶ֜פֶת אֶת הַ/שִּׂמְלָ֗ה וַ/יָּשִׂ֨ימוּ֙ עַל שְׁכֶ֣ם שְׁנֵי/הֶ֔ם וַ/יֵּֽלְכוּ֙ אֲחֹ֣רַנִּ֔ית וַ/יְכַסּ֕וּ אֵ֖ת עֶרְוַ֣ת אֲבִי/הֶ֑ם וּ/פְנֵי/הֶם֙ אֲחֹ֣רַנִּ֔ית וְ/עֶרְוַ֥ת אֲבִי/הֶ֖ם לֹ֥א רָאֽוּ׃",
+        "VUL": "At vero Sem et Japheth pallium imposuerunt humeris suis, et incedentes retrorsum, operuerunt verenda patris sui : faciesque eorum aversæ erant, et patris virilia non viderunt.",
+        "LXX": "καὶ λαβόντες Σὴμ καὶ Ἰάφεθ τὸ ἱμάτιον ἐπέθηκαν ἐπὶ τὰ δύο νῶτα αὐτῶν, καὶ ἐπορεύθησαν ὀπισθοφανῶς καὶ συνεκάλυψαν τὴν γύμνωσιν τοῦ πατρὸς αὐτῶν· καὶ τὸ πρόσωπον αὐτῶν ὀπισθοφανές, καὶ τὴν γύμνωσιν τοῦ πατρὸς αὐτῶν οὐκ ἴδον.",
+        "NAB": "Shem and Japheth, however, took a robe, and holding it on their backs, they walked backward and covered their father's nakedness; since their faces were turned the other way, they did not see their father's nakedness.",
+        "SYN": "Сим же и Иафет взяли одежду и, положив ее на плечи свои, пошли задом и покрыли наготу отца своего; лица их были обращены назад, и они не видали наготы отца своего.",
+        "NEO": "Alors Sem avec Japheth prit le manteau de Noé et, l’ayant mis sur leurs épaules, ils marchèrent à reculons et couvrirent la nudité de leur père.",
+        "VAT_ES": "Entonces Sem y Jafet tomaron un manto, se lo pusieron los dos sobre la espalda y, caminando hacia atrás, cubrieron la desnudez de su padre. Como sus rostros miraban en sentido contrario, no vieron a su padre desnudo.",
+        "CEI": "Allora Sem e Iafet presero il mantello, se lo misero tutti e due sulle spalle e, camminando a ritroso, coprirono il padre scoperto; avendo rivolto la faccia indietro, non videro il padre scoperto."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּ֥יקֶץ נֹ֖חַ מִ/יֵּינ֑/וֹ וַ/יֵּ֕דַע אֵ֛ת אֲשֶׁר עָ֥שָׂה ל֖/וֹ בְּנ֥/וֹ הַ/קָּטָֽן׃",
+        "VUL": "Evigilans autem Noë ex vino, cum didicisset quæ fecerat ei filius suus minor,",
+        "LXX": "ἐξένηψεν δὲ Νῶε ἀπὸ τοῦ οἴνου, καὶ ἔγνω ὅσα ἐποίησεν αὐτῷ ὁ υἱὸς αὐτοῦ ὁ νεώτερος.",
+        "NAB": "When Noah woke up from his drunkenness and learned what his youngest son had done to him,",
+        "SYN": "Ной проспался от вина своего и узнал, что сделал над ним меньший сын его,",
+        "NEO": "Comme leur visage était tourné en arrière, ils ne virent pas la nudité de leur père. Lorsque Noé se réveilla de son ivresse, il apprit ce que lui avait fait son plus jeune fils,",
+        "VAT_ES": "Cuando Noé despertó de su embriaguez y se enteró de lo que había hecho su hijo menor,",
+        "CEI": "Quando Noè si fu risvegliato dall'ebbrezza, seppe quanto gli aveva fatto il figlio minore;"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֖אמֶר אָר֣וּר כְּנָ֑עַן עֶ֥בֶד עֲבָדִ֖ים יִֽהְיֶ֥ה לְ/אֶחָֽי/ו׃",
+        "VUL": "ait : [Maledictus Chanaan,/ servus servorum erit fratribus suis.]",
+        "LXX": "καὶ εἶπεν Ἐπικατάρατος Χανάαν· παῖς οἰκέτης ἔσται τοῖς ἀδελφοῖς αὐτοῦ.",
+        "NAB": "he said: \"Cursed be Caanan! The lowest of slaves shall he be to his brothers.\"",
+        "SYN": "и сказал: проклят Ханаан; раб рабов будет он у братьев своих.",
+        "NEO": "et il dit : Maudit soit Canaan ! Il sera pour ses frères le serviteur des serviteurs !",
+        "VAT_ES": "dijo: «&iexcl;Maldito sea Canaán! El será para sus hermanos el último de los esclavos».",
+        "CEI": "allora disse: \"Sia maledetto Cànaan! Schiavo degli schiavi sarà per i suoi fratelli!\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֕אמֶר בָּר֥וּךְ יְהֹוָ֖ה אֱלֹ֣הֵי שֵׁ֑ם וִ/יהִ֥י כְנַ֖עַן עֶ֥בֶד לָֽ/מוֹ׃",
+        "VUL": "Dixitque : [Benedictus Dominus Deus Sem,/ sit Chanaan servus ejus./",
+        "LXX": "καὶ εἶπεν Εὐλογητὸς Κύριος ὁ θεὸς τοῦ Σήμ, καὶ ἔσται Χανάαν παῖς αὐτοῦ.",
+        "NAB": "He also said: \"Blessed be the LORD, the God of Shem! Let Canaan be his slave.",
+        "SYN": "Потом сказал: благословен Господь Бог Симов; Ханаан же будет рабом ему;",
+        "NEO": "Puis il dit : Béni soit \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu de Sem, et que Canaan soit son serviteur !",
+        "VAT_ES": "Y agregó: «Bendito sea el Señor, Dios de Sem, y que Canaán sea su esclavo.",
+        "CEI": "Disse poi: \"Benedetto il Signore, Dio di Sem, Cànaan sia suo schiavo!"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "יַ֤פְתְּ אֱלֹהִים֙ לְ/יֶ֔פֶת וְ/יִשְׁכֹּ֖ן בְּ/אָֽהֳלֵי שֵׁ֑ם וִ/יהִ֥י כְנַ֖עַן עֶ֥בֶד לָֽ/מוֹ׃",
+        "VUL": "Dilatet Deus Japheth, et habitet in tabernaculis Sem,/ sitque Chanaan servus ejus.]",
+        "LXX": "πλατύναι ὁ θεὸς τῷ Ἰάφεθ, καὶ κατοικησάτω ἐν τοῖς οἴκοις τοῦ Σήμ· καὶ γενηθήτω Χανάαν παῖς αὐτῶν.",
+        "NAB": "May God expand Japheth, so that he dwells among the tents of Shem; and let Canaan be his slave.\"",
+        "SYN": "да распространит Бог Иафета, и да вселится он в шатрах Симовых; Ханаан же будет рабом ему.",
+        "NEO": "Que Dieu donne de l’espace à Japheth, qu’il habite dans les tentes de Sem, et que Canaan soit son serviteur !",
+        "VAT_ES": "Que Dios abra camino a Jafet, para que habite entre los campamentos de Sem; y que Canaán sea su esclavo».",
+        "CEI": "Dio dilati Iafet e questi dimori nelle tende di Sem, Cànaan sia suo schiavo!\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַֽ/יְחִי נֹ֖חַ אַחַ֣ר הַ/מַּבּ֑וּל שְׁלֹ֤שׁ מֵאוֹת֙ שָׁנָ֔ה וַֽ/חֲמִשִּׁ֖ים שָׁנָֽה׃",
+        "VUL": "Vixit autem Noë post diluvium trecentis quinquaginta annis.",
+        "LXX": "Ἔζησεν δὲ Νῶε μετὰ τὸν κατακλυσμὸν τριακόσια πεντήκοντα ἔτη.",
+        "NAB": "Noah lived three hundred and fifty years after the flood.",
+        "SYN": "И жил Ной после потопа триста пятьдесят лет.",
+        "NEO": "Noé vécut après le déluge trois cent cinquante ans.",
+        "VAT_ES": "Después del Diluvio, Noé vivió trescientos cincuenta años,",
+        "CEI": "Noè visse, dopo il diluvio, trecentocinquanta anni."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יִּֽהְיוּ֙ כָּל יְמֵי נֹ֔חַ תְּשַׁ֤ע מֵאוֹת֙ שָׁנָ֔ה וַ/חֲמִשִּׁ֖ים שָׁנָ֑ה וַ/יָּמֹֽת׃",
+        "VUL": "Et impleti sunt omnes dies ejus nongentorum quinquaginta annorum : et mortuus est.",
+        "LXX": "καὶ ἐγένοντο πᾶσαι αἱ ἡμέραι Νῶε ἐννακόσια πεντήκοντα ἔτη, καὶ ἀπέθανεν.",
+        "NAB": "The whole lifetime of Noah was nine hundred and fifty years; then he died.",
+        "SYN": "Всех же дней Ноевых было девятьсот пятьдесят лет, и он умер.",
+        "NEO": "Tous les jours de Noé furent de neuf cent cinquante ans, et il mourut.",
+        "VAT_ES": "y en total, vivió novecientos cincuenta años. Al cabo de ellos, murió.",
+        "CEI": "L'intera vita di Noè fu di novecentocinquanta anni, poi morì."
+      }
+    }
+  }
+}

@@ -1,0 +1,656 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ACTU_020",
+  "book_key": "ACTU",
+  "sequence": 20,
+  "chapter_in": {
+    "MT": 20,
+    "VUL": 20,
+    "LXX": 20
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Actus_Apostolorum",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Μετὰ δὲ τὸ παύσασθαι τὸν θόρυβον, προσκαλεσάμενος ὁ Παῦλος τοὺς μαθητάς, καὶ ἀσπασάμενος, ἐξῆλθεν πορευθῆναι εἰς τὴν Μακεδονίαν.",
+        "VUL": "Postquam autem cessavit tumultus, vocatis Paulus discipulis, et exhortatus eos, valedixit, et profectus est ut iret in Macedoniam.",
+        "SYN": "По прекращении мятежа Павел, призвав учеников и дав им наставления и простившись с ними, вышел и пошел в Македонию.",
+        "NEO": "Lorsque le tumulte eut cessé, Paul réunit les disciples, prit congé d’eux et partit pour la Macédoine.",
+        "NAB": "When the disturbance was over, Paul had the disciples summoned and, after encouraging them, he bade them farewell and set out on his journey to Macedonia.",
+        "VAT_ES": "Cuando cesó el tumulto, Pablo llamó a los discípulos y después de haberlos exhortado, se despidió de ellos y partió hacia Macedonia.",
+        "CEI": "Dico la verità in Cristo, non mentisco, e la mia coscienza me ne dà testimonianza nello Spirito Santo:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Διελθὼν δὲ τὰ μέρη ἐκεῖνα, καὶ παρακαλέσας αὐτοὺς λόγῳ πολλῷ, ἦλθεν εἰς τὴν Ἑλλάδα.",
+        "VUL": "Cum autem perambulasset partes illas, et exhortatus eos fuisset multo sermone, venit ad Græciam :",
+        "SYN": "Пройдя же те места и преподав _верующим_ обильные наставления, пришел в Елладу.",
+        "NEO": "Il parcourut cette contrée, en adressant aux disciples de nombreux exhortations, et se rendit en Grèce,+ 20:2 XX, 2. En Grèce, litt. \\+qt dans l’Hellade\\+qt*, en Achaïe.*",
+        "NAB": "As he traveled throughout those regions, he provided many words of encouragement for them. Then he arrived in Greece,",
+        "VAT_ES": "Atravesó toda esa región, exhortando vivamente a sus hermanos, y llegó a Grecia,",
+        "CEI": "ho nel cuore un grande dolore e una sofferenza continua."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Ποιήσας τε μῆνας τρεῖς, γενομένης αὐτῷ ἐπιβουλῆς ὑπὸ τῶν Ἰουδαίων μέλλοντι ἀνάγεσθαι εἰς τὴν Συρίαν, ἐγένετο γνώμη τοῦ ὑποστρέφειν διὰ Μακεδονίας.",
+        "VUL": "ubi cum fecisset menses tres, factæ sunt illi insidiæ a Judæis navigaturo in Syriam : habuitque consilium ut reverteretur per Macedoniam.",
+        "SYN": "_Там_ пробыл он три месяца. Когда же, по случаю возмущения, сделанного против него Иудеями, он хотел отправиться в Сирию, то пришло ему на мысль возвратиться через Македонию.",
+        "NEO": "où il passa trois mois. Il se disposait à faire voile pour la Syrie, quand les Juifs lui dressèrent des embûches. Alors il se décida à reprendre la route de Macédoine.",
+        "NAB": "where he stayed for three months. But when a plot was made against him by the Jews as he was about to set sail for Syria, he decided to return by way of Macedonia.",
+        "VAT_ES": "donde permaneció tres meses. Cuando iba a embarcarse para Siria, los judíos tramaron una conspiración contra él, y por eso, decidió volver por Macedonia.",
+        "CEI": "Vorrei infatti essere io stesso anàtema, separato da Cristo a vantaggio dei miei fratelli, miei consanguinei secondo la carne."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Συνείπετο δὲ αὐτῷ ἄχρι τῆς Ἀσίας Σώπατρος Βεροιαῖος· Θεσσαλονικέων δέ, Ἀρίσταρχος καὶ Σεκοῦνδος, καὶ Γάϊος Δερβαῖος, καὶ Τιμόθεος· Ἀσιανοὶ δέ, Τυχικὸς καὶ Τρόφιμος.",
+        "VUL": "Comitatus est autem eum Sopater Pyrrhi Berensis, Thessalonicensium vero Aristarchus, et Secundus, et Gajus Derbeus, et Timotheus : Asiani vero Tychicus et Trophimus.",
+        "SYN": "Его сопровождали до Асии Сосипатр Пирров, Вериянин, и из Фессалоникийцев Аристарх и Секунд, и Гаий Дервянин и Тимофей, и Асийцы Тихик и Трофим.",
+        "NEO": "Il avait pour l’accompagner jusqu’en Asie, Sopater de Bérée, fils de Pyrrhus, Aristarque et Secundus de Thessalonique ; Gaius de Derbé, Timothée, Tychique et Trophime d’Asie.",
+        "NAB": "Sopater, the son of Pyrrhus, from Beroea, accompanied him, as did Aristarchus and Secundus from Thessalonica, Gaius from Derbe, Timothy, and Tychicus and Trophimus from Asia",
+        "VAT_ES": "Lo acompañaban Sópatro de Berea, hijo de Pirro; Aristarco y Segundo de Tesalónica; Gayo de Derbe, Timoteo, y también Tíquico y Trófimo de la provincia de Asia.",
+        "CEI": "Essi sono Israeliti e possiedono l'adozione a figli, la gloria, le alleanze, la legislazione, il culto, le promesse,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Οὗτοι προσελθόντες ἔμενον ἡμᾶς ἐν Τρῳάδι.",
+        "VUL": "Hi cum præcessissent, sustinuerunt nos Troade :",
+        "SYN": "Они, пойдя вперед, ожидали нас в Троаде.",
+        "NEO": "Ceux-ci prirent les devants et nous attendirent à Troas.+ 20:5 5. C’est à Philippes que S. Paul retrouva son disciple Luc. Désormais, jusqu’à la fin du livre, le narrateur emploie la première personne du pluriel, comme il l’avait déjà fait au chap. xvi, vers. 10-39.*",
+        "NAB": "who went on ahead and waited for us at Troas.",
+        "VAT_ES": "Estos se adelantaron y nos esperaron en Tróade.",
+        "CEI": "i patriarchi; da essi proviene Cristo secondo la carne, egli che è sopra ogni cosa, Dio benedetto nei secoli. Amen."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Ἡμεῖς δὲ ἐξεπλεύσαμεν μετὰ τὰς ἡμέρας τῶν ἀζύμων ἀπὸ Φιλίππων, καὶ ἤλθομεν πρὸς αὐτοὺς εἰς τὴν Τρῳάδα ἄχρι ἡμερῶν πέντε, οὗ διετρίψαμεν ἡμέρας ἑπτά.",
+        "VUL": "nos vero navigavimus post dies azymorum a Philippis, et venimus ad eos Troadem in diebus quinque, ubi demorati sumus diebus septem.",
+        "SYN": "А мы, после дней опресночных, отплыли из Филипп и дней в пять прибыли к ним в Троаду, где пробыли семь дней.",
+        "NEO": "Pour nous, après les jours des Azymes, nous nous embarquâmes à Philippes, et au bout de cinq jours nous les rejoignîmes à Troas, où nous passâmes sept jours.",
+        "NAB": "We sailed from Philippi after the feast of Unleavened Bread, and rejoined them five days later in Troas, where we spent a week.",
+        "VAT_ES": "Nosotros, partimos de Filipos por mar después de la fiesta de los panes Acimos, y cinco días más tarde, nos reunimos con ellos en Tróade donde pasamos una semana.",
+        "CEI": "Tuttavia la parola di Dio non è venuta meno. Infatti non tutti i discendenti di Israele sono Israele,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "¶Ἐν δὲ τῇ μιᾷ τῶν σαββάτων, συνηγμένων τῶν μαθητῶν κλάσαι ἄρτον, ὁ Παῦλος διελέγετο αὐτοῖς, μέλλων ἐξιέναι τῇ ἐπαύριον, παρέτεινέν τε τὸν λόγον μέχρι μεσονυκτίου.",
+        "VUL": "Una autem sabbati cum convenissemus ad frangendum panem, Paulus disputabat cum eis profecturus in crastinum, protraxitque sermonem usque in mediam noctem.",
+        "SYN": "В первый же день недели, когда ученики собрались для преломления хлеба, Павел, намереваясь отправиться в следующий день, беседовал с ними и продолжил слово до полуночи.",
+        "NEO": "Le premier jour de la semaine, comme nous étions assemblés pour la fraction du pain, Paul, qui devait partir le lendemain, s’entretint avec les disciples, et prolongea son discours jusqu’à minuit.+ 20:7 7. Le dimanche qui avait déjà, au moins parmi les chrétiens sortis de la gentilité, remplacé le sabbat comme jour consacré à Dieu. — La fraction du pain, la célébration de l’eucharistie, qui avait lieu le soir.*",
+        "NAB": "On the first day of the week when we gathered to break bread, Paul spoke to them because he was going to leave on the next day, and he kept on speaking until midnight.",
+        "VAT_ES": "El primer día de la semana, cuando nos reunimos para partir el pan, Pablo, que debía salir al día siguiente, dirigió la palabra a la asamblea y su discurso se prolongó hasta la medianoche.",
+        "CEI": "né per il fatto di essere discendenza di Abramo sono tutti suoi figli. No, ma: in Isacco ti sarà data una discendenza,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἦσαν δὲ λαμπάδες ἱκαναὶ ἐν τῷ ὑπερῴῳ οὗ ἦμεν συνηγμένοι.",
+        "VUL": "Erant autem lampades copiosæ in cnaculo, ubi eramus congregati.",
+        "SYN": "В горнице, где мы собрались, было довольно светильников.",
+        "NEO": "Il y avait beaucoup de lampes dans la salle haute où nous étions assemblés.",
+        "NAB": "There were many lamps in the upstairs room where we were gathered,",
+        "VAT_ES": "La habitación donde nos habíamos reunido estaba muy iluminada.",
+        "CEI": "cioè: non sono considerati figli di Dio i figli della carne, ma come discendenza sono considerati solo i figli della promessa."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Καθήμενος δέ τις νεανίας ὀνόματι Εὔτυχος ἐπὶ τῆς θυρίδος, καταφερόμενος ὕπνῳ βαθεῖ, διαλεγομένου τοῦ Παύλου ἐπὶ πλεῖον, κατενεχθεὶς ἀπὸ τοῦ ὕπνου ἔπεσεν ἀπὸ τοῦ τριστέγου κάτω, καὶ ἤρθη νεκρός.",
+        "VUL": "Sedens autem quidam adolescens nomine Eutychus super fenestram, cum mergeretur somno gravi, disputante diu Paulo, ductus somno cecidit de tertio cnaculo deorsum, et sublatus est mortuus.",
+        "SYN": "Во время продолжительной беседы Павловой один юноша, именем Евтих, сидевший на окне, погрузился в глубокий сон и, пошатнувшись, сонный упал вниз с третьего жилья, и поднят мертвым.",
+        "NEO": "Or un jeune homme, nommé Eutyque, était assis sur le bord de la fenêtre. Pendant le long discours de Paul, il s’endormit profondément, et, sous le poids du sommeil, il tomba du troisième en bas ; on le releva mort.",
+        "NAB": "and a young man named Eutychus who was sitting on the window sill was sinking into a deep sleep as Paul talked on and on. Once overcome by sleep, he fell down from the third story and when he was picked up, he was dead.",
+        "VAT_ES": "Un muchacho llamado Eutico, que se había sentado en el borde la ventana, tenía mucho sueño y se dormía mientras Pablo hablaba, hasta que, vencido por el sueño, se cayó desde un tercer piso. Cuando lo levantaron, estaba muerto.",
+        "CEI": "Queste infatti sono le parole della promessa: Io verrò in questo tempo e Sara avrà un figlio."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Καταβὰς δὲ ὁ Παῦλος ἐπέπεσεν αὐτῷ, καὶ συμπεριλαβὼν εἶπεν, Μὴ θορυβεῖσθε· ἡ γὰρ ψυχὴ αὐτοῦ ἐν αὐτῷ ἐστιν.",
+        "VUL": "Ad quem cum descendisset Paulus, incubuit super eum : et complexus dixit : Nolite turbari, anima enim ipsius in ipso est.",
+        "SYN": "Павел, сойдя, пал на него и, обняв его, сказал: не тревожьтесь, ибо душа его в нем.",
+        "NEO": "Mais Paul, étant descendu, se pencha sur lui et le prit dans ses bras, en disant : « Ne vous troublez pas, car son âme est en lui. »",
+        "NAB": "Paul went down, threw himself upon him, and said as he embraced him, \"Don't be alarmed; there is life in him.\"",
+        "VAT_ES": "Pablo bajo, se echó sobre él y, abrazándolo, dijo: «No se alarmen, porque está vivo».",
+        "CEI": "E non è tutto; c'è anche Rebecca che ebbe figli da un solo uomo, Isacco nostro padre:"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Ἀναβὰς δὲ καὶ κλάσας ἄρτον καὶ γευσάμενος, ἐφ’ ἱκανόν τε ὁμιλήσας ἄχρι αὐγῆς, οὕτως ἐξῆλθεν.",
+        "VUL": "Ascendens autem, frangensque panem, et gustans, satisque allocutus usque in lucem, sic profectus est.",
+        "SYN": "Взойдя же и преломив хлеб и вкусив, беседовал довольно, даже до рассвета, и потом вышел.",
+        "NEO": "Puis étant remonté, il rompit le pain et mangea, et il parla longtemps encore, jusqu’au jour ; après quoi, il partit.",
+        "NAB": "Then he returned upstairs, broke the bread, and ate; after a long conversation that lasted until daybreak, he departed.",
+        "VAT_ES": "Volvió a subir, partió el pan y comió. Luego siguió hablando mucho tiempo hasta el amanecer; y después salió.",
+        "CEI": "quando essi ancora non eran nati e nulla avevano fatto di bene o di male - perché rimanesse fermo il disegno divino fondato sull'elezione non in base alle opere, ma alla volontà di colui che chiama -"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Ἤγαγον δὲ τὸν παῖδα ζῶντα, καὶ παρεκλήθησαν οὐ μετρίως.",
+        "VUL": "Adduxerunt autem puerum viventem, et consolati sunt non minime.",
+        "SYN": "Между тем отрока привели живого, и немало утешились.",
+        "NEO": "Quant au jeune homme, on le ramena vivant, ce qui fut le sujet d’une grande consolation.",
+        "NAB": "And they took the boy away alive and were immeasurably comforted.",
+        "VAT_ES": "En cuanto al muchacho, lo llevaron a su casa con vida, y todos se sintieron muy reconfortados.",
+        "CEI": "le fu dichiarato: Il maggiore sarà sottomesso al minore,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "¶Ἡμεῖς δέ, προσελθόντες ἐπὶ τὸ πλοῖον, ἀνήχθημεν εἰς τὴν Ἄσσον, ἐκεῖθεν μέλλοντες ἀναλαμβάνειν τὸν Παῦλον· οὕτως γὰρ ἦν διατεταγμένος, μέλλων αὐτὸς πεζεύειν.",
+        "VUL": "Nos autem ascendentes navem, navigavimus in Asson, inde suscepturi Paulum : sic enim disposuerat ipse per terram iter facturus.",
+        "SYN": "Мы пошли вперед на корабль и поплыли в Асс, чтобы взять оттуда Павла; ибо он так приказал нам, намереваясь сам идти пешком.",
+        "NEO": "Pour nous, prenant les devants par mer, nous fîmes voile pour Assos, où nous devions reprendre Paul ; c’est ainsi qu’il l’avait ordonné ; car il devait faire le voyage à pied.",
+        "NAB": "We went ahead to the ship and set sail for Assos where we were to take Paul on board, as he had arranged, since he was going overland.",
+        "VAT_ES": "Nosotros nos adelantamos en barco, navegando en dirección a Asos, donde debíamos recoger a Pablo. El lo había dispuesto así, porque iba a hacer el viaje por tierra.",
+        "CEI": "come sta scritto: Ho amato Giacobbe e ho odiato Esaù."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ὡς δὲ συνέβαλεν ἡμῖν εἰς τὴν Ἄσσον, ἀναλαβόντες αὐτὸν ἤλθομεν εἰς Μιτυλήνην.",
+        "VUL": "Cum autem convenisset nos in Asson, assumpto eo, venimus Mitylenen.",
+        "SYN": "Когда же он сошелся с нами в Ассе, то, взяв его, мы прибыли в Митилину.",
+        "NEO": "Quand il nous eut rejoints à Assos, nous le prîmes à bord, et nous gagnâmes Mytilène.",
+        "NAB": "When he met us in Assos, we took him aboard and went on to Mitylene.",
+        "VAT_ES": "Cuando nos juntamos en Asos, Pablo se embarcó con nosotros y nos dirigimos a Mitilene.",
+        "CEI": "Che diremo dunque? C'è forse ingiustizia da parte di Dio? No certamente!"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Κἀκεῖθεν ἀποπλεύσαντες, τῇ ἐπιούσῃ κατηντήσαμεν ἀντικρὺ Χίου· τῇ δὲ ἑτέρᾳ παρεβάλομεν εἰς Σάμον· καὶ μείναντες ἐν Τρωγυλλίῳ, τῇ ἐχομένῃ ἤλθομεν εἰς Μίλητον.",
+        "VUL": "Et inde navigantes, sequenti die venimus contra Chium, et alia applicuimus Samum, et sequenti die venimus Miletum.",
+        "SYN": "И, отплыв оттуда, в следующий день мы остановились против Хиоса, а на другой пристали к Самосу и, побывав в Трогиллии, в следующий _день_ прибыли в Милит,",
+        "NEO": "De là, continuant par la mer, nous arrivâmes le lendemain à la hauteur de Chio. Le jour suivant, nous cinglâmes vers Samos, et, [après avoir passé la nuit à Trogylle], nous arrivâmes le lendemain à Milet.+ 20:15 15. Omission d’un bon nombre de manuscrits grecs et de la Vulgate, à rétablir dans le texte.*",
+        "NAB": "We sailed away from there on the next day and reached a point off Chios, and a day later we reached Samos, and on the following day we arrived at Miletus.",
+        "VAT_ES": "Partimos de allí al día siguiente y llegamos frente a Quío. Al otro día, fuimos a Samos y, después de hacer escala en Trogilio, al día siguiente llegamos a Mileto.",
+        "CEI": "Egli infatti dice a Mosè: Userò misericordia con chi vorrò, e avrò pietà di chi vorrò averla."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Ἔκρινεν γὰρ ὁ Παῦλος παραπλεῦσαι τὴν Ἔφεσον, ὅπως μὴ γένηται αὐτῷ χρονοτριβῆσαι ἐν τῇ Ἀσίᾳ· ἔσπευδεν γάρ, εἰ δυνατὸν ἦν αὐτῷ, τὴν ἡμέραν τῆς Πεντηκοστῆς γενέσθαι εἰς Ἱεροσόλυμα.",
+        "VUL": "Proposuerat enim Paulus transnavigare Ephesum, ne qua mora illi fieret in Asia. Festinabat enim, si possibile sibi esset, ut diem Pentecostes faceret Jerosolymis.",
+        "SYN": "ибо Павлу рассудилось миновать Ефес, чтобы не замедлить ему в Асии; потому что он поспешал, если можно, в день Пятидесятницы быть в Иерусалиме.",
+        "NEO": "Paul avait résolu de passer devant Éphèse sans s’y arrêter, afin de ne pas perdre de temps en Asie. Car il se hâtait pour se trouver, s’il était possible, à Jérusalem, le jour de la Pentecôte.",
+        "NAB": "Paul had decided to sail past Ephesus in order not to lose time in the province of Asia, for he was hurrying to be in Jerusalem, if at all possible, for the day of Pentecost.",
+        "VAT_ES": "Pablo había decidido pasar de largo por Efeso, para no retrasarse demasiado en Asia. Estaba apurado porque, de ser posible, quería estar en Jerusalén el día de Pentecostés.",
+        "CEI": "Quindi non dipende dalla volontà né dagli sforzi dell'uomo, ma da Dio che usa misericordia."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "¶Ἀπὸ δὲ τῆς Μιλήτου πέμψας εἰς Ἔφεσον μετεκαλέσατο τοὺς πρεσβυτέρους τῆς ἐκκλησίας.",
+        "VUL": "A Mileto autem mittens Ephesum, vocavit majores natu ecclesiæ.",
+        "SYN": "Из Милита же послав в Ефес, он призвал пресвитеров церкви,",
+        "NEO": "Or, de Milet, Paul envoya à Éphèse pour faire venir les Anciens de cette Église.",
+        "NAB": "From Miletus he had the presbyters of the church at Ephesus summoned.",
+        "VAT_ES": "Desde Mileto, mandó llamar a los presbíteros de la Iglesia de Efeso.",
+        "CEI": "Dice infatti la Scrittura al faraone: Ti ho fatto sorgere per manifestare in te la mia potenza e perché il mio nome sia proclamato in tutta la terra."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Ὡς δὲ παρεγένοντο πρὸς αὐτόν, εἶπεν αὐτοῖς, ¶Ὑμεῖς ἐπίστασθε, ἀπὸ πρώτης ἡμέρας ἀφ’ ἧς ἐπέβην εἰς τὴν Ἀσίαν, πῶς μεθ’ ὑμῶν τὸν πάντα χρόνον ἐγενόμην,",
+        "VUL": "Qui cum venissent ad eum, et simul essent, dixit eis : Vos scitis a prima die qua ingressus sum in Asiam, qualiter vobiscum per omne tempus fuerim,",
+        "SYN": "и, когда они пришли к нему, он сказал им: вы знаете, как я с первого дня, в который пришел в Асию, все время был с вами,",
+        "NEO": "Lorsqu’ils furent réunis autour de lui, il leur dit : « Vous savez comment, depuis le premier jour que j’ai mis le pied en Asie, je me suis toujours comporté avec vous,",
+        "NAB": "When they came to him, he addressed them, \"You know how I lived among you the whole time from the day I first came to the province of Asia.",
+        "VAT_ES": "Cuando estos llegaron, Pablo les dijo: «Ya saben cómo me he comportado siempre con ustedes desde el primer día que puse el pie en la provincia de Asia.",
+        "CEI": "Dio quindi usa misericordia con chi vuole e indurisce chi vuole"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "δουλεύων τῷ κυρίῳ μετὰ πάσης ταπεινοφροσύνης καὶ πολλῶν δακρύων καὶ πειρασμῶν τῶν συμβάντων μοι ἐν ταῖς ἐπιβουλαῖς τῶν Ἰουδαίων·",
+        "VUL": "serviens Domino cum omni humilitate, et lacrimis, et tentationibus, quæ mihi acciderunt ex insidiis Judæorum :",
+        "SYN": "работая Господу со всяким смиренномудрием и многими слезами, среди искушений, приключавшихся мне по злоумышлениям Иудеев;",
+        "NEO": "servant le Seigneur en toute humilité, au milieu des larmes et des épreuves que me suscitaient les embûches des Juifs ;+ 20:19 19. I Cor. xv, 32.*",
+        "NAB": "I served the Lord with all humility and with the tears and trials that came to me because of the plots of the Jews,",
+        "VAT_ES": "He servido al Señor con toda humildad y con muchas lágrimas, en medio de las pruebas a que fui sometido por las insidias de los judíos.",
+        "CEI": "Mi potrai però dire: \"Ma allora perché ancora rimprovera? Chi può infatti resistere al suo volere?\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "ὡς οὐδὲν ὑπεστειλάμην τῶν συμφερόντων, τοῦ μὴ ἀναγγεῖλαι ὑμῖν καὶ διδάξαι ὑμᾶς δημοσίᾳ καὶ κατ’ οἴκους,",
+        "VUL": "quomodo nihil subtraxerim utilium, quominus annuntiarem vobis et docerem vos, publice et per domos,",
+        "SYN": "как я не пропустил ничего полезного, о чем вам не проповедывал бы и чему не учил бы вас всенародно и по домам,",
+        "NEO": "comment je ne vous ai rien caché de ce qui vous était avantageux, ne manquant pas de prêcher et de vous instruire en public et dans les maisons particulières ;",
+        "NAB": "and I did not at all shrink from telling you what was for your benefit, or from teaching you in public or in your homes.",
+        "VAT_ES": "Ustedes saben que no he omitido nada que pudiera serles útil; les prediqué y les enseñé tanto en público como en privado,",
+        "CEI": "O uomo, tu chi sei per disputare con Dio? Oserà forse dire il vaso plasmato a colui che lo plasmò: \"Perché mi hai fatto così?\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "διαμαρτυρόμενος Ἰουδαίοις τε καὶ Ἕλλησιν τὴν εἰς τὸν θεὸν μετάνοιαν, καὶ πίστιν τὴν εἰς τὸν κύριον ἡμῶν Ἰησοῦν.",
+        "VUL": "testificans Judæis atque gentilibus in Deum pnitentiam, et fidem in Dominum nostrum Jesum Christum.",
+        "SYN": "возвещая Иудеям и Еллинам покаяние пред Богом и веру в Господа нашего Иисуса Христа.",
+        "NEO": "annonçant aux Juifs et aux Gentils le retour à Dieu par la pénitence et la foi en Notre-Seigneur Jésus-Christ.",
+        "NAB": "I earnestly bore witness for both Jews and Greeks to repentance before God and to faith in our Lord Jesus.",
+        "VAT_ES": "instando a judíos y a paganos a convertirse a Dios y a creer en nuestro Señor Jesús.",
+        "CEI": "Forse il vasaio non è padrone dell'argilla, per fare con la medesima pasta un vaso per uso nobile e uno per uso volgare?"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Καὶ νῦν ἰδού, ἐγὼ δεδεμένος τῷ πνεύματι πορεύομαι εἰς Ἱερουσαλήμ, τὰ ἐν αὐτῇ συναντήσοντά μοι μὴ εἰδώς,",
+        "VUL": "Et nunc ecce alligatus ego spiritu, vado in Jerusalem : quæ in ea ventura sint mihi, ignorans :",
+        "SYN": "И вот, ныне я, по влечению Духа, иду в Иерусалим, не зная, что там встретится со мною;",
+        "NEO": "Et maintenant voici que, lié par l’Esprit, je vais à Jérusalem, sans savoir ce qui doit m’arriver ;",
+        "NAB": "But now, compelled by the Spirit, I am going to Jerusalem. What will happen to me there I do not know,",
+        "VAT_ES": "Y ahora, como encadenado por el Espíritu, voy a Jerusalén sin saber lo que me sucederá allí.",
+        "CEI": "Se pertanto Dio, volendo manifestare la sua ira e far conoscere la sua potenza, ha sopportato con grande pazienza vasi di collera, già pronti per la perdizione,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "πλὴν ὅτι τὸ πνεῦμα τὸ ἅγιον κατὰ πόλιν διαμαρτύρεται λέγον ὅτι δεσμά με καὶ θλίψεις μένουσιν.",
+        "VUL": "nisi quod Spiritus Sanctus per omnes civitates mihi protestatur, dicens quoniam vincula et tribulationes Jerosolymis me manent.",
+        "SYN": "только Дух Святый по всем городам свидетельствует, говоря, что узы и скорби ждут меня.",
+        "NEO": "si ce n’est que de ville en ville l’Esprit-Saint m’assure que des chaînes et des persécutions m’attendent.",
+        "NAB": "except that in one city after another the holy Spirit has been warning me that imprisonment and hardships await me.",
+        "VAT_ES": "Sólo sé que, de ciudad en ciudad, el Espíritu Santo me va advirtiendo cuántas cadenas y tribulaciones me esperan.",
+        "CEI": "e questo per far conoscere la ricchezza della sua gloria verso vasi di misericordia, da lui predisposti alla gloria,"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ οὐδενὸς λόγον ποιοῦμαι, οὐδὲ ἔχω τὴν ψυχήν μου τιμίαν ἐμαυτῷ, ὡς τελειῶσαι τὸν δρόμον μου μετὰ χαρᾶς, καὶ τὴν διακονίαν ἣν ἔλαβον παρὰ τοῦ κυρίου Ἰησοῦ, διαμαρτύρασθαι τὸ εὐαγγέλιον τῆς χάριτος τοῦ θεοῦ.",
+        "VUL": "Sed nihil horum vereor : nec facio animam meam pretiosiorem quam me, dummodo consummem cursum meum, et ministerium verbi quod accepi a Domino Jesu, testificari Evangelium gratiæ Dei.",
+        "SYN": "Но я ни на что не взираю и не дорожу своею жизнью, только бы с радостью совершить поприще мое и служение, которое я принял от Господа Иисуса, проповедать Евангелие благодати Божией.",
+        "NEO": "Mais je n’en tiens aucun compte, et je n’attache pour moi-même aucun prix à la vie, pourvu que je consomme ma course et que j’accomplisse le ministère que j’ai reçu du Seigneur Jésus, d’annoncer la bonne nouvelle de la grâce de Dieu.+ 20:24 24. Au lieu de traduire τιμίαν ἐμαυτῷ par pretiosam mihi, la Vulgate rend ces mots par \\+qt pretiosiorem quant me\\+qt*, leçon dont il est bien difficile de déterminer le sens.*",
+        "NAB": "Yet I consider life of no importance to me, if only I may finish my course and the ministry that I received from the Lord Jesus, to bear witness to the gospel of God's grace.",
+        "VAT_ES": "Pero poco me importa la vida, mientras pueda cumplir mi carrera y la misión que recibí del Señor Jesús: la de dar testimonio de la Buena Noticia de la gracia de Dios.",
+        "CEI": "cioè verso di noi, che egli ha chiamati non solo tra i Giudei ma anche tra i pagani, che potremmo dire?"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "Καὶ νῦν ἰδού, ἐγὼ οἶδα ὅτι οὐκέτι ὄψεσθε τὸ πρόσωπόν μου ὑμεῖς πάντες, ἐν οἷς διῆλθον κηρύσσων τὴν βασιλείαν τοῦ θεοῦ.",
+        "VUL": "Et nunc ecce ego scio quia amplius non videbitis faciem meam vos omnes, per quos transivi prædicans regnum Dei.",
+        "SYN": "И ныне, вот, я знаю, что уже не увидите лица моего все вы, между которыми ходил я, проповедуя Царствие Божие.",
+        "NEO": "Oui, je sais que vous ne verrez plus mon visage, ô vous tous parmi lesquels j’ai passé en prêchant le royaume de Dieu.",
+        "NAB": "\"But now I know that none of you to whom I preached the kingdom during my travels will ever see my face again.",
+        "VAT_ES": "Y ahora sé que ustedes, entre quienes pasé predicando el Reino, no volverán a verme.",
+        "CEI": "Esattamente come dice Osea: Chiamerò mio popolo quello che non era mio popolo e mia diletta quella che non era la diletta."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Διότι μαρτύρομαι ὑμῖν ἐν τῇ σήμερον ἡμέρᾳ, ὅτι καθαρὸς ἐγὼ ἀπὸ τοῦ αἵματος πάντων.",
+        "VUL": "Quapropter contestor vos hodierna die, quia mundus sum a sanguine omnium.",
+        "SYN": "Посему свидетельствую вам в нынешний день, что чист я от крови всех,",
+        "NEO": "C’est pourquoi je vous atteste aujourd’hui que je suis pur du sang de tous ;",
+        "NAB": "And so I solemnly declare to you this day that I am not responsible for the blood of any of you,",
+        "VAT_ES": "Por eso hoy declaro delante de todos que no tengo nada que reprocharme respecto de ustedes.",
+        "CEI": "E avverrà che nel luogo stesso dove fu detto loro: \"Voi non siete mio popolo\", là saranno chiamati figli del Dio vivente."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Οὐ γὰρ ὑπεστειλάμην τοῦ μὴ ἀναγγεῖλαι ὑμῖν πᾶσαν τὴν βουλὴν τοῦ θεοῦ.",
+        "VUL": "Non enim subterfugi, quominus annuntiarem omne consilium Dei vobis.",
+        "SYN": "ибо я не упускал возвещать вам всю волю Божию.",
+        "NEO": "car je vous ai annoncé tout le dessein de Dieu, sans vous en rien cacher.",
+        "NAB": "for I did not shrink from proclaiming to you the entire plan of God.",
+        "VAT_ES": "Porque no hemos omitido nada para anunciarles plenamente los designios de Dios.",
+        "CEI": "E quanto a Israele, Isaia esclama: Se anche il numero dei figli d'Israele fosse come la sabbia del mare, sarà salvato solo il resto;"
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Προσέχετε οὖν ἑαυτοῖς καὶ παντὶ τῷ ποιμνίῳ, ἐν ᾧ ὑμᾶς τὸ πνεῦμα τὸ ἅγιον ἔθετο ἐπισκόπους, ποιμαίνειν τὴν ἐκκλησίαν τοῦ κυρίου καὶ θεοῦ, ἣν περιεποιήσατο διὰ τοῦ ἰδίου αἵματος.",
+        "VUL": "Attendite vobis, et universo gregi, in quo vos Spiritus Sanctus posuit episcopos regere ecclesiam Dei, quam acquisivit sanguine suo.",
+        "SYN": "Итак внимайте себе и всему стаду, в котором Дух Святый поставил вас блюстителями, пасти Церковь Господа и Бога, которую Он приобрел Себе Кровию Своею.",
+        "NEO": "Prenez donc garde à vous-mêmes et à tout le troupeau sur lequel le Saint-Esprit vous a établis évêques, pour paître l’Église du Seigneur, qu’il s’est acquise par son propre sang.",
+        "NAB": "Keep watch over yourselves and over the whole flock of which the holy Spirit has appointed you overseers, in which you tend the church of God that he acquired with his own blood.",
+        "VAT_ES": "Velen por ustedes, y por todo el rebaño sobre el cual el Espíritu Santo los ha constituido guardianes para apacentar a la Iglesia de Dios, que él adquirió al precio de su propia sangre.",
+        "CEI": "perché con pienezza e rapidità il Signore compirà la sua parola sopra la terra."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Ἐγὼ γὰρ οἶδα τοῦτο, ὅτι εἰσελεύσονται μετὰ τὴν ἄφιξίν μου λύκοι βαρεῖς εἰς ὑμᾶς, μὴ φειδόμενοι τοῦ ποιμνίου·",
+        "VUL": "Ego scio quoniam intrabunt post discessionem meam lupi rapaces in vos, non parcentes gregi.",
+        "SYN": "Ибо я знаю, что, по отшествии моем, войдут к вам лютые волки, не щадящие стада;",
+        "NEO": "Moi, je sais en effet qu’après mon départ, il s’introduira parmi vous des loups cruels qui n’épargneront pas le troupeau.",
+        "NAB": "I know that after my departure savage wolves will come among you, and they will not spare the flock.",
+        "VAT_ES": "Yo sé que después de mi partida se introducirán entre ustedes lobos rapaces que no perdonarán al rebaño.",
+        "CEI": "E ancora secondo ciò che predisse Isaia: Se il Signore degli eserciti non ci avesse lasciato una discendenza, saremmo divenuti come Sòdoma e resi simili a Gomorra."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "καὶ ἐξ ὑμῶν αὐτῶν ἀναστήσονται ἄνδρες λαλοῦντες διεστραμμένα, τοῦ ἀποσπᾷν τοὺς μαθητὰς ὀπίσω αὐτῶν.",
+        "VUL": "Et ex vobis ipsis exsurgent viri loquentes perversa, ut abducant discipulos post se.",
+        "SYN": "и из вас самих восстанут люди, которые будут говорить превратно, дабы увлечь учеников за собою.",
+        "NEO": "Et même il s’élèvera du milieu de vous des hommes qui enseigneront des doctrines perverses pour entraîner les disciples après eux.",
+        "NAB": "And from your own group, men will come forward perverting the truth to draw the disciples away after them.",
+        "VAT_ES": "Y aun de entre ustedes mismos, surgirán hombres que tratarán de arrastrar a los discípulos con doctrinas perniciosas.",
+        "CEI": "Che diremo dunque? Che i pagani, che non ricercavano la giustizia, hanno raggiunto la giustizia: la giustizia però che deriva dalla fede;"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "Διὸ γρηγορεῖτε, μνημονεύοντες ὅτι τριετίαν νύκτα καὶ ἡμέραν οὐκ ἐπαυσάμην μετὰ δακρύων νουθετῶν ἕνα ἕκαστον.",
+        "VUL": "Propter quod vigilate, memoria retinentes quoniam per triennium nocte et die non cessavi, cum lacrimis monens unumquemque vestrum.",
+        "SYN": "Посему бодрствуйте, памятуя, что я три года день и ночь непрестанно со слезами учил каждого из вас.",
+        "NEO": "Veillez donc, vous souvenant que, durant trois années, je n’ai cessé nuit et jour d’exhorter avec larmes chacun de vous.",
+        "NAB": "So be vigilant and remember that for three years, night and day, I unceasingly admonished each of you with tears.",
+        "VAT_ES": "Velen, entonces, y recuerden que durante tres años, de noche y de día, no he cesado de aconsejar con lágrimas a cada uno de ustedes.",
+        "CEI": "mentre Israele, che ricercava una legge che gli desse la giustizia, non è giunto alla pratica della legge."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "Καὶ τὰ νῦν παρατίθεμαι ὑμᾶς, ἀδελφοί, τῷ θεῷ καὶ τῷ λόγῳ τῆς χάριτος αὐτοῦ, τῷ δυναμένῳ ἐποικοδομῆσαι, καὶ δοῦναι ὑμῖν κληρονομίαν ἐν τοῖς ἡγιασμένοις πᾶσιν.",
+        "VUL": "Et nunc commendo vos Deo, et verbo gratiæ ipsius, qui potens est ædificare, et dare hæreditatem in sanctificatis omnibus.",
+        "SYN": "И ныне предаю вас, братия, Богу и слову благодати Его, могущему назидать _вас_ более и дать вам наследие со всеми освященными.",
+        "NEO": "Et maintenant je vous recommande à Dieu, et à la parole de sa grâce, à celui qui peut achever l’édifice et vous donner l’héritage avec tous les sanctifiés.+ 20:32 32. Achever l’édifice, ἐποικοδομῆσαι, expression chère à S. Paul. (Voy. I Cor. iii, 10, 12, 14 ; Eph. ii, 20 ; Col. ii, 7).*",
+        "NAB": "And now I commend you to God and to that gracious word of his that can build you up and give you the inheritance among all who are consecrated.",
+        "VAT_ES": "Ahora los encomiendo al Señor y a la Palabra de su gracia, que tiene poder para construir el edificio y darles la parte de la herencia que les corresponde, con todos los que han sido santificados.",
+        "CEI": "E perché mai? Perché non la ricercava dalla fede, ma come se derivasse dalle opere. Hanno urtato così contro la pietra d'inciampo,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "Ἀργυρίου ἢ χρυσίου ἢ ἱματισμοῦ οὐδενὸς ἐπεθύμησα.",
+        "VUL": "Argentum, et aurum, aut vestem nullius concupivi, sicut",
+        "SYN": "Ни серебра, ни золота, ни одежды я ни от кого не пожелал:",
+        "NEO": "Je n’ai désiré ni l’argent, ni l’or, ni le vêtement de personne.",
+        "NAB": "I have never wanted anyone's silver or gold or clothing.",
+        "VAT_ES": "En cuanto a mí, no he deseado ni plata ni oro ni los bienes de nadie.",
+        "CEI": "come sta scritto: Ecco che io pongo in Sion una pietra di scandalo e un sasso d'inciampo; ma chi crede in lui non sarà deluso."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "Αὐτοὶ γινώσκετε ὅτι ταῖς χρείαις μου καὶ τοῖς οὖσιν μετ’ ἐμοῦ ὑπηρέτησαν αἱ χεῖρες αὗται.",
+        "VUL": "ipsi scitis : quoniam ad ea quæ mihi opus erant, et his qui mecum sunt, ministraverunt manus istæ.",
+        "SYN": "сами знаете, что нуждам моим и _нуждам_ бывших при мне послужили руки мои сии.",
+        "NEO": "Vous savez vous-mêmes que ces mains ont pourvu à mes besoins et à ceux des personnes qui étaient avec moi.",
+        "NAB": "You know well that these very hands have served my needs and my companions.",
+        "VAT_ES": "Ustedes saben que con mis propias manos he atendido a mis necesidades y a las de mis compañeros."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "Πάντα ὑπέδειξα ὑμῖν, ὅτι οὕτως κοπιῶντας δεῖ ἀντιλαμβάνεσθαι τῶν ἀσθενούντων, μνημονεύειν τε τῶν λόγων τοῦ κυρίου Ἰησοῦ, ὅτι αὐτὸς εἶπεν, Μακάριόν ἐστιν μᾶλλον διδόναι ἢ λαμβάνειν.",
+        "VUL": "Omnia ostendi vobis, quoniam sic laborantes, oportet suscipere infirmos ac meminisse verbi Domini Jesu : quoniam ipse dixit : Beatius est magis dare, quam accipere.",
+        "SYN": "Во всем показал я вам, что, так трудясь, надобно поддерживать слабых и памятовать слова Господа Иисуса, ибо Он Сам сказал: \"блаженнее давать, нежели принимать\".",
+        "NEO": "Je vous ai montré de toutes manières que c’est en travaillant ainsi qu’il faut soutenir les faibles,+ 20:35 35. Soutenir les faibles ; d’autres traduisent, \\+qt secourir les pauvres.\\+qt* — \\+qt La parole\\+qt* : \\+qt Il y a plus de bonheur…\\+qt* Cette sentence ne se trouve dans aucun de nos quatre Évangiles ; S. Paul l’avait connue par la tradition.* et se rappeler la parole du Seigneur Jésus, qui a dit lui-même : Il y a plus de bonheur à donner qu’à recevoir. »",
+        "NAB": "In every way I have shown you that by hard work of that sort we must help the weak, and keep in mind the words of the Lord Jesus who himself said, 'It is more blessed to give than to receive.'\"",
+        "VAT_ES": "De todas las maneras posibles, les he mostrado que así, trabajando duramente, se debe ayudar a los débiles, y que es preciso recordar las palabras del Señor Jesús: «La felicidad está más en dar que en recibir»."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "¶Καὶ ταῦτα εἰπών, θεὶς τὰ γόνατα αὐτοῦ, σὺν πᾶσιν αὐτοῖς προσηύξατο.",
+        "VUL": "Et cum hæc dixisset, positis genibus suis oravit cum omnibus illis.",
+        "SYN": "Сказав это, он преклонил колени свои и со всеми ими помолился.",
+        "NEO": "Après avoir ainsi parlé, il se mit à genoux et pria avec eux tous.",
+        "NAB": "When he had finished speaking he knelt down and prayed with them all.",
+        "VAT_ES": "Después de decirles esto, se arrodilló y oró junto a ellos."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "Ἱκανὸς δὲ ἐγένετο κλαυθμὸς πάντων· καὶ ἐπιπεσόντες ἐπὶ τὸν τράχηλον τοῦ Παύλου κατεφίλουν αὐτόν,",
+        "VUL": "Magnus autem fletus factus est omnium : et procumbentes super collum Pauli, osculabantur eum,",
+        "SYN": "Тогда немалый плач был у всех, и, падая на выю Павла, целовали его,",
+        "NEO": "Ils fondaient tous en larmes, en se jetant au cou de Paul, ils le baisaient,",
+        "NAB": "They were all weeping loudly as they threw their arms around Paul and kissed him,",
+        "VAT_ES": "Todos se pusieron a llorar, abrazaron a Pablo y lo besaron afectuosamente,"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "BYZ": "ὀδυνώμενοι μάλιστα ἐπὶ τῷ λόγῳ ᾧ εἰρήκει, ὅτι οὐκέτι μέλλουσιν τὸ πρόσωπον αὐτοῦ θεωρεῖν. Προέπεμπον δὲ αὐτὸν εἰς τὸ πλοῖον.",
+        "VUL": "dolentes maxime in verbo quod dixerat, quoniam amplius faciem ejus non essent visuri. Et deducebant eum ad navem.",
+        "SYN": "скорбя особенно от сказанного им слова, что они уже не увидят лица его. И провожали его до корабля.",
+        "NEO": "affligés surtout de ce qu’il avait dit : « Vous ne verrez plus mon visage. » Et ils l’accompagnèrent jusqu’au navire.",
+        "NAB": "for they were deeply distressed that he had said that they would never see his face again. Then they escorted him to the ship.",
+        "VAT_ES": "apenados sobre todo porque les había dicho que ya no volverían a verlo. Después lo acompañaron hasta el barco."
+      }
+    }
+  }
+}

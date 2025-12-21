@@ -1,0 +1,393 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_027",
+  "book_key": "EXO",
+  "sequence": 27,
+  "chapter_in": {
+    "MT": 27,
+    "VUL": 27,
+    "LXX": 27
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/עָשִׂ֥יתָ אֶת הַ/מִּזְבֵּ֖חַ עֲצֵ֣י שִׁטִּ֑ים חָמֵשׁ֩ אַמּ֨וֹת אֹ֜רֶךְ וְ/חָמֵ֧שׁ אַמּ֣וֹת רֹ֗חַב רָב֤וּעַ יִהְיֶה֙ הַ/מִּזְבֵּ֔חַ וְ/שָׁלֹ֥שׁ אַמּ֖וֹת קֹמָתֽ/וֹ׃",
+        "LXX": "Καὶ ποιήσεις θυσιαστήριον ἐκ ξύλων ἀσήπτων, πέντε πήχεων τὸ μῆκος, καὶ πέντε πήχεων τὸ εὖρος· τετράγωνον ἔσται τὸ θυσιαστήριον, καὶ τριῶν πήχεων τὸ ὕψος αὐτοῦ.",
+        "VUL": "Facies et altare de lignis setim, quod habebit quinque cubitus in longitudine, et totidem in latitudine, id est, quadrum, et tres cubitos in altitudine.",
+        "SYN": "И сделай жертвенник из дерева ситтим длиною пяти локтей и шириною пяти локтей, так чтобы он был четыреугольный, и вышиною трех локтей.",
+        "NEO": "« Tu feras l’autel en bois d’acacia ; sa longueur sera de cinq coudées, et sa largeur de cinq coudées. L’autel sera carré, et sa hauteur sera de trois coudées.",
+        "NAB": "\"You shall make an altar of acacia wood, on a square, five cubits long and five cubits wide; it shall be three cubits high.",
+        "VAT_ES": "Luego harás el altar de madera de acacia; medirá dos metros y medio de largo por dos metros y medio de ancho –es decir, será cuadrado– y tendrá un metro y medio de alto.",
+        "CEI": "Farai l'altare di legno di acacia: avrà cinque cubiti di lunghezza e cinque cubiti di larghezza. L'altare sarà quadrato e avrà l'altezza di tre cubiti."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/עָשִׂ֣יתָ קַרְנֹתָ֗י/ו עַ֚ל אַרְבַּ֣ע פִּנֹּתָ֔י/ו מִמֶּ֖/נּוּ תִּהְיֶ֣יןָ קַרְנֹתָ֑י/ו וְ/צִפִּיתָ֥ אֹת֖/וֹ נְחֹֽשֶׁת׃",
+        "LXX": "καὶ ποιήσεις τὰ κέρατα ἐπὶ τῶν τεσσάρων γωνιῶν· ἐξ αὐτοῦ ἔσται τὰ κέρατα, καὶ καλύψεις αὐτὰ χαλκῷ.",
+        "VUL": "Cornua autem per quatuor angulos ex ipso erunt : et operies illud ære.",
+        "SYN": "И сделай роги на четырех углах его, так чтобы роги выходили из него; и обложи его медью.",
+        "NEO": "A ses quatre coins, tu feras des cornes qui sortiront de l’autel, et tu le revêtiras d’airain.",
+        "NAB": "At the four corners there are to be horns, so made that they spring directly from the altar. You shall then plate it with bronze.",
+        "VAT_ES": "En sus cuatro ángulos, y formando una sola pieza con él, le harás unos cuernos. Después lo revestirás de bronce.",
+        "CEI": "Farai ai suoi quattro angoli quattro corni e saranno tutti di un pezzo. Lo rivestirai di rame."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/עָשִׂ֤יתָ סִּֽירֹתָי/ו֙ לְ/דַשְּׁנ֔/וֹ וְ/יָעָי/ו֙ וּ/מִזְרְקֹתָ֔י/ו וּ/מִזְלְגֹתָ֖י/ו וּ/מַחְתֹּתָ֑י/ו לְ/כָל כֵּלָ֖י/ו תַּעֲשֶׂ֥ה נְחֹֽשֶׁת׃",
+        "LXX": "καὶ ποιήσεις στεφάνην τῷ θυσιαστηρίῳ, καὶ τὸν καλυπτῆρα αὐτοῦ καὶ τὰς φιάλας αὐτοῦ καὶ τὰς κρεάγρας αὐτοῦ καὶ τὸ πυρεῖον αὐτοῦ· καὶ πάντα τὰ σκεύη αὐτοῦ ποιήσεις χαλκᾶ.",
+        "VUL": "Faciesque in usus ejus lebetes ad suscipiendos cineres, et forcipes atque fuscinulas, et ignium receptacula ; omnia vasa ex ære fabricabis.",
+        "SYN": "Сделай к нему горшки для высыпания в них пепла, и лопатки, и чаши, и вилки, и угольницы; все принадлежности сделай из меди.",
+        "NEO": "Tu feras pour l’autel des vases pour recueillir les cendres, des pelles, des bassins, des fourchettes et des brasiers ; tu feras d’airain tous ces ustensiles.",
+        "NAB": "Make pots for removing the ashes, as well as shovels, basins, forks and fire pans, all of which shall be of bronze.",
+        "VAT_ES": "Le harás recipientes para recoger las cenizas, y también palas, aspersorios, tenedores y braseros. Todos estos utensilios serán de bronce.",
+        "CEI": "Farai i suoi recipienti per raccogliere le ceneri, le sue pale, i suoi vasi per la aspersione, le sue forchette e i suoi bracieri. Farai di rame tutti questi accessori."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/עָשִׂ֤יתָ לּ/וֹ֙ מִכְבָּ֔ר מַעֲשֵׂ֖ה רֶ֣שֶׁת נְחֹ֑שֶׁת וְ/עָשִׂ֣יתָ עַל הָ/רֶ֗שֶׁת אַרְבַּע֙ טַבְּעֹ֣ת נְחֹ֔שֶׁת עַ֖ל אַרְבַּ֥ע קְצוֹתָֽי/ו׃",
+        "LXX": "καὶ ποιήσεις αὐτῷ ἐσχάραν ἔργῳ δικτυωτῷ χαλκῆν· καὶ ποιήσεις τῇ ἐσχάρᾳ τέσσαρες δακτυλίους χαλκοῦς ὑπὸ τὰ τέσσερα κλίτη.",
+        "VUL": "Craticulamque in modum retis æneam : per cujus quatuor angulos erunt quatuor annuli ænei.",
+        "SYN": "Сделай к нему решетку, род сетки, из меди, и сделай на сетке, на четырех углах ее, четыре кольца медных;",
+        "NEO": "Tu feras à l’autel une grille d’airain en forme de treillis, et tu mettras quatre anneaux d’airain aux quatre bouts du treillis.",
+        "NAB": "Make a grating of bronze network for it; this to have four bronze rings, one at each of its four corners.",
+        "VAT_ES": "También le harás un enrejado de bronce en forma de red, y en los cuatro extremos de la red deberás ajustar otras tantas argollas de bronce.",
+        "CEI": "Farai per esso una graticola di rame alle sue quattro estremità."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/נָתַתָּ֣ה אֹתָ֗/הּ תַּ֛חַת כַּרְכֹּ֥ב הַ/מִּזְבֵּ֖חַ מִ/לְּ/מָ֑טָּה וְ/הָיְתָ֣ה הָ/רֶ֔שֶׁת עַ֖ד חֲצִ֥י הַ/מִּזְבֵּֽחַ׃",
+        "LXX": "καὶ ὑποθήσεις αὐτοὺς ὑπὸ τὴν ἐσχάραν τοῦ θυσιαστηρίου κάτωθεν· ἔσται δὲ ἡ ἐσχάρα ἕως τοῦ ἡμίσους τοῦ θυσιαστηρίου.",
+        "VUL": "Quos pones subter arulam altaris : eritque craticula usque ad altaris medium.",
+        "SYN": "и положи ее по окраине жертвенника внизу, так чтобы сетка была до половины жертвенника.",
+        "NEO": "Tu la placeras sous la corniche de l’autel, par en bas, et le treillis sera jusqu’à la moitié de la hauteur de l’autel.",
+        "NAB": "Put it down around the altar, on the ground. This network is to be half as high as the altar.",
+        "VAT_ES": "Luego pondrás el enrejado debajo de la parte saliente del altar, de manera que la red llegue desde abajo hasta la mitad del altar.",
+        "CEI": "La porrai sotto la cornice dell'altare, in basso: la rete arriverà a metà dell'altezza dell'altare."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/עָשִׂ֤יתָ בַדִּים֙ לַ/מִּזְבֵּ֔חַ בַּדֵּ֖י עֲצֵ֣י שִׁטִּ֑ים וְ/צִפִּיתָ֥ אֹתָ֖/ם נְחֹֽשֶׁת׃",
+        "LXX": "καὶ ποιήσεις τῷ θυσιαστηρίῳ φορεῖς ἐκ ξύλων ἀσήπτων, καὶ περιχαλκώσεις αὐτοὺς χαλκῷ.",
+        "VUL": "Facies et vectes altaris de lignis setim duos, quos operies laminis æneis :",
+        "SYN": "И сделай шесты для жертвенника, шесты из дерева ситтим, и обложи их медью;",
+        "NEO": "Tu feras pour l’autel des barres, des barres de bois d’acacia, que tu revêtiras d’airain.",
+        "NAB": "You shall also make poles of acacia wood for the altar, and plate them with bronze.",
+        "VAT_ES": "Le harás, asimismo, unas andas de madera de acacia revestidas de bronce.",
+        "CEI": "Farai anche stanghe per l'altare: saranno stanghe di legno di acacia e le rivestirai di rame."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הוּבָ֥א אֶת בַּדָּ֖י/ו בַּ/טַּבָּעֹ֑ת וְ/הָי֣וּ הַ/בַּדִּ֗ים עַל שְׁתֵּ֛י צַלְעֹ֥ת הַ/מִּזְבֵּ֖חַ בִּ/שְׂאֵ֥ת אֹתֽ/וֹ׃",
+        "LXX": "καὶ εἰσάξεις τοὺς φορεῖς εἰς τοὺς δακτυλίους· καὶ ἔστωσαν οἱ φορεῖς κατὰ πλευρὰ τοῦ θυσιαστηρίου ἐν τῷ αἴρειν αὐτό.",
+        "VUL": "et induces per circulos, eruntque ex utroque latere altaris ad portandum.",
+        "SYN": "и вкладывай шесты его в кольца, так чтобы шесты были по обоим бокам жертвенника, когда нести его.",
+        "NEO": "On passera ces barres dans les anneaux, et elles seront aux deux côtés de l’autel, quand on le transportera.",
+        "NAB": "These poles are to be put through the rings, so that they are on either side of the altar when it is carried.",
+        "VAT_ES": "Y cuando haya que transportar el altar, las andas se pasarán por las argollas que están a ambos lados de él.",
+        "CEI": "Si introdurranno queste stanghe negli anelli e le stanghe saranno sui due lati dell'altare quando lo si trasporta."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "נְב֥וּב לֻחֹ֖ת תַּעֲשֶׂ֣ה אֹת֑/וֹ כַּ/אֲשֶׁ֨ר הֶרְאָ֥ה אֹתְ/ךָ֛ בָּ/הָ֖ר כֵּ֥ן יַעֲשֽׂוּ׃",
+        "LXX": "κοῖλον σανιδωτὸν ποιήσεις αὐτό· κατὰ τὸ παραδειχθέν σοι ἐν τῷ ὄρει, οὕτως ποιήσεις αὐτό.",
+        "VUL": "Non solidum, sed inane et cavum intrinsecus facies illud, sicut tibi in monte monstratum est.",
+        "SYN": "Сделай его пустой внутри, досчатый: как показано тебе на горе, так пусть сделают [его].",
+        "NEO": "Tu le feras creux, en planches ; on le fera comme il t’a été montré sur la montagne. »",
+        "NAB": "Make the altar itself in the form of a hollow box, just as it was shown you on the mountain.",
+        "VAT_ES": "Harás el altar de tablas, hueco por dentro, y en su ejecución te ajustarás al modelo que te fue mostrado en la Montaña.",
+        "CEI": "Lo farai di tavole, vuoto nell'interno: lo si farà come ti fu mostrato sul monte."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/עָשִׂ֕יתָ אֵ֖ת חֲצַ֣ר הַ/מִּשְׁכָּ֑ן לִ/פְאַ֣ת נֶֽגֶב תֵּ֠ימָנָ/ה קְלָעִ֨ים לֶ/חָצֵ֜ר שֵׁ֣שׁ מָשְׁזָ֗ר מֵאָ֤ה בָֽ/אַמָּה֙ אֹ֔רֶךְ לַ/פֵּאָ֖ה הָ/אֶחָֽת׃",
+        "LXX": "Καὶ ποιήσεις αὐλὴν τῇ σκηνῇ· εἰς τὸ κλίτος τὸ πρὸς λίβα ἱστία τῆς αὐλῆς, μῆκος ἑκατὸν πηχῶν τῷ ἑνὶ κλίτει·",
+        "VUL": "Facies et atrium tabernaculi, in cujus australi plaga contra meridiem erunt tentoria de bysso retorta : centum cubitos unum latus tenebit in longitudine.",
+        "SYN": "Сделай двор скинии: с полуденной стороны к югу завесы для двора должны быть из крученого виссона, длиною во сто локтей по одной стороне;",
+        "NEO": "« Tu feras le parvis de la Demeure. Du côté du midi, à droite, il y aura, pour former le parvis des rideaux de lin retors, sur une longueur de cent coudées pour un côté,",
+        "NAB": "\"You shall also make a court for the Dwelling. On the south side the court shall have hangings a hundred cubits long, woven of fine linen twined,",
+        "VAT_ES": "También harás el atrio de la Morada. Por el lado sur, en dirección al Négueb, el atrio tendrá unas cortinas de lino fino reforzado, dispuestas a lo largo de cincuenta metros.",
+        "CEI": "Farai poi il recinto della Dimora. Sul lato meridionale, verso sud, il recinto avrà tendaggi di bisso ritorto, per la lunghezza di cento cubiti sullo stesso lato."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/עַמֻּדָ֣י/ו עֶשְׂרִ֔ים וְ/אַדְנֵי/הֶ֥ם עֶשְׂרִ֖ים נְחֹ֑שֶׁת וָוֵ֧י הָ/עַמֻּדִ֛ים וַ/חֲשֻׁקֵי/הֶ֖ם כָּֽסֶף׃",
+        "LXX": "καὶ οἱ στύλοι αὐτῶν εἴκοσι, καὶ αἱ βάσεις αὐτῶν εἴκοσι χαλκαῖ, καὶ οἱ κρίκοι αὐτῶν καὶ αἱ ψαλίδες ἀργυραῖ.",
+        "VUL": "Et columnas viginti cum basibus totidem æneis, quæ capita cum cælaturis suis habebunt argentea.",
+        "SYN": "столбов для них двадцать, и подножий для них двадцать медных; крючки у столбов и связи на них из серебра.",
+        "NEO": "avec vingt colonnes et leurs vingt socles d’airain ; les crochets des colonnes et leurs tringles seront d’argent.",
+        "NAB": "with twenty columns and twenty pedestals of bronze; the hooks and bands on the columns shall be of silver.",
+        "VAT_ES": "Sus veinte columnas se apoyarán sobre veinte bases de bronce, y estarán provistas de ganchos y varillas de plata.",
+        "CEI": "Vi saranno venti colonne con venti basi di rame. Gli uncini delle colonne e le loro aste trasversali saranno d'argento."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/כֵ֨ן לִ/פְאַ֤ת צָפוֹן֙ בָּ/אֹ֔רֶךְ קְלָעִ֖ים מֵ֣אָה אֹ֑רֶךְ ו/עמד/ו וְ/עַמּוּדָ֣י/ו עֶשְׂרִ֗ים וְ/אַדְנֵי/הֶ֤ם עֶשְׂרִים֙ נְחֹ֔שֶׁת וָוֵ֧י הָֽ/עַמֻּדִ֛ים וַ/חֲשֻׁקֵי/הֶ֖ם כָּֽסֶף׃",
+        "LXX": "οὕτως τῷ πρὸς ἀπηλιώτην ἱστία ἑκατὸν πηχῶν μῆκος· καὶ οἱ στύλοι αὐτῶν εἴκοσι, καὶ αἱ βάσεις αὐτῶν εἴκοσι χαλκαῖ, καὶ οἱ κρίκοι καὶ αἱ ψαλίδες τῶν στύλων καὶ αἱ βάσεις αὐτῶν περιηργυρωμέναι ἀργύρῳ.",
+        "VUL": "Similiter et in latere aquilonis per longum erunt tentoria centum cubitorum, columnæ viginti, et bases æneæ ejusdem numeri, et capita earum cum cælaturis suis argentea.",
+        "SYN": "Также и вдоль по северной стороне -- завесы ста локтей длиною; столбов для них двадцать, и подножий для них двадцать медных; крючки у столбов и связи на них [и подножия их] из серебра.",
+        "NEO": "De même, du côté du nord, il y aura des rideaux sur une longueur de cent coudées, avec vingt colonnes et leurs vingt socles d’airain ; les crochets des colonnes et leurs tringles seront d’argent.",
+        "NAB": "On the north side there shall be similar hangings, a hundred cubits long, with twenty columns and twenty pedestals of bronze; the hooks and bands on the columns shall be of silver.",
+        "VAT_ES": "A lo largo del lado norte, las cortinas tendrán igualmente una longitud de cincuenta metros, y estarán sostenidas por veinte columnas apoyadas sobre veinte bases de bronce, y provistas de ganchos y varillas de plata.",
+        "CEI": "Allo stesso modo sul lato rivolto a settentrione: tendaggi per cento cubiti di lunghezza, le relative venti colonne con le venti basi di rame, gli uncini delle colonne e le aste trasversali d'argento."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/רֹ֤חַב הֶֽ/חָצֵר֙ לִ/פְאַת יָ֔ם קְלָעִ֖ים חֲמִשִּׁ֣ים אַמָּ֑ה עַמֻּדֵי/הֶ֣ם עֲשָׂרָ֔ה וְ/אַדְנֵי/הֶ֖ם עֲשָׂרָֽה׃",
+        "LXX": "τὸ δὲ εὖρος τῆς αὐλῆς κατὰ θάλασσαν ἱστία πεντήκοντα πηχῶν· στύλοι αὐτῶν δέκα, καὶ αἱ βάσεις αὐτῶν δέκα.",
+        "VUL": "In latitudine vero atrii, quod respicit ad occidentem, erunt tentoria per quinquaginta cubitos, et columnæ decem, basesque totidem.",
+        "SYN": "В ширину же двора с западной стороны -- завесы пятидесяти локтей; столбов для них десять, и подножий к ним десять.",
+        "NEO": "Du côté de l’occident, il y aura, pour la largeur du parvis, cinquante coudées de rideaux, avec dix colonnes et leurs dix socles.",
+        "NAB": "On the west side, across the width of the court, there shall be hangings, fifty cubits long, with ten columns and ten pedestals.",
+        "VAT_ES": "A lo ancho del atrio, por el lado oeste, habrá veinticinco metros de cortinas, con diez columnas y sus respectivas bases.",
+        "CEI": "La larghezza del recinto verso occidente avrà cinquanta cubiti di tendaggi, con le relative dieci colonne e le dieci basi."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/רֹ֣חַב הֶֽ/חָצֵ֗ר לִ/פְאַ֛ת קֵ֥דְמָ/ה מִזְרָ֖חָ/ה חֲמִשִּׁ֥ים אַמָּֽה׃",
+        "LXX": "καὶ εὖρος τῆς αὐλῆς τὸ πρὸς νότον ἱστία ν’ πήχεων· στύλοι αὐτῶν δέκα, καὶ αἱ βάσεις αὐτῶν δέκα.",
+        "VUL": "In ea quoque atrii latitudine, quæ respicit ad orientem, quinquaginta cubiti erunt.",
+        "SYN": "И в ширину двора с передней стороны к востоку -- [завесы] пятидесяти локтей; [столбов для них десять, и подножий для них десять].",
+        "NEO": "Du côté de l’orient, sur le devant, le parvis aura une largeur de cinquante coudées ;",
+        "NAB": "The width of the court on the east side shall be fifty cubits.",
+        "VAT_ES": "Y sobre el lado este, hacia el oriente, el ancho del atrio medirá veinticinco metros.",
+        "CEI": "La larghezza del recinto sul lato orientale verso levante sarà di cinquanta cubiti:"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/חֲמֵ֨שׁ עֶשְׂרֵ֥ה אַמָּ֛ה קְלָעִ֖ים לַ/כָּתֵ֑ף עַמֻּדֵי/הֶ֣ם שְׁלֹשָׁ֔ה וְ/אַדְנֵי/הֶ֖ם שְׁלֹשָֽׁה׃",
+        "LXX": "καὶ πέντε καὶ δέκα πήχεων τὸ ὕψος τῶν ἱστίων τῷ κλίτει τῷ ἑνί· στύλοι αὐτῶν τρεῖς, καὶ αἱ βάσεις αὐτῶν τρεῖς.",
+        "VUL": "In quibus quindecim cubitorum tentoria lateri uno deputabuntur, columnæque tres et bases totidem :",
+        "SYN": "К одной стороне -- завесы в пятнадцать локтей [вышиною], столбов для них три, и подножий для них три;",
+        "NEO": "et il y aura quinze coudées de rideaux pour un côté de la porte, avec trois colonnes et leurs trois socles,",
+        "NAB": "On one side there shall be hangings to the extent of fifteen cubits, with three columns and three pedestals;",
+        "VAT_ES": "Las cortinas colocadas a un lado de la entrada medirán siete metros y medio de longitud, y allí habrá tres columnas y tres bases.",
+        "CEI": "quindici cubiti di tendaggi con le relative tre colonne e le tre basi alla prima ala;"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/לַ/כָּתֵף֙ הַ/שֵּׁנִ֔ית חְמֵ֥שׁ עֶשְׂרֵ֖ה קְלָעִ֑ים עַמֻּדֵי/הֶ֣ם שְׁלֹשָׁ֔ה וְ/אַדְנֵי/הֶ֖ם שְׁלֹשָֽׁה׃",
+        "LXX": "καὶ τὸ κλίτος τὸ δεύτερον, δέκα πέντε πηχῶν τῶν ἱστίων τὸ ὕψος· στύλοι αὐτῶν τρεῖς, καὶ αἱ βάσεις αὐτῶν τρεῖς.",
+        "VUL": "et in latere altero erunt tentoria cubitos obtinentia quindecim, columnæ tres, et bases totidem.",
+        "SYN": "и к другой стороне -- завесы в пятнадцать [локтей вышиною], столбов для них три, и подножий для них три.",
+        "NEO": "et quinze coudées de rideaux pour le deuxième côté, avec trois colonnes et leurs trois socles.",
+        "NAB": "on the other side there shall be hangings to the extent of fifteen cubits, with three columns and three pedestals.",
+        "VAT_ES": "Las del otro lado tendrán las mismas medidas, también con tres columnas y sus respectivas bases.",
+        "CEI": "all'altra ala quindici cubiti di tendaggi, con le tre colonne e le tre basi."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וּ/לְ/שַׁ֨עַר הֶֽ/חָצֵ֜ר מָסָ֣ךְ עֶשְׂרִ֣ים אַמָּ֗ה תְּכֵ֨לֶת וְ/אַרְגָּמָ֜ן וְ/תוֹלַ֧עַת שָׁנִ֛י וְ/שֵׁ֥שׁ מָשְׁזָ֖ר מַעֲשֵׂ֣ה רֹקֵ֑ם עַמֻּֽדֵי/הֶם֙ אַרְבָּעָ֔ה וְ/אַדְנֵי/הֶ֖ם אַרְבָּעָֽה׃",
+        "LXX": "καὶ τῇ πύλῃ τῆς αὐλῆς κάλυμμα, εἴκοσι πηχῶν τὸ ὕψος, ἐξ ὑακίνθου καὶ πορφύρας καὶ κοκκίνου κεκλωσμένου καὶ βύσσου κεκλωσμένης τῇ ποικιλίᾳ τοῦ ῥαφιδευτοῦ· στύλοι αὐτῶν τέσσαρες, καὶ αἱ βάσεις αὐτῶν τέσσαρες.",
+        "VUL": "In introitu vero atrii fiet tentorium cubitorum viginti ex hyacintho et purpura, coccoque bis tincto, et bysso retorta, opere plumarii : columnas habebit quatuor, cum basibus totidem.",
+        "SYN": "А для ворот двора завеса в двадцать локтей [вышиною] из голубой и пурпуровой и червленой шерсти и из крученого виссона узорчатой работы; столбов для нее четыре, и подножий к ним четыре.",
+        "NEO": "Pour la porte du parvis, il y aura une tenture de vingt coudées, en pourpre violette, pourpre écarlate, cramoisi, et lin retors, avec dessin varié, ainsi que quatre colonnes avec leurs quatre socles.",
+        "NAB": "\"At the entrance of the court there shall be a variegated curtain, twenty cubits long, woven of violet, purple and scarlet yarn and of fine linen twined. It shall have four columns and four pedestals.",
+        "VAT_ES": "Un cortinado de diez metros de largo, hecho de púrpura violeta y escarlata, de carmesí y lino fino reforzado, recamado artísticamente, hará las veces de puerta. Este cortinado colgará de cuatro columnas apoyadas sobre cuatro bases.",
+        "CEI": "Alla porta del recinto vi sarà una cortina di venti cubiti, lavoro di ricamatore, di porpora viola, porpora rossa, scarlatto e bisso ritorto, con le relative quattro colonne e le quattro basi."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כָּל עַמּוּדֵ֨י הֶֽ/חָצֵ֤ר סָבִיב֙ מְחֻשָּׁקִ֣ים כֶּ֔סֶף וָוֵי/הֶ֖ם כָּ֑סֶף וְ/אַדְנֵי/הֶ֖ם נְחֹֽשֶׁת׃",
+        "LXX": "πάντες οἱ στύλοι τῆς αὐλῆς κύκλῳ κατηργυρωμένοι ἀργυρίῳ, καὶ αἱ κεφαλίδες αὐτῶν ἀργυραῖ, καὶ αἱ βάσεις αὐτῶν χαλκαῖ.",
+        "VUL": "Omnes columnæ atrii per circuitum vestitæ erunt argenteis laminis, capitibus argenteis, et basibus æneis.",
+        "SYN": "Все столбы вокруг двора должны быть соединены связями из серебра; крючки у них из серебра, а подножия к ним из меди.",
+        "NEO": "Toutes les colonnes formant l’enceinte du parvis seront reliées par des tringles d’argent ; elles auront des crochets d’argent et leurs socles seront d’airain.",
+        "NAB": "\"All the columns around the court shall have bands and hooks of silver, and pedestals of bronze.",
+        "VAT_ES": "Todas las columnas que rodean el atrio estarán unidas por varillas de plata; sus ganchos serán de plata y sus bases de bronce.",
+        "CEI": "Tutte le colonne intorno al recinto saranno fornite di aste trasversali d'argento: i loro uncini saranno d'argento e le loro basi di rame."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "אֹ֣רֶךְ הֶֽ/חָצֵר֩ מֵאָ֨ה בָֽ/אַמָּ֜ה וְ/רֹ֣חַב חֲמִשִּׁ֣ים בַּ/חֲמִשִּׁ֗ים וְ/קֹמָ֛ה חָמֵ֥שׁ אַמּ֖וֹת שֵׁ֣שׁ מָשְׁזָ֑ר וְ/אַדְנֵי/הֶ֖ם נְחֹֽשֶׁת׃",
+        "LXX": "τὸ δὲ μῆκος τῆς αὐλῆς ἑκατὸν ἐφ’ ἑκατόν, καὶ εὖρος πεντήκοντα ἐπὶ πεντήκοντα, καὶ ὕψος πέντε πηχῶν ἐκ βύσσου κεκλωσμένης, καὶ βάσεις αὐτῶν χαλκαῖ.",
+        "VUL": "In longitudine occupabit atrium cubitos centum, in latitudine quinquaginta, altitudo quinque cubitorum erit : fietque de bysso retorta, et habebit bases æneas.",
+        "SYN": "Длина двора сто локтей, а ширина по всему протяжению пятьдесят, высота пять локтей; _завесы_ из крученого виссона, а подножия _у_ _столбов_ из меди.",
+        "NEO": "La longueur du parvis sera de cent coudées, sa largeur de cinquante coudées de chaque côté, et sa hauteur de cinq coudées ; les rideaux seront de lin retors, et les socles d’airain.",
+        "NAB": "The enclosure of the court is to be one hundred cubits long, fifty cubits wide, and five cubits high. Fine linen twined must be used, and the pedestals must be of bronze.",
+        "VAT_ES": "El atrio tendrá cincuenta metros de largo, por veinticinco de ancho y dos y medio de alto. Todas sus cortinas serán de lino fino reforzado y sus bases de bronce.",
+        "CEI": "La lunghezza del recinto sarà di cento cubiti, la larghezza di cinquanta, l'altezza di cinque cubiti; di bisso ritorto, con le basi di rame."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "לְ/כֹל֙ כְּלֵ֣י הַ/מִּשְׁכָּ֔ן בְּ/כֹ֖ל עֲבֹדָת֑/וֹ וְ/כָל יְתֵדֹתָ֛י/ו וְ/כָל יִתְדֹ֥ת הֶ/חָצֵ֖ר נְחֹֽשֶׁת׃",
+        "LXX": "καὶ πᾶσα ἡ κατασκευὴ καὶ πάντα τὰ ἐργαλεῖα καὶ οἱ πάσσαλοι τῆς αὐλῆς χαλκοῖ.",
+        "VUL": "Cuncta vasa tabernaculi in omnes usus et cæremonias, tam paxillos ejus quam atrii, ex ære facies.",
+        "SYN": "Все принадлежности скинии для всякого употребления в ней, и все колья ее, и все колья двора -- из меди.",
+        "NEO": "Tous les ustensiles destinés au service de la Demeure, tous ses pieux et tous les pieux du parvis seront d’airain. »",
+        "NAB": "All the fittings of the Dwelling, whatever be their use, as well as all its tent pegs and all the tent pegs of the court, must be of bronze.",
+        "VAT_ES": "Los utensilios para el servicio litúrgico de la Morada, lo mismo que sus estacas y las del atrio serán también de bronce.",
+        "CEI": "Tutti gli arredi della Dimora per tutti i suoi servizi e tutti i picchetti come anche i picchetti del recinto saranno di rame."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֞ה תְּצַוֶּ֣ה אֶת בְּנֵ֣י יִשְׂרָאֵ֗ל וְ/יִקְח֨וּ אֵלֶ֜י/ךָ שֶׁ֣מֶן זַ֥יִת זָ֛ךְ כָּתִ֖ית לַ/מָּא֑וֹר לְ/הַעֲלֹ֥ת נֵ֖ר תָּמִֽיד׃",
+        "LXX": "Καὶ σὺ σύνταξον τοῖς υἱοῖς Ἰσραήλ, καὶ λαβέτωσάν σοι ἔλαιον ἐξ ἐλαίων ἄτρυγον καθαρὸν κεκομμένον εἰς φῶς καῦσαι, ἵνα κάηται λύχνος διὰ παντὸς",
+        "VUL": "Præcipe filiis Israël ut afferant tibi oleum de arboribus olivarum purissimum, piloque contusum, ut ardeat lucerna semper",
+        "SYN": "И вели сынам Израилевым, чтобы они приносили тебе елей чистый, выбитый из маслин, для освещения, чтобы горел светильник во всякое время;",
+        "NEO": "« Tu ordonneras aux enfants d’Israël de t’apporter pour le luminaire de l’huile d’olives concassées, pour entretenir les lampes continuellement.",
+        "NAB": "\"You shall order the Israelites to bring you clear oil of crushed olives, to be used for the light, so that you may keep lamps burning regularly.",
+        "VAT_ES": "Ordenarás a los israelitas que te traigan aceite puro de oliva molida para el candelero, a fin de alimentar constantemente una lámpara.",
+        "CEI": "Tu ordinerai agli Israeliti che ti procurino olio puro di olive schiacciate per il candelabro, per tener sempre accesa una lampada."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "בְּ/אֹ֣הֶל מוֹעֵד֩ מִ/ח֨וּץ לַ/פָּרֹ֜כֶת אֲשֶׁ֣ר עַל הָ/עֵדֻ֗ת יַעֲרֹךְ֩ אֹת֨/וֹ אַהֲרֹ֧ן וּ/בָנָ֛י/ו מֵ/עֶ֥רֶב עַד בֹּ֖קֶר לִ/פְנֵ֣י יְהוָ֑ה חֻקַּ֤ת עוֹלָם֙ לְ/דֹ֣רֹתָ֔/ם מֵ/אֵ֖ת בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "ἐν τῇ σκηνῇ τοῦ μαρτυρίου, ἔξωθεν τοῦ καταπετάσματος τοῦ ἐπὶ τῆς διαθήκης· καύσει αὐτὸ Ἀαρὼν καὶ οἱ υἱοὶ αὐτοῦ ἀφ’ ἑσπέρας ἕως πρωὶ ἐναντίον Κυρίου· νόμιμον αἰώνιον εἰς τὰς γενεὰς ὑμῶν παρὰ τῶν υἱῶν Ἰσραήλ.",
+        "VUL": "in tabernaculo testimonii, extra velum quod oppansum est testimonio. Et collocabunt eam Aaron et filii ejus, ut usque mane luceat coram Domino. Perpetuus erit cultus per successiones eorum a filiis Israël.",
+        "SYN": "в скинии собрания вне завесы, которая пред _ковчегом_ откровения, будет зажигать его Аарон и сыновья его, от вечера до утра, пред лицем Господним. _Это_ устав вечный для поколений их от сынов Израилевых.",
+        "NEO": "Dans la tente de réunion, en dehors du voile qui est devant le témoignage, Aaron et ses fils la prépareront pour brûler du soir au matin en présence de \\+w Yahweh|strong=\"H3068\"\\+w**. C’est une loi perpétuelle, de génération en génération pour les enfants d’Israël. »",
+        "NAB": "From evening to morning Aaron and his sons shall maintain them before the LORD in the meeting tent, outside the veil which hangs in front of the commandments. This shall be a perpetual ordinance for the Israelites throughout their generations.",
+        "VAT_ES": "Aarón y sus hijos lo deberán preparar en la Carpa del Encuentro, fuera del velo que está delante del Arca del Testimonio, para que arda en la presencia del Señor, desde la tarde hasta la mañana. Este es un decreto irrevocable para todas las generaciones israelitas.",
+        "CEI": "Nella tenda del convegno, al di fuori del velo che sta davanti alla Testimonianza, Aronne e i suoi figli la prepareranno, perché dalla sera alla mattina essa sia davanti al Signore: rito perenne presso gli Israeliti di generazione in generazione."
+      }
+    }
+  }
+}

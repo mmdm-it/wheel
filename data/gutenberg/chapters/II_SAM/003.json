@@ -1,0 +1,716 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "II_SAM_003",
+  "book_key": "II_SAM",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/תְּהִ֤י הַ/מִּלְחָמָה֙ אֲרֻכָּ֔ה בֵּ֚ין בֵּ֣ית שָׁא֔וּל וּ/בֵ֖ין בֵּ֣ית דָּוִ֑ד וְ/דָוִד֙ הֹלֵ֣ךְ וְ/חָזֵ֔ק וּ/בֵ֥ית שָׁא֖וּל הֹלְכִ֥ים וְ/דַלִּֽים׃",
+        "LXX": "Καὶ ἐγένετο ὁ πόλεμος ἐπὶ πολὺ ἀνὰ μέσον τοῦ οἴκου Σαοὺλ καὶ ἀνὰ μέσον τοῦ οἴκου Δαυείδ· καὶ ὁ οἶκος Δαυεὶδ ἐπορεύετο καὶ ἐκραταιοῦτο, καὶ ὁ οἶκος Σαοὺλ ἐπορεύετο καὶ ἠσθένει.",
+        "VUL": "Facta est ergo longa concertatio inter domum Saul et inter domum David : David proficiscens, et semper seipso robustior, domus autem Saul decrescens quotidie.",
+        "SYN": "И была продолжительная распря между домом Сауловым и домом Давидовым. Давид все более и более усиливался, а дом Саулов более и более ослабевал.",
+        "NEO": "La guerre fut longue entre la maison de Saül et la maison de David. David allait se fortifiant, et la maison de Saül allait s’affaiblissant.",
+        "NAB": "There followed a long war between the house of Saul and that of David, in which David grew stronger, but the house of Saul weaker.",
+        "VAT_ES": "Hubo una larga guerra entre la casa de Saúl y la de David; y mientras la casa de David se iba fortaleciendo, la de Saúl se debilitaba cada vez más.",
+        "CEI": "La guerra tra la casa di Saul e la casa di Davide si protrasse a lungo. Davide con l'andar del tempo si faceva più forte, mentre la casa di Saul andava indebolendosi."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "ו/ילדו וַ/יִּוָּלְד֧וּ לְ/דָוִ֛ד בָּנִ֖ים בְּ/חֶבְר֑וֹן וַ/יְהִ֤י בְכוֹר/וֹ֙ אַמְנ֔וֹן לַ/אֲחִינֹ֖עַם הַ/יִּזְרְעֵאלִֽת׃",
+        "LXX": "Καὶ ἐτέχθησαν τῷ Δαυεὶδ υἱοὶ ἐν Χεβρών, καὶ ἦν ὁ πρωτότοκος αὐτοῦ Ἀμνὼν τῆς Ἀχεινόομ τῆς Ἰσραηλίτιδος,",
+        "VUL": "Natique sunt filii David in Hebron : fuitque primogenitus ejus Amnon, de Achinoam Jezraëlitide.",
+        "SYN": "И родились у Давида [шесть] сыновей в Хевроне. Первенец его был Амнон от Ахиноамы Изреелитянки,",
+        "NEO": "Il naquit à David des fils à Hébron. Son premier-né fut Ammon, d’Achinoam de Jezraël ;",
+        "NAB": "Sons were born to David in Hebron: his first-born, Amnon, of Ahinoam from Jezreel;",
+        "VAT_ES": "David tuvo varios hijos en Hebrón. El mayor fue Amnón, hijo de Ajinóam de Izreel;",
+        "CEI": "In Ebron nacquero a Davide dei figli e furono: il maggiore Amnòn, nato da Achinoàm di Izreèl;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וּ/מִשְׁנֵ֣/הוּ כִלְאָ֔ב ל/אביגל לַ/אֲֽבִיגַ֕יִל אֵ֖שֶׁת נָבָ֣ל הַֽ/כַּרְמְלִ֑י וְ/הַ/שְּׁלִשִׁי֙ אַבְשָׁל֣וֹם בֶּֽן מַעֲכָ֔ה בַּת תַּלְמַ֖י מֶ֥לֶךְ גְּשֽׁוּר׃",
+        "LXX": "καὶ ὁ δεύτερος αὐτοῦ Δαλουιὰ τῆς Ἀβειγαίας τῆς Καρμηλίας, καὶ ὁ τρίτος Ἀβεσσαλὼμ υἱὸς Μααχὰ θυγατρὸς Θομμεὶ βασιλέως Γεσείρ,",
+        "VUL": "Et post eum Cheleab, de Abigail uxore Nabal Carmeli : porro tertius Absalom, filius Maacha filiæ Tholmai regis Gessur.",
+        "SYN": "а второй [сын] его -- Далуиа от Авигеи, _бывшей_ жены Навала, Кармилитянки; третий -- Авессалом, сын Маахи, дочери Фалмая, царя Гессурского;",
+        "NEO": "le second Chéléab, d’Abigaïl de Carmel, femme de Nabal ; le troisième Absalom, fils de Maaca, fille de Tholmaï, roi de Gessur ;",
+        "NAB": "the second, Chileab, of Abigail the widow of Nabal of Carmel; the third, Absalom, son of Maacah the daughter of Talmai, king of Geshur;",
+        "VAT_ES": "el segundo, Quilab, hijo de Abigail, la mujer de Nabal de Carmel; el tercero, Absalón, hijo de Maacá, la hija de Talmai, rey de Guesur;",
+        "CEI": "il secondo Kileàb, da Abigail già moglie di Nabal da Carmel; il terzo Assalonne, nato da Maaca, figlia di Talmài re di Ghesùr;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/הָ/רְבִיעִ֖י אֲדֹנִיָּ֣ה בֶן חַגִּ֑ית וְ/הַ/חֲמִישִׁ֖י שְׁפַטְיָ֥ה בֶן אֲבִיטָֽל׃",
+        "LXX": "καὶ ὁ τέταρτος Ὀρνεὶλ υἱὸς Φεγγείθ, καὶ ὁ πέμπτος Σαβατειὰ τῆς Ἀβειτάλ,",
+        "VUL": "Quartus autem Adonias, filius Haggith : et quintus Saphathia, filius Abital.",
+        "SYN": "четвертый -- Адония, сын Аггифы; пятый -- Сафатия, сын Авиталы;",
+        "NEO": "le quatrième Adonias, fils de Haggith ; le cinquième Saphathia, fils d’Abital,",
+        "NAB": "the fourth, Adonijah, son of Haggith; the fifth, Shephatiah, son of Abital;",
+        "VAT_ES": "el cuarto, Adonías, hijo de Jaguit; el quinto, Sefatías, hijo de Abital;",
+        "CEI": "il quarto Adonìa nato da Agghìt; il quinto Sefatìa, figlio di Abitàl;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/הַ/שִּׁשִּׁ֣י יִתְרְעָ֔ם לְ/עֶגְלָ֖ה אֵ֣שֶׁת דָּוִ֑ד אֵ֛לֶּה יֻלְּד֥וּ לְ/דָוִ֖ד בְּ/חֶבְרֽוֹן׃",
+        "LXX": "καὶ ὁ ἕκτος Ἰεθεραὰμ τῆς Αἰγὰλ γυναικὸς Δαυείδ· οὗτοι ἐτέχθησαν τῷ Δαυεὶδ ἐν Χεβρών.",
+        "VUL": "Sextus quoque Jethraam, de Egla uxore David : hi nati sunt David in Hebron.",
+        "SYN": "шестой -- Иефераам от Эглы, жены Давидовой. Они родились у Давида в Хевроне.",
+        "NEO": "et le sixième Jéthraam, d’Egla, femme de David. Tels sont les fils qui naquirent à David à Hébron.",
+        "NAB": "and the sixth, Ithream, of David's wife Eglah. These were born to David in Hebron.",
+        "VAT_ES": "y el sexto, Itream, hijo de Eglá, esposa de David. Todos estos hijos le nacieron a David en Hebrón.",
+        "CEI": "il sesto Itreàm, nato da Eglà moglie di Davide. Questi nacquero a Davide in Ebron."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י בִּֽ/הְיוֹת֙ הַ/מִּלְחָמָ֔ה בֵּ֚ין בֵּ֣ית שָׁא֔וּל וּ/בֵ֖ין בֵּ֣ית דָּוִ֑ד וְ/אַבְנֵ֛ר הָיָ֥ה מִתְחַזֵּ֖ק בְּ/בֵ֥ית שָׁאֽוּל׃",
+        "LXX": "Καὶ ἐγένετο ἐν τῷ εἶναι τὸν πόλεμον ἀνὰ μέσον τοῦ οἴκου Σαοὺλ καὶ ἀνὰ μέσον τοῦ οἴκου Δαυείδ, καὶ Ἀβεννὴρ ἦν κρατῶν τοῦ οἴκου Σαούλ.",
+        "VUL": "Cum ergo esset prælium inter domum Saul et domum David, Abner filius Ner regebat domum Saul.",
+        "SYN": "Когда была распря между домом Саула и домом Давида, то Авенир поддерживал дом Саула.",
+        "NEO": "Pendant qu’il y avait guerre entre la maison de Saül et la maison de David, Abner se fortifiait dans la maison de Saül.",
+        "NAB": "During the war between the house of Saul and that of David, Abner was gaining power in the house of Saul.",
+        "VAT_ES": "Mientras duraba la guerra entre la casa de Saúl y la de David, Abner afianzaba su posición en la casa de Saúl.",
+        "CEI": "Mentre durava la lotta tra la casa di Saul e quella di Davide, Abner era diventato potente nella casa di Saul."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וּ/לְ/שָׁא֣וּל פִּלֶ֔גֶשׁ וּ/שְׁמָ֖/הּ רִצְפָּ֣ה בַת אַיָּ֑ה וַ/יֹּ֨אמֶר֙ אֶל אַבְנֵ֔ר מַדּ֥וּעַ בָּ֖אתָה אֶל פִּילֶ֥גֶשׁ אָבִֽ/י׃",
+        "LXX": "καὶ τῷ Σαοὺλ παλλακὴ Ῥεσφὰ θυγάτηρ Ἰάλ· καὶ εἶπεν Μεμφιβόσθε υἱὸς Σαοὺλ πρὸς Ἀβεννήρ Τί ὅτι εἰσῆλθες πρὸς τὴν παλλακὴν τοῦ πατρός μου;",
+        "VUL": "Fuerat autem Sauli concubina nomine Respha, filia Aja. Dixitque Isboseth ad Abner :",
+        "SYN": "У Саула была наложница, по имени Рицпа, дочь Айя [и вошел к ней Авенир]. И сказал [Иевосфей] Авениру: зачем ты вошел к наложнице отца моего?",
+        "NEO": "Or Saül avait eu une concubine, nommée Respha, fille d’Aia. Et Isboseth dit à Abner :",
+        "NAB": "Now Saul had had a concubine, Rizpah, the daughter of Aiah. And Ishbaal, son of Saul, said to Abner, \"Why have you been intimate with my father's concubine?\"",
+        "VAT_ES": "Saúl había tenido una concubina llamada Rispá, hija de Aiá. E Isbaal dijo a Abner: «&iquest;Por qué te has unido a la concubina de mi padre?».",
+        "CEI": "Saul aveva avuto una concubina chiamata Rizpà figlia di Aià. Ora Is-Bàal disse ad Abner: \"Perché ti sei unito alla concubina di mio padre?\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּחַר֩ לְ/אַבְנֵ֨ר מְאֹ֜ד עַל דִּבְרֵ֣י אִֽישׁ בֹּ֗שֶׁת וַ/יֹּ֨אמֶר֙ הֲ/רֹ֨אשׁ כֶּ֥לֶב אָנֹ֘כִי֮ אֲשֶׁ֣ר לִֽ/יהוּדָה֒ הַ/יּ֨וֹם אֶֽעֱשֶׂה חֶ֜סֶד עִם בֵּ֣ית שָׁא֣וּל אָבִ֗י/ךָ אֶל אֶחָי/ו֙ וְ/אֶל מֵ֣רֵעֵ֔/הוּ וְ/לֹ֥א הִמְצִיתִ֖/ךָ בְּ/יַד דָּוִ֑ד וַ/תִּפְקֹ֥ד עָלַ֛/י עֲוֺ֥ן הָ/אִשָּׁ֖ה הַ/יּֽוֹם׃",
+        "LXX": "καὶ ἐθυμώθη σφόδρα Ἀβεννὴρ περὶ τοῦ λόγου Μεμφιβόσθε καὶ εἶπεν Ἀβεννὴρ πρὸς αὐτόν Μὴ κεφαλὴ κυνὸς ἐγώ εἰμι; ἐποίησα ἔλεος σήμερον μετὰ τοῦ οἴκου Σαοὺλ τοῦ πατρός σου καὶ περὶ ἀδελφῶν καὶ γνωρίμων, καὶ οὐκ ηὐτομόλησα εἰς τὸν οἶκον Δαυείδ· καὶ ἐπιζητεῖς ἐπ’ ἐμὲ ὑπὲρ ἀδικίας γυναικὸς σήμερον;",
+        "VUL": "Quare ingressus es ad concubinam patris mei ? Qui iratus nimis propter verba Isboseth, ait : Numquid caput canis ego sum adversum Judam hodie, qui fecerim misericordiam super domum Saul patris tui, et super fratres et proximos ejus, et non tradidi te in manus David, et tu requisisti in me quod argueres pro muliere hodie ?",
+        "SYN": "Авенир же сильно разгневался на слова Иевосфея и сказал: разве я -- собачья голова? Я против Иуды оказал ныне милость дому Саула, отца твоего, братьям его и друзьям его, и не предал тебя в руки Давида, а ты взыскиваешь ныне на мне грех из-за женщины.",
+        "NEO": "« Pourquoi es-tu venu vers la concubine de mon père ? » Abner, très irrité des paroles d’Isboseth, répondit : « Suis-je une tête de chien appartenant à Juda ? Aujourd’hui je montre de la faveur à la maison de Saül, ton père, à ses frères et à ses amis, et je ne t’ai pas livré aux mains de David, et c’est aujourd’hui que tu me reproches une faute avec cette femme ?",
+        "NAB": "Enraged at the words of Ishbaal, Abner said, \"Am I a dog's head in Judah? At present I am doing a kindness to the house of your father Saul, to his brothers and his friends, by keeping you out of David's clutches; yet this day you charge me with a crime involving a woman!",
+        "VAT_ES": "Abner se enfureció por las palabras de Isbaal y replicó: «&iquest;Acaso yo soy un perro, de esos de Judá? Hasta hoy he procedido lealmente con la casa de tu padre Saúl, con sus hermanos y amigos, y no te dejé caer en manos de David. &iexcl;Y ahora tú me recriminas a causa de esa mujer!",
+        "CEI": "Abner si adirò molto per le parole di Is-Bàal e disse: \"Sono io una testa di cane, di quelli di Giuda? Fino ad oggi ho usato benevolenza alla casa di Saul tuo padre, favorendo i suoi fratelli e i suoi amici, e non ti ho fatto cadere nelle mani di Davide; oggi tu mi rimproveri una colpa di donna."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "כֹּֽה יַעֲשֶׂ֤ה אֱלֹהִים֙ לְ/אַבְנֵ֔ר וְ/כֹ֖ה יֹסִ֣יף ל֑/וֹ כִּ֗י כַּ/אֲשֶׁ֨ר נִשְׁבַּ֤ע יְהוָה֙ לְ/דָוִ֔ד כִּֽי כֵ֖ן אֶֽעֱשֶׂה לּֽ/וֹ׃",
+        "LXX": "τάδε ποιήσαι ὁ θεὸς τῷ Ἀβεννὴρ καὶ τάδε προσθείη αὐτῷ, ὅτι καθὼς ὤμοσεν Κύριος τῷ Δαυείδ, ὅτι οὕτως ποιήσω αὐτῷ ἐν τῇ ἡμέρᾳ ταύτῃ·",
+        "VUL": "Hæc faciat Deus Abner, et hæc addat ei, nisi quomodo juravit Dominus David, sic faciam cum eo,",
+        "SYN": "То и то пусть сделает Бог Авениру и еще больше сделает ему! Как клялся Господь Давиду, так и сделаю ему [в сей день]:",
+        "NEO": "Que Dieu traite Abner dans toute sa rigueur, si je n’agis pas avec David selon ce que \\+w Yahweh|strong=\"H3068\"\\+w** lui a juré,",
+        "NAB": "May God do thus and so to Abner if I do not carry out for David what the LORD swore to him -",
+        "VAT_ES": "Que Dios me castigue una y otra vez, si no me comporto con David conforme al juramento que le hizo el Señor,",
+        "CEI": "Tanto faccia Dio ad Abner e anche peggio, se io non farò per Davide ciò che il Signore gli ha giurato:"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "לְ/הַֽעֲבִ֥יר הַ/מַּמְלָכָ֖ה מִ/בֵּ֣ית שָׁא֑וּל וּ/לְ/הָקִ֞ים אֶת כִּסֵּ֣א דָוִ֗ד עַל יִשְׂרָאֵל֙ וְ/עַל יְהוּדָ֔ה מִ/דָּ֖ן וְ/עַד בְּאֵ֥ר שָֽׁבַע׃",
+        "LXX": "περιελεῖν τὴν βασιλείαν ἀπὸ τοῦ οἴκου Σαούλ, καὶ τοῦ ἀναστῆσαι τὸν θρόνον Δαυεὶδ ἐπὶ Ἰσραὴλ καὶ ἐπὶ τὸν Ἰούδαν ἀπὸ Δὰν ἕως Βηρσάβεε.",
+        "VUL": "ut transferatur regnum de domo Saul, et elevetur thronus David super Israël et super Judam, a Dan usque Bersabee.",
+        "SYN": "отниму царство от дома Саулова и поставлю престол Давида над Израилем и над Иудою, от Дана до Вирсавии.",
+        "NEO": "en disant qu’il enlèverait la royauté de la maison de Saül, et qu’il établirait le trône de David sur Israël et sur Juda, depuis Dan jusqu’à Bersabée ! »",
+        "NAB": "that is, take away the kingdom from the house of Saul and establish the throne of David over Israel and over Judah from Dan to Beersheba.\"",
+        "VAT_ES": "de quitar la realeza a la casa de Saúl y establecer el trono de David sobre Israel y sobre Judá, desde Dan hasta Berseba».",
+        "CEI": "trasferire cioè il regno dalla casa di Saul e stabilire il trono di Davide su Israele e su Giuda, da Dan fino a Bersabea\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא יָכֹ֣ל ע֔וֹד לְ/הָשִׁ֥יב אֶת אַבְנֵ֖ר דָּבָ֑ר מִ/יִּרְאָת֖/וֹ אֹתֽ/וֹ׃",
+        "LXX": "καὶ οὐκ ἠδυνάσθη ἔτι Μεμφιβόσθε ἀποκριθῆναι τῷ Ἀβεννὴρ ῥῆμα ἀπὸ τοῦ φοβεῖσθαι αὐτόν.",
+        "VUL": "Et non potuit respondere ei quidquam, quia metuebat illum.",
+        "SYN": "И не мог Иевосфей возразить Авениру, ибо боялся его.",
+        "NEO": "Isboseth ne put répondre un seul mot à Abner, parce qu’il le craignait.",
+        "NAB": "In his fear of Abner, Ishbaal was no longer able to say a word to him.",
+        "VAT_ES": "Isbaal no fue capaz de responder a Abner ni una sola palabra, porque le tenía miedo.",
+        "CEI": "Quegli non fu capace di rispondere una parola ad Abner, perché aveva paura di lui."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַח֩ אַבְנֵ֨ר מַלְאָכִ֧ים אֶל דָּוִ֛ד תחת/ו תַּחְתָּ֥י/ו לֵ/אמֹ֖ר לְ/מִי אָ֑רֶץ לֵ/אמֹ֗ר כָּרְתָ֤/ה בְרִֽיתְ/ךָ֙ אִתִּ֔/י וְ/הִנֵּה֙ יָדִ֣/י עִמָּ֔/ךְ לְ/הָסֵ֥ב אֵלֶ֖י/ךָ אֶת כָּל יִשְׂרָאֵֽל׃",
+        "LXX": "Καὶ ἀπέστειλεν Ἀβεννὴρ ἀγγέλους πρὸς Δαυεὶδ εἰς Θαιλὰμ οὗ ἦν παραχρῆμα λέγων Διάθου διαθήκην σου μετ’ ἐμοῦ, καὶ ἰδοὺ ἡ χείρ μου μετὰ σοῦ ἐπιστρέψαι πρὸς σὲ πάντα τὸν οἶκον Ἰσραήλ.",
+        "VUL": "Misit ergo Abner nuntios ad David pro se dicentes : Cujus est terra ? et ut loquerentur : Fac mecum amicitias, et erit manus mea tecum, et reducam ad te universum Israël.",
+        "SYN": "И послал Авенир от себя послов к Давиду [в Хеврон, где он находился], сказать: чья эта земля? И еще сказать: заключи союз со мною, и рука моя будет с тобою, чтобы обратить к тебе весь народ Израильский.",
+        "NEO": "Abner envoya des messagers à David pour lui dire de sa part : « A qui est le pays ? Fais ton alliance avec moi, et voici que ma main t’aidera pour tourner vers toi tout Israël. »",
+        "NAB": "Then Abner sent messengers to David in Telam, where he was at the moment, to say, \"Make an agreement with me, and I will aid you by bringing all Israel over to you.\"",
+        "VAT_ES": "Entonces Abner envió unos mensajeros, para que dijeran a David en nombre suyo: «&iquest;De quién va a ser el país?». Y también: «Sella conmigo un pacto, y yo cooperaré contigo para que todo Israel se ponga de tu parte».",
+        "CEI": "Abner inviò subito messaggeri a Davide per dirgli: \"A chi il paese?\". Intendeva dire: \"Fà alleanza con me ed ecco, la mia mano sarà con te per ricondurre a te tutto Israele\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר ט֔וֹב אֲנִ֕י אֶכְרֹ֥ת אִתְּ/ךָ֖ בְּרִ֑ית אַ֣ךְ דָּבָ֣ר אֶחָ֡ד אָנֹכִי֩ שֹׁאֵ֨ל מֵ/אִתְּ/ךָ֤ לֵ/אמֹר֙ לֹא תִרְאֶ֣ה אֶת פָּנַ֔/י כִּ֣י אִם לִ/פְנֵ֣י הֱבִיאֲ/ךָ֗ אֵ֚ת מִיכַ֣ל בַּת שָׁא֔וּל בְּ/בֹאֲ/ךָ֖ לִ/רְא֥וֹת אֶת פָּנָֽ/י׃",
+        "LXX": "καὶ εἶπεν Δαυείδ Ἐγὼ καλῶς διαθήσομαι πρὸς σὲ διαθήκην, πλὴν λόγον ἕνα ἐγὼ αἰτοῦμαι παρὰ σοῦ λέγων Οὐκ ὄψει τὸ πρόσωπόν μου ἐὰν μὴ ἀγάγῃς τὴν Μελχὸλ θυγατέρα Σαούλ, παραγινομένου ἰδεῖν τὸ πρόσωπόν μου.",
+        "VUL": "Qui ait : Optime : ego faciam tecum amicitias : sed unam rem peto a te, dicens : Non videbis faciem meam antequam adduxeris Michol filiam Saul : et sic venies, et videbis me.",
+        "SYN": "И сказал [Давид]: хорошо, я заключу союз с тобою, только прошу тебя об одном, именно -- ты не увидишь лица моего, если не приведешь с собою Мелхолы, дочери Саула, когда придешь увидеться со мною.",
+        "NEO": "Il répondit : « Bien ! je ferai alliance avec toi ; mais je te demande une chose, c’est que tu ne voies pas ma face sans m’amener Michol, fille de Saül, lorsque tu viendras pour voir ma face. »",
+        "NAB": "He replied, \"Very well, I will make an agreement with you. But one thing I require of you. You must not appear before me unless you bring back Michal, Saul's daughter, when you come to present yourself to me.\"",
+        "VAT_ES": "David respondió: «Está bien, haré un pacto contigo. Pero sólo te pido una cosa: no te presentarás ante mí, si no me traes a Mical, la hija de Saúl, cuando vengas a verme».",
+        "CEI": "Rispose: \"Bene! Io farò alleanza con te. Però ho una cosa da chiederti ed è questa: non verrai alla mia presenza, se prima non mi condurrai davanti Mikal figlia di Saul, quando verrai a vedere il mio volto\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח דָּוִד֙ מַלְאָכִ֔ים אֶל אִֽישׁ בֹּ֥שֶׁת בֶּן שָׁא֖וּל לֵ/אמֹ֑ר תְּנָ֤/ה אֶת אִשְׁתִּ/י֙ אֶת מִיכַ֔ל אֲשֶׁר֙ אֵרַ֣שְׂתִּי לִ֔/י בְּ/מֵאָ֖ה עָרְל֥וֹת פְּלִשְׁתִּֽים׃",
+        "LXX": "καὶ ἐξαπέστειλεν Δαυεὶδ πρὸς Μεμφιβόσθε υἱὸν Σαοὺλ ἀγγέλους λέγων Ἀπόδος μοι τὴν γυναῖκά μου τὴν Μελχόλ, ἣν ἔλαβον ἐν ἑκατὸν ἀκροβυστίαις ἀλλοφύλων.",
+        "VUL": "Misit autem David nuntios ad Isboseth filium Saul, dicens : Redde uxorem meam Michol, quam despondi mihi centum præputiis Philisthiim.",
+        "SYN": "И отправил Давид послов к Иевосфею, сыну Саулову, сказать: отдай жену мою Мелхолу, которую я получил за сто краеобрезаний Филистимских.",
+        "NEO": "Et David envoya des messagers à Isboseth, fils de Saül, pour lui dire : « Donne-moi ma femme Michol, que j’ai épousée pour cent prépuces de Philistins. »",
+        "NAB": "At the same time David sent messengers to Ishbaal, son of Saul, to say, \"Give me my wife Michal, whom I espoused by paying a hundred Philistine foreskins.\"",
+        "VAT_ES": "Además, David envió mensajeros a Isbaal, hijo de Saúl, para intimarle: «Devuélveme a Mical, mi mujer, a la que yo adquirí por cien prepucios de filisteos».",
+        "CEI": "Davide spedì messaggeri a Is-Bàal, figlio di Saul, intimandogli: \"Restituisci mia moglie Mikal, che feci mia sposa al prezzo di cento membri di Filistei\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַח֙ אִ֣ישׁ בֹּ֔שֶׁת וַ/יִּקָּחֶ֖/הָ מֵ֣/עִֽם אִ֑ישׁ מֵ/עִ֖ם פַּלְטִיאֵ֥ל בֶּן לוש לָֽיִשׁ׃",
+        "LXX": "καὶ ἀπέστειλεν Μεμφιβόσθε καὶ ἔλαβεν αὐτὴν παρὰ τοῦ ἀνδρὸς αὐτῆς, παρὰ Φαλτιὴλ υἱοῦ Σελλής.",
+        "VUL": "Misit ergo Isboseth, et tulit eam a viro suo Phaltiel filio Lais.",
+        "SYN": "И послал Иевосфей и взял ее от мужа, от Фалтия, сына Лаишева.",
+        "NEO": "Isboseth l’envoya prendre à son mari Phaltiel, fils de Laïs ;",
+        "NAB": "Ishbaal sent for her and took her away from her husband Paltiel, son of Laish,",
+        "VAT_ES": "Entonces Isbaal mandó que se la sacaran a su marido Paltiel, hijo de Lais.",
+        "CEI": "Is-Bàal mandò incaricati a toglierla al suo marito, Paltiel figlio di Lais."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨לֶךְ אִתָּ֜/הּ אִישָׁ֗/הּ הָל֧וֹךְ וּ/בָכֹ֛ה אַחֲרֶ֖י/הָ עַד בַּֽחֻרִ֑ים וַ/יֹּ֨אמֶר אֵלָ֥י/ו אַבְנֵ֛ר לֵ֥ךְ שׁ֖וּב וַ/יָּשֹֽׁב׃",
+        "LXX": "καὶ ἐπορεύετο ὁ ἀνὴρ αὐτῆς μετ’ αὐτῆς κλαίων ὀπίσω αὐτῆς ἕως Βαρακεί· καὶ εἶπεν πρὸς αὐτὸν Ἀβεννήρ Πορεύου, ἀνάστρεφε· καὶ ἀνέστρεψεν.",
+        "VUL": "Sequebaturque eam vir suus, plorans usque Bahurim : et dixit ad eum Abner : Vade, et revertere. Qui reversus est.",
+        "SYN": "Пошел с нею и муж ее и с плачем провожал ее до Бахурима; но Авенир сказал ему: ступай назад. И он возвратился.",
+        "NEO": "et son mari l’accompagna, marchant et pleurant derrière elle, jusqu’à Bathurim. Là Abner lui dit : « Va, retourne chez toi. » Et il s’en retourna.",
+        "NAB": "who followed her weeping as far as Bahurim. But Abner said to him, \"Go back!\" And he turned back.",
+        "VAT_ES": "Su marido la acompañó y fue llorando detrás de ella hasta Bajurím. Pero Abner le dijo: «&iexcl;Vamos, vuélvete!». Y él se volvió.",
+        "CEI": "Suo marito la seguì, camminando e piangendo dietro di lei fino a Bacurim. Poi Abner gli disse: \"Torna indietro!\" e quegli tornò."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וּ/דְבַר אַבְנֵ֣ר הָיָ֔ה עִם זִקְנֵ֥י יִשְׂרָאֵ֖ל לֵ/אמֹ֑ר גַּם תְּמוֹל֙ גַּם שִׁלְשֹׁ֔ם הֱיִיתֶ֞ם מְבַקְשִׁ֧ים אֶת דָּוִ֛ד לְ/מֶ֖לֶךְ עֲלֵי/כֶֽם׃",
+        "LXX": "Καὶ εἶπεν Ἀβεννὴρ πρὸς τοὺς πρεσβυτέρους Ἰσραὴλ λέγων Ἐχθὲς καὶ τρίτην ἐζητεῖτε τὸν Δαυεὶδ βασιλεύειν ἐφ’ ὑμῶν.",
+        "VUL": "Sermonem quoque intulit Abner ad seniores Israël, dicens : Tam heri quam nudiustertius quærebatis David ut regnaret super vos.",
+        "SYN": "И обратился Авенир к старейшинам Израильским, говоря: и вчера и третьего дня вы желали, чтобы Давид был царем над вами,",
+        "NEO": "Abner eut des pourparlers avec les anciens d’Israël, et leur dit : « Vous désiriez depuis longtemps déjà avoir David pour roi ;",
+        "NAB": "Abner then said in discussion with the elders of Israel: \"For a long time you have been seeking David as your king.",
+        "VAT_ES": "Mientras tanto, Abner se había entrevistado con los ancianos de Israel, diciendo: «Ya hace tiempo que ustedes quieren a David como rey.",
+        "CEI": "Intanto Abner rivolse questo discorso agli anziani d'Israele: \"Da tempo voi ricercate Davide come vostro re."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֖ה עֲשׂ֑וּ כִּ֣י יְהוָ֗ה אָמַ֤ר אֶל דָּוִד֙ לֵ/אמֹ֔ר בְּ/יַ֣ד דָּוִ֣ד עַבְדִּ֗/י הוֹשִׁ֜יעַ אֶת עַמִּ֤/י יִשְׂרָאֵל֙ מִ/יַּ֣ד פְּלִשְׁתִּ֔ים וּ/מִ/יַּ֖ד כָּל אֹיְבֵי/הֶֽם׃",
+        "LXX": "καὶ νῦν ποιήσατε, ὅτι Κύριος ἐλάλησεν περὶ Δαυεὶδ λέγων Ἐν χειρὶ τοῦ δούλου μου Δαυεὶδ σώσω τὸν Ἰσραὴλ ἐκ χειρὸς ἀλλοφύλων καὶ ἐκ χειρὸς πάντων τῶν ἐχθρῶν αὐτῶν.",
+        "VUL": "Nunc ergo facite : quoniam Dominus locutus est ad David, dicens : In manu servi mei David salvabo populum meum Israël de manu Philisthiim, et omnium inimicorum ejus.",
+        "SYN": "теперь сделайте _это,_ ибо Господь сказал Давиду: \"рукою раба Моего Давида Я спасу народ Мой Израиля от руки Филистимлян и от руки всех врагов его\".",
+        "NEO": "agissez donc maintenant, car \\+w Yahweh|strong=\"H3068\"\\+w** a dit à David : C’est par la main de David, mon serviteur, que je délivrerai mon peuple d’Israël de la main des Philistins et de la main de tous ses ennemis. »",
+        "NAB": "Now take action, for the LORD has said of David, 'By my servant David I will save my people Israel from the grasp of the Philistines and from the grasp of all their enemies.'\"",
+        "VAT_ES": "Actúen ahora mismo, porque el Señor le ha dicho: «Por medio de David salvaré a mi pueblo Israel del poder de los filisteos y del poder de todos sus enemigos».",
+        "CEI": "Ora mettetevi al lavoro, perché il Signore ha detto e confermato a Davide: Per mezzo di Davide mio servo libererò Israele mio popolo dalle mani dei Filistei e dalle mani di tutti i suoi nemici\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר גַּם אַבְנֵ֖ר בְּ/אָזְנֵ֣י בִנְיָמִ֑ין וַ/יֵּ֣לֶךְ גַּם אַבְנֵ֗ר לְ/דַבֵּ֞ר בְּ/אָזְנֵ֤י דָוִד֙ בְּ/חֶבְר֔וֹן אֵ֤ת כָּל אֲשֶׁר טוֹב֙ בְּ/עֵינֵ֣י יִשְׂרָאֵ֔ל וּ/בְ/עֵינֵ֖י כָּל בֵּ֥ית בִּנְיָמִֽן׃",
+        "LXX": "καὶ ἐλάλησεν Ἀβεννὴρ ἐν τοῖς ὠσὶν Βενιαμείν, καὶ ἐπορεύθη Ἀβεννὴρ τοῦ λαλῆσαι εἰς τὰ ὦτα τοῦ Δαυεὶδ εἰς Χεβρὼν πάντα ὅσα ἤρεσεν ἐν ὀφθαλμοῖς Ἰσραὴλ καὶ ἐν ὀφθαλμοῖς παντὸς οἴκου Βενιαμείν.",
+        "VUL": "Locutus est autem Abner etiam ad Benjamin. Et abiit ut loqueretur ad David in Hebron omnia quæ placuerant Israëli et universo Benjamin.",
+        "SYN": "То же говорил Авенир и Вениамитянам. И пошел Авенир в Хеврон, чтобы пересказать Давиду все, чего желали Израиль и весь дом Вениаминов.",
+        "NEO": "Abner parla aussi aux oreilles de Benjamin, et Abner alla reporter aux oreilles de David, à Hébron, ce qui paraissait bon aux yeux d’Israël et aux yeux de toute la maison de Benjamin.",
+        "NAB": "Abner also spoke personally to Benjamin, and then went to make his own report to David in Hebron concerning all that would be agreeable to Israel and to the whole house of Benjamin.",
+        "VAT_ES": "Abner habló también a los hombres de Benjamín, y luego fue a comunicarle personalmente a David, en Hebrón, lo que habían acordado Israel y toda la casa de Benjamín.",
+        "CEI": "Abner ebbe colloqui anche con gli uomini di Beniamino. Poi Abner tornò solo da Davide in Ebron a riferirgli quanto era stato approvato da Israele e da tutta la casa di Beniamino."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֨א אַבְנֵ֤ר אֶל דָּוִד֙ חֶבְר֔וֹן וְ/אִתּ֖/וֹ עֶשְׂרִ֣ים אֲנָשִׁ֑ים וַ/יַּ֨עַשׂ דָּוִ֧ד לְ/אַבְנֵ֛ר וְ/לַ/אֲנָשִׁ֥ים אֲשֶׁר אִתּ֖/וֹ מִשְׁתֶּֽה׃",
+        "LXX": "καὶ ἦλθεν Ἀβεννὴρ πρὸς Δαυεὶδ εἰς Χεβρὼν καὶ μετ’ αὐτοῦ εἴκοσι ἄνδρες· καὶ ἐποίησεν Δαυεὶδ τῷ Ἀβεννὴρ καὶ τοῖς ἀνδράσιν τοῖς μετ’ αὐτοῦ πότον.",
+        "VUL": "Venitque ad David in Hebron cum viginti viris : et fecit David Abner, et viris ejus qui venerant cum eo, convivium.",
+        "SYN": "И пришел Авенир к Давиду в Хеврон и с ним двадцать человек, и сделал Давид пир для Авенира и людей, бывших с ним.",
+        "NEO": "Abner vint près de David, à Hébron, accompagné de vingt hommes ; et David fit un festin à Abner et aux hommes qui l’accompagnaient.",
+        "NAB": "When Abner, accompanied by twenty men, came to David in Hebron, David prepared a feast for Abner and for the men who were with him.",
+        "VAT_ES": "Abner, acompañado de veinte hombres, se presentó a David en Hebrón, y este les ofreció un banquete.",
+        "CEI": "Abner venne dunque a Davide in Ebron con venti uomini e Davide fece servire un banchetto ad Abner e ai suoi uomini."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר אַבְנֵ֣ר אֶל דָּוִ֡ד אָק֣וּמָה וְֽ/אֵלֵ֡כָה וְ/אֶקְבְּצָה֩ אֶל אֲדֹנִ֨/י הַ/מֶּ֜לֶךְ אֶת כָּל יִשְׂרָאֵ֗ל וְ/יִכְרְת֤וּ אִתְּ/ךָ֙ בְּרִ֔ית וּ/מָ֣לַכְתָּ֔ בְּ/כֹ֥ל אֲשֶׁר תְּאַוֶּ֖ה נַפְשֶׁ֑/ךָ וַ/יְּשַׁלַּ֥ח דָּוִ֛ד אֶת אַבְנֵ֖ר וַ/יֵּ֥לֶךְ בְּ/שָׁלֽוֹם׃",
+        "LXX": "καὶ εἶπεν Ἀβεννὴρ πρὸς Δαυείδ Ἀναστήσομαι δὴ καὶ πορεύσομαι, καὶ συναθροίσω πρὸς κύριόν μου τὸν βασιλέα πάντα Ἰσραήλ, καὶ διαθήσομαι μετ’ αὐτοῦ διαθήκην, καὶ βασιλεύσεις ἐπὶ πᾶσιν οἷς ἐπιθυμεῖ ἡ ψυχή σου. καὶ ἀπέστειλεν Δαυεὶδ τὸν Ἀβεννήρ, καὶ ἐπορεύθησαν ἐν εἰρήνῃ.",
+        "VUL": "Et dixit Abner ad David : Surgam, ut congregem ad te dominum meum regem omnem Israël, et ineam tecum fdus, et imperes omnibus, sicut desiderat anima tua. Cum ergo deduxisset David Abner, et ille isset in pace,",
+        "SYN": "И сказал Авенир Давиду: я встану и пойду и соберу к господину моему царю весь народ Израильский, и они вступят в завет с тобою, и будешь царствовать над всеми, как желает душа твоя. И отпустил Давид Авенира, и он ушел с миром.",
+        "NEO": "Et Abner dit à David : « Je vais me lever et partir pour rassembler tout Israël vers mon seigneur le roi ; ils feront alliance avec toi et tu régneras sur tout ce que ton âme désire. » Et David congédia Abner, qui s’en alla en paix.",
+        "NAB": "Then Abner said to David, \"I will now go to assemble all Israel for my lord the king, that they may make an agreement with you; you will then be king over all whom you wish to rule.\" So David bade Abner farewell, and he went away in peace.",
+        "VAT_ES": "Abner dijo a David: «Ahora mismo iré a reunir a todo Israel ante el rey, mi señor. Ellos harán un pacto contigo, y tú reinarás conforme a tus deseos». David despidió a Abner, y él se fue en paz.",
+        "CEI": "Abner disse poi a Davide: \"Sono pronto! Vado a radunare tutto Israele intorno al re mio signore. Essi faranno alleanza con te e regnerai su quanto tu desideri\". Davide congedò poi Abner, che partì in pace."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּה֩ עַבְדֵ֨י דָוִ֤ד וְ/יוֹאָב֙ בָּ֣א מֵֽ/הַ/גְּד֔וּד וְ/שָׁלָ֥ל רָ֖ב עִמָּ֣/ם הֵבִ֑יאוּ וְ/אַבְנֵ֗ר אֵינֶ֤/נּוּ עִם דָּוִד֙ בְּ/חֶבְר֔וֹן כִּ֥י שִׁלְּח֖/וֹ וַ/יֵּ֥לֶךְ בְּ/שָׁלֽוֹם׃",
+        "LXX": "καὶ ἰδοὺ οἱ παῖδες Δαυεὶδ καὶ Ἰωὰβ παρεγίνοντο ἐκ τῆς ἐξοδίας, καὶ σκῦλα πολλὰ ἔφεραν μετ’ αὐτῶν· καὶ Ἀβεννὴρ οὐκ ἦν μετὰ Δαυεὶδ εἰς Χεβρών, ὅτι ἀπεστάλκει αὐτὸν καὶ ἀπεληλύθει ἐν εἰρήνῃ.",
+        "VUL": "statim pueri David et Joab venerunt, cæsis latronibus, cum præda magna nimis : Abner autem non erat cum David in Hebron, quia jam dimiserat eum, et profectus fuerat in pace.",
+        "SYN": "И вот, слуги Давидовы с Иоавом пришли из похода и принесли с собою много добычи; но Авенира уже не было с Давидом в Хевроне, ибо _Давид_ отпустил его, и он ушел с миром.",
+        "NEO": "Mais voici que les serviteurs de David et Joab revenaient d’une excursion, ramenant avec eux un grand butin. — Abner n’était plus auprès de David à Hébron, car David l’avait congédié et il s’en était allé en paix. —",
+        "NAB": "Just then David's servants and Joab were coming in from an expedition, bringing much plunder with them. Abner, having been dismissed by David, was no longer with him in Hebron but had gone his way in peace.",
+        "VAT_ES": "Poco después, los servidores de David llegaron con Joab de una incursión, trayendo un gran botín. Abner ya no estaba con David en Hebrón, porque este lo había despedido y él se había ido en paz.",
+        "CEI": "Ed ecco, gli uomini di Davide e Ioab tornavano da una scorreria e portavano con sé grande bottino. Abner non era più con Davide in Ebron, perché questi lo aveva congedato, ed egli era partito in pace."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/יוֹאָ֛ב וְ/כָל הַ/צָּבָ֥א אֲשֶׁר אִתּ֖/וֹ בָּ֑אוּ וַ/יַּגִּ֤דוּ לְ/יוֹאָב֙ לֵ/אמֹ֔ר בָּֽא אַבְנֵ֤ר בֶּן נֵר֙ אֶל הַ/מֶּ֔לֶךְ וַֽ/יְשַׁלְּחֵ֖/הוּ וַ/יֵּ֥לֶךְ בְּ/שָׁלֽוֹם׃",
+        "LXX": "καὶ Ἰωὰβ καὶ πᾶσα ἡ στρατεία αὐτοῦ ἤχθησαν, καὶ ἀπηγγέλη τῷ Ἰωὰβ λέγοντες Ἥκει Ἀβεννὴρ υἱὸς Νὴρ πρὸς Δαυείδ, καὶ ἀπέσταλκεν αὐτὸν καὶ ἀπῆλθεν ἐν εἰρήνῃ.",
+        "VUL": "Et Joab, et omnis exercitus qui erat cum eo, postea venerunt : nuntiatum est itaque Joab a narrantibus : Venit Abner filius Ner ad regem, et dimisit eum, et abiit in pace.",
+        "SYN": "Когда Иоав и все войско, ходившее с ним, пришли, то Иоаву рассказали: приходил Авенир, сын Ниров, к царю, и тот отпустил его, и он ушел с миром.",
+        "NEO": "Joab et toute la troupe qui était avec lui arrivèrent, et on fit ce rapport à Joab : « Abner, fils de Ner, est venu auprès du roi, qui l’a congédié, et il s’en est allé en paix. »",
+        "NAB": "When Joab and the whole force he had with him arrived, he was informed, \"Abner, son of Ner, came to David; he has been sent on his way in peace.\"",
+        "VAT_ES": "Apenas llegó Joab con toda la tropa que lo acompañaba, fueron a decirle: «Abner, hijo de Ner, vino a ver al rey y este lo dejó partir en paz».",
+        "CEI": "Quando arrivarono Ioab e la sua truppa, fu riferito a Ioab: \"È venuto dal re Abner figlio di Ner ed egli l'ha congedato e se n'è andato in pace\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֤א יוֹאָב֙ אֶל הַ/מֶּ֔לֶךְ וַ/יֹּ֖אמֶר מֶ֣ה עָשִׂ֑יתָה הִנֵּה בָ֤א אַבְנֵר֙ אֵלֶ֔י/ךָ לָ/מָּה זֶּ֥ה שִׁלַּחְתּ֖/וֹ וַ/יֵּ֥לֶךְ הָלֽוֹךְ׃",
+        "LXX": "καὶ εἰσῆλθεν Ἰωὰβ πρὸς τὸν βασιλέα καὶ εἶπεν Τί τοῦτο ἐποίησας; ἰδοὺ ἦλθεν Ἀβεννὴρ πρὸς σέ, καὶ ἵνα τί ἐξαπέσταλκας αὐτὸν καὶ ἀπελήλυθεν ἐν εἰρήνῃ;",
+        "VUL": "Et ingressus est Joab ad regem, et ait : Quid fecisti ? Ecce venit Abner ad te : quare dimisisti eum, et abiit et recessit ?",
+        "SYN": "И пришел Иоав к царю и сказал: что ты сделал? Вот, приходил к тебе Авенир; зачем ты отпустил его, и он ушел?",
+        "NEO": "Joab se rendit chez le roi et dit : « Qu’as-tu fait ? Voilà qu’Abner est venu vers toi : pourquoi l’as-tu congédié et laissé partir ?",
+        "NAB": "So Joab went to the king and said: \"What have you done? Abner came to you. Why did you let him go peacefully on his way?",
+        "VAT_ES": "Entonces Joab se presentó al rey y le dijo: «&iquest;Qué has hecho? Ahora que Abner ha venido a verte, &iquest;por qué lo has dejado irse tranquilamente?",
+        "CEI": "Ioab si presentò al re e gli disse: \"Che hai fatto? Ecco, è venuto Abner da te; perché l'hai congedato ed egli se n'è andato?"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "יָדַ֨עְתָּ֙ אֶת אַבְנֵ֣ר בֶּן נֵ֔ר כִּ֥י לְ/פַתֹּתְ/ךָ֖ בָּ֑א וְ/לָ/דַ֜עַת אֶת מוֹצָֽאֲ/ךָ֙ וְ/אֶת מבוא/ך מ֣וֹבָאֶ֔/ךָ וְ/לָ/דַ֕עַת אֵ֛ת כָּל אֲשֶׁ֥ר אַתָּ֖ה עֹשֶֽׂה׃",
+        "LXX": "ἢ οὐκ οἶδας τὴν κακίαν Ἀβεννὴρ υἱοῦ Νήρ, ὅτι ἀπατῆσαί σε παρεγένετο καὶ γνῶναι τὴν ἔξοδόν σου καὶ τὴν εἴσοδόν σου καὶ γνῶναι ἅπαντα ὅσα σὺ ποιεῖς;",
+        "VUL": "ignoras Abner filium Ner, quoniam ad hoc venit ad te ut deciperet te, et sciret exitum tuum et introitum tuum, et nosset omnia quæ agis ?",
+        "SYN": "Ты знаешь Авенира, сына Нирова: он приходил обмануть тебя, узнать выход твой и вход твой и разведать все, что ты делаешь.",
+        "NEO": "Tu connais Abner, fils de Ner : c’est pour te tromper qu’il est venu, pour épier ta conduite, et savoir tout ce que tu fais. »",
+        "NAB": "Are you not aware that Abner came to deceive you and to learn the ins and outs of all that you are doing?\"",
+        "VAT_ES": "Tú sabes bien quién es Abner, hijo de Ner. El ha venido a engañarte, para enterarse de tus movimientos y saber todo lo que haces».",
+        "CEI": "Non sai chi è Abner figlio di Ner? È venuto per ingannarti, per conoscere le tue mosse, per sapere ciò che fai\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֤א יוֹאָב֙ מֵ/עִ֣ם דָּוִ֔ד וַ/יִּשְׁלַ֤ח מַלְאָכִים֙ אַחֲרֵ֣י אַבְנֵ֔ר וַ/יָּשִׁ֥בוּ אֹת֖/וֹ מִ/בּ֣וֹר הַסִּרָ֑ה וְ/דָוִ֖ד לֹ֥א יָדָֽע׃",
+        "LXX": "καὶ ἀνέστρεψεν Ἰωάβ ἀπὸ τοῦ Δαυεὶδ καὶ ἀπέστειλεν ἀγγέλους ὀπίσω Ἀβεννήρ, καὶ ἐπιστρέφουσιν αὐτὸν ἀπὸ τοῦ φρέατος τοῦ Σεειράμ· καὶ Δαυεὶδ οὐκ ᾔδει.",
+        "VUL": "Egressus itaque Joab a David, misit nuntios post Abner, et reduxit eum a cisterna Sira, ignorante David.",
+        "SYN": "И вышел Иоав от Давида и послал гонцов вслед за Авениром; и возвратили они его от колодезя Сира, без ведома Давида.",
+        "NEO": "Joab, ayant quitté David, envoya sur les traces d’Abner des messagers qui le ramenèrent depuis la citerne de Sira, sans que David en sût rien.",
+        "NAB": "Joab then left David, and without David's knowledge sent messengers after Abner, who brought him back from the cistern of Sirah.",
+        "VAT_ES": "Joab salió de la presencia de David y envió detrás de Abner unos mensajeros, que lo hicieron volver desde la cisterna de Sirá, sin que David supiera nada.",
+        "CEI": "Ioab si allontanò da Davide e mandò messaggeri dietro Abner e lo fece tornare indietro dalla cisterna di Sira, senza che Davide lo sapesse."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יָּ֤שָׁב אַבְנֵר֙ חֶבְר֔וֹן וַ/יַּטֵּ֤/הוּ יוֹאָב֙ אֶל תּ֣וֹךְ הַ/שַּׁ֔עַר לְ/דַבֵּ֥ר אִתּ֖/וֹ בַּ/שֶּׁ֑לִי וַ/יַּכֵּ֤/הוּ שָׁם֙ הַ/חֹ֔מֶשׁ וַ/יָּ֕מָת בְּ/דַ֖ם עֲשָׂה אֵ֥ל אָחִֽי/ו׃",
+        "LXX": "καὶ ἐπέστρεψεν τὸν Ἀβεννὴρ εἰς Χεβρών, καὶ ἐξέκλινεν αὐτὸν Ἰωὰβ ἐκ πλαγίων τῆς πύλης λαλῆσαι πρὸς αὐτόν, ἐνεδρεύων· καὶ ἐπάταξεν αὐτὸν ἐκεῖ εἰς τὴν ψόαν, καὶ ἀπέθανεν ἐν τῷ αἵματι Ἀσαὴλ τοῦ ἀδελφοῦ Ἰωάβ.",
+        "VUL": "Cumque rediisset Abner in Hebron, seorsum adduxit eum Joab ad medium portæ ut loqueretur ei, in dolo : et percussit illum ibi in inguine, et mortuus est in ultionem sanguinis Asaël fratris ejus.",
+        "SYN": "Когда Авенир возвратился в Хеврон, то Иоав отвел его внутрь ворот, как будто для того, чтобы поговорить с ним тайно, и там поразил его в живот. И умер _Авенир_ за кровь Асаила, брата Иоавова.",
+        "NEO": "Quand Abner fut de retour à Hébron, Joab le tira à l’écart, dans l’intérieur de la porte, comme pour lui parler tranquillement, et là il le frappa au ventre ; il mourut, à cause du sang d’Asaël, frère de Joab.",
+        "NAB": "When Abner returned to Hebron, Joab took him aside within the city gate as though to speak with him privately. There he stabbed him in the abdomen, and he died in revenge for the killing of Joab's brother Asahel.",
+        "VAT_ES": "Cuando Abner estuvo de vuelta en Hebrón, Joab lo llevó aparte a un lado de la entrada, como para hablar con él en privado, y allí lo hirió mortalmente en el bajo vientre, a causa de la sangre de su hermano Asael.",
+        "CEI": "Abner tornò a Ebron e Ioab lo prese in disparte in mezzo alla porta, come per parlargli in privato, e qui lo colpì al basso ventre e lo uccise, per vendicare il sangue di Asaèl suo fratello."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֤ע דָּוִד֙ מֵ/אַ֣חֲרֵי כֵ֔ן וַ/יֹּ֗אמֶר נָקִ֨י אָנֹכִ֧י וּ/מַמְלַכְתִּ֛/י מֵ/עִ֥ם יְהוָ֖ה עַד עוֹלָ֑ם מִ/דְּמֵ֖י אַבְנֵ֥ר בֶּן נֵֽר׃",
+        "LXX": "καὶ ἤκουσεν Δαυεὶδ μετὰ ταῦτα καὶ εἶπεν Ἀθῷός εἰμι ἐγὼ καὶ ἡ βασιλεία μου ἀπὸ Κυρίου καὶ ἕως αἰῶνος ἀπὸ τῶν αἱμάτων Ἀβεννὴρ υἱοῦ Νήρ.",
+        "VUL": "Quod cum audisset David rem jam gestam, ait : Mundus ego sum, et regnum meum apud Dominum usque in sempiternum, a sanguine Abner filii Ner :",
+        "SYN": "И услышал после Давид _об_ _этом_ и сказал: невинен я и царство мое вовек пред Господом в крови Авенира, сына Нирова;",
+        "NEO": "David l’apprit ensuite, et il dit : « Je suis à jamais, moi et mon royaume, innocent, devant \\+w Yahweh|strong=\"H3068\"\\+w**, du sang d’Abner, fils de Ner.",
+        "NAB": "Later David heard of it and said: \"Before the LORD; I and my kingdom are forever innocent.",
+        "VAT_ES": "David se enteró en seguida de lo sucedido y exclamó: «Yo y mi reino somos inocentes para siempre, delante del Señor, de la sangre de Abner, hijo de Ner.",
+        "CEI": "Davide seppe più tardi la cosa e protestò: \"Sono innocente io e il mio regno per sempre davanti al Signore del sangue di Abner figlio di Ner."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "יָחֻ֨לוּ֙ עַל רֹ֣אשׁ יוֹאָ֔ב וְ/אֶ֖ל כָּל בֵּ֣ית אָבִ֑י/ו וְֽ/אַל יִכָּרֵ֣ת מִ/בֵּ֣ית יוֹאָ֡ב זָ֠ב וּ/מְצֹרָ֞ע וּ/מַחֲזִ֥יק בַּ/פֶּ֛לֶךְ וְ/נֹפֵ֥ל בַּ/חֶ֖רֶב וַ/חֲסַר לָֽחֶם׃",
+        "LXX": "καταντησάτωσαν ἐπὶ κεφαλὴν Ἰωὰβ καὶ ἐπὶ πάντα τὸν οἶκον τοῦ πατρὸς αὐτοῦ, καὶ μὴ ἐκλίποι ἐκ τοῦ οἴκου Ἰωὰβ γονορρυὴς καὶ λεπρὸς καὶ κρατῶν σκυτάλης καὶ πίπτων ἐν ῥομφαίᾳ καὶ ἐλασσούμενος ἄρτοις.",
+        "VUL": "et veniat super caput Joab, et super omnem domum patris ejus : nec deficiat de domo Joab fluxum seminis sustinens, et leprosus, et tenens fusum, et cadens gladio, et indigens pane.",
+        "SYN": "пусть падет она на голову Иоава и на весь дом отца его; пусть никогда не остается дом Иоава без семеноточивого, или прокаженного, или опирающегося на посох, или падающего от меча, или нуждающегося в хлебе.",
+        "NEO": "Que ce sang retombe sur la tête de Joab et sur toute la maison de son père ! Qu’il y ait toujours dans la maison de Joab un homme qui souffre d’un flux ou de la lèpre, ou qui tienne le fuseau, ou qui tombe par l’épée, ou qui manque de pain. »",
+        "NAB": "May the full responsibility for the death of Abner, son of Ner, be laid to Joab and to all his family. May the men of Joab's family never be without one suffering from a discharge, or a leper, or one unmanly, one falling by the sword, or one in need of bread!\"",
+        "VAT_ES": "&iexcl;Que ella recaiga sobre Joab y sobre toda la casa de su padre! &iexcl;Que nunca falten en la casa de Joab quienes padezcan de blenorrea y de lepra, ni afeminados, ni muertos por la espada, ni hambrientos!».",
+        "CEI": "Ricada sulla testa di Ioab e su tutta la casa di suo padre. Nella casa di Ioab non manchi mai chi soffra gonorrea o sia colpito da lebbra o maneggi il fuso, chi cada di spada o chi sia senza pane\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/יוֹאָב֙ וַ/אֲבִישַׁ֣י אָחִ֔י/ו הָרְג֖וּ לְ/אַבְנֵ֑ר עַל֩ אֲשֶׁ֨ר הֵמִ֜ית אֶת עֲשָׂהאֵ֧ל אֲחִי/הֶ֛ם בְּ/גִבְע֖וֹן בַּ/מִּלְחָמָֽה׃",
+        "LXX": "Ἰωὰβ δὲ καὶ Ἀβεσσὰ ὁ ἀδελφὸς αὐτοῦ διεπαρετηροῦντο τὸν Ἀβεννὴρ ἀνθ’ ὧν ἐθανάτωσεν τὸν Ἀσαὴλ τὸν ἀδελφὸν αὐτῶν ἐν Γαβαὼν ἐν τῷ πολέμῳ.",
+        "VUL": "Igitur Joab et Abisai frater ejus interfecerunt Abner, eo quod occidisset Asaël fratrem eorum in Gabaon in prælio.",
+        "SYN": "Иоав же и брат его Авесса убили Авенира за то, что он умертвил брата их Асаила в сражении у Гаваона.",
+        "NEO": "C’est ainsi que Joab et Abisaï, son frère, tuèrent Abner, parce qu’il avait donné la mort à leur frère Asaël, à Gabaon, dans la bataille.",
+        "NAB": "(Joab and his brother Abishai had lain in wait for Abner because he killed their brother Asahel in battle at Gibeon.)",
+        "VAT_ES": "Joab y su hermano Abisai dieron muerte a Abner, porque él les había matado a su hermano Asael, en Gabaón, durante un combate.",
+        "CEI": "Ioab e suo fratello Abisài avevano trucidato Abner, perché aveva ucciso Asaèl loro fratello a Gàbaon in battaglia."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֩ דָּוִ֨ד אֶל יוֹאָ֜ב וְ/אֶל כָּל הָ/עָ֣ם אֲשֶׁר אִתּ֗/וֹ קִרְע֤וּ בִגְדֵי/כֶם֙ וְ/חִגְר֣וּ שַׂקִּ֔ים וְ/סִפְד֖וּ לִ/פְנֵ֣י אַבְנֵ֑ר וְ/הַ/מֶּ֣לֶךְ דָּוִ֔ד הֹלֵ֖ךְ אַחֲרֵ֥י הַ/מִּטָּֽה׃",
+        "LXX": "Καὶ εἶπεν Δαυεὶδ πρὸς Ἰωὰβ καὶ πρὸς πάντα τὸν λαὸν τὸν μετ’ αὐτοῦ Διαρρήξατε τὰ ἱμάτια ὑμῶν καὶ περιζώσασθε σάκκους καὶ κόπτεσθε ἐνώπιον Ἀβεννήρ· καὶ ὁ βασιλεὺς Δαυεὶδ ἐπορεύετο ὀπίσω τῆς κλίνης.",
+        "VUL": "Dixit autem David ad Joab, et ad omnem populum qui erat cum eo : Scindite vestimenta vestra, et accingimini saccis, et plangite ante exequias Abner. Porro rex David sequebatur feretrum.",
+        "SYN": "И сказал Давид Иоаву и всем людям, бывшим с ним: раздерите одежды ваши и оденьтесь во вретища и плачьте над Авениром. И царь Давид шел за гробом _его._",
+        "NEO": "David dit à Joab et à tout le peuple qui était avec lui : « Déchirez-vos vêtements, ceignez-vous de sacs et faites le deuil devant Abner. » Et le roi David marchait derrière la litière.",
+        "NAB": "Then David said to Joab and to all the people who were with him, \"Rend your garments, gird yourselves with sackcloth, and mourn over Abner.\" King David himself followed the bier.",
+        "VAT_ES": "Luego David dijo a Joab y a todo el pueblo que estaba con él: «Rasguen sus vestiduras, vístanse de luto y laméntense por Abner». Y el rey David iba caminando detrás del féretro,",
+        "CEI": "Davide disse a Ioab e a tutta la gente che era con lui: \"Stracciatevi le vesti, vestitevi di sacco e fate lutto davanti ad Abner\". Anche il re Davide seguiva la bara."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יִּקְבְּר֥וּ אֶת אַבְנֵ֖ר בְּ/חֶבְר֑וֹן וַ/יִשָּׂ֧א הַ/מֶּ֣לֶךְ אֶת קוֹל֗/וֹ וַ/יֵּבְךְּ֙ אֶל קֶ֣בֶר אַבְנֵ֔ר וַ/יִּבְכּ֖וּ כָּל הָ/עָֽם׃",
+        "LXX": "καὶ θάπτουσιν τὸν Ἀβεννὴρ εἰς Χεβρών· καὶ ἦρεν ὁ βασιλεὺς τὴν φωνὴν αὐτοῦ καὶ ἔκλαυσεν ἐπὶ τοῦ τάφου αὐτοῦ, καὶ ἔκλαυσεν πᾶς ὁ λαὸς ἐπὶ Ἀβεννήρ.",
+        "VUL": "Cumque sepelissent Abner in Hebron, levavit rex David vocem suam, et flevit super tumulum Abner : flevit autem et omnis populus.",
+        "SYN": "Когда погребали Авенира в Хевроне, то царь громко плакал над гробом Авенира; плакал и весь народ.",
+        "NEO": "On enterra Abner à Hébron. Le roi pleura à haute voix sur le tombeau d’Abner et tout le peuple pleura.",
+        "NAB": "When they had buried Abner in Hebron, the king wept aloud at the grave of Abner, and the people also wept.",
+        "VAT_ES": "cuando sepultaron a Abner en Hebrón. El rey prorrumpió en sollozos ante la tumba de Abner, y todo el pueblo se puso a llorar.",
+        "CEI": "Seppellirono Abner in Ebron e il re levò la sua voce e pianse davanti al sepolcro di Abner; pianse tutto il popolo."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יְקֹנֵ֥ן הַ/מֶּ֛לֶךְ אֶל אַבְנֵ֖ר וַ/יֹּאמַ֑ר הַ/כְּ/מ֥וֹת נָבָ֖ל יָמ֥וּת אַבְנֵֽר׃",
+        "LXX": "καὶ ἐθρήνησεν ὁ βασιλεὺς ἐπὶ Ἀβεννὴρ καὶ εἶπεν Εἰ κατὰ τὸν θάνατον Ναβὰλ ἀποθανεῖται Ἀβεννήρ;",
+        "VUL": "Plangensque rex, et lugens Abner, ait : [Nequaquam ut mori solent ignavi, mortuus est Abner./",
+        "SYN": "И оплакал царь Авенира, говоря: смертью ли подлого умирать Авениру?",
+        "NEO": "Le roi chanta un chant funèbre sur Abner, et dit :",
+        "NAB": "And the king sang this elegy over Abner: \"Would Abner have died like a fool?",
+        "VAT_ES": "Entonces el rey entonó este canto fúnebre por Abner: «&iquest;Tenía que morir Abner como muere un insensato?",
+        "CEI": "Il re intonò un lamento funebre su Abner e disse: \"Come muore un insensato, doveva dunque Abner morire?"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "יָדֶ֣/ךָ לֹֽא אֲסֻר֗וֹת וְ/רַגְלֶ֨י/ךָ֙ לֹא לִ/נְחֻשְׁתַּ֣יִם הֻגָּ֔שׁוּ כִּ/נְפ֛וֹל לִ/פְנֵ֥י בְנֵֽי עַוְלָ֖ה נָפָ֑לְתָּ וַ/יֹּסִ֥פוּ כָל הָ/עָ֖ם לִ/בְכּ֥וֹת עָלָֽי/ו׃",
+        "LXX": "αἱ χεῖρές σου οὐκ ἐδέθησαν, οἱ πόδες σου οὐκ ἐν πέδαις· οὐ προσήγαγεν ὡς Ναβάλ, ἐνώπιον υἱῶν ἀδικίας ἔπεσας. καὶ συνήχθη πᾶς ὁ λαὸς τοῦ κλαῦσαι αὐτόν.",
+        "VUL": "Manus tuæ ligatæ non sunt,/ et pedes tui non sunt compedibus aggravati :/ sed sicut solent cadere coram filiis iniquitatis, sic corruisti.] Congeminansque omnis populus flevit super eum.",
+        "SYN": "Руки твои не были связаны, и ноги твои не в оковах, и ты пал, как падают от разбойников. И весь народ стал еще более плакать над ним.",
+        "NEO": "Tes mains ne furent pas liées et tes pieds ne furent pas jetés dans les chaînes ! Tu es tombé comme on tombe devant des scélérats.",
+        "NAB": "Your hands were not bound with chains, nor your feet placed in fetters; As men fall before the wicked, you fell.\" And all the people continued to weep for him.",
+        "VAT_ES": "Tus manos no estaban atadas ni tus pies sujetos con grillos. &iexcl;Has caído como quien cae víctima de malhechores!». Y todos siguieron llorando por él.",
+        "CEI": "Le tue mani non erano state legate, i tuoi piedi non erano stati stretti in catene! Sei caduto come si cade davanti ai malfattori!\". Tutto il popolo riprese a piangere su di lui."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֣א כָל הָ/עָ֗ם לְ/הַבְר֧וֹת אֶת דָּוִ֛ד לֶ֖חֶם בְּ/ע֣וֹד הַ/יּ֑וֹם וַ/יִּשָּׁבַ֨ע דָּוִ֜ד לֵ/אמֹ֗ר כֹּ֣ה יַעֲשֶׂה לִּ֤/י אֱלֹהִים֙ וְ/כֹ֣ה יֹסִ֔יף כִּ֣י אִם לִ/פְנֵ֧י בֽוֹא הַ/שֶּׁ֛מֶשׁ אֶטְעַם לֶ֖חֶם א֥וֹ כָל מְאֽוּמָה׃",
+        "LXX": "καὶ ἦλθεν πᾶς ὁ λαὸς περιδειπνῆσαι τὸν Δαυεὶδ ἄρτοις ἔτι οὔσης ἡμέρας· καὶ ὤμοσεν Δαυεὶδ λέγων Τάδε ποιήσαι μοι ὁ θεὸς καὶ τάδε προσθείη, ὅτι ἐὰν μὴ δύῃ ὁ ἥλιος, οὐ μὴ γεύσωμαι ἄρτου ἢ ἀπὸ παντός τινος.",
+        "VUL": "Cumque venisset universa multitudo cibum capere cum David, clara adhuc die juravit David, dicens : Hæc faciat mihi Deus, et hæc addat, si ante occasum solis gustavero panem vel aliud quidquam.",
+        "SYN": "И пришел весь народ предложить Давиду хлеба, когда еще продолжался день; но Давид поклялся, говоря: то и то пусть сделает со мною Бог и еще больше сделает, если я до захождения солнца вкушу хлеба или чего-нибудь.",
+        "NEO": "et tout le peuple s’approcha de David pour lui faire prendre de la nourriture lorsqu’il était encore jour. Mais David fit ce serment : « Que \\+w Yahweh|strong=\"H3068\"\\+w** me traite dans toute sa rigueur, si je goûte du pain ou quoi que ce soit avant le coucher du soleil ! »",
+        "NAB": "Then they went to console David with food while it was still day. But David swore, \"May God do thus and so to me if I eat bread or anything else before sunset.\"",
+        "VAT_ES": "Todo el pueblo trató de obligar a David a que comiera algo cuando aún era de día, pero David pronunció este juramento: «&iexcl;Que Dios me castigue una y otra vez, si llego a probar pan o cualquier otro bocado antes de la puesta del sol!».",
+        "CEI": "Tutto il popolo venne a invitare Davide perché prendesse cibo, mentre era ancora giorno; ma Davide giurò: \"Tanto mi faccia Dio e anche di peggio, se io gusterò pane o qualsiasi altra cosa prima del tramonto del sole\"."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וְ/כָל הָ/עָ֣ם הִכִּ֔ירוּ וַ/יִּיטַ֖ב בְּ/עֵֽינֵי/הֶ֑ם כְּ/כֹל֙ אֲשֶׁ֣ר עָשָׂ֣ה הַ/מֶּ֔לֶךְ בְּ/עֵינֵ֥י כָל הָ/עָ֖ם טֽוֹב׃",
+        "LXX": "καὶ ἔγνω πᾶς ὁ λαός, καὶ ἤρεσεν ἐνώπιον αὐτῶν πάντα ὅσα ἐποίησεν ὁ βασιλεὺς ἐνώπιον τοῦ λαοῦ.",
+        "VUL": "Omnisque populus audivit, et placuerunt eis cuncta quæ fecit rex in conspectu totius populi.",
+        "SYN": "И весь народ узнал это, и понравилось ему это, как и все, что делал царь, нравилось всему народу.",
+        "NEO": "Tout le peuple le remarqua et le trouva bon, comme il trouvait bon tout ce que faisait le roi.",
+        "NAB": "All the people noted this with approval, just as they were pleased with everything that the king did.",
+        "VAT_ES": "Y todo el pueblo, al tener conocimiento de esto, lo aprobó, al tener conocimiento de esto, lo aprobó, como aprobaba todo lo que hacía el rey.",
+        "CEI": "Tutto il popolo notò la cosa e la trovò giusta; quanto fece il re ebbe l'approvazione del popolo intero."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/יֵּדְע֧וּ כָל הָ/עָ֛ם וְ/כָל יִשְׂרָאֵ֖ל בַּ/יּ֣וֹם הַ/ה֑וּא כִּ֣י לֹ֤א הָיְתָה֙ מֵֽ/הַ/מֶּ֔לֶךְ לְ/הָמִ֖ית אֶת אַבְנֵ֥ר בֶּן נֵֽר׃",
+        "LXX": "καὶ ἔγνω πᾶς ὁ λαὸς καὶ πᾶς Ἰσραὴλ ἐν τῇ ἡμέρᾳ ἐκείνῃ ὅτι οὐκ ἐγένετο παρὰ τοῦ βασιλέως θανατῶσαι τὸν Ἀβεννὴρ υἱὸν Νήρ.",
+        "VUL": "Et cognovit omne vulgus et universus Israël in die illa, quoniam non actum fuisset a rege ut occideretur Abner filius Ner.",
+        "SYN": "И узнал весь народ и весь Израиль в тот день, что не от царя произошло умерщвление Авенира, сына Нирова.",
+        "NEO": "Tout le peuple et tout Israël comprirent en ce jour que ce n’était pas de par le roi qu’on avait fait mourir Abner, fils de Ner.",
+        "NAB": "So on that day all the people and all Israel came to know that the king had no part in the killing of Abner, son of Ner.",
+        "VAT_ES": "Así el pueblo y todo Israel se convencieron aquel día de que el rey no había intervenido en el asesinato de Abner, hijo de Ner.",
+        "CEI": "Tutto il popolo, cioè tutto Israele, fu convinto in quel giorno che la morte di Abner figlio di Ner non era stata provocata dal re."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר הַ/מֶּ֖לֶךְ אֶל עֲבָדָ֑י/ו הֲ/ל֣וֹא תֵדְע֔וּ כִּי שַׂ֣ר וְ/גָד֗וֹל נָפַ֛ל הַ/יּ֥וֹם הַ/זֶּ֖ה בְּ/יִשְׂרָאֵֽל׃",
+        "LXX": "Καὶ εἶπεν ὁ βασιλεὺς πρὸς τοὺς παῖδας αὐτοῦ Οὐκ οἴδατε ὅτι ἡγούμενος μέγας πέπτωκεν ἐν τῇ ἡμέρᾳ ταύτῃ ἐν τῷ Ἰσραήλ;",
+        "VUL": "Dixit quoque rex ad servos suos : Num ignoratis quoniam princeps et maximus cecidit hodie in Israël ?",
+        "SYN": "И сказал царь слугам своим: знаете ли, что вождь и великий муж пал в этот день в Израиле?",
+        "NEO": "Le roi dit à ses serviteurs : « Ne savez-vous pas qu’un chef, qu’un grand homme est tombé aujourd’hui en Israël ?",
+        "NAB": "The king then said to his servants: \"You must recognize that a great general has fallen today in Israel.",
+        "VAT_ES": "Luego el rey dijo a sus servidores: «&iexcl;Sepan que hoy ha caído en Israel un jefe, un gran hombre!",
+        "CEI": "Disse ancora il re ai suoi ministri: \"Sappiate che oggi è caduto un capo, un grande in Israele. Io, oggi, mi sono comportato dolcemente, sebbene già consacrato re, mentre questi uomini, i figli di Zeruià, sono stati più duri di me. Provveda il Signore a trattare il malvagio secondo la sua malvagità\"."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וְ/אָנֹכִ֨י הַ/יּ֥וֹם רַךְ֙ וּ/מָשׁ֣וּחַ מֶ֔לֶךְ וְ/הָ/אֲנָשִׁ֥ים הָ/אֵ֛לֶּה בְּנֵ֥י צְרוּיָ֖ה קָשִׁ֣ים מִמֶּ֑/נִּי יְשַׁלֵּ֧ם יְהוָ֛ה לְ/עֹשֵׂ֥ה הָ/רָעָ֖ה כְּ/רָעָתֽ/וֹ׃",
+        "LXX": "καὶ ὅτι ἐγώ εἰμι σήμερον συγγενὴς καὶ καθεσταμένος ὑπὸ βασιλέως; οἱ δὲ ἄνδρες οὗτοι υἱοὶ Σαρουίας σκληρότεροί μού εἰσιν· ἀποδῷ Κύριος τῷ ποιοῦντι πονηρὰ κατὰ τὴν κακίαν αὐτοῦ.",
+        "VUL": "Ego autem adhuc delicatus, et unctus rex : porro viri isti filii Sarviæ duri sunt mihi : retribuat Dominus facienti malum juxta malitiam suam.",
+        "SYN": "Я теперь еще слаб, хотя и помазан на царство, а эти люди, сыновья Саруи, сильнее меня; пусть же воздаст Господь делающему злое по злобе его!",
+        "NEO": "Pour moi, je suis doux, quoiqu’ayant reçu l’onction royale ; et ces hommes, les fils de Sarvia, sont plus durs que moi. Que \\+w Yahweh|strong=\"H3068\"\\+w** rende à qui fait le mal selon le mal qu’il fait ! »",
+        "NAB": "Although I am the anointed king, I am weak this day, and these men, the sons of Zeruiah, are too ruthless for me. May the LORD requite the evildoer in accordance with his evil deed.\"",
+        "VAT_ES": "A pesar de mi unción real, hoy yo me siento desvalido, mientras que estos, los hijos de Seruiá, son más duros que yo. &iexcl;Que el Señor le dé su merecido al que ha hecho el mal!»."
+      }
+    }
+  }
+}

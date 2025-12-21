@@ -1,0 +1,321 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "II_COR_003",
+  "book_key": "II_COR",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Ἀρχόμεθα πάλιν ἑαυτοὺς συνιστάνειν; Εἰ μὴ χρῄζομεν, ὥς τινες, συστατικῶν ἐπιστολῶν πρὸς ὑμᾶς, ἢ ἐξ ὑμῶν συστατικῶν;",
+        "VUL": "Incipimus iterum nosmetipsos commendare ? aut numquid egemus (sicut quidam) commendatitiis epistolis ad vos, aut ex vobis ?",
+        "SYN": "Неужели нам снова знакомиться с вами? Неужели нужны для нас, как для некоторых, одобрительные письма к вам или от вас?",
+        "NEO": "Recommençons-nous à nous recommander nous-mêmes ? Ou bien avons-nous besoin, comme certains, de lettres de recommandation auprès de vous ou de votre part ?",
+        "NAB": "Are we beginning to commend ourselves again? Or do we need, as some do, letters of recommendation to you or from you?",
+        "VAT_ES": "&iquest;Comenzamos nuevamente a recomendarnos a nosotros mismos? &iquest;Acaso tenemos que presentarles o recibir de ustedes cartas de recomendación, como hacen algunos?",
+        "CEI": "Vi esorto dunque io, il prigioniero nel Signore, a comportarvi in maniera degna della vocazione che avete ricevuto,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Ἡ ἐπιστολὴ ἡμῶν ὑμεῖς ἐστέ, ἐγγεγραμμένη ἐν ταῖς καρδίαις ἡμῶν, γινωσκομένη καὶ ἀναγινωσκομένη ὑπὸ πάντων ἀνθρώπων·",
+        "VUL": "Epistola nostra vos estis, scripta in cordibus nostris, quæ scitur, et legitur ab omnibus hominibus :",
+        "SYN": "Вы -- наше письмо, написанное в сердцах наших, узнаваемое и читаемое всеми человеками;",
+        "NEO": "C’est vous-mêmes qui êtes notre lettre, écrite dans nos cœurs, connue et lue de tous les hommes.",
+        "NAB": "You are our letter, written on our hearts, known and read by all,",
+        "VAT_ES": "Ustedes mismos son nuestra carta, una carta escrita en nuestros corazones, conocida y leída por todos los hombres.",
+        "CEI": "con ogni umiltà, mansuetudine e pazienza, sopportandovi a vicenda con amore,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "φανερούμενοι ὅτι ἐστὲ ἐπιστολὴ χριστοῦ διακονηθεῖσα ὑφ’ ἡμῶν, ἐγγεγραμμένη οὐ μέλανι, ἀλλὰ πνεύματι θεοῦ ζῶντος, οὐκ ἐν πλαξὶν λιθίναις, ἀλλ’ ἐν πλαξὶν καρδίαις σαρκίναις.",
+        "VUL": "manifestati quod epistola estis Christi, ministrata a nobis, et scripta non atramento, sed Spiritu Dei vivi : non in tabulis lapideis, sed in tabulis cordis carnalibus.",
+        "SYN": "вы показываете собою, что вы -- письмо Христово, через служение наше написанное не чернилами, но Духом Бога живаго, не на скрижалях каменных, но на плотяных скрижалях сердца.",
+        "NEO": "Oui, manifestement, vous êtes une lettre du Christ, écrite par notre ministère, non avec de l’encre, mais par l’Esprit du Dieu vivant ; non sur des tables de pierre, mais sur des tables de chair, sur vos cœurs.",
+        "NAB": "shown to be a letter of Christ administered by us, written not in ink but by the Spirit of the living God, not on tablets of stone but on tablets that are hearts of flesh.",
+        "VAT_ES": "Evidentemente ustedes son una carta que Cristo escribió por intermedio nuestro, no con tinta, sino con el Espíritu del Dios viviente, no en tablas de piedra, sino de carne, es decir, en los corazones.",
+        "CEI": "cercando di conservare l'unità dello spirito per mezzo del vincolo della pace."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Πεποίθησιν δὲ τοιαύτην ἔχομεν διὰ τοῦ χριστοῦ πρὸς τὸν θεόν·",
+        "VUL": "Fiduciam autem talem habemus per Christum ad Deum :",
+        "SYN": "Такую уверенность мы имеем в Боге через Христа,",
+        "NEO": "Cette assurance, nous l’avons par le Christ en vue de Dieu.",
+        "NAB": "Such confidence we have through Christ toward God.",
+        "VAT_ES": "Es Cristo el que nos da esta seguridad delante de Dios,",
+        "CEI": "Un solo corpo, un solo spirito, come una sola è la speranza alla quale siete stati chiamati, quella della vostra vocazione;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "οὐχ ὅτι ἱκανοί ἐσμεν ἀφ’ ἑαυτῶν λογίσασθαί τι ὡς ἐξ ἑαυτῶν, ἀλλ’ ἡ ἱκανότης ἡμῶν ἐκ τοῦ θεοῦ·",
+        "VUL": "non quod sufficientes simus cogitare aliquid a nobis, quasi ex nobis : sed sufficientia nostra ex Deo est :",
+        "SYN": "не потому, чтобы мы сами способны были помыслить что от себя, как бы от себя, но способность наша от Бога.",
+        "NEO": "Ce n’est pas que nous soyons par nous-mêmes capables de concevoir quelque chose comme venant de nous-mêmes ; mais notre aptitude vient de Dieu.",
+        "NAB": "Not that of ourselves we are qualified to take credit for anything as coming from us; rather, our qualification comes from God,",
+        "VAT_ES": "no porque podamos atribuirnos algo que venga de nosotros mismos, ya que toda nuestra capacidad viene de Dios.",
+        "CEI": "un solo Signore, una sola fede, un solo battesimo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "ὃς καὶ ἱκάνωσεν ἡμᾶς διακόνους καινῆς διαθήκης, οὐ γράμματος, ἀλλὰ πνεύματος· τὸ γὰρ γράμμα ἀποκτένει, τὸ δὲ πνεῦμα ζῳοποιεῖ.",
+        "VUL": "qui et idoneos nos fecit ministros novi testamenti : non littera, sed Spiritu : littera enim occidit, Spiritus autem vivificat.",
+        "SYN": "Он дал нам способность быть служителями Нового Завета, не буквы, но духа, потому что буква убивает, а дух животворит.",
+        "NEO": "C’est lui également qui nous a rendus capables d’être ministres d’une nouvelle alliance, non de la lettre, mais de l’esprit ; car la lettre tue, mais l’esprit vivifie.",
+        "NAB": "who has indeed qualified us as ministers of a new covenant, not of letter but of spirit; for the letter brings death, but the Spirit gives life.",
+        "VAT_ES": "El nos ha capacitado para que seamos los ministros de una Nueva Alianza, que no reside en la letra, sino en el Espíritu; porque la letra mata, pero el Espíritu da vida.",
+        "CEI": "Un solo Dio Padre di tutti, che è al di sopra di tutti, agisce per mezzo di tutti ed è presente in tutti."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ ἡ διακονία τοῦ θανάτου ἐν γράμμασιν, ἐντετυπωμένη ἐν λίθοις, ἐγενήθη ἐν δόξῃ, ὥστε μὴ δύνασθαι ἀτενίσαι τοὺς υἱοὺς Ἰσραὴλ εἰς τὸ πρόσωπον Μωϋσέως διὰ τὴν δόξαν τοῦ προσώπου αὐτοῦ, τὴν καταργουμένην,",
+        "VUL": "Quod si ministratio mortis litteris deformata in lapidibus fuit in gloria, ita ut non possent intendere filii Israël in faciem Moysi propter gloriam vultus ejus, quæ evacuatur :",
+        "SYN": "Если же служение смертоносным буквам, начертанное на камнях, было так славно, что сыны Израилевы не могли смотреть на лице Моисеево по причине славы лица его преходящей, --",
+        "NEO": "Or, si le ministère de la mort, gravé en lettres sur des pierres, a été entouré de gloire au point que les fils d’Israël ne pouvaient fixer leurs regards sur la face de Moïse à cause de l’éclat de son visage, tout passager qu’il fût,",
+        "NAB": "Now if the ministry of death, carved in letters on stone, was so glorious that the Israelites could not look intently at the face of Moses because of its glory that was going to fade,",
+        "VAT_ES": "Ahora bien, si el ministerio que lleva a la muerte –grabado sobre piedras– fue inaugurado con tanta gloria que los israelitas no podían fijar sus ojos en el rostro de Moisés, por el resplandor –aunque pasajero– de ese rostro,",
+        "CEI": "A ciascuno di noi, tuttavia, è stata data la grazia secondo la misura del dono di Cristo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "πῶς οὐχὶ μᾶλλον ἡ διακονία τοῦ πνεύματος ἔσται ἐν δόξῃ;",
+        "VUL": "quomodo non magis ministratio Spiritus erit in gloria ?",
+        "SYN": "то не гораздо ли более должно быть славно служение духа?",
+        "NEO": "combien plus le ministère de l’esprit ne sera-t-il pas entouré de gloire ?+ 3:8 III, 7-8. Le ministère que Moïse remplit en apportant au peuple les tables de la loi, laquelle donnait \\+qt la mort, a été entouré de gloire\\+qt* : le visage de Moïse descendant du Sinaï était resplendissant de lumière (Ex. xxxiv, 29 sv.).*",
+        "NAB": "how much more will the ministry of the Spirit be glorious?",
+        "VAT_ES": "&iexcl;cuánto más glorioso será el ministerio del Espíritu!",
+        "CEI": "Per questo sta scritto: Ascendendo in cielo ha portato con sé prigionieri, ha distribuito doni agli uomini."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Εἰ γὰρ ἡ διακονία τῆς κατακρίσεως δόξα, πολλῷ μᾶλλον περισσεύει ἡ διακονία τῆς δικαιοσύνης ἐν δόξῃ.",
+        "VUL": "Nam si ministratio damnationis gloria est : multo magis abundat ministerium justitiæ in gloria.",
+        "SYN": "Ибо если служение осуждения славно, то тем паче изобилует славою служение оправдания.",
+        "NEO": "C’est qu’en effet, si le ministère de la condamnation a été glorieux, le ministère qui confère la justice le surpasse de beaucoup.",
+        "NAB": "For if the ministry of condemnation was glorious, the ministry of righteousness will abound much more in glory.",
+        "VAT_ES": "Y si el ministerio que llevaba a la condenación fue tan glorioso, &iexcl;cuál no será la gloria del ministerio que conduce a la justicia!",
+        "CEI": "Ma che significa la parola \"ascese\", se non che prima era disceso quaggiù sulla terra?"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Καὶ γὰρ οὐ δεδόξασται τὸ δεδοξασμένον ἐν τούτῳ τῷ μέρει, ἕνεκεν τῆς ὑπερβαλλούσης δόξης.",
+        "VUL": "Nam nec glorificatum est, quod claruit in hac parte, propter excellentem gloriam.",
+        "SYN": "То прославленное даже не оказывается славным с сей стороны, по причине преимущественной славы _последующего._",
+        "NEO": "Et même, sous ce rapport, ce qui a été glorifié autrefois ne l’a pas été, en comparaison de cette gloire infiniment supérieure.",
+        "NAB": "Indeed, what was endowed with glory has come to have no glory in this respect because of the glory that surpasses it.",
+        "VAT_ES": "En realidad, aquello que fue glorioso bajo cierto aspecto ya no lo es más en comparación con esta gloria extraordinaria.",
+        "CEI": "Colui che discese è lo stesso che anche ascese al di sopra di tutti i cieli, per riempire tutte le cose."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Εἰ γὰρ τὸ καταργούμενον, διὰ δόξης, πολλῷ μᾶλλον τὸ μένον, ἐν δόξῃ.",
+        "VUL": "Si enim quod evacuatur, per gloriam est : multo magis quod manet, in gloria est.",
+        "SYN": "Ибо, если преходящее славно, тем более славно пребывающее.",
+        "NEO": "Car, si ce qui était passager a été donné dans la gloire, à plus forte raison ce qui est permanent sera-t-il glorieux.",
+        "NAB": "For if what was going to fade was glorious, how much more will what endures be glorious.",
+        "VAT_ES": "Porque si lo que era transitorio se ha manifestado con tanta gloria, &iexcl;cuánto más glorioso será lo que es permanente!",
+        "CEI": "È lui che ha stabilito alcuni come apostoli, altri come profeti, altri come evangelisti, altri come pastori e maestri,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "¶Ἔχοντες οὖν τοιαύτην ἐλπίδα, πολλῇ παρρησίᾳ χρώμεθα·",
+        "VUL": "Habentes igitur talem spem, multa fiducia utimur :",
+        "SYN": "Имея такую надежду, мы действуем с великим дерзновением,",
+        "NEO": "Ayant donc une telle espérance, nous usons d’une grande liberté,",
+        "NAB": "Therefore, since we have such hope, we act very boldly",
+        "VAT_ES": "Animados con esta esperanza, nos comportamos con absoluta franqueza,",
+        "CEI": "per rendere idonei i fratelli a compiere il ministero, al fine di edificare il corpo di Cristo,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "καὶ οὐ καθάπερ Μωϋσῆς ἐτίθει κάλυμμα ἐπὶ τὸ πρόσωπον ἑαυτοῦ, πρὸς τὸ μὴ ἀτενίσαι τοὺς υἱοὺς Ἰσραὴλ εἰς τὸ τέλος τοῦ καταργουμένου·",
+        "VUL": "et non sicut Moyses ponebat velamen super faciem suam, ut non intenderent filii Israël in faciem ejus, quod evacuatur,",
+        "SYN": "а не так, как Моисей, _который_ полагал покрывало на лице свое, чтобы сыны Израилевы не взирали на конец преходящего.",
+        "NEO": "et nous ne faisons pas comme Moïse, qui mettait un voile sur son visage pour que les fils d’Israël ne vissent point la fin de ce qui était passager.+ 3:13 13. Comme Moïse qui, au sortir de ses communications avec Dieu, se couvrait la tête d’un voile (Ex. xxxiv, 34 sv.), \\+qt pour que les Israélites\\+qt* ne vissent pas l’éclat de son visage. Comme cet éclat passager symbolise le ministère mosaïque qui devait un jour faire place au ministère évangélique, Paul l’appelle \\+qt la fin de ce qui est passager\\+qt*.Vulgate : \\+qt Afin que les enfants d’Israël ne vissent pas sur sa face une clarté passagère\\+qt* ; mais \\+qt faciem\\+qt* paraît une faute de copiste pour \\+qt finem\\+qt*.*",
+        "NAB": "and not like Moses, who put a veil over his face so that the Israelites could not look intently at the cessation of what was fading.",
+        "VAT_ES": "y no como Moisés, que se cubría el rostro con un velo para impedir que los israelitas vieran el fin de un esplendor pasajero.",
+        "CEI": "finché arriviamo tutti all'unità della fede e della conoscenza del Figlio di Dio, allo stato di uomo perfetto, nella misura che conviene alla piena maturità di Cristo."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "ἀλλ’ ἐπωρώθη τὰ νοήματα αὐτῶν· ἄχρι γὰρ τῆς σήμερον τὸ αὐτὸ κάλυμμα ἐπὶ τῇ ἀναγνώσει τῆς παλαιᾶς διαθήκης μένει μὴ ἀνακαλυπτόμενον, ὅ τι ἐν χριστῷ καταργεῖται.",
+        "VUL": "sed obtusi sunt sensus eorum. Usque in hodiernum enim diem, idipsum velamen in lectione veteris testamenti manet non revelatum (quoniam in Christo evacuatur),",
+        "SYN": "Но умы их ослеплены: ибо то же самое покрывало доныне остается неснятым при чтении Ветхого Завета, потому что оно снимается Христом.",
+        "NEO": "Mais leurs esprits se sont aveuglés. Car jusqu’à ce jour quand ils font la lecture de l’Ancien Testament, le même voile demeure sans être ôté, parce que c’est dans le Christ qu’il est levé.+ 3:14 14. D’autres : le voile demeure parce qu’ils n’ont pas compris que l’Ancien Testament a pris fin dans le Christ.*",
+        "NAB": "Rather, their thoughts were rendered dull, for to this present day the same veil remains unlifted when they read the old covenant, because through Christ it is taken away.",
+        "VAT_ES": "Pero se les oscureció el entendimiento, y ese mismo velo permanece hasta el día de hoy en la lectura del Antiguo Testamento, porque es Cristo el que lo hace desaparecer.",
+        "CEI": "Questo affinché non siamo più come fanciulli sballottati dalle onde e portati qua e là da qualsiasi vento di dottrina, secondo l'inganno degli uomini, con quella loro astuzia che tende a trarre nell'errore."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ἀλλ’ ἕως σήμερον, ἡνίκα ἀναγινώσκεται Μωϋσῆς, κάλυμμα ἐπὶ τὴν καρδίαν αὐτῶν κεῖται.",
+        "VUL": "sed usque in hodiernum diem, cum legitur Moyses, velamen positum est super cor eorum.",
+        "SYN": "Доныне, когда они читают Моисея, покрывало лежит на сердце их;",
+        "NEO": "Aujourd’hui encore, quand on lit Moïse, un voile est étendu sur leurs cœurs ;",
+        "NAB": "To this day, in fact, whenever Moses is read, a veil lies over their hearts,",
+        "VAT_ES": "Sí, hasta el día de hoy aquel velo les cubre la inteligencia siempre que leen a Moisés.",
+        "CEI": "Al contrario, vivendo secondo la verità nella carità, cerchiamo di crescere in ogni cosa verso di lui, che è il capo, Cristo,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Ἡνίκα δ’ ἂν ἐπιστρέψῃ πρὸς κύριον, περιαιρεῖται τὸ κάλυμμα.",
+        "VUL": "Cum autem conversus fuerit ad Dominum, auferetur velamen.",
+        "SYN": "но когда обращаются к Господу, тогда это покрывало снимается.",
+        "NEO": "mais dès que leurs cœurs se seront tournés vers le Seigneur, le voile sera ôté.+ 3:16 16. À la pensée que tant de prédicateurs remplissent mal une si haute fonction, S. Paul s’écrie : Qui est capable, etc. Vulgate : \\+qt Qui est si capable\\+qt* que nous \\+qt de bien remplir\\+qt*, etc. On soupçonne qu’un copiste aura mis \\+qt quis tam\\+qt* pour \\+qt quisnam\\+qt*.*",
+        "NAB": "but whenever a person turns to the Lord the veil is removed.",
+        "VAT_ES": "Pero al que se convierte al Señor, se le cae el velo.",
+        "CEI": "dal quale tutto il corpo, ben compaginato e connesso, mediante la collaborazione di ogni giuntura, secondo l'energia propria di ogni membro, riceve forza per crescere in modo da edificare se stesso nella carità."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ κύριος τὸ πνεῦμά ἐστιν· οὗ δὲ τὸ πνεῦμα κυρίου, ἐκεῖ ἐλευθερία.",
+        "VUL": "Dominus autem Spiritus est : ubi autem Spiritus Domini, ibi libertas.",
+        "SYN": "Господь есть Дух; а где Дух Господень, там свобода.",
+        "NEO": "Or le Seigneur, c’est l’esprit, et là où est l’esprit du Seigneur, là est la liberté.+ 3:17 17. Le Seigneur est l’esprit même, c’est-à dire l’esprit dont il est parlé vers. 6 et 8, l’esprit opposé à la lettre. Voir J. Prat, La théologie de S. Paul, t. II, page 221.*",
+        "NAB": "Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom.",
+        "VAT_ES": "Porque el Señor es el Espíritu, y donde está el Espíritu del Señor, allí está la libertad.",
+        "CEI": "Vi dico dunque e vi scongiuro nel Signore: non comportatevi più come i pagani nella vanità della loro mente,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Ἡμεῖς δὲ πάντες, ἀνακεκαλυμμένῳ προσώπῳ τὴν δόξαν κυρίου κατοπτριζόμενοι, τὴν αὐτὴν εἰκόνα μεταμορφούμεθα ἀπὸ δόξης εἰς δόξαν, καθάπερ ἀπὸ κυρίου πνεύματος.",
+        "VUL": "Nos vero omnes, revelata facie gloriam Domini speculantes, in eamdem imaginem transformamur a claritate in claritatem, tamquam a Domini Spiritu.",
+        "SYN": "Мы же все открытым лицем, как в зеркале, взирая на славу Господню, преображаемся в тот же образ от славы в славу, как от Господня Духа.",
+        "NEO": "Pour nous tous, le visage découvert, réfléchissant comme dans un miroir la gloire du Seigneur, nous sommes transformés en la même image, de plus en plus resplendissante, comme par le Seigneur, qui est* esprit.",
+        "NAB": "All of us, gazing with unveiled face on the glory of the Lord, are being transformed into the same image from glory to glory, as from the Lord who is the Spirit.",
+        "VAT_ES": "Nosotros, en cambio, con el rostro descubierto, reflejamos, como en un espejo, la gloria del Señor, y somos transfigurados a su propia imagen con un esplendor cada vez más glorioso, por la acción del Señor, que es Espíritu.",
+        "CEI": "accecati nei loro pensieri, estranei alla vita di Dio a causa dell'ignoranza che è in loro, e per la durezza del loro cuore."
+      }
+    }
+  }
+}

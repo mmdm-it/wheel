@@ -1,0 +1,571 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_008",
+  "book_key": "EXO",
+  "sequence": 8,
+  "chapter_in": {
+    "MT": 8,
+    "VUL": 8,
+    "LXX": 8
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוָה֮ אֶל מֹשֶׁה֒ אֱמֹ֣ר אֶֽל אַהֲרֹ֗ן נְטֵ֤ה אֶת יָדְ/ךָ֙ בְּ/מַטֶּ֔/ךָ עַל הַ֨/נְּהָרֹ֔ת עַל הַ/יְאֹרִ֖ים וְ/עַל הָ/אֲגַמִּ֑ים וְ/הַ֥עַל אֶת הַֽ/צְפַרְדְּעִ֖ים עַל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "Εἶπεν δὲ Κύριος πρὸς Μωυσῆν Εἴσελθε πρὸς Φαραὼ καὶ ἐρεῖς πρὸς αὐτόν Τάδε λέγει Κύριος Ἐξαπόστειλον τὸν λαόν μου ἵνα μοι λατρεύσωσιν·",
+        "VUL": "Dixit quoque Dominus ad Moysen : Ingredere ad Pharaonem, et dices ad eum : Hæc dicit Dominus : Dimitte populum meum, ut sacrificet mihi :",
+        "SYN": "И сказал Господь Моисею: пойди к фараону и скажи ему: так говорит Господь: отпусти народ Мой, чтобы он совершил Мне служение;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Dis à Aaron : étends ta main avec ton bâton sur les rivières, sur les canaux et sur les étangs, et fais monter les grenouilles sur le pays d’Égypte. »",
+        "NAB": "The LORD then told Moses, \"Say to Aaron: Stretch out your hand and your staff over the streams and canals and pools, to make frogs overrun the land of Egypt.\"",
+        "VAT_ES": "Luego el Señor dijo a Moisés: «Da esta orden a Aarón: «Extiende tu mano y tu bastón sobre los ríos, los canales y los pantanos, para que las ranas invadan el territorio de Egipto».",
+        "CEI": "Il Signore disse a Mosè: \"Comanda ad Aronne: Stendi la mano con il tuo bastone sui fiumi, sui canali e sugli stagni e fà uscire le rane sul paese d'Egitto!\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֤ט אַהֲרֹן֙ אֶת יָד֔/וֹ עַ֖ל מֵימֵ֣י מִצְרָ֑יִם וַ/תַּ֨עַל֙ הַ/צְּפַרְדֵּ֔עַ וַ/תְּכַ֖ס אֶת אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "εἰ δὲ μὴ βούλει σὺ ἐξαποστεῖλαι, ἰδοὺ ἐγὼ τύπτω πάντα τὰ ὅριά σου τοῖς βατράχοις.",
+        "VUL": "sin autem nolueris dimittere, ecce ego percutiam omnes terminos tuos ranis,",
+        "SYN": "если же ты не согласишься отпустить, то вот, Я поражаю всю область твою жабами;",
+        "NEO": "Aaron étendit sa main sur les eaux de l’Égypte, et les grenouilles montèrent et couvrirent le pays d’Égypte.",
+        "NAB": "Aaron stretched out his hand over the waters of Egypt, and the frogs came up and covered the land of Egypt.",
+        "VAT_ES": "Aarón extendió su mano sobre las aguas de Egipto, y las ranas subieron hasta cubrir el país.",
+        "CEI": "Aronne stese la mano sulle acque d'Egitto e le rane uscirono e coprirono il paese d'Egitto."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יַּֽעֲשׂוּ כֵ֥ן הַֽ/חֲרְטֻמִּ֖ים בְּ/לָטֵי/הֶ֑ם וַ/יַּעֲל֥וּ אֶת הַֽ/צְפַרְדְּעִ֖ים עַל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "καὶ ἐξερεύξεται ὁ ποταμὸς βατράχους· καὶ ἀναβάντες εἰσελεύσονται εἰς τοὺς οἴκους σου καὶ εἰς τὰ ταμεῖα τῶν κοιτώνων σου καὶ ἐπὶ τῶν κλινῶν σου, καὶ ἐπὶ τοὺς οἴκους τῶν θεραπόντων σου καὶ τοῦ λαοῦ σου, καὶ ἐν τοῖς φυράμασίν σου καὶ ἐν τοῖς κλιβάνοις σου·",
+        "VUL": "et ebulliet fluvius ranas : quæ ascendent, et ingredientur domum tuam, et cubiculum lectuli tui, et super stratum tuum, et in domos servorum tuorum, et in populum tuum, et in furnos tuos, et in reliquias ciborum tuorum :",
+        "SYN": "и воскишит река жабами, и они выйдут и войдут в дом твой, и в спальню твою, и на постель твою, и в домы рабов твоих и народа твоего, и в печи твои, и в квашни твои,",
+        "NEO": "Mais les magiciens firent la même chose par leurs enchantements ; ils firent monter les grenouilles sur le pays d’Égypte.",
+        "NAB": "But the magicians did the same by their magic arts. They, too, made frogs overrun the land of Egypt.",
+        "VAT_ES": "Pero los magos de Egipto, valiéndose de sus artes secretas, hicieron otro tanto y atrajeron una invasión de ranas sobre el territorio de Egipto.",
+        "CEI": "Ma i maghi, con le loro magie, operarono la stessa cosa e fecero uscire le rane sul paese d'Egitto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֨א פַרְעֹ֜ה לְ/מֹשֶׁ֣ה וּֽ/לְ/אַהֲרֹ֗ן וַ/יֹּ֨אמֶר֙ הַעְתִּ֣ירוּ אֶל יְהוָ֔ה וְ/יָסֵר֙ הַֽ/צְפַרְדְּעִ֔ים מִמֶּ֖/נִּי וּ/מֵֽ/עַמִּ֑/י וַ/אֲשַׁלְּחָה֙ אֶת הָ/עָ֔ם וְ/יִזְבְּח֖וּ לַ/יהוָֽה׃",
+        "LXX": "καὶ ἐπὶ σὲ καὶ ἐπὶ τοὺς θεράποντάς σου καὶ ἐπὶ τὸν λαόν σου ἀναβήσονται οἱ βάτραχοι.",
+        "VUL": "et ad te, et ad populum tuum, et ad omnes servos tuos intrabunt ranæ.",
+        "SYN": "и на тебя, и на народ твой, и на всех рабов твоих взойдут жабы.",
+        "NEO": "Pharaon appela Moïse et Aaron, et leur dit : « Priez \\+w Yahweh|strong=\"H3068\"\\+w** afin qu’il éloigne les grenouilles de moi et de mon peuple, et je laisserai aller le peuple, pour qu’il offre des sacrifices à \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "Then Pharaoh summoned Moses and Aaron and said, \"Pray the LORD to remove the frogs from me and my subjects, and I will let the people go to offer sacrifice to the LORD.\"",
+        "VAT_ES": "El Faraón mandó llamar a Moisés y a Aarón y les dijo: «Rueguen al Señor que aleje las ranas de mi y de mis súbditos, y yo me comprometo a dejar que el pueblo vaya a ofrecer sacrificios al Señor».",
+        "CEI": "Il faraone fece chiamare Mosè e Aronne e disse: \"Pregate il Signore, perché allontani le rane da me e dal mio popolo; io lascerò andare il popolo, perché possa sacrificare al Signore!\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר מֹשֶׁ֣ה לְ/פַרְעֹה֮ הִתְפָּאֵ֣ר עָלַ/י֒ לְ/מָתַ֣י אַעְתִּ֣יר לְ/ךָ֗ וְ/לַ/עֲבָדֶ֨י/ךָ֙ וּֽ/לְ/עַמְּ/ךָ֔ לְ/הַכְרִית֙ הַֽ/צֲפַרְדְּעִ֔ים מִמְּ/ךָ֖ וּ/מִ/בָּתֶּ֑י/ךָ רַ֥ק בַּ/יְאֹ֖ר תִּשָּׁאַֽרְנָה׃",
+        "LXX": "εἶπεν δὲ Κύριος πρὸς Μωυσῆν Εἰπὸν Ἀαρὼν τῷ ἀδελφῷ σου Ἔκτεινον τῇ χειρὶ τὴν ῥάβδον σου ἐπὶ τοὺς ποταμοὺς καὶ ἐπὶ τὰς διώρυγας καὶ ἐπὶ τὰ ἕλη, καὶ ἀνάγαγε τοὺς βατράχους.",
+        "VUL": "Dixitque Dominus ad Moysen : Dic ad Aaron : Extende manum tuam super fluvios ac super rivos et paludes, et educ ranas super terram Ægypti.",
+        "SYN": "И сказал Господь Моисею: скажи Аарону [брату твоему]: простри руку твою с жезлом твоим на реки, на потоки и на озера и выведи жаб на землю Египетскую.",
+        "NEO": "Moïse dit à Pharaon : « Donne-moi tes ordres ! Pour quand dois-je faire des prières en ta faveur, en faveur de tes serviteurs et de ton peuple, afin que \\+w Yahweh|strong=\"H3068\"\\+w** éloigne les grenouilles de toi et de tes maisons, de manière à ce qu’il n’en reste plus que dans le fleuve ? »",
+        "NAB": "Moses answered Pharaoh, \"Do me the favor of appointing the time when I am to pray for you and your servants and your subjects, that the frogs may be taken away from you and your houses and be left only in the river.\"",
+        "VAT_ES": "Moisés respondió al Faraón: «Dígnate indicarme el momento en que debo rogar por ti, por tus servidores y por tu pueblo para que las ranas se aparten de ti y de tus casas, y queden solamente en el Nilo».",
+        "CEI": "Mosè disse al faraone: \"Fammi l'onore di comandarmi per quando io devo pregare in favore tuo e dei tuoi ministri e del tuo popolo, per liberare dalle rane te e le tue case, in modo che ne rimangano soltanto nel Nilo\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֖אמֶר לְ/מָחָ֑ר וַ/יֹּ֨אמֶר֙ כִּ/דְבָ֣רְ/ךָ֔ לְמַ֣עַן תֵּדַ֔ע כִּי אֵ֖ין כַּ/יהוָ֥ה אֱלֹהֵֽי/נוּ׃",
+        "LXX": "καὶ ἐξέτεινεν Ἀαρὼν τὴν χεῖρα ἐπὶ τὰ ὕδατα Αἰγύπτου, καὶ ἀνήγαγεν τοὺς βατράχους· καὶ ἀνεβιβάσθη ὁ βάτραχος, καὶ ἐκάλυψεν τὴν γῆν Αἰγύπτου.",
+        "VUL": "Et extendit Aaron manum super aquas Ægypti, et ascenderunt ranæ, operueruntque terram Ægypti.",
+        "SYN": "Аарон простер руку свою на воды Египетские [и вывел жаб]; и вышли жабы и покрыли землю Египетскую.",
+        "NEO": "Il répondit : « Pour demain ». Et Moïse dit : « Il en sera ainsi, afin que tu saches que nul n’est pareil à \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu.",
+        "NAB": "\"Tomorrow,\" said Pharaoh. Then Moses replied, \"It shall be as you have said, so that you may learn that there is none like the LORD, our God.",
+        "VAT_ES": "«Mañana», dijo el Faraón. Entonces Moisés añadió: «Que suceda conforme a tus palabras. Así sabrás que no hay nadie como el Señor, nuestro Dios.",
+        "CEI": "Rispose: \"Per domani\". Riprese: \"Secondo la tua parola! Perché tu sappia che non esiste nessuno pari al Signore, nostro Dio,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/סָר֣וּ הַֽ/צְפַרְדְּעִ֗ים מִמְּ/ךָ֙ וּ/מִ/בָּ֣תֶּ֔י/ךָ וּ/מֵ/עֲבָדֶ֖י/ךָ וּ/מֵ/עַמֶּ֑/ךָ רַ֥ק בַּ/יְאֹ֖ר תִּשָּׁאַֽרְנָה׃",
+        "LXX": "ἐποίησαν δὲ ὡσαύτως καὶ οἱ ἐπαοιδοὶ τῶν Αἰγυπτίων ταῖς φαρμακίαις αὐτῶν, καὶ ἀνήγαγον τοὺς βατράχους ἐπὶ γῆν Αἰγύπτου.",
+        "VUL": "Fecerunt autem et malefici per incantationes suas similiter, eduxeruntque ranas super terram Ægypti.",
+        "SYN": "То же сделали и волхвы [Египетские] чарами своими и вывели жаб на землю Египетскую.",
+        "NEO": "Les grenouilles se retireront de toi et de tes maisons, de tes serviteurs et de ton peuple ; il n’en restera que dans le fleuve. »",
+        "NAB": "The frogs shall leave you and your houses, your servants and your subjects; only in the river shall they be left.\"",
+        "VAT_ES": "Las ranas se apartarán de ti, de tus casas, de tus servidores y de tu pueblo, y quedarán únicamente en el Nilo».",
+        "CEI": "le rane si ritireranno da te e dalle tue case, dai tuoi servitori e dal tuo popolo: ne rimarranno soltanto nel Nilo\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֥א מֹשֶׁ֛ה וְ/אַהֲרֹ֖ן מֵ/עִ֣ם פַּרְעֹ֑ה וַ/יִּצְעַ֤ק מֹשֶׁה֙ אֶל יְהוָ֔ה עַל דְּבַ֥ר הַֽ/צְפַרְדְּעִ֖ים אֲשֶׁר שָׂ֥ם לְ/פַרְעֹֽה׃",
+        "LXX": "καὶ ἐκάλεσεν Φαραὼ Μωυσῆν καὶ Ἀαρὼν καὶ εἶπεν Εὔξασθε περὶ ἐμοῦ πρὸς Κύριον, καὶ περιελέτω τοὺς βατράχους ἀπ’ ἐμοῦ καὶ ἀπὸ τοῦ ἐμοῦ λαοῦ, καὶ ἐξαποστελῶ αὐτοὺς καὶ θύσωσιν τῷ κυρίῳ.",
+        "VUL": "Vocavit autem Pharao Moysen et Aaron, et dixit eis : Orate Dominum ut auferat ranas a me et a populo meo, et dimittam populum ut sacrificet Domino.",
+        "SYN": "И призвал фараон Моисея и Аарона и сказал: помолитесь [обо мне] Господу, чтоб Он удалил жаб от меня и от народа моего, и я отпущу народ _Израильский_ принести жертву Господу.",
+        "NEO": "Moïse et Aaron sortirent de chez Pharaon, et Moïse cria vers \\+w Yahweh|strong=\"H3068\"\\+w** au sujet des grenouilles dont il avait affligé Pharaon.",
+        "NAB": "After Moses and Aaron left Pharaoh's presence, Moses implored the LORD to fulfill the promise he had made to Pharaoh about the frogs;",
+        "VAT_ES": "Cuando Moisés y Aarón se separaron del Faraón, Moisés rogó al Señor para que alejara las ranas con que había castigado al Faraón,",
+        "CEI": "Mosè e Aronne si allontanarono dal faraone e Mosè supplicò il Signore riguardo alle rane, che aveva mandate contro il faraone."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ יְהוָ֖ה כִּ/דְבַ֣ר מֹשֶׁ֑ה וַ/יָּמֻ֨תוּ֙ הַֽ/צְפַרְדְּעִ֔ים מִן הַ/בָּתִּ֥ים מִן הַ/חֲצֵרֹ֖ת וּ/מִן הַ/שָּׂדֹֽת׃",
+        "LXX": "εἶπεν δὲ Μωυσῆς πρὸς Φαραώ Τάξαι πρὸς μὲ πότε εὔξωμαι περὶ σοῦ καὶ περὶ τῶν θεραπόντων σου καὶ περὶ τοῦ λαοῦ σου, ἀφανίσαι τοὺς βατράχους ἀπὸ σοῦ καὶ ἀπὸ τοῦ λαοῦ σου καὶ ἐκ τῶν οἰκιῶν ὑμῶν· πλὴν ἐν τῷ ποταμῷ ὑπολειφθήσονται.",
+        "VUL": "Dixitque Moyses ad Pharaonem : Constitue mihi quando deprecer pro te, et pro servis tuis, et pro populo tuo, ut abigantur ranæ a te, et a domo tua, et a servis tuis, et a populo tuo : et tantum in flumine remaneant.",
+        "SYN": "Моисей сказал фараону: назначь мне сам, когда помолиться за тебя, за рабов твоих и за народ твой, чтобы жабы исчезли у тебя, [у народа твоего,] в домах твоих, и остались только в реке.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** fit selon la parole de Moïse, et les grenouilles moururent dans les maisons, dans les cours et dans les champs.",
+        "NAB": "and the LORD did as Moses had asked. The frogs in the houses and courtyards and fields died off.",
+        "VAT_ES": "y el Señor accedió el pedido de Moisés. Las ranas quedaron muertas en las casas, en los patios y en los campos.",
+        "CEI": "Il Signore operò secondo la parola di Mosè e le rane morirono nelle case, nei cortili e nei campi."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּצְבְּר֥וּ אֹתָ֖/ם חֳמָרִ֣ם חֳמָרִ֑ם וַ/תִּבְאַ֖שׁ הָ/אָֽרֶץ׃",
+        "LXX": "ὁ δὲ εἶπεν Εἰς αὔριον. εἶπεν οὖν Ὡς εἴρηκας· ἵνα ἴδῃς ὅτι οὐκ ἔστιν ἄλλος πλὴν Κυρίου·",
+        "VUL": "Qui respondit : Cras. At ille : Juxta, inquit, verbum tuum faciam : ut scias quoniam non est sicut Dominus Deus noster.",
+        "SYN": "Он сказал: завтра. _Моисей_ отвечал: _будет_ по слову твоему, дабы ты узнал, что нет никого, как Господь Бог наш;",
+        "NEO": "On les entassa en monceaux, et le pays en fut infecté.",
+        "NAB": "Heaps and heaps of them were gathered up, and there was a stench in the land.",
+        "VAT_ES": "Las juntaron en grandes montones, y se extendió por todas partes un olor pestilente.",
+        "CEI": "Le raccolsero in tanti mucchi e il paese ne fu ammorbato."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣רְא פַּרְעֹ֗ה כִּ֤י הָֽיְתָה֙ הָֽ/רְוָחָ֔ה וְ/הַכְבֵּד֙ אֶת לִבּ֔/וֹ וְ/לֹ֥א שָׁמַ֖ע אֲלֵ/הֶ֑ם כַּ/אֲשֶׁ֖ר דִּבֶּ֥ר יְהוָֽה׃",
+        "LXX": "καὶ περιαιρεθήσονται οἱ βάτραχοι ἀπὸ σοῦ καὶ ἐκ τῶν οἰκιῶν ὑμῶν καὶ ἐκ τῶν ἐπαύλεων καὶ ἀπὸ τῶν θεραπόντων σου καὶ ἀπὸ τοῦ λαοῦ σου· πλὴν ἐν τῷ ποταμῷ ὑπολειφθήσονται.",
+        "VUL": "Et recedent ranæ a te, et a domo tua, et a servis tuis, et a populo tuo : et tantum in flumine remanebunt.",
+        "SYN": "и удалятся жабы от тебя, от домов твоих [и с полей], и от рабов твоих и от твоего народа; только в реке они останутся.",
+        "NEO": "Mais Pharaon, voyant qu’on respirait, endurcit son cœur, et il n’écouta pas Moïse et Aaron, selon que \\+w Yahweh|strong=\"H3068\"\\+w** l’avait dit.",
+        "NAB": "But when Pharaoh saw that there was a respite, he became obdurate and would not listen to them, just as the LORD had foretold.",
+        "VAT_ES": "Pero el Faraón, al ver que la situación mejoraba, se obstinó y no escuchó a Moisés y a Aarón, como el Señor lo había predicho.",
+        "CEI": "Ma il faraone vide ch'era intervenuto il sollievo, si ostinò e non diede loro ascolto, secondo quanto aveva predetto il Signore. 3a piaga: le zanzare"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר יְהוָה֮ אֶל מֹשֶׁה֒ אֱמֹר֙ אֶֽל אַהֲרֹ֔ן נְטֵ֣ה אֶֽת מַטְּ/ךָ֔ וְ/הַ֖ךְ אֶת עֲפַ֣ר הָ/אָ֑רֶץ וְ/הָיָ֥ה לְ/כִנִּ֖ם בְּ/כָל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "ἐξῆλθεν δὲ Μωυσῆς καὶ Ἀαρὼν ἀπὸ Φαραώ· καὶ ἐβόησεν Μωυσῆς πρὸς Κύριον περὶ τοῦ ὁρισμοῦ τῶν βατράχων, ὡς ἐτάξατο Φαραώ.",
+        "VUL": "Egressique sunt Moyses et Aaron a Pharaone : et clamavit Moyses ad Dominum pro sponsione ranarum quam condixerat Pharaoni.",
+        "SYN": "Моисей и Аарон вышли от фараона, и Моисей воззвал к Господу о жабах, которых Он навел на фараона.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Dis à Aaron : Etends ton bâton et frappe la poussière de la terre, et elle se changera en moustiques dans tout le pays d’Égypte. »",
+        "NAB": "Thereupon the LORD said to Moses, \"Tell Aaron to stretch out his staff and strike the dust of the earth, that it may be turned into gnats throughout the land of Egypt.\"",
+        "VAT_ES": "El Señor dijo a Moisés: «Da esta orden a Aarón: «Extiende tu bastón y golpea el polvo del suelo, para que se transforme en mosquitos a lo largo de todo Egipto».",
+        "CEI": "Quindi il Signore disse a Mosè: \"Comanda ad Aronne: Stendi il tuo bastone, percuoti la polvere della terra: essa si muterà in zanzare in tutto il paese d'Egitto\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יַּֽעֲשׂוּ כֵ֗ן וַ/יֵּט֩ אַהֲרֹ֨ן אֶת יָד֤/וֹ בְ/מַטֵּ֨/הוּ֙ וַ/יַּךְ֙ אֶת עֲפַ֣ר הָ/אָ֔רֶץ וַ/תְּהִי֙ הַ/כִּנָּ֔ם בָּ/אָדָ֖ם וּ/בַ/בְּהֵמָ֑ה כָּל עֲפַ֥ר הָ/אָ֛רֶץ הָיָ֥ה כִנִּ֖ים בְּ/כָל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "ἐποίησεν δὲ Κύριος καθάπερ εἶπεν Μωυσῆς, καὶ ἐτελεύτησαν οἱ βάτραχοι ἐκ τῶν οἰκιῶν καὶ ἐκ τῶν ἐπαύλεων καὶ ἐκ τῶν ἀγρῶν·",
+        "VUL": "Fecitque Dominus juxta verbum Moysi : et mortuæ sunt ranæ de domibus, et de villis, et de agris.",
+        "SYN": "И сделал Господь по слову Моисея: жабы вымерли в домах, на дворах и на полях [их];",
+        "NEO": "Ils firent ainsi ; Aaron étendit sa main avec son bâton et frappa la poussière de la terre, et les moustiques furent sur les hommes et sur les animaux. Toute la poussière de la terre fut changée en moustiques, dans tout le pays d’Égypte.",
+        "NAB": "They did so. Aaron stretched out his hand, and with his staff he struck the dust of the earth, and gnats came upon man and beast. The dust of the earth was turned into gnats throughout the land of Egypt.",
+        "VAT_ES": "Aarón extendió la mano empuñando su bastón, golpeó el polvo del suelo, y en seguida, nubes de mosquitos se lanzaron contra la gente y los animales. Todo el polvo del suelo se transformó en mosquitos, a lo largo de todo el país.",
+        "CEI": "Così fecero: Aronne stese la mano con il suo bastone, colpì la polvere della terra e infierirono le zanzare sugli uomini e sulle bestie; tutta la polvere del paese si era mutata in zanzare in tutto l'Egitto."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲשׂוּ כֵ֨ן הַ/חַרְטֻמִּ֧ים בְּ/לָטֵי/הֶ֛ם לְ/הוֹצִ֥יא אֶת הַ/כִּנִּ֖ים וְ/לֹ֣א יָכֹ֑לוּ וַ/תְּהִי֙ הַ/כִּנָּ֔ם בָּ/אָדָ֖ם וּ/בַ/בְּהֵמָֽה׃",
+        "LXX": "καὶ συνήγαγον αὐτοὺς θιμωνιὰς θιμωνιάς, καὶ ὤζεσεν ἡ γῆ.",
+        "VUL": "Congregaveruntque eas in immensos aggeres, et computruit terra.",
+        "SYN": "и собрали их в груды, и воссмердела земля.",
+        "NEO": "Les magiciens firent de même avec leurs enchantements, afin de produire des moustiques ; mais ils ne le purent pas. Les moustiques étaient sur les hommes et sur les animaux.",
+        "NAB": "Though the magicians tried to bring forth gnats by their magic arts, they could not do so. As the gnats infested man and beast,",
+        "VAT_ES": "Los magos intentaron producir mosquitos, valiéndose de sus artes secretas, pero no lo consiguieron. Los mosquitos atacaron a los hombres y animales.",
+        "CEI": "I maghi fecero la stessa cosa con le loro magie, per produrre zanzare, ma non riuscirono e le zanzare infierivano sugli uomini e sulle bestie."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֤וּ הַֽ/חַרְטֻמִּים֙ אֶל פַּרְעֹ֔ה אֶצְבַּ֥ע אֱלֹהִ֖ים הִ֑וא וַ/יֶּחֱזַ֤ק לֵב פַּרְעֹה֙ וְ/לֹֽא שָׁמַ֣ע אֲלֵ/הֶ֔ם כַּ/אֲשֶׁ֖ר דִּבֶּ֥ר יְהוָֽה׃",
+        "LXX": "ἰδὼν δὲ Φαραὼ ὅτι γέγονεν ἀνάψυξις, ἐβαρύνθη ἡ καρδία αὐτοῦ καὶ οὐκ εἰσήκουσεν αὐτῶν, καθάπερ ἐλάλησεν Κύριος.",
+        "VUL": "Videns autem Pharao quod data esset requies, ingravavit cor suum, et non audivit eos, sicut præceperat Dominus.",
+        "SYN": "И увидел фараон, что сделалось облегчение, и ожесточил сердце свое, и не послушал их, как и говорил Господь.",
+        "NEO": "Et les magiciens dirent à Pharaon : « C’est le doigt d’un dieu ! » Et le cœur de Pharaon s’endurcit, et il ne les écouta pas, selon que \\+w Yahweh|strong=\"H3068\"\\+w** l’avait dit.",
+        "NAB": "the magicians said to Pharaoh, \"This is the finger of God.\" Yet Pharaoh remained obstinate and would not listen to them, just as the LORD had foretold.",
+        "VAT_ES": "Entonces dijeron al Faraón: «Aquí está el dedo de Dios» A pesar de esto, el Faraón persistió en su obstinación y no los escuchó, como el Señor había predicho.",
+        "CEI": "Allora i maghi dissero al faraone: \"È il dito di Dio!\". Ma il cuore del faraone si ostinò e non diede ascolto, secondo quanto aveva predetto il Signore. 4a piaga: i mosconi"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יְהוָ֜ה אֶל מֹשֶׁ֗ה הַשְׁכֵּ֤ם בַּ/בֹּ֨קֶר֙ וְ/הִתְיַצֵּב֙ לִ/פְנֵ֣י פַרְעֹ֔ה הִנֵּ֖ה יוֹצֵ֣א הַ/מָּ֑יְמָ/ה וְ/אָמַרְתָּ֣ אֵלָ֗י/ו כֹּ֚ה אָמַ֣ר יְהוָ֔ה שַׁלַּ֥ח עַמִּ֖/י וְ/יַֽעַבְדֻֽ/נִי׃",
+        "LXX": "Εἶπεν δὲ Κύριος πρὸς Μωυσῆν Εἰπὸν Ἀαρών Ἔκτεινον τῇ χειρὶ τὴν ῥάβδον σου καὶ πάταξον τὸ χῶμα τῆς γῆς, καὶ ἔσονται σκνῖφες ἔν τε τοῖς ἀνθρώποις καὶ ἐν τοῖς τετράποσιν καὶ ἐν πάσῃ γῇ Αἰγύπτου.",
+        "VUL": "Dixitque Dominus ad Moysen : Loquere ad Aaron : Extende virgam tuam, et percute pulverem terræ : et sint sciniphes in universa terra Ægypti.",
+        "SYN": "И сказал Господь Моисею: скажи Аарону: простри [рукою] жезл твой и ударь в персть земную, и [будут мошки на людях и на скоте и на фараоне, и в доме его и на рабах его, вся персть земная] сделается мошками по всей земле Египетской.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** dit à Moïse : « Lève-toi de bon matin et présente-toi devant Pharaon, au moment où il sort pour aller au bord de l’eau. Tu lui diras : Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w** : Laisse aller mon peuple afin qu’il me serve.",
+        "NAB": "Again the LORD told Moses, \"Early tomorrow morning present yourself to Pharaoh when he goes forth to the water, and say to him: Thus says the LORD: Let my people go to worship me.",
+        "VAT_ES": "El Señor dijo a Moisés: «Mañana temprano, cuando el Faraón salga para ir al río, preséntate ante él y dile: «Así habla el Señor: Deja que mi pueblo vaya a rendirme culto.",
+        "CEI": "Poi il Signore disse a Mosè: \"Alzati di buon mattino e presentati al faraone quando andrà alle acque; gli riferirai: Dice il Signore: Lascia partire il mio popolo, perché mi possa servire!"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "כִּ֣י אִם אֵינְ/ךָ֮ מְשַׁלֵּ֣חַ אֶת עַמִּ/י֒ הִנְ/נִי֩ מַשְׁלִ֨יחַ בְּ/ךָ֜ וּ/בַ/עֲבָדֶ֧י/ךָ וּֽ/בְ/עַמְּ/ךָ֛ וּ/בְ/בָתֶּ֖י/ךָ אֶת הֶ/עָרֹ֑ב וּ/מָ֨לְא֜וּ בָּתֵּ֤י מִצְרַ֨יִם֙ אֶת הֶ֣/עָרֹ֔ב וְ/גַ֥ם הָ/אֲדָמָ֖ה אֲשֶׁר הֵ֥ם עָלֶֽי/הָ׃",
+        "LXX": "ἐξέτεινεν οὖν Ἀαρὼν τῇ χειρὶ τὴν ῥάβδον καὶ ἐπάταξεν τὸ χῶμα τῆς γῆς, καὶ ἐγένοντο οἱ σκνῖφες ἐν τοῖς ἀνθρώποις καὶ ἐν τοῖς τετράποσιν· καὶ ἐν παντὶ χώματι τῆς γῆς ἐγένοντο οἱ σκνῖφες.",
+        "VUL": "Feceruntque ita. Et extendit Aaron manum, virgam tenens : percussitque pulverem terræ, et facti sunt sciniphes in hominibus, et in jumentis : omnis pulvis terræ versus est in sciniphes per totam terram Ægypti.",
+        "SYN": "Так они и сделали: Аарон простер руку свою с жезлом своим и ударил в персть земную, и явились мошки на людях и на скоте. Вся персть земная сделалась мошками по всей земле Египетской.",
+        "NEO": "Si tu ne laisses pas aller mon peuple, je vais envoyer des scarabées contre toi, contre tes serviteurs, contre ton peuple et contre tes maisons ; les maisons des Égyptiens seront remplies de scarabées, ainsi que la terre qu’ils habitent.+ 8:17 \\+it Taons\\+it*, de toute manière des mouches à aiguillons venimeux.*",
+        "NAB": "If you will not let my people go, I warn you, I will loose swarms of flies upon you and your servants and your subjects and your houses. The houses of the Egyptians and the very ground on which they stand shall be filled with swarms of flies.",
+        "VAT_ES": "Porque si te niegas a dejarlo partir, yo enviaré contra ti, contra tus servidores, tu pueblo y tus casas, una invasión de tábanos. Las casas de los egipcios y el suelo donde ellos habitan quedarán atestados de tábanos.",
+        "CEI": "Se tu non lasci partire il mio popolo, ecco manderò su di te, sui tuoi ministri, sul tuo popolo e sulle tue case i mosconi: le case degli Egiziani saranno piene di mosconi e anche il suolo sul quale essi si trovano."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/הִפְלֵיתִי֩ בַ/יּ֨וֹם הַ/ה֜וּא אֶת אֶ֣רֶץ גֹּ֗שֶׁן אֲשֶׁ֤ר עַמִּ/י֙ עֹמֵ֣ד עָלֶ֔י/הָ לְ/בִלְתִּ֥י הֱיֽוֹת שָׁ֖ם עָרֹ֑ב לְמַ֣עַן תֵּדַ֔ע כִּ֛י אֲנִ֥י יְהוָ֖ה בְּ/קֶ֥רֶב הָ/אָֽרֶץ׃",
+        "LXX": "ἐποίησαν δὲ ὡσαύτως καὶ οἱ ἐπαοιδοὶ ταῖς φαρμακίαις αὐτῶν ἐξαγαγεῖν τὸν σκνῖφα, καὶ οὐκ ἠδύναντο· καὶ ἐγένοντο οἱ σκνῖφες ἐν τοῖς ἀνθρώποις καὶ ἐν τοῖς τετράποσιν.",
+        "VUL": "Feceruntque similiter malefici incantationibus suis, ut educerent sciniphes, et non potuerunt : erantque sciniphes tam in hominibus quam in jumentis.",
+        "SYN": "Старались также и волхвы чарами своими произвести мошек, но не могли. И были мошки на людях и на скоте.",
+        "NEO": "Mais je distinguerai, ce jour-là, le pays de Gessen, où mon peuple habite, et là il n’y aura pas de scarabées, afin que tu saches que moi, \\+w Yahweh|strong=\"H3068\"\\+w**, je suis au milieu de cette terre.",
+        "NAB": "But on that day I will make an exception of the land of Goshen: there shall be no flies where my people dwell, that you may know that I am the LORD in the midst of the earth.",
+        "VAT_ES": "Pero al mismo tiempo, haré una excepción con la región de Gosen, donde reside mi pueblo. Allí no habrá tábanos, para que sepas que yo, el Señor, estoy en medio de este país.",
+        "CEI": "Ma in quel giorno io eccettuerò il paese di Gosen, dove dimora il mio popolo, in modo che là non vi siano mosconi, perché tu sappia che io, il Signore, sono in mezzo al paese!"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/שַׂמְתִּ֣י פְדֻ֔ת בֵּ֥ין עַמִּ֖/י וּ/בֵ֣ין עַמֶּ֑/ךָ לְ/מָחָ֥ר יִהְיֶ֖ה הָ/אֹ֥ת הַ/זֶּֽה׃",
+        "LXX": "εἶπαν οὖν οἱ ἐπαοιδοὶ τῷ ⸆ Φαραώ Δάκτυλος θεοῦ ἐστὶν τοῦτο· καὶ ἐσκληρύνθη ἡ καρδία Φαραώ, καὶ οὐκ εἰσήκουσεν αὐτῶν, καθάπερ ἐλάλησεν Κύριος.",
+        "VUL": "Et dixerunt malefici ad Pharaonem : Digitus Dei est hic ; induratumque est cor Pharaonis, et non audivit eos sicut præceperat Dominus.",
+        "SYN": "И сказали волхвы фараону: это перст Божий. Но сердце фараоново ожесточилось, и он не послушал их, как и говорил Господь.",
+        "NEO": "J’établirai ainsi une différence entre mon peuple et ton peuple ; c’est demain que ce signe aura lieu. »",
+        "NAB": "I will make this distinction between my people and your people. This sign shall take place tomorrow.\"",
+        "VAT_ES": "Yo haré una distinción entre mi pueblo y el tuyo. Este signo sucederá mañana».",
+        "CEI": "Così farò distinzione tra il mio popolo e il tuo popolo. Domani avverrà questo segno\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤עַשׂ יְהוָה֙ כֵּ֔ן וַ/יָּבֹא֙ עָרֹ֣ב כָּבֵ֔ד בֵּ֥יתָ/ה פַרְעֹ֖ה וּ/בֵ֣ית עֲבָדָ֑י/ו וּ/בְ/כָל אֶ֧רֶץ מִצְרַ֛יִם תִּשָּׁחֵ֥ת הָ/אָ֖רֶץ מִ/פְּנֵ֥י הֶ/עָרֹֽב׃",
+        "LXX": "Εἶπεν δὲ Κύριος πρὸς Μωυσῆν Ὄρθρισον τὸ πρωὶ καὶ στῆθι ἐναντίον Φαραώ· καὶ ἰδοὺ αὐτὸς ἐξελεύσεται ἐπὶ τὸ ὕδωρ, καὶ ἐρεῖς πρὸς αὐτόν Τάδε λέγει Κύριος Ἐξαπόστειλον τὸν λαόν μου ἵνα μοι λατρεύσωσιν ἐν τῇ ἐρήμῳ·",
+        "VUL": "Dixit quoque Dominus ad Moysen : Consurge diluculo, et sta coram Pharaone : egredietur enim ad aquas : et dices ad eum : Hæc dicit Dominus : Dimitte populum meum ut sacrificet mihi.",
+        "SYN": "И сказал Господь Моисею: завтра встань рано и явись пред лице фараона. Вот, он пойдет к воде, и ты скажи ему: так говорит Господь: отпусти народ Мой, чтобы он совершил Мне служение [в пустыне];",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** fit ainsi ; il vint une multitude de scarabées dans la maison de Pharaon et de ses serviteurs, et tout le pays d’Égypte fut ravagé par les scarabées.",
+        "NAB": "This the LORD did. Thick swarms of flies entered the house of Pharaoh and the houses of his servants; throughout Egypt the land was infested with flies.",
+        "VAT_ES": "Así lo hizo el Señor, y una gran cantidad de tábanos se precipitó sobre el palacio del Faraón y sobre las casas de sus servidores; y todo el territorio de Egipto fue devastado por los tábanos.",
+        "CEI": "Così fece il Signore: una massa imponente di mosconi entrò nella casa del faraone, nella casa dei suoi ministri e in tutto il paese d'Egitto; la regione era devastata a causa dei mosconi."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֣א פַרְעֹ֔ה אֶל מֹשֶׁ֖ה וּֽ/לְ/אַהֲרֹ֑ן וַ/יֹּ֗אמֶר לְכ֛וּ זִבְח֥וּ לֵֽ/אלֹהֵי/כֶ֖ם בָּ/אָֽרֶץ׃",
+        "LXX": "ἐὰν δὲ μὴ βούλῃ ἐξαποστεῖλαι τὸν λαόν μου, ἰδοὺ ἐγὼ ἐπαποστέλλω ἐπὶ σὲ καὶ ἐπὶ τοὺς θεράποντάς σου καὶ ἐπὶ τὸν λαόν σου καὶ ἐπὶ τοὺς οἴκους ὑμῶν κυνόμυιαν, καὶ πλησθήσονται αἱ οἰκίαι τῶν Αἰγυπτίων τῆς κυνομυίης, καὶ εἰς τὴν γῆν ἐφ’ ἧς εἰσὶν ἐπ’ αὐτῆς.",
+        "VUL": "Quod si non dimiseris eum, ecce ego immittam in te, et in servos tuos, et in populum tuum, et in domos tuas, omne genus muscarum : et implebuntur domus Ægyptiorum muscis diversi generis, et universa terra in qua fuerint.",
+        "SYN": "а если не отпустишь народа Моего, то вот, Я пошлю на тебя и на рабов твоих, и на народ твой, и в домы твои песьих мух, и наполнятся домы Египтян песьими мухами и самая земля, на которой они _живут;_",
+        "NEO": "Pharaon appela Moïse et Aaron, et leur dit : « Allez, offrez des sacrifices à votre Dieu dans ce pays. »",
+        "NAB": "Then Pharaoh summoned Moses and Aaron and said to them, \"Go and offer sacrifice to your God in this land.\"",
+        "VAT_ES": "Entonces el Faraón mandó llamar a Moisés y a Aarón, y les dijo: «Pueden ir a ofrecer sacrificios a su Dios, pero que sea dentro del país».",
+        "CEI": "Il faraone fece chiamare Mosè e Aronne e disse: \"Andate a sacrificare al vostro Dio nel paese!\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר מֹשֶׁ֗ה לֹ֤א נָכוֹן֙ לַ/עֲשׂ֣וֹת כֵּ֔ן כִּ֚י תּוֹעֲבַ֣ת מִצְרַ֔יִם נִזְבַּ֖ח לַ/יהוָ֣ה אֱלֹהֵ֑י/נוּ הֵ֣ן נִזְבַּ֞ח אֶת תּוֹעֲבַ֥ת מִצְרַ֛יִם לְ/עֵינֵי/הֶ֖ם וְ/לֹ֥א יִסְקְלֻֽ/נוּ׃",
+        "LXX": "καὶ παραδοξάσω ἐν τῇ ἡμέρᾳ ἐκείνῃ τὴν γῆν Γέσεμ, ἐφ’ ἧς ὁ λαός μου ἔπεστιν ἐπ’ αὐτῆς, ἐφ’ ἧς οὐκ ἔσται ἐκεῖ ἡ κυνόμυια· ἵνα εἰδῇς ὅτι ἐγώ εἰμι Κύριος ὁ κύριος πάσης τῆς γῆς.",
+        "VUL": "Faciamque mirabilem in die illa terram Gessen, in qua populus meus est, ut non sint ibi muscæ : et scias quoniam ego Dominus in medio terræ.",
+        "SYN": "и отделю в тот день землю Гесем, на которой пребывает народ Мой, и там не будет песьих мух, дабы ты знал, что Я Господь [Бог] среди [всей] земли;",
+        "NEO": "Moïse répondit : « Il ne convient pas de faire ainsi, car c’est une abomination pour les Égyptiens que les sacrifices que nous offrons à \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu ; et si nous offrons, sous les yeux des Égyptiens, des sacrifices qui sont pour eux des abominations, ne nous lapideront-ils pas ?",
+        "NAB": "But Moses replied, \"It is not right to do so, for the sacrifices we offer to the LORD, our God, are an abomination to the Egyptians. If before their very eyes we offer sacrifices which are an abomination to them, will not the Egyptians stone us?",
+        "VAT_ES": "Moisés respondió: «Eso no puede ser. Porque los sacrificios que nosotros ofreceremos al Señor, nuestro Dios, son una abominación para los egipcios. Y si nos ven ofrecer sacrificios que ellos consideran abominables, nos matarán a pedradas.",
+        "CEI": "Ma rispose Mosè: \"Non è opportuno far così perché quello che noi sacrifichiamo al Signore, nostro Dio, è abominio per gli Egiziani. Se noi facciamo un sacrificio abominevole agli Egiziani sotto i loro occhi, forse non ci lapideranno?"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "דֶּ֚רֶךְ שְׁלֹ֣שֶׁת יָמִ֔ים נֵלֵ֖ךְ בַּ/מִּדְבָּ֑ר וְ/זָבַ֨חְנוּ֙ לַֽ/יהוָ֣ה אֱלֹהֵ֔י/נוּ כַּ/אֲשֶׁ֖ר יֹאמַ֥ר אֵלֵֽי/נוּ׃",
+        "LXX": "καὶ δώσω διαστολὴν ἀνὰ μέσον τοῦ ἐμοῦ λαοῦ καὶ ἀνὰ μέσον τοῦ σοῦ λαοῦ· ἐν δὲ τῇ αὔριον ἔσται τοῦτο ἐπὶ τῆς γῆς.",
+        "VUL": "Ponamque divisionem inter populum meum et populum tuum : cras erit signum istud.",
+        "SYN": "Я сделаю разделение между народом Моим и между народом твоим. Завтра будет сие знамение [на земле].",
+        "NEO": "Nous irons à trois journées de marche dans le désert pour offrir des sacrifices à \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, selon qu’il nous le dira. »",
+        "NAB": "We must go a three days' journey in the desert to offer sacrifice to the LORD, our God, as he commands us.\"",
+        "VAT_ES": "Haremos una marcha de tres días por el desierto, y allí ofreceremos sacrificios al Señor, nuestro Dios, conforme a lo que él nos diga».",
+        "CEI": "Andremo nel deserto, a tre giorni di cammino, e sacrificheremo al Signore, nostro Dio, secondo quanto egli ci ordinerà!\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר פַּרְעֹ֗ה אָנֹכִ֞י אֲשַׁלַּ֤ח אֶתְ/כֶם֙ וּ/זְבַחְתֶּ֞ם לַ/יהוָ֤ה אֱלֹֽהֵי/כֶם֙ בַּ/מִּדְבָּ֔ר רַ֛ק הַרְחֵ֥ק לֹא תַרְחִ֖יקוּ לָ/לֶ֑כֶת הַעְתִּ֖ירוּ בַּעֲדִֽ/י׃",
+        "LXX": "ἐποίησεν δὲ Κύριος οὕτως, καὶ παρεγένετο ἡ κυνόμυια πλῆθος εἰς τοὺς οἴκους Φαραὼ καὶ εἰς τοὺς οἴκους τῶν θεραπόντων αὐτοῦ καὶ εἰς πᾶσαν τὴν γῆν Αἰγύπτου· καὶ ἐξωλεθρεύθη ἡ γῆ ἀπὸ τῆς κυνομυίης.",
+        "VUL": "Fecitque Dominus ita. Et venit musca gravissima in domos Pharaonis et servorum ejus, et in omnem terram Ægypti : corruptaque est terra ab hujuscemodi muscis.",
+        "SYN": "Так и сделал Господь: налетело множество песьих мух в дом фараонов, и в домы рабов его, и на всю землю Египетскую: погибала земля от песьих мух.",
+        "NEO": "Pharaon dit : « Pour moi, je vous laisserai aller, pour offrir des sacrifices à \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, dans le désert ; seulement ne vous éloignez pas trop dans votre marche. Faites des prières pour moi. »",
+        "NAB": "\"Well, then,\" said Pharaoh, \"I will let you go to offer sacrifice to the LORD, your God, in the desert, provided that you do not go too far away and that you pray for me.\"",
+        "VAT_ES": "El Faraón dijo: «Les permitiré que vayan a ofrecer sacrificios al Señor, su Dios, en el desierto, con tal de que no se alejen demasiado. De paso, rueguen por mí.»",
+        "CEI": "Allora il faraone replicò: \"Vi lascerò partire e potrete sacrificare al Signore nel deserto. Ma non andate troppo lontano e pregate per me\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר מֹשֶׁ֗ה הִנֵּ֨ה אָנֹכִ֜י יוֹצֵ֤א מֵֽ/עִמָּ/ךְ֙ וְ/הַעְתַּרְתִּ֣י אֶל יְהוָ֔ה וְ/סָ֣ר הֶ/עָרֹ֗ב מִ/פַּרְעֹ֛ה מֵ/עֲבָדָ֥י/ו וּ/מֵ/עַמּ֖/וֹ מָחָ֑ר רַ֗ק אַל יֹסֵ֤ף פַּרְעֹה֙ הָתֵ֔ל לְ/בִלְתִּי֙ שַׁלַּ֣ח אֶת הָ/עָ֔ם לִ/זְבֹּ֖חַ לַֽ/יהוָֽה׃",
+        "LXX": "ἐκάλεσεν δὲ Φαραὼ Μωυσῆν καὶ Ἀαρὼν λέγων Ἐλθόντες θύσατε τῷ θεῷ ὑμῶν ἐν τῇ γῇ·",
+        "VUL": "Vocavitque Pharao Moysen et Aaron, et ait eis : Ite et sacrificate Deo vestro in terra hac.",
+        "SYN": "И призвал фараон Моисея и Аарона и сказал: пойдите, принесите жертву [Господу] Богу вашему в сей земле.",
+        "NEO": "Moïse répondit : Voici, je vais sortir de chez toi, et je prierai \\+w Yahweh|strong=\"H3068\"\\+w**, et demain les scarabées se retireront de Pharaon, de ses serviteurs et de son peuple. Mais que Pharaon ne trompe plus, en ne permettant pas au peuple d’aller offrir des sacrifices à \\+w Yahweh|strong=\"H3068\"\\+w** ! »",
+        "NAB": "Moses answered, \"As soon as I leave your presence I will pray to the LORD that the flies may depart tomorrow from Pharaoh and his servants and his subjects. Pharaoh, however, must not play false again by refusing to let the people go to offer sacrifice to the LORD.\"",
+        "VAT_ES": "«En cuanto salga, respondió Moisés, rogaré al Señor, y mañana los tábanos se apartarán de ti, de tus servidores y de tu pueblo; pero deja de una vez por todas de burlarte de nosotros, y no impidas que el pueblo vaya a ofrecer sacrificios al Señor.",
+        "CEI": "Rispose Mosè: \"Ecco, uscirò dalla tua presenza e pregherò il Signore; domani i mosconi si ritireranno dal faraone, dai suoi ministri e dal suo popolo. Però il faraone cessi di burlarsi di noi, non lasciando partire il popolo, perché possa sacrificare al Signore!\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֥א מֹשֶׁ֖ה מֵ/עִ֣ם פַּרְעֹ֑ה וַ/יֶּעְתַּ֖ר אֶל יְהוָֽה׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς Οὐ δυνατὸν γενέσθαι οὕτως τὸ ῥῆμα τοῦτο, τὰ γὰρ βδελύγματα τῶν Αἰγυπτίων θύσομεν Κυρίῳ τῷ θεῷ ἡμῶν· ἐὰν γὰρ θύσωμεν τὰ βδελύγματα τῶν Αἰγυπτίων ἐναντίον αὐτῶν, λιθοβοληθησόμεθα.",
+        "VUL": "Et ait Moyses : Non potest ita fieri : abominationes enim Ægyptiorum immolabimus Domino Deo nostro : quod si mactaverimus ea quæ colunt Ægyptii coram eis, lapidibus nos obruent.",
+        "SYN": "Но Моисей сказал: нельзя сего сделать, ибо отвратительно для Египтян жертвоприношение наше Господу, Богу нашему: если мы отвратительную для Египтян жертву станем приносить в глазах их, то не побьют ли они нас камнями?",
+        "NEO": "Moïse sortit de chez Pharaon et pria \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "When Moses left Pharaoh's presence, he prayed to the LORD;",
+        "VAT_ES": "Luego Moisés se alejó de la presencia del Faraón, y oró al Señor.",
+        "CEI": "Mosè si allontanò dal faraone e pregò il Signore."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤עַשׂ יְהוָה֙ כִּ/דְבַ֣ר מֹשֶׁ֔ה וַ/יָּ֨סַר֙ הֶ/עָרֹ֔ב מִ/פַּרְעֹ֖ה מֵ/עֲבָדָ֣י/ו וּ/מֵ/עַמּ֑/וֹ לֹ֥א נִשְׁאַ֖ר אֶחָֽד׃",
+        "LXX": "ὁδὸν τριῶν ἡμερῶν πορευσόμεθα εἰς τὴν ἔρημον, καὶ θύσομεν τῷ θεῷ ἡμῶν καθάπερ εἶπεν Κύριος ἡμῖν.",
+        "VUL": "Viam trium dierum pergemus in solitudinem : et sacrificabimus Domino Deo nostro, sicut præcepit nobis.",
+        "SYN": "мы пойдем в пустыню, на три дня пути, и принесем жертву Господу, Богу нашему, как скажет нам [Господь].",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** fit selon la parole de Moïse, et les scarabées s’éloignèrent de Pharaon, de ses serviteurs et de son peuple ; il n’en resta pas un seul.",
+        "NAB": "and the LORD did as Moses had asked. He removed the flies from Pharaoh and his servants and subjects. Not one remained.",
+        "VAT_ES": "El Señor hizo lo que Moisés le había pedido, y los tábanos se apartaron del Faraón, de sus servidores y de su pueblo. No quedó ni siquiera uno.",
+        "CEI": "Il Signore agì secondo la parola di Mosè e allontanò i mosconi dal faraone, dai suoi ministri e dal suo popolo: non ne restò neppure uno."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יַּכְבֵּ֤ד פַּרְעֹה֙ אֶת לִבּ֔/וֹ גַּ֖ם בַּ/פַּ֣עַם הַ/זֹּ֑את וְ/לֹ֥א שִׁלַּ֖ח אֶת הָ/עָֽם׃",
+        "LXX": "καὶ εἶπεν Φαραώ Ἐγὼ ἀποστέλλω ὑμᾶς, καὶ θύσατε τῷ θεῷ ὑμῶν ἐν τῇ ἐρήμῳ, ἀλλ’ οὐ μακρὰν ἀποτενεῖτε πορευθῆναι· εὔξασθε οὖν περὶ ἐμοῦ πρὸς Κύριον.",
+        "VUL": "Dixitque Pharao : Ego dimittam vos ut sacrificetis Domino Deo vestro in deserto : verumtamen longius ne abeatis, rogate pro me.",
+        "SYN": "И сказал фараон: я отпущу вас принести жертву Господу Богу вашему в пустыне, только не уходите далеко; помолитесь обо мне [Господу].",
+        "NEO": "Mais Pharaon endurcit son cœur cette fois encore, et il ne laissa pas aller le peuple.",
+        "NAB": "But once more Pharaoh became obdurate and would not let the people go.",
+        "VAT_ES": "Pero a pesar de eso, el Faraón se obstinó una vez más, y no dejó partir al pueblo.",
+        "CEI": "Ma il faraone si ostinò anche questa volta e non lasciò partire il popolo."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "εἶπεν δὲ Μωυσῆς Ὅδε ἐγὼ ἐξελεύσομαι ἀπὸ σοῦ καὶ εὔξομαι πρὸς τὸν θεόν, καὶ ἀπελεύσεται ἀπὸ σοῦ ἡ κυνόμυια καὶ ἀπὸ τῶν θεραπόντων σου καὶ τοῦ λαοῦ σου αὔριον· μὴ προσθῇς ἔτι, Φαραώ, ἐξαπατῆσαι τοῦ μὴ ἐξαποστεῖλαι τὸν λαὸν θῦσαι Κυρίῳ.",
+        "VUL": "At ait Moyses : Egressus a te, orabo Dominum : et recedet musca a Pharaone, et a servis suis, et a populo ejus cras : verumtamen noli ultra fallere, ut non dimittas populum sacrificare Domino.",
+        "SYN": "Моисей сказал: вот, я выхожу от тебя и помолюсь Господу [Богу], и удалятся песьи мухи от фараона, и от рабов его, и от народа его завтра, только фараон пусть перестанет обманывать, не отпуская народа принести жертву Господу."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "ἐξῆλθεν δὲ Μωυσῆς ἀπὸ Φαραὼ καὶ ηὔξατο πρὸς τὸν θεόν.",
+        "VUL": "Egressusque Moyses a Pharaone, oravit Dominum.",
+        "SYN": "И вышел Моисей от фараона и помолился Господу."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "ἐποίησεν δὲ Κύριος καθάπερ εἶπεν Μωυσῆς, καὶ περιεῖλεν τὴν κυνόμυιαν ἀπὸ Φαραὼ καὶ τῶν θεραπόντων αὐτοῦ καὶ τοῦ λαοῦ αὐτοῦ, καὶ οὐ κατελείφθη οὐδεμία.",
+        "VUL": "Qui fecit juxta verbum illius, et abstulit muscas a Pharaone, et a servis suis, et a populo ejus : non superfuit ne una quidem.",
+        "SYN": "И сделал Господь по слову Моисея и удалил песьих мух от фараона, от рабов его и от народа его: не осталось ни одной."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "LXX": "καὶ ἐβάρυνεν Φαραὼ τὴν καρδίαν αὐτοῦ καὶ ἐπὶ τοῦ καιροῦ τούτου, καὶ οὐκ ἠθέλησεν ἐξαποστεῖλαι τὸν λαόν.",
+        "VUL": "Et ingravatum est cor Pharaonis, ita ut nec hac quidem vice dimitteret populum.",
+        "SYN": "Но фараон ожесточил сердце свое и на этот раз и не отпустил народа."
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_093",
+  "book_key": "PSAL",
+  "sequence": 93,
+  "chapter_in": {
+    "MT": 93,
+    "VUL": 92,
+    "LXX": 92
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "יְהוָ֣ה מָלָךְ֮ גֵּא֪וּת לָ֫בֵ֥שׁ לָבֵ֣שׁ יְ֭הוָה עֹ֣ז הִתְאַזָּ֑ר אַף תִּכּ֥וֹן תֵּ֝בֵ֗ל בַּל תִּמּֽוֹט׃",
+        "LXX": "Ψαλμὸς τῷ Δαυείδ, τετράδι σαββάτων. Ὁ θεὸς ἐκδικήσεων Κύριος, ὁ θεὸς ἐκδικήσεων ἐπαρρησιάσατο.",
+        "VUL": "Psalmus ipsi David, quarta sabbati. [Deus ultionum Dominus ;/ Deus ultionum libere egit./",
+        "SYN": "Боже отмщений, Господи, Боже отмщений, яви Себя!",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est roi, il est revêtu de majesté, \\+w Yahweh|strong=\"H3068\"\\+w** est revêtu, il est ceint de force : aussi le monde est ferme, il ne chancelle pas.",
+        "NAB": "The LORD is king, robed with majesty; the LORD is robed, girded with might. The world will surely stand in place, never to be moved.",
+        "VAT_ES": "&iexcl;Reina el Señor, revestido de majestad!",
+        "CEI": "Il Signore regna, si ammanta di splendore; il Signore si riveste, si cinge di forza; rende saldo il mondo, non sarà mai scosso."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "נָכ֣וֹן כִּסְאֲ/ךָ֣ מֵ/אָ֑ז מֵֽ/עוֹלָ֣ם אָֽתָּה׃",
+        "LXX": "ὑψώθητι ὁ κρίνων τὴν γῆν, ἀπόδος ἀνταπόδοσιν τοῖς ὑπερηφάνοις.",
+        "VUL": "Exaltare, qui judicas terram ;/ redde retributionem superbis./",
+        "SYN": "Восстань, Судия земли, воздай возмездие гордым.",
+        "NEO": "Ton trône est établi dès l’origine, tu es dès l’éternité.",
+        "NAB": "Your throne stands firm from of old; you are from everlasting, LORD.",
+        "VAT_ES": "Tu trono está firme desde siempre,",
+        "CEI": "Saldo è il tuo trono fin dal principio, da sempre tu sei."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "נָשְׂא֤וּ נְהָר֨וֹת יְֽהוָ֗ה נָשְׂא֣וּ נְהָר֣וֹת קוֹלָ֑/ם יִשְׂא֖וּ נְהָר֣וֹת דָּכְיָֽ/ם׃",
+        "LXX": "ἕως πότε ἁμαρτωλοί, Κύριε, ἕως πότε ἁμαρτωλοὶ καυχήσονται;",
+        "VUL": "Usquequo peccatores, Domine,/ usquequo peccatores gloriabuntur ;/",
+        "SYN": "Доколе, Господи, нечестивые, доколе нечестивые торжествовать будут?",
+        "NEO": "Les fleuves élèvent, ô \\+w Yahweh|strong=\"H3068\"\\+w**, les fleuves élèvent leurs voix, les fleuves élèvent leurs flots retentissants.",
+        "NAB": "The flood has raised up, LORD; the flood has raised up its roar; the flood has raised its pounding waves.",
+        "VAT_ES": "Los ríos hacen resonar sus voces,",
+        "CEI": "Alzano i fiumi, Signore, alzano i fiumi la loro voce, alzano i fiumi il loro fragore."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "מִ/קֹּל֨וֹת מַ֤יִם רַבִּ֗ים אַדִּירִ֣ים מִשְׁבְּרֵי יָ֑ם אַדִּ֖יר בַּ/מָּר֣וֹם יְהוָֽה׃",
+        "LXX": "φθέγξονται καὶ λαλήσουσιν ἀδικίαν, λαλήσουσιν πάντες οἱ ἐργαζόμενοι τὴν ἀνομίαν;",
+        "VUL": "effabuntur et loquentur iniquitatem ;/ loquentur omnes qui operantur injustitiam ?/",
+        "SYN": "Они изрыгают дерзкие речи; величаются все делающие беззаконие;",
+        "NEO": "Plus que la voix des grandes eaux, des vagues puissantes de la mer, \\+w Yahweh|strong=\"H3068\"\\+w** est magnifique dans les hauteurs !",
+        "NAB": "More powerful than the roar of many waters, more powerful than the breakers of the sea, powerful in the heavens is the LORD.",
+        "VAT_ES": "Pero más fuerte que las aguas impetuosas,",
+        "CEI": "Ma più potente delle voci di grandi acque, più potente dei flutti del mare, potente nell'alto è il Signore."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "עֵֽדֹתֶ֨י/ךָ נֶאֶמְנ֬וּ מְאֹ֗ד לְ/בֵיתְ/ךָ֥ נַאֲוָה קֹ֑דֶשׁ יְ֝הוָ֗ה לְ/אֹ֣רֶךְ יָמִֽים׃",
+        "LXX": "τὸν λαόν σου, Κύριε, ἐταπείνωσαν, καὶ τὴν κληρονομίαν σου ἐκάκωσαν·",
+        "VUL": "Populum tuum, Domine, humiliaverunt,/ et hæreditatem tuam vexaverunt./",
+        "SYN": "попирают народ Твой, Господи, угнетают наследие Твое;",
+        "NEO": "Tes témoignages sont immuables ; la sainteté convient à ta maison, \\+w Yahweh|strong=\"H3068\"\\+w**, pour toute la durée des jours.",
+        "NAB": "Your decrees are firmly established; holiness belongs to your house, LORD, for all the length of days.",
+        "VAT_ES": "Tus testimonios, Señor, son dignos de fe,",
+        "CEI": "Degni di fede sono i tuoi insegnamenti, la santità si addice alla tua casa per la durata dei giorni, Signore."
+      }
+    }
+  }
+}

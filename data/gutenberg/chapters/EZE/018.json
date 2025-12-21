@@ -1,0 +1,591 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EZE_018",
+  "book_key": "EZE",
+  "sequence": 18,
+  "chapter_in": {
+    "MT": 18,
+    "VUL": 18,
+    "LXX": 18
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥/י לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μὲ λέγων",
+        "VUL": "Et factus est sermo Domini ad me, dicens :",
+        "SYN": "И было ко мне слово Господне:",
+        "NEO": "La parole de \\+w Yahweh|strong=\"H3068\"\\+w** me fut adressée en ces termes :",
+        "NAB": "Thus the word of the LORD came to me: Son of man,",
+        "VAT_ES": "La palabra del Señor me llegó en estos términos:",
+        "CEI": "Mi fu rivolta questa parola del Signore:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "מַה לָּ/כֶ֗ם אַתֶּם֙ מֹֽשְׁלִים֙ אֶת הַ/מָּשָׁ֣ל הַ/זֶּ֔ה עַל אַדְמַ֥ת יִשְׂרָאֵ֖ל לֵ/אמֹ֑ר אָבוֹת֙ יֹ֣אכְלוּ בֹ֔סֶר וְ/שִׁנֵּ֥י הַ/בָּנִ֖ים תִּקְהֶֽינָה׃",
+        "LXX": "Υἱὲ ἀνθρώπου, τί ὑμῖν ἡ παραβολὴ αὕτη ἐν τοῖς υἱοῖς Ἰσραήλ, λέγοντες Οἱ πατέρες ἔφαγον ὄμφακα, καὶ οἱ ὀδόντες τῶν τέκνων ἐγομφίασαν;",
+        "VUL": "Quid est quod inter vos parabolam vertitis in proverbium istud in terra Israël, dicentes : Patres comederunt uvam acerbam, et dentes filiorum obstupescunt ?",
+        "SYN": "зачем вы употребляете в земле Израилевой эту пословицу, говоря: \"отцы ели кислый виноград, а у детей на зубах оскомина\"?",
+        "NEO": "« Pourquoi donc proférez-vous ce proverbe, au sujet du pays d’Israël : « Les pères mangent du verjus, et les dents des fils en sont agacées ? »",
+        "NAB": "what is the meaning of this proverb that you recite in the land of Israel: \"Fathers have eaten green grapes, thus their children's teeth are on edge\"?",
+        "VAT_ES": "&iquest;Por qué andan repitiendo este refrán en la tierra de Israel: «Los padres comieron uva verde, y los hijos sufren la dentera»?",
+        "CEI": "\"Perché andate ripetendo questo proverbio sul paese d'Israele: I padri han mangiato l'uva acerba e i denti dei figli si sono allegati?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "חַי אָ֕נִי נְאֻ֖ם אֲדֹנָ֣/י יְהוִ֑ה אִם יִֽהְיֶ֨ה לָ/כֶ֜ם ע֗וֹד מְשֹׁ֛ל הַ/מָּשָׁ֥ל הַ/זֶּ֖ה בְּ/יִשְׂרָאֵֽל׃",
+        "LXX": "ζῶ ἐγώ, λέγει Κύριος, ἐὰν γένηται ἔτι λεγομένη ἡ παραβολὴ αὕτη ἐν τῷ Ἰσραήλ.",
+        "VUL": "Vivo ego, dicit Dominus Deus, si erit ultra vobis parabola hæc in proverbium in Israël.",
+        "SYN": "Живу Я! говорит Господь Бог, - не будут вперед говорить пословицу эту в Израиле.",
+        "NEO": "Je suis vivant, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** : Vous n’aurez plus lieu de proférer ce proverbe en Israël.",
+        "NAB": "As I live, says the Lord GOD: I swear that there shall no longer be anyone among you who will repeat this proverb in Israel.",
+        "VAT_ES": "Juro por mi vida –oráculo del Señor– que ustedes nunca más dirán este refrán en Israel.",
+        "CEI": "Com'è vero ch'io vivo, dice il Signore Dio, voi non ripeterete più questo proverbio in Israele."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הֵ֤ן כָּל הַ/נְּפָשׁוֹת֙ לִ֣/י הֵ֔נָּה כְּ/נֶ֧פֶשׁ הָ/אָ֛ב וּ/כְ/נֶ֥פֶשׁ הַ/בֵּ֖ן לִ/י הֵ֑נָּה הַ/נֶּ֥פֶשׁ הַ/חֹטֵ֖את הִ֥יא תָמֽוּת׃",
+        "LXX": "ὅτι πᾶσαι αἱ ψυχαὶ ἐμαί εἰσιν, ὃν τρόπον ἡ ψυχὴ τοῦ πατρὸς οὕτως καὶ ἡ ψυχὴ τοῦ υἱοῦ, ἐμαί εἰσιν· ἡ ψυχὴ ἡ ἁμαρτάνουσα, αὕτη ἀποθανεῖται.",
+        "VUL": "Ecce omnes animæ meæ sunt : ut anima patris, ita et anima filii mea est : anima quæ peccaverit, ipsa morietur.",
+        "SYN": "Ибо вот, все души - Мои: как душа отца, так и душа сына - Мои: душа согрешающая, та умрет.",
+        "NEO": "Voici que toutes les âmes sont à moi : l’âme du fils comme l’âme du père est à moi ; l’âme qui pèche sera celle qui mourra.",
+        "NAB": "For all lives are mine; the life of the father is like the life of the son, both are mine; only the one who sins shall die.",
+        "VAT_ES": "Porque todas las vidas me pertenecen, tanto la del padre como la del hijo: la persona que peca, esa morirá.",
+        "CEI": "Ecco, tutte le vite sono mie: la vita del padre e quella del figlio è mia; chi pecca morirà."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/אִ֖ישׁ כִּי יִהְיֶ֣ה צַדִּ֑יק וְ/עָשָׂ֥ה מִשְׁפָּ֖ט וּ/צְדָקָֽה׃",
+        "LXX": "ὁ δὲ ἄνθρωπος ὃς ἔσται δίκαιος, ὁ ποιῶν δικαιοσύνην,",
+        "VUL": "Et vir si fuerit justus, et fecerit judicium et justitiam,",
+        "SYN": "Если кто праведен и творит суд и правду,",
+        "NEO": "Si un homme est juste et pratique le droit et la justice ;",
+        "NAB": "If a man is virtuous - if he does what is right and just,",
+        "VAT_ES": "Si un hombre es justo y practica el derecho y la justicia;",
+        "CEI": "Se uno è giusto e osserva il diritto e la giustizia,"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אֶל הֶֽ/הָרִים֙ לֹ֣א אָכָ֔ל וְ/עֵינָי/ו֙ לֹ֣א נָשָׂ֔א אֶל גִּלּוּלֵ֖י בֵּ֣ית יִשְׂרָאֵ֑ל וְ/אֶת אֵ֤שֶׁת רֵעֵ֨/הוּ֙ לֹ֣א טִמֵּ֔א וְ/אֶל אִשָּׁ֥ה נִדָּ֖ה לֹ֥א יִקְרָֽב׃",
+        "LXX": "ἐπὶ τῶν ὀρέων οὐ φάγεται, καὶ τοὺς ὀφθαλμοὺς αὐτοῦ οὐ μὴ ἐπάρῃ πρὸς τὰ ἐνθυμήματα οἴκου Ἰσραήλ, καὶ τὴν γυναῖκα τοῦ πλησίον αὐτοῦ οὐ μὴ μιάνῃ, καὶ πρὸς γυναῖκα ἐν ἀφέδρῳ οὖσαν οὐ προσεγγιεῖ,",
+        "VUL": "in montibus non comederit, et oculos suos non levaverit ad idola domus Israël : et uxorem proximi sui non violaverit, et ad mulierem menstruatam non accesserit :",
+        "SYN": "на горах жертвенного не ест и к идолам дома Израилева не обращает глаз своих, жены ближнего своего не оскверняет и к своей жене во время очищения нечистот ее не приближается,",
+        "NEO": "s’il ne mange pas sur les montagnes et n’élève pas les yeux vers les idoles infâmes de la maison d’Israël ; s’il ne déshonore pas la femme de son prochain et ne s’approche pas d’une femme pendant sa souillure ;",
+        "NAB": "if he does not eat on the mountains, nor raise his eyes to the idols of the house of Israel; if he does not defile his neighbor's wife, nor have relations with a woman in her menstrual period;",
+        "VAT_ES": "si no participa de las comidas sagradas en las montañas y no levanta sus ojos hacia los ídolos de la casa de Israel; si no deshonra a la mujer de su prójimo y no se acerca a una mujer en los días de su menstruación;",
+        "CEI": "se non mangia sulle alture e non alza gli occhi agli idoli della casa d'Israele, se non disonora la moglie del suo prossimo e non si accosta a una donna durante il suo stato di impurità,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/אִישׁ֙ לֹ֣א יוֹנֶ֔ה חֲבֹלָת֥/וֹ חוֹב֙ יָשִׁ֔יב גְּזֵלָ֖ה לֹ֣א יִגְזֹ֑ל לַחְמ/וֹ֙ לְ/רָעֵ֣ב יִתֵּ֔ן וְ/עֵירֹ֖ם יְכַסֶּה בָּֽגֶד׃",
+        "LXX": "καὶ ἄνθρωπον οὐ μὴ καταδυναστεύσῃ, ἐνεχυρασμὸν ὀφείλοντος ἀποδώσει καὶ ἅρπαγμα οὐχ ἁρπᾶται, τὸν ἄρτον αὐτοῦ τῷ πεινῶντι δώσει καὶ γυμνὸν περιβαλεῖ,",
+        "VUL": "et hominem non contristaverit, pignus debitori reddiderit, per vim nihil rapuerit : panem suum esurienti dederit, et nudum operuerit vestimento :",
+        "SYN": "никого не притесняет, должнику возвращает залог его, хищения не производит, хлеб свой дает голодному и нагого покрывает одеждою,",
+        "NEO": "s’il n’opprime personne, s’il rend au débiteur son gage, s’il ne commet pas de rapines, s’il donne son pain à celui qui a faim et couvre d’un vêtement celui qui est nu ;",
+        "NAB": "if he oppresses no one, gives back the pledge received for a debt, commits no robbery; if he gives food to the hungry and clothes the naked;",
+        "VAT_ES": "si no oprime a nadie, si devuelve la prenda al deudor y no quita nada por la fuerza; si da su pan al hambriento y viste al desnudo;",
+        "CEI": "se non opprime alcuno, restituisce il pegno al debitore, non commette rapina, divide il pane con l'affamato e copre di vesti l'ignudo,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "בַּ/נֶּ֣שֶׁךְ לֹֽא יִתֵּ֗ן וְ/תַרְבִּית֙ לֹ֣א יִקָּ֔ח מֵ/עָ֖וֶל יָשִׁ֣יב יָד֑/וֹ מִשְׁפַּ֤ט אֱמֶת֙ יַֽעֲשֶׂ֔ה בֵּ֥ין אִ֖ישׁ לְ/אִֽישׁ׃",
+        "LXX": "καὶ τὸ ἀργύριον αὐτοῦ ἐπὶ τόκῳ οὐ δώσει καὶ πλεονασμὸν οὐ λήμψεται, καὶ ἐξ ἀδικίας ἀποστρέψει τὴν χεῖρα αὐτοῦ, κρίμα δίκαιον ποιήσει ἀνὰ μέσον ἀνδρὸς καὶ ἀνὰ μέσον τοῦ πλησίον αὐτοῦ,",
+        "VUL": "ad usuram non commodaverit, et amplius non acceperit : ab iniquitate averterit manum suam, et judicium verum fecerit inter virum et virum :",
+        "SYN": "в рост не отдает и лихвы не берет, от неправды удерживает руку свою, суд человеку с человеком производит правильный,",
+        "NEO": "s’il ne prête pas à usure et ne prend pas d’intérêt ; s’il détourne sa main de l’iniquité ; s’il juge selon la vérité entre un homme et un autre ;",
+        "NAB": "if he does not lend at interest nor exact usury; if he holds off from evildoing, judges fairly between a man and his opponent;",
+        "VAT_ES": "si no presta con usura ni cobra intereses; si aparta su mano de la injusticia y juzga imparcialmente en los litigios;",
+        "CEI": "se non presta a usura e non esige interesse, desiste dall'iniquità e pronunzia retto giudizio fra un uomo e un altro,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "בְּ/חֻקּוֹתַ֧/י יְהַלֵּ֛ךְ וּ/מִשְׁפָּטַ֥/י שָׁמַ֖ר לַ/עֲשׂ֣וֹת אֱמֶ֑ת צַדִּ֥יק הוּא֙ חָיֹ֣ה יִֽחְיֶ֔ה נְאֻ֖ם אֲדֹנָ֥/י יְהוִֽה׃",
+        "LXX": "καὶ τοῖς προστάγμασίν μου πεπόρευται, τὰ δικαιώματά μου πεφύλακται τοῦ ποιῆσαι αὐτά· δίκαιος οὗτός ἐστιν, ζωῇ ζήσεται, λέγει Κύριος.",
+        "VUL": "in præceptis meis ambulaverit, et judicia mea custodierit, ut faciat veritatem : hic justus est ; vita vivet, ait Dominus Deus.",
+        "SYN": "поступает по заповедям Моим и соблюдает постановления Мои искренно: то он праведник, он непременно будет жив, говорит Господь Бог.",
+        "NEO": "s’il suit mes préceptes et observe mes lois, en agissant avec fidélité, celui-là est juste ; il vivra — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "if he lives by my statutes and is careful to observe my ordinances, that man is virtuous - he shall surely live, says the Lord GOD.",
+        "VAT_ES": "si camina según mis preceptos y observa mis leyes, obrando con fidelidad, ese hombre es justo y seguramente vivirá –oráculo del Señor–.",
+        "CEI": "se cammina nei miei decreti e osserva le mie leggi agendo con fedeltà, egli è giusto ed egli vivrà, parola del Signore Dio."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/הוֹלִ֥יד בֵּן פָּרִ֖יץ שֹׁפֵ֣ךְ דָּ֑ם וְ/עָ֣שָׂה אָ֔ח מֵ/אַחַ֖ד מֵ/אֵֽלֶּה׃",
+        "LXX": "καὶ ἐὰν γεννήσῃ υἱὸν λοιμόν, ἐκχέοντα αἷμα καὶ ποιοῦντα ἁμάρτημα,",
+        "VUL": "Quod si genuerit filium latronem, effundentem sanguinem, et fecerit unum de istis :",
+        "SYN": "Но если у него родился сын разбойник, проливающий кровь, и делает что-нибудь из всего того,",
+        "NEO": "Mais cet homme engendre un fils violent, qui verse le sang et qui fait à son frère quelqu’une de ces choses,",
+        "NAB": "But if he begets a son who is a thief, a murderer, or who does any of these things",
+        "VAT_ES": "Pero si engendra un hijo ladrón y sanguinario, que hace alguna de esas cosas,",
+        "CEI": "Ma se uno ha generato un figlio violento e sanguinario che commette qualcuna di tali azioni,"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/ה֕וּא אֶת כָּל אֵ֖לֶּה לֹ֣א עָשָׂ֑ה כִּ֣י גַ֤ם אֶל הֶֽ/הָרִים֙ אָכַ֔ל וְ/אֶת אֵ֥שֶׁת רֵעֵ֖/הוּ טִמֵּֽא׃",
+        "LXX": "ἐν τῇ ὁδῷ τοῦ πατρὸς αὐτοῦ τοῦ δικαίου οὐκ ἐπορεύθη, ἀλλὰ καὶ ἐπὶ τῶν ὀρέων ἔφαγεν καὶ τὴν γυναῖκα τοῦ πλησίον αὐτοῦ ἐμίανεν,",
+        "VUL": "et hæc quidem omnia non facientem, sed in montibus comedentem, et uxorem proximi sui polluentem :",
+        "SYN": "чего он сам не делал совсем, и на горах ест жертвенное, и жену ближнего своего оскверняет,",
+        "NEO": "— mais lui-même n’a pas fait toutes ces choses ; — il mange sur les montagnes, il déshonore la femme de son prochain, il opprime le pauvre et le malheureux ;",
+        "NAB": "(though the father does none of them), a son who eats on the mountains, defiles the wife of his neighbor,",
+        "VAT_ES": "mientras que él no ha hecho ninguna de ellas, un hijo que participa de las comidas sagradas en las montañas y deshonra a la mujer de su prójimo;",
+        "CEI": "mentre egli non le commette, e questo figlio mangia sulle alture, disonora la donna del prossimo,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "עָנִ֤י וְ/אֶבְיוֹן֙ הוֹנָ֔ה גְּזֵל֣וֹת גָּזָ֔ל חֲבֹ֖ל לֹ֣א יָשִׁ֑יב וְ/אֶל הַ/גִּלּוּלִים֙ נָשָׂ֣א עֵינָ֔י/ו תּוֹעֵבָ֖ה עָשָֽׂה׃",
+        "LXX": "καὶ πτωχὸν καὶ πένητα κατεδυνάστευσεν, καὶ ἅρπαγμα ἥρπασεν καὶ ἐνεχυρασμὸν οὐκ ἀπέδωκεν καὶ εἰς τὰ εἴδωλα ἔθετο τοὺς ὀφθαλμοὺς αὐτοῦ, ἀνομίαν πεποίηκεν,",
+        "VUL": "egenum et pauperem contristantem, rapientem rapinas, pignus non reddentem, et ad idola levantem oculos suos, abominationem facientem :",
+        "SYN": "бедного и нищего притесняет, насильно отнимает, залога не возвращает, и к идолам обращает глаза свои, делает мерзость,",
+        "NEO": "il commet des rapines, il ne rend pas le gage, il lève les yeux vers les idoles, il commet une abomination ;",
+        "NAB": "oppresses the poor and needy, commits robbery, does not give back a pledge, raises his eyes to idols, does abominable things,",
+        "VAT_ES": "que oprime al pobre y al indigente, que saca las cosas por la fuerza y no devuelve la prenda; que levanta sus ojos a los ídolos y comete abominaciones;",
+        "CEI": "opprime il povero e l'indigente, commette rapine, non restituisce il pegno, volge gli occhi agli idoli, compie azioni abominevoli,"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "בַּ/נֶּ֧שֶׁךְ נָתַ֛ן וְ/תַרְבִּ֥ית לָקַ֖ח וָ/חָ֑י לֹ֣א יִֽחְיֶ֗ה אֵ֣ת כָּל הַ/תּוֹעֵב֤וֹת הָ/אֵ֨לֶּה֙ עָשָׂ֔ה מ֣וֹת יוּמָ֔ת דָּמָ֖י/ו בּ֥/וֹ יִהְיֶֽה׃",
+        "LXX": "μετὰ τόκου ἔδωκε καὶ πλεονασμὸν ἔλαβεν· οὗτος ζωῇ οὐ ζήσεται, πάσας τὰς ἀνομίας ταύτας ἐποίησεν, θανάτῳ θανατωθήσεται, τὸ αἷμα αὐτοῦ ἐπ’ αὐτὸν ἔσται.",
+        "VUL": "ad usuram dantem, et amplius accipientem : numquid vivet ? Non vivet : cum universa hæc detestanda fecerit, morte morietur ; sanguis ejus in ipso erit.",
+        "SYN": "в рост дает, и берет лихву; то будет ли он жив? _Нет,_ он не будет жив. Кто делает все такие мерзости, тот непременно умрет, кровь его будет на нем.",
+        "NEO": "il prête à usure et prend un intérêt, et il vivrait !... Il ne vivra pas ; il a commis toutes ces abominations, il doit mourir ; son sang sera sur lui.",
+        "NAB": "lends at interest and exacts usury - this son certainly shall not live. Because he practiced all these abominations, he shall surely die; his death shall be his own fault.",
+        "VAT_ES": "que presta con usura y cobra intereses: este hijo no vivirá. A causa de todas las abominaciones que cometió, morirá irremediablemente, y su sangre recaerá sobre él.",
+        "CEI": "presta a usura ed esige gli interessi, egli non vivrà; poiché ha commesso queste azioni abominevoli, costui morirà e dovrà a se stesso la propria morte."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּה֙ הוֹלִ֣יד בֵּ֔ן וַ/יַּ֕רְא אֶת כָּל חַטֹּ֥את אָבִ֖י/ו אֲשֶׁ֣ר עָשָׂ֑ה וַ/יִּרְאֶ֕ה וְ/לֹ֥א יַעֲשֶׂ֖ה כָּ/הֵֽן׃",
+        "LXX": "ἐὰν δὲ γεννήσῃ υἱόν, καὶ ἴδῃ πάσας τὰς ἁμαρτίας τοῦ πατρὸς αὐτοῦ ἃς ἐποίησεν, καὶ φοβηθῇ καὶ μὴ ποιήσῃ κατὰ ταύτας,",
+        "VUL": "Quod si genuerit filium, qui videns omnia peccata patris sui quæ fecit, timuerit, et non fecerit simile eis :",
+        "SYN": "Но если у кого родился сын, который, видя все грехи отца своего, какие он делает, видит и не делает подобного им:",
+        "NEO": "Mais voici qu’un homme a engendré un fils ; ce fils a vu tous les péchés qu’a commis son père ; il les a vus et n’a rien fait de semblable.",
+        "NAB": "On the other hand, if a man begets a son who, seeing all the sins his father commits, yet fears and does not imitate him;",
+        "VAT_ES": "Pero si un hombre engendra un hijo que ve todos los pecados cometidos por su padre, los ve, pero no los imita:",
+        "CEI": "Ma, se uno ha generato un figlio che vedendo tutti i peccati commessi dal padre, sebbene li veda, non li commette,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "עַל הֶֽ/הָרִים֙ לֹ֣א אָכָ֔ל וְ/עֵינָי/ו֙ לֹ֣א נָשָׂ֔א אֶל גִּלּוּלֵ֖י בֵּ֣ית יִשְׂרָאֵ֑ל אֶת אֵ֥שֶׁת רֵעֵ֖/הוּ לֹ֥א טִמֵּֽא׃",
+        "LXX": "ἐπὶ τῶν ὀρέων οὐ βέβρωκεν καὶ τοὺς ὀφθαλμοὺς αὐτοῦ οὐκ ἔθετο εἰς τὰ ἐνθυμήματα οἴκου Ἰσραήλ, καὶ τὴν γυναῖκα τοῦ πλησίον αὐτοῦ οὐκ ἐμίανεν,",
+        "VUL": "super montes non comederit, et oculos suos non levaverit ad idola domus Israël, et uxorem proximi sui non violaverit :",
+        "SYN": "на горах жертвенного не ест, к идолам дома Израилева не обращает глаз своих, жены ближнего своего не оскверняет,",
+        "NEO": "Il n’a pas mangé sur les montagnes, il n’a pas levé les yeux vers les idoles infâmes de la maison d’Israël ; il n’a pas déshonoré la femme de son prochain ;",
+        "NAB": "a son who does not eat on the mountains, or raise his eyes to the idols of the house of Israel, or defile his neighbor's wife;",
+        "VAT_ES": "no participa de las comidas sagradas en las montañas ni levanta sus ojos a los ídolos de la casa de Israel; no deshonra a la mujer de su prójimo;",
+        "CEI": "non mangia sulle alture, non volge gli occhi agli idoli di Israele, non disonora la donna del prossimo,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/אִישׁ֙ לֹ֣א הוֹנָ֔ה חֲבֹל֙ לֹ֣א חָבָ֔ל וּ/גְזֵלָ֖ה לֹ֣א גָזָ֑ל לַחְמ/וֹ֙ לְ/רָעֵ֣ב נָתָ֔ן וְ/עֵר֖וֹם כִּסָּה בָֽגֶד׃",
+        "LXX": "καὶ ἄνθρωπον οὐ κατεδυνάστευσεν καὶ ἐνεχυρασμὸν οὐκ ἐνεχύρασεν καὶ ἅρπαγμα οὐχ ἥρπασεν, τὸν ἄρτον αὐτοῦ τῷ πεινῶντι ἔδωκεν καὶ γυμνὸν περιέβαλεν,",
+        "VUL": "et virum non contristaverit, pignus non retinuerit, et rapinam non rapuerit : panem suum esurienti dederit, et nudum operuerit vestimento :",
+        "SYN": "и человека не притесняет, залога не берет, и насильно не отнимает, хлеб свой дает голодному, и нагого покрывает одеждою,",
+        "NEO": "il n’a opprimé personne et n’a pas pris de gage, il n’a pas commis de rapines ; il a donné son pain à l’affamé, il a couvert d’un vêtement celui qui était nu ;",
+        "NAB": "who does not oppress anyone, or exact a pledge, or commit robbery; who gives his food to the hungry and clothes the naked;",
+        "VAT_ES": "no oprime a nadie, no retiene la prenda ni saca las cosas por la fuerza; da su pan al hambriento, viste al desnudo",
+        "CEI": "non opprime alcuno, non trattiene il pegno, non commette rapina, dà il pane all'affamato e copre di vesti l'ignudo,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "מֵ/עָנִ֞י הֵשִׁ֣יב יָד֗/וֹ נֶ֤שֶׁךְ וְ/תַרְבִּית֙ לֹ֣א לָקָ֔ח מִשְׁפָּטַ֣/י עָשָׂ֔ה בְּ/חֻקּוֹתַ֖/י הָלָ֑ךְ ה֗וּא לֹ֥א יָמ֛וּת בַּ/עֲוֺ֥ן אָבִ֖י/ו חָיֹ֥ה יִחְיֶֽה׃",
+        "LXX": "καὶ ἀπ’ ἀδικίας ἀπέστρεψε τὴν χεῖρα αὐτοῦ, τόκον οὐδὲ πλεονασμὸν οὐκ ἔλαβεν, δικαιοσύνην ἐποίησεν καὶ ἐν τοῖς προστάγμασίν μου ἐπορεύθη, οὐ τελευτήσει ἐν ἀδικίαις πατρὸς αὐτοῦ, ζωῇ ζήσεται.",
+        "VUL": "a pauperis injuria averterit manum suam, usuram et superabundantiam non acceperit, judicia mea fecerit, in præceptis meis ambulaverit : hic non morietur in iniquitate patris sui, sed vita vivet.",
+        "SYN": "от _обиды_ бедному удерживает руку свою, роста и лихвы не берет, исполняет Мои повеления и поступает по заповедям Моим, - то сей не умрет за беззаконие отца своего; он будет жив.",
+        "NEO": "il n’a pas fait peser sa main sur le pauvre, il n’a pris ni usure, ni intérêt ; il a observé mes lois et suivi mes préceptes, — celui-là ne mourra pas pour l’iniquité de son père ; il vivra certainement.",
+        "NAB": "who holds off from evildoing, accepts no interest or usury, but keeps my ordinances and lives by my statutes - this one shall not die for the sins of his father, but shall surely live.",
+        "VAT_ES": "y aparta su mano de la injusticia; no presta con usura ni cobra intereses; cumple mis leyes y camina según mis preceptos: ese hijo no morirá por las culpas de su padre, sino que vivirá.",
+        "CEI": "desiste dall'iniquità, non presta a usura né a interesse, osserva i miei decreti, cammina secondo le mie leggi, costui non morirà per l'iniquità di suo padre, ma certo vivrà."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "אָבִ֞י/ו כִּֽי עָ֣שַׁק עֹ֗שֶׁק גָּזַל֙ גֵּ֣זֶל אָ֔ח וַ/אֲשֶׁ֥ר לֹא ט֛וֹב עָשָׂ֖ה בְּ/ת֣וֹךְ עַמָּ֑י/ו וְ/הִנֵּה מֵ֖ת בַּ/עֲוֺנֽ/וֹ׃",
+        "LXX": "ὁ δὲ πατὴρ αὐτοῦ ἐὰν θλίψει θλίψῃ καὶ ἁρπάσῃ ἅρπαγμα, ἐναντία ἐποίησεν ἐν μέσῳ τοῦ λαοῦ μου, καὶ ἀποθανεῖται ἐν τῇ ἀδικίᾳ αὐτοῦ.",
+        "VUL": "Pater ejus, quia calumniatus est, et vim fecit fratri, et malum operatus est in medio populi sui, ecce mortuus est in iniquitate sua.",
+        "SYN": "А отец его, так как он жестоко притеснял, грабил брата и недоброе делал среди народа своего, вот, он умрет за свое беззаконие.",
+        "NEO": "Son père qui a multiplié la violence, qui a pratiqué la rapine envers son frère et qui a fait ce qui n’était pas bien au milieu de son peuple, voici que lui, il mourra pour son iniquité.",
+        "NAB": "Only the father, since he violated rights, and robbed, and did what was not good among his people, shall in truth die for his sins.",
+        "VAT_ES": "Pero su padre, que oprimió y sacó las cosas por la fuerza, y no hizo el bien en medio de su pueblo, él si morirá a causa de sus culpas.",
+        "CEI": "Suo padre invece, che ha oppresso e derubato il suo prossimo, che non ha agito bene in mezzo al popolo, morirà per la sua iniquità."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/אֲמַרְתֶּ֕ם מַדֻּ֛עַ לֹא נָשָׂ֥א הַ/בֵּ֖ן בַּ/עֲוֺ֣ן הָ/אָ֑ב וְ/הַ/בֵּ֞ן מִשְׁפָּ֧ט וּ/צְדָקָ֣ה עָשָׂ֗ה אֵ֣ת כָּל חֻקּוֹתַ֥/י שָׁמַ֛ר וַ/יַּעֲשֶׂ֥ה אֹתָ֖/ם חָיֹ֥ה יִחְיֶֽה׃",
+        "LXX": "καὶ ἐρεῖτε Τί ὅτι οὐκ ἔλαβεν τὴν ἀδικίαν ὁ υἱὸς τοῦ πατρός; ὅτι ὁ υἱὸς δικαιοσύνην καὶ ἔλεος πεποίηκεν, πάντα τὰ νόμιμά μου συνετήρησεν καὶ ἐποίησεν αὐτά, ζωῇ ζήσεται.",
+        "VUL": "Et dicitis : Quare non portavit filius iniquitatem patris ? Videlicet quia filius judicium et justitiam operatus est, omnia præcepta mea custodivit, et fecit illa, vivet vita.",
+        "SYN": "Вы говорите: \"почему же сын не несет вины отца своего?\" Потому что сын поступает законно и праведно, все уставы Мои соблюдает и исполняет их; он будет жив.",
+        "NEO": "Et vous dites : « Pourquoi le fils ne porte-t-il pas l’iniquité de son père ? » Mais le fils a agi suivant le droit et la justice, il a observé tous mes préceptes et les a mis en pratique : il vivra certainement.",
+        "NAB": "You ask: \"Why is not the son charged with the guilt of his father?\" Because the son has done what is right and just, and has been careful to observe all my statutes, he shall surely live.",
+        "VAT_ES": "Ustedes preguntarán: «&iquest;Por qué el hijo no carga con las culpas de su padre?», Porque el hijo practicó el derecho y la justicia, observó todos mis preceptos y los puso en práctica, por eso vivirá.",
+        "CEI": "Voi dite: Perché il figlio non sconta l'iniquità del padre? Perché il figlio ha agito secondo giustizia e rettitudine, ha osservato tutti i miei comandamenti e li ha messi in pratica, perciò egli vivrà."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "הַ/נֶּ֥פֶשׁ הַ/חֹטֵ֖את הִ֣יא תָמ֑וּת בֵּ֞ן לֹא יִשָּׂ֣א בַּ/עֲוֺ֣ן הָ/אָ֗ב וְ/אָב֙ לֹ֤א יִשָּׂא֙ בַּ/עֲוֺ֣ן הַ/בֵּ֔ן צִדְקַ֤ת הַ/צַּדִּיק֙ עָלָ֣י/ו תִּֽהְיֶ֔ה וְ/רִשְׁעַ֥ת רשע הָ/רָשָׁ֖ע עָלָ֥י/ו תִּֽהְיֶֽה׃",
+        "LXX": "ἡ δὲ ψυχὴ ἡ ἁμαρτάνουσα ἀποθανεῖται· ὁ δὲ υἱὸς οὐ λήμψεται τὴν ἀδικίαν τοῦ πατρός, οὐδὲ ὁ πατὴρ λήμψεται τὴν ἀδικίαν τοῦ υἱοῦ· δικαιοσύνη δικαίῳ ἐπ’ αὐτὸν ἔσται, καὶ ἀνομία ἀνόμῳ ἐπ’ αὐτὸν ἔσται.",
+        "VUL": "Anima quæ peccaverit, ipsa morietur : filius non portabit iniquitatem patris, et pater non portabit iniquitatem filii : justitia justi super eum erit, et impietas impii erit super eum.",
+        "SYN": "Душа согрешающая, она умрет; сын не понесет вины отца, и отец не понесет вины сына, правда праведного при нем и остается, и беззаконие беззаконного при нем и остается.",
+        "NEO": "L’âme qui pèche, c’est elle qui mourra ; le fils ne portera pas l’iniquité du père, et le père ne portera pas l’iniquité du fils ; la justice du juste sera sur lui, et la méchanceté du méchant sera sur lui.",
+        "NAB": "Only the one who sins shall die. The son shall not be charged with the guilt of his father, nor shall the father be charged with the guilt of his son. The virtuous man's virtue shall be his own, as the wicked man's wickedness shall be his own.",
+        "VAT_ES": "La persona que peca, esa morirá; el hijo no cargará con las culpas del padre, ni el padre cargará con las culpas del hijo. Sobre el justo recaerá su justicia, y sobre el malvado, su maldad.",
+        "CEI": "Colui che ha peccato e non altri deve morire; il figlio non sconta l'iniquità del padre, né il padre l'iniquità del figlio. Al giusto sarà accreditata la sua giustizia e al malvagio la sua malvagità."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/הָ/רָשָׁ֗ע כִּ֤י יָשׁוּב֙ מִ/כָּל חטאת/ו חַטֹּאתָי/ו֙ אֲשֶׁ֣ר עָשָׂ֔ה וְ/שָׁמַר֙ אֶת כָּל חֻקּוֹתַ֔/י וְ/עָשָׂ֥ה מִשְׁפָּ֖ט וּ/צְדָקָ֑ה חָיֹ֥ה יִחְיֶ֖ה לֹ֥א יָמֽוּת׃",
+        "LXX": "καὶ ὁ ἄνομος ἐὰν ἀποστρέψῃ ἐκ πασῶν τῶν ἀνομιῶν αὐτοῦ ὧν ἐποίησεν, καὶ φυλάξηται πάσας τὰς ἐντολάς μου καὶ ποιήσῃ δικαιοσύνην καὶ ἔλεος, ζωῇ ζήσεται, οὐ μὴ ἀποθάνῃ.",
+        "VUL": "Si autem impius egerit pnitentiam ab omnibus peccatis suis quæ operatus est, et custodierit omnia præcepta mea, et fecerit judicium et justitiam, vita vivet, et non morietur.",
+        "SYN": "И беззаконник, если обратится от всех грехов своих, какие делал, и будет соблюдать все уставы Мои и поступать законно и праведно, жив будет, не умрет.",
+        "NEO": "Quant au méchant, s’il se détourne de tous ses péchés qu’il commis, s’il observe tous mes préceptes et agit selon le droit et la justice, il vivra, il ne mourra pas.",
+        "NAB": "But if the wicked man turns away from all the sins he committed, if he keeps all my statutes and does what is right and just, he shall surely live, he shall not die.",
+        "VAT_ES": "Pero si el malvado se convierte de todos los pecados que ha cometido, observa todos mis preceptos y practica el derecho y la justicia, seguramente vivirá, y no morirá.",
+        "CEI": "Ma se il malvagio si ritrae da tutti i peccati che ha commessi e osserva tutti i miei decreti e agisce con giustizia e rettitudine, egli vivrà, non morirà."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כָּל פְּשָׁעָי/ו֙ אֲשֶׁ֣ר עָשָׂ֔ה לֹ֥א יִזָּכְר֖וּ ל֑/וֹ בְּ/צִדְקָת֥/וֹ אֲשֶׁר עָשָׂ֖ה יִֽחְיֶֽה׃",
+        "LXX": "πάντα τὰ παραπτώματα αὐτοῦ ὅσα ἐποίησεν οὐ μνησθήσεται· ἐν τῇ δικαιοσύνῃ αὐτοῦ ᾗ ἐποίησεν ζήσεται.",
+        "VUL": "Omnium iniquitatum ejus quas operatus est, non recordabor : in justitia sua quam operatus est, vivet.",
+        "SYN": "Все преступления его, какие делал он, не припомнятся ему: в правде своей, которую будет делать, он жив будет.",
+        "NEO": "De toutes les transgressions qu’il a commises, on ne se souviendra plus ; à cause de la justice qu’il a pratiquée, il vivra.",
+        "NAB": "None of the crimes he committed shall be remembered against him; he shall live because of the virtue he has practiced.",
+        "VAT_ES": "Ninguna de las ofensas que haya cometido le será recordada: a causa de la justicia que ha practicado, vivirá.",
+        "CEI": "Nessuna delle colpe commesse sarà ricordata, ma vivrà per la giustizia che ha praticata."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "הֶ/חָפֹ֤ץ אֶחְפֹּץ֙ מ֣וֹת רָשָׁ֔ע נְאֻ֖ם אֲדֹנָ֣/י יְהוִ֑ה הֲ/ל֛וֹא בְּ/שׁוּב֥/וֹ מִ/דְּרָכָ֖י/ו וְ/חָיָֽה׃",
+        "LXX": "μὴ θελήσει θελήσω τὸν θάνατον τοῦ ἀνόμου, λέγει Κύριος, ὡς τὸ ἀποστρέψαι αὐτὸν ἐκ τῆς ὁδοῦ τῆς πονηρᾶς καὶ ζῇν αὐτόν;",
+        "VUL": "Numquid voluntatis meæ est mors impii, dicit Dominus Deus, et non ut convertatur a viis suis, et vivat ?",
+        "SYN": "Разве Я хочу смерти беззаконника? говорит Господь Бог. Не того ли, чтобы он обратился от путей своих и был жив?",
+        "NEO": "Prendrai-je plaisir à la mort du méchant, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** ? N’est-ce pas plutôt à ce qu’il se détourne de ses voies et qu’il vive ?",
+        "NAB": "Do I indeed derive any pleasure from the death of the wicked? says the Lord GOD. Do I not rather rejoice when he turns from his evil way that he may live?",
+        "VAT_ES": "&iquest;Acaso deseo yo la muerte del pecador –oráculo del Señor– y no que se convierta de su mala conducta y viva?",
+        "CEI": "Forse che io ho piacere della morte del malvagio - dice il Signore Dio - o non piuttosto che desista dalla sua condotta e viva?"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וּ/בְ/שׁ֨וּב צַדִּ֤יק מִ/צִּדְקָת/וֹ֙ וְ/עָ֣שָׂה עָ֔וֶל כְּ/כֹ֨ל הַ/תּוֹעֵב֜וֹת אֲשֶׁר עָשָׂ֧ה הָ/רָשָׁ֛ע יַעֲשֶׂ֖ה וָ/חָ֑י כָּל צדקת/ו צִדְקֹתָ֤י/ו אֲשֶׁר עָשָׂה֙ לֹ֣א תִזָּכַ֔רְנָה בְּ/מַעֲל֧/וֹ אֲשֶׁר מָעַ֛ל וּ/בְ/חַטָּאת֥/וֹ אֲשֶׁר חָטָ֖א בָּ֥/ם יָמֽוּת׃",
+        "LXX": "ἐν δὲ τῷ ἀποστρέψαι δίκαιον ἐκ τῆς δικαιοσύνης αὐτοῦ καὶ ποιῆσαι ἀδικίαν κατὰ πάσας τὰς ἀνομίας ἃς ἐποίησεν ὁ ἄνομος, πᾶσαι αἱ δικαιοσύναι αὐτοῦ ἃς ἐποίησεν οὐ μὴ μνησθῶσιν· ἐν τῷ παραπτώματι αὐτοῦ ᾧ παρέπεσεν καὶ ἐν ταῖς ἁμαρτίαις αὐτοῦ αἷς ἥμαρτεν, ἐν αὐταῖς ἀποθανεῖται.",
+        "VUL": "Si autem averterit se justus a justitia sua, et fecerit iniquitatem secundum omnes abominationes quas operari solet impius, numquid vivet ? Omnes justitiæ ejus quas fecerat, non recordabuntur : in prævaricatione qua prævaricatus est, et in peccato suo quod peccavit, in ipsis morietur.",
+        "SYN": "И праведник, если отступит от правды своей и будет поступать неправедно, будет делать все те мерзости, какие делает беззаконник, будет ли он жив? все добрые дела его, какие он делал, не припомнятся; за беззаконие свое, какое делает, и за грехи свои, в каких грешен, он умрет.",
+        "NEO": "Et si le juste se détourne de sa justice et qu’il commette l’iniquité, selon toutes les abominations que le méchant commet, — il les ferait et il vivrait !... — de toutes ses œuvres de justice qu’il a pratiquées, on ne se souviendra plus ; à cause de la transgression dont il s’est rendu coupable et de son péché qu’il a commis, à cause de cela il mourra.",
+        "NAB": "And if the virtuous man turns from the path of virtue to do evil, the same kind of abominable things that the wicked man does, can he do this and still live? None of his virtuous deeds shall be remembered, because he has broken faith and committed sin; because of this, he shall die.",
+        "VAT_ES": "Pero si el justo se aparta de su justicia y comete el mal, imitando todas las abominaciones que comete el malvado, &iquest;acaso vivirá? Ninguna de las obras justas que haya hecho será recordada: a causa de la infidelidad y de pecado que ha cometido, morirá.",
+        "CEI": "Ma se il giusto si allontana dalla giustizia e commette l'iniquità e agisce secondo tutti gli abomini che l'empio commette, potrà egli vivere? Tutte le opere giuste da lui fatte saranno dimenticate; a causa della prevaricazione in cui è caduto e del peccato che ha commesso, egli morirà."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/אֲמַרְתֶּ֕ם לֹ֥א יִתָּכֵ֖ן דֶּ֣רֶךְ אֲדֹנָ֑/י שִׁמְעוּ נָא֙ בֵּ֣ית יִשְׂרָאֵ֔ל הֲ/דַרְכִּ/י֙ לֹ֣א יִתָּכֵ֔ן הֲ/לֹ֥א דַרְכֵי/כֶ֖ם לֹ֥א יִתָּכֵֽנוּ׃",
+        "LXX": "καὶ εἴπατε Οὐ κατευθύνει ἡ ὁδὸς Κυρίου. ἀκούσατε δή, οἶκος Ἰσραήλ· μὴ ἡ ὁδός μου οὐ κατευθύνει; οὐχὶ ἡ ὁδὸς ὑμῶν οὐ κατευθύνει;",
+        "VUL": "Et dixistis : Non est æqua via Domini ! Audite ergo, domus Israël : numquid via mea non est æqua, et non magis viæ vestræ pravæ sunt ?",
+        "SYN": "Но вы говорите: \"неправ путь Господа!\" Послушайте, дом Израилев! Мой ли путь неправ? не ваши ли пути неправы?",
+        "NEO": "Vous dites : « La voie du Seigneur n’est pas droite ? » Ecoutez donc, maison d’Israël : Est-ce ma voie qui n’est pas droite ? Ne sont-ce pas vos voies qui ne sont pas droites ?",
+        "NAB": "You say, \"The LORD'S way is not fair!\" Hear now, house of Israel: Is it my way that is unfair, or rather, are not your ways unfair?",
+        "VAT_ES": "Ustedes dirán: «El proceder del Señor no es correcto». Escucha, casa de Israel: &iquest;Acaso no es el proceder de ustedes, y no el mío, el que no es correcto?",
+        "CEI": "Voi dite: Non è retto il modo di agire del Signore. Ascolta dunque, popolo d'Israele: Non è retta la mia condotta o piuttosto non è retta la vostra?"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "בְּ/שׁוּב צַדִּ֧יק מִ/צִּדְקָת֛/וֹ וְ/עָ֥שָׂה עָ֖וֶל וּ/מֵ֣ת עֲלֵי/הֶ֑ם בְּ/עַוְל֥/וֹ אֲשֶׁר עָשָׂ֖ה יָמֽוּת׃",
+        "LXX": "ἐν τῷ ἀποστρέψαι τὸν δίκαιον ἐκ τῆς δικαιοσύνης αὐτοῦ καὶ ποιήσῃ παράπτωμα, καὶ ἀποθάνῃ ἐν τῷ παραπτώματι ᾧ ἐποίησεν, ἐν αὐτῷ ἀποθανεῖται.",
+        "VUL": "Cum enim averterit se justus a justitia sua, et fecerit iniquitatem, morietur in eis : in injustitia quam operatus est morietur.",
+        "SYN": "Если праведник отступает от правды своей и делает беззаконие и за то умирает, то он умирает за беззаконие свое, которое сделал.",
+        "NEO": "Quand le juste se détourne de sa justice et commet l’iniquité, et que là-dessus il meurt, c’est à cause de l’iniquité qu’il à commise qu’il meurt.",
+        "NAB": "When a virtuous man turns away from virtue to commit iniquity, and dies, it is because of the iniquity he committed that he must die.",
+        "VAT_ES": "Cuando el justo se aparta de su justicia, comete el mal y muere, muere por el mal que ha cometido.",
+        "CEI": "Se il giusto si allontana dalla giustizia per commettere l'iniquità e a causa di questa muore, egli muore appunto per l'iniquità che ha commessa."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וּ/בְ/שׁ֣וּב רָשָׁ֗ע מֵֽ/רִשְׁעָת/וֹ֙ אֲשֶׁ֣ר עָשָׂ֔ה וַ/יַּ֥עַשׂ מִשְׁפָּ֖ט וּ/צְדָקָ֑ה ה֖וּא אֶת נַפְשׁ֥/וֹ יְחַיֶּֽה׃",
+        "LXX": "καὶ ἐν τῷ ἀποστρέψαι ἄνομον ἀπὸ τῆς ἀνομίας αὐτοῦ ἧς ἐποίησεν καὶ ποιήσῃ κρίμα καὶ δικαιοσύνην, οὗτος τὴν ψυχὴν αὐτοῦ ἐφύλαξεν.",
+        "VUL": "Et cum averterit se impius ab impietate sua quam operatus est, et fecerit judicium et justitiam, ipse animam suam vivificabit :",
+        "SYN": "И беззаконник, если обращается от беззакония своего, какое делал, и творит суд и правду, - к жизни возвратит душу свою.",
+        "NEO": "Et si le méchant se détourne de sa méchanceté qu’il a pratiquée et qu’il agisse suivant le droit et la justice, il fera vivre son âme.",
+        "NAB": "But if a wicked man, turning from the wickedness he has committed, does what is right and just, he shall preserve his life;",
+        "VAT_ES": "Y cuando el malvado se aparta del mal que ha cometido, para practicar el derecho y la justicia, él mismo preserva su vida.",
+        "CEI": "E se l'ingiusto desiste dall'ingiustizia che ha commessa e agisce con giustizia e rettitudine, egli fa vivere se stesso."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יִּרְאֶ֣ה ו/ישוב וַ/יָּ֔שָׁב מִ/כָּל פְּשָׁעָ֖י/ו אֲשֶׁ֣ר עָשָׂ֑ה חָי֥וֹ יִחְיֶ֖ה לֹ֥א יָמֽוּת׃",
+        "LXX": "καὶ ἀπέστρεψεν ἐκ πασῶν ἀσεβειῶν αὐτοῦ ὧν ἐποίησεν, ζωῇ ζήσεται, οὐ μὴ ἀποθάνῃ.",
+        "VUL": "considerans enim, et avertens se ab omnibus iniquitatibus suis quas operatus est, vita vivet, et non morietur.",
+        "SYN": "Ибо он увидел и обратился от всех преступлений своих, какие делал; он будет жив, не умрет.",
+        "NEO": "S’il ouvre les yeux et se détourne de toutes ses transgressions qu’il a commises, il vivra certainement, et il ne mourra point.",
+        "NAB": "since he has turned away from all the sins which he committed, he shall surely live, he shall not die.",
+        "VAT_ES": "El ha abierto los ojos y se ha convertido de todas las ofensas que había cometido: por eso, seguramente vivirá, y no morirá.",
+        "CEI": "Ha riflettuto, si è allontanato da tutte le colpe commesse: egli certo vivrà e non morirà."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/אָֽמְרוּ֙ בֵּ֣ית יִשְׂרָאֵ֔ל לֹ֥א יִתָּכֵ֖ן דֶּ֣רֶךְ אֲדֹנָ֑/י הַ/דְּרָכַ֞/י לֹ֤א יִתָּֽכְנּוּ֙ בֵּ֣ית יִשְׂרָאֵ֔ל הֲ/לֹ֥א דַרְכֵי/כֶ֖ם לֹ֥א יִתָּכֵֽן׃",
+        "LXX": "καὶ λέγουσιν ὁ οἶκος τοῦ Ἰσραήλ Οὐ κατορθοῖ ἡ ὁδὸς Κυρίου. μὴ ἡ ὁδός μου οὐ κατορθοῖ, οἶκος Ἰσραήλ; οὐχὶ ἡ ὁδὸς ὑμῶν οὐ κατορθοῖ;",
+        "VUL": "Et dicunt filii Israël : Non est æqua via Domini ! Numquid viæ meæ non sunt æquæ, domus Israël, et non magis viæ vestræ pravæ ?",
+        "SYN": "А дом Израилев говорит: \"неправ путь Господа!\" Мои ли пути неправы, дом Израилев? не ваши ли пути неправы?",
+        "NEO": "Mais la maison d’Israël dit : « La voie du Seigneur n’est pas droite. » Sont-ce mes voies qui ne sont pas droites, maison d’Israël ? Ne sont-ce pas vos voies qui ne sont pas droites ?",
+        "NAB": "And yet the house of Israel says, \"The LORD'S way is not fair!\" Is it my way that is not fair, house of Israel, or rather, is it not that your ways are not fair?",
+        "VAT_ES": "Y sin embargo, la casa de Israel dice: «El proceder del Señor no es correcto». &iquest;Acaso no es el proceder de ustedes, y no el mío, el que no es correcto?",
+        "CEI": "Eppure gli Israeliti van dicendo: Non è retta la via del Signore. O popolo d'Israele, non sono rette le mie vie o piuttosto non sono rette le vostre?"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "לָ/כֵן֩ אִ֨ישׁ כִּ/דְרָכָ֜י/ו אֶשְׁפֹּ֤ט אֶתְ/כֶם֙ בֵּ֣ית יִשְׂרָאֵ֔ל נְאֻ֖ם אֲדֹנָ֣/י יְהוִ֑ה שׁ֤וּבוּ וְ/הָשִׁ֨יבוּ֙ מִ/כָּל פִּשְׁעֵי/כֶ֔ם וְ/לֹֽא יִהְיֶ֥ה לָ/כֶ֛ם לְ/מִכְשׁ֖וֹל עָוֺֽן׃",
+        "LXX": "ἕκαστον κατὰ τὴν ὁδὸν αὐτοῦ κρινῶ ὑμᾶς, οἶκος Ἰσραήλ, λέγει Κύριος· ἐπιστράφητε καὶ ἀποστρέψατε ἐκ πασῶν τῶν ἀσεβειῶν ὑμῶν, καὶ οὐκ ἔσονται ὑμῖν εἰς κόλασιν ἀδικίας.",
+        "VUL": "Idcirco unumquemque juxta vias suas judicabo, domus Israël, ait Dominus Deus. Convertimini, et agite pnitentiam ab omnibus iniquitatibus vestris, et non erit vobis in ruinam iniquitas.",
+        "SYN": "Посему Я буду судить вас, дом Израилев, каждого по путям его, говорит Господь Бог; покайтесь и обратитесь от всех преступлений ваших, чтобы нечестие не было вам преткновением.",
+        "NEO": "C’est pourquoi je vous jugerai chacun selon ses voies, maison d’Israël, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w**. Détournez-vous et convertissez-vous de toutes vos transgressions, et l’iniquité ne deviendra pas votre ruine.",
+        "NAB": "Therefore I will judge you, house of Israel, each one according to his ways, says the Lord GOD. Turn and be converted from all your crimes, that they may be no cause of guilt for you.",
+        "VAT_ES": "Por eso, casa de Israel, yo los juzgaré a cada uno de ustedes según su conducta –oráculo del Señor–. Conviértanse y apártense de todas sus rebeldías, de manera que nada los haga caer en el pecado.",
+        "CEI": "Perciò, o Israeliti, io giudicherò ognuno di voi secondo la sua condotta. Oracolo del Signore Dio. Convertitevi e desistete da tutte le vostre iniquità, e l'iniquità non sarà più causa della vostra rovina."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "הַשְׁלִ֣יכוּ מֵ/עֲלֵי/כֶ֗ם אֶת כָּל פִּשְׁעֵי/כֶם֙ אֲשֶׁ֣ר פְּשַׁעְתֶּ֣ם בָּ֔/ם וַ/עֲשׂ֥וּ לָ/כֶ֛ם לֵ֥ב חָדָ֖שׁ וְ/ר֣וּחַ חֲדָשָׁ֑ה וְ/לָ֥/מָּה תָמֻ֖תוּ בֵּ֥ית יִשְׂרָאֵֽל׃",
+        "LXX": "ἀπορρίψατε ἀπὸ ἑαυτῶν πάσας τὰς ἀσεβίας ὑμῶν ἃς ἠσεβήσατε εἰς ἐμέ, καὶ ποιήσατε ἑαυτοῖς καρδίαν καινὴν καὶ πνεῦμα καινόν· καὶ ἵνα τί ἀποθνήσκετε, οἶκος Ἰσραήλ;",
+        "VUL": "Projicite a vobis omnes prævaricationes vestras in quibus prævaricati estis, et facite vobis cor novum, et spiritum novum : et quare moriemini, domus Israël ?",
+        "SYN": "Отвергните от себя все грехи ваши, которыми согрешали вы, и сотворите себе новое сердце и новый дух; и зачем вам умирать, дом Израилев?",
+        "NEO": "Rejetez loin de vous toutes les transgressions que vous avez commises ; faites-vous un cœur nouveau et un esprit nouveau. Pourquoi mourriez-vous, maison d’Israël ?",
+        "NAB": "Cast away from you all the crimes you have committed, and make for yourselves a new heart and a new spirit. Why should you die, O house of Israel?",
+        "VAT_ES": "Arrojen lejos de ustedes todas las rebeldías que han cometido contra mí y háganse un corazón nuevo y un espíritu nuevo. &iquest;Por qué quieres morir, casa de Israel?",
+        "CEI": "Liberatevi da tutte le iniquità commesse e formatevi un cuore nuovo e uno spirito nuovo. Perché volete morire, o Israeliti?"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "כִּ֣י לֹ֤א אֶחְפֹּץ֙ בְּ/מ֣וֹת הַ/מֵּ֔ת נְאֻ֖ם אֲדֹנָ֣/י יְהוִ֑ה וְ/הָשִׁ֖יבוּ וִֽ/חְיֽוּ׃",
+        "LXX": "διότι οὐ θέλω τὸν θάνατον τοῦ ἀποθνήσκοντος, λέγει Κύριος.",
+        "VUL": "Quia nolo mortem morientis, dicit Dominus Deus : revertimini, et vivite.",
+        "SYN": "Ибо Я не хочу смерти умирающего, говорит Господь Бог; но обратитесь, и живите!",
+        "NEO": "Car je ne prends pas plaisir à la mort de celui qui meurt, — oracle du Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** ; convertissez-vous donc et vivez. »",
+        "NAB": "For I have no pleasure in the death of anyone who dies, says the Lord GOD. Return and live!",
+        "VAT_ES": "Yo no deseo la muerte de nadie –oráculo del Señor–. Conviértanse, entonces, y vivirán.",
+        "CEI": "Io non godo della morte di chi muore. Parola del Signore Dio. Convertitevi e vivrete\"."
+      }
+    }
+  }
+}

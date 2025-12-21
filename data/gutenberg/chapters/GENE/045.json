@@ -1,0 +1,519 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_045",
+  "book_key": "GENE",
+  "sequence": 45,
+  "chapter_in": {
+    "MT": 45,
+    "VUL": 45,
+    "LXX": 45
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא יָכֹ֨ל יוֹסֵ֜ף לְ/הִתְאַפֵּ֗ק לְ/כֹ֤ל הַ/נִּצָּבִים֙ עָלָ֔י/ו וַ/יִּקְרָ֕א הוֹצִ֥יאוּ כָל אִ֖ישׁ מֵ/עָלָ֑/י וְ/לֹא עָ֤מַד אִישׁ֙ אִתּ֔/וֹ בְּ/הִתְוַדַּ֥ע יוֹסֵ֖ף אֶל אֶחָֽי/ו׃",
+        "VUL": "Non se poterat ultra cohibere Joseph multis coram astantibus : unde præcepit ut egrederentur cuncti foras, et nullus interesset alienus agnitioni mutuæ.",
+        "LXX": "Καὶ οὐκ ἠδύνατο Ἰωσὴφ ἀνέχεσθαι πάντων τῶν παρεστηκότων αὐτῷ, ἀλλ’ εἶπεν Ἐξαποστείλατε πάντας ἀπ’ ἐμοῦ· καὶ οὐ παριστήκει οὐδεὶς ἔτι τῷ Ἰωσὴφ ἡνίκα ἀνεγνωρίζετο Ἰωσὴφ τοῖς ἀδελφοῖς αὐτοῦ.",
+        "NAB": "Joseph could no longer control himself in the presence of all his attendants, so he cried out, \"Have everyone withdraw from me!\" Thus no one else was about when he made himself known to his brothers.",
+        "SYN": "Иосиф не мог более удерживаться при всех стоявших около него и закричал: удалите от меня всех. И не оставалось при Иосифе никого, когда он открылся братьям своим.",
+        "NEO": "Alors Joseph ne put se contenir devant tous ceux qui étaient présents ; il s’écria : « Faites sortir tout le monde. » Et il ne resta personne avec lui quand il se fit connaître à ses frères.",
+        "VAT_ES": "José ya no podía contener su emoción en presencia de la gente que lo asistía, y exclamó: «Hagan salir de aquí a toda la gente». Así, nadie permaneció con él mientras se daba a conocer a sus hermanos.",
+        "CEI": "Allora Giuseppe non potè più contenersi dinanzi ai circostanti e gridò: \"Fate uscire tutti dalla mia presenza!\". Così non restò nessuno presso di lui, mentre Giuseppe si faceva conoscere ai suoi fratelli."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֥ן אֶת קֹל֖/וֹ בִּ/בְכִ֑י וַ/יִּשְׁמְע֣וּ מִצְרַ֔יִם וַ/יִּשְׁמַ֖ע בֵּ֥ית פַּרְעֹֽה׃",
+        "VUL": "Elevavitque vocem cum fletu, quam audierunt Ægyptii, omnisque domus Pharaonis.",
+        "LXX": "καὶ ἀφῆκεν φωνὴν μετὰ κλαυθμοῦ· ἤκουσαν δὲ πάντες οἱ Αἰγύπτιοι, καὶ ἀκουστὸν ἐγένετο εἰς τὸν οἶκον Φαραώ.",
+        "NAB": "But his sobs were so loud that the Egyptians heard him, and so the news reached Pharaoh's palace.",
+        "SYN": "И громко зарыдал он, и услышали Египтяне, и услышал дом фараонов.",
+        "NEO": "Il éleva la voix en pleurant ; les Egyptiens l’entendirent, et la maison de Pharaon l’entendit.",
+        "VAT_ES": "Sin embargo, los sollozos eran tan fuertes que los oyeron los egipcios, y la noticia llegó hasta el palacio del Faraón.",
+        "CEI": "Ma diede in un grido di pianto e tutti gli Egiziani lo sentirono e la cosa fu risaputa nella casa del faraone."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יוֹסֵ֤ף אֶל אֶחָי/ו֙ אֲנִ֣י יוֹסֵ֔ף הַ/ע֥וֹד אָבִ֖/י חָ֑י וְ/לֹֽא יָכְל֤וּ אֶחָי/ו֙ לַ/עֲנ֣וֹת אֹת֔/וֹ כִּ֥י נִבְהֲל֖וּ מִ/פָּנָֽי/ו׃",
+        "VUL": "Et dixit fratribus suis : Ego sum Joseph : adhuc pater meus vivit ? Non poterant respondere fratres nimio terrore perterriti.",
+        "LXX": "εἶπεν δὲ Ἰωσὴφ πρὸς τοὺς ἀδελφοὺς αὐτοῦ Ἐγώ εἰμι Ἰωσὴφ ὁ ἀδελφὸς ὑμῶν, ὃν ἀπέδοσθε εἰς Αἴγυπτον· ἔτι ὁ πατήρ μου ζῇ; καὶ οὐκ ἐδύναντο οἱ ἀδελφοὶ ἀποκριθῆναι αὐτῷ· ἐταράχθησαν γάρ.",
+        "NAB": "\"I am Joseph,\" he said to his brothers. \"Is my father still in good health?\" But his brothers could give him no answer, so dumbfounded were they at him.",
+        "SYN": "И сказал Иосиф братьям своим: я -- Иосиф, жив ли еще отец мой? Но братья его не могли отвечать ему, потому что они смутились пред ним.",
+        "NEO": "Joseph dit à ses frères : « Je suis Joseph ! Mon père vit-il encore ? » Mais ses frères ne purent lui répondre, tant ils étaient bouleversés devant lui.",
+        "VAT_ES": "José dijo a sus hermanos: «Yo soy José. &iquest;Es verdad que mi padre vive todavía?». Pero ellos no pudieron responderle, porque al verlo se habían quedado pasmados.",
+        "CEI": "Giuseppe disse ai fratelli: \"Io sono Giuseppe! Vive ancora mio padre?\". Ma i suoi fratelli non potevano rispondergli, perché atterriti dalla sua presenza."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יוֹסֵ֧ף אֶל אֶחָ֛י/ו גְּשׁוּ נָ֥א אֵלַ֖/י וַ/יִּגָּ֑שׁוּ וַ/יֹּ֗אמֶר אֲנִי֙ יוֹסֵ֣ף אֲחִי/כֶ֔ם אֲשֶׁר מְכַרְתֶּ֥ם אֹתִ֖/י מִצְרָֽיְמָ/ה׃",
+        "VUL": "Ad quos ille clementer : Accedite, inquit, ad me. Et cum accessissent prope : Ego sum, ait, Joseph, frater vester, quem vendidistis in Ægyptum.",
+        "LXX": "καὶ εἶπεν Ἐγώ εἰμι Ἰωσὴφ ὁ ἀδελφὸς ὑμῶν, ὃν ἀπέδοσθε εἰς Αἴγυπτον.",
+        "NAB": "\"Come closer to me,\" he told his brothers. When they had done so, he said: \"I am your brother Joseph, whom you once sold into Egypt.",
+        "SYN": "И сказал Иосиф братьям своим: подойдите ко мне. Они подошли. Он сказал: я -- Иосиф, брат ваш, которого вы продали в Египет;",
+        "NEO": "Et Joseph dit à ses frères : « Approchez-vous de moi « ; et ils s’approchèrent. Il dit : « Je suis Joseph, votre frère, que vous avez vendu pour être mené en Égypte.",
+        "VAT_ES": "Entonces José volvió a decir a sus hermanos: «Acérquense un poco más». Y cuando ellos se acercaron, añadió: «Sí, yo soy José, el hermano de ustedes, el mismo que vendieron a los egipcios.",
+        "CEI": "Allora Giuseppe disse ai fratelli: \"Avvicinatevi a me!\". Si avvicinarono e disse loro: \"Io sono Giuseppe, il vostro fratello, che voi avete venduto per l'Egitto."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֣ה אַל תֵּעָ֣צְב֗וּ וְ/אַל יִ֨חַר֙ בְּ/עֵ֣ינֵי/כֶ֔ם כִּֽי מְכַרְתֶּ֥ם אֹתִ֖/י הֵ֑נָּה כִּ֣י לְ/מִֽחְיָ֔ה שְׁלָחַ֥/נִי אֱלֹהִ֖ים לִ/פְנֵי/כֶֽם׃",
+        "VUL": "Nolite pavere, neque vobis durum esse videatur quod vendidistis me in his regionibus : pro salute enim vestra misit me Deus ante vos in Ægyptum.",
+        "LXX": "νῦν οὖν μὴ λυπεῖσθε μηδὲ σκληρὸν ὑμῖν φανήτω ὅτι ἀπέδοσθέ με ὧδε· εἰς γὰρ ζωὴν ἀπέστειλέν με ὁ θεὸς ἔμπροσθεν ὑμῶν.",
+        "NAB": "But now do not be distressed, and do not reproach yourselves for having sold me here. It was really for the sake of saving lives that God sent me here ahead of you.",
+        "SYN": "но теперь не печальтесь и не жалейте о том, что вы продали меня сюда, потому что Бог послал меня перед вами для сохранения вашей жизни;",
+        "NEO": "Maintenant ne vous affligez pas et ne soyez pas fâchés contre vous-mêmes de ce que vous m’avez vendu pour être conduit ici ; c’est pour vous sauver la vie que Dieu m’a envoyé devant vous.",
+        "VAT_ES": "Ahora no se aflijan ni sientan remordimiento por haberme vendido. En realidad, ha sido Dios el que me envió aquí delante de ustedes para preservarles la vida.",
+        "CEI": "Ma ora non vi rattristate e non vi crucciate per avermi venduto quaggiù, perché Dio mi ha mandato qui prima di voi per conservarvi in vita."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כִּי זֶ֛ה שְׁנָתַ֥יִם הָ/רָעָ֖ב בְּ/קֶ֣רֶב הָ/אָ֑רֶץ וְ/עוֹד֙ חָמֵ֣שׁ שָׁנִ֔ים אֲשֶׁ֥ר אֵין חָרִ֖ישׁ וְ/קָצִּֽיר׃",
+        "VUL": "Biennium est enim quod cpit fames esse in terra : et adhuc quinque anni restant, quibus nec arari poterit, nec meti.",
+        "LXX": "τοῦτο γὰρ δεύτερον ἔτος λιμὸς ἐπὶ τῆς γῆς, καὶ ἔτι λοιπὰ πέντε ἔτη ἐν οἷς οὐκ ἔσται ἀροτρίασις οὐδὲ ἄμητος·",
+        "NAB": "For two years now the famine has been in the land, and for five more years tillage will yield no harvest.",
+        "SYN": "ибо теперь два года голода на земле: [остается] еще пять лет, в которые ни орать, ни жать не будут;",
+        "NEO": "Car voilà deux ans que la famine est dans ce pays, et pendant cinq années encore il n’y aura ni labour ni moisson.",
+        "VAT_ES": "Porque ya hace dos años que hay hambre en esta región, y en los próximos cinco años tampoco se recogerán cosechas de los cultivos.",
+        "CEI": "Perché già da due anni vi è la carestia nel paese e ancora per cinque anni non vi sarà né aratura né mietitura."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלָחֵ֤/נִי אֱלֹהִים֙ לִ/פְנֵי/כֶ֔ם לָ/שׂ֥וּם לָ/כֶ֛ם שְׁאֵרִ֖ית בָּ/אָ֑רֶץ וּ/לְ/הַחֲי֣וֹת לָ/כֶ֔ם לִ/פְלֵיטָ֖ה גְּדֹלָֽה׃",
+        "VUL": "Præmisitque me Deus ut reservemini super terram, et escas ad vivendum habere possitis.",
+        "LXX": "ἀπέστειλεν γάρ με ὁ θεὸς ἔμπροσθεν ὑμῶν, ὑπολείπεσθαι ὑμῶν κατάλειμμα ἐπὶ τῆς γῆς, καὶ ἐκθρέψαι ὑμῶν κατάλειψιν μεγάλην.",
+        "NAB": "God, therefore, sent me on ahead of you to ensure for you a remnant on earth and to save your lives in an extraordinary deliverance.",
+        "SYN": "Бог послал меня перед вами, чтобы оставить вас на земле и сохранить вашу жизнь великим избавлением.",
+        "NEO": "Dieu m’a envoyé devant vous pour vous assurer un reste dans le pays et vous faire subsister pour une grande délivrance.",
+        "VAT_ES": "Por eso Dios hizo que yo los precediera para dejarles un resto en la tierra y salvarles la vida, librándolos de una manera extraordinaria.",
+        "CEI": "Dio mi ha mandato qui prima di voi, per assicurare a voi la sopravvivenza nel paese e per salvare in voi la vita di molta gente."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה לֹֽא אַתֶּ֞ם שְׁלַחְתֶּ֤ם אֹתִ/י֙ הֵ֔נָּה כִּ֖י הָ/אֱלֹהִ֑ים וַ/יְשִׂימֵ֨/נִֽי לְ/אָ֜ב לְ/פַרְעֹ֗ה וּ/לְ/אָדוֹן֙ לְ/כָל בֵּית֔/וֹ וּ/מֹשֵׁ֖ל בְּ/כָל אֶ֥רֶץ מִצְרָֽיִם׃",
+        "VUL": "Non vestro consilio, sed Dei voluntate huc missus sum : qui fecit me quasi patrem Pharaonis, et dominum universæ domus ejus, ac principem in omni terra Ægypti.",
+        "LXX": "νῦν οὖν οὐχ ὑμεῖς με ἀπεστάλκατε ὧδε, ἀλλ’ ἢ ὁ θεός· καὶ ἐποίησέν με ὡς πατέρα Φαραὼ καὶ κύριον παντὸς τοῦ οἴκου αὐτοῦ καὶ ἄρχοντα πάσης γῆς Αἰγύπτου.",
+        "NAB": "So it was not really you but God who had me come here; and he has made of me a father to Pharaoh, lord of all his household, and ruler over the whole land of Egypt.",
+        "SYN": "Итак не вы послали меня сюда, но Бог, Который и поставил меня отцом фараону и господином во всем доме его и владыкою во всей земле Египетской.",
+        "NEO": "Et maintenant, ce n’est pas vous qui m’avez envoyé ici, mais c’est Dieu ; il m’a établi père de Pharaon, seigneur sur toute sa maison et gouverneur de tout le pays d’Égypte.",
+        "VAT_ES": "Ha sido Dios, y no ustedes, el que me envió aquí y me constituyó padre del Faraón, señor de todo su palacio y gobernador de Egipto.",
+        "CEI": "Dunque non siete stati voi a mandarmi qui, ma Dio ed Egli mi ha stabilito padre per il faraone, signore su tutta la sua casa e governatore di tutto il paese d'Egitto."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "מַהֲרוּ֮ וַ/עֲל֣וּ אֶל אָבִ/י֒ וַ/אֲמַרְתֶּ֣ם אֵלָ֗י/ו כֹּ֤ה אָמַר֙ בִּנְ/ךָ֣ יוֹסֵ֔ף שָׂמַ֧/נִי אֱלֹהִ֛ים לְ/אָד֖וֹן לְ/כָל מִצְרָ֑יִם רְדָ֥/ה אֵלַ֖/י אַֽל תַּעֲמֹֽד׃",
+        "VUL": "Festinate, et ascendite ad patrem meum, et dicetis ei : Hæc mandat filius tuus Joseph : Deus fecit me dominum universæ terræ Ægypti : descende ad me, ne moreris,",
+        "LXX": "σπεύσαντες οὖν ἀνάβητε πρὸς τὸν πατέρα μου καὶ εἴπατε αὐτῷ Τάδε λέγει ὁ υἱός σου Ἰωσήφ Ἐποίησέν με ὁ θεὸς κύριον πάσης γῆς Αἰγύπτου· κατάβηθι οὖν πρὸς μὲ καὶ μὴ μείνῃς·",
+        "NAB": "\"Hurry back, then, to my father and tell him: 'Thus says your son Joseph: God has made me lord of all Egypt; come to me without delay.",
+        "SYN": "Идите скорее к отцу моему и скажите ему: так говорит сын твой Иосиф: Бог поставил меня господином над всем Египтом; приди ко мне, не медли;",
+        "NEO": "Hâtez-vous de monter vers mon père, et vous lui direz : Ainsi a parlé ton fils Joseph : Dieu m’a établi seigneur sur toute l’Égypte ; descends vers moi sans tarder.",
+        "VAT_ES": "Vuelvan cuanto antes a la casa de mi padre y díganle: «Así habla tu hijo José: Dios me ha constituido señor de todo Egipto. Ven ahora mismo a reunirte conmigo.",
+        "CEI": "Affrettatevi a salire da mio padre e ditegli: Dice il tuo figlio Giuseppe: Dio mi ha stabilito signore di tutto l'Egitto. Vieni quaggiù presso di me e non tardare."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/יָשַׁבְתָּ֣ בְ/אֶֽרֶץ גֹּ֗שֶׁן וְ/הָיִ֤יתָ קָרוֹב֙ אֵלַ֔/י אַתָּ֕ה וּ/בָנֶ֖י/ךָ וּ/בְנֵ֣י בָנֶ֑י/ךָ וְ/צֹאנְ/ךָ֥ וּ/בְקָרְ/ךָ֖ וְ/כָל אֲשֶׁר לָֽ/ךְ׃",
+        "VUL": "et habitabis in terra Gessen : erisque juxta me tu, et filii tui, et filii filiorum tuorum, oves tuæ, et armenta tua, et universa quæ possides :",
+        "LXX": "καὶ κατοικήσεις ἐν γῇ Γέσεμ Ἀραβίας καὶ ἔσῃ ἐγγύς μου σὺ καὶ οἱ υἱοί σου καὶ οἱ υἱοὶ τῶν υἱῶν σου, τὰ πρόβατά σου καὶ αἱ βόες σου καὶ ὅσα σοὶ ἐκεῖ·",
+        "NAB": "You will settle in the region of Goshen, where you will be near me - you and your children and grandchildren, your flocks and herds, and everything that you own.",
+        "SYN": "ты будешь жить в земле Гесем; и будешь близ меня, ты, и сыны твои, и сыны сынов твоих, и мелкий и крупный скот твой, и все твое;",
+        "NEO": "Tu habiteras dans le pays de Gessen, et tu seras près de moi, toi et tes fils, et les fils de tes fils, tes brebis et tes bœufs, et tout ce qui est à toi.",
+        "VAT_ES": "Tú vivirás en la región de Gosen, y estarás cerca de mí, junto con tus hijos y tus nietos, tus ovejas y tus vacas, y con todo lo que te pertenece.",
+        "CEI": "Abiterai nel paese di Gosen e starai vicino a me tu, i tuoi figli e i figli dei tuoi figli, i tuoi greggi e i tuoi armenti e tutti i tuoi averi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/כִלְכַּלְתִּ֤י אֹֽתְ/ךָ֙ שָׁ֔ם כִּי ע֛וֹד חָמֵ֥שׁ שָׁנִ֖ים רָעָ֑ב פֶּן תִּוָּרֵ֛שׁ אַתָּ֥ה וּ/בֵֽיתְ/ךָ֖ וְ/כָל אֲשֶׁר לָֽ/ךְ׃",
+        "VUL": "ibique te pascam (adhuc enim quinque anni residui sunt famis) ne et tu pereas, et domus tua, et omnia quæ possides.",
+        "LXX": "καὶ ἐκθρέψω σε ἐκεῖ, ἔτι γὰρ πέντε ἔτη λιμός· ἵνα μὴ ἐκτριβῇς σὺ καὶ οἱ υἱοί σου καὶ πάντα τὰ ὑπάρχοντά σου.",
+        "NAB": "Since five years of famine still lie ahead, I will provide for you there, so that you and your family and all that are yours may not suffer want.'",
+        "SYN": "и прокормлю тебя там, ибо голод будет еще пять лет, чтобы не обнищал ты и дом твой и все твое.",
+        "NEO": "Là, je te nourrirai, — car il y aura encore cinq années de famine, — afin que tu ne souffres pas, toi, ta maison et tout ce qui est à toi.",
+        "VAT_ES": "Yo proveeré a tu subsistencia, porque el hambre durará todavía cinco años. De esa manera, ni tú ni tu familia ni nada de lo que te pertenece, pasarán necesidad».",
+        "CEI": "Là io ti darò sostentamento, poiché la carestia durerà ancora cinque anni, e non cadrai nell'indigenza tu, la tua famiglia e quanto possiedi."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/הִנֵּ֤ה עֵֽינֵי/כֶם֙ רֹא֔וֹת וְ/עֵינֵ֖י אָחִ֣/י בִנְיָמִ֑ין כִּי פִ֖/י הַֽ/מְדַבֵּ֥ר אֲלֵי/כֶֽם׃",
+        "VUL": "En oculi vestri, et oculi fratris mei Benjamin, vident quod os meum loquatur ad vos.",
+        "LXX": "ἰδοὺ οἱ ὀφθαλμοὶ ὑμῶν βλέπουσιν καὶ οἱ ὀφθαλμοὶ Βενιαμεὶν τοῦ ἀδελφοῦ μου ὅτι τὸ στόμα μου τὸ λαλοῦν πρὸς ὑμᾶς.",
+        "NAB": "Surely, you can see for yourselves, and Benjamin can see for himself, that it is I, Joseph, who am speaking to you.",
+        "SYN": "И вот, очи ваши и очи брата моего Вениамина видят, что это мои уста говорят с вами;",
+        "NEO": "Voici, vos yeux voient, ainsi que les yeux de mon frère Benjamin, que c’est ma bouche qui vous parle.",
+        "VAT_ES": "Ustedes son testigos, como lo es también mi hermano Benjamín, de que soy yo mismo el que les dice esto.",
+        "CEI": "Ed ecco, i vostri occhi lo vedono e lo vedono gli occhi di mio fratello Beniamino: è la mia bocca che vi parla!"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/הִגַּדְתֶּ֣ם לְ/אָבִ֗/י אֶת כָּל כְּבוֹדִ/י֙ בְּ/מִצְרַ֔יִם וְ/אֵ֖ת כָּל אֲשֶׁ֣ר רְאִיתֶ֑ם וּ/מִֽהַרְתֶּ֛ם וְ/הוֹרַדְתֶּ֥ם אֶת אָבִ֖/י הֵֽנָּה׃",
+        "VUL": "Nuntiate patri meo universam gloriam meam, et cuncta quæ vidistis in Ægypto : festinate, et adducite eum ad me.",
+        "LXX": "ἀπαγγείλατε οὖν τῷ πατρί μου πᾶσαν τὴν δόξαν μου τὴν ἐν Αἰγύπτῳ καὶ ὅσα ἴδετε, καὶ ταχύναντες καταγάγετε τὸν πατέρα μου ὧδε.",
+        "NAB": "Tell my father all about my high position in Egypt and what you have seen. But hurry and bring my father down here.\"",
+        "SYN": "скажите же отцу моему о всей славе моей в Египте и о всем, что вы видели, и приведите скорее отца моего сюда.",
+        "NEO": "Racontez à mon père toute ma gloire en Égypte et tout ce que vous avez vu, et faites au plus tôt descendre ici mon père. »",
+        "VAT_ES": "Informen a mi padre del alto cargo que ocupo en Egipto y de todo lo que han visto. Y tráiganlo aquí lo antes posible».",
+        "CEI": "Riferite a mio padre tutta la gloria che io ho in Egitto e quanto avete visto; affrettatevi a condurre quaggiù mio padre\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּפֹּ֛ל עַל צַוְּארֵ֥י בִנְיָמִֽן אָחִ֖י/ו וַ/יֵּ֑בְךְּ וּ/בִנְיָמִ֔ן בָּכָ֖ה עַל צַוָּארָֽי/ו׃",
+        "VUL": "Cumque amplexatus recidisset in collum Benjamin fratris sui, flevit : illo quoque similiter flente super collum ejus.",
+        "LXX": "καὶ ἐπιπεσὼν ἐπὶ τὸν τράχηλον Βενιαμεὶν τοῦ ἀδελφοῦ αὐτοῦ ἐπέπεσεν ἐπ’ αὐτῷ, καὶ Βενιαμεὶν ἔκλαυσεν ἐπὶ τῷ τραχήλῳ αὐτοῦ.",
+        "NAB": "Thereupon he flung himself on the neck of his brother Benjamin and wept, and Benjamin wept in his arms.",
+        "SYN": "И пал он на шею Вениамину, брату своему, и плакал; и Вениамин плакал на шее его.",
+        "NEO": "Alors il se jeta au cou de Benjamin, son frère, et pleura ; et Benjamin pleura sur son cou.",
+        "VAT_ES": "Luego estrechó entre sus brazos a su hermano Benjamín y se puso a llorar. También Benjamín lloró abrazado a él.",
+        "CEI": "Allora egli si gettò al collo di Beniamino e pianse. Anche Beniamino piangeva stretto al suo collo."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יְנַשֵּׁ֥ק לְ/כָל אֶחָ֖י/ו וַ/יֵּ֣בְךְּ עֲלֵי/הֶ֑ם וְ/אַ֣חֲרֵי כֵ֔ן דִּבְּר֥וּ אֶחָ֖י/ו אִתּֽ/וֹ׃",
+        "VUL": "Osculatusque est Joseph omnes fratres suos, et ploravit super singulos : post quæ ausi sunt loqui ad eum.",
+        "LXX": "καὶ καταφιλήσας πάντας τοὺς ἀδελφοὺς αὐτοῦ ἔκλαυσεν ἐπ’ αὐτοῖς, καὶ μετὰ ταῦτα ἐλάλησαν οἱ ἀδελφοὶ αὐτοῦ πρὸς αὐτόν.",
+        "NAB": "Joseph then kissed all his brothers, crying over each of them; and only then were his brothers able to talk with him.",
+        "SYN": "И целовал всех братьев своих и плакал, обнимая их. Потом говорили с ним братья его.",
+        "NEO": "Il baisa aussi tous ses frères, et pleura en les tenant embrassés ; puis ses frères s’entretinrent avec lui.",
+        "VAT_ES": "Después besó a todos sus hermanos y lloró mientras los abrazaba. Sólo entonces, sus hermanos atinaron a hablar con él.",
+        "CEI": "Poi baciò tutti i fratelli e pianse stringendoli a sé. Dopo, i suoi fratelli si misero a conversare con lui."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/הַ/קֹּ֣ל נִשְׁמַ֗ע בֵּ֤ית פַּרְעֹה֙ לֵ/אמֹ֔ר בָּ֖אוּ אֲחֵ֣י יוֹסֵ֑ף וַ/יִּיטַב֙ בְּ/עֵינֵ֣י פַרְעֹ֔ה וּ/בְ/עֵינֵ֖י עֲבָדָֽי/ו׃",
+        "VUL": "Auditumque est, et celebri sermone vulgatum in aula regis : Venerunt fratres Joseph : et gavisus est Pharao, atque omnis familia ejus.",
+        "LXX": "Καὶ διεβοήθη ἡ φωνὴ εἰς τὸν οἶκον Φαραὼ λέγοντες Ἥκασιν οἱ ἀδελφοὶ Ἰωσήφ· ἐχάρη δὲ Φαραὼ καὶ ἡ θεραπεία αὐτοῦ.",
+        "NAB": "When the news reached Pharaoh's palace that Joseph's brothers had come, Pharaoh and his courtiers were pleased.",
+        "SYN": "Дошел в дом фараона слух, что пришли братья Иосифа; и приятно было фараону и рабам его.",
+        "NEO": "Le bruit se répandit dans la maison de Pharaon que les frères de Joseph étaient venus : ce qui fut agréable à Pharaon et à ses serviteurs.",
+        "VAT_ES": "Cuando en el palacio del Faraón se difundió la noticia de que habían llegado los hermanos de José, el Faraón y sus servidores vieron esto con buenos ojos.",
+        "CEI": "Intanto nella casa del faraone si era diffusa la voce: \"Sono venuti i fratelli di Giuseppe!\" e questo fece piacere al faraone e ai suoi ministri."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר פַּרְעֹה֙ אֶל יוֹסֵ֔ף אֱמֹ֥ר אֶל אַחֶ֖י/ךָ זֹ֣את עֲשׂ֑וּ טַֽעֲנוּ֙ אֶת בְּעִ֣ירְ/כֶ֔ם וּ/לְכוּ בֹ֖אוּ אַ֥רְצָ/ה כְּנָֽעַן׃",
+        "VUL": "Dixitque ad Joseph ut imperaret fratribus suis, dicens : Onerantes jumenta, ite in terram Chanaan,",
+        "LXX": "εἶπεν δὲ Φαραὼ πρὸς Ἰωσήφ Εἰπὸν τοῖς ἀδελφοῖς σου Τοῦτο ποιήσατε· γεμίσατε τὰ πόρια ὑμῶν καὶ ἀπέλθατε εἰς γῆν Χανάαν,",
+        "NAB": "So Pharaoh told Joseph: \"Say to your brothers: 'This is what you shall do: Load up your animals and go without delay to the land of Canaan.",
+        "SYN": "И сказал фараон Иосифу: скажи братьям твоим: вот что сделайте: навьючьте скот ваш [хлебом] и ступайте в землю Ханаанскую;",
+        "NEO": "Et Pharaon dit à Joseph : « Dis à tes frères : Faites ceci : chargez vos bêtes et partez pour le pays de Canaan",
+        "VAT_ES": "El Faraón dijo a José: «Ordena a tus hermanos que carguen sus animales y vayan en seguida a la tierra de Canaán,",
+        "CEI": "Allora il faraone disse a Giuseppe: \"Dì ai tuoi fratelli: Fate questo: caricate le cavalcature, partite e andate nel paese di Cànaan."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וּ/קְח֧וּ אֶת אֲבִי/כֶ֛ם וְ/אֶת בָּתֵּי/כֶ֖ם וּ/בֹ֣אוּ אֵלָ֑/י וְ/אֶתְּנָ֣ה לָ/כֶ֗ם אֶת טוּב֙ אֶ֣רֶץ מִצְרַ֔יִם וְ/אִכְל֖וּ אֶת חֵ֥לֶב הָ/אָֽרֶץ׃",
+        "VUL": "et tollite inde patrem vestrum et cognationem, et venite ad me : et ego dabo vobis omnia bona Ægypti, ut comedatis medullam terræ.",
+        "LXX": "καὶ παραλαβόντες τὸν πατέρα ὑμῶν καὶ τὰ ὑπάρχοντα ὑμῶν ἥκετε πρὸς μέ· καὶ δώσω ὑμῖν πάντων τῶν ἀγαθῶν Αἰγύπτου, καὶ φάγεσθε τὸν μυελὸν τῆς γῆς.",
+        "NAB": "There get your father and your families, and then come back here to me; I will assign you the best land in Egypt, where you will live off the fat of the land.'",
+        "SYN": "и возьмите отца вашего и семейства ваши и придите ко мне; я дам вам лучшее [место] в земле Египетской, и вы будете есть тук земли.",
+        "NEO": "et, ayant pris votre père et vos familles, revenez auprès de moi. Je vous donnerai ce qu’il y a de meilleur au pays d’Égypte, et vous mangerez la graisse du pays.",
+        "VAT_ES": "para traer aquí a su padre y a sus familias. Yo les daré lo mejor de Egipto, y ustedes vivirán de la fertilidad del suelo.",
+        "CEI": "Poi prendete vostro padre e le vostre famiglie e venite da me e io vi darò il meglio del paese d'Egitto e mangerete i migliori prodotti della terra."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֥ה צֻוֵּ֖יתָה זֹ֣את עֲשׂ֑וּ קְחוּ לָ/כֶם֩ מֵ/אֶ֨רֶץ מִצְרַ֜יִם עֲגָל֗וֹת לְ/טַפְּ/כֶם֙ וְ/לִ/נְשֵׁי/כֶ֔ם וּ/נְשָׂאתֶ֥ם אֶת אֲבִי/כֶ֖ם וּ/בָאתֶֽם׃",
+        "VUL": "Præcipe etiam ut tollant plaustra de terra Ægypti, ad subvectionem parvulorum suorum ac conjugum : et dicito : Tollite patrem vestrum, et properate quantocius venientes.",
+        "LXX": "σὺ δὲ ἔντειλαι ταῦτα, λαβεῖν αὐτοῖς ἁμάξας ἐκ γῆς Αἰγύπτου τοῖς παιδίοις ὑμῶν καὶ ταῖς γυναιξίν, καὶ ἀναλαβόντες τὸν πατέρα ὑμῶν παραγίνεσθε·",
+        "NAB": "Instruct them further: 'Do this. Take wagons from the land of Egypt for your children and your wives and to transport your father on your way back here.",
+        "SYN": "Тебе же повелеваю сказать им: сделайте сие: возьмите себе из земли Египетской колесниц для детей ваших и для жен ваших, и привезите отца вашего и придите;",
+        "NEO": "Tu es autorisé à leur dire : Faites ceci : prenez dans le pays d’Égypte des chariots pour vos enfants et pour vos femmes ; amenez votre père et venez.",
+        "VAT_ES": "Además, ordénales que lleven a Egipto algunos carros para sus niños y sus mujeres, y para trasladar a su padre.",
+        "CEI": "Quanto a te, dà loro questo comando: Fate questo: prendete con voi dal paese d'Egitto carri per i vostri bambini e le vostre donne, prendete vostro padre e venite."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/עֵ֣ינְ/כֶ֔ם אַל תָּחֹ֖ס עַל כְּלֵי/כֶ֑ם כִּי ט֛וּב כָּל אֶ֥רֶץ מִצְרַ֖יִם לָ/כֶ֥ם הֽוּא׃",
+        "VUL": "Nec dimittatis quidquam de supellectili vestra : quia omnes opes Ægypti vestræ erunt.",
+        "LXX": "καὶ μὴ φείσησθε τοῖς ὀφθαλμοῖς ὑμῶν τῶν σκευῶν, τὰ γὰρ πάντα ἀγαθὰ Αἰγύπτου ὑμῖν ἔσται.",
+        "NAB": "Do not be concerned about your belongings, for the best in the whole land of Egypt shall be yours.'\"",
+        "SYN": "и не жалейте вещей ваших, ибо лучшее из всей земли Египетской _дам_ вам.",
+        "NEO": "Que vos yeux ne s’arrêtent pas avec regret sur les objets que vous devrez laisser, car ce qu’il y a de meilleur dans tout le pays d’Égypte est à votre disposition. »",
+        "VAT_ES": "Diles que no se preocupen por las cosas que dejan, porque lo mejor de todo el territorio de Egipto será para ustedes».",
+        "CEI": "Non abbiate rincrescimento per la vostra roba, perché il meglio di tutto il paese sarà vostro\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יַּֽעֲשׂוּ כֵן֙ בְּנֵ֣י יִשְׂרָאֵ֔ל וַ/יִּתֵּ֨ן לָ/הֶ֥ם יוֹסֵ֛ף עֲגָל֖וֹת עַל פִּ֣י פַרְעֹ֑ה וַ/יִּתֵּ֥ן לָ/הֶ֛ם צֵדָ֖ה לַ/דָּֽרֶךְ׃",
+        "VUL": "Feceruntque filii Israël ut eis mandatum fuerat. Quibus dedit Joseph plaustra, secundum Pharaonis imperium, et cibaria in itinere.",
+        "LXX": "ἐποίησαν δὲ οὕτως οἱ υἱοὶ Ἰσραήλ· ἔδωκεν δὲ Ἰωσὴφ αὐτοῖς ἁμάξας κατὰ τὰ εἰρημένα ὑπὸ Φαραὼ τοῦ βασιλέως, καὶ ἔδωκεν αὐτοῖς ἐπισιτισμὸν εἰς τὴν ὁδόν·",
+        "NAB": "The sons of Israel acted accordingly. Joseph gave them the wagons, as Pharaoh had ordered, and he supplied them with provisions for the journey.",
+        "SYN": "Так и сделали сыны Израилевы. И дал им Иосиф колесницы по приказанию фараона, и дал им путевой запас,",
+        "NEO": "Les fils d’Israël firent ainsi ; Joseph leur donna des chariots, selon l’ordre de Pharaon, ainsi que des provisions pour la route.",
+        "VAT_ES": "Así lo hicieron los hijos de Israel. De acuerdo con la orden del Faraón, José les dio unos carros y les entregó provisiones para el camino.",
+        "CEI": "Così fecero i figli di Israele. Giuseppe diede loro carri secondo l'ordine del faraone e diede loro una provvista per il viaggio."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "לְ/כֻלָּ֥/ם נָתַ֛ן לָ/אִ֖ישׁ חֲלִפ֣וֹת שְׂמָלֹ֑ת וּ/לְ/בִנְיָמִ֤ן נָתַן֙ שְׁלֹ֣שׁ מֵא֣וֹת כֶּ֔סֶף וְ/חָמֵ֖שׁ חֲלִפֹ֥ת שְׂמָלֹֽת׃",
+        "VUL": "Singulis quoque proferri jussit binas stolas : Benjamin vero dedit trecentos argenteos cum quinque stolis optimis :",
+        "LXX": "καὶ πᾶσιν ἔδωκεν δισσὰς στολάς, καὶ τῷ Βενιαμεὶν ἔδωκεν τριακοσίους χρυσοῦς καὶ πέντε ἀλλασσούσας στολάς·",
+        "NAB": "He also gave to each of them fresh clothing, but to Benjamin he gave three hundred shekels of silver and five sets of garments.",
+        "SYN": "каждому из них он дал перемену одежд, а Вениамину дал триста сребренников и пять перемен одежд;",
+        "NEO": "Il leur donna à tous des vêtements de rechange, et il donna à Benjamin trois cents pièces d’argent et cinq vêtements de rechange.",
+        "VAT_ES": "Además, dio a cada uno de ellos un vestido nuevo, y a Benjamín le entregó trescientas monedas de plata y varios vestidos nuevos.",
+        "CEI": "Diede a tutti una muta di abiti per ciascuno, ma a Beniamino diede trecento sicli d'argento e cinque mute di abiti."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וּ/לְ/אָבִ֞י/ו שָׁלַ֤ח כְּ/זֹאת֙ עֲשָׂרָ֣ה חֲמֹרִ֔ים נֹשְׂאִ֖ים מִ/טּ֣וּב מִצְרָ֑יִם וְ/עֶ֣שֶׂר אֲתֹנֹ֡ת נֹֽ֠שְׂאֹת בָּ֣ר וָ/לֶ֧חֶם וּ/מָז֛וֹן לְ/אָבִ֖י/ו לַ/דָּֽרֶךְ׃",
+        "VUL": "tantumdem pecuniæ et vestium mittens patri suo, addens et asinos decem, qui subveherent ex omnibus divitiis Ægypti, et totidem asinas, triticum in itinere, panesque portantes.",
+        "LXX": "καὶ τῷ πατρὶ αὐτοῦ ἀπέστειλεν κατὰ τὰ αὐτά, καὶ δέκα ὄνους αἴροντας ἀπὸ πάντων τῶν ἀγαθῶν Αἰγύπτου, καὶ δέκα ἡμιόνους αἰρούσας ἄρτους τῷ πατρὶ αὐτοῦ εἰς ὁδόν.",
+        "NAB": "Moreover, what he sent to his father was ten jackasses loaded with the finest products of Egypt and ten jennies loaded with grain and bread and other provisions for his journey.",
+        "SYN": "также и отцу своему послал десять ослов, навьюченных лучшими _произведениями_ Египетскими, и десять ослиц, навьюченных зерном, хлебом и припасами отцу своему на путь.",
+        "NEO": "Il envoya également à son père dix ânes chargés des meilleurs produits de l’Égypte, et dix ânesses chargées de blé, de pain et de vivres, pour son père pendant le voyage.",
+        "VAT_ES": "También envió a su padre diez asnos cargados con los mejores productos de Egipto, y diez asnas cargadas de cereales, de pan y de víveres para el viaje.",
+        "CEI": "Allo stesso modo mandò al padre dieci asini carichi dei migliori prodotti dell'Egitto e dieci asine cariche di grano, pane e viveri per il viaggio del padre."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יְשַׁלַּ֥ח אֶת אֶחָ֖י/ו וַ/יֵּלֵ֑כוּ וַ/יֹּ֣אמֶר אֲלֵ/הֶ֔ם אַֽל תִּרְגְּז֖וּ בַּ/דָּֽרֶךְ׃",
+        "VUL": "Dimisit ergo fratres suos, et proficiscentibus ait : Ne irascamini in via.",
+        "LXX": "ἐξαπέστειλεν δὲ τοὺς ἀδελφοὺς αὐτοῦ καὶ ἐπορεύθησαν· καὶ εἶπεν αὐτοῖς Μὴ ὀργίζεσθε ἐν τῇ ὁδῷ.",
+        "NAB": "As he sent his brothers on their way, he told them, \"Let there be no recriminations on the way.\"",
+        "SYN": "И отпустил братьев своих, и они пошли. И сказал им: не ссорьтесь на дороге.",
+        "NEO": "Puis il congédia ses frères, qui partirent ; et il leur dit : « Ne vous querellez pas en chemin. »",
+        "VAT_ES": "Y cuando despidió a sus hermanos antes que partieran, les recomendó: «Vayan tranquilos».",
+        "CEI": "Poi congedò i fratelli e, mentre partivano, disse loro: \"Non litigate durante il viaggio!\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַֽ/יַּעֲל֖וּ מִ/מִּצְרָ֑יִם וַ/יָּבֹ֨אוּ֙ אֶ֣רֶץ כְּנַ֔עַן אֶֽל יַעֲקֹ֖ב אֲבִי/הֶֽם׃",
+        "VUL": "Qui ascendentes ex Ægypto, venerunt in terram Chanaan ad patrem suum Jacob.",
+        "LXX": "καὶ ἀνέβησαν ἐξ Αἰγύπτου, καὶ ἦλθον εἰς γῆν Χανάαν πρὸς Ἰακὼβ τὸν πατέρα αὐτῶν,",
+        "NAB": "So they left Egypt and made their way to their father Jacob in the land of Canaan.",
+        "SYN": "И пошли они из Египта, и пришли в землю Ханаанскую к Иакову, отцу своему,",
+        "NEO": "Ayant monté de l’Égypte, ils arrivèrent dans le pays de Canaan, auprès de Jacob, leur père.",
+        "VAT_ES": "Ellos salieron de Egipto y llegaron a la tierra de Canaán, donde se encontraba su padre Jacob.",
+        "CEI": "Così essi ritornarono dall'Egitto e arrivarono nel paese di Cànaan, dal loro padre Giacobbe"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יַּגִּ֨דוּ ל֜/וֹ לֵ/אמֹ֗ר ע֚וֹד יוֹסֵ֣ף חַ֔י וְ/כִֽי ה֥וּא מֹשֵׁ֖ל בְּ/כָל אֶ֣רֶץ מִצְרָ֑יִם וַ/יָּ֣פָג לִבּ֔/וֹ כִּ֥י לֹא הֶאֱמִ֖ין לָ/הֶֽם׃",
+        "VUL": "Et nuntiaverunt ei, dicentes : Joseph filius tuus vivit : et ipse dominatur in omni terra Ægypti. Quo audito Jacob, quasi de gravi somno evigilans, tamen non credebat eis.",
+        "LXX": "καὶ ἀνήγγειλαν αὐτῷ λέγοντες ὅτι Ὁ υἱός σου Ἰωσὴφ ζῇ, καὶ οὗτος ἄρχει πάσης τῆς γῆς Αἰγύπτου. καὶ ἐξέστη ἡ διάνοια Ἰακώβ, οὐ γὰρ ἐπίστευσεν αὐτοῖς.",
+        "NAB": "When they told him, \"Joseph is still alive - in fact, it is he who is ruler of all the land of Egypt,\" he was dumbfounded; he could not believe them.",
+        "SYN": "и известили его, сказав: Иосиф [сын твой] жив и теперь владычествует над всею землею Египетскою. Но сердце его смутилось, ибо он не верил им.",
+        "NEO": "Ils lui dirent : « Joseph vit encore, c’est même lui qui gouverne tout le pays d’Égypte. » Mais son cœur resta froid, parce qu’il ne les croyait pas.",
+        "VAT_ES": "Cuando le anunciaron que José estaba vivo y era el gobernador de todo Egipto, Jacob no se conmovió, porque no les podía creer.",
+        "CEI": "e subito gli riferirono: \"Giuseppe è ancora vivo, anzi governa tutto il paese d'Egitto!\". Ma il suo cuore rimase freddo, perché non poteva credere loro."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יְדַבְּר֣וּ אֵלָ֗י/ו אֵ֣ת כָּל דִּבְרֵ֤י יוֹסֵף֙ אֲשֶׁ֣ר דִּבֶּ֣ר אֲלֵ/הֶ֔ם וַ/יַּרְא֙ אֶת הָ֣/עֲגָל֔וֹת אֲשֶׁר שָׁלַ֥ח יוֹסֵ֖ף לָ/שֵׂ֣את אֹת֑/וֹ וַ/תְּחִ֕י ר֖וּחַ יַעֲקֹ֥ב אֲבִי/הֶֽם׃",
+        "VUL": "Illi e contra referebant omnem ordinem rei. Cumque vidisset plaustra et universa quæ miserat, revixit spiritus ejus,",
+        "LXX": "ἐλάλησαν δὲ αὐτῷ πάντα τὰ ῥηθέντα ὑπὸ Ἰωσὴφ ὅσα εἶπεν αὐτοῖς· ἰδὼν δὲ τὰς ἁμάξας ἃς ἀπέστειλεν Ἰωσὴφ ὥστε ἀναλαβεῖν αὐτόν, ἀνεζωπύρησεν τὸ πνεῦμα Ἰακὼβ τοῦ πατρὸς αὐτῶν.",
+        "NAB": "But when they recounted to him all that Joseph had told them, and when he saw the wagons that Joseph had sent for his transport, the spirit of their father Jacob revived.",
+        "SYN": "Когда же они пересказали ему все слова Иосифа, которые он говорил им, и когда увидел колесницы, которые прислал Иосиф, чтобы везти его, тогда ожил дух Иакова, отца их,",
+        "NEO": "Ils lui rapportèrent alors toutes les paroles que Joseph avait dites. Lorsqu’il eut vu les chariots que Joseph avait envoyés pour le transporter, l’esprit de Jacob, leur père, se ranima,",
+        "VAT_ES": "Entonces le repitieron todo lo que les había dicho José y, al ver los carros que le había enviado para transportarlo, su espíritu revivió.",
+        "CEI": "Quando però essi gli riferirono tutte le parole che Giuseppe aveva detto loro ed egli vide i carri che Giuseppe gli aveva mandati per trasportarlo, allora lo spirito del loro padre Giacobbe si rianimò."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר֙ יִשְׂרָאֵ֔ל רַ֛ב עוֹד יוֹסֵ֥ף בְּנִ֖/י חָ֑י אֵֽלְכָ֥ה וְ/אֶרְאֶ֖/נּוּ בְּ/טֶ֥רֶם אָמֽוּת׃",
+        "VUL": "et ait : Sufficit mihi si adhuc Joseph filius meus vivit : vadam, et videbo illum antequam moriar.",
+        "LXX": "εἶπεν δὲ Ἰσραήλ Μέγα μοί ἐστιν εἰ ἔτι ὁ υἱός μου Ἰωσὴφ ζῇ· πορευθεὶς ὄψομαι αὐτὸν πρὸ τοῦ ἀποθανεῖν με.",
+        "NAB": "\"It is enough,\" said Israel. \"My son Joseph is still alive! I must go and see him before I die.\"",
+        "SYN": "и сказал Израиль: довольно [сего для меня], еще жив сын мой Иосиф; пойду и увижу его, пока не умру.",
+        "NEO": "et Israël dit : « C’est assez ! Joseph, mon fils, vit encore ! j’irai et je le verrai avant de mourir. »",
+        "VAT_ES": "Israel exclamó: «Ya es suficiente. &iexcl;Mi hijo José vive todavía! Tengo que ir a verlo antes de morir».",
+        "CEI": "Israele disse: \"Basta! Giuseppe, mio figlio, è vivo. Andrò a vederlo prima di morire!\"."
+      }
+    }
+  }
+}

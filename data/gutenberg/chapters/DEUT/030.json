@@ -1,0 +1,375 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_030",
+  "book_key": "DEUT",
+  "sequence": 30,
+  "chapter_in": {
+    "MT": 30,
+    "VUL": 30,
+    "LXX": 30
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֩ כִֽי יָבֹ֨אוּ עָלֶ֜י/ךָ כָּל הַ/דְּבָרִ֣ים הָ/אֵ֗לֶּה הַ/בְּרָכָה֙ וְ/הַ/קְּלָלָ֔ה אֲשֶׁ֥ר נָתַ֖תִּי לְ/פָנֶ֑י/ךָ וַ/הֲשֵׁבֹתָ֙ אֶל לְבָבֶ֔/ךָ בְּ/כָל הַ/גּוֹיִ֔ם אֲשֶׁ֧ר הִדִּיחֲ/ךָ֛ יְהוָ֥ה אֱלֹהֶ֖י/ךָ שָֽׁמָּ/ה׃",
+        "LXX": "Καὶ ἔσται ὡς ἂν ἔλθωσιν ἐπὶ σὲ πάντα τὰ ῥήματα ταῦτα, ἡ εὐλογία καὶ ἡ κατάρα ἣν ἔδωκα πρὸ προσώπου σου, καὶ δέξῃ εἰς τὴν καρδίαν σου ἐν πᾶσιν τοῖς ἔθνεσιν οὗ ἐάν σε διασκορπίσῃ Κύριος ἐκεῖ,",
+        "VUL": "Cum ergo venerint super te omnes sermones isti, benedictio sive maledictio, quam proposui in conspectu tuo : et ductus pnitudine cordis tui in universis gentibus, in quas disperserit te Dominus Deus tuus,",
+        "SYN": "Когда придут на тебя все слова сии -- благословение и проклятие, которые изложил я тебе, и примешь _их_ к сердцу своему среди всех народов, в которых рассеет тебя Господь Бог твой,",
+        "NEO": "Lorsque toutes ces choses seront venues sur toi, la bénédiction et la malédiction que j’ai mises devant toi, et que tu les auras de nouveau prises à cœur, au milieu de toutes les nations parmi lesquelles t’aura chassé \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu,",
+        "NAB": "\"When all these things which I have set before you, the blessings and the curses, are fulfilled in you, and from among whatever nations the LORD, your God, may have dispersed you, you ponder them in your heart:",
+        "VAT_ES": "Cuando te sucedan todas estas cosas –la bendición y la maldición que he puesto delante de ti– si las meditas en tu corazón en medio de las naciones donde el Señor, tu Dios, y tú te habrá arrojado,",
+        "CEI": "Quando tutte queste cose che io ti ho poste dinanzi, la benedizione e la maledizione, si saranno realizzate su di te e tu le richiamerai alla tua mente in mezzo a tutte le nazioni, dove il Signore tuo Dio ti avrà scacciato,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/שַׁבְתָּ֞ עַד יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ וְ/שָׁמַעְתָּ֣ בְ/קֹל֔/וֹ כְּ/כֹ֛ל אֲשֶׁר אָנֹכִ֥י מְצַוְּ/ךָ֖ הַ/יּ֑וֹם אַתָּ֣ה וּ/בָנֶ֔י/ךָ בְּ/כָל לְבָבְ/ךָ֖ וּ/בְ/כָל נַפְשֶֽׁ/ךָ׃",
+        "LXX": "καὶ ἐπιστραφήσῃ ἐπὶ Κύριον τὸν θεόν σου, καὶ εἰσακούσῃ τῆς φωνῆς αὐτοῦ κατὰ πάντα ὅσα ἐγὼ ἐντέλλομαί σοι σήμερον ἐξ ὅλης τῆς καρδίας σου καὶ ἐξ ὅλης τῆς ψυχῆς σου,",
+        "VUL": "et reversus fueris ad eum, et obedieris ejus imperiis, sicut ego hodie præcipio tibi, cum filiis tuis, in toto corde tuo, et in tota anima tua :",
+        "SYN": "и обратишься к Господу Богу твоему и послушаешь гласа Его, как я заповедую тебе сегодня, ты и сыны твои от всего сердца твоего и от всей души твоей, --",
+        "NEO": "si tu reviens à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, et que tu obéisses à sa voix, toi et tes enfants, de tout ton cœur et de toute ton âme, selon tout ce que je te prescris aujourd’hui,",
+        "NAB": "then, provided that you and your children return to the LORD, your God, and heed his voice with all your heart and all your soul, just as I now command you,",
+        "VAT_ES": "si te conviertes al Señor, tu Dios, y tus hijos le obedecen con todo su corazón y con toda su alma, exactamente como hoy te lo ordeno,",
+        "CEI": "se ti convertirai al Signore tuo Dio e obbedirai alla sua voce, tu e i tuoi figli, con tutto il cuore e con tutta l'anima, secondo quanto oggi ti comando,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/שָׁ֨ב יְהוָ֧ה אֱלֹהֶ֛י/ךָ אֶת שְׁבוּתְ/ךָ֖ וְ/רִחֲמֶ֑/ךָ וְ/שָׁ֗ב וְ/קִבֶּצְ/ךָ֙ מִ/כָּל הָ֣/עַמִּ֔ים אֲשֶׁ֧ר הֱפִֽיצְ/ךָ֛ יְהוָ֥ה אֱלֹהֶ֖י/ךָ שָֽׁמָּ/ה׃",
+        "LXX": "καὶ ἰάσηται Κύριος τὰς ἁμαρτίας σου· καὶ ἐλεήσει σε, καὶ πάλιν συνάξει σε ἐκ πάντων τῶν ἐθνῶν εἰς οὓς διεσκόρπισέν σε Κύριος ἐκεῖ.",
+        "VUL": "reducet Dominus Deus tuus captivitatem tuam, ac miserebitur tui, et rursum congregabit te de cunctis populis, in quos te ante dispersit.",
+        "SYN": "тогда Господь Бог твой возвратит пленных твоих и умилосердится над тобою, и опять соберет тебя от всех народов, между которыми рассеет тебя Господь Бог твой.",
+        "NEO": "alors \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, ramènera tes captifs et aura compassion de toi ; il te rassemblera de nouveau du milieu de tous les peuples chez lesquels \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’aura dispersé.",
+        "NAB": "the LORD, your God, will change your lot; and taking pity on you, he will again gather you from all the nations wherein he has scattered you.",
+        "VAT_ES": "entonces el Señor, tu Dios, cambiará tu suerte y tendrá misericordia de ti. El te volverá a reunir de entre todos los pueblos por donde te había dispersado.",
+        "CEI": "allora il Signore tuo Dio farà tornare i tuoi deportati, avrà pietà di te e ti raccoglierà di nuovo da tutti i popoli, in mezzo ai quali il Signore tuo Dio ti aveva disperso."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אִם יִהְיֶ֥ה נִֽדַּחֲ/ךָ֖ בִּ/קְצֵ֣ה הַ/שָּׁמָ֑יִם מִ/שָּׁ֗ם יְקַבֶּצְ/ךָ֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ וּ/מִ/שָּׁ֖ם יִקָּחֶֽ/ךָ׃",
+        "LXX": "ἐὰν ᾖ ἡ διασπορά σου ἀπ’ ἄκρου τοῦ οὐρανοῦ ἕως ἄκρου τοῦ οὐρανοῦ, ἐκεῖθεν συνάξει σε Κύριος ὁ θεός σου, καὶ ἐκεῖθεν λήμψεταί σε Κύριος ὁ θεός σου·",
+        "VUL": "Si ad cardines cæli fueris dissipatus, inde te retrahet Dominus Deus tuus,",
+        "SYN": "Хотя бы ты был рассеян [от края неба] до края неба, и оттуда соберет тебя Господь Бог твой, и оттуда возьмет тебя,",
+        "NEO": "Quand tes exilés seraient à l’extrémité du ciel, \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te rassemblera de là, il ira jusque-là te prendre.",
+        "NAB": "Though you may have been driven to the farthest corner of the world, even from there will the LORD, your God, gather you; even from there will he bring you back.",
+        "VAT_ES": "Aunque tus desterrados se encuentren en los confines del cielo, de allí el Señor, tu Dios, te volverá a reunir, de allí te tomará.",
+        "CEI": "Quand'anche i tuoi esuli fossero all'estremità dei cieli, di là il Signore tuo Dio ti raccoglierà e di là ti riprenderà."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וֶ/הֱבִֽיאֲ/ךָ֞ יְהוָ֣ה אֱלֹהֶ֗י/ךָ אֶל הָ/אָ֛רֶץ אֲשֶׁר יָרְשׁ֥וּ אֲבֹתֶ֖י/ךָ וִֽ/ירִשְׁתָּ֑/הּ וְ/הֵיטִֽבְ/ךָ֥ וְ/הִרְבְּ/ךָ֖ מֵ/אֲבֹתֶֽי/ךָ׃",
+        "LXX": "καὶ εἰσάξει σε ὁ θεός σου ἐκεῖθεν εἰς τὴν γῆν ἣν ἐκληρονόμησαν οἱ πατέρες σου, καὶ κληρονομήσεις αὐτήν· καὶ εὖ σε ποιήσει, καὶ πλεοναστόν σε ποιήσει ὑπὲρ τοὺς πατέρας σου.",
+        "VUL": "et assumet, atque introducet in terram, quam possederunt patres tui, et obtinebis eam : et benedicens tibi, majoris numeri te esse faciat quam fuerunt patres tui.",
+        "SYN": "и [оттуда] приведет тебя Господь Бог твой в землю, которою владели отцы твои, и получишь ее во владение, и облагодетельствует тебя и размножит тебя более отцов твоих;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te ramènera dans le pays qu’auront possédé tes pères, et tu le posséderas ; il te fera du bien et te rendra plus nombreux que tes pères.",
+        "NAB": "The LORD, your God, will then bring you into the land which your fathers once occupied, that you too may occupy it, and he will make you more prosperous and numerous than your fathers.",
+        "VAT_ES": "El te hará entrar en la tierra que poseyeron tus padres, y tú también la poseerás; y hará que seas más feliz y numeroso que tus padres.",
+        "CEI": "Il Signore tuo Dio ti ricondurrà nel paese che i tuoi padri avevano posseduto e tu lo possiederai; Egli ti farà felice e ti moltiplicherà più dei tuoi padri."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וּ/מָ֨ל יְהוָ֧ה אֱלֹהֶ֛י/ךָ אֶת לְבָבְ/ךָ֖ וְ/אֶת לְבַ֣ב זַרְעֶ֑/ךָ לְ/אַהֲבָ֞ה אֶת יְהוָ֧ה אֱלֹהֶ֛י/ךָ בְּ/כָל לְבָבְ/ךָ֥ וּ/בְ/כָל נַפְשְׁ/ךָ֖ לְמַ֥עַן חַיֶּֽי/ךָ׃",
+        "LXX": "καὶ περικαθαριεῖ Κύριος τὴν καρδίαν σου καὶ τὴν καρδίαν τοῦ σπέρματός σου, ἀγαπᾷν Κύριον τὸν θεόν σου ἐξ ὅλης τῆς καρδίας σου καὶ ἐξ ὅλης τῆς ψυχῆς σου, ἵνα ζῇς σύ.",
+        "VUL": "Circumcidet Dominus Deus tuus cor tuum, et cor seminis tui, ut diligas Dominum Deum tuum in toto corde tuo, et in tota anima tua, ut possis vivere.",
+        "SYN": "и обрежет Господь Бог твой сердце твое и сердце потомства твоего, чтобы ты любил Господа Бога твоего от всего сердца твоего и от всей души твоей, дабы жить тебе;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, circoncira ton cœur et le cœur de ta postérité, pour que tu aimes \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, de tout ton cœur et de toute ton âme, afin que tu vives.",
+        "NAB": "The LORD, your God, will circumcise your hearts and the hearts of your descendants, that you may love the LORD, your God, with all your heart and all your soul, and so may live.",
+        "VAT_ES": "El Señor, tu Dios, circuncidará tu corazón y el corazón de tus descendientes, para que lo ames con todo tu corazón y con toda tu alma, y así tengas vida.",
+        "CEI": "Il Signore tuo Dio circonciderà il tuo cuore e il cuore della tua discendenza, perché tu ami il Signore tuo Dio con tutto il cuore e con tutta l'anima e viva."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/נָתַן֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ אֵ֥ת כָּל הָ/אָל֖וֹת הָ/אֵ֑לֶּה עַל אֹיְבֶ֥י/ךָ וְ/עַל שֹׂנְאֶ֖י/ךָ אֲשֶׁ֥ר רְדָפֽוּ/ךָ׃",
+        "LXX": "καὶ δώσει Κύριος ὁ θεός σου τὰς ἀρὰς ταύτας ἐπὶ τοὺς ἐχθρούς σου καὶ ἐπὶ τοὺς μισοῦντάς σε, οἳ ἐδίωξάν σε.",
+        "VUL": "Omnes autem maledictiones has convertet super inimicos tuos, et eos qui oderunt te et persequuntur.",
+        "SYN": "тогда Господь Бог твой все проклятия сии обратит на врагов твоих и ненавидящих тебя, которые гнали тебя,",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, fera tomber toutes ces malédictions sur tes ennemis, sur ceux qui t’auront haï et persécuté.",
+        "NAB": "But all those curses the LORD, your God, will assign to your enemies and the foes who persecuted you.",
+        "VAT_ES": "Y él hará caer todas estas maldiciones sobre tus enemigos y sobre los adversarios que te hayan perseguido.",
+        "CEI": "Il Signore tuo Dio farà cadere tutte queste imprecazioni sui tuoi nemici e su quanti ti odieranno e perseguiteranno."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אַתָּ֣ה תָשׁ֔וּב וְ/שָׁמַעְתָּ֖ בְּ/ק֣וֹל יְהוָ֑ה וְ/עָשִׂ֨יתָ֙ אֶת כָּל מִצְוֺתָ֔י/ו אֲשֶׁ֛ר אָנֹכִ֥י מְצַוְּ/ךָ֖ הַ/יּֽוֹם׃",
+        "LXX": "καὶ σὺ ἐπιστραφήσῃ ἐπὶ Κύριον καὶ εἰσακούσῃ τῆς φωνῆς Κυρίου τοῦ θεοῦ σου, καὶ ποιήσεις τὰς ἐντολὰς αὐτοῦ ὅσας ἐγὼ ἐντέλλομαί σοι σήμερον·",
+        "VUL": "Tu autem reverteris, et audies vocem Domini Dei tui, faciesque universa mandata quæ ego præcipio tibi hodie :",
+        "SYN": "а ты обратишься и будешь слушать гласа Господа [Бога твоего] и исполнять все заповеди Его, которые заповедую тебе сегодня;",
+        "NEO": "Et toi, de nouveau, tu écouteras la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, et tu mettras en pratique tous ces commandements que je te prescris aujourd’hui ;",
+        "NAB": "You, however, must again heed the LORD'S voice and carry out all his commandments which I now enjoin on you.",
+        "VAT_ES": "Entonces tú escucharás de nuevo la voz del Señor y pondrás en práctica todos sus mandamientos, tal como hoy te los prescribo.",
+        "CEI": "Tu ti convertirai, obbedirai alla voce del Signore e metterai in pratica tutti questi comandi che oggi ti dò."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הוֹתִֽירְ/ךָ֩ יְהוָ֨ה אֱלֹהֶ֜י/ךָ בְּ/כֹ֣ל מַעֲשֵׂ֣ה יָדֶ֗/ךָ בִּ/פְרִ֨י בִטְנְ/ךָ֜ וּ/בִ/פְרִ֧י בְהֶמְתְּ/ךָ֛ וּ/בִ/פְרִ֥י אַדְמָתְ/ךָ֖ לְ/טוֹבָ֑ה כִּ֣י יָשׁ֣וּב יְהוָ֗ה לָ/שׂ֤וּשׂ עָלֶ֨י/ךָ֙ לְ/ט֔וֹב כַּ/אֲשֶׁר שָׂ֖שׂ עַל אֲבֹתֶֽי/ךָ׃",
+        "LXX": "καὶ εὐλογήσει σε Κύριος ὁ θεός σου ἐν παντὶ ἔργῳ τῶν χειρῶν σου, ἐν τοῖς ἐκγόνοις τῆς κοιλίας σου καὶ ἐν τοῖς γενήμασιν τῆς γῆς σου καὶ ἐν τοῖς ἐκγόνοις τῶν κτηνῶν σου. ὅτι ἐπιστρέψει Κύριος ὁ θεός σου εὐφρανθῆναι ἐπὶ σοὶ εἰς ἀγαθά, καθότι ηὐφράνθη ἐπὶ τοῖς πατράσιν σου·",
+        "VUL": "et abundare te faciet Dominus Deus tuus in cunctis operibus manuum tuarum, in sobole uteri tui, et in fructu jumentorum tuorum, in ubertate terræ tuæ, et in rerum omnium largitate. Revertetur enim Dominus, ut gaudeat super te in omnibus bonis, sicut gavisus est in patribus tuis :",
+        "SYN": "с избытком даст тебе Господь Бог твой успех во всяком деле рук твоих, в плоде чрева твоего, в плоде скота твоего, в плоде земли твоей; ибо снова радоваться будет Господь [Бог твой] о тебе, благодетельствуя _тебе,_ как Он радовался об отцах твоих,",
+        "NEO": "et \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te comblera de biens dans tout le travail de tes mains, dans le fruit de tes entrailles, dans le fruit de tes troupeaux et dans le fruit de ton sol ; car \\+w Yahweh|strong=\"H3068\"\\+w** se réjouira de nouveau à ton sujet en te faisant du bien, comme il s’est réjoui au sujet de tes pères,",
+        "NAB": "Then the LORD, your God, will increase in more than goodly measure the returns from all your labors, the fruit of your womb, the offspring of your livestock, and the produce of your soil; for the LORD, your God, will again take delight in your prosperity, even as he took delight in your fathers',",
+        "VAT_ES": "El Señor, tu Dios, te dará abundante prosperidad en todas tus empresas, en el fruto de tus entrarás, en las crías de tu ganado y en los productos de tu suelo. Porque el Señor volverá a complacerse en tu prosperidad, como antes se había complacido en la prosperidad de tus padres.",
+        "CEI": "Il Signore tuo Dio ti farà sovrabbondare di beni in ogni lavoro delle tue mani, nel frutto delle tue viscere, nel frutto del tuo bestiame e nel frutto del tuo suolo; perché il Signore gioirà di nuovo per te facendoti felice, come gioiva per i tuoi padri,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּ֣י תִשְׁמַ֗ע בְּ/קוֹל֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ לִ/שְׁמֹ֤ר מִצְוֺתָי/ו֙ וְ/חֻקֹּתָ֔י/ו הַ/כְּתוּבָ֕ה בְּ/סֵ֥פֶר הַ/תּוֹרָ֖ה הַ/זֶּ֑ה כִּ֤י תָשׁוּב֙ אֶל יְהוָ֣ה אֱלֹהֶ֔י/ךָ בְּ/כָל לְבָבְ/ךָ֖ וּ/בְ/כָל נַפְשֶֽׁ/ךָ׃",
+        "LXX": "ἐὰν εἰσακούσῃς τῆς φωνῆς Κυρίου τοῦ θεοῦ σου, φυλάσσεσθαι τὰς ἐντολὰς αὐτοῦ καὶ τὰ δικαιώματα αὐτοῦ καὶ τὰς κρίσεις αὐτοῦ τὰς γεγραμμένας ἐν τῷ βιβλίῳ τοῦ νόμου τούτου, ἐὰν ἐπιστραφῇς ἐπὶ Κύριον τὸν θεόν σου ἐξ ὅλης τῆς καρδίας σου καὶ ἐξ ὅλης τῆς ψυχῆς σου.",
+        "VUL": "si tamen audieris vocem Domini Dei tui, et custodieris præcepta ejus et cæremonias, quæ in hac lege conscripta sunt : et revertaris ad Dominum Deum tuum in toto corde tuo, et in tota anima tua.",
+        "SYN": "если будешь слушать гласа Господа Бога твоего, соблюдая [и исполняя все] заповеди Его и постановления Его [и законы Его], написанные в сей книге закона, и если обратишься к Господу Богу твоему всем сердцем твоим и всею душею твоею.",
+        "NEO": "si tu obéis à la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, en observant ses commandements et ses préceptes écrits dans ce livre de la loi, si tu reviens à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, de tout ton cœur et de toute ton âme.",
+        "NAB": "if only you heed the voice of the LORD, your God, and keep his commandments and statutes that are written in this book of the law, when you return to the LORD, your God, with all your heart and all your soul.",
+        "VAT_ES": "Todo esto te sucederá porque habrás escuchado la voz del Señor, tu Dios, y observado sus mandamientos y sus leyes, que están escritas en este libro de la Ley, después de haberte convertido al Señor, tu Dios, con todo tu corazón y con toda tu alma.",
+        "CEI": "quando obbedirai alla voce del Signore tuo Dio, osservando i suoi comandi e i suoi decreti, scritti in questo libro della legge; quando ti sarai convertito al Signore tuo Dio con tutto il cuore e con tutta l'anima."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּ֚י הַ/מִּצְוָ֣ה הַ/זֹּ֔את אֲשֶׁ֛ר אָנֹכִ֥י מְצַוְּ/ךָ֖ הַ/יּ֑וֹם לֹֽא נִפְלֵ֥את הִוא֙ מִמְּ/ךָ֔ וְ/לֹ֥א רְחֹקָ֖ה הִֽוא׃",
+        "LXX": "Ὅτι ἡ ἐντολὴ αὕτη ἣν ἐγὼ ἐντέλλομαί σοι σήμερον οὐχ ὑπέρογκός ἐστιν, οὐδὲ μακρὰν ἀπὸ σοῦ.",
+        "VUL": "Mandatum hoc, quod ego præcipio tibi hodie, non supra te est, neque procul positum,",
+        "SYN": "Ибо заповедь сия, которую я заповедую тебе сегодня, не недоступна для тебя и не далека;",
+        "NEO": "Ce commandement que je te prescris aujourd’hui n’est pas au-dessus de toi ni hors de ta portée.",
+        "NAB": "\"For this command which I enjoin on you today is not too mysterious and remote for you.",
+        "VAT_ES": "Este mandamiento que hoy te prescribo no es superior a tus fuerzas ni está fuera de tu alcance.",
+        "CEI": "Questo comando che oggi ti ordino non è troppo alto per te, né troppo lontano da te."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "לֹ֥א בַ/שָּׁמַ֖יִם הִ֑וא לֵ/אמֹ֗ר מִ֣י יַעֲלֶה לָּ֤/נוּ הַ/שָּׁמַ֨יְמָ/ה֙ וְ/יִקָּחֶ֣/הָ לָּ֔/נוּ וְ/יַשְׁמִעֵ֥/נוּ אֹתָ֖/הּ וְ/נַעֲשֶֽׂ/נָּה׃",
+        "LXX": "οὐκ ἐν τῷ οὐρανῷ ἄνω ἐστὶν λέγων Τίς ἀναβήσεται ἡμῖν εἰς τὸν οὐρανὸν καὶ λήμψεται αὐτὴν ἡμῖν, καὶ ἀκούσαντες αὐτὸ ποιήσομεν;",
+        "VUL": "nec in cælo situm, ut possis dicere : Quis nostrum valet ad cælum ascendere, ut deferat illud ad nos, et audiamus atque opere compleamus ?",
+        "SYN": "она не на небе, чтобы можно _было_ говорить: \"кто взошел бы для нас на небо и принес бы ее нам, и дал бы нам услышать ее, и мы исполнили бы ее?\"",
+        "NEO": "Il n’est pas dans le ciel, pour que tu dises : « Qui montera pour nous au ciel et nous l’ira chercher, et nous le fera entendre, afin que nous l’accomplissions ? »",
+        "NAB": "It is not up in the sky, that you should say, 'Who will go up in the sky to get it for us and tell us of it, that we may carry it out?'",
+        "VAT_ES": "No está en el cielo, para que digas: «&iquest;Quién subirá por nosotros al cielo y lo traerá hasta aquí, de manera que podamos escucharlo y ponerlo en práctica?",
+        "CEI": "Non è nel cielo, perché tu dica: Chi salirà per noi in cielo, per prendercelo e farcelo udire e lo possiamo eseguire?"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא מֵ/עֵ֥בֶר לַ/יָּ֖ם הִ֑וא לֵ/אמֹ֗ר מִ֣י יַעֲבָר לָ֜/נוּ אֶל עֵ֤בֶר הַ/יָּם֙ וְ/יִקָּחֶ֣/הָ לָּ֔/נוּ וְ/יַשְׁמִעֵ֥/נוּ אֹתָ֖/הּ וְ/נַעֲשֶֽׂ/נָּה׃",
+        "LXX": "οὐδὲ πέραν τῆς θαλάσσης ἐστίν, λέγων Τίς διαπεράσει ἡμῖν εἰς τὸ πέραν τῆς θαλάσσης, καὶ λάβῃ ἡμῖν αὐτὴν καὶ ἀκουστὴν ἡμῖν ποιήσῃ αὐτήν, καὶ ποιήσομεν;",
+        "VUL": "neque trans mare positum : ut causeris, et dicas : Quis ex nobis poterit transfretare mare, et illud ad nos usque deferre, ut possimus audire et facere quod præceptum est ?",
+        "SYN": "и не за морем она, чтобы можно _было_ говорить: \"кто сходил бы для нас за море и принес бы ее нам, и дал бы нам услышать ее, и мы исполнили бы ее?\"",
+        "NEO": "Il n’est pas au-delà de la mer, pour que tu dises : « Qui passera pour nous au delà de la mer et nous l’ira chercher, et nous le fera entendre, afin que nous l’accomplissions ? »",
+        "NAB": "Nor is it across the sea, that you should say, 'Who will cross the sea to get it for us and tell us of it, that we may carry it out?'",
+        "VAT_ES": "Ni tampoco está más allá del mar, para que digas: «&iquest;Quién cruzará por nosotros a la otra orilla y lo traerá hasta aquí, de manera que podamos escucharlo y ponerlo en práctica?»",
+        "CEI": "Non è di là dal mare, perché tu dica: Chi attraverserà per noi il mare per prendercelo e farcelo udire e lo possiamo eseguire?"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כִּֽי קָר֥וֹב אֵלֶ֛י/ךָ הַ/דָּבָ֖ר מְאֹ֑ד בְּ/פִ֥י/ךָ וּ/בִֽ/לְבָבְ/ךָ֖ לַ/עֲשֹׂתֽ/וֹ׃",
+        "LXX": "ἔστιν σου ἐγγὺς τὸ ῥῆμα σφόδρα ἐν τῷ στόματί σου καὶ ἐν τῇ καρδίᾳ σου καὶ ἐν ταῖς χερσίν σου αὐτὸ ποιεῖν.",
+        "VUL": "sed juxta te est sermo valde, in ore tuo, et in corde tuo, ut facias illum.",
+        "SYN": "но весьма близко к тебе слово сие: _оно_ в устах твоих и в сердце твоем, чтобы исполнять его.",
+        "NEO": "Mais la parole est tout près de toi, dans ta bouche et dans ton cœur, afin que tu l’accomplisses.",
+        "NAB": "No, it is something very near to you, already in your mouths and in your hearts; you have only to carry it out.",
+        "VAT_ES": "No, la palabra está muy cerca de ti, en tu boca y en tu corazón, para que la practiques.",
+        "CEI": "Anzi, questa parola è molto vicina a te, è nella tua bocca e nel tuo cuore, perché tu la metta in pratica."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "רְאֵ֨ה נָתַ֤תִּי לְ/פָנֶ֨י/ךָ֙ הַ/יּ֔וֹם אֶת הַֽ/חַיִּ֖ים וְ/אֶת הַ/טּ֑וֹב וְ/אֶת הַ/מָּ֖וֶת וְ/אֶת הָ/רָֽע׃",
+        "LXX": "Ἰδοὺ δέδωκα πρὸ προσώπου σου σήμερον τὴν ζωὴν καὶ τὸν θάνατον, τὸ ἀγαθὸν καὶ τὸ κακόν.",
+        "VUL": "Considera quod hodie proposuerim in conspectu tuo, vitam et bonum, et e contrario mortem et malum :",
+        "SYN": "Вот, я сегодня предложил тебе жизнь и добро, смерть и зло.",
+        "NEO": "Vois, j’ai mis aujourd’hui devant toi la vie et le bien, la mort et le mal,",
+        "NAB": "\"Here, then, I have today set before you life and prosperity, death and doom.",
+        "VAT_ES": "Hoy pongo delante de ti la vida y la felicidad, la muerte y la desdicha.",
+        "CEI": "Vedi, io pongo oggi davanti a te la vita e il bene, la morte e il male;"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֨ר אָנֹכִ֣י מְצַוְּ/ךָ֮ הַ/יּוֹם֒ לְ/אַהֲבָ֞ה אֶת יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ לָ/לֶ֣כֶת בִּ/דְרָכָ֔י/ו וְ/לִ/שְׁמֹ֛ר מִצְוֺתָ֥י/ו וְ/חֻקֹּתָ֖י/ו וּ/מִשְׁפָּטָ֑י/ו וְ/חָיִ֣יתָ וְ/רָבִ֔יתָ וּ/בֵֽרַכְ/ךָ֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ בָּ/אָ֕רֶץ אֲשֶׁר אַתָּ֥ה בָא שָׁ֖מָּ/ה לְ/רִשְׁתָּֽ/הּ׃",
+        "LXX": "ἐὰν εἰσακούσῃς τὰς ἐντολάς Κυρίου τοῦ θεοῦ σου ἃς ἐγὼ ἐντέλλομαί σοι σήμερον, ἀγαπᾷν Κύριον τὸν θεόν σου, πορεύεσθαι ἐν πάσαις ταῖς ὁδοῖς αὐτοῦ, φυλάσσεσθαι τὰ δικαιώματα αὐτοῦ καὶ τὰς κρίσεις αὐτοῦ· καὶ ζήσεσθε καὶ πολλοὶ ἔσεσθε, καὶ εὐλογήσει σε Κύριος ὁ θεός σου ἐν πάσῃ τῇ γῇ εἰς ἣν εἰσπορεύῃ ἐκεῖ κληρονομεῖν αὐτήν.",
+        "VUL": "ut diligas Dominum Deum tuum, et ambules in viis ejus, et custodias mandata illius ac cæremonias atque judicia : et vivas, atque multiplicet te, benedicatque tibi in terra, ad quam ingredieris possidendam.",
+        "SYN": "[Если будешь слушать заповеди Господа Бога твоего,] которые заповедую тебе сегодня, любить Господа Бога твоего, ходить по [всем] путям Его и исполнять заповеди Его и постановления Его и законы Его, то будешь жить и размножишься, и благословит тебя Господь Бог твой на земле, в которую ты идешь, чтоб овладеть ею;",
+        "NEO": "en te prescrivant aujourd’hui d’aimer \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, de marcher dans ses voies et d’observer ses commandements, ses lois et ses ordonnances, afin que tu vives et que tu multiplies, et que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te bénisse dans le pays où tu vas entrer pour le posséder.",
+        "NAB": "If you obey the commandments of the LORD, your God, which I enjoin on you today, loving him, and walking in his ways, and keeping his commandments, statutes and decrees, you will live and grow numerous, and the LORD, your God, will bless you in the land you are entering to occupy.",
+        "VAT_ES": "Si escuchas los mandamientos del Señor, tu Dios, que hoy te prescribo, si amas al Señor, tu Dios, y cumples sus mandamientos, sus leyes y sus preceptos, entonces vivirás, te multiplicarás, y el Señor, tu Dios, te bendecirá en la tierra donde ahora vas a entrar para tomar posesión de ella.",
+        "CEI": "poiché io oggi ti comando di amare il Signore tuo Dio, di camminare per le sue vie, di osservare i suoi comandi, le sue leggi e le sue norme, perché tu viva e ti moltiplichi e il Signore tuo Dio ti benedica nel paese che tu stai per entrare a prendere in possesso."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/אִם יִפְנֶ֥ה לְבָבְ/ךָ֖ וְ/לֹ֣א תִשְׁמָ֑ע וְ/נִדַּחְתָּ֗ וְ/הִֽשְׁתַּחֲוִ֛יתָ לֵ/אלֹהִ֥ים אֲחֵרִ֖ים וַ/עֲבַדְתָּֽ/ם׃",
+        "LXX": "καὶ ἐὰν μεταστῇ ἡ καρδία σου καὶ μὴ εἰσακούσῃς, καὶ πλανηθεὶς προσκυνήσῃς θεοῖς ἑτέροις καὶ λατρεύσῃς αὐτοῖς,",
+        "VUL": "Si autem aversum fuerit cor tuum, et audire nolueris, atque errore deceptus adoraveris deos alienos, et servieris eis :",
+        "SYN": "если же отвратится сердце твое, и не будешь слушать, и заблудишь, и станешь поклоняться иным богам и будешь служить им,",
+        "NEO": "Mais si ton cœur se détourne, que tu n’écoutes pas et que tu te laisses entraîner à te prosterner devant d’autres dieux et à les servir,",
+        "NAB": "If, however, you turn away your hearts and will not listen, but are led astray and adore and serve other gods,",
+        "VAT_ES": "Pero si tu corazón se desvía y no escuchas, si te dejas arrastrar y vas a postrarte ante otros dioses para servirlo.",
+        "CEI": "Ma se il tuo cuore si volge indietro e se tu non ascolti e ti lasci trascinare a prostrarti davanti ad altri dei e a servirli,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "הִגַּ֤דְתִּי לָ/כֶם֙ הַ/יּ֔וֹם כִּ֥י אָבֹ֖ד תֹּאבֵד֑וּ/ן לֹא תַאֲרִיכֻ֤/ן יָמִים֙ עַל הָ֣/אֲדָמָ֔ה אֲשֶׁ֨ר אַתָּ֤ה עֹבֵר֙ אֶת הַ/יַּרְדֵּ֔ן לָ/בֹ֥א שָׁ֖מָּ/ה לְ/רִשְׁתָּֽ/הּ׃",
+        "LXX": "ἀναγγέλλω σοι σήμερον ὅτι ἀπωλίᾳ ἀπολεῖσθε, καὶ οὐ μὴ πολυήμεροι γένησθε ἐπὶ τῆς γῆς εἰς ἣν ὑμεῖς διαβαίνετε τὸν Ἰορδάνην ἐκεῖ κληρονομεῖν αὐτήν.",
+        "VUL": "prædico tibi hodie quod pereas, et parvo tempore moreris in terra, ad quam, Jordane transmisso, ingredieris possidendam.",
+        "SYN": "то я возвещаю вам сегодня, что вы погибнете и не пробудете долго на земле, [которую Господь Бог дает тебе,] для овладения которою ты переходишь Иордан.",
+        "NEO": "je vous déclare en ce jour que vous périrez certainement ; vous ne prolongerez pas vos jours sur la terre où après avoir passé le Jourdain, tu vas entrer pour la posséder.",
+        "NAB": "I tell you now that you will certainly perish; you will not have a long life on the land which you are crossing the Jordan to enter and occupy.",
+        "VAT_ES": "yo les anuncio hoy que ustedes se perderán irremediablemente, y no vivirán mucho tiempo en la tierra que vas a poseer después de cruzar el Jordán.",
+        "CEI": "io vi dichiaro oggi che certo perirete, che non avrete vita lunga nel paese di cui state per entrare in possesso passando il Giordano."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "הַעִידֹ֨תִי בָ/כֶ֣ם הַ/יּוֹם֮ אֶת הַ/שָּׁמַ֣יִם וְ/אֶת הָ/אָרֶץ֒ הַ/חַיִּ֤ים וְ/הַ/מָּ֨וֶת֙ נָתַ֣תִּי לְ/פָנֶ֔י/ךָ הַ/בְּרָכָ֖ה וְ/הַ/קְּלָלָ֑ה וּ/בָֽחַרְתָּ֙ בַּֽ/חַיִּ֔ים לְמַ֥עַן תִּחְיֶ֖ה אַתָּ֥ה וְ/זַרְעֶֽ/ךָ׃",
+        "LXX": "διαμαρτύρομαι ὑμῖν σήμερον τόν τε οὐρανὸν καὶ τὴν γῆν, τὴν ζωὴν καὶ τὸν θάνατον δέδωκα πρὸ προσώπου ὑμῶν, τὴν εὐλογίαν καὶ τὴν κατάραν· ἔκλεξαι τὴν ζωὴν σύ, ἵνα ζῇς σὺ καὶ τὸ σπέρμα σου,",
+        "VUL": "Testes invoco hodie cælum et terram, quod proposuerim vobis vitam et mortem, benedictionem et maledictionem. Elige ergo vitam, ut et tu vivas, et semen tuum :",
+        "SYN": "Во свидетели пред вами призываю сегодня небо и землю: жизнь и смерть предложил я тебе, благословение и проклятие. Избери жизнь, дабы жил ты и потомство твое,",
+        "NEO": "J’en prends aujourd’hui à témoin contre vous le ciel et la terre : j’ai mis devant toi la vie et la mort, la bénédiction et la malédiction. Choisis donc la vie, afin que tu vives, toi et ta postérité,",
+        "NAB": "I call heaven and earth today to witness against you: I have set before you life and death, the blessing and the curse. Choose life, then, that you and your descendants may live,",
+        "VAT_ES": "Hoy tomo por testigos contra ustedes al cielo y a la tierra; yo he puesto delante de ti la vida y la muerte, la bendición y la maldición. Elige la vida, y vivirás, tú y tus descendientes,",
+        "CEI": "Prendo oggi a testimoni contro di voi il cielo e la terra: io ti ho posto davanti la vita e la morte, la benedizione e la maledizione; scegli dunque la vita, perché viva tu e la tua discendenza,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "לְ/אַֽהֲבָה֙ אֶת יְהוָ֣ה אֱלֹהֶ֔י/ךָ לִ/שְׁמֹ֥עַ בְּ/קֹל֖/וֹ וּ/לְ/דָבְקָה ב֑/וֹ כִּ֣י ה֤וּא חַיֶּ֨י/ךָ֙ וְ/אֹ֣רֶךְ יָמֶ֔י/ךָ לָ/שֶׁ֣בֶת עַל הָ/אֲדָמָ֗ה אֲשֶׁר֩ נִשְׁבַּ֨ע יְהוָ֧ה לַ/אֲבֹתֶ֛י/ךָ לְ/אַבְרָהָ֛ם לְ/יִצְחָ֥ק וּֽ/לְ/יַעֲקֹ֖ב לָ/תֵ֥ת לָ/הֶֽם׃",
+        "LXX": "ἀγαπᾷν Κύριον τὸν θεόν σου, εἰσακούειν τῆς φωνῆς αὐτοῦ καὶ ἔχεσθαι αὐτοῦ· ὅτι τοῦτο ἡ ζωή σου καὶ ἡ μακρότης τῶν ἡμερῶν σου· τὸ κατοικεῖν σε ἐπὶ τῆς γῆς ἧς ὤμοσεν Κύριος τοῖς πατράσιν σου Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακὼβ δοῦναι αὐτοῖς.",
+        "VUL": "et diligas Dominum Deum tuum, atque obedias voci ejus, et illi adhæreas (ipse est enim vita tua, et longitudo dierum tuorum), ut habites in terra, pro qua juravit Dominus patribus tuis, Abraham, Isaac, et Jacob, ut daret eam illis.",
+        "SYN": "любил Господа Бога твоего, слушал глас Его и прилеплялся к Нему; ибо в этом жизнь твоя и долгота дней твоих, чтобы пребывать тебе на земле, которую Господь [Бог] с клятвою обещал отцам твоим Аврааму, Исааку и Иакову дать им.",
+        "NEO": "en aimant \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, en écoutant sa voix et en t’attachant à lui ; car cela, c’est ta vie et de longs jours à demeurer dans la terre que \\+w Yahweh|strong=\"H3068\"\\+w** a juré de donner à tes pères, Abraham, Isaac et Jacob. »",
+        "NAB": "by loving the LORD, your God, heeding his voice, and holding fast to him. For that will mean life for you, a long life for you to live on the land which the LORD swore he would give to your fathers Abraham, Isaac and Jacob.\"",
+        "VAT_ES": "con tal que ames al Señor, tu Dios, escuches su voz y le seas fiel. Porque de ello depende tu vida y tu larga permanencia en la tierra que el Señor juró dar a tus padres, a Abraham, a Isaac y a Jacob.",
+        "CEI": "amando il Signore tuo Dio, obbedendo alla sua voce e tenendoti unito a lui, poiché è lui la tua vita e la tua longevità, per poter così abitare sulla terra che il Signore ha giurato di dare ai tuoi padri, Abramo, Isacco e Giacobbe\"."
+      }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_099",
+  "book_key": "PSAL",
+  "sequence": 99,
+  "chapter_in": {
+    "MT": 99,
+    "VUL": 98,
+    "LXX": 98
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "יְהוָ֣ה מָ֭לָךְ יִרְגְּז֣וּ עַמִּ֑ים יֹשֵׁ֥ב כְּ֝רוּבִ֗ים תָּנ֥וּט הָ/אָֽרֶץ׃",
+        "LXX": "Ψαλμὸς εἰς ἐξομολόγησιν. Ἀλαλάξατε τῷ κυρίῳ, πᾶσα ἡ γῆ,",
+        "VUL": "Psalmus in confessione.",
+        "SYN": "Воскликните Господу, вся земля!",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est roi : les peuples tremblent ; il est assis sur les Chérubins ; la terre chancelle.",
+        "NAB": "The LORD is king, the peoples tremble; God is enthroned on the cherubim, the earth quakes.",
+        "VAT_ES": "&iexcl;El Señor reina! Tiemblan los pueblos.",
+        "CEI": "Il Signore regna, tremino i popoli; siede sui cherubini, si scuota la terra."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "יְ֭הוָה בְּ/צִיּ֣וֹן גָּד֑וֹל וְ/רָ֥ם ה֝֗וּא עַל כָּל הָֽ/עַמִּֽים׃",
+        "LXX": "δουλεύσατε τῷ κυρίῳ ἐν εὐφροσύνῃ, εἰσέλθατε ἐνώπιον αὐτοῦ ἐν ἀγαλλιάσει.",
+        "VUL": "[Jubilate Deo, omnis terra ;/ servite Domino in lætitia./ Introite in conspectu ejus in exsultatione./",
+        "SYN": "Служите Господу с веселием; идите пред лице Его с восклицанием!",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est grand dans Sion, il est élevé au dessus de tous les peuples.",
+        "NAB": "The LORD is great on Zion, exalted above all the peoples.",
+        "VAT_ES": "&iexcl;Grande es el Señor en Sión!",
+        "CEI": "Grande è il Signore in Sion, eccelso sopra tutti i popoli."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "יוֹד֣וּ שִׁ֭מְ/ךָ גָּד֥וֹל וְ/נוֹרָ֗א קָד֥וֹשׁ הֽוּא׃",
+        "LXX": "γνῶτε ὅτι Κύριος, αὐτός ἐστιν ὁ θεός· αὐτὸς ἐποίησεν ἡμᾶς καὶ οὐχ ἡμεῖς, λαὸς αὐτοῦ καὶ πρόβατα τῆς νομῆς αὐτοῦ.",
+        "VUL": "Scitote quoniam Dominus ipse est Deus ;/ ipse fecit nos, et non ipsi nos :/ populus ejus, et oves pascuæ ejus./",
+        "SYN": "Познайте, что Господь есть Бог, что Он сотворил нас, и мы - Его, Его народ и овцы паствы Его.",
+        "NEO": "Qu’on célèbre ton nom grand et redoutable ! — Il est saint !",
+        "NAB": "Let them praise your great and awesome name: Holy is God!",
+        "VAT_ES": "El se alza sobre todas las naciones.",
+        "CEI": "Lodino il tuo nome grande e terribile, perché è santo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/עֹ֥ז מֶלֶךְ֮ מִשְׁפָּ֪ט אָ֫הֵ֥ב אַ֭תָּה כּוֹנַ֣נְתָּ מֵישָׁרִ֑ים מִשְׁפָּ֥ט וּ֝/צְדָקָ֗ה בְּ/יַעֲקֹ֤ב אַתָּ֬ה עָשִֽׂיתָ׃",
+        "LXX": "εἰσέλθατε εἰς τὰς πύλας αὐτοῦ ἐν ἐξομολογήσει, τὰς αὐλὰς αὐτοῦ ἐν ὕμνοις· ἐξομολογεῖσθε αὐτῷ, αἰνεῖτε τὸ ὄνομα αὐτοῦ,",
+        "VUL": "Introite portas ejus in confessione ;/ atria ejus in hymnis :/ confitemini illi./ Laudate nomen ejus,",
+        "SYN": "Входите во врата Его со славословием, во дворы Его - с хвалою. Славьте Его, благословляйте имя Его,",
+        "NEO": "Qu’on célèbre la puissance du Roi qui aime la justice ! Tu affermis la droiture, tu exerces en Jacob la justice et l’équité.",
+        "NAB": "O mighty king, lover of justice, you alone have established fairness; you have created just rule in Jacob.",
+        "VAT_ES": "Tú eres el rey poderoso que ama la justicia,",
+        "CEI": "Re potente che ami la giustizia, tu hai stabilito ciò che è retto, diritto e giustizia tu eserciti in Giacobbe."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "רֽוֹמְמ֡וּ יְה֘וָ֤ה אֱלֹהֵ֗י/נוּ וְֽ֭/הִשְׁתַּחֲווּ לַ/הֲדֹ֥ם רַגְלָ֗י/ו קָד֥וֹשׁ הֽוּא׃",
+        "LXX": "ὅτι χρηστὸς Κύριος, εἰς τὸν αἰῶνα τὸ ἔλεος αὐτοῦ, καὶ ἕως γενεᾶς καὶ γενεᾶς ἡ ἀλήθεια αὐτοῦ.",
+        "VUL": "quoniam suavis est Dominus,/ in æternum misericordia ejus,/ et usque in generationem et generationem veritas ejus.]",
+        "SYN": "ибо благ Господь: милость Его вовек, и истина Его в род и род.",
+        "NEO": "Exaltez \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, et prosternez-vous devant l’escabeau de ses pieds. — Il est saint !",
+        "NAB": "Exalt the LORD, our God; bow down before his footstool; holy is God!",
+        "VAT_ES": "Glorifiquen al Señor, nuestro Dios,",
+        "CEI": "Esaltate il Signore nostro Dio, prostratevi allo sgabello dei suoi piedi, perché è santo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "מֹ֘שֶׁ֤ה וְ/אַהֲרֹ֨ן בְּֽ/כֹהֲנָ֗י/ו וּ֭/שְׁמוּאֵל בְּ/קֹרְאֵ֣י שְׁמ֑/וֹ קֹרִ֥אים אֶל יְ֝הוָ֗ה וְ/ה֣וּא יַעֲנֵֽ/ם׃",
+        "NEO": "Moïse et Aaron étaient parmi ses prêtres, et Samuel parmi ceux qui invoquaient son nom. Ils invoquaient \\+w Yahweh|strong=\"H3068\"\\+w**, et il les exauçait,",
+        "NAB": "Moses and Aaron were among his priests, Samuel among those who called on God's name; they called on the LORD, who answered them.",
+        "VAT_ES": "Moisés y Aarón, entre sus sacerdotes,",
+        "CEI": "Mosè e Aronne tra i suoi sacerdoti, Samuele tra quanti invocano il suo nome: invocavano il Signore ed egli rispondeva."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "בְּ/עַמּ֣וּד עָ֭נָן יְדַבֵּ֣ר אֲלֵי/הֶ֑ם שָׁמְר֥וּ עֵ֝דֹתָ֗י/ו וְ/חֹ֣ק נָֽתַן לָֽ/מוֹ׃",
+        "NEO": "il leur parlait dans la colonne de nuée. Ils observaient ses commandements, et la loi qu’il leur avait donnée.",
+        "NAB": "From the pillar of cloud God spoke to them; they kept the decrees, the law they received.",
+        "VAT_ES": "Dios les hablaba desde la columna de nube;",
+        "CEI": "Parlava loro da una colonna di nubi: obbedivano ai suoi comandi e alla legge che aveva loro dato."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "יְהוָ֣ה אֱלֹהֵי/נוּ֮ אַתָּ֪ה עֲנִ֫יתָ֥/ם אֵ֣ל נֹ֭שֵׂא הָיִ֣יתָ לָ/הֶ֑ם וְ֝/נֹקֵ֗ם עַל עֲלִילוֹתָֽ/ם׃",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, tu les exauças, tu fus pour eux un Dieu clément, et tu les punis de leurs fautes.",
+        "NAB": "O LORD, our God, you answered them; you were a forgiving God, though you punished their offenses.",
+        "VAT_ES": "Señor, nuestro Dios, tú les respondías;",
+        "CEI": "Signore, Dio nostro, tu li esaudivi, eri per loro un Dio paziente, pur castigando i loro peccati."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "רֽוֹמְמ֡וּ יְה֘וָ֤ה אֱלֹהֵ֗י/נוּ וְ֭/הִֽשְׁתַּחֲווּ לְ/הַ֣ר קָדְשׁ֑/וֹ כִּֽי קָ֝ד֗וֹשׁ יְהוָ֥ה אֱלֹהֵֽי/נוּ׃",
+        "NEO": "Exaltez \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, et prosternez-vous devant sa montagne sainte, car il est saint, \\+w Yahweh|strong=\"H3068\"\\+w** notre Dieu !",
+        "NAB": "Exalt the LORD, our God; bow down before his holy mountain; holy is the LORD, our God.",
+        "VAT_ES": "Glorifiquen al Señor, nuestro Dios,",
+        "CEI": "Esaltate il Signore nostro Dio, prostratevi davanti al suo monte santo, perché santo è il Signore, nostro Dio."
+      }
+    }
+  }
+}

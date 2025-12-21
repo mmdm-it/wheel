@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wheel v3 Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/base.css" />
+</head>
+<body>
+  <svg id="app" aria-label="Wheel v3"></svg>
+  <script type="module">
+    import { createApp, getViewportInfo } from './src/index.js';
+
+    const svg = document.getElementById('app');
+    const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
+
+    async function loadConfig() {
+      const params = new URLSearchParams(window.location.search);
+      const volume = params.get('volume') === 'catalog' ? 'catalog' : 'bible';
+      const manifestPath = volume === 'catalog'
+        ? './data/mmdm/mmdm_catalog.json'
+        : './data/gutenberg/manifest.json';
+
+      const manifest = await fetch(manifestPath).then(r => r.json());
+      return { volume, manifest };
+    }
+
+    function applyTheme(manifest, volume) {
+      const root = document.documentElement;
+      const config = volume === 'catalog'
+        ? manifest?.MMdM?.display_config
+        : manifest?.Gutenberg_Bible?.display_config;
+
+      const scheme = config?.color_scheme || {};
+      const bg = scheme.background || '#d4a574';
+      const nodes = scheme.nodes || '#8b6f47';
+      const text = scheme.text_primary || '#000000';
+
+      root.style.setProperty('--color-bg', bg);
+      root.style.setProperty('--color-nodes', nodes);
+      root.style.setProperty('--color-text', text);
+    }
+
+    function buildBibleBooks(manifest) {
+      const testaments = manifest?.Gutenberg_Bible?.testaments;
+      if (!testaments) return [];
+      const items = [];
+      Object.entries(testaments).forEach(([testamentId, testament]) => {
+        const sections = testament?.sections || {};
+        Object.entries(sections).forEach(([sectionId, section]) => {
+          const books = section?.books || {};
+          Object.entries(books).forEach(([bookId, book]) => {
+            items.push({
+              id: bookId,
+              name: book?.book_name || book?.name || bookId,
+              sort: book?.sort_number || items.length + 1
+            });
+          });
+        });
+      });
+      return items;
+    }
+
+    function buildCatalogManufacturers(manifest) {
+      const markets = manifest?.MMdM?.markets;
+      if (!markets) return [];
+      const items = [];
+      Object.entries(markets).forEach(([marketId, market]) => {
+        const countries = market?.countries || {};
+        Object.entries(countries).forEach(([countryId, country]) => {
+          const manufacturers = country?.manufacturers || {};
+          Object.entries(manufacturers).forEach(([manufacturerId, manufacturer]) => {
+            items.push({
+              id: `${marketId}__${countryId}__${manufacturerId}`,
+              name: manufacturerId,
+              sort: manufacturer?.sort_number || items.length + 1
+            });
+          });
+        });
+      });
+      return items;
+    }
+
+    function buildChain(manifest, volume) {
+      if (volume === 'catalog') {
+        return buildCatalogManufacturers(manifest);
+      }
+      return buildBibleBooks(manifest);
+    }
+
+    function wireInteractions(app) {
+      let isDragging = false;
+      let lastX = 0;
+      let lastY = 0;
+      const sensitivity = Math.PI / 4 / 100; // 100px → 45°
+
+      const onPointerMove = event => {
+        if (!isDragging) return;
+        const dx = event.clientX - lastX;
+        const dy = event.clientY - lastY;
+        lastX = event.clientX;
+        lastY = event.clientY;
+        const delta = -(dx + dy) * sensitivity;
+        app.choreographer.rotate(delta);
+      };
+
+      svg.addEventListener('pointerdown', event => {
+        isDragging = true;
+        lastX = event.clientX;
+        lastY = event.clientY;
+      });
+
+      svg.addEventListener('pointermove', onPointerMove);
+
+      ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
+        svg.addEventListener(type, () => {
+          isDragging = false;
+          app.selectNearest();
+          app.choreographer.stopMomentum();
+        });
+      });
+    }
+
+    loadConfig().then(({ volume, manifest }) => {
+      applyTheme(manifest, volume);
+      const items = buildChain(manifest, volume);
+      if (!items.length) {
+        console.error('No items found for volume', volume);
+        return;
+      }
+      const app = createApp({ svgRoot: svg, items, viewport });
+      wireInteractions(app);
+    }).catch(err => {
+      console.error('Failed to initialize app', err);
+    });
+  </script>
+</body>
+</html>

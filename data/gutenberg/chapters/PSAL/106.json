@@ -1,0 +1,864 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_106",
+  "book_key": "PSAL",
+  "sequence": 106,
+  "chapter_in": {
+    "MT": 106,
+    "VUL": 105,
+    "LXX": 105
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "הַֽלְלוּ יָ֨הּ הוֹד֣וּ לַ/יהוָ֣ה כִּי ט֑וֹב כִּ֖י לְ/עוֹלָ֣ם חַסְדּֽ/וֹ׃",
+        "LXX": "Ἁλληλουιά. Ἐξομολογεῖσθε τῷ κυρίῳ, ὅτι χρηστός, ὅτι εἰς τὸν αἰῶνα τὸ ἔλεος αὐτοῦ.",
+        "VUL": "Alleluja. [Confitemini Domino, quoniam bonus,/ quoniam in sæculum misericordia ejus./",
+        "SYN": "Славьте Господа, ибо Он благ, ибо вовек милость Его!",
+        "NEO": "Alleluia !",
+        "NAB": "Hallelujah! Give thanks to the LORD, who is good, whose love endures forever.",
+        "VAT_ES": "&iexcl;Aleluya!",
+        "CEI": "Alleluia. Celebrate il Signore, perché è buono, perché eterna è la sua misericordia."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "מִ֗י יְ֭מַלֵּל גְּבוּר֣וֹת יְהוָ֑ה יַ֝שְׁמִ֗יעַ כָּל תְּהִלָּתֽ/וֹ׃",
+        "LXX": "εἰπάτωσαν οἱ λελυτρωμένοι ὑπὸ Κυρίου, οὓς ἐλυτρώσατο ἐκ χειρὸς ἐχθροῦ.",
+        "VUL": "Dicant qui redempti sunt a Domino,/ quos redemit de manu inimici,/ et de regionibus congregavit eos,/",
+        "SYN": "Так да скажут избавленные Господом, которых избавил Он от руки врага,",
+        "NEO": "Qui dira les hauts faits de \\+w Yahweh|strong=\"H3068\"\\+w** ! Qui publiera toute sa gloire ?",
+        "NAB": "Who can tell the mighty deeds of the LORD, proclaim in full God's praise?",
+        "VAT_ES": "&iquest;Quién puede hablar de las proezas del Señor",
+        "CEI": "Chi può narrare i prodigi del Signore, far risuonare tutta la sua lode?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אַ֭שְׁרֵי שֹׁמְרֵ֣י מִשְׁפָּ֑ט עֹשֵׂ֖ה צְדָקָ֣ה בְ/כָל עֵֽת׃",
+        "LXX": "ἐκ τῶν χωρῶν συνήγαγεν αὐτούς, ἀπὸ ἀνατολῶν καὶ δυσμῶν καὶ βορρᾶ καὶ θαλάσσης.",
+        "VUL": "a solis ortu, et occasu, ab aquilone, et mari./",
+        "SYN": "и собрал от стран, от востока и запада, от севера и моря.",
+        "NEO": "Heureux ceux qui observent la loi, qui accomplissent la justice en tout temps !",
+        "NAB": "Happy those who do what is right, whose deeds are always just.",
+        "VAT_ES": "&iexcl;Felices los que proceden con rectitud,",
+        "CEI": "Beati coloro che agiscono con giustizia e praticano il diritto in ogni tempo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "זָכְרֵ֣/נִי יְ֭הוָה בִּ/רְצ֣וֹן עַמֶּ֑/ךָ פָּ֝קְדֵ֗/נִי בִּ/ישׁוּעָתֶֽ/ךָ׃",
+        "LXX": "ἐπλανήθησαν ἐν τῇ ἐρήμῳ ἐν ἀνύδρῳ, ὁδὸν πόλιν κατοικητηρίου οὐχ εὗρον·",
+        "VUL": "Erraverunt in solitudine, in inaquoso ;/ viam civitatis habitaculi non invenerunt./",
+        "SYN": "Они блуждали в пустыне по безлюдному пути и не находили населенного города;",
+        "NEO": "Souviens-toi de moi, \\+w Yahweh|strong=\"H3068\"\\+w**, dans ta bonté pour ton peuple, visite-moi avec ton secours,",
+        "NAB": "Remember me, LORD, as you favor your people; come to me with your saving help,",
+        "VAT_ES": "Acuérdate de mí, Señor,",
+        "CEI": "Ricordati di noi, Signore, per amore del tuo popolo, visitaci con la tua salvezza,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לִ/רְא֤וֹת בְּ/ט֘וֹבַ֤ת בְּחִירֶ֗י/ךָ לִ֭/שְׂמֹחַ בְּ/שִׂמְחַ֣ת גּוֹיֶ֑/ךָ לְ֝/הִתְהַלֵּ֗ל עִם נַחֲלָתֶֽ/ךָ׃",
+        "LXX": "πεινῶντες καὶ διψῶντες, ἡ ψυχὴ αὐτῶν ἐν αὐτοῖς ἐξέλιπεν.",
+        "VUL": "Esurientes et sitientes,/ anima eorum in ipsis defecit./",
+        "SYN": "терпели голод и жажду, душа их истаевала в них.",
+        "NEO": "afin que je voie le bonheur de tes élus, que je me réjouisse de la joie de ton peuple, et que je me glorifie avec ton héritage.",
+        "NAB": "That I may see the prosperity of your chosen, rejoice in the joy of your people, and glory with your heritage.",
+        "VAT_ES": "para que vea la felicidad de tus elegidos,",
+        "CEI": "perché vediamo la felicità dei tuoi eletti, godiamo della gioia del tuo popolo, ci gloriamo con la tua eredità."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "חָטָ֥אנוּ עִם אֲבוֹתֵ֗י/נוּ הֶעֱוִ֥ינוּ הִרְשָֽׁעְנוּ׃",
+        "LXX": "καὶ ἐκέκραξαν πρὸς Κύριον ἐν τῷ θλίβεσθαι αὐτούς, καὶ ἐκ τῶν ἀναγκῶν αὐτῶν ἐρρύσατο αὐτούς·",
+        "VUL": "Et clamaverunt ad Dominum cum tribularentur,/ et de necessitatibus eorum eripuit eos ;/",
+        "SYN": "Но воззвали к Господу в скорби своей, и Он избавил их от бедствий их,",
+        "NEO": "Nous avons péché comme nos pères, nous avons commis l’iniquité, nous avons fait le mal.",
+        "NAB": "We have sinned like our ancestors; we have done wrong and are guilty.",
+        "VAT_ES": "Hemos pecado, igual que nuestros padres;",
+        "CEI": "Abbiamo peccato come i nostri padri, abbiamo fatto il male, siamo stati empi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אֲב֘וֹתֵ֤י/נוּ בְ/מִצְרַ֨יִם לֹא הִשְׂכִּ֬ילוּ נִפְלְאוֹתֶ֗י/ךָ לֹ֣א זָ֭כְרוּ אֶת רֹ֣ב חֲסָדֶ֑י/ךָ וַ/יַּמְר֖וּ עַל יָ֣ם בְּ/יַם סֽוּף׃",
+        "LXX": "καὶ ὡδήγησεν αὐτοὺς εἰς ὁδὸν εὐθεῖαν τοῦ πορευθῆναι εἰς πόλιν κατοικητηρίου.",
+        "VUL": "et deduxit eos in viam rectam,/ ut irent in civitatem habitationis./",
+        "SYN": "и повел их прямым путем, чтобы они шли к населенному городу.",
+        "NEO": "Nos pères en Égypte n’eurent pas d’égard à tes prodiges, ils ne se souvinrent pas de la multitude de tes grâces, ils se sont révoltés à la mer, à la mer Rouge.",
+        "NAB": "Our ancestors in Egypt did not attend to your wonders. They did not remember your great love; they defied the Most High at the Red Sea.",
+        "VAT_ES": "nuestros padres, cuando estaban en Egipto,",
+        "CEI": "I nostri padri in Egitto non compresero i tuoi prodigi, non ricordarono tanti tuoi benefici e si ribellarono presso il mare, presso il mar Rosso."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַֽ֭/יּוֹשִׁיעֵ/ם לְמַ֣עַן שְׁמ֑/וֹ לְ֝/הוֹדִ֗יעַ אֶת גְּבוּרָתֽ/וֹ׃",
+        "LXX": "ἐξομολογησάσθωσαν τῷ κυρίῳ τὰ ἐλέη αὐτοῦ καὶ τὰ θαυμάσια αὐτοῦ τοῖς υἱοῖς τῶν ἀνθρώπων,",
+        "VUL": "Confiteantur Domino misericordiæ ejus,/ et mirabilia ejus filiis hominum./",
+        "SYN": "Да славят Господа за милость Его и за чудные дела Его для сынов человеческих:",
+        "NEO": "Il les sauva pourtant à cause de son nom, pour faire éclater sa puissance.",
+        "NAB": "Yet he saved them for his name's sake to make his power known.",
+        "VAT_ES": "Pero él los salvó por amor de su Nombre,",
+        "CEI": "Ma Dio li salvò per il suo nome, per manifestare la sua potenza."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּגְעַ֣ר בְּ/יַם ס֭וּף וַֽ/יֶּחֱרָ֑ב וַ/יּוֹלִיכֵ֥/ם בַּ֝/תְּהֹמ֗וֹת כַּ/מִּדְבָּֽר׃",
+        "LXX": "ὅτι ἐχόρτασεν ψυχὴν κενήν, καὶ ψυχὴν πεινῶσαν ἐνέπλησεν ἀγαθῶν.",
+        "VUL": "Quia satiavit animam inanem,/ et animam esurientem satiavit bonis./",
+        "SYN": "ибо Он насытил душу жаждущую и душу алчущую исполнил благами.",
+        "NEO": "Il menaça la mer Rouge, et elle se dessécha ; et il les fit marcher à travers l’abîme comme dans un désert.",
+        "NAB": "He roared at the Red Sea and it dried up. He led them through the deep as through a desert.",
+        "VAT_ES": "increpó al Mar Rojo, y este se secó;",
+        "CEI": "Minacciò il mar Rosso e fu disseccato, li condusse tra i flutti come per un deserto;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַֽ֭/יּוֹשִׁיעֵ/ם מִ/יַּ֣ד שׂוֹנֵ֑א וַ֝/יִּגְאָלֵ֗/ם מִ/יַּ֥ד אוֹיֵֽב׃",
+        "LXX": "καθημένους ἐν σκότει καὶ σκιᾷ θανάτου, πεπεδημένους ἐν πτωχίᾳ καὶ ἐν σιδήρῳ·",
+        "VUL": "Sedentes in tenebris et umbra mortis ;/ vinctos in mendicitate et ferro./",
+        "SYN": "Они сидели во тьме и тени смертной, окованные скорбью и железом;",
+        "NEO": "Il les sauva de la main de celui qui les haïssait, il les délivra de la main de l’oppresseur.",
+        "NAB": "He rescued them from hostile hands, freed them from the power of the enemy.",
+        "VAT_ES": "los salvó de las manos del enemigo,",
+        "CEI": "li salvò dalla mano di chi li odiava, li riscattò dalla mano del nemico."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יְכַסּוּ מַ֥יִם צָרֵי/הֶ֑ם אֶחָ֥ד מֵ֝/הֶ֗ם לֹ֣א נוֹתָֽר׃",
+        "LXX": "ὅτι παρεπίκραναν τὰ λόγια τοῦ θεοῦ, καὶ τὴν βουλὴν τοῦ ὑψίστου παρώξυναν·",
+        "VUL": "Quia exacerbaverunt eloquia Dei,/ et consilium Altissimi irritaverunt./",
+        "SYN": "ибо не покорялись словам Божиим и небрегли о воле Всевышнего.",
+        "NEO": "Les flots couvrirent leurs adversaires, pas un seul n’échappa.",
+        "NAB": "The waters covered their oppressors; not one of them survived.",
+        "VAT_ES": "El agua cubrió a sus opresores,",
+        "CEI": "L'acqua sommerse i loro avversari; nessuno di essi sopravvisse."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יַּאֲמִ֥ינוּ בִ/דְבָרָ֑י/ו יָ֝שִׁ֗ירוּ תְּהִלָּתֽ/וֹ׃",
+        "LXX": "καὶ ἐταπεινώθη ἐν κόποις ἡ καρδία αὐτῶν, ἠσθένησαν καὶ οὐκ ἦν ὁ βοηθῶν.",
+        "VUL": "Et humiliatum est in laboribus cor eorum ;/ infirmati sunt, nec fuit qui adjuvaret./",
+        "SYN": "Он смирил сердце их работами; они преткнулись, и не было помогающего.",
+        "NEO": "Ils crurent alors à ses paroles, ils chantèrent ses louanges.",
+        "NAB": "Then they believed his words and sang songs of praise.",
+        "VAT_ES": "entonces creyeron en sus palabras",
+        "CEI": "Allora credettero alle sue parole e cantarono la sua lode."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "מִֽ֭הֲרוּ שָׁכְח֣וּ מַעֲשָׂ֑י/ו לֹֽא חִ֝כּ֗וּ לַ/עֲצָתֽ/וֹ׃",
+        "LXX": "καὶ ἐκέκραξαν πρὸς Κύριον ἐν τῷ θλίβεσθαι αὐτούς, καὶ ἐκ τῶν ἀναγκῶν αὐτῶν ἔσωσεν αὐτούς·",
+        "VUL": "Et clamaverunt ad Dominum cum tribularentur ;/ et de necessitatibus eorum liberavit eos./",
+        "SYN": "Но воззвали к Господу в скорби своей, и Он спас их от бедствий их;",
+        "NEO": "Mais ils oublièrent bientôt ses œuvres, ils n’attendirent pas qu’il exécutât ses desseins.",
+        "NAB": "But they soon forgot all he had done; they had no patience for his plan.",
+        "VAT_ES": "Pero muy pronto se olvidaron de sus obras,",
+        "CEI": "Ma presto dimenticarono le sue opere, non ebbero fiducia nel suo disegno,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּתְאַוּ֣וּ תַ֭אֲוָה בַּ/מִּדְבָּ֑ר וַ/יְנַסּוּ אֵ֝֗ל בִּֽ/ישִׁימֽוֹן׃",
+        "LXX": "καὶ ἐξήγαγεν αὐτοὺς ἐκ σκότους καὶ ἐκ σκιᾶς θανάτου, καὶ τοὺς δεσμοὺς αὐτῶν διέρρηξεν.",
+        "VUL": "Et eduxit eos de tenebris et umbra mortis,/ et vincula eorum dirupit./",
+        "SYN": "вывел их из тьмы и тени смертной, и расторгнул узы их.",
+        "NEO": "Ils furent pris de convoitise dans le désert, et ils tentèrent Dieu dans la solitude.",
+        "NAB": "In the desert they gave way to their cravings, tempted God in the wasteland.",
+        "VAT_ES": "ardían de avidez en el desierto",
+        "CEI": "arsero di brame nel deserto, e tentarono Dio nella steppa."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֣ן לָ֭/הֶם שֶׁאֱלָתָ֑/ם וַ/יְשַׁלַּ֖ח רָז֣וֹן בְּ/נַפְשָֽׁ/ם׃",
+        "LXX": "ἐξομολογησάσθωσαν τῷ κυρίῳ τὰ ἐλέη αὐτοῦ καὶ τὰ θαυμάσια αὐτοῦ τοῖς υἱοῖς τῶν ἀνθρώπων,",
+        "VUL": "Confiteantur Domino misericordiæ ejus,/ et mirabilia ejus filiis hominum./",
+        "SYN": "Да славят Господа за милость Его и за чудные дела Его для сынов человеческих:",
+        "NEO": "Il leur accorda ce qu’ils demandaient, mais il les frappa de consomption.",
+        "NAB": "So he gave them what they asked and sent among them a wasting disease.",
+        "VAT_ES": "entonces, él les dio lo que pedían,",
+        "CEI": "Concesse loro quanto domandavano e saziò la loro ingordigia."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יְקַנְא֣וּ לְ֭/מֹשֶׁה בַּֽ/מַּחֲנֶ֑ה לְ֝/אַהֲרֹ֗ן קְד֣וֹשׁ יְהוָֽה׃",
+        "LXX": "ὅτι συνέτριψεν πύλας χαλκᾶς, καὶ μοχλοὺς σιδηροῦς συνέκλασεν.",
+        "VUL": "Quia contrivit portas æreas,/ et vectes ferreos confregit./",
+        "SYN": "ибо Он сокрушил врата медные и вереи железные сломил.",
+        "NEO": "Puis ils furent jaloux de Moïse dans le camp, et d’Aaron, le saint de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "In the camp they challenged Moses and Aaron, the holy one of the LORD.",
+        "VAT_ES": "En el campamento tuvieron celos de Moisés,",
+        "CEI": "Divennero gelosi di Mosè negli accampamenti, e di Aronne, il consacrato del Signore."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "תִּפְתַּח אֶ֭רֶץ וַ/תִּבְלַ֣ע דָּתָ֑ן וַ֝/תְּכַ֗ס עַל עֲדַ֥ת אֲבִירָֽם׃",
+        "LXX": "ἀντελάβετο αὐτῶν ἐξ ὁδοῦ ἀνομίας αὐτῶν, διὰ γὰρ τὰς ἀνομίας αὐτῶν ἐταπεινώθησαν.",
+        "VUL": "Suscepit eos de via iniquitatis eorum ;/ propter injustitias enim suas humiliati sunt./",
+        "SYN": "Безрассудные страдали за беззаконные пути свои и за неправды свои;",
+        "NEO": "La terre s’ouvrit et engloutit Dathan, et elle se referma sur la troupe d’Abiron ;",
+        "NAB": "The earth opened and swallowed Dathan, it closed on the followers of Abiram.",
+        "VAT_ES": "pero se abrió la tierra y devoró a Datán,",
+        "CEI": "Allora si aprì la terra e inghiottì Datan, e seppellì l'assemblea di Abiron."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/תִּבְעַר אֵ֥שׁ בַּ/עֲדָתָ֑/ם לֶ֝הָבָ֗ה תְּלַהֵ֥ט רְשָׁעִֽים׃",
+        "LXX": "πᾶν βρῶμα ἐβδελύξατο ἡ ψυχὴ αὐτῶν, καὶ ἤγγισαν ἕως τῶν πυλῶν τοῦ θανάτου.",
+        "VUL": "Omnem escam abominata est anima eorum,/ et appropinquaverunt usque ad portas mortis./",
+        "SYN": "от всякой пищи отвращалась душа их, и они приближались ко вратам смерти.",
+        "NEO": "Le feu dévora leur troupe, la flamme consuma les méchants.",
+        "NAB": "Against that company the fire blazed; flames consumed the wicked.",
+        "VAT_ES": "ardió un fuego contra aquella turba,",
+        "CEI": "Divampò il fuoco nella loro fazione e la fiamma divorò i ribelli."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "יַעֲשׂוּ עֵ֥גֶל בְּ/חֹרֵ֑ב וַ֝/יִּשְׁתַּחֲו֗וּ לְ/מַסֵּכָֽה׃",
+        "LXX": "καὶ ἐκέκραξαν πρὸς Κύριον ἐν τῷ θλίβεσθαι αὐτούς, καὶ ἐκ τῶν ἀναγκῶν αὐτῶν ἔσωσεν αὐτούς,",
+        "VUL": "Et clamaverunt ad Dominum cum tribularentur,/ et de necessitatibus eorum liberavit eos./",
+        "SYN": "Но воззвали к Господу в скорби своей, и Он спас их от бедствий их;",
+        "NEO": "Ils firent un veau au mont Horeb, ils se prosternèrent devant une image de métal fondu ;",
+        "NAB": "At Horeb they fashioned a calf, worshiped a metal statue.",
+        "VAT_ES": "En Horeb se fabricaron un ternero,",
+        "CEI": "Si fabbricarono un vitello sull'Oreb, si prostrarono a un'immagine di metallo fuso;"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יָּמִ֥ירוּ אֶת כְּבוֹדָ֑/ם בְּ/תַבְנִ֥ית שׁ֝֗וֹר אֹכֵ֥ל עֵֽשֶׂב׃",
+        "LXX": "ἀπέστειλεν τὸν λόγον αὐτοῦ καὶ ἰάσατο αὐτούς, καὶ ἐρρύσατο αὐτοὺς ἐκ τῶν διαφθορῶν αὐτῶν.",
+        "VUL": "Misit verbum suum, et sanavit eos,/ et eripuit eos de interitionibus eorum./",
+        "SYN": "послал слово Свое и исцелил их, и избавил их от могил их.",
+        "NEO": "Ils échangèrent leur gloire contre la figure d’un bœuf qui mange l’herbe.",
+        "NAB": "They exchanged their glorious God for the image of a grass-eating bull.",
+        "VAT_ES": "así cambiaron su Gloria",
+        "CEI": "scambiarono la loro gloria con la figura di un toro che mangia fieno."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "שָׁ֭כְחוּ אֵ֣ל מוֹשִׁיעָ֑/ם עֹשֶׂ֖ה גְדֹל֣וֹת בְּ/מִצְרָֽיִם׃",
+        "LXX": "ἐξομολογησάσθωσαν τῷ κυρίῳ τὰ ἐλέη αὐτοῦ καὶ τὰ θαυμάσια αὐτοῦ τοῖς υἱοῖς τῶν ἀνθρώπων,",
+        "VUL": "Confiteantur Domino misericordiæ ejus,/ et mirabilia ejus filiis hominum./",
+        "SYN": "Да славят Господа за милость Его и за чудные дела Его для сынов человеческих!",
+        "NEO": "Ils oublièrent Dieu, leur sauveur, qui avait fait de grandes choses en Égypte,",
+        "NAB": "They forgot the God who saved them, who did great deeds in Egypt,",
+        "VAT_ES": "Olvidaron a Dios, que los había salvado",
+        "CEI": "Dimenticarono Dio che li aveva salvati, che aveva operato in Egitto cose grandi,"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "נִ֭פְלָאוֹת בְּ/אֶ֣רֶץ חָ֑ם נ֝וֹרָא֗וֹת עַל יַם סֽוּף׃",
+        "LXX": "καὶ θυσάτωσαν θυσίαν αἰνέσεως, καὶ ἐξαγγειλάτωσαν τὰ ἔργα αὐτοῦ ἐν ἀγαλλιάσει.",
+        "VUL": "Et sacrificent sacrificium laudis,/ et annuntient opera ejus in exsultatione./",
+        "SYN": "Да приносят Ему жертву хвалы и да возвещают о делах Его с пением!",
+        "NEO": "des miracles dans le pays de Cham, des prodiges à la mer Rouge.",
+        "NAB": "Amazing deeds in the land of Ham, fearsome deeds at the Red Sea.",
+        "VAT_ES": "maravillas en la tierra de Cam",
+        "CEI": "prodigi nel paese di Cam, cose terribili presso il mar Rosso."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר לְֽ/הַשְׁמִ֫ידָ֥/ם לוּלֵ֡י מֹ֘שֶׁ֤ה בְחִיר֗/וֹ עָמַ֣ד בַּ/פֶּ֣רֶץ לְ/פָנָ֑י/ו לְ/הָשִׁ֥יב חֲ֝מָת֗/וֹ מֵֽ/הַשְׁחִֽית׃",
+        "LXX": "οἱ καταβαίνοντες εἰς τὴν θάλασσαν ἐν πλοίοις, ποιοῦντες ἐργασίαν ἐν ὕδασι πολλοῖς,",
+        "VUL": "Qui descendunt mare in navibus,/ facientes operationem in aquis multis :/",
+        "SYN": "Отправляющиеся на кораблях в море, производящие дела на больших водах,",
+        "NEO": "Il parlait de les exterminer, si Moïse, son élu, ne se fût tenu sur la brèche devant lui, pour empêcher sa colère de les détruire.",
+        "NAB": "He would have decreed their destruction, had not Moses, the chosen leader, Withstood him in the breach to turn back his destroying anger.",
+        "VAT_ES": "El Señor amenazó con destruirlos,",
+        "CEI": "E aveva già deciso di sterminarli, se Mosè suo eletto non fosse stato sulla breccia di fronte a lui, per stornare la sua collera dallo sterminio."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַֽ֭/יִּמְאֲסוּ בְּ/אֶ֣רֶץ חֶמְדָּ֑ה לֹֽא הֶ֝אֱמִ֗ינוּ לִ/דְבָרֽ/וֹ׃",
+        "LXX": "αὐτοὶ εἶδοσαν τὰ ἔργα Κυρίου καὶ τὰ θαυμάσια αὐτοῦ ἐν τῷ βυθῷ.",
+        "VUL": "ipsi viderunt opera Domini,/ et mirabilia ejus in profundo./",
+        "SYN": "видят дела Господа и чудеса Его в пучине:",
+        "NEO": "Ils dédaignèrent la terre de délices, ils ne crurent pas à la parole de \\+w Yahweh|strong=\"H3068\"\\+w** ;",
+        "NAB": "Next they despised the beautiful land; they did not believe the promise.",
+        "VAT_ES": "Despreciaron una tierra apetecible,",
+        "CEI": "Rifiutarono un paese di delizie, non credettero alla sua parola."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֵּרָגְנ֥וּ בְ/אָהֳלֵי/הֶ֑ם לֹ֥א שָׁ֝מְע֗וּ בְּ/ק֣וֹל יְהוָֽה׃",
+        "LXX": "εἶπεν, καὶ ἔστη πνεῦμα καταιγίδος, καὶ ὑψώθη τὰ κύματα αὐτῆς·",
+        "VUL": "Dixit, et stetit spiritus procellæ,/ et exaltati sunt fluctus ejus./",
+        "SYN": "Он речет, - и восстанет бурный ветер и высоко поднимает волны его:",
+        "NEO": "ils murmurèrent dans leurs tentes, et n’obéirent pas à sa voix.",
+        "NAB": "In their tents they complained; they did not obey the LORD.",
+        "VAT_ES": "murmuraron dentro de sus carpas",
+        "CEI": "Mormorarono nelle loro tende, non ascoltarono la voce del Signore."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יִּשָּׂ֣א יָד֣/וֹ לָ/הֶ֑ם לְ/הַפִּ֥יל א֝וֹתָ֗/ם בַּ/מִּדְבָּֽר׃",
+        "LXX": "ἀναβαίνουσιν ἕως τῶν οὐρανῶν, καὶ καταβαίνουσιν ἕως τῶν ἀβύσσων· ἡ ψυχὴ αὐτῶν ἐν κακοῖς ἐτήκετο,",
+        "VUL": "Ascendunt usque ad cælos, et descendunt usque ad abyssos ;/ anima eorum in malis tabescebat./",
+        "SYN": "восходят до небес, нисходят до бездны; душа их истаевает в бедствии;",
+        "NEO": "Alors il leva la main contre eux, jurant de les faire périr dans le désert,",
+        "NAB": "So with raised hand he swore to destroy them in the desert,",
+        "VAT_ES": "Pero él alzó la mano y les juró",
+        "CEI": "Egli alzò la mano su di loro giurando di abbatterli nel deserto,"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וּ/לְ/הַפִּ֣יל זַ֭רְעָ/ם בַּ/גּוֹיִ֑ם וּ֝/לְ/זָרוֹתָ֗/ם בָּ/אֲרָצֽוֹת׃",
+        "LXX": "ἐταράχθησαν, ἐσαλεύθησαν ὡς ὁ μεθύων, καὶ πᾶσα ἡ σοφία αὐτῶν κατεπόθη.",
+        "VUL": "Turbati sunt, et moti sunt sicut ebrius,/ et omnis sapientia eorum devorata est./",
+        "SYN": "они кружатся и шатаются, как пьяные, и вся мудрость их исчезает.",
+        "NEO": "de faire périr leur race parmi les nations, et de les disperser en d’autres contrées.",
+        "NAB": "To scatter their descendants among the nations, disperse them in foreign lands.",
+        "VAT_ES": "que dispersaría a sus descendientes por los pueblos",
+        "CEI": "di disperdere i loro discendenti tra le genti e disseminarli per il paese."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ֭/יִּצָּ֣מְדוּ לְ/בַ֣עַל פְּע֑וֹר וַ֝/יֹּאכְל֗וּ זִבְחֵ֥י מֵתִֽים׃",
+        "LXX": "καὶ ἐκέκραξαν πρὸς Κύριον ἐν τῷ θλίβεσθαι αὐτούς, καὶ ἐκ τῶν ἀναγκῶν αὐτῶν ἐξήγαγεν αὐτούς,",
+        "VUL": "Et clamaverunt ad Dominum cum tribularentur ;/ et de necessitatibus eorum eduxit eos./",
+        "SYN": "Но воззвали к Господу в скорби своей, и Он вывел их из бедствия их.",
+        "NEO": "Ils s’attachèrent à Béelphégor et mangèrent des victimes offertes aux morts.",
+        "NAB": "They joined in the rites of Baal of Peor, ate food sacrificed to dead gods.",
+        "VAT_ES": "Luego se unieron al Baal de Peor",
+        "CEI": "Si asservirono a Baal-Peor e mangiarono i sacrifici dei morti,"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ֭/יַּכְעִיסוּ בְּ/מַֽעַלְלֵי/הֶ֑ם וַ/תִּפְרָץ בָּ֝֗/ם מַגֵּפָֽה׃",
+        "LXX": "καὶ ἔστησεν καταιγίδα αὐτῆς, καὶ ἐσίγησαν τὰ κύματα αὐτῆς·",
+        "VUL": "Et statuit procellam ejus in auram,/ et siluerunt fluctus ejus./",
+        "SYN": "Он превращает бурю в тишину, и волны умолкают.",
+        "NEO": "Ils irritèrent \\+w Yahweh|strong=\"H3068\"\\+w** par leurs actions, et un fléau fit irruption parmi eux.",
+        "NAB": "They provoked him by their actions, and a plague broke out among them.",
+        "VAT_ES": "con esas acciones irritaron al Señor",
+        "CEI": "provocarono Dio con tali azioni e tra essi scoppiò una pestilenza."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲמֹ֣ד פִּֽ֭ינְחָס וַ/יְפַלֵּ֑ל וַ֝/תֵּעָצַ֗ר הַ/מַּגֵּפָֽה׃",
+        "LXX": "καὶ εὐφράνθησαν ὅτι ἡσύχασαν, καὶ ὡδήγησεν αὐτοὺς ἐπιμελίᾳ θελήματος αὐτοῦ.",
+        "VUL": "Et lætati sunt quia siluerunt ;/ et deduxit eos in portum voluntatis eorum./",
+        "SYN": "И веселятся, что они утихли, и Он приводит их к желаемой пристани.",
+        "NEO": "Phinées se leva et donna satisfaction, et le fléau fut arrêté.",
+        "NAB": "Then Phinehas rose to intervene, and the plague was brought to a halt.",
+        "VAT_ES": "Pero Pinjás se levantó e hizo justicia,",
+        "CEI": "Ma Finees si alzò e si fece giudice, allora cessò la peste"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/תֵּחָ֣שֶׁב ל֭/וֹ לִ/צְדָקָ֑ה לְ/דֹ֥ר וָ֝/דֹ֗ר עַד עוֹלָֽם׃",
+        "LXX": "ἐξομολογησάσθωσαν τῷ κυρίῳ τὰ ἐλέη αὐτοῦ καὶ τὰ θαυμάσια αὐτοῦ τοῖς υἱοῖς τῶν ἀνθρώπων,",
+        "VUL": "Confiteantur Domino misericordiæ ejus,/ et mirabilia ejus filiis hominum./",
+        "SYN": "Да славят Господа за милость Его и за чудные дела Его для сынов человеческих!",
+        "NEO": "Cette action fut imputée à justice, d’âge en âge, à jamais.",
+        "NAB": "This was counted for him as a righteous deed for all generations to come.",
+        "VAT_ES": "esto le fue tenido en cuenta a su favor,",
+        "CEI": "e gli fu computato a giustizia presso ogni generazione, sempre."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ֭/יַּקְצִיפוּ עַל מֵ֥י מְרִיבָ֑ה וַ/יֵּ֥רַע לְ֝/מֹשֶׁ֗ה בַּ/עֲבוּרָֽ/ם׃",
+        "LXX": "ὑψωσάτωσαν αὐτὸν ἐν ἐκκλησίαις λαοῦ, καὶ ἐν καθέδραις πρεσβυτέρων αἰνεσάτωσαν αὐτόν.",
+        "VUL": "Et exaltent eum in ecclesia plebis,/ et in cathedra seniorum laudent eum./",
+        "SYN": "Да превозносят Его в собрании народном и да славят Его в сонме старейшин!",
+        "NEO": "Ils irritèrent \\+w Yahweh|strong=\"H3068\"\\+w** aux eaux de Mériba, et Moïse eut à souffrir à cause d’eux ;",
+        "NAB": "At the waters of Meribah they angered God, and Moses suffered because of them.",
+        "VAT_ES": "Irritaron al Señor junto a las aguas de Meribá,",
+        "CEI": "Lo irritarono anche alle acque di Meriba e Mosè fu punito per causa loro,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "כִּֽי הִמְר֥וּ אֶת רוּח֑/וֹ וַ֝/יְבַטֵּ֗א בִּ/שְׂפָתָֽי/ו׃",
+        "LXX": "ἔθετο ποταμοὺς εἰς ἔρημον, καὶ ἐξόδους ὑδάτων εἰς δίψαν,",
+        "VUL": "Posuit flumina in desertum,/ et exitus aquarum in sitim ;/",
+        "SYN": "Он превращает реки в пустыню и источники вод - в сушу,",
+        "NEO": "car ils aigrirent son esprit, et il prononça des paroles inconsidérées.",
+        "NAB": "They so embittered his spirit that rash words crossed his lips.",
+        "VAT_ES": "porque lo amargaron profundamente,",
+        "CEI": "perché avevano inasprito l'animo suo ed egli disse parole insipienti."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "לֹֽא הִ֭שְׁמִידוּ אֶת הָֽ/עַמִּ֑ים אֲשֶׁ֤ר אָמַ֖ר יְהוָ֣ה לָ/הֶֽם׃",
+        "LXX": "γῆν καρποφόρον εἰς ἅλμην, ἀπὸ κακίας τῶν κατοικούντων ἐν αὐτῇ.",
+        "VUL": "terram fructiferam in salsuginem,/ a malitia inhabitantium in ea./",
+        "SYN": "землю плодородную - в солончатую, за нечестие живущих на ней.",
+        "NEO": "Ils n’exterminèrent pas les peuples que \\+w Yahweh|strong=\"H3068\"\\+w** leur avait ordonné de détruire.",
+        "NAB": "They did not destroy the peoples as the LORD had commanded them,",
+        "VAT_ES": "No exterminaron a los pueblos",
+        "CEI": "Non sterminarono i popoli come aveva ordinato il Signore,"
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יִּתְעָרְב֥וּ בַ/גּוֹיִ֑ם וַֽ֝/יִּלְמְד֗וּ מַֽעֲשֵׂי/הֶֽם׃",
+        "LXX": "ἔθετο ἔρημον εἰς λιμένας ὑδάτων,",
+        "VUL": "Posuit desertum in stagna aquarum,/ et terram sine aqua in exitus aquarum./",
+        "SYN": "Он превращает пустыню в озеро, и землю иссохшую - в источники вод;",
+        "NEO": "Ils se mêlèrent aux nations, et ils apprirent leurs œuvres.",
+        "NAB": "But mingled with the nations and imitated their ways.",
+        "VAT_ES": "se mezclaron con los paganos",
+        "CEI": "ma si mescolarono con le nazioni e impararono le opere loro."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יַּעַבְד֥וּ אֶת עֲצַבֵּי/הֶ֑ם וַ/יִּהְי֖וּ לָ/הֶ֣ם לְ/מוֹקֵֽשׁ׃",
+        "LXX": "καὶ κατῴκισεν ἐκεῖ πεινῶντας, καὶ συνεστήσαντο πόλιν κατοικεσίας,",
+        "VUL": "Et collocavit illic esurientes,/ et constituerunt civitatem habitationis :/",
+        "SYN": "и поселяет там алчущих, и они строят город для обитания;",
+        "NEO": "Ils servirent leurs idoles, qui furent pour eux un piège.",
+        "NAB": "They worshiped their idols and were ensnared by them.",
+        "VAT_ES": "rindieron culto a sus ídolos,",
+        "CEI": "Servirono i loro idoli e questi furono per loro un tranello."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/יִּזְבְּח֣וּ אֶת בְּ֭נֵי/הֶם וְ/אֶת בְּנֽוֹתֵי/הֶ֗ם לַ/שֵּֽׁדִים׃",
+        "LXX": "καὶ ἔσπειραν ἀγροὺς καὶ ἐφύτευσαν ἀμπελῶνας, καὶ ἐποίησαν καρπὸν γενήματος.",
+        "VUL": "et seminaverunt agros et plantaverunt vineas,/ et fecerunt fructum nativitatis./",
+        "SYN": "засевают поля, насаждают виноградники, которые приносят им обильные плоды.",
+        "NEO": "Ils immolèrent leurs fils et leurs filles aux démons.",
+        "NAB": "They sacrificed to the gods their own sons and daughters,",
+        "VAT_ES": "Sacrificaron en honor de los demonios",
+        "CEI": "Immolarono i loro figli e le loro figlie agli dei falsi."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יִּֽשְׁפְּכ֨וּ דָ֪ם נָקִ֡י דַּם בְּנֵ֘י/הֶ֤ם וּֽ/בְנוֹתֵי/הֶ֗ם אֲשֶׁ֣ר זִ֭בְּחוּ לַ/עֲצַבֵּ֣י כְנָ֑עַן וַ/תֶּחֱנַ֥ף הָ֝/אָ֗רֶץ בַּ/דָּמִֽים׃",
+        "LXX": "καὶ εὐλόγησεν αὐτοὺς καὶ ἐπληθύνθησαν σφόδρα, καὶ τὰ κτήνη αὐτῶν οὐκ ἐσμίκρυνεν.",
+        "VUL": "Et benedixit eis, et multiplicati sunt nimis ;/ et jumenta eorum non minoravit./",
+        "SYN": "Он благословляет их, и они весьма размножаются, и скота их не умаляет.",
+        "NEO": "Ils versèrent le sang innocent, le sang de leurs fils et de leurs filles, qu’ils sacrifiaient aux idoles de Canaan ; et le pays fut profané par des meurtres.",
+        "NAB": "Shedding innocent blood, the blood of their own sons and daughters, Whom they sacrificed to the idols of Canaan, desecrating the land with bloodshed.",
+        "VAT_ES": "derramaron sangre inocente,",
+        "CEI": "Versarono sangue innocente, il sangue dei figli e delle figlie sacrificati agli idoli di Cànaan; la terra fu profanata dal sangue,"
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַ/יִּטְמְא֥וּ בְ/מַעֲשֵׂי/הֶ֑ם וַ֝/יִּזְנוּ֗ בְּ/מַֽעַלְלֵי/הֶֽם׃",
+        "LXX": "καὶ ὠλιγώθησαν καὶ ἐκακώθησαν ἀπὸ θλίψεως κακῶν καὶ ὀδύνης.",
+        "VUL": "Et pauci facti sunt et vexati sunt,/ a tribulatione malorum et dolore./",
+        "SYN": "Уменьшились они и упали от угнетения, бедствия и скорби, -",
+        "NEO": "Ils se souillèrent par leurs œuvres, ils se prostituèrent par leurs actions.",
+        "NAB": "They defiled themselves by their actions, became adulterers by their conduct.",
+        "VAT_ES": "Se mancharon con sus acciones",
+        "CEI": "si contaminarono con le opere loro, si macchiarono con i loro misfatti."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וַ/יִּֽחַר אַ֣ף יְהוָ֣ה בְּ/עַמּ֑/וֹ וַ֝/יְתָעֵ֗ב אֶת נַחֲלָתֽ/וֹ׃",
+        "LXX": "ἐξεχύθη ἐξουδένωσις ἐπ’ ἄρχοντας, καὶ ἐπλάνησεν αὐτοὺς ἐν ἀβάτῳ καὶ οὐχ ὁδῷ.",
+        "VUL": "Effusa est contemptio super principes :/ et errare fecit eos in invio, et non in via./",
+        "SYN": "он изливает бесчестие на князей и оставляет их блуждать в пустыне, где нет путей.",
+        "NEO": "La colère de \\+w Yahweh|strong=\"H3068\"\\+w** s’alluma contre son peuple, et il prit en horreur son héritage.",
+        "NAB": "So the LORD grew angry with his people, abhorred his own heritage.",
+        "VAT_ES": "por eso el Señor se indignó contra su pueblo",
+        "CEI": "L'ira del Signore si accese contro il suo popolo, ebbe in orrore il suo possesso;"
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וַ/יִּתְּנֵ֥/ם בְּ/יַד גּוֹיִ֑ם וַֽ/יִּמְשְׁל֥וּ בָ֝/הֶ֗ם שֹׂנְאֵי/הֶֽם׃",
+        "LXX": "καὶ ἐβοήθησεν πένητι ἐκ πτωχίας, καὶ ἔθετο ὡς πρόβατα πατριάς.",
+        "VUL": "Et adjuvit pauperem de inopia,/ et posuit sicut oves familias./",
+        "SYN": "Бедного же извлекает из бедствия и умножает род его, как стада овец.",
+        "NEO": "Il les livra entre les mains des nations, ceux qui les haïssaient dominèrent sur eux.",
+        "NAB": "He handed them over to the nations, and their adversaries ruled them.",
+        "VAT_ES": "Los puso en manos de las naciones",
+        "CEI": "e li diede in balìa dei popoli, li dominarono i loro avversari,"
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וַ/יִּלְחָצ֥וּ/ם אוֹיְבֵי/הֶ֑ם וַ֝/יִּכָּנְע֗וּ תַּ֣חַת יָדָֽ/ם׃",
+        "LXX": "ὄψονται εὐθεῖς καὶ εὐφρανθήσονται, καὶ πᾶσα ἀνομία ἐμφράξει τὸ στόμα αὐτῆς.",
+        "VUL": "Videbunt recti, et lætabuntur ;/ et omnis iniquitas oppilabit os suum./",
+        "SYN": "Праведники видят сие и радуются, а всякое нечестие заграждает уста свои.",
+        "NEO": "Leurs ennemis les opprimèrent, et ils furent humiliés sous leur main.",
+        "NAB": "Their enemies oppressed them, kept them under subjection.",
+        "VAT_ES": "sus adversarios los oprimieron",
+        "CEI": "li oppressero i loro nemici e dovettero piegarsi sotto la loro mano."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "פְּעָמִ֥ים רַבּ֗וֹת יַצִּ֫ילֵ֥/ם וְ֭/הֵמָּה יַמְר֣וּ בַ/עֲצָתָ֑/ם וַ֝/יָּמֹ֗כּוּ בַּ/עֲוֺנָֽ/ם׃",
+        "LXX": "τίς σοφὸς καὶ φυλάξει ταῦτα, καὶ συνήσουσιν τὰ ἐλέη τοῦ κυρίου;",
+        "VUL": "Quis sapiens, et custodiet hæc,/ et intelliget misericordias Domini ?]",
+        "SYN": "Кто мудр, тот заметит сие и уразумеет милость Господа.",
+        "NEO": "Bien des fois il les délivra, mais ils furent rebelles dans leurs desseins, et se perdirent par leurs iniquités.",
+        "NAB": "Many times did he rescue them, but they kept rebelling and scheming and were brought low by their own guilt.",
+        "VAT_ES": "El Señor los libró muchas veces,",
+        "CEI": "Molte volte li aveva liberati; ma essi si ostinarono nei loro disegni e per le loro iniquità furono abbattuti."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וַ֭/יַּרְא בַּ/צַּ֣ר לָ/הֶ֑ם בְּ֝/שָׁמְע֗/וֹ אֶת רִנָּתָֽ/ם׃",
+        "NEO": "Néanmoins, il regarda leur détresse, lorsqu’il entendit leurs supplications.",
+        "NAB": "Still God had regard for their affliction when he heard their wailing.",
+        "VAT_ES": "Sin embargo, el miró su aflicción",
+        "CEI": "Pure, egli guardò alla loro angoscia quando udì il loro grido."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וַ/יִּזְכֹּ֣ר לָ/הֶ֣ם בְּרִית֑/וֹ וַ֝/יִּנָּחֵ֗ם כְּ/רֹ֣ב חסד/ו חֲסָדָֽי/ו׃",
+        "NEO": "Il se souvint en leur faveur de son alliance, il eut pitié d’eux selon sa grande bonté,",
+        "NAB": "For their sake he remembered his covenant and relented in his abundant love,",
+        "VAT_ES": "Se acordó de su alianza en favor de ellos",
+        "CEI": "Si ricordò della sua alleanza con loro, si mosse a pietà per il suo grande amore."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֣ן אוֹתָ֣/ם לְ/רַחֲמִ֑ים לִ֝/פְנֵ֗י כָּל שׁוֹבֵי/הֶֽם׃",
+        "NEO": "et il en fit l’objet de ses miséricordes, devant tous ceux qui les tenaient captifs.",
+        "NAB": "Winning for them compassion from all who held them captive.",
+        "VAT_ES": "hizo que les tuvieran compasión",
+        "CEI": "Fece loro trovare grazia presso quanti li avevano deportati."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "הוֹשִׁיעֵ֨/נוּ יְה֘וָ֤ה אֱלֹהֵ֗י/נוּ וְ/קַבְּצֵ/נוּ֮ מִֽן הַ/גּ֫וֹיִ֥ם לְ֭/הֹדוֹת לְ/שֵׁ֣ם קָדְשֶׁ֑/ךָ לְ֝/הִשְׁתַּבֵּ֗חַ בִּ/תְהִלָּתֶֽ/ךָ׃",
+        "NEO": "Sauve-nous \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, et rassemble-nous du milieu des nations, afin que nous célébrions ton saint nom, et que nous mettions notre gloire à te louer.",
+        "NAB": "Save us, LORD, our God; gather us from among the nations That we may give thanks to your holy name and glory in praising you.",
+        "VAT_ES": "Sálvanos, Señor y Dios nuestro;",
+        "CEI": "Salvaci, Signore Dio nostro, e raccoglici di mezzo ai popoli, perché proclamiamo il tuo santo nome e ci gloriamo della tua lode."
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "בָּר֤וּךְ יְהוָ֨ה אֱלֹהֵ֪י יִשְׂרָאֵ֡ל מִן הָ֤/עוֹלָ֨ם וְ/עַ֬ד הָ/עוֹלָ֗ם וְ/אָמַ֖ר כָּל הָ/עָ֥ם אָמֵ֗ן הַֽלְלוּ יָֽהּ׃",
+        "NEO": "Béni soit \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu d’Israël, d’éternité en éternité ! Et que tout le peuple dise : Amen ! Alleluia !",
+        "NAB": "Blessed be the LORD, the God of Israel, from everlasting to everlasting! Let all the people say, Amen! Hallelujah!",
+        "VAT_ES": "&iexcl;Bendito sea el Señor, Dios de Israel,",
+        "CEI": "Benedetto il Signore, Dio d'Israele da sempre, per sempre. Tutto il popolo dica: Amen."
+      }
+    }
+  }
+}

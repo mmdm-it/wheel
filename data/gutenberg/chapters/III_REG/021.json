@@ -1,0 +1,537 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "III_REG_021",
+  "book_key": "III_REG",
+  "sequence": 21,
+  "chapter_in": {
+    "MT": 21,
+    "VUL": 21,
+    "LXX": 21
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י אַחַר֙ הַ/דְּבָרִ֣ים הָ/אֵ֔לֶּה כֶּ֧רֶם הָיָ֛ה לְ/נָב֥וֹת הַ/יִּזְרְעֵאלִ֖י אֲשֶׁ֣ר בְּ/יִזְרְעֶ֑אל אֵ֚צֶל הֵיכַ֣ל אַחְאָ֔ב מֶ֖לֶךְ שֹׁמְרֽוֹן׃",
+        "LXX": "Καὶ συνήθροισεν υἱὸς Ἁδὲρ πᾶσαν τὴν δύναμιν αὐτοῦ καὶ ἀνέβη καὶ περιεκάθισεν ἐπὶ Σαμάρειαν, καὶ τριάκοντα καὶ δύο βασιλεῖς μετ’ αὐτοῦ, καὶ πᾶς ἵππος καὶ ἅρμα· καὶ ἀνέβησαν καὶ περιεκάθισαν ἐπὶ Σαμάρειαν, καὶ ἐπολέμησαν ἐπ’ αὐτήν.",
+        "VUL": "Post verba autem hæc, tempore illo vinea erat Naboth Jezrahelitæ, quæ erat in Jezrahel, juxta palatium Achab regis Samariæ.",
+        "SYN": "И было после сих происшествий: у Навуфея Изреелитянина в Изреели был виноградник подле дворца Ахава, царя Самарийского.",
+        "NEO": "Après ces événements, comme Naboth de Jezrahel avait une vigne à Jezrahel, à côté du palais d’Achab, roi de Samarie,",
+        "NAB": "Some time after this, as Naboth the Jezreelite had a vineyard in Jezreel next to the palace of Ahab, king of Samaria,",
+        "VAT_ES": "Después de esto, sucedió lo siguiente: Nabot, el izreelita, tenía una viña en Izreel, al lado del palacio de Ajab, rey de Samaría.",
+        "CEI": "In seguito avvenne il seguente episodio. Nabot di Izreèl possedeva una vigna vicino al palazzo di Acab re di Samaria."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר אַחְאָ֣ב אֶל נָב֣וֹת לֵ/אמֹר֩ תְּנָ/ה לִּ֨/י אֶֽת כַּרְמְ/ךָ֜ וִֽ/יהִי לִ֣/י לְ/גַן יָרָ֗ק כִּ֣י ה֤וּא קָרוֹב֙ אֵ֣צֶל בֵּיתִ֔/י וְ/אֶתְּנָ֤ה לְ/ךָ֙ תַּחְתָּ֔י/ו כֶּ֖רֶם ט֣וֹב מִמֶּ֑/נּוּ אִ֚ם ט֣וֹב בְּ/עֵינֶ֔י/ךָ אֶתְּנָה לְ/ךָ֥ כֶ֖סֶף מְחִ֥יר זֶֽה׃",
+        "LXX": "καὶ ἀπέστειλεν πρὸς Ἀχαὰβ βασιλέα Ἰσραὴλ εἰς τὴν πόλιν καὶ εἶπεν πρὸς αὐτόν Τάδε λέγει υἱὸς Ἁδέρ",
+        "VUL": "Locutus est ergo Achab ad Naboth, dicens : Da mihi vineam tuam, ut faciam mihi hortum olerum, quia vicina est, et prope domum meam : daboque tibi pro ea vineam meliorem, aut si commodius tibi putas, argenti pretium, quanto digna est.",
+        "SYN": "И сказал Ахав Навуфею, говоря: отдай мне свой виноградник; из него будет у меня овощной сад, ибо он близко к моему дому; а вместо него я дам тебе виноградник лучше этого, или, если угодно тебе, дам тебе серебра, сколько он стоит.",
+        "NEO": "Achab parla à Naboth en ces termes : « Cède-moi ta vigne pour qu’elle me serve de jardin potager, car elle est tout près de ma maison ; je te donnerai à la place une vigne meilleure, ou, si cela te convient, de l’argent pour sa valeur. »",
+        "NAB": "Ahab said to Naboth, \"Give me your vineyard to be my vegetable garden, since it is close by, next to my house. I will give you a better vineyard in exchange, or, if you prefer, I will give you its value in money.\"",
+        "VAT_ES": "Ajab dijo a Nabot: «Dame tu viña para hacerme una huerta, ya que está justo al lado de mi casa. Yo te daré a cambio una viña mejor o, si prefieres, te pagaré su valor en dinero».",
+        "CEI": "Acab disse a Nabot: \"Cedimi la tua vigna; siccome è vicina alla mia casa, ne farei un orto. In cambio ti darò una vigna migliore oppure, se preferisci, te la pagherò in denaro al prezzo che vale\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר נָב֖וֹת אֶל אַחְאָ֑ב חָלִ֤ילָ/ה לִּ/י֙ מֵֽ/יהוָ֔ה מִ/תִּתִּ֛/י אֶת נַחֲלַ֥ת אֲבֹתַ֖/י לָֽ/ךְ׃",
+        "LXX": "Τὸ ἀργύριόν σου καὶ τὸ χρυσίον σου ἐμόν ἐστιν, καὶ αἱ γυναῖκές σου καὶ τὰ τέκνα σου ἐμά ἐστιν.",
+        "VUL": "Cui respondit Naboth : Propitius sit mihi Dominus, ne dem hæreditatem patrum meorum tibi.",
+        "SYN": "Но Навуфей сказал Ахаву: сохрани меня Господь, чтоб я отдал тебе наследство отцов моих!",
+        "NEO": "Naboth répondit à Achab : « Que \\+w Yahweh|strong=\"H3068\"\\+w** me garde de te donner l’héritage de mes pères ! »",
+        "NAB": "\"The LORD forbid,\" Naboth answered him, \"that I should give you my ancestral heritage.\"",
+        "VAT_ES": "Pero Nabot respondió a Ajab: «&iexcl;El Señor me libre de cederte la herencia de mis padres!».",
+        "CEI": "Nabot rispose ad Acab: \"Mi guardi il Signore dal cederti l'eredità dei miei padri\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹא֩ אַחְאָ֨ב אֶל בֵּית֜/וֹ סַ֣ר וְ/זָעֵ֗ף עַל הַ/דָּבָר֙ אֲשֶׁר דִּבֶּ֣ר אֵלָ֗י/ו נָבוֹת֙ הַ/יִּזְרְעֵאלִ֔י וַ/יֹּ֕אמֶר לֹֽא אֶתֵּ֥ן לְ/ךָ֖ אֶת נַחֲלַ֣ת אֲבוֹתָ֑/י וַ/יִּשְׁכַּב֙ עַל מִטָּת֔/וֹ וַ/יַּסֵּ֥ב אֶת פָּנָ֖י/ו וְ/לֹֽא אָ֥כַל לָֽחֶם׃",
+        "LXX": "καὶ ἀπεκρίθη βασιλεὺς Ἰσραὴλ καὶ εἶπεν Καθὼς ἐλάλησας, κύριε βασιλεῦ, σὸς ἐγώ εἰμι καὶ πάντα τὰ ἐμά.",
+        "VUL": "Venit ergo Achab in domum suam indignans, et frendens super verbo quod locutus fuerat ad eum Naboth Jezrahelites, dicens : Non dabo tibi hæreditatem patrum meorum. Et projiciens se in lectulum suum, avertit faciem suam ad parietem, et non comedit panem.",
+        "SYN": "И пришел Ахав домой встревоженный и огорченный тем словом, которое сказал ему Навуфей Изреелитянин, говоря: не отдам тебе наследства отцов моих. И [в смущенном духе] лег на постель свою, и отворотил лице свое, и хлеба не ел.",
+        "NEO": "Achab rentra dans sa maison sombre et irrité à cause de cette parole que lui avait dite Naboth de Jezrahel : « Je ne donnerai pas l’héritage de mes pères. » Et, se couchant sur son lit, il détourna le visage et ne mangea pas.",
+        "NAB": "Ahab went home disturbed and angry at the answer Naboth the Jezreelite had made to him: \"I will not give you my ancestral heritage.\" Lying down on his bed, he turned away from food and would not eat.",
+        "VAT_ES": "Ajab se fue a su casa malhumorado y muy irritado por lo que le había dicho Nabot, el izreelita: «No te daré la herencia de mis padres». Se tiró en su lecho, dio vuelta la cara y no quiso probar bocado.",
+        "CEI": "Acab se ne andò a casa amareggiato e sdegnato per le parole dettegli da Nabot di Izreèl, che aveva affermato: \"Non ti cederò l'eredità dei miei padri\". Si coricò sul letto, si girò verso la parete e non volle mangiare."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/תָּבֹ֥א אֵלָ֖י/ו אִיזֶ֣בֶל אִשְׁתּ֑/וֹ וַ/תְּדַבֵּ֣ר אֵלָ֗י/ו מַה זֶּה֙ רוּחֲ/ךָ֣ סָרָ֔ה וְ/אֵינְ/ךָ֖ אֹכֵ֥ל לָֽחֶם׃",
+        "LXX": "καὶ ἀνέστρεψαν οἱ ἄγγελοι καὶ εἶπον Τάδε λέγει υἱὸς Ἁδέρ Ἐγὼ ἀπέστρεψα λέγων τὸ ἀργύριόν σου καὶ τὸ χρυσίον σου καὶ τὰς γυναῖκὰς σου δώσεις ἐμοί·",
+        "VUL": "Ingressa est autem ad eum Jezabel uxor sua, dixitque ei : Quid est hoc, unde anima tua contristata est ? et quare non comedis panem ?",
+        "SYN": "И вошла к нему жена его Иезавель и сказала ему: отчего встревожен дух твой, что ты и хлеба не ешь?",
+        "NEO": "Jézabel, sa femme, vint auprès de lui et lui dit : « Pourquoi as-tu l’âme sombre et ne manges-tu pas ? »",
+        "NAB": "His wife Jezebel came to him and said to him, \"Why are you so angry that you will not eat?\"",
+        "VAT_ES": "Entonces fue a verlo su esposa Jezabel y le preguntó: «&iquest;Por qué estás tan malhumorado y no comes nada?».",
+        "CEI": "Entrò da lui la moglie Gezabele e gli domandò: \"Perché mai il tuo spirito è tanto amareggiato e perché non vuoi mangiare?\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר אֵלֶ֗י/הָ כִּֽי אֲ֠דַבֵּר אֶל נָב֨וֹת הַ/יִּזְרְעֵאלִ֜י וָ/אֹ֣מַר ל֗/וֹ תְּנָ/ה לִּ֤/י אֶֽת כַּרְמְ/ךָ֙ בְּ/כֶ֔סֶף א֚וֹ אִם חָפֵ֣ץ אַתָּ֔ה אֶתְּנָה לְ/ךָ֥ כֶ֖רֶם תַּחְתָּ֑י/ו וַ/יֹּ֕אמֶר לֹֽא אֶתֵּ֥ן לְ/ךָ֖ אֶת כַּרְמִֽ/י׃",
+        "LXX": "ὅτι ταύτην τὴν ὥραν αὔριον ἀποστελῶ τοὺς παῖδάς μου πρὸς σέ, καὶ ἐρευνήσουσιν τὸν οἶκόν σου καὶ τοὺς οἴκους τῶν παίδων σου· καὶ ἔσται τὰ ἐπιθυμήματα ὀφθαλμῶν αὐτῶν ἐφ’ ἃ ἂν ἐπιβάλωσι τὰς χεῖρας αὐτῶν, καὶ λήμψονται.",
+        "VUL": "Qui respondit ei : Locutus sum Naboth Jezrahelitæ, et dixi ei : Da mihi vineam tuam, accepta pecunia : aut, si tibi placet, dabo tibi vineam meliorem pro ea. Et ille ait : Non dabo tibi vineam meam.",
+        "SYN": "Он сказал ей: когда я стал говорить Навуфею Изреелитянину и сказал ему: \"отдай мне виноградник твой за серебро, или, если хочешь, я дам тебе _другой_ виноградник вместо него\", тогда он сказал: \"не отдам тебе виноградника моего, [наследства отцов моих]\".",
+        "NEO": "Il lui répondit : « J’ai parlé à Naboth de Jezrahel et je lui ai dit : Cède-moi ta vigne pour de l’argent ; ou, si tu l’aimes mieux, je te donnerai une autre vigne à la place. Mais il a dit : Je ne te donnerai pas ma vigne. »",
+        "NAB": "He answered her, \"Because I spoke to Naboth the Jezreelite and said to him, 'Sell me your vineyard, or, if you prefer, I will give you a vineyard in exchange.' But he refused to let me have his vineyard.\"",
+        "VAT_ES": "El le dijo: «Porque le hablé a Nabot, el izreelita, y le propuse: «Véndeme tu viña o, si quieres, te daré otra a cambio». Pero él respondió: «No te daré mi viña».",
+        "CEI": "Le rispose: \"Perché ho detto a Nabot di Izreèl: Cedimi la tua vigna per denaro o, se preferisci, te la cambierò con un'altra vigna ed egli mi ha risposto: Non cederò la mia vigna!\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֤אמֶר אֵלָי/ו֙ אִיזֶ֣בֶל אִשְׁתּ֔/וֹ אַתָּ֕ה עַתָּ֛ה תַּעֲשֶׂ֥ה מְלוּכָ֖ה עַל יִשְׂרָאֵ֑ל ק֤וּם אֱכָל לֶ֨חֶם֙ וְ/יִטַ֣ב לִבֶּ֔/ךָ אֲנִי֙ אֶתֵּ֣ן לְ/ךָ֔ אֶת כֶּ֖רֶם נָב֥וֹת הַ/יִּזְרְעֵאלִֽי׃",
+        "LXX": "καὶ ἐκάλεσεν ὁ βασιλεὺς Ἰσραὴλ πάντας τοὺς πρεσβυτέρους καὶ εἶπεν Γνῶτε δὴ καὶ ἴδετε ὅτι κακίαν οὗτος ζητεῖ, ὅτι ἀπέσταλκεν πρὸς μὲ περὶ τῶν γυναικῶν μου καὶ περὶ τῶν υἱῶν μου καὶ περὶ τῶν θυγατέρων μου· τὸ ἀργύριόν μου καὶ τὸ χρυσίον μου οὐκ ἀπεκώλυσα ἀπ’ αὐτοῦ.",
+        "VUL": "Dixit ergo ad eum Jezabel uxor ejus : Grandis auctoritatis es, et bene regis regnum Israël. Surge, et comede panem, et æquo animo esto : ego dabo tibi vineam Naboth Jezrahelitæ.",
+        "SYN": "И сказала ему Иезавель, жена его: что за царство было бы в Израиле, если бы ты так поступал? встань, ешь хлеб и будь спокоен; я доставлю тебе виноградник Навуфея Изреелитянина.",
+        "NEO": "Alors Jézabel, sa femme, lui dit : « Est-ce toi qui exerces maintenant la royauté sur Israël ? Lève-toi, prends de la nourriture, et que ton cœur se réjouisse ; je te donnerai, moi, la vigne de Naboth de Jezrahel. »",
+        "NAB": "\"A fine ruler over Israel you are indeed!\" his wife Jezebel said to him. \"Get up. Eat and be cheerful. I will obtain the vineyard of Naboth the Jezreelite for you.\"",
+        "VAT_ES": "Su esposa Jezabel le dijo: «&iquest;Así ejerces tú la realeza sobre Israel? &iexcl;Levántate, come y alégrate! &iexcl;Yo te daré la viña de Nabot, el izreelita!».",
+        "CEI": "Allora sua moglie Gezabele gli disse: \"Tu ora eserciti il regno su Israele? Alzati, mangia e il tuo cuore gioisca. Te la darò io la vigna di Nabot di Izreèl!\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/תִּכְתֹּ֤ב סְפָרִים֙ בְּ/שֵׁ֣ם אַחְאָ֔ב וַ/תַּחְתֹּ֖ם בְּ/חֹתָמ֑/וֹ וַ/תִּשְׁלַ֣ח ה/ספרים סְפָרִ֗ים אֶל הַ/זְקֵנִ֤ים וְ/אֶל הַֽ/חֹרִים֙ אֲשֶׁ֣ר בְּ/עִיר֔/וֹ הַ/יֹּשְׁבִ֖ים אֶת נָבֽוֹת׃",
+        "LXX": "καὶ εἶπαν αὐτῷ οἱ πρεσβύτεροι καὶ πᾶς ὁ λαός Μὴ ἀκούσῃς καὶ μὴ θελήσῃς.",
+        "VUL": "Scripsit itaque litteras ex nomine Achab, et signavit eas annulo ejus, et misit ad majores natu, et optimates, qui erant in civitate ejus, et habitabant cum Naboth.",
+        "SYN": "И написала она от имени Ахава письма, и запечатала их его печатью, и послала эти письма к старейшинам и знатным в его городе, живущим с Навуфеем.",
+        "NEO": "Et elle écrivit au nom d’Achab une lettre qu’elle scella du sceau du roi, et elle envoya la lettre aux anciens et aux magistrats qui étaient dans la ville et habitaient avec Naboth.",
+        "NAB": "So she wrote letters in Ahab's name and, having sealed them with his seal, sent them to the elders and to the nobles who lived in the same city with Naboth.",
+        "VAT_ES": "En seguida escribió una carta en nombre de Ajab, la selló con el sello del rey y la envió a los ancianos y a los notables de la ciudad, conciudadanos de Nabot.",
+        "CEI": "Essa scrisse lettere con il nome di Acab, le sigillò con il suo sigillo, quindi le spedì agli anziani e ai capi, che abitavano nella città di Nabot."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/תִּכְתֹּ֥ב בַּ/סְּפָרִ֖ים לֵ/אמֹ֑ר קִֽרְאוּ צ֔וֹם וְ/הוֹשִׁ֥יבוּ אֶת נָב֖וֹת בְּ/רֹ֥אשׁ הָ/עָֽם׃",
+        "LXX": "καὶ εἶπεν τοῖς ἀγγέλοις υἱοῦ Ἁδέρ Λέγετε τῷ κυρίῳ ὑμῶν Πάντα ὅσα ἀπέσταλκας πρὸς τὸν δοῦλόν σου ἐν πρώτοις ποιήσω, τὸ δὲ ῥῆμα τοῦτο οὐ δυνήσομαι ποιῆσαι· καὶ ἀπῆραν οἱ ἄνδρες καὶ ἐπέστρεψαν αὐτῷ λόγον.",
+        "VUL": "Litterarum autem hæc erat sententia : Prædicate jejunium, et sedere facite Naboth inter primos populi :",
+        "SYN": "В письмах она писала так: объявите пост и посадите Навуфея на первое место в народе;",
+        "NEO": "Voici ce qu’elle écrivit dans la lettre : « Publiez un jeûne ; placez Naboth en tête du peuple,",
+        "NAB": "This is what she wrote in the letters: \"Proclaim a fast and set Naboth at the head of the people.",
+        "VAT_ES": "En esa carta escribió: «Proclamen un ayuno y en la asamblea del pueblo hagan sentar a Nabot en primera fila.",
+        "CEI": "Nelle lettere scrisse: \"Bandite un digiuno e fate sedere Nabot in prima fila tra il popolo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ֠/הוֹשִׁיבוּ שְׁנַ֨יִם אֲנָשִׁ֥ים בְּנֵֽי בְלִיַּעַל֮ נֶגְדּ/וֹ֒ וִ/יעִדֻ֣/הוּ לֵ/אמֹ֔ר בֵּרַ֥כְתָּ אֱלֹהִ֖ים וָ/מֶ֑לֶךְ וְ/הוֹצִיאֻ֥/הוּ וְ/סִקְלֻ֖/הוּ וְ/יָמֹֽת׃",
+        "LXX": "καὶ ἀπέστειλεν πρὸς αὐτὸν υἱὸς Ἁδὲρ λέγων Τάδε ποιήσαι μοι ὁ θεὸς καὶ τάδε προσθείη, εἰ ἐκποιήσει ὁ χοῦς Σαμαρείας ταῖς ἀλώπεξιν παντὶ τῷ λαῷ τοῖς πεζοῖς μου.",
+        "VUL": "et submittite duos viros filios Belial contra eum, et falsum testimonium dicant : Benedixit Deum et regem : et educite eum, et lapidate, sicque moriatur.",
+        "SYN": "и против него посадите двух негодных людей, которые свидетельствовали бы на него и сказали: \"ты хулил Бога и царя\"; и потом выведите его, и побейте его камнями, чтоб он умер.",
+        "NEO": "et mettez en face du lui deux hommes de Bélial qui déposeront contre lui en ces termes : Tu as maudit Dieu et le roi ! Puis menez-le dehors, lapidez-le, et qu’il meure. »",
+        "NAB": "Next, get two scoundrels to face him and accuse him of having cursed God and king. Then take him out and stone him to death.\"",
+        "VAT_ES": "Hagan sentar enfrente a dos malvados, que atestig&uuml;en contra él, diciendo: «Tú has maldecido a Dios y al rey». Luego sáquenlo afuera y mátenlo a pedradas».",
+        "CEI": "Di fronte a lui fate sedere due uomini iniqui, i quali l'accusino: Hai maledetto Dio e il re! Quindi conducetelo fuori e lapidatelo ed egli muoia\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲשׂוּ֩ אַנְשֵׁ֨י עִיר֜/וֹ הַ/זְּקֵנִ֣ים וְ/הַ/חֹרִ֗ים אֲשֶׁ֤ר הַ/יֹּֽשְׁבִים֙ בְּ/עִיר֔/וֹ כַּ/אֲשֶׁ֛ר שָׁלְחָ֥ה אֲלֵי/הֶ֖ם אִיזָ֑בֶל כַּ/אֲשֶׁ֤ר כָּתוּב֙ בַּ/סְּפָרִ֔ים אֲשֶׁ֥ר שָׁלְחָ֖ה אֲלֵי/הֶֽם׃",
+        "LXX": "καὶ ἀπεκρίθη βασιλεὺς Ἰσραὴλ καὶ εἶπεν ἱκανούσθω· μὴ καυχάσθω ὁ κυρτὸς ὡς ὁ ὀρθός.",
+        "VUL": "Fecerunt ergo cives ejus majores natu et optimates, qui habitabant cum eo in urbe, sicut præceperat eis Jezabel, et sicut scriptum erat in litteris quas miserat ad eos :",
+        "SYN": "И сделали мужи города его, старейшины и знатные, жившие в городе его, как приказала им Иезавель, так, как писано в письмах, которые она послала к ним.",
+        "NEO": "Les gens de la ville de Naboth, les anciens et les magistrats qui habitaient dans sa ville, firent selon que leur avait envoyé dire Jézabel, selon qu’il était écrit dans la lettre qu’elle leur avait envoyée.",
+        "NAB": "His fellow citizens - the elders and the nobles who dwelt in his city - did as Jezebel had ordered them in writing, through the letters she had sent them.",
+        "VAT_ES": "Los hombres de la ciudad, los ancianos y notables, conciudadanos de Nabot, obraron de acuerdo con lo que les había mandado Jezabel, según lo que estaba escrito en la carta que les había enviado.",
+        "CEI": "Gli uomini della città di Nabot, gli anziani e i capi che abitavano nella sua città, fecero come aveva ordinato loro Gezabele, ossia come era scritto nelle lettere che aveva loro spedite."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "קָרְא֖וּ צ֑וֹם וְ/הֹשִׁ֥יבוּ אֶת נָב֖וֹת בְּ/רֹ֥אשׁ הָ/עָֽם׃",
+        "LXX": "καὶ ἐγένετο ὅτε ἀπεκρίθη αὐτῷ τὸν λόγον τοῦτον, πίνων ἦν αὐτὸς καὶ πάντες βασιλεῖς μετ’ αὐτοῦ ἐν σκηναῖς· καὶ εἶπεν τοῖς παισὶν αὐτοῦ Οἰκοδομήσατε χάρακα· καὶ ἔθεντο χάρακα ἐπὶ τὴν πόλιν.",
+        "VUL": "prædicaverunt jejunium, et sedere fecerunt Naboth inter primos populi.",
+        "SYN": "Объявили пост и посадили Навуфея во главе народа;",
+        "NEO": "Ils publièrent un jeûne, et ils placèrent Naboth en tête du peuple,",
+        "NAB": "They proclaimed a fast and placed Naboth at the head of the people.",
+        "VAT_ES": "Proclamaron un ayuno e hicieron sentar a Nabot en primera fila.",
+        "CEI": "Bandirono il digiuno e fecero sedere Nabot in prima fila tra il popolo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ֠/יָּבֹאוּ שְׁנֵ֨י הָ/אֲנָשִׁ֥ים בְּנֵֽי בְלִיַּעַל֮ וַ/יֵּשְׁב֣וּ נֶגְדּ/וֹ֒ וַ/יְעִדֻ/הוּ֩ אַנְשֵׁ֨י הַ/בְּלִיַּ֜עַל אֶת נָב֗וֹת נֶ֤גֶד הָ/עָם֙ לֵ/אמֹ֔ר בֵּרַ֥ךְ נָב֛וֹת אֱלֹהִ֖ים וָ/מֶ֑לֶךְ וַ/יֹּצִאֻ֨/הוּ֙ מִ/ח֣וּץ לָ/עִ֔יר וַ/יִּסְקְלֻ֥/הוּ בָ/אֲבָנִ֖ים וַ/יָּמֹֽת׃",
+        "LXX": "καὶ ἰδοὺ προφήτης εἷς προσῆλθεν τῷ βασιλεῖ Ἰσραὴλ καὶ εἶπεν Τάδε λέγει Κύριος Εἰ ἑόρακας τὸν ὄχλον τὸν μέγαν τοῦτον; ἰδοὺ ἐγὼ δίδωμι αὐτὸν σήμερον εἰς χεῖρας σάς, καὶ γνώσῃ ὅτι ἐγὼ Κύριος.",
+        "VUL": "Et adductis duobus viris filiis diaboli, fecerunt eos sedere contra eum : at illi, scilicet ut viri diabolici, dixerunt contra eum testimonium coram multitudine : Benedixit Naboth Deum et regem : quam ob rem eduxerunt eum extra civitatem, et lapidibus interfecerunt.",
+        "SYN": "и выступили два негодных человека и сели против него, и свидетельствовали на него эти недобрые люди пред народом, и говорили: Навуфей хулил Бога и царя. И вывели его за город, и побили его камнями, и он умер.",
+        "NEO": "et les deux hommes, fils de Bélial, vinrent se mettre en face de lui. Ces hommes de Bélial déposèrent contre Naboth devant le peuple en ces termes : « Naboth a maudit Dieu et le roi ! » Puis ils le menèrent hors de la ville et le lapidèrent, et il mourut.",
+        "NAB": "Two scoundrels came in and confronted him with the accusation, \"Naboth has cursed God and king.\" And they led him out of the city and stoned him to death.",
+        "VAT_ES": "En seguida llegaron dos malvados que se le sentaron enfrente y atestiguaron contra él diciendo: «Nabot ha maldecido a Dios y al rey». Entonces lo sacaron fuera de la ciudad y lo mataron a pedradas.",
+        "CEI": "Vennero due uomini iniqui, che si sedettero di fronte a lui. Costoro accusarono Nabot davanti al popolo affermando: \"Nabot ha maledetto Dio e il re\". Lo condussero fuori della città e lo uccisero lapidandolo."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַֽ/יִּשְׁלְח֖וּ אֶל אִיזֶ֣בֶל לֵ/אמֹ֑ר סֻקַּ֥ל נָב֖וֹת וַ/יָּמֹֽת׃",
+        "LXX": "καὶ εἶπεν Ἀχαάβ Ἐν τίνι; καὶ εἶπεν Τάδε λέγει Κύριος Ἐν τοῖς παιδαρίοις τῶν ἀρχόντων τῶν χορῶν. καὶ εἶπεν Ἀχαάβ Τίς συνάψει τὸν πόλεμον; καὶ εἶπεν Σύ.",
+        "VUL": "Miseruntque ad Jezabel, dicentes : Lapidatus est Naboth, et mortuus est.",
+        "SYN": "И послали к Иезавели сказать: Навуфей побит камнями и умер.",
+        "NEO": "Et ils envoyèrent dire à Jézabel : « Naboth a été lapidé, et il est mort. »",
+        "NAB": "Then they sent the information to Jezebel that Naboth had been stoned to death.",
+        "VAT_ES": "Y mandaron decir a Jezabel: «Nabot fue apedreado y murió».",
+        "CEI": "Quindi mandarono a dire a Gezabele: \"Nabot è stato lapidato ed è morto\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ כִּ/שְׁמֹ֣עַ אִיזֶ֔בֶל כִּֽי סֻקַּ֥ל נָב֖וֹת וַ/יָּמֹ֑ת וַ/תֹּ֨אמֶר אִיזֶ֜בֶל אֶל אַחְאָ֗ב ק֣וּם רֵ֞שׁ אֶת כֶּ֣רֶם נָב֣וֹת הַ/יִּזְרְעֵאלִ֗י אֲשֶׁ֤ר מֵאֵן֙ לָ/תֶת לְ/ךָ֣ בְ/כֶ֔סֶף כִּ֣י אֵ֥ין נָב֛וֹת חַ֖י כִּי מֵֽת׃",
+        "LXX": "καὶ ἐπεσκέψατο Ἀχαὰβ τοὺς ἄρχοντας, τὰ παιδάρια τῶν χορῶν, καὶ ἐγένετο διακόσια καὶ τριάκοντα· καὶ μετὰ ταῦτα ἐπεσκέψατο τὸν λαόν, πᾶν υἱὸν δυνάμεως, ἑξήκοντα.",
+        "VUL": "Factum est autem, cum audisset Jezabel lapidatum Naboth et mortuum, locuta est ad Achab : Surge, et posside vineam Naboth Jezrahelitæ, qui noluit tibi acquiescere, et dare eam accepta pecunia : non enim vivit Naboth, sed mortuus est.",
+        "SYN": "Услышав, что Навуфей побит камнями и умер, Иезавель сказала Ахаву: встань, возьми во владение виноградник Навуфея Изреелитянина, который не хотел отдать тебе за серебро; ибо Навуфея нет в живых, он умер.",
+        "NEO": "Lorsque Jézabel eut appris que Naboth avait été lapidé et qu’il était mort, elle dit à Achab : « Lève-toi, prends possession de la vigne de Naboth de Jezrahel, qui a refusé de te la céder pour de l’argent ; car Naboth n’est plus en vie, car il est mort. »",
+        "NAB": "When Jezebel learned that Naboth had been stoned to death, she said to Ahab, \"Go on, take possession of the vineyard of Naboth the Jezreelite which he refused to sell you, because Naboth is not alive, but dead.\"",
+        "VAT_ES": "Cuando Jezabel se enteró de que Nabot había sido matado a pedradas, dijo a Ajab: «Ya puedes tomar posesión de la viña de Nabot, esa que él se negaba a venderte, porque Nabot ya no vive: está muerto».",
+        "CEI": "Appena sentì che Nabot era stato lapidato e che era morto, disse ad Acab: \"Su, impadronisciti della vigna di Nabot di Izreèl, il quale ha rifiutato di vendertela, perché Nabot non vive più, è morto\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֛י כִּ/שְׁמֹ֥עַ אַחְאָ֖ב כִּ֣י מֵ֣ת נָב֑וֹת וַ/יָּ֣קָם אַחְאָ֗ב לָ/רֶ֛דֶת אֶל כֶּ֛רֶם נָב֥וֹת הַ/יִּזְרְעֵאלִ֖י לְ/רִשְׁתּֽ/וֹ׃",
+        "LXX": "καὶ ἐξῆλθεν μεσημβρίας· καὶ υἱὸς Ἁδὲρ πίνων μεθύων ἐν Σοκχὼθ αὐτὸς καὶ οἱ βασιλεῖς, τριάκοντα καὶ δύο, βασιλεῖς συνβοηθοὶ μετ’ αὐτοῦ.",
+        "VUL": "Quod cum audisset Achab, mortuum videlicet Naboth, surrexit, et descendebat in vineam Naboth Jezrahelitæ, ut possideret eam.",
+        "SYN": "Когда услышал Ахав, что Навуфей [Изреелитянин] был убит, [разодрал одежды свои и надел на себя вретище, а потом] встал Ахав, чтобы пойти в виноградник Навуфея Изреелитянина и взять его во владение.",
+        "NEO": "Lorsqu’Achab eut appris que Naboth était mort, il se leva pour descendre à la vigne de Naboth de Jezrahel, afin d’en prendre possession.",
+        "NAB": "On hearing that Naboth was dead, Ahab started off on his way down to the vineyard of Naboth the Jezreelite, to take possession of it.",
+        "VAT_ES": "Apenas oyó Ajab que Nabot estaba muerto, bajó a la viña de Nabot, el izreelita, para tomar posesión de ella.",
+        "CEI": "Quando sentì che Nabot era morto, Acab si mosse per scendere nella vigna di Nabot di Izreèl a prenderla in possesso."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֙ דְּבַר יְהוָ֔ה אֶל אֵלִיָּ֥הוּ הַ/תִּשְׁבִּ֖י לֵ/אמֹֽר׃",
+        "LXX": "καὶ ἐξῆλθον ἄρχοντες παιδάρια τῶν χορῶν ἐν πρώτοις· καὶ ἀποστέλλουσιν καὶ ἀπαγγέλλουσιν τῷ βασιλεῖ Συρίας λέγοντες Ἄνδρες ἐξεληλύθασιν ἐκ Σαμαρείας.",
+        "VUL": "Factus est igitur sermo Domini ad Eliam Thesbiten, dicens :",
+        "SYN": "И было слово Господне к Илии Фесвитянину:",
+        "NEO": "Alors la parole de \\+w Yahweh|strong=\"H3068\"\\+w** fut adressée à Elie, le Thesbite, en ces termes :",
+        "NAB": "But the LORD said to Elijah the Tishbite:",
+        "VAT_ES": "Entonces la palabra del Señor llegó a Elías, el tisbita, en estos términos:",
+        "CEI": "Allora il Signore disse a Elia il Tisbita:"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "ק֣וּם רֵ֗ד לִ/קְרַ֛את אַחְאָ֥ב מֶֽלֶךְ יִשְׂרָאֵ֖ל אֲשֶׁ֣ר בְּ/שֹׁמְר֑וֹן הִנֵּה֙ בְּ/כֶ֣רֶם נָב֔וֹת אֲשֶׁר יָ֥רַד שָׁ֖ם לְ/רִשְׁתּֽ/וֹ׃",
+        "LXX": "εἰπεῖν αὐτοῖς, εἰς εἰρήνην, οὐ γὰρ ἐκπορεύονται, συλλαβεῖν αὐτοὺς ζῶντας· καὶ εἰς πόλεμον, ζῶντας συλλαβεῖν αὐτούς·",
+        "VUL": "Surge, et descende in occursum Achab regis Israël, qui est in Samaria : ecce ad vineam Naboth descendit, ut possideat eam.",
+        "SYN": "встань, пойди навстречу Ахаву, царю Израильскому, который в Самарии, вот, он теперь в винограднике Навуфея, куда пришел, чтобы взять _его_ во владение;",
+        "NEO": "« Lève-toi, descends au devant d’Achab, roi d’Israël, qui règne à Samarie ; le voilà dans la vigne de Naboth, où il est descendu pour en prendre possession.",
+        "NAB": "\"Start down to meet Ahab, king of Israel, who rules in Samaria. He will be in the vineyard of Naboth, of which he has come to take possession.",
+        "VAT_ES": "«Baja al encuentro de Ajab, rey de Israel en Samaría. Ahora está en la viña de Nabot: ha bajado allí para tomar posesión de ella.",
+        "CEI": "\"Su, recati da Acab, re di Israele, che abita in Samaria; ecco è nella vigna di Nabot, ove è sceso a prenderla in possesso."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/דִבַּרְתָּ֨ אֵלָ֜י/ו לֵ/אמֹ֗ר כֹּ֚ה אָמַ֣ר יְהוָ֔ה הֲ/רָצַ֖חְתָּ וְ/גַם יָרָ֑שְׁתָּ וְ/דִבַּרְתָּ֨ אֵלָ֜י/ו לֵ/אמֹ֗ר כֹּ֚ה אָמַ֣ר יְהוָ֔ה בִּ/מְק֗וֹם אֲשֶׁ֨ר לָקְק֤וּ הַ/כְּלָבִים֙ אֶת דַּ֣ם נָב֔וֹת יָלֹ֧קּוּ הַ/כְּלָבִ֛ים אֶת דָּמְ/ךָ֖ גַּם אָֽתָּה׃",
+        "LXX": "καὶ μὴ ἐξελθάτωσαν ἐκ τῆς πόλεως ἄρχοντα τὰ παιδάρια, ἄρχοντα τῶν χορῶν, καὶ ἡ δύναμις ὀπίσω αὐτῶν.",
+        "VUL": "Et loqueris ad eum, dicens : Hæc dicit Dominus : Occidisti, insuper et possedisti. Et post hæc addes : Hæc dicit Dominus : In loco hoc, in quo linxerunt canes sanguinem Naboth, lambent quoque sanguinem tuum.",
+        "SYN": "и скажи ему: \"так говорит Господь: ты убил, и еще вступаешь в наследство?\" и скажи ему: \"так говорит Господь: на том месте, где псы лизали кровь Навуфея, псы будут лизать и твою кровь\".",
+        "NEO": "Tu lui parleras en ces termes : Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : “N’as-tu pas tué et pris un héritage ?” Et tu lui parleras en ces termes : “Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : Au lieu même où les chiens ont léché le sang de Naboth, les chiens lécheront aussi ton propre sang.” »",
+        "NAB": "This is what you shall tell him, 'The LORD says: After murdering, do you also take possession? For this, the LORD says: In the place where the dogs licked up the blood of Naboth, the dogs shall lick up your blood, too.'\"",
+        "VAT_ES": "Tú le dirás: Así habla el Señor: &iexcl;Has cometido un homicidio, y encima te apropias de lo ajeno! Por eso, así habla el Señor: En el mismo sitio donde los perros lamieron la sangre de Nabot, allí lamerán tu sangre».",
+        "CEI": "Gli riferirai: Così dice il Signore: Hai assassinato e ora usurpi! Per questo dice il Signore: Nel punto ove lambirono il sangue di Nabot, i cani lambiranno anche il tuo sangue\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אַחְאָב֙ אֶל אֵ֣לִיָּ֔הוּ הַֽ/מְצָאתַ֖/נִי אֹיְבִ֑/י וַ/יֹּ֣אמֶר מָצָ֔אתִי יַ֚עַן הִתְמַכֶּרְ/ךָ֔ לַ/עֲשׂ֥וֹת הָ/רַ֖ע בְּ/עֵינֵ֥י יְהוָֽה׃",
+        "LXX": "ἐπάταξεν ἕκαστος τὸν παρ’ αὐτοῦ, καὶ ἐδευτέρωσεν ἕκαστος τὸν παρ’ αὐτοῦ, καὶ ἔφυγεν Συρία· καὶ κατεδίωξεν αὐτοὺς Ἰσραήλ, καὶ σώζεται υἱὸς Ἁδὲρ βασιλέως Συρίας ἐφ’ ἵππου ἱππέως.",
+        "VUL": "Et ait Achab ad Eliam : Num invenisti me inimicum tibi ? Qui dixit : Inveni, eo quod venundatus sis, ut faceres malum in conspectu Domini.",
+        "SYN": "И сказал Ахав Илии: нашел ты меня, враг мой! Он сказал: нашел, ибо ты предался тому, чтобы делать неугодное пред очами Господа [и раздражать Его].",
+        "NEO": "Achab dit à Elie : « M’as-tu trouvé, ô mon ennemi ? » Il répondit : « Je t’ai trouvé, parce que tu t’es vendu pour faire ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "\"Have you found me out, my enemy?\" Ahab said to Elijah. \"Yes,\" he answered. \"Because you have given yourself up to doing evil in the LORD'S sight,",
+        "VAT_ES": "Ajab respondió a Elías: «&iexcl;Me has sorprendido, enemigo mío!». «Sí, repuso Elías, te he sorprendido, porque te has prestado a hacer lo que es malo a los ojos de Señor.",
+        "CEI": "Acab disse a Elia: \"Mi hai dunque colto in fallo, o mio nemico!\". Quegli soggiunse: \"Sì, perché ti sei venduto per fare ciò che è male agli occhi del Signore."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "הִנְ/נִ֨י מבי מֵבִ֤יא אֵלֶ֨י/ךָ֙ רָעָ֔ה וּ/בִעַרְתִּ֖י אַחֲרֶ֑י/ךָ וְ/הִכְרַתִּ֤י לְ/אַחְאָב֙ מַשְׁתִּ֣ין בְּ/קִ֔יר וְ/עָצ֥וּר וְ/עָז֖וּב בְּ/יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐξῆλθεν βασιλεὺς Ἰσραὴλ καὶ ἔλαβεν πάντας τοὺς ἵππους καὶ τὰ ἅρματα, καὶ ἐπάταξεν πληγὴν μεγάλην ἐν Συρίᾳ.",
+        "VUL": "Ecce ego inducam super te malum, et demetam posteriora tua, et interficiam de Achab mingentem ad parietem, et clausum et ultimum in Israël.",
+        "SYN": "[Так говорит Господь:] вот, Я наведу на тебя беды и вымету за тобою и истреблю у Ахава мочащегося к стене и заключенного и оставшегося в Израиле.",
+        "NEO": "Voici que je ferai venir le malheur sur toi ; je te balaierai ; j’exterminerai tout mâle appartenant à Achab, celui qui est esclave et celui qui est libre en Israël,",
+        "NAB": "I am bringing evil upon you: I will destroy you and will cut off every male in Ahab's line, whether slave or freeman, in Israel.",
+        "VAT_ES": "Yo voy a atraer la desgracia sobre ti: barreré hasta tus últimos restos y extirparé a todos los varones de la familia de Ajab, esclavos o libres en Israel.",
+        "CEI": "Ecco ti farò piombare addosso una sciagura; ti spazzerò via. Sterminerò, nella casa di Acab, ogni maschio, schiavo o libero in Israele."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/נָתַתִּ֣י אֶת בֵּיתְ/ךָ֗ כְּ/בֵית֙ יָרָבְעָ֣ם בֶּן נְבָ֔ט וּ/כְ/בֵ֖ית בַּעְשָׁ֣א בֶן אֲחִיָּ֑ה אֶל הַ/כַּ֨עַס֙ אֲשֶׁ֣ר הִכְעַ֔סְתָּ וַֽ/תַּחֲטִ֖א אֶת יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ προσῆλθεν ὁ προφήτης πρὸς βασιλέα Ἰσραὴλ καὶ εἶπεν Κραταιοῦ καὶ γνῶθι καὶ ἴδε τί ποιήσεις, ὅτι ἐπιστρέφοντος τοῦ ἐνιαυτοῦ υἱὸς Ἁδὲρ βασιλεὺς Συρίας ἀναβαίνει ἐπὶ σέ.",
+        "VUL": "Et dabo domum tuam sicut domum Jeroboam filii Nabat, et sicut domum Baasa filii Ahia : quia egisti ut me ad iracundiam provocares, et peccare fecisti Israël.",
+        "SYN": "И поступлю с домом твоим так, как поступил Я с домом Иеровоама, сына Наватова, и с домом Ваасы, сына Ахиина, за оскорбление, которым ты раздражил _Меня_ и ввел Израиля в грех.",
+        "NEO": "et je rendrai ta maison semblable à la maison de Jéroboam, fils de Nabat, et à la maison de Baasa, fils d’Ahias, parce que tu m’as provoqué à la colère et que tu as fait pécher Israël. »",
+        "NAB": "I will make your house like that of Jeroboam, son of Nebat, and like that of Baasha, son of Ahijah, because of how you have provoked me by leading Israel into sin.\"",
+        "VAT_ES": "Dejaré tu casa como la de Jeroboam, hijo de Nebat, y como la de Basá, hijo de Ajías, porque has provocado mi indignación y has hecho pecar a Israel.",
+        "CEI": "Renderò la tua casa come la casa di Geroboamo, figlio di Nebàt, e come la casa di Baasa, figlio di Achia, perché tu mi hai irritato e hai fatto peccare Israele."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/גַ֨ם לְ/אִיזֶ֔בֶל דִּבֶּ֥ר יְהוָ֖ה לֵ/אמֹ֑ר הַ/כְּלָבִ֛ים יֹאכְל֥וּ אֶת אִיזֶ֖בֶל בְּ/חֵ֥ל יִזְרְעֶֽאל׃",
+        "LXX": "Καὶ οἱ παῖδες βασιλέως Συρίας καὶ εἶπον Θεὸς ὀρέων θεὸς Ἰσραὴλ καὶ οὐ θεὸς κοιλάδος, διὰ τοῦτο ἐκραταίωσεν ὑπὲρ ἡμᾶς· ἐὰν δὲ πολεμήσομεν αὐτοὺς κατ’ εὐθύ, εἰ μὴ κραταιώσομεν ὑπὲρ αὐτούς.",
+        "VUL": "Sed et de Jezabel locutus est Dominus, dicens : Canes comedent Jezabel in agro Jezrahel.",
+        "SYN": "Также и о Иезавели сказал Господь: псы съедят Иезавель за стеною Изрееля.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla aussi contre Jézabel en ces termes : « Les chiens mangeront Jézabel près du fossé de Jezrahel.",
+        "NAB": "(Against Jezebel, too, the LORD declared, \"The dogs shall devour Jezebel in the district of Jezreel.\")",
+        "VAT_ES": "Y el Señor también ha hablado contra Jezabel, diciendo: Los perros devorarán la carne de Jezabel en la parcela de Izreel.",
+        "CEI": "Riguardo poi a Gezabele il Signore dice: I cani divoreranno Gezabele nel campo di Izreèl."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "הַ/מֵּ֤ת לְ/אַחְאָב֙ בָּ/עִ֔יר יֹאכְל֖וּ הַ/כְּלָבִ֑ים וְ/הַ/מֵּת֙ בַּ/שָּׂדֶ֔ה יֹאכְל֖וּ ע֥וֹף הַ/שָּׁמָֽיִם׃",
+        "LXX": "καὶ τὸ ῥῆμα τοῦτο ποίησον· ἀπόστησον τοὺς βασιλεῖς ἕκαστον εἰς τὸν τόπον αὐτῶν καὶ θοῦ ἀντ’ αὐτῶν σατράπας,",
+        "VUL": "Si mortuus fuerit Achab in civitate, comedent eum canes : si autem mortuus fuerit in agro, comedent eum volucres cæli.",
+        "SYN": "Кто умрет у Ахава в городе, того съедят псы, а кто умрет на поле, того расклюют птицы небесные;",
+        "NEO": "Celui de la maison d’Achab qui mourra dans la ville sera mangé par les chiens, et celui qui mourra dans les champs sera mangé par les oiseaux du ciel. »",
+        "NAB": "\"When one of Ahab's line dies in the city, dogs will devour him; when one of them dies in the field, the birds of the sky will devour him.\"",
+        "VAT_ES": "Al de la familia de Ajab que muera en la ciudad, se lo comerán los perros, y al que muera en despoblado, se lo comerán los pájaros del cielo».",
+        "CEI": "Quanti della famiglia di Acab moriranno in città li divoreranno i cani; quanti moriranno in campagna li divoreranno gli uccelli dell'aria\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "רַ֚ק לֹֽא הָיָ֣ה כְ/אַחְאָ֔ב אֲשֶׁ֣ר הִתְמַכֵּ֔ר לַ/עֲשׂ֥וֹת הָ/רַ֖ע בְּ/עֵינֵ֣י יְהוָ֑ה אֲשֶׁר הֵסַ֥תָּה אֹת֖/וֹ אִיזֶ֥בֶל אִשְׁתּֽ/וֹ׃",
+        "LXX": "καὶ ἀλλάξομέν σοι δύναμιν κατὰ τὴν δύναμιν τὴν πεσοῦσαν καὶ ἵππον κατὰ τὸν ἵππον καὶ ἅρματα κατὰ τὰ ἅρματα, καὶ πολεμήσομεν πρὸς αὐτοὺς κατ’ εὐθύ, καὶ κραταιώσομεν ὑπὲρ αὐτούς. καὶ ἤκουσεν τῆς φωνῆς αὐτοῦ, καὶ ἐποίησεν οὕτως.",
+        "VUL": "Igitur non fuit alter talis sicut Achab, qui venundatus est ut faceret malum in conspectu Domini : concitavit enim eum Jezabel uxor sua,",
+        "SYN": "не было еще такого, как Ахав, который предался бы тому, чтобы делать неугодное пред очами Господа, к чему подущала его жена его Иезавель;",
+        "NEO": "Il n’y a eu vraiment personne qui se soit vendu comme Achab pour faire ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w** ; parce que Jézabel, sa femme, l’excitait.",
+        "NAB": "Indeed, no one gave himself up to the doing of evil in the sight of the LORD as did Ahab, urged on by his wife Jezebel.",
+        "VAT_ES": "No hubo realmente nadie que se haya prestado como Ajab para hacer lo que es malo a los ojos del Señor, instigado por su esposa Jezabel.",
+        "CEI": "In realtà nessuno si è mai venduto a fare il male agli occhi del Signore come Acab, istigato dalla propria moglie Gezabele."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יַּתְעֵ֣ב מְאֹ֔ד לָ/לֶ֖כֶת אַחֲרֵ֣י הַ/גִּלֻּלִ֑ים כְּ/כֹל֙ אֲשֶׁ֣ר עָשׂ֣וּ הָ/אֱמֹרִ֔י אֲשֶׁר֙ הוֹרִ֣ישׁ יְהוָ֔ה מִ/פְּנֵ֖י בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐγένετο ἐπιστρέψαντος τοῦ ἐνιαυτοῦ καὶ ἐπεσκέψατο υἱὸς Ἁδὲρ τὴν Συρίαν, καὶ ἀνέβη εἰς Ἀφέκα εἰς πόλεμον ἐπὶ Ἰσραήλ.",
+        "VUL": "et abominabilis factus est, in tantum ut sequeretur idola quæ fecerant Amorrhæi, quos consumpsit Dominus a facie filiorum Israël.",
+        "SYN": "он поступал весьма гнусно, последуя идолам, как делали Аморреи, которых Господь прогнал от лица сынов Израилевых.",
+        "NEO": "Il s’est conduit de la manière la plus abominable, en allant après les idoles, selon tout ce que faisaient les Amorrhéens que \\+w Yahweh|strong=\"H3068\"\\+w** chassa devant les enfants d’Israël.",
+        "NAB": "He became completely abominable by following idols, just as the Amorites had done, whom the LORD drove out before the Israelites.",
+        "VAT_ES": "El cometió las peores abominaciones, yendo detrás de los ídolos, como lo habían hecho los amorreos que el Señor había desposeído delante de los israelitas.",
+        "CEI": "Commise molti abomini, seguendo gli idoli, come avevano fatto gli Amorrèi, che il Signore aveva distrutto davanti ai figli d'Israele."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֩ כִ/שְׁמֹ֨עַ אַחְאָ֜ב אֶת הַ/דְּבָרִ֤ים הָ/אֵ֨לֶּה֙ וַ/יִּקְרַ֣ע בְּגָדָ֔י/ו וַ/יָּֽשֶׂם שַׂ֥ק עַל בְּשָׂר֖/וֹ וַ/יָּצ֑וֹם וַ/יִּשְׁכַּ֣ב בַּ/שָּׂ֔ק וַ/יְהַלֵּ֖ךְ אַֽט׃",
+        "LXX": "καὶ οἱ υἱοὶ Ἰσραὴλ ἐπεσκέπησαν, καὶ παρεγένοντο εἰς ἀπαντὴν αὐτῷ· καὶ παρενέβαλεν Ἰσραὴλ ἐξ ἐναντίας αὐτῶν ὡσεὶ δύο ποίμνια αἰγῶν, καὶ Συρία ἔπλησεν τὴν γῆν.",
+        "VUL": "Itaque cum audisset Achab sermones istos, scidit vestimenta sua, et operuit cilicio carnem suam, jejunavitque et dormivit in sacco, et ambulavit demisso capite.",
+        "SYN": "Выслушав все слова сии, Ахав [умилился пред Господом, ходил и плакал,] разодрал одежды свои, и возложил на тело свое вретище, и постился, и спал во вретище, и ходил печально.",
+        "NEO": "Lorsqu’Achab eut entendu les paroles d’Elie, il déchira ses vêtements et, ayant mis un sac sur son corps, il jeûna ; il couchait avec le sac et il marchait avec lenteur.",
+        "NAB": "When Ahab heard these words, he tore his garments and put on sackcloth over his bare flesh. He fasted, slept in the sackcloth, and went about subdued.",
+        "VAT_ES": "Cuando Ajab oyó aquellas palabras, rasgó sus vestiduras, se puso un sayal sobre su carne, y ayunó. Se acostaba con el sayal y andaba taciturno.",
+        "CEI": "Quando sentì tali parole, Acab si strappò le vesti, indossò un sacco sulla carne e digiunò; si coricava con il sacco e camminava a testa bassa."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִי֙ דְּבַר יְהוָ֔ה אֶל אֵלִיָּ֥הוּ הַ/תִּשְׁבִּ֖י לֵ/אמֹֽר׃",
+        "LXX": "καὶ προσῆλθεν ὁ ἄνθρωπος τοῦ θεοῦ καὶ εἶπεν τῷ βασιλεῖ Ἰσραήλ Τάδε λέγει Κύριος Ἀνθ’ ὧν εἶπεν Συρία Θεὸς ὀρέων Κύριος ὁ θεὸς Ἰσραήλ, καὶ οὐ θεὸς κοιλάδων αὐτός· καὶ δώσω τὴν δύναμιν τὴν μεγάλην ταύτην εἰς χεῖρα σήν, καὶ γνώσῃ ὅτι ἐγὼ Κύριος·",
+        "VUL": "Et factus est sermo Domini ad Eliam Thesbiten, dicens :",
+        "SYN": "И было слово Господне к Илии Фесвитянину [об Ахаве], и сказал Господь:",
+        "NEO": "Et la parole de \\+w Yahweh|strong=\"H3068\"\\+w** fut adressée à Elie le Thesbite, en ces termes :",
+        "NAB": "Then the LORD said to Elijah the Tishbite,",
+        "VAT_ES": "Entonces la palabra del Señor llegó a Elías, el tisbita, en estos términos:",
+        "CEI": "Il Signore disse a Elia, il Tisbita:"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "הֲֽ/רָאִ֔יתָ כִּֽי נִכְנַ֥ע אַחְאָ֖ב מִ/לְּ/פָנָ֑/י יַ֜עַן כִּֽי נִכְנַ֣ע מִ/פָּנַ֗/י לֹֽא אבי אָבִ֤יא הָֽ/רָעָה֙ בְּ/יָמָ֔י/ו בִּ/ימֵ֣י בְנ֔/וֹ אָבִ֥יא הָ/רָעָ֖ה עַל בֵּיתֽ/וֹ׃",
+        "LXX": "καὶ παρεμβαλοῦσιν οὗτοι ἀπέναντι τούτων ἑπτὰ ἡμέρας. καὶ ἐγένετο ἐν τῇ ἡμέρᾳ τῇ ἑβδόμῃ καὶ προσήγαγεν ὁ πόλεμος, καὶ ἐπάταξεν Ἰσραὴλ τὴν Συρίαν ἑκατὸν χιλιάδας πεζῶν μιᾷ ἡμέρᾳ.",
+        "VUL": "Nonne vidisti humiliatum Achab coram me ? quia igitur humiliatus est mei causa, non inducam malum in diebus ejus, sed in diebus filii sui inferam malum domui ejus.",
+        "SYN": "видишь, как смирился предо Мною Ахав? За то, что он смирился предо Мною, Я не наведу бед в его дни; во дни сына его наведу беды на дом его.",
+        "NEO": "« As-tu vu comment Achab s’est humilié devant moi ? Parce qu’il s’est humilié devant moi, je ne ferai pas venir le malheur pendant sa vie ; ce sera pendant la vie de son fils que je ferai venir le malheur sur sa maison. »",
+        "NAB": "\"Have you seen that Ahab has humbled himself before me? Since he has humbled himself before me, I will not bring the evil in his time. I will bring the evil upon his house during the reign of his son.\"",
+        "VAT_ES": "«&iquest;Has visto cómo Ajab se ha humillado delante de mí, no atraeré la desgracia mientras él viva, sino que la haré venir sobre su casa en tiempos de su hijo».",
+        "CEI": "\"Hai visto come Acab si è umiliato davanti a me? Poiché si è umiliato davanti a me, non farò piombare la sciagura durante la sua vita, ma la farò scendere sulla sua casa durante la vita del figlio\"."
+      }
+    }
+  }
+}

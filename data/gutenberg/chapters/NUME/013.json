@@ -1,0 +1,609 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_013",
+  "book_key": "NUME",
+  "sequence": 13,
+  "chapter_in": {
+    "MT": 13,
+    "VUL": 13,
+    "LXX": 13
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "καὶ μετὰ ταῦτα ἐξῆρεν ὁ λαὸς ἐξ Ἁσηρώθ, καὶ παρενέβαλον ἐν τῇ ἐρήμῳ Φαράν.",
+        "VUL": "Profectusque est populus de Haseroth, fixis tentoriis in deserto Pharan.",
+        "SYN": "После сего народ двинулся из Асирофа, и остановился в пустыне Фаран.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse a Mosè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "שְׁלַח לְ/ךָ֣ אֲנָשִׁ֗ים וְ/יָתֻ֨רוּ֙ אֶת אֶ֣רֶץ כְּנַ֔עַן אֲשֶׁר אֲנִ֥י נֹתֵ֖ן לִ/בְנֵ֣י יִשְׂרָאֵ֑ל אִ֣ישׁ אֶחָד֩ אִ֨ישׁ אֶחָ֜ד לְ/מַטֵּ֤ה אֲבֹתָי/ו֙ תִּשְׁלָ֔חוּ כֹּ֖ל נָשִׂ֥יא בָ/הֶֽם׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρός Μωυσῆν λέγων",
+        "VUL": "Ibique locutus est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "« Envoie des hommes pour explorer le pays de Canaan, que je donne aux enfants d’Israël. Vous enverrez un homme par chacune des tribus patriarcales ; que tous soient des princes parmi eux. »",
+        "NAB": "\"Send men to reconnoiter the land of Canaan, which I am giving to the Israelites. You shall send one man from each ancestral tribe, all of them princes.\"",
+        "VAT_ES": "«Envía unos hombres a explorar el país de Canaán, que yo doy a los israelitas; enviarás a un hombre por cada una de sus tribus paternas, todos ellos jefes de tribu».",
+        "CEI": "\"Manda uomini a esplorare il paese di Cànaan che sto per dare agli Israeliti. Mandate un uomo per ogni tribù dei loro padri; siano tutti dei loro capi\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֨ח אֹתָ֥/ם מֹשֶׁ֛ה מִ/מִּדְבַּ֥ר פָּארָ֖ן עַל פִּ֣י יְהוָ֑ה כֻּלָּ֣/ם אֲנָשִׁ֔ים רָאשֵׁ֥י בְנֵֽי יִשְׂרָאֵ֖ל הֵֽמָּה׃",
+        "LXX": "Ἀπόστειλον σεαυτῷ ἄνδρας, καὶ κατασκεψάσθωσαν τὴν γῆν τῶν Χαναναίων, ἣν ἐγὼ δίδωμι τοῖς υἱοῖς Ἰσραὴλ εἰς κατάσχεσιν· ἄνδρα ἕνα κατὰ φυλήν, κατὰ δήμους πατριῶν αὐτῶν ἀποστείλας αὐτούς, πάντα ἀρχηγὸν ἐξ αὐτῶν.",
+        "VUL": "Mitte viros, qui considerent terram Chanaan, quam daturus sum filiis Israël, singulos de singulis tribubus, ex principibus.",
+        "SYN": "пошли от себя людей, чтобы они высмотрели землю Ханаанскую, которую Я даю сынам Израилевым; по одному человеку от колена отцов их пошлите, главных из них.",
+        "NEO": "Moïse les envoya du désert de Pharan, selon l’ordre de \\+w Yahweh|strong=\"H3068\"\\+w** ; tous ces hommes étaient des chefs des enfants d’Israël.",
+        "NAB": "So Moses dispatched them from the desert of Paran, as the LORD had ordered. All of them were leaders among the Israelites;",
+        "VAT_ES": "Entonces Moisés los envió desde el desierto de Parán, según la orden del Señor. Todos estos hombres eran jefes de los israelitas,",
+        "CEI": "Mosè li mandò dal deserto di Paran, secondo il comando del Signore; quegli uomini erano tutti capi degli Israeliti."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/אֵ֖לֶּה שְׁמוֹתָ֑/ם לְ/מַטֵּ֣ה רְאוּבֵ֔ן שַׁמּ֖וּעַ בֶּן זַכּֽוּר׃",
+        "LXX": "καὶ ἐξαπέστειλεν αὐτοὺς Μωυσῆς ἐκ τῆς ἐρήμου Φαρὰν διὰ φωνῆς Κυρίου· πάντες ἄνδρες ἀρχηγοὶ υἱῶν Ἰσραὴλ οὗτοι.",
+        "VUL": "Fecit Moyses quod Dominus imperaverat, de deserto Pharan mittens principes viros, quorum ista sunt nomina.",
+        "SYN": "И послал их Моисей из пустыни Фаран, по повелению Господню, и все они мужи главные у сынов Израилевых.",
+        "NEO": "Voici leurs noms : pour la tribu de Ruben, Sammua, fils de Zéchur ;",
+        "NAB": "by name they were: Shammua, son of Zaccur, of the tribe of Reuben;",
+        "VAT_ES": "y sus nombres eran los siguientes: Por la tribu de Rubén, Samuá, hijo de Zacur;",
+        "CEI": "Questi erano i loro nomi: per la tribù di Ruben, Sammua figlio di Zaccur;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לְ/מַטֵּ֣ה שִׁמְע֔וֹן שָׁפָ֖ט בֶּן חוֹרִֽי׃",
+        "LXX": "καὶ ταῦτα τὰ ὀνόματα αὐτῶν· τῆς φυλῆς Ῥουβήν, Σαμουὴλ υἱὸς Ζάκχυρ.",
+        "VUL": "De tribu Ruben, Sammua filium Zechur.",
+        "SYN": "Вот имена их: из колена Рувимова Саммуа, сын Закхуров,",
+        "NEO": "pour la tribu de Siméon, Saphat, fils de Huri ;",
+        "NAB": "Shaphat, son of Hori, of the tribe of Simeon;",
+        "VAT_ES": "por la tribu de Simeón, Safat, hijo de Jorí,",
+        "CEI": "per la tribù di Simeone, Safat figlio di Cori;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "לְ/מַטֵּ֣ה יְהוּדָ֔ה כָּלֵ֖ב בֶּן יְפֻנֶּֽה׃",
+        "LXX": "τῆς φυλῆς Συμεών, Σαφὰτ υἱὸς Σουρεί·",
+        "VUL": "De tribu Simeon, Saphat filium Huri.",
+        "SYN": "из колена Симеонова Сафат, сын Хориев,",
+        "NEO": "pour la tribu de Juda, Caleb, fils de Jéphoné ;",
+        "NAB": "Caleb, son of Jephunneh, of the tribe of Judah;",
+        "VAT_ES": "por la tribu de Judá, Caleb, hijo de Iefuné;",
+        "CEI": "per la tribù di Giuda, Caleb figlio di Iefunne;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "לְ/מַטֵּ֣ה יִשָּׂשכָ֔ר יִגְאָ֖ל בֶּן יוֹסֵֽף׃",
+        "LXX": "τῆς φυλῆς Ἰούδα, Χαλὲβ υἱὸς Ἰεφοννή·",
+        "VUL": "De tribu Juda, Caleb filium Jephone.",
+        "SYN": "из колена Иудина Халев, сын Иефонниин,",
+        "NEO": "pour la tribu d’Issachar, Igal, fils de Joseph ;",
+        "NAB": "Igal (son of Joseph), of the tribe of Issachar;",
+        "VAT_ES": "por la tribu de Isacar, Igal, hijo de José;",
+        "CEI": "per la tribù di Issacar, Igheal figlio di Giuseppe; per la tribù di Efraim,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "לְ/מַטֵּ֥ה אֶפְרָ֖יִם הוֹשֵׁ֥עַ בִּן נֽוּן׃",
+        "LXX": "τῆς φυλῆς Ἰσσαχάρ, Ἰλαὰλ υἱὸς Ἰωσήφ·",
+        "VUL": "De tribu Issachar, Igal filium Joseph.",
+        "SYN": "из колена Иссахарова Игал, сын Иосифов,",
+        "NEO": "pour la tribu d’Ephraïm, Osée, fils de Nun ;",
+        "NAB": "Hoshea, son of Nun, of the tribe of Ephraim;",
+        "VAT_ES": "por la tribu de Efraím, Oseas, hijo de Nun;",
+        "CEI": "Osea figlio di Nun;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לְ/מַטֵּ֣ה בִנְיָמִ֔ן פַּלְטִ֖י בֶּן רָפֽוּא׃",
+        "LXX": "τῆς φυλῆς Ἐφράιμ, Αὑσὴ υἱὸς Ναυή·",
+        "VUL": "De tribu Ephraim, Osee filium Nun.",
+        "SYN": "из колена Ефремова Осия, сын Навин,",
+        "NEO": "pour la tribu de Benjamin, Phalti, fils de Raphu ;",
+        "NAB": "Palti, son of Raphu, of the tribe of Benjamin;",
+        "VAT_ES": "por la tribu de Benjamín, Paltí, hijo de Rafú;",
+        "CEI": "per la tribù di Beniamino, Palti figlio di Rafu;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "לְ/מַטֵּ֣ה זְבוּלֻ֔ן גַּדִּיאֵ֖ל בֶּן סוֹדִֽי׃",
+        "LXX": "τῆς φυλῆς Βενιαμείν, Φαλτεὶ υἱὸς Ῥαφού·",
+        "VUL": "De tribu Benjamin, Phalti filium Raphu.",
+        "SYN": "из колена Вениаминова Фалтий, сын Рафуев,",
+        "NEO": "pour la tribu de Zabulon, Geddiel, fils de Sodi ;",
+        "NAB": "Gaddiel, son of Sodi, of the tribe of Zebulun;",
+        "VAT_ES": "por la tribu de Zabulón, Gadiel, hijo de Sodí;",
+        "CEI": "per la tribù di Zàbulon, Gaddiel figlio di Sodi;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "לְ/מַטֵּ֥ה יוֹסֵ֖ף לְ/מַטֵּ֣ה מְנַשֶּׁ֑ה גַּדִּ֖י בֶּן סוּסִֽי׃",
+        "LXX": "τῆς φυλῆς Ζαβουλών, Γουδιὴλ υἱὸς Σουδεί·",
+        "VUL": "De tribu Zabulon, Geddiel filium Sodi.",
+        "SYN": "из колена Завулонова Гаддиил, сын Содиев,",
+        "NEO": "pour la tribu de Joseph, la tribu de Manassé, Gaddi, fils de Susi ;",
+        "NAB": "Gaddi, son of Susi, of the tribe of Manasseh, for the Josephites, with",
+        "VAT_ES": "por la tribu de José, o sea, por la tribu de Manasés, Gadí, hijo de Susí;",
+        "CEI": "per la tribù di Giuseppe, cioè per la tribù di Manàsse, Gaddi figlio di Susi;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "לְ/מַטֵּ֣ה דָ֔ן עַמִּיאֵ֖ל בֶּן גְּמַלִּֽי׃",
+        "LXX": "τῆς φυλῆς Ἰωσὴφ τῶν υἱῶν Μανασσή, Γαδδεὶ υἱὸς Σουσεί·",
+        "VUL": "De tribu Joseph, sceptri Manasse, Gaddi filium Susi.",
+        "SYN": "из колена Иосифова от Манассии Гаддий, сын Сусиев,",
+        "NEO": "pour la tribu de Dan, Ammiel, fils de Gemalli ;",
+        "NAB": "Ammiel, son of Gemalli, of the tribe of Dan;",
+        "VAT_ES": "por la tribu de Dan, Amiel, hijo de Guemalí;",
+        "CEI": "per la tribù di Dan, Ammiel figlio di Ghemalli;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "לְ/מַטֵּ֣ה אָשֵׁ֔ר סְת֖וּר בֶּן מִיכָאֵֽל׃",
+        "LXX": "τῆς φυλῆς Δάν, Ἀμειὴλ υἱὸς Γαμαί·",
+        "VUL": "De tribu Dan, Ammiel filium Gemalli.",
+        "SYN": "из колена Данова Аммиил, сын Гемаллиев,",
+        "NEO": "pour la tribu d’Aser, Sthur, fils de Michaël ;",
+        "NAB": "Sethur, son of Michael, of the tribe of Asher;",
+        "VAT_ES": "por la tribu de Aser, Setur, hijo de Miguel;",
+        "CEI": "per la tribù di Aser, Setur figlio di Michele;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לְ/מַטֵּ֣ה נַפְתָּלִ֔י נַחְבִּ֖י בֶּן וָפְסִֽי׃",
+        "LXX": "τῆς φυλῆς Ἀσήρ, Σαθοὺρ υἱὸς Μειχαήλ·",
+        "VUL": "De tribu Aser, Sthur filium Michaël.",
+        "SYN": "из колена Асирова Сефур, сын Михаилев,",
+        "NEO": "pour la tribu de Nephthali, Nahabi, fils de Vapsi ;",
+        "NAB": "Nahbi, son of Vophsi, of the tribe of Naphtali;",
+        "VAT_ES": "por la tribu de Neftalí, Najbí, hijo de Vofsí;",
+        "CEI": "per la tribù di Nèftali, Nacbi figlio di Vofsi;"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "לְ/מַטֵּ֣ה גָ֔ד גְּאוּאֵ֖ל בֶּן מָכִֽי׃",
+        "LXX": "τῆς φυλῆς Νεφθαλεί, Ναβεὶ υἱὸς Ἰαβεί·",
+        "VUL": "De tribu Nephthali, Nahabi filium Vapsi.",
+        "SYN": "из колена Неффалимова Нахбий, сын Вофсиев,",
+        "NEO": "pour la tribu de Gad, Guel, fils de Machi. —",
+        "NAB": "Geuel, son of Machi, of the tribe of Gad.",
+        "VAT_ES": "por la tribu de Gad, Gueuel, hijo de Maquí.",
+        "CEI": "per la tribù di Gad, Gheuel figlio di Machi."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אֵ֚לֶּה שְׁמ֣וֹת הָֽ/אֲנָשִׁ֔ים אֲשֶׁר שָׁלַ֥ח מֹשֶׁ֖ה לָ/ת֣וּר אֶת הָ/אָ֑רֶץ וַ/יִּקְרָ֥א מֹשֶׁ֛ה לְ/הוֹשֵׁ֥עַ בִּן נ֖וּן יְהוֹשֻֽׁעַ׃",
+        "LXX": "τῆς φυλῆς Γάδ, Γουδιὴλ υἱὸς Μακχί.",
+        "VUL": "De tribu Gad, Guel filium Machi.",
+        "SYN": "из колена Гадова Геуил, сын Махиев.",
+        "NEO": "Tels sont les noms des hommes que Moïse envoya pour explorer le pays. Moïse donna à Osée, fils de Nun, le nom de Josué.",
+        "NAB": "These are the names of the men whom Moses sent out to reconnoiter the land. But Hoshea, son of Nun, Moses called Joshua.",
+        "VAT_ES": "Estos son los nombres de las personas que envió Moisés a explorar el país. Y a Oseas, hijo de Nun, Moisés lo llamó Josué.",
+        "CEI": "Questi sono i nomi degli uomini che Mosè mandò a esplorare il paese. Mosè diede ad Osea, figlio di Nun, il nome di Giosuè."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח אֹתָ/ם֙ מֹשֶׁ֔ה לָ/ת֖וּר אֶת אֶ֣רֶץ כְּנָ֑עַן וַ/יֹּ֣אמֶר אֲלֵ/הֶ֗ם עֲל֥וּ זֶה֙ בַּ/נֶּ֔גֶב וַ/עֲלִיתֶ֖ם אֶת הָ/הָֽר׃",
+        "LXX": "ταῦτα τὰ ὀνόματα τῶν ἀνδρῶν οὓς ἀπέστειλεν Μωυσῆς κατασκέψασθαι τὴν γῆν. καὶ ἐπωνόμασεν Μωυσῆς τὸν Αὑσὴ υἱὸν Ναυὴ Ἰησοῦν.",
+        "VUL": "Hæc sunt nomina virorum, quos misit Moyses ad considerandam terram : vocavitque Osee filium Nun, Josue.",
+        "SYN": "Вот имена мужей, которых посылал Моисей высмотреть землю. И назвал Моисей Осию, сына Навина, Иисусом.",
+        "NEO": "Moïse les envoya pour explorer le pays de Canaan ; il leur dit : « Montez là par le Négeb ; et vous monterez sur la montagne.",
+        "NAB": "In sending them to reconnoiter the land of Canaan, Moses said to them, \"Go up here in the Negeb, up into the highlands,",
+        "VAT_ES": "Cuando Moisés los envió a explorar el territorio de Canaán, les dijo: «Suban ahí, por el Négueb, y luego avancen hasta la región montañosa.",
+        "CEI": "Mosè dunque li mandò a esplorare il paese di Cànaan e disse loro: \"Salite attraverso il Negheb; poi salirete alla regione montana"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וּ/רְאִיתֶ֥ם אֶת הָ/אָ֖רֶץ מַה הִ֑וא וְ/אֶת הָ/עָם֙ הַ/יֹּשֵׁ֣ב עָלֶ֔י/הָ הֶ/חָזָ֥ק הוּא֙ הֲ/רָפֶ֔ה הַ/מְעַ֥ט ה֖וּא אִם רָֽב׃",
+        "LXX": "καὶ ἀπέστειλεν αὐτοὺς Μωυσῆς κατασκέψασθαι τὴν γῆν Χανάαν καὶ εἶπεν πρὸς αὐτούς Ἀνάβητε ταύτῃ τῇ ἐρήμῳ, καὶ ἀναβήσεσθε εἰς τὸ ὄρος·",
+        "VUL": "Misit ergo eos Moyses ad considerandam terram Chanaan, et dixit ad eos : Ascendite per meridianam plagam. Cumque veneritis ad montes,",
+        "SYN": "И послал их Моисей [из пустыни Фаран] высмотреть землю Ханаанскую и сказал им: пойдите в эту южную страну, и взойдите на гору,",
+        "NEO": "Vous examinerez le pays, ce qu’il est, et le peuple qui l’habite, s’il est fort ou faible, peu nombreux ou considérable ;",
+        "NAB": "and see what kind of land it is. Are the people living there strong or weak, few or many?",
+        "VAT_ES": "Observen cómo es el país, y la gente que lo ocupa es fuerte o débil, escasa o numerosa.",
+        "CEI": "e osserverete che paese sia, che popolo l'abiti, se forte o debole, se poco o molto numeroso;"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וּ/מָ֣ה הָ/אָ֗רֶץ אֲשֶׁר הוּא֙ יֹשֵׁ֣ב בָּ֔/הּ הֲ/טוֹבָ֥ה הִ֖וא אִם רָעָ֑ה וּ/מָ֣ה הֶֽ/עָרִ֗ים אֲשֶׁר הוּא֙ יוֹשֵׁ֣ב בָּ/הֵ֔נָּה הַ/בְּ/מַֽחֲנִ֖ים אִ֥ם בְּ/מִבְצָרִֽים׃",
+        "LXX": "καὶ ὄψεσθε τὴν γῆν τίς ἐστιν, καὶ τὸν λαὸν τὸν ἐνκαθήμενον ἐπ’ αὐτῆς, εἰ ἰσχυρότερός ἐστιν ἢ ἀσθενής, ἢ ὀλίγοι εἰσὶν ἢ πολλοί·",
+        "VUL": "considerate terram, qualis sit : et populum qui habitator est ejus, utrum fortis sit an infirmus : si pauci numero an plures :",
+        "SYN": "и осмотрите землю, какова она, и народ живущий на ней, силен ли он или слаб, малочислен ли он или многочислен?",
+        "NEO": "ce qu’est le pays où il habite, s’il est bon ou mauvais ; ce que sont les villes où il habite, si elles sont ouvertes ou fortifiées ;",
+        "NAB": "Is the country in which they live good or bad? Are the towns in which they dwell open or fortified?",
+        "VAT_ES": "Fíjense también si la tierra donde viven es buena o mala, y si las ciudades en que habitan son abiertas o fortificadas;",
+        "CEI": "come sia la regione che esso abita, se buona o cattiva, e come siano le città dove abita, se siano accampamenti o luoghi fortificati;"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וּ/מָ֣ה הָ֠/אָרֶץ הַ/שְּׁמֵנָ֨ה הִ֜וא אִם רָזָ֗ה הֲ/יֵֽשׁ בָּ֥/הּ עֵץ֙ אִם אַ֔יִן וְ/הִ֨תְחַזַּקְתֶּ֔ם וּ/לְקַחְתֶּ֖ם מִ/פְּרִ֣י הָ/אָ֑רֶץ וְ/הַ֨/יָּמִ֔ים יְמֵ֖י בִּכּוּרֵ֥י עֲנָבִֽים׃",
+        "LXX": "καὶ τίς ἡ γῆ εἰς ἣν οὗτοι ἐνκάθηνται ἐπ’ αὐτῆς, ἢ καλή ἐστιν ἢ πονηρά· καὶ τίνες αἱ πόλεις εἰς ἃς οὗτοι κατοικοῦσιν ἐν αὐταῖς, ἢ ἐν τειχήρεσιν ἢ ἐν ἀτειχίσταις·",
+        "VUL": "ipsa terra, bona an mala : urbes quales, muratæ an absque muris :",
+        "SYN": "и какова земля, на которой он живет, хороша ли она или худа? и каковы города, в которых он живет, в шатрах ли он живет или в укреплениях?",
+        "NEO": "ce qu’est le sol, s’il est gras ou maigre, s’il y a des arbres ou non. Ayez bon courage, et prenez des fruits du pays. » C’était le temps des premiers raisins.",
+        "NAB": "Is the soil fertile or barren, wooded or clear? And do your best to get some of the fruit of the land.\" It was then the season for early grapes.",
+        "VAT_ES": "si el suelo es fértil o árido, y si está arbolado o no. Tengan valor, y traigan algunos frutos de la región». Esto sucedió en el tiempo de las primeras uvas.",
+        "CEI": "come sia il terreno, se fertile o sterile, se vi siano alberi o no. Siate coraggiosi e portate frutti del paese\". Era il tempo in cui cominciava a maturare l'uva."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַֽ/יַּעֲל֖וּ וַ/יָּתֻ֣רוּ אֶת הָ/אָ֑רֶץ מִ/מִּדְבַּר צִ֥ן עַד רְחֹ֖ב לְבֹ֥א חֲמָֽת׃",
+        "LXX": "καὶ τίς ἡ γῆ, ἢ πίων ἢ παρειμένη, ἢ ἔστιν ἐν αὐτῇ δένδρα ἢ οὔ. καὶ προσκαρτερήσαντες λήμψεσθε ἀπὸ τῶν καρπῶν τῆς γῆς. καὶ αἱ ἡμέραι ἡμέραι ἔαρος, πρόδρομοι σταφυλῆς.",
+        "VUL": "humus, pinguis an sterilis, nemorosa an absque arboribus. Confortamini, et afferte nobis de fructibus terræ. Erat autem tempus quando jam præcoquæ uvæ vesci possunt.",
+        "SYN": "и какова земля, тучна ли она или тоща? есть ли на _ней_ дерева или нет? будьте смелы, и возьмите от плодов земли. Было же это ко времени созревания винограда.",
+        "NEO": "Ils montèrent et explorèrent le pays, depuis le désert de Sin jusqu’à Rohob, sur le chemin d’Emath.",
+        "NAB": "So they went up and reconnoitered the land from the desert of Zin as far as where Rehob adjoins Labo of Hamath.",
+        "VAT_ES": "Los hombres fueron a explorar el país, desde el desierto de Sin hasta Rejob, a la Entrada de Jamat.",
+        "CEI": "Quelli dunque salirono ed esplorarono il paese dal deserto di Sin, fino a Recob, in direzione di Amat."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲל֣וּ בַ/נֶּגֶב֮ וַ/יָּבֹ֣א עַד חֶבְרוֹן֒ וְ/שָׁ֤ם אֲחִימַן֙ שֵׁשַׁ֣י וְ/תַלְמַ֔י יְלִידֵ֖י הָ/עֲנָ֑ק וְ/חֶבְר֗וֹן שֶׁ֤בַע שָׁנִים֙ נִבְנְתָ֔ה לִ/פְנֵ֖י צֹ֥עַן מִצְרָֽיִם׃",
+        "LXX": "καὶ ἀναβάντες κατεσκέψαντο τὴν γῆν ἀπὸ τῆς ἐρήμου Σεὶν ἕως Ῥαάβ, εἰσπορευομένων Ἑφαάθ.",
+        "VUL": "Cumque ascendissent, exploraverunt terram a deserto Sin, usque Rohob intrantibus Emath.",
+        "SYN": "Они пошли и высмотрели землю от пустыни Син даже до Рехова, близ Емафа;",
+        "NEO": "Ils montèrent dans le Négeb et allèrent jusqu’à Hébron, où étaient Achiman, Sisaï et Tholmaï, enfants d’Enac. Hébron avait été bâtie sept ans avant Tanis d’Égypte.",
+        "NAB": "Going up by way of the Negeb, they reached Hebron, where Ahiman, Sheshai and Talmai, descendants of the Anakim, were living. (Hebron had been built seven years before Zoan in Egypt.)",
+        "VAT_ES": "Subieron por el Negueb y llegaron a Hebrón, donde vivían Ajimán, Sesai y Talmai, descendientes de Anac –Hebrón había sido fundada siete años antes que Tanis de Egipto–.",
+        "CEI": "Salirono attraverso il Negheb e andarono fino a Ebron, dove erano Achiman, Sesai e Talmai, figli di Anak. Ora Ebron era stata edificata sette anni prima di Tanis in Egitto."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֜אוּ עַד נַ֣חַל אֶשְׁכֹּ֗ל וַ/יִּכְרְת֨וּ מִ/שָּׁ֤ם זְמוֹרָה֙ וְ/אֶשְׁכּ֤וֹל עֲנָבִים֙ אֶחָ֔ד וַ/יִּשָּׂאֻ֥/הוּ בַ/מּ֖וֹט בִּ/שְׁנָ֑יִם וּ/מִן הָ/רִמֹּנִ֖ים וּ/מִן הַ/תְּאֵנִֽים׃",
+        "LXX": "καὶ ἀνέβησαν κατὰ τὴν ἔρημον καὶ ἦλθον ἕως Χεβρών, καὶ ἐκεῖ Ἀχειμὰν καὶ Σεσσεὶ καὶ Θελαμείν, γενεαὶ Ἐνάχ· καὶ Χεβρὼν ἑπτὰ ἔτεσιν ᾠκοδομήθη πρὸ τοῦ Τάνιν Αἰγύπτου.",
+        "VUL": "Ascenderuntque ad meridiem, et venerunt in Hebron, ubi erant Achiman et Sisai et Tholmai filii Enac : nam Hebron septem annis ante Tanim urbem Ægypti condita est.",
+        "SYN": "и пошли в южную страну, и дошли до Хеврона, где жили Ахиман, Сесай и Фалмай, дети Енаковы: Хеврон же построен был семью годами прежде Цоана, [города] Египетского;",
+        "NEO": "Arrivés à la vallée d’Escol, ils coupèrent une branche de vigne avec sa grappe de raisin, et ils la portèrent à deux au moyen d’une perche ; ils prirent aussi des grenades et des figues.",
+        "NAB": "They also reached the Wadi Eshcol, where they cut down a branch with a single cluster of grapes on it, which two of them carried on a pole, as well as some pomegranates and figs.",
+        "VAT_ES": "Cuando llegaron al valle de Escol, cortaron una rama de vi con un racimo de uvas, y tuvieron que llevarla entre dos, sostenida con una vara. También recogieron granadas e higos.",
+        "CEI": "Giunsero fino alla valle di Escol, dove tagliarono un tralcio con un grappolo d'uva, che portarono in due con una stanga, e presero anche melagrane e fichi."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "לַ/מָּק֣וֹם הַ/ה֔וּא קָרָ֖א נַ֣חַל אֶשְׁכּ֑וֹל עַ֚ל אֹד֣וֹת הָֽ/אֶשְׁכּ֔וֹל אֲשֶׁר כָּרְת֥וּ מִ/שָּׁ֖ם בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἦλθον ἕως Φάραγγος βότρυος, καὶ κατεσκέψαντο αὐτήν· καὶ ἔκοψαν ἐκεῖθεν κλήματα καὶ βότρυν σταφυλῆς ἕνα ἐπ’ αὐτοῦ, καὶ ἦραν αὐτὸν ἐπ’ ἀναφορεῦσιν, καὶ ἀπὸ τῶν ῥοῶν καὶ ἀπὸ τῶν σικύων.",
+        "VUL": "Pergentesque usque ad Torrentem botri, absciderunt palmitem cum uva sua, quem portaverunt in vecte duo viri. De malis quoque granatis et de ficis loci illius tulerunt :",
+        "SYN": "и пришли к долине Есхол, [и осмотрели ее,] и срезали там виноградную ветвь с одною кистью ягод, и понесли ее на шесте двое; _взяли_ также гранатовых яблок и смокв;",
+        "NEO": "On donna à ce lieu le nom de vallée d’Escol, à cause de la grappe que les enfants d’Israël y coupèrent.",
+        "NAB": "It was because of the cluster the Israelites cut there that they called the place Wadi Eshcol.",
+        "VAT_ES": "Ese lugar fue llamado valle de Escol –que significa Racimo– a causa del racimo que los israelitas habían cortado allí.",
+        "CEI": "Quel luogo fu chiamato valle di Escol a causa del grappolo d'uva che gli Israeliti vi tagliarono."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יָּשֻׁ֖בוּ מִ/תּ֣וּר הָ/אָ֑רֶץ מִ/קֵּ֖ץ אַרְבָּעִ֥ים יֽוֹם׃",
+        "LXX": "τὸν τόπον ἐκεῖνον ἐπωνόμασαν Φάραγξ βότρυος, διὰ τὸν βότρυν ὃν ἔκοψαν ἐκεῖθεν οἱ υἱοὶ Ἰσραήλ.",
+        "VUL": "qui appellatus est Nehelescol, id est Torrens botri, eo quod botrum portassent inde filii Israël.",
+        "SYN": "место сие назвали долиною Есхол, по причине виноградной кисти, которую срезали там сыны Израилевы.",
+        "NEO": "Au bout de quarante jours, ils revinrent d’explorer le pays.",
+        "NAB": "After reconnoitering the land for forty days they returned,",
+        "VAT_ES": "Al cabo de cuarenta días volvieron de explorar el país.",
+        "CEI": "Alla fine di quaranta giorni tornarono dall'esplorazione del paese"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יֵּלְכ֡וּ וַ/יָּבֹאוּ֩ אֶל מֹשֶׁ֨ה וְ/אֶֽל אַהֲרֹ֜ן וְ/אֶל כָּל עֲדַ֧ת בְּנֵֽי יִשְׂרָאֵ֛ל אֶל מִדְבַּ֥ר פָּארָ֖ן קָדֵ֑שָׁ/ה וַ/יָּשִׁ֨יבוּ אוֹתָ֤/ם דָּבָר֙ וְ/אֶת כָּל הָ֣/עֵדָ֔ה וַ/יַּרְא֖וּ/ם אֶת פְּרִ֥י הָ/אָֽרֶץ׃",
+        "LXX": "Καὶ ἀπέστρεψαν ἐκεῖθεν κατασκεψάμενοι τὴν γῆν μετὰ τεσσεράκοντα ἡμέρας.",
+        "VUL": "Reversique exploratores terræ post quadraginta dies, omni regione circuita,",
+        "SYN": "И высмотрев землю, возвратились они через сорок дней.",
+        "NEO": "Ils allèrent et se rendirent auprès de Moïse et d’Aaron, et de toute l’assemblée des enfants d’Israël, à Cadès, dans le désert de Pharan. Ils leur firent un rapport, ainsi qu’à toute l’assemblée, et leur montrèrent les fruits du pays.",
+        "NAB": "met Moses and Aaron and the whole community of the Israelites in the desert of Paran at Kadesh, made a report to them all, and showed them the fruit of the country.",
+        "VAT_ES": "Entonces fueron a ver a Moisés, a Aarón y a toda la comunidad de los israelitas en Cades, en el desierto de Parán, y les presentaron su informe, al mismo tiempo que les mostraban los frutos del país.",
+        "CEI": "e andarono a trovare Mosè e Aronne e tutta la comunità degli Israeliti nel deserto di Paran, a Kades; riferirono ogni cosa a loro e a tutta la comunità e mostrarono loro i frutti del paese."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יְסַפְּרוּ ל/וֹ֙ וַ/יֹּ֣אמְר֔וּ בָּ֕אנוּ אֶל הָ/אָ֖רֶץ אֲשֶׁ֣ר שְׁלַחְתָּ֑/נוּ וְ֠/גַם זָבַ֨ת חָלָ֥ב וּ/דְבַ֛שׁ הִ֖וא וְ/זֶה פִּרְיָֽ/הּ׃",
+        "LXX": "καὶ πορευθέντες ἦλθον πρὸς Μωυσῆν καὶ Ἀαρὼν καὶ πρὸς πᾶσαν συναγωγὴν υἱῶν Ἰσραὴλ εἰς τὴν ἔρημον Φαρὰν Καδής· καὶ ἀπεκρίθησαν αὐτοῖς ῥῆμα καὶ πάσῃ συναγωγῇ, καὶ ἔδειξαν τὸν καρπὸν τῆς γῆς.",
+        "VUL": "venerunt ad Moysen et Aaron et ad omnem ctum filiorum Israël in desertum Pharan, quod est in Cades. Locutique eis et omni multitudini ostenderunt fructus terræ :",
+        "SYN": "И пошли и пришли к Моисею и Аарону и ко всему обществу сынов Израилевых в пустыню Фаран, в Кадес, и принесли им и всему обществу ответ, и показали им плоды земли;",
+        "NEO": "Voici le récit qu’ils firent à Moïse : « Nous sommes allés dans le pays où tu nous as envoyés. C’est vraiment un pays où coulent le lait et le miel, et en voici les fruits.",
+        "NAB": "They told Moses: \"We went into the land to which you sent us. It does indeed flow with milk and honey, and here is its fruit.",
+        "VAT_ES": "Les contaron lo siguiente: «Fuimos al país donde ustedes nos enviaron; es realmente un país que mana leche y miel, y estos son sus frutos.",
+        "CEI": "Raccontarono: \"Noi siamo arrivati nel paese dove tu ci avevi mandato ed è davvero un paese dove scorre latte e miele; ecco i suoi frutti."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "אֶ֚פֶס כִּֽי עַ֣ז הָ/עָ֔ם הַ/יֹּשֵׁ֖ב בָּ/אָ֑רֶץ וְ/הֶֽ/עָרִ֗ים בְּצֻר֤וֹת גְּדֹלֹת֙ מְאֹ֔ד וְ/גַם יְלִדֵ֥י הָֽ/עֲנָ֖ק רָאִ֥ינוּ שָֽׁם׃",
+        "LXX": "καὶ διηγήσαντο αὐτῷ καὶ εἶπαν Ἤλθαμεν εἰς τὴν γῆν ἣν ἀπέστειλας ἡμᾶς, γῆν ῥέουσαν γάλα καὶ μέλι, καὶ οὗτος ὁ καρπὸς αὐτῆς·",
+        "VUL": "et narraverunt, dicentes : Venimus in terram, ad quam misisti nos, quæ revera fluit lacte et melle, ut ex his fructibus cognosci potest :",
+        "SYN": "и рассказывали ему и говорили: мы ходили в землю, в которую ты посылал нас; в ней подлинно течет молоко и мед, и вот плоды ее;",
+        "NEO": "Mais le peuple qui habite le pays est puissant, et les villes sont fortifiées et très grandes ; nous y avons même vu des enfants d’Enac.",
+        "NAB": "However, the people who are living in the land are fierce, and the towns are fortified and very strong. Besides, we saw descendants of the Anakim there.",
+        "VAT_ES": "Pero, &iexcl;qué poderosa es la gente que ocupa el país! Sus ciudades están fortificadas y son muy grandes. Además, vimos allí a los anaquitas.",
+        "CEI": "Ma il popolo che abita il paese è potente, le città sono fortificate e immense e vi abbiamo anche visto i figli di Anak."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "עֲמָלֵ֥ק יוֹשֵׁ֖ב בְּ/אֶ֣רֶץ הַ/נֶּ֑גֶב וְ֠/הַֽ/חִתִּי וְ/הַ/יְבוּסִ֤י וְ/הָֽ/אֱמֹרִי֙ יוֹשֵׁ֣ב בָּ/הָ֔ר וְ/הַֽ/כְּנַעֲנִי֙ יֹשֵׁ֣ב עַל הַ/יָּ֔ם וְ/עַ֖ל יַ֥ד הַ/יַּרְדֵּֽן׃",
+        "LXX": "ἀλλ’ ἢ ὃτι θρασὺ τὸ ἒθνος τὸ κατοικοῦν ἐπ’ αὐτῆς, καὶ πόλεις ὀχυραὶ τετειχισμέναι καὶ μεγάλαι σφόδρα, καὶ τὴν γενεὰν Ἐνὰχ ἑωράκαμεν ἐκεῖ·",
+        "VUL": "sed cultores fortissimos habet, et urbes grandes atque muratas. Stirpem Enac vidimus ibi.",
+        "SYN": "но народ, живущий на земле той, силен, и города укрепленные, весьма большие, и сынов Енаковых мы видели там;",
+        "NEO": "Amalec habite la contrée du Négeb ; le Hittite, le Jébuséen et l’Amorrhéen habitent dans la montagne, et le Chananéen habite au bord de la mer et le long du Jourdain. »",
+        "NAB": "Amalekites live in the region of the Negeb; Hittites, Jebusites and Amorites dwell in the highlands, and Canaanites along the seacoast and the banks of the Jordan.\"",
+        "VAT_ES": "Los amalecitas habitan en la región del Négueb; los hititas, los jebuseos y los amorreos ocupan la región montañosa; y los cananeos viven junto al mar y a lo largo del Jordán».",
+        "CEI": "Gli Amaleciti abitano la regione del Negheb; gli Hittiti, i Gebusei e gli Amorrèi le montagne; i Cananei abitano presso il mare e lungo la riva del Giordano\"."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יַּ֧הַס כָּלֵ֛ב אֶת הָ/עָ֖ם אֶל מֹשֶׁ֑ה וַ/יֹּ֗אמֶר עָלֹ֤ה נַעֲלֶה֙ וְ/יָרַ֣שְׁנוּ אֹתָ֔/הּ כִּֽי יָכ֥וֹל נוּכַ֖ל לָֽ/הּ׃",
+        "LXX": "καὶ Ἀμαλὴκ κατοικεῖ ἐν τῇ γῇ τῇ πρὸς νότον, καὶ ὁ Χετταῖος καὶ ὁ Εὑαῖος καὶ ὁ Ἰεβουσαῖος καὶ ὁ Ἀμορραῖος κατοικεῖ ἐν τῇ ὀρεινῇ, καὶ ὁ Χαναναῖος κατοικεῖ παρὰ θάλασσαν.",
+        "VUL": "Amalec habitat in meridie, Hethæus et Jebusæus et Amorrhæus in montanis : Chananæus vero moratur juxta mare et circa fluenta Jordanis.",
+        "SYN": "Амалик живет на южной части земли, Хеттеи, [Евеи,] Иевусеи и Аморреи живут на горе, Хананеи же живут при море и на берегу Иордана.",
+        "NEO": "Caleb fit taire le peuple au sujet de Moïse : « Montons, dit-il, emparons-nous du pays, car nous pouvons nous en rendre maîtres. »",
+        "NAB": "Caleb, however, to quiet the people toward Moses, said, \"We ought to go up and seize the land, for we can certainly do so.\"",
+        "VAT_ES": "Caleb trató de animar al pueblo que estaba junto a Moisés, diciéndole: «Subamos en seguida y conquistemos el país, porque ciertamente podremos contra él».",
+        "CEI": "Caleb calmò il popolo che mormorava contro Mosè e disse: \"Andiamo presto e conquistiamo il paese, perché certo possiamo riuscirvi\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/הָ֨/אֲנָשִׁ֜ים אֲשֶׁר עָל֤וּ עִמּ/וֹ֙ אָֽמְר֔וּ לֹ֥א נוּכַ֖ל לַ/עֲל֣וֹת אֶל הָ/עָ֑ם כִּֽי חָזָ֥ק ה֖וּא מִמֶּֽ/נּוּ׃",
+        "LXX": "καὶ κατεσιώπησεν Χαλὲβ τὸν λαὸν πρὸς Μωυσῆν καὶ εἶπεν αὐτῷ Οὐχί, ἀλλὰ ἀναβάντες ἀναβησόμεθα καὶ κατακληρονομήσομεν αὐτήν, ὅτι δυνατοὶ δυνησόμεθα πρὸς αὐτούς.",
+        "VUL": "Inter hæc Caleb compescens murmur populi, qui oriebatur contra Moysen, ait : Ascendamus, et possideamus terram, quoniam poterimus obtinere eam.",
+        "SYN": "Но Халев успокаивал народ пред Моисеем, говоря: пойдем и завладеем ею, потому что мы можем одолеть ее.",
+        "NEO": "Mais les hommes qui y étaient montés avec lui, dirent : « Nous ne sommes pas capables de monter contre ce peuple : il est plus fort que nous. »",
+        "NAB": "But the men who had gone up with him said, \"We cannot attack these people; they are too strong for us.\"",
+        "VAT_ES": "Pero los hombres que habían subido con él replicaron: «No podemos atacar a esa gente, porque es más fuerte que nosotros».",
+        "CEI": "Ma gli uomini che vi erano andati con lui dissero: \"Noi non saremo capaci di andare contro questo popolo, perché è più forte di noi\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יּוֹצִ֜יאוּ דִּבַּ֤ת הָ/אָ֨רֶץ֙ אֲשֶׁ֣ר תָּר֣וּ אֹתָ֔/הּ אֶל בְּנֵ֥י יִשְׂרָאֵ֖ל לֵ/אמֹ֑ר הָ/אָ֡רֶץ אֲשֶׁר֩ עָבַ֨רְנוּ בָ֜/הּ לָ/ת֣וּר אֹתָ֗/הּ אֶ֣רֶץ אֹכֶ֤לֶת יוֹשְׁבֶ֨י/הָ֙ הִ֔וא וְ/כָל הָ/עָ֛ם אֲשֶׁר רָאִ֥ינוּ בְ/תוֹכָ֖/הּ אַנְשֵׁ֥י מִדּֽוֹת׃",
+        "LXX": "καὶ οἱ ἄνθρωποι οἱ συναναβάντες μετ’ αὐτοῦ εἶπαν Οὐκ ἀναβαίνομεν, ὅτι οὐ μὴ δυνώμεθα ἀναβῆναι πρὸς τὸ ἔθνος· ὅτι ἰσχυρότερόν ἐστιν ἡμῶν μᾶλλον.",
+        "VUL": "Alii vero, qui fuerant cum eo, dicebant : Nequaquam ad hunc populum valemus ascendere, quia fortior nobis est.",
+        "SYN": "А те, которые ходили с ним, говорили: не можем мы идти против народа сего, ибо он сильнее нас.",
+        "NEO": "Et ils décrièrent devant les enfants d’Israël le pays qu’ils avaient exploré, en disant : « Le pays que nous avons parcouru pour l’explorer, est un pays qui dévore ses habitants ; tout le peuple que nous y avons vu est formé de gens de haute taille ;",
+        "NAB": "So they spread discouraging reports among the Israelites about the land they had scouted, saying, \"The land that we explored is a country that consumes its inhabitants. And all the people we saw there are huge men,",
+        "VAT_ES": "Y divulgaron entre los israelitas falsos rumores acerca del país que habían explorado, diciendo: «La tierra que recorrimos y exploramos devora a sus propios habitantes. Toda la gente que vimos allí es muy alta.",
+        "CEI": "Screditarono presso gli Israeliti il paese che avevano esplorato, dicendo: \"Il paese che abbiamo attraversato per esplorarlo è un paese che divora i suoi abitanti; tutta la gente che vi abbiamo notata è gente di alta statura;"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וְ/שָׁ֣ם רָאִ֗ינוּ אֶת הַ/נְּפִילִ֛ים בְּנֵ֥י עֲנָ֖ק מִן הַ/נְּפִלִ֑ים וַ/נְּהִ֤י בְ/עֵינֵ֨י/נוּ֙ כַּֽ/חֲגָבִ֔ים וְ/כֵ֥ן הָיִ֖ינוּ בְּ/עֵינֵי/הֶֽם׃",
+        "LXX": "καὶ ἐξήνεγκαν ἔκστασιν ἐπὶ τῆς γῆς ἣν κατεσκέψαντο αὐτὴν πρὸς τοὺς υἱοὺς Ἰσραὴλ λέγοντες Τὴν γῆν ἣν παρήλθομεν αὐτὴν κατασκέψασθαι, γῆ κατέσθουσα τοὺς κατοικοῦντας ἐπ’ αὐτῆς ἐστίν· πᾶς ὁ λαὸς ὃν ἑωράκαμεν ἐν αὐτῇ ἄνδρες ὑπερμήκεις ἐκεῖ·",
+        "VUL": "Detraxeruntque terræ, quam inspexerant, apud filios Israël, dicentes : Terra, quam lustravimus, devorat habitatores suos : populus, quem aspeximus, proceræ staturæ est.",
+        "SYN": "И распускали худую молву о земле, которую они осматривали, между сынами Израилевыми, говоря: земля, которую проходили мы для осмотра, есть земля, поедающая живущих на ней, и весь народ, который видели мы среди ее, люди великорослые;",
+        "NEO": "et nous y avons vu les géants, fils d’Enac, de la race des géants : nous étions à nos yeux et aux leurs comme des sauterelles. »",
+        "NAB": "veritable giants (the Anakim were a race of giants); we felt like mere grasshoppers, and so we must have seemed to them.\"",
+        "VAT_ES": "Vimos a los gigantes –los anaquitas son raza de gigantes–. Nosotros nos sentíamos como langostas delante de ellos, y esa es la impresión que debimos darles».",
+        "CEI": "vi abbiamo visto i giganti, figli di Anak, della razza dei giganti, di fronte ai quali ci sembrava di essere come locuste e così dovevamo sembrare a loro\"."
+      }
+    }
+  }
+}

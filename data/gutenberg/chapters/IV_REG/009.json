@@ -1,0 +1,681 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IV_REG_009",
+  "book_key": "IV_REG",
+  "sequence": 9,
+  "chapter_in": {
+    "MT": 9,
+    "VUL": 9,
+    "LXX": 9
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וֶ/אֱלִישָׁע֙ הַ/נָּבִ֔יא קָרָ֕א לְ/אַחַ֖ד מִ/בְּנֵ֣י הַ/נְּבִיאִ֑ים וַ/יֹּ֨אמֶר ל֜/וֹ חֲגֹ֣ר מָתְנֶ֗י/ךָ וְ֠/קַח פַּ֣ךְ הַ/שֶּׁ֤מֶן הַ/זֶּה֙ בְּ/יָדֶ֔/ךָ וְ/לֵ֖ךְ רָמֹ֥ת גִּלְעָֽד׃",
+        "LXX": "Καὶ Ἐλεισαῖε ὁ προφήτης ἐκάλεσεν ἕνα τῶν υἱῶν τῶν προφητῶν καὶ εἶπεν αὐτῷ Ζῶσαι τὴν ὀσφύν σου, καὶ λάβε τὸν φακὸν τοῦ ἐλαίου τούτου ἐν τῇ χειρί σου, καὶ δεῦρο εἰς Ῥεμμὼθ Γαλαάδ.",
+        "VUL": "Eliseus autem prophetes vocavit unum de filiis prophetarum, et ait illi : Accinge lumbos tuos, et tolle lenticulam olei hanc in manu tua, et vade in Ramoth Galaad.",
+        "SYN": "Елисей пророк призвал одного из сынов пророческих и сказал ему: опояшь чресла твои, и возьми сей сосуд с елеем в руку твою, и пойди в Рамоф Галаадский.",
+        "NEO": "Elisée, le prophète, appela un des fils des prophètes et lui dit : « Ceins tes reins, prends en ta main cette fiole d’huile et va à Ramoth-en-Galaad.",
+        "NAB": "The prophet Elisha called one of the guild prophets and said to him: \"Gird your loins, take this flask of oil with you, and go to Ramoth-gilead.",
+        "VAT_ES": "El profeta Eliseo llamó a uno de la comunidad de profetas y le dijo: «Ajústate el cinturón, toma contigo este frasco de aceite y ve a Ramot de Galaad.",
+        "CEI": "Il profeta Eliseo chiamò uno dei figli dei profeti e gli disse: \"Cingiti i fianchi, prendi in mano questo vasetto d'olio e và in Ramot di Gàlaad."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וּ/בָ֖אתָ שָׁ֑מָּ/ה וּ/רְאֵֽה שָׁ֠ם יֵה֨וּא בֶן יְהוֹשָׁפָ֜ט בֶּן נִמְשִׁ֗י וּ/בָ֨אתָ֙ וַ/הֲקֵֽמֹת/וֹ֙ מִ/תּ֣וֹך אֶחָ֔י/ו וְ/הֵבֵיאתָ֥ אֹת֖/וֹ חֶ֥דֶר בְּ/חָֽדֶר׃",
+        "LXX": "καὶ εἰσελεύσῃ ἐκεῖ, καὶ ὄψῃ ἐκει υἱὸν Ἰωσαφὰθ Εἰοὺ υἱοῦ Ναμεσσεί, καὶ εἰσελεύσῃ καὶ ἀναστήσεις αὐτὸν ἐκ μέσου τῶν ἀδελφῶν αὐτοῦ, καὶ εἰσάξεις αὐτὸν εἰς τὸ ταμεῖον ἐν ταμείῳ.",
+        "VUL": "Cumque veneris illuc, videbis Jehu filium Josaphat filii Namsi : et ingressus suscitabis eum de medio fratrum suorum, et introduces in interius cubiculum.",
+        "SYN": "Придя туда, отыщи там Ииуя, сына Иосафата, сына Намессиева, и подойди, и вели выступить ему из среды братьев своих, и введи его во внутреннюю комнату;",
+        "NEO": "Quand tu y seras arrivé, regarde après Jéhu, fils de Josaphat, fils de Namsi ; et, l’ayant abordé, tu le feras lever du milieu de ses frères, et tu le conduiras dans une chambre retirée.",
+        "NAB": "When you get there, look for Jehu, son of Jehoshaphat, son of Nimshi. Enter and take him away from his companions into an inner chamber.",
+        "VAT_ES": "Cro 22.7-9",
+        "CEI": "Appena giunto, cerca Ieu figlio di Giòsafat, figlio di Nimsi. Entrato in casa, lo farai alzare dal gruppo dei suoi compagni e lo condurrai in una camera interna."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/לָקַחְתָּ֤ פַךְ הַ/שֶּׁ֨מֶן֙ וְ/יָצַקְתָּ֣ עַל רֹאשׁ֔/וֹ וְ/אָֽמַרְתָּ֙ כֹּֽה אָמַ֣ר יְהוָ֔ה מְשַׁחְתִּ֥י/ךָֽ לְ/מֶ֖לֶךְ אֶל יִשְׂרָאֵ֑ל וּ/פָתַחְתָּ֥ הַ/דֶּ֛לֶת וְ/נַ֖סְתָּה וְ/לֹ֥א תְחַכֶּֽה׃",
+        "LXX": "καὶ λήμψῃ τὸν φακὸν τοῦ ἐλαίου καὶ ἐπιχεεῖς ἐπὶ τὴν κεφαλὴν αὐτοῦ, καὶ εἰπόν Τάδε λέγει Κύριος Κέχρικά σε εἰς βασιλέα ἐπὶ Ἰσραήλ· καὶ ἀνοίξεις τὴν θύραν, καὶ φεύξῃ καὶ οὐ μενεῖς.",
+        "VUL": "Tenensque lenticulam olei, fundes super caput ejus, et dices : Hæc dicit Dominus : Unxi te regem super Israël. Aperiesque ostium, et fugies, et non ibi subsistes.",
+        "SYN": "и возьми сосуд с елеем, и вылей на голову его, и скажи: \"так говорит Господь: помазую тебя в царя над Израилем\". Потом отвори дверь, и беги, и не жди.",
+        "NEO": "Tu prendras la fiole d’huile, tu la répandras sur sa tête et tu diras : Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : Je t’oins roi d’Israël. Puis tu ouvriras la porte et tu t’enfuiras sans tarder. »",
+        "NAB": "From the flask you have, pour oil on his head, and say, 'Thus says the LORD: I anoint you king over Israel.' Then open the door and flee without delay.\"",
+        "VAT_ES": "Toma entonces el frasco de aceite, derrámalo sobre su cabeza y di: Así habla el Señor: Yo te he ungido rey de Israel. Después, abre la puerta y escapa sin detenerte».",
+        "CEI": "Prenderai il vasetto dell'olio e lo verserai sulla sua testa, dicendo: Dice il Signore: Ti ungo re su Israele. Poi aprirai la porta e fuggirai senza indugio\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֧לֶךְ הַ/נַּ֛עַר הַ/נַּ֥עַר הַ/נָּבִ֖יא רָמֹ֥ת גִּלְעָֽד׃",
+        "LXX": "καὶ ἐπορεύθη ὁ προφήτης τὸ παιδάριον εἰς Ῥεμμὰθ Γαλαάδ.",
+        "VUL": "Abiit ergo adolescens puer prophetæ in Ramoth Galaad,",
+        "SYN": "И пошел отрок, слуга пророка, в Рамоф Галаадский,",
+        "NEO": "Le jeune homme, serviteur du prophète, partit pour Ramoth-en-Galaad.",
+        "NAB": "The young man (the guild prophet) went to Ramoth-gilead.",
+        "VAT_ES": "El joven profeta partió en seguida para Ramot de Galaad.",
+        "CEI": "Il giovane andò a Ramot di Gàlaad."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֗א וְ/הִנֵּ֨ה שָׂרֵ֤י הַ/חַ֨יִל֙ יֹֽשְׁבִ֔ים וַ/יֹּ֕אמֶר דָּבָ֥ר לִ֛/י אֵלֶ֖י/ךָ הַ/שָּׂ֑ר וַ/יֹּ֤אמֶר יֵהוּא֙ אֶל מִ֣י מִ/כֻּלָּ֔/נוּ וַ/יֹּ֖אמֶר אֵלֶ֥י/ךָ הַ/שָּֽׂר׃",
+        "LXX": "καὶ εἰσῆλθεν καὶ ἰδοὺ οἱ ἄρχοντες τῆς δυνάμεως ἐκάθηντο, καὶ εἶπεν Λόγος μοι πρὸς σέ, ὁ ἄρχων· καὶ εἶπεν Εἰού Πρὸς τίνα ἐκ πάντων ἡμῶν; καὶ εἶπεν Πρὸς σέ, ὁ ἄρχων.",
+        "VUL": "et ingressus est illuc : ecce autem principes exercitus sedebant : et ait : Verbum mihi ad te, o princeps. Dixitque Jehu : Ad quem ex omnibus nobis ? At ille dixit : Ad te, o princeps.",
+        "SYN": "и пришел, и вот сидят военачальники. И сказал: у меня слово до тебя, военачальник. И сказал Ииуй: до кого из всех нас? И сказал он: до тебя, военачальник.",
+        "NEO": "Lorsqu’il arriva, voici que les chefs de l’armée étaient assis. Il dit : « Chef, j’ai un mot à te dire. » Et Jéhu dit : « Auquel de nous tous ? » Il répondit : « A toi, chef. »",
+        "NAB": "When he arrived, the commanders of the army were in session. \"I have a message for you, commander,\" he said. \"For which one of us?\" asked Jehu. \"For you, commander,\" he answered.",
+        "VAT_ES": "Al llegar, encontró a los jefes del ejército que estaban reunidos, y dijo: «Tengo un mensaje para ti, jefe». «&iquest;Para quién de nosotros?», preguntó Jehú. El respondió: «Para ti, jefe».",
+        "CEI": "Appena giunto, trovò i capi dell'esercito seduti insieme. Egli disse: \"Ho un messaggio per te, o capo\". Ieu disse: \"Per chi fra tutti noi?\". Ed egli rispose: \"Per te, o capo\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יָּ֨קָם֙ וַ/יָּבֹ֣א הַ/בַּ֔יְתָ/ה וַ/יִּצֹ֥ק הַ/שֶּׁ֖מֶן אֶל רֹאשׁ֑/וֹ וַ/יֹּ֣אמֶר ל֗/וֹ כֹּֽה אָמַ֤ר יְהוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל מְשַׁחְתִּ֧י/ךָֽ לְ/מֶ֛לֶךְ אֶל עַ֥ם יְהוָ֖ה אֶל יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἀνέστη καὶ εἰσῆλθεν εἰς τὸν οἶκον, καὶ ἐπέχεεν τὸ ἔλαιον ἐπὶ τὴν κεφαλὴν αὐτοῦ καὶ εἶπεν αὐτῷ Τάδε λέγει Κύριος ὁ θεὸς Ἰσραήλ Κέχρικά σε εἰς βασιλέα ἐπὶ λαὸν Κυρίου, ἐπὶ τὸν Ἰσραήλ.",
+        "VUL": "Et surrexit, et ingressus est cubiculum : at ille fudit oleum super caput ejus, et ait : Hæc dicit Dominus Deus Israël : Unxi te regem super populum Domini Israël,",
+        "SYN": "И встал он, и вошел в дом. И _отрок_ вылил елей на голову его, и сказал ему: так говорит Господь Бог Израилев: \"помазую тебя в царя над народом Господним, над Израилем,",
+        "NEO": "Jéhu se leva et entra dans la maison ; et le jeune homme répandit l’huile sur sa tête, en lui disant : « Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu d’Israël : Je t’oins roi du peuple de \\+w Yahweh|strong=\"H3068\"\\+w**, d’Israël.",
+        "NAB": "Jehu got up and went into the house. Then the young man poured the oil on his head and said, \"Thus says the LORD, the God of Israel: 'I anoint you king over the people of the LORD, over Israel.",
+        "VAT_ES": "Jehú se levantó y entró en la casa. Entonces el joven derramó el aceite sobre su cabeza y le dijo: «Así habla el Señor, el Dios de Israel: Yo te he ungido rey del pueblo del Señor, de Israel.",
+        "CEI": "Ieu si alzò ed entrò in una camera; quegli gli versò l'olio sulla testa dicendogli: \"Dice il Signore, Dio di Israele: Ti ungo re sul popolo del Signore, su Israele."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הִ֨כִּיתָ֔ה אֶת בֵּ֥ית אַחְאָ֖ב אֲדֹנֶ֑י/ךָ וְ/נִקַּמְתִּ֞י דְּמֵ֣י עֲבָדַ֣/י הַ/נְּבִיאִ֗ים וּ/דְמֵ֛י כָּל עַבְדֵ֥י יְהוָ֖ה מִ/יַּ֥ד אִיזָֽבֶל׃",
+        "LXX": "καὶ ἐξολεθρεύσεις τὸν οἶκον Ἀχαὰβ τοῦ κυρίου σου ἐκ προσώπου σου, καὶ ἐκδικὴσεις τὰ αἵματα τῶν δούλων μου τῶν προφητῶν καὶ τὰ αἵματα πάντων τῶν δούλων Κυρίου ἐκ χειρὸς Ἰεζάβελ",
+        "VUL": "et percuties domum Achab domini tui, et ulciscar sanguinem servorum meorum prophetarum, et sanguinem omnium servorum Domini de manu Jezabel.",
+        "SYN": "и ты истребишь дом Ахава, господина твоего, чтобы Мне отмстить за кровь рабов Моих пророков и за кровь всех рабов Господних, _павших_ от руки Иезавели;",
+        "NEO": "Tu frapperas la maison d’Achab, ton maître, et je vengerai sur Jézabel le sang de mes serviteurs les prophètes et le sang de tous les serviteurs de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "You shall destroy the house of Ahab your master; thus will I avenge the blood of my servants the prophets, and the blood of all the other servants of the LORD shed by Jezebel,",
+        "VAT_ES": "Tú acabarás con la familia de Ajab, tu señor, y yo vengaré la sangre de mis servidores los profetas y la sangre de todos los servidores del Señor derramada por la mano de Jezabel.",
+        "CEI": "Tu demolirai la casa di Acab tuo signore; io vendicherò il sangue dei miei servi i profeti e il sangue di tutti i servi del Signore sparso da Gezabele."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אָבַ֖ד כָּל בֵּ֣ית אַחְאָ֑ב וְ/הִכְרַתִּ֤י לְ/אַחְאָב֙ מַשְׁתִּ֣ין בְּ/קִ֔יר וְ/עָצ֥וּר וְ/עָז֖וּב בְּ/יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐκ χειρὸς ὅλου τοῦ οἴκου Ἀχαάβ, καὶ ἐξολεθρεύσεις τῷ οἴκῳ Ἀχαὰβ οὐροῦντα πρὸς τοῖχον καὶ συνεχόμενον καὶ ἐνκαταλελειμμένον ἐν Ἰσραήλ.",
+        "VUL": "Perdamque omnem domum Achab : et interficiam de Achab mingentem ad parietem, et clausum et novissimum in Israël.",
+        "SYN": "и погибнет весь дом Ахава, и истреблю у Ахава мочащегося к стене, и заключенного и оставшегося в Израиле,",
+        "NEO": "Toute la maison d’Achab périra ; j’exterminerai tout mâle appartenant à Achab, celui qui est esclave et celui qui est libre en Israël,",
+        "NAB": "and by all the rest of the family of Ahab. I will cut off every male in Ahab's line, whether slave or freeman in Israel.",
+        "VAT_ES": "Toda la casa de Ajab perecerá: extirparé de la dinastía de Ajab a todos los varones, sean esclavos o libres en Israel.",
+        "CEI": "Tutta la casa di Acab perirà; io eliminerò nella famiglia di Acab ogni maschio, schiavo o libero in Israele."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/נָֽתַתִּי֙ אֶת בֵּ֣ית אַחְאָ֔ב כְּ/בֵ֖ית יָרָבְעָ֣ם בֶּן נְבָ֑ט וּ/כְ/בֵ֖ית בַּעְשָׁ֥א בֶן אֲחִיָּֽה׃",
+        "LXX": "καὶ δώσω τὸν οἶκον Ἀχαὰβ ὡς τὸν οἶκον Ἰεροβοὰμ υἱοῦ Ναβὰτ καὶ ὡς τὸν οἶκον Βαασὰ υἱοῦ Ἀχειά·",
+        "VUL": "Et dabo domum Achab sicut domum Jeroboam filii Nabat, et sicut domum Baasa filii Ahia.",
+        "SYN": "и сделаю дом Ахава, как дом Иеровоама, сына Наватова, и как дом Ваасы, сына Ахиина;",
+        "NEO": "et je rendrai la maison d’Achab semblable à la maison de Jéroboam, fils de Nabat, et à la maison de Baasa, fils d’Ahia.",
+        "NAB": "I will deal with the house of Ahab as I dealt with the house of Jeroboam, son of Nebat, and with the house of Baasha, son of Ahijah.",
+        "VAT_ES": "Trataré a la casa de Ajab como a la casa de Jeroboam, hijo de Nebat, y como a la casa de Basá, hijo de Ajías.",
+        "CEI": "Renderò la casa di Acab come la casa di Geroboamo figlio di Nebàt, e come la casa di Baasa figlio di Achia."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/אֶת אִיזֶ֜בֶל יֹאכְל֧וּ הַ/כְּלָבִ֛ים בְּ/חֵ֥לֶק יִזְרְעֶ֖אל וְ/אֵ֣ין קֹבֵ֑ר וַ/יִּפְתַּ֥ח הַ/דֶּ֖לֶת וַ/יָּנֹֽס׃",
+        "LXX": "καὶ τὴν Ἰεζάβελ καταφάγονται οἱ κύνες ἐν τῇ μερίδι τοῦ Ἰσραήλ, καὶ οὐκ ἔστιν ὁ θάπτων. καὶ ἤνοιξεν τὴν θύραν καὶ ἔφυγεν.",
+        "VUL": "Jezabel quoque comedent canes in agro Jezrahel, nec erit qui sepeliat eam. Aperuitque ostium, et fugit.",
+        "SYN": "Иезавель же съедят псы на поле Изреельском, и никто не похоронит ее\". И отворил дверь, и убежал.",
+        "NEO": "Les chiens mangeront Jézabel dans le champ de Jézrahel, et il n’y aura personne pour l’enterrer. » Et le jeune homme, ouvrant la porte, s’enfuit.",
+        "NAB": "Dogs shall devour Jezebel at the confines of Jezreel, so that no one can bury her.'\" Then he opened the door and fled.",
+        "VAT_ES": "En cuanto a Jezabel, los perros la devorarán en la parcela de Izreel, y nadie la sepultará». En seguida abrió la puerta y escapó.",
+        "CEI": "La stessa Gezabele sarà divorata dai cani nella campagna di Izreèl; nessuno la seppellirà\". Quindi aprì la porta e fuggì."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/יֵה֗וּא יָצָא֙ אֶל עַבְדֵ֣י אֲדֹנָ֔י/ו וַ/יֹּ֤אמֶר ל/וֹ֙ הֲ/שָׁל֔וֹם מַדּ֛וּעַ בָּֽא הַ/מְשֻׁגָּ֥ע הַ/זֶּ֖ה אֵלֶ֑י/ךָ וַ/יֹּ֣אמֶר אֲלֵי/הֶ֔ם אַתֶּ֛ם יְדַעְתֶּ֥ם אֶת הָ/אִ֖ישׁ וְ/אֶת שִׂיחֽ/וֹ׃",
+        "LXX": "καὶ Εἰοὺ ἐξῆλθεν πρὸς τοὺς παῖδας τοῦ κυρίου αὐτοῦ, καὶ εἶπον αὐτῷ Εἰρήνη; τί ὅτι εἰσῆλθεν ὁ ἐπίλημπτος οὗτος πρὸς σέ; καὶ εἶπεν αὐτοῖς Ὑμεῖς οἴδατε τὸν ἄνδρα καὶ τὴν ἀδολεσχίαν αὐτοῦ.",
+        "VUL": "Jehu autem egressus est ad servos domini sui : qui dixerunt ei : Rectene sunt omnia ? quid venit insanus iste ad te ? Qui ait eis : Nostis hominem, et quid locutus sit.",
+        "SYN": "И вышел Ииуй к слугам господина своего, и сказали ему: с миром ли? Зачем приходил этот неистовый к тебе? И сказал им: вы знаете этого человека и что он говорит.",
+        "NEO": "Alors Jéhu sortit pour rejoindre les serviteurs de son maître. Ils lui dirent : « Tout va-t-il bien ? Pourquoi ce fou est-il venu vers toi ? » Il leur répondit : « Vous connaissez l’homme et son langage. »",
+        "NAB": "When Jehu rejoined his master's servants, they asked him, \"Is all well? Why did that madman come to you?\" You know that kind of man and his talk, he replied.",
+        "VAT_ES": "Cuando Jehú salió a reunirse con los oficiales de su señor, le preguntaron: «&iquest;Hay alguna novedad? &iquest;Para qué vino a verte ese exaltado?». El les respondió: «Ustedes conocen a ese hombre y su centinela:.",
+        "CEI": "Quando Ieu si presentò agli ufficiali del suo padrone, costoro gli domandarono: \"Va tutto bene? Perché questo pazzo è venuto da te?\". Egli disse loro: \"Voi conoscete l'uomo e le sue chiacchiere\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֣וּ שֶׁ֔קֶר הַגֶּד נָ֖א לָ֑/נוּ וַ/יֹּ֗אמֶר כָּ/זֹ֤את וְ/כָ/זֹאת֙ אָמַ֤ר אֵלַ/י֙ לֵ/אמֹ֔ר כֹּ֚ה אָמַ֣ר יְהוָ֔ה מְשַׁחְתִּ֥י/ךָֽ לְ/מֶ֖לֶךְ אֶל יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ εἶπεν Ἄδικον· ἀπάγγειλον δὴ ἡμῖν. καὶ εἶπεν Εἰοὺ πρὸς αὐτούς Οὕτως καὶ οὕτως ἐλάλησεν πρὸς μὲ λέγων· καὶ εἶπεν Τάδε λέγει Κύριος Κέχρικά σε εἰς βασιλέα ἐπὶ Ἰσραήλ.",
+        "VUL": "At ille responderunt : Falsum est, sed magis narra nobis. Qui ait eis : Hæc et hæc locutus est mihi, et ait : Hæc dicit Dominus : Unxi te regem super Israël.",
+        "SYN": "И сказали: неправда, скажи нам. И сказал он: то и то он сказал мне, говоря: \"так говорит Господь: помазую тебя в царя над Израилем\".",
+        "NEO": "Ils répliquèrent : « Mensonge ! Déclare-le-nous ! » Et il dit : « Il m’a parlé de telle et telle manière, disant : Ainsi dit \\+w Yahweh|strong=\"H3068\"\\+w** : Je t’oins roi d’Israël. »",
+        "NAB": "But they said, \"Not at all! Come, tell us.\" So he told them what the young man had said to him, and finally, \"Thus says the LORD: 'I anoint you king over Israel.'\"",
+        "VAT_ES": "Ellos dijeron: «No es cierto. Explícanos qué pasa». Entonces él les replicó: «Esto es todo lo que me dijo: Así habla el Señor: Yo te he ungido rey de Israel».",
+        "CEI": "Gli dissero: \"Baie! Su, raccontacelo!\". Egli disse: \"Mi ha parlato così e così, affermando: Dice il Signore: Ti ungo re su Israele\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַֽ/יְמַהֲר֗וּ וַ/יִּקְחוּ֙ אִ֣ישׁ בִּגְד֔/וֹ וַ/יָּשִׂ֥ימוּ תַחְתָּ֖י/ו אֶל גֶּ֣רֶם הַֽ/מַּעֲל֑וֹת וַֽ/יִּתְקְעוּ֙ בַּ/שּׁוֹפָ֔ר וַ/יֹּאמְר֖וּ מָלַ֥ךְ יֵהֽוּא׃",
+        "LXX": "καὶ ἀκούσαντες ἔσπευσαν, καὶ ἔλαβεν ἕκαστος τὸ ἱμάτιον αὐτοῦ καὶ ἔθηκαν ὑποκάτω αὐτοῦ ἐπὶ τὸ γάρεμ τῶν ἀναβαθμῶν, καὶ ἐσάλπισαν ἐν κερατίνῃ καὶ εἶπον Ἐβασίλευσεν Εἰού.",
+        "VUL": "Festinaverunt itaque, et unusquisque tollens pallium suum posuerunt sub pedibus ejus in similitudinem tribunalis, et cecinerunt tuba, atque dixerunt : Regnavit Jehu.",
+        "SYN": "И поспешили они, и взяли каждый одежду свою, и подостлали ему на самых ступенях, и затрубили трубою, и сказали: воцарился Ииуй!",
+        "NEO": "Aussitôt, chacun prenant son manteau, ils le mirent sous Jéhu, au haut des degrés ; ils sonnèrent de la trompette et dirent : « Jéhu est roi ! »",
+        "NAB": "At once each took his garment, spread it under Jehu on the bare steps, blew the trumpet, and cried out, \"Jehu is king!\"",
+        "VAT_ES": "Inmediatamente, ellos tomaron cada uno su manto y los tendieron a sus pies, encima de las gradas. Luego tocaron la trompeta y gritaron: «&iexcl;Jehú es rey!».",
+        "CEI": "Tutti presero in fretta i propri vestiti e li stesero sotto di lui sugli stessi gradini, suonarono la tromba e gridarono: \"Ieu è re\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּתְקַשֵּׁ֗ר יֵה֛וּא בֶּן יְהוֹשָׁפָ֥ט בֶּן נִמְשִׁ֖י אֶל יוֹרָ֑ם וְ/יוֹרָם֩ הָיָ֨ה שֹׁמֵ֜ר בְּ/רָמֹ֣ת גִּלְעָ֗ד ה֚וּא וְ/כָל יִשְׂרָאֵ֔ל מִ/פְּנֵ֥י חֲזָאֵ֖ל מֶֽלֶךְ אֲרָֽם׃",
+        "LXX": "καὶ συνεστράφη Εἰοὺ υἱὸς Ιωσαφὰθ υἱοῦ Ναμεσσεὶ πρὸς Ἰωράμ· καὶ Ἰωρὰμ αὐτὸς ἐφύλασσεν ἐν Ῥεμμὼθ Γαλαὰδ καὶ πᾶς Ἰσραὴλ ἀπὸ προσώπου Ἁζαὴλ βασιλέως Συρίας.",
+        "VUL": "Conjuravit ergo Jehu filius Josaphat filii Namsi contra Joram : porro Joram obsederat Ramoth Galaad, ipse et omnis Israël contra Hazaël regem Syriæ :",
+        "SYN": "И восстал Ииуй, сын Иосафата, сына Намессиева, против Иорама; Иорам же находился со всеми Израильтянами в Рамофе Галаадском на страже против Азаила, царя Сирийского.",
+        "NEO": "Jéhu, fils de Josaphat, fils de Namsi, forma une conspiration contre Joram. — Joram et tout Israël défendaient alors Ramoth-en-Galaad contre Hazaël, roi de Syrie ;",
+        "NAB": "Thus Jehu, son of Jehoshaphat, son of Nimshi, formed a conspiracy against Joram. Joram, with all Israel, had been besieging Ramoth-gilead against Hazael, king of Aram,",
+        "VAT_ES": "Jehú, hijo de Josafat, hijo de Nimsí, conspiró contra Joram. Este, con todo Israel, estaba defendiendo a Ramot, de Galaad contra Jazael, rey de Aram,",
+        "CEI": "Ieu figlio di Giòsafat, figlio di Nimsi, congiurò contro Ioram. (Ioram aveva difeso con tutto Israele Ramot di Gàlaad di fronte a Cazaèl, re di Aram,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יָּשָׁב֩ יְהוֹרָ֨ם הַ/מֶּ֜לֶךְ לְ/הִתְרַפֵּ֣א בִ/יְזְרְעֶ֗אל מִן הַ/מַּכִּים֙ אֲשֶׁ֣ר יַכֻּ֣/הוּ אֲרַמִּ֔ים בְּ/הִלָּ֣חֲמ֔/וֹ אֶת חֲזָאֵ֖ל מֶ֣לֶךְ אֲרָ֑ם וַ/יֹּ֤אמֶר יֵהוּא֙ אִם יֵ֣שׁ נַפְשְׁ/כֶ֔ם אַל יֵצֵ֤א פָלִיט֙ מִן הָ/עִ֔יר לָ/לֶ֖כֶת ל/גיד לְ/הַגִּ֥יד בְּ/יִזְרְעֶֽאל׃",
+        "LXX": "καὶ ἀπέστρεψεν Ἰωρὰμ ὁ βασιλεὺς ἰατρευθῆναι ἐν Ἰσραὴλ ἀπὸ τῶν πληγῶν ὧν ἔπαισαν αὐτὸν οἱ Σύροι ἐν τῷ πολεμεῖν αὐτοὺς μετὰ Ἀζαὴλ βασιλέως Συρίας. καὶ εἶπεν Εἰού Εἰ ἔστιν ἡ ψυχὴ ὑμῶν μετ’ ἐμοῦ, μὴ ἐξελθέτω ἐκ τῆς πόλεως διαπεφευγὼς τοῦ πορευθῆναι καὶ ἀπαγγεῖλαι ἐν Ἰσραήλ.",
+        "VUL": "et reversus fuerat ut curaretur in Jezrahel propter vulnera, quia percusserant eum Syri præliantem contra Hazaël regem Syriæ. Dixitque Jehu : Si placet vobis, nemo egrediatur profugus de civitate, ne vadat, et nuntiet in Jezrahel.",
+        "SYN": "Впрочем сам царь Иорам возвратился, чтобы лечиться в Изрееле от ран, которые причинили ему Сирияне, когда он воевал с Азаилом, царем Сирийским. И сказал Ииуй: если вы согласны [со мною], то пусть никто не уходит из города, чтобы идти подать весть в Изрееле.",
+        "NEO": "mais le roi Joram s’en était retourné pour se faire guérir à Jezrahel des blessures que les Syriens lui avaient faites, lorsqu’il se battait contre Hazaël, roi de Syrie. — Jéhu dit : « Si c’est votre désir, que personne ne s’échappe de la ville pour aller porter la nouvelle à Jezrahel. »",
+        "NAB": "but had returned to Jezreel to be healed of the wounds the Arameans had inflicted on him in the battle against Hazael, king of Aram. \"If you are truly with me,\" Jehu said, \"see that no one escapes from the city to report in Jezreel.\"",
+        "VAT_ES": "pero tuvo que volver a Izreel para hacerse curar de las heridas que le habían infligido los arameos, mientras combatía contra Jazael, rey de Aram. Jehú dijo: «Si realmente están de acuerdo, que nadie escape de la ciudad para llevar la noticia a Izreel».",
+        "CEI": "poi Ioram era tornato a curarsi in Izreèl le ferite ricevute dagli Aramei nella guerra contro Cazaèl, re di Aram). Ieu disse: \"Se tale è il vostro sentimento, nessuno esca o fugga dalla città per andare ad annunziarlo in Izreèl\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יִּרְכַּ֤ב יֵהוּא֙ וַ/יֵּ֣לֶךְ יִזְרְעֶ֔אלָ/ה כִּ֥י יוֹרָ֖ם שֹׁכֵ֣ב שָׁ֑מָּ/ה וַֽ/אֲחַזְיָה֙ מֶ֣לֶךְ יְהוּדָ֔ה יָרַ֖ד לִ/רְא֥וֹת אֶת יוֹרָֽם׃",
+        "LXX": "καὶ ἵππευσεν καὶ ἐπορεύθη Εἰού, καὶ κατέβη ἐν Ἰσραήλ, ὅτι Ἰωρὰμ βασιλεὺς Ἰσραὴλ ἐθεραπεύετο ἐν τῷ Ἰσραὴλ ἀπὸ τῶν τοξευμάτων ὧν κατετόξευσαν αὐτὸν οἱ Ἀραμιεὶν ἐν τῇ Ῥαμμὰθ ἐν τῷ πολέμῳ μετὰ Ἁζαὴλ βασιλέως Συρίας, ὅτι δυνατὸς καὶ ἀνὴρ δυνάμεως· καὶ Ὀχοζείας βασιλεὺς Ἰούδα κατέβη ἰδεῖν τὸν Ἰωράμ.",
+        "VUL": "Et ascendit, et profectus est in Jezrahel : Joram enim ægrotabat ibi, et Ochozias rex Juda descenderat ad visitandum Joram.",
+        "SYN": "И сел Ииуй на коня, и поехал в Изреель, где лежал Иорам [царь Израильский, для лечения ран, которые причинили ему Сирияне в Рамофе, когда он воевал с Азаилом, царем Сирийским, сильным и могущественным], и куда Охозия, царь Иудейский, пришел посетить Иорама.",
+        "NEO": "Et Jéhu, étant monté sur son char, partit pour Jezrahel, car Joram y était couché, et Ochozias, roi de Juda, était descendu pour visiter Joram.",
+        "NAB": "Then Jehu mounted his chariot and drove to Jezreel, where Joram lay ill and Ahaziah, king of Judah, had come to visit him.",
+        "VAT_ES": "Luego subió a su carro y partió para Izreel, porque allí guardaba cama Joram, y Ocozías, rey de Judá, había bajado a visitarlo.",
+        "CEI": "Ieu salì su un carro e partì per Izreèl, perché là giaceva malato Ioram e Acazia re di Giuda era sceso per visitarlo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/הַ/צֹּפֶה֩ עֹמֵ֨ד עַֽל הַ/מִּגְדָּ֜ל בְּ/יִזְרְעֶ֗אל וַ/יַּ֞רְא אֶת שִׁפְעַ֤ת יֵהוּא֙ בְּ/בֹא֔/וֹ וַ/יֹּ֕אמֶר שִׁפְעַ֖ת אֲנִ֣י רֹאֶ֑ה וַ/יֹּ֣אמֶר יְהוֹרָ֗ם קַ֥ח רַכָּ֛ב וּֽ/שְׁלַ֥ח לִ/קְרָאתָ֖/ם וְ/יֹאמַ֥ר הֲ/שָׁלֽוֹם׃",
+        "LXX": "καὶ ὁ σκοπὸς ἀνέβη ἐπὶ τὸν πύργον Ἰσραήλ, καὶ εἶδεν τὸν κονιορτὸν Εἰοὺ ἐν τῷ παραγίνεσθαι αὐτόν, καὶ εἶπεν Κονιορτὸν ἐγὼ βλέπω· καὶ εἶπεν Ἰωράμ Λάβε ἐπιβάτην καὶ ἀπόστειλον ἔμπροσθεν αὐτῶν, καὶ εἰπάτω Ἦ εἰρήνη;",
+        "VUL": "Igitur speculator qui stabat super turrim Jezrahel, vidit globum Jehu venientis, et ait : Video ego globum. Dixitque Joram : Tolle currum, et mitte in occursum eorum, et dicat vadens : Rectene sunt omnia ?",
+        "SYN": "На башне в Изрееле стоял сторож, и увидел он полчище Ииуево, когда оно шло, и сказал: полчище вижу я. И сказал Иорам: возьми всадника, и пошли навстречу им, и пусть скажет: с миром ли?",
+        "NEO": "La sentinelle qui se tenait sur la tour à Jezrahel vit venir la troupe de Jéhu et dit : « Je vois une troupe. » Et Joram dit : « Prends un cavalier et envoie-le au-devant d’eux pour demander : Est-ce la paix ? »",
+        "NAB": "The watchman standing on the tower in Jezreel saw the troop of Jehu coming and reported, \"I see chariots.\" \"Get a driver,\" Joram said, \"and send him to meet them and to ask whether all is well.\"",
+        "VAT_ES": "El centinela que estaba apostado en la torre de Izreel, al ver venir la tropa, dijo: «Veo una tropa». Joram ordenó: «Toma un jinete y envíalo a preguntar si todo va bien».",
+        "CEI": "La sentinella che stava sulla torre di Izreèl vide la truppa di Ieu che avanzava e disse: \"Vedo una truppa\". Ioram disse: \"Prendi un cavaliere e mandalo loro incontro per domandare: Tutto bene?\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֵּלֶךְ֩ רֹכֵ֨ב הַ/סּ֜וּס לִ/קְרָאת֗/וֹ וַ/יֹּ֨אמֶר֙ כֹּֽה אָמַ֤ר הַ/מֶּ֨לֶךְ֙ הֲ/שָׁל֔וֹם וַ/יֹּ֧אמֶר יֵה֛וּא מַה לְּ/ךָ֥ וּ/לְ/שָׁל֖וֹם סֹ֣ב אֶֽל אַחֲרָ֑/י וַ/יַּגֵּ֤ד הַ/צֹּפֶה֙ לֵ/אמֹ֔ר בָּֽא הַ/מַּלְאָ֥ךְ עַד הֵ֖ם וְ/לֹֽא שָֽׁב׃",
+        "LXX": "καὶ ἐπορεύθη ἐπιβάτης ἵππου εἰς ἀπαντὴν αὐτῶν καὶ εἶπεν Τάδε λέγει ὁ βασιλεὺς Ἦ εἰρήνη; καὶ εἶπεν Εἰού Τί σοι και εἰρήνῃ; ἐπίστρεφε εἰς τὰ ὀπίσω μου. καὶ ἀπήγγειλεν ὁ σκοπὸς λέγων Ἦλθεν ὁ ἄγγελος ἕως αὐτῶν καὶ οὐκ ἀνέστρεψεν.",
+        "VUL": "Abiit ergo qui ascenderat currum, in occursum ejus, et ait : Hæc dicit rex : Pacatane sunt omnia ? Dixitque Jehu : Quid tibi et paci ? transi, et sequere me. Nuntiavit quoque speculator, dicens : Venit nuntius ad eos, et non revertitur.",
+        "SYN": "И выехал всадник на коне навстречу ему, и сказал: так говорит царь: с миром ли? И сказал Ииуй: что тебе до мира? Поезжай за мною. И донес сторож, и сказал: доехал до них, но не возвращается.",
+        "NEO": "Le cavalier alla au-devant de Jéhu et dit : « Ainsi dit le roi : Est-ce la paix ? » Et Jéhu répondit : « Que t’importe la paix ? Passe derrière moi. » La sentinelle en donna son avis, en disant : « Le messager est allé jusqu’à eux, et il ne revient pas. »",
+        "NAB": "So a driver went out to meet him and said, \"The king asks whether all is well.\" \"What does it matter to you how things are?\" Jehu said. \"Get behind me.\" The watchman reported to the king, \"The messenger has reached them, but is not returning.\"",
+        "VAT_ES": "El jinete partió al encuentro de Jehú y dijo: «Así habla el rey: &iquest;Va todo bien?». Jehú replicó: «&iquest;Qué te importa a ti si todo va bien? Colócate ahí detrás». El centinela, mientras tanto, avisó: «El mensajero los alcanzó, pero no regresa».",
+        "CEI": "Uno a cavallo andò loro incontro e disse: \"Il re domanda: Tutto bene?\". Ieu disse: \"Che importa a te come vada? Passa dietro a me e seguimi\". La sentinella riferì: \"Il messaggero è arrivato da quelli, ma non torna indietro\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֗ח רֹכֵ֣ב סוּס֮ שֵׁנִי֒ וַ/יָּבֹ֣א אֲלֵ/הֶ֔ם וַ/יֹּ֛אמֶר כֹּֽה אָמַ֥ר הַ/מֶּ֖לֶךְ שָׁל֑וֹם וַ/יֹּ֧אמֶר יֵה֛וּא מַה לְּ/ךָ֥ וּ/לְ/שָׁל֖וֹם סֹ֥ב אֶֽל אַחֲרָֽ/י׃",
+        "LXX": "καὶ ἀπέστειλεν ἐπιβάτην ἵππου δεύτερον, καὶ ἦλθεν πρὸς αὐτὸν καὶ εἶπεν Τάδε λέγει ὁ βασιλεύς Ἦ εἰρήνη; καὶ εἶπεν Εἰού Τί σοι καὶ εἰρήνῃ; ἐπιστρέφου εἰς τὰ ὀπίσω μου.",
+        "VUL": "Misit etiam currum equorum secundum : venitque ad eos, et ait : Hæc dicit rex : Numquid pax est ? Et ait Jehu : Quid tibi et paci ? transi, et sequere me.",
+        "SYN": "И послали другого всадника, и он приехал к ним, и сказал: так говорит царь: с миром ли? И сказал Ииуй: что тебе до мира? Поезжай за мною.",
+        "NEO": "Joram envoya un second cavalier, qui arriva vers eux et dit : « Ainsi dit le roi : Est-ce la paix ? » Et Jéhu répondit : « Que t’importe la paix ? ; passe derrière moi. »",
+        "NAB": "Joram sent a second driver, who went to them and said, \"The king asks whether all is well.\" \"What does it matter to you how things are?\" Jehu replied. \"Get behind me.\"",
+        "VAT_ES": "El rey envió un segundo jinete, que los alcanzó y dijo: «Así habla el rey: &iquest;Va todo bien?». Jehú replicó: «&iquest;Que te importa a ti si toda va bien? Colócate ahí detrás».",
+        "CEI": "Il re mandò un altro cavaliere che, giunto da quelli, disse: \"Il re domanda: Tutto bene?\". Ma Ieu disse: \"Che importa a te come vada? Passa dietro a me e seguimi\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יַּגֵּ֤ד הַ/צֹּפֶה֙ לֵ/אמֹ֔ר בָּ֥א עַד אֲלֵי/הֶ֖ם וְ/לֹֽא שָׁ֑ב וְ/הַ/מִּנְהָ֗ג כְּ/מִנְהַג֙ יֵה֣וּא בֶן נִמְשִׁ֔י כִּ֥י בְ/שִׁגָּע֖וֹן יִנְהָֽג׃",
+        "LXX": "καὶ ἀπήγγειλεν ὁ σκοπὸς λέγων Ἦλθεν ἕως αὐτῶν καὶ οὐκ ἀνέστρεψεν· καὶ ὁ ἄγων ἦγεν τὸν Εἰοὺ υἱὸν Ναμεσσείου, ὅτι ἐν παραλλαγῇ ἐγένετο.",
+        "VUL": "Nuntiavit autem speculator, dicens : Venit usque ad eos, et non revertitur : est autem incessus quasi incessus Jehu filii Namsi, præceps enim graditur.",
+        "SYN": "И донес сторож, сказав: доехал до них, и не возвращается, а походка, как будто Ииуя, сына Намессиева, потому что он идет стремительно.",
+        "NEO": "La sentinelle en donna avis, en disant : « Le messager est allé jusqu’à eux, et il ne revient pas. Et la manière de conduire est comme la manière de conduire de Jéhu, fils de Namsi, car il conduit d’une manière insensée. »",
+        "NAB": "The watchman reported, \"The messenger has reached them, but is not returning. The driving is like that of Jehu, son of Nimshi, in its fury.\"",
+        "VAT_ES": "«El centinela volvió a avisar: «Los ha alcanzado, pero no regresa. Por el modo de conducir, parece Jehú, porque maneja como un loco».",
+        "CEI": "La sentinella riferì: \"È arrivato da quelli, ma non torna indietro. Il modo di guidare è quello di Ieu figlio di Nimsi; difatti guida all'impazzata\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוֹרָם֙ אֱסֹ֔ר וַ/יֶּאְסֹ֖ר רִכְבּ֑/וֹ וַ/יֵּצֵ֣א יְהוֹרָ֣ם מֶֽלֶךְ יִ֠שְׂרָאֵל וַ/אֲחַזְיָ֨הוּ מֶֽלֶךְ יְהוּדָ֜ה אִ֣ישׁ בְּ/רִכְבּ֗/וֹ וַ/יֵּֽצְאוּ֙ לִ/קְרַ֣את יֵה֔וּא וַ/יִּמְצָאֻ֔/הוּ בְּ/חֶלְקַ֖ת נָב֥וֹת הַ/יִּזְרְעֵאלִֽי׃",
+        "LXX": "καὶ εἶπεν Ἰωράμ Ζεῦξον· καὶ ἔζευξεν ἅρμα. καὶ ἐξῆλθεν Ἰωρὰμ βασιλεὺς Ἰσραὴλ καὶ Ὀχοζεὶ βασιλεὺς Ἰούδα, ἀνὴρ ἐν τῷ ἅρματι αὐτοῦ, καὶ ἐξῆλθον εἰς ἀπαντὴν Εἰού, καὶ εὗρον αὐτὸν ἐν τῇ μερίδι Ναβουθαὶ τοῦ Ἰσραηλείτου.",
+        "VUL": "Et ait Joram : Junge currum. Junxeruntque currum ejus, et egressus est Joram rex Israël, et Ochozias rex Juda, singuli in curribus suis, egressique sunt in occursum Jehu, et invenerunt eum in agro Naboth Jezrahelitæ.",
+        "SYN": "И сказал Иорам: запрягай. И запрягли колесницу его. И выступил Иорам, царь Израильский, и Охозия, царь Иудейский, каждый на колеснице своей. И выступили навстречу Ииую, и встретились с ним на поле Навуфея Изреелитянина.",
+        "NEO": "Alors Joram dit : « Attelle ; » et on attela son char. Joram, roi d’Israël, et Ochozias, roi de Juda, sortirent chacun sur son char ; ils sortirent au-devant de Jéhu, et ils le rencontrèrent dans le champ de Naboth de Jezrahel.",
+        "NAB": "\"Prepare my chariot,\" said Joram. When they had done so, Joram, king of Israel, and Ahaziah, king of Judah, set out, each in his own chariot, to meet Jehu. They reached him near the field of Naboth the Jezreelite.",
+        "VAT_ES": "Joram ordenó: «&iexcl;Enganchen mi carro!». Cuando lo engancharon, Joram, rey de Israel, y Ocozías, rey de Judá, salieron cada uno en su carro al encuentro de Jehú. Lo encontraron en la parcela de Nabot de Izreel,",
+        "CEI": "Ioram disse: \"Attacca i cavalli\". Appena fu pronto il suo carro, Ioram re di Israele, e Acazia re di Giuda, partirono, ognuno sul proprio carro. Andarono incontro a Ieu, che raggiunsero nel campo di Nabòt di Izreèl."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י כִּ/רְא֤וֹת יְהוֹרָם֙ אֶת יֵה֔וּא וַ/יֹּ֖אמֶר הֲ/שָׁל֣וֹם יֵה֑וּא וַ/יֹּ֨אמֶר֙ מָ֣ה הַ/שָּׁל֔וֹם עַד זְנוּנֵ֞י אִיזֶ֧בֶל אִמְּ/ךָ֛ וּ/כְשָׁפֶ֖י/הָ הָ/רַבִּֽים׃",
+        "LXX": "καὶ ἐγένετο ὡς εἶδεν Ἰωρὰμ τὸν Εἰού, καὶ εἶπεν Ἦ εἰρήνη, Εἰού; καὶ εἶπεν Εἰού Τί εἰρήνη; ἔτι αἱ πορνεῖαι Ἰεζάβελ τῆς μητρός σου καὶ τὰ φάρμακα αὐτῆς τὰ πολλά.",
+        "VUL": "Cumque vidisset Joram Jehu, dixit : Pax est, Jehu ? At ille respondit : Quæ pax ? adhuc fornicationes Jezabel matris tuæ, et veneficia ejus multa, vigent.",
+        "SYN": "И когда увидел Иорам Ииуя, то сказал: с миром ли Ииуй? И сказал он: какой мир при любодействе Иезавели, матери твоей, и при многих волхвованиях ее?",
+        "NEO": "En apercevant Jéhu, Joram lui dit : « Est-ce la paix, Jéhu ? » Jéhu répondit : « Quelle paix, tant que durent les prostitutions de Jézabel, ta mère, et ses nombreux sortilèges ? »",
+        "NAB": "When Joram recognized Jehu, he asked, \"Is all well, Jehu?\" \"How can all be well,\" Jehu replied, \"as long as the many fornications and witchcrafts of your mother Jezebel continue?\"",
+        "VAT_ES": "y apenas Joram vio a Jehú, dijo: «&iquest;Te va bien, Jehú?». Este respondió: «&iquest;Cómo me va a ir bien, mientras duren las prostituciones de tu madre Jezabel y sus innumerables brujerías?».",
+        "CEI": "Quando Ioram vide Ieu, gli domandò: \"Tutto bene, Ieu?\". Rispose: \"Sì, tutto bene, finché durano le prostituzioni di Gezabele tua madre e le sue numerose magie\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יַּהֲפֹ֧ךְ יְהוֹרָ֛ם יָדָ֖י/ו וַ/יָּנֹ֑ס וַ/יֹּ֥אמֶר אֶל אֲחַזְיָ֖הוּ מִרְמָ֥ה אֲחַזְיָֽה׃",
+        "LXX": "καὶ ἐπέστρεψεν Ἰωρὰμ τὰς χεῖρας αὐτοῦ καὶ ἔφυγεν, καὶ εἶπεν πρὸς Ὀχοζείαν Δόλος, Ὀχοζεία.",
+        "VUL": "Convertit autem Joram manum suam, et fugiens ait ad Ochoziam : Insidiæ, Ochozia.",
+        "SYN": "И поворотил Иорам руки свои, и побежал, и сказал Охозии: измена, Охозия!",
+        "NEO": "Joram tourna bride et s’enfuit, et il dit à Ochozias : « Trahison, Ochozias ! »",
+        "NAB": "Joram reined about and fled, crying to Ahaziah, \"Treason, Ahaziah!\"",
+        "VAT_ES": "Joram volvió las riendas y huyó, diciendo a Ocozías: «&iexcl;Traición, Ocozías!».",
+        "CEI": "Allora Ioram si volse indietro e fuggì, dicendo ad Acazia: \"Siamo traditi, Acazia!\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/יֵה֞וּא מִלֵּ֧א יָד֣/וֹ בַ/קֶּ֗שֶׁת וַ/יַּ֤ךְ אֶת יְהוֹרָם֙ בֵּ֣ין זְרֹעָ֔י/ו וַ/יֵּצֵ֥א הַ/חֵ֖צִי מִ/לִּבּ֑/וֹ וַ/יִּכְרַ֖ע בְּ/רִכְבּֽ/וֹ׃",
+        "LXX": "καὶ ἔπλησεν Εἰοὺ τὴν χεῖρα αὐτοῦ ἐν τῷ τόξῳ καὶ ἐπάταξεν τὸν Ἰωρὰμ ἀνὰ μέσον τῶν βραχιόνων αὐτοῦ, καὶ ἐξῆλθεν τὸ βέλος αὐτοῦ διὰ τῆς καρδίας αὐτοῦ, καὶ ἔκαμψεν ἐπὶ τὰ γόνατα αὐτοῦ.",
+        "VUL": "Porro Jehu tetendit arcum manu, et percussit Joram inter scapulas : et egressa est sagitta per cor ejus, statimque corruit in curru suo.",
+        "SYN": "А Ииуй натянул лук рукою своею, и поразил Иорама между плечами его, и прошла стрела чрез сердце его, и пал он на колеснице своей.",
+        "NEO": "Mais Jéhu saisit son arc de sa main, et frappa Joram entre les épaules : la flèche sortit par le cœur, et Joram s’affaissa dans son char.",
+        "NAB": "But Jehu drew his bow and shot Joram between the shoulders, so that the arrow went through his heart and he collapsed in his chariot.",
+        "VAT_ES": "Pero Jehú, que había tendido su arco, hirió a Joram en plena espalda; la flecha le atravesó el corazón, y él se desplomó en su carro.",
+        "CEI": "Ieu, impugnato l'arco, colpì Ioram nel mezzo delle spalle. La freccia gli attraversò il cuore ed egli si accasciò sul carro."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֗אמֶר אֶל בִּדְקַר֙ שלשה שָֽׁלִשׁ֔/וֹ שָׂ֚א הַשְׁלִכֵ֔/הוּ בְּ/חֶלְקַ֕ת שְׂדֵ֖ה נָב֣וֹת הַ/יִּזְרְעֵאלִ֑י כִּֽי זְכֹ֞ר אֲנִ֣י וָ/אַ֗תָּה אֵ֣ת רֹכְבִ֤ים צְמָדִים֙ אַֽחֲרֵי֙ אַחְאָ֣ב אָבִ֔י/ו וַֽ/יהוָה֙ נָשָׂ֣א עָלָ֔י/ו אֶת הַ/מַּשָּׂ֖א הַ/זֶּֽה׃",
+        "LXX": "καὶ εἶπεν πρὸς Βαδεκὰ τὸν τριστάτην αὐτοῦ Ῥίψαι αὐτὸν ἐν τῇ μερίδι ἀγροῦ Ναβουθαὶ τοῦ Ἰσραηλείτου· ὅτι μνημονεύω, ἐγὼ καὶ σὺ ἐπιβεβηκότες ἐπὶ ζεύγη ὀπίσω Ἀχαὰβ τοῦ πατρὸς αὐτοῦ, καὶ Κύριος ἔλαβεν ἐπ’ αὐτὸν τὸ λῆμμα τοῦτο",
+        "VUL": "Dixitque Jehu ad Badacer ducem : Tolle, projice eum in agro Naboth Jezrahelitæ : memini enim quando ego et tu sedentes in curru sequebamur Achab patrem hujus, quod Dominus onus hoc levaverit super eum, dicens :",
+        "SYN": "И сказал Ииуй Бидекару, сановнику своему: возьми, брось его на участок поля Навуфея Изреелитянина, ибо вспомни, как мы с тобою ехали вдвоем сзади Ахава, отца его, и как Господь изрек на него такое пророчество:",
+        "NEO": "Et Jéhu dit à son officier Badacer : « Prends-le et jette-le dans le champ de Naboth de Jezrahel. Car, souviens-toi : lorsque moi et toi nous chevauchions ensemble derrière Achab, son père, \\+w Yahweh|strong=\"H3068\"\\+w** prononça contre lui cette sentence :",
+        "NAB": "Then Jehu said to his adjutant Bidkar, \"Take him and throw him into the field of Naboth the Jezreelite. For I remember that when we were driving teams behind his father Ahab, the LORD delivered this oracle against him:",
+        "VAT_ES": "Entonces Jehú dijo a Bidcar, su escudero: «Levántalo y arrójalo en la parcela del campo de Nabot el izreelita. Acuérdate que cuanto tú y yo cabalgábamos a la par, detrás de tu padre Ajab, el Señor pronunció contra él esta sentencia:",
+        "CEI": "Ieu disse a Bidkar suo scudiero: \"Sollevalo, gettalo nel campo che appartenne a Nabòt di Izreèl; mi ricordo che una volta, mentre io e te eravamo sullo stesso carro al seguito di suo padre Acab, il Signore proferì su di lui questo oracolo:"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "אִם לֹ֡א אֶת דְּמֵ֣י נָבוֹת֩ וְ/אֶת דְּמֵ֨י בָנָ֜י/ו רָאִ֤יתִי אֶ֨מֶשׁ֙ נְאֻם יְהוָ֔ה וְ/שִׁלַּמְתִּ֥י לְ/ךָ֛ בַּ/חֶלְקָ֥ה הַ/זֹּ֖את נְאֻם יְהוָ֑ה וְ/עַתָּ֗ה שָׂ֧א הַשְׁלִכֵ֛/הוּ בַּ/חֶלְקָ֖ה כִּ/דְבַ֥ר יְהוָֽה׃",
+        "LXX": "Εἰ μὴ τὰ αἵματα Ναβουθαὶ καὶ τὰ αἵματα τῶν υἱῶν αὐτοῦ εἶδον ἐχθές, φησὶν Κύριος· καὶ ἀνταποδώσω αὐτῷ ἐν τῇ μερίδι ταύτῃ, φησὶν Κυρίος. καὶ νῦν ἄρας δὴ ῥίψον αὐτὸν ἐν τῇ μερίδι κατὰ τὸ ῥῆμα Κύριου.",
+        "VUL": "Si non pro sanguine Naboth, et pro sanguine filiorum ejus, quem vidi heri, ait Dominus, reddam tibi in agro isto, dicit Dominus. Nunc ergo tolle, et projice eum in agrum juxta verbum Domini.",
+        "SYN": "истинно, кровь Навуфея и кровь сыновей его видел Я вчера, говорит Господь, и отмщу тебе на сем поле. Итак возьми, брось его на поле, по слову Господню.",
+        "NEO": "« Aussi vrai que j’ai vu hier le sang de Naboth et le sang de ses fils, oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, je te rendrai la pareille dans ce champ même, oracle de \\+w Yahweh|strong=\"H3068\"\\+w**. » Prends-le donc et jette-le dans le champ, selon la parole de \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "'As surely as I saw yesterday the blood of Naboth and the blood of his sons,' says the LORD, 'I will repay you for it in that very plot of ground, says the LORD.' So now take him into this plot of ground, in keeping with the word of the LORD.\"",
+        "VAT_ES": "&iquest;No he visto ayer la sangre de Nabot y la sangre de sus hijos? –oráculo del Señor–. Yo te daré tu merecido en ese mismo campo –oráculo del Señor–. Ahora, levántalo y arrójalo en esta parcela, conforme a la palabra del Señor».",
+        "CEI": "Non ho forse visto ieri il sangue di Nabòt e il sangue dei suoi figli? Oracolo del Signore. Ti ripagherò in questo stesso campo. Oracolo del Signore. Sollevalo e gettalo nel campo secondo la parola del Signore\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/אֲחַזְיָ֤ה מֶֽלֶךְ יְהוּדָה֙ רָאָ֔ה וַ/יָּ֕נָס דֶּ֖רֶךְ בֵּ֣ית הַגָּ֑ן וַ/יִּרְדֹּ֨ף אַחֲרָ֜י/ו יֵה֗וּא וַ֠/יֹּאמֶר גַּם אֹת֞/וֹ הַכֻּ֣/הוּ אֶל הַ/מֶּרְכָּבָ֗ה בְּ/מַֽעֲלֵה גוּר֙ אֲשֶׁ֣ר אֶֽת יִבְלְעָ֔ם וַ/יָּ֥נָס מְגִדּ֖וֹ וַ/יָּ֥מָת שָֽׁם׃",
+        "LXX": "καὶ Ὀχοζείας βασιλεὺς Ἰούδα εἶδεν, καὶ ἔφυγεν ὁδὸν Βαιθάν· καὶ ἐδίωξεν ὀπίσω αὐτοῦ Εἰοὺ καὶ εἶπεν Καί γε αὐτόν· καὶ ἐπάταξεν αὐτὸν πρὸς τῷ ἅρματι ἐν τῷ ἀναβαίνειν Γαί, ἥ ἐστιν Ἐκβλαάμ· καὶ ἔφυγεν εἰς Μαγεδαών, καὶ ἀπέθανεν ἐκεῖ.",
+        "VUL": "Ochozias autem rex Juda videns hoc, fugit per viam domus horti : persecutusque est eum Jehu, et ait : Etiam hunc percutite in curru suo. Et percusserunt eum in ascensu Gaver, qui est juxta Jeblaam : qui fugit in Mageddo, et mortuus est ibi.",
+        "SYN": "Охозия, царь Иудейский, увидев сие, побежал по дороге к дому, что в саду. И погнался за ним Ииуй, и сказал: и его бейте на колеснице. _Это_ _было_ на возвышенности Гур, что при Ивлеаме. И побежал он в Мегиддон, и умер там.",
+        "NEO": "Ochozias, roi de Juda, voyant cela, s’enfuit par le chemin de la maison du jardin. Jéhu le poursuivit et dit : « Frappez-le, lui aussi, sur le char ! » Et on le frappa à la montée de Gaver, près de Jeblaam. Il s’enfuit à Mageddo, et il y mourut.",
+        "NAB": "Seeing what was happening, Ahaziah, king of Judah, fled toward Beth-haggan. Jehu pursued him, shouting, \"Kill him too!\" And they pierced him as he rode through the pass of Gur near Ibleam. He continued his flight as far as Megiddo and died there.",
+        "VAT_ES": "Al ver esto, Ocozías, rey de Judá, huyó por el camino de Bet Hagán. Jehú se lanzó en persecución de él, y ordenó: «&iexcl;Hiéranlo también a él!». Lo hirieron sobre su carro, en la cuesta de Gur, que está cerca de Ibleam, y él huyó a Meguido, donde murió.",
+        "CEI": "Visto ciò, Acazia re di Giuda fuggì per la strada di Bet-Gan; Ieu l'inseguì e ordinò: \"Colpite anche costui\". Lo colpirono sul carro nella salita di Gur, nelle vicinanze di Ibleam. Egli fuggì a Meghìddo, ove morì."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יַּרְכִּ֧בוּ אֹת֛/וֹ עֲבָדָ֖י/ו יְרוּשָׁלְָ֑מָ/ה וַ/יִּקְבְּר֨וּ אֹת֧/וֹ בִ/קְבֻרָת֛/וֹ עִם אֲבֹתָ֖י/ו בְּ/עִ֥יר דָּוִֽד׃",
+        "LXX": "καὶ ἐπεβίβασαν αὐτὸν οἱ παῖδες αὐτοῦ ἐπὶ τὸ ἅρμα καὶ ἤγαγον αὐτὸν εἰς Ἰερουσαλήμ, καὶ ἔθαψαν αὐτὸν ἐν τῷ τάφῳ αὐτοῦ ἐν πόλει Δαυείδ.",
+        "VUL": "Et imposuerunt eum servi ejus super currum suum, et tulerunt in Jerusalem : sepelieruntque eum in sepulchro cum patribus suis in civitate David.",
+        "SYN": "И отвезли его рабы его в Иерусалим, и похоронили его в гробнице его, с отцами его, в городе Давидовом.",
+        "NEO": "Ses serviteurs le transportèrent sur un char à Jérusalem, et ils l’enterrèrent dans son sépulcre avec ses pères, dans la ville de David.",
+        "NAB": "His servants brought him in a chariot to Jerusalem and buried him in the tomb of his ancestors in the City of David.",
+        "VAT_ES": "Sus servidores lo trasladaron en un carro a Jerusalén, y lo sepultaron en su tumba, con sus padres, en la Ciudad de David.",
+        "CEI": "I suoi ufficiali lo portarono a Gerusalemme su un carro e lo seppellirono nel suo sepolcro, vicino ai suoi padri, nella città di Davide."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וּ/בִ/שְׁנַת֙ אַחַ֣ת עֶשְׂרֵ֣ה שָׁנָ֔ה לְ/יוֹרָ֖ם בֶּן אַחְאָ֑ב מָלַ֥ךְ אֲחַזְיָ֖ה עַל יְהוּדָֽה׃",
+        "LXX": "Καὶ ἐν ἔτει ἑνδεκάτῳ Ἰωρὰμ βασιλεῖ Ἰσραὴλ ἐβασίλευσεν Ὀχοζείας ἐπὶ Ἰούδαν.",
+        "VUL": "Anno undecimo Joram filii Achab, regnavit Ochozias super Judam,",
+        "SYN": "В одиннадцатый год Иорама, сына Ахавова, воцарился Охозия в Иудее.",
+        "NEO": "Ochozias était devenu roi de Juda la onzième année de Joram, fils d’Achab.",
+        "NAB": "Ahaziah had become king of Judah in the eleventh year of Joram, son of Ahab.",
+        "VAT_ES": "Fue en el undécimo año de Joram, hijo de Ajab, cuando Ocozías había comenzado a reinar en Judá.",
+        "CEI": "Acazia era divenuto re di Giuda nell'anno undecimo di Ioram, figlio di Acab."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יָּב֥וֹא יֵה֖וּא יִזְרְעֶ֑אלָ/ה וְ/אִיזֶ֣בֶל שָׁמְעָ֗ה וַ/תָּ֨שֶׂם בַּ/פּ֤וּךְ עֵינֶ֨י/הָ֙ וַ/תֵּ֣יטֶב אֶת רֹאשָׁ֔/הּ וַ/תַּשְׁקֵ֖ף בְּעַ֥ד הַ/חַלּֽוֹן׃",
+        "LXX": "Καὶ ἦλθεν Εἰοὺ ἐπὶ Ἰσραήλ· καὶ Ἰεζάβελ ἤκουσεν καὶ ἐστιμίσατο τοὺς ὀφθαλμοὺς αὐτῆς καὶ ἠγάθυνεν τὴν κεφαλὴν αὐτῆς, καὶ διέκυψεν διὰ τῆς θυρίδος.",
+        "VUL": "venitque Jehu in Jezrahel. Porro Jezabel, introitu ejus audito, depinxit oculos suos stibio, et ornavit caput suum, et respexit per fenestram",
+        "SYN": "И прибыл Ииуй в Изреель. Иезавель же, получив весть, нарумянила лице свое и украсила голову свою, и глядела в окно.",
+        "NEO": "Jéhu entra dans Jezrahel. Jézabel, l’ayant appris, mit du fard à ses yeux, se para la tête et regarda par la fenêtre.",
+        "NAB": "When Jezebel learned that Jehu had arrived in Jezreel, she shadowed her eyes, adorned her hair, and looked down from her window.",
+        "VAT_ES": "Jehú llegó a Izreel. Cuando se enteró Jezabel, se pintó los ojos, se arregló el cabello y se asomó por la ventana.",
+        "CEI": "Ieu arrivò in Izreèl. Appena lo seppe, Gezabele si truccò gli occhi con stibio, si acconciò la capigliatura e si mise alla finestra."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/יֵה֖וּא בָּ֣א בַ/שָּׁ֑עַר וַ/תֹּ֣אמֶר הֲ/שָׁל֔וֹם זִמְרִ֖י הֹרֵ֥ג אֲדֹנָֽי/ו׃",
+        "LXX": "καὶ Εἰοὺ εἰσεπορεύετο ἐν τῇ πόλει, καὶ εἶπεν Ἦ εἰρήνη, Ζαμβρεί, ὁ φονευτὴς τοῦ κυρίου αὐτοῦ;",
+        "VUL": "ingredientem Jehu per portam, et ait : Numquid pax potest esse Zambri, qui interfecit dominum suum ?",
+        "SYN": "Когда Ииуй вошел в ворота, она сказала: мир ли Замврию, убийце государя своего?",
+        "NEO": "Comme Jéhu franchissait la porte, elle dit : « Est-ce la paix, Zamri, assassin de son maître ? »",
+        "NAB": "As Jehu came through the gate, she cried out, \"Is all well, Zimri, murderer of your master?\"",
+        "VAT_ES": "En el momento en que Jehú franqueaba la puerta de la ciudad, ella le dijo: «&iquest;Cómo te va, Zimrí, asesino de su señor?»",
+        "CEI": "Mentre Ieu entrava per la porta, gli domando: \"Tutto bene, o Zimri, assassino del suo padrone?\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יִּשָּׂ֤א פָנָי/ו֙ אֶל הַ֣/חַלּ֔וֹן וַ/יֹּ֕אמֶר מִ֥י אִתִּ֖/י מִ֑י וַ/יַּשְׁקִ֣יפוּ אֵלָ֔י/ו שְׁנַ֥יִם שְׁלֹשָׁ֖ה סָרִיסִֽים׃",
+        "LXX": "καὶ ἐπῆρεν τὸ πρόσωπον αὐτοῦ εἰς τὴν θυρίδα καὶ εἶδεν αὐτήν, καὶ εἶπεν Τίς εἶ σύ; κατάβηθι μετ’ ἐμοῦ· καὶ κατέκυψαν πρὸς αὐτὸν δύο εὐνοῦχοι.",
+        "VUL": "Levavitque Jehu faciem suam ad fenestram, et ait : Quæ est ista ? et inclinaverunt se ad eum duo vel tres eunuchi.",
+        "SYN": "И поднял он лице свое к окну и сказал: кто со мною, кто? И выглянули к нему два, три евнуха.",
+        "NEO": "Il leva les yeux vers la fenêtre et dit : « Qui est avec moi ? Qui ? » Et deux ou trois eunuques ayant regardé vers lui,",
+        "NAB": "Jehu looked up to the window and shouted, \"Who is on my side? Anyone?\" At this, two or three eunuchs looked down toward him.",
+        "VAT_ES": "Jehú alzó la cabeza hacia la ventana y exclamó: «&iquest;Quién está conmigo? &iquest;Quién?». Dos o tres eunucos se inclinaron hacia él,",
+        "CEI": "Ieu alzò lo sguardo alla finestra e disse: \"Chi è con me? Chi?\". Due o tre eunuchi si affacciarono a guardarlo."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר שמט/הו שִׁמְט֖וּ/הָ וַֽ/יִּשְׁמְט֑וּ/הָ וַ/יִּ֨ז מִ/דָּמָ֧/הּ אֶל הַ/קִּ֛יר וְ/אֶל הַ/סּוּסִ֖ים וַֽ/יִּרְמְסֶֽ/נָּה׃",
+        "LXX": "καὶ εἶπεν Κυλίσατε αὐτήν· καὶ ἐκύλισαν αὐτήν, καὶ ἐραντίσθη τοῦ αἵματος αὐτῆς πρὸς τὸν τοῖχον καὶ πρὸς τοὺς ἵππους, καὶ συνεπάτησαν αὐτήν.",
+        "VUL": "At ille dixit eis : Præcipitate eam deorsum : et præcipitaverunt eam, aspersusque est sanguine paries, et equorum ungulæ conculcaverunt eam.",
+        "SYN": "И сказал он: выбросьте ее. И выбросили ее. И брызнула кровь ее на стену и на коней, и растоптали ее.",
+        "NEO": "il dit : « Jetez-la en bas ! » Ils la jetèrent en bas, et il rejaillit de son sang sur la muraille et sur les chevaux, et Jéhu la foula aux pieds.",
+        "NAB": "\"Throw her down,\" he ordered. They threw her down, and some of her blood spurted against the wall and against the horses. Jehu rode in over her body",
+        "VAT_ES": "y él les dijo: «&iexcl;Tírenla abajo!». Ellos la tiraron abajo, y su sangre salpicó la pared y a los caballos, que la pisotearon.",
+        "CEI": "Egli disse: \"Gettatela giù\". La gettarono giù. Il suo sangue schizzò sul muro e sui cavalli. Ieu passò sul suo corpo,"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֖א וַ/יֹּ֣אכַל וַ/יֵּ֑שְׁתְּ וַ/יֹּ֗אמֶר פִּקְדוּ נָ֞א אֶת הָ/אֲרוּרָ֤ה הַ/זֹּאת֙ וְ/קִבְר֔וּ/הָ כִּ֥י בַת מֶ֖לֶךְ הִֽיא׃",
+        "LXX": "καὶ εἰσῆλθεν καὶ ἔφαγεν καὶ ἔπιεν, καὶ εἶπεν Ἐπισκέψασθε δὴ τὴν κατηραμένην ταύτην καὶ θάψατε αὐτήν, ὅτι θυγάτηρ βασιλέως ἐστίν.",
+        "VUL": "Cumque introgressus esset ut comederet biberetque, ait : Ite, et videte maledictam illam, et sepelite eam : quia filia regis est.",
+        "SYN": "И пришел Ииуй, и ел, и пил, и сказал: отыщите эту проклятую и похороните ее, так как царская дочь она.",
+        "NEO": "Puis il entra et, ayant mangé et bu, il dit : « Allez voir cette maudite et enterrez-la, car elle est fille de roi. »",
+        "NAB": "and, after eating and drinking, he said: \"Attend to that accursed woman and bury her; after all, she was a king's daughter.\"",
+        "VAT_ES": "Jehú entró, comió y bebió, y luego dijo: «Encárguense de esta maldita y sepúltenla, porque al fin de cuentas es hija del rey».",
+        "CEI": "poi entrò, mangiò e bevve; alla fine ordinò: \"Andate a vedere quella maledetta e seppellitela, perché era figlia di re\"."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יֵּלְכ֖וּ לְ/קָבְרָ֑/הּ וְ/לֹא מָ֣צְאוּ בָ֗/הּ כִּ֧י אִם הַ/גֻּלְגֹּ֛לֶת וְ/הָ/רַגְלַ֖יִם וְ/כַפּ֥וֹת הַ/יָּדָֽיִם׃",
+        "LXX": "καὶ ἐπορεύθησαν θάψαι αὐτήν, καὶ οὐχ εὗρον ἐν αὐτῇ ἄλλο τι ἢ τὸ κρανίον καὶ οἱ πόδες καὶ τὰ ἴχνη τῶν χειρῶν.",
+        "VUL": "Cumque issent ut sepelirent eam, non invenerunt nisi calvariam, et pedes, et summas manus.",
+        "SYN": "И пошли хоронить ее, и не нашли от нее ничего, кроме черепа, и ног, и кистей рук.",
+        "NEO": "Ils allèrent pour l’enterrer, mais ils ne trouvèrent d’elle que le crâne, les pieds et les paumes de ses mains.",
+        "NAB": "But when they went to bury her, they found nothing of her but the skull, the feet, and the hands.",
+        "VAT_ES": "Pero cuando fueron a sepultarla, no encontraron más que el cráneo, los pies y las manos.",
+        "CEI": "Andati per seppellirla, non trovarono altro che il cranio, i piedi e le palme delle mani."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יָּשֻׁבוּ֮ וַ/יַּגִּ֣ידוּ ל/וֹ֒ וַ/יֹּ֨אמֶר֙ דְּבַר יְהוָ֣ה ה֔וּא אֲשֶׁ֣ר דִּבֶּ֗ר בְּ/יַד עַבְדּ֛/וֹ אֵלִיָּ֥הוּ הַ/תִּשְׁבִּ֖י לֵ/אמֹ֑ר בְּ/חֵ֣לֶק יִזְרְעֶ֔אל יֹאכְל֥וּ הַ/כְּלָבִ֖ים אֶת בְּשַׂ֥ר אִיזָֽבֶל׃",
+        "LXX": "καὶ ἐπέστρεψαν καὶ ἀνήγγειλαν αὐτῷ, καὶ εἶπεν Λόγος Κυρίου ὃν ἐλάλησεν ἐν χειρὶ Ἠλειοὺ τοῦ Θεσβείτου λέγων Ἐν τῇ μερίδι Ἰσραὴλ καταφάγονται οἱ κύνες τὰς σάρκας Ἰεζάβελ.",
+        "VUL": "Reversique nuntiaverunt ei. Et ait Jehu : Sermo Domini est, quem locutus est per servum suum Eliam Thesbiten, dicens : In agro Jezrahel comedent canes carnes Jezabel,",
+        "SYN": "И возвратились, и донесли ему. И сказал он: таково было слово Господа, которое Он изрек чрез раба Своего Илию Фесвитянина, сказав: на поле Изреельском съедят псы тело Иезавели,",
+        "NEO": "Ils retournèrent l’annoncer à Jéhu, qui dit : « Telle est la parole de \\+w Yahweh|strong=\"H3068\"\\+w**, qu’il avait prononcée par son serviteur Elie le Thesbite, en disant : Dans le champ de Jezrahel, les chiens mangeront la chair de Jézabel ;",
+        "NAB": "They returned to Jehu, and when they told him, he said, \"This is the sentence which the LORD pronounced through his servant Elijah the Tishbite: 'In the confines of Jezreel dogs shall eat the flesh of Jezebel.",
+        "VAT_ES": "Volvieron a comunicárselo a Jehú, y él dijo: «Así se cumple la palabra que el Señor pronunció por medio de Elías, el tisbita. En la parcela de Izreel;",
+        "CEI": "Tornati, riferirono il fatto a Ieu, che disse: \"Si è avverata così la parola che il Signore aveva detta per mezzo del suo servo Elia il Tisbita: Nel campo di Izreèl i cani divoreranno la carne di Gezabele."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "ו/הית וְֽ/הָיְתָ֞ה נִבְלַ֣ת אִיזֶ֗בֶל כְּ/דֹ֛מֶן עַל פְּנֵ֥י הַ/שָּׂדֶ֖ה בְּ/חֵ֣לֶק יִזְרְעֶ֑אל אֲשֶׁ֥ר לֹֽא יֹאמְר֖וּ זֹ֥את אִיזָֽבֶל׃",
+        "LXX": "καὶ ἔσται τὸ θνησιμαῖον Ἰεζάβελ ὡς κοπρία ἐπὶ προσώπου τοῦ ἀγροῦ ἐν τῇ μερίδι Ἰσραήλ, ὥστε μὴ εἰπεῖν αὐτούς Ἰεζάβελ.",
+        "VUL": "et erunt carnes Jezabel sicut stercus super faciem terræ in agro Jezrahel, ita ut prætereuntes dicant : Hæccine est illa Jezabel ?",
+        "SYN": "и будет труп Иезавели на участке Изреельском, как навоз на поле, так что никто не скажет: это Иезавель.",
+        "NEO": "et le cadavre de Jézabel sera comme du fumier sur la surface du champ, dans le champ de Jezrahel, de sorte qu’on ne pourra pas dire : c’est Jézabel. »",
+        "NAB": "The corpse of Jezebel shall be like dung in the field in the confines of Jezreel, so that no one can say: This was Jezebel.'\"",
+        "VAT_ES": "y el cadáver de Jezabel será como estiércol sobre los campos, de manera que no se podrá decir: Es Jezabel».",
+        "CEI": "E il cadavere di Gezabele nella campagna sarà come letame, perché non si possa dire: Questa è Gezabele\"."
+      }
+    }
+  }
+}

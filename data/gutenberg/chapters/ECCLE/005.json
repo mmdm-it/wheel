@@ -1,0 +1,366 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLE_005",
+  "book_key": "ECCLE",
+  "sequence": 5,
+  "chapter_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אַל תְּבַהֵ֨ל עַל פִּ֜י/ךָ וְ/לִבְּ/ךָ֧ אַל יְמַהֵ֛ר לְ/הוֹצִ֥יא דָבָ֖ר לִ/פְנֵ֣י הָ/אֱלֹהִ֑ים כִּ֣י הָ/אֱלֹהִ֤ים בַּ/שָּׁמַ֨יִם֙ וְ/אַתָּ֣ה עַל הָ/אָ֔רֶץ עַֽל כֵּ֛ן יִהְי֥וּ דְבָרֶ֖י/ךָ מְעַטִּֽים׃",
+        "LXX": "μὴ σπεῦδε ἐπὶ στόματί σου, καὶ καρδία σου μὴ ταχυνάτω τοῦ ἐξενέγκαι λόγον πρὸ προσώπου τοῦ θεοῦ· ὅτι ὁ θεὸς ἐν τῷ οὐρανῷ ἄνω, καὶ σὺ ἐπὶ τῆς γῆς· διὰ τοῦτο ἔστωσαν οἱ λόγοι σου ὀλίγοι.",
+        "VUL": "[Ne temere quid loquaris,/ neque cor tuum sit velox ad proferendum sermonem coram Deo./ Deus enim in cælo, et tu super terram ;/ idcirco sint pauci sermones tui./",
+        "SYN": "Не торопись языком твоим, и сердце твое да не спешит произнести слово пред Богом; потому что Бог на небе, а ты на земле; поэтому слова твои да будут немноги.",
+        "NEO": "Ne sois pas pressé d’ouvrir la bouche, et que ton cœur ne se hâte pas d’exprimer une parole devant Dieu ; car Dieu est au ciel, et toi sur la terre : que tes paroles soient donc peu nombreuses !",
+        "NAB": "Be not hasty in your utterance and let not your heart be quick to make a promise in God's presence. God is in heaven and you are on earth; therefore let your words be few.",
+        "VAT_ES": "No te apures a abrir la boca y que tu corazón no se apresure a proferir una palabra delante de Dios. Porque Dios está en el cielo, y tú, sobre la tierra: sé parco en tus palabras,",
+        "CEI": "Non essere precipitoso con la bocca e il tuo cuore non si affretti a proferir parola davanti a Dio, perché Dio è in cielo e tu sei sulla terra; perciò le tue parole siano parche, poiché"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כִּ֛י בָּ֥א הַ/חֲל֖וֹם בְּ/רֹ֣ב עִנְיָ֑ן וְ/ק֥וֹל כְּסִ֖יל בְּ/רֹ֥ב דְּבָרִֽים׃",
+        "LXX": "ὅτι παραγίνεται ἐνύπνιον ἐν πλήθει πειρασμοῦ, καὶ φωνὴ ἄφρονος ἐν πλήθει λόγων.",
+        "VUL": "Multas curas sequuntur somnia,/ et in multis sermonibus invenietur stultitia./",
+        "SYN": "Ибо, как сновидения бывают при множестве забот, так голос глупого познается при множестве слов.",
+        "NEO": "Car de la multitude des occupations naissent les songes, et de la multitude des paroles, des propos d’insensé.",
+        "NAB": "For nightmares come with many cares, and a fool's utterance with many words.",
+        "VAT_ES": "ya que los sueños vienen de las muchas ocupaciones y las palabras necias, de hablar demasiado.",
+        "CEI": "Dalle molte preoccupazioni vengono i sogni e dalle molte chiacchiere il discorso dello stolto."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כַּ/אֲשֶׁר֩ תִּדֹּ֨ר נֶ֜דֶר לֵֽ/אלֹהִ֗ים אַל תְּאַחֵר֙ לְ/שַׁלְּמ֔/וֹ כִּ֛י אֵ֥ין חֵ֖פֶץ בַּ/כְּסִילִ֑ים אֵ֥ת אֲשֶׁר תִּדֹּ֖ר שַׁלֵּֽם׃",
+        "LXX": "καθὼς εὔξῃ εὐχὴν τῷ θεῷ, μὴ χρονίσῃς τοῦ ἀποδοῦναι αὐτήν. οὐκ ἔστιν θέλημα ἐν ἄφροσιν· σὺ οὖν ὅσα ἐὰν εὔξῃ ἀπόδος.",
+        "VUL": "Si quid vovisti Deo,/ ne moreris reddere :/ displicet enim ei infidelis et stulta promissio,/ sed quodcumque voveris redde :/",
+        "SYN": "Когда даешь обет Богу, то не медли исполнить его, потому что Он не благоволит к глупым: что обещал, исполни.",
+        "NEO": "Lorsque tu fais un vœu à Dieu, ne tarde pas à l’accomplir, car il n’y a pas de faveur pour les insensés : ce que tu voues, accomplis-le.",
+        "NAB": "When you make a vow to God, delay not its fulfillment. For God has no pleasure in fools; fulfill what you have vowed.",
+        "VAT_ES": "Si haces un voto a Dios, no tardes en cumplirlo, porque a él no le agradan los necios: el voto que hayas hecho, cúmplelo.",
+        "CEI": "Quando hai fatto un voto a Dio, non indugiare a soddisfarlo, perché egli non ama gli stolti: adempi quello che hai promesso."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "ט֖וֹב אֲשֶׁ֣ר לֹֽא תִדֹּ֑ר מִ/שֶׁ/תִּדּ֖וֹר וְ/לֹ֥א תְשַׁלֵּֽם׃",
+        "LXX": "ἀγαθὸν τὸ μὴ εὔξασθαί σε, ἢ τὸ εὔξασθαί σε καὶ μὴ ἀποδοῦναι.",
+        "VUL": "multoque melius est non vovere,/ quam post votum promissa non reddere./",
+        "SYN": "Лучше тебе не обещать, нежели обещать и не исполнить.",
+        "NEO": "Mieux vaut pour toi ne pas vouer, que vouer et ne pas accomplir.",
+        "NAB": "You had better not make a vow than make it and not fulfill it.",
+        "VAT_ES": "Más te vale no hacer un voto que hacerlo y no cumplirlo.",
+        "CEI": "È meglio non far voti, che farli e poi non mantenerli."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אַל תִּתֵּ֤ן אֶת פִּ֨י/ךָ֙ לַ/חֲטִ֣יא אֶת בְּשָׂרֶ֔/ךָ וְ/אַל תֹּאמַר֙ לִ/פְנֵ֣י הַ/מַּלְאָ֔ךְ כִּ֥י שְׁגָגָ֖ה הִ֑יא לָ֣/מָּה יִקְצֹ֤ף הָֽ/אֱלֹהִים֙ עַל קוֹלֶ֔/ךָ וְ/חִבֵּ֖ל אֶת מַעֲשֵׂ֥ה יָדֶֽי/ךָ׃",
+        "LXX": "μὴ δῷς τὸ στόμα σου τοῦ ἐξαμαρτῆσαι τὴν σάρκα σου, καὶ μὴ εἴπῃς πρὸ προσώπου τοῦ θεοῦ ὅτι Ἄγνοιά ἐστιν, ἵνα μὴ ὀργισθῇ ὁ θεὸς ἐπὶ φωνῇ σου καὶ διαφθείρῃ τὰ ποιήματα χειρῶν σῶν.",
+        "VUL": "Ne dederis os tuum ut peccare facias carnem tuam,/ neque dicas coram angelo :/ Non est providentia :/ ne forte iratus Deus contra sermones tuos/ dissipet cuncta opera manuum tuarum./",
+        "SYN": "Не дозволяй устам твоим вводить в грех плоть твою, и не говори пред Ангелом [Божиим]: \"это - ошибка!\" Для чего тебе _делать,_ чтобы Бог прогневался на слово твое и разрушил дело рук твоих?",
+        "NEO": "Ne permets pas à ta bouche de faire pécher ta chair, et ne dis pas en présence de l’envoyé de Dieu que c’est une inadvertance : pourquoi Dieu s’irriterait-il au sujet de tes paroles, et détruirait-il les œuvre de tes mains ?",
+        "NAB": "Let not your utterances make you guilty, and say not before his representative, \"It was a mistake,\" lest God be angered by such words and destroy the works of your hands.",
+        "VAT_ES": "No dejes que tu boca te haga pecar, y no digas delante del mensajero de Dios: «Ha sido por inadvertencia». &iquest;Por qué Dios tendrá que irritarse contra tu palabra y arruinar la obra de tus manos?",
+        "CEI": "Non permettere alla tua bocca di renderti colpevole e non dire davanti al messaggero che è stata una inavvertenza, perché Dio non abbia ad adirarsi per le tue parole e distrugga il lavoro delle tue mani."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כִּ֣י בְ/רֹ֤ב חֲלֹמוֹת֙ וַ/הֲבָלִ֔ים וּ/דְבָרִ֖ים הַרְבֵּ֑ה כִּ֥י אֶת הָ/אֱלֹהִ֖ים יְרָֽא׃",
+        "LXX": "ὅτι ἐν πλήθει ἐνυπνίων καὶ ματαιοτήτων καὶ λόγων πολλῶν· ὅτι σὺ τὸν θεὸν φοβοῦ.",
+        "VUL": "Ubi multa sunt somnia,/ plurimæ sunt vanitates, et sermones innumeri ;/ tu vero Deum time.]",
+        "SYN": "Ибо во множестве сновидений, как и во множестве слов, - много суеты; но ты бойся Бога.",
+        "NEO": "Car, comme il y a des vanités dans la multitude des occupations, il y en a aussi dans beaucoup de paroles ; c’est pourquoi crains Dieu.",
+        "NAB": "Rather, fear God!",
+        "VAT_ES": "Porque en los muchos sueños abundan las ilusiones y el palabrerío. Tú, simplemente, teme a Dios.",
+        "CEI": "Poiché dai molti sogni provengono molte delusioni e molte parole. Abbi dunque il timor di Dio."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אִם עֹ֣שֶׁק רָ֠שׁ וְ/גֵ֨זֶל מִשְׁפָּ֤ט וָ/צֶ֨דֶק֙ תִּרְאֶ֣ה בַ/מְּדִינָ֔ה אַל תִּתְמַ֖הּ עַל הַ/חֵ֑פֶץ כִּ֣י גָבֹ֜הַּ מֵ/עַ֤ל גָּבֹ֨הַ֙ שֹׁמֵ֔ר וּ/גְבֹהִ֖ים עֲלֵי/הֶֽם׃",
+        "LXX": "Ἐὰν συκοφαντίαν πένητος καὶ ἁρπαγὴν κρίματος καὶ δικαιοσύνης ἴδῃς ἐν χώρᾳ, μὴ θαυμάσῃς ἐπὶ τῷ πράγματι· ὑψηλὸς ἐπάνω ὑψηλοῦ φυλάξαι, καὶ ὑψηλοὶ ἐπ’ αὐτούς·",
+        "VUL": "[Si videris calumnias egenorum, et violenta judicia,/ et subverti justitiam in provincia,/ non mireris super hoc negotio :/ quia excelso excelsior est alius,/ et super hos quoque eminentiores sunt alii ;/",
+        "SYN": "Если ты увидишь в какой области притеснение бедному и нарушение суда и правды, то не удивляйся этому: потому что над высоким наблюдает высший, а над ними еще высший;",
+        "NEO": "Si tu vois dans une province le pauvre opprimé, le droit et la justice violés, ne t’étonne pas de la chose ; car un plus grand veille sur un grand, et de plus grands encore veillent sur eux.",
+        "NAB": "If you see oppression of the poor, and violation of rights and justice in the realm, do not be shocked by the fact, for the high official has another higher than he watching him and above these are others higher still - .",
+        "VAT_ES": "Si ves que en la provincia se oprime al pobre y se violan el derecho y la justicia, no te sorprendas por eso. Porque un grande tiene un superior que lo vigila, y hay otros grandes por encima de ellos.",
+        "CEI": "Se vedi nella provincia il povero oppresso e il diritto e la giustizia calpestati, non ti meravigliare di questo, poiché sopra un'autorità veglia un'altra superiore e sopra di loro un'altra ancora più alta:"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/יִתְר֥וֹן אֶ֖רֶץ בַּ/כֹּ֣ל היא ה֑וּא מֶ֥לֶךְ לְ/שָׂדֶ֖ה נֶעֱבָֽד׃",
+        "LXX": "καὶ περισσεία γῆς· ἐπὶ παντί ἐστι βασιλεὺς τοῦ ἀγροῦ εἰργασμένου.",
+        "VUL": "et insuper universæ terræ rex imperat servienti./",
+        "SYN": "превосходство же страны в целом есть царь, заботящийся о стране.",
+        "NEO": "Un avantage pour le pays à tous égards, c’est un roi qui donne ses soins à l’agriculture.",
+        "NAB": "Yet an advantage for a country in every respect is a king for the arable land.",
+        "VAT_ES": "De todas maneras, lo que más aprovecha a un país es un rey con campos bien cultivados.",
+        "CEI": "l'interesse del paese in ogni cosa è un re che si occupa dei campi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אֹהֵ֥ב כֶּ֨סֶף֙ לֹא יִשְׂבַּ֣ע כֶּ֔סֶף וּ/מִֽי אֹהֵ֥ב בֶּ/הָמ֖וֹן לֹ֣א תְבוּאָ֑ה גַּם זֶ֖ה הָֽבֶל׃",
+        "LXX": "ἀγαπῶν ἀργύριον οὐ πλησθήσεται ἀργυρίου· καὶ τίς ἠγάπησεν ἐν πλήθει αὐτῶν γένημα; καί γε τοῦτο ματαιότης.",
+        "VUL": "Avarus non implebitur pecunia,/ et qui amat divitias fructum non capiet ex eis ;/ et hoc ergo vanitas./",
+        "SYN": "Кто любит серебро, тот не насытится серебром, и кто любит богатство, тому нет пользы от того. И это - суета!",
+        "NEO": "Celui qui aime l’argent n’est pas rassasié par l’argent, et celui qui aime les richesses n’en goûte pas le fruit ; c’est encore là une vanité.",
+        "NAB": "The covetous man is never satisfied with money, and the lover of wealth reaps no fruit from it; so this too is vanity.",
+        "VAT_ES": "El que ama el dinero no se sacia jamás, y al que ama la opulencia no le bastan sus ganancias. También esto es vanidad.",
+        "CEI": "Chi ama il denaro, mai si sazia di denaro e chi ama la ricchezza, non ne trae profitto. Anche questo è vanità."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "בִּ/רְבוֹת֙ הַ/טּוֹבָ֔ה רַבּ֖וּ אוֹכְלֶ֑י/הָ וּ/מַה כִּשְׁרוֹן֙ לִ/בְעָלֶ֔י/הָ כִּ֖י אִם ראית רְא֥וּת עֵינָֽי/ו׃",
+        "LXX": "ἐν πλήθει ἀγαθωσύνης ἐπληθύνθησαν ἔσθοντες αὐτήν· καὶ τί ἀνδρεία τῷ παρ’ αὐτῆς; ὅτι ἀρχὴ τοῦ ὁρᾷν ὀφθαλμὸν αὐτοῦ.",
+        "VUL": "Ubi multæ sunt opes,/ multi et qui comedunt eas./ Et quid prodest possessori,/ nisi quod cernit divitias oculis suis ?/",
+        "SYN": "Умножается имущество, умножаются и потребляющие его; и какое благо для владеющего им: разве только смотреть своими глазами?",
+        "NEO": "Quand les biens se multiplient, ceux qui les mangent se multiplient aussi ; et quel avantage en revient-il à leurs possesseurs, sinon qu’ils les voient de leurs yeux ?",
+        "NAB": "Where there are great riches, there are also many to devour them. Of what use are they to the owner except to feast his eyes upon?",
+        "VAT_ES": "Donde abundan las provisiones son muchos los que las devoran. &iquest;Y qué beneficio reportan a su dueño, fuera de poder mirarlas con sus propios ojos?",
+        "CEI": "Con il crescere dei beni i parassiti aumentano e qual vantaggio ne riceve il padrone, se non di vederli con gli occhi?"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "מְתוּקָה֙ שְׁנַ֣ת הָ/עֹבֵ֔ד אִם מְעַ֥ט וְ/אִם הַרְבֵּ֖ה יֹאכֵ֑ל וְ/הַ/שָּׂבָע֙ לֶֽ/עָשִׁ֔יר אֵינֶ֛/נּוּ מַנִּ֥יחַֽ ל֖/וֹ לִ/ישֽׁוֹן׃",
+        "LXX": "γλυκὺς ὕπνος τοῦ δούλου εἰ ὀλίγον καὶ εἰ πολὺ φάγεται, καὶ τῷ ἐμπλησθέντι τοῦ πλουτῆσαι οὐκ ἔστιν ἀφίων αὐτὸν τοῦ ὑπνῶσαι.",
+        "VUL": "Dulcis est somnus operanti,/ sive parum sive multum comedat ;/ saturitas autem divitis non sinit eum dormire.]",
+        "SYN": "Сладок сон трудящегося, мало ли, много ли он съест; но пресыщение богатого не дает ему уснуть.",
+        "NEO": "Le sommeil du travailleur est doux, qu’il ait peu ou beaucoup à manger ; mais la satiété du riche ne le laisse pas dormir.",
+        "NAB": "Sleep is sweet to the laboring man, whether he eats little or much, but the rich man's abundance allows him no sleep.",
+        "VAT_ES": "Dulce es el sueño del trabajador, sea que coma poco o mucho; al rico, en cambio, el estómago lleno no lo deja dormir.",
+        "CEI": "Dolce è il sonno del lavoratore, poco o molto che mangi; ma la sazietà del ricco non lo lascia dormire."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "יֵ֚שׁ רָעָ֣ה חוֹלָ֔ה רָאִ֖יתִי תַּ֣חַת הַ/שָּׁ֑מֶשׁ עֹ֛שֶׁר שָׁמ֥וּר לִ/בְעָלָ֖י/ו לְ/רָעָתֽ/וֹ׃",
+        "LXX": "ἔστιν ἀρρωστία ἣν ἴδον ὑπὸ τὸν ἥλιον, πλοῦτον φυλασσόμενον τῷ παρ’ αὐτοῦ εἰς κακίαν αὐτῷ,",
+        "VUL": "[Est et alia infirmitas pessima quam vidi sub sole :/ divitiæ conservatæ in malum domini sui./",
+        "SYN": "Есть мучительный недуг, который видел я под солнцем: богатство, сберегаемое владетелем его во вред ему.",
+        "NEO": "Il est un mal grave que j’ai vu sous le soleil : des richesses conservées pour son malheur par celui qui les possède :",
+        "NAB": "This is a grievous evil which I have seen under the sun: riches kept by their owner to his hurt.",
+        "VAT_ES": "Hay un mal muy penoso que yo he visto bajo el sol: es la riqueza guardada por su dueño para su propia desgracia.",
+        "CEI": "Un altro brutto malanno ho visto sotto il sole: ricchezze custodite dal padrone a proprio danno."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/אָבַ֛ד הָ/עֹ֥שֶׁר הַ/ה֖וּא בְּ/עִנְיַ֣ן רָ֑ע וְ/הוֹלִ֣יד בֵּ֔ן וְ/אֵ֥ין בְּ/יָד֖/וֹ מְאֽוּמָה׃",
+        "LXX": "καὶ ἀπολεῖται ὁ πλοῦτος ἐκεῖνος ἐν περισπασμῷ πονηρῷ, καὶ ἐγέννησεν υἱόν, καὶ οὐκ ἔστιν ἐν χειρὶ αὐτοῦ οὐδέν·",
+        "VUL": "Pereunt enim in afflictione pessima :/ generavit filium qui in summa egestate erit./",
+        "SYN": "И гибнет богатство это от несчастных случаев: родил он сына, и ничего нет в руках у него.",
+        "NEO": "Ces richesses se perdent par quelque fâcheux événement, et, s’il a engendré un fils, il ne lui reste rien entre les mains.",
+        "NAB": "Should the riches be lost through some misfortune, he may have a son when he is without means.",
+        "VAT_ES": "Esta riqueza se pierde en un mal negocio, y el hijo que él engendró se queda sin nada.",
+        "CEI": "Se ne vanno in fumo queste ricchezze per un cattivo affare e il figlio che gli è nato non ha nulla nelle mani."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כַּ/אֲשֶׁ֤ר יָצָא֙ מִ/בֶּ֣טֶן אִמּ֔/וֹ עָר֛וֹם יָשׁ֥וּב לָ/לֶ֖כֶת כְּ/שֶׁ/בָּ֑א וּ/מְא֨וּמָה֙ לֹא יִשָּׂ֣א בַ/עֲמָל֔/וֹ שֶׁ/יֹּלֵ֖ךְ בְּ/יָדֽ/וֹ׃",
+        "LXX": "καθὼς ἐξῆλθεν ἀπὸ γαστρὸς μητρὸς αὐτοῦ γυμνός, ἐπιστρέψει τοῦ πορευθῆναι ὡς ἥκει, καὶ οὐδὲν οὐ λήμψεται ἐν μόχθῳ αὐτοῦ, ἵνα πορευθῇ ἐν χειρὶ αὐτοῦ.",
+        "VUL": "Sicut egressus est nudus de utero matris suæ, sic revertetur,/ et nihil auferet secum de labore suo./",
+        "SYN": "Как вышел он нагим из утробы матери своей, таким и отходит, каким пришел, и ничего не возьмет от труда своего, что мог бы он понести в руке своей.",
+        "NEO": "Tel qu’il est sorti du sein de sa mère, il s’en retournera nu, comme il était venu ; et il ne recevra rien pour son travail, qu’il puisse emporter dans sa main :",
+        "NAB": "As he came forth from his mother's womb, so again shall he depart, naked as he came, having nothing from his labor that he can carry in his hand.",
+        "VAT_ES": "El salió desnudo del vientre de su madre, y así volverá, como había venido; de su esfuerzo no saca nada que pueda llevárselo consigo,",
+        "CEI": "Come è uscito nudo dal grembo di sua madre, così se ne andrà di nuovo come era venuto, e dalle sue fatiche non ricaverà nulla da portar con sé."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/גַם זֹה֙ רָעָ֣ה חוֹלָ֔ה כָּ/ל עֻמַּ֥ת שֶׁ/בָּ֖א כֵּ֣ן יֵלֵ֑ךְ וּ/מַה יִּתְר֣וֹן ל֔/וֹ שֶֽׁ/יַּעֲמֹ֖ל לָ/רֽוּחַ׃",
+        "LXX": "καί γε τοῦτο πονηρὰ ἀρρωστία· ὥσπερ γὰρ παρεγένετο, οὕτως καὶ ἀπελεύσεται· καὶ ἡ περισσεία αὐτῷ ᾗ μοχθεῖ εἰς ἄνεμον.",
+        "VUL": "Miserabilis prorsus infirmitas :/ quomodo venit, sic revertetur./ Quid ergo prodest ei quod laboravit in ventum ?/",
+        "SYN": "И это тяжкий недуг: каким пришел он, таким и отходит. Какая же польза ему, что он трудился на ветер?",
+        "NEO": "C’est encore là un grave mal, qu’il s’en aille comme il est venu : et quel avantage lui revient-il d’avoir travaillé pour le vent ?",
+        "NAB": "This too is a grievous evil, that he goes just as he came. What then does it profit him to toil for wind?",
+        "VAT_ES": "Este es ciertamente un mal muy penoso: se fue exactamente como había venido, &iquest;y de qué le aprovechó esforzarse por nada?",
+        "CEI": "Anche questo è un brutto malanno: che se ne vada proprio come è venuto. Qual vantaggio ricava dall'aver gettato le sue fatiche al vento?"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "גַּ֥ם כָּל יָמָ֖י/ו בַּ/חֹ֣שֶׁךְ יֹאכֵ֑ל וְ/כָעַ֥ס הַרְבֵּ֖ה וְ/חָלְי֥/וֹ וָ/קָֽצֶף׃",
+        "LXX": "καί γε πᾶσαι αἱ ἡμέραι αὐτοῦ ἐν σκότει καὶ ἐν πένθει καὶ θυμῷ πολλῷ καὶ ἀρρωστίᾳ καὶ χόλῳ.",
+        "VUL": "cunctis diebus vitæ suæ comedit in tenebris,/ et in curis multis, et in ærumna atque tristitia.]",
+        "SYN": "А он во все дни свои ел впотьмах, в большом раздражении, в огорчении и досаде.",
+        "NEO": "De plus, toute sa vie il mange dans les ténèbres ; il a beaucoup de chagrin, de souffrance et d’irritation.",
+        "NAB": "All the days of his life are passed in gloom and sorrow, under great vexation, sickness and wrath.",
+        "VAT_ES": "Además, todos sus días comió oscuramente, con mucho dolor, malestar e irritación.",
+        "CEI": "Inoltre avrà passato tutti i suoi giorni nell'oscurità e nel pianto fra molti guai, malanni e crucci."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "הִנֵּ֞ה אֲשֶׁר רָאִ֣יתִי אָ֗נִי ט֣וֹב אֲשֶׁר יָפֶ֣ה לֶֽ/אֶכוֹל וְ֠/לִ/שְׁתּוֹת וְ/לִ/רְא֨וֹת טוֹבָ֜ה בְּ/כָל עֲמָל֣/וֹ שֶׁ/יַּעֲמֹ֣ל תַּֽחַת הַ/שֶּׁ֗מֶשׁ מִסְפַּ֧ר יְמֵי חי/ו חַיָּ֛י/ו אֲשֶׁר נָֽתַן ל֥/וֹ הָ/אֱלֹהִ֖ים כִּי ה֥וּא חֶלְקֽ/וֹ׃",
+        "LXX": "Ἰδοὺ ἴδον ἐγὼ ἀγαθὸν ὅ ἐστιν καλόν, τοῦ φαγεῖν καὶ τοῦ πιεῖν καὶ τοῦ ἰδεῖν ἀγαθωσύνην ἐν παντὶ μόχθῳ αὐτοῦ ᾧ ἐὰν μοχθῇ ὑπὸ τὸν ἥλιον ἀριθμὸν ἡμερῶν ζωῆς αὐτοῦ ὧν ἔδωκεν αὐτῷ ὁ θεός· ὅτι αὐτὸ μερὶς αὐτοῦ.",
+        "VUL": "[Hoc itaque visum est mihi bonum,/ ut comedat quis et bibat,/ et fruatur lætitia ex labore suo/ quo laboravit ipse sub sole,/ numero dierum vitæ suæ/ quos dedit ei Deus ;/ et hæc est pars illius./",
+        "SYN": "Вот еще, что я нашел доброго и приятного: есть и пить и наслаждаться добром во всех трудах своих, какими кто трудится под солнцем во все дни жизни своей, которые дал ему Бог; потому что это его доля.",
+        "NEO": "Voici donc ce que j’ai vu : c’est qu’il est bon et séant pour l’homme de manger et de boire, et de jouir du bien-être dans tout son travail, auquel il se livre sous le soleil, durant les jours de vie que Dieu lui donne ; car c’est là sa part.",
+        "NAB": "Here is what I recognize as good: it is well for a man to eat and drink and enjoy all the fruits of his labor under the sun during the limited days of the life which God gives him; for this is his lot.",
+        "VAT_ES": "Yo he comprobado esto: lo más conveniente es comer y beber y encontrar la felicidad en el esfuerzo que uno realiza bajo el sol, durante los contados días de vida que Dios le concede a cada uno: porque esta es la parte reservada a los hombres.",
+        "CEI": "Ecco quello che ho concluso: è meglio mangiare e bere e godere dei beni in ogni fatica durata sotto il sole, nei pochi giorni di vita che Dio gli dà: è questa la sua sorte."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "גַּ֣ם כָּֽל הָ/אָדָ֡ם אֲשֶׁ֣ר נָֽתַן ל֣/וֹ הָ/אֱלֹהִים֩ עֹ֨שֶׁר וּ/נְכָסִ֜ים וְ/הִשְׁלִיט֨/וֹ לֶ/אֱכֹ֤ל מִמֶּ֨/נּוּ֙ וְ/לָ/שֵׂ֣את אֶת חֶלְק֔/וֹ וְ/לִ/שְׂמֹ֖חַ בַּ/עֲמָל֑/וֹ זֹ֕ה מַתַּ֥ת אֱלֹהִ֖ים הִֽיא׃",
+        "LXX": "καί γε πᾶς ἄνθρωπος ᾧ ἔδωκεν αὐτῷ ὁ θεὸς πλοῦτον καὶ ὑπάρχοντα, καὶ ἐξουσίασεν αὐτῶν, φαγεῖν ἀπ’ αὐτοῦ καὶ λαβεῖν τὸ μέρος αὐτοῦ καὶ τοῦ εὐφρανθῆναι ἐν μόχθῳ αὐτοῦ, τοῦτο δόμα θεοῦ ἐστίν.",
+        "VUL": "Et omni homini cui dedit Deus divitias atque substantiam,/ potestatemque ei tribuit ut comedat ex eis,/ et fruatur parte sua, et lætetur de labore suo :/ hoc est donum Dei./",
+        "SYN": "И если какому человеку Бог дал богатство и имущество, и дал ему власть пользоваться от них и брать свою долю и наслаждаться от трудов своих, то это дар Божий.",
+        "NEO": "De plus, pour tout homme à qui Dieu donne richesses et biens, avec pouvoir d’en manger, d’en prendre sa part et de se réjouir de son travail, c’est là un don de Dieu.",
+        "NAB": "Any man to whom God gives riches and property, and grants power to partake of them, so that he receives his lot and finds joy in the fruits of his toil, has a gift from God.",
+        "VAT_ES": "Además, si Dios ha dado a un hombre riquezas y posesiones, y le permite disfrutar de ellas, tomar la parte que le toca y alegrarse de su trabajo, &iexcl;eso es un don de Dios!",
+        "CEI": "Ogni uomo, a cui Dio concede ricchezze e beni, ha anche facoltà di goderli e prendersene la sua parte e di godere delle sue fatiche: anche questo è dono di Dio."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כִּ֚י לֹ֣א הַרְבֵּ֔ה יִזְכֹּ֖ר אֶת יְמֵ֣י חַיָּ֑י/ו כִּ֧י הָ/אֱלֹהִ֛ים מַעֲנֶ֖ה בְּ/שִׂמְחַ֥ת לִבּֽ/וֹ׃",
+        "LXX": "ὅτι οὐκ ἄλλα μνησθήσεται τὰς ἡμέρας τῆς ζωῆς αὐτοῦ· ὅτι ὁ θεὸς περισπᾷ αὐτὸν ἐν εὐφροσύνῃ καρδίας αὐτοῦ.",
+        "VUL": "Non enim satis recordabitur dierum vitæ suæ,/ eo quod Deus occupet deliciis cor ejus.]",
+        "SYN": "Недолго будут у него в памяти дни жизни его; потому Бог и вознаграждает его радостью сердца его.",
+        "NEO": "Car alors il ne songe guère aux jours de sa vie, parce que Dieu répand la joie dans son cœur.",
+        "NAB": "For he will hardly dwell on the shortness of his life, because God lets him busy himself with the joy of his heart.",
+        "VAT_ES": "No, él no piensa demasiado en la brevedad de la vida, cuando Dios lo tiene ocupado con pensamientos alegres.",
+        "CEI": "Egli non penserà infatti molto ai giorni della sua vita, poiché Dio lo tiene occupato con la gioia del suo cuore."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {}
+    }
+  }
+}

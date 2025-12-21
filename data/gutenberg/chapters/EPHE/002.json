@@ -1,0 +1,384 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EPHE_002",
+  "book_key": "EPHE",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Καὶ ὑμᾶς ὄντας νεκροὺς τοῖς παραπτώμασιν καὶ ταῖς ἁμαρτίαις,",
+        "VUL": "Et vos, cum essetis mortui delictis et peccatis vestris,",
+        "SYN": "И вас, мертвых по преступлениям и грехам вашим,",
+        "NEO": "Et vous, vous étiez morts par vos offenses et vos péchés,",
+        "NAB": "You were dead in your transgressions and sins",
+        "VAT_ES": "Por eso yo, Pablo, estoy preso por Cristo Jesús, a causa de ustedes, los de origen pagano.",
+        "CEI": "Per il resto, fratelli, pregate per noi, perché la parola del Signore si diffonda e sia glorificata come lo è anche tra voi"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "ἐν αἷς ποτὲ περιεπατήσατε κατὰ τὸν αἰῶνα τοῦ κόσμου τούτου, κατὰ τὸν ἄρχοντα τῆς ἐξουσίας τοῦ ἀέρος, τοῦ πνεύματος τοῦ νῦν ἐνεργοῦντος ἐν τοῖς υἱοῖς τῆς ἀπειθείας·",
+        "VUL": "in quibus aliquando ambulastis secundum sæculum mundi hujus, secundum principem potestatis aëris hujus, spiritus, qui nunc operatur in filios diffidentiæ,",
+        "SYN": "в которых вы некогда жили, по обычаю мира сего, по _воле_ князя, господствующего в воздухе, духа, действующего ныне в сынах противления,",
+        "NEO": "dans lesquels vous marchiez autrefois selon le train de ce monde, selon le prince de la puissance de l’air, de l’esprit qui agit maintenant dans les fils de la désobéissance.",
+        "NAB": "in which you once lived following the age of this world, following the ruler of the power of the air, the spirit that is now at work in the disobedient.",
+        "VAT_ES": "Porque seguramente habrán oído hablar de la gracia de Dios, que me ha sido dispensada en beneficio de ustedes.",
+        "CEI": "e veniamo liberati dagli uomini perversi e malvagi. Non di tutti infatti è la fede."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "ἐν οἷς καὶ ἡμεῖς πάντες ἀνεστράφημέν ποτε ἐν ταῖς ἐπιθυμίαις τῆς σαρκὸς ἡμῶν, ποιοῦντες τὰ θελήματα τῆς σαρκὸς καὶ τῶν διανοιῶν, καὶ ἦμεν τέκνα φύσει ὀργῆς, ὡς καὶ οἱ λοιποί·",
+        "VUL": "in quibus et nos omnes aliquando conversati sumus in desideriis carnis nostræ, facientes voluntatem carnis et cogitationum, et eramus natura filii iræ, sicut et ceteri :",
+        "SYN": "между которыми и мы все жили некогда по нашим плотским похотям, исполняя желания плоти и помыслов, и были по природе чадами гнева, как и прочие,",
+        "NEO": "Nous tous aussi, nous vivions autrefois comme eux selon les convoitises de notre chair, accomplissant les volontés de la chair et de nos pensées, et nous étions par nature enfants de colère,+ 2:3 II, 3. Enfants de colère, dignes de la colère de Dieu : hébraïsme. — \\+qt Par nature\\+qt* ou \\+qt naturellement\\+qt* c.-à-d. à part les privilèges d’Israël.* comme les autres.",
+        "NAB": "All of us once lived among them in the desires of our flesh, following the wishes of the flesh and the impulses, and we were by nature children of wrath, like the rest.",
+        "VAT_ES": "Fue por medio de una revelación como se me dio a conocer este misterio, tal como acabo de exponérselo en pocas palabras.",
+        "CEI": "Ma il Signore è fedele; egli vi confermerà e vi custodirà dal maligno."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "ὁ δὲ θεός, πλούσιος ὢν ἐν ἐλέει, διὰ τὴν πολλὴν ἀγάπην αὐτοῦ ἣν ἠγάπησεν ἡμᾶς,",
+        "VUL": "Deus autem, qui dives est in misericordia, propter nimiam caritatem suam, qua dilexit nos,",
+        "SYN": "Бог, богатый милостью, по Своей великой любви, которою возлюбил нас,",
+        "NEO": "Mais Dieu, qui est riche en miséricorde, à cause du grand amour dont il nous a aimés,",
+        "NAB": "But God, who is rich in mercy, because of the great love he had for us,",
+        "VAT_ES": "Al leerlas, se darán cuenta de la comprensión que tengo del misterio de Cristo,",
+        "CEI": "E riguardo a voi, abbiamo questa fiducia nel Signore, che quanto vi ordiniamo già lo facciate e continuiate a farlo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "καὶ ὄντας ἡμᾶς νεκροὺς τοῖς παραπτώμασιν συνεζῳοποίησεν τῷ χριστῷ- χάριτί ἐστε σεσῳσμένοι-",
+        "VUL": "et cum essemus mortui peccatis, convivificavit nos in Christo (cujus gratia estis salvati),",
+        "SYN": "и нас, мертвых по преступлениям, оживотворил со Христом, -- благодатью вы спасены, --",
+        "NEO": "et alors que nous étions morts par nos offenses, nous a rendus vivants avec le Christ (c’est par grâce que vous êtes sauvés) ;",
+        "NAB": "even when we were dead in our transgressions, brought us to life with Christ (by grace you have been saved),",
+        "VAT_ES": "que no fue manifestado a las generaciones pasadas, pero que ahora ha sido revelado por medio del Espíritu a sus santos apóstoles y profetas.",
+        "CEI": "Il Signore diriga i vostri cuori nell'amore di Dio e nella pazienza di Cristo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "καὶ συνήγειρεν, καὶ συνεκάθισεν ἐν τοῖς ἐπουρανίοις ἐν χριστῷ Ἰησοῦ·",
+        "VUL": "et conresuscitavit, et consedere fecit in cælestibus in Christo Jesu :",
+        "SYN": "и воскресил с Ним, и посадил на небесах во Христе Иисусе,",
+        "NEO": "il nous a ressuscités ensemble et nous a fait asseoir ensemble dans les cieux en Jésus-Christ,",
+        "NAB": "raised us up with him, and seated us with him in the heavens in Christ Jesus,",
+        "VAT_ES": "Este misterio consiste en que también los paganos participan de una misma herencia, son miembros de un mismo Cuerpo y beneficiarios de la misma promesa en Cristo Jesús, por medio del Evangelio.",
+        "CEI": "Vi ordiniamo pertanto, fratelli, nel nome del Signore nostro Gesù Cristo, di tenervi lontani da ogni fratello che si comporta in maniera indisciplinata e non secondo la tradizione che ha ricevuto da noi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "ἵνα ἐνδείξηται ἐν τοῖς αἰῶσιν τοῖς ἐπερχομένοις τὸν ὑπερβάλλοντα πλοῦτον τῆς χάριτος αὐτοῦ ἐν χρηστότητι ἐφ’ ἡμᾶς ἐν χριστῷ Ἰησοῦ·",
+        "VUL": "ut ostenderet in sæculis supervenientibus abundantes divitias gratiæ suæ, in bonitate super nos in Christo Jesu.",
+        "SYN": "дабы явить в грядущих веках преизобильное богатство благодати Своей в благости к нам во Христе Иисусе.",
+        "NEO": "afin de montrer dans les siècles à venir l’infinie richesse de sa grâce par sa bonté envers nous en Jésus-Christ.",
+        "NAB": "that in the ages to come he might show the immeasurable riches of his grace in his kindness to us in Christ Jesus.",
+        "VAT_ES": "De este Evangelio, yo fui constituido ministro por el don de la gracia que recibí de Dios, en virtud de la eficacia de su poder.",
+        "CEI": "Sapete infatti come dovete imitarci: poiché noi non abbiamo vissuto oziosamente fra voi,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "τῇ γὰρ χάριτί ἐστε σεσῳσμένοι διὰ τῆς πίστεως, καὶ τοῦτο οὐκ ἐξ ὑμῶν· θεοῦ τὸ δῶρον·",
+        "VUL": "Gratia enim estis salvati per fidem, et hoc non ex vobis : Dei enim donum est :",
+        "SYN": "Ибо благодатью вы спасены через веру, и сие не от вас, Божий дар:",
+        "NEO": "Car c’est par la grâce que vous êtes sauvés, par le moyen de la foi ; et cela ne vient pas de vous, c’est le don de Dieu ;",
+        "NAB": "For by grace you have been saved through faith, and this is not from you; it is the gift of God;",
+        "VAT_ES": "Yo, el menor de todos los santos, he recibido la gracia de anunciar a los paganos la insondable riqueza de Cristo,",
+        "CEI": "né abbiamo mangiato gratuitamente il pane di alcuno, ma abbiamo lavorato con fatica e sforzo notte e giorno per non essere di peso ad alcuno di voi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "οὐκ ἐξ ἔργων, ἵνα μή τις καυχήσηται.",
+        "VUL": "non ex operibus, ut ne quis glorietur.",
+        "SYN": "не от дел, чтобы никто не хвалился.",
+        "NEO": "ce n’est pas par les œuvres, afin que nul ne se glorifie.",
+        "NAB": "it is not from works, so no one may boast.",
+        "VAT_ES": "y poner de manifiesto la dispensación del misterio que estaba oculto desde siempre en Dios, el creador de todas las cosas,",
+        "CEI": "Non che non ne avessimo diritto, ma per darvi noi stessi come esempio da imitare."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Αὐτοῦ γάρ ἐσμεν ποίημα, κτισθέντες ἐν χριστῷ Ἰησοῦ ἐπὶ ἔργοις ἀγαθοῖς, οἷς προητοίμασεν ὁ θεός, ἵνα ἐν αὐτοῖς περιπατήσωμεν.",
+        "VUL": "Ipsius enim sumus factura, creati in Christo Jesu in operibus bonis, quæ præparavit Deus ut in illis ambulemus.",
+        "SYN": "Ибо мы -- Его творение, созданы во Христе Иисусе на добрые дела, которые Бог предназначил нам исполнять.",
+        "NEO": "Car nous sommes son ouvrage,+ 2:10 10. Son ouvrage: l’homme justifié est dans le sens propre du mot une nouvelle créature (II Cor. v, 17 ; Gal. vi, 15).* ayant été créés en Jésus-Christ pour faire* de bonnes œuvres, que Dieu a préparées d’avance, afin que nous les pratiquions.",
+        "NAB": "For we are his handiwork, created in Christ Jesus for the good works that God has prepared in advance, that we should live in them.",
+        "VAT_ES": "para que los Principados y las Potestades celestiales conozcan la infinita variedad de la sabiduría de Dios por medio de la Iglesia.",
+        "CEI": "E infatti quando eravamo presso di voi, vi demmo questa regola: chi non vuol lavorare neppure mangi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "¶Διὸ μνημονεύετε ὅτι ὑμεῖς ποτὲ τὰ ἔθνη ἐν σαρκί, οἱ λεγόμενοι ἀκροβυστία ὑπὸ τῆς λεγομένης περιτομῆς ἐν σαρκὶ χειροποιήτου,",
+        "VUL": "Propter quod memores estote quod aliquando vos gentes in carne, qui dicimini præputium ab ea quæ dicitur circumcisio in carne, manu facta :",
+        "SYN": "Итак помните, что вы, некогда язычники по плоти, которых называли необрезанными так называемые обрезанные плотским _обрезанием,_ совершаемым руками,",
+        "NEO": "C’est pourquoi souvenez-vous qu’autrefois, vous païens dans la chair, traités d’incirconcis par ceux qu’on appelle circoncis, et* qui le sont en la chair par la main de l’homme,+ 2:11 11. .*",
+        "NAB": "Therefore, remember that at one time you, Gentiles in the flesh, called the uncircumcision by those called the circumcision, which is done in the flesh by human hands,",
+        "VAT_ES": "Este es el designio que Dios concibió desde toda la eternidad en Cristo Jesús, nuestro Señor,",
+        "CEI": "Sentiamo infatti che alcuni fra di voi vivono disordinatamente, senza far nulla e in continua agitazione."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "ὅτι ἦτε ἐν τῷ καιρῷ ἐκείνῳ χωρὶς χριστοῦ, ἀπηλλοτριωμένοι τῆς πολιτείας τοῦ Ἰσραήλ, καὶ ξένοι τῶν διαθηκῶν τῆς ἐπαγγελίας, ἐλπίδα μὴ ἔχοντες, καὶ ἄθεοι ἐν τῷ κόσμῳ.",
+        "VUL": "quia eratis illo in tempore sine Christo, alienati a conversatione Israël, et hospites testamentorum, promissionis spem non habentes, et sine Deo in hoc mundo.",
+        "SYN": "что вы были в то время без Христа, отчуждены от общества Израильского, чужды заветов обетования, не имели надежды и были безбожники в мире.",
+        "NEO": "souvenez-vous* que vous étiez en ce temps-là sans Christ, en dehors de la société d’Israël, étrangers aux alliances de la promesse, sans espérance et sans Dieu dans le monde.",
+        "NAB": "were at that time without Christ, alienated from the community of Israel and strangers to the covenants of promise, without hope and without God in the world.",
+        "VAT_ES": "por quien nos atrevemos a acercarnos a Dios con toda confianza, mediante la fe en él.",
+        "CEI": "A questi tali ordiniamo, esortandoli nel Signore Gesù Cristo, di mangiare il proprio pane lavorando in pace."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Νυνὶ δὲ ἐν χριστῷ Ἰησοῦ ὑμεῖς οἱ ποτὲ ὄντες μακρὰν ἐγγὺς ἐγενήθητε ἐν τῷ αἵματι τοῦ χριστοῦ.",
+        "VUL": "Nunc autem in Christo Jesu, vos, qui aliquando eratis longe, facti estis prope in sanguine Christi.",
+        "SYN": "А теперь во Христе Иисусе вы, бывшие некогда далеко, стали близки Кровию Христовою.",
+        "NEO": "Mais maintenant, en Jésus-Christ, vous qui étiez jadis éloignés, vous êtes rapprochés par le sang du Christ.",
+        "NAB": "But now in Christ Jesus you who once were far off have become near by the blood of Christ.",
+        "VAT_ES": "Les pido, por lo tanto, que no se desanimen a causa de las tribulaciones que padezco por ustedes: &iexcl;ellas son su gloria!",
+        "CEI": "Voi, fratelli, non lasciatevi scoraggiare nel fare il bene."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Αὐτὸς γάρ ἐστιν ἡ εἰρήνη ἡμῶν, ὁ ποιήσας τὰ ἀμφότερα ἕν, καὶ τὸ μεσότοιχον τοῦ φραγμοῦ λύσας,",
+        "VUL": "Ipse enim est pax nostra, qui fecit utraque unum, et medium parietem maceriæ solvens, inimicitias in carne sua,",
+        "SYN": "Ибо Он есть мир наш, соделавший из обоих одно и разрушивший стоявшую посреди преграду,",
+        "NEO": "Car c’est lui qui est notre paix, lui qui des deux peuples n’en a fait qu’un : il a renversé le mur de séparation, l’inimitié,",
+        "NAB": "For he is our peace, he who made both one and broke down the dividing wall of enmity, through his flesh,",
+        "VAT_ES": "Por eso doblo mis rodillas delante del Padre,",
+        "CEI": "Se qualcuno non obbedisce a quanto diciamo per lettera, prendete nota di lui e interrompete i rapporti, perché si vergogni;"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "τὴν ἔχθραν ἐν τῇ σαρκὶ αὐτοῦ, τὸν νόμον τῶν ἐντολῶν ἐν δόγμασιν, καταργήσας· ἵνα τοὺς δύο κτίσῃ ἐν ἑαυτῷ εἰς ἕνα καινὸν ἄνθρωπον, ποιῶν εἰρήνην,",
+        "VUL": "legem mandatorum decretis evacuans, ut duos condat in semetipso in unum novum hominem, faciens pacem :",
+        "SYN": "упразднив вражду Плотию Своею, а закон заповедей учением, дабы из двух создать в Себе Самом одного нового человека, устрояя мир,",
+        "NEO": "ayant abrogé par l’immolation de sa* chair la loi des ordonnances avec ses rigoureuses* prescriptions, afin de fondre en lui-même les deux dans un seul homme nouveau, en faisant la paix,",
+        "NAB": "abolishing the law with its commandments and legal claims, that he might create in himself one new person in place of the two, thus establishing peace,",
+        "VAT_ES": "de quien procede toda paternidad en el cielo y en la tierra.",
+        "CEI": "non trattatelo però come un nemico, ma ammonitelo come un fratello."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "καὶ ἀποκαταλλάξῃ τοὺς ἀμφοτέρους ἐν ἑνὶ σώματι τῷ θεῷ διὰ τοῦ σταυροῦ, ἀποκτείνας τὴν ἔχθραν ἐν αὐτῷ·",
+        "VUL": "et reconciliet ambos in uno corpore, Deo per crucem, interficiens inimicitias in semetipso.",
+        "SYN": "и в одном теле примирить обоих с Богом посредством креста, убив вражду на нем.",
+        "NEO": "et de les réconcilier, l’un et l’autre unis* en un seul corps avec Dieu par la croix, en détruisant par elle+ 2:16 16. Par elle. Vulg. \\+qt en lui-même\\+qt*, en sa chair attachée à la croix.* l’inimitié.",
+        "NAB": "and might reconcile both with God, in one body, through the cross, putting that enmity to death by it.",
+        "VAT_ES": "Que él se digne fortificarlos por medio de su Espíritu, con forme a la riqueza de su gloria, para que crezca en ustedes el hombre interior.",
+        "CEI": "Il Signore della pace vi dia egli stesso la pace sempre e in ogni modo. Il Signore sia con tutti voi."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "καὶ ἐλθὼν εὐηγγελίσατο εἰρήνην ὑμῖν τοῖς μακρὰν καὶ τοῖς ἐγγύς·",
+        "VUL": "Et veniens evangelizavit pacem vobis, qui longe fuistis, et pacem iis, qui prope.",
+        "SYN": "И, придя, благовествовал мир вам, дальним и близким,",
+        "NEO": "Et il est venu annoncer la paix à vous qui étiez loin, et la paix à ceux qui étaient proches ;",
+        "NAB": "He came and preached peace to you who were far off and peace to those who were near,",
+        "VAT_ES": "Que Cristo habite en sus corazones por la fe, y sean arraigados y edificados en el amor.",
+        "CEI": "Questo saluto è di mia mano, di Paolo; ciò serve come segno di autenticazione per ogni lettera; io scrivo così."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "ὅτι δι’ αὐτοῦ ἔχομεν τὴν προσαγωγὴν οἱ ἀμφότεροι ἐν ἑνὶ πνεύματι πρὸς τὸν πατέρα.",
+        "VUL": "Quoniam per ipsum habemus accessum ambo in uno Spiritu ad Patrem.",
+        "SYN": "потому что через Него и те и другие имеем доступ к Отцу, в одном Духе.",
+        "NEO": "car par lui nous avons accès les uns et les autres auprès du Père, dans un seul et même Esprit.",
+        "NAB": "for through him we both have access in one Spirit to the Father.",
+        "VAT_ES": "Así podrán comprender, con todos los santos, cuál es la anchura y la longitud, la altura y la profundidad,",
+        "CEI": "La grazia del Signore nostro Gesù Cristo sia con tutti voi."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ἄρα οὖν οὐκέτι ἐστὲ ξένοι καὶ πάροικοι, ἀλλὰ συμπολῖται τῶν ἁγίων καὶ οἰκεῖοι τοῦ θεοῦ,",
+        "VUL": "Ergo jam non estis hospites, et advenæ : sed estis cives sanctorum, et domestici Dei,",
+        "SYN": "Итак вы уже не чужие и не пришельцы, но сограждане святым и свои Богу,",
+        "NEO": "Ainsi donc vous n’êtes plus des étrangers, ni des hôtes de passage ; mais vous êtes concitoyens des saints, et membres de la famille de Dieu,",
+        "NAB": "So then you are no longer strangers and sojourners, but you are fellow citizens with the holy ones and members of the household of God,",
+        "VAT_ES": "en una palabra, ustedes podrán conocer el amor de Cristo, que supera todo conocimiento, para ser colmados por la plenitud de Dios."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "ἐποικοδομηθέντες ἐπὶ τῷ θεμελίῳ τῶν ἀποστόλων καὶ προφητῶν, ὄντος ἀκρογωνιαίου αὐτοῦ Ἰησοῦ χριστοῦ,",
+        "VUL": "superædificati super fundamentum apostolorum, et prophetarum, ipso summo angulari lapide Christo Jesu :",
+        "SYN": "быв утверждены на основании Апостолов и пророков, имея Самого Иисуса Христа краеугольным _камнем,_",
+        "NEO": "édifiés que vous êtes sur le fondement des apôtres et des prophètes, dont Jésus-Christ lui-même est la pierre angulaire.",
+        "NAB": "built upon the foundation of the apostles and prophets, with Christ Jesus himself as the capstone.",
+        "VAT_ES": "&iexcl;A aquel que es capaz de hacer infinitamente más de lo que podemos pedir o pensar, por el poder que obra en nosotros,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "ἐν ᾧ πᾶσα οἰκοδομὴ συναρμολογουμένη αὔξει εἰς ναὸν ἅγιον ἐν κυρίῳ,",
+        "VUL": "in quo omnis ædificatio constructa crescit in templum sanctum in Domino,",
+        "SYN": "на котором все здание, слагаясь стройно, возрастает в святый храм в Господе,",
+        "NEO": "C’est en lui que tout l’édifice bien ordonné s’élève, pour former un temple saint dans le Seigneur ;",
+        "NAB": "Through him the whole structure is held together and grows into a temple sacred in the Lord;",
+        "VAT_ES": "a él sea la gloria en la Iglesia y en Cristo Jesús, por todas las generaciones y para siempre! Amén."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "ἐν ᾧ καὶ ὑμεῖς συνοικοδομεῖσθε εἰς κατοικητήριον τοῦ θεοῦ ἐν πνεύματι.",
+        "VUL": "in quo et vos coædificamini in habitaculum Dei in Spiritu.",
+        "SYN": "на котором и вы устрояетесь в жилище Божие Духом.",
+        "NEO": "c’est en lui que, vous aussi, vous êtes édifiés, pour être par l’Esprit-Saint, une demeure où Dieu habite.",
+        "NAB": "in him you also are being built together into a dwelling place of God in the Spirit."
+      }
+    }
+  }
+}

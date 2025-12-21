@@ -1,0 +1,1023 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_033",
+  "book_key": "NUME",
+  "sequence": 33,
+  "chapter_in": {
+    "MT": 33,
+    "VUL": 33,
+    "LXX": 33
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אֵ֜לֶּה מַסְעֵ֣י בְנֵֽי יִשְׂרָאֵ֗ל אֲשֶׁ֥ר יָצְא֛וּ מֵ/אֶ֥רֶץ מִצְרַ֖יִם לְ/צִבְאֹתָ֑/ם בְּ/יַד מֹשֶׁ֖ה וְ/אַהֲרֹֽן׃",
+        "LXX": "Καὶ οὗτοι σταθμοὶ τῶν υἱῶν Ἰσραήλ, ὡς ἐξῆλθον ἐκ γῆς Αἰγύπτου σὺν δυνάμει αὐτῶν ἐν χειρὶ Μωυσῆ καὶ Ἀαρών·",
+        "VUL": "Hæ sunt mansiones filiorum Israël, qui egressi sunt de Ægypto per turmas suas in manu Moysi et Aaron,",
+        "SYN": "Вот станы сынов Израилевых, которые вышли из земли Египетской по ополчениям своим, под начальством Моисея и Аарона.",
+        "NEO": "Voici les campements des enfants d’Israël, quand ils sortirent du pays d’Égypte, selon leurs troupes, sous la conduite de Moïse et d’Aaron.",
+        "NAB": "The following are the stages by which the Israelites journeyed up by companies from the land of Egypt under the guidance of Moses and Aaron.",
+        "VAT_ES": "Estas son las etapas que recorrieron los israelitas cuando salieron de Egipto, agrupados por regimientos, bajo la conducción de Moisés y Aarón.",
+        "CEI": "Queste sono le tappe degli Israeliti che uscirono dal paese d'Egitto, ordinati secondo le loro schiere, sotto la guida di Mosè e di Aronne."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּכְתֹּ֨ב מֹשֶׁ֜ה אֶת מוֹצָאֵי/הֶ֛ם לְ/מַסְעֵי/הֶ֖ם עַל פִּ֣י יְהוָ֑ה וְ/אֵ֥לֶּה מַסְעֵי/הֶ֖ם לְ/מוֹצָאֵי/הֶֽם׃",
+        "LXX": "καὶ ἔγραψεν Μωυσῆς τὰς ἀπάρσεις αὐτῶν καὶ τοὺς σταθμοὺς αὐτῶν διὰ ῥήματος Κυρίου. καὶ οὗτοι σταθμοὶ τῆς πορείας αὐτῶν.",
+        "VUL": "quas descripsit Moyses juxta castrorum loca, quæ Domini jussione mutabant.",
+        "SYN": "Моисей, по повелению Господню, описал путешествие их по станам их, и вот станы путешествия их:",
+        "NEO": "Moïse mit par écrit les lieux d’où ils partirent, selon leurs campements, d’après l’ordre de \\+w Yahweh|strong=\"H3068\"\\+w**, et voici leurs campements selon leurs départs :",
+        "NAB": "By the LORD'S command Moses recorded the starting places of the various stages. The starting places of the successive stages were:",
+        "VAT_ES": "Moisés consignó por escrito el punto inicial de cada etapa, por orden del Señor. Los puntos iniciales de cada etapa fueron los siguientes:",
+        "CEI": "Mosè scrisse i loro punti di partenza, tappa per tappa, per ordine del Signore; queste sono le loro tappe nell'ordine dei loro punti di partenza."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֤וּ מֵֽ/רַעְמְסֵס֙ בַּ/חֹ֣דֶשׁ הָֽ/רִאשׁ֔וֹן בַּ/חֲמִשָּׁ֥ה עָשָׂ֛ר י֖וֹם לַ/חֹ֣דֶשׁ הָ/רִאשׁ֑וֹן מִֽ/מָּחֳרַ֣ת הַ/פֶּ֗סַח יָצְא֤וּ בְנֵֽי יִשְׂרָאֵל֙ בְּ/יָ֣ד רָמָ֔ה לְ/עֵינֵ֖י כָּל מִצְרָֽיִם׃",
+        "LXX": "ἀπῆραν ἐκ Ῥαμεσσὴ τῷ μηνὶ τῷ πρώτῳ, τῇ πεντεκαιδεκάτῃ ἡμέρᾳ τοῦ μηνὸς τοῦ πρώτου· τῇ ἐπαύριον τοῦ πάσχα ἐξῆλθον οἱ υἱοὶ Ἰσραὴλ ἐν χειρὶ ὑψηλῇ ἐναντίον πάντων τῶν Αἰγυπτίων·",
+        "VUL": "Profecti igitur de Ramesse mense primo, quintadecima die mensis primi, altera die Phase, filii Israël in manu excelsa, videntibus cunctis Ægyptiis,",
+        "SYN": "из Раамсеса отправились они в первый месяц, в пятнадцатый день первого месяца; на другой день Пасхи вышли сыны Израилевы под рукою высокою в глазах всего Египта;",
+        "NEO": "Ils partirent de Ramsès le premier mois, le quinzième jour du premier mois. Le lendemain de la Pâque, les enfants d’Israël sortirent la main levée, à la vue de tous les Egyptiens.",
+        "NAB": "They set out from Rameses in the first month, on the fifteenth day of the first month. On the Passover morrow the Israelites went forth in triumph, in view of all Egypt,",
+        "VAT_ES": "El día quince del primer mes –el día siguiente a la Pascua– los israelitas partieron de Ramsés. Salieron triunfalmente, a la vista de todo Egipto,",
+        "CEI": "Partirono da Ramses il primo mese, il quindici del primo mese. Il giorno dopo la pasqua, gli Israeliti uscirono a mano alzata, alla vista di tutti gli Egiziani,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וּ/מִצְרַ֣יִם מְקַבְּרִ֗ים אֵת֩ אֲשֶׁ֨ר הִכָּ֧ה יְהוָ֛ה בָּ/הֶ֖ם כָּל בְּכ֑וֹר וּ/בֵ/אלֹ֣הֵי/הֶ֔ם עָשָׂ֥ה יְהוָ֖ה שְׁפָטִֽים׃",
+        "LXX": "καὶ οἱ Αἰγύπτιοι ἔθαπτον ἐξ αὑτῶν τοὺς τεθνηκότας πάντας οὓς ἐπάταξεν Κύριος, πᾶν πρωτότοκον ἐν γῇ Αἰγύπτῳ· καὶ ἐν τοῖς θεοῖς αὐτῶν ἐποίησεν τὴν ἐκδίκησιν Κύριος.",
+        "VUL": "et sepelientibus primogenitos, quos percusserat Dominus (nam et in diis eorum exercuerat ultionem),",
+        "SYN": "между тем Египтяне хоронили всех первенцев, которых поразил у них Господь, и над богами их Господь совершил суд.",
+        "NEO": "Et les Egyptiens enterraient ceux que \\+w Yahweh|strong=\"H3068\"\\+w** avait frappés parmi eux, tous leurs premiers-nés ; \\+w Yahweh|strong=\"H3068\"\\+w** exerça aussi des jugements sur leurs dieux.",
+        "NAB": "While the Egyptians buried their first-born all of whom the LORD had struck down; on their gods, too, the LORD executed judgments.",
+        "VAT_ES": "mientras los egipcios enterraban a sus primogénitos, que el Señor había herido de muerte, dando así un justo escarmiento a sus dioses.",
+        "CEI": "mentre gli Egiziani seppellivano quelli che il Signore aveva colpiti fra di loro, cioè tutti i primogeniti, quando il Signore aveva fatto giustizia anche dei loro dei."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֥וּ בְנֵֽי יִשְׂרָאֵ֖ל מֵ/רַעְמְסֵ֑ס וַֽ/יַּחֲנ֖וּ בְּ/סֻכֹּֽת׃",
+        "LXX": "καὶ ἀπάραντες οἱ υἱοὶ Ἰσραὴλ ἐκ Ῥαμεσσὴ παρενέβαλον εἰς Σοκχώθ·",
+        "VUL": "castrametati sunt in Soccoth.",
+        "SYN": "Так отправились сыны Израилевы из Раамсеса и расположились станом в Сокхофе.",
+        "NEO": "Etant partis de Ramsès, les enfants d’Israël campèrent à Soccoth.",
+        "NAB": "Setting out from Rameses, the Israelites camped at Succoth.",
+        "VAT_ES": "Después que partieron de Ramsés, los israelitas acamparon en Sucot.",
+        "CEI": "Gli Israeliti partirono dunque da Ramses e si accamparono a Succot."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/סֻּכֹּ֑ת וַ/יַּחֲנ֣וּ בְ/אֵתָ֔ם אֲשֶׁ֖ר בִּ/קְצֵ֥ה הַ/מִּדְבָּֽר׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Σοκχὼθ καὶ παρενέβαλον εἰς Βουθάν, ὅ ἐστιν μέρος τῆς ἐρήμου.",
+        "VUL": "Et de Soccoth venerunt in Etham, quæ est in extremis finibus solitudinis.",
+        "SYN": "И отправились из Сокхофа и расположились станом в Ефаме, что на краю пустыни.",
+        "NEO": "Ils partirent de Soccoth et campèrent à Etham, qui est aux confins du désert.",
+        "NAB": "Setting out from Succoth, they camped at Etham near the edge of the desert.",
+        "VAT_ES": "Luego partieron de Sucot y acamparon en Etam, al borde del desierto.",
+        "CEI": "Partirono da Succot e si accamparono a Etam che è sull'estremità del deserto."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יִּסְעוּ֙ מֵֽ/אֵתָ֔ם וַ/יָּ֨שָׁב֙ עַל פִּ֣י הַחִירֹ֔ת אֲשֶׁ֥ר עַל פְּנֵ֖י בַּ֣עַל צְפ֑וֹן וַֽ/יַּחֲנ֖וּ לִ/פְנֵ֥י מִגְדֹּֽל׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Βουθὰν καὶ παρενέβαλον ἐπὶ στόμα Ἐπιρώθ, ὅ ἐστιν ἀπέναντι Βεελσεπφών, καὶ παρενέβαλον ἀπέναντι Μαγδώλου.",
+        "VUL": "Inde egressi venerunt contra Phihahiroth, quæ respicit Beelsephon, et castrametati sunt ante Magdalum.",
+        "SYN": "И отправились из Ефама и обратились к Пи-Гахирофу, что пред Ваал-Цефоном, и расположились станом пред Мигдолом.",
+        "NEO": "Ils partirent d’Etham et, ayant tourné vers Phihahiroth, qui est vis-à-vis de Béel-séphon, ils campèrent devant Magdalum.",
+        "NAB": "Setting out from Etham, they turned back to Pi-hahiroth, which is opposite Baal-zephon, and they camped opposite Migdol.",
+        "VAT_ES": "De allí, se volvieron hacia Piajirot, que está frente a Baal Safón, y acamparon delante de Migdol.",
+        "CEI": "Partirono da Etam e piegarono verso Pi-Achirot, che è di fronte a Baal-Zefon, e si accamparono davanti a Migdol."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּסְעוּ֙ מִ/פְּנֵ֣י הַֽ/חִירֹ֔ת וַ/יַּֽעַבְר֥וּ בְ/תוֹךְ הַ/יָּ֖ם הַ/מִּדְבָּ֑רָ/ה וַ/יֵּ֨לְכ֜וּ דֶּ֣רֶךְ שְׁלֹ֤שֶׁת יָמִים֙ בְּ/מִדְבַּ֣ר אֵתָ֔ם וַֽ/יַּחֲנ֖וּ בְּ/מָרָֽה׃",
+        "LXX": "καὶ ἀπῆραν ἀπέναντι Εἱρὼθ καὶ διέβησαν μέσον τῆς θαλάσσης εἰς τὴν ἔρημον· καὶ ἐπορεύθησαν ὁδὸν τριῶν ἡμερῶν διὰ τῆς ἐρήμου καὶ παρενέβαλον ἐν Πικρίαις.",
+        "VUL": "Profectique de Phihahiroth, transierunt per medium mare in solitudinem : et ambulantes tribus diebus per desertum Etham, castrametati sunt in Mara.",
+        "SYN": "Отправившись от Гахирофа, прошли среди моря в пустыню, и шли три дня пути пустынею Ефам, и расположились станом в Мерре.",
+        "NEO": "Ils partirent de devant Phihahiroth et passèrent au milieu de la mer, vers le désert. Après trois journées de marche dans le désert d’Etham, ils campèrent à Mara.",
+        "NAB": "Setting out from Pi-hahiroth, they crossed over through the sea into the desert, and after a three days' journey in the desert of Etham, they camped at Marah.",
+        "VAT_ES": "Partiendo de Piajirot, llegaron al desierto, pasando a través del mar, y después de tres días de marcha por el desierto de Etam, acamparon en Mará.",
+        "CEI": "Partirono da Pi-Achirot, attraversarono il mare in direzione del deserto, fecero tre giornate di marcia nel deserto di Etam e si accamparono a Mara."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּסְעוּ֙ מִ/מָּרָ֔ה וַ/יָּבֹ֖אוּ אֵילִ֑מָ/ה וּ֠/בְ/אֵילִם שְׁתֵּ֣ים עֶשְׂרֵ֞ה עֵינֹ֥ת מַ֛יִם וְ/שִׁבְעִ֥ים תְּמָרִ֖ים וַ/יַּחֲנוּ שָֽׁם׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Πικριῶν καὶ ἦλθον εἰς Αἰλείμ· καὶ ἐν Αἰλεὶμ ιβ’ πηγαὶ ὑδάτων καὶ ἑβδομήκοντα στελέχη φοινίκων· καὶ παρενέβαλον ἐκεῖ παρὰ τὸ ὕδωρ.",
+        "VUL": "Profectique de Mara, venerunt in Elim, ubi erant duodecim fontes aquarum, et palmæ septuaginta : ibique castrametati sunt.",
+        "SYN": "И отправились из Мерры и пришли в Елим; в Елиме же [было] двенадцать источников воды и семьдесят финиковых дерев, и расположились там станом.",
+        "NEO": "Ils partirent de Mara et arrivèrent à Élim, où il y avait douze sources d’eau et soixante-dix palmiers, et ils y campèrent.",
+        "NAB": "Setting out from Marah, they came to Elim, where there were twelve springs of water and seventy palm trees, and they camped there.",
+        "VAT_ES": "Partieron de Mará y llegaron a Elím, donde hay doce fuentes y setenta palmeras, y allí acamparon.",
+        "CEI": "Partirono da Mara e giunsero ad Elim; ad Elim c'erano dodici sorgenti di acqua e settanta palme; qui si accamparono."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/אֵילִ֑ם וַֽ/יַּחֲנ֖וּ עַל יַם סֽוּף׃",
+        "LXX": "καὶ ἀπῆραν ἐξ Αἰλεὶμ καὶ παρενέβαλον ἐπὶ θάλασσαν ἐρυθράν·",
+        "VUL": "Sed et inde egressi, fixerunt tentoria super mare Rubrum. Profectique de mari Rubro,",
+        "SYN": "И отправились из Елима и расположились станом у Чермного моря.",
+        "NEO": "Ils partirent d’Élim et campèrent près de la mer Rouge.",
+        "NAB": "Setting out from Elim, they camped beside the Red Sea.",
+        "VAT_ES": "Partieron de Elím y acamparon a orillas del Mar Rojo.",
+        "CEI": "Partirono da Elim e si accamparono presso il Mare Rosso."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/יַּם ס֑וּף וַֽ/יַּחֲנ֖וּ בְּ/מִדְבַּר סִֽין׃",
+        "LXX": "καὶ ἀπῆραν ἀπὸ θαλάσσης ἐρυθρᾶς καὶ παρενέβαλον εἰς τὴν ἔρημον Σείν·",
+        "VUL": "castrametati sunt in deserto Sin.",
+        "SYN": "И отправились от Чермного моря и расположились станом в пустыне Син.",
+        "NEO": "Ils partirent de la mer Rouge et campèrent dans le désert de Sin.",
+        "NAB": "Setting out from the Red Sea, they camped in the desert of Sin.",
+        "VAT_ES": "Partieron del Mar Rojo y acamparon en el desierto de Sin.",
+        "CEI": "Partirono dal Mare Rosso e si accamparono nel deserto di Sin."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/מִּדְבַּר סִ֑ין וַֽ/יַּחֲנ֖וּ בְּ/דָפְקָֽה׃",
+        "LXX": "καὶ ἀπῆραν ἐκ τῆς ἐρήμου Σεὶν καὶ παρενέβαλον εἰς Ῥαφακά·",
+        "VUL": "Unde egressi, venerunt in Daphca.",
+        "SYN": "И отправились из пустыни Син и расположились станом в Дофке.",
+        "NEO": "Ils partirent du désert de Sin et campèrent à Daphca.",
+        "NAB": "Setting out from the desert of Sin, they camped at Dophkah.",
+        "VAT_ES": "Partieron del desierto de Sin y acamparon en Dofcá.",
+        "CEI": "Partirono dal deserto di Sin e si accamparono a Dofka."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/דָּפְקָ֑ה וַֽ/יַּחֲנ֖וּ בְּ/אָלֽוּשׁ׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Ῥαφακὰ καὶ παρενέβαλον ἐν Αἰλείμ·",
+        "VUL": "Profectique de Daphca, castrametati sunt in Alus.",
+        "SYN": "И отправились из Дофки и расположились станом в Алуше.",
+        "NEO": "Ils partirent de Daphca et campèrent à Alus.",
+        "NAB": "Setting out from Dophkah, they camped at Alush.",
+        "VAT_ES": "Partieron de Dofcá y acamparon en Alús.",
+        "CEI": "Partirono da Dofka e si accamparono ad Alus."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/אָל֑וּשׁ וַֽ/יַּחֲנוּ֙ בִּ/רְפִידִ֔ם וְ/לֹא הָ֨יָה שָׁ֥ם מַ֛יִם לָ/עָ֖ם לִ/שְׁתּֽוֹת׃",
+        "LXX": "καὶ ἀπῆραν ἐξ Αἰλεὶμ καὶ παρενέβαλον ἐν Ῥαφιδείν, καὶ οὐκ ἦν ὕδωρ τῷ λαῷ πιεῖν ἐκεῖ.",
+        "VUL": "Egressique de Alus, in Raphidim fixere tentoria, ubi populo defuit aqua ad bibendum.",
+        "SYN": "И отправились из Алуша и расположились станом в Рефидиме, и не было там воды, чтобы пить народу.",
+        "NEO": "Ils partirent d’Alus et campèrent à Raphidim, et il n’y eut pas là d’eau à boire pour le peuple.",
+        "NAB": "Setting out from Alush, they camped at Rephidim, where there was no water for the people to drink.",
+        "VAT_ES": "Partieron de Alús y acamparon en Refidím, conde el pueblo no tuvo agua para beber.",
+        "CEI": "Partirono da Alus e si accamparono a Refidim dove non c'era acqua da bere per il popolo."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/רְפִידִ֑ם וַֽ/יַּחֲנ֖וּ בְּ/מִדְבַּ֥ר סִינָֽי׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Ῥαφιδεὶν καὶ παρενέβαλον ἐν τῇ ἐρήμῳ Σεινά·",
+        "VUL": "Profectique de Raphidim, castrametati sunt in deserto Sinai.",
+        "SYN": "И отправились из Рефидима и расположились станом в пустыне Синайской.",
+        "NEO": "Ils partirent de Raphidim et campèrent dans le désert de Sinaï.",
+        "NAB": "Setting out from Rephidim, they camped in the desert of Sinai.",
+        "VAT_ES": "Partieron de Refidím y acamparon en el desierto del Sinaí.",
+        "CEI": "Partirono da Refidim e si accamparono nel deserto del Sinai."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/מִּדְבַּ֣ר סִינָ֑י וַֽ/יַּחֲנ֖וּ בְּ/קִבְרֹ֥ת הַֽתַּאֲוָֽה׃",
+        "LXX": "καὶ ἀπῆραν ἐκ τῆς ἐρήμου Σεινὰ καὶ παρενέβαλον ἐν Μνήμασιν ἐπιθυμίας·",
+        "VUL": "Sed et de solitudine Sinai egressi, venerunt ad sepulchra concupiscentiæ.",
+        "SYN": "И отправились из пустыни Синайской и расположились станом в Киброт-Гаттааве.",
+        "NEO": "Ils partirent du désert de Sinaï et campèrent à Kibroth-Hattaava.",
+        "NAB": "Setting out from the desert of Sinai, they camped at Kibroth-hattaavah.",
+        "VAT_ES": "Luego partieron del desierto del Sinaí y acamparon en Quibrot Ha Taavá.",
+        "CEI": "Partirono dal deserto del Sinai e si accamparono a Kibrot-Taava."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/קִּבְרֹ֣ת הַֽתַּאֲוָ֑ה וַֽ/יַּחֲנ֖וּ בַּ/חֲצֵרֹֽת׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Μνημάτων ἐπιθυμίας καὶ παρενέβαλον ἐν Ἁσηρώθ·",
+        "VUL": "Profectique de sepulchris concupiscentiæ, castrametati sunt in Haseroth.",
+        "SYN": "И отправились из Киброт-Гаттаавы и расположились станом в Асирофе.",
+        "NEO": "Ils partirent de Kibroth-Hattaava et campèrent à Haséroth.",
+        "NAB": "Setting out from Kibroth-hattaavah, they camped at Hazeroth.",
+        "VAT_ES": "Partieron de Quibrot Ha Taavá y acamparon en Jaserot.",
+        "CEI": "Partirono da Kibrot-Taava e si accamparono a Cazerot."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/חֲצֵרֹ֑ת וַֽ/יַּחֲנ֖וּ בְּ/רִתְמָֽה׃",
+        "LXX": "καὶ ἀπῆραν ἐξ Ἁσηρὼθ καὶ παρενέβαλον ἐν Ῥαθαμά·",
+        "VUL": "Et de Haseroth venerunt in Rethma.",
+        "SYN": "И отправились из Асирофа и расположились станом в Рифме.",
+        "NEO": "Ils partirent de Haséroth et campèrent à Rethma.",
+        "NAB": "Setting out from Hazeroth, they camped at Rithmah.",
+        "VAT_ES": "Partieron de Jaserot y acamparon en Ritmá.",
+        "CEI": "Partirono da Cazerot e si accamparono a Ritma."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/רִתְמָ֑ה וַֽ/יַּחֲנ֖וּ בְּ/רִמֹּ֥ן פָּֽרֶץ׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Ῥαθαμὰ καὶ παρενέβαλον ἐν Ῥεμμὼν Φάρες·",
+        "VUL": "Profectique de Rethma, castrametati sunt in Remmomphares.",
+        "SYN": "И отправились из Рифмы и расположились станом в Римнон-- Фареце.",
+        "NEO": "Ils partirent de Rethma et campèrent à Remmonpharès.",
+        "NAB": "Setting out from Rithmah, they camped at Rimmon-perez.",
+        "VAT_ES": "Partieron de Ritmá y acamparon en Rimón Péres.",
+        "CEI": "Partirono da Ritma e si accamparono a Rimmon-Perez."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/רִמֹּ֣ן פָּ֑רֶץ וַֽ/יַּחֲנ֖וּ בְּ/לִבְנָֽה׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Ῥαμμὼν Φάρες καὶ παρενέβαλον ἐν Λεμωνά·",
+        "VUL": "Unde egressi venerunt in Lebna.",
+        "SYN": "И отправились из Римнон-Фареца и расположились станом в Ливне.",
+        "NEO": "Ils partirent de Remmonpharès et campèrent à Lebna.",
+        "NAB": "Setting out from Rimmon-perez, they camped at Libnah.",
+        "VAT_ES": "Partieron de Rimón Péres y acamparon en Libná.",
+        "CEI": "Partirono da Rimmon-Perez e si accamparono a Libna."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/לִּבְנָ֑ה וַֽ/יַּחֲנ֖וּ בְּ/רִסָּֽה׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Λεμωνὰ καὶ παρενέβαλον εἰς Δεσσά·",
+        "VUL": "De Lebna castrametati sunt in Ressa.",
+        "SYN": "И отправились из Ливны и расположились станом в Риссе.",
+        "NEO": "Ils partirent de Lebna et campèrent à Ressa.",
+        "NAB": "Setting out from Libnah, they camped at Rissah.",
+        "VAT_ES": "Partieron de Libná y acamparon en Risá.",
+        "CEI": "Partirono da Libna e si accamparono a Rissa."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/רִסָּ֑ה וַֽ/יַּחֲנ֖וּ בִּ/קְהֵלָֽתָה׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Δεσσὰ καὶ παρενέβαλον εἰς Μακελλάθ·",
+        "VUL": "Egressique de Ressa, venerunt in Ceelatha.",
+        "SYN": "И отправились из Риссы и расположились станом в Кегелафе.",
+        "NEO": "Ils partirent de Ressa et campèrent à Céélatha.",
+        "NAB": "Setting out from Rissah, they camped at Kehelathah.",
+        "VAT_ES": "Partieron de Risá y acamparon en Quehelatá.",
+        "CEI": "Partirono da Rissa e si accamparono a Keelata."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/קְּהֵלָ֑תָה וַֽ/יַּחֲנ֖וּ בְּ/הַר שָֽׁפֶר׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Μακελλὰθ καὶ παρενέβαλον εἰς Σάφαρ·",
+        "VUL": "Unde profecti, castrametati sunt in monte Sepher.",
+        "SYN": "И отправились из Кегелафы и расположились станом на горе Шафер.",
+        "NEO": "Ils partirent de Céélatha et campèrent à la montagne de Sépher.",
+        "NAB": "Setting out from Kehelathah, they camped at Mount Shepher.",
+        "VAT_ES": "Partieron de Quehelatá y acamparon en el monte Séfer.",
+        "CEI": "Partirono da Keelata e si accamparono al monte Sefer."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵֽ/הַר שָׁ֑פֶר וַֽ/יַּחֲנ֖וּ בַּ/חֲרָדָֽה׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Σάφαρ καὶ παρενέβαλον εἰς Χαραδάθ·",
+        "VUL": "Egressi de monte Sepher, venerunt in Arada.",
+        "SYN": "И отправились от горы Шафер и расположились станом в Хараде.",
+        "NEO": "Ils partirent de la montagne de Sépher et campèrent à Arada.",
+        "NAB": "Setting out from Mount Shepher, they camped at Haradah.",
+        "VAT_ES": "Partieron del monte Séfer y acamparon en Jaradá.",
+        "CEI": "Partirono dal monte Sefer e si accamparono ad Arada."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/חֲרָדָ֑ה וַֽ/יַּחֲנ֖וּ בְּ/מַקְהֵלֹֽת׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Χαραδὰθ καὶ παρενέβαλον εἰς Μακηλώθ·",
+        "VUL": "Inde proficiscentes, castrametati sunt in Maceloth.",
+        "SYN": "И отправились из Харады и расположились станом в Макелофе.",
+        "NEO": "Ils partirent d’Arada et campèrent à Macéloth.",
+        "NAB": "Setting out from Haradah, they camped at Makheloth.",
+        "VAT_ES": "Partieron de Jaradá y acamparon en Maquelot.",
+        "CEI": "Partirono da Arada e si accamparono a Makelot."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/מַּקְהֵלֹ֑ת וַֽ/יַּחֲנ֖וּ בְּ/תָֽחַת׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Μακηλὼθ καὶ παρενέβαλον εἰς Κατάαθ·",
+        "VUL": "Profectique de Maceloth, venerunt in Thahath.",
+        "SYN": "И отправились из Макелофа и расположились станом в Тахафе.",
+        "NEO": "Ils partirent de Macéloth et campèrent à Thahath.",
+        "NAB": "Setting out from Makheloth, they camped at Tahath.",
+        "VAT_ES": "Partieron de Maquelot y acamparon en Tájat.",
+        "CEI": "Partirono da Makelot e si accamparono a Tacat."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/תָּ֑חַת וַֽ/יַּחֲנ֖וּ בְּ/תָֽרַח׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Κατάαθ καὶ παρενέβαλον εἰς Τάραθ·",
+        "VUL": "De Thahath, castrametati sunt in Thare.",
+        "SYN": "И отправились из Тахафа и расположились станом в Тарахе.",
+        "NEO": "Ils partirent de Thahath et campèrent à Tharé.",
+        "NAB": "Setting out from Tahath, they camped at Terah.",
+        "VAT_ES": "Partieron de Tájat y acamparon en Téraj.",
+        "CEI": "Partirono da Tacat e si accamparono a Terach."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/תָּ֑רַח וַֽ/יַּחֲנ֖וּ בְּ/מִתְקָֽה׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Τάραθ καὶ παρενέβαλον εἰς Ματεκκά·",
+        "VUL": "Unde egressi, fixere tentoria in Methca.",
+        "SYN": "И отправились из Тараха и расположились станом в Мифке.",
+        "NEO": "Ils partirent de Tharé et campèrent à Metcha.",
+        "NAB": "Setting out from Terah, they camped at Mithkah.",
+        "VAT_ES": "Partieron de Téraj y acamparon en Mitcá.",
+        "CEI": "Partirono da Terach e si accamparono a Mitka."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/מִּתְקָ֑ה וַֽ/יַּחֲנ֖וּ בְּ/חַשְׁמֹנָֽה׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Ματεκκὰ καὶ παρενέβαλον εἰς Σελμωνά·",
+        "VUL": "Et de Methca, castrametati sunt in Hesmona.",
+        "SYN": "И отправились из Мифки и расположились станом в Хашмоне.",
+        "NEO": "Ils partirent de Metcha et campèrent à Hesmona.",
+        "NAB": "Setting out from Mithkah, they camped at Hashmonah.",
+        "VAT_ES": "Partieron de Mitcá y camparon en Jasmoná.",
+        "CEI": "Partirono da Mitka e si accamparono ad Asmona."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵֽ/חַשְׁמֹנָ֑ה וַֽ/יַּחֲנ֖וּ בְּ/מֹסֵרֽוֹת׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Σελμωνὰ καὶ παρενέβαλον εἰς Μασσουρώθ·",
+        "VUL": "Profectique de Hesmona, venerunt in Moseroth.",
+        "SYN": "И отправились из Хашмоны и расположились станом в Мосерофе.",
+        "NEO": "Ils partirent de Hesmona et campèrent à Moséroth.",
+        "NAB": "Setting out from Hashmonah,-They camped at Moseroth.",
+        "VAT_ES": "Partieron de Jasmoná y acamparon en Moserot.",
+        "CEI": "Partirono da Asmona e si accamparono a Moserot."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/מֹּסֵר֑וֹת וַֽ/יַּחֲנ֖וּ בִּ/בְנֵ֥י יַעֲקָֽן׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Μασσουροὺθ καὶ παρενέβαλον εἰς Βαναία·",
+        "VUL": "Et de Moseroth, castrametati sunt in Benejaacan.",
+        "SYN": "И отправились из Мосерофа и расположились станом в Бене-Яакане.",
+        "NEO": "Ils partirent de Moséroth et campèrent à Bené-Jaacan.",
+        "NAB": "Setting out from Moseroth, they camped at Bene-jaakan.",
+        "VAT_ES": "Partieron de Moserot y acamparon en Bené Iaacán.",
+        "CEI": "Partirono da Moserot e si accamparono a Bene-Iaakan."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/בְּנֵ֣י יַעֲקָ֑ן וַֽ/יַּחֲנ֖וּ בְּ/חֹ֥ר הַגִּדְגָּֽד׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Βαναία καὶ παρενέβαλον εἰς τὸ ὄρος Γαδγάδ·",
+        "VUL": "Profectique de Benejaacan, venerunt in montem Gadgad.",
+        "SYN": "И отправились из Бене-Яакана и расположились станом в Хор-- Агидгаде.",
+        "NEO": "Ils partirent de Bené-Jaacan et campèrent à Hor-Gadgad.",
+        "NAB": "Setting out from Bene-jaakan, they camped at Mount Gidgad.",
+        "VAT_ES": "Partieron de Bené Iaacán y acamparon en Hor Guidgad.",
+        "CEI": "Partirono da Bene-Iaakan e si accamparono a Or-Ghidgad."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/חֹ֣ר הַגִּדְגָּ֑ד וַֽ/יַּחֲנ֖וּ בְּ/יָטְבָֽתָה׃",
+        "LXX": "καὶ ἀπῆραν ἐκ τοῦ ὄρους Γαδγὰδ καὶ παρενέβαλον εἰς Σετεβάθα·",
+        "VUL": "Unde profecti, castrametati sunt in Jetebatha.",
+        "SYN": "И отправились из Хор-Агидгада и расположились станом в Иотвафе.",
+        "NEO": "Ils partirent de Hor-Gadgad et campèrent à Jétébatha.",
+        "NAB": "Setting out from Mount Gidgad, they camped at Jotbathah.",
+        "VAT_ES": "Partieron de Hor Guidgad y acamparon en Iotbatá.",
+        "CEI": "Partirono da Or-Ghidgad e si accamparono a Iotbata."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/יָּטְבָ֑תָה וַֽ/יַּחֲנ֖וּ בְּ/עַבְרֹנָֽה׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Σετεβάθα καὶ παρενέβαλον εἰς Σεβρωνά·",
+        "VUL": "Et de Jetebatha venerunt in Hebrona.",
+        "SYN": "И отправились от Иотвафы и расположились станом в Авроне.",
+        "NEO": "Ils partirent de Jétébatha et campèrent à Hébrona.",
+        "NAB": "Setting out from Jotbathah, they camped at Abronah.",
+        "VAT_ES": "Partieron de Iotbatá y acamparon en Abroná.",
+        "CEI": "Partirono da Iotbata e si accamparono ad Abrona."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵֽ/עַבְרֹנָ֑ה וַֽ/יַּחֲנ֖וּ בְּ/עֶצְי֥וֹן גָּֽבֶר׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Σεβρωνὰ καὶ παρενέβαλον εἰς Γεσσιὼν Γάβερ·",
+        "VUL": "Egressique de Hebrona, castrametati sunt in Asiongaber.",
+        "SYN": "И отправились из Аврона и расположились станом в Ецион-- Гавере.",
+        "NEO": "Ils partirent de Hébrona et campèrent à Asiongaber.",
+        "NAB": "Setting out from Abronah, they camped at Ezion-geber.",
+        "VAT_ES": "Partieron de Abroná y acamparon en Esión Guéber.",
+        "CEI": "Partirono da Abrona e si accamparono a Ezion-Gheber."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/עֶצְי֣וֹן גָּ֑בֶר וַ/יַּחֲנ֥וּ בְ/מִדְבַּר צִ֖ן הִ֥וא קָדֵֽשׁ׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Γεσσιὼν Γάβερ καὶ παρενέβαλον ἐν τῇ ἐρήμῳ Σείν· καὶ ἀπῆραν ἐκ τῆς ἐρήμου Σεὶν καὶ παρενέβαλον εἰς τὴν ἔρημον Φαράν, αὕτη ἐστὶν Καδής·",
+        "VUL": "Inde profecti, venerunt in desertum Sin, hæc est Cades.",
+        "SYN": "И отправились из Ецион-Гавера и расположились станом в пустыне Син. [Отправившись из пустыни Син, расположились станом в пустыне Фаран,] она же Кадес.",
+        "NEO": "Ils partirent d’Asiongaber et campèrent dans le désert de Sin, c’est-à-dire à Cadès.",
+        "NAB": "Setting out from Ezion-geber,-They camped in the desert of Zin, at Kadesh.",
+        "VAT_ES": "Partieron de Esión Guéber y acamparon en el desierto de Sin, o sea, en Cades.",
+        "CEI": "Partirono da Ezion-Gheber e si accamparono nel deserto di Sin, cioè a Kades."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/קָּדֵ֑שׁ וַֽ/יַּחֲנוּ֙ בְּ/הֹ֣ר הָ/הָ֔ר בִּ/קְצֵ֖ה אֶ֥רֶץ אֱדֽוֹם׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Καδὴς καὶ παρενέβαλον εἰς Ὣρ τὸ ὄρος, πλησίον γῆς Ἐδώμ.",
+        "VUL": "Egressique de Cades, castrametati sunt in monte Hor, in extremis finibus terræ Edom.",
+        "SYN": "И отправились из Кадеса и расположились станом на горе Ор, у пределов земли Едомской.",
+        "NEO": "Ils partirent de Cadès et campèrent à la montagne de Hor, à l’extrémité du pays d’Edom.",
+        "NAB": "Setting out from Kadesh, they camped at Mount Hor on the border of the land of Edom.",
+        "VAT_ES": "Partieron de Cades y acamparon el monte Hor, en los límites de Edom.",
+        "CEI": "Poi partirono da Kades e si accamparono al monte Or all'estremità del paese di Edom."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יַּעַל֩ אַהֲרֹ֨ן הַ/כֹּהֵ֜ן אֶל הֹ֥ר הָ/הָ֛ר עַל פִּ֥י יְהוָ֖ה וַ/יָּ֣מָת שָׁ֑ם בִּ/שְׁנַ֣ת הָֽ/אַרְבָּעִ֗ים לְ/צֵ֤את בְּנֵֽי יִשְׂרָאֵל֙ מֵ/אֶ֣רֶץ מִצְרַ֔יִם בַּ/חֹ֥דֶשׁ הַ/חֲמִישִׁ֖י בְּ/אֶחָ֥ד לַ/חֹֽדֶשׁ׃",
+        "LXX": "καὶ ἀνέβη Ἀαρὼν ὁ ἱερεὺς διὰ προστάγματος Κυρίου, καὶ ἀπέθανεν ἐκεῖ ἐν τῷ τεσσερακοστῷ ἔτει τῆς ἐξόδου τῶν υἱῶν Ἰσραὴλ ἐκ γῆς Αἰγύπτου, τῷ μηνὶ τῷ πέμπτῳ, μιᾷ τοῦ μηνός·",
+        "VUL": "Ascenditque Aaron sacerdos in montem Hor jubente Domino : et ibi mortuus est anno quadragesimo egressionis filiorum Israël ex Ægypto, mense quinto, prima die mensis,",
+        "SYN": "И взошел Аарон священник на гору Ор по повелению Господню и умер там в сороковой год по исшествии сынов Израилевых из земли Египетской, в пятый месяц, в первый день месяца;",
+        "NEO": "Aaron, le prêtre, monta sur la montagne de Hor, sur l’ordre de \\+w Yahweh|strong=\"H3068\"\\+w**, et il y mourut, la quarantième année après la sortie des enfants d’Israël du pays d’Égypte, le cinquième mois, le premier jour du mois.",
+        "NAB": "(Aaron the priest ascended Mount Hor at the LORD'S command, and there he died in the fortieth year from the departure of the Israelites from the land of Egypt, on the first day of the fifth month.",
+        "VAT_ES": "El sacerdote Aarón, por orden del Señor, subió al monte Hor y allí murió, el primer día del quinto mes, cuarenta años después que los israelitas salieron de Egipto.",
+        "CEI": "Il sacerdote Aronne salì sul monte Or per ordine del Signore e in quel luogo morì il quarantesimo anno dopo l'uscita degli Israeliti dal paese d'Egitto, il quinto mese, il primo giorno del mese."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וְ/אַהֲרֹ֔ן בֶּן שָׁלֹ֧שׁ וְ/עֶשְׂרִ֛ים וּ/מְאַ֖ת שָׁנָ֑ה בְּ/מֹת֖/וֹ בְּ/הֹ֥ר הָ/הָֽר׃",
+        "LXX": "καὶ Ἀαρὼν ἦν τριῶν καὶ εἴκοσι καὶ ἑκατὸν ἐτῶν, ὅτε ἀπέθνησκεν ἐν Ὣρ τῷ ὄρει.",
+        "VUL": "cum esset annorum centum viginti trium.",
+        "SYN": "Аарон был ста двадцати трех лет, когда умер на горе Ор.",
+        "NEO": "Aaron était âgé de cent vingt-trois ans lorsqu’il mourut sur la montagne de Hor.",
+        "NAB": "Aaron was a hundred and twenty-three years old when he died on Mount Hor.",
+        "VAT_ES": "Cuando murió en el monte Hor, Aarón tenía ciento veintitrés años.",
+        "CEI": "Aronne era in età di centoventitré anni quando morì sul monte Or."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֗ע הַֽ/כְּנַעֲנִי֙ מֶ֣לֶךְ עֲרָ֔ד וְ/הֽוּא יֹשֵׁ֥ב בַּ/נֶּ֖גֶב בְּ/אֶ֣רֶץ כְּנָ֑עַן בְּ/בֹ֖א בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἀκούσας ὁ Χανανείς, βασιλεὺς Ἀράδ· καὶ οὗτος κατῴκει ἐν γῇ Χανάαν, ὅτε εἰσεπορεύοντο οἱ υἱοὶ Ἰσραήλ.",
+        "VUL": "Audivitque Chananæus rex Arad, qui habitabat ad meridiem, in terram Chanaan venisse filios Israël.",
+        "SYN": "Ханаанский царь Арада, который жил к югу земли Ханаанской, услышал тогда, что идут сыны Израилевы.",
+        "NEO": "Ce fut alors que le Canaanéen, roi d’Arad, qui habitait le Négeb dans le pays de Canaan, apprit l’arrivée des enfants d’Israël.",
+        "NAB": "Now, when the Canaanite king of Arad, who lived in the Negeb in the land of Canaan, heard that the Israelites were coming. . . . )",
+        "VAT_ES": "El cananeo, rey de Arad, que habitaba en el Négueb, en el país de Canaán, recibió entonces la noticia de la llegada de los israelitas.",
+        "CEI": "Il cananeo re di Arad, che abitava nel Negheb, nel paese di Cànaan, venne a sapere che gli Israeliti arrivavano."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/הֹ֣ר הָ/הָ֑ר וַֽ/יַּחֲנ֖וּ בְּ/צַלְמֹנָֽה׃",
+        "LXX": "καὶ ἀπῆραν ἐξ Ὣρ τοῦ ὄρους καὶ παρενέβαλον εἰς Σελμωνά·",
+        "VUL": "Et profecti de monte Hor, castrametati sunt in Salmona.",
+        "SYN": "И отправились они от горы Ор и расположились станом в Салмоне.",
+        "NEO": "Ils partirent de la montagne de Hor et campèrent à Salmona.",
+        "NAB": "Setting out from Mount Hor,-They camped at Zalmonah.",
+        "VAT_ES": "Luego partieron del monte Hor y acamparon en Salmoná.",
+        "CEI": "Partirono dal monte Or e si accamparono a Salmona."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/צַּלְמֹנָ֑ה וַֽ/יַּחֲנ֖וּ בְּ/פוּנֹֽן׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Σελμωνὰ καὶ παρενέβαλον εἰς Φεινώ·",
+        "VUL": "Unde egressi, venerunt in Phunon.",
+        "SYN": "И отправились из Салмона и расположились станом в Пуноне.",
+        "NEO": "Ils partirent de Salmona et campèrent à Phunon.",
+        "NAB": "Setting out from Zalmonah, they camped at Punon.",
+        "VAT_ES": "Partieron de Salmoná y acamparon en Punón.",
+        "CEI": "Partirono da Salmona e si accamparono a Punon."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/פּוּנֹ֑ן וַֽ/יַּחֲנ֖וּ בְּ/אֹבֹֽת׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Φεινὼ καὶ παρενέβαλον εἰς Σωβώθ·",
+        "VUL": "Profectique de Phunon, castrametati sunt in Oboth.",
+        "SYN": "И отправились из Пунона и расположились станом в Овофе.",
+        "NEO": "Ils partirent de Phunon et campèrent à Oboth.",
+        "NAB": "Setting out from Punon, they camped at Oboth.",
+        "VAT_ES": "Partieron de Punón y acamparon en Obot.",
+        "CEI": "Partirono da Punon e si accamparono a Obot."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/אֹבֹ֑ת וַֽ/יַּחֲנ֛וּ בְּ/עִיֵּ֥י הָעֲבָרִ֖ים בִּ/גְב֥וּל מוֹאָֽב׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Σωβὼθ καὶ παρενέβαλον ἐν Γαί, ἐν τῷ πέρα ἐπὶ τῶν ὁρίων Μωάβ·",
+        "VUL": "Et de Oboth venerunt in Ijeabarim, quæ est in finibus Moabitarum.",
+        "SYN": "И отправились из Овофа и расположились станом в Ийм-Авариме, на пределах Моава.",
+        "NEO": "Ils partirent d’Oboth et campèrent à Ijé-Abarim, à la frontière de Moab.",
+        "NAB": "Setting out from Oboth, they camped at Iye-abarim on the border of Moab.",
+        "VAT_ES": "Partieron de Obot y acamparon sobre el territorio de Moab, en Iyé Ha Abarím.",
+        "CEI": "Partirono da Obot e si accamparono a Iie-Abarìm sui confini di Moab."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/עִיִּ֑ים וַֽ/יַּחֲנ֖וּ בְּ/דִיבֹ֥ן גָּֽד׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Γαὶ καὶ παρενέβαλον εἰς Δαιβὼν Γάδ·",
+        "VUL": "Profectique de Ijeabarim, fixere tentoria in Dibongad.",
+        "SYN": "И отправились из Ийма и расположились станом в Дивон-Гаде.",
+        "NEO": "Ils partirent de Ijé-Abarim et campèrent à Dibon-Gad.",
+        "NAB": "Setting out from Iye-abarim, they camped at Dibon-gad.",
+        "VAT_ES": "Partieron de Iyím y acamparon en Dibón Gad.",
+        "CEI": "Partirono da Iie-Abarìm e si accamparono a Dibon-Gad."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מִ/דִּיבֹ֣ן גָּ֑ד וַֽ/יַּחֲנ֖וּ בְּ/עַלְמֹ֥ן דִּבְלָתָֽיְמָ/ה׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Δαιβὼν Γὰδ καὶ παρενέβαλον ἐν Γελμὼν Δεβλαθάιμ·",
+        "VUL": "Unde egressi, castrametati sunt in Helmondeblathaim.",
+        "SYN": "И отправились из Дивон-Гада и расположились станом в Алмон-- Дивлафаиме.",
+        "NEO": "Ils partirent de Dibon-Gad et campèrent à Helmon-Deblathaïm.",
+        "NAB": "Setting out from Dibon-gad, they camped at Almon-diblathaim.",
+        "VAT_ES": "Partieron de Dibón Gad y acamparon en Almón Diblataim.",
+        "CEI": "Partirono da Dibon-Gad e si accamparono ad Almon-Diblataim."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/עַלְמֹ֣ן דִּבְלָתָ֑יְמָ/ה וַֽ/יַּחֲנ֛וּ בְּ/הָרֵ֥י הָ/עֲבָרִ֖ים לִ/פְנֵ֥י נְבֽוֹ׃",
+        "LXX": "καὶ ἀπῆραν ἐκ Γελμὼν Δεβλαθάιμ καὶ παρενέβαλον ἐπὶ τὰ ὄρη τὰ Ἀβαρεὶμ ἀπέναντι Ναβαύ·",
+        "VUL": "Egressique de Helmondeblathaim, venerunt ad montes Abarim contra Nabo.",
+        "SYN": "И отправились из Алмон-Дивлафаима и расположились станом на горах Аваримских пред Нево.",
+        "NEO": "Ils partirent d’Helmon-Deblathaïm et campèrent aux monts Abarim, en face de Nébo.",
+        "NAB": "Setting out from Almon-diblathaim, they camped in the Abarim Mountains opposite Nebo.",
+        "VAT_ES": "Partieron de Almón Diblataim y acamparon en las montañas de Abarím, frente al Nebo.",
+        "CEI": "Partirono da Almon-Diblataim e si accamparono ai monti Abarìm di fronte a Nebo."
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "וַ/יִּסְע֖וּ מֵ/הָרֵ֣י הָ/עֲבָרִ֑ים וַֽ/יַּחֲנוּ֙ בְּ/עַֽרְבֹ֣ת מוֹאָ֔ב עַ֖ל יַרְדֵּ֥ן יְרֵחֽוֹ׃",
+        "LXX": "καὶ ἀπῆραν ἀπὸ ὀρέων Ἀβαρεὶμ καὶ παρενέβαλον ἐπὶ δυσμῶν Μωάβ, ἐπὶ τοῦ Ἰορδάνου κατὰ Ἰερειχώ·",
+        "VUL": "Profectique de montibus Abarim, transierunt ad campestria Moab, supra Jordanem, contra Jericho.",
+        "SYN": "И отправились от гор Аваримских и расположились станом на равнинах Моавитских у Иордана, против Иерихона;",
+        "NEO": "Ils partirent des monts Abarim et campèrent dans les plaines de Moab, près du Jourdain, vis-à-vis de Jéricho.",
+        "NAB": "Setting out from the Abarim Mountains, they camped on the plains of Moab along the Jericho stretch of the Jordan.",
+        "VAT_ES": "Partieron de las montañas de Abarím y acamparon en las estepas de Moab, junto al Jordán, a la altura de Jericó.",
+        "CEI": "Partirono dai monti Abarìm e si accamparono nelle steppe di Moab, presso il Giordano di Gerico."
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "וַ/יַּחֲנ֤וּ עַל הַ/יַּרְדֵּן֙ מִ/בֵּ֣ית הַיְשִׁמֹ֔ת עַ֖ד אָבֵ֣ל הַשִּׁטִּ֑ים בְּ/עַֽרְבֹ֖ת מוֹאָֽב׃",
+        "LXX": "καὶ παρενέβαλον παρὰ τὸν Ἰορδάνην ἀνὰ μέσον Αἱσιμὼθ ἕως Βελσὰ τὸ κατὰ δυσμὰς Μωάβ.",
+        "VUL": "Ibique castrametati sunt de Bethsimoth usque ad Abelsatim in planioribus locis Moabitarum.",
+        "SYN": "они расположились станом у Иордана от Беф-Иешимофа до Аве-- Ситтима на равнинах Моавитских.",
+        "NEO": "Ils campèrent près du Jourdain, depuis Bethsimoth jusqu’à Abel-Settim, dans les plaines de Moab.",
+        "NAB": "Their camp along the Jordan on the plains of Moab extended from Beth-jeshimoth to Abelshittim.",
+        "VAT_ES": "Acamparon junto al Jordán, desde Bet Ha Iesimot hasta Abel Sitím, en las estepas de Moab.",
+        "CEI": "Si accamparono presso il Giordano, da Bet-Iesimot fino ad Abel-Sittim nelle steppe di Moab."
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֧ר יְהוָ֛ה אֶל מֹשֶׁ֖ה בְּ/עַֽרְבֹ֣ת מוֹאָ֑ב עַל יַרְדֵּ֥ן יְרֵח֖וֹ לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων ἐπὶ δυσμῶν Μωὰβ παρὰ τὸν Ἰορδάνην κατὰ Ἰερειχώ",
+        "VUL": "Ubi locutus est Dominus ad Moysen :",
+        "SYN": "И сказал Господь Моисею на равнинах Моавитских у Иордана, против Иерихона, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse dans les plaines de Moab, près du Jourdain, vis-à-vis de Jéricho, en disant :",
+        "NAB": "The LORD spoke to Moses on the plains of Moab beside the Jericho stretch of the Jordan and said to him:",
+        "VAT_ES": "El Señor dijo a Moisés en las estepas de Moab, junto al Jordán, a la altura de Jericó:",
+        "CEI": "Il Signore disse a Mosè nelle steppe di Moab presso il Giordano di Gerico:"
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "WLC": "דַּבֵּר֙ אֶל בְּנֵ֣י יִשְׂרָאֵ֔ל וְ/אָמַרְתָּ֖ אֲלֵ/הֶ֑ם כִּ֥י אַתֶּ֛ם עֹבְרִ֥ים אֶת הַ/יַּרְדֵּ֖ן אֶל אֶ֥רֶץ כְּנָֽעַן׃",
+        "LXX": "Λάλησον τοῖς υἱοῖς Ἰσραὴλ καὶ ἐρεῖς πρὸς αὐτούς Ὑμεῖς διαβαίνετε τὸν Ἰορδάνην εἰς γῆν Χανάαν·",
+        "VUL": "Præcipe filiis Israël, et dic ad eos : Quando transieritis Jordanem, intrantes terram Chanaan,",
+        "SYN": "объяви сынам Израилевым и скажи им: когда перейдете через Иордан в землю Ханаанскую,",
+        "NEO": "« Parle aux enfants d’Israël : Lorsque vous aurez passé le Jourdain et que vous serez entrés dans le pays de Canaan,",
+        "NAB": "\"Tell the Israelites: When you go across the Jordan into the land of Canaan,",
+        "VAT_ES": "Habla en estos términos a los israelitas: Cuando crucen el Jordán en dirección al país de Canaán",
+        "CEI": "\"Parla agli Israeliti e riferisci loro: Quando avrete passato il Giordano e sarete entrati nel paese di Cànaan,"
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "WLC": "וְ/ה֨וֹרַשְׁתֶּ֜ם אֶת כָּל יֹשְׁבֵ֤י הָ/אָ֨רֶץ֙ מִ/פְּנֵי/כֶ֔ם וְ/אִ֨בַּדְתֶּ֔ם אֵ֖ת כָּל מַשְׂכִּיֹּתָ֑/ם וְ/אֵ֨ת כָּל צַלְמֵ֤י מַסֵּֽכֹתָ/ם֙ תְּאַבֵּ֔דוּ וְ/אֵ֥ת כָּל בָּמֹתָ֖/ם תַּשְׁמִֽידוּ׃",
+        "LXX": "καὶ ἀπολεῖτε πάντας τοὺς κατοικοῦντας ἐν τῇ γῇ πρὸ προσώπου ὑμῶν, καὶ ἐξαρεῖτε τὰς σκοπιὰς αὐτῶν, καὶ πάντα τὰ εἴδωλα τὰ χωνευτὰ αὐτῶν ἀπολεῖτε αὐτά, καὶ πάσας τὰς στήλας αὐτῶν ἐξαρεῖτε.",
+        "VUL": "disperdite cunctos habitatores terræ illius : confringite titulos, et statuas comminuite, atque omnia excelsa vastate,",
+        "SYN": "то прогоните от себя всех жителей земли и истребите все изображения их, и всех литых идолов их истребите и все высоты их разорите;",
+        "NEO": "vous expulserez devant vous tous les habitants du pays, vous détruirez toutes leurs pierres sculptées, et vous détruirez toutes leurs images d’airain fondu, et vous dévasterez tous leurs hauts lieux.",
+        "NAB": "drive out all the inhabitants of the land before you; destroy all their stone figures and molten images, and demolish all their high places.",
+        "VAT_ES": "y hayan desposeído de sus dominios a todos los habitantes del país, ustedes harán desaparecer todas sus imágenes esculpidas y todas sus estatuas de metal fundido, y demolerán todos sus lugares altos.",
+        "CEI": "caccerete dinanzi a voi tutti gli abitanti del paese, distruggerete tutte le loro immagini, distruggerete tutte le loro statue di metallo fuso e distruggerete tutte le loro alture."
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "WLC": "וְ/הוֹרַשְׁתֶּ֥ם אֶת הָ/אָ֖רֶץ וִֽ/ישַׁבְתֶּם בָּ֑/הּ כִּ֥י לָ/כֶ֛ם נָתַ֥תִּי אֶת הָ/אָ֖רֶץ לָ/רֶ֥שֶׁת אֹתָֽ/הּ׃",
+        "LXX": "καὶ ἀπολεῖτε πάντας τοὺς κατοικοῦντας τὴν γῆν καὶ κατοικήσετε ἐν αὐτῇ, ὑμῖν γὰρ δέδωκα τὴν γῆν αὐτῶν ἐν κλήρῳ.",
+        "VUL": "mundantes terram, et habitantes in ea. Ego enim dedi vobis illam in possessionem,",
+        "SYN": "и возьмите во владение землю и поселитесь на ней, ибо Я вам даю землю сию во владение;",
+        "NEO": "Vous prendrez possession du pays et vous l’habiterez ; car je vous ai donné le pays pour le posséder.",
+        "NAB": "\"You shall take possession of the land and settle in it, for I have given you the land as your property.",
+        "VAT_ES": "Tomarán posesión del país y habitarán en él, porque yo les di esa tierra para que la posean.",
+        "CEI": "Prenderete possesso del paese e in esso vi stabilirete, perché io vi ho dato il paese in proprietà."
+      }
+    },
+    "54": {
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "WLC": "וְ/הִתְנַחַלְתֶּם֩ אֶת הָ/אָ֨רֶץ בְּ/גוֹרָ֜ל לְ/מִשְׁפְּחֹֽתֵי/כֶ֗ם לָ/רַ֞ב תַּרְבּ֤וּ אֶת נַחֲלָת/וֹ֙ וְ/לַ/מְעַט֙ תַּמְעִ֣יט אֶת נַחֲלָת֔/וֹ אֶל֩ אֲשֶׁר יֵ֨צֵא ל֥/וֹ שָׁ֛מָּ/ה הַ/גּוֹרָ֖ל ל֣/וֹ יִהְיֶ֑ה לְ/מַטּ֥וֹת אֲבֹתֵי/כֶ֖ם תִּתְנֶחָֽלוּ׃",
+        "LXX": "καὶ κατακληρονομήσετε τὴν γῆν αὐτῶν ἐν κλήρῳ κατὰ φυλὰς αὐτῶν· τοῖς πλείοσιν πληθυνεῖτε τὴν κατάσχεσιν αὐτῶν, καὶ τοῖς ἐλάττοσιν ἐλαττώσετε τὴν κατάσχεσιν αὐτῶν· εἰς ὃ ἐὰν ἐξέλθῃ τὸ ὄνομα αὐτοῦ ἐκεῖ, αὐτοῦ ἔσται· κατὰ φυλὰς πατριῶν ὑμῶν κληρονομήσετε.",
+        "VUL": "quam dividetis vobis sorte. Pluribus dabitis latiorem, et paucis angustiorem. Singulis ut sors ceciderit, ita tribuetur hæreditas. Per tribus et familias possessio dividetur.",
+        "SYN": "и разделите землю по жребию на уделы племенам вашим: многочисленному дайте удел более, а малочисленному дай удел менее; кому где выйдет жребий, там ему и будет _удел;_ по коленам отцов ваших возьмите себе уделы;",
+        "NEO": "Vous partagerez le pays par le sort, selon vos familles ; vous donnerez un héritage plus grand à ceux qui sont en plus grand nombre, et tu donneras un héritage plus petit à ceux qui sont en plus petit nombre. Ce que le sort assignera à chacun lui appartiendra ; vous le recevrez en propriété, selon vos tribus patriarcales.",
+        "NAB": "You shall apportion the land among yourselves by lot, clan by clan, assigning a large heritage to a large group and a small heritage to a small group. Wherever anyone's lot falls, there shall his property be within the heritage of his ancestral tribe.",
+        "VAT_ES": "Además, se repartirán el país entre sus clanes por medio de un sorteo, asignando una herencia mayor al grupo más numeroso, y una herencia más pequeña al grupo más reducido: cada uno tendrá lo que le toque en suerte, y se repartirán la tierra entre las tribus patriarcales.",
+        "CEI": "Dividerete il paese a sorte secondo le vostre famiglie. A quelle che sono più numerose darete una porzione maggiore e a quelle che sono meno numerose darete una porzione minore. Ognuno avrà quello che gli sarà toccato in sorte; farete la divisione secondo le tribù dei vostri padri."
+      }
+    },
+    "55": {
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "WLC": "וְ/אִם לֹ֨א תוֹרִ֜ישׁוּ אֶת יֹשְׁבֵ֣י הָ/אָרֶץ֮ מִ/פְּנֵי/כֶם֒ וְ/הָיָה֙ אֲשֶׁ֣ר תּוֹתִ֣ירוּ מֵ/הֶ֔ם לְ/שִׂכִּים֙ בְּ/עֵ֣ינֵי/כֶ֔ם וְ/לִ/צְנִינִ֖ם בְּ/צִדֵּי/כֶ֑ם וְ/צָרֲר֣וּ אֶתְ/כֶ֔ם עַל הָ/אָ֕רֶץ אֲשֶׁ֥ר אַתֶּ֖ם יֹשְׁבִ֥ים בָּֽ/הּ׃",
+        "LXX": "ἐὰν δὲ μὴ ἀπολέσητε τοὺς κατοικοῦντας ἐπὶ τῆς γῆς ἀπὸ προσώπου ὑμῶν, καὶ ἔσται οὓς ἐὰν καταλίπητε ἐξ αὐτῶν, σκόλοπες ἐν τοῖς ὀφθαλμοῖς ὑμῶν καὶ βολίδες ἐν ταῖς πλευραῖς ὑμῶν, καὶ ἐχθρεύσουσιν ἐπὶ τῆς γῆς ἐφ’ ἣν ὑμεῖς κατοικήσετε·",
+        "VUL": "Sin autem nolueritis interficere habitatores terræ : qui remanserint, erunt vobis quasi clavi in oculis, et lanceæ in lateribus, et adversabuntur vobis in terra habitationis vestræ :",
+        "SYN": "если же вы не прогоните от себя жителей земли, то оставшиеся из них будут тернами для глаз ваших и иглами для боков ваших и будут теснить вас на земле, в которой вы будете жить,",
+        "NEO": "Mais si vous n’expulsez pas devant vous les habitants du pays, ceux d’entre eux que vous laisserez seront comme des épines dans vos yeux et comme des aiguillons dans vos flancs, et ils vous traiteront en ennemis dans le pays que vous allez habiter.",
+        "NAB": "\"But if you do not drive out the inhabitants of the land before you, those whom you allow to remain will become as barbs in your eyes and thorns in your sides, and they will harass you in the country where you live,",
+        "VAT_ES": "Pero si no despojan de sus dominios a los habitantes del país, los que ustedes hayan dejado serán como espinas en sus ojos y como aguijones en su costado, que los asediarán en la tierra donde habiten.",
+        "CEI": "Ma se non cacciate dinanzi a voi gli abitanti del paese, quelli di loro che vi avrete lasciati saranno per voi come spine negli occhi e pungoli nei fianchi e vi faranno tribolare nel paese che abiterete."
+      }
+    },
+    "56": {
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֗ה כַּ/אֲשֶׁ֥ר דִּמִּ֛יתִי לַ/עֲשׂ֥וֹת לָ/הֶ֖ם אֶֽעֱשֶׂ֥ה לָ/כֶֽם׃",
+        "LXX": "καὶ ἔσται καθότι διεγνώκειν ποιῆσαι αὐτούς, ποιήσω ὑμᾶς.",
+        "VUL": "et quidquid illis cogitaveram facere, vobis faciam.",
+        "SYN": "и тогда, что Я вознамерился сделать им, сделаю вам.",
+        "NEO": "Et je vous traiterai vous-même comme j’avais résolu de les traiter. »",
+        "NAB": "and I will treat you as I had intended to treat them.\"",
+        "VAT_ES": "Y Yo los trataré a ustedes como había decidido tratarlos a ellos.",
+        "CEI": "Allora io tratterò voi come mi ero proposto di trattare loro\"."
+      }
+    }
+  }
+}

@@ -1,0 +1,1040 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LEVI_014",
+  "book_key": "LEVI",
+  "sequence": 14,
+  "chapter_in": {
+    "MT": 14,
+    "VUL": 14,
+    "LXX": 14
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore aggiunse a Mosè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "זֹ֤את תִּֽהְיֶה֙ תּוֹרַ֣ת הַ/מְּצֹרָ֔ע בְּ/י֖וֹם טָהֳרָת֑/וֹ וְ/הוּבָ֖א אֶל הַ/כֹּהֵֽן׃",
+        "LXX": "Οὗτος ὁ νόμος τοῦ λεπροῦ, ᾗ ἂν ἡμέρᾳ καθαρισθῇ· καὶ προσαχθήσεται πρὸς τὸν ἱερέα,",
+        "VUL": "Hic est ritus leprosi, quando mundandus est. Adducetur ad sacerdotem :",
+        "SYN": "вот закон о прокаженном, когда надобно его очистить: приведут его к священнику;",
+        "NEO": "« Voici quelle sera la loi concernant le lépreux, pour le jour de sa purification. On l’amènera au prêtre,",
+        "NAB": "\"This is the law for the victim of leprosy at the time of his purification. He shall be brought to the priest,",
+        "VAT_ES": "Cuando haya que declarar puro a un leproso, se aplicará el siguiente ritual: La persona será presentada al sacerdote.",
+        "CEI": "\"Questa è la legge da applicare per il lebbroso per il giorno della sua purificazione. Egli sarà condotto al sacerdote."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/יָצָא֙ הַ/כֹּהֵ֔ן אֶל מִ/ח֖וּץ לַֽ/מַּחֲנֶ֑ה וְ/רָאָה֙ הַ/כֹּהֵ֔ן וְ/הִנֵּ֛ה נִרְפָּ֥א נֶֽגַע הַ/צָּרַ֖עַת מִן הַ/צָּרֽוּעַ׃",
+        "LXX": "καὶ ἐξελεύσεται ὁ ἱερεὺς ἔξω τῆς παρεμβολῆς, καὶ ὄψεται ὁ ἱερεύς, καὶ ἰδοὺ ἰᾶται ἡ ἁφὴ τῆς λέπρας ἀπὸ τοῦ λεπροῦ.",
+        "VUL": "qui egressus de castris, cum invenerit lepram esse mundatam,",
+        "SYN": "священник выйдет вон из стана, и если священник увидит, что прокаженный исцелился от болезни прокажения,",
+        "NEO": "et le prêtre, étant sorti du camp, l’examinera. Si le lépreux est guéri de la plaie de lèpre,",
+        "NAB": "who is to go outside the camp to examine him. If the priest finds that the sore of leprosy has healed in the leper,",
+        "VAT_ES": "Este saldrá fuera del campamento, y si ve que el leproso está realmente curado de su afección,",
+        "CEI": "Il sacerdote uscirà dall'accampamento e lo esaminerà; se riscontrerà che la piaga della lebbra è guarita nel lebbroso,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/צִוָּה֙ הַ/כֹּהֵ֔ן וְ/לָקַ֧ח לַ/מִּטַּהֵ֛ר שְׁתֵּֽי צִפֳּרִ֥ים חַיּ֖וֹת טְהֹר֑וֹת וְ/עֵ֣ץ אֶ֔רֶז וּ/שְׁנִ֥י תוֹלַ֖עַת וְ/אֵזֹֽב׃",
+        "LXX": "καὶ προστάξει ὁ ἱερεύς, καὶ λήμψονται τῷ κεκαθαρισμένῳ δύο ὀρνίθια ζῶντα καθαρά, καὶ ξύλον κέδρινον καὶ κεκλωσμένον κόκκινον καὶ ὕσσωπον·",
+        "VUL": "præcipiet ei, qui purificatur, ut offerat duos passeres vivos pro se, quibus vesci licitum est, et lignum cedrinum, vermiculumque et hyssopum.",
+        "SYN": "то священник прикажет взять для очищаемого двух птиц живых чистых, кедрового дерева, червленую нить и иссопа,",
+        "NEO": "le prêtre ordonnera que l’on prenne pour celui qui doit être purifié deux oiseaux vivants et purs, du bois de cèdre, du cramoisi et de l’hysope.",
+        "NAB": "he shall order the man who is to be purified, to get two live, clean birds, as well as some cedar wood, scarlet yarn, and hyssop.",
+        "VAT_ES": "mandará traer, para la persona que va a ser purificada, dos pájaros vivos puros, un trozo de madera de cedro, una cinta de púrpura escarlata y un ramillete de hisopo.",
+        "CEI": "ordinerà che si prendano, per la persona da purificare, due uccelli vivi, mondi, legno di cedro, panno scarlatto e issòpo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/צִוָּה֙ הַ/כֹּהֵ֔ן וְ/שָׁחַ֖ט אֶת הַ/צִּפּ֣וֹר הָ/אֶחָ֑ת אֶל כְּלִי חֶ֖רֶשׂ עַל מַ֥יִם חַיִּֽים׃",
+        "LXX": "καὶ προστάξει ὁ ἱερεὺς καὶ σφάξουσιν τὸ ὀρνίθιον τὸ ἓν εἰς ἄγγιον ὀστράκινον ἐφ’ ὕδατι ζῶντι·",
+        "VUL": "Et unum ex passeribus immolari jubebit in vase fictili super aquas viventes :",
+        "SYN": "и прикажет священник заколоть одну птицу над глиняным сосудом, над живою водою;",
+        "NEO": "Le prêtre fera égorger l’un des oiseaux au-dessus d’un vase de terre, sur de l’eau vive.",
+        "NAB": "The priest shall then order him to slay one of the birds over an earthen vessel with spring water in it.",
+        "VAT_ES": "Luego mandará que uno de los pájaros sea inmolado sobre una vasija de barro, que contenga agua proveniente de un manantial.",
+        "CEI": "Il sacerdote ordinerà di immolare uno degli uccelli in un vaso di terracotta con acqua viva."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אֶת הַ/צִּפֹּ֤ר הַֽ/חַיָּה֙ יִקַּ֣ח אֹתָ֔/הּ וְ/אֶת עֵ֥ץ הָ/אֶ֛רֶז וְ/אֶת שְׁנִ֥י הַ/תּוֹלַ֖עַת וְ/אֶת הָ/אֵזֹ֑ב וְ/טָבַ֨ל אוֹתָ֜/ם וְ/אֵ֣ת הַ/צִּפֹּ֣ר הַֽ/חַיָּ֗ה בְּ/דַם֙ הַ/צִּפֹּ֣ר הַ/שְּׁחֻטָ֔ה עַ֖ל הַ/מַּ֥יִם הַֽ/חַיִּֽים׃",
+        "LXX": "καὶ τὸ ὀρνίθιον τὸ ζῶν, λήμψεται αὐτὸ καὶ τὸ ξύλον τὸ κέδρινον καὶ τὸ κλωστὸν κόκκινον καὶ τὸν ὕσσωπον, καὶ βάψει αὐτὰ καὶ τὸ ὀρνίθιον τὸ ζῶν εἰς τὸ αἷμα τοῦ ὀρνιθίου τοῦ σφαγέντος ἐφ’ ὕδατι ζῶντι·",
+        "VUL": "alium autem vivum cum ligno cedrino, et cocco et hyssopo, tinget in sanguine passeris immolati,",
+        "SYN": "а сам он возьмет живую птицу, кедровое дерево, червленую нить и иссоп, и омочит их и живую птицу в крови птицы заколотой над живою водою,",
+        "NEO": "Puis, ayant pris l’oiseau vivant, le bois de cèdre, le cramoisi et l’hysope, il les trempera, ainsi que l’oiseau vivant, dans le sang de l’oiseau égorgé sur l’eau vive.",
+        "NAB": "Taking the living bird with the cedar wood, the scarlet yarn and the hyssop, the priest shall dip them all in the blood of the bird that was slain over the spring water,",
+        "VAT_ES": "Entonces tomará el pájaro vivo, la madera de cedro, la púrpura escarlata y el hisopo, y los mojará en la sangre del pájaro inmolado sobre el agua del manantial.",
+        "CEI": "Poi prenderà l'uccello vivo, il legno di cedro, il panno scarlatto e l'issòpo e li immergerà, con l'uccello vivo, nel sangue dell'uccello sgozzato sopra l'acqua viva."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הִזָּ֗ה עַ֧ל הַ/מִּטַּהֵ֛ר מִן הַ/צָּרַ֖עַת שֶׁ֣בַע פְּעָמִ֑ים וְ/טִ֣הֲר֔/וֹ וְ/שִׁלַּ֛ח אֶת הַ/צִּפֹּ֥ר הַֽ/חַיָּ֖ה עַל פְּנֵ֥י הַ/שָּׂדֶֽה׃",
+        "LXX": "καὶ περιρανεῖ ἐπὶ τὸν καθαρισθέντα ἀπὸ τῆς λέπρας ἑπτάκις, καὶ καθαρὸς ἔσται· καὶ ἐξαποστελεῖ τὸ ὀρνίθιον τὸ ζῶν εἰς τὸ πεδίον.",
+        "VUL": "quo asperget illum, qui mundandus est, septies, ut jure purgetur : et dimittet passerem vivum, ut in agrum avolet.",
+        "SYN": "и покропит на очищаемого от проказы семь раз, и объявит его чистым, и пустит живую птицу в поле.",
+        "NEO": "Il en aspergera sept fois celui qui doit être purifié de la lèpre, il le déclarera pur et lâchera dans les champs l’oiseau vivant.",
+        "NAB": "and then sprinkle seven times the man to be purified from his leprosy. When he has thus purified him, he shall let the living bird fly away over the countryside.",
+        "VAT_ES": "Hará siete aspersiones sobre el que debe ser purificado de la lepra, y después de declararlo puro, dejará en libertad al pájaro vivo.",
+        "CEI": "Ne aspergerà sette volte colui che deve essere purificato dalla lebbra; lo dichiarerà mondo e lascerà andare libero per i campi l'uccello vivo."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/כִבֶּס֩ הַ/מִּטַּהֵ֨ר אֶת בְּגָדָ֜י/ו וְ/גִלַּ֣ח אֶת כָּל שְׂעָר֗/וֹ וְ/רָחַ֤ץ בַּ/מַּ֨יִם֙ וְ/טָהֵ֔ר וְ/אַחַ֖ר יָב֣וֹא אֶל הַֽ/מַּחֲנֶ֑ה וְ/יָשַׁ֛ב מִ/ח֥וּץ לְ/אָהֳל֖/וֹ שִׁבְעַ֥ת יָמִֽים׃",
+        "LXX": "καὶ πλυνεῖ ὁ καθαρισθεὶς τὰ ἱμάτια αὐτοῦ, καὶ ξυρηθήσεται αὐτοῦ πᾶσαν τὴν τρίχα, καὶ λούσεται ἐν ὕδατι, καὶ καθαρὸς ἔσται, καὶ μετὰ ταῦτα εἰσελεύσεται εἰς τὴν παρεμβολήν· καὶ διατρίψει ἔξω τοῦ οἴκου αὐτοῦ ἑπτὰ ἡμέρας.",
+        "VUL": "Cumque laverit homo vestimenta sua, radet omnes pilos corporis, et lavabitur aqua : purificatusque ingredietur castra, ita dumtaxat ut maneat extra tabernaculum suum septem diebus,",
+        "SYN": "Очищаемый омоет одежды свои, острижет все волосы свои, омоется водою, и будет чист; потом войдет в стан и пробудет семь дней вне шатра своего;",
+        "NEO": "Celui qui se purifie lavera ses vêtements, rasera tout son poil et se baignera dans l’eau ; et il sera pur. Ensuite il pourra entrer dans le camp, mais il restera sept jours hors de sa tente.",
+        "NAB": "The man being purified shall then wash his garments and shave off all his hair and bathe in water; only when he is thus made clean may he come inside the camp; but he shall still remain outside his tent for seven days.",
+        "VAT_ES": "El que se purifica lavará su ropa, se afeitará todo el pelo, se bañará con agua, y quedará puro. después de esto podrá entrar en el campamento, pero tendrá que permanecer siete días fuera de su carpa.",
+        "CEI": "Colui che è purificato, si laverà le vesti, si raderà tutti i peli, si laverà nell'acqua e sarà mondo. Dopo questo potrà entrare nell'accampamento, ma resterà per sette giorni fuori della sua tenda."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֩ בַ/יּ֨וֹם הַ/שְּׁבִיעִ֜י יְגַלַּ֣ח אֶת כָּל שְׂעָר֗/וֹ אֶת רֹאשׁ֤/וֹ וְ/אֶת זְקָנ/וֹ֙ וְ/אֵת֙ גַּבֹּ֣ת עֵינָ֔י/ו וְ/אֶת כָּל שְׂעָר֖/וֹ יְגַלֵּ֑חַ וְ/כִבֶּ֣ס אֶת בְּגָדָ֗י/ו וְ/רָחַ֧ץ אֶת בְּשָׂר֛/וֹ בַּ/מַּ֖יִם וְ/טָהֵֽר׃",
+        "LXX": "καὶ ἔσται τῇ ἡμέρᾳ τῇ ἑβδόμῃ ξυρηθήσεται πᾶσαν τὴν τρίχα αὐτοῦ, τὴν κεφαλὴν αὐτοῦ καὶ τὸν πώγωνα καὶ τὰς ὀφρύας καὶ πᾶσαν τὴν τρίχα αὐτοῦ ξυρηθήσεται· καὶ πλυνεῖ τὰ ἱμάτια καὶ λούσεται τὸ σῶμα αὐτοῦ ὕδατι, καὶ καθαρὸς ἔσται.",
+        "VUL": "et die septimo radet capillos capitis, barbamque et supercilia, ac totius corporis pilos. Et lotis rursum vestibus et corpore,",
+        "SYN": "в седьмой день обреет все волосы свои, голову свою, бороду свою, брови глаз своих, все волосы свои обреет, и омоет одежды свои, и омоет тело свое водою, и будет чист;",
+        "NEO": "Le septième jour, il rasera tout son poil, ses cheveux, sa barbe, ses sourcils, il rasera tout son poil ; il lavera ses vêtements et baignera son corps dans l’eau, et il sera pur.",
+        "NAB": "On the seventh day he shall again shave off all the hair of his head, his beard, his eyebrows, and any other hair he may have, and also wash his garments and bathe his body in water; and so he will be clean.",
+        "VAT_ES": "Al séptimo día se afeitará todo el pelo –el cabello, la barba, las cajas y todo el resto del pelo– volverá a lavar su ropa, bañará su cuerpo con agua, y quedará puro.",
+        "CEI": "Il settimo giorno si raderà tutti i peli, il capo, la barba, le ciglia, insomma tutti i peli; si laverà le vesti e si bagnerà il corpo nell'acqua e sarà mondo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וּ/בַ/יּ֣וֹם הַ/שְּׁמִינִ֗י יִקַּ֤ח שְׁנֵֽי כְבָשִׂים֙ תְּמִימִ֔ים וְ/כַבְשָׂ֥ה אַחַ֛ת בַּת שְׁנָתָ֖/הּ תְּמִימָ֑ה וּ/שְׁלֹשָׁ֣ה עֶשְׂרֹנִ֗ים סֹ֤לֶת מִנְחָה֙ בְּלוּלָ֣ה בַ/שֶּׁ֔מֶן וְ/לֹ֥ג אֶחָ֖ד שָֽׁמֶן׃",
+        "LXX": "καὶ τῇ ἡμέρᾳ τῇ ὀγδόῃ λήμψεται δύο ἀμνοὺς ἐνιαυσίους ἀμώμους, καὶ πρόβατον ἐνιαύσιον ἄμωμον, καὶ τρία δέκατα σεμιδάλεως εἰς θυσίαν πεφυραμένης ἐν ἐλαίῳ, καὶ κοτύλην ἐλαίου μίαν·",
+        "VUL": "die octavo assumet duos agnos immaculatos, et ovem anniculam absque macula, et tres decimas similæ in sacrificium, quæ conspersa sit oleo, et seorsum olei sextarium.",
+        "SYN": "в восьмой день возьмет он двух овнов [однолетних] без порока, и одну овцу однолетнюю без порока, и три десятых части ефы пшеничной муки, смешанной с елеем, в приношение хлебное, и один лог елея;",
+        "NEO": "Le huitième jour, il prendra deux agneaux sans défaut et une brebis d’un an sans défaut, trois dixièmes d’épha de fleur de farine pétrie à l’huile, en oblation, et un log d’huile.",
+        "NAB": "\"On the eighth day he shall take two unblemished male lambs, one unblemished yearling ewe lamb, three tenths of an ephah of fine flour mixed with oil for a cereal offering, and one log of oil.",
+        "VAT_ES": "Al octavo día, tomará tres corderos –dos machos sin defecto y una hembra de un año sin defecto– traerá tres décimas partes de una medida de harina de la mejor calidad, amasada con aceite, y un poco más de medio litro de aceite.",
+        "CEI": "L'ottavo giorno prenderà due agnelli senza difetto, un'agnella di un anno senza difetto, tre decimi di efa di fior di farina, intrisa nell'olio, come oblazione, e un log di olio;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/הֶעֱמִ֞יד הַ/כֹּהֵ֣ן הַֽ/מְטַהֵ֗ר אֵ֛ת הָ/אִ֥ישׁ הַ/מִּטַּהֵ֖ר וְ/אֹתָ֑/ם לִ/פְנֵ֣י יְהוָ֔ה פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃",
+        "LXX": "καὶ στήσει ὁ ἱερεὺς ὁ καθαρίζων τὸν ἄνθρωπον τὸν καθαριζόμενον καὶ ταῦτα ἔναντι Κυρίου, ἐπὶ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου.",
+        "VUL": "Cumque sacerdos purificans hominem, statuerit eum, et hæc omnia coram Domino in ostio tabernaculi testimonii,",
+        "SYN": "священник очищающий поставит очищаемого человека с ними пред Господом у входа скинии собрания;",
+        "NEO": "Le prêtre qui fait la purification présentera l’homme qui se purifie et toutes ces choses devant \\+w Yahweh|strong=\"H3068\"\\+w**, à l’entrée de la tente de réunion.",
+        "NAB": "The priest who performs the purification ceremony shall place the man who is being purified, as well as all these offerings, before the LORD at the entrance of the meeting tent.",
+        "VAT_ES": "El sacerdote que realiza la purificación ubicará a la persona que se purifica, junto con sus ofrendas, a la entrada de la Carpa del Encuentro, delante del Señor.",
+        "CEI": "il sacerdote che fa la purificazione, presenterà l'uomo che si purifica e le cose suddette davanti al Signore, all'ingresso della tenda del convegno."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/לָקַ֨ח הַ/כֹּהֵ֜ן אֶת הַ/כֶּ֣בֶשׂ הָ/אֶחָ֗ד וְ/הִקְרִ֥יב אֹת֛/וֹ לְ/אָשָׁ֖ם וְ/אֶת לֹ֣ג הַ/שָּׁ֑מֶן וְ/הֵנִ֥יף אֹתָ֛/ם תְּנוּפָ֖ה לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ λήμψεται ὁ ἱερεὺς τὸν ἀμνὸν τὸν ἕνα, καὶ προσάξει αὐτὸν τῆς πλημμελίας, καὶ τὴν κοτύλην τοῦ ἐλαίου, καὶ ἀφοριεῖ αὐτὸ ἀφόρισμα ἔναντι Κυρίου.",
+        "VUL": "tollet agnum et offeret eum pro delicto, oleique sextarium : et oblatis ante Dominum omnibus,",
+        "SYN": "и возьмет священник одного овна, и представит его в жертву повинности, и лог елея, и принесет это, потрясая пред Господом;",
+        "NEO": "Le prêtre prendra l’un des agneaux, et l’offrira en sacrifice de réparation, ainsi que le log d’huile ; il les balancera en offrande balancée devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Taking one of the male lambs, the priest shall present it as a guilt offering, along with the log of oil, waving them as a wave offering before the LORD.",
+        "VAT_ES": "Luego tomará uno de los corderos para ofrecerlo junto con el aceite, en sacrificio de reparación, y hará con ellos el gesto de presentación delante del Señor.",
+        "CEI": "Il sacerdote prenderà uno degli agnelli e l'offrirà come sacrificio di riparazione, con il log d'olio, e li agiterà come offerta da agitare secondo il rito davanti al Signore."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/שָׁחַ֣ט אֶת הַ/כֶּ֗בֶשׂ בִּ֠/מְקוֹם אֲשֶׁ֨ר יִשְׁחַ֧ט אֶת הַֽ/חַטָּ֛את וְ/אֶת הָ/עֹלָ֖ה בִּ/מְק֣וֹם הַ/קֹּ֑דֶשׁ כִּ֡י כַּ֠/חַטָּאת הָ/אָשָׁ֥ם הוּא֙ לַ/כֹּהֵ֔ן קֹ֥דֶשׁ קָֽדָשִׁ֖ים הֽוּא׃",
+        "LXX": "καὶ σφάξουσιν τὸν ἀμνὸν ἐν τόπῳ οὗ σφάζουσιν τὰ ὁλοκαυτώματα καὶ τὰ περὶ ἁμαρτίας, ἐν τόπῳ ἁγίῳ· ἔστιν γὰρ τὸ περὶ ἁμαρτίας ὥσπερ τὸ τῆς πλημμελίας, ἔστιν τῷ ἱερεῖ· ἅγια ἁγίων ἐστίν.",
+        "VUL": "immolabit agnum, ubi solet immolari hostia pro peccato, et holocaustum, id est, in loco sancto. Sicut enim pro peccato, ita et pro delicto ad sacerdotem pertinet hostia : Sancta sanctorum est.",
+        "SYN": "и заколет овна на том месте, где заколают жертву за грех и всесожжение, на месте святом, ибо сия жертва повинности, подобно жертве за грех, принадлежит священнику: это великая святыня;",
+        "NEO": "Il immolera l’agneau dans le lieu où l’on immole les victimes pour le péché et l’holocauste, savoir, dans le lieu saint ; car dans le sacrifice de réparation, comme dans le sacrifice pour le péché, la victime appartient au prêtre : c’est une chose très sainte.",
+        "NAB": "(This lamb he shall slaughter in the sacred place where the sin offering and the holocaust are slaughtered; because, like the sin offering, the guilt offering belongs to the priest and is most sacred.)",
+        "VAT_ES": "Inmolará el cordero en el lugar sagrado donde se inmolan las víctimas del sacrificio por el pecado y del holocausto. Y esta víctima de reparación, como la del sacrificio por el pecado, será para el sacerdote: es una cosa santísima.",
+        "CEI": "Poi immolerà l'agnello nel luogo dove si immolano le vittime espiatorie e gli olocausti, cioè nel luogo sacro poiché il sacrificio di riparazione è per il sacerdote, come quello espiatorio: è cosa sacrosanta."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/לָקַ֣ח הַ/כֹּהֵן֮ מִ/דַּ֣ם הָ/אָשָׁם֒ וְ/נָתַן֙ הַ/כֹּהֵ֔ן עַל תְּנ֛וּךְ אֹ֥זֶן הַ/מִּטַּהֵ֖ר הַ/יְמָנִ֑ית וְ/עַל בֹּ֤הֶן יָד/וֹ֙ הַ/יְמָנִ֔ית וְ/עַל בֹּ֥הֶן רַגְל֖/וֹ הַ/יְמָנִֽית׃",
+        "LXX": "καὶ λήμψεται ὁ ἱερεὺς ἀπὸ τοῦ αἵματος τοῦ τῆς πλημμελίας, καὶ ἐπιθήσει ὁ ἱερεὺς ἐπὶ τὸν λοβὸν τοῦ ὠτὸς τοῦ καθαριζομένου τοῦ δεξιοῦ καὶ ἐπὶ τὸ ἄκρον τῆς χειρὸς τῆς δεξιᾶς καὶ ἐπὶ τὸ ἄκρον τοῦ ποδὸς τοῦ δεξιοῦ·",
+        "VUL": "Assumensque sacerdos de sanguine hostiæ, quæ immolata est pro delicto, ponet super extremum auriculæ dextræ ejus qui mundatur, et super pollices manus dextræ et pedis :",
+        "SYN": "и возьмет священник крови жертвы повинности, и возложит священник на край правого уха очищаемого и на большой палец правой руки его и на большой палец правой ноги его;",
+        "NEO": "Le prêtre, ayant pris du sang du sacrifice de réparation, en mettra sur le lobe de l’oreille droite de celui qui se purifie, sur le pouce de sa main droite et sur le gros orteil de son pied droit.",
+        "NAB": "Then the priest shall take some of the blood of the guilt offering and put it on the tip of the man's right ear, the thumb of his right hand, and the big toe of his right foot.",
+        "VAT_ES": "Luego el sacerdote tomará sangre de la víctima de reparación, y la pondrá sobre el lóbulo de la oreja derecha del que se purifica, sobre el pulgar de su mano derecha y el pulgar de su pie derecho.",
+        "CEI": "Il sacerdote prenderà sangue del sacrificio di riparazione e bagnerà il lobo dell'orecchio destro di colui che si purifica, il pollice della mano destra e l'alluce del piede destro."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/לָקַ֥ח הַ/כֹּהֵ֖ן מִ/לֹּ֣ג הַ/שָּׁ֑מֶן וְ/יָצַ֛ק עַל כַּ֥ף הַ/כֹּהֵ֖ן הַ/שְּׂמָאלִֽית׃",
+        "LXX": "καὶ λαβὼν ὁ ἱερεὺς ἀπὸ τῆς κοτύλης τοῦ ἐλαίου ἐπιχεεῖ ἐπὶ τὴν χεῖρα τοῦ ἱερέως τὴν ἀριστεράν,",
+        "VUL": "et de olei sextario mittet in manum suam sinistram,",
+        "SYN": "и возьмет священник из лога елея и польет на левую свою ладонь;",
+        "NEO": "Le prêtre prendra le log d’huile, et il en versera dans le creux de sa main gauche.",
+        "NAB": "The priest shall also take the log of oil and pour some of it into the palm of his own left hand;",
+        "VAT_ES": "En seguida, tomará el medio litro de aceite y derramará una parte de él sobre la palma de su mano izquierda.",
+        "CEI": "Poi, preso l'olio dal log, lo verserà sulla palma della sua mano sinistra;"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/טָבַ֤ל הַ/כֹּהֵן֙ אֶת אֶצְבָּע֣/וֹ הַ/יְמָנִ֔ית מִן הַ/שֶּׁ֕מֶן אֲשֶׁ֥ר עַל כַּפּ֖/וֹ הַ/שְּׂמָאלִ֑ית וְ/הִזָּ֨ה מִן הַ/שֶּׁ֧מֶן בְּ/אֶצְבָּע֛/וֹ שֶׁ֥בַע פְּעָמִ֖ים לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ βάψει τὸν δάκτυλον τὸν δεξιὸν ἀπὸ τοῦ ἐλαίου τοῦ ὄντος ἐπὶ τῆς χειρὸς τῆς ἀριστερᾶς, καὶ ῥανεῖ ἑπτάκις τῷ δακτύλῳ ἔναντι Κυρίου.",
+        "VUL": "tingetque digitum dextrum in eo, et asperget coram Domino septies.",
+        "SYN": "и омочит священник правый перст свой в елей, который на левой ладони его, и покропит елеем с перста своего семь раз пред лицем Господа;",
+        "NEO": "Le prêtre trempera le doigt de sa main droite dans l’huile qui est dans le creux de sa main gauche, et fera avec le doigt sept fois l’aspersion de l’huile devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "then, dipping his right forefinger in it, he shall sprinkle it seven times before the LORD.",
+        "VAT_ES": "Luego mojará un dedo de su mano derecha en el aceite que está en la palma de su mano izquierda, y hará con el dedo siete aspersiones de aceite delante del Señor.",
+        "CEI": "intingerà il dito della destra nell'olio che ha nella sinistra; con il dito spruzzerà sette volte quell'olio davanti al Signore."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וּ/מִ/יֶּ֨תֶר הַ/שֶּׁ֜מֶן אֲשֶׁ֣ר עַל כַּפּ֗/וֹ יִתֵּ֤ן הַ/כֹּהֵן֙ עַל תְּנ֞וּךְ אֹ֤זֶן הַ/מִּטַּהֵר֙ הַ/יְמָנִ֔ית וְ/עַל בֹּ֤הֶן יָד/וֹ֙ הַ/יְמָנִ֔ית וְ/עַל בֹּ֥הֶן רַגְל֖/וֹ הַ/יְמָנִ֑ית עַ֖ל דַּ֥ם הָ/אָשָֽׁם׃",
+        "LXX": "τὸ δὲ καταλειφθὲν ἔλαιον τὸ ὂν ἐν τῇ χειρὶ ἐπιθήσει ὁ ἱερεὺς ἐπὶ τὸν λοβὸν τοῦ ὠτὸς τοῦ καθαριζομένου τοῦ δεξιοῦ καὶ ἐπὶ τὸ ἄκρον τῆς χειρὸς τῆς δεξιᾶς καὶ ἐπὶ τὸ ἄκρον τοῦ ποδὸς τοῦ δεξιοῦ, ἐπὶ τὸν τόπον τοῦ αἵματος τοῦ τῆς πλημμελίας·",
+        "VUL": "Quod autem reliquum est olei in læva manu, fundet super extremum auriculæ dextræ ejus qui mundatur, et super pollices manus ac pedis dextri, et super sanguinem qui effusus est pro delicto,",
+        "SYN": "оставшийся же елей, который на ладони его, возложит священник на край правого уха очищаемого, на большой палец правой руки его и на большой палец правой ноги его, на _места,_ _где_ кровь жертвы повинности;",
+        "NEO": "Puis, de l’huile qui lui reste dans la main, le prêtre en mettra sur le lobe de l’oreille droite de celui qui se purifie, sur le pouce de sa main droite et sur le gros orteil de son pied droit, par-dessus le sang de la victime de réparation.",
+        "NAB": "Of the oil left in his hand the priest shall put some on the tip of the man's right ear, the thumb of his right hand, and the big toe of his right foot, over the blood of the guilt offering.",
+        "VAT_ES": "Después pondrá un poco del aceite que aún le queda en la mano sobre lóbulo de la oreja derecha de la persona que se purifica, sobre el pulgar de su mano derecha y el pulgar de su pie derecho, encima de la sangre del sacrificio de reparación.",
+        "CEI": "E del rimanente olio che tiene nella palma della mano, il sacerdote bagnerà il lobo dell'orecchio destro di colui che si purifica, il pollice della destra e l'alluce del piede destro, sopra il sangue del sacrificio di riparazione."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/הַ/נּוֹתָ֗ר בַּ/שֶּׁ֨מֶן֙ אֲשֶׁר֙ עַל כַּ֣ף הַ/כֹּהֵ֔ן יִתֵּ֖ן עַל רֹ֣אשׁ הַ/מִּטַּהֵ֑ר וְ/כִפֶּ֥ר עָלָ֛י/ו הַ/כֹּהֵ֖ן לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "τὸ δὲ καταλειφθὲν ἔλαιον τὸ ἐπὶ τῆς χειρὸς τοῦ ἱερέως ἐπιθήσει ὁ ἱερεὺς ἐπὶ τὴν κεφαλὴν τοῦ καθαρισθέντος, καὶ ἐξιλάσεται περὶ αὐτοῦ ὁ ἱερεὺς ἔναντι Κυρίου.",
+        "VUL": "et super caput ejus.",
+        "SYN": "а остальной елей, который на ладони священника, возложит он на голову очищаемого, и очистит его священник пред лицем Господа.",
+        "NEO": "Ce qui lui reste d’huile dans la main, le prêtre le mettra sur la tête de celui qui se purifie ; et le prêtre fera pour lui l’expiation devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The rest of the oil in his hand the priest shall put on the head of the man being purified. Thus shall the priest make atonement for him before the LORD.",
+        "VAT_ES": "Finalmente, el sacerdote derramará el resto del aceite sobre la cabeza del que se purifica. Así realizará el rito de expiación en favor de esa persona, delante del Señor.",
+        "CEI": "Il resto dell'olio che ha nella palma, il sacerdote lo verserà sul capo di colui che si purifica; così farà per lui il rito espiatorio davanti al Signore."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/עָשָׂ֤ה הַ/כֹּהֵן֙ אֶת הַ֣/חַטָּ֔את וְ/כִפֶּ֕ר עַל הַ/מִּטַּהֵ֖ר מִ/טֻּמְאָת֑/וֹ וְ/אַחַ֖ר יִשְׁחַ֥ט אֶת הָ/עֹלָֽה׃",
+        "LXX": "καὶ ποιήσει ὁ ἱερεὺς τὸ περὶ τῆς ἁμαρτίας, καὶ ἐξιλάσεται περὶ αὐτοῦ ὁ ἱερεὺς τοῦ ἀκαθάρτου τοῦ καθαριζομένου ἀπὸ τῆς ἁμαρτίας αὐτοῦ· καὶ μετὰ τοῦτο σφάξει ὁ ἱερεὺς τὸ ὁλοκαύτωμα.",
+        "VUL": "Rogabitque pro eo coram Domino, et faciet sacrificium pro peccato : tunc immolabit holocaustum,",
+        "SYN": "И совершит священник жертву за грех, и очистит очищаемого от нечистоты его; после того заколет _жертву_ всесожжения;",
+        "NEO": "Ensuite le prêtre offrira le sacrifice pour le péché, et il fera l’expiation pour celui qui se purifie de sa souillure. Enfin, ayant égorgé l’holocauste,",
+        "NAB": "Only after he has offered the sin offering in atonement for the man's uncleanness shall the priest slaughter the holocaust",
+        "VAT_ES": "Entonces, el sacerdote ofrecerá un sacrificio por el pecado y hará el rito de expiación en favor de la persona que se purifica de su impureza. Después de esto, inmolará la víctima para un holocausto,",
+        "CEI": "Poi il sacerdote offrirà il sacrificio espiatorio e compirà l'espiazione per colui che si purifica della sua immondezza; quindi immolerà l'olocausto."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/הֶעֱלָ֧ה הַ/כֹּהֵ֛ן אֶת הָ/עֹלָ֥ה וְ/אֶת הַ/מִּנְחָ֖ה הַ/מִּזְבֵּ֑חָ/ה וְ/כִפֶּ֥ר עָלָ֛י/ו הַ/כֹּהֵ֖ן וְ/טָהֵֽר׃",
+        "LXX": "καὶ ἀνοίσει ὁ ἱερεὺς τὸ ὁλοκαύτωμα καὶ τὴν θυσίαν ἐπὶ τὸ θυσιαστήριον ἀπέναντι Κυρίου· καὶ ἐξιλάσεται περὶ αὐτοῦ ὁ ἱερεύς, καὶ καθαρισθήσεται.",
+        "VUL": "et ponet illud in altari cum libamentis suis, et homo rite mundabitur.",
+        "SYN": "и возложит священник всесожжение и приношение хлебное на жертвенник; и очистит его священник, и он будет чист.",
+        "NEO": "le prêtre offrira sur l’autel l’holocauste avec l’oblation ; et il fera l’expiation pour cet homme, et il sera pur.",
+        "NAB": "and offer it, together with the cereal offering, on the altar before the LORD. When the priest has thus made atonement for him, the man will be clean.",
+        "VAT_ES": "y ofrecerá sobre el altar el holocausto y la oblación. Y cuando el sacerdote haya realizado el rito de expiación en favor de esa persona, esta quedará purificada.",
+        "CEI": "Offerto l'olocausto e l'oblazione sull'altare, il sacerdote eseguirà per lui il rito espiatorio e sarà mondo."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/אִם דַּ֣ל ה֗וּא וְ/אֵ֣ין יָד/וֹ֮ מַשֶּׂגֶת֒ וְ֠/לָקַח כֶּ֣בֶשׂ אֶחָ֥ד אָשָׁ֛ם לִ/תְנוּפָ֖ה לְ/כַפֵּ֣ר עָלָ֑י/ו וְ/עִשָּׂר֨וֹן סֹ֜לֶת אֶחָ֨ד בָּל֥וּל בַּ/שֶּׁ֛מֶן לְ/מִנְחָ֖ה וְ/לֹ֥ג שָֽׁמֶן׃",
+        "LXX": "Ἐὰν δὲ πένηται ἡ χεὶρ αὐτοῦ καὶ μὴ εὑρίσκῃ, λήμψεται ἀμνὸν ἕνα εἰς ὃ ἐπλημμέλησεν εἰς ἀφαίρεμα ὥστε ἐξιλάσασθαι περὶ αὐτοῦ, καὶ δέκατον σεμιδάλεως πεφυραμένης ἐν ἐλαίῳ εἰς θυσίαν, καὶ κοτύλην ἐλαίου μίαν,",
+        "VUL": "Quod si pauper est, et non potest manus ejus invenire quæ dicta sunt pro delicto, assumet agnum ad oblationem, ut roget pro eo sacerdos, decimamque partem similæ conspersæ oleo in sacrificium, et olei sextarium,",
+        "SYN": "Если же он беден и не имеет достатка, то пусть возьмет одного овна в жертву повинности для потрясания, чтоб очистить себя, и одну десятую часть _ефы_ пшеничной муки, смешанной с елеем, в приношение хлебное, и лог елея,",
+        "NEO": "S’il est pauvre et que ses moyens soient limités, il prendra un seul agneau qui sera offert en sacrifice de réparation, en offrande balancée, pour faire l’expiation pour lui. Il prendra un seul dixième d’épha de fleur de farine pétrie à l’huile pour l’oblation, et un log d’huile ;",
+        "NAB": "\"If a man is poor and cannot afford so much, he shall take one male lamb for a guilt offering, to be used as a wave offering in atonement for himself, one tenth of an ephah of fine flour mixed with oil for a cereal offering, a log of oil,",
+        "VAT_ES": "Si la persona es pobre y carece de recursos suficientes, tomará un solo cordero como víctima de reparación, que será ofrecido con el gesto de presentación, a fin de realizar el rito de expiación en su favor. Al mismo tiempo, ofrecerá la décima parte de una medida de harina de la mejor calidad para una oblación, con un poco más de medio litro de aceite.",
+        "CEI": "Se quel tale è povero e non ha mezzi sufficienti, prenderà un agnello come sacrificio di riparazione da offrire con il rito dell'agitazione e compiere l'espiazione per lui e un decimo di efa di fior di farina intrisa con olio, come oblazione, e un log di olio."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וּ/שְׁתֵּ֣י תֹרִ֗ים א֤וֹ שְׁנֵי֙ בְּנֵ֣י יוֹנָ֔ה אֲשֶׁ֥ר תַּשִּׂ֖יג יָד֑/וֹ וְ/הָיָ֤ה אֶחָד֙ חַטָּ֔את וְ/הָ/אֶחָ֖ד עֹלָֽה׃",
+        "LXX": "καὶ δύο τρυγόνας ἢ δύο νοσσοὺς περιστερῶν, ὅσα εὗρεν ἡ χεὶρ αὐτοῦ, καὶ ἔσται ἡ μία περὶ ἁμαρτίας καὶ ἡ μία εἰς ὁλοκαύτωμα·",
+        "VUL": "duosque turtures sive duos pullos columbæ, quorum unus sit pro peccato, et alter in holocaustum :",
+        "SYN": "и двух горлиц или двух молодых голубей, что достанет рука его, одну _из_ _птиц_ в жертву за грех, а другую во всесожжение;",
+        "NEO": "ainsi que deux tourterelles ou deux jeunes pigeons, selon ses moyens, l’un pour le sacrifice pour le péché, l’autre pour l’holocauste.",
+        "NAB": "and two turtledoves or pigeons, which he can more easily afford, the one as a sin offering and the other as a holocaust.",
+        "VAT_ES": "y dos torcazas o dos pichones de paloma, según sus posibilidades: uno para el sacrificio por el pecado y otro para el holocausto.",
+        "CEI": "Prenderà anche due tortore o due colombi, secondo i suoi mezzi; uno sarà per il sacrificio espiatorio e l'altro per l'olocausto."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/הֵבִ֨יא אֹתָ֜/ם בַּ/יּ֧וֹם הַ/שְּׁמִינִ֛י לְ/טָהֳרָת֖/וֹ אֶל הַ/כֹּהֵ֑ן אֶל פֶּ֥תַח אֹֽהֶל מוֹעֵ֖ד לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ προσοίσει αὐτὰ τῇ ἡμέρᾳ τῇ ὀγδόῃ εἰς τὸ καθαρίσαι αὐτὸν πρὸς τὸν ἱερέα, ἐπὶ τὴν θύραν τῆς σκηνῆς τοῦ μαρτυρίου, ἔναντι Κυρίου.",
+        "VUL": "offeretque ea die octavo purificationis suæ sacerdoti, ad ostium tabernaculi testimonii coram Domino.",
+        "SYN": "и принесет их в восьмой день очищения своего к священнику ко входу скинии собрания, пред лице Господа;",
+        "NEO": "Le huitième jour, il les apportera au prêtre pour sa purification, à l’entrée de la tente de réunion, devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "On the eighth day of his purification he shall bring them to the priest, at the entrance of the meeting tent before the LORD.",
+        "VAT_ES": "Al octavo día, presentará todo esto al sacerdote, para su purificación, a la entrada de la Carpa del Encuentro, delante del Señor.",
+        "CEI": "L'ottavo giorno porterà per la sua purificazione queste cose al sacerdote, all'ingresso della tenda del convegno, davanti al Signore."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/לָקַ֧ח הַ/כֹּהֵ֛ן אֶת כֶּ֥בֶשׂ הָ/אָשָׁ֖ם וְ/אֶת לֹ֣ג הַ/שָּׁ֑מֶן וְ/הֵנִ֨יף אֹתָ֧/ם הַ/כֹּהֵ֛ן תְּנוּפָ֖ה לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ λαβὼν ὁ ἱερεὺς τὸν ἀμνὸν τῆς πλημμελίας καὶ τὴν κοτύλην τοῦ ἐλαίου ἐπιθήσει αὐτὰ ἐπίθεμα ἔναντι Κυρίου.",
+        "VUL": "Qui suscipiens agnum pro delicto et sextarium olei, levabit simul :",
+        "SYN": "священник возьмет овна жертвы повинности и лог елея, и принесет это священник, потрясая пред Господом;",
+        "NEO": "Le prêtre prendra l’agneau pour le sacrifice de réparation, et le log d’huile, et les balancera devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Taking the guilt-offering lamb, along with the log of oil, the priest shall wave them as a wave offering before the LORD.",
+        "VAT_ES": "Entonces el sacerdote tomará el cordero del sacrificio de reparación y el medio litro de aceite, y los ofrecerá al Señor con el gesto de presentación.",
+        "CEI": "Il sacerdote prenderà l'agnello del sacrificio di riparazione e il log d'olio e li agiterà come offerta da agitare ritualmente davanti al Signore."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/שָׁחַט֮ אֶת כֶּ֣בֶשׂ הָֽ/אָשָׁם֒ וְ/לָקַ֤ח הַ/כֹּהֵן֙ מִ/דַּ֣ם הָֽ/אָשָׁ֔ם וְ/נָתַ֛ן עַל תְּנ֥וּךְ אֹֽזֶן הַ/מִּטַּהֵ֖ר הַ/יְמָנִ֑ית וְ/עַל בֹּ֤הֶן יָד/וֹ֙ הַ/יְמָנִ֔ית וְ/עַל בֹּ֥הֶן רַגְל֖/וֹ הַ/יְמָנִֽית׃",
+        "LXX": "καὶ σφάξει τὸν ἀμνὸν τῆς πλημμελίας, καὶ λήμψεται ὁ ἱερεὺς ἀπὸ τοῦ αἵματος τοῦ τῆς πλημμελίας, καὶ ἐπιθήσει ἐπὶ τὸν λοβὸν τοῦ ὠτὸς τοῦ δεξιοῦ τοῦ καθαριζομένου καὶ ἐπὶ τὸ ἄκρον τῆς χειρὸς τῆς δεξιᾶς καὶ ἐπὶ τὸ ἄκρον τοῦ ποδὸς τοῦ δεξιοῦ.",
+        "VUL": "immolatoque agno, de sanguine ejus ponet super extremum auriculæ dextræ illius qui mundatur, et super pollices manus ejus ac pedis dextri :",
+        "SYN": "и заколет овна в жертву повинности, и возьмет священник крови жертвы повинности, и возложит на край правого уха очищаемого и на большой палец правой руки его и на большой палец правой ноги его;",
+        "NEO": "Et, après avoir immolé l’agneau du sacrifice de réparation, le prêtre prendra du sang du sacrifice de réparation et en mettra sur le lobe de l’oreille droite de celui qui se purifie, sur le pouce de sa main droite et sur le gros orteil de son pied droit.",
+        "NAB": "When he has slaughtered the guilt-offering lamb, he shall take some of its blood, and put it on the tip of the right ear of the man being purified, on the thumb of his right hand, and on the big toe of his right foot.",
+        "VAT_ES": "Después de haber inmolado el cordero del sacrificio de reparación, el sacerdote tomará sangre de la víctima de reparación y la pondrá sobre el lóbulo de la oreja derecha del que se purifica, y sobre el pulgar de su mano derecha y el pulgar de su pie derecho.",
+        "CEI": "Poi immolerà l'agnello del sacrificio di riparazione, prenderà sangue della vittima di riparazione e bagnerà il lobo dell'orecchio destro di colui che si purifica, il pollice della mano destra e l'alluce del piede destro."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וּ/מִן הַ/שֶּׁ֖מֶן יִצֹ֣ק הַ/כֹּהֵ֑ן עַל כַּ֥ף הַ/כֹּהֵ֖ן הַ/שְּׂמָאלִֽית׃",
+        "LXX": "καὶ ἀπὸ τοῦ ἐλαίου ἐπιχεεῖ ὁ ἱερεὺς ἐπὶ τὴν χεῖρα τοῦ ἱερέως τὴν ἀριστεράν·",
+        "VUL": "olei vero partem mittet in manum suam sinistram,",
+        "SYN": "и нальет священник елея на левую свою ладонь,",
+        "NEO": "Le prêtre versera ensuite de l’huile dans le creux de sa main gauche.",
+        "NAB": "The priest shall then pour some of the oil into the palm of his own left hand",
+        "VAT_ES": "En seguida, derramará un poco de aceite sobre la palma de su mano izquierda,",
+        "CEI": "Il sacerdote si verserà di quell'olio sulla palma della mano sinistra."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/הִזָּ֤ה הַ/כֹּהֵן֙ בְּ/אֶצְבָּע֣/וֹ הַ/יְמָנִ֔ית מִן הַ/שֶּׁ֕מֶן אֲשֶׁ֥ר עַל כַּפּ֖/וֹ הַ/שְּׂמָאלִ֑ית שֶׁ֥בַע פְּעָמִ֖ים לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ ῥανεῖ ὁ ἱερεὺς τῷ δακτύλῳ τῷ δεξιῷ ἀπὸ τοῦ ἐλαίου τοῦ ἐν τῇ χειρὶ αὐτοῦ τῇ ἀριστερᾷ ἑπτάκις ἔναντι Κυρίου·",
+        "VUL": "in quo tingens digitum dextræ manus asperget septies coram Domino :",
+        "SYN": "и елеем, который на левой ладони его, покропит священник с правого перста своего семь раз пред лицем Господним;",
+        "NEO": "Le prêtre fera avec le doigt de sa main droite l’aspersion de l’huile qui est dans sa main gauche, sept fois devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "and with his right forefinger sprinkle it seven times before the LORD.",
+        "VAT_ES": "y con el dedo de su mano derecha hará siete aspersiones de aceite,",
+        "CEI": "Con il dito della sua destra spruzzerà sette volte quell'olio che tiene nella palma sinistra davanti al Signore."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/נָתַ֨ן הַ/כֹּהֵ֜ן מִן הַ/שֶּׁ֣מֶן אֲשֶׁ֣ר עַל כַּפּ֗/וֹ עַל תְּנ֞וּךְ אֹ֤זֶן הַ/מִּטַּהֵר֙ הַ/יְמָנִ֔ית וְ/עַל בֹּ֤הֶן יָד/וֹ֙ הַ/יְמָנִ֔ית וְ/עַל בֹּ֥הֶן רַגְל֖/וֹ הַ/יְמָנִ֑ית עַל מְק֖וֹם דַּ֥ם הָ/אָשָֽׁם׃",
+        "LXX": "καὶ ἐπιθήσει ὁ ἱερεὺς ἀπὸ τοῦ ἐλαίου τοῦ ἐπὶ τῆς χειρὸς αὐτοῦ ἐπὶ τὸν λοβὸν τοῦ ὠτὸς τοῦ καθαριζομένου τοῦ δεξιοῦ καὶ ἐπὶ τὸ ἄκρον τῆς χειρὸς αὐτοῦ τῆς δεξιᾶς καὶ ἐπὶ τὸ ἄκρον τοῦ ποδὸς αὐτοῦ τοῦ δεξιοῦ, ἐπὶ τὸν τόπον τοῦ αἵματος τοῦ τῆς πλημμελίας·",
+        "VUL": "tangetque extremum dextræ auriculæ illius qui mundatur, et pollices manus ac pedis dextri, in loco sanguinis qui effusus est pro delicto :",
+        "SYN": "и возложит священник елея, который на ладони его, на край правого уха очищаемого, на большой палец правой руки его и на большой палец правой ноги его, на места, _где_ кровь жертвы повинности;",
+        "NEO": "Le prêtre mettra de l’huile qui est dans sa main sur le lobe de l’oreille droite de celui qui se purifie, sur le pouce de sa main droite et sur le gros orteil de son pied droit, à la place où il a mis du sang de la victime de réparation.",
+        "NAB": "Some of the oil in his hand the priest shall also put on the tip of the man's right ear, the thumb of his right hand, and the big toe of his right foot, over the blood of the guilt offering.",
+        "VAT_ES": "y pondrá un poco del aceite que tiene en su mano sobre el lóbulo de la oreja derecha de la persona que se purifica, y sobre el pulgar de su mano derecha y el pulgar de su pie derecho, en el mismo lugar donde puso la sangre de la víctima de reparación.",
+        "CEI": "Poi bagnerà con l'olio che tiene nella palma, il lobo dell'orecchio destro di colui che si purifica, il pollice della mano destra e l'alluce del piede destro, sul luogo dove ha messo il sangue del sacrificio di riparazione."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/הַ/נּוֹתָ֗ר מִן הַ/שֶּׁ֨מֶן֙ אֲשֶׁר֙ עַל כַּ֣ף הַ/כֹּהֵ֔ן יִתֵּ֖ן עַל רֹ֣אשׁ הַ/מִּטַּהֵ֑ר לְ/כַפֵּ֥ר עָלָ֖י/ו לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "τὸ δὲ καταλειφθὲν ἀπὸ τοῦ ἐλαίου τὸ ὂν ἐπὶ τῆς χειρὸς τοῦ ἱερέως ἐπιθήσει ἐπὶ τὴν κεφαλὴν τοῦ καθαρισθέντος, καὶ ἐξιλάσεται περὶ αὐτοῦ ὁ ἱερεὺς ἔναντι Κυρίου.",
+        "VUL": "reliquam autem partem olei, quæ est in sinistra manu, mittet super caput purificati, ut placet pro eo Dominum :",
+        "SYN": "а остальной елей, который на ладони священника, возложит он на голову очищаемого, чтоб очистить его пред лицем Господа;",
+        "NEO": "Ce qui lui restera d’huile dans la main, le prêtre le mettra sur la tête de celui qui se purifie, afin de faire pour lui l’expiation devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "The rest of the oil in his hand the priest shall put on the man's head. Thus shall he make atonement for him before the LORD.",
+        "VAT_ES": "Luego pondrá el resto del aceite que aún le queda en la mano sobre la cabeza de la persona que se purifica, para realizar el rito de expiación en favor de él, delante del Señor.",
+        "CEI": "Il resto dell'olio che ha nella palma della mano, il sacerdote lo verserà sul capo di colui che si purifica, per fare espiazione per lui davanti al Signore."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/עָשָׂ֤ה אֶת הָֽ/אֶחָד֙ מִן הַ/תֹּרִ֔ים א֖וֹ מִן בְּנֵ֣י הַ/יּוֹנָ֑ה מֵ/אֲשֶׁ֥ר תַּשִּׂ֖יג יָדֽ/וֹ׃",
+        "LXX": "καὶ ποιήσει μίαν τῶν τρυγόνων ἢ ἀπὸ τῶν νοσσῶν τῶν περιστερῶν, καθότι εὗρεν αὐτοῦ ἡ χείρ,",
+        "VUL": "et turturem sive pullum columbæ offeret,",
+        "SYN": "и принесет одну из горлиц или одного из молодых голубей, что достанет рука _очищаемого,_",
+        "NEO": "Puis il offrira l’une des tourterelles ou l’un des jeunes pigeons qu’il aura pu se procurer,",
+        "NAB": "Then, of the turtledoves or pigeons, such as the man can afford,",
+        "VAT_ES": "Después ofrecerá las dos torcazas o los dos pichones de paloma –según hayan sido sus posibilidades–",
+        "CEI": "Poi sacrificherà una delle tortore o uno dei due colombi, che ha potuto procurarsi;"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "אֵ֣ת אֲשֶׁר תַּשִּׂ֞יג יָד֗/וֹ אֶת הָ/אֶחָ֥ד חַטָּ֛את וְ/אֶת הָ/אֶחָ֥ד עֹלָ֖ה עַל הַ/מִּנְחָ֑ה וְ/כִפֶּ֧ר הַ/כֹּהֵ֛ן עַ֥ל הַ/מִּטַּהֵ֖ר לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "τὴν μίαν περὶ ἁμαρτίας καὶ τὴν μίαν εἰς ὁλοκαύτωμα σὺν τῇ θυσίᾳ· καὶ ἐξιλάσεται ὁ ἱερεὺς περὶ τοῦ καθαριζομένου ἔναντι Κυρίου.",
+        "VUL": "unum pro delicto, et alterum in holocaustum cum libamentis suis.",
+        "SYN": "из того, что достанет рука его, одну _птицу_ в жертву за грех, а другую во всесожжение, вместе с приношением хлебным; и очистит священник очищаемого пред лицем Господа.",
+        "NEO": "l’un en sacrifice pour le péché, l’autre en holocauste, avec oblation ; le prêtre fera ainsi, pour celui qui se purifie, l’expiation devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "the priest shall offer up one as a sin offering and the other as a holocaust, along with the cereal offering. Thus shall the priest make atonement before the LORD for the man who is to be purified.",
+        "VAT_ES": "uno como sacrificio por el pecado, y el otro como holocausto; este último irá acompañado de la oblación. De esta manera, el sacerdote practicará el rito de expiación delante del Señor, en favor de la persona que debe ser purificada.",
+        "CEI": "delle vittime che ha in mano, una l'offrirà come sacrificio espiatorio e l'altra come olocausto, insieme con l'oblazione; il sacerdote farà il rito espiatorio davanti al Signore per lui."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "זֹ֣את תּוֹרַ֔ת אֲשֶׁר בּ֖/וֹ נֶ֣גַע צָרָ֑עַת אֲשֶׁ֛ר לֹֽא תַשִּׂ֥יג יָד֖/וֹ בְּ/טָהֳרָתֽ/וֹ׃",
+        "LXX": "οὗτος ὁ νόμος ἐν ᾧ ἐστὶν ἡ ἁφὴ τῆς λέπρας καὶ τοῦ μὴ εὑρίσκοντος τῇ χειρὶ εἰς τὸν καθαρισμὸν αὐτοῦ.",
+        "VUL": "Hoc est sacrificium leprosi, qui habere non potest omnia in emundationem sui.",
+        "SYN": "Вот закон о прокаженном, который во время очищения своего не имеет достатка.",
+        "NEO": "Telle est la loi pour la purification de celui qui a une plaie de lèpre et dont les moyens sont limités. »",
+        "NAB": "This is the law for one afflicted with leprosy who has insufficient means for his purification.\"",
+        "VAT_ES": "Este será el ritual para la purificación del leproso que carece de recursos suficientes.",
+        "CEI": "Questa è la legge relativa a colui che è affetto da piaga di lebbra e non ha mezzi per procurarsi ciò che è richiesto per la sua purificazione\"."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר יְהוָ֔ה אֶל מֹשֶׁ֥ה וְ/אֶֽל אַהֲרֹ֖ן לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν καὶ Ἀαρὼν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen et Aaron, dicens :",
+        "SYN": "И сказал Господь Моисею и Аарону, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse et à Aaron, en disant :",
+        "NAB": "The LORD said to Moses and Aaron,",
+        "VAT_ES": "El Señor dijo a Moisés y a Aarón:",
+        "CEI": "Il Signore disse ancora a Mosè e ad Aronne:"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "כִּ֤י תָבֹ֨אוּ֙ אֶל אֶ֣רֶץ כְּנַ֔עַן אֲשֶׁ֥ר אֲנִ֛י נֹתֵ֥ן לָ/כֶ֖ם לַ/אֲחֻזָּ֑ה וְ/נָתַתִּי֙ נֶ֣גַע צָרַ֔עַת בְּ/בֵ֖ית אֶ֥רֶץ אֲחֻזַּתְ/כֶֽם׃",
+        "LXX": "Ὡς ἂν εἰσέλθητε εἰς τὴν γῆν τῶν Χαναναίων, ἣν ἐγὼ δίδωμι ὑμῖν ἐν κτήσει, καὶ δώσω ἁφὴν λέπρας ἐν ταῖς οἰκίαις τῆς γῆς τῆς ἐνκτήτου ὑμῖν,",
+        "VUL": "Cum ingressi fueritis terram Chanaan, quam ego dabo vobis in possessionem, si fuerit plaga lepræ in ædibus,",
+        "SYN": "когда войдете в землю Ханаанскую, которую Я даю вам во владение, и Я наведу язву проказы на домы в земле владения вашего,",
+        "NEO": "« Lorsque vous serez entrés dans le pays de Canaan, dont je vous donne la possession, si je mets la plaie de lèpre sur une maison du pays que vous posséderez,",
+        "NAB": "\"When you come into the land of Canaan, which I am giving you to possess, if I put a leprous infection on any house of the land you occupy,",
+        "VAT_ES": "Cuando ustedes entren en la tierra de Canaán –esa tierra que yo les daré en posesión– y cuando haya aparecer manchas de lepra en alguna de las casas del país que ustedes van a poseer,",
+        "CEI": "\"Quando sarete entrati nel paese di Cànaan, che io sto per darvi in possesso, qualora io mandi un'infezione di lebbra in una casa del paese di vostra proprietà,"
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וּ/בָא֙ אֲשֶׁר ל֣/וֹ הַ/בַּ֔יִת וְ/הִגִּ֥יד לַ/כֹּהֵ֖ן לֵ/אמֹ֑ר כְּ/נֶ֕גַע נִרְאָ֥ה לִ֖/י בַּ/בָּֽיִת׃",
+        "LXX": "καὶ ἥξει τὶνος αὐτοῦ ἡ οἰκία καὶ ἀναγγελεῖ τῷ ἱερεῖ λέγων Ὥσπερ ἁφὴ ἑώραταί μου ἐν τῇ οἰκίᾳ.",
+        "VUL": "ibit cujus est domus, nuntians sacerdoti, et dicet : Quasi plaga lepræ videtur mihi esse in domo mea.",
+        "SYN": "тогда тот, чей дом, должен пойти и сказать священнику: у меня на доме показалась как бы язва.",
+        "NEO": "le propriétaire de la maison ira le déclarer au prêtre, et dira : J’aperçois comme une plaie de lèpre à ma maison.",
+        "NAB": "the owner of the house shall come and report to the priest, 'It looks to me as if my house were infected.'",
+        "VAT_ES": "el dueño de la casa irá a decir al sacerdote: «He visto en mi casa algo así como lepra».",
+        "CEI": "il padrone della casa andrà a dichiararlo al sacerdote, dicendo: Mi pare che in casa mia ci sia come della lebbra."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וְ/צִוָּ֨ה הַ/כֹּהֵ֜ן וּ/פִנּ֣וּ אֶת הַ/בַּ֗יִת בְּ/טֶ֨רֶם יָבֹ֤א הַ/כֹּהֵן֙ לִ/רְא֣וֹת אֶת הַ/נֶּ֔גַע וְ/לֹ֥א יִטְמָ֖א כָּל אֲשֶׁ֣ר בַּ/בָּ֑יִת וְ/אַ֥חַר כֵּ֛ן יָבֹ֥א הַ/כֹּהֵ֖ן לִ/רְא֥וֹת אֶת הַ/בָּֽיִת׃",
+        "LXX": "καὶ προστάξει ὁ ἱερεὺς ἀποσκευάσαι τὴν οἰκίαν πρὸ τοῦ εἰσελθόντα ἰδεῖν τὸν ἱερέα τὴν οἰκίαν, καὶ οὐ μὴ ἀκάθαρτα γένηται ὅσα ἐὰν ᾖ ἐν τῇ οἰκίᾳ· καὶ μετὰ ταῦτα εἰσελεύσεται ὁ ἱερεὺς καταμαθεῖν τὴν οἰκίαν.",
+        "VUL": "At ille præcipiet ut efferant universa de domo, priusquam ingrediatur eam, et videat utrum leprosa sit, ne immunda fiant omnia quæ in domo sunt. Intrabitque postea ut consideret lepram domus :",
+        "SYN": "Священник прикажет опорожнить дом, прежде нежели войдет священник осматривать язву, чтобы не сделалось нечистым все, что в доме; после сего придет священник осматривать дом.",
+        "NEO": "Le prêtre, avant d’y entrer pour examiner la plaie, fera vider la maison, afin que tout ce qui s’y trouve ne devienne pas impur ; après quoi, le prêtre entrera pour examiner la maison.",
+        "NAB": "The priest shall then order the house to be cleared out before he goes in to examine the infection, lest everything in the house become unclean. Only after this is he to go in to examine the house.",
+        "VAT_ES": "Antes de entrar a examinar las manchas, el sacerdote ordenará que la desocupen, para que nada de lo que hay en ella se vuelva impuro. Luego entrará a examinar la casa,",
+        "CEI": "Allora il sacerdote ordinerà di sgomberare la casa prima che egli vi entri per esaminare la macchia sospetta perché quanto è nella casa non diventi immondo. Dopo questo, il sacerdote entrerà per esaminare la casa."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וְ/רָאָ֣ה אֶת הַ/נֶּ֗גַע וְ/הִנֵּ֤ה הַ/נֶּ֨גַע֙ בְּ/קִירֹ֣ת הַ/בַּ֔יִת שְׁקַֽעֲרוּרֹת֙ יְרַקְרַקֹּ֔ת א֖וֹ אֲדַמְדַּמֹּ֑ת וּ/מַרְאֵי/הֶ֥ן שָׁפָ֖ל מִן הַ/קִּֽיר׃",
+        "LXX": "καὶ ὄψεται τὴν ἁφὴν ἐν τοῖς τοίχοις τῆς οἰκίας, κοιλάδας χλωριζούσας, καὶ ἡ ὄψις αὐτῶν ταπεινοτέρα τῶν τοίχων·",
+        "VUL": "et cum viderit in parietibus illius quasi valliculas pallore sive rubore deformes, et humiliores superficie reliqua,",
+        "SYN": "Если он, осмотрев язву, увидит, что язва на стенах дома состоит из зеленоватых или красноватых ямин, которые окажутся углубленными в стене,",
+        "NEO": "Le prêtre examinera la plaie. Si la plaie qui est aux murs de la maison présente des cavités verdâtres ou rougeâtres, paraissant enfoncées dans le mur,",
+        "NAB": "If the priest, on examining it, finds that the infection on the walls of the house consists of greenish or reddish depressions which seem to go deeper than the surface of the wall,",
+        "VAT_ES": "y si ve que las manchas formadas en las paredes son cavidades verduscas o rojizas, que aparecen más hundidas que el resto de la pared,",
+        "CEI": "Esaminerà dunque la macchia; se vedrà che l'infezione sui muri della casa consiste in cavità verdastre o rossastre, che appaiono più profonde della superficie della parete,"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וְ/יָצָ֧א הַ/כֹּהֵ֛ן מִן הַ/בַּ֖יִת אֶל פֶּ֣תַח הַ/בָּ֑יִת וְ/הִסְגִּ֥יר אֶת הַ/בַּ֖יִת שִׁבְעַ֥ת יָמִֽים׃",
+        "LXX": "καὶ ἐξελθὼν ὁ ἱερεὺς ἐκ τῆς οἰκίας ἐπὶ τὴν θύραν τῆς οἰκίας, καὶ ἀφοριεῖ ὁ ἱερεὺς τήν οἰκίαν ἑπτὰ ἡμέρας.",
+        "VUL": "egredietur ostium domus, et statim claudet illam septem diebus.",
+        "SYN": "то священник выйдет из дома к дверям дома и запрет дом на семь дней.",
+        "NEO": "le prêtre sortira de la maison jusqu’à la porte de la maison, et il fera fermer la maison pour sept jours.",
+        "NAB": "he shall close the door of the house behind him and quarantine the house for seven days.",
+        "VAT_ES": "el sacerdote saldrá a la puerta de la casa y la mantendrá clausurada durante siete días.",
+        "CEI": "il sacerdote uscirà dalla casa, alla porta, e farà chiudere la casa per sette giorni."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וְ/שָׁ֥ב הַ/כֹּהֵ֖ן בַּ/יּ֣וֹם הַ/שְּׁבִיעִ֑י וְ/רָאָ֕ה וְ/הִנֵּ֛ה פָּשָׂ֥ה הַ/נֶּ֖גַע בְּ/קִירֹ֥ת הַ/בָּֽיִת׃",
+        "LXX": "καὶ ἐπανήξει ὁ ἱερεὺς τῇ ἡμέρᾳ τῇ ἑβδόμῃ καὶ ὄψεται τὴν οἰκίαν, καὶ ἰδοὺ οὐ διεχύθη ἡ ἁφὴ ἐν τοῖς τοίχοις τῆς οἰκίας·",
+        "VUL": "Reversusque die septimo, considerabit eam : si invenerit crevisse lepram,",
+        "SYN": "В седьмой день опять придет священник, и если увидит, что язва распространилась по стенам дома,",
+        "NEO": "Le prêtre y retournera le septième jour. S’il voit que la plaie s’est étendue sur les murs de la maison,",
+        "NAB": "On the seventh day the priest shall return to examine the house again. If he finds that the infection has spread on the walls,",
+        "VAT_ES": "Al séptimo día regresará, y si la mancha se ha extendido por las paredes de la casa,",
+        "CEI": "Il settimo giorno il sacerdote vi tornerà e se, esaminandola, riscontrerà che la macchia si è allargata sulle pareti della casa,"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וְ/צִוָּה֙ הַ/כֹּהֵ֔ן וְ/חִלְּצוּ֙ אֶת הָ֣/אֲבָנִ֔ים אֲשֶׁ֥ר בָּ/הֵ֖ן הַ/נָּ֑גַע וְ/הִשְׁלִ֤יכוּ אֶתְ/הֶן֙ אֶל מִ/ח֣וּץ לָ/עִ֔יר אֶל מָק֖וֹם טָמֵֽא׃",
+        "LXX": "καὶ προστάξει ὁ ἱερεὺς καὶ ἐξελοῦσιν τοὺς λίθους· ἔστιν ἡ ἁφή· καὶ ἐκβαλοῦσιν αὐτοὺς ἔξω τῆς πόλεως εἰς τόπον ἀκάθαρτον.",
+        "VUL": "jubebit erui lapides in quibus lepra est, et projici eos extra civitatem in locum immundum :",
+        "SYN": "то священник прикажет выломать камни, на которых язва, и бросить их вне города на место нечистое;",
+        "NEO": "il ordonnera qu’on enlève les pierres atteintes de la plaie, et qu’on les jette hors de la ville, dans un lieu impur.",
+        "NAB": "he shall order the infected stones to be pulled out and cast in an unclean place outside the city.",
+        "VAT_ES": "mandará quitar las piedras manchadas y las hará arrojar fuera de la ciudad, a un lugar impuro.",
+        "CEI": "il sacerdote ordinerà che si rimuovano le pietre intaccate e si gettino in luogo immondo, fuori di città."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/בַּ֛יִת יַקְצִ֥עַ מִ/בַּ֖יִת סָבִ֑יב וְ/שָׁפְכ֗וּ אֶת הֶֽ/עָפָר֙ אֲשֶׁ֣ר הִקְצ֔וּ אֶל מִ/ח֣וּץ לָ/עִ֔יר אֶל מָק֖וֹם טָמֵֽא׃",
+        "LXX": "καὶ ἀποξύσουσιν τὴν οἰκίαν ἔσωθεν κύκλῳ, καὶ ἐκχεοῦσιν τὸν χοῦν ἔξω τῆς πόλεως εἰς τόπον ἀκάθαρτον.",
+        "VUL": "domum autem ipsam radi intrinsecus per circuitum, et spargi pulverem rasuræ extra urbem in locum immundum,",
+        "SYN": "а дом внутри пусть весь оскоблят, и обмазку, которую отскоблят, высыпят вне города на место нечистое;",
+        "NEO": "Il fera racler toute la maison à l’intérieur, et l’on versera hors de la ville, dans un lieu impur, la poussière qu’on aura raclée.",
+        "NAB": "The whole inside of the house shall then be scraped, and the mortar that has been scraped off shall be dumped in an unclean place outside the city.",
+        "VAT_ES": "Después hará rasquetear todo el interior de la casa, y el revoque que haya sido quitado será arrojado fuera de la ciudad, a un lugar impuro.",
+        "CEI": "Farà raschiare tutto l'interno della casa e butteranno i calcinacci raschiati fuor di città, in luogo immondo."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וְ/לָקְחוּ֙ אֲבָנִ֣ים אֲחֵר֔וֹת וְ/הֵבִ֖יאוּ אֶל תַּ֣חַת הָ/אֲבָנִ֑ים וְ/עָפָ֥ר אַחֵ֛ר יִקַּ֖ח וְ/טָ֥ח אֶת הַ/בָּֽיִת׃",
+        "LXX": "καὶ λήμψονται λίθους ἀπεξυσμένους στερεοὺς καὶ ἀντιθήσουσιν ἀντὶ τῶν. λίθων, καὶ χοῦν ἕτερον λήμψονται καὶ ἐξαλείψουσιν τὴν οἰκίαν.",
+        "VUL": "lapidesque alios reponi pro his qui ablati fuerint, et luto alio liniri domum.",
+        "SYN": "и возьмут другие камни, и вставят вместо тех камней, и возьмут другую обмазку, и обмажут дом.",
+        "NEO": "On prendra d’autres pierres que l’on mettra à la place des premières, et on prendra d’autre mortier pour recrépir la maison.",
+        "NAB": "Then new stones shall be brought and put in the place of the old stones, and new mortar shall be made and plastered on the house.",
+        "VAT_ES": "Luego tomarán otras piedras para reemplazar a las primeras y se preparará otra mezcla para revocar la casa.",
+        "CEI": "Poi si prenderanno altre pietre e si metteranno al posto delle prime e si intonacherà la casa con altra calce."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וְ/אִם יָשׁ֤וּב הַ/נֶּ֨גַע֙ וּ/פָרַ֣ח בַּ/בַּ֔יִת אַחַ֖ר חִלֵּ֣ץ אֶת הָ/אֲבָנִ֑ים וְ/אַחֲרֵ֛י הִקְצ֥וֹת אֶת הַ/בַּ֖יִת וְ/אַחֲרֵ֥י הִטּֽוֹחַ׃",
+        "LXX": "ἐὰν δὲ ἐπέλθῃ πάλιν ἁφὴ καὶ ἀνατείλῃ ἐν τῇ οἰκίᾳ μετὰ τὸ ἐξελεῖν τοὺς λίθους καὶ μετὰ τὸ ἀποξυσθῆναι τὴν οἰκίαν καὶ μετὰ τὸ ἐξαλειφθῆναι,",
+        "VUL": "Sin autem postquam eruti sunt lapides, et pulvis erasus, et alia terra lita,",
+        "SYN": "Если язва опять появится и будет цвести на доме после того, как выломали камни и оскоблили дом и обмазали,",
+        "NEO": "Si la plaie fait de nouveau éruption dans la maison, après qu’on aura enlevé les pierres, raclé et recrépi la maison,",
+        "NAB": "\"If the infection breaks out once more after the stones have been pulled out and the house has been scraped and replastered,",
+        "VAT_ES": "Pero si después de haber quitado las piedras, y de haber rasqueteado y revocado la casa, la mancha vuelve a aparecer,",
+        "CEI": "Se l'infezione spunta di nuovo nella casa dopo che le pietre ne sono state rimosse e la casa è stata raschiata e intonacata,"
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וּ/בָא֙ הַ/כֹּהֵ֔ן וְ/רָאָ֕ה וְ/הִנֵּ֛ה פָּשָׂ֥ה הַ/נֶּ֖גַע בַּ/בָּ֑יִת צָרַ֨עַת מַמְאֶ֥רֶת הִ֛וא בַּ/בַּ֖יִת טָמֵ֥א הֽוּא׃",
+        "LXX": "καὶ εἰσελεύσεται ὁ ἱερεὺς καὶ ὄψεται· εἰ διακέχυται ἡ ἁφὴ ἐν τῇ οἰκίᾳ, λέπρα ἔμμονός ἐστιν ἐν τῇ οἰκίᾳ, ἀκάθαρτός ἐστιν.",
+        "VUL": "ingressus sacerdos viderit reversam lepram, et parietes respersos maculis, lepra est perseverans, et immunda domus :",
+        "SYN": "то священник придет и осмотрит, и если язва на доме распространилась, то это едкая проказа на доме, нечист он;",
+        "NEO": "le prêtre y retournera et l’examinera. Si la plaie s’est étendue dans la maison, c’est une lèpre maligne dans la maison : elle est impure.",
+        "NAB": "the priest shall come again; and if he finds that the infection has spread in the house, it is corrosive leprosy, and the house is unclean.",
+        "VAT_ES": "el sacerdote entrará para someterla a un nuevo examen; y si la mancha se ha extendido por la casa, entonces se trata de lepra maligna: la casa es impura.",
+        "CEI": "il sacerdote entrerà ad esaminare la casa; trovato che la macchia vi si è allargata, nella casa vi è lebbra maligna; la casa è immonda."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וְ/נָתַ֣ץ אֶת הַ/בַּ֗יִת אֶת אֲבָנָי/ו֙ וְ/אֶת עֵצָ֔י/ו וְ/אֵ֖ת כָּל עֲפַ֣ר הַ/בָּ֑יִת וְ/הוֹצִיא֙ אֶל מִ/ח֣וּץ לָ/עִ֔יר אֶל מָק֖וֹם טָמֵֽא׃",
+        "LXX": "καὶ καθελοῦσιν τὴν οἰκίαν, καὶ τὰ ξύλα αὐτῆς καὶ τοὺς λίθους αὐτῆς καὶ πάντα τὸν χοῦν ἐξοίσουσιν ἔξω τῆς πόλεως εἰς τόπον ἀκάθαρτον·",
+        "VUL": "quam statim destruent, et lapides ejus ac ligna, atque universum pulverem projicient extra oppidum in locum immundum.",
+        "SYN": "должно разломать сей дом, и камни его и дерево его и всю обмазку дома вынести вне города на место нечистое;",
+        "NEO": "On démolira la maison, les pierres, le bois et tout le mortier de la maison, et l’on transportera ces choses hors de la ville, dans un lieu impur.",
+        "NAB": "It shall be pulled down, and all its stones, beams and mortar shall be hauled away to an unclean place outside the city.",
+        "VAT_ES": "Esta será derribada, y sus piedras, su madera y todo el material serán llevados fuera de la ciudad, a un lugar impuro.",
+        "CEI": "Perciò si demolirà la casa; pietre, legname e calcinacci si porteranno fuori della città, in luogo immondo."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "וְ/הַ/בָּא֙ אֶל הַ/בַּ֔יִת כָּל יְמֵ֖י הִסְגִּ֣יר אֹת֑/וֹ יִטְמָ֖א עַד הָ/עָֽרֶב׃",
+        "LXX": "καὶ ὁ εἰσπορευόμενος εἰς τὴν οἰκίαν πάσας τὰς ἡμέρας ἃς ἀφωρισμένη ἐστὶν ἀκάθαρτος ἔσται ἕως ἑσπέρας,",
+        "VUL": "Qui intraverit domum quando clausa est, immundus erit usque ad vesperum :",
+        "SYN": "кто входит в дом во все время, когда он заперт, тот нечист до вечера;",
+        "NEO": "Celui qui sera entré dans la maison pendant tout le temps qu’elle a été déclarée close, sera impur jusqu’au soir.",
+        "NAB": "Whoever enters a house while it is quarantined shall be unclean until evening.",
+        "VAT_ES": "El que entró en la casa mientras estuvo clausurada será impuro hasta la tarde.",
+        "CEI": "Inoltre chiunque sarà entrato in quella casa mentre era chiusa, sarà immondo fino alla sera."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "וְ/הַ/שֹּׁכֵ֣ב בַּ/בַּ֔יִת יְכַבֵּ֖ס אֶת בְּגָדָ֑י/ו וְ/הָ/אֹכֵ֣ל בַּ/בַּ֔יִת יְכַבֵּ֖ס אֶת בְּגָדָֽי/ו׃",
+        "LXX": "καὶ ὁ κοιμώμενος ἐν τῇ οἰκίᾳ πλυνεῖ τὰ ἱμάτια αὐτοῦ καὶ ἀκάθαρτος ἔσται ἕως ἑσπέρας· καὶ ὁ ἔσθων ἐν τῇ οἰκίᾳ πλυνεῖ τὰ ἱμάτια αὐτοῦ καὶ ἀκάθαρτος ἔσται ἕως ἑσπέρας.",
+        "VUL": "et qui dormierit in ea, et comederit quippiam, lavabit vestimenta sua.",
+        "SYN": "и кто спит в доме том, тот должен вымыть одежды свои [и нечист будет до вечера]; и кто ест в доме том, тот должен вымыть одежды свои [и нечист будет до вечера].",
+        "NEO": "Celui qui aura couché dans la maison lavera ses vêtements. Celui qui aura mangé dans la maison lavera aussi ses vêtements.",
+        "NAB": "Whoever sleeps or eats in such a house shall also wash his garments.",
+        "VAT_ES": "El que durmió en la casa deberá lavar su ropa, y lo mismo hará el que comió en ella.",
+        "CEI": "Chi avrà dormito in quella casa o chi vi avrà mangiato, si laverà le vesti."
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "וְ/אִם בֹּ֨א יָבֹ֜א הַ/כֹּהֵ֗ן וְ/רָאָה֙ וְ֠/הִנֵּה לֹא פָשָׂ֤ה הַ/נֶּ֨גַע֙ בַּ/בַּ֔יִת אַחֲרֵ֖י הִטֹּ֣חַ אֶת הַ/בָּ֑יִת וְ/טִהַ֤ר הַ/כֹּהֵן֙ אֶת הַ/בַּ֔יִת כִּ֥י נִרְפָּ֖א הַ/נָּֽגַע׃",
+        "LXX": "ἐὰν δὲ παραγενόμενος εἰσέλθῃ ὁ ἱερεὺς καὶ ἴδῃ, καὶ ἰδοὺ οὐ διαχύσει οὐ διαχεῖται ἡ ἁφὴ ἐν τῇ οἰκίᾳ μετὰ τὸ ἐξαλειφθῆναι τὴν οἰκίαν, καὶ καθαριεῖ ὁ ἱερεὺς τὴν οἰκίαν, ὅτι ἰάθη ἡ ἁφή.",
+        "VUL": "Quod si introiens sacerdos viderit lepram non crevisse in domo, postquam denuo lita fuerit, purificabit eam reddita sanitate :",
+        "SYN": "Если же священник придет и увидит, что язва на доме не распространилась после того, как обмазали дом, то священник объявит дом чистым, потому что язва прошла.",
+        "NEO": "Mais si le prêtre, étant retourné dans la maison, voit que la plaie ne s’est pas étendue après que la maison a été recrépie, il déclarera la maison pure, car la plaie est guérie.",
+        "NAB": "If the priest finds, when he comes to examine the house, that the infection has in fact not spread after the plastering, he shall declare the house clean, since the infection has been healed.",
+        "VAT_ES": "Pero si el sacerdote, al examinar la mancha, ve que esta no se ha extendido por la casa después que fue revocada de nuevo, tendrá que declararla pura, porque la mancha ha desaparecido.",
+        "CEI": "Se invece il sacerdote che è entrato nella casa e l'ha esaminata, riscontra che la macchia non si è allargata nella casa, dopo che la casa è stata intonacata, dichiarerà la casa monda, perché la macchia è risanata."
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "וְ/לָקַ֛ח לְ/חַטֵּ֥א אֶת הַ/בַּ֖יִת שְׁתֵּ֣י צִפֳּרִ֑ים וְ/עֵ֣ץ אֶ֔רֶז וּ/שְׁנִ֥י תוֹלַ֖עַת וְ/אֵזֹֽב׃",
+        "LXX": "καὶ λήμψεται ἀφαγνίσαι τὴν οἰκίαν δύο ὀρνίθια ζῶντα καθαρὰ καὶ ξύλον κέδρινον καὶ κεκλωσμένον κόκκινον καὶ ὕσσωπον·",
+        "VUL": "et in purificationem ejus sumet duos passeres, lignumque cedrinum, et vermiculum atque hyssopum :",
+        "SYN": "И чтобы очистить дом, возьмет он две птицы, кедрового дерева, червленую нить и иссопа,",
+        "NEO": "Il prendra, pour purifier la maison, deux oiseaux, du bois de cèdre, du cramoisi et de l’hysope ;",
+        "NAB": "To purify the house, he shall take two birds, as well as cedar wood, scarlet yarn, and hyssop.",
+        "VAT_ES": "Luego tomará dos pájaros, un trozo de madera de cedro, una cinta de púrpura escarlata y un ramillete de hisopo, para eliminar el pecado de la casa.",
+        "CEI": "Poi, per purificare la casa, prenderà due uccelli, legno di cedro, panno scarlatto e issòpo;"
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "WLC": "וְ/שָׁחַ֖ט אֶת הַ/צִּפֹּ֣ר הָ/אֶחָ֑ת אֶל כְּלִי חֶ֖רֶשׂ עַל מַ֥יִם חַיִּֽים׃",
+        "LXX": "καὶ σφάξει τὸ ὀρνίθιον τὸ ἓν εἰς σκεῦος ὀστράκινον ἐφ’ ὕδατι ζῶντι,",
+        "VUL": "et immolato uno passere in vase fictili super aquas vivas,",
+        "SYN": "и заколет одну птицу над глиняным сосудом, над живою водою;",
+        "NEO": "puis il immolera l’un des oiseaux sur un vase de terre, sur de l’eau vive.",
+        "NAB": "One of the birds he shall slay over an earthen vessel with spring water in it.",
+        "VAT_ES": "Primero inmolará uno de los pájaros sobre una vasija de barro que contenga agua proveniente de un manantial.",
+        "CEI": "immolerà uno degli uccelli in un vaso di terra con dentro acqua viva."
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "WLC": "וְ/לָקַ֣ח אֶת עֵֽץ הָ֠/אֶרֶז וְ/אֶת הָ֨/אֵזֹ֜ב וְ/אֵ֣ת שְׁנִ֣י הַ/תּוֹלַ֗עַת וְ/אֵת֮ הַ/צִּפֹּ֣ר הַֽ/חַיָּה֒ וְ/טָבַ֣ל אֹתָ֗/ם בְּ/דַם֙ הַ/צִּפֹּ֣ר הַ/שְּׁחוּטָ֔ה וּ/בַ/מַּ֖יִם הַֽ/חַיִּ֑ים וְ/הִזָּ֥ה אֶל הַ/בַּ֖יִת שֶׁ֥בַע פְּעָמִֽים׃",
+        "LXX": "καὶ λήμψεται τὸ ξύλον τὸ κέδρινον καὶ τὸ κεκλωσμένον κόκκινον καὶ τὸν ὕσσωπον καὶ τὸ ὀρνίθιον τὸ ζῶν, καὶ βάψει αὐτὸ εἰς τὸ αἷμα τοῦ ὀρνιθίου τοῦ ἐσφαγμένου ἐφ’ ὕδατι ζῶντι, καὶ περιρανεῖ ἐν αὐτοῖς ἐπὶ τὴν οἰκίαν ἑπτάκις.",
+        "VUL": "tollet lignum cedrinum, et hyssopum, et coccum, et passerem vivum, et tinget omnia in sanguine passeris immolati, atque in aquis viventibus, et asperget domum septies,",
+        "SYN": "и возьмет кедровое дерево и иссоп, и червленую нить и живую птицу, и омочит их в крови птицы заколотой и в живой воде, и покропит дом семь раз;",
+        "NEO": "Et ayant pris le bois de cèdre, l’hysope, le cramoisi et l’oiseau vivant, il les trempera dans le sang de l’oiseau immolé et dans l’eau vive, et il en aspergera sept fois la maison.",
+        "NAB": "Then, taking the cedar wood, the hyssop and the scarlet yarn, together with the living bird, he shall dip them all in the blood of the slain bird and the spring water, and sprinkle the house seven times.",
+        "VAT_ES": "Después tomará la madera de cedro, el hisopo, la púrpura escarlata y el pájaro vivo: los sumergirá en la sangre del pájaro inmolado y en el agua del manantial, y hará siete aspersiones sobre la casa.",
+        "CEI": "Prenderà il legno di cedro, l'issòpo, il panno scarlatto e l'uccello vivo e li immergerà nel sangue dell'uccello immolato e nell'acqua viva e ne aspergerà sette volte la casa."
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "WLC": "וְ/חִטֵּ֣א אֶת הַ/בַּ֔יִת בְּ/דַם֙ הַ/צִּפּ֔וֹר וּ/בַ/מַּ֖יִם הַֽ/חַיִּ֑ים וּ/בַ/צִּפֹּ֣ר הַ/חַיָּ֗ה וּ/בְ/עֵ֥ץ הָ/אֶ֛רֶז וּ/בָ/אֵזֹ֖ב וּ/בִ/שְׁנִ֥י הַ/תּוֹלָֽעַת׃",
+        "LXX": "καὶ ἀφαγνιεῖ τὴν οἰκίαν ἐν τῷ αἵματι τοῦ ὀρνιθίου τοῦ καὶ ἐν τῷ ὕδατι τῷ ζῶντι καὶ ἐν τῷ ὀρνιθίῳ τῷ ζῶντι καὶ ἐν τῷ ξύλῳ τῷ κεδρίνῳ καὶ ἐν τῷ ὑσσώπῳ καὶ ἐν τῷ κεκλωσμένῳ κοκκίνῳ·",
+        "VUL": "purificabitque eam tam in sanguine passeris quam in aquis viventibus, et in passere vivo, lignoque cedrino et hyssopo atque vermiculo.",
+        "SYN": "и очистит дом кровью птицы и живою водою, и живою птицею и кедровым деревом, и иссопом и червленою нитью;",
+        "NEO": "Il purifiera la maison avec le sang de l’oiseau, avec l’eau vive, avec l’oiseau vivant, avec le bois de cèdre, l’hysope et le cramoisi.",
+        "NAB": "Thus shall he purify the house with the bird's blood and the spring water, along with the living bird, the cedar wood, the hyssop, and the scarlet yarn.",
+        "VAT_ES": "Y una vez eliminado el pecado de la casa con la sangre del pájaro, con el agua del manantial, con el pájaro vivo, con la madera de cedro, con el hisopo y con la púrpura escarlata,",
+        "CEI": "Purificata la casa con il sangue dell'uccello, con l'acqua viva, con l'uccello vivo, con il legno di cedro, con l'issòpo e con lo scarlatto,"
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "WLC": "וְ/שִׁלַּ֞ח אֶת הַ/צִּפֹּ֧ר הַֽ/חַיָּ֛ה אֶל מִ/ח֥וּץ לָ/עִ֖יר אֶל פְּנֵ֣י הַ/שָּׂדֶ֑ה וְ/כִפֶּ֥ר עַל הַ/בַּ֖יִת וְ/טָהֵֽר׃",
+        "LXX": "καὶ ἐξαποστελεῖ τὸ ὀρνίθιον τὸ ζῶν ἔξω πόλεως εἰς τὸ πεδίον, καὶ ἐξιλάσεται περὶ τῆς οἰκίας, καὶ καθαρὰ ἔσται.",
+        "VUL": "Cumque dimiserit passerem avolare in agrum libere, orabit pro domo, et jure mundabitur.",
+        "SYN": "и пустит живую птицу вне города в поле и очистит дом, и будет чист.",
+        "NEO": "Et il lâchera l’oiseau vivant hors de la ville, dans les champs. C’est ainsi qu’il fera l’expiation pour la maison, et elle sera pure.",
+        "NAB": "He shall then let the living bird fly away over the countryside outside the city. When he has thus made atonement for it, the house will be clean.",
+        "VAT_ES": "dejará en libertad al pájaro vivo, fuera de la ciudad, en pleno campo. Así realizará el rito de expiación por la casa, y esta quedará purificada.",
+        "CEI": "lascerà andare libero l'uccello vivo, fuori città, per i campi; così farà il rito espiatorio per la casa ed essa sarà monda."
+      }
+    },
+    "54": {
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "WLC": "זֹ֖את הַ/תּוֹרָ֑ה לְ/כָל נֶ֥גַע הַ/צָּרַ֖עַת וְ/לַ/נָּֽתֶק׃",
+        "LXX": "Οὗτος ὁ νόμος κατὰ πᾶσαν ἁφὴν λέπρας καὶ θραύσματος,",
+        "VUL": "Ista est lex omnis lepræ et percussuræ,",
+        "SYN": "Вот закон о всякой язве проказы и о паршивости,",
+        "NEO": "Telle est la loi pour toute plaie de lèpre et pour le nétheq,",
+        "NAB": "\"This is the law for every kind of human leprosy and scall,",
+        "VAT_ES": "Este es el ritual concerniente a toda clase de lepra: la tiña,",
+        "CEI": "Questa è la legge per ogni sorta di infezione di lebbra o di tigna,"
+      }
+    },
+    "55": {
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "WLC": "וּ/לְ/צָרַ֥עַת הַ/בֶּ֖גֶד וְ/לַ/בָּֽיִת׃",
+        "LXX": "καὶ τῆς λέπρας ἱματίου καὶ οἰκίας,",
+        "VUL": "lepræ vestium et domorum,",
+        "SYN": "и о проказе на одежде и на доме, и об опухоли, и о лишаях, и о пятнах, --",
+        "NEO": "pour la lèpre des vêtements et des maisons,",
+        "NAB": "for leprosy of garments and houses,",
+        "VAT_ES": "la lepra de la ropa y de las casas,",
+        "CEI": "la lebbra delle vesti e della casa,"
+      }
+    },
+    "56": {
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "WLC": "וְ/לַ/שְׂאֵ֥ת וְ/לַ/סַּפַּ֖חַת וְ/לַ/בֶּהָֽרֶת׃",
+        "LXX": "καὶ οὐλῆς καὶ σημασίας καὶ τοῦ αὐγάζοντος,",
+        "VUL": "cicatricis et erumpentium papularum, lucentis maculæ, et in varias species, coloribus immutatis,",
+        "SYN": "чтобы указать, когда это нечисто и когда чисто. Вот закон о проказе.",
+        "NEO": "pour les tumeurs, les dartres et les taches ;",
+        "NAB": "as well as for scabs, pustules and blotches,",
+        "VAT_ES": "la hinchazón, la erupción y las manchas lustrosas.",
+        "CEI": "i tumori, le pustole e le macchie,"
+      }
+    },
+    "57": {
+      "seq": 57,
+      "v_in": {
+        "MT": 57,
+        "VUL": 57,
+        "LXX": 57
+      },
+      "text": {
+        "WLC": "לְ/הוֹרֹ֕ת בְּ/י֥וֹם הַ/טָּמֵ֖א וּ/בְ/י֣וֹם הַ/טָּהֹ֑ר זֹ֥את תּוֹרַ֖ת הַ/צָּרָֽעַת׃",
+        "LXX": "καὶ τοῦ ἐξηγήσασθαι ᾗ ἡμέρᾳ ἀκάθαρτον καὶ ᾗ ἡμέρᾳ καθαρισθήσεται· οὗτος ὁ νόμος τῆς λέπρας.",
+        "VUL": "ut possit sciri quo tempore mundum quid, vel immundum sit.",
+        "NEO": "elle fait connaître quand une chose est impure et quand une chose est pure. Telle est la loi concernant la lèpre. »",
+        "NAB": "so that it may be manifest when there is a state of uncleanness and when a state of cleanness. This is the law for leprosy.\"",
+        "VAT_ES": "Así se podrá determinar cuándo se es puro y cuándo impuro. Este es el ritual concerniente a la lepra.",
+        "CEI": "per insegnare quando una cosa è immonda e quando è monda. Questa è la legge per la lebbra\"."
+      }
+    }
+  }
+}

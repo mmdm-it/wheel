@@ -1,0 +1,111 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "TOBI_009",
+  "book_key": "TOBI",
+  "sequence": 9,
+  "chapter_in": {
+    "MT": 9,
+    "VUL": 9,
+    "LXX": 9
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Καὶ ἐκάλεσεν Τωβίας τὸν Ῥαφαὴλ καὶ εἶπεν αὐτῷ",
+        "VUL": "Tunc vocavit Tobias angelum ad se, quem quidem hominem existimabat, dixitque ei : Azaria frater, peto ut auscultes verba mea.",
+        "SYN": "И позвал Товия Рафаила и сказал ему:",
+        "NEO": "Tobias se tourna alors vers Raphaël.",
+        "NAB": "Then Tobiah called Raphael and said to him:",
+        "VAT_ES": "Entonces Tobías llamó a Rafael y le dijo:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "Ἀζαρία ἀδελφέ, λάβε μετὰ σεαυτοῦ παῖδα καὶ δύο καμήλους, καὶ πορεύθητι ἐν Ῥάγοις τῆς Μηδείας παρὰ Γαβαήλ, καὶ κόμισαί μοι τὸ ἀργύριον καὶ αὐτὸν ἄγε μοι εἰς τὸν γάμον.",
+        "VUL": "Si meipsum tradam tibi servum, non ero condignus providentiæ tuæ :",
+        "SYN": "брат Азария, возьми с собою раба и двух верблюдов и сходи в Раги Мидийские к Гаваилу; принеси мне серебро и самого его приведи ко мне на брак;",
+        "NEO": "« Frère Azarias, dit-il, prends quatre serviteurs et deux chameaux et pars pour Rhagès.",
+        "NAB": "\"Brother Azariah, take along with you four servants and two camels and travel to Rages. Go to Gabael's house and give him this bond. Get the money and then bring him along with you to the wedding celebration.",
+        "VAT_ES": "«Hermano Azarías, toma contigo cuatro servidores y dos camellos, y ve a Ragués."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "διότι ὀμώμοχεν Ῥαγουὴλ μὴ ἐξελθεῖν με·",
+        "VUL": "tamen obsecro te ut assumas tibi animalia sive servitia, et vadas ad Gabelum in Rages civitatem Medorum, reddasque ei chirographum suum, et recipias ab eo pecuniam, et roges eum venire ad nuptias meas.",
+        "SYN": "ибо Рагуил обязал меня клятвою, чтоб я не уходил;",
+        "NEO": "Va chez Gabaël, donne-lui le reçu et occupe-toi de l’argent, puis invite-le à venir avec toi à mes noces.",
+        "NAB": "You witnessed the oath that Raguel has sworn; I cannot violate his oath.\"",
+        "VAT_ES": "Preséntate a Gabael, entrégale el recibo y ocúpate del dinero; luego tráelo contigo a la boda."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "καὶ ὁ πατήρ μου ἀριθμεῖ τὰς ἡμέρας, καὶ ἐὰν χρονίσω μέγα, ὀδυνηθήσεται λίαν.",
+        "VUL": "Scis enim ipse quoniam numerat pater meus dies, et si tardavero una die plus, contristatur anima ejus.",
+        "SYN": "между тем отец мой считает дни, и если я много замедлю, он будет очень скорбеть.",
+        "NEO": "Tu sais que mon père doit compter les jours et que je ne peux en perdre un seul sans l’inquiéter.",
+        "NAB": "For you know that my father is counting the days. If I should delay my return by a single day, I would cause him intense grief.",
+        "VAT_ES": "Tú sabes que mi padre está contando los días. Si me demoro un solo día más le daré un gran disgusto."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "καὶ ἐπορεύθη Ῥαφαήλ, καὶ ηὐλίσθη παρὰ Γαβαήλ, καὶ ἔδωκεν αὐτῷ τὸ χειρόγραφον· ὃς δὲ προήνεγκεν τὰ θυλάκια ἐν ταῖς σφραγῖσιν καὶ ἔδωκεν αὐτῷ.",
+        "VUL": "Et certe vides quomodo adjuravit me Raguel, cujus adjuramentum spernere non possum.",
+        "SYN": "И пошел Рафаил и остановился у Гаваила и отдал ему расписку; а тот принес мешки за печатями и передал ему.",
+        "NEO": "Tu vois ce que Ragouël s’est engagé à faire ; je suis lié par son serment ». Raphaël partit donc pour Rhagès en Médie avec les quatre serviteurs et les deux chameaux. Ils restèrent chez Gabaël, et Raphaël lui montra le reçu. Il lui parla du mariage de Tobias, fils de Tobit, et lui donna son invitation au repas de noces. Gabaël commença à lui compter les sacs - les sceaux étaient intacts - et ils les chargèrent sur les chameaux.",
+        "NAB": "So Raphael, together with the four servants and two camels, traveled to Rages in Media, where they stayed at Gabael's house. Raphael gave Gabael his bond and told him about Tobit's son Tobiah, and that he had married and was inviting him to the wedding celebration. Gabael promptly checked over the sealed moneybags, and they placed them on the camels.",
+        "VAT_ES": "Por lo demás, conoces el juramento que hizo Rag&uuml;el, y yo no puedo quebrantarlo». Rafael partió para Ragués de Media con los cuatro servidores y los dos camellos, y se alojaron en la casa de Gabael. Le presentó el recibo y le dio la noticia de que Tobías, hijo de Tobit, se había casado y lo invitaba a la boda. Gabael contó en seguida las bolsas de dinero con los sellos intactos, y las cargaron sobre los camellos."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "καὶ ὤρθρευσαν κοινῶς καὶ ἤλθοσαν εἰς τὸν γάμον, καὶ εὐλόγησεν Τωβείας τὴν γυναῖκα αὐτοῦ.",
+        "VUL": "Tunc Raphaël assumens quatuor ex servis Raguelis, et duos camelos, in Rages civitatem Medorum perrexit : et inveniens Gabelum, reddidit ei chirographum suum, et recepit ab eo omnem pecuniam.",
+        "SYN": "И на утро рано встали они вместе и пришли на брак. И благословил Товия жену свою.",
+        "NEO": "De bon matin, ils partirent ensemble pour la noce, et arrivèrent à la maison de Ragouël où ils trouvèrent Tobias en train de dîner. Il se leva pour saluer Gabaël, qui fondit en larmes et le bénit en disant : « Excellent fils d’un père irréprochable, juste et généreux dans ses actions ! Que le Seigneur te bénisse du haut du ciel, toi, ta femme, le père et la mère de ta femme ! Béni soit Dieu de m’avoir accordé la vue de cette image vivante de mon cousin Tobias. »+ 9:6 La Vulg. ajoute : \\+it 8 Lorsque Gabaël entra dans la maison de Ragouël, il trouva Tobie à table ; celui-ci se leva aussitôt ; ils se baisèrent mutuellement, et Gabaël pleura et bénit Dieu, 9 en disant : « Que le Dieu d’Israël te bénisse, car tu es le fils d’un homme excellent, juste et craignant Dieu, et faisant beaucoup d’aumônes ! 10 Que la bénédiction se répande aussi sur ta femme et sur vos parents ! 11 Puissiez-vous voir vos fils et les fils de vos fils, jusqu’à la troisième et à la quatrième génération ! Que votre postérité soit bénie du Dieu d’Israël, qui règne dans les siècles des siècles ! » 12 Tous ayant dit : Amen ! ils se mirent à table, et c’est dans la crainte de Dieu qu’ils firent le festin des noces.\\+it**",
+        "NAB": "The following morning they got an early start and traveled to the wedding celebration. When they entered Raguel's house, they found Tobiah reclining at table. He sprang up and greeted Gabael, who wept and blessed him, exclaiming: \"O noble and good child, son of a noble and good, upright and charitable man, may the Lord grant heavenly blessing to you and to your wife, and to your wife's father and mother. Blessed be God, because I have seen the very image of my cousin Tobit!\"",
+        "VAT_ES": "Por la mañana temprano, partieron juntos para la boda. Al llegar a la casa de Rag&uuml;el, encontraron a Tobías sentado a la mesa. Tobías se levantó de un salto y lo saludó. Gabael lloró y lo bendijo con estas palabras: «&iexcl;Qué hijo tan bueno de un padre excelente, justo y generoso! Que el Señor te dé la bendición del Cielo, a ti y a tu mujer, a tu padre y a los padres de tu mujer. &iexcl;Bendito sea Dios, que me ha permitido ver el vivo retrato de mi primo Tobit!»."
+      }
+    }
+  }
+}

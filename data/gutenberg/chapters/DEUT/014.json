@@ -1,0 +1,536 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_014",
+  "book_key": "DEUT",
+  "sequence": 14,
+  "chapter_in": {
+    "MT": 14,
+    "VUL": 14,
+    "LXX": 14
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בָּנִ֣ים אַתֶּ֔ם לַֽ/יהוָ֖ה אֱלֹהֵי/כֶ֑ם לֹ֣א תִתְגֹּֽדְד֗וּ וְ/לֹֽא תָשִׂ֧ימוּ קָרְחָ֛ה בֵּ֥ין עֵינֵי/כֶ֖ם לָ/מֵֽת׃",
+        "LXX": "Υἱοί ἐστε Κυρίου τοῦ θεοῦ ὑμῶν, οὐκ ἐπιθήσετε φαλάκρωμα ἀνὰ μέσον τῶν ὀφθαλμῶν ὑμῶν ἐπὶ νεκρῷ·",
+        "VUL": "Filii estote Domini Dei vestri : non vos incidetis, nec facietis calvitium super mortuo :",
+        "SYN": "Вы сыны Господа Бога вашего; не делайте нарезов _на_ _теле_ _вашем_ и не выстригайте волос над глазами вашими по умершем;",
+        "NEO": "Vous êtes les enfants de \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu. Vous ne vous ferez pas d’incision et vous ne vous tondrez pas une place entre les yeux pour un mort.",
+        "NAB": "\"You are children of the LORD, your God. You shall not gash yourselves nor shave the hair above your foreheads for the dead.",
+        "VAT_ES": "Ustedes son hijos del Señor, su Dios. No se hagan incisiones ni se rapen el cabello sobre la frente en homenaje a un muerto.",
+        "CEI": "Voi siete figli per il Signore Dio vostro; non vi farete incisioni e non vi raderete tra gli occhi per un morto."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כִּ֣י עַ֤ם קָדוֹשׁ֙ אַתָּ֔ה לַ/יהוָ֖ה אֱלֹהֶ֑י/ךָ וּ/בְ/ךָ֞ בָּחַ֣ר יְהוָ֗ה לִֽ/הְי֥וֹת ל/וֹ֙ לְ/עַ֣ם סְגֻלָּ֔ה מִ/כֹּל֙ הָֽ/עַמִּ֔ים אֲשֶׁ֖ר עַל פְּנֵ֥י הָ/אֲדָמָֽה׃",
+        "LXX": "ὅτι λαὸς ἅγιος εἶ Κυρίῳ τῷ θεῷ σου, καὶ σὲ ἐξελέξατο Κύριος ὁ θεός σου γενέσθαι σε αὐτῷ λαὸν περιούσιον ἀπὸ πάντων τῶν ἐθνῶν τῶν ἐπὶ προσώπου τῆς γῆς.",
+        "VUL": "quoniam populus sanctus es Domino Deo tuo, et te elegit ut sis ei in populum peculiarem de cunctis gentibus, quæ sunt super terram.",
+        "SYN": "ибо ты народ святой у Господа Бога твоего, и тебя избрал Господь, чтобы ты был собственным Его народом из всех народов, которые на земле.",
+        "NEO": "Car tu es un peuple saint à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu ; et \\+w Yahweh|strong=\"H3068\"\\+w** t’a choisi pour lui être un peuple particulier entre tous les peuples qui sont sur la face de la terre.",
+        "NAB": "For you are a people sacred to the LORD, your God, who has chosen you from all the nations on the face of the earth to be a people peculiarly his own.",
+        "VAT_ES": "Porque tú eres un pueblo consagrado al Señor, tu Dios y él te eligió para que fueras su propio pueblo, prefiriéndote a todos los demás pueblos de la tierra.",
+        "CEI": "Tu sei infatti un popolo consacrato al Signore tuo Dio e il Signore ti ha scelto, perché tu fossi il suo popolo privilegiato, fra tutti i popoli che sono sulla terra."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "לֹ֥א תֹאכַ֖ל כָּל תּוֹעֵבָֽה׃",
+        "LXX": "Οὐ φάγεσθε πᾶν βδέλυγμα.",
+        "VUL": "Ne comedatis quæ immunda sunt.",
+        "SYN": "Не ешь никакой мерзости.",
+        "NEO": "Tu ne mangeras aucune chose abominable.",
+        "NAB": "\"You shall not eat any abominable thing.",
+        "VAT_ES": "No comerán nada que sea abominable.",
+        "CEI": "Non mangerai alcuna cosa abominevole."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "זֹ֥את הַ/בְּהֵמָ֖ה אֲשֶׁ֣ר תֹּאכֵ֑לוּ שׁ֕וֹר שֵׂ֥ה כְשָׂבִ֖ים וְ/שֵׂ֥ה עִזִּֽים׃",
+        "LXX": "ταῦτα κτήνη ἃ φάγεσθε· μόσχον ἐκ βοῶν, καὶ ἀμνὸν ἐκ προβάτων, καὶ χίμαρον ἐξ αἰγῶν,",
+        "VUL": "Hoc est animal quod comedere debetis : bovem, et ovem, et capram,",
+        "SYN": "Вот скот, который вам можно есть: волы, овцы, козы,",
+        "NEO": "Voici les animaux dont vous mangerez : le bœuf, la brebis et la chèvre ;",
+        "NAB": "These are the animals you may eat: the ox, the sheep, the goat,",
+        "VAT_ES": "Ustedes podrán comer los siguientes animales: el buey, la oveja, la cabra,",
+        "CEI": "Questi sono gli animali che potrete mangiare: il bue, la pecora e la capra;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "אַיָּ֥ל וּ/צְבִ֖י וְ/יַחְמ֑וּר וְ/אַקּ֥וֹ וְ/דִישֹׁ֖ן וּ/תְא֥וֹ וָ/זָֽמֶר׃",
+        "LXX": "ἔλαφον καὶ δορκάδα καὶ πύγαργον, ὄρυγα καὶ καμηλοπάρδαλιν·",
+        "VUL": "cervum et capream, bubalum, tragelaphum, pygargum, orygem, camelopardalum.",
+        "SYN": "олень и серна, и буйвол, и лань, и зубр, и орикс, и камелопард.",
+        "NEO": "le cerf, la gazelle et le daim ; le bouquetin, l’antilope, le bœuf sauvage et la chèvre sauvage.",
+        "NAB": "the red deer, the gazelle, the roe deer, the ibex, the addax, the oryx, and the mountain sheep.",
+        "VAT_ES": "el ciervo, la gacela, el venado, la cabra montés, el íbice, el antílope y la gamuza.",
+        "CEI": "il cervo, la gazzella, il daino, lo stambecco, l'antilope, il bufalo e il camoscio."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/כָל בְּהֵמָ֞ה מַפְרֶ֣סֶת פַּרְסָ֗ה וְ/שֹׁסַ֤עַת שֶׁ֨סַע֙ שְׁתֵּ֣י פְרָס֔וֹת מַעֲלַ֥ת גֵּרָ֖ה בַּ/בְּהֵמָ֑ה אֹתָ֖/הּ תֹּאכֵֽלוּ׃",
+        "LXX": "πᾶν κτῆνος διχηλοῦν ὁπλὴν καὶ ὀνυχιστῆρας ὀνυχίζον δύο χηλῶν καὶ ἀνάγον μηρυκισμὸν ἐν τοῖς κτήνεσιν, ταῦτα φάγεσθε.",
+        "VUL": "Omne animal, quod in duas partes findit ungulam, et ruminat, comedetis.",
+        "SYN": "Всякий скот, у которого раздвоены копыта и на обоих копытах глубокий разрез, и который скот жует жвачку, тот ешьте;",
+        "NEO": "Vous mangerez de tout animal qui a la corne divisée et le pied fourchu, et qui rumine.",
+        "NAB": "Any animal that has hoofs you may eat, provided it is cloven-footed and chews the cud.",
+        "VAT_ES": "Podrán comer, asimismo, cualquier animal que tenga la pezuña partida –es decir, dividida en dos mitades– y que sea rumiante.",
+        "CEI": "Potrete mangiare di ogni quadrupede che ha l'unghia bipartita, divisa in due da una fessura, e che rumina."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אַ֣ךְ אֶת זֶ֞ה לֹ֤א תֹֽאכְלוּ֙ מִ/מַּֽעֲלֵ֣י הַ/גֵּרָ֔ה וּ/מִ/מַּפְרִיסֵ֥י הַ/פַּרְסָ֖ה הַ/שְּׁסוּעָ֑ה אֶֽת הַ֠/גָּמָל וְ/אֶת הָ/אַרְנֶ֨בֶת וְ/אֶת הַ/שָּׁפָ֜ן כִּֽי מַעֲלֵ֧ה גֵרָ֣ה הֵ֗מָּה וּ/פַרְסָה֙ לֹ֣א הִפְרִ֔יסוּ טְמֵאִ֥ים הֵ֖ם לָ/כֶֽם׃",
+        "LXX": "καὶ ταῦτα οὐ φάγεσθε ἀπὸ τῶν ἀναγόντων μηρυκισμὸν καὶ ἀπὸ τῶν διχηλούντων τὰς ὁπλὰς καὶ ὀνυχιζόντων ὀνυχιστῆρας, τὸν κάμηλον καὶ δασύποδα καὶ χοιρογρύλλιον· ὅτι ἀνάγουσιν μηρυκισμὸν καὶ ὁπλὴν οὐ διχηλοῦσιν, ἀκάθαρτα ταῦτα ὑμῖν ἐστιν.",
+        "VUL": "De his autem, quæ ruminant, et ungulam non findunt, comedere non debetis, ut camelum, leporem, chrogryllum : hæc, quia ruminant et non dividunt ungulam, immunda erunt vobis.",
+        "SYN": "только сих не ешьте из жующих жвачку и имеющих раздвоенные копыта с глубоким разрезом: верблюда, зайца и тушканчика, потому что, хотя они жуют жвачку, но копыта у них не раздвоены: нечисты они для вас;",
+        "NEO": "Mais vous ne mangerez pas de ceux qui ruminent seulement, ou qui ont seulement la corne divisée et le pied fourchu ; tels sont le chameau, le lièvre et le lapin, qui ruminent, mais qui n’ont pas la corne divisée : ils seront impurs pour vous ;",
+        "NAB": "But you shall not eat any of the following that only chew the cud or only have cloven hoofs: the camel, the hare and the rock badger, which indeed chew the cud, but do not have hoofs and are therefore unclean for you;",
+        "VAT_ES": "Pero se abstendrán de comer los animales que son solamente rumiantes y los que solamente tienen la pezuña partida por la mitad. No comerán camello, liebre ni damán, porque aunque son rumiantes, no tienen la pezuña partida. A estos animales deberán considerarlos impuros.",
+        "CEI": "Ma non mangerete quelli che rùminano soltanto o che hanno soltanto l'unghia bipartita, divisa da una fessura e cioè il cammello, la lepre, l'ìrace, che rùminano ma non hanno l'unghia bipartita; considerateli immondi;"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ֠/חֲזִיר כִּֽי מַפְרִ֨יס פַּרְסָ֥ה הוּא֙ וְ/לֹ֣א גֵרָ֔ה טָמֵ֥א ה֖וּא לָ/כֶ֑ם מִ/בְּשָׂרָ/ם֙ לֹ֣א תֹאכֵ֔לוּ וּ/בְ/נִבְלָתָ֖/ם לֹ֥א תִגָּֽעוּ׃",
+        "LXX": "καὶ τὸν ὗν, ὅτι διχηλεῖ ὁπλὴν τοῦτο καὶ ὀνυχίζει ὀνυχιστῆρας ὁπλῆς, καὶ τοῦτο μηρυκισμὸν οὐ μαρυκᾶται, ἀκάθαρτον τοῦτο ὑμῖν· ἀπὸ τῶν κρεῶν αὐτῶν οὐ φάγεσθε, τῶν θνησιμαίων αὐτῶν οὐχ ἅψεσθε.",
+        "VUL": "Sus quoque, quoniam dividat ungulam et non ruminat, immunda erit. Carnibus eorum non vescemini, et cadavera non tangetis.",
+        "SYN": "и свиньи, потому что копыта у нее раздвоены, но не жует жвачки: нечиста она для вас; не ешьте мяса их, и к трупам их не прикасайтесь.",
+        "NEO": "tel est encore le porc, qui a la corne divisée, mais qui ne rumine pas : il sera impur pour vous. Vous ne mangerez pas de leur chair, et vous ne toucherez pas leurs corps morts.",
+        "NAB": "and the pig, which indeed has hoofs and is cloven-footed, but does not chew the cud and is therefore unclean for you. Their flesh you shall not eat, and their dead bodies you shall not touch.",
+        "VAT_ES": "Tampoco comerán cerdo, porque aunque tiene la pezuña partida, no es rumiante. También a este deberán considerarlo impuro, y no podrán comer su carne ni tocar su cadáver.",
+        "CEI": "anche il porco, che ha l'unghia bipartita ma non rumina, lo considererete immondo. Non mangerete la loro carne e non toccherete i loro cadaveri."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אֶת זֶה֙ תֹּֽאכְל֔וּ מִ/כֹּ֖ל אֲשֶׁ֣ר בַּ/מָּ֑יִם כֹּ֧ל אֲשֶׁר ל֛/וֹ סְנַפִּ֥יר וְ/קַשְׂקֶ֖שֶׂת תֹּאכֵֽלוּ׃",
+        "LXX": "Καὶ ταῦτα φάγεσθε ἀπὸ πάντων τῶν ἐν τῷ ὕδατι· πάντα ὅσα ἐστὶν ἐν αὐτοῖς πτερύγια καὶ λεπίδες φάγεσθε.",
+        "VUL": "Hæc comedetis ex omnibus quæ morantur in aquis : quæ habent pinnulas et squamas, comedite :",
+        "SYN": "Из всех _животных,_ которые в воде, ешьте всех, у которых есть перья и чешуя;",
+        "NEO": "Voici les animaux que vous mangerez parmi tous ceux qui sont dans les eaux : vous mangerez de tout ce qui a nageoires et écailles ;",
+        "NAB": "\"Of the various creatures that live in the water, whatever has both fins and scales you may eat,",
+        "VAT_ES": "De entre los animales que viven en el agua, les estará permitido comer todos aquellos que tengan aletas y escamas.",
+        "CEI": "Fra tutti gli animali che vivono nelle acque potrete mangiare quelli che hanno pinne e squame;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/כֹ֨ל אֲשֶׁ֧ר אֵֽין ל֛/וֹ סְנַפִּ֥יר וְ/קַשְׂקֶ֖שֶׂת לֹ֣א תֹאכֵ֑לוּ טָמֵ֥א ה֖וּא לָ/כֶֽם׃",
+        "LXX": "καὶ πάντα ὅσα οὐκ ἔστιν αὐτοῖς πτερύγια καὶ λεπίδες οὐ φάγεσθε, ἀκάθαρτα ὑμῖν ἐστιν.",
+        "VUL": "quæ absque pinnulis et squamis sunt, ne comedatis, quia immunda sunt.",
+        "SYN": "а всех тех, у которых нет перьев и чешуи, не ешьте: нечисто это для вас.",
+        "NEO": "mais tout ce qui n’a pas nageoires et écailles, vous ne le mangerez pas : ce sera impur pour vous.",
+        "NAB": "but all those that lack either fins or scales you shall not eat; they are unclean for you.",
+        "VAT_ES": "Pero no podrán comer los que o tengan aletas ni escamas: a éstos deberán considerarlos impuros.",
+        "CEI": "ma non mangerete nessuno di quelli che non hanno pinne e squame; considerateli immondi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כָּל צִפּ֥וֹר טְהֹרָ֖ה תֹּאכֵֽלוּ׃",
+        "LXX": "Πᾶν ὄρνεον καθαρὸν φάγεσθε.",
+        "VUL": "Omnes aves mundas comedite.",
+        "SYN": "Всякую птицу чистую ешьте;",
+        "NEO": "Vous mangerez tout oiseau pur.",
+        "NAB": "\"You may eat all clean birds.",
+        "VAT_ES": "Podrán comer todas las especies de aves puras.",
+        "CEI": "Potrete mangiare qualunque uccello mondo;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/זֶ֕ה אֲשֶׁ֥ר לֹֽא תֹאכְל֖וּ מֵ/הֶ֑ם הַ/נֶּ֥שֶׁר וְ/הַ/פֶּ֖רֶס וְ/הָֽ/עָזְנִיָּֽה׃",
+        "LXX": "καὶ ταῦτα οὐ φάγεσθε ἀπ’ αὐτῶν· τὸν ἀετὸν καὶ τὸν γρύπα καὶ τὸν ἁλιάετον,",
+        "VUL": "Immundas ne comedatis : aquilam scilicet, et gryphem, et haliæetum,",
+        "SYN": "но сих не должно вам есть из них: орла, грифа и морского орла,",
+        "NEO": "Voici ceux dont vous ne mangerez pas : l’aigle, l’orfraie et le vautour ;",
+        "NAB": "But you shall not eat any of the following: the eagle, the vulture, the osprey,",
+        "VAT_ES": "Pero se abstendrán de comer las siguientes: el águila marina.",
+        "CEI": "ecco quelli che non dovete mangiare:"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/הָ/רָאָה֙ וְ/אֶת הָ֣/אַיָּ֔ה וְ/הַ/דַּיָּ֖ה לְ/מִינָֽ/הּ׃",
+        "LXX": "καὶ τὸν γύπα καὶ τὸν ἴκτινα καὶ τὰ ὅμοια αὐτῷ,",
+        "VUL": "ixion et vulturem ac milvum juxta genus suum :",
+        "SYN": "и коршуна, и сокола, и кречета с породою их,",
+        "NEO": "le faucon, le milan et toute espèce d’autours ;",
+        "NAB": "the various kites and falcons,",
+        "VAT_ES": "el milano, las diversas especies de halcón.",
+        "CEI": "l'aquila, l'ossìfraga e l'aquila di mare, il nibbio e ogni specie di falco,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/אֵ֥ת כָּל עֹרֵ֖ב לְ/מִינֽ/וֹ׃",
+        "LXX": "καὶ στρουθὸν καὶ γλαῦκα καὶ λάρον,",
+        "VUL": "et omne corvini generis,",
+        "SYN": "и всякого ворона с породою его,",
+        "NEO": "toute espèce de corbeaux ;",
+        "NAB": "all the various species of crows,",
+        "VAT_ES": "las diversas especies de cuervo:",
+        "CEI": "ogni specie di corvo,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/אֵת֙ בַּ֣ת הַֽ/יַּעֲנָ֔ה וְ/אֶת הַ/תַּחְמָ֖ס וְ/אֶת הַ/שָּׁ֑חַף וְ/אֶת הַ/נֵּ֖ץ לְ/מִינֵֽ/הוּ׃",
+        "LXX": "καὶ ἀρωδιὸν καὶ κύκνον καὶ εἶβιν,",
+        "VUL": "et struthionem, ac noctuam, et larum, atque accipitrem juxta genus suum :",
+        "SYN": "и страуса, и совы, и чайки, и ястреба с породою его,",
+        "NEO": "l’autruche, le hibou, la mouette et toute espèce d’éperviers ;",
+        "NAB": "the ostrich, the nightjar, the gull, the various species of hawks,",
+        "VAT_ES": "el avestruz, la golondrina, la gaviota y las diversas especies de gavilán;",
+        "CEI": "lo struzzo, la civetta, il gabbiano e ogni specie di sparviero,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אֶת הַ/כּ֥וֹס וְ/אֶת הַ/יַּנְשׁ֖וּף וְ/הַ/תִּנְשָֽׁמֶת׃",
+        "LXX": "καὶ καταράκτην καὶ ἱέρακα καὶ τὰ ὅμοια αὐτῷ, καὶ ὔποπα καὶ νυκτικόρακα,",
+        "VUL": "herodium ac cygnum, et ibin,",
+        "SYN": "и филина, и ибиса, и лебедя,",
+        "NEO": "le chat-huant, l’ibis et la chouette ;",
+        "NAB": "the owl, the screech owl, the ibis,",
+        "VAT_ES": "la lechuza, el búho, el ibis.",
+        "CEI": "il gufo, l'ibis, il cigno,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/הַ/קָּאָ֥ת וְ/אֶֽת הָ/רָחָ֖מָ/ה וְ/אֶת הַ/שָּׁלָֽךְ׃",
+        "LXX": "καὶ πελεκᾶνα καὶ χαραδριὸν καὶ τὰ ὅμοια αὐτῷ, καὶ πορφυρίωνα καὶ νυκτερίδα.",
+        "VUL": "ac mergulum, porphyrionem, et nycticoracem,",
+        "SYN": "и пеликана, и сипа, и рыболова,",
+        "NEO": "le pélican, le cormoran et le plongeon ;",
+        "NAB": "the desert owl, the buzzard, the cormorant,",
+        "VAT_ES": "el pelícano, el buitre, el corvejón,",
+        "CEI": "il pellicano, la fòlaga, l'alcione,"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/הַ֣/חֲסִידָ֔ה וְ/הָ/אֲנָפָ֖ה לְ/מִינָ֑/הּ וְ/הַ/דּוּכִיפַ֖ת וְ/הָ/עֲטַלֵּֽף׃",
+        "LXX": "πάντα τὰ ἑρπετὰ τῶν πετεινῶν ἀκάθαρτα ὑμῖν ἐστιν, οὐ φάγεσθε ἀπ’ αὐτῶν.",
+        "VUL": "onocrotalum, et charadrium, singula in genere suo : upupam quoque et vespertilionem.",
+        "SYN": "и цапли, и зуя с породою его, и удода, и нетопыря.",
+        "NEO": "la cigogne et toute espèce de hérons ; la huppe et la chauve-souris.",
+        "NAB": "the stork, the various species of herons, the hoopoe, and the bat.",
+        "VAT_ES": "la cig&uuml;eña, las diversas especies de garza, la abubilla y el murciélago.",
+        "CEI": "la cicogna, ogni specie di airone, l'ùpupa e il pipistrello."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/כֹל֙ שֶׁ֣רֶץ הָ/ע֔וֹף טָמֵ֥א ה֖וּא לָ/כֶ֑ם לֹ֖א יֵאָכֵֽלוּ׃",
+        "LXX": "πᾶν πετεινὸν καθαρὸν φάγεσθε.",
+        "VUL": "Et omne quod reptat et pennulas habet, immundum erit, et non comedetur.",
+        "SYN": "Все крылатые пресмыкающиеся нечисты для вас, не ешьте [их].",
+        "NEO": "Vous regarderez comme impur tout insecte ailé : on n’en mangera pas.",
+        "NAB": "All winged insects, too, are unclean for you and shall not be eaten.",
+        "VAT_ES": "También deberán considerar impuros a todos los insectos con alas,",
+        "CEI": "Considererete come immondo ogni insetto alato; non ne mangiate."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "כָּל ע֥וֹף טָה֖וֹר תֹּאכֵֽלוּ׃",
+        "LXX": "Πᾶν θνησιμαῖον οὐ φάγεσθε· τῷ παροίκῳ τῷ ἐν ταῖς πόλεσίν σου δοθήσεται καὶ φάγεται, ἢ ἀποδώσῃ τῷ ἀλλοτρίῳ· ὅτι λαὸς ἅγιος εἶ Κυρίῳ τῷ θεῷ σου. οὐχ ἑψήσεις ἄρνα ἐν γάλακτι μητρὸς αὐτοῦ.",
+        "VUL": "Omne quod mundum est, comedite.",
+        "SYN": "Всякую птицу чистую ешьте.",
+        "NEO": "Vous mangerez tout oiseau pur.",
+        "NAB": "But you may eat any clean winged creatures.",
+        "VAT_ES": "pero podrán comer cualquier clase de pájaros puros.",
+        "CEI": "Potrete mangiare ogni uccello mondo."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "לֹ֣א תֹאכְל֣וּ כָל נְ֠בֵלָה לַ/גֵּ֨ר אֲשֶׁר בִּ/שְׁעָרֶ֜י/ךָ תִּתְּנֶ֣נָּ/ה וַ/אֲכָלָ֗/הּ א֤וֹ מָכֹר֙ לְ/נָכְרִ֔י כִּ֣י עַ֤ם קָדוֹשׁ֙ אַתָּ֔ה לַ/יהוָ֖ה אֱלֹהֶ֑י/ךָ לֹֽא תְבַשֵּׁ֥ל גְּדִ֖י בַּ/חֲלֵ֥ב אִמּֽ/וֹ׃",
+        "LXX": "Δεκάτην ἀποδεκατώσεις παντὸς γενήματος τοῦ σπέρματός σου, τὸ γένημα τοῦ ἀγροῦ σου ἐνιαυτὸν κατ’ ἐνιαυτόν,",
+        "VUL": "Quidquid autem morticinum est, ne vescamini ex eo. Peregrino, qui intra portas tuas est, da ut comedat, aut vende ei : quia tu populus sanctus Domini Dei tui es. Non coques hædum in lacte matris suæ.",
+        "SYN": "Не ешьте никакой мертвечины; иноземцу, который _случится_ в жилищах твоих, отдай ее, он пусть ест ее, или продай ему, ибо ты народ святой у Господа Бога твоего. Не вари козленка в молоке матери его.",
+        "NEO": "Vous ne mangerez d’aucune bête morte. Tu la donneras à l’étranger qui est dans tes portes, pour qu’il la mange, ou tu la vendras à un étranger ; car tu es un peuple saint à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu.",
+        "NAB": "\"You must not eat any animal that has died of itself, for you are a people sacred to the LORD, your God. But you may give it to an alien who belongs to your community, and he may eat it, or you may sell it to a foreigner. \"You shall not boil a kid in its mother's milk.",
+        "VAT_ES": "No comerán ningún animal muerto. Se lo darás al extranjero que resida en tu ciudad para que él lo coma, o se lo venderás al extranjero que va de paso. Porque tú eres un pueblo consagrado al Señor, tu Dios. No harás cocer un cabrito en la leche de su madre.",
+        "CEI": "Non mangerete alcuna bestia che sia morta di morte naturale; la darai al forestiero che risiede nelle tue città, perché la mangi, o la venderai a qualche straniero, perché tu sei un popolo consacrato al Signore tuo Dio. Non farai cuocere un capretto nel latte di sua madre."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "עַשֵּׂ֣ר תְּעַשֵּׂ֔ר אֵ֖ת כָּל תְּבוּאַ֣ת זַרְעֶ֑/ךָ הַ/יֹּצֵ֥א הַ/שָּׂדֶ֖ה שָׁנָ֥ה שָׁנָֽה׃",
+        "LXX": "καὶ φάγῃ αὐτὸ ἐν τῷ τόπῳ ᾧ ἂν ἐκλέξηται Κύριος ὁ θεός σου ἐπικληθῆναι τὸ ὄνομα αὐτοῦ ἐκεῖ· οἴσετε τὰ ἐπιδέκατα τοῦ σίτου σου καὶ τοῦ οἴνου σου καὶ τοῦ ἐλαίου σου, τὰ πρωτότοκα τῶν βοῶν σου καὶ τῶν προβάτων σου, ἵνα μάθῃς φοβεῖσθαι Κύριον τὸν θεόν σου πάσας τὰς ἡμέρας.",
+        "VUL": "Decimam partem separabis de cunctis fructibus tuis qui nascuntur in terra per annos singulos,",
+        "SYN": "Отделяй десятину от всего произведения семян твоих, которое приходит с поля [твоего] каждогодно,",
+        "NEO": "Tu lèveras la dîme de tout le produit de tes semailles, de ce que ton champ rapportera chaque année.",
+        "NAB": "\"Each year you shall tithe all the produce that grows in the field you have sown;",
+        "VAT_ES": "Cada año deberás separar la décima parte de todo lo que hayan producido tus sembrados.",
+        "CEI": "Dovrai prelevare la decima da tutto il frutto della tua sementa, che il campo produce ogni anno."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/אָכַלְתָּ֞ לִ/פְנֵ֣י יְהוָ֣ה אֱלֹהֶ֗י/ךָ בַּ/מָּק֣וֹם אֲשֶׁר יִבְחַר֮ לְ/שַׁכֵּ֣ן שְׁמ֣/וֹ שָׁם֒ מַעְשַׂ֤ר דְּגָֽנְ/ךָ֙ תִּֽירֹשְׁ/ךָ֣ וְ/יִצְהָרֶ֔/ךָ וּ/בְכֹרֹ֥ת בְּקָרְ/ךָ֖ וְ/צֹאנֶ֑/ךָ לְמַ֣עַן תִּלְמַ֗ד לְ/יִרְאָ֛ה אֶת יְהוָ֥ה אֱלֹהֶ֖י/ךָ כָּל הַ/יָּמִֽים׃",
+        "LXX": "ἐὰν δὲ μακρὰν γένηται ἀπὸ σοῦ ἡ ὁδός, καὶ μὴ δύνῃ ἀναφέρειν αὐτά, ὅτι μακρὰν ἀπὸ σοῦ ὁ τόπος ὃν ἂν ἐκλέξηται Κύριος ὁ θεός σου ἐπικληθῆναι τὸ ὄνομα αὐτοῦ ἐκεῖ, ὅτι εὐλογήσει σε Κύριος ὁ θεός σου·",
+        "VUL": "et comedes in conspectu Domini Dei tui in loco quem elegerit, ut in eo nomen illius invocetur, decimam frumenti tui, et vini, et olei, et primogenita de armentis et ovibus tuis : ut discas timere Dominum Deum tuum omni tempore.",
+        "SYN": "и ешь пред Господом, Богом твоим, на том месте, которое изберет Он, чтобы пребывать имени Его там; [приноси] десятину хлеба твоего, вина твоего и елея твоего, и первенцев крупного скота твоего и мелкого скота твоего, дабы ты научился бояться Господа, Бога твоего, во все дни.",
+        "NEO": "Et tu mangeras devant \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, dans le lieu qu’il aura choisi pour y faire habiter son nom, la dîme de ton blé, de ton vin nouveau et de ton huile, ainsi que les premiers-nés de tes bœufs et de tes brebis, afin que tu apprennes à craindre \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, à jamais.",
+        "NAB": "then in the place which the LORD, your God, chooses as the dwelling place of his name you shall eat in his presence your tithe of the grain, wine and oil, as well as the firstlings of your herd and flock, that you may learn always to fear the LORD, your God.",
+        "VAT_ES": "y en la presencia del Señor, tu Dios, en el lugar que él elija para constituirlo morada de su Nombre, comerás del diezmo de tu trigo, de tu vino y de tu aceite, y también los primogénitos de tu ganado mayor y menor. Así aprenderás a tener siempre al Señor, tu Dios.",
+        "CEI": "Mangerai davanti al Signore tuo Dio, nel luogo dove avrà scelto di stabilire il suo nome, la decima del tuo frumento, del tuo mosto, del tuo olio e i primi parti del tuo bestiame grosso e minuto, perché tu impari a temere sempre il Signore tuo Dio."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/כִֽי יִרְבֶּ֨ה מִמְּ/ךָ֜ הַ/דֶּ֗רֶךְ כִּ֣י לֹ֣א תוּכַ֘ל שְׂאֵת/וֹ֒ כִּֽי יִרְחַ֤ק מִמְּ/ךָ֙ הַ/מָּק֔וֹם אֲשֶׁ֤ר יִבְחַר֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ לָ/שׂ֥וּם שְׁמ֖/וֹ שָׁ֑ם כִּ֥י יְבָרֶכְ/ךָ֖ יְהוָ֥ה אֱלֹהֶֽי/ךָ׃",
+        "LXX": "καὶ ἀποδώσῃ αὐτὰ ἀργυρίου, καὶ λήμψῃ τὸ ἀργύριον ἐν ταῖς χερσίν σου καὶ πορεύσῃ εἰς τὸν τόπον ὃν ἂν ἐκλέξηται Κύριος ὁ θεός σου αὐτόν·",
+        "VUL": "Cum autem longior fuerit via, et locus quem elegerit Dominus Deus tuus, tibique benedixerit, nec potueris ad eum hæc cuncta portare,",
+        "SYN": "Если же длинна будет для тебя дорога, так что ты не можешь нести сего, потому что далеко от тебя то место, которое изберет Господь, Бог твой, чтоб положить там имя Свое, и Господь, Бог твой, благословил тебя,",
+        "NEO": "Mais si le chemin est trop long pour toi, et que tu ne puisses l’y transporter, parce que le lieu que \\+w Yahweh|strong=\"H3068\"\\+w** choisira pour y faire habiter son nom sera trop loin de toi, lorsque \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’aura béni :",
+        "NAB": "If, however, the journey is too much for you and you are not able to bring your tithe, because the place which the LORD, your God, chooses for the abode of his name is too far for you, considering how the LORD has blessed you,",
+        "VAT_ES": "Si el camino es demasiado largo para que puedas transportar el diezmo –porque el lugar que el Señor elija te queda muy lejos– cuando el te haya bendecido,",
+        "CEI": "Ma se il cammino è troppo lungo per te e tu non puoi trasportare quelle decime, perché è troppo lontano da te il luogo dove il Signore tuo Dio avrà scelto di stabilire il suo nome - perché il Signore tuo Dio ti avrà benedetto -,"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/נָתַתָּ֖ה בַּ/כָּ֑סֶף וְ/צַרְתָּ֤ הַ/כֶּ֨סֶף֙ בְּ/יָ֣דְ/ךָ֔ וְ/הָֽלַכְתָּ֙ אֶל הַ/מָּק֔וֹם אֲשֶׁ֥ר יִבְחַ֛ר יְהוָ֥ה אֱלֹהֶ֖י/ךָ בּֽ/וֹ׃",
+        "LXX": "καὶ δώσεις ἀργύριον ἐπὶ παντὸς οὗ ἐὰν ἐπιθυμεῖ ἡ ψυχή σου· καὶ φάγῃ ἐκεῖ ἐναντίον Κυρίου τοῦ θεοῦ σου, καὶ εὐφρανθήσῃ σὺ καὶ ὁ υἱός σου",
+        "VUL": "vendes omnia, et in pretium rediges, portabisque manu tua, et proficisceris ad locum quem elegerit Dominus Deus tuus :",
+        "SYN": "то променяй это на серебро и возьми серебро в руку твою и приходи на место, которое изберет Господь, Бог твой;",
+        "NEO": "tu échangeras ta dîme pour de l’argent et, ayant serré l’argent dans ta main, tu iras au lieu que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, aura choisi.",
+        "NAB": "you may exchange the tithe for money and, with the purse of money in hand, go to the place which the LORD, your God, chooses.",
+        "VAT_ES": "los cambiarás por dinero y luego irás a ese lugar, llevando contigo el dinero.",
+        "CEI": "allora le convertirai in denaro e tenendolo in mano andrai al luogo che il Signore tuo Dio avrà scelto,"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/נָתַתָּ֣ה הַ/כֶּ֡סֶף בְּ/כֹל֩ אֲשֶׁר תְּאַוֶּ֨ה נַפְשְׁ/ךָ֜ בַּ/בָּקָ֣ר וּ/בַ/צֹּ֗אן וּ/בַ/יַּ֨יִן֙ וּ/בַ/שֵּׁכָ֔ר וּ/בְ/כֹ֛ל אֲשֶׁ֥ר תִּֽשְׁאָלְ/ךָ֖ נַפְשֶׁ֑/ךָ וְ/אָכַ֣לְתָּ שָּׁ֗ם לִ/פְנֵי֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ וְ/שָׂמַחְתָּ֖ אַתָּ֥ה וּ/בֵיתֶֽ/ךָ׃",
+        "LXX": "καὶ ὁ Λευείτης ὁ ἐν ταῖς πόλεσίν σου, ὅτι οὐκ ἔστιν αὐτῷ μερὶς οὐδὲ κλῆρος μετὰ σοῦ.",
+        "VUL": "et emes ex eadem pecunia quidquid tibi placuerit, sive ex armentis, sive ex ovibus, vinum quoque et siceram, et omne quod desiderat anima tua : et comedes coram Domino Deo tuo, et epulaberis tu et domus tua :",
+        "SYN": "и покупай на серебро сие всего, чего пожелает душа твоя, волов, овец, вина, сикера и всего, чего потребует от тебя душа твоя; и ешь там пред Господом, Богом твоим, и веселись ты и семейство твое.",
+        "NEO": "Là, tu achèteras avec l’argent tout ce que désirera ton âme, des bœufs, des brebis, du vin, des liqueurs fermentées, tout ce que demandera ton âme, et tu mangeras là devant \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, et tu te réjouiras, toi et ta maison.",
+        "NAB": "You may then exchange the money for whatever you desire, oxen or sheep, wine or strong drink, or anything else you would enjoy, and there before the LORD, your God, you shall partake of it and make merry with your family.",
+        "VAT_ES": "Allí podrás comprar con ese dinero todo lo que desees: ganado mayor o menor, vino o bebida fermentada, en una palabra, cualquier cosa que sea de tu agrado. Entonces comerás en la presencia del Señor, tu Dios, y te alegrarás junto con tu familia.",
+        "CEI": "e lo impiegherai per comprarti quanto tu desideri: bestiame grosso o minuto, vino, bevande inebrianti o qualunque cosa di tuo gusto e mangerai davanti al Signore tuo Dio e gioirai tu e la tua famiglia."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/הַ/לֵּוִ֥י אֲשֶׁר בִּ/שְׁעָרֶ֖י/ךָ לֹ֣א תַֽעַזְבֶ֑/נּוּ כִּ֣י אֵ֥ין ל֛/וֹ חֵ֥לֶק וְ/נַחֲלָ֖ה עִמָּֽ/ךְ׃",
+        "LXX": "μετὰ τρία ἔτη ἐξοίσεις πᾶν τὸ ἐπιδέκατον τῶν γενημάτων σου. ἐν τῷ ἐνιαυτῷ ἐκείνῳ θήσεις αὐτὸ ἐν ταῖς πόλεσίν σου.",
+        "VUL": "et Levites qui intra portas tuas est, cave ne derelinquas eum, quia non habet aliam partem in possessione tua.",
+        "SYN": "И левита, который в жилищах твоих, не оставь, ибо нет ему части и удела с тобою.",
+        "NEO": "Tu ne délaisseras pas le Lévite qui sera dans tes portes, car il n’a ni part ni héritage avec toi.",
+        "NAB": "But do not neglect the Levite who belongs to your community, for he has no share in the heritage with you.",
+        "VAT_ES": "No olvides al levita que vive en tus ciudades, ya que él no tiene posesión ni herencia contigo.",
+        "CEI": "Il levita che abita entro le tue città, non lo abbandonerai, perché non ha parte né eredità con te."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "מִ/קְצֵ֣ה שָׁלֹ֣שׁ שָׁנִ֗ים תּוֹצִיא֙ אֶת כָּל מַעְשַׂר֙ תְּבוּאָ֣תְ/ךָ֔ בַּ/שָּׁנָ֖ה הַ/הִ֑וא וְ/הִנַּחְתָּ֖ בִּ/שְׁעָרֶֽי/ךָ׃",
+        "LXX": "καὶ ἐλεύσεται ὁ Λευείτης, ὅτι οὐκ ἔστιν αὐτῷ μερὶς οὐδὲ κλῆρος μετὰ σοῦ, καὶ ὁ προσήλυτος καὶ ὁ ὀρφανὸς καὶ ἡ χήρα ἡ ἐν ταῖς πόλεσίν σου, καὶ φάγονται καὶ ἐμπλησθήσονται, ἵνα εὐλογήσῃ σε Κύριος ὁ θεός σου ἐν πᾶσιν τοῖς ἔργοις οἷς ἐὰν ποιῇς.",
+        "VUL": "Anno tertio separabis aliam decimam ex omnibus quæ nascuntur tibi eo tempore, et repones intra januas tuas.",
+        "SYN": "По прошествии же трех лет отделяй все десятины произведений твоих в тот год и клади [сие] в жилищах твоих;",
+        "NEO": "A la fin de chaque troisième année, tu mettras à part toute la dîme de tes produits de cette année-là, et tu la déposeras dans tes portes.",
+        "NAB": "\"At the end of every third year you shall bring out all the tithes of your produce for that year and deposit them in community stores,",
+        "VAT_ES": "al cabo de tres años, deberás separar la décima parte de todo lo producido ese año, y lo depositarás en la puerta de tu ciudad.",
+        "CEI": "Alla fine di ogni triennio metterai da parte tutte le decime del tuo provento del terzo anno e le deporrai entro le tue città;"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וּ/בָ֣א הַ/לֵּוִ֡י כִּ֣י אֵֽין ל/וֹ֩ חֵ֨לֶק וְ/נַחֲלָ֜ה עִמָּ֗/ךְ וְ֠/הַ/גֵּר וְ/הַ/יָּת֤וֹם וְ/הָֽ/אַלְמָנָה֙ אֲשֶׁ֣ר בִּ/שְׁעָרֶ֔י/ךָ וְ/אָכְל֖וּ וְ/שָׂבֵ֑עוּ לְמַ֤עַן יְבָרֶכְ/ךָ֙ יְהוָ֣ה אֱלֹהֶ֔י/ךָ בְּ/כָל מַעֲשֵׂ֥ה יָדְ/ךָ֖ אֲשֶׁ֥ר תַּעֲשֶֽׂה׃",
+        "VUL": "Venietque Levites qui aliam non habet partem nec possessionem tecum, et peregrinus ac pupillus et vidua, qui intra portas tuas sunt, et comedent et saturabuntur : ut benedicat tibi Dominus Deus tuus in cunctis operibus manuum tuarum quæ feceris.",
+        "SYN": "и пусть придет левит, ибо ему нет части и удела с тобою, и пришелец, и сирота, и вдова, которые _находятся_ в жилищах твоих, и пусть едят и насыщаются, дабы благословил тебя Господь, Бог твой, во всяком деле рук твоих, которое ты будешь делать.",
+        "NEO": "Alors viendra le Lévite, qui n’a ni part ni héritage avec toi, ainsi que l’étranger, l’orphelin et la veuve, qui seront dans tes portes, et ils mangeront et se rassasieront, afin que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te bénisse dans toutes les œuvres que tu entreprendras de tes mains.",
+        "NAB": "that the Levite who has no share in the heritage with you, and also the alien, the orphan and the widow who belong to your community, may come and eat their fill; so that the LORD, your God, may bless you in all that you undertake.",
+        "VAT_ES": "Entonces vendrá a comer el levita, ya que él no tiene posesión ni herencia contigo; y lo mismo harán el extranjero, el huérfano y la viuda que están en tus ciudades, hasta quedar saciados. Así el Señor te bendecirá en todas tus empresas.",
+        "CEI": "il levita, che non ha parte né eredità con te, l'orfano e la vedova che saranno entro le tue città, verranno, mangeranno e si sazieranno, perché il Signore tuo Dio ti benedica in ogni lavoro a cui avrai messo mano."
+      }
+    }
+  }
+}

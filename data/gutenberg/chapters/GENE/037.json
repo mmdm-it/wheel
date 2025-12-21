@@ -1,0 +1,663 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_037",
+  "book_key": "GENE",
+  "sequence": 37,
+  "chapter_in": {
+    "MT": 37,
+    "VUL": 37,
+    "LXX": 37
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֣שֶׁב יַעֲקֹ֔ב בְּ/אֶ֖רֶץ מְגוּרֵ֣י אָבִ֑י/ו בְּ/אֶ֖רֶץ כְּנָֽעַן׃",
+        "VUL": "Habitavit autem Jacob in terra Chanaan, in qua pater suus peregrinatus est.",
+        "LXX": "Κατῴκει δὲ Ἰακὼβ ἐν τῇ γῇ οὗ παρῴκησεν ὁ πατὴρ αὐτοῦ, ἐν γῇ Χανάαν.",
+        "NAB": "Jacob settled in the land where his father had stayed, the land of Canaan.",
+        "SYN": "Иаков жил в земле странствования отца своего [Исаака], в земле Ханаанской.",
+        "NEO": "Jacob s’établit dans le pays où son père avait séjourné dans le pays de Canaan.",
+        "VAT_ES": "Mientras tanto, Jacob estaba instalado en el territorio donde su padre había residido como extranjero, en la tierra de Canaán.",
+        "CEI": "Giacobbe si stabilì nel paese dove suo padre era stato forestiero, nel paese di Cànaan."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אֵ֣לֶּה תֹּלְד֣וֹת יַעֲקֹ֗ב יוֹסֵ֞ף בֶּן שְׁבַֽע עֶשְׂרֵ֤ה שָׁנָה֙ הָיָ֨ה רֹעֶ֤ה אֶת אֶחָי/ו֙ בַּ/צֹּ֔אן וְ/ה֣וּא נַ֗עַר אֶת בְּנֵ֥י בִלְהָ֛ה וְ/אֶת בְּנֵ֥י זִלְפָּ֖ה נְשֵׁ֣י אָבִ֑י/ו וַ/יָּבֵ֥א יוֹסֵ֛ף אֶת דִּבָּתָ֥/ם רָעָ֖ה אֶל אֲבִי/הֶֽם׃",
+        "VUL": "Et hæ sunt generationes ejus : Joseph cum sedecim esset annorum, pascebat gregem cum fratribus suis adhuc puer : et erat cum filiis Balæ et Zelphæ uxorum patris sui : accusavitque fratres suos apud patrem crimine pessimo.",
+        "LXX": "αὗται δὲ αἱ γενέσεις Ἰακώβ. Ἰωσὴφ δέκα ἑπτὰ ἐτῶν ἦν ποιμαίνων μετὰ τῶν ἀδελφῶν αὐτοῦ τὰ πρόβατα, ὢν νέος, μετὰ τῶν υἱῶν Βάλλας καὶ μετὰ τῶν υἱῶν Ζέλφας τῶν γυναικῶν τοῦ πατρὸς αὐτοῦ· κατήνεγκαν δὲ Ἰωσὴφ ψόγον πονηρὸν πρὸς Ἰσραὴλ τὸν πατέρα αὐτῶν.",
+        "NAB": "This is his family history. When Joseph was seventeen years old, he was tending the flocks with his brothers; he was an assistant to the sons of his father's wives Bilhah and Zilpah, and he brought his father bad reports about them.",
+        "SYN": "Вот житие Иакова. Иосиф, семнадцати лет, пас скот [отца своего] вместе с братьями своими, будучи отроком, с сыновьями Валлы и с сыновьями Зелфы, жен отца своего. И доводил Иосиф худые о них слухи до [Израиля] отца их.",
+        "NEO": "Voici l’histoire de Jacob.",
+        "VAT_ES": "Esta es la historia de Jacob.",
+        "CEI": "Questa è la storia della discendenza di Giacobbe. Giuseppe all'età di diciassette anni pascolava il gregge con i fratelli. Egli era giovane e stava con i figli di Bila e i figli di Zilpa, mogli di suo padre. Ora Giuseppe riferì al loro padre i pettegolezzi sul loro conto."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/יִשְׂרָאֵ֗ל אָהַ֤ב אֶת יוֹסֵף֙ מִ/כָּל בָּנָ֔י/ו כִּֽי בֶן זְקֻנִ֥ים ה֖וּא ל֑/וֹ וְ/עָ֥שָׂה ל֖/וֹ כְּתֹ֥נֶת פַּסִּֽים׃",
+        "VUL": "Israël autem diligebat Joseph super omnes filios suos, eo quod in senectute genuisset eum : fecitque ei tunicam polymitam.",
+        "LXX": "Ἰακὼβ δὲ ἠγάπα τὸν Ἰωσὴφ παρὰ πάντας τοὺς υἱοὺς αὐτοῦ, ὅτι υἱὸς γήρους ἦν αὐτῷ· ἐποίησεν δὲ αὐτῷ χιτῶνα ποικίλον.",
+        "NAB": "Israel loved Joseph best of all his sons, for he was the child of his old age; and he had made him a long tunic.",
+        "SYN": "Израиль любил Иосифа более всех сыновей своих, потому что он был сын старости его, -- и сделал ему разноцветную одежду.",
+        "NEO": "Or Israël aimait Joseph plus que tous ses autres fils, parce que c’était un fils de sa vieillesse ; et il lui fit une robe longue.",
+        "VAT_ES": "Israel amaba a José más que a ningún otro de sus hijos, porque era el hijo de la vejez, y le mandó hacer una túnica de mangas largas.",
+        "CEI": "Israele amava Giuseppe più di tutti i suoi figli, perché era il figlio avuto in vecchiaia, e gli aveva fatto una tunica dalle lunghe maniche."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יִּרְא֣וּ אֶחָ֗י/ו כִּֽי אֹת֞/וֹ אָהַ֤ב אֲבִי/הֶם֙ מִ/כָּל אֶחָ֔י/ו וַֽ/יִּשְׂנְא֖וּ אֹת֑/וֹ וְ/לֹ֥א יָכְל֖וּ דַּבְּר֥/וֹ לְ/שָׁלֹֽם׃",
+        "VUL": "Videntes autem fratres ejus quod a patre plus cunctis filiis amaretur, oderant eum, nec poterant ei quidquam pacifice loqui.",
+        "LXX": "ἰδόντες δὲ οἱ ἀδελφοὶ αὐτοῦ ὅτι αὐτὸν ἐφίλει ὁ πατὴρ αὐτοῦ ἐκ πάντων τῶν υἱῶν αὐτοῦ, ἐμίσησαν αὐτόν, καὶ οὐκ ἐδύναντο λαλεῖν αὐτῷ οὐδὲν εἰρηνικόν.",
+        "NAB": "When his brothers saw that their father loved him best of all his sons, they hated him so much that they would not even greet him.",
+        "SYN": "И увидели братья его, что отец их любит его более всех братьев его; и возненавидели его и не могли говорить с ним дружелюбно.",
+        "NEO": "Ses frères, voyant que leur père l’aimait plus qu’eux tous, le prirent en haine, et ils ne pouvaient plus lui parler amicalement.",
+        "VAT_ES": "Pero sus hermanos, al ver que lo amaba más que a ellos, le tomaron tal odio que ni siquiera podían dirigirle el saludo.",
+        "CEI": "I suoi fratelli, vedendo che il loro padre amava lui più di tutti i suoi figli, lo odiavano e non potevano parlargli amichevolmente."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יַּחֲלֹ֤ם יוֹסֵף֙ חֲל֔וֹם וַ/יַּגֵּ֖ד לְ/אֶחָ֑י/ו וַ/יּוֹסִ֥פוּ ע֖וֹד שְׂנֹ֥א אֹתֽ/וֹ׃",
+        "VUL": "Accidit quoque ut visum somnium referret fratribus suis : quæ causa majoris odii seminarium fuit.",
+        "LXX": "ἐνυπνιασθεὶς δὲ Ἰωσὴφ ἐνύπνιον ἀπήγγειλεν αὐτὸ τοῖς ἀδελφοῖς αὐτοῦ,",
+        "NAB": "Once Joseph had a dream, which he told to his brothers:",
+        "SYN": "И видел Иосиф сон, и рассказал [его] братьям своим: и они возненавидели его еще более.",
+        "NEO": "Joseph eut un songe, et il le raconta à ses frères, qui le haïrent encore davantage.",
+        "VAT_ES": "Una vez, José tuvo un sueño y lo contó a sus hermanos.",
+        "CEI": "Ora Giuseppe fece un sogno e lo raccontò ai fratelli, che lo odiarono ancor di più."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֖אמֶר אֲלֵי/הֶ֑ם שִׁמְעוּ נָ֕א הַ/חֲל֥וֹם הַ/זֶּ֖ה אֲשֶׁ֥ר חָלָֽמְתִּי׃",
+        "VUL": "Dixitque ad eos : Audite somnium meum quod vidi :",
+        "LXX": "καὶ εἶπεν αὐτοῖς Ἀκούσατε τοῦ ἐνυπνίου τούτου οὗ ἐνυπνιάσθην.",
+        "NAB": "\"Listen to this dream I had.",
+        "SYN": "Он сказал им: выслушайте сон, который я видел:",
+        "NEO": "Il leur dit : « Ecoutez, je vous prie, le songe que j’ai eu :",
+        "VAT_ES": "«Oigan el sueño que tuve», les dijo.",
+        "CEI": "Disse dunque loro: \"Ascoltate questo sogno che ho fatto."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ֠/הִנֵּה אֲנַ֜חְנוּ מְאַלְּמִ֤ים אֲלֻמִּים֙ בְּ/ת֣וֹךְ הַ/שָּׂדֶ֔ה וְ/הִנֵּ֛ה קָ֥מָה אֲלֻמָּתִ֖/י וְ/גַם נִצָּ֑בָה וְ/הִנֵּ֤ה תְסֻבֶּ֨ינָה֙ אֲלֻמֹּ֣תֵי/כֶ֔ם וַ/תִּֽשְׁתַּחֲוֶ֖יןָ לַ/אֲלֻמָּתִֽ/י׃",
+        "VUL": "putabam nos ligare manipulos in agro : et quasi consurgere manipulum meum, et stare, vestrosque manipulos circumstantes adorare manipulum meum.",
+        "LXX": "ᾤμην ὑμᾶς δεσμεύειν δράγματα ἐν μέσῳ τῷ πεδίῳ· καὶ ἀνέστη τὸ ἐμὸν δράγμα καὶ ὠρθώθη· περιστραφέντα δὲ τὰ δράγματα ὑμῶν προσεκύνησαν τὸ ἐμὸν δράγμα.",
+        "NAB": "There we were, binding sheaves in the field, when suddenly my sheaf rose to an upright position, and your sheaves formed a ring around my sheaf and bowed down to it.\"",
+        "SYN": "вот, мы вяжем снопы посреди поля; и вот, мой сноп встал и стал прямо; и вот, ваши снопы стали кругом и поклонились моему снопу.",
+        "NEO": "Nous étions à lier des gerbes au milieu des champs ; et voici, ma gerbe s’est levée et s’est tenue debout, et vos gerbes l’ont entourée et se sont prosternées devant elle. »",
+        "VAT_ES": "«Nosotros estábamos en el campo atando gavillas. De pronto, mi gavilla se alzó y se mantuvo erguida, mientras que la de ustedes formaban un círculo alrededor de la mía y se inclinaban ante ella».",
+        "CEI": "Noi stavamo legando covoni in mezzo alla campagna, quand'ecco il mio covone si alzò e restò diritto e i vostri covoni vennero intorno e si prostrarono davanti al mio\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמְרוּ ל/וֹ֙ אֶחָ֔י/ו הֲ/מָלֹ֤ךְ תִּמְלֹךְ֙ עָלֵ֔י/נוּ אִם מָשׁ֥וֹל תִּמְשֹׁ֖ל בָּ֑/נוּ וַ/יּוֹסִ֤פוּ עוֹד֙ שְׂנֹ֣א אֹת֔/וֹ עַל חֲלֹמֹתָ֖י/ו וְ/עַל דְּבָרָֽי/ו׃",
+        "VUL": "Responderunt fratres ejus : Numquid rex noster eris ? aut subjiciemur ditioni tuæ ? Hæc ergo causa somniorum atque sermonum, invidiæ et odii fomitem ministravit.",
+        "LXX": "εἶπαν δὲ αὐτῷ οἱ ἀδελφοί Μὴ βασιλεύων βασιλεύσεις ἐφ’ ἡμᾶς, ἢ κυριεύων κυριεύσεις ἡμῶν; καὶ προσέθεντο ἔτι μισεῖν αὐτὸν ἕνεκεν τῶν ἐνυπνίων αὐτοῦ καὶ ἕνεκεν τῶν ῥημάτων αὐτοῦ.",
+        "NAB": "\"Are you really going to make yourself king over us?\" his brothers asked him. \"Or impose your rule on us?\" So they hated him all the more because of his talk about his dreams.",
+        "SYN": "И сказали ему братья его: неужели ты будешь царствовать над нами? неужели будешь владеть нами? И возненавидели его еще более за сны его и за слова его.",
+        "NEO": "Ses frères lui dirent : « Est-ce que tu régneras sur nous ? est-ce que tu nous domineras ? » Et ils le haïrent encore davantage pour ses songes et pour ses paroles.",
+        "VAT_ES": "Sus hermanos le preguntaron: «&iquest;Acaso pretendes reinar sobre nosotros y tenernos bajo tu dominio?». Y lo odiaron más todavía por lo que contaba acerca de sus sueños.",
+        "CEI": "Gli dissero i suoi fratelli: \"Vorrai forse regnare su di noi o ci vorrai dominare?\". Lo odiarono ancora di più a causa dei suoi sogni e delle sue parole."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יַּחֲלֹ֥ם עוֹד֙ חֲל֣וֹם אַחֵ֔ר וַ/יְסַפֵּ֥ר אֹת֖/וֹ לְ/אֶחָ֑י/ו וַ/יֹּ֗אמֶר הִנֵּ֨ה חָלַ֤מְתִּֽי חֲלוֹם֙ ע֔וֹד וְ/הִנֵּ֧ה הַ/שֶּׁ֣מֶשׁ וְ/הַ/יָּרֵ֗חַ וְ/אַחַ֤ד עָשָׂר֙ כּֽוֹכָבִ֔ים מִֽשְׁתַּחֲוִ֖ים לִֽ/י׃",
+        "VUL": "Aliud quoque vidit somnium, quod narrans fratribus, ait : Vidi per somnium, quasi solem, et lunam, et stellas undecim adorare me.",
+        "LXX": "ἴδεν δὲ ἐνύπνιον ἕτερον, καὶ διηγήσατο αὐτὸ τῷ πατρὶ αὐτοῦ καὶ τοῖς ἀδελφοῖς αὐτοῦ, καὶ εἶπεν Ἰδοὺ ἐνυπνιάσθην ἐνύπνιον ἕτερον· ὥσπερ ὁ ἥλιος καὶ ἡ σελήνη καὶ ἕνδεκα ἀστέρες προσεκύνουν με.",
+        "NAB": "Then he had another dream, and this one, too, he told to his brothers. \"I had another dream,\" he said; \"this time, the sun and the moon and eleven stars were bowing down to me.\"",
+        "SYN": "И видел он еще другой сон и рассказал его [отцу своему и] братьям своим, говоря: вот, я видел еще сон: вот, солнце и луна и одиннадцать звезд поклоняются мне.",
+        "NEO": "Il eut encore un autre songe, qu’il raconta à ses frères. Il dit : « J’ai eu encore un songe : le soleil, la lune et onze étoiles se prosternaient devant moi. »",
+        "VAT_ES": "Después tuvo otro sueño, y también lo contó a sus hermanos. «Tuve otro sueño, les dijo. El sol, la luna y once estrellas se postraban delante de mi».",
+        "CEI": "Egli fece ancora un altro sogno e lo narrò al padre e ai fratelli e disse: \"Ho fatto ancora un sogno, sentite: il sole, la luna e undici stelle si prostravano davanti a me\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יְסַפֵּ֣ר אֶל אָבִי/ו֮ וְ/אֶל אֶחָי/ו֒ וַ/יִּגְעַר בּ֣/וֹ אָבִ֔י/ו וַ/יֹּ֣אמֶר ל֔/וֹ מָ֛ה הַ/חֲל֥וֹם הַ/זֶּ֖ה אֲשֶׁ֣ר חָלָ֑מְתָּ הֲ/ב֣וֹא נָב֗וֹא אֲנִי֙ וְ/אִמְּ/ךָ֣ וְ/אַחֶ֔י/ךָ לְ/הִשְׁתַּחֲוֺ֥ת לְ/ךָ֖ אָֽרְצָ/ה׃",
+        "VUL": "Quod cum patri suo, et fratribus retulisset, increpavit eum pater suus, et dixit : Quid sibi vult hoc somnium quod vidisti ? num ego et mater tua, et fratres tui adorabimus te super terram ?",
+        "LXX": "καὶ ἐπετίμησεν αὐτῷ ὁ πατὴρ αὐτοῦ καὶ εἶπεν Τί τὸ ἐνύπνιον τοῦτο ὃ ἐνυπνιάσθης; ἆρά γε ἐλθόντες ἐλευσόμεθα ἐγώ τε καὶ ἡ μήτηρ σου καὶ οἱ ἀδελφοί σου προσκυνῆσαί σοι ἐπὶ τὴν γῆν;",
+        "NAB": "When he also told it to his father, his father reproved him. \"What is the meaning of this dream of yours?\" he asked. \"Can it be that I and your mother and your brothers are to come and bow to the ground before you?\"",
+        "SYN": "И он рассказал отцу своему и братьям своим; и побранил его отец его и сказал ему: что это за сон, который ты видел? неужели я и твоя мать, и твои братья придем поклониться тебе до земли?",
+        "NEO": "Il le raconta à son père et à ses frères, et son père le réprimanda, en disant : « Que signifie ce songe que tu as eu ? Faudra-t-il que nous venions, moi, ta mère et tes frères, nous prosterner à terre devant toi ? »",
+        "VAT_ES": "Pero cuando se lo contó a su padre, este lo reprendió diciéndole: «&iquest;Qué significa ese sueño que has tenido? &iquest;Acaso yo, tu madre y tus hermanos vendremos a postrarnos en tierra delante de ti?».",
+        "CEI": "Lo narrò dunque al padre e ai fratelli e il padre lo rimproverò e gli disse: \"Che sogno è questo che hai fatto! Dovremo forse venire io e tua madre e i tuoi fratelli a prostrarci fino a terra davanti a te?\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יְקַנְאוּ ב֖/וֹ אֶחָ֑י/ו וְ/אָבִ֖י/ו שָׁמַ֥ר אֶת הַ/דָּבָֽר׃",
+        "VUL": "Invidebant ei igitur fratres sui : pater vero rem tacitus considerabat.",
+        "LXX": "ἐζήλωσαν δὲ αὐτὸν οἱ ἀδελφοὶ αὐτοῦ· ὁ δὲ πατὴρ αὐτοῦ διετήρησεν τὸ ῥῆμα.",
+        "NAB": "So his brothers were wrought up against him but his father pondered the matter.",
+        "SYN": "Братья его досадовали на него, а отец его заметил это слово.",
+        "NEO": "Et ses frères furent jaloux de lui, mais son père conservait la chose dans son cœur.",
+        "VAT_ES": "Y sus hermanos le tenían envidia, pero su padre reflexionaba sobre todas estas cosas.",
+        "CEI": "I suoi fratelli perciò erano invidiosi di lui, ma suo padre tenne in mente la cosa."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֵּלְכ֖וּ אֶחָ֑י/ו לִ/רְע֛וֹת אֶׄתׄ צֹ֥אן אֲבִי/הֶ֖ם בִּ/שְׁכֶֽם׃",
+        "VUL": "Cumque fratres illius in pascendis gregibus patris morarentur in Sichem,",
+        "LXX": "Ἐπορεύθησαν δὲ οἱ ἀδελφοὶ αὐτοῦ βόσκειν τὰ πρόβατα τοῦ πατρὸς αὐτῶν εἰς Συχέμ.",
+        "NAB": "One day, when his brothers had gone to pasture their father's flocks at Shechem,",
+        "SYN": "Братья его пошли пасти скот отца своего в Сихем.",
+        "NEO": "Les frères de Joseph allèrent paître les troupeaux de leur père à Sichem.",
+        "VAT_ES": "Un día, sus hermanos habían ido hasta Siquem para apacentar el rebaño de su padre.",
+        "CEI": "I suoi fratelli andarono a pascolare il gregge del loro padre a Sichem."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יִשְׂרָאֵ֜ל אֶל יוֹסֵ֗ף הֲ/ל֤וֹא אַחֶ֨י/ךָ֙ רֹעִ֣ים בִּ/שְׁכֶ֔ם לְכָ֖/ה וְ/אֶשְׁלָחֲ/ךָ֣ אֲלֵי/הֶ֑ם וַ/יֹּ֥אמֶר ל֖/וֹ הִנֵּֽ/נִי׃",
+        "VUL": "dixit ad eum Israël : Fratres tui pascunt oves in Sichimis : veni, mittam te ad eos. Quo respondente,",
+        "LXX": "καὶ εἶπεν Ἰσραὴλ πρὸς Ἰωσήφ Οὐχ οἱ ἀδελφοί σου ποιμαίνουσιν ἐν Συχέμ; δεῦρο ἀποστείλω σε πρὸς αὐτούς. εἶπεν δὲ αὐτῷ Ἰδοὺ ἐγώ.",
+        "NAB": "Israel said to Joseph, \"Your brothers, you know, are tending our flocks at Shechem. Get ready; I will send you to them.\" \"I am ready,\" Joseph answered.",
+        "SYN": "И сказал Израиль Иосифу: братья твои не пасут ли в Сихеме? пойди, я пошлю тебя к ним. Он отвечал ему: вот я.",
+        "NEO": "Et Israël dit à Joseph : « Tes frères ne paissent-ils pas le troupeau à Sichem ? Viens, que je t’envoie vers eux. » Il répondit : « Me voici. »",
+        "VAT_ES": "Entonces Israel dijo a José: «Tus hermanos están con el rebaño de Siquem. Quiero que vayas a verlos». «Está bien», respondió él.",
+        "CEI": "Israele disse a Giuseppe: \"Sai che i tuoi fratelli sono al pascolo a Sichem? Vieni, ti voglio mandare da loro\". Gli rispose: \"Eccomi!\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר ל֗/וֹ לֶךְ נָ֨א רְאֵ֜ה אֶת שְׁל֤וֹם אַחֶ֨י/ךָ֙ וְ/אֶת שְׁל֣וֹם הַ/צֹּ֔אן וַ/הֲשִׁבֵ֖/נִי דָּבָ֑ר וַ/יִּשְׁלָחֵ֨/הוּ֙ מֵ/עֵ֣מֶק חֶבְר֔וֹן וַ/יָּבֹ֖א שְׁכֶֽמָ/ה׃",
+        "VUL": "Præsto sum, ait ei : Vade, et vide si cuncta prospera sint erga fratres tuos, et pecora : et renuntia mihi quid agatur. Missus de valle Hebron, venit in Sichem :",
+        "LXX": "εἶπεν δὲ αὐτῷ Ἰσραήλ Πορευθεὶς ἴδε εἰ ὑγιαίνουσιν οἱ ἀδελφοί σου καὶ τὰ πρόβατα, καὶ ἀνάγγειλόν μοι. καὶ ἀπέστειλεν αὐτὸν ἐκ τῆς κοιλάδος τῆς Χεβρών· καὶ ἦλθεν εἰς Συχέμ.",
+        "NAB": "\"Go then,\" he replied; \"see if all is well with your brothers and the flocks, and bring back word.\" So he sent him off from the valley of Hebron. When Joseph reached Shechem,",
+        "SYN": "[Израиль] сказал ему: пойди, посмотри, здоровы ли братья твои и цел ли скот, и принеси мне ответ. И послал его из долины Хевронской; и он пришел в Сихем.",
+        "NEO": "Et Israël lui dit : « Va donc, et vois si tes frères vont bien et si le troupeau est en bon état, et tu m’en apporteras des nouvelles. » Et il l’envoya de la vallée d’Hébron, et Joseph alla à Sichem.",
+        "VAT_ES": "Su padre añadió: «Ve a ver cómo les va a tus hermanos y al rebaño, y tráeme noticias». Y lo envió desde el valle de Hebrón. Cuando José llegó a Siquem,",
+        "CEI": "Gli disse: \"Và a vedere come stanno i tuoi fratelli e come sta il bestiame, poi torna a riferirmi\". Lo fece dunque partire dalla valle di Ebron ed egli arrivò a Sichem."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יִּמְצָאֵ֣/הוּ אִ֔ישׁ וְ/הִנֵּ֥ה תֹעֶ֖ה בַּ/שָּׂדֶ֑ה וַ/יִּשְׁאָלֵ֧/הוּ הָ/אִ֛ישׁ לֵ/אמֹ֖ר מַה תְּבַקֵּֽשׁ׃",
+        "VUL": "invenitque eum vir errantem in agro, et interrogavit quid quæreret.",
+        "LXX": "καὶ εὗρεν αὐτὸν ἄνθρωπος πλανώμενον ἐν τῷ πεδίῳ· ἠρώτησεν δὲ αὐτὸν ὁ ἄνθρωπος λέγων Τί ζητεῖς;",
+        "NAB": "a man met him as he was wandering about in the fields. \"What are you looking for?\" the man asked him.",
+        "SYN": "И нашел его некто блуждающим в поле, и спросил его тот человек, говоря: чего ты ищешь?",
+        "NEO": "Un homme, l’ayant rencontré errant dans la campagne, le questionna, en disant : « Que cherches-tu ? »",
+        "VAT_ES": "un hombre lo encontró dando vueltas por el campo y le preguntó: «&iquest;Qué estás buscando?».",
+        "CEI": "Mentr'egli andava errando per la campagna, lo trovò un uomo, che gli domandò: \"Che cerchi?\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֕אמֶר אֶת אַחַ֖/י אָנֹכִ֣י מְבַקֵּ֑שׁ הַגִּֽידָ/ה נָּ֣א לִ֔/י אֵיפֹ֖ה הֵ֥ם רֹעִֽים׃",
+        "VUL": "At ille respondit : Fratres meos quæro : indica mihi ubi pascant greges.",
+        "LXX": "ὁ δὲ εἶπεν Τοὺς ἀδελφούς μου ζητῶ· ἀπάγγειλόν μοι ποῦ βόσκουσιν.",
+        "NAB": "\"I am looking for my brothers,\" he answered. \"Could you please tell me where they are tending the flocks?\"",
+        "SYN": "Он сказал: я ищу братьев моих; скажи мне, где они пасут?",
+        "NEO": "Il répondit : « Je cherche mes frères ; indique-moi, je te prie, où ils font paître leur troupeau. »",
+        "VAT_ES": "El le respondió: «Busco a mis hermanos. &iquest;Puedes decirme dónde están apacentando el rebaño?».",
+        "CEI": "Rispose: \"Cerco i miei fratelli. Indicami dove si trovano a pascolare\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר הָ/אִישׁ֙ נָסְע֣וּ מִ/זֶּ֔ה כִּ֤י שָׁמַ֨עְתִּי֙ אֹֽמְרִ֔ים נֵלְכָ֖ה דֹּתָ֑יְנָ/ה וַ/יֵּ֤לֶךְ יוֹסֵף֙ אַחַ֣ר אֶחָ֔י/ו וַ/יִּמְצָאֵ֖/ם בְּ/דֹתָֽן׃",
+        "VUL": "Dixitque ei vir : Recesserunt de loco isto : audivi autem eos dicentes : Eamus in Dothain. Perrexit ergo Joseph post fratres suos, et invenit eos in Dothain.",
+        "LXX": "εἶπεν δὲ αὐτῷ ὁ ἄνθρωπος Ἀπήρκασιν ἐντεῦθεν· ἤκουσα γὰρ αὐτῶν λεγόντων Πορευθῶμεν εἰς Δωθάειμ. καὶ ἐπορεύθη Ἰωσὴφ κατόπισθεν τῶν ἀδελφῶν αὐτοῦ, καὶ εὗρεν αὐτοὺς εἰς Δωθάειμ.",
+        "NAB": "The man told him, \"They have moved on from here; in fact, I heard them say, 'Let us go on to Dothan.'\" So Joseph went after his brothers and caught up with them in Dothan.",
+        "SYN": "И сказал тот человек: они ушли отсюда, ибо я слышал, как они говорили: пойдем в Дофан. И пошел Иосиф за братьями своими и нашел их в Дофане.",
+        "NEO": "Et l’homme dit : « Ils sont partis d’ici ; car je les ai entendus dire : Allons à Dothaïn. » Joseph alla après ses frères, et il les trouva à Dothaïn.",
+        "VAT_ES": "«Se han ido de aquí, repuso el hombre, porque les oí decir: «Vamos a Dotán». José fue entonces en busca de sus hermanos, y los encontró en Dotán.",
+        "CEI": "Quell'uomo disse: \"Hanno tolto le tende di qui, infatti li ho sentiti dire: Andiamo a Dotan\". Allora Giuseppe andò in cerca dei suoi fratelli e li trovò a Dotan."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּרְא֥וּ אֹת֖/וֹ מֵ/רָחֹ֑ק וּ/בְ/טֶ֨רֶם֙ יִקְרַ֣ב אֲלֵי/הֶ֔ם וַ/יִּֽתְנַכְּל֥וּ אֹת֖/וֹ לַ/הֲמִיתֽ/וֹ׃",
+        "VUL": "Qui cum vidissent eum procul, antequam accederet ad eos, cogitaverunt illum occidere :",
+        "LXX": "πρόιδον δὲ αὐτὸν μακρόθεν πρὸ τοῦ ἐγγίσαι αὐτὸν πρὸς αὐτούς· καὶ ἐπορεύοντο ἀποκτεῖναι αὐτόν.",
+        "NAB": "They noticed him from a distance, and before he came up to them, they plotted to kill him.",
+        "SYN": "И увидели они его издали, и прежде нежели он приблизился к ним, стали умышлять против него, чтобы убить его.",
+        "NEO": "Ils l’aperçurent de loin et, avant qu’il fût près d’eux, ils complotèrent de le faire mourir.",
+        "VAT_ES": "Ellos lo divisaron desde lejos, y antes que se acercara, ya se habían confabulado para darle muerte.",
+        "CEI": "Essi lo videro da lontano e, prima che giungesse vicino a loro, complottarono di farlo morire."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֖וּ אִ֣ישׁ אֶל אָחִ֑י/ו הִנֵּ֗ה בַּ֛עַל הַ/חֲלֹמ֥וֹת הַלָּזֶ֖ה בָּֽא׃",
+        "VUL": "et mutuo loquebantur : Ecce somniator venit :",
+        "LXX": "εἶπαν δὲ ἕκαστος πρὸς τὸν ἀδελφὸν αὐτοῦ Ἰδοὺ ὁ ἐνυπνιαστὴς ἐκεῖνος ἔρχεται·",
+        "NAB": "They said to one another: \"Here comes that master dreamer!",
+        "SYN": "И сказали друг другу: вот, идет сновидец;",
+        "NEO": "Ils se dirent l’un à l’autre : « Voici l’homme aux songes ; c’est bien lui qui arrive.",
+        "VAT_ES": "«Ahí viene ese soñador», se dijeron unos a otros.",
+        "CEI": "Si dissero l'un l'altro: \"Ecco, il sognatore arriva!"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֣ה לְכ֣וּ וְ/נַֽהַרְגֵ֗/הוּ וְ/נַשְׁלִכֵ֨/הוּ֙ בְּ/אַחַ֣ד הַ/בֹּר֔וֹת וְ/אָמַ֕רְנוּ חַיָּ֥ה רָעָ֖ה אֲכָלָ֑תְ/הוּ וְ/נִרְאֶ֕ה מַה יִּהְי֖וּ חֲלֹמֹתָֽי/ו׃",
+        "VUL": "venite, occidamus eum, et mittamus in cisternam veterem : dicemusque : Fera pessima devoravit eum : et tunc apparebit quid illi prosint somnia sua.",
+        "LXX": "νῦν οὖν δεῦτε ἀποκτείνωμεν αὐτόν, καὶ ῥίψομεν αὐτὸν εἰς ἕνα τῶν λάκκων, καὶ ἐροῦμεν Θηρίον πονηρὸν κατέφαγεν αὐτόν· καὶ ὀψόμεθα τί ἔστιν τὰ ἐνύπνια αὐτοῦ.",
+        "NAB": "Come on, let us kill him and throw him into one of the cisterns here; we could say that a wild beast devoured him. We shall then see what comes of his dreams.\"",
+        "SYN": "пойдем теперь, и убьем его, и бросим его в какой-нибудь ров, и скажем, что хищный зверь съел его; и увидим, что будет из его снов.",
+        "NEO": "Venez donc, tuons-le et jetons-le dans une des citernes, et nous dirons qu’une bête féroce l’a dévoré ; nous verrons ce qui en sera de ses songes ! »",
+        "VAT_ES": "«&iquest;Por qué no lo matamos y lo arrojamos en una de esas cisternas? Después diremos que lo devoró una fiera. &iexcl;Veremos entonces en qué terminan sus sueños!».",
+        "CEI": "Orsù, uccidiamolo e gettiamolo in qualche cisterna! Poi diremo: Una bestia feroce l'ha divorato! Così vedremo che ne sarà dei suoi sogni!\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֣ע רְאוּבֵ֔ן וַ/יַּצִּלֵ֖/הוּ מִ/יָּדָ֑/ם וַ/יֹּ֕אמֶר לֹ֥א נַכֶּ֖/נּוּ נָֽפֶשׁ׃",
+        "VUL": "Audiens autem hoc Ruben, nitebatur liberare eum de manibus eorum, et dicebat :",
+        "LXX": "ἀκούσας δὲ Ῥουβὴν ἐξείλατο αὐτὸν ἐκ τῶν χειρῶν αὐτῶν, καὶ εἶπεν Οὐ πατάξομεν αὐτὸν εἰς ψυχήν.",
+        "NAB": "When Reuben heard this, he tried to save him from their hands, saying: \"We must not take his life.",
+        "SYN": "И услышал _сие_ Рувим и избавил его от рук их, сказав: не убьем его.",
+        "NEO": "Ruben entendit et il le délivra de leurs mains. Il dit : « Ne le frappons pas à mort. »",
+        "VAT_ES": "Pero Rubén, al oír esto, trató de salvarlo diciendo: «No atentemos contra su vida».",
+        "CEI": "Ma Ruben sentì e volle salvarlo dalle loro mani, dicendo: \"Non togliamogli la vita\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֲלֵ/הֶ֣ם רְאוּבֵן֮ אַל תִּשְׁפְּכוּ דָם֒ הַשְׁלִ֣יכוּ אֹת֗/וֹ אֶל הַ/בּ֤וֹר הַ/זֶּה֙ אֲשֶׁ֣ר בַּ/מִּדְבָּ֔ר וְ/יָ֖ד אַל תִּשְׁלְחוּ ב֑/וֹ לְמַ֗עַן הַצִּ֤יל אֹת/וֹ֙ מִ/יָּדָ֔/ם לַ/הֲשִׁיב֖/וֹ אֶל אָבִֽי/ו׃",
+        "VUL": "Non interficiatis animam ejus, nec effundatis sanguinem : sed projicite eum in cisternam hanc, quæ est in solitudine, manusque vestras servate innoxias : hoc autem dicebat, volens eripere eum de manibus eorum, et reddere patri suo.",
+        "LXX": "εἶπεν δὲ αὐτοῖς Ῥουβήν Μὴ ἐκχέητε αἷμα· ἐμβάλετε δὲ αὐτὸν εἰς ἕνα τῶν λάκκων τῶν ἐν τῇ ἐρήμῳ, χεῖρα δὲ μὴ ἐπενέγκητε αὐτῷ· ὅπως ἐξέληται αὐτόν ἐκ τῶν χειρῶν αὐτῶν καὶ ἀποδῷ αὐτὸν τῷ πατρὶ αὐτοῦ.",
+        "NAB": "Instead of shedding blood,\" he continued, \"just throw him into that cistern there in the desert; but don't kill him outright.\" His purpose was to rescue him from their hands and restore him to his father.",
+        "SYN": "И сказал им Рувим: не проливайте крови; бросьте его в ров, который в пустыне, а руки не налагайте на него. _Сие_ _говорил_ _он_ [с тем намерением], чтобы избавить его от рук их и возвратить его к отцу его.",
+        "NEO": "Ruben leur dit : « Ne versez pas le sang ; jetez-le dans cette citerne qui est dans le désert, et ne portez pas la main sur lui. » — Son dessein était de le délivrer de leurs mains, pour le faire retourner vers son père. —",
+        "VAT_ES": "Y agregó: «No derramen sangre. Arrójenlo en esa cisterna que está allá afuera, en el desierto, pero no pongan sus manos sobre él». En realidad, su intención era librarlo de sus manos y devolverlo a su padre sano y salvo.",
+        "CEI": "Poi disse loro: \"Non versate il sangue, gettatelo in questa cisterna che è nel deserto, ma non colpitelo con la vostra mano\"; egli intendeva salvarlo dalle loro mani e ricondurlo a suo padre."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַֽ/יְהִ֕י כַּֽ/אֲשֶׁר בָּ֥א יוֹסֵ֖ף אֶל אֶחָ֑י/ו וַ/יַּפְשִׁ֤יטוּ אֶת יוֹסֵף֙ אֶת כֻּתָּנְתּ֔/וֹ אֶת כְּתֹ֥נֶת הַ/פַּסִּ֖ים אֲשֶׁ֥ר עָלָֽי/ו׃",
+        "VUL": "Confestim igitur ut pervenit ad fratres suos, nudaverunt eum tunica talari et polymita :",
+        "LXX": "ἐγένετο δὲ ἡνίκα ἦλθεν Ἰωσὴφ πρὸς τοὺς ἀδελφοὺς αὐτοῦ, ἐξέδυσαν τὸν Ἰωσὴφ τὸν χιτῶνα τὸν ποικίλον τὸν περὶ αὐτόν,",
+        "NAB": "So when Joseph came up to them, they stripped him of the long tunic he had on;",
+        "SYN": "Когда Иосиф пришел к братьям своим, они сняли с Иосифа одежду его, одежду разноцветную, которая была на нем,",
+        "NEO": "Lorsque Joseph arriva auprès de ses frères, ils le dépouillèrent de sa robe, de la robe longue qu’il portait ;",
+        "VAT_ES": "Apenas José llegó al lugar donde estaban sus hermanos, estos lo despojaron de su túnica –la túnica de mangas largas que llevaba puesta–,",
+        "CEI": "Quando Giuseppe fu arrivato presso i suoi fratelli, essi lo spogliarono della sua tunica, quella tunica dalle lunghe maniche ch'egli indossava,"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּ֨קָּחֻ֔/הוּ וַ/יַּשְׁלִ֥כוּ אֹת֖/וֹ הַ/בֹּ֑רָ/ה וְ/הַ/בּ֣וֹר רֵ֔ק אֵ֥ין בּ֖/וֹ מָֽיִם׃",
+        "VUL": "miseruntque eum in cisternam veterem, quæ non habebat aquam.",
+        "LXX": "καὶ λαβόντες αὐτὸν ἔρριψαν εἰς τὸν λάκκον· ὁ δὲ λάκκος ἐκεῖνος ὕδωρ οὐκ εἶχεν.",
+        "NAB": "then they took him and threw him into the cistern, which was empty and dry.",
+        "SYN": "и взяли его и бросили его в ров; ров же тот был пуст; воды в нем не было.",
+        "NEO": "et, l’ayant pris, ils le jetèrent dans la citerne. Cette citerne était vide : il n’y avait pas d’eau.",
+        "VAT_ES": "lo tomaron y lo arrojaron a la cisterna, que estaba completamente vacía.",
+        "CEI": "poi lo afferrarono e lo gettarono nella cisterna: era una cisterna vuota, senz'acqua."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֵּשְׁבוּ֮ לֶֽ/אֱכָל לֶחֶם֒ וַ/יִּשְׂא֤וּ עֵֽינֵי/הֶם֙ וַ/יִּרְא֔וּ וְ/הִנֵּה֙ אֹרְחַ֣ת יִשְׁמְעֵאלִ֔ים בָּאָ֖ה מִ/גִּלְעָ֑ד וּ/גְמַלֵּי/הֶ֣ם נֹֽשְׂאִ֗ים נְכֹאת֙ וּ/צְרִ֣י וָ/לֹ֔ט הוֹלְכִ֖ים לְ/הוֹרִ֥יד מִצְרָֽיְמָ/ה׃",
+        "VUL": "Et sedentes ut comederent panem, viderunt Ismaëlitas viatores venire de Galaad, et camelos eorum portantes aromata, et resinam, et stacten in Ægyptum.",
+        "LXX": "ἐκάθισαν δὲ φαγεῖν ἄρτον· καὶ ἀναβλέψαντες τοῖς ὀφθαλμοῖς ἴδον, καὶ ἰδοὺ ὁδοιπόροι Ἰσμαηλεῖται ἤρχοντο ἐκ Γαλαάδ, καὶ οἱ κάμηλοι αὐτῶν ἔγεμον θυμιαμάτων καὶ ῥιτίνης καὶ στακτῆς· ἐπορεύοντο δὲ καταγαγεῖν εἰς Αἴγυπτον.",
+        "NAB": "They then sat down to their meal. Looking up, they saw a caravan of Ishmaelites coming from Gilead, their camels laden with gum, balm and resin to be taken down to Egypt.",
+        "SYN": "И сели они есть хлеб, и, взглянув, увидели, вот, идет из Галаада караван Измаильтян, и верблюды их несут стираксу, бальзам и ладан: идут они отвезти это в Египет.",
+        "NEO": "Puis ils s’assirent pour manger.",
+        "VAT_ES": "Luego se sentaron a comer.",
+        "CEI": "Poi sedettero per prendere cibo. Quando ecco, alzando gli occhi, videro arrivare una carovana di Ismaeliti provenienti da Galaad, con i cammelli carichi di resina, di balsamo e di laudano, che andavano a portare in Egitto."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר יְהוּדָ֖ה אֶל אֶחָ֑י/ו מַה בֶּ֗צַע כִּ֤י נַהֲרֹג֙ אֶת אָחִ֔י/נוּ וְ/כִסִּ֖ינוּ אֶת דָּמֽ/וֹ׃",
+        "VUL": "Dixit ergo Judas fratribus suis : Quid nobis prodest si occiderimus fratrem nostrum, et celaverimus sanguinem ipsius ?",
+        "LXX": "εἶπεν δὲ Ἰούδας πρὸς τοὺς ἀδελφοὺς αὐτοῦ Τί χρήσιμον ἐὰν ἀποκτείνωμεν τὸν ἀδελφὸν ἡμῶν καὶ κρύψωμεν τὸ αἷμα αὐτοῦ;",
+        "NAB": "Judah said to his brothers: \"What is to be gained by killing our brother and concealing his blood?",
+        "SYN": "И сказал Иуда братьям своим: что пользы, если мы убьем брата нашего и скроем кровь его?",
+        "NEO": "Alors Juda dit à ses frères : « Que gagnerons-nous à tuer notre frère et à cacher son sang ?",
+        "VAT_ES": "Entonces Judá dijo a sus hermanos: «&iquest;Qué ganamos asesinando a nuestro hermano y ocultando su sangre?",
+        "CEI": "Allora Giuda disse ai fratelli: \"Che guadagno c'è ad uccidere il nostro fratello e a nasconderne il sangue?"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "לְכ֞וּ וְ/נִמְכְּרֶ֣/נּוּ לַ/יִּשְׁמְעֵאלִ֗ים וְ/יָדֵ֨/נוּ֙ אַל תְּהִי ב֔/וֹ כִּֽי אָחִ֥י/נוּ בְשָׂרֵ֖/נוּ ה֑וּא וַֽ/יִּשְׁמְע֖וּ אֶחָֽי/ו׃",
+        "VUL": "melius est ut venundetur Ismaëlitis, et manus nostræ non polluantur : frater enim et caro nostra est. Acquieverunt fratres sermonibus illius.",
+        "LXX": "δεῦτε ἀποδώμεθα αὐτὸν τοῖς Ἰσμαηλίταις τούτοις, αἱ δὲ χεῖρες ἡμῶν μὴ ἔστωσαν ἐπ’ αὐτόν, ὅτι ἀδελφὸς ἡμῶν καὶ σάρξ ἡμῶν ἐστίν. ἤκουσαν δὲ οἱ ἀδελφοὶ αὐτοῦ.",
+        "NAB": "Rather, let us sell him to these Ishmaelites, instead of doing away with him ourselves. After all, he is our brother, our own flesh.\" His brothers agreed.",
+        "SYN": "Пойдем, продадим его Измаильтянам, а руки наши да не будут на нем, ибо он брат наш, плоть наша. Братья его послушались",
+        "NEO": "Allons le vendre aux Ismaélites et ne portons pas la main sur lui ; car il est notre frère, notre chair. » Ses frères l’écoutèrent",
+        "VAT_ES": "En lugar de atentar contra su vida, vendámoslo a los ismaelitas, porque él es nuestro hermano, nuestra propia carne». Y sus hermanos estuvieron de acuerdo.",
+        "CEI": "Su, vendiamolo agli Ismaeliti e la nostra mano non sia contro di lui, perché è nostro fratello e nostra carne\". I suoi fratelli lo ascoltarono."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יַּֽעַבְרוּ֩ אֲנָשִׁ֨ים מִדְיָנִ֜ים סֹֽחֲרִ֗ים וַֽ/יִּמְשְׁכוּ֙ וַ/יַּֽעֲל֤וּ אֶת יוֹסֵף֙ מִן הַ/בּ֔וֹר וַ/יִּמְכְּר֧וּ אֶת יוֹסֵ֛ף לַ/יִּשְׁמְעֵאלִ֖ים בְּ/עֶשְׂרִ֣ים כָּ֑סֶף וַ/יָּבִ֥יאוּ אֶת יוֹסֵ֖ף מִצְרָֽיְמָ/ה׃",
+        "VUL": "Et prætereuntibus Madianitis negotiatoribus, extrahentes eum de cisterna, vendiderunt eum Ismaëlitis, viginti argenteis : qui duxerunt eum in Ægyptum.",
+        "LXX": "καὶ παρεπορεύοντο οἱ ἄνθρωποι οἱ Μαδιηναῖοι οἱ ἔμποροι, καὶ ἐξείλκυσαν καὶ ἀνεβίβασαν τὸν Ἰωσὴφ ἐκ τοῦ λάκκου· καὶ ἀπέδοντο τὸν Ἰωσὴφ τοῖς Ἰσμαηλίταις εἴκοσι χρυσῶν· καὶ κατήγαγον τὸν Ἰωσὴφ εἰς Αἴγυπτον.",
+        "NAB": "They sold Joseph to the Ishmaelites for twenty pieces of silver. Some Midianite traders passed by, and they pulled Joseph up out of the cistern and took him to Egypt.",
+        "SYN": "и, когда проходили купцы Мадиамские, вытащили Иосифа изо рва и продали Иосифа Измаильтянам за двадцать сребренников; а они отвели Иосифа в Египет.",
+        "NEO": "et, quand les marchands madianites passèrent, ils tirèrent Joseph et le firent remonter de la citerne ; et ils le vendirent pour vingt pièces d’argent aux Ismaélites, qui l’emmenèrent en Égypte.",
+        "VAT_ES": "Pero mientras tanto, unos negociantes madianitas pasaron por allí y retiraron a José de la cisterna. Luego lo vendieron a los ismaelitas por veinte monedas de planta, y José fue llevado a Egipto.",
+        "CEI": "Passarono alcuni mercanti madianiti; essi tirarono su ed estrassero Giuseppe dalla cisterna e per venti sicli d'argento vendettero Giuseppe agli Ismaeliti. Così Giuseppe fu condotto in Egitto."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יָּ֤שָׁב רְאוּבֵן֙ אֶל הַ/בּ֔וֹר וְ/הִנֵּ֥ה אֵין יוֹסֵ֖ף בַּ/בּ֑וֹר וַ/יִּקְרַ֖ע אֶת בְּגָדָֽי/ו׃",
+        "VUL": "Reversusque Ruben ad cisternam, non invenit puerum :",
+        "LXX": "ἀνέστρεψεν δὲ Ῥουβὴν ἐπὶ τὸν λάκκον, καὶ οὐχ ὁρᾷ τὸν Ἰωσὴφ ἐν τῷ λάκκῳ· καὶ διέρρηξεν τὰ ἱμάτια αὐτοῦ.",
+        "NAB": "When Reuben went back to the cistern and saw that Joseph was not in it, he tore his clothes,",
+        "SYN": "Рувим же пришел опять ко рву; и вот, нет Иосифа во рве. И разодрал он одежды свои,",
+        "NEO": "Ruben revint à la citerne, et voici que Joseph n’était plus dans la citerne.",
+        "VAT_ES": "Cuando Rubén volvió a la cisterna y se dio cuenta de que José había desaparecido, desgarró su ropa,",
+        "CEI": "Quando Ruben ritornò alla cisterna, ecco Giuseppe non c'era più. Allora si stracciò le vesti,"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥שָׁב אֶל אֶחָ֖י/ו וַ/יֹּאמַ֑ר הַ/יֶּ֣לֶד אֵינֶ֔/נּוּ וַ/אֲנִ֖י אָ֥נָה אֲנִי בָֽא׃",
+        "VUL": "et scissis vestibus pergens ad fratres suos, ait : Puer non comparet, et ego quo ibo ?",
+        "LXX": "καὶ ἀνέστρεψεν πρὸς τοὺς ἀδελφοὺς αὐτοῦ καὶ εἶπεν Τὸ παιδάριον ⸆ οὐκ ἔστιν· ἐγὼ δὲ ποῦ πορεύομαι ἔτι;",
+        "NAB": "and returning to his brothers, he exclaimed: \"The boy is gone! And I - where can I turn?\"",
+        "SYN": "и возвратился к братьям своим, и сказал: отрока нет, а я, куда я денусь?",
+        "NEO": "Il déchira ses vêtements et, étant retourné vers ses frères, il dit : « L’enfant n’y est plus, et moi, où irai-je ? »",
+        "VAT_ES": "y regresando a donde estaban sus hermanos, dijo: «El muchacho ha desaparecido. &iquest;Dónde iré yo ahora?».",
+        "CEI": "tornò dai suoi fratelli e disse: \"Il ragazzo non c'è più, dove andrò io?\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יִּקְח֖וּ אֶת כְּתֹ֣נֶת יוֹסֵ֑ף וַֽ/יִּשְׁחֲטוּ֙ שְׂעִ֣יר עִזִּ֔ים וַ/יִּטְבְּל֥וּ אֶת הַ/כֻּתֹּ֖נֶת בַּ/דָּֽם׃",
+        "VUL": "Tulerunt autem tunicam ejus, et in sanguine hædi, quem occiderant, tinxerunt :",
+        "LXX": "λαβόντες δὲ τὸν χιτῶνα τοῦ Ἰωσὴφ ἔσφαξαν ἔριφον αἰγῶν καὶ ἐμόλυναν τὸν χιτῶνα αἵματι.",
+        "NAB": "They took Joseph's tunic, and after slaughtering a goat, dipped the tunic in its blood.",
+        "SYN": "И взяли одежду Иосифа, и закололи козла, и вымарали одежду кровью;",
+        "NEO": "Ils prirent alors la robe de Joseph et, ayant tué un bouc, ils plongèrent la robe dans le sang.",
+        "VAT_ES": "Entonces tomaron la túnica de José, degollaron un cabrito, y empaparon la túnica con sangre.",
+        "CEI": "Presero allora la tunica di Giuseppe, scannarono un capro e intinsero la tunica nel sangue."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַֽ/יְשַׁלְּח֞וּ אֶת כְּתֹ֣נֶת הַ/פַּסִּ֗ים וַ/יָּבִ֨יאוּ֙ אֶל אֲבִי/הֶ֔ם וַ/יֹּאמְר֖וּ זֹ֣את מָצָ֑אנוּ הַכֶּר נָ֗א הַ/כְּתֹ֧נֶת בִּנְ/ךָ֛ הִ֖וא אִם לֹֽא׃",
+        "VUL": "mittentes qui ferrent ad patrem, et dicerent : Hanc invenimus : vide utrum tunica filii tui sit, an non.",
+        "LXX": "καὶ ἀπέστειλαν τὸν χιτῶνα τὸν ποικίλον καὶ εἰσήνεγκαν τῷ πατρὶ αὐτῶν, καὶ εἶπαν Τοῦτον εὕρομεν· ἐπίγνωθι εἰ χιτὼν τοῦ υἱοῦ σού ἐστιν ἢ οὔ.",
+        "NAB": "Then they sent someone to bring the long tunic to their father, with the message: \"We found this. See whether it is your son's tunic or not.\"",
+        "SYN": "и послали разноцветную одежду, и доставили к отцу своему, и сказали: мы это нашли; посмотри, сына ли твоего эта одежда, или нет.",
+        "NEO": "Et ils envoyèrent à leur père la longue robe, en lui faisant dire : « Voilà ce que nous avons trouvé ; reconnais si c’est la robe de ton fils, ou non. »",
+        "VAT_ES": "Después enviaron a su padre la túnica de mangas largas, junto con este mensaje: «Hemos encontrado esto. Fíjate bien si es la túnica de tu hijo, o no».",
+        "CEI": "Poi mandarono al padre la tunica dalle lunghe maniche e gliela fecero pervenire con queste parole: \"L'abbiamo trovata; riscontra se è o no la tunica di tuo figlio\"."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יַּכִּירָ֤/הּ וַ/יֹּ֨אמֶר֙ כְּתֹ֣נֶת בְּנִ֔/י חַיָּ֥ה רָעָ֖ה אֲכָלָ֑תְ/הוּ טָרֹ֥ף טֹרַ֖ף יוֹסֵֽף׃",
+        "VUL": "Quam cum agnovisset pater, ait : Tunica filii mei est : fera pessima comedit eum, bestia devoravit Joseph.",
+        "LXX": "καὶ ἐπέγνω αὐτὸν καὶ εἶπεν Χιτὼν τοῦ υἱοῦ μού ἐστιν· θηρίον πονηρὸν κατέφαγεν αὐτόν, θηρίον ἥρπασεν τὸν Ἰωσήφ.",
+        "NAB": "He recognized it and exclaimed: \"My son's tunic! A wild beast has devoured him! Joseph has been torn to pieces!\"",
+        "SYN": "Он узнал ее и сказал: _это_ одежда сына моего; хищный зверь съел его; верно, растерзан Иосиф.",
+        "NEO": "Jacob la reconnut et dit : « C’est la robe de mon fils ! Une bête féroce l’a dévoré ! Joseph a été mis en pièces ! »",
+        "VAT_ES": "Este, al reconocerla, exclamó: «&iexcl;Es la túnica de mi hijo! Un animal salvaje lo ha devorado. &iexcl;José ha sido presa de las fieras!».",
+        "CEI": "Egli la riconobbe e disse: \"È la tunica di mio figlio! Una bestia feroce l'ha divorato. Giuseppe è stato sbranato\"."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרַ֤ע יַעֲקֹב֙ שִׂמְלֹתָ֔י/ו וַ/יָּ֥שֶׂם שַׂ֖ק בְּ/מָתְנָ֑י/ו וַ/יִּתְאַבֵּ֥ל עַל בְּנ֖/וֹ יָמִ֥ים רַבִּֽים׃",
+        "VUL": "Scissisque vestibus, indutus est cilicio, lugens filium suum multo tempore.",
+        "LXX": "διέρρηξεν δὲ Ἰακὼβ τὰ ἱμάτια αὐτοῦ, καὶ ἐπέθετο σάκκον ἐπὶ τὴν ὀσφὺν αὐτοῦ, καὶ ἐπένθει τὸν υἱὸν αὐτοῦ ἡμέρας τινάς.",
+        "NAB": "Then Jacob rent his clothes, put sackcloth on his loins, and mourned his son many days.",
+        "SYN": "И разодрал Иаков одежды свои, и возложил вретище на чресла свои, и оплакивал сына своего многие дни.",
+        "NEO": "Et il déchira ses vêtements, mit un sac sur ses reins et fit le deuil de son fils pendant longtemps.",
+        "VAT_ES": "Jacob desgarró sus vestiduras, se vistió de luto y estuvo mucho tiempo de duelo por su hijo.",
+        "CEI": "Giacobbe si stracciò le vesti, si pose un cilicio attorno ai fianchi e fece lutto sul figlio per molti giorni."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יָּקֻמוּ֩ כָל בָּנָ֨י/ו וְ/כָל בְּנֹתָ֜י/ו לְ/נַחֲמ֗/וֹ וַ/יְמָאֵן֙ לְ/הִתְנַחֵ֔ם וַ/יֹּ֕אמֶר כִּֽי אֵרֵ֧ד אֶל בְּנִ֛/י אָבֵ֖ל שְׁאֹ֑לָ/ה וַ/יֵּ֥בְךְּ אֹת֖/וֹ אָבִֽי/ו׃",
+        "VUL": "Congregatis autem cunctis liberis ejus ut lenirent dolorem patris, noluit consolationem accipere, sed ait : Descendam ad filium meum lugens in infernum. Et illo perseverante in fletu,",
+        "LXX": "συνήχθησαν δὲ πάντες οἱ υἱοὶ αὐτοῦ καὶ αἱ θυγατέρες, καὶ ἦλθον παρακαλέσαι αὐτόν· καὶ οὐκ ἤθελεν παρακαλεῖσθαι, λέγων ὅτι Καταβήσομαι πρὸς τὸν υἱόν μου πενθῶν εἰς ᾅδου· καὶ ἔκλαυσεν αὐτὸν ὁ πατὴρ αὐτοῦ.",
+        "NAB": "Though his sons and daughters tried to console him, he refused all consolation, saying, \"No, I will go down mourning to my son in the nether world.\" Thus did his father lament him.",
+        "SYN": "И собрались все сыновья его и все дочери его, чтобы утешить его; но он не хотел утешиться и сказал: с печалью сойду к сыну моему в преисподнюю. Так оплакивал его отец его.",
+        "NEO": "Tous ses fils et toutes ses filles vinrent pour le consoler ; mais il refusa d’être consolé ; il disait : « Je descendrai dans le deuil vers mon fils au séjour des morts. » Et son père le pleura.",
+        "VAT_ES": "Sus hijos y sus hijas venían a consolarlo, pero él rehusaba todo consuelo, diciendo: «No. Voy a bajar enlutado a donde está mi hijo, a la morada de los muertos». Y continuaba lamentándose.",
+        "CEI": "Tutti i suoi figli e le sue figlie vennero a consolarlo, ma egli non volle essere consolato dicendo: \"No, io voglio scendere in lutto dal figlio mio nella tomba\". E il padre suo lo pianse."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וְ/הַ֨/מְּדָנִ֔ים מָכְר֥וּ אֹת֖/וֹ אֶל מִצְרָ֑יִם לְ/פֽוֹטִיפַר֙ סְרִ֣יס פַּרְעֹ֔ה שַׂ֖ר הַ/טַּבָּחִֽים׃",
+        "VUL": "Madianitæ vendiderunt Joseph in Ægypto Putiphari eunucho Pharaonis, magistro militum.",
+        "LXX": "οἱ δὲ Μαδιηναῖοι ἀπέδοντο τὸν Ἰωσὴφ εἰς Αἴγυπτον τῷ Πετρεφῇ τῷ σπάδοντι Φαραὼ ἀρχιμαγείρῳ.",
+        "NAB": "The Midianites, meanwhile, sold Joseph in Egypt to Potiphar, a courtier of Pharaoh and his chief steward.",
+        "SYN": "Мадианитяне же продали его в Египте Потифару, царедворцу фараонову, начальнику телохранителей.",
+        "NEO": "Les Madianites le vendirent en Égypte à Putiphar, officier de Pharaon, chef des gardes.",
+        "VAT_ES": "Pero entretanto, en Egipto, los madianitas lo habían vendido a Putifar, un funcionario del Faraón, capitán de guardias.",
+        "CEI": "Intanto i Madianiti lo vendettero in Egitto a Potifar, consigliere del faraone e comandante delle guardie."
+      }
+    }
+  }
+}

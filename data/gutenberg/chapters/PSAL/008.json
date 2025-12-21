@@ -1,0 +1,176 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_008",
+  "book_key": "PSAL",
+  "sequence": 8,
+  "chapter_in": {
+    "MT": 8,
+    "VUL": 8,
+    "LXX": 8
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֥חַ עַֽל הַ/גִּתִּ֗ית מִזְמ֥וֹר לְ/דָוִֽד׃",
+        "LXX": "Εἰς τὸ τέλος, ὑπὲρ τῶν ληνῶν· ψαλμὸς τῷ Δαυείδ.",
+        "VUL": "In finem, pro torcularibus. Psalmus David.",
+        "SYN": "Начальнику хора. На Гефском _орудии._ Псалом Давида.",
+        "NEO": "Au maître de chant. Sur la Gitthienne. Chant de David.",
+        "NAB": "For the leader; \"upon the gittith.\" A psalm of David.",
+        "CEI": "Al maestro di coro. Sul canto: \"I Torchi...\". Salmo. Di Davide."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "יְהוָ֤ה אֲדֹנֵ֗י/נוּ מָֽה אַדִּ֣יר שִׁ֭מְ/ךָ בְּ/כָל הָ/אָ֑רֶץ אֲשֶׁ֥ר תְּנָ֥/ה ה֝וֹדְ/ךָ֗ עַל הַ/שָּׁמָֽיִם׃",
+        "LXX": "Κύριε ὁ κύριος ἡμῶν, ὡς θαυμαστὸν τὸ ὄνομά σου ἐν πάσῃ τῇ γῇ· ὅτι ἐπήρθη ἡ μεγαλοπρεπία σου ὑπεράνω τῶν οὐρανῶν.",
+        "VUL": "[Domine, Dominus noster,/ quam admirabile est nomen tuum in universa terra !/ quoniam elevata est magnificentia tua super cælos./",
+        "SYN": "Господи, Боже наш! как величественно имя Твое по всей земле! Слава Твоя простирается превыше небес!",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, notre Seigneur, que ton nom est glorieux sur toute la terre !",
+        "NAB": "O LORD, our Lord, how awesome is your name through all the earth! You have set your majesty above the heavens!",
+        "VAT_ES": "&iexcl;Señor, nuestro Dios,",
+        "CEI": "O Signore, nostro Dio, quanto è grande il tuo nome su tutta la terra: sopra i cieli si innalza la tua magnificenza."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "מִ/פִּ֤י עֽוֹלְלִ֨ים וְֽ/יֹנְקִים֮ יִסַּ֪דְתָּ֫ עֹ֥ז לְמַ֥עַן צוֹרְרֶ֑י/ךָ לְ/הַשְׁבִּ֥ית א֝וֹיֵ֗ב וּ/מִתְנַקֵּֽם׃",
+        "LXX": "ἐκ στόματος νηπίων καὶ θηλαζόντων κατηρτίσω αἶνον ἕνεκα τῶν ἐχθρῶν σου, τοῦ καταλῦσαι ἐχθρὸν καὶ ἐκδικητήν.",
+        "VUL": "Ex ore infantium et lactentium perfecisti laudem propter inimicos tuos,/ ut destruas inimicum et ultorem./",
+        "SYN": "Из уст младенцев и грудных детей Ты устроил хвалу, ради врагов Твоих, дабы сделать безмолвным врага и мстителя.",
+        "NEO": "Par la bouche des enfants et de ceux qui sont à la mamelle tu t’es fondé une force pour confondre tes ennemis, pour imposer silence à l’adversaire et au blasphémateur.",
+        "NAB": "Out of the mouths of babes and infants you have drawn a defense against your foes, to silence enemy and avenger.",
+        "VAT_ES": "con la alabanza de los niños y de los más pequeños,",
+        "CEI": "Con la bocca dei bimbi e dei lattanti affermi la tua potenza contro i tuoi avversari, per ridurre al silenzio nemici e ribelli."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּֽי אֶרְאֶ֣ה שָׁ֭מֶי/ךָ מַעֲשֵׂ֣י אֶצְבְּעֹתֶ֑י/ךָ יָרֵ֥חַ וְ֝/כוֹכָבִ֗ים אֲשֶׁ֣ר כּוֹנָֽנְתָּה׃",
+        "LXX": "ὅτι ὄψομαι τοὺς οὐρανούς, ἔργα τῶν δακτύλων σου, σελήνην καὶ ἀστέρας ἃ σὺ ἐθεμελίωσας·",
+        "VUL": "Quoniam videbo cælos tuos, opera digitorum tuorum,/ lunam et stellas quæ tu fundasti./",
+        "SYN": "Когда взираю я на небеса Твои - дело Твоих перстов, на луну и звезды, которые Ты поставил,",
+        "NEO": "Quand je contemple tes cieux, ouvrage de tes doigts, la lune et les étoiles que tu as créées, je m’écrie :",
+        "NAB": "When I see your heavens, the work of your fingers, the moon and stars that you set in place -",
+        "VAT_ES": "Al ver el cielo, obra de tus manos,",
+        "CEI": "Se guardo il tuo cielo, opera delle tue dita, la luna e le stelle che tu hai fissate,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "מָֽה אֱנ֥וֹשׁ כִּֽי תִזְכְּרֶ֑/נּוּ וּ/בֶן אָ֝דָ֗ם כִּ֣י תִפְקְדֶֽ/נּוּ׃",
+        "LXX": "τί ἐστιν ἄνθρωπος ὅτι μιμνήσκῃ αὐτοῦ, ἢ υἱὸς ἀνθρώπου ὅτι ἐπισκέπτῃ αὐτόν;",
+        "VUL": "Quid est homo, quod memor es ejus ?/ aut filius hominis, quoniam visitas eum ?/",
+        "SYN": "то что _есть_ человек, что Ты помнишь его, и сын человеческий, что Ты посещаешь его?",
+        "NEO": "Qu’est-ce que l’homme, pour que tu te souviennes de lui, et le fils de l’homme, pour que tu en prennes soin ?",
+        "NAB": "What are humans that you are mindful of them, mere mortals that you care for them?",
+        "VAT_ES": "&iquest;qué es el hombre para que pienses en él,",
+        "CEI": "che cosa è l'uomo perché te ne ricordi e il figlio dell'uomo perché te ne curi?"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/תְּחַסְּרֵ֣/הוּ מְּ֭עַט מֵ/אֱלֹהִ֑ים וְ/כָב֖וֹד וְ/הָדָ֣ר תְּעַטְּרֵֽ/הוּ׃",
+        "LXX": "ἠλάττωσας αὐτὸν βραχύ τι παρ’ ἀγγέλους, δόξῃ καὶ τιμῇ ἐστεφάνωσας αὐτόν.",
+        "VUL": "Minuisti eum paulominus ab angelis ;/ gloria et honore coronasti eum ;/",
+        "SYN": "Не много Ты умалил его пред Ангелами: славою и честью увенчал его;",
+        "NEO": "Tu l’as fait de peu inférieur à Dieu, tu l’as couronné de gloire et d’honneur.",
+        "NAB": "Yet you have made them little less than a god, crowned them with glory and honor.",
+        "VAT_ES": "Lo hiciste poco inferior a los ángeles,",
+        "CEI": "Eppure l'hai fatto poco meno degli angeli, di gloria e di onore lo hai coronato:"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "תַּ֭מְשִׁילֵ/הוּ בְּ/מַעֲשֵׂ֣י יָדֶ֑י/ךָ כֹּ֝ל שַׁ֣תָּה תַֽחַת רַגְלָֽי/ו׃",
+        "LXX": "καὶ κατέστησας αὐτὸν ἐπὶ τὰ ἔργα χειρῶν σου· πάντα ὑπέταξας ὑποκάτω τῶν ποδῶν αὐτοῦ,",
+        "VUL": "et constituisti eum super opera manuum tuarum./",
+        "SYN": "поставил его владыкою над делами рук Твоих; все положил под ноги его:",
+        "NEO": "Tu lui as donné l’empire sur les œuvres de tes mains ; tu as mis toutes choses sous ses pieds :",
+        "NAB": "You have given them rule over the works of your hands, put all things at their feet:",
+        "VAT_ES": "le diste dominio sobre la obra de tus manos,",
+        "CEI": "gli hai dato potere sulle opere delle tue mani, tutto hai posto sotto i suoi piedi;"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "צֹנֶ֣ה וַ/אֲלָפִ֣ים כֻּלָּ֑/ם וְ֝/גַ֗ם בַּהֲמ֥וֹת שָׂדָֽי׃",
+        "LXX": "πρόβατα καὶ βόας πάσας, ἔτι δὲ καὶ τὰ κτήνη τοῦ πεδίου,",
+        "VUL": "Omnia subjecisti sub pedibus ejus,/ oves et boves universas,/ insuper et pecora campi,/",
+        "SYN": "овец и волов всех, и также полевых зверей,",
+        "NEO": "Brebis et bœufs, tous ensemble, et les animaux des champs ;",
+        "NAB": "All sheep and oxen, even the beasts of the field,",
+        "VAT_ES": "todos los rebaños y ganados,",
+        "CEI": "tutti i greggi e gli armenti, tutte le bestie della campagna;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "צִפּ֣וֹר שָׁ֭מַיִם וּ/דְגֵ֣י הַ/יָּ֑ם עֹ֝בֵ֗ר אָרְח֥וֹת יַמִּֽים׃",
+        "LXX": "τὰ πετεινὰ τοῦ οὐρανοῦ καὶ τοὺς ἰχθύας τῆς θαλάσσης, τὰ διαπορευόμενα τρίβους θαλασσῶν.",
+        "VUL": "volucres cæli, et pisces maris/ qui perambulant semitas maris./",
+        "SYN": "птиц небесных и рыб морских, все, преходящее морскими стезями.",
+        "NEO": "oiseaux du ciel et poissons de la mer, et tout ce qui parcourt les sentiers des mers.",
+        "NAB": "The birds of the air, the fish of the sea, and whatever swims the paths of the seas.",
+        "VAT_ES": "las aves del cielo, los peces del mar",
+        "CEI": "Gli uccelli del cielo e i pesci del mare, che percorrono le vie del mare."
+      }
+    }
+  }
+}

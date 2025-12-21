@@ -1,0 +1,375 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LEVI_010",
+  "book_key": "LEVI",
+  "sequence": 10,
+  "chapter_in": {
+    "MT": 10,
+    "VUL": 10,
+    "LXX": 10
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יִּקְח֣וּ בְנֵֽי אַ֠הֲרֹן נָדָ֨ב וַ/אֲבִיה֜וּא אִ֣ישׁ מַחְתָּת֗/וֹ וַ/יִּתְּנ֤וּ בָ/הֵן֙ אֵ֔שׁ וַ/יָּשִׂ֥ימוּ עָלֶ֖י/הָ קְטֹ֑רֶת וַ/יַּקְרִ֜בוּ לִ/פְנֵ֤י יְהוָה֙ אֵ֣שׁ זָרָ֔ה אֲשֶׁ֧ר לֹ֦א צִוָּ֖ה אֹתָֽ/ם׃",
+        "LXX": "Καὶ λαβόντες οἱ δύο υἱοὶ Ἀαρὼν Ναδὰβ καὶ Ἀβιοὺδ ἕκαστος τὸ πυρεῖον αὐτοῦ ἐπέθηκαν ἐπ’ αὐτὸ πῦρ καὶ ἐπέβαλον ἐπ’ αὐτὸ θυμίαμα, καὶ προσήνεγκαν ἔναντι Κυρίου πῦρ ἀλλότριον ὃ οὐ προσέταξεν κύριος αὐτοῖς.",
+        "VUL": "Arreptisque Nadab et Abiu filii Aaron thuribulis, posuerunt ignem, et incensum desuper, offerentes coram Domino ignem alienum : quod eis præceptum non erat.",
+        "SYN": "Надав и Авиуд, сыны Аароновы, взяли каждый свою кадильницу, и положили в них огня, и вложили в него курений, и принесли пред Господа огонь чуждый, которого Он не велел им;",
+        "NEO": "Les fils d’Aaron, Nadab et Abiu, prirent chacun leur encensoir, y mirent du feu et, ayant posé du parfum dessus, ils apportèrent devant \\+w Yahweh|strong=\"H3068\"\\+w** un feu étranger, ce qu’il ne leur avait pas commandé.",
+        "NAB": "During this time Aaron's sons Nadab and Abihu took their censers and, strewing incense on the fire they had put in them, they offered up before the LORD profane fire, such as he had not authorized.",
+        "VAT_ES": "Nadab y Abihú, hijos de Aarón, tomaron cada uno su incensario, pusieron fuego en ellos y echaron incienso encima; pero el fuego que presentaron delante del Señor era un fuego profano, contrariamente a lo que él les había mandado.",
+        "CEI": "Ora Nadab e Abiu, figli di Aronne, presero ciascuno un braciere, vi misero dentro il fuoco e il profumo e offrirono davanti al Signore un fuoco illegittimo, che il Signore non aveva loro ordinato."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֥צֵא אֵ֛שׁ מִ/לִּ/פְנֵ֥י יְהוָ֖ה וַ/תֹּ֣אכַל אוֹתָ֑/ם וַ/יָּמֻ֖תוּ לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἐξῆλθεν πῦρ παρὰ Κυρίου καὶ κατέφαγεν αὐτούς, καὶ ἀπέθανον ἔναντι Κυρίου.",
+        "VUL": "Egressusque ignis a Domino, devoravit eos, et mortui sunt coram Domino.",
+        "SYN": "и вышел огонь от Господа и сжег их, и умерли они пред лицем Господним.",
+        "NEO": "Alors un feu sortit de devant \\+w Yahweh|strong=\"H3068\"\\+w** et les dévora : ils moururent devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Fire therefore came forth from the LORD'S presence and consumed them, so that they died in his presence.",
+        "VAT_ES": "Entonces salió de la presencia del Señor un fuego que los devoró, y ambos murieron delante del Señor.",
+        "CEI": "Ma un fuoco si staccò dal Signore e li divorò e morirono così davanti al Signore."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר מֹשֶׁ֜ה אֶֽל אַהֲרֹ֗ן הוּא֩ אֲשֶׁר דִּבֶּ֨ר יְהוָ֤ה לֵ/אמֹר֙ בִּ/קְרֹבַ֣/י אֶקָּדֵ֔שׁ וְ/עַל פְּנֵ֥י כָל הָ/עָ֖ם אֶכָּבֵ֑ד וַ/יִּדֹּ֖ם אַהֲרֹֽן׃",
+        "LXX": "καὶ εἶπεν Μωυσῆς πρὸς Ἀαρών Τοῦτό ἐστιν ὃ εἶπεν Κύριος λέγων Ἐν τοῖς ἐγγίζουσίν μοι ἁγιασθήσομαι, καὶ ἐν πάσῃ συναγωγῇ δοξασθήσομαι· καὶ κατενύχθη Ἀαρών.",
+        "VUL": "Dixitque Moyses ad Aaron : Hoc est quod locutus est Dominus : Sanctificabor in iis qui appropinquant mihi, et in conspectu omnis populi glorificabor. Quod audiens tacuit Aaron.",
+        "SYN": "И сказал Моисей Аарону: вот о чем говорил Господь, когда сказал: в приближающихся ко Мне освящусь и пред всем народом прославлюсь. Аарон молчал.",
+        "NEO": "Et Moïse dit à Aaron : « C’est ce que \\+w Yahweh|strong=\"H3068\"\\+w** a déclaré, lorsqu’il a dit : Je serai sanctifié en ceux qui m’approchent, et je serai glorifié en présence de tout le peuple. » Aaron se tut.",
+        "NAB": "Moses then said to Aaron, \"This is as the LORD said: Through those who approach me I will manifest my sacredness; In the sight of all the people I will reveal my glory.\" But Aaron said nothing.",
+        "VAT_ES": "Moisés dijo a Aarón: «Así se cumple la palabra del Señor: Manifestaré mi santidad en aquellos que se acercan a mí, y a la vista de todo el pueblo seré glorificado». Aarón, por su parte, permaneció en silencio.",
+        "CEI": "Allora Mosè disse ad Aronne: \"Di questo il Signore ha parlato quando ha detto: A chi si avvicina a me mi mostrerò santo e davanti a tutto il popolo sarò onorato\". Aronne tacque."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יִּקְרָ֣א מֹשֶׁ֗ה אֶל מִֽישָׁאֵל֙ וְ/אֶ֣ל אֶלְצָפָ֔ן בְּנֵ֥י עֻזִּיאֵ֖ל דֹּ֣ד אַהֲרֹ֑ן וַ/יֹּ֣אמֶר אֲלֵ/הֶ֗ם קִ֠רְב֞וּ שְׂא֤וּ אֶת אֲחֵי/כֶם֙ מֵ/אֵ֣ת פְּנֵי הַ/קֹּ֔דֶשׁ אֶל מִ/ח֖וּץ לַֽ/מַּחֲנֶֽה׃",
+        "LXX": "καὶ ἐκάλεσεν Μωυσῆς τὸν Μισαδαὶ καὶ τὸν Ἐλισαφάν, υἱοὺς Ἀζιήλ, υἱοὺς τοῦ ἀδελφοῦ τοῦ πατρὸς Ἀαρών, καὶ εἶπεν αὐτοῖς Προσέλθατε καὶ ἄρατε τοὺς ἀδελφοὺς ὑμῶν ἐκ προσώπου τῶν ἁγίων ἔξω τῆς παρεμβολῆς.",
+        "VUL": "Vocatis autem Moyses Misaële et Elisaphan filiis Oziel, patrui Aaron, ait ad eos : Ite, et tollite fratres vestros de conspectu sanctuarii, et asportate extra castra.",
+        "SYN": "И позвал Моисей Мисаила и Елцафана, сынов Узиила, дяди Ааронова, и сказал им: пойдите, вынесите братьев ваших из святилища за стан.",
+        "NEO": "Et Moïse appela Misaël et Elisaphon, fils d’Oziel, oncle d’Aaron, et il leur dit : « Approchez-vous, emportez vos frères loin du sanctuaire, hors du camp. »",
+        "NAB": "Then Moses summoned Mishael and Elzaphan, the sons of Aaron's uncle Uzziel, with the order, \"Come, remove your kinsmen from the sanctuary and carry them to a place outside the camp.\"",
+        "VAT_ES": "Moisés llamó a Misael y a Elsafán –hijos de Oziel, el tío paterno de Aarón– y les dijo: «Vengan a retirar a sus hermanos de la entrada del Santuario, y llévenlos fuera del campamento».",
+        "CEI": "Mosè chiamò Misael ed Elsafan, figli di Uziel, zio di Aronne, e disse loro: \"Avvicinatevi, portate via questi vostri congiunti dal santuario, fuori dell'accampamento\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַֽ/יִּקְרְב֗וּ וַ/יִּשָּׂאֻ/ם֙ בְּ/כֻתֳּנֹתָ֔/ם אֶל מִ/ח֖וּץ לַֽ/מַּחֲנֶ֑ה כַּ/אֲשֶׁ֖ר דִּבֶּ֥ר מֹשֶֽׁה׃",
+        "LXX": "καὶ προσῆλθον καὶ ἦραν ἐν τοῖς χιτῶσιν αὐτῶν ἔξω τῆς παρεμβολῆς, ὃν τρόπον εἶπεν Μωυσῆς.",
+        "VUL": "Confestimque pergentes, tulerunt eos sicut jacebant, vestitos lineis tunicis, et ejecerunt foras, ut sibi fuerat imperatum.",
+        "SYN": "И пошли и вынесли их в хитонах их за стан, как сказал Моисей.",
+        "NEO": "Ils s’approchèrent et les emportèrent revêtus de leurs tuniques hors du camp, comme Moïse l’avait ordonné.",
+        "NAB": "So they went in and took them, in their tunics, outside the camp, as Moses had commanded.",
+        "VAT_ES": "Ellos se acercaron y los llevaron en sus túnicas fuera del campamento, como Moisés lo había ordenado.",
+        "CEI": "Essi si avvicinarono e li portarono via con le loro tuniche, fuori dell'accampamento, come Mosè aveva detto."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר מֹשֶׁ֣ה אֶֽל אַהֲרֹ֡ן וּ/לְ/אֶלְעָזָר֩ וּ/לְ/אִֽיתָמָ֨ר בָּנָ֜י/ו רָֽאשֵׁי/כֶ֥ם אַל תִּפְרָ֣עוּ וּ/בִגְדֵי/כֶ֤ם לֹֽא תִפְרֹ֨מוּ֙ וְ/לֹ֣א תָמֻ֔תוּ וְ/עַ֥ל כָּל הָ/עֵדָ֖ה יִקְצֹ֑ף וַ/אֲחֵי/כֶם֙ כָּל בֵּ֣ית יִשְׂרָאֵ֔ל יִבְכּוּ֙ אֶת הַ/שְּׂרֵפָ֔ה אֲשֶׁ֖ר שָׂרַ֥ף יְהוָֽה׃",
+        "LXX": "καὶ εἶπεν Μωσῆς πρὸς Ἀαρὼν καὶ Ἐλεαζὰρ καὶ Ἰθαμὰρ τοὺς υἱοὺς αὐτοῦ τοὺς καταλελιμμένους Τὴν κεφαλὴν ὑμῶν οὐκ ἀποκιδαρώσετε καὶ τὰ ἱμάτια ὑμῶν οὐ διαρρήξετε, ἵνα μὴ ἀποθάνητε καὶ ἐπὶ πᾶσαν τὴν συναγωγὴν ἔσται θυμός· οἱ ἀδελφοὶ ὑμῶν πᾶς ὁ οἶκος Ἰσραὴλ κλαύσονται τὸν ἐνπυρισμὸν ὃν ἐνεπυρίσθησαν ὑπὸ Κυρίου.",
+        "VUL": "Locutusque est Moyses ad Aaron, et ad Eleazar, et Ithamar, filios ejus : Capita vestra nolite nudare, et vestimenta nolite scindere, ne forte moriamini, et super omnem ctum oriatur indignatio. Fratres vestri, et omnis domus Israël, plangant incendium quod Dominus suscitavit :",
+        "SYN": "Аарону же и Елеазару и Ифамару, сынам его, Моисей сказал: голов ваших не обнажайте и одежд ваших не раздирайте, чтобы вам не умереть и не навести гнева на все общество; но братья ваши, весь дом Израилев, могут плакать о сожженных, которых сожег Господь,",
+        "NEO": "Moïse dit à Aaron, à Eléazar et à Ithamar : « Vous ne laisserez pas flotter en désordre les cheveux de votre tête et vous ne déchirerez pas vos vêtements, de peur que vous ne mouriez, et que \\+w Yahweh|strong=\"H3068\"\\+w** ne s’irrite contre toute l’assemblée. Que vos frères, toute la maison d’Israël, pleurent sur l’embrasement que \\+w Yahweh|strong=\"H3068\"\\+w** a allumé.",
+        "NAB": "Moses said to Aaron and his sons Eleazar and Ithamar, \"Do not bare your heads or tear your garments, lest you bring not only death on yourselves but God's wrath also on the whole community. Your kinsmen, the rest of the house of Israel, shall mourn for those whom the LORD'S fire has smitten;",
+        "VAT_ES": "Luego Moisés dijo a Aarón y a los otros hijos de este, Eleazar e Itamar: «No vayan con los cabellos sueltos ni desgarren sus vestiduras, porque de lo contrario morirán y el Señor se irritará contra toda la comunidad. Que sus hermanos y toda la familia de Israel lloren más bien por el fuego que ha encendido el Señor.",
+        "CEI": "Ad Aronne, a Eleazaro e a Itamar, suoi figli, Mosè disse: \"Non vi scarmigliate i capelli del capo e non vi stracciate le vesti, perché non moriate e il Signore non si adiri contro tutta la comunità; ma i vostri fratelli, tutta la casa d'Israele, facciano pure lutto a causa della morte fulminea inflitta dal Signore."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וּ/מִ/פֶּתַח֩ אֹ֨הֶל מוֹעֵ֜ד לֹ֤א תֵֽצְאוּ֙ פֶּן תָּמֻ֔תוּ כִּי שֶׁ֛מֶן מִשְׁחַ֥ת יְהוָ֖ה עֲלֵי/כֶ֑ם וַֽ/יַּעֲשׂ֖וּ כִּ/דְבַ֥ר מֹשֶֽׁה׃",
+        "LXX": "καὶ ἀπὸ τῆς θύρας τῆς σκηνῆς τοῦ μαρτυρίου οὐκ ἐξελεύσεσθε, ἵνα μὴ ἀποθάνητε· τὸ γὰρ ἔλαιον τῆς χρίσεως τὸ παρὰ Κυρίου ἐφ’ ὑμῖν. καὶ ἐποίησαν κατὰ τὸ ῥῆμα Μωσῆ.",
+        "VUL": "vos autem non egrediemini fores tabernaculi, alioquin peribitis : oleum quippe sanctæ unctionis est super vos. Qui fecerunt omnia juxta præceptum Moysi.",
+        "SYN": "и из дверей скинии собрания не выходите, чтобы не умереть вам, ибо на вас елей помазания Господня. И сделали по слову Моисея.",
+        "NEO": "Pour vous, vous ne sortirez pas de l’entrée de la tente de réunion, de peur que vous ne mouriez ; car l’huile de l’onction de \\+w Yahweh|strong=\"H3068\"\\+w** est sur vous. » Ils firent ce que Moïse avait dit.",
+        "NAB": "but do not you go beyond the entry of the meeting tent, else you shall die; for the anointing oil of the LORD is upon you.\" So they did as Moses told them.",
+        "VAT_ES": "Y no se alejen de la entrada de la Carpa del Encuentro, para que no mueran, porque el óleo de la unción del Señor está sobre ustedes». Ellos hicieron lo que Moisés les dijo.",
+        "CEI": "Non vi allontanate dall'ingresso della tenda del convegno, così che non moriate; perché l'olio dell'unzione del Signore è su di voi\". Essi fecero come Mosè aveva detto."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֣ר יְהוָ֔ה אֶֽל אַהֲרֹ֖ן לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος τῷ Ἀαρὼν λέγων",
+        "VUL": "Dixit quoque Dominus ad Aaron :",
+        "SYN": "И сказал Господь Аарону, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Aaron, en disant :",
+        "NAB": "The LORD said to Aaron,",
+        "VAT_ES": "Entonces el Señor dijo a Aarón:",
+        "CEI": "Il Signore parlò ad Aronne:"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "יַ֣יִן וְ/שֵׁכָ֞ר אַל תֵּ֣שְׁתְּ אַתָּ֣ה וּ/בָנֶ֣י/ךָ אִתָּ֗/ךְ בְּ/בֹאֲ/כֶ֛ם אֶל אֹ֥הֶל מוֹעֵ֖ד וְ/לֹ֣א תָמֻ֑תוּ חֻקַּ֥ת עוֹלָ֖ם לְ/דֹרֹתֵי/כֶֽם׃",
+        "LXX": "Οἶνον καὶ σίκερα οὐ πίεσθε, σὺ καὶ οἱ υἱοί σου μετὰ σοῦ, ἡνίκα ἂν εἰσπορεύησθε εἰς τὴν σκηνὴν τοῦ μαρτυρίου, ἢ προσπορευομένων ὑμῶν πρὸς τὸ θυσιαστήριον, καὶ οὐ μὴ ἀποθάνητε· νόμιμον αἰώνιον εἰς τὰς γενεὰς ὑμῶν·",
+        "VUL": "Vinum, et omne quod inebriare potest, non bibetis tu et filii tui, quando intratis in tabernaculum testimonii, ne moriamini : quia præceptum sempiternum est in generationes vestras :",
+        "SYN": "вина и крепких напитков не пей ты и сыны твои с тобою, когда входите в скинию собрания, [или приступаете к жертвеннику,] чтобы не умереть. _Это_ вечное постановление в роды ваши,",
+        "NEO": "« Tu ne boiras ni vin, ni boisson enivrante, toi et tes fils avec toi, lorsque vous entrerez dans la tente de réunion, afin que vous ne mouriez pas : c’est une loi perpétuelle parmi vos descendants,",
+        "NAB": "\"When you are to go to the meeting tent, you and your sons are forbidden under pain of death, by a perpetual ordinance throughout your generations, to drink any wine or strong drink.",
+        "VAT_ES": "Cuando tengan que entrar en la Carpa del Encuentro, ni tú ni tus hijos beberán vino o cualquier otra bebida que pueda embriagar, porque de lo contrario morirán: este es un decreto válido para siempre, a lo largo de las generaciones.",
+        "CEI": "\"Non bevete vino o bevanda inebriante né tu né i tuoi figli, quando dovete entrare nella tenda del convegno, perché non moriate; sarà una legge perenne, di generazione in generazione;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וּֽ/לֲ/הַבְדִּ֔יל בֵּ֥ין הַ/קֹּ֖דֶשׁ וּ/בֵ֣ין הַ/חֹ֑ל וּ/בֵ֥ין הַ/טָּמֵ֖א וּ/בֵ֥ין הַ/טָּהֽוֹר׃",
+        "LXX": "διαστεῖλαι ἀνὰ μέσον τῶν ἁγίων καὶ τῶν βεβήλων, καὶ ἀνὰ μέσον τῶν ἀκαθάρτων καὶ τῶν καθαρῶν.",
+        "VUL": "et ut habeatis scientiam discernendi inter sanctum et profanum, inter pollutum et mundum ;",
+        "SYN": "чтобы вы могли отличать священное от несвященного и нечистое от чистого,",
+        "NEO": "et afin que vous sachiez discerner ce qui est saint de ce qui est profane, ce qui est pur de ce qui est impur,",
+        "NAB": "You must be able to distinguish between what is sacred and what is profane, between what is clean and what is unclean;",
+        "VAT_ES": "Así ustedes podrán discernir lo sagrado de lo profano y lo puro de lo impuro.",
+        "CEI": "questo perché possiate distinguere ciò che è santo da ciò che è profano e ciò che è immondo da ciò che è mondo"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/לְ/הוֹרֹ֖ת אֶת בְּנֵ֣י יִשְׂרָאֵ֑ל אֵ֚ת כָּל הַ֣/חֻקִּ֔ים אֲשֶׁ֨ר דִּבֶּ֧ר יְהוָ֛ה אֲלֵי/הֶ֖ם בְּ/יַד מֹשֶֽׁה׃",
+        "LXX": "καὶ συμβιβάσεις τοὺς υἱοὺς Ἰσραὴλ πάντα τὰ νόμιμα ἃ ἐλάλησεν Κύριος πρὸς αὐτοὺς διὰ χειρὸς Μωσῆ.",
+        "VUL": "doceatisque filios Israël omnia legitima mea quæ locutus est Dominus ad eos per manum Moysi.",
+        "SYN": "и научать сынов Израилевых всем уставам, которые изрек им Господь чрез Моисея.",
+        "NEO": "et afin que vous puissiez enseigner aux enfants d’Israël toutes les lois que \\+w Yahweh|strong=\"H3068\"\\+w** leur a données par Moïse.",
+        "NAB": "you must teach the Israelites all the laws that the LORD has given them through Moses.\"",
+        "VAT_ES": "y enseñar a los israelitas todos los preceptos que el Señor les ha dado por intermedio de Moisés.",
+        "CEI": "e possiate insegnare agli Israeliti tutte le leggi che il Signore ha date loro per mezzo di Mosè\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֨ר מֹשֶׁ֜ה אֶֽל אַהֲרֹ֗ן וְ/אֶ֣ל אֶ֠לְעָזָר וְ/אֶל אִ֨יתָמָ֥ר בָּנָי/ו֮ הַ/נּֽוֹתָרִים֒ קְח֣וּ אֶת הַ/מִּנְחָ֗ה הַ/נּוֹתֶ֨רֶת֙ מֵ/אִשֵּׁ֣י יְהוָ֔ה וְ/אִכְל֥וּ/הָ מַצּ֖וֹת אֵ֣צֶל הַ/מִּזְבֵּ֑חַ כִּ֛י קֹ֥דֶשׁ קָֽדָשִׁ֖ים הִֽוא׃",
+        "LXX": "Καὶ εἶπεν Μωυσῆς πρὸς Ἀαρὼν καὶ πρὸς Ἐλεαζὰρ καὶ Ἰθαμὰρ τοὺς υἱοὺς Ἀαρὼν τοὺς καταλειφθέντας Λάβετε τὴν θυσίαν τὴν καταλειφθεῖσαν ἀπὸ τῶν καρπωμάτων Κυρίου, καὶ φάγεσθε ἄζυμα παρὰ τὸ θυσιαστήριον· ἅγια ἁγίων ἐστίν.",
+        "VUL": "Locutusque est Moyses ad Aaron, et ad Eleazar, et Ithamar, filios ejus, qui erant residui : Tollite sacrificium, quod remansit de oblatione Domini, et comedite illud absque fermento juxta altare, quia Sanctum sanctorum est.",
+        "SYN": "И сказал Моисей Аарону и Елеазару и Ифамару, оставшимся сынам его: возьмите приношение хлебное, оставшееся от жертв Господних, и ешьте его пресное у жертвенника, ибо это великая святыня;",
+        "NEO": "Moïse dit à Aaron, à Eléazar et à Ithamar, les deux fils qui restaient à Aaron :",
+        "NAB": "Moses said to Aaron and his surviving sons, Eleazar and Ithamar, \"Take the cereal offering left over from the oblations of the LORD, and eat it beside the altar in the form of unleavened cakes. Since it is most sacred,",
+        "VAT_ES": "Moisés dijo a Aarón y a Eleazar e Itamar, los hijos que le habían quedado: «Tomen la oblación que sobre de las ofrendas que se queman para el Señor, y cómanla junto al altar, sin hacerla fermentar, porque es una cosa santísima.",
+        "CEI": "Poi Mosè disse ad Aronne, a Eleazaro e a Itamar, figli superstiti di Aronne: \"Prendete quel che è avanzato dell'oblazione dei sacrifici consumati dal fuoco in onore del Signore e mangiatelo senza lievito, presso l'altare; perché è cosa sacrosanta."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/אֲכַלְתֶּ֤ם אֹתָ/הּ֙ בְּ/מָק֣וֹם קָדֹ֔שׁ כִּ֣י חָקְ/ךָ֤ וְ/חָק בָּנֶ֨י/ךָ֙ הִ֔וא מֵ/אִשֵּׁ֖י יְהוָ֑ה כִּי כֵ֖ן צֻוֵּֽיתִי׃",
+        "LXX": "καὶ φάγεσθε αὐτὴν ἐν τόπῳ ἁγίῳ· νόμιμον αἰώνιον γάρ σοί ἐστιν καὶ νόμιμον τοῖς υἱοῖς σου τοῦτο ἀπὸ τῶν καρπωμάτων Κυρίου· οὕτω γὰρ ἐντέταλταί μοι.",
+        "VUL": "Comedetis autem in loco sancto : quod datum est tibi et filiis tuis de oblationibus Domini, sicut præceptum est mihi.",
+        "SYN": "и ешьте его на святом месте, ибо это участок твой и участок сынов твоих из жертв Господних: так мне повелено [от Господа];",
+        "NEO": "Vous la mangerez dans un lieu saint : c’est ton droit et le droit de tes fils sur les offrandes faites par le feu à \\+w Yahweh|strong=\"H3068\"\\+w** ; c’est là ce qui m’a été ordonné.",
+        "NAB": "you must eat it in a sacred place. This is your due from the oblations of the LORD, and that of your sons; such is the command I have received.",
+        "VAT_ES": "La comerán en el recinto sagrado, porque esa es la porción de las ofrendas que se queman para el Señor, sobre la que tienen derecho tú y tus hijos, conforme a la orden que recibí.",
+        "CEI": "Dovete mangiarlo in luogo santo, perché è la parte che spetta a te e ai tuoi figli, tra i sacrifici consumati dal fuoco in onore del Signore: così mi è stato ordinato."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/אֵת֩ חֲזֵ֨ה הַ/תְּנוּפָ֜ה וְ/אֵ֣ת שׁ֣וֹק הַ/תְּרוּמָ֗ה תֹּֽאכְלוּ֙ בְּ/מָק֣וֹם טָה֔וֹר אַתָּ֕ה וּ/בָנֶ֥י/ךָ וּ/בְנֹתֶ֖י/ךָ אִתָּ֑/ךְ כִּֽי חָקְ/ךָ֤ וְ/חָק בָּנֶ֨י/ךָ֙ נִתְּנ֔וּ מִ/זִּבְחֵ֥י שַׁלְמֵ֖י בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ τὸ στηθύνιον τοῦ ⸂⸆⸃ ἀφορίσματος καὶ τὸν βραχίονα τοῦ ἀφαιρέματος φάγεσθε ἐν τόπῳ ἁγίῳ, σὺ καὶ οἱ υἱοί σου καὶ ὁ οἶκός σου μετὰ σοῦ· νόμιμον γὰρ σοὶ καὶ νόμιμον τοῖς υἱοῖς σου ἐδόθη ἀπὸ τῶν θυσιῶν τοῦ σωτηρίου τῶν υἱῶν Ἰσραήλ.",
+        "VUL": "Pectusculum quoque quod oblatum est, et armum qui separatus est, edetis in loco mundissimo tu et filii tui, et filiæ tuæ tecum : tibi enim ac liberis tuis reposita sunt de hostiis salutaribus filiorum Israël :",
+        "SYN": "и грудь потрясания и плечо возношения ешьте на чистом месте, ты и сыновья твои и дочери твои с тобою, ибо это дано в участок тебе и в участок сынам твоим из мирных жертв сынов Израилевых;",
+        "NEO": "Vous mangerez aussi en lieu pur, toi, tes fils et tes filles avec toi, la poitrine qui aura été balancée et la cuisse qui aura été prélevée ; car ces morceaux vous sont donnés comme ton droit et le droit de tes fils sur les sacrifices pacifiques des enfants d’Israël.",
+        "NAB": "With your sons and daughters you shall also eat the breast of the wave offering and the leg of the raised offering, in a clean place; for these have been assigned to you and your children as your due from the peace offerings of the Israelites.",
+        "VAT_ES": "Tú, lo mismo que tus hijos y tus hijas, comerán en un lugar puro el pecho presentado al Señor y la pata reservada, porque ese es tu derecho y el de tus hijos, sobre los sacrificios de comunión ofrecidos por los israelitas.",
+        "CEI": "Il petto della vittima offerta da agitare secondo il rito e la coscia da elevare secondo il rito, li mangerete tu, i tuoi figli e le tue figlie con te in luogo mondo; perché vi sono stati dati come parte tua e dei tuoi figli, tra i sacrifici di comunione degli Israeliti."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "שׁ֣וֹק הַ/תְּרוּמָ֞ה וַ/חֲזֵ֣ה הַ/תְּנוּפָ֗ה עַ֣ל אִשֵּׁ֤י הַ/חֲלָבִים֙ יָבִ֔יאוּ לְ/הָנִ֥יף תְּנוּפָ֖ה לִ/פְנֵ֣י יְהוָ֑ה וְ/הָיָ֨ה לְ/ךָ֜ וּ/לְ/בָנֶ֤י/ךָ אִתְּ/ךָ֙ לְ/חָק עוֹלָ֔ם כַּ/אֲשֶׁ֖ר צִוָּ֥ה יְהוָֽה׃",
+        "LXX": "τὸν βραχίονα τοῦ ἀφαιρέματος καὶ τὸ στηθύνιον τοῦ ἀφορίσματος ἐπὶ τῶν καρπωμάτων τῶν στεάτων προσοίσουσιν, ἀφόρισμα ἀφορίσαι ἔναντι Κυρίου· καὶ ἔσται σοὶ καὶ τοῖς υἱοῖς σου καὶ ταῖς θυγατράσιν σου μετὰ σοῦ νόμιμον αἰώνιον, ὃν τρόπον συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "eo quod armum et pectus, et adipes qui cremantur in altari, elevaverunt coram Domino, et pertineant ad te, et ad filios tuos, lege perpetua, sicut præcepit Dominus.",
+        "SYN": "плечо возношения и грудь потрясания должны они приносить с жертвами тука, потрясая пред лицем Господним, и да будет это вечным участком тебе и сыновьям твоим [и дочерям твоим] с тобою, как повелел Господь [Моисею].",
+        "NEO": "Ils apporteront, outre les graisses destinées à être consumées par le feu, la cuisse que l’on prélève et la poitrine que l’on balance, pour qu’elles soient balancées devant \\+w Yahweh|strong=\"H3068\"\\+w** ; elles seront pour toi et pour tes fils avec toi par une loi perpétuelle, comme \\+w Yahweh|strong=\"H3068\"\\+w** l’a ordonné. »",
+        "NAB": "The leg of the raised offering and the breast of the wave offering shall first be brought in with the oblations, the fatty portions, that are to be waved as a wave offering before the LORD. Then they shall belong to you and your children by a perpetual ordinance, as the LORD has commanded.\"",
+        "VAT_ES": "Además de las partes grasosas destinadas a la ofrenda que se quema para el Señor, ellos ofrecerán la pata y el pecho de la víctima, para realizar el gesto de presentación delante del Señor. Esas partes pertenecerán a ti y a tus hijos, como un derecho válido para siempre, porque el Señor así lo ha ordenado».",
+        "CEI": "Essi presenteranno, insieme con le parti grasse da bruciare, la coscia della vittima da elevare secondo il rito e il petto da agitare secondo il rito, perché siano agitati davanti al Signore; questo spetterà a te e ai tuoi figli con te, per diritto perenne, come il Signore ha ordinato\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/אֵ֣ת שְׂעִ֣יר הַֽ/חַטָּ֗את דָּרֹ֥שׁ דָּרַ֛שׁ מֹשֶׁ֖ה וְ/הִנֵּ֣ה שֹׂרָ֑ף וַ֠/יִּקְצֹף עַל אֶלְעָזָ֤ר וְ/עַל אִֽיתָמָר֙ בְּנֵ֣י אַהֲרֹ֔ן הַ/נּוֹתָרִ֖ם לֵ/אמֹֽר׃",
+        "LXX": "Καὶ τὸν χίμαρον τὸν περὶ τῆς ἁμαρτίας ζητῶν ἐξεζήτησεν Μωσῆς, καὶ ὅδε ἐνπεπύριστο· καὶ ἐθυμώθη Μωσῆς ἐπὶ Ἐλεαζὰρ καὶ Ἰθαμὰρ τοὺς υἱοὺς Ἀαρὼν τοὺς καταλελιμμένους λέγων",
+        "VUL": "Inter hæc, hircum, qui oblatus fuerat pro peccato, cum quæreret Moyses, exustum reperit : iratusque contra Eleazar et Ithamar filios Aaron, qui remanserant, ait :",
+        "SYN": "И козла жертвы за грех искал Моисей, и вот, он сожжен. И разгневался [Моисей] на Елеазара и Ифамара, оставшихся сынов Аароновых, и сказал:",
+        "NEO": "Moïse s’enquit du bouc immolé pour le péché, et voici, il avait été brûlé. Alors, il s’irrita contre Eléazar et Ithamar, les fils qui restaient à Aaron, et il leur dit :",
+        "NAB": "When Moses inquired about the goat of the sin offering, he discovered that it had all been burned. So he was angry with the surviving sons of Aaron, Eleazar and Ithamar, and said,",
+        "VAT_ES": "Moisés preguntó entonces por el chivo del sacrificio por el pecado. Al enterarse de que ya había sido quemado, se irritó contra Eleazar e Itamar, los hijos de Aarón que habían sobrevivido, y exclamó:",
+        "CEI": "Mosè poi si informò accuratamente circa il capro del sacrificio espiatorio e seppe che era stato bruciato; allora si sdegnò contro Eleazaro e contro Itamar, figli superstiti di Aronne, dicendo:"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "מַדּ֗וּעַ לֹֽא אֲכַלְתֶּ֤ם אֶת הַֽ/חַטָּאת֙ בִּ/מְק֣וֹם הַ/קֹּ֔דֶשׁ כִּ֛י קֹ֥דֶשׁ קָֽדָשִׁ֖ים הִ֑וא וְ/אֹתָ֣/הּ נָתַ֣ן לָ/כֶ֗ם לָ/שֵׂאת֙ אֶת עֲוֺ֣ן הָ/עֵדָ֔ה לְ/כַפֵּ֥ר עֲלֵי/הֶ֖ם לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "Διὰ τί οὐκ ἐφάγετε τὸ περὶ τῆς ἁμαρτίας ἐν τόπῳ ἁγίῳ; ὅτι γὰρ ἅγια ἁγίων ἐστίν, τοῦτο ἔδωκεν ὑμῖν φαγεῖν, ἵνα ἀφέλητε τὴν ἁμαρτίαν τῆς συναγωγῆς καὶ ἐξιλάσησθε περὶ αὐτῶν ἔναντι Κυρίου.",
+        "VUL": "Cur non comedistis hostiam pro peccato in loco sancto, quæ Sancta sanctorum est, et data vobis ut portetis iniquitatem multitudinis, et rogetis pro ea in conspectu Domini,",
+        "SYN": "почему вы не ели жертвы за грех на святом месте? ибо она святыня великая, и она дана вам, чтобы снимать грехи с общества и очищать их пред Господом;",
+        "NEO": "« Pourquoi n’avez-vous pas mangé la victime pour le péché dans le lieu saint ? Car c’est une chose très sainte, et \\+w Yahweh|strong=\"H3068\"\\+w** vous l’a donnée, afin que vous portiez l’iniquité de l’assemblée, afin que vous fassiez pour elle l’expiation devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "\"Why did you not eat the sin offering in the sacred place, since it is most sacred? It has been given to you that you might bear the guilt of the community and make atonement for them before the LORD.",
+        "VAT_ES": "«&iquest;Por qué no comieron la víctima del sacrificio por el pecado en el recinto sagrado, ya que se trata de una cosa santísima, que el Señor les dio para borrar el pecado de la comunidad, practicando el rito de expiación en favor de ella, delante del Señor?",
+        "CEI": "\"Perché non avete mangiato la vittima espiatrice nel luogo santo, trattandosi di cosa sacrosanta? Il Signore ve l'ha data, perché porti l'iniquità della comunità, perché su di essa compiate l'espiazione davanti al Signore."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "הֵ֚ן לֹא הוּבָ֣א אֶת דָּמָ֔/הּ אֶל הַ/קֹּ֖דֶשׁ פְּנִ֑ימָה אָכ֨וֹל תֹּאכְל֥וּ אֹתָ֛/הּ בַּ/קֹּ֖דֶשׁ כַּ/אֲשֶׁ֥ר צִוֵּֽיתִי׃",
+        "LXX": "οὐ γὰρ εἰσήχθη τοῦ αἵματος αὐτοῦ εἰς τὸ ἅγιον· κατὰ πρόσωπον ἔσω φάγεσθε αὐτὸ ἐν τόπῳ ἁγίῳ, ὃν τρόπον μοι συνέταξεν Κύριος.",
+        "VUL": "præsertim cum de sanguine illius non sit illatum intra sancta, et comedere debueritis eam in Sanctuario, sicut præceptum est mihi ?",
+        "SYN": "вот, кровь ее не внесена внутрь святилища, а вы должны были есть ее на святом месте, как повелено мне.",
+        "NEO": "Voici, le sang de la victime n’a pas été porté dans l’intérieur du sanctuaire ; vous deviez la manger dans un lieu saint, comme je l’ai commandé. »",
+        "NAB": "If its blood was not brought into the inmost part of the sanctuary, you should certainly have eaten the offering in the sanctuary, in keeping with the command I had received.\"",
+        "VAT_ES": "Supuesto que su sangre no fue llevada al interior del Santuario, tendrían que haberla comido en el recinto sagrado, como yo lo ordené».",
+        "CEI": "Ecco, il sangue della vittima non è stato portato dentro il santuario; voi avreste dovuto mangiarla nel santuario, come io avevo ordinato\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֨ר אַהֲרֹ֜ן אֶל מֹשֶׁ֗ה הֵ֣ן הַ֠/יּוֹם הִקְרִ֨יבוּ אֶת חַטָּאתָ֤/ם וְ/אֶת עֹֽלָתָ/ם֙ לִ/פְנֵ֣י יְהוָ֔ה וַ/תִּקְרֶ֥אנָה אֹתִ֖/י כָּ/אֵ֑לֶּה וְ/אָכַ֤לְתִּי חַטָּאת֙ הַ/יּ֔וֹם הַ/יִּיטַ֖ב בְּ/עֵינֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἐλάλησεν Ἀαρὼν πρὸς Μωυσῆν λέγων Εἰ σήμερον προσαγιόχασιν τὰ περὶ τῆς ἁμαρτίας αὐτῶν καὶ τὰ ὁλοκαυτώματα αὐτῶν ἔναντι Κυρίου, καὶ συμβέβηκέν μοι ταῦτα, καὶ φάγομαι τὰ περὶ τῆς ἁμαρτίας σήμερον, μὴ ἀρεστὸν ἔσται Κυρίῳ;",
+        "VUL": "Respondit Aaron : Oblata est hodie victima pro peccato, et holocaustum coram Domino : mihi autem accidit quod vides ; quomodo potui comedere eam, aut placere Domino in cæremoniis mente lugubri ?",
+        "SYN": "Аарон сказал Моисею: вот, сегодня принесли они жертву свою за грех и всесожжение свое пред Господом, и это случилось со мною; если я сегодня съем жертву за грех, будет ли это угодно Господу?",
+        "NEO": "Aaron dit à Moïse : « Voici, ils ont offert aujourd’hui leur sacrifice pour le péché et leur holocauste devant \\+w Yahweh|strong=\"H3068\"\\+w** ; mais, après ce qui m’est arrivé, si j’avais mangé aujourd’hui la victime pour le péché, cela eût-il été agréable aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w** ? »",
+        "NAB": "Aaron answered Moses, \"Even though they presented their sin offering and holocaust before the LORD today, yet this misfortune has befallen me. Had I then eaten of the sin offering today, would it have been pleasing to the LORD?\"",
+        "VAT_ES": "Entonces Aarón respondió a Moisés: «Mis hijos presentaron hoy delante del Señor su sacrificio por el pecado y su holocausto, y a pesar de todo, tuve la desgracia de perderlos. Si yo hubiera comido hoy de la víctima del sacrificio por el pecado, &iquest;el Señor lo habría aprobado?».",
+        "CEI": "Aronne allora disse a Mosè: \"Ecco, oggi essi hanno offerto il loro sacrificio espiatorio e l'olocausto davanti al Signore; dopo le cose che mi sono capitate, se oggi avessi mangiato la vittima del sacrificio espiatorio, sarebbe piaciuto al Signore?\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמַ֣ע מֹשֶׁ֔ה וַ/יִּיטַ֖ב בְּ/עֵינָֽי/ו׃",
+        "LXX": "καὶ ἤκουσεν Μωυσῆς, καὶ ἤρεσεν αὐτῷ.",
+        "VUL": "Quod cum audisset Moyses, recepit satisfactionem.",
+        "SYN": "И услышал Моисей и одобрил.",
+        "NEO": "Moïse, ayant entendu ces paroles, il les eut pour agréables.",
+        "NAB": "On hearing this, Moses was satisfied.",
+        "VAT_ES": "Al oír esto, Moisés quedó satisfecho.",
+        "CEI": "Quando Mosè udì questo, rimase soddisfatto."
+      }
+    }
+  }
+}

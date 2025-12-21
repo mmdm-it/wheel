@@ -1,0 +1,932 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "III_REG_007",
+  "book_key": "III_REG",
+  "sequence": 7,
+  "chapter_in": {
+    "MT": 7,
+    "VUL": 7,
+    "LXX": 7
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/אֶת בֵּית/וֹ֙ בָּנָ֣ה שְׁלֹמֹ֔ה שְׁלֹ֥שׁ עֶשְׂרֵ֖ה שָׁנָ֑ה וַ/יְכַ֖ל אֶת כָּל בֵּיתֽ/וֹ׃",
+        "LXX": "Καὶ ἀπέστειλεν ὁ βασιλεὺς Σαλωμὼν καὶ ἔλαβεν τὸν Χειρὰμ ἐκ Τύρου,",
+        "VUL": "Domum autem suam ædificavit Salomon tredecim annis, et ad perfectum usque perduxit.",
+        "SYN": "А свой дом Соломон строил тринадцать лет и окончил весь дом свой.",
+        "NEO": "Salomon bâtit sa maison en treize ans, et il l’acheva tout entière.",
+        "NAB": "His own palace Solomon completed after thirteen years of construction.",
+        "VAT_ES": "Salomón edificó también su casa, y tardó trece años en terminarla.",
+        "CEI": "Salomone costruì anche la propria reggia e la portò a compimento in tredici anni."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יִּ֜בֶן אֶת בֵּ֣ית יַ֣עַר הַ/לְּבָנ֗וֹן מֵאָ֨ה אַמָּ֤ה אָרְכּ/וֹ֙ וַ/חֲמִשִּׁ֤ים אַמָּה֙ רָחְבּ֔/וֹ וּ/שְׁלֹשִׁ֥ים אַמָּ֖ה קוֹמָת֑/וֹ עַ֗ל אַרְבָּעָה֙ טוּרֵי֙ עַמּוּדֵ֣י אֲרָזִ֔ים וּ/כְרֻת֥וֹת אֲרָזִ֖ים עַל הָ/עַמּוּדִֽים׃",
+        "LXX": "υἱὸν γυναικὸς χήρας, καὶ οὗτος ἀπὸ τῆς φυλῆς Νεφθαλεί, καὶ ὁ πατὴρ αὐτοῦ ἀνὴρ Τύριος, τέκτων χαλκοῦ καὶ πεπληρωμένος τῆς τέχνης καὶ συνέσεως καὶ γυώσεως τοῦ ποιεῖν πᾶν ἔργον ἐν χαλκῷ· καὶ εἰσηνέχθη πρὸς τὸν βασιλέα Σαλωμών, καὶ ἐποίησεν πάντα τὰ ἔργα.",
+        "VUL": "Ædificavit quoque domum saltus Libani centum cubitorum longitudinis, et quinquaginta cubitorum latitudinis, et triginta cubitorum altitudinis : et quatuor deambulacra inter columnas cedrinas : ligna quippe cedrina exciderat in columnas.",
+        "SYN": "И построил он дом из дерева Ливанского, длиною во сто локтей, шириною в пятьдесят локтей, а вышиною в тридцать локтей,на четырех рядах кедровых столбов; и кедровые бревна _положены_ _были_ на столбах.",
+        "NEO": "Il construisit la maison de la Forêt du Liban, dont la longueur était de cent coudées, la largeur de cinquante coudées et la hauteur de trente coudées ; elle reposait sur quatre rangées de colonnes de cèdre, et il y avait des poutres de cèdre sur les colonnes.",
+        "NAB": "He built the hall called the Forest of Lebanon one hundred cubits long, fifty wide, and thirty high; it was supported by four rows of cedar columns, with cedar capitals upon the columns.",
+        "VAT_ES": "Cro 4.11–5.1",
+        "CEI": "Costruì il palazzo detto Foresta del Libano, lungo cento cubiti, largo cinquanta e alto trenta su tre ordini di colonne di cedro e con capitelli di cedro sulle colonne."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וְ/סָפֻ֣ן בָּ/אֶ֗רֶז מִ/מַּ֨עַל֙ עַל הַ/צְּלָעֹת֙ אֲשֶׁ֣ר עַל הָֽ/עַמּוּדִ֔ים אַרְבָּעִ֖ים וַ/חֲמִשָּׁ֑ה חֲמִשָּׁ֥ה עָשָׂ֖ר הַ/טּֽוּר׃",
+        "LXX": "καὶ ἐχώνευσεν τὸ αἰλὰμ τοῦ οἴκου, ὀκτὼ καὶ δέκα πήχεις ὕψος τοῦ στύλου· καὶ περίμετρον τέσσαρες καὶ δέκα πήχεις ἐκύκλου αὐτόν, τὸ πάχος τοῦ στύλου· τεσσάρων δακτύλων τὰ κοιλώματα· καὶ οὕτως στύλος ὁ δεύτερος.",
+        "VUL": "Et tabulatis cedrinis vestivit totam cameram, quæ quadraginta quinque columnis sustentabatur. Unus autem ordo habebat columnas quindecim",
+        "SYN": "И настлан был помост из кедра над бревнами на сорока пяти столбах, по пятнадцати в ряд.",
+        "NEO": "Un toit de cèdre la recouvrait, au-dessus des chambres qui reposaient sur les colonnes, au nombre de quarante-cinq, quinze par rangées.",
+        "NAB": "Moreover, it had a ceiling of cedar above the beams resting on the columns; these beams numbered forty-five, fifteen to a row.",
+        "VAT_ES": "En la parte superior, sobre los travesaños que había sobre las columnas –a razón de quince por cada hilera–, tenía un revestimiento de cedro.",
+        "CEI": "Un soffitto di cedro si stendeva sopra le stanze che poggiavano sulle colonne; queste erano quarantacinque, quindici per fila."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וּ/שְׁקֻפִ֖ים שְׁלֹשָׁ֣ה טוּרִ֑ים וּ/מֶחֱזָ֥ה אֶל מֶחֱזָ֖ה שָׁלֹ֥שׁ פְּעָמִֽים׃",
+        "LXX": "καὶ δύο ἐπιθέματα ἐποίησεν, δοῦναι ἐπὶ τὰς κεφαλὰς τῶν στύλων, χωνευτά· πέντε πήχεις τὸ ὕψος τοῦ ἐπιθέματος τοῦ ἑνός.",
+        "VUL": "contra se invicem positas,",
+        "SYN": "Оконных косяков _было_ три ряда; и три ряда _окон,_ окно против окна.",
+        "NEO": "Il y avait trois rangées de chambres, et les fenêtres se faisaient face, trois fois.",
+        "NAB": "There were three window frames at either end, with windows in strict alignment.",
+        "VAT_ES": "Había además tres hileras de ventanas con marcos, dispuestas simétricamente una frente a otra, de tres en tres.",
+        "CEI": "Vi erano tre serie di finestre, che si corrispondevano faccia a faccia tre volte."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/כָל הַ/פְּתָחִ֥ים וְ/הַ/מְּזוּז֖וֹת רְבֻעִ֣ים שָׁ֑קֶף וּ/מ֧וּל מֶחֱזָ֛ה אֶל מֶחֱזָ֖ה שָׁלֹ֥שׁ פְּעָמִֽים׃",
+        "LXX": "καὶ ἐποίησεν δύο δίκτυα περικαλύψαι τὸ ἐπίθεμα τῶν στύλων, καὶ δίκτυον τῷ ἐπιθέματι τῷ ἑνὶ καὶ δίκτυον τῷ ἐπιθέματι τῷ δευτέρῳ.",
+        "VUL": "et e regione se respicientes, æquali spatio inter columnas, et super columnas quadrangulata ligna in cunctis æqualia.",
+        "SYN": "И все двери и дверные косяки были четырехугольные, и окно против окна, в три ряда.",
+        "NEO": "Toutes les portes et tous les poteaux étaient formés d’ais en carré, et les fenêtres se faisaient face, trois fois.",
+        "NAB": "The posts of all the doorways were rectangular, and the doorways faced each other, three at either end.",
+        "VAT_ES": "Todas esas aberturas y sus montantes eran de forma cuadrangular, y estaban una frente a otra, de tres en tres.",
+        "CEI": "Le porte e i loro stipiti erano a forma quadrangolare; le finestre erano le une di fronte alle altre per tre volte."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨ת אוּלָ֤ם הָֽ/עַמּוּדִים֙ עָשָׂ֔ה חֲמִשִּׁ֤ים אַמָּה֙ אָרְכּ֔/וֹ וּ/שְׁלֹשִׁ֥ים אַמָּ֖ה רָחְבּ֑/וֹ וְ/אוּלָם֙ עַל פְּנֵי/הֶ֔ם וְ/עַמֻּדִ֥ים וְ/עָ֖ב עַל פְּנֵי/הֶֽם׃",
+        "LXX": "καὶ ἔργον κρεμαστόν, δύο στίχοι ῥοῶν χαλκῶν δεδικτυωμένοι, ἔργον κρεμαστόν, στίχος ἐπὶ στίχον· καὶ οὕτως ἐποίησεν τῷ ἐπιθέματι τῷ δευτέρῳ.",
+        "VUL": "Et porticum columnarum fecit quinquaginta cubitorum longitudinis, et triginta cubitorum latitudinis : et alteram porticum in facie majoris porticus : et columnas, et epistylia super columnas.",
+        "SYN": "И притвор из столбов сделал он длиною в пятьдесят локтей, шириною в тридцать локтей, и пред ними крыльцо, и столбы, и порог пред ними.",
+        "NEO": "Il fit le portique à colonnes, dont la longueur était de cinquante coudées et la largeur de trente coudées, et, en avant, un autre portique avec des colonnes et des degrés devant elles.",
+        "NAB": "The porch of the columned hall he made fifty cubits long and thirty wide. The porch extended the width of the columned hall, and there was a canopy in front.",
+        "VAT_ES": "El hizo también el Pórtico de las columnas, de veinticinco metros de largo por quince de ancho, y delante de él un vestíbulo con columnas y un alero sobre la fachada.",
+        "CEI": "Costruì il vestibolo delle colonne, lungo cinquanta cubiti e largo trenta. Sul davanti c'era un vestibolo e altre colonne e davanti ad esse una tettoia."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/אוּלָ֤ם הַ/כִּסֵּא֙ אֲשֶׁ֣ר יִשְׁפָּט שָׁ֔ם אֻלָ֥ם הַ/מִּשְׁפָּ֖ט עָשָׂ֑ה וְ/סָפ֣וּן בָּ/אֶ֔רֶז מֵ/הַ/קַּרְקַ֖ע עַד הַ/קַּרְקָֽע׃",
+        "LXX": "καὶ ἔστησεν τοὺς στύλους τοῦ αἰλὰμ τοῦ ναοῦ· καὶ ἔστησεν τὸν στύλον τὸν ἕνα καὶ ἐπεκάλεσεν τὸ ὄνομα αὐτοῦ Ἰαχούμ, καὶ ἔστησεν τὸν στύλον τὸν δεύτερον καὶ ἐπεκάλεσεν τὸ ὄνομα αὐτοῦ βάλαζ.",
+        "VUL": "Porticum quoque solii, in qua tribunal est, fecit : et texit lignis cedrinis a pavimento usque ad summitatem.",
+        "SYN": "Еще притвор с престолом, с которого он судил, притвор для судилища сделал он и покрыл все полы кедром.",
+        "NEO": "Il fit le portique du trône, où il rendait la justice, le portique du jugement, et il le revêtit de cèdre depuis le sol jusqu’au plafond.",
+        "NAB": "He also built the vestibule of the throne where he gave judgment - that is, the tribunal; it was paneled with cedar from floor to ceiling beams.",
+        "VAT_ES": "Hizo la sala del trono donde administraba justicia –la Sala del juicio –que estaba revestida de cedro desde el suelo hasta los postes del artesonado.",
+        "CEI": "Fece anche il vestibolo del trono, ove rendeva giustizia, cioè il vestibolo della giustizia; era di cedro dal pavimento alle travi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וּ/בֵית/וֹ֩ אֲשֶׁר יֵ֨שֶׁב שָׁ֜ם חָצֵ֣ר הָ/אַחֶ֗רֶת מִ/בֵּית֙ לָֽ/אוּלָ֔ם כַּ/מַּֽעֲשֶׂ֥ה הַ/זֶּ֖ה הָיָ֑ה וּ/בַ֜יִת יַעֲשֶׂ֤ה לְ/בַת פַּרְעֹה֙ אֲשֶׁ֣ר לָקַ֣ח שְׁלֹמֹ֔ה כָּ/אוּלָ֖ם הַ/זֶּֽה׃",
+        "LXX": "καὶ ἐπὶ τῶν κεφαλῶν τῶν στύλων ἔργον κρίνου κατὰ τὸ αἰλὰμ τεσσάρων πηχῶν.",
+        "VUL": "Et domuncula, in qua sedebatur ad judicandum, erat in media porticu simili opere. Domum quoque fecit filiæ Pharaonis (quam uxorem duxerat Salomon) tali opere, quali et hanc porticum.",
+        "SYN": "В доме, где он жил, другой двор позади притвора был такого же устройства. И в доме дочери фараоновой, которую взял за себя Соломон, он сделал такой же притвор.",
+        "NEO": "Sa maison d’habitation fut construite de la même manière, dans une seconde cour, après le portique ; et il fit une maison semblable à ce portique pour la fille de Pharaon, que Salomon avait épousée.",
+        "NAB": "His living quarters were in another court, set in deeper than the tribunal and of the same construction. A palace like this tribunal was built for Pharaoh's daughter, whom Solomon had married.",
+        "VAT_ES": "Su residencia personal, que daba al otro atrio, retirado del Pórtico, estaba construida en un estilo semejante. Y también hizo una casa, parecida a ese Pórtico, para la hija del Faraón con la que se había casado.",
+        "CEI": "La reggia, dove abitava, fu costruita con il medesimo disegno, in un secondo cortile, all'interno rispetto al vestibolo; nello stile di tale vestibolo fece anche una casa per la figlia del faraone, che Salomone aveva sposata."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "כָּל אֵ֜לֶּה אֲבָנִ֤ים יְקָרֹת֙ כְּ/מִדֹּ֣ת גָּזִ֔ית מְגֹרָר֥וֹת בַּ/מְּגֵרָ֖ה מִ/בַּ֣יִת וּ/מִ/ח֑וּץ וּ/מִ/מַּסָּד֙ עַד הַ/טְּפָח֔וֹת וּ/מִ/ח֖וּץ עַד הֶ/חָצֵ֥ר הַ/גְּדוֹלָֽה׃",
+        "LXX": "καὶ μέλαθρον ἐπ’ ἀμφοτέρων τῶν στύλων, καὶ ἐπάνωθεν τῶν πλευρῶν ἐπίθεμα τὸ μέλαθρον τῷ πήχει.",
+        "VUL": "Omnia lapidibus pretiosis, qui ad normam quamdam atque mensuram tam intrinsecus quam extrinsecus serrati erant : a fundamento usque ad summitatem parietum, et extrinsecus usque ad atrium majus.",
+        "SYN": "Все это сделано было из дорогих камней, обтесанных по размеру, обрезанных пилою, с внутренней и наружной стороны, от основания до выступов, и с наружной стороны до большого двора.",
+        "NEO": "Toutes ces constructions étaient en pierres de prix, taillées d’après des mesures, sciées avec la scie, à l’intérieur comme à l’extérieur, depuis les fondements jusqu’aux corniches, et en dehors jusqu’à la grande cour.",
+        "NAB": "All these buildings were of fine stones, hewn to size and trimmed front and back with a saw, from the foundation to the bonding course.",
+        "VAT_ES": "Todas estas construcciones estaban hechas con piedras seleccionadas, talladas a medida, cortadas con la sierra tanto del lado interior como del exterior, y esto, desde los cimientos hasta las cornisas y, por fuera, hasta el patio grande.",
+        "CEI": "Tutte queste costruzioni erano di pietre pregiate, squadrate secondo misura, segate con la sega sul lato interno ed esterno, dalle fondamenta ai cornicioni e al di fuori fino al cortile maggiore."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וּ/מְיֻסָּ֕ד אֲבָנִ֥ים יְקָר֖וֹת אֲבָנִ֣ים גְּדֹל֑וֹת אַבְנֵי֙ עֶ֣שֶׂר אַמּ֔וֹת וְ/אַבְנֵ֖י שְׁמֹנֶ֥ה אַמּֽוֹת׃",
+        "LXX": "καὶ ἐποίησεν τὴν θάλασσαν δέκα ἐν πήχει ἀπὸ τοῦ τείχους αὐτῆς ἕως τοῦ χείλους αὐτῆς, στρογγὺλον κὺκλῳ τὸ αὐτό· πέντε ἐν πήχει τὸ ὕψος αὐτῆς καὶ συνηγμένοι τρεῖς καὶ τριάκοντα ἐν πήχει.",
+        "VUL": "Fundamenta autem de lapidibus pretiosis, lapidibus magnis, decem sive octo cubitorum.",
+        "SYN": "И в основание положены были камни дорогие, камни большие, камни в десять локтей и камни в восемь локтей,",
+        "NEO": "Les fondements étaient aussi en pierres de prix, en pierres de grande dimension, en pierres de dix coudées et en pierres de huit coudées.",
+        "NAB": "(The foundation was made of fine, large blocks, some ten cubits and some eight cubits.",
+        "VAT_ES": "También los cimientos eran de piedras seleccionadas, grandes piedras de cinco y cuatro metros.",
+        "CEI": "Le fondamenta erano di pietre pregiate, pietre grandi dieci o otto cubiti."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/מִ/לְ/מַ֗עְלָ/ה אֲבָנִ֧ים יְקָר֛וֹת כְּ/מִדּ֥וֹת גָּזִ֖ית וָ/אָֽרֶז׃",
+        "LXX": "καὶ ὑποστηρίγματα ὑποκάτωθεν τοῦ χείλους αὐτῆς κυκλόθεν ἐκύκλουν αὐτὴν δέκα ἐν πήχει κυκλόθεν·",
+        "VUL": "Et desuper lapides pretiosi æqualis mensuræ secti erant, similiterque de cedro.",
+        "SYN": "и сверху дорогие камни, обтесанные по размеру, и кедр.",
+        "NEO": "Au-dessus, il y avait encore des pierres de prix, taillées d’après des mesures, et du bois de cèdre.",
+        "NAB": "Above were fine stones hewn to size, and cedar wood.)",
+        "VAT_ES": "Sobre los cimientos, había piedras seleccionadas, talladas a medida, y madera de cedro.",
+        "CEI": "Al di sopra erano pietre pregiate, squadrate a misura, e legno di cedro."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/חָצֵ֨ר הַ/גְּדוֹלָ֜ה סָבִ֗יב שְׁלֹשָׁה֙ טוּרִ֣ים גָּזִ֔ית וְ/ט֖וּר כְּרֻתֹ֣ת אֲרָזִ֑ים וְ/לַ/חֲצַ֧ר בֵּית יְהוָ֛ה הַ/פְּנִימִ֖ית וּ/לְ/אֻלָ֥ם הַ/בָּֽיִת׃",
+        "LXX": "καὶ τὸ χεῖλος αὐτῆς ὡς ἔργον χείλους ποτηρίου, βλαστὸς κρίνου, καὶ τὸ πάχος αὐτοῦ παλαιστής.",
+        "VUL": "Et atrium majus rotundum trium ordinum de lapidibus sectis, et unius ordinis de dolata cedro : necnon et in atrio domus Domini interiori, et in porticu domus.",
+        "SYN": "Большой двор огорожен был кругом тремя рядами тесаных камней и одним рядом кедровых бревен; также и внутренний двор храма Господа и притвор храма.",
+        "NEO": "La grande cour avait dans tout son circuit trois rangées de pierre de taille et une rangée de poutres de cèdre, comme le parvis intérieur de la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, et comme le portique de la maison.",
+        "NAB": "The great court was enclosed by three courses of hewn stones and a bonding course of cedar beams. So also were the inner court of the temple of the LORD and the temple porch.",
+        "VAT_ES": "El patio grande tenía a su alrededor tres hileras de piedras talladas y una hilera de tablas de cedro, iguales a las del atrio interior de la Casa del Señor y a las del vestíbulo de la Casa.",
+        "CEI": "Il cortile maggiore comprendeva tre ordini di pietre squadrate e un ordine di tavole di cedro; era simile al cortile interno del tempio e al vestibolo del tempio."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַח֙ הַ/מֶּ֣לֶךְ שְׁלֹמֹ֔ה וַ/יִּקַּ֥ח אֶת חִירָ֖ם מִ/צֹּֽר׃",
+        "LXX": "καὶ δώδεκα βόες ὑποκάτω τῆς θαλάσσης, οἱ τρεῖς ἐπιβλέποντες βορρᾶν, καὶ οἱ τρεῖς ἐπιβλέποντες θάλασσαν, καὶ οἱ τρεῖς ἐπιβλέποντες νότον, καὶ οἱ τρεῖς ἐπιβλέποντες ἀνατολήν. καὶ πάντα τὰ ὀπίσθια εἰς τὸν οἶκον, καὶ ἡ θάλασσα ἐπ’ αὐτῶν ἐπάνωθεν.",
+        "VUL": "Misit quoque rex Salomon, et tulit Hiram de Tyro,",
+        "SYN": "И послал царь Соломон и взял из Тира Хирама,",
+        "NEO": "Le roi Salomon envoya chercher Hiram de Tyr.",
+        "NAB": "King Solomon had Hiram brought from Tyre.",
+        "VAT_ES": "El rey Salomón mandó a buscar a Jirám de Tiro,",
+        "CEI": "Salomone fece venire da Tiro Chiram,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "בֶּן אִשָּׁה֩ אַלְמָנָ֨ה ה֜וּא מִ/מַּטֵּ֣ה נַפְתָּלִ֗י וְ/אָבִ֣י/ו אִישׁ צֹרִי֮ חֹרֵ֣שׁ נְחֹשֶׁת֒ וַ֠/יִּמָּלֵא אֶת הַ/חָכְמָ֤ה וְ/אֶת הַ/תְּבוּנָה֙ וְ/אֶת הַ/דַּ֔עַת לַ/עֲשׂ֥וֹת כָּל מְלָאכָ֖ה בַּ/נְּחֹ֑שֶׁת וַ/יָּבוֹא֙ אֶל הַ/מֶּ֣לֶךְ שְׁלֹמֹ֔ה וַ/יַּ֖עַשׂ אֶת כָּל מְלַאכְתּֽ/וֹ׃",
+        "LXX": "καὶ ἐποίησεν δέκα μεχωνὼθ χαλκᾶς· πέντε πήχεις μῆκος τῆς μεχωνὼθ τῆς μιᾶς, καὶ τέσσαρες πήχεις πλάτος αὐτῆς, καὶ ἓξ ἐν πήχει ὕψος αὐτῆς.",
+        "VUL": "filium mulieris viduæ de tribu Nephthali, patre Tyrio, artificem ærarium, et plenum sapientia, et intelligentia, et doctrina, ad faciendum omne opus ex ære. Qui cum venisset ad regem Salomonem, fecit omne opus ejus.",
+        "SYN": "сына одной вдовы, из колена Неффалимова. Отец его Тирянин был медник; он владел способностью, искусством и уменьем выделывать всякие вещи из меди. И пришел он к царю Соломону и производил у него всякие работы:",
+        "NEO": "Il était fils d’une veuve de la tribu de Nephthali, mais son père était tyrien et travaillait l’airain. Il était rempli de sagesse, d’intelligence et de savoir pour faire toutes sortes d’ouvrages d’airain ; il vint auprès du roi Salomon, et il exécuta tous ses ouvrages.",
+        "NAB": "He was a bronze worker, the son of a widow from the tribe of Naphtali; his father had been from Tyre. He was endowed with skill, understanding, and knowledge of how to produce any work in bronze. He came to King Solomon and did all his metal work.",
+        "VAT_ES": "el hijo de una viuda de la tribu de Neftalí. Su padre, un natural de Tiro, había sido artesano del bronce, y él mismo estaba dotado de una gran habilidad, inteligencia y destreza para ejecutar toda clase de trabajos en bronce. Jirám se presentó ante el rey Salomón y ejecutó todos los trabajos que él le encomendó.",
+        "CEI": "figlio di una vedova della tribù di Nèftali; suo padre era di Tiro e lavorava il bronzo. Era dotato di grande capacità tecnica, di intelligenza e di talento, esperto in ogni genere di lavoro in bronzo. Egli si recò dal re ed eseguì le sue commissioni."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יָּ֛צַר אֶת שְׁנֵ֥י הָ/עַמּוּדִ֖ים נְחֹ֑שֶׁת שְׁמֹנֶ֨ה עֶשְׂרֵ֜ה אַמָּ֗ה קוֹמַת֙ הָ/עַמּ֣וּד הָ/אֶחָ֔ד וְ/חוּט֙ שְׁתֵּים עֶשְׂרֵ֣ה אַמָּ֔ה יָסֹ֖ב אֶת הָ/עַמּ֥וּד הַ/שֵּׁנִֽי׃",
+        "LXX": "καὶ τοῦτο τὸ ἔργον τῶν μεχωνώθ· συνκλειστὸν αὐτοῖς, καὶ συνκλειστὸν ἀνὰ μέσον τῶν ἐξεχομένων.",
+        "VUL": "Et finxit duas columnas æreas, decem et octo cubitorum altitudinis columnam unam : et linea duodecim cubitorum ambiebat columnam utramque.",
+        "SYN": "и сделал он два медных столба, каждый в восемнадцать локтей вышиною, и снурок в двенадцать локтей обнимал _окружность_ того и другого столба;",
+        "NEO": "Il fabriqua les deux colonnes en airain ; la hauteur d’une colonne était de dix-huit coudées et un fil de douze coudées mesurait la circonférence de la deuxième colonne.",
+        "NAB": "Two hollow bronze columns were cast, each eighteen cubits high and twelve cubits in circumference; their metal was of four fingers' thickness.",
+        "VAT_ES": "Jirám modeló las dos columnas de bronce. La altura de una columna era de nueve metros y un hilo de seis metros medía su contorno. La segunda columna era idéntica a la primera.",
+        "CEI": "Fuse due colonne di bronzo, ognuna alta diciotto cubiti e dodici di circonferenza."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וּ/שְׁתֵּ֨י כֹתָרֹ֜ת עָשָׂ֗ה לָ/תֵ֛ת עַל רָאשֵׁ֥י הָֽ/עַמּוּדִ֖ים מֻצַ֣ק נְחֹ֑שֶׁת חָמֵ֣שׁ אַמּ֗וֹת קוֹמַת֙ הַ/כֹּתֶ֣רֶת הָ/אֶחָ֔ת וְ/חָמֵ֣שׁ אַמּ֔וֹת קוֹמַ֖ת הַ/כֹּתֶ֥רֶת הַ/שֵּׁנִֽית׃",
+        "LXX": "καὶ ἐπὶ τὰ συνκλείσματα αὐτῶν ἀνὰ μέσον ἐξεχομένων λέοντες καὶ βόες καὶ χερουβείν· καὶ ἐπὶ τῶν ἐξεχομένων οὕτως καὶ ἐπάνωθεν, καὶ ὑποκάτωθεν τῶν λεόντων καὶ τῶν βοῶν χῶραι, ἔργον καταβάσεως.",
+        "VUL": "Duo quoque capitella fecit, quæ ponerentur super capita columnarum, fusilia ex ære : quinque cubitorum altitudinis capitellum unum, et quinque cubitorum altitudinis capitellum alterum :",
+        "SYN": "и два венца, вылитых из меди, он сделал, чтобы положить на верху столбов: пять локтей вышины в одном венце и пять локтей вышины в другом венце;",
+        "NEO": "Il fit deux chapiteaux d’airain fondu, pour les placer sur les sommets des colonnes ; la hauteur d’un chapiteau était de cinq coudées et la hauteur du deuxième chapiteau était de cinq coudées.",
+        "NAB": "There were also two capitals cast in bronze, to place on top of the columns, each of them five cubits high.",
+        "VAT_ES": "El hizo además dos capiteles para colocarlos arriba de las columnas; estos eran de bronce fundido. La altura del primer capital era de dos metros y medio, y el segundo tenía la misma altura.",
+        "CEI": "Fece due capitelli, fusi in bronzo, da collocarsi sulla cima delle colonne; l'uno e l'altro erano alti cinque cubiti."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "שְׂבָכִ֞ים מַעֲשֵׂ֣ה שְׂבָכָ֗ה גְּדִלִים֙ מַעֲשֵׂ֣ה שַׁרְשְׁר֔וֹת לַ/כֹּ֣תָרֹ֔ת אֲשֶׁ֖ר עַל רֹ֣אשׁ הָ/עַמּוּדִ֑ים שִׁבְעָה֙ לַ/כֹּתֶ֣רֶת הָ/אֶחָ֔ת וְ/שִׁבְעָ֖ה לַ/כֹּתֶ֥רֶת הַ/שֵּׁנִֽית׃",
+        "LXX": "καὶ τέσσαρες τροχοὶ χαλκοῖ τῇ μεχωνὼθ τῇ μιᾷ, καὶ τὰ προσέχοντα χαλκᾶ καὶ τέσσερα μέρη αὐτῶν, ὠμίαι ὑποκάτω τῶν λουτήρων.",
+        "VUL": "et quasi in modum retis, et catenarum sibi invicem miro opere contextarum. Utrumque capitellum columnarum fusile erat : septena versuum retiacula in capitello uno, et septena retiacula in capitello altero.",
+        "SYN": "сетки плетеной работы и снурки в виде цепочек для венцов, которые были на верху столбов: семь на одном венце и семь на другом венце.",
+        "NEO": "Il y avait des treillis en forme de réseaux, des festons en forme de chaînettes, aux chapiteaux qui surmontaient le sommet des colonnes, sept à un chapiteau, sept au deuxième chapiteau.",
+        "NAB": "Two pieces of network with a chainlike mesh were made to cover the (nodes of the) capitals on top of the columns, one for each capital.",
+        "VAT_ES": "Hizo unas molduras en forma de red y frisos en forma de guirnaldas para los capiteles que estaban encima de las columnas; siete para el primer capital y siete para el segundo.",
+        "CEI": "Fece due reticolati per coprire i capitelli che erano sopra le colonne, un reticolato per un capitello e un reticolato per l'altro capitello."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יַּ֖עַשׂ אֶת הָ/עַמּוּדִ֑ים וּ/שְׁנֵי֩ טוּרִ֨ים סָבִ֜יב עַל הַ/שְּׂבָכָ֣ה הָ/אֶחָ֗ת לְ/כַסּ֤וֹת אֶת הַ/כֹּֽתָרֹת֙ אֲשֶׁר֙ עַל רֹ֣אשׁ הָֽ/רִמֹּנִ֔ים וְ/כֵ֣ן עָשָׂ֔ה לַ/כֹּתֶ֖רֶת הַ/שֵּׁנִֽית׃",
+        "LXX": "καὶ χεῖρες ἐν τοῖς τροχοῖς ἐν τῷ μεχωνώθ· καὶ τὸ ὕψος τοῦ τροχοῦ τοῦ ἑνὸς πήχεος καὶ ἡμίσους.",
+        "VUL": "Et perfecit columnas, et duos ordines per circuitum retiaculorum singulorum, ut tegerent capitella quæ erant super summitatem, malogranatorum : eodem modo fecit et capitello secundo.",
+        "SYN": "Так сделал он столбы и два ряда гранатовых яблок вокруг сетки, чтобы покрыть венцы, которые на верху столбов; то же сделал и для другого венца.",
+        "NEO": "Il fit deux rangs de grenades autour de l’un des treillis, pour couvrir le chapiteau qui surmontait l’une des colonnes ; et de même fit-il pour le second chapiteau.",
+        "NAB": "Four hundred pomegranates were also cast; two hundred of them in a double row encircled the piece of network on each of the two capitals.",
+        "VAT_ES": "Hizo también las granadas: puso dos hileras alrededor de una de las redes, para cubrir los capiteles que remataban las columnas, y lo mismo hizo para el segundo capitel.",
+        "CEI": "Fece melagrane su due file intorno al reticolato per coprire i capitelli sopra le colonne; allo stesso modo fece per il secondo capitello."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/כֹֽתָרֹ֗ת אֲשֶׁר֙ עַל רֹ֣אשׁ הָ/עַמּוּדִ֔ים מַעֲשֵׂ֖ה שׁוּשַׁ֣ן בָּֽ/אוּלָ֑ם אַרְבַּ֖ע אַמּֽוֹת׃",
+        "LXX": "καὶ τὸ ἔργον τῶν τροχῶν ἔργον τροχῶν ἅρματος· αἱ χεῖρες αὐτῶν καὶ οἱ νῶτοι αὐτῶν καὶ ἡ πραγματεία αὐτῶν πάντα χωνευτά.",
+        "VUL": "Capitella autem quæ erant super capita columnarum, quasi opere lilii fabricata erant in porticu quatuor cubitorum.",
+        "SYN": "А в притворе венцы на верху столбов сделаны _наподобие лилии,_ в четыре локтя,",
+        "NEO": "Les chapiteaux qui étaient sur le sommet des colonnes, dans le portique, figuraient des lis ayant quatre coudées de hauteur.",
+        "NAB": "The capitals on top of the columns were finished wholly in a lotus pattern",
+        "VAT_ES": "Los capitales que estaban encima de las columnas, en el vestíbulo del templo, tenían una moldura en forma de azucena y medían dos metros.",
+        "CEI": "I capitelli sopra le colonne erano a forma di giglio."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/כֹתָרֹ֗ת עַל שְׁנֵי֙ הָֽ/עַמּוּדִ֔ים גַּם מִ/מַּ֨עַל֙ מִ/לְּ/עֻמַּ֣ת הַ/בֶּ֔טֶן אֲשֶׁ֖ר לְ/עֵ֣בֶר שבכה הַ/שְּׂבָכָ֑ה וְ/הָ/רִמּוֹנִ֤ים מָאתַ֨יִם֙ טֻרִ֣ים סָבִ֔יב עַ֖ל הַ/כֹּתֶ֥רֶת הַ/שֵּׁנִֽית׃",
+        "LXX": "αἱ τέσσαρες ὠμίαι ἐπὶ τῶν τεσσάρων γωνιῶν τῆς μεχωνὼθ τῇ μιᾷ, ἐκ τῆς μεχωνὼθ οἱ ὦμοι αὐτῆς·",
+        "VUL": "Et rursum alia capitella in summitate columnarum desuper juxta mensuram columnæ contra retiacula : malogranatorum autem ducenti ordines erant in circuitu capitelli secundi.",
+        "SYN": "и венцы на обоих столбах вверху, прямо над выпуклостью, которая подле сетки; и на другом венце, рядами кругом, двести гранатовых яблок.",
+        "NEO": "Les chapiteaux placés sur les deux colonnes étaient entourés de deux cents grenades, en haut, près du renflement qui était au delà du treillis ; il y avait aussi deux cents grenades rangées tout autour, sur le second chapiteau.",
+        "NAB": "above the level of the nodes and their enveloping network.",
+        "VAT_ES": "En los capiteles superpuestos a las dos columnas, también en la parte superior, a lo largo del ensanchamiento que estaba más allá de la red, había doscientas granadas distribuidas en hileras circulares, sobre los dos capitales.",
+        "CEI": "C'erano capitelli sopra le colonne, applicati alla sporgenza che era al di là del reticolato; essi contenevano duecento melagrane in fila intorno a ogni capitello."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יָּ֨קֶם֙ אֶת הָֽ/עַמֻּדִ֔ים לְ/אֻלָ֖ם הַֽ/הֵיכָ֑ל וַ/יָּ֜קֶם אֶת הָ/עַמּ֣וּד הַ/יְמָנִ֗י וַ/יִּקְרָ֤א אֶת שְׁמ/וֹ֙ יָכִ֔ין וַ/יָּ֨קֶם֙ אֶת הָ/עַמּ֣וּד הַ/שְּׂמָאלִ֔י וַ/יִּקְרָ֥א אֶת שְׁמ֖/וֹ בֹּֽעַז׃",
+        "LXX": "καὶ ἐπὶ τῆς κεφαλῆς τῆς μεχωνὼθ ἥμισυ τοῦ πήχεος μέγεθος αὐτῆς, στρογγύλον κύκλῳ ἐπὶ τῆς κεφαλῆς τῆς μεχωνώθ· καὶ ἀρχὴ χειρῶν αὐτῆς καὶ τὰ συγκλείσματα αὐτῆς· καὶ ἠνοίγετο ἐπὶ τέσσαρας ἀρχὰς τῶν χειρῶν αὐτῆς.",
+        "VUL": "Et statuit duas columnas in porticu templi : cumque statuisset columnam dexteram, vocavit eam nomine Jachin : similiter erexit columnam secundam, et vocavit nomen ejus Booz.",
+        "SYN": "И поставил столбы к притвору храма; поставил столб на правой стороне и дал ему имя Иахин, и поставил столб на левой стороне и дал ему имя Воаз.",
+        "NEO": "Il dressa les colonnes au portique du temple ; il dressa la colonne de droite et la nomma Jachin ; puis il dressa la colonne de gauche et la nomma Booz.",
+        "NAB": "The columns were then erected adjacent to the porch of the temple, one to the right, called Jachin, and the other to the left, called Boaz.",
+        "VAT_ES": "El erigió esas columnas junto al vestíbulo del Templo: erigió la columna derecha, y la llamó Iaquín; erigió también la columna izquierda, y la llamó Boaz.",
+        "CEI": "Eresse le colonne nel vestibolo del tempio. Eresse la colonna di destra, che chiamò Iachin ed eresse la colonna di sinistra, che chiamò Boaz."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/עַ֛ל רֹ֥אשׁ הָ/עַמּוּדִ֖ים מַעֲשֵׂ֣ה שׁוֹשָׁ֑ן וַ/תִּתֹּ֖ם מְלֶ֥אכֶת הָ/עַמּוּדִֽים׃",
+        "LXX": "καὶ τὰ συγκλείσματα αὐτῆς χερουβεὶν καὶ λέοντες καὶ φοίνικες ἑστῶτα, ἐχόμενον ἕκαστον κατὰ πρόσωπον ἔσω καὶ τὰ κυκλόθεν.",
+        "VUL": "Et super capita columnarum opus in modum lilii posuit : perfectumque est opus columnarum.",
+        "SYN": "И над столбами поставил _венцы,_ сделанные _наподобие_ лилии; так окончена работа над столбами.",
+        "NEO": "Et il y avait sur le sommet des colonnes un travail figurant des lis. Ainsi fut achevé l’ouvrage des colonnes.",
+        "NAB": "Thus the work on the columns was completed.",
+        "VAT_ES": "En lo alto de las columnas había una moldura en forma de azucena. Así quedó concluido el trabajo de las columnas.",
+        "CEI": "Così fu terminato il lavoro delle colonne."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ אֶת הַ/יָּ֖ם מוּצָ֑ק עֶ֣שֶׂר בָּ֠/אַמָּה מִ/שְּׂפָת֨/וֹ עַד שְׂפָת֜/וֹ עָגֹ֣ל סָבִ֗יב וְ/חָמֵ֤שׁ בָּֽ/אַמָּה֙ קוֹמָת֔/וֹ ו/קוה וְ/קָו֙ שְׁלֹשִׁ֣ים בָּֽ/אַמָּ֔ה יָסֹ֥ב אֹת֖/וֹ סָבִֽיב׃",
+        "LXX": "κατ’ αὐτὴν ἐποίησεν πάσας τὰς δέκα μεχωνώθ, τάξιν μίαν καὶ μέτρον ἓν πάσαις.",
+        "VUL": "Fecit quoque mare fusile decem cubitorum a labio usque ad labium, rotundum in circuitu : quinque cubitorum altitudo ejus, et resticula triginta cubitorum cingebat illud per circuitum.",
+        "SYN": "И сделал литое _из_ _меди_ море, -- от края его до края его десять локтей, -- совсем круглое, вышиною в пять локтей, и снурок в тридцать локтей обнимал его кругом.",
+        "NEO": "Il fit la mer d’airain fondu. Elle avait dix coudées d’un bord à l’autre, elle était entièrement ronde ; sa hauteur était de cinq coudées, et un cordon de trente coudées mesurait sa circonférence.",
+        "NAB": "The sea was then cast; it was made with a circular rim, and measured ten cubits across, five in height, and thirty in circumference.",
+        "VAT_ES": "El hizo además el Mar de metal fundido, que medía cinco metros de diámetro y tenía forma circular; su altura era de dos metros y medio, y una cuerda de quince metros medía su circunferencia.",
+        "CEI": "Fece un bacino di metallo fuso di dieci cubiti da un orlo all'altro, rotondo; la sua altezza era di cinque cubiti e la sua circonferenza di trenta cubiti."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וּ/פְקָעִים֩ מִ/תַּ֨חַת לִ/שְׂפָת֤/וֹ סָבִיב֙ סֹבְבִ֣ים אֹת֔/וֹ עֶ֚שֶׂר בָּֽ/אַמָּ֔ה מַקִּפִ֥ים אֶת הַ/יָּ֖ם סָבִ֑יב שְׁנֵ֤י טוּרִים֙ הַ/פְּקָעִ֔ים יְצֻקִ֖ים בִּ/יצֻקָתֽ/וֹ׃",
+        "LXX": "καὶ ἐποίησεν δέκα χυτροκαύλους χαλκοῦς, τεσσεράκοντα χοεῖς χωροῦντας τὸν χυτρόκαυλον τὸν ἕνα μετρήσει· ὁ χυτρόκαυλος ὁ εἷς ἐπὶ τῇ μεχωνὼθ τῇ μιᾷ, ταῖς δέκα μεχωνώθ.",
+        "VUL": "Et sculptura subter labium circuibat illud decem cubitis ambiens mare : duo ordines sculpturarum striatarum erant fusiles.",
+        "SYN": "_Подобия_ огурцов под краями его окружали его по десяти налокоть, окружали море со всех сторон в два ряда; _подобия_ огурцовбыли вылиты с ним одним литьем.",
+        "NEO": "Des coloquintes l’entouraient, au-dessous du bord, dix par coudées, faisant tout le tour de la mer sur deux rangs ; les coloquintes étaient fondues avec elle en une seule pièce.",
+        "NAB": "Under the brim, gourds encircled it, ten to the cubit all the way around; the gourds were in two rows and were cast in one mold with the sea.",
+        "VAT_ES": "Debajo del borde, todo alrededor, tenía una orla de coloquíntidas –diez frutos cada medio metro– que rodeaban todo el contorno del Mar; había dos hileras de frutos, fundidos con el Mar en una sola pieza.",
+        "CEI": "Intorno, sotto l'orlo, c'erano cucurbite, dieci per ogni cubito; le cucurbite erano disposte in due file ed erano state colate insieme con il bacino."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "עֹמֵ֞ד עַל שְׁנֵ֧י עָשָׂ֣ר בָּקָ֗ר שְׁלֹשָׁ֣ה פֹנִ֣ים צָפ֡וֹנָ/ה וּ/שְׁלֹשָׁה֩ פֹנִ֨ים יָ֜מָּ/ה וּ/שְׁלֹשָׁ֣ה פֹּנִ֣ים נֶ֗גְבָּ/ה וּ/שְׁלֹשָׁה֙ פֹּנִ֣ים מִזְרָ֔חָ/ה וְ/הַ/יָּ֥ם עֲלֵי/הֶ֖ם מִ/לְ/מָ֑עְלָ/ה וְ/כָל אֲחֹֽרֵי/הֶ֖ם בָּֽיְתָ/ה׃",
+        "LXX": "καὶ ἔθετο τὰς πέντε μεχωνὼθ ἀπὸ τῆς ὠμίας τοῦ οἴκου ἐξ ἀριστερῶν· καὶ ἡ θάλασσα ἀπὸ τῆς ὠμίας τοῦ οἴκου ἐκ δεξιῶν κατ’ ἀνατολὰς ἀπὸ τοῦ κλίτους τοῦ νότου.",
+        "VUL": "Et stabat super duodecim boves, e quibus tres respiciebant ad aquilonem, et tres ad occidentem, et tres ad meridiem, et tres ad orientem : et mare super eos desuper erat : quorum posteriora universa intrinsecus latitabant.",
+        "SYN": "Оно стояло на двенадцати волах: три глядели к северу, три глядели к западу, три глядели к югу и три глядели к востоку; море лежало на них, и зады их _обращены_ _были_ внутрь под него.",
+        "NEO": "Elle était posée sur douze bœufs, dont trois regardaient le nord, trois regardaient l’occident, trois regardaient le midi et trois regardaient l’orient ; la mer était sur eux, et toute la partie postérieure de leur corps était cachée en dedans.",
+        "NAB": "This rested on twelve oxen, three facing north, three facing west, three facing south, and three facing east, with their haunches all toward the center, where the sea was set upon them.",
+        "VAT_ES": "El Mar estaba asentado sobre doce toros, tres vueltos hacia el norte, tres hacia el oeste, tres hacia el sur y tres hacia el este. El Mar se elevaba por encima de ellos, que estaban con sus partes traseras vueltas hacia el interior.",
+        "CEI": "Questo poggiava su dodici buoi; tre guardavano verso settentrione, tre verso occidente, tre verso meridione e tre verso oriente. Il bacino poggiava su di essi e le loro parti posteriori erano rivolte verso l'interno."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/עָבְי֣/וֹ טֶ֔פַח וּ/שְׂפָת֛/וֹ כְּ/מַעֲשֵׂ֥ה שְׂפַת כּ֖וֹס פֶּ֣רַח שׁוֹשָׁ֑ן אַלְפַּ֥יִם בַּ֖ת יָכִֽיל׃",
+        "LXX": "καὶ ἐποίησεν Χειρὰμ τοὺς λέβητας καὶ τὰς θερμάστρεις καὶ τὰς φιάλας· καὶ συνετέλεσεν Χειρὰμ ποιῶν πάντα τὰ ἔργα ἃ ἐποίησεν τῷ βασιλεῖ Σαλωμὼν ἐν οἴκῳ Κυρίου.",
+        "VUL": "Grossitudo autem luteris, trium unciarum erat : labiumque ejus quasi labium calicis, et folium repandi lilii : duo millia batos capiebat.",
+        "SYN": "Толщиною оно было в ладонь, и края его, сделанные подобно краям чаши, _походили_ на распустившуюся лилию. Оно вмещало две тысячи батов.",
+        "NEO": "Son épaisseur était d’un palme, et son bord était semblable au bord d’une coupe, à fleur de lis. Elle contenait deux mille baths.",
+        "NAB": "It was a handbreadth thick, and its brim resembled that of a cup, being lily-shaped. Its capacity was two thousand measures.",
+        "VAT_ES": "Su espesor medía un palmo, y su borde tenía forma de copa, semejante al cáliz de una azucena. Su capacidad era de unos setenta mil litros.",
+        "CEI": "Il suo spessore era di un palmo; il suo orlo fatto come l'orlo di un calice era a forma di giglio. Conteneva duemila bat."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יַּ֧עַשׂ אֶת הַ/מְּכֹנ֛וֹת עֶ֖שֶׂר נְחֹ֑שֶׁת אַרְבַּ֣ע בָּ/אַמָּ֗ה אֹ֚רֶךְ הַ/מְּכוֹנָ֣ה הָֽ/אֶחָ֔ת וְ/אַרְבַּ֤ע בָּֽ/אַמָּה֙ רָחְבָּ֔/הּ וְ/שָׁלֹ֥שׁ בָּ/אַמָּ֖ה קוֹמָתָֽ/הּ׃",
+        "LXX": "στύλους δύο καὶ τὰ στρεπτὰ τῶν στύλων ἐπὶ τῶν κεφαλῶν τῶν στύλων δύο· καὶ τὰ δίκτυα δύο τοῦ καλύπτειν ἀμφότερα τὰ στρεπτὰ τῶν γλυφῶν τὰ ὄντα ἐπὶ τῶν στύλων·",
+        "VUL": "Et fecit decem bases æneas, quatuor cubitorum longitudinis bases singulas, et quatuor cubitorum latitudinis, et trium cubitorum altitudinis.",
+        "SYN": "И сделал он десять медных подстав; длина каждой подставы - четыре локтя, ширина - четыре локтя и три локтя - вышина.",
+        "NEO": "Il fit les dix bases d’airain ; chacune avait quatre coudées de long, quatre coudées de large et trois coudées de haut.",
+        "NAB": "Ten stands were also made of bronze, each four cubits long, four wide, and three high.",
+        "VAT_ES": "El hizo también los soportes de bronce. Cada soporte tenía dos metros de largo, dos de ancho y uno y medio de alto.",
+        "CEI": "Fece dieci basi di bronzo, ciascuna lunga quattro cubiti, larga quattro e alta tre cubiti."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/זֶ֛ה מַעֲשֵׂ֥ה הַ/מְּכוֹנָ֖ה מִסְגְּרֹ֣ת לָ/הֶ֑ם וּ/מִסְגְּרֹ֖ת בֵּ֥ין הַ/שְׁלַבִּֽים׃",
+        "LXX": "τὰς ῥόας τετρακοσίας ἀμφοτέροις τοῖς δικτύοις, δύο στίχοι ῥοῶν τῷ δικτύῳ τῷ ἑνὶ περικαλύπτειν ἀμφότερα τὰ ὄντα τὰ στρεπτὰ τῆς μεχωνὼθ ἐπ’ ἀμφοτέροις τοῖς στύλοις·",
+        "VUL": "Et ipsum opus basium, interrasile erat : et sculpturæ inter juncturas.",
+        "SYN": "И вот устройство подстав: у них стенки, стенки между наугольными пластинками;",
+        "NEO": "Voici comment les bases étaient faites : elles étaient formées de panneaux, et les panneaux s’engageaient entre des châssis ;",
+        "NAB": "When these stands were constructed, panels were set within the framework.",
+        "VAT_ES": "Estaban hechos de la siguiente manera: tenían unos paneles encuadrados en un armazón;",
+        "CEI": "Ecco come erano fatte le basi: si componevano di doghe e di traverse incrociate con le doghe."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/עַֽל הַ/מִּסְגְּר֞וֹת אֲשֶׁ֣ר בֵּ֣ין הַ/שְׁלַבִּ֗ים אֲרָי֤וֹת בָּקָר֙ וּ/כְרוּבִ֔ים וְ/עַל הַ/שְׁלַבִּ֖ים כֵּ֣ן מִ/מָּ֑עַל וּ/מִ/תַּ֨חַת֙ לַ/אֲרָי֣וֹת וְ/לַ/בָּקָ֔ר לֹי֖וֹת מַעֲשֵׂ֥ה מוֹרָֽד׃",
+        "LXX": "καὶ τὰς μεχωνὼθ δέκα, καὶ τοὺς χυτροκαύλους δέκα ἐπὶ τῶν μεχωνώθ·",
+        "VUL": "Et inter coronulas et plectas, leones et boves et cherubim, et in juncturis similiter desuper : et subter leones et boves, quasi lora ex ære dependentia.",
+        "SYN": "на стенках, которые между наугольниками, _изображены_ были львы, волы и херувимы; также и на наугольниках, а выше и ниже львов и волов - развесистые венки;",
+        "NEO": "sur les panneaux qui étaient entre les châssis, il y avait des lions, des taureaux et des chérubins ; et sur les châssis, par en haut, un support, et au-dessous des lions, des taureaux et des chérubins pendaient des guirlandes.",
+        "NAB": "On the panels between the frames there were lions, oxen, and cherubim; and on the frames likewise, above and below the lions and oxen, there were wreaths in relief.",
+        "VAT_ES": "sobre esos paneles había figuras de leones, de toros y de querubines, y lo mismo sobre el armazón. Tanto arriba como abajo de los leones y toros había unos adornos en bajorrelieve.",
+        "CEI": "Sulle doghe che erano fra le traverse c'erano leoni, buoi e cherubini; le stesse figure erano sulle traverse. Sopra e sotto i leoni e i buoi c'erano ghirlande a forma di festoni."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וְ/אַרְבָּעָה֩ אוֹפַנֵּ֨י נְחֹ֜שֶׁת לַ/מְּכוֹנָ֤ה הָֽ/אַחַת֙ וְ/סַרְנֵ֣י נְחֹ֔שֶׁת וְ/אַרְבָּעָ֥ה פַעֲמֹתָ֖י/ו כְּתֵפֹ֣ת לָ/הֶ֑ם מִ/תַּ֤חַת לַ/כִּיֹּר֙ הַ/כְּתֵפֹ֣ת יְצֻק֔וֹת מֵ/עֵ֥בֶר אִ֖ישׁ לֹיֽוֹת׃",
+        "LXX": "καὶ τὴν θάλασσαν μίαν, καὶ τοὺς βόας δώδεκα ὑποκάτω τῆς θαλάσσης·",
+        "VUL": "Et quatuor rotæ per bases singulas, et axes ærei : et per quatuor partes quasi humeruli subter luterem fusiles, contra se invicem respectantes.",
+        "SYN": "у каждой подставы по четыре медных колеса и оси медные. Начетырех углах выступы наподобие плеч, выступы литые внизу, под чашею, подле каждого венка.",
+        "NEO": "Chaque base avait quatre roues d’airain avec des essieux d’airain, et ses quatre pieds avaient des supports ; ces supports fondus étaient au-dessous du bassin et au delà des guirlandes.",
+        "NAB": "Each stand had four bronze wheels and bronze axles.",
+        "VAT_ES": "Cada soporte tenía cuatro ruedas de bronce, con ejes también de bronce, y refuerzos en sus cuatro patas. Estos refuerzos estaban fundidos debajo de los recipientes de agua, sobre el lado opuesto a los bajorrelieves.",
+        "CEI": "Ciascuna base aveva quattro ruote di bronzo con gli assi di bronzo; i suoi quattro piedi avevano sporgenze, sotto il bacino; le sporgenze erano di metallo fuso e situate al di là di ogni ghirlanda."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וּ֠/פִי/הוּ מִ/בֵּ֨ית לַ/כֹּתֶ֤רֶת וָ/מַ֨עְלָ/ה֙ בָּֽ/אַמָּ֔ה וּ/פִ֨י/הָ֙ עָגֹ֣ל מַעֲשֵׂה כֵ֔ן אַמָּ֖ה וַ/חֲצִ֣י הָֽ/אַמָּ֑ה וְ/גַם עַל פִּ֨י/הָ֙ מִקְלָע֔וֹת וּ/מִסְגְּרֹתֵי/הֶ֥ם מְרֻבָּע֖וֹת לֹ֥א עֲגֻלּֽוֹת׃",
+        "LXX": "καὶ τοὺς λέβητας καὶ τὰς θερμάστρεις καὶ τὰς φιάλας καὶ πάντα τὰ σκεύη ἃ ἐποίησεν Χειρὰμ τῷ βασιλεῖ Σαλωμὼν τῷ οἴκῳ Κυρίου· καὶ οἱ στύλοι τεσσεράκοντα καὶ ὀκτὼ τοῦ οἴκου τοῦ βασιλέως καὶ τοῦ οἴκου Κυρίου· πάντα τὰ ἔργα τοῦ βασιλέως ἐποίησεν Χειρὰμ χαλκᾶ ἄρδην.",
+        "VUL": "Os quoque luteris intrinsecus erat in capitis summitate : et quod forinsecus apparebat, unius cubiti erat totum rotundum, pariterque habebat unum cubitum et dimidium : in angulis autem columnarum variæ cælaturæ erant : et media intercolumnia, quadrata non rotunda.",
+        "SYN": "Отверстие от внутреннего венка до верха в один локоть; отверстие его круглое, подобно подножию столбов, в полтора локтя, и при отверстии его изваяния; но боковые стенки четырехугольные, не круглые.",
+        "NEO": "L’ouverture pour recevoir le bassin était à l’intérieur du couronnement de la base, elle était haute d’une coudée ; cette ouverture était ronde, de la forme d’une base de colonne et ayant une coudée et demie de diamètre ; et sur cette ouverture il y avait aussi des sculptures ; les panneaux étaient carrés, et non arrondis.",
+        "NAB": "This was surmounted by a crown one cubit high within which was a rounded opening to provide a receptacle a cubit and a half in depth. There was carved work at the opening, on panels that were angular, not curved.",
+        "VAT_ES": "La abertura para los recipientes estaba dentro de un círculo en forma de corona,, que sobresalía medio metro; la abertura era redonda, hecha en forma de zócalo, y medía setenta y cinco centímetros. También el borde de la abertura estaba adornado con figuras esculpidas. Sus paneles eran cuadrados, no redondos.",
+        "CEI": "L'estremità della base, dalla parte della sporgenza e sopra, era di un cubito; tale estremità era rotonda, fatta in forma di sostegno, alta un cubito e mezzo; anche su tale estremità c'erano sculture. Le traverse erano di forma quadrata, non rotonda."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וְ/אַרְבַּ֣עַת הָ/אֽוֹפַנִּ֗ים לְ/מִ/תַּ֨חַת֙ לַֽ/מִּסְגְּר֔וֹת וִ/יד֥וֹת הָ/אֽוֹפַנִּ֖ים בַּ/מְּכוֹנָ֑ה וְ/קוֹמַת֙ הָ/אוֹפַ֣ן הָ/אֶחָ֔ד אַמָּ֖ה וַ/חֲצִ֥י הָ/אַמָּֽה׃",
+        "LXX": "οὐκ ἦν σταθμὸς τοῦ χαλκοῦ οὗ ἐποίησεν πάντα τὰ ἔργα ταῦτα ἐκ πλήθους σφόδρα· οὐκ ἦν τέρμα τῶν σταθμῶν τοῦ χαλκοῦ.",
+        "VUL": "Quatuor quoque rotæ quæ per quatuor angulos basis erant, cohærebant sibi subter basim : una rota habebat altitudinis cubitum et semis.",
+        "SYN": "Под стенками было четыре колеса, и оси колес в подставах; вышина каждого колеса - полтора локтя.",
+        "NEO": "Les quatre roues étaient au-dessous des panneaux ; et les essieux des roues fixés à la base ; chaque roue avait une coudée et demie de hauteur.",
+        "NAB": "The four wheels were below the paneling, and the axletrees of the wheels and the stand were of one piece. Each wheel was a cubit and a half high.",
+        "VAT_ES": "Las cuatro ruedas estaban debajo de los paneles, y los ejes de las ruedas estaban unidos a los soportes. La altura de cada rueda era de setenta y cinco centímetros.",
+        "CEI": "Le quattro ruote erano sotto le traverse; gli assi delle ruote erano fissati alla base; l'altezza di ogni ruota era di un cubito e mezzo."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וּ/מַֽעֲשֵׂה֙ הָ/א֣וֹפַנִּ֔ים כְּ/מַעֲשֵׂ֖ה אוֹפַ֣ן הַ/מֶּרְכָּבָ֑ה יְדוֹתָ֣/ם וְ/גַבֵּי/הֶ֗ם וְ/חִשֻּׁקֵי/הֶ֛ם וְ/חִשֻּׁרֵי/הֶ֖ם הַ/כֹּ֥ל מוּצָֽק׃",
+        "LXX": "ἐν τῷ περιοίκῳ τοῦ Ἰορδάνου ἐχώνευσεν αὐτὰ ἐν τῷ πάχει τῆς γῆς, ἀνὰ μέσον Σοκχὼθ καὶ ἀνὰ μέσον Σειρά.",
+        "VUL": "Tales autem rotæ erant quales solent in curru fieri : et axes earum, et radii, et canthi, et modioli, omnia fusilia.",
+        "SYN": "Устройство колес такое же, как устройство колес в колеснице; оси их, и ободья их, и спицы их, и ступицы их, все было литое.",
+        "NEO": "Les roues étaient faites comme la roue d’un char ; leurs essieux, leurs jantes, leurs rais et leurs moyeux, tout était fondu.",
+        "NAB": "The wheels were constructed like chariot wheels; their axles, fellies, spokes, and hubs were all cast. The four legs of each stand had cast braces, which were under the basin; they had wreaths on each side.",
+        "VAT_ES": "Las ruedas estaban hechas como una rueda de carro. Sus ejes, sus llantas, sus rayos y sus cubos eran todos de metal fundido.",
+        "CEI": "Le ruote erano lavorate come le ruote di un carro; i loro assi, i loro quarti, i loro raggi e i loro mozzi erano tutti di metallo fuso."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וְ/אַרְבַּ֣ע כְּתֵפ֔וֹת אֶ֚ל אַרְבַּ֣ע פִּנּ֔וֹת הַ/מְּכֹנָ֖ה הָֽ/אֶחָ֑ת מִן הַ/מְּכֹנָ֖ה כְּתֵפֶֽי/הָ׃",
+        "LXX": "καὶ ἔλαβεν ὁ βασιλεὺς Σαλωμὼν τὰ σκεύη ἃ ἐποίησεν ἐν οἴκῳ, τὸ θυσιαστήριον τὸ χρυσοῦν, καὶ τὴν τράπεζαν ἐφ’ ἧς οἱ ἄρτοι τῆς προσφορᾶς χρυσῆν,",
+        "VUL": "Nam et humeruli illi quatuor per singulos angulos basis unius, ex ipsa basi fusiles et conjuncti erant.",
+        "SYN": "Четыре выступа на четырех углах каждой подставы; из подставы _выходили_ выступы ее.",
+        "NEO": "Aux quatre angles de chaque base étaient quatre supports, et ses supports étaient d’une même pièce avec la base.",
+        "NAB": "These four braces, extending to the corners of each stand, were of one piece with the stand.",
+        "VAT_ES": "Había cuatro refuerzos en los cuatro ángulos de cada soporte, formando un mismo cuerpo con él.",
+        "CEI": "Quattro sporgenze erano sui quattro angoli di ciascuna base; la sporgenza e la base erano di un sol pezzo."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וּ/בְ/רֹ֣אשׁ הַ/מְּכוֹנָ֗ה חֲצִ֧י הָ/אַמָּ֛ה קוֹמָ֖ה עָגֹ֣ל סָבִ֑יב וְ/עַ֨ל רֹ֤אשׁ הַ/מְּכֹנָה֙ יְדֹתֶ֔י/הָ וּ/מִסְגְּרֹתֶ֖י/הָ מִמֶּֽ/נָּה׃",
+        "LXX": "καὶ τὰς λυχνίας πέντε ἐξ ἀριστερῶν καὶ πέντε ἐκ δεξιῶν κατὰ πρόσωπον τοῦ δαβεὶρ χρυσᾶς συνκλειομένας, καὶ τὰ λαμπαδεῖα καὶ τοὺς λύχνους καὶ τὰς ἐπαρύστρις χρυσᾶς·",
+        "VUL": "In summitate autem basis erat quædam rotunditas dimidii cubiti, ita fabrefacta ut luter desuper posset imponi, habens cælaturas suas, variasque sculpturas ex semetipsa.",
+        "SYN": "И на верху подставы круглое возвышение на пол-локтя вышины;и на верху подставы рукоятки ее и стенки ее из одной с нею массы.",
+        "NEO": "Au sommet de la base était un cercle haut d’une demi-coudée ; et sur le sommet de la base, ses appuis et ses panneaux étaient d’une même pièce.",
+        "NAB": "On top of the stand there was a raised collar half a cubit high, with supports and panels which were of one piece with the top of the stand.",
+        "VAT_ES": "Arriba del soporte había una pieza circular, de veinticinco centímetros de alto, formando un solo cuerpo con las manijas y paneles del soporte.",
+        "CEI": "Alla cima della base c'era un sostegno rotondo, alto mezzo cubito; alla cima della base c'erano i manici; le traverse e la base erano di un sol pezzo."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/יְפַתַּ֤ח עַל הַ/לֻּחֹת֙ יְדֹתֶ֔י/הָ וְ/עַל֙ ו/מסגרתי/ה מִסְגְּרֹתֶ֔י/הָ כְּרוּבִ֖ים אֲרָי֣וֹת וְ/תִמֹרֹ֑ת כְּ/מַֽעַר אִ֥ישׁ וְ/לֹי֖וֹת סָבִֽיב׃",
+        "LXX": "καὶ τὰ πρόθυρα καὶ οἱ ἧλοι καὶ αἱ φιάλαι καὶ τὰ τρυβλία καὶ αἱ θυίσκαι χρυσαῖ, συνκλειστά· καὶ τὰ θυρώματα τῶν θυρῶν τοῦ οἴκου τοῦ ἐσωτάτου ἁγίου τῶν ἁγίων, καὶ τὰς θύρας τοῦ ναοῦ χρυσᾶς.",
+        "VUL": "Sculpsit quoque in tabulatis illis quæ erant ex ære, et in angulis, cherubim, et leones, et palmas, quasi in similitudinem hominis stantis, ut non cælata, sed apposita per circuitum viderentur.",
+        "SYN": "И изваял он на дощечках ее рукоятки и на стенках ее херувимов, львов и пальмы, сколько где позволяло место, и вокруг развесистые венки.",
+        "NEO": "Sur les plaques des appuis et sur les panneaux, il grava des chérubins, des lions et des palmiers, selon l’espace libre pour chacun, et des guirlandes tout autour.",
+        "NAB": "On the surfaces of the supports and on the panels, wherever there was a clear space, cherubim, lions, and palm trees were carved, as well as wreaths all around.",
+        "VAT_ES": "Sobre las planchas, las manijas y los paneles, Jirám grabó querubines, leones y palmeras, dondequiera había un espacio libre, con bajorrelieves alrededor.",
+        "CEI": "Sulle sue pareti scolpì cherubini, leoni e palme, secondo gli spazi liberi, e ghirlande intorno."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "כָּ/זֹ֣את עָשָׂ֔ה אֵ֖ת עֶ֣שֶׂר הַ/מְּכֹנ֑וֹת מוּצָ֨ק אֶחָ֜ד מִדָּ֥ה אַחַ֛ת קֶ֥צֶב אֶחָ֖ד לְ/כֻלָּֽ/הְנָה׃",
+        "LXX": "καὶ ἀνεπληρώθη τὸ ἔργον ὃ ἐποίησεν Σαλωμὼν οἴκου Κυρίου· καὶ εἰσήνεγκεν Σαλωμὼν τὰ ἅγια Δαυεὶδ τοῦ πατρὸς αὐτοῦ καὶ πάντα τὰ ἅγια Σαλωμών, τὸ ἀργύριον καὶ τὸ χρυσίον ἔδωκεν εἰς τοὺς θησαυροὺς οἴκου Κυρίου.",
+        "VUL": "In hunc modum fecit decem bases, fusura una, et mensura, sculpturaque consimili.",
+        "SYN": "Так сделал он десять подстав: у всех их одно литье, одна мера, один вид.",
+        "NEO": "C’est ainsi qu’il fit les dix bases ; une même fonte, une même dimension, une même forme pour toutes.",
+        "NAB": "This was how the ten stands were made, all of the same casting, the same size, the same shape.",
+        "VAT_ES": "Fue así como él hizo los diez soportes: cada uno con el mismo metal, la misma dimensión y el mismo diseño.",
+        "CEI": "Fuse le dieci basi in un medesimo stampo, identiche nella misura e nella forma."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יַּ֛עַשׂ עֲשָׂרָ֥ה כִיֹּר֖וֹת נְחֹ֑שֶׁת אַרְבָּעִ֨ים בַּ֜ת יָכִ֣יל הַ/כִּיּ֣וֹר הָ/אֶחָ֗ד אַרְבַּ֤ע בָּֽ/אַמָּה֙ הַ/כִּיּ֣וֹר הָ/אֶחָ֔ד כִּיּ֤וֹר אֶחָד֙ עַל הַ/מְּכוֹנָ֣ה הָ/אַחַ֔ת לְ/עֶ֖שֶׂר הַ/מְּכֹנֽוֹת׃",
+        "LXX": "Καὶ τὸν οἶκον ἑαυτῷ ᾠκοδόμησεν Σαλωμὼν τρισκαίδεκα ἔτη.",
+        "VUL": "Fecit quoque decem luteres æneos : quadraginta batos capiebat luter unus, eratque quatuor cubitorum : singulos quoque luteres per singulas, id est, decem bases, posuit.",
+        "SYN": "И сделал десять медных умывальниц: каждая умывальница вмещала сорок батов, каждая умывальница была в четыре локтя, каждая умывальница стояла на одной из десяти подстав.",
+        "NEO": "Il fit dix bassins d’airain ; chaque bassin contenait quarante baths ; chaque bassin avait quatre coudées de diamètre ; chaque bassin reposait sur une base, une des dix bases.",
+        "NAB": "Ten bronze basins were then made, each four cubits in diameter with a capacity of forty measures, one basin for the top of each of the ten stands.",
+        "VAT_ES": "Además, hizo diez recipientes de bronce, con una capacidad de mil ochocientos litros cada uno. Cada recipiente medía dos metros, y había un recipiente sobre cada uno de los diez soportes.",
+        "CEI": "Fuse poi anche dieci bacini di bronzo; ognuno conteneva quaranta bat ed era di quattro cubiti; un bacino per ogni base, per le dieci basi."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּן֙ אֶת הַ/מְּכֹנ֔וֹת חָמֵ֞שׁ עַל כֶּ֤תֶף הַ/בַּ֨יִת֙ מִ/יָּמִ֔ין וְ/חָמֵ֛שׁ עַל כֶּ֥תֶף הַ/בַּ֖יִת מִ/שְּׂמֹאל֑/וֹ וְ/אֶת הַ/יָּ֗ם נָתַ֞ן מִ/כֶּ֨תֶף הַ/בַּ֧יִת הַ/יְמָנִ֛ית קֵ֖דְמָ/ה מִ/מּ֥וּל נֶֽגֶב׃",
+        "LXX": "καὶ ᾠκοδόμησεν τὸν οἶκον δρυμῷ τοῦ Λιβάνου· ἑκατὸν πήχεις μῆκος αὐτοῦ, καὶ πεντήκοντα πήχεις πλάτος αὐτοῦ· καὶ τριῶν στίχων στύλων κεδρίνων, καὶ ὠμίαι κέδριναι τοῖς στύλοις.",
+        "VUL": "Et constituit decem bases, quinque ad dexteram partem templi, et quinque ad sinistram : mare autem posuit ad dexteram partem templi contra orientem ad meridiem.",
+        "SYN": "И расставил подставы - пять на правой стороне храма и пять на левой стороне храма, а море поставил на правой стороне храма, на восточно-южной стороне.",
+        "NEO": "Il disposa ainsi les dix bases : cinq sur le côté droit de la maison, et cinq sur le côté gauche de la maison ; et il plaça la mer au côté droit de la maison, à l’est, vers le sud.",
+        "NAB": "The stands were placed, five on the south side of the temple and five on the north. The sea was placed off to the southeast from the south side of the temple.",
+        "VAT_ES": "Luego colocó los soportes, cinco al lado derecho de la Casa y cinco al lado izquierdo. En cuanto al Mar, lo colocó al lado derecho de la Casa, hacia el sudeste.",
+        "CEI": "Pose cinque delle basi sul lato destro del tempio e cinque su quello sinistro. Pose la vasca sul lato destro del tempio, a sud-est."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ חִיר֔וֹם אֶת הַ֨/כִּיֹּר֔וֹת וְ/אֶת הַ/יָּעִ֖ים וְ/אֶת הַ/מִּזְרָק֑וֹת וַ/יְכַ֣ל חִירָ֗ם לַֽ/עֲשׂוֹת֙ אֶת כָּל הַ/מְּלָאכָ֔ה אֲשֶׁ֥ר עָשָׂ֛ה לַ/מֶּ֥לֶךְ שְׁלֹמֹ֖ה בֵּ֥ית יְהוָֽה׃",
+        "LXX": "καὶ ἐφάτνωσεν τὸν οἶκον ἄνωθεν ἐπὶ τῶν πλευρῶν τῶν στύλων· καὶ ἀριθμὸς τῶν στύλων τεσσεράκοντα καὶ πέντε ὁ στίχος,",
+        "VUL": "Fecit ergo Hiram lebetes, et scutras, et hamulas, et perfecit omne opus regis Salomonis in templo Domini.",
+        "SYN": "И сделал Хирам умывальницы и лопатки и чаши. И кончил Хирам всю работу, которую производил у царя Соломона для храма Господня:",
+        "NEO": "Hiram fit les chaudrons, les pelles et les coupes.",
+        "NAB": "When Hiram made the pots, shovels, and bowls, he therewith completed all his work for King Solomon in the temple of the LORD:",
+        "VAT_ES": "Jirám hizo también las ollas, las palas y los aspersorios. Así terminó todo el trabajo que debía hacer para el rey Salomón en la Casa del Señor:",
+        "CEI": "Chiram preparò inoltre caldaie, palette e vassoi. E terminò tutte le commissioni del re Salomone per il tempio del Signore,"
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "עַמֻּדִ֣ים שְׁנַ֔יִם וְ/גֻלֹּ֧ת הַ/כֹּתָרֹ֛ת אֲשֶׁר עַל רֹ֥אשׁ הָֽ/עַמֻּדִ֖ים שְׁתָּ֑יִם וְ/הַ/שְּׂבָכ֣וֹת שְׁתַּ֔יִם לְ/כַסּ֗וֹת אֶת שְׁתֵּי֙ גֻּלֹּ֣ת הַ/כֹּֽתָרֹ֔ת אֲשֶׁ֖ר עַל רֹ֥אשׁ הָ/עַמּוּדִֽים׃",
+        "LXX": "καὶ μέλαθρα τρία, καὶ χώρα ἐπὶ χώραν τρισσῶς.",
+        "VUL": "Columnas duas, et funiculos capitellorum super capitella columnarum duos : et retiacula duo, ut operirent duos funiculos qui erant super capita columnarum.",
+        "SYN": "два столба и две опояски венцов, которые на верху столбов, и две сетки для покрытия двух опоясок венцов, которые на верху столбов;",
+        "NEO": "les deux colonnes ; les deux bourrelets des chapiteaux qui sont sur le sommet des colonnes ; les deux treillis pour couvrir les deux bourrelets des chapiteaux qui sont sur le sommet des colonnes ;",
+        "NAB": "two columns, two nodes for the capitals on top of the columns, two pieces of network covering the nodes for the capitals on top of the columns,",
+        "VAT_ES": "las dos columnas, las dos esferas de los capiteles que remataban las columnas, las dos redes para cubrir las dos esferas de los capiteles que estaban encima de las columnas;",
+        "CEI": "cioè le due colonne, i globi dei capitelli che erano sopra le colonne, i due reticolati per coprire i due globi dei capitelli che erano sopra le colonne,"
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וְ/אֶת הָ/רִמֹּנִ֛ים אַרְבַּ֥ע מֵא֖וֹת לִ/שְׁתֵּ֣י הַ/שְּׂבָכ֑וֹת שְׁנֵֽי טוּרִ֤ים רִמֹּנִים֙ לַ/שְּׂבָכָ֣ה הָֽ/אֶחָ֔ת לְ/כַסּ֗וֹת אֶת שְׁתֵּי֙ גֻּלֹּ֣ת הַ/כֹּֽתָרֹ֔ת אֲשֶׁ֖ר עַל פְּנֵ֥י הָ/עַמּוּדִֽים׃",
+        "LXX": "καὶ πάντα τὰ θυρώματα καὶ αἱ χῶραι τετράγωνοι μεμελαθρωμέναι, καὶ ἀπὸ τοῦ θυρώματος ἐπὶ θύραν τρισσῶς.",
+        "VUL": "Et malogranata quadringenta in duobus retiaculis : duos versus malogranatorum in retiaculis singulis, ad operiendos funiculos capitellorum qui erant super capita columnarum.",
+        "SYN": "и четыреста гранатовых яблок на двух сетках; два ряда гранатовых яблок для каждой сетки, для покрытия двух опоясок венцов, которые на столбах;",
+        "NEO": "les quatre cents grenades pour les deux treillis, deux rangées de grenades par treillis, pour couvrir les deux bourrelets des chapiteaux qui sont sur les colonnes ;",
+        "NAB": "four hundred pomegranates in double rows on both pieces of network that covered the two nodes of the capitals where they met the columns,",
+        "VAT_ES": "las cuatrocientas granadas para las dos redes, dos hileras de granadas para cada red, a fin de cubrir las dos esferas de los capiteles que estaban encima de las columnas;",
+        "CEI": "le quattrocento melagrane sui due reticolati, due file di melagrane per ciascun reticolato,"
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/מְּכֹנ֖וֹת עָ֑שֶׂר וְ/אֶת הַ/כִּיֹּרֹ֥ת עֲשָׂרָ֖ה עַל הַ/מְּכֹנֽוֹת׃",
+        "LXX": "καὶ τὸ αἰλὰμ τῶν στύλων πεντήκοντα μῆκος καὶ πεντήκοντα ἐν πλάτει ἐζυγωμένα, αἰλὰμ ἐπὶ πρόσωπον αὐτῶν· καὶ στύλοι καὶ πάχος ἐπὶ πρόσωπον αὐτῆς τοῖς αἰλαμμείν.",
+        "VUL": "Et bases decem, et luteres decem super bases.",
+        "SYN": "и десять подстав и десять умывальниц на подставах;",
+        "NEO": "les dix bases, et les dix bassins sur les bases ;",
+        "NAB": "ten stands, ten basins on the stands,",
+        "VAT_ES": "los diez soportes y los diez recipientes sobre los soportes;",
+        "CEI": "le dieci basi e i dieci bacini sulle basi,"
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/יָּ֖ם הָ/אֶחָ֑ד וְ/אֶת הַ/בָּקָ֥ר שְׁנֵים עָשָׂ֖ר תַּ֥חַת הַ/יָּֽם׃",
+        "LXX": "καὶ τὸ αἰλὰμ τῶν θρόνων οὗ κρινεῖ ἐκεῖ, αἰλὰμ τοῦ κριτηρίου.",
+        "VUL": "Et mare unum, et boves duodecim subter mare.",
+        "SYN": "одно море и двенадцать волов под морем;",
+        "NEO": "la mer, et les douze bœufs sous la mer ;",
+        "NAB": "one sea, twelve oxen supporting the sea,",
+        "VAT_ES": "el Mar único y los doce toros que estaban debajo de él;",
+        "CEI": "il bacino e i dodici buoi sotto il bacino,"
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ/סִּיר֨וֹת וְ/אֶת הַ/יָּעִ֜ים וְ/אֶת הַ/מִּזְרָק֗וֹת וְ/אֵת֙ כָּל הַ/כֵּלִ֣ים ה/אהל הָ/אֵ֔לֶּה אֲשֶׁ֨ר עָשָׂ֥ה חִירָ֛ם לַ/מֶּ֥לֶךְ שְׁלֹמֹ֖ה בֵּ֣ית יְהוָ֑ה נְחֹ֖שֶׁת מְמֹרָֽט׃",
+        "LXX": "καὶ ὁ οἶκος αὐτῶν, ἐν οἴκῳ καθήσεται ἐκεῖ, αὐλὴ μία ἐξ ἐλισσομένης τούτοις κατὰ τὸ ἔργον τοῦτο· καὶ οἶκον τῇ θυγατρὶ Φαραὼ ἣν ἔλαβεν Σαλωμὼν κατὰ τὸ αἰλὰμ τοῦτο.",
+        "VUL": "Et lebetes, et scutras, et hamulas, omnia vasa quæ fecit Hiram regi Salomoni in domo Domini, de auricalco erant.",
+        "SYN": "и тазы, и лопатки, и чаши. Все вещи, которые сделал Хирам царю Соломону для храма Господа, _были_ из полированной меди.",
+        "NEO": "les pots, les pelles et les coupes. Tous ces ustensiles qu’Hiram fit pour le roi Salomon dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w** étaient d’airain poli.",
+        "NAB": "pots, shovels, and bowls. All these articles which Hiram made for King Solomon in the temple of the LORD were of burnished bronze.",
+        "VAT_ES": "las ollas, las palas y los aspersorios. Todos esos objetos que hizo Jiram para el rey Salomón, en la Casa del Señor, eran de bronce bruñido.",
+        "CEI": "le caldaie, le palette, i vassoi e tutti quei vasi che Chiram aveva fatti al re Salomone per il tempio del Signore; tutto era di bronzo rifinito."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "בְּ/כִכַּ֤ר הַ/יַּרְדֵּן֙ יְצָקָ֣/ם הַ/מֶּ֔לֶךְ בְּ/מַעֲבֵ֖ה הָ/אֲדָמָ֑ה בֵּ֥ין סֻכּ֖וֹת וּ/בֵ֥ין צָרְתָֽן׃",
+        "LXX": "πάντα ταῦτα ἐκ λίθων τιμίων κεκολαμμένα ἐκ διαστήματος ἔσωθεν καὶ ἐκ τοῦ θεμελίου ἕως τῶν γεισῶν· καὶ ἔξωθεν εἰς τὴν αὐλὴν τὴν μεγάλην",
+        "VUL": "In campestri regione Jordanis fudit ea rex in argillosa terra, inter Sochoth et Sarthan.",
+        "SYN": "Царь выливал их в глинистой земле, в окрестности Иордана, между Сокхофом и Цартаном.",
+        "NEO": "Le roi les fit fondre dans la plaine du Jourdain, dans un sol argileux, entre Sochoth et Sarthan.",
+        "NAB": "The king had them cast in the neighborhood of the Jordan, in the clayey ground between Succoth and Zarethan.",
+        "VAT_ES": "Los fundió en la región del Jordán, sobre el suelo arcilloso, entre Sucot y Sartán.",
+        "CEI": "Il re li fece fondere nella valle del Giordano, in suolo argilloso, fra Succot e Zartan."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "וַ/יַּנַּ֤ח שְׁלֹמֹה֙ אֶת כָּל הַ/כֵּלִ֔ים מֵ/רֹ֖ב מְאֹ֣ד מְאֹ֑ד לֹ֥א נֶחְקַ֖ר מִשְׁקַ֥ל הַ/נְּחֹֽשֶׁת׃",
+        "LXX": "τὴν τεθεμελιωμένην ἐν τιμίοις λίθοις μεγάλοις, λίθοις δεκαπήχεσιν καὶ τοῖς ὀκταπήχεσιν·",
+        "VUL": "Et posuit Salomon omnia vasa : propter multitudinem autem nimiam non erat pondus æris.",
+        "SYN": "И поставил Соломон все сии вещи _на_ _место._ По причине чрезвычайного их множества, вес меди не определен.",
+        "NEO": "Salomon laissa sans les peser tous ces ustensiles, parce qu’ils étaient en très grande quantité ; le poids de l’airain ne fut pas vérifié.",
+        "NAB": "Solomon did not weigh all the articles because they were so numerous; the weight of the bronze, therefore, was not determined.",
+        "VAT_ES": "A causa de su gran cantidad, no se pudo calcular el peso del bronce.",
+        "CEI": "Salomone installò tutti gli arredi in quantità molto grande: non si poteva calcolare il peso del bronzo."
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ שְׁלֹמֹ֔ה אֵ֚ת כָּל הַ/כֵּלִ֔ים אֲשֶׁ֖ר בֵּ֣ית יְהוָ֑ה אֵ֚ת מִזְבַּ֣ח הַ/זָּהָ֔ב וְ/אֶת הַ/שֻּׁלְחָ֗ן אֲשֶׁ֥ר עָלָ֛י/ו לֶ֥חֶם הַ/פָּנִ֖ים זָהָֽב׃",
+        "LXX": "καὶ ἐπάνωθεν τιμίοις κατὰ τὸ μέτρον ἀπελεκήτων καὶ κέδροις.",
+        "VUL": "Fecitque Salomon omnia vasa in domo Domini : altare aureum, et mensam super quam ponerentur panes propositionis, auream :",
+        "SYN": "И сделал Соломон все вещи, которые в храме Господа: золотой жертвенник и золотой стол, на котором хлебы предложения;",
+        "NEO": "Salomon fit encore tous les autres ustensiles qui étaient dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w** : l’autel d’or ; la table d’or, sur laquelle on mettait les pains de proposition ;",
+        "NAB": "Solomon had all the articles made for the interior of the temple of the LORD: the golden altar; the golden table on which the showbread lay;",
+        "VAT_ES": "Salomón mandó hacer asimismo todos los objetos que estaban en la Casa del Señor: el altar de oro y la mesa sobre la que se ponía el pan de la ofrenda, hecha también de oro;",
+        "CEI": "Salomone fece anche tutti gli arredi del tempio del Signore, l'altare d'oro, le tavole d'oro su cui si ponevano i pani dell'offerta,"
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "וְ/אֶת הַ֠/מְּנֹרוֹת חָמֵ֨שׁ מִ/יָּמִ֜ין וְ/חָמֵ֧שׁ מִ/שְּׂמֹ֛אול לִ/פְנֵ֥י הַ/דְּבִ֖יר זָהָ֣ב סָג֑וּר וְ/הַ/פֶּ֧רַח וְ/הַ/נֵּרֹ֛ת וְ/הַ/מֶּלְקַחַ֖יִם זָהָֽב׃",
+        "LXX": "τῆς αὐλῆς τῆς μεγάλης κύκλοι τρεῖς στίχοι ἀπελεκήτων καὶ στίχος κεκολλημένης κέδρου.",
+        "VUL": "et candelabra aurea, quinque ad dexteram, et quinque ad sinistram contra oraculum, ex auro puro : et quasi lilii flores, et lucernas desuper aureas : et forcipes aureos,",
+        "SYN": "и светильники - пять по правую сторону и пять по левую сторону, пред задним отделением храма, из чистого золота, и цветы, и лампадки, и щипцы из золота;",
+        "NEO": "les chandeliers d’or pur, cinq à droite et cinq à gauche, devant l’oracle, avec les fleurs, les lampes et les mouchettes d’or ;",
+        "NAB": "the lampstands of pure gold, five to the right and five to the left before the sanctuary, with their flowers, lamps, and tongs of gold;",
+        "VAT_ES": "los candelabros, cinco a la derecha y cinco a la izquierda, delante del lugar santísimo, también de oro fino, con sus cálices, sus lámparas y sus pinzas de oro;",
+        "CEI": "i cinque candelabri a destra e i cinque a sinistra di fronte alla cella d'oro purissimo, i fiori, le lampade, gli smoccolatoi d'oro,"
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "WLC": "וְ֠/הַ/סִּפּוֹת וְ/הַֽ/מְזַמְּר֧וֹת וְ/הַ/מִּזְרָק֛וֹת וְ/הַ/כַּפּ֥וֹת וְ/הַ/מַּחְתּ֖וֹת זָהָ֣ב סָג֑וּר וְ/הַ/פֹּת֡וֹת לְ/דַלְתוֹת֩ הַ/בַּ֨יִת הַ/פְּנִימִ֜י לְ/קֹ֣דֶשׁ הַ/קֳּדָשִׁ֗ים לְ/דַלְתֵ֥י הַ/בַּ֛יִת לַ/הֵיכָ֖ל זָהָֽב׃",
+        "LXX": "καὶ συνετέλεσεν Σαλωμὼν ὅλον τὸν οἶκον αὐτοῦ.",
+        "VUL": "et hydrias, et fuscinulas, et phialas, et mortariola, et thuribula, de auro purissimo : et cardines ostiorum domus interioris Sancti sanctorum, et ostiorum domus templi, ex auro erant.",
+        "SYN": "и блюда, и ножи, и чаши, и лотки, и кадильницы из чистого золота, и петли у дверей внутреннего храма во Святом Святых и у дверей в храме из золота же.",
+        "NEO": "les bassins, les couteaux, les coupes, les tasses et les encensoirs d’or pur, ainsi que les gonds d’or pour les portes de la maison intérieure, savoir du Saint des saints, et pour les portes de la maison, savoir du Saint.",
+        "NAB": "basins, snuffers, bowls, cups, and fire pans of pure gold; and hinges of gold for the doors of the inner room, or holy of holies, and for the doors of the outer room, the nave.",
+        "VAT_ES": "las navetas, los cuchillos, los aspersorios, las tazas y los incensarios de oro fino; los goznes de oro para las puertas del recinto interior –el Santo de los Santos– y para las puertas de la nave central.",
+        "CEI": "le coppe, i coltelli, gli aspersori, i mortai e i bracieri d'oro purissimo, i cardini per le porte del tempio interno, cioè per il Santo dei santi, e i battenti d'oro per la navata."
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "WLC": "וַ/תִּשְׁלַם֙ כָּל הַ/מְּלָאכָ֔ה אֲשֶׁ֥ר עָשָׂ֛ה הַ/מֶּ֥לֶךְ שְׁלֹמֹ֖ה בֵּ֣ית יְהוָ֑ה וַ/יָּבֵ֨א שְׁלֹמֹ֜ה אֶת קָדְשֵׁ֣י דָּוִ֣ד אָבִ֗י/ו אֶת הַ/כֶּ֤סֶף וְ/אֶת הַ/זָּהָב֙ וְ/אֶת הַ/כֵּלִ֔ים נָתַ֕ן בְּ/אֹצְר֖וֹת בֵּ֥ית יְהוָֽה׃",
+        "VUL": "Et perfecit omne opus quod faciebat Salomon in domo Domini, et intulit quæ sanctificaverat David pater suus, argentum, et aurum, et vasa, reposuitque in thesauris domus Domini.",
+        "SYN": "Так совершена вся работа, которую производил царь Соломон для храма Господа. И принес Соломон посвященное Давидом, отцом его; серебро и золото и вещи отдал в сокровищницы храма Господня.",
+        "NEO": "Ainsi fut achevé tout l’ouvrage que le roi Salomon fit dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w** ; et Salomon apporta ce que David, son père, avait consacré, l’argent, l’or et les vases, et il les déversa dans les trésors de la maison de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "When all the work undertaken by King Solomon in the temple of the LORD was completed, he brought in the dedicated offerings of his father David, putting the silver, gold, and other articles in the treasuries of the temple of the LORD.",
+        "VAT_ES": "Así fue terminado todo el trabajo que hizo el rey Salomón en la Casa del Señor. Salomón llevó todas las ofrendas que había consagrado su padre David: la plata, el oro y los demás utensilios, y los depósito en los tesoros de la Casa del Señor.",
+        "CEI": "Fu così terminato tutto il lavoro che il re Salomone aveva fatto per il tempio. Salomone presentò le offerte fatte da Davide suo padre, cioè l'argento, l'oro e i vari oggetti; le depositò nei tesori del tempio."
+      }
+    }
+  }
+}

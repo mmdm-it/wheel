@@ -1,0 +1,464 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOB_029",
+  "book_key": "IOB",
+  "sequence": 29,
+  "chapter_in": {
+    "MT": 29,
+    "VUL": 29,
+    "LXX": 29
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣סֶף אִ֭יּוֹב שְׂאֵ֥ת מְשָׁל֗/וֹ וַ/יֹּאמַֽר׃",
+        "LXX": "Ἔτι δὲ προσθεὶς Ἰὼβ εἶπεν τῷ προοιμίῳ",
+        "VUL": "Addidit quoque Job, assumens parabolam suam, et dixit :",
+        "SYN": "И продолжал Иов возвышенную речь свою и сказал:",
+        "NEO": "Job reprit encore son discours et dit :",
+        "NAB": "Job took up his theme anew and said;",
+        "VAT_ES": "Hay un sitio de donde se extrae la plata y un lugar donde se refina el oro;",
+        "CEI": "Giobbe continuò a pronunziare le sue sentenze e disse:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "מִֽי יִתְּנֵ֥/נִי כְ/יַרְחֵי קֶ֑דֶם כִּ֝/ימֵ֗י אֱל֣וֹהַּ יִשְׁמְרֵֽ/נִי׃",
+        "LXX": "Τίς ἄν με θείη κατὰ μῆνα ἔμπροσθεν ἡμερῶν ὧν με ὁ θεὸς ἐφύλαξεν;",
+        "VUL": "[Quis mihi tribuat ut sim juxta menses pristinos,/ secundum dies quibus Deus custodiebat me ?/",
+        "SYN": "о, если бы я был, как в прежние месяцы, как в те дни, когда Бог хранил меня,",
+        "NEO": "Oh ! Qui me rendra les mois d’autrefois, les jours où Dieu veillait à ma garde ;",
+        "NAB": "Oh, that I were as in the months past! as in the days when God watched over me,",
+        "VAT_ES": "el hierro se saca del polvo y la piedra fundida da el cobre.",
+        "CEI": "Oh, potessi tornare com'ero ai mesi di un tempo, ai giorni in cui Dio mi proteggeva,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "בְּ/הִלּ֣/וֹ נֵ֭ר/וֹ עֲלֵ֣י רֹאשִׁ֑/י לְ֝/אוֹר/וֹ אֵ֣לֶךְ חֹֽשֶׁךְ׃",
+        "LXX": "ὡς ὅτε ηὔγει ὁ λύχνος αὐτοῦ ὑπὲρ κεφαλῆς μου, ὅτε τῷ φωτὶ αὐτοῦ ἐπορευόμην ἐν σκότει·",
+        "VUL": "Quando splendebat lucerna ejus super caput meum,/ et ad lumen ejus ambulabam in tenebris :/",
+        "SYN": "когда светильник Его светил над головою моею, и я при свете Его ходил среди тьмы;",
+        "NEO": "quand sa lampe brillait sur ma tête, et que sa lumière me guidait dans les ténèbres !",
+        "NAB": "While he kept his lamp shining above my head, and by his light I walked through darkness;",
+        "VAT_ES": "El hombre disipa las tinieblas y explora hasta el límite más extremo la roca lóbrega y sombría.",
+        "CEI": "quando brillava la sua lucerna sopra il mio capo e alla sua luce camminavo in mezzo alle tenebre;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כַּ/אֲשֶׁ֣ר הָ֭יִיתִי בִּ/ימֵ֣י חָרְפִּ֑/י בְּ/ס֥וֹד אֱ֝ל֗וֹהַּ עֲלֵ֣י אָהֳלִֽ/י׃",
+        "LXX": "ὅτε ἤμην ἐπιβρίθων ὁδούς, ὅτε ὁ θεὸς ἐπισκοπὴν ἐποιεῖτο τοῦ οἴκου μου·",
+        "VUL": "sicut fui in diebus adolescentiæ meæ,/ quando secreto Deus erat in tabernaculo meo :/",
+        "SYN": "как был я во дни молодости моей, когда милость Божия _была_ над шатром моим,",
+        "NEO": "Tel que j’étais aux jours de mon âge mûr, quand Dieu me visitait familièrement dans ma tente,",
+        "NAB": "As I was in my flourishing days, when God sheltered my tent;",
+        "VAT_ES": "Gente extranjera perfora galerías ignoradas por el pie del caminante; allí, lejos de los mortales, oscilan suspendidos en el vacío.",
+        "CEI": "com'ero ai giorni del mio autunno, quando Dio proteggeva la mia tenda,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בְּ/ע֣וֹד שַׁ֭דַּי עִמָּדִ֑/י סְבִ֖יבוֹתַ֣/י נְעָרָֽ/י׃",
+        "LXX": "ὅτε ἤμην ὑλώδης λίαν, κύκλῳ δέ μου οἱ παῖδες·",
+        "VUL": "quando erat Omnipotens mecum,/ et in circuitu meo pueri mei :/",
+        "SYN": "когда еще Вседержитель _был_ со мною, и дети мои вокруг меня,",
+        "NEO": "quand le Tout-Puissant était encore avec moi, et que mes fils m’entouraient ;",
+        "NAB": "When the Almighty was yet with me, and my children were round about me;",
+        "VAT_ES": "La tierra, de donde sale el alimento, se transforma en su interior como por el fuego.",
+        "CEI": "quando l'Onnipotente era ancora con me e i giovani mi stavano attorno;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בִּ/רְחֹ֣ץ הֲלִיכַ֣/י בְּ/חֵמָ֑ה וְ/צ֥וּר יָצ֥וּק עִ֝מָּדִ֗/י פַּלְגֵי שָֽׁמֶן׃",
+        "LXX": "ὅτε ἐχέοντο αἱ ὁδοί μου βουτύρῳ, τὰ δὲ ὄρη μου ἐχέοντο γάλακτι·",
+        "VUL": "quando lavabam pedes meos butyro,/ et petra fundebat mihi rivos olei :/",
+        "SYN": "когда пути мои обливались молоком, и скала источала для меня ручьи елея!",
+        "NEO": "quand je lavais mes pieds dans le lait, et que le rocher me versait des flots d’huile !",
+        "NAB": "When my footsteps were bathed in milk, and the rock flowed with streams of oil;",
+        "VAT_ES": "Sus piedras son el lugar del zafiro y contienen polvo de oro.",
+        "CEI": "quando mi lavavo in piedi nel latte e la roccia mi versava ruscelli d'olio!"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "בְּ/צֵ֣אתִ/י שַׁ֣עַר עֲלֵי קָ֑רֶת בָּ֝/רְח֗וֹב אָכִ֥ין מוֹשָׁבִֽ/י׃",
+        "LXX": "ὅτε ἐξεπορευόμην ὄρθριος ἐν πόλει, ἐν δὲ πλατείαις ἐτίθετό μου ὁ δίφρος.",
+        "VUL": "quando procedebam ad portam civitatis,/ et in platea parabant cathedram mihi./",
+        "SYN": "когда я выходил к воротам города и на площади ставил седалище свое, --",
+        "NEO": "Lorsque je sortais pour me rendre à la porte de la ville, et que j’établissais mon siège sur la place publique,",
+        "NAB": "When I went forth to the gate of the city and set up my seat in the square -",
+        "VAT_ES": "El ave de rapiña no conoce ese camino y el ojo del buitre nunca lo vio.",
+        "CEI": "Quando uscivo verso la porta della città e sulla piazza ponevo il mio seggio:"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "רָא֣וּ/נִי נְעָרִ֣ים וְ/נֶחְבָּ֑אוּ וִֽ֝/ישִׁישִׁים קָ֣מוּ עָמָֽדוּ׃",
+        "LXX": "ἰδόντες με νεανίσκοι ἐκρύβησαν, πρεσβῦται δὲ πάντες ἔστησαν·",
+        "VUL": "Videbant me juvenes, et abscondebantur :/ et senes assurgentes stabant./",
+        "SYN": "юноши, увидев меня, прятались, а старцы вставали и стояли;",
+        "NEO": "en me voyant, les jeunes gens se cachaient, les vieillards se levaient et se tenaient debout.",
+        "NAB": "Then the young men saw me and withdrew, while the elders rose up and stood;",
+        "VAT_ES": "No lo pisaron los animales feroces ni el león anduvo por él.",
+        "CEI": "vedendomi, i giovani si ritiravano e i vecchi si alzavano in piedi;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "שָׂ֭רִים עָצְר֣וּ בְ/מִלִּ֑ים וְ֝/כַ֗ף יָשִׂ֥ימוּ לְ/פִי/הֶֽם׃",
+        "LXX": "ἁδροὶ δὲ ἐπαύσαντο λαλοῦντες, δάκτυλον ἐπιθέντες ἐπὶ στόματι.",
+        "VUL": "Principes cessabant loqui,/ et digitum superponebant ori suo./",
+        "SYN": "князья удерживались от речи и персты полагали на уста свои;",
+        "NEO": "Les princes retenaient leurs paroles, et mettaient leur main sur la bouche.",
+        "NAB": "The chief men refrained from speaking and covered their mouths with their hands;",
+        "VAT_ES": "El hombre extiende su mano al pedernal y conmueve las montañas hasta su raíz.",
+        "CEI": "i notabili sospendevano i discorsi e si mettevan la mano sulla bocca;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "קוֹל נְגִידִ֥ים נֶחְבָּ֑אוּ וּ֝/לְשׁוֹנָ֗/ם לְ/חִכָּ֥/ם דָּבֵֽקָה׃",
+        "LXX": "οἱ δὲ ἀκούσαντες ἐμακάρισάν με, καὶ γλῶσσα αὐτῶν τῷ λάρυγγι αὐτῶν ἐκολλήθη·",
+        "VUL": "Vocem suam cohibebant duces,/ et lingua eorum gutturi suo adhærebat./",
+        "SYN": "голос знатных умолкал, и язык их прилипал к гортани их.",
+        "NEO": "La voix des chefs restait muette, leur langue s’attachait à leur palais.",
+        "NAB": "The voice of the princes was silenced, and their tongues stuck to the roofs of their mouths.",
+        "VAT_ES": "Abre túneles en la roca y ve toda clase de piedras preciosas.",
+        "CEI": "la voce dei capi si smorzava e la loro lingua restava fissa al palato;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּ֤י אֹ֣זֶן שָׁ֭מְעָה וַֽ/תְּאַשְּׁרֵ֑/נִי וְ/עַ֥יִן רָ֝אֲתָ֗ה וַ/תְּעִידֵֽ/נִי׃",
+        "LXX": "ὅτι οὖς ἤκουσεν καὶ ἐμακάρισέν με, ὀφθαλμὸς δὲ ἰδών με ἐξέκλινεν.",
+        "VUL": "Auris audiens beatificabat me,/ et oculus videns testimonium reddebat mihi :/",
+        "SYN": "Ухо, слышавшее меня, ублажало меня; око видевшее восхваляло меня,",
+        "NEO": "L’oreille qui m’entendait me proclamait heureux, l’œil qui me voyait me rendait témoignage.",
+        "NAB": "Whoever heard of me blessed me; those who saw me commended me.",
+        "VAT_ES": "Explora las fuentes de los ríos y saca a luz tesoros escondidos.",
+        "CEI": "con gli orecchi ascoltavano e mi dicevano felice, con gli occhi vedevano e mi rendevano testimonianza,"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כִּֽי אֲ֭מַלֵּט עָנִ֣י מְשַׁוֵּ֑עַ וְ֝/יָת֗וֹם וְֽ/לֹא עֹזֵ֥ר לֽ/וֹ׃",
+        "LXX": "διέσωσα γὰρ πτωχὸν ἐκ χειρὸς δυνάστου, καὶ ὀρφανῷ ᾧ οὐκ ἦν βοηθὸς ἐβοήθησα·",
+        "VUL": "eo quod liberassem pauperem vociferantem,/ et pupillum cui non esset adjutor./",
+        "SYN": "потому что я спасал страдальца вопиющего и сироту беспомощного.",
+        "NEO": "Car je sauvais le pauvre qui implorait du secours, et l’orphelin dénué de tout appui.",
+        "NAB": "For I rescued the poor who cried out for help, the orphans, and the unassisted;",
+        "VAT_ES": "Pero la Sabiduría, &iquest;de dónde sale? &iquest;Y cuál es el lugar de la Inteligencia?",
+        "CEI": "perché soccorrevo il povero che chiedeva aiuto, l'orfano che ne era privo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "בִּרְכַּ֣ת אֹ֭בֵד עָלַ֣/י תָּבֹ֑א וְ/לֵ֖ב אַלְמָנָ֣ה אַרְנִֽן׃",
+        "LXX": "εὐλογία ἀπολλυμένου ἐπ’ ἐμὲ ἔλθοι, στόμα δὲ χήρας με εὐλόγησεν.",
+        "VUL": "Benedictio perituri super me veniebat,/ et cor viduæ consolatus sum./",
+        "SYN": "Благословение погибавшего приходило на меня, и сердцу вдовы доставлял я радость.",
+        "NEO": "La bénédiction de celui qui allait périr venait sur moi, je remplissais de joie le cœur de la veuve.",
+        "NAB": "The blessing of those in extremity came upon me, and the heart of the widow I made joyful.",
+        "VAT_ES": "El hombre no conoce su camino ni se la encuentra en la tierra de los vivientes.",
+        "CEI": "La benedizione del morente scendeva su di me e al cuore della vedova infondevo la gioia."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "צֶ֣דֶק לָ֭בַשְׁתִּי וַ/יִּלְבָּשֵׁ֑/נִי כִּֽ/מְעִ֥יל וְ֝/צָנִ֗יף מִשְׁפָּטִֽ/י׃",
+        "LXX": "δικαιοσύνην δὲ ἐνδεδύκειν, ἠμφιασάμην δὲ κρίμα ἴσα διπλοίδι.",
+        "VUL": "Justitia indutus sum,/ et vestivi me, sicut vestimento et diademate, judicio meo./",
+        "SYN": "Я облекался в правду, и суд мой одевал меня, как мантия и увясло.",
+        "NEO": "Je me revêtais de la justice comme d’un vêtement, mon équité était mon manteau et mon turban.",
+        "NAB": "I wore my honesty like a garment; justice was my robe and my turban.",
+        "VAT_ES": "El Abismo dice: «No está en mí», y el Mar: «No está conmigo».",
+        "CEI": "Mi ero rivestito di giustizia come di un vestimento; come mantello e turbante era la mia equità."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "עֵינַ֣יִם הָ֭יִיתִי לַֽ/עִוֵּ֑ר וְ/רַגְלַ֖יִם לַ/פִּסֵּ֣חַ אָֽנִי׃",
+        "LXX": "ὀφθαλμὸς ἤμην τυφλῶν, ποὺς δὲ χωλῶν.",
+        "VUL": "Oculus fui cæco, et pes claudo./",
+        "SYN": "Я был глазами слепому и ногами хромому;",
+        "NEO": "J’étais l’œil de l’aveugle, et le pied du boiteux.",
+        "NAB": "I was eyes to the blind, and feet to the lame was I;",
+        "VAT_ES": "No se puede dar oro fino a cambio de ella ni se la compra a precio de plata.",
+        "CEI": "Io ero gli occhi per il cieco, ero i piedi per lo zoppo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אָ֣ב אָ֭נֹכִֽי לָֽ/אֶבְיוֹנִ֑ים וְ/רִ֖ב לֹא יָדַ֣עְתִּי אֶחְקְרֵֽ/הוּ׃",
+        "LXX": "ἐγὼ ἤμην πατὴρ ἀδυνάτων, δίκην δὲ ἣν οὐκ ᾔδειν ἐξιχνίασα·",
+        "VUL": "Pater eram pauperum,/ et causam quam nesciebam diligentissime investigabam./",
+        "SYN": "отцом был я для нищих и тяжбу, которой я не знал, разбирал внимательно.",
+        "NEO": "J’étais le père des pauvres, j’examinais avec soin la cause de l’inconnu.",
+        "NAB": "I was a father to the needy; the rights of the stranger I studied,",
+        "VAT_ES": "No se la evalúa con oro de Ofir ni con ónix precioso o zafiro.",
+        "CEI": "Padre io ero per i poveri ed esaminavo la causa dello sconosciuto;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וָֽ֭/אֲשַׁבְּרָ/ה מְתַלְּע֣וֹת עַוָּ֑ל וּ֝/מִ/שִּׁנָּ֗י/ו אַשְׁלִ֥יךְ טָֽרֶף׃",
+        "LXX": "συνέτριψα δὲ μύλας ἀδίκων· ἐκ μέσου τῶν ὀδόντων αὐτῶν ἅρπαγμα ἐξήρπασα.",
+        "VUL": "Conterebam molas iniqui,/ et de dentibus illius auferebam prædam./",
+        "SYN": "Сокрушал я беззаконному челюсти и из зубов его исторгал похищенное.",
+        "NEO": "Je brisais la mâchoire de l’injuste, et j’arrachais sa proie d’entre les dents.",
+        "NAB": "And I broke the jaws of the wicked man; from his teeth I forced the prey.",
+        "VAT_ES": "No se le igualan ni el oro ni el cristal, ni se la puede cambiar por vasos de oro.",
+        "CEI": "rompevo la mascella al perverso e dai suoi denti strappavo la preda."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וָ֭/אֹמַר עִם קִנִּ֣/י אֶגְוָ֑ע וְ֝/כַ/ח֗וֹל אַרְבֶּ֥ה יָמִֽים׃",
+        "LXX": "εἶπα δέ Ἡ ἡλικία μου γηράσει· ὥσπερ στέλεχος φοίνικος, πολὺν χρόνον βιώσω·",
+        "VUL": "Dicebamque : In nidulo meo moriar,/ et sicut palma multiplicabo dies./",
+        "SYN": "И говорил я: в гнезде моем скончаюсь, и дни _мои_ будут многи, как песок;",
+        "NEO": "Je disais : « Je mourrai dans mon nid, j’aurai des jours nombreux comme le sable.",
+        "NAB": "Then I said: \"In my own nest I shall grow old; I shall multiply years like the phoenix.",
+        "VAT_ES": "Los corales y el cuarzo, &iexcl;mejor ni nombrarlos!, y adquirir la Sabiduría vale más que las perlas.",
+        "CEI": "Pensavo: \"Spirerò nel mio nido e moltiplicherò come sabbia i miei giorni\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "שָׁרְשִׁ֣/י פָת֣וּחַ אֱלֵי מָ֑יִם וְ֝/טַ֗ל יָלִ֥ין בִּ/קְצִירִֽ/י׃",
+        "LXX": "ἡ ῥίζα διήνοικται ἐπὶ ὕδατος, καὶ δρόσος αὐλισθήσεται ἐν τῷ θερισμῷ μου·",
+        "VUL": "Radix mea aperta est secus aquas,/ et ros morabitur in messione mea./",
+        "SYN": "корень мой открыт для воды, и роса ночует на ветвях моих;",
+        "NEO": "Mes racines s’étendent vers les eaux, la rosée passe la nuit dans mon feuillage.",
+        "NAB": "My root is spread out to the waters; the dew rests by night on my branches.",
+        "VAT_ES": "El topacio de Cus no se le iguala, ni se la puede evaluar con oro fino.",
+        "CEI": "La mia radice avrà adito alle acque e la rugiada cadrà di notte sul mio ramo."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "כְּ֭בוֹדִ/י חָדָ֣שׁ עִמָּדִ֑/י וְ֝/קַשְׁתִּ֗/י בְּ/יָדִ֥/י תַחֲלִֽיף׃",
+        "LXX": "ἡ δόξα μου καινὴ μετ’ ἐμοῦ, καὶ τὸ τόξον μου ἐν χειρὶ αὐτοῦ πορεύεται.",
+        "VUL": "Gloria mea semper innovabitur,/ et arcus meus in manu mea instaurabitur./",
+        "SYN": "слава моя не стареет, лук мой крепок в руке моей.",
+        "NEO": "Ma gloire reverdira sans cesse, et mon arc reprendra sa vigueur dans ma main. »",
+        "VAT_ES": "La Sabiduría, entonces, &iquest;de dónde viene? &iquest;Y cuál es el lugar de la Inteligencia?",
+        "CEI": "La mia gloria sarà sempre nuova e il mio arco si rinforzerà nella mia mano."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "לִֽ/י שָׁמְע֥וּ וְ/יִחֵ֑לּוּ וְ֝/יִדְּמ֗וּ לְמ֣וֹ עֲצָתִֽ/י׃",
+        "LXX": "ἐμοῦ ἀκούσαντες προσέσχον, ἐσιώπησαν δὲ ἐπὶ τῇ ἐμῇ βουλῇ·",
+        "VUL": "Qui me audiebant, expectabant sententiam,/ et intenti tacebant ad consilium meum./",
+        "SYN": "Внимали мне и ожидали, и безмолвствовали при совете моем.",
+        "NEO": "On m’écoutait et l’on attendait, on recueillait en silence mon avis.",
+        "NAB": "For me they listened and waited; they were silent for my counsel.",
+        "VAT_ES": "Ella se oculta a los ojos de todos los vivientes y se esconde de los pájaros del cielo.",
+        "CEI": "Mi ascoltavano in attesa fiduciosa e tacevano per udire il mio consiglio."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "אַחֲרֵ֣י דְ֭בָרִ/י לֹ֣א יִשְׁנ֑וּ וְ֝/עָלֵ֗י/מוֹ תִּטֹּ֥ף מִלָּתִֽ/י׃",
+        "LXX": "ἐπὶ τῷ ἐμῷ ῥήματι οὐ προσέθεντο, περιχαρεῖς δὲ ἐγίνοντο ὁπόταν αὐτοῖς ἐλάλουν·",
+        "VUL": "Verbis meis addere nihil audebant,/ et super illos stillabat eloquium meum./",
+        "SYN": "После слов моих уже не рассуждали; речь моя капала на них.",
+        "NEO": "Après que j’avais parlé, personne n’ajoutait rien ; ma parole coulait sur eux comme la rosée.",
+        "NAB": "Once I spoke, they said no more, but received my pronouncement drop by drop.",
+        "VAT_ES": "La Perdición y la Muerte dicen: «Sólo su fama llegó a nuestros oídos».",
+        "CEI": "Dopo le mie parole non replicavano e su di loro scendevano goccia a goccia i miei detti."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/יִֽחֲל֣וּ כַ/מָּטָ֣ר לִ֑/י וּ֝/פִי/הֶ֗ם פָּעֲר֥וּ לְ/מַלְקֽוֹשׁ׃",
+        "LXX": "ὥσπερ γῆ διψῶσα προσδεχομένη τὸν ὑετόν, οὕτως οὗτοι τὴν ἐμὴν λαλιάν.",
+        "VUL": "Expectabant me sicut pluviam,/ et os suum aperiebant quasi ad imbrem serotinum./",
+        "SYN": "Ждали меня, как дождя, и, _как_ дождю позднему, открывали уста свои.",
+        "NEO": "Ils m’attendaient comme on attend la pluie ; ils ouvraient la bouche comme aux ondées du printemps.",
+        "NAB": "They waited for me as for the rain; they drank in my words like the spring rains.",
+        "VAT_ES": "Dios es el que discierne sus caminos y sólo él sabe dónde está,",
+        "CEI": "Mi attendevano come si attende la pioggia e aprivano la bocca come ad acqua primaverile."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "אֶשְׂחַ֣ק אֲ֭לֵ/הֶם לֹ֣א יַאֲמִ֑ינוּ וְ/א֥וֹר פָּ֝נַ֗/י לֹ֣א יַפִּילֽוּ/ן׃",
+        "LXX": "ἐὰν γελάσω πρὸς αὐτούς, οὐ μὴ πιστεύσωσιν· καὶ φῶς τοῦ προσώπου μου οὐκ ἀπέπιπτεν.",
+        "VUL": "Siquando ridebam ad eos, non credebant :/ et lux vultus mei non cadebat in terram./",
+        "SYN": "Бывало, улыбнусь им -- они не верят; и света лица моего они не помрачали.",
+        "NEO": "Si je leur souriais, ils ne pouvaient le croire ; ils recueillaient avidement ce signe de faveur.",
+        "NAB": "When I smiled on them they were reassured;",
+        "VAT_ES": "porque él mira hasta los confines de la tierra y ve todo lo que hay bajo el cielo.",
+        "CEI": "Se a loro sorridevo, non osavano crederlo, né turbavano la serenità del mio volto."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "אֶֽבֲחַ֣ר דַּרְכָּ/ם֮ וְ/אֵשֵׁ֪ב רֹ֥אשׁ וְ֭/אֶשְׁכּוֹן כְּ/מֶ֣לֶךְ בַּ/גְּד֑וּד כַּ/אֲשֶׁ֖ר אֲבֵלִ֣ים יְנַחֵֽם׃",
+        "LXX": "ἐξελεξάμην ὁδὸν αὐτῶν καὶ ἐκάθισα ἄρχων, καὶ κατεσκήνουν ὡσεὶ βασιλεὺς ἐν μονοζώνοις, ὃν τρόπον παθεινοὺς παρακαλῶν.",
+        "VUL": "Si voluissem ire ad eos, sedebam primus :/ cumque sederem quasi rex, circumstante exercitu,/ eram tamen mrentium consolator.]",
+        "SYN": "Я назначал пути им и сидел во главе и жил как царь в кругу воинов, как утешитель плачущих.",
+        "NEO": "Quand j’allais vers eux, j’avais la première place, je siégeais comme un roi entouré de sa troupe, comme un consolateur au milieu des affligés.",
+        "NAB": "mourners took comfort from my cheerful glance. I chose out their way and presided; I took a king's place in the armed forces.",
+        "VAT_ES": "Cuando él daba consistencia al viento y fijaba las medidas de las aguas;",
+        "CEI": "Indicavo loro la via da seguire e sedevo come capo, e vi rimanevo come un re fra i soldati o come un consolatore d'afflitti."
+      }
+    }
+  }
+}

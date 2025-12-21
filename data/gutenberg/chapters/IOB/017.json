@@ -1,0 +1,303 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOB_017",
+  "book_key": "IOB",
+  "sequence": 17,
+  "chapter_in": {
+    "MT": 17,
+    "VUL": 17,
+    "LXX": 17
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "רוּחִ֣/י חֻ֭בָּלָה יָמַ֥/י נִזְעָ֗כוּ קְבָרִ֥ים לִֽ/י׃",
+        "LXX": "ὀλέκομαι πνεύματι φερόμενος, δέομαι δὲ ταφῆς καὶ οὐ τυγχάνω.",
+        "VUL": "[Spiritus meus attenuabitur ;/ dies mei breviabuntur :/ et solum mihi superest sepulchrum./",
+        "SYN": "Дыхание мое ослабело; дни мои угасают; гробы предо мною.",
+        "NEO": "Mon souffle s’épuise, mes jours s’éteignent, il ne me reste plus que le tombeau.",
+        "NAB": "My spirit is broken, my lamp of life extinguished; my burial is at hand.",
+        "VAT_ES": "&iexcl;Se me ha agotado el aliento, se han extinguido mis días, sólo me queda el sepulcro!",
+        "CEI": "Il mio spirito vien meno, i miei giorni si spengono; non c'è per me che la tomba!"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אִם לֹ֣א הֲ֭תֻלִים עִמָּדִ֑/י וּ֝/בְ/הַמְּרוֹתָ֗/ם תָּלַ֥ן עֵינִֽ/י׃",
+        "LXX": "λίσσομαι κάμνων, καὶ τί ποιήσας;",
+        "VUL": "Non peccavi,/ et in amaritudinibus moratur oculus meus./",
+        "SYN": "Если бы не насмешки их, то и среди споров их око мое пребывало бы спокойно.",
+        "NEO": "Je suis environné de moqueurs, mon œil veille au milieu de leurs outrages.",
+        "NAB": "I am indeed mocked, and, as their provocation mounts, my eyes grow dim.",
+        "VAT_ES": "&iquest;No soy acaso el blanco de las burlas y no me desvelan sus provocaciones?",
+        "CEI": "Non sono io in balìa di beffardi? Fra i loro insulti veglia il mio occhio."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "שִֽׂימָ/ה נָּ֭א עָרְבֵ֣/נִי עִמָּ֑/ךְ מִֽי ה֝֗וּא לְ/יָדִ֥/י יִתָּקֵֽעַ׃",
+        "LXX": "ἔκλεψαν δέ μου τὰ ὑπάρχοντα ἀλλότριοι· τίς ἐστιν οὗτος; τῇ χειρί μου συνδεθήτω.",
+        "VUL": "Libera me, Domine, et pone me juxta te,/ et cujusvis manus pugnet contra me./",
+        "SYN": "Заступись, поручись _Сам_ за меня пред Собою! иначе кто поручится за меня?",
+        "NEO": "O Dieu, fais-toi auprès de toi-même ma caution : quel autre voudrait me frapper dans la main ?",
+        "NAB": "Grant me one to offer you a pledge on my behalf: who is there that will give surety for me?",
+        "VAT_ES": "Deposita junto a ti una fianza a mi favor: si no, &iquest;quién estrechará mi mano?",
+        "CEI": "Sii tu la mia garanzia presso di te! Qual altro vorrebbe stringermi la destra?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּֽי לִ֭בָּ/ם צָפַ֣נְתָּ מִּ/שָּׂ֑כֶל עַל כֵּ֝֗ן לֹ֣א תְרֹמֵֽם׃",
+        "LXX": "ὅτι καρδίαν αὐτῶν ἔκρυψας ἀπὸ φρονήσεως, διὰ τοῦτο οὐ μὴ ὑψώσῃς αὐτούς.",
+        "VUL": "Cor eorum longe fecisti a disciplina :/ propterea non exaltabuntur./",
+        "SYN": "Ибо Ты закрыл сердце их от разумения, и потому не дашь восторжествовать _им._",
+        "NEO": "Car tu as fermé leur cœur à la sagesse ; ne permets donc pas qu’ils s’élèvent.",
+        "NAB": "You darken their minds to knowledge; therefore they do not understand.",
+        "VAT_ES": "Tú cerraste su corazón al discernimiento; por eso, no los dejarás triunfar.",
+        "CEI": "Poiché hai privato di senno la loro mente, per questo non li lascerai trionfare."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "לְ֭/חֵלֶק יַגִּ֣יד רֵעִ֑ים וְ/עֵינֵ֖י בָנָ֣י/ו תִּכְלֶֽנָה׃",
+        "LXX": "τῇ μερίδι ἀναγγελεῖ κακίας, ὀφθαλμοὶ δὲ ἐφ’ υἱοῖς ἐτάκησαν.",
+        "VUL": "Prædam pollicetur sociis,/ et oculi filiorum ejus deficient./",
+        "SYN": "Кто обрекает друзей своих в добычу, у детей того глаза истают.",
+        "NEO": "Tel invite ses amis au partage, quand défaillent les yeux de ses enfants.",
+        "NAB": "My lot is described as evil,",
+        "VAT_ES": "&iexcl;Se anuncia el reparto a los amigos, mientras los ojos de los hijos desfallecen!",
+        "CEI": "Come chi invita gli amici a parte del suo pranzo, mentre gli occhi dei suoi figli languiscono;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְֽ֭/הִצִּגַ/נִי לִ/מְשֹׁ֣ל עַמִּ֑ים וְ/תֹ֖פֶת לְ/פָנִ֣ים אֶֽהְיֶֽה׃",
+        "LXX": "ἔθου δέ με θρύλημα ἐν ἔθνεσιν, γέλως δὲ αὐτοῖς ἀπέβην·",
+        "VUL": "Posuit me quasi in proverbium vulgi,/ et exemplum sum coram eis./",
+        "SYN": "Он поставил меня притчею для народа и посмешищем для него.",
+        "NEO": "Il a fait de moi la risée des peuples ; je suis l’homme à qui l’on crache au visage.",
+        "NAB": "and I am made a byword of the people; their object lesson I have become.",
+        "VAT_ES": "Me has convertido en burla de la gente, soy como alguien a quien se escupe en la cara.",
+        "CEI": "così son diventato ludibrio dei popoli sono oggetto di scherno davanti a loro."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֣כַהּ מִ/כַּ֣עַשׂ עֵינִ֑/י וִֽ/יצֻרַ֖/י כַּ/צֵּ֣ל כֻּלָּֽ/ם׃",
+        "LXX": "πεπώρωνται γὰρ ἀπὸ ὀργῆς οἱ ὀφθαλμοί μου, πεπολιόρκημαι μεγάλως ὑπὸ πάντων.",
+        "VUL": "Caligavit ab indignatione oculus meus,/ et membra mea quasi in nihilum redacta sunt./",
+        "SYN": "Помутилось от горести око мое, и все члены мои, как тень.",
+        "NEO": "Mon œil est voilé par le chagrin, et tous mes membres ne sont plus qu’une ombre.",
+        "NAB": "My eye has grown blind with anguish, and all my frame is shrunken to a shadow.",
+        "VAT_ES": "Mis ojos se debilitan por la tristeza y todos mis miembros son como la sombra.",
+        "CEI": "Si offusca per il dolore il mio occhio e le mie membra non sono che ombra."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "יָשֹׁ֣מּוּ יְשָׁרִ֣ים עַל זֹ֑את וְ֝/נָקִ֗י עַל חָנֵ֥ף יִתְעֹרָֽר׃",
+        "LXX": "θαῦμα ἔσχεν ἀληθινοὺς ἐπὶ τούτῳ· δίκαιος δὲ ἐπὶ παρανόμῳ ἐπανασταίη·",
+        "VUL": "Stupebunt justi super hoc,/ et innocens contra hypocritam suscitabitur./",
+        "SYN": "Изумятся о сем праведные, и невинный вознегодует на лицемера.",
+        "NEO": "Les hommes droits en sont stupéfaits, et l’innocent s’irrite contre l’impie.",
+        "NAB": "Upright men are astonished at this, and the innocent aroused against the wicked.",
+        "VAT_ES": "Los hombres rectos quedan consternados por esto, y el inocente se indigna contra el impío.",
+        "CEI": "Gli onesti ne rimangono stupiti e l'innocente s'indigna contro l'empio."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/יֹאחֵ֣ז צַדִּ֣יק דַּרְכּ֑/וֹ וּֽ/טֳהָר יָ֝דַ֗יִם יֹסִ֥יף אֹֽמֶץ׃",
+        "LXX": "σχοίη δὲ πιστὸς τὴν ἑαυτοῦ ὁδόν, καθαρὸς δὲ χεῖρας ἀναλάβοι θάρσος.",
+        "VUL": "Et tenebit justus viam suam,/ et mundis manibus addet fortitudinem./",
+        "SYN": "Но праведник будет крепко держаться пути своего, и чистый руками будет больше и больше утверждаться.",
+        "NEO": "Le juste néanmoins demeure ferme dans sa voie, et qui a les mains pures redouble de courage.",
+        "NAB": "Yet the righteous shall hold to his way, and he who has clean hands increase in strength.",
+        "VAT_ES": "Pero el justo se afianza en su camino y el de manos puras redobla su energía.",
+        "CEI": "Ma il giusto si conferma nella sua condotta e chi ha le mani pure raddoppia il coraggio."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְֽ/אוּלָ֗ם כֻּלָּ֣/ם תָּ֭שֻׁבוּ וּ/בֹ֣אוּ נָ֑א וְ/לֹֽא אֶמְצָ֖א בָ/כֶ֣ם חָכָֽם׃",
+        "LXX": "οὐ μὴν δὲ ἀλλὰ πάντες ἐρείδετε, καὶ δεῦτε δή, οὐ γὰρ εὑρίσκω ἐν ὑμῖν ἀληθές.",
+        "VUL": "Igitur omnes vos convertimini, et venite,/ et non inveniam in vobis ullum sapientem./",
+        "SYN": "Выслушайте, все вы, и подойдите; не найду я мудрого между вами.",
+        "NEO": "Mais vous tous, revenez, venez donc ; ne trouverai-je pas un sage parmi vous ?",
+        "NAB": "But turn now, and come on again; for I shall not find a wise man among you!",
+        "VAT_ES": "&iexcl;Vengan todos ustedes, vengan otra vez: no encontraré un solo sabio entre ustedes!",
+        "CEI": "Su, venite di nuovo tutti: io non troverò un saggio fra di voi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "יָמַ֣/י עָ֭בְרוּ זִמֹּתַ֣/י נִתְּק֑וּ מ֖וֹרָשֵׁ֣י לְבָבִֽ/י׃",
+        "LXX": "αἱ ἡμέραι μου παρῆλθον ἐν βρόμῳ, ἐρράγη δὲ τὰ ἄρθρα τῆς καρδίας μου·",
+        "VUL": "Dies mei transierunt ;/ cogitationes meæ dissipatæ sunt,/ torquentes cor meum./",
+        "SYN": "Дни мои прошли; думы мои -- достояние сердца моего -- разбиты.",
+        "NEO": "Mes jours sont écoulés, mes projets anéantis, ces projets que caressait mon cœur.",
+        "NAB": "My days are passed away, my plans are at an end, the cherished purposes of my heart.",
+        "VAT_ES": "Han pasado mis días, se han deshecho mis planes y las aspiraciones de mi corazón.",
+        "CEI": "I miei giorni sono passati, svaniti i miei progetti, i voti del mio cuore."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "לַ֭יְלָה לְ/י֣וֹם יָשִׂ֑ימוּ א֝֗וֹר קָר֥וֹב מִ/פְּנֵי חֹֽשֶׁךְ׃",
+        "LXX": "νύκτα εἰς ἡμέραν ἔθηκα, φῶς ἐγγὺς ἀπὸ προσώπου σκότους.",
+        "VUL": "Noctem verterunt in diem,/ et rursum post tenebras spero lucem./",
+        "SYN": "А они ночь _хотят_ превратить в день, свет приблизить к лицу тьмы.",
+        "NEO": "De la nuit ils font le jour ; en face des ténèbres, ils disent que la lumière est proche !",
+        "NAB": "Such men change the night into day; where there is darkness they talk of approaching light.",
+        "VAT_ES": "Ellos cambian la noche en día: «La luz, dicen, está cerca de las tinieblas».",
+        "CEI": "Cambiano la notte in giorno, la luce - dicono - è più vicina delle tenebre."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "אִם אֲ֭קַוֶּה שְׁא֣וֹל בֵּיתִ֑/י בַּ֝/חֹ֗שֶׁךְ רִפַּ֥דְתִּי יְצוּעָֽ/י׃",
+        "LXX": "ἐὰν γὰρ ὑπομείνω, ᾅδης μου ὁ οἶκος, ἐν δὲ γνόφῳ ἔστρωταί μου ἡ στρωμνή.",
+        "VUL": "Si sustinuero, infernus domus mea est,/ et in tenebris stravi lectulum meum./",
+        "SYN": "Если бы я и ожидать стал, то преисподняя -- дом мой; во тьме постелю я постель мою;",
+        "NEO": "J’ai beau attendre, le schéol est ma demeure ; dans les ténèbres j’ai disposé ma couche.",
+        "NAB": "If I look for the nether world as my dwelling, if I spread my couch in the darkness,",
+        "VAT_ES": "&iquest;Qué puedo esperar? El Abismo es mi morada, en las tinieblas extendí mi lecho.",
+        "CEI": "Se posso sperare qualche cosa, la tomba è la mia casa, nelle tenebre distendo il mio giaciglio."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לַ/שַּׁ֣חַת קָ֭רָאתִי אָ֣בִ/י אָ֑תָּה אִמִּ֥/י וַ֝/אֲחֹתִ֗/י לָֽ/רִמָּֽה׃",
+        "LXX": "θάνατον ἐπεκαλεσάμην πατέρα μου εἶναι, μητέρα δέ μου καὶ ἀδελφὴν σαπρίαν.",
+        "VUL": "Putredini dixi : Pater meus es ;/ Mater mea, et soror mea, vermibus./",
+        "SYN": "гробу скажу: ты отец мой, червю: ты мать моя и сестра моя.",
+        "NEO": "J’ai dit à la fosse : « Tu es mon père ; » aux vers : « Vous êtes ma mère et ma sœur ! »",
+        "NAB": "If I must call corruption \"my father,\" and the maggot \"my mother\" and \"my sister,\"",
+        "VAT_ES": "Yo grito a la Fosa: «&iexcl;Tú eres mi padre!», y los gusanos: «&iexcl;Mi madre y mis hermanos!».",
+        "CEI": "Al sepolcro io grido: \"Padre mio sei tu!\" e ai vermi: \"Madre mia, sorelle mie voi siete!\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ֭/אַיֵּה אֵפ֣וֹ תִקְוָתִ֑/י וְ֝/תִקְוָתִ֗/י מִ֣י יְשׁוּרֶֽ/נָּה׃",
+        "LXX": "ποῦ οὖν μου ἔτι ἐστὶν ἡ ἐλπίς; ἢ τὰ ἀγαθά μου ὄψομαι;",
+        "VUL": "Ubi est ergo nunc præstolatio mea ?/ et patientiam meam quis considerat ?/",
+        "SYN": "Где же после этого надежда моя? и ожидаемое мною кто увидит?",
+        "NEO": "Où est donc mon espérance ? Mon espérance, qui peut la voir ?",
+        "NAB": "Where then is my hope, and my prosperity, who shall see?",
+        "VAT_ES": "&iquest;Dónde está entonces mi esperanza? Y mi felicidad, &iquest;quién la verá?",
+        "CEI": "E la mia speranza dov'è? Il mio benessere chi lo vedrà?"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "בַּדֵּ֣י שְׁאֹ֣ל תֵּרַ֑דְנָה אִם יַ֖חַד עַל עָפָ֣ר נָֽחַת׃",
+        "LXX": "ἢ μετ’ ἐμοῦ εἰς ᾅδην καταβήσονται, ἢ ὁμοθυμαδὸν ἐπὶ χώματος καταβησόμεθα;",
+        "VUL": "In profundissimum infernum descendent omnia mea :/ putasne saltem ibi erit requies mihi ?]",
+        "SYN": "В преисподнюю сойдет она и будет покоиться со мною в прахе.",
+        "NEO": "Elle est descendue aux portes du schéol, si du moins dans la poussière on trouve du repos !...",
+        "NAB": "Will they descend with me into the nether world? Shall we go down together into the dust?",
+        "VAT_ES": "&iquest;Bajarán conmigo al Abismo? &iquest;Nos hundiremos juntos en el polvo?",
+        "CEI": "Scenderanno forse con me nella tomba o caleremo insieme nella polvere!"
+      }
+    }
+  }
+}

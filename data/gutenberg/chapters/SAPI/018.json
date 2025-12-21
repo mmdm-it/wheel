@@ -1,0 +1,440 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "SAPI_018",
+  "book_key": "SAPI",
+  "sequence": 18,
+  "chapter_in": {
+    "MT": 18,
+    "VUL": 18,
+    "LXX": 18
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "τοῖς δὲ ὁσίοις σου μέγιστον ἦν φῶς. ὧν φωνὴν ἀκούοντες μορφὴν δὲ οὐχ ὁρῶντες, ὅτι μὲν οὖν κἀκεῖνοι ἐπεπόνθεισαν, ἐμακάριζον·",
+        "VUL": "[Sanctis autem tuis maxima erat lux,/ et horum quidem vocem audiebant, sed figuram non videbant./ Et quia non et ipsi eadem passi erant, magnificabant te ;/",
+        "SYN": "А для святых Твоих был величайший свет. И те, слыша голос их, а образа не видя, называли их блаженными, потому что они не страдали.",
+        "NEO": "Cependant une grande lumière brillait pour vos saints ; les Égyptiens entendaient leur voix sans voir leur visage, et, malgré leurs souffrances passées, les proclamaient heureux.",
+        "NAB": "But your holy ones had very great light; And those others, who heard their voices but did not see their forms, since now they themselves had suffered, called them blest;",
+        "VAT_ES": "Para tus santos, en cambio, brillaba una intensa luz. Los egipcios, que oían sus voces, sin distinguir su figura, los consideraban dichosos porque no tenían que sufrir como ellos,",
+        "CEI": "Per i tuoi santi risplendeva una luce vivissima; essi invece, sentendone le voci, senza vederne l'aspetto. li proclamavan beati, ché non avevan come loro sofferto"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ὅτι δ’ οὐ βλάπτουσιν προηδικημένοι, εὐχαριστοῦσιν, καὶ τοῦ διενεχθῆναι χάριν ἐδέοντο.",
+        "VUL": "et qui ante læsi erant, quia non lædebantur, gratias agebant,/ et ut esset differentia, donum petebant./",
+        "SYN": "А за то, что, быв прежде обижаемы ими, не мстили им, благодарили и просили прощения в том, что заставляли переносить их.",
+        "NEO": "Et parce que, après avoir été maltraités, ils ne se vengeaient pas, ils leur rendaient grâces, et leur demandaient pardon de les avoir traités en ennemis.",
+        "NAB": "And because they who formerly had been wronged did not harm them, they thanked them, and pleaded with them, for the sake of the difference between them.",
+        "VAT_ES": "les daban gracias porque no se vengaban de los daños recibidos, y les pedían perdón por su actitud hostil.",
+        "CEI": "ed erano loro grati perché, offesi per primi, non facevano loro del male e imploravano perdono d'essere stati loro nemici."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ἀνθ’ ὧν πυριφλεγῆ στύλον, ὁδηγὸν μὲν ἀγνώστου ὁδοιπορίας, ἥλιον δὲ ἀβλαβῆ φιλοτίμου ξενιτείας παρέσχες.",
+        "VUL": "Propter quod ignis ardentem columnam/ ducem habuerunt ignotæ viæ,/ et solem sine læsura boni hospitii præstitisti./",
+        "SYN": "Вместо того, Ты дал им указателем на незнакомом пути огнесветлый столп, а для благополучного странствования - безвредное солнце.",
+        "NEO": "A la place de ces ténèbres, vous avez donné à vos saints une colonne de feu, guide dans une route inconnue, soleil inoffensif pour leur glorieux pèlerinage.",
+        "NAB": "Instead of this, you furnished the flaming pillar which was a guide on the unknown way, and the mild sun for an honorable migration.",
+        "VAT_ES": "En lugar de esas tinieblas, diste a los tuyos una columna de fuego, para que les sirviera de guía en un camino desconocido y del sol inofensivo en su gloriosa emigración.",
+        "CEI": "Invece delle tenebre desti loro una colonna di fuoco, come guida in un viaggio sconosciuto e come un sole innocuo per il glorioso emigrare."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ἄξιοι μὲν γὰρ ἐκεῖνοι στερηθῆναι φωτὸς καὶ φυλακισθῆναι σκότει, οἱ κατακλείστους φυλάξαντες τοὺς υἱούς σου, δι’ ὧν ἤμελλεν τὸ ἄφθαρτον νόμου φῶς τῷ αἰῶνι δίδοσθαι.",
+        "VUL": "Digni quidem illi carere luce,/ et pati carcerem tenebrarum,/ qui inclusos custodiebant filios tuos,/ per quos incipiebat incorruptum legis lumen sæculo dari.]",
+        "SYN": "Ибо те достойны были лишения света и заключения во тьме, потому что держали в заключении сынов Твоих, чрез которых имел быть дан миру нетленный свет закона.",
+        "NEO": "Ils méritaient bien d’être privés de lumière, et d’être emprisonnés dans les ténèbres, ceux qui tenaient enfermés vos enfants, par qui la lumière incorruptible de votre loi devait être donnée au monde.",
+        "NAB": "For those deserved to be deprived of light and imprisoned by darkness, who had kept your sons confined through whom the imperishable light of the law was to be given to the world.",
+        "VAT_ES": "Pero merecían estar privados de la luz y prisioneros de las tinieblas los que habían retenido cautivos a tus hijos, por quienes debía transmitirse al mundo la luz incorruptible de la Ley.",
+        "CEI": "Eran degni di essere privati della luce e di essere imprigionati nelle tenebre quelli che avevano tenuto chiusi in carcere i tuoi figli, per mezzo dei quali la luce incorruttibile della legge doveva esser concessa al mondo."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "βουλευσαμένους αὐτοὺς τὰ τῶν ὁσίων ἀποκτεῖναι νήπια, καὶ ἑνὸς ἐκτεθέντος τέκνου καὶ σωθέντος, εἰς ἔλεγχον τὸ αὐτῶν ἀφείλω πλῆθος τέκνων, καὶ ὁμοθυμαδὸν ἀπώλεσας ἐν ὕδατι σφοδρῷ.",
+        "VUL": "[Cum cogitarent justorum occidere infantes,/ et uno exposito filio et liberato,/ in traductionem illorum, multitudinem filiorum abstulisti,/ et pariter illos perdidisti in aqua valida./",
+        "SYN": "Когда определили они избить детей святых, хотя одного сына, покинутого и спасли, в наказание за то Ты отнял множество их детей и самих всех погубил в сильной воде.",
+        "NEO": "Ils avaient résolu de faire périr les enfants des saints, et, l’un de ces derniers ayant été exposé et délivré, vous leur avez, pour leur châtiment, enlevé la multitude de leurs fils, et vous les avez engloutis tous ensemble dans les flots impétueux.",
+        "NAB": "When they determined to put to death the infants of the holy ones, and when a single boy had been cast forth but saved, As a reproof you carried off their multitude of sons and made them perish all at once in the mighty water.",
+        "VAT_ES": "Como ellos habían resuelto hacer perecer a los hijos pequeños de los santos y de los niños expuestos al peligro, uno solo se salvó para castigarlos, tú les arrebataste un gran número de sus hijos y los hiciste perecer a todos juntos en las aguas impetuosas.",
+        "CEI": "Poiché essi avevan deciso di uccidere i neonati dei santi - e un solo bambino fu esposto e salvato - per castigo eliminasti una moltitudine di loro figli e li facesti perire tutti insieme nell'acqua impetuosa."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ἐκείνη ἡ νὺξ προεγνώσθη πατράσιν ἡμῶν, ἵνα ἀσφαλῶς εἰδότες οἷς ἐπίστευσαν ὅρκοις ἐπευθυμήσωσιν.",
+        "VUL": "Illa enim nox ante cognita est a patribus nostris,/ ut vere scientes quibus juramentis crediderunt,/ animæquiores essent./",
+        "SYN": "Та ночь была предвозвещена отцам нашим, дабы они, твердо зная обетования, каким верили, были благодушны.",
+        "NEO": "Cette nuit avait été connue d’avance par nos pères, afin que, sachant bien à quelles promesses ils avaient cru, ils eussent meilleur courage.",
+        "NAB": "That night was known beforehand to our fathers, that, with sure knowledge of the oaths in which they put their faith, they might have courage.",
+        "VAT_ES": "Aquella noche fue dada a conocer de antemano a nuestros padres, para que, sabiendo con seguridad en qué juramentos habían creído, se sintieran reconfortados.",
+        "CEI": "Quella notte fu preannunziata ai nostri padri, perché sapendo a quali promesse avevano creduto, stessero di buon animo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "προσεδέχθη ὑπὸ λαοῦ σου σωτηρία μὲν δικαίων, ἐχθρῶν δὲ ἀπωλία.",
+        "VUL": "Suscepta est autem a populo tuo sanitas quidem justorum,/ injustorum autem exterminatio./",
+        "SYN": "И народ Твой ожидал как спасения праведных, так и погибели врагов,",
+        "NEO": "Et ainsi votre peuple attendit la délivrance des justes et l’extermination de ses ennemis.",
+        "NAB": "Your people awaited the salvation of the just and the destruction of their foes.",
+        "VAT_ES": "Tu pueblo esperaba, a la vez, la salvación de los justos y la perdición de sus enemigos;",
+        "CEI": "Il tuo popolo si attendeva la salvezza dei giusti come lo sterminio dei nemici."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "ὡς γὰρ ἐτιμωρήσω τοὺς ὑπεναντίους, τούτῳ ἡμᾶς προσκαλεσάμενος ἐδόξασας.",
+        "VUL": "Sicut enim læsisti adversarios,/ sic et nos provocans magnificasti./",
+        "SYN": "ибо, чем Ты наказывал врагов, тем самым возвеличил нас, которых Ты призвал.",
+        "NEO": "De même que vous avez châtié nos adversaires, du même coup vous nous avez glorifiés en nous appelant à vous.",
+        "NAB": "For when you punished our adversaries, in this you glorified us whom you had summoned.",
+        "VAT_ES": "porque con el castigo que infligiste a nuestros adversarios, tú nos cubriste de gloria, llamándonos a ti.",
+        "CEI": "Difatti come punisti gli avversari, così ci rendesti gloriosi, chiamandoci a te."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "κρυφῇ γὰρ ἐθυσίαζον ὅσιοι παῖδες ἀγαθῶν, καὶ τὸν τῆς θειότητος νόμον ἐν ὁμονοίᾳ διέθεντο, τῶν αὐτῶν ὁμοίως καὶ ἀγαθῶν καὶ κινδύνων μεταλήμψεσθαι τοὺς ἁγίους, πατέρων ἤδη προαναμελπόντων αἴνους.",
+        "VUL": "Absconse enim sacrificabant justi pueri bonorum,/ et justitiæ legem in concordia disposuerunt ;/ similiter et bona et mala recepturos justos,/ patrum jam decantantes laudes./",
+        "SYN": "Святые дети добрых тайно совершали жертвоприношение и единомысленно постановили божественным законом, чтобы святые равно участвовали в одних и тех же благах и опасностях, когда отцы уже воспевали хвалы.",
+        "NEO": "En effet, les pieux enfants des saints offraient leur sacrifice en secret, et faisaient d’un commun accord ce pacte divin ; que les saints participeraient aux mêmes biens et aux mêmes dangers ; — chantant déjà d’avance les hymnes de leurs pères.",
+        "NAB": "For in secret the holy children of the good were offering sacrifice and putting into effect with one accord the divine institution, That your holy ones should share alike the same good things and dangers, having previously sung the praises of the fathers.",
+        "VAT_ES": "Por eso, los santos hijos de los justos ofrecieron sacrificios en secreto, y establecieron de común acuerdo esta ley divina: que los santos compartirían igualmente los mismos bienes y los mismos peligros; y ya entonces entonaron los cantos de los Padres.",
+        "CEI": "I figli santi dei giusti offrivano sacrifici in segreto e si imposero, concordi, questa legge divina: i santi avrebbero partecipato ugualmente ai beni e ai pericoli, intonando prima i canti di lode dei padri."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ἀντήχει δ’ ἀσύμφωνος ἐχθρῶν ἡ βοή, καὶ οἰκτρὰ διεφέρετο θρηνουμένων παίδων.",
+        "VUL": "Resonabat autem inconveniens inimicorum vox,/ et flebilis audiebatur planctus ploratorum infantium./",
+        "SYN": "С противной же стороны отдавался нестройный крик врагов, и разносился жалобный вопль над оплакиваемыми детьми.",
+        "NEO": "Pour leur faire écho, retentissaient les cris discordants des ennemis, et l’on entendait des lamentations sur les enfants qu’on pleurait.",
+        "NAB": "But the discordant cry of their enemies responded, and the piteous wail of mourning for children was borne to them.",
+        "VAT_ES": "Le hacía eco el clamor confuso de sus enemigos, y se propagaban los gritos lastimeros de los que lloraban a sus hijos.",
+        "CEI": "Faceva eco il grido confuso dei nemici e si diffondeva il lamento di quanti piangevano i figli."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ὁμοίᾳ δὲ δίκῃ δοῦλος ἅμα δεσπότῃ κολασθείς, καὶ δημότης βασιλεῖ τὰ αὐτὰ πάσχων·",
+        "VUL": "Simili autem pna servus cum domino afflictus est,/ et popularis homo regi similia passus./",
+        "SYN": "Одинаковым судом был наказан раб с господином, и простолюдин терпел одно и то же с царем:",
+        "NEO": "L’esclave et le maître étaient punis de la même peine, et l’homme du peuple souffrait la même chose que le roi.",
+        "NAB": "And the slave was smitten with the same retribution as his master; even the plebeian suffered the same as the king.",
+        "VAT_ES": "Un mismo castigo hería al esclavo y al dueño, el hombre del pueblo sufría lo mismo que el rey.",
+        "CEI": "Con la stessa pena lo schiavo era punito insieme con il padrone, il popolano soffriva le stesse pene del re."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "ὁμοθυμαδὸν δὲ πάντες ἐν ἑνὶ ὀνόματι θανάτου νεκροὺς εἶχον ἀναριθμήτους· οὐδὲ γὰρ πρὸς τὸ θάψαι οἱ ζῶντες ἦσαν ἱκανοί, ἐπεὶ πρὸς μίαν ῥοπὴν ἡ ἐντιμοτέρα γένεσις αὐτῶν διεφθάρη.",
+        "VUL": "Similiter ergo omnes, uno nomine mortis,/ mortuos habebant innumerabiles :/ nec enim ad sepeliendum vivi sufficiebant,/ quoniam uno momento quæ erat præclarior/ natio illorum exterminata est./",
+        "SYN": "все вообще имели бесчисленных мертвецов, умерших одинаковою смертью; и живых недоставало для погребения, так как в одно мгновение погублено было все драгоценнейшее их поколение.",
+        "NEO": "Ils avaient tous pareillement, dans un seul genre de mort, des morts sans nombre, et les vivants ne suffisaient pas aux funérailles, car leurs plus nobles rejetons avaient été exterminés en un instant.",
+        "NAB": "And all alike by a single death had countless dead; For the living were not even sufficient for the burial, since at a single instant their nobler offspring were destroyed.",
+        "VAT_ES": "Todos por igual tenían innumerables cadáveres, abatidos por el mismo género de muerte. Los sobrevivientes no daban abasto para sepultarlos, porque en un instante había sido destruido lo mejor de su estirpe.",
+        "CEI": "Tutti insieme, nello stesso modo, ebbero innumerevoli morti, e i vivi non bastavano a seppellirli perché in un istante perì la loro più nobile prole."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "πάντα γὰρ ἀπιστοῦντες διὰ τὰς φαρμακείας, ἐπὶ τῷ τῶν πρωτοτόκων ὀλέθρῳ ὡμολόγησαν θεοῦ υἱὸν λαὸν εἶναι.",
+        "VUL": "De omnibus enim non credentes, propter veneficia ;/ tunc vero primum cum fuit exterminium primogenitorum,/ spoponderunt populum Dei esse./",
+        "SYN": "И не верившие ничему ради чародейства, при погублении первенцев, признали, что этот народ есть сын Божий,",
+        "NEO": "Ils avaient refusé de croire à cause de leurs sortilèges ; quand arriva l’extermination des premiers-nés, ils reconnurent que ce peuple était fils de Dieu.",
+        "NAB": "For though they disbelieved at every turn on account of sorceries, at the destruction of the first-born they acknowledged that the people was God's son.",
+        "VAT_ES": "Así, aquellos que a causa de los sortilegios se habían vuelto totalmente incrédulos, ante la pérdida de sus primogénitos, confesaron que ese pueblo era hijo de Dios.",
+        "CEI": "Quelli rimasti increduli a tutto per via delle loro magie, alla morte dei primogeniti confessarono che questo popolo è figlio di Dio."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "ἡσύχου γὰρ σιγῆς περιεχούσης τὰ πάντα καὶ νυκτὸς ἐν ἰδίῳ τάχει μεσαζούσης τὰ πάντα,",
+        "VUL": "Cum enim quietum silentium contineret omnia,/ et nox in suo cursu medium iter haberet,/",
+        "SYN": "ибо, когда все окружало тихое безмолвие и ночь в своем течении достигла средины,",
+        "NEO": "Pendant qu’un profond silence enveloppait tout le pays, et que la nuit était arrivée au milieu de sa course rapide,",
+        "NAB": "For when peaceful stillness compassed everything and the night in its swift course was half spent,",
+        "VAT_ES": "Cuando un silencio apacible envolvía todas las cosas, y la noche había llegado a la mitad de su rápida carrera,",
+        "CEI": "Mentre un profondo silenzio avvolgeva tutte le cose, e la notte era a metà del suo corso,"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ὁ παντοδύναμός σου λόγος ἀπ’ οὐρανῶν ἐκ θρόνων βασιλείων ἀπότομος πολεμιστὴς εἰς μέσον τῆς ὀλεθρίας ἥλατο γῆς·",
+        "VUL": "omnipotens sermo tuus de cælo, a regalibus sedibus,/ durus debellator in mediam exterminii terram prosilivit,/",
+        "SYN": "сошло с небес от царственных престолов на средину погибельной земли всемогущее слово Твое, как грозный воин.",
+        "NEO": "votre Parole toute-puissante s’élança du haut du ciel, de son trône royal, comme un guerrier impitoyable, au milieu d’une terre vouée à l’extermination,",
+        "NAB": "Your all-powerful word from heaven's royal throne bounded, a fierce warrior, into the doomed land,",
+        "VAT_ES": "tu Palabra omnipotente se lanzó desde el cielo, desde el trono real, como un guerrero implacable, en medio del país condenado al exterminio. Empuñando como una espada afilada tu decreto irrevocable,",
+        "CEI": "la tua parola onnipotente dal cielo, dal tuo trono regale, guerriero implacabile, si lanciò in mezzo a quella terra di sterminio, portando, come spada affilata, il tuo ordine inesorabile."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ξίφος ὀξὺ τὴν ἀνυπόκριτον ἐπιταγήν σου φέρων, καὶ στὰς ἐπλήρωσεν τὰ πάντα θανάτου· καὶ οὐρανοῦ μὲν ἥπτετο, βεβήκει δ’ ἐπὶ γῆς.",
+        "VUL": "gladius acutus insimulatum imperium tuum portans :/ et stans, replevit omnia morte,/ et usque ad cælum attingebat stans in terra./",
+        "SYN": "Оно несло острый меч - неизменное Твое повеление и, став, наполнило все смертью: оно касалось неба и ходило по земле.",
+        "NEO": "portant comme un glaive aigu votre irrévocable décret ; elle était là, remplissant tout de mort ; elle touchait au ciel et se tenait sur la terre.",
+        "NAB": "bearing the sharp sword of your inexorable decree. And as he alighted, he filled every place with death; he still reached to heaven, while he stood upon the earth.",
+        "VAT_ES": "se detuvo y sembró la muerte por todas partes: a la vez que tocaba el cielo, avanzaba sobre la tierra.",
+        "CEI": "Fermatasi, riempì tutto di morte; toccava il cielo e camminava sulla terra."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "τότε παραχρῆμα φαντασίαι μὲν ὀνείρων δεινῶς ἐξετάραξαν αὐτούς, φόβοι δὲ ἐπέστησαν ἀδόκητοι,",
+        "VUL": "Tunc continuo visus somniorum malorum turbaverunt illos,/ et timores supervenerunt insperati./",
+        "SYN": "Тогда вдруг сильно встревожили их мечты сновидений, и наступили неожиданные ужасы;",
+        "NEO": "Aussitôt des visions de songes effrayants les troublèrent, et des terreurs inattendues tombèrent sur eux.",
+        "NAB": "Then, forthwith, visions in horrible dreams perturbed them and unexpected fears assailed them;",
+        "VAT_ES": "Entonces, bruscamente, las visiones de horribles pesadillas los sobresaltaron, y los invadieron terrores inesperados.",
+        "CEI": "Allora improvvisi fantasmi di sogni terribili li atterrivano; timori impensabili piombarono su di loro."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "καὶ ἄλλος ἀλλαχῇ ῥιφεὶς ἡμίθνητος δι’ ἣν ἔθνησκεν αἰτίαν ἐνεφάνιζεν·",
+        "VUL": "Et alius alibi projectus semivivus,/ propter quam moriebatur causam demonstrabat mortis./",
+        "SYN": "и, будучи поражаем - один там, другой тут, полумертвый объявлял причину, по которой он умирал:",
+        "NEO": "Jetés par terre çà et là à demi-morts, ils révélaient la cause pour laquelle ils mouraient.",
+        "NAB": "And cast half-dead, one here, another there, each was revealing the reason for his dying.",
+        "VAT_ES": "Tendidos medio muertos por todas partes, hacían saber cuál era la causa de su muerte,",
+        "CEI": "Cadendo mezzi morti qua e là, ognuno mostrava la causa della morte."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "οἱ γὰρ ὄνειροι θορυβήσαντες αὐτοὺς τοῦτο προεμήνυσαν, ἵνα μὴ ἀγνοοῦντες δι’ ὃ κακῶς πάσχουσιν ἀπόλωνται.",
+        "VUL": "Visiones enim quæ illos turbaverunt hæc præmonebant,/ ne inscii quare mala patiebantur perirent./",
+        "SYN": "ибо встревожившие их сновидения предварительно показали им это, чтобы они не погибли, не зная того, за что терпят зло.",
+        "NEO": "Car les songes qui les troublaient la leur avaient révélée, afin qu’ils ne mourussent pas sans savoir pourquoi ils étaient si rudement frappés.",
+        "NAB": "For the dreams that disturbed them had proclaimed this beforehand, lest they perish unaware of why they suffered ill.",
+        "VAT_ES": "porque los sueños que los habían agitado se lo habían advertido de antemano, para que no perecieran sin saber por qué padecían esos males.",
+        "CEI": "I loro sogni terrificanti li avevano preavvisati, perché non morissero ignorando il motivo delle loro sofferenze."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "Ἥψατο δὲ καὶ δικαίων πεῖρα θανάτου, καὶ θραῦσις ἐν ἐρήμῳ ἐγένετο πλήθους· ἀλλ’ οὐκ ἐπὶ πολὺ ἔμεινεν ἡ ὀργή.",
+        "VUL": "Tetigit autem tunc et justos tentatio mortis,/ et commotio in eremo facta est multitudinis :/ sed non diu permansit ira tua./",
+        "SYN": "Хотя искушение смерти коснулось и праведных, и много их погибло в пустыне, но недолго продолжался этот гнев,",
+        "NEO": "L’épreuve de la mort atteignit aussi les justes, et il y eut dans le désert une destruction de la multitude ; mais votre colère ne dura pas longtemps.",
+        "NAB": "But the trial of death touched at one time even the just, and in the desert a plague struck the multitude; Yet not for long did the anger last.",
+        "VAT_ES": "También los justos experimentaron la muerte, y una multitud fue masacrada en el desierto. Pero la ira divina no duró mucho tiempo,",
+        "CEI": "La prova della morte colpì anche i giusti e nel deserto ci fu strage di molti; ma l'ira non durò a lungo,"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "σπεύσας γὰρ ἀνὴρ ἄμεμπτος προεμάχησεν, τὸ τῆς ἰδίας λειτουργίας ὅπλον προσευχὴν καὶ θυμιάματος ἐξιλασμὸν κομίσας· ἀντέστη τῷ θυμῷ καὶ πέρας ἐπέθηκε τῇ συμφορᾷ, δεικνὺς ὅτι σός ἐστιν θεράπων.",
+        "VUL": "Properans enim homo sine querela deprecari pro populis,/ proferens servitutis suæ scutum,/ orationem et per incensum deprecationem allegans,/ restitit iræ, et finem imposuit necessitati,/ ostendens quoniam tuus est famulus./",
+        "SYN": "ибо непорочный муж поспешил защитить их; принеся оружие своего служения, молитву и умилостивление кадильное, он противостал гневу и положил конец бедствию, показав тем, что он слуга Твой.",
+        "NEO": "Car un homme sans reproche se hâta de combattre pour les coupables ; prenant les armes de son ministère, la prière et l’encens expiatoire, il résista à la colère divine et mit un terme au fléau, montrant qu’il était votre serviteur.",
+        "NAB": "For the blameless man hastened to be their champion, bearing the weapon of his special office, prayer and the propitiation of incense; He withstood the wrath and put a stop to the calamity, showing that he was your servant.",
+        "VAT_ES": "porque muy pronto un hombre irreprochable salió en su defensa, con las armas de su propio ministerio: la oración y el incienso expiatorio. El afrontó la cólera divina y puso fin a la calamidad, demostrando así que era tu servidor.",
+        "CEI": "perché un uomo incensurabile si affrettò a difenderli: prese le armi del suo ministero, la preghiera e il sacrificio espiatorio dell'incenso; si oppose alla collera e mise fine alla sciagura, mostrando che era tuo servitore."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ἐνίκησεν τὸν ὄχλον οὐκ ἰσχύι τοῦ σώματος, οὐχ ὅπλων ἐνεργείᾳ, ἀλλὰ λόγῳ τὸν κολάζοντα ὑπέταξεν, ὅρκους πατέρων καὶ διαθήκας ὑπομνήσας.",
+        "VUL": "Vicit autem turbas non in virtute corporis,/ nec armaturæ potentia :/ sed verbo illum qui se vexabat subjecit,/ juramenta parentum et testamentum commemorans./",
+        "SYN": "Он победил истребителя не силою телесною и не действием оружия, но словом покорил наказывавшего, воспомянув клятвы и заветы отцов.",
+        "NEO": "Il vint à bout de cette sédition, non par la force corporelle, ni par la puissance des armes ; mais il dompta par la parole celui qui les châtiait, en rappelant les serments faits aux pères et les alliances.",
+        "NAB": "And he overcame the bitterness not by bodily strength, not by force of arms; But by word he overcame the smiter, recalling the sworn covenants with their fathers.",
+        "VAT_ES": "El venció la animosidad divina, no con la fuerza del cuerpo ni con el poder de las armas, sino que, por medio de la palabra, hizo entrar en razón al que infligía el castigo, recordándole las alianzas y los juramentos hechos a los Padres.",
+        "CEI": "Egli superò l'ira divina non con la forza del corpo, né con l'efficacia delle armi; ma con la parola placò colui che castigava, ricordandogli i giuramenti e le alleanze dei padri."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "σωρηδὸν γὰρ ἤδη πεπτωκότων ἐπ’ ἀλλήλων νεκρῶν, μεταξὺ στὰς ἀνέκοψε τὴν ὀργὴν καὶ διέσχισεν τὴν πρὸς τοὺς ζῶντας ὁδόν.",
+        "VUL": "Cum enim jam acervatim cecidissent super alterutrum mortui,/ interstitit, et amputavit impetum,/ et divisit illam quæ ad vivos ducebat viam./",
+        "SYN": "Ибо, когда уже грудами лежали мертвые одни на других, он, став в средине, остановил гнев и пресек ему путь к живым.",
+        "NEO": "Lorsque déjà les morts étaient tombés en tas les uns sur les autres, s’interposant, il arrêta la colère, et ferma à l’Exterminateur le chemin des survivants.",
+        "NAB": "For when corpses had already fallen one on another in heaps, he stood in the midst and checked the anger, and cut off the way to the living.",
+        "VAT_ES": "Cuando los cadáveres yacían amontonados unos sobre otros, él se interpuso, contuvo la cólera divina y le cerró el camino hacia los que aún vivían.",
+        "CEI": "I morti eran caduti a mucchi gli uni sugli altri, quando egli, ergendosi lì in mezzo, arrestò l'ira e le tagliò la strada che conduceva verso i viventi."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "⸂⸆⸃ ἐπὶ γὰρ ποδήρους ἐνδύματος ἦν ὅλος ὁ κόσμος, καὶ πατέρων δόξαι ἐπὶ τετραστίχου λίθου γλυφῆς, καὶ μεγαλωσύνη σου ἐπὶ διαδήματος κεφαλῆς αὐτοῦ.",
+        "VUL": "In veste enim poderis quam habebat, totus erat orbis terrarum ;/ et parentum magnalia in quatuor ordinibus lapidum erant sculpta,/ et magnificentia tua in diademate capitis illius sculpta erat./",
+        "SYN": "На подире его был целый мир, и славные имена отцов были вырезаны на камнях в четыре ряда, и величие Твое - на диадиме головы его.",
+        "NEO": "Car sur la robe qui tombait jusqu’à terre était tout l’univers ; les noms glorieux des pères étaient gravés sur les quatre rangées de pierres précieuses, et votre majesté sur le diadème de sa tête.",
+        "NAB": "For on his full-length robe was the whole world, and the glories of the fathers were carved in four rows upon the stones, and your grandeur was on the crown upon his head.",
+        "VAT_ES": "Porque sobre sus vestiduras sacerdotales estaba el mundo entero, sobre las cuatro hileras de piedras preciosas estaban grabados los nombres gloriosos de los Padres, y sobre la diadema de su cabeza estaba tu Majestad.",
+        "CEI": "Sulla sua veste lunga fino ai piedi vi era tutto il mondo, i nomi gloriosi dei padri intagliati sui quattro ordini di pietre preziose e la tua maestà sulla corona della sua testa."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "τούτοις εἶξεν ὁ ὀλοθρεύων, ταῦτα δὲ ἐφοβήθησαν· ἦν γὰρ μόνη ἡ πεῖρα τῆς ὀργῆς ἱκανή.",
+        "VUL": "His autem cessit qui exterminabat, et hæc extimuit :/ erat enim sola tentatio iræ sufficiens.]",
+        "SYN": "Этому уступил истребитель, и этого убоялся: ибо довольно было одного этого испытания гневного.",
+        "NEO": "Devant ces symboles, l’Exterminateur se retira, il en fut effrayé ; car la seule expérience de votre colère était suffisante.",
+        "NAB": "To these names the destroyer yielded, and these he feared; for the mere trial of anger was enough.",
+        "VAT_ES": "Ante esto, el Exterminador retrocedió lleno de temor, ya que bastaba con una sola prueba de tu ira.",
+        "CEI": "Di fronte a questo lo sterminatore indietreggiò, ebbe paura, poiché un solo saggio della collera bastava."
+      }
+    }
+  }
+}

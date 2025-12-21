@@ -1,0 +1,303 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_030",
+  "book_key": "NUME",
+  "sequence": 30,
+  "chapter_in": {
+    "MT": 30,
+    "VUL": 30,
+    "LXX": 30
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר מֹשֶׁ֖ה אֶל בְּנֵ֣י יִשְׂרָאֵ֑ל כְּ/כֹ֛ל אֲשֶׁר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "Καὶ ἐλάλησεν Μωυσῆς τοῖς υἱοῖς Ἰσραὴλ κατὰ πάντα ὅσα ἐνετείλατο Κύριος τῷ Μωυσῇ.",
+        "VUL": "Narravitque Moyses filiis Israël omnia quæ ei Dominus imperarat.",
+        "SYN": "И пересказал Моисей сынам Израилевым все, что повелел Господь Моисею.",
+        "NEO": "Moïse parla aux enfants d’Israël selon tout ce que \\+w Yahweh|strong=\"H3068\"\\+w** lui avait ordonné :",
+        "NAB": "Moses then gave the Israelites these instructions, just as the LORD had ordered him.",
+        "VAT_ES": "Moisés transmitió a los israelitas todas las prescripciones que le había dado el Señor.",
+        "CEI": "Mosè riferì agli Israeliti quanto il Signore gli aveva ordinato."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֤ר מֹשֶׁה֙ אֶל רָאשֵׁ֣י הַ/מַּטּ֔וֹת לִ/בְנֵ֥י יִשְׂרָאֵ֖ל לֵ/אמֹ֑ר זֶ֣ה הַ/דָּבָ֔ר אֲשֶׁ֖ר צִוָּ֥ה יְהוָֽה׃",
+        "LXX": "καὶ ἐλάλησεν Μωυσῆς πρὸς τοὺς ἄρχοντας τῶν φυλῶν Ἰσραὴλ λέγων Τοῦτο τὸ ῥῆμα ὃ συνέταξεν Κύριος·",
+        "VUL": "Et locutus est ad principes tribuum filiorum Israël : Iste est sermo quem præcepit Dominus :",
+        "SYN": "И сказал Моисей начальникам колен сынов Израилевых, говоря: вот что повелел Господь:",
+        "NEO": "Moïse parla aux chefs des tribus des enfants d’Israël, en disant : « Voici ce que \\+w Yahweh|strong=\"H3068\"\\+w** ordonne :",
+        "NAB": "Moses said to the heads of the Israelite tribes, \"This is what the LORD has commanded:",
+        "VAT_ES": "Luego dijo a los jefes de las tribus de Israel: Esto es lo que el Señor ha mandado:",
+        "CEI": "Mosè disse ai capi delle tribù degli Israeliti: \"Questo il Signore ha ordinato:"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אִישׁ֩ כִּֽי יִדֹּ֨ר נֶ֜דֶר לַֽ/יהוָ֗ה אֽוֹ הִשָּׁ֤בַע שְׁבֻעָה֙ לֶ/אְסֹ֤ר אִסָּר֙ עַל נַפְשׁ֔/וֹ לֹ֥א יַחֵ֖ל דְּבָר֑/וֹ כְּ/כָל הַ/יֹּצֵ֥א מִ/פִּ֖י/ו יַעֲשֶֽׂה׃",
+        "LXX": "ἄνθρωπος ἄνθρωπος ὃς ἂν εὔξηται εὐχὴν Κυρίῳ ἢ ὀμόσῃ ὅρκον ὁρισμῷ ἢ ὁρίσηται περὶ τῆς ψυχῆς αὐτοῦ, οὐ βεβηλώσει τὸ ῥῆμα αὐτοῦ· πάντα ὅσα ἐὰν ἐξέλθῃ ἐκ τοῦ στόματος αὐτοῦ ποιήσει.",
+        "VUL": "Si quis virorum votum Domino voverit, aut se constrinxerit juramento : non faciet irritum verbum suum, sed omne quod promisit, implebit.",
+        "SYN": "если кто даст обет Господу, или поклянется клятвою, положив зарок на душу свою, то он не должен нарушать слова своего, но должен исполнить все, что вышло из уст его.",
+        "NEO": "Si un homme fait un vœu à \\+w Yahweh|strong=\"H3068\"\\+w** ou s’il fait un serment pour s’imposer à soi-même un engagement, il ne violera pas sa parole ; tout ce qui est sorti de sa bouche, il le fera.",
+        "NAB": "When a man makes a vow to the LORD or binds himself under oath to a pledge of abstinence, he shall not violate his word, but must fulfill exactly the promise he has uttered.",
+        "VAT_ES": "Cuando un hombre hace un voto al Señor o se impone una obligación bajo juramento, no deberá faltar a su palabra: es preciso que haga exactamente lo que ha prometido.",
+        "CEI": "Quando uno avrà fatto un voto al Signore o si sarà obbligato con giuramento ad una astensione, non violi la sua parola, ma dia esecuzione a quanto ha promesso con la bocca."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/אִשָּׁ֕ה כִּֽי תִדֹּ֥ר נֶ֖דֶר לַ/יהוָ֑ה וְ/אָסְרָ֥ה אִסָּ֛ר בְּ/בֵ֥ית אָבִ֖י/הָ בִּ/נְעֻרֶֽי/הָ׃",
+        "LXX": "ἐὰν δὲ γυνὴ εὔξηται εὐχὴν Κυρίῳ ἢ ὁρίσηται ὁρισμὸν ἐν τῷ οἴκῳ τοῦ πατρὸς αὐτῆς ἐν τῇ νεότητι αὐτῆς,",
+        "VUL": "Mulier si quippiam voverit, et se constrinxerit juramento, quæ est in domo patris sui, et in ætate adhuc puellari : si cognoverit pater votum quod pollicita est, et juramentum quo obligavit animam suam, et tacuerit, voti rea erit :",
+        "SYN": "Если женщина даст обет Господу и положит _на_ _себя_ зарок в доме отца своего, в юности своей,",
+        "NEO": "Si une femme, encore jeune fille dans la maison de son père, fait un vœu à \\+w Yahweh|strong=\"H3068\"\\+w** et se lie par un engagement,",
+        "NAB": "\"When a woman, while still a maiden in her father's house, makes a vow to the LORD, or binds herself to a pledge,",
+        "VAT_ES": "Pero cuando la persona que hace el voto al Señor, o se impone esa obligación, es una mujer soltera, que vive todavía en cada de su padre,",
+        "CEI": "Quando una donna avrà fatto un voto al Signore e si sarà obbligata ad una astensione, mentre è ancora in casa del padre, durante la sua giovinezza,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/שָׁמַ֨ע אָבִ֜י/הָ אֶת נִדְרָ֗/הּ וֶֽ/אֱסָרָ/הּ֙ אֲשֶׁ֣ר אָֽסְרָ֣ה עַל נַפְשָׁ֔/הּ וְ/הֶחֱרִ֥ישׁ לָ֖/הּ אָבִ֑י/הָ וְ/קָ֨מוּ֙ כָּל נְדָרֶ֔י/הָ וְ/כָל אִסָּ֛ר אֲשֶׁר אָסְרָ֥ה עַל נַפְשָׁ֖/הּ יָקֽוּם׃",
+        "LXX": "καὶ ἀκούσῃ ὁ πατὴρ αὐτῆς τὰς εὐχὰς αὐτῆς καὶ τοὺς ὁρισμοὺς αὐτῆς οὓς ὡρίσατο κατὰ τῆς ψυχῆς αὐτῆς, καὶ παρασιωπήσῃ αὐτῆς ὁ πατήρ· καὶ στήσονται πᾶσαι αἱ εὐχαὶ αὐτῆς, καὶ πάντες οἱ ὁρισμοὶ οὓς ὡρίσατο κατὰ τῆς ψυχῆς αὐτῆς μενοῦσιν αὐτῇ.",
+        "VUL": "quidquid pollicita est, et juravit, opere complebit.",
+        "SYN": "и услышит отец обет ее и зарок, который она положила на душу свою, и промолчит о том отец ее, то все обеты ее состоятся, и всякий зарок ее, который она положила на душу свою, состоится;",
+        "NEO": "et que son père apprenne son vœu et l’engagement qu’elle s’est imposé à elle-même, et que son père garde le silence envers elle, tous ses vœux qu’elle aura faits et tout engagement qu’elle s’est imposé à elle-même seront valables ;",
+        "NAB": "if her father learns of her vow or the pledge to which she bound herself and says nothing to her about it, then any vow or any pledge she has made remains valid.",
+        "VAT_ES": "si este último, al tener conocimiento del voto o de la obligación que ella se ha impuesto, no le dice nada en contra, el voto y la obligación son válidos.",
+        "CEI": "se il padre, avuta conoscenza del voto di lei e dell'astensione alla quale si è obbligata, non dice nulla, tutti i voti di lei saranno validi e saranno valide tutte le astensioni alle quali si sarà obbligata."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/אִם הֵנִ֨יא אָבִ֣י/הָ אֹתָ/הּ֮ בְּ/י֣וֹם שָׁמְע/וֹ֒ כָּל נְדָרֶ֗י/הָ וֶֽ/אֱסָרֶ֛י/הָ אֲשֶׁר אָסְרָ֥ה עַל נַפְשָׁ֖/הּ לֹ֣א יָק֑וּם וַֽ/יהוָה֙ יִֽסְלַח לָ֔/הּ כִּי הֵנִ֥יא אָבִ֖י/הָ אֹתָֽ/הּ׃",
+        "LXX": "ἐὰν δὲ ἀνανεύων ἀνανεύσῃ ὁ πατὴρ αὐτῆς ᾗ ἂν ἡμέρᾳ ἀκούσῃ πάσας τὰς εὐχὰς αὐτῆς καὶ τοὺς ὁρισμοὺς οὓς ὡρίσατο κατὰ τῆς ψυχῆς αὐτῆς, οὐ στήσονται· καὶ Κύριος καθαριεῖ αὐτήν, ὅτι ἀνένευσεν ὁ πατὴρ αὐτῆς.",
+        "VUL": "Sin autem statim ut audierit, contradixerit pater : et vota et juramenta ejus irrita erunt, nec obnoxia tenebitur sponsioni, eo quod contradixerit pater.",
+        "SYN": "если же отец ее, услышав, запретит ей, то все обеты ее и зароки, которые она возложила на душу свою, не состоятся, и Господь простит ей, потому что запретил ей отец ее.",
+        "NEO": "mais si, le jour où il en a connaissance, son père la désavoue, tous ses vœux et tous les engagements qu’elle s’est imposé à elle-même seront sans valeur ; et \\+w Yahweh|strong=\"H3068\"\\+w** lui pardonnera, parce que son père l’a désavouée.",
+        "NAB": "But if on the day he learns of it her father expresses to her his disapproval, then any vow or any pledge she has made becomes null and void; and the LORD releases her from it, since her father has expressed to her his disapproval.",
+        "VAT_ES": "Si su padre, en cambio, al enterarse, le manifiesta su desaprobación, el voto y la obligación que ella se ha impuesto no serán válidos: el Señor no se los tomará en cuenta, porque su padre los desaprueba.",
+        "CEI": "Ma se il padre, quando ne viene a conoscenza, le fa opposizione, tutti i voti di lei e tutte le astensioni alle quali si sarà obbligata, non saranno validi; il Signore la perdonerà, perché il padre le ha fatto opposizione."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/אִם הָי֤וֹ תִֽהְיֶה֙ לְ/אִ֔ישׁ וּ/נְדָרֶ֖י/הָ עָלֶ֑י/הָ א֚וֹ מִבְטָ֣א שְׂפָתֶ֔י/הָ אֲשֶׁ֥ר אָסְרָ֖ה עַל נַפְשָֽׁ/הּ׃",
+        "LXX": "ἐὰν δὲ γενομένη γένηται ἀνδρί, καὶ αἱ εὐχαὶ αὐτῆς ἐπ’ αὐτῇ κατὰ τὴν διαστολὴν τῶν χειλέων αὐτῆς, οὓς ὡρίσατο κατὰ τῆς ψυχῆς αὐτῆς,",
+        "VUL": "Si maritum habuerit, et voverit aliquid, et semel de ore ejus verbum egrediens animam ejus obligaverit juramento :",
+        "SYN": "Если она выйдет в замужество, а на ней обет ее, или слово уст ее, которым она связала себя,",
+        "NEO": "Si elle se marie, et que pèsent sur elle ses vœux ou une parole imprudemment sortie de ses lèvres par laquelle elle s’est imposé à elle-même un engagement,",
+        "NAB": "\"If she marries while under a vow or under a rash pledge to which she bound herself,",
+        "VAT_ES": "Si la mujer se cada mientras está ligada por un voto por un compromiso contraído inconsideradamente,",
+        "CEI": "Se si marita quando è legata da voti o da un obbligo di astensione assunto alla leggera con le labbra,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/שָׁמַ֥ע אִישָׁ֛/הּ בְּ/י֥וֹם שָׁמְע֖/וֹ וְ/הֶחֱרִ֣ישׁ לָ֑/הּ וְ/קָ֣מוּ נְדָרֶ֗י/הָ וֶֽ/אֱסָרֶ֛/הָ אֲשֶׁר אָסְרָ֥ה עַל נַפְשָׁ֖/הּ יָקֻֽמוּ׃",
+        "LXX": "καὶ ἀκούσῃ ὁ ἀνὴρ αὐτῆς, καὶ παρασιωπήσῃ αὐτῇ ᾗ ἂν ἡμέρᾳ ἀκούσῃ· καὶ οὕτως στήσονται πᾶσαι αἱ εὐχαὶ αὐτῆς, καὶ οἱ ὁρισμοὶ αὐτῆς οὓς ὡρίσατο κατὰ τῆς ψυχῆς αὐτῆς στήσονται.",
+        "VUL": "quo die audierit vir, et non contradixerit, voti rea erit, reddetque quodcumque promiserat.",
+        "SYN": "и услышит муж ее и, услышав, промолчит: то обеты ее состоятся, и зароки ее, которые она возложила на душу свою, состоятся;",
+        "NEO": "et si son mari, l’apprenant, garde le silence envers elle le jour où il l’apprendra, ses vœux seront valables, ainsi que ses engagements qu’elle s’est imposé à elle-même ;",
+        "NAB": "and her husband learns of it, yet says nothing to her that day about it, then the vow or pledge she had made remains valid.",
+        "VAT_ES": "y su marido, al enterarse, no le dice nada en contra, los votos y los compromisos que ella ha contraído serán válidos.",
+        "CEI": "se il marito ne ha conoscenza e quando viene a conoscenza non dice nulla, i voti di lei saranno validi e saranno validi gli obblighi di astensione da lei assunti."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ֠/אִם בְּ/י֨וֹם שְׁמֹ֣עַ אִישָׁ/הּ֮ יָנִ֣יא אוֹתָ/הּ֒ וְ/הֵפֵ֗ר אֶת נִדְרָ/הּ֙ אֲשֶׁ֣ר עָלֶ֔י/הָ וְ/אֵת֙ מִבְטָ֣א שְׂפָתֶ֔י/הָ אֲשֶׁ֥ר אָסְרָ֖ה עַל נַפְשָׁ֑/הּ וַ/יהוָ֖ה יִֽסְלַֽח לָֽ/הּ׃",
+        "LXX": "ἐὰν δὲ ἀνανεύων ἀνανεύσῃ ὁ ἀνὴρ αὐτῆς ᾗ ἐὰν ἡμέρᾳ ἀκούσῃ, πᾶσαι αἱ εὐχαὶ αὐτῆς καὶ οἱ ὁρισμοὶ αὐτῆς οὓς ὡρίσατο κατὰ τῆς ψυχῆς αὐτῆς οὐ μενοῦσιν, ὅτι ὁ ἀνὴρ ἀνένευσεν ἀπ’ αὐτῆς· καὶ Κύριος καθαριεῖ αὐτήν.",
+        "VUL": "Sin autem audiens statim contradixerit, et irritas fecerit pollicitationes ejus, verbaque quibus obstrinxerat animam suam, propitius erit ei Dominus.",
+        "SYN": "если же муж ее, услышав, запретит ей и отвергнет обет ее, который на ней, и слово уст ее, которым она связала себя, [то они не состоятся, потому что запретил ей муж ее,] и Господь простит ей.",
+        "NEO": "mais si, le jour où il l’apprend, son mari la désavoue, il rend nul son vœu qui pèse sur elle et la parole imprudemment sortie de ses lèvres par laquelle elle s’est imposé à elle-même un engagement ; et \\+w Yahweh|strong=\"H3068\"\\+w** lui pardonnera.",
+        "NAB": "But if on the day he learns of it her husband expresses to her his disapproval, he thereby annuls the vow she had made or the rash pledge to which she had bound herself, and the LORD releases her from it.",
+        "VAT_ES": "Pero si el marido, al enterarse, le manifiesta su desaprobación, anula el voto que la obligaba o el compromiso que ella contrajo inconsideradamente, y el Señor no se lo tomará en cuenta.",
+        "CEI": "Ma se il marito, quando ne viene a conoscenza, le fa opposizione, egli annullerà il voto che essa ha fatto e l'obbligo di astensione che essa si è assunta alla leggera; il Signore la perdonerà."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/נֵ֥דֶר אַלְמָנָ֖ה וּ/גְרוּשָׁ֑ה כֹּ֛ל אֲשֶׁר אָסְרָ֥ה עַל נַפְשָׁ֖/הּ יָק֥וּם עָלֶֽי/הָ׃",
+        "LXX": "καὶ εὐχὴ χήρας καὶ ἐκβεβλημένης, ὅσα ἂν εὔξηται κατὰ τῆς ψυχῆς αὐτῆς, μενοῦσιν αὐτῇ.",
+        "VUL": "Vidua et repudiata quidquid voverint, reddent.",
+        "SYN": "Обет же вдовы и разведенной, какой бы она ни возложила зарок на душу свою, состоится.",
+        "NEO": "Le vœu d’une femme veuve ou répudiée, tout engagement qu’elle s’est imposé à elle-même, seront valables pour elle.",
+        "NAB": "The vow of a widow or of a divorced woman, or any pledge to which such a woman binds herself, is valid.",
+        "VAT_ES": "El voto de una mujer viuda o divorciada, y las obligaciones que se impongan, serán válidos.",
+        "CEI": "Ma il voto di una vedova o di una donna ripudiata, qualunque sia l'obbligo che si è assunto, rimarrà valido."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וְ/אִם בֵּ֥ית אִישָׁ֖/הּ נָדָ֑רָה אֽוֹ אָסְרָ֥ה אִסָּ֛ר עַל נַפְשָׁ֖/הּ בִּ/שְׁבֻעָֽה׃",
+        "LXX": "ἐὰν δὲ ἐν τῷ οἴκῳ τοῦ ἀνδρὸς αὐτῆς ἡ εὐχὴ αὐτῆς ἢ ὁ ὁρισμὸς κατὰ τῆς ψυχῆς αὐτῆς μεθ’ ὅρκου,",
+        "VUL": "Uxor in domo viri cum se voto constrinxerit et juramento,",
+        "SYN": "Если _жена_ в доме мужа своего дала обет, или возложила зарок на душу свою с клятвою,",
+        "NEO": "Si c’est dans la maison de son mari qu’une femme a fait un vœu ou s’est imposé à elle-même un engagement par un serment,",
+        "NAB": "\"If it is in her husband's house that she makes a vow or binds herself under oath to a pledge,",
+        "VAT_ES": "Si la mujer hace un voto o se impone una obligación bajo juramente, estando en cada de su marido,",
+        "CEI": "Se una donna nella casa del marito farà voti o si obbligherà con giuramento ad una astensione"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/שָׁמַ֤ע אִישָׁ/הּ֙ וְ/הֶחֱרִ֣שׁ לָ֔/הּ לֹ֥א הֵנִ֖יא אֹתָ֑/הּ וְ/קָ֨מוּ֙ כָּל נְדָרֶ֔י/הָ וְ/כָל אִסָּ֛ר אֲשֶׁר אָסְרָ֥ה עַל נַפְשָׁ֖/הּ יָקֽוּם׃",
+        "LXX": "καὶ ἀκούσῃ ὁ ἀνὴρ αὐτῆς, καὶ παρασιωπήσῃ αὐτῇ καὶ μὴ ἀνανεύσῃ αὐτῇ· καὶ στήσονται πᾶσαι αἱ εὐχαὶ αὐτῆς, καὶ πάντες οἱ ὁρισμοὶ αὐτῆς οὓς ὡρίσατο κατὰ τῆς ψυχῆς αὐτῆς στήσονται κατ’ αὐτῆς.",
+        "VUL": "si audierit vir, et tacuerit, nec contradixerit sponsioni, reddet quodcumque promiserat.",
+        "SYN": "и муж ее слышал, и промолчал о том, и не запретил ей, то все обеты ее состоятся, и всякий зарок, который она возложила на душу свою, состоится;",
+        "NEO": "et que son mari, l’apprenant, garde le silence envers elle et ne la désavoue pas, tous ses vœux seront valables, ainsi que tous les engagements qu’elle s’est imposé à elle-même ;",
+        "NAB": "and her husband learns of it yet says nothing to express to her his disapproval, then any vow or any pledge she has made remains valid.",
+        "VAT_ES": "y este último, al enterarse, no le dice nada en contra, el voto y la obligación que ella se ha impuesto serán válidos.",
+        "CEI": "e il marito ne avrà conoscenza, se il marito non dice nulla e non le fa opposizione, tutti i voti di lei saranno validi e saranno validi tutti gli obblighi di astensione da lei assunti."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/אִם הָפֵר֩ יָפֵ֨ר אֹתָ֥/ם אִישָׁ/הּ֮ בְּ/י֣וֹם שָׁמְע/וֹ֒ כָּל מוֹצָ֨א שְׂפָתֶ֧י/הָ לִ/נְדָרֶ֛י/הָ וּ/לְ/אִסַּ֥ר נַפְשָׁ֖/הּ לֹ֣א יָק֑וּם אִישָׁ֣/הּ הֲפֵרָ֔/ם וַ/יהוָ֖ה יִֽסְלַֽח לָֽ/הּ׃",
+        "LXX": "ἐὰν δὲ περιελὼν περιέλῃ ὁ ἀνὴρ αὐτῆς ᾗ ἂν ἡμέρᾳ ἀκούσῃ πάντα, ὅσα ἐὰν ἐξέλθῃ ἐκ τῶν χειλέων αὐτῆς κατὰ τὰς εὐχὰς αὐτῆς καὶ κατὰ τοὺς ὁρισμοὺς τοὺς κατὰ τῆς ψυχῆς αὐτῆς, οὐ μενεῖ αὐτῇ· ὁ ἀνὴρ αὐτῆς περιεῖλεν, καὶ Κύριος καθαρίσει αὐτήν.",
+        "VUL": "Sin autem extemplo contradixerit, non tenebitur promissionis rea : quia maritus contradixit, et Dominus ei propitius erit.",
+        "SYN": "если же муж ее, услышав, отвергнул их, то все вышедшие из уст ее обеты ее и зароки души ее не состоятся: муж ее уничтожил их, и Господь простит ей.",
+        "NEO": "mais si, le jour où il l’apprend, son mari les annule, tout ce qui est sorti de ses lèvres, vœux ou engagements, sera sans valeur : son mari les a annulés ; et \\+w Yahweh|strong=\"H3068\"\\+w** lui pardonnera.",
+        "NAB": "But if on the day he learns of them her husband annuls them, then whatever she has expressly promised in her vow or in her pledge becomes null and void; since her husband has annulled them, the LORD releases her from them.",
+        "VAT_ES": "Pero si su marido los anula en el momento de enterarse, no será válido nada de los que haya salido de su boca, sean votos u obligaciones: su marido los ha anulado y el Señor no los tendrá en cuenta.",
+        "CEI": "Ma se il marito, quando ne viene a conoscenza, li annulla, quanto le sarà uscito dalle labbra, voti od obblighi di astensione, non sarà valido; il marito lo ha annullato; il Signore la perdonerà."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "כָּל נֵ֛דֶר וְ/כָל שְׁבֻעַ֥ת אִסָּ֖ר לְ/עַנֹּ֣ת נָ֑פֶשׁ אִישָׁ֥/הּ יְקִימֶ֖/נּוּ וְ/אִישָׁ֥/הּ יְפֵרֶֽ/נּוּ׃",
+        "LXX": "πᾶσα εὐχὴ καὶ πᾶς ὅρκος δεσμοῦ κακῶσαι ψυχήν, ὁ ἀνὴρ αὐτῆς στήσει αὐτῇ καὶ ὁ ἀνὴρ αὐτῆς περιελεῖ.",
+        "VUL": "Si voverit, et juramento se constrinxerit, ut per jejunium, vel ceterarum rerum abstinentiam affligat animam suam, in arbitrio viri erit ut faciat, sive non faciat.",
+        "SYN": "Всякий обет и всякий клятвенный зарок, чтобы смирить душу, муж ее может утвердить, и муж ее может отвергнуть;",
+        "NEO": "Tout vœu et tout serment par lequel elle s’engage à affliger son âme, son mari peut les ratifier et son mari peut les annuler.",
+        "NAB": "\"Any vow or any pledge that she makes under oath to mortify herself, her husband can either allow to remain valid or render null and void.",
+        "VAT_ES": "Su marido podrá anular o ratificar cualquier voto o cualquier obligación que ella se imponga bajo juramento para mortificarse.",
+        "CEI": "Il marito può ratificare e il marito può annullare qualunque voto e qualunque giuramento, per il quale essa sia obbligata a mortificarsi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/אִם הַחֲרֵשׁ֩ יַחֲרִ֨ישׁ לָ֥/הּ אִישָׁ/הּ֮ מִ/יּ֣וֹם אֶל יוֹם֒ וְ/הֵקִים֙ אֶת כָּל נְדָרֶ֔י/הָ א֥וֹ אֶת כָּל אֱסָרֶ֖י/הָ אֲשֶׁ֣ר עָלֶ֑י/הָ הֵקִ֣ים אֹתָ֔/ם כִּי הֶחֱרִ֥שׁ לָ֖/הּ בְּ/י֥וֹם שָׁמְעֽ/וֹ׃",
+        "LXX": "ἐὰν δὲ σιωπῶν παρασιωπήσῃ αὐτῇ ἡμέραν ἐξ ἡμέρας, καὶ στήσει αὐτῇ πάσας τὰς εὐχὰς αὐτῆς, καὶ τοὺς ὁρισμοὺς τοὺς ἐπ’ αὐτῆς στήσει αὐτῇ, ὅτι ἐσιώπησεν αὐτῇ τῇ ἡμέρᾳ ἣν ἤκουσεν.",
+        "VUL": "Quod si audiens vir tacuerit, et in alteram diem distulerit sententiam, quidquid voverat atque promiserat, reddet : quia statim ut audivit, tacuit.",
+        "SYN": "если же муж ее молчал о том день за день, то он _тем_ утвердил все обеты ее и все зароки ее, которые на ней, утвердил, потому что он, услышав, молчал о том;",
+        "NEO": "Si son mari garde d’un jour à l’autre le silence envers elle, il ratifie ainsi tous ses vœux ou tous ses engagements qui pèsent sur elle ; il les ratifie, parce qu’il a gardé le silence envers elle le jour où il l’a appris.",
+        "NAB": "But if her husband, day after day, says nothing at all to her about them, he thereby allows as valid any vow or any pledge she has made; he has allowed them to remain valid, because on the day he learned of them he said nothing to her about them.",
+        "VAT_ES": "Si no le dice nada en contra antes del día siguiente, quiere decir que ratifica todos los votos y todas las obligaciones, porque no le dijo nada en el momento de enterarse.",
+        "CEI": "Ma se il marito, da un giorno all'altro, non dice nulla in proposito, egli ratifica così tutti i voti di lei e tutti gli obblighi di astensione da lei assunti; li ratifica perché non ha detto nulla a questo proposito quando ne ha avuto conoscenza."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/אִם הָפֵ֥ר יָפֵ֛ר אֹתָ֖/ם אַחֲרֵ֣י שָׁמְע֑/וֹ וְ/נָשָׂ֖א אֶת עֲוֺנָֽ/הּ׃",
+        "LXX": "ἐὰν δὲ περιελὼν περιέλῃ αὐτῆς μετὰ τὴν ἡμέραν ἣν ἤκουσεν, καὶ λήμψεται τὴν ἁμαρτίαν αὐτοῦ.",
+        "VUL": "Sin autem contradixerit postquam rescivit, portabit ipse iniquitatem ejus.",
+        "SYN": "а если [муж] отвергнул их, после того как услышал, то он взял на себя грех ее.",
+        "NEO": "S’il les annule après le jour où il l’a appris, il portera l’iniquité de sa femme. »",
+        "NAB": "If, however, he countermands them some time after he first learned of them, he is responsible for her guilt.\"",
+        "VAT_ES": "Y si los anula mucho tiempo después de haberse enterado, él será responsable de la falta de su mujer.",
+        "CEI": "Ma se li annulla qualche tempo dopo averne avuto conoscenza, porterà il peso della colpa della moglie\"."
+      }
+    }
+  }
+}

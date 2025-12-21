@@ -1,0 +1,673 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_COR_007",
+  "book_key": "I_COR",
+  "sequence": 7,
+  "chapter_in": {
+    "MT": 7,
+    "VUL": 7,
+    "LXX": 7
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Περὶ δὲ ὧν ἐγράψατέ μοι, καλὸν ἀνθρώπῳ γυναικὸς μὴ ἅπτεσθαι.",
+        "VUL": "De quibus autem scripsistis mihi : Bonum est homini mulierem non tangere :",
+        "SYN": "А о чем вы писали ко мне, то хорошо человеку не касаться женщины.",
+        "NEO": "Quant aux points sur lesquels vous m’avez écrit, je vous dirai qu’*il est bon pour l’homme de ne pas toucher de femme.+ 7:1 VII, 1. Après avoir posé en principe que le célibat en soi est bon, est meilleur (d’après le contexte), S. Paul passe à la question pratique.*",
+        "NAB": "Now in regard to the matters about which you wrote: \"It is a good thing for a man not to touch a woman,\"",
+        "VAT_ES": "Ahora responderé a lo que ustedes me han preguntado por escrito: Es bueno para el hombre abstenerse de la mujer.",
+        "CEI": "Ora io stesso, Paolo, vi esorto per la dolcezza e la mansuetudine di Cristo, io davanti a voi così meschino, ma di lontano così animoso con voi;"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Διὰ δὲ τὰς πορνείας ἕκαστος τὴν ἑαυτοῦ γυναῖκα ἐχέτω, καὶ ἑκάστη τὸν ἴδιον ἄνδρα ἐχέτω.",
+        "VUL": "propter fornicationem autem unusquisque suam uxorem habeat, et unaquæque suum virum habeat.",
+        "SYN": "Но, _во_ _избежание_ блуда, каждый имей свою жену, и каждая имей своего мужа.",
+        "NEO": "Toutefois, pour éviter* toute impudicité, que chacun ait sa femme, et que chaque femme ait son mari.",
+        "NAB": "but because of cases of immorality every man should have his own wife, and every woman her own husband.",
+        "VAT_ES": "Sin embargo, por el peligro de incontinencia, que cada hombre tenga su propia esposa, y cada mujer, su propio marido.",
+        "CEI": "vi supplico di far in modo che non avvenga che io debba mostrare, quando sarò tra voi, quell'energia che ritengo di dover adoperare contro alcuni che pensano che noi camminiamo secondo la carne."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Τῇ γυναικὶ ὁ ἀνὴρ τὴν ὀφειλομένην εὔνοιαν ἀποδιδότω· ὁμοίως δὲ καὶ ἡ γυνὴ τῷ ἀνδρί.",
+        "VUL": "Uxori vir debitum reddat : similiter autem et uxor viro.",
+        "SYN": "Муж оказывай жене должное благорасположение; подобно и жена мужу.",
+        "NEO": "Que le mari rende à sa femme ce qu’il lui doit, et que la femme agisse de même envers son mari.",
+        "NAB": "The husband should fulfill his duty toward his wife, and likewise the wife toward her husband.",
+        "VAT_ES": "Que el marido cumpla los deberes conyugales con su esposa; de la misma manera, la esposa con su marido.",
+        "CEI": "In realtà, noi viviamo nella carne ma non militiamo secondo la carne. Infatti le armi della nostra battaglia non sono carnali,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Ἡ γυνὴ τοῦ ἰδίου σώματος οὐκ ἐξουσιάζει, ἀλλ’ ὁ ἀνήρ· ὁμοίως δὲ καὶ ὁ ἀνὴρ τοῦ ἰδίου σώματος οὐκ ἐξουσιάζει, ἀλλ’ ἡ γυνή.",
+        "VUL": "Mulier sui corporis potestatem non habet, sed vir. Similiter autem et vir sui corporis potestatem non habet, sed mulier.",
+        "SYN": "Жена не властна над своим телом, но муж; равно и муж не властен над своим телом, но жена.",
+        "NEO": "La femme n’a pas puissance sur son propre corps, mais le mari ; pareillement le mari n’a pas puissance sur son propre corps, mais la femme.",
+        "NAB": "A wife does not have authority over her own body, but rather her husband, and similarly a husband does not have authority over his own body, but rather his wife.",
+        "VAT_ES": "La mujer no es dueña de su cuerpo, sino el marido; tampoco el marido es dueño de su cuerpo, sino la mujer.",
+        "CEI": "ma hanno da Dio la potenza di abbattere le fortezze,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Μὴ ἀποστερεῖτε ἀλλήλους, εἰ μήτι ἂν ἐκ συμφώνου πρὸς καιρόν, ἵνα σχολάζητε τῇ νηστείᾳ καὶ τῇ προσευχῇ, καὶ πάλιν ἐπὶ τὸ αὐτὸ συνέρχησθε, ἵνα μὴ πειράζῃ ὑμᾶς ὁ Σατανᾶς διὰ τὴν ἀκρασίαν ὑμῶν.",
+        "VUL": "Nolite fraudare invicem, nisi forte ex consensu ad tempus, ut vacetis orationi : et iterum revertimini in idipsum, ne tentet vos Satanas propter incontinentiam vestram.",
+        "SYN": "Не уклоняйтесь друг от друга, разве по согласию, на время, для упражнения в посте и молитве, а _потом_ опять будьте вместе, чтобы не искушал вас сатана невоздержанием вашим.",
+        "NEO": "Ne vous soustrayez pas l’un à l’autre, si ce n’est d’un commun accord, pour un temps, afin de vaquer à la prière ; puis remettez-vous ensemble, de peur que Satan ne vous tente par suite de votre incontinence.",
+        "NAB": "Do not deprive each other, except perhaps by mutual consent for a time, to be free for prayer, but then return to one another, so that Satan may not tempt you through your lack of self-control.",
+        "VAT_ES": "No se nieguen el uno al otro, a no ser de común acuerdo y por algún tiempo, a fin de poder dedicarse con más intensidad a la oración; después vuelvan a vivir como antes, para que Satanás no se aproveche de la incontinencia de ustedes y los tiente.",
+        "CEI": "distruggendo i ragionamenti e ogni baluardo che si leva contro la conoscenza di Dio, e rendendo ogni intelligenza soggetta all'obbedienza al Cristo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "Τοῦτο δὲ λέγω κατὰ συγγνώμην, οὐ κατ’ ἐπιταγήν.",
+        "VUL": "Hoc autem dico secundum indulgentiam, non secundum imperium.",
+        "SYN": "Впрочем это сказано мною как позволение, а не как повеление.",
+        "NEO": "Je dis cela par condescendance, je n’en fais pas un ordre.",
+        "NAB": "This I say by way of concession, however, not as a command.",
+        "VAT_ES": "Esto que les digo es una concesión y no una orden.",
+        "CEI": "Perciò siamo pronti a punire qualsiasi disobbedienza, non appena la vostra obbedienza sarà perfetta."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Θέλω γὰρ πάντας ἀνθρώπους εἶναι ὡς καὶ ἐμαυτόν· ἀλλ’ ἕκαστος ἴδιον χάρισμα ἔχει ἐκ θεοῦ, ὃς μὲν οὕτως, ὃς δὲ οὕτως.",
+        "VUL": "Volo enim omnes vos esse sicut meipsum : sed unusquisque proprium donum habet ex Deo : alius quidem sic, alius vero sic.",
+        "SYN": "Ибо желаю, чтобы все люди были, как и я; но каждый имеет свое дарование от Бога, один так, другой иначе.",
+        "NEO": "Je voudrais, au contraire, que tous les hommes fussent comme moi ; mais chacun reçoit de Dieu son don particulier, l’un d’une manière, l’autre d’une autre.",
+        "NAB": "Indeed, I wish everyone to be as I am, but each has a particular gift from God, one of one kind and one of another.",
+        "VAT_ES": "Mi deseo es que todo el mundo sea como yo, pero cada uno recibe del Señor su don particular: unos este, otros aquel.",
+        "CEI": "Guardate le cose bene in faccia: se qualcuno ha in se stesso la persuasione di appartenere a Cristo, si ricordi che se lui è di Cristo lo siamo anche noi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "¶Λέγω δὲ τοῖς ἀγάμοις καὶ ταῖς χήραις, καλὸν αὐτοῖς ἐστιν ἐὰν μείνωσιν ὡς κἀγώ.",
+        "VUL": "Dico autem non nuptis, et viduis : bonum est illis si sic permaneant, sicut et ego.",
+        "SYN": "Безбрачным же и вдовам говорю: хорошо им оставаться, как я.",
+        "NEO": "À ceux qui ne sont pas mariés et aux veuves, je dis qu’il leur est bon de rester comme moi-même.",
+        "NAB": "Now to the unmarried and to widows, I say: it is a good thing for them to remain as they are, as I do,",
+        "VAT_ES": "A los solteros y a las viudas, les aconsejo que permanezcan como yo.",
+        "CEI": "In realtà, anche se mi vantassi di più a causa della nostra autorità, che il Signore ci ha dato per vostra edificazione e non per vostra rovina, non avrò proprio da vergognarmene."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ οὐκ ἐγκρατεύονται, γαμησάτωσαν· κρεῖσσον γάρ ἐστιν γαμῆσαι ἢ πυροῦσθαι.",
+        "VUL": "Quod si non se continent, nubant. Melius est enim nubere, quam uri.",
+        "SYN": "Но если не _могут_ воздержаться, пусть вступают в брак; ибо лучше вступить в брак, нежели разжигаться.",
+        "NEO": "Mais s’ils+ 7:9 9. Mais s’ils n’ont pas reçu le don de continence (vers. 7). — \\+qt Que de brûler\\+qt*, d’être victime du feu des passions charnelles.* ne peuvent se contenir, qu’ils se marient ; car il vaut mieux se marier que de brûler.",
+        "NAB": "but if they cannot exercise self-control they should marry, for it is better to marry than to be on fire.",
+        "VAT_ES": "Pero si no pueden contenerse, que se casen; es preferible casarse que arder en malos deseos.",
+        "CEI": "Non sembri che io vi voglia spaventare con le lettere!"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Τοῖς δὲ γεγαμηκόσιν παραγγέλλω, οὐκ ἐγώ, ἀλλ’ ὁ κύριος, γυναῖκα ἀπὸ ἀνδρὸς μὴ χωρισθῆναι·",
+        "VUL": "Iis autem qui matrimonio juncti sunt, præcipio non ego, sed Dominus, uxorem a viro non discedere :",
+        "SYN": "А вступившим в брак не я повелеваю, а Господь: жене не разводиться с мужем, --",
+        "NEO": "Quant aux personnes mariées, j’ordonne, non pas moi, mais le Seigneur, que la femme ne se sépare pas de son mari ; —",
+        "NAB": "To the married, however, I give this instruction (not I, but the Lord): a wife should not separate from her husband",
+        "VAT_ES": "A los casados, en cambio, les ordeno –y esto no es mandamiento mío, sino del Señor– que la esposa no se separe de su marido.",
+        "CEI": "Perché \"le lettere - si dice - sono dure e forti, ma la sua presenza fisica è debole e la parola dimessa\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "ἐὰν δὲ καὶ χωρισθῇ, μενέτω ἄγαμος, ἢ τῷ ἀνδρὶ καταλλαγήτω- καὶ ἄνδρα γυναῖκα μὴ ἀφιέναι.",
+        "VUL": "quod si discesserit, manere innuptam, aut viro suo reconciliari. Et vir uxorem non dimittat.",
+        "SYN": "если же разведется, то должна оставаться безбрачною, или примириться с мужем своим, -- и мужу не оставлять жены _своей._",
+        "NEO": "si elle en est séparée, qu’elle reste sans se remarier ou qu’elle se réconcilie avec son mari ; pareillement, que le mari ne répudie pas sa femme.",
+        "NAB": "- and if she does separate she must either remain single or become reconciled to her husband - and a husband should not divorce his wife.",
+        "VAT_ES": "Si se separa, que no vuelva a casarse, o que se reconcilie con su esposo. Y que tampoco el marido abandone a su mujer.",
+        "CEI": "Questo tale rifletta però che quali noi siamo a parole per lettera, assenti, tali saremo anche con i fatti, di presenza."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Τοῖς δὲ λοιποῖς ἐγὼ λέγω, οὐχ ὁ κύριος· εἴ τις ἀδελφὸς γυναῖκα ἔχει ἄπιστον, καὶ αὐτὴ συνευδοκεῖ οἰκεῖν μετ’ αὐτοῦ, μὴ ἀφιέτω αὐτήν.",
+        "VUL": "Nam ceteris ego dico, non Dominus. Si quis frater uxorem habet infidelem, et hæc consentit habitare cum illo, non dimittat illam.",
+        "SYN": "Прочим же я говорю, а не Господь: если какой брат имеет жену неверующую, и она согласна жить с ним, то он не должен оставлять ее;",
+        "NEO": "Aux autres, je dis, moi, non le Seigneur : Si quelque frère a une femme qui n’a pas la foi, et qu’elle consente à habiter avec lui, qu’il ne la renvoie pas ;",
+        "NAB": "To the rest I say (not the Lord): if any brother has a wife who is an unbeliever, and she is willing to go on living with him, he should not divorce her;",
+        "VAT_ES": "En cuanto a las otras preguntas, les digo yo, no el Señor: Si un hombre creyente tiene una esposa que no cree, pero ella está dispuesta a convivir con él, que no la abandone.",
+        "CEI": "Certo noi non abbiamo l'audacia di uguagliarci o paragonarci ad alcuni di quelli che si raccomandano da sé; ma mentre si misurano su di sé e si paragonano con se stessi, mancano di intelligenza."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Καὶ γυνὴ ἥτις ἔχει ἄνδρα ἄπιστον, καὶ αὐτὸς συνευδοκεῖ οἰκεῖν μετ’ αὐτῆς, μὴ ἀφιέτω αὐτόν.",
+        "VUL": "Et si qua mulier fidelis habet virum infidelem, et hic consentit habitare cum illa, non dimittat virum :",
+        "SYN": "и жена, которая имеет мужа неверующего, и он согласен жить с нею, не должна оставлять его.",
+        "NEO": "et si une femme a un mari qui n’a pas la foi, et qu’il consente à habiter avec elle, qu’elle ne renvoie pas son mari.",
+        "NAB": "and if any woman has a husband who is an unbeliever, and he is willing to go on living with her, she should not divorce her husband.",
+        "VAT_ES": "Y si una mujer se encuentra en la misma condición, que tampoco se separe de su esposo.",
+        "CEI": "Noi invece non ci vanteremo oltre misura, ma secondo la norma della misura che Dio ci ha assegnato, sì da poter arrivare fino a voi;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "Ἡγίασται γὰρ ὁ ἀνὴρ ὁ ἄπιστος ἐν τῇ γυναικί, καὶ ἡγίασται ἡ γυνὴ ἡ ἄπιστος ἐν τῷ ἀνδρί· ἐπεὶ ἄρα τὰ τέκνα ὑμῶν ἀκάθαρτά ἐστιν, νῦν δὲ ἅγιά ἐστιν.",
+        "VUL": "sanctificatus est enim vir infidelis per mulierem fidelem, et sanctificata est mulier infidelis per virum fidelem : alioquin filii vestri immundi essent, nunc autem sancti sunt.",
+        "SYN": "Ибо неверующий муж освящается женою верующею, и жена неверующая освящается мужем верующим. Иначе дети ваши были бы нечисты, а теперь святы.",
+        "NEO": "Car le mari infidèle est sanctifié par la femme, et la femme infidèle est sanctifiée par le mari ; autrement vos enfants seraient impurs, tandis que maintenant ils sont saints.+ 7:14 14. Vulg., par la femme croyante… par le mari croyant (chrétien).*",
+        "NAB": "For the unbelieving husband is made holy through his wife, and the unbelieving wife is made holy through the brother. Otherwise your children would be unclean, whereas in fact they are holy.",
+        "VAT_ES": "Porque el marido que no tiene fe es santificado por su mujer, y la mujer que no tiene fe es santificada por el marido creyente. Si no fuera así, los hijos de ustedes serían impuros; en cambio, están santificados.",
+        "CEI": "né ci innalziamo in maniera indebita, come se non fossimo arrivati fino a voi, perché fino a voi siamo giunti col vangelo di Cristo."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Εἰ δὲ ὁ ἄπιστος χωρίζεται, χωριζέσθω. Οὐ δεδούλωται ὁ ἀδελφὸς ἢ ἡ ἀδελφὴ ἐν τοῖς τοιούτοις· ἐν δὲ εἰρήνῃ κέκληκεν ἡμᾶς ὁ θεός.",
+        "VUL": "Quod si infidelis discedit, discedat : non enim servituti subjectus est frater, aut soror in hujusmodi : in pace autem vocavit nos Deus.",
+        "SYN": "Если же неверующий _хочет_ развестись, пусть разводится; брат или сестра в таких _случаях_ не связаны; к миру призвал нас Господь.",
+        "NEO": "Si l’incrédule se sépare, qu’il se sépare ; le frère ou la sœur ne sont pas asservis dans ces conditions. Dieu nous a appelés dans la paix.",
+        "NAB": "If the unbeliever separates, however, let him separate. The brother or sister is not bound in such cases; God has called you to peace.",
+        "VAT_ES": "Pero si el cónyuge que no cree desea separarse, que lo haga, y en ese caso, el cónyuge creyente no permanece ligado al otro, porque Dios nos ha llamado a vivir en paz.",
+        "CEI": "Né ci vantiamo indebitamente di fatiche altrui, ma abbiamo la speranza, col crescere della vostra fede, di crescere ancora nella vostra considerazione, secondo la nostra misura,"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Τί γὰρ οἶδας, γύναι, εἰ τὸν ἄνδρα σώσεις; Ἢ τί οἶδας, ἄνερ, εἰ τὴν γυναῖκα σώσεις;",
+        "VUL": "Unde enim scis mulier, si virum salvum facies ? aut unde scis vir, si mulierem salvam facies ?",
+        "SYN": "Почему ты знаешь, жена, не спасешь ли мужа? Или ты, муж, почему знаешь, не спасешь ли жены?",
+        "NEO": "Car que sais-tu, femme, si tu sauveras ton mari ? Ou que sais-tu, mari, si tu sauveras ta femme ?",
+        "NAB": "For how do you know, wife, whether you will save your husband; or how do you know, husband, whether you will save your wife?",
+        "VAT_ES": "Después de todo, &iquest;qué sabes tú, que eres la esposa, si podrás o no salvar a tu marido, y tú, marido, si podrás salvar a tu mujer?",
+        "CEI": "per evangelizzare le regioni più lontane della vostra, senza vantarci alla maniera degli altri delle cose già fatte da altri."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Εἰ μὴ ἑκάστῳ ὡς ἐμέρισεν ὁ θεός, ἕκαστον ὡς κέκληκεν ὁ κύριος, οὕτως περιπατείτω. Καὶ οὕτως ἐν ταῖς ἐκκλησίαις πάσαις διατάσσομαι.",
+        "VUL": "Nisi unicuique sicut divisit Dominus, unumquemque sicut vocavit Deus, ita ambulet, et sicut in omnibus ecclesiis doceo.",
+        "SYN": "Только каждый поступай так, как Бог ему определил, и каждый, как Господь призвал. Так я повелеваю по всем церквам.",
+        "NEO": "Seulement, que chacun se conduise",
+        "NAB": "Only, everyone should live as the Lord has assigned, just as God called each one. I give this order in all the churches.",
+        "VAT_ES": "Fuera de este caso, que cada uno siga viviendo en la condición que el Señor le asignó y en la que se encontraba cuando fue llamado. Esto es lo que prescribo en todas las Iglesias.",
+        "CEI": "Pertanto chi si vanta, si vanti nel Signore;"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Περιτετμημένος τις ἐκλήθη; Μὴ ἐπισπάσθω. Ἐν ἀκροβυστίᾳ τις ἐκλήθη; Μὴ περιτεμνέσθω.",
+        "VUL": "Circumcisus aliquis vocatus est ? non adducat præputium. In præputio aliquis vocatus est ? non circumcidatur.",
+        "SYN": "Призван ли кто обрезанным, не скрывайся; призван ли кто необрезанным, не обрезывайся.",
+        "NEO": "Quelqu’un a-t-il été appelé étant circoncis, qu’il ne dissimule pas sa circoncision ; quelqu’un a-t-il été appelé étant incirconcis, qu’il ne se fasse pas circoncire.",
+        "NAB": "Was someone called after he had been circumcised? He should not try to undo his circumcision. Was an uncircumcised person called? He should not be circumcised.",
+        "VAT_ES": "Si un hombre estaba circuncidado antes que Dios lo llamara, que no oculte la señal de la circuncisión; si el llamado lo encontró incircunciso, que no se circuncide.",
+        "CEI": "perché non colui che si raccomanda da sé viene approvato, ma colui che il Signore raccomanda."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ἡ περιτομὴ οὐδέν ἐστιν, καὶ ἡ ἀκροβυστία οὐδέν ἐστιν, ἀλλὰ τήρησις ἐντολῶν θεοῦ.",
+        "VUL": "Circumcisio nihil est, et præputium nihil est : sed observatio mandatorum Dei.",
+        "SYN": "Обрезание ничто и необрезание ничто, но _все_ в соблюдении заповедей Божиих.",
+        "NEO": "La circoncision n’est rien, l’incirconcision n’est rien ; ce qui est tout, c’est l’observation des commandements de Dieu.",
+        "NAB": "Circumcision means nothing, and uncircumcision means nothing; what matters is keeping God's commandments.",
+        "VAT_ES": "Lo que vale no es la circuncisión, sino cumplir los mandamientos de Dios."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Ἕκαστος ἐν τῇ κλήσει ᾗ ἐκλήθη, ἐν ταύτῃ μενέτω.",
+        "VUL": "Unusquisque in qua vocatione vocatus est, in ea permaneat.",
+        "SYN": "Каждый оставайся в том звании, в котором призван.",
+        "NEO": "Que chacun demeure dans l’état où il était lorsqu’il a été appelé.",
+        "NAB": "Everyone should remain in the state in which he was called.",
+        "VAT_ES": "Que cada uno permanezca en el estado en que se encontraba cuando Dios lo llamó."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Δοῦλος ἐκλήθης; Μή σοι μελέτω· ἀλλ’ εἰ καὶ δύνασαι ἐλεύθερος γενέσθαι, μᾶλλον χρῆσαι.",
+        "VUL": "Servus vocatus es ? non sit tibi curæ : sed et si potes fieri liber, magis utere.",
+        "SYN": "Рабом ли ты призван, не смущайся; но если и можешь сделаться свободным, то лучшим воспользуйся.",
+        "NEO": "As-tu été appelé étant esclave, ne t’en mets pas en peine ; mais alors même que tu pourrais devenir libre, mets plutôt ton appel à profit.",
+        "NAB": "Were you a slave when you were called? Do not be concerned but, even if you can gain your freedom, make the most of it.",
+        "VAT_ES": "&iquest;Eras esclavo al escuchar el llamado de Dios? No te preocupes por ello, y aunque puedas llegar a ser un hombre libre, aprovecha más bien tu condición de esclavo."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Ὁ γὰρ ἐν κυρίῳ κληθεὶς δοῦλος, ἀπελεύθερος κυρίου ἐστίν· ὁμοίως καὶ ὁ ἐλεύθερος κληθείς, δοῦλός ἐστιν χριστοῦ.",
+        "VUL": "Qui enim in Domino vocatus est servus, libertus est Domini : similiter qui liber vocatus est, servus est Christi.",
+        "SYN": "Ибо раб, призванный в Господе, есть свободный Господа; равно и призванный свободным есть раб Христов.",
+        "NEO": "Car l’esclave qui a été appelé dans le Seigneur est un affranchi du Seigneur ; de même, l’homme libre qui a été appelé est un esclave du Christ.",
+        "NAB": "For the slave called in the Lord is a freed person in the Lord, just as the free person who has been called is a slave of Christ.",
+        "VAT_ES": "Porque el que era esclavo cuando el Señor lo llamó, ahora es un hombre libre en el Señor; de la misma manera, el que era libre cuando el Señor lo llamó, ahora es un esclavo de Cristo."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "Τιμῆς ἠγοράσθητε· μὴ γίνεσθε δοῦλοι ἀνθρώπων.",
+        "VUL": "Pretio empti estis : nolite fieri servi hominum.",
+        "SYN": "Вы куплены _дорогою_ ценою; не делайтесь рабами человеков.",
+        "NEO": "Vous avez été achetés un grand prix ; ne vous rendez pas esclaves des hommes.",
+        "NAB": "You have been purchased at a price. Do not become slaves to human beings.",
+        "VAT_ES": "&iexcl;Ustedes han sido redimidos y a qué precio! No se hagan esclavos de los hombres."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Ἕκαστος ἐν ᾧ ἐκλήθη, ἀδελφοί, ἐν τούτῳ μενέτω παρὰ θεῷ.",
+        "VUL": "Unusquisque in quo vocatus est, fratres, in hoc permaneat apud Deum.",
+        "SYN": "В каком _звании_ кто призван, братия, в том каждый и оставайся пред Богом.",
+        "NEO": "Que chacun, frères, demeure devant Dieu dans l’état où il était lorsqu’il a été appelé.",
+        "NAB": "Brothers, everyone should continue before God in the state in which he was called.",
+        "VAT_ES": "Hermanos, que cada uno permanezca delante de Dios en el estado en que se encontraba cuando fue llamado."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "BYZ": "¶Περὶ δὲ τῶν παρθένων ἐπιταγὴν κυρίου οὐκ ἔχω· γνώμην δὲ δίδωμι ὡς ἠλεημένος ὑπὸ κυρίου πιστὸς εἶναι.",
+        "VUL": "De virginibus autem præceptum Domini non habeo : consilium autem do, tamquam misericordiam consecutus a Domino, ut sim fidelis.",
+        "SYN": "Относительно девства я не имею повеления Господня, а даю совет, как получивший от Господа милость быть _Ему_ верным.",
+        "NEO": "Pour ce qui est des vierges, je n’ai pas de commandement du Seigneur ; mais je donne un conseil, comme ayant reçu du Seigneur la grâce d’être fidèle.",
+        "NAB": "Now in regard to virgins, I have no commandment from the Lord, but I give my opinion as one who by the Lord's mercy is trustworthy.",
+        "VAT_ES": "Acerca de la virginidad, no tengo ningún precepto del Señor. Pero hago una advertencia, como quien, por la misericordia del Señor, es digno de confianza."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "BYZ": "Νομίζω οὖν τοῦτο καλὸν ὑπάρχειν διὰ τὴν ἐνεστῶσαν ἀνάγκην, ὅτι καλὸν ἀνθρώπῳ τὸ οὕτως εἶναι.",
+        "VUL": "Existimo ergo hoc bonum esse propter instantem necessitatem, quoniam bonum est homini sic esse.",
+        "SYN": "По настоящей нужде за лучшее признаю, что хорошо человеку оставаться так.",
+        "NEO": "Je pense donc à cause des difficultés présentes, qu’il est bon à un homme d’être ainsi. —",
+        "NAB": "So this is what I think best because of the present distress: that it is a good thing for a person to remain as he is.",
+        "VAT_ES": "Considero que, por las dificultades del tiempo presente, lo mejor para el hombre es vivir sin casarse."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "BYZ": "Δέδεσαι γυναικί; Μὴ ζήτει λύσιν. Λέλυσαι ἀπὸ γυναικός; Μὴ ζήτει γυναῖκα.",
+        "VUL": "Alligatus es uxori ? noli quærere solutionem. Solutus es ab uxore ? noli quærere uxorem.",
+        "SYN": "Соединен ли ты с женой? не ищи развода. Остался ли без жены? не ищи жены.",
+        "NEO": "Es-tu lié à une femme, ne cherche pas à rompre ce lien ; n’es-tu pas lié à une femme, ne cherche pas de femme.",
+        "NAB": "Are you bound to a wife? Do not seek a separation. Are you free of a wife? Then do not look for a wife.",
+        "VAT_ES": "&iquest;Estás unido a una mujer? No te separes de ella. &iquest;No tienes mujer? No la busques."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "BYZ": "Ἐὰν δὲ καὶ γήμῃς, οὐχ ἥμαρτες· καὶ ἐὰν γήμῃ ἡ παρθένος, οὐχ ἥμαρτεν. Θλίψιν δὲ τῇ σαρκὶ ἕξουσιν οἱ τοιοῦτοι· ἐγὼ δὲ ὑμῶν φείδομαι.",
+        "VUL": "Si autem acceperis uxorem, non peccasti. Et si nupserit virgo, non peccavit : tribulationem tamen carnis habebunt hujusmodi. Ego autem vobis parco.",
+        "SYN": "Впрочем, если и женишься, не согрешишь; и если девица выйдет замуж, не согрешит. Но таковые будут иметь скорби по плоти; а мне вас жаль.",
+        "NEO": "Si pourtant tu t’es marié, tu n’as pas péché ; et si la vierge s’est mariée, elle n’a pas péché ; mais ces personnes auront des afflictions dans la chair, et moi je voudrais vous les épargner.",
+        "NAB": "If you marry, however, you do not sin, nor does an unmarried woman sin if she marries; but such people will experience affliction in their earthly life, and I would like to spare you that.",
+        "VAT_ES": "Si te casas, no pecas. Y si una joven se casa, tampoco peca. Pero los que lo hagan, sufrirán tribulaciones en su carne que yo quisiera evitarles."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "BYZ": "Τοῦτο δέ φημι, ἀδελφοί, ὁ καιρὸς συνεσταλμένος· τὸ λοιπόν ἐστιν ἵνα καὶ οἱ ἔχοντες γυναῖκας ὡς μὴ ἔχοντες ὦσιν·",
+        "VUL": "Hoc itaque dico, fratres : tempus breve est : reliquum est, ut et qui habent uxores, tamquam non habentes sint :",
+        "SYN": "Я вам сказываю, братия: время уже коротко, так что имеющие жен должны быть, как не имеющие;",
+        "NEO": "Mais voici ce que je dis, frères : le temps s’est fait court ; il faut donc que ceux qui ont des femmes soient comme n’en ayant pas,",
+        "NAB": "I tell you, brothers, the time is running out. From now on, let those having wives act as not having them,",
+        "VAT_ES": "Lo que quiero decir, hermanos, es esto: queda poco tiempo. Mientras tanto, los que tienen mujer vivan como si no la tuvieran;"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "BYZ": "καὶ οἱ κλαίοντες, ὡς μὴ κλαίοντες· καὶ οἱ χαίροντες, ὡς μὴ χαίροντες· καὶ οἱ ἀγοράζοντες, ὡς μὴ κατέχοντες·",
+        "VUL": "et qui flent, tamquam non flentes : et qui gaudent, tamquam non gaudentes : et qui emunt, tamquam non possidentes :",
+        "SYN": "и плачущие, как не плачущие; и радующиеся, как не радующиеся; и покупающие, как не приобретающие;",
+        "NEO": "ceux qui pleurent comme ne pleurant pas, ceux qui se réjouissent comme ne se réjouissant pas, ceux qui achètent comme ne possédant pas,",
+        "NAB": "those weeping as not weeping, those rejoicing as not rejoicing, those buying as not owning,",
+        "VAT_ES": "los que lloran, como si no lloraran; lo que se alegran, como si no se alegraran; los que compran, como si no poseyeran nada;"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "BYZ": "καὶ οἱ χρώμενοι τῷ κόσμῳ τούτῳ, ὡς μὴ καταχρώμενοι· παράγει γὰρ τὸ σχῆμα τοῦ κόσμου τούτου.",
+        "VUL": "et qui utuntur hoc mundo, tamquam non utantur : præterit enim figura hujus mundi.",
+        "SYN": "и пользующиеся миром сим, как не пользующиеся; ибо проходит образ мира сего.",
+        "NEO": "et ceux qui usent du monde comme n’en usant pas ; car elle passe, la figure de ce monde.",
+        "NAB": "those using the world as not using it fully. For the world in its present form is passing away.",
+        "VAT_ES": "los que disfrutan del mundo, como si no disfrutaran. Porque la apariencia de este mundo es pasajera."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "BYZ": "Θέλω δὲ ὑμᾶς ἀμερίμνους εἶναι. Ὁ ἄγαμος μεριμνᾷ τὰ τοῦ κυρίου, πῶς ἀρέσει τῷ κυρίῳ·",
+        "VUL": "Volo autem vos sine sollicitudine esse. Qui sine uxore est, sollicitus est quæ Domini sunt, quomodo placeat Deo.",
+        "SYN": "А я хочу, чтобы вы были без забот. Неженатый заботится о Господнем, как угодить Господу;",
+        "NEO": "Or je voudrais que vous fussiez sans préoccupation. Celui qui n’est pas marié a souci des choses du Seigneur, il cherche à plaire au Seigneur ;",
+        "NAB": "I should like you to be free of anxieties. An unmarried man is anxious about the things of the Lord, how he may please the Lord.",
+        "VAT_ES": "Yo quiero que ustedes vivan sin inquietudes. El que no tiene mujer se preocupa de las cosas del Señor, buscando cómo agradar al Señor."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "BYZ": "ὁ δὲ γαμήσας μεριμνᾷ τὰ τοῦ κόσμου, πῶς ἀρέσει τῇ γυναικί.",
+        "VUL": "Qui autem cum uxore est, sollicitus est quæ sunt mundi, quomodo placeat uxori, et divisus est.",
+        "SYN": "а женатый заботится о мирском, как угодить жене. Есть разность между замужнею и девицею:",
+        "NEO": "celui qui est marié a souci des choses du monde, il cherche à plaire à sa femme, et il est partagé.+ 7:33 33. Et il est partagé. La plupart des manuscrits joignent ces mots au verset suivant : \\+qt La femme\\+qt* (mariée) \\+qt et la vierge ont aussi des intérêts différents : celle qui n’est pas mariée, a souci des choses\\+qt*, etc.*",
+        "NAB": "But a married man is anxious about the things of the world, how he may please his wife,",
+        "VAT_ES": "En cambio, el que tienen mujer se preocupa de las cosas de este mundo, buscando cómo agradar a su mujer,"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "BYZ": "Μεμέρισται καὶ ἡ γυνὴ καὶ ἡ παρθένος. Ἡ ἄγαμος μεριμνᾷ τὰ τοῦ κυρίου, ἵνα ᾖ ἁγία καὶ σώματι καὶ πνεύματι· ἡ δὲ γαμήσασα μεριμνᾷ τὰ τοῦ κόσμου, πῶς ἀρέσει τῷ ἀνδρί.",
+        "VUL": "Et mulier innupta, et virgo, cogitat quæ Domini sunt, ut sit sancta corpore, et spiritu. Quæ autem nupta est, cogitat quæ sunt mundi, quomodo placeat viro.",
+        "SYN": "незамужняя заботится о Господнем, как угодить Господу, чтобы быть святою и телом и духом; а замужняя заботится о мирском, как угодить мужу.",
+        "NEO": "De même la femme, celle qui n’a pas de mari, et la vierge, ont souci des choses du Seigneur, afin d’être saintes de corps et d’esprit ; mais celle qui est mariée a souci des choses du monde, elle cherche à plaire à son mari.+ 7:34 34. Au lieu de : il est partagé, une autre leçon également très ancienne, donne : \\+qt même différence entre la femme mariée et la vierge. Celle qui n’est pas mariée\\+qt*, etc. Toutefois l’acception donnée dans ce cas au verbe μεμέρισται est fort inusitée.*",
+        "NAB": "and he is divided. An unmarried woman or a virgin is anxious about the things of the Lord, so that she may be holy in both body and spirit. A married woman, on the other hand, is anxious about the things of the world, how she may please her husband.",
+        "VAT_ES": "y así su corazón está dividido. También la mujer soltera, lo mismo que la virgen, se preocupa de las cosas del Señor, tratando de ser santa en el cuerpo y en el espíritu. La mujer casada, en cambio, se preocupa de las cosas de este mundo, buscando cómo agradar a su marido."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "BYZ": "Τοῦτο δὲ πρὸς τὸ ὑμῶν αὐτῶν συμφέρον λέγω· οὐχ ἵνα βρόχον ὑμῖν ἐπιβάλω, ἀλλὰ πρὸς τὸ εὔσχημον καὶ εὐπρόσεδρον τῷ κυρίῳ ἀπερισπάστως.",
+        "VUL": "Porro hoc ad utilitatem vestram dico : non ut laqueum vobis injiciam, sed ad id, quod honestum est, et quod facultatem præbeat sine impedimento Dominum obsecrandi.",
+        "SYN": "Говорю это для вашей же пользы, не с тем, чтобы наложить на вас узы, но чтобы вы благочинно и непрестанно _служили_ Господу без развлечения.",
+        "NEO": "Je dis cela dans votre intérêt, non pour jeter sur vous le filet, mais en vue de ce qui est bienséant et propre à vous attacher au Seigneur sans tiraillements.+ 7:35 35. Vulg., et qui vous permette de prier Dieu sans empêchement.*",
+        "NAB": "I am telling you this for your own benefit, not to impose a restraint upon you, but for the sake of propriety and adherence to the Lord without distraction.",
+        "VAT_ES": "Les he dicho estas cosas para el bien de ustedes, no para ponerles un obstáculo, sino para que ustedes hagan lo que es más conveniente y se entreguen totalmente al Señor."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "BYZ": "Εἰ δέ τις ἀσχημονεῖν ἐπὶ τὴν παρθένον αὐτοῦ νομίζει, ἐὰν ᾖ ὑπέρακμος, καὶ οὕτως ὀφείλει γίνεσθαι, ὃ θέλει ποιείτω· οὐχ ἁμαρτάνει· γαμείτωσαν.",
+        "VUL": "Si quis autem turpem se videri existimat super virgine sua, quod sit superadulta, et ita oportet fieri : quod vult faciat : non peccat, si nubat.",
+        "SYN": "Если же кто почитает неприличным для своей девицы то, чтобы она, будучи в зрелом возрасте, оставалась так, тот пусть делает, как хочет: не согрешит; пусть _таковые_ выходят замуж.",
+        "NEO": "Si quelqu’un juge qu’il exposerait sa fille au déshonneur, si elle passait la fleur de l’âge, et qu’il est de son devoir de la marier, qu’il fasse comme il veut, il ne pèche pas ; qu’elle se marie.",
+        "NAB": "If anyone thinks he is behaving improperly toward his virgin, and if a critical moment has come and so it has to be, let him do as he wishes. He is committing no sin; let them get married.",
+        "VAT_ES": "Si un hombre, encontrándose en plena vitalidad, cree que no podrá comportarse correctamente con la mujer que ama, y que debe casarse, que haga lo que le parezca: si se casan, no comete ningún pecado."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "BYZ": "Ὃς δὲ ἕστηκεν ἑδραῖος ἐν τῇ καρδίᾳ, μὴ ἔχων ἀνάγκην, ἐξουσίαν δὲ ἔχει περὶ τοῦ ἰδίου θελήματος, καὶ τοῦτο κέκρικεν ἐν τῇ καρδίᾳ αὐτοῦ, τοῦ τηρεῖν τὴν ἑαυτοῦ παρθένον, καλῶς ποιεῖ.",
+        "VUL": "Nam qui statuit in corde suo firmus, non habens necessitatem, potestatem autem habens suæ voluntatis, et hoc judicavit in corde suo, servare virginem suam, bene facit.",
+        "SYN": "Но кто непоколебимо тверд в сердце своем и, не будучи стесняем нуждою, но будучи властен в своей воле, решился в сердце своем соблюдать свою деву, тот хорошо поступает.",
+        "NEO": "Mais celui qui, sans y être forcé, étant maître de faire ce qu’il veut, a mis dans son cœur une ferme résolution, et a décidé de garder sa fille vierge, celui-là fait bien.",
+        "NAB": "The one who stands firm in his resolve, however, who is not under compulsion but has power over his own will, and has made up his mind to keep his virgin, will be doing well.",
+        "VAT_ES": "En cambio, el que decide no casarse con ella, porque se siente interiormente seguro y puede contenerse con pleno dominio de su voluntad, también obra correctamente."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "BYZ": "Ὥστε καὶ ὁ ἐκγαμίζων καλῶς ποιεῖ· ὁ δὲ μὴ ἐκγαμίζων κρεῖσσον ποιεῖ.",
+        "VUL": "Igitur et qui matrimonio jungit virginem suam, bene facit : et qui non jungit, melius facit.",
+        "SYN": "Посему выдающий замуж свою девицу поступает хорошо; а не выдающий поступает лучше.",
+        "NEO": "Ainsi celui qui marie sa fille fait bien, et celui qui ne la marie pas fait mieux.",
+        "NAB": "So then, the one who marries his virgin does well; the one who does not marry her will do better.",
+        "VAT_ES": "Por lo tanto, el que se casa con la mujer que ama, hace bien; pero el que no se casa, obra mejor todavía."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "BYZ": "Γυνὴ δέδεται νόμῳ ἐφ’ ὅσον χρόνον ζῇ ὁ ἀνὴρ αὐτῆς· ἐὰν δὲ καὶ κοιμηθῇ ὁ ἀνήρ, ἐλευθέρα ἐστὶν ᾧ θέλει γαμηθῆναι, μόνον ἐν κυρίῳ.",
+        "VUL": "Mulier alligata est legi quanto tempore vir ejus vivit, quod si dormierit vir ejus, liberata est : cui vult nubat, tantum in Domino.",
+        "SYN": "Жена связана законом, доколе жив муж ее; если же муж ее умрет, свободна выйти, за кого хочет, только в Господе.",
+        "NEO": "La femme est liée+ 7:39 39. Est liée. La Vulgate ajoute \\+qt à la loi\\+qt*, emprunté de Rom. vii, 2. — \\+qt Dans le Seigneur\\+qt*, dans la communion du Seigneur dans l’Église, à un chrétien.* aussi longtemps que vit son mari ; si le mari vient à mourir, elle est libre de se remarier à qui elle voudra ; seulement que ce soit dans le Seigneur.",
+        "NAB": "A wife is bound to her husband as long as he lives. But if her husband dies, she is free to be married to whomever she wishes, provided that it be in the Lord.",
+        "VAT_ES": "La mujer permanece ligada a su marido mientras este vive; en cambio, si muere el marido, queda en libertad para casarse con el que quiera. Pero en esto, debe ser guiada por el Señor."
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "BYZ": "Μακαριωτέρα δέ ἐστιν ἐὰν οὕτως μείνῃ, κατὰ τὴν ἐμὴν γνώμην· δοκῶ δὲ κἀγὼ πνεῦμα θεοῦ ἔχειν.",
+        "VUL": "Beatior autem erit si sic permanserit secundum meum consilium : puto autem quod et ego Spiritum Dei habeam.",
+        "SYN": "Но она блаженнее, если останется так, по моему совету; а думаю, и я имею Духа Божия.",
+        "NEO": "Elle est plus heureuse, néanmoins, si elle demeure comme elle est : c’est mon avis ; et je crois avoir, moi aussi, l’Esprit de Dieu.",
+        "NAB": "She is more blessed, though, in my opinion, if she remains as she is, and I think that I too have the Spirit of God.",
+        "VAT_ES": "Sin embargo, será más feliz si no vuelve a casarse, de acuerdo con mi consejo. Ahora bien, yo creo tener el Espíritu de Dios."
+      }
+    }
+  }
+}

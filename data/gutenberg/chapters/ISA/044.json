@@ -1,0 +1,516 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_044",
+  "book_key": "ISA",
+  "sequence": 44,
+  "chapter_in": {
+    "MT": 44,
+    "VUL": 44,
+    "LXX": 44
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֥ה שְׁמַ֖ע יַעֲקֹ֣ב עַבְדִּ֑/י וְ/יִשְׂרָאֵ֖ל בָּחַ֥רְתִּי בֽ/וֹ׃",
+        "LXX": "νῦν δὲ ἄκουσον, Ἰακὼβ ὁ παῖς μου, καὶ Ἰσραὴλ ὃν ἐξελεξάμην,",
+        "VUL": "[Et nunc audi, Jacob, serve meus,/ et Israël, quem elegi./",
+        "SYN": "А ныне слушай, Иаков, раб Мой, и Израиль, которого Я избрал.",
+        "NEO": "Et maintenant, écoute, Jacob, mon serviteur, et toi, Israël, que j’ai choisi.",
+        "NAB": "Hear then, O Jacob, my servant, Israel, whom I have chosen.",
+        "VAT_ES": "Este es mi Servidor, a quien yo sostengo, mi elegido, en quien se complace mi alma. Yo he puesto mi espíritu sobre él para que lleve el derecho a las naciones.",
+        "CEI": "Ora ascolta, Giacobbe mio servo, Israele da me eletto."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כֹּה אָמַ֨ר יְהוָ֥ה עֹשֶׂ֛/ךָ וְ/יֹצֶרְ/ךָ֥ מִ/בֶּ֖טֶן יַעְזְרֶ֑/ךָּ אַל תִּירָא֙ עַבְדִּ֣/י יַֽעֲקֹ֔ב וִ/ישֻׁר֖וּן בָּחַ֥רְתִּי בֽ/וֹ׃",
+        "LXX": "οὕτως λέγει Κύριος ὁ θεὸς ὁ ποιήσας σε, καὶ ὁ πλάσας σε ἐκ κοιλίας Ἔτι βοηθηθήσῃ· μὴ φοβοῦ, παῖς μου Ἰακώβ, καὶ ὁ ἠγαπημένος Ἰσραὴλ ὃν ἐξελεξάμην.",
+        "VUL": "Hæc dicit Dominus faciens et formans te,/ ab utero auxiliator tuus :/ Noli timere, serve meus Jacob,/ et rectissime, quem elegi./",
+        "SYN": "Так говорит Господь, создавший тебя и образовавший тебя, помогающий тебе от утробы матерней: не бойся, раб Мой, Иаков, и возлюбленный [Израиль], которого Я избрал;",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, qui t’a fait, qui t’a formé dès le sein de ta mère, et secouru :",
+        "NAB": "Thus says the LORD who made you, your help, who formed you from the womb: Fear not, O Jacob, my servant, the darling whom I have chosen.",
+        "VAT_ES": "El no gritará, no levantará la voz ni la hará resonar por las calles.",
+        "CEI": "Così dice il Signore che ti ha fatto, che ti ha formato dal seno materno e ti aiuta: \"Non temere, Giacobbe mio servo, Iesurùn da me eletto,"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "כִּ֤י אֶצָּק מַ֨יִם֙ עַל צָמֵ֔א וְ/נֹזְלִ֖ים עַל יַבָּשָׁ֑ה אֶצֹּ֤ק רוּחִ/י֙ עַל זַרְעֶ֔/ךָ וּ/בִרְכָתִ֖/י עַל צֶאֱצָאֶֽי/ךָ׃",
+        "LXX": "ὅτι ἐγὼ δώσω ὕδωρ ἐν δίψει τοῖς πορευομένοις ἐν ἀνύδρῳ, ἐπιθήσω τὸ πνεῦμά μου ἐπὶ τὸ σπέρμα σου, καὶ τὰς εὐλογίας μου ἐπὶ τὰ τέκνα σου,",
+        "VUL": "Effundam enim aquas super sitientem,/ et fluenta super aridam ;/ effundam spiritum meum super semen tuum,/ et benedictionem meam super stirpem tuam :/",
+        "SYN": "ибо Я изолью воды на жаждущее и потоки на иссохшее; излию дух Мой на племя твое и благословение Мое на потомков твоих.",
+        "NEO": "Car je répandrai des eaux sur le sol altéré, et des ruisseaux sur la terre desséchée.",
+        "NAB": "I will pour out water upon the thirsty ground, and streams upon the dry land; I will pour out my spirit upon your offspring, and my blessing upon your descendants.",
+        "VAT_ES": "No romperá la caña quebrada ni apagará la mecha que arde débilmente. Expondrá el derecho con fidelidad;",
+        "CEI": "poiché io farò scorrere acqua sul suolo assetato, torrenti sul terreno arido. Spanderò il mio spirito sulla tua discendenza, la mia benedizione sui tuoi posteri;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/צָמְח֖וּ בְּ/בֵ֣ין חָצִ֑יר כַּ/עֲרָבִ֖ים עַל יִבְלֵי מָֽיִם׃",
+        "LXX": "καὶ ἀνατελοῦσιν ὡς ἀνὰ μέσον ὕδατος χόρτος, καὶ ὡς ἰτέα ἐπὶ παραρρέον ὕδωρ.",
+        "VUL": "et germinabunt inter herbas,/ quasi salices juxta præterfluentes aquas./",
+        "SYN": "И будут расти между травою, как ивы при потоках вод.",
+        "NEO": "Et ils croîtront parmi la verdure, comme les saules le long des eaux courantes.",
+        "NAB": "They shall spring up amid the verdure like poplars beside the flowing waters.",
+        "VAT_ES": "no desfallecerá ni se desalentará hasta implantar el derecho en la tierra, y las costas lejanas esperarán su Ley.",
+        "CEI": "cresceranno come erba in mezzo all'acqua, come salici lungo acque correnti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "זֶ֤ה יֹאמַר֙ לַֽ/יהוָ֣ה אָ֔נִי וְ/זֶ֖ה יִקְרָ֣א בְ/שֵֽׁם יַעֲקֹ֑ב וְ/זֶ֗ה יִכְתֹּ֤ב יָד/וֹ֙ לַֽ/יהוָ֔ה וּ/בְ/שֵׁ֥ם יִשְׂרָאֵ֖ל יְכַנֶּֽה׃",
+        "LXX": "οὗτος ἐρεῖ Τοῦ θεοῦ εἰμι, καὶ οὗτος βοήσεται ἐπὶ τῷ ὀνόματι Ἰακώβ, καὶ ἕτερος ἐπιγράψει χειρὶ αὐτοῦ Τοῦ θεοῦ εἰμι· ἐπὶ τῷ ὀνόματι Ἰσραὴλ καὶ βοήσεται.",
+        "VUL": "Iste dicet : Domini ego sum ;/ et ille vocabit in nomine Jacob ;/ et hic scribet manu sua : Domino,/ et in nomine Israël assimilabitur.]",
+        "SYN": "Один скажет: \"я Господень\", другой назовется именем Иакова; а иной напишет рукою своею: \"я Господень\", и прозовется именем Израиля.",
+        "NEO": "Celui-ci dira : « Je suis à \\+w Yahweh|strong=\"H3068\"\\+w** ! » celui-ci se réclamera du nom de Jacob ; un autre écrira sur sa main : « A \\+w Yahweh|strong=\"H3068\"\\+w** ! » et il prendra pour surnom le nom d’Israël.",
+        "NAB": "One shall say, \"I am the LORD'S,\" another shall be named after Jacob, And this one shall write on his hand, \"The LORD'S,\" and Israel shall be his surname.",
+        "VAT_ES": "Así habla Dios, el Señor, el que creó el cielo y lo desplegó, el que extendió la tierra y lo que ella produce, el que da el aliento al pueblo que la habita y el espíritu a los que caminan por ella.",
+        "CEI": "Questi dirà: Io appartengo al Signore, quegli si chiamerà Giacobbe; altri scriverà sulla mano: Del Signore, e verrà designato con il nome di Israele\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כֹּֽה אָמַ֨ר יְהוָ֧ה מֶֽלֶךְ יִשְׂרָאֵ֛ל וְ/גֹאֲל֖/וֹ יְהוָ֣ה צְבָא֑וֹת אֲנִ֤י רִאשׁוֹן֙ וַ/אֲנִ֣י אַחֲר֔וֹן וּ/מִ/בַּלְעָדַ֖/י אֵ֥ין אֱלֹהִֽים׃",
+        "LXX": "Οὕτως λέγει ὁ βασιλεὺς Ἰσραὴλ καὶ ῥυσάμενος αὐτόν, θεὸς σαβαώθ Ἐγὼ πρῶτος καὶ ἐγὼ μετὰ ταῦτα, πλὴν ἐμοῦ οὐκ ἔστιν θεός.",
+        "VUL": "[Hæc dicit Dominus, rex Israël,/ et redemptor ejus, Dominus exercituum :/ Ego primus, et ego novissimus,/ et absque me non est deus./",
+        "SYN": "Так говорит Господь, Царь Израиля, и Искупитель его, Господь Саваоф: Я первый и Я последний, и кроме Меня нет Бога,",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, le roi d’Israël et son rédempteur, \\+w Yahweh|strong=\"H3068\"\\+w** des armées : Je suis le premier et je suis le dernier, et il n’y a pas de Dieu en dehors de moi !",
+        "NAB": "Thus says the LORD, Israel's King and redeemer, the LORD of hosts: I am the first and I am the last; there is no God but me.",
+        "VAT_ES": "Yo, el Señor, te llamé en la justicia, te sostuve de la mano, te formé y te destiné a ser la alianza del pueblo, la luz de las naciones,",
+        "CEI": "Così dice il re di Israele, il suo redentore, il Signore degli eserciti: \"Io sono il primo e io l'ultimo; fuori di me non vi sono dei."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וּ/מִֽי כָמ֣וֹ/נִי יִקְרָ֗א וְ/יַגִּידֶ֤/הָ וְ/יַעְרְכֶ֨/הָ֙ לִ֔/י מִ/שּׂוּמִ֖/י עַם עוֹלָ֑ם וְ/אֹתִיּ֛וֹת וַ/אֲשֶׁ֥ר תָּבֹ֖אנָה יַגִּ֥ידוּ לָֽ/מוֹ׃",
+        "LXX": "τίς ὥσπερ ἐγώ; στήτω καὶ καλεσάτω καὶ ἀναγγειλάτω, καὶ ἑτοιμασάτω μοι ἀφ’ οὗ ἐποίησα ἄνθρωπον εἰς τὸν αἰῶνα, καὶ τὰ ἐπερχόμενα πρὸ τοῦ ἐλθεῖν ἀναγγειλάτωσαν ὑμῖν.",
+        "VUL": "Quis similis mei ? vocet,/ et annuntiet : et ordinem exponat mihi,/ ex quo constitui populum antiquum ;/ ventura et quæ futura sunt annuntient eis./",
+        "SYN": "ибо кто как Я? Пусть он расскажет, возвестит и в порядке представит Мне _все_ с того времени, как Я устроил народ древний, или пусть возвестят наступающее и будущее.",
+        "NEO": "Qui est comme moi, — qu’il parle, qu’il le déclare, qu’il me le montre ! — depuis que j’ai fondé l’humanité des jours antiques ? Qu’ils annoncent donc l’avenir et ce qui doit arriver !",
+        "NAB": "Who is like me? Let him stand up and speak, make it evident, and confront me with it. Who of old announced future events? Let them foretell to us the things to come.",
+        "VAT_ES": "para abrir los ojos de los ciegos, para hacer salir de la prisión a los cautivos y de la cárcel a los que habitan en las tinieblas.",
+        "CEI": "Chi è come me? Si faccia avanti e lo proclami, lo riveli di presenza e me lo esponga. Chi ha reso noto il futuro dal tempo antico? Ci annunzi ciò che succederà."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אַֽל תִּפְחֲדוּ֙ וְ/אַל תִּרְה֔וּ הֲ/לֹ֥א מֵ/אָ֛ז הִשְׁמַעְתִּ֥י/ךָ וְ/הִגַּ֖דְתִּי וְ/אַתֶּ֣ם עֵדָ֑/י הֲ/יֵ֤שׁ אֱל֨וֹהַּ֙ מִ/בַּלְעָדַ֔/י וְ/אֵ֥ין צ֖וּר בַּל יָדָֽעְתִּי׃",
+        "LXX": "μὴ παρακαλύπτεσθε μηδὲ πλανᾶσθε· οὐκ ἀπ’ ἀρχῆς ἠνωτίσασθε, καὶ ἀπήγγειλα ὑμῖν; μάρτυρες ὑμεῖς ἐστε· εἰ ἔστιν θεὸς πλὴν ἐμοῦ; καὶ οὐκ ἤκουσαν τότε.",
+        "VUL": "Nolite timere, neque conturbemini :/ ex tunc audire te feci,/ et annuntiavi ; vos estis testes mei./ Numquid est Deus absque me,/ et formator quem ego non noverim ?/",
+        "SYN": "Не бойтесь и не страшитесь: не издавна ли Я возвестил тебе и предсказал? И вы Мои свидетели. Есть ли Бог кроме Меня? нет другой твердыни, никакой не знаю.",
+        "NEO": "Ne soyez pas effrayés et ne craignez point ! Ne te l’ai-je pas dès longtemps fait connaître et annoncé ? — vous m’en êtes témoins ! Y a-t-il un Dieu en dehors de moi ? Il n’y a pas d’autre Rocher ; je n’en connais point.",
+        "NAB": "Fear not, be not troubled: did I not announce and foretell it long ago? You are my witnesses! Is there a God or any Rock besides me?",
+        "VAT_ES": "&iexcl;Yo soy el Señor, este es mi Nombre! No cederé mi gloria a ningún otro ni mi alabanza a los ídolos.",
+        "CEI": "Non siate ansiosi e non temete: non forse già da molto tempo te l'ho fatto intendere e rivelato? Voi siete miei testimoni: C'è forse un dio fuori di me o una roccia che io non conosca?\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "יֹֽצְרֵי פֶ֤סֶל כֻּלָּ/ם֙ תֹּ֔הוּ וַ/חֲמוּדֵי/הֶ֖ם בַּל יוֹעִ֑ילוּ וְ/עֵדֵי/הֶ֣ם הֵׄ֗מָּׄהׄ בַּל יִרְא֛וּ וּ/בַל יֵדְע֖וּ לְמַ֥עַן יֵבֹֽשׁוּ׃",
+        "LXX": "οἱ πλάσσοντες καὶ οἱ γλύφοντες, πάντες μάταια, ποιοῦντες τὰ καταθύμια αὐτῶν ἃ οὐκ ὠφελήσει αὐτούς· ἀλλὰ αἰσχυνθήσονται.",
+        "VUL": "Plastæ idoli omnes nihil sunt,/ et amantissima eorum non proderunt eis./ Ipsi sunt testes eorum, quia non vident,/ neque intelligunt, ut confundantur./",
+        "SYN": "Делающие идолов все ничтожны, и вожделеннейшие их не приносят никакой пользы, и они сами себе свидетели в том. Они не видят и не разумеют, и потому будут посрамлены.",
+        "NEO": "Les fabricateurs d’idoles ne sont tous que néant, et leurs chefs-d’œuvre ne servent à rien ; leurs témoins, eux, ne voient rien ni ne comprennent rien, pour leur honte.",
+        "NAB": "Idol makers all amount to nothing, and their precious works are of no avail, as they themselves give witness. To their shame, they neither see nor know anything; and they are more deaf than men are.",
+        "VAT_ES": "Las cosas antiguas ya han sucedido y yo anuncio cosas nuevas; yo se las hago oír a ustedes.",
+        "CEI": "I fabbricatori di idoli sono tutti vanità e le loro opere preziose non giovano a nulla; ma i loro devoti non vedono né capiscono affatto e perciò saranno coperti di vergogna."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "מִֽי יָצַ֥ר אֵ֖ל וּ/פֶ֣סֶל נָסָ֑ךְ לְ/בִלְתִּ֖י הוֹעִֽיל׃",
+        "LXX": "οἱ πλάσσοντες θεὸν καὶ γλύφοντες, πάντες ἀνωφελῆ,",
+        "VUL": "Quis formavit deum,/ et sculptile conflavit ad nihil utile ?/",
+        "SYN": "Кто сделал бога и вылил идола, не приносящего никакой пользы?",
+        "NEO": "Qui a formé un dieu, qui a fondu une idole, pour n’en retirer aucune utilité ?",
+        "NAB": "Indeed, all the associates of anyone who forms a god, or casts an idol to no purpose, will be put to shame;",
+        "VAT_ES": "&iexcl;Canten al Señor un canto nuevo, alábenlo desde los confines de la tierra; resuene el mar y todo lo que hay en él, las costas lejanas y sus habitantes!",
+        "CEI": "Chi fabbrica un dio e fonde un idolo senza cercarne un vantaggio?"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "הֵ֤ן כָּל חֲבֵרָי/ו֙ יֵבֹ֔שׁוּ וְ/חָרָשִׁ֥ים הֵ֖מָּה מֵֽ/אָדָ֑ם יִֽתְקַבְּצ֤וּ כֻלָּ/ם֙ יַֽעֲמֹ֔דוּ יִפְחֲד֖וּ יֵבֹ֥שׁוּ יָֽחַד׃",
+        "LXX": "καὶ πάντες ὅθεν ἐγένοντο ἐξηράνθησαν, καὶ κωφοὶ ἀπὸ ἀνθρώπων· συναχθήτωσαν πάντες καὶ στήτωσαν ἅμα, καὶ ἐντραπήτωσαν καὶ αἰσχυνθήτωσαν ἅμα.",
+        "VUL": "Ecce omnes participes ejus confundentur,/ fabri enim sunt ex hominibus ;/ convenient omnes, stabunt/ et pavebunt, et confundentur simul./",
+        "SYN": "Все участвующие в этом будут постыжены, ибо и художники сами из людей же; пусть все они соберутся и станут; они устрашатся, и все будут постыжены.",
+        "NEO": "Voici que tous ses adorateurs seront confondus ; et les ouvriers ne sont que des hommes ! Qu’ils s’assemblent tous, qu’ils se présentent !... Ils trembleront et seront confondus tous ensemble.",
+        "NAB": "they will all assemble and stand forth, to be reduced to fear and shame.",
+        "VAT_ES": "&iexcl;Que alcen la voz el desierto y sus ciudades, los poblados donde habita Quedar! &iexcl;Griten de alegría los habitantes de la Roca, aclamen desde la cumbre de las montañas!",
+        "CEI": "Ecco, tutti i suoi seguaci saranno svergognati; gli stessi artefici non sono che uomini. Si radunino pure e si presentino tutti; saranno spaventati e confusi insieme."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "חָרַ֤שׁ בַּרְזֶל֙ מַֽעֲצָ֔ד וּ/פָעַל֙ בַּ/פֶּחָ֔ם וּ/בַ/מַּקָּב֖וֹת יִצְּרֵ֑/הוּ וַ/יִּפְעָלֵ֨/הוּ֙ בִּ/זְר֣וֹעַ כֹּח֔/וֹ גַּם רָעֵב֙ וְ/אֵ֣ין כֹּ֔חַ לֹא שָׁ֥תָה מַ֖יִם וַ/יִּיעָֽף׃",
+        "LXX": "ὅτι ὤξυνεν τέκτων σίδηρον, σκεπάρνῳ εἰργάσατο αὐτὸ καὶ ἐν τερέτρῳ ἔστησεν αὐτό, καὶ εἰργάσατο αὐτὸ ἐν τῷ βραχίονι τῆς ἰσχύος αὐτοῦ· καὶ πεινάσει καὶ ἀσθενήσει καὶ οὐ μὴ πίῃ ὕδωρ.",
+        "VUL": "Faber ferrarius lima operatus est,/ in prunis et in malleis formavit illud,/ et operatus est in brachio fortitudinis suæ ;/ esuriet et deficiet,/ non bibet aquam et lassescet./",
+        "SYN": "Кузнец делает из железа топор и работает на угольях, молотами обделывает его и трудится над ним сильною рукою своею до того, что становится голоден и бессилен, не пьет воды и изнемогает.",
+        "NEO": "L’ouvrier en fer travaille avec le ciseau, il passe son œuvre dans les charbons embrasés, il la façonne avec le marteau ; il la travaille d’un bras vigoureux. Cependant, il a faim, et le voilà sans force ; il ne boit pas d’eau, et le voilà épuisé !",
+        "NAB": "The smith fashions an iron image, works it over the coals, shapes it with hammers, and forges it with his strong arm. He is hungry and weak, drinks no water and becomes exhausted.",
+        "VAT_ES": "&iexcl;Den gloria al Señor, proclamen su alabanza en las costas lejanas!",
+        "CEI": "Il fabbro lavora il ferro di una scure, lo elabora sulle braci e gli dà forma con martelli, lo rifinisce con braccio vigoroso; soffre persino la fame, la forza gli viene meno; non beve acqua ed è spossato."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "חָרַ֣שׁ עֵצִים֮ נָ֣טָה קָו֒ יְתָאֲרֵ֣/הוּ בַ/שֶּׂ֔רֶד יַעֲשֵׂ֨/הוּ֙ בַּ/מַּקְצֻע֔וֹת וּ/בַ/מְּחוּגָ֖ה יְתָאֳרֵ֑/הוּ וַֽ/יַּעֲשֵׂ֨/הוּ֙ כְּ/תַבְנִ֣ית אִ֔ישׁ כְּ/תִפְאֶ֥רֶת אָדָ֖ם לָ/שֶׁ֥בֶת בָּֽיִת׃",
+        "LXX": "ἐκλεξάμενος τέκτων ξύλον ἔστησεν αὐτὸ ἐν μέτρῳ, καὶ ἐν κόλλῃ ἐρύθμισεν αὐτό, καὶ ἐποίησεν αὐτὸ ὡς μορφὴν ἀνδρὸς καὶ ὡς ὡραιότητα ἀνθρώπου, στῆσαι αὐτὸ ἐν οἴκῳ.",
+        "VUL": "Artifex lignarius extendit normam,/ formavit illud in runcina,/ fecit illud in angularibus,/ et in circino tornavit illud,/ et fecit imaginem viri/ quasi speciosum hominem/ habitantem in domo ;/",
+        "SYN": "Плотник [выбрав дерево], протягивает по нему линию, остроконечным орудием делает на нем очертание, потом обделывает его резцом и округляет его, и выделывает из него образ человека красивого вида, чтобы поставить его в доме.",
+        "NEO": "L’ouvrier en bois tend le cordeau, il trace la forme au crayon, la façonne avec le ciseau, la mesure au compas ; il en fait une figure d’homme, la belle figure humaine, pour qu’elle loge dans une maison.",
+        "NAB": "The carpenter stretches a line and marks with a stylus the outline of an idol. He shapes it with a plane and measures it off with a compass, making it like a man in appearance and dignity, to occupy a shrine.",
+        "VAT_ES": "El Señor irrumpe como un héroe, se enardece como un guerrero; lanza un grito de guerra, un alarido estridente, se arroja como un héroe contra sus enemigos:",
+        "CEI": "Il falegname stende il regolo, disegna l'immagine con il gesso; la lavora con scalpelli, misura con il compasso, riproducendo una forma umana, una bella figura d'uomo da mettere in un tempio."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לִ/כְרָת ל֣/וֹ אֲרָזִ֔ים וַ/יִּקַּ֤ח תִּרְזָה֙ וְ/אַלּ֔וֹן וַ/יְאַמֶּץ ל֖/וֹ בַּ/עֲצֵי יָ֑עַר נָטַ֥ע אֹ֖רֶ וְ/גֶ֥שֶׁם יְגַדֵּֽל׃",
+        "LXX": "ἔκοψεν ξύλον ἐκ τοῦ δρυμοῦ ὃ ἐφύτευσεν ὁ κύριος, καὶ ὑετὸς ἐμήκυνεν,",
+        "VUL": "succidit cedros,/ tulit ilicem, et quercum,/ quæ steterat inter ligna saltus ;/ plantavit pinum, quam pluvia nutrivit :/",
+        "SYN": "Он рубит себе кедры, берет сосну и дуб, которые выберет между деревьями в лесу, садит ясень, а дождь возращает его.",
+        "NEO": "Un homme va couper des cèdres ; il prend des rouvres et des chênes ; il fait un choix parmi les arbres de la forêt ; ou bien il plante des cèdres, et la pluie les fait croître.",
+        "NAB": "He cuts down cedars, takes a holm or an oak, and lays hold of other trees of the forest, which the Lord had planted and the rain made grow",
+        "VAT_ES": "«Yo permanecí callado mucho tiempo, guardé silencio y me contuve; ahora gimo como una parturienta, me sofoco y estoy jadeante.",
+        "CEI": "Egli si taglia cedri, prende un cipresso o una quercia che lascia crescere robusta nella selva; pianta un frassino che la pioggia farà crescere."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֤ה לְ/אָדָם֙ לְ/בָעֵ֔ר וַ/יִּקַּ֤ח מֵ/הֶם֙ וַ/יָּ֔חָם אַף יַשִּׂ֖יק וְ/אָ֣פָה לָ֑חֶם אַף יִפְעַל אֵל֙ וַ/יִּשְׁתָּ֔חוּ עָשָׂ֥/הוּ פֶ֖סֶל וַ/יִּסְגָּד לָֽ/מוֹ׃",
+        "LXX": "ἵνα ᾖ ἀνθρώποις εἰς καῦσιν· καὶ λαβὼν ἀπ’ αὐτοῦ ἐθερμάνθη, καὶ καύσαντες ἔπεψαν ἄρτους ἐπ’ αὐτῶν· τὸ δὲ λοιπὸν εἰργάσαντο θεούς, καὶ προσκυνοῦσιν αὐτούς.",
+        "VUL": "et facta est hominibus in focum ;/ sumpsit ex eis, et calefactus est ;/ et succendit et coxit panes ;/ de reliquo autem operatus est deum et adoravit ;/ fecit sculptile, et curvatus est ante illud./",
+        "SYN": "И это служит человеку топливом, и _часть_ из этого употребляет он на то, чтобы ему было тепло, и разводит огонь, и печет хлеб. И из того же делает бога, и поклоняется ему, делает идола, и повергается перед ним.",
+        "NEO": "Ce bois sert à l’homme pour brûler ; il en prend pour se chauffer ; il en allume aussi pour cuire son pain ; il en fait aussi un dieu et il l’adore ; il en fabrique une idole, et il se prosterne devant elle !",
+        "NAB": "to serve man for fuel. With a part of their wood he warms himself, or makes a fire for baking bread; but with another part he makes a god which he adores, an idol which he worships.",
+        "VAT_ES": "Arrasaré montañas y colinas, y secaré todo su verdor; convertiré los ríos en tierra árida y secaré los estanques.",
+        "CEI": "Tutto ciò diventa per l'uomo legna da bruciare; ne prende una parte e si riscalda o anche accende il forno per cuocervi il pane o ne fa persino un idolo e lo adora, ne forma una statua e la venera."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "חֶצְי/וֹ֙ שָׂרַ֣ף בְּמוֹ אֵ֔שׁ עַל חֶצְי/וֹ֙ בָּשָׂ֣ר יֹאכֵ֔ל יִצְלֶ֥ה צָלִ֖י וְ/יִשְׂבָּ֑ע אַף יָחֹם֙ וְ/יֹאמַ֣ר הֶאָ֔ח חַמּוֹתִ֖י רָאִ֥יתִי אֽוּר׃",
+        "LXX": "οὗ τὸ ἥμισυ αὐτοῦ κατέκαυσεν ἐν πυρί, καὶ ἐπὶ τοῦ ἡμίσους αὐτοῦ ἔπεψεν ἐν τοῖς ἄνθραξιν ἄρτους, καὶ ἐπ’ αὐτοῦ κρέας ὀπτήσας ἔφαγεν καὶ ἐνεπλήσθη, καὶ θερμανθεὶς εἶπεν Ἡδύ μοι ὅτι ἐθερμάνθην καὶ εἶδον πῦρ·",
+        "VUL": "Medium ejus combussit igni,/ et de medio ejus carnes comedit ;/ coxit pulmentum, et saturatus est,/ et calefactus est, et dixit : Vah !/ calefactus sum, vidi focum ;/",
+        "SYN": "Часть дерева сожигает в огне, другою частью варит мясо в пищу, жарит жаркое и ест досыта, а также греется и говорит: \"хорошо, я согрелся; почувствовал огонь\".",
+        "NEO": "Il en a brûlé au feu la moitié ; avec l’autre moitié, il apprête sa viande ; il cuit son rôti et se rassasie. Il se chauffe aussi et il dit : « Ah ! Ah ! Je me réchauffe ; je sens la flamme ! »",
+        "NAB": "Half of it he burns in the fire, and on its embers he roasts his meat; he eats what he has roasted until he is full, and then warms himself and says, \"Ah! I am warm, I feel the fire.\"",
+        "VAT_ES": "Conduciré a los ciegos por un camino que ignoran, los guiaré por senderos desconocidos; cambiaré las tinieblas en luz delante de ellos, y el suelo escarpado en una llanura. Estas son las cosas que haré, y no dejaré de hacerlas.",
+        "CEI": "Una metà la brucia al fuoco, sulla brace arrostisce la carne, poi mangia l'arrosto e si sazia. Ugualmente si scalda e dice: \"Mi riscaldo; mi godo il fuoco\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וּ/שְׁאֵ֣רִית֔/וֹ לְ/אֵ֥ל עָשָׂ֖ה לְ/פִסְל֑/וֹ יסגוד יִסְגָּד ל֤/וֹ וְ/יִשְׁתַּ֨חוּ֙ וְ/יִתְפַּלֵּ֣ל אֵלָ֔י/ו וְ/יֹאמַר֙ הַצִּילֵ֔/נִי כִּ֥י אֵלִ֖/י אָֽתָּה׃",
+        "LXX": "τὸ δὲ λοιπὸν ἐποίησεν εἰς θεὸν γλυπτόν, καὶ προσκυνεῖ καὶ προσεύχεται πρὸς αὐτὸ λέγων Ἐξελοῦ με, ὅτι θεός μου εἶ σύ.",
+        "VUL": "reliquum autem ejus deum fecit et sculptile sibi ;/ curvatur ante illud, et adorat illud,/ et obsecrat, dicens :/ Libera me, quia deus meus es tu !/",
+        "SYN": "А из остатков от того делает бога, идола своего, поклоняется ему, повергается перед ним и молится ему, и говорит: \"спаси меня, ибо ты бог мой\".",
+        "NEO": "De ce qui en reste, il fait son dieu, son idole, qu’il adore en se prosternant, devant laquelle il prie, en disant : « Délivre-moi, car tu es mon Dieu ! »",
+        "NAB": "Of what remains he makes a god, his idol, and prostrate before it in worship, he implores it, \"Rescue me, for you are my god.\"",
+        "VAT_ES": "Así retrocederán llenos de verg&uuml;enza los que confían en los ídolos, los que dicen al metal fundido: «Ustedes son nuestros dioses».",
+        "CEI": "Con il resto fa un dio, il suo idolo; lo venera, lo adora e lo prega: \"Salvami, perché sei il mio dio!\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "לֹ֥א יָדְע֖וּ וְ/לֹ֣א יָבִ֑ינוּ כִּ֣י טַ֤ח מֵֽ/רְאוֹת֙ עֵֽינֵי/הֶ֔ם מֵ/הַשְׂכִּ֖יל לִבֹּתָֽ/ם׃",
+        "LXX": "οὐκ ἔγνωσαν φρονῆσαι, ὅτι ἀπημαυρώθησαν τοῦ βλέπειν τοῖς ὀφθαλμοῖς αὐτῶν καὶ τοῦ νοῆσαι τῇ καρδίᾳ αὐτῶν.",
+        "VUL": "Nescierunt, neque intellexerunt ;/ obliti enim sunt ne videant oculi eorum,/ et ne intelligant corde suo./",
+        "SYN": "Не знают и не разумеют они: Он закрыл глаза их, чтобы не видели, _и_ сердца их, чтобы не разумели.",
+        "NEO": "Ils ne savent pas, ils n’entendent pas, car leurs yeux sont couverts pour ne pas voir, et leurs cœurs pour ne pas comprendre.",
+        "NAB": "The idols have neither knowledge nor reason; their eyes are coated so that they cannot see, and their hearts so that they cannot understand.",
+        "VAT_ES": "&iexcl;Oigan, ustedes, los sordos; ustedes, los ciegos, miren y vean!",
+        "CEI": "Non sanno né comprendono; una patina impedisce agli occhi loro di vedere e al loro cuore di capire."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/לֹא יָשִׁ֣יב אֶל לִבּ֗/וֹ וְ/לֹ֨א דַ֥עַת וְ/לֹֽא תְבוּנָה֮ לֵ/אמֹר֒ חֶצְי֞/וֹ שָׂרַ֣פְתִּי בְמוֹ אֵ֗שׁ וְ֠/אַף אָפִ֤יתִי עַל גֶּחָלָי/ו֙ לֶ֔חֶם אֶצְלֶ֥ה בָשָׂ֖ר וְ/אֹכֵ֑ל וְ/יִתְר/וֹ֙ לְ/תוֹעֵבָ֣ה אֶעֱשֶׂ֔ה לְ/ב֥וּל עֵ֖ץ אֶסְגּֽוֹד׃",
+        "LXX": "καὶ οὐκ ἐλογίσατο τῇ ψυχῇ αὐτοῦ οὐδὲ ἔγνω τῇ φρονήσει ὅτι τὸ ἥμισυ αὐτοῦ κατέκαυσεν ἐν πυρί, καὶ ἔπεψεν ἐπὶ τῶν ἀνθράκων αὐτοῦ ἄρτους, καὶ ὀπτήσας κρέα ἔφαγεν, καὶ τὸ λοιπὸν αὐτοῦ εἰς βδέλυγμα ἐποίησεν καὶ προσκυνοῦσιν αὐτῷ.",
+        "VUL": "Non recogitant in mente sua,/ neque cognoscunt, neque sentiunt, ut dicant :/ Medietatem ejus combussi igni,/ et coxi super carbones ejus panes ;/ coxi carnes et comedi,/ et de reliquo ejus idolum faciam ?/ ante truncum ligni procidam ?/",
+        "SYN": "И не возьмет он этого к своему сердцу, и нет у него столько знания и смысла, чтобы сказать: \"половину его я сжег в огне и на угольях его испек хлеб, изжарил мясо и съел; а из остатка его сделаю ли я мерзость? буду ли поклоняться куску дерева?\"",
+        "NEO": "Et il ne rentre pas en soi-même ; il n’a pas l’intelligence et le bon sens de se dire : « J’en ai brûlé la moitié au feu ; j’ai aussi cuit du pain sur les braises ; j’ai rôti de la viande et je l’ai mangée ; et avec le reste je ferais une abomination, je me prosternerais devant un tronc d’arbre ! »",
+        "NAB": "Yet he does not reflect, nor have the intelligence and sense to say, \"Half of the wood I burned in the fire, and on its embers I baked bread and roasted meat which I ate. Shall I then make an abomination out of the rest, or worship a block of wood?\"",
+        "VAT_ES": "&iquest;Quién es ciego, sino mi servidor y sordo como el mensajero que yo envío? &iquest;Quién es ciego, sino mi servidor y sordo como el mensajero que yo envío? &iquest;Quién es ciego como el que ha pactado conmigo y sordo como el servidor del Señor?",
+        "CEI": "Essi non riflettono, non hanno scienza e intelligenza per dire: \"Ho bruciato nel fuoco una parte, sulle sue braci ho cotto perfino il pane e arrostito la carne che ho mangiato; col residuo farò un idolo abominevole? Mi prostrerò dinanzi ad un pezzo di legno?\"."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "רֹעֶ֣ה אֵ֔פֶר לֵ֥ב הוּתַ֖ל הִטָּ֑/הוּ וְ/לֹֽא יַצִּ֤יל אֶת נַפְשׁ/וֹ֙ וְ/לֹ֣א יֹאמַ֔ר הֲ/ל֥וֹא שֶׁ֖קֶר בִּ/ימִינִֽ/י׃",
+        "LXX": "γνῶθι ὅτι σποδὸς ἡ καρδία αὐτῶν, καὶ πλανῶνται, καὶ οὐδεὶς δύναται ἐξελέσθαι τὴν ψυχὴν αὐτοῦ· ἴδετε, οὐκ ἐρεῖτε ὅτι ψεῦδος ἐν τῇ δεξιᾷ μου.",
+        "VUL": "Pars ejus cinis est ;/ cor insipiens adoravit illud,/ et non liberabit animam suam :/ neque dicet : Forte mendacium est in dextera mea./",
+        "SYN": "Он гоняется за пылью; обманутое сердце ввело его в заблуждение, и он не может освободить души своей и сказать: \"не обман ли в правой руке моей?\"",
+        "NEO": "Il se repaît de cendres ; son cœur abusé l’égare. Il ne sauvera pas son âme et ne dira pas : « Ce qui est dans ma main n’est-il pas mensonge ? »",
+        "NAB": "He is chasing ashes-a thing that cannot save itself when the flame consumes it; yet he does not say, \"Is not this thing in my right hand a fraud?\"",
+        "VAT_ES": "Tú has visto muchas cosas, pero sin prestar atención; has abierto los oídos, pero sin escuchar.",
+        "CEI": "Si pasce di cenere, ha un cuore illuso che lo travia; egli non sa liberarsene e dire: \"Ciò che tengo in mano non è forse falso?\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "זְכָר אֵ֣לֶּה יַעֲקֹ֔ב וְ/יִשְׂרָאֵ֖ל כִּ֣י עַבְדִּ/י אָ֑תָּה יְצַרְתִּ֤י/ךָ עֶֽבֶד לִ/י֙ אַ֔תָּה יִשְׂרָאֵ֖ל לֹ֥א תִנָּשֵֽׁ/נִי׃",
+        "LXX": "Μνήσθητι ταῦτα, Ἰακὼβ καὶ Ἰσραήλ, ὅτι παῖς μου εἶ σύ· ἔπλασά σε παῖδά μου, καὶ σύ, Ἰσραήλ, μὴ ἐπιλανθάνου μου.",
+        "VUL": "Memento horum Jacob,/ et Israël, quoniam servus meus es tu./ Formavi te ; servus meus es tu,/ Israël, ne obliviscaris mei./",
+        "SYN": "Помни это, Иаков и Израиль, ибо ты раб Мой; Я образовал тебя: раб Мой ты, Израиль, не забывай Меня.",
+        "NEO": "Souviens-toi de ces choses, ô Jacob, ô Israël, car tu es mon serviteur ; je t’ai formé pour mon serviteur, ô Israël, tu ne seras pas oublié de moi !",
+        "NAB": "Remember this, O Jacob, you, O Israel, who are my servant! I formed you to be a servant to me; O Israel, by me you shall never be forgotten:",
+        "VAT_ES": "El Señor, a causa de su justicia, quería hacer grande y gloriosa la Ley;",
+        "CEI": "Ricorda tali cose, o Giacobbe, o Israele, poiché sei mio servo. Io ti ho formato, mio servo sei tu; Israele, non sarai dimenticato da me."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "מָחִ֤יתִי כָ/עָב֙ פְּשָׁעֶ֔י/ךָ וְ/כֶ/עָנָ֖ן חַטֹּאותֶ֑י/ךָ שׁוּבָ֥/ה אֵלַ֖/י כִּ֥י גְאַלְתִּֽי/ךָ׃",
+        "LXX": "ἰδοὺ γὰρ ἀπήλειψα ὡς νεφέλην τὰς ἀνομίας σου, καὶ ὡς γνόφον τὰς ἁμαρτίας σου· ἐπιστράφητι πρὸς μέ, καὶ λυτρώσομαὶ σε.",
+        "VUL": "Delevi ut nubem iniquitates tuas,/ et quasi nebulam peccata tua :/ revertere ad me, quoniam redemi te./",
+        "SYN": "Изглажу беззакония твои, как туман, и грехи твои, как облако; обратись ко Мне, ибо Я искупил тебя.",
+        "NEO": "J’ai effacé tes transgressions comme un nuage ; et tes péchés comme une nuée : reviens à moi, car je t’ai racheté.",
+        "NAB": "I have brushed away your offenses like a cloud, your sins like a mist; return to me, for I have redeemed you.",
+        "VAT_ES": "pero ahora no es más que un pueblo saqueado y despojado, están todos atrapados en cuevas y encerrados en cárceles. Se los saquea, y nadie los libra, se los despoja, y nadie dice: &iexcl;Restituye!».",
+        "CEI": "Ho dissipato come nube le tue iniquità e i tuoi peccati come una nuvola. Ritorna a me, poiché io ti ho redento."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "רָנּ֨וּ שָׁמַ֜יִם כִּֽי עָשָׂ֣ה יְהוָ֗ה הָרִ֨יעוּ֙ תַּחְתִּיּ֣וֹת אָ֔רֶץ פִּצְח֤וּ הָרִים֙ רִנָּ֔ה יַ֖עַר וְ/כָל עֵ֣ץ בּ֑/וֹ כִּֽי גָאַ֤ל יְהוָה֙ יַֽעֲקֹ֔ב וּ/בְ/יִשְׂרָאֵ֖ל יִתְפָּאָֽר׃",
+        "LXX": "εὐφράνθητε, οὐρανοί, ὅτι ἠλέησεν ὁ θεὸς τὸν Ἰσραήλ· σαλπίσατε τὰ θεμέλια τῆς γῆς, βοήσατε ὄρη εὐφροσύνην, οἱ βουνοὶ καὶ πάντα τὰ ξύλα τὰ ἐν αὐτοῖς, ὅτι ἐλυτρώσατο ὁ θεὸς τὸν Ἰακώβ, καὶ Ἰσραὴλ δοξασθήσεται.",
+        "VUL": "Laudate, cæli, quoniam misericordiam fecit Dominus ;/ jubilate, extrema terræ ;/ resonate, montes, laudationem,/ saltus et omne lignum ejus,/ quoniam redemit Dominus Jacob,/ et Israël gloriabitur.]",
+        "SYN": "Торжествуйте, небеса, ибо Господь соделал это. Восклицайте, глубины земли; шумите от радости, горы, лес и все деревья в нем; ибо искупил Господь Иакова и прославится в Израиле.",
+        "NEO": "Cieux, poussez des cris de joie, car \\+w Yahweh|strong=\"H3068\"\\+w** a fait cela ! Retentissez, profondeurs de la terre ! Eclatez de joie, montagnes, forêts, avec tous vos arbres ; car \\+w Yahweh|strong=\"H3068\"\\+w** a racheté Jacob, et manifesté sa gloire en Israël !",
+        "NAB": "Raise a glad cry, you heavens: the LORD has done this; shout, you depths of the earth. Break forth, you mountains, into song, you forest, with all your trees. For the LORD has redeemed Jacob, and shows his glory through Israel.",
+        "VAT_ES": "&iquest;Quién de ustedes presta oído a esto y escucha atentamente con miras al futuro",
+        "CEI": "Esultate, cieli, poiché il Signore ha agito; giubilate, profondità della terra! Gridate di gioia, o monti, o selve con tutti i vostri alberi, perché il Signore ha riscattato Giacobbe, in Israele ha manifestato la sua gloria."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "כֹּֽה אָמַ֤ר יְהוָה֙ גֹּאֲלֶ֔/ךָ וְ/יֹצֶרְ/ךָ֖ מִ/בָּ֑טֶן אָנֹכִ֤י יְהוָה֙ עֹ֣שֶׂה כֹּ֔ל נֹטֶ֤ה שָׁמַ֨יִם֙ לְ/בַדִּ֔/י רֹקַ֥ע הָ/אָ֖רֶץ מי את/י מֵ/אִתִּֽ/י׃",
+        "LXX": "Οὕτως λέγει Κύριος ὁ λυτρούμενός σε καὶ πλάσσων σε ἐκ κοιλίας Ἐγὼ Κύριος ὁ συντελῶν πάντα, ἐξέτεινα τὸν οὐρανὸν μόνος, καὶ ἐστερέωσα τὴν γῆν.",
+        "VUL": "[Hæc dicit Dominus, redemptor tuus,/ et formator tuus ex utero :/ Ego sum Dominus, faciens omnia,/ extendens cælos solus,/ stabiliens terram, et nullus mecum ;/",
+        "SYN": "Так говорит Господь, искупивший тебя и образовавший тебя от утробы матерней: Я Господь, Который сотворил все, один распростер небеса и Своею силою разостлал землю,",
+        "NEO": "Ainsi parle \\+w Yahweh|strong=\"H3068\"\\+w**, ton rédempteur, qui t’a formé dès le sein de ta mère : C’est moi, \\+w Yahweh|strong=\"H3068\"\\+w**, qui ai fait toutes choses, moi qui seul ai déployé les cieux, affermi la terre : qui était avec moi ?",
+        "NAB": "Thus says the LORD, your redeemer, who formed you from the womb: I am the LORD, who made all things, who alone stretched out the heavens; when I spread out the earth, who was with me?",
+        "VAT_ES": "&iquest;Quién entregó a Jacob al despojo, y a Israel a los expoliadores? &iquest;No es el Señor, contra quien hemos pecado por no querer seguir sus caminos y haber desoído su Ley?",
+        "CEI": "Dice il Signore, che ti ha riscattato e ti ha formato fino dal seno materno: \"Sono io, il Signore, che ho fatto tutto, che ho spiegato i cieli da solo, ho disteso la terra; chi era con me?"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "מֵפֵר֙ אֹת֣וֹת בַּדִּ֔ים וְ/קֹסְמִ֖ים יְהוֹלֵ֑ל מֵשִׁ֧יב חֲכָמִ֛ים אָח֖וֹר וְ/דַעְתָּ֥/ם יְשַׂכֵּֽל׃",
+        "LXX": "τίς ἕτερος διασκεδάσει σημεῖα ἐνγαστριμύθων καὶ μαντείας ἀπὸ καρδίας, ἀποστρέφων φρονίμους εἰς τὰ ὀπίσω καὶ τὴν βουλὴν αὐτῶν μωρεύων,",
+        "VUL": "irrita faciens signa divinorum,/ et ariolos in furorem vertens ;/ convertens sapientes retrorsum,/ et scientiam eorum stultam faciens ;/",
+        "SYN": "Который делает ничтожными знамения лжепророков и обнаруживает безумие волшебников, мудрецов прогоняет назад и знание их делает глупостью,",
+        "NEO": "Je déjoue les présages des prophètes de mensonge, et fais délirer les devins ; je fais reculer les sages, et change leur science en folie.",
+        "NAB": "It is I who bring to nought the omens of liars, who make fools of diviners; I turn wise men back and make their knowledge foolish.",
+        "VAT_ES": "El Señor derramó contra él el ardor de su ira y el estallido de la guerra; lo envolvió en llamas, pero él no comprendió; lo quemó, pero él no hizo caso.",
+        "CEI": "Io svento i presagi degli indovini, dimostro folli i maghi, costringo i sapienti a ritrattarsi e trasformo in follia la loro scienza;"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "מֵקִים֙ דְּבַ֣ר עַבְדּ֔/וֹ וַ/עֲצַ֥ת מַלְאָכָ֖י/ו יַשְׁלִ֑ים הָ/אֹמֵ֨ר לִ/ירוּשָׁלִַ֜ם תּוּשָׁ֗ב וּ/לְ/עָרֵ֤י יְהוּדָה֙ תִּבָּנֶ֔ינָה וְ/חָרְבוֹתֶ֖י/הָ אֲקוֹמֵֽם׃",
+        "LXX": "καὶ ἱστῶν ῥήματα παιδὸς αὐτοῦ, καὶ τὴν βουλὴν τῶν ἀγγέλων αὐτοῦ ἀληθεύων; ὁ λέγων Ἰερουσαλήμ Κατοικηθήσῃ, καὶ ταῖς πόλεσιν τῆς Ἰδουμαίας Οἰκοδομηθήσεσθε, ⸂⸆⸃ καὶ τὰ ἔρημα αὐτῆς ἀνατελεῖ·",
+        "VUL": "suscitans verbum servi sui,/ et consilium nuntiorum suorum complens ;/ qui dico Jerusalem : Habitaberis,/ et civitatibus Juda : Ædificabimini,/ et deserta ejus suscitabo ;/",
+        "SYN": "Который утверждает слово раба Своего и приводит в исполнение изречение Своих посланников, Который говорит Иерусалиму: :ты будешь населен\", и городам Иудиным: \"вы будете построены, и развалины его Я восстановлю\",",
+        "NEO": "J’accomplis la parole de mon serviteur, et j’exécute le conseil de mes envoyés ; je dis de Jérusalem : « Qu’elle soit habitée ! » et des villes de Juda : « Qu’elles soient rebâties ! je relèverai leurs ruines. »",
+        "NAB": "It is I who confirm the words of my servants, I carry out the plan announced by my messengers; I say to Jerusalem: Be inhabited; to the cities of Judah: Be rebuilt; I will raise up their ruins.",
+        "CEI": "confermo la parola dei suoi servi, compio i disegni dei suoi messaggeri. Io dico a Gerusalemme: Sarai abitata, e alle città di Giuda: Sarete riedificate e ne restaurerò le rovine."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "הָ/אֹמֵ֥ר לַ/צּוּלָ֖ה חֳרָ֑בִי וְ/נַהֲרֹתַ֖יִ/ךְ אוֹבִֽישׁ׃",
+        "LXX": "ὁ λέγων τῇ ἀβύσσῳ Ἐρημωθήσῃ, καὶ τοὺς ποταμούς σου ξηρανῶ·",
+        "VUL": "qui dico profundo : Desolare,/ et flumina tua arefaciam ;/",
+        "SYN": "Который бездне говорит: \"иссохни!\" и реки твои Я иссушу,",
+        "NEO": "Je dis à l’abîme : « Taris ! je dessécherai tes fleuves. »",
+        "NAB": "It is I who said to the deep: Be dry; I will dry up your wellsprings.",
+        "CEI": "Io dico all'oceano: Prosciugati! Faccio inaridire i tuoi fiumi."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "הָ/אֹמֵ֤ר לְ/כ֨וֹרֶשׁ֙ רֹעִ֔/י וְ/כָל חֶפְצִ֖/י יַשְׁלִ֑ם וְ/לֵ/אמֹ֤ר לִ/ירוּשָׁלִַ֨ם֙ תִּבָּנֶ֔ה וְ/הֵיכָ֖ל תִּוָּסֵֽד׃",
+        "LXX": "ὁ λέγων Κύρῳ φρονεῖν, καὶ Πάντα τὰ θελήματά μου ποιήσει· ὁ λέγων Ἰερουσαλήμ Οἰκοδομηθήσῃ, καὶ τὸν οἶκον τὸν ἅγιόν μου θεμελιώσω. ⸆",
+        "VUL": "qui dico Cyro : Pastor meus es,/ et omnem voluntatem meam complebis ;/ qui dico Jerusalem : Ædificaberis,/ et templo : Fundaberis.]",
+        "SYN": "Который говорит о Кире: пастырь Мой, и он исполнит всю волю Мою и скажет Иерусалиму: \"ты будешь построен!\" и храму: \"ты будешь основан!\"",
+        "NEO": "Je dis de Cyrus : « C’est mon berger ; il accomplira toute ma volonté, en disant à Jérusalem : Sois rebâtie ! et au temple : Sois fondé ! »",
+        "NAB": "I say of Cyrus: My shepherd, who fulfills my every wish; He shall say of Jerusalem, \"Let her be rebuilt,\" and of the temple, \"Let its foundations be laid.\"",
+        "CEI": "Io dico a Ciro: Mio pastore; ed egli soddisferà tutti i miei desideri, dicendo a Gerusalemme: Sarai riedificata; e al tempio: Sarai riedificato dalle fondamenta\"."
+      }
+    }
+  }
+}

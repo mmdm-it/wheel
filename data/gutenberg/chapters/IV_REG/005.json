@@ -1,0 +1,501 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IV_REG_005",
+  "book_key": "IV_REG",
+  "sequence": 5,
+  "chapter_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ֠/נַעֲמָן שַׂר צְבָ֨א מֶֽלֶךְ אֲרָ֜ם הָיָ֣ה אִישׁ֩ גָּד֨וֹל לִ/פְנֵ֤י אֲדֹנָי/ו֙ וּ/נְשֻׂ֣א פָנִ֔ים כִּֽי ב֛/וֹ נָֽתַן יְהוָ֥ה תְּשׁוּעָ֖ה לַ/אֲרָ֑ם וְ/הָ/אִ֗ישׁ הָיָ֛ה גִּבּ֥וֹר חַ֖יִל מְצֹרָֽע׃",
+        "LXX": "Καὶ Ναιμὰν ὁ ἄρχων τῆς δυνάμεως Συρίας ἦν ἀνὴρ μέγας ἐνώπιον τοῦ κυρίου αὐτοῦ καὶ τεθαυμασμένος προσώπῳ, ὅτι ἐν αὐτῷ ἔδωκεν Κύριος σωτηρίαν Συρίᾳ· καὶ ὁ ἀνὴρ ἦν δυνατὸς ἰσχύι, λελεπρωμένος.",
+        "VUL": "Naaman princeps militiæ regis Syriæ erat vir magnus apud dominum suum, et honoratus : per illum enim dedit Dominus salutem Syriæ : erat autem vir fortis et dives, sed leprosus.",
+        "SYN": "Нееман, военачальник царя Сирийского, был великий человек у господина своего и уважаемый, потому что чрез него дал Господь победу Сириянам; и человек сей был отличный воин, но прокаженный.",
+        "NEO": "Naaman, chef de l’armée du roi de Syrie, était auprès de son maître un homme puissant et considéré, car c’était par lui que \\+w Yahweh|strong=\"H3068\"\\+w** avait accordé le salut aux Syriens ; mais cet homme fort et vaillant était lépreux.",
+        "NAB": "Naaman, the army commander of the king of Aram, was highly esteemed and respected by his master, for through him the LORD had brought victory to Aram. But valiant as he was, the man was a leper.",
+        "VAT_ES": "Naamán, general del ejército del rey de Aram, era un hombre prestigioso y altamente estimado por su señor, porque gracias a él, el Señor había dado la victoria a Aram. Pero este hombre, guerrero valeroso, padecía de una enfermedad en la piel.",
+        "CEI": "Nàaman, capo dell'esercito del re di Aram, era un personaggio autorevole presso il suo signore e stimato, perché per suo mezzo il Signore aveva concesso la vittoria agli Aramei. Ma questo uomo prode era lebbroso."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/אֲרָם֙ יָצְא֣וּ גְדוּדִ֔ים וַ/יִּשְׁבּ֛וּ מֵ/אֶ֥רֶץ יִשְׂרָאֵ֖ל נַעֲרָ֣ה קְטַנָּ֑ה וַ/תְּהִ֕י לִ/פְנֵ֖י אֵ֥שֶׁת נַעֲמָֽן׃",
+        "LXX": "καὶ Συρία ἐξῆλθον μονόζωνοι καὶ ᾐχμαλώτευσαν ἐκ γῆς Ἰσραὴλ νεάνιδα μικράν, καὶ ἦν ἐνώπιον τῆς γυναικὸς Ναιμάν.",
+        "VUL": "Porro de Syria egressi fuerant latrunculi, et captivam duxerant de terra Israël puellam parvulam, quæ erat in obsequio uxoris Naaman :",
+        "SYN": "Сирияне _однажды_ пошли отрядами и взяли в плен из земли Израильской маленькую девочку, и она служила жене Неемановой.",
+        "NEO": "Or les Syriens, étant sortis par bandes, avaient emmené captive une petite fille du pays d’Israël, qui était au service de la femme de Naaman.",
+        "NAB": "Now the Arameans had captured from the land of Israel in a raid a little girl, who became the servant of Naaman's wife.",
+        "VAT_ES": "En una de sus incursiones, los arameos se habían llevado cautiva del país de Israel a una niña, que fue puesta al servicio de la mujer de Naamán.",
+        "CEI": "Ora bande aramee in una razzia avevano rapito dal paese di Israele una giovinetta, che era finita al servizio della moglie di Nàaman."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר֙ אֶל גְּבִרְתָּ֔/הּ אַחֲלֵ֣י אֲדֹנִ֔/י לִ/פְנֵ֥י הַ/נָּבִ֖יא אֲשֶׁ֣ר בְּ/שֹׁמְר֑וֹן אָ֛ז יֶאֱסֹ֥ף אֹת֖/וֹ מִ/צָּרַעְתּֽ/וֹ׃",
+        "LXX": "ἡ δὲ εἶπεν τῇ κυρίᾳ αὐτῆς Ὄφελον ὁ κύριός μου ἐνώπιον τοῦ προφήτου τοῦ θεοῦ τοῦ ἐν Σαμαρείᾳ, τότε ἀποσυνάξει αὐτὸν ἀπὸ τῆς λέπρας αὐτοῦ.",
+        "VUL": "quæ ait ad dominam suam : Utinam fuisset dominus meus ad prophetam qui est in Samaria, profecto curasset eum a lepra quam habet.",
+        "SYN": "И сказала она госпоже своей: о, если бы господин мой побывал у пророка, который в Самарии, то он снял бы с него проказу его!",
+        "NEO": "Elle dit à sa maîtresse : « Oh ! Si mon seigneur était auprès du prophète qui est à Samarie, le prophète le délivrerait de sa lèpre. »",
+        "NAB": "\"If only my master would present himself to the prophet in Samaria,\" she said to her mistress, \"he would cure him of his leprosy.\"",
+        "VAT_ES": "Ella dijo entonces a su patrona: «&iexcl;Ojalá mi señor se presentara ante el profeta que está en Samaría! Seguramente, él lo libraría de su enfermedad».",
+        "CEI": "Essa disse alla padrona: \"Se il mio signore si rivolgesse al profeta che è in Samaria, certo lo libererebbe dalla lebbra\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֕א וַ/יַּגֵּ֥ד לַ/אדֹנָ֖י/ו לֵ/אמֹ֑ר כָּ/זֹ֤את וְ/כָ/זֹאת֙ דִּבְּרָ֣ה הַֽ/נַּעֲרָ֔ה אֲשֶׁ֖ר מֵ/אֶ֥רֶץ יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ εἰσῆλθεν καὶ ἀπήγγειλεν τῷ κυρίῳ ἑαυτῆς καὶ εἶπεν Οὕτως καὶ οὕτως ἐλάλησεν ἡ νεᾶνις ἡ ἐκ γῆς Ἰσραήλ.",
+        "VUL": "Ingressus est itaque Naaman ad dominum suum, et nuntiavit ei, dicens : Sic et sic locuta est puella de terra Israël.",
+        "SYN": "И пошел _Нееман_ и передал это господину своему, говоря: так и так говорит девочка, которая из земли Израильской.",
+        "NEO": "Naaman vint rapporter ce propos à son maître, en disant : « La jeune fille du pays d’Israël a parlé de telle et telle manière. »",
+        "NAB": "Naaman went and told his lord just what the slave girl from the land of Israel had said.",
+        "VAT_ES": "Naamán fue y le contó a su señor: «La niña del país de Israel ha dicho esto y esto».",
+        "CEI": "Nàaman andò a riferire al suo signore: \"La giovane che proviene dal paese di Israele ha detto così e così\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר מֶֽלֶךְ אֲרָם֙ לֶךְ בֹּ֔א וְ/אֶשְׁלְחָ֥ה סֵ֖פֶר אֶל מֶ֣לֶךְ יִשְׂרָאֵ֑ל וַ/יֵּלֶךְ֩ וַ/יִּקַּ֨ח בְּ/יָד֜/וֹ עֶ֣שֶׂר כִּכְּרֵי כֶ֗סֶף וְ/שֵׁ֤שֶׁת אֲלָפִים֙ זָהָ֔ב וְ/עֶ֖שֶׂר חֲלִיפ֥וֹת בְּגָדִֽים׃",
+        "LXX": "καὶ εἶπεν βασιλεὺς Συρίας πρὸς Ναιμάν Δεῦρο εἴσελθε, καὶ ἐξαποστελῶ βιβλίον πρὸς βασιλέα Ἰσραήλ· καὶ ἐπορεύθη καὶ ἔλαβεν ἐν τῇ χειρὶ αὐτοῦ δέκα τάλαντα ἀργυρίου καὶ ἑξακισχιλίους χρυσοῦς καὶ δέκα ἀλλασσομένας στολὰς.",
+        "VUL": "Dixitque ei rex Syriæ : Vade, et mittam litteras ad regem Israël. Qui cum profectus esset, et tulisset secum decem talenta argenti, et sex millia aureos, et decem mutatoria vestimentorum,",
+        "SYN": "И сказал царь Сирийский [Нееману]: пойди, сходи, а я пошлю письмо к царю Израильскому. Он пошел и взял с собою десять талантов серебра и шесть тысяч _сиклей_ золота, и десять перемен одежд;",
+        "NEO": "Et le roi de Syrie dit : « Va, et j’enverrai une lettre au roi d’Israël. » Il partit, prenant avec lui dix talents d’argent, six mille sicles d’or et dix vêtements de rechange.",
+        "NAB": "\"Go,\" said the king of Aram. \"I will send along a letter to the king of Israel.\" So Naaman set out, taking along ten silver talents, six thousand gold pieces, and ten festal garments.",
+        "VAT_ES": "El rey de Aram respondió: «Está bien, ve, y yo enviaré una carta al rey de Israel». Naamán partió llevando consigo diez talentos de plata, seis mil siclos de oro y diez trajes de gala,",
+        "CEI": "Il re di Aram gli disse: \"Vacci! Io invierò una lettera al re di Israele\". Quegli partì, prendendo con sé dieci talenti d'argento, seimila sicli d'oro e dieci vestiti."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יָּבֵ֣א הַ/סֵּ֔פֶר אֶל מֶ֥לֶךְ יִשְׂרָאֵ֖ל לֵ/אמֹ֑ר וְ/עַתָּ֗ה כְּ/ב֨וֹא הַ/סֵּ֤פֶר הַ/זֶּה֙ אֵלֶ֔י/ךָ הִנֵּ֨ה שָׁלַ֤חְתִּי אֵלֶ֨י/ךָ֙ אֶת נַעֲמָ֣ן עַבְדִּ֔/י וַ/אֲסַפְתּ֖/וֹ מִ/צָּרַעְתּֽ/וֹ׃",
+        "LXX": "καὶ ἤνεγκεν τὸ βιβλίον πρὸς τὸν βασιλέα Ἰσραὴλ λέγων Καὶ νῦν ὡς ἂν ἔλθῃ τὸ βιβλίον τοῦτο πρὸς σέ, ἰδοὺ ἀπέστειλα πρὸς σὲ Ναιμὰν τὸν δοῦλόν μου, καὶ ἀποσυνάξεις αὐτὸν ἀπὸ τῆς λέπρας αὐτοῦ.",
+        "VUL": "detulit litteras ad regem Israël in hæc verba : Cum acceperis epistolam hanc, scito quod miserim ad te Naaman servum meum, ut cures eum a lepra sua.",
+        "SYN": "и принес письмо царю Израильскому, в котором было сказано: вместе с письмом сим, вот, я посылаю к тебе Неемана, слугу моего, чтобы ты снял с него проказу его.",
+        "NEO": "Il porta au roi d’Israël la lettre où il était dit : « Or donc, quand cette lettre te sera parvenue, voici que tu sauras que je t’envoie Naaman, mon serviteur, pour que tu le délivres de sa lèpre. »",
+        "NAB": "To the king of Israel he brought the letter, which read: \"With this letter I am sending my servant Naaman to you, that you may cure him of his leprosy.\"",
+        "VAT_ES": "y presentó al rey de Israel la carta que decía: «Al mismo tiempo que te llega esta carta, te envío a Naamán, mi servidor, para que lo libres de su enfermedad».",
+        "CEI": "Portò la lettera al re di Israele, nella quale si diceva: \"Ebbene, insieme con questa lettera ho mandato da te Nàaman, mio ministro, perché tu lo curi dalla lebbra\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֡י כִּ/קְרֹא֩ מֶֽלֶךְ יִשְׂרָאֵ֨ל אֶת הַ/סֵּ֜פֶר וַ/יִּקְרַ֣ע בְּגָדָ֗י/ו וַ/יֹּ֨אמֶר֙ הַ/אֱלֹהִ֥ים אָ֨נִי֙ לְ/הָמִ֣ית וּֽ/לְ/הַחֲי֔וֹת כִּֽי זֶה֙ שֹׁלֵ֣חַ אֵלַ֔/י לֶ/אֱסֹ֥ף אִ֖ישׁ מִ/צָּֽרַעְתּ֑/וֹ כִּ֤י אַךְ דְּעֽוּ נָא֙ וּ/רְא֔וּ כִּֽי מִתְאַנֶּ֥ה ה֖וּא לִֽ/י׃",
+        "LXX": "καὶ ἐγένετο ὡς ἀνέγνω βασιλεὺς Ἰσραὴλ τὸ βιβλίον, διέρρηξεν τὰ ἱμάτια αὐτοῦ καὶ εἶπεν Ὁ θεὸς ἐγὼ τοῦ θανατῶσαι καὶ ζωοποιῆσαι, ὅτι οὗτος ἀποστέλλει πρὸς μὲ ἀποσυνάξαι ἄνδρα ἀπὸ τῆς λέπρας αὐτοῦ; ὅτι πλὴν γνῶτε δὴ καὶ ἴδετε ὅτι προφασίζεται οὗτός μοι.",
+        "VUL": "Cumque legisset rex Israël litteras, scidit vestimenta sua, et ait : Numquid deus ego sum, ut occidere possim et vivificare, quia iste misit ad me ut curem hominem a lepra sua ? animadvertite, et videte quod occasiones quærat adversum me.",
+        "SYN": "Царь Израильский, прочитав письмо, разодрал одежды свои и сказал: разве я Бог, чтобы умерщвлять и оживлять, что он посылает ко мне, чтобы я снял с человека проказу его? вот, теперь знайте и смотрите, что он ищет предлога враждовать против меня.",
+        "NEO": "Après avoir lu la lettre, le roi d’Israël déchira ses vêtements et dit : « Suis-je un dieu, capable de faire mourir et de faire vivre, qu’il envoie vers moi pour que je délivre un homme de sa lèpre ? Sachez donc et voyez qu’il me cherche querelle. »",
+        "NAB": "When he read the letter, the king of Israel tore his garments and exclaimed: \"Am I a god with power over life and death, that this man should send someone to me to be cured of leprosy? Take note! You can see he is only looking for a quarrel with me!\"",
+        "VAT_ES": "Apenas el rey de Israel leyó la carta, rasgó sus vestiduras y dijo: «&iquest;Acaso yo soy Dios, capaz de hacer morir y vivir, para que este me mande librar a un hombre de su enfermedad? Fíjense bien y verán que él está buscando un pretexto contra mí».",
+        "CEI": "Letta la lettera, il re di Israele si stracciò le vesti dicendo: \"Sono forse Dio per dare la morte o la vita, perché costui mi mandi un lebbroso da guarire? Sì, ora potete constatare chiaramente che egli cerca pretesti contro di me\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֞י כִּ/שְׁמֹ֣עַ אֱלִישָׁ֣ע אִישׁ הָ/אֱלֹהִ֗ים כִּֽי קָרַ֤ע מֶֽלֶךְ יִשְׂרָאֵל֙ אֶת בְּגָדָ֔י/ו וַ/יִּשְׁלַח֙ אֶל הַ/מֶּ֣לֶךְ לֵ/אמֹ֔ר לָ֥/מָּה קָרַ֖עְתָּ בְּגָדֶ֑י/ךָ יָבֹֽא נָ֣א אֵלַ֔/י וְ/יֵדַ֕ע כִּ֛י יֵ֥שׁ נָבִ֖יא בְּ/יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐγένετο ὡς ἤκουσεν Ἐλεισαῖε ὅτι διέρρηξεν ὁ βασιλεὺς Ἰσραὴλ τὰ ἱμάτια ἑαυτοῦ, καὶ ἀπέστειλεν πρὸς τὸν βασιλέα Ἰσραὴλ λέγων Ἵνα τί διέρρηξας τὰ ἱμάτιά σου; ἐλθέτω δὴ πρὸς μὲ Ναιμὰν καὶ γνώτω ὅτι ἔστιν προφήτης ἐν Ἰσραήλ.",
+        "VUL": "Quod cum audisset Eliseus vir Dei, scidisse videlicet regem Israël vestimenta sua, misit ad eum, dicens : Quare scidisti vestimenta tua ? veniat ad me, et sciat esse prophetam in Israël.",
+        "SYN": "Когда услышал Елисей, человек Божий, что царь Израильский разодрал одежды свои, то послал сказать царю: для чего ты разодрал одежды свои? пусть он придет ко мне, и узнает, что есть пророк в Израиле.",
+        "NEO": "Lorsqu’Elisée, homme de Dieu, apprit que le roi d’Israël avait déchiré ses vêtements, il envoya dire au roi : « Pourquoi as-tu déchiré tes vêtements ? Qu’il vienne donc à moi, et il saura qu’il y a un prophète en Israël. »",
+        "NAB": "When Elisha, the man of God, heard that the king of Israel had torn his garments, he sent word to the king: \"Why have you torn your garments? Let him come to me and find out that there is a prophet in Israel.\"",
+        "VAT_ES": "Cuando Eliseo, el hombre de Dios, oyó que el rey de Israel había rasgado sus vestiduras, mandó a decir al rey: «&iquest;Por qué has rasgado tus vestiduras? Que él venga a mí y sabrá que hay un profeta en Israel».",
+        "CEI": "Quando Eliseo, uomo di Dio, seppe che il re si era stracciate le vesti, mandò a dire al re: \"Perché ti sei stracciate le vesti? Quell'uomo venga da me e saprà che c'è un profeta in Israele\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֥א נַעֲמָ֖ן ב/סוס/ו בְּ/סוּסָ֣י/ו וּ/בְ/רִכְבּ֑/וֹ וַ/יַּעֲמֹ֥ד פֶּֽתַח הַ/בַּ֖יִת לֶ/אֱלִישָֽׁע׃",
+        "LXX": "καὶ ἦλθεν Ναιμὰν ἐν ἵππῳ καὶ ἅρματι, καὶ ἔστη ἐπὶ θύρας οἴκου Ἐλεισαῖε.",
+        "VUL": "Venit ergo Naaman cum equis et curribus, et stetit ad ostium domus Elisei :",
+        "SYN": "И прибыл Нееман на конях своих и на колеснице своей, и остановился у входа в дом Елисеев.",
+        "NEO": "Naaman vint avec ses chevaux et son char, et il s’arrêta à la porte de la maison d’Elisée.",
+        "NAB": "Naaman came with his horses and chariots and stopped at the door of Elisha's house.",
+        "VAT_ES": "Naamán llegó entonces con sus caballos y su carruaje, y se detuvo a la puerta de la casa de Eliseo.",
+        "CEI": "Nàaman arrivò con i suoi cavalli e con il suo carro e si fermò alla porta della casa di Eliseo."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֥ח אֵלָ֛י/ו אֱלִישָׁ֖ע מַלְאָ֣ךְ לֵ/אמֹ֑ר הָל֗וֹךְ וְ/רָחַצְתָּ֤ שֶֽׁבַע פְּעָמִים֙ בַּ/יַּרְדֵּ֔ן וְ/יָשֹׁ֧ב בְּשָׂרְ/ךָ֛ לְ/ךָ֖ וּ/טְהָֽר׃",
+        "LXX": "καὶ ἀπέστειλεν Ἐλεισαῖε ἄγγελον πρὸς αὐτὸν λέγων Πορευθεὶς λοῦσαι ἑπτάκις ἐν τῷ Ἰορδάνῃ, καὶ ἐπιστρέψει ἡ σάρξ σού σοι καὶ καθαρισθήσῃ.",
+        "VUL": "misitque ad eum Eliseus nuntium, dicens : Vade, et lavare septies in Jordane, et recipiet sanitatem caro tua, atque mundaberis.",
+        "SYN": "И выслал к нему Елисей слугу сказать: пойди, омойся семь раз в Иордане, и обновится тело твое у тебя, и будешь чист.",
+        "NEO": "Elisée lui envoya un messager pour lui dire : « Va, et lave-toi sept fois dans le Jourdain ; ta chair te reviendra, et tu seras pur. »",
+        "NAB": "The prophet sent him the message: \"Go and wash seven times in the Jordan, and your flesh will heal, and you will be clean.\"",
+        "VAT_ES": "Eliseo mandó un mensajero para que le dijera: «Ve a bañarte siete veces en el Jordán; tu carne se restablecerá y quedarás limpio».",
+        "CEI": "Eliseo gli mandò un messaggero per dirgli: \"Và, bagnati sette volte nel Giordano: la tua carne tornerà sana e tu sarai guarito\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יִּקְצֹ֥ף נַעֲמָ֖ן וַ/יֵּלַ֑ךְ וַ/יֹּאמֶר֩ הִנֵּ֨ה אָמַ֜רְתִּי אֵלַ֣/י יֵצֵ֣א יָצ֗וֹא וְ/עָמַד֙ וְ/קָרָא֙ בְּ/שֵׁם יְהוָ֣ה אֱלֹהָ֔י/ו וְ/הֵנִ֥יף יָד֛/וֹ אֶל הַ/מָּק֖וֹם וְ/אָסַ֥ף הַ/מְּצֹרָֽע׃",
+        "LXX": "καὶ ἐθυμώθη Ναιμάν, καὶ ἀπῆλθεν καὶ εἶπεν Ἰδοὺ εἶπον Πρὸς μὲ πάντως ἐξελεύσεται καὶ ἐπικαλέσεται ἐν ὀνόματι θεοῦ αὐτοῦ, καὶ ἐπιθήσει τὴν χεῖρα αὐτοῦ ἐπὶ τὸν τόπον, καὶ ἀποσυνάξει τὸ λεπρόν.",
+        "VUL": "Iratus Naaman recedebat, dicens : Putabam quod egrederetur ad me, et stans invocaret nomen Domini Dei sui, et tangeret manu sua locum lepræ, et curaret me.",
+        "SYN": "И разгневался Нееман, и пошел, и сказал: вот, я думал, что он выйдет, станет и призовет имя Господа Бога своего, и возложит руку свою на то место и снимет проказу;",
+        "NEO": "Naaman fut irrité, et il s’en alla, en disant : « Voici que je me disais : Il sortira vers moi, il se présentera lui-même, il invoquera le nom de \\+w Yahweh|strong=\"H3068\"\\+w**, son Dieu, il agitera sa main sur la plaie et délivrera le lépreux.",
+        "NAB": "But Naaman went away angry, saying, \"I thought that he would surely come out and stand there to invoke the LORD his God, and would move his hand over the spot, and thus cure the leprosy.",
+        "VAT_ES": "Pero Naamán, muy irritado, se fue diciendo: «Yo me había imaginado que saldría él personalmente, se pondría de pie e invocaría el nombre del Señor, su Dios; luego pasaría su mano sobre la parte afectada y curaría al enfermo de la piel.",
+        "CEI": "Nàaman si sdegnò e se ne andò protestando: \"Ecco, io pensavo: Certo, verrà fuori, si fermerà, invocherà il nome del Signore suo Dio, toccando con la mano la parte malata e sparirà la lebbra."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "הֲ/לֹ֡א טוֹב֩ אבנה אֲמָנָ֨ה וּ/פַרְפַּ֜ר נַהֲר֣וֹת דַּמֶּ֗שֶׂק מִ/כֹּל֙ מֵימֵ֣י יִשְׂרָאֵ֔ל הֲ/לֹֽא אֶרְחַ֥ץ בָּ/הֶ֖ם וְ/טָהָ֑רְתִּי וַ/יִּ֖פֶן וַ/יֵּ֥לֶךְ בְּ/חֵמָֽה׃",
+        "LXX": "οὐχὶ ἀγαθὸς Ἀβανὰ καὶ Ἀφαρφὰ ποταμοὶ Δαμασκοῦ ὑπὲρ πάντα τὰ ὕδατα Ἰσραὴλ; οὐχὶ πορευθεὶς λούσομαι ἐν αὐτοῖς καὶ καθαρισθήσομαι; καὶ ἐξέκλινεν καὶ ἀπῆλθεν ἐν θυμῷ.",
+        "VUL": "Numquid non meliores sunt Abana et Pharphar fluvii Damasci, omnibus aquis Israël, ut laver in eis, et munder ? Cum ergo vertisset se, et abiret indignans,",
+        "SYN": "разве Авана и Фарфар, реки Дамасские, не лучше всех вод Израильских? разве я не мог бы омыться в них и очиститься? И оборотился и удалился в гневе.",
+        "NEO": "Les fleuves de Damas, l’Abana et le Pharphar, ne valent-ils pas mieux que toutes les eaux d’Israël ? Ne pourrais-je pas m’y laver et devenir pur ? » Et se tournant, il s’en allait en colère.",
+        "NAB": "Are not the rivers of Damascus, the Abana and the Pharpar, better than all the waters of Israel? Could I not wash in them and be cleansed?\" With this, he turned about in anger and left.",
+        "VAT_ES": "&iquest;Acaso los ríos de Damasco, el Abaná y el Parpar, no valen más que todas las aguas de Israel? &iquest;No podía yo bañarme en ellos y quedar limpio?». Y dando media vuelta, se fue muy enojado.",
+        "CEI": "Forse l'Abana e il Parpar, fiumi di Damasco, non sono migliori di tutte le acque di Israele? Non potrei bagnarmi in quelli per essere guarito?\". Si voltò e se ne partì adirato."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יִּגְּשׁ֣וּ עֲבָדָי/ו֮ וַ/יְדַבְּר֣וּ אֵלָי/ו֒ וַ/יֹּאמְר֗וּ אָבִי֙ דָּבָ֣ר גָּד֗וֹל הַ/נָּבִ֛יא דִּבֶּ֥ר אֵלֶ֖י/ךָ הֲ/ל֣וֹא תַעֲשֶׂ֑ה וְ/אַ֛ף כִּֽי אָמַ֥ר אֵלֶ֖י/ךָ רְחַ֥ץ וּ/טְהָֽר׃",
+        "LXX": "καὶ ἤγγισαν οἱ παῖδες αὐτοῦ καὶ ἐλάλησαν πρὸς αὐτόν Μέγαν λόγον ἐλάλησεν ὁ προφήτης πρὸς σέ, οὐχὶ ποιήσεις; καὶ ὅτι εἶπεν πρὸς σέ Λοῦσαι καὶ καθαρίσθητι.",
+        "VUL": "accesserunt ad eum servi sui, et locuti sunt ei : Pater, etsi rem grandem dixisset tibi propheta, certe facere debueras : quanto magis quia nunc dixit tibi : Lavare, et mundaberis ?",
+        "SYN": "И подошли рабы его и говорили ему, и сказали: отец мой, _если_ _бы_ что-нибудь важное сказал тебе пророк, то не сделал ли бы ты? а тем более, когда он сказал тебе только: \"омойся, и будешь чист\".",
+        "NEO": "Ses serviteurs s’approchèrent pour lui parler, et ils dirent : « Mon père, si le prophète t’avait demandé quelque chose de difficile, ne l’aurais-tu pas fait ? Combien plus dois-tu lui obéir, quand il t’a dit : Lave-toi, et tu seras pur ? »",
+        "NAB": "But his servants came up and reasoned with him. \"My father,\" they said, \"if the prophet had told you to do something extraordinary, would you not have done it? All the more now, since he said to you, 'Wash and be clean,' should you do as he said.\"",
+        "VAT_ES": "Pero sus servidores se acercaron para decirle: «Padre, si el profeta te hubiera mandado una cosa extraordinaria &iquest;no la habrías dicho? &iexcl;Cuánto más si él te dice simplemente: Báñate y quedarás limpio!».",
+        "CEI": "Gli si avvicinarono i suoi servi e gli dissero: \"Se il profeta ti avesse ingiunto una cosa gravosa, non l'avresti forse eseguita? Tanto più ora che ti ha detto: bagnati e sarai guarito\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֗רֶד וַ/יִּטְבֹּ֤ל בַּ/יַּרְדֵּן֙ שֶׁ֣בַע פְּעָמִ֔ים כִּ/דְבַ֖ר אִ֣ישׁ הָ/אֱלֹהִ֑ים וַ/יָּ֣שָׁב בְּשָׂר֗/וֹ כִּ/בְשַׂ֛ר נַ֥עַר קָטֹ֖ן וַ/יִּטְהָֽר׃",
+        "LXX": "καὶ κατέβη Ναιμὰν καὶ ἐβαπτίσατο ἐν τῷ Ἰορδάνῃ ἑπτάκι κατὰ τὸ ῥῆμα Ἐλεισαῖε· καὶ ἐπέστρεψεν ἡ σὰρξ αὐτοῦ ὡς σὰρξ παιδαρίου μικροῦ, καὶ ἐκαθαρίσθη.",
+        "VUL": "Descendit, et lavit in Jordane septies juxta sermonem viri Dei : et restituta est caro ejus sicut caro pueri parvuli, et mundatus est.",
+        "SYN": "И пошел он и окунулся в Иордане семь раз, по слову человека Божия, и обновилось тело его, как тело малого ребенка, и очистился.",
+        "NEO": "Il descendit et se plongea sept fois dans le Jourdain, selon la parole de l’homme de Dieu ; et sa chair redevint comme la chair d’un petit enfant, et il fut purifié.",
+        "NAB": "So Naaman went down and plunged into the Jordan seven times at the word of the man of God. His flesh became again like the flesh of a little child, and he was clean.",
+        "VAT_ES": "Entonces bajó y se sumergió siete veces en el Jordán, conforme a la palabra del hombre de Dios; así su carne se volvió como la de un muchacho joven y quedó limpio.",
+        "CEI": "Egli, allora, scese e si lavò nel Giordano sette volte, secondo la parola dell'uomo di Dio, e la sua carne ridivenne come la carne di un giovinetto; egli era guarito."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יָּשָׁב֩ אֶל אִ֨ישׁ הָ/אֱלֹהִ֜ים ה֣וּא וְ/כָֽל מַחֲנֵ֗/הוּ וַ/יָּבֹא֮ וַ/יַּעֲמֹ֣ד לְ/פָנָי/ו֒ וַ/יֹּ֗אמֶר הִנֵּה נָ֤א יָדַ֨עְתִּי֙ כִּ֣י אֵ֤ין אֱלֹהִים֙ בְּ/כָל הָ/אָ֔רֶץ כִּ֖י אִם בְּ/יִשְׂרָאֵ֑ל וְ/עַתָּ֛ה קַח נָ֥א בְרָכָ֖ה מֵ/אֵ֥ת עַבְדֶּֽ/ךָ׃",
+        "LXX": "καὶ ἐπέστρεψεν πρὸς Ἐλεισαῖε αὐτὸς καὶ πᾶσα ἡ παρεμβολὴ αὐτοῦ, καὶ ἦλθεν καὶ ἔστη καὶ εἶπεν Ἰδοὺ ἔγνωκα ὅτι οὐκ ἔστιν θεὸς ἐν πάσῃ τῇ γῇ ὅτι ἀλλ’ ἢ ἐν τῷ Ἰσραήλ· καὶ νῦν λάβε τὴν εὐλογίαν παρὰ τοῦ δούλου σου.",
+        "VUL": "Reversusque ad virum Dei cum universo comitatu suo, venit, et stetit coram eo, et ait : Vere scio quod non sit alius deus in universa terra, nisi tantum in Israël. Obsecro itaque ut accipias benedictionem a servo tuo.",
+        "SYN": "И возвратился к человеку Божию он и все сопровождавшие его, и пришел, и стал пред ним, и сказал: вот, я узнал, что на всей земле нет Бога, как только у Израиля; итак прими дар от раба твоего.",
+        "NEO": "Naaman retourna vers l’homme de Dieu, avec toute sa suite. Quand il fut arrivé, il se présenta devant lui et dit : « Voici donc que je sais qu’il n’y a pas de Dieu sur toute la terre, si ce n’est en Israël. Et maintenant, accepte donc un présent de la part de ton serviteur. »",
+        "NAB": "He returned with his whole retinue to the man of God. On his arrival he stood before him and said, \"Now I know that there is no God in all the earth, except in Israel. Please accept a gift from your servant.\"",
+        "VAT_ES": "Luego volvió con toda su comitiva adonde estaba el hombre de Dios. Al llegar, se presentó delante de él y le dijo: «Ahora reconozco que no hay Dios en toda la tierra, a no ser en Israel. Acepta, te lo ruego, un presente de tu servidor».",
+        "CEI": "Tornò con tutto il seguito dall'uomo di Dio; entrò e si presentò a lui dicendo: \"Ebbene, ora so che non c'è Dio su tutta la terra se non in Israele\". Ora accetta un dono dal tuo servo\"."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֕אמֶר חַי יְהוָ֛ה אֲשֶׁר עָמַ֥דְתִּי לְ/פָנָ֖י/ו אִם אֶקָּ֑ח וַ/יִּפְצַר בּ֥/וֹ לָ/קַ֖חַת וַ/יְמָאֵֽן׃",
+        "LXX": "καὶ εἶπεν Ἐλεισαῖε Ζῇ Κύριος ᾧ παρέστην ἐνώπιον αὐτοῦ, εἰ λήμψομαι· καὶ παρεβιάσατο αὐτὸν λαβεῖν, καὶ ἠπείθησεν.",
+        "VUL": "At ille respondit : Vivit Dominus, ante quem sto, quia non accipiam. Cumque vim faceret, penitus non acquievit.",
+        "SYN": "И сказал он: жив Господь, пред лицем Которого стою! не приму. И тот принуждал его взять, но он не согласился.",
+        "NEO": "Elisée répondit : « Aussi vrai que \\+w Yahweh|strong=\"H3068\"\\+w** devant qui je me tiens est vivant, je n’accepterai pas ! » Naaman le pressant d’accepter, il refusa.",
+        "NAB": "\"As the LORD lives whom I serve, I will not take it,\" Elisha replied; and despite Naaman's urging, he still refused.",
+        "VAT_ES": "Pero Eliseo replicó: «Por la vida del Señor, a quien sirvo, no aceptaré nada». Naamán le insistió para que aceptara, pero él se negó.",
+        "CEI": "Quegli disse: \"Per la vita del Signore, alla cui presenza io sto, non lo prenderò\". Nàaman insisteva perché accettasse, ma egli rifiutò."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֮ נַעֲמָן֒ וָ/לֹ֕א יֻתַּן נָ֣א לְ/עַבְדְּ/ךָ֔ מַשָּׂ֥א צֶֽמֶד פְּרָדִ֖ים אֲדָמָ֑ה כִּ֡י לֽוֹא יַעֲשֶׂה֩ ע֨וֹד עַבְדְּ/ךָ֜ עֹלָ֤ה וָ/זֶ֨בַח֙ לֵ/אלֹהִ֣ים אֲחֵרִ֔ים כִּ֖י אִם לַ/יהוָֽה׃",
+        "LXX": "καὶ εἶπεν Ναιμάν Καὶ εἰ μή, δοθήτω δὴ τῷ δούλῳ σου γόμορ, ζεύγη ἡμιόνων, ὅτι οὐ ποιήσει ἔτι ὁ δοῦλός σου ὁλοκαύτωμα καὶ θυσίασμα θεοῖς ἑτέροις ἀλλ’ ἢ τῷ κυρίῳ.",
+        "VUL": "Dixitque Naaman : Ut vis : sed, obsecro, concede mihi servo tuo ut tollam onus duorum burdonum de terra : non enim faciet ultra servus tuus holocaustum aut victimam diis alienis, nisi Domino.",
+        "SYN": "И сказал Нееман: если уже не так, то пусть рабу твоему дадут земли, сколько снесут два лошака, потому что не будет впредь раб твой приносить всесожжения и жертвы другим богам, кроме Господа;",
+        "NEO": "Et Naaman dit : « Sinon, permets que l’on donne de la terre à ton serviteur, la charge de deux mulets ; car ton serviteur ne veut plus offrir à d’autres dieux ni holocauste ni sacrifice, si ce n’est à \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Naaman said: \"If you will not accept, please let me, your servant, have two mule-loads of earth, for I will no longer offer holocaust or sacrifice to any other god except to the LORD.",
+        "VAT_ES": "Naamán dijo entonces: «De acuerdo; pero permite al menos que le den a tu servidor un poco de esta tierra, la carga de dos mulas, porque tu servidor no ofrecerá holocaustos ni sacrificios a otros dioses, fuera del Señor.",
+        "CEI": "Allora Nàaman disse: \"Se è no, almeno sia permesso al tuo servo di caricare qui tanta terra quanta ne portano due muli, perché il tuo servo non intende compiere più un olocausto o un sacrificio ad altri dei, ma solo al Signore."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "לַ/דָּבָ֣ר הַ/זֶּ֔ה יִסְלַ֥ח יְהוָ֖ה לְ/עַבְדֶּ֑/ךָ בְּ/ב֣וֹא אֲדֹנִ֣/י בֵית רִמּוֹן֩ לְ/הִשְׁתַּחֲוֺ֨ת שָׁ֜מָּ/ה וְ/ה֣וּא נִשְׁעָ֣ן עַל יָדִ֗/י וְ/הִֽשְׁתַּחֲוֵ֨יתִי֙ בֵּ֣ית רִמֹּ֔ן בְּ/הִשְׁתַּחֲוָיָ֨תִ/י֙ בֵּ֣ית רִמֹּ֔ן יִסְלַח נא יְהוָ֥ה לְ/עַבְדְּ/ךָ֖ בַּ/דָּבָ֥ר הַ/זֶּֽה׃",
+        "LXX": "τῷ ῥήματι τούτῳ καὶ ἱλάσεται Κύριος τῷ δούλῳ σου, ἐν τῷ εἰσπορεύεσθαι τὸν κύριόν μου εἰς οἶκον Ῥεμμὰν προσκυνῆσαι ἐκεῖ· καὶ αὐτὸς ἐπαναπαύσεται ἐπὶ τῆς χειρός μου, καὶ προσκυνήσω ἐν οἴκῳ Ῥεμμὰν ἐν τῷ προσκυνεῖν αὐτὸν ἐν οἴκῳ Ῥεμμάν· καὶ ἱλάσεται δὴ Κύριος τῷ δούλῳ σου ἐν τῷ λόγῳ τούτῳ.",
+        "VUL": "Hoc autem solum est, de quo depreceris Dominum pro servo tuo, quando ingredietur dominus meus templum Remmon ut adoret : et illo innitente super manum meam, si adoravero in templo Remmon, adorante eo in eodem loco, ut ignoscat mihi Dominus servo tuo pro hac re.",
+        "SYN": "только вот в чем да простит Господь раба твоего: когда пойдет господин мой в дом Риммона для поклонения там и опрется на руку мою, и поклонюсь я в доме Риммона, то, за мое поклонение в доме Риммона, да простит Господь раба твоего в случае сем.",
+        "NEO": "Toutefois, que \\+w Yahweh|strong=\"H3068\"\\+w** pardonne ceci à ton serviteur : Quand mon maître entre dans la maison de Remmon pour y adorer, et qu’il s’appuie sur ma main, je me prosterne aussi dans la maison de Remmon ; daigne \\+w Yahweh|strong=\"H3068\"\\+w** pardonner à ton serviteur si je me prosterne dans la maison de Remmon ! »",
+        "NAB": "But I trust the LORD will forgive your servant this: when my master enters the temple of Rimmon to worship there, then I, too, as his adjutant, must bow down in the temple of Rimmon. May the LORD forgive your servant this.\"",
+        "VAT_ES": "Y que el Señor perdone a tu servidor este gesto: cuando mi señor entra en el templo de Rimón para postrarse y se apoya en mi brazo, yo también me postro en el templo de Rimón. Así, cuando yo me postre en el templo de Rimón, que el Señor se digne perdonar este gesto a tu servidor».",
+        "CEI": "Tuttavia il Signore perdoni il tuo servo se, quando il mio signore entra nel tempio di Rimmòn per prostrarsi, si appoggia al mio braccio e se anche io mi prostro nel tempio di Rimmòn, durante la sua adorazione nel tempio di Rimmòn; il Signore perdoni il tuo servo per questa azione\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר ל֖/וֹ לֵ֣ךְ לְ/שָׁל֑וֹם וַ/יֵּ֥לֶךְ מֵ/אִתּ֖/וֹ כִּבְרַת אָֽרֶץ׃",
+        "LXX": "καὶ εἶπεν Ἐλεισαῖε πρὸς Ναιμάν Δεῦρο εἰς εἰρήνην· καὶ ἀπῆλθεν παρ’ αὐτοῦ εἰς δεβραθὰ τῆς γῆς.",
+        "VUL": "Qui dixit ei : Vade in pace. Abiit ergo ab eo electo terræ tempore.",
+        "SYN": "И сказал ему: иди с миром. И он отъехал от него на небольшое пространство земли.",
+        "NEO": "Elisée lui dit : « Va en paix. » Et Naaman quitta Elisée.",
+        "NAB": "\"Go in peace,\" Elisha said to him.",
+        "VAT_ES": "Eliseo le respondió: «Vete en paz».",
+        "CEI": "Quegli disse: \"Và in pace\". Partì da lui e fece un bel tratto di strada."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר גֵּיחֲזִ֗י נַעַר֮ אֱלִישָׁ֣ע אִישׁ הָ/אֱלֹהִים֒ הִנֵּ֣ה חָשַׂ֣ךְ אֲדֹנִ֗/י אֶֽת נַעֲמָ֤ן הָֽ/אֲרַמִּי֙ הַ/זֶּ֔ה מִ/קַּ֥חַת מִ/יָּד֖/וֹ אֵ֣ת אֲשֶׁר הֵבִ֑יא חַי יְהוָה֙ כִּֽי אִם רַ֣צְתִּי אַחֲרָ֔י/ו וְ/לָקַחְתִּ֥י מֵ/אִתּ֖/וֹ מְאֽוּמָה׃",
+        "LXX": "Καὶ εἶπεν Γιεζεὶ τὸ παιδάριον Ἐλεισαῖε Ἰδοὺ ἐφείσατο ὁ κύριός μου τοῦ Ναιμὰν τοῦ Σύρου τούτου, τοῦ μὴ λαβεῖν ἐκ χειρὸς αὐτοῦ ἃ ἐνήνοχεν· ζῇ Κύριος ὅτι εἰ μὴ δραμοῦμαι ὀπίσω αὐτοῦ καὶ λήμψομαι παρ’ αὐτοῦ τι.",
+        "VUL": "Dixitque Giezi puer viri Dei : Pepercit dominus meus Naaman Syro isti, ut non acciperet ab eo quæ attulit : vivit Dominus, quia curram post eum, et accipiam ab eo aliquid.",
+        "SYN": "И сказал Гиезий, слуга Елисея, человека Божия: вот, господин мой отказался взять из руки Неемана, этого Сириянина, то, что он приносил. Жив Господь! Побегу я за ним, и возьму у него что-- нибудь.",
+        "NEO": "lorsque Giézi, serviteur d’Elisée, homme de Dieu, dit en lui-même : « Voici que mon maître a ménagé Naaman, ce Syrien, en n’acceptant pas de sa main ce qu’il avait apporté. \\+w Yahweh|strong=\"H3068\"\\+w** est vivant ! Je vais courir après lui et j’en obtiendrai quelque chose. »",
+        "NAB": "Naaman had gone some distance when Gehazi, the servant of Elisha, the man of God, thought to himself: \"My master was too easy with this Aramean Naaman, not accepting what he brought. As the LORD lives, I will run after him and get something out of him.\"",
+        "VAT_ES": "Guejazí, servidor de Eliseo, el hombre de Dios, pensó: «Mi señor se ha mostrado demasiado desprendido con ese arameo Naamán, al rehusar los presentes que había traído. Por la vida del Señor, voy a correr detrás de él a ver si le saco alguna cosa».",
+        "CEI": "Ghecazi, servo dell'uomo di Dio Eliseo, disse fra sé: \"Ecco, il mio signore è stato tanto generoso con questo Nàaman arameo da non prendere quanto egli aveva portato; per la vita del Signore, gli correrò dietro e prenderò qualche cosa da lui\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּרְדֹּ֥ף גֵּיחֲזִ֖י אַחֲרֵ֣י נַֽעֲמָ֑ן וַ/יִּרְאֶ֤ה נַֽעֲמָן֙ רָ֣ץ אַחֲרָ֔י/ו וַ/יִּפֹּ֞ל מֵ/עַ֧ל הַ/מֶּרְכָּבָ֛ה לִ/קְרָאת֖/וֹ וַ/יֹּ֥אמֶר הֲ/שָׁלֽוֹם׃",
+        "LXX": "καὶ ἐδίωξε Γιεζεὶ ὀπίσω τοῦ Ναιμάν· καὶ εἶδεν αὐτὸν Ναιμὰν τρέχοντα ὀπίσω αὐτοῦ, καὶ ἐπέστρεψεν ἀπὸ τοῦ ἅρματος εἰς ἀπαντὴν αὐτοῦ.",
+        "VUL": "Et secutus est Giezi post tergum Naaman : quem cum vidisset ille currentem ad se, desiliit de curru in occursum ejus, et ait : Rectene sunt omnia ?",
+        "SYN": "И погнался Гиезий за Нееманом. И увидел Нееман бегущего за собою, и сошел с колесницы навстречу ему, и сказал: с миром ли?",
+        "NEO": "Et Giézi se mit à poursuivre Naaman. Naaman, le voyant courir après lui, descendit de son char pour aller à sa rencontre, et il dit : « Tout va-t-il bien ? »",
+        "NAB": "So Gehazi hurried after Naaman. Aware that someone was running after him, Naaman alighted from his chariot to wait for him. \"Is everything all right?\" he asked.",
+        "VAT_ES": "Guejazí se lanzó detrás de Naamán, y cuando este vio que corría detrás de él, salió de su carruaje para ir a su encuentro y le dijo: «&iquest;Pasa algo?».",
+        "CEI": "Ghecazi inseguì Nàaman. Questi, vedendolo correre verso di sé, scese dal carro per andargli incontro e gli domandò: \"Tutto bene?\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שָׁל֗וֹם אֲדֹנִ/י֮ שְׁלָחַ֣/נִי לֵ/אמֹר֒ הִנֵּ֣ה עַתָּ֡ה זֶ֠ה בָּ֣אוּ אֵלַ֧/י שְׁנֵֽי נְעָרִ֛ים מֵ/הַ֥ר אֶפְרַ֖יִם מִ/בְּנֵ֣י הַ/נְּבִיאִ֑ים תְּנָ/ה נָּ֤א לָ/הֶם֙ כִּכַּר כֶּ֔סֶף וּ/שְׁתֵּ֖י חֲלִפ֥וֹת בְּגָדִֽים׃",
+        "LXX": "καὶ εἶπεν Εἰρήνη· ὁ κύριός μου ἀπέστειλέν με λέγων Ἰδοὺ νῦν ἦλθον πρὸς μὲ δύο παιδάρια ἐξ ὄρους Ἐφράιμ ἀπὸ τῶν υἱῶν τῶν προφητῶν· δὸς δὴ αὐτοῖς τάλαντον ἀργυρίου καὶ δύο ἀλλασσομένας στολάς.",
+        "VUL": "Et ille ait : Recte. Dominus meus misit me ad te dicens : Modo venerunt ad me duo adolescentes de monte Ephraim, ex filiis prophetarum : da eis talentum argenti, et vestes mutatorias duplices.",
+        "SYN": "Он отвечал: с миром; господин мой послал меня сказать: \"вот, теперь пришли ко мне с горы Ефремовой два молодых человека из сынов пророческих; дай им талант серебра и две перемены одежд\".",
+        "NEO": "Giézi répondit : « Tout va bien ! Mon maître m’envoie te dire : Voici que viennent d’arriver chez moi deux jeunes gens de la montagne d’Ephraïm, d’entre les fils des prophètes ; donne pour eux, je te prie, un talent d’argent et deux vêtements de rechange. »",
+        "NAB": "\"Yes,\" Gehazi replied, \"but my master sent me to say, 'Two young men have just come to me, guild prophets from the hill country of Ephraim. Please give them a talent of silver and two festal garments.'\"",
+        "VAT_ES": "«No, respondió él; pero mi señor te manda decir: Hace apenas un momento vinieron a verme dos muchachos de la montaña de Efraím, de la comunidad de profetas. Te ruego que me des para ellos un talento de plata y dos mudas de ropa».",
+        "CEI": "Quegli rispose: \"Tutto bene. Il mio signore mi ha mandato a dirti: Ecco, proprio ora, sono giunti da me due giovani dalle montagne di Efraim, da parte dei figli dei profeti. Dammi per essi un talento d'argento e due vestiti\"."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר נַעֲמָ֔ן הוֹאֵ֖ל קַ֣ח כִּכָּרָ֑יִם וַ/יִּפְרָץ בּ֗/וֹ וַ/יָּצַר֩ כִּכְּרַ֨יִם כֶּ֜סֶף בִּ/שְׁנֵ֣י חֲרִטִ֗ים וּ/שְׁתֵּי֙ חֲלִפ֣וֹת בְּגָדִ֔ים וַ/יִּתֵּן֙ אֶל שְׁנֵ֣י נְעָרָ֔י/ו וַ/יִּשְׂא֖וּ לְ/פָנָֽי/ו׃",
+        "LXX": "καὶ εἶπεν Ναιμάν Λάβε διτάλαντον ἀργυρίου· καὶ ἔλαβεν ἐν δυσὶ θυλάκοις, καὶ δύο ἀλλασσομένας στολάς· καὶ ἔδωκεν ἐπὶ δύο παιδάρια αὐτοῦ, καὶ ᾖρον ἔμπροσθεν αὐτοῦ.",
+        "VUL": "Dixitque Naaman : Melius est ut accipias duo talenta. Et coëgit eum, ligavitque duo talenta argenti in duobus saccis, et duplicia vestimenta, et imposuit duobus pueris suis, qui et portaverunt coram eo.",
+        "SYN": "И сказал Нееман: возьми, пожалуй, два таланта. И упрашивал его. И завязал он два таланта серебра в два мешка и две перемены одежд и отдал двум слугам своим, и понесли перед ним.",
+        "NEO": "Naaman dit : « Consens à prendre deux talents. » Il le pressa d’accepter et, ayant serré deux talents d’argent dans deux sacs avec deux habits de rechange, il les remit à deux de ses serviteurs pour les porter devant Giézi.",
+        "NAB": "\"Please take two talents,\" Naaman said, and pressed them upon him. He tied up these silver talents in bags and gave them, with the two festal garments, to two of his servants, who carried them before Gehazi.",
+        "VAT_ES": "Naamán dijo: «Toma más bien dos talentos». Y le insistió hasta que metió en dos bolsas dos talentos de plata y dos mudas de ropa, que entregó a sus servidores para que los llevaran delante de Guejazí.",
+        "CEI": "Nàaman disse: \"È meglio che tu prenda due talenti\" e insistette con lui. Legò due talenti d'argento in due sacchi insieme con due vestiti e li diede a due dei suoi giovani, che li portarono davanti a Ghecazi."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹא֙ אֶל הָ/עֹ֔פֶל וַ/יִּקַּ֥ח מִ/יָּדָ֖/ם וַ/יִּפְקֹ֣ד בַּ/בָּ֑יִת וַ/יְשַׁלַּ֥ח אֶת הָ/אֲנָשִׁ֖ים וַ/יֵּלֵֽכוּ׃",
+        "LXX": "καὶ ἦλθον εἰς τὸ σκοτεινόν, καὶ ἔλαβεν ἐκ τῶν χειρῶν αὐτῶν καὶ παρέθετο ἐν οἴκῳ, καὶ ἐξαπέστειλεν τοὺς ἄνδρας.",
+        "VUL": "Cumque venisset jam vesperi, tulit de manu eorum, et reposuit in domo, dimisitque viros, et abierunt.",
+        "SYN": "Когда он пришел к холму, то взял из рук их и спрятал дома. И отпустил людей, и они ушли.",
+        "NEO": "Arrivé à la colline, Giézi les prit de leurs mains et les déposa dans la maison, puis il renvoya les hommes, qui partirent.",
+        "NAB": "When they reached the hill, Gehazi took what they had, carried it into the house, and sent the men on their way.",
+        "VAT_ES": "Al llegar a Ofel, Guejazí recogió todo y lo depositó en su casa. Luego despidió a los dos hombres, y ellos se fueron.",
+        "CEI": "Giunto all'Ofel, questi prese dalle loro mani il tutto e lo depose in casa, quindi rimandò gli uomini, che se ne andarono."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/הוּא בָא֙ וַ/יַּעֲמֹ֣ד אֶל אֲדֹנָ֔י/ו וַ/יֹּ֤אמֶר אֵלָי/ו֙ אֱלִישָׁ֔ע מ/אן מֵ/אַ֖יִן גֵּחֲזִ֑י וַ/יֹּ֕אמֶר לֹֽא הָלַ֥ךְ עַבְדְּ/ךָ֖ אָ֥נֶה וָ/אָֽנָה׃",
+        "LXX": "καὶ αὐτὸς εἰσῆλθεν καὶ παρειστήκει πρὸς τὸν κύριον αὐτοῦ· καὶ εἶπεν πρὸς αὐτὸν Ἐλεισαῖε Πόθεν Γιεζεί; καὶ εἶπεν Γιεζεί Οὐ πεπόρευται ὁ δοῦλός σου ἔνθα καὶ ἔνθα.",
+        "VUL": "Ipse autem ingressus, stetit coram domino suo. Et dixit Eliseus : Unde venis, Giezi ? Qui respondit : Non ivit servus tuus quoquam.",
+        "SYN": "Когда он пришел и явился к господину своему, Елисей сказал ему: откуда, Гиезий? И сказал он: никуда не ходил раб твой.",
+        "NEO": "Et il alla se présenter à son maître. Elisée lui dit : « D’où viens-tu, Giézi ? » Il répondit : « Ton serviteur n’est allé ni d’un côté ni d’un autre. »",
+        "NAB": "He went in and stood before Elisha his master, who asked him, \"Where have you been, Gehazi?\" He answered, \"Your servant has not gone anywhere.\"",
+        "VAT_ES": "Cuando fue a presentarse ante su señor, Eliseo le dijo: «&iquest;De dónde vienes, Guejazí?». El respondió: «Tu servidor no fue a ninguna parte».",
+        "CEI": "Poi egli andò a presentarsi al suo padrone. Eliseo gli domandò: \"Ghecazi, da dove vieni?\". Rispose: \"Il tuo servo non è andato in nessun luogo\"."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר אֵלָי/ו֙ לֹא לִבִּ֣/י הָלַ֔ךְ כַּ/אֲשֶׁ֧ר הָֽפַךְ אִ֛ישׁ מֵ/עַ֥ל מֶרְכַּבְתּ֖/וֹ לִ/קְרָאתֶ֑/ךָ הַ/עֵ֞ת לָ/קַ֤חַת אֶת הַ/כֶּ֨סֶף֙ וְ/לָ/קַ֣חַת בְּגָדִ֔ים וְ/זֵיתִ֤ים וּ/כְרָמִים֙ וְ/צֹ֣אן וּ/בָקָ֔ר וַ/עֲבָדִ֖ים וּ/שְׁפָחֽוֹת׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτὸν Ἐλεισαῖε Οὐχὶ ἡ καρδία μου ἐπορεύθη μετὰ σοῦ ὅτε ἐπέστρεψεν ὁ ἀνὴρ ἀπὸ τοῦ ἅρματος εἰς συναντήν σοι; καὶ νῦν ἔλαβες τὸ ἀργύριον, καὶ νῦν ἔλαβες τὰ ἱμάτια καὶ ἐλαιῶνας καὶ ἀμπελῶνας καὶ πρόβατα καὶ βόας καὶ παῖδας καὶ παιδίσκας·",
+        "VUL": "At ille ait : Nonne cor meum in præsenti erat, quando reversus est homo de curru suo in occursum tui ? nunc igitur accepisti argentum, et accepisti vestes ut emas oliveta, et vineas, et oves, et boves, et servos, et ancillas.",
+        "SYN": "И сказал он ему: разве сердце мое не сопутствовало тебе, когда обратился навстречу тебе человек тот с колесницы своей? время ли брать серебро и брать одежды, или масличные деревья и виноградники, и мелкий или крупный скот, и рабов или рабынь?",
+        "NEO": "Mais Elisée lui dit : « Mon esprit n’est-il pas allé avec toi, lorsque cet homme a quitté son char pour venir à ta rencontre ? Est-ce le moment d’accepter de l’argent, et d’accepter des vêtements et des oliviers et des vignes et des brebis et des bœufs et des serviteurs et des servantes ?",
+        "NAB": "But Elisha said to him: \"Was I not present in spirit when the man alighted from his chariot to wait for you? Is this a time to take money or to take garments, olive orchards or vineyards, sheep or cattle, male or female servants?",
+        "VAT_ES": "Pero Eliseo le replicó: «&iquest;No estaba allí mi espíritu cuando un hombre descendió de su carruaje para ir a tu encuentro? Y ahora que has conseguido esa plata, podrás obtener jardines, olivares y viñas, ovejas y vacas, esclavos y esclavas.",
+        "CEI": "Quegli disse: \"Non era forse presente il mio spirito quando quell'uomo si voltò dal suo carro per venirti incontro? Era forse il tempo di accettare denaro e di accettare abiti, oliveti, vigne, bestiame minuto e grosso, schiavi e schiave?"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/צָרַ֤עַת נַֽעֲמָן֙ תִּֽדְבַּק בְּ/ךָ֔ וּֽ/בְ/זַרְעֲ/ךָ לְ/עוֹלָ֑ם וַ/יֵּצֵ֥א מִ/לְּ/פָנָ֖י/ו מְצֹרָ֥ע כַּ/שָּֽׁלֶג׃",
+        "LXX": "καὶ ἡ λέπρα Ναιμὰν κολληθήσεται ἐν σοὶ καὶ ἐν τῷ σπέρματί σου εἰς τὸν αἰῶνα. καὶ ἐξῆλθεν ἐκ προσώπου αὐτοῦ λελεπρωμένος ὡσεὶ χιών.",
+        "VUL": "Sed et lepra Naaman adhærebit tibi, et semini tuo usque in sempiternum. Et egressus est ab eo leprosus quasi nix.",
+        "SYN": "Пусть же проказа Нееманова пристанет к тебе и к потомству твоему навек. И вышел он от него _белый_ от проказы, как снег.",
+        "NEO": "La lèpre de Naaman s’attachera à toi et à ta postérité pour toujours. » Et Giézi sortit de la présence d’Elisée avec une lèpre blanche comme la neige.",
+        "NAB": "The leprosy of Naaman shall cling to you and your descendants forever.\" And Gehazi left Elisha, a leper white as snow.",
+        "VAT_ES": "Pero la lepra de Naamán se te pegará a ti y a tu descendencia para siempre». Cuando Guejazí se retiró de su presencia, estaba leproso, blanco como la nieve.",
+        "CEI": "Ma la lebbra di Nàaman si attaccherà a te e alla tua discendenza per sempre\". Egli si allontanò da Eliseo, bianco come la neve per la lebbra."
+      }
+    }
+  }
+}

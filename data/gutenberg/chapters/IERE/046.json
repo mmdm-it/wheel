@@ -1,0 +1,499 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IERE_046",
+  "book_key": "IERE",
+  "sequence": 46,
+  "chapter_in": {
+    "MT": 46,
+    "VUL": 46,
+    "LXX": 46
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אֲשֶׁ֨ר הָיָ֧ה דְבַר יְהוָ֛ה אֶל יִרְמְיָ֥הוּ הַ/נָּבִ֖יא עַל הַ/גּוֹיִֽם׃",
+        "LXX": "Καὶ ἐγένετο τῷ μηνὶ τῷ ἐνάτῳ τοῦ Σεδεκία βασιλέως Ἰούδα παρεγένετο Ναβουχοδονοσὸρ βασιλεὺς Βαβυλῶνος καὶ πᾶσα ἡ δύναμις αὐτοῦ ἐπὶ Ἰερουσαλήμ, καὶ ἐπολιόρκουν αὐτήν.",
+        "VUL": "Quod factum est verbum Domini ad Jeremiam prophetam contra gentes.",
+        "SYN": "Слово Господне, которое было к Иеремии пророку о народах _языческих:_",
+        "NEO": "Parole de \\+w Yahweh|strong=\"H3068\"\\+w** qui fut adressée à Jérémie, le prophète, au sujet des nations païennes.",
+        "NAB": "This is the word of the LORD that came to the prophet Jeremiah against the nations.",
+        "VAT_ES": "Palabra que llegó a Jeremías para todos los judíos que habitaban en Egipto, los que habitaban en Migdol, en Tafnis, en Nof y en el distrito de Patrós:",
+        "CEI": "Parola del Signore che fu rivolta al profeta Geremia sulle nazioni."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "לְ/מִצְרַ֗יִם עַל חֵ֨יל פַּרְעֹ֤ה נְכוֹ֙ מֶ֣לֶךְ מִצְרַ֔יִם אֲשֶׁר הָיָ֥ה עַל נְהַר פְּרָ֖ת בְּ/כַרְכְּמִ֑שׁ אֲשֶׁ֣ר הִכָּ֗ה נְבֽוּכַדְרֶאצַּר֙ מֶ֣לֶךְ בָּבֶ֔ל בִּ/שְׁנַת֙ הָֽ/רְבִיעִ֔ית לִ/יהוֹיָקִ֥ים בֶּן יֹאשִׁיָּ֖הוּ מֶ֥לֶךְ יְהוּדָֽה׃",
+        "LXX": "καὶ ἐν τῷ ἑνδεκάτῳ ἔτει τοῦ Σεδεκία ἐν τῷ μηνὶ τῷ τετάρτῳ ἐνάτῃ τοῦ μηνὸς ἐρράγη ἡ πόλις,",
+        "VUL": "Ad Ægyptum, adversum exercitum Pharaonis Nechao regis Ægypti, qui erat juxta fluvium Euphraten in Charcamis, quem percussit Nabuchodonosor rex Babylonis, in quarto anno Joakim filii Josiæ regis Juda.",
+        "SYN": "о Египте, о войске фараона Нехао, царя Египетского, которое было при реке Евфрате в Кархемисе, и которое поразил Навуходоносор, царь Вавилонский, в четвертый год Иоакима, сына Иосии, царя Иудейского.",
+        "NEO": "Sur l’Égypte. — Contre l’armée du Pharaon Néchao, roi d’Égypte, qui était près du fleuve de l’Euphrate, à Carchémis, et que battit Nabuchodonosor, roi de Babylone, la quatrième année de Joakim, fils de Josias, roi de Juda.",
+        "NAB": "Concerning Egypt. Against the army of Pharaoh Neco, king of Egypt, which was defeated at Carchemish on the Euphrates by Nebuchadnezzar, king of Babylon, in the fourth year of Jehoiakim, son of Josiah, king of Judah:",
+        "VAT_ES": "Así habla el Señor de los ejércitos, el Dios de Israel: Ustedes han visto todo el mal que atraje sobre Jerusalén y sobre todas las ciudades de Judá: hoy ellas están en ruinas y sin habitantes,",
+        "CEI": "Per l'Egitto. Sull'esercito del faraone Necao re d'Egitto, a Càrchemis presso il fiume Eufràte, esercito che Nabucodònosor re di Babilonia vinse nel quarto anno di Ioiakìm figlio di Giosia, re di Giuda."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "עִרְכ֤וּ מָגֵן֙ וְ/צִנָּ֔ה וּ/גְשׁ֖וּ לַ/מִּלְחָמָֽה׃",
+        "LXX": "καὶ εἰσῆλθον πάντες οἱ ἡγούμενοι βασιλέως Βαβυλῶνος, καὶ ἐκάθισαν ἐν πύλῃ τῇ μέσῃ, Μαργανασὰρ καὶ Σαμαγὼθ καὶ Ναβουσαχὰρ καὶ Ναβουσαρείς, Ναγαργασνασέρ, Ῥαβαμάθ, καὶ οἱ κατάλοιποι ἡγεμόνες βασιλέως Βαβυλῶνος.",
+        "VUL": "[Præparate scutum et clypeum,/ et procedite ad bellum./",
+        "SYN": "Готовьте щиты и копья, и вступайте в сражение:",
+        "NEO": "Préparez l’écu et le bouclier, et marchez au combat !",
+        "NAB": "Prepare shield and buckler! march to battle!",
+        "VAT_ES": "a causa del mal que cometieron para agraviarme, yendo a quemar incienso en honor de otros dioses que no conocías ellos, ni ustedes, ni sus padres.",
+        "CEI": "Preparate scudo grande e piccolo e avanzate per la battaglia."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אִסְר֣וּ הַ/סּוּסִ֗ים וַֽ/עֲלוּ֙ הַ/פָּ֣רָשִׁ֔ים וְ/הִֽתְיַצְּב֖וּ בְּ/כ֥וֹבָעִ֑ים מִרְקוּ֙ הָֽ/רְמָחִ֔ים לִבְשׁ֖וּ הַ/סִּרְיֹנֹֽת׃",
+        "VUL": "Jungite equos, et ascendite, equites :/ state in galeis, polite lanceas, induite vos loricis./",
+        "SYN": "седлайте коней и садитесь, всадники, и становитесь в шлемах; точите копья, облекайтесь в брони.",
+        "NEO": "Attelez les chevaux ; montez, cavaliers ! A vos rangs, vous qui portez le casque ! Fourbissez les lances, endossez la cuirasse !",
+        "NAB": "Harness the horses, mount, charioteers! Fall in with your helmets; polish your spears, put on your breastplates.",
+        "VAT_ES": "Yo les envié incansablemente a todos mis servidores los profetas, para decirles: No cometan estas cosas abominables que yo detesto.",
+        "CEI": "Attaccate i cavalli, montate, o cavalieri. Schieratevi con gli elmi, lucidate le lance, indossate le corazze!"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "מַדּ֣וּעַ רָאִ֗יתִי הֵ֣מָּה חַתִּים֮ נְסֹגִ֣ים אָחוֹר֒ וְ/גִבּוֹרֵי/הֶ֣ם יֻכַּ֔תּוּ וּ/מָנ֥וֹס נָ֖סוּ וְ/לֹ֣א הִפְנ֑וּ מָג֥וֹר מִ/סָּבִ֖יב נְאֻם יְהוָֽה׃",
+        "VUL": "Quid igitur ? vidi ipsos pavidos,/ et terga vertentes,/ fortes eorum cæsos :/ fugerunt conciti, nec respexerunt :/ terror undique, ait Dominus./",
+        "SYN": "Почему же, вижу Я, они оробели и обратились назад? и сильные их поражены, и бегут не оглядываясь; отвсюду ужас, говорит Господь.",
+        "NEO": "Que vois-je ? Ils sont frappés d’épouvante, ils tournent le dos ! Leurs guerriers sont battus, ils fuient sans se retourner ! Terreur de toutes parts ! — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "What do I see? With broken ranks They fall back; their heroes are routed, They flee headlong without making a stand. Terror on every side, says the LORD!",
+        "VAT_ES": "Pero ellos no han escuchado ni han inclinado su oído, a fin de convertirse de su maldad dejando de quemar incienso a otros dioses.",
+        "CEI": "Che vedo? Sono sbigottito, retrocedono! I loro prodi sono sconfitti, fuggono a precipizio senza voltarsi; il terrore è tutt'intorno. Parola del Signore."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אַל יָנ֣וּס הַ/קַּ֔ל וְ/אַל יִמָּלֵ֖ט הַ/גִּבּ֑וֹר צָפ֨וֹנָ/ה֙ עַל יַ֣ד נְהַר פְּרָ֔ת כָּשְׁל֖וּ וְ/נָפָֽלוּ׃",
+        "VUL": "Non fugiat velox,/ nec salvari se putet fortis :/ ad aquilonem juxta flumen Euphraten/ victi sunt, et ruerunt./",
+        "SYN": "Не убежит быстроногий, и не спасется сильный; на севере, у реки Евфрата, они споткнутся и падут.",
+        "NEO": "Que l’homme agile ne fuie pas, que le vaillant n’échappe pas ! Au septentrion, sur les rives du fleuve de l’Euphrate, ils ont chancelé, ils sont tombés !",
+        "NAB": "The swift cannot flee, nor the hero escape: There in the north, on the Euphrates' bank, they stumble and fall.",
+        "VAT_ES": "Entonces se derramaron mi ira y mi furor, y abrasaron las ciudades de Judá y las calles de Jerusalén, que se han convertido en ruina y desolación, como sucede en el día de hoy.",
+        "CEI": "Il più agile non scamperà né il più prode si salverà. A settentrione, sulla riva dell'Eufràte, inciampano e cadono."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "מִי זֶ֖ה כַּ/יְאֹ֣ר יַֽעֲלֶ֑ה כַּ/נְּהָר֕וֹת יִֽתְגָּעֲשׁ֖וּ מֵימָֽי/ו׃",
+        "VUL": "Quis est iste, qui quasi flumen ascendit,/ et veluti fluviorum intumescunt gurgites ejus ?/",
+        "SYN": "Кто это поднимается, как река, и, как потоки, волнуются воды его?",
+        "NEO": "Qui est-ce qui monte, pareil au Nil, dont les flots bouillonnent, pareils à des fleuves ?",
+        "NAB": "Who is this that surges forward like the Nile, like rivers of billowing waters?",
+        "VAT_ES": "Y ahora, así habla el señor, Dios de los ejércitos, el Dios de Israel: &iquest;Por qué se hacen un mal tan grande a ustedes mismos? &iquest;Por qué se hacen exterminar de en medio de Judá, hombres y mujeres, niños y pequeños, sin dejar para ustedes ni siquiera un resto?",
+        "CEI": "Chi è che trabocca come il Nilo, come un torrente dalle acque turbolente?"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "מִצְרַ֨יִם֙ כַּ/יְאֹ֣ר יַֽעֲלֶ֔ה וְ/כַ/נְּהָר֖וֹת יִתְגֹּ֣עֲשׁוּ מָ֑יִם וַ/יֹּ֗אמֶר אַֽעֲלֶה֙ אֲכַסֶּה אֶ֔רֶץ אֹבִ֥ידָה עִ֖יר וְ/יֹ֥שְׁבֵי בָֽ/הּ׃",
+        "VUL": "Ægyptus fluminis instar ascendit,/ et velut flumina movebuntur fluctus ejus,/ et dicet : Ascendens operiam terram :/ perdam civitatem, et habitatores ejus./",
+        "SYN": "Египет поднимается, как река, и, как потоки, взволновались воды его, и говорит: \"поднимусь и покрою землю, погублю город и жителей его\".",
+        "NEO": "C’est l’Égypte qui monte, pareille au Nil, dont les flots bouillonnent, pareils à des fleuves. Elle a dit : Je monterai, je couvrirai la terre, je détruirai les villes et leurs habitants.",
+        "NAB": "Egypt surges like the Nile, like rivers of billowing waters. \"I will surge forward,\" he says, \"and cover the earth, destroying the city and its people.",
+        "VAT_ES": "Esto es lo que consiguen, agraviándome con las obras de sus manos y quemando incienso a otros dioses en el país de Egipto, donde han entrado para residir allí, a fin de hacerse exterminar y convertirse en maldición e ignominia entre todas las naciones de la tierra.",
+        "CEI": "È l'Egitto che trabocca come il Nilo, come un torrente dalle acque turbolente. Esso dice: \"Salirò, ricoprirò la terra, distruggerò la città e i suoi abitanti\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "עֲל֤וּ הַ/סּוּסִים֙ וְ/הִתְהֹלְל֣וּ הָ/רֶ֔כֶב וְ/יֵצְא֖וּ הַ/גִּבּוֹרִ֑ים כּ֤וּשׁ וּ/פוּט֙ תֹּפְשֵׂ֣י מָגֵ֔ן וְ/לוּדִ֕ים תֹּפְשֵׂ֖י דֹּ֥רְכֵי קָֽשֶׁת׃",
+        "VUL": "Ascendite equos,/ et exsultate in curribus,/ et procedant fortes,/ Æthiopia et Libyes tenentes scutum,/ et Lydii arripientes et jacientes sagittas./",
+        "SYN": "Садитесь на коней, и мчитесь, колесницы, и выступайте, сильные Ефиопляне и Ливияне, вооруженные щитом, и Лидяне, держащие луки и натягивающие их;",
+        "NEO": "Montez, chevaux ! Chars, précipitez-vous ! En marche, guerriers ! Ethiopiens et Lybiens qui manient le bouclier, Lydiens qui manient et bandent l’arc !",
+        "NAB": "Forward, horses! drive madly, chariots! Set out, warriors, Cush and Put, bearing your shields, Men of Lud, stretching your bows!\"",
+        "VAT_ES": "&iquest;Acaso han olvidado la maldad de sus padres, la maldad de los reyes de Judá y la de sus príncipes, la maldad de ustedes mismos y de sus mujeres, cometidas en el país de Judá y en las calles de Jerusalén?",
+        "CEI": "Caricate, cavalli, avanzate, carri! Avanti o prodi! uomini di Etiopia e di Put, voi che impugnate lo scudo, e voi di Lud che tendete l'arco."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְֽ/הַ/יּ֨וֹם הַ/ה֜וּא לַ/אדֹנָ֧/י יְהוִ֣ה צְבָא֗וֹת י֤וֹם נְקָמָה֙ לְ/הִנָּקֵ֣ם מִ/צָּרָ֔י/ו וְ/אָכְלָ֥ה חֶ֨רֶב֙ וְ/שָׂ֣בְעָ֔ה וְ/רָוְתָ֖ה מִ/דָּמָ֑/ם כִּ֣י זֶ֠בַח לַ/אדֹנָ֨/י יְהוִ֧ה צְבָא֛וֹת בְּ/אֶ֥רֶץ צָפ֖וֹן אֶל נְהַר פְּרָֽת׃",
+        "VUL": "Dies autem ille Domini Dei exercituum dies ultionis,/ ut sumat vindictam de inimicis suis :/ devorabit gladius, et saturabitur,/ et inebriabitur sanguine eorum :/ victima enim Domini Dei exercituum/ in terra aquilonis juxta flumen Euphraten./",
+        "SYN": "ибо день сей у Господа Бога Саваофа есть день отмщения, чтобы отмстить врагам Его; и меч будет пожирать, и насытится и упьется кровью их; ибо это Господу Богу Саваофу будет жертвоприношение в земле северной, при реке Евфрате.",
+        "NEO": "Mais ce jour est au Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** des armées ; jour de vengeance pour se venger de ses ennemis ! L’épée dévore et se rassasie, elle s’abreuve de leur sang. Car c’est une immolation pour le Seigneur \\+w Yahweh|strong=\"H3068\"\\+w** des armées, au pays du septentrion, sur le fleuve de l’Euphrate.",
+        "NAB": "But this is the day of the Lord GOD of hosts, a day of vengeance, vengeance on his foes! The sword devours, is sated, drunk with their blood: for the Lord GOD of hosts holds a slaughter feast in the northland, on the Euphrates.",
+        "VAT_ES": "Hasta el día de hoy, ellos no han sentido compunción ni temor y no han caminado conforme a mi Ley y a mis preceptos, que yo puse delante de ustedes y de sus padres.",
+        "CEI": "Ma quel giorno per il Signore Dio degli eserciti, è un giorno di vendetta, per vendicarsi dei suoi nemici. La sua spada divorerà, si sazierà e si inebrierà del loro sangue; poiché sarà un sacrificio per il Signore, Dio degli eserciti, nella terra del settentrione, presso il fiume Eufràte."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "עֲלִ֤י גִלְעָד֙ וּ/קְחִ֣י צֳרִ֔י בְּתוּלַ֖ת בַּת מִצְרָ֑יִם לַ/שָּׁוְא֙ הרביתי הִרְבֵּ֣ית רְפֻא֔וֹת תְּעָלָ֖ה אֵ֥ין לָֽ/ךְ׃",
+        "VUL": "Ascende in Galaad, et tolle resinam,/ virgo filia Ægypti :/ frustra multiplicas medicamina :/ sanitas non erit tibi./",
+        "SYN": "Пойди в Галаад и возьми бальзама, дева, дочь Египта; напрасно ты будешь умножать врачевства, нет для тебя исцеления.",
+        "NEO": "Monte à Galaad et prends du baume, vierge, fille de l’Égypte. En vain tu multiplies les remèdes ; il n’y a pas de guérison pour toi.",
+        "NAB": "Go up to Gilead, and take balm, O virgin daughter Egypt! No use to multiply remedies; for you there is no cure.",
+        "VAT_ES": "Por eso, así habla el Señor de los ejércitos, el Dios de Israel: Yo vuelvo mi rostro contra ustedes para su mal, para exterminar a todo Judá",
+        "CEI": "Sali in Gàlaad e prendi il balsamo, vergine, figlia d'Egitto. Invano moltiplichi i rimedi, non c'è guarigione per te."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "שָׁמְע֤וּ גוֹיִם֙ קְלוֹנֵ֔/ךְ וְ/צִוְחָתֵ֖/ךְ מָלְאָ֣ה הָ/אָ֑רֶץ כִּֽי גִבּ֤וֹר בְּ/גִבּוֹר֙ כָּשָׁ֔לוּ יַחְדָּ֖יו נָפְל֥וּ שְׁנֵי/הֶֽם׃",
+        "VUL": "Audierunt gentes ignominiam tuam,/ et ululatus tuus replevit terram :/ quia fortis impegit in fortem,/ et ambo pariter conciderunt.]",
+        "SYN": "Услышали народы о посрамлении твоем, и вопль твой наполнил землю; ибо сильный столкнулся с сильным, и оба вместе пали.",
+        "NEO": "Les nations ont appris ta honte, et tes cris de détresse remplissent la terre. Car le guerrier se heurte au guerrier ; ils tombent tous deux.",
+        "NAB": "The nations hear of your shame, your cries fill the earth. Warrior trips over warrior, both fall together.",
+        "VAT_ES": "Tomaré al resto de Judá que se empeñó en entrar en Egipto para residir allí, y todos desaparecerán completamente en el país de Egipto: caerán bajo la espada, desaparecerán completamente por el hambre desde el más pequeño al más grande, morirán por la espada y el hambre, y se convertirán en imprecación, devastación, maldición e ignominia.",
+        "CEI": "Le nazioni hanno saputo del tuo disonore; del tuo grido di dolore è piena la terra, poiché il prode inciampa nel prode, tutti e due cadono insieme."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הַ/דָּבָר֙ אֲשֶׁ֣ר דִּבֶּ֣ר יְהוָ֔ה אֶֽל יִרְמְיָ֖הוּ הַ/נָּבִ֑יא לָ/ב֗וֹא נְבֽוּכַדְרֶאצַּר֙ מֶ֣לֶךְ בָּבֶ֔ל לְ/הַכּ֖וֹת אֶת אֶ֥רֶץ מִצְרָֽיִם׃",
+        "VUL": "Verbum quod locutus est Dominus ad Jeremiam prophetam, super eo quod venturus esset Nabuchodonosor rex Babylonis, et percussurus terram Ægypti :",
+        "SYN": "Слово, которое сказал Господь пророку Иеремии о нашествии Навуходоносора, царя Вавилонского, чтобы поразить землю Египетскую:",
+        "NEO": "La parole qu’adressa \\+w Yahweh|strong=\"H3068\"\\+w** à Jérémie, le prophète, sur la venue de Nabuchodonosor, roi de Babylone, pour frapper le pays d’Égypte.",
+        "NAB": "The message which the LORD gave to the prophet Jeremiah concerning the advance of Nebuchadnezzar, king of Babylon, to attack the land of Egypt:",
+        "VAT_ES": "Yo pediré cuanta a los que habitan en el país Egipto como le pedí cuanta a Jerusalén por medio de la espada, el hambre y la peste.",
+        "CEI": "Parola che il Signore comunicò al profeta Geremia quando Nabucodònosor re di Babilonia giunse per colpire il paese d'Egitto."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הַגִּ֤ידוּ בְ/מִצְרַ֨יִם֙ וְ/הַשְׁמִ֣יעוּ בְ/מִגְדּ֔וֹל וְ/הַשְׁמִ֥יעוּ בְ/נֹ֖ף וּ/בְ/תַחְפַּנְחֵ֑ס אִמְר֗וּ הִתְיַצֵּב֙ וְ/הָכֵ֣ן לָ֔/ךְ כִּֽי אָכְלָ֥ה חֶ֖רֶב סְבִיבֶֽי/ךָ׃",
+        "LXX": "καὶ ἀπέστειλαν καὶ ἔλαβον τὸν Ἰερεμίαν ἐξ αὐλῆς τῆς φυλακῆς, καὶ ἔδωκαν αὐτὸν πρὸς τὸν Γοδολίαν υἱὸν Ἀχεικὰμ υἱοῦ Σαφάν, καὶ ἐξήγαγον αὐτόν, καὶ ἐκάθισεν ἐν μέσῳ τοῦ λαοῦ.",
+        "VUL": "[Annuntiate Ægypto, et auditum facite in Magdalo,/ et resonet in Memphis, et in Taphnis :/ dicite : Sta, et præpara te,/ quia devorabit gladius ea quæ per circuitum tuum sunt./",
+        "SYN": "возвестите в Египте и дайте знать в Магдоле, и дайте знать в Нофе и Тафнисе; скажите: \"становись и готовься, ибо меч пожирает окрестности твои\".",
+        "NEO": "Publiez-le en Égypte, faites-le entendre à Migdol, faites-le entendre à Noph et à Taphnès ; dites : A vos rangs, tenez-vous prêts ; déjà l’épée dévore autour de vous !",
+        "NAB": "Announce it in Egypt, publish it in Migdol, proclaim it in Memphis and Tahpanhes! Say: Take your stand, prepare yourselves, the sword has already devoured your neighbors.",
+        "VAT_ES": "No habrá fugitivo ni sobreviviente para el resto de Judá, para los que entraron el país de Egipto a fin de residir allí. En cuanto a volver al país de Judá, adonde ellos suspiran por volver, no, no volverán, salvo algunos fugitivos.",
+        "CEI": "Annunziatelo in Egitto, fatelo sapere a Migdòl, fatelo udire a Menfi e a Tafni; dite: \"Alzati e preparati, perché la spada divora tutto intorno a te\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "מַדּ֖וּעַ נִסְחַ֣ף אַבִּירֶ֑י/ךָ לֹ֣א עָמַ֔ד כִּ֥י יְהוָ֖ה הֲדָפֽ/וֹ׃",
+        "LXX": "καὶ πρὸς Ἰερεμίαν ἐγένετο λόγος Κυρίου ἐν τῇ αὐλῇ τῆς φυλακῆς λέγων",
+        "VUL": "Quare computruit fortis tuus ?/ non stetit, quoniam Dominus subvertit eum./",
+        "SYN": "Отчего сильный твой опрокинут? - Не устоял, потому что Господь погнал его.",
+        "NEO": "Quoi ! ton héros est renversé ! Il ne s’est pas tenu debout, car \\+w Yahweh|strong=\"H3068\"\\+w** l’a jeté par terre.",
+        "NAB": "Why has Apis fled, your mighty one failed to stand? The LORD thrust him down;",
+        "VAT_ES": "Todos los hombres que sabían que sus mujeres quemaban incienso a otros dioses, así como también las mujeres presentes –una gran asamblea– y todo el pueblo que habitaba en el país de Egipto, en Patrós, respondieron a Jeremías:",
+        "CEI": "Perché mai Api è fuggito? Il tuo toro sacro non resiste? Il Signore lo ha rovesciato."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "הִרְבָּ֖ה כּוֹשֵׁ֑ל גַּם נָפַ֞ל אִ֣ישׁ אֶל רֵעֵ֗/הוּ וַ/יֹּֽאמְרוּ֙ ק֣וּמָ/ה וְ/נָשֻׁ֣בָה אֶל עַמֵּ֗/נוּ וְ/אֶל אֶ֨רֶץ֙ מֽוֹלַדְתֵּ֔/נוּ מִ/פְּנֵ֖י חֶ֥רֶב הַ/יּוֹנָֽה׃",
+        "LXX": "Πορεύου καὶ εἰπὸν πρὸς Ἀβδεμέλεχ τὸν Αἰθίοπα Οὕτως εἶπεν Κύριος ὁ θεὸς Ἰσραήλ Ἰδοὺ ἐγὼ φέρω τοὺς λόγους μου ἐπὶ τὴν πόλιν ταύτην εἰς κακὰ καὶ οὐκ εἰς ἀγαθά,",
+        "VUL": "Multiplicavit ruentes,/ ceciditque vir ad proximum suum, et dicent :/ Surge, et revertamur ad populum nostrum,/ et ad terram nativitatis nostræ,/ a facie gladii columbæ./",
+        "SYN": "Он умножил падающих, даже падали один на другого и говорили: \"вставай и возвратимся к народу нашему в родную нашу землю от губительного меча\".",
+        "NEO": "Il multiplie ceux qui trébuchent ; ils tombent les uns sur les autres, et ils disent : Levons-nous, retournons vers notre peuple et dans notre pays natal, loin de l’épée homicide.",
+        "NAB": "he stumbled repeatedly, and fell. They said one to another, \"Up! let us return to our own people, To the land of our birth, away from the destroying sword.\"",
+        "VAT_ES": "«En lo que respecta a la palabra que nos has dirigido en nombre del Señor, no te escucharemos.",
+        "CEI": "Una gran folla vacilla e stramazza, ognuno dice al vicino: \"Su, torniamo al nostro popolo, al paese dove siamo nati, lontano dalla spada micidiale!\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "קָרְא֖וּ שָׁ֑ם פַּרְעֹ֤ה מֶֽלֶךְ מִצְרַ֨יִם֙ שָׁא֔וֹן הֶעֱבִ֖יר הַ/מּוֹעֵֽד׃",
+        "LXX": "καὶ σώσω σε ἐν τῇ ἡμέρᾳ ἐκείνῃ, καὶ οὐ μὴ δώσω σε εἰς χεῖρας τῶν ἀνθρώπων ὧν σὺ φοβῇ ἀπὸ προσώπου αὐτῶν.",
+        "VUL": "Vocate nomen Pharaonis regis Ægypti :/ tumultum adduxit tempus./",
+        "SYN": "А там кричат: \"фараон, царь Египта, смутился; он пропустил условленное время\".",
+        "NEO": "Là ils crient : Pharaon, roi d’Égypte est perdu ; il a laissé passer le temps favorable.",
+        "NAB": "Call Pharaoh, king of Egypt, by the name \"The noise that let its time go by.\"",
+        "VAT_ES": "Por el contrario, llevaremos a cabo la promesa que ha salido de nuestra boca: quemaremos incienso a la Reina de los cielos y le haremos libaciones, como lo hacíamos nosotros y nuestros padres, nuestros reyes y nuestros príncipes, en las ciudades de Judá y en las calles de Jerusalén. Entonces nos saciábamos de pan, éramos felices y no veíamos la desgracia.",
+        "CEI": "Chiamate pure il faraone re d'Egitto: Frastuono, che lascia passare il momento buono."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "חַי אָ֨נִי֙ נְאֻם הַ/מֶּ֔לֶךְ יְהוָ֥ה צְבָא֖וֹת שְׁמ֑/וֹ כִּ֚י כְּ/תָב֣וֹר בֶּֽ/הָרִ֔ים וּ/כְ/כַרְמֶ֖ל בַּ/יָּ֥ם יָבֽוֹא׃",
+        "LXX": "ὅτι σώζων σώσω σε, καὶ ἐν ῥομφαίᾳ οὐ μὴ πέσῃς· καὶ ἔσται ἡ ψυχή σου εἰς εὕρεμα, ὅτι ἐπεποίθεις ἐπ’ ἐμοί, φησὶν Κύριος.",
+        "VUL": "Vivo ego, inquit Rex (Dominus exercituum nomen ejus),/ quoniam sicut Thabor in montibus,/ et sicut Carmelus in mari, veniet./",
+        "SYN": "Живу Я, говорит Царь, Которого имя Господь Саваоф: как Фавор среди гор и как Кармил при море, _так верно_ придет он.",
+        "NEO": "Je suis vivant ! — oracle du roi dont le nom est \\+w Yahweh|strong=\"H3068\"\\+w** des armées : Comme le Thabor parmi les montagnes, comme le Carmel au-dessus de la mer, il vient.",
+        "NAB": "As I live, says the King whose name is LORD of hosts, Like Tabor among the mountains he shall come, like Carmel above the sea.",
+        "VAT_ES": "Pero desde que dejamos de quemar incienso a la Reina de los cielos y de derramarle libaciones, carecemos de todo y desapareceremos completamente por la espada y el hambre».",
+        "CEI": "Per la mia vita - dice il re il cui nome è Signore degli eserciti - uno verrà, simile al Tabor fra le montagne, come il Carmelo presso il mare."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כְּלֵ֤י גוֹלָה֙ עֲשִׂ֣י לָ֔/ךְ יוֹשֶׁ֖בֶת בַּת מִצְרָ֑יִם כִּֽי נֹף֙ לְ/שַׁמָּ֣ה תִֽהְיֶ֔ה וְ/נִצְּתָ֖ה מֵ/אֵ֥ין יוֹשֵֽׁב׃",
+        "VUL": "Vasa transmigrationis fac tibi,/ habitatrix filia Ægypti :/ quia Memphis in solitudinem erit,/ et deseretur, et inhabitabilis erit./",
+        "SYN": "Готовь себе нужное для переселения, дочь - жительница Египта, ибо Ноф будет опустошен, разорен, останется без жителя.",
+        "NEO": "Prépare ton bagage de captive, habitante, fille de l’Égypte ; car Noph va devenir un désert ; elle sera brûlée et sans habitants.",
+        "NAB": "Pack your baggage for exile, capital city of daughter Egypt; Memphis shall become a desert, an empty ruin.",
+        "VAT_ES": "Y las mujeres añadieron: «Cuando nosotros quemamos incienso a la Reina de los cielos y le derramamos libaciones, &iquest;acaso hacemos tortas con su figura y le derramamos libaciones sin el consentimiento de nuestros maridos?».",
+        "CEI": "Prepàrati il bagaglio per l'esilio, o gente che abiti l'Egitto, perché Menfi sarà ridotta a un deserto, sarà devastata, senza abitanti."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "עֶגְלָ֥ה יְפֵֽה פִיָּ֖ה מִצְרָ֑יִם קֶ֥רֶץ מִ/צָּפ֖וֹן בָּ֥א בָֽא׃",
+        "VUL": "Vitula elegans atque formosa Ægyptus,/ stimulator ab aquilone veniet ei./",
+        "SYN": "Египет - прекрасная телица; но погибель от севера идет, идет.",
+        "NEO": "L’Égypte est une génisse très belle ; un taon vient, vient du septentrion.",
+        "NAB": "Egypt is a pretty heifer, from the north a horsefly lights upon her.",
+        "VAT_ES": "Jeremías dijo entonces a todo el pueblo, a los hombres, a las mujeres y a toda la gente que le había dado esa respuesta:",
+        "CEI": "Giovenca bellissima è l'Egitto, ma un tafano viene su di lei dal settentrione."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "גַּם שְׂכִרֶ֤י/הָ בְ/קִרְבָּ/הּ֙ כְּ/עֶגְלֵ֣י מַרְבֵּ֔ק כִּֽי גַם הֵ֧מָּה הִפְנ֛וּ נָ֥סוּ יַחְדָּ֖יו לֹ֣א עָמָ֑דוּ כִּ֣י י֥וֹם אֵידָ֛/ם בָּ֥א עֲלֵי/הֶ֖ם עֵ֥ת פְּקֻדָּתָֽ/ם׃",
+        "VUL": "Mercenarii quoque ejus,/ qui versabantur in medio ejus quasi vituli saginati,/ versi sunt, et fugerunt simul,/ nec stare potuerunt :/ quia dies interfectionis eorum venit super eos,/ tempus visitationis eorum./",
+        "SYN": "И наемники его среди него, как откормленные тельцы, - и сами обратились назад, побежали все, не устояли, потому что пришел на них день погибели их, время посещения их.",
+        "NEO": "Ses mercenaires au milieu d’elle sont comme des veaux engraissés. Eux aussi, ils tournent le dos, ils fuient tous ensemble ; ils ne résistent point ; car il est venu sur eux le jour de leur calamité, le temps de leur châtiment.",
+        "NAB": "The mercenaries in her ranks are like fatted calves; They too turn and flee together, stand not their ground, When the day of their ruin comes upon them, the time of their punishment.",
+        "VAT_ES": "«&iquest;Acaso el Señor no recordó y tuvo bien presente ese incienso que ustedes quemaban en las ciudades de Judá y en las calles de Jerusalén, ustedes y sus padres, sus reyes y sus príncipes, y también el pueblo del país?",
+        "CEI": "Anche i suoi mercenari nel paese sono come vitelli da ingrasso. Anch'essi infatti han voltate le spalle, fuggono insieme, non resistono, poiché il giorno della sventura è giunto su di loro, il tempo del loro castigo."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "קוֹלָ֖/הּ כַּ/נָּחָ֣שׁ יֵלֵ֑ךְ כִּֽי בְ/חַ֣יִל יֵלֵ֔כוּ וּ/בְ/קַרְדֻּמּוֹת֙ בָּ֣אוּ לָ֔/הּ כְּ/חֹטְבֵ֖י עֵצִֽים׃",
+        "VUL": "Vox ejus quasi æris sonabit :/ quoniam cum exercitu properabunt,/ et cum securibus venient ei/ quasi cædentes ligna./",
+        "SYN": "Голос его несется, как змеиный; они идут с войском, придут на него с топорами, как дровосеки;",
+        "NEO": "Sa voix est comme le bruit du serpent qui s’en va ; car ils sont venus en force, ils sont arrivés chez elle avec des haches, pareils à des bûcherons.",
+        "NAB": "She sounds like a retreating reptile! Yes, they come in force; like woodchoppers, they attack her with axes.",
+        "VAT_ES": "Y como el Señor ya no podía soportar las malas acciones y las abominaciones que ustedes cometían, su país se ha convertido en un desierto, una devastación y una maldición, y ha quedado despoblado, como en el día de hoy.",
+        "CEI": "La sua voce è come di serpente che sibila, poiché essi avanzano con un esercito e armati di scure vengono contro di lei, come tagliaboschi."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "כָּרְת֤וּ יַעְרָ/הּ֙ נְאֻם יְהוָ֔ה כִּ֖י לֹ֣א יֵֽחָקֵ֑ר כִּ֤י רַבּוּ֙ מֵֽ/אַרְבֶּ֔ה וְ/אֵ֥ין לָ/הֶ֖ם מִסְפָּֽר׃",
+        "VUL": "Succiderunt saltum ejus, ait Dominus,/ qui supputari non potest :/ multiplicati sunt super locustas,/ et non est eis numerus./",
+        "SYN": "вырубят лес его, говорит Господь, ибо они несметны; их более, нежели саранчи, и нет числа им.",
+        "NEO": "Ils ont abattu sa forêt, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, alors qu’elle était impénétrable ; car ils sont plus nombreux que les sauterelles, et on ne peut les compter.",
+        "NAB": "They cut down her forest, says the LORD, impenetrable though it be; More numerous than locusts, they cannot be counted.",
+        "VAT_ES": "Porque ustedes quemaron incienso y pecaron contra el Señor, porque ustedes no escucharon la voz del Señor ni caminaron según su Ley, sus preceptos y sus testimonios, por eso les ha sobrevenido esta desgracia, como en el día de hoy».",
+        "CEI": "Abbattono la sua selva - dice il Signore - e non si possono contare, essi sono più delle locuste, sono senza numero."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "הֹבִ֖ישָׁה בַּת מִצְרָ֑יִם נִתְּנָ֖ה בְּ/יַ֥ד עַם צָפֽוֹן׃",
+        "VUL": "Confusa est filia Ægypti,/ et tradita in manu populi aquilonis./",
+        "SYN": "Посрамлена дочь Египта, предана в руки народа северного.",
+        "NEO": "Elle est confuse, la fille de l’Égypte ; elle a été livrée aux mains d’un peuple du septentrion !",
+        "NAB": "Disgraced is daughter Egypt, handed over to the people of the north.",
+        "VAT_ES": "Jeremías dijo a todos los hombres y todas las mujeres: «Escuchen la palabra del Señor, todos ustedes, gente de Judá, que están en el país de Egipto:",
+        "CEI": "Prova vergogna la figlia d'Egitto, è data in mano a un popolo del settentrione."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "אָמַר֩ יְהוָ֨ה צְבָא֜וֹת אֱלֹהֵ֣י יִשְׂרָאֵ֗ל הִנְ/נִ֤י פוֹקֵד֙ אֶל אָמ֣וֹן מִ/נֹּ֔א וְ/עַל פַּרְעֹה֙ וְ/עַל מִצְרַ֔יִם וְ/עַל אֱלֹהֶ֖י/הָ וְ/עַל מְלָכֶ֑י/הָ וְ/עַ֨ל פַּרְעֹ֔ה וְ/עַ֥ל הַ/בֹּטְחִ֖ים בּֽ/וֹ׃",
+        "VUL": "Dixit Dominus exercituum, Deus Israël :/ Ecce ego visitabo super tumultum Alexandriæ,/ et super Pharaonem, et super Ægyptum,/ et super deos ejus, et super reges ejus,/ et super Pharaonem, et super eos qui confidunt in eo :/",
+        "SYN": "Господь Саваоф, Бог Израилев, говорит: вот, Я посещу Аммона, который в Но, и фараона и Египет, и богов его и царей его, фараона и надеющихся на него;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** des armées, Dieu d’Israël, a dit : Voici que je vais visiter Amon de No, et Pharaon, et l’Égypte, et ses dieux, et ses rois, et Pharaon, et ceux qui se fient à lui.",
+        "NAB": "The LORD of hosts, the God of Israel, has said: See! I will punish Amon of Thebes, and Egypt, her gods and her kings, Pharaoh, and those who trust in him.",
+        "VAT_ES": "Así habla el Señor de los ejércitos, el Dios de Israel: Ustedes, las mujeres, con su boca han declarado esto, y con sus manos lo han llevado a cabo: «Cumpliremos nuestros votos de quemar incienso a la Reina de los cielos y derramarle libaciones». Muy bien: &iexcl;cumplan sus votos, hagan libaciones!",
+        "CEI": "Il Signore degli eserciti, Dio di Israele, dice: \"Ecco, punirò Amòn di Tebe, l'Egitto, i suoi dei e i suoi re, il faraone e coloro che confidano in lui."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וּ/נְתַתִּ֗י/ם בְּ/יַד֙ מְבַקְשֵׁ֣י נַפְשָׁ֔/ם וּ/בְ/יַ֛ד נְבֽוּכַדְרֶאצַּ֥ר מֶֽלֶךְ בָּבֶ֖ל וּ/בְ/יַד עֲבָדָ֑י/ו וְ/אַחֲרֵי כֵ֛ן תִּשְׁכֹּ֥ן כִּֽ/ימֵי קֶ֖דֶם נְאֻם יְהוָֽה׃",
+        "VUL": "et dabo eos in manu quærentium animam eorum,/ et in manu Nabuchodonosor regis Babylonis,/ et in manu servorum ejus :/ et post hæc habitabitur sicut diebus pristinis, ait Dominus./",
+        "SYN": "и предам их в руки ищущих души их и в руки Навуходоносора, царя Вавилонского, и в руки рабов его; но после того будет он населен, как в прежние дни, говорит Господь.",
+        "NEO": "Et je les livrerai aux mains de ceux qui en veulent à leur vie, aux mains de Nabuchodonosor, roi de Babylone, et aux mains de ses serviteurs. Et après cela, elle sera habitée, comme aux jours d’autrefois, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "I will hand them over to those who seek their lives, to Nebuchadnezzar, king of Babylon, and his ministers. But later on Egypt shall be inhabited again, as in times past, says the LORD.",
+        "VAT_ES": "Pero escuchen la palabra del Señor, todos ustedes, gente de Judá que habitan en el país de Egipto: Juro por mi gran Nombre –dice el Señor– que mi Nombre no será más invocado por la boca de ningún hombre de Judá, y que nadie dirá: &iexcl;Por la vida del Señor! en todo el país de Egipto.",
+        "CEI": "Li consegnerò in potere di coloro che attentano alla loro vita, in potere di Nabucodònosor re di Babilonia e in potere dei suoi ministri. Ma dopo esso sarà abitato come in passato\". Parola del Signore."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ֠/אַתָּה אַל תִּירָ֞א עַבְדִּ֤/י יַֽעֲקֹב֙ וְ/אַל תֵּחַ֣ת יִשְׂרָאֵ֔ל כִּ֠י הִנְ/נִ֤י מוֹשִֽׁעֲ/ךָ֙ מֵֽ/רָח֔וֹק וְ/אֶֽת זַרְעֲ/ךָ֖ מֵ/אֶ֣רֶץ שִׁבְיָ֑/ם וְ/שָׁ֧ב יַעֲק֛וֹב וְ/שָׁקַ֥ט וְ/שַׁאֲנַ֖ן וְ/אֵ֥ין מַחֲרִֽיד׃",
+        "VUL": "Et tu ne timeas, serve meus Jacob,/ et ne paveas, Israël :/ quia ecce ego salvum te faciam de longinquo,/ et semen tuum de terra captivitatis tuæ :/ et revertetur Jacob, et requiescet,/ et prosperabitur, et non erit qui exterreat eum./",
+        "SYN": "Ты же не бойся, раб мой Иаков, и не страшись, Израиль: ибо вот, Я спасу тебя из далекой страны и семя твое из земли плена их; и возвратится Иаков, и будет жить спокойно и мирно, и никто не будет устрашать его.",
+        "NEO": "Toi donc, ne crains pas, mon serviteur Jacob ; ne t’effraie pas, Israël. Car voici que je vais te tirer de la terre lointaine, et ta postérité du pays de son exil ; Jacob reviendra, il sera tranquille, en sécurité, sans que personne l’épouvante.",
+        "NAB": "But you, my servant Jacob, fear not; be not dismayed, O Israel. Behold, I will deliver you from the far-off land, your descendants, from their land of exile. Jacob shall again find rest, shall be tranquil and undisturbed.",
+        "VAT_ES": "Yo vigilo sobre ustedes para mal y no para bien: todos los hombres de Judá que están en el país de Egipto desaparecerán completamente por la espada y por el hambre, hasta ser exterminados.",
+        "CEI": "\"Ma tu non temere, Giacobbe mio servo, non abbatterti, Israele; poiché ecco, io ti libererò da un paese lontano e la tua discendenza dal paese del suo esilio. Giacobbe ritornerà e godrà in pace, tranquillo e nessuno lo molesterà."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "אַ֠תָּה אַל תִּירָ֞א עַבְדִּ֤/י יַֽעֲקֹב֙ נְאֻם יְהוָ֔ה כִּ֥י אִתְּ/ךָ֖ אָ֑נִי כִּי֩ אֶעֱשֶׂ֨ה כָלָ֜ה בְּ/כָֽל הַ/גּוֹיִ֣ם אֲשֶׁ֧ר הִדַּחְתִּ֣י/ךָ שָׁ֗מָּ/ה וְ/אֹֽתְ/ךָ֙ לֹא אֶעֱשֶׂ֣ה כָלָ֔ה וְ/יִסַּרְתִּ֨י/ךָ֙ לַ/מִּשְׁפָּ֔ט וְ/נַקֵּ֖ה לֹ֥א אֲנַקֶּֽ/ךָּ׃",
+        "VUL": "Et tu noli timere, serve meus Jacob, ait Dominus,/ quia tecum ego sum :/ quia ego consumam cunctas gentes ad quas ejeci te, / te vero non consumam :/ sed castigabo te in judicio,/ nec quasi innocenti parcam tibi.]",
+        "SYN": "Не бойся, раб Мой Иаков, говорит Господь: ибо Я с тобою; Я истреблю все народы, к которым Я изгнал тебя, а тебя не истреблю, а только накажу тебя в мере; ненаказанным же не оставлю тебя.",
+        "NEO": "Et toi, ne crains pas, mon serviteur Jacob, — oracle de \\+w Yahweh|strong=\"H3068\"\\+w**, — car je suis avec toi ! Je ferai une extermination dans toutes les nations où je t’ai chassé. Pour toi, je ne t’exterminerai pas. Mais je te châtierai selon la justice, et je ne te laisserai pas impuni.",
+        "NAB": "You, my servant Jacob, never fear, says the LORD, for I am with you; I will make an end of all the nations to which I have driven you, But of you I will not make an end: I will chastise you as you deserve, I will not let you go unpunished.",
+        "VAT_ES": "Sólo unos pocos librados de la espada retornarán de Egipto al país de Judá. Y todo el resto de Judá, los que entraron el país de Egipto para residir allí, sabrán qué palabra se realiza, si la mía o la de ellos.",
+        "CEI": "Tu non temere, Giacobbe mio servo, - dice il Signore - perché io sono con te. Annienterò tutte le nazioni tra le quali ti ho disperso, ma di te non farò sterminio; ti castigherò secondo equità, ma non ti lascerò del tutto impunito\"."
+      }
+    }
+  }
+}

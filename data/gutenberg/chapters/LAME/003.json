@@ -1,0 +1,410 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "LAME_003",
+  "book_key": "LAME",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אֲנִ֤י הַ/גֶּ֨בֶר֙ רָאָ֣ה עֳנִ֔י בְּ/שֵׁ֖בֶט עֶבְרָתֽ/וֹ׃",
+        "LXX": "Ἄλεφ. Ἐγὼ ἀνὴρ ὁ βλέπων πτωχείαν, ἐν ῥάβδῳ θυμοῦ αὐτοῦ ἐπ’ ἐμέ",
+        "VUL": "[<Aleph>Ego vir videns paupertatem meam/ in virga indignationis ejus./",
+        "SYN": "Я человек, испытавший горе от жезла гнева Его.",
+        "NEO": "Je suis l’homme qui a vu l’affliction sous la verge de sa fureur.",
+        "NAB": "I am a man who knows affliction from the rod of his anger,",
+        "VAT_ES": "[Alef] Yo soy el hombre que ha soportado la miseria bajo la vara de su furor.",
+        "CEI": "Io sono l'uomo che ha provato la miseria sotto la sferza della sua ira."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אוֹתִ֥/י נָהַ֛ג וַ/יֹּלַ֖ךְ חֹ֥שֶׁךְ וְ/לֹא אֽוֹר׃",
+        "LXX": "παρέλαβέν με καὶ ἀπήγαγεν εἰς σκότος καὶ οὐ φῶς.",
+        "VUL": "<Aleph>Me minavit, et adduxit in tenebras,/ et non in lucem./",
+        "SYN": "Он повел меня и ввел во тьму, а не во свет.",
+        "NEO": "Il m’a conduit et m’a fait marcher dans les ténèbres et non dans la lumière ;",
+        "NAB": "One whom he has led and forced to walk in darkness, not in the light;",
+        "VAT_ES": "El me condujo y me hizo caminar por las tinieblas, y no por la luz.",
+        "CEI": "Egli mi ha guidato, mi ha fatto camminare nelle tenebre e non nella luce."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אַ֣ךְ בִּ֥/י יָשֻׁ֛ב יַהֲפֹ֥ךְ יָד֖/וֹ כָּל הַ/יּֽוֹם׃",
+        "LXX": "πλήν ἐν ἐμοὶ ἐπέστρεψεν χεῖρα αὐτοῦ ὅλην τὴν ἡμέραν,",
+        "VUL": "<Aleph>Tantum in me vertit et convertit/ manum suam tota die./",
+        "SYN": "Так, Он обратился на меня и весь день обращает руку Свою;",
+        "NEO": "contre moi seul il tourne et retourne sa main tout le jour.",
+        "NAB": "Against me alone he brings back his hand again and again all the day.",
+        "VAT_ES": "Sólo contra mí, una y otra vez, vuelve su mano todo el día.",
+        "CEI": "Solo contro di me egli ha volto e rivolto la sua mano tutto il giorno."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "בִּלָּ֤ה בְשָׂרִ/י֙ וְ/עוֹרִ֔/י שִׁבַּ֖ר עַצְמוֹתָֽ/י׃",
+        "LXX": "ἐπαλαίωσεν σάρκα μου καὶ δέρμα μου, ὀστέα μου συνέτριψεν.",
+        "VUL": "<Beth>Vetustam fecit pellem meam et carnem meam ;/ contrivit ossa mea./",
+        "SYN": "измождил плоть мою и кожу мою, сокрушил кости мои;",
+        "NEO": "Il a usé ma chair et ma peau, il a brisé mes os ;",
+        "NAB": "He has worn away my flesh and my skin, he has broken my bones;",
+        "VAT_ES": "[Bet] El marchitó mi carne y mi piel, quebró todos mis huesos.",
+        "CEI": "Egli ha consumato la mia carne e la mia pelle, ha rotto le mie ossa."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בָּנָ֥ה עָלַ֛/י וַ/יַּקַּ֖ף רֹ֥אשׁ וּ/תְלָאָֽה׃",
+        "LXX": "Βή. Ἀνῳκοδόμησεν κατ’ ἐμοῦ, καὶ ἐκύκλωσεν κεφαλήν μου καὶ ἐμόχθησεν,",
+        "VUL": "<Beth>Ædificavit in gyro meo, et circumdedit me/ felle et labore./",
+        "SYN": "огородил меня и обложил горечью и тяготою;",
+        "NEO": "Il a bâti contre moi, il m’a environné d’amertume et d’ennui.",
+        "NAB": "He has beset me round about with poverty and weariness;",
+        "VAT_ES": "Edificó contra mí un cerco de veneno y fatiga.",
+        "CEI": "Ha costruito sopra di me, mi ha circondato di veleno e di affanno."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בְּ/מַחֲשַׁכִּ֥ים הוֹשִׁיבַ֖/נִי כְּ/מֵתֵ֥י עוֹלָֽם׃",
+        "LXX": "ἐν σκοτινοῖς ἐκάθισέν με ὡς νεκροὺς αἰῶνος,",
+        "VUL": "<Beth>In tenebrosis collocavit me,/ quasi mortuos sempiternos./",
+        "SYN": "посадил меня в темное место, как давно умерших;",
+        "NEO": "Il m’a fait habiter dans les ténèbres, comme ceux qui sont morts depuis longtemps.",
+        "NAB": "He has left me to dwell in the dark like those long dead.",
+        "VAT_ES": "Me confinó en las tinieblas, como a los que murieron hace mucho tiempo.",
+        "CEI": "Mi ha fatto abitare in luoghi tenebrosi come i morti da lungo tempo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "גָּדַ֧ר בַּעֲדִ֛/י וְ/לֹ֥א אֵצֵ֖א הִכְבִּ֥יד נְחָשְׁתִּֽ/י׃",
+        "LXX": "ἀνῳκοδόμησεν κατ’ ἐμοῦ καὶ οὐκ ἐξελεύσομαι, ἐβάρυνεν χαλκόν μου.",
+        "VUL": "<Ghimel>Circumædificavit adversum me, ut non egrediar ;/ aggravavit compedem meum./",
+        "SYN": "окружил меня стеною, чтобы я не вышел, отяготил оковы мои,",
+        "NEO": "Il m’a entouré d’un mur pour que je ne puisse sortir, il a rendu lourdes mes chaînes.",
+        "NAB": "He has hemmed me in with no escape and weighed me down with chains;",
+        "VAT_ES": "[Guímel] Me tiene cercado y no puedo salir, hizo pesada mi cadena.",
+        "CEI": "Mi ha costruito un muro tutt'intorno, perché non potessi più uscire; ha reso pesanti le mie catene."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "גַּ֣ם כִּ֤י אֶזְעַק֙ וַ/אֲשַׁוֵּ֔עַ שָׂתַ֖ם תְּפִלָּתִֽ/י׃",
+        "LXX": "Γίμελ. Καί γε κεκράξομαι καὶ βοήσω, ἀπέφραξεν προσευχήν μου.",
+        "VUL": "<Ghimel>Sed et cum clamavero, et rogavero,/ exclusit orationem meam./",
+        "SYN": "и когда я взывал и вопиял, задерживал молитву мою;",
+        "NEO": "Lors même que je crie et que j’implore, il ferme tout accès à ma prière.",
+        "NAB": "Even when I cry out for help, he stops my prayer;",
+        "VAT_ES": "Por más que grite y pida auxilio, cierra el paso a mi plegaria.",
+        "CEI": "Anche se grido e invoco aiuto, egli soffoca la mia preghiera."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "גָּדַ֤ר דְּרָכַ/י֙ בְּ/גָזִ֔ית נְתִיבֹתַ֖/י עִוָּֽה׃",
+        "LXX": "Δάλεθ. Ἀνῳκοδόμησεν ὁδούς μου, ἐνέφραξεν τρίβους μου, ἐτάραξεν",
+        "VUL": "<Ghimel>Conclusit vias meas lapidibus quadris ;/ semitas meas subvertit./",
+        "SYN": "каменьями преградил дороги мои, извратил стези мои.",
+        "NEO": "Il a muré mes chemins avec des pierres de taille, il a bouleversé mes sentiers.",
+        "NAB": "He has blocked my ways with fitted stones, and turned my paths aside.",
+        "VAT_ES": "Cercó mis caminos con piedras talladas, entorpeció mis senderos.",
+        "CEI": "Ha sbarrato le mie vie con blocchi di pietra, ha ostruito i miei sentieri."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "דֹּ֣ב אֹרֵ֥ב הוּא֙ לִ֔/י אריה אֲרִ֖י בְּ/מִסְתָּרִֽים׃",
+        "LXX": "ἄρκος ἐνεδρεύουσα, αὐτός μοι λέων ἐν κρυφαίοις·",
+        "VUL": "<Daleth>Ursus insidians factus est mihi,/ leo in absconditis./",
+        "SYN": "Он стал для меня как бы медведь в засаде, _как бы_ лев в скрытном месте;",
+        "NEO": "Il a été pour moi comme un ours aux aguets, comme un lion dans les embuscades ;",
+        "NAB": "A lurking bear he has been to me, a lion in ambush!",
+        "VAT_ES": "[Dálet] Fue para mí un oso en acecho, un león agazapado.",
+        "CEI": "Egli era per me un orso in agguato, un leone in luoghi nascosti."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "דְּרָכַ֥/י סוֹרֵ֛ר וַֽ/יְפַשְּׁחֵ֖/נִי שָׂמַ֥/נִי שֹׁמֵֽם׃",
+        "LXX": "κατεδίωξεν ἀφεστηκότα καὶ κατέπαυσέν με, ἔθετό με ἠφανισμένην.",
+        "VUL": "<Daleth>Semitas meas subvertit, et confregit me ;/ posuit me desolatam./",
+        "SYN": "извратил пути мои и растерзал меня, привел меня в ничто;",
+        "NEO": "il a détourné mes voies et m’a mis en pièces, il m’a réduit à l’abandon ;",
+        "NAB": "He deranged my ways, set me astray, left me desolate.",
+        "VAT_ES": "Me apartó del camino y me desgarró, me dejó desolado.",
+        "CEI": "Seminando di spine la mia via, mi ha lacerato, mi ha reso desolato."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "דָּרַ֤ךְ קַשְׁת/וֹ֙ וַ/יַּצִּיבֵ֔/נִי כַּ/מַּטָּרָ֖א לַ/חֵֽץ׃",
+        "LXX": "Ἥ. Ἐνέτεινεν τόξον αὐτοῦ καὶ ἐστήλωσέν με ὡς σκοπὸν εἰς βέλος,",
+        "VUL": "<Daleth>Tetendit arcum suum, et posuit me/ quasi signum ad sagittam./",
+        "SYN": "натянул лук Свой и поставил меня как бы целью для стрел;",
+        "NEO": "il a bandé son arc et m’a placé comme but à ses flèches.",
+        "NAB": "He bent his bow, and set me up as the target for his arrow.",
+        "VAT_ES": "Apuntó con su arco e hizo de mí el blanco de su flecha.",
+        "CEI": "Ha teso l'arco, mi ha posto come bersaglio alle sue saette."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הֵבִיא֙ בְּ/כִלְיוֹתָ֔/י בְּנֵ֖י אַשְׁפָּתֽ/וֹ׃",
+        "LXX": "εἰσήγαγεν τοῖς νεφροῖς μου ἰοὺς φαρέτρας αὐτοῦ·",
+        "VUL": "<He>Misit in renibus meis/ filias pharetræ suæ./",
+        "SYN": "послал в почки мои стрелы из колчана Своего.",
+        "NEO": "Il a fait pénétrer dans mes reins les fils de son carquois ;",
+        "NAB": "He pierces my sides with shafts from his quiver.",
+        "VAT_ES": "[He] Me clavó en los riñones las flechas de su aljaba.",
+        "CEI": "Ha conficcato nei miei fianchi le frecce della sua farètra."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "הָיִ֤יתִי שְּׂחֹק֙ לְ/כָל עַמִּ֔/י נְגִינָתָ֖/ם כָּל הַ/יּֽוֹם׃",
+        "LXX": "ἐγενήθην γέλως παντὶ λαῷ μου, ψαλμὸς αὐτῶν ὅλην τὴν ἡμέραν.",
+        "VUL": "<He>Factus sum in derisum omni populo meo,/ canticum eorum tota die./",
+        "SYN": "Я стал посмешищем для всего народа моего, вседневною песнью их.",
+        "NEO": "je suis la risée de tout mon peuple, leur chanson tout le jour ;",
+        "NAB": "I have become a laughingstock for all nations, their taunt all the day long;",
+        "VAT_ES": "Fui la irrisión de mi pueblo, el motivo constante de sus cantos burlones.",
+        "CEI": "Son diventato lo scherno di tutti i popoli, la loro canzone d'ogni giorno."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "הִשְׂבִּיעַ֥/נִי בַ/מְּרוֹרִ֖ים הִרְוַ֥/נִי לַעֲנָֽה׃",
+        "LXX": "Οὐαύ. Ἐχόρτασέν με πικρίας, ἐμέθυσέν με χολῆς,",
+        "VUL": "<He>Replevit me amaritudinibus ;/ inebriavit me absinthio./",
+        "SYN": "Он пресытил меня горечью, напоил меня полынью.",
+        "NEO": "il m’a rassasié d’amertume, il m’a abreuvé d’absinthe.",
+        "NAB": "He has sated me with bitter food, made me drink my fill of wormwood.",
+        "VAT_ES": "El me sació de amargura, me abrevó con ajenjo.",
+        "CEI": "Mi ha saziato con erbe amare, mi ha dissetato con assenzio."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יַּגְרֵ֤ס בֶּֽ/חָצָץ֙ שִׁנָּ֔/י הִכְפִּישַׁ֖/נִי בָּ/אֵֽפֶר׃",
+        "LXX": "καὶ ἐξέβαλεν ψήφῳ ὀδόντας μου, ἐψώμισέν με σποδόν·",
+        "VUL": "<Vau>Et fregit ad numerum dentes meos ;/ cibavit me cinere./",
+        "SYN": "Сокрушил камнями зубы мои, покрыл меня пеплом.",
+        "NEO": "Et il a fait broyer du gravier à mes dents, il m’a enfoncé dans la cendre ;",
+        "NAB": "He has broken my teeth with gravel, pressed my face in the dust;",
+        "VAT_ES": "[Vau] Partió mis dientes con un guijarro, me revolcó en la ceniza.",
+        "CEI": "Mi ha spezzato con la sabbia i denti, mi ha steso nella polvere."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/תִּזְנַ֧ח מִ/שָּׁל֛וֹם נַפְשִׁ֖/י נָשִׁ֥יתִי טוֹבָֽה׃",
+        "LXX": "καὶ ἀπώσατο ἐξ εἰρήνης ψυχήν μου, ἐπελαθόμην ἀγαθά,",
+        "VUL": "<Vau>Et repulsa est a pace anima mea ;/ oblitus sum bonorum./",
+        "SYN": "И удалился мир от души моей; я забыл о благоденствии,",
+        "NEO": "et mon âme est violemment écartée de la sécurité ; j’ai oublié le bonheur ;",
+        "NAB": "My soul is deprived of peace, I have forgotten what happiness is;",
+        "VAT_ES": "Ya no hay paz para mi alma, me olvidé de la felicidad.",
+        "CEI": "Son rimasto lontano dalla pace, ho dimenticato il benessere."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וָ/אֹמַר֙ אָבַ֣ד נִצְחִ֔/י וְ/תוֹחַלְתִּ֖/י מֵ/יְהוָֽה׃",
+        "LXX": "καὶ ἀπώλετο νῖκός μου καὶ ἡ ἐλπίς μου ἀπὸ Κυρίου.",
+        "VUL": "<Vau>Et dixi : Periit finis meus,/ et spes mea a Domino./",
+        "SYN": "и сказал я: погибла сила моя и надежда моя на Господа.",
+        "NEO": "et j’ai dit : « Ma force est perdue, ainsi que mon espérance en \\+w Yahweh|strong=\"H3068\"\\+w** ! »",
+        "NAB": "I tell myself my future is lost, all that I hoped for from the LORD.",
+        "VAT_ES": "Por eso dije: «Se ha agotado mi fuerza y la esperanza que me venía del Señor».",
+        "CEI": "E dico: \"È sparita la mia gloria, la speranza che mi veniva dal Signore\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "זְכָר עָנְיִ֥/י וּ/מְרוּדִ֖/י לַעֲנָ֥ה וָ/רֹֽאשׁ׃",
+        "LXX": "Ζάι. Ἐμνήσθην ἀπὸ πτωχείας μου καὶ ἐκ διωγμοῦ,",
+        "VUL": "<Zain>Recordare paupertatis, et transgressionis meæ,/ absinthii et fellis./",
+        "SYN": "Помысли о моем страдании и бедствии моем, о полыни и желчи.",
+        "NEO": "Souviens-toi de mon affliction et de ma souffrance, de l’absinthe et de l’amertume !",
+        "NAB": "The thought of my homeless poverty is wormwood and gall;",
+        "VAT_ES": "[Zain] Recordar mi opresión y mi vida errante es ajenjo y veneno.",
+        "CEI": "Il ricordo della mia miseria e del mio vagare è come assenzio e veleno."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "זָכ֣וֹר תִּזְכּ֔וֹר ו/תשיח וְ/תָשׁ֥וֹחַ עָלַ֖/י נַפְשִֽׁ/י׃",
+        "LXX": "πικρία καὶ χολή μου μνησθήσεται, καὶ καταδολεσχήσει ἐπ’ ἐμὲ ἡ ψυχή μου·",
+        "VUL": "<Zain>Memoria memor ero, et tabescet/ in me anima mea./",
+        "SYN": "Твердо помнит это душа моя и падает во мне.",
+        "NEO": "Mon âme s’en souvient sans cesse, et elle est abattue en moi.",
+        "NAB": "Remembering it over and over leaves my soul downcast within me.",
+        "VAT_ES": "Mi alma no hace más que recordar y se hunde dentro de mí;",
+        "CEI": "Ben se ne ricorda e si accascia dentro di me la mia anima."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "זֹ֛את אָשִׁ֥יב אֶל לִבִּ֖/י עַל כֵּ֥ן אוֹחִֽיל׃",
+        "LXX": "ταύτην τάξω εἰς τὴν καρδίαν μου, διὰ τοῦτο ὑπομενῶ.",
+        "VUL": "<Zain>Hæc recolens in corde meo,/ ideo sperabo./",
+        "SYN": "Вот что я отвечаю сердцу моему и потому уповаю:",
+        "NEO": "Voici ce que je me rappelerai en mon cœur, et ce pourquoi j’espérerai :",
+        "NAB": "But I will call this to mind, as my reason to have hope:",
+        "VAT_ES": "Pero me pongo a pensar en algo y esto me llena de esperanza:",
+        "CEI": "Questo intendo richiamare alla mia mente, e per questo voglio riprendere speranza."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "חַֽסְדֵ֤י יְהוָה֙ כִּ֣י לֹא תָ֔מְנוּ כִּ֥י לֹא כָל֖וּ רַחֲמָֽי/ו׃",
+        "VUL": "<Heth>Misericordiæ Domini, quia non sumus consumpti ;/ quia non defecerunt miserationes ejus./",
+        "SYN": "по милости Господа мы не исчезли, ибо милосердие Его не истощилось.",
+        "NEO": "C’est une grâce de \\+w Yahweh|strong=\"H3068\"\\+w** que nous ne soyons pas anéantis, car ses miséricordes ne sont pas épuisées !",
+        "NAB": "The favors of the LORD are not exhausted, his mercies are not spent;",
+        "VAT_ES": "[Jet] La misericordia del Señor no se extingue ni se agota su compasión;",
+        "CEI": "Le misericordie del Signore non sono finite, non è esaurita la sua compassione;"
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_017",
+  "book_key": "NUME",
+  "sequence": 17,
+  "chapter_in": {
+    "MT": 17,
+    "VUL": 17,
+    "LXX": 17
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Et locutus est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Poi il Signore disse a Mosè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אֱמֹ֨ר אֶל אֶלְעָזָ֜ר בֶּן אַהֲרֹ֣ן הַ/כֹּהֵ֗ן וְ/יָרֵ֤ם אֶת הַ/מַּחְתֹּת֙ מִ/בֵּ֣ין הַ/שְּׂרֵפָ֔ה וְ/אֶת הָ/אֵ֖שׁ זְרֵה הָ֑לְאָה כִּ֖י קָדֵֽשׁוּ׃",
+        "LXX": "Λάλησον τοῖς υἱοῖς Ἰσραήλ, καὶ λάβε παρ’ αὐτῶν ῥάβδον, ῥάβδον κατ’ οἴκους πατριῶν παρὰ πάντων τῶν ἀρχόντων αὐτῶν, κατ’ οἴκους πατριῶν αὐτῶν, δώδεκα ῥάβδους· καὶ ἑκάστου τὸ ὄνομα αὐτοῦ ἐπίγραψον ἐπὶ τῆς ῥάβδου.",
+        "VUL": "Loquere ad filios Israël, et accipe ab eis virgas singulas per cognationes suas, a cunctis principibus tribuum, virgas duodecim, et uniuscujusque nomen superscribes virgæ suæ.",
+        "SYN": "скажи сынам Израилевым и возьми у них по жезлу от колена, от всех начальников их по коленам, двенадцать жезлов, и каждого имя напиши на жезле его;",
+        "NEO": "« Dis à Eléazar, fils d’Aaron, le prêtre, de retirer les encensoirs du milieu de l’embrasement et d’en répandre au loin le feu, car ils sont sanctifiés.",
+        "NAB": "\"Tell Eleazar, son of Aaron the priest, to remove the censers from the embers; and scatter the fire some distance away,",
+        "VAT_ES": "«Manda a Eleazar, hijo del sacerdote Aarón, que retire los incensarios de en medio de las brasas y que desparrame el fuego en otra parte, porque esos incensarios han sido santificados.",
+        "CEI": "\"Dì a Eleazaro, figlio del sacerdote Aronne, di tirar fuori gli incensieri dall'incendio e di disperdere qua e là il fuoco, perché quelli sono sacri;"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אֵ֡ת מַחְתּוֹת֩ הַֽ/חַטָּאִ֨ים הָ/אֵ֜לֶּה בְּ/נַפְשֹׁתָ֗/ם וְ/עָשׂ֨וּ אֹתָ֜/ם רִקֻּעֵ֤י פַחִים֙ צִפּ֣וּי לַ/מִּזְבֵּ֔חַ כִּֽי הִקְרִיבֻ֥/ם לִ/פְנֵֽי יְהוָ֖ה וַ/יִּקְדָּ֑שׁוּ וְ/יִֽהְי֥וּ לְ/א֖וֹת לִ/בְנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ τὸ ὄνομα Ἀαρὼν ἐπίγραψον ἐπὶ τῆς ῥάβδου Λευεί· ἔστιν γὰρ ῥάβδος μία, κατὰ φυλὴν οἴκου πατριῶν αὐτῶν δώσουσιν.",
+        "VUL": "Nomen autem Aaron erit in tribu Levi, et una virga cunctas seorsum familias continebit :",
+        "SYN": "имя Аарона напиши на жезле Левиином, ибо один жезл от начальника колена их [должны они дать];",
+        "NEO": "Des encensoirs de ces gens qui ont péché contre leur propre vie, qu’on fasse des lames étendues, pour en recouvrir l’autel des holocaustes ; car on les a présentés devant \\+w Yahweh|strong=\"H3068\"\\+w**, et ils sont devenus saints ; ils serviront de signe aux enfants d’Israël. »",
+        "NAB": "for these sinners have consecrated the censers at the cost of their lives. Have them hammered into plates to cover the altar, because in being presented before the LORD they have become sacred. In this way they shall serve as a sign to the Israelites.\"",
+        "VAT_ES": "Retiren los incensarios de aquellos que murieron por haber pecado, y hagan con ellos láminas de metal para recubrir el altar. Porque al ser usados para ofrecer incienso delante del Señor, quedaron santificados. Así servirán de signo para los israelitas».",
+        "CEI": "degli incensieri di quegli uomini, che hanno peccato al prezzo della loro vita, si facciano tante lamine battute per rivestirne l'altare, poiché sono stati presentati davanti al Signore e quindi sono sacri; saranno un monito per gli Israeliti\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֞ח אֶלְעָזָ֣ר הַ/כֹּהֵ֗ן אֵ֚ת מַחְתּ֣וֹת הַ/נְּחֹ֔שֶׁת אֲשֶׁ֥ר הִקְרִ֖יבוּ הַ/שְּׂרֻפִ֑ים וַֽ/יְרַקְּע֖וּ/ם צִפּ֥וּי לַ/מִּזְבֵּֽחַ׃",
+        "LXX": "καὶ θήσεις αὐτὰς ἐν τῇ σκηνῇ τοῦ μαρτυρίου κατέναντι τοῦ μαρτυρίου, ἐν οἷς γνωσθήσομαί σοι ἐκεῖ.",
+        "VUL": "ponesque eas in tabernaculo fderis coram testimonio, ubi loquar ad te.",
+        "SYN": "и положи их в скинии собрания, пред _ковчегом_ откровения, где являюсь Я вам;",
+        "NEO": "Le prêtre Eléazar prit les encensoirs d’airain qu’avaient présentés les hommes consumés par le feu, et il en fit des lames pour couvrir l’autel.",
+        "NAB": "So Eleazar the priest had the bronze censers of those burned during the offering hammered into a covering for the altar,",
+        "VAT_ES": "El sacerdote Eleazar tomó los incensarios de bronce que habían usado para la ofrenda los que murieron carbonizados, y los mandó martillar hasta convertirlos en láminas para recubrir el altar.",
+        "CEI": "Il sacerdote Eleazaro prese gli incensieri di rame presentati dagli uomini che erano stati arsi; furono ridotti in lamine per rivestirne l'altare,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "זִכָּר֞וֹן לִ/בְנֵ֣י יִשְׂרָאֵ֗ל לְ֠מַעַן אֲשֶׁ֨ר לֹֽא יִקְרַ֜ב אִ֣ישׁ זָ֗ר אֲ֠שֶׁר לֹ֣א מִ/זֶּ֤רַע אַהֲרֹן֙ ה֔וּא לְ/הַקְטִ֥יר קְטֹ֖רֶת לִ/פְנֵ֣י יְהוָ֑ה וְ/לֹֽא יִהְיֶ֤ה כְ/קֹ֨רַח֙ וְ/כַ֣/עֲדָת֔/וֹ כַּ/אֲשֶׁ֨ר דִּבֶּ֧ר יְהוָ֛ה בְּ/יַד מֹשֶׁ֖ה לֽ/וֹ׃",
+        "LXX": "καὶ ἔσται ὁ ἄνθρωπος ὃν ἐὰν ἐκλέξωμαι αὐτόν, ἡ ῥάβδος αὐτοῦ ἐκβλαστήσει· καὶ περιελῶ ἀπ’ ἐμοῦ τὸν γογγυσμὸν τῶν υἱῶν Ἰσραήλ, ἃ αὐτοὶ γογγύζουσιν ἐφ’ ὑμῖν.",
+        "VUL": "Quem ex his elegero, germinabit virga ejus : et cohibebo a me querimonias filiorum Israël, quibus contra vos murmurant.",
+        "SYN": "и кого Я изберу, того жезл расцветет; и так Я успокою ропот сынов Израилевых, которым они ропщут на вас.",
+        "NEO": "C’est un mémorial pour les enfants d’Israël, afin qu’aucun étranger, qui n’est pas de la race d’Aaron, ne s’approche pour offrir du parfum devant \\+w Yahweh|strong=\"H3068\"\\+w**, et ne soit comme Coré et comme sa troupe, selon ce que \\+w Yahweh|strong=\"H3068\"\\+w** lui avait déclaré par Moïse.",
+        "NAB": "in keeping with the orders which the LORD had given him through Moses. This cover was to be a reminder to the Israelites that no layman, no one who was not a descendant of Aaron, should approach the altar to offer incense before the LORD, lest he meet the fate of Korah and his band.",
+        "VAT_ES": "Estas debían recordar a los israelitas que ningún extraño –alguien que no fuera descendiente de Aarón– podía atreverse a ofrecer incienso delante del Señor, a fin de no correr la misma suerte que Coré y sus secuaces, según lo había predicho el Señor por medio de Moisés.",
+        "CEI": "perché servano da memoriale agli Israeliti: nessun estraneo che non sia della discendenza di Aronne si accosti a bruciare incenso davanti al Signore e abbia la sorte di Core e di quelli che erano con lui. Eleazaro fece come il Signore gli aveva ordinato per mezzo di Mosè."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּלֹּ֜נוּ כָּל עֲדַ֤ת בְּנֵֽי יִשְׂרָאֵל֙ מִֽ/מָּחֳרָ֔ת עַל מֹשֶׁ֥ה וְ/עַֽל אַהֲרֹ֖ן לֵ/אמֹ֑ר אַתֶּ֥ם הֲמִתֶּ֖ם אֶת עַ֥ם יְהוָֽה׃",
+        "LXX": "καὶ ἐλάλησεν Μωυσῆς τοῖς υἱοῖς Ἰσραήλ· καὶ ἔδωκαν αὐτῷ πάντες οἱ ἄρχοντες αὐτῶν ῥάβδον, τῷ ἄρχοντι τῷ ἑνὶ ῥάβδον κατὰ ἄρχοντα, κατ’ οἴκους πατριῶν αὐτῶν, ιβ’ ῥάβδους· Καὶ ἡ ῥάβδος Ἀαρὼν ἀνὰ μέσον τῶν ῥάβδων αὐτῶν.",
+        "VUL": "Locutusque est Moyses ad filios Israël : et dederunt ei omnes principes virgas per singulas tribus : fueruntque virgæ duodecim absque virga Aaron.",
+        "SYN": "И сказал Моисей сынам Израилевым, и дали ему все начальники их, от каждого начальника по жезлу, по коленам их двенадцать жезлов, и жезл Ааронов был среди жезлов их.",
+        "NEO": "Le lendemain, toute l’assemblée des enfants d’Israël murmura contre Moïse et Aaron, en disant : « Vous avez fait mourir le peuple de \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "The next day the whole Israelite community grumbled against Moses and Aaron, saying, \"It is you who have slain the LORD'S people.\"",
+        "VAT_ES": "Al día siguiente, toda la comunidad de los israelitas protestó contra Moisés y Aarón, diciendo: «Ustedes han provocado una mortandad en el pueblo del Señor».",
+        "CEI": "Il giorno dopo tutta la comunità degli Israeliti mormorò contro Mosè e Aronne dicendo: \"Voi avete fatto morire il popolo del Signore\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֗י בְּ/הִקָּהֵ֤ל הָֽ/עֵדָה֙ עַל מֹשֶׁ֣ה וְ/עַֽל אַהֲרֹ֔ן וַ/יִּפְנוּ֙ אֶל אֹ֣הֶל מוֹעֵ֔ד וְ/הִנֵּ֥ה כִסָּ֖ה/וּ הֶ/עָנָ֑ן וַ/יֵּרָ֖א כְּב֥וֹד יְהוָֽה׃",
+        "LXX": "καὶ ἀπέθηκεν Μωυσῆς τὰς ῥάβδους ἔναντι Κυρίου ἐν τῇ σκηνῇ τοῦ μαρτυρίου.",
+        "VUL": "Quas cum posuisset Moyses coram Domino in tabernaculo testimonii,",
+        "SYN": "И положил Моисей жезлы пред лицем Господа в скинии откровения.",
+        "NEO": "Comme l’assemblée s’attroupait contre Moïse et Aaron, ceux-ci se tournèrent vers la tente de réunion, et voici que la nuée la couvrit, et que la gloire de \\+w Yahweh|strong=\"H3068\"\\+w** apparut.",
+        "NAB": "But while the community was deliberating against them, Moses and Aaron turned toward the meeting tent, and the cloud now covered it and the glory of the LORD appeared.",
+        "VAT_ES": "Como la comunidad se amotinaba contra ellos, Moisés y Aarón se volvieron hacia la Carpa del Encuentro, y vieron que la nube la cubría y que la gloria del Señor se había aparecido.",
+        "CEI": "Come la comunità si radunava contro Mosè e contro Aronne, gli Israeliti si volsero verso la tenda del convegno; ed ecco la nube la ricoprì e apparve la gloria del Signore."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֤א מֹשֶׁה֙ וְ/אַהֲרֹ֔ן אֶל פְּנֵ֖י אֹ֥הֶל מוֹעֵֽד׃",
+        "LXX": "καὶ ἐγένετο τῇ ἐπαύριον καὶ εἰσῆλθεν Μωυσῆς καὶ Ἀαρὼν εἰς τὴν σκηνὴν τοῦ μαρτυρίου, καὶ ἰδοὺ ἐβλάστησεν ἡ ῥάβδος Ἀαρὼν εἰς οἶκον Λευεί, καὶ ἐξήνεγκεν βλαστὸν καὶ ἐξήνθησεν ἄνθη καὶ ἐβλάστησεν κάρυα.",
+        "VUL": "sequenti die regressus invenit germinasse virgam Aaron in domo Levi : et turgentibus gemmis eruperant flores, qui, foliis dilatatis, in amygdalas deformati sunt.",
+        "SYN": "На другой день вошел Моисей [и Аарон] в скинию откровения, и вот, жезл Ааронов, от дома Левиина, расцвел, пустил почки, дал цвет и принес миндали.",
+        "NEO": "Moïse et Aaron s’avancèrent devant la tente de réunion,",
+        "NAB": "Then Moses and Aaron came to the front of the meeting tent,",
+        "VAT_ES": "Entonces fueron a la Carpa del Encuentro, y cuando estuvieron frente a ella,",
+        "CEI": "Mosè e Aronne vennero davanti alla tenda del convegno."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "καὶ ἐξήνεγκεν Μωυσῆς πάσας τὰς ῥάβδους ἀπὸ προσώπου Κυρίου πρὸς πάντας υἱοὺς Ἰσραήλ· καὶ εἶδον, καὶ ἔλαβεν ἕκαστος τὴν ῥάβδον αὐτοῦ.",
+        "VUL": "Protulit ergo Moyses omnes virgas de conspectu Domini ad cunctos filios Israël : videruntque, et receperunt singuli virgas suas.",
+        "SYN": "И вынес Моисей все жезлы от лица Господня ко всем сынам Израилевым. И увидели они это и взяли каждый свой жезл.",
+        "NEO": "et \\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse en disant :",
+        "NAB": "and the LORD said to Moses and Aaron,",
+        "VAT_ES": "el Señor dijo a Moisés:",
+        "CEI": "Il Signore disse a Mosè:"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "הֵרֹ֗מּוּ מִ/תּוֹךְ֙ הָ/עֵדָ֣ה הַ/זֹּ֔את וַ/אֲכַלֶּ֥ה אֹתָ֖/ם כְּ/רָ֑גַע וַֽ/יִּפְּל֖וּ עַל פְּנֵי/הֶֽם׃",
+        "LXX": "καὶ εἶπεν Κύριος πρὸς Μωυσῆν Ἀπόθες τὴν ῥάβδον Ἀαρὼν ἐνώπιον τῶν μαρτυρίων εἰς διατήρησιν, σημεῖον τοῖς υἱοῖς τῶν ἀνηκόων· καὶ παυσάσθω ὁ γογγυσμὸς αὐτῶν ἀπ’ ἐμοῦ, καὶ οὐ μὴ ἀποθάνωσιν.",
+        "VUL": "Dixitque Dominus ad Moysen : Refer virgam Aaron in tabernaculum testimonii, ut servetur ibi in signum rebellium filiorum Israël, et quiescant querelæ eorum a me, ne moriantur.",
+        "SYN": "И сказал Господь Моисею: положи опять жезл Ааронов пред _ковчегом_ откровения на сохранение, в знамение для непокорных, чтобы прекратился ропот их на Меня, и они не умирали.",
+        "NEO": "« Eloignez-vous du milieu de cette assemblée, et je les consumerai en un instant. » Ils tombèrent sur leur visage,",
+        "NAB": "\"Depart from this community, that I may consume them at once.\" But they fell prostrate.",
+        "VAT_ES": "«Apártense de esta comunidad, porque la voy a exterminar en un instante». Ellos cayeron con el rostro en tierra, y Moisés dijo a Aarón:",
+        "CEI": "\"Allontanatevi da questa comunità e io li consumerò in un istante\". Ma essi si prostrarono con la faccia a terra."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר מֹשֶׁ֜ה אֶֽל אַהֲרֹ֗ן קַ֣ח אֶת הַ֠/מַּחְתָּה וְ/תֶן עָלֶ֨י/הָ אֵ֜שׁ מֵ/עַ֤ל הַ/מִּזְבֵּ֨חַ֙ וְ/שִׂ֣ים קְטֹ֔רֶת וְ/הוֹלֵ֧ךְ מְהֵרָ֛ה אֶל הָ/עֵדָ֖ה וְ/כַפֵּ֣ר עֲלֵי/הֶ֑ם כִּֽי יָצָ֥א הַ/קֶּ֛צֶף מִ/לִּ/פְנֵ֥י יְהוָ֖ה הֵחֵ֥ל הַ/נָּֽגֶף׃",
+        "LXX": "καὶ ἐποίησεν Μωυσῆς καὶ Ἀαρὼν καθὰ συνέταξεν κύριος τῷ Μωυσῇ, οὕτως ἐποίησαν.",
+        "VUL": "Fecitque Moyses sicut præceperat Dominus.",
+        "SYN": "Моисей сделал это; как повелел ему Господь, так он и сделал.",
+        "NEO": "et Moïse dit à Aaron : « Prends l’encensoir, et mets-y du feu de dessus l’autel, jettes-y du parfum, va promptement vers l’assemblée, et fais pour eux l’expiation ; car la colère est sortie de devant \\+w Yahweh|strong=\"H3068\"\\+w** ; la plaie commence. »",
+        "NAB": "Then Moses said to Aaron, \"Take your censer, put fire from the altar in it, lay incense on it, and bring it quickly to the community to make atonement for them; for wrath has come forth from the LORD and the blow is falling.\"",
+        "VAT_ES": "«Toma el incensario, coloca en el fuego del altar y échale incienso, En seguida ve adonde está la comunidad y practica el rito de expiación en favor de ellos. Porque la ira del Señor se ha desatado y ha comenzado la plata».",
+        "CEI": "Mosè disse ad Aronne: \"Prendi l'incensiere, mettici il fuoco preso dall'altare, ponici sopra l'incenso; portalo presto in mezzo alla comunità e fà il rito espiatorio per essi; poiché l'ira del Signore è divampata, il flagello è già cominciato\"."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֨ח אַהֲרֹ֜ן כַּ/אֲשֶׁ֣ר דִּבֶּ֣ר מֹשֶׁ֗ה וַ/יָּ֨רָץ֙ אֶל תּ֣וֹך הַ/קָּהָ֔ל וְ/הִנֵּ֛ה הֵחֵ֥ל הַ/נֶּ֖גֶף בָּ/עָ֑ם וַ/יִּתֵּן֙ אֶֽת הַ/קְּטֹ֔רֶת וַ/יְכַפֵּ֖ר עַל הָ/עָֽם׃",
+        "LXX": "Καὶ εἶπαν οἱ υἱοὶ Ἰσραὴλ πρὸς Μωυσῆν λέγοντες Ἰδοὺ ἐξανηλώμεθα, ἀπολώλαμεν, παρανηλώμεθα·",
+        "VUL": "Dixerunt autem filii Israël ad Moysen : Ecce consumpti sumus, omnes perivimus.",
+        "SYN": "И сказали сыны Израилевы Моисею: вот, мы умираем, погибаем, все погибаем!",
+        "NEO": "Aaron prit l’encensoir, comme Moïse avait dit, et courut au milieu de l’assemblée ; et voici que la plaie commençait parmi le peuple. Ayant mis le parfum, il fit l’expiation pour le peuple.",
+        "NAB": "Obeying the orders of Moses, Aaron took his censer and ran in among the community, where the blow was already falling on the people. Then, as he offered the incense and made atonement for the people,",
+        "VAT_ES": "Aarón tomó el incensario, como se lo había mandado Moisés, y fue corriendo a ponerse en medio de la asamblea, donde ya había comenzado la plaga».",
+        "CEI": "Aronne prese l'incensiere, come Mosè aveva detto, corse in mezzo all'assemblea; ecco il flagello era già cominciato in mezzo al popolo; mise l'incenso nel braciere e fece il rito espiatorio per il popolo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲמֹ֥ד בֵּֽין הַ/מֵּתִ֖ים וּ/בֵ֣ין הַֽ/חַיִּ֑ים וַ/תֵּעָצַ֖ר הַ/מַּגֵּפָֽה׃",
+        "LXX": "πᾶς ὁ ἁπτόμενος τῆς σκηνῆς Κυρίου ἀποθνήσκει· ἕως εἰς τέλος ἀποθάνωμεν;",
+        "VUL": "Quicumque accedit ad tabernaculum Domini, moritur. Num usque ad internecionem cuncti delendi sumus ?",
+        "SYN": "всякий, приближающийся к скинии Господней, умирает: не придется ли всем нам умереть?",
+        "NEO": "Il se plaça entre les morts et les vivants, et la plaie fut arrêtée.",
+        "NAB": "standing there between the living and the dead, the scourge was checked.",
+        "VAT_ES": "Luego se quedó de pie entre los muertos y los vivos, y cesó la plaga.",
+        "CEI": "Si fermò tra i morti e i vivi e il flagello fu arrestato."
+      }
+    }
+  }
+}

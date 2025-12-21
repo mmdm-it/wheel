@@ -1,0 +1,529 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_037",
+  "book_key": "EXO",
+  "sequence": 37,
+  "chapter_in": {
+    "MT": 37,
+    "VUL": 37,
+    "LXX": 37
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יַּ֧עַשׂ בְּצַלְאֵ֛ל אֶת הָ/אָרֹ֖ן עֲצֵ֣י שִׁטִּ֑ים אַמָּתַ֨יִם וָ/חֵ֜צִי אָרְכּ֗/וֹ וְ/אַמָּ֤ה וָ/חֵ֨צִי֙ רָחְבּ֔/וֹ וְ/אַמָּ֥ה וָ/חֵ֖צִי קֹמָתֽ/וֹ׃",
+        "LXX": "Καὶ ἐποίησαν τῇ σκηνῇ δέκα αὐλαίας·",
+        "VUL": "Fecit autem Beseleel et arcam de lignis setim, habentem duos semis cubitos in longitudine, et cubitum ac semissem in latitudine, altitudo quoque unius cubiti fuit et dimidii : vestivitque eam auro purissimo intus ac foris.",
+        "SYN": "И сделал Веселеил ковчег из дерева ситтим; длина его два локтя с половиною, ширина его полтора локтя и высота его полтора локтя;",
+        "NEO": "Béseléel fit l’arche de bois d’acacia ; sa longueur était de deux coudées et demie, sa largeur d’une coudée et demie, et sa hauteur d’une coudée et demie.",
+        "NAB": "Bezalel made the ark of acacia wood, two and a half cubits long, one and a half cubits wide, and one and a half cubits high.",
+        "VAT_ES": "Besalel hizo el arca de madera de acacia, de ciento veinticinco centímetros de largo por setenta y cinco de ancho y setenta y cinco de alto.",
+        "CEI": "Bezaleel fece l'arca di legno di acacia: aveva due cubiti e mezzo di lunghezza, un cubito e mezzo di larghezza, un cubito e mezzo di altezza."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יְצַפֵּ֛/הוּ זָהָ֥ב טָה֖וֹר מִ/בַּ֣יִת וּ/מִ/ח֑וּץ וַ/יַּ֥עַשׂ ל֛/וֹ זֵ֥ר זָהָ֖ב סָבִֽיב׃",
+        "LXX": "ὀκτὼ καὶ εἴκοσι πήχεων μῆκος τῆς αὐλαίας τῆς μιᾶς· τὸ αὐτὸ ἦσαν πάσαις· καὶ τεσσάρων πηχῶν τὸ εὖρος τῆς αὐλαίας τῆς μιᾶς.",
+        "VUL": "Et fecit illi coronam auream per gyrum,",
+        "SYN": "и обложил его чистым золотом внутри и снаружи и сделал вокруг него золотой венец;",
+        "NEO": "Il la revêtit d’or pur, en dedans et en dehors, et il y fit une guirlande d’or tout autour.",
+        "NAB": "The inside and outside were plated with gold, and a molding of gold was put around it.",
+        "VAT_ES": "La recubrió de oro puro por dentro y por fuera, y colocó alrededor de ella una moldura de oro.",
+        "CEI": "La rivestì d'oro puro, dentro e fuori. Le fece intorno un bordo d'oro."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּצֹ֣ק ל֗/וֹ אַרְבַּע֙ טַבְּעֹ֣ת זָהָ֔ב עַ֖ל אַרְבַּ֣ע פַּעֲמֹתָ֑י/ו וּ/שְׁתֵּ֣י טַבָּעֹ֗ת עַל צַלְע/וֹ֙ הָֽ/אֶחָ֔ת וּ/שְׁתֵּי֙ טַבָּע֔וֹת עַל צַלְע֖/וֹ הַ/שֵּׁנִֽית׃",
+        "LXX": "καὶ ἐποίησεν τὸ καταπέτασμα ἐξ ὑακίνθου καὶ πορφύρας καὶ κοκκίνου νενησμένου καὶ βύσσου κεκλωσμένης, ἔργον ὑφάντου χερουβείμ·",
+        "VUL": "conflans quatuor annulos aureos per quatuor angulos ejus : duos annulos in latere uno, et duos in altero.",
+        "SYN": "и вылил для него четыре кольца золотых, на четырех нижних углах его: два кольца на одной стороне его и два кольца на другой стороне его.",
+        "NEO": "Il fondit pour elle quatre anneaux d’or, qu’il mit à ses quatre pieds, deux anneaux d’un côté et deux anneaux de l’autre.",
+        "NAB": "Four gold rings were cast and put on its four supports, two rings for one side and two for the opposite side.",
+        "VAT_ES": "Fundió, además, cuatro argollas de oro y las puso en sus cuatro extremos inferiores, dos de un lado y dos del otro.",
+        "CEI": "Fuse per essa quattro anelli d'oro e li fissò ai suoi quattro piedi: due anelli su di un lato e due anelli sull'altro."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ בַּדֵּ֖י עֲצֵ֣י שִׁטִּ֑ים וַ/יְצַ֥ף אֹתָ֖/ם זָהָֽב׃",
+        "LXX": "καὶ ἐπέθηκαν αὐτὸ ἐπὶ τέσσαρες στύλους ἀσήπτους κατακεχρυσωμένους ἐν χρυσίῳ· καὶ αἱ κεφαλίδες αὐτῶν χρυσαῖ, καὶ αἱ βάσεις αὐτῶν τέσσαρες ἀργυραῖ.",
+        "VUL": "Vectes quoque fecit de lignis setim, quos vestivit auro,",
+        "SYN": "И сделал шесты из дерева ситтим и обложил их золотом;",
+        "NEO": "Il fit des barres de bois d’acacia et les revêtit d’or.",
+        "NAB": "Poles of acacia wood were made and plated with gold;",
+        "VAT_ES": "Luego hizo unas andas de madera de acacia, las recubrió de oro",
+        "CEI": "Fece stanghe di legno di acacia e le rivestì d'oro."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יָּבֵ֤א אֶת הַ/בַּדִּים֙ בַּ/טַּבָּעֹ֔ת עַ֖ל צַלְעֹ֣ת הָ/אָרֹ֑ן לָ/שֵׂ֖את אֶת הָ/אָרֹֽן׃",
+        "LXX": "καὶ ἐποίησαν τὸ καταπέτασμα τῆς θύρας τῆς σκηνῆς τοῦ μαρτυρίου ἐξ ὑακίνθου καὶ πορφύρας καὶ κοκκίνου νενησμένου καὶ βύσσου κεκλωσμένης, ἔργον ὑφαντὸν τοῦ χερουβείμ,",
+        "VUL": "et quos misit in annulos, qui erant in lateribus arcæ ad portandum eam.",
+        "SYN": "и вложил шесты в кольца, по сторонам ковчега, чтобы носить ковчег.",
+        "NEO": "Il passa les barres dans les anneaux sur les côtés de l’arche, pour la porter.",
+        "NAB": "these were put through the rings on the sides of the ark, for carrying it.",
+        "VAT_ES": "y las pasó por las argollas que estaban a los costados del arca, para poder transportarla.",
+        "CEI": "Introdusse le stanghe negli anelli sui due lati dell'arca per trasportare l'arca."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ כַּפֹּ֖רֶת זָהָ֣ב טָה֑וֹר אַמָּתַ֤יִם וָ/חֵ֨צִי֙ אָרְכָּ֔/הּ וְ/אַמָּ֥ה וָ/חֵ֖צִי רָחְבָּֽ/הּ׃",
+        "LXX": "καὶ τοὺς στύλους αὐτῶν πέντε καὶ τοὺς κρίκους· καὶ τὰς κεφαλίδας αὐτῶν κατεχρύσωσαν χρυσίῳ, καὶ αἱ βάσεις αἱ πέντε χαλκαῖ.",
+        "VUL": "Fecit et propitiatorium, id est, oraculum, de auro mundissimo, duorum cubitorum et dimidii in longitudine, et cubiti ac semis in latitudine.",
+        "SYN": "И сделал крышку из чистого золота: длина ее два локтя с половиною, а ширина полтора локтя.",
+        "NEO": "Il fit un propitiatoire d’or pur ; sa longueur était de deux coudées et demie, sa largeur d’une coudée et demie.",
+        "NAB": "The propitiatory was made of pure gold, two and a half cubits long and one and a half cubits wide.",
+        "VAT_ES": "Después le hizo una tapa de oro puro, de ciento veinticinco centímetros de largo por setenta y cinco de ancho.",
+        "CEI": "Fece il coperchio d'oro puro: aveva due cubiti e mezzo di lunghezza e un cubito e mezzo di larghezza."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יַּ֛עַשׂ שְׁנֵ֥י כְרֻבִ֖ים זָהָ֑ב מִקְשָׁה֙ עָשָׂ֣ה אֹתָ֔/ם מִ/שְּׁנֵ֖י קְצ֥וֹת הַ/כַּפֹּֽרֶת׃",
+        "LXX": "Καὶ ἐποίησαν τὴν αὐλήν· τὰ πρὸς λίβα, ἱστία τῆς αὐλῆς ἐκ βύσσου κεκλωσμένης ἑκατὸν ἐφ’ ἑκατόν·",
+        "VUL": "Duos etiam cherubim ex auro ductili, quos posuit ex utraque parte propitiatorii :",
+        "SYN": "И сделал двух херувимов из золота: чеканной работы сделал их на обоих концах крышки,",
+        "NEO": "Il fit deux chérubins d’or ; il les fit d’or battu, aux deux extrémités du propitiatoire,",
+        "NAB": "Two cherubim of beaten gold were made for the two ends of the propitiatory,",
+        "VAT_ES": "También hizo dos querubines de oro macizo, forjado a martillo, en los dos extremos de la tapa.",
+        "CEI": "Fece due cherubini d'oro: li fece lavorati a martello sulle due estremità del coperchio:"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כְּרוּב אֶחָ֤ד מִ/קָּצָה֙ מִ/זֶּ֔ה וּ/כְרוּב אֶחָ֥ד מִ/קָּצָ֖ה מִ/זֶּ֑ה מִן הַ/כַּפֹּ֛רֶת עָשָׂ֥ה אֶת הַ/כְּרֻבִ֖ים מִ/שְּׁנֵ֥י קצוות/ו קְצוֹתָֽי/ו׃",
+        "LXX": "καὶ οἱ στύλοι αὐτῶν εἴκοσι, καὶ αἱ βάσεις αὐτῶν εἴκοσι.",
+        "VUL": "cherub unum in summitate unius partis, et cherub alterum in summitate partis alterius : duos cherubim in singulis summitatibus propitiatorii,",
+        "SYN": "одного херувима с одного конца, а другого херувима с другого конца: выдавшимися из крышки сделал херувимов с обоих концов ее;",
+        "NEO": "un chérubin à l’une des extrémités et un chérubin à l’autre extrémité ; il fit les chérubins sortant du propitiatoire à ses deux extrémités.",
+        "NAB": "one cherub fastened at one end, the other at the other end, springing directly from the propitiatory at its two ends.",
+        "VAT_ES": "El primero estaba en un extremo y el segundo en el otro, y formaban una sola pieza con la tapa.",
+        "CEI": "un cherubino ad una estremità e un cherubino all'altra estremità. Fece i cherubini tutti di un pezzo con il coperchio, alle sue due estremità."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּהְי֣וּ הַ/כְּרֻבִים֩ פֹּרְשֵׂ֨י כְנָפַ֜יִם לְ/מַ֗עְלָ/ה סֹֽכְכִ֤ים בְּ/כַנְפֵי/הֶם֙ עַל הַ/כַּפֹּ֔רֶת וּ/פְנֵי/הֶ֖ם אִ֣ישׁ אֶל אָחִ֑י/ו אֶל הַ/כַּפֹּ֔רֶת הָי֖וּ פְּנֵ֥י הַ/כְּרֻבִֽים׃",
+        "LXX": "καὶ τὸ κλίτος τὸ πρὸς βορρᾶν ἑκατὸν ἐφ’ ἑκατόν, καὶ τὸ κλίτος τὸ πρὸς νότον ἑκατὸν ἐφ’ ἑκατόν· καὶ οἱ στύλοι αὐτῶν εἴκοσι, καὶ αἱ βάσεις αὐτῶν εἴκοσι.",
+        "VUL": "extendentes alas, et tegentes propitiatorium, seque mutuo et illud respicientes.",
+        "SYN": "и были херувимы с распростертыми вверх крыльями и покрывали крыльями своими крышку, а лицами своими были _обращены_ друг к другу; к крышке _были_ лица херувимов.",
+        "NEO": "Les chérubins avaient leurs ailes déployées vers le haut, couvrant de leurs ailes le propitiatoire, et se faisant face l’un à l’autre ; les faces des chérubins étaient tournées vers le propitiatoire.",
+        "NAB": "The cherubim had their wings spread out above, covering the propitiatory with them. They were turned toward each other, but with their faces looking toward the propitiatory.",
+        "VAT_ES": "Los querubines tenían las alas extendidas hacia arriba, y con ellas cubrían la tapa; estaban uno frente al otro, con sus rostros vueltos hacia ella.",
+        "CEI": "I cherubini avevano le due ali stese di sopra, proteggendo con le ali il coperchio; erano rivolti l'uno verso l'altro e le facce dei cherubini erano rivolte verso il coperchio."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ אֶת הַ/שֻּׁלְחָ֖ן עֲצֵ֣י שִׁטִּ֑ים אַמָּתַ֤יִם אָרְכּ/וֹ֙ וְ/אַמָּ֣ה רָחְבּ֔/וֹ וְ/אַמָּ֥ה וָ/חֵ֖צִי קֹמָתֽ/וֹ׃",
+        "LXX": "καὶ τὸ κλίτος τὸ πρὸς θάλασσαν αὐλαῖαι πεντήκοντα πήχεων· στύλοι αὐτῶν δέκα, καὶ ⸂⸆⸃ αἱ βάσεις αὐτῶν δέκα.",
+        "VUL": "Fecit et mensam de lignis setim in longitudine duorum cubitorum, et in latitudine unius cubiti, quæ habebat in altitudine cubitum ac semissem.",
+        "SYN": "И сделал стол из дерева ситтим длиною в два локтя, шириною в локоть и вышиною в полтора локтя,",
+        "NEO": "Il fit la table de bois d’acacia ; sa longueur était de deux coudées, sa largeur d’une coudée, et sa hauteur d’une coudée et demie.",
+        "NAB": "The table was made of acacia wood, two cubits long, one cubit wide, and one and a half cubits high.",
+        "VAT_ES": "También hizo la mesa de madera de acacia, de un metro de largo por cincuenta centímetros de ancho y setenta y cinco de alto.",
+        "CEI": "Fece la tavola di legno di acacia: aveva due cubiti di lunghezza, un cubito di larghezza, un cubito e mezzo di altezza."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יְצַ֥ף אֹת֖/וֹ זָהָ֣ב טָה֑וֹר וַ/יַּ֥עַשׂ ל֛/וֹ זֵ֥ר זָהָ֖ב סָבִֽיב׃",
+        "LXX": "καὶ τὸ κλίτος τὸ πρὸς ἀνατολὰς πεντήκοντα πήχεων, τὸ κατὰ νώτου·",
+        "VUL": "Circumdeditque eam auro mundissimo, et fecit illi labium aureum per gyrum,",
+        "SYN": "и обложил его золотом чистым, и сделал вокруг него золотой венец;",
+        "NEO": "Il la revêtit d’or pur, et y mit une guirlande d’or tout autour.",
+        "NAB": "It was plated with pure gold, and a molding of gold was put around it.",
+        "VAT_ES": "La recubrió de oro puro y le colocó alrededor una moldura de oro.",
+        "CEI": "La rivestì d'oro puro e le fece intorno un bordo d'oro."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨עַשׂ ל֥/וֹ מִסְגֶּ֛רֶת טֹ֖פַח סָבִ֑יב וַ/יַּ֧עַשׂ זֵר זָהָ֛ב לְ/מִסְגַּרְתּ֖/וֹ סָבִֽיב׃",
+        "LXX": "καὶ οἱ στύλοι αὐτῶν τρεῖς, καὶ αἱ βάσεις αὐτῶν τρεῖς.",
+        "VUL": "ipsique labio coronam auream interrasilem quatuor digitorum, et super eamdem, alteram coronam auream.",
+        "SYN": "и сделал вокруг него стенки в ладонь и сделал золотой венец у стенок его;",
+        "NEO": "Il lui fit à l’entour un châssis d’une palme, et il fit une guirlande d’or au châssis tout autour.",
+        "NAB": "A frame a handbreadth high was also put around it, with a molding of gold around the frame.",
+        "VAT_ES": "Le puso un borde de un palmo de ancho, y lo adornó con una moldura de oro.",
+        "CEI": "Le fece attorno una cornice di un palmo e un bordo d'oro per la cornice."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יִּצֹ֣ק ל֔/וֹ אַרְבַּ֖ע טַבְּעֹ֣ת זָהָ֑ב וַ/יִּתֵּן֙ אֶת הַ/טַּבָּעֹ֔ת עַ֚ל אַרְבַּ֣ע הַ/פֵּאֹ֔ת אֲשֶׁ֖ר לְ/אַרְבַּ֥ע רַגְלָֽי/ו׃",
+        "LXX": "καὶ ἐπὶ τοῦ νώτου τοῦ δευτέρου ἔνθεν καὶ ἔνθεν κατὰ τὴν πύλην τῆς αὐλῆς αὐλαῖαι ἑκατὸν πεντήκοντα πήχεων· στύλοι αὐτῶν τρεῖς, καὶ αἱ βάσεις αὐτῶν τρεῖς.",
+        "VUL": "Fudit et quatuor circulos aureos, quos posuit in quatuor angulis per singulos pedes mensæ",
+        "SYN": "и вылил для него четыре кольца золотых и утвердил кольца на четырех углах, у четырех ножек его;",
+        "NEO": "Il fondit pour la table quatre anneaux d’or, et il mit les anneaux aux quatre coins, qui sont à ses quatre pieds.",
+        "NAB": "Four rings of gold were cast for it and fastened, one at each of the four corners.",
+        "VAT_ES": "Después hizo cuatro argollas de oro y las ajustó a los cuatro ángulos correspondientes a las cuatro patas de la mesa.",
+        "CEI": "Fuse per essa quattro anelli d'oro e li fissò ai quattro angoli che costituivano i suoi quattro piedi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "לְ/עֻמַּת֙ הַ/מִּסְגֶּ֔רֶת הָי֖וּ הַ/טַּבָּעֹ֑ת בָּתִּים֙ לַ/בַּדִּ֔ים לָ/שֵׂ֖את אֶת הַ/שֻּׁלְחָֽן׃",
+        "LXX": "πᾶσαι αἱ αὐλαῖαι τῆς σκηνῆς ἐκ βύσσου κεκλωσμένης·",
+        "VUL": "contra coronam : misitque in eos vectes, ut possit mensa portari.",
+        "SYN": "при стенках были кольца, чтобы влагать шесты для ношения стола;",
+        "NEO": "Les anneaux étaient près du châssis pour recevoir les barres qui doivent porter la table.",
+        "NAB": "The rings were alongside the frame as holders for the poles to carry the table.",
+        "VAT_ES": "Junto al borde estaban las cuatro argollas que servían de sostén a las andas para transportar la mesa.",
+        "CEI": "Gli anelli erano fissati alla cornice e servivano per inserire le stanghe destinate a trasportare la tavola."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יַּ֤עַשׂ אֶת הַ/בַּדִּים֙ עֲצֵ֣י שִׁטִּ֔ים וַ/יְצַ֥ף אֹתָ֖/ם זָהָ֑ב לָ/שֵׂ֖את אֶת הַ/שֻּׁלְחָֽן׃",
+        "LXX": "καὶ αἱ βάσεις τῶν στύλων αὐτῶν χαλκαῖ, καὶ αἱ ἀγκύλαι αὐτῶν ἀργυραῖ, καὶ αἱ κεφαλίδες αὐτῶν περιηργυρωμέναι ἀργυρίῳ, καὶ οἱ στύλοι περιηργυρωμένοι ἀργυρίῳ, πάντες οἱ στύλοι τῆς αὐλῆς.",
+        "VUL": "Ipsos quoque vectes fecit de lignis setim, et circumdedit eos auro.",
+        "SYN": "и сделал шесты из дерева ситтим и обложил их золотом для ношения стола.",
+        "NEO": "Il fit les barres de bois d’acacia et les revêtit d’or ; elles servaient à porter la table.",
+        "NAB": "These poles were made of acacia wood and plated with gold.",
+        "VAT_ES": "Hizo las andas de madera de acacia y las recubrió de oro.",
+        "CEI": "Fece le stanghe di legno di acacia e le rivestì d'oro."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/יַּ֜עַשׂ אֶֽת הַ/כֵּלִ֣ים אֲשֶׁ֣ר עַל הַ/שֻּׁלְחָ֗ן אֶת קְעָרֹתָ֤י/ו וְ/אֶת כַּפֹּתָי/ו֙ וְ/אֵת֙ מְנַקִּיֹּתָ֔י/ו וְ/אֶת הַ/קְּשָׂוֺ֔ת אֲשֶׁ֥ר יֻסַּ֖ךְ בָּ/הֵ֑ן זָהָ֖ב טָהֽוֹר׃",
+        "LXX": "καὶ τὸ καταπέτασμα τῆς πύλης τῆς αὐλῆς ἔργον ποικιλτοῦ ἐξ ὑακίνθου καὶ πορφύρας καὶ κοκκίνου νενησμένου καὶ βύσσου κεκλωσμένης, εἴκοσι πήχεων τὸ μῆκος, καὶ τὸ ὕψος καὶ τὸ εὖρος πέντε πήχεων, ἐξισούμενον τοῖς ἱστίοις τῆς αὐλῆς·",
+        "VUL": "Et vasa ad diversos usus mensæ, acetabula, phialas, et cyathos, et thuribula, ex auro puro, in quibus offerenda sunt libamina.",
+        "SYN": "Потом сделал сосуды, принадлежавшие к столу: блюда, кадильницы, кружки и чаши, чтобы возливать ими, из чистого золота.",
+        "NEO": "Il fit les ustensiles qu’on devait mettre sur la table, ses plats, ses cassolettes, ses coupes et ses tasses pour servir aux libations ; il les fit d’or pur.",
+        "NAB": "The vessels that were set on the table, its plates and cups, as well as its pitchers and bowls for pouring libations, were of pure gold.",
+        "VAT_ES": "Finalmente, hizo los utensilios de oro puro que debían estar sobre la mesa: las fuentes, los vasos, las tazas y los jarros para las libaciones.",
+        "CEI": "Fece anche gli accessori della tavola: piatti, coppe, anfore e tazze per le libazioni; li fece di oro puro."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ אֶת הַ/מְּנֹרָ֖ה זָהָ֣ב טָה֑וֹר מִקְשָׁ֞ה עָשָׂ֤ה אֶת הַ/מְּנֹרָה֙ יְרֵכָ֣/הּ וְ/קָנָ֔/הּ גְּבִיעֶ֛י/הָ כַּפְתֹּרֶ֥י/הָ וּ/פְרָחֶ֖י/הָ מִמֶּ֥/נָּה הָיֽוּ׃",
+        "LXX": "καὶ οἱ στύλοι αὐτῶν τέσσαρες, καὶ αἱ βάσεις αὐτῶν τέσσαρες χαλκαῖ, καὶ ἀγκύλαι αὐτῶν ἀργυραῖ, καὶ αἱ κεφαλίδες αὐτῶν περιηργυρωμέναι ἀργυρίῳ.",
+        "VUL": "Fecit et candelabrum ductile de auro mundissimo, de cujus vecte calami, scyphi, sphærulæque, ac lilia procedebant :",
+        "SYN": "И сделал светильник из золота чистого, чеканный сделал светильник; стебель его, ветви его, чашечки его, яблоки его и цветы его _выходили_ из него;",
+        "NEO": "Il fit le chandelier d’or pur ; il fit d’or battu le chandelier, avec son pied et sa tige ; ses calices, ses boutons et ses fleurs étaient d’une même pièce.",
+        "NAB": "The lampstand was made of pure beaten gold - its shaft and branches as well as its cups and knobs and petals springing directly from it.",
+        "VAT_ES": "Hizo, asimismo, el candelabro de oro puro. Tanto la base y el tronco del candelabro como los cálices, los botones y las flores que le servían de adorno estaban forjados a martillo y formaban una sola pieza.",
+        "CEI": "Fece il candelabro d'oro puro; lo fece lavorato a martello, il suo fusto e i suoi bracci; i suoi calici, i suoi bulbi e le sue corolle facevano corpo con esso."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/שִׁשָּׁ֣ה קָנִ֔ים יֹצְאִ֖ים מִ/צִּדֶּ֑י/הָ שְׁלֹשָׁ֣ה קְנֵ֣י מְנֹרָ֗ה מִ/צִּדָּ/הּ֙ הָֽ/אֶחָ֔ד וּ/שְׁלֹשָׁה֙ קְנֵ֣י מְנֹרָ֔ה מִ/צִּדָּ֖/הּ הַ/שֵּׁנִֽי׃",
+        "LXX": "καὶ αὐτοὶ περιηργυρωμένοι ἀργυρίῳ, καὶ πάντες οἱ πάσσαλοι τῆς αὐλῆς κύκλῳ χαλκοῖ.",
+        "VUL": "sex in utroque latere, tres calami ex parte una, et tres ex altera :",
+        "SYN": "шесть ветвей выходило из боков его: три ветви светильника из одного бока его и три ветви светильника из другого бока его;",
+        "NEO": "Six branches sortaient de ses côtés ; trois branches du chandelier de l’un de ses côtés, et trois branches du chandelier du second de ses côtés.",
+        "NAB": "Six branches extended from its sides, three branches on one side and three on the other.",
+        "VAT_ES": "De sus lados salían seis brazos: tres de un lado y tres del otro.",
+        "CEI": "Sei bracci uscivano dai suoi lati: tre bracci del candelabro da un lato e tre bracci del candelabro dall'altro."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "שְׁלֹשָׁ֣ה גְ֠בִעִים מְֽשֻׁקָּדִ֞ים בַּ/קָּנֶ֣ה הָ/אֶחָד֮ כַּפְתֹּ֣ר וָ/פֶרַח֒ וּ/שְׁלֹשָׁ֣ה גְבִעִ֗ים מְשֻׁקָּדִ֛ים בְּ/קָנֶ֥ה אֶחָ֖ד כַּפְתֹּ֣ר וָ/פָ֑רַח כֵּ֚ן לְ/שֵׁ֣שֶׁת הַ/קָּנִ֔ים הַ/יֹּצְאִ֖ים מִן הַ/מְּנֹרָֽה׃",
+        "LXX": "Καὶ αὕτη ἡ σύνταξις τῆς σκηνῆς τοῦ μαρτυρίου, καθὰ συνετάγη Μωσῇ, τὴν λειτουργίαν εἶναι τῶν Λευειτῶν διὰ Ἰθαμὰρ τοῦ υἱοῦ Ἀαρὼν τοῦ ἱερέως.",
+        "VUL": "tres scyphi in nucis modum per calamos singulos, sphærulæque simul et lilia : et tres scyphi instar nucis in calamo altero, sphærulæque simul et lilia. Æquum erat opus sex calamorum, qui procedebant de stipite candelabri.",
+        "SYN": "три чашечки были наподобие миндального цветка, яблоко и цветы на одной ветви, и три чашечки наподобие миндального цветка, яблоко и цветы на другой ветви: так на _всех_ шести ветвях, выходящих из светильника;",
+        "NEO": "Il y avait sur la première branche trois calices en fleurs d’amandier, bouton et fleur, et sur la seconde branche trois calices en fleurs d’amandiers, bouton et fleur ; il en était de même pour les six branches partant du chandelier.",
+        "NAB": "On one branch there were three cups, shaped like almond blossoms, each with its knob and petals; on the opposite branch there were three cups, shaped like almond blossoms, each with its knob and petals; and so for the six branches that extended from the lampstand.",
+        "VAT_ES": "Cada uno de estos brazos tenía tres adornos en forma de flor de almendro, los tres con un cáliz, un botón y una flor.",
+        "CEI": "Vi erano su un braccio tre calici in forma di fiore di mandorlo, con bulbo e corolla; anche sull'altro braccio tre calici in forma di fiore di mandorlo, con bulbo e corolla. Così era per i sei bracci che uscivano dal candelabro."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וּ/בַ/מְּנֹרָ֖ה אַרְבָּעָ֣ה גְבִעִ֑ים מְשֻׁ֨קָּדִ֔ים כַּפְתֹּרֶ֖י/הָ וּ/פְרָחֶֽי/הָ׃",
+        "LXX": "καὶ Βεσελεὴλ ὁ τοῦ Οὐρείου ἐκ φυλῆς Ἰούδα ἐποίησεν καθὰ συνέταξεν Κύριος τῷ Μωσῇ,",
+        "VUL": "In ipso autem vecte erant quatuor scyphi in nucis modum, sphærulæque per singulos simul et lilia :",
+        "SYN": "а на _стебле_ светильника было четыре чашечки наподобие миндального цветка с яблоками и цветами;",
+        "NEO": "A la tige du chandelier, il y avait quatre calices, en fleurs d’amandier, avec leurs boutons et leurs fleurs.",
+        "NAB": "On the shaft there were four cups, shaped like almond blossoms, with their knobs and petals,",
+        "VAT_ES": "El tronco del candelabro, en cambio, tenía cuatro adornos de esa misma forma,",
+        "CEI": "Il fusto del candelabro aveva quattro calici in forma di fiore di mandorlo, con i loro bulbi e le loro corolle:"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/כַפְתֹּ֡ר תַּחַת֩ שְׁנֵ֨י הַ/קָּנִ֜ים מִמֶּ֗/נָּה וְ/כַפְתֹּר֙ תַּ֣חַת שְׁנֵ֤י הַ/קָּנִים֙ מִמֶּ֔/נָּה וְ/כַפְתֹּ֕ר תַּֽחַת שְׁנֵ֥י הַ/קָּנִ֖ים מִמֶּ֑/נָּה לְ/שֵׁ֨שֶׁת֙ הַ/קָּנִ֔ים הַ/יֹּצְאִ֖ים מִמֶּֽ/נָּה׃",
+        "LXX": "καὶ Ἐλιὰβ ὁ τοῦ Ἀχισαμὰκ ἐκ τῆς φυλῆς Δάν, ὃς ἠρχιτεκτόνησεν τὰ ὑφαντὰ καὶ τὰ ῥαφιδευτὰ καὶ ποικιλτικά, ὑφᾶναι τῷ κοκκίνῳ καὶ τῇ βύσσῳ.",
+        "VUL": "et sphærulæ sub duobus calamis per loca tria, qui simul sex fiunt calami procedentes de vecte uno.",
+        "SYN": "у шести ветвей, выходящих из него, яблоко под первыми двумя ветвями, и яблоко под _вторыми_ двумя ветвями, и яблоко под _третьими_ двумя ветвями;",
+        "NEO": "Il y avait un bouton sous les deux premières branches partant de la tige du chandelier, un bouton sous les deux branches suivantes partant de la tige du chandelier, et un bouton sous les deux dernières branches partant de la tige du chandelier, selon les six branches sortant du chandelier.",
+        "NAB": "including a knob below each of the three pairs of branches that extended from the lampstand.",
+        "VAT_ES": "distribuidos de esta manera: un botón iba debajo de los dos primeros brazos que salían de él, otro estaba debajo de los dos últimos.",
+        "CEI": "un bulbo sotto due bracci che si dipartivano da esso, e un bulbo sotto i due altri bracci che si dipartivano da esso, e un bulbo sotto i due altri bracci che si dipartivano da esso; così per tutti i sei bracci che uscivano dal candelabro."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כַּפְתֹּרֵי/הֶ֥ם וּ/קְנֹתָ֖/ם מִמֶּ֣/נָּה הָי֑וּ כֻּלָּ֛/הּ מִקְשָׁ֥ה אַחַ֖ת זָהָ֥ב טָהֽוֹר׃",
+        "VUL": "Et sphærulæ igitur, et calami ex ipso erant, universa ductilia ex auro purissimo.",
+        "SYN": "яблоки и ветви их выходили из него; весь он _был_ чеканный, цельный, из чистого золота.",
+        "NEO": "Ces boutons et ces branches étaient d’une même pièce avec le chandelier ; le tout était une masse d’or battu, d’or pur.",
+        "NAB": "The knobs and branches sprang so directly from it that the whole formed but a single piece of pure beaten gold.",
+        "VAT_ES": "Los botones y las flores formaban una sola pieza con el candelabro, y todo estaba hecho con un solo bloque de oro puro, forjado a martillo.",
+        "CEI": "I bulbi e i relativi bracci facevano corpo con esso: il tutto era formato da una sola massa d'oro puro lavorata a martello."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ אֶת נֵרֹתֶ֖י/הָ שִׁבְעָ֑ה וּ/מַלְקָחֶ֥י/הָ וּ/מַחְתֹּתֶ֖י/הָ זָהָ֥ב טָהֽוֹר׃",
+        "VUL": "Fecit et lucernas septem cum emunctoriis suis, et vasa ubi ea, quæ emuncta sunt, extinguantur, de auro mundissimo.",
+        "SYN": "И сделал к нему семь лампад, и щипцы к нему и лотки к нему, из чистого золота;",
+        "NEO": "Il fit ses lampes au nombre de sept, ses mouchettes et ses vases à cendre, en or pur.",
+        "NAB": "Its seven lamps, as well as its trimming shears and trays, were made of pure gold.",
+        "VAT_ES": "Después hizo siete lámparas de oro puro, con sus tenazas para arreglar los pabilos y sus platillos.",
+        "CEI": "Fece le sue sette lampade, i suoi smoccolatoi e i suoi portacenere d'oro puro."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "כִּכָּ֛ר זָהָ֥ב טָה֖וֹר עָשָׂ֣ה אֹתָ֑/הּ וְ/אֵ֖ת כָּל כֵּלֶֽי/הָ׃",
+        "VUL": "Talentum auri appendebat candelabrum cum omnibus vasis suis.",
+        "SYN": "из таланта чистого золота сделал его со всеми принадлежностями его.",
+        "NEO": "On employa un talent d’or pur pour faire le chandelier avec tous ses ustensiles.",
+        "NAB": "A talent of pure gold was used for the lampstand and its various appurtenances.",
+        "VAT_ES": "Para construir el candelabro con todos sus accesorios empleó un talento de oro puro.",
+        "CEI": "Impiegò un talento d'oro puro per esso e per tutti i suoi accessori."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יַּ֛עַשׂ אֶת מִזְבַּ֥ח הַ/קְּטֹ֖רֶת עֲצֵ֣י שִׁטִּ֑ים אַמָּ֣ה אָרְכּ/וֹ֩ וְ/אַמָּ֨ה רָחְבּ֜/וֹ רָב֗וּעַ וְ/אַמָּתַ֨יִם֙ קֹֽמָת֔/וֹ מִמֶּ֖/נּוּ הָי֥וּ קַרְנֹתָֽי/ו׃",
+        "VUL": "Fecit et altare thymiamatis de lignis setim, per quadrum singulos habens cubitos, et in altitudine duos : e cujus angulis procedebant cornua.",
+        "SYN": "И сделал жертвенник курения из дерева ситтим: длина его локоть и ширина его локоть, четыреугольный, вышина его два локтя; из него выходили роги его;",
+        "NEO": "Il fit l’autel des parfums de bois d’acacia ; sa longueur était d’une coudée, et sa largeur d’une coudée ; il était carré, et sa hauteur était de deux coudées ; ses cornes faisaient corps avec lui.",
+        "NAB": "The altar of incense was made of acacia wood, on a square, a cubit long, a cubit wide, and two cubits high, having horns that sprang directly from it.",
+        "VAT_ES": "También hizo el altar del incienso. Lo hizo de madera de acacia, de cincuenta centímetros de largo por cincuenta de ancho –es decir, cuadrado– y un metro de alto. Sus cuernos formaban una sola pieza con él.",
+        "CEI": "Fece l'altare per bruciare l'incenso, di legno di acacia; aveva un cubito di lunghezza e un cubito di larghezza, era cioè quadrato; aveva due cubiti di altezza e i suoi corni erano di un sol pezzo."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יְצַ֨ף אֹת֜/וֹ זָהָ֣ב טָה֗וֹר אֶת גַּגּ֧/וֹ וְ/אֶת קִירֹתָ֛י/ו סָבִ֖יב וְ/אֶת קַרְנֹתָ֑י/ו וַ/יַּ֥עַשׂ ל֛/וֹ זֵ֥ר זָהָ֖ב סָבִֽיב׃",
+        "VUL": "Vestivitque illud auro purissimo cum craticula ac parietibus et cornibus.",
+        "SYN": "и обложил его чистым золотом, верх его и стороны его кругом, и роги его, и сделал к нему золотой венец вокруг;",
+        "NEO": "Il le revêtit d’or pur, le dessus, les côtés tout autour et les cornes, et il y fit une guirlande d’or tout autour.",
+        "NAB": "Its grate on top, its walls on all four sides, and its horns were plated with pure gold; and a molding of gold was put around it.",
+        "VAT_ES": "Recubrió de oro puro su parte superior, sus costados y sus cuernos, y le puso alrededor una moldura de oro.",
+        "CEI": "Rivestì d'oro puro il suo piano, i suoi lati, i suoi corni e gli fece intorno un orlo d'oro."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וּ/שְׁתֵּי֩ טַבְּעֹ֨ת זָהָ֜ב עָֽשָׂה ל֣/וֹ מִ/תַּ֣חַת לְ/זֵר֗/וֹ עַ֚ל שְׁתֵּ֣י צַלְעֹתָ֔י/ו עַ֖ל שְׁנֵ֣י צִדָּ֑י/ו לְ/בָתִּ֣ים לְ/בַדִּ֔ים לָ/שֵׂ֥את אֹת֖/וֹ בָּ/הֶֽם׃",
+        "VUL": "Fecitque ei coronam aureolam per gyrum, et duos annulos aureos sub corona per singula latera, ut mittantur in eos vectes, et possit altare portari.",
+        "SYN": "под венцом его на двух углах его сделал два кольца золотых; с двух сторон его сделал их, чтобы вкладывать в них шесты для ношения его;",
+        "NEO": "Il fit pour lui deux anneaux d’or, au-dessous de sa guirlande, sur ses deux arêtes ; il les fit aux deux côtés, pour recevoir les barres qui servaient à le porter.",
+        "NAB": "Underneath the molding gold rings were placed, two on one side and two on the opposite side, as holders for the poles to carry it.",
+        "VAT_ES": "Luego hizo unas argollas de oro, y los colocó debajo de la moldura, dos de un lado y dos del otro, para pasar por ellas las andas que servían para transportarlo.",
+        "CEI": "Fece anche due anelli d'oro sotto l'orlo, sui due fianchi, cioè sui due lati opposti; servivano per inserire le stanghe destinate a trasportarlo."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ אֶת הַ/בַּדִּ֖ים עֲצֵ֣י שִׁטִּ֑ים וַ/יְצַ֥ף אֹתָ֖/ם זָהָֽב׃",
+        "VUL": "Ipsos autem vectes fecit de lignis setim, et operuit laminis aureis.",
+        "SYN": "шесты сделал из дерева ситтим и обложил их золотом.",
+        "NEO": "Il fit les barres de bois d’acacia et les revêtit d’or.",
+        "NAB": "The poles, too, were made of acacia wood and plated with gold.",
+        "VAT_ES": "Estas últimas eran de madera de acacia y estaban recubiertas de oro.",
+        "CEI": "Fece le stanghe di legno di acacia e le rivestì d'oro."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/יַּ֜עַשׂ אֶת שֶׁ֤מֶן הַ/מִּשְׁחָה֙ קֹ֔דֶשׁ וְ/אֶת קְטֹ֥רֶת הַ/סַּמִּ֖ים טָה֑וֹר מַעֲשֵׂ֖ה רֹקֵֽחַ׃",
+        "VUL": "Composuit et oleum ad sanctificationis unguentum, et thymiama de aromatibus mundissimis opere pigmentarii.",
+        "SYN": "И сделал миро для священного помазания и курение благовонное, чистое, искусством составляющего масти.",
+        "NEO": "Il fit l’huile pour l’onction sainte, et le parfum pour l’encensement, composé selon l’art du parfumeur.",
+        "NAB": "The sacred anointing oil and the fragrant incense were prepared in their pure form by a perfumer.",
+        "VAT_ES": "También preparó el óleo para la unción sagrada y el incienso aromático puro, como lo hace el fabricante de perfumes.",
+        "CEI": "Preparò l'olio dell'unzione sacra e il profumo aromatico da bruciare, puro, secondo l'arte del profumiere."
+      }
+    }
+  }
+}

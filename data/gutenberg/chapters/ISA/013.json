@@ -1,0 +1,411 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_013",
+  "book_key": "ISA",
+  "sequence": 13,
+  "chapter_in": {
+    "MT": 13,
+    "VUL": 13,
+    "LXX": 13
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "מַשָּׂ֖א בָּבֶ֑ל אֲשֶׁ֣ר חָזָ֔ה יְשַׁעְיָ֖הוּ בֶּן אָמֽוֹץ׃",
+        "LXX": "Ὅρασις ἣν εἶδεν Ἠσαίας υἱὸς Ἀμὼς κατὰ Βαβυλῶνος.",
+        "VUL": "Onus Babylonis, quod vidit Isaias, filius Amos.",
+        "SYN": "Пророчество о Вавилоне, которое изрек Исаия, сын Амосов.",
+        "NEO": "Oracle sur Babylone, révélé à Isaïe, fils d’Amots.",
+        "NAB": "An oracle concerning Babylon; a vision of Isaiah, son of Amoz.",
+        "VAT_ES": "Oráculo sobre Babilonia, que Isaías, hijo de Amós, recibió en una visión:",
+        "CEI": "Oracolo su Babilonia, ricevuto in visione da Isaia figlio di Amoz."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עַ֤ל הַר נִשְׁפֶּה֙ שְֽׂאוּ נֵ֔ס הָרִ֥ימוּ ק֖וֹל לָ/הֶ֑ם הָנִ֣יפוּ יָ֔ד וְ/יָבֹ֖אוּ פִּתְחֵ֥י נְדִיבִֽים׃",
+        "LXX": "Ἐπ’ ὄρους πεδινοῦ ἄρατε σημεῖον, ὑψώσατε τὴν φωνὴν αὐτοῖς, παρακαλεῖτε τῇ χειρί· ἀνοίξατε, οἱ ἄρχοντες.",
+        "VUL": "[Super montem caliginosum levate signum :/ exaltate vocem,/ levate manum,/ et ingrediantur portas duces./",
+        "SYN": "Поднимите знамя на открытой горе, возвысьте голос; махните им рукою, чтобы шли в ворота властелинов.",
+        "NEO": "Sur une montagne nue levez un étendard ; appelez-les à haute voix, faites des signes de la main, et qu’ils franchissent les portes des princes.",
+        "NAB": "Upon the bare mountains set up a signal; cry out to them, Wave for them to enter the gates of the volunteers.",
+        "VAT_ES": "Sobre un monte desierto alcen un estandarte, lancen un grito hacia ellos, agiten la mano, para que entren por las Puertas de los nobles.",
+        "CEI": "Su un monte brullo issate un segnale, alzate per essi un grido; fate cenni con la mano perché varchino le porte dei principi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אֲנִ֥י צִוֵּ֖יתִי לִ/מְקֻדָּשָׁ֑/י גַּ֣ם קָרָ֤אתִי גִבּוֹרַ/י֙ לְ/אַפִּ֔/י עַלִּיזֵ֖י גַּאֲוָתִֽ/י׃",
+        "LXX": "ἐγὼ συντάσσω, καὶ ἐγώ, αὐτούς· γίγαντες ἔρχονται πληρῶσαι τὸν θυμόν μου χαίροντες ἅμα καὶ ὑβρίζοντες.",
+        "VUL": "Ego mandavi sanctificatis meis,/ et vocavi fortes meos in ira mea,/ exsultantes in gloria mea./",
+        "SYN": "Я дал повеление избранным Моим и призвал для _совершения_ гнева Моего сильных Моих, торжествующих в величии Моем.",
+        "NEO": "Moi, j’ai donné ordre à mes consacrés ; j’ai appelé mes héros pour servir ma colère, ceux qui acclament avec joie ma majesté.",
+        "NAB": "I have commanded my dedicated soldiers, I have summoned my warriors, eager and bold to carry out my anger.",
+        "VAT_ES": "Yo di una orden a los que me están consagrados, convoqué a los guerreros de mi ira. a los que se alegran de mi triunfo.",
+        "CEI": "Io ho dato un ordine ai miei consacrati; ho chiamato i miei prodi a strumento del mio sdegno, entusiasti della mia grandezza."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "ק֥וֹל הָמ֛וֹן בֶּֽ/הָרִ֖ים דְּמ֣וּת עַם רָ֑ב ק֠וֹל שְׁא֞וֹן מַמְלְכ֤וֹת גּוֹיִם֙ נֶֽאֱסָפִ֔ים יְהוָ֣ה צְבָא֔וֹת מְפַקֵּ֖ד צְבָ֥א מִלְחָמָֽה׃",
+        "LXX": "φωνὴ ἐθνῶν πολλῶν ἐπὶ τῶν ὀρέων, ὁμοία ἐθνῶν πολλῶν, φωνὴ βασιλέων καὶ ἐθνῶν συνηγμένων. Κύριος σαβαὼθ ἐντέταλται ἔθνει ὁπλομάχῳ",
+        "VUL": "Vox multitudinis in montibus,/ quasi populorum frequentium ;/ vox sonitus regum,/ gentium congregatarum./ Dominus exercituum præcepit/ militiæ belli,/",
+        "SYN": "Большой шум на горах, как бы от многолюдного народа, мятежный шум царств и народов, собравшихся вместе: Господь Саваоф обозревает боевое войско.",
+        "NEO": "On entend sur les montagnes une rumeur : on dirait le bruit d’un peuple nombreux ; on entend un tumulte de royaumes, de nations rassemblées : C’est \\+w Yahweh|strong=\"H3068\"\\+w** des armées qui passe en revue ses troupes de guerre.",
+        "NAB": "Listen! the rumble on the mountains: that of an immense throng! Listen! the noise of kingdoms, nations assembled! The LORD of hosts is mustering an army for battle.",
+        "VAT_ES": "&iexcl;Escuchen! &iexcl;Un tumulto en las montañas, algo así como una inmensa muchedumbre! &iexcl;Escuchen! &iexcl;Un alboroto de reinos, de naciones congregadas! Es el Señor de los ejércitos que pasa revista al ejército para la batalla.",
+        "CEI": "Rumore di folla sui monti, simile a quello di un popolo immenso. Rumore fragoroso di regni, di nazioni radunate. Il Signore degli eserciti passa in rassegna un esercito di guerra."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "בָּאִ֛ים מֵ/אֶ֥רֶץ מֶרְחָ֖ק מִ/קְצֵ֣ה הַ/שָּׁמָ֑יִם יְהוָה֙ וּ/כְלֵ֣י זַעְמ֔/וֹ לְ/חַבֵּ֖ל כָּל הָ/אָֽרֶץ׃",
+        "LXX": "ἔρχεσθαι ἐκ γῆς πόρρωθεν ἀπ’ ἄκρου θεμελίου τοῦ οὐρανοῦ, Κύριος καὶ οἱ ὁπλομάχοι αὐτοῦ, καταφθεῖραι πᾶσαν τὴν οἰκουμένην.",
+        "VUL": "venientibus de terra procul,/ a summitate cæli ;/ Dominus, et vasa furoris ejus,/ ut disperdat omnem terram./",
+        "SYN": "Идут из отдаленной страны, от края неба, Господь и орудия гнева Его, чтобы сокрушить всю землю.",
+        "NEO": "Ils viennent d’un pays lointain, de l’extrémité du ciel, \\+w Yahweh|strong=\"H3068\"\\+w** et les instruments de son courroux, pour ravager toute la terre.",
+        "NAB": "They come from a far-off country, and from the end of the heavens, The LORD and the instruments of his wrath, to destroy all the land.",
+        "VAT_ES": "Ya vienen de un país lejano, desde los extremos del cielo, el Señor y los instrumentos de su furor para arrasar toda la tierra.",
+        "CEI": "Vengono da un paese lontano, dall'estremo orizzonte, il Signore e gli strumenti della sua collera, per devastare tutto il paese."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "הֵילִ֕ילוּ כִּ֥י קָר֖וֹב י֣וֹם יְהוָ֑ה כְּ/שֹׁ֖ד מִ/שַּׁדַּ֥י יָבֽוֹא׃",
+        "LXX": "ὀλολύζετε· ἐγγὺς γὰρ ἡμέρα Κυρίου, καὶ συντριβὴ παρὰ τοῦ θεοῦ ἥξει.",
+        "VUL": "Ululate, quia prope est dies Domini ;/ quasi vastitas a Domino veniet./",
+        "SYN": "Рыдайте, ибо день Господа близок, идет как разрушительная сила от Всемогущего.",
+        "NEO": "Poussez des hurlements, car le jour de \\+w Yahweh|strong=\"H3068\"\\+w** est proche : il vient comme une dévastation du Tout-puissant.",
+        "NAB": "Howl, for the day of the LORD is near; as destruction from the Almighty it comes.",
+        "VAT_ES": "&iexcl;Giman, porque está cerca el Día del Señor y viene del Devastador como una devastación!",
+        "CEI": "Urlate, perché è vicino il giorno del Signore; esso viene come una devastazione da parte dell'Onnipotente."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "עַל כֵּ֖ן כָּל יָדַ֣יִם תִּרְפֶּ֑ינָה וְ/כָל לְבַ֥ב אֱנ֖וֹשׁ יִמָּס׃",
+        "LXX": "διὰ τοῦτο πᾶσα χεὶρ ἐκλυθήσεται, καὶ πᾶσα ψυχὴ ἀνθρώπου δειλιάσει·",
+        "VUL": "Propter hoc omnes manus dissolventur,/ et omne cor hominis contabescet,/",
+        "SYN": "Оттого руки у всех опустились, и сердце у каждого человека растаяло.",
+        "NEO": "C’est pourquoi toute main sera défaillante, et tout cœur d’homme se fondra.",
+        "NAB": "Therefore all hands fall helpless, the bows of the young men fall from their hands. Every man's heart melts",
+        "VAT_ES": "por eso desfallecen todas las manos y se descorazonan todos los mortales.",
+        "CEI": "Perciò tutte le braccia sono fiacche, ogni cuore d'uomo viene meno;"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְֽ/נִבְהָ֓לוּ צִירִ֤ים וַֽ/חֲבָלִים֙ יֹֽאחֵז֔וּ/ן כַּ/יּוֹלֵדָ֖ה יְחִיל֑וּ/ן אִ֤ישׁ אֶל רֵעֵ֨/הוּ֙ יִתְמָ֔הוּ פְּנֵ֥י לְהָבִ֖ים פְּנֵי/הֶֽם׃",
+        "LXX": "ταραχθήσονται οἱ πρέσβεις, καὶ ὠδῖνες αὐτοὺς ἕξουσιν ὡς γυναικὸς τικτούσης· καὶ συμφοράσουσιν ἕτερος πρὸς τὸν ἕτερον ⸆ καὶ ἐκστήσονται, καὶ τὸ πρόσωπον αὐτῶν ὡς φλὸξ μεταβαλοῦσιν.",
+        "VUL": "et conteretur./ Torsiones et dolores tenebunt ;/ quasi parturiens dolebunt :/ unusquisque ad proximum suum stupebit,/ facies combustæ vultus eorum./",
+        "SYN": "Ужаснулись, судороги и боли схватили их; мучатся, как рождающая, с изумлением смотрят друг на друга, лица у них разгорелись.",
+        "NEO": "Ils trembleront, les transes et les douleurs les saisiront ; ils se tordront comme une femme qui enfante ; ils se regarderont les uns les autres avec stupeur ; leurs visages seront comme la flamme.",
+        "NAB": "in terror. Pangs and sorrows take hold of them, like a woman in labor they writhe; They look aghast at each other, their faces aflame.",
+        "VAT_ES": "Se llenan de espanto, dolores y convulsiones los invaden, se retuercen como una parturienta se miran unos a otros con estupor, sus rostros están encendidos como llamas.",
+        "CEI": "sono costernati, spasimi e dolori li prendono, si contorcono come una partoriente; ognuno osserva sgomento il suo vicino; i loro volti sono volti di fiamma."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הִנֵּ֤ה יוֹם יְהוָה֙ בָּ֔א אַכְזָרִ֥י וְ/עֶבְרָ֖ה וַ/חֲר֣וֹן אָ֑ף לָ/שׂ֤וּם הָ/אָ֨רֶץ֙ לְ/שַׁמָּ֔ה וְ/חַטָּאֶ֖י/הָ יַשְׁמִ֥יד מִמֶּֽ/נָּה׃",
+        "LXX": "ἰδοὺ γὰρ ἡμέρα Κυρίου ἔρχεται ἀνίατος θυμοῦ καὶ ὀργῆς, θεῖναι τὴν οἰκουμένην ἔρημον καὶ τοὺς ἁμαρτωλοὺς ἀπολέσαι ἐξ αὐτῆς.",
+        "VUL": "Ecce dies Domini veniet,/ crudelis, et indignationis plenus, et iræ, furorisque,/ ad ponendam terram in solitudinem,/ et peccatores ejus conterendos de ea./",
+        "SYN": "Вот, приходит день Господа лютый, с гневом и пылающею яростью, чтобы сделать землю пустынею и истребить с нее грешников ее.",
+        "NEO": "Voici que le jour de \\+w Yahweh|strong=\"H3068\"\\+w** est venu, jour cruel, de fureur et d’ardente colère, pour réduire la terre en désert, et en exterminer les pécheurs.",
+        "NAB": "Lo, the day of the LORD comes, cruel, with wrath and burning anger; To lay waste the land and destroy the sinners within it!",
+        "VAT_ES": "&iexcl;Miren! Ahí llega el Día del Señor, día cruel, de furor y de ira ardiente, para hacer de la tierra una devastación y exterminar de ella a los pecadores.",
+        "CEI": "Ecco, il giorno del Signore arriva implacabile, con sdegno, ira e furore, per fare della terra un deserto, per sterminare i peccatori."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּֽי כוֹכְבֵ֤י הַ/שָּׁמַ֨יִם֙ וּ/כְסִ֣ילֵי/הֶ֔ם לֹ֥א יָהֵ֖לּוּ אוֹרָ֑/ם חָשַׁ֤ךְ הַ/שֶּׁ֨מֶשׁ֙ בְּ/צֵאת֔/וֹ וְ/יָרֵ֖חַ לֹֽא יַגִּ֥יהַ אוֹרֽ/וֹ׃",
+        "LXX": "οἱ γὰρ ἀστέρες τοῦ οὐρανοῦ καὶ ὁ Ὠρείων καὶ πᾶς ὁ κόσμος τοῦ οὐρανοῦ τὸ φῶς οὐ δώσουσιν, καὶ σκοτισθήσεται τοῦ ἡλίου ἀνατέλλοντος, καὶ ἡ σελήνη οὐ δώσει τὸ φῶς αὐτῆς.",
+        "VUL": "Quoniam stellæ cæli, et splendor earum,/ non expandent lumen suum ;/ obtenebratus est sol in ortu suo,/ et luna non splendebit in lumine suo./",
+        "SYN": "Звезды небесные и светила не дают от себя света; солнце меркнет при восходе своем, и луна не сияет светом своим.",
+        "NEO": "Car les étoiles du ciel et leurs constellations ne font pas briller leur lumière ; le soleil s’est obscurci à son lever, et la lune ne répand plus sa clarté.",
+        "NAB": "The stars and constellations of the heavens send forth no light; The sun is dark when it rises, and the light of the moon does not shine.",
+        "VAT_ES": "Porque los astros del cielo y sus constelaciones no irradiarán más su luz; el sol se oscurecerá al salir y la luna dejará de brillar.",
+        "CEI": "Poiché le stelle del cielo e la costellazione di Orione non daranno più la loro luce; il sole si oscurerà al suo sorgere e la luna non diffonderà la sua luce."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/פָקַדְתִּ֤י עַל תֵּבֵל֙ רָעָ֔ה וְ/עַל רְשָׁעִ֖ים עֲוֺנָ֑/ם וְ/הִשְׁבַּתִּי֙ גְּא֣וֹן זֵדִ֔ים וְ/גַאֲוַ֥ת עָרִיצִ֖ים אַשְׁפִּֽיל׃",
+        "LXX": "καὶ ἐντελοῦμαι τῇ οἰκουμένῃ ὅλῃ κακά, καὶ τοῖς ἀσεβέσιν τὰς ἁμαρτίας αὐτῶν· καὶ ἀπολῶ ὕβριν ἀνόμων, καὶ ὕβριν ὑπερηφάνων ταπεινώσω.",
+        "VUL": "Et visitabo super orbis mala,/ et contra impios iniquitatem eorum ;/ et quiescere faciam superbiam infidelium,/ et arrogantiam fortium humiliabo./",
+        "SYN": "Я накажу мир за зло, и нечестивых - за беззакония их, и положу конец высокоумию гордых, и уничижу надменность притеснителей;",
+        "NEO": "Je punirai le monde pour sa malice, et les méchants pour leur iniquité ; je ferai cesser l’arrogance des superbes, et j’abaisserai l’orgueil des tyrans.",
+        "NAB": "Thus I will punish the world for its evil and the wicked for their guilt. I will put an end to the pride of the arrogant, the insolence of tyrants I will humble.",
+        "VAT_ES": "Yo castigaré al mundo por su maldad y a los malvados por su iniquidad. Pondré fin al orgullo de los arrogantes y humillaré la soberbia de los violentos",
+        "CEI": "Io punirò il mondo per il male, gli empi per la loro iniquità; farò cessare la superbia dei protervi e umilierò l'orgoglio dei tiranni."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "אוֹקִ֥יר אֱנ֖וֹשׁ מִ/פָּ֑ז וְ/אָדָ֖ם מִ/כֶּ֥תֶם אוֹפִֽיר׃",
+        "LXX": "καὶ ἔσονται οἱ καταλελιμμένοι ἔντιμοι μᾶλλον ἢ τὸ χρυσίον τὸ ἄπυρον, καὶ ἄνθρωπος μᾶλλον ἔντιμος ἔσται ἢ ὁ λίθος ὁ ἐν Σουφείρ.",
+        "VUL": "Pretiosior erit vir auro,/ et homo mundo obrizo./",
+        "SYN": "сделаю то, что люди будут дороже чистого золота, и мужи - дороже золота Офирского.",
+        "NEO": "Je rendrai les hommes plus rares que l’or fin, plus rares que l’or d’Ophir.",
+        "NAB": "I will make mortals more rare than pure gold, men, than gold of Ophir.",
+        "VAT_ES": "Haré a los mortales más escasos que el otro fino, a los hombres, más escasos que el otro de Ofir.",
+        "CEI": "Renderò l'uomo più raro dell'oro e i mortali più rari dell'oro di Ofir."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "עַל כֵּן֙ שָׁמַ֣יִם אַרְגִּ֔יז וְ/תִרְעַ֥שׁ הָ/אָ֖רֶץ מִ/מְּקוֹמָ֑/הּ בְּ/עֶבְרַת֙ יְהוָ֣ה צְבָא֔וֹת וּ/בְ/י֖וֹם חֲר֥וֹן אַפּֽ/וֹ׃",
+        "LXX": "ὁ γὰρ οὐρανὸς θυμωθήσεται, καὶ ἡ γῆ σεισθήσεται ἐκ τῶν θεμελίων αὐτῆς, διὰ θυμὸν ὀργῆς Κυρίου σαβαώθ, τῇ ἡμέρᾳ ᾗ ἂν ἐπέλθῃ ὁ θυμὸς αὐτοῦ.",
+        "VUL": "Super hoc cælum turbabo ;/ et movebitur terra de loco suo,/ propter indignationem Domini exercituum,/ et propter diem iræ furoris ejus./",
+        "SYN": "Для сего потрясу небо, и земля сдвинется с места своего от ярости Господа Саваофа, в день пылающего гнева Его.",
+        "NEO": "C’est pourquoi je ferai trembler les cieux, et la terre sera ébranlée de sa place, par la fureur de \\+w Yahweh|strong=\"H3068\"\\+w** des armées, au jour où s’allumera sa colère.",
+        "NAB": "For this I will make the heavens tremble and the earth shall be shaken from its place, At the wrath of the LORD of hosts on the day of his burning anger.",
+        "VAT_ES": "Por eso, haré temblar los cielos, y la tierra se moverá de su sitio bajo el furor del Señor de los ejércitos, en el día de su ira ardiente.",
+        "CEI": "Allora farò tremare i cieli e la terra si scuoterà dalle fondamenta per lo sdegno del Signore degli eserciti, nel giorno della sua ira ardente."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/הָיָה֙ כִּ/צְבִ֣י מֻדָּ֔ח וּ/כְ/צֹ֖אן וְ/אֵ֣ין מְקַבֵּ֑ץ אִ֤ישׁ אֶל עַמּ/וֹ֙ יִפְנ֔וּ וְ/אִ֥ישׁ אֶל אַרְצ֖/וֹ יָנֽוּסוּ׃",
+        "LXX": "καὶ ἔσονται οἱ καταλελιμμένοι ὡς δορκάδιον φεῦγον καὶ ὡς πρόβατον πλανώμενον, καὶ οὐκ ἔσται ὁ συνάγων, ὥστε ἄνθρωπον εἰς τὸν λαὸν αὐτοῦ ἀποστραφῆναι· καὶ ἄνθρωπος εἰς τὴν χώραν ἑαυτοῦ διώξεται.",
+        "VUL": "Et erit quasi damula fugiens,/ et quasi ovis, et non erit qui congreget./ Unusquisque ad populum suum convertetur,/ et singuli ad terram suam fugient./",
+        "SYN": "Тогда каждый, как преследуемая серна и как покинутые овцы, обратится к народу своему, и каждый побежит в свою землю.",
+        "NEO": "Alors, comme une gazelle que l’on poursuit, comme un troupeau que personne ne rassemble, chacun se tournera vers son peuple, et s’enfuira dans son pays.",
+        "NAB": "Like a hunted gazelle, or a flock that no one gathers, Every man shall turn to his kindred and flee to his own land.",
+        "VAT_ES": "Entonces, como una gacela espantada y como un rebaño al que nadie congrega cada uno se volverá a su pueblo. cada uno huirá a su país.",
+        "CEI": "Allora, come una gazzella impaurita e come un gregge che nessuno raduna, ognuno si dirigerà verso il suo popolo, ognuno correrà verso la sua terra."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כָּל הַ/נִּמְצָ֖א יִדָּקֵ֑ר וְ/כָל הַ/נִּסְפֶּ֖ה יִפּ֥וֹל בֶּ/חָֽרֶב׃",
+        "LXX": "ὃς γὰρ ἂν ἁλῷ ἡττηθήσεται, καὶ οἵτινες συνηγμένοι εἰσὶν μαχαίρᾳ πεσοῦνται.",
+        "VUL": "Omnis qui inventus fuerit occidetur,/ et omnis qui supervenerit cadet in gladio ;/",
+        "SYN": "Но кто попадется, будет пронзен, и кого схватят, тот падет от меча.",
+        "NEO": "Tous ceux qu’on trouvera seront transpercés, tous ceux qu’on saisira tomberont par l’épée.",
+        "NAB": "Everyone who is caught shall be run through; to a man, they shall fall by the sword.",
+        "VAT_ES": "Todo el que sea descubierto, será traspasado. y el que sea apresado, caerá bajo la espada.",
+        "CEI": "Quanti saranno trovati, saranno trafitti, quanti saranno presi, periranno di spada."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/עֹלְלֵי/הֶ֥ם יְרֻטְּשׁ֖וּ לְ/עֵֽינֵי/הֶ֑ם יִשַּׁ֨סּוּ֙ בָּֽתֵּי/הֶ֔ם וּ/נְשֵׁי/הֶ֖ם תשגלנה תִּשָּׁכַֽבְנָה׃",
+        "LXX": "καὶ τὰ τέκνα αὐτῶν ῥάξουσιν ἐνώπιον αὐτῶν, καὶ τὰς οἰκίας αὐτῶν προνομεύσουσιν, καὶ τὰς γυναῖκας αὐτῶν ἕξουσιν.",
+        "VUL": "infantes eorum allidentur in oculis eorum,/ diripientur domus eorum, et uxores eorum violabuntur./",
+        "SYN": "И младенцы их будут разбиты пред глазами их; домы их будут разграблены и жены их обесчещены.",
+        "NEO": "Leurs petits enfants seront écrasés sous leurs yeux, leurs maisons pillées et leurs femmes violées.",
+        "NAB": "Their infants shall be dashed to pieces in their sight; their houses shall be plundered and their wives ravished.",
+        "VAT_ES": "Sus niños pequeños serán estrellado ante sus ojos, sus casas saqueadas y sus mujeres violadas.",
+        "CEI": "I loro piccoli saranno sfracellati davanti ai loro occhi; saranno saccheggiate le loro case, disonorate le loro mogli."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "הִנְ/נִ֛י מֵעִ֥יר עֲלֵי/הֶ֖ם אֶת מָדָ֑י אֲשֶׁר כֶּ֨סֶף֙ לֹ֣א יַחְשֹׁ֔בוּ וְ/זָהָ֖ב לֹ֥א יַחְפְּצוּ בֽ/וֹ׃",
+        "LXX": "ἰδοὺ ἐπεγείρω ὑμῖν τοὺς Μήδους, οἳ οὐ λογίζονται ἀργύριον οὐδὲ χρυσίου χρείαν ἔχουσιν.",
+        "VUL": "Ecce ego suscitabo super eos Medos,/ qui argentum non quærant,/ nec aurum velint ;/",
+        "SYN": "Вот, Я подниму против них Мидян, которые не ценят серебра и не пристрастны к золоту.",
+        "NEO": "Voici que je fais lever contre eux les Mèdes, qui ne font pas cas de l’argent, et ne convoitent pas l’or.",
+        "NAB": "I am stirring up against them the Medes, who think nothing of silver and take no delight in gold.",
+        "VAT_ES": "&iexcl;Miren! Yo suscrito contra ellos a los medos, que no estiman la plata, ni les importa el oro:",
+        "CEI": "Ecco, io eccito contro di loro i Medi che non pensano all'argento, né si curano dell'oro."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וּ/קְשָׁת֖וֹת נְעָרִ֣ים תְּרַטַּ֑שְׁנָה וּ/פְרִי בֶ֨טֶן֙ לֹ֣א יְרַחֵ֔מוּ עַל בָּנִ֖ים לֹֽא תָח֥וּס עֵינָֽ/ם׃",
+        "LXX": "τοξεύματα νεανίσκων συντρίψουσιν, καὶ τὰ τέκνα ὑμῶν οὐ μὴ ἐλεήσωσιν, οὐδὲ ἐπὶ τοῖς τέκνοις σου φείσονται οἱ ὀφθαλμοὶ αὐτῶν.",
+        "VUL": "sed sagittis parvulos interficient,/ et lactantibus uteris non miserebuntur,/ et super filios non parcet oculus eorum./",
+        "SYN": "Луки их сразят юношей и не пощадят плода чрева: глаз их не сжалится над детьми.",
+        "NEO": "Leurs arcs écraseront les jeunes gens ; ils ne feront pas grâce au fruit des entrailles ; leur œil n’aura pas pitié des enfants.",
+        "NAB": "The fruit of the womb they shall not spare, nor shall they have eyes of pity for children.",
+        "VAT_ES": "sus arcos acribillarán a los jóvenes, no se apiadarán del fruto de las entrañas ni sentirán compasión por los niños.",
+        "CEI": "Con i loro archi abbatteranno i giovani, non avranno pietà dei piccoli appena nati, i loro occhi non avranno pietà dei bambini."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/הָיְתָ֤ה בָבֶל֙ צְבִ֣י מַמְלָכ֔וֹת תִּפְאֶ֖רֶת גְּא֣וֹן כַּשְׂדִּ֑ים כְּ/מַהְפֵּכַ֣ת אֱלֹהִ֔ים אֶת סְדֹ֖ם וְ/אֶת עֲמֹרָֽה׃",
+        "LXX": "καὶ ἔσται Βαβυλών, ἣ καλεῖται ἔνδοξος ἀπὸ βασιλέως Χαλδαίων, ⸂⸆⸃ ὃν τρόπον κατέστρεψεν ὁ θεὸς Σόδομα καὶ Γόμορρα·",
+        "VUL": "Et erit Babylon illa gloriosa in regnis,/ inclyta superbia Chaldæorum,/ sicut subvertit Dominus Sodomam et Gomorrham./",
+        "SYN": "И Вавилон, краса царств, гордость Халдеев, будет ниспровержен Богом, как Содом и Гоморра,",
+        "NEO": "Et Babylone, l’ornement des royaumes, la parure des fiers Chaldéens, sera comme Sodome et Gomorrhe que Dieu a détruites.",
+        "NAB": "And Babylon, the jewel of kingdoms, the glory and pride of the Chaldeans, Shall be overthrown by God like Sodom and like Gomorrah.",
+        "VAT_ES": "Babilonia, hermosura de los reinos, gloria y orgullo de los caldeos, soportará la misma catástrofe que Dios envió a Sodoma y Gomorra.",
+        "CEI": "Babilonia, perla dei regni, splendore orgoglioso dei Caldei, sarà come Sòdoma e Gomorra sconvolte da Dio."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "לֹֽא תֵשֵׁ֣ב לָ/נֶ֔צַח וְ/לֹ֥א תִשְׁכֹּ֖ן עַד דּ֣וֹר וָ/ד֑וֹר וְ/לֹֽא יַהֵ֥ל שָׁם֙ עֲרָבִ֔י וְ/רֹעִ֖ים לֹא יַרְבִּ֥צוּ שָֽׁם׃",
+        "LXX": "οὐ κατοικηθήσεται εἰς τὸν αἰῶνα χρόνον, οὐδὲ μὴ εἰσέλθωσιν εἰς αὐτὴν διὰ πολλῶν γενεῶν, οὐδὲ μὴ διέλθωσιν αὐτὴν Ἄραβες, οὐδὲ ποιμένες οὐ μὴ ἀναπαύσονται ἐν αὐτῇ.",
+        "VUL": "Non habitabitur usque in finem,/ et non fundabitur usque ad generationem et generationem ;/ nec ponet ibi tentoria Arabs,/ nec pastores requiescent ibi./",
+        "SYN": "не заселится никогда, и в роды родов не будет жителей в нем; не раскинет Аравитянин шатра своего, и пастухи со стадами не будут отдыхать там.",
+        "NEO": "Elle ne sera jamais plus peuplée, elle ne sera plus habitée dans le cours des âges ; l’Arabe n’y dressera pas sa tente, et le berger n’y parquera pas ses troupeaux.",
+        "NAB": "She shall never be inhabited, nor dwelt in, from age to age; The Arab shall not pitch his tent there, nor shepherds couch their flocks.",
+        "VAT_ES": "Quedará despoblada para siempre, no la habitarán a lo largo de las generaciones; allí el árabe no plantará su carpa ni los pastores apacentarán sus rebaños.",
+        "CEI": "Non sarà abitata mai più né popolata di generazione in generazione. L'Arabo non vi pianterà la sua tenda né i pastori vi faranno sostare i greggi."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/רָבְצוּ שָׁ֣ם צִיִּ֔ים וּ/מָלְא֥וּ בָתֵּי/הֶ֖ם אֹחִ֑ים וְ/שָׁ֤כְנוּ שָׁם֙ בְּנ֣וֹת יַֽעֲנָ֔ה וּ/שְׂעִירִ֖ים יְרַקְּדוּ שָֽׁם׃",
+        "LXX": "καὶ ἀναπαύσονται ἐκεῖ θηρία, καὶ ἐμπλησθήσονται αἱ οἰκίαι ἤχου; καὶ ἀναπαύσονται ἐκεῖ σειρῆνες, καὶ δαιμόνια ἐκεῖ ὀρχήσονται,",
+        "VUL": "Sed requiescent ibi bestiæ,/ et replebuntur domus eorum draconibus,/ et habitabunt ibi struthiones,/ et pilosi saltabunt ibi ;/",
+        "SYN": "Но будут обитать в нем звери пустыни, и домы наполнятся филинами; и страусы поселятся, и косматые будут скакать там.",
+        "NEO": "Les animaux du désert y feront leur gîte ; les hiboux rempliront ses maisons ; là habiteront les autruches, et le satyre y bondira.",
+        "NAB": "But wildcats shall rest there and owls shall fill the houses; There ostriches shall dwell, and satyrs shall dance.",
+        "VAT_ES": "Allí se apacentarán las fieras del desierto y los búhos llenarán sus casas; allí anidarán los avestruces y danzarán los sátiros;",
+        "CEI": "Ma vi si stabiliranno gli animali del deserto, i gufi riempiranno le loro case, vi faranno dimora gli struzzi, vi danzeranno i sàtiri."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/עָנָ֤ה אִיִּים֙ בְּ/אַלְמנוֹתָ֔י/ו וְ/תַנִּ֖ים בְּ/הֵ֣יכְלֵי עֹ֑נֶג וְ/קָר֤וֹב לָ/בוֹא֙ עִתָּ֔/הּ וְ/יָמֶ֖י/הָ לֹ֥א יִמָּשֵֽׁכוּ׃",
+        "LXX": "καὶ ὀνοκένταυροι ἐκεῖ κατοικήσουσιν, καὶ νοσσοποιήσουσιν ἐχῖνοι ἐν τοῖς οἴκοις αὐτῶν. ταχὺ ἔρχεται καὶ οὐ χρονιεῖ.",
+        "VUL": "et respondebunt ibi ululæ in ædibus ejus,/ et sirenes in delubris voluptatis.]",
+        "SYN": "Шакалы будут выть в чертогах их, и гиены - в увеселительных домах.",
+        "NEO": "Les chacals hurleront dans ses palais déserts, et les chiens sauvages dans ses maisons de plaisir. Son temps est proche, et ses jours ne seront pas prolongés.",
+        "NAB": "Desert beasts shall howl in her castles, and jackals in her luxurious palaces. Her time is near at hand and her days shall not be prolonged.",
+        "VAT_ES": "las hienas aullarán en sus mansiones y los chacales en sus palacios suntuosos. Su hora ya está por llegar y no serán prolongados sus días.",
+        "CEI": "Ululeranno le iene nei loro palazzi, gli sciacalli nei loro edifici lussuosi. La sua ora si avvicina, i suoi giorni non saranno prolungati."
+      }
+    }
+  }
+}

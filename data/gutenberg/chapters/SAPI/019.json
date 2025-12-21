@@ -1,0 +1,386 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "SAPI_019",
+  "book_key": "SAPI",
+  "sequence": 19,
+  "chapter_in": {
+    "MT": 19,
+    "VUL": 19,
+    "LXX": 19
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Τοῖς δὲ ἀσεβέσιν μέχρι τέλους ἀνελεήμων θυμὸς ἐπέστη· προῄδει γὰρ αὐτῶν καὶ τὰ μέλλοντα,",
+        "VUL": "[Impiis autem usque in novissimum/ sine misericordia ira supervenit./ Præsciebat enim et futura illorum :/",
+        "SYN": "А над нечестивыми до конца тяготел немилостивый гнев, ибо Он предвидел и будущие их дела,",
+        "NEO": "Mais une colère sans miséricorde poursuit les impies jusqu’à la fin. Car Dieu savait d’avance quelle serait leur conduite :",
+        "NAB": "But the wicked, merciless wrath assailed until the end. For he knew beforehand what they were yet to do:",
+        "VAT_ES": "Pero sobre los impíos se abatió hasta el fin una ira despiadada, porque Dios tenía previsto lo que ellos harían:",
+        "CEI": "Sugli empi si riversò sino alla fine uno sdegno implacabile, perché Dio prevedeva anche il loro futuro,"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ὅτι αὐτοὶ ἐπιστρέψαντες τοῦ ἀπεῖναι καὶ μετὰ σπουδῆς προπέμψαντες αὐτούς, διώξουσιν μεταμεληθέντες.",
+        "VUL": "quoniam cum ipsi permisissent ut se educerent,/ et cum magna sollicitudine præmisissent illos,/ consequebantur illos, pnitentia acti./",
+        "SYN": "что они, позволив им отправиться и с поспешностью выслав их, раскаются и погонятся за ними,",
+        "NEO": "Qu’après avoir permis aux justes de s’en aller, et pressé leur départ avec grande instance, ils en auraient du regret et se mettraient à leur poursuite.",
+        "NAB": "That though they themselves had agreed to the departure and had anxiously sent them on their way, they would regret it and pursue them.",
+        "VAT_ES": "después de dejar que el pueblo se fuera, y de ungirlos a partir apresuradamente, ellos, cambiando de idea, saldrían a perseguirlos.",
+        "CEI": "che cioè, dopo aver loro permesso di andarsene e averli fatti in fretta partire, cambiato proposito, li avrebbero inseguiti."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ἔτι γὰρ ἐν χερσὶν ἔχοντες τὰ πένθη καὶ προσοδυρόμενοι τάφοις νεκρῶν, ἕτερον ἐπεσπάσαντο λογισμὸν ἀνοίας, καὶ οὓς ἱκετεύοντες ἐξέβαλον, τούτους ὡς φυγάδας ἐδίωκον.",
+        "VUL": "Adhuc enim inter manus habentes luctum,/ et deplorantes ad monumenta mortuorum,/ aliam sibi assumpserunt cogitationem inscientiæ,/ et quos rogantes projecerant,/ hos tamquam fugitivos persequebantur./",
+        "SYN": "ибо, еще имея в руках печали и рыдая над гробами мертвых, они возымели другой безумный помысл, и тех, кого с мольбою высылали, преследовали, как беглецов.",
+        "NEO": "En effet, ils n’avaient pas encore achevé leurs deuils, et ils se lamentaient encore aux tombeaux de leurs morts, qu’ils s’engagèrent dans un autre dessein de folie, et poursuivirent comme des fugitifs ceux qu’ils avaient conjurés de s’éloigner.",
+        "NAB": "For while they were still engaged in funeral rites and were mourning at the burials of the dead, They adopted another senseless plan; and those whom they had sent away with entreaty, they pursued as fugitives.",
+        "VAT_ES": "En efecto, cuando todavía celebraban sus ritos fúnebres y se lamentaban junto a las tumbas de sus muertos, concibieron otro proyecto descabellado: a los que ellos mismos habían rogado que se fueran los comenzaron a perseguir como fugitivos.",
+        "CEI": "Mentre infatti erano ancora occupati nei lutti e piangevano sulle tombe dei morti, presero un'altra decisione insensata, e inseguirono come fuggitivi coloro che già avevan pregato di partire."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "εἷλκεν γὰρ αὐτοὺς ἡ ἀξία ἐπὶ τοῦτο πέρας ἀνάγκη, καὶ τῶν συμβεβηκότων ἀμνηστίαν ἐνέβαλεν, ἵνα τὴν λείπουσαν ταῖς βασάνοις προσαναπληρώσωσιν κόλασιν,",
+        "VUL": "Ducebat enim illos ad hunc finem digna necessitas ;/ et horum quæ acciderant commemorationem amittebant,/ ut quæ deerant tormentis repleret punitio :/",
+        "SYN": "Влекла же их к тому концу судьба, которой они были достойны, и она навела забвение о случившемся, дабы они восполнили наказание, недостававшее к их мучениям,",
+        "NEO": "Une juste nécessité les entraînait à cette fin, et leur faisait oublier ce qui venait de leur arriver, afin qu’ils subissent dans la pleine mesure le châtiment qui manquait encore à leurs précédents supplices,",
+        "NAB": "For a compulsion suited to this ending drew them on, and made them forgetful of what had befallen them, That they might fill out the torments of their punishment,",
+        "VAT_ES": "La fuerza de las cosas los arrastraba con toda justicia a ese extremo y les hacía olvidar lo que había sucedido, para que terminaran de sufrir el castigo que aún faltaba a sus tormentos:",
+        "CEI": "Li spingeva a questo punto estremo un meritato destino, che li gettò nell'oblio delle cose avvenute, perché colmassero la punizione, che ancora mancava ai loro tormenti,"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "καὶ ὁ μὲν λαός σου παράδοξον ὁδοιπορίαν πειράσῃ, ἐκεῖνοι δὲ ξένον εὕρωσι θάνατον.",
+        "VUL": "et populus quidem tuus mirabiliter transiret,/ illi autem novam mortem invenirent./",
+        "SYN": "и дабы народ Твой совершил славное путешествие, а они нашли себе необычайную смерть.",
+        "NEO": "et que, tandis que votre peuple bénéficiait d’un glorieux passage, ils trouvassent une mort étrange.",
+        "NAB": "and your people might experience a glorious journey while those others met an extraordinary death.",
+        "VAT_ES": "así, mientras tu pueblo emprendía una maravillosa travesía, ellos encontrarían una muerte insólita.",
+        "CEI": "e mentre il tuo popolo intraprendeva un viaggio straordinario, essi incorressero in una morte singolare."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ὅλη γὰρ ἡ κτίσις ἐν ἰδίῳ γένει πάλιν ἄνωθεν διετυποῦτο, ὑπηρετοῦσα ταῖς ἰδίαις ἐπιταγαῖς, ἵνα οἱ σοὶ παῖδες φυλαχθῶσιν ἀβλαβεῖς.",
+        "VUL": "Omnis enim creatura ad suum genus ab initio refigurabatur,/ deserviens tuis præceptis,/ ut pueri tui custodirentur illæsi./",
+        "SYN": "Ибо вся тварь снова свыше преобразовалась в своей природе, повинуясь особым повелениям, дабы сыны Твои сохранились невредимыми.",
+        "NEO": "Car la création tout entière fut transformée dans sa nature, obéissant aux commandements particuliers qui lui étaient donnés, afin que vos enfants fussent conservés à l’abri de tout mal.",
+        "NAB": "For all creation, in its several kinds, was being made over anew, serving its natural laws, that your children might be preserved unharmed.",
+        "VAT_ES": "Porque la creación entera, obedeciendo a tus órdenes, adquiría nuevas formas en su propia naturaleza, para que tus hijos fueran preservados incólumes.",
+        "CEI": "Tutta la creazione assumeva da capo, nel suo genere, nuova forma, obbedendo ai tuoi comandi, perché i tuoi figli fossero preservati sani e salvi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "ἡ τὴν παρεμβολὴν σκιάζουσα νεφέλη, ἐκ δὲ προυφεστῶτος ὕδατος ξηρᾶς ἀνάδυσις γῆς ἐθεωρήθη, ἐξ ἐρυθρᾶς θαλάσσης ὁδὸς ἀνεμπόδιστος, καὶ χλοηφόρον πεδίον ἐκ κλύδωνος βιαίου·",
+        "VUL": "Nam nubes castra eorum obumbrabat,/ et ex aqua quæ ante erat, terra arida apparuit,/ et in mari Rubro via sine impedimento,/ et campus germinans de profundo nimio :/",
+        "SYN": "Явилось облако, осеняющее стан, а где стояла прежде вода, показалась сухая земля, из Чермного моря - беспрепятственный путь, и из бурной пучины - зеленая долина.",
+        "NEO": "Ainsi on vit une nuée couvrir le camp de son ombre ; là où il y avait auparavant de l’eau, apparut la terre ferme ; la mer Rouge ouvrit un libre passage, et les flots impétueux se changèrent en un champ de verdure.",
+        "NAB": "The cloud overshadowed their camp; and out of what had before been water, dry land was seen emerging: Out of the Red Sea an unimpeded road, and a grassy plain out of the mighty flood.",
+        "VAT_ES": "Se vio a la nuble cubrir el campamento con su sombra y emerger la tierra seca de lo que antes era agua; apareció en el Mar Rojo un camino despejado y una verde llanura, entre las olas impetuosas:",
+        "CEI": "Si vide la nube coprire d'ombra l'accampamento, terra asciutta apparire dove prima c'era acqua, una strada libera aprirsi nel Mar Rosso e una verdeggiante pianura in luogo dei flutti violenti;"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "δι’ οὗ πανεθνεὶ διῆλθον οἱ τῇ σῇ σκεπαζόμενοι χειρί, θεωρήσαντες θαυμαστὰ τέρατα.",
+        "VUL": "per quem omnis natio transivit quæ tegebatur tua manu,/ videntes tua mirabilia et monstra./",
+        "SYN": "Покрываемые Твоею рукою, они прошли по ней всем народом, видя дивные чудеса.",
+        "NEO": "Ils y passèrent, — toute une nation, — protégés par ta main, ayant sous les yeux de merveilleux prodiges.",
+        "NAB": "Over this crossed the whole nation sheltered by your hand, after they beheld stupendous wonders.",
+        "VAT_ES": "por allí paso todo un pueblo, protegido por tu mano, contemplando prodigios admirables.",
+        "CEI": "per essa passò tutto il tuo popolo, i protetti della tua mano, spettatori di prodigi stupendi."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "ὡς γὰρ ἵπποι ἐνεμήθησαν καὶ ὡς ἀμνοὶ διεσκίρτησαν, αἰνοῦντές σε, Κύριε, τὸν ῥυόμενον αὐτούς·",
+        "VUL": "Tamquam enim equi depaverunt escam,/ et tamquam agni exsultaverunt,/ magnificantes te, Domine, qui liberasti illos./",
+        "SYN": "Они паслись, как кони, и играли, как агнцы, славя Тебя, Господи, Избавителя их,",
+        "NEO": "Comme des chevaux en pâturage, comme des agneaux bondissants, ils vous glorifiaient, Seigneur, vous, leur libérateur.",
+        "NAB": "For they ranged about like horses, and bounded about like lambs, praising you, O LORD! their deliverer.",
+        "VAT_ES": "Eran como caballos en un pastizal y retozaban como corderos, alabándote a ti, Señor, su liberador.",
+        "CEI": "Come cavalli alla pastura, come agnelli esultanti, cantavano inni a te, Signore, che li avevi liberati."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ἐμέμνηντο γὰρ ἔτι τῶν ἐν τῇ παροικίᾳ αὐτῶν, πῶς ἀντὶ μὲν γενέσεως ζῴων ἐξήγαγεν ἡ γῆ σκνῖπα, ἀντὶ δὲ ἐνύδρων ἐξηρεύξατο ὁ ποταμὸς πλῆθος βατράχων.",
+        "VUL": "Memores enim erant adhuc eorum/ quæ in incolatu illorum facta fuerant :/ quemadmodum pro natione animalium eduxit terra muscas,/ et pro piscibus eructavit fluvius multitudinem ranarum./",
+        "SYN": "ибо они еще помнили о том, что случилось во время пребывания их там, как земля вместо рождения других животных произвела скнипов и река вместо рыб извергла множество жаб.",
+        "NEO": "Car ils se rappelaient encore ce qui s’était passé en leur séjour au pays étranger : comment, à la place des autres animaux, la terre avait produit des moustiques, et le fleuve, au lieu de poissons, une multitude de grenouilles.",
+        "NAB": "For they were still mindful of what had happened in their sojourn: how instead of the young of animals the land brought forth gnats, and instead of fishes the river swarmed with countless frogs.",
+        "VAT_ES": "Todavía recordaban lo que había sucedido en su destierro: cómo los mosquitos, en lugar de reproducirse naturalmente, fueron producidos por la tierra, y cómo las ranas, en lugar de nacer de otros animales acuáticos, fueron vomitadas por el Río en gran cantidad.",
+        "CEI": "Ricordavano ancora i fatti del loro esilio, come la terra, invece di bestiame, produsse zanzare, come il fiume, invece di pesci, riversò una massa di rane."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἐφ’ ὑστέρῳ δὲ εἶδον καὶ νέαν γένεσιν ὀρνέων, ὅτε ἐπιθυμίᾳ προαχθέντες ᾐτήσαντο ἐδέσματα τρυφῆς·",
+        "VUL": "Novissime autem viderunt novam creaturam avium,/ cum, adducti concupiscentia, postulaverunt escas epulationis./",
+        "SYN": "А после они увидели и новый род птиц, когда, увлекшись пожеланием, просили приятной пищи,",
+        "NEO": "Plus tard, ils virent encore une étrange production d’oiseaux, lorsque, poussés par la convoitise, ils demandèrent une nourriture délicate :",
+        "NAB": "And later they saw also a new kind of bird when, prompted by desire, they asked for pleasant foods;",
+        "VAT_ES": "Más tarde, vieron también un nuevo modo de nacer las aves: cuando, excitados por la gula, ellos reclamaron manjares delicados,",
+        "CEI": "Più tardi videro anche una nuova produzione di uccelli, quando, spinti dall'appetito, chiesero cibi delicati;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "εἰς γὰρ παραμυθίαν ἀνέβη αὐτοῖς ἀπὸ θαλάσσης ὀρτυγομήτρα,",
+        "VUL": "In allocutione enim desiderii ascendit illis de mari ortygometra :/ et vexationes peccatoribus supervenerunt,/ non sine illis quæ ante facta erant argumentis per vim fulminum :/ juste enim patiebantur secundum suas nequitias.]",
+        "SYN": "ибо в утешение им налетели с моря перепелы, а грешных постигли наказания не без знамений, бывших силою молний. Они справедливо страдали за свою злобу,",
+        "NEO": "pour les satisfaire, des cailles montèrent du côté de la mer.",
+        "NAB": "For to appease them quail came to them from the sea.",
+        "VAT_ES": "para reconfortarlos, subieron codornices desde el mar.",
+        "CEI": "poiché, per appagarli, salirono dal mare le quaglie."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "καὶ αἱ τιμωρίαι τοῖς ἁμαρτωλοῖς ἐπῆλθον, οὐκ ἄνευ τῶν γεγονότων τεκμηρίων τῇ βίᾳ τῶν κεραυνῶν· δικαίως γὰρ ἔπασχον ταῖς ἰδίαις αὐτῶν πονηρίαις, καὶ γὰρ χαλεπωτέραν μισοξενίαν ἐπετήδευσαν.",
+        "VUL": "[Etenim detestabiliorem inhospitalitatem instituerunt :/ alii quidem ignotos non recipiebant advenas ;/ alii autem bonos hospites in servitutem redigebant./",
+        "SYN": "ибо они более сильную питали ненависть к чужеземцам: иные не принимали незнаемых странников, а эти порабощали благодетельных пришельцев.",
+        "NEO": "Mais le châtiment tomba sur les pécheurs, non sans être signalé d’avance par de violents éclairs. Il souffrirent justement pour leurs crimes,",
+        "NAB": "And the punishments came upon the sinners only after forewarnings from the violence of the thunderbolts. For they justly suffered for their own misdeeds, since indeed they treated their guests with the more grievous hatred.",
+        "VAT_ES": "Pero sobre los pecadores se abatieron los castigos, no sin antes ser preanunciados por la furia de los rayos: con toda justicia, ellos sufrían a causa de su maldad, ya que habían llevado al extremo su odio contra el extranjero.",
+        "CEI": "Sui peccatori invece caddero i castighi non senza segni premonitori di fulmini fragorosi; essi soffrirono giustamente per la loro malvagità, avendo nutrito un odio tanto profondo verso lo straniero."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "οἱ μὲν γὰρ τοὺς ἀγνοοῦντας οὐκ ἐδέχοντο παρόντας, οὗτοι δὲ εὐεργέτας ξένους ἐδουλοῦντο.",
+        "VUL": "Et non solum hæc, sed et alius quidam respectus illorum erat,/ quoniam inviti recipiebant extraneos./",
+        "SYN": "И мало этого, но еще будет суд на них за то, что те враждебно принимали чужих,",
+        "NEO": "car ils avaient montré pour l’étranger la haine la plus odieuse. D’autres n’avaient pas voulu recevoir des gens qui ne les connaissaient pas ; ceux-là avaient réduit en esclavage des étrangers qui leur avaient fait du bien.",
+        "NAB": "For those others did not receive unfamiliar visitors, but these were enslaving beneficent guests.",
+        "VAT_ES": "Porque otros no recibieron a los desconocidos que llegaban, pero estos redujeron a servidumbre a huéspedes bienhechores.",
+        "CEI": "Altri non accolsero ospiti sconosciuti; ma costoro ridussero schiavi ospiti benemeriti."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "καὶ οὐ μόνον, ἀλλ’ ἦ τις ἐπισκοπὴ ἔσται αὐτῶν, ἐπεὶ ἀπεχθῶς προσεδέχοντο τοὺς ἀλλοτρίους·",
+        "VUL": "Qui autem cum lætitia receperunt hos/ qui eisdem usi erant justitiis,/ sævissimis afflixerunt doloribus./",
+        "SYN": "а эти, с радостью приняв, потом уже пользовавшихся одинаковыми правами стали угнетать ужасными работами.",
+        "NEO": "Il y a plus, — car voici une autre considération en faveur des premiers : C’est en ennemis qu’ils recevaient ces étrangers ;",
+        "NAB": "And not that only; but what punishment was to be theirs since they received strangers unwillingly!",
+        "VAT_ES": "Más aún, aquellos –y eso se les tendrá en cuenta– mostraron desde el principio hostilidad ante el extranjero;",
+        "CEI": "Non solo: ci sarà per i primi un giudizio, perché accolsero ostilmente dei forestieri;"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "οἱ δὲ μετὰ ἑορτασμάτων εἰσδεξάμενοι τοὺς ἤδη τῶν αὐτῶν μετεσχηκότας δικαίων δεινοῖς ἐκάκωσαν πόνοις.",
+        "VUL": "Percussi sunt autem cæcitate :/ sicut illi in foribus justi,/ cum subitaneis cooperti essent tenebris,/ unusquisque transitum ostii sui quærebat./",
+        "SYN": "Посему они поражены были слепотою, как те некогда при дверях праведника, когда, будучи объяты густою тьмою, искали каждый входа в его двери",
+        "NEO": "ceux-là, au contraire, accueillirent votre peuple avec des fêtes ; et, après l’avoir admis à la jouissance de leurs droits, l’accablèrent de cruelles souffrances.",
+        "NAB": "Yet these, after welcoming them with festivities, oppressed with awful toils those who now shared with them the same rights.",
+        "VAT_ES": "pero estos, en cambio, después de recibir a tu pueblo con fiestas, y de hacerlo participar de sus mismos derechos, lo maltrataron con terribles trabajos.",
+        "CEI": "ma quelli, dopo averli festosamente accolti, poi, quando già partecipavano ai loro diritti li oppressero con lavori durissimi."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "ἐπλήγησαν δὲ καὶ ἀορασίᾳ, ὥσπερ ἐκεῖνοι ἐπὶ ταῖς τοῦ δικαίου θύραις, ὅτε ἀχανεῖ περιβληθέντες σκότει ἕκαστος τῶν αὐτοῦ θυρῶν τὴν δίοδον ἐζήτει.",
+        "VUL": "In se enim elementa dum convertuntur,/ sicut in organo qualitatis sonus immutatur,/ et omnia suum sonum custodiunt :/ unde æstimari ex ipso visu certo potest./",
+        "SYN": "Самые стихии изменились, как в арфе звуки изменяют свой характер, всегда оставаясь теми же звуками; это можно усмотреть чрез тщательное наблюдение бывшего.",
+        "NEO": "Aussi furent-ils frappés d’aveuglement, comme ceux qui assiégeaient la porte du juste, lorsque, enveloppés de ténèbres profondes, ils cherchaient chacun l’entrée de la porte.",
+        "NAB": "And they were struck with blindness, as those others had been at the portals of the just - When, surrounded by yawning darkness, each sought the entrance of his own gate.",
+        "VAT_ES": "Por eso fueron castigados con la ceguera, como aquellos otros a las puertas del justo cuando rodeados de profundas tinieblas, cada uno buscaba el acceso de su puerta.",
+        "CEI": "Furono perciò colpiti da cecità, come lo furono i primi alla porta del giusto, quando avvolti fra tenebre fitte ognuno cercava l'ingresso della propria porta."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "δι’ ἑαυτῶν γὰρ τὰ στοιχεῖα μεθαρμοζόμενα, ὥσπερ ἐν ψαλτηρίῳ φθόγγοι τοῦ ῥυθμοῦ τὸ ὄνομα διαλλάσσουσιν, πάντοτε μένοντα ἤχῳ, ὅπερ ἐστὶν εἰκάσαι ἐκ τῆς τῶν γεγονότων ὄψεως ἀκριβῶς.",
+        "VUL": "Agrestia enim in aquatica convertebantur,/ et quæcumque erant natantia, in terram transibant./",
+        "SYN": "Ибо земные животные переменялись в водяные, а плавающие в водах выходили на землю.",
+        "NEO": "Car les éléments échangeaient leurs propriétés, comme dans le psaltérion les sons changent de rythme, tout en conservant le même ton. C’est ce qu’on peut voir clairement par les faits qui se sont passés.",
+        "NAB": "For the elements, in variable harmony among themselves, like strings of the harp, produce new melody, while the flow of music steadily persists. And this can be perceived exactly from a review of what took place.",
+        "VAT_ES": "Así, los elementos intercambiaban entre sí sus propiedades, como en un instrumento de cuerdas los sonidos cambian su ritmo, permaneciendo siempre la misma tonalidad. Esto es lo que se infiere claramente al examinar lo sucedido:",
+        "CEI": "Difatti gli elementi scambiavano ordine fra loro, come le note di un'arpa variano la specie del ritmo, pur conservando sempre lo stesso tono. E proprio questo si può dedurre dalla attenta considerazione degli avvenimenti:"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "χερσαῖα γὰρ εἰς ἔνυδρα μετεβάλλετο, καὶ νηκτὰ μετέβαινεν ἐπὶ γῆς·",
+        "VUL": "Ignis in aqua valebat supra suam virtutem,/ et aqua extinguentis naturæ obliviscebatur./",
+        "SYN": "Огонь в воде удерживал свою силу, а вода теряла угашающее свое свойство;",
+        "NEO": "Les animaux terrestres devenaient aquatiques, et ceux qui nagent passaient sur la terre.",
+        "NAB": "For land creatures were changed into water creatures, and those that swam went over on to the land.",
+        "VAT_ES": "seres terrestres se volvían acuáticos, los que nadan se desplazaban sobre la tierra;",
+        "CEI": "animali terrestri divennero acquatici, quelli che nuotavano passarono sulla terra."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "πῦρ ἴσχυσεν ἐν ὕδατι τῆς ἰδίας δυνάμεως, καὶ ὕδωρ τῆς σβεστικῆς δυνάμεως ἐπελανθάνετο·",
+        "VUL": "Flammæ e contrario corruptibilium animalium/ non vexaverunt carnes coambulantium,/ nec dissolvebant illam, quæ facile dissolvebatur sicut glacies, bonam escam./ In omnibus enim magnificasti populum tuum, Domine,/ et honorasti, et non despexisti,/ in omni tempore et in omni loco assistens eis.]",
+        "SYN": "пламя, наоборот, не вредило телам бродящих удоборазрушимых животных, и не таял легко растаявающий снеговидный род небесной пищи.",
+        "NEO": "Le feu dépassait dans l’eau sa vertu naturelle, et l’eau oubliait sa propriété d’éteindre.",
+        "NAB": "Fire in water maintained its own strength, and water forgot its quenching nature;",
+        "VAT_ES": "el fuego superaba en el agua su propia fuerza y el agua olvidaba su poder de apagar;",
+        "CEI": "Il fuoco rafforzò nell'acqua la sua potenza e l'acqua dimenticò la sua proprietà naturale di spegnere."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "φλόγες ἀνάπαλιν εὐφθάρτων ζῴων οὐκ ἐμάραναν σάρκας ἐμπεριπατούντων, οὐδὲ τηκτὸν εὔτηκτον κρυσταλλοειδὲς γένος ἀμβροσίας τροφῆς.",
+        "SYN": "Так, Господи, Ты во всем возвеличил и прославил народ Твой, и не оставлял его, но во всякое время и на всяком месте пребывал с ним.",
+        "NEO": "D’autre part, la flamme n’atteignait pas la chair des frêles animaux répandus tout autour, et ne fondait pas cet aliment céleste, semblable au givre et fusible comme lui.",
+        "NAB": "Flames, by contrast, neither consumed the flesh of the perishable animals that went about in them, nor melted the icelike, quick-melting kind of ambrosial food.",
+        "VAT_ES": "las llamas, por el contrario, no consumían la carne de los seres corruptibles que pasaban por ellas, ni tampoco derretían aquel alimento divino, parecido a la escarcha y tan fácil de disolverse.",
+        "CEI": "Le fiamme non consumavano le carni di animali gracili, che vi camminavano dentro, né scioglievano quella specie di cibo celeste, simile alla brina e così facile a fondersi."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "Κατὰ πάντα γάρ, Κύριε, ἐμεγάλυνας τὸν λαόν σου καὶ ἐδόξασας, καὶ οὐχ ὑπερεῖδες ἐν παντὶ καιρῷ καὶ τόπῳ παριστάμενος.",
+        "NEO": "En toutes choses, Seigneur, vous avez glorifié votre peuple, vous l’avez honoré et vous ne l’avez pas méprisé ; en tout temps et en tout lieu vous l’avez assisté.",
+        "NAB": "For every way, O LORD! you magnified and glorified your people; unfailing, you stood by them in every time and circumstance.",
+        "VAT_ES": "Por todos los medios, Señor, tú has engrandecido y glorificado a tu pueblo, y no has dejado de asistirlo en todo tiempo y lugar.",
+        "CEI": "In tutti i modi, o Signore, hai magnificato e reso glorioso il tuo popolo e non l'hai trascurato assistendolo in ogni tempo e in ogni luogo."
+      }
+    }
+  }
+}

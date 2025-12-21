@@ -1,0 +1,266 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_048",
+  "book_key": "PSAL",
+  "sequence": 48,
+  "chapter_in": {
+    "MT": 48,
+    "VUL": 47,
+    "LXX": 47
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "שִׁ֥יר מִ֝זְמוֹר לִ/בְנֵי קֹֽרַח׃",
+        "LXX": "Εἰς τὸ τέλος· τοῖς υἱοῖς Κόρε ψαλμός.",
+        "VUL": "In finem, filiis Core. Psalmus.",
+        "SYN": "Начальнику хора. Сынов Кореевых. Псалом.",
+        "NEO": "Cantique. Psaume des fils de Coré.",
+        "NAB": "A psalm of the Korahites. A song.",
+        "CEI": "Cantico. Salmo. Dei figli di Core."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "גָּ֘ד֤וֹל יְהוָ֣ה וּ/מְהֻלָּ֣ל מְאֹ֑ד בְּ/עִ֥יר אֱ֝לֹהֵ֗י/נוּ הַר קָדְשֽׁ/וֹ׃",
+        "LXX": "Ἀκούσατε ταῦτα, πάντα τὰ ἔθνη, ἐνωτίσασθε, πάντες οἱ κατοικοῦντες τὴν οἰκουμένην,",
+        "VUL": "[Audite hæc, omnes gentes ;/ auribus percipite, omnes qui habitatis orbem :/",
+        "SYN": "Слушайте сие, все народы; внимайте сему, все живущие во вселенной, -",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est grand, il est l’objet de toute louange, dans la cité de notre Dieu, sur sa montagne sainte.",
+        "NAB": "Great is the LORD and highly praised in the city of our God: The holy mountain,",
+        "VAT_ES": "El Señor es grande y digno de alabanza,",
+        "CEI": "Grande è il Signore e degno di ogni lode nella città del nostro Dio."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "יְפֵ֥ה נוֹף֮ מְשׂ֪וֹשׂ כָּל הָ֫/אָ֥רֶץ הַר צִ֭יּוֹן יַרְכְּתֵ֣י צָפ֑וֹן קִ֝רְיַ֗ת מֶ֣לֶךְ רָֽב׃",
+        "LXX": "οἵ τε γηγενεῖς καὶ οἱ υἱοὶ τῶν ἀνθρώπων, ἐπὶ τὸ αὐτὸ πλούσιος καὶ πένης.",
+        "VUL": "quique terrigenæ et filii hominum,/ simul in unum dives et pauper./",
+        "SYN": "и простые и знатные, богатый, равно как бедный.",
+        "NEO": "Elle s’élève gracieuse, joie de toute la terre, la montagne de Sion, aux extrémités du septentrion, la cité du grand Roi.",
+        "NAB": "fairest of heights, the joy of all the earth, Mount Zion, the heights of Zaphon, the city of the great king.",
+        "VAT_ES": "Su Santa Montaña, la altura más hermosa,",
+        "CEI": "Il suo monte santo, altura stupenda, è la gioia di tutta la terra. Il monte Sion, dimora divina, è la città del grande Sovrano."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אֱלֹהִ֥ים בְּ/אַרְמְנוֹתֶ֗י/הָ נוֹדַ֥ע לְ/מִשְׂגָּֽב׃",
+        "LXX": "τὸ στόμα μου λαλήσει σοφίαν, καὶ ἡ μελέτη τῆς καρδίας μου σύνεσιν.",
+        "VUL": "Os meum loquetur sapientiam,/ et meditatio cordis mei prudentiam./",
+        "SYN": "Уста мои изрекут премудрость, и размышления сердца моего - знание.",
+        "NEO": "Dieu, dans ses palais, s’est fait connaître comme un refuge.",
+        "NAB": "God is its citadel, renowned as a stronghold.",
+        "VAT_ES": "Dios se manifestó como un baluarte",
+        "CEI": "Dio nei suoi baluardi è apparso fortezza inespugnabile."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּֽי הִנֵּ֣ה הַ֭/מְּלָכִים נֽוֹעֲד֑וּ עָבְר֥וּ יַחְדָּֽו׃",
+        "LXX": "κλινῶ εἰς παραβολὴν τὸ οὖς μου, ἀνοίξω ἐν ψαλτηρίῳ τὸ πρόβλημά μου.",
+        "VUL": "Inclinabo in parabolam aurem meam ;/ aperiam in psalterio propositionem meam./",
+        "SYN": "Приклоню ухо мое к притче, на гуслях открою загадку мою:",
+        "NEO": "Car voici que les rois s’étaient réunis, ensemble ils s’étaient avancés.",
+        "NAB": "See! The kings assembled, together they invaded.",
+        "VAT_ES": "Porque los reyes se aliaron",
+        "CEI": "Ecco, i re si sono alleati, sono avanzati insieme."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "הֵ֣מָּה רָ֭אוּ כֵּ֣ן תָּמָ֑הוּ נִבְהֲל֥וּ נֶחְפָּֽזוּ׃",
+        "LXX": "ἵνα τί φοβοῦμαι ἐν ἡμέρᾳ πονηρᾷ; ἡ ἀνομία τῆς πτέρνης μου κυκλώσει με,",
+        "VUL": "Cur timebo in die mala ?/ iniquitas calcanei mei circumdabit me./",
+        "SYN": "\"для чего бояться мне во дни бедствия, _когда_ беззаконие путей моих окружит меня?\"",
+        "NEO": "Ils ont vu, soudain ils ont été dans la stupeur ; éperdus, ils ont pris la fuite.",
+        "NAB": "When they looked they were astounded; terrified, they were put to flight!",
+        "VAT_ES": "pero apenas la vieron quedaron pasmados",
+        "CEI": "Essi hanno visto: attoniti e presi dal panico, sono fuggiti."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "רְ֭עָדָה אֲחָזָ֣תַ/ם שָׁ֑ם חִ֝֗יל כַּ/יּוֹלֵֽדָה׃",
+        "LXX": "οἱ πεποιθότες ἐπὶ τῇ δυνάμει αὐτῶν καὶ ἐπὶ τῷ πλήθει τοῦ πλούτου αὐτῶν καυχώμενοι.",
+        "VUL": "Qui confidunt in virtute sua,/ et in multitudine divitiarum suarum, gloriantur./",
+        "SYN": "Надеющиеся на силы свои и хвалящиеся множеством богатства своего!",
+        "NEO": "Là un tremblement les a saisis, une douleur comme celle de la femme qui enfante.",
+        "NAB": "Trembling seized them there, anguish, like a woman's labor,",
+        "VAT_ES": "Allí se apoderó de ellos el terror",
+        "CEI": "Là sgomento li ha colti, doglie come di partoriente,"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "בְּ/ר֥וּחַ קָדִ֑ים תְּ֝שַׁבֵּ֗ר אֳנִיּ֥וֹת תַּרְשִֽׁישׁ׃",
+        "LXX": "ἀδελφὸς οὐ λυτροῦται· λυτρώσεται ἄνθρωπος; οὐ δώσει τῷ θεῷ ἐξίλασμα αὐτοῦ,",
+        "VUL": "Frater non redimit, redimet homo :/ non dabit Deo placationem suam,/",
+        "SYN": "человек никак не искупит брата своего и не даст Богу выкупа за него:",
+        "NEO": "Par le vent d’Orient tu brises les vaisseaux de Tharsis.",
+        "NAB": "As when the east wind wrecks the ships of Tarshish!",
+        "VAT_ES": "como cuando el viento del desierto",
+        "CEI": "simile al vento orientale che squarcia le navi di Tarsis."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "כַּ/אֲשֶׁ֤ר שָׁמַ֨עְנוּ כֵּ֤ן רָאִ֗ינוּ בְּ/עִיר יְהוָ֣ה צְ֭בָאוֹת בְּ/עִ֣יר אֱלֹהֵ֑י/נוּ אֱלֹ֘הִ֤ים יְכוֹנְנֶ֖/הָ עַד עוֹלָ֣ם סֶֽלָה׃",
+        "LXX": "καὶ τὴν τιμὴν τῆς λυτρώσεως τῆς ψυχῆς αὐτοῦ· καὶ ἐκοπίασεν εἰς τὸν αἰῶνα,",
+        "VUL": "et pretium redemptionis animæ suæ./ Et laborabit in æternum ;/",
+        "SYN": "дорога цена искупления души их, и не будет того вовек,",
+        "NEO": "Ce que nous avions entendu dire, nous l’avons vu dans la cité de \\+w Yahweh|strong=\"H3068\"\\+w** des armées ; dans la cité de notre Dieu : Dieu l’affermit pour toujours. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "What we had heard we now see in the city of the LORD of hosts, In the city of our God, founded to last forever. Selah",
+        "VAT_ES": "Hemos visto lo que habíamos oído",
+        "CEI": "Come avevamo udito, così abbiamo visto nella città del Signore degli eserciti, nella città del nostro Dio; Dio l'ha fondata per sempre."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "דִּמִּ֣ינוּ אֱלֹהִ֣ים חַסְדֶּ֑/ךָ בְּ֝/קֶ֗רֶב הֵיכָלֶֽ/ךָ׃",
+        "LXX": "καὶ ζήσεται εἰς τέλος, ὅτι οὐκ ὄψεται καταφθοράν,",
+        "VUL": "et vivet adhuc in finem./",
+        "SYN": "чтобы остался _кто_ жить навсегда и не увидел могилы.",
+        "NEO": "O Dieu nous rappelons la mémoire de ta bonté, au milieu de ton temple.",
+        "NAB": "O God, within your temple we ponder your steadfast love.",
+        "VAT_ES": "Nosotros evocamos tu misericordia",
+        "CEI": "Ricordiamo, Dio, la tua misericordia dentro il tuo tempio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כְּ/שִׁמְ/ךָ֤ אֱלֹהִ֗ים כֵּ֣ן תְּ֭הִלָּתְ/ךָ עַל קַצְוֵי אֶ֑רֶץ צֶ֝֗דֶק מָלְאָ֥ה יְמִינֶֽ/ךָ׃",
+        "LXX": "ὅταν ἴδῃ σοφοὺς ἀποθνήσκοντας. ἐπὶ τὸ αὐτὸ ἄνους καὶ ἄφρων ἀπολοῦνται, καὶ καταλείψουσιν ἀλλοτρίοις τὸν πλοῦτον αὐτῶν.",
+        "VUL": "Non videbit interitum,/ cum viderit sapientes morientes :/ simul insipiens et stultus peribunt./ Et relinquent alienis divitias suas,/",
+        "SYN": "Каждый видит, что и мудрые умирают, равно как и невежды и бессмысленные погибают и оставляют имущество свое другим.",
+        "NEO": "Comme ton nom, ô Dieu, ainsi ta louange arrive jusqu’aux extrémités de la terre. Ta droite est pleine de justice.",
+        "NAB": "Like your name, O God, your praise reaches the ends of the earth. Your right hand is fully victorious.",
+        "VAT_ES": "Tu alabanza, lo mismo que tu nombre,",
+        "CEI": "Come il tuo nome, o Dio, così la tua lode si estende sino ai confini della terra; è piena di giustizia la tua destra."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "יִשְׂמַ֤ח הַר צִיּ֗וֹן תָּ֭גֵלְנָה בְּנ֣וֹת יְהוּדָ֑ה לְ֝מַ֗עַן מִשְׁפָּטֶֽי/ךָ׃",
+        "LXX": "καὶ οἱ τάφοι αὐτῶν οἰκίαι αὐτῶν εἰς τὸν αἰῶνα, σκηνώματα αὐτῶν εἰς γενεὰν καὶ γενεάν· ἐπεκαλέσαντο τὰ ὀνόματα αὐτῶν ἐπὶ τῶν γαιῶν αὐτῶν·",
+        "VUL": "et sepulchra eorum domus illorum in æternum ;/ tabernacula eorum in progenie et progenie :/ vocaverunt nomina sua in terris suis./",
+        "SYN": "В мыслях у них, что домы их вечны, и что жилища их в род и род, и земли свои они называют своими именами.",
+        "NEO": "Que la montagne de Sion se réjouisse, que les filles de Juda soient dans l’allégresse, à cause de tes jugements !",
+        "NAB": "Mount Zion is glad! The cities of Judah rejoice because of your saving deeds!",
+        "VAT_ES": "se alegra la Montaña de Sión;",
+        "CEI": "Gioisca il monte di Sion, esultino le città di Giuda a motivo dei tuoi giudizi."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "סֹ֣בּוּ צִ֭יּוֹן וְ/הַקִּיפ֑וּ/הָ סִ֝פְר֗וּ מִגְדָּלֶֽי/הָ׃",
+        "LXX": "καὶ ἄνθρωπος ἐν τιμῇ ὢν οὐ συνῆκεν· παρασυνεβλήθη τοῖς κτήνεσιν τοῖς ἀνοήτοις καὶ ὡμοιώθη αὐτοῖς.",
+        "VUL": "Et homo, cum in honore esset, non intellexit./ Comparatus est jumentis insipientibus,/ et similis factus est illis./",
+        "SYN": "Но человек в чести не пребудет; он уподобится животным, которые погибают.",
+        "NEO": "Parcourez Sion et faites-en le tour, comptez ses forteresses ;",
+        "NAB": "Go about Zion, walk all around it, note the number of its towers.",
+        "VAT_ES": "Den una vuelta alrededor de Sión",
+        "CEI": "Circondate Sion, giratele intorno, contate le sue torri."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "שִׁ֤יתוּ לִבְּ/כֶ֨ם לְֽ/חֵילָ֗/ה פַּסְּג֥וּ אַרְמְנוֹתֶ֑י/הָ לְמַ֥עַן תְּ֝סַפְּר֗וּ לְ/ד֣וֹר אַחֲרֽוֹן׃",
+        "LXX": "αὕτη ἡ ὁδὸς αὐτῶν σκάνδαλον αὐτοῖς, καὶ μετὰ ταῦτα ἐν τῷ στόματι αὐτῶν εὐλογήσουσιν. διάψαλμα.",
+        "VUL": "Hæc via illorum scandalum ipsis ;/ et postea in ore suo complacebunt./",
+        "SYN": "Этот путь их есть безумие их, хотя последующие за ними одобряют мнение их.",
+        "NEO": "observez son rempart, examinez ses palais, pour le raconter à la génération future.",
+        "NAB": "Consider the ramparts, examine its citadels, that you may tell future generations:",
+        "VAT_ES": "observen sus baluartes y miren sus palacios,",
+        "CEI": "Osservate i suoi baluardi, passate in rassegna le sue fortezze, per narrare alla generazione futura:"
+      }
+    }
+  }
+}

@@ -1,0 +1,519 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOB_013",
+  "book_key": "IOB",
+  "sequence": 13,
+  "chapter_in": {
+    "MT": 13,
+    "VUL": 13,
+    "LXX": 13
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "הֶן כֹּ֭ל רָאֲתָ֣ה עֵינִ֑/י שָֽׁמְעָ֥ה אָ֝זְנִ֗/י וַ/תָּ֥בֶן לָֽ/הּ׃",
+        "LXX": "ἰδοὺ ταῦτα ἑόρακέν μου ὁ ὀφθαλμὸς καὶ ἀκήκοέν μου τὸ οὖς·",
+        "VUL": "[Ecce omnia hæc vidit oculus meus,/ et audivit auris mea, et intellexi singula./",
+        "SYN": "Вот, все _это_ видело око мое, слышало ухо мое и заметило для себя.",
+        "NEO": "Voilà que mon œil a vu tout cela, mon oreille l’a entendu et compris.",
+        "NAB": "Lo, all this my eye has seen; my ear has heard and perceived it.",
+        "VAT_ES": "Sí, todo esto lo vi con mis propios ojos, lo escuché con mis oídos y lo entendí,",
+        "CEI": "Ecco, tutto questo ha visto il mio occhio, l'ha udito il mio orecchio e l'ha compreso."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כְּֽ֭/דַעְתְּ/כֶם יָדַ֣עְתִּי גַם אָ֑נִי לֹא נֹפֵ֖ל אָנֹכִ֣י מִ/כֶּֽם׃",
+        "LXX": "καὶ οἶδα ὅσα καὶ ὑμεῖς ἐπίστασθε, καὶ οὐκ ἀσυνετώτερός εἰμι ὑμῶν.",
+        "VUL": "Secundum scientiam vestram et ego novi :/ nec inferior vestri sum./",
+        "SYN": "Сколько знаете вы, знаю и я: не ниже я вас.",
+        "NEO": "Ce que vous savez, moi aussi je le sais, je ne vous suis en rien inférieur.",
+        "NAB": "What you know, I also know; I fall not short of you.",
+        "VAT_ES": "Lo que ustedes saben, lo sé yo también: no estoy por debajo de ustedes.",
+        "CEI": "Quel che sapete voi, lo so anch'io; non sono da meno di voi."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אוּלָ֗ם אֲ֭נִי אֶל שַׁדַּ֣י אֲדַבֵּ֑ר וְ/הוֹכֵ֖חַ אֶל אֵ֣ל אֶחְפָּֽץ׃",
+        "LXX": "οὐ μὴν δὲ ἀλλ’ ἐγὼ πρὸς Κύριον λαλήσω, ἐλέγξω δὲ ἐναντίον αὐτοῦ ἐὰν βούληται.",
+        "VUL": "Sed tamen ad Omnipotentem loquar,/ et disputare cum Deo cupio :/",
+        "SYN": "Но я к Вседержителю хотел бы говорить и желал бы состязаться с Богом.",
+        "NEO": "Mais je veux parler au Tout-Puissant, je veux plaider ma cause avec Dieu.",
+        "NAB": "But I would speak with the Almighty; I wish to reason with God.",
+        "VAT_ES": "Pero yo quiero hablarle al Todopoderoso, mi deseo es discutir con Dios.",
+        "CEI": "Ma io all'Onnipotente vorrei parlare, a Dio vorrei fare rimostranze."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְֽ/אוּלָ֗ם אַתֶּ֥ם טֹֽפְלֵי שָׁ֑קֶר רֹפְאֵ֖י אֱלִ֣ל כֻּלְּ/כֶֽם׃",
+        "LXX": "ὑμεῖς δέ ἐστε ἰατροὶ ἄδικοι καὶ ἰαταὶ κακῶν πάντες.",
+        "VUL": "prius vos ostendens fabricatores mendacii,/ et cultores perversorum dogmatum./",
+        "SYN": "А вы сплетчики лжи; все вы бесполезные врачи.",
+        "NEO": "Car vous n’êtes que des charlatans, vous êtes tous des médecins inutiles.",
+        "NAB": "You are glossing over falsehoods and offering vain remedies, every one of you!",
+        "VAT_ES": "&iexcl;Ustedes lo encubren todo con sus mentiras, médicos inútiles son todos ustedes!",
+        "CEI": "Voi siete raffazzonatori di menzogne, siete tutti medici da nulla."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "מִֽי יִ֭תֵּן הַחֲרֵ֣שׁ תַּחֲרִישׁ֑וּ/ן וּ/תְהִ֖י לָ/כֶ֣ם לְ/חָכְמָֽה׃",
+        "LXX": "εἴη δὲ ὑμῖν κωφεῦσαι, καὶ ἀποβήσεται ὑμῖν σοφία.",
+        "VUL": "Atque utinam taceretis,/ ut putaremini esse sapientes./",
+        "SYN": "О, если бы вы только молчали! это было бы _вменено_ вам в мудрость.",
+        "NEO": "Que ne gardiez-vous le silence ! Il vous eût tenu lieu de sagesse.",
+        "NAB": "Oh, that you would be altogether silent! This for you would be wisdom.",
+        "VAT_ES": "&iexcl;Si se callaran de una vez, darían una prueba de sabiduría!",
+        "CEI": "Magari taceste del tutto! sarebbe per voi un atto di sapienza!"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "שִׁמְעוּ נָ֥א תוֹכַחְתִּ֑/י וְ/רִב֖וֹת שְׂפָתַ֣/י הַקְשִֽׁיבוּ׃",
+        "LXX": "ἀκούσατε ἔλεγχον τοῦ στόματός μου, κρίσιν δὲ χειλέων μου προσέχετε.",
+        "VUL": "Audite ergo correptionem meam,/ et judicium labiorum meorum attendite./",
+        "SYN": "Выслушайте же рассуждения мои и вникните в возражение уст моих.",
+        "NEO": "Ecoutez, je vous prie, ma défense, soyez attentifs au plaidoyer de mes lèvres.",
+        "NAB": "Hear now the rebuke I shall utter and listen to the reproof from my lips.",
+        "VAT_ES": "Escuchen, entonces, mi defensa; presten atención a mi querella.",
+        "CEI": "Ascoltate dunque la mia riprensione e alla difesa delle mie labbra fate attenzione."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "הַ֭/לְ/אֵל תְּדַבְּר֣וּ עַוְלָ֑ה וְ֝/ל֗/וֹ תְּֽדַבְּר֥וּ רְמִיָּֽה׃",
+        "LXX": "πότερον οὐκ ἔναντι Κυρίου λαλεῖτε, ἔναντι δὲ αὐτοῦ φθέγγεσθε δόλον;",
+        "VUL": "Numquid Deus indiget vestro mendacio,/ ut pro illo loquamini dolos ?/",
+        "SYN": "Надлежало ли вам ради Бога говорить неправду и для Него говорить ложь?",
+        "NEO": "Parlerez-vous mensonge en faveur de Dieu, pour lui, parlerez-vous tromperie ?",
+        "NAB": "Is it for God that you speak falsehood? Is it for him that you utter deceit?",
+        "VAT_ES": "&iquest;Es por Dios que ustedes hablan falsamente y para favorecerlo apelan al engaño?",
+        "CEI": "Volete forse in difesa di Dio dire il falso e in suo favore parlare con inganno?"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הֲ/פָנָ֥י/ו תִּשָּׂא֑וּ/ן אִם לָ/אֵ֥ל תְּרִיבֽוּ/ן׃",
+        "LXX": "ἢ ὑποστελεῖσθε; ὑμεῖς δὲ αὐτοὶ κριταὶ γένεσθε.",
+        "VUL": "numquid faciem ejus accipitis,/ et pro Deo judicare nitimini ?/",
+        "SYN": "Надлежало ли вам быть лицеприятными к Нему и за Бога так препираться?",
+        "NEO": "Ferez-vous pour Dieu acception de personnes, vous constituerez-vous avocats ?",
+        "NAB": "Is it for him that you show partiality? Do you play advocate on behalf of God?",
+        "VAT_ES": "&iquest;Se muestran parciales en atención a él y pretenden ser los abogados de Dios?",
+        "CEI": "Vorreste trattarlo con parzialità e farvi difensori di Dio?"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "הֲ֭/טוֹב כִּֽי יַחְקֹ֣ר אֶתְ/כֶ֑ם אִם כְּ/הָתֵ֥ל בֶּ֝/אֱנ֗וֹשׁ תְּהָתֵ֥לּוּ בֽ/וֹ׃",
+        "LXX": "καλὸν γὰρ ἐὰν ἐξιχνιάσῃ ὑμᾶς; εἰ γὰρ τὰ πάντα ποιοῦντες προστεθήσεσθε αὐτῷ,",
+        "VUL": "aut placebit ei quem celare nihil potest ?/ aut decipietur, ut homo, vestris fraudulentiis ?/",
+        "SYN": "Хорошо ли будет, когда Он испытает вас? Обманете ли Его, как обманывают человека?",
+        "NEO": "Vous en saura-t-il gré, s’il sonde vos cœurs ? Le tromperez-vous comme on trompe un homme ?",
+        "NAB": "Will it be well when he shall search you out? Would you impose on him as one does on men?",
+        "VAT_ES": "&iquest;Eso los beneficiará cuando él los examine? &iquest;Jugarán con él como se juega con un hombre?",
+        "CEI": "Sarebbe bene per voi se egli vi scrutasse? Come s'inganna un uomo, credete di ingannarlo?"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "הוֹכֵ֣חַ יוֹכִ֣יחַ אֶתְ/כֶ֑ם אִם בַּ֝/סֵּ֗תֶר פָּנִ֥ים תִּשָּׂאֽוּ/ן׃",
+        "LXX": "οὐθὲν ἧττον ἐλέγξει ὑμᾶς· εἰ δὲ καὶ κρυφῇ πρόσωπα θαυμάσεσθε,",
+        "VUL": "Ipse vos arguet,/ quoniam in abscondito faciem ejus accipitis./",
+        "SYN": "Строго накажет Он вас, хотя вы и скрытно лицемерите.",
+        "NEO": "Certainement il vous condamnera, si vous faites en secret acception de personnes.",
+        "NAB": "He will openly rebuke you if even in secret you show partiality.",
+        "VAT_ES": "No, él será el primero en acusarlos si toman partido solapadamente.",
+        "CEI": "Severamente vi redarguirà, se in segreto gli siete parziali."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "הֲ/לֹ֣א שְׂ֭אֵת/וֹ תְּבַעֵ֣ת אֶתְ/כֶ֑ם וּ֝/פַחְדּ֗/וֹ יִפֹּ֥ל עֲלֵי/כֶֽם׃",
+        "LXX": "πότερον οὐχὶ δεινὰ αὐτοῦ στροβήσει ὑμᾶς; ὁ φόβος δὲ παρ’ αὐτοῦ ἐπιπεσεῖται ὑμῖν,",
+        "VUL": "Statim ut se commoverit, turbabit vos,/ et terror ejus irruet super vos./",
+        "SYN": "Неужели величие Его не устрашает вас, и страх Его не нападает на вас?",
+        "NEO": "Oui, sa majesté vous épouvantera, ses terreurs tomberont sur vous.",
+        "NAB": "Surely will his majesty affright you and the dread of him fall upon you.",
+        "VAT_ES": "&iquest;Acaso no los espantará su majestad, y su terror no se abatirá sobre ustedes?",
+        "CEI": "Forse la sua maestà non vi incute spavento e il terrore di lui non vi assale?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "זִֽ֭כְרֹנֵי/כֶם מִשְׁלֵי אֵ֑פֶר לְ/גַבֵּי חֹ֝֗מֶר גַּבֵּי/כֶֽם׃",
+        "LXX": "ἀποβήσεται δὲ ὑμῶν τὸ ἀγαυρίαμα ἴσα σποδῷ, τὸ δὲ σῶμα πήλινον.",
+        "VUL": "Memoria vestra comparabitur cineri,/ et redigentur in lutum cervices vestræ./",
+        "SYN": "Напоминания ваши подобны пеплу; оплоты ваши -- оплоты глиняные.",
+        "NEO": "Vos arguments sont des raisons de poussière, vos forteresses sont des forteresses d’argile.",
+        "NAB": "Your reminders are ashy maxims, your fabrications are mounds of clay.",
+        "VAT_ES": "Las que ustedes alegan son sentencias de ceniza, sus respuestas son de barro.",
+        "CEI": "Sentenze di cenere sono i vostri moniti, difese di argilla le vostre difese."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "הַחֲרִ֣ישׁוּ מִ֭מֶּ/נִּי וַ/אֲדַבְּרָה אָ֑נִי וְ/יַעֲבֹ֖ר עָלַ֣/י מָֽה׃",
+        "LXX": "κωφεύσατε, ἵνα λαλήσω καὶ ἀναπαύσωμαι θυμοῦ,",
+        "VUL": "Tacete paulisper, ut loquar/ quodcumque mihi mens suggesserit./",
+        "SYN": "Замолчите предо мною, и я буду говорить, что бы ни постигло меня.",
+        "NEO": "Taisez-vous, laissez-moi, je veux parler ; il m’en arrivera ce qu’il pourra.",
+        "NAB": "Be silent, let me alone! that I may speak and give vent to my feelings.",
+        "VAT_ES": "Dejen de hablarme, soy yo el que hablaré, &iexcl;no importa lo que me pueda pasar!",
+        "CEI": "Tacete, state lontani da me: parlerò io, mi capiti quel che capiti."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "עַל מָ֤ה אֶשָּׂ֣א בְשָׂרִ֣/י בְ/שִׁנָּ֑/י וְ֝/נַפְשִׁ֗/י אָשִׂ֥ים בְּ/כַפִּֽ/י׃",
+        "LXX": "ἀναλαβὼν τὰς σάρκας μου τοῖς ὀδοῦσιν, ψυχὴν δέ μου θήσω ἐν χειρί.",
+        "VUL": "Quare lacero carnes meas dentibus meis,/ et animam meam porto in manibus meis ?/",
+        "SYN": "Для чего мне терзать тело мое зубами моими и душу мою полагать в руку мою?",
+        "NEO": "Je veux prendre ma chair entre les dents, je veux mettre mon âme dans ma main.",
+        "NAB": "I will carry my flesh between my teeth, and take my life in my hand.",
+        "VAT_ES": "Arriesgaré el todo por el todo y pondré en peligro mi vida.",
+        "CEI": "Voglio afferrare la mia carne con i denti e mettere sulle mie mani la mia vita."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "הֵ֣ן יִ֭קְטְלֵ/נִי לא ל֣/וֹ אֲיַחֵ֑ל אַךְ דְּ֝רָכַ֗/י אֶל פָּנָ֥י/ו אוֹכִֽיחַ׃",
+        "LXX": "ἐάν με χειρώσηται ὁ δυνάστης, ἐπεὶ καὶ ἦρκται, ἦ μὴν λαλήσω καὶ ἐλέγξω ἐναντίον αὐτοῦ·",
+        "VUL": "Etiam si occiderit me, in ipso sperabo :/ verumtamen vias meas in conspectu ejus arguam./",
+        "SYN": "Вот, Он убивает меня, но я буду надеяться; я желал бы только отстоять пути мои пред лицем Его!",
+        "NEO": "Quand il me tuerait, que je n’aurais rien à espérer, je défendrai devant lui ma conduite.",
+        "NAB": "Slay me though he might, I will wait for him; I will defend my conduct before him.",
+        "VAT_ES": "&iexcl;Que él me mate! Ya no tengo esperanza, sólo quiero defender mi conducta ante él.",
+        "CEI": "Mi uccida pure, non me ne dolgo; voglio solo difendere davanti a lui la mia condotta!"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "גַּם הוּא לִ֥/י לִֽ/ישׁוּעָ֑ה כִּי לֹ֥א לְ֝/פָנָ֗י/ו חָנֵ֥ף יָבֽוֹא׃",
+        "LXX": "καὶ τοῦτό μοι ἀποβήσεται εἰς σωτηρίαν, οὐ γὰρ ἐναντίον αὐτοῦ δόλος εἰσελεύσεται.",
+        "VUL": "Et ipse erit salvator meus :/ non enim veniet in conspectu ejus omnis hypocrita./",
+        "SYN": "И это уже в оправдание мне, потому что лицемер не пойдет пред лице Его!",
+        "NEO": "Mais il sera mon salut, car l’impie ne saurait paraître en sa présence.",
+        "NAB": "And this shall be my salvation, that no impious man can come into his presence.",
+        "VAT_ES": "Y esto mismo será un triunfo para mí, porque ningún impío puede comparecer ante él.",
+        "CEI": "Questo mi sarà pegno di vittoria, perché un empio non si presenterebbe davanti a lui."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "שִׁמְע֣וּ שָׁ֭מוֹעַ מִלָּתִ֑/י וְ֝/אַֽחֲוָתִ֗/י בְּ/אָזְנֵי/כֶֽם׃",
+        "LXX": "ἀκούσατε, ἀκούσατε τὰ ῥήματά μου, ἀναγγελῶ γὰρ ὑμῶν ἀκουόντων.",
+        "VUL": "Audite sermonem meum,/ et ænigmata percipite auribus vestris./",
+        "SYN": "Выслушайте внимательно слово мое и объяснение мое ушами вашими.",
+        "NEO": "Ecoutez donc mes paroles, prêtez l’oreille à mon discours.",
+        "NAB": "Pay careful heed to my speech, and give my statement a hearing.",
+        "VAT_ES": "Oigan, oigan bien mis palabras, que mis declaraciones lleguen a sus oídos.",
+        "CEI": "Ascoltate bene le mie parole e il mio esposto sia nei vostri orecchi."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "הִנֵּה נָ֭א עָרַ֣כְתִּי מִשְׁפָּ֑ט יָ֝דַ֗עְתִּי כִּֽי אֲנִ֥י אֶצְדָּֽק׃",
+        "LXX": "ἰδοὺ ἐγὼ ἐγγύς εἰμι τοῦ κρίματός μου, ⸂⸆⸃ οἶδα ἐγὼ ὅτι δίκαιος ἀναφανοῦμαι.",
+        "VUL": "Si fuero judicatus,/ scio quod justus inveniar./",
+        "SYN": "Вот, я завел судебное дело: знаю, что буду прав.",
+        "NEO": "Voici que j’ai préparé ma cause, je sais que je serai justifié.",
+        "NAB": "Behold, I have prepared my case, I know that I am in the right.",
+        "VAT_ES": "Estoy preparado para el juicio, yo sé que la razón estará de mi par.",
+        "CEI": "Ecco, tutto ho preparato per il giudizio, son convinto che sarò dichiarato innocente."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "מִי ה֭וּא יָרִ֣יב עִמָּדִ֑/י כִּֽי עַתָּ֖ה אַחֲרִ֣ישׁ וְ/אֶגְוָֽע׃",
+        "LXX": "τίς γάρ ἐστιν ὁ κριθησόμενός μοι, ὅτι νῦν κωφεύσω καὶ ἐκλείψω;",
+        "VUL": "Quis est qui judicetur mecum ?/ veniat : quare tacens consumor ?/",
+        "SYN": "Кто в состоянии оспорить меня? Ибо я скоро умолкну и испущу дух.",
+        "NEO": "Est-il quelqu’un qui veuille plaider contre moi ? A l’instant même je veux me taire et mourir.",
+        "NAB": "If anyone can make a case against me, then I shall be silent and die.",
+        "VAT_ES": "&iquest;Hay alguien que me pueda incriminar? Entonces aceptaría quedarme callado y expirar.",
+        "CEI": "Chi vuol muover causa contro di me? Perché allora tacerò, pronto a morire."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "אַךְ שְׁ֭תַּיִם אַל תַּ֣עַשׂ עִמָּדִ֑/י אָ֥ז מִ֝/פָּנֶ֗י/ךָ לֹ֣א אֶסָּתֵֽר׃",
+        "LXX": "δυεῖν δέ μοι χρήσῃ, τότε ἀπὸ τοῦ προσώπου σου οὐ κρυβήσομαι·",
+        "VUL": "Duo tantum ne facias mihi,/ et tunc a facie tua non abscondar :/",
+        "SYN": "Двух только _вещей_ не делай со мною, и тогда я не буду укрываться от лица Твоего:",
+        "NEO": "Seulement épargne-moi deux choses, ô Dieu, et je ne me cacherai pas devant ta face :",
+        "NAB": "These things only do not use against me, then from your presence I need not hide:",
+        "VAT_ES": "Concédeme dos cosas solamente, y así no me ocultaré de tu presencia:",
+        "CEI": "Solo, assicurami due cose e allora non mi sottrarrò alla tua presenza;"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "כַּ֭פְּ/ךָ מֵ/עָלַ֣/י הַרְחַ֑ק וְ֝/אֵ֥מָתְ/ךָ֗ אַֽל תְּבַעֲתַֽ/נִּי׃",
+        "LXX": "τὴν χεῖρα ἀπ’ ἐμοῦ ἀπέχου, καὶ ὁ φόβος σου μή με καταπλησσέτω.",
+        "VUL": "manum tuam longe fac a me,/ et formido tua non me terreat./",
+        "SYN": "удали от меня руку Твою, и ужас Твой да не потрясает меня.",
+        "NEO": "éloigne ta main de dessus moi, et que tes terreurs ne m’épouvantent plus.",
+        "NAB": "Withdraw your hand far from me, and let not the terror of you frighten me.",
+        "VAT_ES": "aparte de mí la palma de tu mano y que tu terror no me atemorice.",
+        "CEI": "allontana da me la tua mano e il tuo terrore più non mi spaventi;"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וּ֭/קְרָא וְ/אָנֹכִ֣י אֶֽעֱנֶ֑ה אֽוֹ אֲ֝דַבֵּ֗ר וַ/הֲשִׁיבֵֽ/נִי׃",
+        "LXX": "εἶτ’ ἂν καλέσεις, ἐγὼ δέ σοι ὑπακούσομαι· ἢ λαλήσεις, ἐγὼ δέ σοι δώσω ἀνταπόκρισιν.",
+        "VUL": "Voca me, et ego respondebo tibi :/ aut certe loquar, et tu responde mihi./",
+        "SYN": "Тогда зови, и я буду отвечать, или буду говорить я, а Ты отвечай мне.",
+        "NEO": "Après cela, appelle, et je répondrai ; ou bien je parlerai d’abord, et tu me répondras.",
+        "NAB": "Then call me, and I will respond; or let me speak first, and answer me.",
+        "VAT_ES": "Luego llámame, y yo te responderé, o hablaré yo, y tú me responderás.",
+        "CEI": "poi interrogami pure e io risponderò oppure parlerò io e tu mi risponderai."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "כַּ/מָּ֣ה לִ֭/י עֲוֺנ֣וֹת וְ/חַטָּא֑וֹת פִּֽשְׁעִ֥/י וְ֝/חַטָּאתִ֗/י הֹדִיעֵֽ/נִי׃",
+        "LXX": "πόσαι εἰσὶν αἱ ἁμαρτίαι μου καὶ αἱ ἀνομίαι μου; δίδαξόν με τίνες εἰσίν.",
+        "VUL": "Quantas habeo iniquitates et peccata ?/ scelera mea et delicta ostende mihi./",
+        "SYN": "Сколько у меня пороков и грехов? покажи мне беззаконие мое и грех мой.",
+        "NEO": "Quel est le nombre de mes iniquités et de mes péchés ? Fais-moi connaître mes transgressions et mes offenses.",
+        "NAB": "What are my faults and my sins? My misdeeds and my sins make known to me!",
+        "VAT_ES": "&iquest;Cuántas son mis culpas y mis pecados? Dame a conocer mi rebeldía y mi pecado.",
+        "CEI": "Quante sono le mie colpe e i miei peccati? Fammi conoscere il mio misfatto e il mio peccato."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "לָֽ/מָּה פָנֶ֥י/ךָ תַסְתִּ֑יר וְ/תַחְשְׁבֵ֖/נִי לְ/אוֹיֵ֣ב לָֽ/ךְ׃",
+        "LXX": "διὰ τί ἀπ’ ἐμοῦ κρύπτῃ, ἥγησαι δέ με ὑπεναντίον σοι;",
+        "VUL": "Cur faciem tuam abscondis,/ et arbitraris me inimicum tuum ?/",
+        "SYN": "Для чего скрываешь лице Твое и считаешь меня врагом Тебе?",
+        "NEO": "Pourquoi cacher ainsi ton visage, et me regarder comme ton ennemi !",
+        "NAB": "Why do you hide your face and consider me your enemy?",
+        "VAT_ES": "&iquest;Por qué ocultas tu rostro y me consideras tu enemigo?",
+        "CEI": "Perché mi nascondi la tua faccia e mi consideri come un nemico?"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "הֶ/עָלֶ֣ה נִדָּ֣ף תַּעֲר֑וֹץ וְ/אֶת קַ֖שׁ יָבֵ֣שׁ תִּרְדֹּֽף׃",
+        "LXX": "ἢ ὡς φύλλον κινούμενον ὑπὸ ἀνέμου εὐλαβηθήσῃ, ἢ ὡς χόρτῳ φερομένῳ ὑπὸ πνεύματος ἀντίκεισαί μοι;",
+        "VUL": "Contra folium, quod vento rapitur, ostendis potentiam tuam,/ et stipulam siccam persequeris :/",
+        "SYN": "Не сорванный ли листок Ты сокрушаешь и не сухую ли соломинку преследуешь?",
+        "NEO": "Veux-tu donc effrayer une feuille agitée par le vent, poursuivre une paille desséchée,",
+        "NAB": "Will you harass a wind-driven leaf, or pursue a withered straw?",
+        "VAT_ES": "&iquest;Quieres atemorizar a una hoja llevado por el viento? &iquest;Vas a perseguir a una paja reseca?",
+        "CEI": "Vuoi spaventare una foglia dispersa dal vento e dar la caccia a una paglia secca?"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "כִּֽי תִכְתֹּ֣ב עָלַ֣/י מְרֹר֑וֹת וְ֝/תוֹרִישֵׁ֗/נִי עֲוֺנ֥וֹת נְעוּרָֽ/י׃",
+        "LXX": "ὅτι κατέγραψας κατ’ ἐμοῦ κακά, περιέθηκας δέ μοι νεότητος ἁμαρτίας·",
+        "VUL": "scribis enim contra me amaritudines,/ et consumere me vis peccatis adolescentiæ meæ./",
+        "SYN": "Ибо Ты пишешь на меня горькое и вменяешь мне грехи юности моей,",
+        "NEO": "pour que tu écrives contre moi des choses amères, pour que tu m’imputes les fautes de ma jeunesse,",
+        "NAB": "For you draw up bitter indictments against me, and punish in me the faults of my youth.",
+        "VAT_ES": "&iexcl;Tú me dictas contra mí sentencias amargas y me imputas las culpas de mi juventud,",
+        "CEI": "Poiché scrivi contro di me sentenze amare e mi rinfacci i miei errori giovanili;"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/תָ֘שֵׂ֤ם בַּ/סַּ֨ד רַגְלַ֗/י וְ/תִשְׁמ֥וֹר כָּל אָרְחוֹתָ֑/י עַל שָׁרְשֵׁ֥י רַ֝גְלַ֗/י תִּתְחַקֶּֽה׃",
+        "LXX": "ἔθου δέ μου τὸν πόδα ἐν κωλύματι, ἐφύλαξας δέ μου πάντα τὰ ἔργα, εἰς δὲ ῥίζας τῶν ποδῶν μου ἀφίκου·",
+        "VUL": "Posuisti in nervo pedem meum,/ et observasti omnes semitas meas,/ et vestigia pedum meorum considerasti :/",
+        "SYN": "и ставишь в колоду ноги мои и подстерегаешь все стези мои, -- гонишься по следам ног моих.",
+        "NEO": "pour que tu mettes mes pieds dans les ceps, que tu observes toutes mes démarches, que tu traces une limite à la plante de mes pieds,",
+        "NAB": "You put my feet in the stocks; you watch all my paths and trace out all my footsteps.",
+        "VAT_ES": "tú que pones mis pies en el cepo, tú que vigilas todos mis senderos y cercas las plantas de mis pies!",
+        "CEI": "tu metti i miei piedi in ceppi, spii tutti i miei passi e ti segni le orme dei miei piedi."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ֭/הוּא כְּ/רָקָ֣ב יִבְלֶ֑ה כְּ֝/בֶ֗גֶד אֲכָ֣ל/וֹ עָֽשׁ׃",
+        "LXX": "ὃ παλαιοῦται ἴσα ἀσκῷ, ἢ ὥσπερ ἱμάτιον σητόβρωτον.",
+        "VUL": "qui quasi putredo consumendus sum,/ et quasi vestimentum quod comeditur a tinea.]",
+        "SYN": "А он, как гниль, распадается, как одежда, изъеденная молью.",
+        "NEO": "alors que mon corps se consume comme un bois vermoulu, comme un vêtement que dévore la teigne.",
+        "NAB": "Though he wears out like a leather bottle, like a garment that the moth has consumed?",
+        "VAT_ES": "Así este hombre se deshace como madera carcomida, como ropa devorada por la polilla.",
+        "CEI": "Intanto io mi disfò come legno tarlato o come un vestito corroso da tignola."
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "wheel-v3 demo",
+  "color_scheme": {
+    "background": "#d4a574",
+    "nodes": "#8b6f47",
+    "detail_sector": "#362e6a",
+    "detail_sector_opacity": "0.5",
+    "text_primary": "#000000",
+    "text_secondary": "#ffffff"
+  },
+  "typography": {
+    "focus_font": "'Montserrat', sans-serif",
+    "detail_font": "'EB Garamond', Georgia, serif"
+  }
+}

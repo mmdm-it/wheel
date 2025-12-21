@@ -1,0 +1,411 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLE_003",
+  "book_key": "ECCLE",
+  "sequence": 3,
+  "chapter_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/כֹּ֖ל זְמָ֑ן וְ/עֵ֥ת לְ/כָל חֵ֖פֶץ תַּ֥חַת הַ/שָּׁמָֽיִם׃",
+        "LXX": "Τοῖς πᾶσιν ὁ χρόνος, καὶ καιρὸς παντὶ πράγματι τῷ ὑπὸ τὸν οὐρανόν.",
+        "VUL": "[Omnia tempus habent,/ et suis spatiis transeunt universa sub cælo./",
+        "SYN": "Всему свое время, и время всякой вещи под небом:",
+        "NEO": "Il y a un temps fixé pour tout, un temps pour toute chose sous le ciel :",
+        "NAB": "There is an appointed time for everything, and a time for every affair under the heavens.",
+        "VAT_ES": "Hay un momento para todo y un tiempo para cada cosa bajo el sol:",
+        "CEI": "Per ogni cosa c'è il suo momento, il suo tempo per ogni faccenda sotto il cielo."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עֵ֥ת לָ/לֶ֖דֶת וְ/עֵ֣ת לָ/מ֑וּת עֵ֣ת לָ/טַ֔עַת וְ/עֵ֖ת לַ/עֲק֥וֹר נָטֽוּעַ׃",
+        "LXX": "καιρὸς τοῦ τεκεῖν καὶ καιρὸς τοῦ ἀποθανεῖν, καιρὸς τοῦ φυτεῦσαι καὶ καιρὸς τοῦ ἐκτῖλαι πεφυτευμένον,",
+        "VUL": "Tempus nascendi, et tempus moriendi ;/ tempus plantandi, et tempus evellendi quod plantatum est./",
+        "SYN": "время рождаться, и время умирать; время насаждать, и время вырывать посаженное;",
+        "NEO": "un temps pour naître, et un temps pour mourir ; un temps pour planter, et un temps pour arracher ce qui a été planté ;",
+        "NAB": "A time to be born, and a time to die; a time to plant, and a time to uproot the plant.",
+        "VAT_ES": "un tiempo para nacer y un tiempo para morir, un tiempo para plantar y un tiempo para arrancar lo plantado;",
+        "CEI": "C'è un tempo per nascere e un tempo per morire, un tempo per piantare e un tempo per sradicare le piante."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "עֵ֤ת לַ/הֲרוֹג֙ וְ/עֵ֣ת לִ/רְפּ֔וֹא עֵ֥ת לִ/פְר֖וֹץ וְ/עֵ֥ת לִ/בְנֽוֹת׃",
+        "LXX": "καιρὸς τοῦ ἀποκτεῖναι καὶ καιρὸς τοῦ ἰάσασθαι, καιρὸς τοῦ καθελεῖν καὶ καιρὸς τοῦ οἰκοδομεῖν,",
+        "VUL": "Tempus occidendi, et tempus sanandi ;/ tempus destruendi, et tempus ædificandi./",
+        "SYN": "время убивать, и время врачевать; время разрушать, и время строить;",
+        "NEO": "un temps pour tuer, et un temps pour guérir ; un temps pour abattre, et un temps pour bâtir ;",
+        "NAB": "A time to kill, and a time to heal; a time to tear down, and a time to build.",
+        "VAT_ES": "un tiempo para matar y un tiempo para curar, un tiempo para demoler y un tiempo para edificar;",
+        "CEI": "Un tempo per uccidere e un tempo per guarire, un tempo per demolire e un tempo per costruire."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "עֵ֤ת לִ/בְכּוֹת֙ וְ/עֵ֣ת לִ/שְׂח֔וֹק עֵ֥ת סְפ֖וֹד וְ/עֵ֥ת רְקֽוֹד׃",
+        "LXX": "καιρὸς τοῦ κλαῦσαι καὶ καιρὸς τοῦ γελάσαι, καιρὸς τοῦ κόψασθαι καὶ καιρὸς τοῦ ὀρχήσασθαι,",
+        "VUL": "Tempus flendi, et tempus ridendi ;/ tempus plangendi, et tempus saltandi./",
+        "SYN": "время плакать, и время смеяться; время сетовать, и время плясать;",
+        "NEO": "un temps pour pleurer, et un temps pour rire ; un temps pour se lamenter, et un temps pour danser ;",
+        "NAB": "A time to weep, and a time to laugh; a time to mourn, and a time to dance.",
+        "VAT_ES": "un tiempo para llorar y un tiempo para reír, un tiempo para lamentarse y un tiempo para bailar;",
+        "CEI": "Un tempo per piangere e un tempo per ridere, un tempo per gemere e un tempo per ballare."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "עֵ֚ת לְ/הַשְׁלִ֣יךְ אֲבָנִ֔ים וְ/עֵ֖ת כְּנ֣וֹס אֲבָנִ֑ים עֵ֣ת לַ/חֲב֔וֹק וְ/עֵ֖ת לִ/רְחֹ֥ק מֵ/חַבֵּֽק׃",
+        "LXX": "καιρὸς τοῦ βαλεῖν λίθους καὶ καιρὸς τοῦ συναγαγεῖν λίθους, καιρὸς τοῦ περιλαβεῖν καὶ καιρὸς τοῦ μακρυνθῆναι ἀπὸ περιλήμψεως,",
+        "VUL": "Tempus spargendi lapides, et tempus colligendi,/ tempus amplexandi, et tempus longe fieri ab amplexibus./",
+        "SYN": "время разбрасывать камни, и время собирать камни; время обнимать, и время уклоняться от объятий;",
+        "NEO": "un temps pour jeter des pierres, et un temps pour en ramasser ; un temps pour embrasser, et un temps pour s’abstenir d’embrassements.",
+        "NAB": "A time to scatter stones, and a time to gather them; a time to embrace, and a time to be far from embraces.",
+        "VAT_ES": "un tiempo para arrojar piedras y un tiempo para recogerlas, un tiempo para abrazarse y un tiempo para separarse;",
+        "CEI": "Un tempo per gettare sassi e un tempo per raccoglierli, un tempo per abbracciare e un tempo per astenersi dagli abbracci."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "עֵ֤ת לְ/בַקֵּשׁ֙ וְ/עֵ֣ת לְ/אַבֵּ֔ד עֵ֥ת לִ/שְׁמ֖וֹר וְ/עֵ֥ת לְ/הַשְׁלִֽיךְ׃",
+        "LXX": "καιρὸς τοῦ ζητῆσαι καὶ καιρὸς τοῦ ἀπολέσαι, καιρὸς τοῦ φυλάξαι καὶ καιρὸς τοῦ ἐκβαλεῖν,",
+        "VUL": "Tempus acquirendi, et tempus perdendi ;/ tempus custodiendi, et tempus abjiciendi./",
+        "SYN": "время искать, и время терять; время сберегать, и время бросать;",
+        "NEO": "un temps pour chercher, et un temps pour perdre ; un temps pour garder, et un temps pour jeter ;",
+        "NAB": "A time to seek, and a time to lose; a time to keep, and a time to cast away.",
+        "VAT_ES": "un tiempo para buscar y un tiempo para perder, un tiempo para guardar y un tiempo para tirar;",
+        "CEI": "Un tempo per cercare e un tempo per perdere, un tempo per serbare e un tempo per buttar via."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "עֵ֤ת לִ/קְר֨וֹעַ֙ וְ/עֵ֣ת לִ/תְפּ֔וֹר עֵ֥ת לַ/חֲשׁ֖וֹת וְ/עֵ֥ת לְ/דַבֵּֽר׃",
+        "LXX": "καιρὸς τοῦ ῥῆξαι καὶ καιρὸς τοῦ ῥάψαι, καιρὸς τοῦ σιγᾷν καὶ καιρὸς τοῦ λαλεῖν,",
+        "VUL": "Tempus scindendi, et tempus consuendi ;/ tempus tacendi, et tempus loquendi./",
+        "SYN": "время раздирать, и время сшивать; время молчать, и время говорить;",
+        "NEO": "un temps pour déchirer, et un temps pour coudre ; un temps pour se taire, et un temps pour parler ;",
+        "NAB": "A time to rend, and a time to sew; a time to be silent, and a time to speak.",
+        "VAT_ES": "un tiempo para rasgar y un tiempo para coser, un tiempo para callar y un tiempo para hablar;",
+        "CEI": "Un tempo per stracciare e un tempo per cucire, un tempo per tacere e un tempo per parlare."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "עֵ֤ת לֶֽ/אֱהֹב֙ וְ/עֵ֣ת לִ/שְׂנֹ֔א עֵ֥ת מִלְחָמָ֖ה וְ/עֵ֥ת שָׁלֽוֹם׃",
+        "LXX": "καιρὸς τοῦ φιλῆσαι καὶ καιρὸς τοῦ μισῆσαι, καιρὸς πολέμου καὶ καιρὸς εἰρήνης.",
+        "VUL": "Tempus dilectionis, et tempus odii ;/ tempus belli, et tempus pacis.]",
+        "SYN": "время любить, и время ненавидеть; время войне, и время миру.",
+        "NEO": "un temps pour aimer, et un temps pour haïr ; un temps pour la guerre, et un temps pour la paix.",
+        "NAB": "A time to love, and a time to hate; a time of war, and a time of peace.",
+        "VAT_ES": "un tiempo para amar y un tiempo para odiar, un tiempo de guerra y un tiempo de paz.",
+        "CEI": "Un tempo per amare e un tempo per odiare, un tempo per la guerra e un tempo per la pace."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "מַה יִּתְרוֹן֙ הָֽ/עוֹשֶׂ֔ה בַּ/אֲשֶׁ֖ר ה֥וּא עָמֵֽל׃",
+        "LXX": "τίς περισσεία τοῦ ποιοῦντος ἐν οἷς αὐτὸς μοχθεῖ;",
+        "VUL": "[Quid habet amplius homo de labore suo ?/",
+        "SYN": "Что пользы работающему от того, над чем он трудится?",
+        "NEO": "Quel est l’avantage, pour celui qui travaille, de la peine qu’il se donne ?",
+        "NAB": "What advantage has the worker from his toil?",
+        "VAT_ES": "&iquest;Qué provecho obtiene el trabajador con su esfuerzo?",
+        "CEI": "Che vantaggio ha chi si dà da fare con fatica?"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "רָאִ֣יתִי אֶת הָֽ/עִנְיָ֗ן אֲשֶׁ֨ר נָתַ֧ן אֱלֹהִ֛ים לִ/בְנֵ֥י הָ/אָדָ֖ם לַ/עֲנ֥וֹת בּֽ/וֹ׃",
+        "LXX": "εἶδον σὺν πάντα τὸν περισπασμὸν ὃν ἔδωκεν ὁ θεὸς τοῖς υἱοῖς τῶν ἀνθρώπων τοῦ περισπᾶσθαι ἐν αὐτῷ.",
+        "VUL": "Vidi afflictionem quam dedit Deus filiis hominum,/ ut distendantur in ea./",
+        "SYN": "Видел я эту заботу, которую дал Бог сынам человеческим, чтобы они упражнялись в том.",
+        "NEO": "J’ai examiné le labeur auquel Dieu impose aux enfants des hommes de se livrer :",
+        "NAB": "I have considered the task which God has appointed for men to be busied about.",
+        "VAT_ES": "Yo vi la tarea que Dios impuso a los hombres para que se ocupen de ella.",
+        "CEI": "Ho considerato l'occupazione che Dio ha dato agli uomini, perché si occupino in essa."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "אֶת הַ/כֹּ֥ל עָשָׂ֖ה יָפֶ֣ה בְ/עִתּ֑/וֹ גַּ֤ם אֶת הָ/עֹלָם֙ נָתַ֣ן בְּ/לִבָּ֔/ם מִ/בְּלִ֞י אֲשֶׁ֧ר לֹא יִמְצָ֣א הָ/אָדָ֗ם אֶת הַֽ/מַּעֲשֶׂ֛ה אֲשֶׁר עָשָׂ֥ה הָ/אֱלֹהִ֖ים מֵ/רֹ֥אשׁ וְ/עַד סֽוֹף׃",
+        "LXX": "τὰ σύμπαντα ἃ ἐποίησεν καλὰ ἐν καιρῷ αὐτοῦ· καί γε σύμπαντα τὸν αἰῶνα ἔδωκεν ἐν καρδίᾳ αὐτῶν, ὅπως μὴ εὕρῃ ὁ ἄνθρωπος τὸ ποίημα ὃ ἐποίησεν ὁ θεὸς ἀπ’ ἀρχῆς καὶ μέχρι τέλους.",
+        "VUL": "Cuncta fecit bona in tempore suo,/ et mundum tradidit disputationi eorum,/ ut non inveniat homo opus/ quod operatus est Deus ab initio usque ad finem./",
+        "SYN": "Все соделал Он прекрасным в свое время, и вложил мир в сердце их, хотя человек не может постигнуть дел, которые Бог делает, от начала до конца.",
+        "NEO": "Dieu a fait toute chose belle en son temps, il a mis aussi dans leur cœur l’éternité, mais sans que l’homme puisse comprendre l’œuvre que Dieu fait, du commencement jusqu’à la fin.",
+        "NAB": "He has made everything appropriate to its time, and has put the timeless into their hearts, without men's ever discovering, from beginning to end, the work which God has done.",
+        "VAT_ES": "El hizo todas las cosas apropiadas a su tiempo, pero también puso en el corazón del hombre el sentido del tiempo pasado y futuro, sin que el hombre pueda descubrir la obra que hace Dios desde el principio hasta el fin.",
+        "CEI": "Egli ha fatto bella ogni cosa a suo tempo, ma egli ha messo la nozione dell'eternità nel loro cuore, senza però che gli uomini possano capire l'opera compiuta da Dio dal principio alla fine."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "יָדַ֕עְתִּי כִּ֛י אֵ֥ין ט֖וֹב בָּ֑/ם כִּ֣י אִם לִ/שְׂמ֔וֹחַ וְ/לַ/עֲשׂ֥וֹת ט֖וֹב בְּ/חַיָּֽי/ו׃",
+        "LXX": "ἔγνων ὅτι οὐκ ἔστιν ἀγαθὸν ἐν αὐτοῖς, εἰ μὴ τοῦ εὐφρανθῆναι καὶ τοῦ ποιεῖν ἀγαθὸν ἐν ζωῇ αὐτοῦ·",
+        "VUL": "Et cognovi quod non esset melius nisi lætari,/ et facere bene in vita sua ;/",
+        "SYN": "Познал я, что нет для них ничего лучшего, как веселиться и делать доброе в жизни своей.",
+        "NEO": "Et j’ai reconnu qu’il n’y a rien de meilleur pour eux que de se réjouir et se donner du bien-être pendant leur vie,",
+        "NAB": "I recognized that there is nothing better than to be glad and to do well during life.",
+        "VAT_ES": "Yo comprendí que lo único bueno para el hombre es alegrarse y buscar el bienestar en la vida.",
+        "CEI": "Ho concluso che non c'è nulla di meglio per essi, che godere e agire bene nella loro vita;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/גַ֤ם כָּל הָ/אָדָם֙ שֶׁ/יֹּאכַ֣ל וְ/שָׁתָ֔ה וְ/רָאָ֥ה ט֖וֹב בְּ/כָל עֲמָל֑/וֹ מַתַּ֥ת אֱלֹהִ֖ים הִֽיא׃",
+        "LXX": "καί γε πᾶς ὁ ἄνθρωπος ὃς φάγεται καὶ πίεται καὶ ἴδῃ ἀγαθὸν ἐν παντὶ μόχθῳ αὐτοῦ, δόμα θεοῦ ἐστιν.",
+        "VUL": "omnis enim homo qui comedit et bibit,/ et videt bonum de labore suo,/ hoc donum Dei est./",
+        "SYN": "И если какой человек ест и пьет, и видит доброе во всяком труде своем, то это - дар Божий.",
+        "NEO": "et en même temps que si un homme mange et boit, et jouit du bien-être au milieu de son travail, c’est là un don de Dieu.",
+        "NAB": "For every man, moreover, to eat and drink and enjoy the fruit of all his labor is a gift of God.",
+        "VAT_ES": "Después de todo, que un hombre coma y beba y goce del bienestar con su esfuerzo, eso es un don de Dios.",
+        "CEI": "ma che un uomo mangi, beva e goda del suo lavoro è un dono di Dio."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "יָדַ֗עְתִּי כִּ֠י כָּל אֲשֶׁ֨ר יַעֲשֶׂ֤ה הָ/אֱלֹהִים֙ ה֚וּא יִהְיֶ֣ה לְ/עוֹלָ֔ם עָלָי/ו֙ אֵ֣ין לְ/הוֹסִ֔יף וּ/מִמֶּ֖/נּוּ אֵ֣ין לִ/גְרֹ֑עַ וְ/הָ/אֱלֹהִ֣ים עָשָׂ֔ה שֶׁ/יִּֽרְא֖וּ מִ/לְּ/פָנָֽי/ו׃",
+        "LXX": "ἔγνων ὅτι πάντα ὅσα ἐποίησεν ὁ θεὸς αὐτὰ ἔσται εἰς τὸν αἰῶνα· ἐπ’ αὐτῷ οὐκ ἔστιν προσθεῖναι, καὶ ἀπ’ αὐτοῦ οὐκ ἔστιν ἀφελεῖν καὶ ὁ θεὸς ἐποίησεν ἵνα φοβηθῶσιν ἀπὸ προσώπου αὐτοῦ.",
+        "VUL": "Didici quod omnia opera quæ fecit Deus perseverent in perpetuum ;/ non possumus eis quidquam addere, nec auferre,/ quæ fecit Deus ut timeatur./",
+        "SYN": "Познал я, что все, что делает Бог, пребывает вовек: к тому нечего прибавлять и от того нечего убавить, - и Бог делает так, чтобы благоговели пред лицем Его.",
+        "NEO": "J’ai reconnu que tout ce que Dieu fait durera toujours, qu’il n’y a rien à y ajouter ni rien à en retrancher : Dieu agit ainsi afin qu’on le craigne.",
+        "NAB": "I recognized that whatever God does will endure forever; there is no adding to it, or taking from it. Thus has God done that he may be revered.",
+        "VAT_ES": "Yo reconocí que todo lo que hace Dios dura para siempre: no hay que añadirle ni quitarle nada, y Dios obra así para que se tenga temor en su presencia.",
+        "CEI": "Riconosco che qualunque cosa Dio fa è immutabile; non c'è nulla da aggiungere, nulla da togliere. Dio agisce così perché si abbia timore di lui."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "מַה שֶּֽׁ/הָיָה֙ כְּבָ֣ר ה֔וּא וַ/אֲשֶׁ֥ר לִ/הְי֖וֹת כְּבָ֣ר הָיָ֑ה וְ/הָ/אֱלֹהִ֖ים יְבַקֵּ֥שׁ אֶת נִרְדָּֽף׃",
+        "LXX": "τὸ γενόμενον ἤδη ἐστίν, καὶ ὅσα τοῦ γίνεσθαι ἤδη γέγονεν, καὶ ὁ θεὸς ζητήσει τὸν διωκόμενον.",
+        "VUL": "Quod factum est, ipsum permanet ;/ quæ futura sunt jam fuerunt,/ et Deus instaurat quod abiit.]",
+        "SYN": "Что было, то и теперь есть, и что будет, то уже было, - и Бог воззовет прошедшее.",
+        "NEO": "Ce qui se fait existait déjà, et ce qui se fera a déjà été : Dieu ramène ce qui est passé.",
+        "NAB": "What now is has already been; what is to be, already is; and God restores what would otherwise be displaced.",
+        "VAT_ES": "Lo que es, ya fue antes, lo que ha de ser, ya existió, y Dios va en busca de lo que es fugaz.",
+        "CEI": "Ciò che è, già è stato; ciò che sarà, già è; Dio ricerca ciò che è già passato."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/ע֥וֹד רָאִ֖יתִי תַּ֣חַת הַ/שָּׁ֑מֶשׁ מְק֤וֹם הַ/מִּשְׁפָּט֙ שָׁ֣מָּ/ה הָ/רֶ֔שַׁע וּ/מְק֥וֹם הַ/צֶּ֖דֶק שָׁ֥מָּ/ה הָ/רָֽשַׁע׃",
+        "LXX": "Καὶ ἔτι εἶδον ὑπὸ τὸν ἥλιον τόπον τῆς κρίσεως, ἐκεῖ ὁ ἀσεβής· καὶ τόπον τοῦ δικαίου, ἐκεῖ ὁ εὐσεβής.",
+        "VUL": "[Vidi sub sole in loco judicii impietatem,/ et in loco justitiæ iniquitatem :/",
+        "SYN": "Еще видел я под солнцем: место суда, а там беззаконие; место правды, а там неправда.",
+        "NEO": "J’ai encore vu sous le soleil, qu’au siège même du droit il y a la méchanceté, et au lieu de la justice, il y a l’iniquité.",
+        "NAB": "And still under the sun in the judgment place I saw wickedness, and in the seat of justice, iniquity.",
+        "VAT_ES": "Yo he visto algo más bajo el sol: en lugar del derecho, la maldad y en lugar de la justicia, la iniquidad.",
+        "CEI": "Ma ho anche notato che sotto il sole al posto del diritto c'è l'iniquità e al posto della giustizia c'è l'empietà."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אָמַ֤רְתִּֽי אֲנִי֙ בְּ/לִבִּ֔/י אֶת הַ/צַּדִּיק֙ וְ/אֶת הָ֣/רָשָׁ֔ע יִשְׁפֹּ֖ט הָ/אֱלֹהִ֑ים כִּי עֵ֣ת לְ/כָל חֵ֔פֶץ וְ/עַ֥ל כָּל הַֽ/מַּעֲשֶׂ֖ה שָֽׁם׃",
+        "LXX": "καὶ εἶπα ἐγὼ ἐν καρδίᾳ μου Σὺν τὸν δίκαιον καὶ σὺν τὸν ἀσεβῆ κρινεῖ ὁ θεός· ὅτι καιρὸς τῷ παντὶ πράγματι καὶ ἐπὶ παντὶ τῷ ποιήματι.",
+        "VUL": "et dixi in corde meo :/ Justum et impium judicabit Deus,/ et tempus omnis rei tunc erit./",
+        "SYN": "И сказал я в сердце своем: \"праведного и нечестивого будет судить Бог; потому что время для всякой вещи и _суд_ над всяким делом там\".",
+        "NEO": "J’ai dit dans mon cœur : « Dieu jugera le juste et le méchant, car il y a là un temps pour toute chose, et pour toute œuvre. »",
+        "NAB": "And I said to myself, both the just and the wicked God will judge, since there is a time for every affair and on every work a judgment.",
+        "VAT_ES": "Entonces me dije a mí mismo: Dios juzgará al justo y al malvado, porque allá hay un tiempo para cada cosa y para cada acción.",
+        "CEI": "Ho pensato: Dio giudicherà il giusto e l'empio, perché c'è un tempo per ogni cosa e per ogni azione."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "אָמַ֤רְתִּֽי אֲנִי֙ בְּ/לִבִּ֔/י עַל דִּבְרַת֙ בְּנֵ֣י הָ/אָדָ֔ם לְ/בָרָ֖/ם הָ/אֱלֹהִ֑ים וְ/לִ/רְא֕וֹת שְׁ/הֶם בְּהֵמָ֥ה הֵ֖מָּה לָ/הֶֽם׃",
+        "LXX": "καὶ εἶπα ἐγὼ ἐν καρδίᾳ μου περὶ λαλιᾶς υἱῶν τοῦ ἀνθρώπου, ὅτι διακρινεῖ αὐτοὺς ὁ θεός, καὶ τοῦ δεῖξαι ὅτι αὐτοὶ κτήνη εἰσίν.",
+        "VUL": "Dixi in corde meo de filiis hominum,/ ut probaret eos Deus,/ et ostenderet similes esse bestiis./",
+        "SYN": "Сказал я в сердце своем о сынах человеческих, чтобы испытал их Бог, и чтобы они видели, что они сами по себе животные;",
+        "NEO": "J’ai dit dans mon cœur au sujet des enfants des hommes : « Cela arrive ainsi, afin que Dieu les éprouve, et qu’ils voient qu’ils sont quant à eux-mêmes semblables aux bêtes. »",
+        "NAB": "I said to myself: As for the children of men, it is God's way of testing them and of showing that they are in themselves like beasts.",
+        "VAT_ES": "Yo pensé acerca de los hombres: si Dios los prueba, es para que vean que no se distinguen de los animales.",
+        "CEI": "Poi riguardo ai figli dell'uomo mi son detto: Dio vuol provarli e mostrare che essi di per sé sono come bestie."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כִּי֩ מִקְרֶ֨ה בְֽנֵי הָ/אָדָ֜ם וּ/מִקְרֶ֣ה הַ/בְּהֵמָ֗ה וּ/מִקְרֶ֤ה אֶחָד֙ לָ/הֶ֔ם כְּ/מ֥וֹת זֶה֙ כֵּ֣ן מ֣וֹת זֶ֔ה וְ/ר֥וּחַ אֶחָ֖ד לַ/כֹּ֑ל וּ/מוֹתַ֨ר הָ/אָדָ֤ם מִן הַ/בְּהֵמָה֙ אָ֔יִן כִּ֥י הַ/כֹּ֖ל הָֽבֶל׃",
+        "LXX": "καί γε αὐτοῖς οὐ συνάντημα υἱῶν τοῦ ἀνθρώπου καὶ συνάντημα τοῦ κτήνους; συνάντημα ἓν αὐτοῖς· ὡς ὁ θάνατος τούτου, οὕτως ὁ θάνατος τούτου, καὶ πνεῦμα ἓν τοῖς πᾶσιν. καὶ τί ἐπερίσσευσεν ὁ ἄνθρωπος παρὰ τὸ κτῆνος; οὐδέν, ὅτι πάντα ματαιότης.",
+        "VUL": "Idcirco unus interitus est hominis et jumentorum,/ et æqua utriusque conditio./ Sicut moritur homo,/ sic et illa moriuntur./ Similiter spirant omnia,/ et nihil habet homo jumento amplius :/ cuncta subjacent vanitati,/",
+        "SYN": "потому что участь сынов человеческих и участь животных - участь одна: как те умирают, так умирают и эти, и одно дыхание у всех, и нет у человека преимущества перед скотом, потому что все - суета!",
+        "NEO": "Car le sort des enfants des hommes est le sort de la bête : ils ont un même sort ; comme l’un meurt, l’autre meurt aussi, il n’y a qu’un même souffle pour tous ; l’avantage de l’homme sur la bête est nul, car tout est vanité.",
+        "NAB": "For the lot of man and of beast is one lot; the one dies as well as the other. Both have the same life-breath, and man has no advantage over the beast; but all is vanity.",
+        "VAT_ES": "Porque los hombres y los animales tienen todos la misma suerte: como mueren unos, mueren también los otros. Todos tienen el mismo aliento vital y el hombre no es superior a las bestias, porque todo es vanidad.",
+        "CEI": "Infatti la sorte degli uomini e quella delle bestie è la stessa; come muoiono queste muoiono quelli; c'è un solo soffio vitale per tutti. Non esiste superiorità dell'uomo rispetto alle bestie, perché tutto è vanità."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "הַ/כֹּ֥ל הוֹלֵ֖ךְ אֶל מָק֣וֹם אֶחָ֑ד הַ/כֹּל֙ הָיָ֣ה מִן הֶֽ/עָפָ֔ר וְ/הַ/כֹּ֖ל שָׁ֥ב אֶל הֶ/עָפָֽר׃",
+        "LXX": "τὰ πάντα εἰς τόπον ἕνα, τὰ πάντα ἐγένετο ἀπὸ τοῦ χόος, καὶ τὰ πάντα ἐπιστρέψει εἰς τὸν χοῦν.",
+        "VUL": "et omnia pergunt ad unum locum./ De terra facta sunt,/ et in terram pariter revertuntur./",
+        "SYN": "Все идет в одно место: все произошло из праха и все возвратится в прах.",
+        "NEO": "Tout va dans un même lieu ; tout est sorti de la poussière, et tout retourne à la poussière.",
+        "NAB": "Both go to the same place; both were made from the dust, and to the dust they both return.",
+        "VAT_ES": "Todos van hacia el mismo lugar; todo viene del polvo y todo retorna al polvo.",
+        "CEI": "Tutti sono diretti verso la medesima dimora: tutto è venuto dalla polvere e tutto ritorna nella polvere."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "מִ֣י יוֹדֵ֗עַ ר֚וּחַ בְּנֵ֣י הָ/אָדָ֔ם הָ/עֹלָ֥ה הִ֖יא לְ/מָ֑עְלָ/ה וְ/ר֨וּחַ֙ הַ/בְּהֵמָ֔ה הַ/יֹּרֶ֥דֶת הִ֖יא לְ/מַ֥טָּה לָ/אָֽרֶץ׃",
+        "LXX": "καὶ τίς οἶδεν πνεῦμα υἱῶν τοῦ ἀνθρώπου, εἰ ἀναβαίνει αὐτὸ εἰς ἄνω; καὶ πνεῦμα τοῦ κτήνους, εἰ καταβαίνει αὐτὸ κάτω εἰς γῆν;",
+        "VUL": "Quis novit si spiritus filiorum Adam ascendat sursum,/ et si spiritus jumentorum descendat deorsum ?/",
+        "SYN": "Кто знает: дух сынов человеческих восходит ли вверх, и дух животных сходит ли вниз, в землю?",
+        "NEO": "Qui connaît le souffle des enfants des hommes, qui monte en haut, et le souffle de la bête, qui descend en bas vers la terre ?",
+        "NAB": "Who knows if the life-breath of the children of men goes upward and the life-breath of beasts goes earthward?",
+        "VAT_ES": "&iquest;Quién sabe si el aliento del hombre sube hacia lo alto, y si el aliento del animal baja a lo profundo de la tierra?",
+        "CEI": "Chi sa se il soffio vitale dell'uomo salga in alto e se quello della bestia scenda in basso nella terra?"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/רָאִ֗יתִי כִּ֣י אֵ֥ין טוֹב֙ מֵ/אֲשֶׁ֨ר יִשְׂמַ֤ח הָ/אָדָם֙ בְּֽ/מַעֲשָׂ֔י/ו כִּי ה֖וּא חֶלְק֑/וֹ כִּ֣י מִ֤י יְבִיאֶ֨/נּוּ֙ לִ/רְא֔וֹת בְּ/מֶ֖ה שֶׁ/יִּהְיֶ֥ה אַחֲרָֽי/ו׃",
+        "LXX": "καὶ εἶδον ὅτι οὐκ ἔστιν ἀγαθόν, εἰ μὴ ὃ εὐφρανθήσεται ὁ ἄνθρωπος ἐν ποιήμασιν αὐτοῦ, ὅτι αὐτὸ μερὶς αὐτοῦ· ὅτι τίς ἄξει αὐτὸν τοῦ ἰδεῖν ἐν ᾧ ἐὰν γένηται μετ’ αὐτόν;",
+        "VUL": "Et deprehendi nihil esse melius/ quam lætari hominem in opere suo,/ et hanc esse partem illius./ Quis enim eum adducet ut post se futura cognoscat ?]",
+        "SYN": "Итак увидел я, что нет ничего лучше, как наслаждаться человеку делами своими: потому что это - доля его; ибо кто приведет его посмотреть на то, что будет после него?",
+        "NEO": "Et j’ai vu qu’il n’y a rien de mieux pour l’homme que de se réjouir dans ses œuvres : c’est là sa part. Car qui lui donnera de découvrir ce qui arrivera après lui ?",
+        "NAB": "And I saw that there is nothing better for a man than to rejoice in his work; for this is his lot. Who will let him see what is to come after him?",
+        "VAT_ES": "Por eso, yo vi que lo único bueno para el hombre es alegrarse de sus obras, ya que esta es su parte: &iquest;Quién, en efecto, lo llevará a ver lo que habrá después de él?",
+        "CEI": "Mi sono accorto che nulla c'è di meglio per l'uomo che godere delle sue opere, perché questa è la sua sorte. Chi potrà infatti condurlo a vedere ciò che avverrà dopo di lui?"
+      }
+    }
+  }
+}

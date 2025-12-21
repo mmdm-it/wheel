@@ -1,0 +1,573 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IUDI_005",
+  "book_key": "IUDI",
+  "sequence": 5,
+  "chapter_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/תָּ֣שַׁר דְּבוֹרָ֔ה וּ/בָרָ֖ק בֶּן אֲבִינֹ֑עַם בַּ/יּ֥וֹם הַ/ה֖וּא לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ᾖσαν Δεββωρὰ καὶ Βαρὰκ υἱὸς Ἀβεινέεμ ἐν τῇ ἡμέρᾳ ἐκείνῃ λέγοντες",
+        "VUL": "Cecineruntque Debbora et Barac filius Abinoëm in illo die, dicentes :",
+        "SYN": "В тот день воспела Девора и Варак, сын Авиноамов, сими словами:",
+        "NEO": "En ce jour-là, Débora et Barac, fils d’Abinoëm, chantèrent en disant :",
+        "NAB": "On that day Deborah (and Barak, son of Abinoam,) sang this song:",
+        "VAT_ES": "Aquel día, Débora y Barac entonaron este canto:",
+        "CEI": "In quel giorno Dèbora, con Barak, figlio di Abinoam, pronunciò questo canto:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בִּ/פְרֹ֤עַ פְּרָעוֹת֙ בְּ/יִשְׂרָאֵ֔ל בְּ/הִתְנַדֵּ֖ב עָ֑ם בָּרֲכ֖וּ יְהוָֽה׃",
+        "LXX": "Ἀπεκαλύφθη ἀποκάλυμμα ἐν Ἰσραήλ· ἐν τῷ ἀκουσιασθῆναι λαὸν εὐλογεῖτε Κύριον.",
+        "VUL": "[Qui sponte obtulistis de Israël animas vestras ad periculum,/ benedicite Domino./",
+        "SYN": "Израиль отмщен, народ показал рвение; прославьте Господа!",
+        "NEO": "Les chefs se sont mis à la tête en Israël ; le peuple s’est volontairement offert pour le combat, bénissez-en \\+w Yahweh|strong=\"H3068\"\\+w** !",
+        "NAB": "Of chiefs who took the lead in Israel, of noble deeds by the people who bless the LORD,",
+        "VAT_ES": "«Porque en Israel van con los cabellos sueltos, porque el pueblo se ofreció voluntariamente, &iexcl;bendigan al Señor!",
+        "CEI": "\"Ci furono capi in Israele per assumere il comando; ci furono volontari per arruolarsi in massa: Benedite il Signore!"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "שִׁמְע֣וּ מְלָכִ֔ים הַאֲזִ֖ינוּ רֹֽזְנִ֑ים אָֽנֹכִ֗י לַֽ/יהוָה֙ אָנֹכִ֣י אָשִׁ֔ירָה אֲזַמֵּ֕ר לַֽ/יהוָ֖ה אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "ἀκούσατε βασιλεῖς, καὶ ἐνωτίσασθε σατράπαι· ἐγώ εἰμι τῷ κυρίῳ, ἐγώ εἰμι ᾄσομαι, ψαλῶ τῷ κυρίῳ τῷ θεῷ Ἰσραήλ.",
+        "VUL": "Audite, reges ; auribus percipite, principes :/ ego sum, ego sum, quæ Domino canam,/ psallam Domino Deo Israël./",
+        "SYN": "Слушайте, цари, внимайте, вельможи: я Господу, я пою, бряцаю Господу Богу Израилеву.",
+        "NEO": "Ecoutez, ô rois : princes, prêtez l’oreille. C’est moi, c’est moi qui chanterai \\+w Yahweh|strong=\"H3068\"\\+w** ; je dirai un cantique à \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël.",
+        "NAB": "Hear, O kings! Give ear, O princes! I to the LORD will sing my song, my hymn to the LORD, the God of Israel.",
+        "VAT_ES": "&iexcl;Escuchen, reyes! &iexcl;Presten oído, príncipes! Yo voy a cantar, voy a cantar al Señor, celebraré al Señor, el Dios de Israel.",
+        "CEI": "Ascoltate, re, porgete gli orecchi, o principi; io voglio cantare al Signore, voglio cantare al Signore, voglio cantare inni al Signore, Dio d'Israele!"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "יְהוָ֗ה בְּ/צֵאתְ/ךָ֤ מִ/שֵּׂעִיר֙ בְּ/צַעְדְּ/ךָ֙ מִ/שְּׂדֵ֣ה אֱד֔וֹם אֶ֣רֶץ רָעָ֔שָׁה גַּם שָׁמַ֖יִם נָטָ֑פוּ גַּם עָבִ֖ים נָ֥טְפוּ מָֽיִם׃",
+        "LXX": "Κύριε, ἐν τῇ ἐξόδῳ σου ἐν Σηείρ, ἐν τῷ ἀπαίρειν σε ἐξ ἀγροῦ Ἐδώμ, γῆ ἐσείσθη καὶ ὁ οὐρανὸς ἔσταξεν δρόσους, καὶ αἱ νεφέλαι ἔσταξαν ὕδωρ.",
+        "VUL": "Domine, cum exires de Seir,/ et transires per regiones Edom,/ terra mota est,/ cælique ac nubes distillaverunt aquis./",
+        "SYN": "Когда выходил Ты, Господи, от Сеира, когда шел с поля Едомского, тогда земля тряслась, и небо капало, и облака проливали воду;",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, quand tu sortis de Séïr, quand tu t’avanças des campagnes d’Edom, la terre trembla, les cieux mêmes se fondirent, et les nuées se fondirent en eau.",
+        "NAB": "O LORD, when you went out from Seir, when you marched from the land of Edom, The earth quaked and the heavens were shaken, while the clouds sent down showers.",
+        "VAT_ES": "Señor, cuando tú saliste de Seír, cuando avanzabas desde las estepas de Edom, tembló la tierra, fluyeron los cielos, y hasta las nubes se deshicieron en torrentes;",
+        "CEI": "Signore, quando uscivi dal Seir, quando avanzavi dalla steppa di Edom, la terra tremò, i cieli si scossero, le nubi si sciolsero in acqua."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הָרִ֥ים נָזְל֖וּ מִ/פְּנֵ֣י יְהוָ֑ה זֶ֣ה סִינַ֔י מִ/פְּנֵ֕י יְהוָ֖ה אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "ὄρη ἐσαλεύθησαν ἀπὸ προσώπου Κυρίου Ἐλωεί, τοῦτο Σεινὰ ἀπὸ προσώπου Κυρίου θεοῦ Ἰσραήλ.",
+        "VUL": "Montes fluxerunt a facie Domini,/ et Sinai a facie Domini Dei Israël./",
+        "SYN": "горы таяли от лица Господа, даже этот Синай от лица Господа Бога Израилева.",
+        "NEO": "Devant \\+w Yahweh|strong=\"H3068\"\\+w** s’ébranlèrent les montagnes, ce Sinaï, devant \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël.",
+        "NAB": "Mountains trembled in the presence of the LORD, the One of Sinai, in the presence of the LORD, the God of Israel.",
+        "VAT_ES": "se diluyeron las montañas, delante del Señor –el del Sinaí– delante del Señor, el Dios de Israel.",
+        "CEI": "Si stemperarono i monti davanti al Signore, Signore del Sinai, davanti al Signore, Dio d'Israele."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "בִּ/ימֵ֞י שַׁמְגַּ֤ר בֶּן עֲנָת֙ בִּ/ימֵ֣י יָעֵ֔ל חָדְל֖וּ אֳרָח֑וֹת וְ/הֹלְכֵ֣י נְתִיב֔וֹת יֵלְכ֕וּ אֳרָח֖וֹת עֲקַלְקַלּֽוֹת׃",
+        "LXX": "ἐν ἡμέραις Σαμεγὰρ υἱοῦ Ἀνάθ, ἐν ἡμέραις Ἰαήλ, ἐξέλιπον ὁδοὺς καὶ ἐπορεύθησαν ἀτραπούς, ἐπορεύθησαν ὁδοὺς διεστραμμένας.",
+        "VUL": "In diebus Samgar filii Anath,/ in diebus Jahel quieverunt semitæ :/ et qui ingrediebantur per eas,/ ambulaverunt per calles devios./",
+        "SYN": "Во дни Самегара, сына Анафова, во дни Иаили, были пусты дороги, и ходившие прежде путями прямыми ходили тогда окольными дорогами.",
+        "NEO": "Aux jours de Samgar, fils d’Anath, aux jours de Jahel, les routes étaient désertes, et les voyageurs prenaient des sentiers détournés.",
+        "NAB": "In the days of Shamgar, son of Anath, in the days of slavery caravans ceased: Those who traveled the roads went by roundabout paths.",
+        "VAT_ES": "En los días de Samgar, hijo de Anat, en los días de Jael, estaban desiertos los caminos; los que antes iban por los senderos tomaban por sendas desviadas.",
+        "CEI": "Ai giorni di Samgar, figlio di Anat, ai giorni di Giaele, erano deserte le strade e i viandanti deviavano su sentieri tortuosi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "חָדְל֧וּ פְרָז֛וֹן בְּ/יִשְׂרָאֵ֖ל חָדֵ֑לּוּ עַ֤ד שַׁ/קַּ֨מְתִּי֙ דְּבוֹרָ֔ה שַׁ/קַּ֥מְתִּי אֵ֖ם בְּ/יִשְׂרָאֵֽל׃",
+        "LXX": "ἐξέλιπον δυνατοὶ ἐν Ἰσραήλ, ἐξέλιπον, ἕως οὗ ἀναστῇ Δεββωρά, ἕως οὗ ἀναστῇ μήτηρ ἐν Ἰσραήλ.",
+        "VUL": "Cessaverunt fortes in Israël, et quieverunt :/ donec surgeret Debbora,/ surgeret mater in Israël./",
+        "SYN": "Не стало обитателей в селениях у Израиля, не стало, доколе не восстала я, Девора, доколе не восстала я, мать в Израиле.",
+        "NEO": "Les campagnes étaient dans l’abandon en Israël, jusqu’à ce que je me sois levée, moi Débora, que je me sois levée, une mère en Israël.",
+        "NAB": "Gone was freedom beyond the walls, gone indeed from Israel. When I, Deborah, rose, when I rose, a mother in Israel,",
+        "VAT_ES": "Ya no había más jefes, no había ni uno solo en Israel, hasta que te levantaste tú, Débora, hasta que te levantaste tú, madre en Israel.",
+        "CEI": "Era cessata ogni autorità di governo, era cessata in Israele, fin quando sorsi io, Dèbora, fin quando sorsi come madre in Israele."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "יִבְחַר֙ אֱלֹהִ֣ים חֲדָשִׁ֔ים אָ֖ז לָחֶ֣ם שְׁעָרִ֑ים מָגֵ֤ן אִם יֵֽרָאֶה֙ וָ/רֹ֔מַח בְּ/אַרְבָּעִ֥ים אֶ֖לֶף בְּ/יִשְׂרָאֵֽל׃",
+        "LXX": "ἐξελέξαντο θεοὺς καινούς, ὅτε ἐπολέμησαν πόλεις ἀρχόντων· θυρεὸς ἐὰν ὀφθῇ καὶ λόγχη ἐν τεσσεράκοντα χιλιάσιν ἐν Ἰσραήλ.",
+        "VUL": "Nova bella elegit Dominus,/ et portas hostium ipse subvertit :/ clypeus et hasta si apparuerint/ in quadraginta millibus Israël.]",
+        "SYN": "Избрали новых богов, оттого война у ворот. Виден ли был щит и копье у сорока тысяч Израиля?",
+        "NEO": "On choisissait des dieux nouveaux ; alors la guerre était aux portes, et l’on ne voyait ni bouclier ni lance chez quarante milliers en Israël !",
+        "NAB": "New gods were their choice; then the war was at their gates. Not a shield could be seen, nor a lance, among forty thousand in Israel!",
+        "VAT_ES": "La gente elegía dioses nuevos, la guerra ya estaba a las puertas; no se veía ni un escudo ni una lanza entre cuarenta mil hombres de Israel.",
+        "CEI": "Si preferivano divinità straniere e allora la guerra fu alle porte, ma scudo non si vedeva né lancia né quarantamila in Israele."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לִבִּ/י֙ לְ/חוֹקְקֵ֣י יִשְׂרָאֵ֔ל הַ/מִּֽתְנַדְּבִ֖ים בָּ/עָ֑ם בָּרֲכ֖וּ יְהוָֽה׃",
+        "LXX": "ἡ καρδία μου εἰς τὰ διατεταγμένα τῷ Ἰσραήλ· οἱ ἑκουσιαζόμενοι ἐν λαῷ, εὐλογεῖτε Κύριον.",
+        "VUL": "[Cor meum diligit principes Israël :/ qui propria voluntate obtulistis vos discrimini,/ benedicite Domino./",
+        "SYN": "Сердце мое к вам, начальники Израилевы, к ревнителям в народе; прославьте Господа!",
+        "NEO": "Mon cœur s’élance vers les conducteurs d’Israël, vers ceux du peuple qui se sont offerts : Bénissez \\+w Yahweh|strong=\"H3068\"\\+w** !",
+        "NAB": "My heart is with the leaders of Israel, nobles of the people who bless the LORD;",
+        "VAT_ES": "Mi corazón está con los caudillos de Israel, con los voluntarios del pueblo. &iexcl;Bendigan al Señor!",
+        "CEI": "Il mio cuore si volge ai comandanti d'Israele, ai volontari tra il popolo; benedite il Signore!"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "רֹכְבֵי֩ אֲתֹנ֨וֹת צְחֹר֜וֹת יֹשְׁבֵ֧י עַל מִדִּ֛ין וְ/הֹלְכֵ֥י עַל דֶּ֖רֶךְ שִֽׂיחוּ׃",
+        "LXX": "ἐπιβεβηκότες ἐπὶ ὄνου θηλείας μεσημβρίας, καθήμενοι ἐπὶ κριτηρίου καὶ πορευόμενοι ἐπὶ ὁδοὺς συνέδρων ἐφ’ ὁδῷ.",
+        "VUL": "Qui ascenditis super nitentes asinos,/ et sedetis in judicio,/ et ambulatis in via,/ loquimini./",
+        "SYN": "Ездящие на ослицах белых, сидящие на коврах и ходящие по дороге, пойте песнь!",
+        "NEO": "Vous qui montez de blanches ânesses, qui vous asseyez sur des tapis, et vous qui parcourez les chemins, chantez !",
+        "NAB": "They who ride on white asses, seated on saddlecloths as they go their way;",
+        "VAT_ES": "Ustedes, los que cabalgan en asnas blancas, montados sobre tapices, y los que marchan por el camino, &iexcl;atiendan bien!",
+        "CEI": "Voi, che cavalcate asine bianche, seduti su gualdrappe, voi che procedete sulla via, raccontate;"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "מִ/קּ֣וֹל מְחַֽצְצִ֗ים בֵּ֚ין מַשְׁאַבִּ֔ים שָׁ֤ם יְתַנּוּ֙ צִדְק֣וֹת יְהוָ֔ה צִדְקֹ֥ת פִּרְזֹנ֖/וֹ בְּ/יִשְׂרָאֵ֑ל אָ֛ז יָרְד֥וּ לַ/שְּׁעָרִ֖ים עַם יְהוָֽה׃",
+        "LXX": "διηγεῖσθε ἀπὸ φωνῆς ἀνακρουομένων, ἀνὰ μέσον ὑδρευομένων· ἐκεῖ δώσουσιν δικαιοσύνας. Κύριε, δικαιοσύνας αὔξησον ἐν Ἰσραήλ· τότε κατέβη εἰς τὰς πόλεις λαὸς Κυρίου.",
+        "VUL": "Ubi collisi sunt currus,/ et hostium suffocatus est exercitus,/ ibi narrentur justitiæ Domini,/ et clementia in fortes Israël :/ tunc descendit populus Domini ad portas,/ et obtinuit principatum./",
+        "SYN": "Среди голосов собирающих стада при колодезях, там да воспоют хвалу Господу, хвалу вождям Израиля! Тогда выступил ко вратам народ Господень.",
+        "NEO": "Que de leur voix les archers, près des abreuvoirs, célèbrent les justices de \\+w Yahweh|strong=\"H3068\"\\+w**, les justices envers ses campagnes en Israël ! Alors le peuple de \\+w Yahweh|strong=\"H3068\"\\+w** est descendu dans ses portes.",
+        "NAB": "Sing of them to the strains of the harpers at the wells, where men recount the just deeds of the LORD, his just deeds that brought freedom to Israel.",
+        "VAT_ES": "&iexcl;Escuchen a los arqueros junto a los pozos de agua! Allí se narran los actos de justicia del Señor, las gestas de su dominio en Israel, cuando el pueblo del Señor bajó a las Puertas.",
+        "CEI": "unitevi al grido degli uomini schierati fra gli abbeveratoi: là essi proclamano le vittorie del Signore, le vittorie del suo governo in Israele, quando scese alle porte il popolo del Signore."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "עוּרִ֤י עוּרִי֙ דְּבוֹרָ֔ה ע֥וּרִי ע֖וּרִי דַּבְּרִי שִׁ֑יר ק֥וּם בָּרָ֛ק וּֽ/שֲׁבֵ֥ה שֶׁבְיְ/ךָ֖ בֶּן אֲבִינֹֽעַם׃",
+        "LXX": "ἐξεγείρου ἐξεγείρου, Δεββωρά, ἐξεγείρου ἐξεγείρου, λάλησον ᾠδήν· ἀνάστα, Βαράκ, καὶ αἰχμαλώτισον αἰχμαλωσίαν σου, υἱὸς Ἀβεινέεμ.",
+        "VUL": "Surge, surge Debbora ;/ surge, surge, et loquere canticum :/ surge Barac, et apprehende captivos tuos, fili Abinoëm./",
+        "SYN": "Воспряни, воспряни, Девора! воспряни, воспряни! воспой песнь! Восстань, Варак! и веди пленников твоих, сын Авиноамов!",
+        "NEO": "Eveille-toi, éveille-toi, Débora ! Eveille-toi, éveille-toi, dis au cantique ! Lève-toi, Barac, et fais tes prisonniers, fils d’Abinoëm !",
+        "NAB": "Awake, awake, Deborah! awake, awake, strike up a song. Strength! arise, Barak, make despoilers your spoil, son of Abinoam.",
+        "VAT_ES": "&iexcl;Despierta, Débora, despierta! &iexcl;Sí, despierta, entona un canto! &iexcl;Arriba, Barac, llévate a tus cautivos, hijo de Abinóam!",
+        "CEI": "Dèstati, dèstati, o Dèbora, dèstati, dèstati, intona un canto! Sorgi, Barak, e cattura i tuoi prigionieri, o figlio di Abinoam!"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "אָ֚ז יְרַ֣ד שָׂרִ֔יד לְ/אַדִּירִ֖ים עָ֑ם יְהוָ֕ה יְרַד לִ֖/י בַּ/גִּבּוֹרִֽים׃",
+        "LXX": "τότε κατέβη κατάλημμα τοῖς ἰσχυροῖς· λαὸς Κυρίου κατέβη αὐτῷ ἐν τοῖς κραταιοῖς ἐξ ἐμοῦ.",
+        "VUL": "Salvatæ sunt reliquiæ populi :/ Dominus in fortibus dimicavit./",
+        "SYN": "Тогда немногим из сильных подчинил Он народ; Господь подчинил мне храбрых.",
+        "NEO": "En ce moment descends, reste des nobles du peuple ! \\+w Yahweh|strong=\"H3068\"\\+w**, descends vers moi parmi ces héros !",
+        "NAB": "Then down came the fugitives with the mighty, the people of the LORD came down for me as warriors.",
+        "VAT_ES": "Entonces bajó el resto de los nobles, el pueblo del Señor bajó en mi defensa con los héroes.",
+        "CEI": "Allora scesero i fuggiaschi per unirsi ai principi; il popolo del Signore scese a sua difesa tra gli eroi."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "מִנִּ֣י אֶפְרַ֗יִם שָׁרְשָׁ/ם֙ בַּ/עֲמָלֵ֔ק אַחֲרֶ֥י/ךָ בִנְיָמִ֖ין בַּֽ/עֲמָמֶ֑י/ךָ מִנִּ֣י מָכִ֗יר יָֽרְדוּ֙ מְחֹ֣קְקִ֔ים וּ/מִ֨/זְּבוּלֻ֔ן מֹשְׁכִ֖ים בְּ/שֵׁ֥בֶט סֹפֵֽר׃",
+        "LXX": "Ἐφράιμ ἐξερίζωσεν αὐτοὺς ἐν τῷ Ἀμαλήκ· ὀπίσω σου, Βενιαμείν, ἐν τοῖς λαοῖς σου· ἐν ἐμοὶ Μαχεὶρ κατέβησαν ἐξερευνῶντες, καὶ ἀπὸ Ζαβουλὼν ἕλκοντες ἐν ῥάβδῳ διηγήσεως γραμματέως.",
+        "VUL": "Ex Ephraim delevit eos in Amalec,/ et post eum ex Benjamin in populos tuos, o Amalec :/ de Machir principes descenderunt,/ et de Zabulon qui exercitum ducerent ad bellandum./",
+        "SYN": "От Ефрема пришли укоренившиеся в земле Амалика; за тобою Вениамин, среди народа твоего; от Махира шли начальники, и от Завулона владеющие тростью писца.",
+        "NEO": "D’Ephraïm sont venus ceux qui ont leur racine en Amalec ; derrière toi, Benjamin s’est joint à tes troupes ; de Machir, des chefs sont descendus ; de Zabulon des conducteurs, avec le bâton du scribe.",
+        "NAB": "From Ephraim, princes were in the valley; behind you was Benjamin, among your troops. From Machir came down commanders, from Zebulun wielders of the marshal's staff.",
+        "VAT_ES": "Lo mejor de Efraím está en el valle, detrás de ti va Benjamín, entre tus tropas. De Maquir bajaron los caudillos, y de Zabulón, los que empuñan el bastón de mando.",
+        "CEI": "Quelli della stirpe di Efraim scesero nella pianura, ti seguì Beniamino fra le tue genti. Dalla stirpe di Machir scesero i comandanti e da Zàbulon chi impugna lo scettro del comando."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/שָׂרַ֤/י בְּ/יִשָּׂשכָר֙ עִם דְּבֹרָ֔ה וְ/יִשָּׂשכָר֙ כֵּ֣ן בָּרָ֔ק בָּ/עֵ֖מֶק שֻׁלַּ֣ח בְּ/רַגְלָ֑י/ו בִּ/פְלַגּ֣וֹת רְאוּבֵ֔ן גְּדֹלִ֖ים חִקְקֵי לֵֽב׃",
+        "LXX": "καὶ ἀρχηγοὶ ἐν Ἰσσαχὰρ μετὰ Δεββώρας καὶ Βαράκ. οὕτως Βρὰκ ἐν κοιλάσιν ἀπέστειλεν ἐν ποσὶν αὐτοῦ. εἰς τὰς μερίδας Ῥουβὴν μεγάλοι ἐξικνούμενοι καρδίαν.",
+        "VUL": "Duces Issachar fuere cum Debbora,/ et Barac vestigia sunt secuti,/ qui quasi in præceps ac barathrum se discrimini dedit :/ diviso contra se Ruben,/ magnanimorum reperta est contentio./",
+        "SYN": "И князья Иссахаровы с Деворою, и Иссахар так же, как Варак, бросился в долину пеший. В племенах Рувимовых большое разногласие.",
+        "NEO": "Les princes d’Issachar sont avec Débora, Issachar est à côté de Barac ; dans la plaine il est envoyé sur ses pas.",
+        "NAB": "With Deborah were the princes of Issachar; Barak, too, was in the valley, his course unchecked. Among the clans of Reuben great were the searchings of heart.",
+        "VAT_ES": "Los príncipes de Isacar están con Débora: sí, Isacar, firme junto a Barac, se lanza tras sus pasos en el valle.",
+        "CEI": "I principi di Issacar mossero con Dèbora; Barak si lanciò sui suoi passi nella pianura. Presso i ruscelli di Ruben grandi erano le esitazioni."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "לָ֣/מָּה יָשַׁ֗בְתָּ בֵּ֚ין הַֽ/מִּשְׁפְּתַ֔יִם לִ/שְׁמֹ֖עַ שְׁרִק֣וֹת עֲדָרִ֑ים לִ/פְלַגּ֣וֹת רְאוּבֵ֔ן גְּדוֹלִ֖ים חִקְרֵי לֵֽב׃",
+        "LXX": "εἰς τί ἐκάθισαν ἀνὰ μέσον τῆς διγομίας τοῦ ἀκοῦσαι συρισμοῦ ἀγγέλων; εἰς διαιρέσεις Ῥουβὴν μεγάλοι ἐξετασμοὶ καρδίας.",
+        "VUL": "Quare habitas inter duos terminos,/ ut audias sibilos gregum ?/ diviso contra se Ruben,/ magnanimorum reperta est contentio./",
+        "SYN": "Что сидишь ты между овчарнями, слушая блеяние стад? В племенах Рувимовых большое разногласие.",
+        "NEO": "Pourquoi es-tu resté au milieu de tes pâturages, à écouter le chalumeau de tes pâtres ? Près des ruisseaux de Ruben, il y eut de grandes résolutions du cœur !",
+        "NAB": "Why do you stay beside your hearths listening to the lowing of the herds? Among the clans of Reuben great were the searchings of heart!",
+        "VAT_ES": "&iquest;Por qué estás sentado entre los corrales, oyendo los silbidos de los que arrean los rebaños? Junto a los arroyos de Rubén se hacen muchas indagaciones.",
+        "CEI": "Perché sei rimasto seduto tra gli ovili, ad ascoltare le zampogne dei pastori? Presso i ruscelli di Ruben erano ben grandi le dispute..."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "גִּלְעָ֗ד בְּ/עֵ֤בֶר הַ/יַּרְדֵּן֙ שָׁכֵ֔ן וְ/דָ֕ן לָ֥/מָּה יָג֖וּר אֳנִיּ֑וֹת אָשֵׁ֗ר יָשַׁב֙ לְ/ח֣וֹף יַמִּ֔ים וְ/עַ֥ל מִפְרָצָ֖י/ו יִשְׁכּֽוֹן׃",
+        "LXX": "Γαλαὰδ ἐν τῷ πέραν τοῦ Ἰορδάνου ἐσκήνωσεν· καὶ Δὰν εἰς τί παροικεῖ πλοίοις; Ἀσὴρ ἐκάθισεν παραλίαν θαλασσῶν, καὶ ἐπὶ διεξόδοις αὐτοῦ σκηνώσει.",
+        "VUL": "Galaad trans Jordanem quiescebat,/ et Dan vacabat navibus :/ Aser habitabat in littore maris,/ et in portubus morabatur./",
+        "SYN": "Галаад живет _спокойно_ за Иорданом, и Дану чего бояться с кораблями? Асир сидит на берегу моря и у пристаней своих живет спокойно.",
+        "NEO": "Galaad n’a pas quitté sa demeure, au delà du Jourdain ; et Dan, pourquoi s’est-il tenu dans ses vaisseaux ? Aser est resté tranquille sur le rivage de la mer, et il est demeuré dans ses ports.",
+        "NAB": "Gilead, beyond the Jordan, rests; why does Dan spend his time in ships? Asher, who dwells along the shore, is resting in his coves.",
+        "VAT_ES": "Galaad ve tranquilo al otro lado del Jordán y Dan &iquest;por qué se queda en las naves? Aser habita a la orilla del mas y vive tranquilo en sus embarcaderos.",
+        "CEI": "Gàlaad dimora oltre il Giordano e Dan perché vive straniero sulle navi? Aser si è stabilito lungo la riva del grande mare e presso le sue insenature dimora."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "זְבֻל֗וּן עַ֣ם חֵרֵ֥ף נַפְשׁ֛/וֹ לָ/מ֖וּת וְ/נַפְתָּלִ֑י עַ֖ל מְרוֹמֵ֥י שָׂדֶֽה׃",
+        "LXX": "Ζαβουλὼν λαὸς ὠνείδισεν ψυχὴν αὐτοῦ εἰς θάνατον, καὶ Νεφθαλεὶ ἐπὶ ὕψη ἀγροῦ.",
+        "VUL": "Zabulon vero et Nephthali obtulerunt animas suas morti/ in regione Merome.]",
+        "SYN": "Завулон - народ, обрекший душу свою на смерть, и Неффалим - на высотах поля.",
+        "NEO": "Mais Zabulon est un peuple qui expose son âme à la mort, ainsi que Nephtali, sur ses hauts plateaux.",
+        "NAB": "Zebulun is the people defying death; Naphtali, too, on the open heights!",
+        "VAT_ES": "Zabulón es un pueblo que desafía la muerte, igual que Neftalí, sobre las alturas del campo.",
+        "CEI": "Zàbulon invece è un popolo che si è esposto alla morte, come Nèftali, sui poggi della campagna!"
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "בָּ֤אוּ מְלָכִים֙ נִלְחָ֔מוּ אָ֤ז נִלְחֲמוּ֙ מַלְכֵ֣י כְנַ֔עַן בְּ/תַעְנַ֖ךְ עַל מֵ֣י מְגִדּ֑וֹ בֶּ֥צַע כֶּ֖סֶף לֹ֥א לָקָֽחוּ׃",
+        "LXX": "ἦλθον αὐτῶν βασιλεῖς, παρετάξαντο· τότε ἐπολέμησαν βασιλεῖς Χανάαν, ἐν Θαναὰχ ἐπὶ ὕδατι Μεγεδδώ· δῶρον ἀργυρίου οὐκ ἔλαβον.",
+        "VUL": "[Venerunt reges et pugnaverunt :/ pugnaverunt reges Chanaan/ in Thanach juxta aquas Mageddo,/ et tamen nihil tulere prædantes./",
+        "SYN": "Пришли цари, сразились, тогда сразились цари Ханаанские в Фанаахе у вод Мегиддонских, но не получили нимало серебра.",
+        "NEO": "Les rois sont venus, ils ont livré bataille ; alors ils ont livré bataille, les rois de Canaan, à Thanac, au bord des eaux de Mageddo ; ils n’ont pas remporté un seul lingot d’argent.",
+        "NAB": "The kings came and fought; then they fought, those kings of Canaan, At Taanach by the waters of Megiddo; no silver booty did they take.",
+        "VAT_ES": "Llegaron los reyes al combate: entonces combatieron los reyes de Canaán, en Taanac, junto a las aguas de Meguido, pero no recogieron plata como botín.",
+        "CEI": "Vennero i re, diedero battaglia, combatterono i re di Cànaan, a Taanach sulle acque di Meghiddo, ma non riportarono bottino d'argento."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "מִן שָׁמַ֖יִם נִלְחָ֑מוּ הַ/כּֽוֹכָבִים֙ מִ/מְּסִלּוֹתָ֔/ם נִלְחֲמ֖וּ עִם סִיסְרָֽא׃",
+        "LXX": "ἐξ οὐρανοῦ παρετάξαντο οἱ ἀστέρες, ἐκ τρίβων αὐτῶν παρετάξαντο μετὰ Σεισαρά.",
+        "VUL": "De cælo dimicatum est contra eos :/ stellæ manentes in ordine et cursu suo,/ adversus Sisaram pugnaverunt./",
+        "SYN": "С неба сражались, звезды с путей своих сражались с Сисарою.",
+        "NEO": "Du ciel on a combattu pour nous, de leurs sentiers les étoiles ont combattu contre Sisara.",
+        "NAB": "From the heavens the stars, too, fought; from their courses they fought against Sisera.",
+        "VAT_ES": "Desde el cielo combatieron las estrellas, desde sus órbitas combatieron contra Sísara.",
+        "CEI": "Dal cielo le stelle diedero battaglia, dalle loro orbite combatterono contro Sisara."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "נַ֤חַל קִישׁוֹן֙ גְּרָפָ֔/ם נַ֥חַל קְדוּמִ֖ים נַ֣חַל קִישׁ֑וֹן תִּדְרְכִ֥י נַפְשִׁ֖/י עֹֽז׃",
+        "LXX": "χειμάρρους Κεισὼν ἐξέσυρεν αὐτούς, χειμάρρους ἀρχαίων, χειμάρρους Κεισών· καταπατήσει αὐτὸν ψυχή μου δυνατή.",
+        "VUL": "Torrens Cison traxit cadavera eorum,/ torrens Cadumim, torrens Cison :/ conculca, anima mea, robustos./",
+        "SYN": "Поток Киссон увлек их, поток Кедумим, поток Киссон. Попирай, душа моя, силу!",
+        "NEO": "Le torrent de Cison a roulé leurs cadavres. le torrent des anciens temps, le torrent de Cison. — O mon âme, avance hardiment ! —",
+        "NAB": "The Wadi Kishon swept them away; a wadi. . . , the Kishon.",
+        "VAT_ES": "&iexcl;El torrente Quisón los arrastró, el antiguo torrente, el torrente Quisón! &iexcl;Avanza, alma mía, con denuedo!",
+        "CEI": "Il torrente Kison li travolse; torrente impetuoso fu il torrente Kison... Anima mia, calpesta con forza!"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "אָ֥ז הָלְמ֖וּ עִקְּבֵי ס֑וּס מִֽ/דַּהֲר֖וֹת דַּהֲר֥וֹת אַבִּירָֽי/ו׃",
+        "LXX": "τότε ἐνεποδίσθησαν πτέρναι ἵππου, σπουδῇ ἔσπευσαν ἰσχυροὶ αὐτοῦ.",
+        "VUL": "Ungulæ equorum ceciderunt, fugientibus impetu,/ et per præceps ruentibus fortissimis hostium./",
+        "SYN": "Тогда ломались копыта конские от побега, от побега сильных его.",
+        "NEO": "Alors retentirent les sabots des chevaux, dans la course, la course rapide de leurs guerriers.",
+        "NAB": "Then the hoofs of the horses pounded, with the dashing, dashing of his steeds.",
+        "VAT_ES": "Los cascos de los caballos martillaron el suelo, al galope, al galope de sus corceles.",
+        "CEI": "Allora martellarono gli zoccoli dei cavalli al galoppo, al galoppo dei corsieri."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "א֣וֹרוּ מֵר֗וֹז אָמַר֙ מַלְאַ֣ךְ יְהוָ֔ה אֹ֥רוּ אָר֖וֹר יֹשְׁבֶ֑י/הָ כִּ֤י לֹֽא בָ֨אוּ֙ לְ/עֶזְרַ֣ת יְהוָ֔ה לְ/עֶזְרַ֥ת יְהוָ֖ה בַּ/גִּבּוֹרִֽים׃",
+        "LXX": "Καταρᾶσθε Μηρώζ, εἶπεν ἄγγελος Κυρίου, καταρᾶσθε· ἐπικατάρατος πᾶς ὁ κατοικῶν αὐτήν· ὅτι οὐκ ἤλθοσαν εἰς βοήθειαν Κυρίου, εἰς βοήθειαν ἐν δυνατοῖς.",
+        "VUL": "Maledicite terræ Meroz, dixit angelus Domini :/ maledicite habitatoribus ejus,/ quia non venerunt ad auxilium Domini,/ in adjutorium fortissimorum ejus.]",
+        "SYN": "Прокляните Мероз, говорит Ангел Господень, прокляните, прокляните жителей его за то, что не пришли на помощь Господу, на помощь Господу с храбрыми.",
+        "NEO": "Maudissez Méroz, dit l’ange de \\+w Yahweh|strong=\"H3068\"\\+w**, maudissez, maudissez ses habitants ! Car ils ne sont pas venus au secours de \\+w Yahweh|strong=\"H3068\"\\+w**, au secours de \\+w Yahweh|strong=\"H3068\"\\+w**, avec les vaillants.",
+        "NAB": "\"Curse Meroz,\" says the LORD, \"hurl a curse at its inhabitants! For they came not to my help, as warriors to the help of the LORD.\"",
+        "VAT_ES": "&iexcl;Maldigan a Meroz, dice el Angel del Señor, sí, maldigan a sus habitantes! Porque no acudieron en auxilio del Señor, en auxilio del Señor, junto a los héroes.",
+        "CEI": "Maledite Meroz - dice l'angelo del Signore - maledite, maledite i suoi abitanti, perché non vennero in aiuto al Signore, in aiuto al Signore tra gli eroi."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "תְּבֹרַךְ֙ מִ/נָּשִׁ֔ים יָעֵ֕ל אֵ֖שֶׁת חֶ֣בֶר הַ/קֵּינִ֑י מִ/נָּשִׁ֥ים בָּ/אֹ֖הֶל תְּבֹרָֽךְ׃",
+        "LXX": "εὐλογηθείη ἐν γυναιξὶν Ἰαήλ, γυνὴ Χάβερ τοῦ Κειναίου· ἀπὸ γυναικῶν ἐν σκηναῖς εὐλογηθείη.",
+        "VUL": "[Benedicta inter mulieres Jahel uxor Haber Cinæi,/ et benedicatur in tabernaculo suo./",
+        "SYN": "Да будет благословенна между женами Иаиль, жена Хевера Кенеянина, между женами в шатрах да будет благословенна!",
+        "NEO": "Bénie soit entre les femmes Jahel, femme de Héber, le Cinéen ; entre les troupes qui habitent sous la tente bénie soit-elle !",
+        "NAB": "Blessed among women be Jael, blessed among tent-dwelling women.",
+        "VAT_ES": "&iexcl;Bendita entre las mujeres sea Jael, la mujer de Jéber, el quenita! &iexcl;Bendita entre las mujeres que habitan en carpas!",
+        "CEI": "Sia benedetta fra le donne Giaele, la moglie di Eber il Kenita, benedetta fra le donne della tenda!"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "מַ֥יִם שָׁאַ֖ל חָלָ֣ב נָתָ֑נָה בְּ/סֵ֥פֶל אַדִּירִ֖ים הִקְרִ֥יבָה חֶמְאָֽה׃",
+        "LXX": "ὕδωρ ᾔτησεν, γάλα ἔδωκεν, ἐν λεκάνῃ ὑπερεχόντων προσήνεγκεν βούτυρον.",
+        "VUL": "Aquam petenti lac dedit,/ et in phiala principum obtulit butyrum./",
+        "SYN": "Воды просил он: молока подала она, в чаше вельможеской принесла молока лучшего.",
+        "NEO": "Il demanda de l’eau, elle donna du lait ; dans la coupe d’honneur, elle offrit le lait le plus pur.",
+        "NAB": "He asked for water, she gave him milk; in a princely bowl she offered curds.",
+        "VAT_ES": "Sísara pidió agua, ella le dio leche, le ofreció cuajada en taza de príncipe",
+        "CEI": "Acqua egli chiese, latte essa diede, in una coppa da principi offrì latte acido."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "יָדָ/הּ֙ לַ/יָּתֵ֣ד תִּשְׁלַ֔חְנָה וִֽ/ימִינָ֖/הּ לְ/הַלְמ֣וּת עֲמֵלִ֑ים וְ/הָלְמָ֤ה סִֽיסְרָא֙ מָחֲקָ֣ה רֹאשׁ֔/וֹ וּ/מָחֲצָ֥ה וְ/חָלְפָ֖ה רַקָּתֽ/וֹ׃",
+        "LXX": "χεῖρα αὐτῆς ἀριστερὰν εἰς πάσσαλον ἐξέτεινεν καὶ δεξιὰν αὐτῆς εἰς σφῦραν κοπιώντων, καὶ ἐσφυροκόπησεν Σεισαρά, διήλωσεν κεφαλὴν αὐτοῦ καὶ ἐπάταξεν, διήλωσεν κρόταφον αὐτοῦ.",
+        "VUL": "Sinistram manum misit ad clavum,/ et dexteram ad fabrorum malleos./ Percussitque Sisaram quærens in capite vulneri locum,/ et tempus valide perforans :/",
+        "SYN": "[Левую] руку свою протянула к колу, а правую свою к молоту работников; ударила Сисару, поразила голову его, разбила и пронзила висок его.",
+        "NEO": "D’une main elle saisit le pieu, et de sa droite, le marteau de l’ouvrier.",
+        "NAB": "With her left hand she reached for the peg, with her right, for the workman's mallet. She hammered Sisera, crushed his head; she smashed, stove in his temple.",
+        "VAT_ES": "Extendió su mano hacia la estaca, y su derecha, hacia el martillo de los trabajadores; martilló a Sísara, le partió la cabeza, le machacó y le atravesó la sien.",
+        "CEI": "Una mano essa stese al picchetto e la destra a un martello da fabbri, e colpì Sisara, lo percosse alla testa, ne fracassò, ne trapassò la tempia."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "בֵּ֣ין רַגְלֶ֔י/הָ כָּרַ֥ע נָפַ֖ל שָׁכָ֑ב בֵּ֤ין רַגְלֶ֨י/הָ֙ כָּרַ֣ע נָפָ֔ל בַּ/אֲשֶׁ֣ר כָּרַ֔ע שָׁ֖ם נָפַ֥ל שָׁדֽוּד׃",
+        "LXX": "ἀνὰ μέσον τῶν ποδῶν αὐτῆς κατεκυλίσθη, ἔπεσεν καὶ ἐκοιμήθη ἀνὰ μέσον τῶν ποδῶν αὐτῆς· κατακλιθεὶς ἔπεσεν· καθὼς κατεκλίθη, ἐκεῖ ἔπεσεν ἐξοδευθείς.",
+        "VUL": "inter pedes ejus ruit ; defecit, et mortuus est :/ volvebatur ante pedes ejus,/ et jacebat exanimis et miserabilis./",
+        "SYN": "К ногам ее склонился, пал и лежал, к ногам ее склонился, пал; где склонился, там и пал сраженный.",
+        "NEO": "à ses pieds, il s’affaisse, il tombe, il est étendu ; à ses pieds il s’affaisse, il tombe : là où il s’affaisse, là il gît inanimé.",
+        "NAB": "At her feet he sank down, fell, lay still; down at her feet he sank and fell; where he sank down, there he fell, slain.",
+        "VAT_ES": "El se desplomó a sus pies, cayó y quedó tendido; se desplomó, cayó a sus pies, allí donde se desplomó, yace aniquilado.",
+        "CEI": "Ai piedi di lei si contorse, ricadde, giacque; ai piedi di lei si contorse, ricadde, dove si contorse, là ricadde finito."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "בְּעַד֩ הַ/חַלּ֨וֹן נִשְׁקְפָ֧ה וַ/תְּיַבֵּ֛ב אֵ֥ם סִֽיסְרָ֖א בְּעַ֣ד הָֽ/אֶשְׁנָ֑ב מַדּ֗וּעַ בֹּשֵׁ֤שׁ רִכְבּ/וֹ֙ לָ/ב֔וֹא מַדּ֣וּעַ אֶֽחֱר֔וּ פַּעֲמֵ֖י מַרְכְּבוֹתָֽי/ו׃",
+        "LXX": "διὰ τῆς θυρίδος παρέκυψεν μήτηρ Σεισαρὰ ἐκτὸς τοῦ τοξικοῦ Διότι ᾐσχύνθη ἅρμα αὐτοῦ; διότι ἐχρόνισαν πόδες ἁρμάτων αὐτοῦ;",
+        "VUL": "Per fenestram respiciens, ululabat mater ejus :/ et de cnaculo loquebatur :/ Cur moratur regredi currus ejus ?/ quare tardaverunt pedes quadrigarum illius ?/",
+        "SYN": "В окно выглядывает и вопит мать Сисарина сквозь решетку: что долго не идет конница его, что медлят колеса колесниц его?",
+        "NEO": "Par la fenêtre, à travers le treillis, elle regarde, la mère de Sisara, et pousse des cris : « Pourquoi son char tarde-t-il à venir ? Pourquoi est-elle si lente la marche de ses chariots ? »",
+        "NAB": "From the window peered down and wailed the mother of Sisera, from the lattice: \"Why is his chariot so long in coming? why are the hoofbeats of his chariots delayed?\"",
+        "VAT_ES": "La madre de Sísara se asoma por la ventana, a través del enrejado, y se lamenta: «&iquest;Por qué tarda en llegar su carro? &iquest;Por qué se han retrasado sus carros de combate?»",
+        "CEI": "Dietro la finestra si affaccia e si lamenta la madre di Sisara, dietro la persiana: Perché il suo carro tarda ad arrivare? Perché così a rilento procedono i suoi carri?"
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "חַכְמ֥וֹת שָׂרוֹתֶ֖י/הָ תַּעֲנֶ֑ינָּה אַף הִ֕יא תָּשִׁ֥יב אֲמָרֶ֖י/הָ לָֽ/הּ׃",
+        "LXX": "αἱ σοφαὶ ἄρχουσαι αὐτῆς ἀπεκρίθησαν πρὸς αὐτήν, καὶ αὐτὴ ἀπέστρεψεν λόγους αὐτῆς ἑαυτῇ·",
+        "VUL": "Una sapientior ceteris uxoribus ejus,/ hæc socrui verba respondit :/",
+        "SYN": "Умные из ее женщин отвечают ей, и сама она отвечает на слова свои:",
+        "NEO": "Les plus avisées de ses dames lui répondent, et elle se répète à elle-même leurs paroles :",
+        "NAB": "The wisest of her princesses answers her, and she, too, keeps answering herself:",
+        "VAT_ES": "La más sagaz de sus princesas le responde, y ella misma se repite estas palabras:",
+        "CEI": "Le più sagge sue principesse rispondono e anche lei torna a dire a se stessa:"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "הֲ/לֹ֨א יִמְצְא֜וּ יְחַלְּק֣וּ שָׁלָ֗ל רַ֤חַם רַחֲמָתַ֨יִם֙ לְ/רֹ֣אשׁ גֶּ֔בֶר שְׁלַ֤ל צְבָעִים֙ לְ/סִ֣יסְרָ֔א שְׁלַ֥ל צְבָעִ֖ים רִקְמָ֑ה צֶ֥בַע רִקְמָתַ֖יִם לְ/צַוְּארֵ֥י שָׁלָֽל׃",
+        "LXX": "Οὐχ εὑρήσουσιν αὐτὸν διαμερίζοντα σκῦλα; οἰκτείρμων οἰκτειρήσει εἰς κεφαλὴν ἀνδρός· σκῦλα βαμμάτων τῷ Σεισαρά, σκῦλα βαμμάτων ποικιλίας, βάμματα ποικιλτῶν αὐτά, τῷ τραχήλῳ αὐτοῦ σκῦλα.",
+        "VUL": "Forsitan nunc dividit spolia,/ et pulcherrima feminarum eligitur ei :/ vestes diversorum colorum Sisaræ traduntur in prædam,/ et supellex varia ad ornanda colla congeritur./",
+        "SYN": "верно, они нашли, делят добычу, по девице, по две девицы на каждого воина, в добычу полученная разноцветная _одежда_ Сисаре, полученная в добычу разноцветная одежда, вышитая с обеих сторон, снятая с плеч пленника.",
+        "NEO": "« N’ont-ils pas trouvé, ne se partagent-ils pas le butin ? Une jeune fille, deux jeunes filles pour chaque guerrier ; des vêtements de couleur pour butin à Sisara, des vêtements de couleur variée pour butin ; un vêtement de couleur, deux vêtements de couleur variée, pour les épaules de l’épouse ! »",
+        "NAB": "\"They must be dividing the spoil they took: there must be a damsel or two for each man, Spoils of dyed cloth as Sisera's spoil, an ornate shawl or two for me in the spoil.\"",
+        "VAT_ES": "«Seguro que están recogiendo y repartiendo el botín; una cautiva, dos cautivas para cada guerrero, paños de colores como botín para Sísara, una tela, dos telas recamadas para mi cuello».",
+        "CEI": "Certo han trovato bottino, stan facendo le parti: una fanciulla, due fanciulle per ogni uomo; un bottino di vesti variopinte per Sisara, un bottino di vesti variopinte a ricamo; una veste variopinta a due ricami è il bottino per il mio collo..."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "כֵּ֠ן יֹאבְד֤וּ כָל אוֹיְבֶ֨י/ךָ֙ יְהוָ֔ה וְ/אֹ֣הֲבָ֔י/ו כְּ/צֵ֥את הַ/שֶּׁ֖מֶשׁ בִּ/גְבֻרָת֑/וֹ וַ/תִּשְׁקֹ֥ט הָ/אָ֖רֶץ אַרְבָּעִ֥ים שָׁנָֽה׃",
+        "LXX": "οὕτως ἀπόλοιντο πάντες οἱ ἐχθροί σου, Κύριε· καὶ οἱ ἀγαπῶντες αὐτὸν ὡς ἔξοδος ἡλίου ἐν δυνάμει αὐτοῦ. Καὶ ἡσύχασεν ἡ γῆ τεσσεράκοντα ἔτη.",
+        "VUL": "Sic pereant omnes inimici tui, Domine :/ qui autem diligunt te, sicut sol in ortu suo splendet, ita rutilent.]",
+        "SYN": "Так да погибнут все враги Твои, Господи! Любящие же Его _да_ _будут_ как солнце, восходящее во всей силе своей! - И покоилась земля сорок лет.",
+        "NEO": "Qu’ainsi périssent tous tes ennemis, ô \\+w Yahweh|strong=\"H3068\"\\+w** ! Et que ceux qui l’aiment soient comme le soleil, quand il se lève dans sa force !",
+        "NAB": "May all your enemies perish thus, O LORD! but your friends be as the sun rising in its might! And the land was at rest for forty years.",
+        "VAT_ES": "&iexcl;Qué así desaparezcan todos tus enemigos, Señor, y los que te aman sean como el sol cuando despunta con toda su fuerza!». Y hubo paz en el país durante cuarenta años.",
+        "CEI": "Così periscano tutti i tuoi nemici, Signore! Ma coloro che ti amano siano come il sole, quando sorge con tutto lo splendore\". Poi il paese ebbe pace per quarant'anni."
+      }
+    }
+  }
+}

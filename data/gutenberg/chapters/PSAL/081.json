@@ -1,0 +1,278 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_081",
+  "book_key": "PSAL",
+  "sequence": 81,
+  "chapter_in": {
+    "MT": 81,
+    "VUL": 80,
+    "LXX": 80
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֬חַ עַֽל הַ/גִּתִּ֬ית לְ/אָסָֽף׃",
+        "LXX": "Ψαλμὸς τῷ Ἀσάφ. Ὁ θεὸς ἔστη ἐν συναγωγῇ θεῶν, ἐν μέσῳ δὲ θεοὺς διακρίνει.",
+        "VUL": "Psalmus Asaph. [Deus stetit in synagoga deorum ;/ in medio autem deos dijudicat./",
+        "SYN": "Бог стал в сонме богов; среди богов произнес суд:",
+        "NEO": "Au maître de chant. Sur la Gitthienne. D’Asaph.",
+        "NAB": "For the leader; \"upon the gittith.\" Of Asaph.",
+        "CEI": "Al maestro del coro. Su \"I torchi...\". Di Asaf."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "הַ֭רְנִינוּ לֵ/אלֹהִ֣ים עוּזֵּ֑/נוּ הָ֝רִ֗יעוּ לֵ/אלֹהֵ֥י יַעֲקֹֽב׃",
+        "LXX": "ἕως πότε κρίνετε ἀδικίαν, καὶ πρόσωπα ἁμαρτωλῶν λαμβάνετε; διάψαλμα.",
+        "VUL": "Usquequo judicatis iniquitatem,/ et facies peccatorum sumitis ?/",
+        "SYN": "доколе будете вы судить неправедно и оказывать лицеприятие нечестивым?",
+        "NEO": "Chantez avec allégresse en l’honneur de Dieu, notre force ; poussez des cris de joie en l’honneur du Dieu de Jacob !",
+        "NAB": "Sing joyfully to God our strength; shout in triumph to the God of Jacob!",
+        "VAT_ES": "&iexcl;Canten con júbilo a Dios, nuestra fuerza,",
+        "CEI": "Esultate in Dio, nostra forza, acclamate al Dio di Giacobbe."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "שְֽׂאוּ זִ֭מְרָה וּ/תְנוּ תֹ֑ף כִּנּ֖וֹר נָעִ֣ים עִם נָֽבֶל׃",
+        "LXX": "κρίνατε ὀρφανὸν καὶ πτωχόν, ταπεινὸν καὶ πένητα δικαιώσατε·",
+        "VUL": "Judicate egeno et pupillo ;/ humilem et pauperem justificate./",
+        "SYN": "Давайте суд бедному и сироте; угнетенному и нищему оказывайте справедливость;",
+        "NEO": "Entonnez l’hymne, au son du tambourin, de la harpe harmonieuse et du luth !",
+        "NAB": "Take up a melody, sound the timbrel, the sweet-sounding harp and lyre.",
+        "VAT_ES": "Entonen un canto, toquen el tambor,",
+        "CEI": "Intonate il canto e suonate il timpano, la cetra melodiosa con l'arpa."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "תִּקְע֣וּ בַ/חֹ֣דֶשׁ שׁוֹפָ֑ר בַּ֝/כֵּ֗סֶה לְ/י֣וֹם חַגֵּֽ/נוּ׃",
+        "LXX": "ἐξέλεσθε πένητα καὶ πτωχόν, ἐκ χειρὸς ἁμαρτωλοῦ ῥύσασθε.",
+        "VUL": "Eripite pauperem,/ et egenum de manu peccatoris liberate./",
+        "SYN": "избавляйте бедного и нищего; исторгайте _его_ из руки нечестивых.",
+        "NEO": "Sonnez de la trompette à la nouvelle lune, à la pleine lune, pour le jour de notre fête.",
+        "NAB": "Blow the trumpet at the new moon, at the full moon, on our solemn feast.",
+        "VAT_ES": "Toquen la trompeta al salir la luna nueva,",
+        "CEI": "Suonate la tromba nel plenilunio, nostro giorno di festa."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "כִּ֤י חֹ֣ק לְ/יִשְׂרָאֵ֣ל ה֑וּא מִ֝שְׁפָּ֗ט לֵ/אלֹהֵ֥י יַעֲקֹֽב׃",
+        "LXX": "οὐκ ἔγνωσαν οὐδὲ συνῆκαν, ἐν σκότει διαπορεύονται· σαλευθήσονται πάντα τὰ θεμέλια τῆς γῆς.",
+        "VUL": "Nescierunt, neque intellexerunt ;/ in tenebris ambulant :/ movebuntur omnia fundamenta terræ./",
+        "SYN": "Не знают, не разумеют, во тьме ходят; все основания земли колеблются.",
+        "NEO": "Car c’est un précepte pour Israël, une ordonnance du Dieu de Jacob.",
+        "NAB": "For this is a law in Israel, an edict of the God of Jacob,",
+        "VAT_ES": "Porque esta es una ley para Israel,",
+        "CEI": "Questa è una legge per Israele, un decreto del Dio di Giacobbe."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "עֵ֤דוּת בִּֽ/יה֘וֹסֵ֤ף שָׂמ֗/וֹ בְּ֭/צֵאת/וֹ עַל אֶ֣רֶץ מִצְרָ֑יִם שְׂפַ֖ת לֹא יָדַ֣עְתִּי אֶשְׁמָֽע׃",
+        "LXX": "ἐγὼ εἶπα Θεοί ἐστε καὶ υἱοὶ Ὑψίστου πάντες·",
+        "VUL": "Ego dixi : Dii estis,/ et filii Excelsi omnes./",
+        "SYN": "Я сказал: вы - боги, и сыны Всевышнего - все вы;",
+        "NEO": "Il en fit une loi pour Joseph, quand il marcha contre le pays d’Égypte.",
+        "NAB": "Who made it a decree for Joseph when he came out of the land of Egypt. II I hear a new oracle:",
+        "VAT_ES": "él se la impuso como norma a José,",
+        "CEI": "Lo ha dato come testimonianza a Giuseppe, quando usciva dal paese d'Egitto. Un linguaggio mai inteso io sento:"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "הֲסִיר֣וֹתִי מִ/סֵּ֣בֶל שִׁכְמ֑/וֹ כַּ֝פָּ֗י/ו מִ/דּ֥וּד תַּעֲבֹֽרְנָה׃",
+        "LXX": "ὑμεῖς δὲ δὴ ὡς ἄνθρωποι ἀποθνήσκετε, καὶ ὡς εἷς τῶν ἀρχόντων πίπτετε.",
+        "VUL": "Vos autem sicut homines moriemini,/ et sicut unus de principibus cadetis./",
+        "SYN": "но вы умрете, как человеки, и падете, как всякий из князей.",
+        "NEO": "« J’ai déchargé son épaule du fardeau, et ses mains ont quitté la corbeille.",
+        "NAB": "\"I relieved their shoulders of the burden; their hands put down the basket.",
+        "VAT_ES": "Yo quité el peso de tus espaldas",
+        "CEI": "\"Ho liberato dal peso la sua spalla, le sue mani hanno deposto la cesta."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "בַּ/צָּרָ֥ה קָרָ֗אתָ וָ/אֲחַ֫לְּצֶ֥/ךָּ אֶ֭עֶנְ/ךָ בְּ/סֵ֣תֶר רַ֑עַם אֶבְחָֽנְ/ךָ֨ עַל מֵ֖י מְרִיבָ֣ה סֶֽלָה׃",
+        "LXX": "ἀνάστα, ὁ θεός, κρῖνον τὴν γῆν· ὅτι σὺ κατακληρονομήσεις ἐν πᾶσιν τοῖς ἔθνεσιν.",
+        "VUL": "Surge, Deus, judica terram,/ quoniam tu hæreditabis in omnibus gentibus.]",
+        "SYN": "Восстань, Боже, суди землю, ибо Ты наследуешь все народы.",
+        "NEO": "Tu as crié dans la détresse, et je t’ai délivré ; je t’ai répondu du sein de la nuée orageuse ; je t’ai éprouvé aux eaux de Mériba. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "In distress you called and I rescued you; unseen, I spoke to you in thunder; At the waters of Meribah I tested you and said: Selah",
+        "VAT_ES": "Clamaste en la aflicción, y te salvé;",
+        "CEI": "Hai gridato a me nell'angoscia e io ti ho liberato, avvolto nella nube ti ho dato risposta, ti ho messo alla prova alle acque di Meriba."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "שְׁמַ֣ע עַ֭מִּ/י וְ/אָעִ֣ידָה בָּ֑/ךְ יִ֝שְׂרָאֵ֗ל אִם תִּֽשְׁמַֽע לִֽ/י׃",
+        "NEO": "« Ecoute, mon peuple, je veux te donner un avertissement ; Israël, puisses-tu m’écouter !",
+        "NAB": "'Listen, my people, I give you warning! If only you will obey me, Israel!",
+        "VAT_ES": "Oye, pueblo mío, yo atestiguo contra ti,",
+        "CEI": "Ascolta, popolo mio, ti voglio ammonire; Israele, se tu mi ascoltassi!"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "לֹֽא יִהְיֶ֣ה בְ֭/ךָ אֵ֣ל זָ֑ר וְ/לֹ֥א תִ֝שְׁתַּחֲוֶ֗ה לְ/אֵ֣ל נֵכָֽר׃",
+        "NEO": "Qu’il n’y ait pas au milieu de toi de dieu étranger : n’adore pas le dieu d’un autre peuple.",
+        "NAB": "There must be no foreign god among you; you must not worship an alien god.",
+        "VAT_ES": "No tendrás ningún Dios extraño,",
+        "CEI": "Non ci sia in mezzo a te un altro dio e non prostrarti a un dio straniero."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "אָנֹכִ֨י יְה֘וָ֤ה אֱלֹהֶ֗י/ךָ הַֽ֭/מַּעַלְ/ךָ מֵ/אֶ֣רֶץ מִצְרָ֑יִם הַרְחֶב פִּ֝֗י/ךָ וַ/אֲמַלְאֵֽ/הוּ׃",
+        "NEO": "« C’est moi, \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, qui t’ai fait monter du pays d’Égypte. Ouvre la bouche, et je la remplirai.",
+        "NAB": "I, the LORD, am your God, who brought you up from the land of Egypt. Open wide your mouth that I may fill it.'",
+        "VAT_ES": "yo, el Señor, soy tu Dios,",
+        "CEI": "Sono io il Signore tuo Dio, che ti ho fatto uscire dal paese d'Egitto; apri la tua bocca, la voglio riempire."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/לֹא שָׁמַ֣ע עַמִּ֣/י לְ/קוֹלִ֑/י וְ֝/יִשְׂרָאֵ֗ל לֹא אָ֥בָה לִֽ/י׃",
+        "NEO": "« Mais mon peuple n’a pas écouté ma voix, Israël ne m’a pas obéi.",
+        "NAB": "But my people did not listen to my words; Israel did not obey me.",
+        "VAT_ES": "Pero mi pueblo no escuchó mi voz,",
+        "CEI": "Ma il mio popolo non ha ascoltato la mia voce, Israele non mi ha obbedito."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וָֽ֭/אֲשַׁלְּחֵ/הוּ בִּ/שְׁרִיר֣וּת לִבָּ֑/ם יֵ֝לְכ֗וּ בְּֽ/מוֹעֲצוֹתֵי/הֶֽם׃",
+        "NEO": "Alors je l’ai abandonné à l’endurcissement de son cœur, et ils ont suivi leurs propres conseils.",
+        "NAB": "So I gave them over to hardness of heart; they followed their own designs.",
+        "VAT_ES": "por eso los entregué a su obstinación,",
+        "CEI": "L'ho abbandonato alla durezza del suo cuore, che seguisse il proprio consiglio."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "ל֗וּ עַ֭מִּ/י שֹׁמֵ֣עַֽ לִ֑/י יִ֝שְׂרָאֵ֗ל בִּ/דְרָכַ֥/י יְהַלֵּֽכוּ׃",
+        "NEO": "« Ah ! si mon peuple m’écoutait, si Israël marchait dans mes voies !...",
+        "NAB": "But even now if my people would listen, if Israel would walk in my paths,",
+        "VAT_ES": "&iexcl;Ojalá mi pueblo me escuchara,",
+        "CEI": "Se il mio popolo mi ascoltasse, se Israele camminasse per le mie vie!"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כִּ֭/מְעַט אוֹיְבֵי/הֶ֣ם אַכְנִ֑יעַ וְ/עַ֥ל צָ֝רֵי/הֶ֗ם אָשִׁ֥יב יָדִֽ/י׃",
+        "NEO": "Bientôt je confondrais leurs ennemis ; je tournerais ma main contre leurs oppresseurs.",
+        "NAB": "In a moment I would subdue their foes, against their enemies unleash my hand.",
+        "VAT_ES": "Yo sometería a sus adversarios en un instante,",
+        "CEI": "Subito piegherei i suoi nemici e contro i suoi avversari porterei la mia mano."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "מְשַׂנְאֵ֣י יְ֭הוָה יְכַֽחֲשׁוּ ל֑/וֹ וִ/יהִ֖י עִתָּ֣/ם לְ/עוֹלָֽם׃",
+        "NEO": "« Ceux qui haïssent \\+w Yahweh|strong=\"H3068\"\\+w** le flatteraient, et la durée d’Israël serait assurée pour toujours.",
+        "NAB": "Those who hate the LORD would tremble, their doom sealed forever.",
+        "VAT_ES": "Los enemigos del Señor tendrían que adularlo,",
+        "CEI": "I nemici del Signore gli sarebbero sottomessi e la loro sorte sarebbe segnata per sempre;"
+      }
+    }
+  }
+}

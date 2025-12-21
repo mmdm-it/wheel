@@ -1,0 +1,491 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_029",
+  "book_key": "ECCLU",
+  "sequence": 29,
+  "chapter_in": {
+    "MT": 29,
+    "VUL": 29,
+    "LXX": 29
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Ὁ ποιῶν ἔλεος δανιεῖ τῷ πλησίον, καὶ ὁ ἐπισχύων τῇ χειρὶ αὐτοῦ τηρεῖ ἐντολάς.",
+        "VUL": "[Qui facit misericordiam fneratur proximo suo :/ et qui prævalet manu mandata servat./",
+        "SYN": "Кто оказывает милость, тот дает взаем ближнему, и кто поддерживает его своею рукою, тот соблюдает заповеди.",
+        "NEO": "Celui qui pratique la miséricorde prête à son prochain, et celui qui le soutient de sa main observe les commandements.",
+        "NAB": "He does a kindness who lends to his neighbor, and he fulfills the precepts who holds out a helping hand.",
+        "VAT_ES": "El que practica la misericordia presta a su prójimo, y el que acude en su ayuda observa los mandamientos.",
+        "CEI": "Chi pratica la misericordia concede prestiti al prossimo, chi lo soccorre di propria mano osserva i comandamenti."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "δάνισον τῷ πλησίον ἐν καιρῷ χρείας αὐτοῦ, καὶ πάλιν ἀπόδος τῷ πλησίον εἰς τὸν καιρόν·",
+        "VUL": "Fnerare proximo tuo in tempore necessitatis illius :/ et iterum redde proximo in tempore suo./",
+        "SYN": "Давай взаймы ближнему во время нужды его и сам в свое время возвращай ближнему.",
+        "NEO": "Prête à ton prochain quand il est dans le besoin, et, à ton tour, rends au prochain, le temps venu, ce qu’il t’a prêté.",
+        "NAB": "Lend to your neighbor in his hour of need, and pay back your neighbor when a loan falls due;",
+        "VAT_ES": "Presta a tu prójimo cuando esté necesitado, y restitúyele a tu vez en el momento convenido.",
+        "CEI": "Dà in prestito al prossimo nel tempo del bisogno, e a tua volta restituisci al prossimo nel momento fissato."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "στερέωσον λόγον καὶ πιστώθητι μετ’ αὐτοῦ, καὶ ἐν παντὶ καιρῷ εὑρήσεις τὴν χρείαν σου.",
+        "VUL": "Confirma verbum, et fideliter age cum illo :/ et in omni tempore invenies quod tibi necessarium est./",
+        "SYN": "Твердо держи слово и будь верен ему - и ты во всякое время найдешь нужное для тебя.",
+        "NEO": "Tiens ta parole, et agis loyalement avec lui, et tu trouveras en tout temps ce qui t’est nécessaire.",
+        "NAB": "Keep your promise, be honest with him, and you will always come by what you need.",
+        "VAT_ES": "Cumple tu palabra y sé leal con él, y encontrarás en todo momento lo que necesites.",
+        "CEI": "Mantieni la parola e sii leale con lui, così troverai in ogni momento quanto ti occorre."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "πολλοὶ ὡς εὕρεμα ἐνόμισαν δάνος, καὶ παρέσχον πόνον τοῖς βοηθήσασιν αὐτοῖς.",
+        "VUL": "Multi quasi inventionem æstimaverunt fnus,/ et præstiterunt molestiam his qui se adjuverunt./",
+        "SYN": "Многие считали заем находкою и причинили огорчение тем, которые помогли им.",
+        "NEO": "Beaucoup regardent comme une trouvaille ce qu’on leur a prêté, et causent de l’ennui à ceux qui leur sont venus en aide.",
+        "NAB": "Many a man who asks for a loan adds to the burdens of those who help him;",
+        "VAT_ES": "Muchos consideran el préstamo como una ganga y ponen en aprietos a quienes los han ayudado.",
+        "CEI": "Molti considerano il prestito come cosa trovata e causano fastidi a coloro che li hanno aiutati."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "ἕως οὗ λάβῃ, καταφιλήσει χεῖρα αὐτοῦ, καὶ ἐπὶ τῶν χρημάτων τοῦ πλησίον ταπεινώσει φωνήν· καὶ ἐν καιρῷ ἀποδόσεως παρελκύσει χρόνον, καὶ ἀποδώσει λόγους ἀκηδίας καὶ τὸν καιρὸν αἰτιάσεται.",
+        "VUL": "Donec accipiant, osculantur manus dantis,/ et in promissionibus humiliant vocem suam :/",
+        "SYN": "Доколе не получит, он будет целовать руку его и из-за денег ближнего смирит голос;",
+        "NEO": "Jusqu’à ce qu’on ait reçu, on baise la main du prochain, d’une voix humble on vante ses richesses ; mais quand vient le moment de rendre, on prend des délais, on ne rend que des paroles de plainte, et on accuse la dureté des temps.",
+        "NAB": "When he borrows, he kisses the lender's hand and speaks with respect of his creditor's wealth; But when payment is due he disappoints him and says he is helpless to meet the claim.",
+        "VAT_ES": "Hasta que reciben, besan las manos de la gente y hablan con humildad de las riquezas del prójimo, pero en el momento de restituir, piden prórroga, sólo devuelven con palabras quejumbrosas y echan la culpa a las circunstancias.",
+        "CEI": "Prima di ricevere, ognuno bacia le mani del creditore, parla con tono umile per ottenere gli averi dell'amico; ma alla scadenza cerca di guadagnare tempo, restituisce piagnistei e incolpa le circostanze."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "ἐὰν ἰσχύσῃ, μόλις κομίσεται τὸ ἥμισυ καὶ λογιεῖται αὐτὸ ὡς εὕρεμα· εἰ δὲ μή, ἀπεστέρησεν αὐτὸν τῶν χρημάτων αὐτοῦ, καὶ ἐκτήσατο αὐτὸν ἐχθρὸν οὐ δωρεάν· κατάρας καὶ λοιδορίας ἀποδώσει αὐτῷ, καὶ ἀντὶ δόξης ἀποδώσει αὐτῷ ἀτιμίαν.",
+        "VUL": "et in tempore redditionis postulabit tempus,/ et loquetur verba tædii et murmurationum,/ et tempus causabitur./",
+        "SYN": "а в срок отдачи он будет протягивать время и будет отвечать уныло и жаловаться на время.",
+        "NEO": "Si l’on a des moyens, le prêteur recevra la moitié à peine, et croira faire une trouvaille. Si on n’en a pas, on le frustre de son argent, et celui-ci sans le vouloir se fait de son obligé un ennemi, qui le paie en malédictions et en injures, et qui, au lieu de l’honneur, ne lui rend que l’outrage.",
+        "NAB": "If the lender is able to recover barely half, he considers this an achievement; If not, he is cheated of his wealth and acquires an enemy at no extra charge; With curses and insults the borrower pays him back, with abuse instead of honor.",
+        "VAT_ES": "Si llegan a pagar, el acreedor recibe apenas la mitad y tiene que aceptarlo como un favor. Si no, lo despojan de sus riquezas, y él se gana inútilmente un enemigo que le paga con maldiciones e insultos y le devuelve desprecio en vez de honrarlo.",
+        "CEI": "Se riesce a pagare il creditore riceverà appena la metà, e dovrà considerarla come una cosa trovata. In caso contrario, il creditore sarà frodato dei suoi averi e avrà senza motivo un nuovo nemico; maledizioni e ingiurie gli restituirà, renderà insulti invece dell'onore dovuto."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "πολλοὶ χάριν πονηρίας ἀπέστρεψαν, ἀποστερηθῆναι δωρεὰν εὐλαβήθησαν.",
+        "VUL": "Si autem potuerit reddere, adversabitur :/ solidi vix reddet dimidium,/ et computabit illud quasi inventionem :/",
+        "SYN": "Если он будет в состоянии, то едва половину принесет - и это вменит ему в находку;",
+        "NEO": "Beaucoup se refusent à prêter à cause de la malice des hommes ; ils craignent d’être frustrés inutilement de leur argent.",
+        "NAB": "Many refuse to lend, not out of meanness, but from fear of being cheated.",
+        "VAT_ES": "Así, muchos se niegan a prestar, no por maldad, sino por temor a ser despojados sin razón.",
+        "CEI": "Molti perciò, per tale cattiveria, rifiutan di prestare: hanno paura di perdere i beni senza ragione."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "πλὴν ἐπὶ ταπεινῷ μακροθύμησον, καὶ ἐπ’ ἐλεημοσύνην παρελκύσεις αὐτόν·",
+        "VUL": "sin autem, fraudabit illum pecunia sua,/ et possidebit illum inimicum gratis :/",
+        "SYN": "а если будет не в состоянии, то заимодавец лишился своих денег и без причины приобрел себе врага в нем:",
+        "NEO": "Pourtant sois indulgent à l’égard du malheureux, et ne lui fais pas attendre ton aumône.",
+        "NAB": "To a poor man, however, be generous; keep him not waiting for your alms;",
+        "VAT_ES": "Pero tú sé indulgente con el humilde y no le hagas esperar tu limosna.",
+        "CEI": "Tuttavia sii longanime con il misero, e non fargli attender troppo l'elemosina."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "χάριν ἐντολῆς ἀντιλαβοῦ πένητος, καὶ κατὰ τὴν ἔνδειαν αὐτοῦ μὴ ἀποστρέψῃς αὐτὸν κενόν.",
+        "VUL": "et convitia et maledicta reddet illi,/ et pro honore et beneficio reddet illi contumeliam./",
+        "SYN": "он воздаст ему проклятиями и бранью и вместо почтения воздаст бесчестием.",
+        "NEO": "Assiste le pauvre à cause du commandement divin, et, à cause de sa détresse, ne le renvoie pas les mains vides.",
+        "NAB": "Because of the precept, help the needy, and in their want, do not send them away empty-handed.",
+        "VAT_ES": "Socorre al pobre para cumplir el mandamiento y, en su indigencia, no lo despidas con las manos vacías.",
+        "CEI": "Per il comandamento soccorri il povero, secondo la sua necessità non rimandarlo a mani vuote."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ἀπόλεσον ἀργύριον δι’ ἀδελφὸν καὶ φίλον, καὶ μὴ ἰωθήτω ὑπὸ τὸν λίθον εἰς ἀπωλίαν·",
+        "VUL": "Multi non causa nequitiæ non fnerati sunt,/ sed fraudari gratis timuerunt./",
+        "SYN": "Многие по причине такого лукавства уклоняются от ссуды, опасаясь напрасно потерпеть утрату.",
+        "NEO": "Consens à perdre ton argent en faveur de ton frère et de ton ami, et qu’il ne se rouille pas sans profit sous une pierre.",
+        "NAB": "Spend your money for your brother and friend, and hide it not under a stone to perish;",
+        "VAT_ES": "Pierde tu dinero por un hermano y un amigo: que no se herrumbre bajo una piedra y lo pierdas.",
+        "CEI": "Perdi pure denaro per un fratello e amico, non si arrugginisca inutilmente sotto una pietra."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "θὲς τὸν θησαυρόν σου κατ’ ἐντολὰς Ὑψίστου, καὶ λυσιτελήσει σοι μᾶλλον ἢ τὸ χρυσίον.",
+        "VUL": "Verumtamen super humilem animo fortior esto,/ et pro eleemosyna non trahas illum./",
+        "SYN": "Но к бедному ты будь снисходителен и милостынею ему не медли;",
+        "NEO": "Emploie ton trésor selon les préceptes du Très-Haut, et plus que l’or il te profitera.",
+        "NAB": "Dispose of your treasure as the Most High commands, for that will profit you more than the gold.",
+        "VAT_ES": "Deposita tu tesoro según los mandamientos del Altísimo y te reportará más provecho que el oro;",
+        "CEI": "Sfrutta le ricchezze secondo i comandi dell'Altissimo; ti saranno più utili dell'oro."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "σύνκλεισον ἐλεημοσύνην ἐν τοῖς ταμείοις σου, καὶ αὕτη ἐξελεῖταί σε ἐκ πάσης κακώσεως·",
+        "VUL": "Propter mandatum assume pauperem,/ et propter inopiam ejus ne dimittas eum vacuum./",
+        "SYN": "ради заповеди помоги бедному и в нужде его не отпускай его ни с чем.",
+        "NEO": "Enferme ton aumône dans tes appartements, et elle te délivrera de tout malheur.",
+        "NAB": "Store up almsgiving in your treasure house, and it will save you from every evil;",
+        "VAT_ES": "que el tesoro encerrado en tus graneros sea la limosna, y ella te preservará de todo mal:",
+        "CEI": "Rinserra l'elemosina nei tuoi scrigni ed essa ti libererà da ogni disgrazia."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "ὑπὲρ ἀσπίδα κράτους καὶ ὑπὲρ δόρυ ἀλκῆς κατέναντι ἐχθροῦ πολεμήσει ὑπὲρ σοῦ.",
+        "VUL": "Perde pecuniam propter fratrem et amicum tuum,/ et non abscondas illam sub lapide in perditionem./",
+        "SYN": "Трать серебро для брата и друга и не давай ему заржаветь под камнем на погибель;",
+        "NEO": "Mieux qu’un fort bouclier, mieux qu’une lance puissante, elle combattra pour toi en face de l’ennemi.",
+        "NAB": "Better than a stout shield and a sturdy spear it will fight for you against the foe.",
+        "VAT_ES": "mejor que un fuerte escudo y una lanza pesada combatirá a tu favor frente al enemigo.",
+        "CEI": "Meglio di uno scudo resistente e di una lancia pesante, combatterà per te di fronte al nemico."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "ἀνὴρ ἀγαθὸς ἐγγυήσεται τὸν πλησίον, καὶ ὁ ἀπολωλεκὼς αἰσχύνην καταλείψει αὐτόν.",
+        "VUL": "Pone thesaurum tuum in præceptis Altissimi,/ et proderit tibi magis quam aurum./",
+        "SYN": "располагай сокровищем твоим по заповедям Всевышнего, и оно принесет тебе более пользы, нежели золото;",
+        "NEO": "L’homme bon se porte caution pour son prochain, et celui-là seul l’abandonne, qui a perdu toute honte.",
+        "NAB": "A good man goes surety for his neighbor, and only the shameless would play him false;",
+        "VAT_ES": "El hombre de bien sale fiador de su prójimo, pero el que perdió la verg&uuml;enza lo deja abandonado.",
+        "CEI": "L'uomo buono garantisce per il prossimo, chi ha perduto il pudore lo abbandona."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "χάριτας ἐγγύου μὴ ἐπιλάθῃ, ἔδωκεν γὰρ τὴν ψυχὴν αὐτοῦ ὑπὲρ σοῦ.",
+        "VUL": "Conclude eleemosynam in corde pauperis,/ et hæc pro te exorabit ab omni malo./",
+        "SYN": "заключи в кладовых твоих милостыню, и она избавит тебя от всякого несчастья:",
+        "NEO": "N’oublie pas les bontés de celui qui a répondu, car il s’est engagé pour toi.",
+        "NAB": "Forget not the kindness of your backer, for he offers his very life for you.",
+        "VAT_ES": "No olvides los favores de tu fiador, porque él ha expuesto su vida por ti.",
+        "CEI": "Non dimenticare il favore di chi si è fatto garante, poiché egli si è impegnato per te."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ἀγαθὰ ἐγγύου ἀνατρέψει ἁμαρτωλός,",
+        "VUL": "Super scutum potentis",
+        "SYN": "лучше крепкого щита и твердого копья она защитит тебя против врага.",
+        "NEO": "Le pécheur fait perdre ses biens à son répondant, et l’ingrat abandonne son sauveur.",
+        "NAB": "The wicked turn a pledge on their behalf into misfortune, and the ingrate abandons his protector;",
+        "VAT_ES": "El pecador dilapida los bienes de su fiador y el desagradecido abandona al que lo salvó.",
+        "CEI": "Il peccatore dilapida i beni del suo garante, l'ingrato di proposito abbandonerà chi l'ha salvato."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "καὶ ἀχάριστος ἐν διανοίᾳ ἐγκαταλείψει ῥυσάμενον.",
+        "VUL": "et super lanceam/",
+        "SYN": "Добрый человек поручится за ближнего, а потерявший стыд оставит его.",
+        "NEO": "Une caution a entraîné la perte de beaucoup d’heureux, et les a ballottés comme les vagues de la mer ;",
+        "NAB": "Going surety has ruined many prosperous men and tossed them about like waves of the sea,",
+        "VAT_ES": "La fianza perdió a muchos que vivían prósperamente, los sacudió como una ola del mar;",
+        "CEI": "La cauzione ha rovinato molta gente onesta, li ha sballottati come onda del mare."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "ἐγγύη πολλοὺς ἀπώλεσεν κατευθύνοντας, καὶ ἐσάλευσεν αὐτοὺς ὡς κῦμα θαλάσσης· ἄνδρας δυνατοὺς ἀπῴκισεν, καὶ ἐπλανήθησαν ἐν ἔθνεσιν ἀλλοτρίοις.",
+        "VUL": "adversus inimicum tuum pugnabit.]",
+        "SYN": "Не забывай благодеяний поручителя; ибо он дал душу свою за тебя.",
+        "NEO": "elle a fait bannir des hommes puissants, et ils ont dû errer parmi les nations étrangères.",
+        "NAB": "Has exiled men of prominence and sent them wandering through foreign lands.",
+        "VAT_ES": "obligó a expatriarse a hombres poderosos, que anduvieron fugitivos por países extraños.",
+        "CEI": "Ha mandato in esilio uomini potenti, costretti a errare fra genti straniere."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ἁμαρτωλὸς ἐμπεσὼν εἰς ἐγγύην καὶ διώκων ἐργολαβείας ἐμπεσεῖται εἰς κρίσεις.",
+        "VUL": "[Vir bonus fidem facit pro proximo suo :/ et qui perdiderit confusionem derelinquet sibi./",
+        "SYN": "Грешник расстроит состояние поручителя, и неблагодарный в душе оставит своего избавителя.",
+        "NEO": "Le pécheur est prompt à se rendre caution, et celui qui poursuit le gain éprouvera la rigueur des jugements.",
+        "NAB": "The sinner through surety comes to grief, and he who undertakes too much falls into lawsuits.",
+        "VAT_ES": "El pecador que se ofrece como fiador y busca ventaja, se expone a ser procesado.",
+        "CEI": "Un peccatore che offre premurosamente garanzia e ricerca guadagni, sarà coinvolto in processi."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ἀντιλαβοῦ τοῦ πλησίον κατὰ δύναμίν σου, καὶ πρόσεχε σεαυτῷ μὴ ἐμπέσῃς.",
+        "VUL": "Gratiam fidejussoris ne obliviscaris :/ dedit enim pro te animam suam./",
+        "SYN": "Поручительство привело в разорение многих достаточных людей и пошатнуло их, как волна морская;",
+        "NEO": "Assiste ton prochain selon ton pouvoir, et prends garde de tomber toi-même dans le malheur.",
+        "NAB": "Go surety for your neighbor according to your means, but take care lest you fall thereby.",
+        "VAT_ES": "Socorre a tu prójimo en la medida de tus recursos, pero ten cuidado de no arruinarte.",
+        "CEI": "Aiuta il tuo prossimo secondo la tua possibilità e bada a te stesso per non cadere."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "Ἀρχὴ ζωῆς ὕδωρ καὶ ἄρτος καὶ ἱμάτιον, καὶ οἶκος καλύπτων ἀσχημοσύνην.",
+        "VUL": "Repromissorem fugit peccator et immundus./",
+        "SYN": "мужей могущественных изгнало из домов, и они блуждали между чужими народами.",
+        "NEO": "La première chose pour vivre, c’est l’eau et le pain, le vêtement et la maison pour couvrir la nudité.",
+        "NAB": "Life's prime needs are water, bread, and clothing, a house, too, for decent privacy.",
+        "VAT_ES": "Lo esencial para la vida es el agua, el pan, la ropa, y una casa para albergarse dignamente.",
+        "CEI": "Indispensabili alla vita sono l'acqua, il pane, il vestito e una casa che serva da riparo."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "κρείσσων βίος πτωχοῦ ὑπὸ σκέπην δοκῶν ἢ ἐδέσματα λαμπρὰ ἐν ἀλλοτρίοις.",
+        "VUL": "Bona repromissoris sibi ascribit peccator :/ et ingratus sensu derelinquet liberantem se./",
+        "SYN": "Грешник, принимающий на себя поручительство и ищущий корысти, впадет в тяжбу.",
+        "NEO": "Mieux vaut la vie du pauvre sous un toit de planches, que des mets somptueux dans une maison étrangère.",
+        "NAB": "Better a poor man's fare under the shadow of one's own roof than sumptuous banquets among strangers.",
+        "VAT_ES": "Más vale vida de pobre en una cabaña que comida exquisita en casa ajena.",
+        "CEI": "È meglio vivere da povero sotto un tetto di tavole, che godere di cibi sontuosi in case altrui."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "ἐπὶ μικρῷ καὶ μεγάλῳ εὐδοκίαν ἔχε.",
+        "VUL": "Vir repromittit de proximo suo :/ et cum perdiderit reverentiam, derelinquetur ab eo./",
+        "SYN": "Помогай ближнему по силе твоей и берегись, чтобы тебе не впасть в то же.",
+        "NEO": "Que tu aies peu ou beaucoup, sois content, [et tu ne t’entendras pas reprocher d’être un étranger.]",
+        "NAB": "Be it little or much, be content with what you have, and pay no heed to him who would disparage your home;",
+        "VAT_ES": "Conténtate con lo que tienes, sea poco o mucho, y no oirás que te reprochan por ser un extraño.",
+        "CEI": "Del poco come del molto sii contento, così non udirai il disprezzo come straniero."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "ζωὴ πονηρὰ ἐξ οἰκίας εἰς οἰκίαν, καὶ οὗ παροικήσει οὐκ ἀνοίξει στόμα·",
+        "VUL": "Repromissio nequissima multos perdidit dirigentes,/ et commovit illos quasi fluctus maris./",
+        "SYN": "Главная потребность для жизни - вода и хлеб, и одежда и дом, прикрывающий наготу.",
+        "NEO": "C’est une triste vie que d’aller de maison en maison ; là où l’on est reçu comme étranger, on n’ose pas ouvrir la bouche.",
+        "NAB": "A miserable life it is to go from house to house, for as a guest you dare not open your mouth.",
+        "VAT_ES": "Triste vida es andar de casa en casa: donde eres un extraño, no puedes abrir la boca.",
+        "CEI": "Triste vita andare di casa in casa, non potrai aprir bocca, dove sarai come straniero."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "ξενιεῖς καὶ ποτιεῖς εἰς ἀχάριστα, καὶ πρὸς ἐπὶ τούτοις πικρὰ ἀκούσῃ",
+        "VUL": "Viros potentes gyrans migrare fecit,/ et vagati sunt in gentibus alienis./",
+        "SYN": "Лучше жизнь бедного под досчатым кровом, нежели роскошные пиршества в чужих домах.",
+        "NEO": "Tu donneras à ton hôte à manger et à boire sans qu’on t’en sache gré, et tu entendras encore par-dessus des paroles amères :",
+        "NAB": "The visitor has no thanks for filling the cups; besides, you will hear these bitter words:",
+        "VAT_ES": "Sirves de comer y beber a gente desagradecida, y encima tienes que oír cosas amargas:",
+        "CEI": "Avrai ospiti, mescerai vino senza un grazie, inoltre ascolterai cose amare:"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "Πάρελθε, πάροικε, κόσμησον τράπεζαν, καὶ εἴ τι ἐν τῇ χειρί σου ψώμισόν με·",
+        "VUL": "Peccator transgrediens mandatum Domini incidet in promissionem nequam :/ et qui conatur multa agere incidet in judicium./",
+        "SYN": "Будь доволен малым, как и многим.",
+        "NEO": "« Arrive, étranger, prépare la table, et, si tu as quelque chose, donne-moi à manger.",
+        "NAB": "\"Come here, stranger, set the table, give me to eat the food you have!",
+        "VAT_ES": "–Ven aquí, forastero, prepara la mesa, y si tienes algo a mano, dame de comer».",
+        "CEI": "\"Su, forestiero, apparecchia la tavola, se hai qualche cosa sotto mano, dammi da mangiare\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "ἔξελθε, πάροικε, ἀπὸ προσώπου δόξης, ἐπεξένωταί μοι ὁ ἀδελφός, χρεία τῆς ξενίας.",
+        "VUL": "Recupera proximum secundum virtutem tuam,/ et attende tibi ne incidas.]",
+        "SYN": "Худая жизнь - скитаться из дома в дом, и где водворишься, не посмеешь и рта открыть;",
+        "NEO": "Va-t’en, étranger, loin de cette magnificence ; j’ai mon frère à recevoir, j’ai besoin de ma maison. »",
+        "NAB": "Away, stranger, for one more worthy; for my brother's visit I need the room!\"",
+        "VAT_ES": "–»Deja el lugar para alguien más importante; mi hermano viene a hospedarse, y necesito la casa».",
+        "CEI": "\"Vattene, forestiero, cedi il posto a persona onorata; mio fratello sarà mio ospite, ho bisogno della casa\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "βαρέα ταῦτα ἀνθρώπῳ ἔχοντι φρόνησιν. ἐπιτίμησις οἰκίας καὶ ὀνειδισμὸς δανιστοῦ.",
+        "VUL": "[Initium vitæ hominis, aqua et panis,/ et vestimentum, et domus protegens turpitudinem./",
+        "SYN": "будешь подавать пищу и питье без благодарности, да и сверх того еще услышишь горькое:",
+        "NEO": "Il est dur, pour quelqu’un qui a du sens, de s’entendre reprocher l’hospitalité et d’être injurié par son débiteur.",
+        "NAB": "Painful things to a sensitive man are abuse at home and insults from his creditors.",
+        "VAT_ES": "&iexcl;Qué duro es para un hombre sensible que le reprochen la hospitalidad y le echen en cara una deuda!",
+        "CEI": "Tali cose sono dure per un uomo che abbia intelligenza: i rimproveri per l'ospitalità e gli insulti di un creditore."
+      }
+    }
+  }
+}

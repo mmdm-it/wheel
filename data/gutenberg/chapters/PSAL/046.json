@@ -1,0 +1,209 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_046",
+  "book_key": "PSAL",
+  "sequence": 46,
+  "chapter_in": {
+    "MT": 46,
+    "VUL": 45,
+    "LXX": 45
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ/מְנַצֵּ֥חַ לִ/בְנֵי קֹ֑רַח עַֽל עֲלָמ֥וֹת שִֽׁיר׃",
+        "LXX": "Εἰς τὸ τέλος· ὑπὲρ τῶν υἱῶν Κόρε ψαλμός.",
+        "VUL": "In finem, pro filiis Core. Psalmus.",
+        "SYN": "Начальнику хора. Сынов Кореевых. Псалом.",
+        "NEO": "Au maître de chant. Des fils de Coré. Sur le ton des vierges. Cantique.",
+        "NAB": "For the leader. A song of the Korahites. According to alamoth.",
+        "CEI": "Al maestro del coro. Dei figli di Core. Su \"Le vergini...\". Canto."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אֱלֹהִ֣ים לָ֭/נוּ מַחֲסֶ֣ה וָ/עֹ֑ז עֶזְרָ֥ה בְ֝/צָר֗וֹת נִמְצָ֥א מְאֹֽד׃",
+        "LXX": "Πάντα τὰ ἔθνη κροτήσατε χεῖρας, ἀλαλάξατε τῷ θεῷ ἐν φωνῇ ἀγαλλιάσεως.",
+        "VUL": "[Omnes gentes, plaudite manibus ;/ jubilate Deo in voce exsultationis :/",
+        "SYN": "Восплещите руками все народы, воскликните Богу гласом радости;",
+        "NEO": "Dieu est notre refuge et notre force ; un secours que l’on rencontre toujours dans la détresse.",
+        "NAB": "God is our refuge and our strength, an ever-present help in distress.",
+        "VAT_ES": "Dios es nuestro refugio y fortaleza,",
+        "CEI": "Dio è per noi rifugio e forza, aiuto sempre vicino nelle angosce."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "עַל כֵּ֣ן לֹא נִ֭ירָא בְּ/הָמִ֣יר אָ֑רֶץ וּ/בְ/מ֥וֹט הָ֝רִ֗ים בְּ/לֵ֣ב יַמִּֽים׃",
+        "LXX": "ὅτι Κύριος Ὕψιστος φοβερός, βασιλεὺς μέγας ἐπὶ πᾶσαν τὴν γῆν.",
+        "VUL": "quoniam Dominus excelsus, terribilis,/ rex magnus super omnem terram./",
+        "SYN": "ибо Господь Всевышний страшен, - великий Царь над всею землею;",
+        "NEO": "Aussi sommes-nous sans crainte si la terre est bouleversée, si les montagnes s’abîment au sein de l’océan,",
+        "NAB": "Thus we do not fear, though earth be shaken and mountains quake to the depths of the sea,",
+        "VAT_ES": "Por eso no tememos, aunque la tierra se conmueva",
+        "CEI": "Perciò non temiamo se trema la terra, se crollano i monti nel fondo del mare."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "יֶהֱמ֣וּ יֶחְמְר֣וּ מֵימָ֑י/ו יִֽרְעֲשֽׁוּ הָרִ֖ים בְּ/גַאֲוָת֣/וֹ סֶֽלָה׃",
+        "LXX": "ὑπέταξεν λαοὺς ἡμῖν, καὶ ἔθνη ὑπὸ τοὺς πόδας ἡμῶν·",
+        "VUL": "Subjecit populos nobis,/ et gentes sub pedibus nostris./",
+        "SYN": "покорил нам народы и племена под ноги наши;",
+        "NEO": "si les flots de la mer s’agitent, bouillonnent, et, dans leur furie, ébranlent les montagnes. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "Though its waters rage and foam and mountains totter at its surging. The LORD of hosts is with us; our stronghold is the God of Jacob. Selah",
+        "VAT_ES": "aunque bramen y se agiten sus olas,",
+        "CEI": "Fremano, si gonfino le sue acque, tremino i monti per i suoi flutti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "נָהָ֗ר פְּלָגָ֗י/ו יְשַׂמְּח֥וּ עִיר אֱלֹהִ֑ים קְ֝דֹ֗שׁ מִשְׁכְּנֵ֥י עֶלְיֽוֹן׃",
+        "LXX": "ἐξελέξατο ἡμῖν τὴν κληρονομίαν αὐτοῦ, τὴν καλλονὴν Ἰακὼβ ἣν ἠγάπησεν. διάψαλμα.",
+        "VUL": "Elegit nobis hæreditatem suam ;/ speciem Jacob quam dilexit./",
+        "SYN": "избрал нам наследие наше, красу Иакова, которого возлюбил.",
+        "NEO": "Un fleuve réjouit de ses courants la cité de Dieu, le sanctuaire où habite le Très-Haut.",
+        "NAB": "Streams of the river gladden the city of God, the holy dwelling of the Most High.",
+        "VAT_ES": "Los canales del Río alegran la Ciudad de Dios,",
+        "CEI": "Un fiume e i suoi ruscelli rallegrano la città di Dio, la santa dimora dell'Altissimo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "אֱלֹהִ֣ים בְּ֭/קִרְבָּ/הּ בַּל תִּמּ֑וֹט יַעְזְרֶ֥/הָ אֱ֝לֹהִ֗ים לִ/פְנ֥וֹת בֹּֽקֶר׃",
+        "LXX": "ἀνέβη ὁ θεὸς ἐν ἀλαλαγμῷ, Κύριος ἐν φωνῇ σάλπιγγος.",
+        "VUL": "Ascendit Deus in jubilo,/ et Dominus in voce tubæ./",
+        "SYN": "Восшел Бог при восклицаниях, Господь при звуке трубном.",
+        "NEO": "Dieu est au milieu d’elle : elle est inébranlable ; au lever de l’aurore, Dieu vient à son secours.",
+        "NAB": "God is in its midst; it shall not be shaken; God will help it at break of day.",
+        "VAT_ES": "Dios está en medio de ella: nunca vacilará;",
+        "CEI": "Dio sta in essa: non potrà vacillare; la soccorrerà Dio, prima del mattino."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "הָמ֣וּ ג֭וֹיִם מָ֣טוּ מַמְלָכ֑וֹת נָתַ֥ן בְּ֝/קוֹל֗/וֹ תָּמ֥וּג אָֽרֶץ׃",
+        "LXX": "ψάλατε τῷ θεῷ ἡμῶν, ψάλατε· ψάλατε τῷ βασιλεῖ ἡμῶν, ψάλατε·",
+        "VUL": "Psallite Deo nostro, psallite ;/ psallite regi nostro, psallite :/",
+        "SYN": "Пойте Богу нашему, пойте; пойте Царю нашему, пойте,",
+        "NEO": "Les nations s’agitent, les royaumes s’ébranlent ; il fait entendre sa voix et la terre se fond d’épouvante.",
+        "NAB": "Though nations rage and kingdoms totter, God's voice thunders and the earth trembles.",
+        "VAT_ES": "Tiemblan las naciones, se tambalean los reinos:",
+        "CEI": "Fremettero le genti, i regni si scossero; egli tuonò, si sgretolò la terra."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "יְהוָ֣ה צְבָא֣וֹת עִמָּ֑/נוּ מִשְׂגָּֽב לָ֝/נוּ אֱלֹהֵ֖י יַעֲקֹ֣ב סֶֽלָה׃",
+        "LXX": "ὅτι βασιλεὺς πάσης τῆς γῆς ὁ θεός, ψάλατε συνετῶς.",
+        "VUL": "quoniam rex omnis terræ Deus,/ psallite sapienter./",
+        "SYN": "ибо Бог - Царь всей земли; пойте все разумно.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** des armées est avec nous ; le Dieu de Jacob est pour nous une citadelle. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "The LORD of hosts is with us; our stronghold is the God of Jacob. Selah",
+        "VAT_ES": "El Señor de los ejércitos está con nosotros,",
+        "CEI": "Il Signore degli eserciti è con noi, nostro rifugio è il Dio di Giacobbe."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לְֽכוּ חֲ֭זוּ מִפְעֲל֣וֹת יְהוָ֑ה אֲשֶׁר שָׂ֖ם שַׁמּ֣וֹת בָּ/אָֽרֶץ׃",
+        "LXX": "ἐβασίλευσεν ὁ θεὸς ἐπὶ τὰ ἔθνη, ὁ θεὸς κάθηται ἐπὶ θρόνου ἁγίου αὐτοῦ.",
+        "VUL": "Regnabit Deus super gentes ;/ Deus sedet super sedem sanctam suam./",
+        "SYN": "Бог воцарился над народами, Бог воссел на святом престоле Своем;",
+        "NEO": "Venez, contemplez les œuvres de \\+w Yahweh|strong=\"H3068\"\\+w**, les dévastations qu’il a opérées sur la terre !",
+        "NAB": "Come and see the works of the LORD, who has done fearsome deeds on earth;",
+        "VAT_ES": "Vengan a contemplar las obras del Señor,",
+        "CEI": "Venite, vedete le opere del Signore, egli ha fatto portenti sulla terra."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "מַשְׁבִּ֥ית מִלְחָמוֹת֮ עַד קְצֵ֪ה הָ֫/אָ֥רֶץ קֶ֣שֶׁת יְ֭שַׁבֵּר וְ/קִצֵּ֣ץ חֲנִ֑ית עֲ֝גָל֗וֹת יִשְׂרֹ֥ף בָּ/אֵֽשׁ׃",
+        "LXX": "ἄρχοντες λαῶν συνήχθησαν μετὰ τοῦ θεοῦ Ἀβραάμ, ὅτι τοῦ θεοῦ οἱ κραταιοὶ τῆς γῆς σφόδρα ἐπήρθησαν.",
+        "VUL": "Principes populorum congregati sunt cum Deo Abraham,/ quoniam dii fortes terræ vehementer elevati sunt.]",
+        "SYN": "князья народов собрались к народу Бога Авраамова, ибо щиты земли - Божии; Он превознесен _над ними_.",
+        "NEO": "Il a fait cesser les combats jusqu’au bout de ta terre, il a brisé l’arc, il a rompu la lance, il a consumé par le feu les chars de guerre :",
+        "NAB": "Who stops wars to the ends of the earth, breaks the bow, splinters the spear, and burns the shields with fire;",
+        "VAT_ES": "elimina la guerra hasta los extremos del mundo;",
+        "CEI": "Farà cessare le guerre sino ai confini della terra, romperà gli archi e spezzerà le lance, brucerà con il fuoco gli scudi."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "הַרְפּ֣וּ וּ֭/דְעוּ כִּי אָנֹכִ֣י אֱלֹהִ֑ים אָר֥וּם בַּ֝/גּוֹיִ֗ם אָר֥וּם בָּ/אָֽרֶץ׃",
+        "NEO": "« Arrêtez et reconnaissez que je suis Dieu ; je domine sur les nations, je domine sur la terre ! »",
+        "NAB": "Who says: \"Be still and confess that I am God! I am exalted among the nations, exalted on the earth.\"",
+        "VAT_ES": "Ríndanse y reconozcan que yo soy Dios:",
+        "CEI": "Fermatevi e sappiate che io sono Dio, eccelso tra le genti, eccelso sulla terra."
+      }
+    }
+  }
+}

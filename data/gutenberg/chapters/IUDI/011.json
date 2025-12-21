@@ -1,0 +1,735 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IUDI_011",
+  "book_key": "IUDI",
+  "sequence": 11,
+  "chapter_in": {
+    "MT": 11,
+    "VUL": 11,
+    "LXX": 11
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/יִפְתָּ֣ח הַ/גִּלְעָדִ֗י הָיָה֙ גִּבּ֣וֹר חַ֔יִל וְ/ה֖וּא בֶּן אִשָּׁ֣ה זוֹנָ֑ה וַ/יּ֥וֹלֶד גִּלְעָ֖ד אֶת יִפְתָּֽח׃",
+        "LXX": "Καὶ Ἰεφθάε ὁ Γαλααδείτης ἐπηρμένος δυνάμει· καὶ αὐτὸς υἱὸς γυναικὸς πόρνης, ἣ ἐγέννησεν τῷ Γαλαὰδ τὸν Ἰεφθάε.",
+        "VUL": "Fuit illo tempore Jephte Galaadites vir fortissimus atque pugnator, filius mulieris meretricis, qui natus est de Galaad.",
+        "SYN": "Иеффай Галаадитянин был человек храбрый. Он был сын блудницы; от Галаада родился Иеффай.",
+        "NEO": "Jephté, le Galaadite, était un vaillant guerrier. Il était fils d’une courtisane et c’est Galaad qui avait engendré Jephté.",
+        "NAB": "There was a chieftain, the Gileadite Jephthah, born to Gilead of a harlot.",
+        "VAT_ES": "Jefté, el galaadita, era un guerrero valeroso. Galaad, su padre, lo había tenido con una prostituta.",
+        "CEI": "Ora Iefte, il Galaadita, era uomo forte e valoroso, figlio di una prostituta; lo aveva generato Gàlaad."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/תֵּ֧לֶד אֵֽשֶׁת גִּלְעָ֛ד ל֖/וֹ בָּנִ֑ים וַ/יִּגְדְּל֨וּ בְֽנֵי הָ/אִשָּׁ֜ה וַ/יְגָרְשׁ֣וּ אֶת יִפְתָּ֗ח וַ/יֹּ֤אמְרוּ ל/וֹ֙ לֹֽא תִנְחַ֣ל בְּ/בֵית אָבִ֔י/נוּ כִּ֛י בֶּן אִשָּׁ֥ה אַחֶ֖רֶת אָֽתָּה׃",
+        "LXX": "καὶ ἔτεκεν ἡ γυνὴ Γαλαὰδ αὐτῷ υἱούς· καὶ ἡδρύνθησαν οἱ υἱοὶ τῆς γυναικός, καὶ ἐξέβαλον τὸν Ἰεφθάε καὶ εἶπαν αὐτῷ Οὐ κληρονομήσεις ἐν τῷ οἴκῳ τοῦ πατρὸς ἡμῶν, ὅτι υἱὸς γυναικὸς ἑταίρας σύ.",
+        "VUL": "Habuit autem Galaad uxorem, de qua suscepit filios : qui postquam creverant, ejecerunt Jephte, dicentes : Hæres in domo patris nostri esse non poteris, quia de altera matre natus es.",
+        "SYN": "И жена Галаадова родила ему сыновей. Когда возмужали сыновья жены, изгнали они Иеффая, сказав ему: ты не наследник в доме отца нашего, потому что ты сын другой женщины.",
+        "NEO": "La femme de Galaad lui enfanta des fils, et les fils de cette femme grandirent et chassèrent Jephté, en lui disant : « Tu n’hériteras pas dans la maison de notre père, car tu es fils d’une autre femme. »",
+        "NAB": "Gilead's wife had also borne him sons, and on growing up the sons of the wife had driven Jephthah away, saying to him, \"You shall inherit nothing in our family, for you are the son of another woman.\"",
+        "VAT_ES": "Pero como Galaad también tuvo hijos con su esposa, estos, cuando se hicieron grandes, echaron a Jefté, diciéndole: «Tú no participarás de la herencia en la casa de nuestro padres, porque eres hijo de otra mujer».",
+        "CEI": "Poi la moglie di Gàlaad gli partorì figli e, quando i figli della moglie furono adulti, cacciarono Iefte e gli dissero: \"Tu non avrai eredità nella casa di nostro padre, perché sei figlio di un'altra donna\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּבְרַ֤ח יִפְתָּח֙ מִ/פְּנֵ֣י אֶחָ֔י/ו וַ/יֵּ֖שֶׁב בְּ/אֶ֣רֶץ ט֑וֹב וַ/יִּֽתְלַקְּט֤וּ אֶל יִפְתָּח֙ אֲנָשִׁ֣ים רֵיקִ֔ים וַ/יֵּצְא֖וּ עִמּֽ/וֹ׃",
+        "LXX": "καὶ ἔφυγεν Ἰεφθάε ἀπὸ προσώπου ἀδελφῶν αὐτοῦ, καὶ ᾤκησεν ἐν γῇ Τώβ· καὶ συνεστράφησαν πρὸς Ἰεφθάε ἄνδρες κενοί, καὶ ἐξῆλθον μετ’ αὐτοῦ.",
+        "VUL": "Quos ille fugiens atque devitans, habitavit in terra Tob : congregatique sunt ad eum viri inopes, et latrocinantes, et quasi principem sequebantur.",
+        "SYN": "И убежал Иеффай от братьев своих и жил в земле Тов; и собрались к Иеффаю праздные люди и выходили с ним.",
+        "NEO": "Et Jephté s’enfuit loin de ses frères, et il habita dans le pays de Tob. Des gens de rien se rassemblèrent autour de Jephté, et ils faisaient avec lui des excursions.",
+        "NAB": "So Jephthah had fled from his brothers and had taken up residence in the land of Tob. A rabble had joined company with him, and went out with him on raids.",
+        "VAT_ES": "Entonces Jefté huyó lejos de sus hermanos, y se estableció en la región de Tob. Allí se le juntaron unos cuantos aventureros, que lo acompañaban en sus correrías.",
+        "CEI": "Iefte fuggì lontano dai suoi fratelli e si stabilì nel paese di Tob. Attorno a Iefte si raccolsero alcuni sfaccendati e facevano scorrerie con lui."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֖י מִ/יָּמִ֑ים וַ/יִּלָּחֲמ֥וּ בְנֵֽי עַמּ֖וֹן עִם יִשְׂרָאֵֽל׃",
+        "LXX": "Καὶ ἐγένετο ἡνίκα παρετάξαντο οἱ υἱοὶ Ἀμμὼν μετὰ Ἰσραήλ,",
+        "VUL": "In illis diebus pugnabant filii Ammon contra Israël.",
+        "SYN": "Чрез несколько времени Аммонитяне пошли войною на Израиля.",
+        "NEO": "Quelque temps après, les fils d’Ammon firent la guerre à Israël.",
+        "NAB": "Some time later, the Ammonites warred on Israel.",
+        "VAT_ES": "Al cabo de un tiempo, los amonitas hicieron la guerra a Israel.",
+        "CEI": "Qualche tempo dopo gli Ammoniti mossero guerra a Israele."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֕י כַּ/אֲשֶׁר נִלְחֲמ֥וּ בְנֵֽי עַמּ֖וֹן עִם יִשְׂרָאֵ֑ל וַ/יֵּֽלְכוּ֙ זִקְנֵ֣י גִלְעָ֔ד לָ/קַ֥חַת אֶת יִפְתָּ֖ח מֵ/אֶ֥רֶץ טֽוֹב׃",
+        "LXX": "καὶ ἐπορεύθησαν οἱ πρεσβύτεροι Γαλαὰδ λαβεῖν τὸν Ἰεφθάε ἀπὸ τῆς γῆς Τώβ·",
+        "VUL": "Quibus acriter instantibus perrexerunt majores natu de Galaad, ut tollerent in auxilium sui Jephte de terra Tob :",
+        "SYN": "Во время войны Аммонитян с Израильтянами пришли старейшины Галаадские взять Иеффая из земли Тов",
+        "NEO": "Pendant que les fils d’Ammon faisaient la guerre à Israël, les anciens de Galaad allèrent chercher Jephté au pays de Tob.",
+        "NAB": "When this occurred the elders of Gilead went to bring Jephthah from the land of Tob.",
+        "VAT_ES": "Y cuando iban a atacarlo, los ancianos de Galaad fueron a la región de Tob a buscar a Jefté.",
+        "CEI": "Quando gli Ammoniti iniziarono la guerra contro Israele, gli anziani di Gàlaad andarono a prendere Iefte nel paese di Tob."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֣וּ לְ/יִפְתָּ֔ח לְכָ֕/ה וְ/הָיִ֥יתָה לָּ֖/נוּ לְ/קָצִ֑ין וְ/נִֽלָּחֲמָ֖ה בִּ/בְנֵ֥י עַמּֽוֹן׃",
+        "LXX": "καὶ εἶπαν τῷ Ἰεφθάε Δεῦρο καὶ ἔσῃ ἡμῖν εἰς ἀρχηγόν, καὶ παραταξώμεθα πρὸς υἱοὺς Ἀμμών.",
+        "VUL": "dixeruntque ad eum : Veni et esto princeps noster, et pugna contra filios Ammon.",
+        "SYN": "и сказали Иеффаю: приди, будь у нас вождем, и сразимся с Аммонитянами.",
+        "NEO": "Ils dirent à Jephté : « Viens, tu seras notre général, et nous combattrons les fils d’Ammon. »",
+        "NAB": "\"Come,\" they said to Jephthah, \"be our commander that we may be able to fight the Ammonites.\"",
+        "VAT_ES": "«Ven, le dijeron; tú serás nuestro comandante en la lucha contra los amonitas».",
+        "CEI": "Dissero a Iefte: \"Vieni, sii nostro condottiero e combatteremo contro gli Ammoniti\"."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יִפְתָּח֙ לְ/זִקְנֵ֣י גִלְעָ֔ד הֲ/לֹ֤א אַתֶּם֙ שְׂנֵאתֶ֣ם אוֹתִ֔/י וַ/תְּגָרְשׁ֖וּ/נִי מִ/בֵּ֣ית אָבִ֑/י וּ/מַדּ֜וּעַ בָּאתֶ֤ם אֵלַ/י֙ עַ֔תָּה כַּ/אֲשֶׁ֖ר צַ֥ר לָ/כֶֽם׃",
+        "LXX": "καὶ εἶπεν Ἰεφθάε τοῖς πρεσβυτέροις Γαλαάδ Οὐχὶ ὑμεῖς ἐμισήσατέ με, καὶ ἐξεβάλετέ με ἐκ τοῦ οἴκου τοῦ πατρός μου, καὶ ἐξαπεστείλατέ με ἀφ’ ὑμῶν; καὶ διὰ τί ἤλθατε πρὸς μὲ νῦν ἡνίκα χρῄζετε;",
+        "VUL": "Quibus ille respondit : Nonne vos estis, qui odistis me, et ejecistis de domo patris mei ? et nunc venistis ad me necessitate compulsi.",
+        "SYN": "Иеффай сказал старейшинам Галаадским: не вы ли возненавидели меня и выгнали из дома отца моего? зачем же пришли ко мне ныне, когда вы в беде?",
+        "NEO": "Jephté dit aux anciens de Galaad : « Ne m’avez-vous pas haï et chassé de la maison de mon père ? Pourquoi venez-vous à moi, maintenant que vous êtes dans la détresse ? »",
+        "NAB": "\"Are you not the ones who hated me and drove me from my father's house?\" Jephthah replied to the elders of Gilead. \"Why do you come to me now, when you are in distress?\"",
+        "VAT_ES": "Jefté les respondió: «&iquest;No son ustedes los que me odiaron hasta el punto de echarme de la casa de mi padre? &iquest;Por qué acuden a mí ahora que están en un aprieto?».",
+        "CEI": "Ma Iefte rispose agli anziani di Gàlaad: \"Non siete forse voi quelli che mi avete odiato e scacciato dalla casa di mio padre? Perché venite da me ora che siete in difficoltà?\"."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְרוּ֩ זִקְנֵ֨י גִלְעָ֜ד אֶל יִפְתָּ֗ח לָ/כֵן֙ עַתָּה֙ שַׁ֣בְנוּ אֵלֶ֔י/ךָ וְ/הָלַכְתָּ֣ עִמָּ֔/נוּ וְ/נִלְחַמְתָּ֖ בִּ/בְנֵ֣י עַמּ֑וֹן וְ/הָיִ֤יתָ לָּ֨/נוּ֙ לְ/רֹ֔אשׁ לְ/כֹ֖ל יֹשְׁבֵ֥י גִלְעָֽד׃",
+        "LXX": "καὶ εἶπαν οἱ πρεσβύτεροι Γαλαὰδ πρὸς Ἰεφθάε Διὰ τοῦτο νῦν ἐπεστρέψαμεν πρὸς σέ, καὶ πορεύσῃ μεθ’ ἡμῶν καὶ παρατάξῃ πρὸς υἱοὺς Ἀμμών· καὶ ἔσῃ ἡμῖν εἰς ἄρχοντα, πᾶσιν τοῖς οἰκοῦσιν Γαλαάδ.",
+        "VUL": "Dixeruntque principes Galaad ad Jephte : Ob hanc igitur causam nunc ad te venimus, ut proficiscaris nobiscum, et pugnes contra filios Ammon, sisque dux omnium qui habitant in Galaad.",
+        "SYN": "Старейшины Галаадские сказали Иеффаю: для того мы теперь пришли к тебе, чтобы ты пошел с нами и сразился с Аммонитянами и был у нас начальником всех жителей Галаадских.",
+        "NEO": "Les anciens de Galaad dirent à Jephté : « C’est à cause de cela que nous revenons à toi maintenant, pour que tu marches avec nous, que tu combattes les fils d’Ammon, et que tu sois notre chef, le chef de tous les habitants de Galaad. »",
+        "NAB": "The elders of Gilead said to Jephthah, \"In any case, we have now come back to you; if you go with us to fight against the Ammonites, you shall be the leader of all of us who dwell in Gilead.\"",
+        "VAT_ES": "Los ancianos de Galaad dijeron a Jefté: «Sí, de acuerdo. Pero ahora recurrimos a ti para que vengas con nosotros a combatir contra los amonitas. Tú serás nuestro jefe y el de todos los habitantes de Galaad».",
+        "CEI": "Gli anziani di Gàlaad dissero a Iefte: \"Proprio per questo ora ci rivolgiamo a te: verrai con noi, combatterai contro gli Ammoniti e sarai il capo di noi tutti abitanti di Gàlaad\"."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יִפְתָּ֜ח אֶל זִקְנֵ֣י גִלְעָ֗ד אִם מְשִׁיבִ֨ים אַתֶּ֤ם אוֹתִ/י֙ לְ/הִלָּחֵם֙ בִּ/בְנֵ֣י עַמּ֔וֹן וְ/נָתַ֧ן יְהוָ֛ה אוֹתָ֖/ם לְ/פָנָ֑/י אָנֹכִ֕י אֶהְיֶ֥ה לָ/כֶ֖ם לְ/רֹֽאשׁ׃",
+        "LXX": "καὶ εἶπεν Ἰεφθάε πρὸς τοὺς πρεσβυτέρους Γαλαάδ Εἰ ἐπιστρέφετέ με ὑμεῖς παρατάξασθαι ἐν υἱοῖς Ἀμμὼν καὶ παραδῷ Κύριος αὐτοὺς ἐνώπιον ἐμοῦ, καὶ ἐγὼ ἔσομαι ὑμῖν εἰς ἄρχοντα;",
+        "VUL": "Jephte quoque dixit eis : Si vere venistis ad me, ut pugnem pro vobis contra filios Ammon, tradideritque eos Dominus in manus meas, ego ero vester princeps ?",
+        "SYN": "И сказал Иеффай старейшинам Галаадским: если вы возвратите меня, чтобы сразиться с Аммонитянами, и Господь предаст мне их, то останусь ли я у вас начальником?",
+        "NEO": "Jephté répondit aux anciens de Galaad : « Si vous me ramenez pour combattre les fils d’Ammon, et que \\+w Yahweh|strong=\"H3068\"\\+w** les livre entre mes mains, je serai votre chef. »",
+        "NAB": "Jephthah answered the elders of Gilead, \"If you bring me back to fight against the Ammonites and the LORD delivers them up to me, I shall be your leader.\"",
+        "VAT_ES": "Jefté les respondió: «Si me hacen volver para luchar contra los amonitas y el Señor me los entrega, yo seré el jefe de ustedes».",
+        "CEI": "Iefte rispose agli anziani di Gàlaad: \"Se mi riconducete per combattere contro gli Ammoniti e il Signore li mette in mio potere, io sarò vostro capo\"."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֥וּ זִקְנֵֽי גִלְעָ֖ד אֶל יִפְתָּ֑ח יְהוָ֗ה יִהְיֶ֤ה שֹׁמֵ֨עַ֙ בֵּֽינוֹתֵ֔י/נוּ אִם לֹ֥א כִ/דְבָרְ/ךָ֖ כֵּ֥ן נַעֲשֶֽׂה׃",
+        "LXX": "καὶ εἶπαν οἱ πρεσβύτεροι Γαλαὰδ πρὸς Ἰεφθάε Κύριος ἔστω ἀκούων ἀνὰ μέσον ἡμῶν εἰ μὴ κατὰ τὸ ῥῆμά σου οὕτως ποιήσομεν.",
+        "VUL": "Qui responderunt ei : Dominus, qui hæc audit, ipse mediator ac testis est quod nostra promissa faciemus.",
+        "SYN": "Старейшины Галаадские сказали Иеффаю: Господь да будет свидетелем между нами, что мы сделаем по слову твоему!",
+        "NEO": "Les anciens de Galaad dirent à Jephté : « Que \\+w Yahweh|strong=\"H3068\"\\+w** soit témoin entre nous : nous ferons certainement ce que tu dis. »",
+        "NAB": "The elders of Gilead said to Jephthah, \"The LORD is witness between us that we will do as you say.\"",
+        "VAT_ES": "«El Señor nos está escuchando, le respondieron los ancianos de Galaad. &iexcl;Ay de nosotros si no hacemos lo que tú has dicho!».",
+        "CEI": "Gli anziani di Gàlaad dissero a Iefte: \"Il Signore sia testimone tra di noi, se non faremo come hai detto\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֤לֶךְ יִפְתָּח֙ עִם זִקְנֵ֣י גִלְעָ֔ד וַ/יָּשִׂ֨ימוּ הָ/עָ֥ם אוֹת֛/וֹ עֲלֵי/הֶ֖ם לְ/רֹ֣אשׁ וּ/לְ/קָצִ֑ין וַ/יְדַבֵּ֨ר יִפְתָּ֧ח אֶת כָּל דְּבָרָ֛י/ו לִ/פְנֵ֥י יְהוָ֖ה בַּ/מִּצְפָּֽה׃",
+        "LXX": "καὶ ἐπορεύθη Ἰεφθάε μετὰ τῶν πρεσβυτέρων Γαλαάδ, καὶ ἔθηκαν αὐτὸν ὁ λαὸς ἐπ’ αὐτοὺς εἰς κεφαλὴν καὶ εἰς ἀρχηγόν· καὶ ἐλάλησεν Ἰεφθάε τοὺς λόγους αὐτου πάντας ἐνώπιον Κυρίου ἐν Μασσηφά.",
+        "VUL": "Abiit itaque Jephte cum principibus Galaad, fecitque eum omnis populus principem sui. Locutusque est Jephte omnes sermones suos coram Domino in Maspha.",
+        "SYN": "И пошел Иеффай со старейшинами Галаадскими, и народ поставил его над собою начальником и вождем, и Иеффай произнес все слова свои пред лицем Господа в Массифе.",
+        "NEO": "Et Jephté partit avec les anciens de Galaad. Le peuple l’établit sur lui pour chef et général, et Jephté répéta toutes ses paroles devant \\+w Yahweh|strong=\"H3068\"\\+w** à Maspha.",
+        "NAB": "So Jephthah went with the elders of Gilead, and the people made him their leader and commander. In Mizpah, Jephthah settled all his affairs before the LORD.",
+        "VAT_ES": "Jefté partió entonces con los ancianos de Galaad, y el pueblo lo proclamó su jefe y comandante. En Mispá, delante del Señor, Jefté reiteró todas las condiciones que había puesto.",
+        "CEI": "Iefte dunque andò con gli anziani di Gàlaad; il popolo lo costituì suo capo e condottiero e Iefte ripetè le sue parole davanti al Signore in Mizpa."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח יִפְתָּח֙ מַלְאָכִ֔ים אֶל מֶ֥לֶךְ בְּנֵֽי עַמּ֖וֹן לֵ/אמֹ֑ר מַה לִּ֣/י וָ/לָ֔/ךְ כִּֽי בָ֥אתָ אֵלַ֖/י לְ/הִלָּחֵ֥ם בְּ/אַרְצִֽ/י׃",
+        "LXX": "Καὶ ἀπέστειλεν Ἰεφθάε ἀγγέλους πρὸς βασιλέα υἱῶν Ἀμμὼν λέγων Τί ἐμοὶ καὶ σοί, ὅτι ἦλθες πρὸς μὲ τοῦ παρατάξασθαι ἐν τῇ γῇ μου;",
+        "VUL": "Et misit nuntios ad regem filiorum Ammon, qui ex persona sua dicerent : Quid mihi et tibi est, quia venisti contra me, ut vastares terram meam ?",
+        "SYN": "И послал Иеффай послов к царю Аммонитскому сказать: что тебе до меня, что ты пришел ко мне воевать на земле моей?",
+        "NEO": "Jephté envoya des messagers au roi des fils d’Ammon, pour lui dire : « Qu’y a-t-il entre moi et toi, que tu sois venu contre moi pour faire la guerre à mon pays ? »",
+        "NAB": "Then he sent messengers to the king of the Ammonites to say, \"What have you against me that you come to fight with me in my land?\"",
+        "VAT_ES": "Después, Jefté envió mensajeros al rey de los amonitas, para decirle: «&iquest;Qué tenemos que ver tú y yo, para que vengas a atacarme en mi propio país?».",
+        "CEI": "Poi Iefte inviò messaggeri al re degli Ammoniti per dirgli: \"Che c'è tra me e te, perché tu venga contro di me a muover guerra al mio paese?\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֩ מֶ֨לֶךְ בְּנֵי עַמּ֜וֹן אֶל מַלְאֲכֵ֣י יִפְתָּ֗ח כִּֽי לָקַ֨ח יִשְׂרָאֵ֤ל אֶת אַרְצִ/י֙ בַּ/עֲלוֹת֣/וֹ מִ/מִּצְרַ֔יִם מֵ/אַרְנ֥וֹן וְ/עַד הַ/יַּבֹּ֖ק וְ/עַד הַ/יַּרְדֵּ֑ן וְ/עַתָּ֕ה הָשִׁ֥יבָ/ה אֶתְ/הֶ֖ן בְּ/שָׁלֽוֹם׃",
+        "LXX": "καὶ εἶπεν βασιλεὺς υἱῶν Ἀμμὼν πρὸς τοὺς ἀγγέλους Ἰεφθάε Ὅτι ἔλαβεν Ἰσραὴλ τὴν γῆν μου ἐν τῷ ἀναβαίνειν αὐτὸν ἐξ Αἰγύπτου ἀπὸ Ἀρνὼν καὶ ἕως Ἰαβὸκ καὶ ἕως τοῦ Ἰορδάνου· καὶ νῦν ἐπίστρεψον αὐτὰς ἐν εἰρήνῃ, καὶ πορεύσομαι.",
+        "VUL": "Quibus ille respondit : Quia tulit Israël terram meam, quando ascendit de Ægypto, a finibus Arnon usque Jaboc atque Jordanem : nunc ergo cum pace redde mihi eam.",
+        "SYN": "Царь Аммонитский сказал послам Иеффая: Израиль, когда шел из Египта, взял землю мою от Арнона до Иавока и Иордана; итак возврати мне ее с миром [и я отступлю].",
+        "NEO": "Le roi des fils d’Ammon répondit aux messagers de Jephté : « C’est qu’Israël, lorsqu’il monta d’Égypte, s’empara de mon pays, depuis l’Arnon jusqu’au Jaboc et au Jourdain. Rends-le maintenant de bon gré. »",
+        "NAB": "He answered the messengers of Jephthah, \"Israel took away my land from the Arnon to the Jabbok and the Jordan when they came up from Egypt. Now restore the same peaceably.\"",
+        "VAT_ES": "El rey de los amonitas respondió a los mensajeros de Jefté: «Lo que pasa es que Israel, cuando subía de Egipto, se apoderó de mi territorio desde el Arnón hasta el Iaboc y el Jordán. Ahora, devuélvemelo por las buenas».",
+        "CEI": "Il re degli Ammoniti rispose ai messaggeri di Iefte: \"Perché, quando Israele uscì dall'Egitto, si impadronì del mio territorio, dall'Arnon fino allo Iabbok e al Giordano; restituiscilo spontaneamente\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יּ֥וֹסֶף ע֖וֹד יִפְתָּ֑ח וַ/יִּשְׁלַח֙ מַלְאָכִ֔ים אֶל מֶ֖לֶךְ בְּנֵ֥י עַמּֽוֹן׃",
+        "LXX": "καὶ προσέθηκεν ἔτι Ἰεφθάε καὶ ἀπέστειλεν ἀγγέλους πρὸς βασιλέα υἱῶν Ἀμμών,",
+        "VUL": "Per quos rursum mandavit Jephte, et imperavit eis ut dicerent regi Ammon :",
+        "SYN": "[И возвратились послы к Иеффаю.] Иеффай в другой раз послал послов к царю Аммонитскому,",
+        "NEO": "Jephté envoya de nouveau des messagers au roi des fils d’Ammon,",
+        "NAB": "Again Jephthah sent messengers to the king of the Ammonites,",
+        "VAT_ES": "Jefté volvió a enviar mensajeros al rey de los amonitas,",
+        "CEI": "Iefte inviò di nuovo messaggeri al re degli Ammoniti per dirgli:"
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר ל֔/וֹ כֹּ֖ה אָמַ֣ר יִפְתָּ֑ח לֹֽא לָקַ֤ח יִשְׂרָאֵל֙ אֶת אֶ֣רֶץ מוֹאָ֔ב וְ/אֶת אֶ֖רֶץ בְּנֵ֥י עַמּֽוֹן׃",
+        "LXX": "καὶ εἶπεν αὐτῷ Οὕτω λέγει Ἰεφθάε Οὐκ ἔλαβεν Ἰσραὴλ τὴν γῆν Μωὰβ καὶ τὴν γῆν υἱῶν Ἀμμών.",
+        "VUL": "Hæc dicit Jephte : Non tulit Israël terram Moab, nec terram filiorum Ammon :",
+        "SYN": "сказать ему: так говорит Иеффай: Израиль не взял земли Моавитской и земли Аммонитской;",
+        "NEO": "et il lui dit : « Ainsi parle Jephté : Israël ne s’est emparé ni du pays de Moab, ni du pays des fils d’Ammon.",
+        "NAB": "saying to him, \"This is what Jephthah says: Israel did not take the land of Moab or the land of the Ammonites.",
+        "VAT_ES": "para decirle: «Así habla Jefté: Israel no se apoderó del país de Moab ni del país de los amonitas.",
+        "CEI": "\"Dice Iefte: Israele non si impadronì del paese di Moab, né del paese degli Ammoniti;"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "כִּ֖י בַּ/עֲלוֹתָ֣/ם מִ/מִּצְרָ֑יִם וַ/יֵּ֨לֶךְ יִשְׂרָאֵ֤ל בַּ/מִּדְבָּר֙ עַד יַם ס֔וּף וַ/יָּבֹ֖א קָדֵֽשָׁ/ה׃",
+        "LXX": "ὅτι ἐν τῷ ἀναβαίνειν αὐτοὺς ἐξ Αἰγύπτου ἐπορεύθη Ἰσραὴλ ἐν τῇ ἐρήμῳ ἕως θαλάσσης Σείφ, καὶ ἦλθεν εἰς Καδής.",
+        "VUL": "sed quando de Ægypto conscenderunt, ambulavit per solitudinem usque ad mare Rubrum, et venit in Cades.",
+        "SYN": "ибо когда шли из Египта, Израиль пошел в пустыню к Чермному морю и пришел в Кадес;",
+        "NEO": "Car lorsqu’Israël monta d’Égypte, il marcha dans le désert jusqu’à la mer Rouge, et il arriva à Cadès.",
+        "NAB": "For when they came up from Egypt, Israel went through the desert to the Red Sea and came to Kadesh.",
+        "VAT_ES": "Cuando subía de Egipto, caminó por el desierto hasta el Mar Rojo y después llegó a Cades.",
+        "CEI": "ma, quando Israele uscì dall'Egitto e attraversò il deserto fino al Mare Rosso e giunse a Kades,"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֣ח יִשְׂרָאֵ֣ל מַלְאָכִ֣ים אֶל מֶלֶךְ֩ אֱד֨וֹם לֵ/אמֹ֜ר אֶעְבְּרָה נָּ֣א בְ/אַרְצֶ֗/ךָ וְ/לֹ֤א שָׁמַע֙ מֶ֣לֶךְ אֱד֔וֹם וְ/גַ֨ם אֶל מֶ֧לֶךְ מוֹאָ֛ב שָׁלַ֖ח וְ/לֹ֣א אָבָ֑ה וַ/יֵּ֥שֶׁב יִשְׂרָאֵ֖ל בְּ/קָדֵֽשׁ׃",
+        "LXX": "καὶ ἀπέστειλεν Ἰσραὴλ ἀγγέλους πρός βασιλέα Ἐδὼμ λέγων Παρελεύσομαι δὴ ἐν τῇ γῇ σου· καὶ οὐκ ἤκουσεν βασιλεύς Ἐδώμ· καὶ πρὸς βασιλέα Μωὰβ ἀπέστειλεν, καὶ οὐκ εὐδόκησεν. καὶ ἐκάθισεν Ἰσραὴλ ἐν Καδής,",
+        "VUL": "Misitque nuntios ad regem Edom, dicens : Dimitte me ut transeam per terram tuam. Qui noluit acquiescere precibus ejus. Misit quoque ad regem Moab, qui et ipse transitum præbere contempsit. Mansit itaque in Cades,",
+        "SYN": "оттуда послал Израиль послов к царю Едомскому сказать: \"позволь мне пройти землею твоею\"; но царь Едомский не послушал; и к царю Моавитскому он посылал, но и тот не согласился; посему Израиль оставался в Кадесе.",
+        "NEO": "Alors Israël envoya des messagers au roi d’Edom, pour lui dire : Laisse-moi, je te prie, passer par ton pays ; mais le roi d’Edom n’y consentit pas. Il en envoya aussi au roi de Moab, qui refusa également ; et Israël resta à Cadés.",
+        "NAB": "Israel then sent messengers to the king of Edom saying, 'Let me pass through your land.' But the king of Edom did not give consent. They also sent to the king of Moab, but he too was unwilling. So Israel remained in Kadesh.",
+        "VAT_ES": "Entonces envió mensajeros para que dijeran al rey de Edom: «Por favor, déjame pasar por tu país». Pero el rey de Edom no les hizo caso. También envió mensajeros al rey de Moab; pero tampoco este quiso acceder, y entonces Israel se quedó en Cades.",
+        "CEI": "mandò messaggeri al re di Edom per dirgli: Lasciami passare per il tuo paese, ma il re di Edom non acconsentì. Mandò anche al re di Moab, nemmeno lui volle e Israele rimase a Kades."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֣לֶךְ בַּ/מִּדְבָּ֗ר וַ/יָּ֜סָב אֶת אֶ֤רֶץ אֱדוֹם֙ וְ/אֶת אֶ֣רֶץ מוֹאָ֔ב וַ/יָּבֹ֤א מִ/מִּזְרַח שֶׁ֨מֶשׁ֙ לְ/אֶ֣רֶץ מוֹאָ֔ב וַֽ/יַּחֲנ֖וּ/ן בְּ/עֵ֣בֶר אַרְנ֑וֹן וְ/לֹא בָ֨אוּ֙ בִּ/גְב֣וּל מוֹאָ֔ב כִּ֥י אַרְנ֖וֹן גְּב֥וּל מוֹאָֽב׃",
+        "LXX": "καὶ ἐπορεύθη ἐν τῇ ἐρήμῳ, καὶ ἐκύκλωσεν τὴν γῆν Ἐδὼμ καὶ τὴν Μωάβ· καὶ ἦλθεν ἀπὸ ἀνατολῶν ἡλίου τῇ γῇ Μωὰβ καὶ παρενέβαλον ἐν πέραν Ἀρνών, καὶ οὐκ εἰσῆλθεν ἐν ὁρίοις Μωάβ, ὅτι Ἀρνὼν ὅριον Μωάβ.",
+        "VUL": "et circuivit ex latere terram Edom et terram Moab : venitque contra orientalem plagam terræ Moab, et castrametatus est trans Arnon : nec voluit intrare terminos Moab. (Arnon quippe confinium est terræ Moab.)",
+        "SYN": "И пошел пустынею, и миновал землю Едомскую и землю Моавитскую, и, придя к восточному пределу земли Моавитской, расположился станом за Арноном; но не входил в пределы Моавитские, ибо Арнон есть предел Моава.",
+        "NEO": "Puis, marchant par le désert, il tourna le pays d’Edom et le pays de Moab, et arriva à l’orient du pays de Moab. Et ils campèrent au delà de l’Arnon, et ils ne vinrent pas sur la frontière de Moab, car l’Arnon est la frontière de Moab.",
+        "NAB": "Then they went through the desert, and by-passing the land of Edom and the land of Moab, went east of the land of Moab and encamped across the Arnon. Thus they did not go through the territory of Moab, for the Arnon is the boundary of Moab.",
+        "VAT_ES": "Luego tomó por el desierto, bordeando el territorio de Edom y de Moab, y así llegó hasta la parte oriental del país de Moab. Acampó al otro lado del Arnón, sin violar la frontera de Moab, porque el Arnón está en el límite de Moab.",
+        "CEI": "Poi camminò per il deserto, fece il giro del paese di Edom e del paese di Moab, giunse a oriente del paese di Moab e si accampò oltre l'Arnon senza entrare nei territori di Moab; perché l'Arnon segna il confine di Moab."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֤ח יִשְׂרָאֵל֙ מַלְאָכִ֔ים אֶל סִיח֥וֹן מֶֽלֶךְ הָ/אֱמֹרִ֖י מֶ֣לֶךְ חֶשְׁבּ֑וֹן וַ/יֹּ֤אמֶר ל/וֹ֙ יִשְׂרָאֵ֔ל נַעְבְּרָה נָּ֥א בְ/אַרְצְ/ךָ֖ עַד מְקוֹמִֽ/י׃",
+        "LXX": "καὶ ἀπέστειλεν καὶ εἶπεν αὐτῷ Ἰσραήλ Παρέλθωμεν δὴ ἐν τῇ γῇ σου ἕως τοῦ τόπου ἡμῶν.",
+        "VUL": "Misit itaque Israël nuntios ad Sehon regem Amorrhæorum, qui habitabat in Hesebon, et dixerunt ei : Dimitte ut transeam per terram tuam usque ad fluvium.",
+        "SYN": "И послал Израиль послов к Сигону, царю Аморрейскому, царю Есевонскому, и сказал ему Израиль: позволь нам пройти землею твоею в свое место.",
+        "NEO": "De là, Israël envoya des messagers à Séhon, roi des Amorrhéens, roi de Hésebon ; et Israël lui dit : Laisse-nous, je te prie, passer par ton pays jusqu’à notre lieu.",
+        "NAB": "Then Israel sent messengers to Sihon, king of the Amorites, king of Heshbon. Israel said to him, 'Let me pass through your land to my own place.'",
+        "VAT_ES": "Luego envió mensajeros a Sijón, el rey de los amorreos que reinaba en Jesbón, y le dijo: «Por favor, déjame pasar por tu país hasta llegar a mi destino».",
+        "CEI": "Allora Israele mandò messaggeri a Sicon, re degli Amorrèi, re di Chesbòn, e gli disse: Lasciaci passare dal tuo paese, per arrivare al nostro."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/לֹא הֶאֱמִ֨ין סִיח֤וֹן אֶת יִשְׂרָאֵל֙ עֲבֹ֣ר בִּ/גְבֻל֔/וֹ וַ/יֶּאֱסֹ֤ף סִיחוֹן֙ אֶת כָּל עַמּ֔/וֹ וַֽ/יַּחֲנ֖וּ בְּ/יָ֑הְצָ/ה וַ/יִּלָּ֖חֶם עִם יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ οὐκ ἐνεπίστευσεν Σηὼν τῷ Ἰσραὴλ παρελθεῖν ἐν ὁρίῳ αὐτοῦ· καὶ συνῆξεν Σηὼν τὸν πάντα λαὸν αὐτοῦ, καὶ παρενέβαλον εἰς Ἰάσα, καὶ παρετάξατο πρὸς Ἰσραήλ.",
+        "VUL": "Qui et ipse Israël verba despiciens, non dimisit eum transire per terminos suos : sed infinita multitudine congregata, egressus est contra eum in Jasa, et fortiter resistebat.",
+        "SYN": "Но Сигон не согласился пропустить Израиля чрез пределы свои, и собрал Сигон весь народ свой, и расположился станом в Иааце, и сразился с Израилем.",
+        "NEO": "Mais Séhon ne se fia pas assez à Israël pour le laisser passer sur son territoire. Séhon rassembla tout son peuple ; ils campèrent à Jasa, et il combattit contre Israël.",
+        "NAB": "But Sihon refused to let Israel pass through his territory. On the contrary, he gathered all his soldiers, who encamped at Jahaz and fought Israel.",
+        "VAT_ES": "Pero Sijón, que desconfiaba de Israel, no lo dejó pasar por su territorio, sino que reunió a toda su gente, acampó en Iahsá y atacó a Israel.",
+        "CEI": "Ma Sicon non si fidò che Israele passasse per i suoi confini; anzi radunò tutta la sua gente, si accampò a Iaaz e combattè contro Israele."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ֠/יִּתֵּן יְהוָ֨ה אֱלֹהֵֽי יִשְׂרָאֵ֜ל אֶת סִיח֧וֹן וְ/אֶת כָּל עַמּ֛/וֹ בְּ/יַ֥ד יִשְׂרָאֵ֖ל וַ/יַּכּ֑וּ/ם וַ/יִּירַשׁ֙ יִשְׂרָאֵ֔ל אֵ֚ת כָּל אֶ֣רֶץ הָ/אֱמֹרִ֔י יוֹשֵׁ֖ב הָ/אָ֥רֶץ הַ/הִֽיא׃",
+        "LXX": "καὶ παρέδωκεν Κύριος ὁ θεὸς Ἰσραὴλ τὸν Σηὼν καὶ πάντα τὸν λαὸν αὐτοῦ ἐν χειρὶ Ἰσραήλ, καὶ ἐπάταξεν αὐτόν· καὶ ἐκληρονόμησεν Ἰσραὴλ τὴν πᾶσαν γῆν τοῦ Ἀμορραίου τοῦ κατοικοῦντος τὴν γῆν ἐκείνην,",
+        "VUL": "Tradiditque eum Dominus in manus Israël cum omni exercitu suo : qui percussit eum, et possedit omnem terram Amorrhæi habitatoris regionis illius,",
+        "SYN": "И предал Господь Бог Израилев Сигона и весь народ его в руки Израилю, и он побил их; и получил Израиль в наследие всю землю Аморрея, жившего в земле той;",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël, livra Séhon et tout son peuple entre les mains d’Israël, qui les battit ; et Israël s’empara de tout le pays des Amorrhéens qui habitaient dans cette contrée ;",
+        "NAB": "But the LORD, the God of Israel, delivered Sihon and all his men into the power of Israel, who defeated them and occupied all the land of the Amorites dwelling in that region,",
+        "VAT_ES": "El Señor, el Dios de Israel, entregó en manos de los israelitas a Sijón con todas sus tropas. Israel los derrotó y ocupó todo el país de los amorreos que habitaban en esa región.",
+        "CEI": "Il Signore, Dio d'Israele, mise Sicon e tutta la sua gente nelle mani d'Israele, che li sconfisse; così Israele conquistò tutto il paese degli Amorrèi che abitavano quel territoro;"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יִּ֣ירְשׁ֔וּ אֵ֖ת כָּל גְּב֣וּל הָ/אֱמֹרִ֑י מֵֽ/אַרְנוֹן֙ וְ/עַד הַ/יַּבֹּ֔ק וּ/מִן הַ/מִּדְבָּ֖ר וְ/עַד הַ/יַּרְדֵּֽן׃",
+        "LXX": "ἀπὸ Ἀρνὼν καὶ ἕως τοῦ Ἰαβὸκ καὶ ἀπὸ τῆς ἐρήμου ἕως τοῦ Ἰορδάνου.",
+        "VUL": "et universos fines ejus, de Arnon usque Jaboc, et de solitudine usque ad Jordanem.",
+        "SYN": "и получили они в наследие все пределы Аморрея от Арнона до Иавока и от пустыни до Иордана.",
+        "NEO": "ils s’emparèrent de tout le territoire des Amorrhéens, depuis l’Arnon jusqu’au Jaboc, et depuis le désert jusqu’au Jourdain.",
+        "NAB": "the whole territory from the Arnon to the Jabbok, from the desert to the Jordan.",
+        "VAT_ES": "Así ocuparon todo el territorio de los amorreos, desde el Arnón hasta el Iaboc y desde el desierto hasta el Jordán.",
+        "CEI": "conquistò tutti i territori degli Amorrèi, dall'Arnon allo Iabbok e dal deserto al Giordano."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֞ה יְהוָ֣ה אֱלֹהֵ֣י יִשְׂרָאֵ֗ל הוֹרִישׁ֙ אֶת הָ֣/אֱמֹרִ֔י מִ/פְּנֵ֖י עַמּ֣/וֹ יִשְׂרָאֵ֑ל וְ/אַתָּ֖ה תִּירָשֶֽׁ/נּוּ׃",
+        "LXX": "καὶ νῦν Κύριος ὁ θεὸς Ἰσραὴλ ἐξῆρεν τὸν Ἀμορραῖον ἀπὸ προσώπου λαοῦ αὐτοῦ Ἰσραήλ, καὶ σὺ κληρονομήσεις αὐτόν;",
+        "VUL": "Dominus ergo Deus Israël subvertit Amorrhæum, pugnante contra illum populo suo Israël, et tu nunc vis possidere terram ejus ?",
+        "SYN": "Итак Господь Бог Израилев изгнал Аморрея от лица народа Своего Израиля, а ты хочешь взять его наследие?",
+        "NEO": "Maintenant que \\+w Yahweh|strong=\"H3068\"\\+w**, le Dieu d’Israël, a chassé les Amorrhéens devant son peuple d’Israël, toi tu chasserais celui-ci !",
+        "NAB": "If now the LORD, the God of Israel, has cleared the Amorites out of the way of his people, are you to dislodge Israel?",
+        "VAT_ES": "Y ahora que el Señor, el Dios de Israel, ha desposeído a los amorreos delante de su pueblo Israel,, &iquest;lo vas a desposeer tú a él?",
+        "CEI": "Ora il Signore, Dio d'Israele, ha scacciato gli Amorrèi davanti a Israele suo popolo e tu vorresti possedere il loro paese?"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "הֲ/לֹ֞א אֵ֣ת אֲשֶׁ֧ר יוֹרִֽישְׁ/ךָ֛ כְּמ֥וֹשׁ אֱלֹהֶ֖י/ךָ אוֹת֥/וֹ תִירָ֑שׁ וְ/אֵת֩ כָּל אֲשֶׁ֨ר הוֹרִ֜ישׁ יְהוָ֧ה אֱלֹהֵ֛י/נוּ מִ/פָּנֵ֖י/נוּ אוֹת֥/וֹ נִירָֽשׁ׃",
+        "LXX": "οὐχὶ ἃ ἐὰν κληρονομήσει σε Ἁμὼς ὁ θεός σου, αὐτὰ κληρονομήσεις; καὶ τοὺς πάντας οὓς ἐξῆρεν Κύριος ὁ θεὸς ἡμῶν ἀπὸ προσώπου ἡμῶν, αὐτοὺς κληρονομήσομεν.",
+        "VUL": "nonne ea quæ possidet Chamos deus tuus, tibi jure debentur ? quæ autem Dominus Deus noster victor obtinuit, in nostram cedent possessionem :",
+        "SYN": "Не владеешь ли ты тем, что дал тебе Хамос, бог твой? И мы владеем всем тем, что дал нам в наследие Господь Бог наш.",
+        "NEO": "Ce dont ton Dieu Chamos t’a mis en possession, ne le possèdes-tu pas ? Et tout ce que \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu, a mis devant nous en notre possession, nous ne le posséderions pas !",
+        "NAB": "Should you not possess that which your god Chemosh gave you to possess, and should we not possess all that the LORD, our God, has cleared out for us?",
+        "VAT_ES": "&iquest;No tienes acaso lo que te dio en posesión tu dios Quemós? Así también nosotros tenemos todo lo que nos ha dado en posesión el Señor, nuestro Dios.",
+        "CEI": "Non possiedi tu quello che Camos tuo dio ti ha fatto possedere? Così anche noi possiederemo il paese di quelli che il Signore ha scacciati davanti a noi."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה הֲ/ט֥וֹב טוֹב֙ אַתָּ֔ה מִ/בָּלָ֥ק בֶּן צִפּ֖וֹר מֶ֣לֶךְ מוֹאָ֑ב הֲ/ר֥וֹב רָב֙ עִם יִשְׂרָאֵ֔ל אִם נִלְחֹ֥ם נִלְחַ֖ם בָּֽ/ם׃",
+        "LXX": "καὶ νῦν μὴ ἐν ἀγαθῷ ἀγαθώτερος σὺ ὑπὲρ Βαλὰκ υἱὸν Σεπφὼρ βασιλέα Μωάβ; μὴ μαχόμενος ἐμαχέσατο μετὰ Ἰσραὴλ ἢ πολεμῶν ἐπολέμησεν αὐτόν",
+        "VUL": "nisi forte melior es Balac filio Sephor rege Moab ; aut docere potes, quod jurgatus sit contra Israël, et pugnaverit contra eum,",
+        "SYN": "Разве ты лучше Валака, сына Сепфорова, царя Моавитского? Ссорился ли он с Израилем, или воевал ли с ними?",
+        "NEO": "Vaudrais-tu donc mieux que Balac, fils de Séphor, roi de Moab ? A-t-il contesté avec Israël, ou lui a-t-il fait la guerre ?",
+        "NAB": "Again, are you any better than Balak, son of Zippor, king of Moab? Did he ever quarrel with Israel, or did he war against them",
+        "VAT_ES": "&iquest;Vas a ser tú más que Balac, hijo de Sipor, rey de Moab? &iquest;Se atrevió él a entrar en litigio con Israel o le hizo la guerra?",
+        "CEI": "Sei tu forse più di Balak, figlio di Zippor, re di Moab? Mosse forse querela ad Israele o gli fece guerra?"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "בְּ/שֶׁ֣בֶת יִ֠שְׂרָאֵל בְּ/חֶשְׁבּ֨וֹן וּ/בִ/בְנוֹתֶ֜י/הָ וּ/בְ/עַרְע֣וֹר וּ/בִ/בְנוֹתֶ֗י/הָ וּ/בְ/כָל הֶֽ/עָרִים֙ אֲשֶׁר֙ עַל יְדֵ֣י אַרְנ֔וֹן שְׁלֹ֥שׁ מֵא֖וֹת שָׁנָ֑ה וּ/מַדּ֥וּעַ לֹֽא הִצַּלְתֶּ֖ם בָּ/עֵ֥ת הַ/הִֽיא׃",
+        "LXX": "ἐν τῷ οἰκῆσαι ἐν Ἑσεβὼν καὶ ἐν τοῖς ὁρίοις αὐτῆς καὶ ἐν γῇ Ἀροὴρ καὶ ἐν τοῖς ὁρίοις αὐτῆς καὶ ἐν πάσαις ταῖς πόλεσιν ταῖς παρὰ τὸν Ἰορδάνην τριακόσια ἔτη; καὶ διὰ τί οὐκ ἐρρύσω αὐτοὺς ἐν καιρῷ ἐκείνῳ;",
+        "VUL": "quando habitavit in Hesebon et viculis ejus, et in Aroër et villis illius, vel in cunctis civitatibus juxta Jordanem, per trecentos annos. Quare tanto tempore nihil super hac repetitione tentastis ?",
+        "SYN": "Израиль уже живет триста лет в Есевоне и в зависящих от него _городах,_ в Ароере и зависящих от него _городах,_ и во всех городах, которые близ Арнона; для чего вы в то время не отнимали [их]?",
+        "NEO": "Voilà trois cents ans qu’Israël habite à Hésebon et dans les villes de sa dépendance, à Aroër et dans les villes de sa dépendance, ainsi que dans toutes les villes qui sont sur les bords de l’Arnon ; pourquoi ne les lui avez-vous pas enlevées pendant ce temps-là ?",
+        "NAB": "when Israel occupied Heshbon and its villages, Aroer and its villages, and all the cities on the banks of the Arnon? Three hundred years have passed; why did you not recover them during that time?",
+        "VAT_ES": "Cuando Israel se estableció en Jesbón y sus poblados, en Aroer y sus poblados, y en todas las ciudades que están a orillas del Arnón, hace ya trescientos años, &iquest;por qué ustedes no las recuperaron?",
+        "CEI": "Da trecento anni Israele abita a Chesbòn e nelle sue dipendenze, ad Aroer e nelle sue dipendenze e in tutte le città lungo l'Arnon; perché non gliele avete tolte durante questo tempo?"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/אָֽנֹכִי֙ לֹֽא חָטָ֣אתִי לָ֔/ךְ וְ/אַתָּ֞ה עֹשֶׂ֥ה אִתִּ֛/י רָעָ֖ה לְ/הִלָּ֣חֶם בִּ֑/י יִשְׁפֹּ֨ט יְהוָ֤ה הַ/שֹּׁפֵט֙ הַ/יּ֔וֹם בֵּ֚ין בְּנֵ֣י יִשְׂרָאֵ֔ל וּ/בֵ֖ין בְּנֵ֥י עַמּֽוֹן׃",
+        "LXX": "καὶ νῦν ἐγώ εἰμι οὐχ ἥμαρτόν σοι, καὶ σὺ ποιεῖς μετ’ ἐμοῦ πονηρίαν τοῦ παρατάξασθαι ἐν ἐμοί· κρίναι Κύριος κρίνων σήμερον ἀνὰ μέσον υἱῶν Ἰσραὴλ καὶ ἀνὰ μέσον υἱῶν Ἀμμών.",
+        "VUL": "Igitur non ego pecco in te, sed tu contra me male agis, indicens mihi bella non justa. Judicet Dominus arbiter hujus diei inter Israël, et inter filios Ammon.",
+        "SYN": "А я не виновен пред тобою, и ты делаешь мне зло, выступив против меня войною. Господь Судия да будет ныне судьею между сынами Израиля и между Аммонитянами!",
+        "NEO": "Moi, je n’ai pas péché contre toi ; mais toi, tu agis mal envers moi en me faisant la guerre. Que \\+w Yahweh|strong=\"H3068\"\\+w**, le Juge suprême, juge aujourd’hui entre les enfants d’Israël et les fils d’Ammon. »",
+        "NAB": "I have not sinned against you, but you wrong me by warring against me. Let the LORD, who is judge, decide this day between the Israelites and the Ammonites!\"",
+        "VAT_ES": "Yo no te ofendí: eres tú el que procede mal conmigo si me atacas. Que el Señor, el Juez, juzgue hoy quién tiene razón, si los israelitas o los amonitas».",
+        "CEI": "Io non ti ho fatto torto e tu agisci male verso di me, muovendomi guerra; il Signore giudice giudichi oggi tra gli Israeliti e gli Ammoniti!\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וְ/לֹ֣א שָׁמַ֔ע מֶ֖לֶךְ בְּנֵ֣י עַמּ֑וֹן אֶל דִּבְרֵ֣י יִפְתָּ֔ח אֲשֶׁ֥ר שָׁלַ֖ח אֵלָֽי/ו׃",
+        "LXX": "καὶ οὐκ ἤκουσεν βασιλεὺς υἱῶν Ἀμμὼν τῶν λόγων Ἰεφθάε ὧν ἀπέστειλεν πρὸς αὐτόν.",
+        "VUL": "Noluitque acquiescere rex filiorum Ammon verbis Jephte, quæ per nuntios mandaverat.",
+        "SYN": "Но царь Аммонитский не послушал слов Иеффая, с которыми он посылал к нему.",
+        "NEO": "Le roi des fils d’Ammon, n’écouta pas les paroles que Jephté lui avait envoyé dire.",
+        "NAB": "But the king of the Ammonites paid no heed to the message Jephthah sent him.",
+        "VAT_ES": "Pero el rey de los amonitas no tuvo en cuenta lo que Jefté le había mandado decir.",
+        "CEI": "Ma il re degli Ammoniti non ascoltò le parole che Iefte gli aveva mandato a dire."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וַ/תְּהִ֤י עַל יִפְתָּח֙ ר֣וּחַ יְהוָ֔ה וַ/יַּעֲבֹ֥ר אֶת הַ/גִּלְעָ֖ד וְ/אֶת מְנַשֶּׁ֑ה וַֽ/יַּעֲבֹר֙ אֶת מִצְפֵּ֣ה גִלְעָ֔ד וּ/מִ/מִּצְפֵּ֣ה גִלְעָ֔ד עָבַ֖ר בְּנֵ֥י עַמּֽוֹן׃",
+        "LXX": "Καὶ ἐγένετο ἐπὶ Ἰεφθάε πνεῦμα Κυρίου, καὶ παρῆλθεν τὸν Γαλαὰδ καὶ τὸν Μανασσή, καὶ παρῆλθεν τὴν σκοπιὰν Γαλαὰδ εἰς τὸ πέραν υἱῶν Ἀμμών.",
+        "VUL": "Factus est ergo super Jephte spiritus Domini, et circuiens Galaad et Manasse, Maspha quoque Galaad, et inde transiens ad filios Ammon,",
+        "SYN": "И был на Иеффае Дух Господень, и прошел он Галаад и Манассию, и прошел Массифу Галаадскую, и из Массифы Галаадской пошел к Аммонитянам.",
+        "NEO": "L’Esprit de \\+w Yahweh|strong=\"H3068\"\\+w** fut sur Jephté. Il traversa Galaad et Manassé, et passa jusqu’à Maspha de Galaad ; et de Maspha de Galaad il marcha contre les fils d’Ammon.",
+        "NAB": "The spirit of the LORD came upon Jephthah. He passed through Gilead and Manasseh, and through Mizpah-Gilead as well, and from there he went on to the Ammonites.",
+        "VAT_ES": "El espíritu del Señor descendió sobre Jefté, y este recorrió Galaad y Manasés, pasó por Mispá de Galaad y desde allí avanzó hasta el país de los amonitas.",
+        "CEI": "Allora lo spirito del Signore venne su Iefte ed egli attraversò Gàlaad e Manàsse, passò a Mizpa di Gàlaad e da Mizpa di Gàlaad raggiunse gli Ammoniti."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יִּדַּ֨ר יִפְתָּ֥ח נֶ֛דֶר לַ/יהוָ֖ה וַ/יֹּאמַ֑ר אִם נָת֥וֹן תִּתֵּ֛ן אֶת בְּנֵ֥י עַמּ֖וֹן בְּ/יָדִֽ/י׃",
+        "LXX": "καὶ ηὔξατο Ἰεφθάε εὐχὴν τῷ Κυρίῳ καὶ εἶπεν Ἐὰν διδοὺς δῷς τοὺς υἱοὺς Ἁμμὼν ἐν τῇ χειρί μου,",
+        "VUL": "votum vovit Domino, dicens : Si tradideris filios Ammon in manus meas,",
+        "SYN": "И дал Иеффай обет Господу и сказал: если Ты предашь Аммонитян в руки мои,",
+        "NEO": "Jephté fit un vœu à \\+w Yahweh|strong=\"H3068\"\\+w**, en disant :",
+        "NAB": "Jephthah made a vow to the LORD. \"If you deliver the Ammonites into my power,\" he said,",
+        "VAT_ES": "Entonces hizo al Señor el siguiente voto: «Si entregas a los amonitas en mis manos,",
+        "CEI": "Iefte fece voto al Signore e disse: \"Se tu mi metti nelle mani gli Ammoniti,"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֣ה הַ/יּוֹצֵ֗א אֲשֶׁ֨ר יֵצֵ֜א מִ/דַּלְתֵ֤י בֵיתִ/י֙ לִ/קְרָאתִ֔/י בְּ/שׁוּבִ֥/י בְ/שָׁל֖וֹם מִ/בְּנֵ֣י עַמּ֑וֹן וְ/הָיָה֙ לַֽ/יהוָ֔ה וְ/הַעֲלִיתִ֖/הוּ עוֹלָֽה׃",
+        "LXX": "καὶ ἔσται ὁ ἐκπορευόμενος ὃς ἐὰν ἐξέλθῃ ἀπὸ τῆς θύρας τοῦ οἴκου μου εἰς συνάντησίν μου ἐν τῷ ἐπιστρέφειν με ἐν εἰρήνῃ ἀπὸ υἱῶν Ἀμμών, καὶ ἔσται τῷ κυρίῳ· ἀνοίσω αὐτὸν ὁλοκαύτωμα.",
+        "VUL": "quicumque primus fuerit egressus de foribus domus meæ, mihique occurrerit revertenti cum pace a filiis Ammon, eum holocaustum offeram Domino.",
+        "SYN": "то по возвращении моем с миром от Аммонитян, что выйдет из ворот дома моего навстречу мне, будет Господу, и вознесу сие на всесожжение.",
+        "NEO": "« Si vous livrez entre mes mains les fils d’Ammon, celui qui sortira des portes de ma maison à ma rencontre, quand je reviendrai heureusement de chez les fils d’Ammon, sera à \\+w Yahweh|strong=\"H3068\"\\+w**, et je l’offrirai en holocauste. »",
+        "NAB": "\"whoever comes out of the doors of my house to meet me when I return in triumph from the Ammonites shall belong to the LORD. I shall offer him up as a holocaust.\"",
+        "VAT_ES": "el primero que salga de la puerta de mi casa a recibirme, cuando yo vuelva victorioso, pertenecerá al Señor y lo ofreceré en holocausto».",
+        "CEI": "la persona che uscirà per prima dalle porte di casa mia per venirmi incontro, quando tornerò vittorioso dagli Ammoniti, sarà per il Signore e io l'offrirò in olocausto\"."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲבֹ֥ר יִפְתָּ֛ח אֶל בְּנֵ֥י עַמּ֖וֹן לְ/הִלָּ֣חֶם בָּ֑/ם וַ/יִתְּנֵ֥/ם יְהוָ֖ה בְּ/יָדֽ/וֹ׃",
+        "LXX": "καὶ παρῆλθεν Ἰεφθάε πρὸς υἱοὺς Ἀμμὼν παρατάξασθαι πρὸς αὐτούς, καὶ παρέδωκεν αὐτοὺς Κύριος ἐν χειρὶ αὐτοῦ.",
+        "VUL": "Transivitque Jephte ad filios Ammon, ut pugnaret contra eos : quos tradidit Dominus in manus ejus.",
+        "SYN": "И пришел Иеффай к Аммонитянам - сразиться с ними, и предал их Господь в руки его;",
+        "NEO": "Jephté s’avança contre les fils d’Ammon, et \\+w Yahweh|strong=\"H3068\"\\+w** les livra entre ses mains.",
+        "NAB": "Jephthah then went on to the Ammonites to fight against them, and the LORD delivered them into his power,",
+        "VAT_ES": "Luego atacó a los amonitas, y el Señor los entregó en sus manos.",
+        "CEI": "Quindi Iefte raggiunse gli Ammoniti per combatterli e il Signore glieli mise nelle mani."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וַ/יַּכֵּ֡/ם מֵ/עֲרוֹעֵר֩ וְ/עַד בּוֹאֲ/ךָ֨ מִנִּ֜ית עֶשְׂרִ֣ים עִ֗יר וְ/עַד֙ אָבֵ֣ל כְּרָמִ֔ים מַכָּ֖ה גְּדוֹלָ֣ה מְאֹ֑ד וַ/יִּכָּֽנְעוּ֙ בְּנֵ֣י עַמּ֔וֹן מִ/פְּנֵ֖י בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐπάταξεν αὐτοὺς ἀπὸ Ἀροὴρ ἕως ἐλθεῖν ἄχρις Ἀρνών, ἐν ἀριθμῷ εἴκοσι πόλεις, καὶ ἕως Ἐβελχαρμείν, πληγὴν μεγάλην σφόδρα· καὶ συνεστάλησαν οἱ υἱοὶ Ἀμμὼν ἀπὸ προσώπου υἱῶν Ἰσραήλ.",
+        "VUL": "Percussitque ab Aroër usque dum venias in Mennith, viginti civitates, et usque ad Abel, quæ est vineis consita, plaga magna nimis : humiliatique sunt filii Ammon a filiis Israël.",
+        "SYN": "и поразил их поражением весьма великим, от Ароера до Минифа двадцать городов, и до Авель-Керамима, и смирились Аммонитяне пред сынами Израилевыми.",
+        "NEO": "Il les battit depuis Aroër jusque vers Mennith, leur prenant vingt villes, et jusqu’à Abel-Keramin ; ce fut une très grande défaite. Et les fils d’Ammon furent abaissés devant les enfants d’Israël.",
+        "NAB": "so that he inflicted a severe defeat on them, from Aroer to the approach of Minnith (twenty cities in all) and as far as Abel-keramin. Thus were the Ammonites brought into subjection by the Israelites.",
+        "VAT_ES": "Jefté los derrotó, desde Aroer hasta cerca de Minit –eran en total veinte ciudades– y hasta Abel Queramím. Les infligió una gran derrota, y así los amonitas quedaron sometidos a los israelitas.",
+        "CEI": "Egli li sconfisse da Aroer fin verso Minnit, prendendo loro venti città, e fino ad Abel-Cheramin. Così gli Ammoniti furono umiliati davanti agli Israeliti."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֨א יִפְתָּ֣ח הַ/מִּצְפָּה֮ אֶל בֵּית/וֹ֒ וְ/הִנֵּ֤ה בִתּ/וֹ֙ יֹצֵ֣את לִ/קְרָאת֔/וֹ בְ/תֻפִּ֖ים וּ/בִ/מְחֹל֑וֹת וְ/רַק֙ הִ֣יא יְחִידָ֔ה אֵֽין ל֥/וֹ מִמֶּ֛/נּוּ בֵּ֖ן אוֹ בַֽת׃",
+        "LXX": "Καὶ ἦλθεν Ἰεφθάε εἰς Μασσηφὰ εἰς τὸν οἶκον αὐτοῦ, καὶ ἰδοὺ ἡ θυγάτηρ αὐτοῦ ἐξεπορεύετο εἰς ὑπάντησιν ἐν τυμπάνοις καὶ χοροῖς· καὶ ἦν αὕτη μονογενής, οὐκ ἦν αὐτῷ ἕτερος υἱὸς ἢ θυγάτηρ.",
+        "VUL": "Revertente autem Jephte in Maspha domum suam, occurrit ei unigenita filia sua cum tympanis et choris : non enim habebat alios liberos.",
+        "SYN": "И пришел Иеффай в Массифу в дом свой, и вот, дочь его выходит навстречу ему с тимпанами и ликами: она была у него только одна, и не было у него еще ни сына, ни дочери.",
+        "NEO": "Jephté remonta dans sa maison à Maspha ; et voici que sa fille sortit à sa rencontre avec des tambourins et des danses. C’était son unique enfant ; hors d’elle, il n’avait ni fils ni fille.",
+        "NAB": "When Jephthah returned to his house in Mizpah, it was his daughter who came forth, playing the tambourines and dancing. She was an only child: he had neither son nor daughter besides her.",
+        "VAT_ES": "Cuando Jefté regresó a su casa, en Mispá, le salió al encuentro su hija, bailando al son de panderetas. Era su única hija; fuera de ella, Jefté no tenía hijos ni hijas.",
+        "CEI": "Poi Iefte tornò a Mizpa, verso casa sua; ed ecco uscirgli incontro la figlia, con timpani e danze. Era l'unica figlia: non aveva altri figli, né altre figlie."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֩ כִ/רְאוֹת֨/וֹ אוֹתָ֜/הּ וַ/יִּקְרַ֣ע אֶת בְּגָדָ֗י/ו וַ/יֹּ֨אמֶר֙ אֲהָ֤הּ בִּתִּ/י֙ הַכְרֵ֣עַ הִכְרַעְתִּ֔/נִי וְ/אַ֖תְּ הָיִ֣יתְ בְּ/עֹֽכְרָ֑/י וְ/אָנֹכִ֗י פָּצִ֤יתִי פִ/י֙ אֶל יְהוָ֔ה וְ/לֹ֥א אוּכַ֖ל לָ/שֽׁוּב׃",
+        "LXX": "καὶ ἐγένετο ὡς εἶδεν αὐτὴν αὐτός, διέρρηξεν τὰ ἱμάτια αὐτοῦ καὶ εἶπεν Ἆ ἆ θυγάτηρ μου, ταραχῇ ἐτάραξάς με, καὶ σὺ ἦς ἐν τῷ ταράχῳ μου· καὶ ἐγώ εἰμι ἤνοιξα κατὰ σοῦ τὸ στόμα μου πρὸς Κύριον, καὶ οὐ δυνήσομαι ἐπιστρέψαι.",
+        "VUL": "Qua visa, scidit vestimenta sua, et ait : Heu me, filia mea ! decepisti me, et ipsa decepta es : aperui enim os meum ad Dominum, et aliud facere non potero.",
+        "SYN": "Когда он увидел ее, разодрал одежду свою и сказал: ах, дочь моя! ты сразила меня; и ты в числе нарушителей покоя моего! я отверз [о тебе] уста мои пред Господом и не могу отречься.",
+        "NEO": "Dès qu’il la vit, il déchira ses vêtements et dit : « Ah ! ma fille, tu me renverses et tu es parmi ceux qui me troublent. J’ai ouvert ma bouche à \\+w Yahweh|strong=\"H3068\"\\+w**, et je ne puis revenir en arrière. »",
+        "NAB": "When he saw her, he rent his garments and said, \"Alas, daughter, you have struck me down and brought calamity upon me. For I have made a vow to the LORD and I cannot retract.\"",
+        "VAT_ES": "Al verla, rasgó sus vestiduras y exclamó: «&iexcl;Hija mía, me has destrozado! &iquest;Tenías que ser tú la causa de mi desgracia? Yo hice una promesa al Señor, y ahora no puedo retractarme».",
+        "CEI": "Appena la vide, si stracciò le vesti e disse: \"Figlia mia, tu mi hai rovinato! Anche tu sei con quelli che mi hanno reso infelice! Io ho dato la mia parola al Signore e non posso ritirarmi\"."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֣אמֶר אֵלָ֗י/ו אָבִ/י֙ פָּצִ֤יתָה אֶת פִּ֨י/ךָ֙ אֶל יְהוָ֔ה עֲשֵׂ֣ה לִ֔/י כַּ/אֲשֶׁ֖ר יָצָ֣א מִ/פִּ֑י/ךָ אַחֲרֵ֡י אֲשֶׁ֣ר עָשָׂה֩ לְ/ךָ֙ יְהוָ֧ה נְקָמ֛וֹת מֵ/אֹיְבֶ֖י/ךָ מִ/בְּנֵ֥י עַמּֽוֹן׃",
+        "LXX": "ἡ δὲ εἶπεν πρὸς αὐτόν Πάτερ, ἤνοιξας τὸ στόμα σου πρὸς Κύριον· ποίησόν μοι ὃν τρόπον ἐξῆλθεν ἐκ στόματός σου, ἐν τῷ ποιῆσαί σοι Κύριον ἐκδίκησιν ἀπὸ τῶν ἐχθρῶν σου, ἀπὸ υἱῶν Ἀμμών.",
+        "VUL": "Cui illa respondit : Pater mi, si aperuisti os tuum ad Dominum, fac mihi quodcumque pollicitus es, concessa tibi ultione atque victoria de hostibus tuis.",
+        "SYN": "Она сказала ему: отец мой! ты отверз уста твои пред Господом - и делай со мною то, что произнесли уста твои, когда Господь совершил чрез тебя отмщение врагам твоим Аммонитянам.",
+        "NEO": "Elle lui dit : « Mon père, tu as ouvert ta bouche à \\+w Yahweh|strong=\"H3068\"\\+w** ; fais-moi selon ce qui est sorti de ta bouche, puisque \\+w Yahweh|strong=\"H3068\"\\+w** t’a vengé de tes ennemis, les fils d’Ammon. »",
+        "NAB": "\"Father,\" she replied, \"you have made a vow to the LORD. Do with me as you have vowed, because the LORD has wrought vengeance for you on your enemies the Ammonites.\"",
+        "VAT_ES": "Ella le respondió: «Padre, si has prometido algo al Señor, tienes que hacer conmigo lo que prometiste, ya que el Señor te ha permitido vengarte de tus enemigos, los amonitas».",
+        "CEI": "Essa gli disse: \"Padre mio, se hai dato parola al Signore, fà di me secondo quanto è uscito dalla tua bocca, perché il Signore ti ha concesso vendetta sugli Ammoniti, tuoi nemici\"."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר֙ אֶל אָבִ֔י/הָ יֵעָ֥שֶׂה לִּ֖/י הַ/דָּבָ֣ר הַ/זֶּ֑ה הַרְפֵּ֨ה מִמֶּ֜/נִּי שְׁנַ֣יִם חֳדָשִׁ֗ים וְ/אֵֽלְכָה֙ וְ/יָרַדְתִּ֣י עַל הֶֽ/הָרִ֔ים וְ/אֶבְכֶּה֙ עַל בְּתוּלַ֔/י אָנֹכִ֖י ו/רעית/י וְ/רֵעוֹתָֽ/י׃",
+        "LXX": "καὶ ἥδε εἶπεν πρὸς τὸν πατέρα αὐτῆς Ποιησάτω δὴ ὁ πατήρ μου τὸν λόγον τοῦτον· ἔασόν με δύο μῆνας καὶ πορεύσομαι καὶ καταβήσομαι ἐπὶ τὰ ὄρη, καὶ κλαύσομαι ἐπὶ τὰ παρθένιά μου, ἐγώ εἰμι καὶ αἱ συνεταιρίδες μου.",
+        "VUL": "Dixitque ad patrem : Hoc solum mihi præsta quod deprecor : dimitte me ut duobus mensibus circumeam montes, et plangam virginitatem meam cum sodalibus meis.",
+        "SYN": "И сказала отцу своему: сделай мне только вот что: отпусти меня на два месяца; я пойду, взойду на горы и оплачу девство мое с подругами моими.",
+        "NEO": "Et elle dit à son père : « Que cette grâce seulement me soit accordée ; laisse-moi libre pendant deux mois ; je m’en irai, je descendrai pour aller sur les montagnes, et je pleurerai ma virginité avec mes compagnes. »",
+        "NAB": "Then she said to her father, \"Let me have this favor. Spare me for two months, that I may go off down the mountains to mourn my virginity with my companions.\"",
+        "VAT_ES": "Después añadió: «Sólo te pido un favor: dame un plazo de dos meses para ir por las montañas a llorar con mis amigas por no haber tenido hijos».",
+        "CEI": "Poi disse al padre: \"Mi sia concesso questo: lasciami libera per due mesi, perché io vada errando per i monti a piangere la mia verginità con le mie compagne\"."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר לֵ֔כִי וַ/יִּשְׁלַ֥ח אוֹתָ֖/הּ שְׁנֵ֣י חֳדָשִׁ֑ים וַ/תֵּ֤לֶךְ הִיא֙ וְ/רֵ֣עוֹתֶ֔י/הָ וַ/תֵּ֥בְךְּ עַל בְּתוּלֶ֖י/הָ עַל הֶ/הָרִֽים׃",
+        "LXX": "καὶ εἶπεν Πορεύου· καὶ ἀπέστειλεν αὐτὴν δύο μῆνας. καὶ ἐπορεύθη αὐτὴ καὶ αἱ συνεταιρίδες αὐτῆς, καὶ ἔκλαυσεν ἐπὶ τὰ παρθένια αὐτῆς ἐπὶ τὰ ὄρη.",
+        "VUL": "Cui ille respondit : Vade. Et dimisit eam duobus mensibus. Cumque abiisset cum sociis ac sodalibus suis, flebat virginitatem suam in montibus.",
+        "SYN": "Он сказал: пойди. И отпустил ее на два месяца. Она пошла с подругами своими и оплакивала девство свое в горах.",
+        "NEO": "Il répondit : « Va, » et il la laissa aller pour deux mois. Elle s’en alla, elle et ses compagnes, et elle pleura sa virginité sur les montagnes.",
+        "NAB": "\"Go,\" he replied, and sent her away for two months. So she departed with her companions and mourned her virginity on the mountains.",
+        "VAT_ES": "Su padre le respondió: «Puedes hacerlo». Ella se fue a las montañas con sus amigas, y se lamentó por haber quedado virgen.",
+        "CEI": "Egli le rispose: \"Và!\", e la lasciò andare per due mesi. Essa se ne andò con le compagne e pianse sui monti la sua verginità."
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֞י מִ/קֵּ֣ץ שְׁנַ֣יִם חֳדָשִׁ֗ים וַ/תָּ֨שָׁב֙ אֶל אָבִ֔י/הָ וַ/יַּ֣עַשׂ לָ֔/הּ אֶת נִדְר֖/וֹ אֲשֶׁ֣ר נָדָ֑ר וְ/הִיא֙ לֹא יָדְעָ֣ה אִ֔ישׁ וַ/תְּהִי חֹ֖ק בְּ/יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐγένετο ἐν τέλει τῶν δύο μηνῶν καὶ ἐπέστρεψεν πρὸς τὸν πατέρα αὐτῆς, καὶ ἐποίησεν ἐν αὐτῇ τὴν εὐχὴν αὐτοῦ ἣν ηὔξατο· καὶ αὕτη οὐκ ἔγνω ἄνδρα. καὶ ἐγένετο εἰς πρόσταγμα ἐν Ἰσραήλ·",
+        "VUL": "Expletisque duobus mensibus, reversa est ad patrem suum, et fecit ei sicut voverat, quæ ignorabat virum. Exinde mos increbruit in Israël, et consuetudo servata est,",
+        "SYN": "По прошествии двух месяцев она возвратилась к отцу своему, и он совершил над нею обет свой, который дал, и она не познала мужа. И вошло в обычай у Израиля,",
+        "NEO": "Les deux mois écoulés, elle revint vers son père, et il accomplit à son égard le vœu qu’il avait fait ; et elle n’avait pas connu d’homme. De là vint cette coutume en Israël :",
+        "NAB": "At the end of the two months she returned to her father, who did to her as he had vowed. She had not been intimate with man. It then became a custom in Israel",
+        "VAT_ES": "Al cabo de los dos meses regresó, y su padre cumplió con ella el voto que había hecho. Lo joven no había tenido relaciones con ningún hombre. De allí procede una costumbre, que se hizo común en Israel:",
+        "CEI": "Alla fine dei due mesi tornò dal padre ed egli fece di lei quello che aveva promesso con voto. Essa non aveva conosciuto uomo; di qui venne in Israele questa usanza:"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "מִ/יָּמִ֣ים יָמִ֗ימָ/ה תֵּלַ֨כְנָה֙ בְּנ֣וֹת יִשְׂרָאֵ֔ל לְ/תַנּ֕וֹת לְ/בַת יִפְתָּ֖ח הַ/גִּלְעָדִ֑י אַרְבַּ֥עַת יָמִ֖ים בַּ/שָּׁנָֽה׃",
+        "LXX": "ἀπὸ ἡμερῶν εἰς ἡμέρας ἐπορεύοντο θυγατέρες Ἰσραὴλ θρηνεῖν τὴν θυγατέρα Ἰεφθάε Γαλαὰδ ἐπὶ τέσσαρες ἡμέρας ἐν τῷ ἐνιαυτῷ.",
+        "VUL": "ut post anni circulum conveniant in unum filiæ Israël, et plangant filiam Jephte Galaaditæ diebus quatuor.",
+        "SYN": "что ежегодно дочери Израилевы ходили оплакивать дочь Иеффая Галаадитянина, четыре дня в году.",
+        "NEO": "chaque année les filles d’Israël vont célébrer la fille de Jephté, le Galaadite, quatre jours par an.",
+        "NAB": "for Israelite women to go yearly to mourn the daughter of Jephthah the Gileadite for four days of the year.",
+        "VAT_ES": "todos los años, las mujeres israelitas van a lamentarse durante cuatro días por la hija de Jefté, el galaadita.",
+        "CEI": "ogni anno le fanciulle d'Israele vanno a piangere la figlia di Iefte il Galaadita, per quattro giorni."
+      }
+    }
+  }
+}

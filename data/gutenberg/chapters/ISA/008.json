@@ -1,0 +1,409 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_008",
+  "book_key": "ISA",
+  "sequence": 8,
+  "chapter_in": {
+    "MT": 8,
+    "VUL": 8,
+    "LXX": 8
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֵלַ֔/י קַח לְ/ךָ֖ גִּלָּי֣וֹן גָּד֑וֹל וּ/כְתֹ֤ב עָלָי/ו֙ בְּ/חֶ֣רֶט אֱנ֔וֹשׁ לְ/מַהֵ֥ר שָׁלָ֖ל חָ֥שׁ בַּֽז׃",
+        "LXX": "Καὶ εἶπεν Κύριος πρὸς μέ Λάβε σεαυτῷ τόμον καινοῦ μεγάλου, καὶ γράψον εἰς αὐτὸν γραφίδι ἀνθρώπου τοῦ ὀξέως προνομὴν ποιῆσαι σκύλων· πάρεστιν γάρ·",
+        "VUL": "Et dixit Dominus ad me : Sume tibi librum grandem, et scribe in eo stylo hominis : Velociter spolia detrahe, cito prædare.",
+        "SYN": "И сказал мне Господь: возьми себе большой свиток и начертай на нем человеческим письмом: Магер-шелал-хаш-баз.",
+        "NEO": "Et \\+w Yahweh|strong=\"H3068\"\\+w** me dit : « Prends une grande tablette, et écris-y en caractères lisibles à tous : Hâtez le pillage ! Butinez vite ! »",
+        "NAB": "The LORD said to me: Take a large cylinder-seal, and inscribe on it in ordinary letters: \"Belonging to Maher-shalal-hash-baz.\"",
+        "VAT_ES": "El Señor me dijo: «Toma una tabla bien grande y escribe sobre ella, con caracteres comunes: Rápido Botín – Saqueo Veloz».",
+        "CEI": "Il Signore mi disse: \"Prenditi una grande tavoletta e scrivici con caratteri ordinari: A Mahèr-salàl-cash-baz\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וְ/אָעִ֣ידָה לִּ֔/י עֵדִ֖ים נֶאֱמָנִ֑ים אֵ֚ת אוּרִיָּ֣ה הַ/כֹּהֵ֔ן וְ/אֶת זְכַרְיָ֖הוּ בֶּ֥ן יְבֶרֶכְיָֽהוּ׃",
+        "LXX": "καὶ μάρτυρὰς μοι ποίησον πιστοὺς ἀνθρώπους, τὸν Οὐρείαν καὶ Ζαχαρίαν υἱὸν Βαραχίου.",
+        "VUL": "Et adhibui mihi testes fideles, Uriam sacerdotem, et Zachariam, filium Barachiæ :",
+        "SYN": "И я взял себе верных свидетелей: Урию священника и Захарию, сына Варахиина, -",
+        "NEO": "Et je pris avec moi des témoins dignes de foi, le prêtre Urie et Zacharie, fils de Jébarachie.",
+        "NAB": "And I took reliable witnesses, Uriah the priest, and Zechariah, son of Jeberechiah.",
+        "VAT_ES": "Yo puse como testigos fidedignos al sacerdote Urías y a Zacarías, hijo de Baraquías.",
+        "CEI": "Io mi presi testimoni fidati, il sacerdote Uria e Zaccaria figlio di Iebarachìa."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וָ/אֶקְרַב֙ אֶל הַ/נְּבִיאָ֔ה וַ/תַּ֖הַר וַ/תֵּ֣לֶד בֵּ֑ן וַ/יֹּ֤אמֶר יְהוָה֙ אֵלַ֔/י קְרָ֣א שְׁמ֔/וֹ מַהֵ֥ר שָׁלָ֖ל חָ֥שׁ בַּֽז׃",
+        "LXX": "καὶ προσῆλθον πρὸς τὴν προφῆτιν, καὶ ἐν γαστρὶ ἔλαβεν καὶ ἔτεκεν υἱόν. καὶ εἶπεν Κύριός μοι Κάλεσον τὸ ὄνομα αὐτοῦ Ταχέως σκύλευσον, ὀξέως προνόμευσον·",
+        "VUL": "et accessi ad prophetissam, et concepit, et peperit filium. Et dixit Dominus ad me : Voca nomen ejus : Accelera spolia detrahere ; Festina prædari :",
+        "SYN": "и приступил я к пророчице, и она зачала и родила сына. И сказал мне Господь: нареки ему имя: Магер-шелал-хаш-баз,",
+        "NEO": "Et je m’approchai de la prophétesse, et elle conçut et enfanta un fils. Et \\+w Yahweh|strong=\"H3068\"\\+w** me dit : « Appelle-le Maher-Schalal-Chasch-Baz.",
+        "NAB": "Then I went to the prophetess and she conceived and bore a son. The LORD said to me: Name him Maher-shalal-hash-baz,",
+        "VAT_ES": "Luego tuve relaciones con la profetisa y ella concibió y dio a luz un hijo. Entonces el Señor me dijo: «Llámalo con el nombre de Rápido Botín – Saqueo Veloz,",
+        "CEI": "Poi mi unii alla profetessa, la quale concepì e partorì un figlio. Il Signore mi disse: \"Chiamalo Mahèr-salàl-cash-baz,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּ֗י בְּ/טֶ֨רֶם֙ יֵדַ֣ע הַ/נַּ֔עַר קְרֹ֖א אָבִ֣/י וְ/אִמִּ֑/י יִשָּׂ֣א אֶת חֵ֣יל דַּמֶּ֗שֶׂק וְ/אֵת֙ שְׁלַ֣ל שֹׁמְר֔וֹן לִ/פְנֵ֖י מֶ֥לֶךְ אַשּֽׁוּר׃",
+        "LXX": "διότι πρὶν ἢ γνῶναι τὸ παιδίον καλεῖν πατέρα ἢ μητέρα, λήμψεται δύναμιν Δαμασκοῦ καὶ τὰ σκῦλα Σαμαρείας ἔναντι βασιλέως Ἀσσυρίων.",
+        "VUL": "quia antequam sciat puer vocare patrem suum et matrem suam, auferetur fortitudo Damasci, et spolia Samariæ, coram rege Assyriorum.",
+        "SYN": "ибо прежде нежели дитя будет уметь выговорить: отец мой, мать моя, - богатства Дамаска и добычи Самарийские понесут перед царем Ассирийским.",
+        "NEO": "Car avant que l’enfant sache crier : Mon père, ma mère ! on portera les richesses de Damas et les dépouilles de Samarie devant le roi d’Assyrie. »",
+        "NAB": "for before the child knows how to call his father or mother by name, the wealth of Damascus and the spoil of Samaria shall be carried off by the king of Assyria.",
+        "VAT_ES": "porque antes de que el niño aprenda a decir «papá» y «mamá», las riquezas de Damasco y el botín de Samaría serán llevados ante el rey de Asiria».",
+        "CEI": "poiché, prima che il bambino sappia dire babbo e mamma, le ricchezze di Damasco e le spoglie di Samaria saranno portate davanti al re di Assiria\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣סֶף יְהוָ֔ה דַּבֵּ֥ר אֵלַ֛/י ע֖וֹד לֵ/אמֹֽר׃",
+        "LXX": "Καὶ προσέθετο Κύριος λαλῆσαί μοι ἔτι",
+        "VUL": "Et adjecit Dominus loqui ad me adhuc, dicens :",
+        "SYN": "И продолжал Господь говорить ко мне и сказал еще:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** me parla encore, en ces termes :",
+        "NAB": "Again the LORD spoke to me:",
+        "VAT_ES": "El Señor me volvió a hablar otra vez, diciendo:",
+        "CEI": "Il Signore mi disse di nuovo:"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "יַ֗עַן כִּ֤י מָאַס֙ הָ/עָ֣ם הַ/זֶּ֔ה אֵ֚ת מֵ֣י הַ/שִּׁלֹ֔חַ הַ/הֹלְכִ֖ים לְ/אַ֑ט וּ/מְשׂ֥וֹשׂ אֶת רְצִ֖ין וּ/בֶן רְמַלְיָֽהוּ׃",
+        "LXX": "Διὰ τὸ μὴ βούλεσθαι τὸν λαὸν τοῦτον τὸ ὕδωρ τοῦ Σειλωὰμ τὸ πορευόμενον ἡσυχῇ, ἀλλὰ βούλεσθαι ἔχειν Ῥασσὼν καὶ τὸν υἱὸν Ῥομελίου βασιλέα ἐφ’ ὑμῶν,",
+        "VUL": "[Pro eo quod abjecit populus iste/ aquas Siloë, quæ vadunt cum silentio,/ et assumpsit magis Rasin,/ et filium Romeliæ :/",
+        "SYN": "за то, что этот народ пренебрегает водами Силоама, текущими тихо, и восхищается Рецином и сыном Ремалииным,",
+        "NEO": "« Parce que ce peuple a méprisé les eaux de Siloé qui coulent doucement, et qu’il se réjouit au sujet de Rasin et du fils de Romélie,",
+        "NAB": "Because this people has rejected the waters of Shiloah that flow gently, And melts with fear before the loftiness of Rezin and Remaliah's son,",
+        "VAT_ES": "Porque este pueblo rehúsa las aguas de Siloé, que corren mansamente, y desfallece ante Resín y el hijo de Remalías,",
+        "CEI": "\"Poiché questo popolo ha rigettato le acque di Siloe, che scorrono piano, e trema per Rezìn e per il figlio di Romelia,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/לָ/כֵ֡ן הִנֵּ֣ה אֲדֹנָ/י֩ מַעֲלֶ֨ה עֲלֵי/הֶ֜ם אֶת מֵ֣י הַ/נָּהָ֗ר הָ/עֲצוּמִים֙ וְ/הָ֣/רַבִּ֔ים אֶת מֶ֥לֶךְ אַשּׁ֖וּר וְ/אֶת כָּל כְּבוֹד֑/וֹ וְ/עָלָה֙ עַל כָּל אֲפִיקָ֔י/ו וְ/הָלַ֖ךְ עַל כָּל גְּדוֹתָֽי/ו׃",
+        "LXX": "διὰ τοῦτο ἰδοὺ Κύριος ἀνάγει ἐφ’ ὑμᾶς τὸ ὕδωρ τοῦ ποταμοῦ τὸ ἰσχυρὸν καὶ τὸ πολύ, τὸν βασιλέα τῶν Ἀσσυρίων καὶ τὴν δόξαν αὐτοῦ· καὶ ἀναβήσεται ἐπὶ πᾶσαν φάραγγα ὑμῶν, καὶ περιπατήσει ἐπὶ πᾶν τεῖχος ὑμῶν,",
+        "VUL": "propter hoc ecce Dominus adducet super eos/ aquas fluminis fortes et multas,/ regem Assyriorum, et omnem gloriam ejus,/ et ascendet super omnes rivos ejus,/ et fluet super universas ripas ejus ;/",
+        "SYN": "наведет на него Господь воды реки бурные и большие - царя Ассирийского со всею славою его; и поднимется она во всех протоках своих и выступит из всех берегов своих;",
+        "NEO": "à cause de cela, voici que le Seigneur va faire venir sur eux les eaux du fleuve, fortes et profondes, le roi d’Assyrie et toute sa puissance. Il s’élèvera partout au-dessus de son lit, et se répandra par-dessus toutes ses rives ;",
+        "NAB": "Therefore the LORD raises against them the waters of the River, great and mighty (the king of Assyria and all his power). It shall rise above all its channels, and overflow all its banks;",
+        "VAT_ES": "por eso, el Señor hace subir contra ellos las aguas torrenciales y caudalosas del Río –el rey de Asiria con toda su gloria–. El rebasará todos sus cauces, desbordará por todas sus orillas,",
+        "CEI": "per questo, ecco, il Signore gonfierà contro di loro le acque del fiume, impetuose e abbondanti: cioè il re assiro con tutto il suo splendore, irromperà in tutti i suoi canali e strariperà da tutte le sue sponde."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/חָלַ֤ף בִּֽ/יהוּדָה֙ שָׁטַ֣ף וְ/עָבַ֔ר עַד צַוָּ֖אר יַגִּ֑יעַ וְ/הָיָה֙ מֻטּ֣וֹת כְּנָפָ֔י/ו מְלֹ֥א רֹֽחַב אַרְצְ/ךָ֖ עִמָּ֥נוּ אֵֽל׃",
+        "LXX": "καὶ ἀφελεῖ ἀπὸ τῆς Ἰουδαίας ἄνθρωπον ὃς δυνήσεται κεφαλὴν ἆραι ἢ δυνατὸν συντελέσασθαί τι· καὶ ἔσται ἡ παρεμβολὴ αὐτοῦ ὥστε πληρῶσαι τὸ πλάτος τῆς χώρας σου. μεθ’ ἡμῶν ὁ θεός.",
+        "VUL": "et ibit per Judam, inundans, et transiens :/ usque ad collum veniet./ Et erit extensio alarum ejus/ implens latitudinem terræ tuæ, o Emmanuel !/",
+        "SYN": "и пойдет по Иудее, наводнит ее и высоко поднимется - дойдет до шеи; и распростертие крыльев ее будет во всю широту земли Твоей, Еммануил!",
+        "NEO": "il pénétrera en Juda, il débordera, il inondera, il montera jusqu’au cou ; et le déploiement de ses ailes couvrira toute l’étendue de ton pays, ô Emmanuel. »",
+        "NAB": "It shall pass into Judah, and flood it all throughout: up to the neck it shall reach; It shall spread its wings the full width of your land, Immanuel!",
+        "VAT_ES": "y pasará por Judá, inundará, crecerá, llegará hasta el cuello. Y sus alas desplegadas abarcarán toda la extensión de tu país, Emanuel.",
+        "CEI": "Penetrerà in Giuda, lo inonderà e lo attraverserà fino a giungere al collo. Le sue ali distese copriranno tutta l'estensione del tuo paese, Emmanuele."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "רֹ֤עוּ עַמִּים֙ וָ/חֹ֔תּוּ וְ/הַֽאֲזִ֔ינוּ כֹּ֖ל מֶרְחַקֵּי אָ֑רֶץ הִתְאַזְּר֣וּ וָ/חֹ֔תּוּ הִֽתְאַזְּר֖וּ וָ/חֹֽתּוּ׃",
+        "LXX": "γνῶτε ἔθνη καὶ ἡττᾶσθε, ἐπακούσατε ἕως ἐπ’ ἐσχάτου τῆς γῆς, ἰσχυκότες ἡττᾶσθε· ἐὰν γὰρ πάλιν ἰσχύσητε, πάλιν ἡττηθήσεσθε.",
+        "VUL": "Congregamini, populi, et vincimini ;/ et audite, universæ procul terræ :/ confortamini, et vincimini ;/ accingite vos, et vincimini./",
+        "SYN": "Враждуйте, народы, но трепещите, и внимайте, все отдаленные земли! Вооружайтесь, но трепещите; вооружайтесь, но трепещите!",
+        "NEO": "Poussez des cris de guerre, peuples, et vous serez défaits ! prêtez l’oreille, vous toutes, extrémités de la terre ! Equipez-vous, et vous serez défaits ! Equipez-vous, et vous serez défaits !",
+        "NAB": "Know, O peoples, and be appalled! Give ear, all you distant lands! Arm, but be crushed! Arm, but be crushed!",
+        "VAT_ES": "&iexcl;Tiemblen, pueblos, y espántense; presten atención, regiones lejanas de la tierra! &iexcl;Cíñanse las armas y espántense! &iexcl;Cíñanse las armas y espántense!",
+        "CEI": "Sappiatelo, popoli: sarete frantumati; ascoltate voi tutte, nazioni lontane, cingete le armi e sarete frantumate."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "עֻ֥צוּ עֵצָ֖ה וְ/תֻפָ֑ר דַּבְּר֤וּ דָבָר֙ וְ/לֹ֣א יָק֔וּם כִּ֥י עִמָּ֖/נוּ אֵֽל׃",
+        "LXX": "καὶ ἣν ἂν βουλεύσησθε βουλὴν διασκεδάσει Κύριος, καὶ λόγον ὃν λαλήσητε οὐ μὴ ἐμμείνῃ ὑμῖν, ὅτι μεθ’ ἡμῶν ὁ θεός.",
+        "VUL": "Inite consilium, et dissipabitur ;/ loquimini verbum, et non fiet :/ quia nobiscum Deus./",
+        "SYN": "Замышляйте замыслы, но они рушатся; говорите слово, но оно не состоится: ибо с нами Бог!",
+        "NEO": "Formez des projets, et ils seront anéantis ; donnez des ordres, et ils resteront sans effet ; car Dieu est avec nous !",
+        "NAB": "Form a plan, and it shall be thwarted; make a resolve, and it shall not be carried out, for \"With us is God!\"",
+        "VAT_ES": "Hagan un proyecto: &iexcl;fracasará! Digan una palabra: &iexcl;no se realizará! Porque Dios está con nosotros.",
+        "CEI": "Preparate un piano, sarà senza effetti; fate un proclama, non si realizzerà, perché Dio è con noi\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּי֩ כֹ֨ה אָמַ֧ר יְהוָ֛ה אֵלַ֖/י כְּ/חֶזְקַ֣ת הַ/יָּ֑ד וְ/יִסְּרֵ֕/נִי מִ/לֶּ֛כֶת בְּ/דֶ֥רֶךְ הָֽ/עָם הַ/זֶּ֖ה לֵ/אמֹֽר׃",
+        "LXX": "οὕτως λέγει Κύριος Τῇ ἰσχυρᾷ χειρὶ ἀπειθοῦσιν τῇ πορείᾳ τῆς ὁδοῦ τοῦ λαοῦ τούτου, λέγοντες",
+        "VUL": "Hæc enim ait Dominus ad me : Sicut in manu forti erudivit me,/ ne irem in via populi hujus, dicens :/",
+        "SYN": "Ибо так говорил мне Господь, _держа на мне_ крепкую руку и внушая мне не ходить путем сего народа, и сказал:",
+        "NEO": "Car ainsi m’a parlé \\+w Yahweh|strong=\"H3068\"\\+w**, quand sa main me saisit et qu’il m’avertit de ne pas suivre la voie de ce peuple, en disant :",
+        "NAB": "For thus said the LORD to me, taking hold of me and warning me not to walk in the way of this people:",
+        "VAT_ES": "Porque así me habló el Señor, cuando me tomó con su mano y me conminó a que no siguiera el camino de este pueblo:",
+        "CEI": "Poiché così il Signore mi disse, quando mi aveva preso per mano e mi aveva proibito di incamminarmi nella via di questo popolo:"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "לֹא תֹאמְר֣וּ/ן קֶ֔שֶׁר לְ/כֹ֧ל אֲשֶׁר יֹאמַ֛ר הָ/עָ֥ם הַ/זֶּ֖ה קָ֑שֶׁר וְ/אֶת מוֹרָא֥/וֹ לֹֽא תִֽירְא֖וּ וְ/לֹ֥א תַעֲרִֽיצוּ׃",
+        "LXX": "Μή ποτε εἴπωσιν σκληρόν· πᾶν γὰρ ὃ ἂν εἴπῃ ὁ λαὸς οὗτος σκληρόν ἐστιν· τὸν δὲ φόβον αὐτοῦ οὐ μὴ φοβηθῆτε οὐδὲ μὴ ταραχθῆτε·",
+        "VUL": "Non dicatis : Conjuratio ;/ omnia enim quæ loquitur populus iste, conjuratio est :/ et timorem ejus ne timeatis, neque paveatis./",
+        "SYN": "\"Не называйте заговором всего того, что народ сей называет заговором; и не бойтесь того, чего он боится, и не страшитесь.",
+        "NEO": "« N’appelez pas conjuration tout ce que ce peuple appelle conjuration ; ne craignez pas ce qu’il craint, et ne vous effrayez pas.",
+        "NAB": "Call not alliance what this people calls alliance, and fear not, nor stand in awe of what they fear.",
+        "VAT_ES": "No llamen «conjura» a todo lo que este pueblo llama «conjura»; no teman lo que él teme ni tiemblen por eso,",
+        "CEI": "\"Non chiamate congiura ciò che questo popolo chiama congiura, non temete ciò che esso teme e non abbiate paura\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "אֶת יְהוָ֥ה צְבָא֖וֹת אֹת֣/וֹ תַקְדִּ֑ישׁוּ וְ/ה֥וּא מוֹרַאֲ/כֶ֖ם וְ/ה֥וּא מַֽעֲרִֽצְ/כֶֽם׃",
+        "LXX": "Κύριον αὐτὸν ἁγιάσατε, καὶ αὐτὸς ἔσται σου φόβος.",
+        "VUL": "Dominum exercituum ipsum sanctificate ;/ ipse pavor vester, et ipse terror vester :/",
+        "SYN": "Господа Саваофа - Его чтите свято, и Он - страх ваш, и Он - трепет ваш!",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** des armées, c’est lui que vous sanctifierez, lui qui sera votre crainte et votre frayeur.",
+        "NAB": "But with the LORD of hosts make your alliance - for him be your fear and your awe.",
+        "VAT_ES": "Pero al Señor de los ejércitos, a él sí proclámenlo santo: que sólo él les infunda temor, que sólo él los haga temblar.",
+        "CEI": "Il Signore degli eserciti, lui solo ritenete santo. Egli sia l'oggetto del vostro timore, della vostra paura."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֖ה לְ/מִקְדָּ֑שׁ וּ/לְ/אֶ֣בֶן נֶ֠גֶף וּ/לְ/צ֨וּר מִכְשׁ֜וֹל לִ/שְׁנֵ֨י בָתֵּ֤י יִשְׂרָאֵל֙ לְ/פַ֣ח וּ/לְ/מוֹקֵ֔שׁ לְ/יוֹשֵׁ֖ב יְרוּשָׁלִָֽם׃",
+        "LXX": "κἂν ἐπ’ αὐτῷ πεποιθὼς ᾖς, ἔσται σοι εἰς ἁγίασμα, καὶ οὐχ ὡς λίθου προσκόμματι συναντήσεσθε οὐδὲ ὡς πέτρας πτώματι. οἱ δὲ οἶκοι Ἰακὼβ ἐν παγίδι, καὶ ἐν κοιλάσματι ἐγκαθήμενοι ἐν Ἰερουσαλήμ·",
+        "VUL": "et erit vobis in sanctificationem ;/ in lapidem autem offensionis, et in petram scandali,/ duabus domibus Israël ;/ in laqueum et in ruinam habitantibus Jerusalem./",
+        "SYN": "И будет Он освящением и камнем преткновения, и скалою соблазна для обоих домов Израиля, петлею и сетью для жителей Иерусалима.",
+        "NEO": "Et il sera un sanctuaire ; mais aussi une pierre d’achoppement et un rocher de scandale pour les deux maisons d’Israël, un filet et un piège pour les habitants de Jérusalem.",
+        "NAB": "Yet he shall be a snare, an obstacle and a stumbling stone to both the houses of Israel, A trap and a snare to those who dwell in Jerusalem;",
+        "VAT_ES": "El será un santuario, una piedra de tropiezo y un escollo insuperable para las dos casas de Israel; será una red y una trampa para los habitantes de Jerusalén.",
+        "CEI": "Egli sarà laccio e pietra d'inciampo e scoglio che fa cadere per le due case di Israele, laccio e trabocchetto per chi abita in Gerusalemme."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וְ/כָ֥שְׁלוּ בָ֖/ם רַבִּ֑ים וְ/נָפְל֣וּ וְ/נִשְׁבָּ֔רוּ וְ/נוֹקְשׁ֖וּ וְ/נִלְכָּֽדוּ׃",
+        "LXX": "διὰ τοῦτο ἀδυνατήσουσιν ἐν αὐτοῖς πολλοί, καὶ πεσοῦνται καὶ συντριβήσονται, καὶ ἐγγιοῦσιν καὶ ἁλώσονται ἄνθρωποι ἐν ἀσφαλείᾳ.",
+        "VUL": "Et offendent ex eis plurimi,/ et cadent, et conterentur,/ et irretientur, et capientur./",
+        "SYN": "И многие из них преткнутся и упадут, и разобьются, и запутаются в сети, и будут уловлены.",
+        "NEO": "Beaucoup d’entre eux trébucheront, ils tomberont et se briseront ; ils seront enlacés et pris.",
+        "NAB": "And many among them shall stumble and fall, broken, snared, and captured.",
+        "VAT_ES": "Muchos de entre ellos tropezarán, caerán y se quebrarán, se enredarán en la trampa y quedarán atrapados.",
+        "CEI": "Tra di loro molti inciamperanno, cadranno e si sfracelleranno, saranno presi e catturati."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "צ֖וֹר תְּעוּדָ֑ה חֲת֥וֹם תּוֹרָ֖ה בְּ/לִמֻּדָֽ/י׃",
+        "LXX": "Τότε φανεροὶ ἔσονται οἱ σφραγιζόμενοι τὸν νόμον τοῦ μὴ μαθεῖν.",
+        "VUL": "Liga testimonium,/ signa legem in discipulis meis./",
+        "SYN": "Завяжи свидетельство, и запечатай откровение при учениках Моих\".",
+        "NEO": "Lie le témoignage, scelle l’enseignement dans le cœur de mes disciples. »",
+        "NAB": "The record is to be folded and the sealed instruction kept among my disciples.",
+        "VAT_ES": "Voy a guardar el testimonio, a sellar la instrucción entre mis discípulos.",
+        "CEI": "Si chiuda questa testimonianza, si sigilli questa rivelazione nel cuore dei miei discepoli."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/חִכִּ֨יתִי֙ לַ/יהוָ֔ה הַ/מַּסְתִּ֥יר פָּנָ֖י/ו מִ/בֵּ֣ית יַעֲקֹ֑ב וְ/קִוֵּ֖יתִֽי לֽ/וֹ׃",
+        "LXX": "καὶ ἐρεῖ Μενῶ τὸν θεὸν τὸν ἀποστρέψαντα τὸ πρόσωπον αὐτοῦ ἀπὸ τοῦ οἴκου Ἰακώβ, καὶ πεποιθὼς ἔσομαι ἐπ’ αὐτῷ.",
+        "VUL": "Et exspectabo Dominum qui abscondit faciem suam/ a domo Jacob, et præstolabor eum./",
+        "SYN": "Итак я надеюсь на Господа, сокрывшего лице Свое от дома Иаковлева, и уповаю на Него.",
+        "NEO": "J’espère en \\+w Yahweh|strong=\"H3068\"\\+w** qui cache sa face à la maison de Jacob, et je me confie en lui.",
+        "NAB": "For I will trust in the LORD, who is hiding his face from the house of Jacob; yes, I will wait for him.",
+        "VAT_ES": "Esperaré en el Señor, que oculta su rostro a la casa de Jacob: sí, lo aguardaré.",
+        "CEI": "Io ho fiducia nel Signore, che ha nascosto il volto alla casa di Giacobbe, e spero in lui."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "הִנֵּ֣ה אָנֹכִ֗י וְ/הַ/יְלָדִים֙ אֲשֶׁ֣ר נָֽתַן לִ֣/י יְהוָ֔ה לְ/אֹת֥וֹת וּ/לְ/מוֹפְתִ֖ים בְּ/יִשְׂרָאֵ֑ל מֵ/עִם֙ יְהוָ֣ה צְבָא֔וֹת הַ/שֹּׁכֵ֖ן בְּ/הַ֥ר צִיּֽוֹן׃",
+        "LXX": "ἰδοὺ ἐγὼ καὶ τὰ παιδία ἅ μοι ἔδωκεν ὁ θεός. καὶ ἔσται σημεῖα καὶ τέρατα ἐν τῷ οἴκῳ Ἰσραὴλ παρὰ Κυρίου σαβαώθ, ὃς κατοικεῖ ἐν τῷ ὄρει Σειών.",
+        "VUL": "Ecce ego et pueri mei quos dedit mihi Dominus/ in signum, et in portentum Israël/ a Domino exercituum,/ qui habitat in monte Sion :/",
+        "SYN": "Вот я и дети, которых дал мне Господь, как указания и предзнаменования в Израиле от Господа Саваофа, живущего на горе Сионе.",
+        "NEO": "Voici que moi et mes enfants que Dieu m’a donnés, nous sommes des signes et des présages en Israël, de la part de \\+w Yahweh|strong=\"H3068\"\\+w** des armées, qui habite sur la montagne de Sion.",
+        "NAB": "Look at me and the children whom the Lord has given me: we are signs and portents in Israel from the LORD of hosts who dwells on Mount Zion.",
+        "VAT_ES": "Yo y los hijos que me dio el Señor somos signos y presagios en Israel, de parte del Señor de los ejércitos, que habita en el monte Sión.",
+        "CEI": "Ecco, io e i figli che il Signore mi ha dato, siamo segni e presagi per Israele da parte del Signore degli eserciti, che abita sul monte Sion."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/כִֽי יֹאמְר֣וּ אֲלֵי/כֶ֗ם דִּרְשׁ֤וּ אֶל הָ/אֹבוֹת֙ וְ/אֶל הַ/יִּדְּעֹנִ֔ים הַֽ/מְצַפְצְפִ֖ים וְ/הַ/מַּהְגִּ֑ים הֲ/לוֹא עַם֙ אֶל אֱלֹהָ֣י/ו יִדְרֹ֔שׁ בְּעַ֥ד הַ/חַיִּ֖ים אֶל הַ/מֵּתִֽים׃",
+        "LXX": "καὶ ἐὰν εἴπωσιν πρὸς ὑμᾶς Ζητήσατε τοὺς ἐνγαστριμύθους καὶ τοὺς ἀπὸ τῆς γῆς φωνοῦντας, τοὺς κενολογοῦντας οἳ ἐκ τῆς κοιλίας φωνοῦσιν, οὐκ ἔθνος πρὸς θεὸν αὐτοῦ ἐκζητήσουσιν; τί ἐκζητοῦσιν περὶ τῶν ζώντων τοὺς νεκρούς;",
+        "VUL": "et cum dixerint ad vos :/ Quærite a pythonibus/ et a divinis qui strident in incantationibus suis :/ numquid non populus a Deo suo requiret,/ pro vivis a mortuis ?/",
+        "SYN": "И когда скажут вам: обратитесь к вызывателям умерших и к чародеям, к шептунам и чревовещателям, - тогда отвечайте: не должен ли народ обращаться к своему Богу? спрашивают ли мертвых о живых?",
+        "NEO": "Quand ils vous diront : « Consultez ceux qui évoquent les morts, et les devins qui murmurent et chuchotent, » répondez : « Un peuple ne doit-il pas consulter son Dieu ? Consultera-t-il les morts pour les vivants ?",
+        "NAB": "And when they say to you, \"Inquire of mediums and fortune-tellers (who chirp and mutter!); should not a people inquire of their gods, apply to the dead on behalf of the living?\" -",
+        "VAT_ES": "Seguramente les dirán: «Consulten a los nigromantes y adivinos, que musitan y susurran. &iquest;No debe un pueblo consultar a sus dioses, consultar a los muertos en favor de los vivos,",
+        "CEI": "Quando vi diranno: \"Interrogate gli spiriti e gli indovini che bisbigliano e mormorano formule. Forse un popolo non deve consultare i suoi dei? Per i vivi consultare i morti?\","
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "לְ/תוֹרָ֖ה וְ/לִ/תְעוּדָ֑ה אִם לֹ֤א יֹֽאמְרוּ֙ כַּ/דָּבָ֣ר הַ/זֶּ֔ה אֲשֶׁ֥ר אֵֽין ל֖/וֹ שָֽׁחַר׃",
+        "LXX": "νόμον γὰρ εἰς βοήθειαν ἔδωκεν, ἵνα εἴπωσιν οὐχ ὡς τὸ ῥῆμα τοῦτο, περὶ οὗ οὐκ ἔστιν δῶρα δοῦναι περὶ αὐτοῦ.",
+        "VUL": "ad legem magis et ad testimonium./ Quod si non dixerint juxta verbum hoc,/ non erit eis matutina lux./",
+        "SYN": "_Обращайтесь_ к закону и откровению. Если они не говорят, как это слово, то нет в них света.",
+        "NEO": "A l’enseignement et au témoignage ! » Si le peuple tient un autre langage, il n’y a pas pour lui d’aurore.",
+        "NAB": "then this document will furnish its instruction. That kind of thing they will surely say.",
+        "VAT_ES": "para recibir instrucción y testimonio?». Seguro que se expresan así porque para ellos no despunta la aurora.",
+        "CEI": "attenetevi alla rivelazione, alla testimonianza. Certo, faranno questo discorso che non offre speranza d'aurora."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וְ/עָ֥בַר בָּ֖/הּ נִקְשֶׁ֣ה וְ/רָעֵ֑ב וְ/הָיָ֨ה כִֽי יִרְעַ֜ב וְ/הִתְקַצַּ֗ף וְ/קִלֵּ֧ל בְּ/מַלְכּ֛/וֹ וּ/בֵ/אלֹהָ֖י/ו וּ/פָנָ֥ה לְ/מָֽעְלָ/ה׃",
+        "LXX": "καὶ ἥξει ἐφ’ ὑμᾶς σκληρὰ λιμός, καὶ ἔσται ὡς ἂν πεινάσητε, λυπηθήσεσθε καὶ κακῶς ἐρεῖτε τὸν ἄρχοντα καὶ τὰ πάτρια, καὶ ἀναβλέψονται εἰς τὸν οὐρανὸν ἄνω,",
+        "VUL": "Et transibit per eam, corruet, et esuriet ;/ et cum esurierit, irascetur./ Et maledicet regi suo, et Deo suo,/ et suspiciet sursum,/",
+        "SYN": "И будут они бродить по земле, жестоко угнетенные и голодные; и во время голода будут злиться, хулить царя своего и Бога своего.",
+        "NEO": "Il errera dans le pays, accablé de misère et affamé, et, quand il aura faim, il maudira, dans sa fureur, son roi et son Dieu.",
+        "VAT_ES": "La gente pasará por el país, abrumada y hambrienta; y enfurecida por el hambre, maldecirá por el hambre, maldecirá a su rey a a su Dios. Volverá su rostro hacia lo alto.",
+        "CEI": "Egli si aggirerà nel paese oppresso e affamato, e, quando sarà affamato e preso dall'ira, maledirà il suo re e il suo dio. Guarderà in alto"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וְ/אֶל אֶ֖רֶץ יַבִּ֑יט וְ/הִנֵּ֨ה צָרָ֤ה וַ/חֲשֵׁכָה֙ מְע֣וּף צוּקָ֔ה וַ/אֲפֵלָ֖ה מְנֻדָּֽח׃",
+        "LXX": "καὶ εἰς τὴν γῆν κάτω ἐμβλέψονται· καὶ ἰδοὺ ἀπορία στενὴ καὶ σκότος, θλίψις καὶ στενοχωρία καὶ σκότος ὥστε μὴ βλέπειν, καὶ οὐκ ἀπορηθήσεται ὁ ἐν στενοχωρίᾳ ὢν ἕως καιροῦ.",
+        "VUL": "et ad terram intuebitur ;/ et ecce tribulatio et tenebræ,/ dissolutio et angustia,/ et caligo persequens,/ et non poterit avolare de angustia sua.]",
+        "SYN": "И взглянут вверх, и посмотрят на землю; и вот - горе и мрак, густая тьма, и будут повержены во тьму. Но не всегда будет мрак там, где теперь он сгустел.",
+        "NEO": "Il élèvera ses regards en haut, et les abaissera vers la terre : et voici la détresse, l’obscurité, une sombre angoisse ; il sera rejeté dans les ténèbres.",
+        "VAT_ES": "luego mirará a la tierra, y sólo habrá aflicción y tinieblas, angustiosa oscuridad. Pero la tiniebla será disipada,",
+        "CEI": "e rivolgerà lo sguardo sulla terra ed ecco angustia e tenebre e oscurità desolante. Ma la caligine sarà dissipata,"
+      }
+    }
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IOSU_002",
+  "book_key": "IOSU",
+  "sequence": 2,
+  "chapter_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֣ח יְהוֹשֻׁ֣עַ בִּן נ֠וּן מִֽן הַ/שִּׁטִּ֞ים שְׁנַֽיִם אֲנָשִׁ֤ים מְרַגְּלִים֙ חֶ֣רֶשׁ לֵ/אמֹ֔ר לְכ֛וּ רְא֥וּ אֶת הָ/אָ֖רֶץ וְ/אֶת יְרִיח֑וֹ וַ/יֵּ֨לְכ֜וּ וַ֠/יָּבֹאוּ בֵּית אִשָּׁ֥ה זוֹנָ֛ה וּ/שְׁמָ֥/הּ רָחָ֖ב וַ/יִּשְׁכְּבוּ שָֽׁמָּ/ה׃",
+        "LXX": "Καὶ ἀπέστειλεν Ἰησοῦς υἱὸς Ναυὴ ἐκ Σαττεὶν δύο νεανίσκους κατασκοπεῦσαι λέγων Ἀνάβητε καὶ ἴδετε τὴν γῆν καὶ τὴν Ἰερειχώ. καὶ πορευθέντες εἰσήλθοσαν οἱ δύο νεανίσκοι εἰς Ἰερειχώ, καὶ εἰσήλθοσαν εἰς οἰκίαν γυναικὸς πόρνης ᾗ ὄνομα Ῥαάβ, καὶ κατέλυσαν ἐκεῖ.",
+        "VUL": "Misit igitur Josue filius Nun de Setim duos viros exploratores in abscondito : et dixit eis : Ite, et considerate terram, urbemque Jericho. Qui pergentes ingressi sunt domum mulieris meretricis, nomine Rahab, et quieverunt apud eam.",
+        "SYN": "И послал Иисус, сын Навин, из Ситтима двух соглядатаев тайно и сказал: пойдите, осмотрите землю и Иерихон. [Два юноши] пошли и пришли [в Иерихон и вошли] в дом блудницы, которой имя Раав, и остались ночевать там.",
+        "NEO": "Josué, fils de Nun, fit partir en secret de Sétim deux espions, en leur disant : « Allez, examinez le pays, et Jéricho. » S’étant mis en route, ils arrivèrent dans la maison d’une courtisane, nommée Rahab, et ils y couchèrent.",
+        "NAB": "Then Joshua, son of Nun, secretly sent out two spies from Shittim, saying, \"Go, reconnoiter the land and Jericho.\" When the two reached Jericho, they went into the house of a harlot named Rahab, where they lodged.",
+        "VAT_ES": "Josué, hijo de Nun, envió clandestinamente desde Sitím a dos espías, con la siguiente consigna: «Vayan a observar el terreno». Ellos partieron y, al llegar a Jericó, entraron en casa de una prostituta llamada Rajab, donde se alojaron.",
+        "CEI": "In seguito Giosuè, figlio di Nun, di nascosto inviò da Sittim due spie, ingiungendo: \"Andate, osservate il territorio e Gerico\". Essi andarono ed entrarono in casa di una donna, una prostituta chiamata Raab, dove passarono la notte."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֣אָמַ֔ר לְ/מֶ֥לֶךְ יְרִיח֖וֹ לֵ/אמֹ֑ר הִנֵּ֣ה אֲ֠נָשִׁים בָּ֣אוּ הֵ֧נָּה הַ/לַּ֛יְלָה מִ/בְּנֵ֥י יִשְׂרָאֵ֖ל לַ/חְפֹּ֥ר אֶת הָ/אָֽרֶץ׃",
+        "LXX": "καὶ ἀπηγγέλη τῷ βασιλεῖ Ἰερειχὼ λέγοντες Εἰσπεπόρευνται ὧδε ἄνδρες τῶν υἱῶν Ἰσραὴλ κατασκοπεῦσαι τὴν γῆν.",
+        "VUL": "Nuntiatumque est regi Jericho, et dictum : Ecce viri ingressi sunt huc per noctem de filiis Israël, ut explorarent terram.",
+        "SYN": "И сказано было царю Иерихонскому: вот, какие-то люди из сынов Израилевых пришли сюда в эту ночь, чтобы высмотреть землю.",
+        "NEO": "On le dit au roi de Jéricho, en ces termes : « Voici que des hommes d’entre les enfants d’Israël sont venus ici pendant la nuit, pour explorer le pays. »",
+        "NAB": "But a report was brought to the king of Jericho that some Israelites had come there that night to spy out the land.",
+        "VAT_ES": "Cuando se notificó al rey de Jericó que unos hombres israelitas habían llegado durante la noche para observar el terreno,",
+        "CEI": "Ma fu riferito al re di Gerico: \"Ecco alcuni degli Israeliti sono venuti qui questa notte per esplorare il paese\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַח֙ מֶ֣לֶךְ יְרִיח֔וֹ אֶל רָחָ֖ב לֵ/אמֹ֑ר ה֠וֹצִיאִי הָ/אֲנָשִׁ֨ים הַ/בָּאִ֤ים אֵלַ֨יִ/ךְ֙ אֲשֶׁר בָּ֣אוּ לְ/בֵיתֵ֔/ךְ כִּ֛י לַ/חְפֹּ֥ר אֶת כָּל הָ/אָ֖רֶץ בָּֽאוּ׃",
+        "LXX": "καὶ ἀπέστειλεν ὁ βασιλεὺς Ἰερειχὼ καὶ εἶπεν πρὸς Ῥαὰβ λέγων Ἐξάγαγε τοὺς ἄνδρας τοὺς εἰσπεπορευμένους εἰς τὴν οἰκίαν σου τὴν νύκτα· κατασκοπεῦσαι γὰρ τὴν γῆν ἥκασιν.",
+        "VUL": "Misitque rex Jericho ad Rahab, dicens : Educ viros, qui venerunt ad te, et ingressi sunt domum tuam : exploratores quippe sunt, et omnem terram considerare venerunt.",
+        "SYN": "Царь Иерихонский послал сказать Рааве: выдай людей, пришедших к тебе, которые вошли в твой дом [ночью], ибо они пришли высмотреть всю землю.",
+        "NEO": "Le roi de Jéricho envoya dire à Rahab : « Fais sortir les hommes qui sont venus chez toi et sont entrés dans ta maison, car c’est pour explorer tout le pays qu’ils sont venus. »",
+        "NAB": "So the king of Jericho sent Rahab the order, \"Put out the visitors who have entered your house, for they have come to spy out the entire land.\"",
+        "VAT_ES": "mandó decir a Rajab: «Saca afuera a esos hombres que vinieron a verte, los que entraron en tu casa, porque han venido únicamente para observar todo el país».",
+        "CEI": "Allora il re di Gerico mandò a dire a Raab: \"Fà uscire gli uomini che sono venuti da te e sono entrati in casa tua, perché sono venuti per esplorare tutto il paese\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/תִּקַּ֧ח הָֽ/אִשָּׁ֛ה אֶת שְׁנֵ֥י הָ/אֲנָשִׁ֖ים וַֽ/תִּצְפְּנ֑/וֹ וַ/תֹּ֣אמֶר כֵּ֗ן בָּ֤אוּ אֵלַ/י֙ הָֽ/אֲנָשִׁ֔ים וְ/לֹ֥א יָדַ֖עְתִּי מֵ/אַ֥יִן הֵֽמָּה׃",
+        "LXX": "καὶ λαβοῦσα ἡ γυνὴ τοὺς δύο ἄνδρας ἔκρυψεν αὐτούς, καὶ εἶπεν αὐτοῖς λέγουσα Εἰσεληλύθασιν πρὸς μὲ οἱ ἄνδρες·",
+        "VUL": "Tollensque mulier viros, abscondit, et ait : Fateor, venerunt ad me, sed nesciebam unde essent :",
+        "SYN": "Но женщина взяла двух человек тех и скрыла их и сказала: точно приходили ко мне люди, но я не знала, откуда они;",
+        "NEO": "La femme prit les deux hommes et, les ayant cachés, elle dit : « Il est vrai que ces hommes sont venus chez moi, mais je n’ai pas su d’où ils étaient ;",
+        "NAB": "The woman had taken the two men and hidden them, so she said, \"True, the men you speak of came to me, but I did not know where they came from.",
+        "VAT_ES": "Pero la mujer tomó a los dos hombres, los escondió y declaró: «Es verdad que esos hombres vinieron aquí, pero yo no sabía de dónde eran.",
+        "CEI": "Allora la donna prese i due uomini e, dopo averli nascosti, rispose: \"Sì, sono venuti da me quegli uomini, ma non sapevo di dove fossero."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֨י הַ/שַּׁ֜עַר לִ/סְגּ֗וֹר בַּ/חֹ֨שֶׁךְ֙ וְ/הָ/אֲנָשִׁ֣ים יָצָ֔אוּ לֹ֣א יָדַ֔עְתִּי אָ֥נָה הָלְכ֖וּ הָֽ/אֲנָשִׁ֑ים רִדְפ֥וּ מַהֵ֛ר אַחֲרֵי/הֶ֖ם כִּ֥י תַשִּׂיגֽוּ/ם׃",
+        "LXX": "ὡς δὲ ἡ πύλη ἐκλείετο ἐν τῷ σκότει, καὶ οἱ ἄνδρες ἐξῆλθον. οὐκ ἐπίσταμαι ποῦ πεπόρευνται· καταδιώξατε ὀπίσω αὐτῶν, εἰ καταλήμψεσθε αὐτούς.",
+        "VUL": "cumque porta clauderetur in tenebris, et illi pariter exierunt ; nescio quo abierunt : persequimini cito, et comprehendetis eos.",
+        "SYN": "когда же в сумерки надлежало затворять ворота, тогда они ушли; не знаю, куда они пошли; гонитесь скорее за ними, вы догоните их.",
+        "NEO": "et comme on allait fermer le soir la porte de la ville, ils sont sortis ; j’ignore où ils sont allés : hâtez-vous de les poursuivre, car vous les atteindrez. »",
+        "NAB": "At dark, when it was time for the gate to be shut, they left, and I do not know where they went. You will have to pursue them immediately to overtake them.\"",
+        "VAT_ES": "Se fueron al caer la noche, cuando estaban por cerrarse las puertas de la ciudad, y no sé adónde habrán ido. Salgan en seguida detrás de ellos, porque todavía pueden alcanzarlos».",
+        "CEI": "Ma quando stava per chiudersi la porta della città al cader della notte, essi uscirono e non so dove siano andati. Inseguiteli subito e li raggiungerete\"."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/הִ֖יא הֶעֱלָ֣תַ/ם הַ/גָּ֑גָ/ה וַֽ/תִּטְמְנֵ/ם֙ בְּ/פִשְׁתֵּ֣י הָ/עֵ֔ץ הָ/עֲרֻכ֥וֹת לָ֖/הּ עַל הַ/גָּֽג׃",
+        "LXX": "αὕτη δὲ ἀνεβίβασεν αὐτοὺς ἐπὶ τὸ δῶμα, καὶ ἔκρυψεν αὐτοὺς ἐν τῇ λινοκαλάμῃ τῇ ἐστοιβασμένῃ αὐτῇ ἐπὶ τοῦ δώματος.",
+        "VUL": "Ipsa autem fecit ascendere viros in solarium domus suæ, operuitque eos stipula lini, quæ ibi erat.",
+        "SYN": "А сама отвела их на кровлю и скрыла их в снопах льна, разложенных у нее на кровле.",
+        "NEO": "Or elle les avait fait monter sur le toit et les avait cachés sous des tiges de lin, qu’elle avait disposées sur le toit.",
+        "NAB": "Now, she had led them to the roof, and hidden them among her stalks of flax spread out there.",
+        "VAT_ES": "En realidad, los había hecho subir a la terraza, ocultándolos entre unos haces de lino extendidos allí.",
+        "CEI": "Essa invece li aveva fatti salire sulla terrazza e li aveva nascosti fra gli steli di lino che vi aveva accatastato."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/הָ/אֲנָשִׁ֗ים רָדְפ֤וּ אַֽחֲרֵי/הֶם֙ דֶּ֣רֶךְ הַ/יַּרְדֵּ֔ן עַ֖ל הַֽ/מַּעְבְּר֑וֹת וְ/הַ/שַּׁ֣עַר סָגָ֔רוּ אַחֲרֵ֕י כַּ/אֲשֶׁ֛ר יָצְא֥וּ הָ/רֹדְפִ֖ים אַחֲרֵי/הֶֽם׃",
+        "LXX": "καὶ οἱ ἄνδρες κατεδίωξαν ὀπίσω αὐτῶν ὁδὸν τὴν ἐπὶ τοῦ Ἰορδάνου ἐπὶ τὰς διαβάσεις, καὶ ἡ πύλη ἐκλείσθη.",
+        "VUL": "Hi autem, qui missi fuerant, secuti sunt eos per viam, quæ ducit ad vadum Jordanis : illisque egressis statim porta clausa est.",
+        "SYN": "_Посланные_ гнались за ними по дороге к Иордану до самой переправы; ворота же _тотчас_ затворили, после того как вышли погнавшиеся за ними.",
+        "NEO": "Ces gens les poursuivirent par le chemin des gués du Jourdain, et, dès que furent sortis ceux qui les poursuivaient, on ferma la porte.",
+        "NAB": "But the pursuers set out along the way to the fords of the Jordan, and once they had left, the gate was shut.",
+        "VAT_ES": "Entonces unos hombres salieron a perseguirlos en dirección al Jordán, hacia los vados; e inmediatamente después que los perseguidores salieron detrás de ellos, se cerraron las puertas de la ciudad.",
+        "CEI": "Gli uomini li inseguirono sulla strada del Giordano verso i guadi e si chiuse la porta, dopo che furono usciti gli inseguitori."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/הֵ֖מָּה טֶ֣רֶם יִשְׁכָּב֑וּ/ן וְ/הִ֛יא עָלְתָ֥ה עֲלֵי/הֶ֖ם עַל הַ/גָּֽג׃",
+        "LXX": "καὶ ἐγένετο ὡς ἐξήλθοσαν οἱ διώκοντες ὀπίσω αὐτῶν, καὶ αὐτοὶ δὲ πρὶν ἢ κοιμηθῆναι αὐτούς, αὕτη δὲ ἀνέβη ἐπὶ τὸ δῶμα πρὸς αὐτοὺς",
+        "VUL": "Necdum obdormierant qui latebant, et ecce mulier ascendit ad eos, et ait :",
+        "SYN": "Прежде нежели они легли спать, она взошла к ним на кровлю",
+        "NEO": "Avant que les espions se couchassent, Rahab monta vers eux sur le toit, et leur dit :",
+        "NAB": "Before the spies fell asleep, Rahab came to them on the roof",
+        "VAT_ES": "Cuando Rajab subió a la terraza, donde estaban los espías, estos aún no se habían acostado.",
+        "CEI": "Quelli non si erano ancora coricati quando la donna salì da loro sulla terrazza"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר֙ אֶל הָ֣/אֲנָשִׁ֔ים יָדַ֕עְתִּי כִּֽי נָתַ֧ן יְהוָ֛ה לָ/כֶ֖ם אֶת הָ/אָ֑רֶץ וְ/כִֽי נָפְלָ֤ה אֵֽימַתְ/כֶם֙ עָלֵ֔י/נוּ וְ/כִ֥י נָמֹ֛גוּ כָּל יֹשְׁבֵ֥י הָ/אָ֖רֶץ מִ/פְּנֵי/כֶֽם׃",
+        "LXX": "καὶ εἶπεν πρὸς αὐτούς Ἐπίσταμαι ὅτι δέδωκεν ὑμῖν Κύριος τὴν γῆν, ἐπιπέπτωκεν γὰρ ὁ φόβος ὑμῶν ἐφ’ ἡμᾶς. ⸆",
+        "VUL": "Novi quod Dominus tradiderit vobis terram : etenim irruit in nos terror vester, et elanguerunt omnes habitatores terræ.",
+        "SYN": "и сказала им: я знаю, что Господь отдал землю сию вам, ибо вы навели на нас ужас, и все жители земли сей пришли от вас в робость;",
+        "NEO": "« \\+w Yahweh|strong=\"H3068\"\\+w**, je le sais, vous a donné ce pays ; la terreur de votre nom nous a saisis, et tous les habitants du pays défaillent devant vous.",
+        "NAB": "and said: \"I know that the LORD has given you the land, that a dread of you has come upon us, and that all the inhabitants of the land are overcome with fear of you.",
+        "VAT_ES": "Ella les dijo: «Yo sé que el Señor les ha entregado este país, porque el terror que ustedes inspiran se ha apoderado de nosotros, y todos los habitantes han quedado espantados a la vista de ustedes.",
+        "CEI": "e disse loro: \"So che il Signore vi ha assegnato il paese, che il terrore da voi gettato si è abbattuto su di noi e che tutti gli abitanti della regione sono sopraffatti dallo spavento davanti a voi,"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּ֣י שָׁמַ֗עְנוּ אֵ֠ת אֲשֶׁר הוֹבִ֨ישׁ יְהוָ֜ה אֶת מֵ֤י יַם סוּף֙ מִ/פְּנֵי/כֶ֔ם בְּ/צֵאתְ/כֶ֖ם מִ/מִּצְרָ֑יִם וַ/אֲשֶׁ֣ר עֲשִׂיתֶ֡ם לִ/שְׁנֵי֩ מַלְכֵ֨י הָ/אֱמֹרִ֜י אֲשֶׁ֨ר בְּ/עֵ֤בֶר הַ/יַּרְדֵּן֙ לְ/סִיחֹ֣ן וּ/לְ/ע֔וֹג אֲשֶׁ֥ר הֶחֱרַמְתֶּ֖ם אוֹתָֽ/ם׃",
+        "LXX": "ἀκηκόαμεν γὰρ ὅτι κατεξήρανεν Κύριος ὁ θεὸς τὴν ἐρυθρὰν θάλασσαν ἀπὸ προσώπου ὑμῶν, ὅτε ἐξεπορεύεσθε ἐκ γῆς Αἰγύπτου, καὶ ὅσα ἐποίησεν τοῖς δυσὶ βασιλεῦσιν τῶν Ἀμορραίων οἳ ἦσαν πέραν τοῦ Ἰορδάνου, τῷ Σηὼν καὶ Ὤγ, οὓς ἐξωλεθρεύσατε αὐτούς.",
+        "VUL": "Audivimus quod siccaverit Dominus aquas maris Rubri ad vestrum introitum, quando egressi estis ex Ægypto : et quæ feceritis duobus Amorrhæorum regibus, qui erant trans Jordanem, Sehon et Og, quos interfecistis.",
+        "SYN": "ибо мы слышали, как Господь [Бог] иссушил пред вами воду Чермного моря, когда вы шли из Египта, и как поступили вы с двумя царями Аморрейскими за Иорданом, с Сигоном и Огом, которых вы истребили;",
+        "NEO": "Car nous avons appris comment \\+w Yahweh|strong=\"H3068\"\\+w**, lorsque vous sortiez d’Égypte, a mis à sec devant vous les eaux de la mer Rouge, et comment vous avez traité les deux rois des Amorrhéens, au delà du Jourdain, Séhon et Og, que vous avez dévoués par anathème.",
+        "NAB": "For we have heard how the LORD dried up the waters of the Red Sea before you when you came out of Egypt, and how you dealt with Sihon and Og, the two kings of the Amorites beyond the Jordan, whom you doomed to destruction.",
+        "VAT_ES": "Nosotros hemos oído cómo el Señor secó las aguas del Mar Rojo cuando ustedes salían de Egipto, y cómo ustedes trataron a Sijón y a Og, los dos reyes amorreos que estaban al otro lado del Jordán y que ustedes condenaron al exterminio.",
+        "CEI": "perché abbiamo sentito come il Signore ha prosciugato le acque del Mare Rosso davanti a voi, alla vostra uscita dall'Egitto e come avete trattato i due re Amorrèi, che erano oltre il Giordano, Sicon ed Og, da voi votati allo sterminio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/נִּשְׁמַע֙ וַ/יִּמַּ֣ס לְבָבֵ֔/נוּ וְ/לֹא קָ֨מָה ע֥וֹד ר֛וּחַ בְּ/אִ֖ישׁ מִ/פְּנֵי/כֶ֑ם כִּ֚י יְהוָ֣ה אֱלֹֽהֵי/כֶ֔ם ה֤וּא אֱלֹהִים֙ בַּ/שָּׁמַ֣יִם מִ/מַּ֔עַל וְ/עַל הָ/אָ֖רֶץ מִ/תָּֽחַת׃",
+        "LXX": "καὶ ἀκούσαντες ἡμεῖς ἐξέστημεν τῇ καρδίᾳ ἡμῶν, καὶ οὐκ ἔστη ἔτι πνεῦμα ἐν οὐδενὶ ἡμῶν ἀπὸ προσώπου ὑμῶν· ὅτι Κύριος ὁ θεὸς ὑμῶν ὃς ἐν οὐρανῷ ἄνω καὶ ἐπὶ τῆς γῆς κάτω.",
+        "VUL": "Et hæc audientes pertimuimus, et elanguit cor nostrum, nec remansit in nobis spiritus ad introitum vestrum : Dominus enim Deus vester ipse est Deus in cælo sursum et in terra deorsum.",
+        "SYN": "когда мы услышали об этом, ослабело сердце наше, и ни в ком [из нас] не стало духа против вас; ибо Господь Бог ваш есть Бог на небе вверху и на земле внизу;",
+        "NEO": "Et, en l’apprenant, notre cœur s’est fondu, chacun a perdu courage à votre approche ; car c’est \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu, qui est Dieu en haut dans le ciel, et en bas sur la terre.",
+        "NAB": "At these reports, we are disheartened; everyone is discouraged because of you, since the LORD, your God, is God in heaven above and on earth below.",
+        "VAT_ES": "Al enterarnos de eso, nuestro corazón desfalleció, y ya no hay nadie que tenga ánimo para oponerles resistencia, porque el Señor, su Dios, es Dios allá arriba, en el cielo, y aquí abajo, en la tierra.",
+        "CEI": "Lo si è saputo e il nostro cuore è venuto meno e nessuno ardisce di fiatare dinanzi a voi, perché il Signore vostro Dio è Dio lassù in cielo e quaggiù sulla terra."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֗ה הִשָּֽׁבְעוּ נָ֥א לִ/י֙ בַּֽ/יהוָ֔ה כִּי עָשִׂ֥יתִי עִמָּ/כֶ֖ם חָ֑סֶד וַ/עֲשִׂיתֶ֨ם גַּם אַתֶּ֜ם עִם בֵּ֤ית אָבִ/י֙ חֶ֔סֶד וּ/נְתַתֶּ֥ם לִ֖/י א֥וֹת אֱמֶֽת׃",
+        "LXX": "καὶ νῦν ὀμόσατέ μοι Κύριον τόν θεόν, ὅτι ποιῶ ὑμῖν ἔλεος, ποιήσατε καὶ ὑμεῖς ἔλεος ἐν τῷ οἴκῳ τοῦ πατρός μου.",
+        "VUL": "Nunc ergo jurate mihi per Dominum, ut quomodo ego misericordiam feci vobiscum, ita et vos faciatis cum domo patris mei : detisque mihi verum signum,",
+        "SYN": "итак поклянитесь мне Господом [Богом нашим], что, как я сделала вам милость, так и вы сделаете милость дому отца моего, и дайте мне верный знак,",
+        "NEO": "Maintenant, je vous prie, jurez-moi par \\+w Yahweh|strong=\"H3068\"\\+w** que vous aurez pour la maison de mon père la même bonté que j’ai eue pour vous, et donnez-moi un gage assuré",
+        "NAB": "Now then, swear to me by the LORD that, since I am showing kindness to you, you in turn will show kindness to my family; and give me an unmistakable token",
+        "VAT_ES": "Por eso, júrenme ahora mismo por el Señor, que así como yo los traté con bondad, ustedes tratarán de la misma manera a mi familia. Dénme una señal segura",
+        "CEI": "Ora giuratemi per il Signore che, come io ho usato benevolenza, anche voi userete benevolenza alla casa di mio padre; datemi dunque un segno certo"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/הַחֲיִתֶ֞ם אֶת אָבִ֣/י וְ/אֶת אִמִּ֗/י וְ/אֶת אַחַ/י֙ וְ/אֶת אחות/י אַחְיוֹתַ֔/י וְ/אֵ֖ת כָּל אֲשֶׁ֣ר לָ/הֶ֑ם וְ/הִצַּלְתֶּ֥ם אֶת נַפְשֹׁתֵ֖י/נוּ מִ/מָּֽוֶת׃",
+        "LXX": "καὶ ζωγρήσατε τὸν οἶκον τοῦ πατρός μου, τὴν μητέρα μου καὶ τοὺς ἀδελφούς μου καὶ πάντα τὸν οἶκόν μου καὶ πάντα ὅσα ἐστὶν αὐτοῖς, καὶ ἐξελεῖσθε τὴν ψυχήν μου ἐκ θανάτου.",
+        "VUL": "ut salvetis patrem meum et matrem, et fratres ac sorores meas, et omnia quæ illorum sunt, et eruatis animas nostras a morte.",
+        "SYN": "что вы сохраните в живых отца моего и матерь мою, и братьев моих и сестер моих, и всех, кто есть у них, и избавите души наши от смерти.",
+        "NEO": "que vous laisserez la vie à mon père, à ma mère, à mes frères, à mes sœurs, et à tous ceux qui leur appartiennent, et que vous nous sauverez de la mort. »",
+        "NAB": "that you are to spare my father and mother, brothers and sisters, and all their kin, and save us from death.\"",
+        "VAT_ES": "que dejarán con vida a mi padre, a mi madre, a mis hermanos y a mis hermanas, y a todo cuanto les pertenece, y que nos librarán de la muerte».",
+        "CEI": "che lascerete vivi mio padre, mia madre, i miei fratelli, le mie sorelle e quanto loro appartiene e risparmierete le nostre vite dalla morte\"."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֧אמְרוּ לָ֣/הּ הָ/אֲנָשִׁ֗ים נַפְשֵׁ֤/נוּ תַחְתֵּי/כֶם֙ לָ/מ֔וּת אִ֚ם לֹ֣א תַגִּ֔ידוּ אֶת דְּבָרֵ֖/נוּ זֶ֑ה וְ/הָיָ֗ה בְּ/תֵת יְהוָ֥ה לָ֨/נוּ֙ אֶת הָ/אָ֔רֶץ וְ/עָשִׂ֥ינוּ עִמָּ֖/ךְ חֶ֥סֶד וֶ/אֱמֶֽת׃",
+        "LXX": "καὶ εἶπαν αὐτῇ οἱ ἄνδρες Ἡ ψυχὴ ἡμῶν ἀνθ’ ὑμῶν εἰς θάνατον. καὶ αὐτὴ εἶπεν Ὡς ἂν παραδοῖ Κύριος ὑμῖν τὴν πόλιν, ποιήσετε εἰς ἐμὲ ἔλεος καὶ ἀλήθειαν.",
+        "VUL": "Qui responderunt ei : Anima nostra sit pro vobis in mortem, si tamen non prodideris nos : cumque tradiderit nobis Dominus terram, faciemus in te misericordiam et veritatem.",
+        "SYN": "Эти люди сказали ей: душа наша вместо вас _да_ _будет_ _предана_ смерти, если вы [ныне] не откроете сего дела нашего; когда же Господь предаст нам землю, мы окажем тебе милость и истину.",
+        "NEO": "Ces hommes lui répondirent : « Que nous mourrions pour vous, si vous ne divulguez pas notre affaire ! Et quand \\+w Yahweh|strong=\"H3068\"\\+w** nous donnera ce pays, nous agirons envers toi avec bonté et fidélité. »",
+        "NAB": "\"We pledge our lives for yours,\" the men answered her. \"If you do not betray this errand of ours, we will be faithful in showing kindness to you when the LORD gives us the land.\"",
+        "VAT_ES": "Los hombres le respondieron: «Nosotros responderemos por ustedes con nuestra vida, con tal que no nos delates. Cuando el Señor nos entregue este país, te trataremos con bondad y lealtad».",
+        "CEI": "Gli uomini le dissero: \"A morte le nostre vite al posto vostro, purché non riveliate questo nostro affare; quando poi il Signore ci darà il paese, ti tratteremo con benevolenza e lealtà\"."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/תּוֹרִדֵ֥/ם בַּ/חֶ֖בֶל בְּעַ֣ד הַֽ/חַלּ֑וֹן כִּ֤י בֵיתָ/הּ֙ בְּ/קִ֣יר הַֽ/חוֹמָ֔ה וּ/בַֽ/חוֹמָ֖ה הִ֥יא יוֹשָֽׁבֶת׃",
+        "LXX": "καὶ κατεχάλασεν αὐτοὺς διὰ τῆς θυρίδος·",
+        "VUL": "Demisit ergo eos per funem de fenestra : domus enim ejus hærebat muro.",
+        "SYN": "И спустила она их по веревке чрез окно, ибо дом ее был в городской стене, и она жила в стене;",
+        "NEO": "Elle les fit descendre avec une corde par la fenêtre, car sa maison était attenante à la muraille de la ville, et elle habitait sur la muraille.",
+        "NAB": "Then she let them down through the window with a rope; for she lived in a house built into the city wall.",
+        "VAT_ES": "Entonces la mujer los descolgó por la ventana con una cuerda, porque su casa daba contra el muro de la ciudad, y ella vivía junto a él.",
+        "CEI": "Allora essa li fece scendere con una corda dalla finestra, perché la sua casa era addossata al muro di cinta; infatti sulle mura aveva l'abitazione."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֤אמֶר לָ/הֶם֙ הָ/הָ֣רָ/ה לֵּ֔כוּ פֶּֽן יִפְגְּע֥וּ בָ/כֶ֖ם הָ/רֹדְפִ֑ים וְ/נַחְבֵּתֶ֨ם שָׁ֜מָּ/ה שְׁלֹ֣שֶׁת יָמִ֗ים עַ֚ד שׁ֣וֹב הָ/רֹֽדְפִ֔ים וְ/אַחַ֖ר תֵּלְכ֥וּ לְ/דַרְכְּ/כֶֽם׃",
+        "LXX": "⸂⸆⸃ καὶ εἶπεν αὐτοῖς Εἰς τὴν ὀρεινὴν ἀπέλθετε, μὴ συναντήσωσιν ὑμῖν οἱ καταδιώκοντες, καὶ κρυβήσεσθε ἐκεῖ τρεῖς ἡμέρας ἕως ἂν ἀποστρέψωσιν οἱ καταδιώκοντες ὀπίσω ὑμῶν, καὶ μετὰ ταῦτα ἀπελεύσεσθε εἰς τὴν ὁδὸν ὑμῶν.",
+        "VUL": "Dixitque ad eos : Ad montana conscendite, ne forte occurrant vobis revertentes : ibique latitate tribus diebus, donec redeant, et sic ibitis per viam vestram.",
+        "SYN": "и сказала им: идите на гору, чтобы не встретили вас преследующие, и скрывайтесь там три дня, доколе не возвратятся погнавшиеся [за вами]; а после пойдете в путь ваш.",
+        "NEO": "Elle leur dit : « Allez à la montagne, de peur que ceux qui vous poursuivent ne vous rencontrent, et cachez-vous là pendant trois jours, jusqu’à ce qu’ils soient de retour ; après quoi, vous suivrez votre chemin. »",
+        "NAB": "\"Go up into the hill country,\" she suggested to them, \"that your pursuers may not find you. Hide there for three days, until they return; then you may proceed on your way.\"",
+        "VAT_ES": "Y les hizo esta recomendación: «Vayan hacia la montaña para que sus perseguidores no puedan alcanzarlos. Manténganse ocultos allí durante tres días, hasta que ellos estén de regreso, y después podrán seguir viaje.»",
+        "CEI": "Disse loro: \"Andate verso la montagna, perché non si imbattano in voi i vostri inseguitori e là rimarrete nascosti tre giorni fino al loro ritorno; poi andrete per la vostra strada\"."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֥וּ אֵלֶ֖י/הָ הָ/אֲנָשִׁ֑ים נְקִיִּ֣ם אֲנַ֔חְנוּ מִ/שְּׁבֻעָתֵ֥/ךְ הַ/זֶּ֖ה אֲשֶׁ֥ר הִשְׁבַּעְתָּֽ/נוּ׃",
+        "LXX": "καὶ εἶπαν οἱ ἄνδρες πρὸς αὐτὴν Ἀθῷοί ἐσμεν τῷ ὅρκῳ σου τούτῳ·",
+        "VUL": "Qui dixerunt ad eam : Innoxii erimus a juramento hoc, quo adjurasti nos :",
+        "SYN": "И сказали ей те люди: мы свободны будем от твоей клятвы, которою ты нас закляла, _если_ _не_ _сделаешь_ _так:_",
+        "NEO": "Ces hommes lui dirent : « Voici comment nous nous acquitterons de ce serment que tu nous as fait faire :",
+        "NAB": "The men answered her, \"This is how we will fulfill the oath you made us take:",
+        "VAT_ES": "Los hombres le respondieron:",
+        "CEI": "Le risposero allora gli uomini: \"Saremo sciolti da questo giuramento, che ci hai fatto fare, a queste condizioni:"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "הִנֵּ֛ה אֲנַ֥חְנוּ בָאִ֖ים בָּ/אָ֑רֶץ אֶת תִּקְוַ֡ת חוּט֩ הַ/שָּׁנִ֨י הַ/זֶּ֜ה תִּקְשְׁרִ֗י בַּֽ/חַלּוֹן֙ אֲשֶׁ֣ר הוֹרַדְתֵּ֣/נוּ ב֔/וֹ וְ/אֶת אָבִ֨י/ךְ וְ/אֶת אִמֵּ֜/ךְ וְ/אֶת אַחַ֗יִ/ךְ וְ/אֵת֙ כָּל בֵּ֣ית אָבִ֔י/ךְ תַּאַסְפִ֥י אֵלַ֖יִ/ךְ הַ/בָּֽיְתָ/ה׃",
+        "LXX": "ἰδοὺ ἡμεῖς εἰσπορευόμεθα εἰς μέρος τῆς πόλεως, καὶ θήσεις τὸ σημεῖον, τὸ σπαρτίον τὸ κόκκινον τοῦτο ἐκδήσεις εἰς τὴν θυρίδα δι’ ἧς κατεβίβασας ἡμᾶς δι’ αὐτῆς, τὸν δὲ πατέρα σου καὶ τὴν μητέρα σου καὶ τοὺς ἀδελφούς σου καὶ πάντα τὸν οἶκον τοῦ πατρός σου συνάξεις πρὸς σεαυτὴν εἰς τὴν οἰκίαν σου.",
+        "VUL": "si ingredientibus nobis terram, signum fuerit funiculus iste coccineus, et ligaveris eum in fenestra, per quam demisisti nos : et patrem tuum ac matrem, fratresque et omnem cognationem tuam congregaveris in domum tuam.",
+        "SYN": "вот, когда мы придем в эту землю, ты привяжи червленую веревку к окну, чрез которое ты нас спустила, а отца твоего и матерь твою и братьев твоих, все семейство отца твоего собери к себе в дом твой;",
+        "NEO": "A notre entrée dans le pays, attache ce cordon de fil écarlate à la fenêtre par laquelle tu nous fais descendre, et rassemble auprès de toi, dans ta maison, ton père, ta mère, tes frères, et toute la famille de ton père.",
+        "NAB": "When we come into the land, tie this scarlet cord in the window through which you are letting us down; and gather your father and mother, your brothers and all your family into your house.",
+        "VAT_ES": "«Cuando nosotros entremos en el país, tú atarás este cordón escarlata a la ventana por la que nos hiciste bajar, y reunirás contigo, dentro de la casa, a tu padre, a tu madre, a tus hermanos y a toda tu familia.",
+        "CEI": "quando noi entreremo nel paese, legherai questa cordicella di filo scarlatto alla finestra, per la quale ci hai fatto scendere e radunerai presso di te in casa tuo padre, tua madre, i tuoi fratelli e tutta la famiglia di tuo padre."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֡ה כֹּ֣ל אֲשֶׁר יֵצֵא֩ מִ/דַּלְתֵ֨י בֵיתֵ֧/ךְ הַ/ח֛וּצָ/ה דָּמ֥/וֹ בְ/רֹאשׁ֖/וֹ וַ/אֲנַ֣חְנוּ נְקִיִּ֑ם וְ֠/כֹל אֲשֶׁ֨ר יִֽהְיֶ֤ה אִתָּ/ךְ֙ בַּ/בַּ֔יִת דָּמ֣/וֹ בְ/רֹאשֵׁ֔/נוּ אִם יָ֖ד תִּֽהְיֶה בּֽ/וֹ׃",
+        "LXX": "καὶ ἔσται πᾶς ὃς ἂν ἐξέλθῃ τὴν θύραν τῆς οἰκίας σου ἔξω, ἔνοχος ἑαυτῷ ἔσται, ἡμεῖς δὲ ἀθῷοι τῷ ὅρκῳ σου τούτῳ· καὶ ὅσοι ἐὰν γένωνται μετὰ σοῦ ἐν τῇ οἰκίᾳ σου, ἡμεῖς ἔνοχοι ἐσόμεθα.",
+        "VUL": "Qui ostium domus tuæ egressus fuerit, sanguis ipsius erit in caput ejus, et nos erimus alieni. Cunctorum autem sanguis, qui tecum in domo fuerint, redundabit in caput nostrum, si eos aliquis tetigerit.",
+        "SYN": "и если кто-нибудь выйдет из дверей твоего дома вон, того кровь на голове его, а мы свободны [будем от сей клятвы твоей]; а кто будет с тобою в [твоем] доме, того кровь на голове нашей, если чья рука коснется его;",
+        "NEO": "Si quelqu’un d’eux sort de la porte de ta maison pour aller dehors, son sang sera sur sa tête, et nous en seront innocents ; mais si l’on met la main sur l’un de tous ceux qui seront avec toi dans la maison, son sang sera sur notre tête.",
+        "NAB": "Should any of them pass outside the doors of your house, he will be responsible for his own death, and we shall be guiltless. But we shall be responsible if anyone in the house with you is harmed.",
+        "VAT_ES": "Si alguno sale fuera de las puertas de tu casa, su sangre caerá sobre su cabeza y nosotros seremos inocentes. Pero la sangre de todos los que estén contigo dentro de la casa, caerá sobre nuestras cabezas, si alguien pone su mano sobre alguno de ellos.",
+        "CEI": "Chiunque allora uscirà dalla porta di casa tua, il suo sangue ricadrà sulla sua testa e noi non ne avremo colpa; chiunque invece sarà con te in casa, il suo sangue ricada sulla nostra testa, se gli si metterà addosso una mano."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/אִם תַּגִּ֖ידִי אֶת דְּבָרֵ֣/נוּ זֶ֑ה וְ/הָיִ֣ינוּ נְקִיִּ֔ם מִ/שְּׁבֻעָתֵ֖/ךְ אֲשֶׁ֥ר הִשְׁבַּעְתָּֽ/נוּ׃",
+        "LXX": "ἐὰν δέ τις ἡμᾶς ἀδικήσῃ ἢ καὶ ἀποκαλύψῃ τοὺς λόγους ἡμῶν τούτους, ἐσόμεθα ἀθῷοι τῷ ὅρκῳ σου τούτῳ.",
+        "VUL": "Quod si nos prodere volueris, et sermonem istum proferre in medium, erimus mundi ab hoc juramento, quo adjurasti nos.",
+        "SYN": "если же [кто нас обидит, или] ты откроешь сие наше дело, то мы также свободны будем от клятвы твоей, которою ты нас закляла.",
+        "NEO": "Et si tu divulgues notre affaire, nous serons quittes du serment que tu nous as fait prêter. »",
+        "NAB": "If, however, you betray this errand of ours, we shall be quit of the oath you have made us take.\"",
+        "VAT_ES": "En cambio, si nos delatas, quedaremos libres del juramento que nos has exigido».",
+        "CEI": "Ma se tu rivelerai questo nostro affare, noi saremo liberi da ciò che ci hai fatto giurare\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/תֹּ֨אמֶר֙ כְּ/דִבְרֵי/כֶ֣ם כֶּן ה֔וּא וַֽ/תְּשַׁלְּחֵ֖/ם וַ/יֵּלֵ֑כוּ וַ/תִּקְשֹׁ֛ר אֶת תִּקְוַ֥ת הַ/שָּׁנִ֖י בַּ/חַלּֽוֹן׃",
+        "LXX": "καὶ εἶπεν αὐτοῖς Κατὰ τὸ ῥῆμα ὑμῶν ἔστω· καὶ ἐξαπέστειλεν αὐτούς.",
+        "VUL": "Et illa respondit : Sicut locuti estis, ita fiat : dimittensque eos ut pergerent, appendit funiculum coccineum in fenestra.",
+        "SYN": "Она сказала: да будет по словам вашим! И отпустила их, и они пошли, а она привязала к окну червленую веревку.",
+        "NEO": "Elle répondit : « Qu’il en soit selon vos paroles. » Puis elle les congédia, et ils partirent ; et elle attacha à la fenêtre le cordon écarlate.",
+        "NAB": "\"Let it be as you say,\" she replied, and bade them farewell. When they were gone, she tied the scarlet cord in the window.",
+        "VAT_ES": "«Que se cumpla lo que acaban de decir», replicó ella, y los dejó partir. Apenas se fueron, la mujer ató a la ventana el cordón escarlata.",
+        "CEI": "Essa allora rispose: \"Sia così secondo le vostre parole\". Poi li congedò e quelli se ne andarono. Essa legò la cordicella scarlatta alla finestra."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יֵּלְכוּ֙ וַ/יָּבֹ֣אוּ הָ/הָ֔רָ/ה וַ/יֵּ֤שְׁבוּ שָׁם֙ שְׁלֹ֣שֶׁת יָמִ֔ים עַד שָׁ֖בוּ הָ/רֹדְפִ֑ים וַ/יְבַקְשׁ֧וּ הָ/רֹדְפִ֛ים בְּ/כָל הַ/דֶּ֖רֶךְ וְ/לֹ֥א מָצָֽאוּ׃",
+        "LXX": "καὶ ἐπορεύθησαν καὶ ἤλθοσαν εἰς τὴν ὀρεινήν, καὶ κατέμειναν ἐκεῖ τρεῖς ἡμέρας· καὶ ἐξεζήτησαν οἱ καταδιώκοντες πάσας τὰς ὁδούς, καὶ οὐχ εὕροσαν.",
+        "VUL": "Illi vero ambulantes pervenerunt ad montana, et manserunt ibi tres dies, donec reverterentur qui fuerant persecuti : quærentes enim per omnem viam, non repererunt eos.",
+        "SYN": "Они пошли и пришли на гору, и пробыли там три дня, доколе не возвратились гнавшиеся _за_ _ними._ Гнавшиеся искали их по всей дороге и не нашли.",
+        "NEO": "Les espions, s’en étant allés, vinrent à la montagne, et ils y restèrent trois jours, jusqu’à ce que ceux qui les poursuivaient fussent de retour à Jéricho. Ceux qui les poursuivaient les avaient cherchés sur tout le chemin, sans les rencontrer.",
+        "NAB": "They went up into the hills, where they stayed three days until their pursuers, who had sought them all along the road without finding them, returned.",
+        "VAT_ES": "Los hombres se fueron a la montaña y se quedaron allí tres días, hasta que regresaron los perseguidores, que los habían buscado por todas partes sin encontrarlos.",
+        "CEI": "Se ne andarono dunque e giunsero alla montagna dove rimasero tre giorni, finché non furono tornati gli inseguitori. Gli inseguitori li avevano cercati in ogni direzione senza trovarli."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יָּשֻׁ֜בוּ שְׁנֵ֤י הָֽ/אֲנָשִׁים֙ וַ/יֵּרְד֣וּ מֵֽ/הָ/הָ֔ר וַ/יַּעַבְרוּ֙ וַ/יָּבֹ֔אוּ אֶל יְהוֹשֻׁ֖עַ בִּן נ֑וּן וַ/יְסַ֨פְּרוּ ל֔/וֹ אֵ֥ת כָּל הַ/מֹּצְא֖וֹת אוֹתָֽ/ם׃",
+        "LXX": "καὶ ὑπέστρεψαν οἱ δύο νεανίσκοι καὶ κατέβησαν ἐκ τοῦ ὄρους, καὶ διέβησαν πρὸς Ἰησοῦν υἱὸν Ναυή, καὶ διηγήσαντο αὐτῷ πάντα τὰ συμβεβηκότα αὐτοῖς.",
+        "VUL": "Quibus urbem ingressis, reversi sunt, et descenderunt exploratores de monte : et, transmisso Jordane, venerunt ad Josue filium Nun, narraveruntque ei omnia quæ acciderant sibi,",
+        "SYN": "Таким образом два сии человека пошли назад, сошли с горы, перешли [Иордан] и пришли к Иисусу, сыну Навину, и пересказали ему все, что с ними случилось.",
+        "NEO": "Les deux hommes s’en retournèrent et, étant descendus de la montagne, ils passèrent le Jourdain. Ils vinrent auprès de Josué, fils de Nun, et lui racontèrent tout ce qui leur était arrivé.",
+        "NAB": "Then the two came back down from the hills, crossed the Jordan to Joshua, son of Nun, and reported all that had befallen them.",
+        "VAT_ES": "Entonces los dos hombres volvieron a bajar de la montaña, cruzaron el río, y cuando estuvieron de nuevo con Josué, hijo de Nun, lo informaron de todo lo que les había ocurrido.",
+        "CEI": "I due uomini allora tornarono sui loro passi, scesero dalla montagna, passarono il Giordano e vennero da Giosuè, figlio di Nun, e gli raccontarono quanto era loro accaduto."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְרוּ֙ אֶל יְהוֹשֻׁ֔עַ כִּֽי נָתַ֧ן יְהוָ֛ה בְּ/יָדֵ֖/נוּ אֶת כָּל הָ/אָ֑רֶץ וְ/גַם נָמֹ֛גוּ כָּל יֹשְׁבֵ֥י הָ/אָ֖רֶץ מִ/פָּנֵֽי/נוּ׃",
+        "LXX": "καὶ εἶπαν πρὸς Ἰησοῦν ὅτι Παρέδωκεν Κύριος πᾶσαν τὴν γῆν ἐν χειρὶ ἡμῶν, καὶ κατέπτηκεν πᾶς ὁ κατοικῶν τὴν γῆν ἐκείνην ἀφ’ ἡμῶν.",
+        "VUL": "atque dixerunt : Tradidit Dominus omnem terram hanc in manus nostras, et timore prostrati sunt cuncti habitatores ejus.",
+        "SYN": "И сказали Иисусу: Господь [Бог наш] предал всю землю сию в руки наши, и все жители земли в страхе от нас.",
+        "NEO": "Ils dirent à Josué : « Certainement \\+w Yahweh|strong=\"H3068\"\\+w** a livré tout le pays entre nos mains, et même tous les habitants du pays défaillent devant nous. »",
+        "NAB": "They assured Joshua, \"The LORD has delivered all this land into our power; indeed, all the inhabitants of the land are overcome with fear of us.\"",
+        "VAT_ES": "«No hay duda, le dijeron, que el Señor nos ha entregado el país, porque todos sus habitantes están espantados delante de nosotros».",
+        "CEI": "Dissero a Giosuè: \"Dio ha messo nelle nostre mani tutto il paese e tutti gli abitanti del paese sono già disfatti dinanzi a noi\"."
+      }
+    }
+  }
+}

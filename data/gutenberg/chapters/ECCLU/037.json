@@ -1,0 +1,541 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_037",
+  "book_key": "ECCLU",
+  "sequence": 37,
+  "chapter_in": {
+    "MT": 37,
+    "VUL": 37,
+    "LXX": 37
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "Πᾶς φίλος ἐρεῖ Ἐφιλίασα αὐτῷ κἀγώ· ἀλλ’ ἔστιν φίλος ὀνόματι μόνον φίλος.",
+        "VUL": "[Omnis amicus dicet : Et ego amicitiam copulavi :/ sed est amicus solo nomine amicus./ Nonne tristitia inest usque ad mortem ?/",
+        "SYN": "Всякий друг может сказать: \"и я подружился с ним\". Но бывает друг по имени только другом.",
+        "NEO": "Tout ami dit : « Moi aussi je suis ton ami ; » mais tel ami ne l’est que de nom.",
+        "NAB": "Every friend declares his friendship, but there are friends who are friends in name only.",
+        "VAT_ES": "Todo amigo dice: «También yo soy tu amigo», pero hay amigos que lo son sólo de nombre.",
+        "CEI": "Ogni amico dice: \"Anch'io ti sono amico\", ma esiste l'amico che lo è solo di nome."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "οὐχὶ λύπη ἔνι ἕως θανάτου ἑταῖρος καὶ φίλος τρεπόμενος εἰς ἔχθραν;",
+        "VUL": "sodalis autem et amicus ad inimicitiam convertentur./",
+        "SYN": "Не есть ли это скорбь до смерти, когда приятель и друг обращается во врага?",
+        "NEO": "N’est-ce pas un chagrin jusqu’à la mort, quand un compagnon et un ami se changent en ennemis ?",
+        "NAB": "Is it not a sorrow unto death when your bosom companion becomes your enemy?",
+        "VAT_ES": "&iquest;No entristece acaso hasta la muerte ver a un amigo querido transformarse en enemigo?",
+        "CEI": "Non è forse un dolore mortale un compagno e un amico trasformatosi in nemico?"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ὦ πονηρὸν ἐνθύμημα, πόθεν ἐνεκυλίσθης καλύψαι τὴν ξηρὰν ἐν δολιότητι;",
+        "VUL": "O præsumptio nequissima, unde creata es/ cooperire aridam malitia et dolositate illius ?/",
+        "SYN": "О, злая мысль! откуда вторглась ты, чтобы покрыть землю коварством?",
+        "NEO": "O pensée perverse, d’où es-tu sortie, pour couvrir la terre de tromperie ?",
+        "NAB": "\"Alas, my companion! Why were you created to blanket the earth with deceit?\"",
+        "VAT_ES": "&iexcl;Perversa inclinación! &iquest;De dónde te han hecho rodar para cubrir la tierra de falsedad?",
+        "CEI": "O inclinazione malvagia, da dove sei balzata, per ricoprire la terra con la tua malizia?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "ἑταῖρος φίλου ἐν εὐφροσύνῃ ἥδεται, καὶ ἐν καιρῷ θλίψεως ἔσται ἀπέναντι·",
+        "VUL": "Sodalis amico conjucundatur in oblectationibus,/ et in tempore tribulationis adversarius erit./",
+        "SYN": "Приятель радуется при веселии друга, а во время скорби его будет против него.",
+        "NEO": "Le compagnon d’un ami se réjouit de ses joies, et, au jour de l’adversité, il se tourne contre lui !",
+        "NAB": "A false friend will share your joys, but in time of trouble he stands afar off.",
+        "VAT_ES": "&iexcl;Un compañero comparte las alegrías del amigo y en el momento de la aflicción, se vuelve contra él!",
+        "CEI": "Il compagno si rallegra con l'amico nella felicità, ma al momento della disgrazia gli sarà ostile."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "ἑταῖρος φίλῳ συνπονεῖ χάριν γαστρός, ἔναντι πολέμου λήμψεται ἀσπίδα.",
+        "VUL": "Sodalis amico condolet causa ventris,/ et contra hostem accipiet scutum./",
+        "SYN": "Приятель помогает другу в трудах его ради чрева, а в случае войны возьмется за щит.",
+        "NEO": "Un compagnon partage la peine de son ami dans l’intérêt de son ventre, et, en face du combat, il prend son bouclier !",
+        "NAB": "A true friend will fight with you against the foe, against your enemies he will be your shield-bearer.",
+        "VAT_ES": "&iexcl;Otro sufre con el amigo para llenarse su vientre, y a la hora del combate, empuña el escudo!",
+        "CEI": "Il compagno soffre con l'amico per ragioni di stomaco, ma di fronte al conflitto prenderà lo scudo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "μὴ ἐπιλάθη φίλου ἐν τῇ ψυχῇ σου, καὶ μὴ ἀμνημονήσῃς αὐτοῦ ἐν χρήμασίν σου.",
+        "VUL": "Non obliviscaris amici tui in animo tuo,/ et non immemor sis illius in opibus tuis./",
+        "SYN": "Не забывай друга в душе твоей и не забывай его в имении твоем.",
+        "NEO": "N’oublie pas ton ami dans ton cœur, et, au sein de l’opulence, ne perds pas son souvenir.",
+        "NAB": "Forget not your comrade during the battle, and neglect him not when you distribute your spoils.",
+        "VAT_ES": "Nunca te olvides de un buen amigo, y acuérdate de él cuando tengas riquezas.",
+        "CEI": "Non ti dimenticare dell'amico dell'anima tua, non scordarti di lui nella tua prosperità."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "πᾶς σύμβουλος ἐξαίρει βουλήν, ἀλλ’ ἔστιν συμβουλεύων εἰς αὑτόν.",
+        "VUL": "Noli consiliari cum eo qui tibi insidiatur,/ et a zelantibus te absconde consilium.]",
+        "SYN": "Всякий советник хвалит свой совет, но иной советует в свою пользу;",
+        "NEO": "Tout conseiller donne des conseils, mais il en est qui conseillent dans leur propre intérêt.",
+        "NAB": "Every counselor points out a way, but some counsel ways of their own;",
+        "VAT_ES": "Todo el que aconseja recomienda su consejo, pero hay quien aconseja pensando sólo en sí mismo.",
+        "CEI": "Ogni consigliere suggerisce consigli, ma c'è chi consiglia a proprio vantaggio."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "ἀπὸ συμβούλου φύλαξον τὴν ψυχήν σου, καὶ γνῶθι πρότερον τίς αὐτοῦ χρεία· καὶ γὰρ αὐτὸς ἑαυτῷ βουλεύσεται, μή ποτε βάλῃ ἐπὶ σοὶ κλῆρον,",
+        "VUL": "[Omnis consiliarius prodit consilium,/ sed est consiliarius in semetipso./",
+        "SYN": "от советника охраняй душу твою и наперед узнай, что ему нужно; ибо, может быть, он будет советовать для самого себя;",
+        "NEO": "Vis-à-vis d’un conseiller, tiens-toi sur tes gardes, et cherche d’abord à savoir quel est son intérêt, — car c’est pour lui-même qu’il conseillera, — afin qu’il ne jette pas le sort sur toi,",
+        "NAB": "Be on the alert when one proffers advice, find out first of all what he wants. For he may be thinking of himself alone; why should the profit fall to him?",
+        "VAT_ES": "Sé precavido con el que da consejos y averigua primero qué le hace falta, porque entonces aconsejará lo que le convenga a él; no sea que le dé lo mismo una cosa que otra",
+        "CEI": "Guàrdati da un consigliere, infòrmati quali siano le sue necessità - egli nel consigliare penserà al suo interesse - perché non getti la sorte su di te"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "καὶ εἴπῃ σοι Καλὴ ἡ ὁδός σου, καὶ στήσεται ἐξ ἐναντίας ἰδεῖν τὸ συμβησόμενόν σοι.",
+        "VUL": "A consiliario serva animam tuam :/ prius scito quæ sit illius necessitas :/ et ipse enim animo suo cogitabit :/",
+        "SYN": "может быть, он бросит на тебя жребий и скажет тебе: \"путь твой хорош\"; а сам станет напротив тебя, чтобы посмотреть, что случится с тобою.",
+        "NEO": "et qu’il ne dise pas : « Ta voie est bonne » ; puis il se tiendra de l’autre côté pour voir ce qui t’arrivera.",
+        "NAB": "He may tell you how good your way will be, and then stand by to watch your misfortune.",
+        "VAT_ES": "y te diga: «Vas por el buen camino», mientras se pone enfrente a ver qué te pasa.",
+        "CEI": "e dica: \"La tua via è buona\", poi si terrà in disparte per vedere quanto ti accadrà."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "μὴ βουλεύου μετὰ τοῦ ὑποβλεπομένου σε, καὶ ἀπὸ τῶν ζηλούντων σε κρύψον βουλήν·",
+        "VUL": "ne forte mittat sudem in terram,/ et dicat tibi :/",
+        "SYN": "Не советуйся с недоброжелателем твоим и от завистников твоих скрывай намерения.",
+        "NEO": "Ne consulte pas un homme qui te regarde en-dessous, et cache ta résolution à celui qui te jalouse.",
+        "NAB": "Seek no advice from one who regards you with hostility; from those who envy you, keep your intentions hidden.",
+        "VAT_ES": "No consultes al que te subestima, y al que tiene celos de ti, ocúltale tus designios.",
+        "CEI": "Non consigliarti con chi ti guarda di sbieco, nascondi la tua intenzione a quanti ti invidiano."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "⸂⸆⸃ μετὰ γυναικὸς τῆς ἀντιζήλου αὐτῆς καὶ μετὰ δειλοῦ περὶ πολέμου καὶ μετὰ ἐμπόρου περὶ μεταβολίας καὶ μετὰ ἀγοράζοντος περὶ πράσεως, μετὰ βασκάνου περὶ εὐχαριστίας καὶ μετὰ ἀνελεήμονος περὶ χρηστοηθείας, μετὰ ὀκνηροῦ περὶ παντὸς ἔργου καὶ μετὰ μισθίου ἀφεστίου περὶ συντελείας, οἰκέτῃ ἀργῷ περὶ πολλῆς ἐργασίας, μὴ ἔπεχε ἐπὶ τούτοις περὶ πάσης συμβουλίας·",
+        "VUL": "Bona est via tua :/ et stet e contrario videre quid tibi eveniat./",
+        "SYN": "Не советуйся с женою о сопернице ее и с боязливым - о войне, с продавцом - о мене, с покупщиком - о продаже, с завистливым - о благодарности,",
+        "NEO": "Ne consulte pas une femme sur sa rivale, un lâche sur la guerre, un marchand sur un échange, un acheteur sur une vente, un envieux sur la reconnaissance, un homme sans compassion sur un acte charitable, un paresseux sur un travail quelconque, un mercenaire de la maison sur l’achèvement d’un travail, un esclave paresseux sur une grosse besogne : ne fais fonds sur ces gens pour aucun conseil.",
+        "NAB": "Speak not to a woman about her rival, nor to a coward about war, to a merchant about business, to a buyer about value, to a miser about generosity, to a cruel man about mercy, to a lazy man about work, to a seasonal laborer about the harvest, to an idle slave about a great task: pay no attention to any advice they give.",
+        "VAT_ES": "No pidas consejo a una mujer sobre su rival, ni a un cobarde sobre la guerra, ni a un comerciante sobre un negocio, ni a un comprador sobre una venta, ni a un envidiosos sobre la gratitud, ni a un despiadado sobre un beneficio, ni a un perezoso sobre cualquier trabajo, ni al que trabaja por horas sobre la conclusión de una obra, ni a un servidor holgazán sobre un trabajo difícil: no cuentes con estos para ningún consejo.",
+        "CEI": "Non consigliarti con una donna sulla sua rivale, con un pauroso sulla guerra, con un mercante sul commercio, con un compratore sulla vendita, con un invidioso sulla riconoscenza, con uno spietato sulla bontà di cuore, con un pigro su un'iniziativa qualsiasi, con un mercenario annuale sul raccolto, con uno schiavo pigro su un gran lavoro; non dipendere da costoro per nessun consiglio."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "ἀλλ’ ἢ μετὰ ἀνδρὸς εὐσεβοῦς ἐνδελέχιζε, ὃν ἂν ἐπιγνῷς συντηροῦντα ἐντολάς, ὃς ἐν τῇ ψυχῇ αὐτοῦ κατὰ τὴν ψυχήν σου, καὶ ἐὰν πταίσῃς συναλγήσει σοι.",
+        "VUL": "Cum viro irreligioso tracta de sanctitate,/ et cum injusto de justitia,/ et cum muliere de ea quæ æmulatur,/ cum timido de bello,/ cum negotiatore de trajectione,/ cum emptore de venditione,/ cum viro livido de gratiis agendis,/",
+        "SYN": "с немилосердым - о благотворительности, с ленивым - о всяком деле,",
+        "NEO": "Mais sois assidu près d’un homme pieux, que tu connais comme observateur des commandements, dont le cœur est selon ton cœur, et qui, si tu tombes, souffrira avec toi.",
+        "NAB": "Instead, associate with a religious man, who you are sure keeps the commandments; Who is like-minded with yourself and will feel for you if you fall.",
+        "VAT_ES": "Pero recurre asiduamente a un hombre piadoso, de quien te consta que cumple los mandamientos, capaz de sentir lo que tú mismo sientes, y que sufrirá contigo si das un traspié.",
+        "CEI": "Invece frequenta spesso un uomo pio, che tu conosci come osservante dei comandamenti e la cui anima è come la tua anima; se tu inciampi, saprà compatirti."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "καὶ βουλὴν καρδίας στῆσον, οὐ γάρ ἐστίν σοι πιστότερος αὐτῆς·",
+        "VUL": "cum impio de pietate,/ cum inhonesto de honestate,/ cum operario agrario de omni opere,/",
+        "SYN": "с годовым наемником - об окончании работы, с ленивым рабом - о большой работе:",
+        "NEO": "Ensuite tiens-toi à ce que ton cœur te conseille, car personne ne t’est plus fidèle que lui.",
+        "NAB": "Then, too, heed your own heart's counsel; for what have you that you can depend on more?",
+        "VAT_ES": "Déjate llevar por lo que te dicta el corazón, porque nadie te será más fiel que él:",
+        "CEI": "Segui il consiglio del tuo cuore, perché nessuno ti sarà più fedele di lui."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "ψυχὴ γὰρ ἀνδρὸς ἀπαγγέλλειν ἐνίοτε εἴωθεν ἢ ἑπτὰ σκοποὶ ἐπὶ μετεώρου καθήμενοι ἐπὶ σκοπῆς.",
+        "VUL": "cum operario annuali de consummatione anni,/ cum servo pigro de multa operatione./ Non attendas his in omni consilio :/",
+        "SYN": "не полагайся на таких ни при каком совещании,",
+        "NEO": "Car l’âme de l’homme annonce parfois plus de choses que sept sentinelles postées sur une hauteur pour observer.",
+        "NAB": "A man's conscience can tell him his situation better than seven watchmen in a lofty tower.",
+        "VAT_ES": "el alma de un hombre suele advertir a menudo mejor que siete vigías apostados sobre una altura.",
+        "CEI": "La coscienza di un uomo talvolta suole avvertire meglio di sette sentinelle collocate in alto per spiare."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "καὶ ἐπὶ πᾶσι τούτοις δεήθητι Ὑψίστου ἵνα εὐθύνῃ ἐν ἀληθείᾳ τὴν ὁδόν σου.",
+        "VUL": "sed cum viro sancto assiduus esto,/ quemcumque cognoveris observantem timorem Dei :/",
+        "SYN": "но обращайся всегда только с мужем благочестивым, о котором узнаешь, что он соблюдает заповеди Господни,",
+        "NEO": "Et avec tout cela prie le Très-Haut, afin qu’il dirige sûrement ta voie.",
+        "NAB": "Most important of all, pray to God to set your feet in the path of truth.",
+        "VAT_ES": "Y por encima de todo ruego al Altísimo, para que dirija tus pasos en la verdad.",
+        "CEI": "Al di sopra di tutto questo prega l'Altissimo perché guidi la tua condotta secondo verità."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "ἀρχὴ παντὸς ἔργου λόγος, καὶ πρὸ πάσης πράξεως βουλή.",
+        "VUL": "cujus anima est secundum animam tuam,/ et qui, cum titubaveris in tenebris, condolebit tibi./",
+        "SYN": "который своею душею - по душе тебе и, в случае падения твоего, поскорбит вместе с тобою.",
+        "NEO": "Avant toute œuvre est la parole : avant toute entreprise, la réflexion.",
+        "NAB": "A word is the source of every deed; a thought, of every act.",
+        "VAT_ES": "Principio de toda obra es la conversación, y antes de toda acción, está el consejo.",
+        "CEI": "Principio di ogni opera è la ragione, prima di ogni azione è bene riflettere."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "ἴχνος ἀλλοιώσεως καρδίᾳ·",
+        "VUL": "Cor boni consilii statue tecum :/ non est enim tibi aliud pluris illo./",
+        "SYN": "Держись совета сердца твоего, ибо нет никого для тебя вернее его;",
+        "NEO": "Comme trace du changement du cœur apparaissent quatre choses :",
+        "NAB": "The root of all conduct is the mind; four branches it shoots forth:",
+        "VAT_ES": "Raíz de los pensamientos es el corazón, y él hace brotar cuatro ramas:",
+        "CEI": "Radice dei pensieri è il cuore, queste quattro parti ne derivano:"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "τέσσερα μέρη ἀνατέλλει, ἀγαθὸν καὶ κακόν, ζωὴ καὶ θάνατος, καὶ κυριεύουσα ἐνδελεχῶς αὐτῶν γλῶσσά ἐστιν.",
+        "VUL": "Anima viri sancti enuntiat aliquando vera,/ quam septem circumspectores sedentes in excelso ad speculandum./",
+        "SYN": "душа человека иногда более скажет, нежели семь наблюдателей, сидящих на высоком месте для наблюдения.",
+        "NEO": "le bien et le mal, la vie et la mort ; et la langue est toujours leur maîtresse.",
+        "NAB": "Good and evil, death and life, their absolute mistress is the tongue.",
+        "VAT_ES": "el bien y el mal, la vida y la muerte, y la que decide siempre en todo esto es la lengua.",
+        "CEI": "bene e male, vita e morte, ma su tutto domina sempre la lingua."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "ἔστιν ἀνὴρ πανοῦργος καὶ πολλῶν παιδευτής, καὶ τῇ ἰδίᾳ ψυχῇ ἐστιν ἄχρηστος.",
+        "VUL": "Et in his omnibus deprecare Altissimum,/ ut dirigat in veritate viam tuam.]",
+        "SYN": "Но при всем этом молись Всевышнему, чтобы Он управил путь твой в истине.",
+        "NEO": "Tel homme est prudent et le docteur d’un grand nombre, mais il est inutile à lui-même.",
+        "NAB": "A man may be wise and benefit many, yet be of no use to himself.",
+        "VAT_ES": "Un hombre puede ser hábil para instruir a muchos y, sin embargo, ser inútil para sí mismo.",
+        "CEI": "C'è l'uomo esperto maestro di molti, ma inutile per se stesso."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ἔστιν σοφιζόμενος ἐν λόγοις μισητός, οὗτος πάσης τροφῆς καθυστερήσει·",
+        "VUL": "[Ante omnia opera verbum verax præcedat te,/ et ante omnem actum consilium stabile./",
+        "SYN": "Начало всякого дела - размышление, а прежде всякого действия - совет.",
+        "NEO": "Celui qui affecte la sagesse dans ses paroles est odieux ; il finira par manquer de toute nourriture.",
+        "NAB": "Though a man may be wise, if his words are rejected he will be deprived of all enjoyment.",
+        "VAT_ES": "El que es sabio de labios para afuera, se hace odioso y acabará sin tener qué comer:",
+        "CEI": "C'è chi posa a saggio nei discorsi ed è odioso, a costui mancherà ogni nutrimento;"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "οὐ γὰρ ἐδόθη αὐτῷ παρὰ Κυρίου χάρις, ὅτι πάσης σοφίας ἐστερήθη.",
+        "VUL": "Verbum nequam immutabit cor :/ ex quo partes quatuor oriuntur :/ bonum et malum, vita et mors :/ et dominatrix illorum est assidua lingua./ Est vir astutus multorum eruditor,/ et animæ suæ inutilis est./",
+        "SYN": "Выражение сердечного изменения - лице. Четыре состояния выражаются на нем: добро и зло, жизнь и смерть, а господствует всегда язык.",
+        "NEO": "Car le Seigneur ne lui a pas donné sa faveur, parce qu’il est dépourvu de toute sagesse.",
+        "NAB": "When a man is wise to his own advantage, the fruits of his knowledge are seen in his own person;",
+        "VAT_ES": "no se le ha concedido el favor del Señor, porque estaba desprovisto de toda sabiduría.",
+        "CEI": "non gli è stato concesso il favore del Signore, poiché è privo di ogni sapienza."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ἔστιν σοφὸς τῇ ἰδίᾳ ψυχῇ, καὶ οἱ καρποὶ τῆς συνέσεως αὐτοῦ ἐπὶ στόματος πιστοί.",
+        "VUL": "Vir peritus multos erudivit,/ et animæ suæ suavis est./",
+        "SYN": "Иной человек искусен и многих учит, а для своей души бесполезен.",
+        "NEO": "Tel sage est sage pour lui-même, et les fruits de son savoir sont assurés sur ses lèvres.",
+        "NAB": "When a man is wise to his people's advantage, the fruits of his knowledge are enduring:",
+        "VAT_ES": "Si un hombre es sabio para sí mismo, los frutos de su inteligencia están en su boca y son dignos de fe.",
+        "CEI": "C'è chi è saggio solo per se stesso, i frutti della sua scienza sono sicuri."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "ἀνὴρ σοφὸς τὸν ἑαυτοῦ λαὸν παιδεύσει, καὶ οἱ καρποὶ τῆς συνέσεως αὐτοῦ πιστοί.",
+        "VUL": "Qui sophistice loquitur odibilis est :/ in omni re defraudabitur./",
+        "SYN": "Иной ухищряется в речах, а бывает ненавистен, - такой останется без всякого пропитания;",
+        "NEO": "L’homme sage instruit son peuple, et les fruits de son savoir sont assurés.",
+        "NAB": "Limited are the days of one man's life, but the life of Israel is days without number.",
+        "VAT_ES": "Un hombre sabio instruye a su propio pueblo y los frutos de su inteligencia son dignos de fe.",
+        "CEI": "Un uomo saggio istruisce il suo popolo, dei frutti della sua intelligenza ci si può fidare."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "ἀνὴρ σοφὸς πλησθήσεται εὐλογίας, καὶ μακαριοῦσιν αὐτὸν πάντες οἱ ὁρῶντες.",
+        "VUL": "Non est illi data a Domino gratia,/ omni enim sapientia defraudatus est./",
+        "SYN": "ибо не дана ему от Господа благодать, и он лишен всякой мудрости.",
+        "NEO": "L’homme sage est comblé de bénédictions, et tous ceux qui le voient le proclament heureux.",
+        "NAB": "One wise for himself has full enjoyment, and all who see him praise him;",
+        "VAT_ES": "Un hombre sabio es colmado de bendiciones y, al verlo, todos lo felicitan.",
+        "CEI": "Un uomo saggio è colmato di benedizioni, quanti lo vedono lo proclamano beato."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "ζωὴ ἀνδρὸς ἐν ἀριθμῷ ἡμερῶν, καὶ αἱ ἡμέραι τοῦ Ἰσραὴλ ἀναρίθμητοι.",
+        "VUL": "Est sapiens animæ suæ sapiens,/ et fructus sensus illius laudabilis./",
+        "SYN": "Иной мудр для души своей, и плоды знания на устах его верны.",
+        "NEO": "La vie de l’homme est d’un nombre restreint de jours, mais les jours d’Israël sont sans nombre.",
+        "NAB": "One wise for his people wins a heritage of glory, and his name endures forever.",
+        "VAT_ES": "El hombre tiene sus días contados, pero los días de Israel son incontables.",
+        "CEI": "La vita dell'uomo ha i giorni contati; ma i giorni di Israele sono senza numero."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "ὁ σοφὸς ἐν τῷ λαῷ αὐτοῦ κληρονομήσει πίστιν, καὶ τὸ ὄνομα αὐτοῦ ζήσεται εἰς τὸν αἰῶνα.",
+        "VUL": "Vir sapiens plebem suam erudit,/ et fructus sensus illius fideles sunt./",
+        "SYN": "Мудрый муж поучает народ свой, и плоды знания его верны.",
+        "NEO": "Le sage obtient la confiance au milieu de son peuple, et son nom vivra à jamais.",
+        "NAB": "My son, while you are well, govern your appetite so that you allow it not what is bad for you;",
+        "VAT_ES": "Un hombre sabio se gana la confianza de su pueblo y su nombre sobrevive para siempre.",
+        "CEI": "Il saggio otterrà fiducia tra il suo popolo, il suo nome vivrà per sempre."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "τέκνον, ἐν τῇ ζωῇ σου πείρασον τὴν ψυχήν σου, καὶ ἴδε τί πονηρὸν αὐτῇ, καὶ μὴ δῷς αὐτῇ·",
+        "VUL": "Vir sapiens implebitur benedictionibus,/ et videntes illum laudabunt./",
+        "SYN": "Мудрый муж будет изобиловать благословением, и все видящие его будут называть его блаженным.",
+        "NEO": "Mon fils, pour ta manière de vivre, consulte ton âme ; vois ce qui lui est nuisible et ne le lui donne pas.",
+        "NAB": "For not every food is good for everyone, nor is everything suited to every taste.",
+        "VAT_ES": "Hijo mío, para tu régimen de comida, pruébate a ti mismo: mira qué te hace mal y prívate de ello.",
+        "CEI": "Figlio, nella tua vita prova te stesso, vedi quanto ti nuoce e non concedertelo."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "οὐ γὰρ πάντα πᾶσιν συμφέρει, καὶ οὐ πᾶσα ψυχὴ ἐν παντὶ εὐδοκεῖ.",
+        "VUL": "Vita viri in numero dierum :/ dies autem Israël innumerabiles sunt./",
+        "SYN": "Жизнь человека определяется числом дней, а дни Израиля бесчисленны.",
+        "NEO": "Car tout n’est pas bon pour tous, et chacun ne trouve pas son bien-être en tout.",
+        "NAB": "Be not drawn after every enjoyment, neither become a glutton for choice foods,",
+        "VAT_ES": "Porque no todo es conveniente para todos ni a todos les gusta lo mismo.",
+        "CEI": "Difatti non tutto conviene a tutti e non tutti approvano ogni cosa."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "μὴ ἀπληστεύου ἐν πάσῃ τρυφῇ, καὶ μὴ ἐκχυθῇς ἐπὶ ἐδεσμάτων·",
+        "VUL": "Sapiens in populo hæreditabit honorem,/ et nomen illius erit vivens in æternum.]",
+        "SYN": "Мудрый приобретет доверие у своего народа, и имя его будет жить вовек.",
+        "NEO": "Ne sois pas insatiable devant toute friandise, et ne te jette pas avidement sur les mets ;",
+        "NAB": "For sickness comes with overeating, and gluttony brings on biliousness.",
+        "VAT_ES": "No seas insaciable de placeres ni te excedas en las comidas.",
+        "CEI": "Non essere ingordo per qualsiasi ghiottoneria, non ti gettare sulle vivande,"
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "ἐν πολλοῖς γὰρ βρώμασιν ἔσται πόνος, καὶ ἡ ἀπληστία ἐγγιεῖ ἕως χολέρας·",
+        "VUL": "[Fili, in vita tua tenta animam tuam,/ et si fuerit nequam non des illi potestatem :/",
+        "SYN": "Сын мой! в продолжение жизни испытывай твою душу и наблюдай, что для нее вредно, и не давай ей того;",
+        "NEO": "car l’excès de la nourriture amène des incommodités, et l’intempérance conduit jusqu’à la colique.",
+        "NAB": "Through lack of self-control many have died, but the abstemious man prolongs his life.",
+        "VAT_ES": "Porque el exceso en las comidas acarrea enfermedades y la glotonería provoca cólicos.",
+        "CEI": "perchè l'abuso dei cibi causa malattie, l'ingordigia provoca coliche."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "δι’ ἀπληστίαν πολλοὶ ἐτελεύτησαν, ὁ δὲ προσέχων προσθήσει ζωήν.",
+        "VUL": "non enim omnia omnibus expediunt,/ et non omni animæ omne genus placet./",
+        "SYN": "ибо не все полезно для всех, и не всякая душа ко всему расположена.",
+        "NEO": "A cause de l’intempérance beaucoup sont morts, mais celui qui s’abstient prolonge sa vie.",
+        "VAT_ES": "La glotonería causó la muerte de muchos, pero el que se cuida prolongará su vida.",
+        "CEI": "Molti sono morti per ingordigia, chi si controlla vivrà a lungo."
+      }
+    }
+  }
+}

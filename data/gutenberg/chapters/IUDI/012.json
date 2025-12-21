@@ -1,0 +1,285 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IUDI_012",
+  "book_key": "IUDI",
+  "sequence": 12,
+  "chapter_in": {
+    "MT": 12,
+    "VUL": 12,
+    "LXX": 12
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יִּצָּעֵק֙ אִ֣ישׁ אֶפְרַ֔יִם וַֽ/יַּעֲבֹ֖ר צָפ֑וֹנָ/ה וַ/יֹּאמְר֨וּ לְ/יִפְתָּ֜ח מַדּ֣וּעַ עָבַ֣רְתָּ לְ/הִלָּחֵ֣ם בִּ/בְנֵי עַמּ֗וֹן וְ/לָ֨/נוּ֙ לֹ֤א קָרָ֨אתָ֙ לָ/לֶ֣כֶת עִמָּ֔/ךְ בֵּיתְ/ךָ֕ נִשְׂרֹ֥ף עָלֶ֖י/ךָ בָּ/אֵֽשׁ׃",
+        "LXX": "Καὶ ἐβόησεν ἀνὴρ Ἐφράιμ, καὶ παρῆλθαν εἰς βορρᾶν καὶ εἶπαν πρὸς Ἰεφθάε Διὰ τί παρῆλθες παρατάξασθαι ἐν υἱοῖς Ἀμμὼν καὶ ἡμᾶς οὐ κέκληκας πορευθῆναι μετὰ σοῦ; τὸν οἶκόν σου ἐμπρήσομεν ἐπὶ σὲ ἐν πυρί.",
+        "VUL": "Ecce autem in Ephraim orta est seditio : nam transeuntes contra aquilonem, dixerunt ad Jephte : Quare vadens ad pugnam contra filios Ammon, vocare nos noluisti, ut pergeremus tecum ? igitur incendemus domum tuam.",
+        "SYN": "Ефремляне собрались и перешли в Севину и сказали Иеффаю: для чего ты ходил воевать с Аммонитянами, а нас не позвал с собою? мы сожжем дом твой огнем и с тобою вместе.",
+        "NEO": "Les hommes d’Ephraïm, s’étant rassemblés, passèrent vers Saphon et dirent à Jephté : « Pourquoi es-tu allé combattre les fils d’Ammon, sans nous avoir appelés à marcher avec toi ? Nous allons brûler sur toi ta maison. »",
+        "NAB": "The men of Ephraim gathered together and crossed over to Zaphon. They said to Jephthah, \"Why do you go on to fight with the Ammonites without calling us to go with you? We will burn your house over you.\"",
+        "VAT_ES": "Los hombres de Efraím se reunieron, cruzaron el Jordán en dirección a Safón, y dijeron a Jefté: «&iquest;Por qué fuiste a combatir contra los amonitas y no nos llamaste para que fuéramos contigo? Ahora vamos a prenderle fuego a tu casa contigo adentro».",
+        "CEI": "Ora gli uomini di Efraim si radunarono, passarono il fiume verso Zafon e dissero a Iefte: \"Perché sei andato a combattere contro gli Ammoniti e non ci hai chiamati con te? Noi bruceremo te e la tua casa\"."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יִפְתָּח֙ אֲלֵי/הֶ֔ם אִ֣ישׁ רִ֗יב הָיִ֛יתִי אֲנִ֛י וְ/עַמִּ֥/י וּ/בְנֵֽי עַמּ֖וֹן מְאֹ֑ד וָ/אֶזְעַ֣ק אֶתְ/כֶ֔ם וְ/לֹֽא הוֹשַׁעְתֶּ֥ם אוֹתִ֖/י מִ/יָּדָֽ/ם׃",
+        "LXX": "καὶ εἶπεν Ἰεφθάε πρὸς αὐτούς Ἀνὴρ μαχητὴς ἤμην ἐγὼ καὶ ὁ λαός μου καὶ οἱ υἱοὶ Ἀμμὼν σφόδρα· καὶ ἐβόησα ὑμᾶς, καὶ οὐκ ἐσώσατέ με ἐκ χειρὸς αὐτῶν.",
+        "VUL": "Quibus ille respondit : Disceptatio erat mihi et populo meo contra filios Ammon vehemens : vocavique vos, ut præberetis mihi auxilium, et facere noluistis.",
+        "SYN": "Иеффай сказал им: я и народ мой имели с Аммонитянами сильную ссору; я звал вас, но вы не спасли меня от руки их;",
+        "NEO": "Jephté leur répondit : « J’étais, moi et mon peuple, en grande contestation avec les fils d’Ammon ; alors je vous ai appelés, mais vous ne m’avez pas délivré de leurs mains.",
+        "NAB": "Jephthah answered them, \"My soldiers and I were engaged in a critical contest with the Ammonites. I summoned you, but you did not rescue me from their power.",
+        "VAT_ES": "Pero Jefté les respondió: «Mi pueblo y yo estábamos en un grave conflicto con los amonitas. Yo les pedí ayuda a ustedes, pero no vinieron a salvarme,.",
+        "CEI": "Iefte rispose loro: \"Io e il mio popolo abbiamo avuto grandi lotte con gli Ammoniti; quando vi ho chiamati in aiuto, non siete venuti a liberarmi dalle loro mani."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וָֽ/אֶרְאֶ֞ה כִּֽי אֵינְ/ךָ֣ מוֹשִׁ֗יע וָ/אָשִׂ֨ימָ/ה נַפְשִׁ֤/י בְ/כַפִּ/י֙ וָֽ/אֶעְבְּרָ/ה֙ אֶל בְּנֵ֣י עַמּ֔וֹן וַ/יִּתְּנֵ֥/ם יְהוָ֖ה בְּ/יָדִ֑/י וְ/לָ/מָ֞ה עֲלִיתֶ֥ם אֵלַ֛/י הַ/יּ֥וֹם הַ/זֶּ֖ה לְ/הִלָּ֥חֶם בִּֽ/י׃",
+        "LXX": "καὶ εἶδον ὅτι οὐκ εἶ σωτήρ, καὶ ἔθηκα τὴν ψυχήν μου ἐν χειρί μου καὶ παρῆλθον πρὸς υἱοὺς Ἀμμών, καὶ ἔδωκεν αὐτοὺς Κύριος ἐν χειρί μου· καὶ εἰς τί ἀνέβητε ἐπ’ ἐμὲ ἐν τῇ ἡμέρᾳ ταύτῃ παρατάξασθαι ἐν ἐμοί;",
+        "VUL": "Quod cernens, posui animam meam in manibus meis, transivique ad filios Ammon, et tradidit eos Dominus in manus meas. Quid commerui, ut adversum me consurgatis in prælium ?",
+        "SYN": "видя, что ты не спасаешь меня, я подверг опасности жизнь мою и пошел на Аммонитян, и предал их Господь в руки мои; зачем же вы пришли ныне воевать со мною?",
+        "NEO": "Voyant que tu ne venais pas à mon secours, j’ai risqué ma vie et j’ai marché contre les fils d’Ammon ; et \\+w Yahweh|strong=\"H3068\"\\+w** les a livrés entre mes mains. Pourquoi donc êtes-vous montés aujourd’hui vers moi, pour me faire la guerre ? »",
+        "NAB": "When I saw that you would not effect a rescue, I took my life in my own hand and went on to the Ammonites, and the LORD delivered them into my power. Why, then, do you come up against me this day to fight with me?\"",
+        "VAT_ES": "Al ver que nadie venía en mi ayuda, marché contra los amonitas arriesgando mi propia vida, y el Señor los entregó en mis manos. &iquest;Por qué entonces han subido hoy a hacerme la guerra?».",
+        "CEI": "Vedendo che voi non venivate in mio aiuto, ho esposto al pericolo la vita, ho marciato contro gli Ammoniti e il Signore me li ha messi nelle mani. Perché dunque siete venuti oggi contro di me a muovermi guerra?\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יִּקְבֹּ֤ץ יִפְתָּח֙ אֶת כָּל אַנְשֵׁ֣י גִלְעָ֔ד וַ/יִּלָּ֖חֶם אֶת אֶפְרָ֑יִם וַ/יַּכּוּ֩ אַנְשֵׁ֨י גִלְעָ֜ד אֶת אֶפְרַ֗יִם כִּ֤י אָמְרוּ֙ פְּלִיטֵ֤י אֶפְרַ֨יִם֙ אַתֶּ֔ם גִּלְעָ֕ד בְּ/ת֥וֹךְ אֶפְרַ֖יִם בְּ/ת֥וֹךְ מְנַשֶּֽׁה׃",
+        "LXX": "καὶ συνέστρεψεν Ἰεφθάε τοὺς πάντας ἄνδρας Γαλαὰδ καὶ παρετάξατο τῷ Ἐφράιμ· καὶ ἐπάταξαν ἄνδρες Γαλαὰδ τὸν Ἐφράιμ, ὅτι εἶπαν οἱ διασωζόμενοι τοῦ Ἐφράιμ Ὑμεῖς Γαλαὰδ ἐν μέσῳ τοῦ Ἐφράιμ καὶ ἐν μέσῳ τοῦ Μανασσή.",
+        "VUL": "Vocatis itaque ad se cunctis viris Galaad, pugnabat contra Ephraim : percusseruntque viri Galaad Ephraim, quia dixerat : Fugitivus est Galaad de Ephraim, et habitat in medio Ephraim et Manasse.",
+        "SYN": "И собрал Иеффай всех жителей Галаадских и сразился с Ефремлянами, и побили жители Галаадские Ефремлян, говоря: вы беглецы Ефремовы, Галаад же среди Ефрема и среди Манассии.",
+        "NEO": "Jephté rassembla tous les hommes de Galaad, et livra bataille à Ephraïm. Les hommes de Galaad battirent ceux d’Ephraïm, car ceux-ci avaient dit : « Vous n’êtes, ô Galaadites, que des fugitifs d’Ephraïm, au milieu d’Ephraïm et de Manassé ! »",
+        "NAB": "Then Jephthah called together all the men of Gilead and fought against Ephraim, whom they defeated; for the Ephraimites had said, \"You of Gilead are Ephraimite fugitives in territory belonging to Ephraim and Manasseh.\"",
+        "VAT_ES": "Jefté reunió a todos los hombres de Galaad y atacó a Efraím. Y los de Galaad derrotaron a los efraimitas, que decían despectivamente: «Ustedes, los de Galaad, son fugitivos de Efraím, en medio de Manasés».",
+        "CEI": "Iefte, radunati tutti gli uomini di Gàlaad, diede battaglia ad Efraim; gli uomini di Gàlaad sconfissero gli Efraimiti, perché questi dicevano: \"Voi siete fuggiaschi di Efraim; Gàlaad sta in mezzo a Efraim e in mezzo a Manàsse\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּלְכֹּ֥ד גִּלְעָ֛ד אֶֽת מַעְבְּר֥וֹת הַ/יַּרְדֵּ֖ן לְ/אֶפְרָ֑יִם וְֽ֠/הָיָה כִּ֣י יֹאמְר֞וּ פְּלִיטֵ֤י אֶפְרַ֨יִם֙ אֶעֱבֹ֔רָה וַ/יֹּ֨אמְרוּ ל֧/וֹ אַנְשֵֽׁי גִלְעָ֛ד הַֽ/אֶפְרָתִ֥י אַ֖תָּה וַ/יֹּ֥אמֶֽר לֹֽא׃",
+        "LXX": "καὶ προκατελάβετο Γαλαὰδ τὰς διαβάσεις τοῦ Ἰορδάνου τοῦ Ἐφράιμ· καὶ εἶπαν αὐτοῖς οἱ διασωζόμενοι Ἐφράιμ Διαβῶμεν· καὶ εἶπαν αὐτοῖς οἱ ἄνδρες Γαλαάδ Μὴ Ἐφραθείτης εἶ; καὶ εἶπεν Οὔ.",
+        "VUL": "Occupaveruntque Galaaditæ vada Jordanis, per quæ Ephraim reversurus erat. Cumque venisset ad ea de Ephraim numero, fugiens, atque dixisset : Obsecro ut me transire permittatis : dicebant ei Galaaditæ : Numquid Ephrathæus es ? quo dicente : Non sum :",
+        "SYN": "И перехватили Галаадитяне переправу чрез Иордан от Ефремлян, и когда кто из уцелевших Ефремлян говорил: \"позвольте мне переправиться\", то жители Галаадские говорили ему: не Ефремлянин ли ты? Он говорил: нет.",
+        "NEO": "Galaad s’empara des gués du Jourdain du côté d’Ephraïm, et quand l’un des fuyards d’Ephraïm disait : « Laissez-moi passer, » les hommes de Galaad lui demandaient : « Es-tu Ephraïmite ? » Il répondait : « Non ».",
+        "NAB": "The Gileadites took the fords of the Jordan toward Ephraim. When any of the fleeing Ephraimites said, \"Let me pass,\" the men of Gilead would say to him, \"Are you an Ephraimite?\" If he answered, \"No!\"",
+        "VAT_ES": "Galaad ocupó los vados del Jordán para cortarle el paso a los Efraimitas. Y cuando un fugitivo de Efraím intentaba pasar, los hombres de Galaad le preguntaban: &iquest;Tú eres de Efraím?» Si el respondía que no,",
+        "CEI": "I Galaaditi intercettarono agli Efraimiti i guadi del Giordano; quando uno dei fuggiaschi di Efraim diceva: \"Lasciatemi passare\", gli uomini di Gàlaad gli chiedevano: \"Sei un Efraimita?\". Se quegli rispondeva: \"No\","
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמְרוּ ל/וֹ֩ אֱמָר נָ֨א שִׁבֹּ֜לֶת וַ/יֹּ֣אמֶר סִבֹּ֗לֶת וְ/לֹ֤א יָכִין֙ לְ/דַבֵּ֣ר כֵּ֔ן וַ/יֹּאחֲז֣וּ אוֹת֔/וֹ וַ/יִּשְׁחָט֖וּ/הוּ אֶל מַעְבְּר֣וֹת הַ/יַּרְדֵּ֑ן וַ/יִּפֹּ֞ל בָּ/עֵ֤ת הַ/הִיא֙ מֵֽ/אֶפְרַ֔יִם אַרְבָּעִ֥ים וּ/שְׁנַ֖יִם אָֽלֶף׃",
+        "LXX": "καὶ εἶπαν αὐτῷ Εἰπὸν δή Στάχυς. καὶ οὐ κατεύθυνεν τοῦ λαλῆσαι οὕτως, καὶ ἐπελάβοντο αὐτοῦ καὶ ἔθυσαν αὐτὸν πρὸς τὰς διαβάσεις τοῦ Ἰορδάνου· καὶ ἔπεσαν ἐν τῷ καιρῷ ἐκείνῳ ἀπὸ Ἐφράιμ τεσσεράκοντα δύο χιλιάδες.",
+        "VUL": "interrogabant eum : Dic ergo Scibboleth, quod interpretatur Spica. Qui respondebat : Sibboleth : eadem littera spicam exprimere non valens. Statimque apprehensum jugulabant in ipso Jordanis transitu. Et ceciderunt in illo tempore de Ephraim quadraginta duo millia.",
+        "SYN": "Они говорили ему \"скажи: шибболет\", а он говорил: \"сибболет\", и не мог иначе выговорить. Тогда они, взяв его, заколали у переправы чрез Иордан. И пало в то время из Ефремлян сорок две тысячи.",
+        "NEO": "Ils lui disaient alors : « Eh bien, dis : Schibboleth. » Et il disait : « Sibboleth, » ne réussissant pas à bien prononcer. Ils le saisissaient alors et l’égorgeaient près des gués du Jourdain. Il périt en ce temps-là quarante-deux mille hommes d’Ephraïm.",
+        "NAB": "they would ask him to say \"Shibboleth.\" If he said \"Sibboleth,\" not being able to give the proper pronunciation, they would seize him and kill him at the fords of the Jordan. Thus forty-two thousand Ephraimites fell at that time.",
+        "VAT_ES": "Le obligaban a pronunciar la palabra «Shibólet». Pero el decía «Sibólet», porque no podía pronunciar correctamente. Entonces lo tomaban y lo degollaban junto a los vados del Jordán. En aquella ocasión, murieron cuarenta y dos mil hombres de Efraím.",
+        "CEI": "i Galaaditi gli dicevano: \"Ebbene, dì Scibbolet\", e quegli diceva Sibbolet, non sapendo pronunciare bene. Allora lo afferravano e lo uccidevano presso i guadi del Giordano. In quella occasione perirono quarantaduemila uomini di Efraim."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁפֹּ֥ט יִפְתָּ֛ח אֶת יִשְׂרָאֵ֖ל שֵׁ֣שׁ שָׁנִ֑ים וַ/יָּ֗מָת יִפְתָּח֙ הַ/גִּלְעָדִ֔י וַ/יִּקָּבֵ֖ר בְּ/עָרֵ֥י גִלְעָֽד׃",
+        "LXX": "Καὶ ἔκρινεν Ἰεφθάε τὸν Ἰσραὴλ ἑξήκοντα ἔτη· καὶ ἀπέθανεν Ἰεφθάε ὁ Γαλααδείτης, καὶ ἐτάφη ἐν πόλει αὐτοῦ ἐν Γαλαάδ.",
+        "VUL": "Judicavit itaque Jephte Galaadites Israël sex annis : et mortuus est, ac sepultus in civitate sua Galaad.",
+        "SYN": "Иеффай был судьею Израиля шесть лет, и умер Иеффай Галаадитянин и погребен в одном из городов Галаадских.",
+        "NEO": "Jephté jugea Israël pendant six ans ; puis Jephté le Galaadite mourut et fut enterré dans l’une des villes de Galaad.",
+        "NAB": "After having judged Israel for six years, Jephthah the Gileadite died and was buried in his city in Gilead.",
+        "VAT_ES": "Jefté juzgó a Israel durante seis años. Cuando murió, lo sepultaron en Mispá de Galaad, que era su ciudad.",
+        "CEI": "Iefte fu giudice d'Israele per sei anni. Poi Iefte, il Galaadita, morì e fu sepolto nella sua città in Gàlaad."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁפֹּ֤ט אַֽחֲרָי/ו֙ אֶת יִשְׂרָאֵ֔ל אִבְצָ֖ן מִ/בֵּ֥ית לָֽחֶם׃",
+        "LXX": "Καὶ ἔκρινεν μετ’ αὐτὸν τὸν Ἰσραὴλ Ἀβαισὰν ἀπὸ Βαιθλέεμ.",
+        "VUL": "Post hunc judicavit Israël Abesan de Bethlehem :",
+        "SYN": "После него был судьею Израиля Есевон из Вифлеема.",
+        "NEO": "Après lui, Abesan, de Bethléem, fut juge en Israël.",
+        "NAB": "After him Ibzan of Bethlehem judged Israel.",
+        "VAT_ES": "Después de Jefté, juzgó a Israel Ibsán, que era de Belén.",
+        "CEI": "Dopo di lui fu giudice d'Israele Ibsan di Betlemme."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יְהִי ל֞/וֹ שְׁלֹשִׁ֣ים בָּנִ֗ים וּ/שְׁלֹשִׁ֤ים בָּנוֹת֙ שִׁלַּ֣ח הַ/ח֔וּצָ/ה וּ/שְׁלֹשִׁ֣ים בָּנ֔וֹת הֵבִ֥יא לְ/בָנָ֖י/ו מִן הַ/ח֑וּץ וַ/יִּשְׁפֹּ֥ט אֶת יִשְׂרָאֵ֖ל שֶׁ֥בַע שָׁנִֽים׃",
+        "LXX": "καὶ ἦσαν αὐτῷ τριάκοντα υἱοὶ καὶ τριάκοντα θυγατέρες, ἃς ἐξαπέστειλεν ἔξω, καὶ τριάκοντα θυγατέρας εἰσήνεγκεν τοῖς υἱοῖς αὐτοῦ ἔξωθεν· καὶ ἔκρινεν τὸν Ἰσραὴλ ἑπτὰ ἔτη.",
+        "VUL": "qui habuit triginta filios, et totidem filias, quas emittens foras, maritis dedit, et ejusdem numeri filiis suis accepit uxores, introducens in domum suam. Qui septem annis judicavit Israël :",
+        "SYN": "У него было тридцать сыновей, и тридцать дочерей отпустил он из дома [в замужество], а тридцать дочерей взял со стороны за сыновей своих, и был судьею Израиля семь лет.",
+        "NEO": "Il eut trente fils ; il maria trente filles hors de sa maison, et il fit venir du dehors trente filles pour ses fils. Il fut juge en Israël pendant sept ans ;",
+        "NAB": "He had thirty sons. He also had thirty daughters married outside the family, and he brought in as wives for his sons thirty young women from outside the family. After having judged Israel for seven years,",
+        "VAT_ES": "Tenía treinta hijos y treinta hijas. El casó a sus hijas con extranjeros, y trajo treinta mujeres extranjeras para sus hijos. Fue juez en Israel durante siete años.",
+        "CEI": "Egli ebbe trenta figli, maritò trenta figlie e fece venire da fuori trenta fanciulle per i suoi figli. Fu giudice d'Israele per sette anni."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/יָּ֣מָת אִבְצָ֔ן וַ/יִּקָּבֵ֖ר בְּ/בֵ֥ית לָֽחֶם׃",
+        "LXX": "καὶ ἀπέθανεν Ἀβαισάν, καὶ ἐτάφη ἐν Βαιθλέεμ.",
+        "VUL": "mortuusque est, ac sepultus in Bethlehem.",
+        "SYN": "И умер Есевон и погребен в Вифлееме.",
+        "NEO": "ensuite Abesan mourant et fut enterré à Bethléem.",
+        "NAB": "Ibzan died and was buried in Bethlehem.",
+        "VAT_ES": "Cuando Ibsán murió, lo sepultaron en Belén.",
+        "CEI": "Poi Ibsan morì e fu sepolto a Betlemme."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁפֹּ֤ט אַֽחֲרָי/ו֙ אֶת יִשְׂרָאֵ֔ל אֵיל֖וֹן הַ/זְּבֽוּלֹנִ֑י וַ/יִּשְׁפֹּ֥ט אֶת יִשְׂרָאֵ֖ל עֶ֥שֶׂר שָׁנִֽים׃",
+        "LXX": "Καὶ ἔκρινεν μετ’ αὐτὸν τὸν Ἰσραὴλ Αἰλὼμ ὁ Ζαβουλωνείτης δέκα ἔτη.",
+        "VUL": "Cui successit Ahialon Zabulonites : et judicavit Israël decem annis :",
+        "SYN": "После него был судьею Израиля Елон Завулонянин и судил Израиля десять лет.",
+        "NEO": "Après lui, Ahialon, de Zabulon, fut juge en Israël ; il fut juge en Israël pendant dix ans ;",
+        "NAB": "After him the Zebulunite Elon judged Israel. When he had judged Israel for ten years,",
+        "VAT_ES": "Después de él, juzgó a Israel Elón, que era de Zabulón. Fue juez en Israel durante diez años.",
+        "CEI": "Dopo di lui fu giudice d'Israele Elon, lo Zabulonita; fu giudice d'Israele per dieci anni."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יָּ֖מָת אֵל֣וֹן הַ/זְּבֽוּלֹנִ֑י וַ/יִּקָּבֵ֥ר בְּ/אַיָּל֖וֹן בְּ/אֶ֥רֶץ זְבוּלֻֽן׃",
+        "LXX": "καὶ ἀπέθανεν Αἰλὼμ ὁ Ζαβουλωνείτης, καὶ ἐτάφη ἐν Αἰλὼμ ἐν γῇ Ζαβουλών.",
+        "VUL": "mortuusque est, ac sepultus in Zabulon.",
+        "SYN": "И умер Елон Завулонянин и погребен в Аиалоне, в земле Завулоновой.",
+        "NEO": "puis Ahialon, de Zabulon, mourut et fut enterré à Ajalon, dans le pays de Zabulon.",
+        "NAB": "the Zebulunite Elon died and was buried in Elon in the land of Zebulun.",
+        "VAT_ES": "Cuando murió Elón, el zabulonita, lo sepultaron en Aialón, en territorio de Zabulón.",
+        "CEI": "Poi Elon, lo Zabulonita, morì e fu sepolto ad Aialon, nel paese di Zàbulon."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁפֹּ֥ט אַחֲרָ֖י/ו אֶת יִשְׂרָאֵ֑ל עַבְדּ֥וֹן בֶּן הִלֵּ֖ל הַ/פִּרְעָתוֹנִֽי׃",
+        "LXX": "Καὶ ἔκρινεν μετ’ αὐτὸν τὸν Ἰσραὴλ Ἀβδὼν υἱὸς Ἑλλὴλ ὁ Φαραθωνείτης.",
+        "VUL": "Post hunc judicavit Israël Abdon filius Illel Pharathonites :",
+        "SYN": "После него был судьею Израиля Авдон, сын Гиллела, Пирафонянин.",
+        "NEO": "Après lui, Abdon, fils d’Illel, de Pharathon fut juge en Israël.",
+        "NAB": "After him the Pirathonite Abdon, son of Hillel, judged Israel.",
+        "VAT_ES": "Después de él, juzgó a Israel Abdón, hijo de Hilel, que era de Pireatón.",
+        "CEI": "Dopo di lui fu giudice d'Israele Abdon, figlio di Illel, di Piraton."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יְהִי ל֞/וֹ אַרְבָּעִ֣ים בָּנִ֗ים וּ/שְׁלֹשִׁים֙ בְּנֵ֣י בָנִ֔ים רֹכְבִ֖ים עַל שִׁבְעִ֣ים עֲיָרִ֑ם וַ/יִּשְׁפֹּ֥ט אֶת יִשְׂרָאֵ֖ל שְׁמֹנֶ֥ה שָׁנִֽים׃",
+        "LXX": "καὶ ἦσαν αὐτῷ τεσσεράκοντα υἱοὶ καὶ τριάκοντα υἱῶν υἱοί, ἐπιβαίνοντες ἐπὶ ἑβδομήκοντα πώλους· καὶ ἔκρινεν τὸν Ἰσραὴλ ὀκτὼ ἔτη.",
+        "VUL": "qui habuit quadraginta filios, et triginta ex eis nepotes, ascendentes super septuaginta pullos asinarum. Et judicavit Israël octo annis :",
+        "SYN": "У него было сорок сыновей и тридцать внуков, ездивших на семидесяти молодых ослах; он судил Израиля восемь лет.",
+        "NEO": "Il eut quarante fils et trente petits-fils, qui montaient sur soixante-dix ânons. Il fut juge en Israël pendant huit ans ;",
+        "NAB": "He had forty sons and thirty grandsons who rode on seventy saddle-asses. After having judged Israel for eight years,",
+        "VAT_ES": "Tenía cuarenta hijos y treinta nietos, que iban montados en setenta asnos, y fue juez en Israel durante ocho años.",
+        "CEI": "Ebbe quaranta figli e trenta nipoti, i quali cavalcavano settanta asinelli. Fu giudice d'Israele per otto anni."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יָּ֛מָת עַבְדּ֥וֹן בֶּן הִלֵּ֖ל הַ/פִּרְעָתוֹנִ֑י וַ/יִּקָּבֵ֤ר בְּ/פִרְעָתוֹן֙ בְּ/אֶ֣רֶץ אֶפְרַ֔יִם בְּ/הַ֖ר הָ/עֲמָלֵקִֽי׃",
+        "LXX": "καὶ ἀπέθανεν Ἀβδὼν υἱὸς Ἑλλὴλ ὁ Φαραθωνείτης, καὶ ἐτάφη ἐν Φαραθὼμ ἐν γῇ Ἐφράιμ ἐν ὄρει τοῦ Ἀμαλήκ.",
+        "VUL": "mortuusque est, ac sepultus in Pharathon terræ Ephraim, in monte Amalec.",
+        "SYN": "И умер Авдон, сын Гиллела, Пирафонянин, и погребен в Пирафоне в земле Ефремовой, на горе Амаликовой.",
+        "NEO": "puis Abdon, fils d’Illel, de Pharathon, mourut et fut enterré à Pharathon, dans le pays d’Ephraïm, sur la montagne des Amalécites.",
+        "NAB": "the Pirathonite Abdon, son of Hillel, died and was buried in Pirathon in the land of Ephraim on the mountain of the Amalekites.",
+        "VAT_ES": "Cuando murió Abdón, Hijo de Hilel, lo sepultaron en Pireatón, en la montaña de Efraím, en territorio de Saalím.",
+        "CEI": "Poi Abdon, figlio di Illel, il Piratonita, morì e fu sepolto a Piraton, nel paese di Efraim, sul monte Amalek."
+      }
+    }
+  }
+}

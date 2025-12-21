@@ -1,0 +1,229 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLE_006",
+  "book_key": "ECCLE",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "יֵ֣שׁ רָעָ֔ה אֲשֶׁ֥ר רָאִ֖יתִי תַּ֣חַת הַ/שָּׁ֑מֶשׁ וְ/רַבָּ֥ה הִ֖יא עַל הָ/אָדָֽם׃",
+        "LXX": "Ἔστιν πονηρία ἣν ἴδον ὑπὸ τὸν ἥλιον, καὶ πολλή ἐστιν ὑπὸ τὸν ἄνθρωπον·",
+        "VUL": "[Est et aliud malum quod vidi sub sole,/ et quidem frequens apud homines :/",
+        "SYN": "Есть зло, которое видел я под солнцем, и оно часто бывает между людьми:",
+        "NEO": "Il est un mal que j’ai vu sous le soleil, et ce mal est grand sur l’homme :",
+        "NAB": "There is another evil which I have seen under the sun, and it weighs heavily upon man:",
+        "VAT_ES": "Hay un mal que yo he visto bajo el sol y que resulta muy pesado para el hombre",
+        "CEI": "Un altro male ho visto sotto il sole, che pesa molto sopra gli uomini."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אִ֣ישׁ אֲשֶׁ֣ר יִתֶּן ל֣/וֹ הָ/אֱלֹהִ֡ים עֹשֶׁר֩ וּ/נְכָסִ֨ים וְ/כָב֜וֹד וְֽ/אֵינֶ֨/נּוּ חָסֵ֥ר לְ/נַפְשׁ֣/וֹ מִ/כֹּ֣ל אֲשֶׁר יִתְאַוֶּ֗ה וְ/לֹֽא יַשְׁלִיטֶ֤/נּוּ הָֽ/אֱלֹהִים֙ לֶ/אֱכֹ֣ל מִמֶּ֔/נּוּ כִּ֛י אִ֥ישׁ נָכְרִ֖י יֹֽאכֲלֶ֑/נּוּ זֶ֥ה הֶ֛בֶל וָ/חֳלִ֥י רָ֖ע הֽוּא׃",
+        "LXX": "ἀνὴρ ᾧ δώσει αὐτῷ ὁ θεὸς πλοῦτον καὶ ὑπάρχοντα καὶ δόξαν, καὶ οὐκ ἔστιν ὑστερῶν τῇ ψυχῇ αὐτοῦ ἀπὸ πάντων ὧν ἐπιθυμήσει· καὶ οὐκ ἐξουσιάσει αὐτῷ ὁ θεὸς τοῦ φαγεῖν ἀπ’ αὐτοῦ, ὅτι ἀνὴρ ξένος φάγεται αὐτόν. τοῦτο ματαιότης καὶ ἀρρωστία πονηρά ἐστιν.",
+        "VUL": "vir cui dedit Deus divitias,/ et substantiam, et honorem,/ et nihil deest animæ suæ ex omnibus quæ desiderat ;/ nec tribuit ei potestatem Deus ut comedat ex eo,/ sed homo extraneus vorabit illud :/ hoc vanitas et miseria magna est./",
+        "SYN": "Бог дает человеку богатство и имущество и славу, и нет для души его недостатка ни в чем, чего не пожелал бы он; но не дает ему Бог пользоваться этим, а пользуется тем чужой человек: это - суета и тяжкий недуг!",
+        "NEO": "Tel homme à qui Dieu a donné richesses, trésors et gloire, et qui ne manque pour son âme de rien de ce qu’il peut désirer ; mais Dieu ne lui permet pas d’en jouir, car c’est un étranger qui en jouit : voilà une vanité et un mal grave.",
+        "NAB": "there is the man to whom God gives riches and property and honor, so that he lacks none of all the things he craves; yet God does not grant him power to partake of them, but a stranger devours them. This is vanity and a dire plague.",
+        "VAT_ES": "A uno Dios le ha dado riquezas, posesiones y honores, y no le falta nada de todo lo que desea. Pero Dios no le permite disfrutar de eso, sino que lo disfruta un extraño. Esto es vanidad y un mal penoso.",
+        "CEI": "A uno Dio ha concesso beni, ricchezze, onori e non gli manca niente di quanto desidera; ma Dio non gli concede di poterne godere, perché è un estraneo che ne gode. Ciò è vanità e malanno grave!"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אִם יוֹלִ֣יד אִ֣ישׁ מֵאָ֡ה וְ/שָׁנִים֩ רַבּ֨וֹת יִֽחְיֶ֜ה וְ/רַ֣ב שֶׁ/יִּהְי֣וּ יְמֵֽי שָׁנָ֗י/ו וְ/נַפְשׁ/וֹ֙ לֹא תִשְׂבַּ֣ע מִן הַ/טּוֹבָ֔ה וְ/גַם קְבוּרָ֖ה לֹא הָ֣יְתָה לּ֑/וֹ אָמַ֕רְתִּי ט֥וֹב מִמֶּ֖/נּוּ הַ/נָּֽפֶל׃",
+        "LXX": "ἐὰν γεννήσῃ ἀνὴρ ἑκατόν, καὶ ἔτη πολλὰ ζήσεται, καὶ πλῆθος ὅ τι ἔσονται ἡμέραι ἐτῶν αὐτοῦ, καὶ ψυχὴ αὐτοῦ οὐ πλησθήσεται ἀπὸ τῆς ἀγαθωσύνης, καί γε ταφὴ οὐκ ἐγένετο αὐτῷ, εἶπα Ἀγαθὸν ὑπὲρ αὐτὸν τὸ ἔκτρωμα·",
+        "VUL": "Si genuerit quispiam centum liberos,/ et vixerit multos annos,/ et plures dies ætatis habuerit,/ et anima illius non utatur bonis substantiæ suæ,/ sepulturaque careat :/ de hoc ego pronuntio quod melior illo sit abortivus./",
+        "SYN": "Если бы какой человек родил сто _детей,_ и прожил многие годы, и еще умножились дни жизни его, но душа его не наслаждалась бы добром и не было бы ему и погребения, то я сказал бы: выкидыш счастливее его,",
+        "NEO": "Quand un homme aurait engendré cent fils, eût vécu de nombreuses années, et que les jours de ses années se seraient multipliés, si son âme ne s’est pas rassasiée de bonheur, et qu’il n’ait pas même eu de sépulture, je dis qu’un avorton est plus heureux que lui.",
+        "NAB": "Should a man have a hundred children and live many years, no matter to what great age, still if he has not the full benefit of his goods, or if he is deprived of burial, of this man I proclaim that the child born dead is more fortunate than he.",
+        "VAT_ES": "Si un hombre tiene cien hijos y vive muchos años, por más numerosos que sean los días de sus años. si su alma no se sacia de felicidad y ni siquiera le dan sepultura, yo digo que un aborto es más feliz que él.",
+        "CEI": "Se uno avesse cento figli e vivesse molti anni e molti fossero i suoi giorni, se egli non gode dei suoi beni e non ha neppure una tomba, allora io dico: meglio di lui l'aborto,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "כִּֽי בַ/הֶ֥בֶל בָּ֖א וּ/בַ/חֹ֣שֶׁךְ יֵלֵ֑ךְ וּ/בַ/חֹ֖שֶׁךְ שְׁמ֥/וֹ יְכֻסֶּֽה׃",
+        "LXX": "ὅτι ἐν ματαιότητι ἦλθεν καὶ ἐν σκότει πορεύεται, καὶ ἐν σκότει ὄνομα αὐτοῦ καλυφθήσεται,",
+        "VUL": "Frustra enim venit,/ et pergit ad tenebras,/ et oblivione delebitur nomen ejus./",
+        "SYN": "потому что он напрасно пришел и отошел во тьму, и его имя покрыто мраком.",
+        "NEO": "Car il est venu en vain, il s’en va dans les ténèbres, et les ténèbres couvriront son nom ;",
+        "NAB": "Though it came in vain and goes into darkness and its name is enveloped in darkness;",
+        "VAT_ES": "Porque este ha venido en vano y se va hacia las tinieblas, y su nombre será cubierto por las tinieblas;",
+        "CEI": "perché questi viene invano e se ne va nella tenebra e il suo nome è coperto dalla tenebra."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "גַּם שֶׁ֥מֶשׁ לֹא רָאָ֖ה וְ/לֹ֣א יָדָ֑ע נַ֥חַת לָ/זֶ֖ה מִ/זֶּֽה׃",
+        "LXX": "καί γε ἥλιον οὐκ εἶδεν, καὶ οὐκ ἔγνω ἀναπαύσεις τούτῳ ὑπὲρ τοῦτον.",
+        "VUL": "Non vidit solem,/ neque cognovit distantiam boni et mali./",
+        "SYN": "Он даже не видел и не знал солнца: ему покойнее, нежели тому.",
+        "NEO": "il n’a même ni vu ni connu le soleil, il a plus de repos que cet homme.",
+        "NAB": "though it has not seen or known the sun, yet the dead child is at rest rather than such a man.",
+        "VAT_ES": "no ha visto ni conocido el sol, pero descansa más tranquilo que aquel.",
+        "CEI": "Non vide neppure il sole: non conobbe niente; eppure il suo riposo è maggiore di quello dell'altro."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/אִלּ֣וּ חָיָ֗ה אֶ֤לֶף שָׁנִים֙ פַּעֲמַ֔יִם וְ/טוֹבָ֖ה לֹ֣א רָאָ֑ה הֲ/לֹ֛א אֶל מָק֥וֹם אֶחָ֖ד הַ/כֹּ֥ל הוֹלֵֽךְ׃",
+        "LXX": "καὶ εἰ ἔζησεν χιλίων ἐτῶν καθόδους, καὶ ἀγαθωσύνην οὐκ εἶδεν, μὴ οὐκ εἰς τόπον ἕνα πορεύεται;",
+        "VUL": "Etiam si duobus millibus annis vixerit,/ et non fuerit perfruitus bonis,/ nonne ad unum locum properant omnia ?/",
+        "SYN": "А тот, хотя бы прожил две тысячи лет и не наслаждался добром, не все ли пойдет в одно место?",
+        "NEO": "Et quand il vivrait deux fois mille ans, sans jouir du bonheur, tout ne va-t-il pas au même lieu ?",
+        "NAB": "Should he live twice a thousand years and not enjoy his goods, do not both go to the same place?",
+        "VAT_ES": "Y aunque ese hombre hubiera vivido dos mil años sin ser en ellos la felicidad, &iquest;acaso no van todos al mismo sitio?",
+        "CEI": "Se quello vivesse anche due volte mille anni, senza godere dei suoi beni, forse non dovranno andare tutt'e due nel medesimo luogo?"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "כָּל עֲמַ֥ל הָ/אָדָ֖ם לְ/פִ֑י/הוּ וְ/גַם הַ/נֶּ֖פֶשׁ לֹ֥א תִמָּלֵֽא׃",
+        "LXX": "πᾶς μόχθος ἀνθρώπου εἰς στόμα αὐτοῦ, καί γε ἡ ψυχὴ οὐ πληρωθήσεται.",
+        "VUL": "Omnis labor hominis in ore ejus ;/ sed anima ejus non implebitur./",
+        "SYN": "Все труды человека - для рта его, а душа его не насыщается.",
+        "NEO": "Tout le travail de l’homme est pour sa bouche ; mais ses désirs ne sont jamais satisfaits.",
+        "NAB": "All man's toil is for his mouth, yet his desire is not fulfilled.",
+        "VAT_ES": "Todo el esfuerzo del hombre va a parar a su boca, pero el deseo no se satisface jamás.",
+        "CEI": "Tutta la fatica dell'uomo è per la bocca e la sua brama non è mai sazia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "כִּ֛י מַה יּוֹתֵ֥ר לֶ/חָכָ֖ם מִֽן הַ/כְּסִ֑יל מַה לֶּ/עָנִ֣י יוֹדֵ֔עַ לַ/הֲלֹ֖ךְ נֶ֥גֶד הַ/חַיִּֽים׃",
+        "LXX": "ὅτι περισσεία τῷ σοφῷ ὑπὲρ τὸν ἄφρονα, διότι ὁ πένης οἶδεν πορευθῆναι κατέναντι τῆς ζωῆς.",
+        "VUL": "Quid habet amplius sapiens a stulto ?/ et quid pauper, nisi ut pergat illuc ubi est vita ?/",
+        "SYN": "Какое же преимущество мудрого перед глупым, какое - бедняка, умеющего ходить перед живущими?",
+        "NEO": "Car quel avantage a le sage sur l’insensé ? Quel avantage a le pauvre qui sait se conduire devant les vivants ?",
+        "NAB": "For what advantage has the wise man over the fool, or what advantage has the poor man in knowing how to conduct himself in life?",
+        "VAT_ES": "&iquest;En qué aventaja el sabio al necio? &iquest;Qué ventaja tiene el pobre que sabe enfrentarse con la vida?",
+        "CEI": "Quale vantaggio ha il saggio sullo stolto? Quale il vantaggio del povero che sa comportarsi bene di fronte ai viventi?"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "ט֛וֹב מַרְאֵ֥ה עֵינַ֖יִם מֵֽ/הֲלָךְ נָ֑פֶשׁ גַּם זֶ֥ה הֶ֖בֶל וּ/רְע֥וּת רֽוּחַ׃",
+        "LXX": "ἀγαθὸν ὅραμα ὀφθαλμῶν ὑπὲρ πορευόμενον ψυχῇ· καί γε τοῦτο ματαιότης καὶ προαίρεσις πνεύματος.",
+        "VUL": "Melius est videre quod cupias,/ quam desiderare quod nescias./ Sed et hoc vanitas est, et præsumptio spiritus./",
+        "SYN": "Лучше видеть глазами, нежели бродить душею. И это - также суета и томление духа!",
+        "NEO": "Ce que les yeux voient est préférable à la divagation des désirs. Cela encore est vanité et poursuite du vent.",
+        "NAB": "\"What the eyes see is better than what the desires wander after.\" This also is vanity and a chase after wind.",
+        "VAT_ES": "Vale más lo que se ve con los ojos que lo que se imagina con el deseo. También esto es vanidad y correr tras el viento.",
+        "CEI": "Meglio vedere con gli occhi, che vagare con il desiderio. Anche questo è vanità e un inseguire il vento."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "מַה שֶּֽׁ/הָיָ֗ה כְּבָר֙ נִקְרָ֣א שְׁמ֔/וֹ וְ/נוֹדָ֖ע אֲשֶׁר ה֣וּא אָדָ֑ם וְ/לֹא יוּכַ֣ל לָ/דִ֔ין עִ֥ם ש/התקיף שֶׁ/תַּקִּ֖יף מִמֶּֽ/נּוּ׃",
+        "LXX": "Εἴ τι ἐγένετο, ἤδη κέκληται ὄνομα αὐτοῦ, καὶ ἐγνώσθη ὅ ἐστιν ἄνθρωπος, καὶ οὐ δυνήσεται κριθῆναι μετὰ τοῦ ἰσχυροῦ ὑπὲρ αὐτόν·",
+        "VUL": "Qui futurus est, jam vocatum est nomen ejus ;/ et scitur quod homo sit,/ et non possit contra fortiorem se in judicio contendere./",
+        "SYN": "Что существует, тому уже наречено имя, и известно, что это - человек, и что он не может препираться с тем, кто сильнее его.",
+        "NEO": "De toute chose qui arrive, le nom est déjà prononcé ; on sait ce que sera un homme, et il ne peut contester avec qui est plus fort que lui.",
+        "NAB": "Whatever is, was long ago given its name, and the nature of man is known, and that he cannot contend in judgment with one who is stronger than he.",
+        "VAT_ES": "Lo que existe, ya ha sido llamado por su nombre. Ya se sabe lo que es el hombre, y que él no puede entrar en pleito con aquel que es más fuerte que él.",
+        "CEI": "Ciò che è, già da tempo ha avuto un nome; e si sa che cos'è un uomo: egli non può competere con chi è più forte di lui."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּ֛י יֵשׁ דְּבָרִ֥ים הַרְבֵּ֖ה מַרְבִּ֣ים הָ֑בֶל מַה יֹּתֵ֖ר לָ/אָדָֽם׃",
+        "LXX": "ὅτι εἰσὶν λόγοι πολλοὶ πληθύνοντες ματαιότητα.",
+        "VUL": "Verba sunt plurima,/ multamque in disputando habentia vanitatem.]",
+        "SYN": "Много таких вещей, которые умножают суету: что же для человека лучше?",
+        "NEO": "Car il y a beaucoup de paroles qui ne font qu’accroître la vanité : quel avantage en revient-il à l’homme ?",
+        "NAB": "For though there are many sayings that multiply vanity, what profit is there for a man?",
+        "VAT_ES": "Donde abundan las palabras, aumenta la vanidad, &iquest;y qué aprovecha eso al hombre?",
+        "CEI": "Le molte parole aumentano la delusione e quale vantaggio v'è per l'uomo?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "כִּ֣י מִֽי יוֹדֵעַ֩ מַה טּ֨וֹב לָֽ/אָדָ֜ם בַּֽ/חַיִּ֗ים מִסְפַּ֛ר יְמֵי חַיֵּ֥י הֶבְל֖/וֹ וְ/יַעֲשֵׂ֣/ם כַּ/צֵּ֑ל אֲשֶׁר֙ מִֽי יַגִּ֣יד לָֽ/אָדָ֔ם מַה יִּהְיֶ֥ה אַחֲרָ֖י/ו תַּ֥חַת הַ/שָּֽׁמֶשׁ׃",
+        "SYN": "Ибо кто знает, что хорошо для человека в жизни, во все дни суетной жизни его, которые он проводит как тень? И кто скажет человеку, что будет после него под солнцем?",
+        "NEO": "Car qui sait, en effet, ce qui est bon pour l’homme dans la vie, pendant les jours de sa vie de vanité, qu’il passe comme une ombre ? Et qui peut indiquer à l’homme ce qui sera après lui sous le soleil ?",
+        "NAB": "For who knows what is good for a man in life, the limited days of his vain life (which God has made like a shadow)? Because-who is there to tell a man what will come after him under the sun?",
+        "VAT_ES": "Porque &iquest;quién sabe lo que es bueno para el hombre en la vida, durante los contados días de su vida fugaz que él pasa como una sombra? &iquest;Quién puede, en efecto indicar al hombre lo que habrá después de él bajo el sol?",
+        "CEI": "Chi sa quel che all'uomo convenga durante la vita, nei brevi giorni della sua vana esistenza che egli trascorre come un'ombra? Chi può indicare all'uomo cosa avverrà dopo di lui sotto il sole?"
+      }
+    }
+  }
+}

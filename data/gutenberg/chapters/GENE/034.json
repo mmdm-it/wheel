@@ -1,0 +1,573 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_034",
+  "book_key": "GENE",
+  "sequence": 34,
+  "chapter_in": {
+    "MT": 34,
+    "VUL": 34,
+    "LXX": 34
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/תֵּצֵ֤א דִינָה֙ בַּת לֵאָ֔ה אֲשֶׁ֥ר יָלְדָ֖ה לְ/יַעֲקֹ֑ב לִ/רְא֖וֹת בִּ/בְנ֥וֹת הָ/אָֽרֶץ׃",
+        "VUL": "Egressa est autem Dina filia Liæ ut videret mulieres regionis illius.",
+        "LXX": "Ἐξῆλθεν δὲ Δείνα ἡ θυγάτηρ Λείας, ἣν ἔτεκεν τῷ Ἰακώβ, καταμαθεῖν τὰς θυγατέρας τῶν ἐνχωρίων.",
+        "NAB": "Dinah, the daughter whom Leah had borne to Jacob, went out to visit some of the women of the land.",
+        "SYN": "Дина, дочь Лии, которую она родила Иакову, вышла посмотреть на дочерей земли той.",
+        "NEO": "Dina, la fille que Lia avait enfantée à Jacob, sortit pour voir les filles du pays.",
+        "VAT_ES": "Dina, la hija que Lía había dado a Jacob, salió una vez a mirar a las mujeres del país.",
+        "CEI": "Dina, la figlia che Lia aveva partorita a Giacobbe, uscì a vedere le ragazze del paese."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יַּ֨רְא אֹתָ֜/הּ שְׁכֶ֧ם בֶּן חֲמ֛וֹר הַֽ/חִוִּ֖י נְשִׂ֣יא הָ/אָ֑רֶץ וַ/יִּקַּ֥ח אֹתָ֛/הּ וַ/יִּשְׁכַּ֥ב אֹתָ֖/הּ וַ/יְעַנֶּֽ/הָ׃",
+        "VUL": "Quam cum vidisset Sichem filius Hemor Hevæi, princeps terræ illius, adamavit eam : et rapuit, et dormivit cum illa, vi opprimens virginem.",
+        "LXX": "καὶ ἴδεν αὐτὴν Συχὲμ ὁ υἱὸς Ἐμμὼρ ὁ Χορραῖος, ὁ ἄρχων τῆς γῆς· καὶ λαβὼν αὐτὴν ἐκοιμήθη μετ’ αὐτῆς, καὶ ἐταπείνωσεν αὐτήν.",
+        "NAB": "When Shechem, son of Hamor the Hivite, who was chief of the region, saw her, he seized her and lay with her by force.",
+        "SYN": "И увидел ее Сихем, сын Еммора Евеянина, князя земли той, и взял ее, и спал с нею, и сделал ей насилие.",
+        "NEO": "Sichem, fils de Hémor, le Hévéen, prince du pays, l’ayant aperçue, l’enleva, coucha avec elle et lui fit violence.",
+        "VAT_ES": "Cuando la vio Siquem –que era hijo de Jamor, el jivita, príncipe de aquella región– se la llevó y abusó de ella.",
+        "CEI": "Ma la vide Sichem, figlio di Camor l'Eveo, principe di quel paese, e la rapì, si unì a lei e le fece violenza."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/תִּדְבַּ֣ק נַפְשׁ֔/וֹ בְּ/דִינָ֖ה בַּֽת יַעֲקֹ֑ב וַ/יֶּֽאֱהַב֙ אֶת הַֽ/נַּעֲרָ֔ וַ/יְדַבֵּ֖ר עַל לֵ֥ב הַֽ/נַּעֲרָֽ׃",
+        "VUL": "Et conglutinata est anima ejus cum ea, tristemque delinivit blanditiis.",
+        "LXX": "καὶ προσέσχεν τῇ ψυχῇ Δείνας τῆς θυγατρὸς Ἰακώβ, καὶ ἠγάπησεν τὴν παρθένον, καὶ ἐλάλησεν κατὰ τὴν διάνοιαν τῆς παρθένου αὐτῇ.",
+        "NAB": "Since he was strongly attracted to Dinah, daughter of Jacob, indeed was really in love with the girl, he endeavored to win her affection.",
+        "SYN": "И прилепилась душа его в Дине, дочери Иакова, и он полюбил девицу и говорил по сердцу девицы.",
+        "NEO": "Son âme s’attacha à Dina, fille de Jacob ; il aima la jeune fille et parla au cœur de la jeune fille.",
+        "VAT_ES": "Pero después se sintió atraído por la muchacha y se enamoró de ella, de manera que trató de ganarse su afecto.",
+        "CEI": "Egli rimase legato a Dina, figlia di Giacobbe; amò la fanciulla e le rivolse parole di conforto."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֣אמֶר שְׁכֶ֔ם אֶל חֲמ֥וֹר אָבִ֖י/ו לֵ/אמֹ֑ר קַֽח לִ֛/י אֶת הַ/יַּלְדָּ֥ה הַ/זֹּ֖את לְ/אִשָּֽׁה׃",
+        "VUL": "Et pergens ad Hemor patrem suum : Accipe, inquit, mihi puellam hanc conjugem.",
+        "LXX": "εἶπεν δὲ Συχὲμ πρὸς Ἐμμὼρ τὸν πατέρα αὐτοῦ λέγων Λάβε μοι τὴν παιδίσκην ταύτην εἰς γυναῖκα.",
+        "NAB": "Shechem also asked his father Hamor, \"Get me this girl for a wife.\"",
+        "SYN": "И сказал Сихем Еммору, отцу своему, говоря: возьми мне эту девицу в жену.",
+        "NEO": "Et Sichem dit à Hémor, son père : « Prends-moi cette jeune fille pour femme. »",
+        "VAT_ES": "Además, dijo a su padre Jamor: «Consígueme a esa muchacha para que sea mi esposa».",
+        "CEI": "Poi disse a Camor suo padre: \"Prendimi in moglie questa ragazza\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/יַעֲקֹ֣ב שָׁמַ֗ע כִּ֤י טִמֵּא֙ אֶת דִּינָ֣ה בִתּ֔/וֹ וּ/בָנָ֛י/ו הָי֥וּ אֶת מִקְנֵ֖/הוּ בַּ/שָּׂדֶ֑ה וְ/הֶחֱרִ֥שׁ יַעֲקֹ֖ב עַד בֹּאָֽ/ם׃",
+        "VUL": "Quod cum audisset Jacob absentibus filiis, et in pastu pecorum occupatis, siluit donec redirent.",
+        "LXX": "Ἰακὼβ δὲ ἤκουσεν ὅτι ἐμίανεν ὁ υἱὸς Ἐμμὼρ Δείναν τὴν θυγατέρα αὐτοῦ· οἱ δὲ υἱοὶ αὐτοῦ ἦσαν μετὰ τῶν κτηνῶν αὐτοῦ ἐν τῷ πεδίῳ· παρεσιώπησεν δὲ Ἰακὼβ ἕως τοῦ ἐλθεῖν αὐτούς.",
+        "NAB": "Meanwhile, Jacob heard that Shechem had defiled his daughter Dinah; but since his sons were out in the fields with his livestock, he held his peace until they came home.",
+        "SYN": "Иаков слышал, что [сын Емморов] обесчестил Дину, дочь его, но как сыновья его были со скотом его в поле, то Иаков молчал, пока не пришли они.",
+        "NEO": "Or Jacob apprit qu’il avait outragé Dina, sa fille ; mais, comme ses fils étaient aux champs avec son troupeau, Jacob garda le silence jusqu’à leur retour.",
+        "VAT_ES": "Jacob, por su parte, se enteró de que Siquem había violado a su hija Dina, pero como sus hijos estaban en el campo, cuidando el ganado, no dijo nada hasta su regreso.",
+        "CEI": "Intanto Giacobbe aveva saputo che quegli aveva disonorato Dina, sua figlia, ma i suoi figli erano in campagna con il suo bestiame. Giacobbe tacque fino al loro arrivo."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֛א חֲמ֥וֹר אֲבִֽי שְׁכֶ֖ם אֶֽל יַעֲקֹ֑ב לְ/דַבֵּ֖ר אִתּֽ/וֹ׃",
+        "VUL": "Egresso autem Hemor patre Sichem ut loqueretur ad Jacob,",
+        "LXX": "ἐξῆλθεν δὲ Ἐμμὼρ ὁ πατὴρ Συχὲμ πρὸς Ἰακὼβ λαλῆσαι αὐτῷ.",
+        "NAB": "Now Hamor, the father of Shechem, went out to discuss the matter with Jacob,",
+        "SYN": "И вышел Еммор, отец Сихемов, к Иакову, поговорить с ним.",
+        "NEO": "Hémor, père de Sichem, sortit vers Jacob, pour lui parler.",
+        "VAT_ES": "Entonces Jamor, el padre de Siquem, fue a encontrarse con Jacob para conversar con él.",
+        "CEI": "Venne dunque Camor, padre di Sichem, da Giacobbe per parlare con lui."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֨י יַעֲקֹ֜ב בָּ֤אוּ מִן הַ/שָּׂדֶה֙ כְּ/שָׁמְעָ֔/ם וַ/יִּֽתְעַצְּבוּ֙ הָֽ/אֲנָשִׁ֔ים וַ/יִּ֥חַר לָ/הֶ֖ם מְאֹ֑ד כִּֽי נְבָלָ֞ה עָשָׂ֣ה בְ/יִשְׂרָאֵ֗ל לִ/שְׁכַּב֙ אֶת בַּֽת יַעֲקֹ֔ב וְ/כֵ֖ן לֹ֥א יֵעָשֶֽׂה׃",
+        "VUL": "ecce filii ejus veniebant de agro : auditoque quod acciderat, irati sunt valde, eo quod fdam rem operatus esset in Israël et, violata filia Jacob, rem illicitam perpetrasset.",
+        "LXX": "οἱ δὲ υἱοὶ Ἰακὼβ ἦλθον ἐκ τοῦ πεδίου· ὡς δὲ ἤκουσαν, κατενύχθησαν οἱ ἄνδρες, καὶ λυπηρὸν ἦν αὐτοῖς σφόδρα, ὅτι ἄσχημον ἐποίησεν Συχὲμ ἐν Ἰσραήλ, κοιμηθεὶς μετὰ τῆς θυγατρὸς Ἰακώβ· καὶ οὐχ οὕτως ἔσται.",
+        "NAB": "just as Jacob's sons were coming in from the fields. When they heard the news, the men were shocked and seethed with indignation. What Shechem had done was an outrage in Israel; such a thing could not be tolerated.",
+        "SYN": "Сыновья же Иакова пришли с поля, и когда услышали, то огорчились мужи те и воспылали гневом, потому что бесчестие сделал он Израилю, переспав с дочерью Иакова, а так не надлежало делать.",
+        "NEO": "Or les fils de Jacob étaient revenus des champs quand ils apprirent la chose ; ces hommes furent outrés et entrèrent en une grande colère, parce que Sichem avait commis une infamie contre Israël, en couchant avec la fille de Jacob, ce qui ne devait pas se faire.",
+        "VAT_ES": "En ese momento, volvieron del campo los hijos de Jacob, y cuanto tuvieron noticia de lo ocurrido, se disgustaron profundamente y se enfurecieron, porque al abusar de la hija de Jacob, Siquem había cometido una infamia contra Israel, y eso no se debe hacer.",
+        "CEI": "Quando i figli di Giacobbe tornarono dalla campagna, sentito l'accaduto, ne furono addolorati e s'indignarono molto, perché quelli aveva commesso un'infamia in Israele, unendosi alla figlia di Giacobbe: così non si doveva fare!"
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר חֲמ֖וֹר אִתָּ֣/ם לֵ/אמֹ֑ר שְׁכֶ֣ם בְּנִ֗/י חָֽשְׁקָ֤ה נַפְשׁ/וֹ֙ בְּ/בִתְּ/כֶ֔ם תְּנ֨וּ נָ֥א אֹתָ֛/הּ ל֖/וֹ לְ/אִשָּֽׁה׃",
+        "VUL": "Locutus est itaque Hemor ad eos : Sichem filii mei adhæsit anima filiæ vestræ : date eam illi uxorem :",
+        "LXX": "καὶ ἐλάλησεν αὐτοῖς Ἐμμὼρ λέγων Συχὲμ ὁ υἱός μου προείλατο τῇ ψυχῇ τὴν θυγατέρα ὑμῶν· δότε οὖν αὐτὴν αὐτῷ γυναῖκα.",
+        "NAB": "Hamor appealed to them, saying: \"My son Shechem has his heart set on your daughter. Please give her to him in marriage.",
+        "SYN": "Еммор стал говорить им, и сказал: Сихем, сын мой, прилепился душею к дочери вашей; дайте же ее в жену ему;",
+        "NEO": "Hémor leur parla ainsi : « L’âme de Sichem, mon fils, s’est attachée à votre fille ; donnez-la-lui pour femme, je vous prie.",
+        "VAT_ES": "Pero Jamor les habló en estos términos: «Mi hijo Siquem está realmente enamorado de esta muchacha. Permítanle casarse con ella.",
+        "CEI": "Camor disse loro: \"Sichem, mio figlio, è innamorato della vostra figlia; dategliela in moglie!"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וְ/הִֽתְחַתְּנ֖וּ אֹתָ֑/נוּ בְּנֹֽתֵי/כֶם֙ תִּתְּנוּ לָ֔/נוּ וְ/אֶת בְּנֹתֵ֖י/נוּ תִּקְח֥וּ לָ/כֶֽם׃",
+        "VUL": "et jungamus vicissim connubia : filias vestras tradite nobis, et filias nostras accipite,",
+        "LXX": "ἐπιγαμβρεύσατε ἡμῖν· τὰς θυγατέρας ὑμῶν δότε ἡμῖν, καὶ τὰς θυγατέρας ἡμῶν λάβετε τοῖς υἱοῖς ὑμῶν.",
+        "NAB": "Intermarry with us; give your daughters to us, and take our daughters for yourselves.",
+        "SYN": "породнитесь с нами; отдавайте за нас дочерей ваших, а наших дочерей берите себе [за сыновей ваших];",
+        "NEO": "Alliez-vous avec nous ; vous nous donnerez vos filles, et vous prendrez pour vous les nôtres.",
+        "VAT_ES": "Conviértanse en parientes nuestros: ustedes nos darán a sus hijas, y obtendrán en cambio las nuestras.",
+        "CEI": "Anzi, alleatevi con noi: voi darete a noi le vostre figlie e vi prenderete per voi le nostre figlie."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/אִתָּ֖/נוּ תֵּשֵׁ֑בוּ וְ/הָ/אָ֨רֶץ֙ תִּהְיֶ֣ה לִ/פְנֵי/כֶ֔ם שְׁבוּ֙ וּ/סְחָר֔וּ/הָ וְ/הֵֽאָחֲז֖וּ בָּֽ/הּ׃",
+        "VUL": "et habitate nobiscum : terra in potestate vestra est : exercete, negotiamini, et possidete eam.",
+        "LXX": "καὶ ἐν ἡμῖν κατοικεῖτε, καὶ ἰδοὺ ἡ γῆ πλατεῖα ἐναντίον ὑμῶν· κατοικεῖτε καὶ ἐμπορεύεσθε ἐπ’ αὐτῆς καὶ ἐνκτᾶσθε ἐν αὐτῇ.",
+        "NAB": "Thus you can live among us. The land is open before you; you can settle and move about freely in it, and acquire landed property here.\"",
+        "SYN": "и живите с нами; земля сия [пространна] пред вами, живите и промышляйте на ней и приобретайте ее во владение.",
+        "NEO": "Vous habiterez chez nous, et le pays sera à votre disposition, pour vous y établir, y trafiquer et y acquérir des propriétés. »",
+        "VAT_ES": "Así podrán vivir entre nosotros y tendrán el país a su disposición para instalarse en él, para recorrerlo libremente y adquirir propiedades».",
+        "CEI": "Abiterete con noi e il paese sarà a vostra disposizione; risiedetevi, percorretelo in lungo e in largo e acquistate proprietà in esso\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר שְׁכֶם֙ אֶל אָבִ֣י/ה וְ/אֶל אַחֶ֔י/הָ אֶמְצָא חֵ֖ן בְּ/עֵינֵי/כֶ֑ם וַ/אֲשֶׁ֥ר תֹּאמְר֛וּ אֵלַ֖/י אֶתֵּֽן׃",
+        "VUL": "Sed et Sichem ad patrem et ad fratres ejus ait : Inveniam gratiam coram vobis : et quæcumque statueritis, dabo :",
+        "LXX": "εἶπεν δὲ Συχὲμ πρὸς τὸν πατέρα αὐτῆς καὶ πρὸς τοὺς ἀδελφοὺς αὐτῆς Εὕροιμι χάριν ἐναντίον ὑμῶν, καὶ ὃ ἐὰν εἴπητε ἡμῖν δώσομεν.",
+        "NAB": "Then Shechem, too, appealed to Dinah's father and brothers: \"Do me this favor, and I will pay whatever you demand of me.",
+        "SYN": "Сихем же сказал отцу ее и братьям ее: только бы мне найти благоволение в очах ваших, я дам, что ни скажете мне;",
+        "NEO": "Sichem dit au père et aux frères de Dina : « Que je trouve grâce à vos yeux, et je donnerai ce que vous me direz.",
+        "VAT_ES": "Después Siquem dijo al padre y a los hermanos de la muchacha: «Si me hacen este favor, yo les daré lo que me pidan.",
+        "CEI": "Poi Sichem disse al padre e ai fratelli di lei: \"Possa io trovare grazia agli occhi vostri; vi darò quel che mi direte."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "הַרְבּ֨וּ עָלַ֤/י מְאֹד֙ מֹ֣הַר וּ/מַתָּ֔ן וְ/אֶ֨תְּנָ֔ה כַּ/אֲשֶׁ֥ר תֹּאמְר֖וּ אֵלָ֑/י וּ/תְנוּ לִ֥/י אֶת הַֽ/נַּעֲרָ֖ לְ/אִשָּֽׁה׃",
+        "VUL": "augete dotem, et munera postulate, et libenter tribuam quod petieritis : tantum date mihi puellam hanc uxorem.",
+        "LXX": "πληθύνατε τὴν φερνὴν σφόδρα, καὶ δώσω καθότι ἂν εἴπητέ μοι, καὶ δώσετέ μοι τὴν παῖδα ταύτην εἰς γυναῖκα.",
+        "NAB": "No matter how high you set the bridal price, I will pay you whatever you ask; only give me the maiden in marriage.\"",
+        "SYN": "назначьте самое большое вено и дары; я дам, что ни скажете мне, только отдайте мне девицу в жену.",
+        "NEO": "Exigez de moi un fort prix d’achat et de grands présents, et ce que vous me direz, je le donnerai ; mais donnez-moi la jeune fille pour femme. »",
+        "VAT_ES": "Aunque me exijan a cambio de ella un precio muy elevado, les pagaré lo que ustedes digan. Pero dejen que me case con la muchacha».",
+        "CEI": "Alzate pure molto a mio carico il prezzo nuziale e il valore del dono; vi darò quanto mi chiederete, ma datemi la giovane in moglie!\"."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יַּעֲנ֨וּ בְנֵֽי יַעֲקֹ֜ב אֶת שְׁכֶ֨ם וְ/אֶת חֲמ֥וֹר אָבִ֛י/ו בְּ/מִרְמָ֖ה וַ/יְדַבֵּ֑רוּ אֲשֶׁ֣ר טִמֵּ֔א אֵ֖ת דִּינָ֥ה אֲחֹתָֽ/ם׃",
+        "VUL": "Responderunt filii Jacob Sichem et patri ejus in dolo, sævientes ob stuprum sororis :",
+        "LXX": "ἀπεκρίθησαν δὲ οἱ υἱοὶ Ἰακὼβ τῷ Συχὲμ καὶ Ἐμμὼρ τῷ πατρὶ αὐτοῦ μετὰ δόλου, καὶ ἐλάλησαν αὐτοῖς, ὅτι ἐμίαναν Δείναν τὴν ἀδελφὴν αὐτῶν.",
+        "NAB": "Jacob's sons replied to Shechem and his father Hamor with guile, speaking as they did because their sister Dinah had been defiled.",
+        "SYN": "И отвечали сыновья Иакова Сихему и Еммору, отцу его, с лукавством; а говорили так потому, что он обесчестил Дину, сестру их;",
+        "NEO": "Les fils de Jacob, répondirent et parlèrent avec ruse à Sichem et à Hémor, son père, parce que Sichem avait déshonoré Dina, leur sœur ;",
+        "VAT_ES": "Sin embargo, como su hermana había sido ultrajada, los hijos de Jacob resolvieron engañar a Siquem y a su padre Jamor,",
+        "CEI": "Allora i figli di Giacobbe risposero a Sichem e a suo padre Camor e parlarono con astuzia, perché quegli aveva disonorato la loro sorella Dina."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֣וּ אֲלֵי/הֶ֗ם לֹ֤א נוּכַל֙ לַ/עֲשׂוֹת֙ הַ/דָּבָ֣ר הַ/זֶּ֔ה לָ/תֵת֙ אֶת אֲחֹתֵ֔/נוּ לְ/אִ֖ישׁ אֲשֶׁר ל֣/וֹ עָרְלָ֑ה כִּֽי חֶרְפָּ֥ה הִ֖וא לָֽ/נוּ׃",
+        "VUL": "Non possumus facere quod petitis, nec dare sororem nostram homini incircumciso : quod illicitum et nefarium est apud nos.",
+        "LXX": "καὶ εἶπαν αὐτοῖς Συμεὼν καὶ Λευὶ οἱ ἀδελφοὶ Δείνας υἱοὶ δὲ Λείας Οὐ δυνησόμεθα ποιῆσαι τοῦτο, δοῦναι τὴν ἀδελφὴν ἡμῶν ἀνθρώπῳ ὃς ἔχει ἀκροβυστίαν· ἔστιν γὰρ ὄνειδος ἡμῖν.",
+        "NAB": "\"We could not do such a thing,\" they said, \"as to give our sister to an uncircumcised man; that would be a disgrace for us.",
+        "SYN": "и сказали им [Симеон и Левий, братья Дины, сыновья Лиины]: не можем этого сделать, выдать сестру нашу за человека, который необрезан, ибо это бесчестно для нас;",
+        "NEO": "ils leur dirent : « C’est une chose que nous ne pouvons pas faire que de donner notre sœur à un homme non circoncis, car ce serait un opprobre pour nous.",
+        "VAT_ES": "diciéndoles: «No podemos hacer semejante cosa, porque sería para nosotros una verg&uuml;enza entregar nuestra hermana a un incircunciso.",
+        "CEI": "Dissero loro: \"Non possiamo fare questo, dare cioè la nostra sorella ad un uomo non circonciso, perché ciò sarebbe un disonore per noi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אַךְ בְּ/זֹ֖את נֵא֣וֹת לָ/כֶ֑ם אִ֚ם תִּהְי֣וּ כָמֹ֔/נוּ לְ/הִמֹּ֥ל לָ/כֶ֖ם כָּל זָכָֽר׃",
+        "VUL": "Sed in hoc valebimus fderari, si volueritis esse similes nostri, et circumcidatur in vobis omne masculini sexus ;",
+        "LXX": "ἐν τούτῳ ὁμοιωθησόμεθα ὑμῖν καὶ κατοικήσωμεν ἐν ὑμῖν, ἐὰν γένησθε ὡς ἡμεῖς καὶ ὑμεῖς ἐν τῷ περιτμηθῆναι ὑμῶν πᾶν ἀρσενικόν·",
+        "NAB": "We will agree with you only on this condition, that you become like us by having every male among you circumcised.",
+        "SYN": "только на том условии мы согласимся с вами [и поселимся у вас], если вы будете как мы, чтобы и у вас весь мужеский пол был обрезан;",
+        "NEO": "Nous ne consentirons à votre désir qu’à la condition que vous deveniez comme nous, et que tout mâle parmi vous soit circoncis.",
+        "VAT_ES": "Aceptaremos solamente con esta condición: que ustedes se hagan iguales a nosotros, circuncidando a todos sus varones.",
+        "CEI": "Solo a questa condizione acconsentiremo alla vostra richiesta, se cioè voi diventerete come noi, circoncidendo ogni vostro maschio."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/נָתַ֤נּוּ אֶת בְּנֹתֵ֨י/נוּ֙ לָ/כֶ֔ם וְ/אֶת בְּנֹתֵי/כֶ֖ם נִֽקַּֽח לָ֑/נוּ וְ/יָשַׁ֣בְנוּ אִתְּ/כֶ֔ם וְ/הָיִ֖ינוּ לְ/עַ֥ם אֶחָֽד׃",
+        "VUL": "tunc dabimus et accipiemus mutuo filias vestras ac nostras : et habitabimus vobiscum, erimusque unus populus.",
+        "LXX": "καὶ δώσομεν τὰς θυγατέρας ἡμῶν ὑμῖν, καὶ ἀπὸ τῶν θυγατέρων ὑμῶν λημψόμεθα ἡμῖν γυναῖκας· καὶ οἰκήσωμεν παρ’ ὑμῖν, καὶ ἐσόμεθα ὡς γένος ἕν.",
+        "NAB": "Then we will give you our daughters and take yours in marriage; we will settle among you and become one kindred people with you.",
+        "SYN": "и будем отдавать за вас дочерей наших и брать за себя ваших дочерей, и будем жить с вами, и составим один народ;",
+        "NEO": "Ainsi nous vous donnerons nos filles, et nous prendrons pour nous les vôtres ; nous habiterons avec vous et nous formerons un seul peuple.",
+        "VAT_ES": "Entonces podremos darles a nuestras hijas y casarnos con las de ustedes, vivir entre ustedes y formar un solo pueblo.",
+        "CEI": "Allora noi vi daremo le nostre figlie e ci prenderemo le vostre, abiteremo con voi e diventeremo un solo popolo."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/אִם לֹ֧א תִשְׁמְע֛וּ אֵלֵ֖י/נוּ לְ/הִמּ֑וֹל וְ/לָקַ֥חְנוּ אֶת בִּתֵּ֖/נוּ וְ/הָלָֽכְנוּ׃",
+        "VUL": "Si autem circumcidi nolueritis, tollemus filiam nostram, et recedemus.",
+        "LXX": "ἐὰν δὲ μὴ εἰσακούσητε ἡμῶν τοῦ περιτέμνεσθαι, λαβόντες τὰς θυγατέρας ἡμῶν ἀπελευσόμεθα.",
+        "NAB": "But if you do not comply with our terms regarding circumcision, we will take our daughter and go away.\"",
+        "SYN": "а если не послушаетесь нас в том, чтобы обрезаться, то мы возьмем дочь нашу и удалимся.",
+        "NEO": "Mais si vous ne voulez pas nous écouter et vous circoncire, nous reprendrons notre fille et nous nous en irons. »",
+        "VAT_ES": "Si no llegan a un acuerdo con nosotros en lo que se refiere a la circuncisión, tomaremos a nuestra hermana y nos iremos».",
+        "CEI": "Ma se voi non ci ascoltate a proposito della nostra circoncisione, allora prenderemo la nostra figlia e ce ne andremo\"."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וַ/יִּֽיטְב֥וּ דִבְרֵי/הֶ֖ם בְּ/עֵינֵ֣י חֲמ֑וֹר וּ/בְ/עֵינֵ֖י שְׁכֶ֥ם בֶּן חֲמֽוֹר׃",
+        "VUL": "Placuit oblatio eorum Hemor, et Sichem filio ejus,",
+        "LXX": "καὶ ἤρεσαν οἱ λόγοι ἐναντίον Ἐμμὼρ καὶ ἐναντίον Συχὲμ τοῦ υἱοῦ Ἐμμώρ.",
+        "NAB": "Their proposal seemed fair to Hamor and his son Shechem.",
+        "SYN": "И понравились слова сии Еммору и Сихему, сыну Емморову.",
+        "NEO": "Leurs paroles plurent à Hémor et à Sichem, fils de Hémor ;",
+        "VAT_ES": "La propuesta pareció razonable a Jamor y a su hijo Siquem,",
+        "CEI": "Le loro parole piacquero a Camor e a Sichem, figlio di Camor."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא אֵחַ֤ר הַ/נַּ֨עַר֙ לַ/עֲשׂ֣וֹת הַ/דָּבָ֔ר כִּ֥י חָפֵ֖ץ בְּ/בַֽת יַעֲקֹ֑ב וְ/ה֣וּא נִכְבָּ֔ד מִ/כֹּ֖ל בֵּ֥ית אָבִֽי/ו׃",
+        "VUL": "nec distulit adolescens quin statim quod petebatur expleret : amabat enim puellam valde, et ipse erat inclytus in omni domo patris sui.",
+        "LXX": "καὶ οὐκ ἐχρόνισεν ὁ νεανίσκος τοῦ ποιῆσαι τὸ ῥῆμα τοῦτο· ἐνέκειτο γὰρ τῇ θυγατρὶ Ἰακώβ· αὐτὸς δὲ ἦν ἐνδοξότατος πάντων τῶν ἐν τῷ οἴκῳ τοῦ πατρὸς αὐτοῦ.",
+        "NAB": "The young man lost no time in acting in the matter, since he was deeply in love with Jacob's daughter. Moreover he was more highly respected than anyone else in his clan.",
+        "SYN": "Юноша не умедлил исполнить это, потому что любил дочь Иакова. А он более всех уважаем был из дома отца своего.",
+        "NEO": "et le jeune homme ne tarda pas à faire la chose, car il était épris de la fille de Jacob, et il était l’homme le plus considéré de la maison de son père.",
+        "VAT_ES": "y el joven no dudó un instante en satisfacer esa demanda, tanto era el cariño que sentía por la hija de Jacob. Además, él era el más respetado entre los miembros de su familia.",
+        "CEI": "Il giovane non indugiò ad eseguire la cosa, perché amava la figlia di Giacobbe; d'altra parte era il più onorato di tutto il casato di suo padre."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֥א חֲמ֛וֹר וּ/שְׁכֶ֥ם בְּנ֖/וֹ אֶל שַׁ֣עַר עִירָ֑/ם וַֽ/יְדַבְּר֛וּ אֶל אַנְשֵׁ֥י עִירָ֖/ם לֵ/אמֹֽר׃",
+        "VUL": "Ingressique portam urbis, locuti sunt ad populum :",
+        "LXX": "ἦλθεν δὲ Ἐμμὼρ καὶ Συχὲμ ὁ υἱὸς αὐτοῦ πρὸς τὴν πύλην τῆς πόλεως αὐτῶν, καὶ ἐλάλησαν πρὸς τοὺς ἄνδρας τῆς πόλεως αὐτῶν λέγοντες",
+        "NAB": "So Hamor and his son Shechem went to their town council and thus presented the matter to their fellow townsmen:",
+        "SYN": "И пришел Еммор и Сихем, сын его, к воротам города своего, и стали говорить жителям города своего и сказали:",
+        "NEO": "Hémor et Sichem, son fils, se rendirent donc à la porte de la ville, et ils parlèrent aux hommes de leur ville, en disant :",
+        "VAT_ES": "Entonces Jamor y su hijo Siquem se presentaron en la puerta de la ciudad, y hablaron a todos sus conciudadanos en los siguientes términos:",
+        "CEI": "Vennero dunque Camor e il figlio Sichem alla porta della loro città e parlarono agli uomini della città:"
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "הָ/אֲנָשִׁ֨ים הָ/אֵ֜לֶּה שְֽׁלֵמִ֧ים הֵ֣ם אִתָּ֗/נוּ וְ/יֵשְׁב֤וּ בָ/אָ֨רֶץ֙ וְ/יִסְחֲר֣וּ אֹתָ֔/הּ וְ/הָ/אָ֛רֶץ הִנֵּ֥ה רַֽחֲבַת יָדַ֖יִם לִ/פְנֵי/הֶ֑ם אֶת בְּנֹתָ/ם֙ נִקַּֽח לָ֣/נוּ לְ/נָשִׁ֔ים וְ/אֶת בְּנֹתֵ֖י/נוּ נִתֵּ֥ן לָ/הֶֽם׃",
+        "VUL": "Viri isti pacifici sunt, et volunt habitare nobiscum : negotientur in terra, et exerceant eam, quæ spatiosa et lata cultoribus indiget : filias eorum accipiemus uxores, et nostras illis dabimus.",
+        "LXX": "Οἱ ἄνθρωποι οὗτοι εἰρηνικοί εἰσιν μεθ’ ἡμῶν· οἰκείτωσαν ἐπὶ τῆς γῆς καὶ ἐμπορευέσθωσαν αὐτήν, ἡ δὲ γῆ ἰδοὺ πλατεῖα ἐναντίον αὐτῶν· τὰς θυγατέρας αὐτῶν λημψόμεθα ἡμῖν γυναῖκας, καὶ τὰς θυγατέρας ἡμῶν δώσομεν αὐτοῖς.",
+        "NAB": "\"These men are friendly toward us. Let them settle in the land and move about in it freely; there is ample room in the country for them. We can marry their daughters and give our daughters to them in marriage.",
+        "SYN": "сии люди мирны с нами; пусть они селятся на земле и промышляют на ней; земля же вот пространна пред ними. Станем брать дочерей их себе в жены и наших дочерей выдавать за них.",
+        "NEO": "« Ces gens-là sont des hommes pacifiques au milieu de nous ; qu’ils s’établissent dans le pays et qu’ils y trafiquent ; voici que le pays, à droite et à gauche, est assez vaste pour eux. Nous prendrons leurs filles pour femmes, et nous leur donnerons nos filles.",
+        "VAT_ES": "«Estos hombres son nuestros amigos. Dejen que se instalen en el país y que puedan recorrerlo libremente; aquí hay bastante espacio para ellos. Nosotros nos casaremos con sus hijas, y les daremos en cambio a las nuestras.",
+        "CEI": "\"Questi uomini sono gente pacifica: abitino pure con noi nel paese e lo percorrano in lungo e in largo; esso è molto ampio per loro in ogni direzione. Noi potremo prendere per mogli le loro figlie e potremo dare a loro le nostre."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "אַךְ בְּ֠/זֹאת יֵאֹ֨תוּ לָ֤/נוּ הָ/אֲנָשִׁים֙ לָ/שֶׁ֣בֶת אִתָּ֔/נוּ לִ/הְי֖וֹת לְ/עַ֣ם אֶחָ֑ד בְּ/הִמּ֥וֹל לָ֨/נוּ֙ כָּל זָכָ֔ר כַּ/אֲשֶׁ֖ר הֵ֥ם נִמֹּלִֽים׃",
+        "VUL": "Unum est quo differtur tantum bonum : si circumcidamus masculos nostros, ritum gentis imitantes.",
+        "LXX": "μόνον ἐν τούτῳ ὁμοιωθήσονται ἡμῖν οἱ ἄνθρωποι τοῦ κατοικεῖν μεθ’ ἡμῶν ὥστε εἶναι λαὸν ἕνα, ἐν τῷ περιτέμνεσθαι ἡμῶν πᾶν ἀρσενικόν, καθὰ καὶ αὐτοὶ περιτέτμηνται.",
+        "NAB": "But the men will agree to live with us and form one kindred people with us only on this condition, that every male among us be circumcised as they themselves are.",
+        "SYN": "Только на том условии сии люди соглашаются жить с нами и быть одним народом, чтобы и у нас обрезан был весь мужеский пол, как они обрезаны.",
+        "NEO": "Mais ces hommes ne consentiront à habiter avec nous, pour devenir un même peuple, qu’à une condition, c’est que tout mâle parmi nous soit circoncis, comme ils sont eux-mêmes circoncis.",
+        "VAT_ES": "Pero esta gente accederá a permanecer con nosotros y a formar un solo pueblo, únicamente con esa condición: que todos nuestros varones se hagan circuncidar, igual que ellos.",
+        "CEI": "Ma solo ad una condizione questi uomini acconsentiranno ad abitare con noi, a diventare un sol popolo: se cioè noi circoncidiamo ogni nostro maschio come loro stessi sono circoncisi."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "מִקְנֵ/הֶ֤ם וְ/קִנְיָנָ/ם֙ וְ/כָל בְּהֶמְתָּ֔/ם הֲ/ל֥וֹא לָ֖/נוּ הֵ֑ם אַ֚ךְ נֵא֣וֹתָה לָ/הֶ֔ם וְ/יֵשְׁב֖וּ אִתָּֽ/נוּ׃",
+        "VUL": "Et substantia eorum, et pecora, et cuncta quæ possident, nostra erunt : tantum in hoc acquiescamus, et habitantes simul, unum efficiemus populum.",
+        "LXX": "καὶ τὰ κτήνη αὐτῶν καὶ τὰ ὑπάρχοντα καὶ τὰ τετράποδα αὐτῶν οὐχ ἡμῶν ἔσται; μόνον ἐν τούτῳ ὁμοιωθῶμεν αὐτοῖς, καὶ οἰκήσουσιν μεθ’ ἡμῶν.",
+        "NAB": "Would not the livestock they have acquired - all their animals - then be ours? Let us, therefore, give in to them, so that they may settle among us.\"",
+        "SYN": "Не для нас ли стада их, и имение их, и весь скот их? Только [в том] согласимся с ними, и будут жить с нами.",
+        "NEO": "Leurs troupeaux et leurs biens et toutes leurs bêtes de somme ne seront-ils pas à nous ? Seulement, accédons à leur désir et qu’ils s’établissent chez nous. »",
+        "VAT_ES": "&iquest;Acaso no van a ser nuestros su ganado, sus posesiones y todos sus animales? Pongámonos de acuerdo con ellos, y que se queden con nosotros».",
+        "CEI": "I loro armenti, la loro ricchezza e tutto il loro bestiame non saranno forse nostri? Accontentiamoli dunque e possano abitare con noi!\"."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁמְע֤וּ אֶל חֲמוֹר֙ וְ/אֶל שְׁכֶ֣ם בְּנ֔/וֹ כָּל יֹצְאֵ֖י שַׁ֣עַר עִיר֑/וֹ וַ/יִּמֹּ֨לוּ֙ כָּל זָכָ֔ר כָּל יֹצְאֵ֖י שַׁ֥עַר עִירֽ/וֹ׃",
+        "VUL": "Assensique sunt omnes, circumcisis cunctis maribus.",
+        "LXX": "καὶ εἰσήκουσαν Ἐμμὼρ καὶ Συχὲμ τοῦ υἱοῦ αὐτοῦ πάντες οἱ ἐκπορευόμενοι τὴν πύλην τῆς πόλεως αὐτῶν, καὶ περιετέμοντο τὴν σάρκα τῆς ἀκροβυστίας αὐτῶν πᾶς ἄρσην.",
+        "NAB": "All the able-bodied men of the town agreed with Hamor and his son Shechem, and all the males, including every able-bodied man in the community, were circumcised.",
+        "SYN": "И послушались Еммора и Сихема, сына его, все выходящие из ворот города его: и обрезан был весь мужеский пол, -- все выходящие из ворот города его.",
+        "NEO": "Tous ceux qui sortaient par la porte de la ville écoutèrent Hémor et Sichem, son fils, et tout mâle fut circoncis, tout homme sortant par la porte de la ville.",
+        "VAT_ES": "Todos los que se reunían en la puerta de la ciudad accedieron a la propuesta de Jamor y de su hijo Siquem, y todos se hicieron circuncidar.",
+        "CEI": "Allora quanti avevano accesso alla porta della sua città ascoltarono Camor e il figlio Sichem: tutti i maschi, quanti avevano accesso alla porta della città, si fecero circoncidere."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֩ בַ/יּ֨וֹם הַ/שְּׁלִישִׁ֜י בִּֽ/הְיוֹתָ֣/ם כֹּֽאֲבִ֗ים וַ/יִּקְח֣וּ שְׁנֵֽי בְנֵי יַ֠עֲקֹב שִׁמְע֨וֹן וְ/לֵוִ֜י אֲחֵ֤י דִינָה֙ אִ֣ישׁ חַרְבּ֔/וֹ וַ/יָּבֹ֥אוּ עַל הָ/עִ֖יר בֶּ֑טַח וַ/יַּֽהַרְג֖וּ כָּל זָכָֽר׃",
+        "VUL": "Et ecce, die tertio, quando gravissimus vulnerum dolor est : arreptis duo filii Jacob, Simeon et Levi fratres Dinæ, gladiis, ingressi sunt urbem confidenter : interfectisque omnibus masculis,",
+        "LXX": "ἐγένετο δὲ ἐν τῇ ἡμέρᾳ τῇ τρίτῃ ὅτε ἦσαν ἐν τῷ πόνῳ, ἔλαβον οἱ δύο υἱοὶ Ἰακὼβ Συμεὼν καὶ Λευί, ἀδελφοὶ Δείνας, ἕκαστος τὴν μάχαιραν αὐτοῦ, καὶ εἰσῆλθον εἰς τὴν πόλιν ἀσφαλῶς καὶ ἀπέκτειναν πᾶν ἀρσενικόν·",
+        "NAB": "On the third day, while they were still in pain, Dinah's full brothers Simeon and Levi, two of Jacob's sons, took their swords, advanced against the city without any trouble, and massacred all the males.",
+        "SYN": "На третий день, когда они были в болезни, два сына Иакова, Симеон и Левий, братья Динины, взяли каждый свой меч, и смело напали на город, и умертвили весь мужеский пол;",
+        "NEO": "Le troisième jour, lorsqu’ils étaient souffrants, deux fils de Jacob, Siméon et Lévi, frères de Dina, prirent chacun leur épée, marchèrent sans crainte sur la ville et tuèrent tous les mâles.",
+        "VAT_ES": "Al tercer día, cuando todavía estaban convalecientes, Simeón y Leví, dos de los hijos de Jacob, hermanos de Dina, empuñaron cada uno su espada, entraron en la ciudad sin encontrar ninguna resistencia, y mataron a todos los varones.",
+        "CEI": "Ma il terzo giorno, quand'essi erano sofferenti, i due figli di Giacobbe, Simeone e Levi, i fratelli di Dina, presero ciascuno una spada, entrarono nella città con sicurezza e uccisero tutti i maschi."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וְ/אֶת חֲמוֹר֙ וְ/אֶת שְׁכֶ֣ם בְּנ֔/וֹ הָרְג֖וּ לְ/פִי חָ֑רֶב וַ/יִּקְח֧וּ אֶת דִּינָ֛ה מִ/בֵּ֥ית שְׁכֶ֖ם וַ/יֵּצֵֽאוּ׃",
+        "VUL": "Hemor et Sichem pariter necaverunt, tollentes Dinam de domo Sichem sororem suam.",
+        "LXX": "τόν τε Ἐμμὼρ καὶ τὸν Συχὲμ τὸν υἱὸν αὐτοῦ ἀπέκτειναν ἐν στόματι μαχαίρας, καὶ ἔλαβον τὴν Δεινὰ ἐκ τοῦ οἴκου τοῦ Συχέμ, καὶ ἐξῆλθον.",
+        "NAB": "After they had put Hamor and his son Shechem to the sword, they took Dinah from Shechem's house and left.",
+        "SYN": "и самого Еммора и Сихема, сына его, убили мечом; и взяли Дину из дома Сихемова и вышли.",
+        "NEO": "Ils passèrent aussi au fil de l’épée Hémor et Sichem, son fils ; et, ayant enlevé Dina de la maison de Sichem, ils sortirent.",
+        "VAT_ES": "También pasaron al filo de la espada a Jamor y a su hijo Siquem, rescataron a Dina, que estaba en la casa de Siquem, y se fueron.",
+        "CEI": "Passarono così a fil di spada Camor e suo figlio Sichem, portarono via Dina dalla casa di Sichem e si allontanarono."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "בְּנֵ֣י יַעֲקֹ֗ב בָּ֚אוּ עַל הַ֣/חֲלָלִ֔ים וַ/יָּבֹ֖זּוּ הָ/עִ֑יר אֲשֶׁ֥ר טִמְּא֖וּ אֲחוֹתָֽ/ם׃",
+        "VUL": "Quibus egressis, irruerunt super occisos ceteri filii Jacob : et depopulati sunt urbem in ultionem stupri.",
+        "LXX": "οἱ δὲ υἱοὶ Ἰακὼβ εἰσῆλθον ἐπὶ τοὺς τραυματίας, καὶ διήρπασαν τὴν πόλιν, ἐν ᾗ ἐμίαναν Δείναν τὴν ἀδελφὴν αὐτῶν·",
+        "NAB": "Then the other sons of Jacob followed up the slaughter and sacked the city in reprisal for their sister Dinah's defilement.",
+        "SYN": "Сыновья Иакова пришли к убитым и разграбили город за то, что обесчестили [Дину] сестру их.",
+        "NEO": "Les fils de Jacob se jetèrent sur les morts et pillèrent la ville, parce qu’on avait déshonoré leur sœur.",
+        "VAT_ES": "Los hijos de Jacob pasaron sobre los cadáveres y saquearon la ciudad, en represalia por el ultraje cometido contra su hermana Dina.",
+        "CEI": "I figli di Giacobbe si buttarono sui cadaveri e saccheggiarono la città, perché quelli avevano disonorato la loro sorella."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "אֶת צֹאנָ֥/ם וְ/אֶת בְּקָרָ֖/ם וְ/אֶת חֲמֹרֵי/הֶּ֑ם וְ/אֵ֧ת אֲשֶׁר בָּ/עִ֛יר וְ/אֶת אֲשֶׁ֥ר בַּ/שָּׂדֶ֖ה לָקָֽחוּ׃",
+        "VUL": "Oves eorum, et armenta, et asinos, cunctaque vastantes quæ in domibus et in agris erant,",
+        "LXX": "καὶ τὰ πρόβατα αὐτῶν καὶ τοὺς βόας αὐτῶν καὶ τοὺς ὄνους αὐτῶν, ὅσα τε ἦν ἐν τῇ πόλει καὶ ὅσα ἦν ἐν τῷ πεδίῳ, ἔλαβον.",
+        "NAB": "They seized their flocks, herds and asses, whatever was in the city and in the country around.",
+        "SYN": "Они взяли мелкий и крупный скот их, и ослов их, и что ни было в городе, и что ни было в поле;",
+        "NEO": "Ils prirent leurs brebis, leurs bœufs et leurs ânes, ce qui était dans la ville et ce qui était dans les champs.",
+        "VAT_ES": "Se apoderaron de sus ovejas, de sus vacas, de sus asnos, y de todo lo que había dentro y fuera de la ciudad,",
+        "CEI": "Presero così i loro greggi e i loro armenti, i loro asini e quanto era nella città e nella campagna."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "וְ/אֶת כָּל חֵילָ֤/ם וְ/אֶת כָּל טַפָּ/ם֙ וְ/אֶת נְשֵׁי/הֶ֔ם שָׁב֖וּ וַ/יָּבֹ֑זּוּ וְ/אֵ֖ת כָּל אֲשֶׁ֥ר בַּ/בָּֽיִת׃",
+        "VUL": "parvulos quoque eorum et uxores duxerunt captivas.",
+        "LXX": "καὶ πάντα τὰ σώματα αὐτῶν καὶ πᾶσαν τὴν ἀποσκευὴν αὐτῶν καὶ τὰς γυναῖκας αὐτῶν ᾐχμαλώτευσαν· καὶ διήρπασαν ὅσα τε ἦν ἐν τῇ πόλει καὶ ὅσα ἦν ἐν ταῖς οἰκίαις.",
+        "NAB": "They carried off all their wealth, their women, and their children, and took for loot whatever was in the houses.",
+        "SYN": "и все богатство их, и всех детей их, и жен их взяли в плен, и разграбили всё, что было в [городе, и всё, что было в] домах.",
+        "NEO": "Ils emmenèrent comme butin tous leurs biens, leurs enfants et leurs femmes, et tout ce qui se trouvait dans les maisons.",
+        "VAT_ES": "y de todos sus bienes. Se llevaron cautivos a todos los niños y a las mujeres, y saquearon todo lo que había en las casas.",
+        "CEI": "Portarono via come bottino tutte le loro ricchezze, tutti i loro bambini e le loro donne e saccheggiarono quanto era nelle case."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר יַעֲקֹ֜ב אֶל שִׁמְע֣וֹן וְ/אֶל לֵוִי֮ עֲכַרְתֶּ֣ם אֹתִ/י֒ לְ/הַבְאִישֵׁ֨/נִי֙ בְּ/יֹשֵׁ֣ב הָ/אָ֔רֶץ בַּֽ/כְּנַעֲנִ֖י וּ/בַ/פְּרִזִּ֑י וַ/אֲנִי֙ מְתֵ֣י מִסְפָּ֔ר וְ/נֶאֶסְפ֤וּ עָלַ/י֙ וְ/הִכּ֔וּ/נִי וְ/נִשְׁמַדְתִּ֖י אֲנִ֥י וּ/בֵיתִֽ/י׃",
+        "VUL": "Quibus patratis audacter, Jacob dixit ad Simeon et Levi : Turbastis me, et odiosum fecistis me Chananæis, et Pherezæis habitatoribus terræ hujus : nos pauci sumus ; illi congregati percutient me, et delebor ego, et domus mea.",
+        "LXX": "εἶπεν δὲ Ἰακὼβ Συμεὼν καὶ Λευί Μισητόν με πεποιήκατε, ὥστε πονηρόν με εἶναι τοῖς κατοικοῦσιν τὴν γῆν, ἔν τε τοῖς Χαναναίοις καὶ τοῖς Φερεζαίοις· ἐγὼ δὲ ὀλιγοστός εἰμι ἐν ἀριθμῷ, καὶ συναχθέντες ἐπ’ ἐμὲ συγκόψουσίν με, καὶ ἐκτρίβομαι ἐγὼ καὶ ὁ οἶκός μου.",
+        "NAB": "Jacob said to Simeon and Levi: \"You have brought trouble upon me by making me loathsome to the inhabitants of the land, the Canaanites and the Perizzites. I have so few men that, if these people unite against me and attack me, I and my family will be wiped out.\"",
+        "SYN": "И сказал Иаков Симеону и Левию: вы возмутили меня, сделав меня ненавистным для [всех] жителей сей земли, для Хананеев и Ферезеев. У меня людей мало; соберутся против меня, поразят меня, и истреблен буду я и дом мой.",
+        "NEO": "Alors Jacob dit à Siméon et à Lévi : « Vous m’avez troublé, en me rendant odieux aux habitants du pays, aux Chananéens et aux Phérézéens. Je n’ai avec moi que peu de gens ; ils s’assembleront contre moi et me tueront, et je serai détruit, moi et ma maison. »",
+        "VAT_ES": "Entonces Jacob dijo a Simeón y a Leví: «Ustedes me han puesto en un grave aprieto, haciéndome odioso a los cananeos y perizitas que habitan en este país. Yo dispongo de pocos hombres, y si ellos se unen contra mí y me atacan, seré aniquilado con toda mi familia».",
+        "CEI": "Allora Giacobbe disse a Simeone e a Levi: \"Voi mi avete messo in difficoltà, rendendomi odioso agli abitanti del paese, ai Cananei e ai Perizziti, mentre io ho pochi uomini; essi si raduneranno contro di me, mi vinceranno e io sarò annientato con la mia casa\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמְר֑וּ הַ/כְ/זוֹנָ֕ה יַעֲשֶׂ֖ה אֶת אֲחוֹתֵֽ/נוּ׃",
+        "VUL": "Responderunt : Numquid ut scorto abuti debuere sorore nostra ?",
+        "LXX": "οἱ δὲ εἶπαν Ἀλλ’ ὡσεὶ πόρνῃ χρήσωνται τῇ ἀδελφῇ ἡμῶν;",
+        "NAB": "But they retorted, \"Should our sister have been treated like a harlot?\"",
+        "SYN": "Они же сказали: а разве можно поступать с сестрою нашею, как с блудницею!",
+        "NEO": "Ils répondirent : « Traitera-t-on notre sœur comme une prostituée ? »",
+        "VAT_ES": "Pero ellos replicaron: «Y nuestra hermana, &iquest;debía ser tratada como una prostituta?».",
+        "CEI": "Risposero: \"Si tratta forse la nostra sorella come una prostituta?\"."
+      }
+    }
+  }
+}

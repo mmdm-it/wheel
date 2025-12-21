@@ -1,0 +1,572 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PROV_021",
+  "book_key": "PROV",
+  "sequence": 21,
+  "chapter_in": {
+    "MT": 21,
+    "VUL": 21,
+    "LXX": 21
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "פַּלְגֵי מַ֣יִם לֶב מֶ֭לֶךְ בְּ/יַד יְהוָ֑ה עַֽל כָּל אֲשֶׁ֖ר יַחְפֹּ֣ץ יַטֶּֽ/נּוּ׃",
+        "LXX": "ὥσπερ ὁρμὴ ὕδατος, οὕτως καρδία βασιλέως ἐν χειρὶ θεοῦ· οὗ ἐὰν θέλων νεῦσαι, ἐκεῖ ἔκλινεν αὐτήν.",
+        "VUL": "[Sicut divisiones aquarum, ita cor regis in manu Domini :/ quocumque voluerit, inclinabit illud./",
+        "SYN": "Сердце царя - в руке Господа, как потоки вод: куда захочет, Он направляет его.",
+        "NEO": "Le cœur du roi est un cours d’eau dans la main de \\+w Yahweh|strong=\"H3068\"\\+w**, il l’incline partout où il veut.",
+        "NAB": "Like a stream is the king's heart in the hand of the LORD; wherever it pleases him, he directs it.",
+        "VAT_ES": "El corazón del rey es una corriente de agua en manos del Señor: él lo dirige hacia donde quiere.",
+        "CEI": "Il cuore del re è un canale d'acqua in mano al Signore: lo dirige dovunque egli vuole."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "כָּֽל דֶּרֶךְ אִ֭ישׁ יָשָׁ֣ר בְּ/עֵינָ֑י/ו וְ/תֹכֵ֖ן לִבּ֣וֹת יְהוָֽה׃",
+        "LXX": "πᾶς ἀνὴρ φαίνεται ἑαυτῷ δίκαιος, κατευθύνει δὲ καρδίας Κύριος.",
+        "VUL": "Omnis via viri recta sibi videtur :/ appendit autem corda Dominus./",
+        "SYN": "Всякий путь человека прям в глазах его; но Господь взвешивает сердца.",
+        "NEO": "Toutes les voies de l’homme sont droites à ses yeux ; mais celui qui pèse les cœurs, c’est \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "All the ways of a man may be right in his own eyes, but it is the LORD who proves hearts.",
+        "VAT_ES": "Al hombre le parece que todo su camino es recto, pero el Señor pesa los corazones.",
+        "CEI": "Agli occhi dell'uomo tutte le sue vie sono rette, ma chi pesa i cuori è il Signore."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "עֲ֭שֹׂה צְדָקָ֣ה וּ/מִשְׁפָּ֑ט נִבְחָ֖ר לַ/יהוָ֣ה מִ/זָּֽבַח׃",
+        "LXX": "ποιεῖν δίκαια καὶ ἀληθεύειν ἀρεστὰ παρὰ θεῷ μᾶλλον ἢ θυσιῶν αἷμα.",
+        "VUL": "Facere misericordiam et judicium/ magis placet Domino quam victimæ./",
+        "SYN": "Соблюдение правды и правосудия более угодно Господу, нежели жертва.",
+        "NEO": "Pratiquer la justice et l’équité, est aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w** préférable aux sacrifices.",
+        "NAB": "To do what is right and just is more acceptable to the LORD than sacrifice.",
+        "VAT_ES": "Practicar la justicia y el derecho agrada al Señor más que los sacrificios.",
+        "CEI": "Praticare la giustizia e l'equità per il Signore vale più di un sacrificio."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "רוּם עֵ֭ינַיִם וּ/רְחַב לֵ֑ב נִ֖ר רְשָׁעִ֣ים חַטָּֽאת׃",
+        "LXX": "μεγαλόφρων ἐφ’ ὕβρει θρασυκάρδιος· λαμπτὴρ δὲ ἀσεβῶν ἁμαρτία.",
+        "VUL": "Exaltatio oculorum est dilatatio cordis ;/ lucerna impiorum peccatum./",
+        "SYN": "Гордость очей и надменность сердца, отличающие нечестивых, - грех.",
+        "NEO": "Des regards hautains et un cœur superbe : flambeau des méchants, ce n’est que péché.",
+        "NAB": "Haughty eyes and a proud heart - the tillage of the wicked is sin.",
+        "VAT_ES": "Los ojos altaneros, el corazón arrogante, la luz de los malvados: todo eso es pecado.",
+        "CEI": "Occhi alteri e cuore superbo, lucerna degli empi, è il peccato."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "מַחְשְׁב֣וֹת חָ֭רוּץ אַךְ לְ/מוֹתָ֑ר וְ/כָל אָ֝֗ץ אַךְ לְ/מַחְסֽוֹר׃",
+        "VUL": "Cogitationes robusti semper in abundantia ;/ omnis autem piger semper in egestate est.]",
+        "SYN": "Помышления прилежного стремятся к изобилию, а всякий торопливый терпит лишение.",
+        "NEO": "Les projets de l’homme diligent ne vont qu’à l’abondance ; mais quiconque précipite ses démarches n’arrive qu’à la disette.",
+        "NAB": "The plans of the diligent are sure of profit, but all rash haste leads certainly to poverty.",
+        "VAT_ES": "Los proyectos del hombre laborioso son pura ganancia, el que se precipita acaba en la indigencia.",
+        "CEI": "I piani dell'uomo diligente si risolvono in profitto, ma chi è precipitoso va verso l'indigenza."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "פֹּ֣עַל א֭וֹצָרוֹת בִּ/לְשׁ֣וֹן שָׁ֑קֶר הֶ֥בֶל נִ֝דָּ֗ף מְבַקְשֵׁי מָֽוֶת׃",
+        "LXX": "ὁ ἐνεργῶν θησαυρίσματα γλώσσῃ ψευδεῖ μάταια διώκει ἐπὶ παγίδας θανάτου.",
+        "VUL": "[Qui congregat thesauros lingua mendacii vanus et excors est,/ et impingetur ad laqueos mortis./",
+        "SYN": "Приобретение сокровища лживым языком - мимолетное дуновение ищущих смерти.",
+        "NEO": "Des trésors acquis par une langue mensongère : vanité fugitive d’hommes qui courent à la mort.",
+        "NAB": "He who makes a fortune by a lying tongue is chasing a bubble over deadly snares.",
+        "VAT_ES": "Tesoros adquiridos con engaños son ilusión fugaz de los que buscan la muerte.",
+        "CEI": "Accumular tesori a forza di menzogne è vanità effimera di chi cerca la morte."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "שֹׁד רְשָׁעִ֥ים יְגוֹרֵ֑/ם כִּ֥י מֵ֝אֲנ֗וּ לַ/עֲשׂ֥וֹת מִשְׁפָּֽט׃",
+        "LXX": "ὄλεθρος ἀσεβέσιν ἐπιξενωθήσεται, οὐ γὰρ βούλονται πράσσειν τὰ δίκαια.",
+        "VUL": "Rapinæ impiorum detrahent eos,/ quia noluerunt facere judicium./",
+        "SYN": "Насилие нечестивых обрушится на них, потому что они отреклись соблюдать правду.",
+        "NEO": "La violence des méchants les égare, parce qu’ils n’ont pas voulu pratiquer la justice.",
+        "NAB": "The oppression of the wicked will sweep them away, because they refuse to do what is right.",
+        "VAT_ES": "La rapiña de los malvados los arrastra a ellos mismos, porque se niegan a practicar el derecho.",
+        "CEI": "La violenza degli empi li travolge, perché rifiutano di praticare la giustizia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "הֲפַכְפַּ֬ךְ דֶּ֣רֶךְ אִ֣ישׁ וָזָ֑ר וְ֝/זַ֗ךְ יָשָׁ֥ר פָּעֳלֽ/וֹ׃",
+        "LXX": "πρὸς τοὺς σκολιοὺς σκολιὰς ὁδοὺς ἀποστέλλει ὁ θεός, ἁγνὰ γὰρ καὶ ὀρθὰ τὰ ἔργα αὐτοῦ.",
+        "VUL": "Perversa via viri aliena est ;/ qui autem mundus est, rectum opus ejus./",
+        "SYN": "Превратен путь человека развращенного; а кто чист, того действие прямо.",
+        "NEO": "La voie du criminel est tortueuse, mais l’innocent agit avec droiture.",
+        "NAB": "The way of the culprit is crooked, but the conduct of the innocent is right.",
+        "VAT_ES": "Tortuoso es el camino del criminal, pero el que es puro obra con rectitud.",
+        "CEI": "La via dell'uomo criminale è tortuosa, ma l'innocente è retto nel suo agire."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "ט֗וֹב לָ/שֶׁ֥בֶת עַל פִּנַּת גָּ֑ג מֵ/אֵ֥שֶׁת מִ֝דְיָנִ֗ים וּ/בֵ֥ית חָֽבֶר׃",
+        "LXX": "κρεῖσσον οἰκεῖν ἐπὶ γωνίας ὑπαίθρου ἢ ἐν κεκονιαμένοις μετὰ ἀδικίας καὶ ἐν οἴκῳ κοινῷ.",
+        "VUL": "Melius est sedere in angulo domatis,/ quam cum muliere litigiosa, et in domo communi./",
+        "SYN": "Лучше жить в углу на кровле, нежели со сварливою женою в пространном доме.",
+        "NEO": "Mieux vaut habiter à l’angle d’un toit, que de rester avec une femme querelleuse.",
+        "NAB": "It is better to dwell in a corner of the housetop than in a roomy house with a quarrelsome woman.",
+        "VAT_ES": "Más vale habitar en un rincón del techo que compartir la casa con una mujer pendenciera.",
+        "CEI": "È meglio abitare su un angolo del tetto che avere una moglie litigiosa e casa in comune."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "נֶ֣פֶשׁ רָ֭שָׁע אִוְּתָה רָ֑ע לֹא יֻחַ֖ן בְּ/עֵינָ֣י/ו רֵעֵֽ/הוּ׃",
+        "LXX": "ψυχὴ ἀσεβοῦς οὐκ ἐλεηθήσεται ὑπ’ οὐδενὸς τῶν ἀνθρώπων.",
+        "VUL": "Anima impii desiderat malum :/ non miserebitur proximo suo./",
+        "SYN": "Душа нечестивого желает зла: не найдет милости в глазах его и друг его.",
+        "NEO": "L’âme du méchant désire le mal ; son ami ne trouve pas grâce à ses yeux.",
+        "NAB": "The soul of the wicked man desires evil; his neighbor finds no pity in his eyes.",
+        "VAT_ES": "El alma del malvado desea el mal, él no se apiada de su prójimo.",
+        "CEI": "L'anima del malvagio desidera far il male e ai suoi occhi il prossimo non trova pietà."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "בַּ/עְנָשׁ לֵ֭ץ יֶחְכַּם פֶּ֑תִי וּ/בְ/הַשְׂכִּ֥יל לְ֝/חָכָ֗ם יִקַּח דָּֽעַת׃",
+        "LXX": "ζημιουμένου ἀκολάστου πανουργότερος γίνεται ὁ κακός, συνίων δὲ σοφὸς δέξεται γνῶσιν.",
+        "VUL": "Mulctato pestilente, sapientior erit parvulus,/ et si sectetur sapientem, sumet scientiam./",
+        "SYN": "Когда наказывается кощунник, простой делается мудрым; и когда вразумляется мудрый, то он приобретает знание.",
+        "NEO": "Quand on châtie le méchant, le simple devient sage, et quand on instruit le sage, il devient plus sage.",
+        "NAB": "When the arrogant man is punished, the simple are the wiser; when the wise man is instructed, he gains knowledge.",
+        "VAT_ES": "El simple se hace sabio cuando se castiga al insolente, y asimila la ciencia cuando se instruye al sabio.",
+        "CEI": "Quando il beffardo vien punito, l'inesperto diventa saggio e quando il saggio viene istruito, accresce il sapere."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "מַשְׂכִּ֣יל צַ֭דִּיק לְ/בֵ֣ית רָשָׁ֑ע מְסַלֵּ֖ף רְשָׁעִ֣ים לָ/רָֽע׃",
+        "LXX": "συνίει δίκαιος καρδίας ἀσεβῶν καὶ φαυλίζει ἀσεβεῖς ἐν κακοῖς.",
+        "VUL": "Excogitat justus de domo impii,/ ut detrahat impios a malo.]",
+        "SYN": "Праведник наблюдает за домом нечестивого: как повергаются нечестивые в несчастие.",
+        "NEO": "Le juste considère la maison du méchant ; Dieu précipite les méchants dans le malheur.",
+        "NAB": "The just man appraises the house of the wicked: there is one who brings down the wicked to ruin.",
+        "VAT_ES": "El justo observa la casa del malvado, y precipita en la desgracia a los malos.",
+        "CEI": "Il Giusto osserva la casa dell'empio e precipita gli empi nella sventura."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "אֹטֵ֣ם אָ֭זְנ/וֹ מִ/זַּעֲקַת דָּ֑ל גַּֽם ה֥וּא יִ֝קְרָ֗א וְ/לֹ֣א יֵעָנֶֽה׃",
+        "LXX": "ὃς φράσσει τὰ ὦτα τοῦ μὴ ἐπακοῦσαι ἀσθενοῦς, καὶ αὐτὸς ἐπικαλέσεται καὶ οὐκ ἔσται ὁ εἰσακούων.",
+        "VUL": "[Qui obturat aurem suam ad clamorem pauperis,/ et ipse clamabit, et non exaudietur./",
+        "SYN": "Кто затыкает ухо свое от вопля бедного, тот и сам будет вопить, - и не будет услышан.",
+        "NEO": "Celui qui ferme l’oreille au cri du pauvre criera lui-même sans qu’on lui réponde.",
+        "NAB": "He who shuts his ear to the cry of the poor will himself also call and not be heard.",
+        "VAT_ES": "El que cierra los oídos al clamor del débil llamará y no se le responderá.",
+        "CEI": "Chi chiude l'orecchio al grido del povero invocherà a sua volta e non otterrà risposta."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "מַתָּ֣ן בַּ֭/סֵּתֶר יִכְפֶּה אָ֑ף וְ/שֹׁ֥חַד בַּ֝/חֵ֗ק חֵמָ֥ה עַזָּֽה׃",
+        "LXX": "δόσις λάθριος ἀνατρέπει ὀργάς, δώρων δὲ ὁ φειδόμενος θυμὸν ἐγείρει ἰσχυρόν.",
+        "VUL": "Munus absconditum extinguit iras,/ et donum in sinu indignationem maximam./",
+        "SYN": "Подарок тайный тушит гнев, и дар в пазуху - сильную ярость.",
+        "NEO": "Un don fait en secret apaise la colère, un présent tiré du pli du manteau calme la fureur violente.",
+        "NAB": "A secret gift allays anger, and a concealed present, violent wrath.",
+        "VAT_ES": "Un reglo hecho a escondidas aplaca la ira y un obsequio bajo cuerda, la furia violenta.",
+        "CEI": "Un regalo fatto in segreto calma la collera, un dono di sotto mano placa il furore violento."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "שִׂמְחָ֣ה לַ֭/צַּדִּיק עֲשׂ֣וֹת מִשְׁפָּ֑ט וּ֝/מְחִתָּ֗ה לְ/פֹ֣עֲלֵי אָֽוֶן׃",
+        "LXX": "εὐφροσύνη δικαίων ποιεῖ κρίμα, ὅσιος δὲ ἀκάθαρτος παρὰ κακούργοις.",
+        "VUL": "Gaudium justo est facere judicium,/ et pavor operantibus iniquitatem./",
+        "SYN": "Соблюдение правосудия - радость для праведника и страх для делающих зло.",
+        "NEO": "C’est une joie pour le juste de pratiquer la justice, mais l’épouvante est pour ceux qui font le mal.",
+        "NAB": "To practice justice is a joy for the just, but terror for evildoers.",
+        "VAT_ES": "Practicar la justicia es una alegría para el justo, pero es una calamidad para los malhechores.",
+        "CEI": "È una gioia per il giusto che sia fatta giustizia, mentre è un terrore per i malfattori."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "אָדָ֗ם תּ֭וֹעֶה מִ/דֶּ֣רֶךְ הַשְׂכֵּ֑ל בִּ/קְהַ֖ל רְפָאִ֣ים יָנֽוּחַ׃",
+        "LXX": "ἀνὴρ πλανώμενος ἐξ ὁδοῦ δικαιοσύνης ἐν συναγωγῇ γιγάντων ἀναπαύσεται.",
+        "VUL": "Vir qui erraverit a via doctrinæ/ in ctu gigantum commorabitur./",
+        "SYN": "Человек, сбившийся с пути разума, водворится в собрании мертвецов.",
+        "NEO": "L’homme qui s’écarte du sentier de la prudence reposera dans l’assemblée des morts.",
+        "NAB": "The man who strays from the way of good sense will abide in the assembly of the shades.",
+        "VAT_ES": "El que se extravía del camino de la prudencia descansará en la Asamblea de las Sombras.",
+        "CEI": "L'uomo che si scosta dalla via della saggezza, riposerà nell'assemblea delle ombre dei morti."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "אִ֣ישׁ מַ֭חְסוֹר אֹהֵ֣ב שִׂמְחָ֑ה אֹהֵ֥ב יַֽיִן וָ֝/שֶׁ֗מֶן לֹ֣א יַעֲשִֽׁיר׃",
+        "LXX": "ἀνὴρ ἐνδεὴς ἀγαπᾷ εὐφροσύνην, φιλῶν οἶνον καὶ ἔλαιον εἰς πλοῦτον·",
+        "VUL": "Qui diligit epulas in egestate erit ;/ qui amat vinum et pinguia non ditabitur./",
+        "SYN": "Кто любит веселье, обеднеет; а кто любит вино и тук, не разбогатеет.",
+        "NEO": "Celui qui aime la joie sera indigent ; celui qui aime le vin et l’huile parfumée ne s’enrichit pas.",
+        "NAB": "He who loves pleasure will suffer want; he who loves wine and perfume will not be rich.",
+        "VAT_ES": "El que ama el placer termina en la indigencia, el que ama el vino y la buena vida no se enriquecerá.",
+        "CEI": "Diventerà indigente chi ama i piaceri e chi ama vino e profumi non arricchirà."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "כֹּ֣פֶר לַ/צַּדִּ֣יק רָשָׁ֑ע וְ/תַ֖חַת יְשָׁרִ֣ים בּוֹגֵֽד׃",
+        "LXX": "περικάθαρμα δὲ δικαίου ἄνομος.",
+        "VUL": "Pro justo datur impius,/ et pro rectis iniquus./",
+        "SYN": "Выкупом будет за праведного нечестивый и за прямодушного - лукавый.",
+        "NEO": "Le méchant sert de rançon pour le juste, et le perfide pour les hommes droits.",
+        "NAB": "The wicked man serves as ransom for the just, and the faithless man for the righteous.",
+        "VAT_ES": "El malvado servirá de rescate por el justo y el traidor, por los hombres rectos.",
+        "CEI": "Il malvagio serve da riscatto per il giusto e il perfido per gli uomini retti."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "ט֗וֹב שֶׁ֥בֶת בְּ/אֶֽרֶץ מִדְבָּ֑ר מֵ/אֵ֖שֶׁת מדונים מִדְיָנִ֣ים וָ/כָֽעַס׃",
+        "LXX": "κρεῖσσον οἰκεῖν ἐν τῇ ἐρήμῳ ἢ μετὰ γυναικὸς γλωσσώδους καὶ μαχίμου καὶ ὀργίλου.",
+        "VUL": "Melius est habitare in terra deserta/ quam cum muliere rixosa et iracunda./",
+        "SYN": "Лучше жить в земле пустынной, нежели с женою сварливою и сердитою.",
+        "NEO": "Mieux vaut habiter dans une terre déserte qu’avec une femme querelleuse et colère.",
+        "NAB": "It is better to dwell in a wilderness than with a quarrelsome and vexatious wife.",
+        "VAT_ES": "Más vale habitar en un país desierto que con una mujer pendenciera y de mal genio.",
+        "CEI": "Meglio abitare in un deserto che con una moglie litigiosa e irritabile."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "אוֹצָ֤ר נֶחְמָ֣ד וָ֭/שֶׁמֶן בִּ/נְוֵ֣ה חָכָ֑ם וּ/כְסִ֖יל אָדָ֣ם יְבַלְּעֶֽ/נּוּ׃",
+        "LXX": "θησαυρὸς ἐπιθυμητὸς ἀναπαύσεται ἐπὶ στόματος σοφοῦ, ἄφρονες δὲ ἄνδρες καταπίονται αὐτόν.",
+        "VUL": "Thesaurus desiderabilis, et oleum in habitaculo justi :/ et imprudens homo dissipabit illud./",
+        "SYN": "Вожделенное сокровище и тук - в доме мудрого; а глупый человек расточает их.",
+        "NEO": "De précieux trésors, de l’huile sont dans la maison du sage ; mais un homme insensé les engloutit.",
+        "NAB": "Precious treasure remains in the house of the wise, but the fool consumes it.",
+        "VAT_ES": "En la morada del sabio hay tesoros preciosos y perfume, pero el necio se los devora.",
+        "CEI": "Tesori preziosi e profumi sono nella dimora del saggio, ma lo stolto dilapida tutto."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "רֹ֭דֵף צְדָקָ֣ה וָ/חָ֑סֶד יִמְצָ֥א חַ֝יִּ֗ים צְדָקָ֥ה וְ/כָבֽוֹד׃",
+        "LXX": "ὁδὸς δικαιοσύνης καὶ ἐλεημοσύνης εὑρήσει ζωὴν καὶ δόξαν.",
+        "VUL": "Qui sequitur justitiam et misericordiam/ inveniet vitam, justitiam, et gloriam./",
+        "SYN": "Соблюдающий правду и милость найдет жизнь, правду и славу.",
+        "NEO": "Celui qui poursuit la justice et la miséricorde trouvera la vie, la justice et la gloire.",
+        "NAB": "He who pursues justice and kindness will find life and honor.",
+        "VAT_ES": "El que va tras la justicia y la fidelidad encontrará vida, justicia y honor.",
+        "CEI": "Chi segue la giustizia e la misericordia troverà vita e gloria."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "עִ֣יר גִּ֭בֹּרִים עָלָ֣ה חָכָ֑ם וַ֝/יֹּ֗רֶד עֹ֣ז מִבְטֶחָֽ/ה׃",
+        "LXX": "πόλεις ὀχυρὰς ἐπέβη σοφὸς καὶ καθεῖλεν τὸ ὀχύρωμα ἐφ’ ᾧ ἐπεποίθεισαν οἱ ἀσεβεῖς.",
+        "VUL": "Civitatem fortium ascendit sapiens,/ et destruxit robur fiduciæ ejus./",
+        "SYN": "Мудрый входит в город сильных и ниспровергает крепость, на которую они надеялись.",
+        "NEO": "Le sage prend d’assaut une ville de héros, et il renverse le rempart où elle mettait sa confiance.",
+        "NAB": "The wise man storms a city of the mighty, and overthrows the stronghold in which it trusts.",
+        "VAT_ES": "El sabio toma por asalto una ciudad de valientes, y abate la fuerza en que ella confiaba.",
+        "CEI": "Il saggio assale una città di guerrieri e abbatte la fortezza in cui essa confidava."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "שֹׁמֵ֣ר פִּ֭י/ו וּ/לְשׁוֹנ֑/וֹ שֹׁמֵ֖ר מִ/צָּר֣וֹת נַפְשֽׁ/וֹ׃",
+        "LXX": "ὃς φυλάσσει τὸ στόμα αὐτοῦ καὶ τὴν γλῶσσαν, διατηρεῖ ἐκ θλίψεως τὴν ψυχὴν αὐτοῦ.",
+        "VUL": "Qui custodit os suum et linguam suam/ custodit ab angustiis animam suam./",
+        "SYN": "Кто хранит уста свои и язык свой, тот хранит от бед душу свою.",
+        "NEO": "Celui qui garde sa bouche et sa langue garde son âme des angoisses.",
+        "NAB": "He who guards his mouth and his tongue keeps himself from trouble.",
+        "VAT_ES": "El que guarda su boca y su lengua guarda su vida de las angustias.",
+        "CEI": "Chi custodisce la bocca e la lingua preserva se stesso dai dispiaceri."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "זֵ֣ד יָ֭הִיר לֵ֣ץ שְׁמ֑/וֹ ע֝וֹשֶׂ֗ה בְּ/עֶבְרַ֥ת זָדֽוֹן׃",
+        "LXX": "θρασὺς καὶ αὐθάδης καὶ ἀλαζὼν λοιμὸς καλεῖται, ὃς δὲ μνησικακεῖ παράνομος.",
+        "VUL": "Superbus et arrogans vocatur indoctus,/ qui in ira operatur superbiam./",
+        "SYN": "Надменный злодей - кощунник имя ему - действует в пылу гордости.",
+        "NEO": "On appelle moqueur l’homme hautain, enflé d’orgueil, qui agit avec un excès d’arrogance.",
+        "NAB": "Arrogant is the name for the man of overbearing pride who acts with scornful effrontery.",
+        "VAT_ES": "Insolente se lama al arrogante y altanero que actúa con excesiva soberbia.",
+        "CEI": "Il superbo arrogante si chiama beffardo, egli agisce nell'eccesso dell'insolenza."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "תַּאֲוַ֣ת עָצֵ֣ל תְּמִיתֶ֑/נּוּ כִּֽי מֵאֲנ֖וּ יָדָ֣י/ו לַ/עֲשֽׂוֹת׃",
+        "LXX": "ἐπιθυμίαι ὀκνηρὸν ἀποκτείνουσιν, οὐ γὰρ προαιροῦνται αἱ χεῖρες αὐτοῦ ποιεῖν τι.",
+        "VUL": "Desideria occidunt pigrum :/ noluerunt enim quidquam manus ejus operari./",
+        "SYN": "Алчба ленивца убьет его, потому что руки его отказываются работать;",
+        "NEO": "Les désirs du paresseux le tuent, parce que ses mains refusent de travailler.",
+        "NAB": "The sluggard's propensity slays him, for his hands refuse to work.",
+        "VAT_ES": "El deseo mata al perezoso, porque sus manos se niegan a trabajar.",
+        "CEI": "I desideri del pigro lo portano alla morte, perché le sue mani rifiutano di lavorare."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "כָּל הַ֭/יּוֹם הִתְאַוָּ֣ה תַאֲוָ֑ה וְ/צַדִּ֥יק יִ֝תֵּ֗ן וְ/לֹ֣א יַחְשֹֽׂךְ׃",
+        "LXX": "ἀσεβὴς ἐπιθυμεῖ ὅλην τὴν ἡμέραν ἐπιθυμίας κακάς, ὁ δὲ δίκαιος ἐλεᾷ καὶ οἰκτείρει ἀφειδῶς.",
+        "VUL": "Tota die concupiscit et desiderat ;/ qui autem justus est, tribuet, et non cessabit./",
+        "SYN": "всякий день он сильно алчет, а праведник дает и не жалеет.",
+        "NEO": "Tout le jour il désire avec ardeur, mais le juste donne sans relâche.",
+        "NAB": "Some are consumed with avarice all the day, but the just man gives unsparingly.",
+        "VAT_ES": "El malvado ambiciona todo el día, pero el justo da sin rehusar jamás.",
+        "CEI": "Tutta la vita l'empio indulge alla cupidigia, mentre il giusto dona senza risparmiare."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "זֶ֣בַח רְ֭שָׁעִים תּוֹעֵבָ֑ה אַ֝֗ף כִּֽי בְ/זִמָּ֥ה יְבִיאֶֽ/נּוּ׃",
+        "LXX": "θυσίαι ἀσεβῶν βδέλυγμα Κυρίῳ, καὶ γὰρ παρανόμως προσφέρουσιν αὐτάς.",
+        "VUL": "Hostiæ impiorum abominabiles,/ quia offeruntur ex scelere./",
+        "SYN": "Жертва нечестивых - мерзость, особенно когда с лукавством приносят ее.",
+        "NEO": "Le sacrifice des méchants est abominable, surtout quand ils l’offrent avec des pensées criminelles !",
+        "NAB": "The sacrifice of the wicked is an abomination, the more so when they offer it with a bad intention.",
+        "VAT_ES": "El sacrificio de los malvados es una abominación, &iexcl;cuánto más si se lo ofrece con infamia!",
+        "CEI": "Il sacrificio degli empi è un abominio, tanto più se offerto con cattiva intenzione."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "עֵד כְּזָבִ֥ים יֹאבֵ֑ד וְ/אִ֥ישׁ שׁ֝וֹמֵ֗עַ לָ/נֶ֥צַח יְדַבֵּֽר׃",
+        "LXX": "μάρτυς ψευδὴς ἀπολεῖται, ἀνὴρ δὲ ὑπήκοος φυλασσόμενος λαλήσει.",
+        "VUL": "Testis mendax peribit ;/ vir obediens loquetur victoriam./",
+        "SYN": "Лжесвидетель погибнет; а человек, который говорит, что знает, будет говорить всегда.",
+        "NEO": "Le témoin menteur périra, mais l’homme qui écoute pourra parler toujours.",
+        "NAB": "The false witness will perish, but he who listens will finally have his say.",
+        "VAT_ES": "El testigo mentiroso perecerá, pero el hombre que escucha, siempre podrá hablar.",
+        "CEI": "Il falso testimone perirà, ma l'uomo che ascolta potrà parlare sempre."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "הֵעֵ֬ז אִ֣ישׁ רָשָׁ֣ע בְּ/פָנָ֑י/ו וְ֝/יָשָׁ֗ר ה֤וּא יכין יָבִ֬ין דרכי/ו דַּרְכּֽ/וֹ׃",
+        "LXX": "ἀσεβὴς ἀνὴρ ἀναιδῶς ὑφίσταται προσώπῳ, ὁ δὲ εὐθὴς αὐτὸς συνίει τὰς ὁδοὺς αὐτοῦ.",
+        "VUL": "Vir impius procaciter obfirmat vultum suum ;/ qui autem rectus est corrigit viam suam./",
+        "SYN": "Человек нечестивый дерзок лицом своим, а праведный держит прямо путь свой.",
+        "NEO": "Le méchant prend un air effronté, mais l’homme droit dirige sa voie.",
+        "NAB": "The wicked man is brazenfaced, but the upright man pays heed to his ways.",
+        "VAT_ES": "El malvado se muestra atrevido, pero el que es recto afianza su camino.",
+        "CEI": "L'empio assume un'aria sfrontata, l'uomo retto controlla la propria condotta."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "אֵ֣ין חָ֭כְמָה וְ/אֵ֣ין תְּבוּנָ֑ה וְ/אֵ֥ין עֵ֝צָ֗ה לְ/נֶ֣גֶד יְהוָֽה׃",
+        "LXX": "οὐκ ἔστιν σοφία, οὐκ ἔστιν ἀνδρία, οὐκ ἔστιν βουλὴ πρὸς τὸν ἀσεβῆ·",
+        "VUL": "Non est sapientia, non est prudentia,/ non est consilium contra Dominum./",
+        "SYN": "Нет мудрости, и нет разума, и нет совета вопреки Господу.",
+        "NEO": "Il n’y a ni sagesse, ni prudence, ni conseil en face de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "There is no wisdom, no understanding, no counsel, against the LORD.",
+        "VAT_ES": "No hay sabiduría, ni inteligencia, ni consejo delante del Señor.",
+        "CEI": "Non c'è sapienza, non c'è prudenza, non c'è consiglio di fronte al Signore."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "ס֗וּס מ֭וּכָן לְ/י֣וֹם מִלְחָמָ֑ה וְ֝/לַֽ/יהוָ֗ה הַ/תְּשׁוּעָֽה׃",
+        "LXX": "ἵππος ἑτοιμάζεται εἰς ἡμέραν πολέμου, παρὰ δὲ Κυρίου ἡ βοήθεια.",
+        "VUL": "Equus paratur ad diem belli ;/ Dominus autem salutem tribuit.]",
+        "SYN": "Коня приготовляют на день битвы, но победа - от Господа.",
+        "NEO": "On équipe le cheval pour le jour du combat, mais de \\+w Yahweh|strong=\"H3068\"\\+w** dépend la victoire.",
+        "NAB": "The horse is equipped for the day of battle, but victory is the LORD'S.",
+        "VAT_ES": "Se equipa el caballo para el día del combate, pero la victoria pertenece al Señor.",
+        "CEI": "Il cavallo è pronto per il giorno della battaglia, ma al Signore appartiene la vittoria."
+      }
+    }
+  }
+}

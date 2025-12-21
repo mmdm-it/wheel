@@ -1,0 +1,122 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_150",
+  "book_key": "PSAL",
+  "sequence": 150,
+  "chapter_in": {
+    "MT": 150,
+    "VUL": 150,
+    "LXX": 150
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "הַ֥לְלוּ יָ֨הּ הַֽלְלוּ אֵ֥ל בְּ/קָדְשׁ֑/וֹ הַֽ֝לְל֗וּ/הוּ בִּ/רְקִ֥יעַ עֻזּֽ/וֹ׃",
+        "LXX": "Ἁλληλουιά. Αἰνεῖτε τὸν θεὸν ἐν τοῖς ἁγίοις αὐτοῦ, αἰνεῖτε αὐτὸν ἐν στερεώματι δυνάμεως αὐτοῦ·",
+        "VUL": "Alleluja. [Laudate Dominum in sanctis ejus ;/ laudate eum in firmamento virtutis ejus./",
+        "SYN": "Хвалите Бога во святыне Его, хвалите Его на тверди силы Его.",
+        "NEO": "Alleluia !",
+        "NAB": "Hallelujah! Praise God in his holy sanctuary; give praise in the mighty dome of heaven.",
+        "VAT_ES": "&iexcl;Aleluya!",
+        "CEI": "Alleluia. Lodate il Signore nel suo santuario, lodatelo nel firmamento della sua potenza."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "הַֽלְל֥וּ/הוּ בִ/גְבוּרֹתָ֑י/ו הַֽ֝לְל֗וּ/הוּ כְּ/רֹ֣ב גֻּדְלֽ/וֹ׃",
+        "LXX": "αἰνεῖτε αὐτὸν ἐπὶ ταῖς δυναστείαις αὐτοῦ, αἰνεῖτε αὐτὸν κατὰ τὸ πλῆθος τῆς μεγαλωσύνης αὐτοῦ.",
+        "VUL": "Laudate eum in virtutibus ejus ;/ laudate eum secundum multitudinem magnitudinis ejus./",
+        "SYN": "Хвалите Его по могуществу Его, хвалите Его по множеству величия Его.",
+        "NEO": "Louez-le pour ses hauts faits ! Louez-le selon l’immensité de sa grandeur !",
+        "NAB": "Give praise for his mighty deeds, praise him for his great majesty.",
+        "VAT_ES": "alábenlo por su inmensa grandeza.",
+        "CEI": "Lodatelo per i suoi prodigi, lodatelo per la sua immensa grandezza."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "הַֽ֭לְלוּ/הוּ בְּ/תֵ֣קַע שׁוֹפָ֑ר הַֽ֝לְל֗וּ/הוּ בְּ/נֵ֣בֶל וְ/כִנּֽוֹר׃",
+        "LXX": "αἰνεῖτε αὐτὸν ἐν ἤχῳ σάλπιγγος, αἰνεῖτε αὐτὸν ἐν ψαλτηρίῳ καὶ κιθάρᾳ·",
+        "VUL": "Laudate eum in sono tubæ ;/ laudate eum in psalterio et cithara./",
+        "SYN": "Хвалите Его со звуком трубным, хвалите Его на псалтири и гуслях.",
+        "NEO": "Louez-le au son de la trompette ! Louez-le sur la harpe et la cithare !",
+        "NAB": "Give praise with blasts upon the horn, praise him with harp and lyre.",
+        "VAT_ES": "Alábenlo con toques de trompeta,",
+        "CEI": "Lodatelo con squilli di tromba, lodatelo con arpa e cetra;"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הַֽ֭לְלוּ/הוּ בְ/תֹ֣ף וּ/מָח֑וֹל הַֽ֝לְל֗וּ/הוּ בְּ/מִנִּ֥ים וְ/עוּגָֽב׃",
+        "LXX": "αἰνεῖτε αὐτὸν ἐν τυμπάνῳ καὶ χορῷ, αἰνεῖτε αὐτὸν ἐν χορδαῖς καὶ ὀργάνῳ·",
+        "VUL": "Laudate eum in tympano et choro ;/ laudate eum in chordis et organo./",
+        "SYN": "Хвалите Его с тимпаном и ликами, хвалите Его на струнах и органе.",
+        "NEO": "Louez-le dans vos danses, avec le tambourin ! Louez-le avec les instruments à cordes et le chalumeau !",
+        "NAB": "Give praise with tambourines and dance, praise him with flutes and strings.",
+        "VAT_ES": "alábenlo con tambores y danzas,",
+        "CEI": "lodatelo con timpani e danze, lodatelo sulle corde e sui flauti."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הַֽלְל֥וּ/הוּ בְ/צִלְצְלֵי שָׁ֑מַע הַֽ֝לְל֗וּ/הוּ בְּֽ/צִלְצְלֵ֥י תְרוּעָֽה׃",
+        "LXX": "αἰνεῖτε αὐτὸν ἐν κυμβάλοις εὐήχοις, αἰνεῖτε αὐτὸν ἐν κυμβάλοις ἀλαλαγμοῦ.",
+        "VUL": "Laudate eum in cymbalis benesonantibus ;/ laudate eum in cymbalis jubilationis./",
+        "SYN": "Хвалите Его на звучных кимвалах, хвалите Его на кимвалах громогласных.",
+        "NEO": "Louez-le avec les cymbales au son clair ! Louez-le avec les cymbales retentissantes !",
+        "NAB": "Give praise with crashing cymbals, praise him with sounding cymbals.",
+        "VAT_ES": "Alábenlo con platillos sonoros,",
+        "CEI": "Lodatelo con cembali sonori, lodatelo con cembali squillanti; ogni vivente dia lode al Signore. Alleluia."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "כֹּ֣ל הַ֭/נְּשָׁמָה תְּהַלֵּ֥ל יָ֗הּ הַֽלְלוּ יָֽהּ׃",
+        "LXX": "πᾶσα πνοὴ αἰνεσάτω τὸν κύριον. ἁλληλουιά.",
+        "VUL": "Omnis spiritus laudet Dominum !/ Alleluja.]",
+        "SYN": "Все дышащее да хвалит Господа! Аллилуия.",
+        "NEO": "Que tout ce qui respire loue \\+w Yahweh|strong=\"H3068\"\\+w** !",
+        "NAB": "Let everything that has breath give praise to the LORD! Hallelujah!",
+        "VAT_ES": "&iexcl;Que todos los seres vivientes"
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+:root {
+  --color-bg: #d4a574;
+  --color-nodes: #8b6f47;
+  --color-text: #000000;
+  --focus-node-radius: 12px;
+  --focus-node-stroke: 1px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  touch-action: none;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+}
+
+.focus-ring-node {
+  fill: var(--color-nodes);
+  stroke: none;
+}
+
+.focus-ring-label {
+  fill: var(--color-text);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.focus-ring-band {
+  fill: #7a7979;
+  opacity: 1;
+}
+
+.focus-ring-magnifier-circle {
+  fill: var(--color-nodes);
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+.focus-ring-magnifier-label {
+  fill: var(--color-text);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  pointer-events: none;
+}

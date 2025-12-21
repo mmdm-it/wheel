@@ -1,0 +1,987 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_031",
+  "book_key": "NUME",
+  "sequence": 31,
+  "chapter_in": {
+    "MT": 31,
+    "VUL": 31,
+    "LXX": 31
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse a Mosè:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "נְקֹ֗ם נִקְמַת֙ בְּנֵ֣י יִשְׂרָאֵ֔ל מֵ/אֵ֖ת הַ/מִּדְיָנִ֑ים אַחַ֖ר תֵּאָסֵ֥ף אֶל עַמֶּֽי/ךָ׃",
+        "LXX": "Ἐκδίκει τὴν ἐκδίκησιν υἱῶν Ἰσραὴλ ἐκ τῶν Μαδιανειτῶν, καὶ ἔσχατον προστεθήσῃ πρὸς τὸν λαόν σου.",
+        "VUL": "Ulciscere prius filios Israël de Madianitis, et sic colligeris ad populum tuum.",
+        "SYN": "отмсти Мадианитянам за сынов Израилевых, и после отойдешь к народу твоему.",
+        "NEO": "« Venge les enfants d’Israël sur les Madianites ; tu seras ensuite recueilli auprès de ton peuple. »",
+        "NAB": "\"Avenge the Israelites on the Midianites, and then you shall be taken to your people.\"",
+        "VAT_ES": "«Tienes que vengar a Israel de los madianitas, después irás a reunirte con los tuyos».",
+        "CEI": "\"Compi la vendetta degli Israeliti contro i Madianiti, poi sarai riunito ai tuoi antenati\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֤ר מֹשֶׁה֙ אֶל הָ/עָ֣ם לֵ/אמֹ֔ר הֵחָלְצ֧וּ מֵ/אִתְּ/כֶ֛ם אֲנָשִׁ֖ים לַ/צָּבָ֑א וְ/יִהְיוּ֙ עַל מִדְיָ֔ן לָ/תֵ֥ת נִקְמַת יְהוָ֖ה בְּ/מִדְיָֽן׃",
+        "LXX": "καὶ ἐλάλησεν Μωυσῆς πρὸς τὸν λαὸν λέγων Ἐξοπλίσατε ἐξ ὑμῶν ἄνδρας, παρατάξασθαι ἔναντι Κυρίου ἐπὶ Μαδιάν, ἀποδοῦναι ἐκδίκησιν παρὰ τοῦ κυρίου τῇ Μαδιάν·",
+        "VUL": "Statimque Moyses : Armate, inquit, ex vobis viros ad pugnam, qui possint ultionem Domini expetere de Madianitis.",
+        "SYN": "И сказал Моисей народу, говоря: вооружите из себя людей на войну, чтобы они пошли против Мадианитян, совершить мщение Господне над Мадианитянами;",
+        "NEO": "Moïse parla au peuple, en disant : « Armez pour la guerre des hommes d’entre vous, et qu’ils marchent contre Madian, pour exécuter la vengeance de \\+w Yahweh|strong=\"H3068\"\\+w** sur Madian.",
+        "NAB": "So Moses told the people, \"Select men from your midst and arm them for war, to attack the Midianites and execute the LORD'S vengeance on them.",
+        "VAT_ES": "Entonces Moisés dijo al pueblo: «Que algunos de ustedes se equipen para el combate y ataquen a Madián, para ejecutar contra ellos la venganza del Señor.",
+        "CEI": "Mosè disse al popolo: \"Mobilitate fra di voi uomini per la guerra e marcino contro Madian per eseguire la vendetta del Signore su Madian."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "אֶ֚לֶף לַ/מַּטֶּ֔ה אֶ֖לֶף לַ/מַּטֶּ֑ה לְ/כֹל֙ מַטּ֣וֹת יִשְׂרָאֵ֔ל תִּשְׁלְח֖וּ לַ/צָּבָֽא׃",
+        "LXX": "χίλιοι ἐκ φυλῆς, χίλιοι ἐκ φυλῆς· ἐκ πασῶν φυλῶν Ἰσραὴλ ἀποστείλατε παρατάξασθαι.",
+        "VUL": "Mille viri de singulis tribubus eligantur ex Israël qui mittantur ad bellum.",
+        "SYN": "по тысяче из колена, от всех колен [сынов] Израилевых пошлите на войну.",
+        "NEO": "Vous enverrez à la guerre mille hommes par tribu, de toutes les tribus d’Israël. »",
+        "NAB": "From each of the tribes of Israel you shall send a band of one thousand men to war.\"",
+        "VAT_ES": "Deberán enviar al combate mil hombres por cada una de las tribus de Israel».",
+        "CEI": "Manderete in guerra mille uomini per tribù di tutte le tribù d'Israele\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וַ/יִּמָּֽסְרוּ֙ מֵ/אַלְפֵ֣י יִשְׂרָאֵ֔ל אֶ֖לֶף לַ/מַּטֶּ֑ה שְׁנֵים עָשָׂ֥ר אֶ֖לֶף חֲלוּצֵ֥י צָבָֽא׃",
+        "LXX": "καὶ ἐξηρίθμησαν ἐκ τῶν χιλιάδων Ἰσραήλ, χιλίους ἐκ φυλῆς· ιβ’ χιλιάδες, ἐνωπλισμένοι εἰς παράταξιν.",
+        "VUL": "Dederuntque millenos de singulis tribubus, id est, duodecim millia expeditorum ad pugnam :",
+        "SYN": "И выделено из тысяч Израилевых, по тысяче из колена, двенадцать тысяч вооруженных на войну.",
+        "NEO": "On leva donc d’entre les milliers d’Israël mille hommes par tribu, soit douze mille hommes armés pour la guerre.",
+        "NAB": "From the clans of Israel, therefore, a thousand men of each tribe were levied, so that there were twelve thousand men armed for war.",
+        "VAT_ES": "Entre las divisiones de Israel se reclutaron doce mil hombres equipados para la guerra, a razón de mil hombres por tribu,",
+        "CEI": "Così furono forniti, dalle migliaia d'Israele, mille uomini per tribù, cioè dodicimila uomini armati per la guerra."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁלַ֨ח אֹתָ֥/ם מֹשֶׁ֛ה אֶ֥לֶף לַ/מַּטֶּ֖ה לַ/צָּבָ֑א אֹ֠תָ/ם וְ/אֶת פִּ֨ינְחָ֜ס בֶּן אֶלְעָזָ֤ר הַ/כֹּהֵן֙ לַ/צָּבָ֔א וּ/כְלֵ֥י הַ/קֹּ֛דֶשׁ וַ/חֲצֹצְר֥וֹת הַ/תְּרוּעָ֖ה בְּ/יָדֽ/וֹ׃",
+        "LXX": "καὶ ἀπέστειλεν αὐτοὺς Μωυσῆς χιλίους ἐκ φυλῆς, χιλίους ἐκ φυλῆς, σὺν δυνάμει αὐτῶν, καὶ Φινεὲς υἱὸν Ἐλεαζὰρ υἱοῦ Ἀαρὼν τοῦ ἱερέως· καὶ τὰ σκεύη τὰ ἅγια καὶ αἱ σάλπιγγες τῶν σημασιῶν ἐν ταῖς χερσὶν αὐτῶν.",
+        "VUL": "quos misit Moyses cum Phinees filio Eleazari sacerdotis, vasa quoque sancta, et tubas ad clangendum tradidit ei.",
+        "SYN": "И послал их Моисей на войну, по тысяче из колена, их и Финееса, сына Елеазара, [сына Аарона,] священника, на войну, и в руке его священные сосуды и трубы для тревоги.",
+        "NEO": "Moïse les envoya au combat, mille hommes par tribu, eux et Phinées, le fils d’Eléazar, le prêtre, qui avait avec lui les instruments sacrés et les trompettes retentissantes.",
+        "NAB": "Moses sent them out on the campaign, a thousand from each tribe, with Phinehas, son of Eleazar, the priest for the campaign, who had with him the sacred vessels and the trumpets for sounding the alarm.",
+        "VAT_ES": "y Moisés los envió al combate, junto con Pinjás, hijo del sacerdote Eleazar, que llevaba consigo los vasos sagrados y las trompetas para lanzar el grito de guerra.",
+        "CEI": "Mosè mandò in guerra quei mille uomini per tribù e con loro Pincas, figlio del sacerdote Eleazaro, il quale portava gli oggetti sacri e aveva in mano le trombe dell'acclamazione."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וַֽ/יִּצְבְּאוּ֙ עַל מִדְיָ֔ן כַּ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶׁ֑ה וַ/יַּֽהַרְג֖וּ כָּל זָכָֽר׃",
+        "LXX": "καὶ παρετάξαντο ἐπὶ Μαδιάν, καθὰ ἐνετείλατο Κύριος τῷ Μωυσῇ, καὶ ἀπέκτειναν πᾶν ἀρσενικόν·",
+        "VUL": "Cumque pugnassent contra Madianitas atque vicissent, omnes mares occiderunt,",
+        "SYN": "И пошли войною на Мадиама, как повелел Господь Моисею, и убили всех мужеского пола;",
+        "NEO": "Ils s’avancèrent contre Madian, selon l’ordre que \\+w Yahweh|strong=\"H3068\"\\+w** avait donné à Moïse, et ils tuèrent tous les mâles.",
+        "NAB": "They waged war against the Midianites, as the LORD had commanded Moses, and killed every male among them.",
+        "VAT_ES": "Ellos pelearon contra Madián, como el Señor lo había ordenado a Moisés, y mataron a todos los varones.",
+        "CEI": "Marciarono dunque contro Madian come il Signore aveva ordinato a Mosè, e uccisero tutti i maschi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וְ/אֶת מַלְכֵ֨י מִדְיָ֜ן הָרְג֣וּ עַל חַלְלֵי/הֶ֗ם אֶת אֱוִ֤י וְ/אֶת רֶ֨קֶם֙ וְ/אֶת צ֤וּר וְ/אֶת חוּר֙ וְ/אֶת רֶ֔בַע חֲמֵ֖שֶׁת מַלְכֵ֣י מִדְיָ֑ן וְ/אֵת֙ בִּלְעָ֣ם בֶּן בְּע֔וֹר הָרְג֖וּ בֶּ/חָֽרֶב׃",
+        "LXX": "καὶ τοὺς βασιλεῖς Μαδιὰν ἀπέκτειναν ἅμα τοῖς τραυματίαις αὐτῶν, καὶ τὸν Εὐεὶν καὶ τὸν Σοὺρ καὶ τὸν Ῥόκομ καὶ τὸν Οὓρ καὶ τὸν Ῥόβοκ, πέντε βασιλεῖς Μαδιάμ· καὶ τὸν Βαλαὰμ υἱὸν Βεὼρ ἀπέκτειναν ἐν ῥομφαίᾳ σὺν τοῖς τραυματίαις αὐτῶν.",
+        "VUL": "et reges eorum, Evi, et Recem, et Sur, et Hur, et Rebe, quinque principes gentis : Balaam quoque filium Beor interfecerunt gladio.",
+        "SYN": "и вместе с убитыми их убили царей Мадиамских: Евия, Рекема, Цура, Хура и Реву, пять царей Мадиамских, и Валаама, сына Веорова, убили мечом [вместе с убитыми их];",
+        "NEO": "Outre ceux qui étaient tombés dans la bataille, ils tuèrent les rois de Madian : Evi, Récem, Sur, Hur et Rebé, cinq rois de Madian ; ils tuèrent aussi par l’épée Balaam, fils de Béor.",
+        "NAB": "Besides those slain in battle, they killed the five Midianite kings: Evi, Rekem, Zur, Hur and Reba; and they also executed Balaam, son of Beor, with the sword.",
+        "VAT_ES": "Además de otras víctimas, mataron a los cinco reyes de Madián: Eví, Réquem, Sur, Jur y Reba. También pasaron al filo de la espada a Balaam hijo de Beor.",
+        "CEI": "Uccisero anche, oltre i loro caduti, i re di Madian Evi, Rekem, Sur, Ur e Reba cioè cinque re di Madian; uccisero anche di spada Balaam figlio di Beor."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁבּ֧וּ בְנֵי יִשְׂרָאֵ֛ל אֶת נְשֵׁ֥י מִדְיָ֖ן וְ/אֶת טַפָּ֑/ם וְ/אֵ֨ת כָּל בְּהֶמְתָּ֧/ם וְ/אֶת כָּל מִקְנֵ/הֶ֛ם וְ/אֶת כָּל חֵילָ֖/ם בָּזָֽזוּ׃",
+        "LXX": "καὶ ἐπρονόμευσαν τὰς γυναῖκας Μαδιάν, καὶ τὴν ἀποσκευὴν αὐτῶν καὶ τὰ κτήνη αὐτῶν καὶ πάντα τὰ ἔνκτητα αὐτῶν καὶ τὴν δύναμιν αὐτῶν ἐπρονόμευσαν·",
+        "VUL": "Ceperuntque mulieres eorum, et parvulos, omniaque pecora, et cunctam supellectilem : quidquid habere potuerant depopulati sunt :",
+        "SYN": "а жен Мадиамских и детей их сыны Израилевы взяли в плен, и весь скот их, и все стада их и все имение их взяли в добычу,",
+        "NEO": "Les enfants d’Israël firent prisonnières les femmes des Madianites avec leurs petits enfants, et ils pillèrent toutes leurs bêtes de somme, tous leurs troupeaux et tous leurs biens.",
+        "NAB": "But the Israelites kept the women of the Midianites with their little ones as captives, and all their herds and flocks and wealth as spoil,",
+        "VAT_ES": "Los israelitas tomaron cautivas a las mujeres y a los hijos de los madianitas, y se llevaron como botín todos sus animales, sus rebaños y sus bienes.",
+        "CEI": "Gli Israeliti fecero prigioniere le donne di Madian e i loro fanciulli e depredarono tutto il loro bestiame, tutti i loro greggi e ogni loro bene;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וְ/אֵ֤ת כָּל עָרֵי/הֶם֙ בְּ/מ֣וֹשְׁבֹתָ֔/ם וְ/אֵ֖ת כָּל טִֽירֹתָ֑/ם שָׂרְפ֖וּ בָּ/אֵֽשׁ׃",
+        "LXX": "καὶ πάσας τὰς πόλεις αὐτῶν τὰς ἐν ταῖς οἰκίαις αὐτῶν καὶ τὰς ἐπαύλεις αὐτῶν ἐνέπρησαν ἐν πυρί.",
+        "VUL": "tam urbes quam viculos et castella flamma consumpsit.",
+        "SYN": "и все города их во владениях их и все селения их сожгли огнем;",
+        "NEO": "Ils livrèrent aux flammes toutes les villes du pays qu’ils habitaient et tous leurs campements.",
+        "NAB": "while they set on fire all the towns where they had settled and all their encampments.",
+        "VAT_ES": "Además incendiaron las ciudades donde ellos habitaban y sus campamentos.",
+        "CEI": "appiccarono il fuoco a tutte le città che quelli abitavano e a tutti i loro attendamenti"
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יִּקְחוּ֙ אֶת כָּל הַ/שָּׁלָ֔ל וְ/אֵ֖ת כָּל הַ/מַּלְק֑וֹחַ בָּ/אָדָ֖ם וּ/בַ/בְּהֵמָֽה׃",
+        "LXX": "καὶ ἔλαβον πᾶσαν τὴν προνομὴν καὶ πάντα τὰ σκῦλα αὐτῶν, ἀπὸ ἀνθρώπου ἕως κτήνους·",
+        "VUL": "Et tulerunt prædam, et universa quæ ceperant tam ex hominibus quam ex jumentis,",
+        "SYN": "и взяли все захваченное и всю добычу, от человека до скота;",
+        "NEO": "Ayant pris tout le butin et toutes les dépouilles, gens et bestiaux,",
+        "NAB": "Then they took all the booty, with the people and beasts they had captured, and brought the captives, together with the spoils and booty,",
+        "VAT_ES": "Luego recogieron todo el botín –tanto hombres como animales–",
+        "CEI": "e presero tutto il bottino e tutta la preda, gente e bestiame."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יָּבִ֡אוּ אֶל מֹשֶׁה֩ וְ/אֶל אֶלְעָזָ֨ר הַ/כֹּהֵ֜ן וְ/אֶל עֲדַ֣ת בְּנֵֽי יִשְׂרָאֵ֗ל אֶת הַ/שְּׁבִ֧י וְ/אֶת הַ/מַּלְק֛וֹחַ וְ/אֶת הַ/שָּׁלָ֖ל אֶל הַֽ/מַּחֲנֶ֑ה אֶל עַֽרְבֹ֣ת מוֹאָ֔ב אֲשֶׁ֖ר עַל יַרְדֵּ֥ן יְרֵחֽוֹ׃",
+        "LXX": "καὶ ἤγαγον πρὸς Μωυσῆν καὶ πρὸς Ἐλεαζὰρ τὸν ἱερέα καὶ πρὸς πάντας υἱοὺς Ἰσραὴλ τὴν αἰχμαλωσίαν καὶ τὰ σκῦλα καὶ τὴν προνομήν, εἰς τὴν παρεμβολὴν εἰς Ἀραβὼθ Μωάβ, ἥ ἐστιν ἐπὶ τοῦ Ἰορδάνου κατὰ Ἰερειχώ.",
+        "VUL": "et adduxerunt ad Moysen, et Eleazarum sacerdotem, et ad omnem multitudinem filiorum Israël : reliqua autem utensilia portaverunt ad castra in campestribus Moab juxta Jordanem contra Jericho.",
+        "SYN": "и доставили пленных и добычу и захваченное к Моисею и к Елеазару священнику и к обществу сынов Израилевых, к стану, на равнины Моавитские, что у Иордана, против Иерихона.",
+        "NEO": "ils amenèrent les prisonniers, les dépouilles et le butin à Moïse, à Eléazar, le prêtre, et à l’assemblée des enfants d’Israël, au camp, dans les plaines de Moab, près du Jourdain, vis-à-vis de Jéricho.",
+        "NAB": "to Moses and the priest Eleazar and to the Israelite community at their camp on the plains of Moab, along the Jericho stretch of the Jordan.",
+        "VAT_ES": "y se lo llevaron a Moisés, al sacerdote Eleazar y a toda la comunidad de los israelitas, que estaban acampados en las estepas de Moab, junto al Jordán, a la altura de Jericó.",
+        "CEI": "Poi condussero i prigionieri, la preda e il bottino a Mosè, al sacerdote Eleazaro e alla comunità degli Israeliti, accampati nelle steppe di Moab, presso il Giordano di fronte a Gerico."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יֵּ֨צְא֜וּ מֹשֶׁ֨ה וְ/אֶלְעָזָ֧ר הַ/כֹּהֵ֛ן וְ/כָל נְשִׂיאֵ֥י הָ/עֵדָ֖ה לִ/קְרָאתָ֑/ם אֶל מִ/ח֖וּץ לַֽ/מַּחֲנֶֽה׃",
+        "LXX": "Καὶ ἐξῆλθεν Μωυσῆς καὶ Ἐλεαζὰρ ὁ ἱερεὺς καὶ πάντες οἱ ἄρχοντες τῆς συναγωγῆς εἰς συνάντησιν αὐτοῖς ἔξω τῆς παρεμβολῆς·",
+        "VUL": "Egressi sunt autem Moyses et Eleazar sacerdos, et omnes principes synagogæ, in occursum eorum extra castra.",
+        "SYN": "И вышли Моисей и Елеазар священник и все князья общества навстречу им из стана.",
+        "NEO": "Moïse, Eléazar, le prêtre, et tous les princes de l’assemblée sortirent au-devant d’eux, hors du camp.",
+        "NAB": "When Moses and the priest Eleazar, with all the princes of the community, went outside the camp to meet them,",
+        "VAT_ES": "Cuando Moisés, el sacerdote Eleazar y todos los jefes de la comunidad salieron a recibirlos fuera del campamento,",
+        "CEI": "Mosè, il sacerdote Eleazaro e tutti i principi della comunità uscirono loro incontro fuori dell'accampamento."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וַ/יִּקְצֹ֣ף מֹשֶׁ֔ה עַ֖ל פְּקוּדֵ֣י הֶ/חָ֑יִל שָׂרֵ֤י הָ/אֲלָפִים֙ וְ/שָׂרֵ֣י הַ/מֵּא֔וֹת הַ/בָּאִ֖ים מִ/צְּבָ֥א הַ/מִּלְחָמָֽה׃",
+        "LXX": "καὶ ὠργίσθη Μωυσῆς ἐπὶ τοῖς ἐπισκόποις τῆς δυνάμεως, χιλιάρχοις καὶ ἑκατοντάρχοις τοῖς ἐρχομένοις ἐκ τῆς παρατάξεως τοῦ πολέμου·",
+        "VUL": "Iratusque Moyses principibus exercitus, tribunis, et centurionibus qui venerant de bello,",
+        "SYN": "И прогневался Моисей на военачальников, тысяченачальников и стоначальников, пришедших с войны,",
+        "NEO": "Et Moïse s’irrita contre les commandants de l’armée, les chefs de milliers et les chefs de centaines, qui revenaient du combat.",
+        "NAB": "Moses became angry with the officers of the army, the clan and company commanders, who were returning from combat.",
+        "VAT_ES": "Moisés se irritó contra los comandantes del ejército y contra los oficiales de los regimientos de mil y cien soldados, que volvían de la expedición,",
+        "CEI": "Mosè si adirò contro i comandanti dell'esercito, capi di migliaia e capi di centinaia, che tornavano da quella spedizione di guerra."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר אֲלֵי/הֶ֖ם מֹשֶׁ֑ה הַֽ/חִיִּיתֶ֖ם כָּל נְקֵבָֽה׃",
+        "LXX": "καὶ εἶπεν αὐτοῖς Μωυσῆς Ἵνα τί ἐζωγρήσατε πᾶν θῆλυ;",
+        "VUL": "ait : Cur feminas reservastis ?",
+        "SYN": "и сказал им Моисей: [для чего] вы оставили в живых всех женщин?",
+        "NEO": "Il leur dit : « Avez-vous donc laissé la vie à toutes les femmes ?",
+        "NAB": "\"So you have spared all the women!\" he exclaimed.",
+        "VAT_ES": "y les dijo: «&iquest;Por qué han perdonado la vida a todas las mujeres?",
+        "CEI": "Mosè disse loro: \"Avete lasciato in vita tutte le femmine?"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "הֵ֣ן הֵ֜נָּה הָי֨וּ לִ/בְנֵ֤י יִשְׂרָאֵל֙ בִּ/דְבַ֣ר בִּלְעָ֔ם לִ/מְסָר מַ֥עַל בַּ/יהוָ֖ה עַל דְּבַר פְּע֑וֹר וַ/תְּהִ֥י הַ/מַּגֵּפָ֖ה בַּ/עֲדַ֥ת יְהוָֽה׃",
+        "LXX": "αὗται γὰρ ἦσαν τοῖς υἱοῖς Ἰσραὴλ κατὰ τὸ ῥῆμα Βαλαὰμ τοῦ ἀποστῆσαι καὶ ὑπεριδεῖν τὸ ῥῆμα Κυρίου ἕνεκεν Φογώρ, καὶ ἐγένετο ἡ πληγὴ ἐν τῇ συναγωγῇ Κυρίου.",
+        "VUL": "nonne istæ sunt, quæ deceperunt filios Israël ad suggestionem Balaam, et prævaricari vos fecerunt in Domino super peccato Phogor, unde et percussus est populus ?",
+        "SYN": "вот они, по совету Валаамову, были для сынов Израилевых поводом к отступлению от Господа в угождение Фегору, _за_ _что_ и поражение было в обществе Господнем;",
+        "NEO": "Voici, ce sont elles qui, sur la parole de Balaam, ont entraîné les enfants d’Israël à l’infidélité envers \\+w Yahweh|strong=\"H3068\"\\+w**, dans l’affaire de Phogor ; et alors la plaie fut dans l’assemblée de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "\"Why, they are the very ones who on Balaam's advice prompted the unfaithfulness of the Israelites toward the LORD in the Peor affair, which began the slaughter of the LORD'S community.",
+        "VAT_ES": "Fueron ellas las que, por instigación de Balaam indujeron a los israelitas a ser infieles al Señor en el incidente de Peor, y por eso la comunidad del Señor fue azotada por la plaga.",
+        "CEI": "Proprio loro, per suggerimento di Balaam, hanno insegnato agli Israeliti l'infedeltà verso il Signore, nella faccenda di Peor, per cui venne il flagello nella comunità del Signore."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וְ/עַתָּ֕ה הִרְג֥וּ כָל זָכָ֖ר בַּ/טָּ֑ף וְ/כָל אִשָּׁ֗ה יֹדַ֥עַת אִ֛ישׁ לְ/מִשְׁכַּ֥ב זָכָ֖ר הֲרֹֽגוּ׃",
+        "LXX": "καὶ νῦν ἀποκτείνατε πᾶν ἀρσενικὸν ἐν πάσῃ τῇ ἀπαρτίᾳ, καὶ πᾶσαν γυναῖκα ἥτις ἔγνωκεν κοίτην ἄρσενος ἀποκτείνατε·",
+        "VUL": "ergo cunctos interficite quidquid est generis masculini, etiam in parvulis : et mulieres, quæ noverunt viros in coitu, jugulate :",
+        "SYN": "итак убейте всех детей мужеского пола, и всех женщин, познавших мужа на мужеском ложе, убейте;",
+        "NEO": "Maintenant, tuez tout mâle parmi les petits enfants, et tuez toute femme qui a connu la couche d’un homme ;",
+        "NAB": "Slay, therefore, every male child and every woman who has had intercourse with a man.",
+        "VAT_ES": "Por lo tanto, maten a todos los niños varones y a todas las mujeres que hayan tenido relaciones con un hombre.",
+        "CEI": "Ora uccidete ogni maschio tra i fanciulli e uccidete ogni donna che si è unita con un uomo;"
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "וְ/כֹל֙ הַ/טַּ֣ף בַּ/נָּשִׁ֔ים אֲשֶׁ֥ר לֹא יָדְע֖וּ מִשְׁכַּ֣ב זָכָ֑ר הַחֲי֖וּ לָ/כֶֽם׃",
+        "LXX": "πᾶσαν τὴν ἀπαρτίαν τῶν γυναικῶν ἥτις οὐκ οἶδεν κοίτην ἄρσενος, ζωγρήσατε αὐτάς.",
+        "VUL": "puellas autem et omnes feminas virgines reservate vobis :",
+        "SYN": "а всех детей женского пола, которые не познали мужеского ложа, оставьте в живых для себя;",
+        "NEO": "mais toutes les filles qui n’ont pas connu la couche d’un homme, laissez-les vivre pour vous.",
+        "NAB": "But you may spare and keep for yourselves all girls who had no intercourse with a man.",
+        "VAT_ES": "Perdonen, en cambio, a las jóvenes que no hayan tenido relaciones con un hombre.",
+        "CEI": "ma tutte le fanciulle che non si sono unite con uomini, conservatele in vita per voi."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וְ/אַתֶּ֗ם חֲנ֛וּ מִ/ח֥וּץ לַֽ/מַּחֲנֶ֖ה שִׁבְעַ֣ת יָמִ֑ים כֹּל֩ הֹרֵ֨ג נֶ֜פֶשׁ וְ/כֹ֣ל נֹגֵ֣עַ בֶּֽ/חָלָ֗ל תִּֽתְחַטְּא֞וּ בַּ/יּ֤וֹם הַ/שְּׁלִישִׁי֙ וּ/בַ/יּ֣וֹם הַ/שְּׁבִיעִ֔י אַתֶּ֖ם וּ/שְׁבִי/כֶֽם׃",
+        "LXX": "καὶ ὑμεῖς παρεμβάλετε ἔξω τῆς παρεμβολῆς ἑπτὰ ἡμέρας· πᾶς ὁ ἀνελών καὶ ὁ ἁπτόμενος τοῦ τετρωμένου ἁγνισθήσεται τῇ ἡμέρᾳ τῇ τρίτῃ καὶ τῇ ἡμέρᾳ τῇ ἑβδόμῃ, ὑμεῖς καὶ ἡ αἰχμαλωσία ὑμῶν·",
+        "VUL": "et manete extra castra septem diebus. Qui occiderit hominem, vel occisum tetigerit, lustrabitur die tertio et septimo.",
+        "SYN": "и пробудьте вне стана семь дней; всякий, убивший человека и прикоснувшийся к убитому, очиститесь в третий день и в седьмой день, вы и пленные ваши;",
+        "NEO": "Et vous, campez hors du camp pendant sept jours ; quiconque a tué quelqu’un et quiconque a touché un mort se purifiera le troisième jour et le septième jour, lui et vos prisonniers.",
+        "NAB": "\"Moreover, you shall stay outside the camp for seven days, and those of you who have slain anyone or touched anyone slain in battle shall purify yourselves on the third and on the seventh day. This applies both to you and to your captives.",
+        "VAT_ES": "En cuanto a ustedes, quédense fuera del campamento durante siete días; y en cualquiera de ustedes o de los cautivos que haya matado a una persona o haya tocado un cadáver, deberá purificarse al tercero y al séptimo día.",
+        "CEI": "Voi poi accampatevi per sette giorni fuori del campo; chiunque ha ucciso qualcuno e chiunque ha toccato un cadavere si purifichi il terzo e il settimo giorno; questo per voi e per i vostri prigionieri."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וְ/כָל בֶּ֧גֶד וְ/כָל כְּלִי ע֛וֹר וְ/כָל מַעֲשֵׂ֥ה עִזִּ֖ים וְ/כָל כְּלִי עֵ֑ץ תִּתְחַטָּֽאוּ׃",
+        "LXX": "καὶ πᾶν περίβλημα καὶ πᾶν σκεῦος δερμάτινον καὶ πᾶσαν ἐργασίαν ἐξ αἰγίας καὶ πᾶν σκεῦος ξύλινον ἀφαγνιεῖτε.",
+        "VUL": "Et de omni præda, sive vestimentum fuerit, sive vas, et aliquid in utensilia præparatum, de caprarum pellibus, et pilis, et ligno, expiabitur.",
+        "SYN": "и все одежды, и все кожаные вещи, и все сделанное из козьей _шерсти,_ и все деревянные сосуды очистите.",
+        "NEO": "Vous purifierez aussi tout vêtement, tout objet de peau, tout ouvrage de poil de chèvre et tout ustensile de bois. »",
+        "NAB": "You shall also purify every article of cloth, leather, goats' hair, or wood.\"",
+        "VAT_ES": "También deberán purificar todas las prendas de vestir y todos los objetos de piel, de cuero de cabra o de madera».",
+        "CEI": "Purificherete anche ogni veste, ogni oggetto di pelle, ogni lavoro di pelo di capra e ogni oggetto di legno\"."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֨אמֶר אֶלְעָזָ֤ר הַ/כֹּהֵן֙ אֶל אַנְשֵׁ֣י הַ/צָּבָ֔א הַ/בָּאִ֖ים לַ/מִּלְחָמָ֑ה זֹ֚את חֻקַּ֣ת הַ/תּוֹרָ֔ה אֲשֶׁר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "καὶ εἶπεν Ἐλεαζὰρ ὁ ἱερεὺς πρὸς τοὺς ἄνδρας τῆς δυνάμεως τοὺς ἐρχομένους ἐκ τῆς παρατάξεως τοῦ πολέμου Τοῦτο τὸ δικαίωμα τοῦ νόμου ὃ συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "Eleazar quoque sacerdos ad viros exercitus, qui pugnaverunt, sic locutus est : Hoc est præceptum legis, quod mandavit Dominus Moysi :",
+        "SYN": "И сказал Елеазар священник воинам, ходившим на войну: вот постановление закона, который заповедал Господь Моисею:",
+        "NEO": "Eléazar, le prêtre, dit aux hommes de guerre qui étaient allés au combat : « Voici ce qui est commandé par la loi que \\+w Yahweh|strong=\"H3068\"\\+w** a prescrite à Moïse :",
+        "NAB": "Eleazar the priest told the soldiers who had returned from combat: \"This is what the law, as prescribed by the LORD to Moses, ordains:",
+        "VAT_ES": "Entonces el sacerdote Eleazar dijo a las tropas de habían participado de la batalla: «Esta es una prescripción de la ley que el Señor dictó a Moisés: «Todo lo que resiste al fuego,",
+        "CEI": "Il sacerdote Eleazaro disse ai soldati che erano andati in guerra: \"Questo è l'ordine della legge che il Signore ha prescritto a Mosè:"
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "אַ֥ךְ אֶת הַ/זָּהָ֖ב וְ/אֶת הַ/כָּ֑סֶף אֶֽת הַ/נְּחֹ֨שֶׁת֙ אֶת הַ/בַּרְזֶ֔ל אֶֽת הַ/בְּדִ֖יל וְ/אֶת הָ/עֹפָֽרֶת׃",
+        "LXX": "πλὴν τοῦ χρυσίου καὶ τοῦ ἀργυρίου καὶ χαλκοῦ καὶ σιδήρου καὶ μολίβου καὶ κασσιτέρου,",
+        "VUL": "aurum, et argentum, et æs, et ferrum, et plumbum, et stannum,",
+        "SYN": "золото, серебро, медь, железо, олово и свинец,",
+        "NEO": "l’or, l’argent, l’airain, le fer, l’étain et le plomb,",
+        "NAB": "Whatever can stand fire, such as gold, silver, bronze, iron, tin and lead,",
+        "VAT_ES": "ya sea oro, plata, bronce, hierro, estaño o plomo,",
+        "CEI": "L'oro, l'argento, il rame, il ferro, lo stagno e il piombo,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "כָּל דָּבָ֞ר אֲשֶׁר יָבֹ֣א בָ/אֵ֗שׁ תַּעֲבִ֤ירוּ בָ/אֵשׁ֙ וְ/טָהֵ֔ר אַ֕ךְ בְּ/מֵ֥י נִדָּ֖ה יִתְחַטָּ֑א וְ/כֹ֨ל אֲשֶׁ֧ר לֹֽא יָבֹ֛א בָּ/אֵ֖שׁ תַּעֲבִ֥ירוּ בַ/מָּֽיִם׃",
+        "LXX": "πᾶν πρᾶγμα διελεύσεται ἐν πυρί, καὶ καθαρισθήσεται, ἀλλ’ ἢ τῷ ὕδατι τοῦ ἁγνισμοῦ ἁγνισθήσεται· καὶ πάντα ὅσα ἐὰν μὴ διαπορεύηται διὰ πυρός, διελεύσεται δι’ ὕδατος.",
+        "VUL": "et omne, quod potest transire per flammas, igne purgabitur : quidquid autem ignem non potest sustinere, aqua expiationis sanctificabitur :",
+        "SYN": "и все, что проходит через огонь, проведите через огонь, чтоб оно очистилось, а кроме того и очистительною водою должно очистить; все же, что не проходит через огонь, проведите через воду;",
+        "NEO": "tout objet qui va au feu, vous le ferez passer par le feu, et il sera pur ; toutefois il sera purifié encore par l’eau de purification. Tout ce qui ne va pas au feu, vous le ferez passer par l’eau.",
+        "NAB": "you shall put into the fire, that it may become clean; however, it must also be purified with lustral water. But whatever cannot stand fire you shall put into the water.",
+        "VAT_ES": "lo harán pasar por el fuego para que sea purificado, aunque también deberá ser purificado con agua lustral; en cambio, harán pasar sólo por el agua lo que no puede resistir al fuego.",
+        "CEI": "quanto può sopportare il fuoco, lo farete passare per il fuoco e sarà reso puro; ma sarà purificato anche con l'acqua della purificazione; quanto non può sopportare il fuoco, lo farete passare per l'acqua."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וְ/כִבַּסְתֶּ֧ם בִּגְדֵי/כֶ֛ם בַּ/יּ֥וֹם הַ/שְּׁבִיעִ֖י וּ/טְהַרְתֶּ֑ם וְ/אַחַ֖ר תָּבֹ֥אוּ אֶל הַֽ/מַּחֲנֶֽה׃",
+        "LXX": "καὶ πλυνεῖσθε τὰ ἱμάτια τῇ ἡμέρᾳ τῇ ἑβδόμῃ, καὶ καθαρισθήσεσθε· καὶ μετὰ ταῦτα εἰσελεύσεσθε εἰς τὴν παρεμβολήν.",
+        "VUL": "et lavabitis vestimenta vestra die septimo, et purificati postea castra intrabitis.",
+        "SYN": "и одежды ваши вымойте в седьмой день, и очиститесь, и после того входите в стан.",
+        "NEO": "Vous laverez vos vêtements, le septième jour, et vous serez purs ; vous pourrez ensuite entrer dans le camp. »",
+        "NAB": "On the seventh day you shall wash your clothes, and then you will again be clean. After that you may enter the camp.\"",
+        "VAT_ES": "Al séptimo día ustedes lavarán su ropa y quedarán puros. Después podrán entrar en el campamento».",
+        "CEI": "Vi laverete le vesti il settimo giorno e sarete puri; poi potrete entrare nell'accampamento\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֥אמֶר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Dixit quoque Dominus ad Moysen :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses:",
+        "VAT_ES": "Luego el Señor dijo a Moisés:",
+        "CEI": "Il Signore disse a Mosè:"
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "שָׂ֗א אֵ֣ת רֹ֤אשׁ מַלְק֨וֹחַ֙ הַ/שְּׁבִ֔י בָּ/אָדָ֖ם וּ/בַ/בְּהֵמָ֑ה אַתָּה֙ וְ/אֶלְעָזָ֣ר הַ/כֹּהֵ֔ן וְ/רָאשֵׁ֖י אֲב֥וֹת הָ/עֵדָֽה׃",
+        "LXX": "Λάβε τὸ κεφάλαιον τῶν σκύλων τῆς αἰχμαλωσίας, ἀπὸ ἀνθρώπου ἕως κτήνους, σὺ καὶ Ἐλεαζὰρ ὁ ἱερεὺς καὶ οἱ ἄρχοντες τῶν πατριῶν τῆς συναγωγῆς·",
+        "VUL": "Tollite summam eorum quæ capta sunt, ab homine usque ad pecus, tu et Eleazar sacerdos et principes vulgi :",
+        "SYN": "сочти добычу плена, от человека до скота, ты и Елеазар священник и начальники племен общества;",
+        "NEO": "« Fais, toi et Eléazar, le prêtre, et les chefs de maisons de l’assemblée, le compte de ce qui a été pris des dépouilles en hommes et en bestiaux,",
+        "NAB": "\"With the help of the priest Eleazar and of the heads of the ancestral houses, count up all the human captives and the beasts that have been taken;",
+        "VAT_ES": "«Tú, el sacerdote Eleazar y los jefes de familia de la comunidad harán el inventario del botín que ha sido capturado, tanto hombres como animales.",
+        "CEI": "\"Tu, con il sacerdote Eleazaro e con i capi dei casati della comunità, fà il censimento di tutta la preda che è stata fatta: della gente e del bestiame;"
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וְ/חָצִ֨יתָ֙ אֶת הַ/מַּלְק֔וֹחַ בֵּ֚ין תֹּפְשֵׂ֣י הַ/מִּלְחָמָ֔ה הַ/יֹּצְאִ֖ים לַ/צָּבָ֑א וּ/בֵ֖ין כָּל הָ/עֵדָֽה׃",
+        "LXX": "καὶ διελεῖτε τὰ σκῦλα ἀνὰ μέσον τῶν πολεμιστῶν τῶν ἐκπορευομένων εἰς τὴν παράταξιν καὶ ἀνὰ μέσον πάσης συναγωγῆς.",
+        "VUL": "dividesque ex æquo prædam inter eos qui pugnaverunt egressique sunt ad bellum, et inter omnem reliquam multitudinem.",
+        "SYN": "и раздели добычу пополам между воевавшими, ходившими на войну, и между всем обществом;",
+        "NEO": "et partage les dépouilles entre les combattants qui sont allés à la guerre et toute l’assemblée.",
+        "NAB": "then divide them evenly, giving half to those who took active part in the war by going out to combat, and half to the rest of the community.",
+        "VAT_ES": "Después lo repartirás, por partes iguales, entre los combatientes que participaron de la campaña y el resto de la comunidad.",
+        "CEI": "dividi la preda fra i combattenti che sono andati in guerra e tutta la comunità."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "וַ/הֲרֵמֹתָ֨ מֶ֜כֶס לַֽ/יהוָ֗ה מֵ/אֵ֞ת אַנְשֵׁ֤י הַ/מִּלְחָמָה֙ הַ/יֹּצְאִ֣ים לַ/צָּבָ֔א אֶחָ֣ד נֶ֔פֶשׁ מֵ/חֲמֵ֖שׁ הַ/מֵּא֑וֹת מִן הָ/אָדָם֙ וּ/מִן הַ/בָּקָ֔ר וּ/מִן הַ/חֲמֹרִ֖ים וּ/מִן הַ/צֹּֽאן׃",
+        "LXX": "καὶ ἀφελεῖτε τέλος Κυρίῳ παρὰ τῶν ἀνθρώπων τῶν πολεμιστῶν τῶν ἐκπεπορευμένων εἰς τὴν παράταξιν, μίαν ψυχὴν ἀπὸ πεντακοσίων, ἀπὸ τῶν ἀνθρώπων καὶ ἀπὸ τῶν κτηνῶν καὶ ἀπὸ τῶν βοῶν καὶ ἀπὸ τῶν προβάτων καὶ ἀπὸ τῶν αἰγῶν·",
+        "VUL": "Et separabis partem Domino ab his qui pugnaverunt et fuerunt in bello, unam animam de quingentis, tam ex hominibus quam ex bobus et asinis et ovibus,",
+        "SYN": "и от воинов, ходивших на войну, возьми дань Господу, по одной душе из пятисот, из людей и из крупного скота, и из ослов и из мелкого скота;",
+        "NEO": "Tu prélèveras sur la part des soldats qui sont allés à la guerre un tribut pour \\+w Yahweh|strong=\"H3068\"\\+w**, savoir un sur cinq cents, gens, bœufs, ânes et brebis.",
+        "NAB": "You shall levy a tax for the LORD on the warriors who went out to combat: one out of every five hundred persons, oxen, asses and sheep",
+        "VAT_ES": "Además, debes separar para el Señor, como tributo de los guerreros que han ido al combate, una vida de cada quinientas, tanto de las personas como del ganado mayor, de los asnos y del ganado menor.",
+        "CEI": "Dalla parte spettante ai soldati che sono andati in guerra preleverai un contributo per il Signore: cioè l'uno per cinquecento delle persone e del grosso bestiame, degli asini e del bestiame minuto."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "מִ/מַּֽחֲצִיתָ֖/ם תִּקָּ֑חוּ וְ/נָתַתָּ֛ה לְ/אֶלְעָזָ֥ר הַ/כֹּהֵ֖ן תְּרוּמַ֥ת יְהוָֽה׃",
+        "LXX": "καὶ ἀπὸ τοῦ ἡμίσους αὐτῶν λήμψεσθε, καὶ δώσεις Ἐλεαζὰρ τῷ ἱερεῖ τὰς ἀπαρχὰς Κυρίου·",
+        "VUL": "et dabis eam Eleazaro sacerdoti, quia primitiæ Domini sunt.",
+        "SYN": "возьми это из половины их и отдай Елеазару священнику в возношение Господу;",
+        "NEO": "Vous le prendrez sur leur moitié et tu le donneras à Eléazar, le prêtre, comme prélèvement de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "in their half of the spoil you shall turn over to the priest Eleazar as a contribution to the LORD.",
+        "VAT_ES": "Esto lo tomarás de la mitad que les corresponda y se lo entregarás al sacerdote Eleazar como un tributo para el Señor.",
+        "CEI": "Lo prenderete sulla metà di loro spettanza e lo darai al sacerdote Eleazaro come offerta da fare con il rito di elevazione in onore del Signore."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "וּ/מִ/מַּחֲצִ֨ת בְּנֵֽי יִשְׂרָאֵ֜ל תִּקַּ֣ח אֶחָ֣ד אָחֻ֣ז מִן הַ/חֲמִשִּׁ֗ים מִן הָ/אָדָ֧ם מִן הַ/בָּקָ֛ר מִן הַ/חֲמֹרִ֥ים וּ/מִן הַ/צֹּ֖אן מִ/כָּל הַ/בְּהֵמָ֑ה וְ/נָתַתָּ֤ה אֹתָ/ם֙ לַ/לְוִיִּ֔ם שֹׁמְרֵ֕י מִשְׁמֶ֖רֶת מִשְׁכַּ֥ן יְהוָֽה׃",
+        "LXX": "καὶ ἀπὸ τοῦ ἡμίσους τοῦ τῶν υἱῶν Ἰσραὴλ λήμψῃ ἕνα ἀπὸ τῶν πεντήκοντα, ἀπὸ τῶν ἀνθρώπων καὶ ἀπὸ τῶν βοῶν καὶ ἀπὸ τῶν προβάτων καὶ ἀπὸ τῶν ὄνων καὶ ἀπὸ πάντων τῶν κτηνῶν, καὶ δώσεις αὐτὰ τοῖς Λευείταις τοῖς φυλάσσουσιν τὰς φυλακὰς ἐν τῇ σκηνῇ Κυρίου.",
+        "VUL": "Ex media quoque parte filiorum Israël accipies quinquagesimum caput hominum, et boum, et asinorum, et ovium, cunctorum animantium, et dabis ea Levitis, qui excubant in custodiis tabernaculi Domini.",
+        "SYN": "и из половины сынов Израилевых возьми по одной доле из пятидесяти, из людей, из крупного скота, из ослов и из мелкого скота, и отдай это левитам, служащим при скинии Господней.",
+        "NEO": "Sur la moitié qui revient aux enfants d’Israël, tu mettras à part un sur cinquante, gens, bœufs, ânes, brebis et tout bétail, et tu le donneras aux Lévites, qui ont la garde de la Demeure de \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "From the Israelites' half you shall take one out of every fifty persons, and the same from the different beasts, oxen, asses and sheep, and give them to the Levites, who have charge of the LORD'S Dwelling.\"",
+        "VAT_ES": "De la mitad que corresponda a los demás israelitas, tanto de las personas como de los animales –del ganado mayor, de los asnos y del ganado menor– tomarás una vida por cada cincuenta y se las entregarás a los levitas que realizan tareas en la Morada del Señor».",
+        "CEI": "Della metà che spetta agli Israeliti prenderai l'uno per cinquanta delle persone del grosso bestiame, degli asini e del bestiame minuto; lo darai ai leviti, che hanno la custodia della Dimora del Signore\"."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וַ/יַּ֣עַשׂ מֹשֶׁ֔ה וְ/אֶלְעָזָ֖ר הַ/כֹּהֵ֑ן כַּ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "καὶ ἐποίησεν Μωυσῆς καὶ Ἐλεαζὰρ ὁ ἱερεὺς καθὰ συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "Feceruntque Moyses et Eleazar sicut præceperat Dominus.",
+        "SYN": "И сделал Моисей и Елеазар священник, как повелел Господь Моисею.",
+        "NEO": "Moïse et Eléazar, le prêtre, firent comme \\+w Yahweh|strong=\"H3068\"\\+w** l’avait ordonné à Moïse.",
+        "NAB": "So Moses and the priest Eleazar did this, as the LORD had commanded Moses.",
+        "VAT_ES": "Moisés y el sacerdote Eleazar hicieron lo que el Señor había ordenado.",
+        "CEI": "Mosè e il sacerdote Eleazaro fecero come il Signore aveva ordinato a Mosè."
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וַ/יְהִי֙ הַ/מַּלְק֔וֹחַ יֶ֣תֶר הַ/בָּ֔ז אֲשֶׁ֥ר בָּזְז֖וּ עַ֣ם הַ/צָּבָ֑א צֹ֗אן שֵׁשׁ מֵא֥וֹת אֶ֛לֶף וְ/שִׁבְעִ֥ים אֶ֖לֶף וַ/חֲמֵֽשֶׁת אֲלָפִֽים׃",
+        "LXX": "καὶ ἐγενήθη τὸ πλεόνασμα τῆς προνομῆς ὃ ἐπρονόμευσαν οἱ ἄνδρες οἱ πολεμισταὶ ἀπὸ τῶν προβάτων ἑξακόσιαι χιλιάδες καὶ ἑβδομήκοντα καὶ πέντε χιλιάδες·",
+        "VUL": "Fuit autem præda, quam exercitus ceperat, ovium sexcenta septuaginta quinque millia,",
+        "SYN": "И было добычи, оставшейся от захваченного, что захватили бывшие на войне: мелкого скота шестьсот семьдесят пять тысяч,",
+        "NEO": "Les dépouilles, le reste du butin qu’avaient fait les combattants étaient de six cent soixante-quinze mille brebis,",
+        "NAB": "This booty, what was left of the loot which the soldiers had taken, amounted to six hundred and seventy-five thousand sheep,",
+        "VAT_ES": "El total del botín –además de los despojos que habían recogido las tropas– ascendió a 675.000 cabezas de ganado menor,",
+        "CEI": "Ora il bottino, cioè tutto ciò che rimaneva della preda fatta da coloro che erano stati in guerra, consisteva in seicentosettantacinquemila capi di bestiame minuto,"
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וּ/בָקָ֕ר שְׁנַ֥יִם וְ/שִׁבְעִ֖ים אָֽלֶף׃",
+        "LXX": "καὶ βόες, δύο καὶ ἑβδομήκοντα χιλιάδες·",
+        "VUL": "boum septuaginta duo millia,",
+        "SYN": "крупного скота семьдесят две тысячи,",
+        "NEO": "soixante-douze mille bœufs,",
+        "NAB": "seventy-two thousand oxen,",
+        "VAT_ES": "72.000 de ganado mayor,",
+        "CEI": "settantaduemila capi di grosso bestiame,"
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "וַ/חֲמֹרִ֕ים אֶחָ֥ד וְ/שִׁשִּׁ֖ים אָֽלֶף׃",
+        "LXX": "ὄνοι, μία καὶ ἑξήκοντα χιλιάδες·",
+        "VUL": "asinorum sexaginta millia et mille :",
+        "SYN": "ослов шестьдесят одна тысяча,",
+        "NEO": "soixante et un mille ânes,",
+        "NAB": "sixty-one thousand asses,",
+        "VAT_ES": "61.000 asnos,",
+        "CEI": "sessantunmila asini"
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "וְ/נֶ֣פֶשׁ אָדָ֔ם מִן הַ֨/נָּשִׁ֔ים אֲשֶׁ֥ר לֹֽא יָדְע֖וּ מִשְׁכַּ֣ב זָכָ֑ר כָּל נֶ֕פֶשׁ שְׁנַ֥יִם וּ/שְׁלֹשִׁ֖ים אָֽלֶף׃",
+        "LXX": "καὶ ψυχαὶ ἀνθρώπων ἀπὸ τῶν γυναικῶν αἳ οὐκ ἔγνωσαν κοίτην ἀνδρός, πᾶσαι ψυχαί, δύο καὶ τριάκοντα χιλιάδες.",
+        "VUL": "animæ hominum sexus feminei, quæ non cognoverant viros, triginta duo millia.",
+        "SYN": "людей, женщин, которые не знали мужеского ложа, всех душ тридцать две тысячи.",
+        "NEO": "et trente-deux mille d’entre les femmes qui n’avaient pas connu la couche d’un homme.",
+        "NAB": "and thirty-two thousand girls who were still virgins.",
+        "VAT_ES": "y 32.000 personas, a saber, las jóvenes que no habían tenido relaciones con un hombre.",
+        "CEI": "e trentaduemila persone, ossia donne che non si erano unite con uomini."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וַ/תְּהִי֙ הַֽ/מֶּחֱצָ֔ה חֵ֕לֶק הַ/יֹּצְאִ֖ים בַּ/צָּבָ֑א מִסְפַּ֣ר הַ/צֹּ֗אן שְׁלֹשׁ מֵא֥וֹת אֶ֨לֶף֙ וּ/שְׁלֹשִׁ֣ים אֶ֔לֶף וְ/שִׁבְעַ֥ת אֲלָפִ֖ים וַ/חֲמֵ֥שׁ מֵאֽוֹת׃",
+        "LXX": "καὶ ἐγενήθη τὸ ἡμίσευμα, ἡ μερὶς τῶν ἐκπεπορευμένων εἰς τὸν πόλεμον, ἐκ τοῦ ἀριθμοῦ τῶν προβάτων τριακόσιαι καὶ τριάκοντα χιλιάδες καὶ πεντακισχίλιοι καὶ πεντακόσιοι.",
+        "VUL": "Dataque est media pars his qui in prælio fuerant, ovium trecenta triginta septem millia quingentæ :",
+        "SYN": "Половина, доля ходивших на войну, по расчислению была: мелкого скота триста тридцать семь тысяч пятьсот,",
+        "NEO": "La moitié, part de ceux qui étaient allés à la guerre, fut de trois cent trente-sept mille cinq cents brebis,",
+        "NAB": "The half that fell to those who had gone out to combat was: three hundred and thirty-seven thousand five hundred sheep,",
+        "VAT_ES": "Por lo tanto, la mitad correspondiente a los que habían participado de la campaña fueron 337.500 cabezas de ganado menor,",
+        "CEI": "La metà, cioè la parte di quelli che erano andati in guerra, fu di trecentotrentasettemilacinquecento capi di bestiame minuto,"
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֛י הַ/מֶּ֥כֶס לַֽ/יהוָ֖ה מִן הַ/צֹּ֑אן שֵׁ֥שׁ מֵא֖וֹת חָמֵ֥שׁ וְ/שִׁבְעִֽים׃",
+        "LXX": "καὶ ἐγένετο τὸ τέλος Κυρίῳ ἀπὸ τῶν προβάτων ἑξακόσιοι ἑβδομήκοντα πέντε·",
+        "VUL": "e quibus in partem Domini supputatæ sunt oves sexcentæ septuaginta quinque :",
+        "SYN": "и дань Господу из мелкого скота шестьсот семьдесят пять;",
+        "NEO": "six cent soixante-quinze brebis pour le tribut de \\+w Yahweh|strong=\"H3068\"\\+w** ;",
+        "NAB": "of which six hundred and seventy-five fell as tax to the LORD;",
+        "VAT_ES": "y el tributo para el Señor fue de 675;",
+        "CEI": "dei quali seicentosettantacinque per il tributo al Signore;"
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "וְ/הַ֨/בָּקָ֔ר שִׁשָּׁ֥ה וּ/שְׁלֹשִׁ֖ים אָ֑לֶף וּ/מִכְסָ֥/ם לַ/יהוָ֖ה שְׁנַ֥יִם וְ/שִׁבְעִֽים׃",
+        "LXX": "καὶ βόες ἓξ καὶ τριάκοντα χιλιάδες, καὶ τὸ τέλος Κυρίῳ δύο καὶ ἑβδομήκοντα·",
+        "VUL": "et de bobus triginta sex millibus, boves septuaginta et duo :",
+        "SYN": "крупного скота тридцать шесть тысяч, и дань из них Господу семьдесят два;",
+        "NEO": "trente-six mille bœufs, dont soixante-douze pour le tribut de \\+w Yahweh|strong=\"H3068\"\\+w** ;",
+        "NAB": "thirty-six thousand oxen, of which seventy-two fell as tax to the LORD;",
+        "VAT_ES": "36.000 cabezas de ganado mayor, y el tributo para el Señor, 72;",
+        "CEI": "trentaseimila capi di grosso bestiame, dei quali settantadue per l'offerta al Signore;"
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "וַ/חֲמֹרִ֕ים שְׁלֹשִׁ֥ים אֶ֖לֶף וַ/חֲמֵ֣שׁ מֵא֑וֹת וּ/מִכְסָ֥/ם לַֽ/יהוָ֖ה אֶחָ֥ד וְ/שִׁשִּֽׁים׃",
+        "LXX": "καὶ ὄνοι τριάκοντα χιλιάδες καὶ φ’, καὶ τὸ τέλος Κυρίῳ εἷς καὶ ἑξήκοντα·",
+        "VUL": "de asinis triginta millibus quingentis, asini sexaginta unus :",
+        "SYN": "ослов тридцать тысяч пятьсот, и дань из них Господу шестьдесят один;",
+        "NEO": "trente mille cinq cents ânes, dont soixante-et-un pour le tribut de \\+w Yahweh|strong=\"H3068\"\\+w** ;",
+        "NAB": "thirty thousand five hundred asses, of which sixty-one fell as tax to the LORD;",
+        "VAT_ES": "30.500 asnos, y el tributo para el Señor, 61.",
+        "CEI": "trentamilacinquecento asini, dei quali sessantuno per l'offerta al Signore,"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וְ/נֶ֣פֶשׁ אָדָ֔ם שִׁשָּׁ֥ה עָשָׂ֖ר אָ֑לֶף וּ/מִכְסָ/ם֙ לַֽ/יהוָ֔ה שְׁנַ֥יִם וּ/שְׁלֹשִׁ֖ים נָֽפֶשׁ׃",
+        "LXX": "καὶ ψυχαὶ ἀνθρώπων ἑκκαίδεκα χιλιάδες, καὶ τὸ τέλος αὐτῶν Κυρίῳ δύο καὶ τριάκοντα ψυχαί.",
+        "VUL": "de animabus hominum sedecim millibus, cesserunt in partem Domini triginta duæ animæ.",
+        "SYN": "людей шестнадцать тысяч, и дань из них Господу тридцать две души.",
+        "NEO": "et seize mille personnes, trente-deux personnes pour le tribut de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "and sixteen thousand persons, of whom thirty-two fell as tax to the LORD.",
+        "VAT_ES": "Las personas fueron 16.000, y el tributo para el Señor, 32.",
+        "CEI": "e sedicimila persone, delle quali trentadue per l'offerta al Signore."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "וַ/יִּתֵּ֣ן מֹשֶׁ֗ה אֶת מֶ֨כֶס֙ תְּרוּמַ֣ת יְהוָ֔ה לְ/אֶלְעָזָ֖ר הַ/כֹּהֵ֑ן כַּ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "καὶ ἔδωκεν Μωυσῆς τὸ τέλος Κυρίῳ τὸ ἀφαίρεμα τοῦ θεοῦ Ἐλεαζὰρ τῷ ἱερεῖ, καθὰ συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "Tradiditque Moyses numerum primitiarum Domini Eleazaro sacerdoti, sicut fuerat ei imperatum,",
+        "SYN": "И отдал Моисей дань, возношение Господу, Елеазару священнику, как повелел Господь Моисею.",
+        "NEO": "Moïse donna à Eléazar, le prêtre, le tribut prélevé pour \\+w Yahweh|strong=\"H3068\"\\+w**, ainsi que \\+w Yahweh|strong=\"H3068\"\\+w** l’avait ordonné à Moïse.",
+        "NAB": "The taxes contributed to the LORD, Moses gave to the priest Eleazar, as the LORD had commanded him.",
+        "VAT_ES": "Moisés entregó al sacerdote Eleazar el tributo recogido para el Señor, como él se lo había ordenado.",
+        "CEI": "Mosè diede al sacerdote Eleazaro il contributo dell'offerta prelevata per il Signore, come il Signore gli aveva ordinato."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "וּ/מִֽ/מַּחֲצִ֖ית בְּנֵ֣י יִשְׂרָאֵ֑ל אֲשֶׁר֙ חָצָ֣ה מֹשֶׁ֔ה מִן הָ/אֲנָשִׁ֖ים הַ/צֹּבְאִֽים׃",
+        "LXX": "ἀπὸ ἡμισεύματος τῶν υἱῶν Ἰσραήλ, οὓς διεῖλεν Μωυσῆς ἀπὸ τῶν ἀνδρῶν τῶν πολεμιστῶν·",
+        "VUL": "ex media parte filiorum Israël, quam separaverat his qui in prælio fuerant.",
+        "SYN": "И из половины сынов Израилевых, которую отделил Моисей у бывших на войне;",
+        "NEO": "Quant à la moitié revenant aux enfants d’Israël, que Moïse avait séparée de celle des combattants,",
+        "NAB": "The half for the other Israelites, which fell to the community when Moses had taken it from the soldiers, was:",
+        "VAT_ES": "La parte correspondiente a los otros israelitas –que Moisés había tomado del botín de los combatientes–",
+        "CEI": "La metà che spettava agli Israeliti, dopo che Mosè ebbe fatto la spartizione con gli uomini andati in guerra,"
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "וַ/תְּהִ֛י מֶחֱצַ֥ת הָ/עֵדָ֖ה מִן הַ/צֹּ֑אן שְׁלֹשׁ מֵא֥וֹת אֶ֨לֶף֙ וּ/שְׁלֹשִׁ֣ים אֶ֔לֶף שִׁבְעַ֥ת אֲלָפִ֖ים וַ/חֲמֵ֥שׁ מֵאֽוֹת׃",
+        "LXX": "καὶ ἐγένετο τὸ ἡμίσευμα ἀπὸ τῆς συναγωγῆς ἀπὸ τῶν προβάτων τριακόσιαι χιλιάδες καὶ τριάκοντα χιλιάδες καὶ ἑπτακισχίλια καὶ πεντακόσια,",
+        "VUL": "De media vero parte, quæ contigerat reliquæ multitudini, id est, de ovibus trecentis triginta septem millibus quingentis,",
+        "SYN": "половина же _на_ _долю_ общества была: мелкого скота триста тридцать семь тысяч пятьсот,",
+        "NEO": "cette moitié formant la part de l’assemblée fut de trois cent trente-sept mille cinq cents brebis,",
+        "NAB": "three hundred and thirty-seven thousand five hundred sheep,",
+        "VAT_ES": "sumó 337.500 cabezas de ganado menor,",
+        "CEI": "la metà spettante alla comunità fu di trecentotrentasettemilacinquecento capi di bestiame minuto,"
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "וּ/בָקָ֕ר שִׁשָּׁ֥ה וּ/שְׁלֹשִׁ֖ים אָֽלֶף׃",
+        "LXX": "καὶ βόες ἓξ καὶ τριάκοντα χιλιάδες,",
+        "VUL": "et de bobus triginta sex millibus,",
+        "SYN": "крупного скота тридцать шесть тысяч,",
+        "NEO": "trente-six mille bœufs,",
+        "NAB": "thirty-six thousand oxen,",
+        "VAT_ES": "36.000 cabezas de ganado mayor,",
+        "CEI": "trentaseimila capi di grosso bestiame,"
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "וַ/חֲמֹרִ֕ים שְׁלֹשִׁ֥ים אֶ֖לֶף וַ/חֲמֵ֥שׁ מֵאֽוֹת׃",
+        "LXX": "ὄνοι τριάκοντα χιλιάδες καὶ πεντακόσιοι,",
+        "VUL": "et de asinis triginta millibus quingentis,",
+        "SYN": "ослов тридцать тысяч пятьсот,",
+        "NEO": "trente mille cinq cents ânes",
+        "NAB": "thirty thousand five hundred asses,",
+        "VAT_ES": "30.500 asnos,",
+        "CEI": "trentamilacinquecento asini"
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "וְ/נֶ֣פֶשׁ אָדָ֔ם שִׁשָּׁ֥ה עָשָׂ֖ר אָֽלֶף׃",
+        "LXX": "καὶ ψυχαὶ ἀνθρώπων ἓξ καὶ δέκα χιλιάδες·",
+        "VUL": "et de hominibus sedecim millibus,",
+        "SYN": "людей шестнадцать тысяч.",
+        "NEO": "et seize mille personnes.",
+        "NAB": "and sixteen thousand persons.",
+        "VAT_ES": "y 16.000 personas.",
+        "CEI": "e sedicimila persone."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֨ח מֹשֶׁ֜ה מִ/מַּחֲצִ֣ת בְּנֵֽי יִשְׂרָאֵ֗ל אֶת הָֽ/אָחֻז֙ אֶחָ֣ד מִן הַ/חֲמִשִּׁ֔ים מִן הָ/אָדָ֖ם וּ/מִן הַ/בְּהֵמָ֑ה וַ/יִּתֵּ֨ן אֹתָ֜/ם לַ/לְוִיִּ֗ם שֹֽׁמְרֵי֙ מִשְׁמֶ֨רֶת֙ מִשְׁכַּ֣ן יְהוָ֔ה כַּ/אֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת מֹשֶֽׁה׃",
+        "LXX": "καὶ ἔλαβεν Μωυσῆς ἀπὸ τοῦ ἡμισεύματος τῶν υἱῶν Ἰσραὴλ τὸ ἓν ἀπὸ τῶν πεντήκοντα, ἀπὸ τῶν ἀνθρώπων καὶ ἀπὸ τῶν κτηνῶν, καὶ ἔδωκεν αὐτὰ τοῖς Λευείταις τοῖς φυλάσσουσιν τὰς φυλακὰς τῆς σκηνῆς Κυρίου, ὃν τρόπον συνέταξεν Κύριος τῷ Μωυσῇ.",
+        "VUL": "tulit Moyses quinquagesimum caput, et dedit Levitis, qui excubabant in tabernaculo Domini, sicut præceperat Dominus.",
+        "SYN": "Из половины сынов Израилевых взял Моисей одну пятидесятую часть из людей и из скота и отдал это левитам, исполняющим службу при скинии Господней, как повелел Господь Моисею.",
+        "NEO": "Sur cette moitié qui revenait aux enfants d’Israël, Moïse prit un sur cinquante et le donna aux Lévites, qui ont la garde de la Demeure de \\+w Yahweh|strong=\"H3068\"\\+w**, ainsi que \\+w Yahweh|strong=\"H3068\"\\+w** l’avait ordonné à Moïse.",
+        "NAB": "From this, the Israelites' share, Moses, as the LORD had ordered, took one out of every fifty, both of persons and of beasts, and gave them to the Levites, who had charge of the LORD'S Dwelling.",
+        "VAT_ES": "De esta mitad correspondiente a los israelitas, Moisés tomó cada uno de cada cincuenta hombres y animales, y se los entregó a los levitas que realizaban tareas en la Morada del Señor, como el Señor se lo había ordenado.",
+        "CEI": "Da questa metà che spettava agli Israeliti, Mosè prese l'uno per cinquanta degli uomini e degli animali e li diede ai leviti che hanno la custodia della Dimora del Signore, come il Signore aveva ordinato a Mosè."
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "וַֽ/יִּקְרְבוּ֙ אֶל מֹשֶׁ֔ה הַ/פְּקֻדִ֕ים אֲשֶׁ֖ר לְ/אַלְפֵ֣י הַ/צָּבָ֑א שָׂרֵ֥י הָ/אֲלָפִ֖ים וְ/שָׂרֵ֥י הַ/מֵּאֽוֹת׃",
+        "LXX": "Καὶ προσῆλθον πρὸς Μωυσῆν πάντες οἱ καθεσταμένοι εἰς τὰς χιλιαρχίας τῆς δυνάμεως χιλίαρχοι καὶ ἑκατόνταρχοι,",
+        "VUL": "Cumque accessissent principes exercitus ad Moysen, et tribuni, centurionesque, dixerunt :",
+        "SYN": "И пришли к Моисею начальники над тысячами войска, тысяченачальники и стоначальники,",
+        "NEO": "Les commandants des milliers de l’armée, les chefs de milliers et les chefs de centaines, s’approchèrent de Moïse",
+        "NAB": "Then the officers who had been clan and company commanders of the army came up to Moses",
+        "VAT_ES": "Los comandantes de las tropas y los jefes de los regimientos de mil y cien soldados se acercaron a Moisés,",
+        "CEI": "I comandanti delle migliaia dell'esercito, capi di migliaia e capi di centinaia, si avvicinarono a Mosè e gli dissero:"
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "וַ/יֹּֽאמְרוּ֙ אֶל מֹשֶׁ֔ה עֲבָדֶ֣י/ךָ נָֽשְׂא֗וּ אֶת רֹ֛אשׁ אַנְשֵׁ֥י הַ/מִּלְחָמָ֖ה אֲשֶׁ֣ר בְּ/יָדֵ֑/נוּ וְ/לֹא נִפְקַ֥ד מִמֶּ֖/נּוּ אִֽישׁ׃",
+        "LXX": "καὶ εἶπαν πρὸς Μωυσῆν Οἱ παῖδές σου εἰλήφασιν τὸ κεφάλαιον τῶν ἀνδρῶν τῶν πολεμιστῶν τῶν παρ’ ἡμῶν, καὶ οὐ διαπεφώνηκεν ἀπ’ αὐτῶν οὐδὲ εἷς·",
+        "VUL": "Nos servi tui recensuimus numerum pugnatorum, quos habuimus sub manu nostra : et ne unus quidem defuit.",
+        "SYN": "и сказали Моисею: рабы твои сосчитали воинов, которые нам поручены, и не убыло ни одного из них;",
+        "NEO": "et lui dirent : « Tes serviteurs ont compté les combattants qui étaient sous nos ordres, et il ne manque pas un homme d’entre nous.",
+        "NAB": "and said to him, \"Your servants have counted up the soldiers under our command, and not one is missing.",
+        "VAT_ES": "y el dijeron: «Hemos hechos el recuento de los soldados que están en nuestras órdenes y no falta ni uno solo.",
+        "CEI": "\"I tuoi servi hanno fatto il computo dei soldati che erano sotto i nostri ordini e non ne manca neppure uno."
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "WLC": "וַ/נַּקְרֵ֞ב אֶת קָרְבַּ֣ן יְהוָ֗ה אִישׁ֩ אֲשֶׁ֨ר מָצָ֤א כְלִֽי זָהָב֙ אֶצְעָדָ֣ה וְ/צָמִ֔יד טַבַּ֖עַת עָגִ֣יל וְ/כוּמָ֑ז לְ/כַפֵּ֥ר עַל נַפְשֹׁתֵ֖י/נוּ לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ προσενηνόχαμεν τὸ δῶρον Κυρίῳ ἀνὴρ ὃ εὗρεν σκεῦος χρυσοῦν καὶ χλίδωνα καὶ ψέλιον καὶ δακτύλιον καὶ περιδέξιον καὶ ἐμπλόκιον, ἐξιλάσασθαι περὶ ἡμῶν ἔναντι Κυρίου.",
+        "VUL": "Ob hanc causam offerimus in donariis Domini singuli quod in præda auri potuimus invenire, periscelides et armillas, annulos et dextralia, ac murænulas, ut depreceris pro nobis Dominum.",
+        "SYN": "и _вот,_ мы принесли приношение Господу, кто что достал из золотых вещей: цепочки, запястья, перстни, серьги и привески, для очищения душ наших пред Господом.",
+        "NEO": "C’est pourquoi nous apportons comme offrande à \\+w Yahweh|strong=\"H3068\"\\+w** les objets d’or que chacun de nous a trouvés, bracelets, chaînettes, anneaux, pendants d’oreilles et colliers, pour faire l’expiation pour nous devant \\+w Yahweh|strong=\"H3068\"\\+w**. »",
+        "NAB": "So, to make atonement for ourselves before the LORD, each of us will bring as an offering to the LORD some gold article he has picked up, such as an anklet, a bracelet, a ring, an earring, or a necklace.\"",
+        "VAT_ES": "Por eso hemos traído, como ofrenda al Señor, los objetos de oro que ha recogido cada uno: pulseras, brazaletes, anillos, aros y pendientes. Así se hará en favor nuestro el rito de expiación delante del Señor».",
+        "CEI": "Per questo portiamo, in offerta al Signore, ognuno quello che ha trovato di oggetti d'oro: bracciali, braccialetti, anelli, pendenti, collane, per il rito espiatorio per le nostre persone davanti al Signore\"."
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֨ח מֹשֶׁ֜ה וְ/אֶלְעָזָ֧ר הַ/כֹּהֵ֛ן אֶת הַ/זָּהָ֖ב מֵֽ/אִתָּ֑/ם כֹּ֖ל כְּלִ֥י מַעֲשֶֽׂה׃",
+        "LXX": "καὶ ἔλαβεν Μωυσῆς καὶ Ἐλεαζὰρ ὁ ἱερεὺς τὸ χρυσίον παρ’ αὐτῶν, πᾶν σκεῦος εἰργασμένον·",
+        "VUL": "Susceperuntque Moyses et Eleazar sacerdos omne aurum in diversis speciebus,",
+        "SYN": "И взял у них Моисей и Елеазар священник золото во всех этих изделиях;",
+        "NEO": "Moïse et Eléazar, le prêtre, reçurent d’eux cet or, tous ces objets bien travaillés.",
+        "NAB": "Moses and the priest Eleazar accepted this gold from them, all of it in well-wrought articles.",
+        "VAT_ES": "Entonces Moisés y el sacerdote Eleazar recibieron de ellos todo ese oro, todas esas joyas.",
+        "CEI": "Mosè e il sacerdote Eleazaro presero dalle loro mani quell'oro, tutti gli oggetti lavorati."
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "WLC": "וַ/יְהִ֣י כָּל זְהַ֣ב הַ/תְּרוּמָ֗ה אֲשֶׁ֤ר הֵרִ֨ימוּ֙ לַֽ/יהוָ֔ה שִׁשָּׁ֨ה עָשָׂ֥ר אֶ֛לֶף שְׁבַע מֵא֥וֹת וַ/חֲמִשִּׁ֖ים שָׁ֑קֶל מֵ/אֵת֙ שָׂרֵ֣י הָֽ/אֲלָפִ֔ים וּ/מֵ/אֵ֖ת שָׂרֵ֥י הַ/מֵּאֽוֹת׃",
+        "LXX": "καὶ ἐγένετο πᾶν τὸ χρυσίον, τὸ ἀφαίρεμα ὃ ἀφεῖλον Κυρίῳ, ἓξ καὶ δέκα χιλιάδες καὶ ἑπτακόσιοι καὶ πεντήκοντα σίκλοι, παρὰ τῶν χιλιάρχων καὶ παρὰ τῶν ἑκατοντάρχων.",
+        "VUL": "pondo sedecim millia septingentos quinquaginta siclos, a tribunis et centurionibus.",
+        "SYN": "и было всего золота, которое принесено в возношение Господу, шестнадцать тысяч семьсот пятьдесят сиклей, от тысяченачальников и стоначальников.",
+        "NEO": "Tout l’or prélevé qu’ils présentèrent à \\+w Yahweh|strong=\"H3068\"\\+w** de la part des chefs de milliers et des chefs de centaines, fut de seize mille sept cent cinquante sicles.",
+        "NAB": "The gold that they gave as a contribution to the LORD amounted in all to sixteen thousand seven hundred and fifty shekels. This was from the clan and company commanders;",
+        "VAT_ES": "El oro que los oficiales de los regimientos de mil y cien soldados ofrecieron como tributo al Señor, llegó a un total de dieciséis mil setecientos cincuenta siclos.",
+        "CEI": "Tutto l'oro dell'offerta, che essi consacrarono al Signore con il rito dell'elevazione, da parte dei capi di migliaia e dei capi di centinaia, pesava sedicimilasettecentocinquanta sicli."
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "WLC": "אַנְשֵׁי֙ הַ/צָּבָ֔א בָּזְז֖וּ אִ֥ישׁ לֽ/וֹ׃",
+        "LXX": "καὶ οἱ ἄνδρες οἱ πολεμισταὶ ἐπρονόμευσαν ἕκαστος ἑαυτῷ.",
+        "VUL": "Unusquisque enim quod in præda rapuerat, suum erat.",
+        "SYN": "Воины грабили каждый для себя.",
+        "NEO": "Les hommes de la troupe eurent chacun leur butin pour eux.",
+        "NAB": "what the common soldiers had looted each one kept for himself.",
+        "VAT_ES": "Entre la tropa, en cambio, cada uno guardó para sí lo que había recogido.",
+        "CEI": "Gli uomini dell'esercito si tennero il bottino che ognuno aveva fatto per conto suo."
+      }
+    },
+    "54": {
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "WLC": "וַ/יִּקַּ֨ח מֹשֶׁ֜ה וְ/אֶלְעָזָ֤ר הַ/כֹּהֵן֙ אֶת הַ/זָּהָ֔ב מֵ/אֵ֛ת שָׂרֵ֥י הָ/אֲלָפִ֖ים וְ/הַ/מֵּא֑וֹת וַ/יָּבִ֤אוּ אֹת/וֹ֙ אֶל אֹ֣הֶל מוֹעֵ֔ד זִכָּר֥וֹן לִ/בְנֵֽי יִשְׂרָאֵ֖ל לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἔλαβεν Μωυσῆς καὶ Ἐλεαζὰρ ὁ ἱερεὺς τὸ χρυσίον παρὰ τῶν χιλιάρχων καὶ παρὰ τῶν ἑκατοντάρχων, καὶ εἰσήνεγκεν αὐτὰ εἰς τὴν σκηνὴν τοῦ μαρτυρίου, μνημόσυνον τῶν υἱῶν Ἰσραὴλ ἔναντι Κυρίου.",
+        "VUL": "Et susceptum intulerunt in tabernaculum testimonii, in monimentum filiorum Israël coram Domino.",
+        "SYN": "И взял Моисей и Елеазар священник золото от тысяченачальников и стоначальников, и принесли его в скинию собрания, в память сынов Израилевых пред Господом.",
+        "NEO": "Moïse et Eléazar, le prêtre, ayant pris l’or des chefs de milliers et des chefs de centaines, l’apportèrent dans la tente de réunion, comme mémorial pour les enfants d’Israël devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Moses, then, and the priest Eleazar accepted the gold from the clan and company commanders, and put it in the meeting tent as a memorial for the Israelites before the LORD.",
+        "VAT_ES": "Moisés y el sacerdote Eleazar recibieron el oro de los oficiales, y lo llevaron a la Carpa del Encuentro, como memorial de los israelitas delante del Señor.",
+        "CEI": "Mosè e il sacerdote Eleazaro presero l'oro dei capi di migliaia e di centinaia e lo portarono nella tenda del convegno come memoriale per gli Israeliti davanti al Signore."
+      }
+    }
+  }
+}

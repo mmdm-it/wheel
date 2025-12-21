@@ -1,0 +1,104 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_070",
+  "book_key": "PSAL",
+  "sequence": 70,
+  "chapter_in": {
+    "MT": 70,
+    "VUL": 69,
+    "LXX": 69
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ֝/מְנַצֵּ֗חַ לְ/דָוִ֥ד לְ/הַזְכִּֽיר׃",
+        "LXX": "Τῷ Δαυείδ, υἱῶν Ἰωναδὰβ καὶ τῶν πρώτων αἰχμαλωτισθέντων. Ὁ θεὸς, ἐπὶ σοὶ ἤλπισα, μὴ καταισχυνθείην εἰς τὸν αἰῶνα.",
+        "VUL": "Psalmus David, filiorum Jonadab, et priorum captivorum. [In te, Domine, speravi ; non confundar in æternum./",
+        "SYN": "На Тебя, Господи, уповаю, да не постыжусь вовек.",
+        "NEO": "Au maître de chant. De David. Pour faire souvenir.",
+        "NAB": "For the leader; of David. For remembrance.",
+        "CEI": "Al maestro del coro. Di Davide. In memoria."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "אֱלֹהִ֥ים לְ/הַצִּילֵ֑/נִי יְ֝הוָ֗ה לְ/עֶזְרָ֥תִ/י חֽוּשָֽׁ/ה׃",
+        "LXX": "ἐν τῇ δικαιοσύνῃ σου ῥῦσαί με καὶ ἐξελοῦ με, κλῖνον πρὸς μὲ τὸ οὖς σου καὶ σῶσόν με.",
+        "VUL": "In justitia tua libera me, et eripe me :/ inclina ad me aurem tuam, et salva me./",
+        "SYN": "По правде Твоей избавь меня и освободи меня; приклони ухо Твое ко мне и спаси меня.",
+        "NEO": "O Dieu, hâte-toi de me délivrer ! Seigneur, hâte-toi de me secourir !",
+        "NAB": "Graciously rescue me, God! Come quickly to help me, LORD!",
+        "VAT_ES": "&iexcl;Líbrame, Dios mío!",
+        "CEI": "Vieni a salvarmi, o Dio, vieni presto, Signore, in mio aiuto."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "יֵבֹ֣שׁוּ וְ/יַחְפְּרוּ֮ מְבַקְשֵׁ֪י נַ֫פְשִׁ֥/י יִסֹּ֣גוּ אָ֭חוֹר וְ/יִכָּלְמ֑וּ חֲ֝פֵצֵ֗י רָעָתִֽ/י׃",
+        "LXX": "γενοῦ μοι εἰς θεὸν ὑπερασπιστήν, εἰς τόπον ὀχυρὸν τοῦ σῶσαί με· ὅτι στερέωμά μου καὶ καταφυγή μου εἶ σύ.",
+        "VUL": "Esto mihi in Deum protectorem,/ et in locum munitum, ut salvum me facias :/ quoniam firmamentum meum et refugium meum es tu./",
+        "SYN": "Будь мне твердым прибежищем, куда я всегда мог бы укрываться; Ты заповедал спасти меня, ибо твердыня моя и крепость моя - Ты.",
+        "NEO": "Qu’ils soient honteux et confus, ceux qui cherchent mon âme ! Qu’ils reculent et rougissent ceux qui désirent ma perte !",
+        "NAB": "Confound and put to shame those who seek my life. Turn back in disgrace those who desire my ruin.",
+        "VAT_ES": "Que se averg&uuml;encen y sean humillados",
+        "CEI": "Siano confusi e arrossiscano quanti attentano alla mia vita. Retrocedano e siano svergognati quanti vogliono la mia rovina."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "יָ֭שׁוּבוּ עַל עֵ֣קֶב בָּשְׁתָּ֑/ם הָ֝/אֹמְרִ֗ים הֶ֘אָ֥ח הֶאָֽח׃",
+        "LXX": "ὁ θεός, ῥῦσαί με ἐκ χειρὸς ἁμαρτωλοῦ, ἐκ χειρὸς παρανομοῦντος καὶ ἀδικοῦντος·",
+        "VUL": "Deus meus, eripe me de manu peccatoris,/ et de manu contra legem agentis, et iniqui :/",
+        "SYN": "Боже мой! избавь меня из руки нечестивого, из руки беззаконника и притеснителя,",
+        "NEO": "Qu’ils retournent en arrière à cause de leur honte, ceux qui disent : « Ah ! ah ! »",
+        "NAB": "Let those who say \"Aha!\" turn back in their shame.",
+        "VAT_ES": "que vuelvan la espalda avergonzados los que se ríen de mí.",
+        "CEI": "Per la vergogna si volgano indietro quelli che mi deridono."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "יָ֘שִׂ֤ישׂוּ וְ/יִשְׂמְח֨וּ בְּ/ךָ֗ כָּֽל מְבַ֫קְשֶׁ֥י/ךָ וְ/יֹאמְר֣וּ תָ֭מִיד יִגְדַּ֣ל אֱלֹהִ֑ים אֹ֝הֲבֵ֗י יְשׁוּעָתֶֽ/ךָ׃",
+        "LXX": "ὅτι σὺ εἶ ἡ ὑπομονή μου, κύριε· Κύριος ἡ ἐλπίς μου ἐκ νεότητός μου.",
+        "VUL": "quoniam tu es patientia mea, Domine ;/ Domine, spes mea a juventute mea./",
+        "SYN": "ибо Ты - надежда моя, Господи Боже, упование мое от юности моей.",
+        "NEO": "Qu’ils soient dans l’allégresse et se réjouissent en toi tous ceux qui te cherchent ! Qu’ils disent sans cesse : « Gloire à Dieu », ceux qui aiment ton salut !",
+        "NAB": "But may all who seek you rejoice and be glad in you. May those who long for your help always say, \"God be glorified!\"",
+        "VAT_ES": "Que se alegren y regocijen en ti",
+        "CEI": "Gioia e allegrezza grande per quelli che ti cercano; dicano sempre: \"Dio è grande\" quelli che amano la tua salvezza."
+      }
+    }
+  }
+}

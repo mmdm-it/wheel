@@ -1,0 +1,409 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GALA_001",
+  "book_key": "GALA",
+  "sequence": 1,
+  "chapter_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Παῦλος ἀπόστολος οὐκ ἀπ’ ἀνθρώπων, οὐδὲ δι’ ἀνθρώπου, ἀλλὰ διὰ Ἰησοῦ χριστοῦ, καὶ θεοῦ πατρὸς τοῦ ἐγείραντος αὐτὸν ἐκ νεκρῶν,",
+        "VUL": "Paulus, Apostolus non ab hominibus, neque per hominem, sed per Jesum Christum, et Deum Patrem, qui suscitavit eum a mortuis :",
+        "SYN": "Павел Апостол, _избранный_ не человеками и не через человека, но Иисусом Христом и Богом Отцем, воскресившим Его из мертвых,",
+        "NEO": "Paul, apôtre, non de la part des hommes, ni par l’intermédiaire d’un homme, mais par Jésus-Christ et Dieu le Père, qui l’a ressuscité d’entre les morts,+ 1:1 I, 1. Paul affirme deux choses : 1. Sa mission ne vient pas des hommes, mais de Dieu le Père, source première de toute mission légitime. 2. Elle ne lui a pas été conférée par un homme : il la tient directement de J.-C. ressuscité.*",
+        "NAB": "Paul, an apostle not from human beings nor through a human being but through Jesus Christ and God the Father who raised him from the dead,",
+        "VAT_ES": "Pablo, Apóstol –no de parte de hombres ni por la mediación de un hombre, sino por Jesucristo y por Dios Padre que lo resucitó de entre los muertos–",
+        "CEI": "Paolo, Silvano e Timòteo alla Chiesa dei Tessalonicesi che è in Dio Padre e nel Signore Gesù Cristo: grazia a voi e pace!"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "καὶ οἱ σὺν ἐμοὶ πάντες ἀδελφοί, ταῖς ἐκκλησίαις τῆς Γαλατίας·",
+        "VUL": "et qui mecum sunt omnes fratres, ecclesiis Galatiæ.",
+        "SYN": "и все находящиеся со мною братия -- церквам Галатийским:",
+        "NEO": "ainsi que tous les frères qui sont avec moi, aux Églises de Galatie ;+ 1:2 2. Les Églises de Galatie, pour les uns, la Galatie proprement dite, mais, pour les autres, la province romaine de ce nom.*",
+        "NAB": "and all the brothers who are with me, to the churches of Galatia:",
+        "VAT_ES": "y todos los hermanos que están conmigo, saludamos a las Iglesias de Galacia.",
+        "CEI": "Ringraziamo sempre Dio per tutti voi, ricordandovi nelle nostre preghiere, continuamente"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "χάρις ὑμῖν καὶ εἰρήνη ἀπὸ θεοῦ πατρός, καὶ κυρίου ἡμῶν Ἰησοῦ χριστοῦ,",
+        "VUL": "Gratia vobis, et pax a Deo Patre, et Domino nostro Jesu Christo,",
+        "SYN": "благодать вам и мир от Бога Отца и Господа нашего Иисуса Христа,",
+        "NEO": "à tous grâce et paix de la part de Dieu le Père et de notre Seigneur Jésus-Christ,",
+        "NAB": "grace to you and peace from God our Father and the Lord Jesus Christ,",
+        "VAT_ES": "Llegue a ustedes la gracia y la paz que proceden de Dios, nuestro Padre, y del Señor Jesucristo,",
+        "CEI": "memori davanti a Dio e Padre nostro del vostro impegno nella fede, della vostra operosità nella carità e della vostra costante speranza nel Signore nostro Gesù Cristo."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "τοῦ δόντος ἑαυτὸν περὶ τῶν ἁμαρτιῶν ἡμῶν, ὅπως ἐξέληται ἡμᾶς ἐκ τοῦ ἐνεστῶτος αἰῶνος πονηροῦ, κατὰ τὸ θέλημα τοῦ θεοῦ καὶ πατρὸς ἡμῶν·",
+        "VUL": "qui dedit semetipsum pro peccatis nostris, ut eriperet nos de præsenti sæculo nequam, secundum voluntatem Dei et Patris nostri,",
+        "SYN": "Который отдал Себя Самого за грехи наши, чтобы избавить нас от настоящего лукавого века, по воле Бога и Отца нашего;",
+        "NEO": "qui s’est donné lui-même pour nos péchés, afin de nous arracher à la corruption du siècle présent, selon la volonté de notre Dieu et Père,",
+        "NAB": "who gave himself for our sins that he might rescue us from the present evil age in accord with the will of our God and Father,",
+        "VAT_ES": "que se entregó por nuestros pecados para librarnos de este mundo perverso, conforme a la voluntad de Dios, nuestro Padre,",
+        "CEI": "Noi ben sappiamo, fratelli amati da Dio, che siete stati eletti da lui."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "ᾧ ἡ δόξα εἰς τοὺς αἰῶνας τῶν αἰώνων. Ἀμήν.",
+        "VUL": "cui est gloria in sæcula sæculorum. Amen.",
+        "SYN": "Ему слава во веки веков. Аминь.",
+        "NEO": "à qui soit la gloire aux siècles des siècles ! Amen !+ 1:5 5. Vulg. à qui est la gloire. Le texte grec n’a pas le verbe.*",
+        "NAB": "to whom be glory forever and ever. Amen.",
+        "VAT_ES": "a quien sea la gloria para siempre. Amén.",
+        "CEI": "Il nostro vangelo, infatti, non si è diffuso fra voi soltanto per mezzo della parola, ma anche con potenza e con Spirito Santo e con profonda convinzione, come ben sapete che siamo stati in mezzo a voi per il vostro bene."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "¶Θαυμάζω ὅτι οὕτως ταχέως μετατίθεσθε ἀπὸ τοῦ καλέσαντος ὑμᾶς ἐν χάριτι χριστοῦ εἰς ἕτερον εὐαγγέλιον·",
+        "VUL": "Miror quod sic tam cito transferimini ab eo qui vos vocavit in gratiam Christi in aliud Evangelium :",
+        "SYN": "Удивляюсь, что вы от призвавшего вас благодатью Христовою так скоро переходите к иному благовествованию,",
+        "NEO": "Je m’étonne que si vite vous vous laissiez détourner de celui qui vous a appelés en la grâce de Jésus-Christ, pour passer à un autre Évangile :+ 1:6 6. Un autre Évangile, la doctrine des judaïsants.*",
+        "NAB": "I am amazed that you are so quickly forsaking the one who called you by (the) grace (of Christ) for a different gospel",
+        "VAT_ES": "Me sorprende que ustedes abandonen tan pronto al que los llamó por la gracia de Cristo, para seguir otro evangelio.",
+        "CEI": "E voi siete diventati imitatori nostri e del Signore, avendo accolto la parola con la gioia dello Spirito Santo anche in mezzo a grande tribolazione,"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "ὃ οὐκ ἔστιν ἄλλο, εἰ μή τινές εἰσιν οἱ ταράσσοντες ὑμᾶς καὶ θέλοντες μεταστρέψαι τὸ εὐαγγέλιον τοῦ χριστοῦ.",
+        "VUL": "quod non est aliud, nisi sunt aliqui qui vos conturbant, et volunt convertere Evangelium Christi.",
+        "SYN": "которое _впрочем_ не иное, а только есть люди, смущающие вас и желающие превратить благовествование Христово.",
+        "NEO": "non certes qu’il y en ait un autre ; seulement il y a des gens qui vous troublent et qui veulent changer l’Évangile du Christ.",
+        "NAB": "(not that there is another). But there are some who are disturbing you and wish to pervert the gospel of Christ.",
+        "VAT_ES": "No es que haya otro, sino que hay gente que los está perturbando y quiere alterar el Evangelio de Cristo.",
+        "CEI": "così da diventare modello a tutti i credenti che sono nella Macedonia e nell'Acaia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἀλλὰ καὶ ἐὰν ἡμεῖς ἢ ἄγγελος ἐξ οὐρανοῦ εὐαγγελίζηται ὑμῖν παρ’ ὃ εὐηγγελισάμεθα ὑμῖν, ἀνάθεμα ἔστω.",
+        "VUL": "Sed licet nos aut angelus de cælo evangelizet vobis præterquam quod evangelizavimus vobis, anathema sit.",
+        "SYN": "Но если бы даже мы или Ангел с неба стал благовествовать вам не то, что мы благовествовали вам, да будет анафема.",
+        "NEO": "Mais quand nous-mêmes, quand un ange venu du ciel vous annoncerait un autre Évangile que celui que nous vous avons annoncé, qu’il soit anathème !",
+        "NAB": "But even if we or an angel from heaven should preach (to you) a gospel other than the one that we preached to you, let that one be accursed!",
+        "VAT_ES": "Pero si nosotros mismos o un ángel del cielo les anuncia un evangelio distinto del que les hemos anunciado, &iexcl;que sea expulsado!",
+        "CEI": "Infatti la parola del Signore riecheggia per mezzo vostro non soltanto in Macedonia e nell'Acaia, ma la fama della vostra fede in Dio si è diffusa dappertutto, di modo che non abbiamo più bisogno di parlarne."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Ὡς προειρήκαμεν, καὶ ἄρτι πάλιν λέγω, εἴ τις ὑμᾶς εὐαγγελίζεται παρ’ ὃ παρελάβετε, ἀνάθεμα ἔστω.",
+        "VUL": "Sicut prædiximus, et nunc iterum dico : si quis vobis evangelizaverit præter id quod accepistis, anathema sit.",
+        "SYN": "Как прежде мы сказали, _так_ и теперь еще говорю: кто благовествует вам не то, что вы приняли, да будет анафема.",
+        "NEO": "Nous l’avons dit précédemment, et je le répète à cette heure, si quelqu’un vous annonce un autre Évangile que celui que vous avez reçu, qu’il soit anathème !",
+        "NAB": "As we have said before, and now I say again, if anyone preaches to you a gospel other than the one that you received, let that one be accursed!",
+        "VAT_ES": "Ya se lo dijimos antes, y ahora les vuelvo a repetir: el que les predique un evangelio distinto del que ustedes han recibido, &iexcl;que sea expulsado!",
+        "CEI": "Sono loro infatti a parlare di noi, dicendo come noi siamo venuti in mezzo a voi e come vi siete convertiti a Dio, allontanandovi dagli idoli, per servire al Dio vivo e vero"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "Ἄρτι γὰρ ἀνθρώπους πείθω ἢ τὸν θεόν; Ἢ ζητῶ ἀνθρώποις ἀρέσκειν; Εἰ γὰρ ἔτι ἀνθρώποις ἤρεσκον, χριστοῦ δοῦλος οὐκ ἂν ἤμην.",
+        "VUL": "Modo enim hominibus suadeo, an Deo ? an quæro hominibus placere ? si adhuc hominibus placerem, Christi servus non essem.",
+        "SYN": "У людей ли я ныне ищу благоволения, или у Бога? людям ли угождать стараюсь? Если бы я и поныне угождал людям, то не был бы рабом Христовым.",
+        "NEO": "En ce moment, est-ce la faveur des hommes, ou celle de Dieu que je recherche ? Mon dessein est-il de complaire aux hommes ? Si je plaisais encore aux hommes, je ne serais pas serviteur du Christ. PREMIÈRE PARTIE. [I, 11 — II, 21.] APOLOGIE DE SON APOSTOLAT ET DE SA DOCTRINE.",
+        "NAB": "Am I now currying favor with human beings or God? Or am I seeking to please people? If I were still trying to please people, I would not be a slave of Christ.",
+        "VAT_ES": "&iquest;Acaso yo busco la aprobación de los hombres o la de Dios? &iquest;Piensan que quiero congraciarme con los hombres? Si quisiera quedar bien con los hombres, no sería servidor de Cristo.",
+        "CEI": "e attendere dai cieli il suo Figlio, che egli ha risuscitato dai morti, Gesù, che ci libera dall'ira ventura."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "¶Γνωρίζω δὲ ὑμῖν, ἀδελφοί, τὸ εὐαγγέλιον τὸ εὐαγγελισθὲν ὑπ’ ἐμοῦ, ὅτι οὐκ ἔστιν κατὰ ἄνθρωπον.",
+        "VUL": "Notum enim vobis facio, fratres, Evangelium, quod evangelizatum est a me, quia non est secundum hominem :",
+        "SYN": "Возвещаю вам, братия, что Евангелие, которое я благовествовал, не есть человеческое,",
+        "NEO": "Je vous le déclare, en effet, frères, l’Évangile que j’ai prêché n’est pas de l’homme ;",
+        "NAB": "Now I want you to know, brothers, that the gospel preached by me is not of human origin.",
+        "VAT_ES": "Quiero que sepan, hermanos, que la Buena Noticia que les prediqué no es cosa de los hombres, porque"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "Οὐδὲ γὰρ ἐγὼ παρὰ ἀνθρώπου παρέλαβον αὐτό, οὔτε ἐδιδάχθην, ἀλλὰ δι’ ἀποκαλύψεως Ἰησοῦ χριστοῦ.",
+        "VUL": "neque enim ego ab homine accepi illud, neque didici, sed per revelationem Jesu Christi.",
+        "SYN": "ибо и я принял его и научился не от человека, но через откровение Иисуса Христа.",
+        "NEO": "car ce n’est pas d’un homme que je l’ai reçu ni appris, mais par une révélation de Jésus-Christ.",
+        "NAB": "For I did not receive it from a human being, nor was I taught it, but it came through a revelation of Jesus Christ.",
+        "VAT_ES": "yo no la recibí ni aprendí de ningún hombre, sino por revelación de Jesucristo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Ἠκούσατε γὰρ τὴν ἐμὴν ἀναστροφήν ποτε ἐν τῷ Ἰουδαϊσμῷ, ὅτι καθ’ ὑπερβολὴν ἐδίωκον τὴν ἐκκλησίαν τοῦ θεοῦ, καὶ ἐπόρθουν αὐτήν·",
+        "VUL": "Audistis enim conversationem meam aliquando in Judaismo : quoniam supra modum persequebar Ecclesiam Dei, et expugnabam illam,",
+        "SYN": "Вы слышали о моем прежнем образе жизни в Иудействе, что я жестоко гнал Церковь Божию, и опустошал ее,",
+        "NEO": "Vous avez, en effet, entendu parler de ma conduite, quand j’étais dans le judaïsme ; comment je persécutais à outrance et ravageais l’Église de Dieu,",
+        "NAB": "For you heard of my former way of life in Judaism, how I persecuted the church of God beyond measure and tried to destroy it,",
+        "VAT_ES": "Seguramente ustedes oyeron hablar de mi conducta anterior en el Judaísmo: cómo perseguía con furor a la Iglesia de Dios y la arrasaba,"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "καὶ προέκοπτον ἐν τῷ Ἰουδαϊσμῷ ὑπὲρ πολλοὺς συνηλικιώτας ἐν τῷ γένει μου, περισσοτέρως ζηλωτὴς ὑπάρχων τῶν πατρικῶν μου παραδόσεων.",
+        "VUL": "et proficiebam in Judaismo supra multos coætaneos meos in genere meo, abundantius æmulator existens paternarum mearum traditionum.",
+        "SYN": "и преуспевал в Иудействе более многих сверстников в роде моем, будучи неумеренным ревнителем отеческих моих преданий.",
+        "NEO": "et comment je surpassais dans le judaïsme beaucoup de ceux de mon âge et de ma nation, étant à l’excès partisan jaloux des traditions de mes pères.",
+        "NAB": "and progressed in Judaism beyond many of my contemporaries among my race, since I was even more a zealot for my ancestral traditions.",
+        "VAT_ES": "y cómo aventajaba en el Judaísmo a muchos compatriotas de mi edad, en mi exceso de celo por las tradiciones paternas."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Ὅτε δὲ εὐδόκησεν ὁ θεὸς ὁ ἀφορίσας με ἐκ κοιλίας μητρός μου καὶ καλέσας διὰ τῆς χάριτος αὐτοῦ,",
+        "VUL": "Cum autem placuit ei, qui me segregavit ex utero matris meæ, et vocavit per gratiam suam,",
+        "SYN": "Когда же Бог, избравший меня от утробы матери моей и призвавший благодатью Своею, благоволил",
+        "NEO": "Mais, lorsqu’il plut à celui qui m’avait mis à part dès le sein de ma mère, et qui m’a appelé par sa grâce,",
+        "NAB": "But when (God), who from my mother's womb had set me apart and called me through his grace, was pleased",
+        "VAT_ES": "Pero cuando Dios, que me eligió desde el seno de mi madre y me llamó por medio de su gracia, se complació"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "ἀποκαλύψαι τὸν υἱὸν αὐτοῦ ἐν ἐμοὶ ἵνα εὐαγγελίζωμαι αὐτὸν ἐν τοῖς ἔθνεσιν, εὐθέως οὐ προσανεθέμην σαρκὶ καὶ αἵματι·",
+        "VUL": "ut revelaret Filium suum in me, ut evangelizarem illum in gentibus : continuo non acquievi carni et sanguini,",
+        "SYN": "открыть во мне Сына Своего, чтобы я благовествовал Его язычникам, -- я не стал тогда же советоваться с плотью и кровью,",
+        "NEO": "de révéler en moi son Fils, afin que je l’annonce parmi les Gentils, sur-le-champ, sans consulter ni la chair ni le sang,",
+        "NAB": "to reveal his Son to me, so that I might proclaim him to the Gentiles, I did not immediately consult flesh and blood,",
+        "VAT_ES": "en revelarme a su Hijo, para que yo lo anunciara entre los paganos, de inmediato, sin consultar a ningún hombre"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "οὐδὲ ἀνῆλθον εἰς Ἱεροσόλυμα πρὸς τοὺς πρὸ ἐμοῦ ἀποστόλους, ἀλλὰ ἀπῆλθον εἰς Ἀραβίαν, καὶ πάλιν ὑπέστρεψα εἰς Δαμασκόν.",
+        "VUL": "neque veni Jerosolymam ad antecessores meos Apostolos : sed abii in Arabiam, et iterum reversus sum Damascum :",
+        "SYN": "и не пошел в Иерусалим к предшествовавшим мне Апостолам, а пошел в Аравию, и опять возвратился в Дамаск.",
+        "NEO": "sans monter à Jérusalem vers ceux qui étaient apôtres avant moi, je partis pour l’Arabie ;+ 1:17 16-17. Pour l’Arabie, non pour y prêcher l’Évangile, mais pour se préparer dans la retraite à cette prédication. Comp. Act. ix, 19, 3. Voilà pourquoi les Actes se taisent sur ce voyage.* puis je revins encore à Damas.",
+        "NAB": "nor did I go up to Jerusalem to those who were apostles before me; rather, I went into Arabia and then returned to Damascus.",
+        "VAT_ES": "y sin subir a Jerusalén para ver a los que eran Apóstoles antes que yo, me fui a Arabia y después regresé a Damasco."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "¶Ἔπειτα μετὰ ἔτη τρία ἀνῆλθον εἰς Ἱεροσόλυμα ἱστορῆσαι Πέτρον, καὶ ἐπέμεινα πρὸς αὐτὸν ἡμέρας δεκαπέντε.",
+        "VUL": "deinde post annos tres veni Jerosolymam videre Petrum, et mansi apud eum diebus quindecim :",
+        "SYN": "Потом, спустя три года, ходил я в Иерусалим видеться с Петром и пробыл у него дней пятнадцать.",
+        "NEO": "Trois ans plus tard,+ 1:18 18. Ce voyage paraît être le même qui est raconté Act. ix, 27 sv., et rappelé Act. xxii, 17.* je montai à Jérusalem pour faire la connaissance de Céphas, et je demeurai quinze jours auprès de lui.",
+        "NAB": "Then after three years I went up to Jerusalem to confer with Kephas and remained with him for fifteen days.",
+        "VAT_ES": "Tres años más tarde, fui desde allí a Jerusalén para visitar a Pedro, y estuve con él quince días."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ἕτερον δὲ τῶν ἀποστόλων οὐκ εἶδον, εἰ μὴ Ἰάκωβον τὸν ἀδελφὸν τοῦ κυρίου.",
+        "VUL": "alium autem Apostolorum vidi neminem, nisi Jacobum fratrem Domini.",
+        "SYN": "Другого же из Апостолов я не видел _никого,_ кроме Иакова, брата Господня.",
+        "NEO": "Mais je ne vis aucun des autres Apôtres, si ce n’est Jacques, le frère du Seigneur.",
+        "NAB": "But I did not see any other of the apostles, only James the brother of the Lord.",
+        "VAT_ES": "No vi a ningún otro Apóstol, sino solamente a Santiago, el hermano del Señor."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "Ἃ δὲ γράφω ὑμῖν, ἰδοὺ ἐνώπιον τοῦ θεοῦ ὅτι οὐ ψεύδομαι.",
+        "VUL": "Quæ autem scribo vobis, ecce coram Deo, quia non mentior.",
+        "SYN": "А в том, что пишу вам, пред Богом, не лгу.",
+        "NEO": "En tout ce que je vous écris là, je l’atteste devant Dieu, je ne mens pas.",
+        "NAB": "(As to what I am writing to you, behold, before God, I am not lying.)",
+        "VAT_ES": "En esto que les escribo, Dios es testigo de que no miento."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "BYZ": "Ἔπειτα ἦλθον εἰς τὰ κλίματα τῆς Συρίας καὶ τῆς Κιλικίας.",
+        "VUL": "Deinde veni in partes Syriæ, et Ciliciæ.",
+        "SYN": "После сего отошел я в страны Сирии и Киликии.",
+        "NEO": "J’allai ensuite dans les contrées de la Syrie et de la Cilicie.",
+        "NAB": "Then I went into the regions of Syria and Cilicia.",
+        "VAT_ES": "Después pasé a las regiones de Siria y Cilicia."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "BYZ": "Ἤμην δὲ ἀγνοούμενος τῷ προσώπῳ ταῖς ἐκκλησίαις τῆς Ἰουδαίας ταῖς ἐν χριστῷ·",
+        "VUL": "Eram autem ignotus facie ecclesiis Judææ, quæ erant in Christo :",
+        "SYN": "Церквам Христовым в Иудее лично я не был известен,",
+        "NEO": "Or, j’étais inconnu de visage aux Églises de Judée qui sont dans le Christ ;",
+        "NAB": "And I was unknown personally to the churches of Judea that are in Christ;",
+        "VAT_ES": "Las Iglesias de Judea y que creen en Cristo no me conocían personalmente,"
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "BYZ": "μόνον δὲ ἀκούοντες ἦσαν ὅτι Ὁ διώκων ἡμᾶς ποτέ, νῦν εὐαγγελίζεται τὴν πίστιν ἥν ποτε ἐπόρθει.",
+        "VUL": "tantum autem auditum habebant quoniam qui persequebatur nos aliquando, nunc evangelizat fidem, quam aliquando expugnabat :",
+        "SYN": "а только слышали они, что гнавший их некогда ныне благовествует веру, которую прежде истреблял, --",
+        "NEO": "seulement elles avaient entendu dire que celui qui les persécutait autrefois annonçait maintenant la foi qu’il s’efforçait alors de détruire.",
+        "NAB": "they only kept hearing that \"the one who once was persecuting us is now preaching the faith he once tried to destroy.\"",
+        "VAT_ES": "sino sólo por lo que habían oído decir de mí: «El que en otro tiempo nos perseguía, ahora anuncia la fe que antes quería destruir»."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "BYZ": "Καὶ ἐδόξαζον ἐν ἐμοὶ τὸν θεόν.",
+        "VUL": "et in me clarificabant Deum.",
+        "SYN": "и прославляли за меня Бога.",
+        "NEO": "Et elles glorifiaient Dieu à mon sujet.",
+        "NAB": "So they glorified God because of me.",
+        "VAT_ES": "Y glorificaban a Dios a causa de mí."
+      }
+    }
+  }
+}

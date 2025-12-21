@@ -1,0 +1,463 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "DEUT_023",
+  "book_key": "DEUT",
+  "sequence": 23,
+  "chapter_in": {
+    "MT": 23,
+    "VUL": 23,
+    "LXX": 23
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לֹא יִקַּ֥ח אִ֖ישׁ אֶת אֵ֣שֶׁת אָבִ֑י/ו וְ/לֹ֥א יְגַלֶּ֖ה כְּנַ֥ף אָבִֽי/ו׃",
+        "LXX": "Οὐκ εἰσελεύσονται θλαδίας οὐδὲ ἀποκεκομμένος εἰς ἐκκλησίαν Κυρίου.",
+        "VUL": "Non intrabit eunuchus, attritis vel amputatis testiculis et abscisso veretro, ecclesiam Domini.",
+        "SYN": "У кого раздавлены ятра или отрезан детородный член, тот не может войти в общество Господне.",
+        "NEO": "Nul ne prendra la femme de son père et ne soulèvera la couverture du lit de son père.",
+        "NAB": "\"A man shall not marry his father's wife, nor shall he dishonor his father's bed.",
+        "VAT_ES": "Ningún hombre tomará como esposa a una mujer de su padre, ni descubrirá el borde de la manta de su padre.",
+        "CEI": "Nessuno sposerà una moglie del padre, né solleverà il lembo del mantello paterno."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "לֹֽא יָבֹ֧א פְצֽוּעַ דַּכָּ֛א וּ/כְר֥וּת שָׁפְכָ֖ה בִּ/קְהַ֥ל יְהוָֽה׃",
+        "VUL": "Non ingredietur mamzer, hoc est, de scorto natus, in ecclesiam Domini, usque ad decimam generationem.",
+        "SYN": "Сын блудницы не может войти в общество Господне, и десятое поколение его не может войти в общество Господне.",
+        "NEO": "Celui dont les testicules ont été écrasés ou dont l’urètre a été coupé n’entrera pas dans l’assemblée de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "\"No one whose testicles have been crushed or whose penis has been cut off may be admitted into the community of the LORD.",
+        "VAT_ES": "El que tenga los testículos mutilados o el pene cortado no será admitido en la asamblea del Señor.",
+        "CEI": "Non entrerà nella comunità del Signore chi ha il membro contuso o mutilato."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "לֹא יָבֹ֥א מַמְזֵ֖ר בִּ/קְהַ֣ל יְהוָ֑ה גַּ֚ם דּ֣וֹר עֲשִׂירִ֔י לֹא יָ֥בֹא ל֖/וֹ בִּ/קְהַ֥ל יְהוָֽה׃",
+        "LXX": "οὐκ εἰσελεύσεται Ἀμμανείτης οὐδὲ Μωαβείτης εἰς ἐκκλησίαν Κυρίου· καὶ ἕως δεκάτης γενεᾶς οὐκ εἰσελεύσεται εἰς ἐκκλησίαν Κυρίου καὶ ἕως εἰς τὸν αἰῶνα,",
+        "VUL": "Ammonites et Moabites etiam post decimam generationem non intrabunt ecclesiam Domini in æternum :",
+        "SYN": "Аммонитянин и Моавитянин не может войти в общество Господне, и десятое поколение их не может войти в общество Господне во веки,",
+        "NEO": "Le fruit d’une union illicite n’entrera pas dans l’assemblée de \\+w Yahweh|strong=\"H3068\"\\+w** ; même sa dixième génération n’entrera pas dans l’assemblée de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "No child of an incestuous union may be admitted into the community of the LORD, nor any descendant of his even to the tenth generation.",
+        "VAT_ES": "El bastardo no será admitido no la asamblea del Señor, ni siquiera en la décima generación.",
+        "CEI": "Il bastardo non entrerà nella comunità del Signore; nessuno dei suoi, neppure alla decima generazione, entrerà nella comunità del Signore."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "לֹֽא יָבֹ֧א עַמּוֹנִ֛י וּ/מוֹאָבִ֖י בִּ/קְהַ֣ל יְהוָ֑ה גַּ֚ם דּ֣וֹר עֲשִׂירִ֔י לֹא יָבֹ֥א לָ/הֶ֛ם בִּ/קְהַ֥ל יְהוָ֖ה עַד עוֹלָֽם׃",
+        "LXX": "παρὰ τὸ μὴ συναντῆσαι αὐτοὺς ὑμῖν μετὰ ἄρτων καὶ ὕδατος ἐν τῇ ὁδῷ ἐκπορευομένων ὑμῶν ἐξ Αἰγύπτου, καὶ ὅτι ἐμισθώσαντο ἐπὶ σὲ τὸν Βαλαὰμ υἱὸν Βεὼρ ἐκ τῆς Μεσοποταμίας καταρᾶσθαι·",
+        "VUL": "quia noluerunt vobis occurrere cum pane et aqua in via quando egressi estis de Ægypto : et quia conduxerunt contra te Balaam filium Beor de Mesopotamia Syriæ, ut malediceret tibi :",
+        "SYN": "потому что они не встретили вас с хлебом и водою на пути, когда вы шли из Египта, и потому что они наняли против тебя Валаама, сына Веорова, из Пефора Месопотамского, чтобы проклясть тебя;",
+        "NEO": "L’Ammonite et le Moabite n’entreront pas dans l’assemblée de \\+w Yahweh|strong=\"H3068\"\\+w** ; même la dixième génération n’entrera pas dans l’assemblée de \\+w Yahweh|strong=\"H3068\"\\+w**, ils n’y entreront jamais,",
+        "NAB": "No Ammonite or Moabite may ever be admitted into the community of the LORD, nor any descendants of theirs even to the tenth generation,",
+        "VAT_ES": "El amonita y el moabita no serán jamás admitidos en la asamblea del Señor, ni siquiera en la décima generación.",
+        "CEI": "L'Ammonita e il Moabita non entreranno nella comunità del Signore; nessuno dei loro discendenti, neppure alla decima generazione, entrerà nella comunità del Signore;"
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "עַל דְּבַ֞ר אֲשֶׁ֨ר לֹא קִדְּמ֤וּ אֶתְ/כֶם֙ בַּ/לֶּ֣חֶם וּ/בַ/מַּ֔יִם בַּ/דֶּ֖רֶךְ בְּ/צֵאתְ/כֶ֣ם מִ/מִּצְרָ֑יִם וַ/אֲשֶׁר֩ שָׂכַ֨ר עָלֶ֜י/ךָ אֶת בִּלְעָ֣ם בֶּן בְּע֗וֹר מִ/פְּת֛וֹר אֲרַ֥ם נַהֲרַ֖יִם לְ/קַֽלְלֶֽ/ךָּ׃",
+        "LXX": "καὶ οὐκ ἠθέλησεν Κύριος ὁ θεός σου εἰσακοῦσαι τοῦ Βαλαάμ, καὶ μετέστρεψεν Κύριος ὁ θεός σου τὰς κατάρας εἰς εὐλογίαν, ὅτι ἠγάπησέν σε Κύριος ὁ θεός σου.",
+        "VUL": "et noluit Dominus Deus tuus audire Balaam, vertitque maledictionem ejus in benedictionem tuam, eo quod diligeret te.",
+        "SYN": "но Господь, Бог твой, не восхотел слушать Валаама и обратил Господь Бог твой проклятие его в благословение тебе, ибо Господь Бог твой любит тебя.",
+        "NEO": "parce qu’ils ne sont pas venu au-devant de vous avec du pain et de l’eau, sur le chemin, lorsque vous sortiez d’Égypte, et parce que le roi de Moab a fait venir contre toi à prix d’argent Balaam, fils de Béor, de Péthor en Mésopotamie, pour te maudire.",
+        "NAB": "because they would not succor you with food and water on your journey after you left Egypt, and because Moab hired Balaam, son of Beor, from Pethor in Aram Naharaim, to curse you;",
+        "VAT_ES": "Porque ellos no se adelantaron para ofrecerles agua y alimento, cuando ustedes iban por el camino, a la salida de Egipto; y porque Moab contrató a Balaam, hijo de Beor, que era de Petor en Aram Naharaim, a fin de que te maldijera.",
+        "CEI": "non vi entreranno mai perché non vi vennero incontro con il pane e con l'acqua nel vostro cammino quando uscivate dall'Egitto e perché hanno prezzolato contro di te Balaam, figlio di Beor, da Petor nel paese dei due fiumi, perché ti maledicesse."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא אָבָ֞ה יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ לִ/שְׁמֹ֣עַ אֶל בִּלְעָ֔ם וַ/יַּהֲפֹךְ֩ יְהוָ֨ה אֱלֹהֶ֧י/ךָ לְּ/ךָ֛ אֶת הַ/קְּלָלָ֖ה לִ/בְרָכָ֑ה כִּ֥י אֲהֵֽבְ/ךָ֖ יְהוָ֥ה אֱלֹהֶֽי/ךָ׃",
+        "LXX": "οὐ προσαγορεύσεις εἰρηνικὰ αὐτοῖς καὶ συμφέροντα αὐτοῖς πάσας τὰς ἡμέρας σου εἰς τὸν αἰῶνα.",
+        "VUL": "Non facies cum eis pacem, nec quæras eis bona cunctis diebus vitæ tuæ in sempiternum.",
+        "SYN": "Не желай им мира и благополучия во все дни твои, во веки.",
+        "NEO": "Mais \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, n’a pas voulu écouter Balaam, et \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, a changé pour toi la malédiction en bénédiction, car \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’aime.",
+        "NAB": "though the LORD, your God, would not listen to Balaam and turned his curse into a blessing for you, because he loves you.",
+        "VAT_ES": "Pero el Señor, tu Dios, no quiso escuchar a Balaam, sino que cambió la maldición en bendición, sino que cambió la maldición en bendición, porque él te ama.",
+        "CEI": "Ma il Signore tuo Dio non volle ascoltare Balaam e il Signore tuo Dio mutò per te la maledizione in benedizione, perché il Signore tuo Dio ti ama."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "לֹא תִדְרֹ֥שׁ שְׁלֹמָ֖/ם וְ/טֹבָתָ֑/ם כָּל יָמֶ֖י/ךָ לְ/עוֹלָֽם׃",
+        "LXX": "οὐ βδελύξῃ Ἰδουμαῖον, ὅτι ἀδελφός σού ἐστιν· οὐ βδελύξῃ Αἰγύπτιον, ὅτι πάροικος ἐγένου ἐν τῇ γῇ αὐτοῦ·",
+        "VUL": "Non abominaberis Idumæum, quia frater tuus est : nec Ægyptium, quia advena fuisti in terra ejus.",
+        "SYN": "Не гнушайся Идумеянином, ибо он брат твой; не гнушайся Египтянином, ибо ты был пришельцем в земле его;",
+        "NEO": "Tu n’auras souci ni de leur prospérité ni de leur bien-être, tant que tu vivras, à perpétuité.",
+        "NAB": "Never promote their peace and prosperity as long as you live.",
+        "VAT_ES": "Por eso, mientras vivas, nunca busques su prosperidad y su bienestar.",
+        "CEI": "Non cercherai né la loro pace, né la loro prosperità, finché tu viva, mai."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "לֹֽא תְתַעֵ֣ב אֲדֹמִ֔י כִּ֥י אָחִ֖י/ךָ ה֑וּא לֹא תְתַעֵ֣ב מִצְרִ֔י כִּי גֵ֖ר הָיִ֥יתָ בְ/אַרְצֽ/וֹ׃",
+        "LXX": "υἱοὶ ἐὰν γενηθῶσιν αὐτοῖς, γενεᾷ τρίτῃ εἰσελεύσονται εἰς ἐκκλησίαν Κυρίου.",
+        "VUL": "Qui nati fuerint ex eis, tertia generatione intrabunt in ecclesiam Domini.",
+        "SYN": "дети, которые у них родятся, в третьем поколении могут войти в общество Господне.",
+        "NEO": "Tu n’auras pas en abomination l’Edomite, car il est ton frère ; tu n’auras pas en abomination l’Egyptien, car tu as été étranger dans son pays :",
+        "NAB": "But do not abhor the Edomite, since he is your brother, nor the Egyptian, since you were an alien in his country.",
+        "VAT_ES": "En cambio, no consideres abominable al edomita, porque es tu hermano, ni tampoco al egipcio, porque tú fuiste huésped en su país.",
+        "CEI": "Non avrai in abominio l'Idumeo, perché è tuo fratello; non avrai in abominio l'Egiziano, perché sei stato forestiero nel suo paese;"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "בָּנִ֛ים אֲשֶׁר יִוָּלְד֥וּ לָ/הֶ֖ם דּ֣וֹר שְׁלִישִׁ֑י יָבֹ֥א לָ/הֶ֖ם בִּ/קְהַ֥ל יְהוָֽה׃",
+        "LXX": "Ἐὰν δὲ ἐξέλθῃς παρεμβαλεῖν ἐπὶ τοὺς ἐχθρούς σου, καὶ φυλάξῃ ἀπὸ παντὸς ῥήματος πονηροῦ.",
+        "VUL": "Quando egressus fueris adversus hostes tuos in pugnam, custodies te ab omni re mala.",
+        "SYN": "Когда пойдешь в поход против врагов твоих, берегись всего худого.",
+        "NEO": "les fils qui leur naîtront pourront, à la troisième génération, entrer dans l’assemblée de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "Children born to them may in the third generation be admitted into the community of the LORD.",
+        "VAT_ES": "A partir de la tercera generación, sus descendientes podrán ser admitidos en la asamblea del Señor.",
+        "CEI": "i figli che nasceranno da loro alla terza generazione potranno entrare nella comunità del Signore."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "כִּֽי תֵצֵ֥א מַחֲנֶ֖ה עַל אֹיְבֶ֑י/ךָ וְ/נִ֨שְׁמַרְתָּ֔ מִ/כֹּ֖ל דָּבָ֥ר רָֽע׃",
+        "LXX": "ἐὰν ᾖ ἐν σοὶ ἄνθρωπος ὃς οὐκ ἔσται καθαρὸς ἐκ ῥύσεως αὐτοῦ νυκτός, καὶ ἐξελεύσεται εἰς τὴν παρεμβολήν·",
+        "VUL": "Si fuerit inter vos homo, qui nocturno pollutus sit somnio, egredietur extra castra,",
+        "SYN": "Если у тебя будет кто нечист от случившегося [ему] ночью, то он должен выйти вон из стана и не входить в стан,",
+        "NEO": "Quand tu marcheras en campements contre tes ennemis, garde-toi de toute chose mauvaise.",
+        "NAB": "\"When you are in camp during an expedition against your enemies, you shall keep yourselves from everything offensive.",
+        "VAT_ES": "Cuando emprendas una campaña contra tus enemigos, evita cuidadosamente toda acción indecente.",
+        "CEI": "Quando uscirai e ti accamperai contro i tuoi nemici, guardati da ogni cosa cattiva."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "כִּֽי יִהְיֶ֤ה בְ/ךָ֙ אִ֔ישׁ אֲשֶׁ֛ר לֹא יִהְיֶ֥ה טָה֖וֹר מִ/קְּרֵה לָ֑יְלָה וְ/יָצָא֙ אֶל מִ/ח֣וּץ לַֽ/מַּחֲנֶ֔ה לֹ֥א יָבֹ֖א אֶל תּ֥וֹךְ הַֽ/מַּחֲנֶֽה׃",
+        "LXX": "καὶ ἔσται τὸ πρὸς ἑσπέραν λούσεται τὸ σῶμα αὐτοῦ ὕδατι, καὶ δεδυκότος ἡλίου εἰσελεύσεται εἰς τὴν παρεμβολήν.",
+        "VUL": "et non revertetur, priusquam ad vesperam lavetur aqua : et post solis occasum regredietur in castra.",
+        "SYN": "а при наступлении вечера должен омыть [тело свое] водою, и по захождении солнца может войти в стан.",
+        "NEO": "S’il y a chez toi un homme qui ne soit pas pur, par suite d’un accident nocturne, il sortira du camp, et ne rentrera pas au milieu du camp ;",
+        "NAB": "If one of you becomes unclean because of a nocturnal emission, he shall go outside the camp, and not return until,",
+        "VAT_ES": "Si alguno de ustedes ha caído en estado de impureza a causa de una polución nocturna, saldrá fuera del campamento y no volverá a entrar en él.",
+        "CEI": "Se si trova qualcuno in mezzo a te che sia immondo a causa d'un accidente notturno, uscirà dall'accampamento e non vi entrerà;"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וְ/הָיָ֥ה לִ/פְנֽוֹת עֶ֖רֶב יִרְחַ֣ץ בַּ/מָּ֑יִם וּ/כְ/בֹ֣א הַ/שֶּׁ֔מֶשׁ יָבֹ֖א אֶל תּ֥וֹךְ הַֽ/מַּחֲנֶה׃",
+        "VUL": "Habebis locum extra castra, ad quem egrediaris ad requisita naturæ,",
+        "SYN": "Место должно быть у тебя вне стана, куда бы тебе выходить;",
+        "NEO": "sur le soir, il se baignera dans l’eau et, après le coucher du soleil, il pourra rentrer au milieu du camp.",
+        "NAB": "toward evening, he has bathed in water; then, when the sun has set, he may come back into the camp.",
+        "VAT_ES": "Pero al llegar la tarde se levará, y al ponerse el sol entrará de nuevo en el campamento.",
+        "CEI": "verso sera si laverà con acqua e dopo il tramonto del sole potrà rientrare nell'accampamento."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וְ/יָד֙ תִּהְיֶ֣ה לְ/ךָ֔ מִ/ח֖וּץ לַֽ/מַּחֲנֶ֑ה וְ/יָצָ֥אתָ שָׁ֖מָּ/ה חֽוּץ׃",
+        "LXX": "καὶ πάσσαλος ἔσται σοι ἐπὶ τῆς ζώνης σου, καὶ ἔσται ὅταν διακαθιζάνῃς ἔξω, καὶ ὀρύξεις ἐν αὐτῷ καὶ ἐπάγων καλύψεις τὴν ἀσχημοσύνην σου·",
+        "VUL": "gerens paxillum in balteo : cumque sederis, fodies per circuitum, et egesta humo operies",
+        "SYN": "кроме оружия твоего должна быть у тебя лопатка; и когда будешь садиться вне _стана,_ выкопай ею [яму] и опять зарой [ею] испражнение твое;",
+        "NEO": "Tu auras un lieu hors du camp, et c’est là dehors que tu iras.",
+        "NAB": "Outside the camp you shall have a place set aside to be used as a latrine.",
+        "VAT_ES": "Tendrás, asimismo, un lugar fuera del campamento para hacer allí tus necesidades.",
+        "CEI": "Avrai anche un posto fuori dell'accampamento e là andrai per i tuoi bisogni."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/יָתֵ֛ד תִּהְיֶ֥ה לְ/ךָ֖ עַל אֲזֵנֶ֑/ךָ וְ/הָיָה֙ בְּ/שִׁבְתְּ/ךָ֣ ח֔וּץ וְ/חָפַרְתָּ֣ה בָ֔/הּ וְ/שַׁבְתָּ֖ וְ/כִסִּ֥יתָ אֶת צֵאָתֶֽ/ךָ׃",
+        "LXX": "ὅτι Κύριος ὁ θεός σου ἐνπεριπατεῖ ἐν τῇ παρεμβολῇ σου, ἐξελέσθαι σε καὶ παραδοῦναι τὸν ἐχθρόν σου πρὸ προσώπου σου· καὶ ἔσται ἡ παρεμβολή σου ἁγία, καὶ οὐκ ὀφθήσεται ἐν σοὶ ἀσχημοσύνη πράγματος, καὶ ἀποστρέψει ἀπὸ σοῦ.",
+        "VUL": "quo relevatus es : Dominus enim Deus tuus ambulat in medio castrorum, ut eruat te, et tradat tibi inimicos tuos : et sint castra tua sancta, et nihil in eis appareat fditatis, ne derelinquat te.",
+        "SYN": "ибо Господь Бог твой ходит среди стана твоего, чтобы избавлять тебя и предавать врагов твоих [в руки твои], а _посему_ стан твой должен быть свят, чтобы Он не увидел у тебя чего срамного и не отступил от тебя.",
+        "NEO": "Tu auras dans ton bagage une pelle avec laquelle tu feras un creux, quand tu iras t’asseoir à l’écart, et, en partant, tu recouvriras tes excréments.",
+        "NAB": "You shall also keep a trowel in your equipment and with it, when you go outside to ease nature, you shall first dig a hole and afterward cover up your excrement.",
+        "VAT_ES": "También llevarás una estaca en tu equipaje, y cuando salgas afuera para hacer tus necesidades, cavarás un hoyo con la estaca y luego lo volverás a tapar para cubrir tus excrementos.",
+        "CEI": "Nel tuo equipaggiamento avrai un piuolo, con il quale, nel ritirarti fuori, scaverai una buca e poi ricoprirai i tuoi escrementi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "כִּי֩ יְהוָ֨ה אֱלֹהֶ֜י/ךָ מִתְהַלֵּ֣ךְ בְּ/קֶ֣רֶב מַחֲנֶ֗/ךָ לְ/הַצִּֽילְ/ךָ֙ וְ/לָ/תֵ֤ת אֹיְבֶ֨י/ךָ֙ לְ/פָנֶ֔י/ךָ וְ/הָיָ֥ה מַחֲנֶ֖י/ךָ קָד֑וֹשׁ וְ/לֹֽא יִרְאֶ֤ה בְ/ךָ֙ עֶרְוַ֣ת דָּבָ֔ר וְ/שָׁ֖ב מֵ/אַחֲרֶֽי/ךָ׃",
+        "LXX": "Οὐ παραδώσεις παῖδα τῷ κυρίῳ, ὃς προστέθειταί σοι παρὰ τοῦ κυρίου αὐτοῦ·",
+        "VUL": "Non trades servum domino suo, qui ad te confugerit.",
+        "SYN": "Не выдавай раба господину его, когда он прибежит к тебе от господина своего;",
+        "NEO": "Car \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, marche au milieu de ton camp, pour te protéger et pour livrer tes ennemis devant toi ; ton camp doit donc être saint, afin que \\+w Yahweh|strong=\"H3068\"\\+w** ne voie chez toi rien de malséant et qu’il ne se détourne pas de toi.",
+        "NAB": "Since the LORD, your God, journeys along within your camp to defend you and to put your enemies at your mercy, your camp must be holy; otherwise, if he sees anything indecent in your midst, he will leave your company.",
+        "VAT_ES": "Porque el Señor, tu Dios, recorrerá el campamento para protegerte y para poner a tus enemigos en tus manos. Por eso tu campamento será un lugar santo, y el Señor no debe ver en él nada indecente. De lo contrario se aparta de ti.",
+        "CEI": "Perché il Signore tuo Dio passa in mezzo al tuo accampamento per salvarti e per mettere i nemici in tuo potere; l'accampamento deve essere dunque santo, perché Egli non veda in mezzo a te qualche indecenza e ti abbandoni."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "לֹא תַסְגִּ֥יר עֶ֖בֶד אֶל אֲדֹנָ֑י/ו אֲשֶׁר יִנָּצֵ֥ל אֵלֶ֖י/ךָ מֵ/עִ֥ם אֲדֹנָֽי/ו׃",
+        "LXX": "μετὰ σοῦ κατοικήσει, ἐν ὑμῖν· κατοικήσει οὗ ἐὰν ἀρέσῃ αὐτῷ, οὐ θλίψεις αὐτόν.",
+        "VUL": "Habitabit tecum in loco, qui ei placuerit, et in una urbium tuarum requiescet : ne contristes eum.",
+        "SYN": "пусть он у тебя живет, среди вас [пусть он живет] на месте, которое он изберет в каком-нибудь из жилищ твоих, где ему понравится; не притесняй его.",
+        "NEO": "Tu ne livreras pas à son maître un esclave qui se sera enfui d’avec son maître et réfugié auprès de toi.",
+        "NAB": "\"You shall not hand over to his master a slave who has taken refuge from him with you.",
+        "VAT_ES": "No entregarás al esclavo que acuda a ti huyendo de su dueño.",
+        "CEI": "Non consegnerai al suo padrone uno schiavo che, dopo essergli fuggito, si sarà rifugiato presso di te."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "עִמְּ/ךָ֞ יֵשֵׁ֣ב בְּ/קִרְבְּ/ךָ֗ בַּ/מָּק֧וֹם אֲשֶׁר יִבְחַ֛ר בְּ/אַחַ֥ד שְׁעָרֶ֖י/ךָ בַּ/טּ֣וֹב ל֑/וֹ לֹ֖א תּוֹנֶֽ/נּוּ׃",
+        "LXX": "Οὐκ ἔσται πόρνη ἀπὸ θυγατέρων Ἰσραήλ, καὶ οὐκ ἔσται πορνεύων ἀπὸ υἱῶν Ἰσραήλ· οὐκ ἔσται τελεσφόρος ἀπὸ θυγατέρων Ἰσραήλ, καὶ οὐκ ἔσται τελισκόμενος ἀπὸ υἱῶν Ἰσραήλ.",
+        "VUL": "Non erit meretrix de filiabus Israël, nec scortator de filiis Israël.",
+        "SYN": "Не должно быть блудницы из дочерей Израилевых и не должно быть блудника из сынов Израилевых.",
+        "NEO": "Il demeurera avec toi, au milieu de ton pays, dans le lieu qu’il choisira, dans l’une de tes villes, où il se trouvera bien : tu ne l’opprimeras pas.",
+        "NAB": "Let him live with you wherever he chooses, in any one of your communities that pleases him. Do not molest him.",
+        "VAT_ES": "Se quedará contigo, entre los tuyos, en el lugar que él elija, en la ciudad que más le agrade; y no lo molestarás.",
+        "CEI": "Rimarrà da te nel tuo paese, nel luogo che avrà scelto, in quella città che gli parrà meglio; non lo molesterai."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "לֹא תִהְיֶ֥ה קְדֵשָׁ֖ה מִ/בְּנ֣וֹת יִשְׂרָאֵ֑ל וְ/לֹֽא יִהְיֶ֥ה קָדֵ֖שׁ מִ/בְּנֵ֥י יִשְׂרָאֵל׃",
+        "LXX": "οὐ προσοίσεις μίσθωμα πόρνης οὐδὲ ἄλλαγμα κυνὸς εἰς τὸν οἶκον Κυρίου τοῦ θεοῦ σου πρὸς πᾶσαν εὐχήν, ὅτι βδέλυγμα Κυρίῳ τῷ θεῷ σού ἐστιν καὶ ἀμφότερα.",
+        "VUL": "Non offeres mercedem prostibuli, nec pretium canis in domo Domini Dei tui, quidquid illud est quod voveris : quia abominatio est utrumque apud Dominum Deum tuum.",
+        "SYN": "Не вноси платы блудницы и цены пса в дом Господа Бога твоего ни по какому обету, ибо то и другое есть мерзость пред Господом Богом твоим.",
+        "NEO": "Il n’y aura pas de prostituée parmi les filles d’Israël, et il n’y aura pas de prostitué parmi les fils d’Israël.",
+        "NAB": "\"There shall be no temple harlot among the Israelite women, nor a temple prostitute among the Israelite men.",
+        "VAT_ES": "Ningún hombre o mujer israelita practicará la prostitución sagrada.",
+        "CEI": "Non vi sarà alcuna donna dedita alla prostituzione sacra tra le figlie d'Israele, né vi sarà alcun uomo dedito alla prostituzione sacra tra i figli d'Israele."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "לֹא תָבִיא֩ אֶתְנַ֨ן זוֹנָ֜ה וּ/מְחִ֣יר כֶּ֗לֶב בֵּ֛ית יְהוָ֥ה אֱלֹהֶ֖י/ךָ לְ/כָל נֶ֑דֶר כִּ֧י תוֹעֲבַ֛ת יְהוָ֥ה אֱלֹהֶ֖י/ךָ גַּם שְׁנֵי/הֶֽם׃",
+        "LXX": "Οὐκ ἐκτοκιεῖς τῷ ἀδελφῷ σου τόκον ἀργυρίου καὶ τόκον βρωμάτων καὶ τόκον παντὸς πράγματος οὗ ἂν ἐκδανίσῃς·",
+        "VUL": "Non fnerabis fratri tuo ad usuram pecuniam, nec fruges, nec quamlibet aliam rem :",
+        "SYN": "Не отдавай в рост брату твоему ни серебра, ни хлеба, ни чего-либо другого, что _можно_ отдавать в рост;",
+        "NEO": "Tu n’apporteras pas dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, le salaire d’une prostituée ni le salaire d’un chien, pour l’accomplissement d’un vœu quelconque ; car l’un et l’autre sont en abomination à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu.",
+        "NAB": "You shall not offer a harlot's fee or a dog's price as any kind of votive offering in the house of the LORD, your God; both these things are an abomination to the LORD, your God.",
+        "VAT_ES": "No llevarás a la Casa del Señor, tu Dios, la paga de una prostituta ni el salario de un perro, cualquiera sea el voto que hayas hecho: porque ambos son una abominación para el Señor, tu Dios.",
+        "CEI": "Non porterai nella casa del Signore tuo Dio il dono di una prostituta né il salario di un cane, qualunque voto tu abbia fatto, poiché tutti e due sono abominio per il Signore tuo Dio."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "לֹא תַשִּׁ֣יךְ לְ/אָחִ֔י/ךָ נֶ֥שֶׁךְ כֶּ֖סֶף נֶ֣שֶׁךְ אֹ֑כֶל נֶ֕שֶׁךְ כָּל דָּבָ֖ר אֲשֶׁ֥ר יִשָּֽׁךְ׃",
+        "LXX": "τῷ ἀλλοτρίῳ ἐκτοκιεῖς, τῷ δὲ ἀδελφῷ σου οὐκ ἐκτοκιεῖς, ἵνα εὐλογήσῃ σε Κύριος ὁ θεός σου ἐν πᾶσι τοῖς ἔργοις σου ἐπὶ τῆς γῆς εἰς ἣν εἰσπορεύῃ ἐκεῖ κληρονομεῖν αὐτήν.",
+        "VUL": "sed alieno. Fratri autem tuo absque usura id quo indiget, commodabis : ut benedicat tibi Dominus Deus tuus in omni opere tuo in terra, ad quam ingredieris possidendam.",
+        "SYN": "иноземцу отдавай в рост, а брату твоему не отдавай в рост, чтобы Господь Бог твой благословил тебя во всем, что делается руками твоими, на земле, в которую ты идешь, чтобы овладеть ею.",
+        "NEO": "Tu n’exigeras de ton frère aucun intérêt ni pour argent, ni pour vivres, ni pour aucune chose qui se prête à intérêt.",
+        "NAB": "\"You shall not demand interest from your countrymen on a loan of money or of food or of anything else on which interest is usually demanded.",
+        "VAT_ES": "No obligues a tu hermano a pagar interés, ya se trate de un préstamo de dinero, de víveres, o de cualquier otra cosa que pueda producir interés.",
+        "CEI": "Non farai al tuo fratello prestiti a interesse, né di denaro, né di viveri, né di qualunque cosa che si presta a interesse."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "לַ/נָּכְרִ֣י תַשִּׁ֔יךְ וּ/לְ/אָחִ֖י/ךָ לֹ֣א תַשִּׁ֑יךְ לְמַ֨עַן יְבָרֶכְ/ךָ֜ יְהוָ֣ה אֱלֹהֶ֗י/ךָ בְּ/כֹל֙ מִשְׁלַ֣ח יָדֶ֔/ךָ עַל הָ/אָ֕רֶץ אֲשֶׁר אַתָּ֥ה בָא שָׁ֖מָּ/ה לְ/רִשְׁתָּֽ/הּ׃",
+        "LXX": "Ἐὰν δὲ εὔξῃ εὐχὴν Κυρίῳ τῷ θεῷ σου, οὐ χρονιεῖς ἀποδοῦναι αὐτήν, ὅτι ἐκζητῶν ἐκζητήσει Κύριος ὁ θεός σου παρὰ σοῦ, καὶ ἔσται ἐν σοὶ ἁμαρτία·",
+        "VUL": "Cum votum voveris Domino Deo tuo, non tardabis reddere : quia requiret illud Dominus Deus tuus, et si moratus fueris, reputabitur tibi in peccatum.",
+        "SYN": "Если дашь обет Господу Богу твоему, немедленно исполни его, ибо Господь Бог твой взыщет его с тебя, и на тебе будет грех;",
+        "NEO": "Tu peux exiger un intérêt de l’étranger, mais tu n’en tireras pas de ton frère, afin que \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, te bénisse dans tout ce que tu entreprendras, dans le pays où tu vas entrer pour le posséder.",
+        "NAB": "You may demand interest from a foreigner, but not from your countryman, so that the LORD, your God, may bless you in all your undertakings on the land you are to enter and occupy.",
+        "VAT_ES": "Podrás prestar a interés al extranjero, pero no a tu compatriota, para que el Señor, tu Dios, te bendiga en todas tus empresas, en la tierra de la que vas a tomar posesión.",
+        "CEI": "Allo straniero potrai prestare a interesse, ma non al tuo fratello, perché il Signore tuo Dio ti benedica in tutto ciò a cui metterai mano, nel paese di cui stai per andare a prender possesso."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "כִּֽי תִדֹּ֥ר נֶ֨דֶר֙ לַ/יהוָ֣ה אֱלֹהֶ֔י/ךָ לֹ֥א תְאַחֵ֖ר לְ/שַׁלְּמ֑/וֹ כִּֽי דָּרֹ֨שׁ יִדְרְשֶׁ֜/נּוּ יְהוָ֤ה אֱלֹהֶ֨י/ךָ֙ מֵֽ/עִמָּ֔/ךְ וְ/הָיָ֥ה בְ/ךָ֖ חֵֽטְא׃",
+        "LXX": "ἐὰν δὲ μὴ θέλῃς εὔξασθαι, οὐκ ἔστιν ἐν σοὶ ἁμαρτία.",
+        "VUL": "Si nolueris polliceri, absque peccato eris.",
+        "SYN": "если же ты не дал обета, то не будет на тебе греха.",
+        "NEO": "Quand tu auras fait un vœu à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, tu ne tarderas pas à l’accomplir ; sinon, \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, t’en demanderait certainement compte, et tu serais chargé d’un péché.",
+        "NAB": "\"When you make a vow to the LORD, your God, you shall not delay in fulfilling it; otherwise you will be held guilty, for the LORD, your God, is strict in requiring it of you.",
+        "VAT_ES": "Si hacer un voto al Señor, tu Dios, no tardes en cumplirlo, porque él no dejará de pedirte cuenta, y si no lo cumples, cometerás un pecado.",
+        "CEI": "Quando avrai fatto un voto al Signore tuo Dio, non tarderai a soddisfarlo, perché il Signore tuo Dio te ne domanderebbe certo conto e in te vi sarebbe un peccato."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וְ/כִ֥י תֶחְדַּ֖ל לִ/נְדֹּ֑ר לֹֽא יִהְיֶ֥ה בְ/ךָ֖ חֵֽטְא׃",
+        "LXX": "τὰ ἐκπορευόμενα διὰ τῶν χειλέων σου φυλάξῃ, καὶ ποιήσεις ὃν τρόπον εὔξω τῷ θεῷ δόμα ὃ ἐλάλησας τῷ στόματί σου.",
+        "VUL": "Quod autem semel egressum est de labiis tuis, observabis, et facies sicut promisisti Domino Deo tuo, et propria voluntate et ore tuo locutus es.",
+        "SYN": "Что вышло из уст твоих, соблюдай и исполняй так, как обещал ты Господу Богу твоему добровольное приношение, о котором сказал ты устами своими.",
+        "NEO": "Si tu t’abstiens de faire des vœux, il n’y aura pas en toi de péché.",
+        "NAB": "Should you refrain from making a vow, you will not be held guilty.",
+        "VAT_ES": "Si te abstienes de hacer votos, no cometes ningún pecado.",
+        "CEI": "Ma se ti astieni dal far voti non vi sarà in te peccato."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "מוֹצָ֥א שְׂפָתֶ֖י/ךָ תִּשְׁמֹ֣ר וְ/עָשִׂ֑יתָ כַּ/אֲשֶׁ֨ר נָדַ֜רְתָּ לַ/יהוָ֤ה אֱלֹהֶ֨י/ךָ֙ נְדָבָ֔ה אֲשֶׁ֥ר דִּבַּ֖רְתָּ בְּ/פִֽי/ךָ׃",
+        "LXX": "Ἐὰν δὲ εἰσέλθῃς εἰς ἀμητὸν τοῦ πλησίον σου, καὶ συλλέξεις ἐν ταῖς χερσίν σου στάχυς, καὶ δρέπανον οὐ μὴ ἐπιβάλῃς ἐπ’ ἀμητὸν τοῦ πλησίον σου.",
+        "VUL": "Ingressus vineam proximi tui, comede uvas, quantum tibi placuerit : foras autem ne efferas tecum.",
+        "SYN": "Когда войдешь в виноградник ближнего твоего, можешь есть ягоды досыта, сколько _хочет_ душа твоя, а в сосуд твой не клади.",
+        "NEO": "Mais la parole sortie de tes lèvres, tu la garderas et l’accompliras, selon le vœu que tu auras fait librement à \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, et que tu auras prononcé de ta bouche.",
+        "NAB": "But you must keep your solemn word and fulfill the votive offering you have freely promised to the LORD.",
+        "VAT_ES": "Sé un hombre de palabra, y cumple el voto que hagas espontáneamente al Señor, tu Dios, expresándolo con tus propios labios.",
+        "CEI": "Manterrai la parola uscita dalle tue labbra ed eseguirai il voto che avrai fatto volontariamente al Signore tuo Dio, ciò che la tua bocca avrà promesso."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "כִּ֤י תָבֹא֙ בְּ/כֶ֣רֶם רֵעֶ֔/ךָ וְ/אָכַלְתָּ֧ עֲנָבִ֛ים כְּ/נַפְשְׁ/ךָ֖ שָׂבְעֶ֑/ךָ וְ/אֶֽל כֶּלְיְ/ךָ֖ לֹ֥א תִתֵּֽן׃",
+        "LXX": "Ἐὰν δὲ εἰσέλθῃς εἰς τὸν ἀμπελῶνα τοῦ πλησίον σου, φάγῃ σταφυλὴν ὅσον ψυχήν σου ἐμπλησθῆναι, εἰς δὲ ἄγγος οὐκ ἐμβαλεῖς.",
+        "VUL": "Si intraveris in segetem amici tui, franges spicas, et manu conteres : falce autem non metes.",
+        "SYN": "Когда придешь на жатву ближнего твоего, срывай колосья руками твоими, но серпа не заноси на жатву ближнего твоего.",
+        "NEO": "Quand tu entreras dans la vigne de ton prochain, tu pourras manger des raisins selon ton désir et t’en rassasier, mais tu n’en mettras pas dans ton panier.",
+        "NAB": "\"When you go through your neighbor's vineyard, you may eat as many of his grapes as you wish, but do not put them in your basket.",
+        "VAT_ES": "Si entras en la viña de tu prójimo, podrás comer todas las uvas que quieras, hasta quedar saciado, pero no guardarás nada en tu bolsa.",
+        "CEI": "Se entri nella vigna del tuo prossimo, potrai mangiare uva, secondo il tuo appetito, a sazietà, ma non potrai metterne in alcun tuo recipiente."
+      }
+    }
+  }
+}

@@ -1,0 +1,1185 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "NUME_026",
+  "book_key": "NUME",
+  "sequence": 26,
+  "chapter_in": {
+    "MT": 26,
+    "VUL": 26,
+    "LXX": 26
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וַ/יֹּ֤אמֶר יְהוָה֙ אֶל מֹשֶׁ֔ה וְ/אֶ֧ל אֶלְעָזָ֛ר בֶּן אַהֲרֹ֥ן הַ/כֹּהֵ֖ן לֵ/אמֹֽר׃",
+        "LXX": "Καὶ ἐγένετο μετὰ τὴν πληγὴν και ἐλάλησεν Κύριος πρὸς Μωυσῆν καὶ πρὸς Ἐλεαζὰρ τὸν ἱερέα λέγων",
+        "VUL": "Postquam noxiorum sanguis effusus est, dixit Dominus ad Moysen et Eleazarum filium Aaron sacerdotem :",
+        "SYN": "После сего поражения сказал Господь Моисею и Елеазару, сыну Аарона, священнику, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse et à Eléazar, fils d’Aaron, le prêtre, en disant :",
+        "NAB": "the LORD said to Moses and Eleazar; son of Aaron the priest,",
+        "VAT_ES": "el Señor dijo a Moisés y a Eleazar, hijo del sacerdote Aarón:",
+        "CEI": "Il Signore disse a Mosè e ad Eleazaro, figlio del sacerdote Aronne:"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "שְׂא֞וּ אֶת רֹ֣אשׁ כָּל עֲדַ֣ת בְּנֵי יִשְׂרָאֵ֗ל מִ/בֶּ֨ן עֶשְׂרִ֥ים שָׁנָ֛ה וָ/מַ֖עְלָ/ה לְ/בֵ֣ית אֲבֹתָ֑/ם כָּל יֹצֵ֥א צָבָ֖א בְּ/יִשְׂרָאֵֽל׃",
+        "LXX": "Λάβε τὴν ἀρχὴν πάσης συναγωγῆς υἱῶν Ἰσραὴλ ἀπὸ εἰκοσαετοῦς καὶ ἐπάνω κατ’ οἴκους πατριῶν αὐτῶν, πᾶς ὁ ἐκπορευόμενος παρατάξασθαι ἐν Ἰσραήλ.",
+        "VUL": "Numerate omnem summam filiorum Israël a viginti annis et supra, per domos et cognationes suas, cunctos qui possunt ad bella procedere.",
+        "SYN": "исчислите все общество сынов Израилевых от двадцати лет и выше, по семействам их, всех годных для войны у Израиля.",
+        "NEO": "« Faites le compte de toute l’assemblée des enfants d’Israël depuis l’âge de vingt ans et au-dessus, selon leurs maisons patriarcales, de tous les hommes d’Israël en état de porter les armes. »",
+        "NAB": "\"Take a census, by ancestral houses, throughout the community of the Israelites of all those of twenty years or more who are fit for military service in Israel.\"",
+        "VAT_ES": "«Hagan un censo de toda la comunidad de israelitas, anotando por familias a todos los que tengan más de veinte años, a los aptos para la guerra en Israel».",
+        "CEI": "\"Fate il censimento di tutta la comunità degli Israeliti, dall'età di vent'anni in su, secondo i loro casati paterni, di quanti in Israele possono andare in guerra\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֨ר מֹשֶׁ֜ה וְ/אֶלְעָזָ֧ר הַ/כֹּהֵ֛ן אֹתָ֖/ם בְּ/עַֽרְבֹ֣ת מוֹאָ֑ב עַל יַרְדֵּ֥ן יְרֵח֖וֹ לֵ/אמֹֽר׃",
+        "LXX": "καὶ ἐλάλησεν Μωυσῆς καὶ Ἐλεαζὰρ ὁ ἱερεὺς ἐν ἀραβὼθ Μωὰβ ἐπὶ τοῦ Ἰορδάνου κατὰ Ἰερειχὼ λέγων",
+        "VUL": "Locuti sunt itaque Moyses et Eleazar sacerdos, in campestribus Moab super Jordanem contra Jericho, ad eos qui erant",
+        "SYN": "И сказал им Моисей и Елеазар священник на равнинах Моавитских у Иордана, против Иерихона, говоря:",
+        "NEO": "Moïse et le prêtre Eléazar leur parlèrent donc dans les plaines de Moab, près du Jourdain, vis-à-vis de Jéricho, en disant :",
+        "NAB": "So on the plains of Moab along the Jericho stretch of the Jordan, Moses and the priest Eleazar registered",
+        "VAT_ES": "Entonces Moisés y el sacerdote Eleazar dieron las instrucciones correspondientes, en las estepas de Moab, junto al Jordán, a la altura de Jericó,",
+        "CEI": "Mosè e il sacerdote Eleazaro dissero loro nelle steppe di Moab presso il Giordano di fronte a Gerico:"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "מִ/בֶּ֛ן עֶשְׂרִ֥ים שָׁנָ֖ה וָ/מָ֑עְלָ/ה כַּ/אֲשֶׁר֩ צִוָּ֨ה יְהוָ֤ה אֶת מֹשֶׁה֙ וּ/בְנֵ֣י יִשְׂרָאֵ֔ל הַ/יֹּצְאִ֖ים מֵ/אֶ֥רֶץ מִצְרָֽיִם׃",
+        "LXX": "Ἀπὸ εἰκοσαετοῦς καὶ ἐπάνω, ὃν τρόπον συνέταξεν Κύριος τῷ Μωυσῇ, σὺ καὶ οἱ υἱοὶ Ἰσραὴλ οἱ ἐξελθόντες ἐξ Αἰγύπτου.",
+        "VUL": "a viginti annis et supra, sicut Dominus imperaverat, quorum iste est numerus.",
+        "SYN": "_исчислите_ _всех_ от двадцати лет и выше, как повелел Господь Моисею и сынам Израилевым, которые вышли из земли Египетской:",
+        "NEO": "« Vous ferez le recensement du peuple depuis l’âge de vingt ans et au-dessus, comme \\+w Yahweh|strong=\"H3068\"\\+w** l’a ordonné à Moïse et aux enfants d’Israël, à leur sortie du pays d’Égypte. »",
+        "NAB": "those of twenty years or more, as the LORD had commanded Moses. The Israelites who came out of the land of Egypt were as follows:",
+        "VAT_ES": "acerca de los tenían más de veinte años, como el Señor se lo había ordenado a Moisés. Los israelitas que salieron de Egipto fueron:",
+        "CEI": "\"Si faccia il censimento dall'età di vent'anni in su, come il Signore aveva ordinato a Mosè e agli Israeliti, quando uscirono dal paese d'Egitto\"."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "רְאוּבֵ֖ן בְּכ֣וֹר יִשְׂרָאֵ֑ל בְּנֵ֣י רְאוּבֵ֗ן חֲנוֹךְ֙ מִשְׁפַּ֣חַת הַ/חֲנֹכִ֔י לְ/פַלּ֕וּא מִשְׁפַּ֖חַת הַ/פַּלֻּאִֽי׃",
+        "LXX": "Ῥουβὴν πρωτότοκος Ἰσραήλ. υἱοὶ δὲ Ῥουβήν· Ἑνώχ, καὶ δῆμος τοῦ Ἑνώχ· τῷ Φαλλού, δῆμος τοῦ Φαλλουεί·",
+        "VUL": "Ruben primogenitus Israël : hujus filius, Henoch, a quo familia Henochitarum : et Phallu, a quo familia Phalluitarum :",
+        "SYN": "Рувим, первенец Израиля. Сыны Рувима: от Ханоха поколение Ханохово, от Фаллу поколение Фаллуево,",
+        "NEO": "Ruben, premier-né d’Israël. Fils de Ruben : de Hénoch, la famille des Hénochites ; de Phallu, la famille des Phalluites ;",
+        "NAB": "Of Reuben, the first-born of Israel, the Reubenites by clans were: through Hanoch the clan of the Hanochites, through Pallu the clan of the Palluites,",
+        "VAT_ES": "Los clanes de los descendientes de Rubén, el primogénito de Israel, fueron: de Janoc, el clan de los janoquitas; de Palú, el clan de los paluitas;",
+        "CEI": "Ruben primogenito d'Israele. Figli di Ruben: Enoch, da cui discende la famiglia degli Enochiti; Pallu, da cui discende la famiglia dei Palluiti;"
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "לְ/חֶצְרֹ֕ן מִשְׁפַּ֖חַת הַֽ/חֶצְרוֹנִ֑י לְ/כַרְמִ֕י מִשְׁפַּ֖חַת הַ/כַּרְמִֽי׃",
+        "LXX": "τῷ Ἁσρών, δῆμος τοῦ Ἁσρωνεί· τῷ Χαρμεί, δῆμος τοῦ Χαρμεί.",
+        "VUL": "et Hesron, a quo familia Hesronitarum : et Charmi, a quo familia Charmitarum.",
+        "SYN": "от Хецрона поколение Хецроново, от Харми поколение Хармиево;",
+        "NEO": "de Hesron, la famille des Hesronites ; de Charmi, la famille des Charmites.",
+        "NAB": "through Hezron the clan of the Hezronites, through Carmi the clan of the Carmites.",
+        "VAT_ES": "de Jesrón, el clan de los carmitas.",
+        "CEI": "Chezron, da cui discende la famiglia degli Chezroniti; Carmi, da cui discende la famiglia dei Carmiti."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "אֵ֖לֶּה מִשְׁפְּחֹ֣ת הָ/רֻֽאוּבֵנִ֑י וַ/יִּהְי֣וּ פְקֻדֵי/הֶ֗ם שְׁלֹשָׁ֤ה וְ/אַרְבָּעִים֙ אֶ֔לֶף וּ/שְׁבַ֥ע מֵא֖וֹת וּ/שְׁלֹשִֽׁים׃",
+        "LXX": "οὗτοι δῆμοι Ῥουβήν· καὶ ἐγένετο ἡ ἐπίσκεψις αὐτῶν τρεῖς καὶ τεσσεράκοντα χιλιάδες καὶ ἑπτακόσιοι καὶ τριάκοντα.",
+        "VUL": "Hæ sunt familiæ de stirpe Ruben : quarum numerus inventus est quadraginta tria millia, et septingenti triginta.",
+        "SYN": "вот поколения Рувимовы; и исчислено их сорок три тысячи семьсот тридцать.",
+        "NEO": "Telles sont les familles des Rubénites ; leurs recensés furent quarante-trois mille sept cent trente. —",
+        "NAB": "These were the clans of the Reubenites, of whom forty-three thousand seven hundred and thirty men were registered.",
+        "VAT_ES": "Estos eran los clanes de los rubenitas, según el censo: 43.730 hombres.",
+        "CEI": "Tali sono le famiglie dei Rubeniti: quelli che furono registrati erano quarantatremilasettecentotrenta."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֥י פַלּ֖וּא אֱלִיאָֽב׃",
+        "LXX": "καὶ υἱοὶ Φαλλού· Ἐλιάβ.",
+        "VUL": "Filius Phallu, Eliab :",
+        "SYN": "И сыны Фаллуя: Елиав.",
+        "NEO": "Fils de Phallu, Eliab. —",
+        "NAB": "From Pallu descended Eliab,",
+        "VAT_ES": "El hijo de Palú fue Eliab.",
+        "CEI": "Figli di Pallu: Eliab."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וּ/בְנֵ֣י אֱלִיאָ֔ב נְמוּאֵ֖ל וְ/דָתָ֣ן וַ/אֲבִירָ֑ם הֽוּא דָתָ֨ן וַ/אֲבִירָ֜ם קרואי קְרִיאֵ֣י הָ/עֵדָ֗ה אֲשֶׁ֨ר הִצּ֜וּ עַל מֹשֶׁ֤ה וְ/עַֽל אַהֲרֹן֙ בַּ/עֲדַת קֹ֔רַח בְּ/הַצֹּתָ֖/ם עַל יְהוָֽה׃",
+        "LXX": "καὶ υἱοὶ Ἐλιάβ· Ναμουὴλ καὶ Δαθὰν καὶ Ἀβειρών· οὗτοι ἐπίκλητοι τῆς συναγωγῆς, οὗτοί εἰσιν οἱ ἐπισυστάντες ἐπὶ Μωυσῆν καὶ Ἀαρὼν ἐν τῇ συναγωγῇ Κόρε ἐν τῇ ἐπισυστάσει Κυρίου·",
+        "VUL": "hujus filii, Namuel et Dathan et Abiron : isti sunt Dathan et Abiron principes populi, qui surrexerunt contra Moysen et Aaron in seditione Core, quando adversus Dominum rebellaverunt :",
+        "SYN": "Сыны Елиава: Немуил, Дафан и Авирон. Это те Дафан и Авирон, призываемые в собрание, которые произвели возмущение против Моисея и Аарона вместе с сообщниками Корея, когда сии произвели возмущение против Господа;",
+        "NEO": "Fils d’Eliab : Namuel, Dathan et Abiron. C’est ce Dathan et cet Abiron, membres du conseil, qui se soulevèrent contre Moïse et Aaron, dans la troupe de Coré, lorsqu’elle se souleva contre \\+w Yahweh|strong=\"H3068\"\\+w**.",
+        "NAB": "and the descendants of Eliab were Dathan and Abiram-the same Dathan and Abiram, councilors of the community, who revolted against Moses and Aaron (like Korah's band when it rebelled against the LORD).",
+        "VAT_ES": "Los hijos de Eliab fueron Nemuel, Datán y Abirón. Datán y Abirón –representantes de la comunidad– son los mismos que se amotinaron contra Moisés y Aarón, junto con los secuaces de Coré, cuando se produjo el amotinamiento contra el Señor.",
+        "CEI": "Figli di Eliab: Nemuel, Datan e Abiram. Questi sono quel Datan e quell'Abiram, membri del consiglio, che si ribellarono contro Mosè e contro Aronne con la gente di Core, quando questa si era ribellata contro il Signore;"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "וַ/תִּפְתַּ֨ח הָ/אָ֜רֶץ אֶת פִּ֗י/הָ וַ/תִּבְלַ֥ע אֹתָ֛/ם וְ/אֶת קֹ֖רַח בְּ/מ֣וֹת הָ/עֵדָ֑ה בַּ/אֲכֹ֣ל הָ/אֵ֗שׁ אֵ֣ת חֲמִשִּׁ֤ים וּ/מָאתַ֨יִם֙ אִ֔ישׁ וַ/יִּהְי֖וּ לְ/נֵֽס׃",
+        "LXX": "καὶ ἀνοίξασα ἡ γῆ τὸ στόμα αὐτῆς κατέπιεν αὐτοὺς καὶ Κόρε ἐν τῇ συναγωγῇ αὐτοῦ, ὅτε κατέφαγεν τὸ πῦρ τοὺς πεντήκοντα καὶ διακοσίους, καὶ ἐγενήθησαν ἐν σημείῳ.",
+        "VUL": "et aperiens terra os suum devoravit Core, morientibus plurimis, quando combussit ignis ducentos quinquaginta viros. Et factum est grande miraculum,",
+        "SYN": "и разверзла земля уста свои, и поглотила их и Корея; вместе с _ними_ умерли и сообщники их, когда огонь пожрал двести пятьдесят человек, и стали они в знамение;",
+        "NEO": "La terre, ouvrant sa bouche, les engloutit avec Coré, quand la troupe périt, et que le feu consuma les deux cent cinquante hommes : ils servirent d’exemple.",
+        "NAB": "The earth opened its mouth and swallowed them as a warning (Korah too and the band that died when the fire consumed two hundred and fifty men.",
+        "VAT_ES": "Después de lo cual la tierra abrió sus fauces y los devoró junto con Coré, cuando murió aquel grupo y el fuego devoró a los doscientos cincuenta hombres, para que sirvieran de escarmiento.",
+        "CEI": "la terra spalancò la bocca e li inghiottì insieme con Core, quando quella gente perì e il fuoco divorò duecentocinquanta uomini, che servirono d'esempio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וּ/בְנֵי קֹ֖רַח לֹא מֵֽתוּ׃",
+        "LXX": "οἱ δὲ υἱοὶ Κόρε οὐκ ἀπέθανον.",
+        "VUL": "ut, Core pereunte, filii illius non perirent.",
+        "SYN": "но сыны Кореевы не умерли.",
+        "NEO": "Mais les fils de Coré ne moururent pas.",
+        "NAB": "The descendents of Korah, however, did not die out).",
+        "VAT_ES": "Los hijos de Coré, sin embargo, no murieron.",
+        "CEI": "Ma i figli di Core non perirono."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "בְּנֵ֣י שִׁמְעוֹן֮ לְ/מִשְׁפְּחֹתָ/ם֒ לִ/נְמוּאֵ֗ל מִשְׁפַּ֨חַת֙ הַ/נְּמ֣וּאֵלִ֔י לְ/יָמִ֕ין מִשְׁפַּ֖חַת הַ/יָּמִינִ֑י לְ/יָכִ֕ין מִשְׁפַּ֖חַת הַ/יָּכִינִֽי׃",
+        "LXX": "Καὶ οἱ υἱοὶ Συμεών· ὁ δῆμος τῶν υἱῶν Συμεών· τῷ Ναμουήλ, δῆμος ὁ Ναμουηλεί· τῷ Ἰαμείν, δῆμος ὁ Ἰαμινεί· τῷ Ἰαχείν, δῆμος ὁ Ἰαχινεί·",
+        "VUL": "Filii Simeon per cognationes suas : Namuel, ab hoc familia Namuelitarum : Jamin, ab hoc familia Jaminitarum : Jachin, ab hoc familia Jachinitarum :",
+        "SYN": "Сыны Симеона по поколениям их: от Немуила поколение Немуилово, от Ямина поколение Яминово, от Яхина поколение Яхиново,",
+        "NEO": "Fils de Siméon, selon leurs familles : de Namuel, la famille des Namuélites ; de Jamin, la famille des Jaminites ; de Jachin, la famille des Jachinites ;",
+        "NAB": "The Simeonites by clans were: through Nemuel the clan of the Nemuelites, through Jamin the clan of the Jaminites, through Jachin the clan of the Jachinites,",
+        "VAT_ES": "Los clanes de los descendientes de Simeón fueron: de Nemuel, el clan de los nemuelitas; de Iamín, el clan de los iaminitas; de Iaquín, el clan de los iaquinitas;",
+        "CEI": "Figli di Simeone secondo le loro famiglie. Da Nemuel discende la famiglia dei Nemueliti; da Iamin la famiglia degli Iaminiti; da Iachin la famiglia degli Iachiniti; da Zocar la famiglia dei Zocariti;"
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "לְ/זֶ֕רַח מִשְׁפַּ֖חַת הַ/זַּרְחִ֑י לְ/שָׁא֕וּל מִשְׁפַּ֖חַת הַ/שָּׁאוּלִֽי׃",
+        "LXX": "τῷ Ζάρα, δῆμος ὁ Ζαραεί· τῷ Σαούλ, δῆμος ὁ Σαουλεί.",
+        "VUL": "Zare, ab hoc familia Zareitarum : Saul, ab hoc familia Saulitarum.",
+        "SYN": "от Зары поколение Зарино, от Саула поколение Саулово;",
+        "NEO": "de Zaré la famille des Zaréites ; de Saül, la famille des Saülites.",
+        "NAB": "through Sohar the clan of the Soharites, through Shaul the clan of the Shaulites.",
+        "VAT_ES": "de Zéraj, el clan de los zerajitas; de Saúl, el clan de los saulitas.",
+        "CEI": "da Saul la famiglia dei Sauliti."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "אֵ֖לֶּה מִשְׁפְּחֹ֣ת הַ/שִּׁמְעֹנִ֑י שְׁנַ֧יִם וְ/עֶשְׂרִ֛ים אֶ֖לֶף וּ/מָאתָֽיִם׃",
+        "LXX": "οὗτοι δῆμοι Συμεὼν ἐκ τῆς ἐπισκέψεως αὐτῶν, δύο καὶ εἴκοσι χιλιάδες καὶ διακόσιοι.",
+        "VUL": "Hæ sunt familiæ de stirpe Simeon, quarum omnis numerus fuit viginti duo millia ducenti.",
+        "SYN": "вот поколения Симеоновы [при исчислении их]: двадцать две тысячи двести.",
+        "NEO": "Telles sont les familles des Siméonites : vingt-deux mille deux cents.",
+        "NAB": "These were the clans of the Simeonites, of whom twenty-two thousand two hundred men were registered.",
+        "VAT_ES": "Estos eran los clanes de los simeonitas: 22.200 hombres.",
+        "CEI": "Tali sono le famiglie dei Simeoniti. Ne furono registrati ventiduemiladuecento."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "בְּנֵ֣י גָד֮ לְ/מִשְׁפְּחֹתָ/ם֒ לִ/צְפ֗וֹן מִשְׁפַּ֨חַת֙ הַ/צְּפוֹנִ֔י לְ/חַגִּ֕י מִשְׁפַּ֖חַת הַֽ/חַגִּ֑י לְ/שׁוּנִ֕י מִשְׁפַּ֖חַת הַ/שּׁוּנִֽי׃",
+        "LXX": "Υἱοὶ δὲ Ἰούδα· Ἢρ καὶ Αὐνάν· καὶ ἀπέθανεν Ἢρ καὶ Αὐνὰν ἐν γῇ Χανάαν.",
+        "VUL": "Filii Gad per cognationes suas : Sephon, ab hoc familia Sephonitarum : Aggi, ab hoc familia Aggitarum : Suni, ab hoc familia Sunitarum :",
+        "SYN": "Сыны Гада по поколениям их: от Цефона поколение Цефоново, от Хаггия поколение Хаггиево, от Шуния поколение Шуниево,",
+        "NEO": "Fils de Gad, selon leurs familles : de Séphon, la famille des Séphonites ; d’Aggi, la famille des Aggites ; de Sunit, la famille des Sunites ;",
+        "NAB": "The Gadites by clans were: through Zephon the clan of the Zephonites, through Haggi the clan of the Haggites, through Shuni the clan of the Shunites,",
+        "VAT_ES": "Los clanes de los descendientes de Gad fueron: de Sefón, el clan de los sefonitas; de Jaguí, el clan de los jaguitas; de Suní, el clan de los sunitas;",
+        "CEI": "Figli di Gad secondo le loro famiglie. Da Sefon discende la famiglia dei Sefoniti; da Agghi la famiglia degli Agghiti; da Suni la famiglia dei Suniti;"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "לְ/אָזְנִ֕י מִשְׁפַּ֖חַת הָ/אָזְנִ֑י לְ/עֵרִ֕י מִשְׁפַּ֖חַת הָ/עֵרִֽי׃",
+        "LXX": "ἐγένοντο δὲ οἱ υἱοὶ Ἰούδα κατὰ δήμους αὐτῶν· τῷ Σηλών, δῆμος ὁ Σηλωνεί· τῷ Φάρες, δῆμος ὁ Φάρες· τῷ Ζάρα, δῆμος ὁ Ζαραεί.",
+        "VUL": "Ozni, ab hoc familia Oznitarum : Her, ab hoc familia Heritarum :",
+        "SYN": "от Озния поколение Озниево, от Ерия поколение Ериево,",
+        "NEO": "d’Ozni, la famille des Oznites ; de Her, la famille des Hérites ;",
+        "NAB": "through Ozni the clan of the Oznites, through Eri the clan of the Erites,",
+        "VAT_ES": "de Ozní, el clan de los oznitas; de Erí, el clan de los eritas;",
+        "CEI": "da Ozni la famiglia degli Ozniti; da Eri la famiglia degli Eriti;"
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "לַ/אֲר֕וֹד מִשְׁפַּ֖חַת הָ/אֲרוֹדִ֑י לְ/אַ֨רְאֵלִ֔י מִשְׁפַּ֖חַת הָ/אַרְאֵלִֽי׃",
+        "LXX": "καὶ ἐγένετο υἱοὶ Φάρες· τῷ Ἁσρών, δῆμος ὁ Ἁσρωνεί· τῷ Ἰαμούν, δῆμος ὁ Ἰαμουνεί.",
+        "VUL": "Arod, ab hoc familia Aroditarum : Ariel, ab hoc familia Arielitarum.",
+        "SYN": "от Арода поколение Ародово, от Арелия поколение Арелиево;",
+        "NEO": "d’Arod, la famille des Arodites ; d’Ariel, la famille des Ariélites.",
+        "NAB": "through Arod the clan of the Arodites, through Areli the clan of the Arelites.",
+        "VAT_ES": "de Arod, el clan de los aroditas; de Arelí, el clan de los arelitas.",
+        "CEI": "da Arod la famiglia degli Aroditi; da Areli la famiglia degli Areliti."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "אֵ֛לֶּה מִשְׁפְּחֹ֥ת בְּנֵֽי גָ֖ד לִ/פְקֻדֵי/הֶ֑ם אַרְבָּעִ֥ים אֶ֖לֶף וַ/חֲמֵ֥שׁ מֵאֽוֹת׃",
+        "LXX": "οὗτοι δῆμοι τῷ Ἰούδᾳ κατὰ τὴν ἐπισκοπὴν αὐτῶν, ἓξ καὶ ἑβδομήκοντα χιλιάδες καὶ πεντακόσιοι.",
+        "VUL": "Istæ sunt familiæ Gad, quarum omnis numerus fuit quadraginta millia quingenti.",
+        "SYN": "вот поколения сынов Гадовых, по исчислению их: сорок тысяч пятьсот.",
+        "NEO": "Telles sont les familles des fils de Gad, selon leurs recensés : quarante mille cinq cents.",
+        "NAB": "These were the clans of the Gadites, of whom forty thousand five hundred men were registered.",
+        "VAT_ES": "Estos eran los clanes de los gaditas, según el censo: 40.500 hombres.",
+        "CEI": "Tali sono le famiglie dei figli di Gad. Ne furono registrati quarantamilacinquecento."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "בְּנֵ֥י יְהוּדָ֖ה עֵ֣ר וְ/אוֹנָ֑ן וַ/יָּ֥מָת עֵ֛ר וְ/אוֹנָ֖ן בְּ/אֶ֥רֶץ כְּנָֽעַן׃",
+        "LXX": "Καὶ υἱοὶ Ἰσσαχὰρ κατὰ δήμους αὐτῶν· τῷ Θωλά, δῆμος ὁ Θωλαεί· τῷ Φουά, δῆμος ὁ Φουαεί·",
+        "VUL": "Filii Juda, Her et Onan, qui ambo mortui sunt in terra Chanaan.",
+        "SYN": "Сыны Иуды: Ир и Онан, [Шела, Фарес и Зара]; но Ир и Онан умерли в земле Ханаанской;",
+        "NEO": "Fils de Juda : Her et Onan ; mais Her et Onan moururent au pays de Canaan.",
+        "NAB": "The sons of Judah who died in the land of Canaan were Er and Onan.",
+        "VAT_ES": "Los hijos de Judá fueron Er y Onán. Er y Onán murieron en la tierra de Canaán.",
+        "CEI": "Figli di Giuda: Er e Onan; ma Er e Onan morirono nel paese di Cànaan."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/יִּהְי֣וּ בְנֵי יְהוּדָה֮ לְ/מִשְׁפְּחֹתָ/ם֒ לְ/שֵׁלָ֗ה מִשְׁפַּ֨חַת֙ הַ/שֵּׁ֣לָנִ֔י לְ/פֶ֕רֶץ מִשְׁפַּ֖חַת הַ/פַּרְצִ֑י לְ/זֶ֕רַח מִשְׁפַּ֖חַת הַ/זַּרְחִֽי׃",
+        "LXX": "τῷ Ἰασούβ, δῆμος Ἰασουβεί· τῷ Σαμαράμ, δῆμος ὁ Σαμαρανεί.",
+        "VUL": "Fueruntque filii Juda per cognationes suas : Sela, a quo familia Selaitarum : Phares, a quo familia Pharesitarum : Zare, a quo familia Zareitarum.",
+        "SYN": "и были сыны Иуды по поколениям их: от Шелы поколение Шелино, от Фареса поколение Фаресово, от Зары поколение Зарино;",
+        "NEO": "Voici les fils de Juda selon leurs familles : de Séla, la famille des Sélaïtes ; de Pharès, la famille des Pharésites ; de Zaré, la famille des Zaréites. —",
+        "NAB": "The Judahites by clans were: through Shelah the clan of the Shelahites, through Perez the clan of the Perezites, through Zerah the clan of the Zerahites.",
+        "VAT_ES": "Los clanes de los descendientes de Judá fueron: de Selá, el clan de los selaítas; de Péres, el clan de los peresitas; de Séraj, el clan de los serajitas.",
+        "CEI": "Ecco i figli di Giuda secondo le loro famiglie: da Sela discende la famiglia degli Selaniti; da Perez la famiglia dei Pereziti; da Zerach la famiglia degli Zerachiti."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/יִּהְי֣וּ בְנֵי פֶ֔רֶץ לְ/חֶצְרֹ֕ן מִשְׁפַּ֖חַת הַֽ/חֶצְרֹנִ֑י לְ/חָמ֕וּל מִשְׁפַּ֖חַת הֶ/חָמוּלִֽי׃",
+        "LXX": "οὗτοι δῆμοι Ἰσσαχὰρ ἐξ ἐπισκέψεως αὐτῶν, τέσσαρες καὶ ἑξήκοντα χιλιάδες καὶ τριακόσιοι.",
+        "VUL": "Porro filii Phares : Hesron, a quo familia Hesronitarum : et Hamul, a quo familia Hamulitarum.",
+        "SYN": "и были сыны Фаресовы: от Есрома поколение Есромово, от Хамула поколение Хамулово;",
+        "NEO": "Les fils de Pharès furent : de Hesron, la famille des Hesronites ; de Hamul, la famille des Hamulites. —",
+        "NAB": "The Perezites were: through Hezron the clan of the Hezronites, through Hamul the clan of the Hamulites.",
+        "VAT_ES": "Los descendientes de Péres fueron: de Jesrón, el clan de los jesronitas; de Jamul, el clan de los jamulitas.",
+        "CEI": "I figli di Perez furono: Chezron da cui discende la famiglia dei Chezroniti; Amul da cui discende la famiglia degli Amuliti."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "אֵ֛לֶּה מִשְׁפְּחֹ֥ת יְהוּדָ֖ה לִ/פְקֻדֵי/הֶ֑ם שִׁשָּׁ֧ה וְ/שִׁבְעִ֛ים אֶ֖לֶף וַ/חֲמֵ֥שׁ מֵאֽוֹת׃",
+        "LXX": "Υἱοὶ Ζαβουλὼν κατὰ δήμους αὐτῶν· τῷ Σάρεδ, δῆμος ὁ Σαρεδεί· τῷ Ἀλλών, δῆμος ὁ Ἀλλωνεί· τῷ Ἀλλήλ, δῆμος Ἀλληλεί.",
+        "VUL": "Istæ sunt familiæ Juda, quarum omnis numerus fuit septuaginta sex millia quingenti.",
+        "SYN": "вот поколения Иудины, по исчислению их: семьдесят шесть тысяч пятьсот.",
+        "NEO": "Telles sont les familles de Juda, selon leurs recensés : soixante-seize mille cinq cents.",
+        "NAB": "These were the clans of Judah, of whom seventy-six thousand five hundred men were registered.",
+        "VAT_ES": "Estos eran los descendientes de Judá, según el censo: 76.500 hombres.",
+        "CEI": "Tali sono le famiglie di Giuda. Ne furono registrati settantaseimilacinquecento."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "בְּנֵ֤י יִשָּׂשכָר֙ לְ/מִשְׁפְּחֹתָ֔/ם תּוֹלָ֕ע מִשְׁפַּ֖חַת הַ/תּוֹלָעִ֑י לְ/פֻוָ֕ה מִשְׁפַּ֖חַת הַ/פּוּנִֽי׃",
+        "LXX": "οὗτοι δῆμοι Ζαβουλὼν ἐξ ἐπισκέψεως αὐτῶν, ἑξήκοντα χιλιάδες καὶ πεντακόσιοι.",
+        "VUL": "Filii Issachar per cognationes suas : Thola, a quo familia Tholaitarum : Phua, a quo familia Phuaitarum :",
+        "SYN": "Сыны Иссахаровы по поколениям их: от Фолы поколение Фолино, от Фувы поколение Фувино,",
+        "NEO": "Fils d’Issachar selon leurs familles : de Thola, la famille des Tholaïtes ; de Phua, la famille des Phuaïtes ;",
+        "NAB": "The Issacharites by clans were: through Tola the clan of the Tolaites, through Puvah the clan of the Puvahites,",
+        "VAT_ES": "Los clanes de los hijos de Isacar fueron: de Tolá, el clan de los tolaítas; de Puá, el clan de los puaítas;",
+        "CEI": "Figli di Issacar secondo le loro famiglie: da Tola discende la famiglia dei Tolaiti; da Puva la famiglia dei Puviti;"
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "לְ/יָשׁ֕וּב מִשְׁפַּ֖חַת הַ/יָּשׁוּבִ֑י לְ/שִׁמְרֹ֕ן מִשְׁפַּ֖חַת הַ/שִּׁמְרֹנִֽי׃",
+        "LXX": "Υἱοὶ Γὰδ κατὰ δήμους αὐτῶν· τῷ Σαφών, δῆμος ὁ Σαφωνεί· τῷ Ἁγγεί, δῆμος ὁ Ἁγγεί· τῷ Σουνεί, δῆμος ὁ Σουνεί·",
+        "VUL": "Jasub, a quo familia Jasubitarum : Semran, a quo familia Semranitarum.",
+        "SYN": "от Иашува поколение Иашувово, от Шимрона поколение Шимроново;",
+        "NEO": "de Jasub, la famille des Jasubites ; de Semran, la famille des Semranites.",
+        "NAB": "through Jashub the clan of the Jashubites, through Shimron the clan of the Shimronites.",
+        "VAT_ES": "de Iasub, el clan de los iasubitas; de Simrón, el clan de los simronitas.",
+        "CEI": "da Iasub la famiglia degli Iasubiti; da Simron la famiglia dei Simroniti."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "אֵ֛לֶּה מִשְׁפְּחֹ֥ת יִשָּׂשכָ֖ר לִ/פְקֻדֵי/הֶ֑ם אַרְבָּעָ֧ה וְ/שִׁשִּׁ֛ים אֶ֖לֶף וּ/שְׁלֹ֥שׁ מֵאֽוֹת׃",
+        "LXX": "τῷ Ἀζενεί, δῆμος ὁ Ἀζενεί· τῷ Ἀδδεί, δῆμος ὁ Ἀδδεί·",
+        "VUL": "Hæ sunt cognationes Issachar, quarum numerus fuit sexaginta quatuor millia trecenti.",
+        "SYN": "вот поколения Иссахаровы, по исчислению их: шестьдесят четыре тысячи триста.",
+        "NEO": "Telles sont les familles d’Issachar, selon leurs recensés : soixante-quatre mille trois cents.",
+        "NAB": "These were the clans of Issachar, of whom sixty-four thousand three hundred men were registered.",
+        "VAT_ES": "Estos eran los clanes de Isacar, según el censo: 64.300 hombres.",
+        "CEI": "Tali sono le famiglie di Issacar. Ne furono registrati sessantaquattromilatrecento."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "בְּנֵ֣י זְבוּלֻן֮ לְ/מִשְׁפְּחֹתָ/ם֒ לְ/סֶ֗רֶד מִשְׁפַּ֨חַת֙ הַ/סַּרְדִּ֔י לְ/אֵל֕וֹן מִשְׁפַּ֖חַת הָ/אֵלֹנִ֑י לְ/יַ֨חְלְאֵ֔ל מִשְׁפַּ֖חַת הַ/יַּחְלְאֵלִֽי׃",
+        "LXX": "τῷ, Ἀροδεί, δῆμος ὁ Ἀροδεί· τῷ Ἀριήλ, δῆμος ὁ Ἀριηλεί.",
+        "VUL": "Filii Zabulon per cognationes suas : Sared, a quo familia Sareditarum : Elon, a quo familia Elonitarum : Jalel, a quo familia Jalelitarum.",
+        "SYN": "Сыны Завулона по поколениям их: от Середа поколение Середово, от Елона поколение Елоново, от Иахлеила поколение Иахлеилово;",
+        "NEO": "Fils de Zabulon selon leurs familles : de Sared, la famille des Sarédites ; d’Elon, la famille des Elonites ; de Jalel, la famille des Jalélites.",
+        "NAB": "The Zebulunites by clans were: through Sered the clan of the Seredites, through Elon the clan of the Elonites, through Jahleel the clan of the Jahleelites.",
+        "VAT_ES": "Los clanes de los descendientes de Zabulón fueron: de Séred, el clan de los sereditas; de Elón, el clan de los elonitas; de Iajlel, el clan de los iajlelitas.",
+        "CEI": "Figli di Zàbulon secondo le loro famiglie: da Sered discende la famiglia dei Serediti; da Elon la famiglia degli Eloniti; da Iacleel la famiglia degli Iacleeliti."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "אֵ֛לֶּה מִשְׁפְּחֹ֥ת הַ/זְּבוּלֹנִ֖י לִ/פְקֻדֵי/הֶ֑ם שִׁשִּׁ֥ים אֶ֖לֶף וַ/חֲמֵ֥שׁ מֵאֽוֹת׃",
+        "LXX": "οὗτοι δῆμοι υἱῶν Γὰδ ἐξ ἐπισκέψεως αὐτῶν, τέσσαρες καὶ τεσσεράκοντα χιλιάδες καὶ πεντακόσιοι.",
+        "VUL": "Hæ sunt cognationes Zabulon, quarum numerus fuit sexaginta millia quingenti.",
+        "SYN": "вот поколения Завулоновы, по исчислению их: шестьдесят тысяч пятьсот.",
+        "NEO": "Telles sont les familles issues de Zabulon, selon leurs recensés : soixante mille cinq cents.",
+        "NAB": "These were the clans of the Zebulunites, of whom sixty thousand five hundred men were registered.",
+        "VAT_ES": "Estos eran los clanes de los zabulonitas, según el censo: 60.500 hombres.",
+        "CEI": "Tali sono le famiglie degli Zabuloniti. Ne furono registrati sessantamilacinquecento."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "WLC": "בְּנֵ֥י יוֹסֵ֖ף לְ/מִשְׁפְּחֹתָ֑/ם מְנַשֶּׁ֖ה וְ/אֶפְרָֽיִם׃",
+        "LXX": "Υἱοὶ Ἀσὴρ κατὰ δήμους αὐτῶν· τῷ Ἰαμείν, δῆμος ὁ Ἰαμεινεί· τῷ Ἰεσού, δῆμος ὁ Ἰεσουεί· τῷ Βαριά, δῆμος ὁ Βαριαεί.",
+        "VUL": "Filii Joseph per cognationes suas, Manasse et Ephraim.",
+        "SYN": "Сыны Иосифа по поколениям их: Манассия и Ефрем.",
+        "NEO": "Fils de Joseph selon leurs familles : Manassé et Ephraïm.",
+        "NAB": "The sons of Joseph were Manasseh and Ephraim.",
+        "VAT_ES": "Los descendientes de José fueron Manasés y Efraím con sus clanes.",
+        "CEI": "Figli di Giuseppe secondo le loro famiglie: Manàsse ed Efraim."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "WLC": "בְּנֵ֣י מְנַשֶּׁ֗ה לְ/מָכִיר֙ מִשְׁפַּ֣חַת הַ/מָּכִירִ֔י וּ/מָכִ֖יר הוֹלִ֣יד אֶת גִּלְעָ֑ד לְ/גִלְעָ֕ד מִשְׁפַּ֖חַת הַ/גִּלְעָדִֽי׃",
+        "LXX": "τῷ Χόβερ, δῆμος ὁ Χοβερεί· τῷ Μελλιήλ, δῆμος ὁ Μελλιηλεί.",
+        "VUL": "De Manasse ortus est Machir, a quo familia Machiritarum. Machir genuit Galaad, a quo familia Galaaditarum.",
+        "SYN": "Сыны Манассии: от Махира поколение Махирово; от Махира родился Галаад, от Галаада поколение Галаадово.",
+        "NEO": "Fils de Manassé : de Machir, la famille des Machirites. — Machir engendra Galaad ; de Galaad, la famille des Galaadites. —",
+        "NAB": "The Manassehites by clans were: through Machir the clan of the Machirites, through Gilead, a descendant of Machir, the clan of the Gileadites.",
+        "VAT_ES": "Los descendientes de Manasés fueron: de Maquir, el clan de los maquiritas –Maquir fue padre de Galaad–. De Galaad, el clan de los galaaditas.",
+        "CEI": "Figli di Manàsse: da Machir discende la famiglia dei Machiriti. Machir generò Gàlaad. Da Gàlaad discende la famiglia dei Galaaditi."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "WLC": "אֵ֚לֶּה בְּנֵ֣י גִלְעָ֔ד אִיעֶ֕זֶר מִשְׁפַּ֖חַת הָ/אִֽיעֶזְרִ֑י לְ/חֵ֕לֶק מִשְׁפַּ֖חַת הַֽ/חֶלְקִֽי׃",
+        "LXX": "καὶ τὸ ὄνομα θυγατρὸς Ἀσὴρ Κάρα.",
+        "VUL": "Galaad habuit filios : Jezer, a quo familia Jezeritarum : et Helec, a quo familia Helecitarum :",
+        "SYN": "Вот сыны Галаадовы: от Иезера поколение Иезерово, от Хелека поколение Хелеково,",
+        "NEO": "Voici les fils de Galaad : Jézer, d’où la famille des Jézérites ; de Hélec, la famille des Hélicites ;",
+        "NAB": "The Gileadites were: through Abiezer the clan of the Abiezrites, through Helek the clan of the Helekites,",
+        "VAT_ES": "Los descendientes de Galaad fueron: de Iézer, el clan de los iezeritas; de Jélec, el clan de los jelequitas;",
+        "CEI": "Questi sono i figli di Gàlaad: Iezer da cui discende la famiglia degli Iezeriti; Elek da cui discende la famiglia degli Eleciti;"
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "WLC": "וְ/אַ֨שְׂרִיאֵ֔ל מִשְׁפַּ֖חַת הָֽ/אַשְׂרִֽאֵלִ֑י וְ/שֶׁ֕כֶם מִשְׁפַּ֖חַת הַ/שִּׁכְמִֽי׃",
+        "LXX": "οὗτοι δῆμοι Ἀσὴρ ἐξ ἐπισκέψεως αὐτῶν, τρεῖς καὶ τεσσεράκοντα χιλιάδες καὶ χ’.",
+        "VUL": "et Asriel, a quo familia Asrielitarum : et Sechem, a quo familia Sechemitarum :",
+        "SYN": "от Асриила поколение Асриилово, от Шехема поколение Шехемово,",
+        "NEO": "Asriel, d’où la famille des Asriélites ; Séchem, d’où la famille des Séchémites ;",
+        "NAB": "through Asriel the clan of the Asrielites, through Shechem the clan of the Shechemites,",
+        "VAT_ES": "de Asriel, el clan de los asrielitas; de Sequém, el clan de los sequemitas;",
+        "CEI": "Asriel da cui discende la famiglia degli Asrieliti; Sichem da cui discende la famiglia dei Sichemiti;"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "WLC": "וּ/שְׁמִידָ֕ע מִשְׁפַּ֖חַת הַ/שְּׁמִידָעִ֑י וְ/חֵ֕פֶר מִשְׁפַּ֖חַת הַֽ/חֶפְרִֽי׃",
+        "LXX": "Υἱοὶ Ἰωσὴφ κατὰ δήμους αὐτῶν· Μανασσὴ καὶ Ἐφράιμ.",
+        "VUL": "et Semida, a quo familia Semidaitarum : et Hepher, a quo familia Hepheritarum.",
+        "SYN": "от Шемиды поколение Шемидино, от Хефера поколение Хеферово.",
+        "NEO": "Sémida, d’où la famille de Sémidaïtes ; Hépher, d’où la famille des Héphrites.",
+        "NAB": "through Shemida the clan of the Shemidaites, through Hepher the clan of the Hepherites.",
+        "VAT_ES": "de Semidá, el clan de los semidaítas; de Jéfer, el clan de los jeferitas.",
+        "CEI": "Semida da cui discende la famiglia dei Semiditi; Efer da cui discende la famiglia degli Eferiti."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "WLC": "וּ/צְלָפְחָ֣ד בֶּן חֵ֗פֶר לֹא הָ֥יוּ ל֛/וֹ בָּנִ֖ים כִּ֣י אִם בָּנ֑וֹת וְ/שֵׁם֙ בְּנ֣וֹת צְלָפְחָ֔ד מַחְלָ֣ה וְ/נֹעָ֔ה חָגְלָ֥ה מִלְכָּ֖ה וְ/תִרְצָֽה׃",
+        "LXX": "υἱοὶ Μανασσή· τῷ Μαχείρ, δῆμος ὁ Μαχειρί· καὶ Μαχεὶρ ἐγέννησεν τὸν Γαλαάδ· τῷ Γαλαάδ, δῆμος ὁ Γαλααδεί.",
+        "VUL": "Fuit autem Hepher pater Salphaad, qui filios non habebat, sed tantum filias : quarum ista sunt nomina : Maala, et Noa, et Hegla, et Melcha, et Thersa.",
+        "SYN": "У Салпаада, сына Хеферова, не было сыновей, а только дочери; имя дочерей Салпаадовых: Махла, Ноа, Хогла, Милка и Фирца.",
+        "NEO": "Salphaad, fils d’Hépher, n’eut pas de fils, mais il eut des filles. Voici les noms des filles de Salphaad : Maala, Noa, Hégla, Melcha et Thersa. —",
+        "NAB": "Zelophehad, son of Hepher, had no sons, but only daughters, whose names were Mahlah, Noah, Hoglah, Milcah and Tirzah.",
+        "VAT_ES": "Selofjad, hijo de Jéfer, no tuvo hijos, sino solamente hijas.",
+        "CEI": "Ora Zelofcad, figlio di Efer, non ebbe maschi ma soltanto figlie e le figlie di Zelofcad si chiamarono Macla, Noa, Ogla, Milca e Tirza."
+      }
+    },
+    "34": {
+      "seq": 34,
+      "v_in": {
+        "MT": 34,
+        "VUL": 34,
+        "LXX": 34
+      },
+      "text": {
+        "WLC": "אֵ֖לֶּה מִשְׁפְּחֹ֣ת מְנַשֶּׁ֑ה וּ/פְקֻ֣דֵי/הֶ֔ם שְׁנַ֧יִם וַ/חֲמִשִּׁ֛ים אֶ֖לֶף וּ/שְׁבַ֥ע מֵאֽוֹת׃",
+        "LXX": "καὶ οὗτοι υἱοὶ Γαλαάδ· Ἀχιέζερ, δῆμος ὁ Ἀχιεζειρεί· τῷ Χέλεγ, δῆμος ὁ Χελεγεί·",
+        "VUL": "Hæ sunt familiæ Manasse, et numerus earum quinquaginta duo millia septingenti.",
+        "SYN": "Вот поколения Манассиины; а исчислено их пятьдесят две тысячи семьсот.",
+        "NEO": "Telles sont les familles de Manassé ; leurs recensés furent cinquante-deux mille sept cents.",
+        "NAB": "These were the clans of Manasseh, of whom fifty-two thousand seven hundred men were registered.",
+        "VAT_ES": "Los nombres de estas fueron Majlá, Noá, Joglá, Milcá y Tirsá. Estos eran los clanes de Manasés, según el censo: 52.700 hombres.",
+        "CEI": "Tali sono le famiglie di Manàsse: gli uomini registrati furono cinquantaduemilasettecento."
+      }
+    },
+    "35": {
+      "seq": 35,
+      "v_in": {
+        "MT": 35,
+        "VUL": 35,
+        "LXX": 35
+      },
+      "text": {
+        "WLC": "אֵ֣לֶּה בְנֵי אֶפְרַיִם֮ לְ/מִשְׁפְּחֹתָ/ם֒ לְ/שׁוּתֶ֗לַח מִשְׁפַּ֨חַת֙ הַ/שֻּׁ֣תַלְחִ֔י לְ/בֶ֕כֶר מִשְׁפַּ֖חַת הַ/בַּכְרִ֑י לְ/תַ֕חַן מִשְׁפַּ֖חַת הַֽ/תַּחֲנִֽי׃",
+        "LXX": "τῷ Ἐσριήλ, δῆμος ὁ Ἐσριηλεί· τῷ Σύχεμ, δῆμος ὁ Συχεμεεί.",
+        "VUL": "Filii autem Ephraim per cognationes suas fuerunt hi : Suthala, a quo familia Suthalaitarum : Becher, a quo familia Becheritarum : Thehen, a quo familia Thehenitarum.",
+        "SYN": "Вот сыны Ефремовы по поколениям их: от Шутелы поколение Шутелино, от Бехера поколение Бехерово, от Тахана поколение Таханово;",
+        "NEO": "Voici les fils d’Ephraïm selon leurs familles : de Suthala, la famille des Suthalaïtes ; de Bécher, la famille des Béchrites ; de Théhen, la famille des Théhénites. —",
+        "NAB": "The Ephraimites by clans were: through Shuthelah the clan of the Shuthelahites, through Becher the clan of the Bechrites, through Tahan the clan of the Tahanites.",
+        "VAT_ES": "Los clanes de los descendientes de Efraím fueron los siguientes: de Sutélaj, el clan de los sutelajitas; de Béquer, el clan de los bequeritas; de Taján, el clan de los tajanitas.",
+        "CEI": "Questi sono i figli di Efraim secondo le loro famiglie: da Sutelach discende la famiglia dei Sutelachiti; da Beker la famiglia dei Bekeriti; da Tacan la famiglia dei Tacaniti."
+      }
+    },
+    "36": {
+      "seq": 36,
+      "v_in": {
+        "MT": 36,
+        "VUL": 36,
+        "LXX": 36
+      },
+      "text": {
+        "WLC": "וְ/אֵ֖לֶּה בְּנֵ֣י שׁוּתָ֑לַח לְ/עֵרָ֕ן מִשְׁפַּ֖חַת הָ/עֵרָנִֽי׃",
+        "LXX": "τῷ Συμαέρ, δῆμος ὁ Συμαερεί· καὶ Ὅφερ, δῆμος ὁ Ὁφερεί.",
+        "VUL": "Porro filius Suthala fuit Heran, a quo familia Heranitarum.",
+        "SYN": "и вот сыны Шутелы: от Арана поколение Араново;",
+        "NEO": "Voici les fils de Suthala : d’Héran, la famille des Héranites. —",
+        "NAB": "The Shuthelahites were: through Eran the clan of the Eranites.",
+        "VAT_ES": "Los descendientes de Sutélaj fueron los siguientes: de Erán, el clan de los eranitas.",
+        "CEI": "Questi sono i figli di Sutelach: da Erano è discesa la famiglia degli Eraniti."
+      }
+    },
+    "37": {
+      "seq": 37,
+      "v_in": {
+        "MT": 37,
+        "VUL": 37,
+        "LXX": 37
+      },
+      "text": {
+        "WLC": "אֵ֣לֶּה מִשְׁפְּחֹ֤ת בְּנֵי אֶפְרַ֨יִם֙ לִ/פְקֻ֣דֵי/הֶ֔ם שְׁנַ֧יִם וּ/שְׁלֹשִׁ֛ים אֶ֖לֶף וַ/חֲמֵ֣שׁ מֵא֑וֹת אֵ֥לֶּה בְנֵי יוֹסֵ֖ף לְ/מִשְׁפְּחֹתָֽ/ם׃",
+        "LXX": "καὶ τῷ Σαλπαὰδ υἱῷ Ὅφερ οὐκ ἐγένοντο αὐτῷ υἱοί, ἀλλ’ ἢ θυγατέρες· καὶ ταῦτα τὰ ὀνόματα τῶν θυγατέρων Σαλπαάδ· Μαλὰ καὶ Νουὰ καὶ Ἑγλὰ καὶ Μελχὰ καὶ Θερσά.",
+        "VUL": "Hæ sunt cognationes filiorum Ephraim : quarum numerus fuit triginta duo millia quingenti.",
+        "SYN": "вот поколения сынов Ефремовых, по исчислению их: тридцать две тысячи пятьсот. Вот сыны Иосифовы по поколениям их.",
+        "NEO": "Telles sont les familles des fils d’Ephraïm, selon leurs recensés : trente-deux mille cinq cents.",
+        "NAB": "These were the clans of the Ephraimites, of whom thirty-two thousand five hundred men were registered. These were the descendants of Joseph by clans.",
+        "VAT_ES": "Estos eran los clanes de Efraím, según el censo: 32.500 hombres. Todos estos eran los clanes de los hijos de José.",
+        "CEI": "Tali sono le famiglie dei figli di Efraim. Ne furono registrati trentaduemilacinquecento. Questi sono i figli di Giuseppe secondo le loro famiglie."
+      }
+    },
+    "38": {
+      "seq": 38,
+      "v_in": {
+        "MT": 38,
+        "VUL": 38,
+        "LXX": 38
+      },
+      "text": {
+        "WLC": "בְּנֵ֣י בִנְיָמִן֮ לְ/מִשְׁפְּחֹתָ/ם֒ לְ/בֶ֗לַע מִשְׁפַּ֨חַת֙ הַ/בַּלְעִ֔י לְ/אַשְׁבֵּ֕ל מִשְׁפַּ֖חַת הָֽ/אַשְׁבֵּלִ֑י לַ/אֲחִירָ֕ם מִשְׁפַּ֖חַת הָ/אֲחִירָמִֽי׃",
+        "LXX": "οὗτοι δῆμοι Μανασσὴ ἐξ ἐπισκέψεως αὐτῶν, δύο καὶ πεντήκοντα χιλιάδες καὶ ἑπτακόσιοι.",
+        "VUL": "Isti sunt filii Joseph per familias suas. Filii Benjamin in cognationibus suis : Bela, a quo familia Belaitarum : Asbel, a quo familia Asbelitarum : Ahiram, a quo familia Ahiramitarum :",
+        "SYN": "Сыны Вениамина по поколениям их: от Белы поколение Белино, от Ашбела поколение Ашбелово, от Ахирама поколение Ахирамово,",
+        "NEO": "Fils de Benjamin, selon leurs familles : de Béla, la famille des Bélaïtes ; d’Asbel, la famille des Asbélites ; d’Ahiram, la famille des Ahiramites ;",
+        "NAB": "The Benjaminites by clans were: through Bela the clan of the Belaites, through Ashbel the clan of the Ashbelites, through Ahiram the clan of the Ahiramites,",
+        "VAT_ES": "Los clanes de los descendientes de Benjamín fueron los siguientes: de Belá, el clan de los belaítas; de Asbel, el clan de los asbelitas; de Ajiram, el clan de los ajiramitas;",
+        "CEI": "Figli di Beniamino secondo le loro famiglie: da Bela discende la famiglia dei Belaiti; da Asbel la famiglia degli Asbeliti; da Airam la famiglia degli Airamiti;"
+      }
+    },
+    "39": {
+      "seq": 39,
+      "v_in": {
+        "MT": 39,
+        "VUL": 39,
+        "LXX": 39
+      },
+      "text": {
+        "WLC": "לִ/שְׁפוּפָ֕ם מִשְׁפַּ֖חַת הַ/שּׁוּפָמִ֑י לְ/חוּפָ֕ם מִשְׁפַּ֖חַת הַ/חוּפָמִֽי׃",
+        "LXX": "καὶ οὗτοι υἱοὶ Ἐφράιμ· τῷ Σουτάλα, δῆμος ὁ Σουταλαεί· τῷ Τάναχ, δῆμος ὁ Ταναχεί.",
+        "VUL": "Supham, a quo familia Suphamitarum : Hupham, a quo familia Huphamitarum.",
+        "SYN": "от Шефуфама поколение Шефуфамово, от Хуфама поколение Хуфамово;",
+        "NEO": "de Supham, la famille des Suphamites ; de Hupham, la famille des Huphamites. —",
+        "NAB": "through Shupham the clan of the Shuphamites, through Hupham the clan of the Huphamites.",
+        "VAT_ES": "de Sufam el clan de los sufamitas; de Jufam, el clan de los jufamitas.",
+        "CEI": "da Sufam la famiglia degli Sufamiti;"
+      }
+    },
+    "40": {
+      "seq": 40,
+      "v_in": {
+        "MT": 40,
+        "VUL": 40,
+        "LXX": 40
+      },
+      "text": {
+        "WLC": "וַ/יִּהְי֥וּ בְנֵי בֶ֖לַע אַ֣רְדְּ וְ/נַעֲמָ֑ן מִשְׁפַּ֨חַת֙ הָֽ/אַרְדִּ֔י לְ/נַֽעֲמָ֔ן מִשְׁפַּ֖חַת הַֽ/נַּעֲמִֽי׃",
+        "LXX": "οὗτοι υἱοὶ Σουτάλα· τῷ Ἐδέν, δῆμος ὁ Ἐδενεί.",
+        "VUL": "Filii Bela : Hered, et Noëman. De Hered, familia Hereditarum : de Noëman, familia Noëmanitarum.",
+        "SYN": "и были сыны Белы: Ард и Нааман; [от Арда] поколение Ардово, от Наамана поколение Нааманово;",
+        "NEO": "Les fils de Béla furent Héred et Noéman ; de Héred, la famille des Hérédites ; de Noéman, la famille des Noémanites. —",
+        "NAB": "The descendants of Bela were Arad and Naaman: through Arad the clan of the Aradites, through Naaman the clan of the Naamanites.",
+        "VAT_ES": "Los hijos de Belá fueron Ard y Naamán, De Ard, el clan de los arditas; de Naamán, el clan de los naamanitas.",
+        "CEI": "da Ufam la famiglia degli Ufamiti. I figli di Bela furono Ard e Naaman; da Ard discende la famiglia degli Arditi; da Naaman discende la famiglia dei Naamiti."
+      }
+    },
+    "41": {
+      "seq": 41,
+      "v_in": {
+        "MT": 41,
+        "VUL": 41,
+        "LXX": 41
+      },
+      "text": {
+        "WLC": "אֵ֥לֶּה בְנֵי בִנְיָמִ֖ן לְ/מִשְׁפְּחֹתָ֑/ם וּ/פְקֻ֣דֵי/הֶ֔ם חֲמִשָּׁ֧ה וְ/אַרְבָּעִ֛ים אֶ֖לֶף וְ/שֵׁ֥שׁ מֵאֽוֹת׃",
+        "LXX": "οὗτοι δῆμοι Ἐφράιμ ἐξ ἐπισκέψεως αὐτῶν, δύο καὶ τριάκοντα χιλιάδες καὶ πεντακόσιοι· οὗτοι δῆμοι υἱῶν Ἰωσὴφ κατὰ δήμους αὐτῶν.",
+        "VUL": "Hi sunt filii Benjamin per cognationes suas : quorum numerus fuit quadraginta quinque millia sexcenti.",
+        "SYN": "вот сыны Вениамина по поколениям их; а исчислено их сорок пять тысяч шестьсот.",
+        "NEO": "Tels sont les fils de Benjamin, selon leurs familles, et leurs recensés furent quarante-cinq mille six cents.",
+        "NAB": "These were the Benjaminites by clans, of whom forty-five thousand six hundred men were registered.",
+        "VAT_ES": "Estos eran los clanes de los descendientes de Benjamín, según el censo: 45.600 hombres.",
+        "CEI": "Tali sono i figli di Beniamino secondo le loro famiglie. Gli uomini registrati furono quarantacinquemilaseicento."
+      }
+    },
+    "42": {
+      "seq": 42,
+      "v_in": {
+        "MT": 42,
+        "VUL": 42,
+        "LXX": 42
+      },
+      "text": {
+        "WLC": "אֵ֤לֶּה בְנֵי דָן֙ לְ/מִשְׁפְּחֹתָ֔/ם לְ/שׁוּחָ֕ם מִשְׁפַּ֖חַת הַ/שּׁוּחָמִ֑י אֵ֛לֶּה מִשְׁפְּחֹ֥ת דָּ֖ן לְ/מִשְׁפְּחֹתָֽ/ם׃",
+        "LXX": "Υἱοὶ Βενιαμεὶν κατὰ δήμους αὐτῶν· τῷ Βάλε, δῆμος ὁ Βαλεεί· τῷ Ἀσυβήρ, δῆμος ὁ Ἀσυβηρεί· τῷ Ἰαχειράν, δῆμος ὁ Ἰαχειρανεί·",
+        "VUL": "Filii Dan per cognationes suas : Suham, a quo familia Suhamitarum. Hæ sunt cognationes Dan per familias suas.",
+        "SYN": "Вот сыны Дановы по поколениям их: от Шухама поколение Шухамово; вот семейства Дановы по поколениям их.",
+        "NEO": "Voici les fils de Dan, selon leurs familles : de Suham descend la famille des Suhamites. Telles sont les familles de Dan, selon leurs familles.",
+        "NAB": "The Danites by clans were: through Shuham the clan of the Shuhamites. These were the clans of Dan,",
+        "VAT_ES": "Los clanes de los descendientes de Dan fueron los siguientes: de Sujam, el clan de los sujamitas. Estos eran los clanes de los descendientes de Dan.",
+        "CEI": "Questi sono i figli di Dan secondo le loro famiglie: da Suam discende la famiglia dei Suamiti. Sono queste le famiglie di Dan secondo le loro famiglie."
+      }
+    },
+    "43": {
+      "seq": 43,
+      "v_in": {
+        "MT": 43,
+        "VUL": 43,
+        "LXX": 43
+      },
+      "text": {
+        "WLC": "כָּל מִשְׁפְּחֹ֥ת הַ/שּׁוּחָמִ֖י לִ/פְקֻדֵי/הֶ֑ם אַרְבָּעָ֧ה וְ/שִׁשִּׁ֛ים אֶ֖לֶף וְ/אַרְבַּ֥ע מֵאֽוֹת׃",
+        "LXX": "τῷ Σωφάν, δῆμος ὁ Σωφανεί.",
+        "VUL": "Omnes fuere Suhamitæ, quorum numerus erat sexaginta quatuor millia quadringenti.",
+        "SYN": "и всех поколений Шухама, по исчислению их: шестьдесят четыре тысячи четыреста.",
+        "NEO": "Total des familles des Suhamites, selon leurs recensés : soixante-quatre mille quatre cents.",
+        "NAB": "of whom sixty-four thousand four hundred men were registered.",
+        "VAT_ES": "Todos los clanes de los sujamitas, según el censo, comprendían 64.400 hombres.",
+        "CEI": "Totale per le famiglie dei Suamiti: ne furono registrati sessantaquattromilaquattrocento."
+      }
+    },
+    "44": {
+      "seq": 44,
+      "v_in": {
+        "MT": 44,
+        "VUL": 44,
+        "LXX": 44
+      },
+      "text": {
+        "WLC": "בְּנֵ֣י אָשֵׁר֮ לְ/מִשְׁפְּחֹתָ/ם֒ לְ/יִמְנָ֗ה מִשְׁפַּ֨חַת֙ הַ/יִּמְנָ֔ה לְ/יִשְׁוִ֕י מִשְׁפַּ֖חַת הַ/יִּשְׁוִ֑י לִ/בְרִיעָ֕ה מִשְׁפַּ֖חַת הַ/בְּרִיעִֽי׃",
+        "LXX": "καὶ ἐγένοντο οἱ υἱοὶ Βάλε Ἀδὰρ καὶ Νοεμανεί.",
+        "VUL": "Filii Aser per cognationes suas : Jemna, a quo familia Jemnaitarum : Jessui, a quo familia Jessuitarum : Brie, a quo familia Brieitarum.",
+        "SYN": "Сыны Асировы по поколениям их: от Имны поколение Имнино, от Ишвы поколение Ишвино, от Верии поколение Вериино;",
+        "NEO": "Fils d’Aser, selon leurs familles : de Jemna, la famille des Jemnites ; de Jessui, la famille des Jessuites ; de Brié, la famille des Briéïtes. —",
+        "NAB": "The Asherites by clans were: through Imnah the clan of the Imnites, through Ishvi the clan of the Ishvites, through Beriah the clan of the Beriites,",
+        "VAT_ES": "Los clanes de los descendientes de Aser fueron: de Imná, el clan de los imnanitas; de Isví, el clan de los isvitas; de Beriá, el clan de los beriaítas.",
+        "CEI": "Figli di Aser secondo le loro famiglie: da Imna discende la famiglia degli Imniti; da Isvi la famiglia degli Isviti; da Beria la famiglia dei Beriiti."
+      }
+    },
+    "45": {
+      "seq": 45,
+      "v_in": {
+        "MT": 45,
+        "VUL": 45,
+        "LXX": 45
+      },
+      "text": {
+        "WLC": "לִ/בְנֵ֣י בְרִיעָ֔ה לְ/חֶ֕בֶר מִשְׁפַּ֖חַת הַֽ/חֶבְרִ֑י לְ/מַ֨לְכִּיאֵ֔ל מִשְׁפַּ֖חַת הַ/מַּלְכִּיאֵלִֽי׃",
+        "LXX": "οὗτοι υἱοὶ Βενιαμεὶν κατὰ δήμους αὐτῶν ἐξ ἐπισκέψεως αὐτῶν, πέντε καὶ τριάκοντα χιλιάδες καὶ πεντακόσιοι.",
+        "VUL": "Filii Brie : Heber, a quo familia Heberitarum : et Melchiel, a quo familia Melchielitarum.",
+        "SYN": "от сынов Верии, от Хевера поколение Хеверово, от Малхиила поколение Малхиилово;",
+        "NEO": "Des fils de Brié : de Héber, la famille des Hébrites ; de Melchiel, la famille des Melchiélites. —",
+        "NAB": "through Heber the clan of the Heberites, through Malchiel the clan of the Malchielites.",
+        "VAT_ES": "De los descendientes de Beriá: de Jéber, el clan de los jeberitas; de Malquiel, el clan de los malquielitas.",
+        "CEI": "Dai figli di Beria discendono: da Eber la famiglia degli Eberiti; da Malchiel la famiglia dei Malchieliti."
+      }
+    },
+    "46": {
+      "seq": 46,
+      "v_in": {
+        "MT": 46,
+        "VUL": 46,
+        "LXX": 46
+      },
+      "text": {
+        "WLC": "וְ/שֵׁ֥ם בַּת אָשֵׁ֖ר שָֽׂרַח׃",
+        "LXX": "Καὶ υἱοὶ Δὰν κατὰ δήμους αὐτῶν· τῷ Σαμεί, δῆμος ὁ Σαμεί· οὗτοι δῆμοι Δὰν κατὰ δήμους αὐτῶν.",
+        "VUL": "Nomen autem filiæ Aser fuit Sara.",
+        "SYN": "имя дочери Асировой Сара;",
+        "NEO": "Le nom de la fille d’Aser était Sara. —",
+        "NAB": "The name of Asher's daughter was Serah.",
+        "VAT_ES": "La hija de Aser se llamaba Séraj.",
+        "CEI": "La figlia di Aser si chiamava Sera."
+      }
+    },
+    "47": {
+      "seq": 47,
+      "v_in": {
+        "MT": 47,
+        "VUL": 47,
+        "LXX": 47
+      },
+      "text": {
+        "WLC": "אֵ֛לֶּה מִשְׁפְּחֹ֥ת בְּנֵי אָשֵׁ֖ר לִ/פְקֻדֵי/הֶ֑ם שְׁלֹשָׁ֧ה וַ/חֲמִשִּׁ֛ים אֶ֖לֶף וְ/אַרְבַּ֥ע מֵאֽוֹת׃",
+        "LXX": "πάντες οἱ δῆμοι Σαμεὶ κατ’ ἐπισκοπὴν αὐτῶν τέσσαρες καὶ ἑξήκοντα χιλιάδες καὶ χ’.",
+        "VUL": "Hæ cognationes filiorum Aser, et numerus eorum quinquaginta tria millia quadringenti.",
+        "SYN": "вот поколения сынов Асировых, по исчислению их: пятьдесят три тысячи четыреста.",
+        "NEO": "Telles sont les familles des fils d’Aser, d’après leurs recensés : cinquante-trois mille quatre cents.",
+        "NAB": "These were the clans of Asher, of whom fifty-three thousand four hundred men were registered.",
+        "VAT_ES": "Estos eran los clanes de Aser, según el censo: 53.400 hombres.",
+        "CEI": "Tali sono le famiglie dei figli di Aser. Ne furono registrati cinquantatremilaquattrocento."
+      }
+    },
+    "48": {
+      "seq": 48,
+      "v_in": {
+        "MT": 48,
+        "VUL": 48,
+        "LXX": 48
+      },
+      "text": {
+        "WLC": "בְּנֵ֤י נַפְתָּלִי֙ לְ/מִשְׁפְּחֹתָ֔/ם לְ/יַ֨חְצְאֵ֔ל מִשְׁפַּ֖חַת הַ/יַּחְצְאֵלִ֑י לְ/גוּנִ֕י מִשְׁפַּ֖חַת הַ/גּוּנִֽי׃",
+        "LXX": "Υἱοὶ Νεφθαλεὶ κατὰ δήμους αὐτῶν· τῷ Σαήλ, δῆμος ὁ Σαηλεί· τῷ Γαυνεί, δῆμος ὁ Γαυνεί·",
+        "VUL": "Filii Nephthali per cognationes suas : Jesiel, a quo familia Jesielitarum : Guni, a quo familia Gunitarum :",
+        "SYN": "Сыны Неффалима по поколениям их: от Иахцеила поколение Иахцеилово, от Гуния поколение Гуниево,",
+        "NEO": "Fils de Nephthali, selon leurs familles : de Jésiel, la famille des Jésiélites ; de Guni, la famille des Gunites ;",
+        "NAB": "The Naphtalites by clans were: through Jahzeel the clan of the Jahzeelites, through Guni the clan of the Gunites,",
+        "VAT_ES": "Los clanes de los descendientes de Neftalí fueron: de Iajsel, el clan de los iajselitas; de Guní, el clan de los gunitas;",
+        "CEI": "Figli di Nèftali secondo le loro famiglie: da Iacseel discende la famiglia degli Iacseeliti; da Guni la famiglia dei Guniti;"
+      }
+    },
+    "49": {
+      "seq": 49,
+      "v_in": {
+        "MT": 49,
+        "VUL": 49,
+        "LXX": 49
+      },
+      "text": {
+        "WLC": "לְ/יֵ֕צֶר מִשְׁפַּ֖חַת הַ/יִּצְרִ֑י לְ/שִׁלֵּ֕ם מִשְׁפַּ֖חַת הַ/שִּׁלֵּמִֽי׃",
+        "LXX": "τῷ Ἰέσερ, δῆμος ὁ Ἰεσερεί· τῷ Σελλή, δῆμος ὁ Σελλημεί.",
+        "VUL": "Jeser, a quo familia Jeseritarum : Sellem, a quo familia Sellemitarum.",
+        "SYN": "от Иецера поколение Иецерово, от Шиллема поколение Шиллемово;",
+        "NEO": "de Jéser, la famille des Jésérites ; de Sellem, la famille des Sélémites.",
+        "NAB": "through Jezer the clan of the Jezerites, through Shillem the clan of the Shillemites.",
+        "VAT_ES": "de Iéser, el clan de los ieseritas; de Silém, el clan de los silemitas.",
+        "CEI": "da Ieser la famiglia degli Ieseriti; da Sillem la famiglia dei Sillemiti."
+      }
+    },
+    "50": {
+      "seq": 50,
+      "v_in": {
+        "MT": 50,
+        "VUL": 50,
+        "LXX": 50
+      },
+      "text": {
+        "WLC": "אֵ֛לֶּה מִשְׁפְּחֹ֥ת נַפְתָּלִ֖י לְ/מִשְׁפְּחֹתָ֑/ם וּ/פְקֻ֣דֵי/הֶ֔ם חֲמִשָּׁ֧ה וְ/אַרְבָּעִ֛ים אֶ֖לֶף וְ/אַרְבַּ֥ע מֵאֽוֹת׃",
+        "LXX": "οὗτοι δῆμοι Νεφθαλεὶ ἐξ ἐπισκέψεως αὐτῶν, τριάκοντα χιλιάδες καὶ τριακόσιοι.",
+        "VUL": "Hæ sunt cognationes filiorum Nephthali per familias suas : quorum numerus quadraginta quinque millia quadringenti.",
+        "SYN": "вот поколения Неффалимовы по поколениям их; исчислено же их сорок пять тысяч четыреста.",
+        "NEO": "Telles sont les familles de Nephthali, selon leurs familles, et leurs recensés furent quarante-cinq mille quatre cents.",
+        "NAB": "These were the clans of Naphtali, of whom forty-five thousand four hundred men were registered.",
+        "VAT_ES": "Estos eran los clanes de Neftalí, según el censo: 45.400 hombres.",
+        "CEI": "Tali sono le famiglie di Nèftali secondo le loro famiglie. Gli uomini registrati furono quarantacinquemilaquattrocento."
+      }
+    },
+    "51": {
+      "seq": 51,
+      "v_in": {
+        "MT": 51,
+        "VUL": 51,
+        "LXX": 51
+      },
+      "text": {
+        "WLC": "אֵ֗לֶּה פְּקוּדֵי֙ בְּנֵ֣י יִשְׂרָאֵ֔ל שֵׁשׁ מֵא֥וֹת אֶ֖לֶף וָ/אָ֑לֶף שְׁבַ֥ע מֵא֖וֹת וּ/שְׁלֹשִֽׁים׃",
+        "LXX": "Αὕτη ἡ ἐπίσκεψις υἱῶν Ἰσραήλ, ἑξακόσιαι χιλιάδες καὶ χίλιοι καὶ ἑπτακόσιοι τριάκοντα.",
+        "VUL": "Ista est summa filiorum Israël, qui recensiti sunt, sexcenta millia, et mille septingenti triginta.",
+        "SYN": "Вот _число_ вошедших в исчисление сынов Израилевых: шестьсот одна тысяча семьсот тридцать.",
+        "NEO": "Tels sont les enfants d’Israël qui furent recensés : six cent un mille sept cent trente.",
+        "NAB": "These six hundred and one thousand seven hundred and thirty were the Israelites who were registered.",
+        "VAT_ES": "Los israelitas registrados en el censo eran en total 601.730 hombres.",
+        "CEI": "Questi sono gli Israeliti che furono registrati: seicentounmilasettecentotrenta."
+      }
+    },
+    "52": {
+      "seq": 52,
+      "v_in": {
+        "MT": 52,
+        "VUL": 52,
+        "LXX": 52
+      },
+      "text": {
+        "WLC": "וַ/יְדַבֵּ֥ר יְהוָ֖ה אֶל מֹשֶׁ֥ה לֵּ/אמֹֽר׃",
+        "LXX": "Καὶ ἐλάλησεν Κύριος πρὸς Μωυσῆν λέγων",
+        "VUL": "Locutusque est Dominus ad Moysen, dicens :",
+        "SYN": "И сказал Господь Моисею, говоря:",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** parla à Moïse, en disant :",
+        "NAB": "The LORD said to Moses,",
+        "VAT_ES": "El Señor dijo a Moisés:",
+        "CEI": "Il Signore disse a Mosè:"
+      }
+    },
+    "53": {
+      "seq": 53,
+      "v_in": {
+        "MT": 53,
+        "VUL": 53,
+        "LXX": 53
+      },
+      "text": {
+        "WLC": "לָ/אֵ֗לֶּה תֵּחָלֵ֥ק הָ/אָ֛רֶץ בְּ/נַחֲלָ֖ה בְּ/מִסְפַּ֥ר שֵׁמֽוֹת׃",
+        "LXX": "Τούτοις μερισθήσεται ἡ γῆ, κληρονομεῖν ἐξ ἀριθμοῦ ὀνομάτων·",
+        "VUL": "Istis dividetur terra juxta numerum vocabulorum in possessiones suas.",
+        "SYN": "сим в удел должно разделить землю по числу имен;",
+        "NEO": "« A ceux-ci le pays sera partagé, pour être leur héritage, selon le nombre des noms.",
+        "NAB": "\"Among these groups the land shall be divided as their heritage in keeping with the number of individuals in each group.",
+        "VAT_ES": "Entre estos grupos se repartirá el territorio, conforme al número de las personas:",
+        "CEI": "\"Il paese sarà diviso tra di essi, per essere la loro proprietà, secondo il numero delle persone."
+      }
+    },
+    "54": {
+      "seq": 54,
+      "v_in": {
+        "MT": 54,
+        "VUL": 54,
+        "LXX": 54
+      },
+      "text": {
+        "WLC": "לָ/רַ֗ב תַּרְבֶּה֙ נַחֲלָת֔/וֹ וְ/לַ/מְעַ֕ט תַּמְעִ֖יט נַחֲלָת֑/וֹ אִ֚ישׁ לְ/פִ֣י פְקֻדָ֔י/ו יֻתַּ֖ן נַחֲלָתֽ/וֹ׃",
+        "LXX": "τοῖς πλείοσιν πλεονάσεις τὴν κληρονομίαν, καὶ τοῖς ἐλάττοσιν ἐλαττώσεις τὴν κληρονομίαν αὐτῶν· ἑκάστῳ καθὼς ἐπεσκέπησαν δοθήσεται ἡ κληρονομία αὐτῶν.",
+        "VUL": "Pluribus majorem partem dabis, et paucioribus minorem : singulis, sicut nunc recensiti sunt, tradetur possessio :",
+        "SYN": "кто многочисленнее, тем дай удел более; а кто малочисленнее, тем дай удел менее: каждому должно дать удел соразмерно с числом вошедших в исчисление;",
+        "NEO": "Aux plus nombreux tu donneras un héritage plus grand, et aux moins nombreux tu donneras un héritage plus petit ; on donnera à chacun son héritage selon ses recensés.",
+        "NAB": "To a large group you shall assign a large heritage, to a small group a small heritage, each group receiving its heritage in proportion to the number of men registered in it.",
+        "VAT_ES": "a los grupos más numerosos les darás una herencia mayor, y a los más reducidos, una herencia menor. Cada uno recibirá su parte según el número de las personas registradas.",
+        "CEI": "A quelli che sono in maggior numero darai in possesso una porzione maggiore; a quelli che sono in minor numero darai una porzione minore; si darà a ciascuno la sua porzione secondo il censimento."
+      }
+    },
+    "55": {
+      "seq": 55,
+      "v_in": {
+        "MT": 55,
+        "VUL": 55,
+        "LXX": 55
+      },
+      "text": {
+        "WLC": "אַךְ בְּ/גוֹרָ֕ל יֵחָלֵ֖ק אֶת הָ/אָ֑רֶץ לִ/שְׁמ֥וֹת מַטּוֹת אֲבֹתָ֖/ם יִנְחָֽלוּ׃",
+        "LXX": "διὰ κλήρων μερισθήσεται ἡ γῆ τοῖς ὀνόμασιν, κατὰ φυλὰς πατριῶν αὐτῶν κληρονομήσουσιν·",
+        "VUL": "ita dumtaxat ut sors terram tribubus dividat et familiis.",
+        "SYN": "по жребию должно разделить землю, по именам колен отцов их должны они получить уделы;",
+        "NEO": "Seulement le partage du pays aura lieu par le sort. Ils le recevront en partage selon les noms des tribus patriarcales.",
+        "NAB": "But the land shall be divided by lot, as the heritage of the various ancestral tribes.",
+        "VAT_ES": "Además, la tierra se repartirá mediante un sorteo, y la distribución se hará teniendo en cuenta la cantidad de miembros de cada tribu paterna.",
+        "CEI": "Ma la ripartizione del paese sarà gettata a sorte; essi riceveranno la rispettiva proprietà secondo i nomi delle loro tribù paterne."
+      }
+    },
+    "56": {
+      "seq": 56,
+      "v_in": {
+        "MT": 56,
+        "VUL": 56,
+        "LXX": 56
+      },
+      "text": {
+        "WLC": "עַל פִּי֙ הַ/גּוֹרָ֔ל תֵּחָלֵ֖ק נַחֲלָת֑/וֹ בֵּ֥ין רַ֖ב לִ/מְעָֽט׃",
+        "LXX": "ἐκ τοῦ κλήρου μεριεῖς τὴν κληρονομίαν αὐτῶν ἀνὰ μέσον πολλῶν καὶ ὀλίγων.",
+        "VUL": "Quidquid sorte contigerit, hoc vel plures accipiant, vel pauciores.",
+        "SYN": "по жребию должно разделить им уделы их, как многочисленным, так и малочисленным.",
+        "NEO": "C’est par le sort que l’héritage sera réparti aux plus nombreux comme à ceux qui le sont moins. »",
+        "NAB": "As the lot falls shall each group, large or small, be assigned its heritage.\"",
+        "VAT_ES": "La herencia se repartirá mediante un sorteo, tanto entre los grupos más numerosos como entre los menos numerosos.",
+        "CEI": "La ripartizione delle proprietà sarà gettata a sorte per tutte le tribù grandi o piccole\"."
+      }
+    },
+    "57": {
+      "seq": 57,
+      "v_in": {
+        "MT": 57,
+        "VUL": 57,
+        "LXX": 57
+      },
+      "text": {
+        "WLC": "וְ/אֵ֨לֶּה פְקוּדֵ֣י הַ/לֵּוִי֮ לְ/מִשְׁפְּחֹתָ/ם֒ לְ/גֵרְשׁ֗וֹן מִשְׁפַּ֨חַת֙ הַ/גֵּ֣רְשֻׁנִּ֔י לִ/קְהָ֕ת מִשְׁפַּ֖חַת הַ/קְּהָתִ֑י לִ/מְרָרִ֕י מִשְׁפַּ֖חַת הַ/מְּרָרִֽי׃",
+        "LXX": "Καὶ υἱοὶ Λευεὶ κατὰ δήμους αὐτῶν· τῷ Γεδσών, δῆμος ὁ Γεδσωνεί· τῷ Καάθ, δῆμος ὁ Κααθεί· τῷ Μεραρεί, δῆμος ὁ Μεραρεί.",
+        "VUL": "Hic quoque est numerus filiorum Levi per familias suas : Gerson, a quo familia Gersonitarum : Caath, a quo familia Caathitarum : Merari, a quo familia Meraritarum.",
+        "SYN": "Сии суть вошедшие в исчисление левиты по поколениям их: от Гирсона поколение Гирсоново, от Каафа поколение Каафово, от Мерари поколение Мерарино.",
+        "NEO": "Voici, selon leurs familles, les Lévites qui furent recensés : de Gerson, la famille des Gersonites ; de Caath, la famille des Caathites ; de Mérari, la famille des Mérarites. —",
+        "NAB": "The Levites registered by clans were: through Gershon the clan of the Gershonites, through Kohath the clan of the Kohathites, through Merari the clan of the Merarites.",
+        "VAT_ES": "Este es el censo de los clanes de los levitas: De Gersón, el clan de los gersonitas; de Quehat, el clan de los quehatitas; de Merarí, el clan de los meraritas.",
+        "CEI": "Questi sono i leviti dei quali si fece il censimento secondo le loro famiglie: da Gherson discende la famiglia dei Ghersoniti; da Keat la famiglia dei Keatiti; da Merari la famiglia dei Merariti."
+      }
+    },
+    "58": {
+      "seq": 58,
+      "v_in": {
+        "MT": 58,
+        "VUL": 58,
+        "LXX": 58
+      },
+      "text": {
+        "WLC": "אֵ֣לֶּה מִשְׁפְּחֹ֣ת לֵוִ֗י מִשְׁפַּ֨חַת הַ/לִּבְנִ֜י מִשְׁפַּ֤חַת הַֽ/חֶבְרֹנִי֙ מִשְׁפַּ֤חַת הַ/מַּחְלִי֙ מִשְׁפַּ֣חַת הַ/מּוּשִׁ֔י מִשְׁפַּ֖חַת הַ/קָּרְחִ֑י וּ/קְהָ֖ת הוֹלִ֥ד אֶת עַמְרָֽם׃",
+        "LXX": "οὗτοι δῆμοι υἱῶν Λευεί· δῆμος ὁ Λοβενεί, δῆμος ὁ Χεβρωνεί, δῆμος ὁ Κόρε καὶ δῆμος ὁ Μουσεί. καὶ Καὰθ ἐγέννησεν τὸν Ἀμράμ·",
+        "VUL": "Hæ sunt familiæ Levi : familia Lobni, familia Hebroni, familia Moholi, familia Musi, familia Core. At vero Caath genuit Amram :",
+        "SYN": "Вот поколения Левиины: поколение Ливниево, поколение Хевроново, поколение Махлиево, поколение Мушиево, поколение Кореево. От Каафа родился Амрам.",
+        "NEO": "Voici les familles de Lévi ; la famille des Lobnites, la famille des Hébronites, la famille des Moholites, la famille des Musites et la famille des Coréïtes. — Caath engendra Amram,",
+        "NAB": "These also were clans of Levi: the clan of the Libnites, the clan of the Hebronites, the clan of the Mahlites, the clan of the Mushites, the clan of the Korahites. Among the descendants of Kohath was Amram,",
+        "VAT_ES": "Estos son los clanes de Leví: el clan de los libnitas, el clan de los jebronitas, el clan de los majlitas, el clan de los musitas y el clan de los coreítas. Quehat fue padre de Amram.",
+        "CEI": "Queste sono le famiglie di Levi: la famiglia dei Libniti, la famiglia degli Ebroniti, la famiglia dei Macliti, la famiglia dei Musiti, la famiglia dei Coriti. Keat generò Amram."
+      }
+    },
+    "59": {
+      "seq": 59,
+      "v_in": {
+        "MT": 59,
+        "VUL": 59,
+        "LXX": 59
+      },
+      "text": {
+        "WLC": "וְ/שֵׁ֣ם אֵ֣שֶׁת עַמְרָ֗ם יוֹכֶ֨בֶד֙ בַּת לֵוִ֔י אֲשֶׁ֨ר יָלְדָ֥ה אֹתָ֛/הּ לְ/לֵוִ֖י בְּ/מִצְרָ֑יִם וַ/תֵּ֣לֶד לְ/עַמְרָ֗ם אֶֽת אַהֲרֹן֙ וְ/אֶת מֹשֶׁ֔ה וְ/אֵ֖ת מִרְיָ֥ם אֲחֹתָֽ/ם׃",
+        "LXX": "καὶ τὸ ὄνομα τῆς γυναικὸς αὐτοῦ Ἰωχάβεδ, θυγάτηρ Λευεί, ἣ ἔτεκεν τούτους τῷ Λευεὶ ἐν Αἰγύπτῳ· καὶ ἔτεκεν τῷ Ἀμρὰμ τὸν Ἀαρὼν καὶ Μωυσῆν καὶ Μαριὰμ τὴν ἀδελφὴν αὐτῶν.",
+        "VUL": "qui habuit uxorem Jochabed filiam Levi, quæ nata est ei in Ægypto. Hæc genuit Amram viro suo filios, Aaron, et Moysen, et Mariam sororem eorum.",
+        "SYN": "Имя жены Амрамовой Иохаведа, дочь Левиина, которую родила _жена_ Левиина в Египте, а она Амраму родила Аарона, Моисея и Мариам, сестру их.",
+        "NEO": "et le nom de la femme d’Amram était Jochabed, fille de Lévi, que sa mère enfanta à Lévi en Égypte ; elle enfanta à Amram Aaron, Moïse et Marie, leur sœur.",
+        "NAB": "whose wife was named Jochebed. She also was of the tribe of Levi, born to the tribe in Egypt. To Amram she bore Aaron and Moses and their sister Miriam.",
+        "VAT_ES": "La esposa de Amram se llamaba Ioquébed, hija de Leví, la cual nació en Egipto. Los hijos que ella dio a Amram fueron Aarón, Moisés y Miriam, la hermana de estos.",
+        "CEI": "La moglie di Amram si chiamava Iochebed, figlia di Levi, che nacque a Levi in Egitto; essa partorì ad Amram Aronne, Mosè e Maria loro sorella."
+      }
+    },
+    "60": {
+      "seq": 60,
+      "v_in": {
+        "MT": 60,
+        "VUL": 60,
+        "LXX": 60
+      },
+      "text": {
+        "WLC": "וַ/יִּוָּלֵ֣ד לְ/אַהֲרֹ֔ן אֶת נָדָ֖ב וְ/אֶת אֲבִיה֑וּא אֶת אֶלְעָזָ֖ר וְ/אֶת אִיתָמָֽר׃",
+        "LXX": "καὶ ἐγενήθησαν τῷ Ἀαρὼν ὅ τε Ναδὰβ καὶ Ἀβιοὺδ καὶ Ἐλεαζὰρ καὶ Ἰθαμάρ.",
+        "VUL": "De Aaron orti sunt Nadab et Abiu, et Eleazar et Ithamar :",
+        "SYN": "И родились у Аарона Надав и Авиуд, Елеазар и Ифамар;",
+        "NEO": "Il naquit à Aaron : Nadab et Abiu, Eléazar et Ithamar.",
+        "NAB": "To Aaron were born Nadab and Abihu, Eleazar and Ithamar.",
+        "VAT_ES": "A Aarón le nacieron Nadab, Abihú, Eleazar e Itamar.",
+        "CEI": "Ad Aronne nacquero Nadab e Abiu, Eleazaro e Itamar."
+      }
+    },
+    "61": {
+      "seq": 61,
+      "v_in": {
+        "MT": 61,
+        "VUL": 61,
+        "LXX": 61
+      },
+      "text": {
+        "WLC": "וַ/יָּ֥מָת נָדָ֖ב וַ/אֲבִיה֑וּא בְּ/הַקְרִיבָ֥/ם אֵשׁ זָרָ֖ה לִ/פְנֵ֥י יְהוָֽה׃",
+        "LXX": "καὶ ἀπέθανεν Ναδὰβ καὶ Ἀβιοὺδ ἐν τῷ προσφέρειν αὐτοὺς πῦρ ἀλλότριον ἔναντι Κυρίου ἐν τῇ ἐρήμῳ Σεινά.",
+        "VUL": "quorum Nadab et Abiu mortui sunt, cum obtulissent ignem alienum coram Domino.",
+        "SYN": "но Надав и Авиуд умерли, когда принесли чуждый огонь пред Господа [в пустыне Синайской].",
+        "NEO": "Nadab et Abiu moururent lorsqu’ils apportèrent du feu étranger devant \\+w Yahweh|strong=\"H3068\"\\+w**. —",
+        "NAB": "But Nadab and Abihu died when they offered profane fire before the LORD.",
+        "VAT_ES": "Pero Nadab y Abihú murieron al ofrecer un fuego profano delante del Señor.",
+        "CEI": "Ora Nadab e Abiu morirono quando presentarono al Signore un fuoco profano."
+      }
+    },
+    "62": {
+      "seq": 62,
+      "v_in": {
+        "MT": 62,
+        "VUL": 62,
+        "LXX": 62
+      },
+      "text": {
+        "WLC": "וַ/יִּהְי֣וּ פְקֻדֵי/הֶ֗ם שְׁלֹשָׁ֤ה וְ/עֶשְׂרִים֙ אֶ֔לֶף כָּל זָכָ֖ר מִ/בֶּן חֹ֣דֶשׁ וָ/מָ֑עְלָ/ה כִּ֣י לֹ֣א הָתְפָּקְד֗וּ בְּ/תוֹךְ֙ בְּנֵ֣י יִשְׂרָאֵ֔ל כִּ֠י לֹא נִתַּ֤ן לָ/הֶם֙ נַחֲלָ֔ה בְּ/ת֖וֹךְ בְּנֵ֥י יִשְׂרָאֵֽל׃",
+        "LXX": "καὶ ἐγενήθησαν ἐξ ἐπισκέψεως αὐτῶν τρεῖς καὶ εἴκοσι χιλιάδες, πᾶν ἀρσενικὸν ἀπὸ μηνιαίου καὶ ἐπάνω· οὐ γὰρ συνεπεσκέπησαν ἐν μέσῳ υἱῶν Ἰσραήλ, ὅτι οὐ δίδοται αὐτοῖς κλῆρος ἐν μέσῳ υἱῶν Ἰσραήλ.",
+        "VUL": "Fueruntque omnes qui numerati sunt, viginti tria millia generis masculini ab uno mense et supra : quia non sunt recensiti inter filios Israël, nec eis cum ceteris data possessio est.",
+        "SYN": "И было исчислено двадцать три тысячи всех мужеского пола, от одного месяца и выше; ибо они не были исчислены вместе с сынами Израилевыми, потому что не дано им удела среди сынов Израилевых.",
+        "NEO": "Leurs recensés, tous les mâles depuis l’âge d’un mois et au-dessus, furent vingt-trois mille. Car ils ne furent pas compris dans le recensement des enfants d’Israël, parce qu’ils ne leur fut pas assigné d’héritage au milieu des enfants d’Israël.",
+        "NAB": "The total number of male Levites one month or more of age, who were registered, was twenty-three thousand. They were not registered with the other Israelites, however, for no heritage was given them among the Israelites.",
+        "VAT_ES": "En el censo se registró un total de 23.000 levitas varones, mayores de un mes. Ellos no figuraron en el censo de los demás israelitas, porque no se les había asignado una propiedad hereditaria entre los israelitas.",
+        "CEI": "Gli uomini registrati furono ventitremila: tutti maschi, dall'età di un mese in su. Non furono compresi nel censimento degli Israeliti perché non fu data loro alcuna proprietà tra gli Israeliti."
+      }
+    },
+    "63": {
+      "seq": 63,
+      "v_in": {
+        "MT": 63,
+        "VUL": 63,
+        "LXX": 63
+      },
+      "text": {
+        "WLC": "אֵ֚לֶּה פְּקוּדֵ֣י מֹשֶׁ֔ה וְ/אֶלְעָזָ֖ר הַ/כֹּהֵ֑ן אֲשֶׁ֨ר פָּֽקְד֜וּ אֶת בְּנֵ֤י יִשְׂרָאֵל֙ בְּ/עַֽרְבֹ֣ת מוֹאָ֔ב עַ֖ל יַרְדֵּ֥ן יְרֵחֽוֹ׃",
+        "LXX": "Καὶ αὕτη ἡ ἐπίσκεψις Μωυσῆ καὶ Ἐλεαζὰρ τοῦ ἱερέως, οἳ ἐπεσκέψαντο τοὺς υἱοὺς Ἰσραὴλ ἐν ἀραβὼθ Μωὰβ ἐπὶ τοῦ Ἰορδάνου κατὰ Ἰερειχώ·",
+        "VUL": "Hic est numerus filiorum Israël, qui descripti sunt a Moyse et Eleazaro sacerdote, in campestribus Moab supra Jordanem contra Jericho :",
+        "SYN": "Вот исчисленные Моисеем и Елеазаром священником, которые исчисляли сынов Израилевых на равнинах Моавитских у Иордана, против Иерихона;",
+        "NEO": "Tels sont les hommes recensés par Moïse et Eléazar, le prêtre, qui firent le recensement des enfants d’Israël dans les plaines de Moab, près du Jourdain, vis-à-vis de Jéricho.",
+        "NAB": "These, then, were the men registered by Moses and the priest Eleazar in the census of the Israelites taken on the plains of Moab along the Jericho stretch of the Jordan.",
+        "VAT_ES": "Estas son las personas registradas por Moisés y el sacerdote Eleazar, cuando hicieron el censo de los israelitas en las estepas de Moab, junto al Jordán, a la altura de Jericó.",
+        "CEI": "Questi sono i registrati da Mosè e dal sacerdote Eleazaro, i quali fecero il censimento degli Israeliti nelle steppe di Moab presso il Giordano di Gerico."
+      }
+    },
+    "64": {
+      "seq": 64,
+      "v_in": {
+        "MT": 64,
+        "VUL": 64,
+        "LXX": 64
+      },
+      "text": {
+        "WLC": "וּ/בְ/אֵ֨לֶּה֙ לֹא הָ֣יָה אִ֔ישׁ מִ/פְּקוּדֵ֣י מֹשֶׁ֔ה וְ/אַהֲרֹ֖ן הַ/כֹּהֵ֑ן אֲשֶׁ֥ר פָּקְד֛וּ אֶת בְּנֵ֥י יִשְׂרָאֵ֖ל בְּ/מִדְבַּ֥ר סִינָֽי׃",
+        "LXX": "καὶ ἐν τούτοις οὐκ ἦν ἄνθρωπος τῶν ἐπεσκεμμένων ὑπὸ Μωυσῆ καὶ Ἀαρών, οὓς ἐπεσκέψαντο τοὺς υἱοὺς Ἰσραὴλ ἐν τῇ ἐρήμῳ Σεινά·",
+        "VUL": "inter quos, nullus fuit eorum qui ante numerati sunt a Moyse et Aaron in deserto Sinai :",
+        "SYN": "в числе их не было ни одного человека из исчисленных Моисеем и Аароном священником, которые исчисляли сынов Израилевых в пустыне Синайской;",
+        "NEO": "Parmi eux, il n’y avait aucun des enfants d’Israël dont Moïse et Aaron le prêtre avaient fait le recensement dans le désert de Sinaï ;",
+        "NAB": "Among them there was not a man of those who had been registered by Moses and the priest Aaron in the census of the Israelites taken in the desert of Sinai.",
+        "VAT_ES": "Entre estos no figuró ninguno de los que Moisés y el sacerdote Aarón habían registrado en el desierto del Sinaí.",
+        "CEI": "Fra questi non vi era alcuno di quegli Israeliti dei quali Mosè e il sacerdote Aronne avevano fatto il censimento nel deserto del Sinai,"
+      }
+    },
+    "65": {
+      "seq": 65,
+      "v_in": {
+        "MT": 65,
+        "VUL": 65,
+        "LXX": 65
+      },
+      "text": {
+        "WLC": "כִּֽי אָמַ֤ר יְהוָה֙ לָ/הֶ֔ם מ֥וֹת יָמֻ֖תוּ בַּ/מִּדְבָּ֑ר וְ/לֹא נוֹתַ֤ר מֵ/הֶם֙ אִ֔ישׁ כִּ֚י אִם כָּלֵ֣ב בֶּן יְפֻנֶּ֔ה וִ/יהוֹשֻׁ֖עַ בִּן נֽוּן׃",
+        "LXX": "ὅτι εἶπεν Κύριος αὐτῷ Θανάτῳ ἀποθανοῦνται ἐν τῇ ἐρήμῳ· καὶ οὐ κατελείφθη ἐξ αὐτῶν οὐδὲ εἷς, πλὴν Χαλὲβ υἱὸς Ἰεφοννὴ καὶ Ἰησοῦς ὁ τοῦ Ναυή.",
+        "VUL": "prædixerat enim Dominus quod omnes morerentur in solitudine. Nullusque remansit ex eis, nisi Caleb filius Jephone, et Josue filius Nun.",
+        "SYN": "ибо Господь сказал им, что умрут они в пустыне, -- и не осталось из них никого, кроме Халева, сына Иефонниина, и Иисуса, сына Навина.",
+        "NEO": "car \\+w Yahweh|strong=\"H3068\"\\+w** avait dit d’eux : « Ils mourront dans le désert » ; et il n’en resta pas un, excepté Caleb, fils de Jéphoné, et Josué, fils de Nun.",
+        "NAB": "For the LORD had told them that they would surely die in the desert, and not one of them was left except Caleb, son of Jephunneh, and Joshua, son of Nun.",
+        "VAT_ES": "Porque el Señor había dicho acerca de ellos: «Morirán en el desierto». Ninguno de ellos sobrevivió, excepto Caleb, hijo de Iefuné, y Josué, hijo de Nun.",
+        "CEI": "perché il Signore aveva detto di loro: \"Dovranno morire nel deserto!\". E non ne rimase neppure uno, eccetto Caleb figlio di Iefunne, e Giosuè figlio di Nun."
+      }
+    }
+  }
+}

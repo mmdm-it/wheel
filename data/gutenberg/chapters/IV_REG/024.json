@@ -1,0 +1,375 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "IV_REG_024",
+  "book_key": "IV_REG",
+  "sequence": 24,
+  "chapter_in": {
+    "MT": 24,
+    "VUL": 24,
+    "LXX": 24
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Historici_et_Novellae_Biblicae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "בְּ/יָמָ֣י/ו עָלָ֔ה נְבֻכַדְנֶאצַּ֖ר מֶ֣לֶךְ בָּבֶ֑ל וַ/יְהִי ל֨/וֹ יְהוֹיָקִ֥ים עֶ֨בֶד֙ שָׁלֹ֣שׁ שָׁנִ֔ים וַ/יָּ֖שָׁב וַ/יִּמְרָד בּֽ/וֹ׃",
+        "LXX": "ἐν ταῖς ἡμέραις αὐτοῦ ἀνέβη Ναβουχοδονοσὸρ βασιλεὺς Βαβυλῶνος, καὶ ἐγενήθη αὐτῷ Ἰωακεὶμ δοῦλος τρία ἔτη, καὶ ἐπέστρεψεν καὶ ἠθέτησεν ἐν αὐτῷ.",
+        "VUL": "In diebus ejus ascendit Nabuchodonosor rex Babylonis, et factus est ei Joakim servus tribus annis : et rursum rebellavit contra eum.",
+        "SYN": "Во дни его выступил Навуходоносор, царь Вавилонский, и сделался Иоаким подвластным ему на три года, но потом отложился от него.",
+        "NEO": "De son temps, Nabuchodonosor, roi de Babylone, se mit en campagne, et Joakim lui fut assujetti pendant trois ans ; mais il se révolta de nouveau contre lui.",
+        "NAB": "During his reign Nebuchadnezzar, king of Babylon, moved against him, and Jehoiakim became his vassal for three years. Then Jehoiakim turned and rebelled against him.",
+        "VAT_ES": "En ese tiempo, Nabucodonosor, rey de Babilonia, se puso en campaña, y Joaquím le estuvo sometido durante tres años. Pero después cambió de actitud y se rebeló contra él.",
+        "CEI": "Durante il suo regno, Nabucodonosor re di Babilonia gli mosse guerra; Ioiakìm gli fu sottomesso per tre anni, poi gli si ribellò."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "וַ/יְשַׁלַּ֣ח יְהוָ֣ה בּ֡/וֹ אֶת גְּדוּדֵ֣י כַשְׂדִּים֩ וְ/אֶת גְּדוּדֵ֨י אֲרָ֜ם וְ/אֵ֣ת גְּדוּדֵ֣י מוֹאָ֗ב וְ/אֵת֙ גְּדוּדֵ֣י בְנֵֽי עַמּ֔וֹן וַ/יְשַׁלְּחֵ֥/ם בִּֽ/יהוּדָ֖ה לְ/הַֽאֲבִיד֑/וֹ כִּ/דְבַ֣ר יְהוָ֔ה אֲשֶׁ֣ר דִּבֶּ֔ר בְּ/יַ֖ד עֲבָדָ֥י/ו הַ/נְּבִיאִֽים׃",
+        "LXX": "καὶ ἀπέστειλεν αὐτῷ τοὺς μονοζώνους τῶν Χαλδαίων καὶ τοὺς μονοζώνους Συρίας καὶ τοὺς μονοζώνους Μωὰβ καὶ τοὺς μονοζώνους υἱῶν Ἀμμών, καὶ ἐξαπέστειλεν αὐτοὺς ἐν τῇ γῇ Ἰούδα, τοῦ κατισχῦσαι κατὰ τὸν λόγον Κυρίου ὃν ἐλάλησεν ἐν χειρὶ τῶν δούλων αὐτοῦ τῶν προφητῶν.",
+        "VUL": "Immisitque ei Dominus latrunculos Chaldæorum, et latrunculos Syriæ, et latrunculos Moab, et latrunculos filiorum Ammon : et immisit eos in Judam ut disperderent eum, juxta verbum Domini quod locutus fuerat per servos suos prophetas.",
+        "SYN": "И посылал на него Господь полчища Халдеев, и полчища Сириян, и полчища Моавитян, и полчища Аммонитян, -- посылал их на Иуду, чтобы погубить его по слову Господа, которое Он изрек чрез рабов Своих пророков.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** envoya contre Joakim des bandes de Chaldéens, des bandes de Syriens, des bandes de Moabites et des bandes d’Ammonites ; il les envoya contre Juda pour le détruire, selon la parole de \\+w Yahweh|strong=\"H3068\"\\+w** qu’il avait prononcée par l’organe de ses serviteurs les prophètes.",
+        "NAB": "The LORD loosed against him bands of Chaldeans, Arameans, Moabites, and Ammonites; he loosed them against Judah to destroy it, as the LORD had threatened through his servants the prophets.",
+        "VAT_ES": "Cro 36.11-13; Jr 52.1-3",
+        "CEI": "Il Signore mandò contro di lui bande armate di Caldei, di Aramei, di Moabiti e di Ammoniti; le mandò in Giuda per annientarlo, secondo la parola che il Signore aveva pronunziata per mezzo dei suoi servi, i profeti."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אַ֣ךְ עַל פִּ֣י יְהוָ֗ה הָֽיְתָה֙ בִּֽ/יהוּדָ֔ה לְ/הָסִ֖יר מֵ/עַ֣ל פָּנָ֑י/ו בְּ/חַטֹּ֣את מְנַשֶּׁ֔ה כְּ/כֹ֖ל אֲשֶׁ֥ר עָשָֽׂה׃",
+        "LXX": "πλὴν ἐπὶ τὸν θυμὸν Κυρίου ἦν ἐν τῷ Ἰούδᾳ ἀποστῆσαι αὐτὸν ἀπὸ τοῦ προσώπου ἐν ἁμαρτίαις Μανασσὴ κατὰ πάντα ὅσα ἐποίησεν.",
+        "VUL": "Factum est autem hoc per verbum Domini contra Judam, ut auferret eum coram se propter peccata Manasse universa quæ fecit,",
+        "SYN": "По повелению Господа было _это_ с Иудою, чтобы отвергнуть _его_ от лица Его за грехи Манассии, за всё, что он сделал;",
+        "NEO": "Ce fut uniquement sur l’ordre de \\+w Yahweh|strong=\"H3068\"\\+w** que cela arriva contre Juda, pour l’ôter de devant sa face, à cause de tous les péchés commis par Manassé,",
+        "NAB": "This befell Judah because the LORD had stated that he would inexorably put them out of his sight for the sins Manasseh had committed in all that he did;",
+        "VAT_ES": "Fue únicamente por orden del Señor que sucedió esto en Judá, para apartarla de su presencia, a causa de los pecados de Manasés, por todo lo que él hizo,",
+        "CEI": "Ciò avvenne in Giuda solo per volere del Signore, che volle allontanarlo dalla sua presenza a causa del peccato di Manàsse, per tutto ciò che aveva fatto,"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וְ/גַ֤ם דַּֽם הַ/נָּקִי֙ אֲשֶׁ֣ר שָׁפָ֔ךְ וַ/יְמַלֵּ֥א אֶת יְרוּשָׁלִַ֖ם דָּ֣ם נָקִ֑י וְ/לֹֽא אָבָ֥ה יְהוָ֖ה לִ/סְלֹֽחַ׃",
+        "LXX": "καί γε αἷμα ἀθῷον ἐξέχεεν καὶ ἔπλησεν τὴν Ἰερουσαλὴμ αἵματος ἀθῴου· καὶ οὐκ ἠθέλησεν Κύριος ἱλασθῆναι.",
+        "VUL": "et propter sanguinem innoxium quem effudit, et implevit Jerusalem cruore innocentium : et ob hanc rem noluit Dominus propitiari.",
+        "SYN": "и за кровь невинную, которую он пролил, наполнив Иерусалим кровью невинною, Господь не захотел простить.",
+        "NEO": "et à cause du sang innocent qu’avait répandu Manassé, au point de remplir Jérusalem de sang innocent. C’est pourquoi \\+w Yahweh|strong=\"H3068\"\\+w** ne voulait pas pardonner.",
+        "NAB": "and especially because of the innocent blood he shed, with which he filled Jerusalem, the LORD would not forgive.",
+        "VAT_ES": "y también por la sangre inocente que derramó, hasta inundar con ella a Jerusalén: el Señor no quiso perdonar.",
+        "CEI": "e anche a causa del sangue innocente versato quando aveva riempito di sangue innocente Gerusalemme; per questo il Signore non volle placarsi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "וְ/יֶ֛תֶר דִּבְרֵ֥י יְהוֹיָקִ֖ים וְ/כָל אֲשֶׁ֣ר עָשָׂ֑ה הֲ/לֹא הֵ֣ם כְּתוּבִ֗ים עַל סֵ֛פֶר דִּבְרֵ֥י הַ/יָּמִ֖ים לְ/מַלְכֵ֥י יְהוּדָֽה׃",
+        "LXX": "καὶ τὰ λοιπὰ τῶν λόγων Ἰωακεὶμ καὶ πάντα ὅσα ἐποίησεν, οὐκ ἰδοὺ ταῦτα γεγραμμένα ἐπὶ βιβλίῳ λόγων τῶν ἡμερῶν τοῖς βασιλεῦσιν Ἰούδα;",
+        "VUL": "Reliqua autem sermonum Joakim, et universa quæ fecit, nonne hæc scripta sunt in libro sermonum dierum regum Juda ? Et dormivit Joakim cum patribus suis :",
+        "SYN": "Прочее об Иоакиме и обо всем, что он сделал, написано в летописи царей Иудейских.",
+        "NEO": "Le reste des actes de Joakim, et tout ce qu’il a fait, cela n’est-il pas écrit dans le livre des Chroniques des rois de Juda ?",
+        "NAB": "The rest of the acts of Jehoiakim, with all that he did, are written in the book of the chronicles of the kings of Judah.",
+        "VAT_ES": "El resto de los hechos de Joaquím y todo lo que él hizo, &iquest;no está escrito en el libro de los Anales de los reyes de Judá?",
+        "CEI": "Le altre gesta di Ioiakìm e tutte le sue azioni sono descritte nel libro delle Cronache dei re di Giuda."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "וַ/יִּשְׁכַּ֥ב יְהוֹיָקִ֖ים עִם אֲבֹתָ֑י/ו וַ/יִּמְלֹ֛ךְ יְהוֹיָכִ֥ין בְּנ֖/וֹ תַּחְתָּֽי/ו׃",
+        "LXX": "καὶ ἐκοιμήθη Ἰωακεὶμ μετὰ τῶν πατέρων αὐτοῦ, καὶ ἐβασίλευσεν Ἰωακεὶμ υἱὸς αὐτοῦ ἀντ’ αὐτοῦ.",
+        "VUL": "et regnavit Joachin filius ejus pro eo.",
+        "SYN": "И почил Иоаким с отцами своими, и воцарился Иехония, сын его, вместо него.",
+        "NEO": "Joakim se coucha avec ses pères, et Joachin son fils, régna à sa place.",
+        "NAB": "Jehoiakim rested with his ancestors, and his son Jehoiachin succeeded him as king.",
+        "VAT_ES": "Joaquím se fue a descansar con sus padres, y su hijo Joaquín reinó en lugar de él.",
+        "CEI": "Ioiakìm si addormentò con i suoi padri e al suo posto divenne re suo figlio Ioiachìn."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וְ/לֹֽא הֹסִ֥יף עוֹד֙ מֶ֣לֶךְ מִצְרַ֔יִם לָ/צֵ֖את מֵֽ/אַרְצ֑/וֹ כִּֽי לָקַ֞ח מֶ֣לֶךְ בָּבֶ֗ל מִ/נַּ֤חַל מִצְרַ֨יִם֙ עַד נְהַר פְּרָ֔ת כֹּ֛ל אֲשֶׁ֥ר הָיְתָ֖ה לְ/מֶ֥לֶךְ מִצְרָֽיִם׃",
+        "LXX": "καὶ οὐ προσέθετο ἔτι βασιλεὺς Αἰγύπτου ἐξελθεῖν ἐκ τῆς γῆς αὐτοῦ, ὅτι ἔλαβεν βασιλεὺς Βαβυλῶνος ἀπὸ τοῦ χειμάρρου Αἰγύπτου ἕως τοῦ ποταμοῦ Εὐφράτου πάντα ὅσα ἦν τοῦ βασιλέως Αἰγύπτου.",
+        "VUL": "Et ultra non addidit rex Ægypti ut egrederetur de terra sua : tulerat enim rex Babylonis, a rivo Ægypti usque ad fluvium Euphraten, omnia quæ fuerant regis Ægypti.",
+        "SYN": "Царь Египетский не выходил более из земли своей, потому что взял царь Вавилонский все, от потока Египетского до реки Евфрата, что принадлежало царю Египетскому.",
+        "NEO": "Le roi d’Égypte ne sortit plus de son pays ; car le roi de Babylone avait pris tout ce qui était au roi d’Égypte, depuis le torrent d’Égypte jusqu’au fleuve de l’Euphrate.",
+        "NAB": "The king of Egypt did not again leave his own land, for the king of Babylon had taken all that belonged to the king of Egypt from the Wadi of Egypt to the Euphrates River.",
+        "VAT_ES": "El rey de Egipto no volvió a salir de su país, porque el rey de Babilonia se había apoderado de todo lo que pertenecía al rey de Egipto, desde el Torrente de Egipto hasta el río Eufrates.",
+        "CEI": "Il re d'Egitto non uscì più dal suo paese, perché il re di Babilonia, dal torrente di Egitto sino al fiume Eufràte, aveva conquistato quanto una volta apparteneva al re d'Egitto."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "בֶּן שְׁמֹנֶ֨ה עֶשְׂרֵ֤ה שָׁנָה֙ יְהוֹיָכִ֣ין בְּ/מָלְכ֔/וֹ וּ/שְׁלֹשָׁ֣ה חֳדָשִׁ֔ים מָלַ֖ךְ בִּ/ירוּשָׁלִָ֑ם וְ/שֵׁ֣ם אִמּ֔/וֹ נְחֻשְׁתָּ֥א בַת אֶלְנָתָ֖ן מִ/ירוּשָׁלִָֽם׃",
+        "LXX": "Υἱὸς ὀκτὼ καὶ δέκα ἐτῶν Ἰωακεὶμ ἐν τῷ βασιλεύειν αὐτόν, καὶ τρίμηνον ἐβασίλευσεν ἐν Ἰερουσαλήμ, καὶ ὄνομα τῇ μητρὶ αὐτοῦ Νεσθά, θυγάτηρ Ἐλλαναθὰμ ἐξ Ἰερουσαλήμ.",
+        "VUL": "Decem et octo annorum erat Joachin cum regnare cpisset, et tribus mensibus regnavit in Jerusalem : nomen matris ejus Nohesta filia Elnathan de Jerusalem.",
+        "SYN": "Восемнадцати лет был Иехония, когда воцарился, и три месяца царствовал в Иерусалиме; имя матери его Нехушта, дочь Елнафана, из Иерусалима.",
+        "NEO": "Joachin avait dix-huit ans lorsqu’il devint roi, et il régna trois mois à Jérusalem. Sa mère s’appelait Nohesta, fille d’Elnathan, de Jérusalem.",
+        "NAB": "Jehoiachin was eighteen years old when he began to reign, and he reigned three months in Jerusalem. His mother's name was Nehushta, daughter of Elnathan of Jerusalem.",
+        "VAT_ES": "Joaquín tenía dieciocho años cuando comenzó a reinar, y reinó tres meses en Jerusalén. Su madre se llamaba Nejustá, hija de Elantán, y era de Jerusalén.",
+        "CEI": "Ioiachìn aveva diciotto anni, quando divenne re; regnò tre mesi in Gerusalemme. Sua madre, di Gerusalemme, si chiamava Necusta, figlia di Elnatàn."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ הָ/רַ֖ע בְּ/עֵינֵ֣י יְהוָ֑ה כְּ/כֹ֥ל אֲשֶׁר עָשָׂ֖ה אָבִֽי/ו׃",
+        "LXX": "καὶ ἐποίησεν τὸ πονηρὸν ἐν ὀφθαλμοῖς Κυρίου κατὰ πάντα ὅσα ἐποίησεν ὁ πατὴρ αὐτοῦ.",
+        "VUL": "Et fecit malum coram Domino, juxta omnia quæ fecerat pater ejus.",
+        "SYN": "И делал он неугодное в очах Господних во всем так, как делал отец его.",
+        "NEO": "Il fit ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**, selon tout ce qu’avait fait son père.",
+        "NAB": "He did evil in the sight of the LORD, just as his forebears had done.",
+        "VAT_ES": "El hizo lo que es malo a los ojos del Señor, tal como lo había hecho su padre.",
+        "CEI": "Fece ciò che è male agli occhi del Signore, secondo quanto aveva fatto suo padre."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "בָּ/עֵ֣ת הַ/הִ֔יא עלה עָל֗וּ עַבְדֵ֛י נְבֻכַדְנֶאצַּ֥ר מֶֽלֶךְ בָּבֶ֖ל יְרוּשָׁלִָ֑ם וַ/תָּבֹ֥א הָ/עִ֖יר בַּ/מָּצֽוֹר׃",
+        "LXX": "ἐν τῷ καιρῷ ἐκείνῳ ἀνέβη Ναβουχοδονοσὸρ βασιλεὺς Βαβυλῶνος εἰς Ἰερουσαλήμ, καὶ ἦλθεν ἡ πόλις ἐν περιοχῇ.",
+        "VUL": "In tempore illo ascenderunt servi Nabuchodonosor regis Babylonis in Jerusalem, et circumdata est urbs munitionibus.",
+        "SYN": "В то время подступили рабы Навуходоносора, царя Вавилонского, к Иерусалиму, и подвергся город осаде.",
+        "NEO": "En ce temps-là, les serviteurs de Nabuchodonosor, roi de Babylone, montèrent contre Jérusalem, et la ville fut assiégée.",
+        "NAB": "At that time the officials of Nebuchadnezzar, king of Babylon, attacked Jerusalem, and the city came under siege.",
+        "VAT_ES": "En aquel tiempo, los servidores de Nabucodonosor, rey de Babilonia, subieron contra Jerusalén, y la ciudad quedó sitiada.",
+        "CEI": "In quel tempo gli ufficiali di Nabucodònosor re di Babilonia marciarono contro Gerusalemme; la città subì l'assedio."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֛א נְבוּכַדְנֶאצַּ֥ר מֶֽלֶךְ בָּבֶ֖ל עַל הָ/עִ֑יר וַ/עֲבָדָ֖י/ו צָרִ֥ים עָלֶֽי/הָ׃",
+        "LXX": "καὶ εἰσῆλθεν Ναβουχοδονοσὸρ βασιλεὺς Βαβυλῶνος εἰς τὴν πόλιν, καὶ οἱ παῖδες αὐτοῦ ἐπολιόρκουν ἐπ’ αὐτήν.",
+        "VUL": "Venitque Nabuchodonosor rex Babylonis ad civitatem cum servis suis ut oppugnarent eam.",
+        "SYN": "И пришел Навуходоносор, царь Вавилонский, к городу, когда рабы его осаждали его.",
+        "NEO": "Nabuchodonosor, roi de Babylone, vint devant la ville pendant que ses serviteurs l’assiégeaient.",
+        "NAB": "Nebuchadnezzar, king of Babylon, himself arrived at the city while his servants were besieging it.",
+        "VAT_ES": "Nabucodonosor, rey de Babilonia, llegó a la ciudad mientras sus servidores la sitiaban,",
+        "CEI": "Nabucodònosor re di Babilonia giunse presso la città, mentre i suoi ufficiali l'assediavano."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "וַ/יֵּצֵ֞א יְהוֹיָכִ֤ין מֶֽלֶךְ יְהוּדָה֙ עַל מֶ֣לֶךְ בָּבֶ֔ל ה֣וּא וְ/אִמּ֔/וֹ וַ/עֲבָדָ֖י/ו וְ/שָׂרָ֣י/ו וְ/סָֽרִיסָ֑י/ו וַ/יִּקַּ֤ח אֹת/וֹ֙ מֶ֣לֶךְ בָּבֶ֔ל בִּ/שְׁנַ֥ת שְׁמֹנֶ֖ה לְ/מָלְכֽ/וֹ׃",
+        "LXX": "καὶ ἐξῆλθεν Ἰωακεὶμ βασιλεὺς Ἰούδα ἐπὶ βασιλέα Βαβυλῶνος, αὐτὸς καὶ οἱ παῖδες αὐτοῦ καὶ ἡ μήτηρ αὐτοῦ καὶ οἱ ἄρχοντες αὐτοῦ καὶ οἱ εὐνοῦχοι αὐτοῦ, καὶ ἔλαβεν αὐτὸν βασιλεὺς Βαβυλῶνος ἐν ἔτει ὀγδόῳ τῆς βασιλείας αὐτοῦ.",
+        "VUL": "Egressusque est Joachin rex Juda ad regem Babylonis, ipse et mater ejus, et servi ejus, et principes ejus, et eunuchi ejus : et suscepit eum rex Babylonis anno octavo regni sui.",
+        "SYN": "И вышел Иехония, царь Иудейский, к царю Вавилонскому, он и мать его, и слуги его, и князья его, и евнухи его, -- и взял его царь Вавилонский в восьмой год своего царствования.",
+        "NEO": "Alors Joachin, roi de Juda, sortit auprès du roi de Babylone, avec sa mère, ses serviteurs, ses chefs et ses eunuques, et le roi de Babylone le fit prisonnier la huitième année de son règne.",
+        "NAB": "Then Jehoiachin, king of Judah, together with his mother, his ministers, officers, and functionaries, surrendered to the king of Babylon, who, in the eighth year of his reign, took him captive.",
+        "VAT_ES": "y Joaquín, rey de Judá, se rindió al rey de Babilonia junto con su madre, sus servidores, sus príncipes y sus eunucos. El rey de Babilonia los tomó prisioneros en el año octavo de su reinado.",
+        "CEI": "Ioiachìn re di Giuda si presentò con sua madre, i suoi ministri, i suoi capi e i suoi eunuchi, al re di Babilonia; questi, nell'anno ottavo del suo regno, lo fece prigioniero."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "וַ/יּוֹצֵ֣א מִ/שָּׁ֗ם אֶת כָּל אוֹצְרוֹת֙ בֵּ֣ית יְהוָ֔ה וְ/אֽוֹצְר֖וֹת בֵּ֣ית הַ/מֶּ֑לֶךְ וַ/יְקַצֵּ֞ץ אֶת כָּל כְּלֵ֣י הַ/זָּהָ֗ב אֲשֶׁ֨ר עָשָׂ֜ה שְׁלֹמֹ֤ה מֶֽלֶךְ יִשְׂרָאֵל֙ בְּ/הֵיכַ֣ל יְהוָ֔ה כַּֽ/אֲשֶׁ֖ר דִּבֶּ֥ר יְהוָֽה׃",
+        "LXX": "καὶ ἐξήνεγκεν ἐκεῖθεν πάντας τοὺς θησαυροὺς οἴκου Κυρίου καὶ τοὺς θησαυροὺς οἴκου τοῦ βασιλέως, καὶ συνέκοψεν πάντα τὰ σκεύη τὰ χρυσᾶ ἃ ἐποίησεν Σαλωμὼν βασιλεὺς Ἰσραὴλ ἐν τῷ ναῷ Κυρίου κατὰ τὸ ῥῆμα Κυρίου.",
+        "VUL": "Et protulit inde omnes thesauros domus Domini, et thesauros domus regiæ : et concidit universa vasa aurea quæ fecerat Salomon rex Israël in templo Domini juxta verbum Domini.",
+        "SYN": "И вывез он оттуда все сокровища дома Господня и сокровища царского дома; и изломал, как изрек Господь, все золотые сосуды, которые Соломон, царь Израилев, сделал в храме Господнем;",
+        "NEO": "Il emporta de là tous les trésors de la maison de \\+w Yahweh|strong=\"H3068\"\\+w** et les trésors de la maison du roi, et il brisa tous les ustensiles d’or que Salomon, roi d’Israël, avait faits dans le temple de \\+w Yahweh|strong=\"H3068\"\\+w**, comme \\+w Yahweh|strong=\"H3068\"\\+w** l’avait annoncé.",
+        "NAB": "He carried off all the treasures of the temple of the LORD and those of the palace, and broke up all the gold utensils that Solomon, king of Israel, had provided in the temple of the LORD, as the LORD had foretold.",
+        "VAT_ES": "Luego retiró de allí todos los tesoros de la Casa del Señor y los tesoros de la casa del rey, y rompió todos los objetos que Salomón, rey de Judá, había hecho para la Casa del Señor, como lo había anunciado el Señor.",
+        "CEI": "Il re di Babilonia portò via di là tutti i tesori del tempio e i tesori della reggia; fece a pezzi tutti gli oggetti d'oro, che Salomone re di Israele aveva posti nel tempio. Così si adempì la parola del Signore."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "וְ/הִגְלָ֣ה אֶת כָּל יְ֠רוּשָׁלִַם וְֽ/אֶת כָּל הַ/שָּׂרִ֞ים וְ/אֵ֣ת כָּל גִּבּוֹרֵ֣י הַ/חַ֗יִל עשרה עֲשֶׂ֤רֶת אֲלָפִים֙ גּוֹלֶ֔ה וְ/כָל הֶ/חָרָ֖שׁ וְ/הַ/מַּסְגֵּ֑ר לֹ֣א נִשְׁאַ֔ר זוּלַ֖ת דַּלַּ֥ת עַם הָ/אָֽרֶץ׃",
+        "LXX": "καὶ ἀπῴκισεν τὴν Ἰερουσαλὴμ καὶ πάντας τοὺς ἄρχοντας καὶ τοὺς δυνατοὺς ἰσχύι, αἰχμαλωσίας δέκα χιλιάδας αἰχμαλωτίσας, καὶ πᾶν τέκτονα καὶ τὸν συνκλείοντα· καὶ οὐχ ὑπελείφθη πλὴν οἱ πτωχοὶ τῆς γῆς.",
+        "VUL": "Et transtulit omnem Jerusalem, et universos principes, et omnes fortes exercitus, decem millia, in captivitatem, et omnem artificem et clusorem : nihilque relictum est, exceptis pauperibus populi terræ.",
+        "SYN": "и выселил весь Иерусалим, и всех князей, и все храброе войско, -- десять тысяч было переселенных, -- и всех плотников и кузнецов; никого не осталось, кроме бедного народа земли.",
+        "NEO": "Il emmena en captivité tout Jérusalem, tous les chefs et tous les hommes vaillants, — dix mille captifs, — avec tous les artisans et les forgerons ; il ne resta que le peuple pauvre du pays.",
+        "NAB": "He deported all Jerusalem: all the officers and men of the army, ten thousand in number, and all the craftsmen and smiths. None were left among the people of the land except the poor.",
+        "VAT_ES": "Deportó a todo Jerusalén, a todos los jefes y a toda la gente rica –diez mil deportados– además de todos los herreros y cerrajeros: sólo quedó la gente más pobre del país.",
+        "CEI": "Deportò tutta Gerusalemme, cioè tutti i capi, tutti i prodi, in numero di diecimila, tutti i falegnami e i fabbri; rimase solo la gente povera del paese."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "וַ/יֶּ֥גֶל אֶת יְהוֹיָכִ֖ין בָּבֶ֑לָ/ה וְ/אֶת אֵ֣ם הַ֠/מֶּלֶךְ וְ/אֶת נְשֵׁ֨י הַ/מֶּ֜לֶךְ וְ/אֶת סָרִיסָ֗י/ו וְ/אֵת֙ אולי אֵילֵ֣י הָ/אָ֔רֶץ הוֹלִ֛יךְ גּוֹלָ֥ה מִ/ירוּשָׁלִַ֖ם בָּבֶֽלָ/ה׃",
+        "LXX": "καὶ ἀπῴκισεν τὸν Ἰωακεὶμ εἰς Βαβυλῶνα, καὶ τὴν μητέρα τοῦ βασιλέως καὶ τὰς γυναῖκας τοῦ βασιλέως καὶ τοὺς εὐνούχους αὐτοῦ· καὶ τοὺς ἰσχυροὺς τῆς γῆς ἀπήγαγεν ἀποικεσίαν ἐξ Ἰερουσαλὴμ εἰς Βαβυλῶνα.",
+        "VUL": "Transtulit quoque Joachin in Babylonem, et matrem regis, et uxores regis, et eunuchos ejus : et judices terræ duxit in captivitatem de Jerusalem in Babylonem.",
+        "SYN": "И переселил он Иехонию в Вавилон; и мать царя, и жен царя, и евнухов его, и сильных земли отвел на поселение из Иерусалима в Вавилон.",
+        "NEO": "Il transporta Joachin à Babylone, et il emmena captifs de Jérusalem à Babylone la mère du roi, les femmes du roi et ses eunuques, et les grands du pays.",
+        "NAB": "He deported Jehoiachin to Babylon, and also led captive from Jerusalem to Babylon the king's mother and wives, his functionaries, and the chief men of the land.",
+        "VAT_ES": "Deportó a Joaquín a Babilonia; y también llevó deportados de Jerusalén a Babilonia a la madre y a las mujeres del rey, a sus eunucos y a los grandes del país.",
+        "CEI": "Deportò in Babilonia Ioiachìn, la madre del re, le mogli del re, i suoi eunuchi e le guide del paese, conducendoli in esilio da Gerusalemme in Babilonia."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "וְ/אֵת֩ כָּל אַנְשֵׁ֨י הַ/חַ֜יִל שִׁבְעַ֣ת אֲלָפִ֗ים וְ/הֶ/חָרָ֤שׁ וְ/הַ/מַּסְגֵּר֙ אֶ֔לֶף הַ/כֹּ֕ל גִּבּוֹרִ֖ים עֹשֵׂ֣י מִלְחָמָ֑ה וַ/יְבִיאֵ֧/ם מֶֽלֶךְ בָּבֶ֛ל גּוֹלָ֖ה בָּבֶֽלָ/ה׃",
+        "LXX": "καὶ πάντας τοὺς ἄνδρας τῆς δυνάμεως ἑπτακισχιλίους καὶ τὸν τέκτονα καὶ τὸν συνκλείοντα χιλίους, πάντες δυνατοὶ ποιοῦντες πόλεμον· καὶ ἤγαγεν αὐτοὺς βασιλεὺς Βαβυλῶνος μετοικεσίαν εἰς Βαβυλῶνα.",
+        "VUL": "Et omnes viros robustos, septem millia, et artifices, et clusores mille, omnes viros fortes et bellatores : duxitque eos rex Babylonis captivos in Babylonem.",
+        "SYN": "И все войско _числом_ семь тысяч, и художников и строителей тысячу, всех храбрых, ходящих на войну, отвел царь Вавилонский на поселение в Вавилон.",
+        "NEO": "De plus, tous les guerriers au nombre de sept mille, ainsi que les artisans et les forgerons au nombre de mille, tous hommes vaillants et propres à la guerre : le roi de Babylone les emmena captifs à Babylone.",
+        "NAB": "The king of Babylon also led captive to Babylon all seven thousand men of the army, and a thousand craftsmen and smiths, all of them trained soldiers.",
+        "VAT_ES": "A todos los guerreros –en número de siete mil– a los herreros y cerrajeros –en número de mil– todos aptos para la guerra, el rey de Babilonia los llevó deportados a su país.",
+        "CEI": "Tutti gli uomini di valore, in numero di settemila, i falegnami e i fabbri, in numero di mille, e tutti i guerrieri più prodi furono condotti in esilio a Babilonia dal re di Babilonia."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "וַ/יַּמְלֵ֧ךְ מֶֽלֶךְ בָּבֶ֛ל אֶת מַתַּנְיָ֥ה דֹד֖/וֹ תַּחְתָּ֑י/ו וַ/יַּסֵּ֥ב אֶת שְׁמ֖/וֹ צִדְקִיָּֽהוּ׃",
+        "LXX": "καὶ ἐβασίλευσεν βασιλεὺς Βαβυλῶνος τὸν Μαθθὰν υἱὸν αὐτοῦ ἀντ’ αὐτοῦ, καὶ ἐπέθηκεν τὸ ὄνομα αὐτοῦ Σεδεκιά.",
+        "VUL": "Et constituit Matthaniam patruum ejus pro eo : imposuitque nomen ei Sedeciam.",
+        "SYN": "И воцарил царь Вавилонский Матфанию, дядю _Иехонии,_ вместо него, и переменил имя его на Седекию.",
+        "NEO": "Et le roi de Babylone établit roi, à la place de Joachin, Mathanias, son oncle, dont il changea le nom en celui de Sédécias.",
+        "NAB": "In place of Jehoiachin, the king of Babylon appointed his uncle Mattaniah king, and changed his name to Zedekiah.",
+        "VAT_ES": "el rey de Babilonia designó rey, en lugar de Joaquín, a su hijo Matanías, a quien le cambió el nombre por el de Sedecías.",
+        "CEI": "Il re di Babilonia nominò re, al posto di Ioiachìn, Mattania suo zio, cambiandogli il nome in Sedecìa."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "בֶּן עֶשְׂרִ֨ים וְ/אַחַ֤ת שָׁנָה֙ צִדְקִיָּ֣הוּ בְ/מָלְכ֔/וֹ וְ/אַחַ֤ת עֶשְׂרֵה֙ שָׁנָ֔ה מָלַ֖ךְ בִּ/ירוּשָׁלִָ֑ם וְ/שֵׁ֣ם אִמּ֔/וֹ חמיטל חֲמוּטַ֥ל בַּֽת יִרְמְיָ֖הוּ מִ/לִּבְנָֽה׃",
+        "LXX": "Υἱὸς εἴκοσι καὶ ἑνὸς ἐνιαυτοῦ Σεδεκίας ἐν τῷ βασιλεύειν αὐτόν, καὶ ἕνδεκα ἔτη ἐβασίλευσεν ἐν Ἰερουσαλήμ· καὶ ὄνομα τῇ μητρὶ αὐτοῦ Μιτὰτ θυγάτηρ Ἰερεμίου.",
+        "VUL": "Vigesimum et primum annum ætatis habebat Sedecias cum regnare cpisset, et undecim annis regnavit in Jerusalem : nomen matris ejus erat Amital filia Jeremiæ de Lobna.",
+        "SYN": "Двадцати одного года был Седекия, когда воцарился, и одиннадцать лет царствовал в Иерусалиме; имя матери его Хамуталь, дочь Иеремии, из Ливны.",
+        "NEO": "Sédécias avait vingt et un ans lorsqu’il devint roi, et il régna onze ans à Jérusalem. Sa mère s’appelait Amital, fille de Jérémie, de Lobna.",
+        "NAB": "Zedekiah was twenty-one years old when he became king, and he reigned eleven years in Jerusalem. His mother's name was Hamutal, daughter of Jeremiah of Libnah.",
+        "VAT_ES": "Sedecías tenía veintiún años cuando comenzó a reinar, y reinó once años en Jerusalén. Su madre se llamaba Jamutal, hija de Jeremías, y era de Libná.",
+        "CEI": "Quando divenne re, Sedecìa aveva ventun anni; regnò undici anni in Gerusalemme. Sua madre, di Libna, si chiamava Camutàl, figlia di Geremia."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "וַ/יַּ֥עַשׂ הָ/רַ֖ע בְּ/עֵינֵ֣י יְהוָ֑ה כְּ/כֹ֥ל אֲשֶׁר עָשָׂ֖ה יְהוֹיָקִֽים׃",
+        "LXX": "καὶ ἐποίησεν τὸ πονηρὸν ἐνώπιον Κυρίου κατὰ πάντα ὅσα ἐποίησεν Ἰωακείμ.",
+        "VUL": "Et fecit malum coram Domino, juxta omnia quæ fecerat Joakim.",
+        "SYN": "И делал он неугодное в очах Господних во всем так, как делал Иоаким.",
+        "NEO": "Il fit ce qui est mal aux yeux de \\+w Yahweh|strong=\"H3068\"\\+w**, imitant tout ce qu’avait fait Joakim.",
+        "NAB": "He also did evil in the sight of the LORD, just as Jehoiakim had done.",
+        "VAT_ES": "El hizo lo que es malo a los ojos del Señor, tal como lo había hecho Joaquín.",
+        "CEI": "Fece ciò che è male agli occhi del Signore, secondo quanto aveva fatto Ioiakìm."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "כִּ֣י עַל אַ֣ף יְהוָ֗ה הָיְתָ֤ה בִ/ירוּשָׁלִַ֨ם֙ וּ/בִ֣/יהוּדָ֔ה עַד הִשְׁלִכ֥/וֹ אֹתָ֖/ם מֵ/עַ֣ל פָּנָ֑י/ו וַ/יִּמְרֹ֥ד צִדְקִיָּ֖הוּ בְּ/מֶ֥לֶךְ בָּבֶֽל׃",
+        "LXX": "ὅτι ἐπὶ τὸν θυμὸν Κυρίου ἦν ἐπὶ Ἰερουσαλὴμ καὶ ἐν τῷ Ἰούδᾳ, ἕως ἀπέρριψεν αὐτοὺς ἀπὸ προσώπου αὐτοῦ. καὶ ἠθέτησεν Σεδεκίας ἐν τῷ βασιλεῖ Βαβυλῶνος.",
+        "VUL": "Irascebatur enim Dominus contra Jerusalem et contra Judam, donec projiceret eos a facie sua : recessitque Sedecias a rege Babylonis.",
+        "SYN": "Гнев Господень был над Иерусалимом и над Иудою до того, что Он отверг их от лица Своего. И отложился Седекия от царя Вавилонского.",
+        "NEO": "Cela arriva à Jérusalem et en Juda, à cause de la colère de \\+w Yahweh|strong=\"H3068\"\\+w**, jusqu’à ce qu’il les rejette de devant sa face.",
+        "NAB": "The LORD'S anger befell Jerusalem and Judah till he cast them out from his presence. Thus Zedekiah rebelled against the king of Babylon.",
+        "VAT_ES": "Esto sucedió en Jerusalén y en Judá a causa de la ira del Señor, hasta que al fin él los arrojó lejos de su presencia. Sedecías se rebeló contra el rey de Babilonia.",
+        "CEI": "Ciò accadde in Gerusalemme e in Giuda a causa dell'ira del Signore, tanto che infine li allontanò da sé. Sedecìa poi si ribellò al re di Babilonia."
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ISA_012",
+  "book_key": "ISA",
+  "sequence": 12,
+  "chapter_in": {
+    "MT": 12,
+    "VUL": 12,
+    "LXX": 12
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Prophetici",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "וְ/אָֽמַרְתָּ֙ בַּ/יּ֣וֹם הַ/ה֔וּא אוֹדְ/ךָ֣ יְהוָ֔ה כִּ֥י אָנַ֖פְתָּ בִּ֑/י יָשֹׁ֥ב אַפְּ/ךָ֖ וּֽ/תְנַחֲמֵֽ/נִי׃",
+        "LXX": "Καὶ ἐρεῖς ἐν τῇ ἡμέρᾳ ἐκείνῃ Εὐλογῶ σε, Κύριε, διότι ὠργίσθης μοι, καὶ ἀπέστρεψας τὸν θυμόν σου καὶ ἠλέησάς με.",
+        "VUL": "[Et dices in die illa :/ Confitebor tibi, Domine, quoniam iratus es mihi ;/ conversus est furor tuus, et consolatus es me./",
+        "SYN": "И скажешь в тот день: славлю Тебя, Господи; Ты гневался на меня, но отвратил гнев Твой и утешил меня.",
+        "NEO": "Et tu diras en ce jour-là : Je te loue, \\+w Yahweh|strong=\"H3068\"\\+w**, car tu étais irrité, mais ta colère s’est détournée et tu me consoles.",
+        "NAB": "On that day, you will say: I give you thanks, O LORD; though you have been angry with me, your anger has abated, and you have consoled me.",
+        "VAT_ES": "Tú dirás en aquel día: Te doy gracias, Señor, porque te habías irritado contra mí, pero se ha apartado tu ira y me has consolado.",
+        "CEI": "Tu dirai in quel giorno: \"Ti ringrazio, Signore; tu eri in collera con me, ma la tua collera si è calmata e tu mi hai consolato."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "הִנֵּ֨ה אֵ֧ל יְשׁוּעָתִ֛/י אֶבְטַ֖ח וְ/לֹ֣א אֶפְחָ֑ד כִּֽי עָזִּ֤/י וְ/זִמְרָת֙ יָ֣הּ יְהוָ֔ה וַֽ/יְהִי לִ֖/י לִֽ/ישׁוּעָֽה׃",
+        "LXX": "ἰδοὺ ὁ θεός μου σωτήρ μου, πεποιθὼς ἔσομαι ἐπ’ αὐτῷ, καὶ οὐ φοβηθήσομαι· διότι ἡ δόξα μου καὶ ἡ αἴνεσίς μου Κύριος, καὶ ἐγένετό μοι εἰς σωτηρίαν.",
+        "VUL": "Ecce Deus salvator meus ;/ fiducialiter agam, et non timebo :/ quia fortitudo mea et laus mea Dominus,/ et factus est mihi in salutem./",
+        "SYN": "Вот, Бог - спасение мое: уповаю на Него и не боюсь; ибо Господь - сила моя, и пение мое - Господь; и Он был мне во спасение.",
+        "NEO": "Voici le Dieu de ma délivrance ; j’ai confiance et je ne crains pas ; car ma force et ma louange c’est \\+w Yahweh|strong=\"H3068\"\\+w**, \\+w Yahweh|strong=\"H3068\"\\+w** ; il a été pour moi le salut. —",
+        "NAB": "God indeed is my savior; I am confident and unafraid. My strength and my courage is the LORD, and he has been my savior.",
+        "VAT_ES": "Este es el Dios de mi salvación: yo tengo confianza y no temo, porque el Señor es mi fuerza y mi protección; él fue mi salvación.",
+        "CEI": "Ecco, Dio è la mia salvezza; io confiderò, non temerò mai, perché mia forza e mio canto è il Signore; egli è stato la mia salvezza."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "וּ/שְׁאַבְתֶּם מַ֖יִם בְּ/שָׂשׂ֑וֹן מִ/מַּעַיְנֵ֖י הַ/יְשׁוּעָֽה׃",
+        "LXX": "καὶ ἀντλήσετε ὕδωρ μετ’ εὐφροσύνης ἐκ τῶν πηγῶν τοῦ σωτηρίου.",
+        "VUL": "Haurietis aquas in gaudio de fontibus salvatoris./",
+        "SYN": "И в радости будете почерпать воду из источников спасения,",
+        "NEO": "Vous puiserez des eaux avec joie aux sources du salut,",
+        "NAB": "With joy you will draw water at the fountain of salvation,",
+        "VAT_ES": "Ustedes sacarán agua con alegría de las fuentes de la salvación.",
+        "CEI": "Attingerete acqua con gioia alle sorgenti della salvezza\"."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "וַ/אֲמַרְתֶּ֞ם בַּ/יּ֣וֹם הַ/ה֗וּא הוֹד֤וּ לַֽ/יהוָה֙ קִרְא֣וּ בִ/שְׁמ֔/וֹ הוֹדִ֥יעוּ בָֽ/עַמִּ֖ים עֲלִֽילֹתָ֑י/ו הַזְכִּ֕ירוּ כִּ֥י נִשְׂגָּ֖ב שְׁמֽ/וֹ׃",
+        "LXX": "καὶ ἐρεῖς ἐν τῇ ἡμέρᾳ ἐκείνῃ Ὑμνεῖτε Κύριον, βοᾶτε τὸ ὄνομα αὐτοῦ, ἀναγγείλατε ἐν τοῖς ἔθνεσιν τὰ ἔνδοξα αὐτοῦ· μιμνήσκεσθε ὅτι ὑψώθη τὸ ὄνομα αὐτοῦ.",
+        "VUL": "Et dicetis in die illa :/ Confitemini Domino et invocate nomen ejus ;/ notas facite in populis adinventiones ejus ;/ mementote quoniam excelsum est nomen ejus./",
+        "SYN": "и скажете в тот день: славьте Господа, призывайте имя Его; возвещайте в народах дела Его; напоминайте, что велико имя Его;",
+        "NEO": "et vous direz en ce jour-là : Louez \\+w Yahweh|strong=\"H3068\"\\+w**, invoquez son nom, publiez parmi les peuples ses grandes œuvres, proclamez que son nom est élevé.",
+        "NAB": "and say on that day: Give thanks to the LORD, acclaim his name; among the nations make known his deeds, proclaim how exalted is his name.",
+        "VAT_ES": "Y dirán en aquel día: Den gracias al Señor, invoquen su Nombre, anuncien entre los pueblos sus proezas, proclamen qué sublime es su Nombre",
+        "CEI": "In quel giorno direte: \"Lodate il Signore, invocate il suo nome; manifestate tra i popoli le sue meraviglie, proclamate che il suo nome è sublime."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "זַמְּר֣וּ יְהוָ֔ה כִּ֥י גֵא֖וּת עָשָׂ֑ה מידעת מוּדַ֥עַת זֹ֖את בְּ/כָל הָ/אָֽרֶץ׃",
+        "LXX": "ὑμνήσατε τὸ ὄνομα Κυρίου, ὅτι ὑψηλὰ ἐποίησεν· ἀναγγείλατε ταῦτα ἐν πάσῃ τῇ γῇ.",
+        "VUL": "Cantate Domino, quoniam magnifice fecit ;/ annuntiate hoc in universa terra./",
+        "SYN": "пойте Господу, ибо Он соделал великое, - да знают это по всей земле.",
+        "NEO": "Chantez \\+w Yahweh|strong=\"H3068\"\\+w**, car il a fait des choses magnifiques ; qu’on le sache dans toute la terre !",
+        "NAB": "Sing praise to the LORD for his glorious achievement; let this be known throughout all the earth.",
+        "VAT_ES": "Canten al Señor porque ha hecho algo grandioso: &iexcl;que sea conocido en toda la tierra!",
+        "CEI": "Cantate inni al Signore, perché ha fatto cose grandiose, ciò sia noto in tutta la terra."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "צַהֲלִ֥י וָ/רֹ֖נִּי יוֹשֶׁ֣בֶת צִיּ֑וֹן כִּֽי גָד֥וֹל בְּ/קִרְבֵּ֖/ךְ קְד֥וֹשׁ יִשְׂרָאֵֽל׃",
+        "LXX": "ἀγαλλιᾶσθε καὶ εὐφραίνεσθε, οἱ κατοικοῦντες Σειών, ὅτι ὑψώθη ὁ ἅγιος τοῦ Ἰσραὴλ ἐν μέσῳ αὐτῆς.",
+        "VUL": "Exsulta et lauda, habitatio Sion,/ quia magnus in medio tui Sanctus Israël.]",
+        "SYN": "Веселись и радуйся, жительница Сиона, ибо велик посреди тебя Святый Израилев.",
+        "NEO": "Pousse des cris, tressaille d’allégresse, habitante de Sion, car le Saint d’Israël est grand au milieu de toi !",
+        "NAB": "Shout with exultation, O city of Zion, for great in your midst is the Holy One of Israel!",
+        "VAT_ES": "&iexcl;Aclama y grita de alegría. habitante de Sión, porque es grande en medio de ti el Santo de Israel!",
+        "CEI": "Gridate giulivi ed esultate, abitanti di Sion, perché grande in mezzo a voi è il Santo di Israele\"."
+      }
+    }
+  }
+}

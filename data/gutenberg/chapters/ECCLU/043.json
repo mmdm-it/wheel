@@ -1,0 +1,571 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "ECCLU_043",
+  "book_key": "ECCLU",
+  "sequence": 43,
+  "chapter_in": {
+    "MT": 43,
+    "VUL": 43,
+    "LXX": 43
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "LXX": "γαυρίαμα ὕψους στερέωμα καθαριότητος, εἶδος οὐρανοῦ ἐν ὁράματι δόξης.",
+        "VUL": "[Altitudinis firmamentum pulchritudo ejus est,/ species cæli in visione gloriæ./",
+        "SYN": "Величие высоты, твердь чистоты, вид неба в славном явлении!",
+        "NEO": "L’orgueil des hauteurs, c’est le firmament dans son pur éclat ; et l’aspect du ciel est une vision de gloire.",
+        "NAB": "The clear vault of the sky shines forth like heaven itself, a vision of glory.",
+        "VAT_ES": "Orgullo del cielo es la limpidez del firmamento, y la bóveda celeste es un magnífico espectáculo.",
+        "CEI": "Orgoglio dei cieli è il limpido firmamento, spettacolo celeste in una visione di gloria!"
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "LXX": "ἥλιος ἐν ὀπτασίᾳ διαγγέλλων ἐν ἐξόδῳ, σκεῦος θαυμαστόν, ἔργον Ὑψίστου·",
+        "VUL": "Sol in aspectu annuntians in exitu,/ vas admirabile, opus Excelsi./",
+        "SYN": "Солнце, когда оно является, возвещает о них при восходе: чудное создание, дело Всевышнего!",
+        "NEO": "Le soleil, quand il se montre, glorifie le Seigneur, à son lever ; c’est une merveilleuse créature, l’œuvre du Très-Haut.",
+        "NAB": "The orb of the sun, resplendent at its rising: what a wonderful work of the Most High!",
+        "VAT_ES": "El sol, cuando aparece, proclama a su salida qué admirable es la obra del Altísimo.",
+        "CEI": "Il sole mentre appare nel suo sorgere proclama: \"Che meraviglia è l'opera dell'Altissimo!\"."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "LXX": "ἐν μεσημβρίᾳ αὐτοῦ ἀναξηραίνει χώραν, καὶ ἐναντίον καύματος αὐτοῦ τίς ὑποστήσεται;",
+        "VUL": "In meridiano exurit terram,/ et in conspectu ardoris ejus quis poterit sustinere ?/ fornacem custodiens in operibus ardoris :/",
+        "SYN": "В полдень свой оно иссушает землю, и пред жаром его кто устоит?",
+        "NEO": "A son midi, il dessèche la terre ; qui peut tenir devant ses ardeurs ?",
+        "NAB": "At noon it seethes the surface of the earth, and who can bear its fiery heat?",
+        "VAT_ES": "Al mediodía reseca la tierra, &iquest;y quién puede resistir su ardor?",
+        "CEI": "A mezzogiorno dissecca la terra, e di fronte al suo calore chi può resistere?"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "LXX": "κάμινον φυλάσσων ἐν ἔργοις καύματος, τριπλασίως ἥλιος ἐκκαίων ὄρη· ἀτμίδας πυρώδεις ἐμφυσῶν, καὶ ἐκλάμπων ἀκτῖνας ἀμαυροῖ ὀφθαλμούς.",
+        "VUL": "tripliciter sol exurens montes,/ radios igneos exsufflans,/ et refulgens radiis suis obcæcat oculos./",
+        "SYN": "Распаляют горн для работ плавильных, но втрое сильнее солнце палит горы: дыша пламенем огня и блистая лучами, оно ослепляет глаза.",
+        "NEO": "Pour ses travaux, l’artisan active le feu de la fournaise : trois fois plus le soleil échauffe les montagnes. Il embrase les vapeurs de l’air, et, quand il fait resplendir ses rayons, il éblouit les yeux.",
+        "NAB": "Like a blazing furnace of solid metal, it sets the mountains aflame with its rays; By its fiery darts the land is consumed; the eyes are dazzled by its light.",
+        "VAT_ES": "Se atiza el horno para la forja, pero tres veces más abrasa el sol las montañas; él exhala los vapores ardientes y con el brillo de sus rayos enceguece los ojos.",
+        "CEI": "Si soffia nella fornace per ottenere calore, il sole brucia i monti tre volte tanto; emettendo vampe di fuoco, facendo brillare i suoi raggi, abbaglia gli occhi."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "LXX": "μέγας Κύριος ὁ ποιήσας αὐτόν, καὶ ἐν λόγοις αὐτοῦ κατέσπευσεν πορείαν·",
+        "VUL": "Magnus Dominus qui fecit illum,/ et in sermonibus ejus festinavit iter.]",
+        "SYN": "Велик Господь, Который сотворил его, и по слову Его оно поспешно пробегает путь свой.",
+        "NEO": "Grand est le Seigneur qui l’a fait, et, sur son ordre, il précipite sa course.",
+        "NAB": "Great indeed is the LORD who made it, at whose orders it urges on its steeds.",
+        "VAT_ES": "&iexcl;Qué grande es el Señor que lo ha creado! A una orden suya, él emprende su rápida carrera.",
+        "CEI": "Grande è il Signore che l'ha creato e con la parola ne affretta il rapido corso."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "LXX": "καὶ ἡ σελήνη ἐν πᾶσιν εἰς καιρὸν αὐτῆς, ἀνάδειξιν χρόνων καὶ σημεῖον αἰῶνος·",
+        "VUL": "[Et luna in omnibus in tempore suo,/ ostensio temporis, et signum ævi./",
+        "SYN": "И луна всем в свое время служит указанием времен и знамением века:",
+        "NEO": "La lune aussi est toujours fidèle, à l’heure qui lui est assignée ; elle indique les temps de l’année, et annonce l’avenir.",
+        "NAB": "The moon, too, that marks the changing times, governing the seasons, their lasting sign,",
+        "VAT_ES": "También la luna, siempre en el momento preciso, marca las épocas y señala los tiempos.",
+        "CEI": "Anche la luna sempre puntuale nelle sue fasi regola i mesi e determina il tempo."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "LXX": "ἀπὸ σελήνης σημεῖον ἑορτῆς, φωστὴρ μειούμενος ἐπὶ συντελείας·",
+        "VUL": "A luna signum diei festi :/ luminare quod minuitur in consummatione./",
+        "SYN": "от луны - указание праздника; свет ее умаляется по достижении ею полноты;",
+        "NEO": "De la lune vient le signal des fêtes ; sa lumière diminue quand elle est arrivée à son plein.",
+        "NAB": "By which we know the feast days and fixed dates, this light-giver which wanes in its course:",
+        "VAT_ES": "Su curso determina las fiestas: es un astro que decrece después de su plenilunio.",
+        "CEI": "Dalla luna dipende l'indicazione delle feste, luminare che decresce fino alla sua scomparsa."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "LXX": "μὴν κατὰ τὸ ὄνομα αὐτῆς ἐστιν, αὐξανομένη θαυμαστῶς ἐν ἀλλοιώσει. σκεῦος παραβολῶν ἐν ὕψει, ἐν στερεώματι οὐρανοῦ ἐκλάμπων·",
+        "VUL": "Mensis secundum nomen ejus est,/ crescens mirabiliter in consummatione./",
+        "SYN": "месяц называется по имени ее; она дивно возрастает в своем изменении;",
+        "NEO": "C’est d’elle que le mois prend son nom ; elle croît merveilleusement dans ses diverses phases. C’est la tente d’un camp dans les hauteurs des cieux ; elle brille au firmament du ciel.",
+        "NAB": "As its name says, each month it renews itself; how wondrous in this change!",
+        "VAT_ES": "De ella recibe su nombre el mes; ella crece admirablemente en sus ciclos, es la insignia de los ejércitos acampados en las alturas, que brilla en el firmamento del cielo.",
+        "CEI": "Da essa il mese prende nome, mirabilmente crescendo secondo le fasi. È un'insegna per le milizie nell'alto splendendo nel firmamento del cielo."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "LXX": "κάλλος οὐρανοῦ, δόξα ἄστρων, κόσμος φωτίζων, ἐν ὑψίστοις Κύριος·",
+        "VUL": "Vas castrorum in excelsis,/ in firmamento cæli resplendens gloriose./",
+        "SYN": "это - глава вышних строев; она сияет на тверди небесной;",
+        "NEO": "La beauté du ciel, c’est l’éclat des étoiles, parure éclatante dans les hauteurs du Seigneur.",
+        "NAB": "The beauty, the glory, of the heavens are the stars that adorn with their sparkling the heights of God,",
+        "VAT_ES": "La gloria de los astros es la hermosura del cielo, un adorno luminoso en las alturas del Señor:",
+        "CEI": "Bellezza del cielo la gloria degli astri, ornamento splendente nelle altezze del Signore."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "LXX": "ἐν λόγοις ἁγίοις στήσονται κατὰ κρίμα, καὶ οὐ μὴ ἐκλυθῶσιν ἐν φυλακαῖς αὐτῶν.",
+        "VUL": "Species cæli gloria stellarum :/ mundum illuminans in excelsis Dominus./",
+        "SYN": "красота неба, слава звезд, блестящее украшение, владыка на высотах!",
+        "NEO": "Selon l’ordre du Saint, elles se tiennent à la place assignée, et ne se fatiguent pas dans leurs veilles.",
+        "NAB": "At whose command they keep their place and never relax in their vigils. A weapon against the flood waters stored on high, lighting up the firmament by its brilliance,",
+        "VAT_ES": "por la palabra del Santo, se mantienen en orden y no defeccionan de sus puestos de guardia.",
+        "CEI": "Si comportano secondo gli ordini del Santo, non si stancano al loro posto di sentinelle."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "LXX": "ἴδε τόξον, καὶ εὐλόγησον τὸν ποιήσαντα αὐτό, σφόδρα ὡραῖον ἐν τῷ αὐγάσματι αὐτοῦ·",
+        "VUL": "In verbis Sancti stabunt ad judicium,/ et non deficient in vigiliis suis.]",
+        "SYN": "По слову Святаго звезды стоят по чину и не устают на страже своей.",
+        "NEO": "Vois l’arc-en-ciel et bénis Celui qui l’a fait ; il est bien beau dans sa splendeur !",
+        "NAB": "Behold the rainbow! Then bless its Maker, for majestic indeed is its splendor;",
+        "VAT_ES": "Mira el arco iris y bendice al que lo hizo: &iexcl;qué magnífico esplendor!",
+        "CEI": "Osserva l'arcobaleno e benedici colui che l'ha fatto, è bellissimo nel suo splendore."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "LXX": "ἐγύρωσεν οὐρανὸν ἐν κυκλώσει δόξης, χεῖρες Ὑψίστου ἐτάνυσαν αὐτό.",
+        "VUL": "[Vide arcum, et benedic eum qui fecit illum :/ valde speciosus est in splendore suo./",
+        "SYN": "Взгляни на радугу, и прославь Сотворившего ее: прекрасна она в сиянии своем!",
+        "NEO": "Il embrasse le ciel dans son cercle radieux ; ce sont les mains du Très-Haut qui le tendent.",
+        "NAB": "It spans the heavens with its glory, this bow bent by the mighty hand of God.",
+        "VAT_ES": "El traza en el cielo una aureola de gloria; lo han tendido las manos del Altísimo.",
+        "CEI": "Avvolge il cielo con un cerchio di gloria, l'hanno teso le mani dell'Altissimo."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "LXX": "προστάγματι αὐτοῦ κατέπαυσεν χιόνα, καὶ ταχύνει ἀστραπὰς κρίματος αὐτοῦ·",
+        "VUL": "Gyravit cælum in circuitu gloriæ suæ :/ manus Excelsi aperuerunt illum./",
+        "SYN": "Величественным кругом своим она обнимает небо; руки Всевышнего распростерли ее.",
+        "NEO": "Par son ordre, la neige se précipite, et les éclairs se pressent, exécuteurs de ses jugements.",
+        "NAB": "His rebuke marks out the path for the lightning, and speeds the arrows of his judgment to their goal.",
+        "VAT_ES": "A una orden suya cae la nieve, y él lanza los rayos que ejecutan sus decretos;",
+        "CEI": "Con un comando invia la neve, fa guizzare i fulmini del suo giudizio."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "LXX": "διὰ τοῦτο ἠνεῴχθησαν θησαυροί, καὶ ἐξέπτησαν νεφέλαι ὡς πετεινά·",
+        "VUL": "Imperio suo acceleravit nivem,/ et accelerat coruscationes emittere judicii sui./",
+        "SYN": "Повелением Его скоро сыплется снег, и быстро сверкают молнии суда Его.",
+        "NEO": "C’est pourquoi ses trésors s’ouvrent, et les nuées volent comme des oiseaux.",
+        "NAB": "At it the storehouse is opened, and like vultures the clouds hurry forth.",
+        "VAT_ES": "es así como se abren las reservas y las nubes vuelan como pájaros.",
+        "CEI": "Così si aprono i depositi e le nubi volano via come uccelli."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "LXX": "ἐν μεγαλείῳ αὐτοῦ ἴσχυσεν νεφέλας, καὶ διεθρύβησαν λίθοι χαλάζης.",
+        "VUL": "Propterea aperti sunt thesauri,/ et evolaverunt nebulæ sicut aves./",
+        "SYN": "Отверзаются сокровищницы и вылетают из них облака, как птицы.",
+        "NEO": "Par sa puissance, il donne la force aux nuées, et la grêle tombe comme des éclats de pierre.",
+        "NAB": "In his majesty he gives the storm its power and breaks off the hailstones.",
+        "VAT_ES": "Con su gran poder, condensa las nubes, que se pulverizan en granizo."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "LXX": "καὶ ἐν ὀπτασίαις αὐτοῦ σαλευθήσεται ὄρη, ἐν θελήματι πνεύσεται νότος.",
+        "VUL": "In magnitudine sua posuit nubes,/ et confracti sunt lapides grandinis./",
+        "SYN": "Могуществом Своим Он укрепляет облака, и разбиваются камни града;",
+        "NEO": "La voix de son tonnerre fait trembler la terre, et, quand il se montre, les montagnes chancellent.",
+        "NAB": "The thunder of his voice makes the earth writhe; before his might the mountains quake."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "LXX": "φωνὴ βροντῆς αὐτοῦ ὠνείδισεν γῆν, καὶ καταιγὶς βορέου καὶ συστροφὴ πνεύματος. ὡς πετεινὰ καθιπτάμενα πάσσει χιόνα, καὶ ὡς ἀκρὶς καταλύουσα ἡ κατάβασις αὐτῆς·",
+        "VUL": "In conspectu ejus commovebuntur montes,/ et in voluntate ejus aspirabit notus./",
+        "SYN": "от взора Его потрясаются горы, и по изволению Его веет южный ветер.",
+        "NEO": "A sa volonté, le vent du midi souffle, l’aquilon se déchaîne et le tourbillon fait rage. Il répand la neige comme des oiseaux qui s’abattent ; elle descend comme la sauterelle qui fait halte.",
+        "NAB": "A word from him drives on the south wind, the angry north wind, the hurricane and the storm."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "LXX": "κάλλος λευκότητος αὐτῆς ἐκθαυμάσει ὀφθαλμός, καὶ ἐπὶ τοῦ ὑετοῦ αὐτῆς ἐκστήσεται καρδία.",
+        "VUL": "Vox tonitrui ejus verberavit terram,/ tempestas aquilonis, et congregatio spiritus :/",
+        "SYN": "Голос грома Его приводит в трепет землю, и северная буря и вихрь.",
+        "NEO": "L’œil admire la beauté de sa blancheur, et le cœur est émerveillé de sa chute.",
+        "NAB": "He sprinkles the snow like fluttering birds; it comes to settle like swarms of locusts.",
+        "VAT_ES": "Como bandada de pájaros, él esparce la nieve y, al bajar, ella se posa como la langosta; el resplandor de su blancura deslumbra los ojos y el espíritu se embelesa al verla caer.",
+        "CEI": "Fa scendere la neve come uccelli che si posano, come cavallette che si posano è la sua discesa; l'occhio ammira la bellezza del suo candore e il cuore stupisce nel vederla fioccare."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "LXX": "καὶ πάχνην ὡς ἅλα ἐπὶ γῆς χέει, καὶ παγεῖσα γίνεται σκολόπων ἄκρα.",
+        "VUL": "et sicut avis deponens ad sedendum, aspergit nivem,/ et sicut locusta demergens descensus ejus./",
+        "SYN": "Он сыплет снег, подобно летящим вниз крылатым, и ниспадение его - как опускающаяся саранча;",
+        "NEO": "Il verse le givre sur la terre comme du sel, et la gelée le durcit en pointes d’épines.",
+        "NAB": "Its shining whiteness blinds the eyes, the mind is baffled by its steady fall.",
+        "VAT_ES": "Como sal sobre la tierra, él derrama la escarcha y, al congelarse, ella se convierte en espinas punzantes.",
+        "CEI": "Riversa sulla terra la brina come il sale, che gelandosi forma come tante punte di spine."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "LXX": "ψυχρὸς ἄνεμος βορέης πνεύσει, καὶ παγήσεται κρύσταλλος ἀφ’ ὕδατος· ἐπὶ πᾶσαν συναγωγὴν ὕδατος καταλύσει, καὶ ὡς θώρακα ἐνδύσεται τὸ ὕδωρ.",
+        "VUL": "Pulchritudinem candoris ejus admirabitur oculus,/ et super imbrem ejus expavescet cor./",
+        "SYN": "красоте белизны его удивляется глаз, и ниспадению его изумляется сердце.",
+        "NEO": "Le vent froid du nord se met à souffler, et l’eau se durcit en glace ; cette glace s’étend immobile sur tout amas d’eau, et revêt l’eau comme d’une cuirasse.",
+        "NAB": "He scatters frost like so much salt; it shines like blossoms on the thornbush.",
+        "VAT_ES": "Sopla el viento frío del norte y el hielo se congela sobre el agua, se posa sobre toda masa de agua y la reviste como de una coraza,",
+        "CEI": "Soffia la gelida tramontana, sull'acqua si condensa il ghiaccio; esso si posa sull'intera massa d'acqua, che si riveste come di corazza."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "LXX": "καταφάγεται ὄρη καὶ ἔρημον ἐκκαύσει, καὶ ἀποσβέσει χλόην ὡς πῦρ.",
+        "VUL": "Gelu sicut salem effundet super terram :/ et dum gelaverit, fiet tamquam cacumina tribuli./",
+        "SYN": "И как соль, рассыпает Он по земле иней, который, замерзая, делается остроконечным.",
+        "NEO": "Le Seigneur dévore les montagnes et embrase le désert, il brûle la verdure comme le feu.",
+        "NAB": "Cold northern blasts he sends that turn the ponds to lumps of ice. He freezes over every body of water, and clothes each pool with a coat of mail.",
+        "VAT_ES": "Otro viento devora las montañas, abrasa el desierto y consume la hierba como un fuego.",
+        "CEI": "Inaridisce i monti e brucia il deserto; divora l'erba come un fuoco."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "LXX": "ἴασις πάντων κατὰ σπουδὴν ὁμίχλη, δρόσος ἀπαντῶσα ἀπὸ καύσωνος ἱλαρώσει.",
+        "VUL": "Frigidus ventus aquilo flavit,/ et gelavit crystallus ab aqua :/ super omnem congregationem aquarum requiescet,/ et sicut lorica induet se aquis :/",
+        "SYN": "Подует северный холодный ветер, - и из воды делается лед: он расстилается на всяком вместилище вод, и вода облекается как бы в латы;",
+        "NEO": "De tous ces maux le remède est un nuage qui arrive rapidement ; une rosée qui survient console de la chaleur brûlante.",
+        "NAB": "When the mountain growth is scorched with heat, and the flowering plains as though by flames,",
+        "VAT_ES": "Una niebla repentina pone remedio a todo eso, y el rocío refresca después del viento abrasador.",
+        "CEI": "Il rimedio di tutto, un annuvolamento improvviso, l'arrivo della rugiada ristora dal caldo."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "LXX": "λογισμῷ αὐτοῦ ἐκόπασεν ἄβυσσον, καὶ ἐφύτευσεν αὐτὴν Ἰησοῦς.",
+        "VUL": "et devorabit montes, et exuret desertum,/ et extinguet viride, sicut igne./",
+        "SYN": "поядает горы, и пожигает пустыню, и, как огонь, опаляет траву.",
+        "NEO": "Selon son dessein, il a dompté l’abîme, et il y a planté des îles.",
+        "NAB": "The dripping clouds restore them all, and the scattered dew enriches the parched land.",
+        "VAT_ES": "Conforme a su designio, él dominó el Abismo, y allí plantó las islas.",
+        "CEI": "Dio con la sua parola ha domato l'abisso e vi ha piantato isole."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "LXX": "οἱ πλέοντες τὴν θάλασσαν διηγοῦνται τὸν κίνδυνον αὐτῆς, καὶ ἀκοαῖς ὠτίων ἡμῶν θαυμάζομεν·",
+        "VUL": "Medicina omnium in festinatione nebulæ :/ et ros obvians ab ardore venienti humilem efficiet eum./",
+        "SYN": "Но скорым исцелением всему служит туман; появляющаяся роса прохлаждает от зноя.",
+        "NEO": "Ceux qui naviguent sur la mer en racontent les périls, et, en entendant leurs récits, nous sommes étonnés.",
+        "NAB": "His is the plan that calms the deep, and plants the islands in the sea.",
+        "VAT_ES": "Los que navegan por el mar cuentan sus peligros y sus relatos nos parecen increíbles:",
+        "CEI": "I naviganti parlano dei pericoli del mare, a sentirli con i nostri orecchi restiamo stupiti;"
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "LXX": "καὶ ἐκεῖ τὰ παράδοξα καὶ θαυμάσια ἔργα, ποικιλία παντὸς ζῴου, κτίσις κητῶν.",
+        "VUL": "In sermone ejus siluit ventus,/ et cogitatione sua placavit abyssum :/ et plantavit in illa Dominus insulas./",
+        "SYN": "Повелением Своим Господь укрощает бездну и насаждает на ней острова.",
+        "NEO": "Là sont des créatures étranges et merveilleuses, des animaux de toutes sortes et la race des monstres marins.",
+        "NAB": "Those who go down to the sea tell part of its story, and when we hear them we are thunderstruck;",
+        "VAT_ES": "allí hay cosas extrañas y maravillosas, animales de todas clases y monstruos marinos.",
+        "CEI": "là ci sono anche cose singolari e stupende, esseri viventi di ogni specie e mostri marini."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "LXX": "δι’ αὐτὸν εὐωδία τέλος αὐτοῦ, καὶ ἐν λόγῳ αὐτοῦ σύνκειται πάντα.",
+        "VUL": "Qui navigant mare enarrent pericula ejus,/ et audientes auribus nostris admirabimur./",
+        "SYN": "Плавающие по морю рассказывают об опасностях на нем, и мы дивимся тому, что слышим ушами нашими:",
+        "NEO": "Par le Seigneur, toute chose marche heureusement à sa fin, et tout subsiste par sa parole.",
+        "NAB": "In it are his creatures, stupendous, amazing, all kinds of life, and the monsters of the deep.",
+        "VAT_ES": "Gracias a él, su mensajero llega a buen puerto, y por su palabra se ordenan todas las cosas.",
+        "CEI": "Per lui il messaggero cammina facilmente, tutto procede secondo la sua parola."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "LXX": "πολλὰ ἐροῦμεν καὶ οὐ μὴ ἀφικώμεθα, ⸆ καὶ συντέλεια λόγων Τὸ πᾶν ἐστιν αὐτός.",
+        "VUL": "Illic præclara opera et mirabilia,/ varia bestiarum genera, et omnium pecorum, et creatura belluarum./",
+        "SYN": "ибо там необычайные и чудные дела, разнообразие всяких животных, роды чудовищ.",
+        "NEO": "Nous pourrions dire beaucoup, et nous ne l’atteindrions pas ; Le résumé de notre discours : Il est le tout.",
+        "NAB": "For him each messenger succeeds, and at his bidding accomplishes his will.",
+        "VAT_ES": "Por mucho que digamos, nunca acabaremos; en una sola palabra: él lo es todo.",
+        "CEI": "Potremmo dir molte cose e mai finiremmo; ma per concludere: \"Egli è tutto!\"."
+      }
+    },
+    "28": {
+      "seq": 28,
+      "v_in": {
+        "MT": 28,
+        "VUL": 28,
+        "LXX": 28
+      },
+      "text": {
+        "LXX": "δοξάζοντες ποῦ ἰσχύσωμεν; αὐτὸς γὰρ ὁ μέγας παρὰ πάντα τὰ ἔργα αὐτοῦ.",
+        "VUL": "Propter ipsum confirmatus est itineris finis,/ et in sermone ejus composita sunt omnia.]",
+        "SYN": "Чрез Него все успешно достигает своего назначения, и все держится словом Его.",
+        "NEO": "Voulant le louer, où en trouverions-nous la force ? Il est le Tout-Puissant, supérieur à toutes ses œuvres.",
+        "NAB": "More than this we need not add; let the last word be, he is all in all!",
+        "VAT_ES": "&iquest;Dónde hallar la fuerza para glorificarlo? Porque él es el Grande, superior a todas sus obras,",
+        "CEI": "Come potremmo avere la forza per lodarlo? Egli, il Grande, al di sopra di tutte le sue opere."
+      }
+    },
+    "29": {
+      "seq": 29,
+      "v_in": {
+        "MT": 29,
+        "VUL": 29,
+        "LXX": 29
+      },
+      "text": {
+        "LXX": "φοβερὸς Κύριος καὶ σφόδρα μέγας, καὶ θαυμαστὴ ἡ δυναστεία αὐτοῦ.",
+        "VUL": "[Multa dicemus, et deficiemus in verbis :/ consummatio autem sermonum ipse est in omnibus./",
+        "SYN": "Многое можем мы сказать, и, однако же, не постигнем Его, и конец слов: Он есть всё.",
+        "NEO": "Le Seigneur est terrible et souverainement grand, et merveilleuse est sa puissance.",
+        "NAB": "Let us praise him the more, since we cannot fathom him, for greater is he than all his works;",
+        "VAT_ES": "Señor temible y soberanamente grande: su poder es admirable.",
+        "CEI": "Il Signore è terribile e molto grande, e meravigliosa è la sua potenza."
+      }
+    },
+    "30": {
+      "seq": 30,
+      "v_in": {
+        "MT": 30,
+        "VUL": 30,
+        "LXX": 30
+      },
+      "text": {
+        "LXX": "δοξάζοντες Κύριον ὑψώσατε καθ’ ὅσον ἂν δύνησθε, ὑπερέξει γὰρ καὶ ἔτι· καὶ ὑψοῦντες αὐτὸν πληθύνατε ἐν ἰσχύι· μὴ κοπιᾶτε, οὐ γὰρ μὴ ἀφίκησθε.",
+        "VUL": "Gloriantes ad quid valebimus ?/ ipse enim omnipotens super omnia opera sua./",
+        "SYN": "Где возьмем силу, чтобы прославить Его? ибо Он превыше всех дел Своих.",
+        "NEO": "En louant le Seigneur, exaltez-le tant que vous pourrez, car il sera toujours plus haut encore. Pour l’exalter, rassemblez toutes vos forces ; ne vous lassez pas, car vous ne pourrez l’atteindre.",
+        "NAB": "Awful indeed is the LORD'S majesty, and wonderful is his power.",
+        "VAT_ES": "&iexcl;Glorifiquen al Señor, exáltenlo cuanto puedan, y él siempre estará por encima! Para exaltarlo, redoblen sus fuerzas, no se cansen, porque nunca acabarán.",
+        "CEI": "Nel glorificare il Signore esaltatelo quanto potete, perché ancora più alto sarà. Nell'innalzarlo moltiplicate la vostra forza, non stancatevi, perché mai finirete."
+      }
+    },
+    "31": {
+      "seq": 31,
+      "v_in": {
+        "MT": 31,
+        "VUL": 31,
+        "LXX": 31
+      },
+      "text": {
+        "LXX": "τίς ἑόρακεν αὐτὸν καὶ ἐκδιηγήσεται; καὶ τίς μεγαλυνεῖ αὐτὸν καθώς ἐστιν;",
+        "VUL": "Terribilis Dominus, et magnus vehementer,/ et mirabilis potentia ipsius./",
+        "SYN": "Страшен Господь и весьма велик, и дивно могущество Его!",
+        "NEO": "Qui l’a vu et pourrait en discourir ? Qui est capable de le louer tel qu’il est ?",
+        "NAB": "Lift up your voices to glorify the LORD, though he is still beyond your power to praise;",
+        "VAT_ES": "&iquest;Quién lo ha visto, para poder describirlo? &iquest;Quién la alabará conforme a lo que es?",
+        "CEI": "Chi lo ha contemplato e lo descriverà? Chi può magnificarlo come egli è?"
+      }
+    },
+    "32": {
+      "seq": 32,
+      "v_in": {
+        "MT": 32,
+        "VUL": 32,
+        "LXX": 32
+      },
+      "text": {
+        "LXX": "πολλὰ ἀπόκρυφά ἐστιν μείζονα τούτων, ὀλίγα γὰρ ἑωράκαμεν τῶν ἔργων αὐτοῦ.",
+        "VUL": "Glorificantes Dominum quantumcumque potueritis,/ supervalebit enim adhuc : et admirabilis magnificentia ejus./",
+        "SYN": "Прославляя Господа, превозносите Его, сколько можете, но и затем Он будет превосходнее;",
+        "NEO": "Beaucoup de merveilles cachées sont plus grandes encore, car nous ne voyons qu’un petit nombre de ses œuvres.",
+        "NAB": "Extol him with renewed strength, and weary not, though you cannot reach the end:",
+        "VAT_ES": "Hay muchas cosas ocultas más grandes todavía, porque sólo hemos visto algunas de sus obras.",
+        "CEI": "Ci sono molte cose nascoste più grandi di queste; noi contempliamo solo poche delle sue opere."
+      }
+    },
+    "33": {
+      "seq": 33,
+      "v_in": {
+        "MT": 33,
+        "VUL": 33,
+        "LXX": 33
+      },
+      "text": {
+        "LXX": "πάντα γὰρ ἐποίησεν ὁ κύριος, καὶ τοῖς εὐσεβέσιν ἔδωκεν σοφίαν.",
+        "VUL": "Benedicentes Dominum, exaltate illum quantum potestis :/ major enim est omni laude./",
+        "SYN": "и, величая Его, прибавьте силы: но не трудитесь, ибо не постигнете.",
+        "NEO": "Le Seigneur a tout fait, et il donne la sagesse aux hommes pieux.",
+        "NAB": "For who can see him and describe him? or who can praise him as he is?",
+        "VAT_ES": "El Señor ha hecho todas las cosas y a los hombres buenos les dio la sabiduría.",
+        "CEI": "Il Signore infatti ha creato ogni cosa, ha dato la sapienza ai pii."
+      }
+    }
+  }
+}

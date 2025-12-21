@@ -1,0 +1,350 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "I_COR_006",
+  "book_key": "I_COR",
+  "sequence": 6,
+  "chapter_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+  },
+  "testament": "Novum_Testamentum",
+  "section": "Epistolae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "BYZ": "Τολμᾷ τις ὑμῶν, πρᾶγμα ἔχων πρὸς τὸν ἕτερον, κρίνεσθαι ἐπὶ τῶν ἀδίκων, καὶ οὐχὶ ἐπὶ τῶν ἁγίων;",
+        "VUL": "Audet aliquis vestrum habens negotium adversus alterum, judicari apud iniquos, et non apud sanctos ?",
+        "SYN": "Как смеет кто у вас, имея дело с другим, судиться у нечестивых, а не у святых?",
+        "NEO": "Quoi ! il y en a parmi vous qui, ayant un différend avec un autre, osent aller en jugement devant les injustes, et non devant les saints !",
+        "NAB": "How can any one of you with a case against another dare to bring it to the unjust for judgment instead of to the holy ones?",
+        "VAT_ES": "&iexcl;Cómo es posible que cuando uno de ustedes tiene algún conflicto con otro, se atreve a reclamar justicia a los injustos, en lugar de someterse al juicio de los santos?",
+        "CEI": "Riguardo poi a questo servizio in favore dei santi, è superfluo che ve ne scriva."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "BYZ": "Οὐκ οἴδατε ὅτι οἱ ἅγιοι τὸν κόσμον κρινοῦσιν; Καὶ εἰ ἐν ὑμῖν κρίνεται ὁ κόσμος, ἀνάξιοί ἐστε κριτηρίων ἐλαχίστων;",
+        "VUL": "an nescitis quoniam sancti de hoc mundo judicabunt ? et si in vobis judicabitur mundus, indigni estis qui de minimis judicetis ?",
+        "SYN": "Разве не знаете, что святые будут судить мир? Если же вами будет судим мир, то неужели вы недостойны судить маловажные _дела?_",
+        "NEO": "Ne savez-vous pas que les saints jugeront le monde ? Et si c’est par vous que le monde doit être jugé, êtes-vous indignes de rendre des jugements de moindre importance ?",
+        "NAB": "Do you not know that the holy ones will judge the world? If the world is to be judged by you, are you unqualified for the lowest law courts?",
+        "VAT_ES": "&iquest;No saben ustedes que los santos juzgarán al mundo? Y si el mundo va a ser juzgado por ustedes, &iquest;cómo no van a ser capaces de juzgar asuntos de mínima importancia?",
+        "CEI": "Conosco infatti bene la vostra buona volontà, e ne faccio vanto con i Macèdoni dicendo che l'Acaia è pronta fin dallo scorso anno e già molti sono stati stimolati dal vostro zelo."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "BYZ": "Οὐκ οἴδατε ὅτι ἀγγέλους κρινοῦμεν; Μήτι γε βιωτικά;",
+        "VUL": "Nescitis quoniam angelos judicabimus ? quanto magis sæcularia ?",
+        "SYN": "Разве не знаете, что мы будем судить ангелов, не тем ли более _дела_ житейские?",
+        "NEO": "Ne savez-vous pas que nous jugerons les anges ? Pourquoi pas, à plus forte raison, les affaires de cette vie ?",
+        "NAB": "Do you not know that we will judge angels? Then why not everyday matters?",
+        "VAT_ES": "&iquest;Ignoran que vamos a juzgar a los mismos ángeles? Con mayor razón entonces, los asuntos de esta vida.",
+        "CEI": "I fratelli poi li ho mandati perché il nostro vanto per voi su questo punto non abbia a dimostrarsi vano, ma siate realmente pronti, come vi dicevo, perché"
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "BYZ": "Βιωτικὰ μὲν οὖν κριτήρια ἐὰν ἔχητε, τοὺς ἐξουθενημένους ἐν τῇ ἐκκλησίᾳ, τούτους καθίζετε.",
+        "VUL": "Sæcularia igitur judicia si habueritis : contemptibiles, qui sunt in ecclesia, illos constituite ad judicandum.",
+        "SYN": "А вы, когда имеете житейские тяжбы, поставляете _своими_ _судьями_ ничего не значащих в церкви.",
+        "NEO": "Quand donc vous avez des jugements à faire rendre sur les affaires de cette vie, établissez pour les juger ceux qui sont les moins considérés dans l’Église !",
+        "NAB": "If, therefore, you have courts for everyday matters, do you seat as judges people of no standing in the church?",
+        "VAT_ES": "&iexcl;Y pensar que cuando ustedes tienen litigios, buscan como jueces a los que no son nadie para la Iglesia!",
+        "CEI": "non avvenga che, venendo con me alcuni Macèdoni, vi trovino impreparati e noi dobbiamo arrossire, per non dire anche voi, di questa nostra fiducia."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "BYZ": "Πρὸς ἐντροπὴν ὑμῖν λέγω. Οὕτως οὐκ ἔνι ἐν ὑμῖν σοφὸς οὐδὲ εἷς, ὃς δυνήσεται διακρῖναι ἀνὰ μέσον τοῦ ἀδελφοῦ αὐτοῦ,",
+        "VUL": "Ad verecundiam vestram dico. Sic non est inter vos sapiens quisquam, qui possit judicare inter fratrem suum ?",
+        "SYN": "К стыду вашему говорю: неужели нет между вами ни одного разумного, который мог бы рассудить между братьями своими?",
+        "NEO": "Je le dis à votre honte : ainsi il n’y a pas un homme sage parmi vous, pas un seul qui puisse se prononcer entre ses frères !",
+        "NAB": "I say this to shame you. Can it be that there is not one among you wise enough to be able to settle a case between brothers?",
+        "VAT_ES": "Lo digo para avergonzarlos: &iexcl;por lo visto, no hay entre ustedes ni siquiera un hombre sensato, que sea capaz de servir de árbitro entre sus hermanos!",
+        "CEI": "Ho quindi ritenuto necessario invitare i fratelli a recarsi da voi prima di me, per organizzare la vostra offerta già promessa, perché essa sia pronta come una vera offerta e non come una spilorceria."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "BYZ": "ἀλλὰ ἀδελφὸς μετὰ ἀδελφοῦ κρίνεται, καὶ τοῦτο ἐπὶ ἀπίστων;",
+        "VUL": "Sed frater cum fratre judicio contendit : et hoc apud infideles ?",
+        "SYN": "Но брат с братом судится, и притом перед неверными.",
+        "NEO": "Mais un frère est en procès avec un frère, et cela devant des infidèles !",
+        "NAB": "But rather brother goes to court against brother, and that before unbelievers?",
+        "VAT_ES": "&iexcl;Un hermano pleitea con otro, y esto, delante de los que no creen!",
+        "CEI": "Tenete a mente che chi semina scarsamente, scarsamente raccoglierà e chi semina con larghezza, con larghezza raccoglierà."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "BYZ": "Ἤδη μὲν οὖν ὅλως ἥττημα ὑμῖν ἐστιν, ὅτι κρίματα ἔχετε μεθ’ ἑαυτῶν. Διὰ τί οὐχὶ μᾶλλον ἀδικεῖσθε; Διὰ τί οὐχὶ μᾶλλον ἀποστερεῖσθε;",
+        "VUL": "Jam quidem omnino delictum est in vobis, quod judicia habetis inter vos. Quare non magis injuriam accipitis ? quare non magis fraudem patimini ?",
+        "SYN": "И то уже весьма унизительно для вас, что вы имеете тяжбы между собою. Для чего бы вам лучше не оставаться обиженными? для чего бы вам лучше не терпеть лишения?",
+        "NEO": "C’est déjà certes un défaut pour vous que d’avoir des procès les uns avec les autres. Pourquoi ne souffrez-vous pas plutôt quelque injustice ? Pourquoi ne vous laissez-vous pas plutôt dépouiller ?",
+        "NAB": "Now indeed (then) it is, in any case, a failure on your part that you have lawsuits against one another. Why not rather put up with injustice? Why not rather let yourselves be cheated?",
+        "VAT_ES": "Ya está mal que haya litigios entre ustedes: &iquest;acaso no es preferible sufrir la injusticia o ser despojado?",
+        "CEI": "Ciascuno dia secondo quanto ha deciso nel suo cuore, non con tristezza né per forza, perché Dio ama chi dona con gioia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "BYZ": "Ἀλλὰ ὑμεῖς ἀδικεῖτε καὶ ἀποστερεῖτε, καὶ ταῦτα ἀδελφούς.",
+        "VUL": "Sed vos injuriam facitis, et fraudatis : et hoc fratribus.",
+        "SYN": "Но вы _сами_ обижаете и отнимаете, и притом у братьев.",
+        "NEO": "Mais c’est vous-mêmes qui commettez l’injustice et qui dépouillez les autres et ce sont vos frères !",
+        "NAB": "Instead, you inflict injustice and cheat, and this to brothers.",
+        "VAT_ES": "Pero no, ustedes mismos son los que cometen injusticias y defraudan a los demás, &iexcl;y esto entre hermanos!",
+        "CEI": "Del resto, Dio ha potere di far abbondare in voi ogni grazia perché, avendo sempre il necessario in tutto, possiate compiere generosamente tutte le opere di bene,"
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "BYZ": "Ἢ οὐκ οἴδατε ὅτι ἄδικοι βασιλείαν θεοῦ οὐ κληρονομήσουσιν; Μὴ πλανᾶσθε· οὔτε πόρνοι, οὔτε εἰδωλολάτραι, οὔτε μοιχοί, οὔτε μαλακοί, οὔτε ἀρσενοκοῖται,",
+        "VUL": "An nescitis quia iniqui regnum Dei non possidebunt ? Nolite errare : neque fornicarii, neque idolis servientes, neque adulteri,",
+        "SYN": "Или не знаете, что неправедные Царства Божия не наследуют? Не обманывайтесь: ни блудники, ни идолослужители, ни прелюбодеи, ни малакии, ни мужеложники,",
+        "NEO": "Ne savez-vous pas que les injustes ne posséderont pas le royaume de Dieu ? Ne vous y trompez pas : ni les impudiques, ni les idolâtres, ni les adultères,+ 6:9 VI, 9-10. Ne posséderont pas; litt. \\+qt n’hériteront pas\\+qt* : l’éternelle félicité est conçue comme l’héritage des enfants de Dieu (Gal. v, 21 ; Eph. i, 11).*",
+        "NAB": "Do you not know that the unjust will not inherit the kingdom of God? Do not be deceived; neither fornicators nor idolaters nor adulterers nor boy prostitutes nor practicing homosexuals",
+        "VAT_ES": "&iquest;Ignoran que los injustos no heredarán el Reino de Dios? No se hagan ilusiones: ni los inmorales, ni los idólatras, ni los adúlteros, ni los afeminados, ni los pervertidos,",
+        "CEI": "come sta scritto: ha largheggiato, ha dato ai poveri; la sua giustizia dura in eterno."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "BYZ": "οὔτε πλεονέκται, οὔτε κλέπται, οὔτε μέθυσοι, οὐ λοίδοροι, οὐχ ἅρπαγες, βασιλείαν θεοῦ οὐ κληρονομήσουσιν.",
+        "VUL": "neque molles, neque masculorum concubitores, neque fures, neque avari, neque ebriosi, neque maledici, neque rapaces regnum Dei possidebunt.",
+        "SYN": "ни воры, ни лихоимцы, ни пьяницы, ни злоречивые, ни хищники -- Царства Божия не наследуют.",
+        "NEO": "ni les efféminés, ni les infâmes, ni les voleurs, ni les avares, ni les ivrognes, ni les calomniateurs, ni les rapaces ne posséderont le royaume de Dieu.",
+        "NAB": "nor thieves nor the greedy nor drunkards nor slanderers nor robbers will inherit the kingdom of God.",
+        "VAT_ES": "ni los ladrones, ni los avaros, ni los bebedores, ni los difamadores, ni los usurpadores heredarán el Reino de Dios.",
+        "CEI": "Colui che somministra il seme al seminatore e il pane per il nutrimento, somministrerà e moltiplicherà anche la vostra semente e farà crescere i frutti della vostra giustizia."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "BYZ": "Καὶ ταῦτά τινες ἦτε· ἀλλὰ ἀπελούσασθε, ἀλλὰ ἡγιάσθητε, ἀλλ’ ἐδικαιώθητε ἐν τῷ ὀνόματι τοῦ κυρίου Ἰησοῦ, καὶ ἐν τῷ πνεύματι τοῦ θεοῦ ἡμῶν.",
+        "VUL": "Et hæc quidam fuistis : sed abluti estis, sed sanctificati estis, sed justificati estis in nomine Domini nostri Jesu Christi, et in Spiritu Dei nostri.",
+        "SYN": "И такими были некоторые из вас; но омылись, но освятились, но оправдались именем Господа нашего Иисуса Христа и Духом Бога нашего.",
+        "NEO": "Voilà pourtant ce que vous étiez, du moins* quelques-uns d’entre vous ; mais vous avez été lavés, mais vous avez été sanctifiés, mais vous avez été justifiés au nom du Seigneur Jésus-Christ et par l’Esprit de notre Dieu.",
+        "NAB": "That is what some of you used to be; but now you have had yourselves washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and in the Spirit of our God.",
+        "VAT_ES": "Algunos de ustedes fueron así, pero ahora han sido purificados, santificados y justiciados en el nombre de nuestro Señor Jesucristo y por Espíritu de nuestro Dios.",
+        "CEI": "Così sarete ricchi per ogni generosità, la quale poi farà salire a Dio l'inno di ringraziamento per mezzo nostro."
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "BYZ": "¶Πάντα μοι ἔξεστιν, ἀλλ’ οὐ πάντα συμφέρει· πάντα μοι ἔξεστιν, ἀλλ’ οὐκ ἐγὼ ἐξουσιασθήσομαι ὑπό τινος.",
+        "VUL": "Omnia mihi licent, sed non omnia expediunt : omnia mihi licent, sed ego sub nullius redigar potestate.",
+        "SYN": "Все мне позволительно, но не все полезно; все мне позволительно, но ничто не должно обладать мною.",
+        "NEO": "Tout m’est permis, mais tout n’est pas utile ; tout m’est permis, mais moi, je ne me laisserai dominer par quoi que ce soit.",
+        "NAB": "\"Everything is lawful for me,\" but not everything is beneficial. \"Everything is lawful for me,\" but I will not let myself be dominated by anything.",
+        "VAT_ES": "«Todo me está permitido», pero no todo es conveniente. Todo me está permitido», pero no me dejaré dominar por nada.",
+        "CEI": "Perché l'adempimento di questo servizio sacro non provvede soltanto alle necessità dei santi, ma ha anche maggior valore per i molti ringraziamenti a Dio."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "BYZ": "Τὰ βρώματα τῇ κοιλίᾳ, καὶ ἡ κοιλία τοῖς βρώμασιν· ὁ δὲ θεὸς καὶ ταύτην καὶ ταῦτα καταργήσει. Τὸ δὲ σῶμα οὐ τῇ πορνείᾳ, ἀλλὰ τῷ κυρίῳ, καὶ ὁ κύριος τῷ σώματι·",
+        "VUL": "Esca ventri, et venter escis : Deus autem et hunc et has destruet : corpus autem non fornicationi, sed Domino : et Dominus corpori.",
+        "SYN": "Пища для чрева, и чрево для пищи; но Бог уничтожит и то и другое. Тело же не для блуда, но для Господа, и Господь для тела.",
+        "NEO": "Les aliments sont pour le ventre, et le ventre pour les aliments, et Dieu détruira l’un comme les autres. Mais le corps n’est pas pour l’impudicité ; il est pour le Seigneur, et le Seigneur pour le corps.",
+        "NAB": "\"Food for the stomach and the stomach for food,\" but God will do away with both the one and the other. The body, however, is not for immorality, but for the Lord, and the Lord is for the body;",
+        "VAT_ES": "Los alimentos son para el estómago y el estómago para los alimentos, y Dios destruirá a ambos. Pero el cuerpo no es para la fornicación, sino para el Señor, y el Señor es para el cuerpo.",
+        "CEI": "A causa della bella prova di questo servizio essi ringrazieranno Dio per la vostra obbedienza e accettazione del vangelo di Cristo, e per la generosità della vostra comunione con loro e con tutti;"
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "BYZ": "ὁ δὲ θεὸς καὶ τὸν κύριον ἤγειρεν καὶ ἡμᾶς ἐξεγερεῖ διὰ τῆς δυνάμεως αὐτοῦ.",
+        "VUL": "Deus vero et Dominum suscitavit : et nos suscitabit per virtutem suam.",
+        "SYN": "Бог воскресил Господа, воскресит и нас силою Своею.",
+        "NEO": "Et Dieu qui a ressuscité le Seigneur, nous ressuscitera aussi par sa puissance.",
+        "NAB": "God raised the Lord and will also raise us by his power.",
+        "VAT_ES": "Y Dios que resucitó al Señor, nos resucitará también a nosotros con su poder.",
+        "CEI": "e pregando per voi manifesteranno il loro affetto a causa della straordinaria grazia di Dio effusa sopra di voi."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "BYZ": "Οὐκ οἴδατε ὅτι τὰ σώματα ὑμῶν μέλη χριστοῦ ἐστιν; Ἄρας οὖν τὰ μέλη τοῦ χριστοῦ ποιήσω πόρνης μέλη; Μὴ γένοιτο.",
+        "VUL": "Nescitis quoniam corpora vestra membra sunt Christi ? Tollens ergo membra Christi, faciam membra meretricis ? Absit.",
+        "SYN": "Разве не знаете, что тела ваши суть члены Христовы? Итак отниму ли члены у Христа, чтобы сделать _их_ членами блудницы? Да не будет!",
+        "NEO": "Ne savez-vous pas que vos corps sont des membres du Christ ? Prendrai-je donc les membres du Christ pour en faire les membres d’une prostituée ? Loin de là !",
+        "NAB": "Do you not know that your bodies are members of Christ? Shall I then take Christ's members and make them the members of a prostitute? Of course not!",
+        "VAT_ES": "&iquest;No saben acaso que sus cuerpos son miembros de Cristo? &iquest;Cómo voy a tomar los miembros de Cristo para convertirlos en miembros de una prostituta? De ninguna manera.",
+        "CEI": "Grazie a Dio per questo suo ineffabile dono!"
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "BYZ": "Οὐκ οἴδατε ὅτι ὁ κολλώμενος τῇ πόρνῃ ἓν σῶμά ἐστιν; Ἔσονται γάρ, φησίν, οἱ δύο εἰς σάρκα μίαν.",
+        "VUL": "An nescitis quoniam qui adhæret meretrici, unum corpus efficitur ? Erunt enim (inquit) duo in carne una.",
+        "SYN": "Или не знаете, что совокупляющийся с блудницею становится одно тело _с_ _нею?_ ибо сказано: два будут одна плоть.",
+        "NEO": "Ne savez-vous pas que celui qui s’unit à la prostituée est un seul corps avec elle ? Car, dit l’Écriture,*+ 6:16 16. Dit l’Écriture, ou Dieu par la bouche d’Adam (Gen. ii, 24 ; comp. Matth. xix, 4 sv.).* « Ils seront les deux en une seule chair. »",
+        "NAB": "(Or) do you not know that anyone who joins himself to a prostitute becomes one body with her? For \"the two,\" it says, \"will become one flesh.\"",
+        "VAT_ES": "&iquest;No saben que el que se une a una prostituta, se hace un solo cuerpo con ella? Porque dice la Escritura: Los dos serán una sola carne."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "BYZ": "Ὁ δὲ κολλώμενος τῷ κυρίῳ ἓν πνεῦμά ἐστιν.",
+        "VUL": "Qui autem adhæret Domino, unus spiritus est.",
+        "SYN": "А соединяющийся с Господом есть один дух с Господом.",
+        "NEO": "Au contraire celui qui s’unit au Seigneur est un seul esprit avec lui.",
+        "NAB": "But whoever is joined to the Lord becomes one spirit with him.",
+        "VAT_ES": "En cambio, el que se une al Señor se hace un solo espíritu con él."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "BYZ": "Φεύγετε τὴν πορνείαν. Πᾶν ἁμάρτημα ὃ ἐὰν ποιήσῃ ἄνθρωπος ἐκτὸς τοῦ σώματός ἐστιν· ὁ δὲ πορνεύων εἰς τὸ ἴδιον σῶμα ἁμαρτάνει.",
+        "VUL": "Fugite fornicationem. Omne peccatum, quodcumque fecerit homo, extra corpus est : qui autem fornicatur, in corpus suum peccat.",
+        "SYN": "Бегайте блуда; всякий грех, какой делает человек, есть вне тела, а блудник грешит против собственного тела.",
+        "NEO": "Fuyez l’impudicité. Quelque autre péché qu’un homme commette, ce péché est hors du corps ; mais celui qui se livre à l’impudicité pèche contre son propre corps.",
+        "NAB": "Avoid immorality. Every other sin a person commits is outside the body, but the immoral person sins against his own body.",
+        "VAT_ES": "Eviten la fornicación. Cualquier otro pecado cometido por el hombre es exterior a su cuerpo, pero el que fornica peca contra su propio cuerpo."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "BYZ": "Ἢ οὐκ οἴδατε ὅτι τὸ σῶμα ὑμῶν ναὸς τοῦ ἐν ὑμῖν ἁγίου πνεύματός ἐστιν, οὗ ἔχετε ἀπὸ θεοῦ; Καὶ οὐκ ἐστὲ ἑαυτῶν,",
+        "VUL": "An nescitis quoniam membra vestra, templum sunt Spiritus Sancti, qui in vobis est, quem habetis a Deo, et non estis vestri ?",
+        "SYN": "Не знаете ли, что тела ваши суть храм живущего в вас Святаго Духа, Которого имеете вы от Бога, и вы не свои?",
+        "NEO": "Ne savez-vous pas que votre corps est le temple du Saint-Esprit qui est en vous, que vous avez reçu de Dieu, et que vous n’êtes plus à vous-mêmes ?",
+        "NAB": "Do you not know that your body is a temple of the holy Spirit within you, whom you have from God, and that you are not your own?",
+        "VAT_ES": "&iquest;O no saben que sus cuerpos son templo del espíritu Santo, que habita en ustedes y que han recibido de Dios? Por lo tanto, ustedes no se pertenecen,"
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "BYZ": "ἠγοράσθητε γὰρ τιμῆς· δοξάσατε δὴ τὸν θεὸν ἐν τῷ σώματι ὑμῶν, καὶ ἐν τῷ πνεύματι ὑμῶν, ἅτινά ἐστιν τοῦ θεοῦ.",
+        "VUL": "Empti enim estis pretio magno. Glorificate, et portate Deum in corpore vestro.",
+        "SYN": "Ибо вы куплены _дорогою_ ценою. Посему прославляйте Бога и в телах ваших и в душах ваших, которые суть Божии.",
+        "NEO": "Car vous avez été rachetés à prix. Glorifiez donc Dieu dans votre corps.+ 6:20 20. Vulg. : à grand prix. — \\+qt Glorifiez Dieu\\+qt*, par la chasteté, \\+qt dans\\+qt* le temple de \\+qt votre\\+qt* corps. Quelques manuscrits grecs : \\+qt dans votre corps et dans votre esprit qui appartiennent à Dieu\\+qt*. Cette addition manque dans les meilleurs exemplaires.*",
+        "NAB": "For you have been purchased at a price. Therefore, glorify God in your body.",
+        "VAT_ES": "sino que han sido comprados, &iexcl;y a qué precio! Glorifiquen entonces a Dios en sus cuerpos."
+      }
+    }
+  }
+}

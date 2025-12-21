@@ -1,0 +1,221 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "PSAL_060",
+  "book_key": "PSAL",
+  "sequence": 60,
+  "chapter_in": {
+    "MT": 60,
+    "VUL": 59,
+    "LXX": 59
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Libri_Sapientiae",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "לַ֭/מְנַצֵּחַ עַל שׁוּשַׁ֣ן עֵד֑וּת מִכְתָּ֖ם לְ/דָוִ֣ד לְ/לַמֵּֽד׃",
+        "LXX": "Εἰς τὸ τέλος, ἐν ὕμνοις· ⸂⸆⸃ τῷ Δαυείδ.",
+        "VUL": "In finem. In hymnis David.",
+        "SYN": "Начальнику хора. На струнном _орудии._ Псалом Давида.",
+        "NEO": "Au maître de chant. Sur le Lys du témoignage. Hymne de David, à enseigner.",
+        "NAB": "For the leader; according to \"The Lily of....\" A miktam of David (for teaching),",
+        "CEI": "Al maestro del coro. Su \"Giglio del precetto\". Miktam. Di Davide. Da insegnare."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "בְּ/הַצּוֹת֨/וֹ אֶ֥ת אֲרַ֣ם נַהֲרַיִם֮ וְ/אֶת אֲרַ֪ם צ֫וֹבָ֥ה וַ/יָּ֤שָׁב יוֹאָ֗ב וַ/יַּ֣ךְ אֶת אֱד֣וֹם בְּ/גֵיא מֶ֑לַח שְׁנֵ֖ים עָשָׂ֣ר אָֽלֶף׃",
+        "LXX": "Εἰσάκουσον τῆς δεήσεώς μου, πρόσχες τῆς προσευχῆς μου.",
+        "VUL": "[Exaudi, Deus, deprecationem meam ;/ intende orationi meæ./",
+        "SYN": "Услышь, Боже, вопль мой, внемли молитве моей!",
+        "NEO": "Lorsqu’il fit la guerre aux Syriens de Mésopotamie et aux Syriens de Soba, et que Joab revint et battit Edom dans la vallée du Sel, lui tuant douze mille hommes.",
+        "NAB": "when he fought against Aram-Naharaim and Aram-Zobah; and Joab, coming back, killed twelve thousand Edomites in the Valley of Salt.",
+        "VAT_ES": "Cuando luchó contra Aram Naharaim y contra Aram de Sobá, y Joab volvió para derrotar a Edom, en el valle de la Sal, dando muerte a doce mil hombres.",
+        "CEI": "Quando uscì contro gli Aramei della Valle dei due fiumi e contro gli Aramei di Soba, e quando Gioab, nel ritorno, sconfisse gli Idumei nella Valle del sale: dodici mila uomini."
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "אֱ֭לֹהִים זְנַחְתָּ֣/נוּ פְרַצְתָּ֑/נוּ אָ֝נַ֗פְתָּ תְּשׁ֣וֹבֵ֥ב לָֽ/נוּ׃",
+        "LXX": "ἀπὸ τῶν περάτων τῆς γῆς πρὸς σὲ ἐκέκραξα, ἐν τῷ ἀκηδιάσαι τὴν καρδίαν μου. ἐν πέτρᾳ ὕψωσάς με, ὡδήγησάς με,",
+        "VUL": "A finibus terræ ad te clamavi, dum anxiaretur cor meum ;/ in petra exaltasti me./ Deduxisti me,",
+        "SYN": "От конца земли взываю к Тебе в унынии сердца моего; возведи меня на скалу, для меня недосягаемую,",
+        "NEO": "O Dieu, tu nous as rejetés, tu nous as dispersés : tu étais irrité : rends-nous ta faveur !",
+        "NAB": "O God, you rejected us, broke our defenses; you were angry but now revive us.",
+        "VAT_ES": "&iexcl;Oh Dios, tú nos has rechazado, nos has deshecho!",
+        "CEI": "Dio, tu ci hai respinti, ci hai dispersi; ti sei sdegnato: ritorna a noi."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "הִרְעַ֣שְׁתָּה אֶ֣רֶץ פְּצַמְתָּ֑/הּ רְפָ֖/ה שְׁבָרֶ֣י/הָ כִי מָֽטָה׃",
+        "LXX": "ὅτι ἐγενήθης ἐλπίς μου, πύργος ἰσχύος ἀπὸ προσώπου ἐχθροῦ.",
+        "VUL": "quia factus es spes mea :/ turris fortitudinis a facie inimici./",
+        "SYN": "ибо Ты прибежище мое, Ты крепкая защита от врага.",
+        "NEO": "Tu as ébranlé le pays, tu l’as déchiré : répare ses brèches, car il chancelle !",
+        "NAB": "You rocked the earth, split it open; repair the cracks for it totters.",
+        "VAT_ES": "Hiciste temblar la tierra, la agrietaste:",
+        "CEI": "Hai scosso la terra, l'hai squarciata, risana le sue fratture, perché crolla."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "הִרְאִ֣יתָה עַמְּ/ךָ֣ קָשָׁ֑ה הִ֝שְׁקִיתָ֗/נוּ יַ֣יִן תַּרְעֵלָֽה׃",
+        "LXX": "παροικήσω ἐν τῷ σκηνώματί σου εἰς τοὺς αἰῶνας, διάψαλμα. σκεπασθήσομαι ἐν σκέπῃ τῶν πτερύγων σου.",
+        "VUL": "Inhabitabo in tabernaculo tuo in sæcula ;/ protegar in velamento alarum tuarum./",
+        "SYN": "Да живу я вечно в жилище Твоем и покоюсь под кровом крыл Твоих,",
+        "NEO": "Tu as fait voir à ton peuple de rudes épreuves, tu nous as fait boire un vin de vertige.",
+        "NAB": "You made your people go through hardship, made us stagger from the wine you gave us.",
+        "VAT_ES": "Impusiste a tu pueblo una dura prueba,",
+        "CEI": "Hai inflitto al tuo popolo dure prove, ci hai fatto bere vino da vertigini."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "נָ֘תַ֤תָּה לִּ/ירֵאֶ֣י/ךָ נֵּ֭ס לְ/הִתְנוֹסֵ֑ס מִ֝/פְּנֵ֗י קֹ֣שֶׁט סֶֽלָה׃",
+        "LXX": "ὅτι σύ, ὁ θεός, εἰσήκουσας τῶν προσευχῶν μου, ἔδωκας κληρονομίαν τοῖς φοβουμένοις τὸ ὄνομά σου.",
+        "VUL": "Quoniam tu, Deus meus, exaudisti orationem meam ;/ dedisti hæreditatem timentibus nomen tuum./",
+        "SYN": "ибо Ты, Боже, услышал обеты мои и дал _мне_ наследие боящихся имени Твоего.",
+        "NEO": "Mais tu as donné à ceux qui te craignent une bannière, afin qu’elle s’élève à cause de ta vérité. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+        "NAB": "Raise up a flag for those who revere you, a refuge for them out of bow shot. Selah",
+        "VAT_ES": "Diste a tus fieles la señal de retirada,",
+        "CEI": "Hai dato un segnale ai tuoi fedeli perché fuggissero lontano dagli archi."
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "לְ֭מַעַן יֵחָלְצ֣וּ/ן יְדִידֶ֑י/ךָ הוֹשִׁ֖יעָ/ה יְמִֽינְ/ךָ֣ ו/ענ/נו וַ/עֲנֵֽ/נִי׃",
+        "LXX": "ἡμέρας ἐφ’ ἡμέρας βασιλέως προσθήσεις ἔτη αὐτοῦ, ἕως ἡμέρας γενεᾶς καὶ γενεᾶς.",
+        "VUL": "Dies super dies regis adjicies ;/ annos ejus usque in diem generationis et generationis./",
+        "SYN": "Приложи дни ко дням царя, лета его _продли_ в род и род,",
+        "NEO": "Afin que tes bien-aimés soient délivrés, sauve par ta droite, et exauce-moi.",
+        "NAB": "Help with your right hand and answer us that your loved ones may escape.",
+        "VAT_ES": "&iexcl;Sálvanos con tu poder, respóndenos,",
+        "CEI": "Perché i tuoi amici siano liberati, salvaci con la destra e a noi rispondi."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "אֱלֹהִ֤ים דִּבֶּ֥ר בְּ/קָדְשׁ֗/וֹ אֶ֫עְלֹ֥זָה אֲחַלְּקָ֥ה שְׁכֶ֑ם וְ/עֵ֖מֶק סֻכּ֣וֹת אֲמַדֵּֽד׃",
+        "LXX": "διαμενεῖ εἰς τὸν αἰῶνα ἐνώπιον τοῦ θεοῦ· ἔλεος καὶ ἀλήθειαν αὐτοῦ τίς ἐκζητήσει αὐτῶν;",
+        "VUL": "Permanet in æternum in conspectu Dei :/ misericordiam et veritatem ejus quis requiret ?/",
+        "SYN": "да пребудет он вечно пред Богом; заповедуй милости и истине охранять его.",
+        "NEO": "Dieu a parlé dans sa sainteté : « Je tressaillirai de joie. J’aurai Sichem en partage, et je mesurerai la vallée de Succoth.",
+        "NAB": "In the sanctuary God promised: \"I will exult, will apportion Shechem; the valley of Succoth I will measure out.",
+        "VAT_ES": "Dios habló desde su Santuario:",
+        "CEI": "Dio ha parlato nel suo tempio: \"Esulto e divido Sichem, misuro la valle di Succot."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "לִ֤/י גִלְעָ֨ד וְ/לִ֬/י מְנַשֶּׁ֗ה וְ֭/אֶפְרַיִם מָע֣וֹז רֹאשִׁ֑/י יְ֝הוּדָ֗ה מְחֹֽקְקִ/י׃",
+        "LXX": "οὕτως ψαλῶ τῷ ὀνόματί σου εἰς τὸν αἰῶνα τοῦ αἰῶνος, τοῦ ἀποδοῦναί με τὰς εὐχάς μου ἡμέραν ἐξ ἡμέρας.",
+        "VUL": "Sic psalmum dicam nomini tuo in sæculum sæculi,/ ut reddam vota mea de die in diem.]",
+        "SYN": "И я буду петь имени Твоему вовек, исполняя обеты мои всякий день.",
+        "NEO": "Galaad est à moi, à moi Manassé ! Ephraïm est l’armure de ma tête, et Juda mon sceptre.",
+        "NAB": "Gilead is mine, mine is Manasseh; Ephraim is the helmet for my head, Judah, my own scepter.",
+        "VAT_ES": "Mío es Galaad, Manasés me pertenece;",
+        "CEI": "Mio è Gàlaad, mio è Manasse, Efraim è la difesa del mio capo, Giuda lo scettro del mio comando."
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "מוֹאָ֤ב סִ֬יר רַחְצִ֗/י עַל אֱ֭דוֹם אַשְׁלִ֣יךְ נַעֲלִ֑/י עָ֝לַ֗/י פְּלֶ֣שֶׁת הִתְרֹעָֽעִֽי׃",
+        "NEO": "Moab est le bassin où je me lave ; sur Edom je jette ma sandale ; terre des Philistins, pousse des acclamations en mon honneur ! »",
+        "NAB": "Moab is my washbowl; upon Edom I cast my sandal. I will triumph over Philistia.\"",
+        "VAT_ES": "Moab es la vasija donde yo me lavo;",
+        "CEI": "Moab è il bacino per lavarmi, sull'Idumea getterò i miei sandali, sulla Filistea canterò vittoria\"."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "מִ֣י יֹ֭בִלֵ/נִי עִ֣יר מָצ֑וֹר מִ֖י נָחַ֣/נִי עַד אֱדֽוֹם׃",
+        "NEO": "Qui me mènera à la ville forte ? Qui me conduira à Edom ?",
+        "NAB": "Who will bring me to the fortified city? Who will lead me into Edom?",
+        "VAT_ES": "&iquest;Quién me llevará hasta la ciudad fortificada,",
+        "CEI": "Chi mi condurrà alla città fortificata, chi potrà guidarmi fino all'Idumea?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "הֲ/לֹֽא אַתָּ֣ה אֱלֹהִ֣ים זְנַחְתָּ֑/נוּ וְֽ/לֹא תֵצֵ֥א אֱ֝לֹהִ֗ים בְּ/צִבְאוֹתֵֽי/נוּ׃",
+        "NEO": "N’est-ce pas toi, ô Dieu, qui nous avais rejetés, ô Dieu, qui ne sortais plus avec nos armées ?",
+        "NAB": "Was it not you who rejected us, God? Do you no longer march with our armies?",
+        "VAT_ES": "si tú, oh Dios, nos has rechazado",
+        "CEI": "Non forse tu, o Dio, che ci hai respinti, e più non esci, o Dio, con le nostre schiere?"
+      }
+    }
+  }
+}

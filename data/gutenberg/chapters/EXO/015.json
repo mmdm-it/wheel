@@ -1,0 +1,501 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "EXO_015",
+  "book_key": "EXO",
+  "sequence": 15,
+  "chapter_in": {
+    "MT": 15,
+    "VUL": 15,
+    "LXX": 15
+  },
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "v_in": {
+        "MT": 1,
+        "VUL": 1,
+        "LXX": 1
+      },
+      "text": {
+        "WLC": "אָ֣ז יָשִֽׁיר מֹשֶׁה֩ וּ/בְנֵ֨י יִשְׂרָאֵ֜ל אֶת הַ/שִּׁירָ֤ה הַ/זֹּאת֙ לַֽ/יהוָ֔ה וַ/יֹּאמְר֖וּ לֵ/אמֹ֑ר אָשִׁ֤ירָה לַֽ/יהוָה֙ כִּֽי גָאֹ֣ה גָּאָ֔ה ס֥וּס וְ/רֹכְב֖/וֹ רָמָ֥ה בַ/יָּֽם׃",
+        "LXX": "Τότε ᾖσεν Μωυσῆς καὶ οἱ υἱοὶ Ἰσραὴλ τὴν ᾠδὴν ταύτην τῷ θεῷ, καὶ εἶπαν λέγοντες ᾌσωμεν τῷ κυρίῳ, ἐνδόξως γὰρ δεδόξασται· ἵππον καὶ ἀναβάτην ἔρριψεν εἰς θάλασσαν·",
+        "VUL": "Tunc cecinit Moyses et filii Israël carmen hoc Domino, et dixerunt : [Cantemus Domino : gloriose enim magnificatus est,/ equum et ascensorem dejecit in mare./",
+        "SYN": "Пою Господу, ибо Он высоко превознесся; коня и всадника его ввергнул в море.",
+        "NEO": "Alors Moïse et les enfants d’Israël chantèrent ce cantique à \\+w Yahweh|strong=\"H3068\"\\+w** ; ils dirent : Je chanterai à \\+w Yahweh|strong=\"H3068\"\\+w**, car il a fait éclater sa gloire : il a précipité dans la mer cheval et cavalier.",
+        "NAB": "Then Moses and the Israelites sang this song to the LORD: I will sing to the LORD, for he is gloriously triumphant; horse and chariot he has cast into the sea.",
+        "VAT_ES": "Entonces Moisés y los israelitas entonaron este canto en honor del Señor: «Cantaré al Señor, que se ha cubierto de gloria: él hundió en el mar los caballos y los carros.",
+        "CEI": "Allora Mosè e gli Israeliti cantarono questo canto al Signore e dissero: \"Voglio cantare in onore del Signore: perché ha mirabilmente trionfato, ha gettato in mare cavallo e cavaliere."
+      }
+    },
+    "2": {
+      "seq": 2,
+      "v_in": {
+        "MT": 2,
+        "VUL": 2,
+        "LXX": 2
+      },
+      "text": {
+        "WLC": "עָזִּ֤/י וְ/זִמְרָת֙ יָ֔הּ וַֽ/יְהִי לִ֖/י לִֽ/ישׁוּעָ֑ה זֶ֤ה אֵלִ/י֙ וְ/אַנְוֵ֔/הוּ אֱלֹהֵ֥י אָבִ֖/י וַ/אֲרֹמְמֶֽ/נְהוּ׃",
+        "LXX": "βοηθὸς καὶ σκεπαστὴς ἐγένετό μοι εἰς σωτηρίαν· οὗτός μου θεός, καὶ δοξάσω αὐτόν, θεὸς τοῦ πατρός μου, καὶ ὑψώσω αὐτόν.",
+        "VUL": "Fortitudo mea, et laus mea Dominus,/ et factus est mihi in salutem :/ iste Deus meus, et glorificabo eum :/ Deus patris mei, et exaltabo eum./",
+        "SYN": "Господь крепость моя и слава моя, Он был мне спасением. Он Бог мой, и прославлю Его; Бог отца моего, и превознесу Его.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est ma force et l’objet de mes chants ; c’est lui qui m’a sauvé ; c’est lui qui est mon Dieu : je le célébrerai ; le Dieu de mon père : je l’exalterai.",
+        "NAB": "My strength and my courage is the LORD, and he has been my savior. He is my God, I praise him; the God of my father, I extol him.",
+        "VAT_ES": "El Señor es mi fuerza y mi protección, él me salvó. El es mi Dios y yo lo glorifico, es el Dios de mi padre y yo proclamo su grandeza.",
+        "CEI": "Mia forza e mio canto è il Signore, egli mi ha salvato. È il mio Dio e lo voglio lodare, è il Dio di mio padre e lo voglio esaltare!"
+      }
+    },
+    "3": {
+      "seq": 3,
+      "v_in": {
+        "MT": 3,
+        "VUL": 3,
+        "LXX": 3
+      },
+      "text": {
+        "WLC": "יְהוָ֖ה אִ֣ישׁ מִלְחָמָ֑ה יְהוָ֖ה שְׁמֽ/וֹ׃",
+        "LXX": "Κύριος συντρίβων πολέμους, Κύριος ὄνομα αὐτῷ.",
+        "VUL": "Dominus quasi vir pugnator,/ Omnipotens nomen ejus,/",
+        "SYN": "Господь муж брани, Иегова имя Ему.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est un vaillant guerrier ; \\+w Yahweh|strong=\"H3068\"\\+w** est son nom.",
+        "NAB": "The LORD is a warrior, LORD is his name!",
+        "VAT_ES": "El Señor es un guerrero, su nombre es «Señor».",
+        "CEI": "Il Signore è prode in guerra, si chiama Signore."
+      }
+    },
+    "4": {
+      "seq": 4,
+      "v_in": {
+        "MT": 4,
+        "VUL": 4,
+        "LXX": 4
+      },
+      "text": {
+        "WLC": "מַרְכְּבֹ֥ת פַּרְעֹ֛ה וְ/חֵיל֖/וֹ יָרָ֣ה בַ/יָּ֑ם וּ/מִבְחַ֥ר שָֽׁלִשָׁ֖י/ו טֻבְּע֥וּ בְ/יַם סֽוּף׃",
+        "LXX": "ἅρματα Φαραὼ καὶ τὴν δύναμιν αὐτοῦ ἔρριψεν εἰς θάλασσαν, ἐπιλέκτους ἀναβάτας τριστάτας· κατεπόθησαν ἐν ἐρυθρᾷ θαλάσσῃ·",
+        "VUL": "currus Pharaonis et exercitum ejus projecit in mare :/ electi principes ejus submersi sunt in mari Rubro./",
+        "SYN": "Колесницы фараона и войско его ввергнул Он в море, и избранные военачальники его потонули в Чермном море.",
+        "NEO": "Il a jeté dans la mer les chars de Pharaon et son armée ; l’élite de ses capitaines a été engloutie dans la mer Rouge.",
+        "NAB": "Pharaoh's chariots and army he hurled into the sea; the elite of his officers were submerged in the Red Sea.",
+        "VAT_ES": "El arrojó al mar los carros del Faraón y su ejército, lo mejor de sus soldados se hundió en el Mar Rojo.",
+        "CEI": "I carri del faraone e il suo esercito ha gettato nel mare e i suoi combattenti scelti furono sommersi nel Mare Rosso."
+      }
+    },
+    "5": {
+      "seq": 5,
+      "v_in": {
+        "MT": 5,
+        "VUL": 5,
+        "LXX": 5
+      },
+      "text": {
+        "WLC": "תְּהֹמֹ֖ת יְכַסְיֻ֑/מוּ יָרְד֥וּ בִ/מְצוֹלֹ֖ת כְּמוֹ אָֽבֶן׃",
+        "LXX": "πόντῳ ἐκάλυψεν αὐτούς· κατέδυσαν εἰς βυθὸν ὡσεὶ λίθος.",
+        "VUL": "Abyssi operuerunt eos ;/ descenderunt in profundum quasi lapis./",
+        "SYN": "Пучины покрыли их: они пошли в глубину, как камень.",
+        "NEO": "Les flots les couvrent ; ils sont descendus au fond des eaux comme une pierre.",
+        "NAB": "The flood waters covered them, they sank into the depths like a stone.",
+        "VAT_ES": "El abismo los cubrió, cayeron como una piedra en lo profundo del mar",
+        "CEI": "Gli abissi li ricoprirono, sprofondarono come pietra."
+      }
+    },
+    "6": {
+      "seq": 6,
+      "v_in": {
+        "MT": 6,
+        "VUL": 6,
+        "LXX": 6
+      },
+      "text": {
+        "WLC": "יְמִֽינְ/ךָ֣ יְהוָ֔ה נֶאְדָּרִ֖י בַּ/כֹּ֑חַ יְמִֽינְ/ךָ֥ יְהוָ֖ה תִּרְעַ֥ץ אוֹיֵֽב׃",
+        "LXX": "ἡ δεξιά σου, Κύριε, δεδόξασται ἐν ἰσχύι· ἡ δεξιά σου χείρ, Κύριε, ἔθραυσεν ἐχθρούς.",
+        "VUL": "Dextera tua, Domine, magnificata est in fortitudine :/ dextera tua, Domine, percussit inimicum./",
+        "SYN": "Десница Твоя, Господи, прославилась силою; десница Твоя, Господи, сразила врага.",
+        "NEO": "Ta droite, ô \\+w Yahweh|strong=\"H3068\"\\+w**, s’est signalée par sa force, ta droite, ô \\+w Yahweh|strong=\"H3068\"\\+w**, a écrasé l’ennemi.",
+        "NAB": "Your right hand, O LORD, magnificent in power, your right hand, O LORD, has shattered the enemy.",
+        "VAT_ES": "Tu mano, Señor, resplandece por su fuerza, tu mano, Señor, aniquila al enemigo.",
+        "CEI": "La tua destra, Signore, terribile per la potenza, la tua destra, Signore, annienta il nemico;"
+      }
+    },
+    "7": {
+      "seq": 7,
+      "v_in": {
+        "MT": 7,
+        "VUL": 7,
+        "LXX": 7
+      },
+      "text": {
+        "WLC": "וּ/בְ/רֹ֥ב גְּאוֹנְ/ךָ֖ תַּהֲרֹ֣ס קָמֶ֑י/ךָ תְּשַׁלַּח֙ חֲרֹ֣נְ/ךָ֔ יֹאכְלֵ֖/מוֹ כַּ/קַּֽשׁ׃",
+        "LXX": "καὶ τῷ πλήθει τῆς δόξης σου συνέτριψας τοὺς ὑπεναντίους· ἀπέστειλας τὴν ὀργήν σου, καὶ κατέφαγεν αὐτοὺς ὡς καλάμην.",
+        "VUL": "Et in multitudine gloriæ tuæ deposuisti adversarios tuos :/ misisti iram tuam, quæ devoravit eos sicut stipulam./",
+        "SYN": "Величием славы Твоей Ты низложил восставших против Тебя. Ты послал гнев Твой, и он попалил их, как солому.",
+        "NEO": "Dans la plénitude de ta majesté, tu renverses tes adversaires ; tu déchaînes ta colère, elle les consume comme du chaume.",
+        "NAB": "In your great majesty you overthrew your adversaries; you loosed your wrath to consume them like stubble.",
+        "VAT_ES": "Con la inmensidad de tu gloria derribas a tus adversarios, desatas tu furor, que los consume como paja.",
+        "CEI": "con sublime grandezza abbatti i tuoi avversari, scateni il tuo furore che li divora come paglia."
+      }
+    },
+    "8": {
+      "seq": 8,
+      "v_in": {
+        "MT": 8,
+        "VUL": 8,
+        "LXX": 8
+      },
+      "text": {
+        "WLC": "וּ/בְ/ר֤וּחַ אַפֶּ֨י/ךָ֙ נֶ֣עֶרְמוּ מַ֔יִם נִצְּב֥וּ כְמוֹ נֵ֖ד נֹזְלִ֑ים קָֽפְא֥וּ תְהֹמֹ֖ת בְּ/לֶב יָֽם׃",
+        "LXX": "καὶ διὰ πνεύματος τοῦ θυμοῦ σου διέστη τὸ ὕδωρ· ἐπάγη ὡσεὶ τεῖχος τὰ ὕδατα, ἐπάγη τὰ κύματα ἐν μέσῳ τῆς θαλάσσης.",
+        "VUL": "Et in spiritu furoris tui congregatæ sunt aquæ :/ stetit unda fluens, congregata sunt abyssi in medio mari./",
+        "SYN": "От дуновения Твоего расступились воды, влага стала, как стена, огустели пучины в сердце моря.",
+        "NEO": "Au souffle de tes narines, les eaux se sont amoncelées. Les flots se sont dressés comme un monceau ; les vagues se sont durcies au sein de la mer.",
+        "NAB": "At a breath of your anger the waters piled up, the flowing waters stood like a mound, the flood waters congealed in the midst of the sea.",
+        "VAT_ES": "Al soplo de tu ira se agolparon las aguas, las olas se levantaron como un dique, se hicieron compactos los abismos del mar.",
+        "CEI": "Al soffio della tua ira si accumularono le acque, si alzarono le onde come un argine, si rappresero gli abissi in fondo al mare."
+      }
+    },
+    "9": {
+      "seq": 9,
+      "v_in": {
+        "MT": 9,
+        "VUL": 9,
+        "LXX": 9
+      },
+      "text": {
+        "WLC": "אָמַ֥ר אוֹיֵ֛ב אֶרְדֹּ֥ף אַשִּׂ֖יג אֲחַלֵּ֣ק שָׁלָ֑ל תִּמְלָאֵ֣/מוֹ נַפְשִׁ֔/י אָרִ֣יק חַרְבִּ֔/י תּוֹרִישֵׁ֖/מוֹ יָדִֽ/י׃",
+        "LXX": "εἶπεν ὁ ἐχθρός Διώξας καταλήμψομαι· μεριῶ σκῦλα, ἐμπλήσω ψυχήν μου, ἀνελῶ τῇ μαχαίρῃ μου, κυριεύσει ἡ χείρ μου.",
+        "VUL": "Dixit inimicus : Persequar et comprehendam,/ dividam spolia, implebitur anima mea :/ evaginabo gladium meum, interficiet eos manus mea./",
+        "SYN": "Враг сказал: погонюсь, настигну, разделю добычу; насытится ими душа моя, обнажу меч мой, истребит их рука моя.",
+        "NEO": "L’ennemi disait : « Je poursuivrai, j’atteindrai, je partagerai les dépouilles, ma vengeance sera assouvie, je tirerai l’épée, ma main les détruira. »",
+        "NAB": "The enemy boasted, \"I will pursue and overtake them; I will divide the spoils and have my fill of them; I will draw my sword; my hand shall despoil them!\"",
+        "VAT_ES": "El enemigo decía: «Los perseguiré, los alcanzaré, repartiré sus despojos, saciaré mi avidez, desenvainaré la espada, mi mano los destruirá».",
+        "CEI": "Il nemico aveva detto: Inseguirò, raggiungerò, spartirò il bottino, se ne sazierà la mia brama; sfodererò la spada, li conquisterà la mia mano!"
+      }
+    },
+    "10": {
+      "seq": 10,
+      "v_in": {
+        "MT": 10,
+        "VUL": 10,
+        "LXX": 10
+      },
+      "text": {
+        "WLC": "נָשַׁ֥פְתָּ בְ/רוּחֲ/ךָ֖ כִּסָּ֣/מוֹ יָ֑ם צָֽלֲלוּ֙ כַּֽ/עוֹפֶ֔רֶת בְּ/מַ֖יִם אַדִּירִֽים׃",
+        "LXX": "ἀπέστειλας τὸ πνεῦμά σου, ἐκάλυψεν αὐτοὺς θάλασσα· ἔδυσαν ὡσεὶ μόλιβος ἐν ὕδατι σφοδρῷ.",
+        "VUL": "Flavit spiritus tuus, et operuit eos mare :/ submersi sunt quasi plumbum in aquis vehementibus./",
+        "SYN": "Ты дунул духом Твоим, и покрыло их море: они погрузились, как свинец, в великих водах.",
+        "NEO": "Tu as soufflé de ton haleine, la mer les a couverts, ils se sont enfoncés, comme du plomb, dans les vastes eaux.",
+        "NAB": "When your wind blew, the sea covered them; like lead they sank in the mighty waters.",
+        "VAT_ES": "Tú soplaste con tu aliento, y el mar los envolvió; se hundieron como plomo en las aguas formidables.",
+        "CEI": "Soffiasti con il tuo alito: il mare li coprì, sprofondarono come piombo in acque profonde."
+      }
+    },
+    "11": {
+      "seq": 11,
+      "v_in": {
+        "MT": 11,
+        "VUL": 11,
+        "LXX": 11
+      },
+      "text": {
+        "WLC": "מִֽי כָמֹ֤/כָה בָּֽ/אֵלִם֙ יְהוָ֔ה מִ֥י כָּמֹ֖/כָה נֶאְדָּ֣ר בַּ/קֹּ֑דֶשׁ נוֹרָ֥א תְהִלֹּ֖ת עֹ֥שֵׂה פֶֽלֶא׃",
+        "LXX": "τίς ὅμοιός σοι ἐν θεοῖς, Κύριε; τίς ὅμοιός σοι; δεδοξασμένος ἐν ἁγίοις, θαυμαστὸς ἐν δόξαις, ποιῶν τέρατα.",
+        "VUL": "Quis similis tui in fortibus, Domine ?/ quis similis tui, magnificus in sanctitate,/ terribilis atque laudabilis, faciens mirabilia ?/",
+        "SYN": "Кто, как Ты, Господи, между богами? Кто, как Ты, величествен святостью, досточтим хвалами, Творец чудес?",
+        "NEO": "Qui est comme toi parmi les dieux, ô \\+w Yahweh|strong=\"H3068\"\\+w** ? Qui est comme toi, auguste en sainteté, redoutable à la louange même, opérant des prodiges ?",
+        "NAB": "Who is like to you among the gods, O LORD? Who is like to you, magnificent in holiness? O terrible in renown, worker of wonders,",
+        "VAT_ES": "&iquest;Quién, como tú, es admirable entre los santos, terrible por tus hazañas, autor de maravillas?",
+        "CEI": "Chi è come te fra gli dei, Signore? Chi è come te, maestoso in santità, tremendo nelle imprese, operatore di prodigi?"
+      }
+    },
+    "12": {
+      "seq": 12,
+      "v_in": {
+        "MT": 12,
+        "VUL": 12,
+        "LXX": 12
+      },
+      "text": {
+        "WLC": "נָטִ֨יתָ֙ יְמִ֣ינְ/ךָ֔ תִּבְלָעֵ֖/מוֹ אָֽרֶץ׃",
+        "LXX": "ἐξέτεινας τὴν δεξιάν σου· κατέπιεν αὐτοὺς γῆ.",
+        "VUL": "Extendisti manum tuam, et devoravit eos terra./",
+        "SYN": "Ты простер десницу Твою: поглотила их земля.",
+        "NEO": "Tu as étendu ta droite, la terre les a engloutis.",
+        "NAB": "when you stretched out your right hand, the earth swallowed them!",
+        "VAT_ES": "Extendiste tu mano y los tragó la tierra.",
+        "CEI": "Stendesti la destra: la terra li inghiottì."
+      }
+    },
+    "13": {
+      "seq": 13,
+      "v_in": {
+        "MT": 13,
+        "VUL": 13,
+        "LXX": 13
+      },
+      "text": {
+        "WLC": "נָחִ֥יתָ בְ/חַסְדְּ/ךָ֖ עַם ז֣וּ גָּאָ֑לְתָּ נֵהַ֥לְתָּ בְ/עָזְּ/ךָ֖ אֶל נְוֵ֥ה קָדְשֶֽׁ/ךָ׃",
+        "LXX": "ὡδήγησας τῇ δικαιοσύνῃ σου τὸν λαόν σου τοῦτον ὃν ἐλυτρώσω, παρεκάλεσας τῇ ἰσχύι σου εἰς κατάλυμα ἅγιόν σου.",
+        "VUL": "Dux fuisti in misericordia tua populo quem redemisti :/ et portasti eum in fortitudine tua, ad habitaculum sanctum tuum./",
+        "SYN": "Ты ведешь милостью Твоею народ сей, который Ты избавил, -- сопровождаешь силою Твоею в жилище святыни Твоей.",
+        "NEO": "Par ta grâce tu conduis ce peuple que tu as délivré ; par ta puissance tu le diriges vers ta demeure sainte.",
+        "NAB": "In your mercy you led the people you redeemed; in your strength you guided them to your holy dwelling.",
+        "VAT_ES": "Guías con tu fidelidad al pueblo que has rescatado y lo conduces con tu poder hacia tu santa morada.",
+        "CEI": "Guidasti con il tuo favore questo popolo che hai riscattato, lo conducesti con forza alla tua santa dimora."
+      }
+    },
+    "14": {
+      "seq": 14,
+      "v_in": {
+        "MT": 14,
+        "VUL": 14,
+        "LXX": 14
+      },
+      "text": {
+        "WLC": "שָֽׁמְע֥וּ עַמִּ֖ים יִרְגָּז֑וּ/ן חִ֣יל אָחַ֔ז יֹשְׁבֵ֖י פְּלָֽשֶׁת׃",
+        "LXX": "ἤκουσαν ἔθνη καὶ ὠργίσθησαν· ὠδῖνες ἔλαβον κατοικοῦντας Φυλιστιείμ.",
+        "VUL": "Ascenderunt populi, et irati sunt :/ dolores obtinuerunt habitatores Philisthiim./",
+        "SYN": "Услышали народы и трепещут: ужас объял жителей Филистимских;",
+        "NEO": "Les peuples l’ont appris, ils tremblent ; la terreur s’empare des Philistins ;",
+        "NAB": "The nations heard and quaked; anguish gripped the dwellers in Philistia.",
+        "VAT_ES": "Tiemblan los pueblos al oír la noticia: los habitantes de Filistea se estremecen,",
+        "CEI": "Hanno udito i popoli e tremano; dolore incolse gli abitanti della Filistea."
+      }
+    },
+    "15": {
+      "seq": 15,
+      "v_in": {
+        "MT": 15,
+        "VUL": 15,
+        "LXX": 15
+      },
+      "text": {
+        "WLC": "אָ֤ז נִבְהֲלוּ֙ אַלּוּפֵ֣י אֱד֔וֹם אֵילֵ֣י מוֹאָ֔ב יֹֽאחֲזֵ֖/מוֹ רָ֑עַד נָמֹ֕גוּ כֹּ֖ל יֹשְׁבֵ֥י כְנָֽעַן׃",
+        "LXX": "τότε ἔσπευσαν ἡγεμόνες Ἐδώμ· καὶ ἄρχοντες Μωαβειτῶν, ἔλαβεν αὐτοὺς τρόμος· ἐτάκησαν πάντες οἱ κατοικοῦντες Χανάαν.",
+        "VUL": "Tunc conturbati sunt principes Edom,/ robustos Moab obtinuit tremor :/ obriguerunt omnes habitatores Chanaan./",
+        "SYN": "тогда смутились князья Едомовы, трепет объял вождей Моавитских, уныли все жители Ханаана.",
+        "NEO": "Déjà les princes d’Edom sont dans l’épouvante ; l’angoisse s’empare des forts de Moab ; tous les habitants de Canaan ont perdu courage,",
+        "NAB": "Then were the princes of Edom dismayed; trembling seized the chieftains of Moab; All the dwellers in Canaan melted away;",
+        "VAT_ES": "cunde el pánico entre los jefes de Edom, un temblor sacude a los príncipes de Moab, desfallecen todos los habitantes de Canaán.",
+        "CEI": "Gia si spaventano i capi di Edom, i potenti di Moab li prende il timore; tremano tutti gli abitanti di Cànaan."
+      }
+    },
+    "16": {
+      "seq": 16,
+      "v_in": {
+        "MT": 16,
+        "VUL": 16,
+        "LXX": 16
+      },
+      "text": {
+        "WLC": "תִּפֹּ֨ל עֲלֵי/הֶ֤ם אֵימָ֨תָ/ה֙ וָ/פַ֔חַד בִּ/גְדֹ֥ל זְרוֹעֲ/ךָ֖ יִדְּמ֣וּ כָּ/אָ֑בֶן עַד יַעֲבֹ֤ר עַמְּ/ךָ֙ יְהוָ֔ה עַֽד יַעֲבֹ֖ר עַם ז֥וּ קָנִֽיתָ׃",
+        "LXX": "ἐπιπέσοι ἐπ’ αὐτοὺς τρόμος καὶ φόβος, μεγέθει βραχίονός σου ἀπολιθωθήτωσαν· ἕως ἂν παρέλθῃ ὁ λαός σου, Κύριε, ἕως ἂν παρέλθῃ ὁ λαός σου οὗτος ὃν ἐκτήσω.",
+        "VUL": "Irruat super eos formido et pavor, in magnitudine brachii tui :/ fiant immobiles quasi lapis,/ donec pertranseat populus tuus, Domine,/ donec pertranseat populus tuus iste, quem possedisti./",
+        "SYN": "Да нападет на них страх и ужас; от величия мышцы Твоей да онемеют они, как камень, доколе проходит народ Твой, Господи, доколе проходит сей народ, который Ты приобрел.",
+        "NEO": "la terreur et la détresse tomberont sur eux ; par la grandeur de ton bras, ils deviendront immobiles comme une pierre, jusqu’à ce que ton peuple ait passé, ô \\+w Yahweh|strong=\"H3068\"\\+w**, jusqu’à ce qu’il ait passé, le peuple que tu as acquis.",
+        "NAB": "terror and dread fell upon them. By the might of your arm they were frozen like stone, while your people, O LORD, passed over, while the people you had made your own passed over.",
+        "VAT_ES": "El pánico y el terror los invaden, la fuerza de tu brazo los deja petrificados, hasta que pasa tu pueblo, Señor, hasta que pasa el pueblo que tú has adquirido.",
+        "CEI": "Piombano sopra di loro la paura e il terrore; per la potenza del tuo braccio restano immobili come pietra, finché sia passato il tuo popolo, Signore, finché sia passato questo tuo popolo che ti sei acquistato."
+      }
+    },
+    "17": {
+      "seq": 17,
+      "v_in": {
+        "MT": 17,
+        "VUL": 17,
+        "LXX": 17
+      },
+      "text": {
+        "WLC": "תְּבִאֵ֗/מוֹ וְ/תִטָּעֵ֨/מוֹ֙ בְּ/הַ֣ר נַחֲלָֽתְ/ךָ֔ מָכ֧וֹן לְ/שִׁבְתְּ/ךָ֛ פָּעַ֖לְתָּ יְהוָ֑ה מִקְּדָ֕שׁ אֲדֹנָ֖/י כּוֹנְנ֥וּ יָדֶֽי/ךָ׃",
+        "LXX": "εἰσαγαγὼν καταφύτευσον αὐτοὺς εἰς ὄρος κληρονομίας σου, εἰς ἕτοιμον κατοικητήριόν σου ὃ κατηρτίσω, Κύριε, ἁγίασμα, Κύριε, ὃ ἡτοίμασαν αἱ χεῖρές σου.",
+        "VUL": "Introduces eos, et plantabis in monte hæreditatis tuæ,/ firmissimo habitaculo tuo quod operatus es, Domine :/ sanctuarium tuum, Domine, quod firmaverunt manus tuæ./",
+        "SYN": "Введи его и насади его на горе достояния Твоего, на месте, которое Ты соделал жилищем Себе, Господи, во святилище, _которое_ создали руки Твои, Владыка!",
+        "NEO": "Tu les amèneras et les établiras sur la montagne de ton héritage, au lieu dont tu as fait ta demeure, ô \\+w Yahweh|strong=\"H3068\"\\+w**, au sanctuaire, Seigneur, que tes mains ont préparé.",
+        "NAB": "And you brought them in and planted them on the mountain of your inheritance - the place where you made your seat, O LORD, the sanctuary, O LORD, which your hands established.",
+        "VAT_ES": "Tú lo llevas y lo plantas en la montaña de tu herencia, en el lugar que preparaste para tu morada, en el Santuario, Señor, que fundaron tus manos.",
+        "CEI": "Lo fai entrare e lo pianti sul monte della tua eredità, luogo che per tua sede, Signore, hai preparato, santuario che le tue mani, Signore, hanno fondato."
+      }
+    },
+    "18": {
+      "seq": 18,
+      "v_in": {
+        "MT": 18,
+        "VUL": 18,
+        "LXX": 18
+      },
+      "text": {
+        "WLC": "יְהוָ֥ה יִמְלֹ֖ךְ לְ/עֹלָ֥ם וָ/עֶֽד׃",
+        "LXX": "Κύριος βασιλεύων τὸν αἰῶνα καὶ ἐπ’ αἰῶνα καὶ ἔτι.",
+        "VUL": "Dominus regnabit in æternum et ultra./",
+        "SYN": "Господь будет царствовать во веки и в вечность.",
+        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** régnera à jamais et toujours !",
+        "NAB": "The LORD shall reign forever and ever.",
+        "VAT_ES": "&iexcl;El Señor reina eternamente!».",
+        "CEI": "Il Signore regna in eterno e per sempre!\"."
+      }
+    },
+    "19": {
+      "seq": 19,
+      "v_in": {
+        "MT": 19,
+        "VUL": 19,
+        "LXX": 19
+      },
+      "text": {
+        "WLC": "כִּ֣י בָא֩ ס֨וּס פַּרְעֹ֜ה בְּ/רִכְבּ֤/וֹ וּ/בְ/פָרָשָׁי/ו֙ בַּ/יָּ֔ם וַ/יָּ֧שֶׁב יְהוָ֛ה עֲלֵ/הֶ֖ם אֶת מֵ֣י הַ/יָּ֑ם וּ/בְנֵ֧י יִשְׂרָאֵ֛ל הָלְכ֥וּ בַ/יַּבָּשָׁ֖ה בְּ/ת֥וֹךְ הַ/יָּֽם׃",
+        "LXX": "Ὅτι εἰσῆλθεν ἵππος Φαραὼ σὺν ἅρμασιν καὶ ἀναβάταις εἰς θάλασσαν, καὶ ἐπήγαγεν ἐπ’ αὐτοὺς Κύριος τὸ ὕδωρ τῆς θαλάσσης· οἱ δὲ υἱοὶ Ἰσραὴλ ἐπορεύθησαν διὰ ξηρᾶς ἐν μέσῳ τῆς θαλάσσης.",
+        "VUL": "Ingressus est enim eques Pharao/ cum curribus et equitibus ejus in mare :/ et reduxit super eos Dominus/ aquas maris :/ filii autem Israël ambulaverunt per siccum in medio ejus.]",
+        "SYN": "Когда вошли кони фараона с колесницами его и с всадниками его в море, то Господь обратил на них воды морские, а сыны Израилевы прошли по суше среди моря.",
+        "NEO": "Car les chevaux de Pharaon, ses chars et ses cavaliers sont entrés dans la mer, et \\+w Yahweh|strong=\"H3068\"\\+w** a ramené sur eux les eaux de la mer ; mais les enfants d’Israël ont marché à sec au milieu de la mer.",
+        "NAB": "They sang thus because Pharaoh's horses and chariots and charioteers had gone into the sea, and the LORD made the waters of the sea flow back upon them, though the Israelites had marched on dry land through the midst of the sea.",
+        "VAT_ES": "Cuando la caballería del Faraón, con sus carros y sus guerreros, entró en medio del mar, el Señor hizo que las aguas se volvieran contra ellos; los israelitas, en cambio, cruzaron el mar como si fuera tierra firme.",
+        "CEI": "Quando infatti i cavalli del faraone, i suoi carri e i suoi cavalieri furono entrati nel mare, il Signore fece tornare sopra di essi le acque del mare, mentre gli Israeliti avevano camminato sull'asciutto in mezzo al mare."
+      }
+    },
+    "20": {
+      "seq": 20,
+      "v_in": {
+        "MT": 20,
+        "VUL": 20,
+        "LXX": 20
+      },
+      "text": {
+        "WLC": "וַ/תִּקַּח֩ מִרְיָ֨ם הַ/נְּבִיאָ֜ה אֲח֧וֹת אַהֲרֹ֛ן אֶת הַ/תֹּ֖ף בְּ/יָדָ֑/הּ וַ/תֵּצֶ֤אןָ כָֽל הַ/נָּשִׁים֙ אַחֲרֶ֔י/הָ בְּ/תֻפִּ֖ים וּ/בִ/מְחֹלֹֽת׃",
+        "LXX": "Λαβοῦσα δὲ Μαριὰμ ἡ προφῆτις ἡ ἀδελφὴ Ἀαρὼν τὸ τύμπανον ἐν τῇ χειρὶ αὐτῆς, καὶ ἐξήλθοσαν πᾶσαι αἱ γυναῖκες ὀπίσω αὐτῆς μετὰ τυμπάνων καὶ χορῶν.",
+        "VUL": "Sumpsit ergo Maria prophetissa, soror Aaron, tympanum in manu sua : egressæque sunt omnes mulieres post eam cum tympanis et choris,",
+        "SYN": "И взяла Мариам пророчица, сестра Ааронова, в руку свою тимпан, и вышли за нею все женщины с тимпанами и ликованием.",
+        "NEO": "Marie, la prophétesse, sœur d’Aaron, prit à la main un tambourin, et toutes les femmes vinrent à sa suite avec des tambourins et en dansant.",
+        "NAB": "The prophetess Miriam, Aaron's sister, took a tambourine in her hand, while all the women went out after her with tambourines, dancing;",
+        "VAT_ES": "Entonces Miriam, la profetisa, que era hermana de Aarón, tomó en sus manos un tamboril, y todas las mujeres iban detrás de ella, con tamboriles y formando coros de baile.",
+        "CEI": "Allora Maria, la profetessa, sorella di Aronne, prese in mano un timpano: dietro a lei uscirono le donne con i timpani, formando cori di danze."
+      }
+    },
+    "21": {
+      "seq": 21,
+      "v_in": {
+        "MT": 21,
+        "VUL": 21,
+        "LXX": 21
+      },
+      "text": {
+        "WLC": "וַ/תַּ֥עַן לָ/הֶ֖ם מִרְיָ֑ם שִׁ֤ירוּ לַֽ/יהוָה֙ כִּֽי גָאֹ֣ה גָּאָ֔ה ס֥וּס וְ/רֹכְב֖/וֹ רָמָ֥ה בַ/יָּֽם׃",
+        "LXX": "ἐξῆρχεν δὲ αὐτῶν Μαριὰμ λέγουσα ᾌσωμεν τῷ κυρίῳ, ἐνδόξως γὰρ δεδόξασται· ἵππον καὶ ἀναβάτην ἔρριψεν εἰς θάλασσαν.",
+        "VUL": "quibus præcinebat, dicens : [Cantemus Domino, gloriose enim magnificatus est :/ equum et ascensorem ejus dejecit in mare.]",
+        "SYN": "И воспела Мариам пред ними: пойте Господу, ибо высоко превознесся Он, коня и всадника его ввергнул в море.",
+        "NEO": "Marie répondait aux enfants d’Israël : Chantez \\+w Yahweh|strong=\"H3068\"\\+w**, car il a fait éclater sa gloire : il a précipité dans la mer cheval et cavalier.",
+        "NAB": "and she led them in the refrain: Sing to the LORD, for he is gloriously triumphant; horse and chariot he has cast into the sea.",
+        "VAT_ES": "Y Miriam repetía: «Canten al Señor, que se ha cubierto de gloria: él hundió en el mar los caballos y los carros».",
+        "CEI": "Maria fece loro cantare il ritornello: \"Cantate al Signore perché ha mirabilmente trionfato: ha gettato in mare cavallo e cavaliere!\"."
+      }
+    },
+    "22": {
+      "seq": 22,
+      "v_in": {
+        "MT": 22,
+        "VUL": 22,
+        "LXX": 22
+      },
+      "text": {
+        "WLC": "וַ/יַּסַּ֨ע מֹשֶׁ֤ה אֶת יִשְׂרָאֵל֙ מִ/יַּם ס֔וּף וַ/יֵּצְא֖וּ אֶל מִדְבַּר שׁ֑וּר וַ/יֵּלְכ֧וּ שְׁלֹֽשֶׁת יָמִ֛ים בַּ/מִּדְבָּ֖ר וְ/לֹא מָ֥צְאוּ מָֽיִם׃",
+        "LXX": "Ἐξῆρεν δὲ Μωυσῆς τοὺς υἱοὺς Ἰσραὴλ ἀπὸ θαλάσσης ἐρυθρᾶς, καὶ ἤγαγεν αὐτοὺς εἰς τὴν ἔρημον Σούρ· καὶ ἐπορεύοντο τρεῖς ἡμέρας ἐν τῇ ἐρήμῳ καὶ οὐχ ηὕρισκον ὕδωρ ὥστε πιεῖν.",
+        "VUL": "Tulit autem Moyses Israël de mari Rubro, et egressi sunt in desertum Sur : ambulaveruntque tribus diebus per solitudinem, et non inveniebant aquam.",
+        "SYN": "И повел Моисей Израильтян от Чермного моря, и они вступили в пустыню Сур; и шли они три дня по пустыне и не находили воды.",
+        "NEO": "Moïse fit partir Israël de la mer Rouge. Ils s’avancèrent vers le désert de Sur, et marchèrent trois jours dans ce désert sans trouver d’eau.",
+        "NAB": "Then Moses led Israel forward from the Red Sea, and they marched out to the desert of Shur. After traveling for three days through the desert without finding water,",
+        "VAT_ES": "Moisés hizo partir a los israelitas del Mar Rojo. Ellos se dirigieron hacia el desierto de Sur, y después de caminar tres días por ese desierto sin encontrar agua,",
+        "CEI": "Mosè fece levare l'accampamento di Israele dal Mare Rosso ed essi avanzarono verso il deserto di Sur. Camminarono tre giorni nel deserto e non trovarono acqua."
+      }
+    },
+    "23": {
+      "seq": 23,
+      "v_in": {
+        "MT": 23,
+        "VUL": 23,
+        "LXX": 23
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֣אוּ מָרָ֔תָ/ה וְ/לֹ֣א יָֽכְל֗וּ לִ/שְׁתֹּ֥ת מַ֨יִם֙ מִ/מָּרָ֔ה כִּ֥י מָרִ֖ים הֵ֑ם עַל כֵּ֥ן קָרָֽא שְׁמָ֖/הּ מָרָֽה׃",
+        "LXX": "Ἦλθον δὲ εἰς Μερρά, καὶ οὐκ ἠδύναντο πιεῖν ἐκ Μέρρας, πικρὸν γὰρ ἦν· διὰ τοῦτο ἐπωνόμασεν τὸ ὄνομα τοῦ τόπου ἐκείνου Πικρία.",
+        "VUL": "Et venerunt in Mara, nec poterant bibere aquas de Mara, eo quod essent amaræ : unde et congruum loco nomen imposuit, vocans illum Mara, id est, amaritudinem.",
+        "SYN": "Пришли в Мерру -- и не могли пить воды в Мерре, ибо она была горька, почему и наречено тому [месту] имя: Мерра.",
+        "NEO": "Ils arrivèrent à Mara, mais ils ne purent boire l’eau de Mara, parce qu’elle était amère. C’est pourquoi ce lieu fut appelé Mara.",
+        "NAB": "they arrived at Marah, where they could not drink the water, because it was too bitter. Hence this place was called Marah.",
+        "VAT_ES": "llegaron a Mará, pero no pudieron beber el agua porque era amarga. De allí procede el nombre de Mará –que significa «Amarga»– dado a ese lugar.",
+        "CEI": "Arrivarono a Mara, ma non potevano bere le acque di Mara, perché erano amare. Per questo erano state chiamate Mara."
+      }
+    },
+    "24": {
+      "seq": 24,
+      "v_in": {
+        "MT": 24,
+        "VUL": 24,
+        "LXX": 24
+      },
+      "text": {
+        "WLC": "וַ/יִּלֹּ֧נוּ הָ/עָ֛ם עַל מֹשֶׁ֥ה לֵּ/אמֹ֖ר מַה נִּשְׁתֶּֽה׃",
+        "LXX": "καὶ διεγόγγυζεν ὁ λαὸς ἐπὶ Μωσῆν λέγοντες Τί πιόμεθα;",
+        "VUL": "Et murmuravit populus contra Moysen, dicens : Quid bibemus ?",
+        "SYN": "И возроптал народ на Моисея, говоря: что нам пить?",
+        "NEO": "Le peuple murmura contre Moïse, en disant : « Que boirons-nous ? »",
+        "NAB": "As the people grumbled against Moses, saying, \"What are we to drink?\"",
+        "VAT_ES": "Y el pueblo se puso a protestar contra Moisés, diciendo: «&iquest;Qué vamos a beber ahora?».",
+        "CEI": "Allora il popolo mormorò contro Mosè: \"Che berremo?\"."
+      }
+    },
+    "25": {
+      "seq": 25,
+      "v_in": {
+        "MT": 25,
+        "VUL": 25,
+        "LXX": 25
+      },
+      "text": {
+        "WLC": "וַ/יִּצְעַ֣ק אֶל יְהוָ֗ה וַ/יּוֹרֵ֤/הוּ יְהוָה֙ עֵ֔ץ וַ/יַּשְׁלֵךְ֙ אֶל הַ/מַּ֔יִם וַֽ/יִּמְתְּק֖וּ הַ/מָּ֑יִם שָׁ֣ם שָׂ֥ם ל֛/וֹ חֹ֥ק וּ/מִשְׁפָּ֖ט וְ/שָׁ֥ם נִסָּֽ/הוּ׃",
+        "LXX": "ἐβόησεν δὲ Μωυσῆς πρὸς Κύριον· καὶ ἔδειξεν αὐτῷ Κύριος ξύλον, καὶ ἐνέβαλεν αὐτὸ εἰς τὸ ὕδωρ, καὶ ἐγλυκάνθη τὸ ὕδωρ. ἐκεῖ ἔθετο αὐτῷ δικαιώματα καὶ κρίσεις, καὶ ἐκεῖ ἐπείρασεν αὐτὸν",
+        "VUL": "At ille clamavit ad Dominum, qui ostendit ei lignum : quod cum misisset in aquas, in dulcedinem versæ sunt : ibi constituit ei præcepta, atque judicia, et ibi tentavit eum,",
+        "SYN": "[Моисей] возопил к Господу, и Господь показал ему дерево, и он бросил его в воду, и вода сделалась сладкою. Там _Бог_ дал _народу_ устав и закон и там испытывал его.",
+        "NEO": "Moïse cria à \\+w Yahweh|strong=\"H3068\"\\+w**, et \\+w Yahweh|strong=\"H3068\"\\+w** lui indiqua un bois ; il le jeta dans l’eau, et l’eau devint douce. Là \\+w Yahweh|strong=\"H3068\"\\+w** donna au peuple un statut et un droit, et là il le mit à l’épreuve.",
+        "NAB": "he appealed to the LORD, who pointed out to him a certain piece of wood. When he threw this into the water, the water became fresh.It was here that the LORD, in making rules and regulations for them, put them to the test.",
+        "VAT_ES": "Moisés invocó al Señor, y el Señor le indicó un árbol. Moisés arrojó un trozo de él en el agua, y esta se volvió dulce. Allí el Señor les impuso una legislación y un derecho, y allí los puso a prueba.",
+        "CEI": "Egli invocò il Signore, il quale gli indicò un legno. Lo gettò nell'acqua e l'acqua divenne dolce. In quel luogo il Signore impose al popolo una legge e un diritto; in quel luogo lo mise alla prova."
+      }
+    },
+    "26": {
+      "seq": 26,
+      "v_in": {
+        "MT": 26,
+        "VUL": 26,
+        "LXX": 26
+      },
+      "text": {
+        "WLC": "וַ/יֹּאמֶר֩ אִם שָׁמ֨וֹעַ תִּשְׁמַ֜ע לְ/ק֣וֹל יְהוָ֣ה אֱלֹהֶ֗י/ךָ וְ/הַ/יָּשָׁ֤ר בְּ/עֵינָי/ו֙ תַּעֲשֶׂ֔ה וְ/הַֽאֲזַנְתָּ֙ לְ/מִצְוֺתָ֔י/ו וְ/שָׁמַרְתָּ֖ כָּל חֻקָּ֑י/ו כָּֽל הַ/מַּֽחֲלָ֞ה אֲשֶׁר שַׂ֤מְתִּי בְ/מִצְרַ֨יִם֙ לֹא אָשִׂ֣ים עָלֶ֔י/ךָ כִּ֛י אֲנִ֥י יְהוָ֖ה רֹפְאֶֽ/ךָ׃",
+        "LXX": "καὶ εἶπεν Ἐὰν ἀκοῇ ἀκούσῃς τῆς φωνῆς Κυρίου τοῦ θεοῦ σου, καὶ τὰ ἀρεστὰ ἐναντίον αὐτοῦ ποιήσῃς, καὶ ἐνωτίσῃ ταῖς ἐντολαῖς αὐτοῦ, καὶ φυλάξῃς πάντα τὰ δικαιώματα αὐτοῦ, πᾶσαν νόσον ἣν ἐπήγαγον τοῖς Αἰγυπτίοις οὐκ ἐπάξω ἐπὶ σέ· ἐγὼ γάρ εἰμι Κύριος ὁ θεός σου ὁ ἰώμενός σε.",
+        "VUL": "dicens : Si audieris vocem Domini Dei tui, et quod rectum est coram eo feceris, et obedieris mandatis ejus, custodierisque omnia præcepta illius, cunctum languorem, quem posui in Ægypto, non inducam super te : ego enim Dominus sanator tuus.",
+        "SYN": "И сказал: если ты будешь слушаться гласа Господа, Бога твоего, и делать угодное пред очами Его, и внимать заповедям Его, и соблюдать все уставы Его, то не наведу на тебя ни одной из болезней, которые навел Я на Египет, ибо Я Господь [Бог твой], целитель твой.",
+        "NEO": "Il dit : « Si tu écoutes la voix de \\+w Yahweh|strong=\"H3068\"\\+w**, ton Dieu, si tu fais ce qui est droit à ses yeux, si tu prêtes l’oreille à ses commandements, et si tu observes toutes ses lois, je ne mettrai sur toi aucune des maladies que j’ai mises sur les Égyptiens ; car je suis \\+w Yahweh|strong=\"H3068\"\\+w** qui te guérit. »",
+        "NAB": "\"If you really listen to the voice of the LORD, your God,\" he told them, \"and do what is right in his eyes: if you heed his commandments and keep all his precepts, I will not afflict you with any of the diseases with which I afflicted the Egyptians; for I, the LORD, am your healer.\"",
+        "VAT_ES": "Luego les dijo: «Si escuchas realmente lo voz del Señor, tu Dios, y practicas lo que es recto a sus ojos, si prestas atención a sus mandamientos y observas todos sus preceptos, no te infligiré ninguna de las enfermedades que envié contra Egipto, porque yo, el Señor, soy el que te da la salud».",
+        "CEI": "Disse: \"Se tu ascolterai la voce del Signore tuo Dio e farai ciò che è retto ai suoi occhi, se tu presterai orecchio ai suoi ordini e osserverai tutte le sue leggi, io non t'infliggerò nessuna delle infermità che ho inflitte agli Egiziani, perché io sono il Signore, colui che ti guarisce!\"."
+      }
+    },
+    "27": {
+      "seq": 27,
+      "v_in": {
+        "MT": 27,
+        "VUL": 27,
+        "LXX": 27
+      },
+      "text": {
+        "WLC": "וַ/יָּבֹ֣אוּ אֵילִ֔מָ/ה וְ/שָׁ֗ם שְׁתֵּ֥ים עֶשְׂרֵ֛ה עֵינֹ֥ת מַ֖יִם וְ/שִׁבְעִ֣ים תְּמָרִ֑ים וַ/יַּחֲנוּ שָׁ֖ם עַל הַ/מָּֽיִם׃",
+        "LXX": "Καὶ ἤλθοσαν εἰς Αἰλείμ, καὶ ἦσαν ἐκεῖ ιβ’ πηγαὶ ὑδάτων καὶ ἑβδομήκοντα στελέχη φοινίκων· παρενέβαλον δὲ ἐκεῖ παρὰ τὰ ὕδατα.",
+        "VUL": "Venerunt autem in Elim filii Israël, ubi erant duodecim fontes aquarum, et septuaginta palmæ : et castrametati sunt juxta aquas.",
+        "SYN": "И пришли в Елим; там _было_ двенадцать источников воды и семьдесят финиковых дерев, и расположились там станом при водах.",
+        "NEO": "Ils arrivèrent à Élim, où il y avait douze sources d’eau et soixante-dix palmiers ; et ils campèrent là, près de l’eau.",
+        "NAB": "Then they came to Elim, where there were twelve springs of water and seventy palm trees, and they camped there near the water.",
+        "VAT_ES": "Después llegaron a Elim, un lugar donde había doce fuentes y setenta palmeras, y allí establecieron su campamento, a orilla de las aguas.",
+        "CEI": "Poi arrivarono a Elim, dove sono dodici sorgenti di acqua e settanta palme. Qui si accamparono presso l'acqua."
+      }
+    }
+  }
+}
