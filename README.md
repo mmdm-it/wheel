@@ -33,49 +33,9 @@ Traditional hierarchical navigation (breadcrumbs, back buttons, folder trees) be
 - **Large datasets**: Handles thousands of items with viewport filtering
 - **No build process**: Direct ES6 module loading in modern browsers
 
-## 🚀 Help Wanted
+## 🚀 Status on Collaboration
 
-**Wheel is ~70% complete and needs collaborators to ship v1.0.**
-
-We're looking for:
-
-### Android Developer (High Priority)
-**Time commitment:** 5-10 hours/week for 6-8 weeks  
-**What you'll do:**
-- Create WebView wrapper for existing JavaScript/HTML Wheel
-- Handle Android packaging and permissions
-- Integrate native features (storage, sharing)
-- Prepare for Google Play submission
-
-**What you get:** Co-author credit on Play Store, portfolio piece showcasing novel UX
-
-### Data Engineer (High Priority)
-**Time commitment:** 10-15 hours over 2-3 weeks (sprint-based)  
-**What you'll do:**
-- Design hierarchical JSON schema for various datasets
-- Transform Bible data (Gutenberg Vulgate + KJV) into schema format
-- Create data validation pipeline
-- Document schema for other data types
-
-**What you get:** Interesting data architecture problem, open source credit
-
-### QA/Tester (Medium Priority)
-**Time commitment:** 3-5 hours/week during testing sprints  
-**What you'll do:**
-- Manual testing across Android devices and OS versions
-- Document bugs and edge cases
-- Verify navigation accuracy across different datasets
-
-**What you get:** QA portfolio item, early access to unique app
-
-### How to Contribute
-
-1. **Star this repo** to show interest
-2. **Open an issue** introducing yourself and which role interests you
-3. **Check "good first issue"** labels for easy starting points
-4. **Join discussions** - see GitHub Discussions for planning
-
-**This is volunteer/open source** - no payment currently, but full credit and attribution guaranteed. Early contributors will be recognized if commercial success follows.
+We are not currently seeking additional collaborators. Please use GitHub Issues for bug reports and feature requests.
 
 ## Quick Start
 
@@ -164,12 +124,7 @@ See `mmdm_catalog.json` (parts catalog) or `gutenberg.json` (Bible) for complete
 
 ## Contributing
 
-Contributions welcome! See issues labeled **"good first issue"** for starting points, or the **Help Wanted** section above for priority needs.
-
-**Before contributing:**
-- Read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines
-- Check existing issues to avoid duplicate work
-- Test on real mobile devices when possible
+Contributions are currently paused. Please file issues for bugs or requests; we may reopen contributions later.
 
 ## License
 
