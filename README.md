@@ -1,6 +1,6 @@
 # Wheel v3
 
-> **Active codebase**: This branch (`v3`) is the live Wheel code. Legacy v1/v2 assets remain on `main` in the root repo. Please file issues, tests, and PRs against `v3`.
+> **Active codebase**: Wheel v3 is the current codebase. Legacy v1/v2 remains preserved in the repository history (pre-v3 merge) if you need to reference prior assets.
 
 Minimal scaffold following the v2 architecture (interaction → navigation → view → geometry → data) with the lodestar Magnifier, sprocket wheel windowing, and pure geometry.
 
